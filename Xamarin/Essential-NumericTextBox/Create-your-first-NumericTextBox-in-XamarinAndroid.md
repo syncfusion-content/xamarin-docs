@@ -2,7 +2,7 @@
 layout: post
 title: Create-your-first-NumericTextBox-in-XamarinAndroid
 description: create your first numerictextbox in xamarin.android
-platform: ios
+platform: xamarin
 control: Control Name undefined
 documentation: ug
 ---

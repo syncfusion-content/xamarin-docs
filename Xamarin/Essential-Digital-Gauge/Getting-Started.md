@@ -2,7 +2,7 @@
 layout: post
 title: Getting-Started
 description: getting started
-platform: ios
+platform: xamarin
 control: Control Name undefined
 documentation: ug
 ---

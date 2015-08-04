@@ -2,7 +2,7 @@
 layout: post
 title: Essential-DataGrid
 description: essential datagrid
-platform: ios
+platform: xamarin
 control: Control Name undefined
 documentation: ug
 ---

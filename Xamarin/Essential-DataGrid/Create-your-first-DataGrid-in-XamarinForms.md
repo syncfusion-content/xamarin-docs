@@ -2,7 +2,7 @@
 layout: post
 title: Create-your-first-DataGrid-in-XamarinForms
 description: create your first datagrid in xamarin.forms
-platform: ios
+platform: xamarin
 control: Control Name undefined
 documentation: ug
 ---

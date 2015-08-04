@@ -2,7 +2,7 @@
 layout: post
 title: Essential-Circular-Gauge
 description: essential circular gauge
-platform: ios
+platform: xamarin
 control: Control Name undefined
 documentation: ug
 ---

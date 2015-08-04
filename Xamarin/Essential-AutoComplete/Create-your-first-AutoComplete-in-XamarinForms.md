@@ -2,7 +2,7 @@
 layout: post
 title: Create-your-first-AutoComplete-in-XamarinForms
 description: create your first autocomplete in xamarin.forms
-platform: ios
+platform: xamarin
 control: Control Name undefined
 documentation: ug
 ---

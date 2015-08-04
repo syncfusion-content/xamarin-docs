@@ -2,7 +2,7 @@
 layout: post
 title: Createyour-firstCircularGauge-in-XamarinAndroid
 description: create your first circular gauge in xamarin.android
-platform: ios
+platform: xamarin
 control: Control Name undefined
 documentation: ug
 ---

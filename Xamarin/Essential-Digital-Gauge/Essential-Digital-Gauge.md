@@ -2,7 +2,7 @@
 layout: post
 title: Essential-Digital-Gauge
 description: essential digital gauge
-platform: ios
+platform: xamarin
 control: Control Name undefined
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Create-your-first-BusyIndicator-in-XamariniOS
 description: create your first busyindicator in xamarin.ios
-platform: ios
+platform: xamarin
 control: Control Name undefined
 documentation: ug
 ---

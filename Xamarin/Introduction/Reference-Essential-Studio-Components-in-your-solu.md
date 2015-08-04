@@ -2,7 +2,7 @@
 layout: post
 title: Reference-Essential-Studio-Components-in-your-solu
 description: reference essential studio components in your solution
-platform: ios
+platform: xamarin
 control: Control Name undefined
 documentation: ug
 ---

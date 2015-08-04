@@ -2,7 +2,7 @@
 layout: post
 title: Essential-XlsIO
 description: essential xlsio
-platform: ios
+platform: xamarin
 control: Control Name undefined
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Create-your-first-RangeSlider-in-Xamarin
 description: create your first rangeslider in xamarin
-platform: ios
+platform: xamarin
 control: Control Name undefined
 documentation: ug
 ---

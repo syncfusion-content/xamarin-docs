@@ -2,7 +2,7 @@
 layout: post
 title: Essential-Linear-Gauge
 description: essential linear gauge
-platform: ios
+platform: xamarin
 control: Control Name undefined
 documentation: ug
 ---

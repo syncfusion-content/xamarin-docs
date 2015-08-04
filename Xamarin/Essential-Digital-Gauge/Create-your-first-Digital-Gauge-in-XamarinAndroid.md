@@ -2,7 +2,7 @@
 layout: post
 title: Create-your-first-Digital-Gauge-in-XamarinAndroid
 description: create your first digital gauge in xamarin.android
-platform: ios
+platform: xamarin
 control: Control Name undefined
 documentation: ug
 ---

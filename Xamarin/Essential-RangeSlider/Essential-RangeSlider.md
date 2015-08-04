@@ -2,7 +2,7 @@
 layout: post
 title: Essential-RangeSlider
 description: essential rangeslider
-platform: ios
+platform: xamarin
 control: Control Name undefined
 documentation: ug
 ---

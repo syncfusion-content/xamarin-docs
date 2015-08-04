@@ -2,7 +2,7 @@
 layout: post
 title: Create-your-first-Linear-Gauge-in-XamarinAndroid
 description: create your first linear gauge in xamarin.android
-platform: ios
+platform: xamarin
 control: Control Name undefined
 documentation: ug
 ---

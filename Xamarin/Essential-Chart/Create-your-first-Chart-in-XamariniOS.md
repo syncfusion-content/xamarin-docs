@@ -2,7 +2,7 @@
 layout: post
 title: Create-your-first-Chart-in-XamariniOS
 description: create your first chart in xamarin.ios
-platform: ios
+platform: xamarin
 control: Control Name undefined
 documentation: ug
 ---

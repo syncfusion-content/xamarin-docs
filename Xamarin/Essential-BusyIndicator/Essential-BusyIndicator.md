@@ -2,7 +2,7 @@
 layout: post
 title: Essential-BusyIndicator
 description: essential busyindicator
-platform: ios
+platform: xamarin
 control: Control Name undefined
 documentation: ug
 ---

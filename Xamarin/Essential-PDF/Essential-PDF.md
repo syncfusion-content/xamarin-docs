@@ -7,5 +7,5 @@ control: Control Name undefined
 documentation: ug
 ---
 
-## Essential PDF
+# Essential PDF
 

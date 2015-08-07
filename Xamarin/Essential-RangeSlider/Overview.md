@@ -7,15 +7,15 @@ control: Control Name undefined
 documentation: ug
 ---
 
-### Overview
+## Overview
 
 RangeSlider control allows you to select the range of value within the specified minimum and maximum limit. You can select the range by moving the thumb control along a track.
 
 ![](Overview_images/Overview_img1.png)
-{:.image }
 
 
-Key Features
+
+#### Key Features
 
 * Displays the Range that can be shown or hidden.
 * Supports Reversible Direction.

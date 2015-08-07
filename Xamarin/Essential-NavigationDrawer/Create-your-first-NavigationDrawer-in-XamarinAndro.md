@@ -7,55 +7,55 @@ control: Control Name undefined
 documentation: ug
 ---
 
-#### Create your first NavigationDrawer in Xamarin.Android
+### Create your first NavigationDrawer in Xamarin.Android
 
 This section encompasses how to create a NavigationDrawer that navigates to different pages by selecting the desired page from the NavigationDrawer.  
 
 
 
-Add Syncfusion assembly reference
+#### Add Syncfusion assembly reference
 
-After installing Essential StudioforXamarin, you can find all the required assemblies in the following installed folders,
+After installing Essential Studio for Xamarin, you can find all the required assemblies in the following installed folders,
 
 {Syncfusion Installed location}\Essential Studio\{version number}\lib
 
 
 
 ![](Create-your-first-NavigationDrawer-in-XamarinAndro_images/Create-your-first-NavigationDrawer-in-XamarinAndro_img1.jpeg)
-{:.image }
 _Note: Assemblies are available in unzipped package location in Mac._
 
- Add the following assembly references to the Xamarin project,
+Add the following assembly references to the Xamarin project,
 
-
-
-android\Syncfusion.SfNavigationDrawer.Andriod.dll
-
+ 1.android\Syncfusion.SfNavigationDrawer.Andriod.dll
 
 
 
 
-Create a NavigationDrawer
 
-To develop an application with the Android NavigationDrawer is simple. The following steps explain you how to create and configure its properties.
+#### Create a NavigationDrawer
+
+To develop an application with the Android NavigationDrawer is simple. The following steps explain you how to create and 
+configure its properties.
 
 Create an instance for the NavigationDrawer in the constructor and set that NavigationDrawer as content view of Activity. 
 
 
 
+{% highlight C# %}  
+
 [C#]
-
-
 
 SfNavigationDrawer navigationDrawer=new SfNavigationDrawer(this);
 
 SetContentView(navigationDrawer);
 
+{% endhighlight %} 
 
-
-Configure the NavigationDrawer
+#### Configure the NavigationDrawer
 
 You can set position and animations for NavigationDrawer by using the position and Transition properties in the NavigationDrawer. 
+
+{% highlight C# %}  
 
 [C#]
 
@@ -63,10 +63,13 @@ navigationDrawer.Position = Position.Left;
 
 navigationDrawer.Transition = Transition.SlideOnTop;
 
-The above code example illustrates setting of position and animations for NavigationDrawer by using the position and Transition properties in the NavigationDrawer.
+{% endhighlight %} 
 
-![C:/Users/nijamudeensulaiman/Desktop/slidedrawer (1).png](Create-your-first-NavigationDrawer-in-XamarinAndro_images/Create-your-first-NavigationDrawer-in-XamarinAndro_img2.png)
-{:.image }
+The above code example illustrates setting of position and animations for NavigationDrawer by using the position and 
+Transition properties in the NavigationDrawer.
+
+![](Create-your-first-NavigationDrawer-in-XamarinAndro_images/Create-your-first-NavigationDrawer-in-XamarinAndro_img2.png)
+
 
 
 

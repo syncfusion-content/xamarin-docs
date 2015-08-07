@@ -7,13 +7,13 @@ control: Control Name undefined
 documentation: ug
 ---
 
-#### Create your first Circular Gauge in Xamarin.Forms
+# Create your first Circular Gauge in Xamarin.Forms
 
 This section provides a quick overview for working with Essential Gauge for Xamarin.Forms and takes you on a walk-through along the entire process of creating a real world gauge.
 
 You can also download the entire source code of this demo from the following link: _http://files2.syncfusion.com/Installs/v12.2.0.40/Samples/Xamarin/Gauge_GettingStarted.zip_
 
-Reference Essential Studio Components in your solution
+## Reference Essential Studio Components in your solution
 
 When you acquire Essential Studio components through the Xamarin Component Store interface from your IDE, then after adding the components to your Xamarin.iOS, Xamarin.Android and WindowsPhone projects through the Component Manager, you need to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL Project in your solution. You can do this by manually adding the relevant PCL assembly references to your PCL project contained in the following path inside your solution folder: 
 
@@ -33,37 +33,40 @@ _{download location}\syncfusionessentialstudio-version\lib_
 
 You can then add the assembly references to the respective projects as follows.
 
-PCL project
+### PCL project
 
 XForms\Syncfusion. SfGauge.XForms.dll  
 
-Android project
+### Android project
 
- 	Android\Syncfusion. SfGauge.Andriod.dll
+ Android\Syncfusion. SfGauge.Andriod.dll
 
 Android\Syncfusion. SfGauge. XForms.Andriod.dll 
 
-iOS project
+### iOS project
 
 iOS\Syncfusion. SfGauge.iOS.dll   
 
 iOS\Syncfusion. SfGauge.XForms.iOS.dll
 
-Windows Phone project
+### Windows Phone project
 
 WinPhone\Syncfusion. SfGauge.WP8.dll
 
 WinPhone\Syncfusion SfGauge.XForms.WinPhone.dll
 
-> ![](Create-your-first-Circular-Gauge-in-XamarinForms_images/Create-your-first-Circular-Gauge-in-XamarinForms_img1.jpeg)
-{:.image }
+![](Create-your-first-Circular-Gauge-in-XamarinForms_images/Create-your-first-Circular-Gauge-in-XamarinForms_img1.jpeg)
 _Note: Essential Gauge for Xamarin is compatible with Xamarin.Forms 1.2.3.6257._
 
 Currently an additional step is required for Windows Phone and iOS projects. You need to create an instance of the Gauge custom renderer as mentioned as follows.
 
 Create an instance of the SfGaugeRenderer in MainPage constructor in Windows Phone project as follows.
 
-  	 public MainPage()
+{% highlight c# %}
+ 
+    [C#]
+
+    public MainPage()
 
        	 {
 
@@ -73,11 +76,19 @@ Create an instance of the SfGaugeRenderer in MainPage constructor in Windows Pho
 
      	}
 
+ {% endhighlight %}
+
+  	 
+
 Create an instance of the SfGaugeRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as follows.
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
-        	{
+{% highlight c# %}
+ 
+    [C#]
+
+    {
 
          		  ...
 
@@ -87,38 +98,54 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
        	 }	
 
-Add and configure the gauge
+ {% endhighlight %}
+
+        	
+
+## Add and configure the gauge
 
 The gauge control is configured entirely in C# code or using XAML markup.
 
 Create an instance of SfCircularGauge.
 
-[C#]
+{% highlight c# %}
+ 
+   [C#]
 
 
 
     SfCircularGauge circularGauge = new SfCircularGauge();
 
+ {% endhighlight %}
 
 
-[XAML]
 
-&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;ContentPage xmlns="http://xamarin.com/schemas/2014/forms"xmlns:gauge="clr-namespace:Syncfusion.SfGauge.XForms;assembly=Syncfusion.SfGauge.XForms"  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GaugeGettingStarted.Sample"&gt;
+{% highlight xml %}
+ 
+   [XAML]
 
-&lt;ContentPage.Content&gt;
-&lt;gauge:SfCircularGauge&gt;
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"xmlns:gauge="clr-namespace:Syncfusion.SfGauge.XForms;assembly=Syncfusion.SfGauge.XForms"  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GaugeGettingStarted.Sample">
 
-  &lt;/gauge:SfCircularGauge&gt;
+<ContentPage.Content>
+<gauge:SfCircularGauge>
 
-&lt;/ContentPage.Content&gt;
-&lt;/ContentPage&gt;
+  </gauge:SfCircularGauge>
 
-Insert a Scale
+</ContentPage.Content>
+</ContentPage>
+
+ {% endhighlight %}
+
+
+
+## Insert a Scale
 
 The next step is to add one of more scales.
 
-[C#]
+{% highlight c# %}
+ 
+    [C#]
 
 SfCircularGauge circularGauge = new SfCircularGauge();
 
@@ -148,15 +175,19 @@ scale.MinorTicksPerInterval = 3;
 
 scales.Add(scale);
 
+ {% endhighlight %}
 
 
 
 
-[XAML]
 
-&lt;gauge:SfCircularGauge&gt;
+{% highlight xml %}
+ 
+    [XAML]
 
-    &lt;gauge:SfCircularGauge.Scales&gt;
+<gauge:SfCircularGauge>
+
+    <gauge:SfCircularGauge.Scales>
 
        <gauge:Scale StartValue="0"
 
@@ -166,15 +197,21 @@ scales.Add(scale);
 
                  RimColor="#FFFB0101" RimThickness="10"  />
 
-    &lt;/gauge:SfCircularGauge.Scales&gt;
+    </gauge:SfCircularGauge.Scales>
 
-  &lt;/gauge:SfCircularGauge&gt;
+  </gauge:SfCircularGauge>
 
-Specify Ranges
+ {% endhighlight %}
+
+
+
+## Specify Ranges
 
 You can improve the readability of data by including ranges that quickly show when values fall within specific ranges.
 
-[C#]
+{% highlight c# %}
+ 
+    [C#]
 
 …
 
@@ -192,13 +229,17 @@ scale.Ranges.Add(range);
 
 …
 
+ {% endhighlight %}
 
 
-[XAML]
 
-&lt;gauge:SfCircularGauge&gt;
+{% highlight xml %}
+ 
+    [XAML]
 
-    &lt;gauge:SfCircularGauge.Scales&gt;
+<gauge:SfCircularGauge>
+
+    <gauge:SfCircularGauge.Scales>
 
       <gauge:Scale StartValue="0" EndValue="100"
 
@@ -208,23 +249,29 @@ scale.Ranges.Add(range);
 
                    RimThickness="10" >
 
-        &lt;gauge:Scale.Ranges&gt;
+        <gauge:Scale.Ranges>
 
-             &lt;gauge:Range StartValue="0" EndValue="80" Color="#FF777777" Thickness="15" /&gt;    
+             <gauge:Range StartValue="0" EndValue="80" Color="#FF777777" Thickness="15" />    
 
-        &lt;/gauge:Scale.Ranges&gt;
+        </gauge:Scale.Ranges>
 
-      &lt;/gauge:Scale&gt;
+      </gauge:Scale>
 
-    &lt;/gauge:SfCircularGauge.Scales&gt;
+    </gauge:SfCircularGauge.Scales>
 
-  &lt;/gauge:SfCircularGauge&gt;
+  </gauge:SfCircularGauge>
 
-Add a Needle Pointer
+ {% endhighlight %}
+
+
+
+## Add a Needle Pointer
 
 You can create a needle pointer and associate it with a scale to display the current value.
 
-[C#]
+{% highlight c# %}
+ 
+    [C#]
 
 …
 
@@ -246,13 +293,17 @@ scale.Pointers.Add(needlePointer);
 
 …
 
+ {% endhighlight %}
 
 
-[XAML]
 
-  &lt;gauge:SfCircularGauge&gt;
+{% highlight xml %}
+ 
+    [XAML]
 
-    &lt;gauge:SfCircularGauge.Scales&gt;
+  <gauge:SfCircularGauge>
+
+    <gauge:SfCircularGauge.Scales>
 
       <gauge:Scale StartValue="0" EndValue="100"
 
@@ -262,15 +313,15 @@ scale.Pointers.Add(needlePointer);
 
                    RimThickness="10" >
 
-        &lt;gauge:Scale.Ranges&gt;
+        <gauge:Scale.Ranges>
 
-             &lt;gauge:Range StartValue="0" EndValue="80" Color="#FF777777" Thickness="15" /&gt;    
+             <gauge:Range StartValue="0" EndValue="80" Color="#FF777777" Thickness="15" />    
 
-        &lt;/gauge:Scale.Ranges&gt;
+        </gauge:Scale.Ranges>
 
 
 
-        &lt;gauge:Scale.Pointers&gt;
+        <gauge:Scale.Pointers>
 
           <gauge:NeedlePointer Value="60" LengthFactor="0.8"
 
@@ -278,19 +329,25 @@ scale.Pointers.Add(needlePointer);
 
                                KnobColor="White" KnobRadius="20"  />
 
-        &lt;/gauge:Scale.Pointers&gt;
+        </gauge:Scale.Pointers>
 
-      &lt;/gauge:Scale&gt;
+      </gauge:Scale>
 
-    &lt;/gauge:SfCircularGauge.Scales&gt;
+    </gauge:SfCircularGauge.Scales>
 
-  &lt;/gauge:SfCircularGauge&gt;
+  </gauge:SfCircularGauge>
 
-Add a Range Pointer
+ {% endhighlight %}
+
+
+
+## Add a Range Pointer
 
 A range pointer provides an alternative way of indicating the current value.
 
-[C#]
+{% highlight c# %}
+ 
+   [C#]
 
 ...
 
@@ -306,13 +363,17 @@ scale.Pointers.Add(rangePointer);
 
 ...
 
+ {% endhighlight %}
 
 
-[XAML]
 
-&lt;gauge:SfCircularGauge&gt;
+{% highlight xml %}
+ 
+   [XAML]
 
-    &lt;gauge:SfCircularGauge.Scales&gt;
+<gauge:SfCircularGauge>
+
+    <gauge:SfCircularGauge.Scales>
 
       <gauge:Scale StartValue="0" EndValue="100"
 
@@ -322,15 +383,15 @@ scale.Pointers.Add(rangePointer);
 
                    RimThickness="10" >
 
-        &lt;gauge:Scale.Ranges&gt;
+        <gauge:Scale.Ranges>
 
-             &lt;gauge:Range StartValue="0" EndValue="80" Color="#FF777777" Thickness="15" /&gt;    
+             <gauge:Range StartValue="0" EndValue="80" Color="#FF777777" Thickness="15" />    
 
-        &lt;/gauge:Scale.Ranges&gt;
+        </gauge:Scale.Ranges>
 
 
 
-        &lt;gauge:Scale.Pointers&gt;
+        <gauge:Scale.Pointers>
 
           <gauge:NeedlePointer Value="60" LengthFactor="0.8"
 
@@ -346,30 +407,30 @@ scale.Pointers.Add(rangePointer);
 
 
 
-        &lt;/gauge:Scale.Pointers&gt;
+        </gauge:Scale.Pointers>
 
-      &lt;/gauge:Scale&gt;
+      </gauge:Scale>
 
-    &lt;/gauge:SfCircularGauge.Scales&gt;
+    </gauge:SfCircularGauge.Scales>
 
-  &lt;/gauge:SfCircularGauge&gt;
+  </gauge:SfCircularGauge>
+
+ {% endhighlight %}
+
+
 
 
 
 <table>
 <tr>
 <td>
-{ ![C:/Users/lingaraj/AppData/Local/Microsoft/Windows/INetCache/Content.Word/wp_ss_20140926_0001.png](Create-your-first-Circular-Gauge-in-XamarinForms_images/Create-your-first-Circular-Gauge-in-XamarinForms_img2.png) | markdownify }
-{:.image }
+{{' ![C:/Users/lingaraj/AppData/Local/Microsoft/Windows/INetCache/Content.Word/wp_ss_20140926_0001.png](Create-your-first-Circular-Gauge-in-XamarinForms_images/Create-your-first-Circular-Gauge-in-XamarinForms_img2.png)' | markdownify }}
 </td><td>
-{ ![C:/Users/lingaraj/AppData/Local/Microsoft/Windows/INetCache/Content.Word/wp_ss_20140926_0003.png](Create-your-first-Circular-Gauge-in-XamarinForms_images/Create-your-first-Circular-Gauge-in-XamarinForms_img3.png) | markdownify }
-{:.image }
+{{' ![C:/Users/lingaraj/AppData/Local/Microsoft/Windows/INetCache/Content.Word/wp_ss_20140926_0003.png](Create-your-first-Circular-Gauge-in-XamarinForms_images/Create-your-first-Circular-Gauge-in-XamarinForms_img3.png)' | markdownify }}
 </td><td>
-{ ![C:/Users/lingaraj/AppData/Local/Microsoft/Windows/INetCache/Content.Word/wp_ss_20140926_0005.png](Create-your-first-Circular-Gauge-in-XamarinForms_images/Create-your-first-Circular-Gauge-in-XamarinForms_img4.png) | markdownify }
-{:.image }
+{{' ![C:/Users/lingaraj/AppData/Local/Microsoft/Windows/INetCache/Content.Word/wp_ss_20140926_0005.png](Create-your-first-Circular-Gauge-in-XamarinForms_images/Create-your-first-Circular-Gauge-in-XamarinForms_img4.png)' | markdownify }}
 </td><td>
-{ ![C:/Users/lingaraj/AppData/Local/Microsoft/Windows/INetCache/Content.Word/wp_ss_20140926_0004.png](Create-your-first-Circular-Gauge-in-XamarinForms_images/Create-your-first-Circular-Gauge-in-XamarinForms_img5.png) | markdownify }
-{:.image }
+{{' ![C:/Users/lingaraj/AppData/Local/Microsoft/Windows/INetCache/Content.Word/wp_ss_20140926_0004.png](Create-your-first-Circular-Gauge-in-XamarinForms_images/Create-your-first-Circular-Gauge-in-XamarinForms_img5.png)' | markdownify }}
 </td></tr>
 </table>
 

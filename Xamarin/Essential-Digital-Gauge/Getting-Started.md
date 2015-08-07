@@ -7,11 +7,11 @@ control: Control Name undefined
 documentation: ug
 ---
 
-### Getting Started
+# Getting Started
 
 This section provides a quick overview for working with Essential Digital Gauge for Xamarin.Forms. 
 
-Add Syncfusion assembly reference
+## Add Syncfusion assembly reference
 
 Add the required Syncfusionassembly references to the respective projects as follows. Refer to the following installed location for the required assemblies. 
 
@@ -19,30 +19,29 @@ _{Syncfusion Installed location}\Essential Studio\12.3.0.23\lib_
 
 _Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\12.3.0.23\lib_
 
-PCL project
+### PCL project
 
 XForms\Syncfusion. SfGauge.XForms.dll  
 
-Android project
+### Android project
 
 Android\Syncfusion. SfGauge.Andriod.dll
 
 Android\Syncfusion. SfGauge. XForms.Andriod.dll 
 
-iOS project
+### iOS project
 
 iOS\Syncfusion. SfGauge.iOS.dll   
 
 iOS\Syncfusion. SfGauge.XForms.iOS.dll
 
-Windows Phone project
+### Windows Phone project
 
 WinPhone\Syncfusion. SfGauge.WP8.dll
 
 WinPhone\Syncfusion SfGauge.XForms.WinPhone.dll
 
-> ![C:/Users/Giftline/Desktop/img.jpg](Getting-Started_images/Getting-Started_img1.jpeg)
-{:.image }
+ ![C:/Users/Giftline/Desktop/img.jpg](Getting-Started_images/Getting-Started_img1.jpeg)
 _Note: Essential Digital Gauge for Xamarin is compatible with Xamarin Forms 1.2.2.0._
 
 
@@ -51,7 +50,11 @@ An additional step is required for Windows Phone and iOS projects. Create an ins
 
 Create an instance of the SfDigitalGaugeRenderer in MainPage constructor in Windows Phone project as follows.
 
-public MainPage()
+{% highlight c# %}
+ 
+    [C#]
+
+    public MainPage()
 
        	 {
 
@@ -61,11 +64,19 @@ public MainPage()
 
      	}
 
+ {% endhighlight %}
+
+
+
 
 
 Create an instance of the SfDigitalGaugeRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as follows.
 
-public override bool FinishedLaunching(UIApplication app, NSDictionary options)
+{% highlight c# %}
+ 
+    [C#]
+
+    public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
         	{
 
@@ -77,15 +88,19 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
        	 }
 
-Add and configure the gauge
+ {% endhighlight %}
+
+
+
+## Add and configure the gauge
 
 The Gauge control is configured entirely in C# code or using XAML markup.
 
 Create an instance of SfDigitalrGauge.
 
-
-
-[C#]
+{% highlight c# %}
+ 
+    [C#]
 
 // Update App.cs source this file.
 
@@ -111,9 +126,13 @@ public static Page GetMainPage()
 
 }
 
+ {% endhighlight %}
 
 
-[XAML]
+
+{% highlight xml %}
+ 
+    [XAML]
 
 // Use the following in App.CS source.
 
@@ -125,24 +144,28 @@ public static Page GetMainPage()
 
 //}
 
-&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;ContentPage xmlns="http://xamarin.com/schemas/2014/forms"xmlns:local="clr-namespace:Syncfusion.XForms.SfGauge; assembly=Syncfusion..XForms.SfGauge "  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="DigitalGaugeGettingStarted.Sample"&gt;
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"xmlns:local="clr-namespace:Syncfusion.XForms.SfGauge; assembly=Syncfusion..XForms.SfGauge "  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="DigitalGaugeGettingStarted.Sample">
 
-&lt;ContentPage.Content&gt;
-&lt;local:SfDigitalGauge&gt;
+<ContentPage.Content>
+<local:SfDigitalGauge>
 
-  &lt;/local:SfDigitalGauge&gt;
+  </local:SfDigitalGauge>
 
-&lt;/ContentPage.Content&gt;
-&lt;/ContentPage&gt;
+</ContentPage.Content>
+</ContentPage>
 
-Configure the Digital Gauge Properties
+ {% endhighlight %}
+
+
+
+## Configure the Digital Gauge Properties
 
 Add the Digital Gauge properties in your application.
 
-
-
-[C#]
+{% highlight c# %}
+ 
+   [C#]
 
 SfDigitalGauge DigitalGauge = new SfDigitalGauge();
 
@@ -166,9 +189,13 @@ digitalGauge1.CharacterForeColor = Color.FromRgb (20,108,237);
 
 digitalGauge1.CharacterDisabledColor = Color.FromRgb (20,108,237);
 
+ {% endhighlight %}
 
 
-[XAML]
+
+{% highlight xml %}
+ 
+    [XAML]
 
 <gauge:SfDigitalGauge 
 
@@ -178,7 +205,11 @@ digitalGauge1.CharacterDisabledColor = Color.FromRgb (20,108,237);
 
                  DisapledColorOpacity="30" >  
 
-&lt;/gauge:SfCircularGauge&gt;
+</gauge:SfCircularGauge>
+
+ {% endhighlight %}
+
+
 
 
 

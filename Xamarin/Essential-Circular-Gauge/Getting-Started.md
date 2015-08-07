@@ -7,5 +7,5 @@ control: Control Name undefined
 documentation: ug
 ---
 
-### Getting Started
+# Getting Started
 

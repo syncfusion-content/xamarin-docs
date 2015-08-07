@@ -7,35 +7,36 @@ control: Control Name undefined
 documentation: ug
 ---
 
-#### Create your first Circular Gauge in Xamarin.Android
+# Create your first Circular Gauge in Xamarin.Android
 
 You can configure an Essential Gauge for Xamarin Android in simple steps. In this section, you can learn how to configure a Circular Gauge control in a real-time scenario and also provides a walk-through on some of the customization features available in Circular Gauge control.
 
-![http://help.syncfusion.com/ug/android/ImagesExt/image20_0.png](Createyour-firstCircularGauge-in-XamarinAndroid_images/Createyour-firstCircularGauge-in-XamarinAndroid_img1.png)
-{:.image }
+![http://help.<.com/ug/android/ImagesExt/image20_0.png](Createyour-firstCircularGauge-in-XamarinAndroid_images/Createyour-firstCircularGauge-in-XamarinAndroid_img1.png)
 
 
-Reference Essential Studio components in your solution
+
+## Reference Essential Studio components in your solution
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders,
 
-{Syncfusion Installed location}\Essential Studio\12.4.0.24\lib
+{< Installed location}\Essential Studio\12.4.0.24\lib
 
-> ![http://help.syncfusion.com/ug/android/ImagesExt/image19_8.png](Createyour-firstCircularGauge-in-XamarinAndroid_images/Createyour-firstCircularGauge-in-XamarinAndroid_img2.png)
-{:.image }
+![http://help.<.com/ug/android/ImagesExt/image19_8.png](Createyour-firstCircularGauge-in-XamarinAndroid_images/Createyour-firstCircularGauge-in-XamarinAndroid_img2.png)
 _Note: Assemblies are available in unzipped package location in Mac_
 
 Add the following assembly references to the Android project,
 
- android\Syncfusion.SfGauge.Andriod.dll
+ [android\<.SfGauge.Andriod.dll]
 
-Add and configure the Gauge
+## Add and configure the Gauge
 
 Create a Circular Gauge instance in Main Activity and set Circular Gauge as a ContentView in onCreate() overridden method.
 
+{% highlight c# %}
+ 
+    [C#]
 
-
-   public class MainActivity : Activity
+    public class MainActivity : Activity
 
     {
 
@@ -55,13 +56,19 @@ Create a Circular Gauge instance in Main Activity and set Circular Gauge as 
 
      }
 
-Insert a Scale to the Gauge
+ {% endhighlight %}
+
+   
+
+## Insert a Scale to the Gauge
 
 Now, add the scale to the Circular Gauge.
 
+{% highlight c# %}
+ 
+    [C#]
 
-
-            // creating new instance for circular Gauge
+     // creating new instance for circular Gauge
 
             SfCircularGauge circularGauge = new SfCircularGauge(this);
 
@@ -89,7 +96,7 @@ Now, add the scale to the Circular Gauge.
 
             circularScale.LabelOffset = 0.1;
 
-            circularScale.LabelTextSize = 18;
+            circularScale.Labe<extSize = 18;
 
             _circularScales.Add(circularScale);
 
@@ -97,19 +104,24 @@ Now, add the scale to the Circular Gauge.
 
             SetContentView(circularGauge); 
 
+ {% endhighlight %}
+
+           
+
 The following screenshot illustrates the output of the above code.
 
-![http://help.syncfusion.com/ug/android/ImagesExt/image20_2.png](Createyour-firstCircularGauge-in-XamarinAndroid_images/Createyour-firstCircularGauge-in-XamarinAndroid_img3.png)
-{:.image }
+![http://help.<.com/ug/android/ImagesExt/image20_2.png](Createyour-firstCircularGauge-in-XamarinAndroid_images/Createyour-firstCircularGauge-in-XamarinAndroid_img3.png)
 
 
-Customize the ticks
+## Customize the ticks
 
 You can customize the major and minor ticks using the Tick settings, as illustrated in the following code example.
 
+{% highlight c# %}
+ 
+    [C#]
 
-
-            // creating new instance for circular Gauge
+    // creating new instance for circular Gauge
 
             SfCircularGauge circularGauge = new SfCircularGauge(this);
 
@@ -137,7 +149,7 @@ You can customize the major and minor ticks using the Tick settings, as illust
 
             circularScale.LabelOffset = 0.1;
 
-            circularScale.LabelTextSize = 18;
+            circularScale.Labe<extSize = 18;
 
 
 
@@ -169,21 +181,25 @@ You can customize the major and minor ticks using the Tick settings, as illust
 
             SetContentView(circularGauge); 
 
+ {% endhighlight %}
+
+            
+
  The following screenshot illustrates the output of the above code example.
 
-![http://help.syncfusion.com/ug/android/ImagesExt/image20_3.png](Createyour-firstCircularGauge-in-XamarinAndroid_images/Createyour-firstCircularGauge-in-XamarinAndroid_img4.png)
-{:.image }
+![http://help.<.com/ug/android/ImagesExt/image20_3.png](Createyour-firstCircularGauge-in-XamarinAndroid_images/Createyour-firstCircularGauge-in-XamarinAndroid_img4.png)
 
 
-Add Pointers to the Scale
+## Add Pointers to the Scale
 
 Add needle and range pointers and associate them with a scale.
 
 
+{% highlight c# %}
+ 
+    [C#]
 
-
-
-            // creating new instance for circular Gauge
+     // creating new instance for circular Gauge
 
             SfCircularGauge circularGauge = new SfCircularGauge(this);
 
@@ -213,7 +229,7 @@ Add needle and range pointers and associate them with a scale.
 
             circularScale.LabelOffset = 0.1;
 
-            circularScale.LabelTextSize = 18;
+            circularScale.Labe<extSize = 18;
 
 
 
@@ -283,21 +299,27 @@ Add needle and range pointers and associate them with a scale.
 
             circularGauge.CircularScales =_circularScales; 
 
-            SetContentView(circularGauge); 
+            SetContentView(circularGauge);
+
+ {% endhighlight %}
+
+
+            
 
  The following screenshot illustrates the output of the above code example.
 
-![http://help.syncfusion.com/ug/android/ImagesExt/image20_4.png](Createyour-firstCircularGauge-in-XamarinAndroid_images/Createyour-firstCircularGauge-in-XamarinAndroid_img5.png)
-{:.image }
+![http://help.<.com/ug/android/ImagesExt/image20_4.png](Createyour-firstCircularGauge-in-XamarinAndroid_images/Createyour-firstCircularGauge-in-XamarinAndroid_img5.png)
 
 
-Add Header to the Gauge
+## Add Header to the Gauge
 
 You can add custom labels in the gauge and position it.
 
+{% highlight c# %}
+ 
+    [C#]
 
-
-            // creating new instance for circular Gauge
+    // creating new instance for circular Gauge
 
             SfCircularGauge circularGauge = new SfCircularGauge(this);
 
@@ -329,7 +351,7 @@ You can add custom labels in the gauge and position it.
 
             circularScale.LabelOffset = 0.1;
 
-            circularScale.LabelTextSize = 18;
+            circularScale.Labe<extSize = 18;
 
 
 
@@ -419,9 +441,12 @@ You can add custom labels in the gauge and position it.
 
             SetContentView(circularGauge); 
 
+ {% endhighlight %}
+
+            
+
 The following screenshot illustrates the output of the above code example.
 
-![http://help.syncfusion.com/ug/android/ImagesExt/image20_5.png](Createyour-firstCircularGauge-in-XamarinAndroid_images/Createyour-firstCircularGauge-in-XamarinAndroid_img6.png)
-{:.image }
+![http://help.<.com/ug/android/ImagesExt/image20_5.png](Createyour-firstCircularGauge-in-XamarinAndroid_images/Createyour-firstCircularGauge-in-XamarinAndroid_img6.png)
 
 

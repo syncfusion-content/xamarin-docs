@@ -7,11 +7,11 @@ control: Control Name undefined
 documentation: ug
 ---
 
-### Getting Started
+# Getting Started
 
 This section provides a quick overview of working with Essential Linear Gauge for Xamarin.Forms. 
 
-Add Syncfusion assembly reference
+## Add Syncfusion assembly reference
 
 Add the required Syncfusionassemblyreferences to the respective projects as follows. You can find the required assemblies in the following installation folders. 
 
@@ -19,36 +19,36 @@ _{Syncfusion Installed location}\Essential Studio\12.3.0.23\lib_
 
 _Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\12.3.0.23\lib_
 
-PCL project
+### PCL project
 
 XForms\Syncfusion. SfGauge.XForms.dll  
 
-Android project
+### Android project
 
 Android\Syncfusion. SfGauge.Andriod.dll
 
 Android\Syncfusion. SfGauge. XForms.Andriod.dll 
 
-iOS project
+### iOS project
 
 iOS\Syncfusion. SfGauge.iOS.dll   
 
 iOS\Syncfusion. SfGauge.XForms.iOS.dll
 
-Windows Phone project
+### Windows Phone project
 
 WinPhone\Syncfusion. SfGauge.WP8.dll
 
 WinPhone\Syncfusion SfGauge.XForms.WinPhone.dll
 
 > ![C:/Users/Giftline/Desktop/img.jpg](Getting-Started_images/Getting-Started_img1.jpeg)
-{:.image }
+
 _Note: Essential Linear Gauge for Xamarin is compatible with Xamarin Forms 1.2.2.0._
 
 An additional step is required for Windows Phone and iOS projects. You are required to create an instance of the Linear Gauge custom renderer as follows.
 
 Create an instance of the SfLinearGaugeRenderer in MainPage constructor in Windows Phone project as follows.
-
+{% highlight c# %}
 public MainPage()
 
        	 {
@@ -58,11 +58,12 @@ public MainPage()
         		    ...    
 
      	}
-
+{% endhighlight %}
 
 
 Create an instance of the SfLinearGaugeRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as follows.
 
+{% highlight c# %}
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
         	{
@@ -74,13 +75,15 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         		   ...
 
        	 }
+{% endhighlight %}
 
-Add and configure the gauge
+## Add and configure the gauge
 
 The Linear Gauge control is configured entirely in C# code or using XAML markup.
 
 Create an instance of SfLinearGauge.
 
+{% highlight c# %}
 [C#]
 
 // Update App.cs source this file.
@@ -108,9 +111,9 @@ public static Page GetMainPage()
        };
 
 }
+{% endhighlight %}
 
-
-
+{% highlight xml %}
 [XAML]
 
 // Use the following in App.CS source.
@@ -123,23 +126,24 @@ public static Page GetMainPage()
 
 //}
 
-&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;ContentPage xmlns="http://xamarin.com/schemas/2014/forms"xmlns:local="clr-namespace:Syncfusion.XForms.SfGauge;assembly=Syncfusion.XForms.SfGauge "  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="LinearGaugeGettingStarted.Sample"&gt;
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"xmlns:local="clr-namespace:Syncfusion.XForms.SfGauge;assembly=Syncfusion.XForms.SfGauge "  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="LinearGaugeGettingStarted.Sample">
 
-&lt;ContentPage.Content&gt;
-&lt;local:SfLinearGauge&gt;
+<ContentPage.Content>
+<local:SfLinearGauge>
 
-  &lt;/local:SfLinearGauge&gt;
+  </local:SfLinearGauge>
 
-&lt;/ContentPage.Content&gt;
-&lt;/ContentPage&gt;
+</ContentPage.Content>
+</ContentPage>
+{% endhighlight %}
 
-Insert a Scale
+## Insert a Scale
 
 Add one or more scales to Linear Gauge.
 
 
-
+{% highlight c# %}
 [C#]
 
 linearGauge = new SfLinearGauge();
@@ -175,14 +179,14 @@ scale.ScaleBarSize = 20;
                      scales.Add(scale);
 
 linearGauge.Scales = scales;
+{% endhighlight %}
 
-
-
+{% highlight xml %}
 [Xaml]
 
-&lt;gauge:SflinearGauge&gt;
+<gauge:SflinearGauge>
 
-    &lt;gauge.SfLinearGauge.Scales&gt;
+    <gauge.SfLinearGauge.Scales>
 
        <gauge.Scale MinimumValue="0"
 
@@ -194,14 +198,15 @@ linearGauge.Scales = scales;
 
                  MinorTicksPerInterval="1" ScaleBarSize="20"  />
 
-    &lt;/gauge.SfLinearGauge.Scales&gt;
+    </gauge.SfLinearGauge.Scales>
 
-  &lt;/gauge:SfLinearGauge&gt;
-
-Specify Range
+  </gauge:SfLinearGauge>
+{% endhighlight %}
+## Specify Range
 
 You can improve the readability of data by including ranges that quickly display when values fall within specific ranges.
 
+{% highlight c# %}
 [C#]
 
 …
@@ -225,14 +230,14 @@ range.Offset = -0.3;
 scale.Ranges.Add(range);
 
 …
+{% endhighlight %}
 
-
-
+{% highlight xml %}
 [XAML]
 
-&lt;local:SfLinearGauge&gt;
+<local:SfLinearGauge>
 
-    &lt;local:SfLinearGauge:Scales&gt;
+    <local:SfLinearGauge:Scales>
 
       <local:Scale MinimumValue="0"
 
@@ -244,22 +249,23 @@ scale.Ranges.Add(range);
 
                  MinorTicksPerInterval="1" ScaleBarSize="20"  >
 
-        &lt;local:Scale.Ranges&gt;
+        <local:Scale.Ranges>
 
-             &lt;local:Range StartValue="0" EndValue="80" Color="#3288C6" Offset="-0.3" /&gt;    
+             <local:Range StartValue="0" EndValue="80" Color="#3288C6" Offset="-0.3" />    
 
-        &lt;/local:Scale.Ranges&gt;
+        </local:Scale.Ranges>
 
-      &lt;/local:Scale&gt;
+      </local:Scale>
 
-    &lt;/local:SfLinearGauge:Scales&gt;
+    </local:SfLinearGauge:Scales>
 
-  &lt;/local:SfLinearGauge&gt;
-
-Add a Pointer
+  </local:SfLinearGauge>
+{% endhighlight %}
+  
+## Add a Pointer
 
 Create a Pointer and associate it with a scale.
-
+{% highlight c# %}
 [C#]
 
 …
@@ -291,14 +297,14 @@ pointers.Add(symbolPointer);
             pointers.Add(rangePointer);
 
 …
+{% endhighlight %}
 
-
-
+{% highlight xml %}
 [XAML]
 
-  &lt;local:SfLinearGauge&gt;
+  <local:SfLinearGauge>
 
-    &lt;local:SflinearGauge:Scales&gt;
+    <local:SflinearGauge:Scales>
 
       <local:Scale MinimumValue="0"
 
@@ -310,32 +316,34 @@ pointers.Add(symbolPointer);
 
                  MinorTicksPerInterval="1" ScaleBarSize="20" >
 
-        &lt;local:Scale.Ranges&gt;
+        <local:Scale.Ranges>
 
-             &lt;local:Range StartValue="0" EndValue="80" Color="#3288C6" Offset="-0.3" /&gt;    
+             <local:Range StartValue="0" EndValue="80" Color="#3288C6" Offset="-0.3" />    
 
-        &lt;/local:Scale.Ranges&gt;
+        </local:Scale.Ranges>
 
-        &lt;local:Scale.Pointers&gt;
+        <local:Scale.Pointers>
 
           <local:SymbolPointer Value="50" Color="Red" 
 
                                 Offset="0.3" />
 
-          &lt;local:BarPointer Value="50" Color="White"/&gt;
+          <local:BarPointer Value="50" Color="White"/>
 
-        &lt;/local:Scale.Pointers&gt;
+        </local:Scale.Pointers>
 
-      &lt;/local:Scale&gt;
+      </local:Scale>
 
-    &lt;/local:SfLinearGauge:Scales&gt;
+    </local:SfLinearGauge:Scales>
 
-  &lt;/local:SfLinearGauge &gt;
+  </local:SfLinearGauge >
+{% endhighlight %}
 
-Add a Minor and Major Ticksettings
+## Add a Minor and Major Ticksettings
 
 You can customize a minor and major tick using Ticksettings that provides a way of indicating the current value.
 
+{% highlight c# %}
 [C#]
 
 ...
@@ -367,14 +375,14 @@ major.Thickness = 1;
 
 
 ...
+{% endhighlight %}
 
-
-
+{% highlight xml %}
 [XAML]
 
-&lt;local:SfLinearGauge&gt;
+<local:SfLinearGauge>
 
-    &lt;local:SfLinearGauge:Scales&gt;
+    <local:SfLinearGauge:Scales>
 
       <local:Scale MinimumValue="0"
 
@@ -386,48 +394,48 @@ major.Thickness = 1;
 
                  MinorTicksPerInterval="1" ScaleBarSize="20" >
 
-        &lt;local:Scale.Ranges&gt;
+        <local:Scale.Ranges>
 
-             &lt;local:Range StartValue="0" EndValue="80" Color="#3288C6" Offset="-0.3" /&gt;    
+             <local:Range StartValue="0" EndValue="80" Color="#3288C6" Offset="-0.3" />    
 
-        &lt;/local:Scale.Ranges&gt;
+        </local:Scale.Ranges>
 
 
 
-        &lt;local:Scale.Pointers&gt;
+        <local:Scale.Pointers>
 
           <local:SymbolPointer Value="50" Color="Red" 
 
                                 Offset="0.3" />
 
-          &lt;local:BarPointer Value="50" Color="White"/&gt;
+          <local:BarPointer Value="50" Color="White"/>
 
-        &lt;/local:Scale.Pointers&gt;
+        </local:Scale.Pointers>
 
-        &lt;local:Scale.MinorTickSettings &gt;
-
-          <local:LinearTickSettings Length="10" Color="#4B4B4B" 
-
-                                Tickness="1" />
-
-        &lt;/local:Scale.MinorTickSettings &gt;
-
-        &lt;local:Scale.MajorTickSettings &gt;
+        <local:Scale.MinorTickSettings >
 
           <local:LinearTickSettings Length="10" Color="#4B4B4B" 
 
                                 Tickness="1" />
 
-        &lt;/local:Scale.MajorTickSettings &gt;
+        </local:Scale.MinorTickSettings >
+
+        <local:Scale.MajorTickSettings >
+
+          <local:LinearTickSettings Length="10" Color="#4B4B4B" 
+
+                                Tickness="1" />
+
+        </local:Scale.MajorTickSettings >
 
 
 
-      &lt;/local:Scale&gt;
+      </local:Scale>
 
-    &lt;/local:SfLinearGauge:Scales&gt;
+    </local:SfLinearGauge:Scales>
 
-  &lt;/local:SfLinearGauge&gt;
-
+  </local:SfLinearGauge>
+{% endhighlight %}
 
 
 [http://www.syncfusion.com/Content/en-US/products/Images/Xamarin/lineargauge/lineargauge.png](http://www.syncfusion.com/Content/en-US/products/Images/Xamarin/lineargauge/lineargauge.png)

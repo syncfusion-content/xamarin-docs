@@ -7,18 +7,19 @@ control: Control Name undefined
 documentation: ug
 ---
 
-### Overview
+# Overview
 
-Essential Studio for Xamarin.Forms is a collection of data visualization and file format manipulation components.
+## Essential Studio for Xamarin.
+Forms is a collection of data visualization and file format manipulation components.
 
-Data Visualization
+## Data Visualization
 
 * Barcode
 * Chart
 * Gauge
 * TreeMap
 
-File Formats
+## File Formats
 
 * XlsIO
 * DocIO

@@ -7,15 +7,13 @@ control: Control Name undefined
 documentation: ug
 ---
 
-## Overview
+### Overview
 
-Essential PDF for Xamarin is a .NET PCL library that can be used to create and modify Adobe PDF documents from within 
-Xamarin.iOS, Xamarin.Android and Xamarin.Forms applications. 
+Essential PDF for Xamarin is a .NET PCL library that can be used to create and modify Adobe PDF documents from within Xamarin.iOS, Xamarin.Android and Xamarin.Forms applications. 
 
-All of the elements in a typical PDF file like the text, formatting, images and tables are accessible through a comprehensive 
-set of API’s. This makes it possible to easily create richly formatted PDF documents as well as modify existing ones. 
+All of the elements in a typical PDF file like the text, formatting, images and tables are accessible through a comprehensive set of API’s. This makes it possible to easily create richly formatted PDF documents as well as modify existing ones. 
 
-#### Key Features
+Key Features
 
 Document level features
 

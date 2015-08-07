@@ -7,21 +7,20 @@ control: Control Name undefined
 documentation: ug
 ---
 
-## Create your first AutoComplete in Xamarin.iOS
+#### Create your first AutoComplete in Xamarin.iOS
 
 This section provides a quick overview to work with the AutoComplete in Objective C. This example explains how to create an AutoComplete with different AutoCompleteModes and SuggestionModes.
 
 ![](Create-your-first-AutoComplete-in-XamariniOS_images/Create-your-first-AutoComplete-in-XamariniOS_img1.png)
+{:.image }
 
 
-
-#### Add Framework reference to the project
+Add Framework reference to the project
 
 You can refer to the following link to learn how to refer to the framework to your project. 
-
 [http://help.syncfusion.com/ug/ios/default.htm#!documents/addframeworkreferenc.htm](http://help.syncfusion.com/ug/ios/default.htm)
 
-#### Create an AutoComplete
+Create an AutoComplete
 
 To develop an application with iOS AutoComplete is simple. 
 
@@ -29,7 +28,7 @@ Create an AutComplete object in the View Controller and add the AutoComplete
 
 You can create an AutoComplete object by using the following code example.
 
-{% highlight C# %}  
+
 
 @interface ViewController ()
 
@@ -37,7 +36,10 @@ You can create an AutoComplete object by using the following code example.
 
     SFAutoComplete *autocomplete;
 
+
+
 }
+
 
 
 - (void)viewDidLoad
@@ -52,12 +54,12 @@ You can create an AutoComplete object by using the following code example.
 
 }
 
-{% endhighlight %}
 
-### Setting the AutoCompleteSource to AutoComplete
+
+Setting the AutoCompleteSource to AutoComplete
 
 You can set the suggestion list to the AutoComplete by using the property AutoCompleteSource.
-{% highlight C# %} 
+
 -(NSMutableArray*) countryArray{
 
     NSMutableArray * array= [NSMutableArray array];
@@ -80,13 +82,11 @@ _source=[[AutoCompleteSource alloc]init];
 
 autoComplete1.autoCompleteSource=[_source countryArray];
 
- {% endhighlight %}
 
 
 
-### Setting AutoComplete Customizations
 
-{% highlight C# %}  
+Setting AutoComplete Customizations
 
 AutoComplete is customized by setting the properties as explained in the following code example.
 
@@ -102,5 +102,7 @@ _autoComplete1.autoCompleteMode=SFAutoCompleteAutoCompleteModeSuggest;
 
 _autoComplete1.popUpDelay = 100;
 
-{% endhighlight %}
+
+
+
 

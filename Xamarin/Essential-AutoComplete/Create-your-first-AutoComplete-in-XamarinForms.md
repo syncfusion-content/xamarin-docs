@@ -7,36 +7,35 @@ control: Control Name undefined
 documentation: ug
 ---
 
-## Create your first AutoComplete in Xamarin.Forms
+#### Create your first AutoComplete in Xamarin.Forms
 
 This section provides a quick overview for working with Essential AutoComplete for Xamarin.Forms.
 
-### Add Syncfusion assembly reference
+Add Syncfusion assembly reference
 
-Add the required Syncfusionassembly references to the respective projects as follows. Refer to the following installed 
-location for the required assemblies.
+Add the required Syncfusionassembly references to the respective projects as follows. Refer to the following installed location for the required assemblies.
 
 {Syncfusion Installed location}\Essential Studio\13.2.0.29\lib
 
 For example: C:\Program Files (x86)\Syncfusion\Essential Studio\13.2.0.29\lib
 
-#### PCL project
+PCL project
 
 XForms\Syncfusion. SfAutoComplete.XForms.dll 
 
-#### Android project
+Android project
 
 Android\Syncfusion. SfAutoComplete.Andriod.dll
 
 Android\Syncfusion. SfAutoComplete. XForms.Andriod.dll
 
-#### iOS project
+iOS project
 
 iOS\Syncfusion. SfAutoComplete.iOS.dll  
 
 iOS\Syncfusion. SfAutoComplete.XForms.iOS.dll
 
-#### Windows Phone project
+Windows Phone project
 
 WinPhone\Syncfusion. SfInput.WP8.dll
 
@@ -44,7 +43,8 @@ WinPhone\Syncfusion. SfShared.WP8.dll
 
 WinPhone\Syncfusion. SfAutoComplete.XForms.WinPhone.dll
 
-![](Create-your-first-AutoComplete-in-XamarinForms_images/Create-your-first-AutoComplete-in-XamarinForms_img1.jpeg)
+![http://help.syncfusion.com/ug/xamarin/ImagesExt/image9_9.jpg](Create-your-first-AutoComplete-in-XamarinForms_images/Create-your-first-AutoComplete-in-XamarinForms_img1.jpeg)
+{:.image }
 _Note: Essential AutoComplete for Xamarin is compatible with Xamarin Forms 1.3._
 
 
@@ -52,8 +52,6 @@ _Note: Essential AutoComplete for Xamarin is compatible with Xamarin Forms 1.3._
 An additional step is required for Windows Phone and iOS projects.
 
 Create an instance of the SfAutoCompleteRenderer in MainPage constructor of Windows Phone project as follows.
-
-{% highlight C# %} 
 
 public MainPage()
 
@@ -66,11 +64,8 @@ public MainPage()
      	}
 
 
-{% endhighlight %} 
 
 Create an instance of the SfAutoCompleteRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as follows.
-
-{% highlight C# %} 
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
@@ -85,15 +80,12 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
        	 }
 
 
-{% endhighlight %} 
 
-### Add and configure the AutoComplete
+Add and configure the AutoComplete
 
 The AutoComplete control is configured entirely in C# code or by using XAML markup.
 
 Create an instance of SfAutoComplete.
-
-{% highlight C# %} 
 
 [C#]
 
@@ -123,13 +115,12 @@ public class AutoCompletePage : ContentPage
             sfautocomplete = new SfAutoComplete();
 
         }
+
 }
 
-{% endhighlight %} 
 
-{% highlight xml %} 
 
- [XAML]
+[XAML]
 
 // Use this in App.CS source.
 
@@ -141,15 +132,13 @@ public class AutoCompletePage : ContentPage
         &lt;syncfusion:SfAutoComplete      &lt;/ContentPage.Content&gt;
 &lt;/ContentPage&gt;
 
-{% endhighlight %}
 
-#### Configure the AutoComplete Properties
+
+Configure the AutoComplete Properties
 
 Add the AutoComplete properties in your application.
 
-{% highlight C# %}   
-
-[C#] 
+[C#]
 
 SfAutoComplete sfautocomplete = new SfAutoComplete  ();
 sfautocomplete .AutoCompleteSource= list1;
@@ -157,18 +146,18 @@ sfautocomplete .MinimumPrefixCharacter= 2;
 sfautocomplete .MaximumDropDownHeight= 200;
 sfautocomplete .PopUpelay= 100;
 
-{% endhighlight %}
 
-{% highlight xml %}  
 
 [XAML]
 
 &lt;syncfusion:SfAutoComplete x:Name="sfautocomplete" BackgroundColor="White" MinimumPrefixCharacter="2" MaximumDropDownHeight="200" PopUpDelay="100"/&gt;
 
-{% endhighlight %}
+
+
 
 The following screenshot illustrates the output.
 
 ![](Create-your-first-AutoComplete-in-XamarinForms_images/Create-your-first-AutoComplete-in-XamarinForms_img2.png)
+{:.image }
 
 

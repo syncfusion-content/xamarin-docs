@@ -7,10 +7,9 @@ control: Control Name undefined
 documentation: ug
 ---
 
-## Getting Started	
+### Getting Started	
 
-The following steps demonstrate how create a simple PDF document in a Xamarin.Forms project using Essential PDF. You can also 
-download the entire source code of this demo from the link - [http://files2.syncfusion.com/Installs/v12.2.0.40/Samples/Xamarin/PDF_GettingStarted.zip](http://files2.syncfusion.com/Installs/v12.2.0.40/Samples/Xamarin/PDF_GettingStarted.zip)
+The following steps demonstrate how create a simple PDF document in a Xamarin.Forms project using Essential PDF. You can also download the entire source code of this demo from the link - [http://files2.syncfusion.com/Installs/v12.2.0.40/Samples/Xamarin/PDF_GettingStarted.zip](http://files2.syncfusion.com/Installs/v12.2.0.40/Samples/Xamarin/PDF_GettingStarted.zip)
 
 1. Create a new Xamarin.Forms portable project.
 2. Next, you need to reference Essential Studio components in your solution. 
@@ -19,32 +18,38 @@ Essential PDF is packaged as a portable class library so currently there is no w
 
 
 
-_```_
+```
 
 Syncfusion.Compression.Portable.dll
 
-_Syncfusion.Pdf.Portable.dll_
+Syncfusion.Pdf.Portable.dll
 
-_```_
+
+
+```
 
 > ![C:/Users/ApoorvahR/Desktop/Note.png](Getting-Started_images/Getting-Started_img1.png)
+{:.image }
 _Note: If you had already referenced one of our UI components (Chart, Gauge or Treemap) components from within the Xamarin component store IDE interface then the DocIO assembly has already been downloaded and available in your solution folder, You can then manually add references from that folder._
 
 
 
-_```_
+```
 
 Components/syncfusionessentialstudio-version/lib/pcl/
 
-_```_
+
+
+```
 
 3. Use the following C# code to generate a simple PDF using Essential PDF
 
-{% highlight C# %}  
+
 
 //Create a new PDF document.
 
 PdfDocument document = new PdfDocument();
+
 
 
 //Add a page
@@ -52,9 +57,11 @@ PdfDocument document = new PdfDocument();
 PdfPage page = document.Pages.Add();
 
 
+
 //Creates Pdf graphics for the page
 
 PdfGraphics graphics = page.Graphics;
+
 
 
 //Creates a solid brush.
@@ -62,9 +69,11 @@ PdfGraphics graphics = page.Graphics;
 PdfBrush brush = new PdfSolidBrush(Color.Black);
 
 
+
 //Sets the font.
 
 PdfFont font = new PdfStandardFont(PdfFontFamily.Helvetica, fontSize);
+
 
 
 //Draws the text.
@@ -91,19 +100,18 @@ document.Save(stream);
 
 document.Close(true);
 
+```
 
-
-{% endhighlight %}
 
 
 ![](Getting-Started_images/Getting-Started_img2.png)
-
+{:.image }
 ![](Getting-Started_images/Getting-Started_img3.png)
-
+{:.image }
 ![](Getting-Started_images/Getting-Started_img4.png)
-
+{:.image }
 ![](Getting-Started_images/Getting-Started_img5.png)
-
+{:.image }
 
 
 

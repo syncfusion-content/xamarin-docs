@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Essential-PDF
-description: essential pdf
+title: Essential-RangeSlider
+description: essential rangeslider
 platform: xamarin
 control: Control Name undefined
 documentation: ug
 ---
 
-## Essential PDF
+## Essential RangeSlider
 

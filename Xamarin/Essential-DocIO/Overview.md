@@ -7,11 +7,11 @@ control: Control Name undefined
 documentation: ug
 ---
 
-### Overview
+# Overview
 
 Essential DocIO for Xamarin is a .NET PCL library that can be used to read and write Microsoft Word documents from within Xamarin.iOS, Xamarin.Android and Xamarin.Forms applications. 
 
-Key Features
+## Key Features
 
 Here is a quick summary of the features available in Essential DocIO
 

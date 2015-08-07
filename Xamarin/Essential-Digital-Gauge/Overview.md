@@ -7,11 +7,11 @@ control: Control Name undefined
 documentation: ug
 ---
 
-### Overview	
+# Overview	
 
 Essential Digital Gauge for Xamarin.Forms allows you to visualize alpha and numeric values over a DigitalGauge frame. It is used to display a range of values that uses character in combination with numbers.
 
-Key Features
+## Key Features
 
 * Four Predefined CharacterTypes
 * Full Character Customization provided

@@ -7,39 +7,39 @@ control: Control Name undefined
 documentation: ug
 ---
 
-#### Create your first Circular Gauge in Xamarin.iOS
+# Create your first Circular Gauge in Xamarin.iOS
 
 Essential Gauge for Xamarin iOS allows you to visualize numeric values over a circular scale. You can fully customize the appearance of the gauge to seamlessly integrate with your applications.
 
 This section provides a quick overview for working with Essential Gauge for Xamarin iOS. It walks through the entire process of creating a real world gauge.
 
 ![http://help.syncfusion.com/ug/ios/ImagesExt/image24_0.png](Create-your-first-Circular-Gauge-in-XamariniOS_images/Create-your-first-Circular-Gauge-in-XamariniOS_img1.png)
-{:.image }
 
 
-Reference Essential Studio Components in your Solution
+## Reference Essential Studio Components in your Solution
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, typically:
 
 {Syncfusion Installed location}\Essential Studio\{version number}\lib
 
-> ![http://help.syncfusion.com/ug/ios/ImagesExt/image23_4.png](Create-your-first-Circular-Gauge-in-XamariniOS_images/Create-your-first-Circular-Gauge-in-XamariniOS_img2.png)
-{:.image }
+![http://help.syncfusion.com/ug/ios/ImagesExt/image23_4.png](Create-your-first-Circular-Gauge-in-XamariniOS_images/Create-your-first-Circular-Gauge-in-XamariniOS_img2.png)
 _Note: You can find assemblies in unzipped package location in Mac._
 
 You have to add the following assembly references to the Xamarin.iOS project.
 
- iOS\Syncfusion.SfGauge.iOS.dll
+ [iOS\Syncfusion.SfGauge.iOS.dll]
 
-Initialize the CircularGauge
+## Initialize the CircularGauge
 
 Create a CircularGauge object in the UIViewController and add CircularGauge as SubView in ViewDidLoad override method.
 
 You can create a CircularGauge object by using the following code example.
 
+{% highlight c# %}
+ 
+    [C#]
 
-
-public override void ViewDidLoad ()
+    public override void ViewDidLoad ()
 
 {
 
@@ -55,11 +55,19 @@ View.BackgroundColor = UIColor.Black;
 
 }
 
-Insert a Scale to the Gauge
+ {% endhighlight %}
+
+
+
+## Insert a Scale to the Gauge
 
 Next, add one of more scales.
 
-             // creating new instance for circular Gauge  
+{% highlight c# %}
+ 
+    [C#]
+
+    // creating new instance for circular Gauge  
 
             SFCircularGauge _circularGauge = new SFCircularGauge();
 
@@ -97,17 +105,24 @@ Next, add one of more scales.
 
         	View.BackgroundColor = UIColor.Black;
 
+ {% endhighlight %}
+
+            
+
  The following screenshot illustrates the output of the above code.
 
 ![http://help.syncfusion.com/ug/ios/ImagesExt/image24_1.png](Create-your-first-Circular-Gauge-in-XamariniOS_images/Create-your-first-Circular-Gauge-in-XamariniOS_img3.png)
-{:.image }
 
 
-Customize the ticks
+## Customize the ticks
 
 You can customize the major and minor ticks using the Tick settings as follows.
 
-             // creating new instance for circular Gauge  
+{% highlight c# %}
+ 
+    [C#]
+
+    // creating new instance for circular Gauge  
 
             SFCircularGauge _circularGauge = new SFCircularGauge();
 
@@ -171,21 +186,27 @@ You can customize the major and minor ticks using the Tick settings as follows
 
        	View.BackgroundColor = UIColor.Black;
 
+ {% endhighlight %}
+
+            
+
 
 
  The following screenshot illustrates the output of the above code.
 
 ![http://help.syncfusion.com/ug/ios/ImagesExt/image24_2.png](Create-your-first-Circular-Gauge-in-XamariniOS_images/Create-your-first-Circular-Gauge-in-XamariniOS_img4.png)
-{:.image }
 
 
-Add Pointers to the Scale
+
+## Add Pointers to the Scale
 
 Now, add needle pointer and range pointer and associate it with a scale.
 
+{% highlight c# %}
+ 
+    [C#]
 
-
-                            // creating new instance for circular Gauge  
+          // creating new instance for circular Gauge  
 
             SFCircularGauge _circularGauge = new SFCircularGauge();
 
@@ -281,19 +302,25 @@ Now, add needle pointer and range pointer and associate it with a scale.
 
 View.BackgroundColor = UIColor.Black;
 
+ {% endhighlight %}
+
+                      
+
  The following screenshot illustrates the output of the above code.
 
 ![http://help.syncfusion.com/ug/ios/ImagesExt/image24_3.png](Create-your-first-Circular-Gauge-in-XamariniOS_images/Create-your-first-Circular-Gauge-in-XamariniOS_img5.png)
-{:.image }
 
 
-Add Header to the Gauge
+
+## Add Header to the Gauge
 
 You can add custom labels in the gauge and position it.
 
+{% highlight c# %}
+ 
+    [C#]
 
-
-            // creating new instance for circular Gauge  
+     // creating new instance for circular Gauge  
 
             SFCircularGauge _circularGauge = new SFCircularGauge();
 
@@ -401,12 +428,15 @@ You can add custom labels in the gauge and position it.
 
 View.BackgroundColor = UIColor.Black;
 
+ {% endhighlight %}
+
+           
+
 
 
  The following screenshot illustrates the output of the above code.
 
 ![http://help.syncfusion.com/ug/ios/ImagesExt/image24_4.png](Create-your-first-Circular-Gauge-in-XamariniOS_images/Create-your-first-Circular-Gauge-in-XamariniOS_img6.png)
-{:.image }
 
 
 

@@ -7,15 +7,14 @@ control: Control Name undefined
 documentation: ug
 ---
 
-### Overview
+# Overview
 
 Essential Chartfor Xamarin Forms provide a perfect way to visualize data with a high level of user interactivity that focuses on development, productivity and simplicity of use. Essential Chart also provides a wide variety of charting features that are used to visualize large quantities of data, flexible data binding and user customization.
 
 ![](Overview_images/Overview_img1.png)
-{:.image }
 
 
-Key features
+## Key features
 
 * Chart supports 14 different type of series, ranging from simple bar series to complex financial charts. Each type of chart represents a unique style of representing data that is more user friendly and has greater UI visualization.
 * Data can be plotted against multiple scales that helps to visualize the mixed types of data in a single chart.

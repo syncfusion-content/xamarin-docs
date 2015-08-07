@@ -7,7 +7,7 @@ control: Control Name undefined
 documentation: ug
 ---
 
-### Getting Started
+## Getting Started
 
 This section explains how to configure the NumericTextBox in the following three platforms.
 

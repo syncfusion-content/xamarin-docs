@@ -143,7 +143,7 @@ wp8\Syncfusion.SfChart.WP8.dll
 
 wp8\Syncfusion.SfChart.xForms.WinPhone.dll
 
- ![C:/Users/ApoorvahR/Desktop/Note.png](Getting-Started_images/Getting-Started_img2.png)
+
 _Note: Essential Chart for Xamarin is compatible with Xamarin. Forms v.1.2.3.6257._
 
 Currently an additional step is required for Windows Phone and iOS projects. We need to create an instance of the chart custom renderer as shown below. 
@@ -805,5 +805,1112 @@ Here is the complete code sample for creating the Chart.
 
 ![](Getting-Started_images/Getting-Started_img3.png)
 
+
+## Create your first Chart in Xamarin.Android
+
+This section provides a quick overview for working with Essential Chart for Xamarin Android. It guides you to the entire process of creating a real-world chart.
+
+This section enables you to visualize the weather data for Washington, DC, during the period 1961-1990. The raw sample data is given as follows.
+
+<table>
+<tr>
+<td>
+{{ '**Month**' | markdownify }}</td><td>
+{{ '**High**' | markdownify }}</td><td>
+{{ '**Low**' | markdownify }}</td><td>
+{{ '**Precipitation**' | markdownify }}</td></tr>
+<tr>
+<td>
+January</td><td>
+42</td><td>
+27</td><td>
+3.03</td></tr>
+<tr>
+<td>
+February</td><td>
+44</td><td>
+28</td><td>
+2.48</td></tr>
+<tr>
+<td>
+March</td><td>
+53</td><td>
+35</td><td>
+3.23</td></tr>
+<tr>
+<td>
+April</td><td>
+64</td><td>
+44</td><td>
+3.15</td></tr>
+<tr>
+<td>
+May</td><td>
+75</td><td>
+54</td><td>
+4.13</td></tr>
+<tr>
+<td>
+June</td><td>
+83</td><td>
+63</td><td>
+3.23</td></tr>
+<tr>
+<td>
+July</td><td>
+87</td><td>
+68</td><td>
+4.13</td></tr>
+<tr>
+<td>
+August</td><td>
+84</td><td>
+66</td><td>
+4.88</td></tr>
+<tr>
+<td>
+September</td><td>
+78</td><td>
+59</td><td>
+3.82</td></tr>
+<tr>
+<td>
+October</td><td>
+67</td><td>
+48</td><td>
+3.07</td></tr>
+<tr>
+<td>
+November</td><td>
+55</td><td>
+38</td><td>
+2.83</td></tr>
+<tr>
+<td>
+December</td><td>
+45</td><td>
+29</td><td>
+2.8</td></tr>
+</table>
+
+
+![](Create-your-first-Chart-in-XamarinAndroid_images/Create-your-first-Chart-in-XamarinAndroid_img1.png)
+
+
+### Reference Essential Studio components in your solution
+
+After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, 
+
+{Syncfusion Installed location}\Essential Studio\12.4.0.24\lib
+
+
+_Note: Assemblies_ _are_ _available____in unzipped package location in Mac._
+
+Add the following assembly references to the Android project,
+
+
+
+[android\Syncfusion.SfChart.Andriod.dll]
+
+
+
+### Add and configure the Chart
+
+The following steps explain on how to create a Chart and configure its elements,
+
+1. Create an instance of SfChart.
+2. Add the primary and secondary axis for the chart as follows.
+
+   ~~~ cs
+
+        [C#]
+
+            SfChart chart = new SfChart (this);
+
+            _//Initializing Primary Axis_
+            CategoryAxis primaryAxis = new CategoryAxis ();
+            primaryAxis.Title.Text = "Month";
+
+            chart.PrimaryAxis = primaryAxis;
+
+            _//Initializing Secondary Axis_
+            NumericalAxis secondaryAxis = new NumericalAxis ();
+            secondaryAxis.Title.Text = "Temperature";
+
+            chart.SecondaryAxis = secondaryAxis;
+
+            SetContentView(chart);
+	
+   ~~~
+   {:.pretty-print }
+
+
+
+
+
+You can set a title for the chart using the Title.Text property as follows.
+
+{% highlight c# %}
+ 
+    [C#]
+
+   chart.Title.Text = "Weather Analysis";
+
+ {% endhighlight %}
+ 
+
+### Add a Chart series
+
+In this sample, you can display the temperature over the months using a Column Series. Before creating the series, create a data model representing the climate details data.
+
+In SfChart, the series itemsource should to be a collection of ChartDataPoint objects. Add the following class for generating the datapoints.
+
+{% highlight c# %}
+ 
+    [C#]
+
+     public class DataModel
+    {
+        public ObservableArrayList  HighTemperature;
+
+        public DataModel ()
+        {
+            HighTemperature = new ObservableArrayList ();
+
+            HighTemperature.Add (new ChartDataPoint ("Jan", 42));
+            HighTemperature.Add (new ChartDataPoint ("Feb", 44));
+            HighTemperature.Add (new ChartDataPoint ("Mar", 53));
+            HighTemperature.Add (new ChartDataPoint ("Apr", 64));
+            HighTemperature.Add (new ChartDataPoint ("May", 75));
+            HighTemperature.Add (new ChartDataPoint ("Jun", 83));
+            HighTemperature.Add (new ChartDataPoint ("Jul", 87));
+            HighTemperature.Add (new ChartDataPoint ("Aug", 84));
+            HighTemperature.Add (new ChartDataPoint ("Sep", 78));
+            HighTemperature.Add (new ChartDataPoint ("Oct", 67));
+            HighTemperature.Add (new ChartDataPoint ("Nov", 55));
+            HighTemperature.Add (new ChartDataPoint ("Dec", 45));
+
+        }
+
+   }
+
+ {% endhighlight %}
+
+   
+
+Now, add the series to the chart and set its DataSource as follows.
+
+{% highlight c# %}
+ 
+    [C#]
+
+    _//Adding the series to the chart_
+                chart.Series.Add (new ColumnSeries () {
+                DataSource= dataModel.HighTemperature
+            }); 
+
+ {% endhighlight %}
+
+
+
+### Add Legends
+
+You can enable the Legends in SfChart by setting legend visibility to visible as follows.
+
+{% highlight c# %}
+ 
+    [C#]
+    _//Adding Chart Legend for the Chart_
+        chart.Legend.Visibility = Visibility.Visible;  this.olapChart.FlowDirection = System.Windows.FlowDirection.RightToLeft;
+
+ {% endhighlight %}
+
+
+
+
+
+Circular legend icons are displayed for each series by default. Next, provide the labels for the series using the Label property, this information is displayed along with the legend icon.
+
+The next step is to add the HighTemperature column series as follows.
+
+{% highlight c# %}
+ 
+    [C#]
+
+    _//Adding the column series to the chart_
+      chart.Series.Add (new ColumnSeries () {
+        DataSource = dataModel.HighTemperature,
+        Label = "Series 1" 
+});
+
+ {% endhighlight %}
+
+
+
+### Add multiple series to the SfChart
+
+So far, only the high temperature data is displayed over time. Now, you can display other data such as low temperature and precipitation.
+
+Add two SplineSeries for displaying high and low temperatures and a ColumnSeries for displaying the precipitation as follows.
+
+{% highlight c# %}
+ 
+    [C#]
+
+    DataModel dataModel = new DataModel ();
+
+    _//Adding ColumnSeries to the chart for Precipitation_
+     chart.Series.Add (new ColumnSeries () {
+     DataSource = dataModel.Precipitation,
+     Label = "Precipitation"
+     });
+
+    _//Adding the SplineSeries to the chart for high temperature_
+     chart.Series.Add (new SplineSeries () {
+     DataSource = dataModel.HighTemperature,
+     Label = "High"
+     });
+
+    _//Adding the SplineSeries to the chart for low temperature_
+     chart.Series.Add (new SplineSeries () {
+     DataSource = dataModel.LowTemperature,
+     Label = "Low"
+     });
+
+ {% endhighlight %}
+
+            
+
+Currently, all the data is plotted against a single scale but the precipitation data should be plotted against a different scale.
+
+### Add multiple Y-axis
+
+Add a secondary axis(y axis) to the chart as follows.
+
+{% highlight c# %}
+ 
+    [C#]
+
+    _//Adding ColumnSeries to the chart for Precipitation_
+            chart.Series.Add (new ColumnSeries () {
+                DataSource = dataModel.Precipitation,
+                Label = "Precipitation",
+                YAxis = new NumericalAxis(){ OpposedPosition = true }
+
+             );
+
+ {% endhighlight %}
+
+
+
+
+
+The OpposedPostion is set to true to place the secondary axis on the opposite side.
+
+The following is the complete code example for creating the Chart.
+
+{% highlight c# %}
+ 
+    [C#]
+
+    public class WeatherActivity : Activity
+
+    {
+
+    protected override void OnCreate (Bundle bundle)
+
+    {
+
+	    base.OnCreate (bundle);          
+
+    _//Initializing chart_
+            SfChart chart = new SfChart (this); 
+            chart.Title.Text = "Weather Analysis" ;
+
+    _//Initializing Primary Axis_
+            CategoryAxis primaryAxis = new CategoryAxis ();
+            primaryAxis.Title.Text = “Month”;
+
+            chart.PrimaryAxis = primaryAxis;
+
+    _//Initializing Secondary Axis_
+            NumericalAxis secondaryAxis = new NumericalAxis ();
+            secondaryAxis.Title.Text  = "Temperature" ;
+
+            chart.SecondaryAxis = secondaryAxis;
+
+
+            DataModel dataModel = new DataModel ();
+
+    _//Adding ColumnSeries to the chart for Precipitation_
+            chart.Series.Add (new ColumnSeries () {
+                DataSource = dataModel.Precipitation,
+                Label = "Precipitation",
+                YAxis = new NumericalAxis(){ OpposedPosition = true, 
+
+                                ShowMajorGridLines=  false }
+            });
+
+    _//Adding the SplineSeries to the chart for high temperature_
+            chart.Series.Add (new SplineSeries () {
+                DataSource = dataModel.HighTemperature,
+                Label = "High"
+            });
+
+    _//Adding the SplineSeries to the chart for low temperature_
+            chart.Series.Add (new SplineSeries () {
+                DataSource = dataModel.LowTemperature,
+                Label = "Low"
+            });
+
+    _//Adding Chart Legend for the Chart_
+            chart.Legend.Visibility = Visibility.Visible; 
+
+            SetContentView(chart);
+
+        }
+
+    }
+
+    public class DataModel
+    {
+        public ObservableArrayList  HighTemperature;
+
+        public ObservableArrayList  LowTemperature;
+
+        public ObservableArrayList  Precipitation;
+
+        public DataModel ()
+        {
+            HighTemperature = new ObservableArrayList ();
+
+            HighTemperature.Add (new ChartDataPoint ("Jan", 42));
+            HighTemperature.Add (new ChartDataPoint ("Feb", 44));
+            HighTemperature.Add (new ChartDataPoint ("Mar", 53));
+            HighTemperature.Add (new ChartDataPoint ("Apr", 64));
+            HighTemperature.Add (new ChartDataPoint ("May", 75));
+            HighTemperature.Add (new ChartDataPoint ("Jun", 83));
+            HighTemperature.Add (new ChartDataPoint ("Jul", 87));
+            HighTemperature.Add (new ChartDataPoint ("Aug", 84));
+            HighTemperature.Add (new ChartDataPoint ("Sep", 78));
+            HighTemperature.Add (new ChartDataPoint ("Oct", 67));
+            HighTemperature.Add (new ChartDataPoint ("Nov", 55));
+            HighTemperature.Add (new ChartDataPoint ("Dec", 45));
+
+            LowTemperature = new ObservableArrayList ();
+
+            LowTemperature.Add (new ChartDataPoint ("Jan", 27));
+            LowTemperature.Add (new ChartDataPoint ("Feb", 28));
+            LowTemperature.Add (new ChartDataPoint ("Mar", 35));
+            LowTemperature.Add (new ChartDataPoint ("Apr", 44));
+            LowTemperature.Add (new ChartDataPoint ("May", 54));
+            LowTemperature.Add (new ChartDataPoint ("Jun", 63));
+            LowTemperature.Add (new ChartDataPoint ("Jul", 68));
+            LowTemperature.Add (new ChartDataPoint ("Aug", 66));
+            LowTemperature.Add (new ChartDataPoint ("Sep", 59));
+            LowTemperature.Add (new ChartDataPoint ("Oct", 48));
+            LowTemperature.Add (new ChartDataPoint ("Nov", 38));
+            LowTemperature.Add (new ChartDataPoint ("Dec", 29));
+
+            Precipitation = new ObservableArrayList ();
+
+            Precipitation.Add (new ChartDataPoint ("Jan", 3.03));
+            Precipitation.Add (new ChartDataPoint ("Feb", 2.48));
+            Precipitation.Add (new ChartDataPoint ("Mar", 3.23));
+            Precipitation.Add (new ChartDataPoint ("Apr", 3.15));
+            Precipitation.Add (new ChartDataPoint ("May", 4.13));
+            Precipitation.Add (new ChartDataPoint ("Jun", 3.23));
+            Precipitation.Add (new ChartDataPoint ("Jul", 4.13));
+            Precipitation.Add (new ChartDataPoint ("Aug", 4.88));
+            Precipitation.Add (new ChartDataPoint ("Sep", 3.82));
+            Precipitation.Add (new ChartDataPoint ("Oct", 3.07));
+            Precipitation.Add (new ChartDataPoint ("Nov", 2.83));
+            Precipitation.Add (new ChartDataPoint ("Dec", 2.8));
+        }
+    }
+
+ {% endhighlight %}
+
+
+
+
+The following screenshot illustrates the output.
+
+![](Create-your-first-Chart-in-XamarinAndroid_images/Create-your-first-Chart-in-XamarinAndroid_img3.png)
+
+## Create your first Chart in Xamarin.iOS
+
+This section provides a quick overview for working with Essential Chart for Xamarin.iOS. It walks you through the entire process of creating a real-world Chart.
+
+This section is to help you visualize the weather data for Washington, DC, during the period 1961-1990. The raw sample data is given as follows.
+
+_Table_ _3_: _Weather Data Sample_
+
+<table>
+<tr>
+<td>
+Month</td><td>
+High</td><td>
+Low</td><td>
+Precipitation</td></tr>
+<tr>
+<td>
+{{ '**January**' | markdownify }}</td><td>
+42</td><td>
+27</td><td>
+3.03</td></tr>
+<tr>
+<td>
+{{ '**February**' | markdownify }}</td><td>
+44</td><td>
+28</td><td>
+2.48</td></tr>
+<tr>
+<td>
+{{ '**March**' | markdownify }}</td><td>
+53</td><td>
+35</td><td>
+3.23</td></tr>
+<tr>
+<td>
+{{ '**April**' | markdownify }}</td><td>
+64</td><td>
+44</td><td>
+3.15</td></tr>
+<tr>
+<td>
+{{ '**May**' | markdownify }}</td><td>
+75</td><td>
+54</td><td>
+4.13</td></tr>
+<tr>
+<td>
+{{ '**June**' | markdownify }}</td><td>
+83</td><td>
+63</td><td>
+3.23</td></tr>
+<tr>
+<td>
+{{ '**July**' | markdownify }}</td><td>
+87</td><td>
+68</td><td>
+4.13</td></tr>
+<tr>
+<td>
+{{ '**August**' | markdownify }}</td><td>
+84</td><td>
+66</td><td>
+4.88</td></tr>
+<tr>
+<td>
+{{ '**September**' | markdownify }}</td><td>
+78</td><td>
+59</td><td>
+3.82</td></tr>
+<tr>
+<td>
+{{ '**October**' | markdownify }}</td><td>
+67</td><td>
+48</td><td>
+3.07</td></tr>
+<tr>
+<td>
+{{ '**November**' | markdownify }}</td><td>
+55</td><td>
+38</td><td>
+2.83</td></tr>
+<tr>
+<td>
+{{ '**December**' | markdownify }}</td><td>
+45</td><td>
+29</td><td>
+2.8</td></tr>
+</table>
+
+
+This is how the final output looks like on iOS devices.
+
+
+
+![](Create-your-first-Chart-in-XamariniOS_images/Create-your-first-Chart-in-XamariniOS_img1.png)
+
+
+
+### Reference Essential Studio Components in your Solution
+
+After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, typically:
+
+{Syncfusion Installed location}\Essential Studio\{version number}\lib
+
+
+_Note: Assemblies are available__in unzipped package location in Mac._
+
+You have to add the following assembly references to the iOS project.
+
+
+
+iOS\Syncfusion.SfChart.iOS.dll
+
+### Add and Configure Chart
+
+The following steps explain how to create a Chart and configure its elements.
+
+1. Create an instance of SfChart.
+
+   ~~~ cs
+
+        [C#]
+
+
+
+            public override void ViewDidLoad ()
+            {
+                base.ViewDidLoad ();
+
+
+            _//Initialize the Chart with required frame. This frame can be any rectangle, which bounds inside the view._
+                SFChart chart                             = new SFChart ();
+                chart.Frame                                = this.View.Frame;
+            }
+
+	
+   ~~~
+   {:.pretty-print }
+
+
+
+
+2. Add the primary and secondary axes for the Chart as follows.
+
+   ~~~ cs
+
+        [C#]
+
+
+
+        _//Adding Primary Axis for the Chart._
+            SFCategoryAxis primaryAxis     = new SFCategoryAxis ();
+            primaryAxis.Title.Text                = "Month";
+            chart.PrimaryAxis                        = primaryAxis;
+
+        _//Adding Secondary Axis for the Chart._
+            SFNumericalAxis secondaryAxis = new SFNumericalAxis ();
+            secondaryAxis.Title.Text              = "Temperature";
+            chart.SecondaryAxis                     = secondaryAxis; 
+	
+   ~~~
+   {:.pretty-print }
+
+
+
+
+
+3. A title for the Chart is set using the Title property as follows.
+
+   ~~~ cs
+
+    [C#]
+
+        _//Define the title for the Chart._
+            chart.Title.Text                           = "Weather Analysis";
+	
+   ~~~
+   {:.pretty-print }
+
+
+
+
+
+### Add a Chart series
+
+In this example is visualized the temperature over the months using a Spline Series. Before creating the series, you have to create the data source representing the climate details. 
+
+In SFChart, series, the data source must be the collection of SfChartDataPoint__objects. Add the following class by inheriting from SfChartDatSource, for generating the data points.
+
+{% highlight c# %}
+ 
+    [C#]
+
+    _/// &lt;summary&gt;_
+
+    _/// Class acts as a data model for the chart by inheriting 'SFChartDataSource'._
+
+    _/// &lt;/summary&gt;_
+
+    public class ChartDataModel : SFChartDataSource
+    {
+        NSMutableArray highTemperature;
+        NSMutableArray lowTemperature;
+        NSMutableArray precipitation;
+        public ChartDataModel ()
+        {
+            highTemperature   = new NSMutableArray ();
+            lowTemperature    = new NSMutableArray ();
+            precipitation          = new NSMutableArray ();
+
+
+            AddDataPointsForChart ("Jan", 42, 27, 3.03);
+            AddDataPointsForChart ("Feb", 44, 28, 2.48);
+            AddDataPointsForChart ("Mar", 53, 35, 3.23);
+            AddDataPointsForChart ("Apr", 64, 44, 3.15);
+            AddDataPointsForChart ("May", 75, 54, 4.13);
+            AddDataPointsForChart ("Jun", 83, 63, 3.23);
+            AddDataPointsForChart ("Jul", 87, 68, 4.13);
+            AddDataPointsForChart ("Aug", 84, 66, 4.88);
+            AddDataPointsForChart ("Sep", 78, 59, 3.82);
+            AddDataPointsForChart ("Oct", 67, 48, 3.07);
+            AddDataPointsForChart ("Nov", 55, 38, 2.83);
+            AddDataPointsForChart ("Dec", 45, 29, 2.80);
+        }
+
+        void AddDataPointsForChart (String month, Double high, Double low, Double ppt)
+        {
+            highTemperature.Add (new SFChartDataPoint (NSObject.FromObject (month), 
+
+                                                                                         NSObject.FromObject (high)));
+
+            lowTemperature.Add (new SFChartDataPoint (NSObject.FromObject (month), 
+
+                                                                                        NSObject.FromObject (low)));
+
+            precipitation.Add (new SFChartDataPoint (NSObject.FromObject (month), 
+
+                                                                                  NSObject.FromObject (ppt)));
+        }
+
+ {% endhighlight %}
+
+
+
+
+
+
+
+
+Then you need to override the following four methods to generate series for the Chart.
+
+* NumberOfSeriesInChart- Returns an integer that represents the number of series to be added to SfChart.
+* GetSeries- Returns a series object, like the SfSeries, for the Chart at a particular index.
+* GetDataPoint- Returns each data point to be plotted in the series.
+* GetNumberOfDataPoints- Returns the number of data points required.
+
+There is also an optional method.
+
+* GetDataPoints- Returns an array of data points to be plotted in the series based on series index.
+
+The following is the code example to implement the SfChartDataSource.
+
+{% highlight c# %}
+ 
+    [C#]
+
+     [Export ("numberOfSeriesInChart:")]
+        public override int NumberOfSeriesInChart (SFChart chart)
+        {
+            return 3; _//returns no of series required for the chart._
+        }
+
+        [Export ("chart:seriesAtIndex:")]
+        public override SFSeries GetSeries (SFChart chart, int index)
+        {
+_//returns the series for the chart._
+            SFSplineSeries series       = new SFSplineSeries ();
+            series.Label                       = "High";
+            return series;
+
+        }
+
+        [Export ("chart:dataPointAtIndex:forSeriesAtIndex:")]
+        public override SFChartDataPoint GetDataPoint (SFChart chart, int index, int seriesIndex)
+        {
+_//returns the datapoint for each series._
+            return highTemperature.GetItem<SFChartDataPoint> (index);
+        }
+
+        [Export ("chart:numberOfDataPointsForSeriesAtIndex:")]
+        public override int GetNumberOfDataPoints (SFChart chart, int index)
+        {
+            return 12;_//No of datapoints needed for each series._
+        }
+
+ {% endhighlight %}
+
+
+
+      
+
+
+
+
+Since the ChartDataModel class implements SfChartDataSource, you can create the new instance of ChartDataModel class and then set the instance of ChartDataModel to data source for SfChart. Also, SfChart can be added as sub-view of View Controller’s view as follows.
+
+{% highlight c# %}
+ 
+    [C#]
+
+    _//Defining the data source for the Chart._
+     ChartDataModel dataModel  = new ChartDataModel ();
+     chart.DataSource                   = dataModel as SFChartDataSource;
+
+
+
+_//Adding our Chart as a sub view._
+     this.View.AddSubview (chart);
+
+ {% endhighlight %}
+
+
+
+
+
+
+### Add Legend 
+
+Legend can be enabled in SfChart by setting the Legend Visible property to True as follows.
+
+{% highlight c# %}
+ 
+    [C#]
+
+    _//Adding legend to the Chart._
+      chart.Legend.Visible = true;
+
+ {% endhighlight %}
+
+
+
+
+
+### Add Multiple Series to the Chart
+
+You can add two SfSplineSeries for displaying high and low temperatures and a SfColumnSeries for displaying the precipitation.
+
+Visualized so far, is the high temperature data over time. You can visualize other data such as low temperature and precipitation.
+
+{% highlight c# %}
+ 
+    [C#]
+
+   [Export ("chart:seriesAtIndex:")]
+        public override SFSeries GetSeries (SFChart chart, int index)
+        {
+_//returns the series for the chart._
+            if (index == 1) {
+                SFSplineSeries series   = new SFSplineSeries ();
+                series.Label                   = "High";
+                return series;
+            } else if (index == 2) {
+                SFSplineSeries series   = new SFSplineSeries ();
+                series.Label                   = "Low";
+                return series;
+            } else {
+                SFColumnSeries series = new SFColumnSeries ();
+                series.Label                   = "Precipitation";
+                return series;
+            }
+        }
+
+ {% endhighlight %}
+
+
+
+        
+
+
+
+From the data source implementation methods you need to change the number of series to be added to SfChart as follows.
+
+{% highlight c# %}
+ 
+    [C#]
+
+    
+        [Export ("numberOfSeriesInChart:")]
+        public override int NumberOfSeriesInChart (SFChart chart)
+        {
+            return 3; _//returns no of series required for the chart._
+        }
+
+ {% endhighlight %}
+
+
+
+
+
+Then you need to add SfSeries objects for low temperature and precipitation to SfChart by using the chart:seriesAtIndex method as follows.
+
+{% highlight c# %}
+ 
+    [C#]
+
+            [Export ("chart:seriesAtIndex:")]
+        public override SFSeries GetSeries (SFChart chart, int index)
+        {
+_//returns the series for the chart._
+            if (index == 1) {
+                SFSplineSeries series        = new SFSplineSeries ();
+                series.Label                       = "High";
+                return series;
+            } else if (index == 2) {
+                SFSplineSeries series        = new SFSplineSeries ();
+                series.Label                        = "Low";
+                return series;
+            } else {
+                SFColumnSeries series      = new SFColumnSeries ();
+                series.Label                        = "Precipitation";
+
+                SFNumericalAxis axis       = new SFNumericalAxis ();
+                axis.OpposedPosition         = true;
+                axis.ShowMajorGridLines = false;
+                series.YAxis = axis;
+
+                return series;
+            }
+        }
+
+
+ {% endhighlight %}
+
+
+
+
+
+
+
+Finally, you need to set low temperature data points and precipitation data points, to the series, based on series index as follows.
+
+{% highlight c# %}
+ 
+    [C#]
+
+    [Export ("chart:dataPointAtIndex:forSeriesAtIndex:")]
+        public override SFChartDataPoint GetDataPoint (SFChart chart, int index, int seriesIndex)
+        {
+_//returns the datapoint for each series._
+            if (seriesIndex == 1) {
+                return highTemperature.GetItem<SFChartDataPoint> (index);
+            } else if (seriesIndex == 2) {
+                return lowTemperature.GetItem<SFChartDataPoint> (index);
+            } else {
+                return precipitation.GetItem<SFChartDataPoint> (index);
+            }
+        }
+
+ {% endhighlight %}
+
+
+
+        
+
+### Add Multiple Axes to the Chart
+
+You can add a secondary axis, y-axis, to the chart by setting the yAxis property of SfSeries. In the above code example, you can add axis to the series as follows.
+
+{% highlight c# %}
+ 
+    [C#]
+
+    _// Adding the SFColumnSeries with different scale_ 
+
+SFColumnSeries series      = new SFColumnSeries ();
+series.Label                        = "Precipitation";
+
+SFNumericalAxis axis       = new SFNumericalAxis ();
+axis.OpposedPosition         = true;
+axis.ShowMajorGridLines = false;
+series.YAxis                       = axis; 
+{% endhighlight %}
+
+
+The opposedPosition is set to True to place the secondary axis on the opposite side.
+
+The following is the code example for creating the Chart.
+
+{% highlight c# %}
+
+//C#
+
+     public partial class GettingStarted_iOSViewController : UIViewController
+    {
+
+        public GettingStarted_iOSViewController (IntPtr handle) : base (handle)
+        {
+        }
+
+        public override void DidReceiveMemoryWarning ()
+        {
+_// Releases the view if it doesn't have a superview._
+            base.DidReceiveMemoryWarning ();
+
+_// Release any cached data, images, etc that aren't in use._
+        }
+
+        #region View lifecycle
+
+        public override void ViewDidLoad ()
+        {
+            base.ViewDidLoad ();
+_//Initialize the Chart with required frame. This frame can be any rectangle, which bounds inside the view._
+            SFChart chart                             = new SFChart ();
+            chart.Frame                                = this.View.Frame;
+
+_//Define the title for the Chart._
+            chart.Title.Text                           = "Weather Analysis";
+
+_//Adding legend to the Chart._
+            chart.Legend.Visible                   = true;
+
+_//Adding Primary Axis for the Chart._
+            SFCategoryAxis primaryAxis     = new SFCategoryAxis ();
+            primaryAxis.Title.Text                = "Month";
+
+            chart.PrimaryAxis                        = primaryAxis;
+
+_//Adding Secondary Axis for the Chart._
+            SFNumericalAxis secondaryAxis = new SFNumericalAxis ();
+            secondaryAxis.Title.Text              = "Temperature";
+
+            chart.SecondaryAxis                     = secondaryAxis;
+
+_//Defining the data source for the Chart._
+            ChartDataModel dataModel          = new ChartDataModel ();
+            chart.DataSource                           = dataModel as SFChartDataSource;
+
+_//Adding our Chart as a sub view._
+            this.View.AddSubview (chart);
+
+_// Perform any additional setup after loading the view, typically from a nib._
+        }
+
+        public override void ViewWillAppear (bool animated)
+        {
+            base.ViewWillAppear (animated);
+        }
+
+        public override void ViewDidAppear (bool animated)
+        {
+            base.ViewDidAppear (animated);
+        }
+
+        public override void ViewWillDisappear (bool animated)
+        {
+            base.ViewWillDisappear (animated);
+        }
+
+        public override void ViewDidDisappear (bool animated)
+        {
+            base.ViewDidDisappear (animated);
+        }
+
+        #endregion
+    }
+
+_/// &lt;summary&gt;_
+_/// Class acts as a data model for the chart by inheriting 'SFChartDataSource'._
+_/// &lt;/summary&gt;_
+    public class ChartDataModel : SFChartDataSource
+    {
+        NSMutableArray highTemperature;
+        NSMutableArray lowTemperature;
+        NSMutableArray precipitation;
+
+        public ChartDataModel ()
+        {
+            highTemperature   = new NSMutableArray ();
+            lowTemperature    = new NSMutableArray ();
+            precipitation          = new NSMutableArray ();
+
+            AddDataPointsForChart ("Jan", 42, 27, 3.03);
+            AddDataPointsForChart ("Feb", 44, 28, 2.48);
+            AddDataPointsForChart ("Mar", 53, 35, 3.23);
+            AddDataPointsForChart ("Apr", 64, 44, 3.15);
+            AddDataPointsForChart ("May", 75, 54, 4.13);
+            AddDataPointsForChart ("Jun", 83, 63, 3.23);
+            AddDataPointsForChart ("Jul", 87, 68, 4.13);
+            AddDataPointsForChart ("Aug", 84, 66, 4.88);
+            AddDataPointsForChart ("Sep", 78, 59, 3.82);
+            AddDataPointsForChart ("Oct", 67, 48, 3.07);
+            AddDataPointsForChart ("Nov", 55, 38, 2.83);
+            AddDataPointsForChart ("Dec", 45, 29, 2.80);
+        }
+
+_/// &lt;summary&gt;_
+_/// Method to populate the array required for all the series._
+_/// &lt;/summary&gt;_
+_/// <param name="month">Month.&lt;/param&gt;_
+_/// <param name="high">High Temperature.&lt;/param&gt;_
+_/// <param name="low">Low Temperature.&lt;/param&gt;_
+_/// <param name="ppt">Precipitation.&lt;/param&gt;_
+        void AddDataPointsForChart (String month, Double high, Double low, Double ppt)
+        {
+            highTemperature.Add (new SFChartDataPoint (NSObject.FromObject (month), NSObject.FromObject (high)));
+
+            lowTemperature.Add (new SFChartDataPoint (NSObject.FromObject (month), NSObject.FromObject (low)));
+
+            precipitation.Add (new SFChartDataPoint (NSObject.FromObject (month), NSObject.FromObject (ppt)));
+        }
+
+        [Export ("numberOfSeriesInChart:")]
+        public override int NumberOfSeriesInChart (SFChart chart)
+        {
+            return 3; _//returns no of series required for the chart._
+        }
+
+        [Export ("chart:seriesAtIndex:")]
+        public override SFSeries GetSeries (SFChart chart, int index)
+        {
+_//returns the series for the chart._
+            if (index == 1) {
+                SFSplineSeries series       = new SFSplineSeries ();
+                series.Label                       = "High";
+                return series;
+            } else if (index == 2) {
+                SFSplineSeries series        = new SFSplineSeries ();
+                series.Label                       = "Low";
+                return series;
+            } else {
+                SFColumnSeries series      = new SFColumnSeries ();
+                series.Label                        = "Precipitation";
+
+                SFNumericalAxis axis       = new SFNumericalAxis ();
+                axis.OpposedPosition         = true;
+                axis.ShowMajorGridLines = false;
+                series.YAxis = axis;
+
+                return series;
+            }
+        }
+
+        [Export ("chart:dataPointAtIndex:forSeriesAtIndex:")]
+        public override SFChartDataPoint GetDataPoint (SFChart chart, int index, int seriesIndex)
+        {
+_//returns the datapoint for each series._
+            if (seriesIndex == 1) {
+                return highTemperature.GetItem<SFChartDataPoint> (index);
+            } else if (seriesIndex == 2) {
+                return lowTemperature.GetItem<SFChartDataPoint> (index);
+            } else {
+                return precipitation.GetItem<SFChartDataPoint> (index);
+            }
+        }
+
+        [Export ("chart:numberOfDataPointsForSeriesAtIndex:")]
+        public override int GetNumberOfDataPoints (SFChart chart, int index)
+        {
+            return 12;_//No of datapoints needed for each series._
+        }
+    } 
+
+ {% endhighlight %}
+
+
+
+
+
+
+
+### Output:
+
+![](Create-your-first-Chart-in-XamariniOS_images/Create-your-first-Chart-in-XamariniOS_img3.png)
 
 

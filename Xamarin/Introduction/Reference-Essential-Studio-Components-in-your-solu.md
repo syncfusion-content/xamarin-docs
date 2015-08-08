@@ -37,7 +37,7 @@ _Syncfusion.XlsIO.Portable.dll_
 
 _Syncfusion.DocIO.Portable.dll_
 
-> ![](Reference-Essential-Studio-Components-in-your-solu_images/Reference-Essential-Studio-Components-in-your-solu_img1.png)
+
 
 _Note: If you have already referenced one of the UI components such as Chart, Gauge or TreeMap, from the Xamarin component store IDE interface then the XlsIO and DocIO assemblies have already been downloaded and available in your solution folder, you can then manually add references from that folder._
 

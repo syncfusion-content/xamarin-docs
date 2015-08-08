@@ -57,7 +57,7 @@ wp8\Syncfusion. SfTreeMap.WP8.dll
 
 wp8\Syncfusion SfTreeMap.XForms.WinPhone.dll
 
-> ![](Getting-Started_images/Getting-Started_img1.png)
+
 
 _Note: Essential TreeMap for Xamarin is compatible with Xamarin Forms 1.2.3.6257_
 

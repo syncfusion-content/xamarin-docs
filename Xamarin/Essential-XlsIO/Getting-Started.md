@@ -28,7 +28,8 @@ The following steps demonstrate how to create a simple excel document in a Xamar
 
    ```
 
-   > ![C:/Users/ApoorvahR/Desktop/Note.png](Getting-Started_images/Getting-Started_img1.png)
+  
+  
 
    _Note: If you had already referenced one of our UI components (Chart, Gauge or TreeMap) components from within the Xamarin component store IDE interface then the XlsIO assembly has already been downloaded and available in your solution folder, you can then manually add references from that folder._
 

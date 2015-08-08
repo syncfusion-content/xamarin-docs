@@ -7,7 +7,7 @@ control: Control Name undefined
 documentation: ug
 ---
 
-## Overview
+# Overview
 
 NumericTextBox is an advanced version of the Entry control that restricts input to numeric values. The control respects the UI culture and can be configured to display different formats like currency format, scientific format, etc.
 
@@ -15,7 +15,7 @@ NumericTextBox is an advanced version of the Entry control that restricts input 
 
 
 
-#### Key Features
+## Key Features
 
 * Number Formatting - Input string can be formatted by using the format strings. 
 * Culture - Number format can be localized to any specific culture.

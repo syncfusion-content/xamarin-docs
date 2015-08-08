@@ -7,7 +7,7 @@ control: Control Name undefined
 documentation: ug
 ---
 
-## Overview
+# Overview
 
 AutoComplete functionality provides suggestions while typing. There are several modes of suggestions. The suggested text can be 
 appended to the original text or it can be displayed in a drop-down list so that you can choose from different options.
@@ -15,7 +15,7 @@ appended to the original text or it can be displayed in a drop-down list so that
 ![](Overview_images/Overview_img1.png)
 
 
-#### Key Features
+## Key Features
 
 * Watermark – The control shows the watermark text.
 * AutoCompleteMode – The control provides suggestions to end users based on a predefined collection while typing.

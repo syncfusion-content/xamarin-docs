@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains how to configure a Barcode for Xamarin Forms application. The following screenshot illustrates the final output of barcode on iOS, Android and Windows Phone devices. You can also download the entire source code of this demo [here](http://files2.syncfusion.com/Installs/v12.2.0.40/Samples/Xamarin/BarcodeGettingStarted.zip).
 
-![C:/Users/paulinebosco/Desktop/Edited/XGettingStarted.png](Getting-Started_images/Getting-Started_img1.png)
+![](Getting-Started_images/Getting-Started_img1.png)
 
 
 To get started with Essential Barcode, go through the following steps.
@@ -58,7 +58,7 @@ WinPhone\Syncfusion.SfBarcode.WP8.dll
 
 WinPhone\Syncfusion.SfBarcode.XForms.WinPhone.dll
 
- ![C:/Users/ApoorvahR/Desktop/Note.png](Getting-Started_images/Getting-Started_img2.png)
+
 _Note: Essential Barcode for Xamarin is compatible with Xamarin. Forms 1.3.4.6332._
 
 Currently an additional step is required for Windows Phone and iOS projects. Create an instance of the Barcode custom renderer as mentioned.
@@ -317,6 +317,309 @@ Here, the following steps illustrates how to create and configure a barcode.
 
 
 
-   ![C:/Users/paulinebosco/Desktop/Edited/XGettingStarted.png](Getting-Started_images/Getting-Started_img3.png)
+   ![](Getting-Started_images/Getting-Started_img3.png)
+
+## Create your first Barcode in Xamarin.Android
+
+This section explains how to configure a Barcode for Xamarin.Android application by using C#. To get started with the Essential Barcode, refer to the following steps and in result, you get the output on Android devices as follows.
+
+![](Create-your-first-Barcode-in-XamarinAndroid_images/Create-your-first-Barcode-in-XamarinAndroid_img1.png)
 
 
+### Reference Essential Studio components in your solution
+
+After installing the Essential Studio for Xamarin, you can find all the required assemblies in the installation folders,
+
+{Syncfusion Installed location}\Essential Studio\12.4.0.24\lib
+
+
+_Note: Assemblies are available__in unzipped package location in Mac_
+
+Add the following assembly references to the Android project,
+
+[android\Syncfusion.SfBarcode.Andriod.dll]
+
+### Configure the Barcode control
+
+The following steps explain how to create and configure a Barcode.
+
+1. Add reference to the SfBarcode as follows.
+
+   ~~~ cs
+
+        [C#]
+
+            using Com.Syncfusion.Barcode
+	
+   ~~~
+   {:.pretty-print }
+
+
+
+
+
+2. Create a SfBarcode instance in Main Activity and set the sfBarcode as a ContentView in onCreate() overridden method.
+
+   ~~~ cs
+
+        [C#]
+
+            public class MainActivity : Activity
+
+            {
+
+            protected override void OnCreate(Bundle bundle)
+
+            {
+
+                base.OnCreate(bundle);
+
+                SfBarcode sfBarcode = new SfBarcode(this);
+
+                SetContentView(sfBarcode);
+
+            }
+	
+   ~~~
+   {:.pretty-print }
+
+
+
+
+
+3. Then you can set the text that you want to encode.
+
+   ~~~ cs
+
+        [C#]
+
+            sfBarcode.Text = "http://www.wikipedia.org";
+	
+   ~~~
+   {:.pretty-print }
+
+
+
+
+
+4. Set the required symbology to encode the given text. By default, the given text is encoded by using the Code 39 symbology.
+
+   ~~~ cs
+
+        [C#]
+
+            sfBarcode.Symbology = BarcodeSymbolType.QRBarcode;
+	
+   ~~~
+   {:.pretty-print }
+
+
+
+
+
+5. To customize the Barcode, initialize the settings of the corresponding Barcode symbology.
+
+   ~~~ cs
+
+        [C#]
+
+            QRBarcodeSettings setting = new QRBarcodeSettings();
+
+            setting.XDimension = 15;
+
+            sfBarcode.SymbologySettings = setting;
+	
+   ~~~
+   {:.pretty-print }
+
+
+
+
+
+6. Finally, the Barcode is generated as shown in the screenshot for the following code example.
+
+   ~~~ cs
+
+        [C#]
+
+            public class MainActivity : Activity
+
+            {
+
+            protected override void OnCreate(Bundle bundle)
+
+            {
+
+                base.OnCreate(bundle);
+
+                SfBarcode sfBarcode = new SfBarcode(this);
+
+                sfBarcode.Text = "http://www.wikipedia.org";
+
+                sfBarcode.Symbology = BarcodeSymbolType.QRBarcode;
+
+                QRBarcodeSettings setting = new QRBarcodeSettings();
+
+                setting.XDimension = 15;
+
+                sfBarcode.SymbologySettings = setting;
+
+                SetContentView(sfBarcode);
+
+            }
+
+            }
+	
+   ~~~
+   {:.pretty-print }
+
+
+
+
+
+   ![](Create-your-first-Barcode-in-XamarinAndroid_images/Create-your-first-Barcode-in-XamarinAndroid_img3.png)
+
+
+
+## Create your first Barcode in Xamarin.iOS
+
+This section explains how to configure a Barcode for Xamarin.iOS application by using C#. To get started with the Essential Barcode, refer to the following steps and in result, you get the output on iOS devices as follows.
+
+![](Create-your-first-Barcode-in-XamariniOS_images/Create-your-first-Barcode-in-XamariniOS_img1.png)
+
+
+### Add framework reference to the project
+
+#### Reference Essential Studio Components in your Solution
+
+After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, typically:
+
+{Syncfusion Installed location}\Essential Studio\{version number}\lib\iOS
+
+
+_Note: Assemblies are available in unzipped package location in Mac._
+
+From the specified folder, the assembly reference of the SfBarcode that is, Syncfusion.SfBarcode.iOS.dll is added to the Xamarin.iOS project.
+
+### Configure the Barcode control
+
+The following steps explain how to create and configure a Barcode.
+
+1. Add reference to the SfBarcode in view controller as follows
+
+   ~~~ cs
+
+        [C#]
+
+            using Syncfusion.SfBarcode.iOS;
+	
+   ~~~
+   {:.pretty-print }
+
+
+
+2. Then, create an instance of the SfBarcode and add it as sub view in viewDidLoad override function.
+
+   ~~~ cs
+
+        [C#]
+
+            public override void ViewDidLoad ()
+
+            {
+                base.ViewDidLoad ();
+
+                SFBarcode barcode = new SFBarcode();
+
+                this.View.AddSubview (barcode);
+
+            }
+	
+   ~~~
+   {:.pretty-print }
+
+
+3. Then you can assign the text that you want to encode.
+
+   ~~~ cs
+
+        [C#]
+
+            barcode.Text = (NSString)"www.wikipedia.org";
+	
+   ~~~
+   {:.pretty-print }
+
+
+
+4. Specify the required symbology to encode the given text. By default, the given text is encoded by using the Code 39 symbology.
+
+   ~~~ cs
+
+        [Swift]
+
+            barcode.Symbology = SFBarcodeSymbolType.SFBarcodeSymbolTypeQRCode;
+	
+   ~~~
+   {:.pretty-print }
+
+
+
+
+5. To customize the Barcode, initialize the settings of the corresponding Barcode symbology.
+
+   ~~~ cs
+
+        [C#]
+
+            SFQRBarcodeSettings settings = new SFQRBarcodeSettings ();
+
+            settings.XDimension = 6;
+
+            barcode.SymbologySettings = settings;
+	
+   ~~~
+   {:.pretty-print }
+
+
+
+
+
+
+
+6. Finally, the Barcode is generated as shown in the screenshot for the following code example.
+
+   ~~~ cs
+
+        [C#]
+
+            public override void ViewDidLoad ()
+
+            {
+
+                base.ViewDidLoad ();
+
+                SFBarcode barcode = new SFBarcode();
+
+                barcode.Text = (NSString)"www.wikipedia.org";
+
+                barcode.Symbology = SFBarcodeSymbolType.SFBarcodeSymbolTypeQRCode;
+
+                SFQRBarcodeSettings settings = new SFQRBarcodeSettings ();
+
+                settings.XDimension = 6;
+
+                barcode.SymbologySettings = settings;
+
+                this.View.AddSubview (barcode);
+
+            }
+	
+   ~~~
+   {:.pretty-print }
+
+
+
+
+
+![](Create-your-first-Barcode-in-XamariniOS_images/Create-your-first-Barcode-in-XamariniOS_img3.png)

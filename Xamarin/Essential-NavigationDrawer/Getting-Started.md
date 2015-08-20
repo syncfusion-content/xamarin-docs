@@ -24,7 +24,7 @@ After installing Essential Studio for Xamarin, you can find all the required as
 
 
 
-_Note: Assemblies are available in unzipped package location in Mac._
+> Note: Assemblies are available in unzipped package location in Mac.
 
 Add the following assembly references to the Xamarin project,
 
@@ -45,7 +45,7 @@ Create an instance for the NavigationDrawer in the constructor and set that Navi
 
 {% highlight C# %}  
 
-[C#]
+
 
 SfNavigationDrawer navigationDrawer=new SfNavigationDrawer(this);
 
@@ -59,7 +59,7 @@ You can set position and animations for NavigationDrawer by using the position a
 
 {% highlight C# %}  
 
-[C#]
+
 
 navigationDrawer.Position = Position.Left;
 
@@ -85,7 +85,7 @@ After installing Essential Studio for Xamarin, you can find all the required as
 
 
 
-_Note: Assemblies are available in unzipped package location in Mac._
+> Note: Assemblies are available in unzipped package location in Mac.
 
 Add the following assembly references to the iOS project.
 
@@ -101,7 +101,7 @@ Create an instance for the SfNavigationDrawer in the constructor and set that Sf
 
 {% highlight C# %}  
 
-[C#]
+
 
 public override void ViewDidLoad ()
 
@@ -123,7 +123,7 @@ You can set position and animations for NavigationDrawer by using the position a
 
 {% highlight C# %}  
 
-[C#]
+
 
 navigationDrawer.Position = SFNavigationDrawerPosition.SFNavigationDrawerPositionLeft;
 

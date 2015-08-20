@@ -17,19 +17,19 @@ You can also download the entire source code of this demo from the following lin
 
 When you acquire Essential Studio components through the Xamarin Component Store interface from your IDE, after adding the components to your Xamarin.iOS, Xamarin.Android and Windows Phone projects through the Component Manager, you need to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL Project in your solution. You can do this by manually adding the relevant PCL assembly references to your PCL project contained in the following path inside your solution folder:  
 
-_Components/syncfusionessentialstudio-version/lib/pcl/_
+Components/syncfusionessentialstudio-version/lib/pcl/
 
 Alternatively when you download Essential Studio from Syncfusion.com or through the Xamarin Store web interface, all the assembly references need to be added manually.  
 
 After installing Essential Studio for Xamarin, all the required assemblies can be found in the installation folders, typically:
 
-_{Syncfusion Installed location}\Essential Studio\12.2.0.40\lib_
+{Syncfusion Installed location}\Essential Studio\12.2.0.40\lib
 
-_Example: C:\Program Files (x86)\Syncfusion\Essential Studio\12.2.0.40\lib_
+Example: C:\Program Files (x86)\Syncfusion\Essential Studio\12.2.0.40\lib
 
 Otherwise, after downloading through the Xamarin Store web interface, all the required assemblies can be found in the following folder:
 
-_{download location}\syncfusionessentialstudio-version\lib_
+{download location}\syncfusionessentialstudio-version\lib
 
 You can then add the assembly references to the respective projects as follows.
 
@@ -59,7 +59,7 @@ wp8\Syncfusion SfTreeMap.XForms.WinPhone.dll
 
 
 
-_Note: Essential TreeMap for Xamarin is compatible with Xamarin Forms 1.2.3.6257_
+> Note: Essential TreeMap for Xamarin is compatible with Xamarin Forms 1.2.3.6257
 
 Currently an additional step is required for Windows Phone and iOS projects. You need to create an instance of the TreeMap custom renderer as follows.
 
@@ -140,7 +140,7 @@ The TreeMap accepts a collection of TreeMapItems as input.
 
 
 {% highlight xml %}
-[XAML]
+
 
 // BindingContext is set for the content page class.
 
@@ -159,7 +159,7 @@ The TreeMap accepts a collection of TreeMapItems as input.
 </local:SfTreeMap>
 {% endhighlight %}
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -235,7 +235,7 @@ You can differentiate the nodes based on its value and color ranges using the Ra
 
 
 {% highlight xml %}
-[XAML]
+
 
 <local:SfTreeMap x:Name="treeMap" Items = "{Binding TreeMapItems}">
 
@@ -253,7 +253,7 @@ You can differentiate the nodes based on its value and color ranges using the Ra
 </local:SfTreeMap>
 {% endhighlight %}
 {% highlight c# %}
-[C#]
+
 
 …
 
@@ -272,7 +272,7 @@ treeMap.LeafItemColorMapping = new RangeColorMapping (){ Ranges = ranges };
 You can customize the Leaf level TreeMap items using LeafItem setting. 
 
 {% highlight xml %}
-[XAML]
+
 
 <local:SfTreeMap x:Name="treeMap" Items = "{Binding TreeMapItems}">
 
@@ -286,7 +286,7 @@ You can customize the Leaf level TreeMap items using LeafItem setting.
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
+
 
 …
 
@@ -305,7 +305,7 @@ You can set the color value of leaf nodes using the TreeMap Legend. This legend 
 You can customize the labels of the legend items using the LegendLabel property of RangeColorMapping. 
 
 {% highlight xml %}
-[XAML]
+
 
 <local:SfTreeMap.LegendSettings>
         <local:LegendSettings  ShowLegend ="true" IconSize=“15,15" Size=“350,70"  />
@@ -313,7 +313,7 @@ You can customize the labels of the legend items using the LegendLabel property 
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
+
 
 …
 
@@ -325,7 +325,7 @@ treeMap.LegendSettings= legendSettings;
 
 {% endhighlight %}
 
-![C:/Users/lingaraj/Desktop/treemap.png](Getting-Started_images/Getting-Started_img2.png)
+![](Getting-Started_images/Getting-Started_img2.png)
 
 
 

@@ -28,7 +28,7 @@ download the entire source code of this demo from the link - [http://files2.sync
 	_```_
 
 
-	_Note: If you had already referenced one of our UI components (Chart, Gauge or Treemap) components from within the Xamarin component store IDE interface then the DocIO assembly has already been downloaded and available in your solution folder, You can then manually add references from that folder._
+	> Note: If you had already referenced one of our UI components (Chart, Gauge or Treemap) components from within the Xamarin component store IDE interface then the DocIO assembly has already been downloaded and available in your solution folder, You can then manually add references from that folder.
 
 
 
@@ -97,15 +97,8 @@ download the entire source code of this demo from the link - [http://files2.sync
    {:.prettyprint}
 
 
-![](Getting-Started_images/Getting-Started_img2.png)
 
-![](Getting-Started_images/Getting-Started_img3.png)
-
-![](Getting-Started_images/Getting-Started_img4.png)
-
-![](Getting-Started_images/Getting-Started_img5.png)
-
-
+![](Getting-Started_images/Getting-Started_img2.png) ![](Getting-Started_images/Getting-Started_img3.png) ![](Getting-Started_images/Getting-Started_img4.png) ![](Getting-Started_images/Getting-Started_img5.png)
 
 
 

@@ -15,9 +15,9 @@ This section provides a quick overview for working with Essential RangeSlider f
 
 Add the required Syncfusionassembly references to the respective projects as follows. Refer to the following installed location for the required assemblies.
 
-_{Syncfusion Installed location}\Essential Studio\12.4.0.34\lib_
+{Syncfusion Installed location}\Essential Studio\12.4.0.34\lib
 
-_Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\12.4.0.34\lib_
+Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\12.4.0.34\lib
 
 ### PCL project
 
@@ -43,7 +43,7 @@ WinPhone\Syncfusion. SfRangeSlider.XForms.WinPhone.dll
 
 
 
-_Note: Essential BusyIndicator for Xamarin is compatible with Xamarin Forms 1.3._
+> Note: Essential BusyIndicator for Xamarin is compatible with Xamarin Forms 1.3.
 
 An additional step is required for Windows Phone and iOS projects. Create an instance of the RangeSlider custom renderer as follows.
 
@@ -89,7 +89,7 @@ Create an instance of SfRangeSlider
 
 {% highlight C# %}   
 
- [C#]
+
 // Update App.cs source in this file.
 
 using Syncfusion.XForms.SfRangeSlider;
@@ -123,7 +123,7 @@ public class RangeSliderPage : ContentPage
 
 {% highlight xml %} 
 
-[XAML]
+
 
 Use this in App.CS source.
 
@@ -151,7 +151,7 @@ Add the RangeSlider properties in your application.
 
 {% highlight C# %}   
 
- [C#]
+
  
 SfBusyIndicator sfbusyindicator = new SfBusyIndicator();
 sfbusyindicator.AnimationType = AnimationTypes.Battery;
@@ -163,7 +163,7 @@ sfbusyindicator.BackgroundColor = Color.White;
 
 {% highlight xml %} 
 
-[XAML]
+
 
 < syncfusion:SfRangeSlider HeightRequest="100" TickFrequency="2" Minimum="0" Maximum="12" TickPlacement="BottomRight" ShowRange="True" RangeStart="4" RangeEnd="8" Orientation="Horizontal" WidthRequest="400" >
         </syncfusion:SfRangeSlider>
@@ -194,7 +194,7 @@ After installing Essential Studio for Xamarin, you can find all the required ass
 
 
 
-_Note: Assemblies are available in unzipped package location in Mac._
+> Note: Assemblies are available in unzipped package location in Mac.
 
 Add the following assembly references to the iOS project.
 
@@ -212,7 +212,7 @@ Create an instance for SfRangeSlider and add the SfRangeSlider as subview in 
 
 {% highlight C# %}  
 
- [C#]
+
 public override void ViewDidLoad ()
 
 {
@@ -230,7 +230,7 @@ You can set the minimum and maximum values for the slider by using the minimum a
 
 {% highlight C# %} 
 
- [C#]
+
   rangeSlider.Maximum = 12;
   rangeSlider.Minimum = 0;
   rangeSlider.RangeStart = 0;
@@ -246,7 +246,7 @@ The ticks can be set by using the TickFrequency and TickPlacement. Similarly, va
 
 {% highlight C# %}  
 
- [C#]
+
   rangeSlider1.TickPlacement = SFTickPlacement.SFTickPlacementBottomRight;
   rangeSlider1.TickFrequency = 2;
   rangeSlider1.ValuePlacement = SFValuePlacement.SFValuePlacementBottomRight;
@@ -261,7 +261,7 @@ The movement of the thumb can be varied in different ways. This is achieved by s
 
 {% highlight C# %}  
 
-[C#]
+
 rangeSlider.SnapsTo = SFSnapsTo.SFSnapsToTicks;
 
 {% endhighlight %} 
@@ -274,7 +274,7 @@ The movement of the thumb is based on Ticks / StepFrequency / none. When it is s
 
 This section encompasses how to create the RangeSlider that lets you to choose values over a high interactive way. In this instance, how to create a RangeSlider and to use its several features are demonstrated.
 
-![http://help.syncfusion.com/ug/android/ImagesExt/image77_1.png](Create-your-first-RangeSlider-in-Xamarin_images/Create-your-first-RangeSlider-in-Xamarin_img1.png)
+![](Create-your-first-RangeSlider-in-Xamarin_images/Create-your-first-RangeSlider-in-Xamarin_img1.png)
 
 
 ### Reference Essential Studio components in your solution
@@ -284,7 +284,7 @@ After installing Essential StudioforXamarin, you can find all the required asse
 {Syncfusion Installed location}\Essential Studio\13.1.0.21\lib
 
 
-_Note: Assemblies are available in unzipped package location in Mac_
+> Note: Assemblies are available in unzipped package location in Mac
 
 
 

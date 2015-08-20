@@ -30,7 +30,7 @@ After installing the Essential StudioforXamarin, you can find all the required 
 {Syncfusion Installed location}\Essential Studio\{version number}\lib
 
 
-_Note: Assemblies are available in unzipped package location in Mac._
+> Note: Assemblies are available in unzipped package location in Mac.
 
 
 Add the following assembly references to the Xamarin project.
@@ -55,7 +55,7 @@ Create an instance for the SfNumericTextBox in the constructor and set that SfNu
 
 {% highlight C# %}  
 
-[C#]
+
 
 SfNumericTextBox numtext=new SfNumericTextBox(this);
 
@@ -69,7 +69,7 @@ You can set the initial value and numberformat for the NumericTextBox by using t
 
 {% highlight C# %}  
 
-[C#]
+
 
 numtext.Value=123.45;
 
@@ -89,7 +89,7 @@ Value of the NumericTextBox gets parsed based on the ParsingMode property. Parsi
 
 {% highlight C# %}  
 
-[C#]
+
 
 numtext.Value=123.45;
 
@@ -143,7 +143,7 @@ WinPhone\Syncfusion.SfNumericTextBox.XForms.WinPhone.dll
 WinPhone\Syncfusion. SfShared.WP8.dll
 
 
-_Note: Essential_ NumericTextBox _for Xamarin is compatible with Xamarin Forms 1.3._
+> Note: Essential  NumericTextBox  for Xamarin is compatible with Xamarin Forms 1.3.
 
 
 
@@ -190,7 +190,7 @@ Create an instance of the SfNumericTextBox.
 
 {% highlight C# %}  
 
-[C#]
+
 // Update App.cs source in this file.
 
 using Syncfusion.XForms.SfNumericTextBox;
@@ -224,7 +224,7 @@ public class NumericTextBoxPage : ContentPage
 
 {% highlight xml %} 
 
-[XAML]
+
 
 Use this in App.CS source.
 
@@ -244,7 +244,7 @@ Add the NumericTextBox properties in your application.
 
 {% highlight C# %} 
 
-[C#]
+
 
 
 SfNumericTextBox sfnumerictextbox = new SfNumericTextBox();
@@ -258,7 +258,7 @@ sfnumerictextbox.MaximumNumberDecimalDigits= 2;
  
 {% highlight xml %} 
 
-[XAML]
+
 
 <syncfusion:SfNumericTextBox HeightRequest="100"  Value="1000"  Orientation="Horizontal" WidthRequest="200" FormatString=”C” AllowNull=”true” MaximumNumberDecimalDigits=”2”>
         </syncfusion:SfNumericTextBox> 
@@ -281,7 +281,7 @@ After installing Essential Studio for Xamarin, you can find all the required as
  {Syncfusion Installed location}\Essential Studio\{version number}\lib
 
 
-_Note: Assemblies are available in unzipped package location in Mac._
+> Note: Assemblies are available in unzipped package location in Mac.
 
 Add the following assembly references to the iOS project.
 
@@ -297,7 +297,7 @@ Create an instance for the SfNumericTextBox in the constructor and set that SfNu
 
 {% highlight C# %}  
 
-[C#]
+
 
 
  public override void ViewDidLoad ()
@@ -320,7 +320,7 @@ You can set the initial value and numberformat for the NumericTextBox by using t
 
 {% highlight C# %}  
 
-[C#]
+
 numericTextBox1.Value = 1000;
 
 numericTextBox1.FormatString=”n”;
@@ -344,7 +344,7 @@ Value of the NumericTextBox gets parsed based on the ParsingMode property. Parsi
 
 {% highlight C# %} 
 
-[C#]
+
 
 
 numericTextBox1.ParserMode = SFNumericTextBoxParsers.Decimal;

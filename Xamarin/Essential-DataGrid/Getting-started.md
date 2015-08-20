@@ -14,7 +14,7 @@ This section provides a quick overview for working with Essential DataGridfor Xa
 {Syncfusion Essential Studio Installed location}\Essential Studio\13.2.0.29\lib
 
 
-_Note: Assemblies are available in unzipped package location in Mac._
+> Note: Assemblies are available in unzipped package location in Mac.
 
 ## Essential DataGrid for Android
 
@@ -119,7 +119,7 @@ This section explains how to create a DataGrid and configure it.
 
    ~~~ cs
 
-        [C#]
+        
 
             public class OrderInfo
             {
@@ -176,7 +176,7 @@ This section explains how to create a DataGrid and configure it.
 
    ~~~ cs
 
-        [C#]
+        
 
             public class OrderInfoRepository
 			{
@@ -218,7 +218,7 @@ This section explains how to create a DataGrid and configure it.
 
    ~~~ cs
 
-        [C#]
+        
 
             [Activity (Label = "GettingStarted", MainLauncher = true)]
 			public class MainActivity : Activity
@@ -257,7 +257,7 @@ This section explains how to create a DataGrid and configure it.
 
    ~~~ cs
 
-        [C#]
+        
 
             sfGrid.AutoGenerateColumns = false;
 			
@@ -294,7 +294,7 @@ This section explains how to create a DataGrid and configure it.
 
    ~~~ cs
 
-        [C#]
+        
 
             sfGrid.AllowSorting = true; 
 	
@@ -316,7 +316,7 @@ This section explains how to create a DataGrid and configure it.
 
     ~~~ cs
 
-        [C#]
+        
 
             sfGrid.SortColumnDescriptions.Add (new SortColumnDescription () { ColumnName = "OrderID" });
 	
@@ -328,7 +328,7 @@ This section explains how to create a DataGrid and configure it.
     
 	~~~ cs
 
-        [C#]
+        
 
             sfGrid.GroupColumnDescriptions.Add (new GroupColumnDescription (){ ColumnName = "ShipCountry" }); 
 	
@@ -343,7 +343,7 @@ This section explains how to create a DataGrid and configure it.
 
 
 
-    ![C:/Users/labuser/Desktop/01(1).png](Create-you-first-DataGrid-in-XamarinAndroid_images/Create-you-first-DataGrid-in-XamarinAndroid_img3.png)
+    ![](Create-you-first-DataGrid-in-XamarinAndroid_images/Create-you-first-DataGrid-in-XamarinAndroid_img3.png)
 
 
 
@@ -353,7 +353,7 @@ This section explains how to create a DataGrid and configure it.
 
     ~~~ cs
 
-        [C#]
+        
 
             _//Create an EditText in the layout and assign its text to a property. When the property gets changed, run the below code for filtering the view._
 
@@ -391,7 +391,7 @@ This section explains how to create a DataGrid and configure it. The DataGrid co
 
    ~~~ cs
 
-        [C#]
+        
 
             public class OrderInfo
             {
@@ -445,7 +445,7 @@ This section explains how to create a DataGrid and configure it. The DataGrid co
 
    ~~~ cs
 
-        [C#]
+        
 
             public class OrderInfoRepository
 			{
@@ -484,7 +484,7 @@ This section explains how to create a DataGrid and configure it. The DataGrid co
 
    ~~~ cs
 
-        [C#]
+        
 
             public class App : Application
 
@@ -509,7 +509,7 @@ This section explains how to create a DataGrid and configure it. The DataGrid co
 
    ~~~ xml
 
-        [XAML]
+        
 
             xmlns:sfgrid="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms"
 			
@@ -539,7 +539,7 @@ This section explains how to create a DataGrid and configure it. The DataGrid co
 
    ~~~ cs
 
-        [C#]
+        
 
             sfGrid.AutoGenerateColumns = false;
 			
@@ -569,7 +569,7 @@ This section explains how to create a DataGrid and configure it. The DataGrid co
 
    ~~~ xml
 
-        [XAML]
+        
 
             <sfgrid:SfDataGrid.Columns x:TypeArguments="sfgrid:Columns">
 			
@@ -593,7 +593,7 @@ This section explains how to create a DataGrid and configure it. The DataGrid co
 
    ~~~ cs
 
-        [C#]
+        
 
             sfGrid.AllowSorting = true; 
 	
@@ -605,7 +605,7 @@ This section explains how to create a DataGrid and configure it. The DataGrid co
 
    ~~~ xml
 
-        [XAML]
+        
 
             <sfgrid:SfDataGrid AllowSorting="True" />
 	
@@ -629,7 +629,7 @@ This section explains how to create a DataGrid and configure it. The DataGrid co
 
     ~~~ cs
 
-        [C#]
+        
 
             sfGrid.SortColumnDescriptions.Add (new SortColumnDescription () { ColumnName = "CustomerID" });
 	
@@ -641,7 +641,7 @@ This section explains how to create a DataGrid and configure it. The DataGrid co
 
     ~~~ xml
 
-        [XAML]
+        
 
             <sfgrid:SfDataGrid.SortColumnDescriptions>
 			<sfgrid:SortColumnDescription ColumnName="CustomerID" />
@@ -659,7 +659,7 @@ This section explains how to create a DataGrid and configure it. The DataGrid co
 
     ~~~ cs
 
-        [C#]
+        
 
             sfGrid.GroupColumnDescriptions.Add (new GroupColumnDescription () { ColumnName = "ShipCountry" });
 	
@@ -671,7 +671,7 @@ This section explains how to create a DataGrid and configure it. The DataGrid co
 
     ~~~ xml
 
-        [XAML]
+        
 
             <sfgrid:SfDataGrid.GroupColumnDescriptions>
 			<sfgrid:GroupColumnDescription ColumnName="ShipCountry" />
@@ -694,7 +694,7 @@ This section explains how to create a DataGrid and configure it. The DataGrid co
 
     ~~~ cs
 
-        [C#]
+        
 
             //Create a SearchBar in the layout and assign its text to a property. When the property gets changed, run the following code for filtering the view. 
 			
@@ -730,7 +730,7 @@ This section explains how to create a DataGrid and configure it.
 
    ~~~ cs
 
-        [C#]
+        
 
             public class OrderInfo
             {
@@ -785,7 +785,7 @@ This section explains how to create a DataGrid and configure it.
 
    ~~~ cs
 
-        [C#]
+        
 
             public class OrderInfoRepository
 			{
@@ -824,7 +824,7 @@ This section explains how to create a DataGrid and configure it.
 
    ~~~ cs
 
-        [C#]
+        
 
             public partial class GettingStartedViewController : UIViewController
 			{
@@ -875,7 +875,7 @@ This section explains how to create a DataGrid and configure it.
 
    ~~~ cs
 
-        [C#]
+        
 
             sfGrid.AutoGenerateColumns = false;
 			
@@ -909,7 +909,7 @@ This section explains how to create a DataGrid and configure it.
 
    ~~~ cs
 
-        [C#]
+        
 
             sfGrid.AllowSorting = true; 
    ~~~
@@ -935,7 +935,7 @@ This section explains how to create a DataGrid and configure it.
 
     ~~~ cs
 
-        [C#]
+        
 
             sfGrid.SortColumnDescriptions.Add (new SortColumnDescription () { ColumnName = "OrderID" });
 	
@@ -952,7 +952,7 @@ This section explains how to create a DataGrid and configure it.
 
     ~~~ cs
 
-        [C#]
+        
 
             sfGrid.GroupColumnDescriptions.Add (new GroupColumnDescription (){ ColumnName = "ShipCountry" }); 
 	
@@ -975,7 +975,7 @@ This section explains how to create a DataGrid and configure it.
 
     ~~~ cs
 
-        [C#]
+        
 
             _//Create an EditText in the layout and assign its text to a property. When the property gets changed, run the below code for filtering the view._
 

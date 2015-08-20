@@ -30,7 +30,7 @@ After installing the Essential Studio for Xamarin, you can find all the requi
 
 
 
-_Note: Assemblies are available in unzipped package location in Mac._
+> Note: Assemblies are available in unzipped package location in Mac.
 
 Add the following assembly references to the Xamarin project.
 
@@ -42,7 +42,7 @@ Create an instance for the SfAutoComplete in the constructor and set that Aut
 
 {% highlight C# %}  
 
-[C#]
+
 
 SfBusyIndicator sfBusyIndicator = new SfBusyIndicator(this);
 
@@ -126,7 +126,7 @@ WinPhone\Syncfusion. SfShared.WP8.dll
 WinPhone\Syncfusion. SfAutoComplete.XForms.WinPhone.dll
 
 
-_Note: Essential AutoComplete for Xamarin is compatible with Xamarin Forms 1.3._
+> Note: Essential AutoComplete for Xamarin is compatible with Xamarin Forms 1.3.
 
 
 
@@ -176,7 +176,7 @@ Create an instance of SfAutoComplete.
 
 {% highlight C# %} 
 
-[C#]
+
 
 // Update App.cs source in this file.
 
@@ -210,7 +210,7 @@ public class AutoCompletePage : ContentPage
 
 {% highlight xml %} 
 
- [XAML]
+
 
 // Use this in App.CS source.
 
@@ -230,7 +230,7 @@ Add the AutoComplete properties in your application.
 
 {% highlight C# %}   
 
-[C#] 
+
 
 SfAutoComplete sfautocomplete = new SfAutoComplete  ();
 sfautocomplete .AutoCompleteSource= list1;
@@ -242,7 +242,7 @@ sfautocomplete .PopUpelay= 100;
 
 {% highlight xml %}  
 
-[XAML]
+
 
 <syncfusion:SfAutoComplete x:Name="sfautocomplete" BackgroundColor="White" MinimumPrefixCharacter="2" MaximumDropDownHeight="200" PopUpDelay="100">
 

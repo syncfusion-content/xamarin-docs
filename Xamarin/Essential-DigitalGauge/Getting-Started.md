@@ -15,9 +15,9 @@ This section provides a quick overview for working with Essential Digital Gauge 
 
 Add the required Syncfusionassembly references to the respective projects as follows. Refer to the following installed location for the required assemblies. 
 
-_{Syncfusion Installed location}\Essential Studio\12.3.0.23\lib_
+{Syncfusion Installed location}\Essential Studio\12.3.0.23\lib
 
-_Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\12.3.0.23\lib_
+Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\12.3.0.23\lib
 
 ### PCL project
 
@@ -42,7 +42,7 @@ WinPhone\Syncfusion. SfGauge.WP8.dll
 WinPhone\Syncfusion SfGauge.XForms.WinPhone.dll
 
  
-_Note: Essential Digital Gauge for Xamarin is compatible with Xamarin Forms 1.2.2.0._
+> Note: Essential Digital Gauge for Xamarin is compatible with Xamarin Forms 1.2.2.0.
 
 
 
@@ -52,7 +52,7 @@ Create an instance of the SfDigitalGaugeRenderer in MainPage constructor in Wind
 
 {% highlight c# %}
  
-    [C#]
+  
 
     public MainPage()
 
@@ -74,7 +74,7 @@ Create an instance of the SfDigitalGaugeRenderer in FinishedLaunching overridden
 
 {% highlight c# %}
  
-    [C#]
+  
 
     public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
@@ -100,7 +100,7 @@ Create an instance of SfDigitalrGauge.
 
 {% highlight c# %}
  
-    [C#]
+  
 
 // Update App.cs source this file.
 
@@ -132,7 +132,7 @@ public static Page GetMainPage()
 
 {% highlight xml %}
  
-    [XAML]
+    
 
 // Use the following in App.CS source.
 
@@ -165,7 +165,7 @@ Add the Digital Gauge properties in your application.
 
 {% highlight c# %}
  
-   [C#]
+ 
 
 SfDigitalGauge DigitalGauge = new SfDigitalGauge();
 
@@ -195,7 +195,7 @@ digitalGauge1.CharacterDisabledColor = Color.FromRgb (20,108,237);
 
 {% highlight xml %}
  
-    [XAML]
+    
 
 <gauge:SfDigitalGauge 
 
@@ -228,7 +228,7 @@ This section provides a quick overview for working with the Essential Digital G
 When the Essential Studio for Xamarin is installed, all the required assemblies can be found in the installation folders: {Syncfusion Installed location}\Essential Studio\13.1.0.21\lib
 
 
-_Note: Assemblies are available in unzipped package location in Mac._
+> Note: Assemblies are available in unzipped package location in Mac.
 
 Add the following assembly references to the Android project.
 
@@ -244,7 +244,7 @@ Create an instance for the SfDigitalGauge in the constructor and set the Digi
 
 {% highlight c# %}
  
-    [C#]
+  
 
    SfDigitalGauge digitalGauge1 = new SfDigitalGauge(this);
 
@@ -262,7 +262,7 @@ You can set the value for the gauge by using the setValue() in the Digital Ga
 
 {% highlight c# %}
  
-    [C#]
+  
 
      SimpleDateFormat sdf = new SimpleDateFormat("HH mm ss");
 string currentDateandTime = sdf.Format(new Date()); 
@@ -283,7 +283,7 @@ The Digital Gauge is customized by setting the properties as explained in the 
 
 {% highlight c# %}
  
-    [C#]
+  
 
     //Sets the character stroke color.
 
@@ -321,7 +321,7 @@ You can add Multiple Gauges in the preferred layout. The following code exampl
 
 {% highlight c# %}
  
-    [C#]
+  
 
    LinearLayout layout = new LinearLayout(this);
 
@@ -356,7 +356,7 @@ This section provides a quick overview for working with the Essential Digital G
 When the Essential Studio for Xamarin is installed, all the required assemblies can be found in the installation folders: {Syncfusion Installed location}\Essential Studio\13.1.0.21\lib
 
 
-_Note: Assemblies are available in unzipped package location in Mac._
+> Note: Assemblies are available in unzipped package location in Mac.
 
 Add the following assembly references to the iOS project.
 
@@ -370,7 +370,7 @@ To develop an application with the XamariniOS Digital Gauge is simple.
 
 {% highlight c# %}
  
-    [C#]
+  
 
    SFDigitalGauge digitalGauge1= new SFDigitalGauge ();
 
@@ -384,7 +384,7 @@ You can set the value for the gauge by using the Value in the DigitalGauge. I
 
 {% highlight c# %}
  
-    [C#]
+  
 
     NSDate date = new NSDate ();
 
@@ -406,7 +406,7 @@ The Digital Gauge is customized by setting the properties as explained in the 
 
 {% highlight c# %}
  
-    [C#]
+  
 
    digitalGauge1.CharacterHeight = 36;
 
@@ -438,7 +438,7 @@ You can add Multiple Gauges in the preferred layout. The following code example
 
 {% highlight c# %}
  
-    [C#]
+  
 
    View.AddSubview (digitalGauge1);
 

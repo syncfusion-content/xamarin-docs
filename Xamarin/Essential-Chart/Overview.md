@@ -14,6 +14,7 @@ Essential Chartfor Xamarin Forms provide a perfect way to visualize data with a 
 ![](Overview_images/Overview_img1.png)
 
 
+
 ## Key features
 
 * Chart supports 14 different type of series, ranging from simple bar series to complex financial charts. Each type of chart represents a unique style of representing data that is more user friendly and has greater UI visualization.

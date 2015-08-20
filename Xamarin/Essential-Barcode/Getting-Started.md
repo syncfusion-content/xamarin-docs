@@ -20,19 +20,19 @@ To get started with Essential Barcode, go through the following steps.
 
 When you acquire Essential Studio components through the Xamarin Component Store interface from your IDE, after adding the components to your Xamarin.iOS, Xamarin.Android and WindowsPhone projects through the Component Manager, you have to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL Project in your solution. You can do this manually by adding the relevant PCL assembly references to your PCL project contained in the following path inside your solution folder: 
 
-_Components/syncfusionessentialstudio-version/lib/pcl/_
+Components/syncfusionessentialstudio-version/lib/pcl/
 
 Alternatively, when you download Essential Studio from Syncfusion.com or through the Xamarin Store web interface, add all the assembly references manually.  
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, typically:
 
-_{Syncfusion Installed location}\Essential Studio\12.2.0.40\lib_
+{Syncfusion Installed location}\Essential Studio\12.2.0.40\lib
 
-_Example: C:\Program Files (x86)\Syncfusion\Essential Studio\12.2.0.40\lib_
+Example: C:\Program Files (x86)\Syncfusion\Essential Studio\12.2.0.40\lib
 
 Otherwise, after downloading through the Xamarin Store web interface, you can find all the required assemblies in the following folder:
 
-_{download location}\syncfusionessentialstudio-version\lib_
+{download location}\syncfusionessentialstudio-version\lib
 
 Then, you can add the assembly references to the respective projects as follows.
 
@@ -59,7 +59,7 @@ WinPhone\Syncfusion.SfBarcode.WP8.dll
 WinPhone\Syncfusion.SfBarcode.XForms.WinPhone.dll
 
 
-_Note: Essential Barcode for Xamarin is compatible with Xamarin. Forms 1.3.4.6332._
+> Note: Essential Barcode for Xamarin is compatible with Xamarin. Forms 1.3.4.6332.
 
 Currently an additional step is required for Windows Phone and iOS projects. Create an instance of the Barcode custom renderer as mentioned.
 
@@ -67,7 +67,7 @@ Create an instance of SfBarcodeRenderer in MainPage constructor in Windows Phone
 
 {% highlight c# %}
  
-    [C#]
+   
 
 public MainPage()
 
@@ -87,7 +87,7 @@ Similarly, create an instance of SfBarcodeRenderer in FinishedLaunching overridd
 
 {% highlight c# %}
  
-    [C#]
+    
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
@@ -113,7 +113,7 @@ Here, the following steps illustrates how to create and configure a barcode.
 
    ~~~ xml
 
-        [XAML]
+        
 
             xmlns:syncfusion="clr-namespace:Syncfusion.SfBarcode.XForms;assembly=Syncfusion.SfBarcode.XForms"
 	
@@ -124,7 +124,7 @@ Here, the following steps illustrates how to create and configure a barcode.
 
    ~~~ cs
 
-        [C#]
+        
 
             using Syncfusion.SfBarcode.XForms;
 	
@@ -139,7 +139,7 @@ Here, the following steps illustrates how to create and configure a barcode.
 
    ~~~ xml
 
-        [XAML]
+        
 
             <syncfusion:SfBarcode/>
 	
@@ -150,7 +150,7 @@ Here, the following steps illustrates how to create and configure a barcode.
 
    ~~~ cs
 
-        [C#]
+        
 
             SfBarcode barcode = new SfBarcode();
 	
@@ -165,7 +165,7 @@ Here, the following steps illustrates how to create and configure a barcode.
 
    ~~~ xml
 
-        [XAML]
+        
 
             <syncfusion:SfBarcode Text="www.wikipedia.org"/>
 	
@@ -176,7 +176,7 @@ Here, the following steps illustrates how to create and configure a barcode.
 
    ~~~ cs
 
-        [C#]
+        
 
             barcode.Text = "www.wikipedia.org";
 	
@@ -191,7 +191,7 @@ Here, the following steps illustrates how to create and configure a barcode.
 
    ~~~ xml
 
-        [XAML]
+        
 
             <syncfusion:SfBarcode Text="www.wikipedia.org" Symbology="QRCode"/>
 	
@@ -202,7 +202,7 @@ Here, the following steps illustrates how to create and configure a barcode.
 
    ~~~ cs
 
-        [C#]
+        
 
             barcode.Symbology = BarcodeSymbo<ype.QRCode;
 	
@@ -217,7 +217,7 @@ Here, the following steps illustrates how to create and configure a barcode.
 
    ~~~ xml
 
-        [XAML]
+        
 
             <syncfusion:SfBarcode Text="www.wikipedia.org" Symbology="QRCode">
 
@@ -236,7 +236,7 @@ Here, the following steps illustrates how to create and configure a barcode.
 
    ~~~ cs
 
-        [C#]
+       
 
             SfQRBarcodeSettings settings = new SfQRBarcodeSettings();
 
@@ -255,7 +255,7 @@ Here, the following steps illustrates how to create and configure a barcode.
 
    ~~~ xml
 
-        [XAML]
+        
 
         <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
 
@@ -284,7 +284,7 @@ Here, the following steps illustrates how to create and configure a barcode.
 
    ~~~ cs
 
-        [C#]
+        
 
         public SamplePage()
 
@@ -333,7 +333,7 @@ After installing the Essential Studio for Xamarin, you can find all the requir
 {Syncfusion Installed location}\Essential Studio\12.4.0.24\lib
 
 
-_Note: Assemblies are available__in unzipped package location in Mac_
+> Note: Assemblies are available in unzipped package location in Mac
 
 Add the following assembly references to the Android project,
 
@@ -347,7 +347,7 @@ The following steps explain how to create and configure a Barcode.
 
    ~~~ cs
 
-        [C#]
+        
 
             using Com.Syncfusion.Barcode
 	
@@ -362,7 +362,7 @@ The following steps explain how to create and configure a Barcode.
 
    ~~~ cs
 
-        [C#]
+        
 
             public class MainActivity : Activity
 
@@ -391,7 +391,7 @@ The following steps explain how to create and configure a Barcode.
 
    ~~~ cs
 
-        [C#]
+       
 
             sfBarcode.Text = "http://www.wikipedia.org";
 	
@@ -406,7 +406,7 @@ The following steps explain how to create and configure a Barcode.
 
    ~~~ cs
 
-        [C#]
+        
 
             sfBarcode.Symbology = BarcodeSymbolType.QRBarcode;
 	
@@ -421,7 +421,7 @@ The following steps explain how to create and configure a Barcode.
 
    ~~~ cs
 
-        [C#]
+        
 
             QRBarcodeSettings setting = new QRBarcodeSettings();
 
@@ -440,7 +440,7 @@ The following steps explain how to create and configure a Barcode.
 
    ~~~ cs
 
-        [C#]
+        
 
             public class MainActivity : Activity
 
@@ -497,7 +497,7 @@ After installing Essential Studio for Xamarin, you can find all the required ass
 {Syncfusion Installed location}\Essential Studio\{version number}\lib\iOS
 
 
-_Note: Assemblies are available in unzipped package location in Mac._
+> Note: Assemblies are available in unzipped package location in Mac.
 
 From the specified folder, the assembly reference of the SfBarcode that is, Syncfusion.SfBarcode.iOS.dll is added to the Xamarin.iOS project.
 
@@ -509,7 +509,7 @@ The following steps explain how to create and configure a Barcode.
 
    ~~~ cs
 
-        [C#]
+        
 
             using Syncfusion.SfBarcode.iOS;
 	
@@ -522,7 +522,7 @@ The following steps explain how to create and configure a Barcode.
 
    ~~~ cs
 
-        [C#]
+        
 
             public override void ViewDidLoad ()
 
@@ -543,7 +543,7 @@ The following steps explain how to create and configure a Barcode.
 
    ~~~ cs
 
-        [C#]
+        
 
             barcode.Text = (NSString)"www.wikipedia.org";
 	
@@ -556,7 +556,7 @@ The following steps explain how to create and configure a Barcode.
 
    ~~~ cs
 
-        [Swift]
+       
 
             barcode.Symbology = SFBarcodeSymbolType.SFBarcodeSymbolTypeQRCode;
 	
@@ -570,7 +570,7 @@ The following steps explain how to create and configure a Barcode.
 
    ~~~ cs
 
-        [C#]
+       
 
             SFQRBarcodeSettings settings = new SFQRBarcodeSettings ();
 
@@ -591,7 +591,7 @@ The following steps explain how to create and configure a Barcode.
 
    ~~~ cs
 
-        [C#]
+        
 
             public override void ViewDidLoad ()
 

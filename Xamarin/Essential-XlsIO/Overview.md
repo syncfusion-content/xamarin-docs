@@ -7,11 +7,11 @@ control: Control Name undefined
 documentation: ug
 ---
 
-### Overview
+# Overview
 
 Essential XlsIO for Xamarin is a .NET PCL library that can be used to create and modify Microsoft Excel documents from within Xamarin.iOS, Xamarin.Android and Xamarin.Forms applications. 
 
-Key Features
+## Key Features
 
 * Charts for data visualization
 * Conditional Formatting

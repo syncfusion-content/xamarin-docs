@@ -7,43 +7,43 @@ control: Control Name undefined
 documentation: ug
 ---
 
-### Getting Started
+# Getting Started
 
 This section provides a quick overview for working with EssentialTreemap for Xamarin.Forms, with a walk-through the entire process of creating a real world Treemap. The goal of this walk-through is to help you visualize population growth across continents.
 
 You can also download the entire source code of this demo from the following link: [http://files2.syncfusion.com/Installs/v12.2.0.40/Samples/Xamarin/TreeMap_GettingStarted.zip](http://files2.syncfusion.com/Installs/v12.2.0.40/Samples/Xamarin/TreeMap_GettingStarted.zip)
 
-Reference Essential Studio Components in your solution
+## Reference Essential Studio Components in your solution
 
 When you acquire Essential Studio components through the Xamarin Component Store interface from your IDE, after adding the components to your Xamarin.iOS, Xamarin.Android and Windows Phone projects through the Component Manager, you need to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL Project in your solution. You can do this by manually adding the relevant PCL assembly references to your PCL project contained in the following path inside your solution folder:  
 
-_Components/syncfusionessentialstudio-version/lib/pcl/_
+Components/syncfusionessentialstudio-version/lib/pcl/
 
 Alternatively when you download Essential Studio from Syncfusion.com or through the Xamarin Store web interface, all the assembly references need to be added manually.  
 
 After installing Essential Studio for Xamarin, all the required assemblies can be found in the installation folders, typically:
 
-_{Syncfusion Installed location}\Essential Studio\12.2.0.40\lib_
+{Syncfusion Installed location}\Essential Studio\12.2.0.40\lib
 
-_Example: C:\Program Files (x86)\Syncfusion\Essential Studio\12.2.0.40\lib_
+Example: C:\Program Files (x86)\Syncfusion\Essential Studio\12.2.0.40\lib
 
 Otherwise, after downloading through the Xamarin Store web interface, all the required assemblies can be found in the following folder:
 
-_{download location}\syncfusionessentialstudio-version\lib_
+{download location}\syncfusionessentialstudio-version\lib
 
 You can then add the assembly references to the respective projects as follows.
 
-PCL project
+### PCL project
 
 XForms\Syncfusion.SfTreeMap.XForms.dll  
 
-Android project:
+### Android project:
 
 Android\Syncfusion. SfTreeMap.Andriod.dll
 
 Android\Syncfusion. SfTreeMap. XForms.Andriod.dll 
 
-iOS project:
+### iOS project:
 
 iOS\Syncfusion. SfTreeMap.iOS.dll   
 
@@ -51,33 +51,37 @@ iOS\Syncfusion. SfTreeMap.XForms.iOS.dll
 
 iOS\Syncfusion. SfTreeMap.XForms.dll
 
-Windows Phone project
+### Windows Phone project
 
 wp8\Syncfusion. SfTreeMap.WP8.dll
 
 wp8\Syncfusion SfTreeMap.XForms.WinPhone.dll
 
-> ![](Getting-Started_images/Getting-Started_img1.png)
-{:.image }
-_Note: Essential TreeMap for Xamarin is compatible with Xamarin Forms 1.2.3.6257_
+
+
+> Note: Essential TreeMap for Xamarin is compatible with Xamarin Forms 1.2.3.6257
 
 Currently an additional step is required for Windows Phone and iOS projects. You need to create an instance of the TreeMap custom renderer as follows.
 
 1. Create an instance of the SfTreeMapRenderer in MainPage constructor in Windows Phone project as follows.
 
+   ~~~ cs
   	 public MainPage()
 
-       	 {
+        {
 
            		 new SfTreeMapRenderer ();
 
         		    ...    
 
      	}
-
+   ~~~
+   {:.prettyprint}
+   
 2. Create an instance of the SfTreeMapRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as follows.
 
-public override bool FinishedLaunching(UIApplication app, NSDictionary options)
+   ~~~ cs
+     public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
         	{
 
@@ -88,31 +92,28 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         		   ...
 
        	 }
-
-Initializing the TreeMap
+   ~~~
+   {:.prettyprint}
+   
+## Initializing the TreeMap
 
 The Treemap control can be configured entirely in C# code or using XAML markup.
 
 The first step is to create a TreeMap object. 
 
 
+{% highlight xml %}
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"xmlns:local="clr-namespace:Syncfusion.SfTreeMap.XForms;assembly=Syncfusion.SfTreeMap.XForms"  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TreeMapGettingStarted.Sample" BackgroundColor=”Black”>
 
-&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;ContentPage xmlns="http://xamarin.com/schemas/2014/forms"xmlns:local="clr-namespace:Syncfusion.SfTreeMap.XForms;assembly=Syncfusion.SfTreeMap.XForms"  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TreeMapGettingStarted.Sample" BackgroundColor=”Black”&gt;
+<ContentPage.Content >
+ <local:SfTreeMap x:Name="treeMap">
+</local:SfTreeMap>
 
-&lt;ContentPage.Content &gt;
- &lt;local:SfTreeMap x:Name="treeMap"&gt;
-&lt;/local:SfTreeMap&gt;
-
-&lt;/ContentPage.Content&gt;
-&lt;/ContentPage&gt;
-
-
-
-
-
-
-
+</ContentPage.Content>
+</ContentPage>
+{% endhighlight %}
+{% highlight c# %}
 public static Page GetMainPage()
 
 {
@@ -132,14 +133,14 @@ SfTreeMap treeMap = new SfTreeMap();
        };
 
 }
-
-Populating TreeMap Items
+{% endhighlight %}
+## Populating TreeMap Items
 
 The TreeMap accepts a collection of TreeMapItems as input.
 
 
+{% highlight xml %}
 
-[XAML]
 
 // BindingContext is set for the content page class.
 
@@ -153,12 +154,12 @@ The TreeMap accepts a collection of TreeMapItems as input.
 
 
 
-&lt;local:SfTreeMap x:Name="treeMap" Items = "{Binding TreeMapItems}"&gt;
+<local:SfTreeMap x:Name="treeMap" Items = "{Binding TreeMapItems}">
 
-&lt;/local:SfTreeMap&gt;
+</local:SfTreeMap>
+{% endhighlight %}
+{% highlight c# %}
 
-
-[C#]
 
 
 
@@ -219,38 +220,40 @@ SfTreeMap treeMap = new SfTreeMap();
 DataModel model = new DataModel();
 
 treeMap.Items = model.TreeMapItems;
+{% endhighlight %}
 
-Grouping of TreeMap Items using Levels
+## Grouping of TreeMap Items using Levels
 
 You can group TreeMapItems using two types of levels.
 
 1.    TreeMap Flat Level
 2.    TreeMap Hierarchical Level
 
-Customize TreeMap Appearance by Range
+## Customize TreeMap Appearance by Range
 
 You can differentiate the nodes based on its value and color ranges using the Range color. You can also define the color value range using the From and To properties. 
 
 
+{% highlight xml %}
 
-[XAML]
 
-&lt;local:SfTreeMap x:Name="treeMap" Items = "{Binding TreeMapItems}"&gt;
+<local:SfTreeMap x:Name="treeMap" Items = "{Binding TreeMapItems}">
 
-  &lt;local:SfTreeMap.LeafItemColorMapping&gt;
-       &lt;local:RangeColorMapping&gt;
-         &lt;local:RangeColorMapping.Ranges&gt;
-           &lt;local:Range LegendLabel = "1 % Growth" From = "0" To = "1" Color =  "#77D8D8"  /&gt;
-            &lt;local:Range LegendLabel = "2 % Growth" From = "0" To = "2" Color =  "#AED960"  /&gt;
-            &lt;local:Range LegendLabel = "3 % Growth" From = "0" To = "3" Color =  "#FFAF51"  /&gt;
-            &lt;local:Range LegendLabel = "4 % Growth" From = "0" To = "4" Color =  "#F3D240"  /&gt;
-           &lt;/local:RangeColorMapping.Ranges&gt;
-       &lt;/local:RangeColorMapping&gt; 
-    &lt;/local:SfTreeMap.LeafItemColorMapping&gt;
+  <local:SfTreeMap.LeafItemColorMapping>
+       <local:RangeColorMapping>
+         <local:RangeColorMapping.Ranges>
+           <local:Range LegendLabel = "1 % Growth" From = "0" To = "1" Color =  "#77D8D8"  />
+            <local:Range LegendLabel = "2 % Growth" From = "0" To = "2" Color =  "#AED960"  />
+            <local:Range LegendLabel = "3 % Growth" From = "0" To = "3" Color =  "#FFAF51"  />
+            <local:Range LegendLabel = "4 % Growth" From = "0" To = "4" Color =  "#F3D240"  />
+           </local:RangeColorMapping.Ranges>
+       </local:RangeColorMapping> 
+    </local:SfTreeMap.LeafItemColorMapping>
 
-&lt;/local:SfTreeMap&gt;
+</local:SfTreeMap>
+{% endhighlight %}
+{% highlight c# %}
 
-[C#]
 
 …
 
@@ -262,26 +265,28 @@ ranges.Add(new Range() { LegendLabel = "2 % Growth", From = 0, To = 2, Color = C
 ranges.Add(new Range() { LegendLabel = "3 % Growth", From = 0, To = 3, Color = Color.FromHex("#FFAF51") });
 ranges.Add(new Range() { LegendLabel = "4 % Growth", From = 0, To = 4, Color = Color.FromHex("#F3D240") });
 treeMap.LeafItemColorMapping = new RangeColorMapping (){ Ranges = ranges };
+{% endhighlight %}
 
-LeafItemSetting
+## LeafItemSetting
 
 You can customize the Leaf level TreeMap items using LeafItem setting. 
 
-[XAML]
+{% highlight xml %}
 
-&lt;local:SfTreeMap x:Name="treeMap" Items = "{Binding TreeMapItems}"&gt;
+
+<local:SfTreeMap x:Name="treeMap" Items = "{Binding TreeMapItems}">
 
 …
 
-&lt;local:SfTreeMap.LeafItemSettings&gt;
-        &lt;local: LeafItemSettings BorderWidth=“1" BorderColor=“White"  /&gt;
-    &lt;/local:SfTreeMap. LeafItemSettings &gt;
+<local:SfTreeMap.LeafItemSettings>
+        <local: LeafItemSettings BorderWidth=“1" BorderColor=“White"  />
+    </local:SfTreeMap. LeafItemSettings >
 
-&lt;/local:SfTreeMap&gt;
+</local:SfTreeMap>
+{% endhighlight %}
 
+{% highlight c# %}
 
-
-[C#]
 
 …
 
@@ -289,24 +294,26 @@ LeafItemSettings leafSetting = new LeafItemSettings();
 leafSetting.BorderWidth = 1;
 leafSetting.BorderColor = Color.White;
 treeMap.LeafItemSettings = leafSetting;
+{% endhighlight %}
 
-Enable Legend
+## Enable Legend
 
 You can set the color value of leaf nodes using the TreeMap Legend. This legend is appropriate only for the TreeMap whose leaf nodes are colored using RangeColorMapping. You can set ShowLegend property value to “True” to make the legend visible.
 
-Label for Legends
+## Label for Legends
 
 You can customize the labels of the legend items using the LegendLabel property of RangeColorMapping. 
 
-[XAML]
-
-&lt;local:SfTreeMap.LegendSettings&gt;
-        &lt;local:LegendSettings  ShowLegend ="true" IconSize=“15,15" Size=“350,70"  /&gt;
-&lt;/local:SfTreeMap.LegendSettings&gt;
+{% highlight xml %}
 
 
+<local:SfTreeMap.LegendSettings>
+        <local:LegendSettings  ShowLegend ="true" IconSize=“15,15" Size=“350,70"  />
+</local:SfTreeMap.LegendSettings>
+{% endhighlight %}
 
-[C#]
+{% highlight c# %}
+
 
 …
 
@@ -316,10 +323,10 @@ legendSettings.IconSize = new Size(15, 15);
 legendSettings.Size = new Size (350, 70);
 treeMap.LegendSettings= legendSettings;
 
+{% endhighlight %}
 
+![](Getting-Started_images/Getting-Started_img2.png)
 
-![C:/Users/lingaraj/Desktop/treemap.png](Getting-Started_images/Getting-Started_img2.png)
-{:.image }
 
 
 

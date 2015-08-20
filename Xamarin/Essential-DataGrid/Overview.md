@@ -7,9 +7,9 @@ control: Control Name undefined
 documentation: ug
 ---
 
-### Overview
+# Overview
 
-Essential DataGrid for Android and Essential DataGrid for iOS
+## Essential DataGrid for Android and Essential DataGrid for iOS
 
 Essential DataGrid for Android and iOS is the most advanced DataGrid that provides matchless performance and flexibility. Essential DataGrid helps you to create features that is used to display and manipulate the huge amount of data in tabular view.
 
@@ -26,7 +26,7 @@ The following are the list of key features of DataGrid control.
 * Custom Cell – Explicit support to customize the cell displayed in a column.
 * Styles – Extensive support to customize the appearance of every view inside the DataGrid.
 
-Essential DataGrid for Xamarin.Forms
+## Essential DataGrid for Xamarin.Forms
 
 Essential DataGrid for Xamarin.Forms is the most advanced DataGrid that provides matchless performance and flexibility. Essential DataGrid helps you to create entirely customizable features used to display and manipulate a large amount of data in a tabular view.
 

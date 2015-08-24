@@ -39,7 +39,7 @@ Syncfusion.DocIO.Portable.dll
 
 
 
-> Note: If you have already referenced one of the UI components such as Chart, Gauge or TreeMap, from the Xamarin component store IDE interface then the XlsIO and DocIO assemblies have already been downloaded and available in your solution folder, you can then manually add references from that folder.
+N> If you have already referenced one of the UI components such as Chart, Gauge or TreeMap, from the Xamarin component store IDE interface then the XlsIO and DocIO assemblies have already been downloaded and available in your solution folder, you can then manually add references from that folder.
 
 Components/syncfusionessentialstudio-version/lib/pcl/
 

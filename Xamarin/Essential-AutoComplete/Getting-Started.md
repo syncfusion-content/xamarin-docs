@@ -30,7 +30,7 @@ After installing the Essential Studio for Xamarin, you can find all the requi
 
 
 
-> Note: Assemblies are available in unzipped package location in Mac.
+N> Assemblies are available in unzipped package location in Mac.
 
 Add the following assembly references to the Xamarin project.
 
@@ -126,7 +126,7 @@ WinPhone\Syncfusion. SfShared.WP8.dll
 WinPhone\Syncfusion. SfAutoComplete.XForms.WinPhone.dll
 
 
-> Note: Essential AutoComplete for Xamarin is compatible with Xamarin Forms 1.3.
+N> Essential AutoComplete for Xamarin is compatible with Xamarin Forms 1.3.
 
 
 

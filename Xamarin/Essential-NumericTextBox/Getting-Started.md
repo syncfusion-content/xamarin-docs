@@ -30,7 +30,7 @@ After installing the Essential StudioforXamarin, you can find all the required 
 {Syncfusion Installed location}\Essential Studio\{version number}\lib
 
 
-> Note: Assemblies are available in unzipped package location in Mac.
+N> Assemblies are available in unzipped package location in Mac.
 
 
 Add the following assembly references to the Xamarin project.
@@ -143,7 +143,7 @@ WinPhone\Syncfusion.SfNumericTextBox.XForms.WinPhone.dll
 WinPhone\Syncfusion. SfShared.WP8.dll
 
 
-> Note: Essential  NumericTextBox  for Xamarin is compatible with Xamarin Forms 1.3.
+N> Essential  NumericTextBox  for Xamarin is compatible with Xamarin Forms 1.3.
 
 
 
@@ -281,7 +281,7 @@ After installing Essential Studio for Xamarin, you can find all the required as
  {Syncfusion Installed location}\Essential Studio\{version number}\lib
 
 
-> Note: Assemblies are available in unzipped package location in Mac.
+N> Assemblies are available in unzipped package location in Mac.
 
 Add the following assembly references to the iOS project.
 

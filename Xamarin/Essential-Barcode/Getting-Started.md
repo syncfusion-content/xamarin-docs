@@ -59,7 +59,7 @@ WinPhone\Syncfusion.SfBarcode.WP8.dll
 WinPhone\Syncfusion.SfBarcode.XForms.WinPhone.dll
 
 
-> Note: Essential Barcode for Xamarin is compatible with Xamarin. Forms 1.3.4.6332.
+N> Essential Barcode for Xamarin is compatible with Xamarin. Forms 1.3.4.6332.
 
 Currently an additional step is required for Windows Phone and iOS projects. Create an instance of the Barcode custom renderer as mentioned.
 
@@ -333,7 +333,7 @@ After installing the Essential Studio for Xamarin, you can find all the requir
 {Syncfusion Installed location}\Essential Studio\12.4.0.24\lib
 
 
-> Note: Assemblies are available in unzipped package location in Mac
+N> Assemblies are available in unzipped package location in Mac
 
 Add the following assembly references to the Android project,
 
@@ -497,7 +497,7 @@ After installing Essential Studio for Xamarin, you can find all the required ass
 {Syncfusion Installed location}\Essential Studio\{version number}\lib\iOS
 
 
-> Note: Assemblies are available in unzipped package location in Mac.
+N> Assemblies are available in unzipped package location in Mac.
 
 From the specified folder, the assembly reference of the SfBarcode that is, Syncfusion.SfBarcode.iOS.dll is added to the Xamarin.iOS project.
 

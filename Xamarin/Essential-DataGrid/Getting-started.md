@@ -14,7 +14,7 @@ This section provides a quick overview for working with Essential DataGridfor Xa
 {Syncfusion Essential Studio Installed location}\Essential Studio\13.2.0.29\lib
 
 
-> Note: Assemblies are available in unzipped package location in Mac.
+N> Assemblies are available in unzipped package location in Mac.
 
 ## Essential DataGrid for Android
 

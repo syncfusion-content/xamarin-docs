@@ -145,7 +145,7 @@ wp8\Syncfusion.SfChart.WP8.dll
 wp8\Syncfusion.SfChart.xForms.WinPhone.dll
 
 
-> Note: Essential Chart for Xamarin is compatible with Xamarin. Forms v.1.2.3.6257.
+N> Essential Chart for Xamarin is compatible with Xamarin. Forms v.1.2.3.6257.
 
 Currently an additional step is required for Windows Phone and iOS projects. We need to create an instance of the chart custom renderer as shown below. 
 
@@ -849,7 +849,7 @@ After installing Essential Studio for Xamarin, you can find all the required ass
 
 
 
-> Note: Assemblies are available in unzipped package location in Mac.
+N> Assemblies are available in unzipped package location in Mac.
 
 Add the following assembly references to the Android project,
 
@@ -1226,7 +1226,7 @@ After installing Essential Studio for Xamarin, you can find all the required ass
 
 
 
-> Note: Assemblies are available in unzipped package location in Mac.
+N> Assemblies are available in unzipped package location in Mac.
 
 You have to add the following assembly references to the iOS project.
 

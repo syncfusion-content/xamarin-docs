@@ -24,7 +24,7 @@ After installing Essential Studio for Xamarin, you can find all the required a
 {< Installed location}\Essential Studio\12.4.0.24\lib
 
 
-> Note: Assemblies are available in unzipped package location in Mac
+N> Assemblies are available in unzipped package location in Mac
 
 Add the following assembly references to the Android project,
 
@@ -501,7 +501,7 @@ WinPhone\Syncfusion. SfGauge.WP8.dll
 WinPhone\Syncfusion SfGauge.XForms.WinPhone.dll
 
 
-> Note: Essential Gauge for Xamarin is compatible with Xamarin.Forms 1.2.3.6257.
+N> Essential Gauge for Xamarin is compatible with Xamarin.Forms 1.2.3.6257.
 
 Currently an additional step is required for Windows Phone and iOS projects. You need to create an instance of the Gauge custom renderer as mentioned as follows.
 
@@ -895,7 +895,7 @@ After installing Essential Studio for Xamarin, you can find all the required 
 {Syncfusion Installed location}\Essential Studio\{version number}\lib
 
 
-> Note: You can find assemblies in unzipped package location in Mac.
+N> You can find assemblies in unzipped package location in Mac.
 
 You have to add the following assembly references to the Xamarin.iOS project.
 

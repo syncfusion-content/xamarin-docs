@@ -43,7 +43,7 @@ WinPhone\Syncfusion. SfRangeSlider.XForms.WinPhone.dll
 
 
 
-> Note: Essential BusyIndicator for Xamarin is compatible with Xamarin Forms 1.3.
+N> Essential BusyIndicator for Xamarin is compatible with Xamarin Forms 1.3.
 
 An additional step is required for Windows Phone and iOS projects. Create an instance of the RangeSlider custom renderer as follows.
 
@@ -194,7 +194,7 @@ After installing Essential Studio for Xamarin, you can find all the required ass
 
 
 
-> Note: Assemblies are available in unzipped package location in Mac.
+N> Assemblies are available in unzipped package location in Mac.
 
 Add the following assembly references to the iOS project.
 
@@ -284,7 +284,7 @@ After installing Essential StudioforXamarin, you can find all the required asse
 {Syncfusion Installed location}\Essential Studio\13.1.0.21\lib
 
 
-> Note: Assemblies are available in unzipped package location in Mac
+N> Assemblies are available in unzipped package location in Mac
 
 
 

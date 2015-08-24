@@ -24,7 +24,7 @@ After installing Essential Studio for Xamarin, you can find all the required as
 
 
 
-> Note: Assemblies are available in unzipped package location in Mac.
+N> Assemblies are available in unzipped package location in Mac.
 
 Add the following assembly references to the Xamarin project,
 
@@ -85,7 +85,7 @@ After installing Essential Studio for Xamarin, you can find all the required as
 
 
 
-> Note: Assemblies are available in unzipped package location in Mac.
+N> Assemblies are available in unzipped package location in Mac.
 
 Add the following assembly references to the iOS project.
 

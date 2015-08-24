@@ -59,7 +59,7 @@ wp8\Syncfusion SfTreeMap.XForms.WinPhone.dll
 
 
 
-> Note: Essential TreeMap for Xamarin is compatible with Xamarin Forms 1.2.3.6257
+N> Essential TreeMap for Xamarin is compatible with Xamarin Forms 1.2.3.6257
 
 Currently an additional step is required for Windows Phone and iOS projects. You need to create an instance of the TreeMap custom renderer as follows.
 

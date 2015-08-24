@@ -42,7 +42,7 @@ WinPhone\Syncfusion. SfBusyIndicator.WP8.dll
 WinPhone\Syncfusion. SfBusyIndicator.XForms.WinPhone.dll
 
 
-> Note: Essential BusyIndicator for Xamarin is compatible with Xamarin Forms 1.3.
+N> Essential BusyIndicator for Xamarin is compatible with Xamarin Forms 1.3.
 
 An additional step is required for Windows Phone and iOS projects. Create an instance of the BusyIndicator custom renderer as follows.
 
@@ -200,7 +200,7 @@ After installing Essential Studio for Xamarin, you can find all the required a
 {Syncfusion Installed location}\Essential Studio\13.1.0.21\lib
 
  
-> Note: Assemblies are available in unzipped package location in Mac
+N> Assemblies are available in unzipped package location in Mac
 
 ### Add the following assembly references to the Xamarin project.
 
@@ -280,7 +280,7 @@ After installing the Essential Studio for Xamarin, you can find all the required
 
 {Syncfusion Installed location}\Essential Studio\{version number}\lib
 
-> Note: Assemblies are available in unzipped package location in Mac.
+N> Assemblies are available in unzipped package location in Mac.
 
 You can add the following assembly references to the iOS project.
 

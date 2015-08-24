@@ -42,7 +42,7 @@ WinPhone\Syncfusion. SfGauge.WP8.dll
 WinPhone\Syncfusion SfGauge.XForms.WinPhone.dll
 
  
-> Note: Essential Digital Gauge for Xamarin is compatible with Xamarin Forms 1.2.2.0.
+N> Essential Digital Gauge for Xamarin is compatible with Xamarin Forms 1.2.2.0.
 
 
 
@@ -228,7 +228,7 @@ This section provides a quick overview for working with the Essential Digital G
 When the Essential Studio for Xamarin is installed, all the required assemblies can be found in the installation folders: {Syncfusion Installed location}\Essential Studio\13.1.0.21\lib
 
 
-> Note: Assemblies are available in unzipped package location in Mac.
+N> Assemblies are available in unzipped package location in Mac.
 
 Add the following assembly references to the Android project.
 
@@ -356,7 +356,7 @@ This section provides a quick overview for working with the Essential Digital G
 When the Essential Studio for Xamarin is installed, all the required assemblies can be found in the installation folders: {Syncfusion Installed location}\Essential Studio\13.1.0.21\lib
 
 
-> Note: Assemblies are available in unzipped package location in Mac.
+N> Assemblies are available in unzipped package location in Mac.
 
 Add the following assembly references to the iOS project.
 

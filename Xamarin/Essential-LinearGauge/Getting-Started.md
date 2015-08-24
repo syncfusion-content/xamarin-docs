@@ -43,7 +43,7 @@ WinPhone\Syncfusion SfGauge.XForms.WinPhone.dll
 
 
 
-> Note: Essential Linear Gauge for Xamarin is compatible with Xamarin Forms 1.2.2.0.
+N> Essential Linear Gauge for Xamarin is compatible with Xamarin Forms 1.2.2.0.
 
 An additional step is required for Windows Phone and iOS projects. You are required to create an instance of the Linear Gauge custom renderer as follows.
 
@@ -458,7 +458,7 @@ When the Essential Studio for Xamarin is installed, you can find all the requir
 
 
 
-> Note: Assemblies are available in unzipped package location in Mac
+N> Assemblies are available in unzipped package location in Mac
 
 Add the following assembly references to the Android project.
 
@@ -636,7 +636,7 @@ When the Essential Studio for Xamarin is installed, you can find all the requi
 
 
 
-> Note: Assemblies are available in unzipped package location in Mac
+N> Assemblies are available in unzipped package location in Mac
 
 Add the following assembly references to the iOS project.
 

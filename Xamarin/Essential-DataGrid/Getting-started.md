@@ -3,7 +3,7 @@ layout: post
 title: Getting-started
 description: getting started
 platform: xamarin
-control: Control Name undefined
+control: Essential-DataGrid
 documentation: ug
 ---
 

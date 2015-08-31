@@ -3,7 +3,7 @@ layout: post
 title: Getting-Started
 description: getting started
 platform: xamarin
-control: Control Name undefined
+control: Essential-AutoComplete
 documentation: ug
 ---
 
@@ -264,7 +264,7 @@ This section provides a quick overview to work with the AutoComplete in Object
 
 You can refer to the following link to learn how to refer to the framework to your project. 
 
-<http://help.syncfusion.com/ug/ios/>
+<http://docs.syncfusion.com/ios/introduction/add-framework-reference-to-the-project>
 
 ### Create an AutoComplete
 

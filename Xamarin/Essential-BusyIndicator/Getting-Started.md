@@ -3,7 +3,7 @@ layout: post
 title: Getting-Started
 description: getting started
 platform: xamarin
-control: Control Name undefined
+control: Essential-BusyIndicator
 documentation: ug
 ---
 
@@ -190,7 +190,7 @@ This section provides a quick overview to work with the BusyIndicator in the 
 
 
 
-![http://help.syncfusion.com/ug/android/ImagesExt/image80_1.png](Create-your-first-BusyIndicator-in-XamarinAndroid_images/Create-your-first-BusyIndicator-in-XamarinAndroid_img1.png)
+![](Create-your-first-BusyIndicator-in-XamarinAndroid_images/Create-your-first-BusyIndicator-in-XamarinAndroid_img1.png)
 
 
 ### Reference Essential Studio components in your solution

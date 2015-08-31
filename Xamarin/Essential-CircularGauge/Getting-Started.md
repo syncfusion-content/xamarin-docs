@@ -3,7 +3,7 @@ layout: post
 title: Getting-Started
 description: getting started
 platform: xamarin
-control: Control Name undefined
+control: Essential-CircularGauge
 documentation: ug
 ---
 
@@ -983,7 +983,7 @@ Next, add one of more scales.
 
  The following screenshot illustrates the output of the above code.
 
-![http://help.syncfusion.com/ug/ios/ImagesExt/image24_1.png](Create-your-first-Circular-Gauge-in-XamariniOS_images/Create-your-first-Circular-Gauge-in-XamariniOS_img3.png)
+![](Create-your-first-Circular-Gauge-in-XamariniOS_images/Create-your-first-Circular-Gauge-in-XamariniOS_img3.png)
 
 
 ### Customize the ticks
@@ -1066,7 +1066,7 @@ You can customize the major and minor ticks using the Tick settings as follows
 
  The following screenshot illustrates the output of the above code.
 
-![http://help.syncfusion.com/ug/ios/ImagesExt/image24_2.png](Create-your-first-Circular-Gauge-in-XamariniOS_images/Create-your-first-Circular-Gauge-in-XamariniOS_img4.png)
+![](Create-your-first-Circular-Gauge-in-XamariniOS_images/Create-your-first-Circular-Gauge-in-XamariniOS_img4.png)
 
 
 
@@ -1180,7 +1180,7 @@ View.BackgroundColor = UIColor.Black;
 
  The following screenshot illustrates the output of the above code.
 
-![http://help.syncfusion.com/ug/ios/ImagesExt/image24_3.png](Create-your-first-Circular-Gauge-in-XamariniOS_images/Create-your-first-Circular-Gauge-in-XamariniOS_img5.png)
+![](Create-your-first-Circular-Gauge-in-XamariniOS_images/Create-your-first-Circular-Gauge-in-XamariniOS_img5.png)
 
 
 

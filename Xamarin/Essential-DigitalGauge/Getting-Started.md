@@ -3,7 +3,7 @@ layout: post
 title: Getting-Started
 description: getting started
 platform: xamarin
-control: Control Name undefined
+control: Essential-DigitalGauge
 documentation: ug
 ---
 
@@ -341,7 +341,7 @@ layout. SetGravity(GravityFlags.Center);
 
 
 
-![http://help.syncfusion.com/ug/android/ImagesExt/image79_2.png](Create-your-first-Digital-Gauge-in-XamarinAndroid_images/Create-your-first-Digital-Gauge-in-XamarinAndroid_img3.png)
+![](Create-your-first-Digital-Gauge-in-XamarinAndroid_images/Create-your-first-Digital-Gauge-in-XamarinAndroid_img3.png)
 
 ## Create your first Digital Gauge in Xamarin.iOS
 

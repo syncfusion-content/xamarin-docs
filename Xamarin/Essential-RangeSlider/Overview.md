@@ -3,7 +3,7 @@ layout: post
 title: Overview
 description: overview
 platform: xamarin
-control: Control Name undefined
+control: Essential-RangeSlider
 documentation: ug
 ---
 

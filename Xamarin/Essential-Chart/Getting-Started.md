@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Getting-Started
 description: getting started
@@ -130,13 +130,21 @@ pcl\Syncfusion.SfChart.XForm.dll
 
 android\Syncfusion.SfChart.xForms.Andriod.dll
 
-### iOS project
+### iOS(Classic) project
 
 ios\Syncfusion.SfChart.iOS.dll 
 
 ios\Syncfusion.SfChart.xForms.iOS.dll
 
 ios\Syncfusion.SfChart.XForm.dll
+
+### iOS(Unified) project
+
+ios-unified\Syncfusion.SfChart.iOS.dll 
+
+ios-unified\Syncfusion.SfChart.xForms.iOS.dll
+
+ios-unified\Syncfusion.SfChart.XForm.dll
 
 ### Windows Phone project
 
@@ -1228,11 +1236,15 @@ After installing Essential Studio for Xamarin, you can find all the required ass
 
 N> Assemblies are available in unzipped package location in Mac.
 
-You have to add the following assembly references to the iOS project.
+You have to add the following assembly reference to the iOS classic project
 
 
+ios\Syncfusion.SfChart.iOS.dll
 
-iOS\Syncfusion.SfChart.iOS.dll
+and below assembly reference to the iOS unified project.
+
+
+ios-unifed\Syncfusion.SfChart.iOS.dll
 
 ### Add and Configure Chart
 

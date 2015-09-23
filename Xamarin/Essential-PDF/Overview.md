@@ -2,20 +2,22 @@
 layout: post
 title: Overview
 description: overview
-platform: ios
-control: Control Name undefined
+platform: xamarin
+control: Essential-PDF
 documentation: ug
 ---
 
-### Overview
+# Overview
 
-Essential PDF for Xamarin is a .NET PCL library that can be used to create and modify Adobe PDF documents from within Xamarin.iOS, Xamarin.Android and Xamarin.Forms applications. 
+Essential PDF for Xamarin is a .NET PCL library that can be used to create and modify Adobe PDF documents from within 
+Xamarin.iOS, Xamarin.Android and Xamarin.Forms applications. 
 
-All of the elements in a typical PDF file like the text, formatting, images and tables are accessible through a comprehensive set of API’s. This makes it possible to easily create richly formatted PDF documents as well as modify existing ones. 
+All of the elements in a typical PDF file like the text, formatting, images and tables are accessible through a comprehensive 
+set of API’s. This makes it possible to easily create richly formatted PDF documents as well as modify existing ones. 
 
-Key Features
+## Key Features
 
-Document level features
+### Document level features
 
 * Create and load PDF documents files and streams
 * Save PDF files to disk and Streams
@@ -34,13 +36,13 @@ Document level features
 * Headers and Footers
 * Actions
 
-Text
+### Text
 
 * Drawing Text
 * Text formatting
 * Pagination
 
-Graphics
+### Graphics
 
 * Pen and brush for stroking operations
 * Graphics primitives: lines, ellipses, rectangles, arcs, pie, Bezier curves, paths.
@@ -50,7 +52,7 @@ Graphics
 * Color spaces
 * Barcode
 
-Forms
+### Forms
 
 * Create, load and save PDF forms
 * Add, edit, remove and rename form fields
@@ -59,15 +61,15 @@ Forms
 * Enumerating the form fields
 * Form actions
 
-Fonts
+### Fonts
 
 * Standard Fonts
 
-Images
+### Images
 
 * Jpeg image support
 
-Tables
+### Tables
 
 * Cell/Row/Column formatting
 * Header
@@ -77,18 +79,18 @@ Tables
 * Nested
 * Cell Padding and spacing
 
-Page Level Operations
+### Age Level Operations
 
 * Headers and Footers
 * Page Label
 * Automatic fields
 
-Pdf Annotations
+### Pdf Annotations
 
 * Add, edit and remove pdf annotations
 * Custom appearance for annotations
 
-Supported annotations
+### Supported annotations
 
 * Free Text annotation
 * Rubber stamp annotations
@@ -100,11 +102,11 @@ Supported annotations
 * Sound annotations
 * 3D-Annotations
 
-Barcode
+### Barcode
 
 * Add the barcode into the PDF document
 
-Supported barcodes 
+### Supported barcodes 
 
 * QR barcode
 * Data matrix barcode

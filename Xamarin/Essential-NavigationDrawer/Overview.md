@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | Essential NavigationDrawer | Xamarin | Syncfusion
 description: overview
 platform: xamarin
 control: Essential-NavigationDrawer
@@ -12,7 +12,7 @@ documentation: ug
 NavigationDrawer is a sliding panel menu to navigate between major modules of the application.  Most of the time the Navigation 
 Drawer is hidden and can be shown by swiping the screen from any of the four edges or tapping the app icon, when available.
 
-![](Overview_images/Overview_img1.png)
+![](Overview_images/img1.png)
 
 
 ## Key Features

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | Essential CircularGauge | Xamarin | Syncfusion
 description: overview
 platform: xamarin
 control: Essential-CircularGauge

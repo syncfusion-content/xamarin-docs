@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | Essential DocIO | Xamarin | Syncfusion
 description: getting started
 platform: xamarin
 control: Essential-DocIO
@@ -23,21 +23,16 @@ Syncfusion.Compression.Portable.dll
 Syncfusion.DocIO.Portable.dll
 
 
-
 ```
 
 If you had already referenced one of our UI components (Chart, Gauge or Treemap) components from within the Xamarin component store IDE interface then the DocIO assembly has already been downloaded and available in your solution folder, you can then manually add references from that folder.
-
-
 
 ```
 
 Components/syncfusionessentialstudio-version/lib/pcl/
 
 
-
 ```
-
 
 
 A new Word document can be easily created from scratch by using the Essential DocIO library by instantiating a new instance of the WordDocument class. This class is the root node for all other nodes in the Document Object Model for Essential DocIO library. Using this DOM, you can add, edit, and remove content from documents by iterating elements.
@@ -53,6 +48,7 @@ WordDocument doc = new WordDocument();
 //Adds one section and one paragraph to the document.
 
 doc.EnsureMinimal();
+
 {% endhighlight %}
 
 
@@ -63,6 +59,7 @@ You can add a new section at the end of a document by invoking the AddSection me
 //Adds a new section to the document.
 
 WSection section = doc.AddSection();
+
 {% endhighlight %}
 
 
@@ -89,6 +86,7 @@ The following code example illustrates how to append text to a Word document.
 //Appends text to the paragraph.
 
 paragraph.AppendText("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+
 {% endhighlight %}
 
 
@@ -112,7 +110,7 @@ doc.Close();
 
 
 
-![](Getting-Started_images/Getting-Started_img1.jpg)
+![](Getting-Started_images/img1.jpg)
 
 
 

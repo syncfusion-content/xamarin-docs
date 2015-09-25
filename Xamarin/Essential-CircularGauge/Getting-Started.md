@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | Essential CircularGauge | Xamarin | Syncfusion
 description: getting started
 platform: xamarin
 control: Essential-CircularGauge
@@ -13,7 +13,7 @@ documentation: ug
 
 You can configure an Essential Gauge for Xamarin Android in simple steps. In this section, you can learn how to configure a Circular Gauge control in a real-time scenario and also provides a walk-through on some of the customization features available in Circular Gauge control.
 
-![](Createyour-firstCircularGauge-in-XamarinAndroid_images/Createyour-firstCircularGauge-in-XamarinAndroid_img1.png)
+![](Createyour-firstCircularGauge-in-XamarinAndroid_images/img1.png)
 
 
 
@@ -21,7 +21,7 @@ You can configure an Essential Gauge for Xamarin Android in simple steps. In t
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders,
 
-{< Installed location}\Essential Studio\12.4.0.24\lib
+{Installed location}\Essential Studio\12.4.0.24\lib
 
 
 N> Assemblies are available in unzipped package location in Mac
@@ -35,30 +35,28 @@ Add the following assembly references to the Android project,
 Create a Circular Gauge instance in Main Activity and set Circular Gauge as a ContentView in onCreate() overridden method.
 
 {% highlight c# %}
- 
-   
 
-    public class MainActivity : Activity
+public class MainActivity: Activity
 
-    {
+{
 
-        protected override void OnCreate(Bundle bundle)
+	protected override void OnCreate(Bundle bundle)
 
-        {
+	{
 
-            base.OnCreate(bundle);
+		base.OnCreate(bundle);
 
-            // creating new instance for circular Gauge
+		// creating new instance for circular Gauge
 
-            SfCircularGauge circularGauge = new SfCircularGauge(this);
+		SfCircularGauge circularGauge = new SfCircularGauge(this);
 
-            SetContentView(circularGauge); 
+		SetContentView(circularGauge);
 
-        }
+	}
 
-     }
+}
 
- {% endhighlight %}
+{% endhighlight %}
 
    
 
@@ -68,51 +66,46 @@ Now, add the scale to the Circular Gauge.
 
 {% highlight c# %}
  
-   
+// creating new instance for circular Gauge
 
-     // creating new instance for circular Gauge
+SfCircularGauge circularGauge = new SfCircularGauge(this);
 
-            SfCircularGauge circularGauge = new SfCircularGauge(this);
+List < CircularScale > _circularScales = new List < CircularScale > ();
 
-            List<CircularScale> _circularScales = new List<CircularScale>();
+// adding  new CircularScale
 
+CircularScale circularScale = new CircularScale();
 
+circularScale.StartValue = 0;
 
-            // adding  new CircularScale
+circularScale.EndValue = 100;
 
-            CircularScale circularScale = new CircularScale();
+circularScale.StartAngle = 130;
 
-            circularScale.StartValue = 0;
+circularScale.SweepAngle = 280;
 
-            circularScale.EndValue = 100;
+circularScale.RimWidth = 10;
 
-            circularScale.StartAngle =130;
+circularScale.RimColor = Color.ParseColor("#D14646");
 
-            circularScale.SweepAngle =280 ;
+circularScale.MinorTicksPerInterval = 2;
 
-            circularScale.RimWidth =10;
+circularScale.LabelOffset = 0.1;
 
-            circularScale.RimColor = Color.ParseColor("#D14646");
+circularScale.Labe < extSize = 18;
 
-            circularScale.MinorTicksPerInterval = 2;
+_circularScales.Add(circularScale);
 
-            circularScale.LabelOffset = 0.1;
+circularGauge.CircularScales = _circularScales;
 
-            circularScale.Labe<extSize = 18;
-
-            _circularScales.Add(circularScale);
-
-            circularGauge.CircularScales =_circularScales;
-
-            SetContentView(circularGauge); 
-
+SetContentView(circularGauge);
  {% endhighlight %}
 
            
 
 The following screenshot illustrates the output of the above code.
 
-![](Createyour-firstCircularGauge-in-XamarinAndroid_images/Createyour-firstCircularGauge-in-XamarinAndroid_img3.png)
+![](Createyour-firstCircularGauge-in-XamarinAndroid_images/img3.png)
 
 
 ### Customize the ticks
@@ -121,75 +114,73 @@ You can customize the major and minor ticks using the Tick settings, as illust
 
 {% highlight c# %}
  
-   
+// creating new instance for circular Gauge
 
-    // creating new instance for circular Gauge
+SfCircularGauge circularGauge = new SfCircularGauge(this);
 
-            SfCircularGauge circularGauge = new SfCircularGauge(this);
-
-            List<CircularScale> _circularScales = new List<CircularScale>();
+List < CircularScale > _circularScales = new List < CircularScale > ();
 
 
+// adding  new CircularScale
 
-            // adding  new CircularScale
+CircularScale circularScale = new CircularScale();
 
-            CircularScale circularScale = new CircularScale();
+circularScale.StartValue = 0;
 
-            circularScale.StartValue = 0;
+circularScale.EndValue = 100;
 
-            circularScale.EndValue = 100;
+circularScale.StartAngle = 130;
 
-            circularScale.StartAngle =130;
+circularScale.SweepAngle = 280;
 
-            circularScale.SweepAngle =280 ;
+circularScale.RimWidth = 10;
 
-            circularScale.RimWidth =10;
+circularScale.RimColor = Color.ParseColor("#D14646");
 
-            circularScale.RimColor = Color.ParseColor("#D14646");
+circularScale.MinorTicksPerInterval = 2;
 
-            circularScale.MinorTicksPerInterval = 2;
+circularScale.LabelOffset = 0.1;
 
-            circularScale.LabelOffset = 0.1;
-
-            circularScale.Labe<extSize = 18;
+circularScale.Labe < extSize = 18;
 
 
 
-            //adding major ticks
+//adding major ticks
 
-            TickSetting majorTicksSettings = new TickSetting();
+TickSetting majorTicksSettings = new TickSetting();
 
-            majorTicksSettings.Color = Color.ParseColor("#444444");
+majorTicksSettings.Color = Color.ParseColor("#444444");
 
-            majorTicksSettings.Size = 15;
+majorTicksSettings.Size = 15;
 
-            majorTicksSettings.Offset = 0.04;
+majorTicksSettings.Offset = 0.04;
 
-            circularScale.MajorTickSettings = majorTicksSettings ;
+circularScale.MajorTickSettings = majorTicksSettings;
 
 
 
-            //adding minor ticks
+//adding minor ticks
 
-            TickSetting minorTicksSettings = new TickSetting();
+TickSetting minorTicksSettings = new TickSetting();
 
-            minorTicksSettings.Color = Color.Gray;
+minorTicksSettings.Color = Color.Gray;
 
-            circularScale.MinorTickSettings = minorTicksSettings ;
+circularScale.MinorTickSettings = minorTicksSettings;
 
-            _circularScales.Add(circularScale);
+_circularScales.Add(circularScale);
 
-            circularGauge.CircularScales =_circularScales;
+circularGauge.CircularScales = _circularScales;
 
-            SetContentView(circularGauge); 
+SetContentView(circularGauge);
+    
 
- {% endhighlight %}
+{% endhighlight %}
 
             
 
- The following screenshot illustrates the output of the above code example.
+The following screenshot illustrates the output of the above code example.
 
-![](Createyour-firstCircularGauge-in-XamarinAndroid_images/Createyour-firstCircularGauge-in-XamarinAndroid_img4.png)
+![](Createyour-firstCircularGauge-in-XamarinAndroid_images/img4.png)
 
 
 ### Add Pointers to the Scale
@@ -197,120 +188,118 @@ You can customize the major and minor ticks using the Tick settings, as illust
 Add needle and range pointers and associate them with a scale.
 
 
-{% highlight c# %}
- 
-   
+{% highlight c# %} 
 
-     // creating new instance for circular Gauge
+// creating new instance for circular Gauge
 
-            SfCircularGauge circularGauge = new SfCircularGauge(this);
+SfCircularGauge circularGauge = new SfCircularGauge(this);
 
-            List<CircularScale> _circularScales = new List<CircularScale>();
+List < CircularScale > _circularScales = new List < CircularScale > ();
 
-            List<CircularPointer> _circularPointers = new List<CircularPointer>();
+List < CircularPointer > _circularPointers = new List < CircularPointer > ();
 
 
 
-            // adding  new CircularScale
+// adding  new CircularScale
 
-            CircularScale circularScale = new CircularScale();
+CircularScale circularScale = new CircularScale();
 
-            circularScale.StartValue = 0;
+circularScale.StartValue = 0;
 
-            circularScale.EndValue = 100;
+circularScale.EndValue = 100;
 
-            circularScale.StartAngle =130;
+circularScale.StartAngle = 130;
 
-            circularScale.SweepAngle =280 ;
+circularScale.SweepAngle = 280;
 
-            circularScale.RimWidth =10;
+circularScale.RimWidth = 10;
 
-            circularScale.RimColor = Color.ParseColor("#D14646");
+circularScale.RimColor = Color.ParseColor("#D14646");
 
-            circularScale.MinorTicksPerInterval = 2;
+circularScale.MinorTicksPerInterval = 2;
 
-            circularScale.LabelOffset = 0.1;
+circularScale.LabelOffset = 0.1;
 
-            circularScale.Labe<extSize = 18;
-
-
-
-            //adding major ticks
-
-            TickSetting majorTicksSettings = new TickSetting();
-
-            majorTicksSettings.Color = Color.ParseColor("#444444");
-
-            majorTicksSettings.Size = 15;
-
-            majorTicksSettings.Offset = 0.04;
-
-            circularScale.MajorTickSettings = majorTicksSettings ;
+circularScale.Labe < extSize = 18;
 
 
 
-            //adding minor ticks
+//adding major ticks
 
-            TickSetting minorTicksSettings = new TickSetting();
+TickSetting majorTicksSettings = new TickSetting();
 
-            minorTicksSettings.Color = Color.Gray;
+majorTicksSettings.Color = Color.ParseColor("#444444");
 
-            circularScale.MinorTickSettings = minorTicksSettings ;
+majorTicksSettings.Size = 15;
 
+majorTicksSettings.Offset = 0.04;
 
-
-            // adding needle Pointer
-
-            NeedlePointer needlePointer = new NeedlePointer();
-
-            needlePointer.Value = 70;
-
-            needlePointer.KnobColor = Color.ParseColor("#2BBFB8");
-
-            needlePointer.KnobRadius =20;
-
-            needlePointer.Type = NeedleType.Bar;
-
-            needlePointer.LengthFactor = 0.8 ;
-
-            needlePointer.Width = 3;
-
-            needlePointer.Color = Color.Gray;
-
-            _circularPointers.Add(needlePointer);
+circularScale.MajorTickSettings = majorTicksSettings;
 
 
 
-            // adding range Pointer
+//adding minor ticks
 
-            RangePointer rangePointer = new RangePointer();
+TickSetting minorTicksSettings = new TickSetting();
 
-            rangePointer.Value = 70;
+minorTicksSettings.Color = Color.Gray;
 
-            rangePointer.Color = Color.ParseColor("#2BBFB8");
-
-            rangePointer.Width = 10;
-
-            _circularPointers.Add(rangePointer);
+circularScale.MinorTickSettings = minorTicksSettings;
 
 
 
-            circularScale.CircularPointers = _circularPointers;
+// adding needle Pointer
 
-            _circularScales.Add(circularScale);
+NeedlePointer needlePointer = new NeedlePointer();
 
-            circularGauge.CircularScales =_circularScales; 
+needlePointer.Value = 70;
 
-            SetContentView(circularGauge);
+needlePointer.KnobColor = Color.ParseColor("#2BBFB8");
 
- {% endhighlight %}
+needlePointer.KnobRadius = 20;
+
+needlePointer.Type = NeedleType.Bar;
+
+needlePointer.LengthFactor = 0.8;
+
+needlePointer.Width = 3;
+
+needlePointer.Color = Color.Gray;
+
+_circularPointers.Add(needlePointer);
+
+
+
+// adding range Pointer
+
+RangePointer rangePointer = new RangePointer();
+
+rangePointer.Value = 70;
+
+rangePointer.Color = Color.ParseColor("#2BBFB8");
+
+rangePointer.Width = 10;
+
+_circularPointers.Add(rangePointer);
+
+
+
+circularScale.CircularPointers = _circularPointers;
+
+_circularScales.Add(circularScale);
+
+circularGauge.CircularScales = _circularScales;
+
+SetContentView(circularGauge);     
+
+{% endhighlight %}
 
 
             
 
- The following screenshot illustrates the output of the above code example.
+The following screenshot illustrates the output of the above code example.
 
-![](Createyour-firstCircularGauge-in-XamarinAndroid_images/Createyour-firstCircularGauge-in-XamarinAndroid_img5.png)
+![](Createyour-firstCircularGauge-in-XamarinAndroid_images/img5.png)
 
 
 ### Add Header to the Gauge
@@ -319,144 +308,135 @@ You can add custom labels in the gauge and position it.
 
 {% highlight c# %}
  
-   
+// creating new instance for circular Gauge
 
-    // creating new instance for circular Gauge
+SfCircularGauge circularGauge = new SfCircularGauge(this);
 
-            SfCircularGauge circularGauge = new SfCircularGauge(this);
+List < CircularScale > _circularScales = new List < CircularScale > ();
 
-            List<CircularScale> _circularScales = new List<CircularScale>();
+List < CircularPointer > _circularPointers = new List < CircularPointer > ();
 
-            List<CircularPointer> _circularPointers = new List<CircularPointer>();
+List < Header > _gaugeHeaders = new List < Header > ();
 
-            List<Header> _gaugeHeaders = new List<Header>();
 
+// adding  new CircularScale
 
+CircularScale circularScale = new CircularScale();
 
-            // adding  new CircularScale
+circularScale.StartValue = 0;
 
-            CircularScale circularScale = new CircularScale();
+circularScale.EndValue = 100;
 
-            circularScale.StartValue = 0;
+circularScale.StartAngle = 130;
 
-            circularScale.EndValue = 100;
+circularScale.SweepAngle = 280;
 
-            circularScale.StartAngle =130;
+circularScale.RimWidth = 10;
 
-            circularScale.SweepAngle =280 ;
+circularScale.RimColor = Color.ParseColor("#D14646");
 
-            circularScale.RimWidth =10;
+circularScale.MinorTicksPerInterval = 2;
 
-            circularScale.RimColor = Color.ParseColor("#D14646");
+circularScale.LabelOffset = 0.1;
 
-            circularScale.MinorTicksPerInterval = 2;
+circularScale.Labe < extSize = 18;
 
-            circularScale.LabelOffset = 0.1;
 
-            circularScale.Labe<extSize = 18;
+//adding major ticks
 
+TickSetting majorTicksSettings = new TickSetting();
 
+majorTicksSettings.Color = Color.ParseColor("#444444");
 
-            //adding major ticks
+majorTicksSettings.Size = 15;
 
-            TickSetting majorTicksSettings = new TickSetting();
+majorTicksSettings.Offset = 0.04;
 
-            majorTicksSettings.Color = Color.ParseColor("#444444");
+circularScale.MajorTickSettings = majorTicksSettings;
 
-            majorTicksSettings.Size = 15;
 
-            majorTicksSettings.Offset = 0.04;
+//adding minor ticks
 
-            circularScale.MajorTickSettings = majorTicksSettings ;
+TickSetting minorTicksSettings = new TickSetting();
 
+minorTicksSettings.Color = Color.Gray;
 
+circularScale.MinorTickSettings = minorTicksSettings;
 
-            //adding minor ticks
 
-            TickSetting minorTicksSettings = new TickSetting();
+// adding needle Pointer
 
-            minorTicksSettings.Color = Color.Gray;
+NeedlePointer needlePointer = new NeedlePointer();
 
-            circularScale.MinorTickSettings = minorTicksSettings ;
+needlePointer.Value = 70;
 
+needlePointer.KnobColor = Color.ParseColor("#2BBFB8");
 
+needlePointer.KnobRadius = 20;
 
-            // adding needle Pointer
+needlePointer.Type = NeedleType.Bar;
 
-            NeedlePointer needlePointer = new NeedlePointer();
+needlePointer.LengthFactor = 0.8;
 
-            needlePointer.Value = 70;
+needlePointer.Width = 3;
 
-            needlePointer.KnobColor = Color.ParseColor("#2BBFB8");
+needlePointer.Color = Color.Gray;
 
-            needlePointer.KnobRadius =20;
+_circularPointers.Add(needlePointer);
 
-            needlePointer.Type = NeedleType.Bar;
 
-            needlePointer.LengthFactor = 0.8 ;
+// adding range Pointer
 
-            needlePointer.Width = 3;
+RangePointer rangePointer = new RangePointer();
 
-            needlePointer.Color = Color.Gray;
+rangePointer.Value = 70;
 
-            _circularPointers.Add(needlePointer);
+rangePointer.Color = Color.ParseColor("#2BBFB8");
 
+rangePointer.Width = 10;
 
+_circularPointers.Add(rangePointer);
 
-            // adding range Pointer
 
-            RangePointer rangePointer = new RangePointer();
+circularScale.CircularPointers = _circularPointers;
 
-            rangePointer.Value = 70;
+_circularScales.Add(circularScale);
 
-            rangePointer.Color = Color.ParseColor("#2BBFB8");
+circularGauge.CircularScales = _circularScales;
 
-            rangePointer.Width = 10;
 
-            _circularPointers.Add(rangePointer);
+//adding header
 
+Header circularGaugeHeader = new Header();
 
+circularGaugeHeader.Text = "Speedometer";
 
-            circularScale.CircularPointers = _circularPointers;
+circularGaugeHeader.TextColor = Color.Gray;
 
-            _circularScales.Add(circularScale);
+circularGaugeHeader.Position = new PointF((float) 0.4, (float) 0.7);
 
-            circularGauge.CircularScales =_circularScales;
+circularGaugeHeader.TextSize = 20;
 
+_gaugeHeaders.Add(circularGaugeHeader);
 
+circularGauge.Headers = _gaugeHeaders;
 
-            //adding header
-
-            Header circularGaugeHeader = new Header();
-
-            circularGaugeHeader.Text = "Speedometer";
-
-            circularGaugeHeader.TextColor = Color.Gray;
-
-            circularGaugeHeader.Position = new PointF((float)0.4, (float)0.7);         
-
-            circularGaugeHeader.TextSize = 20;
-
-            _gaugeHeaders.Add(circularGaugeHeader);
-
-            circularGauge.Headers = _gaugeHeaders;
-
-            SetContentView(circularGauge); 
-
- {% endhighlight %}
+SetContentView(circularGauge);  
+  
+{% endhighlight %}
 
             
 
 The following screenshot illustrates the output of the above code example.
 
-![](Createyour-firstCircularGauge-in-XamarinAndroid_images/Createyour-firstCircularGauge-in-XamarinAndroid_img6.png)
+![](Createyour-firstCircularGauge-in-XamarinAndroid_images/img6.png)
 
 
 ## Create your first Circular Gauge in Xamarin.Forms
 
 This section provides a quick overview for working with Essential Gauge for Xamarin.Forms and takes you on a walk-through along the entire process of creating a real world gauge.
 
-You can also download the entire source code of this demo from the following link: [http://files2.syncfusion.com/Installs/v12.2.0.40/Samples/Xamarin/Gauge_GettingStarted.zip]([http://files2.syncfusion.com/Installs/v12.2.0.40/Samples/Xamarin/Gauge_GettingStarted.zip])
+You can also download the entire source code of this demo from the following link: [http://files2.syncfusion.com/Installs/v12.2.0.40/Samples/Xamarin/Gauge_GettingStarted.zip](http://files2.syncfusion.com/Installs/v12.2.0.40/Samples/Xamarin/Gauge_GettingStarted.zip)
 
 ### Reference Essential Studio Components in your solution
 
@@ -484,7 +464,7 @@ XForms\Syncfusion. SfGauge.XForms.dll
 
 #### Android project
 
- Android\Syncfusion. SfGauge.Andriod.dll
+Android\Syncfusion. SfGauge.Andriod.dll
 
 Android\Syncfusion. SfGauge. XForms.Andriod.dll 
 
@@ -508,20 +488,18 @@ Currently an additional step is required for Windows Phone and iOS projects. You
 Create an instance of the SfGaugeRenderer in MainPage constructor in Windows Phone project as follows.
 
 {% highlight c# %}
+
+public MainPage()
+
+{
+
+	new SfGaugeRenderer();
+
+	...
+
+}    
  
-   
-
-    public MainPage()
-
-       	 {
-
-           		 new SfGaugeRenderer ();
-
-        		    ...    
-
-     	}
-
- {% endhighlight %}
+{% endhighlight %}
 
   	 
 
@@ -530,20 +508,18 @@ Create an instance of the SfGaugeRenderer in FinishedLaunching overridden method
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% highlight c# %}
- 
-   
 
-    {
+{
 
-         		  ...
+	...
 
-         		  new SfGaugeRenderer ();
+	new SfGaugeRenderer();
 
-        		   ...
+	...
 
-       	 }	
+}	
 
- {% endhighlight %}
+{% endhighlight %}
 
         	
 
@@ -554,34 +530,31 @@ The gauge control is configured entirely in C# code or using XAML markup.
 Create an instance of SfCircularGauge.
 
 {% highlight c# %}
- 
-  
 
+SfCircularGauge circularGauge = new SfCircularGauge();
 
-
-    SfCircularGauge circularGauge = new SfCircularGauge();
-
- {% endhighlight %}
+{% endhighlight %}
 
 
 
 {% highlight xml %}
- 
-   
 
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"xmlns:gauge="clr-namespace:Syncfusion.SfGauge.XForms;assembly=Syncfusion.SfGauge.XForms"  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GaugeGettingStarted.Sample">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:gauge="clr-namespace:Syncfusion.SfGauge.XForms;
+	
+assembly=Syncfusion.SfGauge.XForms"  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	
+x:Class="GaugeGettingStarted.Sample">
 
 <ContentPage.Content>
 <gauge:SfCircularGauge>
 
-  </gauge:SfCircularGauge>
+</gauge:SfCircularGauge>
 
 </ContentPage.Content>
 </ContentPage>
 
- {% endhighlight %}
-
+{% endhighlight %}
 
 
 ### Insert a Scale
@@ -589,16 +562,10 @@ Create an instance of SfCircularGauge.
 The next step is to add one of more scales.
 
 {% highlight c# %}
- 
-   
 
 SfCircularGauge circularGauge = new SfCircularGauge();
 
-
-
 // to add a scale
-
-
 
 Scale scale = new Scale();
 
@@ -620,15 +587,13 @@ scale.MinorTicksPerInterval = 3;
 
 scales.Add(scale);
 
- {% endhighlight %}
+{% endhighlight %}
 
 
 
 
 
-{% highlight xml %}
- 
-    
+{% highlight xml %}  
 
 <gauge:SfCircularGauge>
 
@@ -636,17 +601,17 @@ scales.Add(scale);
 
        <gauge:Scale StartValue="0"
 
-                 EndValue="100" Interval="10"
+            EndValue="100" Interval="10"
 
-                 StartAngle="135" SweepAngle="230" 
+            StartAngle="135" SweepAngle="230" 
 
-                 RimColor="#FFFB0101" RimThickness="10"  />
+            RimColor="#FFFB0101" RimThickness="10"  />
 
     </gauge:SfCircularGauge.Scales>
 
-  </gauge:SfCircularGauge>
+</gauge:SfCircularGauge>
 
- {% endhighlight %}
+{% endhighlight %}
 
 
 
@@ -655,8 +620,6 @@ scales.Add(scale);
 You can improve the readability of data by including ranges that quickly show when values fall within specific ranges.
 
 {% highlight c# %}
- 
-   
 
 …
 
@@ -674,49 +637,44 @@ scale.Ranges.Add(range);
 
 …
 
- {% endhighlight %}
+{% endhighlight %}
 
 
 
-{% highlight xml %}
- 
-    
+{% highlight xml %}   
 
 <gauge:SfCircularGauge>
 
     <gauge:SfCircularGauge.Scales>
 
-      <gauge:Scale StartValue="0" EndValue="100"
+        <gauge:Scale StartValue="0" EndValue="100"
 
-                   Interval="10" StartAngle="135"
+            Interval="10" StartAngle="135"
 
-                   SweepAngle="230" RimColor="#FFFB0101"
+            SweepAngle="230" RimColor="#FFFB0101"
 
-                   RimThickness="10" >
+            RimThickness="10" >
 
         <gauge:Scale.Ranges>
 
-             <gauge:Range StartValue="0" EndValue="80" Color="#FF777777" Thickness="15" />    
+            <gauge:Range StartValue="0" EndValue="80" Color="#FF777777" Thickness="15" />    
 
         </gauge:Scale.Ranges>
 
-      </gauge:Scale>
+        </gauge:Scale>
 
     </gauge:SfCircularGauge.Scales>
 
-  </gauge:SfCircularGauge>
+</gauge:SfCircularGauge>
 
- {% endhighlight %}
-
+{% endhighlight %}
 
 
 ### Add a Needle Pointer
 
 You can create a needle pointer and associate it with a scale to display the current value.
 
-{% highlight c# %}
- 
-   
+{% highlight c# %} 
 
 …
 
@@ -738,41 +696,38 @@ scale.Pointers.Add(needlePointer);
 
 …
 
- {% endhighlight %}
+{% endhighlight %}
 
 
 
-{% highlight xml %}
- 
-    
+{% highlight xml %} 
 
-  <gauge:SfCircularGauge>
+<gauge:SfCircularGauge>
 
     <gauge:SfCircularGauge.Scales>
 
-      <gauge:Scale StartValue="0" EndValue="100"
+        <gauge:Scale StartValue="0" EndValue="100"
 
-                   Interval="10" StartAngle="135"
+            Interval="10" StartAngle="135"
 
-                   SweepAngle="230" RimColor="#FFFB0101"
+            SweepAngle="230" RimColor="#FFFB0101"
 
-                   RimThickness="10" >
+            RimThickness="10" >
 
         <gauge:Scale.Ranges>
 
-             <gauge:Range StartValue="0" EndValue="80" Color="#FF777777" Thickness="15" />    
+            <gauge:Range StartValue="0" EndValue="80" Color="#FF777777" Thickness="15" />    
 
         </gauge:Scale.Ranges>
 
 
-
         <gauge:Scale.Pointers>
 
-          <gauge:NeedlePointer Value="60" LengthFactor="0.8"
+        <gauge:NeedlePointer Value="60" LengthFactor="0.8"
 
-                               Color="White" Thickness="5" 
+            Color="White" Thickness="5" 
 
-                               KnobColor="White" KnobRadius="20"  />
+            KnobColor="White" KnobRadius="20"  />
 
         </gauge:Scale.Pointers>
 
@@ -780,10 +735,9 @@ scale.Pointers.Add(needlePointer);
 
     </gauge:SfCircularGauge.Scales>
 
-  </gauge:SfCircularGauge>
+</gauge:SfCircularGauge>
 
- {% endhighlight %}
-
+{% endhighlight %}
 
 
 ### Add a Range Pointer
@@ -792,8 +746,6 @@ A range pointer provides an alternative way of indicating the current value.
 
 {% highlight c# %}
  
-  
-
 ...
 
 RangePointer rangePointer = new RangePointer();
@@ -808,59 +760,52 @@ scale.Pointers.Add(rangePointer);
 
 ...
 
- {% endhighlight %}
+{% endhighlight %}
 
 
 
-{% highlight xml %}
- 
-   
+{% highlight xml %}  
 
 <gauge:SfCircularGauge>
 
     <gauge:SfCircularGauge.Scales>
 
-      <gauge:Scale StartValue="0" EndValue="100"
+    <gauge:Scale StartValue="0" EndValue="100"
 
-                   Interval="10" StartAngle="135"
+        Interval="10" StartAngle="135"
 
-                   SweepAngle="230" RimColor="#FFFB0101"
+        SweepAngle="230" RimColor="#FFFB0101"
 
-                   RimThickness="10" >
+        RimThickness="10" >
 
-        <gauge:Scale.Ranges>
+    <gauge:Scale.Ranges>
 
-             <gauge:Range StartValue="0" EndValue="80" Color="#FF777777" Thickness="15" />    
+        <gauge:Range StartValue="0" EndValue="80" Color="#FF777777" Thickness="15" />    
 
-        </gauge:Scale.Ranges>
+    </gauge:Scale.Ranges>
 
+    <gauge:Scale.Pointers>
 
+        <gauge:NeedlePointer Value="60" LengthFactor="0.8"
 
-        <gauge:Scale.Pointers>
+            Color="White" Thickness="5" 
 
-          <gauge:NeedlePointer Value="60" LengthFactor="0.8"
+            KnobColor="White" KnobRadius="20"  />
 
-                               Color="White" Thickness="5" 
+        <gauge:RangePointer Value="60" Color="White" 
 
-                               KnobColor="White" KnobRadius="20"  />
-
-
-
-          <gauge:RangePointer Value="60" Color="White" 
-
-                              Thickness="10" />
-
+            Thickness="10" />
 
 
         </gauge:Scale.Pointers>
 
-      </gauge:Scale>
+    </gauge:Scale>
 
     </gauge:SfCircularGauge.Scales>
 
   </gauge:SfCircularGauge>
 
- {% endhighlight %}
+{% endhighlight %}
 
 
 
@@ -869,13 +814,13 @@ scale.Pointers.Add(rangePointer);
 <table>
 <tr>
 <td>
-{{' ![](Create-your-first-Circular-Gauge-in-XamarinForms_images/Create-your-first-Circular-Gauge-in-XamarinForms_img2.png)' | markdownify }}
+{{' ![](Create-your-first-Circular-Gauge-in-XamarinForms_images/img2.png)' | markdownify }}
 </td><td>
-{{' ![](Create-your-first-Circular-Gauge-in-XamarinForms_images/Create-your-first-Circular-Gauge-in-XamarinForms_img3.png)' | markdownify }}
+{{' ![](Create-your-first-Circular-Gauge-in-XamarinForms_images/img3.png)' | markdownify }}
 </td><td>
-{{' ![](Create-your-first-Circular-Gauge-in-XamarinForms_images/Create-your-first-Circular-Gauge-in-XamarinForms_img4.png)' | markdownify }}
+{{' ![](Create-your-first-Circular-Gauge-in-XamarinForms_images/img4.png)' | markdownify }}
 </td><td>
-{{' ![](Create-your-first-Circular-Gauge-in-XamarinForms_images/Create-your-first-Circular-Gauge-in-XamarinForms_img5.png)' | markdownify }}
+{{' ![](Create-your-first-Circular-Gauge-in-XamarinForms_images/img5.png)' | markdownify }}
 </td></tr>
 </table>
 
@@ -885,7 +830,7 @@ Essential Gauge for Xamarin iOS allows you to visualize numeric values over a 
 
 This section provides a quick overview for working with Essential Gauge for Xamarin iOS. It walks through the entire process of creating a real world gauge.
 
-![](Create-your-first-Circular-Gauge-in-XamariniOS_images/Create-your-first-Circular-Gauge-in-XamariniOS_img1.png)
+![](Create-your-first-Circular-Gauge-in-XamariniOS_images/img1.png)
 
 
 ### Reference Essential Studio Components in your Solution
@@ -899,7 +844,7 @@ N> You can find assemblies in unzipped package location in Mac.
 
 You have to add the following assembly references to the Xamarin.iOS project.
 
- [iOS\Syncfusion.SfGauge.iOS.dll]
+[iOS\Syncfusion.SfGauge.iOS.dll]
 
 ### Initialize the CircularGauge
 
@@ -907,166 +852,152 @@ Create a CircularGauge object in the UIViewController and add CircularGauge 
 
 You can create a CircularGauge object by using the following code example.
 
-{% highlight c# %}
- 
-   
+{% highlight c# %}  
 
-    public override void ViewDidLoad ()
+public override void ViewDidLoad ()
 
 {
 
 base.ViewDidLoad ();
 
-            // creating new instance for circular Gauge  
+// creating new instance for circular Gauge  
 
-            SFCircularGauge _circularGauge = new SFCircularGauge();
+SFCircularGauge _circularGauge = new SFCircularGauge();
 
-            View.AddSubview(_circularGauge);
+View.AddSubview(_circularGauge);
 
 View.BackgroundColor = UIColor.Black;
 
 }
 
- {% endhighlight %}
-
+{% endhighlight %}
 
 
 ### Insert a Scale to the Gauge
 
 Next, add one of more scales.
 
-{% highlight c# %}
- 
-   
+{% highlight c# %}  
 
-    // creating new instance for circular Gauge  
+// creating new instance for circular Gauge  
 
-            SFCircularGauge _circularGauge = new SFCircularGauge();
+    SFCircularGauge _circularGauge = new SFCircularGauge();
 
+    //adding new Scale
 
+    NSMutableArray scales = new NSMutableArray();
 
-            //adding new Scale
+    SFCircularScale scale = new SFCircularScale();
 
-            NSMutableArray scales = new NSMutableArray();
+    scale.StartValue = 0;
 
-            SFCircularScale scale = new SFCircularScale();
+    scale.EndValue = 100;
 
-            scale.StartValue = 0;
+    scale.StartAngle = 40;
 
-            scale.EndValue = 100;
+    scale.SweepAngle = 320;
 
-            scale.StartAngle = 40;
+    scale.RimWidth = 6;
 
-            scale.SweepAngle = 320;
+    scale.Interval = 10;
 
-            scale.RimWidth = 6;
+    scale.ShowTicks = true;
 
-            scale.Interval = 10;
+    scale.RimColor = UIColor.FromRGBA(0.82f, 0.275f, 0.275f, 1f);/*#d14646*/
 
-            scale.ShowTicks = true;
+    scale.MinorTicksPerInterval = 0;
 
-            scale.RimColor = UIColor.FromRGBA(0.82f, 0.275f, 0.275f, 1f);/*#d14646*/
+    scale.LabelOffset = 0.1f;
 
-            scale.MinorTicksPerInterval = 0;
+    _circularGauge.Scales.Add(scale);
 
-            scale.LabelOffset = 0.1f;
+    View.AddSubview(_circularGauge);
 
-            _circularGauge.Scales.Add(scale);
-
-            View.AddSubview(_circularGauge);
-
-        	View.BackgroundColor = UIColor.Black;
+    View.BackgroundColor = UIColor.Black;
 
  {% endhighlight %}
 
             
 
- The following screenshot illustrates the output of the above code.
+The following screenshot illustrates the output of the above code.
 
-![](Create-your-first-Circular-Gauge-in-XamariniOS_images/Create-your-first-Circular-Gauge-in-XamariniOS_img3.png)
+![](Create-your-first-Circular-Gauge-in-XamariniOS_images/img3.png)
 
 
 ### Customize the ticks
 
 You can customize the major and minor ticks using the Tick settings as follows.
 
-{% highlight c# %}
- 
-   
+{% highlight c# %}  
 
-    // creating new instance for circular Gauge  
+// creating new instance for circular Gauge  
 
-            SFCircularGauge _circularGauge = new SFCircularGauge();
+    SFCircularGauge _circularGauge = new SFCircularGauge();
 
+//adding new Scale
 
+    NSMutableArray scales = new NSMutableArray();
 
-            //adding new Scale
+    SFCircularScale scale = new SFCircularScale();
 
-            NSMutableArray scales = new NSMutableArray();
+    scale.StartValue = 0;
 
-            SFCircularScale scale = new SFCircularScale();
+    scale.EndValue = 100;
 
-            scale.StartValue = 0;
+    scale.StartAngle = 40;
 
-            scale.EndValue = 100;
+    scale.SweepAngle = 320;
 
-            scale.StartAngle = 40;
+    scale.RimWidth = 6;
 
-            scale.SweepAngle = 320;
+    scale.Interval = 10;
 
-            scale.RimWidth = 6;
+    scale.ShowTicks = true;
 
-            scale.Interval = 10;
+    scale.RimColor = UIColor.FromRGBA(0.82f, 0.275f, 0.275f, 1f);/*#d14646*/
 
-            scale.ShowTicks = true;
+    scale.MinorTicksPerInterval = 0;
 
-            scale.RimColor = UIColor.FromRGBA(0.82f, 0.275f, 0.275f, 1f);/*#d14646*/
+    scale.LabelOffset = 0.1f;
 
-            scale.MinorTicksPerInterval = 0;
+    //adding major ticks
 
-            scale.LabelOffset = 0.1f;
+    SFTickSettings majorTickSettings = new SFTickSettings();
 
-            //adding major ticks
+    majorTickSettings.Color = UIColor.FromRGBA(0.267f, 0.267f, 0.267f, 1f); /*#444444*/;
 
-            SFTickSettings majorTickSettings = new SFTickSettings();
+    majorTickSettings.Size = 7;
 
-            majorTickSettings.Color = UIColor.FromRGBA(0.267f, 0.267f, 0.267f, 1f); /*#444444*/;
+    majorTickSettings.Offset = 0.041f;
 
-            majorTickSettings.Size = 7;
+    majorTickSettings.Width = 1.5f;
 
-            majorTickSettings.Offset = 0.041f;
+    scale.MajorTickSettings = majorTickSettings;
 
-            majorTickSettings.Width = 1.5f;
+    //adding minor ticks
 
-            scale.MajorTickSettings = majorTickSettings;
+    SFTickSettings minorTicksSettings = new SFTickSettings();
 
-            //adding minor ticks
+    minorTicksSettings.Color = UIColor.FromRGBA(0.267f, 0.267f, 0.267f, 1); /*#444444*/
 
-            SFTickSettings minorTicksSettings = new SFTickSettings();
+    minorTicksSettings.Size = 8;
 
-            minorTicksSettings.Color = UIColor.FromRGBA(0.267f, 0.267f, 0.267f, 1); /*#444444*/
+    minorTicksSettings.Offset = 0.5f;
 
-            minorTicksSettings.Size = 8;
+    scale.MinorTickSettings = minorTicksSettings;
 
-            minorTicksSettings.Offset = 0.5f;
+    _circularGauge.Scales.Add(scale);
 
-            scale.MinorTickSettings = minorTicksSettings;
+    View.AddSubview(_circularGauge);
 
-            _circularGauge.Scales.Add(scale);
+    View.BackgroundColor = UIColor.Black;
 
-            View.AddSubview(_circularGauge);
-
-       	View.BackgroundColor = UIColor.Black;
-
- {% endhighlight %}
-
-            
-
-
+{% endhighlight %}
+     
 
  The following screenshot illustrates the output of the above code.
 
-![](Create-your-first-Circular-Gauge-in-XamariniOS_images/Create-your-first-Circular-Gauge-in-XamariniOS_img4.png)
+![](Create-your-first-Circular-Gauge-in-XamariniOS_images/img4.png)
 
 
 
@@ -1074,113 +1005,109 @@ You can customize the major and minor ticks using the Tick settings as follows
 
 Now, add needle pointer and range pointer and associate it with a scale.
 
-{% highlight c# %}
- 
-   
+{% highlight c# %} 
 
-          // creating new instance for circular Gauge  
+// creating new instance for circular Gauge  
 
-            SFCircularGauge _circularGauge = new SFCircularGauge();
+    SFCircularGauge _circularGauge = new SFCircularGauge();
 
+    //adding new Scale
 
+    NSMutableArray scales = new NSMutableArray();
 
-            //adding new Scale
+    SFCircularScale scale = new SFCircularScale();
 
-            NSMutableArray scales = new NSMutableArray();
+    scale.StartValue = 0;
 
-            SFCircularScale scale = new SFCircularScale();
+    scale.EndValue = 100;
 
-            scale.StartValue = 0;
+    scale.StartAngle = 40;
 
-            scale.EndValue = 100;
+    scale.SweepAngle = 320;
 
-            scale.StartAngle = 40;
+    scale.RimWidth = 6;
 
-            scale.SweepAngle = 320;
+    scale.Interval = 10;
 
-            scale.RimWidth = 6;
+    scale.ShowTicks = true;
 
-            scale.Interval = 10;
+    scale.RimColor = UIColor.FromRGBA(0.82f, 0.275f, 0.275f, 1f);/*#d14646*/
 
-            scale.ShowTicks = true;
+    scale.MinorTicksPerInterval = 0;
 
-            scale.RimColor = UIColor.FromRGBA(0.82f, 0.275f, 0.275f, 1f);/*#d14646*/
+    scale.LabelOffset = 0.1f;
 
-            scale.MinorTicksPerInterval = 0;
+    //adding major ticks
 
-            scale.LabelOffset = 0.1f;
+    SFTickSettings majorTickSettings = new SFTickSettings();
 
-            //adding major ticks
+    majorTickSettings.Color = UIColor.FromRGBA(0.267f, 0.267f, 0.267f, 1f); /*#444444*/;
 
-            SFTickSettings majorTickSettings = new SFTickSettings();
+    majorTickSettings.Size = 7;
 
-            majorTickSettings.Color = UIColor.FromRGBA(0.267f, 0.267f, 0.267f, 1f); /*#444444*/;
+    majorTickSettings.Offset = 0.041f;
 
-            majorTickSettings.Size = 7;
+    majorTickSettings.Width = 1.5f;
 
-            majorTickSettings.Offset = 0.041f;
+    scale.MajorTickSettings = majorTickSettings;
 
-            majorTickSettings.Width = 1.5f;
+    //adding minor ticks
 
-            scale.MajorTickSettings = majorTickSettings;
+    SFTickSettings minorTicksSettings = new SFTickSettings();
 
-            //adding minor ticks
+    minorTicksSettings.Color = UIColor.FromRGBA(0.267f, 0.267f, 0.267f, 1); /*#444444*/
 
-            SFTickSettings minorTicksSettings = new SFTickSettings();
+    minorTicksSettings.Size = 8;
 
-            minorTicksSettings.Color = UIColor.FromRGBA(0.267f, 0.267f, 0.267f, 1); /*#444444*/
+    minorTicksSettings.Offset = 0.5f;
 
-            minorTicksSettings.Size = 8;
+    scale.MinorTickSettings = minorTicksSettings;
 
-            minorTicksSettings.Offset = 0.5f;
+    //adding needle pointer
 
-            scale.MinorTickSettings = minorTicksSettings;
+    SFNeedlePointer needlePointer = new SFNeedlePointer();
 
-            //adding needle pointer
+    needlePointer.Value = 70;
 
-            SFNeedlePointer needlePointer = new SFNeedlePointer();
+    needlePointer.KnobColor = UIColor.FromRGBA(0.169f, 0.749f, 0.722f, 1f); /*#2bbfb8*/;
 
-            needlePointer.Value = 70;
+    needlePointer.KnobRadius = 12;
 
-            needlePointer.KnobColor = UIColor.FromRGBA(0.169f, 0.749f, 0.722f, 1f); /*#2bbfb8*/;
+    needlePointer.PointerType = PointerType.Bar;
 
-            needlePointer.KnobRadius = 12;
+    needlePointer.Width = 2;
 
-            needlePointer.PointerType = PointerType.Bar;
+    needlePointer.LengthFactor = 0.7f;
 
-            needlePointer.Width = 2;
+    needlePointer.Color = UIColor.Gray;
 
-            needlePointer.LengthFactor = 0.7f;
+    scale.Pointers.Add(needlePointer);
 
-            needlePointer.Color = UIColor.Gray;
+    //adding range pointer
 
-            scale.Pointers.Add(needlePointer);
+    SFRangePointer rangePointer = new SFRangePointer();
 
-            //adding range pointer
+    rangePointer.Value = 70;
 
-            SFRangePointer rangePointer = new SFRangePointer();
+    rangePointer.Width = 6;
 
-            rangePointer.Value = 70;
+    rangePointer.Color = UIColor.FromRGBA(0.169f, 0.749f, 0.722f, 1); /*#2bbfb8*/;
 
-            rangePointer.Width = 6;
+    scale.Pointers.Add(rangePointer);
 
-            rangePointer.Color = UIColor.FromRGBA(0.169f, 0.749f, 0.722f, 1); /*#2bbfb8*/;
+    _circularGauge.Scales.Add(scale);
 
-            scale.Pointers.Add(rangePointer);
-
-            _circularGauge.Scales.Add(scale);
-
-            View.AddSubview(_circularGauge);
+    View.AddSubview(_circularGauge);
 
 View.BackgroundColor = UIColor.Black;
 
- {% endhighlight %}
+{% endhighlight %}
 
                       
 
- The following screenshot illustrates the output of the above code.
+The following screenshot illustrates the output of the above code.
 
-![](Create-your-first-Circular-Gauge-in-XamariniOS_images/Create-your-first-Circular-Gauge-in-XamariniOS_img5.png)
+![](Create-your-first-Circular-Gauge-in-XamariniOS_images/img5.png)
 
 
 
@@ -1189,118 +1116,118 @@ View.BackgroundColor = UIColor.Black;
 You can add custom labels in the gauge and position it.
 
 {% highlight c# %}
- 
-   
 
-     // creating new instance for circular Gauge  
+// creating new instance for circular Gauge  
 
-            SFCircularGauge _circularGauge = new SFCircularGauge();
+SFCircularGauge _circularGauge = new SFCircularGauge();
 
+//adding new Scale
 
+NSMutableArray scales = new NSMutableArray();
 
-            //adding new Scale
+SFCircularScale scale = new SFCircularScale();
 
-            NSMutableArray scales = new NSMutableArray();
+scale.StartValue = 0;
 
-            SFCircularScale scale = new SFCircularScale();
+scale.EndValue = 100;
 
-            scale.StartValue = 0;
+scale.StartAngle = 40;
 
-            scale.EndValue = 100;
+scale.SweepAngle = 320;
 
-            scale.StartAngle = 40;
+scale.RimWidth = 6;
 
-            scale.SweepAngle = 320;
+scale.Interval = 10;
 
-            scale.RimWidth = 6;
+scale.ShowTicks = true;
 
-            scale.Interval = 10;
+scale.RimColor = UIColor.FromRGBA(0.82f, 0.275f, 0.275f, 1f); /*#d14646*/
 
-            scale.ShowTicks = true;
+scale.MinorTicksPerInterval = 0;
 
-            scale.RimColor = UIColor.FromRGBA(0.82f, 0.275f, 0.275f, 1f);/*#d14646*/
+scale.LabelOffset = 0.1f;
 
-            scale.MinorTicksPerInterval = 0;
+//adding major ticks
 
-            scale.LabelOffset = 0.1f;
+SFTickSettings majorTickSettings = new SFTickSettings();
 
-            //adding major ticks
+majorTickSettings.Color = UIColor.FromRGBA(0.267f, 0.267f, 0.267f, 1f); /*#444444*/
+;
 
-            SFTickSettings majorTickSettings = new SFTickSettings();
+majorTickSettings.Size = 7;
 
-            majorTickSettings.Color = UIColor.FromRGBA(0.267f, 0.267f, 0.267f, 1f); /*#444444*/;
+majorTickSettings.Offset = 0.041f;
 
-            majorTickSettings.Size = 7;
+majorTickSettings.Width = 1.5f;
 
-            majorTickSettings.Offset = 0.041f;
+scale.MajorTickSettings = majorTickSettings;
 
-            majorTickSettings.Width = 1.5f;
+//adding minor ticks
 
-            scale.MajorTickSettings = majorTickSettings;
+SFTickSettings minorTicksSettings = new SFTickSettings();
 
-            //adding minor ticks
+minorTicksSettings.Color = UIColor.FromRGBA(0.267f, 0.267f, 0.267f, 1); /*#444444*/
 
-            SFTickSettings minorTicksSettings = new SFTickSettings();
+minorTicksSettings.Size = 8;
 
-            minorTicksSettings.Color = UIColor.FromRGBA(0.267f, 0.267f, 0.267f, 1); /*#444444*/
+minorTicksSettings.Offset = 0.5f;
 
-            minorTicksSettings.Size = 8;
+scale.MinorTickSettings = minorTicksSettings;
 
-            minorTicksSettings.Offset = 0.5f;
+//adding needle pointer
 
-            scale.MinorTickSettings = minorTicksSettings;
+SFNeedlePointer needlePointer = new SFNeedlePointer();
 
-            //adding needle pointer
+needlePointer.Value = 70;
 
-            SFNeedlePointer needlePointer = new SFNeedlePointer();
+needlePointer.KnobColor = UIColor.FromRGBA(0.169f, 0.749f, 0.722f, 1f); /*#2bbfb8*/
+;
 
-            needlePointer.Value = 70;
+needlePointer.KnobRadius = 12;
 
-            needlePointer.KnobColor = UIColor.FromRGBA(0.169f, 0.749f, 0.722f, 1f); /*#2bbfb8*/;
+needlePointer.PointerType = PointerType.Bar;
 
-            needlePointer.KnobRadius = 12;
+needlePointer.Width = 2;
 
-            needlePointer.PointerType = PointerType.Bar;
+needlePointer.LengthFactor = 0.7f;
 
-            needlePointer.Width = 2;
+needlePointer.Color = UIColor.Gray;
 
-            needlePointer.LengthFactor = 0.7f;
+scale.Pointers.Add(needlePointer);
 
-            needlePointer.Color = UIColor.Gray;
+//adding range pointer
 
-            scale.Pointers.Add(needlePointer);
+SFRangePointer rangePointer = new SFRangePointer();
 
-            //adding range pointer
+rangePointer.Value = 70;
 
-            SFRangePointer rangePointer = new SFRangePointer();
+rangePointer.Width = 6;
 
-            rangePointer.Value = 70;
+rangePointer.Color = UIColor.FromRGBA(0.169f, 0.749f, 0.722f, 1); /*#2bbfb8*/
+;
 
-            rangePointer.Width = 6;
+scale.Pointers.Add(rangePointer);
 
-            rangePointer.Color = UIColor.FromRGBA(0.169f, 0.749f, 0.722f, 1); /*#2bbfb8*/;
+_circularGauge.Scales.Add(scale);
 
-            scale.Pointers.Add(rangePointer);
+//adding  new header
 
-            _circularGauge.Scales.Add(scale);
+SFGaugeHeader header = new SFGaugeHeader();
 
-            //adding  new header
+header.Text = (NSString)
+"Speedometer";
 
-            SFGaugeHeader header = new SFGaugeHeader();
+header.TextColor = UIColor.Gray;
 
-            header.Text = (NSString)"Speedometer";
+header.Position = new CGPoint(140, 250);
 
-            header.TextColor = UIColor.Gray;
+_circularGauge.Headers.Add(header);
 
-            header.Position = new CGPoint(140, 250);
-
-            _circularGauge.Headers.Add(header);
-
-            View.AddSubview(_circularGauge);
+View.AddSubview(_circularGauge);
 
 View.BackgroundColor = UIColor.Black;
 
- {% endhighlight %}
+{% endhighlight %}
 
            
 
@@ -1308,7 +1235,7 @@ View.BackgroundColor = UIColor.Black;
 
  The following screenshot illustrates the output of the above code.
 
-![](Create-your-first-Circular-Gauge-in-XamariniOS_images/Create-your-first-Circular-Gauge-in-XamariniOS_img6.png)
+![](Create-your-first-Circular-Gauge-in-XamariniOS_images/img6.png)
 
 
 

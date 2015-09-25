@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | Essential NumericTextBox | Xamarin | Syncfusion
 description: getting started
 platform: xamarin
 control: Essential-NumericTextBox
@@ -41,7 +41,7 @@ android\Syncfusion.SfNumericTextBox.Andriod.dll
 
 
 
-![](Create-your-first-NumericTextBox-in-XamarinAndroid_images/Create-your-first-NumericTextBox-in-XamarinAndroid_img2.png)
+![](Create-your-first-NumericTextBox-in-XamarinAndroid_images/img2.png)
 
 
 
@@ -97,13 +97,13 @@ numtext.ParsingMode=Parsers.Decimal
 
 {% endhighlight %} 
 
-![](Create-your-first-NumericTextBox-in-XamarinAndroid_images/Create-your-first-NumericTextBox-in-XamarinAndroid_img3.png)
+![](Create-your-first-NumericTextBox-in-XamarinAndroid_images/img3.png)
 
 
 
 
 
-![](Create-your-first-NumericTextBox-in-XamarinAndroid_images/Create-your-first-NumericTextBox-in-XamarinAndroid_img4.png)
+![](Create-your-first-NumericTextBox-in-XamarinAndroid_images/img4.png)
 
 
 ## Create your first NumericTextBox in Xamarin.Forms
@@ -152,14 +152,13 @@ An additional step is required for Windows Phone and iOS projects. Create an
 {% highlight C# %}  
 
 public MainPage()
+{
 
-       	 {
+    new SfNumericTextBoxRenderer ();
 
-           		 new SfNumericTextBoxRenderer ();
+    ...    
 
-        		    ...    
-
-     	}
+}
 		
 {% endhighlight %} 
 
@@ -168,16 +167,15 @@ Create an instance of the SfNumericTextBoxRenderer in the FinishedLaunching over
 {% highlight C# %}
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
+{
 
-        	{
+    ...
 
-         		  ...
+    new SfNumericTextBoxRenderer ();
 
-         		  new SfNumericTextBoxRenderer ();
+    ...
 
-        		   ...
-
-       	 }
+}
 
 {% endhighlight %} 
 
@@ -200,23 +198,23 @@ using Syncfusion.XForms.SfNumericTextBox;
 …
 
 public class App : Application
-    {
-        public App()
-        {
-            MainPage = new NumericTextBoxPage ();
-        }
+{
 
-    }
+public App()
+{
+	MainPage = new NumericTextBoxPage ();
+}
+
+}
 
 public class NumericTextBoxPage : ContentPage
-
 {
-        SfNumericTextBox sfnumerictextbox;
-        public NumericTextBoxPage ()
-        {
-            sfnumerictextbox = new SfNumericTextBox();
 
-        }
+SfNumericTextBox sfnumerictextbox;
+public NumericTextBoxPage ()
+{        
+	sfnumerictextbox = new SfNumericTextBox();
+}
 
 }
 
@@ -224,17 +222,18 @@ public class NumericTextBoxPage : ContentPage
 
 {% highlight xml %} 
 
-
-
 Use this in App.CS source.
 
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" BackgroundColor="White" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="NumericTextBoxGettingStarted.NumericTextBoxPage" xmlns:syncfusion="clr-namespace:Syncfusion.SfNumericTextBox.XForms;assembly=Syncfusion.SfNumericTextBox.XForms">
-    <ContentPage.Content>
-            <syncfusion:SfNumericTextBox />
-    </ContentPage.Content>
-</ContentPage> </ContentPage.Content>
-</ContentPage>
+ <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" BackgroundColor="White" 
+   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="NumericTextBoxGettingStarted.NumericTextBoxPage"
+   xmlns:syncfusion="clr-namespace:Syncfusion.SfNumericTextBox.XForms;assembly=Syncfusion.SfNumericTextBox.XForms"> 
+	  <ContentPage.Content>
+			<syncfusion:SfNumericTextBox />
+	  </ContentPage.Content>
+ </ContentPage> 
+ </ContentPage.Content>
+ </ContentPage>
 
 {% endhighlight %}
 
@@ -244,31 +243,32 @@ Add the NumericTextBox properties in your application.
 
 {% highlight C# %} 
 
-
-
-
 SfNumericTextBox sfnumerictextbox = new SfNumericTextBox();
+
 sfnumerictextbox.Value= 1000;
+
 sfnumerictextbox.FormatString= “c”;
 
 sfnumerictextbox.AllowNull= true;
+
 sfnumerictextbox.MaximumNumberDecimalDigits= 2;
 
- {% endhighlight %} 
+{% endhighlight %} 
  
 {% highlight xml %} 
 
+<syncfusion:SfNumericTextBox HeightRequest="100"  Value="1000"  Orientation="Horizontal" 
+	
+	WidthRequest="200" FormatString=”C” AllowNull=”true” MaximumNumberDecimalDigits=”2”>
 
-
-<syncfusion:SfNumericTextBox HeightRequest="100"  Value="1000"  Orientation="Horizontal" WidthRequest="200" FormatString=”C” AllowNull=”true” MaximumNumberDecimalDigits=”2”>
-        </syncfusion:SfNumericTextBox> 
+</syncfusion:SfNumericTextBox> 
 
 {% endhighlight %} 
 
 The following screenshot shows the NumericTextBox in cross platforms.
 
 
-![](Create-your-first-NumericTextBox-in-XamarinForms_images/Create-your-first-NumericTextBox-in-XamarinForms_img2.png)
+![](Create-your-first-NumericTextBox-in-XamarinForms_images/img2.png)
 
 ## Create your first NumericTextBox in Xamarin.iOS
 
@@ -285,7 +285,7 @@ N> Assemblies are available in unzipped package location in Mac.
 
 Add the following assembly references to the iOS project.
 
- iOS\Syncfusion.SfNumericTextBox.iOS.dll
+iOS\Syncfusion.SfNumericTextBox.iOS.dll
 
 ### Creating a NumericTextBox
 
@@ -297,11 +297,7 @@ Create an instance for the SfNumericTextBox in the constructor and set that SfNu
 
 {% highlight C# %}  
 
-
-
-
- public override void ViewDidLoad ()
-
+public override void ViewDidLoad ()
 {
 
   base.ViewDidLoad   ();
@@ -320,7 +316,6 @@ You can set the initial value and numberformat for the NumericTextBox by using t
 
 {% highlight C# %}  
 
-
 numericTextBox1.Value = 1000;
 
 numericTextBox1.FormatString=”n”;
@@ -332,8 +327,7 @@ numericTextBox1.MaximumNumberDecimalDigits = 2;
 The above code example illustrates the value and formatstring of the NumericTextBox. The MaximumNumberDecimalDigits can be specified to determine the digits after the decimal.
 
 
-
-![](Create-your-first-NumericTextBox-in-XamariniOS_images/Create-your-first-NumericTextBox-in-XamariniOS_img2.png)
+![](Create-your-first-NumericTextBox-in-XamariniOS_images/img2.png)
 
 
 
@@ -344,15 +338,11 @@ Value of the NumericTextBox gets parsed based on the ParsingMode property. Parsi
 
 {% highlight C# %} 
 
-
-
-
 numericTextBox1.ParserMode = SFNumericTextBoxParsers.Decimal;
 
- {% endhighlight %} 
+{% endhighlight %} 
 
-![](Create-your-first-NumericTextBox-in-XamariniOS_images/Create-your-first-NumericTextBox-in-XamariniOS_img3.png)
+![](Create-your-first-NumericTextBox-in-XamariniOS_images/img3.png)
 
 
-
-![](Create-your-first-NumericTextBox-in-XamariniOS_images/Create-your-first-NumericTextBox-in-XamariniOS_img4.png)
+![](Create-your-first-NumericTextBox-in-XamariniOS_images/img4.png)

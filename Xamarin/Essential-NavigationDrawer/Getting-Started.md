@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | Essential NavigationDrawer | Xamarin | Syncfusion
 description: getting started
 platform: xamarin
 control: Essential-NavigationDrawer
@@ -28,9 +28,7 @@ N> Assemblies are available in unzipped package location in Mac.
 
 Add the following assembly references to the Xamarin project,
 
- 1.android\Syncfusion.SfNavigationDrawer.Andriod.dll
-
-
+1.android\Syncfusion.SfNavigationDrawer.Andriod.dll
 
 
 
@@ -45,13 +43,12 @@ Create an instance for the NavigationDrawer in the constructor and set that Navi
 
 {% highlight C# %}  
 
-
-
 SfNavigationDrawer navigationDrawer=new SfNavigationDrawer(this);
 
 SetContentView(navigationDrawer);
 
 {% endhighlight %} 
+
 
 ### Configure the NavigationDrawer
 
@@ -59,18 +56,17 @@ You can set position and animations for NavigationDrawer by using the position a
 
 {% highlight C# %}  
 
-
-
 navigationDrawer.Position = Position.Left;
 
 navigationDrawer.Transition = Transition.SlideOnTop;
 
 {% endhighlight %} 
 
+
 The above code example illustrates setting of position and animations for NavigationDrawer by using the position and 
 Transition properties in the NavigationDrawer.
 
-![](Create-your-first-NavigationDrawer-in-XamarinAndro_images/Create-your-first-NavigationDrawer-in-XamarinAndro_img2.png)
+![](Create-your-first-NavigationDrawer-in-XamarinAndro_images/img2.png)
 
 ## Create your first NavigationDrawer in Xamarin.iOS
 
@@ -89,7 +85,7 @@ N> Assemblies are available in unzipped package location in Mac.
 
 Add the following assembly references to the iOS project.
 
- iOS\Syncfusion.SfNavigationDrawer.iOS.dll
+iOS\Syncfusion.SfNavigationDrawer.iOS.dll
 
 
 
@@ -101,13 +97,11 @@ Create an instance for the SfNavigationDrawer in the constructor and set that Sf
 
 {% highlight C# %}  
 
-
-
 public override void ViewDidLoad ()
 
 {
 
-  base.ViewDidLoad ();
+base.ViewDidLoad ();
 
 SFNavigationDrawer navigationDrawer1;
 
@@ -123,8 +117,6 @@ You can set position and animations for NavigationDrawer by using the position a
 
 {% highlight C# %}  
 
-
-
 navigationDrawer.Position = SFNavigationDrawerPosition.SFNavigationDrawerPositionLeft;
 
 navigationDrawer.Transition = SFNavigationDrawerTransition.SFNavigationDrawerTransitionSlideOnTop; 
@@ -133,7 +125,7 @@ navigationDrawer.Transition = SFNavigationDrawerTransition.SFNavigationDrawerTra
 
 The above code example illustrates setting of position and animations for NavigationDrawer by using the position and Transition properties in the NavigationDrawer.
 
-![](Create-your-first-NavigationDrawer-in-XamariniOS_images/Create-your-first-NavigationDrawer-in-XamariniOS_img2.png)
+![](Create-your-first-NavigationDrawer-in-XamariniOS_images/img2.png)
 
 
 

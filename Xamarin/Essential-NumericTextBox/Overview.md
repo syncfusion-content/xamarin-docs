@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | Essential NumericTextBox | Xamarin | Syncfusion
 description: overview
 platform: xamarin
 control: Essential-NumericTextBox
@@ -11,7 +11,7 @@ documentation: ug
 
 NumericTextBox is an advanced version of the Entry control that restricts input to numeric values. The control respects the UI culture and can be configured to display different formats like currency format, scientific format, etc.
 
-![](Overview_images/Overview_img1.png)
+![](Overview_images/img1.png)
 
 
 

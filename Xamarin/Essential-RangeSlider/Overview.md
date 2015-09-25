@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | Essential RangeSlider | Xamarin | Syncfusion
 description: overview
 platform: xamarin
 control: Essential-RangeSlider
@@ -11,7 +11,7 @@ documentation: ug
 
 RangeSlider control allows you to select the range of value within the specified minimum and maximum limit. You can select the range by moving the thumb control along a track.
 
-![](Overview_images/Overview_img1.png)
+![](Overview_images/img1.png)
 
 
 

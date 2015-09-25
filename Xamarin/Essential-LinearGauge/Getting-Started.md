@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | Essential LinearGauge | Xamarin | Syncfusion
 description: getting started
 platform: xamarin
 control: Essential-LinearGauge
@@ -48,17 +48,16 @@ N> Essential Linear Gauge for Xamarin is compatible with Xamarin Forms 1.2.2.0.
 An additional step is required for Windows Phone and iOS projects. You are required to create an instance of the Linear Gauge custom renderer as follows.
 
 Create an instance of the SfLinearGaugeRenderer in MainPage constructor in Windows Phone project as follows.
+
 {% highlight c# %}
 
 public MainPage()
+{
 
-       	 {
-
-           		 new SfLinearGaugeRenderer ();
-
+    new SfLinearGaugeRenderer ();
         		    ...    
+}
 
-     	}
 {% endhighlight %}
 
 
@@ -67,16 +66,15 @@ Create an instance of the SfLinearGaugeRenderer in FinishedLaunching overridden 
 {% highlight c# %}
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
+{
+    ...
 
-        	{
+    new SfLinearGaugeRenderer ();
 
-         		  ...
+    ...
 
-         		  new SfLinearGaugeRenderer ();
+}
 
-        		   ...
-
-       	 }
 {% endhighlight %}
 
 ## Add and configure the gauge
@@ -87,7 +85,6 @@ Create an instance of SfLinearGauge.
 
 {% highlight c# %}
 
-
 // Update App.cs source this file.
 
 using Syncfusion.XForms.SfGauge;
@@ -96,27 +93,20 @@ using Syncfusion.XForms.SfGauge;
 
 …
 
-
-
 public static Page GetMainPage()
+{
+
+SfLinearGauge circularGauge = new SfLinearGauge();
+
+return new ContentPage
 
 {
 
-                  SfLinearGauge circularGauge = new SfLinearGauge();
+    Content = linearGauge,
 
-       return new ContentPage
-
-       {
-
-       	Content = linearGauge,
-
-       };
+};
 
 }
-{% endhighlight %}
-
-{% highlight xml %}
-
 
 // Use the following in App.CS source.
 
@@ -128,25 +118,27 @@ public static Page GetMainPage()
 
 //}
 
+{% endhighlight %}
+
+{% highlight xml %}
+
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"xmlns:local="clr-namespace:Syncfusion.XForms.SfGauge;assembly=Syncfusion.XForms.SfGauge "  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="LinearGaugeGettingStarted.Sample">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:local="clr-namespace:Syncfusion.XForms.SfGauge;
+	assembly=Syncfusion.XForms.SfGauge "  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="LinearGaugeGettingStarted.Sample">
 
 <ContentPage.Content>
-<local:SfLinearGauge>
-
-  </local:SfLinearGauge>
-
+<local:SfLinearGauge> 
+	</local:SfLinearGauge>
 </ContentPage.Content>
 </ContentPage>
+
 {% endhighlight %}
 
 ## Insert a Scale
 
 Add one or more scales to Linear Gauge.
 
-
 {% highlight c# %}
-
 
 linearGauge = new SfLinearGauge();
 
@@ -164,52 +156,53 @@ scale.MinimumValue= 0;
 
 scale.MaximumValue =100;
 
-            scale.Interval = 20;
+scale.Interval = 20;
 
 scale.ScaleBarLength = 100;
 
-            scale.LabelPostfix = "%";
+scale.LabelPostfix = "%";
 
 scale.ScaleBarColor = Color.FromRgb(237,237,237);
 
-			scale.LabelColor = Color.FromRgb(84,84,84); 
+scale.LabelColor = Color.FromRgb(84,84,84); 
 
-            scale.MinorTicksPerInterval = 1;
+scale.MinorTicksPerInterval = 1;
 
 scale.ScaleBarSize = 20;
 
-                     scales.Add(scale);
+scales.Add(scale);
 
 linearGauge.Scales = scales;
+
 {% endhighlight %}
 
 {% highlight xml %}
 
-
 <gauge:SflinearGauge>
 
-    <gauge.SfLinearGauge.Scales>
+<gauge.SfLinearGauge.Scales>
 
-       <gauge.Scale MinimumValue="0"
+<gauge.Scale MinimumValue="0"
 
-                 MaximumValue="100" ScaleBarLength="100"
+    MaximumValue="100" ScaleBarLength="100"
 
-                 LablePostfix="%" ScaleBarColor="230" 
+    LablePostfix="%" ScaleBarColor="230" 
 
-                 ScaleBarColor="#EDEDED" LableColor="#545454" 
+    ScaleBarColor="#EDEDED" LableColor="#545454" 
 
-                 MinorTicksPerInterval="1" ScaleBarSize="20"  />
+    MinorTicksPerInterval="1" ScaleBarSize="20"  />
 
-    </gauge.SfLinearGauge.Scales>
+</gauge.SfLinearGauge.Scales>
 
-  </gauge:SfLinearGauge>
+</gauge:SfLinearGauge>
+
 {% endhighlight %}
+
 ## Specify Range
 
 You can improve the readability of data by including ranges that quickly display when values fall within specific ranges.
 
 {% highlight c# %}
-
 
 …
 
@@ -232,43 +225,45 @@ range.Offset = -0.3;
 scale.Ranges.Add(range);
 
 …
+
 {% endhighlight %}
+
 
 {% highlight xml %}
 
-
 <local:SfLinearGauge>
 
-    <local:SfLinearGauge:Scales>
+<local:SfLinearGauge:Scales>
 
-      <local:Scale MinimumValue="0"
+<local:Scale MinimumValue="0"
 
-                 MaximumValue="100" ScaleBarLength="100"
+    MaximumValue="100" ScaleBarLength="100"
 
-                 LablePostfix="%" ScaleBarColor="230" 
+    LablePostfix="%" ScaleBarColor="230" 
 
-                 ScaleBarColor="#EDEDED" LableColor="#545454" 
+    ScaleBarColor="#EDEDED" LableColor="#545454" 
 
-                 MinorTicksPerInterval="1" ScaleBarSize="20"  >
+    MinorTicksPerInterval="1" ScaleBarSize="20"  >
 
-        <local:Scale.Ranges>
+<local:Scale.Ranges>
 
-             <local:Range StartValue="0" EndValue="80" Color="#3288C6" Offset="-0.3" />    
+    <local:Range StartValue="0" EndValue="80" Color="#3288C6" Offset="-0.3" />    
 
-        </local:Scale.Ranges>
+</local:Scale.Ranges>
 
-      </local:Scale>
+</local:Scale>
 
-    </local:SfLinearGauge:Scales>
+</local:SfLinearGauge:Scales>
 
-  </local:SfLinearGauge>
+</local:SfLinearGauge>
+
 {% endhighlight %}
   
 ## Add a Pointer
 
 Create a Pointer and associate it with a scale.
-{% highlight c# %}
 
+{% highlight c# %}
 
 …
 
@@ -285,60 +280,59 @@ symbolPointer.Offset = 0.3;
 symbolPointer.Color = Color.FromRgb(65,77,79);
 
 
-
 //BarPointer
 
 BarPointer rangePointer = new BarPointer();
 
-            rangePointer.Value = 50;
+rangePointer.Value = 50;
 
 rangePointer.Color =Color.FromRgb(206,69,69);
 
 pointers.Add(symbolPointer);
 
-            pointers.Add(rangePointer);
+pointers.Add(rangePointer);
 
 …
+
 {% endhighlight %}
+
 
 {% highlight xml %}
 
+<local:SfLinearGauge>
 
-  <local:SfLinearGauge>
+<local:SflinearGauge:Scales>
 
-    <local:SflinearGauge:Scales>
+<local:Scale MinimumValue="0"
 
-      <local:Scale MinimumValue="0"
+    MaximumValue="100" ScaleBarLength="100"
 
-                 MaximumValue="100" ScaleBarLength="100"
+    LablePostfix="%" ScaleBarColor="230" 
 
-                 LablePostfix="%" ScaleBarColor="230" 
+    ScaleBarColor="#EDEDED" LableColor="#545454" 
 
-                 ScaleBarColor="#EDEDED" LableColor="#545454" 
+    MinorTicksPerInterval="1" ScaleBarSize="20" >
 
-                 MinorTicksPerInterval="1" ScaleBarSize="20" >
+<local:Scale.Ranges>
 
-        <local:Scale.Ranges>
+    <local:Range StartValue="0" EndValue="80" Color="#3288C6" Offset="-0.3" />    
 
-             <local:Range StartValue="0" EndValue="80" Color="#3288C6" Offset="-0.3" />    
+</local:Scale.Ranges>
 
-        </local:Scale.Ranges>
+<local:Scale.Pointers>
 
-        <local:Scale.Pointers>
+    <local:SymbolPointer Value="50" Color="Red" Offset="0.3" />                             
 
-          <local:SymbolPointer Value="50" Color="Red" 
+    <local:BarPointer Value="50" Color="White"/>
 
-                                Offset="0.3" />
+</local:Scale.Pointers>
 
-          <local:BarPointer Value="50" Color="White"/>
+</local:Scale>
 
-        </local:Scale.Pointers>
+</local:SfLinearGauge:Scales>
 
-      </local:Scale>
+</local:SfLinearGauge >
 
-    </local:SfLinearGauge:Scales>
-
-  </local:SfLinearGauge >
 {% endhighlight %}
 
 ## Add a Minor and Major Ticksettings
@@ -352,15 +346,15 @@ You can customize a minor and major tick using Ticksettings that provides a way 
 
 //Minor Ticks setting
 
-			LinearTickSettings minor = new LinearTickSettings (); 
+LinearTickSettings minor = new LinearTickSettings (); 
 
-                                                  minor.Length =10;
+minor.Length =10;
 
 minor.Color = Color.FromRgb(75,75,75);
 
 minor.Thickness =1;
 
-                                                  scale.MinorTickSettings = minor;
+scale.MinorTickSettings = minor;
 
 //Major Ticks setting
 
@@ -372,71 +366,60 @@ major.Color = Color.FromRgb(75,75,75);
 
 major.Thickness = 1;
 
-                                             scale.MajorTickSettings = major;
-
-
+scale.MajorTickSettings = major;
 
 ...
 {% endhighlight %}
 
-{% highlight xml %}
 
+{% highlight xml %}
 
 <local:SfLinearGauge>
 
-    <local:SfLinearGauge:Scales>
+<local:SfLinearGauge:Scales>
 
-      <local:Scale MinimumValue="0"
+<local:Scale MinimumValue="0"
 
-                 MaximumValue="100" ScaleBarLength="100"
+    MaximumValue="100" ScaleBarLength="100"
 
-                 LablePostfix="%" ScaleBarColor="230" 
+    LablePostfix="%" ScaleBarColor="230" 
 
-                 ScaleBarColor="#EDEDED" LableColor="#545454" 
+    ScaleBarColor="#EDEDED" LableColor="#545454" 
 
-                 MinorTicksPerInterval="1" ScaleBarSize="20" >
+    MinorTicksPerInterval="1" ScaleBarSize="20" >
 
-        <local:Scale.Ranges>
+<local:Scale.Ranges>
 
-             <local:Range StartValue="0" EndValue="80" Color="#3288C6" Offset="-0.3" />    
+    <local:Range StartValue="0" EndValue="80" Color="#3288C6" Offset="-0.3" />    
 
-        </local:Scale.Ranges>
+</local:Scale.Ranges>
 
+<local:Scale.Pointers>
 
+<local:SymbolPointer Value="50" Color="Red"  Offset="0.3" />                             
 
-        <local:Scale.Pointers>
+<local:BarPointer Value="50" Color="White"/>
 
-          <local:SymbolPointer Value="50" Color="Red" 
+</local:Scale.Pointers>
 
-                                Offset="0.3" />
+<local:Scale.MinorTickSettings >
 
-          <local:BarPointer Value="50" Color="White"/>
+<local:LinearTickSettings Length="10" Color="#4B4B4B"  Tickness="1" />
+                             
+</local:Scale.MinorTickSettings >
 
-        </local:Scale.Pointers>
+<local:Scale.MajorTickSettings >
 
-        <local:Scale.MinorTickSettings >
+<local:LinearTickSettings Length="10" Color="#4B4B4B"  Tickness="1" />
+                              
+</local:Scale.MajorTickSettings >
 
-          <local:LinearTickSettings Length="10" Color="#4B4B4B" 
+</local:Scale>
 
-                                Tickness="1" />
+</local:SfLinearGauge:Scales>
 
-        </local:Scale.MinorTickSettings >
+</local:SfLinearGauge>
 
-        <local:Scale.MajorTickSettings >
-
-          <local:LinearTickSettings Length="10" Color="#4B4B4B" 
-
-                                Tickness="1" />
-
-        </local:Scale.MajorTickSettings >
-
-
-
-      </local:Scale>
-
-    </local:SfLinearGauge:Scales>
-
-  </local:SfLinearGauge>
 {% endhighlight %}
 
 
@@ -446,7 +429,7 @@ major.Thickness = 1;
 
 This section encompasses how to create the Linear Gauge for your business requirements in mobility that is required to be displayed in the Xamarin Android. You can also pass the required data to the default Linear Gauge and customize it according to your requirements. The following example demonstrates how to create a Linear Gauge representing the Memory usage.
 
-![](Create-your-first-Linear-Gauge-in-XamarinAndroid_images/Create-your-first-Linear-Gauge-in-XamarinAndroid_img1.png)
+![](Create-your-first-Linear-Gauge-in-XamarinAndroid_images/img1.png)
 
 
 
@@ -486,18 +469,19 @@ linearGauge.SetOrientation(SfLinearGauge.Orientation.Vertical);
 To add the scale for the Linear Gauge, the memory usage is displayed in percentage. Before adding the scale to the Linear Gauge, create your own values to the scale. Assign the scale to the Linear Gauge as follows.
 
 {% highlight c# %}
-    LinearScale scale = new LinearScale();
 
-    outerScale.Minimum = 0;
-            scale.Maximum = 100;
-     scale.ScaleBarSize = 50;
-     scale.ScaleBarLength = 100;
-     scale.Interval = 20;
-     scale.ScaleBarColor = Color.ParseColor("#FAECEC");
-     scale.MinorTicksPerInterval = 2;
-     scale.LabelFontSize = 17;
-     scale.LabelColor = Color.ParseColor("#545454");
-     scale.LabelPostfix = "%";
+LinearScale scale = new LinearScale();
+outerScale.Minimum = 0;
+scale.Maximum = 100;
+scale.ScaleBarSize = 50;
+scale.ScaleBarLength = 100;
+scale.Interval = 20;
+scale.ScaleBarColor = Color.ParseColor("#FAECEC");
+scale.MinorTicksPerInterval = 2;
+scale.LabelFontSize = 17;
+scale.LabelColor = Color.ParseColor("#545454");
+scale.LabelPostfix = "%";
+
 {% endhighlight %}
 
 The above code example illustrates the minimum and maximum values for the scale and assigns the size and length of the scale. The interval denotes the gap between the Main ticks that is represented in the scale. Likewise the MinorTicksPerInterval denotes the number of ticks that needs to be in between the MajorTicks.
@@ -507,7 +491,8 @@ The above code example illustrates the minimum and maximum values for the scale 
 There are two kinds of Ticks. They are major ticks and minor ticks. Major ticks are the primary scale indicators and Minor ticks are the secondary scale indicators that fall between the major ticks. The major ticks and minor ticks are customized and assigned to the scale by using the following code example.
 
 {% highlight c# %}
- //Adding major ticks
+
+//Adding major ticks
 
 LinearTickSettings scale_majorTicksSettings = new LinearTickSettings();
 scale_majorTicksSettings.Color = Color.ParseColor("#AFAFAF");
@@ -526,6 +511,7 @@ scale_minorTicksSettings.Length = 10;
 scale_minorTicksSettings.StrokeWidth = 5;
 Scale_minorTicksSettings.Offset = 0;
 scale.MinorTickSettings = scale_minorTicksSettings;
+
 {% endhighlight %}
 
 The above code example displays the major ticks and minor ticks for the scale assigned to the Linear Gauge.
@@ -535,9 +521,10 @@ The above code example displays the major ticks and minor ticks for the scal
 Pointer is a key element of the linear scale that points a value or measure on that scale. A linear scale can have one or more pointers that can be used to measure different values for different criteria. Each pointer has a Value property that specifies the current value of the linear scale based upon its measurement.
 
 There are two types of Pointers. They are BarPointer and SymbolPointer. Refer to the following code example to add theSymbolPointers and BarPointer to the scale.
+
 {% highlight c# %}
 
-_//Adding Symbol Pointer_
+//Adding Symbol Pointer
 
 SymbolPointer outerScale_needlePointer = new SymbolPointer();
 outerScale_needlePointer.Value = pointervalue;
@@ -546,20 +533,23 @@ outerScale_needlePointer.Offset = 0.3f;
 outerScale_needlePointer.Color = Color.ParseColor("#414D4F");
 pointers.Add(outerScale_needlePointer);
 
-_//Adding Bar Pointer_
+//Adding Bar Pointer
 BarPointer rangePointer = new BarPointer();
 rangePointer.Value = barvalue;
-rangePointer.Color = Color.ParseColor("#CE4545");_//_
+rangePointer.Color = Color.ParseColor("#CE4545");
 rangePointer.StrokeWidth = 20;
 pointers.Add(rangePointer); 
+
 {% endhighlight %}
 
 The pointers are displayed at the defined value in the scale with the respective color and width. You are required to add this pointer to a collection and assign it to the scale.
 
 {% highlight c# %}
-   //Adding the pointers to the linear gauge
+
+//Adding the pointers to the linear gauge
 
 scale.Pointers = pointers; 
+
 {% endhighlight %}
 
 
@@ -568,61 +558,83 @@ scale.Pointers = pointers;
 Scale contains one or more Ranges. Range displays the start and end values of the inner divisions within the linear scale’s whole range. Each range displays different zones or regions of the same metrics: high, low and average temperature range.
 
 {% highlight c# %}
-//Adding ranges
-            LinearRange lowerRange = new LinearRange();
-            lowerRange.StartWidth = 30;
-            lowerRange.EndWidth = 30;
-            lowerRange.Color = Color.ParseColor("#67d6db");
-            lowerRange.StartValue = 0;
-            lowerRange.EndValue = 50;
-            lowerRange.Offset = -.3;
-            ranges.Add(lowerRange);
 
-            LinearRange higherRange = new LinearRange();
-            higherRange.StartWidth = 30;
-            higherRange.EndWidth = 30;
-            higherRange.Color = Color.ParseColor("#32B8C6");
-            higherRange.StartValue = 50;
-            higherRange.EndValue = 100;
-            higherRange.Offset = -.3;
-            ranges.Add(higherRange);
+//Adding ranges
+ 
+LinearRange lowerRange = new LinearRange();
+
+lowerRange.StartWidth = 30;
+
+lowerRange.EndWidth = 30;
+
+lowerRange.Color = Color.ParseColor("#67d6db");
+
+lowerRange.StartValue = 0;
+
+lowerRange.EndValue = 50;
+
+lowerRange.Offset = -.3;
+
+ranges.Add(lowerRange);
+
+
+LinearRange higherRange = new LinearRange();
+
+higherRange.StartWidth = 30;
+
+higherRange.EndWidth = 30;
+
+higherRange.Color = Color.ParseColor("#32B8C6");
+
+higherRange.StartValue = 50;
+
+higherRange.EndValue = 100;
+            
+higherRange.Offset = -.3;
+            
+ranges.Add(higherRange);
 
 {% endhighlight %}
 
 The above code example explains how to add multiple range to a scale. Add this ranges to a collection and assign it to the scale. Refer to the following code example.
 
 {% highlight c# %}
-  //Adding the range to a scale
 
-  ObservableCollection<LinearScale> scales = new ObservableCollection<LinearScale>();
-            ObservableCollection<LinearPointer> pointers = new ObservableCollection<LinearPointer>();
-            ObservableCollection<LinearRange> ranges = new ObservableCollection<LinearRange>();  
+//Adding the range to a scale
+
+ObservableCollection<LinearScale> scales = new ObservableCollection<LinearScale>();
+ObservableCollection<LinearPointer> pointers = new ObservableCollection<LinearPointer>();
+ObservableCollection<LinearRange> ranges = new ObservableCollection<LinearRange>();  
 
 ranges.Add(higherRange);  
 
 ranges.Add(lowerRange); 
 
-  scale.setRanges(ranges);
+scale.setRanges(ranges);
+
 {% endhighlight %}
 
 Finally, add this scale to a Collection and assign it to the Linear Gauge by using the following code example.
 
 {% highlight c# %}
-  //Adding a scale to the LinearGauge
 
-            scales.Add(outerScale);
-            linearGauge.Scales = scales;
+ //Adding a scale to the LinearGauge
+
+scales.Add(outerScale);
+
+linearGauge.Scales = scales;
+
 {% endhighlight %}
 
- Now, the scales are added successfully to the Linear Gauge.
+Now, the scales are added successfully to the Linear Gauge.
 
-![](Create-your-first-Linear-Gauge-in-XamarinAndroid_images/Create-your-first-Linear-Gauge-in-XamarinAndroid_img3.png)
+![](Create-your-first-Linear-Gauge-in-XamarinAndroid_images/img3.png)
 
 ## Create your first Linear Gauge in Xamarin.iOS
 
 This section encompasses how to create the Linear Gauge for your business requirements in mobility that is required to be displayed in Xamarin iOS. You can also pass the required data to the default Linear Gauge and customize it according to your requirements. The following example demonstrates how to create a Linear Gauge representing the Memory usage.
 
-![](Create-your-first-Linear-Gauge-in-XamariniOS_images/Create-your-first-Linear-Gauge-in-XamariniOS_img1.png)
+![](Create-your-first-Linear-Gauge-in-XamariniOS_images/img1.png)
 
 
 
@@ -734,7 +746,8 @@ Pointer is a key element of the linear scale that points a value or measure on 
 There are two types of Pointers. They are BarPointer and SymbolPointer. Refer to the following code example to add theSymbolPointers and BarPointer to the scale.
 
 {% highlight c# %}
-  //SymbolPointer
+
+//SymbolPointer
 
 SFSymbolPointer symbolPointer = new SFSymbolPointer ();
 
@@ -756,13 +769,18 @@ rangePointer.Color = UIColor.FromRGB (206, 69, 69);
 
 rangePointer.Thickness = 10;
 
+{% endhighlight %}
+
  The pointers are displayed at the defined value in the scale with the respective color and width. You are required to add this pointer to a collection and assign it to the scale.
 
    //Adding the pointers to the linear gauge
 
+{% highlight c# %}
+
 scale.Pointers.Add (symbolPointer);
 
 scale.Pointers.Add (rangePointer);
+
 {% endhighlight %}
 
 ### Add Range
@@ -770,6 +788,7 @@ scale.Pointers.Add (rangePointer);
 Scale contains one or more Ranges. Range displays the start and end values of the inner divisions within the linear scale’s whole range. Each range displays different zones or regions of the same metrics: high, low and average temperature range.
 
 {% highlight c# %}
+
 //Adding ranges
 //Range
 
@@ -788,26 +807,31 @@ range.EndWidth = 10;
 range.Offset = nfloat.Parse("-0.17");
 
 scale.Ranges.Add (range);
+
 {% endhighlight %}
 
 The above code example explains how to add multiple range to a scale. Add this ranges to a collection and assign it to the scale. Refer to the following code example.
 
 {% highlight c# %}
-  //Adding the range to a scale
+
+//Adding the range to a scale
 
 scale.Ranges.Add (range);
 
 scale.Ranges.Add (range2);
+
 {% endhighlight %}
 
 Finally, add this scale to a Collection and assign it to the Linear Gauge by using the following code example.
 
 {% highlight c# %}
-  //Adding a scale to the LinearGauge
+
+//Adding a scale to the LinearGauge
 
 linearGauge.Scales.Add (scale);
+
 {% endhighlight %}
 
- Now, the scales are added successfully to the Linear Gauge.
+Now, the scales are added successfully to the Linear Gauge.
 
-![](Create-your-first-Linear-Gauge-in-XamariniOS_images/Create-your-first-Linear-Gauge-in-XamariniOS_img3.png)
+![](Create-your-first-Linear-Gauge-in-XamariniOS_images/img3.png)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | Essential BusyIndicator |Xamarin | Syncfusion
 description: overview
 platform: xamarin
 control: Essential-BusyIndicator
@@ -11,7 +11,7 @@ documentation: ug
 
 The Busy Indicator control enables you to know when the application is busy. SfBusyIndicator includes over 10 pre-built animations that can be displayed within your applications.
 
-![](Overview_images/Overview_img1.png)
+![](Overview_images/img1.png)
 
 
 ## Key Features

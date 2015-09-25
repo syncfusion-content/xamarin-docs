@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | Essential RangeSlider | Xamarin | Syncfusion
 description: getting started
 platform: xamarin
 control: Essential-RangeSlider
@@ -53,13 +53,13 @@ Create an instance of the SfRangeSliderRenderer in MainPage constructor in 
 
 public MainPage()
 
-       	 {
+{
 
-           		 new SfRangeSliderRenderer ();
+    new SfRangeSliderRenderer ();
 
-        		    ...    
+    ...    
 
-     	}
+}
 
 {% endhighlight %}
 
@@ -69,15 +69,15 @@ Create an instance of the SfRangeSliderRenderer in FinishedLaunching overridden 
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
-        	{
+{
 
-         		  ...
+    ...
 
-         		  new SfRangeSliderRenderer ();
+    new SfRangeSliderRenderer ();
 
-        		   ...
+    ...
 
-       	 }
+}
 		 
 {% endhighlight %}
 
@@ -89,7 +89,6 @@ Create an instance of SfRangeSlider
 
 {% highlight C# %}   
 
-
 // Update App.cs source in this file.
 
 using Syncfusion.XForms.SfRangeSlider;
@@ -99,43 +98,41 @@ using Syncfusion.XForms.SfRangeSlider;
 …
 
 public class App : Application
-    {
-        public App()
-        {
-            MainPage = new RangeSliderPage ();
-        }
+{
 
-    }
+public App()
+{
+	MainPage = new RangeSliderPage ();
+}
+
+}
 
 public class RangeSliderPage : ContentPage
-
 {
-        SfRangeSlider sfrangeslider;
-        public BusyIndicatorPage ()
-        {
-            sfrangeslider = new SfRangeSlider();
 
-        }
+SfRangeSlider sfrangeslider;
+
+public BusyIndicatorPage ()
+{
+    sfrangeslider = new SfRangeSlider();
+}
 
 }
 
 {% endhighlight %}
 
-{% highlight xml %} 
-
-
 
 Use this in App.CS source.
 
+{% highlight xml %} 
 
 < ?xml version="1.0" encoding="UTF-8"? >
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
-BackgroundColor="White"  
-xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-x:Class="RangeSliderGettingStarted.RadialSliderPage"  
-xmlns:syncfusion="clr-namespace:Syncfusion.SfRangeSlider.XForms;
-assembly=Syncfusion.SfRangeSlider.XForms" >
+ BackgroundColor="White" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+ x:Class="RangeSliderGettingStarted.RadialSliderPage"  
+ xmlns:syncfusion="clr-namespace:Syncfusion.SfRangeSlider.XForms;
+ assembly=Syncfusion.SfRangeSlider.XForms" >
 
     < ContentPage.Content > 
             < syncfusion:SfRangeSlider/ >
@@ -150,8 +147,6 @@ assembly=Syncfusion.SfRangeSlider.XForms" >
 Add the RangeSlider properties in your application.
 
 {% highlight C# %}   
-
-
  
 SfBusyIndicator sfbusyindicator = new SfBusyIndicator();
 sfbusyindicator.AnimationType = AnimationTypes.Battery;
@@ -161,9 +156,9 @@ sfbusyindicator.BackgroundColor = Color.White;
 
 {% endhighlight %} 
 
+
+
 {% highlight xml %} 
-
-
 
 < syncfusion:SfRangeSlider HeightRequest="100" TickFrequency="2" Minimum="0" Maximum="12" TickPlacement="BottomRight" ShowRange="True" RangeStart="4" RangeEnd="8" Orientation="Horizontal" WidthRequest="400" >
         </syncfusion:SfRangeSlider>
@@ -172,14 +167,14 @@ sfbusyindicator.BackgroundColor = Color.White;
 
 The following screenshot illustrates the output.
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![](Getting-Started_images/img2.png)
 
 
 ## Create your first RangeSlider in Xamarin.iOS
 
 This section encompasses how to create the RangeSlider that lets you to choose values over a high interactive way. You can also display special characters in different character types. In this instance, how to create a RangeSlider and to use its several features are demonstrated.
 
-![](Create-your-first-RangeSlider-in-XamariniOS_images/Create-your-first-RangeSlider-in-XamariniOS_img1.png)
+![](Create-your-first-RangeSlider-in-XamariniOS_images/img1.png)
 
 
 
@@ -214,14 +209,15 @@ Create an instance for SfRangeSlider and add the SfRangeSlider as subview in 
 
 
 public override void ViewDidLoad ()
-
 {
-    base.ViewDidLoad ();
 
-    SFRangeSlider rangeSlider= new SFRangeSlider ();
+base.ViewDidLoad ();
 
-    View.AddSubview (rangeSlider);
+SFRangeSlider rangeSlider= new SFRangeSlider ();
 
+View.AddSubview (rangeSlider);
+
+	
 {% endhighlight %} 
 
 ### Add values and scale
@@ -230,11 +226,13 @@ You can set the minimum and maximum values for the slider by using the minimum a
 
 {% highlight C# %} 
 
+rangeSlider.Maximum = 12;
 
-  rangeSlider.Maximum = 12;
-  rangeSlider.Minimum = 0;
-  rangeSlider.RangeStart = 0;
-  rangeSlider.RangeEnd = 12; 
+rangeSlider.Minimum = 0;
+
+rangeSlider.RangeStart = 0;
+
+rangeSlider.RangeEnd = 12; 
 
 {% endhighlight %} 
 
@@ -246,10 +244,11 @@ The ticks can be set by using the TickFrequency and TickPlacement. Similarly, va
 
 {% highlight C# %}  
 
+rangeSlider1.TickPlacement = SFTickPlacement.SFTickPlacementBottomRight;
 
-  rangeSlider1.TickPlacement = SFTickPlacement.SFTickPlacementBottomRight;
-  rangeSlider1.TickFrequency = 2;
-  rangeSlider1.ValuePlacement = SFValuePlacement.SFValuePlacementBottomRight;
+rangeSlider1.TickFrequency = 2;
+
+rangeSlider1.ValuePlacement = SFValuePlacement.SFValuePlacementBottomRight;
 
 {% endhighlight %} 
 
@@ -261,20 +260,19 @@ The movement of the thumb can be varied in different ways. This is achieved by s
 
 {% highlight C# %}  
 
-
 rangeSlider.SnapsTo = SFSnapsTo.SFSnapsToTicks;
 
 {% endhighlight %} 
 
 The movement of the thumb is based on Ticks / StepFrequency / none. When it is set to Tick, the Thumb is moved to next / nearby tick and on setting to none, the Thumb is moved independently.
 
-![](Create-your-first-RangeSlider-in-XamariniOS_images/Create-your-first-RangeSlider-in-XamariniOS_img3.png)
+![](Create-your-first-RangeSlider-in-XamariniOS_images/img3.png)
 
 ## Create your first RangeSlider in Xamarin
 
 This section encompasses how to create the RangeSlider that lets you to choose values over a high interactive way. In this instance, how to create a RangeSlider and to use its several features are demonstrated.
 
-![](Create-your-first-RangeSlider-in-Xamarin_images/Create-your-first-RangeSlider-in-Xamarin_img1.png)
+![](Create-your-first-RangeSlider-in-Xamarin_images/img1.png)
 
 
 ### Reference Essential Studio components in your solution
@@ -302,6 +300,7 @@ To develop an application with the Xamarin RangeSlider is simple. The followin
 {% highlight C# %}
 
 SfRangeslider range = new SfRangeSlider (this); 
+
 setContentView(range);
 
 {% endhighlight %} 
@@ -312,17 +311,17 @@ You can set the minimum and maximum values for the slider by using the Minimum�
 
 {% highlight C# %}
 
-        range.Minimum=0;
+range.Minimum=0;
 
-        range.Maximum=24;       
+range.Maximum=24;       
 
-        range.RangeEnd=20;
+range.RangeEnd=20;
 
-        range.RangeStart=4;
+range.RangeStart=4;
 
-        range.ShowRange=true;
+range.ShowRange=true;
 
-        range.Orientation=Orientation.Horizontal;
+range.Orientation=Orientation.Horizontal;
 
 {% endhighlight %} 
 
@@ -334,13 +333,13 @@ The ticks can be set by setting the TickFrequency and TickPlacement. Similarl
 
 {% highlight C# %}
 
-     range.TickFrequency=4;
+range.TickFrequency=4;
 
-     range.ShowValueLabel=true;  
+range.ShowValueLabel=true;  
 
-     range.ValuePlacement=ValuePlacement.TopLeft;
+range.ValuePlacement=ValuePlacement.TopLeft;
 
-     range.TickPlacement=TickPlacement.BottomRight;
+range.TickPlacement=TickPlacement.BottomRight;
 
 {% endhighlight %} 
 
@@ -360,5 +359,5 @@ range.StepFrequency=6;
 
 The movement of the thumb is based on the Ticks / StepFrequency / none. When it is set to Tick, the Thumb is moved to next / nearby tick and on setting to none,Thumb is moved independently.
 
-![](Create-your-first-RangeSlider-in-Xamarin_images/Create-your-first-RangeSlider-in-Xamarin_img3.png)
+![](Create-your-first-RangeSlider-in-Xamarin_images/img3.png)
 

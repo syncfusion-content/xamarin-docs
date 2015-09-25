@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | Essential TreeMap | Xamarin | Syncfusion
 description: getting started
 platform: xamarin
 control: Essential-TreeMap
@@ -63,37 +63,38 @@ N> Essential TreeMap for Xamarin is compatible with Xamarin Forms 1.2.3.6257
 
 Currently an additional step is required for Windows Phone and iOS projects. You need to create an instance of the TreeMap custom renderer as follows.
 
-1. Create an instance of the SfTreeMapRenderer in MainPage constructor in Windows Phone project as follows.
+1.Create an instance of the SfTreeMapRenderer in MainPage constructor in Windows Phone project as follows.
 
-   ~~~ cs
-  	 public MainPage()
+{% highlight C# %}  
 
-        {
+public MainPage()
+{
 
-           		 new SfTreeMapRenderer ();
+    new SfTreeMapRenderer ();
 
-        		    ...    
+    ...    
 
-     	}
-   ~~~
-   {:.prettyprint}
+}
+
+{% endhighlight %}
+
    
-2. Create an instance of the SfTreeMapRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as follows.
+2.Create an instance of the SfTreeMapRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as follows.
 
-   ~~~ cs
-     public override bool FinishedLaunching(UIApplication app, NSDictionary options)
+{% highlight C# %}  
+public override bool FinishedLaunching(UIApplication app, NSDictionary options)
+{
 
-        	{
+    ...
 
-         		  ...
+    new SfTreeMapRenderer ();
 
-         		  new SfTreeMapRenderer ();
+    ...
 
-        		   ...
+}
 
-       	 }
-   ~~~
-   {:.prettyprint}
+{% endhighlight %}
+
    
 ## Initializing the TreeMap
 
@@ -101,46 +102,47 @@ The Treemap control can be configured entirely in C# code or using XAML markup.
 
 The first step is to create a TreeMap object. 
 
-
 {% highlight xml %}
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"xmlns:local="clr-namespace:Syncfusion.SfTreeMap.XForms;assembly=Syncfusion.SfTreeMap.XForms"  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TreeMapGettingStarted.Sample" BackgroundColor=”Black”>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:local="clr-namespace:Syncfusion.SfTreeMap.XForms;
+  assembly=Syncfusion.SfTreeMap.XForms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+  x:Class="TreeMapGettingStarted.Sample" BackgroundColor=”Black”>
 
 <ContentPage.Content >
- <local:SfTreeMap x:Name="treeMap">
+	<local:SfTreeMap x:Name="treeMap">
 </local:SfTreeMap>
 
 </ContentPage.Content>
 </ContentPage>
 {% endhighlight %}
-{% highlight c# %}
-public static Page GetMainPage()
 
+{% highlight c# %}
+
+public static Page GetMainPage()
 {
 
 SfTreeMap treeMap = new SfTreeMap();
 
+return new ContentPage
+{
 
+    BackgroundColor = Color.Black,
 
-       return new ContentPage
+    Content = treeMap,
 
-       {
-
-              BackgroundColor = Color.Black,
-
-       	Content = treeMap,
-
-       };
-
+};
 }
+
 {% endhighlight %}
+
+
 ## Populating TreeMap Items
 
 The TreeMap accepts a collection of TreeMapItems as input.
 
 
 {% highlight xml %}
-
 
 // BindingContext is set for the content page class.
 
@@ -152,67 +154,64 @@ The TreeMap accepts a collection of TreeMapItems as input.
 
 //this.BindingContext = model;
 
-
-
 <local:SfTreeMap x:Name="treeMap" Items = "{Binding TreeMapItems}">
 
 </local:SfTreeMap>
+
 {% endhighlight %}
+
+
+
+
 {% highlight c# %}
-
-
-
 
 public class DataModel : BindableObject
 
-        {
+{
 
 public static readonly BindableProperty TreeMapItemsProperty =
 
-            BindableProperty.Create<DataModel, ObservableCollection<TreeMapItem>>(p => p.TreeMapItems, null, BindingMode.TwoWay, null, null, null, null);
+	BindableProperty.Create<DataModel, ObservableCollection<TreeMapItem>>(p => p.TreeMapItems, null, BindingMode.TwoWay, null, null, null, null);
 
 
 
-            public ObservableCollection<TreeMapItem> TreeMapItems
+public ObservableCollection<TreeMapItem> TreeMapItems
+{
 
-            {
+    get { return (ObservableCollection<TreeMapItem>)GetValue(TreeMapItemsProperty); }
 
-             get { return (ObservableCollection<TreeMapItem>)GetValue(TreeMapItemsProperty); }
+    set { SetValue(TreeMapItemsProperty, value); }
 
-             set { SetValue(TreeMapItemsProperty, value); }
-
-            }
-
+}
 
 
-            public DataModel()
 
-            {
+public DataModel()
+{
 
-                this.TreeMapItems = new ObservableCollection<TreeMapItem>();
+    this.TreeMapItems = new ObservableCollection<TreeMapItem>();
 
-                TreeMapItems.Add(new TreeMapItem() { Label = "Indonesia", ColorWeight = 3, Weight = 237641326 });
+    TreeMapItems.Add(new TreeMapItem() { Label = "Indonesia", ColorWeight = 3, Weight = 237641326 });
 
-                TreeMapItems.Add(new TreeMapItem() { Label = "Russia", ColorWeight = 2, Weight = 152518015 });
+    TreeMapItems.Add(new TreeMapItem() { Label = "Russia", ColorWeight = 2, Weight = 152518015 });
 
-                TreeMapItems.Add(new TreeMapItem() { Label = "United States", ColorWeight = 4, Weight = 315645000 });
+    TreeMapItems.Add(new TreeMapItem() { Label = "United States", ColorWeight = 4, Weight = 315645000 });
 
-                TreeMapItems.Add(new TreeMapItem() { Label = "Mexico", ColorWeight = 2, Weight = 112336538 });
+    TreeMapItems.Add(new TreeMapItem() { Label = "Mexico", ColorWeight = 2, Weight = 112336538 });
 
-                TreeMapItems.Add(new TreeMapItem() { Label = "Nigeria", ColorWeight = 2, Weight = 170901000 });
+    TreeMapItems.Add(new TreeMapItem() { Label = "Nigeria", ColorWeight = 2, Weight = 170901000 });
 
-                TreeMapItems.Add(new TreeMapItem() { Label = "Egypt", ColorWeight = 1, Weight = 83661000 });
+    TreeMapItems.Add(new TreeMapItem() { Label = "Egypt", ColorWeight = 1, Weight = 83661000 });
 
-                TreeMapItems.Add(new TreeMapItem() { Label = "Germany", ColorWeight = 1, Weight = 81993000 });
+    TreeMapItems.Add(new TreeMapItem() { Label = "Germany", ColorWeight = 1, Weight = 81993000 });
 
-                TreeMapItems.Add(new TreeMapItem() { Label = "France", ColorWeight = 1, Weight = 65605000 });
+    TreeMapItems.Add(new TreeMapItem() { Label = "France", ColorWeight = 1, Weight = 65605000 });
 
-                TreeMapItems.Add(new TreeMapItem() { Label = "UK", ColorWeight = 1, Weight = 63181775 });
+    TreeMapItems.Add(new TreeMapItem() { Label = "UK", ColorWeight = 1, Weight = 63181775 });
 
-            }
+}
 
-        }
-
+}
 
 
 SfTreeMap treeMap = new SfTreeMap();
@@ -220,14 +219,15 @@ SfTreeMap treeMap = new SfTreeMap();
 DataModel model = new DataModel();
 
 treeMap.Items = model.TreeMapItems;
+
 {% endhighlight %}
 
 ## Grouping of TreeMap Items using Levels
 
 You can group TreeMapItems using two types of levels.
 
-1.    TreeMap Flat Level
-2.    TreeMap Hierarchical Level
+1. TreeMap Flat Level
+2. TreeMap Hierarchical Level
 
 ## Customize TreeMap Appearance by Range
 
@@ -239,21 +239,23 @@ You can differentiate the nodes based on its value and color ranges using the Ra
 
 <local:SfTreeMap x:Name="treeMap" Items = "{Binding TreeMapItems}">
 
-  <local:SfTreeMap.LeafItemColorMapping>
-       <local:RangeColorMapping>
-         <local:RangeColorMapping.Ranges>
+<local:SfTreeMap.LeafItemColorMapping>
+    <local:RangeColorMapping>
+        <local:RangeColorMapping.Ranges>
            <local:Range LegendLabel = "1 % Growth" From = "0" To = "1" Color =  "#77D8D8"  />
-            <local:Range LegendLabel = "2 % Growth" From = "0" To = "2" Color =  "#AED960"  />
-            <local:Range LegendLabel = "3 % Growth" From = "0" To = "3" Color =  "#FFAF51"  />
-            <local:Range LegendLabel = "4 % Growth" From = "0" To = "4" Color =  "#F3D240"  />
-           </local:RangeColorMapping.Ranges>
-       </local:RangeColorMapping> 
-    </local:SfTreeMap.LeafItemColorMapping>
+           <local:Range LegendLabel = "2 % Growth" From = "0" To = "2" Color =  "#AED960"  />
+           <local:Range LegendLabel = "3 % Growth" From = "0" To = "3" Color =  "#FFAF51"  />
+           <local:Range LegendLabel = "4 % Growth" From = "0" To = "4" Color =  "#F3D240"  />
+        </local:RangeColorMapping.Ranges>
+    </local:RangeColorMapping> 
+</local:SfTreeMap.LeafItemColorMapping>
 
 </local:SfTreeMap>
-{% endhighlight %}
-{% highlight c# %}
 
+{% endhighlight %}
+
+
+{% highlight c# %}
 
 …
 
@@ -265,7 +267,9 @@ ranges.Add(new Range() { LegendLabel = "2 % Growth", From = 0, To = 2, Color = C
 ranges.Add(new Range() { LegendLabel = "3 % Growth", From = 0, To = 3, Color = Color.FromHex("#FFAF51") });
 ranges.Add(new Range() { LegendLabel = "4 % Growth", From = 0, To = 4, Color = Color.FromHex("#F3D240") });
 treeMap.LeafItemColorMapping = new RangeColorMapping (){ Ranges = ranges };
+
 {% endhighlight %}
+
 
 ## LeafItemSetting
 
@@ -273,20 +277,19 @@ You can customize the Leaf level TreeMap items using LeafItem setting.
 
 {% highlight xml %}
 
-
 <local:SfTreeMap x:Name="treeMap" Items = "{Binding TreeMapItems}">
 
 …
 
 <local:SfTreeMap.LeafItemSettings>
         <local: LeafItemSettings BorderWidth=“1" BorderColor=“White"  />
-    </local:SfTreeMap. LeafItemSettings >
+</local:SfTreeMap. LeafItemSettings >
 
 </local:SfTreeMap>
+
 {% endhighlight %}
 
 {% highlight c# %}
-
 
 …
 
@@ -294,6 +297,7 @@ LeafItemSettings leafSetting = new LeafItemSettings();
 leafSetting.BorderWidth = 1;
 leafSetting.BorderColor = Color.White;
 treeMap.LeafItemSettings = leafSetting;
+
 {% endhighlight %}
 
 ## Enable Legend
@@ -306,15 +310,14 @@ You can customize the labels of the legend items using the LegendLabel property 
 
 {% highlight xml %}
 
-
 <local:SfTreeMap.LegendSettings>
-        <local:LegendSettings  ShowLegend ="true" IconSize=“15,15" Size=“350,70"  />
+    <local:LegendSettings  ShowLegend ="true" IconSize=“15,15" Size=“350,70"  />
 </local:SfTreeMap.LegendSettings>
 {% endhighlight %}
 
+
+
 {% highlight c# %}
-
-
 …
 
 LegendSettings legendSettings = new LegendSettings();
@@ -325,7 +328,7 @@ treeMap.LegendSettings= legendSettings;
 
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![](Getting-Started_images/img2.png)
 
 
 

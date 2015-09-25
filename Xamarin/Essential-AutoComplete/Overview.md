@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | Essential AutoComplete |Xamarin | Syncfusion
 description: overview
 platform: xamarin
 control: Essential-AutoComplete
@@ -12,7 +12,7 @@ documentation: ug
 AutoComplete functionality provides suggestions while typing. There are several modes of suggestions. The suggested text can be 
 appended to the original text or it can be displayed in a drop-down list so that you can choose from different options.
 
-![](Overview_images/Overview_img1.png)
+![](Overview_images/img1.png)
 
 
 ## Key Features

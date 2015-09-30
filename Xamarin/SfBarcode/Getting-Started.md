@@ -109,8 +109,6 @@ Here, the following steps illustrates how to create and configure a barcode.
 
 1.Add reference to SFBarcode such as follows.
 
-
-
 {% highlight xml %} 
       
 xmlns:syncfusion="clr-namespace:Syncfusion.SfBarcode.XForms;assembly=Syncfusion.SfBarcode.XForms"
@@ -125,7 +123,7 @@ using Syncfusion.SfBarcode.XForms;
 {% endhighlight %}
 
 
-   {:.pretty-print }
+
 
 
 
@@ -133,13 +131,14 @@ using Syncfusion.SfBarcode.XForms;
 
 2.Create an instance of SfBarcode in XAML or code-behind using the reference of SfBarcode.
 
+  
+
 {% highlight xml %}        
 
 <syncfusion:SfBarcode/>
 	
 {% endhighlight %}
 
-{:.pretty-print }
 
 {% highlight C# %}       
 
@@ -147,7 +146,8 @@ SfBarcode barcode = new SfBarcode();
 	
 {% endhighlight %}
 
-   {:.pretty-print }
+
+
 
 
 
@@ -155,14 +155,13 @@ SfBarcode barcode = new SfBarcode();
 
 3.Then, you can assign the text that you want to encode.
 
+  
+
 {% highlight xml %} 
       
 <syncfusion:SfBarcode Text="www.wikipedia.org"/>
 	
 {% endhighlight %}
-
-{:.pretty-print }
-
 
 
 {% highlight C# %}        
@@ -171,7 +170,7 @@ barcode.Text = "www.wikipedia.org";
 	
 {% endhighlight %}
 
-   {:.pretty-print }
+  
 
 
 
@@ -179,26 +178,27 @@ barcode.Text = "www.wikipedia.org";
 
 4.Specify the required symbology to encode the given text. By defau<, the given text is encoded using Code 39 symbology.
 
+  
+
 {% highlight xml %} 
 
 <syncfusion:SfBarcode Text="www.wikipedia.org" Symbology="QRCode"/>
 	
 {% endhighlight %}
 
-   {:.pretty-print }
-
-
-
+   
 {% highlight C# %}         
 
 barcode.Symbology = BarcodeSymbo<ype.QRCode;
 	
 {% endhighlight %}
 
-{:.pretty-print }
+
 
 
 5.For customizing the barcode, initialize the settings of corresponding barcode symbology.
+
+  
 
 {% highlight xml %}      
 
@@ -214,7 +214,7 @@ barcode.Symbology = BarcodeSymbo<ype.QRCode;
 	
 {% endhighlight %}
    
-   {:.pretty-print }
+   
 
 
 
@@ -228,11 +228,13 @@ barcode.SymbologySettings = settings;
 	
 {% endhighlight %}
 
-{:.pretty-print }
+
 
 
 
 6.Finally, the barcode is generated as displayed in the following screenshot for the following code example.
+
+  
 
 {% highlight xml %} 
        
@@ -258,7 +260,7 @@ x:Class="BarcodeGettingStarted.SamplePage">
 	
 {% endhighlight %}
 
-{:.pretty-print }
+
 
 
 
@@ -290,7 +292,7 @@ public SamplePage()
 	
 {% endhighlight %}
 
-   {:.pretty-print }
+   
 
 
 
@@ -328,11 +330,7 @@ using Com.Syncfusion.Barcode
 	
 {% endhighlight %}
 
-   {:.pretty-print }
-
-
-
-
+   
 
 2.Create a SfBarcode instance in Main Activity and set the sfBarcode as a ContentView in onCreate() overridden method.
 
@@ -356,7 +354,7 @@ public class MainActivity: Activity
             
 {% endhighlight %}
 
-   {:.pretty-print }
+   
 
 
 

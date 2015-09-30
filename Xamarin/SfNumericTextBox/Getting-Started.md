@@ -186,8 +186,9 @@ The NumericTextBox control is configured entirely in the C# code or by using the
 
 Create an instance of the SfNumericTextBox.
 
-{% highlight C# %}  
+{% tabs %}   
 
+{% highlight C# %}  
 
 // Update App.cs source in this file.
 
@@ -237,9 +238,13 @@ Use this in App.CS source.
 
 {% endhighlight %}
 
+{% endtabs %} 
+
 ### Configure the NumericTextBox
 
 Add the NumericTextBox properties in your application.
+
+{% tabs %}   
 
 {% highlight C# %} 
 
@@ -264,6 +269,8 @@ sfnumerictextbox.MaximumNumberDecimalDigits= 2;
 </syncfusion:SfNumericTextBox> 
 
 {% endhighlight %} 
+
+{% endtabs %} 
 
 The following screenshot shows the NumericTextBox in cross platforms.
 

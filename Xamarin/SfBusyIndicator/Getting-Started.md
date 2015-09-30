@@ -89,6 +89,8 @@ The BusyIndicator control is configured entirely in C# code or using XAML markup
 
 Create an instance of SfBusyIndicator
 
+{% tabs %}  
+
 {% highlight c# %} 
 
 // Update App.cs source in this file.
@@ -145,13 +147,15 @@ xmlns:picker="clr-namespace:BusyIndicatorGettingStarted;
 
 {% endhighlight %}
 
-
+{% endtabs %}  
 
 
 
 ### Configure the BusyIndicator Properties
 
 Add the BusyIndicator properties in your application.
+
+{% tabs %}  
 
 {% highlight c# %}    
 
@@ -176,7 +180,7 @@ sfbusyindicator.BackgroundColor = Color.White;
 {% endhighlight %}
 
 
-
+{% endtabs %}  
 
 
 The following screenshot illustrates the output.

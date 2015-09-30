@@ -102,7 +102,7 @@ The Treemap control can be configured entirely in C# code or using XAML markup.
 
 The first step is to create a TreeMap object. 
 
-
+{% tabs %}  
 
 {% highlight xml %}
 
@@ -140,12 +140,13 @@ return new ContentPage
 
 {% endhighlight %}
 
-
+{% endtabs %}  
 
 ## Populating TreeMap Items
 
 The TreeMap accepts a collection of TreeMapItems as input.
 
+{% tabs %}  
 
 {% highlight xml %}
 
@@ -166,8 +167,6 @@ The TreeMap accepts a collection of TreeMapItems as input.
 {% endhighlight %}
 
 
-
-
 {% highlight c# %}
 
 public class DataModel : BindableObject
@@ -179,7 +178,6 @@ public static readonly BindableProperty TreeMapItemsProperty =
 	BindableProperty.Create<DataModel, ObservableCollection<TreeMapItem>>(p => p.TreeMapItems, null, BindingMode.TwoWay, null, null, null, null);
 
 
-
 public ObservableCollection<TreeMapItem> TreeMapItems
 {
 
@@ -188,7 +186,6 @@ public ObservableCollection<TreeMapItem> TreeMapItems
     set { SetValue(TreeMapItemsProperty, value); }
 
 }
-
 
 
 public DataModel()
@@ -215,9 +212,7 @@ public DataModel()
     TreeMapItems.Add(new TreeMapItem() { Label = "UK", ColorWeight = 1, Weight = 63181775 });
 
 }
-
 }
-
 
 SfTreeMap treeMap = new SfTreeMap();
 
@@ -226,6 +221,8 @@ DataModel model = new DataModel();
 treeMap.Items = model.TreeMapItems;
 
 {% endhighlight %}
+
+{% endtabs %}  
 
 ## Grouping of TreeMap Items using Levels
 
@@ -238,9 +235,9 @@ You can group TreeMapItems using two types of levels.
 
 You can differentiate the nodes based on its value and color ranges using the Range color. You can also define the color value range using the From and To properties. 
 
+{% tabs %}  
 
 {% highlight xml %}
-
 
 <local:SfTreeMap x:Name="treeMap" Items = "{Binding TreeMapItems}">
 
@@ -275,10 +272,13 @@ treeMap.LeafItemColorMapping = new RangeColorMapping (){ Ranges = ranges };
 
 {% endhighlight %}
 
+{% endtabs %}  
 
 ## LeafItemSetting
 
 You can customize the Leaf level TreeMap items using LeafItem setting. 
+
+{% tabs %}  
 
 {% highlight xml %}
 
@@ -294,6 +294,7 @@ You can customize the Leaf level TreeMap items using LeafItem setting.
 
 {% endhighlight %}
 
+
 {% highlight c# %}
 
 …
@@ -305,6 +306,8 @@ treeMap.LeafItemSettings = leafSetting;
 
 {% endhighlight %}
 
+{% endtabs %} 
+
 ## Enable Legend
 
 You can set the color value of leaf nodes using the TreeMap Legend. This legend is appropriate only for the TreeMap whose leaf nodes are colored using RangeColorMapping. You can set ShowLegend property value to “True” to make the legend visible.
@@ -313,11 +316,14 @@ You can set the color value of leaf nodes using the TreeMap Legend. This legend 
 
 You can customize the labels of the legend items using the LegendLabel property of RangeColorMapping. 
 
+{% tabs %} 
+
 {% highlight xml %}
 
 <local:SfTreeMap.LegendSettings>
     <local:LegendSettings  ShowLegend ="true" IconSize=“15,15" Size=“350,70"  />
 </local:SfTreeMap.LegendSettings>
+
 {% endhighlight %}
 
 
@@ -332,6 +338,8 @@ legendSettings.Size = new Size (350, 70);
 treeMap.LegendSettings= legendSettings;
 
 {% endhighlight %}
+
+{% endtabs %}  
 
 ![](Getting-Started_images/img2.png)
 

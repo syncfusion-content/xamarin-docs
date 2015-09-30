@@ -529,6 +529,8 @@ The gauge control is configured entirely in C# code or using XAML markup.
 
 Create an instance of SfCircularGauge.
 
+{% tabs %}  
+
 {% highlight c# %}
 
 SfCircularGauge circularGauge = new SfCircularGauge();
@@ -556,10 +558,13 @@ x:Class="GaugeGettingStarted.Sample">
 
 {% endhighlight %}
 
+{% endtabs %}  
 
 ### Insert a Scale
 
 The next step is to add one of more scales.
+
+{% tabs %}  
 
 {% highlight c# %}
 
@@ -613,11 +618,13 @@ scales.Add(scale);
 
 {% endhighlight %}
 
-
+{% endtabs %}  
 
 ### Specify Ranges
 
 You can improve the readability of data by including ranges that quickly show when values fall within specific ranges.
+
+{% tabs %}  
 
 {% highlight c# %}
 
@@ -638,7 +645,6 @@ scale.Ranges.Add(range);
 …
 
 {% endhighlight %}
-
 
 
 {% highlight xml %}   
@@ -669,10 +675,13 @@ scale.Ranges.Add(range);
 
 {% endhighlight %}
 
+{% endtabs %}  
 
 ### Add a Needle Pointer
 
 You can create a needle pointer and associate it with a scale to display the current value.
+
+{% tabs %}   
 
 {% highlight c# %} 
 
@@ -739,10 +748,13 @@ scale.Pointers.Add(needlePointer);
 
 {% endhighlight %}
 
+{% endtabs %} 
 
 ### Add a Range Pointer
 
 A range pointer provides an alternative way of indicating the current value.
+
+{% tabs %} 
 
 {% highlight c# %}
  
@@ -807,7 +819,7 @@ scale.Pointers.Add(rangePointer);
 
 {% endhighlight %}
 
-
+{% endtabs %}  
 
 
 

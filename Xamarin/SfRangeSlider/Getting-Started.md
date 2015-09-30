@@ -146,6 +146,8 @@ Use this in App.CS source.
 
 Add the RangeSlider properties in your application.
 
+{% tabs %}  
+
 {% highlight C# %}   
  
 SfBusyIndicator sfbusyindicator = new SfBusyIndicator();
@@ -156,14 +158,14 @@ sfbusyindicator.BackgroundColor = Color.White;
 
 {% endhighlight %} 
 
-
-
 {% highlight xml %} 
 
 < syncfusion:SfRangeSlider HeightRequest="100" TickFrequency="2" Minimum="0" Maximum="12" TickPlacement="BottomRight" ShowRange="True" RangeStart="4" RangeEnd="8" Orientation="Horizontal" WidthRequest="400" >
         </syncfusion:SfRangeSlider>
 
 {% endhighlight %} 
+
+{% endtabs %}  
 
 The following screenshot illustrates the output.
 

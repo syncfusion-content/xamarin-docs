@@ -93,6 +93,8 @@ The Gauge control is configured entirely in C# code or using XAML markup.
 
 Create an instance of SfDigitalrGauge.
 
+{% tabs %}  
+
 {% highlight c# %}
  
 // Update App.cs source this file.
@@ -148,11 +150,13 @@ return new ContentPage
 
  {% endhighlight %}
 
-
+{% endtabs %}  
 
 ## Configure the Digital Gauge Properties
 
 Add the Digital Gauge properties in your application.
+
+{% tabs %}  
 
 {% highlight c# %}
  
@@ -195,7 +199,7 @@ DisapledColorOpacity="30" >
 {% endhighlight %}
 
 
-
+{% endtabs %}  
 
 
 [http://www.syncfusion.com/Content/en-US/products/Images/Xamarin/digitalgauge/digitalgauge.png](http://www.syncfusion.com/Content/en-US/products/Images/Xamarin/digitalgauge/digitalgauge.png)

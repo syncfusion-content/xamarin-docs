@@ -245,7 +245,7 @@ xmlns:picker="clr-namespace: AutoCompleteGettingStarted;
 
 Add the AutoComplete properties in your application.
 
-
+{% tabs %}   
 
 {% highlight C# %}   
 
@@ -267,7 +267,7 @@ sfautocomplete .PopUpelay= 100;
 
 {% endhighlight %}
 
-
+{% endtabs %} 
 
 The following screenshot illustrates the output.
 

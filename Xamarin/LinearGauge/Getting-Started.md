@@ -83,6 +83,8 @@ The Linear Gauge control is configured entirely in C# code or using XAML markup.
 
 Create an instance of SfLinearGauge.
 
+{% tabs %}  
+
 {% highlight c# %}
 
 // Update App.cs source this file.
@@ -134,9 +136,13 @@ return new ContentPage
 
 {% endhighlight %}
 
+{% endtabs %}  
+
 ## Insert a Scale
 
 Add one or more scales to Linear Gauge.
+
+{% tabs %} 
 
 {% highlight c# %}
 
@@ -198,9 +204,13 @@ linearGauge.Scales = scales;
 
 {% endhighlight %}
 
+{% endtabs %}  
+
 ## Specify Range
 
 You can improve the readability of data by including ranges that quickly display when values fall within specific ranges.
+
+{% tabs %}  
 
 {% highlight c# %}
 
@@ -259,9 +269,13 @@ scale.Ranges.Add(range);
 
 {% endhighlight %}
   
+{% endtabs %}    
+  
 ## Add a Pointer
 
 Create a Pointer and associate it with a scale.
+
+{% tabs %}  
 
 {% highlight c# %}
 
@@ -335,9 +349,13 @@ pointers.Add(rangePointer);
 
 {% endhighlight %}
 
+{% endtabs %}  
+
 ## Add a Minor and Major Ticksettings
 
 You can customize a minor and major tick using Ticksettings that provides a way of indicating the current value.
+
+{% tabs %} 
 
 {% highlight c# %}
 
@@ -422,7 +440,8 @@ scale.MajorTickSettings = major;
 
 {% endhighlight %}
 
-
+{% endtabs %}  
+ 
 [http://www.syncfusion.com/Content/en-US/products/Images/Xamarin/lineargauge/lineargauge.png](http://www.syncfusion.com/Content/en-US/products/Images/Xamarin/lineargauge/lineargauge.png)
 
 ## Create your first Linear Gauge in Xamarin.Android
@@ -660,11 +679,13 @@ To develop an application with the XamariniOS Linear Gauge is simple.
 Create an instance of SfLinearGauge.
 
 {% highlight c# %}
+
 SFLinearGauge linearGauge = new SFLinearGauge();
 
 //Initializing the Orientation
 
 linearGauge.Orientation = SFLinearGaugeOrientation.SFLinearGaugeOrientationVertical;
+
 {% endhighlight %}
 
 ### Add a Scale
@@ -672,6 +693,7 @@ linearGauge.Orientation = SFLinearGaugeOrientation.SFLinearGaugeOrientationVerti
 To add the scale for the Linear Gauge, the memory usage is displayed in percentage. Before adding the scale to the Linear Gauge, create your own values to the scale. Assign the scale to the Linear Gauge as follows.
 
 {% highlight c# %}
+
 SFLinearScale scale = new SFLinearScale ();
 
 scale.Minimum = 0;
@@ -693,6 +715,7 @@ scale.MinorTicksPerInterval = 1;
 scale.ScaleBarSize = 13;
 
 scale.ScalePosition = SFLinearGaugeScalePosition.SFLinearGaugeScalePositionForward;
+
 {% endhighlight %}
 
 The above code example illustrates the minimum and maximum values for the scale and assigns the size and length of the scale. The interval denotes the gap between the Main ticks that is represented in the scale. Likewise the MinorTicksPerInterval denotes the number of ticks that needs to be in between the MajorTicks.
@@ -702,6 +725,7 @@ The above code example illustrates the minimum and maximum values for the scale 
 There are two kinds of Ticks. They are major ticks and minor ticks. Major ticks are the primary scale indicators and Minor ticks are the secondary scale indicators that fall between the major ticks. The major ticks and minor ticks are customized and assigned to the scale by using the following code example.
 
 {% highlight c# %}
+
  //Minor Ticks setting
 
 SFLinearTickSettings minor = new SFLinearTickSettings ();
@@ -734,6 +758,7 @@ linearGauge.Scales.Add (scale);
 scale_minorTicksSettings.StrokeWidth = 5;
 Scale_minorTicksSettings.Offset = 0;
 scale.MinorTickSettings = scale_minorTicksSettings;
+
 {% endhighlight %}
 
 The above code example displays the majorticks and minorticks for the scale assigned to the Linear Gauge.
@@ -772,9 +797,9 @@ rangePointer.Thickness = 10;
 
  The pointers are displayed at the defined value in the scale with the respective color and width. You are required to add this pointer to a collection and assign it to the scale.
 
-   //Adding the pointers to the linear gauge
-
 {% highlight c# %}
+
+//Adding the pointers to the linear gauge
 
 scale.Pointers.Add (symbolPointer);
 

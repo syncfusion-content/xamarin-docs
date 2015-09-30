@@ -335,6 +335,8 @@ HighTemperature.Add (new ChartDataPoint ("Dec", 45));
 
 Now, you can add the series into the chart and set its ItemsSource as shown below
 
+{% tabs %}   
+
 {% highlight C# %}
 
 //Adding the series to the chart
@@ -363,10 +365,13 @@ ItemsSource = "{Binding HighTemperature}"/>
  
 {% endhighlight %}
 
+{% endtabs %} 
+
 ## Adding Legends
 
 Legends can be enabled in SfChart by initializing the Legend property with ChartLegend instance as follows.
 
+{% tabs %} 
 
 {% highlight C# %}
  
@@ -392,10 +397,13 @@ chart.Legend = new ChartLegend ();
 
 {% endhighlight %}
 
+ {% endtabs %}  
+
 Circular legend icons will be displayed for each series by default. Next, we need to provide the labels for the series using the Label property, this information is displayed along the legend icon.
 
 The next step is to add the HighTemperature column series as shown below
 
+{% tabs %} 
 
 {% highlight C# %}
 
@@ -425,12 +433,16 @@ chart.Series.Add (new ColumnSeries () 
   
 {% endhighlight %}
 
+ {% endtabs %}  
+
 ## Add multiple series to the chart
 
 So far we have visualized just the high temperature data over time. Now let’s visualize other data such as low temperature and precipitation.
 
 Let’s add two SplineSeries for displaying high and low temperatures and a ColumnSeries for displaying the precipitation as shown below
 
+
+{% tabs %}  
 
 {% highlight C# %}
 
@@ -483,11 +495,15 @@ chart.Series.Add (new SplineSeries () 
 
 {% endhighlight %}
 
+{% endtabs %}  
+
 Currently all the data is plotted against a single scale but the precipitation data needs to be plotted against a different scale.
 
 ## Add multiple Y-axis
 
 Let’s add a secondary axis(y axis) to the chart as shown below
+
+{% tabs %} 
 
 {% highlight C# %}
  
@@ -520,10 +536,14 @@ chart.Series.Add (new ColumnSeries () 
 </chart:SfChart>
 
 {% endhighlight %}
+
+{% endtabs %}  
  
 The OpposedPosition has been set to true to place the secondary axis on the opposite side.
 
 Here is the complete code sample for creating the Chart.
+
+{% tabs %}  
 
 {% highlight C# %}
 
@@ -759,6 +779,9 @@ public class DataModel
 </chart:SfChart>
 
 {% endhighlight %}
+
+{% endtabs %}  
+
 
 ![](Getting-Started_images/img3.png)
 
@@ -1166,6 +1189,8 @@ public class DataModel
 The following screenshot illustrates the output.
 
 ![](Create-your-first-Chart-in-XamarinAndroid_images/img3.png)
+
+_Weather Analysis Chart_
 
 ## Create your first Chart in Xamarin.iOS
 

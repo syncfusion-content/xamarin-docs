@@ -1,25 +1,22 @@
----
-layout: post
-title: Overview | Introduction |Xamarin | Syncfusion
-description: overview
-platform: xamarin
-control: Introduction
-documentation: ug
----
-
 # Overview
 
-## Essential Studio for Xamarin.
-Forms is a collection of data visualization and file format manipulation components.
+**Welcome** **to** **Syncfusion** **Essential** **Studio** **for** **Xamarin****.****Forms**
 
-## Data Visualization
+Essential Studio for Xamarin.Forms is a comprehensive collection of enterprise-grade Xamarin.Forms components for building modern Mobile applications. It includes all the UI controls that are typically required for building line-of-business (LOB) applications including Charts, Gauge, Maps and much more.
 
-* Barcode
-* Chart
-* Gauge
-* TreeMap
+## How to best read this user guide
 
-## File Formats
+* The best way to read the User guide is to start with the Getting Started section of the documentation for the component that you need. The ?Getting Started? guide gives information needed to know before writing the code. This is the only section recommended for end-to-end reading before writing the code. All the other information can be referred as and when needed.
+* Now, that you are familiar with the basics of using the component, the next step would be to start integrating the component into your application. A good starting point would be to refer to the code examples in the sample browser. It is very likely that you would find a code example that resembles your intended usage scenario.
+* After you have integrated the component into your application, it is likely that you would need additional information on specific features and API. Search the specific topic by using the search box available at the top of the user guide.
+* Another valuable resource is the API reference that provides detailed information on the classes and its members.
 
-* XlsIO
-* DocIO
+## Additional help resources
+
+The Knowledge Base section contains responses to some of the most common questions that other customers have asked us in the past so this would be a good place to search for topics that are not covered in the user guide.
+
+Similar to the Knowledge Base, the Forum section also contains responses to questions of other customers asked in the past.
+
+## Create a support incident
+
+In case, you are not able to find the information that you are looking for in the self-help resources mentioned above, then please contact us by creating a support ticket.

@@ -1,3 +1,12 @@
+---
+layout: post
+title: Overview | Xamarin Forms | Syncfusion
+description: Overview
+platform: xamarin
+control: Overview
+documentation: ug
+---
+
 # Overview
 
 **Welcome** **to** **Syncfusion** **Essential** **Studio** **for** **Xamarin****.****Forms**

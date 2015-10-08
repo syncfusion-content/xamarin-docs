@@ -2,7 +2,7 @@
 
 **Integrated** **Development** **Environment** **for** **Windows**
 
-Using the following IDEs, you will able to develop Android, Windows Phone and WinRT apps:
+By using the following IDEs, you can develop Android, Windows Phone and WinRT apps:
 
 * Visual Studio 2012 (.Net 4.5)
 * Visual Studio 2013
@@ -13,13 +13,13 @@ N> You can use Xamarin build host feature to deploy Xamarin.iOS and Xamarin.Form
 
 **Integrated** **Development** **Environment** **for** **Mac**
 
-Using the following IDE, you will able to develop iOS and Android apps:
+By using the following IDE, you can develop iOS and Android apps:
 
 * Xamarin Studio
 
 **Supported** **Platforms**
 
-Following table lists the platforms supported by our Xamarin.Forms controls.
+The following table lists the platforms supported by our Xamarin.Forms controls.
 
 <table>
 <tr>

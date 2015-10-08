@@ -2,38 +2,38 @@
 
 ## Install from Xamarin Component Store
 
-Refer [this](https://developer.xamarin.com/guides/cross-platform/application_fundamentals/components_walkthrough/# "") article to know about how to add a Xamarin Component Store component to Xamarin.Forms application.
+Refer to [this](https://developer.xamarin.com/guides/cross-platform/application_fundamentals/components_walkthrough/# "") article to know how to add a Xamarin Component Store component to Xamarin.Forms application.
 
 ## Install from nuget
 
-Refer [this](http://help.syncfusion.com/extension/syncfusion-nuget-packages/overview# "") document to know about how to add Syncfusion assemblies through nuget package.
+Refer to [this](http://help.syncfusion.com/extension/syncfusion-nuget-packages/overview# "") document to know how to add Syncfusion assemblies through nuget package.
 
 ## Download directly from Website
 
-You can also download the complete Xamarin.Forms component from [here](http://www.syncfusion.com/products/xamarin# ""). You will be asked to choose the file to download whether windows installer or zip file.
+You can also download the complete Xamarin.Forms component from [here](http://www.syncfusion.com/products/xamarin# ""). You may be asked to choose the windows installer or zip file to download.
 
 **Windows** **Installer** **(****exe****)**
 
 The following procedure illustrates how to install the installer of Syncfusion Xamarin components in Windows.
 
-1. Double-click the Syncfusion Essential Studio for Xamarin Setup file. The Self-Extractor wizard opens and extracts the package automatically.
-2. Enter User Name, Organization and Unlock Key in the corresponding text boxes provided.
-3. Click Next.
-4. After reading the terms, click the “I accept the terms and conditions” check box.
-5. Click Next and choose the installation location and samples installation.
-6. To install it in the displayed default location, click Install.
-7. Click Finish. The library and samples locations will be launched automatically.
+1. Double-click theÂ Syncfusion Essential Studio for Xamarin SetupÂ file. TheÂ Self-Extractor wizard opens and extracts the package automatically.
+2. EnterÂ User Name,Â OrganizationÂ andÂ Unlock KeyÂ in the corresponding text boxes provided.
+3. ClickÂ Next.
+4. After reading the terms, click "Â“I accept the terms and conditions"Â” check box.
+5. ClickÂ Next andÂ choose the installation location and samples installation.
+6. To install it in the displayed default location, clickÂ Install.
+7. ClickÂ Finish. The library and samples locations are launched automatically.
 ## Exploring the package
 
 
-You will find the following folders when extract the downloaded zip package or from the installed location in Windows
+You can find the following folders when extracting the downloaded zip package or from the installed location in Windows.
 
-* **Lib** – Contains Syncfusion assemblies for Xamarin.Forms, Xamarin.Android and Xamarin.iOS.
+* **Lib** Â– Contains Syncfusion assemblies for Xamarin.Forms, Xamarin.Android and Xamarin.iOS.
 * **Samples** - Contains demo samples for Xamarin.Forms, Xamarin.Android and Xamarin.iOS.
 ## Add reference to the project
 
 
-You can then add the assembly references to the respective projects; following is the location where you can locate dll for Chart control, you can find assemblies for the other controls also from the same location.
+You can then add the assembly references to the respective projects. The following is the location where you can locate dll for Chart control and you can find assemblies for the other controls also from the same location.
 
 **PCL** **project**
 
@@ -89,7 +89,7 @@ winrt\Syncfusion.SfChart.XForm.dll
 
 After you have added assemblies to the respective projects, you have to follow an additional step for loading our components in Windows Phone, WinRT and iOS projects. 
 
-Following is an example for Chart component; create an instance of SfChartRenderer in MainPage constructor of the Windows Phone and WinRT project as shown below.
+The following is an example for Chart component. create an instance of the SfChartRenderer in MainPage constructor of the Windows Phone and WinRT project as follows.
 
 {% highlight C# %}
 
@@ -101,7 +101,7 @@ public MainPage()
 
 {% endhighlight %}
 
-Create an instance of SfChartRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below
+Create an instance of SfChartRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as follows.
 
 {% highlight C# %} 
 
@@ -114,4 +114,4 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% endhighlight %}
 
-N> If you don’t add the above line, our controls will not be loaded in WP, WinRT and iOS platforms, and it will be looking blank.
+N> When you do noÂ’t add the above line, controls are not loaded in WP, WinRT and iOS platforms, and it looks blank.

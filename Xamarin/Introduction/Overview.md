@@ -13,7 +13,7 @@ Essential Studio for Xamarin.Forms is a comprehensive collection of enterprise-g
 
 ## Additional help resources
 
-The Knowledge Base section contains responses to some of the most common questions that other customers have asked us in the past so this would be a good place to search for topics that are not covered in the user guide.
+The Knowledge Base section contains responses to some of the most common questions that other customers had asked in the past. You can search for topics that are not covered in the user guide.
 
 Similar to the Knowledge Base, the Forum section also contains responses to questions of other customers asked in the past.
 

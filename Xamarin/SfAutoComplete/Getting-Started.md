@@ -285,7 +285,7 @@ This section provides a quick overview to work with the AutoComplete in Object
 
 You can refer to the following link to learn how to refer to the framework to your project. 
 
-<http://docs.syncfusion.com/ios/introduction/add-framework-reference-to-the-project>
+<http://help.syncfusion.com/ios/introduction/add-framework-reference-to-the-project>
 
 ### Create an AutoComplete
 

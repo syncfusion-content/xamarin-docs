@@ -34,7 +34,7 @@ lineSeries.DataMarker = new ChartDataMarker();
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Datamaker - clubbed/Datamacker.png](datamarker_images/datamarker_img1.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Datamaker - clubbed/Datamacker.png](datamarker_images/datamarker_img1.png)
 
 ## Customizing Labels
 
@@ -100,7 +100,7 @@ lineSeries.DataMarker.LabelStyle.Font = Font.SystemFontOfSize(18, FontAttributes
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Datamaker - clubbed/DataMarkerlabelStyle.png](datamarker_images/datamarker_img2.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Datamaker - clubbed/DataMarkerlabelStyle.png](datamarker_images/datamarker_img2.png)
 
 ## Formatting Label Content
 
@@ -131,7 +131,7 @@ pieSeries.DataMarker.LabelContent = LabelContent.Percentage;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Datamaker - clubbed/DatamarkerlabalContent.png](datamarker_images/datamarker_img3.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Datamaker - clubbed/DatamarkerlabalContent.png](datamarker_images/datamarker_img3.png)
 
 Note: Refer here to know more about customizing the label content with custom values.
 
@@ -141,7 +141,7 @@ This feature is used to position the data marker labels at Center, Inner and Out
 
 The following screenshot illustrates the default position of data marker labels,
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Datamaker - clubbed/Auto.png](datamarker_images/datamarker_img4.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Datamaker - clubbed/Auto.png](datamarker_images/datamarker_img4.png)
 
 
 The following code sample illustrates the center position of data marker labels,
@@ -168,7 +168,7 @@ series.DataMarker.LabelStyle.LabelPosition = DataMarkerLabelPosition.Center;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Datamaker - clubbed/Center.png](datamarker_images/datamarker_img5.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Datamaker - clubbed/Center.png](datamarker_images/datamarker_img5.png)
 
 The following code sample illustrates the Inner position of data marker labels,
 
@@ -194,7 +194,7 @@ series.DataMarker.LabelStyle.LabelPosition = DataMarkerLabelPosition.Inner;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Datamaker - clubbed/inner.png](datamarker_images/datamarker_img6.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Datamaker - clubbed/inner.png](datamarker_images/datamarker_img6.png)
 
 
 The following code sample illustrates the outer position of data marker labels, 
@@ -221,7 +221,7 @@ series.DataMarker.LabelStyle.LabelPosition = DataMarkerLabelPosition.Outer;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Datamaker - clubbed/outer.png](datamarker_images/datamarker_img7.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Datamaker - clubbed/outer.png](datamarker_images/datamarker_img7.png)
 
 
 ## Customizing Marker Shapes
@@ -270,7 +270,7 @@ lineSeries.DataMarker.MarkerBorderWidth = 2;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Datamaker - clubbed/MarkerType.png](datamarker_images/datamarker_img8.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Datamaker - clubbed/MarkerType.png](datamarker_images/datamarker_img8.png)
 
 
 ## Connector Line
@@ -317,6 +317,6 @@ lineSeries.DataMarker.ConnectorLineStyle.StrokeDashArray = new double[2] { 2, 3 
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Datamaker - clubbed/ConnectorLine.png](datamarker_images/datamarker_img9.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Datamaker - clubbed/ConnectorLine.png](datamarker_images/datamarker_img9.png)
 
 N> For Pie and Doughnut series, you can set the Bezier curve for connector line using ConnectorType property of CircularSeries.

@@ -35,7 +35,7 @@ chart.Legend = new ChartLegend();
 
 {% endhighlight %}
 
-![E:/UG Images/Legend_clubbed/Legend1.png](legend_images/legend_img1.jpeg)
+![E:/UG Images/Legend_clubbed/Legend1.png](legend_images/legend_img1.png)
 
 ## Customizing Labels
 
@@ -85,7 +85,7 @@ chart.Legend.LabelStyle.Margin = 5;
 
 {% endhighlight %}
 
-![E:/UG Images/Legend_clubbed/legenglabelStyle.png](legend_images/legend_img2.jpeg)
+![E:/UG Images/Legend_clubbed/legenglabelStyle.png](legend_images/legend_img2.png)
 
 ## Legend Icons
 
@@ -123,7 +123,7 @@ pieSeries.LegendIcon = ChartLegendIcon.SeriesType;
 
 {% endhighlight %}
 
-![E:/UG Images/Legend/legendIcon/ug-image.png](legend_images/legend_img3.jpeg)
+![E:/UG Images/Legend/legendIcon/ug-image.png](legend_images/legend_img3.png)
 
 ## Legend Title
 
@@ -187,7 +187,7 @@ chart.Legend.Title.BorderColor = Color.Blue;
 
 {% endhighlight %}
 
-![E:/UG Images/Legend_clubbed/legendTitle.png](legend_images/legend_img4.jpeg)
+![E:/UG Images/Legend_clubbed/legendTitle.png](legend_images/legend_img4.png)
 
 ## Toggle the series visibility
 
@@ -255,4 +255,4 @@ chart.Legend.OffsetY = 90;
 
 {% endhighlight %}
 
-![E:/UG Images/Legend_clubbed/legendDockposition.png](legend_images/legend_img5.jpeg)
+![E:/UG Images/Legend_clubbed/legendDockposition.png](legend_images/legend_img5.png)

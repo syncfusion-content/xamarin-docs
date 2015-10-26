@@ -42,7 +42,7 @@ chart.PrimaryAxis = new CategoryAxis();
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/CategoryAxis.png](axis_images/axis_img1.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/CategoryAxis.png](axis_images/axis_img1.png)
 
 ### Placing labels between ticks
 
@@ -67,7 +67,7 @@ chart.PrimaryAxis = new CategoryAxis() { LabelPlacement = LabelPlacement.Between
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/CategoryTicks.png](axis_images/axis_img2.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/CategoryTicks.png](axis_images/axis_img2.png)
 
 ### Displaying labels after a fixed interval
 
@@ -93,7 +93,7 @@ chart.PrimaryAxis = new CategoryAxis() { Interval = 2 };
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/CategoryInterval.png](axis_images/axis_img3.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/CategoryInterval.png](axis_images/axis_img3.png)
 
 
 ## Numeric Axis
@@ -119,7 +119,7 @@ chart.PrimaryAxis = new NumericalAxis();
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/numerical-1.png](axis_images/axis_img4.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/numerical-1.png](axis_images/axis_img4.png)
 
 ### Customizing numeric range
 
@@ -143,7 +143,7 @@ chart.SecondaryAxis = new NumericalAxis() { Minimum = 10, Maximum = 50 };
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/NumericRange.png](axis_images/axis_img5.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/NumericRange.png](axis_images/axis_img5.png)
 
 ### Customizing numeric interval
 
@@ -167,7 +167,7 @@ chart.SecondaryAxis = new NumericalAxis() { Interval = 10 };
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/Numeric-Interval.png](axis_images/axis_img6.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/Numeric-Interval.png](axis_images/axis_img6.png)
 
 ### Apply padding to the range
 
@@ -201,7 +201,7 @@ chart.SecondaryAxis = new NumericalAxis() { RangePadding = NumericalPadding.None
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/NumericRangeNone.png](axis_images/axis_img7.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/NumericRangeNone.png](axis_images/axis_img7.png)
 
 **Round**
 
@@ -225,7 +225,7 @@ chart.SecondaryAxis = new NumericalAxis() { RangePadding = NumericalPadding.Roun
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/NumericRangeRound.png](axis_images/axis_img8.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/NumericRangeRound.png](axis_images/axis_img8.png)
 
 **Additional**
 
@@ -249,7 +249,7 @@ chart.SecondaryAxis = new NumericalAxis() { RangePadding = NumericalPadding.Addi
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/NuericRangeAdditional.png](axis_images/axis_img9.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/NuericRangeAdditional.png](axis_images/axis_img9.png)
 
 **Normal**
 
@@ -273,7 +273,7 @@ chart.SecondaryAxis = new NumericalAxis() { RangePadding = NumericalPadding.Norm
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/NumericRangNormal.png](axis_images/axis_img10.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/NumericRangNormal.png](axis_images/axis_img10.png)
 
 ## Date Time Axis
 
@@ -297,7 +297,7 @@ chart.PrimaryAxis = new DateTimeAxis();
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/DateTime.png](axis_images/axis_img11.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/DateTime.png](axis_images/axis_img11.png)
 
 ### Customizing date time range
 
@@ -355,7 +355,7 @@ chart.PrimaryAxis = new DateTimeAxis() { Minimum = new DateTime(2010, 1, 1), Max
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/DateTimeRange.png](axis_images/axis_img12.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/DateTimeRange.png](axis_images/axis_img12.png)
 
 ### Date time intervals
 
@@ -398,7 +398,7 @@ chart.PrimaryAxis = new DateTimeAxis() { IntervalType = DateTimeIntervalType.Mon
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/DateTimeInterval.png](axis_images/axis_img13.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/DateTimeInterval.png](axis_images/axis_img13.png)
 
 ### Apply padding to the range
 
@@ -430,7 +430,7 @@ chart.PrimaryAxis = new DateTimeAxis() { RangePadding = DateTimeRangePadding.Non
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/DateTimeNone.png](axis_images/axis_img14.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/DateTimeNone.png](axis_images/axis_img14.png)
 
 **Round**
 
@@ -454,7 +454,7 @@ chart.PrimaryAxis = new DateTimeAxis() { RangePadding = DateTimeRangePadding.Rou
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/DateTimeRound.png](axis_images/axis_img15.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/DateTimeRound.png](axis_images/axis_img15.png)
 
 **Additional**
 
@@ -478,7 +478,7 @@ chart.PrimaryAxis = new DateTimeAxis() { RangePadding = DateTimeRangePadding.Add
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/DateTimeAdditional.png](axis_images/axis_img16.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/DateTimeAdditional.png](axis_images/axis_img16.png)
 
 ## Common axis features
 
@@ -506,7 +506,7 @@ chart.SecondaryAxis.IsVisible = false;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/AxisVisible.png](axis_images/axis_img17.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/AxisVisible.png](axis_images/axis_img17.png)
 
 ### Axis title
 
@@ -561,7 +561,7 @@ chart.PrimaryAxis.Title.Font = Font.SystemFontOfSize(20, FontAttributes.Bold);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/Axis-title.png](axis_images/axis_img18.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/Axis-title.png](axis_images/axis_img18.png)
 
 ### Label customization
 
@@ -610,7 +610,7 @@ chart.PrimaryAxis.LabelStyle.TextColor = Color.Red;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/AxisLabelStyle.png](axis_images/axis_img19.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/AxisLabelStyle.png](axis_images/axis_img19.png)
 
 ### Label and tick positioning
 
@@ -644,7 +644,7 @@ chart.PrimaryAxis.TickPosition = AxisElementPosition.Inside;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/AxisTick.png](axis_images/axis_img20.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/AxisTick.png](axis_images/axis_img20.png)
 
 ### Edge labels placement
 
@@ -664,7 +664,7 @@ chart.PrimaryAxis.EdgeLabelsDrawingMode = EdgeLabelsDrawingMode.Shift;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/edgeLabel.png](axis_images/axis_img21.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/edgeLabel.png](axis_images/axis_img21.png)
 
 ### Grid lines customization
 
@@ -698,7 +698,7 @@ chart. SecondaryAxis = new NumericalAxis ()
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/AxisGridLine.png](axis_images/axis_img22.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/AxisGridLine.png](axis_images/axis_img22.png)
 
 ### Tick lines customization
 
@@ -754,7 +754,7 @@ chart.SecondaryAxis = numerical;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/AxisTickStyle.png](axis_images/axis_img23.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/AxisTickStyle.png](axis_images/axis_img23.png)
 
 ### Inversing axis
 
@@ -778,7 +778,7 @@ chart.SecondaryAxis.IsInversed = true;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/AxisInverse.png](axis_images/axis_img24.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/AxisInverse.png](axis_images/axis_img24.png)
 
 ### Placing axes at the opposite side
 
@@ -802,7 +802,7 @@ chart.SecondaryAxis.OpposedPosition = true;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/AxisOpposedposition.png](axis_images/axis_img25.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/AxisOpposedposition.png](axis_images/axis_img25.png)
 
 ### Maximum number of labels per 100 pixels
 
@@ -826,7 +826,7 @@ Chart.SecondaryAxis.MaximumLabels = 5;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/AxisMaximumLab.png](axis_images/axis_img26.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/AxisMaximumLab.png](axis_images/axis_img26.png)
 
 ## Smart Axis Labels
 
@@ -850,4 +850,4 @@ chart.PrimaryAxis.LabelsIntersectAction = AxisLabelsIntersectAction.MultipleRows
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/smartlabel.png](axis_images/axis_img27.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/smartlabel.png](axis_images/axis_img27.png)

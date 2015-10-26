@@ -133,8 +133,6 @@ pieSeries.DataMarker.LabelContent = LabelContent.Percentage;
 
 ![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Datamaker - clubbed/DatamarkerlabalContent.png](datamarker_images/datamarker_img3.png)
 
-Note: Refer here to know more about customizing the label content with custom values.
-
 ## Label Position
 
 This feature is used to position the data marker labels at Center, Inner and Outer position of the actual data point position. By default, labels are positioned based on the series types for better readability. You can move the labels horizontally and vertically using **OffsetX** and **OffsetY** properties respectively.

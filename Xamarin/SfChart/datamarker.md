@@ -18,9 +18,9 @@ Data markers are used to provide information about the data points to the user. 
 
 	<chart:LineSeries.DataMarker>
 
-<chart:ChartDataMarker/>
+		<chart:ChartDataMarker/>
 
-</chart:LineSeries.DataMarker>
+	</chart:LineSeries.DataMarker>
 
 </chart:LineSeries>
 
@@ -46,7 +46,7 @@ Data labels are enabled by default but you can also change the visibility of the
 * **BorderThickness** – used to change the thickness of the border.
 * **Font** – used to change the text size, font family and font weight.
 * **Margin** - used to change the margin size for labels.
-* **Angle** – used to change rotate labels.
+* **Angle** – used to rotate the labels.
 
 Following code snippet illustrates the customization of label and its background,
 
@@ -317,4 +317,4 @@ lineSeries.DataMarker.ConnectorLineStyle.StrokeDashArray = new double[2] { 2, 3 
 
 ![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Datamaker - clubbed/ConnectorLine.png](datamarker_images/datamarker_img9.png)
 
-N> For Pie and Doughnut series, you can set the Bezier curve for connector line using ConnectorType property of CircularSeries.
+N> For Pie and Doughnut series, you can set the Bezier curve for connector line using ConnectorType property of Pie and Doughnut series.

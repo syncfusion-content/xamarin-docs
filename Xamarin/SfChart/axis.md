@@ -132,7 +132,7 @@ To customize the range of an axis, you can use the **Minimum** and **Maximum** p
 
 	<chart:NumericalAxis Minimum="10" Maximum="50"/>
 
-</chart:SfChart. SecondaryAxis >
+</chart:SfChart.SecondaryAxis >
 
 {% endhighlight %}
 
@@ -495,7 +495,7 @@ Axis visibility can be controlled using the **IsVisible** property of axis. Defa
 
 	<chart:NumericalAxis IsVisible="False"/>
 
-</chart:SfChart. SecondaryAxis >
+</chart:SfChart.SecondaryAxis >
 
 {% endhighlight %}
 
@@ -579,9 +579,9 @@ The **LabelStyle** property of axis provides options to customize the font-famil
 
 <chart:SfChart.PrimaryAxis>
 
-	<chart: CategoryAxis >
+	<chart:CategoryAxis >
 
-		<chart: CategoryAxis.LabelStyle>
+		<chart:CategoryAxis.LabelStyle>
 
 			<chart:ChartAxisLabelStyle TextColor="Red">
 
@@ -593,7 +593,7 @@ The **LabelStyle** property of axis provides options to customize the font-famil
 
 			</chart:ChartAxisLabelStyle>
 
-		</chart: CategoryAxis.LabelStyle>
+		</chart:CategoryAxis.LabelStyle>
 
 	</chart:CategoryAxis>
 
@@ -673,11 +673,11 @@ The **ShowMajorGridLines** and **ShowMinorGridLines** properties are used to con
 {% highlight xml %}
 [XAML]
 
-<chart:SfChart. SecondaryAxis >
+<chart:SfChart.SecondaryAxis >
 
-	<chart: NumericalAxis ShowMajorGridLines="True" ShowMinorGridLines="True" MinorTicksPerInterval="1"/>
+	<chart:NumericalAxis ShowMajorGridLines="True" ShowMinorGridLines="True" MinorTicksPerInterval="1"/>
 
-</chart:SfChart. SecondaryAxis >
+</chart:SfChart.SecondaryAxis >
 
 {% endhighlight %}
 
@@ -707,25 +707,25 @@ The **MajorTickStyle** and **MinorTickStyle** properties in axis are used to cus
 {% highlight xml %}
 [XAML]
 
-<chart:SfChart. SecondaryAxis >
+<chart:SfChart.SecondaryAxis >
 
-	<chart: NumericalAxis ShowMinorGridLines="True" MinorTicksPerInterval="1">
+	<chart:NumericalAxis ShowMinorGridLines="True" MinorTicksPerInterval="1">
 
-		<chart: NumericalAxis.MajorTickStyle >
+		<chart:NumericalAxis.MajorTickStyle >
 
 			<chart:ChartAxisTickStyle TickSize="7" StrokeColor="Blue" StrokeWidth="3"/>
 
-		</chart: NumericalAxis.MajorTickStyle>
+		</chart:NumericalAxis.MajorTickStyle>
 
-		<chart: NumericalAxis.MinorTickStyle>
+		<chart:NumericalAxis.MinorTickStyle>
 
 			<chart:ChartAxisTickStyle TickSize="5" StrokeColor="Green" StrokeWidth="2"/>
 
-		</chart: NumericalAxis.MinorTickStyle>
+		</chart:NumericalAxis.MinorTickStyle>
 
 	<chart:NumericalAxis/>
 
-</chart:SfChart. SecondaryAxis >
+</chart:SfChart.SecondaryAxis >
 
 {% endhighlight %}
 
@@ -763,11 +763,11 @@ Axis can be inversed using the **IsInversed** property of axis. Default value of
 {% highlight c# %}
 [XAML]
 
-<chart:SfChart. SecondaryAxis >
+<chart:SfChart.SecondaryAxis >
 
 	<chart:NumericalAxis IsInversed="True">
 
-</chart:SfChart. SecondaryAxis >
+</chart:SfChart.SecondaryAxis >
 
 {% endhighlight %}
 
@@ -787,11 +787,11 @@ The **OpposedPosition** property of axis can be used to place the axis at the op
 {% highlight xml %}
 [XAML]
 
-<chart:SfChart. SecondaryAxis >
+<chart:SfChart.SecondaryAxis >
 
 	<chart:NumericalAxis OpposedPosition="True">
 
-</chart:SfChart. SecondaryAxis >
+</chart:SfChart.SecondaryAxis >
 
 {% endhighlight %}
 
@@ -811,11 +811,11 @@ By default, a maximum of 3 labels are displayed for each 100 pixels in axis. The
 {% highlight xml %}
 [XAML]
 
-<chart:SfChart. SecondaryAxis >
+<chart:SfChart.SecondaryAxis >
 
 	<chart:NumericalAxis MaximumLabels="5"/>
 
-</chart:SfChart. SecondaryAxis >
+</chart:SfChart.SecondaryAxis >
 
 {% endhighlight %}
 

@@ -13,7 +13,7 @@ Essential Studio for Xamarin.Forms is a comprehensive collection of enterprise-g
 
 ## How to best read this user guide
 
-* The best way to read the User guide is to start with the Getting Started section of the documentation for the component that you need. The ?Getting Started? guide gives information needed to know before writing the code. This is the only section recommended for end-to-end reading before writing the code. All the other information can be referred as and when needed.
+* The best way to read the User guide is to start with the Getting Started section of the documentation for the component that you need. The Getting Started guide gives information needed to know before writing the code. This is the only section recommended for end-to-end reading before writing the code. All the other information can be referred as and when needed.
 * Now, that you are familiar with the basics of using the component, the next step would be to start integrating the component into your application. A good starting point would be to refer to the code examples in the sample browser. It is very likely that you would find a code example that resembles your intended usage scenario.
 * After you have integrated the component into your application, it is likely that you would need additional information on specific features and API. Search the specific topic by using the search box available at the top of the user guide.
 * Another valuable resource is the API reference that provides detailed information on the classes and its members.

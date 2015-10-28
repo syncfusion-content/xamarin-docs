@@ -78,7 +78,7 @@ To display labels after a fixed interval n, you can set `Interval` property of C
 
 <chart:SfChart.PrimaryAxis >
 
-	<chart:CategoryAxis Interval="2"/>
+	<chart:CategoryAxis Interval="2" LabelPlacement="BetweenTicks"/>
 
 </chart:SfChart.PrimaryAxis>
 
@@ -88,7 +88,7 @@ To display labels after a fixed interval n, you can set `Interval` property of C
 {% highlight c# %}
 [C#]
 
-chart.PrimaryAxis = new CategoryAxis() { Interval = 2 };
+chart.PrimaryAxis = new CategoryAxis() { Interval = 2, LabelPlacement = LabelPlacement.BetweenTicks };
 
 
 {% endhighlight %}

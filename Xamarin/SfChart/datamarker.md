@@ -38,15 +38,15 @@ lineSeries.DataMarker = new ChartDataMarker();
 
 ## Customizing Labels
 
-Data labels are enabled by default but you can also change the visibility of the labels using **ShowLabel** property of ChartDataMarker. The label appearance can be customized using following properties,
+Data labels are enabled by default but you can also change the visibility of the labels using `ShowLabel` property of ChartDataMarker. The label appearance can be customized using following properties,
 
-* **TextColor** – used to change the color of the label.
-* **BackgroundColor** – used to change the label background color.
-* **BorderColor** – used to change the border color.
-* **BorderThickness** – used to change the thickness of the border.
-* **Font** – used to change the text size, font family and font weight.
-* **Margin** - used to change the margin size for labels.
-* **Angle** – used to rotate the labels.
+* `TextColor` – used to change the color of the label.
+* `BackgroundColor` – used to change the label background color.
+* `BorderColor` – used to change the border color.
+* `BorderThickness` – used to change the thickness of the border.
+* `Font` – used to change the text size, font family and font weight.
+* `Margin` - used to change the margin size for labels.
+* `Angle` – used to rotate the labels.
 
 Following code snippet illustrates the customization of label and its background,
 
@@ -106,8 +106,8 @@ lineSeries.DataMarker.LabelStyle.Font = Font.SystemFontOfSize(18, FontAttributes
 
 You can customize the content of the label using LabelContent property. Following are the two options that are supported now,
 
-* **Percentage** – This will show the percentage value of corresponding data point Y value, this is often used in pie, doughnut, funnel and pyramid series types.
-* **YValue** – This will show the corresponding Y value.
+* `Percentage` – This will show the percentage value of corresponding data point Y value, this is often used in pie, doughnut, funnel and pyramid series types.
+* `YValue` – This will show the corresponding Y value.
 {% highlight xml %}
 
 [XAML]
@@ -135,7 +135,7 @@ pieSeries.DataMarker.LabelContent = LabelContent.Percentage;
 
 ## Label Position
 
-This feature is used to position the data marker labels at Center, Inner and Outer position of the actual data point position. By default, labels are positioned based on the series types for better readability. You can move the labels horizontally and vertically using **OffsetX** and **OffsetY** properties respectively.
+This feature is used to position the data marker labels at Center, Inner and Outer position of the actual data point position. By default, labels are positioned based on the series types for better readability. You can move the labels horizontally and vertically using `OffsetX` and `OffsetY` properties respectively.
 
 The following screenshot illustrates the default position of data marker labels,
 
@@ -226,11 +226,11 @@ series.DataMarker.LabelStyle.LabelPosition = DataMarkerLabelPosition.Outer;
 
 Shapes can be added to chart data marker by setting the ShowMarker property to true. There are different shapes you can set to the chart using MarkerType property such as rectangle, circle, diamond etc. Following properties are used to customize marker appearance,
 
-* **MarkerWidth** - used to change the width of the marker
-* **MarkerHeight** - used to change the height of the marker
-* **MarkerColor** - used to change the color of the marker
-* **MarkerBorderColor** - used to change the border color of the shape
-* **MarkerBorderWidth** – used to change the marker border thickness
+* `MarkerWidth` - used to change the width of the marker
+* `MarkerHeight` - used to change the height of the marker
+* `MarkerColor` - used to change the color of the marker
+* `MarkerBorderColor` - used to change the border color of the shape
+* `MarkerBorderWidth` – used to change the marker border thickness
 
 The following code example shows how to enable marker and specify its types,
 
@@ -275,9 +275,9 @@ lineSeries.DataMarker.MarkerBorderWidth = 2;
 
 This feature is used to connect label and data point using a line. It can be enabled for any chart types but this is often used with Pie and Doughnut chart types. Following properties used to customize connector line,
 
-* **StrokeColor** – used to change the color of the line
-* **StrokeWidth** – used to change the stroke thickness of the line
-* **StrokeDashArray** – used to set the dashes for the line
+* `StrokeColor` – used to change the color of the line
+* `StrokeWidth` – used to change the stroke thickness of the line
+* `StrokeDashArray` – used to set the dashes for the line
 
 The following code illustrates how to specify the connector height and its angle,
 

@@ -39,11 +39,11 @@ chart.Legend = new ChartLegend();
 
 ## Customizing Labels
 
-**Label** property of **ChartSeries** is used to define the label for the corresponding series legend item. The following properties are used to customize the legend items label appearance.
+`Label` property of `ChartSeries` is used to define the label for the corresponding series legend item. The following properties are used to customize the legend items label appearance.
 
-* **TextColor** – used to change the color of the label.
-* **Font** – used to change the text size, font family and font weight.
-* **Margin** - used to change the margin size for labels.
+* `TextColor` – used to change the color of the label.
+* `Font` – used to change the text size, font family and font weight.
+* `Margin` - used to change the margin size for labels.
 
 {% highlight xml %}
 [XAML]
@@ -89,7 +89,7 @@ chart.Legend.LabelStyle.Margin = 5;
 
 ## Legend Icons
 
-Legend icons are enabled by default, however, you can control its visibility using **IsIconVisible** property. Also you can specify the icon type using **LegendIcon** property in ChartSeries. **IconWidth** and **IconHeight** properties are used to adjust the width and height of the legend icons respectively.
+Legend icons are enabled by default, however, you can control its visibility using `IsIconVisible` property. Also you can specify the icon type using `LegendIcon` property in ChartSeries. `IconWidth` and `IconHeight` properties are used to adjust the width and height of the legend icons respectively.
 
 {% highlight xml %}
 [XAML]
@@ -129,14 +129,14 @@ pieSeries.LegendIcon = ChartLegendIcon.SeriesType;
 
 Following properties are used to define and customize the legend title.
 
-* **Text** – used to change the title text.
-* **TextColor** – used to change the color of the title text.
-* **Font** – used to change the text size, font family and font weight of the title.
-* **Margin** – used to change the margin size for title.
-* **TextAlignment** – used to change the alignment of the title text, it can be start, end and center.
-* **BackgroundColor** – used to change the title background color.
-* **BorderColor** – used to change the border color.
-* **BorderWidth** – used to adjust the title border width.
+* `Text` – used to change the title text.
+* `TextColor` – used to change the color of the title text.
+* `Font` – used to change the text size, font family and font weight of the title.
+* `Margin` – used to change the margin size for title.
+* `TextAlignment` – used to change the alignment of the title text, it can be start, end and center.
+* `BackgroundColor` – used to change the title background color.
+* `BorderColor` – used to change the border color.
+* `BorderWidth` – used to adjust the title border width.
 
 {% highlight xml %}
 
@@ -191,7 +191,7 @@ chart.Legend.Title.BorderColor = Color.Blue;
 
 ## Toggle the series visibility
 
-You can control the visibility of the series by tapping on the legend item. You can enable this feature by enabling **ToggleSeriesVisibility** property.
+You can control the visibility of the series by tapping on the legend item. You can enable this feature by enabling `ToggleSeriesVisibility` property.
 
 {% highlight xml %}
 [XAML]
@@ -221,9 +221,9 @@ chart.Legend.ToggleSeriesVisibility = true;
 
 You can position the legend anywhere inside the chart. Following properties are used to customize the legend positions.
 
-* **DockPosition**– used to position the legend relatively. Options available are: Left, Right, Top, Bottom and Floating. If the DockPosition is Floating, you can position the legend using x and y coordinates.
-* **OffsetX**– used to move the legend on x coordinate by the given offset value, this will work only if the dock position is Floating.
-* **OffsetY** - used to move the legend on y coordinate by the given offset value, this will work only if the dock position is Floating.
+* `DockPosition`– used to position the legend relatively. Options available are: Left, Right, Top, Bottom and Floating. If the DockPosition is Floating, you can position the legend using x and y coordinates.
+* `OffsetX`– used to move the legend on x coordinate by the given offset value, this will work only if the dock position is Floating.
+* `OffsetY` - used to move the legend on y coordinate by the given offset value, this will work only if the dock position is Floating.
 {% highlight c# %}
 
 [XAML]

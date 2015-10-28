@@ -71,7 +71,7 @@ chart.PrimaryAxis = new CategoryAxis() { LabelPlacement = LabelPlacement.Between
 
 ### Displaying labels after a fixed interval
 
-To display labels after a fixed interval n, you can set `Interval` property of ChartAxis as `n`. Default value of interval is 1 i.e. all the labels will be displayed by default.
+To display labels after a fixed interval n, you can set `Interval` property of ChartAxis as n. Default value of interval is 1 i.e. all the labels will be displayed by default.
 
 {% highlight xml %}
 [XAML]

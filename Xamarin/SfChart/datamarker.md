@@ -290,7 +290,7 @@ The following code illustrates how to specify the connector height and its angle
 
 		<chart:ChartDataMarker.ConnectorLineStyle>
 
-			<chart:ConnectorLineStyle ConnectorHeight="40" ConnectorRotationAngle="175" StrokeColor="Blue" StrokeWidth="3"/>
+			<chart:ConnectorLineStyle ConnectorHeight="50" ConnectorRotationAngle="175" StrokeColor="Blue" StrokeWidth="3"/>
 
 		</chart:ChartDataMarker.ConnectorLineStyle>
 

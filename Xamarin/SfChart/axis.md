@@ -9,7 +9,7 @@ documentation: ug
 
 # Axis
 
-**Charts** typically have two axes that are used to measure and categorize data: a vertical (Y) axis, and a horizontal (X) axis.
+Charts typically have two axes that are used to measure and categorize data: a vertical (Y) axis, and a horizontal (X) axis.
 
 Vertical(Y) axis always uses numerical scale. Horizontal(X) axis supports the following types of scale:
 
@@ -46,7 +46,7 @@ chart.PrimaryAxis = new CategoryAxis();
 
 ### Placing labels between ticks
 
-Labels in category axis can be placed between the ticks by setting **LabelPlacement** to **BetweenTicks**. Default value of **LabelPlacement** property is **OnTicks** i.e. labels will be placed on the ticks by default.
+Labels in category axis can be placed between the ticks by setting `LabelPlacement` to `BetweenTicks`. Default value of `LabelPlacement` property is `OnTicks` i.e. labels will be placed on the ticks by default.
 
 {% highlight xml %}
 [XAML]
@@ -71,7 +71,7 @@ chart.PrimaryAxis = new CategoryAxis() { LabelPlacement = LabelPlacement.Between
 
 ### Displaying labels after a fixed interval
 
-To display labels after a fixed interval n, you can set **Interval** property of ChartAxis as **n**. Default value of interval is 1 i.e. all the labels will be displayed by default.
+To display labels after a fixed interval n, you can set `Interval` property of ChartAxis as `n`. Default value of interval is 1 i.e. all the labels will be displayed by default.
 
 {% highlight xml %}
 [XAML]
@@ -123,7 +123,7 @@ chart.PrimaryAxis = new NumericalAxis();
 
 ### Customizing numeric range
 
-To customize the range of an axis, you can use the **Minimum** and **Maximum** properties of **NumericalAxis**. By default, nice range will be calculated automatically based on the provided data.
+To customize the range of an axis, you can use the `Minimum` and `Maximum` properties of `NumericalAxis`. By default, nice range will be calculated automatically based on the provided data.
 
 {% highlight xml %}
 [XAML]
@@ -147,7 +147,7 @@ chart.SecondaryAxis = new NumericalAxis() { Minimum = 10, Maximum = 50 };
 
 ### Customizing numeric interval
 
-Axis interval can be customized using the **Interval** property of ChartAxis. By default, nice interval will be calculated based on the minimum and maximum value of the provided data.
+Axis interval can be customized using the `Interval` property of ChartAxis. By default, nice interval will be calculated based on the minimum and maximum value of the provided data.
 
 {% highlight xml %}
 [XAML]
@@ -171,7 +171,7 @@ chart.SecondaryAxis = new NumericalAxis() { Interval = 10 };
 
 ### Apply padding to the range
 
-Padding can be applied to the minimum and maximum extremes of the axis range by using **RangePadding** property. Numeric axis supports the following types of padding.
+Padding can be applied to the minimum and maximum extremes of the axis range by using `RangePadding` property. Numeric axis supports the following types of padding.
 
 * None
 * Round
@@ -180,7 +180,7 @@ Padding can be applied to the minimum and maximum extremes of the axis range by 
 
 **None**
 
-When the value of **RangePadding** property is **none**, padding will not be applied to the axis. This is also the default value of **RangePadding** for horizontal axis.
+When the value of `RangePadding` property is `None`, padding will not be applied to the axis. This is also the default value of `RangePadding` for horizontal axis.
 
 {% highlight xml %}
 [XAML]
@@ -205,7 +205,7 @@ chart.SecondaryAxis = new NumericalAxis() { RangePadding = NumericalPadding.None
 
 **Round**
 
-When the value of **RangePadding** property is **Round**, axis range will be rounded to the nearest possible value divided by the interval.
+When the value of `RangePadding` property is `Round`, axis range will be rounded to the nearest possible value divided by the interval.
 
 {% highlight xml %}
 [XAML]
@@ -229,7 +229,7 @@ chart.SecondaryAxis = new NumericalAxis() { RangePadding = NumericalPadding.Roun
 
 **Additional**
 
-When the value of **RangePadding** property is **Additional**, axis range will be rounded and an interval of the axis will be added as padding to the minimum and maximum values of the range.
+When the value of `RangePadding` property is `Additional`, axis range will be rounded and an interval of the axis will be added as padding to the minimum and maximum values of the range.
 
 {% highlight xml %}
 [XAML]
@@ -253,7 +253,7 @@ chart.SecondaryAxis = new NumericalAxis() { RangePadding = NumericalPadding.Addi
 
 **Normal**
 
-When the value of **RangePadding** property is **Normal**, nice range will be calculated for the axis based on the best readability of the data. This is also the default for vertical axis.
+When the value of `RangePadding` property is `Normal`, nice range will be calculated for the axis based on the best readability of the data. This is also the default for vertical axis.
 
 {% highlight xml %}
 [XAML]
@@ -301,7 +301,7 @@ chart.PrimaryAxis = new DateTimeAxis();
 
 ### Customizing date time range
 
-To customize the range of an axis, you can use the **Minimum** and **Maximum** properties of **DateTimeAxis**. By default, nice range will be calculated automatically based on the provided data.
+To customize the range of an axis, you can use the `Minimum` and `Maximum` properties of `DateTimeAxis`. By default, nice range will be calculated automatically based on the provided data.
 
 {% highlight xml %}
 [XAML]
@@ -359,7 +359,7 @@ chart.PrimaryAxis = new DateTimeAxis() { Minimum = new DateTime(2010, 1, 1), Max
 
 ### Date time intervals
 
-Date time intervals can be customized using **Interval** and **IntervalType** properties of the date time axis. For example, setting **Interval** as **2** and **IntervalType** as **Years** will consider 2 years as interval.
+Date time intervals can be customized using `Interval` and `IntervalType` properties of the date time axis. For example, setting `Interval` as 2 and `IntervalType` as `Years` will consider 2 years as interval.
 
 Essential Chart supports the following types of interval for date time axis
 
@@ -402,7 +402,7 @@ chart.PrimaryAxis = new DateTimeAxis() { IntervalType = DateTimeIntervalType.Mon
 
 ### Apply padding to the range
 
-Padding can be applied to the minimum and maximum extremes of the range by using **RangePadding** property. Date time axis supports the following types of padding:
+Padding can be applied to the minimum and maximum extremes of the range by using `RangePadding` property. Date time axis supports the following types of padding:
 
 * None
 * Round
@@ -410,7 +410,7 @@ Padding can be applied to the minimum and maximum extremes of the range by using
 
 **None**
 
-When the value of **RangePadding** property is **None**, padding will not be applied to the axis. This is also the default value of **RangePadding**.
+When the value of `RangePadding` property is `None`, padding will not be applied to the axis. This is also the default value of `RangePadding`.
 
 {% highlight xml %}
 [XAML]
@@ -434,7 +434,7 @@ chart.PrimaryAxis = new DateTimeAxis() { RangePadding = DateTimeRangePadding.Non
 
 **Round**
 
-When the value of **RangePadding** property is **round**, axis range will be rounded to the nearest possible date time value.
+When the value of `RangePadding` property is `round`, axis range will be rounded to the nearest possible date time value.
 
 {% highlight xml %}
 [XAML]
@@ -458,7 +458,7 @@ chart.PrimaryAxis = new DateTimeAxis() { RangePadding = DateTimeRangePadding.Rou
 
 **Additional**
 
-When the value of **RangePadding** property is **Additional**, range will be rounded and date time interval of the axis will be added as padding to the minimum and maximum extremes of the range.
+When the value of `RangePadding` property is `Additional`, range will be rounded and date time interval of the axis will be added as padding to the minimum and maximum extremes of the range.
 
 {% highlight xml %}
 [XAML]
@@ -486,7 +486,7 @@ Customization of features such as axis title, labels, grid lines and tick lines 
 
 ### Axis Visibility
 
-Axis visibility can be controlled using the **IsVisible** property of axis. Default value of **IsVisible** property is **true**.
+Axis visibility can be controlled using the `IsVisible` property of axis. Default value of `IsVisible` property is `True`.
 
 {% highlight xml %}
 [XAML]
@@ -510,15 +510,15 @@ chart.SecondaryAxis.IsVisible = false;
 
 ### Axis title
 
-The **Title** property in axis provides options to customize the text and font of axis title. Axis does not display title by default. The title can be customized using following properties,
+The `Title` property in axis provides options to customize the text and font of axis title. Axis does not display title by default. The title can be customized using following properties,
 
-* **Text** – used to set the title for axis.
-* **TextColor** – used to change the color of the label.
-* **BackgroundColor** – used to change the label background color.
-* **BorderColor** – used to change the border color.
-* **BorderWidth** – used to change the width of the border.
-* **Font** – used to change the text size, font family and font weight.
-* **Margin** - used to change the margin size for labels.
+* `Text` – used to set the title for axis.
+* `TextColor` – used to change the color of the label.
+* `BackgroundColor` – used to change the label background color.
+* `BorderColor` – used to change the border color.
+* `BorderWidth` – used to change the width of the border.
+* `Font` – used to change the text size, font family and font weight.
+* `Margin` - used to change the margin size for labels.
 
 Following code snippet illustrates how to enable and customize the axis title.
 
@@ -565,14 +565,14 @@ chart.PrimaryAxis.Title.Font = Font.SystemFontOfSize(20, FontAttributes.Bold);
 
 ### Label customization
 
-The **LabelStyle** property of axis provides options to customize the font-family, color, size and font-weight of axis labels. The axis labels can be customized using following properties:
+The `LabelStyle` property of axis provides options to customize the font-family, color, size and font-weight of axis labels. The axis labels can be customized using following properties:
 
-* **TextColor** – used to change the color of the labels.
-* **BackgroundColor** – used to change the label background color.
-* **BorderColor** – used to change the border color.
-* **BorderThickness** – used to change the thickness of the border.
-* **Font** – used to change the text size, font family and font weight.
-* **Margin** - used to change the margin size for labels.
+* `TextColor` – used to change the color of the labels.
+* `BackgroundColor` – used to change the label background color.
+* `BorderColor` – used to change the border color.
+* `BorderThickness` – used to change the thickness of the border.
+* `Font` – used to change the text size, font family and font weight.
+* `Margin` - used to change the margin size for labels.
 
 {% highlight xml %}
 [XAML]
@@ -614,7 +614,7 @@ chart.PrimaryAxis.LabelStyle.TextColor = Color.Red;
 
 ### Label and tick positioning
 
-Axis labels and ticks can be positioned inside or outside the chart area by using **LabelStyle**.**LabelsPosition** and **LabelStyle**.**TickPosition** properties of ChartAxis. By default labels and ticks will be positioned outside the chart area.
+Axis labels and ticks can be positioned inside or outside the chart area by using `LabelStyle`.`LabelsPosition` and `LabelStyle`.`TickPosition` properties of ChartAxis. By default labels and ticks will be positioned outside the chart area.
 
 {% highlight xml %}
 [XAML]
@@ -648,7 +648,7 @@ chart.PrimaryAxis.TickPosition = AxisElementPosition.Inside;
 
 ### Edge labels placement
 
-Labels with long text at the edges of an axis may appear partially outside the chart. The **EdgeLabelsDrawingMode** property can be used to avoid the partial appearance of labels at the corners.
+Labels with long text at the edges of an axis may appear partially outside the chart. The `EdgeLabelsDrawingMode` property can be used to avoid the partial appearance of labels at the corners.
 
 {% highlight xml %}
 [XAML]
@@ -668,7 +668,7 @@ chart.PrimaryAxis.EdgeLabelsDrawingMode = EdgeLabelsDrawingMode.Shift;
 
 ### Grid lines customization
 
-The **ShowMajorGridLines** and **ShowMinorGridLines** properties are used to control the visibility of grid lines. **MajorGridLineStyle** and **MinorGridLineStyle** properties in axis are used to customize the major grid lines and minor grid lines of an axis respectively. They provide options to change the width, dashes, color of grid lines. By default minor grid lines will not be visible. 
+The `ShowMajorGridLines` and `ShowMinorGridLines` properties are used to control the visibility of grid lines. `MajorGridLineStyle` and `MinorGridLineStyle` properties in axis are used to customize the major grid lines and minor grid lines of an axis respectively. They provide options to change the width, dashes, color of grid lines. By default minor grid lines will not be visible. 
 
 {% highlight xml %}
 [XAML]
@@ -702,7 +702,7 @@ chart. SecondaryAxis = new NumericalAxis ()
 
 ### Tick lines customization
 
-The **MajorTickStyle** and **MinorTickStyle** properties in axis are used to customize the major tick lines of an axis and minor tick lines of an axis respectively. They provide options to change the width, size, color and visibility of tick lines. By default minor tick lines will not be visible.
+The `MajorTickStyle` and `MinorTickStyle` properties in axis are used to customize the major tick lines of an axis and minor tick lines of an axis respectively. They provide options to change the width, size, color and visibility of tick lines. By default minor tick lines will not be visible.
 
 {% highlight xml %}
 [XAML]
@@ -758,7 +758,7 @@ chart.SecondaryAxis = numerical;
 
 ### Inversing axis
 
-Axis can be inversed using the **IsInversed** property of axis. Default value of **IsInversed** property is **false**.
+Axis can be inversed using the `IsInversed` property of axis. Default value of `IsInversed` property is `False`.
 
 {% highlight c# %}
 [XAML]
@@ -782,7 +782,7 @@ chart.SecondaryAxis.IsInversed = true;
 
 ### Placing axes at the opposite side
 
-The **OpposedPosition** property of axis can be used to place the axis at the opposite side of its default position. Default value of **OpposedPosition** property is **false**. 
+The `OpposedPosition` property of axis can be used to place the axis at the opposite side of its default position. Default value of `OpposedPosition` property is `False`. 
 
 {% highlight xml %}
 [XAML]
@@ -806,7 +806,7 @@ chart.SecondaryAxis.OpposedPosition = true;
 
 ### Maximum number of labels per 100 pixels
 
-By default, a maximum of 3 labels are displayed for each 100 pixels in axis. The maximum number of labels that should be present within 100 pixels length can be customized using the **MaximumLabels** property of an axis. This property is applicable only for automatic range calculation and will not work if you set value for **Interval** property of an axis.
+By default, a maximum of 3 labels are displayed for each 100 pixels in axis. The maximum number of labels that should be present within 100 pixels length can be customized using the `MaximumLabels` property of an axis. This property is applicable only for automatic range calculation and will not work if you set value for `Interval` property of an axis.
 
 {% highlight xml %}
 [XAML]
@@ -830,7 +830,7 @@ Chart.SecondaryAxis.MaximumLabels = 5;
 
 ## Smart Axis Labels
 
-Axis labels may overlap with each other based on chart dimensions and label size. The **LabelsIntersectAction** property of axis is useful in avoiding the overlapping of axis labels with each other. Default value of **LabelsIntersectAction** is **None**. Other available values of **LabelsIntersectAction** are **MultipleRows** and **Hide**.
+Axis labels may overlap with each other based on chart dimensions and label size. The `LabelsIntersectAction` property of axis is useful in avoiding the overlapping of axis labels with each other. Default value of `LabelsIntersectAction` is `None`. Other available values of `LabelsIntersectAction` are `MultipleRows` and `Hide`.
 
 {% highlight xml %}
 [XAML]

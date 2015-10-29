@@ -359,7 +359,7 @@ chart.PrimaryAxis = new DateTimeAxis() { Minimum = new DateTime(2010, 1, 1), Max
 
 ### Date time intervals
 
-Date time intervals can be customized using `Interval` and `IntervalType` properties of the date time axis. For example, setting `Interval` as 2 and `IntervalType` as `Years` will consider 2 years as interval.
+Date time intervals can be customized using `Interval` and `IntervalType` properties of the `DateTimeAxis`. For example, setting `Interval` as 2 and `IntervalType` as `Years` will consider 2 years as interval.
 
 Essential Chart supports the following types of interval for date time axis
 

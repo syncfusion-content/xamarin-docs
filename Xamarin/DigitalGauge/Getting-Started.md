@@ -270,7 +270,7 @@ The Digital Gauge is customized by setting the properties as explained in the 
 
 //Sets the character stroke color.
 
-digitalGauge1. CharacterStroke = Color.Rgb(20,108,237);
+digitalGauge1. CharacterStroke = Color.FromRgb(20,108,237);
 
 //Sets the character height.
 
@@ -278,7 +278,7 @@ digitalGauge1. CharacterHeight = 25 ;
 
 //Sets the character spacing.
 
-digitalGauge1. CharactersSpacing = 2;
+digitalGauge1. CharacterSpacing = 2;
 
 //Sets the character width.
 

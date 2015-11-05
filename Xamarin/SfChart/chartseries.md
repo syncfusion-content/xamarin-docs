@@ -19,11 +19,14 @@ You can add multiple series to `Series` property of `SfChart` class.
 <chart:SfChart>
 ...
 
-	<chart:ColumnSeries ItemsSource ="{Binding Data }" XBindingPath="Country" YBindingPath="Value"/>
+	<chart:ColumnSeries ItemsSource ="{Binding Data }" XBindingPath="Country"
+	 YBindingPath="Value"/>
 
-	<chart:ColumnSeries ItemsSource ="{Binding Data1}" XBindingPath="Country" YBindingPath="Value"/>
+	<chart:ColumnSeries ItemsSource ="{Binding Data1}" XBindingPath="Country"
+	 YBindingPath="Value"/>
 
-	<chart:ColumnSeries ItemsSource ="{Binding Data2}" XBindingPath="Country" YBindingPath="Value"/>
+	<chart:ColumnSeries ItemsSource ="{Binding Data2}" XBindingPath="Country"
+	 YBindingPath="Value"/>
 
 </chart:SfChart>
 

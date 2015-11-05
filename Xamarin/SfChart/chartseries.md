@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Xamarin.Forms Chart multiple series and combination of series 
+title: Multiple series and combination of series
 description: How to add multiple series and combination series in Essential Xamarin.Forms Chart
 platform: xamarin
 control: Chart

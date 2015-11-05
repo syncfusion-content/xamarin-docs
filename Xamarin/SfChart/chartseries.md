@@ -17,7 +17,7 @@ You can add multiple series to `Series` property of `SfChart` class.
 [XAML]
 
 <chart:SfChart>
-…
+...
 
 	<chart:ColumnSeries ItemsSource ="{Binding Data }" XBindingPath="Country" YBindingPath="Value"/>
 
@@ -33,7 +33,7 @@ You can add multiple series to `Series` property of `SfChart` class.
 [C#]
 
 SfChart chart = new SfChart();
-…
+...
 
 ColumnSeries columnSeries = new ColumnSeries() { ItemsSource = Data, XBindingPath = "Country", YBindingPath = "Value" };
 
@@ -59,7 +59,7 @@ chart.Series.Add(columnSeries2);
 [XAML]
 
 <chart:SfChart>
-…
+...
 
 	<chart:ColumnSeries ItemsSource ="{Binding Data}" XBindingPath="Month" YBindingPath="Value"/>
 
@@ -74,7 +74,7 @@ chart.Series.Add(columnSeries2);
 
 SfChart chart = new SfChart();
 
-…
+...
 
 ColumnSeries columnSeries = new ColumnSeries() { ItemsSource = Data, XBindingPath = "Month", YBindingPath = "Value" };
 
@@ -99,7 +99,7 @@ When the combination of Cartesian and accumulation series types are added to the
 [XAML]
 
 <chart:SfChart>
-…
+...
 
 	<chart:LineSeries ItemsSource ="{Binding Data}" XBindingPath="Month" YBindingPath="Value"/>
 
@@ -113,7 +113,7 @@ When the combination of Cartesian and accumulation series types are added to the
 [C#]
 
 SfChart chart = new SfChart();
-…
+...
 
 LineSeries lineSeries = new LineSeries() { ItemsSource = Data, XBindingPath = "Month", YBindingPath = "Value" };
 

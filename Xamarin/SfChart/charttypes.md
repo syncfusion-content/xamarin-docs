@@ -14,7 +14,6 @@ documentation: ug
 To render a line chart, create an instance of `LineSeries` and add to the `Series` collection property of `SfChart`. You can use the following properties to customize the appearance.
 
 * `Color` – used to change the color of the line.
-
 * `StrokeWidth` – used to change the stroke width of the line.
 
 {% highlight xml %}
@@ -41,16 +40,14 @@ chart.Series.Add(lineSeries);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/cartesianseries_clubbed/Line.png](charttypes_images/charttypes_img1.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/cartesianseries_clubbed/Line.png](charttypes_images/charttypes_img1.png)
 
 ## Area Chart
 
 To render an area chart, create an instance of `AreaSeries` and add to the `Series` collection property of `SfChart`. You can use the following properties to customize the appearance.
 
 * `Color` – used to change the color of the series.
-
 * `StrokeWidth` – used to change the stroke width of the series.
-
 * `StrokeColor` – used to change the stroke color of the series.
 
 {% highlight xml %}
@@ -77,16 +74,14 @@ chart.Series.Add(areaSeries);
 
 {% endhighlight %}
 
-![C:/Users/yuvaraj.palanisamy/Documents/My Received Files/area-clubbed.png](charttypes_images/charttypes_img2.jpeg)
+![C:/Users/yuvaraj.palanisamy/Documents/My Received Files/area-clubbed.png](charttypes_images/charttypes_img2.png)
 
 ## Spline Area Chart
 
 To render a spline area chart, create an instance of `SplineAreaSeries` and add to the `Series` collection property of `SfChart`. You can use the following properties to customize the spline area appearance.
 
 * `Color` – used to change the color of the series.
-
 * `StrokeWidth` – used to change the stroke width of the series.
-
 * `StrokeColor` – used to change the stroke color of the series.
 
 {% highlight xml %}
@@ -113,16 +108,14 @@ chart.Series.Add(splineAreaSeries);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/cartesianseries_clubbed/SplinArea.png](charttypes_images/charttypes_img3.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/cartesianseries_clubbed/SplinArea.png](charttypes_images/charttypes_img3.png)
 
 ## Stacked Area Chart
 
 To render a stacked area chart, create an instance of `StackingAreaSeries` and add to the `Series` collection property of `SfChart`. You can use the following properties to customize the stacked area appearance.
 
 * `Color` – used to change the color of the series.
-
 * `StrokeWidth` – used to change the stroke width of the series.
-
 * `StrokeColor` – used to change the stroke color of the series.
 
 {% highlight xml %}
@@ -161,16 +154,14 @@ chart.Series.Add(stackingAreaSeries3);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/cartesianseries_clubbed/StackingArea.png](charttypes_images/charttypes_img4.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/cartesianseries_clubbed/StackingArea.png](charttypes_images/charttypes_img4.png)
 
 ## 100% Stacked Area Chart
 
 To render a 100% stacked area chart, create an instance of `StackingArea100Series` and add to the `Series` collection property of `SfChart`. You can use the following properties to customize the 100% stacked area appearance.
 
 * `Color` – used to change the color of the series.
-
 * `StrokeWidth` – used to change the stroke width of the series.
-
 * `StrokeColor` – used to change the stroke color of the series.
 
 {% highlight xml %}
@@ -209,16 +200,14 @@ chart.Series.Add(stackingArea100Series3);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/cartesianseries_clubbed/StackingArea100.png](charttypes_images/charttypes_img5.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/cartesianseries_clubbed/StackingArea100.png](charttypes_images/charttypes_img5.png)
 
 ## Column Chart
 
 To render a column chart, create an instance of `ColumnSeries` and add to the `Series` collection property of `SfChart`. You can use the following properties to customize the appearance.
 
 * `Color` – used to change the color of the series.
-
 * `StrokeWidth` – used to change the stroke width of the series.
-
 * `StrokeColor` – used to change the stroke color of the series. 
 
 {% highlight xml %}
@@ -247,7 +236,7 @@ chart.Series.Add(columnSeries);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/cartesianseries_clubbed/column.png](charttypes_images/charttypes_img6.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/cartesianseries_clubbed/column.png](charttypes_images/charttypes_img6.png)
 
 ## Range Column Chart
 
@@ -257,7 +246,7 @@ Since the `RangeColumnSeries` requires two Y values for a point, your data shoul
 
 There are two ways you can provide data to RangeColumn chart,
 
-1. You can use `[ChartDataPoint](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/topic654.html# "")`’s three parameter constructor to pass x value, high and low values to  `RangeColumnSeries`,
+1. You can use [ChartDataPoint](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/topic654.html# "")’s three parameter constructor to pass x value, high and low values to  `RangeColumnSeries`,
 
 {% highlight c# %}
 [C#]
@@ -318,21 +307,17 @@ chart.Series.Add(rangeColumnSeries);
 Following properties are used to customize the range column segment appearance,
 
 * `Color` – used to change the color of the series.
-
 * `StrokeWidth` – used to change the stroke width of the series.
-
 * `StrokeColor` – used to change the stroke color of the series.
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/cartesianseries_clubbed/RangeColumn.png](charttypes_images/charttypes_img7.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/cartesianseries_clubbed/RangeColumn.png](charttypes_images/charttypes_img7.png)
 
 ## Stacked Column Chart
 
 To render a stacked column chart, create an instance of `StackingColumnSeries` and add to the `Series` collection property of `SfChart`. You can use the following properties to customize the stacked column segment appearance.
 
 * `Color` – used to change the color of the series.
-
 * `StrokeWidth` – used to change the stroke width of the series.
-
 * `StrokeColor` – used to change the stroke color of the series.
 
 {% highlight xml %}
@@ -371,16 +356,14 @@ chart.Series.Add(stackingColumnSeries3);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/cartesianseries_clubbed/Stackingcolumn.png](charttypes_images/charttypes_img8.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/cartesianseries_clubbed/Stackingcolumn.png](charttypes_images/charttypes_img8.png)
 
 ## 100% Stacked Column Chart
 
 To render a 100% stacked column chart, create an instance of `StackingColumn100Series` and add to the `Series` collection property of `SfChart`. You can use the following properties to customize the series appearance.
 
 * `Color` – used to change the color of the series.
-
 * `StrokeWidth` – used to change the stroke width of the series.
-
 * `StrokeColor` – used to change the stroke color of the series.
 
 {% highlight xml %}
@@ -419,16 +402,14 @@ chart.Series.Add(stackingColumn100Series3);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Cartesianseries1-clubbed/StackingColumn100.png](charttypes_images/charttypes_img9.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Cartesianseries1-clubbed/StackingColumn100.png](charttypes_images/charttypes_img9.png)
 
 ## Bar Chart
 
 To render a bar chart, create an instance of `BarSeries` and add to the `Series` collection property of `SfChart`. You can use the following properties to customize the bar segment appearance.
 
 * `Color` – used to change the color of the series.
-
 * `StrokeWidth` – used to change the stroke width of series.
-
 * `StrokeColor` – used to change the stroke color of the series.
 
 {% highlight xml %}
@@ -455,16 +436,14 @@ chart.Series.Add(barSeries);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Cartesianseries1-clubbed/bar.png](charttypes_images/charttypes_img10.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Cartesianseries1-clubbed/bar.png](charttypes_images/charttypes_img10.png)
 
 ## Stacked Bar Chart
 
 To render a stacked bar chart, create an instance of `StackingBarSeries` and add to the `Series` collection property of `SfChart`. You can use the following properties to customize the stacked bar segment appearance.
 
 * `Color` – used to change the color of the series.
-
 * `StrokeWidth` – used to change the stroke width of the series.
-
 * `StrokeColor` – used to change the stroke color of the series.
 
 {% highlight xml %}
@@ -503,16 +482,14 @@ chart.Series.Add(stackingBarSeries3);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Cartesianseries1-clubbed/StackingBar.png](charttypes_images/charttypes_img11.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Cartesianseries1-clubbed/StackingBar.png](charttypes_images/charttypes_img11.png)
 
 ## 100% Stacked Bar Chart
 
 To render a 100% stacked bar chart, create an instance of `StackingBar100Series` and add to the `Series` collection property of `SfChart`. You can use the following properties to customize the series appearance.
 
 * `Color` – used to change the color of the series.
-
 * `StrokeWidth` – used to change the stroke width of the series.
-
 * `StrokeColor` – used to change the stroke color of the series.
 
 {% highlight xml %}
@@ -551,14 +528,13 @@ chart.Series.Add(stackingBar100Series3);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Cartesianseries1-clubbed/stackingbar100.png](charttypes_images/charttypes_img12.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Cartesianseries1-clubbed/stackingbar100.png](charttypes_images/charttypes_img12.png)
 
 ## Spline Chart
 
 To render a spline chart, create an instance of `SplineSeries` and add to the `Series` collection property of `SfChart`. You can use the following properties to customize the spline segment appearance.
 
 * `Color` – used to change the color of the series.
-
 * `StrokeWidth` – used to change the stroke width of the series.
 
 {% highlight xml %}
@@ -585,14 +561,13 @@ chart.Series.Add(splineSeries);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Cartesianseries1-clubbed/Spline.png](charttypes_images/charttypes_img13.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Cartesianseries1-clubbed/Spline.png](charttypes_images/charttypes_img13.png)
 
 ## Fast Line Chart
 
 `FastLineSeries` is a line chart, but it loads faster than `LineSeries`. You can use this when there are large number of points to be loaded in chart. To render a fast line chart, create an instance of **FastLineSeries** and add to the **Series** collection property of **SfChart**. You can use the following properties to customize the fast line segment appearance.
 
 * `Color` – used to change the color of the series.
-
 * `StrokeWidth` – used to change the stroke width of the series.
 
 {% highlight xml %}
@@ -619,7 +594,7 @@ chart.Series.Add(fastLineSeries);
 
 {% endhighlight %}
 
-![C:/Users/yuvaraj.palanisamy/Documents/My Received Files/fastline1.png](charttypes_images/charttypes_img14.jpeg)
+![C:/Users/yuvaraj.palanisamy/Documents/My Received Files/fastline1.png](charttypes_images/charttypes_img14.png)
 
 ### Dashed Lines
 
@@ -636,7 +611,7 @@ fastLineSeries.StrokeDashArray = new double[2] { 2, 3 };
 
 {% endhighlight %}
 
-![C:/Users/yuvaraj.palanisamy/Documents/My Received Files/faslinedas(1).png](charttypes_images/charttypes_img15.jpeg)
+![C:/Users/yuvaraj.palanisamy/Documents/My Received Files/faslinedas(1).png](charttypes_images/charttypes_img15.png)
 
 ## Bubble Chart
 
@@ -646,7 +621,7 @@ Bubble chart requires 3 fields (X, Y and Size) to plot a point. Here `‘Size’
 
 There are two ways you can provide data to bubble chart,
 
-1. You can use `[ChartDataPoint](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/topic654.html# "")`’s three parameter constructor to pass x, y and size values to  `BubbleSeries`,
+1. You can use [ChartDataPoint](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/topic654.html# "")’s three parameter constructor to pass x, y and size values to  `BubbleSeries`,
 
 {% highlight c# %}
 [C#]
@@ -655,7 +630,6 @@ SfChart chart = new SfChart();
 ...
 
 ObservableCollection<ChartDataPoint> data = new ObservableCollection<ChartDataPoint>()
-
 {    
 
 new ChartDataPoint(64, 14.4, 20),
@@ -711,29 +685,21 @@ chart.Series.Add(bubbleSeries);
 Following properties are used to customize the bubble segment appearance.
 
 * `Color` – used to change the color of the series.
-
 * `StrokeWidth` – used to change the stroke width of the series.
-
 * `StrokeColor` – used to change the stroke color of the series.
-
 * `MinimumRadius` – used to change the minimum size of the series.
-
 * `MaximumRadius` – used to change the maximum size of the series.
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Cartesianseries1-clubbed/bubble.png](charttypes_images/charttypes_img16.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Cartesianseries1-clubbed/bubble.png](charttypes_images/charttypes_img16.png)
 
 ## Scatter Chart	
 
 To render a scatter chart, create an instance of `ScatterSeries` and add to the `Series` collection property of `SfChart`. You can use the following properties to customize the scatter segment appearance.
 
 * `Color` – used to change the color of the series.
-
 * `StrokeWidth` – used to change the stroke width of the series.
-
 * `StrokeColor` – used to change the stroke color of the series.
-
 * `ScatterWidth` – used to change the width of the series.
-
 * `ScatterHeight` – used to change the height of the series.
 
 {% highlight xml %}
@@ -760,7 +726,7 @@ chart.Series.Add(scatterSeries);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Cartesianseries1-clubbed/scatter.png](charttypes_images/charttypes_img17.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Cartesianseries1-clubbed/scatter.png](charttypes_images/charttypes_img17.png)
 
 ## OHLC Chart
 
@@ -770,7 +736,7 @@ OHLC chart requires five values (X, Open, High, Low and Close) to plot a point.
 
 There are two ways you can provide data to an OHLC chart,
 
-1. You can use `[ChartDataPoint](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/topic654.html# "")`’s five parameter constructor to pass x, open, high, low and close values to  `HiLoOpenCloseSeries`,
+1. You can use [ChartDataPoint](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/topic654.html# "")’s five parameter constructor to pass x, open, high, low and close values to  `HiLoOpenCloseSeries`,
 
 {% highlight c# %}
 [C#]
@@ -825,15 +791,13 @@ chart.Series.Add(hiLoOpenCloseSeries);
 
 {% endhighlight %}
 
-You can use the following properties to customize the **HiLoOpenCloseSeries** series appearance.
+You can use the following properties to customize the `HiLoOpenCloseSeries` series appearance.
 
 * `Color` – used to change the color of the series.
-
 * `StrokeWidth` – used to change the stroke width of the series.
-
 * `StrokeColor` – used to change the stroke color of the series.
 
-![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/HILO.png](charttypes_images/charttypes_img18.jpeg)
+![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/HILO.png](charttypes_images/charttypes_img18.png)
 
 ### Bull and Bear Color	
 
@@ -861,7 +825,7 @@ hiLoOpenCloseSeries.BullFillColor = Color.Purple;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/HiloColor.png](charttypes_images/charttypes_img19.jpeg)
+![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/HiloColor.png](charttypes_images/charttypes_img19.png)
 
 ## Candle Chart
 
@@ -871,7 +835,7 @@ Candle chart requires five values (X, Open, High, Low and Close) to plot a point
 
 There are two ways you can provide data to an OHLC chart,
 
-1. You can use `[ChartDataPoint](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/topic654.html# "")`’s five parameter constructor to pass x, open, high, low and close values to  `CandleSeries`,
+1. You can use [ChartDataPoint](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/topic654.html# "")’s five parameter constructor to pass x, open, high, low and close values to  `CandleSeries`,
 
 {% highlight c# %}
 [C#]
@@ -929,12 +893,10 @@ chart.Series.Add(candleSeries);
 You can use the following properties to customize the candle segment appearance.
 
 * `Color` – used to change the color of the series.
-
 * `StrokeWidth` – used to change the stroke width of the series.
-
 * `StrokeColor` – used to change the stroke color of the series.
 
-![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/Candle.png](charttypes_images/charttypes_img20.jpeg)
+![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/Candle.png](charttypes_images/charttypes_img20.png)
 
 ### Bull and Bear Color
 
@@ -962,7 +924,7 @@ candleSeries.BullFillColor = Color.Purple;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/Candlecolor.png](charttypes_images/charttypes_img21.jpeg)
+![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/Candlecolor.png](charttypes_images/charttypes_img21.png)
 
 ## Pie Chart
 
@@ -998,7 +960,7 @@ chart.Series.Add(pieSeries);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/pieseries.png](charttypes_images/charttypes_img22.jpeg)
+![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/pieseries.png](charttypes_images/charttypes_img22.png)
 
 ### Changing the pie size
 
@@ -1024,7 +986,7 @@ pieSeries.CircularCoefficient = 0.5;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/pieCircularCo-efficient.png](charttypes_images/charttypes_img23.jpeg)
+![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/pieCircularCo-efficient.png](charttypes_images/charttypes_img23.png)
 
 ### Exploding a pie segment
 
@@ -1050,7 +1012,7 @@ pieSeries.ExplodeIndex = 1;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/PieExplodeindex.png](charttypes_images/charttypes_img24.jpeg)
+![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/PieExplodeindex.png](charttypes_images/charttypes_img24.png)
 
 ### Exploding all the segments
 
@@ -1076,7 +1038,7 @@ pieSeries.ExplodeAll = true;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/PieExplodeAll.png](charttypes_images/charttypes_img25.jpeg)
+![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/PieExplodeAll.png](charttypes_images/charttypes_img25.png)
 
 ### Sector of Pie
 
@@ -1104,7 +1066,7 @@ pieSeries.EndAngle = 360;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/piesector.png](charttypes_images/charttypes_img26.jpeg)
+![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/piesector.png](charttypes_images/charttypes_img26.png)
 
 ## Doughnut Chart
 
@@ -1140,7 +1102,7 @@ chart.Series.Add(doughnutSeries);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/Donugnut.png](charttypes_images/charttypes_img27.jpeg)
+![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/Donugnut.png](charttypes_images/charttypes_img27.png)
 
 ### Changing Doughnut inner radius
 
@@ -1166,7 +1128,7 @@ doughnutSeries.DoughnutCoefficient = 0.6;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/DoughnutCoefficient.png](charttypes_images/charttypes_img28.jpeg)
+![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/DoughnutCoefficient.png](charttypes_images/charttypes_img28.png)
 
 ### Changing the doughnut size
 
@@ -1192,7 +1154,7 @@ doughnutSeries.CircularCoefficient = 0.5;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/doughnutCircularCo-eff.png](charttypes_images/charttypes_img29.jpeg)
+![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/doughnutCircularCo-eff.png](charttypes_images/charttypes_img29.png)
 
 ### Exploding a doughnut segment
 
@@ -1218,7 +1180,7 @@ doughnutSeries.ExplodeIndex = 1;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/doughnutExplodeIndex.png](charttypes_images/charttypes_img30.jpeg)
+![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/doughnutExplodeIndex.png](charttypes_images/charttypes_img30.png)
 
 ### Exploding all the segments
 
@@ -1244,7 +1206,7 @@ doughnutSeries.ExplodeAll = true;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/doughnutExplodeAll.png](charttypes_images/charttypes_img31.jpeg)
+![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/doughnutExplodeAll.png](charttypes_images/charttypes_img31.png)
 
 ### Sector of Doughnut
 
@@ -1272,7 +1234,7 @@ doughnutSeries.EndAngle = 360;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/DoughnutSector.png](charttypes_images/charttypes_img32.jpeg)
+![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/DoughnutSector.png](charttypes_images/charttypes_img32.png)
 
 ## Pyramid Chart
 
@@ -1308,7 +1270,7 @@ chart.Series.Add(pyramidSeries);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/pyramid.png](charttypes_images/charttypes_img33.jpeg)
+![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/pyramid.png](charttypes_images/charttypes_img33.png)
 
 ### Pyramid Mode
 
@@ -1334,7 +1296,7 @@ pyramidSeries.PyramidMode = ChartPyramidMode.Surface;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/pyramidmode.png](charttypes_images/charttypes_img34.jpeg)
+![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/pyramidmode.png](charttypes_images/charttypes_img34.png)
 
 ### Gap between the segments
 
@@ -1360,7 +1322,7 @@ pyramidSeries.GapRatio = 0.1;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/pyramidgap.png](charttypes_images/charttypes_img35.jpeg)
+![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/pyramidgap.png](charttypes_images/charttypes_img35.png)
 
 ### Exploding a pyramid segment
 
@@ -1386,7 +1348,7 @@ pyramidSeries.ExplodeIndex = 2;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/pyramidExplode.png](charttypes_images/charttypes_img36.jpeg)
+![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/pyramidExplode.png](charttypes_images/charttypes_img36.png)
 
 ## Funnel Chart
 
@@ -1422,7 +1384,7 @@ chart.Series.Add(funnelSeries);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/Funnel.png](charttypes_images/charttypes_img37.jpeg)
+![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/Funnel.png](charttypes_images/charttypes_img37.png)
 
 ### Gap between the segments
 
@@ -1448,7 +1410,7 @@ funnelSeries.GapRatio = 0.1;
 
 {% endhighlight %}
 
-![C:/Users/yuvaraj.palanisamy/Documents/My Received Files/funnelgap.png](charttypes_images/charttypes_img38.jpeg)
+![C:/Users/yuvaraj.palanisamy/Documents/My Received Files/funnelgap.png](charttypes_images/charttypes_img38.png)
 
 ### Exploding a funnel segment
 
@@ -1474,7 +1436,7 @@ funnelSeries.ExplodeIndex = 1;
 
 {% endhighlight %}
 
-![C:/Users/yuvaraj.palanisamy/Documents/My Received Files/funnel-explode.png](charttypes_images/charttypes_img39.jpeg)
+![C:/Users/yuvaraj.palanisamy/Documents/My Received Files/funnel-explode.png](charttypes_images/charttypes_img39.png)
 
 ### Changing the minimum width of the funnel
 
@@ -1500,4 +1462,4 @@ funnelSeries.MinWidth = 20;
 
 {% endhighlight %}
 
-![C:/Users/yuvaraj.palanisamy/Documents/My Received Files/funnelminwidth.png](charttypes_images/charttypes_img40.jpeg)
+![C:/Users/yuvaraj.palanisamy/Documents/My Received Files/funnelminwidth.png](charttypes_images/charttypes_img40.png)

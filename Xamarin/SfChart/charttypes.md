@@ -13,8 +13,8 @@ documentation: ug
 
 To render a line chart, create an instance of `LineSeries` and add to the `Series` collection property of `SfChart`. You can use the following properties to customize the appearance.
 
-* `Color` – used to change the color of the line.
-* `StrokeWidth` – used to change the stroke width of the line.
+* `Color` – used to change the color of the line.
+* `StrokeWidth` – used to change the stroke width of the line.
 
 {% highlight xml %}
 [XAML]
@@ -114,9 +114,9 @@ chart.Series.Add(splineAreaSeries);
 
 To render a stacked area chart, create an instance of `StackingAreaSeries` and add to the `Series` collection property of `SfChart`. You can use the following properties to customize the stacked area appearance.
 
-* `Color` – used to change the color of the series.
-* `StrokeWidth` – used to change the stroke width of the series.
-* `StrokeColor` – used to change the stroke color of the series.
+* `Color` – used to change the color of the series.
+* `StrokeWidth` – used to change the stroke width of the series.
+* `StrokeColor` – used to change the stroke color of the series.
 
 {% highlight xml %}
 [XAML]
@@ -246,7 +246,7 @@ Since the `RangeColumnSeries` requires two Y values for a point, your data shoul
 
 There are two ways you can provide data to RangeColumn chart,
 
-1. You can use [ChartDataPoint](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/topic654.html# "")’s three parameter constructor to pass x value, high and low values to  `RangeColumnSeries`,
+1.	You can use [ChartDataPoint](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/topic654.html# "")’s three parameter constructor to pass x value, high and low values to  `RangeColumnSeries`,
 
 {% highlight c# %}
 [C#]
@@ -278,7 +278,7 @@ chart.Series.Add(rangeColumnSeries);
 
 {% endhighlight %}
 
-2. Or else you can use `High` and `Low` properties of `RangeColumnSeries` to map the high and low values from custom object to chart. 
+2.	Or else you can use `High` and `Low` properties of `RangeColumnSeries` to map the high and low values from custom object to chart. 
 
 {% highlight xml %}
 [XAML]
@@ -316,9 +316,9 @@ Following properties are used to customize the range column segment appearance,
 
 To render a stacked column chart, create an instance of `StackingColumnSeries` and add to the `Series` collection property of `SfChart`. You can use the following properties to customize the stacked column segment appearance.
 
-* `Color` – used to change the color of the series.
-* `StrokeWidth` – used to change the stroke width of the series.
-* `StrokeColor` – used to change the stroke color of the series.
+* `Color` – used to change the color of the series.
+* `StrokeWidth` – used to change the stroke width of the series.
+* `StrokeColor` – used to change the stroke color of the series.
 
 {% highlight xml %}
 [XAML]
@@ -565,7 +565,7 @@ chart.Series.Add(splineSeries);
 
 ## Fast Line Chart
 
-`FastLineSeries` is a line chart, but it loads faster than `LineSeries`. You can use this when there are large number of points to be loaded in chart. To render a fast line chart, create an instance of **FastLineSeries** and add to the **Series** collection property of **SfChart**. You can use the following properties to customize the fast line segment appearance.
+`FastLineSeries` is a line chart, but it loads faster than `LineSeries`. You can use this when there are large number of points to be loaded in chart. To render a fast line chart, create an instance of `FastLineSeries` and add to the `Series` collection property of `SfChart`. You can use the following properties to customize the fast line segment appearance.
 
 * `Color` – used to change the color of the series.
 * `StrokeWidth` – used to change the stroke width of the series.
@@ -621,7 +621,7 @@ Bubble chart requires 3 fields (X, Y and Size) to plot a point. Here `‘Size’
 
 There are two ways you can provide data to bubble chart,
 
-1. You can use [ChartDataPoint](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/topic654.html# "")’s three parameter constructor to pass x, y and size values to  `BubbleSeries`,
+1.	You can use [ChartDataPoint](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/topic654.html# "")’s three parameter constructor to pass x, y and size values to  `BubbleSeries`,
 
 {% highlight c# %}
 [C#]
@@ -656,7 +656,7 @@ chart.Series.Add(bubbleSeries);
 
 {% endhighlight %}
 
-2. Or else you can use `YBindingPath` and `Size` properties of `BubbleSeries`to map the Y value and size from custom object to chart. 
+2.	Or else you can use `YBindingPath` and `Size` properties of `BubbleSeries`to map the Y value and size from custom object to chart. 
 
 {% highlight xml %}
 [XAML]
@@ -736,7 +736,7 @@ OHLC chart requires five values (X, Open, High, Low and Close) to plot a point.
 
 There are two ways you can provide data to an OHLC chart,
 
-1. You can use [ChartDataPoint](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/topic654.html# "")’s five parameter constructor to pass x, open, high, low and close values to  `HiLoOpenCloseSeries`,
+1.	You can use [ChartDataPoint](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/topic654.html# "")’s five parameter constructor to pass x, open, high, low and close values to  `HiLoOpenCloseSeries`,
 
 {% highlight c# %}
 [C#]
@@ -765,7 +765,7 @@ chart.Series.Add(hiLoOpenCloseSeries);
 
 {% endhighlight %}
 
-2. Or else you can use `Open`,`High`,`Low` and `Close` properties of `HiLoOpenCloseSeries` to map Open, High, Low and Close values from custom object to chart.
+2.	Or else you can use `Open`,`High`,`Low` and `Close` properties of `HiLoOpenCloseSeries` to map Open, High, Low and Close values from custom object to chart.
 
 {% highlight xml %}
 [XAML]
@@ -833,9 +833,9 @@ To render a candle chart, create an instance of `CandleSeries` and add to the `S
 
 Candle chart requires five values (X, Open, High, Low and Close) to plot a point. 
 
-There are two ways you can provide data to an OHLC chart,
+There are two ways you can provide data to candle chart,
 
-1. You can use [ChartDataPoint](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/topic654.html# "")’s five parameter constructor to pass x, open, high, low and close values to  `CandleSeries`,
+1.	You can use [ChartDataPoint](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/topic654.html# "")’s five parameter constructor to pass x, open, high, low and close values to  `CandleSeries`,
 
 {% highlight c# %}
 [C#]
@@ -864,7 +864,7 @@ chart.Series.Add(candleSeries);
 
 {% endhighlight %}
 
-2. Or else you can use `Open`,`High`,`Low` and `Close` property of `CandleSeries` to map Open, High, Low and Close values from custom object to chart.
+2.	Or else you can use `Open`,`High`,`Low` and `Close` property of `CandleSeries` to map Open, High, Low and Close values from custom object to chart.
 
 {% highlight xml %}
 [XAML]

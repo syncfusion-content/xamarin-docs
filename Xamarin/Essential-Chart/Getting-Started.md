@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Getting-Started
 description: getting started
@@ -153,7 +153,7 @@ wp8\Syncfusion.SfChart.WP8.dll
 wp8\Syncfusion.SfChart.xForms.WinPhone.dll
 
 
-N> Essential Chart for Xamarin is compatible with Xamarin. Forms v.1.2.3.6257.
+N> Essential Chart for Xamarin is compatible with Xamarin. Forms v.1.4.4.6392.
 
 Currently an additional step is required for Windows Phone and iOS projects. We need to create an instance of the chart custom renderer as shown below. 
 

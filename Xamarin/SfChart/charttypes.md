@@ -35,9 +35,9 @@ SfChart chart = new SfChart();
 
 LineSeries lineSeries = new LineSeries()
 {
-    ItemsSource = Data,
-    XBindingPath = "Year",
-    YBindingPath = "Value"
+	ItemsSource = Data,
+	XBindingPath = "Year",
+	YBindingPath = "Value"
 };
 chart.Series.Add(lineSeries);
 
@@ -224,7 +224,7 @@ StackingArea100Series stackingArea100Series2 = new StackingArea100Series()
 
 StackingArea100Series stackingArea100Series3 = new StackingArea100Series() 
 { 
-    ItemsSource = Data3, 
+	ItemsSource = Data3, 
 	XBindingPath = "Year", 
 	YBindingPath = "Value" 
 };
@@ -282,63 +282,62 @@ Since the `RangeColumnSeries` requires two Y values for a point, your data shoul
 
 There are two ways you can provide data to RangeColumn chart,
 
-1.  You can use [ChartDataPoint's](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/topic654.html#) three parameter constructor to pass x value, high and low values to  `RangeColumnSeries`,
+1. You can use [ChartDataPoint's](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/topic654.html#) three parameter constructor to pass x value, high and low values to  `RangeColumnSeries`,
 
-{% highlight c# %}
-	[C#]
+   ~~~ highlight cs
+   
+   [C#]  
 
-	SfChart chart = new SfChart();
-	...
+   SfChart chart = new SfChart();
+   ...
 
-	ObservableCollection<ChartDataPoint> data = new ObservableCollection<ChartDataPoint>()
-	{    
-		new ChartDataPoint("Jan", 1.8, 7.6 ),
-		new ChartDataPoint("Feb", 3, 10),
-		new ChartDataPoint("Mar", 1.7, 7.5),
-		new ChartDataPoint("Apr", 4.5, 7.8),
-		new ChartDataPoint("May", 5, 11.4),
-		new ChartDataPoint("Jun", 4.2, 10.1),
-	};
+   ObservableCollection<ChartDataPoint> data = new ObservableCollection<ChartDataPoint>()
+   {    
+	   new ChartDataPoint("Jan", 1.8, 7.6 ),
+	   new ChartDataPoint("Feb", 3, 10),
+	   new ChartDataPoint("Mar", 1.7, 7.5),
+	   new ChartDataPoint("Apr", 4.5, 7.8),
+	   new ChartDataPoint("May", 5, 11.4),
+	   new ChartDataPoint("Jun", 4.2, 10.1),
+   };
 	
-	RangeColumnSeries rangeColumnSeries = new RangeColumnSeries() 
-	{ 
-		ItemsSource = data 
-	};
+   RangeColumnSeries rangeColumnSeries = new RangeColumnSeries() 
+   { 
+	   ItemsSource = data 
+   };
 	
-	chart.Series.Add(rangeColumnSeries);
-
-{% endhighlight %}
+   chart.Series.Add(rangeColumnSeries);
+   ~~~
 
 2. Or else you can use `High` and `Low` properties of `RangeColumnSeries` to map the high and low values from custom object to chart. 
 
-{% highlight xml %}
-	[XAML]
+   ~~~ highlight xml
+   
+   [XAML]
 
-	<chart:SfChart>
-	...
+   <chart:SfChart>
+   ...
 
-	<chart:RangeColumnSeries ItemsSource ="{Binding Data}" XBindingPath="Month" High="Value1" Low="Value2"/>
+   <chart:RangeColumnSeries ItemsSource ="{Binding Data}" XBindingPath="Month" High="Value1" Low="Value2"/>
+   </chart:SfChart>
+   ~~~
 
-	</chart:SfChart>
-
-	{% endhighlight %}
-
-	{% highlight c# %}
-	[C#]
-
-	SfChart chart = new SfChart();
-	...
-
-	RangeColumnSeries rangeColumnSeries = new RangeColumnSeries() 
-	{ 
-		ItemsSource = Data, 
-		XBindingPath = "Month", 
-		High = "Value1", 
-		Low = "Value2" 
-	};
-	chart.Series.Add(rangeColumnSeries);
-
-{% endhighlight %}
+   ~~~ highlight cs
+   
+   [C#]
+   
+   SfChart chart = new SfChart();
+   ...
+   
+   RangeColumnSeries rangeColumnSeries = new RangeColumnSeries() 
+   { 
+   	   ItemsSource = Data,
+	   XBindingPath = "Month", 
+	   High = "Value1",
+	   Low = "Value2" 
+   };
+   chart.Series.Add(rangeColumnSeries);
+   ~~~
 
 Following properties are used to customize the range column segment appearance,
 
@@ -725,56 +724,64 @@ Bubble chart requires 3 fields (X, Y and Size) to plot a point. Here `‘Size’
 
 There are two ways you can provide data to bubble chart,
 
-1.  You can use [ChartDataPoint's](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/topic654.html) three parameter constructor to pass x, y and size values to  `BubbleSeries`,
+1. You can use [ChartDataPoint's](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/topic654.html) three parameter constructor to pass x, y and size values to  `BubbleSeries`,
 
-{% highlight c# %}
-	[C#]
+   ~~~ highlight cs
+   
+   [C#]
 
-	SfChart chart = new SfChart();
-	...
+   SfChart chart = new SfChart();
+   ...
 
-	ObservableCollection<ChartDataPoint> data = new ObservableCollection<ChartDataPoint>()
-	{    
-	new ChartDataPoint(64, 14.4, 20),
-	new ChartDataPoint(71, 2, 15),
-	new ChartDataPoint(74, 7, 30),
-	new ChartDataPoint(80, 4, 22),
-	new ChartDataPoint(82, 10.3, 28),
-	new ChartDataPoint(94, 1, 8),
-	new ChartDataPoint(96, 6, 18),
-	new ChartDataPoint(98, 12.3, 28),                       
-	};
+   ObservableCollection<ChartDataPoint> data = new ObservableCollection<ChartDataPoint>()
+   {    
+	   new ChartDataPoint(64, 14.4, 20),
+	   new ChartDataPoint(71, 2, 15),
+	   new ChartDataPoint(74, 7, 30),
+	   new ChartDataPoint(80, 4, 22),
+	   new ChartDataPoint(82, 10.3, 28),
+	   new ChartDataPoint(94, 1, 8),
+	   new ChartDataPoint(96, 6, 18),
+	   new ChartDataPoint(98, 12.3, 28),                       
+   };
+   
+   BubbleSeries bubbleSeries = new BubbleSeries() 
+   { 
+      ItemsSource = data 
+   };
 
-	BubbleSeries bubbleSeries = new BubbleSeries() { ItemsSource = data };
-
-	chart.Series.Add(bubbleSeries);
-
-{% endhighlight %}
+   chart.Series.Add(bubbleSeries);
+   ~~~
 
 2. Or else you can use `YBindingPath` and `Size` properties of `BubbleSeries`to map the Y value and size from custom object to chart. 
 
-{% highlight xml %}
-	[XAML]
+   ~~~ highlight xml
+   
+   [XAML]
 
-	<chart:SfChart>
-	...
+   <chart:SfChart>
+   ...
 
-	<chart:BubbleSeries ItemsSource ="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue" Size="Size"/>
-	</chart:SfChart>
+   <chart:BubbleSeries ItemsSource ="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue" Size="Size"/>
+   </chart:SfChart>
+   ~~~
 
-	{% endhighlight %}
+   ~~~ highlight cs
+	
+   [C#]
 
-	{% highlight c# %}
-	[C#]
+   SfChart chart = new SfChart();
+   ...
 
-	SfChart chart = new SfChart();
-	...
-
-	BubbleSeries bubbleSeries = new BubbleSeries() { ItemsSource = Data, XBindingPath = "XValue", YBindingPath = "YValue", XBindingPath = "Size” };
-
-	chart.Series.Add(bubbleSeries);
-
-{% endhighlight %}
+   BubbleSeries bubbleSeries = new BubbleSeries() 
+   { 
+      ItemsSource = Data, 
+	  XBindingPath = "XValue", 
+	  YBindingPath = "YValue", 
+	  XBindingPath = "Size” 
+   };
+   chart.Series.Add(bubbleSeries);
+   ~~~
 
 Following properties are used to customize the bubble segment appearance.
 
@@ -836,63 +843,63 @@ OHLC chart requires five values (X, Open, High, Low and Close) to plot a point.
 
 There are two ways you can provide data to an OHLC chart,
 
-1.  You can use [ChartDataPoint's](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/topic654.html#) five parameter constructor to pass x, open, high, low and close values to  `HiLoOpenCloseSeries`,
+1. You can use [ChartDataPoint's](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/topic654.html#) five parameter constructor to pass x, open, high, low and close values to  `HiLoOpenCloseSeries`,
 
-{% highlight c# %}
-	[C#]
-
-	SfChart chart = new SfChart();
-	...
-
-	ObservableCollection<ChartDataPoint> data = new ObservableCollection<ChartDataPoint>()
-	{
-		new ChartDataPoint("2010", 873.8, 878.85, 855.5, 860.5),
-		new ChartDataPoint("2011", 861, 868.4, 835.2, 843.45),
-		new ChartDataPoint("2012", 846.15, 853, 838.5, 847.5),
-		new ChartDataPoint("2013", 846, 860.75, 841, 855),
-		new ChartDataPoint("2014", 841, 845, 827.85, 838.65)
-	};
+   ~~~ highlight cs
 	
-	HiLoOpenCloseSeries hiLoOpenCloseSeries = new HiLoOpenCloseSeries() 
-	{ 
-	    ItemsSource = data
-	};
-	
-	chart.Series.Add(hiLoOpenCloseSeries);
+   [C#]
 
-{% endhighlight %}
+   SfChart chart = new SfChart();
+   ...
+
+   ObservableCollection<ChartDataPoint> data = new ObservableCollection<ChartDataPoint>()
+   {
+ 	   new ChartDataPoint("2010", 873.8, 878.85, 855.5, 860.5),
+	   new ChartDataPoint("2011", 861, 868.4, 835.2, 843.45),
+	   new ChartDataPoint("2012", 846.15, 853, 838.5, 847.5),
+	   new ChartDataPoint("2013", 846, 860.75, 841, 855),
+	   new ChartDataPoint("2014", 841, 845, 827.85, 838.65)
+   };
+	
+   HiLoOpenCloseSeries hiLoOpenCloseSeries = new HiLoOpenCloseSeries() 
+   { 
+   	   ItemsSource = data
+   };
+	
+   chart.Series.Add(hiLoOpenCloseSeries);
+   ~~~
 
 2. Or else you can use `Open`,`High`,`Low` and `Close` properties of `HiLoOpenCloseSeries` to map Open, High, Low and Close values from custom object to chart.
 
-{% highlight xml %}
-	[XAML]
+   ~~~ highlight xml
+   
+   [XAML]
 
-	<chart:SfChart>
-	...
+   <chart:SfChart>
+   ...
 
-	<chart:HiLoOpenCloseSeries ItemsSource ="{Binding Data}" XBindingPath="Month" High="Value1" Low="Value2" Open="Value3" Close="Value4"/>
-	</chart:SfChart>
+   <chart:HiLoOpenCloseSeries ItemsSource ="{Binding Data}" XBindingPath="Month" High="Value1" Low="Value2" Open="Value3" Close="Value4"/>
+   </chart:SfChart>
+   ~~~
 
-	{% endhighlight %}
+   ~~~ highlight cs
+   
+   [C#]
 
-	{% highlight c# %}
-	[C#]
+   SfChart chart = new SfChart();
+   ...
 
-	SfChart chart = new SfChart();
-	...
-
-	HiLoOpenCloseSeries hiLoOpenCloseSeries = new HiLoOpenCloseSeries() 
-	{ 
-		ItemsSource = Data, 
-		XBindingPath = "Year", 
-		Open = "Value1", 
-		High = "Value2", 
-		Low = "Value3", 
-		Close = "Value4" 
-	};
-	chart.Series.Add(hiLoOpenCloseSeries);
-
-{% endhighlight %}
+   HiLoOpenCloseSeries hiLoOpenCloseSeries = new HiLoOpenCloseSeries() 
+   { 
+	   ItemsSource = Data, 
+	   XBindingPath = "Year", 
+	   Open = "Value1", 
+	   High = "Value2", 
+	   Low = "Value3", 
+	   Close = "Value4" 
+   };
+   chart.Series.Add(hiLoOpenCloseSeries);
+   ~~~
 
 You can use the following properties to customize the HiLoOpenCloseSeries segment appearance.
 
@@ -944,64 +951,64 @@ Candle chart requires five values (X, Open, High, Low and Close) to plot a point
 
 There are two ways you can provide data to an candle chart,
 
-1.  You can use [ChartDataPoint's](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/topic654.html#) five parameter constructor to pass x, open, high, low and close values to  `CandleSeries`,
+1. You can use [ChartDataPoint's](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/topic654.html#) five parameter constructor to pass x, open, high, low and close values to  `CandleSeries`,
 
-{% highlight c# %}
-	[C#]
+   ~~~ highlight cs 
+   
+   [C#]
 
-	SfChart chart = new SfChart();
-	...
+   SfChart chart = new SfChart();
+   ...
 
-	ObservableCollection<ChartDataPoint> data = new ObservableCollection<ChartDataPoint>()
-	{
-		new ChartDataPoint("2010", 873.8, 878.85, 855.5, 860.5),
-		new ChartDataPoint("2011", 861, 868.4, 835.2, 843.45),
-		new ChartDataPoint("2012", 846.15, 853, 838.5, 847.5),
-		new ChartDataPoint("2013", 846, 860.75, 841, 855),
-		new ChartDataPoint("2014", 841, 845, 827.85, 838.65)
-	};
+   ObservableCollection<ChartDataPoint> data = new ObservableCollection<ChartDataPoint>()
+   {
+	   new ChartDataPoint("2010", 873.8, 878.85, 855.5, 860.5),
+	   new ChartDataPoint("2011", 861, 868.4, 835.2, 843.45),
+	   new ChartDataPoint("2012", 846.15, 853, 838.5, 847.5),
+	   new ChartDataPoint("2013", 846, 860.75, 841, 855),
+	   new ChartDataPoint("2014", 841, 845, 827.85, 838.65)
+   };
 	
-	CandleSeries candleSeries = new CandleSeries () 
-	{ 
-		ItemsSource = data
-	};
+   CandleSeries candleSeries = new CandleSeries () 
+   { 
+       ItemsSource = data
+   };
 
-	chart.Series.Add(candleSeries);
-
-{% endhighlight %}
+   chart.Series.Add(candleSeries);
+   ~~~
 
 2. Or else you can use `Open`,`High`,`Low` and `Close` property of `CandleSeries` to map Open, High, Low and Close values from custom object to chart.
 
-{% highlight xml %}
-	[XAML]
+   ~~~ highlight xml 
+   
+   [XAML]
 
-	<chart:SfChart>
-	...
+   <chart:SfChart>
+   ...
 
-	<chart:CandleSeries ItemsSource ="{Binding Data}" XBindingPath="Month" High="Value1" Low="Value2" Open="Value3" Close="Value4"/>
-	</chart:SfChart>
+   <chart:CandleSeries ItemsSource ="{Binding Data}" XBindingPath="Month" High="Value1" Low="Value2" Open="Value3" Close="Value4"/>
+   </chart:SfChart>
+   ~~~
 
-	{% endhighlight %}
+   ~~~ highlight cs 
+   
+   [C#]
 
-	{% highlight c# %}
-	[C#]
+   SfChart chart = new SfChart();
+   ...
 
-	SfChart chart = new SfChart();
-	...
-
-	CandleSeries candleSeries = new CandleSeries() 
-	{ 
-		ItemsSource = Data, 
-		XBindingPath = "Year", 
-		Open = "Value1", 
-		High = "Value2", 
-		Low = "Value3", 
-		Close = "Value4"
-	};
-	chart.Series.Add(candleSeries);
-
-{% endhighlight %}
-
+   CandleSeries candleSeries = new CandleSeries() 
+   { 
+	   ItemsSource = Data, 
+	   XBindingPath = "Year", 
+	   Open = "Value1", 
+	   High = "Value2", 
+	   Low = "Value3", 
+  	   Close = "Value4"
+   };
+   chart.Series.Add(candleSeries);
+   ~~~   
+   
 You can use the following properties to customize the candle segment appearance.
 
 * `Color` – used to change the color of the series.
@@ -1195,7 +1202,7 @@ PieSeries pieSeries = new PieSeries()
 	XBindingPath = "Expense", 
 	YBindingPath = "Value",
 	StartAngle = 180,
-    EndAngle = 360
+	EndAngle = 360
 };
 
 {% endhighlight %}

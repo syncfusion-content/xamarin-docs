@@ -1,6 +1,7 @@
 # SfDataGrid
 
-The SfDataGrid control is available in Xamarin.Forms, Xamarin.Android and Xamarin.iOS. It helps you to create entirely customizable features used to display and manipulate a large amount of data in a tabular view. The following table lists the key features of the SfDataGrid in Xamarin.Forms, Xamarin.Android and Xamarin.iOS.
+The **SfDataGrid** control is available in Xamarin.Forms, Xamarin.Android and Xamarin.iOS. It helps you to create entirely customizable features used to display and manipulate a large amount of data in a tabular view. The following table lists the key features of the **SfDataGrid** in Xamarin.Forms, Xamarin.Android and Xamarin.iOS.
+
 <table>
 <tr>
 <th colspan=1 rowspan=1>Features<br/></th>
@@ -10,117 +11,117 @@ The SfDataGrid control is available in Xamarin.Forms, Xamarin.Android and Xamari
 </tr>
 <tr>
 <td colspan=1 rowspan=1>Diagonal Scrolling<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"></i><br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"></i><br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"></i><br/></td>
 </tr>
 <tr>
 <td colspan=1 rowspan=1>Sorting<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
 </tr>
 <tr>
 <td colspan=1 rowspan=1>Custom Sorting<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
 </tr>
 <tr>
 <td colspan=1 rowspan=1>Grouping<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
 </tr>
 <tr>
 <td colspan=1 rowspan=1>Custom Grouping<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
 </tr>
 <tr>
 <td colspan=1 rowspan=1>Summaries<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
 </tr>
 <tr>
 <td colspan=1 rowspan=1>Filtering<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
 </tr>
 <tr>
 <td colspan=1 rowspan=1>Selection<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
 </tr>
 <tr>
 <td colspan=1 rowspan=1>Load More<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
 </tr>
 <tr>
 <td colspan=1 rowspan=1>Pull To Refresh<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
 </tr>
 <tr>
 <td colspan=1 rowspan=1>Template Column<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-close"></i><br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-close"></i><br/></td>
 </tr>
 <tr>
 <td colspan=1 rowspan=1>Custom Cell<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-close"></i><br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
 </tr>
 <tr>
 <td colspan=1 rowspan=1>Styles<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
 </tr>
 <tr>
 <td colspan=1 rowspan=1>Conditional Styles<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-close"></i><br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-close"></i><br/></td>
 </tr>
 <tr>
 <td colspan=1 rowspan=1>Exporting<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
 </tr>
 <tr>
 <td colspan=1 rowspan=1>Row Freezing<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
 </tr>
 <tr>
 <td colspan=1 rowspan=1>Column Freezing<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
 </tr>
 <tr>
 <td colspan=1 rowspan=1>Row Height Customization<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
-<td colspan=1 rowspan=1>(<br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
 </tr>
 </table>
 
 ## Getting Started
 
-This section provides a quick overview for working with SfDataGrid for Xamarin.Forms, Xamarin.Android and Xamarin.iOS. You will walk through the entire process of creating a real world SfDataGrid.
+This section provides a quick overview for working with **SfDataGrid** for Xamarin.Forms, Xamarin.Android and Xamarin.iOS. You will walk through the entire process of creating a real world **SfDataGrid**.
 
 ### Assembly deployment
 
@@ -130,11 +131,11 @@ After installing Essential Studio for Xamarin, you can find all the required ass
 
 Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\lib
 
-![](SfDataGrid_images/SfDataGrid-Xamarin_img1.jpeg)Note: Assemblies can be found in unzipped package location in Mac
+N> Assemblies can be found in unzipped package location in Mac
 
 #### SfDataGrid for Xamarin.Forms
 
-The following list of assemblies need to be added as reference from the lib folder to use SfDataGrid in your application.
+The following list of assemblies need to be added as reference from the lib folder to use **SfDataGrid** in your application.
 
 <table>
 <tr>
@@ -167,7 +168,7 @@ The following list of assemblies need to be added as reference from the lib fold
 </tr>
 </table>
 
-In order to use export to excel and export to pdf functionalities of SfDataGrid, add the below assembly to your pcl project.
+In order to use export to excel and export to pdf functionalities of **SfDataGrid**, add the below assembly to your pcl project.
 
 <table>
 <tr>
@@ -211,7 +212,7 @@ SfDataGridRenderer.Init();
 
 #### SfDataGrid for Xamarin.Android and Xamrain.iOS
 
-The following list of assemblies need to be added as reference from the lib folder to use SfDataGrid in your application.
+The following list of assemblies need to be added as reference from the lib folder to use **SfDataGrid** in your application.
 
 <table>
 <tr>
@@ -228,7 +229,7 @@ The following list of assemblies need to be added as reference from the lib fold
 </tr>
 </table>
 
-In order to use export to excel and export to pdf functionalities of SfDataGrid, add the below assembly to your project.
+In order to use export to excel and export to pdf functionalities of **SfDataGrid**, add the below assembly to your project.
 
 <table>
 <tr>
@@ -247,7 +248,7 @@ In order to use export to excel and export to pdf functionalities of SfDataGrid,
 
 ### Create a simple SfDataGrid 
 
-This section explains how to create a SfDataGrid and configure it. The SfDataGrid control can be configured entirely in C# code or by using XAML markup. This is how the final output will look like on iOS, Android and Windows Phone devices.
+This section explains how to create a **SfDataGrid** and configure it. The **SfDataGrid** control can be configured entirely in C# code or by using XAML markup. This is how the final output will look like on iOS, Android and Windows Phone devices.
  
 ![](SfDataGrid_images/SfDataGrid-Xamarin_img2.png)
 
@@ -255,9 +256,9 @@ You can download the entire source code of this demo for Xamarin.Forms from [he
 You can download the entire source code of this demo for Xamarin.Android from [here](http://files2.syncfusion.com/Installs/v13.2.0.29/Samples/Xamarin/DataGrid_GettingStartedAndroid.zip). 
 You can download the entire source code of this demo for Xamarin.iOS from [here](http://files2.syncfusion.com/Installs/v13.2.0.29/Samples/Xamarin/DataGrid_GettingStartediOS.zip). 
 
-In this walk through, you will create a new application that contains the SfDataGrid which includes the below topics.
+In this walk through, you will create a new application that contains the **SfDataGrid** which includes the below topics.
 
-* [Creating the project](#Creating-the-project) 
+* [Creating the project](#Creating-the-project) 
 
 * [Adding SfDataGrid in Xamarin.Forms](#Adding-SfDataGrid-in-Xamarin.Forms) 
 
@@ -288,9 +289,9 @@ Create a new iOS application in Xamarin Studio or Visual Studio for Xamarin.iO
 
 1. Add the required assembly references to the pcl and renderer projects as discussed in the [](#_Assembly_deployment "") HYPERLINK \l "_Assembly_deployment" section.
 
-2. Import SfDataGrid control namespace Syncfusion.SfDataGrid.XForms.
+2. Import **SfDataGrid** control namespace Syncfusion.SfDataGrid.XForms.
 
-3. Declare SfDataGrid control as content to the ContentPage.
+3. Declare **SfDataGrid** control as content to the ContentPage.
 
 
 {% tabs %}{% highlight c# %}
@@ -337,9 +338,9 @@ x:Class="GettingStarted.Sample">
 
 1. Add the required assembly references to the project as discussed in the [](#_Assembly_deployment "") HYPERLINK \l "_Assembly_deployment" section.
 
-2. Import SfDataGrid control namespace Syncfusion.SfDataGrid.
+2. Import **SfDataGrid** control namespace Syncfusion.SfDataGrid.
 
-3. Create a SfDataGrid control instance and add as a child to the view hosted in the Activity.
+3. Create a **SfDataGrid** control instance and add as a child to the view hosted in the Activity.
 
 
 {% highlight c# %}
@@ -367,9 +368,9 @@ layout.AddView (dataGrid);
 
 1. Add the required assembly references to the project as discussed in the [](#_Assembly_deployment "") HYPERLINK \l "_Assembly_deployment" section.
 
-2. Import SfDataGrid control namespace Syncfusion.SfDataGrid.
+2. Import **SfDataGrid** control namespace Syncfusion.SfDataGrid.
 
-3. Create a SfDataGrid control instance and add as a SubView to a UIViewController.
+3. Create a **SfDataGrid** control instance and add as a SubView to a UIViewController.
 
 
 {% highlight c# %}
@@ -404,7 +405,7 @@ View.AddSubview (dataGrid);
 
 #### Create DataModel for the SfDataGrid
 
-SfDataGrid is a data-bound control. Hence you must create a data model to bind it to the control. 
+**SfDataGrid** is a data-bound control. Hence you must create a data model to bind it to the control. 
 
 1. Create a simple data source as shown in the following code example in a new class file and save it as OrderInfo.cs file. 
 
@@ -498,8 +499,8 @@ orderInfo.Add (new OrderInfo (1014, "Gina Irene", "UK", "AROUT", "London"
 
 #### Binding data to SfDataGrid
 
-In order to bind the data source of the SfDataGrid, set the SfDataGrid.ItemsSource property as shown below. You can bind the data source of the SfDataGrid either from XAML or in code. 
-The following code example bind the collection created in previous step to SfDataGrid.ItemsSource property.
+In order to bind the data source of the **SfDataGrid**, set the **SfDataGrid.ItemsSource** property as shown below. You can bind the data source of the **SfDataGrid** either from XAML or in code. 
+The following code example bind the collection created in previous step to **SfDataGrid.ItemsSource** property.
 
 {% highlight c# %}
 [C#]
@@ -539,8 +540,8 @@ Now run the application to render the following output.
 
 #### Defining Columns
 
-By default, the SfDataGrid automatically creates columns for all the properties in the data source. The type of the column generated depends on the type of data in the column. When the columns are auto-generated, you can handle the AutoGeneratingColumn event to customize or cancel the columns before they are added to the Columns collection in SfDataGrid. 
-You can also define the columns manually by setting the SfDataGrid.AutoGenerateColumns property to false and by adding the GridColumn objects to the SfDataGrid.Columns collection. It can be done from both XAML and code. The following code example illustrates this. 
+By default, the **SfDataGrid** automatically creates columns for all the properties in the data source. The type of the column generated depends on the type of data in the column. When the columns are auto-generated, you can handle the AutoGeneratingColumn event to customize or cancel the columns before they are added to the Columns collection in **SfDataGrid**. 
+You can also define the columns manually by setting the **SfDataGrid.AutoGenerateColumns** property to false and by adding the GridColumn objects to the **SfDataGrid.Columns** collection. It can be done from both XAML and code. The following code example illustrates this. 
 
 {% highlight c# %}
 [C#]
@@ -593,7 +594,7 @@ MappingName="ShipCountry" />
 
 #### Sorting
 
-SfDataGrid allows you to apply sorting on its data by setting the SfDataGrid.AllowSorting property to true. 
+**SfDataGrid** allows you to apply sorting on its data by setting the **SfDataGrid.AllowSorting** property to true. 
 {% highlight c# %}
 [C#]
 dataGrid.AllowSorting = true; 
@@ -613,7 +614,7 @@ Run the application and touch the header cell to sort the data and the following
 ![](SfDataGrid_images/SfDataGrid-Xamarin_img4.png)
 
 
-You can also configure sorting by adding the column to the SfDataGrid.SortColumnDescriptions collection as below,
+You can also configure sorting by adding the column to the **SfDataGrid.SortColumnDescriptions collection as below,
 {% highlight c# %}
 [C#]
 dataGrid.SortColumnDescriptions.Add (new SortColumnDescription () { ColumnName = "CustomerID" });
@@ -633,7 +634,7 @@ dataGrid.SortColumnDescriptions.Add (new SortColumnDescription () { ColumnNa
 
 #### Grouping
 
-SfDataGrid allows you to group a column by adding the column to the SfDataGrid.GroupColumnDescriptions collection as shown below,
+**SfDataGrid** allows you to group a column by adding the column to the **SfDataGrid.GroupColumnDescriptions** collection as shown below,
 
 {% highlight c# %}
 [C#]
@@ -657,13 +658,13 @@ Run the application to render the following output.
 
 #### Selection
 
-SfDataGrid allows you to select the row/rows by setting the SfDataGrid.SelectionMode property. You can set the SfDataGrid.SelectionMode property to single, multiple, single deselect or none based on your requirements. Information about the row/rows selected can be tracked using SfDataGrid.SelectedItem and SfDataGrid.SelectedItems properties.
-You can handle the selection operations with the help of SelectionChanging and SelectionChanged events of SfDataGrid.
+**SfDataGrid** allows you to select the row/rows by setting the **SfDataGrid.SelectionMode** property. You can set the **SfDataGrid.SelectionMode** property to single, multiple, single deselect or none based on your requirements. Information about the row/rows selected can be tracked using **SfDataGrid.SelectedItem** and **SfDataGrid.SelectedItems** properties.
+You can handle the selection operations with the help of SelectionChanging and SelectionChanged events of **SfDataGrid**.
 
 ## Data Binding
 
-The SfDataGrid is bound to an external data source to display the data. It supports the data sources such as List, Observable Collection, and so on. SfDataGrid.ItemsSource property helps to bind the SfDataGrid with the collection of objects.
-In order to bind the data source of the SfDataGrid, set the SfDataGrid.ItemsSource property as shown below such that each row in the SfDataGrid would bind to an object in the data source and each column would bind to a property in the data model object.
+The **SfDataGrid** is bound to an external data source to display the data. It supports the data sources such as List, Observable Collection, and so on. **SfDataGrid.ItemsSource** property helps to bind the **SfDataGrid** with the collection of objects.
+In order to bind the data source of the **SfDataGrid**, set the **SfDataGrid.ItemsSource** property as shown below such that each row in the **SfDataGrid** would bind to an object in the data source and each column would bind to a property in the data model object.
 {% highlight c# %}
 
 OrderInfoRepository viewModel = new OrderInfoRepository ();
@@ -673,12 +674,12 @@ dataGrid.ItemsSource = viewModel.OrderInfoCollection;
 
 {% endhighlight %}
 
-If the data source implements ICollectionChanged interface, then SfDataGrid will automatically refresh the view when an item is added, removed or while list cleared. When you add or remove an item in ObservableCollection, the SfDataGrid automatically refreshes the view as ObservableCollection implements INotifyCollectionChanged. But when you do the same in List, SfDataGrid will not refresh the view automatically.
-If the data model implements the INotifyPropertyChanged interface, then the SfDataGrid responds to the property change in runtime to update the view.
+If the data source implements ICollectionChanged interface, then **SfDataGrid** will automatically refresh the view when an item is added, removed or while list cleared. When you add or remove an item in ObservableCollection, the **SfDataGrid** automatically refreshes the view as ObservableCollection implements INotifyCollectionChanged. But when you do the same in List, **SfDataGrid** will not refresh the view automatically.
+If the data model implements the INotifyPropertyChanged interface, then the **SfDataGrid** responds to the property change in runtime to update the view.
 ## Columns 
 
 This section explains you about how to create and add columns, different ways to create columns and about the customizations that can done for a column.
-SfDataGrid allows you to create and add Columns in two ways:
+**SfDataGrid** allows you to create and add Columns in two ways:
 
 * Automatic Columns generation based on the underlying collection.
 
@@ -686,8 +687,8 @@ SfDataGrid allows you to create and add Columns in two ways:
 
 ### Automatic Columns Generation
 
-The SfDataGrid creates columns automatically based on the property SfDataGrid.AutoGenerateColumns. SfDataGrid.AutoGenerateColumns is a bindable property and it decides columns generation for SfDataGrid based on the SfDataGrid.AutoGenerateColumnsMode property. 
-SfDataGrid.AutoGenerateColumnsMode decides a way to create columns when SfDataGrid.AutoGenerateColumns is set to ‘true’. This enum type has the following four options.
+The **SfDataGrid** creates columns automatically based on the property **SfDataGrid.AutoGenerateColumns**. **SfDataGrid.AutoGenerateColumns** is a bindable property and it decides columns generation for **SfDataGrid** based on the **SfDataGrid.AutoGenerateColumnsMode** property. 
+**SfDataGrid.AutoGenerateColumnsMode** decides a way to create columns when **SfDataGrid.AutoGenerateColumns** is set to ‘true’. This enum type has the following four options.
 
 * Reset: Retains the columns defined explicitly in application level and creates columns newly for all the other properties in a Data Source.
 
@@ -697,22 +698,22 @@ SfDataGrid.AutoGenerateColumnsMode decides a way to create columns when SfDataGr
 
 * SmartReset: Retains the columns defined explicitly in application level and the columns with MappingName identical to properties in a Data Source. Creates columns newly for all the other properties in the Data Source.
 
-* None: Stores only the columns that are defined in SfDataGrid.Columns collection.
+* None: Stores only the columns that are defined in **SfDataGrid.Columns** collection.
 
-The default value of SfDataGrid.AutoGenerateColumns property is true and SfDataGrid.AutoGenerateColumnsMode is Reset. Hence by default SfDataGrid creates columns automatically for every non-explicitly defined public property in the underlying collection bound to its ItemsSource property.
+The default value of **SfDataGrid.AutoGenerateColumns** property is true and **SfDataGrid.AutoGenerateColumnsMode** is Reset. Hence by default **SfDataGrid** creates columns automatically for every non-explicitly defined public property in the underlying collection bound to its ItemsSource property.
 
-NOTE: When you change items source for SfDataGrid during run time, then the columns are generated on the basis of option set for AutoGenerateColumnsMode.
+NOTE: When you change items source for **SfDataGrid** during run time, then the columns are generated on the basis of option set for AutoGenerateColumnsMode.
 
 #### Customize Automatically Generated Columns
 
-When AutoGenerateColumns is true, then SfDataGrid.AutoGeneratingColumn event is raised for each column. This event receives two arguments namely sender which is the SfDataGrid and AutoGeneratingColumnArgs.
+When AutoGenerateColumns is true, then **SfDataGrid.AutoGeneratingColumn** event is raised for each column. This event receives two arguments namely sender which is the **SfDataGrid** and AutoGeneratingColumnArgs.
 The AutoGeneratingColumnArgs object contains the following property:
 
 * Column: This property returns the created column using which you can customize the column.
 
 * Cancel: This property cancels the column creation.
 
-You can skip generating a column by handling the SfDataGrid.AutoGeneratingColumn event as shown below.
+You can skip generating a column by handling the **SfDataGrid.AutoGeneratingColumn** event as shown below.
 
 {% highlight c# %}
 dataGrid.AutoGeneratingColumn += GridAutoGeneratingColumns; 
@@ -738,11 +739,11 @@ e.Column.Format = "dd/MM/yyyy";
 
 {% endhighlight %}
 
-You can also customize a column’s header text, sorting, alignment, padding, etc. by handling the SfDataGrid.AutoGeneratingEvent.
+You can also customize a column’s header text, sorting, alignment, padding, etc. by handling the **SfDataGrid.AutoGeneratingEvent**.
 
 ### Manually generate Columns
 
-SfDataGrid also allows you to define the columns manually by adding the GridColumn objects to the SfDataGrid.Columns collection. In case if you want only the manually defined columns to be in view, then you can achieve it by setting the SfDataGrid.AutoGenerateColumns property to false. There are different [](#_Types_of_Columns "") HYPERLINK \l "_Types_of_Columns" available in SfDataGrid and you can create any column based on your requirements from both XAML and code. 
+**SfDataGrid** also allows you to define the columns manually by adding the GridColumn objects to the **SfDataGrid.Columns** collection. In case if you want only the manually defined columns to be in view, then you can achieve it by setting the **SfDataGrid.AutoGenerateColumns** property to false. There are different [](#_Types_of_Columns "") HYPERLINK \l "_Types_of_Columns" available in **SfDataGrid** and you can create any column based on your requirements from both XAML and code. 
 The following code example illustrates about creating columns manually using XAML.
 {% highlight xml %}
 <syncfusion:SfDataGrid x:Name="dataGrid"
@@ -799,9 +800,9 @@ dataGrid.Columns.Add (countryColumn);
 
 This section explains you the different types of Column and the customizations that can done for a column.
 
-SfDataGrid contains different types of columns each with its own functionalities as implied by its name. You can use any column based on your requirements. 
+**SfDataGrid** contains different types of columns each with its own functionalities as implied by its name. You can use any column based on your requirements. 
 
-The below table describes you the types of columns and its purpose of usage in SfDataGrid.
+The below table describes you the types of columns and its purpose of usage in **SfDataGrid**.
 
 <table>
 <tr>
@@ -810,7 +811,7 @@ The below table describes you the types of columns and its purpose of usage in S
 </tr>
 <tr>
 <td colspan=1 rowspan=1>GridColumn<br/></td>
-<td colspan=1 rowspan=1>Abstract class. Base column type of all the columns in the SfDataGrid.<br/></td>
+<td colspan=1 rowspan=1>Abstract class. Base column type of all the columns in the **SfDataGrid**.<br/></td>
 </tr>
 <tr>
 <td colspan=1 rowspan=1>GridTextColumn<br/></td>
@@ -832,7 +833,7 @@ The below table describes you the types of columns and its purpose of usage in S
 
 ### GridColumn
 
-GridColumn is the base column type of all the columns in the SfDataGrid, hence GridColumn properties are used by all the columns. The following sub-sections explains you about the properties in the GridColumn and the customizations that can be done using those properties for all the types of GridColums available in SfDataGrid.
+GridColumn is the base column type of all the columns in the **SfDataGrid**, hence GridColumn properties are used by all the columns. The following sub-sections explains you about the properties in the GridColumn and the customizations that can be done using those properties for all the types of GridColums available in **SfDataGrid**.
 
 #### Binding options
 
@@ -840,7 +841,7 @@ The display content of GridColumn is determined from GridColumn.DisplayBinding p
 
 ##### MappingName
 
-GridColumn.MappingName associates the GridColumn with a property available in the underlying data source. While setting MappingName alone to the SfDataGrid the DisplayBinding will be automatically generated based on the MappingName. Data Manipulation operations like sorting, filtering, grouping will be done based on the MappingName property.
+GridColumn.MappingName associates the GridColumn with a property available in the underlying data source. While setting MappingName alone to the **SfDataGrid** the DisplayBinding will be automatically generated based on the MappingName. Data Manipulation operations like sorting, filtering, grouping will be done based on the MappingName property.
 
 If you want to format the cell content, you can use the Converter of the GridColumn.DisplayBinding to customize the cell content. The following code example appends the text “Customer” along with the Customer ID.
 
@@ -890,11 +891,11 @@ return value.ToString().Substring(9);
 
 ##### HeaderCellTextSize
 
-The FontSize for the content of header cell in the GridColumn can be customized by using the GridColumn.HeaderCellTextSize property. The default font size of the header cells in SfDataGrid is 14.
+The FontSize for the content of header cell in the GridColumn can be customized by using the GridColumn.HeaderCellTextSize property. The default font size of the header cells in **SfDataGrid** is 14.
 
 ##### HeaderFont
 
-The FontFamily for the content of header cell in the GridColumn can be customized by using the GridColumn.HeaderFont property. The default value font used in SfDataGrid is “HelveticaNeue LT 55 Roman”.
+The FontFamily for the content of header cell in the GridColumn can be customized by using the GridColumn.HeaderFont property. The default value font used in **SfDataGrid** is “HelveticaNeue LT 55 Roman”.
 
 ##### HeaderFontAttribute
 
@@ -902,15 +903,15 @@ The FontAttribute for the content of the header cell in the GridColumn can be cu
 
 ##### HeaderText
 
-SfDataGrid allows you to customize the display content of the header cell using the GridColumn.HeaderText property. It specifies the text displayed in the column header. If HeaderText is not defined, then GridColumn.MappingName will be assigned to the HeaderText and will be displayed as column header.
+**SfDataGrid** allows you to customize the display content of the header cell using the GridColumn.HeaderText property. It specifies the text displayed in the column header. If HeaderText is not defined, then GridColumn.MappingName will be assigned to the HeaderText and will be displayed as column header.
 
 ##### HeaderTextAlignment
 
-You can get or set the TextAlignment of the header cell in the GridColumn by using the GridColumn.HeaderTextAlignment property. The default alignment for the header cells in SfDataGrid is “Center” and you can customize this to “Start” or “End”.
+You can get or set the TextAlignment of the header cell in the GridColumn by using the GridColumn.HeaderTextAlignment property. The default alignment for the header cells in **SfDataGrid** is “Center” and you can customize this to “Start” or “End”.
 
 ##### HeaderTemplate
 
-SfDataGrid allows you to customize the header cell based on your requirement by using the GridColumn.HeaderTemplate property. The following code example shows you how to customize the header cell by loading a template in the header cell.
+**SfDataGrid** allows you to customize the header cell based on your requirement by using the GridColumn.HeaderTemplate property. The following code example shows you how to customize the header cell by loading a template in the header cell.
 
 {% highlight xml %}
 
@@ -929,7 +930,7 @@ BackgroundColor="Yellow" YAlign="Center" />
 
 #### Column Width
 
-SfDataGrid allows you to customize the width of each GridColumn in the SfDataGrid.Columns collection. You can customize the column width by using the GridColumn.Width property. By default this property will not be assigned any value and the GridColumn renders in view based on the value of DefaultColumnWidth property in SfDataGrid.
+**SfDataGrid** allows you to customize the width of each GridColumn in the **SfDataGrid.Columns** collection. You can customize the column width by using the GridColumn.Width property. By default this property will not be assigned any value and the GridColumn renders in view based on the value of DefaultColumnWidth property in **SfDataGrid**.
 
 ### GridTextColumn
 
@@ -947,11 +948,11 @@ dataGrid.Columns.Add(new GridTextColumn() { MappingName = "OrderID" });
 
 {% endhighlight %}
 
-The below topics explain you about the customizations that can be done in the GridTextColumn in SfDataGrid.
+The below topics explain you about the customizations that can be done in the GridTextColumn in **SfDataGrid**.
 
 #### Formatting
 
-SfDataGrid allows you to format the value displayed in the GridColumn by using the GridColumn.Format property. Assign the FormatString to this property based on the type of the property the column is associated with to format the value. You can use different [StringFormats](http://msdn.microsoft.com/en-us/library/fbxft59x(v=vs.90).aspx) to customize the value displayed in the record cells.
+**SfDataGrid** allows you to format the value displayed in the GridColumn by using the GridColumn.Format property. Assign the FormatString to this property based on the type of the property the column is associated with to format the value. You can use different [StringFormats](http://msdn.microsoft.com/en-us/library/fbxft59x(v=vs.90).aspx) to customize the value displayed in the record cells.
 
 The following code example shows you how to apply formatting for a GridTextColumn in XAML.
 
@@ -981,11 +982,11 @@ Format = "dd/MM/yyyy"
 
 {% endhighlight %}
 
-***Note: For AutoGenerated columns the Formatting can be applied by handling the SfDataGrid.AutoGeneratingColumn event.***
+N> For AutoGenerated columns the Formatting can be applied by handling the **SfDataGrid.AutoGeneratingColumn** event.
 
 ##### Formatting GridTextColumn with different Culture
 
-SfDataGrid allows you to apply different [](https://developer.xamarin.com/api/type/System.Globalization.CultureInfo/# "") HYPERLINK "https://developer.xamarin.com/api/type/System.Globalization.CultureInfo/" for the GridColumns by using the GridColumn.CultureInfo property. Assign the FormatString to this property based on the type of the property the column is associated with to format the value. You can use different [](http://msdn.microsoft.com/en-us/library/fbxft59x(v=vs.90).aspx# "") HYPERLINK "http://msdn.microsoft.com/en-us/library/fbxft59x(v=vs.90).aspx" to customize the value displayed in the record cells.
+**SfDataGrid** allows you to apply different [CultureInfo](https://developer.xamarin.com/api/type/System.Globalization.CultureInfo/) for the GridColumns by using the GridColumn.CultureInfo property. Assign the FormatString to this property based on the type of the property the column is associated with to format the value. You can use different [StringFormats](http://msdn.microsoft.com/en-us/library/fbxft59x\(v=vs.90\).aspx) to customize the value displayed in the record cells.
 The following code example shows you how to apply different cultures for a GridColumns.
 {% highlight c# %}
 dataGrid.Columns.Add (new GridTextColumn () { 
@@ -1004,7 +1005,7 @@ CultureInfo = new CultureInfo("en-GB")
 
 {% endhighlight %}
 
-For auto generated columns this is achievable by handling the SfDataGrid.AutoGeneratingColumn event. The following code example shows you how to apply different cultures for auto generated GridColumns.
+For auto generated columns this is achievable by handling the **SfDataGrid.AutoGeneratingColumn** event. The following code example shows you how to apply different cultures for auto generated GridColumns.
 {% highlight c# %}
 void GridAutoGeneratingColumns(object sender, AutoGeneratingColumnArgs e)
 {
@@ -1024,11 +1025,11 @@ e.Column.CultureInfo = new CultureInfo ("en-GB");
 #### Font and Alignment options
 
 CellTextSize
-The FontSize for the content of record cells in GridColumn can be customized by using the GridColumn.CellTextSize property. The default font size of the record cells in SfDataGrid is 14.
+The FontSize for the content of record cells in GridColumn can be customized by using the GridColumn.CellTextSize property. The default font size of the record cells in **SfDataGrid** is 14.
 RecordFont
-The FontFamily for the content of header cell in the GridColumn can be customized by using the GridColumn.RecordFont property. The default value font used in SfDataGrid is “Helvetica Neue”.
+The FontFamily for the content of header cell in the GridColumn can be customized by using the GridColumn.RecordFont property. The default value font used in **SfDataGrid** is “Helvetica Neue”.
 TextAlignment
-You can get or set the TextAlignment of the header cell in the GridColumn by using the GridColumn.TextAlignment property. The default alignment for the record cells in SfDataGrid is “Center” and you can customize this to “Start” or “End”.
+You can get or set the TextAlignment of the header cell in the GridColumn by using the GridColumn.TextAlignment property. The default alignment for the record cells in **SfDataGrid** is “Center” and you can customize this to “Start” or “End”.
 TextWrapping
 When the text for the record cells exceeds the content area, you can use the GridColumn.TextWrapping property to wrap the cell content.
 
@@ -1108,7 +1109,8 @@ XAlign="Center" YAlign="Center" />
 
 {% endhighlight %}
 
-The SfDataGrid allows you to extend the functionality of GridColumns with your own view by using the CellTemplate of the GridTemplateColumn. The following code example illustrates how template column can be used to load a stock cell inside it.
+The **SfDataGrid** allows you to extend the functionality of GridColumns with your own view by using the CellTemplate of the GridTemplateColumn. The following code example illustrates how template column can be used to load a stock cell inside it.
+
 {% highlight xml %}
 <ContentPage.Resources>
 <ResourceDictionary>
@@ -1176,8 +1178,11 @@ throw new NotImplementedException ();
 {% endtabs %}## Column Types – Android & iOS
 
 This section explains you the different types of Column and the customizations that can done for a column.
-SfDataGrid contains two types of columns each with its own functionalities. You can use any column based on your requirements. 
-The below table describes you the types of columns and its purpose of usage in SfDataGrid.
+
+**SfDataGrid** contains two types of columns each with its own functionalities. You can use any column based on your requirements.
+ 
+The below table describes you the types of columns and its purpose of usage in **SfDataGrid**.
+
 <table>
 <tr>
 <th colspan=1 rowspan=1>Column Type<br/></th>
@@ -1185,7 +1190,7 @@ The below table describes you the types of columns and its purpose of usage in S
 </tr>
 <tr>
 <td colspan=1 rowspan=1>GridColumn<br/></td>
-<td colspan=1 rowspan=1>Abstract class. Base column type of all the columns in the SfDataGrid.<br/></td>
+<td colspan=1 rowspan=1>Abstract class. Base column type of all the columns in the **SfDataGrid**.<br/></td>
 </tr>
 <tr>
 <td colspan=1 rowspan=1>GridTextColumn<br/></td>
@@ -1199,20 +1204,29 @@ The below table describes you the types of columns and its purpose of usage in S
 
 ### GridColumn
 
-GridColumn is the base column type of all the columns in the SfDataGrid, hence GridColumn properties are used by all the columns. The following sub-sections explains you about the properties in the GridColumn and the customizations that can be done using those properties.
+GridColumn is the base column type of all the columns in the **SfDataGrid**, hence GridColumn properties are used by all the columns. The following sub-sections explains you about the properties in the GridColumn and the customizations that can be done using those properties.
+
 #### MappingName
 
-GridColumn.MappingName associates the GridColumn with a property available in the underlying data source. While setting MappingName alone to the SfDataGrid, DisplayBinding will be automatically generated based on the MappingName. Data Manipulation operations like sorting, filtering, grouping will be done based on the MappingName property.
+**GridColumn.MappingName** associates the GridColumn with a property available in the underlying data source. While setting MappingName alone to the **SfDataGrid**, DisplayBinding will be automatically generated based on the MappingName. Data Manipulation operations like sorting, filtering, grouping will be done based on the MappingName property.
+
 #### Header customizations
 
-HeaderCellTextSize
-The FontSize for the content of header cell in the GridColumn can be customized by using the GridColumn.HeaderCellTextSize property. The default font size of the header cells in SfDataGrid is 14.
-HeaderFont
-The FontFamily for the content of header cell in the GridColumn can be customized by using the GridColumn.HeaderFont property. The default value font used in SfDataGrid is “Roboto-Bold” for Android and “Helvetica-Bold” in iOS.
-HeaderText
+##### HeaderCellTextSize
+
+The FontSize for the content of header cell in the GridColumn can be customized by using the GridColumn.HeaderCellTextSize property. The default font size of the header cells in **SfDataGrid** is 14.
+
+##### HeaderFont
+
+The FontFamily for the content of header cell in the GridColumn can be customized by using the GridColumn.HeaderFont property. The default value font used in **SfDataGrid** is “Roboto-Bold” for Android and “Helvetica-Bold” in iOS.
+
+##### HeaderText
+
 GridColumn.HeaderText specifies the text displayed in the column header. If HeaderText is not defined, the GridColumn.MappingName will be assigned to the HeaderText and will be displayed as column header.
-HeaderTextAlignment
-You can get or set the TextAlignment of the header cell in the GridColumn by using the GridColumn.HeaderTextAlignment property. The default alignment for the header cells in SfDataGrid is “Center”.
+
+##### HeaderTextAlignment
+You can get or set the TextAlignment of the header cell in the GridColumn by using the GridColumn.HeaderTextAlignment property. The default alignment for the header cells in **SfDataGrid** is “Center”.
+
 ### GridTextColumn
 
 GridTextColumn is derived from GridColumn and hence it inherits all the properties of GridColumn. Each of the record cells in GridTextColumn displays text based on the Mapping Name which associates the column with a property in the data source.
@@ -1224,11 +1238,14 @@ dataGrid.Columns.Add(new GridTextColumn() { MappingName = "OrderID" });
 
 {% endhighlight %}
 
-The below topics explain you about the customizations that can be done in the GridTextColumn in SfDataGrid.
+The below topics explain you about the customizations that can be done in the GridTextColumn in **SfDataGrid**.
+
 #### Formatting
 
-SfDataGrid allows you to format the value displayed in the GridColumn by using the GridColumn.Format property. Assign the FormatString to this property based on the type of the property the column is associated with to format the value. You can use different [](http://msdn.microsoft.com/en-us/library/fbxft59x(v=vs.90).aspx# "") HYPERLINK "http://msdn.microsoft.com/en-us/library/fbxft59x(v=vs.90).aspx" to customize the value displayed in the record cells.
+**SfDataGrid** allows you to format the value displayed in the GridColumn by using the **GridColumn.Format** property. Assign the FormatString to this property based on the type of the property the column is associated with to format the value. You can use different [StringFormats](http://msdn.microsoft.com/en-us/library/fbxft59x\(v=vs.90\).aspx) to customize the value displayed in the record cells.
+
 The following code example shows you how to apply formatting for a GridTextColumn in code.
+
 {% highlight c# %}
 dataGrid.Columns.Add (new GridTextColumn () { 
 MappingName = "Freight",
@@ -1244,10 +1261,10 @@ Format = "dd/MM/yyyy"
 
 {% endhighlight %}
 
-Note: For AutoGenerated columns the Formatting can be applied by handling the SfDataGrid.AutoGeneratingColumn event.
+Note: For AutoGenerated columns the Formatting can be applied by handling the **SfDataGrid.AutoGeneratingColumn** event.
 ##### Formatting GridTextColumn with different Culture
 
-SfDataGrid allows you to apply different [](https://developer.xamarin.com/api/type/System.Globalization.CultureInfo/# "") HYPERLINK "https://developer.xamarin.com/api/type/System.Globalization.CultureInfo/" for the GridColumns by using the GridColumn.CultureInfo property. Assign the FormatString to this property based on the type of the property the column is associated with to format the value. You can use different [](http://msdn.microsoft.com/en-us/library/fbxft59x(v=vs.90).aspx# "") HYPERLINK "http://msdn.microsoft.com/en-us/library/fbxft59x(v=vs.90).aspx" to customize the value displayed in the record cells.
+**SfDataGrid** allows you to apply different [CultureInfo](https://developer.xamarin.com/api/type/System.Globalization.CultureInfo/) for the GridColumns by using the GridColumn.CultureInfo property. Assign the FormatString to this property based on the type of the property the column is associated with to format the value. You can use different [StringFormats](http://msdn.microsoft.com/en-us/library/fbxft59x\(v=vs.90\).aspx) to customize the value displayed in the record cells.
 The following code example shows you how to apply different cultures for a GridColumns.
 {% highlight c# %}
 dataGrid.Columns.Add (new GridTextColumn () { 
@@ -1266,7 +1283,7 @@ CultureInfo = new CultureInfo("en-GB")
 
 {% endhighlight %}
 
-For auto generated columns this is achievable by handling the SfDataGrid.AutoGeneratingColumn event. The following code example shows you how to apply different cultures for auto generated GridColumns.
+For auto generated columns this is achievable by handling the **SfDataGrid.AutoGeneratingColumn** event. The following code example shows you how to apply different cultures for auto generated GridColumns.
 {% highlight c# %}
 void GridAutoGeneratingColumns(object sender, AutoGeneratingColumnArgs e)
 {
@@ -1286,11 +1303,11 @@ e.Column.CultureInfo = new CultureInfo ("en-GB");
 #### Font and Alignment options
 
 CellTextSize
-The FontSize for the content of record cells in GridColumn can be customized by using the GridColumn.CellTextSize property. The default font size of the record cells in SfDataGrid is 14.
+The FontSize for the content of record cells in GridColumn can be customized by using the GridColumn.CellTextSize property. The default font size of the record cells in **SfDataGrid** is 14.
 RecordFont
-The FontFamily for the content of header cell in the GridColumn can be customized by using the GridColumn.RecordFont property. The default value font used in SfDataGrid is “Roboto-Regular” for Android and “HelveticaNeue” for iOS.
+The FontFamily for the content of header cell in the GridColumn can be customized by using the GridColumn.RecordFont property. The default value font used in **SfDataGrid** is “Roboto-Regular” for Android and “HelveticaNeue” for iOS.
 TextAlignment
-You can get or set the TextAlignment of the header cell in the GridColumn by using the GridColumn.TextAlignment property. The default alignment for the record cells in SfDataGrid is “Center”.
+You can get or set the TextAlignment of the header cell in the GridColumn by using the GridColumn.TextAlignment property. The default alignment for the record cells in **SfDataGrid** is “Center”.
 ### TemplateColumn
 
 TemplateColumn is actually the GridTextColumn with UserCellType specified and hence it inherits all the properties of GridColumn. It allows you to extend the functionality of GridColumns with your own view by creating custom GridCell to render in the column.
@@ -1306,7 +1323,7 @@ customerIdColumn.HeaderText = "Customer ID";
 
 {% endhighlight %}
 
-In order to create a template column in SfDataGrid, you need to specify the UserCellType of the column. UserCellType is the type of the view to be used in the GridColumn and it must be derived from the GridCell. (i.e. a custom GridCell which hosts the view of your own requirement). 
+In order to create a template column in **SfDataGrid**, you need to specify the UserCellType of the column. UserCellType is the type of the view to be used in the GridColumn and it must be derived from the GridCell. (i.e. a custom GridCell which hosts the view of your own requirement). 
 The following code example shows you how to create a custom GridCell and use it in a template column.
 {% highlight c# %}
 //Creating a Template Column 
@@ -1374,11 +1391,11 @@ this.label.Text = DataColumn.CellValue.ToString ();
 
 ## Sorting 
 
-This section explains you about Sorting the data and about the properties and events that involve in Sorting in SfDataGrid. 
-SfDataGrid allows you to apply sorting on its data by setting the SfDataGrid.AllowSorting property to true. It allows you to sort the data against one or more columns. When sorting is applied, the Grid automatically rearranges the data to match with the current sort criteria. When SfDataGrid.AllowSorting is true, you can sort the data simply by tapping the column header you wish to sort. Once sorting is applied, the Grid shows a sort icon in the respective column header indicating the direction of sorting.
+This section explains you about Sorting the data and about the properties and events that involve in Sorting in **SfDataGrid**. 
+**SfDataGrid** allows you to apply sorting on its data by setting the **SfDataGrid.AllowSorting** property to true. It allows you to sort the data against one or more columns. When sorting is applied, the Grid automatically rearranges the data to match with the current sort criteria. When **SfDataGrid.AllowSorting** is true, you can sort the data simply by tapping the column header you wish to sort. Once sorting is applied, the Grid shows a sort icon in the respective column header indicating the direction of sorting.
 ### Programmatic Sorting
 
-SfDataGrid also allows to perform sorting from the code. This requires you to manually define the SortColumnDescription objects and add it in the SfDataGrid.SortColumnDescriptions collection. SfDataGrid sorts the data based on the SortColumnDescription objects that are added to this collection.
+**SfDataGrid** also allows to perform sorting from the code. This requires you to manually define the SortColumnDescription objects and add it in the **SfDataGrid.SortColumnDescriptions** collection. **SfDataGrid** sorts the data based on the SortColumnDescription objects that are added to this collection.
 SortColumnDescription object holds following two properties:
 * ColumnName: Name of the sorted column.
 
@@ -1415,8 +1432,8 @@ SortDirection="Descending" />
 
 ### Tri-State Sorting
 
-In addition to sort the data in ascending / descending orders, SfDataGrid also allows you to unsort the data in the original order by clicking the header again after sorting to descending order by setting the SfDataGrid.AllowTriStateSorting property to true. When this property is set Sorting in each column iterates through three sort states; ascending, descending, and unsorted.
-The following code example shows how to enable Tri-State sorting in SfDataGrid.
+In addition to sort the data in ascending / descending orders, **SfDataGrid** also allows you to unsort the data in the original order by clicking the header again after sorting to descending order by setting the **SfDataGrid.AllowTriStateSorting** property to true. When this property is set Sorting in each column iterates through three sort states; ascending, descending, and unsorted.
+The following code example shows how to enable Tri-State sorting in **SfDataGrid**.
 {% highlight c# %}
 dataGrid.AllowTriStateSorting = true;
 
@@ -1434,12 +1451,13 @@ dataGrid.AllowTriStateSorting = true;
 
 ### Multi Sorting
 
-SfDataGrid allows you to sort the data against more than one columns by setting the SfDataGrid.AllowMultiSort property to true. The number of columns by which the data can be sorted is unlimited. To apply sorting for multiple columns, tap the desired column headers after setting the SfDataGrid.AllowMultiSort property.
-The following code example shows how to enable multi-sorting in SfDataGrid.
+**SfDataGrid** allows you to sort the data against more than one columns by setting the **SfDataGrid.AllowMultiSort** property to true. The number of columns by which the data can be sorted is unlimited. To apply sorting for multiple columns, tap the desired column headers after setting the **SfDataGrid.AllowMultiSort** property.
+
+The following code example shows how to enable multi-sorting in **SfDataGrid**.
+
 {% highlight c# %}
+
 dataGrid.AllowMultiSort = true;
-
-
 
 {% endhighlight %}
 
@@ -1453,16 +1471,16 @@ dataGrid.AllowMultiSort = true;
 
 ### Sorting Events
 
-The SfDataGrid provides you the following Events for the sorting functionality:
+The **SfDataGrid** provides you the following Events for the sorting functionality:
 * SortColumnsChanging – This Event is raised while sorting the column at execution time before the column gets sorted. It helps to cancel the sorting action by setting the Cancel property of DataGridSortColumnsChangingEventArgs.
 
 * SortColumnsChanged – This Event is raised after the column is sorted.
 
 
 These two events are triggered with DataGridSortColumnsChangingEventArgs and DataGridSortColumnsChangedEventArgs that contain the following properties.
-* AddedItems – Gets the collection of SortColumnDescription objects that are added to SfDataGrid.SortColumnDescriptions collection for Sorting.
+* AddedItems – Gets the collection of SortColumnDescription objects that are added to **SfDataGrid.SortColumnDescriptions** collection for Sorting.
 
-* RemovedItems – Gets the collection of SortColumnDescription objects that are removed from SfDataGrid.SortColumnDescriptions collection.
+* RemovedItems – Gets the collection of SortColumnDescription objects that are removed from **SfDataGrid.SortColumnDescriptions** collection.
 
 
 The following code example illustrates how to hook the SortColumnsChanging event and cancel the sorting of a column.
@@ -1495,7 +1513,7 @@ ItemsSource="{Binding OrdersInfo}">
 
 ### Custom sorting
 
-SfDataGrid allows you to sort columns based on custom logic when the standard sorting techniques do not meet the requirements. For each column, you can apply different sorting criteria by adding SortComparer objects to SfDataGrid.SortComparersCollection.
+**SfDataGrid** allows you to sort columns based on custom logic when the standard sorting techniques do not meet the requirements. For each column, you can apply different sorting criteria by adding SortComparer objects to **SfDataGrid.SortComparersCollection**.
 A SortComparer object has the following properties:
 * PropertyName: MappingName of the column that applies custom sorting.
 
@@ -1605,21 +1623,21 @@ set;
 
 ### Disable sorting for an individual column
 
-SfDataGrid allows you to disable the sorting for individual columns by using the GridColumn.AllowSorting property. The default value of this property is true and hence all the columns in the SfDataGrid.Columns collection can be sorted when SfDataGrid.AllowSorting is set to true.
+**SfDataGrid** allows you to disable the sorting for individual columns by using the GridColumn.AllowSorting property. The default value of this property is true and hence all the columns in the **SfDataGrid.Columns** collection can be sorted when **SfDataGrid.AllowSorting** is set to true.
 ## Grouping 
 
-This section explains you how to group a column in SfDataGrid and about the properties and customizations available for Grouping in SfDataGrid.
+This section explains you how to group a column in **SfDataGrid** and about the properties and customizations available for Grouping in **SfDataGrid**.
 A Group represents a collection of records that belong to a particular category. When Grouping is applied, the data is organized into a hierarchical structure based on matching field values. The records having identical values in the grouped column are combined to form a Group. Each Group is identified by its CaptionSummaryRow to get the underlying records in view. 
 ### Programmatic Grouping
 
-SfDataGrid also allows to perform grouping from the code by defining the GroupColumnDescription object and adding it in the SfDataGrid.GroupColumnDescriptions collection. SfDataGrid groups the data based on the GroupColumnDescription object that is added to this collection.
+**SfDataGrid** also allows to perform grouping from the code by defining the GroupColumnDescription object and adding it in the **SfDataGrid.GroupColumnDescriptions** collection. **SfDataGrid** groups the data based on the GroupColumnDescription object that is added to this collection.
 GroupColumnDescription object holds following two properties:
 * ColumnName: Name of the grouped column.
 
 * Converter: Get the IValueConverter as input that helps to apply the custom grouping.
 
 
-The following code example illustrates how to apply grouping by a column in SfDataGrid.
+The following code example illustrates how to apply grouping by a column in **SfDataGrid**.
 {% highlight c# %}
 dataGrid.GroupColumnDescriptions.Add (new GroupColumnDescription () {
 ColumnName = "CustomerID",
@@ -1645,7 +1663,7 @@ ItemsSource="{Binding OrdersInfo}">
 
 ### Custom Grouping
 
-SfDataGrid allows you to group a column based on custom logic when the standard grouping techniques do not meet the requirements. To achieve the CustomGrouping, you need to write a converter that implements IValueConverter with your CustomGrouping logic and assign that converter to the GroupColumnDescription.Converter property.
+**SfDataGrid** allows you to group a column based on custom logic when the standard grouping techniques do not meet the requirements. To achieve the CustomGrouping, you need to write a converter that implements IValueConverter with your CustomGrouping logic and assign that converter to the GroupColumnDescription.Converter property.
 The following code example illustrates how to set the custom grouping converter for the group description that is added to group the Freight column.
 {% highlight c# %}
 dataGrid.GroupColumnDescriptions.Add (new GroupColumnDescription () {
@@ -1724,7 +1742,7 @@ return null;
 
 #### How to hide the grouped column in SfDataGrid?
 
-In SfDataGrid a column will be generated with the default column width by default. In order to group by a column that should not be visible in view, add the column to the SfDataGrid.Columns collection and set its width as 0. Thus the column will be grouped and will not be visually seen. Please refer the below code example.
+In **SfDataGrid** a column will be generated with the default column width by default. In order to group by a column that should not be visible in view, add the column to the **SfDataGrid.Columns** collection and set its width as 0. Thus the column will be grouped and will not be visually seen. Please refer the below code example.
 {% highlight c# %}
 dataGrid.Columns.Add (new GridTextColumn () { 
 MappingName = "ShippingDate",
@@ -1755,9 +1773,9 @@ ColumnName = "ShippingDate"
 
 ## Summary
 
-This section explains you how to show the summarizing information of grouped data and how to customize the format of the summary information in SfDataGrid.
-SfDataGrid displays the summaries for each Group using the CaptionSummaryRow. The CaptionSummaryRow carries the information about a particular Group like the Group name, number of items (records) in the Group, etc.
-SfDataGrid also supports setting custom GroupCaptionTextFormat for CaptionSummaryRows. By default the group caption text will be in the format "{ColumnName} : {Key} - {ItemsCount} Items". 
+This section explains you how to show the summarizing information of grouped data and how to customize the format of the summary information in **SfDataGrid**.
+**SfDataGrid** displays the summaries for each Group using the CaptionSummaryRow. The CaptionSummaryRow carries the information about a particular Group like the Group name, number of items (records) in the Group, etc.
+**SfDataGrid** also supports setting custom GroupCaptionTextFormat for CaptionSummaryRows. By default the group caption text will be in the format "{ColumnName} : {Key} - {ItemsCount} Items". 
 * ColumnName : Displays the grouped column name.
 
 * Key : Displays the group key value.
@@ -1765,7 +1783,7 @@ SfDataGrid also supports setting custom GroupCaptionTextFormat for CaptionSummar
 * ItemsCount : Displays the number of items in group.
 
 
-You can customize this group caption text format by setting the SfDataGrid.GroupCaptionTextFormat property. The following code example illustrates how to customize GroupCaptionText in SfDataGrid.
+You can customize this group caption text format by setting the **SfDataGrid.GroupCaptionTextFormat** property. The following code example illustrates how to customize GroupCaptionText in **SfDataGrid**.
 {% highlight c# %}
 //Customized GroupCaptionText in German
 dataGrid.GroupCaptionTextFormat = "{ColumnName} : {Key} - {ItemsCount} Produkte"; 
@@ -1776,8 +1794,8 @@ dataGrid.GroupCaptionTextFormat = "{ColumnName} : {Key} - {ItemsCount} Pr
 
 ## Filtering – Forms 
 
-SfDataGrid provides support to filter the records in view by setting the SfDataGrid.View.Filter property. You have to call the SfDataGrid.View.RefreshFilter() method after assigning the Filter property for refreshing the view. 
-The following code example illustrates how to apply filtering in SfDataGrid. FilterRecords method filters the data that contains the filterText value. Assign FilterRecords method to SfDataGrid.View.Filter predicate to filter the CustomerID column.
+**SfDataGrid** provides support to filter the records in view by setting the **SfDataGrid.View.Filter** property. You have to call the **SfDataGrid.View.RefreshFilter()** method after assigning the Filter property for refreshing the view. 
+The following code example illustrates how to apply filtering in **SfDataGrid**. FilterRecords method filters the data that contains the filterText value. Assign FilterRecords method to **SfDataGrid.View.Filter** predicate to filter the CustomerID column.
 {% highlight xml %}
 //Filtering.xaml
 
@@ -1876,8 +1894,8 @@ return false;
 
 ## Filtering – Android & iOS 
 
-SfDataGrid provides support to filter the records in view by setting the SfDataGrid.View.Filter property. You have to call the SfDataGrid.View.RefreshFilter() method after assigning the Filter property for the records to get filtered in view. 
-The following code example illustrates how to apply filtering in SfDataGrid. FilterRecords method filters the data that contains the filterText value. Assign FilterRecords method to SfDataGrid.View.Filter predicate to filter the CustomerID column. 
+**SfDataGrid** provides support to filter the records in view by setting the **SfDataGrid.View.Filter** property. You have to call the **SfDataGrid.View.RefreshFilter()** method after assigning the Filter property for the records to get filtered in view. 
+The following code example illustrates how to apply filtering in **SfDataGrid**. FilterRecords method filters the data that contains the filterText value. Assign FilterRecords method to **SfDataGrid.View.Filter** predicate to filter the CustomerID column. 
 {% highlight c# %}
 //For Android: 
 SearchView filterText = new SearchView(BaseContext);
@@ -1959,8 +1977,10 @@ return false;
 
 ## Selection
 
-This section explains you about how to enable selection in SfDataGrid and about the selection modes, properties, events that involve in selection and customizations available for Selection in SfDataGrid.
-SfDataGrid lets you to select a specific row or group of rows either programmatically or by touch interactions. To enable Selection in SfDataGrid, you need to set the SfDataGrid.SelectionMode property to value other than “None”. SfDataGrid has different selection modes to perform selection operation as listed below.
+This section explains you about how to enable selection in **SfDataGrid** and about the selection modes, properties, events that involve in selection and customizations available for Selection in **SfDataGrid**.
+
+**SfDataGrid** lets you to select a specific row or group of rows either programmatically or by touch interactions. To enable Selection in **SfDataGrid**, you need to set the **SfDataGrid.SelectionMode** property to value other than “None”. **SfDataGrid** has different selection modes to perform selection operation as listed below.
+
 * None: Disables selection and no rows can be selected. This is the default value.
 
 * Single: Allows you to select a single row only. Upon selecting the next row the selection in the previous row is cleared.
@@ -1970,7 +1990,7 @@ SfDataGrid lets you to select a specific row or group of rows either programmati
 * SingleDeselect: Allows you to select only a single row, however upon tapping the row again the Selection is cleared. Similar to “Single” mode, upon selecting the next row the selection in the previous row is cleared.
 
 
-The following code example illustrates how to set the selection mode in SfDataGrid.
+The following code example illustrates how to set the selection mode in **SfDataGrid**.
 {% highlight c# %}
 dataGrid.SelectionMode = SelectionMode.Single; 
 
@@ -1980,8 +2000,8 @@ dataGrid.SelectionMode = SelectionMode.Single;
 
 ### Programmatic Selection
 
-When SfDataGrid.SelectionMode is set a value other than “None”, you can also select the row / rows in SfDataGrid from the code by setting the SfDataGrid.SelectedIndex, SfDataGrid.SelectedItem or SfDataGrid.SelectedItems property based on the selection mode. The following code example illustrates how to enable selection from code in SfDataGrid.
-When the selection mode is “Single” you can programmatically select a row in two ways, either by setting the row index to the SfDataGrid.SelectedIndex property or by setting the underlying object to be selected to the SfDataGrid.SelectedItem property. 
+When **SfDataGrid.SelectionMode** is set a value other than “None”, you can also select the row / rows in **SfDataGrid** from the code by setting the **SfDataGrid.SelectedIndex**, **SfDataGrid.SelectedItem** or **SfDataGrid.SelectedItems** property based on the selection mode. The following code example illustrates how to enable selection from code in **SfDataGrid**.
+When the selection mode is “Single” you can programmatically select a row in two ways, either by setting the row index to the **SfDataGrid.SelectedIndex** property or by setting the underlying object to be selected to the **SfDataGrid.SelectedItem** property. 
 The following code example illustrates how to programmatically select a row from the code.
 {% highlight c# %}
 //Perform selection using selected index
@@ -1995,7 +2015,7 @@ dataGrid.SelectedItem = viewModel.OrdersInfo [5];
 
 ### Selection Events
 
-The SfDataGrid provides you the following Events for Selection:
+The **SfDataGrid** provides you the following Events for Selection:
 * SelectionChanging – This Event is raised while selecting a row at the execution time before the row is selected. Hence it allows you to cancel the selection action by setting the Cancel property of GridSelectionChangingEventArgs.
 
 * SelectionChanged – This Event is raised after the column is selected.
@@ -2022,8 +2042,8 @@ e.Cancel = true;
 
 ### Clear Selection
 
-SfDataGrid allows you to clear the selection applied in the grid rows in two ways, either by setting the SfDataGrid.SelectionMode to “None” or by calling the SfDataGrid.SelectionController.ClearSelection() method.
-The following code example illustrates how to clear selection in SfDataGrid.
+**SfDataGrid** allows you to clear the selection applied in the grid rows in two ways, either by setting the **SfDataGrid.SelectionMode** to “None” or by calling the **SfDataGrid.SelectionController.ClearSelection()** method.
+The following code example illustrates how to clear selection in **SfDataGrid**.
 {% highlight c# %}
 //Clear selection using selection mode
 dataGrid.SelectionMode = SelectionMode.None;
@@ -2037,11 +2057,11 @@ dataGrid.SelectionController.ClearSelection ();
 
 ## Styles
 
-This section explains you about how to apply styles for changing the visual appearance of the SfDataGrid and its elements.
-SfDataGrid allows you to apply style to all of its elements by writing a Style class overriding from DataGridStyle and assigning it to the SfDataGrid.GridStyle property.  
-The following example explains you how to apply custom style to SfDataGrid.
+This section explains you about how to apply styles for changing the visual appearance of the **SfDataGrid** and its elements.
+**SfDataGrid** allows you to apply style to all of its elements by writing a Style class overriding from DataGridStyle and assigning it to the **SfDataGrid.GridStyle** property.  
+The following example explains you how to apply custom style to **SfDataGrid**.
 {% highlight c# %}
-//Apply custom style to SfDataGrid from code
+//Apply custom style to **SfDataGrid** from code
 dataGrid.GridStyle = new Dark (); 
 
 
@@ -2140,7 +2160,7 @@ return Color.FromRgb(34, 31, 31);
 
 ## Conditional styles - Forms
 
-SfDataGrid allows you apply cell styles for a GridColumn that is used to render the cells in that column. When applied cell style the GridCell appears in the custom style rather than the default one. The following code example shows you how to apply cell style for a GridColumn.
+**SfDataGrid** allows you apply cell styles for a GridColumn that is used to render the cells in that column. When applied cell style the GridCell appears in the custom style rather than the default one. The following code example shows you how to apply cell style for a GridColumn.
 {% highlight xml %}
 
 <syncfusion:SfDataGrid x:Name="dataGrid"
@@ -2160,8 +2180,8 @@ ItemsSource="{Binding OrdersInfo}">
 
 {% endhighlight %}
 
-SfDataGrid also allows you to apply styles for the GridCells in a column based on conditions by writing a converter for the property in GridCell for which conditional styles need to be applied.
-The following code example shows you how to apply conditional styling for a column by writing converter in SfDataGrid.
+**SfDataGrid** also allows you to apply styles for the GridCells in a column based on conditions by writing a converter for the property in GridCell for which conditional styles need to be applied.
+The following code example shows you how to apply conditional styling for a column by writing converter in **SfDataGrid**.
 {% highlight xml %}
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -2223,12 +2243,12 @@ return null;
 
 ## Load More
 
-SfDataGrid lets you to enable the LoadMore option by setting the SfDataGrid.AllowLoadMore property to true and by setting the SfDataGrid.LoadMoreCommand property. When the LoadMore is enabled, the SfDataGrid provides an option of loading a subset of data to its data source in the runtime using the LoadMore view. 
+**SfDataGrid** lets you to enable the LoadMore option by setting the **SfDataGrid.AllowLoadMore** property to true and by setting the **SfDataGrid.LoadMoreCommand** property. When the LoadMore is enabled, the **SfDataGrid** provides an option of loading a subset of data to its data source in the runtime using the LoadMore view. 
 On scrolling down, when the grid reaches the maximum offset an interactive load more view is displayed in view. On tapping the load more view it triggers a command to add more data to the data source of the grid in runtime.
 ### LoadMoreCommand
 
-SfDataGrid lets you load records to its data source in runtime by triggering an ICommand binded to the SfDataGrid.LoadMoreCommand property. When you tap the load more view, if the CanExecute of the ICommand returns true, then this command is triggered to load the records in runtime. 
-You need to set the SfDataGrid.IsBusy property to true before loading the items to notify the grid that more items are loaded to it and set the property to false after loading the items to the grid. When loading the items, you can also alter the time for the LoadMore animation from the sample by setting a delay based on your requirement.
+**SfDataGrid** lets you load records to its data source in runtime by triggering an ICommand binded to the **SfDataGrid.LoadMoreCommand** property. When you tap the load more view, if the CanExecute of the ICommand returns true, then this command is triggered to load the records in runtime. 
+You need to set the **SfDataGrid.IsBusy** property to true before loading the items to notify the grid that more items are loaded to it and set the property to false after loading the items to the grid. When loading the items, you can also alter the time for the LoadMore animation from the sample by setting a delay based on your requirement.
 The following code example illustrates how to enable and load items in the runtime.
 {% highlight c# %}
 //Enable load more in SfDataGrid
@@ -2254,10 +2274,10 @@ this.OrdersInfo.Add(order.GenerateOrder(OrdersInfo.Count + 1));
 
 ### LoadMore Customizations
 
-SfDataGrid also allows you to customize the LoadMore view, the text displayed on the LoadMore view and their positions to either top or bottom based on the requirements.
+**SfDataGrid** also allows you to customize the LoadMore view, the text displayed on the LoadMore view and their positions to either top or bottom based on the requirements.
 #### Customize Load More Display Text
 
-You can customize the text displayed in the load more view by setting the SfDataGrid.LoadMoreText property as below.
+You can customize the text displayed in the load more view by setting the **SfDataGrid.LoadMoreText** property as below.
 {% highlight c# %}
 //setting load more text in SfDataGrid
 dataGrid.LoadMoreText = "Load More Items"; 
@@ -2279,8 +2299,8 @@ dataGrid.LoadMorePosition = LoadMoreViewPosition.Bottom;
 
 #### Customize LoadMoreView
 
-SfDataGrid also allows you to customize the load more view based on your requirements. To do this you need to write your custom LoadMoreView class inheriting from the LoadMoreView and perform the LoadMoreOperation based on your requirement.
-The following code example illustrates how to customize the LoadMoreView in SfDataGrid. 
+**SfDataGrid** also allows you to customize the load more view based on your requirements. To do this you need to write your custom LoadMoreView class inheriting from the LoadMoreView and perform the LoadMoreOperation based on your requirement.
+The following code example illustrates how to customize the LoadMoreView in **SfDataGrid**. 
 {% highlight c# %}
 public class CustomLoadMoreView : LoadMoreView
 {
@@ -2315,13 +2335,17 @@ loadMoreView.Layout(new Rectangle(x, y, width, height));
 
 ## Pull To Refresh
 
-This section explains you about how to enable and perform pull to refresh operation in SfDataGrid.
-SfDataGrid lets you to enable the PullToRefresh option by setting the SfDataGrid.AllowPullToRefresh property to true and by setting the SfDataGrid.PullToRefreshCommand property. When the PullToRefresh is enabled, the SfDataGrid provides support for refreshing the data source in the runtime while doing the pull to refresh action. 
+This section explains you about how to enable and perform pull to refresh operation in **SfDataGrid**.
+
+**SfDataGrid** lets you to enable the PullToRefresh option by setting the **SfDataGrid.AllowPullToRefresh** property to true and by setting the **SfDataGrid.PullToRefreshCommand** property. When the PullToRefresh is enabled, the **SfDataGrid** provides support for refreshing the data source in the runtime while doing the pull to refresh action. 
+
 #### PullToRefreshCommand
 
-SfDataGrid lets you refresh the data in view in runtime by triggering an ICommand binded to the SfDataGrid.PullToRefreshCommand property. While you perform pull to refresh action, if the progress bar meets 100 %, then this command is triggered to refresh the records in view. 
-You need to set the SfDataGrid.IsBusy property to true before refreshing the records to notify the grid that pull to refresh action is being performed and set the property to false after the view is refreshed. You can also alter the time for the PullToRefresh animation from the sample by setting a delay based on your requirement.
-The following code example illustrates how to enable and perform PullToRefresh operation in SfDataGrid.
+**SfDataGrid** lets you refresh the data in view in runtime by triggering an ICommand binded to the **SfDataGrid.PullToRefreshCommand** property. While you perform pull to refresh action, if the progress bar meets 100 %, then this command is triggered to refresh the records in view. 
+You need to set the **SfDataGrid.IsBusy** property to true before refreshing the records to notify the grid that pull to refresh action is being performed and set the property to false after the view is refreshed. You can also alter the time for the PullToRefresh animation from the sample by setting a delay based on your requirement.
+
+The following code example illustrates how to enable and perform PullToRefresh operation in **SfDataGrid**.
+
 {% highlight c# %}
 //Enable PullToRefresh in SfDataGrid
 dataGrid.AllowPullToRefresh = true;
@@ -2350,12 +2374,16 @@ this.OrdersInfo.Insert (0, order.RefreshItemsSource (value));
 
 ## Exporting
 
-This section explains you how to Export the SfDatagrid to Excel and PDF file and about the customizations that can be done while exporting. 
-SfDataGrid provides support for exporting the data to Excel and Pdf with several customization options like custom appearance, excluding specific columns, excluding headers, setting custom row height, setting custom column width, etc. It also provides support for Grouping, Filtering and Sorting when Exporting.
-In order to use export to excel and export to pdf functionalities of SfDataGrid, add the required assembly references to your application as discussed in the [](#_Assembly_deployment "") HYPERLINK \l "_Assembly_deployment" section.
+This section explains you how to Export the **SfDataGrid** to Excel and PDF file and about the customizations that can be done while exporting. 
+
+**SfDataGrid** provides support for exporting the data to Excel and Pdf with several customization options like custom appearance, excluding specific columns, excluding headers, setting custom row height, setting custom column width, etc. It also provides support for Grouping, Filtering and Sorting when Exporting.
+
+In order to use export to excel and export to pdf functionalities of **SfDataGrid**, add the required assembly references to your application as discussed in the [](#_Assembly_deployment "") HYPERLINK \l "_Assembly_deployment" section.
+
 ### Export to Excel
 
-You can Export data to Excel by using the ExportToExcel method by passing the SfDataGrid as an argument. The following code example illustrates exporting data to Excel using the ExportToExcel Method.
+You can Export data to Excel by using the ExportToExcel method by passing the **SfDataGrid** as an argument. The following code example illustrates exporting data to Excel using the ExportToExcel Method.
+
 {% highlight c# %}
 private void ExportToExcel()
 {
@@ -2379,7 +2407,7 @@ DependencyService.Get<ISave> ().Save ("DataGrid.xlsx", "application/msexcel",
 
 #### Exporting Options
 
-You can also Export data to Excel and Pdf with various customizing options while exporting the SfDataGrid by passing the grid and [](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/topic55.html# "") HYPERLINK "http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/topic55.html" as arguments to the ExportToExcel method. The following code example illustrates this.
+You can also Export data to Excel and Pdf with various customizing options while exporting the **SfDataGrid** by passing the grid and [](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/topic55.html# "") HYPERLINK "http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/topic55.html" as arguments to the ExportToExcel method. The following code example illustrates this.
 {% highlight c# %}
 DataGridExcelExportingController excelExport = new DataGridExcelExportingController ();
 DataGridExcelExportingOption exportOption = new DataGridExcelExportingOption ();
@@ -2391,10 +2419,11 @@ var excelEngine = excelExport.ExportToExcel (this.dataGrid, exportOption);
 
 {% endhighlight %}
 
-SfDataGrid provides you with several [](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/topic58.html# "") HYPERLINK "http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/topic58.html" class to customize the grid while exporting it to Excel. 
+**SfDataGrid** provides you with several [](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/topic58.html# "") HYPERLINK "http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/topic58.html" class to customize the grid while exporting it to Excel. 
+
 #### Events
 
-The SfDataGrid provides you the following Events for Exporting to Excel:
+The **SfDataGrid** provides you the following Events for Exporting to Excel:
 * RowExporting – This Event is raised while exporting a row at the execution time before the row is exported.
 
 * CellExporting – This Event is raised while exporting a cell at the execution time before the cell is exported.
@@ -2483,7 +2512,7 @@ e.CellValue = "CaptionSummary";
 
 ### Export to Pdf
 
-You can Export data to pdf by using the ExportToPdf method by passing the SfDataGrid as an argument. The following code example illustrates exporting data to Excel using the ExportToExcel Method.
+You can Export data to pdf by using the ExportToPdf method by passing the **SfDataGrid** as an argument. The following code example illustrates exporting data to Excel using the ExportToExcel Method.
 {% highlight c# %}
 private void ExportToPdf()
 {
@@ -2505,7 +2534,7 @@ DependencyService.Get<ISave> ().Save ("DataGrid.pdf", "application/pdf", str
 
 #### Exporting Options
 
-You can also Export data to Pdf with various customizing options while exporting the SfDataGrid by passing the grid and [](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/topic100.html# "") HYPERLINK "http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/topic100.html" as arguments to the ExportToPdf method. The following code example illustrates this.
+You can also Export data to Pdf with various customizing options while exporting the **SfDataGrid** by passing the grid and [](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/topic100.html# "") HYPERLINK "http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/topic100.html" as arguments to the ExportToPdf method. The following code example illustrates this.
 {% highlight c# %}
 DataGridExcelExportingController excelExport = new DataGridExcelExportingController ();
 DataGridExcelExportingOption exportOption = new DataGridExcelExportingOption ();
@@ -2522,10 +2551,10 @@ var doc = pdfExport.ExportToPdf (this.dataGrid, exportOption);
 
 {% endhighlight %}
 
-SfDataGrid provides you with several [](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/topic103.html# "") HYPERLINK "http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/topic103.html" class to customize the grid while exporting it to Pdf. 
+**SfDataGrid** provides you with several [](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/topic103.html# "") HYPERLINK "http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/topic103.html" class to customize the grid while exporting it to Pdf. 
 #### Events
 
-The SfDataGrid provides you the following Events for Exporting:
+The **SfDataGrid** provides you the following Events for Exporting:
 * RowExporting – This Event is raised while exporting a row at the execution time before the row is exported.
 
 * CellExporting – This Event is raised while exporting a cell at the execution time before the cell is exported.
@@ -2612,17 +2641,18 @@ e.CellValue = "CaptionSummary";
 
 ## ColumnSizer
 
-SfDataGrid allows you to apply ColumnSizer for the GridColumns by setting the SfDataGrid.ColumnSizer property. 
-The following code example illustrates how to apply ColumnSizer in SfDataGrid.
+**SfDataGrid** allows you to apply ColumnSizer for the GridColumns by setting the **SfDataGrid.ColumnSizer** property. 
+
+The following code example illustrates how to apply ColumnSizer in **SfDataGrid**.
+
 {% highlight c# %}
 
 dataGrid.ColumnSizer = ColumnSizer.None;  
 
-
-
 {% endhighlight %}
 
-SfDataGrid applies width for all the GridColumns in the SfDataGrid.Columns collection based on the SfDataGrid.ColumnSizer property. Following are the lists of options available to set width of the Columns.
+**SfDataGrid** applies width for all the GridColumns in the **SfDataGrid.Columns** collection based on the **SfDataGrid.ColumnSizer** property. Following are the lists of options available to set width of the Columns.
+
 * None
 
 * LastColumnFill
@@ -2631,27 +2661,32 @@ SfDataGrid applies width for all the GridColumns in the SfDataGrid.Columns colle
 
 ### ColumnSizer.None
 
+No Column sizing is applied when the **SfDataGrid.ColumnSizer** is set to “None”. Columns are arranged in view based on the **SfDataGrid.DefaultColumnWidth** property. This is the default value of the **SfDataGrid.ColumnSizer** property.
 
-No Column sizing is applied when the SfDataGrid.ColumnSizer is set to “None”. Columns are arranged in view based on the SfDataGrid.DefaultColumnWidth property. This is the default value of the SfDataGrid.ColumnSizer property.
 ### ColumnSizer.LastColumnFill
 
-When the SfDataGrid.ColumnSizer is “LastColumnFill”, the column width of the GridColumns are adjusted with respect to SfDataGrid.DefaultColumnWidth property. In case if the columns does not fill the entire view space, then the last column’s width fills the unoccupied space in the view.
+When the **SfDataGrid.ColumnSizer** is “LastColumnFill”, the column width of the GridColumns are adjusted with respect to **SfDataGrid.DefaultColumnWidth** property. In case if the columns does not fill the entire view space, then the last column’s width fills the unoccupied space in the view.
+
 ### ColumnSizer.Star
 
-When the SfDataGrid.ColumnSizer is “Star”, all the GridColumns are adjusted an equal column width to fit within the view. Setting ColumnSizer to “Star” will disable the HorizontalScrolling in SfDataGrid.
-Note: If any column is specified a width explicitly using the GridColumn.Width property then that column is not considered ColumnSizing width and skipped while applying the ColumnSizer for grid columns.
+When the **SfDataGrid.ColumnSizer** is “Star”, all the GridColumns are adjusted an equal column width to fit within the view. Setting ColumnSizer to “Star” will disable the HorizontalScrolling in **SfDataGrid**.
+
+N> If any column is specified a width explicitly using the GridColumn.Width property then that column is not considered ColumnSizing width and skipped while applying the ColumnSizer for grid columns.
+
 ## Freeze panes
 
-This section explains you how to set Freeze panes in SfDataGrid. 
+This section explains you how to set Freeze panes in **SfDataGrid**. 
+
 ### Freeze Rows
 
-SfDataGrid provides extensive support to freeze the rows at the top of the view below the header row by setting the SfDataGrid.FrozenRowsCount property. 
-The following code example illustrates freezing two rows in SfDataGrid.
+**SfDataGrid** provides extensive support to freeze the rows at the top of the view below the header row by setting the **SfDataGrid.FrozenRowsCount** property. 
+
+The following code example illustrates freezing two rows in **SfDataGrid**.
+
 {% highlight c# %}
+
 //Setting number of rows to freeze in SfDataGrid
 dataGrid.FrozenRowsCount = 2; 
-
-
 
 {% endhighlight %}
 
@@ -2663,11 +2698,14 @@ dataGrid.FrozenRowsCount = 2;
 If you have 10 rows in view, then you set FrozenRowsCount to a maximum value of 9.
 
 
-NOTE: Header row is frozen by default and works regardless of the FrozenRowsCount property.
+N> Header row is frozen by default and works regardless of the FrozenRowsCount property.
+
 ### Freeze Columns
 
-SfDataGrid also provides support to freeze the columns at the left of the view by setting the SfDataGrid.FrozenColumnsCount property. 
-The following code example illustrates freezing two columns in SfDataGrid.
+**SfDataGrid** also provides support to freeze the columns at the left of the view by setting the **SfDataGrid.FrozenColumnsCount** property. 
+
+The following code example illustrates freezing two columns in **SfDataGrid**.
+
 {% highlight c# %}
 
 //Setting number of columns to freeze in SfDataGrid
@@ -2685,15 +2723,20 @@ dataGrid.FrozenColumnsCount = 2; 
 If you have 5 columns in view, then you can set FrozenColumnsCount to a maximum value of 4.
 
 
-NOTE: RowHeader is frozen by default and works regardless of the FrozenColumnsCount property.
+N> RowHeader is frozen by default and works regardless of the FrozenColumnsCount property.
+
 ## Row Height Customization
 
-This section explains you about how to customize the height of the rows in SfDataGrid.
-SfDataGrid provides you the options to customize the header row height and the row height of all the grid rows or particular rows based on your requirements. The following sections illustrates you about how to achieve this customization in SfDataGrid.
+This section explains you about how to customize the height of the rows in **SfDataGrid**.
+
+**SfDataGrid** provides you the options to customize the header row height and the row height of all the grid rows or particular rows based on your requirements. The following sections illustrates you about how to achieve this customization in **SfDataGrid**.
+
 ### Customize HeaderRowHeight 
 
-SfDataGrid allows you to customize the height of the header row by setting the SfDataGrid.HeaderRowHeight property. The default value of this property is 40. This property responds to runtime changes and hence you can customize it based on your requirement. Setting SfDataGrid.HeaderRowHeight to zero will collapse the header row in view.
-The following code example illustrates how to customize header row height in SfDataGrid.
+**SfDataGrid** allows you to customize the height of the header row by setting the **SfDataGrid.HeaderRowHeight** property. The default value of this property is 40. This property responds to runtime changes and hence you can customize it based on your requirement. Setting **SfDataGrid.HeaderRowHeight** to zero will collapse the header row in view.
+
+The following code example illustrates how to customize header row height in **SfDataGrid**.
+
 {% highlight c# %}
 
 //Customizing header row height in SfDataGrid
@@ -2705,31 +2748,33 @@ dataGrid.HeaderRowHeight = 50; 
 
 ### Customize RowHeight for all rows
 
-SfDataGrid allows you to customize the height of the grid rows in the scrolling region by setting the SfDataGrid.RowHeight property. The default value of this property is 50. This property responds to runtime changes and hence you can customize it based on your requirement. Setting this property will change the height of all the rows in the body region with the common value. Setting SfDataGrid.RowHeight to zero will collapse all the rows in the grid.
-The following code example illustrates how to customize header row height in SfDataGrid.
+**SfDataGrid** allows you to customize the height of the grid rows in the scrolling region by setting the **SfDataGrid.RowHeight** property. The default value of this property is 50. This property responds to runtime changes and hence you can customize it based on your requirement. Setting this property will change the height of all the rows in the body region with the common value. Setting **SfDataGrid.RowHeight** to zero will collapse all the rows in the grid.
+
+The following code example illustrates how to customize header row height in **SfDataGrid**.
+
 {% highlight c# %}
 
 //Customizing row height in SfDataGrid
 dataGrid.RowHeight = 60;  
 
-
-
 {% endhighlight %}
 
 ### Customize RowHeight of a particular row on demand
 
-SfDataGrid allows you to customize the height of a grid row on demand by handling the SfDataGrid.QueryRowHeight event. This event is raised for the grid rows whenever they come to view and hence you can customize the height of a particular row on demand by using the row index. Setting height to zero will collapse all the row in the grid. 
+**SfDataGrid** allows you to customize the height of a grid row on demand by handling the **SfDataGrid.QueryRowHeight** event. This event is raised for the grid rows whenever they come to view and hence you can customize the height of a particular row on demand by using the row index. Setting height to zero will collapse all the row in the grid. 
+
 #### QueryRowHeight
 
-QueryRowHeight is the event that returns row heights on demand. This event receives two arguments namely the sender that handles the SfDataGrid and the QueryRowHeightEventArgs. The QueryRowHeightEventArgs has the following properties.
+QueryRowHeight is the event that returns row heights on demand. This event receives two arguments namely the sender that handles the **SfDataGrid** and the QueryRowHeightEventArgs. The QueryRowHeightEventArgs has the following properties.
+
 * RowIndex: The property RowIndex helps you to identify a particular row in the grid.
 
 * Height: This property sets and returns the height for a grid row on demand. Default line size for the rows is 50.
 
 * Handled: This property decides whether the specified height can be set to row or not. The default value is false. When this property is not set, the decided height is not set to the row.
 
+The following code example illustrates how to hook the QueryRowHeight event and customize a row‘s height in **SfDataGrid**.
 
-The following code example illustrates how to hook the QueryRowHeight event and customize a row‘s height in SfDataGrid.
 {% highlight c# %}
 
 //Hooks QueryRowHeight event in SfDataGrid
@@ -2743,8 +2788,6 @@ e.Height = 100;
 e.Handled = true;
 }
 } 
-
-
 
 {% endhighlight %}
 

@@ -13,8 +13,8 @@ documentation: ug
 
 To render a line chart, create an instance of `LineSeries` and add to the `Series` collection property of `SfChart`. You can use the following properties to customize the appearance.
 
-* `Color` – used to change the color of the line.
-* `StrokeWidth` – used to change the stroke width of the line.
+* `Color` – used to change the color of the line.
+* `StrokeWidth` – used to change the stroke width of the line.
 
 {% highlight xml %}
 [XAML]
@@ -23,7 +23,6 @@ To render a line chart, create an instance of `LineSeries` and add to the `Serie
 ...
 
 <chart:LineSeries ItemsSource ="{Binding Data}" XBindingPath="Year" YBindingPath="Value"/>
-
 </chart:SfChart>
 
 {% endhighlight %}
@@ -34,8 +33,12 @@ To render a line chart, create an instance of `LineSeries` and add to the `Serie
 SfChart chart = new SfChart();
 ...
 
-LineSeries lineSeries = new LineSeries() { ItemsSource = Data, XBindingPath = "Year", YBindingPath = "Value" };
-
+LineSeries lineSeries = new LineSeries()
+{
+    ItemsSource = Data,
+    XBindingPath = "Year",
+    YBindingPath = "Value"
+};
 chart.Series.Add(lineSeries);
 
 {% endhighlight %}
@@ -57,7 +60,6 @@ To render an area chart, create an instance of `AreaSeries` and add to the `Seri
 ...
 
 <chart:AreaSeries ItemsSource ="{Binding Data}" XBindingPath="Year" YBindingPath="Value"/>
-
 </chart:SfChart>
 
 {% endhighlight %}
@@ -68,8 +70,12 @@ To render an area chart, create an instance of `AreaSeries` and add to the `Seri
 SfChart chart = new SfChart();
 ...
 
-AreaSeries areaSeries = new AreaSeries() { ItemsSource = Data, XBindingPath = "Year", YBindingPath = "Value" };
-
+AreaSeries areaSeries = new AreaSeries() 
+{ 
+	ItemsSource = Data, 
+	XBindingPath = "Year", 
+	YBindingPath = "Value" 
+};
 chart.Series.Add(areaSeries);
 
 {% endhighlight %}
@@ -91,7 +97,6 @@ To render a spline area chart, create an instance of `SplineAreaSeries` and add 
 ...
 
 <chart:SplineAreaSeries ItemsSource ="{Binding Data}" XBindingPath="Year" YBindingPath="Value"/>
-
 </chart:SfChart>
 
 {% endhighlight %}
@@ -102,8 +107,12 @@ To render a spline area chart, create an instance of `SplineAreaSeries` and add 
 SfChart chart = new SfChart();
 ...
 
-SplineAreaSeries splineAreaSeries = new SplineAreaSeries() { ItemsSource = Data, XBindingPath = "Year", YBindingPath = "Value" };
-
+SplineAreaSeries splineAreaSeries = new SplineAreaSeries() 
+{ 
+	ItemsSource = Data, 
+	XBindingPath = "Year", 
+	YBindingPath = "Value" 
+};
 chart.Series.Add(splineAreaSeries);
 
 {% endhighlight %}
@@ -114,9 +123,9 @@ chart.Series.Add(splineAreaSeries);
 
 To render a stacked area chart, create an instance of `StackingAreaSeries` and add to the `Series` collection property of `SfChart`. You can use the following properties to customize the stacked area appearance.
 
-* `Color` – used to change the color of the series.
-* `StrokeWidth` – used to change the stroke width of the series.
-* `StrokeColor` – used to change the stroke color of the series.
+* `Color` – used to change the color of the series.
+* `StrokeWidth` – used to change the stroke width of the series.
+* `StrokeColor` – used to change the stroke color of the series.
 
 {% highlight xml %}
 [XAML]
@@ -140,16 +149,29 @@ To render a stacked area chart, create an instance of `StackingAreaSeries` and a
 SfChart chart = new SfChart();
 ...
 
-StackingAreaSeries stackingAreaSeries1 = new StackingAreaSeries() { ItemsSource = Data1, XBindingPath = "Year", YBindingPath = "Value" };
+StackingAreaSeries stackingAreaSeries1 = new StackingAreaSeries() 
+{ 
+	ItemsSource = Data1, 
+	XBindingPath = "Year", 
+	YBindingPath = "Value" 
+};
 
-StackingAreaSeries stackingAreaSeries2 = new StackingAreaSeries() { ItemsSource = Data2, XBindingPath = "Year", YBindingPath = "Value" };
+StackingAreaSeries stackingAreaSeries2 = new StackingAreaSeries() 
+{ 
+	ItemsSource = Data2, 
+	XBindingPath = "Year", 
+	YBindingPath = "Value" 
+};
 
-StackingAreaSeries stackingAreaSeries3 = new StackingAreaSeries() { ItemsSource = Data3, XBindingPath = "Year", YBindingPath = "Value" };
+StackingAreaSeries stackingAreaSeries3 = new StackingAreaSeries() 
+{ 
+	ItemsSource = Data3, 
+	XBindingPath = "Year", 
+	YBindingPath = "Value" 
+};
 
 chart.Series.Add(stackingAreaSeries1);
-
 chart.Series.Add(stackingAreaSeries2);
-
 chart.Series.Add(stackingAreaSeries3);
 
 {% endhighlight %}
@@ -186,16 +208,29 @@ To render a 100% stacked area chart, create an instance of `StackingArea100Serie
 SfChart chart = new SfChart();
 ...
 
-StackingArea100Series stackingArea100Series1 = new StackingArea100Series() { ItemsSource = Data1, XBindingPath = "Year", YBindingPath = "Value" };
+StackingArea100Series stackingArea100Series1 = new StackingArea100Series() 
+{ 
+	ItemsSource = Data1, 
+	XBindingPath = "Year", 
+	YBindingPath = "Value" 
+};
 
-StackingArea100Series stackingArea100Series2 = new StackingArea100Series() { ItemsSource = Data2, XBindingPath = "Year", YBindingPath = "Value" };
+StackingArea100Series stackingArea100Series2 = new StackingArea100Series() 
+{ 
+	ItemsSource = Data2, 
+	XBindingPath = "Year", 
+	YBindingPath = "Value" 
+};
 
-StackingArea100Series stackingArea100Series3 = new StackingArea100Series() { ItemsSource = Data3, XBindingPath = "Year", YBindingPath = "Value" };
+StackingArea100Series stackingArea100Series3 = new StackingArea100Series() 
+{ 
+    ItemsSource = Data3, 
+	XBindingPath = "Year", 
+	YBindingPath = "Value" 
+};
 
 chart.Series.Add(stackingArea100Series1);
-
 chart.Series.Add(stackingArea100Series2);
-
 chart.Series.Add(stackingArea100Series3);
 
 {% endhighlight %}
@@ -216,10 +251,7 @@ To render a column chart, create an instance of `ColumnSeries` and add to the `S
 <chart:SfChart>
 ...
 
-<chart:ColumnSeries ItemsSource ="{Binding Data}" XBindingPath="Country" YBindingPath="Value">
-
-</chart:ColumnSeries>
-
+<chart:ColumnSeries ItemsSource ="{Binding Data}" XBindingPath="Country" YBindingPath="Value"/>
 </chart:SfChart>
 
 {% endhighlight %}
@@ -230,8 +262,12 @@ To render a column chart, create an instance of `ColumnSeries` and add to the `S
 SfChart chart = new SfChart();
 ...
 
-ColumnSeries columnSeries = new ColumnSeries() { ItemsSource = Data, XBindingPath = "Country", YBindingPath = "Value" };
-
+ColumnSeries columnSeries = new ColumnSeries() 
+{ 
+	ItemsSource = Data, 
+	XBindingPath = "Country", 
+	YBindingPath = "Value" 
+};
 chart.Series.Add(columnSeries);
 
 {% endhighlight %}
@@ -246,63 +282,63 @@ Since the `RangeColumnSeries` requires two Y values for a point, your data shoul
 
 There are two ways you can provide data to RangeColumn chart,
 
-1.	You can use [ChartDataPoint](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/topic654.html# "")’s three parameter constructor to pass x value, high and low values to  `RangeColumnSeries`,
+1. You can use `[ChartDataPoint](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/topic654.html# "")`’s three parameter constructor to pass x value, high and low values to  `RangeColumnSeries`,
 
-{% highlight c# %}
-[C#]
+~~~ {% highlight c# %}
+	[C#]
 
-SfChart chart = new SfChart();
-...
+	SfChart chart = new SfChart();
+	...
 
-ObservableCollection<ChartDataPoint> data = new ObservableCollection<ChartDataPoint>()
+	ObservableCollection<ChartDataPoint> data = new ObservableCollection<ChartDataPoint>()
+	{    
+		new ChartDataPoint("Jan", 1.8, 7.6 ),
+		new ChartDataPoint("Feb", 3, 10),
+		new ChartDataPoint("Mar", 1.7, 7.5),
+		new ChartDataPoint("Apr", 4.5, 7.8),
+		new ChartDataPoint("May", 5, 11.4),
+		new ChartDataPoint("Jun", 4.2, 10.1),
+	};
+	
+	RangeColumnSeries rangeColumnSeries = new RangeColumnSeries() 
+	{ 
+		ItemsSource = data 
+	};
+	
+	chart.Series.Add(rangeColumnSeries);
 
-{    
+~~~{% endhighlight %}
 
-new ChartDataPoint("Jan", 1.8, 7.6 ),
+2. Or else you can use `High` and `Low` properties of `RangeColumnSeries` to map the high and low values from custom object to chart. 
 
-new ChartDataPoint("Feb", 3, 10),
+~~~ {% highlight xml %}
+	[XAML]
 
-new ChartDataPoint("Mar", 1.7, 7.5),
+	<chart:SfChart>
+	...
 
-new ChartDataPoint("Apr", 4.5, 7.8),
+	<chart:RangeColumnSeries ItemsSource ="{Binding Data}" XBindingPath="Month" High="Value1" Low="Value2"/>
 
-new ChartDataPoint("May", 5, 11.4),
+	</chart:SfChart>
 
-new ChartDataPoint("Jun", 4.2, 10.1),
+	{% endhighlight %}
 
-};
+	{% highlight c# %}
+	[C#]
 
-RangeColumnSeries rangeColumnSeries = new RangeColumnSeries() { ItemsSource = data };
+	SfChart chart = new SfChart();
+	...
 
-chart.Series.Add(rangeColumnSeries);
+	RangeColumnSeries rangeColumnSeries = new RangeColumnSeries() 
+	{ 
+		ItemsSource = Data, 
+		XBindingPath = "Month", 
+		High = "Value1", 
+		Low = "Value2" 
+	};
+	chart.Series.Add(rangeColumnSeries);
 
-{% endhighlight %}
-
-2.	Or else you can use `High` and `Low` properties of `RangeColumnSeries` to map the high and low values from custom object to chart. 
-
-{% highlight xml %}
-[XAML]
-
-<chart:SfChart>
-...
-
-<chart:RangeColumnSeries ItemsSource ="{Binding Data}" XBindingPath="Month" High="Value1" Low="Value2"/>
-
-</chart:SfChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-[C#]
-
-SfChart chart = new SfChart();
-...
-
-RangeColumnSeries rangeColumnSeries = new RangeColumnSeries() { ItemsSource = Data, XBindingPath = "Month", High = "Value1", Low = "Value2" };
-
-chart.Series.Add(rangeColumnSeries);
-
-{% endhighlight %}
+~~~ {% endhighlight %}
 
 Following properties are used to customize the range column segment appearance,
 
@@ -316,9 +352,9 @@ Following properties are used to customize the range column segment appearance,
 
 To render a stacked column chart, create an instance of `StackingColumnSeries` and add to the `Series` collection property of `SfChart`. You can use the following properties to customize the stacked column segment appearance.
 
-* `Color` – used to change the color of the series.
-* `StrokeWidth` – used to change the stroke width of the series.
-* `StrokeColor` – used to change the stroke color of the series.
+* `Color` – used to change the color of the series.
+* `StrokeWidth` – used to change the stroke width of the series.
+* `StrokeColor` – used to change the stroke color of the series.
 
 {% highlight xml %}
 [XAML]
@@ -342,16 +378,29 @@ To render a stacked column chart, create an instance of `StackingColumnSeries` a
 SfChart chart = new SfChart();
 ...
 
-StackingColumnSeries stackingColumnSeries1 = new StackingColumnSeries() { ItemsSource = Data1, XBindingPath = "Month", YBindingPath = "Value" };
+StackingColumnSeries stackingColumnSeries1 = new StackingColumnSeries() 
+{ 
+	ItemsSource = Data1, 
+	XBindingPath = "Month", 
+	YBindingPath = "Value" 
+};
 
-StackingColumnSeries stackingColumnSeries2 = new StackingColumnSeries() { ItemsSource = Data2, XBindingPath = "Month", YBindingPath = "Value" };
+StackingColumnSeries stackingColumnSeries2 = new StackingColumnSeries() 
+{ 
+	ItemsSource = Data2, 
+	XBindingPath = "Month", 
+	YBindingPath = "Value" 
+};
 
-StackingColumnSeries stackingColumnSeries3 = new StackingColumnSeries() { ItemsSource = Data3, XBindingPath = "Month", YBindingPath = "Value" };
+StackingColumnSeries stackingColumnSeries3 = new StackingColumnSeries() 
+{ 
+	ItemsSource = Data3, 
+	XBindingPath = "Month", 
+	YBindingPath = "Value" 
+};
 
 chart.Series.Add(stackingColumnSeries1);
-
 chart.Series.Add(stackingColumnSeries2);
-
 chart.Series.Add(stackingColumnSeries3);
 
 {% endhighlight %}
@@ -388,16 +437,29 @@ To render a 100% stacked column chart, create an instance of `StackingColumn100S
 SfChart chart = new SfChart();
 ...
 
-StackingColumn100Series stackingColumn100Series1 = new StackingColumn100Series() { ItemsSource = Data1, XBindingPath = "Year", YBindingPath = "Value" };
+StackingColumn100Series stackingColumn100Series1 = new StackingColumn100Series() 
+{ 
+	ItemsSource = Data1, 
+	XBindingPath = "Year", 
+	YBindingPath = "Value" 
+};
 
-StackingColumn100Series stackingColumn100Series2 = new StackingColumn100Series() { ItemsSource = Data2 XBindingPath = "Year", YBindingPath = "Value"  };
+StackingColumn100Series stackingColumn100Series2 = new StackingColumn100Series() 
+{ 
+	ItemsSource = Data2, 
+	XBindingPath = "Year", 
+	YBindingPath = "Value"  
+};
 
-StackingColumn100Series stackingColumn100Series3 = new StackingColumn100Series() { ItemsSource = Data3, XBindingPath = "Year", YBindingPath = "Value" };
+StackingColumn100Series stackingColumn100Series3 = new StackingColumn100Series() 
+{ 
+	ItemsSource = Data3, 
+	XBindingPath = "Year", 
+	YBindingPath = "Value" 
+};
 
 chart.Series.Add(stackingColumn100Series1);
-
 chart.Series.Add(stackingColumn100Series2);
-
 chart.Series.Add(stackingColumn100Series3);
 
 {% endhighlight %}
@@ -430,8 +492,12 @@ To render a bar chart, create an instance of `BarSeries` and add to the `Series`
 SfChart chart = new SfChart();
 ...
 
-BarSeries barSeries = new BarSeries () { ItemsSource = Data, XBindingPath = "Year", YBindingPath = "Value" };
-
+BarSeries barSeries = new BarSeries () 
+{ 
+	ItemsSource = Data, 
+	XBindingPath = "Year", 
+	YBindingPath = "Value" 
+};
 chart.Series.Add(barSeries);
 
 {% endhighlight %}
@@ -468,16 +534,29 @@ To render a stacked bar chart, create an instance of `StackingBarSeries` and add
 SfChart chart = new SfChart();
 ...
 
-StackingBarSeries stackingBarSeries1 = new StackingBarSeries() { ItemsSource = Data1, XBindingPath = "Month", YBindingPath = "Value" };
+StackingBarSeries stackingBarSeries1 = new StackingBarSeries() 
+{ 
+	ItemsSource = Data1, 
+	XBindingPath = "Month", 
+	YBindingPath = "Value" 
+};
 
-StackingBarSeries stackingBarSeries2 = new StackingBarSeries() { ItemsSource = Data2, XBindingPath = "Month", YBindingPath = "Value" };
+StackingBarSeries stackingBarSeries2 = new StackingBarSeries() 
+{ 
+	ItemsSource = Data2, 
+	XBindingPath = "Month", 
+	YBindingPath = "Value" 
+};
 
-StackingBarSeries stackingBarSeries3 = new StackingBarSeries() { ItemsSource = Data3, XBindingPath = "Month", YBindingPath = "Value" };
+StackingBarSeries stackingBarSeries3 = new StackingBarSeries() 
+{ 
+	ItemsSource = Data3, 
+	XBindingPath = "Month", 
+	YBindingPath = "Value" 
+};
 
 chart.Series.Add(stackingBarSeries1);
-
 chart.Series.Add(stackingBarSeries2);
-
 chart.Series.Add(stackingBarSeries3);
 
 {% endhighlight %}
@@ -514,16 +593,29 @@ To render a 100% stacked bar chart, create an instance of `StackingBar100Series`
 SfChart chart = new SfChart();
 ...
 
-StackingBar100Series stackingBar100Series1 = new StackingBar100Series() { ItemsSource = Data1, XBindingPath = "Year", YBindingPath = "Value" };
+StackingBar100Series stackingBar100Series1 = new StackingBar100Series() 
+{ 
+	ItemsSource = Data1, 
+	XBindingPath = "Year", 
+	YBindingPath = "Value" 
+};
 
-StackingBar100Series stackingBar100Series2 = new StackingBar100Series() { ItemsSource = Data2, XBindingPath = "Year", YBindingPath = "Value" };
+StackingBar100Series stackingBar100Series2 = new StackingBar100Series() 
+{ 
+	ItemsSource = Data2, 
+	XBindingPath = "Year", 
+	YBindingPath = "Value" 
+};
 
-StackingBar100Series stackingBar100Series3 = new StackingBar100Series() { ItemsSource = Data3, XBindingPath = "Year", YBindingPath = "Value"  };
+StackingBar100Series stackingBar100Series3 = new StackingBar100Series() 
+{ 
+	ItemsSource = Data3, 
+	XBindingPath = "Year", 
+	YBindingPath = "Value"  
+};
 
 chart.Series.Add(stackingBar100Series1);
-
 chart.Series.Add(stackingBar100Series2);
-
 chart.Series.Add(stackingBar100Series3);
 
 {% endhighlight %}
@@ -555,8 +647,12 @@ To render a spline chart, create an instance of `SplineSeries` and add to the `S
 SfChart chart = new SfChart();
 ...
 
-SplineSeries splineSeries = new SplineSeries() { ItemsSource = Data, XBindingPath = "Month", YBindingPath = "Value"  };
-
+SplineSeries splineSeries = new SplineSeries() 
+{ 
+	ItemsSource = Data, 
+	XBindingPath = "Month", 
+	YBindingPath = "Value"  
+};
 chart.Series.Add(splineSeries);
 
 {% endhighlight %}
@@ -588,8 +684,12 @@ chart.Series.Add(splineSeries);
 SfChart chart = new SfChart();
 ...
 
-FastLineSeries fastLineSeries = new FastLineSeries() { ItemsSource = Data, XBindingPath = "XValue", YBindingPath = "YValue"  };
-
+FastLineSeries fastLineSeries = new FastLineSeries() 
+{ 
+	ItemsSource = Data, 
+	XBindingPath = "XValue", 
+	YBindingPath = "YValue"  
+};
 chart.Series.Add(fastLineSeries);
 
 {% endhighlight %}
@@ -605,8 +705,12 @@ chart.Series.Add(fastLineSeries);
 
 ...
 
-FastLineSeries fastLineSeries = new FastLineSeries() { ItemsSource = Data, XBindingPath = "Month", YBindingPath = "Value" };
-
+FastLineSeries fastLineSeries = new FastLineSeries() 
+{ 
+	ItemsSource = Data, 
+	XBindingPath = "Month", 
+	YBindingPath = "Value" 
+};
 fastLineSeries.StrokeDashArray = new double[2] { 2, 3 };
 
 {% endhighlight %}
@@ -621,66 +725,56 @@ Bubble chart requires 3 fields (X, Y and Size) to plot a point. Here `‘Size’
 
 There are two ways you can provide data to bubble chart,
 
-1.	You can use [ChartDataPoint](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/topic654.html# "")’s three parameter constructor to pass x, y and size values to  `BubbleSeries`,
+1. You can use `[ChartDataPoint](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/topic654.html# "")`’s three parameter constructor to pass x, y and size values to  `BubbleSeries`,
 
-{% highlight c# %}
-[C#]
+~~~ {% highlight c# %}
+	[C#]
 
-SfChart chart = new SfChart();
-...
+	SfChart chart = new SfChart();
+	...
 
-ObservableCollection<ChartDataPoint> data = new ObservableCollection<ChartDataPoint>()
-{    
+	ObservableCollection<ChartDataPoint> data = new ObservableCollection<ChartDataPoint>()
+	{    
+	new ChartDataPoint(64, 14.4, 20),
+	new ChartDataPoint(71, 2, 15),
+	new ChartDataPoint(74, 7, 30),
+	new ChartDataPoint(80, 4, 22),
+	new ChartDataPoint(82, 10.3, 28),
+	new ChartDataPoint(94, 1, 8),
+	new ChartDataPoint(96, 6, 18),
+	new ChartDataPoint(98, 12.3, 28),                       
+	};
 
-new ChartDataPoint(64, 14.4, 20),
+	BubbleSeries bubbleSeries = new BubbleSeries() { ItemsSource = data };
 
-new ChartDataPoint(71, 2, 15),
+	chart.Series.Add(bubbleSeries);
 
-new ChartDataPoint(74, 7, 30),
+~~~ {% endhighlight %}
 
-new ChartDataPoint(80, 4, 22),
+2. Or else you can use `YBindingPath` and `Size` properties of `BubbleSeries`to map the Y value and size from custom object to chart. 
 
-new ChartDataPoint(82, 10.3, 28),
+~~~ {% highlight xml %}
+	[XAML]
 
-new ChartDataPoint(94, 1, 8),
+	<chart:SfChart>
+	...
 
-new ChartDataPoint(96, 6, 18),
+	<chart:BubbleSeries ItemsSource ="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue" Size="Size"/>
+	</chart:SfChart>
 
-new ChartDataPoint(98, 12.3, 28),                          
+	{% endhighlight %}
 
-};
+	{% highlight c# %}
+	[C#]
 
-BubbleSeries bubbleSeries = new BubbleSeries() { ItemsSource = data };
+	SfChart chart = new SfChart();
+	...
 
-chart.Series.Add(bubbleSeries);
+	BubbleSeries bubbleSeries = new BubbleSeries() { ItemsSource = Data, XBindingPath = "XValue", YBindingPath = "YValue", XBindingPath = "Size” };
 
-{% endhighlight %}
+	chart.Series.Add(bubbleSeries);
 
-2.	Or else you can use `YBindingPath` and `Size` properties of `BubbleSeries`to map the Y value and size from custom object to chart. 
-
-{% highlight xml %}
-[XAML]
-
-<chart:SfChart>
-...
-
-<chart:BubbleSeries ItemsSource ="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue" Size="Size"/>
-
-</chart:SfChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-[C#]
-
-SfChart chart = new SfChart();
-...
-
-BubbleSeries bubbleSeries = new BubbleSeries() { ItemsSource = Data, XBindingPath = "XValue", YBindingPath = "YValue", XBindingPath = "Size” };
-
-chart.Series.Add(bubbleSeries);
-
-{% endhighlight %}
+~~~ {% endhighlight %}
 
 Following properties are used to customize the bubble segment appearance.
 
@@ -720,8 +814,14 @@ To render a scatter chart, create an instance of `ScatterSeries` and add to the 
 SfChart chart = new SfChart();
 ...
 
-ScatterSeries scatterSeries = new ScatterSeries (){ ItemsSource = Data, ScatterHeight = 15, ScatterWidth = 15, XBindingPath = "Year", YBindingPath = "Value" };
-
+ScatterSeries scatterSeries = new ScatterSeries ()
+{ 
+	ItemsSource = Data, 	
+	ScatterHeight = 15, 
+	ScatterWidth = 15, 
+	XBindingPath = "Year", 
+	YBindingPath = "Value" 
+};
 chart.Series.Add(scatterSeries);
 
 {% endhighlight %}
@@ -736,62 +836,65 @@ OHLC chart requires five values (X, Open, High, Low and Close) to plot a point.
 
 There are two ways you can provide data to an OHLC chart,
 
-1.	You can use [ChartDataPoint](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/topic654.html# "")’s five parameter constructor to pass x, open, high, low and close values to  `HiLoOpenCloseSeries`,
+1. You can use `[ChartDataPoint](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/topic654.html# "")`’s five parameter constructor to pass x, open, high, low and close values to  `HiLoOpenCloseSeries`,
 
-{% highlight c# %}
-[C#]
+~~~ {% highlight c# %}
+	[C#]
 
-SfChart chart = new SfChart();
-...
+	SfChart chart = new SfChart();
+	...
 
-ObservableCollection<ChartDataPoint> data = new ObservableCollection<ChartDataPoint>()
-{
+	ObservableCollection<ChartDataPoint> data = new ObservableCollection<ChartDataPoint>()
+	{
+		new ChartDataPoint("2010", 873.8, 878.85, 855.5, 860.5),
+		new ChartDataPoint("2011", 861, 868.4, 835.2, 843.45),
+		new ChartDataPoint("2012", 846.15, 853, 838.5, 847.5),
+		new ChartDataPoint("2013", 846, 860.75, 841, 855),
+		new ChartDataPoint("2014", 841, 845, 827.85, 838.65)
+	};
+	
+	HiLoOpenCloseSeries hiLoOpenCloseSeries = new HiLoOpenCloseSeries() 
+	{ 
+	    ItemsSource = data
+	};
+	
+	chart.Series.Add(hiLoOpenCloseSeries);
 
-new ChartDataPoint("2010", 873.8, 878.85, 855.5, 860.5),
+~~~ {% endhighlight %}
 
-new ChartDataPoint("2011", 861, 868.4, 835.2, 843.45),
+2. Or else you can use `Open`,`High`,`Low` and `Close` properties of `HiLoOpenCloseSeries` to map Open, High, Low and Close values from custom object to chart.
 
-new ChartDataPoint("2012", 846.15, 853, 838.5, 847.5),
+~~~ {% highlight xml %}
+	[XAML]
 
-new ChartDataPoint("2013", 846, 860.75, 841, 855),
+	<chart:SfChart>
+	...
 
-new ChartDataPoint("2014", 841, 845, 827.85, 838.65)
+	<chart:HiLoOpenCloseSeries ItemsSource ="{Binding Data}" XBindingPath="Month" High="Value1" Low="Value2" Open="Value3" Close="Value4"/>
+	</chart:SfChart>
 
-}
+	{% endhighlight %}
 
-HiLoOpenCloseSeries hiLoOpenCloseSeries = new HiLoOpenCloseSeries() { ItemsSource = data};
+	{% highlight c# %}
+	[C#]
 
-chart.Series.Add(hiLoOpenCloseSeries);
+	SfChart chart = new SfChart();
+	...
 
-{% endhighlight %}
+	HiLoOpenCloseSeries hiLoOpenCloseSeries = new HiLoOpenCloseSeries() 
+	{ 
+		ItemsSource = Data, 
+		XBindingPath = "Year", 
+		Open = "Value1", 
+		High = "Value2", 
+		Low = "Value3", 
+		Close = "Value4" 
+	};
+	chart.Series.Add(hiLoOpenCloseSeries);
 
-2.	Or else you can use `Open`,`High`,`Low` and `Close` properties of `HiLoOpenCloseSeries` to map Open, High, Low and Close values from custom object to chart.
+~~~ {% endhighlight %}
 
-{% highlight xml %}
-[XAML]
-
-<chart:SfChart>
-...
-
-<chart:HiLoOpenCloseSeries ItemsSource ="{Binding Data}" XBindingPath="Month" High="Value1" Low="Value2" Open="Value3" Close="Value4"/>
-
-</chart:SfChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-[C#]
-
-SfChart chart = new SfChart();
-...
-
-HiLoOpenCloseSeries hiLoOpenCloseSeries = new HiLoOpenCloseSeries() { ItemsSource = Data, XBindingPath = "Year", Open = "Value1", High = "Value2", Low = "Value3", Close = "Value4" };
-
-chart.Series.Add(hiLoOpenCloseSeries);
-
-{% endhighlight %}
-
-You can use the following properties to customize the `HiLoOpenCloseSeries` series appearance.
+You can use the following properties to customize the HiLoOpenCloseSeries segment appearance.
 
 * `Color` – used to change the color of the series.
 * `StrokeWidth` – used to change the stroke width of the series.
@@ -817,11 +920,17 @@ In OHLC chart, `BullFillColor` property is used to specify a fill color for the 
 
 ...
 
-HiLoOpenCloseSeries hiLoOpenCloseSeries = new HiLoOpenCloseSeries() { ItemsSource = Data, XBindingPath = "Year", Open = "Value1", High = "Value2", Low = "Value3", Close = "Value4" };
-
-hiLoOpenCloseSeries.BearFillColor = Color.Blue;
-
-hiLoOpenCloseSeries.BullFillColor = Color.Purple;
+HiLoOpenCloseSeries hiLoOpenCloseSeries = new HiLoOpenCloseSeries() 
+{ 
+	ItemsSource = Data, 
+	XBindingPath = "Year", 
+	Open = "Value1", 
+	High = "Value2", 
+	Low = "Value3", 
+	Close = "Value4",
+	BearFillColor = Color.Blue,
+	BullFillColor = Color.Purple
+};
 
 {% endhighlight %}
 
@@ -833,60 +942,63 @@ To render a candle chart, create an instance of `CandleSeries` and add to the `S
 
 Candle chart requires five values (X, Open, High, Low and Close) to plot a point. 
 
-There are two ways you can provide data to candle chart,
+There are two ways you can provide data to an candle chart,
 
-1.	You can use [ChartDataPoint](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/topic654.html# "")’s five parameter constructor to pass x, open, high, low and close values to  `CandleSeries`,
+1. You can use `[ChartDataPoint](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/topic654.html# "")`’s five parameter constructor to pass x, open, high, low and close values to  `CandleSeries`,
 
-{% highlight c# %}
-[C#]
+~~~ {% highlight c# %}
+	[C#]
 
-SfChart chart = new SfChart();
-...
+	SfChart chart = new SfChart();
+	...
 
-ObservableCollection<ChartDataPoint> data = new ObservableCollection<ChartDataPoint>()
-{
+	ObservableCollection<ChartDataPoint> data = new ObservableCollection<ChartDataPoint>()
+	{
+		new ChartDataPoint("2010", 873.8, 878.85, 855.5, 860.5),
+		new ChartDataPoint("2011", 861, 868.4, 835.2, 843.45),
+		new ChartDataPoint("2012", 846.15, 853, 838.5, 847.5),
+		new ChartDataPoint("2013", 846, 860.75, 841, 855),
+		new ChartDataPoint("2014", 841, 845, 827.85, 838.65)
+	};
+	
+	CandleSeries candleSeries = new CandleSeries () 
+	{ 
+		ItemsSource = data
+	};
 
-new ChartDataPoint("2010", 873.8, 878.85, 855.5, 860.5),
+	chart.Series.Add(candleSeries);
 
-new ChartDataPoint("2011", 861, 868.4, 835.2, 843.45),
+~~~ {% endhighlight %}
 
-new ChartDataPoint("2012", 846.15, 853, 838.5, 847.5),
+2. Or else you can use `Open`,`High`,`Low` and `Close` property of `CandleSeries` to map Open, High, Low and Close values from custom object to chart.
 
-new ChartDataPoint("2013", 846, 860.75, 841, 855),
+~~~ {% highlight xml %}
+	[XAML]
 
-new ChartDataPoint("2014", 841, 845, 827.85, 838.65)
+	<chart:SfChart>
+	...
 
-}
+	<chart:CandleSeries ItemsSource ="{Binding Data}" XBindingPath="Month" High="Value1" Low="Value2" Open="Value3" Close="Value4"/>
+	</chart:SfChart>
 
-CandleSeries candleSeries = new CandleSeries () { ItemsSource = data};
+	{% endhighlight %}
 
-chart.Series.Add(candleSeries);
+	{% highlight c# %}
+	[C#]
 
-{% endhighlight %}
+	SfChart chart = new SfChart();
+	...
 
-2.	Or else you can use `Open`,`High`,`Low` and `Close` property of `CandleSeries` to map Open, High, Low and Close values from custom object to chart.
-
-{% highlight xml %}
-[XAML]
-
-<chart:SfChart>
-...
-
-<chart:CandleSeries ItemsSource ="{Binding Data}" XBindingPath="Month" High="Value1" Low="Value2" Open="Value3" Close="Value4"/>
-
-</chart:SfChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-[C#]
-
-SfChart chart = new SfChart();
-...
-
-CandleSeries candleSeries = new CandleSeries() { ItemsSource = Data, XBindingPath = "Year", Open = "Value1", High = "Value2", Low = "Value3", Close = "Value4"};
-
-chart.Series.Add(candleSeries);
+	CandleSeries candleSeries = new CandleSeries() 
+	{ 
+		ItemsSource = Data, 
+		XBindingPath = "Year", 
+		Open = "Value1", 
+		High = "Value2", 
+		Low = "Value3", 
+		Close = "Value4"
+	};
+	chart.Series.Add(candleSeries);
 
 {% endhighlight %}
 
@@ -916,11 +1028,17 @@ In Candle chart, `BullFillColor` property is used to specify a fill color for th
 
 ...
 
-CandleSeries candleSeries = new CandleSeries() { ItemsSource = Data, XBindingPath = "Year", Open = "Value1", High = "Value2", Low = "Value3", Close = "Value4"};
-
-candleSeries.BearFillColor = Color.Blue;
-
-candleSeries.BullFillColor = Color.Purple;
+CandleSeries candleSeries = new CandleSeries() 
+{ 
+	ItemsSource = Data, 
+	XBindingPath = "Year", 
+	Open = "Value1", 
+	High = "Value2", 
+	Low = "Value3", 
+	Close = "Value4",
+	BearFillColor = Color.Blue,
+	BullFillColor = Color.Purple
+};
 
 {% endhighlight %}
 
@@ -931,9 +1049,7 @@ candleSeries.BullFillColor = Color.Purple;
 To render a pie chart, create an instance of `PieSeries` and add to the `Series` collection property of `SfChart`. You can use the following properties to customize the pie segment appearance.
 
 * `Color` – used to change the color of the series.
-
 * `StrokeWidth` – used to change the stroke width of the series.
-
 * `StrokeColor` – used to change the stroke color of the series.
 
 {% highlight xml %}
@@ -954,8 +1070,12 @@ To render a pie chart, create an instance of `PieSeries` and add to the `Series`
 SfChart chart = new SfChart();
 ...
 
-PieSeries pieSeries = new PieSeries() { ItemsSource = Data, XBindingPath = "Expense", YBindingPath = "Value" };
-
+PieSeries pieSeries = new PieSeries() 
+{ 
+	ItemsSource = Data, 
+	XBindingPath = "Expense", 
+	YBindingPath = "Value" 
+};
 chart.Series.Add(pieSeries);
 
 {% endhighlight %}
@@ -977,12 +1097,15 @@ You can use `CircularCoefficient` property to change the diameter of the pie ch
 
 {% highlight c# %}
 [C#]
-
 …
 
-PieSeries pieSeries = new PieSeries() { ItemsSource = Data, XBindingPath = "Expense", YBindingPath = "Value" };
-
-pieSeries.CircularCoefficient = 0.5;
+PieSeries pieSeries = new PieSeries() 
+{ 
+	ItemsSource = Data, 
+	XBindingPath = "Expense", 
+	YBindingPath = "Value",
+	CircularCoefficient = 0.5
+};
 
 {% endhighlight %}
 
@@ -1006,9 +1129,13 @@ You can explode a pie segment using `ExplodeIndex` property and specify the expl
 
 ...
 
-PieSeries pieSeries = new PieSeries() { ItemsSource = Data, XBindingPath = "Expense", YBindingPath = "Value" };
-
-pieSeries.ExplodeIndex = 1;
+PieSeries pieSeries = new PieSeries() 
+{ 
+	ItemsSource = Data, 
+	XBindingPath = "Expense", 
+	YBindingPath = "Value",
+	ExplodeIndex = 1
+};
 
 {% endhighlight %}
 
@@ -1032,9 +1159,13 @@ Using `ExplodeAll` property of `PieSeries`, you can explode all the pie segments
 
 ...
 
-PieSeries pieSeries = new PieSeries() { ItemsSource = Data, XBindingPath = "Expense", YBindingPath = "Value" };
-
-pieSeries.ExplodeAll = true;
+PieSeries pieSeries = new PieSeries() 
+{ 
+	ItemsSource = Data, 
+	XBindingPath = "Expense", 
+	YBindingPath = "Value",
+	ExplodeAll = true	
+};
 
 {% endhighlight %}
 
@@ -1058,11 +1189,14 @@ SfChart allows you to render all the data points/segments in semi-pie, quarter-p
 
 ...
 
-PieSeries pieSeries = new PieSeries() { ItemsSource = Data, XBindingPath = "Expense", YBindingPath = "Value" };
-
-pieSeries.StartAngle = 180;
-
-pieSeries.EndAngle = 360;
+PieSeries pieSeries = new PieSeries() 
+{ 
+	ItemsSource = Data, 
+	XBindingPath = "Expense", 
+	YBindingPath = "Value",
+	StartAngle = 180,
+    EndAngle = 360
+};
 
 {% endhighlight %}
 
@@ -1073,9 +1207,7 @@ pieSeries.EndAngle = 360;
 To render a doughnut chart, create an instance of `DoughnutSeries` and add to the `Series` collection property of `SfChart`. You can use the following properties to customize the doughnut segment appearance.
 
 * `Color` – used to change the color of the series.
-
 * `StrokeWidth` – used to change the stroke width of the series.
-
 * `StrokeColor` – used to change the stroke color of the series.
 
 {% highlight xml %}
@@ -1096,8 +1228,12 @@ To render a doughnut chart, create an instance of `DoughnutSeries` and add to th
 SfChart chart = new SfChart();
 ...
 
-DoughnutSeries doughnutSeries = new DoughnutSeries() { ItemsSource = Data, XBindingPath = "Expense", YBindingPath = "Value" };
-
+DoughnutSeries doughnutSeries = new DoughnutSeries() 
+{ 
+	ItemsSource = Data, 
+	XBindingPath = "Expense", 
+	YBindingPath = "Value" 
+};
 chart.Series.Add(doughnutSeries);
 
 {% endhighlight %}
@@ -1122,9 +1258,13 @@ You can change the doughnut chart inner radius using `DoughnutCoefficient` with
 
 ...
 
-DoughnutSeries doughnutSeries = new DoughnutSeries() { ItemsSource = Data, XBindingPath = "Expense", YBindingPath = "Value" };
-
-doughnutSeries.DoughnutCoefficient = 0.6;
+DoughnutSeries doughnutSeries = new DoughnutSeries() 
+{ 
+	ItemsSource = Data, 
+	XBindingPath = "Expense", 
+	YBindingPath = "Value", 
+	DoughnutCoefficient = 0.6 
+};
 
 {% endhighlight %}
 
@@ -1148,9 +1288,13 @@ You can use the `CircularCoefficient` property to change the diameter of the do
 
 ...
 
-DoughnutSeries doughnutSeries = new DoughnutSeries() { ItemsSource = Data, XBindingPath = "Expense", YBindingPath = "Value" };
-
-doughnutSeries.CircularCoefficient = 0.5;
+DoughnutSeries doughnutSeries = new DoughnutSeries() 
+{ 
+	ItemsSource = Data, 
+	XBindingPath = "Expense", 
+	YBindingPath = "Value", 
+	CircularCoefficient = 0.5 
+};
 
 {% endhighlight %}
 
@@ -1174,9 +1318,13 @@ Exploding a specific doughnut segment, you have to set the index to be exploded 
 
 ...
 
-DoughnutSeries doughnutSeries = new DoughnutSeries() { ItemsSource = Data, XBindingPath = "Expense", YBindingPath = "Value" };
-
-doughnutSeries.ExplodeIndex = 1;
+DoughnutSeries doughnutSeries = new DoughnutSeries() 
+{ 
+	ItemsSource = Data, 
+	XBindingPath = "Expense", 
+	YBindingPath = "Value",
+	ExplodeIndex = 1
+};
 
 {% endhighlight %}
 
@@ -1200,9 +1348,13 @@ To explode all the segments, you have to enable `ExplodeAll` property of the ser
 
 ...
 
-DoughnutSeries doughnutSeries = new DoughnutSeries() { ItemsSource = Data, XBindingPath = "Expense", YBindingPath = "Value" };
-
-doughnutSeries.ExplodeAll = true;
+DoughnutSeries doughnutSeries = new DoughnutSeries() 
+{ 
+	ItemsSource = Data, 
+	XBindingPath = "Expense", 
+	YBindingPath = "Value",
+	ExplodeAll = true
+};
 
 {% endhighlight %}
 
@@ -1226,11 +1378,14 @@ SfChart allows you to render all the data points/segments in semi-doughnut, quar
 
 …
 
-DoughnutSeries doughnutSeries = new DoughnutSeries() { ItemsSource = Data, XBindingPath = "Expense", YBindingPath = "Value" };
-
-doughnutSeries.StartAngle = 180;
-
-doughnutSeries.EndAngle = 360;
+DoughnutSeries doughnutSeries = new DoughnutSeries() 
+{ 
+	ItemsSource = Data, 
+	XBindingPath = "Expense", 
+	YBindingPath = "Value",
+	StartAngle = 180,
+	EndAngle = 360
+};
 
 {% endhighlight %}
 
@@ -1241,9 +1396,7 @@ doughnutSeries.EndAngle = 360;
 To render a pyramid chart, create an instance of `PyramidSeries` and add to the `Series` collection property of `SfChart`. You can use the following properties to customize the pyramid segment appearance.
 
 * `Color` – used to change the color of the series.
-
 * `StrokeWidth` – used to change the stroke width of the series.
-
 * `StrokeColor` – used to change the stroke color of the series.
 
 {% highlight xml %}
@@ -1264,8 +1417,12 @@ To render a pyramid chart, create an instance of `PyramidSeries` and add to the 
 SfChart chart = new SfChart();
 ...
 
-PyramidSeries pyramidSeries = new PyramidSeries() { ItemsSource = Data, XBindingPath = "Country", YBindingPath = "Value" };
-
+PyramidSeries pyramidSeries = new PyramidSeries() 
+{ 
+	ItemsSource = Data, 
+	XBindingPath = "Country", 
+	YBindingPath = "Value" 
+};
 chart.Series.Add(pyramidSeries);
 
 {% endhighlight %}
@@ -1290,9 +1447,13 @@ You can render the pyramid series as linear or surface mode. In linear mode, hei
 
 ...
 
-PyramidSeries pyramidSeries = new PyramidSeries (){ ItemsSource = Data, XBindingPath = "Country", YBindingPath = "Value" };
-
-pyramidSeries.PyramidMode = ChartPyramidMode.Surface;
+PyramidSeries pyramidSeries = new PyramidSeries ()
+{ 
+	ItemsSource = Data, 
+	XBindingPath = "Country", 
+	YBindingPath = "Value",
+	PyramidMode = ChartPyramidMode.Surface 
+};
 
 {% endhighlight %}
 
@@ -1316,9 +1477,13 @@ You can control the gap between the two segments using `GapRatio` property. Its 
 
 ...
 
-PyramidSeries pyramidSeries = new PyramidSeries() { ItemsSource = Data, XBindingPath = "Country", YBindingPath = "Value" };
-
-pyramidSeries.GapRatio = 0.1;
+PyramidSeries pyramidSeries = new PyramidSeries() 
+{ 
+	ItemsSource = Data, 
+	XBindingPath = "Country", 
+	YBindingPath = "Value",
+	GapRatio = 0.1
+};
 
 {% endhighlight %}
 
@@ -1342,9 +1507,13 @@ You can explode a pyramid segment using `ExplodeIndex` property, and `ExplodeOff
 
 ...
 
-PyramidSeries pyramidSeries = new PyramidSeries() { ItemsSource = Data, XBindingPath = "Country", YBindingPath = "Value" };
-
-pyramidSeries.ExplodeIndex = 2;
+PyramidSeries pyramidSeries = new PyramidSeries() 
+{ 
+	ItemsSource = Data, 
+	XBindingPath = "Country", 
+	YBindingPath = "Value",
+	ExplodeIndex = 2
+};
 
 {% endhighlight %}
 
@@ -1355,9 +1524,7 @@ pyramidSeries.ExplodeIndex = 2;
 To render a funnel chart, create an instance of `FunnelSeries` and add to the `Series` collection property of `SfChart`. You can use the following properties to customize the funnel segment appearance.
 
 * `Color` – used to change the color of the series.
-
 * `StrokeWidth` – used to change the stroke width of the series.
-
 * `StrokeColor` – used to change the stroke color of the series.
 
 {% highlight xml %}
@@ -1378,8 +1545,12 @@ To render a funnel chart, create an instance of `FunnelSeries` and add to the `S
 SfChart chart = new SfChart();
 ...
 
-FunnelSeries funnelSeries = new FunnelSeries() { ItemsSource = Data, XBindingPath = "Status", YBindingPath = "Value" };
-
+FunnelSeries funnelSeries = new FunnelSeries() 
+{ 
+	ItemsSource = Data, 
+	XBindingPath = "Status", 
+	YBindingPath = "Value" 
+};
 chart.Series.Add(funnelSeries);
 
 {% endhighlight %}
@@ -1404,9 +1575,13 @@ You can control the gap between the two segments using `GapRatio` property. Its 
 
 ...
 
-FunnelSeries funnelSeries = new FunnelSeries() { ItemsSource = Data, XBindingPath = "Year", YBindingPath = "Value" };
-
-funnelSeries.GapRatio = 0.1;
+FunnelSeries funnelSeries = new FunnelSeries() 
+{ 
+	ItemsSource = Data, 
+	XBindingPath = "Year", 
+	YBindingPath = "Value",
+	GapRatio = 0.1
+};
 
 {% endhighlight %}
 
@@ -1430,9 +1605,13 @@ You can explode a pyramid segment using `ExplodeIndex` property and `ExplodeOffs
 
 ...
 
-FunnelSeries funnelSeries = new FunnelSeries() { ItemsSource = Data, XBindingPath = "Status", YBindingPath = "Value" };
-
-funnelSeries.ExplodeIndex = 1;
+FunnelSeries funnelSeries = new FunnelSeries() 
+{ 
+	ItemsSource = Data, 
+	XBindingPath = "Status", 
+	YBindingPath = "Value", 
+	ExplodeIndex = 1 
+};
 
 {% endhighlight %}
 
@@ -1456,9 +1635,13 @@ You can change the minimum width of the funnel neck using `MinWidth` property of
 
 ...
 
-FunnelSeries funnelSeries = new FunnelSeries() { ItemsSource = Data, XBindingPath = "Year", YBindingPath = "Value" };
-
-funnelSeries.MinWidth = 20;
+FunnelSeries funnelSeries = new FunnelSeries() 
+{ 
+	ItemsSource = Data, 
+	XBindingPath = "Year", 
+	YBindingPath = "Value",
+	MinWidth = 20 
+};
 
 {% endhighlight %}
 

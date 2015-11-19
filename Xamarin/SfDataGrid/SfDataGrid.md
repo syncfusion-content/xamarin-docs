@@ -12,118 +12,118 @@ The **SfDataGrid** control is available in Xamarin.Forms, Xamarin.Android and Xa
 
 <table>
 <tr>
-<th colspan=1 rowspan=1>Features<br/></th>
-<th colspan=1 rowspan=1>Xamarin.Forms<br/></th>
-<th colspan=1 rowspan=1>Xamarin.Android<br/></th>
-<th colspan=1 rowspan=1>Xamarin.iOS<br/></th>
+<th>Features<br/></th>
+<th>Xamarin.Forms<br/></th>
+<th>Xamarin.Android<br/></th>
+<th>Xamarin.iOS<br/></th>
 </tr>
 <tr>
-<td colspan=1 rowspan=1>Diagonal Scrolling<br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"></i><br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"></i><br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"></i><br/></td>
+<td>Diagonal Scrolling<br/></td>
+<td><i class="fa fa-check"></i><br/></td>
+<td><i class="fa fa-check"></i><br/></td>
+<td><i class="fa fa-check"></i><br/></td>
 </tr>
 <tr>
-<td colspan=1 rowspan=1>Sorting<br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td>Sorting<br/></td>
+<td><i class="fa fa-check"><br/></td>
+<td><i class="fa fa-check"><br/></td>
+<td><i class="fa fa-check"><br/></td>
 </tr>
 <tr>
-<td colspan=1 rowspan=1>Custom Sorting<br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td>Custom Sorting<br/></td>
+<td><i class="fa fa-check"><br/></td>
+<td><i class="fa fa-check"><br/></td>
+<td><i class="fa fa-check"><br/></td>
 </tr>
 <tr>
-<td colspan=1 rowspan=1>Grouping<br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td>Grouping<br/></td>
+<td><i class="fa fa-check"><br/></td>
+<td><i class="fa fa-check"><br/></td>
+<td><i class="fa fa-check"><br/></td>
 </tr>
 <tr>
-<td colspan=1 rowspan=1>Custom Grouping<br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td>Custom Grouping<br/></td>
+<td><i class="fa fa-check"><br/></td>
+<td><i class="fa fa-check"><br/></td>
+<td><i class="fa fa-check"><br/></td>
 </tr>
 <tr>
-<td colspan=1 rowspan=1>Summaries<br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td>Summaries<br/></td>
+<td><i class="fa fa-check"><br/></td>
+<td><i class="fa fa-check"><br/></td>
+<td><i class="fa fa-check"><br/></td>
 </tr>
 <tr>
-<td colspan=1 rowspan=1>Filtering<br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td>Filtering<br/></td>
+<td><i class="fa fa-check"><br/></td>
+<td><i class="fa fa-check"><br/></td>
+<td><i class="fa fa-check"><br/></td>
 </tr>
 <tr>
-<td colspan=1 rowspan=1>Selection<br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td>Selection<br/></td>
+<td><i class="fa fa-check"><br/></td>
+<td><i class="fa fa-check"><br/></td>
+<td><i class="fa fa-check"><br/></td>
 </tr>
 <tr>
-<td colspan=1 rowspan=1>Load More<br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td>Load More<br/></td>
+<td><i class="fa fa-check"><br/></td>
+<td><i class="fa fa-check"><br/></td>
+<td><i class="fa fa-check"><br/></td>
 </tr>
 <tr>
-<td colspan=1 rowspan=1>Pull To Refresh<br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td>Pull To Refresh<br/></td>
+<td><i class="fa fa-check"><br/></td>
+<td><i class="fa fa-check"><br/></td>
+<td><i class="fa fa-check"><br/></td>
 </tr>
 <tr>
-<td colspan=1 rowspan=1>Template Column<br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-close"></i><br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-close"></i><br/></td>
+<td>Template Column<br/></td>
+<td><i class="fa fa-check"><br/></td>
+<td><i class="fa fa-close"></i><br/></td>
+<td><i class="fa fa-close"></i><br/></td>
 </tr>
 <tr>
-<td colspan=1 rowspan=1>Custom Cell<br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-close"></i><br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td>Custom Cell<br/></td>
+<td><i class="fa fa-close"></i><br/></td>
+<td><i class="fa fa-check"><br/></td>
+<td><i class="fa fa-check"><br/></td>
 </tr>
 <tr>
-<td colspan=1 rowspan=1>Styles<br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td>Styles<br/></td>
+<td><i class="fa fa-check"><br/></td>
+<td><i class="fa fa-check"><br/></td>
+<td><i class="fa fa-check"><br/></td>
 </tr>
 <tr>
-<td colspan=1 rowspan=1>Conditional Styles<br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-close"></i><br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-close"></i><br/></td>
+<td>Conditional Styles<br/></td>
+<td><i class="fa fa-check"><br/></td>
+<td><i class="fa fa-close"></i><br/></td>
+<td><i class="fa fa-close"></i><br/></td>
 </tr>
 <tr>
-<td colspan=1 rowspan=1>Exporting<br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td>Exporting<br/></td>
+<td><i class="fa fa-check"><br/></td>
+<td><i class="fa fa-check"><br/></td>
+<td><i class="fa fa-check"><br/></td>
 </tr>
 <tr>
-<td colspan=1 rowspan=1>Row Freezing<br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td>Row Freezing<br/></td>
+<td><i class="fa fa-check"><br/></td>
+<td><i class="fa fa-check"><br/></td>
+<td><i class="fa fa-check"><br/></td>
 </tr>
 <tr>
-<td colspan=1 rowspan=1>Column Freezing<br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td>Column Freezing<br/></td>
+<td><i class="fa fa-check"><br/></td>
+<td><i class="fa fa-check"><br/></td>
+<td><i class="fa fa-check"><br/></td>
 </tr>
 <tr>
-<td colspan=1 rowspan=1>Row Height Customization<br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
-<td colspan=1 rowspan=1><i class="fa fa-check"><br/></td>
+<td>Row Height Customization<br/></td>
+<td><i class="fa fa-check"><br/></td>
+<td><i class="fa fa-check"><br/></td>
+<td><i class="fa fa-check"><br/></td>
 </tr>
 </table>
 
@@ -148,32 +148,32 @@ The following list of assemblies need to be added as reference from the lib fold
 
 <table>
 <tr>
-<th colspan=1 rowspan=1>Project<br/></th>
-<th colspan=1 rowspan=1>Required assemblies<br/></th>
+<th>Project<br/></th>
+<th>Required assemblies<br/></th>
 </tr>
 <tr>
-<td colspan=1 rowspan=1>Pcl<br/></td>
-<td colspan=1 rowspan=1>pcl\Syncfusion.Data.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfDataGrid.XForms.dll<br/></td>
+<td>Pcl<br/></td>
+<td>pcl\Syncfusion.Data.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfDataGrid.XForms.dll<br/></td>
 </tr>
 <tr>
-<td colspan=1 rowspan=1>Android Renderer<br/></td>
-<td colspan=1 rowspan=1>pcl\Syncfusion.Data.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfDataGrid.XForms.dll<br/>android\Syncfusion.SfDataGrid.XForms.Android.dll<br/></td>
+<td>Android Renderer<br/></td>
+<td>pcl\Syncfusion.Data.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfDataGrid.XForms.dll<br/>android\Syncfusion.SfDataGrid.XForms.Android.dll<br/></td>
 </tr>
 <tr>
-<td colspan=1 rowspan=1>iOS Renderer<br/></td>
-<td colspan=1 rowspan=1>pcl\Syncfusion.Data.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfDataGrid.XForms.dll<br/>ios-unified\Syncfusion.SfDataGrid.XForms.iOS.dll<br/></td>
+<td>iOS Renderer<br/></td>
+<td>pcl\Syncfusion.Data.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfDataGrid.XForms.dll<br/>ios-unified\Syncfusion.SfDataGrid.XForms.iOS.dll<br/></td>
 </tr>
 <tr>
-<td colspan=1 rowspan=1>WindowsPhone Renderer<br/></td>
-<td colspan=1 rowspan=1>pcl\Syncfusion.Data.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfDataGrid.XForms.dll<br/>wp8\Syncfusion.SfDataGrid.XForms.WinPhone.dll<br/></td>
+<td>WindowsPhone Renderer<br/></td>
+<td>pcl\Syncfusion.Data.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfDataGrid.XForms.dll<br/>wp8\Syncfusion.SfDataGrid.XForms.WinPhone.dll<br/></td>
 </tr>
 <tr>
-<td colspan=1 rowspan=1>WindowsPhone 8.1 Renderer<br/></td>
-<td colspan=1 rowspan=1>pcl\Syncfusion.Data.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfDataGrid.XForms.dll<br/>wp81\Syncfusion.SfDataGrid.XForms.WinPhone.dll<br/></td>
+<td>WindowsPhone 8.1 Renderer<br/></td>
+<td>pcl\Syncfusion.Data.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfDataGrid.XForms.dll<br/>wp81\Syncfusion.SfDataGrid.XForms.WinPhone.dll<br/></td>
 </tr>
 <tr>
-<td colspan=1 rowspan=1>WinRT Renderer<br/></td>
-<td colspan=1 rowspan=1>pcl\Syncfusion.Data.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfDataGrid.XForms.dll<br/>winrt\Syncfusion.SfDataGrid.XForms.WinRT.dll<br/></td>
+<td>WinRT Renderer<br/></td>
+<td>pcl\Syncfusion.Data.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfDataGrid.XForms.dll<br/>winrt\Syncfusion.SfDataGrid.XForms.WinRT.dll<br/></td>
 </tr>
 </table>
 
@@ -181,12 +181,12 @@ In order to use export to excel and export to pdf functionalities of **SfDataGri
 
 <table>
 <tr>
-<th colspan=1 rowspan=1>Project<br/></th>
-<th colspan=1 rowspan=1>Required assemblies<br/></th>
+<th>Project<br/></th>
+<th>Required assemblies<br/></th>
 </tr>
 <tr>
-<td colspan=1 rowspan=1>Pcl<br/></td>
-<td colspan=1 rowspan=1>pcl\Syncfusion.SfGridConverter.XForms.dll<br/>pcl\Syncfusion.Compression.Portable.dll<br/>pcl\Syncfusion.Pdf.Portable.dll<br/>pcl\Syncfusion.XlsIO.Portable.dll<br/></td>
+<td>Pcl<br/></td>
+<td>pcl\Syncfusion.SfGridConverter.XForms.dll<br/>pcl\Syncfusion.Compression.Portable.dll<br/>pcl\Syncfusion.Pdf.Portable.dll<br/>pcl\Syncfusion.XlsIO.Portable.dll<br/></td>
 </tr>
 </table>
 
@@ -220,16 +220,16 @@ The following list of assemblies need to be added as reference from the lib fold
 
 <table>
 <tr>
-<th colspan=1 rowspan=1>Project<br/></th>
-<th colspan=1 rowspan=1>Required assemblies<br/></th>
+<th>Project<br/></th>
+<th>Required assemblies<br/></th>
 </tr>
 <tr>
-<td colspan=1 rowspan=1>Xamarin.Android<br/></td>
-<td colspan=1 rowspan=1>Syncfusion.Linq.Android.dll<br/>Syncfusion.SfDataGrid.Android.dll<br/>Syncfusion.GridCommon.Portable.dll<br/></td>
+<td>Xamarin.Android<br/></td>
+<td>Syncfusion.Linq.Android.dll<br/>Syncfusion.SfDataGrid.Android.dll<br/>Syncfusion.GridCommon.Portable.dll<br/></td>
 </tr>
 <tr>
-<td colspan=1 rowspan=1>Xamarin.iOS<br/></td>
-<td colspan=1 rowspan=1>Syncfusion.Linq.iOS.dll<br/>Syncfusion.SfDataGrid.iOS.dll<br/>Syncfusion.GridCommon.Portable.dll<br/></td>
+<td>Xamarin.iOS<br/></td>
+<td>Syncfusion.Linq.iOS.dll<br/>Syncfusion.SfDataGrid.iOS.dll<br/>Syncfusion.GridCommon.Portable.dll<br/></td>
 </tr>
 </table>
 
@@ -237,16 +237,16 @@ In order to use export to excel and export to pdf functionalities of **SfDataGri
 
 <table>
 <tr>
-<th colspan=1 rowspan=1>Project<br/></th>
-<th colspan=1 rowspan=1>Required assemblies<br/></th>
+<th>Project<br/></th>
+<th>Required assemblies<br/></th>
 </tr>
 <tr>
-<td colspan=1 rowspan=1>Xamarin.Android<br/></td>
-<td colspan=1 rowspan=1>Syncfusion.SfGridConverter.Android.dll<br/>pcl\Syncfusion.Compression.Portable.dll<br/>pcl\Syncfusion.Pdf.Portable.dll<br/>pcl\Syncfusion.XlsIO.Portable.dll<br/></td>
+<td>Xamarin.Android<br/></td>
+<td>Syncfusion.SfGridConverter.Android.dll<br/>pcl\Syncfusion.Compression.Portable.dll<br/>pcl\Syncfusion.Pdf.Portable.dll<br/>pcl\Syncfusion.XlsIO.Portable.dll<br/></td>
 </tr>
 <tr>
-<td colspan=1 rowspan=1>Xamarin.iOS<br/></td>
-<td colspan=1 rowspan=1>Syncfusion.SfGridConverter.iOS.dll<br/>pcl\Syncfusion.Compression.Portable.dll<br/>pcl\Syncfusion.Pdf.Portable.dll<br/>pcl\Syncfusion.XlsIO.Portable.dll<br/></td>
+<td>Xamarin.iOS<br/></td>
+<td>Syncfusion.SfGridConverter.iOS.dll<br/>pcl\Syncfusion.Compression.Portable.dll<br/>pcl\Syncfusion.Pdf.Portable.dll<br/>pcl\Syncfusion.XlsIO.Portable.dll<br/></td>
 </tr>
 </table>
 
@@ -756,28 +756,28 @@ The below table describes you the types of columns and its purpose of usage in *
 
 <table>
 <tr>
-<th colspan=1 rowspan=1>Column Type<br/></th>
-<th colspan=1 rowspan=1>Description<br/></th>
+<th>Column Type<br/></th>
+<th>Description<br/></th>
 </tr>
 <tr>
-<td colspan=1 rowspan=1>GridColumn<br/></td>
-<td colspan=1 rowspan=1>Abstract class. Base column type of all the columns in the **SfDataGrid**.<br/></td>
+<td>GridColumn<br/></td>
+<td>Abstract class. Base column type of all the columns in the **SfDataGrid**.<br/></td>
 </tr>
 <tr>
-<td colspan=1 rowspan=1>GridTextColumn<br/></td>
-<td colspan=1 rowspan=1>To be used to display string or numbers in each row.<br/></td>
+<td>GridTextColumn<br/></td>
+<td>To be used to display string or numbers in each row.<br/></td>
 </tr>
 <tr>
-<td colspan=1 rowspan=1>GridSwitchColumn<br/></td>
-<td colspan=1 rowspan=1>To be used when you want to display switch in each row.<br/></td>
+<td>GridSwitchColumn<br/></td>
+<td>To be used when you want to display switch in each row.<br/></td>
 </tr>
 <tr>
-<td colspan=1 rowspan=1>GridImageColumn<br/></td>
-<td colspan=1 rowspan=1>To be used when you want to display an image in each row.<br/></td>
+<td>GridImageColumn<br/></td>
+<td>To be used when you want to display an image in each row.<br/></td>
 </tr>
 <tr>
-<td colspan=1 rowspan=1>GridTemplateColumn<br/></td>
-<td colspan=1 rowspan=1>To be used when you want to customize your column based on your requirements.<br/></td>
+<td>GridTemplateColumn<br/></td>
+<td>To be used when you want to customize your column based on your requirements.<br/></td>
 </tr>
 </table>
 
@@ -1010,16 +1010,16 @@ The below table provides the list of properties in GridTemplateColumn.
 
 <table>
 <tr>
-<th colspan=1 rowspan=1>Property<br/></th>
-<th colspan=1 rowspan=1>Type<br/></th>
-<th colspan=1 rowspan=1>Description<br/></th>
-<th colspan=1 rowspan=1>Default Value<br/></th>
+<th>Property<br/></th>
+<th>Type<br/></th>
+<th>Description<br/></th>
+<th>Default Value<br/></th>
 </tr>
 <tr>
-<td colspan=1 rowspan=1>CellTemplate<br/></td>
-<td colspan=1 rowspan=1>DataTemplate <br/></td>
-<td colspan=1 rowspan=1>Gets or sets the template that is used to display the contents of the record cells.<br/></td>
-<td colspan=1 rowspan=1>Null<br/></td>
+<td>CellTemplate<br/></td>
+<td>DataTemplate <br/></td>
+<td>Gets or sets the template that is used to display the contents of the record cells.<br/></td>
+<td>Null<br/></td>
 </tr>
 </table>
 
@@ -1107,20 +1107,20 @@ The below table describes you the types of columns and its purpose of usage in *
 
 <table>
 <tr>
-<th colspan=1 rowspan=1>Column Type<br/></th>
-<th colspan=1 rowspan=1>Description<br/></th>
+<th>Column Type<br/></th>
+<th>Description<br/></th>
 </tr>
 <tr>
-<td colspan=1 rowspan=1>GridColumn<br/></td>
-<td colspan=1 rowspan=1>Abstract class. Base column type of all the columns in the **SfDataGrid**.<br/></td>
+<td>GridColumn<br/></td>
+<td>Abstract class. Base column type of all the columns in the **SfDataGrid**.<br/></td>
 </tr>
 <tr>
-<td colspan=1 rowspan=1>GridTextColumn<br/></td>
-<td colspan=1 rowspan=1>To be used to display string or numbers in each row.<br/></td>
+<td>GridTextColumn<br/></td>
+<td>To be used to display string or numbers in each row.<br/></td>
 </tr>
 <tr>
-<td colspan=1 rowspan=1>TemplateColumn (i.e. GridTextColumn with UserCellType)<br/></td>
-<td colspan=1 rowspan=1>To be used when you want to customize your column based on your requirements.<br/></td>
+<td>TemplateColumn (i.e. GridTextColumn with UserCellType)<br/></td>
+<td>To be used when you want to customize your column based on your requirements.<br/></td>
 </tr>
 </table>
 

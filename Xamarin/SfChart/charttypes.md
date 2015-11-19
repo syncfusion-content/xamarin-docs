@@ -710,8 +710,6 @@ chart.Series.Add(fastLineSeries);
 {% highlight c# %}
 [C#]
 
-...
-
 FastLineSeries fastLineSeries = new FastLineSeries() 
 { 
 	ItemsSource = Data, 
@@ -854,7 +852,7 @@ OHLC chart requires five values (X, Open, High, Low and Close) to plot a point.
 
 There are two ways you can provide data to an OHLC chart,
 
-1.You can use [ChartDataPoint's](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/topic654.html#) five parameter constructor to pass x, open, high, low and close values to  `HiLoOpenCloseSeries`,
+1.You can use [ChartDataPoint's](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/topic655.html#) five parameter constructor to pass x, open, high, low and close values to  `HiLoOpenCloseSeries`,
 
 {% highlight c# %}
 [C#]
@@ -930,16 +928,12 @@ In OHLC chart, `BullFillColor` property is used to specify a fill color for the 
 {% highlight xml %}
 [XAML]
 
-...
-
 <chart:HiLoOpenCloseSeries BearFillColor="Blue" BullFillColor="Purple" ItemsSource ="{Binding Data}" XBindingPath="Month" High="Value1" Low="Value2" Open="Value3" Close="Value4"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 [C#]
-
-...
 
 HiLoOpenCloseSeries hiLoOpenCloseSeries = new HiLoOpenCloseSeries() 
 { 
@@ -965,7 +959,7 @@ Candle chart requires five values (X, Open, High, Low and Close) to plot a point
 
 There are two ways you can provide data to an candle chart,
 
-1.You can use [ChartDataPoint's](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/topic654.html#) five parameter constructor to pass x, open, high, low and close values to  `CandleSeries`,
+1.You can use [ChartDataPoint's](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/topic655.html#) five parameter constructor to pass x, open, high, low and close values to  `CandleSeries`,
 
 {% highlight c# %}
 [C#]

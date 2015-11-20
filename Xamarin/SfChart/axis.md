@@ -614,7 +614,7 @@ chart.PrimaryAxis.LabelStyle.TextColor = Color.Red;
 
 ### Label and tick positioning
 
-Axis labels and ticks can be positioned inside or outside the chart area by using `LabelStyle`.`LabelsPosition` and `LabelStyle`.`TickPosition` properties of ChartAxis. By default labels and ticks will be positioned outside the chart area.
+Axis labels and ticks can be positioned inside or outside the chart area by using `LabelStyle`.`LabelsPosition` and `TickPosition` properties of ChartAxis. By default labels and ticks will be positioned outside the chart area.
 
 {% highlight xml %}
 [XAML]

@@ -270,7 +270,7 @@ public partial class GettingStartedViewController : UIViewController
 
 **SfDataGrid** is a data-bound control. Hence you must create a data model to bind it to the control. 
 
-1. Create a simple data source as shown in the following code example in a new class file and save it as OrderInfo.cs file. 
+Create a simple data source as shown in the following code example in a new class file and save it as OrderInfo.cs file. 
 
 {% highlight c# %}
 public class OrderInfo
@@ -319,7 +319,7 @@ public class OrderInfo
 
 N> If you want your data model to respond to property changes, then implement INotifyPropertyChanged interface in your model class
 
-2. Create a model repository class with OrderInfo collection property initialized with required number of data objects as shown in the following code example in a new class file and save it as OrderInfoRepository.cs file.
+Create a model repository class with OrderInfo collection property initialized with required number of data objects as shown in the following code example in a new class file and save it as OrderInfoRepository.cs file.
 
 {% highlight c# %}
 public class OrderInfoRepository

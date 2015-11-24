@@ -34,6 +34,7 @@ The below table describes you the types of columns and its purpose of usage in *
 </tr>
 </table>
 
+
 ## GridColumn
 
 GridColumn is the base column type of all the columns in the **SfDataGrid**, hence GridColumn properties are used by all the columns. The following sub-sections explains you about the properties in the GridColumn and the customizations that can be done using those properties.
@@ -59,6 +60,7 @@ GridColumn.HeaderText specifies the text displayed in the column header. If Head
 #### HeaderTextAlignment
 You can get or set the TextAlignment of the header cell in the GridColumn by using the GridColumn.HeaderTextAlignment property. The default alignment for the header cells in **SfDataGrid** is “Center”.
 
+
 ## GridTextColumn
 
 GridTextColumn is derived from GridColumn and hence it inherits all the properties of GridColumn. Each of the record cells in GridTextColumn displays text based on the Mapping Name which associates the column with a property in the data source.
@@ -73,7 +75,7 @@ The below topics explain you about the customizations that can be done in the Gr
 
 ### Formatting
 
-**SfDataGrid** allows you to format the value displayed in the GridColumn by using the **GridColumn.Format** property. Assign the FormatString to this property based on the type of the property the column is associated with to format the value. You can use different [StringFormats](http://msdn.microsoft.com/en-us/library/fbxft59x\(v=vs.90\).aspx) to customize the value displayed in the record cells.
+**SfDataGrid** allows you to format the value displayed in the GridColumn by using the **GridColumn.Format** property. Assign the FormatString to this property based on the type of the property the column is associated with to format the value. You can use different [StringFormats](http://msdn.microsoft.com/en-us/library/fbxft59x(v=vs.90).aspx) to customize the value displayed in the record cells.
 
 The following code example shows you how to apply formatting for a GridTextColumn in code.
 
@@ -139,6 +141,7 @@ The FontFamily for the content of header cell in the GridColumn can be customize
 #### TextAlignment
 
 You can get or set the TextAlignment of the header cell in the GridColumn by using the GridColumn.TextAlignment property. The default alignment for the record cells in **SfDataGrid** is “Center”.
+
 
 ## TemplateColumn
 

@@ -23,13 +23,16 @@ dataGrid.ColumnSizer = ColumnSizer.None;
 * LastColumnFill
 * Star
 
+
 ## ColumnSizer.None
 
 No Column sizing is applied when the **SfDataGrid.ColumnSizer** is set to “None”. Columns are arranged in view based on the **SfDataGrid.DefaultColumnWidth** property. This is the default value of the **SfDataGrid.ColumnSizer** property.
 
+
 ## ColumnSizer.LastColumnFill
 
 When the **SfDataGrid.ColumnSizer** is “LastColumnFill”, the column width of the GridColumns are adjusted with respect to **SfDataGrid.DefaultColumnWidth** property. In case if the columns does not fill the entire view space, then the last column’s width fills the unoccupied space in the view.
+
 
 ## ColumnSizer.Star
 

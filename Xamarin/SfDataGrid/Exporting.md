@@ -13,7 +13,8 @@ This section explains you how to Export the **SfDataGrid** to Excel and PDF file
 
 **SfDataGrid** provides support for exporting the data to Excel and Pdf with several customization options like custom appearance, excluding specific columns, excluding headers, setting custom row height, setting custom column width, etc. It also provides support for Grouping, Filtering and Sorting when Exporting.
 
-In order to use export to excel and export to pdf functionalities of **SfDataGrid**, add the required assembly references to your application as discussed in the [Assembly deployment](#Assembly-deployment) section.
+In order to use export to excel and export to pdf functionalities of **SfDataGrid**, add the required assembly references to your application as discussed in the [Assembly deployment](/xamarin/sfdatagrid/getting-started#assembly-deployment) section.
+
 
 ## Export to Excel
 
@@ -129,6 +130,7 @@ void excelExport_CellExporting(object sender, DataGridCellExcelExportingEvent
     }
 }
 {% endhighlight %}
+
 
 ## Export to Pdf
 

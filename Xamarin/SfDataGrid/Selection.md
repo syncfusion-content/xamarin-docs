@@ -24,6 +24,7 @@ The following code example illustrates how to set the selection mode in **SfData
 dataGrid.SelectionMode = SelectionMode.Single; 
 {% endhighlight %}
 
+
 ## Programmatic Selection
 
 When **SfDataGrid.SelectionMode** is set a value other than “None”, you can also select the row / rows in **SfDataGrid** from the code by setting the **SfDataGrid.SelectedIndex**, **SfDataGrid.SelectedItem** or **SfDataGrid.SelectedItems** property based on the selection mode. The following code example illustrates how to enable selection from code in **SfDataGrid**.
@@ -39,6 +40,7 @@ dataGrid.SelectedIndex = 3;
 //Perform selection using selected item
 dataGrid.SelectedItem = viewModel.OrdersInfo [5];
 {% endhighlight %}
+
 
 ## Selection Events
 
@@ -62,6 +64,7 @@ void DataGrid_SelectionChanging (object sender, GridSelectionChangingEventAr
     e.Cancel = true;
 }
 {% endhighlight %}
+
 
 ## Clear Selection
 

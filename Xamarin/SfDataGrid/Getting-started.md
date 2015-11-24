@@ -11,6 +11,7 @@ documentation: ug
 
 This section provides a quick overview for working with **SfDataGrid** for Xamarin.Forms, Xamarin.Android and Xamarin.iOS. You will walk through the entire process of creating a real world **SfDataGrid**.
 
+
 ## Assembly deployment
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders,
@@ -128,6 +129,7 @@ In order to use export to excel and export to pdf functionalities of **SfDataGri
 <td>Syncfusion.SfGridConverter.iOS.dll<br/>pcl\Syncfusion.Compression.Portable.dll<br/>pcl\Syncfusion.Pdf.Portable.dll<br/>pcl\Syncfusion.XlsIO.Portable.dll<br/></td>
 </tr>
 </table>
+
 
 ## Create a simple SfDataGrid 
 

@@ -15,16 +15,17 @@ This section explains you about how to create and add columns, different ways to
 * Automatic Columns generation based on the underlying collection.
 * Manually defining columns in XAML or C#.
 
+
 ## Automatic Columns Generation
 
 The **SfDataGrid** creates columns automatically based on the property **SfDataGrid.AutoGenerateColumns**. **SfDataGrid.AutoGenerateColumns** is a bindable property and it decides columns generation for **SfDataGrid** based on the **SfDataGrid.AutoGenerateColumnsMode** property. 
 **SfDataGrid.AutoGenerateColumnsMode** decides a way to create columns when **SfDataGrid.AutoGenerateColumns** is set to ‘true’. This enum type has the following four options.
 
+* None: Stores only the columns that are defined in **SfDataGrid.Columns** collection.
 * Reset: Retains the columns defined explicitly in application level and creates columns newly for all the other properties in a Data Source.
 * ResetAll: When changing ItemsSource, the columns for previous data are cleared and it creates new columns. Even when columns are explicitly defined it does not consider the defined columns and creates column based on the underlying collection.
 * RetainOld: Creates columns for all fields in a Data Source when the Grid does not have any explicit definition for columns. When columns are defined explicitly, then the defined columns alone are retained and new columns are not created.
 * SmartReset: Retains the columns defined explicitly in application level and the columns with MappingName identical to properties in a Data Source. Creates columns newly for all the other properties in the Data Source.
-* None: Stores only the columns that are defined in **SfDataGrid.Columns** collection.
 
 The default value of **SfDataGrid.AutoGenerateColumns** property is true and **SfDataGrid.AutoGenerateColumnsMode** is Reset. Hence by default **SfDataGrid** creates columns automatically for every non-explicitly defined public property in the underlying collection bound to its ItemsSource property.
 
@@ -65,9 +66,10 @@ void GridAutoGeneratingColumns(object sender, AutoGeneratingColumnArgs e)
 
 You can also customize a column’s header text, sorting, alignment, padding, etc. by handling the **SfDataGrid.AutoGeneratingEvent**.
 
+
 ## Manually generate Columns
 
-**SfDataGrid** also allows you to define the columns manually by adding the GridColumn objects to the **SfDataGrid.Columns** collection. In case if you want only the manually defined columns to be in view, then you can achieve it by setting the **SfDataGrid.AutoGenerateColumns** property to false. There are different [types of columns](#Column-Types-–-Forms) available in **SfDataGrid** and you can create any column based on your requirements from both XAML and code.
+**SfDataGrid** also allows you to define the columns manually by adding the GridColumn objects to the **SfDataGrid.Columns** collection. In case if you want only the manually defined columns to be in view, then you can achieve it by setting the **SfDataGrid.AutoGenerateColumns** property to false. There are different types of columns available in **SfDataGrid** and you can create any column based on your requirements from both XAML and code.
  
 The following code example illustrates about creating columns manually using XAML.
 

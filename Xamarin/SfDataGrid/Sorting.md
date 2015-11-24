@@ -13,6 +13,7 @@ This section explains you about Sorting the data and about the properties and ev
  
 **SfDataGrid** allows you to apply sorting on its data by setting the **SfDataGrid.AllowSorting** property to true. It allows you to sort the data against one or more columns. When sorting is applied, the Grid automatically rearranges the data to match with the current sort criteria. When **SfDataGrid.AllowSorting** is true, you can sort the data simply by tapping the column header you wish to sort. Once sorting is applied, the Grid shows a sort icon in the respective column header indicating the direction of sorting.
 
+
 ## Programmatic Sorting
 
 **SfDataGrid** also allows to perform sorting from the code. This requires you to manually define the SortColumnDescription objects and add it in the **SfDataGrid.SortColumnDescriptions** collection. **SfDataGrid** sorts the data based on the SortColumnDescription objects that are added to this collection.
@@ -45,6 +46,7 @@ dataGrid.SortColumnDescriptions.Add (new SortColumnDescription () {
 {% endhighlight %}
 {% endtabs %}
 
+
 ## Tri-State Sorting
 
 In addition to sort the data in ascending / descending orders, **SfDataGrid** also allows you to unsort the data in the original order by clicking the header again after sorting to descending order by setting the **SfDataGrid.AllowTriStateSorting** property to true. When this property is set Sorting in each column iterates through three sort states; ascending, descending, and unsorted.
@@ -60,6 +62,7 @@ dataGrid.AllowTriStateSorting = true;
 {% endhighlight %}
 {% endtabs %}
 
+
 ## Multi Sorting
 
 **SfDataGrid** allows you to sort the data against more than one columns by setting the **SfDataGrid.AllowMultiSort** property to true. The number of columns by which the data can be sorted is unlimited. To apply sorting for multiple columns, tap the desired column headers after setting the **SfDataGrid.AllowMultiSort** property.
@@ -74,6 +77,7 @@ dataGrid.AllowMultiSort = true;
 <syncfusion:SfDataGrid AllowMultiSort="True" />
 {% endhighlight %}
 {% endtabs %}
+
 
 ## Sorting Events
 
@@ -109,6 +113,7 @@ void DataGrid_SortColumnsChanging (object sender, DataGridSortColumnsChangin
 </syncfusion:SfDataGrid> 
 {% endhighlight %}
 {% endtabs %}
+
 
 ## Custom sorting
 
@@ -209,6 +214,7 @@ public class CustomerInfo : IComparer<Object>, ISortDirection
     public ListSortDirection SortDirection { get; set; }
 }
 {% endhighlight %}
+
 
 ## Disable sorting for an individual column
 

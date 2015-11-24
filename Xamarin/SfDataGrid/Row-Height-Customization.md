@@ -13,6 +13,7 @@ This section explains you about how to customize the height of the rows in **SfD
 
 **SfDataGrid** provides you the options to customize the header row height and the row height of all the grid rows or particular rows based on your requirements. The following sections illustrates you about how to achieve this customization in **SfDataGrid**.
 
+
 ## Customize HeaderRowHeight 
 
 **SfDataGrid** allows you to customize the height of the header row by setting the **SfDataGrid.HeaderRowHeight** property. The default value of this property is 40. This property responds to runtime changes and hence you can customize it based on your requirement. Setting **SfDataGrid.HeaderRowHeight** to zero will collapse the header row in view.
@@ -25,6 +26,7 @@ The following code example illustrates how to customize header row height in **S
 dataGrid.HeaderRowHeight = 50;  
 {% endhighlight %}
 
+
 ## Customize RowHeight for all rows
 
 **SfDataGrid** allows you to customize the height of the grid rows in the scrolling region by setting the **SfDataGrid.RowHeight** property. The default value of this property is 50. This property responds to runtime changes and hence you can customize it based on your requirement. Setting this property will change the height of all the rows in the body region with the common value. Setting **SfDataGrid.RowHeight** to zero will collapse all the rows in the grid.
@@ -35,6 +37,7 @@ The following code example illustrates how to customize header row height in **S
 //Customizing row height in SfDataGrid
 dataGrid.RowHeight = 60;
 {% endhighlight %}
+
 
 ## Customize RowHeight of a particular row on demand
 

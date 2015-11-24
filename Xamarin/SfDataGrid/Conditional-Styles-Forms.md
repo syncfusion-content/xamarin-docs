@@ -13,7 +13,7 @@ documentation: UG
 
 {% highlight xaml %}
 <syncfusion:SfDataGrid x:Name="dataGrid"
-            ItemsSource="{Binding OrdersInfo}">
+                       ItemsSource="{Binding OrdersInfo}">
     <syncfusion:SfDataGrid.Columns>
         <syncfusion:GridTextColumn MappingName="Freight" Format="C">
             <syncfusion:GridTextColumn.CellStyle>

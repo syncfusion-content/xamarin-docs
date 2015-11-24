@@ -11,6 +11,7 @@ documentation: UG
 
 This section explains you how to set Freeze panes in **SfDataGrid**. 
 
+
 ## Freeze Rows
 
 **SfDataGrid** provides extensive support to freeze the rows at the top of the view below the header row by setting the **SfDataGrid.FrozenRowsCount** property. 
@@ -29,6 +30,7 @@ dataGrid.FrozenRowsCount = 2;
 If you have 10 rows in view, then you set FrozenRowsCount to a maximum value of 9.
 
 N> Header row is frozen by default and works regardless of the FrozenRowsCount property.
+
 
 ## Freeze Columns
 

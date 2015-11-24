@@ -12,6 +12,7 @@ documentation: UG
 
 On scrolling down, when the grid reaches the maximum offset an interactive load more view is displayed in view. On tapping the load more view it triggers a command to add more data to the data source of the grid in runtime.
 
+
 ## LoadMoreCommand
 
 **SfDataGrid** lets you load records to its data source in runtime by triggering an ICommand binded to the **SfDataGrid.LoadMoreCommand** property. When you tap the load more view, if the CanExecute of the ICommand returns true, then this command is triggered to load the records in runtime.
@@ -40,6 +41,7 @@ internal void LoadMoreItems()
     this.OrdersInfo.Add(order.GenerateOrder(OrdersInfo.Count + 1));
 } 
 {% endhighlight %}
+
 
 ## LoadMore Customizations
 

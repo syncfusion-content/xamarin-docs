@@ -12,7 +12,8 @@ documentation: UG
 This section explains you how to group a column in **SfDataGrid** and about the properties and customizations available for Grouping in **SfDataGrid**.
 
 A Group represents a collection of records that belong to a particular category. When Grouping is applied, the data is organized into a hierarchical structure based on matching field values. The records having identical values in the grouped column are combined to form a Group. Each Group is identified by its CaptionSummaryRow to get the underlying records in view.
- 
+
+
 ## Programmatic Grouping
 
 **SfDataGrid** also allows to perform grouping from the code by defining the GroupColumnDescription object and adding it in the **SfDataGrid.GroupColumnDescriptions** collection. **SfDataGrid** groups the data based on the GroupColumnDescription object that is added to this collection.
@@ -40,6 +41,7 @@ The following code example illustrates how to apply grouping by a column in **Sf
 </syncfusion:SfDataGrid> 
 {% endhighlight %}
 {% endtabs %}
+
 
 ## Custom Grouping
 
@@ -112,6 +114,7 @@ public class GroupConverter : IValueConverter
     }
 }
 {% endhighlight %}
+
 
 ## How To
 

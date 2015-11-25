@@ -9,7 +9,7 @@ documentation: UG
 
 # Columns 
 
-This section explains you about how to create and add columns, different ways to create columns and about the customizations that can done for a column.
+This section explains you about how to create and add columns, different ways to create columns and about the customizations that can done to a column.
 **SfDataGrid** allows you to create and add Columns in two ways:
 
 * Automatic Columns generation based on the underlying collection.

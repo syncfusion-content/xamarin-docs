@@ -41,20 +41,29 @@ dataGrid.SelectedIndex = 3;
 dataGrid.SelectedItem = viewModel.OrdersInfo [5];
 {% endhighlight %}
 
+When the selection mode is Multiple you can programmatically select more than one row by adding the underlying object to be selected to the **SfDataGrid.SelectedItems** property. 
+
+The following code example illustrates how to programmatically select more than one row from the code.
+
+{% highlight c# %} 
+//Perform multiple selection using selected item
+dataGrid.SelectedItems.Add (viewModel.OrdersInfo [4]);
+dataGrid.SelectedItems.Add (viewModel.OrdersInfo [5]);
+{% endhighlight %}
 
 ## Selection Events
 
-The **SfDataGrid** provides you the following Events for Selection:
+The **SfDataGrid** provides you the following events for Selection:
 
-* SelectionChanging – This Event is raised while selecting a row at the execution time before the row is selected. Hence it allows you to cancel the selection action by setting the Cancel property of GridSelectionChangingEventArgs.
-* SelectionChanged – This Event is raised after the column is selected.
+* SelectionChanging – This event is raised while selecting a row at the execution time before the row is selected. Hence it allows you to cancel the selection action by setting the Cancel property of GridSelectionChangingEventArgs.
+* SelectionChanged – This event is raised after the column is selected.
 
 These two events are triggered with GridSelectionChangingEventArgs and GridSelectionChangedEventArgs that contain the following properties.
 
 * AddedItems – Gets the collection of underlying data objects that are added for selection.
 * RemovedItems – Gets the collection of underlying data objects that are removed selection.
 
-The following code example illustrates how to hook the SelectionChanging event and cancel the selection of a column.
+The following code example illustrates how to hook the **SfDataGrid.SelectionChanging** event and cancel the selection of a column.
 
 {% highlight c# %}
 dataGrid.SelectionChanging += DataGrid_SelectionChanging;  
@@ -68,7 +77,7 @@ void DataGrid_SelectionChanging (object sender, GridSelectionChangingEventAr
 
 ## Clear Selection
 
-**SfDataGrid** allows you to clear the selection applied in the grid rows in two ways, either by setting the **SfDataGrid.SelectionMode** to “None” or by calling the **SfDataGrid.SelectionController.ClearSelection()** method.
+**SfDataGrid** allows you to clear the selection applied in the grid rows in two ways, either by setting the **SfDataGrid.SelectionMode** to “None” or by calling the **SfDataGrid.SelectionController.ClearSelection ()** method.
 
 The following code example illustrates how to clear selection in **SfDataGrid**.
 

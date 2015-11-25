@@ -45,7 +45,7 @@ The following code example illustrates how to apply grouping by a column in **Sf
 
 ## Custom Grouping
 
-**SfDataGrid** allows you to group a column based on custom logic when the standard grouping techniques do not meet the requirements. To achieve the CustomGrouping, you need to write a converter that implements IValueConverter with your CustomGrouping logic and assign that converter to the GroupColumnDescription.Converter property.
+**SfDataGrid** allows you to group a column based on custom logic when the standard grouping techniques do not meet the requirements. To achieve the CustomGrouping, you need to write a converter that implements **IValueConverter** with your CustomGrouping logic and assign that converter to the **GroupColumnDescription.Converter** property.
 
 The following code example illustrates how to set the custom grouping converter for the group description that is added to group the Freight column.
 

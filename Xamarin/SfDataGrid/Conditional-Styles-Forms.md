@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Conditional Styles - Forms | SfDataGrid | Xamarin | Syncfusion
-description: Conditional Styles - Forms
+description: Conditional Styles in Xamarin.Forms
 platform: xamarin
 control: SfDataGrid
 documentation: UG
 ---
 
-# Conditional Styles - Forms
+# Conditional Styles in Xamarin.Forms
 
-**SfDataGrid** allows you apply cell styles for a GridColumn that is used to render the cells in that column. When applied cell style the GridCell appears in the custom style rather than the default one. The following code example shows you how to apply cell style for a GridColumn.
+**SfDataGrid** allows you apply cell styles for a **GridColumn** that is used to render the cells in that column. When applied cell style the GridCell appears in the custom style rather than the default one. The following code example shows you how to apply cell style for a **GridColumn**.
 
 {% highlight xaml %}
 <syncfusion:SfDataGrid x:Name="dataGrid"

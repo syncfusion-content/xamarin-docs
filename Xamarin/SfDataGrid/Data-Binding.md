@@ -38,6 +38,6 @@ dataGrid.ItemsSource = viewModel.OrderInfoCollection;
 {% endhighlight %} 
 {% endtabs %}
 
-If the data source implements **ICollectionChanged** interface, then **SfDataGrid** will automatically refresh the view when an item is added, removed or while list cleared. When you add or remove an item in ObservableCollection, the **SfDataGrid** automatically refreshes the view as ObservableCollection implements **INotifyCollectionChanged**. But when you do the same in **List**, **SfDataGrid** will not refresh the view automatically.
+If the data source implements **ICollectionChanged** interface, then **SfDataGrid** will automatically refresh the view when an item is added, removed or while list cleared. When you add or remove an item in ObservableCollection, the **SfDataGrid** automatically refreshes the view as the ObservableCollection implements the **INotifyCollectionChanged**. But when you do the same in **List**, **SfDataGrid** will not refresh the view automatically.
 
 If the data model implements the INotifyPropertyChanged interface, then the **SfDataGrid** responds to the property change in runtime to update the view.

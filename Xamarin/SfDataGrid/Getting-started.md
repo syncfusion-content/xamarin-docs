@@ -170,7 +170,7 @@ Create a new iOS application in Xamarin Studio or Visual Studio for **Xamarin.
 
 2. Import **SfDataGrid** control namespace Syncfusion.SfDataGrid.XForms.
 
-3. Declare **SfDataGrid** control as content to the ContentPage.
+3. Set the **SfDataGrid** control as content to the ContentPage.
 
 
 {% tabs %}
@@ -212,7 +212,7 @@ namespace GettingStarted
 
 2. Import **SfDataGrid** control namespace Syncfusion.SfDataGrid.
 
-3. Create a **SfDataGrid** control instance and add as a child to the view hosted in the Activity.
+3. Create an instance of **SfDataGrid** control and add as a child to the view hosted in the Activity.
 
 {% highlight c# %}
 using Syncfusion.SfDataGrid; 
@@ -238,7 +238,7 @@ public class MainActivity : Activity
 
 2. Import **SfDataGrid** control namespace Syncfusion.SfDataGrid.
 
-3. Create a **SfDataGrid** control instance and add as a SubView to a UIViewController.
+3. Create an instance of **SfDataGrid** control and add as a SubView to a UIViewController.
 
 
 {% highlight c# %}
@@ -321,7 +321,7 @@ public class OrderInfo
 
 N> If you want your data model to respond to property changes, then implement INotifyPropertyChanged interface in your model class
 
-Create a model repository class with OrderInfo collection property initialized with required number of data objects as shown in the following code example in a new class file and save it as OrderInfoRepository.cs file.
+Create a model repository class with OrderInfo collection property initialized with required number of data objectsin a new class file as shown in the following code example and save it as OrderInfoRepository.cs file.
 
 {% highlight c# %}
 public class OrderInfoRepository
@@ -362,7 +362,7 @@ public class OrderInfoRepository
 
 In order to bind the data source of the **SfDataGrid**, set the **SfDataGrid.ItemsSource** property as shown below. You can bind the data source of the **SfDataGrid** either from XAML or in code. 
 
-The following code example bind the collection created in previous step to **SfDataGrid.ItemsSource** property.
+The following code example binds the collection created in previous step to **SfDataGrid.ItemsSource** property.
 
 {% tabs %}
 {% highlight c# %}
@@ -457,7 +457,7 @@ dataGrid.AllowSorting = true;
 {% endhighlight %}
 {% endtabs %}
 
-Run the application and touch the header cell to sort the data and the following output is displayed.
+Run the application and touch the header cell to sort the data and the following output will be displayed.
  
 ![](SfDataGrid_images/SfDataGrid-Xamarin_img4.png)
 
@@ -497,4 +497,4 @@ Run the application to render the following output.
 
 **SfDataGrid** allows you to select the row/rows by setting the **SfDataGrid.SelectionMode** property. You can set the **SfDataGrid.SelectionMode** property to single, multiple, single deselect or none based on your requirements. Information about the row/rows selected can be tracked using **SfDataGrid.SelectedItem** and **SfDataGrid.SelectedItems** properties.
 
-You can handle the selection operations with the help of **SelectionChanging** and **SelectionChanged** events of **SfDataGrid**.
+You can handle the selection operations with the help of **SelectionChanging** and **SelectionChanged** events of the **SfDataGrid**.

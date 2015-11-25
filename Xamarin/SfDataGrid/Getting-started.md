@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section provides a quick overview for working with **SfDataGrid** for Xamarin.Forms, Xamarin.Android and Xamarin.iOS. You will walk through the entire process of creating a real world **SfDataGrid**.
+This section provides a quick overview for working with **SfDataGrid** for **Xamarin.Forms**, **Xamarin.Android** and **Xamarin.iOS**. You will walk through the entire process of creating a real world **SfDataGrid**.
 
 
 ## Assembly deployment
@@ -137,11 +137,11 @@ This section explains how to create a **SfDataGrid** and configure it. The **SfD
  
 ![](SfDataGrid_images/SfDataGrid-Xamarin_img2.png)
 
-You can download the entire source code of this demo for Xamarin.Forms from [here](http://files2.syncfusion.com/Installs/v13.2.0.29/Samples/Xamarin/DataGrid_GettingStartedForms.zip).
+You can download the entire source code of this demo for **Xamarin.Forms** from [here](http://files2.syncfusion.com/Installs/v13.2.0.29/Samples/Xamarin/DataGrid_GettingStartedForms.zip).
  
-You can download the entire source code of this demo for Xamarin.Android from [here](http://files2.syncfusion.com/Installs/v13.2.0.29/Samples/Xamarin/DataGrid_GettingStartedAndroid.zip).
+You can download the entire source code of this demo for **Xamarin.Android** from [here](http://files2.syncfusion.com/Installs/v13.2.0.29/Samples/Xamarin/DataGrid_GettingStartedAndroid.zip).
  
-You can download the entire source code of this demo for Xamarin.iOS from [here](http://files2.syncfusion.com/Installs/v13.2.0.29/Samples/Xamarin/DataGrid_GettingStartediOS.zip). 
+You can download the entire source code of this demo for **Xamarin.iOS** from [here](http://files2.syncfusion.com/Installs/v13.2.0.29/Samples/Xamarin/DataGrid_GettingStartediOS.zip). 
 
 In this walk through, you will create a new application that contains the **SfDataGrid** which includes the below topics.
 
@@ -158,9 +158,11 @@ In this walk through, you will create a new application that contains the **SfDa
 
 ### Creating the project
 
-Create a new BlankApp (Xamarin.Forms.Portable) application in Xamarin Studio or Visual Studio for Xamarin.Forms.
-Create a new Android application in Xamarin Studio or Visual Studio for Xamarin.Android.
-Create a new iOS application in Xamarin Studio or Visual Studio for Xamarin.iOS.
+Create a new BlankApp (Xamarin.Forms.Portable) application in Xamarin Studio or Visual Studio for **Xamarin.Forms**.
+
+Create a new Android application in Xamarin Studio or Visual Studio for **Xamarin.Android**.
+
+Create a new iOS application in Xamarin Studio or Visual Studio for **Xamarin.iOS**.
 
 ### Adding SfDataGrid in Xamarin.Forms 
 
@@ -459,7 +461,7 @@ Run the application and touch the header cell to sort the data and the following
  
 ![](SfDataGrid_images/SfDataGrid-Xamarin_img4.png)
 
-You can also configure sorting by adding the column to the **SfDataGrid.SortColumnDescriptions collection as below.
+You can also configure sorting by adding the column to the **SfDataGrid.SortColumnDescriptions** collection as below.
 
 {% tabs %}
 {% highlight c# %}
@@ -495,4 +497,4 @@ Run the application to render the following output.
 
 **SfDataGrid** allows you to select the row/rows by setting the **SfDataGrid.SelectionMode** property. You can set the **SfDataGrid.SelectionMode** property to single, multiple, single deselect or none based on your requirements. Information about the row/rows selected can be tracked using **SfDataGrid.SelectedItem** and **SfDataGrid.SelectedItems** properties.
 
-You can handle the selection operations with the help of SelectionChanging and SelectionChanged events of **SfDataGrid**.
+You can handle the selection operations with the help of **SelectionChanging** and **SelectionChanged** events of **SfDataGrid**.

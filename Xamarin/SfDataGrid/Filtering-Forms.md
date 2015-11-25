@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Filtering - Forms | SfDataGrid | Xamarin | Syncfusion
-description: Filtering - Forms
+description: Filtering in Xamarin.Forms
 platform: xamarin
 control: SfDataGrid
 documentation: UG
 ---
 
-# Filtering in Forms 
+# Filtering in Xamarin.Forms 
 
 **SfDataGrid** provides support to filter the records in view by setting the **SfDataGrid.View.Filter** property. You have to call the **SfDataGrid.View.RefreshFilter()** method after assigning the Filter property for refreshing the view.
  

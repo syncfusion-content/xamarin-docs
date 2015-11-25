@@ -11,7 +11,7 @@ documentation: UG
 
 This section explains you about Sorting the data and about the properties and events that involve in Sorting in **SfDataGrid**.
  
-**SfDataGrid** allows you to apply sorting on its data by setting the **SfDataGrid.AllowSorting** property to true. It allows you to sort the data against one or more columns. When sorting is applied, the Grid automatically rearranges the data to match with the current sort criteria. When **SfDataGrid.AllowSorting** is true, you can sort the data simply by tapping the column header you wish to sort. Once sorting is applied, the Grid shows a sort icon in the respective column header indicating the direction of sorting.
+**SfDataGrid** allows you to apply sorting on its data by setting the **SfDataGrid.AllowSorting** property to true. It allows you to sort the data against one or more columns. When sorting is applied, the **SfDataGrid** automatically rearranges the data to match with the current sort criteria. When **SfDataGrid.AllowSorting** is true, you can sort the data simply by tapping the column header you wish to sort. Once sorting is applied, the **SfDataGrid** shows a sort icon in the respective column header indicating the direction of sorting.
 
 
 ## Programmatic Sorting
@@ -49,7 +49,7 @@ dataGrid.SortColumnDescriptions.Add (new SortColumnDescription () {
 
 ## Tri-State Sorting
 
-In addition to sort the data in ascending / descending orders, **SfDataGrid** also allows you to unsort the data in the original order by clicking the header again after sorting to descending order by setting the **SfDataGrid.AllowTriStateSorting** property to true. When this property is set Sorting in each column iterates through three sort states; ascending, descending, and unsorted.
+In addition to sort the data in ascending / descending orders, **SfDataGrid** also allows you to unsort the data in the original order by clicking the header again after sorting to descending order by setting the **SfDataGrid.AllowTriStateSorting** property to **true**. When this property is set Sorting in each column iterates through three sort states; ascending, descending, and unsorted.
 
 The following code example shows how to enable Tri-State sorting in **SfDataGrid**.
 
@@ -65,16 +65,16 @@ dataGrid.AllowTriStateSorting = true;
 
 ## Multi Sorting
 
-**SfDataGrid** allows you to sort the data against more than one columns by setting the **SfDataGrid.AllowMultiSort** property to true. The number of columns by which the data can be sorted is unlimited. To apply sorting for multiple columns, tap the desired column headers after setting the **SfDataGrid.AllowMultiSort** property.
+**SfDataGrid** allows you to sort the data against more than one columns by setting the **SfDataGrid.AllowMultiSorting** property to **true**. The number of columns by which the data can be sorted is unlimited. To apply sorting for multiple columns, tap the desired column headers after setting the **SfDataGrid.AllowMultiSorting** property.
 
 The following code example shows how to enable multi-sorting in **SfDataGrid**.
 
 {% tabs %}
 {% highlight c# %}
-dataGrid.AllowMultiSort = true;
+dataGrid.AllowMultiSorting = true;
 {% endhighlight %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid AllowMultiSort="True" />
+<syncfusion:SfDataGrid AllowMultiSorting="True" />
 {% endhighlight %}
 {% endtabs %}
 
@@ -96,14 +96,6 @@ The following code example illustrates how to hook the SortColumnsChanging event
 {% tabs %}
 {% highlight c# %}
 dataGrid.SortColumnsChanging += DataGrid_SortColumnsChanging; 
-
-void DataGrid_SortColumnsChanging (object sender, DataGridSortColumnsChangingEventArgs e)
-{
-    if(e.AddedItems[0].ColumnName == "OrderID")
-    {
-        e.Cancel = true;
-    }
-}
 {% endhighlight %}
 {% highlight xaml %}
 <syncfusion:SfDataGrid x:Name="dataGrid"
@@ -114,6 +106,16 @@ void DataGrid_SortColumnsChanging (object sender, DataGridSortColumnsChangin
 {% endhighlight %}
 {% endtabs %}
 
+{% highlight c# %}
+void DataGrid_SortColumnsChanging (object sender, DataGridSortColumnsChangingEventArgs e)
+{
+    if(e.AddedItems[0].ColumnName == "OrderID")
+    {
+        e.Cancel = true;
+    }
+}
+{% endhighlight %}
+
 
 ## Custom sorting
 
@@ -122,7 +124,7 @@ void DataGrid_SortColumnsChanging (object sender, DataGridSortColumnsChangin
 A SortComparer object has the following properties:
 
 * PropertyName: MappingName of the column that applies custom sorting.
-* Comparer: Gets or sets the custom comparer that implements the IComparer and ISortDirection interfaces.
+* Comparer: Gets or sets the custom comparer that implements the **IComparer** and **ISortDirection** interfaces.
 
 The following code example illustrates how to perform custom sorting for FirstName column based on the string length of the names.
 
@@ -174,7 +176,7 @@ dataGrid.SortColumnDescriptions.Add (new SortColumnDescription () {
 {% endhighlight %}
 {% endtabs %}
 
-The following code example illustrates the Custom Comparer.
+The following code example illustrates how to write a Custom Comparer.
 
 {% highlight c# %}
 public class CustomerInfo : IComparer<Object>, ISortDirection
@@ -218,4 +220,4 @@ public class CustomerInfo : IComparer<Object>, ISortDirection
 
 ## Disable sorting for an individual column
 
-**SfDataGrid** allows you to disable the sorting for individual columns by using the GridColumn.AllowSorting property. The default value of this property is true and hence all the columns in the **SfDataGrid.Columns** collection can be sorted when **SfDataGrid.AllowSorting** is set to true.
+**SfDataGrid** allows you to disable the sorting for individual columns by using the **GridColumn.AllowSorting** property. The default value of this property is true and hence all the columns in the **SfDataGrid.Columns** collection can be sorted when **SfDataGrid.AllowSorting** is set to true.

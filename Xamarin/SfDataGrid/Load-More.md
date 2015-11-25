@@ -8,14 +8,14 @@ documentation: UG
 ---
 # Load More
 
-**SfDataGrid** lets you to enable the LoadMore option by setting the **SfDataGrid.AllowLoadMore** property to true and by setting the **SfDataGrid.LoadMoreCommand** property. When the LoadMore is enabled, the **SfDataGrid** provides an option of loading a subset of data to its data source in the runtime using the LoadMore view. 
+**SfDataGrid** lets you to enable the LoadMore option by setting the **SfDataGrid.AllowLoadMore** property to **true** and by setting the **SfDataGrid.LoadMoreCommand** property. When the LoadMore is enabled, the **SfDataGrid** provides an option of loading a subset of data to its data source in the runtime using the LoadMore view. 
 
 On scrolling down, when the grid reaches the maximum offset an interactive load more view is displayed in view. On tapping the load more view it triggers a command to add more data to the data source of the grid in runtime.
 
 
 ## LoadMoreCommand
 
-**SfDataGrid** lets you load records to its data source in runtime by triggering an ICommand binded to the **SfDataGrid.LoadMoreCommand** property. When you tap the load more view, if the CanExecute of the ICommand returns true, then this command is triggered to load the records in runtime.
+**SfDataGrid** lets you load records to its data source in runtime by triggering an **ICommand** binded to the **SfDataGrid.LoadMoreCommand** property. When you tap the load more view, if the "CanExecute" of the **ICommand** returns true, then this command is triggered to load the records in runtime.
  
 You need to set the **SfDataGrid.IsBusy** property to true before loading the items to notify the grid that more items are loaded to it and set the property to false after loading the items to the grid. When loading the items, you can also alter the time for the LoadMore animation from the sample by setting a delay based on your requirement.
 

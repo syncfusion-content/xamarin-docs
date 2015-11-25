@@ -1,19 +1,19 @@
 ---
 layout: post
 title: Column Types - Forms | SfDataGrid | Xamarin | Syncfusion
-description: Column Types - Forms
+description: Column Types in Xamarin.Forms
 platform: xamarin
 control: SfDataGrid
 documentation: UG
 ---
 
-# Column Types in Forms 
+# Column Types in Xamarin.Forms 
 
-This section explains you the different types of Column and the customizations that can done for a column.
+This section explains you the different types of column and the customizations that can done for a column.
 
-**SfDataGrid** contains different types of columns each with its own functionalities as implied by its name. You can use any column based on your requirements. 
+**SfDataGrid** contains different types of column each with its own functionalities as implied by its name. You can use any column based on your requirements. 
 
-The below table describes you the types of columns and its purpose of usage in **SfDataGrid**.
+The below table describes you the types of column and its purpose of usage in **SfDataGrid**.
 
 <table>
 <tr>
@@ -22,7 +22,7 @@ The below table describes you the types of columns and its purpose of usage in *
 </tr>
 <tr>
 <td>GridColumn</td>
-<td>Abstract class. Base column type of all the columns in the **SfDataGrid**.</td>
+<td>Abstract class. Base column type of all the columns in the {{ '**SfDataGrid**' | markdownify }}.</td>
 </tr>
 <tr>
 <td>GridTextColumn</td>
@@ -45,17 +45,17 @@ The below table describes you the types of columns and its purpose of usage in *
 
 ## GridColumn
 
-GridColumn is the base column type of all the columns in the **SfDataGrid**, hence GridColumn properties are used by all the columns. The following sub-sections explains you about the properties in the GridColumn and the customizations that can be done using those properties for all the types of GridColums available in **SfDataGrid**.
+**GridColumn** is the base column type of all the columns in the **SfDataGrid**, hence **GridColumn** properties are used by all the columns. The following sub-sections explains you about the properties in the **GridColumn** and the customizations that can be done using those properties for all the types of GridColums available in **SfDataGrid**.
 
 ### Binding options
 
-The display content of GridColumn is determined from GridColumn.DisplayBinding property. It gets and sets the binding that associates the GridColumn with a property in the data source. 
+The display content of **GridColumn** is determined from **GridColumn.DisplayBinding** property. It gets and sets the binding that associates the **GridColumn** with a property in the data source. 
 
 #### MappingName
 
-GridColumn.MappingName associates the GridColumn with a property available in the underlying data source. While setting MappingName alone to the **SfDataGrid** the DisplayBinding will be automatically generated based on the MappingName. Data Manipulation operations like sorting, filtering, grouping will be done based on the MappingName property.
+**GridColumn.MappingName** associates the **GridColumn** with a property available in the underlying data source. While setting MappingName alone to the **SfDataGrid** the **GridColumn.DisplayBinding** will be automatically generated based on the MappingName. Data Manipulation operations like sorting, filtering, grouping will be done based on the MappingName property.
 
-If you want to format the cell content, you can use the Converter of the GridColumn.DisplayBinding to customize the cell content. The following code example appends the text “Customer” along with the Customer ID.
+If you want to format the cell content, you can use the Converter of the **GridColumn.DisplayBinding** to customize the cell content. The following code example appends the text “Customer” along with the Customer ID.
 
 {% highlight xaml %}
 <ContentPage.Resources>
@@ -96,27 +96,27 @@ public class DisplayBindingConverter : IValueConverter
 
 #### HeaderCellTextSize
 
-The FontSize for the content of header cell in the GridColumn can be customized by using the GridColumn.HeaderCellTextSize property. The default font size of the header cells in **SfDataGrid** is 14.
+The FontSize for the content of header cell in the **GridColumn** can be customized by using the **GridColumn.HeaderCellTextSize** property. The default font size of the header cells in **SfDataGrid** is 14.
 
 #### HeaderFont
 
-The FontFamily for the content of header cell in the GridColumn can be customized by using the GridColumn.HeaderFont property. The default value font used in **SfDataGrid** is “HelveticaNeue LT 55 Roman”.
+The FontFamily for the content of header cell in the **GridColumn** can be customized by using the **GridColumn.HeaderFont** property. The default value font used in **SfDataGrid** is “HelveticaNeue LT 55 Roman”.
 
 #### HeaderFontAttribute
 
-The FontAttribute for the content of the header cell in the GridColumn can be customized by using the GridColumn.HeaderFontAttribute property. The default value of this property is “None” and you can customize this to “Bold” or “Italic”.
+The FontAttribute for the content of the header cell in the **GridColumn** can be customized by using the **GridColumn.HeaderFontAttribute** property. The default value of this property is “None” and you can customize this to “Bold” or “Italic”.
 
 #### HeaderText
 
-**SfDataGrid** allows you to customize the display content of the header cell using the GridColumn.HeaderText property. It specifies the text displayed in the column header. If HeaderText is not defined, then GridColumn.MappingName will be assigned to the HeaderText and will be displayed as column header.
+**SfDataGrid** allows you to customize the display content of the header cell using the **GridColumn.HeaderText** property. It specifies the text displayed in the column header. If HeaderText is not defined, then **GridColumn.MappingName** will be assigned to the HeaderText and will be displayed as column header.
 
 #### HeaderTextAlignment
 
-You can get or set the TextAlignment of the header cell in the GridColumn by using the GridColumn.HeaderTextAlignment property. The default alignment for the header cells in **SfDataGrid** is “Center” and you can customize this to “Start” or “End”.
+You can get or set the TextAlignment of the header cell in the **GridColumn** by using the **GridColumn.HeaderTextAlignment** property. The default alignment for the header cells in **SfDataGrid** is “Center” and you can customize this to “Start” or “End”.
 
 #### HeaderTemplate
 
-**SfDataGrid** allows you to customize the header cell based on your requirement by using the GridColumn.HeaderTemplate property. The following code example shows you how to customize the header cell by loading a template in the header cell.
+**SfDataGrid** allows you to customize the header cell based on your requirement by using the **GridColumn.HeaderTemplate** property. The following code example shows you how to customize the header cell by loading a template in the header cell.
 
 {% highlight xaml %}
 <syncfusion:SfDataGrid.Columns>
@@ -133,14 +133,14 @@ You can get or set the TextAlignment of the header cell in the GridColumn by usi
 
 ### Column Width
 
-**SfDataGrid** allows you to customize the width of each GridColumn in the **SfDataGrid.Columns** collection. You can customize the column width by using the GridColumn.Width property. By default this property will not be assigned any value and the GridColumn renders in view based on the value of DefaultColumnWidth property in **SfDataGrid**.
+**SfDataGrid** allows you to customize the width of each **GridColumn** in the **SfDataGrid.Columns** collection. You can customize the column width by using the **GridColumn.Width** property. By default this property will not be assigned any value and the **GridColumn** renders in view based on the value of **DefaultColumnWidth** property in **SfDataGrid**.
 
 
 ## GridTextColumn
 
-GridTextColumn is derived from GridColumn and hence it inherits all the properties of GridColumn. It is used to host the textual content in the record cells. Each of the record cells in GridTextColumn displays the text based on the Mapping Name that associates the column with a property in the data source.
+**GridTextColumn** is derived from **GridColumn** and hence it inherits all the properties of **GridColumn**. It is used to host the textual content in the record cells. Each of the record cells in **GridTextColumn** displays the text based on the MappingName that associates the column with a property in the data source.
 
-The following code example creates GridTextColumn.
+The following code example creates **GridTextColumn**.
 
 {% tabs %}
 {% highlight c# %}
@@ -151,13 +151,13 @@ dataGrid.Columns.Add(new GridTextColumn() { MappingName = "OrderID" });
 {% endhighlight %}
 {% endtabs %}
 
-The below topics explain you about the customizations that can be done in the GridTextColumn in **SfDataGrid**.
+The below topics explain you about the customizations that can be done in the **GridTextColumn** in **SfDataGrid**.
 
 ### Formatting
 
-**SfDataGrid** allows you to format the value displayed in the GridColumn by using the GridColumn.Format property. Assign the FormatString to this property based on the type of the property the column is associated with to format the value. You can use different [StringFormats](http://msdn.microsoft.com/en-us/library/fbxft59x(v=vs.90).aspx) to customize the value displayed in the record cells.
+**SfDataGrid** allows you to format the value displayed in the **GridColumn** by using the **GridColumn.Format** property. Assign the FormatString to this property based on the type of the property the **GridColumn** is associated with to format the value. You can use different [StringFormats](http://msdn.microsoft.com/en-us/library/fbxft59x(v=vs.90).aspx) to customize the value displayed in the record cells.
 
-The following code example shows you how to apply formatting for a GridTextColumn.
+The following code example shows you how to apply formatting for a **GridTextColumn**.
 
 {% tabs %}
 {% highlight c# %}
@@ -183,9 +183,9 @@ N> For AutoGenerated columns the Formatting can be applied by handling the **SfD
 
 #### Formatting GridTextColumn with different Culture
 
-**SfDataGrid** allows you to apply different [CultureInfo](https://developer.xamarin.com/api/type/System.Globalization.CultureInfo/) for the GridColumns by using the GridColumn.CultureInfo property. Assign the FormatString to this property based on the type of the property the column is associated with to format the value. You can use different [StringFormats](http://msdn.microsoft.com/en-us/library/fbxft59x(v=vs.90).aspx) to customize the value displayed in the record cells.
+**SfDataGrid** allows you to apply different [CultureInfo](https://developer.xamarin.com/api/type/System.Globalization.CultureInfo/) for the GridColumns by using the **GridColumn.CultureInfo** property. Assign the FormatString to this property based on the type of the property the column is associated with to format the value. You can use different [StringFormats](http://msdn.microsoft.com/en-us/library/fbxft59x(v=vs.90).aspx) to customize the value displayed in the record cells.
 
-The following code example shows you how to apply different cultures for a GridColumns.
+The following code example shows you how to apply different cultures for the GridColumns.
 
 {% highlight c# %}
 dataGrid.Columns.Add (new GridTextColumn () { 
@@ -220,26 +220,26 @@ void GridAutoGeneratingColumns(object sender, AutoGeneratingColumnArgs e)
 
 #### CellTextSize
 
-The FontSize for the content of record cells in GridColumn can be customized by using the GridColumn.CellTextSize property. The default font size of the record cells in **SfDataGrid** is 14.
+The FontSize for the content of record cells in **GridColumn** can be customized by using the **GridColumn.CellTextSize** property. The default font size of the record cells in **SfDataGrid** is 14.
 
 #### RecordFont
 
-The FontFamily for the content of header cell in the GridColumn can be customized by using the GridColumn.RecordFont property. The default value font used in **SfDataGrid** is “Helvetica Neue”.
+The FontFamily for the content of header cell in the **GridColumn** can be customized by using the **GridColumn.RecordFont** property. The default value font used in **SfDataGrid** is “Helvetica Neue”.
 
 #### TextAlignment
 
-You can get or set the TextAlignment of the header cell in the GridColumn by using the GridColumn.TextAlignment property. The default alignment for the record cells in **SfDataGrid** is “Center” and you can customize this to “Start” or “End”.
+You can get or set the TextAlignment of the header cell in the **GridColumn** by using the **GridColumn.TextAlignment** property. The default alignment for the record cells in **SfDataGrid** is “Center” and you can customize this to “Start” or “End”.
 
 #### TextWrapping
 
-When the text for the record cells exceeds the content area, you can use the GridColumn.TextWrapping property to wrap the cell content.
+When the text for the record cells exceeds the content area, you can use the **GridColumn.TextWrapping** property to wrap the cell content.
 
 
 ## GridSwitchColumn
 
-GridSwitchColumn is derived from GridColumn, and hence it inherits all the properties of GridColumn. It loads a switch as a content of record cells in the column and responds to value changes in it. You can change the underlying data source that toggles the values shown in the switch. The **SfDataGrid** automatically generates GridSwitchColumn if the property in the underlying collection of type bool.
+**GridSwitchColumn** is derived from **GridColumn**, and hence it inherits all the properties of **GridColumn**. It loads a switch as a content of record cells in the column and responds to value changes in it. You can change the underlying data source that toggles the values shown in the switch. The **SfDataGrid** automatically generates GridSwitchColumn if the property in the underlying collection of type bool.
 
-The following code example shows how to use GridSwitchColumn.
+The following code example shows how to use **GridSwitchColumn**.
  
 {% tabs %}
 {% highlight c# %}
@@ -253,9 +253,9 @@ dataGrid.Columns.Add(new GridSwitchColumn() { MappingName = "IsClosed" });
 
 ## GridImageColumn
 
-GridImageColumn is derived from GridColumn, and hence it inherits all the properties of GridColumn. It displays images which as content of record cells in the column. The images loaded inside this column should be added as EmbeddedResource. To create GridImageColumn in **SfDataGrid** the property corresponding to the column in the underlying collection must be of type ImageSource.
+**GridImageColumn** is derived from **GridColumn**, and hence it inherits all the properties of **GridColumn**. It displays images which as content of record cells in the column. The images loaded inside this column should be added as EmbeddedResource. To create GridImageColumn in **SfDataGrid** the property corresponding to the column in the underlying collection must be of type ImageSource.
 
-The following code example shows how to use GridImageColumn.
+The following code example shows how to use **GridImageColumn**.
  
 {% tabs %}
 {% highlight c# %}
@@ -269,9 +269,9 @@ dataGrid.Columns.Add(new GridImageColumn() { MappingName = "DealerImage" }
 
 ## GridTemplateColumn
 
-GridTemplateColumn is derived from GridColumn, and hence it inherits all the properties of GridColumn. It allows you to extend the functionality of GridColumns with your own view by creating the CellTemplate of GridTemplateColumn.
+**GridTemplateColumn** is derived from **GridColumn**, and hence it inherits all the properties of **GridColumn**. It allows you to extend the functionality of **GridColumn** with your own view by creating the CellTemplate of GridTemplateColumn.
 
-The below table provides the list of properties in GridTemplateColumn.
+The below table provides the list of properties in **GridTemplateColumn**.
 
 <table>
 <tr>
@@ -288,7 +288,7 @@ The below table provides the list of properties in GridTemplateColumn.
 </tr>
 </table>
 
-The following code example shows templating of GridTemplateColumn. Underlying record will be the BindingContext for the CellTemplate.
+The following code example shows templating of **GridTemplateColumn**. Underlying record will be the BindingContext for the CellTemplate.
 
 {% highlight xaml %}
 <syncfusion:GridTemplateColumn MappingName="CustomerID">
@@ -301,7 +301,7 @@ The following code example shows templating of GridTemplateColumn. Underlying re
 </syncfusion:GridTemplateColumn> 
 {% endhighlight %}
 
-The **SfDataGrid** allows you to extend the functionality of GridColumns with your own view by using the CellTemplate of the GridTemplateColumn. The following code example illustrates how template column can be used to load a stock cell inside it.
+The following code example illustrates how template column can be used to load a stock cell inside it.
 
 {% highlight xaml %}
 <ContentPage.Resources>

@@ -38,4 +38,4 @@ When the **SfDataGrid.ColumnSizer** is “LastColumnFill”, the column width of
 
 When the **SfDataGrid.ColumnSizer** is “Star”, all the GridColumns are adjusted an equal column width to fit within the view. Setting ColumnSizer to “Star” will disable the HorizontalScrolling in **SfDataGrid**.
 
-N> If any column is specified a width explicitly using the GridColumn.Width property then that column is not considered ColumnSizing width and skipped while applying the ColumnSizer for grid columns.
+N> If any column is specified a width explicitly using the **GridColumn.Width** property then that column is not considered ColumnSizing width and skipped while applying the ColumnSizer for grid columns.

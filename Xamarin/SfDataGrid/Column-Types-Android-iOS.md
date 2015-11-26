@@ -22,7 +22,7 @@ The below table describes you the types of column and its purpose of usage in **
 </tr>
 <tr>
 <td>GridColumn</td>
-<td>Abstract class. Base column type of all the columns in the **SfDataGrid**.</td>
+<td>Abstract class. Base column type of all the columns in the {{ '**SfDataGrid**' | markdownify }}.</td>
 </tr>
 <tr>
 <td>GridTextColumn</td>

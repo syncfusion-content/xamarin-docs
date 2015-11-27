@@ -147,7 +147,7 @@ In this walk through, you will create a new application that contains the **SfDa
 
 * [Creating the project](#creating-the-project) 
 * [Adding SfDataGrid in Xamarin.Forms](#adding-sfdatagrid-in-xamarinforms) 
-* [Adding SfDataGrid in Xamarin.Android](#adding-afdatagrid-in-xamarinandroid) 
+* [Adding SfDataGrid in Xamarin.Android](#adding-sfdatagrid-in-xamarinandroid) 
 * [Adding SfDataGrid in Xamarin.iOS](#adding-sfdatagrid-in-xamarinios)
 * [Create data model](#create-datamodel-for-the-sfdatagrid)  
 * [Binding data](#binding-data-to-sfdatagrid) 

@@ -156,7 +156,7 @@ In this walk through, you will create a new application that contains the **SfDa
 * [Grouping](#grouping) 
 * [Selection](#selection)
 
-### Creating the project
+## Creating the project
 
 Create a new BlankApp (Xamarin.Forms.Portable) application in Xamarin Studio or Visual Studio for **Xamarin.Forms**.
 
@@ -164,7 +164,7 @@ Create a new Android application in Xamarin Studio or Visual Studio for **Xama
 
 Create a new iOS application in Xamarin Studio or Visual Studio for **Xamarin.iOS**.
 
-### Adding SfDataGrid in Xamarin.Forms 
+## Adding SfDataGrid in Xamarin.Forms 
 
 1. Add the required assembly references to the pcl and renderer projects as discussed in the [Assembly deployment](#assembly-deployment) section.
 
@@ -206,7 +206,7 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-### Adding SfDataGrid in Xamarin.Android
+## Adding SfDataGrid in Xamarin.Android
 
 1. Add the required assembly references to the project as discussed in the [Assembly deployment](#assembly-deployment) section.
 
@@ -232,7 +232,7 @@ public class MainActivity : Activity
 }
 {% endhighlight %}
 
-### Adding SfDataGrid in Xamarin.iOS
+## Adding SfDataGrid in Xamarin.iOS
 
 1. Add the required assembly references to the project as discussed in the [Assembly deployment](#assembly-deployment) section.
 
@@ -268,7 +268,7 @@ public partial class GettingStartedViewController : UIViewController
 }
 {% endhighlight %}
 
-### Create DataModel for the SfDataGrid
+## Create DataModel for the SfDataGrid
 
 **SfDataGrid** is a data-bound control. Hence you must create a data model to bind it to the control. 
 
@@ -358,7 +358,7 @@ public class OrderInfoRepository
 }
 {% endhighlight %}
 
-### Binding data to SfDataGrid
+## Binding data to SfDataGrid
 
 In order to bind the data source of the **SfDataGrid**, set the **SfDataGrid.ItemsSource** property as shown below. You can bind the data source of the **SfDataGrid** either from XAML or in code. 
 
@@ -394,7 +394,7 @@ Now run the application to render the following output.
 
 ![](SfDataGrid_images/SfDataGrid-Xamarin_img3.png)
 
-### Defining Columns
+## Defining Columns
 
 By default, the **SfDataGrid** automatically creates columns for all the properties in the data source. The type of the column generated depends on the type of data in the column. When the columns are auto-generated, you can handle the AutoGeneratingColumn event to customize or cancel the columns before they are added to the Columns collection in **SfDataGrid**.
  
@@ -444,7 +444,7 @@ dataGrid.Columns.Add (countryColumn);
 {% endhighlight %}
 {% endtabs %}
 
-### Sorting
+## Sorting
 
 **SfDataGrid** allows you to apply sorting on its data by setting the **SfDataGrid.AllowSorting** property to true.
  
@@ -474,7 +474,7 @@ dataGrid.SortColumnDescriptions.Add (new SortColumnDescription () { ColumnNa
 {% endhighlight %}
 {% endtabs %}
 
-### Grouping
+## Grouping
 
 **SfDataGrid** allows you to group a column by adding the column to the **SfDataGrid.GroupColumnDescriptions** collection as shown below.
 
@@ -493,7 +493,7 @@ Run the application to render the following output.
 
 ![](SfDataGrid_images/SfDataGrid-Xamarin_img5.png)
 
-### Selection
+## Selection
 
 **SfDataGrid** allows you to select the row/rows by setting the **SfDataGrid.SelectionMode** property. You can set the **SfDataGrid.SelectionMode** property to single, multiple, single deselect or none based on your requirements. Information about the row/rows selected can be tracked using **SfDataGrid.SelectedItem** and **SfDataGrid.SelectedItems** properties.
 

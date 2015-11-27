@@ -145,16 +145,16 @@ You can download the entire source code of this demo for **Xamarin.iOS** from [
 
 In this walk through, you will create a new application that contains the **SfDataGrid** which includes the below topics.
 
-* [Creating the project](#Creating-the-project) 
-* [Adding SfDataGrid in Xamarin.Forms](#Adding-SfDataGrid-in-Xamarin.Forms) 
-* [Adding SfDataGrid in Xamarin.Android](#Adding-SfDataGrid-in-Xamarin.Android) 
-* [Adding SfDataGrid in Xamarin.iOS](#Adding-SfDataGrid-in-Xamarin.iOS)
-* [Create data model](#Create-DataModel-for-the-SfDataGrid)  
-* [Binding data](#Binding-data-to-SfDataGrid) 
-* [Defining columns](#Defining-Columns) 
-* [Sorting](#Sorting) 
-* [Grouping](#Grouping) 
-* [Selection](#Selection) 
+* [Creating the project](#creating-the-project) 
+* [Adding SfDataGrid in Xamarin.Forms](#adding-sfdatagrid-in-xamarinforms) 
+* [Adding SfDataGrid in Xamarin.Android](#adding-afdatagrid-in-xamarinandroid) 
+* [Adding SfDataGrid in Xamarin.iOS](#adding-sfdatagrid-in-xamarinios)
+* [Create data model](#create-datamodel-for-the-sfdatagrid)  
+* [Binding data](#binding-data-to-sfdatagrid) 
+* [Defining columns](#defining-columns) 
+* [Sorting](#sorting) 
+* [Grouping](#grouping) 
+* [Selection](#selection)
 
 ### Creating the project
 
@@ -166,7 +166,7 @@ Create a new iOS application in Xamarin Studio or Visual Studio for **Xamarin.
 
 ### Adding SfDataGrid in Xamarin.Forms 
 
-1. Add the required assembly references to the pcl and renderer projects as discussed in the [Assembly deployment](#Assembly-deployment) section.
+1. Add the required assembly references to the pcl and renderer projects as discussed in the [Assembly deployment](#assembly-deployment) section.
 
 2. Import **SfDataGrid** control namespace Syncfusion.SfDataGrid.XForms.
 
@@ -208,7 +208,7 @@ namespace GettingStarted
 
 ### Adding SfDataGrid in Xamarin.Android
 
-1. Add the required assembly references to the project as discussed in the [Assembly deployment](#Assembly-deployment) section.
+1. Add the required assembly references to the project as discussed in the [Assembly deployment](#assembly-deployment) section.
 
 2. Import **SfDataGrid** control namespace Syncfusion.SfDataGrid.
 
@@ -234,7 +234,7 @@ public class MainActivity : Activity
 
 ### Adding SfDataGrid in Xamarin.iOS
 
-1. Add the required assembly references to the project as discussed in the [Assembly deployment](#Assembly-deployment) section.
+1. Add the required assembly references to the project as discussed in the [Assembly deployment](#assembly-deployment) section.
 
 2. Import **SfDataGrid** control namespace Syncfusion.SfDataGrid.
 

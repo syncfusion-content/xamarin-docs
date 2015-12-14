@@ -23,25 +23,23 @@ The shapeSettings defines the basic customization settings of shapes in the map.
 {% tabs %}
 {% highlight Xamarin.Android %}
 
-	        ShapeSetting setting = new ShapeSetting ();
-            setting.ShapeFill = Color.ParseColor("#9CBF4E");
-            setting.SelectedShapeColor = Color.ParseColor("#BC5353");
-            setting.ShapeStroke = Color.White;
-            setting.ShapeStrokeThickess = 1;
-            layer.ShapeSettings = setting;
-
+        ShapeSetting setting = new ShapeSetting ();
+        setting.ShapeFill = Color.ParseColor("#9CBF4E");
+        setting.SelectedShapeColor = Color.ParseColor("#BC5353");
+        setting.ShapeStroke = Color.White;
+        setting.ShapeStrokeThickess = 1;
+        layer.ShapeSettings = setting;
 
 {% endhighlight %}
 
 {% highlight Xamarin.iOS %}
 
-	        SFShapeSetting setting = new SFShapeSetting ();
-            setting.Fill = UIColor.FromRGB (0x9C, 0xBF, 0x4E);
-            setting.SelectedShapeColor = UIColor.FromRGB (0xBC, 0x53, 0x53);
-            setting.StrokeColor = UIColor.White;
-            setting.StrokeThickness = 0.5f;
-            layer.ShapeSettings = setting;
-
+        SFShapeSetting setting = new SFShapeSetting ();
+        setting.Fill = UIColor.FromRGB (0x9C, 0xBF, 0x4E);
+        setting.SelectedShapeColor = UIColor.FromRGB (0xBC, 0x53, 0x53);
+        setting.StrokeColor = UIColor.White;
+        setting.StrokeThickness = 0.5f;
+        layer.ShapeSettings = setting;
 
 {% endhighlight %}
 {% endtabs %}
@@ -154,14 +152,14 @@ When autoFill property is set to true, shapes are filled with default colors f
 
 {% tabs %}
 {% highlight Xamarin.Android %}
-
-	layer.ShapeSettings.AutoFillColors = true;
+        
+        layer.ShapeSettings.AutoFillColors = true;
 
 {% endhighlight %}
 
 {% highlight Xamarin.iOS %}
 
-	layer.ShapeSettings.AutoFillColors = true;
+        layer.ShapeSettings.AutoFillColors = true;
 
 {% endhighlight %}
 {% endtabs %}

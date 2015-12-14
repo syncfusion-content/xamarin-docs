@@ -22,21 +22,19 @@ You can select the shape by tapping the shape. The Selection is enabled by the `
 {% tabs %}
 {% highlight Xamarin.Android %}
 
-	        layer.EnableSelection = true;
-            ShapeSetting setting = new ShapeSetting ();
-            setting.SelectedShapeColor = Color.ParseColor("#BC5353");
-            layer.ShapeSettings = setting;
-
+        layer.EnableSelection = true;
+        ShapeSetting setting = new ShapeSetting ();
+        setting.SelectedShapeColor = Color.ParseColor("#BC5353");
+        layer.ShapeSettings = setting;
 
 {% endhighlight %}
 
 {% highlight Xamarin.iOS %}
 
-	        layer.EnableSelection = true;
-            SFShapeSetting setting = new SFShapeSetting ();
-            setting.SelectedShapeColor = UIColor.FromRGB (0xBC, 0x53, 0x53);
-            layer.ShapeSettings = setting;
-
+        layer.EnableSelection = true;
+        SFShapeSetting setting = new SFShapeSetting ();
+        setting.SelectedShapeColor = UIColor.FromRGB (0xBC, 0x53, 0x53);
+        layer.ShapeSettings = setting;
 
 {% endhighlight %}
 {% endtabs %}
@@ -84,21 +82,20 @@ The panning feature enables the Map navigation. The `EnablePan` property is used
 {% tabs %}
 {% highlight Xamarin.Android %}
 
-	    maps.MinZoom = 1;
-            maps.MaxZoom = 10;
-            maps.ZoomLevel = 2;
-            maps.EnbaleZoom = true;
+        maps.MinZoom = 1;
+        maps.MaxZoom = 10;
+        maps.ZoomLevel = 2;
+        maps.EnbaleZoom = true;
 
 
 {% endhighlight %}
 
 {% highlight Xamarin.iOS %}
 
-	    maps.MinZoom = 1;
-            maps.MaxZoom = 10;
-            maps.ZoomLevel = 2;
-            maps.EnbaleZoom = true;
-
+        maps.MinZoom = 1;
+        maps.MaxZoom = 10;
+        maps.ZoomLevel = 2;
+        maps.EnbaleZoom = true;
 
 {% endhighlight %}
 {% endtabs %}

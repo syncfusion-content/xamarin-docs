@@ -31,23 +31,21 @@ Without datasource, n number of markers can be added to shape layers with marker
 {% tabs %}
 {% highlight Xamarin.Android %}
 
-	        MapMarker marker = new MapMarker ();
-            marker.Label = "California";
-            marker.Latitude = 37;
-            marker.Longitude = -120;
-            layer.Markers.Add (marker);
-
+        MapMarker marker = new MapMarker ();
+        marker.Label = "California";
+        marker.Latitude = 37;
+        marker.Longitude = -120;
+        layer.Markers.Add (marker);
 
 {% endhighlight %}
 
 {% highlight Xamarin.iOS %}
 
-	        SFMapMarker marker = new SFMapMarker ();
-            marker.Latitude = 37;
-            marker.Longitude = -120;
-            marker.Label = @"California";
-            layer.Markers.Add (marker);
-
+        SFMapMarker marker = new SFMapMarker ();
+        marker.Latitude = 37;
+        marker.Longitude = -120;
+        marker.Label = @"California";
+        layer.Markers.Add (marker);
 
 {% endhighlight %}
 {% endtabs %}
@@ -61,73 +59,73 @@ By default, it displays the label data at the specified latitude and longitude. 
 {% tabs %}
 {% highlight Xamarin.Android %}
 
-    public class CustomMarker : MapMarker
-    {
-        public CustomMarker (Android.Content.Context con)
+        public class CustomMarker : MapMarker
         {
-            context = con;
+            public CustomMarker (Android.Content.Context con)
+            {
+                context = con;
+            }
+
+            Android.Content.Context context;
+            public override void DrawMarker (PointF p0, Canvas p1)
+            {
+                Bitmap bitmap = BitmapFactory.DecodeResource (context.Resources, Resource.Drawable.pin);
+                p1.DrawBitmap(bitmap,(float)p0.X-12,(float)p0.Y-35,new Paint());
+            }
+
         }
 
-        Android.Content.Context context;
-        public override void DrawMarker (PointF p0, Canvas p1)
-        {
-            Bitmap bitmap = BitmapFactory.DecodeResource (context.Resources, Resource.Drawable.pin);
-            p1.DrawBitmap(bitmap,(float)p0.X-12,(float)p0.Y-35,new Paint());
-        }
+        //..
 
-    }
+        CustomMarker california = new CustomMarker ();
+        california.Latitude = 37;
+        california.Longitude = -120;
+        layer.Markers.Add(california);
 
-    //..
+        CustomMarker  newYork=new CustomMarker ();
+        newYork.Latitude = 40.7127;
+        newYork.Longitude = -74.0059;
+        layer.Markers.Add(newYork);
 
-            CustomMarker california = new CustomMarker ();
-            california.Latitude = 37;
-            california.Longitude = -120;
-            layer.Markers.Add(california);
+        CustomMarker iowa=new CustomMarker ();
+        iowa.Latitude= 42;
+        iowa.Longitude= -93;
+        layer.Markers.Add(iowa);
 
-            CustomMarker  newYork=new CustomMarker ();
-            newYork.Latitude = 40.7127;
-            newYork.Longitude = -74.0059;
-            layer.Markers.Add(newYork);
-
-            CustomMarker iowa=new CustomMarker ();
-            iowa.Latitude= 42;
-            iowa.Longitude= -93;
-            layer.Markers.Add(iowa);
-
-     //..
+        //..
 {% endhighlight %}
 
 {% highlight Xamarin.iOS %}
 
-    public class CustomMarker : SFMapMarker
-    {
-        public override UIView GetView (CGPoint point)
+        public class CustomMarker : SFMapMarker
         {
-            UIImageView  image= new UIImageView (new CGRect (point.X - 8, point.Y - 25, 15, 23));
-            image.Image = new UIImage ("pin.png");
-            return image;
+            public override UIView GetView (CGPoint point)
+            {
+                UIImageView  image= new UIImageView (new CGRect (point.X - 8, point.Y - 25, 15, 23));
+                image.Image = new UIImage ("pin.png");
+                return image;
+            }
+
         }
 
-    }
+        //..
 
-            //..
+        CustomMarker california = new CustomMarker ();
+        california.Latitude = 37;
+        california.Longitude = -120;
+        layer.Markers.Add(california);
 
-            CustomMarker california = new CustomMarker ();
-            california.Latitude = 37;
-            california.Longitude = -120;
-            layer.Markers.Add(california);
-
-            CustomMarker  newYork=new CustomMarker ();
-            newYork.Latitude = 40.7127;
-            newYork.Longitude = -74.0059;
-            layer.Markers.Add(newYork);
+        CustomMarker  newYork=new CustomMarker ();
+        newYork.Latitude = 40.7127;
+        newYork.Longitude = -74.0059;
+        layer.Markers.Add(newYork);
 			
-            CustomMarker iowa=new CustomMarker ();
-            iowa.Latitude= 42;
-            iowa.Longitude= -93;
-            layer.Markers.Add(iowa);
+        CustomMarker iowa=new CustomMarker ();
+        iowa.Latitude= 42;
+        iowa.Longitude= -93;
+        layer.Markers.Add(iowa);
 
-            //..
+        //..
 			
 {% endhighlight %}
 {% endtabs %}
@@ -182,8 +180,8 @@ To add bubbles to a map, the bubble marker setting is added to the shape file la
 {% tabs %}
 {% highlight Xamarin.Android %}
 
-	{
-    //..
+        {
+            //..
             layer.ShapeIdTableField ="STATE_NAME";
             layer.ShapeIdPath ="State";
             layer.DataSource = GetDataSource ();
@@ -193,9 +191,9 @@ To add bubbles to a map, the bubble marker setting is added to the shape file la
             markerSetting.MinSize =10;
             markerSetting.MaxSize =25;
             markerSetting.ValuePath="Population";
-    //..
-    }
-    JSONArray GetDataSource()
+            //..
+        }
+        JSONArray GetDataSource()
         {
             JSONArray array = new JSONArray ();
             array.Put(getJsonObject("California",38332521,"CA"));
@@ -218,18 +216,18 @@ To add bubbles to a map, the bubble marker setting is added to the shape file la
 
 {% highlight Xamarin.iOS %}
 
-	{
-    //..
+        {
+            //..
             layer.DataSource = GetDataSource ();
             SFBubbleMarkerSetting markerSetting = new SFBubbleMarkerSetting();
             markerSetting.ShowBubbles = true;
             markerSetting.MinSize =10;
             markerSetting.MaxSize =25;
             markerSetting.ValuePath=(NSString)"Population";
-    //..
-    }
+            //..
+        }
 
-      NSMutableArray GetDataSource()
+        NSMutableArray GetDataSource()
         {
             NSMutableArray array = new NSMutableArray ();
             array.Add (getDictionary ("CA", 38332521, 24));
@@ -279,25 +277,25 @@ Refer Equal color mapping code for legend support
 {% tabs %}
 {% highlight Xamarin.Android %}
 
-	        LegendSetting legendSetting = new LegendSetting ();
-            legendSetting.ShowLegend = true;
-            legendSetting.IconHeight = 20;
-            legendSetting.IconWidth = 20;
-            legendSetting.LegendPosition = new Point (100, 400);
+        LegendSetting legendSetting = new LegendSetting ();
+        legendSetting.ShowLegend = true;
+        legendSetting.IconHeight = 20;
+        legendSetting.IconWidth = 20;
+        legendSetting.LegendPosition = new Point (100, 400);
 
-            layer.LegendSetting = legendSetting;
+        layer.LegendSetting = legendSetting;
 
 
 {% endhighlight %}
 
 {% highlight Xamarin.iOS %}
 
-	        SFMapLegendSettings legendSetting = new SFMapLegendSettings ();
-            legendSetting.ShowLegend = true;
-            legendSetting.IconSize = new CoreGraphics.CGSize(20,20);
-            legendSetting.Position = new CoreGraphics.CGPoint (100, 400);
+        SFMapLegendSettings legendSetting = new SFMapLegendSettings ();
+        legendSetting.ShowLegend = true;
+        legendSetting.IconSize = new CoreGraphics.CGSize(20,20);
+        legendSetting.Position = new CoreGraphics.CGPoint (100, 400);
 
-            layer.LegendSettings = legendSetting;
+        layer.LegendSettings = legendSetting;
 
 
 {% endhighlight %}

@@ -56,10 +56,8 @@ A shape file can be a set of files or a single file. Generally, the shape file c
 These files need to be added in Asset folder.
 
 {% highlight c# %}
-
-
 	
-	    protected override void OnCreate (Bundle savedInstanceState)
+        protected override void OnCreate (Bundle savedInstanceState)
         {
             base.OnCreate (savedInstanceState);
 
@@ -121,8 +119,6 @@ A shape file can be a set of files or a single file. Generally, the shape file c
 •dBASE file (.dbf)
 
 {% highlight c# %}
-
-
 	
 	    public override void ViewDidLoad ()
         {

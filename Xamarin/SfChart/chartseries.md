@@ -129,3 +129,63 @@ chart.Series.Add(pieSeries);
 {% endhighlight %}
 
 ![C:/Users/yuvaraj.palanisamy/Documents/My Received Files/limitation.png](chartseries_images/chartseries_img3.png)
+
+## Grouping Stacked Series
+
+You can use the `GroupingLabel` property to group the stacked series. Series with same group name are stacked on top of each other.
+
+{% highlight xml %}
+[XAML]
+
+<chart:SfChart>
+...
+
+	<chart:StackingColumnSeries ItemsSource ="{Binding Data1}" GroupingLabel="GruopOne" Label="Google" XBindingPath="Month" YBindingPath="Value"/>
+
+	<chart:StackingColumnSeries ItemsSource ="{Binding Data2}" GroupingLabel="GruopOne" Label="Bing" XBindingPath="Month" YBindingPath="Value"/>
+
+	<chart:StackingColumnSeries ItemsSource ="{Binding Data3}" Label="Yahoo" XBindingPath="Month" YBindingPath="Value"/>
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+[C#]
+
+SfChart chart = new SfChart();
+...
+
+StackingColumnSeries stackingColumnSeries1 = new StackingColumnSeries() 
+{ 
+	ItemsSource = Data1, 
+	GroupingLabel = "GroupOne",
+	Label = "Google",
+	XBindingPath = "Month", 
+	YBindingPath = "Value" 
+};
+
+StackingColumnSeries stackingColumnSeries2 = new StackingColumnSeries() 
+{ 
+	ItemsSource = Data2, 
+	GroupingLabel = "GroupOne",
+	Label = "Bing",
+	XBindingPath = "Month", 
+	YBindingPath = "Value" 
+};
+
+StackingColumnSeries stackingColumnSeries3 = new StackingColumnSeries() 
+{ 
+	ItemsSource = Data3, 
+	Label = "Yahoo",
+	XBindingPath = "Month", 
+	YBindingPath = "Value" 
+};
+
+chart.Series.Add(stackingColumnSeries1);
+chart.Series.Add(stackingColumnSeries2);
+chart.Series.Add(stackingColumnSeries3);
+
+{% endhighlight %}
+
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Chatseries-clubbed/grouping.png](chartseries_images/chartseries_img4.png)

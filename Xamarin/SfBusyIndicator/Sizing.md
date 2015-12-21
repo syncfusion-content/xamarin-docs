@@ -13,7 +13,7 @@ ViewBox is used for sizing an animation.It is achieved by,
 * ViewBoxHeight
 * ViewBoxWidth
 
-ViewBoxHeight allows you to set the height of the animation and ViewBoxWidth allows to set the width of the animation.
+`ViewBoxHeight` allows you to set the height of the animation and `ViewBoxWidth` allows to set the width of the animation.
 
 {% hightlight C# %}
 
@@ -25,5 +25,6 @@ sfBusyIndicator.ViewBoxWidth=20;
 
 ![](images/heightand width.png)  
 
-![](images/Busyindicator.png)
+ViewBox height and width
+{:.caption}
 

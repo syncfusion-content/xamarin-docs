@@ -17,13 +17,13 @@ BusyIndicator control can display a visual indication for either determinate or 
 
 **Key Features**
 
-*IsBusy – The control shows the animation when this property is set.
+* IsBusy – The control shows the animation when this property is set.
 
-*Title – A user customized string is displayed while showing animation.
+* Title – A user customized string is displayed while showing animation.
 
-*Sizing – The control view box’s height and width can be set.
+* Sizing – A user can customize height and width of the animation.
 
-*AnimationTypes – There are over 10 built-in animations that can be set with the control.
+* AnimationTypes – There are over 10 built-in animations that can be set with the control.
 
 
 

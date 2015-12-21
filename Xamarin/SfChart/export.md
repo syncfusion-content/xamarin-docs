@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Exporting Chart
-description: How to export the Chart to image
+title: Xamarin.Froms | Exporting Chart
+description: How to export the Chart as an image
 platform: xamarin
 control: Chart
 documentation: ug

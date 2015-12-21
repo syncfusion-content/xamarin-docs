@@ -12,6 +12,10 @@ The Title property can be used to get or set the content that indicates the info
 
 It is one of the representation of showing what is going on. 
 
-|sfBusyIndicator.Title =”Loading…”;|
+{% hightlight C# %}
+
+sfBusyIndicator.Title =”Loading…”;
+
+{% endhighlight %}
 
 ![](images/Title.png) 

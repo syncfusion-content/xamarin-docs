@@ -10,6 +10,10 @@ documentation: ug
 
 The IsBusy property in the BusyIndicator control is used to determine whether an animation needs to be executed or not.
 
-|sfBusyIndicator.IsBusy =True;|
+{% highlight C#%}
+
+sfBusyIndicator.IsBusy =True;
+
+{% endhighlight %}
 
 ![](images/IsBusy.png) 

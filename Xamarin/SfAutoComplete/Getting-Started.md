@@ -213,7 +213,7 @@ public class AutoCompletePage : ContentPage
 
 {% endhighlight %} 
 
-{% highlight xml %} 
+{% highlight xaml %} 
 
 // Use this in App.CS source.
 
@@ -261,7 +261,7 @@ sfautocomplete .PopUpelay= 100;
 
 {% endhighlight %}
 
-{% highlight xml %}  
+{% highlight xaml %}  
 
 <syncfusion:SfAutoComplete x:Name="sfautocomplete" BackgroundColor="White" MinimumPrefixCharacter="2" MaximumDropDownHeight="200" PopUpDelay="100">
 

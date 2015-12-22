@@ -221,7 +221,7 @@ public NumericTextBoxPage ()
 
 {% endhighlight %} 
 
-{% highlight xml %} 
+{% highlight xaml %} 
 
 Use this in App.CS source.
 
@@ -260,7 +260,7 @@ sfnumerictextbox.MaximumNumberDecimalDigits= 2;
 
 {% endhighlight %} 
  
-{% highlight xml %} 
+{% highlight xaml %} 
 
 <syncfusion:SfNumericTextBox HeightRequest="100"  Value="1000"  Orientation="Horizontal" 
 	

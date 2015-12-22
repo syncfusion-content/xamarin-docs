@@ -124,7 +124,7 @@ public class BusyIndicatorPage : ContentPage
 {% endhighlight %}
 
 
-{% highlight xml %}    
+{% highlight xaml %}    
 
 // Use this in App.CS source.
 
@@ -173,7 +173,7 @@ sfbusyindicator.BackgroundColor = Color.White;
 
 
 
-{% highlight xml %}   
+{% highlight xaml %}   
 
     <syncfusion:SfBusyIndicator x:Name="sfbusyindicator" BackgroundColor="White" ViewBoxHeight="150" ViewBoxWidth="150" AnimationType="Ball"/>
 

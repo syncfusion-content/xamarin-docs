@@ -125,7 +125,7 @@ return new ContentPage
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
  
 // Use the following in App.CS source.
 
@@ -184,7 +184,7 @@ digitalGauge1.CharacterDisabledColor = Color.FromRgb (20,108,237);
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SfDigitalGauge 
 

@@ -124,7 +124,7 @@ public BusyIndicatorPage ()
 
 Use this in App.CS source.
 
-{% highlight xml %} 
+{% highlight xaml %} 
 
 < ?xml version="1.0" encoding="UTF-8"? >
 
@@ -158,7 +158,7 @@ sfbusyindicator.BackgroundColor = Color.White;
 
 {% endhighlight %} 
 
-{% highlight xml %} 
+{% highlight xaml %} 
 
 < syncfusion:SfRangeSlider HeightRequest="100" TickFrequency="2" Minimum="0" Maximum="12" TickPlacement="BottomRight" ShowRange="True" RangeStart="4" RangeEnd="8" Orientation="Horizontal" WidthRequest="400" >
         </syncfusion:SfRangeSlider>

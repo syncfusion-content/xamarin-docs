@@ -13,7 +13,7 @@ Legend contains list of chart series/data points in the chart. The information p
 
 Following code example shows how to enable legend in a chart,
 
-{% highlight xml %}
+{% highlight xaml %}
 [XAML]
 
 <chart:SfChart>
@@ -45,7 +45,7 @@ chart.Legend = new ChartLegend();
 * `Font` – used to change the text size, font family and font weight.
 * `Margin` - used to change the margin size for labels.
 
-{% highlight xml %}
+{% highlight xaml %}
 [XAML]
 
 <chart:SfChart.Legend>
@@ -91,7 +91,7 @@ chart.Legend.LabelStyle.Margin = 5;
 
 Legend icons are enabled by default, however, you can control its visibility using `IsIconVisible` property. Also you can specify the icon type using `LegendIcon` property in ChartSeries. `IconWidth` and `IconHeight` properties are used to adjust the width and height of the legend icons respectively.
 
-{% highlight xml %}
+{% highlight xaml %}
 [XAML]
 
 <chart:SfChart>
@@ -138,7 +138,7 @@ Following properties are used to define and customize the legend title.
 * `BorderColor` – used to change the border color.
 * `BorderWidth` – used to adjust the title border width.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 [XAML]
 
@@ -193,7 +193,7 @@ chart.Legend.Title.BorderColor = Color.Blue;
 
 You can control the visibility of the series by tapping on the legend item. You can enable this feature by enabling `ToggleSeriesVisibility` property.
 
-{% highlight xml %}
+{% highlight xaml %}
 [XAML]
 
 <chart:SfChart>

@@ -231,7 +231,7 @@ this.Content = chart;
 {% endhighlight %}
 
 
-{% highlight xml %} 
+{% highlight xaml %} 
 
 <chart:SfChart>
 
@@ -281,7 +281,7 @@ chart.Title = new ChartTitle ()
 
 
 
-{% highlight xml %} 
+{% highlight xaml %} 
 
 <chart:SfChart>
 
@@ -349,7 +349,7 @@ chart.Series.Add (new ColumnSeries () 
 {% endhighlight %}
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <chart:SfChart>
    …
@@ -381,7 +381,7 @@ chart.Legend = new ChartLegend ();
 
 {% endhighlight %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <chart:SfChart>
 
@@ -418,7 +418,7 @@ chart.Series.Add (new ColumnSeries () 
 {% endhighlight %}
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <chart:SfChart>
     …
@@ -477,7 +477,7 @@ chart.Series.Add (new SplineSeries () 
 
 {% endhighlight %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <chart:SfChart>
 …
@@ -518,7 +518,7 @@ chart.Series.Add (new ColumnSeries () 
 
 {% endhighlight %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <chart:SfChart>
 …
@@ -714,7 +714,7 @@ public class DataModel
 }
 {% endhighlight %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <chart:SfChart>
 

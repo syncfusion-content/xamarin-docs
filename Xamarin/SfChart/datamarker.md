@@ -11,7 +11,7 @@ documentation: ug
 
 Data markers are used to provide information about the data points to the user. You can add a shape and label to adorn each data point. This can be enabled using following code snippet,
 
-{% highlight xml %}
+{% highlight xaml %}
 [XAML]
 
 <chart:LineSeries>
@@ -50,7 +50,7 @@ Data labels are enabled by default but you can also change the visibility of the
 
 Following code snippet illustrates the customization of label and its background,
 
-{% highlight xml %}
+{% highlight xaml %}
 [XAML]
 
 <chart:LineSeries.DataMarker>
@@ -108,7 +108,7 @@ You can customize the content of the label using LabelContent property. Followin
 
 * `Percentage` – This will show the percentage value of corresponding data point Y value, this is often used in pie, doughnut, funnel and pyramid series types.
 * `YValue` – This will show the corresponding Y value.
-{% highlight xml %}
+{% highlight xaml %}
 
 [XAML]
 
@@ -144,7 +144,7 @@ The following screenshot illustrates the default position of data marker labels,
 
 The following code sample illustrates the center position of data marker labels,
 
-{% highlight xml %}
+{% highlight xaml %}
 [XAML]
 
 <chart:ChartDataMarker>
@@ -170,7 +170,7 @@ series.DataMarker.LabelStyle.LabelPosition = DataMarkerLabelPosition.Center;
 
 The following code sample illustrates the Inner position of data marker labels,
 
-{% highlight xml %}
+{% highlight xaml %}
 [XAML]
 
 <chart:ChartDataMarker>
@@ -197,7 +197,7 @@ series.DataMarker.LabelStyle.LabelPosition = DataMarkerLabelPosition.Inner;
 
 The following code sample illustrates the outer position of data marker labels, 
 
-{% highlight xml %}
+{% highlight xaml %}
 [XAML]
 
 <chart:ChartDataMarker>
@@ -234,7 +234,7 @@ Shapes can be added to chart data marker by setting the ShowMarker property to t
 
 The following code example shows how to enable marker and specify its types,
 
-{% highlight xml %}
+{% highlight xaml %}
 [XAML]
 
 <chart:LineSeries.DataMarker>
@@ -281,7 +281,7 @@ This feature is used to connect label and data point using a line. It can be ena
 
 The following code illustrates how to specify the connector height and its angle,
 
-{% highlight xml %}
+{% highlight xaml %}
 [XAML]      
 
 <chart:LineSeries.DataMarker>

@@ -109,7 +109,7 @@ Here, the following steps illustrates how to create and configure a barcode.
 
 1.Add reference to SFBarcode such as follows.
 
-{% highlight xml %} 
+{% highlight xaml %} 
       
 xmlns:syncfusion="clr-namespace:Syncfusion.SfBarcode.XForms;assembly=Syncfusion.SfBarcode.XForms"
 	
@@ -133,7 +133,7 @@ using Syncfusion.SfBarcode.XForms;
 
   
 
-{% highlight xml %}        
+{% highlight xaml %}        
 
 <syncfusion:SfBarcode/>
 	
@@ -157,7 +157,7 @@ SfBarcode barcode = new SfBarcode();
 
   
 
-{% highlight xml %} 
+{% highlight xaml %} 
       
 <syncfusion:SfBarcode Text="www.wikipedia.org"/>
 	
@@ -180,7 +180,7 @@ barcode.Text = "www.wikipedia.org";
 
   
 
-{% highlight xml %} 
+{% highlight xaml %} 
 
 <syncfusion:SfBarcode Text="www.wikipedia.org" Symbology="QRCode"/>
 	
@@ -200,7 +200,7 @@ barcode.Symbology = BarcodeSymbo<ype.QRCode;
 
   
 
-{% highlight xml %}      
+{% highlight xaml %}      
 
 <syncfusion:SfBarcode Text="www.wikipedia.org" Symbology="QRCode">
 
@@ -236,7 +236,7 @@ barcode.SymbologySettings = settings;
 
   
 
-{% highlight xml %} 
+{% highlight xaml %} 
        
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
 

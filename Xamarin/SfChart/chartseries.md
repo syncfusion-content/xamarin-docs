@@ -13,7 +13,7 @@ documentation: ug
 
 You can add multiple series to `Series` property of `SfChart` class.
 
-{% highlight xml %}
+{% highlight xaml %}
 [XAML]
 
 <chart:SfChart>
@@ -58,7 +58,7 @@ chart.Series.Add(columnSeries2);
 
 `SfChart` allows you to render the combination of different types of series.
 
-{% highlight xml %}
+{% highlight xaml %}
 [XAML]
 
 <chart:SfChart>
@@ -98,7 +98,7 @@ chart.Series.Add(lineSeries);
 
 When the combination of Cartesian and accumulation series types are added to the `Series` property, the series which are similar to the first series will be rendered and other series will be ignored. Following code snippet illustrates this.
 
-{% highlight xml %}
+{% highlight xaml %}
 [XAML]
 
 <chart:SfChart>

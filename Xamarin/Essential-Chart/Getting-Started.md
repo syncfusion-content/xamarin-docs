@@ -340,7 +340,7 @@ _//Adding the series to the chart_
 {% endhighlight %}
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
  
@@ -376,7 +376,7 @@ _//Adding Legend_ 
 
 {% endhighlight %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
  
@@ -415,7 +415,7 @@ chart.Series.Add (new ColumnSeries () {
 {% endhighlight %}
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -466,7 +466,7 @@ _//Adding the SplineSeries to the chart for displaying  low temperature
      });
 {% endhighlight %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
    
 
@@ -522,7 +522,7 @@ _//Adding ColumnSeries to the chart for displaying  Precipitation_
 
 {% endhighlight %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 
@@ -667,7 +667,7 @@ _//Adding Chart Legend for the Chart_
     }
 {% endhighlight %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 
 

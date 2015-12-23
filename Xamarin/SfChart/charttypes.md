@@ -286,7 +286,7 @@ Since the `RangeColumnSeries` requires two Y values for a point, your data shoul
 
 There are two ways you can provide data to RangeColumn chart,
 
-1.You can use [ChartDataPoint's](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/topic654.html#) three parameter constructor to pass x value, high and low values to  `RangeColumnSeries`,
+1.You can use [ChartDataPoint's](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataPoint~_ctor%28IComparable,Double,Double%29.html#) three parameter constructor to pass x value, high and low values to  `RangeColumnSeries`,
 
 {% highlight c# %}
 [C#] 
@@ -730,7 +730,7 @@ Bubble chart requires 3 fields (X, Y and Size) to plot a point. Here `‘Size’
 
 There are two ways you can provide data to bubble chart,
 
-1.You can use [ChartDataPoint's](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/topic654.html) three parameter constructor to pass x, y and size values to  `BubbleSeries`,
+1.You can use [ChartDataPoint's](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataPoint~_ctor%28IComparable,Double,Double%29.html#) three parameter constructor to pass x, y and size values to  `BubbleSeries`,
 
 {% highlight c# %}
 [C#]
@@ -852,7 +852,7 @@ OHLC chart requires five values (X, Open, High, Low and Close) to plot a point.
 
 There are two ways you can provide data to an OHLC chart,
 
-1.You can use [ChartDataPoint's](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/topic655.html#) five parameter constructor to pass x, open, high, low and close values to  `HiLoOpenCloseSeries`,
+1.You can use [ChartDataPoint's](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataPoint~_ctor(IComparable,Double,Double,Double,Double).html#) five parameter constructor to pass x, open, high, low and close values to  `HiLoOpenCloseSeries`,
 
 {% highlight c# %}
 [C#]
@@ -959,7 +959,7 @@ Candle chart requires five values (X, Open, High, Low and Close) to plot a point
 
 There are two ways you can provide data to an candle chart,
 
-1.You can use [ChartDataPoint's](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/topic655.html#) five parameter constructor to pass x, open, high, low and close values to  `CandleSeries`,
+1.You can use [http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataPoint~_ctor(IComparable,Double,Double,Double,Double).html#) five parameter constructor to pass x, open, high, low and close values to  `CandleSeries`,
 
 {% highlight c# %}
 [C#]

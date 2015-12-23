@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Multiple series and combination of series
+title: Multiple series, combination of series and grouping stacked series
 description: How to add multiple series and combination series in Essential Xamarin.Forms Chart
 platform: xamarin
 control: Chart
@@ -129,3 +129,76 @@ chart.Series.Add(pieSeries);
 {% endhighlight %}
 
 ![C:/Users/yuvaraj.palanisamy/Documents/My Received Files/limitation.png](chartseries_images/chartseries_img3.png)
+
+## Grouping Stacked Series
+
+You can group and stack the similar stacked series types using `GroupingLabel` property of stacked series. The stacked series which contains the same `GroupingLabel` will be stacked in a single group.
+
+{% highlight xml %}
+[XAML]
+
+<chart:SfChart>
+...
+
+	<chart:StackingColumnSeries ItemsSource ="{Binding Data1}" GroupingLabel="GruopOne" Label="Google" XBindingPath="Month" YBindingPath="Value"/>
+
+	<chart:StackingColumnSeries ItemsSource ="{Binding Data2}" GroupingLabel="GruopOne" Label="Bing" XBindingPath="Month" YBindingPath="Value"/>
+
+	<chart:StackingColumnSeries ItemsSource ="{Binding Data3}" GroupingLabel="GruopTwo" Label="Yahoo" XBindingPath="Month" YBindingPath="Value"/>
+	
+	<chart:StackingColumnSeries ItemsSource ="{Binding Data4}" GroupingLabel="GruopTwo" Label="Ask" XBindingPath="Month" YBindingPath="Value"/>
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+[C#]
+
+SfChart chart = new SfChart();
+...
+
+StackingColumnSeries stackingColumnSeries1 = new StackingColumnSeries() 
+{ 
+	ItemsSource = Data1, 
+	GroupingLabel = "GroupOne",
+	Label = "Google",
+	XBindingPath = "Month", 
+	YBindingPath = "Value" 
+};
+
+StackingColumnSeries stackingColumnSeries2 = new StackingColumnSeries() 
+{ 
+	ItemsSource = Data2, 
+	GroupingLabel = "GroupOne",
+	Label = "Bing",
+	XBindingPath = "Month", 
+	YBindingPath = "Value" 
+};
+
+StackingColumnSeries stackingColumnSeries3 = new StackingColumnSeries() 
+{ 
+	ItemsSource = Data3,
+	GroupingLabel = "GroupTwo",
+	Label = "Yahoo",
+	XBindingPath = "Month", 
+	YBindingPath = "Value" 
+};
+
+StackingColumnSeries stackingColumnSeries4 = new StackingColumnSeries() 
+{ 
+	ItemsSource = Data4,
+	GroupingLabel = "GroupTwo",
+	Label = "Ask",
+	XBindingPath = "Month", 
+	YBindingPath = "Value" 
+};
+
+chart.Series.Add(stackingColumnSeries1);
+chart.Series.Add(stackingColumnSeries2);
+chart.Series.Add(stackingColumnSeries3);
+chart.Series.Add(stackingColumnSeries4);
+
+{% endhighlight %}
+
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Chatseries-clubbed/grouping.png](chartseries_images/chartseries_img4.png)

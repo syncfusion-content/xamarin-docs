@@ -145,6 +145,8 @@ You can add multiple groups of stacking series using `GroupingLabel` property of
 	<chart:StackingColumnSeries ItemsSource ="{Binding Data2}" GroupingLabel="GruopOne" Label="Bing" XBindingPath="Month" YBindingPath="Value"/>
 
 	<chart:StackingColumnSeries ItemsSource ="{Binding Data3}" GroupingLabel="GruopTwo" Label="Yahoo" XBindingPath="Month" YBindingPath="Value"/>
+	
+	<chart:StackingColumnSeries ItemsSource ="{Binding Data4}" GroupingLabel="GruopTwo" Label="Ask" XBindingPath="Month" YBindingPath="Value"/>
 
 </chart:SfChart>
 
@@ -169,7 +171,7 @@ StackingColumnSeries stackingColumnSeries2 = new StackingColumnSeries()
 { 
 	ItemsSource = Data2, 
 	GroupingLabel = "GroupOne",
-	Label = "Google",
+	Label = "Bing",
 	XBindingPath = "Month", 
 	YBindingPath = "Value" 
 };
@@ -183,9 +185,19 @@ StackingColumnSeries stackingColumnSeries3 = new StackingColumnSeries()
 	YBindingPath = "Value" 
 };
 
+StackingColumnSeries stackingColumnSeries4 = new StackingColumnSeries() 
+{ 
+	ItemsSource = Data4,
+	GroupingLabel = "GroupTwo",
+	Label = "Ask",
+	XBindingPath = "Month", 
+	YBindingPath = "Value" 
+};
+
 chart.Series.Add(stackingColumnSeries1);
 chart.Series.Add(stackingColumnSeries2);
 chart.Series.Add(stackingColumnSeries3);
+chart.Series.Add(stackingColumnSeries4);
 
 {% endhighlight %}
 

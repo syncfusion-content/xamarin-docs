@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Multiple series and combination of series
+title: Xamarin.Forms | Chart Series Features
 description: How to add multiple series and combination series in Essential Xamarin.Forms Chart
 platform: xamarin
 control: Chart
@@ -132,7 +132,7 @@ chart.Series.Add(pieSeries);
 
 ## Grouping Stacked Series
 
-You can use the `GroupingLabel` property to group the stacked series. Series with same group name are stacked on top of each other.
+You can add multiple groups of stacking series using `GroupingLabel` property of stacked series, and each group can contain multiple stacking series.
 
 {% highlight xml %}
 [XAML]
@@ -144,7 +144,7 @@ You can use the `GroupingLabel` property to group the stacked series. Series wit
 
 	<chart:StackingColumnSeries ItemsSource ="{Binding Data2}" GroupingLabel="GruopOne" Label="Bing" XBindingPath="Month" YBindingPath="Value"/>
 
-	<chart:StackingColumnSeries ItemsSource ="{Binding Data3}" Label="Yahoo" XBindingPath="Month" YBindingPath="Value"/>
+	<chart:StackingColumnSeries ItemsSource ="{Binding Data3}" GroupingLabel="GruopTwo" Label="Yahoo" XBindingPath="Month" YBindingPath="Value"/>
 
 </chart:SfChart>
 
@@ -169,14 +169,15 @@ StackingColumnSeries stackingColumnSeries2 = new StackingColumnSeries()
 { 
 	ItemsSource = Data2, 
 	GroupingLabel = "GroupOne",
-	Label = "Bing",
+	Label = "Google",
 	XBindingPath = "Month", 
 	YBindingPath = "Value" 
 };
 
 StackingColumnSeries stackingColumnSeries3 = new StackingColumnSeries() 
 { 
-	ItemsSource = Data3, 
+	ItemsSource = Data3,
+	GroupingLabel = "GroupTwo",
 	Label = "Yahoo",
 	XBindingPath = "Month", 
 	YBindingPath = "Value" 

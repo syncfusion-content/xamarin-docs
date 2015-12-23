@@ -132,7 +132,7 @@ chart.Series.Add(pieSeries);
 
 ## Grouping Stacked Series
 
-You can add multiple groups of stacking series using `GroupingLabel` property of stacked series, and each group can contain multiple stacking series.
+You can group and stack the similar stacked series types using `GroupingLabel` property of stacked series. The stacked series which contains the same `GroupingLabel` will be stacked in a single group.
 
 {% highlight xml %}
 [XAML]

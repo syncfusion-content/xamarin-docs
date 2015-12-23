@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Xamarin.Forms | Chart Series Features
+title: Multiple series, combination of series and grouping stacked series
 description: How to add multiple series and combination series in Essential Xamarin.Forms Chart
 platform: xamarin
 control: Chart

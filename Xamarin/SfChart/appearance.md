@@ -17,7 +17,7 @@ documentation: ug
 
 Currently, Chart supports only Metro palette and it is the default palette for SfChart. The following screenshot shows the default appearance of multiple series.
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Appearence/char_metr.png](appearance_images/appearance_img1.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Appearence/char_metr.png](appearance_images/appearance_img1.png)
 
 **Custom Palette**
 
@@ -30,11 +30,11 @@ Following code illustrates how to set the custom colors.
 
 <chart:SfChart HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
 
-<chart:SfChart.ColorModel>
+	<chart:SfChart.ColorModel>
 
-<chart:ChartColorModel Palette="Custom" CustomBrushes="{Binding Colors}"/>
+		<chart:ChartColorModel Palette="Custom" CustomBrushes="{Binding Colors}"/>
 
-</chart:SfChart.ColorModel>
+	</chart:SfChart.ColorModel>
 
 ...
 
@@ -50,11 +50,11 @@ SfChart sfChart = new SfChart();
 
 List<Color> colors = new List<Color>(){
 
-Color.Yellow,
+	Color.Yellow,
 
-Color.Silver,
+	Color.Silver,
 
-Color.Maroon,                             
+	Color.Maroon,                             
 
 };
 
@@ -64,7 +64,7 @@ sfChart.ColorModel.CustomBrushes = colors;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Appearence/chart-custom.png](appearance_images/appearance_img2.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Appearence/chart-custom.png](appearance_images/appearance_img2.png)
 
 **None Palette**
 
@@ -84,15 +84,15 @@ Currently, Chart supports only Metro palette.
 <chart:SfChart>
 ...
 
-<chart:ColumnSeries ItemsSource ="{Binding Data}" XBindingPath="Country" YBindingPath="Value">
+	<chart:ColumnSeries ItemsSource ="{Binding Data}" XBindingPath="Country" YBindingPath="Value">
 
-<chart:ColumnSeries.ColorModel>
+		<chart:ColumnSeries.ColorModel>
 
-<chart:ChartColorModel Palette="Metro" CustomBrushes="{Binding Colors}"/>
+			<chart:ChartColorModel Palette="Metro" CustomBrushes="{Binding Colors}"/>
 
-</chart:ColumnSeries.ColorModel>
+		</chart:ColumnSeries.ColorModel>
 
-</chart:ColumnSeries>
+	</chart:ColumnSeries>
 
 </chart:SfChart>
 
@@ -104,7 +104,13 @@ Currently, Chart supports only Metro palette.
 SfChart chart = new SfChart();
 ...
 
-ColumnSeries columnSeries = new ColumnSeries() { ItemsSource = Data, XBindingPath = "Country", YBindingPath = "Value" };
+ColumnSeries columnSeries = new ColumnSeries() { 
+
+	ItemsSource = Data, 
+	XBindingPath = "Country", 
+	YBindingPath = "Value" 
+	
+};
 
 columnSeries.ColorModel.Palette = ChartColorPalette.Metro;
 
@@ -112,7 +118,7 @@ chart.Series.Add(columnSeries);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Appearence/METRO1.png](appearance_images/appearance_img3.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Appearence/METRO1.png](appearance_images/appearance_img3.png)
 
 **Custom Palette**
 
@@ -126,15 +132,15 @@ Following code illustrates how to set the custom colors.
 <chart:SfChart>
 ...
 
-<chart:ColumnSeries ItemsSource ="{Binding Data}" XBindingPath="Country" YBindingPath="Value">
+	<chart:ColumnSeries ItemsSource ="{Binding Data}" XBindingPath="Country" YBindingPath="Value">
 
-<chart:ColumnSeries.ColorModel>
+		<chart:ColumnSeries.ColorModel>
 
-<chart:ChartColorModel Palette="Custom" CustomBrushes="{Binding Colors}"/>
+			<chart:ChartColorModel Palette="Custom" CustomBrushes="{Binding Colors}"/>
 
-</chart:ColumnSeries.ColorModel>
+		</chart:ColumnSeries.ColorModel>
 
-</chart:ColumnSeries>
+	</chart:ColumnSeries>
 
 </chart:SfChart>
 
@@ -146,18 +152,20 @@ Following code illustrates how to set the custom colors.
 SfChart chart = new SfChart();
 ...
 
-ColumnSeries columnSeries = new ColumnSeries() { ItemsSource = Data, XBindingPath = "Country", YBindingPath = "Value" };
+ColumnSeries columnSeries = new ColumnSeries() { 
+
+ItemsSource = Data, 
+XBindingPath = "Country", 
+YBindingPath = "Value" 
+
+};
 
 List<Color> colors = new List<Color>(){
 
 Color.Red,
-
 Color.Gray,
-
 Color.Blue,
-
 Color.Maroon,
-
 Color.Pink,               
 
 };
@@ -170,7 +178,7 @@ chart.Series.Add(columnSeries);
 
 {% endhighlight %}
 
-![C:/Users/yuvaraj.palanisamy/Documents/My Received Files/custom-clr.png](appearance_images/appearance_img4.jpeg)
+![C:/Users/yuvaraj.palanisamy/Documents/My Received Files/custom-clr.png](appearance_images/appearance_img4.png)
 
 **None Palette**
 

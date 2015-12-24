@@ -154,19 +154,19 @@ SfChart chart = new SfChart();
 
 ColumnSeries columnSeries = new ColumnSeries() { 
 
-ItemsSource = Data, 
-XBindingPath = "Country", 
-YBindingPath = "Value" 
+	ItemsSource = Data, 
+	XBindingPath = "Country", 
+	YBindingPath = "Value" 
 
 };
 
 List<Color> colors = new List<Color>(){
 
-Color.Red,
-Color.Gray,
-Color.Blue,
-Color.Maroon,
-Color.Pink,               
+	Color.Red,
+	Color.Gray,
+	Color.Blue,
+	Color.Maroon,
+	Color.Pink,               
 
 };
 

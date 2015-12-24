@@ -24,27 +24,27 @@ Following code snippet illustrates this,
 public class DataModel
 {
 	
-public ObservableCollection<ChartDataPoint>  HighTemperature{ get; set; }
+	public ObservableCollection<ChartDataPoint>  HighTemperature{ get; set; }
 
-public DataModel ()
-{
+	public DataModel ()
+	{
 	
-	HighTemperature = new ObservableCollection<ChartDataPoint> ();
+		HighTemperature = new ObservableCollection<ChartDataPoint> ();
 
-	HighTemperature.Add (new ChartDataPoint ("Jan", 42));
-	HighTemperature.Add (new ChartDataPoint ("Feb", 44));
-	HighTemperature.Add (new ChartDataPoint ("Mar", 53));
-	HighTemperature.Add (new ChartDataPoint ("Apr", 64));
-	HighTemperature.Add (new ChartDataPoint ("May", 75));
-	HighTemperature.Add (new ChartDataPoint ("Jun", 83));
-	HighTemperature.Add (new ChartDataPoint ("Jul", 87));
-	HighTemperature.Add (new ChartDataPoint ("Aug", 84));
-	HighTemperature.Add (new ChartDataPoint ("Sep", 78));
-	HighTemperature.Add (new ChartDataPoint ("Oct", 67));
-	HighTemperature.Add (new ChartDataPoint ("Nov", 55));
-	HighTemperature.Add (new ChartDataPoint ("Dec", 45));
+		HighTemperature.Add (new ChartDataPoint ("Jan", 42));
+		HighTemperature.Add (new ChartDataPoint ("Feb", 44));
+		HighTemperature.Add (new ChartDataPoint ("Mar", 53));
+		HighTemperature.Add (new ChartDataPoint ("Apr", 64));
+		HighTemperature.Add (new ChartDataPoint ("May", 75));
+		HighTemperature.Add (new ChartDataPoint ("Jun", 83));
+		HighTemperature.Add (new ChartDataPoint ("Jul", 87));
+		HighTemperature.Add (new ChartDataPoint ("Aug", 84));
+		HighTemperature.Add (new ChartDataPoint ("Sep", 78));
+		HighTemperature.Add (new ChartDataPoint ("Oct", 67));
+		HighTemperature.Add (new ChartDataPoint ("Nov", 55));
+		HighTemperature.Add (new ChartDataPoint ("Dec", 45));
 
-}
+	}
 
 }
 
@@ -57,7 +57,7 @@ public DataModel ()
 
 	<chart:SfChart.Series>
 
-		<chart:ColumnSeries ItemsSource = "{Binding HighTemperature}"/>
+		<chart:ColumnSeries ItemsSource="{Binding HighTemperature}"/>
 
 	</chart:SfChart.Series> 
 
@@ -145,11 +145,11 @@ public class DataModel
 <chart:SfChart>
 ...
 
-	<chart:SfChart.Series>
+  <chart:SfChart.Series>
 
-		<chart:ColumnSeries ItemsSource = "{Binding Demands}" XBindingPath = "Demand" YBindingPath = "Year2010"/>
+	  <chart:ColumnSeries ItemsSource="{Binding Demands}" XBindingPath="Demand" YBindingPath="Year2010"/>
 
-	</chart:SfChart.Series>
+  </chart:SfChart.Series>
 
 </chart:SfChart>
 

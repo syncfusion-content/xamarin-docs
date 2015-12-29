@@ -515,7 +515,9 @@ chart.Series.Add (new ColumnSeries () 
 {
     ItemsSource = dataModel.Precipitation,
     Label = "Precipitation",
-    YAxis = new NumericalAxis(){ OpposedPosition = true 
+    YAxis = new NumericalAxis(){ 
+        OpposedPosition = true 
+    }
 });
 
 {% endhighlight %}

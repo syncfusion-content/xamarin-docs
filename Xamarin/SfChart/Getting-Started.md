@@ -121,7 +121,7 @@ You can then add the assembly references to the respective projects as shown bel
 
 ### PCL project
 
-pcl\Syncfusion.SfChart.XForm.dll 
+pcl\Syncfusion.SfChart.XForms.dll 
 
 ### Android project
 
@@ -135,7 +135,7 @@ ios\Syncfusion.SfChart.iOS.dll
 
 ios\Syncfusion.SfChart.xForms.iOS.dll
 
-ios\Syncfusion.SfChart.XForm.dll
+ios\Syncfusion.SfChart.XForms.dll
 
 ### iOS(Unified) project
 
@@ -143,7 +143,7 @@ ios-unified\Syncfusion.SfChart.iOS.dll
 
 ios-unified\Syncfusion.SfChart.xForms.iOS.dll
 
-ios-unified\Syncfusion.SfChart.XForm.dll
+ios-unified\Syncfusion.SfChart.XForms.dll
 
 ### Windows Phone project
 
@@ -208,7 +208,7 @@ CategoryAxis primaryAxis  =  new CategoryAxis  ();
 primaryAxis.Title  =  new ChartAxisTitle  () 
 { 
 
-Text  =  "Month" 
+    Text  =  "Month" 
 	
 };
 
@@ -220,7 +220,7 @@ NumericalAxis secondaryAxis  =  new NumericalAxis  ();
 secondaryAxis.Title  =  new ChartAxisTitle  () 
 { 
 
-Text  =  "Temperature" 
+    Text  =  "Temperature" 
 	
 };
 
@@ -235,33 +235,33 @@ this.Content = chart;
 
 <chart:SfChart>
 
-<chart:SfChart.PrimaryAxis>
+    <chart:SfChart.PrimaryAxis>
 
-<chart:CategoryAxis>
+        <chart:CategoryAxis>
 
-<chart:CategoryAxis.Title>
+             <chart:CategoryAxis.Title>
 
-<chart:ChartAxisTitle Text="Month"/>
+                 <chart:ChartAxisTitle Text="Month"/>
 
-</chart:CategoryAxis.Title>
+             </chart:CategoryAxis.Title>
 
-</chart:CategoryAxis>
+        </chart:CategoryAxis>
 
-</chart:SfChart.PrimaryAxis>
+    </chart:SfChart.PrimaryAxis>
 
-<chart:SfChart.SecondaryAxis>
+    <chart:SfChart.SecondaryAxis>
 
-<chart:NumericalAxis>
+        <chart:NumericalAxis>
 
-<chart:NumericalAxis>
+            <chart:NumericalAxis.Title>
 
-<chart:ChartAxisTitle Text="Month"/>
+                <chart:ChartAxisTitle Text="Month"/>
 
-</chart:NumericalAxis>
+            </chart:NumericalAxis.Title>
 
-</chart:NumericalAxis>
+        </chart:NumericalAxis>
 
-</chart:SfChart.SecondaryAxis>
+    </chart:SfChart.SecondaryAxis>
 		  
 </chart:SfChart>
 
@@ -285,13 +285,13 @@ chart.Title = new ChartTitle ()
 
 <chart:SfChart>
 
-<chart:SfChart.Title>
+    <chart:SfChart.Title>
 
-<chart:ChartTitle Text="Weather Analysis"/>  
+        <chart:ChartTitle Text="Weather Analysis"/>  
 
-</chart:SfChart.Title>
+    </chart:SfChart.Title>
 
-…
+    ...
 
 </chart:SfChart>
 	  
@@ -310,26 +310,26 @@ In SfChart, the series itemsource should be a collection of _ChartDataPoint_ obj
 
 public class DataModel
 {
-public ObservableCollection<ChartDataPoint>  HighTemperature;
-
-public DataModel ()
-{
-HighTemperature = new ObservableCollection<ChartDataPoint> ();
-HighTemperature.Add (new ChartDataPoint ("Jan", 42));
-HighTemperature.Add (new ChartDataPoint ("Feb", 44));
-HighTemperature.Add (new ChartDataPoint ("Mar", 53));
-HighTemperature.Add (new ChartDataPoint ("Apr", 64));
-HighTemperature.Add (new ChartDataPoint ("May", 75));
-HighTemperature.Add (new ChartDataPoint ("Jun", 83));
-HighTemperature.Add (new ChartDataPoint ("Jul", 87));
-HighTemperature.Add (new ChartDataPoint ("Aug", 84));
-HighTemperature.Add (new ChartDataPoint ("Sep", 78));
-HighTemperature.Add (new ChartDataPoint ("Oct", 67));
-HighTemperature.Add (new ChartDataPoint ("Nov", 55));
-HighTemperature.Add (new ChartDataPoint ("Dec", 45));
+    public ObservableCollection<ChartDataPoint>  HighTemperature;
+    
+    public DataModel ()
+    {
+         HighTemperature = new ObservableCollection<ChartDataPoint> ();
+         HighTemperature.Add (new ChartDataPoint ("Jan", 42));
+         HighTemperature.Add (new ChartDataPoint ("Feb", 44));
+         HighTemperature.Add (new ChartDataPoint ("Mar", 53));
+         HighTemperature.Add (new ChartDataPoint ("Apr", 64));
+         HighTemperature.Add (new ChartDataPoint ("May", 75));
+         HighTemperature.Add (new ChartDataPoint ("Jun", 83));
+         HighTemperature.Add (new ChartDataPoint ("Jul", 87));
+         HighTemperature.Add (new ChartDataPoint ("Aug", 84));
+         HighTemperature.Add (new ChartDataPoint ("Sep", 78));
+         HighTemperature.Add (new ChartDataPoint ("Oct", 67));
+         HighTemperature.Add (new ChartDataPoint ("Nov", 55));
+         HighTemperature.Add (new ChartDataPoint ("Dec", 45));
+    }
 }
-}
-   
+    
 {% endhighlight %}
 
 
@@ -343,7 +343,7 @@ Now, you can add the series into the chart and set its ItemsSource as shown belo
 
 chart.Series.Add (new ColumnSeries () 
 {
-   ItemsSource = dataModel.HighTemperature
+    ItemsSource = dataModel.HighTemperature
 }); 
 
 {% endhighlight %}
@@ -352,14 +352,14 @@ chart.Series.Add (new ColumnSeries () 
 {% highlight xaml %}
 
 <chart:SfChart>
-   …
-<chart:SfChart.Series>
+    
+    ...
+    
+    <chart:SfChart.Series>
 
-<chart:ColumnSeries 
+        <chart:ColumnSeries ItemsSource = "{Binding HighTemperature}"/>
 
-ItemsSource = "{Binding HighTemperature}"/>
-
-</chart:SfChart.Series>
+    </chart:SfChart.Series>
 
 </chart:SfChart>
  
@@ -385,19 +385,19 @@ chart.Legend = new ChartLegend ();
 
 <chart:SfChart>
 
-<chart:SfChart.Legend>
+    <chart:SfChart.Legend>
 
-<chart:ChartLegend/>
+        <chart:ChartLegend/>
 
-</chart:SfChart.Legend>
+    </chart:SfChart.Legend>
 
-…
+    ...
 
 </chart:SfChart>
 
 {% endhighlight %}
 
- {% endtabs %}  
+{% endtabs %}  
 
 Circular legend icons will be displayed for each series by default. Next, we need to provide the labels for the series using the Label property, this information is displayed along the legend icon.
 
@@ -421,19 +421,20 @@ chart.Series.Add (new ColumnSeries () 
 {% highlight xaml %}
 
 <chart:SfChart>
-    …
+    
+    ...
 
-<chart:SfChart.Series>
+    <chart:SfChart.Series>
 
-<chart:ColumnSeries Label = "Series 1" ItemsSource = "{Binding HighTemperature}"/>
+        <chart:ColumnSeries Label = "Series 1" ItemsSource = "{Binding HighTemperature}"/>
 
-</chart:SfChart.Series>
+    </chart:SfChart.Series>
 
 </chart:SfChart>
   
 {% endhighlight %}
 
- {% endtabs %}  
+{% endtabs %}  
 
 ## Add multiple series to the chart
 
@@ -452,8 +453,8 @@ DataModel dataModel = new DataModel ();
 
 chart.Series.Add (new ColumnSeries () 
 {
-     ItemsSource = dataModel.Precipitation,
-     Label = "Precipitation"
+    ItemsSource = dataModel.Precipitation,
+    Label = "Precipitation"
      
 });
 
@@ -461,17 +462,17 @@ chart.Series.Add (new ColumnSeries () 
 
 chart.Series.Add (new SplineSeries () 
 {
-     ItemsSource = dataModel.HighTemperature,
-     Label = "High"
+    ItemsSource = dataModel.HighTemperature,
+    Label = "High"
     
 });
 
 //Adding the SplineSeries to the chart for displaying  low temperature
 
-     chart.Series.Add (new SplineSeries () 
+chart.Series.Add (new SplineSeries () 
 {
-     ItemsSource = dataModel.LowTemperature,
-     Label = "Low"
+    ItemsSource = dataModel.LowTemperature,
+    Label = "Low"
      
 });
 
@@ -480,16 +481,17 @@ chart.Series.Add (new SplineSeries () 
 {% highlight xaml %}
 
 <chart:SfChart>
-…
-<chart:SfChart.Series>
+    ...
+    
+    <chart:SfChart.Series>
 
-<chart:ColumnSeries   Label = "Low" ItemsSource = "{Binding Precipitation}"/>
+        <chart:ColumnSeries   Label = "Low" ItemsSource = "{Binding Precipitation}"/>
 
-<chart:SplineSeries  Label = "High" ItemsSource = "{Binding HighTemperature}"/>
+        <chart:SplineSeries  Label = "High" ItemsSource = "{Binding HighTemperature}"/>
 
-<chart:SplineSeries  Label = "Low" ItemsSource = "{Binding LowTemperature}"/>
+        <chart:SplineSeries  Label = "Low" ItemsSource = "{Binding LowTemperature}"/>
 
-</chart:SfChart.Series>
+    </chart:SfChart.Series>
 
 </chart:SfChart>
 
@@ -513,7 +515,9 @@ chart.Series.Add (new ColumnSeries () 
 {
     ItemsSource = dataModel.Precipitation,
     Label = "Precipitation",
-    YAxis = new NumericalAxis(){ OpposedPosition = true 
+    YAxis = new NumericalAxis(){ 
+        OpposedPosition = true 
+    }
 });
 
 {% endhighlight %}
@@ -521,18 +525,21 @@ chart.Series.Add (new ColumnSeries () 
 {% highlight xaml %}
 
 <chart:SfChart>
-…
 
-<chart:ColumnSeries   Label = "Low" ItemsSource = "{Binding Precipitation}">
+    ...
 
-<chart:ColumnSeries.YAxis>
+    <chart:ColumnSeries   Label = "Low" ItemsSource = "{Binding Precipitation}">
 
-<chart:NumericalAxis OpposedPosition ="true"/>
+        <chart:ColumnSeries.YAxis>
 
-</chart:ColumnSeries.YAxis>
+            <chart:NumericalAxis OpposedPosition ="true"/>
 
-</chart:ColumnSeries>
-…
+        </chart:ColumnSeries.YAxis>
+
+    </chart:ColumnSeries>
+
+    ...
+    
 </chart:SfChart>
 
 {% endhighlight %}
@@ -549,65 +556,65 @@ Here is the complete code sample for creating the Chart.
 
 public class WeatherChartDemo :  ContentPage 
 {  
-public WeatherChartDemo()   
-{
+    public WeatherChartDemo()   
+    {
 
-//Initializing chart
-	SfChart chart  =  new SfChart  ();   
-	chart.Title  =  new ChartTitle  () 
-	{ 
-		Text  =  "Weather Analysis" 			
+        //Initializing chart
+	    SfChart chart  =  new SfChart  ();   
+	    chart.Title  =  new ChartTitle  () 
+	    { 
+	    	Text  =  "Weather Analysis" 			
+    
+	    };
+    
+	    //Initializing Primary Axis
+	    CategoryAxis primaryAxis  =  new CategoryAxis  ();
+	    primaryAxis.Title  =  new ChartAxisTitle  () 
+	    { 
+	    	Text  =  "Month" 			
+	    };
+	    
+	    chart.PrimaryAxis  =  primaryAxis;
+    
+	    //Initializing Secondary Axis
+	    NumericalAxis secondaryAxis  =  new NumericalAxis  ();
+	    secondaryAxis.Title  =  new ChartAxisTitle  () 
+	    { 
+	    	Text  =  "Temperature" 			
+	    };
+	    chart.SecondaryAxis  =  secondaryAxis;
+    
+	    DataModel dataModel  =  new DataModel  ();
+    
+	    //Adding ColumnSeries to the chart for displaying  Precipitation
+	    chart.Series.Add  (new ColumnSeries  ()  
+	    {
+	        ItemsSource  =  dataModel.Precipitation,
+	        Label  =  "Precipitation",
+	        YAxis  =  new NumericalAxis() 
+	    { 
+	    	OpposedPosition  =  true,
+	    	ShowMajorGridLines =  false 
+	    }          
+	    });
+    
+	     //Adding the SplineSeries to the chart for displaying high temperature
+	    chart.Series.Add  (new SplineSeries  ()  
+	    {
+	    	ItemsSource  =  dataModel.HighTemperature,         
+	    	Label  =  "High"    			
+	    });
+    
+	     //Adding the SplineSeries to the chart for displaying low temperature
+	    chart.Series.Add (new SplineSeries()  
+	    {
+		ItemsSource  =  dataModel.LowTemperature,         
+		Label  =  "Low"   			  
+        });
 
-	};
-
-	//Initializing Primary Axis
-	CategoryAxis primaryAxis  =  new CategoryAxis  ();
-	primaryAxis.Title  =  new ChartAxisTitle  () 
-	{ 
-		Text  =  "Month" 			
-	};
-	
-	chart.PrimaryAxis  =  primaryAxis;
-
-	//Initializing Secondary Axis
-	NumericalAxis secondaryAxis  =  new NumericalAxis  ();
-	secondaryAxis.Title  =  new ChartAxisTitle  () 
-	{ 
-		Text  =  "Temperature" 			
-	};
-	chart.SecondaryAxis  =  secondaryAxis;
-
-	DataModel dataModel  =  new DataModel  ();
-
-	//Adding ColumnSeries to the chart for displaying  Precipitation
-	chart.Series.Add  (new ColumnSeries  ()  
-	{
-	ItemsSource  =  dataModel.Precipitation,
-	Label  =  "Precipitation",
-	YAxis  =  new NumericalAxis() 
-	{ 
-		OpposedPosition  =  true,
-		ShowMajorGridLines =  false 
-	}          
-	});
-
-	 //Adding the SplineSeries to the chart for displaying high temperature
-	chart.Series.Add  (new SplineSeries  ()  
-	{
-		ItemsSource  =  dataModel.HighTemperature,         
-		Label  =  "High"    			
-	});
-
-	 //Adding the SplineSeries to the chart for displaying low temperature
-	chart.Series.Add (new SplineSeries()  
-		{
-			ItemsSource  =  dataModel.LowTemperature,         
-			Label  =  "Low"   			  
-		});
-
-	//Adding Chart Legend for the Chart
-	chart.Legend  =  new ChartLegend  ();
-	this.Content  =  chart;        
+	    //Adding Chart Legend for the Chart
+	    chart.Legend  =  new ChartLegend  ();
+	    this.Content  =  chart;        
 	}	    
 }
 
@@ -718,63 +725,63 @@ public class DataModel
 
 <chart:SfChart>
 
-<chart:SfChart.Legend>
+    <chart:SfChart.Legend>
 
-<chart:ChartLegend/>
+        <chart:ChartLegend/>
 
-</chart:SfChart.Legend>
+    </chart:SfChart.Legend>
 
-<chart:SfChart.Title>
+    <chart:SfChart.Title>
 
-<chart:ChartTitle Text="Weather Analysis"/>
-
-</chart:SfChart.Title>
-
-<chart:SfChart.PrimaryAxis>
-
-<chart:CategoryAxis>
-
-<chart:CategoryAxis.Title>
-
-<chart:ChartAxisTitle Text="Month"/>
-
-</chart:CategoryAxis.Title>
-
-</chart:CategoryAxis>
-
-</chart:SfChart.PrimaryAxis>
-
-<chart:SfChart.SecondaryAxis>
-
-<chart:NumericalAxis>
-
-<chart:NumericalAxis.Title>
-
-<chart:ChartAxisTitle Text="Month"/>
-
-</chart:NumericalAxis.Title>
-
-</chart:NumericalAxis>
-
-</chart:SfChart.SecondaryAxis>
-
-<chart:SfChart.Series>
-
-<chart:ColumnSeries   Label = "Low" ItemsSource = "{Binding Precipitation}">
-
-<chart:ColumnSeries.YAxis>
-
-<chart:NumericalAxis OpposedPosition="true" ShowMajorGridLines="false"/>
-
-</chart:ColumnSeries.YAxis>
-
-</chart:ColumnSeries>
-
-<chart:SplineSeries  Label = "High" ItemsSource = "{Binding HighTemperature}"/>
-
-<chart:SplineSeries  Label = "Low" ItemsSource = "{Binding LowTemperature}"/>
-
-</chart:SfChart.Series>
+        <chart:ChartTitle Text="Weather Analysis"/>
+    
+    </chart:SfChart.Title>
+    
+    <chart:SfChart.PrimaryAxis>
+    
+        <chart:CategoryAxis>
+        
+            <chart:CategoryAxis.Title>
+        
+                <chart:ChartAxisTitle Text="Month"/>
+        
+            </chart:CategoryAxis.Title>
+        
+        </chart:CategoryAxis>
+    
+    </chart:SfChart.PrimaryAxis>
+    
+    <chart:SfChart.SecondaryAxis>
+    
+        <chart:NumericalAxis>
+        
+            <chart:NumericalAxis.Title>
+        
+                <chart:ChartAxisTitle Text="Month"/>
+        
+            </chart:NumericalAxis.Title>
+        
+        </chart:NumericalAxis>
+    
+    </chart:SfChart.SecondaryAxis>
+    
+    <chart:SfChart.Series>
+    
+        <chart:ColumnSeries   Label = "Low" ItemsSource = "{Binding Precipitation}">
+        
+            <chart:ColumnSeries.YAxis>
+            
+                <chart:NumericalAxis OpposedPosition="true" ShowMajorGridLines="false"/>
+            
+            </chart:ColumnSeries.YAxis>
+        
+        </chart:ColumnSeries>
+        
+        <chart:SplineSeries  Label = "High" ItemsSource = "{Binding HighTemperature}"/>
+        
+        <chart:SplineSeries  Label = "Low" ItemsSource = "{Binding LowTemperature}"/>
+    
+    </chart:SfChart.Series>
 
 </chart:SfChart>
 

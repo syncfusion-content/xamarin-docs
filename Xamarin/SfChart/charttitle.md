@@ -46,7 +46,7 @@ sfChart.Title.TextColor = Color.Blue;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/ChartTitle/text.png](charttitle_images/charttitle_img1.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/ChartTitle/text.png](charttitle_images/charttitle_img1.png)
 
 
 ## Text Alignment
@@ -75,4 +75,4 @@ sfChart.Title.TextColor = Color.Blue;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/ChartTitle/text-alignment.png](charttitle_images/charttitle_img2.jpeg)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/ChartTitle/text-alignment.png](charttitle_images/charttitle_img2.png)

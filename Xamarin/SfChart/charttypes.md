@@ -784,8 +784,8 @@ BubbleSeries bubbleSeries = new BubbleSeries()
 { 
 	ItemsSource = Data, 
 	XBindingPath = "XValue", 
-	BindingPath = "YValue", 
-	XBindingPath = "Size” 
+	YBindingPath = "YValue", 
+	Size = "Size” 
 };
 chart.Series.Add(bubbleSeries);
 
@@ -917,7 +917,6 @@ You can use the following properties to customize the HiLoOpenCloseSeries segmen
 
 * `Color` – used to change the color of the series.
 * `StrokeWidth` – used to change the stroke width of the series.
-* `StrokeColor` – used to change the stroke color of the series.
 
 ![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/HILO.png](charttypes_images/charttypes_img18.png)
 

@@ -140,13 +140,13 @@ You can group and stack the similar stacked series types using `GroupingLabel` p
 <chart:SfChart>
 ...
 
-	<chart:StackingColumnSeries ItemsSource ="{Binding Data1}" GroupingLabel="GruopOne" Label="Google" XBindingPath="Month" YBindingPath="Value"/>
+	<chart:StackingColumnSeries ItemsSource ="{Binding Data1}" GroupingLabel="GroupOne" Label="Google" XBindingPath="Month" YBindingPath="Value"/>
 
-	<chart:StackingColumnSeries ItemsSource ="{Binding Data2}" GroupingLabel="GruopOne" Label="Bing" XBindingPath="Month" YBindingPath="Value"/>
+	<chart:StackingColumnSeries ItemsSource ="{Binding Data2}" GroupingLabel="GroupTwo" Label="Bing" XBindingPath="Month" YBindingPath="Value"/>
 
-	<chart:StackingColumnSeries ItemsSource ="{Binding Data3}" GroupingLabel="GruopTwo" Label="Yahoo" XBindingPath="Month" YBindingPath="Value"/>
+	<chart:StackingColumnSeries ItemsSource ="{Binding Data3}" GroupingLabel="GroupOne" Label="Yahoo" XBindingPath="Month" YBindingPath="Value"/>
 	
-	<chart:StackingColumnSeries ItemsSource ="{Binding Data4}" GroupingLabel="GruopTwo" Label="Ask" XBindingPath="Month" YBindingPath="Value"/>
+	<chart:StackingColumnSeries ItemsSource ="{Binding Data4}" GroupingLabel="GroupTwo" Label="Ask" XBindingPath="Month" YBindingPath="Value"/>
 
 </chart:SfChart>
 
@@ -170,7 +170,7 @@ StackingColumnSeries stackingColumnSeries1 = new StackingColumnSeries()
 StackingColumnSeries stackingColumnSeries2 = new StackingColumnSeries() 
 { 
 	ItemsSource = Data2, 
-	GroupingLabel = "GroupOne",
+	GroupingLabel = "GroupTwo",
 	Label = "Bing",
 	XBindingPath = "Month", 
 	YBindingPath = "Value" 
@@ -179,7 +179,7 @@ StackingColumnSeries stackingColumnSeries2 = new StackingColumnSeries()
 StackingColumnSeries stackingColumnSeries3 = new StackingColumnSeries() 
 { 
 	ItemsSource = Data3,
-	GroupingLabel = "GroupTwo",
+	GroupingLabel = "GroupOne",
 	Label = "Yahoo",
 	XBindingPath = "Month", 
 	YBindingPath = "Value" 

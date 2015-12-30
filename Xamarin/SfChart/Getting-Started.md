@@ -310,7 +310,7 @@ In SfChart, the series itemsource should be a collection of _ChartDataPoint_ obj
 
 public class DataModel
 {
-    public ObservableCollection<ChartDataPoint>  HighTemperature;
+    public ObservableCollection<ChartDataPoint>  HighTemperature { get; set; }
     
     public DataModel ()
     {

@@ -88,7 +88,7 @@ Currently, Chart supports only Metro palette.
 
 		<chart:ColumnSeries.ColorModel>
 
-			<chart:ChartColorModel Palette="Metro" CustomBrushes="{Binding Colors}"/>
+			<chart:ChartColorModel Palette="Metro"/>
 
 		</chart:ColumnSeries.ColorModel>
 

@@ -592,10 +592,10 @@ public class WeatherChartDemo :  ContentPage
 	        ItemsSource  =  dataModel.Precipitation,
 	        Label  =  "Precipitation",
 	        YAxis  =  new NumericalAxis() 
-	    { 
-	    	OpposedPosition  =  true,
-	    	ShowMajorGridLines =  false 
-	    }          
+	        { 
+	    	    OpposedPosition  =  true,
+	    	    ShowMajorGridLines =  false 
+	        }          
 	    });
     
 	     //Adding the SplineSeries to the chart for displaying high temperature
@@ -608,8 +608,8 @@ public class WeatherChartDemo :  ContentPage
 	     //Adding the SplineSeries to the chart for displaying low temperature
 	    chart.Series.Add (new SplineSeries()  
 	    {
-		ItemsSource  =  dataModel.LowTemperature,         
-		Label  =  "Low"   			  
+		    ItemsSource  =  dataModel.LowTemperature,         
+		    Label  =  "Low"   			  
         });
 
 	    //Adding Chart Legend for the Chart
@@ -788,7 +788,6 @@ public class DataModel
 {% endhighlight %}
 
 {% endtabs %}  
-
 
 ![](Getting-Started_images/img3.png)
 

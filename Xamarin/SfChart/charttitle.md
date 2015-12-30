@@ -25,11 +25,11 @@ Following properties are used to customize its appearance.
 
 <chart:SfChart>
 
-<chart:SfChart.Title>
+	<chart:SfChart.Title>
 
-<chart:ChartTitle Text="Efficiency of oil-fired power production" TextColor="Blue"/>
+		<chart:ChartTitle Text="Efficiency of oil-fired power production" TextColor="Blue"/>
 
-</chart:SfChart.Title>  
+	</chart:SfChart.Title>  
 
 </chart:SfChart>
 
@@ -58,7 +58,7 @@ You can align the title text content to the Start, Center or End of the title us
 
 <chart:SfChart.Title>
 
-<chart:ChartTitle Text="Efficiency of oil-fired power production" TextAlignment="Start" TextColor="Blue"/>
+	<chart:ChartTitle Text="Efficiency of oil-fired power production" TextAlignment="Start" TextColor="Blue"/>
 
 </chart:SfChart.Title>  
 

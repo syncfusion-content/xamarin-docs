@@ -46,6 +46,62 @@ chart.Series.Add(lineSeries);
 
 ![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/cartesianseries_clubbed/Line.png](charttypes_images/charttypes_img1.png)
 
+## Fast Line Chart
+
+`FastLineSeries` is a line chart, but it loads faster than `LineSeries`. You can use this when there are large number of points to be loaded in chart. To render a fast line chart, create an instance of `FastLineSeries` and add to the `Series` collection property of `SfChart`. You can use the following properties to customize the fast line segment appearance.
+
+* `Color` – used to change the color of the series.
+* `StrokeWidth` – used to change the stroke width of the series.
+
+{% highlight xaml %}
+[XAML]
+
+<chart:SfChart>
+...
+
+	<chart:FastLineSeries ItemsSource ="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue"/>
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+[C#]
+
+SfChart chart = new SfChart();
+...
+
+FastLineSeries fastLineSeries = new FastLineSeries() 
+{ 
+	ItemsSource = Data, 
+	XBindingPath = "XValue", 
+	YBindingPath = "YValue"  
+};
+chart.Series.Add(fastLineSeries);
+
+{% endhighlight %}
+
+![C:/Users/yuvaraj.palanisamy/Documents/My Received Files/fastline1.png](charttypes_images/charttypes_img14.png)
+
+### Dashed Lines
+
+`StrokeDashArray` property of the `FastLineSeries` is used to render fast line series with dashes.
+
+{% highlight c# %}
+[C#]
+
+FastLineSeries fastLineSeries = new FastLineSeries() 
+{ 
+	ItemsSource = Data, 
+	XBindingPath = "Month", 
+	YBindingPath = "Value" 
+};
+fastLineSeries.StrokeDashArray = new double[2] { 2, 3 };
+
+{% endhighlight %}
+
+![C:/Users/yuvaraj.palanisamy/Documents/My Received Files/faslinedas(1).png](charttypes_images/charttypes_img15.png)
+
 ## Area Chart
 
 To render an area chart, create an instance of `AreaSeries` and add to the `Series` collection property of `SfChart`. You can use the following properties to customize the appearance.
@@ -665,62 +721,6 @@ chart.Series.Add(splineSeries);
 {% endhighlight %}
 
 ![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Cartesianseries1-clubbed/Spline.png](charttypes_images/charttypes_img13.png)
-
-## Fast Line Chart
-
-`FastLineSeries` is a line chart, but it loads faster than `LineSeries`. You can use this when there are large number of points to be loaded in chart. To render a fast line chart, create an instance of `FastLineSeries` and add to the `Series` collection property of `SfChart`. You can use the following properties to customize the fast line segment appearance.
-
-* `Color` – used to change the color of the series.
-* `StrokeWidth` – used to change the stroke width of the series.
-
-{% highlight xaml %}
-[XAML]
-
-<chart:SfChart>
-...
-
-	<chart:FastLineSeries ItemsSource ="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue"/>
-
-</chart:SfChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-[C#]
-
-SfChart chart = new SfChart();
-...
-
-FastLineSeries fastLineSeries = new FastLineSeries() 
-{ 
-	ItemsSource = Data, 
-	XBindingPath = "XValue", 
-	YBindingPath = "YValue"  
-};
-chart.Series.Add(fastLineSeries);
-
-{% endhighlight %}
-
-![C:/Users/yuvaraj.palanisamy/Documents/My Received Files/fastline1.png](charttypes_images/charttypes_img14.png)
-
-### Dashed Lines
-
-`StrokeDashArray` property of the `FastLineSeries` is used to render fast line series with dashes.
-
-{% highlight c# %}
-[C#]
-
-FastLineSeries fastLineSeries = new FastLineSeries() 
-{ 
-	ItemsSource = Data, 
-	XBindingPath = "Month", 
-	YBindingPath = "Value" 
-};
-fastLineSeries.StrokeDashArray = new double[2] { 2, 3 };
-
-{% endhighlight %}
-
-![C:/Users/yuvaraj.palanisamy/Documents/My Received Files/faslinedas(1).png](charttypes_images/charttypes_img15.png)
 
 ## Bubble Chart
 

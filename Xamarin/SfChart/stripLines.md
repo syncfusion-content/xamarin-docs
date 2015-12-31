@@ -76,7 +76,7 @@ numericalAxis.StripLines.Add(stripLine1);
 
 {% endhighlight %}
 
-![C:/Users/yuvaraj.palanisamy/AppData/Local/Microsoft/Windows/INetCache/Content.Word/Numerical.png](Stripline_images/Stripline_img1.png)
+![C:/Users/yuvaraj.palanisamy/AppData/Local/Microsoft/Windows/INetCache/Content.Word/Numerical.png](striplines_images/stripline_img1.png)
 
 **DateTimeStripLine**
 
@@ -147,7 +147,7 @@ dateTimeAxis.StripLines.Add(stripLine);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin UG images/UG images for md/stripeline output/Date-time.png](Stripline_images/Stripline_img2.png)
+![D:/Chart UG/Xamarin UG images/UG images for md/stripeline output/Date-time.png](striplines_images/stripline_img2.png)
 
 ## Strip Line Recurrence
 
@@ -217,7 +217,7 @@ numericalAxis.StripLines.Add(stripLine);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/UG images/Stripline/Stripline Recurrence/striplinerecueernce.png](Stripline_images/Stripline_img3.png)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/UG images/Stripline/Stripline Recurrence/striplinerecueernce.png](striplines_images/stripline_img3.png)
 
 ## Customize Text
 
@@ -306,7 +306,7 @@ numericalAxis.StripLines.Add(stripLine);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin UG images/UG images for md/stripeline output/labelstyle.png](Stripline_images/Stripline_img4.png)
+![D:/Chart UG/Xamarin UG images/UG images for md/stripeline output/labelstyle.png](striplines_images/stripline_img4.png)
 
 ## Segmented Strip Line
 
@@ -389,7 +389,7 @@ chart.SecondaryAxis = numericalAxis;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin UG images/UG images for md/stripeline output/DateTimeSegmentStip.png](Stripline_images/Stripline_img5.png)
+![D:/Chart UG/Xamarin UG images/UG images for md/stripeline output/DateTimeSegmentStip.png](striplines_images/stripline_img5.png)
 
 Following code snippet shows how to set the segment start and end value if the associated axis type is date time. 
 
@@ -487,4 +487,4 @@ numericalAxis.StripLines.Add(stripLine);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin UG images/UG images for md/stripeline output/NumericalSegmentStrip.png](Stripline_images/Stripline_img6.png)
+![D:/Chart UG/Xamarin UG images/UG images for md/stripeline output/NumericalSegmentStrip.png](striplines_images/stripline_img6.png)

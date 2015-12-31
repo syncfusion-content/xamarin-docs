@@ -539,7 +539,7 @@ SfCircularGauge circularGauge = new SfCircularGauge();
 
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:gauge="clr-namespace:Syncfusion.SfGauge.XForms;
@@ -598,7 +598,7 @@ scales.Add(scale);
 
 
 
-{% highlight xml %}  
+{% highlight xaml %}  
 
 <gauge:SfCircularGauge>
 
@@ -647,7 +647,7 @@ scale.Ranges.Add(range);
 {% endhighlight %}
 
 
-{% highlight xml %}   
+{% highlight xaml %}   
 
 <gauge:SfCircularGauge>
 
@@ -709,7 +709,7 @@ scale.Pointers.Add(needlePointer);
 
 
 
-{% highlight xml %} 
+{% highlight xaml %} 
 
 <gauge:SfCircularGauge>
 
@@ -776,7 +776,7 @@ scale.Pointers.Add(rangePointer);
 
 
 
-{% highlight xml %}  
+{% highlight xaml %}  
 
 <gauge:SfCircularGauge>
 

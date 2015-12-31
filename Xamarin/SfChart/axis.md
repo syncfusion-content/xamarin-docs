@@ -22,7 +22,7 @@ Vertical(Y) axis always uses numerical scale. Horizontal(X) axis supports the fo
 
 Category axis displays text labels instead of numbers. 
 
-{% highlight xml %}
+{% highlight xaml %}
 [XAML]
 
 <chart:SfChart.PrimaryAxis >
@@ -48,7 +48,7 @@ chart.PrimaryAxis = new CategoryAxis();
 
 Labels in category axis can be placed between the ticks by setting `LabelPlacement` to `BetweenTicks`. Default value of `LabelPlacement` property is `OnTicks` i.e. labels will be placed on the ticks by default.
 
-{% highlight xml %}
+{% highlight xaml %}
 [XAML]
 
 <chart:SfChart.PrimaryAxis >
@@ -73,7 +73,7 @@ chart.PrimaryAxis = new CategoryAxis() { LabelPlacement = LabelPlacement.Between
 
 To display labels after a fixed interval n, you can set `Interval` property of ChartAxis as n. Default value of interval is 1 i.e. all the labels will be displayed by default.
 
-{% highlight xml %}
+{% highlight xaml %}
 [XAML]
 
 <chart:SfChart.PrimaryAxis >
@@ -100,7 +100,7 @@ chart.PrimaryAxis = new CategoryAxis() { Interval = 2, LabelPlacement = LabelPla
 
 Numeric axis uses numerical scale and displays numbers as labels. 
 
-{% highlight xml %}
+{% highlight xaml %}
 [XAML]
 
 <chart:SfChart.PrimaryAxis >
@@ -125,7 +125,7 @@ chart.PrimaryAxis = new NumericalAxis();
 
 To customize the range of an axis, you can use the `Minimum` and `Maximum` properties of `NumericalAxis`. By default, nice range will be calculated automatically based on the provided data.
 
-{% highlight xml %}
+{% highlight xaml %}
 [XAML]
 
 <chart:SfChart.SecondaryAxis >
@@ -149,7 +149,7 @@ chart.SecondaryAxis = new NumericalAxis() { Minimum = 10, Maximum = 50 };
 
 Axis interval can be customized using the `Interval` property of ChartAxis. By default, nice interval will be calculated based on the minimum and maximum value of the provided data.
 
-{% highlight xml %}
+{% highlight xaml %}
 [XAML]
 
 <chart:SfChart.SecondaryAxis >
@@ -182,7 +182,7 @@ Padding can be applied to the minimum and maximum extremes of the axis range by 
 
 When the value of `RangePadding` property is `None`, padding will not be applied to the axis. This is also the default value of `RangePadding` for horizontal axis.
 
-{% highlight xml %}
+{% highlight xaml %}
 [XAML]
 
 <chart:SfChart.SecondaryAxis>
@@ -207,7 +207,7 @@ chart.SecondaryAxis = new NumericalAxis() { RangePadding = NumericalPadding.None
 
 When the value of `RangePadding` property is `Round`, axis range will be rounded to the nearest possible value divided by the interval.
 
-{% highlight xml %}
+{% highlight xaml %}
 [XAML]
 
 <chart:SfChart.SecondaryAxis>
@@ -231,7 +231,7 @@ chart.SecondaryAxis = new NumericalAxis() { RangePadding = NumericalPadding.Roun
 
 When the value of `RangePadding` property is `Additional`, axis range will be rounded and an interval of the axis will be added as padding to the minimum and maximum values of the range.
 
-{% highlight xml %}
+{% highlight xaml %}
 [XAML]
 
 <chart:SfChart.SecondaryAxis>
@@ -255,7 +255,7 @@ chart.SecondaryAxis = new NumericalAxis() { RangePadding = NumericalPadding.Addi
 
 When the value of `RangePadding` property is `Normal`, nice range will be calculated for the axis based on the best readability of the data. This is also the default for vertical axis.
 
-{% highlight xml %}
+{% highlight xaml %}
 [XAML]
 
 <chart:SfChart.SecondaryAxis>
@@ -279,7 +279,7 @@ chart.SecondaryAxis = new NumericalAxis() { RangePadding = NumericalPadding.Norm
 
 Date time axis uses date time scale and displays date time values as axis labels in specified format. 
 
-{% highlight xml %}
+{% highlight xaml %}
 [XAML]
 
 <chart:SfChart.PrimaryAxis >
@@ -303,7 +303,7 @@ chart.PrimaryAxis = new DateTimeAxis();
 
 To customize the range of an axis, you can use the `Minimum` and `Maximum` properties of `DateTimeAxis`. By default, nice range will be calculated automatically based on the provided data.
 
-{% highlight xml %}
+{% highlight xaml %}
 [XAML]
 
 Namespace:
@@ -371,7 +371,7 @@ Essential Chart supports the following types of interval for date time axis
 * Seconds
 * Milliseconds
 
-{% highlight xml %}
+{% highlight xaml %}
 
 [XAML]
 
@@ -412,7 +412,7 @@ Padding can be applied to the minimum and maximum extremes of the range by using
 
 When the value of `RangePadding` property is `None`, padding will not be applied to the axis. This is also the default value of `RangePadding`.
 
-{% highlight xml %}
+{% highlight xaml %}
 [XAML]
 
 <chart:SfChart.PrimaryAxis>
@@ -436,7 +436,7 @@ chart.PrimaryAxis = new DateTimeAxis() { RangePadding = DateTimeRangePadding.Non
 
 When the value of `RangePadding` property is `round`, axis range will be rounded to the nearest possible date time value.
 
-{% highlight xml %}
+{% highlight xaml %}
 [XAML]
 
 <chart:SfChart.PrimaryAxis >
@@ -460,7 +460,7 @@ chart.PrimaryAxis = new DateTimeAxis() { RangePadding = DateTimeRangePadding.Rou
 
 When the value of `RangePadding` property is `Additional`, range will be rounded and date time interval of the axis will be added as padding to the minimum and maximum extremes of the range.
 
-{% highlight xml %}
+{% highlight xaml %}
 [XAML]
 
 <chart:SfChart.PrimaryAxis >
@@ -488,7 +488,7 @@ Customization of features such as axis title, labels, grid lines and tick lines 
 
 Axis visibility can be controlled using the `IsVisible` property of axis. Default value of `IsVisible` property is `True`.
 
-{% highlight xml %}
+{% highlight xaml %}
 [XAML]
 
 <chart:SfChart.SecondaryAxis>
@@ -522,7 +522,7 @@ The `Title` property in axis provides options to customize the text and font of 
 
 Following code snippet illustrates how to enable and customize the axis title.
 
-{% highlight xml %}
+{% highlight xaml %}
 [XAML]
 
 <chart:SfChart.PrimaryAxis>
@@ -574,7 +574,7 @@ The `LabelStyle` property of axis provides options to customize the font-family,
 * `Font` – used to change the text size, font family and font weight.
 * `Margin` - used to change the margin size for labels.
 
-{% highlight xml %}
+{% highlight xaml %}
 [XAML]
 
 <chart:SfChart.PrimaryAxis>
@@ -614,9 +614,9 @@ chart.PrimaryAxis.LabelStyle.TextColor = Color.Red;
 
 ### Label and tick positioning
 
-Axis labels and ticks can be positioned inside or outside the chart area by using `LabelStyle`.`LabelsPosition` and `LabelStyle`.`TickPosition` properties of ChartAxis. By default labels and ticks will be positioned outside the chart area.
+Axis labels and ticks can be positioned inside or outside the chart area by using `LabelStyle`.`LabelsPosition` and `TickPosition` properties of ChartAxis. By default labels and ticks will be positioned outside the chart area.
 
-{% highlight xml %}
+{% highlight xaml %}
 [XAML]
 
 <chart:SfChart.PrimaryAxis >
@@ -650,7 +650,7 @@ chart.PrimaryAxis.TickPosition = AxisElementPosition.Inside;
 
 Labels with long text at the edges of an axis may appear partially outside the chart. The `EdgeLabelsDrawingMode` property can be used to avoid the partial appearance of labels at the corners.
 
-{% highlight xml %}
+{% highlight xaml %}
 [XAML]
 
 <chart:CategoryAxis EdgeLabelsDrawingMode="Shift"/>
@@ -670,7 +670,7 @@ chart.PrimaryAxis.EdgeLabelsDrawingMode = EdgeLabelsDrawingMode.Shift;
 
 The `ShowMajorGridLines` and `ShowMinorGridLines` properties are used to control the visibility of grid lines. `MajorGridLineStyle` and `MinorGridLineStyle` properties in axis are used to customize the major grid lines and minor grid lines of an axis respectively. They provide options to change the width, dashes, color of grid lines. By default minor grid lines will not be visible. 
 
-{% highlight xml %}
+{% highlight xaml %}
 [XAML]
 
 <chart:SfChart.SecondaryAxis >
@@ -704,7 +704,7 @@ chart. SecondaryAxis = new NumericalAxis ()
 
 The `MajorTickStyle` and `MinorTickStyle` properties in axis are used to customize the major tick lines of an axis and minor tick lines of an axis respectively. They provide options to change the width, size, color and visibility of tick lines. By default minor tick lines will not be visible.
 
-{% highlight xml %}
+{% highlight xaml %}
 [XAML]
 
 <chart:SfChart.SecondaryAxis >
@@ -784,7 +784,7 @@ chart.SecondaryAxis.IsInversed = true;
 
 The `OpposedPosition` property of axis can be used to place the axis at the opposite side of its default position. Default value of `OpposedPosition` property is `False`. 
 
-{% highlight xml %}
+{% highlight xaml %}
 [XAML]
 
 <chart:SfChart.SecondaryAxis >
@@ -808,7 +808,7 @@ chart.SecondaryAxis.OpposedPosition = true;
 
 By default, a maximum of 3 labels are displayed for each 100 pixels in axis. The maximum number of labels that should be present within 100 pixels length can be customized using the `MaximumLabels` property of an axis. This property is applicable only for automatic range calculation and will not work if you set value for `Interval` property of an axis.
 
-{% highlight xml %}
+{% highlight xaml %}
 [XAML]
 
 <chart:SfChart.SecondaryAxis >
@@ -832,7 +832,7 @@ Chart.SecondaryAxis.MaximumLabels = 5;
 
 Axis labels may overlap with each other based on chart dimensions and label size. The `LabelsIntersectAction` property of axis is useful in avoiding the overlapping of axis labels with each other. Default value of `LabelsIntersectAction` is `None`. Other available values of `LabelsIntersectAction` are `MultipleRows` and `Hide`.
 
-{% highlight xml %}
+{% highlight xaml %}
 [XAML]
 
 <chart:SfChart.PrimaryAxis >

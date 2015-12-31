@@ -104,7 +104,7 @@ The first step is to create a TreeMap object.
 
 {% tabs %}  
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <?xml version="1.0" encoding="UTF-8"?>
 
@@ -148,7 +148,7 @@ The TreeMap accepts a collection of TreeMapItems as input.
 
 {% tabs %}  
 
-{% highlight xml %}
+{% highlight xaml %}
 
 // BindingContext is set for the content page class.
 
@@ -237,7 +237,7 @@ You can differentiate the nodes based on its value and color ranges using the Ra
 
 {% tabs %}  
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <local:SfTreeMap x:Name="treeMap" Items = "{Binding TreeMapItems}">
 
@@ -280,7 +280,7 @@ You can customize the Leaf level TreeMap items using LeafItem setting.
 
 {% tabs %}  
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <local:SfTreeMap x:Name="treeMap" Items = "{Binding TreeMapItems}">
 
@@ -318,7 +318,7 @@ You can customize the labels of the legend items using the LegendLabel property 
 
 {% tabs %} 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <local:SfTreeMap.LegendSettings>
     <local:LegendSettings  ShowLegend ="true" IconSize=“15,15" Size=“350,70"  />

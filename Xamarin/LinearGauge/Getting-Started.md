@@ -122,7 +122,7 @@ return new ContentPage
 
 {% endhighlight %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:local="clr-namespace:Syncfusion.XForms.SfGauge;
@@ -182,7 +182,7 @@ linearGauge.Scales = scales;
 
 {% endhighlight %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <gauge:SflinearGauge>
 
@@ -239,7 +239,7 @@ scale.Ranges.Add(range);
 {% endhighlight %}
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <local:SfLinearGauge>
 
@@ -311,7 +311,7 @@ pointers.Add(rangePointer);
 {% endhighlight %}
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <local:SfLinearGauge>
 
@@ -390,7 +390,7 @@ scale.MajorTickSettings = major;
 {% endhighlight %}
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <local:SfLinearGauge>
 

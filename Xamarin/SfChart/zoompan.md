@@ -80,12 +80,12 @@ chart.ChartBehaviors.Add(zoomPanBehavior);
 
 Following screenshot shows the box selection on chart area,
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Chartbehavior -clubbed/selectionzoom.png](ZoomPan_images/ZoomPan_img1.png)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Chartbehavior -clubbed/selectionzoom.png](zoompan_images/zoompan_img1.png)
 
 
 Following screenshot shows the zoomed area,
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Chartbehavior -clubbed/selectedZoom.png](ZoomPan_images/ZoomPan_img2.png)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Chartbehavior -clubbed/selectedZoom.png](zoompan_images/zoompan_img2.png)
 
 ## Zoom Mode
 
@@ -113,7 +113,7 @@ zoomPanBehavior.ZoomMode = ZoomMode.X;
 
 {% endhighlight %}
 
-![C:/Users/yuvaraj.palanisamy/Documents/My Received Files/zoom3.png](ZoomPan_images/ZoomPan_img3.png)
+![C:/Users/yuvaraj.palanisamy/Documents/My Received Files/zoom3.png](zoompan_images/zoompan_img3.png)
 
 ## Events
 

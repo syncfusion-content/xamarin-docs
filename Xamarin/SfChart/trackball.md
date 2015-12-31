@@ -49,7 +49,7 @@ chart.ChartBehaviors.Add(trackballBehavior);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Chartbehavior -clubbed/Trackball.png](trackball_images/trackball_imag1.png)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Chartbehavior -clubbed/Trackball.png](trackball_images/trackball_img1.png)
 
 ## Label Display Mode
 
@@ -78,7 +78,7 @@ trackballBehavior.LabelDisplayMode = TrackballLabelDisplayMode.NearestPoint;
 
 In the following screenshot, trackball label is shown for only single data point,
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Chartbehavior -clubbed/Trackball-mode.png](track_images/trackbal2_imag1.png)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Chartbehavior -clubbed/Trackball-mode.png](trackball_images/trackball_img2.png)
 
 ## Customizing appearance
 
@@ -260,4 +260,4 @@ chart.ChartBehaviors.Add(trackballBehavior);
 
 Following screenshot illustrates the customization of trackball elements.
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Chartbehavior -clubbed/Trackball-customize.png](track_images/trackball_img3.png)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Chartbehavior -clubbed/Trackball-customize.png](trackball_images/trackball_img3.png)

@@ -958,7 +958,7 @@ Candle chart requires five values (X, Open, High, Low and Close) to plot a point
 
 There are two ways you can provide data to an candle chart,
 
-1.You can use [http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataPoint~_ctor(IComparable,Double,Double,Double,Double).html#) five parameter constructor to pass x, open, high, low and close values to  `CandleSeries`,
+1.You can use [ChartDataPoint's](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataPoint~_ctor(IComparable,Double,Double,Double,Double).html#) five parameter constructor to pass x, open, high, low and close values to  `CandleSeries`,
 
 {% highlight c# %}
 [C#]

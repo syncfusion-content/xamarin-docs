@@ -308,7 +308,7 @@ numericalAxis.StripLines.Add(stripLine);
 
 ![D:/Chart UG/Xamarin UG images/UG images for md/stripeline output/labelstyle.png](striplines_images/stripline_img4.png)
 
-## Segmented Strip Line
+## Segmented StripLine
 
 Typically, if you draw a strip line for a vertical axis, the height of the strip line is determined by the `Start` and `Width` properties and width of the strip line is equivalent to the width of its associated horizontal axis i.e., strip line is drawn horizontally to the entire stretch of its associated horizontal axis. Similarly, for horizontal axis, width is determined by `Start` and `Width` properties, and vertically, it is drawn to the entire stretch of the associated vertical axis.
 
@@ -319,7 +319,7 @@ Suppose, you want to draw a strip line that should not stretch along its associa
 * `SegmentEnd` – Used to change the segment end value. Value correspond to associated axis.
 * `SegmentAxisName` – Specify the name of the associated axis name.
 
-[Note: You can set the double or DateTime value for SegmentStart and SegmentEnd properties based on the associated axis type]
+N>You can set the double or DateTime value for SegmentStart and SegmentEnd properties based on the associated axis type.
 
 Following code snippet shows how to set the segment start and end value if the associated axis type is numerical.
 

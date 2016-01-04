@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Performance Chart | Xamarin.Forms | Syncfusion
+title: Performance Line Chart
 description: Performance in Essential Xamarin.Forms Chart
 platform: xamarin
 control: Chart

@@ -127,13 +127,13 @@ pcl\Syncfusion.SfChart.XForms.dll
 
 android\Syncfusion.SfChart.Andriod.dll
 
-android\Syncfusion.SfChart.xForms.Andriod.dll
+android\Syncfusion.SfChart.XForms.Andriod.dll
 
 ### iOS(Classic) project
 
 ios\Syncfusion.SfChart.iOS.dll 
 
-ios\Syncfusion.SfChart.xForms.iOS.dll
+ios\Syncfusion.SfChart.XForms.iOS.dll
 
 ios\Syncfusion.SfChart.XForms.dll
 
@@ -141,7 +141,7 @@ ios\Syncfusion.SfChart.XForms.dll
 
 ios-unified\Syncfusion.SfChart.iOS.dll 
 
-ios-unified\Syncfusion.SfChart.xForms.iOS.dll
+ios-unified\Syncfusion.SfChart.XForms.iOS.dll
 
 ios-unified\Syncfusion.SfChart.XForms.dll
 
@@ -149,7 +149,7 @@ ios-unified\Syncfusion.SfChart.XForms.dll
 
 wp8\Syncfusion.SfChart.WP8.dll
 
-wp8\Syncfusion.SfChart.xForms.WinPhone.dll
+wp8\Syncfusion.SfChart.XForms.WinPhone.dll
 
 
 N> Essential Chart for Xamarin is compatible with Xamarin. Forms v.1.2.3.6257.

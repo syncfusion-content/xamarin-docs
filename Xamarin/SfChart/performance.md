@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Xamarin.Forms | Performance
+title: Performance Chart | Xamarin.Forms | Syncfusion
 description: Performance in Essential Xamarin.Forms Chart
 platform: xamarin
 control: Chart
@@ -9,7 +9,7 @@ documentation: ug
 
 # Performance
 
-When there are large number of points to load in line series, you can use `FastLineSeries` series instead of `LineSeries`. To renderer a fast line chart, create an instance of `FastLineSeries` and add to the `Series` collection property of `SfChart`.
+* When there are large number of points to load in line series, you can use `FastLineSeries` series instead of `LineSeries`. To renderer a fast line chart, create an instance of `FastLineSeries` and add to the `Series` collection property of `SfChart`.
 
 {% highlight xaml %}
 [XAML]
@@ -41,7 +41,5 @@ FastLineSeries fastLineSeries = new FastLineSeries()
 chart.Series.Add(fastLineSeries);
 
 {% endhighlight %}
-
-![C:/Users/yuvaraj.palanisamy/Documents/Xamarin_Ug hotfix/Xamarin/SfChart/charttypes_images/charttypes_img14.png](performance_images/performance_img1.png)
 
 * Instead of enabling data markers and labels when there are large number of data points, you can use **Trackball** to view the point information.

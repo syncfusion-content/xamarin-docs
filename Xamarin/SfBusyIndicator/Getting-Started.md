@@ -84,6 +84,52 @@ The BusyIndicator control configured entirely in C# code or by using XAML markup
 	{% endhighlight %}
 
 
+##Creating your first BusyIndicator in Xamarin.iOS.
+
+This section provides a quick overview to work with the BusyIndicator in Objective C. This example explains how to create an BusyIndicator with different BusyIndicatorModes and SuggestionModes.
+
+### Referencing Essential Studio Components in Your Solution
+
+After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, typically:
+{Syncfusion Installed location}\Essential Studio {version number}\lib
+You have to add the following assembly reference to the iOS classic project
+ios\Syncfusion.SfBusyIndicator.iOS.dll
+And below assembly reference to the iOS unified project.
+ios-unifed\Syncfusion.SfBusyIndicator.iOS.dll
+
+![](images/BusyIndicator-iOS.png) 
+
+### And and Configure the BusyIndicator
+
+The following steps explain on how to create an BusyIndicator and configure its elements,
+
+*Create an instance of SfBusyIndicator
+
+    {% highlight C# %}
+	
+	@interface ViewController ()
+	{     SFBusyIndicator *sfBusyIndicator;
+	} 
+	- (void)viewDidLoad 
+	{     
+	[super viewDidLoad];   
+	BusyIndicator=[[ SFBusyIndicator alloc]init];  
+	[self.view addSubview:sfBusyIndicator]; 
+	}
+	
+	{% endhighlight %}
+	
+*Configure the properties for BusyIndicator. 
+      
+	 {% highlight C# %}
+	 
+	_sfBusyIndicator.AnimationType=SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeBall;
+	_sfBusyIndicator.TextColor=UIColor.Red;
+	_sfBusyIndicator.ViewBoxHeight=20;
+	_sfBusyIndicator.ViewBoxWidth=20;
+	_sfBusyIndicator.IsBusy=True;
+	
+	{% endhighlight %}
 
 
 

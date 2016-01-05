@@ -46,6 +46,62 @@ chart.Series.Add(lineSeries);
 
 ![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/cartesianseries_clubbed/Line.png](charttypes_images/charttypes_img1.png)
 
+## Fast Line Chart
+
+`FastLineSeries` is a line chart, but it loads faster than `LineSeries`. You can use this when there are large number of points to be loaded in chart. To render a fast line chart, create an instance of `FastLineSeries` and add to the `Series` collection property of `SfChart`. You can use the following properties to customize the fast line segment appearance.
+
+* `Color` – used to change the color of the series.
+* `StrokeWidth` – used to change the stroke width of the series.
+
+{% highlight xaml %}
+[XAML]
+
+<chart:SfChart>
+...
+
+	<chart:FastLineSeries ItemsSource ="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue"/>
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+[C#]
+
+SfChart chart = new SfChart();
+...
+
+FastLineSeries fastLineSeries = new FastLineSeries() 
+{ 
+	ItemsSource = Data, 
+	XBindingPath = "XValue", 
+	YBindingPath = "YValue"  
+};
+chart.Series.Add(fastLineSeries);
+
+{% endhighlight %}
+
+![C:/Users/yuvaraj.palanisamy/Documents/My Received Files/fastline1.png](charttypes_images/charttypes_img14.png)
+
+### Dashed Lines
+
+`StrokeDashArray` property of the `FastLineSeries` is used to render fast line series with dashes.
+
+{% highlight c# %}
+[C#]
+
+FastLineSeries fastLineSeries = new FastLineSeries() 
+{ 
+	ItemsSource = Data, 
+	XBindingPath = "Month", 
+	YBindingPath = "Value" 
+};
+fastLineSeries.StrokeDashArray = new double[2] { 2, 3 };
+
+{% endhighlight %}
+
+![C:/Users/yuvaraj.palanisamy/Documents/My Received Files/faslinedas(1).png](charttypes_images/charttypes_img15.png)
+
 ## Area Chart
 
 To render an area chart, create an instance of `AreaSeries` and add to the `Series` collection property of `SfChart`. You can use the following properties to customize the appearance.
@@ -286,7 +342,7 @@ Since the `RangeColumnSeries` requires two Y values for a point, your data shoul
 
 There are two ways you can provide data to RangeColumn chart,
 
-1.You can use [ChartDataPoint's](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/topic654.html#) three parameter constructor to pass x value, high and low values to  `RangeColumnSeries`,
+1.You can use [ChartDataPoint's](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataPoint~_ctor%28IComparable,Double,Double%29.html#) three parameter constructor to pass x value, high and low values to  `RangeColumnSeries`,
 
 {% highlight c# %}
 [C#] 
@@ -666,62 +722,6 @@ chart.Series.Add(splineSeries);
 
 ![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Cartesianseries1-clubbed/Spline.png](charttypes_images/charttypes_img13.png)
 
-## Fast Line Chart
-
-`FastLineSeries` is a line chart, but it loads faster than `LineSeries`. You can use this when there are large number of points to be loaded in chart. To render a fast line chart, create an instance of `FastLineSeries` and add to the `Series` collection property of `SfChart`. You can use the following properties to customize the fast line segment appearance.
-
-* `Color` – used to change the color of the series.
-* `StrokeWidth` – used to change the stroke width of the series.
-
-{% highlight xaml %}
-[XAML]
-
-<chart:SfChart>
-...
-
-	<chart:FastLineSeries ItemsSource ="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue"/>
-
-</chart:SfChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-[C#]
-
-SfChart chart = new SfChart();
-...
-
-FastLineSeries fastLineSeries = new FastLineSeries() 
-{ 
-	ItemsSource = Data, 
-	XBindingPath = "XValue", 
-	YBindingPath = "YValue"  
-};
-chart.Series.Add(fastLineSeries);
-
-{% endhighlight %}
-
-![C:/Users/yuvaraj.palanisamy/Documents/My Received Files/fastline1.png](charttypes_images/charttypes_img14.png)
-
-### Dashed Lines
-
-`StrokeDashArray` property of the `FastLineSeries` is used to render fast line series with dashes.
-
-{% highlight c# %}
-[C#]
-
-FastLineSeries fastLineSeries = new FastLineSeries() 
-{ 
-	ItemsSource = Data, 
-	XBindingPath = "Month", 
-	YBindingPath = "Value" 
-};
-fastLineSeries.StrokeDashArray = new double[2] { 2, 3 };
-
-{% endhighlight %}
-
-![C:/Users/yuvaraj.palanisamy/Documents/My Received Files/faslinedas(1).png](charttypes_images/charttypes_img15.png)
-
 ## Bubble Chart
 
 To render a bubble chart, create an instance of `BubbleSeries` and add to the `Series` collection property of `SfChart`. 
@@ -730,7 +730,7 @@ Bubble chart requires 3 fields (X, Y and Size) to plot a point. Here `‘Size’
 
 There are two ways you can provide data to bubble chart,
 
-1.You can use [ChartDataPoint's](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/topic654.html) three parameter constructor to pass x, y and size values to  `BubbleSeries`,
+1.You can use [ChartDataPoint's](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataPoint~_ctor%28IComparable,Double,Double%29.html#) three parameter constructor to pass x, y and size values to  `BubbleSeries`,
 
 {% highlight c# %}
 [C#]
@@ -784,8 +784,8 @@ BubbleSeries bubbleSeries = new BubbleSeries()
 { 
 	ItemsSource = Data, 
 	XBindingPath = "XValue", 
-	BindingPath = "YValue", 
-	XBindingPath = "Size” 
+	YBindingPath = "YValue", 
+	Size = "Size” 
 };
 chart.Series.Add(bubbleSeries);
 
@@ -852,7 +852,7 @@ OHLC chart requires five values (X, Open, High, Low and Close) to plot a point.
 
 There are two ways you can provide data to an OHLC chart,
 
-1.You can use [ChartDataPoint's](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/topic655.html#) five parameter constructor to pass x, open, high, low and close values to  `HiLoOpenCloseSeries`,
+1.You can use [ChartDataPoint's](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataPoint~_ctor(IComparable,Double,Double,Double,Double).html#) five parameter constructor to pass x, open, high, low and close values to  `HiLoOpenCloseSeries`,
 
 {% highlight c# %}
 [C#]
@@ -917,7 +917,6 @@ You can use the following properties to customize the HiLoOpenCloseSeries segmen
 
 * `Color` – used to change the color of the series.
 * `StrokeWidth` – used to change the stroke width of the series.
-* `StrokeColor` – used to change the stroke color of the series.
 
 ![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/HILO.png](charttypes_images/charttypes_img18.png)
 
@@ -959,7 +958,7 @@ Candle chart requires five values (X, Open, High, Low and Close) to plot a point
 
 There are two ways you can provide data to an candle chart,
 
-1.You can use [ChartDataPoint's](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/topic655.html#) five parameter constructor to pass x, open, high, low and close values to  `CandleSeries`,
+1.You can use [ChartDataPoint's](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataPoint~_ctor(IComparable,Double,Double,Double,Double).html#) five parameter constructor to pass x, open, high, low and close values to  `CandleSeries`,
 
 {% highlight c# %}
 [C#]

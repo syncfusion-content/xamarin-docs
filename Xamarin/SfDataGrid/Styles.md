@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Styles | SfDataGrid | Xamarin | Syncfusion
-description: Styles
+description: How to apply styles for the elements in a SfDataGrid.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
@@ -9,15 +9,15 @@ documentation: UG
 
 # Styles
 
-This section explains you about how to apply styles for changing the visual appearance of the **SfDataGrid** and its elements.
+This section explains you about how to apply styles for changing the visual appearance of the [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) and its elements.
 
-**SfDataGrid** allows you to apply style to all of its elements by writing a Style class overriding from DataGridStyle and assigning it to the **SfDataGrid.GridStyle** property.
+[SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) allows you to apply style to all of its elements by writing a Style class overriding from DataGridStyle and assigning it to the **SfDataGrid.GridStyle** property.
   
-The following example explains you how to apply custom style to **SfDataGrid**.
+The following example explains you how to apply custom style to [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html).
 
 {% tabs %}
 {% highlight c# %}
-//Apply custom style to **SfDataGrid** from code
+//Apply custom style to SfDataGrid from code
 dataGrid.GridStyle = new Dark ();
 {% endhighlight %}
 {% highlight xaml %}

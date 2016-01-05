@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Columns | SfDataGrid | Xamarin | Syncfusion
-description: Columns
+description: How to create and add columns, different ways to create columns and its customizations in a SfDataGrid.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
@@ -10,7 +10,7 @@ documentation: UG
 # Columns 
 
 This section explains you about how to create and add columns, different ways to create columns and about the customizations that can done to a column.
-**SfDataGrid** allows you to create and add Columns in two ways:
+[SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) allows you to create and add Columns in two ways:
 
 * Automatic Columns generation based on the underlying collection.
 * Manually defining columns in XAML or C#.
@@ -18,7 +18,7 @@ This section explains you about how to create and add columns, different ways to
 
 ## Automatic Columns Generation
 
-The **SfDataGrid** creates columns automatically based on the property **SfDataGrid.AutoGenerateColumns**. **SfDataGrid.AutoGenerateColumns** is a bindable property and it decides columns generation for **SfDataGrid** based on the **SfDataGrid.AutoGenerateColumnsMode** property. 
+The [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) creates columns automatically based on the property **SfDataGrid.AutoGenerateColumns**. **SfDataGrid.AutoGenerateColumns** is a bindable property and it decides columns generation for [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) based on the **SfDataGrid.AutoGenerateColumnsMode** property. 
 **SfDataGrid.AutoGenerateColumnsMode** decides a way to create columns when **SfDataGrid.AutoGenerateColumns** is set to ‘true’. This enum type has the following four options.
 
 * None: Stores only the columns that are defined in **SfDataGrid.Columns** collection.
@@ -27,13 +27,13 @@ The **SfDataGrid** creates columns automatically based on the property **SfDataG
 * RetainOld: Creates columns for all fields in a Data Source when the Grid does not have any explicit definition for columns. When columns are defined explicitly, then the defined columns alone are retained and new columns are not created.
 * SmartReset: Retains the columns defined explicitly in application level and the columns with MappingName identical to properties in a Data Source. Creates columns newly for all the other properties in the Data Source.
 
-The default value of **SfDataGrid.AutoGenerateColumns** property is **true** and **SfDataGrid.AutoGenerateColumnsMode** is **Reset**. Hence by default **SfDataGrid** creates columns automatically for every non-explicitly defined public property in the underlying collection bound to its ItemsSource property.
+The default value of **SfDataGrid.AutoGenerateColumns** property is **true** and **SfDataGrid.AutoGenerateColumnsMode** is **Reset**. Hence by default [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) creates columns automatically for every non-explicitly defined public property in the underlying collection bound to its ItemsSource property.
 
-N> When you change items source for **SfDataGrid** during run time, then the columns are generated on the basis of option set for **AutoGenerateColumnsMode**.
+N> When you change items source for [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) during run time, then the columns are generated on the basis of option set for **AutoGenerateColumnsMode**.
 
 ### Customize Automatically Generated Columns
 
-When **SfDataGrid.AutoGenerateColumns** is true, then **SfDataGrid.AutoGeneratingColumn** event is raised for each **GridColumn**. This event receives two arguments namely sender which is the **SfDataGrid** and AutoGeneratingColumnArgs.
+When **SfDataGrid.AutoGenerateColumns** is true, then **SfDataGrid.AutoGeneratingColumn** event is raised for each **GridColumn**. This event receives two arguments namely sender which is the [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) and AutoGeneratingColumnArgs.
 The AutoGeneratingColumnArgs object contains the following property:
 
 * Column: This property returns the created column using which you can customize the column.
@@ -69,9 +69,9 @@ You can also customize a column’s header text, sorting, alignment, padding, et
 
 ## Manually generate Columns
 
-**SfDataGrid** also allows you to define the columns manually by adding the **GridColumn** objects to the **SfDataGrid.Columns** collection. In case if you want only the manually defined columns to be in view, then you can achieve it by setting the **SfDataGrid.AutoGenerateColumns** property to false. There are different types of columns available in **SfDataGrid** and you can create any column based on your requirements from both XAML and code.
+[SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) also allows you to define the columns manually by adding the **GridColumn** objects to the **SfDataGrid.Columns** collection. In case if you want only the manually defined columns to be in view, then you can achieve it by setting the **SfDataGrid.AutoGenerateColumns** property to false. There are different types of columns available in [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) and you can create any column based on your requirements from both XAML and code.
  
-The following code example illustrates about creating columns manually in **SfDataGrid**.
+The following code example illustrates about creating columns manually in [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html).
 
 {% tabs %}
 {% highlight c# %}

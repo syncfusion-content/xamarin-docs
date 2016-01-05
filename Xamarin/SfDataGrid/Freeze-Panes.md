@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Freeze Panes | SfDataGrid | Xamarin | Syncfusion
-description: Freeze Panes
+description: How to freeze rows and columns in a SfDataGrid.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
@@ -9,14 +9,14 @@ documentation: UG
 
 # Freeze panes
 
-This section explains you how to set Freeze panes in **SfDataGrid**. 
+This section explains you how to set Freeze panes in [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html). 
 
 
 ## Freeze Rows
 
-**SfDataGrid** provides extensive support to freeze the rows at the top of the view below the header row by setting the **SfDataGrid.FrozenRowsCount** property. 
+[SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) provides extensive support to freeze the rows at the top of the view below the header row by setting the **SfDataGrid.FrozenRowsCount** property. 
 
-The following code example illustrates freezing two rows in **SfDataGrid**.
+The following code example illustrates freezing two rows in [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html).
 
 {% highlight c# %}
 //Setting number of rows to freeze in SfDataGrid
@@ -34,9 +34,9 @@ N> Header row is frozen by default and works regardless of the FrozenRowsCount p
 
 ## Freeze Columns
 
-**SfDataGrid** also provides support to freeze the columns at the left of the view by setting the **SfDataGrid.FrozenColumnsCount** property. 
+[SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) also provides support to freeze the columns at the left of the view by setting the **SfDataGrid.FrozenColumnsCount** property. 
 
-The following code example illustrates freezing two columns in **SfDataGrid**.
+The following code example illustrates freezing two columns in [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html).
 
 {% highlight c# %}
 //Setting number of columns to freeze in SfDataGrid

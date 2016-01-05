@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Interactive Selection modes in Syncfusion Calendar control for Xamarin.Forms
-description: Learn how to change the selection mode of calendar control
+title: Selection
+description: Learn how to do the selection in Calendar
 platform: Xamarin.Forms
 control: Calendar
 documentation: ug

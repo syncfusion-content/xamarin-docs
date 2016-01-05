@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Date Navigation and Gestures with Syncfusion Calendar control for Xamarin.Forms
+title: Date Navigation and Gestures with Syncfusion Calendar control for Android
 description: Learn the complete navigation and gestures support
 platform: Xamarin.Forms
 control: Calendar

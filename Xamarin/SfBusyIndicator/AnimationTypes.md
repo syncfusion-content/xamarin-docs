@@ -25,55 +25,21 @@ The AnimationTypes property for the SfBusyIndicator allows you to set one of the
 *ZoomingTarget
 
 ![](images/Ball.png) 
-
-AnimationType - Ball
-{:.caption}
-
 ![](images/Battery.png) 
-
-AnimationType - Battery
-{:.caption}
-
 ![](images/DoubleCircle.png)
-
-AnimationType - DoubleCircle
-{:.caption}
 ![](images/ECG.png) 
-
 ![](images/Globe.png) 
-
-AnimationType - Globe
-{:.caption}
-
 ![](images/HorizontalPulsingBox.png) 
-
-AnimationType - HorizontalPulsingBox
-{:.caption}
-
+![](images/MovieTimer.png) 
 ![](images/Print.png) 
-
-AnimationType - Print
-{:.caption}
-
 ![](images/Rectangle.png) 
-
-AnimationType -Rectangle
-{:.caption}
-
+![](images/RollingBall.png) 
 ![](images/SingleCircle.png) 
+![](images/SlicedCircle.png) 
+![](images/ZoomingTarget.png) 
 
-AnimationType - SingleCircle
-{:.caption}
+|sfBusyIndicator.AnimationType=AnimationTypes.Ball;|
 
-![](images/SlicedCircle.png)
 
-AnimationType - SlicedCircle
-{:.caption} 
-
-{% hightlight C# %}
-
-sfBusyIndicator.AnimationType=AnimationTypes.Ball;
-
-{% endhightlight %}
 
 

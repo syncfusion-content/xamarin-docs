@@ -23,7 +23,7 @@ BusyIndicator control can display a visual indication for either determinate or 
 
 *Sizing – The control view box’s height and width can be set.
 
-*AnimationTypes – There are over 10 built-in animations that can be set with the control.
+*AnimationTypes – There are over 13 built-in animations that can be set with the control.
 
 
 

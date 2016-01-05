@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Exporting | SfDataGrid | Xamarin | Syncfusion
-description: Exporting
+description: How to export a SfDataGrid to excel and pdf and it's customizations.
 platform: xamarin
 control: SfDataGrid
 documentation: ug
@@ -9,16 +9,16 @@ documentation: ug
 
 # Exporting
 
-This section explains you how to Export the **SfDataGrid** to Excel and PDF file and about the customizations that can be done while exporting. 
+This section explains you how to Export the [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) to Excel and PDF file and about the customizations that can be done while exporting. 
 
-**SfDataGrid** provides support for exporting the data to Excel and Pdf with several customization options like custom appearance, excluding specific columns, excluding headers, setting custom row height, setting custom column width, etc. It also provides support for Grouping, Filtering and Sorting when Exporting.
+[SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) provides support for exporting the data to Excel and Pdf with several customization options like custom appearance, excluding specific columns, excluding headers, setting custom row height, setting custom column width, etc. It also provides support for Grouping, Filtering and Sorting when Exporting.
 
-In order to use export to excel and export to pdf functionalities of **SfDataGrid**, add the required assembly references to your application as discussed in the [Assembly deployment](/xamarin/sfdatagrid/getting-started#assembly-deployment) section.
+In order to use export to excel and export to pdf functionalities of [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html), add the required assembly references to your application as discussed in the [Assembly deployment](/xamarin/sfdatagrid/getting-started#assembly-deployment) section.
 
 
 ## Export to Excel
 
-You can Export data to Excel by using the ExportToExcel method by passing the **SfDataGrid** as an argument. The following code example illustrates exporting data to Excel using the ExportToExcel Method.
+You can Export data to Excel by using the ExportToExcel method by passing the [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) as an argument. The following code example illustrates exporting data to Excel using the ExportToExcel Method.
 
 {% highlight c# %}
 private void ExportToExcel()
@@ -40,7 +40,7 @@ private void ExportToExcel()
 
 ### Exporting Options
 
-You can also Export data to Excel and Pdf with various customizing options while exporting the **SfDataGrid** by passing the grid and [DataGridExcelExportingOption](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/topic55.html) as arguments to the ExportToExcel method. The following code example illustrates this.
+You can also Export data to Excel and Pdf with various customizing options while exporting the [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) by passing the grid and [DataGridExcelExportingOption](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/topic55.html) as arguments to the ExportToExcel method. The following code example illustrates this.
 
 {% highlight c# %}
 DataGridExcelExportingController excelExport = new DataGridExcelExportingController ();
@@ -50,11 +50,11 @@ exportOption.DefaultColumnWidth = 150;
 var excelEngine = excelExport.ExportToExcel (this.dataGrid, exportOption); 
 {% endhighlight %}
 
-**SfDataGrid** provides you with several [properties in DataGridExcelExportingOption](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/topic58.html) class to customize the grid while exporting it to Excel. 
+[SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) provides you with several [properties in DataGridExcelExportingOption](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/topic58.html) class to customize the grid while exporting it to Excel. 
 
 ### Events
 
-The **SfDataGrid** provides you the following Events for Exporting to Excel:
+The [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) provides you the following Events for Exporting to Excel:
 
 * RowExporting – This Event is raised while exporting a row at the execution time before the row is exported.
 * CellExporting – This Event is raised while exporting a cell at the execution time before the cell is exported.
@@ -134,7 +134,7 @@ void excelExport_CellExporting(object sender, DataGridCellExcelExportingEvent
 
 ## Export to Pdf
 
-You can Export data to pdf by using the ExportToPdf method by passing the **SfDataGrid** as an argument. The following code example illustrates exporting data to Excel using the ExportToExcel Method.
+You can Export data to pdf by using the ExportToPdf method by passing the [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) as an argument. The following code example illustrates exporting data to Excel using the ExportToExcel Method.
 
 {% highlight c# %}
 private void ExportToPdf()
@@ -154,7 +154,7 @@ private void ExportToPdf()
 
 ### Exporting Options
 
-You can also Export data to Pdf with various customizing options while exporting the **SfDataGrid** by passing the grid and [DataGridPdfExportingOption](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/topic100.html) as arguments to the ExportToPdf method. The following code example illustrates this.
+You can also Export data to Pdf with various customizing options while exporting the [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) by passing the grid and [DataGridPdfExportingOption](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/topic100.html) as arguments to the ExportToPdf method. The following code example illustrates this.
 
 {% highlight c# %}
 DataGridPdfExportingController pdfExport = new DataGridPdfExportingController ();
@@ -163,11 +163,11 @@ exportOption.FitAllColumnsInOnePage = true;
 var doc = pdfExport.ExportToPdf (this.dataGrid, exportOption); 
 {% endhighlight %}
 
-**SfDataGrid** provides you with several [properties in DataGridPdfExportingOption](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/topic103.html) class to customize the grid while exporting it to Pdf. 
+[SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) provides you with several [properties in DataGridPdfExportingOption](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/topic103.html) class to customize the grid while exporting it to Pdf. 
 
 ### Events
 
-The **SfDataGrid** provides you the following Events for Exporting:
+The [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) provides you the following Events for Exporting:
 
 * RowExporting – This Event is raised while exporting a row at the execution time before the row is exported.
 * CellExporting – This Event is raised while exporting a cell at the execution time before the cell is exported.

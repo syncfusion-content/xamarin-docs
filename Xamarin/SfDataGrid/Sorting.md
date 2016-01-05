@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sorting | SfDataGrid | Xamarin | Syncfusion
-description: Sorting
+description: How to sort the data and about the properties and events that involve in sorting in a SfDataGrid.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
@@ -9,14 +9,14 @@ documentation: UG
 
 # Sorting 
 
-This section explains you about Sorting the data and about the properties and events that involve in Sorting in **SfDataGrid**.
+This section explains you about Sorting the data and about the properties and events that involve in Sorting in [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html).
  
-**SfDataGrid** allows you to apply sorting on its data by setting the **SfDataGrid.AllowSorting** property to true. It allows you to sort the data against one or more columns. When sorting is applied, the **SfDataGrid** automatically rearranges the data to match with the current sort criteria. When **SfDataGrid.AllowSorting** is true, you can sort the data simply by tapping the column header you wish to sort. Once sorting is applied, the **SfDataGrid** shows a sort icon in the respective column header indicating the direction of sorting.
+[SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) allows you to apply sorting on its data by setting the **SfDataGrid.AllowSorting** property to true. It allows you to sort the data against one or more columns. When sorting is applied, the [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) automatically rearranges the data to match with the current sort criteria. When **SfDataGrid.AllowSorting** is true, you can sort the data simply by tapping the column header you wish to sort. Once sorting is applied, the [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) shows a sort icon in the respective column header indicating the direction of sorting.
 
 
 ## Programmatic Sorting
 
-**SfDataGrid** also allows to perform sorting from the code. This requires you to manually define the SortColumnDescription objects and add it in the **SfDataGrid.SortColumnDescriptions** collection. **SfDataGrid** sorts the data based on the SortColumnDescription objects that are added to this collection.
+[SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) also allows to perform sorting from the code. This requires you to manually define the SortColumnDescription objects and add it in the **SfDataGrid.SortColumnDescriptions** collection. [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) sorts the data based on the SortColumnDescription objects that are added to this collection.
 
 SortColumnDescription object holds following two properties:
 
@@ -49,9 +49,9 @@ dataGrid.SortColumnDescriptions.Add (new SortColumnDescription () {
 
 ## Tri-State Sorting
 
-In addition to sort the data in ascending / descending orders, **SfDataGrid** also allows you to unsort the data in the original order by clicking the header again after sorting to descending order by setting the **SfDataGrid.AllowTriStateSorting** property to **true**. When this property is set Sorting in each column iterates through three sort states; ascending, descending, and unsorted.
+In addition to sort the data in ascending / descending orders, [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) also allows you to unsort the data in the original order by clicking the header again after sorting to descending order by setting the **SfDataGrid.AllowTriStateSorting** property to **true**. When this property is set Sorting in each column iterates through three sort states; ascending, descending, and unsorted.
 
-The following code example shows how to enable Tri-State sorting in **SfDataGrid**.
+The following code example shows how to enable Tri-State sorting in [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -65,9 +65,9 @@ dataGrid.AllowTriStateSorting = true;
 
 ## Multi Sorting
 
-**SfDataGrid** allows you to sort the data against more than one columns by setting the **SfDataGrid.AllowMultiSorting** property to **true**. The number of columns by which the data can be sorted is unlimited. To apply sorting for multiple columns, tap the desired column headers after setting the **SfDataGrid.AllowMultiSorting** property.
+[SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) allows you to sort the data against more than one columns by setting the **SfDataGrid.AllowMultiSorting** property to **true**. The number of columns by which the data can be sorted is unlimited. To apply sorting for multiple columns, tap the desired column headers after setting the **SfDataGrid.AllowMultiSorting** property.
 
-The following code example shows how to enable multi-sorting in **SfDataGrid**.
+The following code example shows how to enable multi-sorting in [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -81,7 +81,7 @@ dataGrid.AllowMultiSorting = true;
 
 ## Sorting Events
 
-The **SfDataGrid** provides you the following Events for the sorting functionality:
+The [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) provides you the following Events for the sorting functionality:
 
 * SortColumnsChanging – This Event is raised while sorting the column at execution time before the column gets sorted. It helps to cancel the sorting action by setting the Cancel property of DataGridSortColumnsChangingEventArgs.
 * SortColumnsChanged – This Event is raised after the column is sorted.
@@ -119,7 +119,7 @@ void DataGrid_SortColumnsChanging (object sender, DataGridSortColumnsChangin
 
 ## Custom sorting
 
-**SfDataGrid** allows you to sort columns based on custom logic when the standard sorting techniques do not meet the requirements. For each column, you can apply different sorting criteria by adding SortComparer objects to **SfDataGrid.SortComparersCollection**.
+[SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) allows you to sort columns based on custom logic when the standard sorting techniques do not meet the requirements. For each column, you can apply different sorting criteria by adding SortComparer objects to **SfDataGrid.SortComparersCollection**.
 
 A SortComparer object has the following properties:
 
@@ -220,4 +220,4 @@ public class CustomerInfo : IComparer<Object>, ISortDirection
 
 ## Disable sorting for an individual column
 
-**SfDataGrid** allows you to disable the sorting for individual columns by using the **GridColumn.AllowSorting** property. The default value of this property is true and hence all the columns in the **SfDataGrid.Columns** collection can be sorted when **SfDataGrid.AllowSorting** is set to true.
+[SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) allows you to disable the sorting for individual columns by using the **GridColumn.AllowSorting** property. The default value of this property is true and hence all the columns in the **SfDataGrid.Columns** collection can be sorted when **SfDataGrid.AllowSorting** is set to true.

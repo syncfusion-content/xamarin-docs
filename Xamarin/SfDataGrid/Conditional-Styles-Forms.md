@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Conditional Styles - Forms | SfDataGrid | Xamarin | Syncfusion
-description: Conditional Styles in Xamarin.Forms
+description: How to apply conditional styles in SfDataGrid.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
@@ -9,7 +9,7 @@ documentation: UG
 
 # Conditional Styles in Xamarin.Forms
 
-**SfDataGrid** allows you apply cell styles for a **GridColumn** that is used to render the cells in that column. When applied cell style the GridCell appears in the custom style rather than the default one. The following code example shows you how to apply cell style for a **GridColumn**.
+[SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) allows you to apply cell styles for a **GridColumn** that is used to render the cells in that column. When applied cell style the GridCell appears in the custom style rather than the default one. The following code example shows you how to apply cell style for a **GridColumn**.
 
 {% highlight xaml %}
 <syncfusion:SfDataGrid x:Name="dataGrid"
@@ -26,9 +26,9 @@ documentation: UG
 </syncfusion:SfDataGrid> 
 {% endhighlight %}
 
-**SfDataGrid** also allows you to apply styles for the GridCells in a column based on conditions by writing a converter for the property in GridCell for which conditional styles need to be applied.
+[SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) also allows you to apply styles for the GridCells in a column based on conditions by writing a converter for the property in GridCell for which conditional styles need to be applied.
 
-The following code example shows you how to apply conditional styling for a column by writing converter in **SfDataGrid**.
+The following code example shows you how to apply conditional styling for a column by writing converter in [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html).
 
 {% highlight xaml %}
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"

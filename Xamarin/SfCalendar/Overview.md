@@ -14,6 +14,8 @@ The Essential Xamarin Calendar widget provides the multi-view representation to 
 
 Essential Calendar can be used in various scenarios like ticket booking, events notifying, display working days etc.
 
+![](images/overview.png)
+
 **Key Features**
 
 * Built-in Views – A multi-view representation to display dates in month or year view layout.

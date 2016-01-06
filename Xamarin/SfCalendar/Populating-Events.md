@@ -6,7 +6,7 @@ platform: Xamarin.Forms
 control: Calendar
 documentation: ug
 ---
-#Populating Events
+# Populating Events
 
 Calendar control has an inbuilt capability to display the events based on the calendar events collection provided to `DataSource` property. For events to be listed for a particular day, enable the inline feature in month view cell.
 
@@ -23,7 +23,7 @@ Inline event support can be toggled on / off with `ShowInLineEvent` property.
 	
 N> The Inline function will be available only in MonthView with Single selection mode
 	
-##Adding events using collection
+## Adding events using collection
 
 Calendar Events collection can be provided to calendar using the following steps. `CalendarEventCollection` is a class, which holds the details about the events to be rendered in calendar. 
 

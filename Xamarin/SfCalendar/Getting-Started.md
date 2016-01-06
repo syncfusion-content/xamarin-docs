@@ -132,7 +132,7 @@ The following steps explain on how to create an Calendar and configure its eleme
 	[self.view addSubview:SfCalendar]; 
 	}
 	
-	{% endhigh%}
+	{% endhighlight %}
 
 *Configure the properties for Calendar. 
 

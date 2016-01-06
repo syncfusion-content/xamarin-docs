@@ -6,7 +6,7 @@ platform: Xamarin.Forms
 control: Calendar
 documentation: ug
 ---
-#Selection
+# Selection
 
 Dates can be selected by making a touch on month view cells. The default Selection mode is Single which allows user to select one date at a time. Calendar provides support to select dates in three modes such as single, multiple and range selection.
 

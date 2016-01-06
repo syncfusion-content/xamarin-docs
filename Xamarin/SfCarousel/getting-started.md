@@ -1,7 +1,7 @@
 ---
 layout : post
 title : Getting Started with Syncfusion Carousel Control for Xamarin.Forms
-description : Learn how to add libraries and to get started with Carousel for Xamarin.Forms
+description : A quick tour to initial users on Syncfusion carousel control for iOS and Xamarin.Forms platform.
 platform : Xamarin
 control : Carousel
 documentation : ug
@@ -9,9 +9,11 @@ documentation : ug
 
 # Getting Started
 
+This section explains you the steps to configure a Carousel control in a real-time scenario and also provides a walk-through on some of the customization features available in Carousel control.
+
 ## Creating your first Carousel in Xamarin.Forms
 
-This section explains how to create the Carousel and configure its properties. This section provides overview for working with Carousel for Xamarin.Forms. It walks through the entire process of creating a Carousel.
+Illustration for the procedures to install the Syncfusion Essential Studio can be refered from [Syncfusion android components installation](http://help.syncfusion.com/xamarin/introduction/download-and-installation#), `Syncfusion.SfCarousel.XForms.aar` should be used to add carousel reference in the application. 
 
 ### Referencing Essential Studio components in your solution
 
@@ -43,7 +45,7 @@ Windows Phone Project
 wp8\Syncfusion.SfCarousel.WP8.dll
 wp8\Syncfusion.SfCarousel.xForms.WinPhone.dll
 
-### Add and Configure the Carousel
+### Add and Customize the Carousel Control
 
 The Carousel control is configured entirely in C# code or by using XAML markup. The following steps explain on how to create a Carousel and configure its elements,
 
@@ -55,7 +57,7 @@ The Carousel control is configured entirely in C# code or by using XAML markup. 
 
 {% endhighlight %}
 
-* Configure the properties of Carousel.
+* Carousel Customization - To enable offset, scale and angle customizations for items, set the values for `Offset`,`ScaleOffset` and `RotationAngle` properties.
 
 {% highlight C# %}	
 
@@ -79,5 +81,5 @@ The Carousel control is configured entirely in C# code or by using XAML markup. 
 {% endhighlight %}
 
 
-
+![](images/gettingstarted.png)
 

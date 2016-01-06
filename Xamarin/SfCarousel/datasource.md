@@ -1,13 +1,17 @@
 ---
 layout : post
 title : Data source in Syncfusion Carousel control in Xamarin.Forms.
-description : Learn how to set the Data source in Carousel for Xamarin.Forms.
+description : Learn how to populate the items in Carousel for Xamarin.Forms.
 platform : Xamarin
 control : Carousel
 documentation : ug
 ---
 
-SfCarousel items can be populated with a collection of business objects. For example, a user may want to create a SfCarousel control which will display a list of images.
+# Populating Items
+
+## DataSource
+
+SfCarousel items can be populated with a collection of image datas using `DataSource` property.
 
 {% highlight C# %}
 

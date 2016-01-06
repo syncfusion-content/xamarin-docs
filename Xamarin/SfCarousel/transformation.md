@@ -11,7 +11,11 @@ documentation : ug
 
 ## Rotation Angle
 
-The Rotation Angle property in the SfCarousel control is used to rotate all the items to a specified angle. If the angle value is positive, then the rotation is in the clockwise direction. If the angle value is negative, the rotation is in the counterclockwise direction. 
+Rotate all the items to a specified angle using `RotationAngle` property. 
+
+If the angle value is positive, then the rotation is in the clockwise direction. If the angle value is negative, the rotation is in the counterclockwise direction. 
+
+N> This angle can also be specified from 0 to 360.
 
 {% highlight C# %}
 
@@ -19,11 +23,15 @@ The Rotation Angle property in the SfCarousel control is used to rotate all the 
 
 {% endhighlight %}
 
+![](images/rotation angle.png)
+
 ## Offset
 
-### Offset between items
+### Items Offset
 
-It is used to specify the distance between the items in Carousel panel. The default value is 20. This is used to set the accurate distance between the items in carousel control. 
+Specify the distance between the items in Carousel panel using `Offset` property.
+
+N> The default value is 20.
 
 {% highlight C# %}
 
@@ -31,9 +39,13 @@ It is used to specify the distance between the items in Carousel panel. The defa
 
 {% endhighlight %}
 
-### Offset around selected item
+![](images/offset.png)
 
-Distance between the selected item and other items can be customized by using SelectedItemOffset property of the SfCarousel control.
+### Selected Item Offset
+
+Distance between the selected item and other items can be customized by using `SelectedItemOffset` property.
+
+N> The default value is 0.
 
 {% highlight C# %}
 
@@ -51,5 +63,5 @@ The ScaleOffset property in the SfCarousel control is used to scale all the item
 
 {% endhighlight %}
 
-
+![](images/scale offset.png)
 

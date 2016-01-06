@@ -6,13 +6,13 @@ platform: Xamarin.Forms
 control: Calendar
 documentation: ug
 ---
-#Built-in Views
+# Built-in Views
 
 Calendar control provides two types of views to display dates such as month view and year view. It can be assigned to the calendar control by using view mode property.
 
 By default calendar control is assigned with month view. Based on the user’s preference calendar viewed in any of the available two type.
 
-##Month View
+## Month View
 
 This displays entire dates of a particular month, by default current month will be displayed on loading. The current date is provided with seperate color different from the rest of the dates color in a month. The events availability will be denoted within the cell based on its duration.
 
@@ -26,7 +26,7 @@ sfCalendar.ViewMode=ViewMode.MonthView;
  
 ![](images/Month View.png)
  
-##Month view Settings
+## Month view Settings
 
 *Current day text color can be modified using `TodayTextColor`.
 

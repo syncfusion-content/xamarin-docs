@@ -6,7 +6,7 @@ platform: Xamarin.Forms
 control: Calendar
 documentation: ug
 ---
-#Localization
+# Localization
 
 Calendar control is available with complete localization support.
  

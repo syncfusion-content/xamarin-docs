@@ -47,11 +47,11 @@ N> The default property value is 5.
 
 {% highlight C# %}
 
-	sfRating.ItemCount=5;
+	sfRating.ItemCount=4;
 
 {% endhighlight %}
 
-![](images/count.jpg)
+![](images/four star.jpg)
  
 ## Read Only
 

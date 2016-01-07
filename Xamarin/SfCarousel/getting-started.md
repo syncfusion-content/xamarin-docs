@@ -9,7 +9,7 @@ documentation : ug
 
 # GettingStarted
 
-This section explains you the steps to configure a Carousel control in a real-time scenario and also provides a walk-through on some of the customization features available in Carousel control.
+This section explains you the steps to configure a Carousel control in a real-time scenario and also provides a walk-through on some of the customization features available inï¿½Carouselï¿½control.
 
 ## Creating your first Carousel in Xamarin.Forms
 

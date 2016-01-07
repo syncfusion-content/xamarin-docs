@@ -11,12 +11,8 @@ documentation : ug
 
 This section explains you the steps to configure a Carousel control in a real-time scenario and also provides a walk-through on some of the customization features available in Carousel control.
 
-## Creating your first Carousel in Xamarin.Forms
-
-Illustration for the procedures to install the Syncfusion Essential Studio can be refered from [Syncfusion android components installation](http://help.syncfusion.com/xamarin/introduction/download-and-installation#), `Syncfusion.SfCarousel.XForms.aar` should be used to add carousel reference in the application. 
-
-### Referencing Essential Studio components in your solution
-
+## Referencing Essential Studio components in your solution
+ 
 If you had acquired Essential Studio components through the Xamarin component store interface from within your IDE, then after adding the components to your Xamarin.iOS, Xamarin.Android and Windows Phone projects through the Component manager, you will still need to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL project in your solution. You can do this by manually adding the relevant PCL assembly references to your PCL project contained in the following path inside of your solution folder.
 
 Components/syncfusionessentialstudio-version/lib/pcl/
@@ -68,7 +64,7 @@ wp8\Syncfusion.SfCarousel.WP8.dll
 
 wp8\Syncfusion.SfCarousel.xForms.WinPhone.dll
 
-### Add and Customize the Carousel Control
+## Adding and Configuring the Carousel Control
 
 The Carousel control is configured entirely in C# code or by using XAML markup. The following steps explain on how to create a Carousel and configure its elements,
 

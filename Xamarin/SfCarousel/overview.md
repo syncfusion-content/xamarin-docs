@@ -11,10 +11,11 @@ documentation : ug
 
 Essential Carousel control for xamarin is a user interface providing rich visual navigation experience of image data. Also provides efficient customization of items and interactive navigation features. 
 
+![](images/overview.png)
+
 ## Key Featues:
 
 * `Offset` - Options to specify the space between the unselected carousel items.
 * `Rotation Angle` - Support to rotate the items to a specified angle.
 * `Duration` - Options to specify the time taken to move an item to the selected item position.
 
-![](images/overview.png)

@@ -28,7 +28,7 @@ The Tooltip will display on top of the SfRating control.
 
 {% endhighlight %} 
 
-![](images/leftTop.jpg) 
+![](images/topLeft.jpg) 
 
 ### BottomRight
 

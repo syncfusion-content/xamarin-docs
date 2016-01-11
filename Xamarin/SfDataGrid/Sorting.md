@@ -11,12 +11,12 @@ documentation: UG
 
 This section explains you about Sorting the data and about the properties and events that involve in Sorting in [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html).
  
-[SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) allows you to apply sorting on its data by setting the **SfDataGrid.AllowSorting** property to true. It allows you to sort the data against one or more columns. When sorting is applied, the [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) automatically rearranges the data to match with the current sort criteria. When **SfDataGrid.AllowSorting** is true, you can sort the data simply by tapping the column header you wish to sort. Once sorting is applied, the [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) shows a sort icon in the respective column header indicating the direction of sorting.
+[SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) allows you to apply sorting on its data by setting the [SfDataGrid.AllowSorting](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowSorting.html) property to **true**. It allows you to sort the data against one or more columns. When sorting is applied, the [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) automatically rearranges the data to match with the current sort criteria. When [SfDataGrid.AllowSorting](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowSorting.html) is **true**, you can sort the data simply by tapping the column header you wish to sort. Once sorting is applied, the [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) shows a sort icon in the respective column header indicating the direction of sorting.
 
 
 ## Programmatic Sorting
 
-[SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) also allows to perform sorting from the code. This requires you to manually define the SortColumnDescription objects and add it in the **SfDataGrid.SortColumnDescriptions** collection. [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) sorts the data based on the SortColumnDescription objects that are added to this collection.
+[SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) also allows to perform sorting from the code. This requires you to manually define the SortColumnDescription objects and add it in the [SfDataGrid.SortColumnDescriptions](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SortColumnDescriptions.html) collection. [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) sorts the data based on the SortColumnDescription objects that are added to this collection.
 
 SortColumnDescription object holds following two properties:
 
@@ -88,8 +88,8 @@ The [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syn
 
 These two events are triggered with DataGridSortColumnsChangingEventArgs and DataGridSortColumnsChangedEventArgs that contain the following properties.
 
-* AddedItems – Gets the collection of SortColumnDescription objects that are added to **SfDataGrid.SortColumnDescriptions** collection for Sorting.
-* RemovedItems – Gets the collection of SortColumnDescription objects that are removed from **SfDataGrid.SortColumnDescriptions** collection.
+* AddedItems – Gets the collection of SortColumnDescription objects that are added to [SfDataGrid.SortColumnDescriptions](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SortColumnDescriptions.html) collection for Sorting.
+* RemovedItems – Gets the collection of SortColumnDescription objects that are removed from [SfDataGrid.SortColumnDescriptions](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SortColumnDescriptions.html) collection.
 
 The following code example illustrates how to hook the SortColumnsChanging event and cancel the sorting of a column.
 
@@ -220,4 +220,4 @@ public class CustomerInfo : IComparer<Object>, ISortDirection
 
 ## Disable sorting for an individual column
 
-[SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) allows you to disable the sorting for individual columns by using the **GridColumn.AllowSorting** property. The default value of this property is true and hence all the columns in the **SfDataGrid.Columns** collection can be sorted when **SfDataGrid.AllowSorting** is set to true.
+[SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) allows you to disable the sorting for individual columns by using the **GridColumn.AllowSorting** property. The default value of this property is true and hence all the columns in the **SfDataGrid.Columns** collection can be sorted when [SfDataGrid.AllowSorting](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowSorting.html) is set to **true**.

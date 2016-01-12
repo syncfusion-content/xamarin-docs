@@ -2,7 +2,7 @@
 ---
 layout: post
 title: Overview of Syncfusion Calendar control for Xamarin.Forms
-description: Welcome to Syncfusion Calendar for Xamarin.Forms
+description: Overview and key features of Calendar control
 platform: Xamarin.Forms
 control: Calendar
 documentation: ug
@@ -14,16 +14,15 @@ The Essential Xamarin Calendar widget provides the multi-view representation to 
 
 Essential Calendar can be used in various scenarios like ticket booking, events notifying, display working days etc.
 
-![](images/overview.png)
 
-**Key Features**
+## Key Features
 
-* Built-in Views – A multi-view representation to display dates in month or year view layout.
+* `Built-in Views` – A multi-view representation to display dates in month or year view layout.
 
-* Selection – Enables users to select one or multiple dates.
+* `Selection` – Enables users to select one or multiple dates.
 
-* Min Max dates – Visible dates can be limited using the specified Minimum and Maximum dates.
+* `Min Max dates` – Visible dates can be limited using the specified Minimum and Maximum dates.
 
-* Blackout dates – A collection of dates with cross mark representation that cannot be interacted.
+* `Blackout dates` – A collection of dates with cross mark representation that cannot be interacted.
 
 

@@ -6,6 +6,7 @@ platform: Xamarin.Forms
 control: Calendar
 documentation: ug
 ---
+
 # Built-in Views
 
 Calendar control provides two types of views to display dates such as month view and year view. It can be assigned to the calendar control by using view mode property.
@@ -18,25 +19,25 @@ This displays entire dates of a particular month, by default current month will 
 
 The dates in month view can be selected by three ways such as single, multiple and range which can be modified using `SelectionMode`
 
-{% highlight C# %}
+{% highlight c# %}
 
-sfCalendar.ViewMode=ViewMode.MonthView;
+	sfCalendar.ViewMode=ViewMode.MonthView;
  
 {% endhighlight %}
  
 ![](images/Month View.png)
  
-## Month view Settings
+### Month view Settings
 
-*Current day text color can be modified using `TodayTextColor`.
+* Current day text color can be modified using `TodayTextColor`.
 
-*The month view label settings class has the APIs to change date text size, day text size and format options are available.
+* The month view label settings class has the APIs to change date text size, day text size and format options are available.
 
-*The background color of the inline view can be modified using `InlineBackgroundColor` property.
+* The background color of the inline view can be modified using `InlineBackgroundColor` property.
 
-*The blackoutdate color can be modified with `BlackOutColor` property.
+* The blackoutdate color can be modified with `BlackOutColor` property.
 
-    {% highlight C# %}
+{% highlight c# %}
 	
 	MonthLabelSettings labelsettings = new MonthLabelSettings();
 	labelSettings.DateFormat = “dd”;
@@ -50,9 +51,38 @@ sfCalendar.ViewMode=ViewMode.MonthView;
 	monthviewSettings.MonthLabelSettings = labelSettings;
 	sfCalendar.MonthViewSettings=monthViewSettings;
 	
-	{% endhighlight %}
+{% endhighlight %}
 
+N> Similar way there are many settings available to modify Text and Background colors of month view in `MonthViewSettings` class.
 
-Similar way there are many settings available to modify Text and Background colors of month view in `MonthViewSettings` class.
+## YearView
 
+This displays entire dates/month of a particular year, by default current year will be displayed on loading. The Years can be changed by swiping back and forth or `forward` and `backward` methods can be used. The Months can be navigated quickly by selecting on the particular month in year view.
+
+{% highlight c# %}
+
+	calendar.ViewMode=ViewMode.YearView;
+	
+{% endhighlight %}
+
+![](images/Year View.png)  
+
+### Year View Settings
+
+* The Month header color can be modified using `MonthHeaderTextColor` property in similar way, year header and date text color can be changed using `YearTextColor` and `DateTextColor` properties respectively. 
+* The gravity of the month name can be modified using `LabelAlignment` property, to position it to Left, Right or Center. 
+* The complete layout’s background color can be modified using `YearLayoutBackground` property.   
+
+{% highlight c# %}
+
+	SfCalendar calendar = new SfCalendar(this);
+	YearViewSettings yearViewSettings = new YearViewSettings();
+	yearViewSettings.YearHeaderTextColor=Color.parseColor("#1B79D6");
+	yearViewSettings.MonthHeaderBackground=Color.parseColor("#E4E8ED");
+	yearViewSettings.DateTextColor=Color.RED;
+	yearViewSettings.HeaderLabelAlignment=LabelAlignment.Center;
+	calendar.YearViewSettings=yearViewSettings;
+	SetContentView(calendar);
+
+{% endhighlight %}                                   
 

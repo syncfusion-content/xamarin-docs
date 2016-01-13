@@ -39,7 +39,7 @@ sfDigitalGauge.CharacterType = CharacterType.SegmentFourteen;
 
 {% endhighlight %}
 
-![](Getting-Started_Getting-Started_Getting-Started_images/SegmentFourteen.png)
+![](Getting-Started_images/SegmentFourteen.png)
  
 ## Sixteen Segment
  
@@ -49,7 +49,7 @@ sfDigitalGauge.CharacterType = CharacterType.SegmentSixteen;
 
 {% endhighlight %}
 
-![](Getting-Started_Getting-Started_Getting-Started_images/SegmentSixteen.png)
+![](Getting-Started_images/SegmentSixteen.png)
 
 ## EightCrossEightDotMatrix Segment
 
@@ -59,5 +59,5 @@ sfDigitalGauge.CharacterType = CharacterType.EightCrossEightDotMatrix;
 
 {% endhighlight%}
 
-![](Getting-Started_Getting-Started_Getting-Started_images/SegmentMatrix.png)
+![](Getting-Started_images/SegmentMatrix.png)
 

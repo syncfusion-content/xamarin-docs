@@ -1,14 +1,15 @@
 ---
 layout: post
-title: Selection
+title: BlackOut Dates support in Syncfusion Calendar control for Xamarin.Forms
 description: Learn how to set min and max date in calendar
 platform: Xamarin.Forms
 control: Calendar
 documentation: ug
 ---
-#Restricting Dates
 
-##Min and Max Dates
+# Restricting Dates
+
+## Min and Max Dates
 
 Visible dates can be restricted between certain range of dates using `MinDate` and `MaxDate` properties available in calendar control. It is applicable in all the calendar views.
 
@@ -16,23 +17,24 @@ The inline feature in month view will work only within the min max date range.
 
 Beyond the min max date range, following restrictions will be applied.
 
-*Date navigations features of move to date will be restricted.
+* Date navigations features of move to date will be restricted.
 
-*Cannot swipe the control using touch gesture.
+* Cannot swipe the control using touch gesture.
 
-*Selection does not work for month view.
+* Selection does not work for month view.
 
-*The tapped delegates will not be triggered while tapped on the monthcell.
-    {% highlight C# %}
+* The tapped delegates will not be triggered while tapped on the monthcell.
+    
+{% highlight c# %}
 	
 	DateTime d1=new DateTime(2015,1,1);
 	sfCalendar.MinDate=mindate;
 	DateTime d2=new DateTime(2040,12,12);
 	sfCalendar.MaxDate=d2;
 	
-	{% endhighlight %}
+{% endhighlight %}
 
-##Blackout dates
+## Blackout dates
 
 In Calendar, BlackoutDates refers the disabled dates that restrict the user from selecting it. These dates will be marked with slanted Stripes.
 
@@ -43,7 +45,7 @@ A date collection can be provided to set the `BlackoutDates`. This is useful whe
 By invoking the `AddDatesInPast` method, all past dates will be blacked out till current date.
 
 
-    {% highlight C# %}
+{% highlight c# %}
 	
 	List<DateTime> black_dates = new List<DateTime>();
 	black_dates.Add (new DateTime(2015,11,3));
@@ -54,7 +56,7 @@ By invoking the `AddDatesInPast` method, all past dates will be blacked out till
 	black_dates.Add (new DateTime(2015,11,30));
 	sfCalendar.BlackoutDates= black_dates ;
 	
-	{%  endhighlight %}
+{%  endhighlight %}
 	
 	
-	![](images/Blackout.png)
+![](images/Blackout.png)

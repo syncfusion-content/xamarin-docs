@@ -109,9 +109,9 @@ Alternatively if you had downloaded Essential Studio from Syncfusion.com or thro
 
 After installing Essential Studio for Xamarin, all the required assemblies can be found in the installation folders, typically
 
-{Syncfusion Installed location}\Essential Studio\12.2.0.40\lib
+{Syncfusion Installed location}\Essential Studio\13.4.0.53\lib
 
-Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\12.2.0.40\lib
+Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\13.4.0.53\lib
 
 or after downloading through the Xamarin store web interface, all the required assemblies can be found in the below folder
 
@@ -152,7 +152,7 @@ wp8\Syncfusion.SfChart.WP8.dll
 wp8\Syncfusion.SfChart.XForms.WinPhone.dll
 
 
-N> Essential Chart for Xamarin is compatible with Xamarin. Forms v.1.2.3.6257.
+N> Essential Chart for Xamarin is compatible with Xamarin. Forms v.1.5.1.
 
 Currently an additional step is required for Windows Phone and iOS projects. We need to create an instance of the chart custom renderer as shown below. 
 

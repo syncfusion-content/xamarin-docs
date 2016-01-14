@@ -14,7 +14,7 @@ This section explains you how to set Freeze panes in [SfDataGrid](http://help.sy
 
 ## Freeze Rows
 
-[SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) provides extensive support to freeze the rows at the top of the view below the header row by setting the **SfDataGrid.FrozenRowsCount** property. 
+[SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) provides extensive support to freeze the rows at the top of the view below the header row by setting the [SfDataGrid.FrozenRowsCount](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~FrozenRowsCount.html) property. 
 
 The following code example illustrates freezing two rows in [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html).
 
@@ -34,7 +34,7 @@ N> Header row is frozen by default and works regardless of the FrozenRowsCount p
 
 ## Freeze Columns
 
-[SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) also provides support to freeze the columns at the left of the view by setting the **SfDataGrid.FrozenColumnsCount** property. 
+[SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) also provides support to freeze the columns at the left of the view by setting the [SfDataGrid.FrozenColumnsCount](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~FrozenColumnsCount.html) property. 
 
 The following code example illustrates freezing two columns in [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html).
 

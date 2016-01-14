@@ -137,11 +137,11 @@ This section explains how to create a [SfDataGrid](http://help.syncfusion.com/cr
  
 ![](SfDataGrid_images/SfDataGrid-Xamarin_img2.png)
 
-You can download the entire source code of this demo for **Xamarin.Forms** from [here](http://files2.syncfusion.com/Installs/v13.2.0.29/Samples/Xamarin/DataGrid_GettingStartedForms.zip).
+You can download the entire source code of this demo for **Xamarin.Forms** from [here](http://files2.syncfusion.com/Installs/v13.4.0.53/Samples/Xamarin/DataGrid_GettingStartedForms.zip).
  
-You can download the entire source code of this demo for **Xamarin.Android** from [here](http://files2.syncfusion.com/Installs/v13.2.0.29/Samples/Xamarin/DataGrid_GettingStartedAndroid.zip).
+You can download the entire source code of this demo for **Xamarin.Android** from [here](http://files2.syncfusion.com/Installs/v13.4.0.53/Samples/Xamarin/DataGrid_GettingStartedAndroid.zip).
  
-You can download the entire source code of this demo for **Xamarin.iOS** from [here](http://files2.syncfusion.com/Installs/v13.2.0.29/Samples/Xamarin/DataGrid_GettingStartediOS.zip). 
+You can download the entire source code of this demo for **Xamarin.iOS** from [here](http://files2.syncfusion.com/Installs/v13.4.0.53/Samples/Xamarin/DataGrid_GettingStartediOS.zip). 
 
 In this walk through, you will create a new application that contains the [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) which includes the below topics.
 
@@ -398,7 +398,7 @@ Now run the application to render the following output.
 
 By default, the [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) automatically creates columns for all the properties in the data source. The type of the column generated depends on the type of data in the column. When the columns are auto-generated, you can handle the [SfDataGrid.AutoGeneratingColumn](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoGeneratingColumn_EV.html) event to customize or cancel the columns before they are added to the Columns collection in [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html).
  
-You can also define the columns manually by setting the [SfDataGrid.AutoGenerateColumns](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoGenerateColumns.html) property to false and by adding the GridColumn objects to the **SfDataGrid.Columns** collection. It can be done from both XAML and code. The following code example illustrates this. 
+You can also define the columns manually by setting the [SfDataGrid.AutoGenerateColumns](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoGenerateColumns.html) property to false and by adding the GridColumn objects to the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~Columns.html) collection. It can be done from both XAML and code. The following code example illustrates this. 
 
 {% tabs %}
 {% highlight c# %}

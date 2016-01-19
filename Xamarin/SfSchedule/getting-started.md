@@ -1,3 +1,15 @@
+---
+
+layout: post
+title:  Syncfusion SfSchedule control Getting Started for Xamarin.Forms
+description: A quick tour to initial users on Syncfusion SfSchedule control for Xamarin.Forms platform
+platform: Xamarin.Forms
+control: SfSchedule
+documentation: ug
+
+---
+
+
 # GETTING STARTED 
 
 This section explains you the steps required to render the Schedule control by populating  events(appointments), with inline support and min max dates support in the control. This section covers only the minimal features that you need to know to get started with the Schedule.

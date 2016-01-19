@@ -1,3 +1,15 @@
+---
+
+layout: post
+title: Localization in Syncfusion SfSchedule control for Xamarin.Forms
+description: Learn how to Localize the SfSchedule control
+platform: Xamarin.Forms
+control: SfSchedule
+documentation: ug
+
+---
+
+
 # LOCALIZATION 
 
 Schedule control is available with complete localisation support. To know more about localizing an application refer `How to localize an Xamarin application`

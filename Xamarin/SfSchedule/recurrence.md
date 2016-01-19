@@ -1,3 +1,13 @@
+---
+layout: post
+title: Recurrence in Syncfusion SfSchedule control for Xamarin.Forms
+description: Learn how to Create recurrence Appointments in SfSchedule control
+platform: Xamarin.Forms
+control: SfSchedule
+documentation: ug
+---
+
+
 # RECURRENCE
 
 Recursive appointments can be created by enabling isRecursive property in Schedule appointments, to know more about adding appointments in the control, refer `ScheduleAppointment`

@@ -1,3 +1,13 @@
+---
+layout: post
+title: Date Navigation and Gesture in Syncfusion SfSchedule control for Xamarin.Forms
+description: Learn the complete navigation and gestures support
+platform: Xamarin.Forms
+control: SfSchedule
+documentation: ug
+---
+
+
 # DATE NAVIGATION AND GESTURE
 
 ## Move to Date 

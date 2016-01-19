@@ -26,7 +26,7 @@ Day view is used to display a single day, current day will be visible by default
     
     this.Content= sfschedule;
     
-{% endhighlight %
+{% endhighlight %}
 
 <table>
 <tr>

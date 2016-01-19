@@ -1,3 +1,13 @@
+---
+layout: post
+title: Accessing View modes in Syncfusion SfSchedule control for Xamarin.Forms
+description: Learn how to set views in SfSchedule control
+platform: Xamarin.Forms
+control: SfSchedule
+documentation: ug
+---
+
+
 # VIEWS
 
 Schedule control provides four different types of views to display dates. Day view, Week view, WorkWeek view and month view. It can be assigned to the schedule control by using ScheduleView property. Based on the user’s preference appointments can be viewed in any of the four type of view available. By default schedule control is assigned with day view.

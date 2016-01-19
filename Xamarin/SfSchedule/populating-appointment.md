@@ -1,3 +1,15 @@
+---
+
+layout: post
+title: Populating Appointments in Syncfusion SfSchedule control for Xamarin.Forms
+description: Learn how to Populate Appointments in SfSchedule control
+platform: Xamarin.Forms
+control: SfSchedule
+documentation: ug
+
+---
+
+
 # POPULATING APPOINTMENTS
 
 Schedule control has an inbuilt capability to handle the appointment arrangement internally based on the ScheduleAppointment collections. ScheduleAppointment is a class, which holds the details about the appointment to be rendered in schedule. Schedule Appointments collection can be provided to schedule using the following method.

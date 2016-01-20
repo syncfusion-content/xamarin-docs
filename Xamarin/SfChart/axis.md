@@ -16,6 +16,7 @@ Vertical(Y) axis always uses numerical scale. Horizontal(X) axis supports the fo
 * Category
 * Numeric
 * Date time
+* Logarithmic Axis
 
 ## Category Axis
 
@@ -479,6 +480,86 @@ chart.PrimaryAxis = new DateTimeAxis() { RangePadding = DateTimeRangePadding.Add
 {% endhighlight %}
 
 ![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/DateTimeAdditional.png](axis_images/axis_img16.png)
+
+## Logarithmic Axis
+
+Logarithmic axis uses logarithmic scale and displays numbers as axis labels.
+
+{% highlight xaml %}
+[XAML]
+
+<chart:SfChart.SecondaryAxis>
+<chart:LogarithmicAxis />
+</chart:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+[C#]
+
+chart.SecondaryAxis = new LogarithmicAxis (); 
+
+{% endhighlight %}
+
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/CategoryAxis.png](axis_images/logaxis_img1.png)
+
+## Customizing the logarithmic range
+
+To customize the range of log axis, you can use the minimum and maximum properties of LogarithmicAxis. By default,
+nice range will be calculated automatically based on the provided data.
+
+
+{% highlight xaml %}
+[XAML]
+
+<chart:SfChart.SecondaryAxis>
+<chart:LogarithmicAxis >
+<chart:LogarithmicAxis.Minimum>
+<x:Double>100</x:Double>
+</chart:LogarithmicAxis.Minimum>
+<chart:LogarithmicAxis.Maximum>
+<x:Double>10000</x:Double>
+</chart:LogarithmicAxis.Maximum>
+</chart:LogarithmicAxis>
+</chart:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+[C#]
+
+chart.SecondaryAxis = new LogarithmicAxis() { Minimum = 100, Maximum = 10000 };
+
+
+{% endhighlight %}
+
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/CategoryAxis.png](axis_images/logaxis_img2.png)
+
+## Customizing the logarithmic base
+
+
+To customize the log base value, you can use LogarithmicBase property.
+
+
+{% highlight xaml %}
+[XAML]
+
+<chart:SfChart.SecondaryAxis>
+<chart:LogarithmicAxis LogarithmicBase="2" />
+</chart:SfChart.SecondaryAxis>	
+
+
+{% endhighlight %}
+
+{% highlight c# %}
+[C#]
+
+chart.SecondaryAxis = new LogarithmicAxis() { LogarithmicBase = 2 };
+
+
+{% endhighlight %}
+
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/CategoryAxis.png](axis_images/logaxis_img3.png)
 
 ## Common axis features
 

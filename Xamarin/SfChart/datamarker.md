@@ -221,6 +221,56 @@ series.DataMarker.LabelStyle.LabelPosition = DataMarkerLabelPosition.Outer;
 
 ![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Datamaker - clubbed/outer.png](datamarker_images/datamarker_img7.png)
 
+## Smart Labels
+
+This feature is used to arrange the data marker labels smartly and avoid the intersection when there is
+overlapping of labels. The property EnableSmartLabels in CircularSeries, is used to arrange the datamarker labels
+smartly. By default, it is false, we need to enable this property.
+
+The following code sample illustrates how to enable the smart labels.
+
+
+{% highlight xaml %}
+[XAML]
+
+<chart:SfChart.Series>
+<chart:PieSeries ItemsSource="{Binding Data}" XBindingPath="Expense"   
+YBindingPath="Value" StartAngle="75" EndAngle ="435"
+EnableSmartLabels="True" ConnectorLineType = "Bezier" 
+DataMarkerPosition = "OutsideExtended">
+<chart:PieSeries.DataMarker>
+<chart:ChartDataMarker />
+</chart:PieSeries.DataMarker>
+</chart:PieSeries>
+</chart:SfChart.Series> 
+
+
+{% endhighlight %}
+
+{% highlight c# %}
+[C#]          
+
+SfChart chart = new SfChart();
+...
+
+PieSeries pieSeries = new PieSeries()
+{
+ItemsSource = Data,
+XBindingPath = "Expense",
+YBindingPath = "Value",
+EnableSmartLabels = true,
+DataMarkerPosition = CircularSeriesDataMarkerPosition.OutsideExtended,
+ConnectorLineType= ConnectorLineType.Bezier,
+StartAngle=75,
+EndAngle=435,
+DataMarker=new ChartDataMarker(),
+};
+chart.Series.Add(pieSeries);
+
+
+{% endhighlight %}
+
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Datamaker - clubbed/MarkerType.png](datamarker_images/smartlabels.png)
 
 ## Customizing Marker Shapes
 
@@ -269,7 +319,6 @@ lineSeries.DataMarker.MarkerBorderWidth = 2;
 {% endhighlight %}
 
 ![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Datamaker - clubbed/MarkerType.png](datamarker_images/datamarker_img8.png)
-
 
 ## Connector Line
 

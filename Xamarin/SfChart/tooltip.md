@@ -36,7 +36,7 @@ chart.Series.Add(lineSeries);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Appearence/chart-custom.png](appearance_images/tooltip1.png)
+![](tooltip_images/tooltip1.png)
 
 
 ## Customizing appearance
@@ -45,16 +45,16 @@ You can customize the tooltip label. For customizing, you need to add an instanc
 the ChartBehaviors collection property of SfChart. Following properties are used to customize the tooltip label
 which are available in ChartTooltipBehavior.
 
-•	BorderColor     – used to change the label border color.
-•	BorderWidth     – used to change the label border width.
-•	BackgroundColor – used to change the label background color.
-•	Margin          – used to change label border thickness.
-•	TextColor       – used to change the text color.
-•	Font            – used to change label font size, family and weight.
-•	LabelFormat     – used to format the label.
-•	Duration        – used to set the visible duration of label.
-•	OffsetX         - used to move the label horizontally.
-•	OffsetY         - used to move the label vertically.
+* `BorderColor` – used to change the label border color
+* `BorderWidth` – used to change the label border width
+* `BackgroundColor` – used to change the label background color
+* `Margin` – used to change label border thickness
+* `TextColor` – used to change the text color
+* `Font` – used to change label font size, family and weight
+* `LabelFormat` – used to format the label
+* `Duration` – used to set the visible duration of label
+* `OffsetX` – used to move the label horizontally
+* `OffsetY` – used to move the label vertically
 
 
 {% highlight xaml %}
@@ -98,4 +98,4 @@ chart.ChartBehaviors.Add(tool);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Appearence/METRO1.png](appearance_images/tooltip2.png)
+![](tooltip_images/tooltip2.png)

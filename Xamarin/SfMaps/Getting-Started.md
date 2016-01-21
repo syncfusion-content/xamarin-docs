@@ -34,58 +34,60 @@ You can then add the assembly references to the respective projects as shown bel
 
 ### PCL project
 
-pcl\Syncfusion.SfChart.XForms.dll 
+pcl\Syncfusion.SfMaps.XForms.dll 
 
 ### Android project
 
-android\Syncfusion.SfChart.Andriod.dll
+android\Syncfusion.SfMaps.Andriod.dll
 
-android\Syncfusion.SfChart.XForms.Andriod.dll
+android\Syncfusion.SfMaps.XForms.Andriod.dll
 
 ### iOS(Classic) project
 
-ios\Syncfusion.SfChart.iOS.dll 
+ios\Syncfusion.SfMaps.iOS.dll 
 
-ios\Syncfusion.SfChart.XForms.iOS.dll
+ios\Syncfusion.SfMaps.XForms.iOS.dll
 
-ios\Syncfusion.SfChart.XForms.dll
+ios\Syncfusion.SfMaps.XForms.dll
 
 ### iOS(Unified) project
 
-ios-unified\Syncfusion.SfChart.iOS.dll 
+ios-unified\Syncfusion.SfMaps.iOS.dll 
 
-ios-unified\Syncfusion.SfChart.XForms.iOS.dll
+ios-unified\Syncfusion.SfMaps.XForms.iOS.dll
 
-ios-unified\Syncfusion.SfChart.XForms.dll
+ios-unified\Syncfusion.SfMaps.XForms.dll
 
 ### Windows Phone project
 
-wp8\Syncfusion.SfChart.WP8.dll
+wp8\Syncfusion.SfMaps.WP8.dll
 
-wp8\Syncfusion.SfChart.XForms.WinPhone.dll
+wp8\Syncfusion.SfMaps.XForms.WinPhone.dll
 
 
-N> Essential Chart for Xamarin is compatible with Xamarin. Forms v.1.2.3.6257.
+N> Essential Maps for Xamarin is compatible with Xamarin. Forms v.1.2.3.6257.
 
-Currently an additional step is required for Windows Phone and iOS projects. We need to create an instance of the chart custom renderer as shown below. 
+Currently an additional step is required for Windows Phone and iOS projects. We need to create an instance of the Maps custom renderer as shown below. 
 
 Create an instance of SfMaps in MainPage constructor in of the Windows Phone project as shown 
 
 {% highlight xaml %}
-    
+
     <syncfusion:SfMap>                     
-   
+  
     </syncfusion:SfMap>    
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-    public MainPage()
-    {
-        new SfMaps();
-        ...    
-    }
+public MainPage()
+{
+    
+    new SfMaps();
+    ...
+            
+}
 
 {% endhighlight %}
  
@@ -104,13 +106,15 @@ Create a Maps instance in Main Activity and set Maps as a ContentView in 
 
 {% highlight c# %}
 
-        protected override void OnCreate (Bundle savedInstanceState)
-        {
-            base.OnCreate (savedInstanceState);
+protected override void OnCreate (Bundle savedInstanceState)
+{
+    
+    base.OnCreate (savedInstanceState);
 
-            SfMaps maps = new SfMaps (this);
-            SetContentView (maps);
-        }
+    SfMaps maps = new SfMaps (this);
+    SetContentView (maps);
+    
+}
 
 {% endhighlight %}
 
@@ -139,20 +143,21 @@ These files need to be added in Asset folder.
 
 {% highlight c# %}
 	
-        protected override void OnCreate (Bundle savedInstanceState)
-        {
-            base.OnCreate (savedInstanceState);
+protected override void OnCreate (Bundle savedInstanceState)
+{
+    base.OnCreate (savedInstanceState);
 
-            SfMaps maps = new SfMaps (this);
-            ShapeFileLayer layer = new ShapeFileLayer ();
-            layer.Uri = "usa_state.shp";
-            maps.Layers.Add (layer);
-            SetContentView (maps);
-        }
+    SfMaps maps = new SfMaps (this);
+    ShapeFileLayer layer = new ShapeFileLayer ();
+    layer.Uri = "usa_state.shp";
+    maps.Layers.Add (layer);
+    SetContentView (maps);
+    
+}
 
 {% endhighlight %}
 
-![](images/maps_android.png)
+![](Getting-Started_images/maps_xamarin.png)
 
 
 ## Adding Marker to the Maps
@@ -171,21 +176,23 @@ Markers can be added into the shape layers. The below code snippets enables you 
 
 {% highlight c# %}
 	
-        protected override void OnCreate (Bundle savedInstanceState)
-        {
-            base.OnCreate (savedInstanceState);
+protected override void OnCreate (Bundle savedInstanceState)
+{
+    
+    base.OnCreate (savedInstanceState);
             
-            SfMaps maps = new SfMaps (this);
-            ShapeFileLayer layer = new ShapeFileLayer ();
-            SFMapMarker marker = new SFMapMarker ();
-            marker.Label = "California";
-            marker.Latitude = 37;
-            marker.Longitude = -120;
-            layer.Markers.Add (marker);  
-            maps.Layers.Add (layer);            
-            SetContentView (maps);
-        }
+    SfMaps maps = new SfMaps (this);
+    ShapeFileLayer layer = new ShapeFileLayer ();
+    SFMapMarker marker = new SFMapMarker ();
+    marker.Label = "California";
+    marker.Latitude = 37;
+    marker.Longitude = -120;
+    layer.Markers.Add (marker);  
+    maps.Layers.Add (layer);            
+    SetContentView (maps);
+    
+}
 
 {% endhighlight %}
 
-![](images/marker_android.png) 
+![](Getting-Started_images/markers_xamarin.png) 

@@ -42,16 +42,16 @@ Without datasource, n number of markers can be added to shape layers with marker
 
 {% highlight c# %}
 
-        MapMarker marker = new MapMarker ();
-        marker.Label = "California";
-        marker.Latitude = 37;
-        marker.Longitude = -120;
-        layer.Markers.Add (marker);
+MapMarker marker = new MapMarker ();
+marker.Label = "California";
+marker.Latitude = 37;
+marker.Longitude = -120;
+layer.Markers.Add (marker);
 
 {% endhighlight %}
 {% endtabs %}
 
-![](images/marker_android.png)  
+![](MapElements_images/markers_xamarin.png)  
 
 
 ## Bubbles
@@ -123,42 +123,45 @@ To add bubbles to a map, the bubble marker setting is added to the shape file la
 
 {% highlight c# %}
 
-        {
-            //..
-            layer.ShapeIdTableField ="STATE_NAME";
-            layer.ShapeIdPath ="State";
-            layer.DataSource = GetDataSource ();
+{
+        
+        //..
+        layer.ShapeIdTableField ="STATE_NAME";
+        layer.ShapeIdPath ="State";
+        layer.DataSource = GetDataSource ();
 
-            BubbleMarkerSetting markerSetting = new BubbleMarkerSetting();
-            markerSetting.ShowBubbles = true;
-            markerSetting.MinSize =10;
-            markerSetting.MaxSize =25;
-            markerSetting.ValuePath="Population";
-            //..
-        }
-        JSONArray GetDataSource()
-        {
-            JSONArray array = new JSONArray ();
-            array.Put(getJsonObject("California",38332521,"CA"));
-            array.Put(getJsonObject("New York",19651127,"NY"));
-            array.Put(getJsonObject("Iowa",3090416,"IA"));
-            return array;
-        }
+        BubbleMarkerSetting markerSetting = new BubbleMarkerSetting();
+        markerSetting.ShowBubbles = true;
+        markerSetting.MinSize =10;
+        markerSetting.MaxSize =25;
+        markerSetting.ValuePath="Population";
+        //..
+}
+JSONArray GetDataSource()
+{
+        
+        JSONArray array = new JSONArray ();
+        array.Put(getJsonObject("California",38332521,"CA"));
+        array.Put(getJsonObject("New York",19651127,"NY"));
+        array.Put(getJsonObject("Iowa",3090416,"IA"));
+        return array;
+}
 
-        JSONObject getJsonObject(String state,double population,string name)
-        {
-            JSONObject obj= new JSONObject();
-            obj.Put ("State", state);
-            obj.Put ("Population", population);
-            obj.Put ("Name", name);
-            return obj;
-        }
+JSONObject getJsonObject(String state,double population,string name)
+{
+        
+        JSONObject obj= new JSONObject();
+        obj.Put ("State", state);
+        obj.Put ("Population", population);
+        obj.Put ("Name", name);
+        return obj;
+}
 
 
 {% endhighlight %}
 {% endtabs %}
 
-![](images/bubble_android.png)  
+![](MapElements_images/bubble_android.png)  
 
 ## Legend
 
@@ -190,16 +193,16 @@ Refer Equal color mapping code for legend support
 
 {% highlight c# %}
 
-        LegendSetting legendSetting = new LegendSetting ();
-        legendSetting.ShowLegend = true;
-        legendSetting.IconHeight = 20;
-        legendSetting.IconWidth = 20;
-        legendSetting.LegendPosition = new Point (100, 400);
+LegendSetting legendSetting = new LegendSetting ();
+legendSetting.ShowLegend = true;
+legendSetting.IconHeight = 20;
+legendSetting.IconWidth = 20;
+legendSetting.LegendPosition = new Point (100, 400);
 
-        layer.LegendSetting = legendSetting;
+layer.LegendSetting = legendSetting;
 
 
 {% endhighlight %}
 {% endtabs %}
 
-![](images/legend_android.png)  
+![](MapElements_images/legend_xamarin.png)  

@@ -33,12 +33,12 @@ The shapeSettings defines the basic customization settings of shapes in the map.
 
 {% highlight c# %}
 
-        ShapeSetting setting = new ShapeSetting ();
-        setting.ShapeFill = Color.ParseColor("#9CBF4E");
-        setting.SelectedShapeColor = Color.ParseColor("#BC5353");
-        setting.ShapeStroke = Color.White;
-        setting.ShapeStrokeThickess = 1;
-        layer.ShapeSettings = setting;
+ShapeSetting setting = new ShapeSetting ();
+setting.ShapeFill = Color.ParseColor("#9CBF4E");
+setting.SelectedShapeColor = Color.ParseColor("#BC5353");
+setting.ShapeStroke = Color.White;
+setting.ShapeStrokeThickess = 1;
+layer.ShapeSettings = setting;
 
 {% endhighlight %}
 {% endtabs %}
@@ -97,34 +97,36 @@ Gets or sets the color for mapping.<br/><br/></td></tr>
 
 {% highlight c# %}
 
-	     {
-            //..           
-            layer.ShapeIdTableField ="STATE_NAME";
-            layer.ShapeIdPath ="State";
-            layer.DataSource = GetDataSource ();
-            SetColorMapping(layer.ShapeSettings);
-            layer.ShapeSettings.ShapeColorValuePath ="Candidate";
-            //..
-         }
+{
 
-        void SetColorMapping(ShapeSetting setting)
-        {
-            List<ColorMapping> colorMappings= new List<ColorMapping>();
+    //..           
+    layer.ShapeIdTableField ="STATE_NAME";
+    layer.ShapeIdPath ="State";
+    layer.DataSource = GetDataSource ();
+    SetColorMapping(layer.ShapeSettings);
+    layer.ShapeSettings.ShapeColorValuePath ="Candidate";
+    //..
+}
 
-            EqualColorMapping colorMapping1= new EqualColorMapping();
-            colorMapping1.Value= "Obama";
-            colorMapping1.LegendLabel= "Obama";
-            colorMapping1.Color =Color.ParseColor("#316DB5");
-            colorMappings.Add(colorMapping1);
+void SetColorMapping(ShapeSetting setting)
+{
 
-            EqualColorMapping colorMapping2= new EqualColorMapping();
-            colorMapping2.Value= "Romney";
-            colorMapping2.LegendLabel= "Romney";
-            colorMapping2.Color =Color.ParseColor("#D84444");
-            colorMappings.Add(colorMapping2);
+    List<ColorMapping> colorMappings= new List<ColorMapping>();
 
-            setting.ColorMapping = colorMappings;
-        }
+    EqualColorMapping colorMapping1= new EqualColorMapping();
+    colorMapping1.Value= "Obama";
+    colorMapping1.LegendLabel= "Obama";
+    colorMapping1.Color =Color.ParseColor("#316DB5");
+    colorMappings.Add(colorMapping1);
+
+    EqualColorMapping colorMapping2= new EqualColorMapping();
+    colorMapping2.Value= "Romney";
+    colorMapping2.LegendLabel= "Romney";
+    colorMapping2.Color =Color.ParseColor("#D84444");
+    colorMappings.Add(colorMapping2);
+
+    setting.ColorMapping = colorMappings;
+}
 
 
 {% endhighlight %}
@@ -149,7 +151,7 @@ When `AutoFillColors` property is set to true, shapes are filled with default 
 
 {% highlight c# %}
         
-        layer.ShapeSettings.AutoFillColors = true;
+layer.ShapeSettings.AutoFillColors = true;
 
 {% endhighlight %}
 {% endtabs %}

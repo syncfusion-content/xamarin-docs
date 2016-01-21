@@ -12,7 +12,7 @@ documentation: ug
 
 ## Move to Date 
 
-Visible dates can be moved to specific date using “MoveToDate” method available in SfSchedule. It will move to any specific date if the [schedule view](#_VIEWS_2 "") is Day View, similarly it will move to the specific week if it is week view and to specific month if it is month view.
+Visible dates can be moved to specific date using “MoveToDate” method available in SfSchedule. It will move to any specific date if the [ScheduleView](/xamarin/sfschedule/views "Schedule Views") is Day View, similarly it will move to the specific week if it is week view and to specific month if it is month view.
 
 
 {% highlight c# %}
@@ -30,7 +30,7 @@ The specified date should lies between`MinDisplayDate` and `MaxDisplayDate`, if 
 
 ## Enable/disable navigation
 
-By default Schedule views can be moved backwards and forwards using touch swipe gesture. This navigation, using touch gesture can be enabled and disabled using “enableNavigation” property available in Schedule control. By default this is enabled.
+By default Schedule views can be moved backwards and forwards using touch swipe gesture. This navigation, using touch gesture can be enabled and disabled using `EnableNavigation` property available in Schedule control. By default this is enabled.
 
 {% highlight c# %}
 
@@ -103,7 +103,7 @@ By enabling Inline feature in month view, while touch the month view cell, appoi
 
 ## FirstDay of the Week
 
-By default schedule control will be rendered with Sunday as the first day of the week, it can be customized to any day of the week by FirstDayOfWeek property of SfSchedule.
+By default schedule control will be rendered with Sunday as the first day of the week, it can be customized to any day of the week by `FirstDayOfWeek` property of SfSchedule.
 
 {% highlight c# %}
 

@@ -74,7 +74,7 @@ Create an instance of SfScheduleRenderer in MainPage constructor in of the Windo
 
     public MainPage ()
     {
-    …
+    ... 
     new SfScheduleRenderer();
     ...
     }
@@ -113,7 +113,7 @@ The SfSchedule control is configured entirely in C# code.
 </td></tr>
 </table>
 
-You can change the default UI of schedule using [ScheduleView](#_VIEWS "") to display the dates in different layouts available in the control.
+You can change the default UI of schedule using [ScheduleView](/xamarin/sfschedule/views "Schedule Views") to display the dates in different layouts available in the control.
 
 {% highlight c# %}
 
@@ -154,7 +154,7 @@ You can add events to the schedule by creating collection of ScheduleAppointment
     clientMeeting.StartTime = startTime;
     clientMeeting.EndTime = endTime;
     clientMeeting.Color = Color.Blue;
-    clientMeeting.Subject = “ClientMeeting”;
+    clientMeeting.Subject = "ClientMeeting";
 
     appointmentCollection.Add(clientMeeting);
     sfschedule.DataSource = appointmentCollection;
@@ -200,7 +200,7 @@ You can also add recursive appointments to Schedule, refer Recurrence section to
 
 ## Enabling Appointments Inline
 
-When the schedule appointments are viewed in Monthview, it will not display much information about the appointments, you can view the appointments in inline by setting showAppointmentsInline property of MonthViewSettings as True.
+When the schedule appointments are viewed in Monthview, it will not display much information about the appointments, you can view the appointments in inline by setting `ShowAppointmentsInline` property of MonthViewSettings as True.
 
 {% highlight c# %}
 

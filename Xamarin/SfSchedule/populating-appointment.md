@@ -18,7 +18,7 @@ Schedule control has an inbuilt capability to handle the appointment arrangement
 
 ScheduleAppointment has some basic properties such as StartTime, EndTime, Subject and some additional information about the appointment can be added using Color, Notes, Location, All Day, Recursive properties.
 
-Create the collection of the ScheduleAppointments by setting required details using above mentioned properties for each appointment. And then assign the created collection to the “DataSource” property of SfSchedule as like in below code example.
+Create the collection of the ScheduleAppointments by setting required details using above mentioned properties for each appointment. And then assign the created collection to the `DataSource` property of SfSchedule as like in below code example.
 
 {% highlight c# %}
     
@@ -39,7 +39,7 @@ Create the collection of the ScheduleAppointments by setting required details us
     clientMeeting.StartTime = startTime;
     clientMeeting.EndTime = endTime;
     clientMeeting.Color = Color.Blue;
-    clientMeeting.Subject = “ClientMeeting”;
+    clientMeeting.Subject = "ClientMeeting";
     appointmentCollection.Add(clientMeeting);
     sfschedule.DataSource = appointmentCollection;
     this.Content= sfschedule;

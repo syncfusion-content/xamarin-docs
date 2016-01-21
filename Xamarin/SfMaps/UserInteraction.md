@@ -34,10 +34,10 @@ You can select the shape by tapping the shape. The Selection is enabled by the `
 
 {% highlight c# %}
 
-        layer.EnableSelection = true;
-        ShapeSetting setting = new ShapeSetting ();
-        setting.SelectedShapeColor = Color.ParseColor("#BC5353");
-        layer.ShapeSettings = setting;
+layer.EnableSelection = true;
+ShapeSetting setting = new ShapeSetting ();
+setting.SelectedShapeColor = Color.ParseColor("#BC5353");
+layer.ShapeSettings = setting;
 
 {% endhighlight %}
 {% endtabs %}
@@ -91,10 +91,10 @@ The panning feature enables the Map navigation. The `EnablePan` property is used
 
 {% highlight c# %}
 
-        maps.MinZoom = 1;
-        maps.MaxZoom = 10;
-        maps.ZoomLevel = 2;
-        maps.EnbaleZoom = true;
+maps.MinZoom = 1;
+maps.MaxZoom = 10;
+maps.ZoomLevel = 2;
+maps.EnbaleZoom = true;
 
 
 {% endhighlight %}

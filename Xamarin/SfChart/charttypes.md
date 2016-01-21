@@ -722,6 +722,44 @@ chart.Series.Add(splineSeries);
 
 ![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Cartesianseries1-clubbed/Spline.png](charttypes_images/charttypes_img13.png)
 
+## StepLine Chart
+
+To render a step line chart, create an instance of StepLineSeries and add to the Series collection property of
+SfChart. You can use the following properties to customize the spline segment appearance.
+
+
+* `Color` – used to change the color of the series.
+* `StrokeWidth` – used to change the stroke width of the series.
+
+{% highlight xaml %}
+[XAML]
+
+<chart:SfChart.Series>
+<chart:StepLineSeries ItemsSource="{Binding Data}" 
+XBindingPath="Month" YBindingPath="Value" />
+</chart:SfChart.Series>
+
+{% endhighlight %}
+
+{% highlight c# %}
+[C#]
+
+SfChart chart = new SfChart();
+...
+
+StepLineSeries stepLine = new StepLineSeries() 
+{ 
+ItemsSource = Data, 
+XBindingPath = "Month", 
+YBindingPath = "Value"
+};
+chart.Series.Add(stepLine);
+
+
+{% endhighlight %}
+
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Cartesianseries1-clubbed/Spline.png](charttypes_images/stepline.png)
+
 ## Bubble Chart
 
 To render a bubble chart, create an instance of `BubbleSeries` and add to the `Series` collection property of `SfChart`. 

@@ -15,6 +15,8 @@ documentation: ug
 
 This section explains you the steps to configure a rating control in a real-time scenario and also provides a walk-through on some of the customization features available in Rating control.
 
+![](images/gettingstarted.png)
+
 ## Referencing Essential Studio components in your solution
 
 If you had acquired Essential Studio components through the Xamarin component store interface from within your IDE, then after adding the components to your Xamarin.iOS, Xamarin.Android and Windows Phone projects through the Component manager, you will still need to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL project in your solution. You can do this by manually adding the relevant PCL assembly references to your PCL project contained in the following path inside of your solution folder.
@@ -35,17 +37,17 @@ Or after downloading through the Xamarin store web interface, all the required a
 
 You can then add the assembly references to the respective projects as shown below
 
-PCL Project
+**PCL Project**
 
 pcl\Syncfusion.SfRating.XForm.dll
 
-Android Project
+**Android Project**
 
 android\Syncfusion. SfRating.Andriod.dll
 
 android\Syncfusion. SfRating.xForms.Andriod.dll
 
-IOS (Classic) Project
+**IOS (Classic) Project**
 
 iOS\Syncfusion. SfRating.iOS.dll
 
@@ -53,7 +55,7 @@ iOS\Syncfusion. SfRating.xForms.iOS.dll
 
 iOS\Syncfusion. SfRating.XForm.dll
 
-IOS (Unified) Project
+**IOS (Unified) Project**
 
 iOS-unified\Syncfusion.SfRating.iOS.dll
 
@@ -61,7 +63,7 @@ iOS-unified\Syncfusion.SfRating.xForms.iOS.dll
 
 iOS-unified\Syncfusion.SfRating.XForm.dll
 
-Windows Phone Project
+**Windows Phone Project**
 
 wp8\Syncfusion.SfRating.WP8.dll
 
@@ -94,7 +96,6 @@ The Rating control is configured entirely in C# code or by using XAML markup. Th
 
 {% endhighlight %}
 
-![](images/gettingstarted.png)
 
 ## Setting Value
 

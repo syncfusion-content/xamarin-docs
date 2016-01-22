@@ -9,9 +9,7 @@ documentation: ug
 
 # Getting started
 
-## Create your first SfDateTimeRangeNavigator in Xamarin.Forms
-
-This section walks you through the steps required to add SfDateTimeRangeNavigator and populate it with data, and also explains how to respond to range selection performed in the control. 
+This section walks you through the steps required to add `SfDateTimeRangeNavigator` and populate it with data, and also explains how to respond to range selection performed in the control. 
 
 ## Referencing Essential Studio components in your solution
 
@@ -67,7 +65,7 @@ wp8\Syncfusion.SfChart.XForms.WinPhone.dll
 
 Currently an additional step is required for Windows Phone and iOS projects. We need to create an instance of the SfRangeNavigatorRenderer as shown below.
 
-Create an instance of SfRangeNavigatorRenderer in MainPage constructor of the Windows Phone project as shown
+Create an instance of `SfRangeNavigatorRenderer` in MainPage constructor of the Windows Phone project as shown
 
 {% highlight c# %}
 [C#]
@@ -105,13 +103,13 @@ Following code example illustrates this,
 
 SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator();
 
-rangeNavigator.Minimum = new DateTime(2015, 01, 1);
+rangeNavigator.Minimum = new DateTime(2015, 01, 01);
 
-rangeNavigator.Maximum = new DateTime(2016 1, 1);
+rangeNavigator.Maximum = new DateTime(2016, 01, 01);
 
 {% endhighlight %}
 
-![](gettingstarted_images/gettingstarted_img1.png)
+![](gettingstarted_images/gettingstarted_img1.jpeg)
 
 N> If you don’t specify `Minimum` and `Maximum` properties, minimum and maximum dates will be choosen automatically based on the provided data using `ItemsSource` property, which is explained in the next step in this section.
 
@@ -129,19 +127,19 @@ public class DataModel
 		DateTimeData = new ObservableCollection<Model>()
 		{ 
 			
-			new Model (new DateTime(2015, 01, 1), 14), 
-			new Model (new DateTime(2015, 02, 1), 54), 
-			new Model (new DateTime(2015, 03, 1), 23), 
-			new Model (new DateTime(2015, 04, 1), 53), 
-			new Model (new DateTime(2015, 05, 1), 25), 
-			new Model (new DateTime(2015, 06, 1), 32), 
-			new Model (new DateTime(2015, 07, 1), 78), 
-			new Model (new DateTime(2015, 08, 1), 100), 
-			new Model (new DateTime(2015, 09, 1), 55), 
-			new Model (new DateTime(2015, 10, 1), 38), 
-			new Model (new DateTime(2015, 11, 1), 27), 
-			new Model (new DateTime(2015, 12, 1), 56), 
-			new Model (new DateTime(2016, 1, 1), 33) 
+			new Model (new DateTime(2015, 01, 01), 14), 
+			new Model (new DateTime(2015, 02, 01), 54), 
+			new Model (new DateTime(2015, 03, 01), 23), 
+			new Model (new DateTime(2015, 04, 01), 53), 
+			new Model (new DateTime(2015, 05, 01), 25), 
+			new Model (new DateTime(2015, 06, 01), 32), 
+			new Model (new DateTime(2015, 07, 01), 78), 
+			new Model (new DateTime(2015, 08, 01), 100), 
+			new Model (new DateTime(2015, 09, 01), 55), 
+			new Model (new DateTime(2015, 10, 01), 38), 
+			new Model (new DateTime(2015, 11, 01), 27), 
+			new Model (new DateTime(2015, 12, 01), 56), 
+			new Model (new DateTime(2016, 01, 01), 33) 
 			
 		}; 
 	} 
@@ -178,7 +176,7 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 
 {% endhighlight %}
 
-![](gettingstarted_images/gettingstarted_img2.png)
+![](gettingstarted_images/gettingstarted_img2.jpeg)
 
 ## Handle range selection
 
@@ -203,4 +201,4 @@ private void rangeNavigator_RangeChanged(object sender, RangeChangedEventArgs e)
 
 {% endhighlight %}
 
-![](gettingstarted_images/gettingstarted_img3.png)
+![](gettingstarted_images/gettingstarted_img3.jpeg)

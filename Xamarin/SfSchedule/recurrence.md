@@ -10,7 +10,7 @@ documentation: ug
 
 # RECURRENCE
 
-Recursive appointments can be created by enabling isRecursive property in Schedule appointments, to know more about adding appointments in the control, refer `ScheduleAppointment`
+Recursive appointments can be created by enabling isRecursive property in Schedule appointments, to know more about adding appointments in the control, refer [Schedule Appointments](/xamarin/sfschedule/populating-appointment "Schedule Appointments").
 
 And then need to set the RecurrenceRule to populate the required recursive appointment collection in a specific pattern.
 

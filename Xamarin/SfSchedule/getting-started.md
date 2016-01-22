@@ -164,7 +164,7 @@ You can add events to the schedule by creating collection of ScheduleAppointment
 
 ## Populating Recursive Events
 
-You can also add recursive appointments to Schedule, refer Recurrence section to know more about creating the recursive appointments using Rrule generator in schedule.
+You can also add recursive appointments to Schedule, refer [Recurrence](/xamarin/sfschedule/recurrence "Schedule Recursive Appointments") section to know more about creating the recursive appointments using Rrule generator in schedule.
 
 {% highlight c# %}
 

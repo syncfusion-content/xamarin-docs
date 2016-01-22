@@ -202,37 +202,3 @@ chart.Series.Add(stackingColumnSeries4);
 {% endhighlight %}
 
 ![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Chatseries-clubbed/grouping.png](chartseries_images/chartseries_img4.png)
-
-## Vertical Chart
-
-Vertical chart is used to show the CartesianSeries vertically which helps to view the data in different
-perceptive.
-
-{% highlight xaml %}
-[XAML]
-
-<chart:SfChart.Series>
-<chart:LineSeries ItemsSource="{Binding Data}" XBindingPath="Month"
-YBindingPath="Vaue" IsTransposed="True"/>
-</chart:SfChart.Series>
-
-
-{% endhighlight %}
-
-{% highlight c# %}
-[C#]
-
-SfChart chart = new SfChart();
-...	
-
-LineSeries lineSeries = new LineSeries();
-lineSeries.XBindingPath = "Month";
-lineSeries.YBindingPath = "Value";
-]lineSeries.ItemsSource = Data;
-lineSeries.IsTransposed = true;
-chart.Series.Add(lineSeries);
-
-
-{% endhighlight %}
-
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Chatseries-clubbed/multiple.png](chartseries_images/verticalchart.png)

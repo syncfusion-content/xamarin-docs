@@ -11,8 +11,9 @@ documentation: ug
 
 Data markers are used to provide information about the data points to the user. You can add a shape and label to adorn each data point. This can be enabled using following code snippet,
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:LineSeries>
 
@@ -24,17 +25,17 @@ Data markers are used to provide information about the data points to the user. 
 
 </chart:LineSeries>
 
-
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 lineSeries.DataMarker = new ChartDataMarker();
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Datamaker - clubbed/Datamacker.png](datamarker_images/datamarker_img1.png)
+{% endtabs %}
+
+![](datamarker_images/datamarker_img1.png)
 
 ## Customizing Labels
 
@@ -50,8 +51,9 @@ Data labels are enabled by default but you can also change the visibility of the
 
 Following code snippet illustrates the customization of label and its background,
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:LineSeries.DataMarker>
 
@@ -78,7 +80,6 @@ Following code snippet illustrates the customization of label and its background
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 lineSeries.DataMarker = new ChartDataMarker();
 
@@ -100,7 +101,9 @@ lineSeries.DataMarker.LabelStyle.Font = Font.SystemFontOfSize(18, FontAttributes
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Datamaker - clubbed/DataMarkerlabelStyle.png](datamarker_images/datamarker_img2.png)
+{% endtabs %}
+
+![](datamarker_images/datamarker_img2.png)
 
 ## Formatting Label Content
 
@@ -108,9 +111,10 @@ You can customize the content of the label using LabelContent property. Followin
 
 * `Percentage` – This will show the percentage value of corresponding data point Y value, this is often used in pie, doughnut, funnel and pyramid series types.
 * `YValue` – This will show the corresponding Y value.
-{% highlight xaml %}
 
-[XAML]
+{% tabs %} 
+
+{% highlight xaml %}
 
 <chart:PieSeries>
 
@@ -125,13 +129,14 @@ You can customize the content of the label using LabelContent property. Followin
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 pieSeries.DataMarker.LabelContent = LabelContent.Percentage;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Datamaker - clubbed/DatamarkerlabalContent.png](datamarker_images/datamarker_img3.png)
+{% endtabs %}
+
+![](datamarker_images/datamarker_img3.png)
 
 ## Label Position
 
@@ -139,13 +144,13 @@ This feature is used to position the data marker labels at Center, Inner and Out
 
 The following screenshot illustrates the default position of data marker labels,
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Datamaker - clubbed/Auto.png](datamarker_images/datamarker_img4.png)
-
+![](datamarker_images/datamarker_img4.png)
 
 The following code sample illustrates the center position of data marker labels,
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:ChartDataMarker>
 
@@ -160,18 +165,20 @@ The following code sample illustrates the center position of data marker labels,
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 series.DataMarker.LabelStyle.LabelPosition = DataMarkerLabelPosition.Center;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Datamaker - clubbed/Center.png](datamarker_images/datamarker_img5.png)
+{% endtabs %}
+
+![](datamarker_images/datamarker_img5.png)
 
 The following code sample illustrates the Inner position of data marker labels,
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:ChartDataMarker>
 
@@ -186,19 +193,20 @@ The following code sample illustrates the Inner position of data marker labels,
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 series.DataMarker.LabelStyle.LabelPosition = DataMarkerLabelPosition.Inner;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Datamaker - clubbed/inner.png](datamarker_images/datamarker_img6.png)
+{% endtabs %}
 
+![](datamarker_images/datamarker_img6.png)
 
 The following code sample illustrates the outer position of data marker labels, 
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:ChartDataMarker>
 
@@ -213,64 +221,66 @@ The following code sample illustrates the outer position of data marker labels,
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 series.DataMarker.LabelStyle.LabelPosition = DataMarkerLabelPosition.Outer;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Datamaker - clubbed/outer.png](datamarker_images/datamarker_img7.png)
+{% endtabs %}
+
+![](datamarker_images/datamarker_img7.png)
 
 ## Smart Labels
 
-This feature is used to arrange the data marker labels smartly and avoid the intersection when there is
-overlapping of labels. The property EnableSmartLabels in CircularSeries, is used to arrange the datamarker labels
-smartly. By default, it is false, we need to enable this property.
+This feature is used to arrange the data marker labels smartly and avoid the intersection when there is overlapping of labels. The property EnableSmartLabels in CircularSeries, is used to arrange the datamarker labels smartly. By default, it is false, we need to enable this property.
 
 The following code sample illustrates how to enable the smart labels.
 
+{% tabs %} 
 
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.Series>
-<chart:PieSeries ItemsSource="{Binding Data}" XBindingPath="Expense"   
-YBindingPath="Value" StartAngle="75" EndAngle ="435"
-EnableSmartLabels="True" ConnectorLineType = "Bezier" 
-DataMarkerPosition = "OutsideExtended">
-<chart:PieSeries.DataMarker>
-<chart:ChartDataMarker />
-</chart:PieSeries.DataMarker>
-</chart:PieSeries>
-</chart:SfChart.Series> 
 
+	<chart:PieSeries ItemsSource="{Binding Data}" XBindingPath="Expense" YBindingPath="Value" StartAngle="75" EndAngle ="435" EnableSmartLabels="True" ConnectorLineType = "Bezier" DataMarkerPosition = "OutsideExtended">
+	
+		<chart:PieSeries.DataMarker>
+			<chart:ChartDataMarker />
+		</chart:PieSeries.DataMarker>
+		
+	</chart:PieSeries>
+	
+</chart:SfChart.Series> 
 
 {% endhighlight %}
 
-{% highlight c# %}
-[C#]          
+{% highlight c# %}        
 
 SfChart chart = new SfChart();
 ...
 
 PieSeries pieSeries = new PieSeries()
 {
-ItemsSource = Data,
-XBindingPath = "Expense",
-YBindingPath = "Value",
-EnableSmartLabels = true,
-DataMarkerPosition = CircularSeriesDataMarkerPosition.OutsideExtended,
-ConnectorLineType= ConnectorLineType.Bezier,
-StartAngle=75,
-EndAngle=435,
-DataMarker=new ChartDataMarker(),
+	
+	ItemsSource = Data,
+	XBindingPath = "Expense",
+	YBindingPath = "Value",
+	EnableSmartLabels = true,
+	DataMarkerPosition = CircularSeriesDataMarkerPosition.OutsideExtended,
+	ConnectorLineType= ConnectorLineType.Bezier,
+	StartAngle=75,
+	EndAngle=435,
+	DataMarker=new ChartDataMarker(),
+	
 };
-chart.Series.Add(pieSeries);
 
+chart.Series.Add(pieSeries);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Datamaker - clubbed/MarkerType.png](datamarker_images/smartlabels.png)
+{% endtabs %}
+
+![](datamarker_images/smartlabels.png)
 
 ## Customizing Marker Shapes
 
@@ -284,8 +294,9 @@ Shapes can be added to chart data marker by setting the ShowMarker property to t
 
 The following code example shows how to enable marker and specify its types,
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:LineSeries.DataMarker>
 
@@ -295,8 +306,7 @@ The following code example shows how to enable marker and specify its types,
 
 {% endhighlight %}
 
-{% highlight c# %}
-[C#]          
+{% highlight c# %}  
 
 lineSeries.DataMarker = new ChartDataMarker();
 
@@ -318,7 +328,9 @@ lineSeries.DataMarker.MarkerBorderWidth = 2;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Datamaker - clubbed/MarkerType.png](datamarker_images/datamarker_img8.png)
+{% endtabs %}
+
+![](datamarker_images/datamarker_img8.png)
 
 ## Connector Line
 
@@ -330,9 +342,10 @@ This feature is used to connect label and data point using a line. It can be ena
 
 The following code illustrates how to specify the connector height and its angle,
 
-{% highlight xaml %}
-[XAML]      
+{% tabs %} 
 
+{% highlight xaml %}
+      
 <chart:LineSeries.DataMarker>
 
 	<chart:ChartDataMarker>
@@ -350,7 +363,6 @@ The following code illustrates how to specify the connector height and its angle
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 lineSeries.DataMarker.ConnectorLineStyle.ConnectorHeight = 50;
 
@@ -364,6 +376,8 @@ lineSeries.DataMarker.ConnectorLineStyle.StrokeDashArray = new double[2] { 2, 3 
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Datamaker - clubbed/ConnectorLine.png](datamarker_images/datamarker_img9.png)
+{% endtabs %}
+
+![](datamarker_images/datamarker_img9.png)
 
 N> For Pie and Doughnut series, you can set the Bezier curve for connector line using ConnectorType property of Pie and Doughnut series.

@@ -25,8 +25,9 @@ Chart will use the colors from `CustomBrushes` property if `ColorModel.Palette` 
 
 Following code illustrates how to set the custom colors.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
 
@@ -43,7 +44,6 @@ Following code illustrates how to set the custom colors.
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 SfChart sfChart = new SfChart();
 ...
@@ -64,6 +64,8 @@ sfChart.ColorModel.CustomBrushes = colors;
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Appearence/chart-custom.png](appearance_images/appearance_img2.png)
 
 **None Palette**
@@ -78,8 +80,9 @@ None palette will not apply any color to the series. So in order to define the c
 
 Currently, Chart supports only Metro palette.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart>
 ...
@@ -99,7 +102,6 @@ Currently, Chart supports only Metro palette.
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 SfChart chart = new SfChart();
 ...
@@ -118,6 +120,8 @@ chart.Series.Add(columnSeries);
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Appearence/METRO1.png](appearance_images/appearance_img3.png)
 
 **Custom Palette**
@@ -126,8 +130,9 @@ Series will use the colors from `CustomBrushes` property if the `ColorModel.Pale
 
 Following code illustrates how to set the custom colors.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart>
 ...
@@ -147,7 +152,6 @@ Following code illustrates how to set the custom colors.
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 SfChart chart = new SfChart();
 ...
@@ -177,6 +181,8 @@ columnSeries.ColorModel.CustomBrushes = colors;
 chart.Series.Add(columnSeries);
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![C:/Users/yuvaraj.palanisamy/Documents/My Received Files/custom-clr.png](appearance_images/appearance_img4.png)
 

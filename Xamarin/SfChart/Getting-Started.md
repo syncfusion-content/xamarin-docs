@@ -790,5 +790,3 @@ public class DataModel
 {% endtabs %}  
 
 ![](Getting-Started_images/img3.png)
-
-

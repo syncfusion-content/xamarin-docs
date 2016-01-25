@@ -13,8 +13,9 @@ Legend contains list of chart series/data points in the chart. The information p
 
 Following code example shows how to enable legend in a chart,
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart>
 
@@ -29,13 +30,14 @@ Following code example shows how to enable legend in a chart,
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.Legend = new ChartLegend();
 
 {% endhighlight %}
 
-![E:/UG Images/Legend_clubbed/Legend1.png](legend_images/legend_img1.png)
+{% endtabs %}
+
+![](legend_images/legend_img1.png)
 
 ## Customizing Labels
 
@@ -45,8 +47,9 @@ chart.Legend = new ChartLegend();
 * `Font` – used to change the text size, font family and font weight.
 * `Margin` - used to change the margin size for labels.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.Legend>
 
@@ -73,7 +76,6 @@ chart.Legend = new ChartLegend();
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.Legend = new ChartLegend();
 
@@ -85,14 +87,17 @@ chart.Legend.LabelStyle.Margin = 5;
 
 {% endhighlight %}
 
-![E:/UG Images/Legend_clubbed/legenglabelStyle.png](legend_images/legend_img2.png)
+{% endtabs %}
+
+![](legend_images/legend_img2.png)
 
 ## Legend Icons
 
 Legend icons are enabled by default, however, you can control its visibility using `IsIconVisible` property. Also you can specify the icon type using `LegendIcon` property in ChartSeries. `IconWidth` and `IconHeight` properties are used to adjust the width and height of the legend icons respectively.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart>
 
@@ -109,7 +114,6 @@ Legend icons are enabled by default, however, you can control its visibility usi
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.Legend = new ChartLegend();
 
@@ -123,7 +127,9 @@ pieSeries.LegendIcon = ChartLegendIcon.SeriesType;
 
 {% endhighlight %}
 
-![E:/UG Images/Legend/legendIcon/ug-image.png](legend_images/legend_img3.png)
+{% endtabs %}
+
+![](legend_images/legend_img3.png)
 
 ## Legend Title
 
@@ -138,9 +144,9 @@ Following properties are used to define and customize the legend title.
 * `BorderColor` – used to change the border color.
 * `BorderWidth` – used to adjust the title border width.
 
-{% highlight xaml %}
+{% tabs %} 
 
-[XAML]
+{% highlight xaml %}
 
 <chart:SfChart.Legend>
 
@@ -167,7 +173,6 @@ Following properties are used to define and customize the legend title.
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.Legend = new ChartLegend();
 
@@ -187,14 +192,17 @@ chart.Legend.Title.BorderColor = Color.Blue;
 
 {% endhighlight %}
 
-![E:/UG Images/Legend_clubbed/legendTitle.png](legend_images/legend_img4.png)
+{% endtabs %}
+
+![](legend_images/legend_img4.png)
 
 ## Toggle the series visibility
 
 You can control the visibility of the series by tapping on the legend item. You can enable this feature by enabling `ToggleSeriesVisibility` property.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart>
 
@@ -209,13 +217,14 @@ You can control the visibility of the series by tapping on the legend item. You 
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.Legend = new ChartLegend();
 
 chart.Legend.ToggleSeriesVisibility = true;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ## Positioning the Legend
 
@@ -224,9 +233,10 @@ You can position the legend anywhere inside the chart. Following properties are 
 * `DockPosition`– used to position the legend relatively. Options available are: Left, Right, Top, Bottom and Floating. If the DockPosition is Floating, you can position the legend using x and y coordinates.
 * `OffsetX`– used to move the legend on x coordinate by the given offset value, this will work only if the dock position is Floating.
 * `OffsetY` - used to move the legend on y coordinate by the given offset value, this will work only if the dock position is Floating.
-{% highlight c# %}
 
-[XAML]
+{% tabs %} 
+
+{% highlight xaml %}
 
 <chart:SfChart>
 
@@ -241,7 +251,6 @@ You can position the legend anywhere inside the chart. Following properties are 
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.Legend = new ChartLegend();
 
@@ -255,4 +264,6 @@ chart.Legend.OffsetY = 90;
 
 {% endhighlight %}
 
-![E:/UG Images/Legend_clubbed/legendDockposition.png](legend_images/legend_img5.png)
+{% endtabs %}
+
+![](legend_images/legend_img5.png)

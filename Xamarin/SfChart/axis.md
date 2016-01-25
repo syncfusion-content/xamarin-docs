@@ -20,11 +20,11 @@ Vertical(Y) axis always uses numerical scale. Horizontal(X) axis supports the fo
 
 ## Category Axis
 
-
 Category axis displays text labels instead of numbers. 
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.PrimaryAxis >
 
@@ -32,25 +32,25 @@ Category axis displays text labels instead of numbers.
 
 </chart:SfChart.PrimaryAxis>
 
-
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.PrimaryAxis = new CategoryAxis();
 
-
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/CategoryAxis.png](axis_images/axis_img1.png)
+{% endtabs %}
+
+![](axis_images/axis_img1.png)
 
 ### Placing labels between ticks
 
 Labels in category axis can be placed between the ticks by setting `LabelPlacement` to `BetweenTicks`. Default value of `LabelPlacement` property is `OnTicks` i.e. labels will be placed on the ticks by default.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.PrimaryAxis >
 
@@ -58,24 +58,25 @@ Labels in category axis can be placed between the ticks by setting `LabelPlaceme
 
 </chart:SfChart.PrimaryAxis>
 
-
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.PrimaryAxis = new CategoryAxis() { LabelPlacement = LabelPlacement.BetweenTicks };
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/CategoryTicks.png](axis_images/axis_img2.png)
+{% endtabs %}
+
+![](axis_images/axis_img2.png)
 
 ### Displaying labels after a fixed interval
 
 To display labels after a fixed interval n, you can set `Interval` property of ChartAxis as n. Default value of interval is 1 i.e. all the labels will be displayed by default.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.PrimaryAxis >
 
@@ -83,26 +84,25 @@ To display labels after a fixed interval n, you can set `Interval` property of C
 
 </chart:SfChart.PrimaryAxis>
 
-
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.PrimaryAxis = new CategoryAxis() { Interval = 2, LabelPlacement = LabelPlacement.BetweenTicks };
 
-
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/CategoryInterval.png](axis_images/axis_img3.png)
+{% endtabs %}
 
+![](axis_images/axis_img3.png)
 
 ## Numeric Axis
 
 Numeric axis uses numerical scale and displays numbers as labels. 
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.PrimaryAxis >
 
@@ -110,24 +110,25 @@ Numeric axis uses numerical scale and displays numbers as labels.
 
 </chart:SfChart.PrimaryAxis>
 
-
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.PrimaryAxis = new NumericalAxis();
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/numerical-1.png](axis_images/axis_img4.png)
+{% endtabs %}
+
+![](axis_images/axis_img4.png)
 
 ### Customizing numeric range
 
 To customize the range of an axis, you can use the `Minimum` and `Maximum` properties of `NumericalAxis`. By default, nice range will be calculated automatically based on the provided data.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.SecondaryAxis >
 
@@ -138,20 +139,22 @@ To customize the range of an axis, you can use the `Minimum` and `Maximum` prope
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.SecondaryAxis = new NumericalAxis() { Minimum = 10, Maximum = 50 };
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/NumericRange.png](axis_images/axis_img5.png)
+{% endtabs %}
+
+![](axis_images/axis_img5.png)
 
 ### Customizing numeric interval
 
 Axis interval can be customized using the `Interval` property of ChartAxis. By default, nice interval will be calculated based on the minimum and maximum value of the provided data.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.SecondaryAxis >
 
@@ -162,13 +165,14 @@ Axis interval can be customized using the `Interval` property of ChartAxis. By d
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.SecondaryAxis = new NumericalAxis() { Interval = 10 };
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/Numeric-Interval.png](axis_images/axis_img6.png)
+{% endtabs %}
+
+![](axis_images/axis_img6.png)
 
 ### Apply padding to the range
 
@@ -183,8 +187,9 @@ Padding can be applied to the minimum and maximum extremes of the axis range by 
 
 When the value of `RangePadding` property is `None`, padding will not be applied to the axis. This is also the default value of `RangePadding` for horizontal axis.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.SecondaryAxis>
 
@@ -192,24 +197,25 @@ When the value of `RangePadding` property is `None`, padding will not be applied
 
 </chart:SfChart.SecondaryAxis>
 
-
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.SecondaryAxis = new NumericalAxis() { RangePadding = NumericalPadding.None };
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/NumericRangeNone.png](axis_images/axis_img7.png)
+{% endtabs %}
+
+![](axis_images/axis_img7.png)
 
 **Round**
 
 When the value of `RangePadding` property is `Round`, axis range will be rounded to the nearest possible value divided by the interval.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.SecondaryAxis>
 
@@ -220,20 +226,22 @@ When the value of `RangePadding` property is `Round`, axis range will be rounded
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.SecondaryAxis = new NumericalAxis() { RangePadding = NumericalPadding.Round };
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/NumericRangeRound.png](axis_images/axis_img8.png)
+{% endtabs %}
+
+![](axis_images/axis_img8.png)
 
 **Additional**
 
 When the value of `RangePadding` property is `Additional`, axis range will be rounded and an interval of the axis will be added as padding to the minimum and maximum values of the range.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.SecondaryAxis>
 
@@ -244,20 +252,22 @@ When the value of `RangePadding` property is `Additional`, axis range will be ro
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.SecondaryAxis = new NumericalAxis() { RangePadding = NumericalPadding.Additional };
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/NuericRangeAdditional.png](axis_images/axis_img9.png)
+{% endtabs %}
+
+![](axis_images/axis_img9.png)
 
 **Normal**
 
 When the value of `RangePadding` property is `Normal`, nice range will be calculated for the axis based on the best readability of the data. This is also the default for vertical axis.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.SecondaryAxis>
 
@@ -268,20 +278,22 @@ When the value of `RangePadding` property is `Normal`, nice range will be calcul
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.SecondaryAxis = new NumericalAxis() { RangePadding = NumericalPadding.Normal };
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/NumericRangNormal.png](axis_images/axis_img10.png)
+{% endtabs %}
+
+![](axis_images/axis_img10.png)
 
 ## Date Time Axis
 
 Date time axis uses date time scale and displays date time values as axis labels in specified format. 
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.PrimaryAxis >
 
@@ -292,20 +304,22 @@ Date time axis uses date time scale and displays date time values as axis labels
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.PrimaryAxis = new DateTimeAxis();
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/DateTime.png](axis_images/axis_img11.png)
+{% endtabs %}
+
+![](axis_images/axis_img11.png)
 
 ### Customizing date time range
 
 To customize the range of an axis, you can use the `Minimum` and `Maximum` properties of `DateTimeAxis`. By default, nice range will be calculated automatically based on the provided data.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 Namespace:
 
@@ -350,13 +364,14 @@ xmlns:sys="clr-namespace:System;assembly=mscorlib"
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.PrimaryAxis = new DateTimeAxis() { Minimum = new DateTime(2010, 1, 1), Maximum = new DateTime(2015, 12, 30) };
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/DateTimeRange.png](axis_images/axis_img12.png)
+{% endtabs %}
+
+![](axis_images/axis_img12.png)
 
 ### Date time intervals
 
@@ -372,9 +387,9 @@ Essential Chart supports the following types of interval for date time axis
 * Seconds
 * Milliseconds
 
-{% highlight xaml %}
+{% tabs %} 
 
-[XAML]
+{% highlight xaml %}
 
 <chart:SfChart.PrimaryAxis>
 
@@ -393,13 +408,14 @@ Essential Chart supports the following types of interval for date time axis
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.PrimaryAxis = new DateTimeAxis() { IntervalType = DateTimeIntervalType.Months, Interval = 6 };
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/DateTimeInterval.png](axis_images/axis_img13.png)
+{% endtabs %}
+
+![](axis_images/axis_img13.png)
 
 ### Apply padding to the range
 
@@ -413,8 +429,9 @@ Padding can be applied to the minimum and maximum extremes of the range by using
 
 When the value of `RangePadding` property is `None`, padding will not be applied to the axis. This is also the default value of `RangePadding`.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.PrimaryAxis>
 
@@ -425,20 +442,22 @@ When the value of `RangePadding` property is `None`, padding will not be applied
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.PrimaryAxis = new DateTimeAxis() { RangePadding = DateTimeRangePadding.None };
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/DateTimeNone.png](axis_images/axis_img14.png)
+{% endtabs %}
+
+![](axis_images/axis_img14.png)
 
 **Round**
 
 When the value of `RangePadding` property is `round`, axis range will be rounded to the nearest possible date time value.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.PrimaryAxis >
 
@@ -449,20 +468,22 @@ When the value of `RangePadding` property is `round`, axis range will be rounded
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.PrimaryAxis = new DateTimeAxis() { RangePadding = DateTimeRangePadding.Round };
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/DateTimeRound.png](axis_images/axis_img15.png)
+{% endtabs %}
+
+![](axis_images/axis_img15.png)
 
 **Additional**
 
 When the value of `RangePadding` property is `Additional`, range will be rounded and date time interval of the axis will be added as padding to the minimum and maximum extremes of the range.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.PrimaryAxis >
 
@@ -473,93 +494,102 @@ When the value of `RangePadding` property is `Additional`, range will be rounded
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.PrimaryAxis = new DateTimeAxis() { RangePadding = DateTimeRangePadding.Additional };
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/DateTimeAdditional.png](axis_images/axis_img16.png)
+{% endtabs %}
+
+![](axis_images/axis_img16.png)
 
 ## Logarithmic Axis
 
 Logarithmic axis uses logarithmic scale and displays numbers as axis labels.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.SecondaryAxis>
-<chart:LogarithmicAxis />
+
+	<chart:LogarithmicAxis />
+
 </chart:SfChart.SecondaryAxis>
 
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.SecondaryAxis = new LogarithmicAxis (); 
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/CategoryAxis.png](axis_images/logaxis_img1.png)
+{% endtabs %}
+
+![](axis_images/logaxis_img1.png)
 
 ## Customizing the logarithmic range
 
-To customize the range of log axis, you can use the minimum and maximum properties of LogarithmicAxis. By default,
-nice range will be calculated automatically based on the provided data.
+To customize the range of log axis, you can use the minimum and maximum properties of LogarithmicAxis. By default,nice range will be calculated automatically based on the provided data.
 
+{% tabs %} 
 
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.SecondaryAxis>
-<chart:LogarithmicAxis >
-<chart:LogarithmicAxis.Minimum>
-<x:Double>100</x:Double>
-</chart:LogarithmicAxis.Minimum>
-<chart:LogarithmicAxis.Maximum>
-<x:Double>10000</x:Double>
-</chart:LogarithmicAxis.Maximum>
-</chart:LogarithmicAxis>
+
+	<chart:LogarithmicAxis >
+	
+		<chart:LogarithmicAxis.Minimum>
+			<x:Double>100</x:Double>
+		</chart:LogarithmicAxis.Minimum>
+		
+		<chart:LogarithmicAxis.Maximum>
+			<x:Double>10000</x:Double>
+		</chart:LogarithmicAxis.Maximum>
+		
+	</chart:LogarithmicAxis>
+	
 </chart:SfChart.SecondaryAxis>
 
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.SecondaryAxis = new LogarithmicAxis() { Minimum = 100, Maximum = 10000 };
 
-
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/CategoryAxis.png](axis_images/logaxis_img2.png)
+{% endtabs %}
+
+![](axis_images/logaxis_img2.png)
 
 ## Customizing the logarithmic base
 
-
 To customize the log base value, you can use LogarithmicBase property.
 
+{% tabs %} 
 
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.SecondaryAxis>
-<chart:LogarithmicAxis LogarithmicBase="2" />
-</chart:SfChart.SecondaryAxis>	
 
+	<chart:LogarithmicAxis LogarithmicBase="2" />
+
+</chart:SfChart.SecondaryAxis>	
 
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.SecondaryAxis = new LogarithmicAxis() { LogarithmicBase = 2 };
 
-
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/CategoryAxis.png](axis_images/logaxis_img3.png)
+{% endtabs %}
+
+![](axis_images/logaxis_img3.png)
 
 ## Common axis features
 
@@ -569,8 +599,9 @@ Customization of features such as axis title, labels, grid lines and tick lines 
 
 Axis visibility can be controlled using the `IsVisible` property of axis. Default value of `IsVisible` property is `True`.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.SecondaryAxis>
 
@@ -581,13 +612,14 @@ Axis visibility can be controlled using the `IsVisible` property of axis. Defaul
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.SecondaryAxis.IsVisible = false;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/AxisVisible.png](axis_images/axis_img17.png)
+{% endtabs %}
+
+![](axis_images/axis_img17.png)
 
 ### Axis title
 
@@ -603,8 +635,9 @@ The `Title` property in axis provides options to customize the text and font of 
 
 Following code snippet illustrates how to enable and customize the axis title.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.PrimaryAxis>
 
@@ -631,7 +664,6 @@ Following code snippet illustrates how to enable and customize the axis title.
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.PrimaryAxis.Title.Text = "Month";
 
@@ -639,10 +671,11 @@ chart.PrimaryAxis.Title.TextColor = Color.Blue;
 
 chart.PrimaryAxis.Title.Font = Font.SystemFontOfSize(20, FontAttributes.Bold);
 
-
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/Axis-title.png](axis_images/axis_img18.png)
+{% endtabs %}
+
+![](axis_images/axis_img18.png)
 
 ### Label customization
 
@@ -655,8 +688,9 @@ The `LabelStyle` property of axis provides options to customize the font-family,
 * `Font` – used to change the text size, font family and font weight.
 * `Margin` - used to change the margin size for labels.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.PrimaryAxis>
 
@@ -683,7 +717,6 @@ The `LabelStyle` property of axis provides options to customize the font-family,
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.PrimaryAxis.LabelStyle.Font = Font.SystemFontOfSize(20, FontAttributes.Bold);
 
@@ -691,14 +724,17 @@ chart.PrimaryAxis.LabelStyle.TextColor = Color.Red;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/AxisLabelStyle.png](axis_images/axis_img19.png)
+{% endtabs %}
+
+![](axis_images/axis_img19.png)
 
 ### Label and tick positioning
 
 Axis labels and ticks can be positioned inside or outside the chart area by using `LabelStyle`.`LabelsPosition` and `TickPosition` properties of ChartAxis. By default labels and ticks will be positioned outside the chart area.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.PrimaryAxis >
 
@@ -717,7 +753,6 @@ Axis labels and ticks can be positioned inside or outside the chart area by usin
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.PrimaryAxis.LabelStyle.LabelsPosition = AxisElementPosition.Inside;
 
@@ -725,34 +760,39 @@ chart.PrimaryAxis.TickPosition = AxisElementPosition.Inside;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/AxisTick.png](axis_images/axis_img20.png)
+{% endtabs %}
+
+![](axis_images/axis_img20.png)
 
 ### Edge labels placement
 
 Labels with long text at the edges of an axis may appear partially outside the chart. The `EdgeLabelsDrawingMode` property can be used to avoid the partial appearance of labels at the corners.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:CategoryAxis EdgeLabelsDrawingMode="Shift"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.PrimaryAxis.EdgeLabelsDrawingMode = EdgeLabelsDrawingMode.Shift;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/edgeLabel.png](axis_images/axis_img21.png)
+{% endtabs %}
+
+![](axis_images/axis_img21.png)
 
 ### Grid lines customization
 
 The `ShowMajorGridLines` and `ShowMinorGridLines` properties are used to control the visibility of grid lines. `MajorGridLineStyle` and `MinorGridLineStyle` properties in axis are used to customize the major grid lines and minor grid lines of an axis respectively. They provide options to change the width, dashes, color of grid lines. By default minor grid lines will not be visible. 
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.SecondaryAxis >
 
@@ -763,7 +803,6 @@ The `ShowMajorGridLines` and `ShowMinorGridLines` properties are used to control
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart. SecondaryAxis = new NumericalAxis ()
 
@@ -779,14 +818,17 @@ chart. SecondaryAxis = new NumericalAxis ()
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/AxisGridLine.png](axis_images/axis_img22.png)
+{% endtabs %}
+
+![](axis_images/axis_img22.png)
 
 ### Tick lines customization
 
 The `MajorTickStyle` and `MinorTickStyle` properties in axis are used to customize the major tick lines of an axis and minor tick lines of an axis respectively. They provide options to change the width, size, color and visibility of tick lines. By default minor tick lines will not be visible.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.SecondaryAxis >
 
@@ -811,7 +853,6 @@ The `MajorTickStyle` and `MinorTickStyle` properties in axis are used to customi
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 NumericalAxis numerical = new NumericalAxis();
 
@@ -835,14 +876,17 @@ chart.SecondaryAxis = numerical;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/AxisTickStyle.png](axis_images/axis_img23.png)
+{% endtabs %}
+
+![](axis_images/axis_img23.png)
 
 ### Inversing axis
 
 Axis can be inversed using the `IsInversed` property of axis. Default value of `IsInversed` property is `False`.
 
+{% tabs %} 
+
 {% highlight c# %}
-[XAML]
 
 <chart:SfChart.SecondaryAxis >
 
@@ -853,20 +897,22 @@ Axis can be inversed using the `IsInversed` property of axis. Default value of `
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.SecondaryAxis.IsInversed = true;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/AxisInverse.png](axis_images/axis_img24.png)
+{% endtabs %}
+
+![](axis_images/axis_img24.png)
 
 ### Placing axes at the opposite side
 
 The `OpposedPosition` property of axis can be used to place the axis at the opposite side of its default position. Default value of `OpposedPosition` property is `False`. 
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.SecondaryAxis >
 
@@ -877,20 +923,22 @@ The `OpposedPosition` property of axis can be used to place the axis at the oppo
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.SecondaryAxis.OpposedPosition = true;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/AxisOpposedposition.png](axis_images/axis_img25.png)
+{% endtabs %}
+
+![](axis_images/axis_img25.png)
 
 ### Maximum number of labels per 100 pixels
 
 By default, a maximum of 3 labels are displayed for each 100 pixels in axis. The maximum number of labels that should be present within 100 pixels length can be customized using the `MaximumLabels` property of an axis. This property is applicable only for automatic range calculation and will not work if you set value for `Interval` property of an axis.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.SecondaryAxis >
 
@@ -901,20 +949,22 @@ By default, a maximum of 3 labels are displayed for each 100 pixels in axis. The
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 Chart.SecondaryAxis.MaximumLabels = 5;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/AxisMaximumLab.png](axis_images/axis_img26.png)
+{% endtabs %}
+
+![](axis_images/axis_img26.png)
 
 ## Smart Axis Labels
 
 Axis labels may overlap with each other based on chart dimensions and label size. The `LabelsIntersectAction` property of axis is useful in avoiding the overlapping of axis labels with each other. Default value of `LabelsIntersectAction` is `None`. Other available values of `LabelsIntersectAction` are `MultipleRows` and `Hide`.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.PrimaryAxis >
 
@@ -925,10 +975,11 @@ Axis labels may overlap with each other based on chart dimensions and label size
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.PrimaryAxis.LabelsIntersectAction = AxisLabelsIntersectAction.MultipleRows;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/smartlabel.png](axis_images/axis_img27.png)
+{% endtabs %}
+
+![](axis_images/axis_img27.png)

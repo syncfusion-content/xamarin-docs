@@ -13,9 +13,8 @@ documentation: ug
 
 You can add multiple series to `Series` property of `SfChart` class.
 
-{% tabs %} 
-
 {% highlight xaml %}
+[XAML]
 
 <chart:SfChart>
 ...
@@ -34,6 +33,7 @@ You can add multiple series to `Series` property of `SfChart` class.
 {% endhighlight %}
 
 {% highlight c# %}
+[C#]
 
 SfChart chart = new SfChart();
 ...
@@ -52,17 +52,14 @@ chart.Series.Add(columnSeries2);
 
 {% endhighlight %}
 
-{% endtabs %}
-
-![](chartseries_images/chartseries_img1.png)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Chatseries-clubbed/multiple.png](chartseries_images/chartseries_img1.png)
 
 ## Combination Series
 
 `SfChart` allows you to render the combination of different types of series.
 
-{% tabs %} 
-
 {% highlight xaml %}
+[XAML]
 
 <chart:SfChart>
 ...
@@ -76,6 +73,7 @@ chart.Series.Add(columnSeries2);
 {% endhighlight %}
 
 {% highlight c# %}
+[C#]
 
 SfChart chart = new SfChart();
 
@@ -91,9 +89,7 @@ chart.Series.Add(lineSeries);
 
 {% endhighlight %}
 
-{% endtabs %}
-
-![](chartseries_images/chartseries_img2.png)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Chatseries-clubbed/combinational.png](chartseries_images/chartseries_img2.png)
 
 **Limitation of Combination Chart**
 
@@ -102,9 +98,8 @@ chart.Series.Add(lineSeries);
 
 When the combination of cartesian and accumulation series types are added to the `Series` property, the series which are similar to the first series will be rendered and other series will be ignored. Following code snippet illustrates this.
 
-{% tabs %} 
-
 {% highlight xaml %}
+[XAML]
 
 <chart:SfChart>
 ...
@@ -118,6 +113,7 @@ When the combination of cartesian and accumulation series types are added to the
 {% endhighlight %}
 
 {% highlight c# %}
+[C#]
 
 SfChart chart = new SfChart();
 ...
@@ -132,17 +128,14 @@ chart.Series.Add(pieSeries);
 
 {% endhighlight %}
 
-{% endtabs %}
-
-![](chartseries_images/chartseries_img3.png)
+![C:/Users/yuvaraj.palanisamy/Documents/My Received Files/limitation.png](chartseries_images/chartseries_img3.png)
 
 ## Grouping Stacked Series
 
 You can group and stack the similar stacked series types using `GroupingLabel` property of stacked series. The stacked series which contains the same `GroupingLabel` will be stacked in a single group.
 
-{% tabs %} 
-
-{% highlight xaml %}
+{% highlight xml %}
+[XAML]
 
 <chart:SfChart>
 ...
@@ -160,6 +153,7 @@ You can group and stack the similar stacked series types using `GroupingLabel` p
 {% endhighlight %}
 
 {% highlight c# %}
+[C#]
 
 SfChart chart = new SfChart();
 ...
@@ -207,6 +201,4 @@ chart.Series.Add(stackingColumnSeries4);
 
 {% endhighlight %}
 
-{% endtabs %}
-
-![](chartseries_images/chartseries_img4.png)
+![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Chatseries-clubbed/grouping.png](chartseries_images/chartseries_img4.png)

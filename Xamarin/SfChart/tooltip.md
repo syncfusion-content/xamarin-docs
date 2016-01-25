@@ -9,8 +9,8 @@ documentation: ug
 
 # Tooltip
 
-SfChart provides tooltip support for all series. It is used to show information about the segment, while touch on
-the segment. To enable the tooltip, you need to set EnableTooltip property as true.
+SfChart provides tooltip support for all series. It is used to show information about the segment, when you tap on
+the segment. To enable the tooltip, you need to set EnableTooltip property as true.
 
 
 {% highlight xaml %}
@@ -41,8 +41,8 @@ chart.Series.Add(lineSeries);
 
 ## Customizing appearance
 
-You can customize the tooltip label. For customizing, you need to add an instance of ChartTooltipBehavior to
-the ChartBehaviors collection property of SfChart. Following properties are used to customize the tooltip label
+You can customize the tooltip label. For customizing, you need to add an instance of ChartTooltipBehavior to
+the ChartBehaviors collection property of SfChart. Following properties are used to customize the tooltip label
 which are available in ChartTooltipBehavior.
 
 * `BorderColor` – used to change the label border color

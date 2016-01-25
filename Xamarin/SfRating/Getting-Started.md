@@ -37,37 +37,77 @@ Or after downloading through the Xamarin store web interface, all the required a
 
 You can then add the assembly references to the respective projects as shown below
 
-**PCL Project**
+<table>
+<tr>
+<th>Project</th>
+<th>Required assemblies</th>
+</tr>
+<tr>
+<td>Pcl</td>
+<td>pcl\Syncfusion.SfRating.XForms.dll</td>
+</tr>
+<tr>
+<td>Android Renderer</td>
+<td>android\Syncfusion.SfRating.Andriod.dll<br/>android\Syncfusion.SfRating.XForms.Andriod.dll</td>
+</tr>
+<tr>
+<td>iOS (Classic) Renderer</td>
+<td>ios\Syncfusion.SfRating.iOS.dll<br/>ios\Syncfusion.SfRating.XForms.iOS.dll<br/>ios\Syncfusion.SfRating.XForms.dll</td>
+</tr>
+<tr>
+<td>iOS (Unified)  Renderer</td>
+<td>ios-unified\Syncfusion.SfRating.iOS.dll<br/>ios-unified\Syncfusion.SfRating.XForms.iOS.dll<br/>ios-unified\SyncfusionSfRating.XForms.dll</td>
+</tr>
+<tr>
+<td>WindowsPhone Renderer</td>
+<td>wp8\Syncfusion.SfInput.WP8.dll<br/>wp8\Syncfusion.SfShared.WP8.dll<br/>wp8\Syncfusion.SfRating.XForms.dll<br/>wp8\Syncfusion.SfRating.XForms.WinPhone.dll</td>
+</tr>
+<tr>
+<td>WindowsPhone 8.1 Renderer</td>
+<td>wp81\Syncfusion.SfInput.WP.dll<br/>wp81\Syncfusion.SfShared.WP.dll<br/>wp81\Syncfusion.SfRating.XForms.dll<br/>wp81\Syncfusion.SfRating.XForms.WinPhone.dll</td>
+</tr>
+<tr>
+<td>WinRT Renderer</td>
+<td>winrt\Syncfusion.SfInput.WinRT.dll<br/>winrt\Syncfusion.SfShared.WinRT.dll<br/>winrt\Syncfusion.SfRating.XForms.dll<br/>winrt\Syncfusion.SfRating.XForms.WinRT.dll</td>
+</tr>
+</table>
 
-pcl\Syncfusion.SfRating.XForm.dll
+Currently an additional step is required for Windows Phone and iOS projects. We need to create an instance of the rating custom renderer as shown below. 
 
-**Android Project**
+Create an instance of SfRatingRenderer in MainPage constructor in of the Windows Phone project as shown 
 
-android\Syncfusion. SfRating.Andriod.dll
+{% highlight C# %}
 
-android\Syncfusion. SfRating.xForms.Andriod.dll
+public MainPage()
 
-**IOS (Classic) Project**
+{
 
-iOS\Syncfusion. SfRating.iOS.dll
+    new SfRatingRenderer();
 
-iOS\Syncfusion. SfRating.xForms.iOS.dll
+    ...    
 
-iOS\Syncfusion. SfRating.XForm.dll
+}
 
-**IOS (Unified) Project**
+{% endhighlight %}
 
-iOS-unified\Syncfusion.SfRating.iOS.dll
+Create an instance of SfRatingRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below
 
-iOS-unified\Syncfusion.SfRating.xForms.iOS.dll
+{% highlight C# %}
 
-iOS-unified\Syncfusion.SfRating.XForm.dll
+public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
-**Windows Phone Project**
+{
 
-wp8\Syncfusion.SfRating.WP8.dll
+    ...
 
-wp8\Syncfusion.SfRating.xForms.WinPhone.dll
+    new SfRatingRenderer ();
+
+    ...
+
+}	
+
+{% endhighlight %}
+
 
 
 ## Add and Configure the Rating
@@ -96,7 +136,6 @@ The Rating control is configured entirely in C# code or by using XAML markup. Th
 
 {% endhighlight %}
 
-
 ## Setting Value
 
 * The `Value` property sets the display value of the rating. 
@@ -113,7 +152,7 @@ N> By default, property value is 0.
 
 * To enable full, half and exact values of rating, set the `Precision` property.
 
-{% highlight C#%}
+{% highlight C# %}
 
     sfRating.Precision = Precision.Standard;
 

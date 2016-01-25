@@ -23,54 +23,92 @@ Alternatively, if you had downloaded Essential Studio from Syncfusion.com or thr
 
 After installing Essential Studio for Xamarin, all the required assemblies found in the installation folders, typically
 
-{Syncfusion Installed location}\Essential Studio\12.2.0.40\lib
+{Syncfusion Installed location}\Essential Studio\syncfusionessentialstudio-version\lib
 
 Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\12.2.0.40\lib
+
 Or after downloading through the Xamarin store web interface, all the required assemblies can be found in the below folder
 {download location}\syncfusionessentialstudio-version\lib
 
-
-
 You can then add the assembly references to the respective projects as shown below
 
-**PCL Project**
+<table>
+<tr>
+<th>Project</th>
+<th>Required assemblies</th>
+</tr>
+<tr>
+<td>Pcl</td>
+<td>pcl\Syncfusion.SfAutoComplete.XForms.dll</td>
+</tr>
+<tr>
+<td>Android Renderer</td>
+<td>android\Syncfusion.SfAutoComplete.Andriod.dll<br/>android\Syncfusion.SfAutoComplete.XForms.Andriod.dll</td>
+</tr>
+<tr>
+<td>iOS (Classic) Renderer</td>
+<td>ios\Syncfusion.SfAutoComplete.iOS.dll<br/>ios\Syncfusion.SfAutoComplete.XForms.iOS.dll<br/>ios\Syncfusion.SfAutoComplete.XForms.dll</td>
+</tr>
+<tr>
+<td>iOS (Unified)  Renderer</td>
+<td>ios-unified\Syncfusion.SfAutoComplete.iOS.dll<br/>ios-unified\Syncfusion.SfAutoComplete.XForms.iOS.dll<br/>ios-unified\Syncfusion.SfAutoComplete.XForms.dll</td>
+</tr>
+<tr>
+<td>WindowsPhone Renderer</td>
+<td>wp8\Syncfusion.SfInput.WP8.dll<br/>wp8\Syncfusion.SfShared.WP8.dll<br/>wp8\Syncfusion.SfAutoComplete.XForms.dll<br/>wp8\Syncfusion.SfAutoComplete.XForms.WinPhone.dll</td>
+</tr>
+<tr>
+<td>WindowsPhone 8.1 Renderer</td>
+<td>wp81\Syncfusion.SfInput.WP.dll<br/>wp81\Syncfusion.SfShared.WP.dll<br/>wp81\Syncfusion.SfAutoComplete.XForms.dll<br/>wp81\Syncfusion.SfAutoComplete.XForms.WinPhone.dll</td>
+</tr>
+<tr>
+<td>WinRT Renderer</td>
+<td>winrt\Syncfusion.SfInput.WinRT.dll<br/>winrt\Syncfusion.SfShared.WinRT.dll<br/>winrt\Syncfusion.SfAutoComplete.XForms.dll<br/>winrt\Syncfusion.SfAutoComplete.XForms.WinRT.dll</td>
+</tr>
+</table>
 
-pcl\Syncfusion.SfAutoComplete.XForm.dll
+Currently an additional step is required for Windows Phone and iOS projects. We need to create an instance of the autocomplete custom renderer as shown below. 
 
-**Android Project**
+Create an instance of SfAutoCompleteRenderer in MainPage constructor in of the Windows Phone project as shown 
 
-android\Syncfusion.SfAutoComplete.Andriod.dll
+{% highlight C# %}
 
-android\Syncfusion.SfAutoComplete.xForms.Andriod.dll
+public MainPage()
 
-**IOS (Classic) Project**
+{
 
-ios\Syncfusion.SfAutoComplete.iOS.dll
+    new SfAutoCompleteRenderer();
 
-ios\Syncfusion.SfAutoComplete.xForms.iOS.dll
+    ...    
 
-ios\Syncfusion.SfAutoComplete.XForm.dll
+}
 
-**IOS (Unified) Project**
+{% endhighlight %}
 
-ios-unified\Syncfusion.SfAutoComplete.iOS.dll
+Create an instance of SfAutoCompleteRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below
 
-ios-unified\Syncfusion.SfAutoComplete.xForms.iOS.dll
+{% highlight C# %}
 
-ios-unified\Syncfusion.SfAutoComplete.XForm.dll
+public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
-**Windows Phone Project**
+{
 
-wp8\Syncfusion.SfAutoComplete.WP8.dll
+    ...
 
-wp8\Syncfusion.SfAutoComplete.xForms.WinPhone.dll
+    new SfAutoCompleteRenderer ();
+
+    ...
+
+}	
+
+{% endhighlight %}
 
 
 ## Add and Configure AutoComplete
 
 * Adding reference to autocomplete.
 
-{% highlight c# %}
+{% highlight C# %}
 
 	using Syncfusion.SfAutoComplete.XForms;
 
@@ -78,18 +116,18 @@ wp8\Syncfusion.SfAutoComplete.xForms.WinPhone.dll
 
 * Create an instance for autocomplete control and adding to application.
 
-{% highlight c# %}
+{% highlight C# %}
 
 	SfAutoComplete countryAutoComplete= new SfAutoComplete ();
 	SetContentView(countryAutoComplete);
 
 {% endhighlight %}
 
-## Manipulation AutoCompleteSource to AutoComplete
+## Setting AutoCompleteSource
 
-You can set the suggestion list to the AutoComplete using the AutoCompleteSource property. Check autocomplete mode for more details.
+You can set the suggestion list to the AutoComplete using the `AutoCompleteSource` property.
 
-{% highlight c# %}
+{% highlight C# %}
 
 	private List<String> countryName = new List<String>();
 	countryName.add("Afghanistan");
@@ -99,18 +137,4 @@ You can set the suggestion list to the AutoComplete using the AutoCompleteSource
 
 {% endhighlight %}
 
-## Adding Customizations
-
-Autocomplete can be customized using the `watermark` and `popupdelay` properties.
-
-{% highlight c# %}
-
-	countryAutoComplete.SuggestionMode = SuggestionMode.StartsWith;
-	countryAutoComplete.AutoCompleteMode = AutoCompleteMode.Suggest;
-	countryAutoComplete.MaximumDropDownHeight = 300;
-	countryAutoComplete.MinimumPrefixCharacters = 2
-	countryAutoComplete.HeightRequest = 40;
-	countryAutoComplete.Watermark = "Enter a country name";  
-
-{% endhighlight %}
 

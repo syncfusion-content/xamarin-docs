@@ -9,48 +9,41 @@ documentation: ug
 
 # Tooltip
 
-SfChart provides tooltip support for all series. It is used to show information about the segment, while touch on the segment. To enable the tooltip, you need to set EnableTooltip property as true.
+SfChart provides tooltip support for all series. It is used to show information about the segment, while touch on
+the segment. To enable the tooltip, you need to set EnableTooltip property as true.
 
-{% tabs %} 
 
 {% highlight xaml %}
+[XAML]
 
 <chart:SfChart.Series>
-
-	<chart:ColumnSeries ItemsSource="{Binding Data}" XBindingPath="Month" YBindingPath="Value" EnableTooltip="True">
-	
-	</chart:ColumnSeries>
-
+<chart:ColumnSeries ItemsSource="{Binding Data}" XBindingPath="Month" 
+YBindingPath="Value" EnableTooltip="True">
+</chart:ColumnSeries>
 </chart:SfChart.Series>
 
 {% endhighlight %}
 
 {% highlight c# %}
-
-SfChart chart = new SfChart();
-...
+[C#]
 
 ColumnSeries column = new ColumnSeries ();
-
 column.XBindingPath = "Month";
-
 column.YBindingPath = "Value";
-
 column.ItemsSource = Data;
-
 column.EnableTooltip = true;
-
-chart.Series.Add(column);	
+chart.Series.Add(lineSeries);	
 
 {% endhighlight %}
 
-{% endtabs %}
-
 ![](tooltip_images/tooltip1.png)
+
 
 ## Customizing appearance
 
-You can customize the tooltip label. For customizing, you need to add an instance of ChartTooltipBehavior to the ChartBehaviors collection property of SfChart. Following properties are used to customize the tooltip label which are available in ChartTooltipBehavior.
+You can customize the tooltip label. For customizing, you need to add an instance of ChartTooltipBehavior to
+the ChartBehaviors collection property of SfChart. Following properties are used to customize the tooltip label
+which are available in ChartTooltipBehavior.
 
 * `BorderColor` – used to change the label border color
 * `BorderWidth` – used to change the label border width
@@ -63,27 +56,31 @@ You can customize the tooltip label. For customizing, you need to add an instanc
 * `OffsetX` – used to move the label horizontally
 * `OffsetY` – used to move the label vertically
 
-{% tabs %} 
 
 {% highlight xaml %}
+[XAML]
 
 <chart:SfChart.ChartBehaviors>
 
-	<chart:ChartTooltipBehavior BackgroundColor="Blue" BorderWidth="3" BorderColor="Aqua" LabelFormat="##.00" TextColor="White" Margin="5" Duration="10" >
+<chart:ChartTooltipBehavior BackgroundColor="Blue" BorderWidth="3" 
+BorderColor="Aqua" LabelFormat="##.00" TextColor="White" 
+Margin="5" Duration="10" >
 
-		<chart:ChartTooltipBehavior.Font>
+<chart:ChartTooltipBehavior.Font>
 
-			<Font FontSize="15" FontFamily="Times New Roman"/>
+<Font FontSize="15" FontFamily="Times New Roman"/>
 
-		</chart:ChartTooltipBehavior.Font>
+</chart:ChartTooltipBehavior.Font>
 
-	</chart:ChartTooltipBehavior>
+</chart:ChartTooltipBehavior>
 
 </chart:SfChart.ChartBehaviors>
+
 
 {% endhighlight %}
 
 {% highlight c# %}
+[C#]
 
 SfChart chart = new SfChart();
 ...
@@ -100,7 +97,5 @@ tool.Font = Font.OfSize(“Times New Roman”,15);
 chart.ChartBehaviors.Add(tool);
 
 {% endhighlight %}
-
-{% endtabs %}
 
 ![](tooltip_images/tooltip2.png)

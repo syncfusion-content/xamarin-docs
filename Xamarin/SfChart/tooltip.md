@@ -9,7 +9,7 @@ documentation: ug
 
 # Tooltip
 
-SfChart provides tooltip support for all series. It is used to show information about the segment, while touch on
+SfChart provides tooltip support for all series. It is used to show information about the segment, when you tap on
 the segment. To enable the tooltip, you need to set EnableTooltip property as true.
 
 

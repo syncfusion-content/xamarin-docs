@@ -50,8 +50,9 @@ public class DataModel
 
 {% endhighlight %}
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML] 
 
 <chart:SfChart>
 
@@ -66,7 +67,6 @@ public class DataModel
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]  
 
 //Adding the series to the chart and set the ItemsSource property
 
@@ -77,6 +77,8 @@ chart.Series.Add (new ColumnSeries () {
 });
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ## Custom Object
 
@@ -139,8 +141,9 @@ public class DataModel
 
 {% endhighlight %}
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML] 
 
 <chart:SfChart>
 ...
@@ -157,8 +160,6 @@ public class DataModel
 
 {% highlight c# %}
 
-[C#]  
-
 chart.Series.Add (new ColumnSeries () {
 	
 	ItemsSource = dataModel.Demands,
@@ -170,3 +171,5 @@ chart.Series.Add (new ColumnSeries () {
 });
 
 {% endhighlight %}
+
+{% endtabs %}

@@ -22,8 +22,9 @@ Following properties are used to configure the zooming feature,
 
 Following code snippet illustrates how to enable zooming.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart>
 
@@ -38,7 +39,6 @@ Following code snippet illustrates how to enable zooming.
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 SfChart chart = new SfChart();
 
@@ -48,10 +48,13 @@ chart.ChartBehaviors.Add(zoomPanBehavior);
 
 {% endhighlight %}
 
+{% endtabs %}
+
 Following code snippet illustracts how to enable the box selection zooming,
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart>
 
@@ -66,7 +69,6 @@ Following code snippet illustracts how to enable the box selection zooming,
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 SfChart chart = new SfChart();
 
@@ -78,14 +80,15 @@ chart.ChartBehaviors.Add(zoomPanBehavior);
 
 {% endhighlight %}
 
+{% endtabs %}
+
 Following screenshot shows the box selection on chart area,
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Chartbehavior -clubbed/selectionzoom.png](zoompan_images/zoompan_img1.png)
-
+![](zoompan_images/zoompan_img1.png)
 
 Following screenshot shows the zoomed area,
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Chartbehavior -clubbed/selectedZoom.png](zoompan_images/zoompan_img2.png)
+![](zoompan_images/zoompan_img2.png)
 
 ## Zoom Mode
 
@@ -93,8 +96,9 @@ The `ZoomMode` property specifies whether chart should be allowed to scale along
 
 Following code example illustrates how to restrict the chart to be zoomed only along horizontal axis,
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.ChartBehaviors>
 
@@ -105,7 +109,6 @@ Following code example illustrates how to restrict the chart to be zoomed only a
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 ChartZoomPanBehavior zoomPanBehavior = new ChartZoomPanBehavior();
 
@@ -113,7 +116,9 @@ zoomPanBehavior.ZoomMode = ZoomMode.X;
 
 {% endhighlight %}
 
-![C:/Users/yuvaraj.palanisamy/Documents/My Received Files/zoom3.png](zoompan_images/zoompan_img3.png)
+{% endtabs %}
+
+![](zoompan_images/zoompan_img3.png)
 
 ## Events
 

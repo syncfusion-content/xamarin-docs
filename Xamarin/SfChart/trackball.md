@@ -17,8 +17,9 @@ You can use the following properties to show/hide the line and labels.
 
 * `ShowLine` – Shows/hides the trackball line. Default value is true.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart>
 ...
@@ -34,7 +35,6 @@ You can use the following properties to show/hide the line and labels.
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 SfChart chart = new SfChart();
 ...
@@ -49,7 +49,9 @@ chart.ChartBehaviors.Add(trackballBehavior);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Chartbehavior -clubbed/Trackball.png](trackball_images/trackball_img1.png)
+{% endtabs %}
+
+![](trackball_images/trackball_img1.png)
 
 ## Label Display Mode
 
@@ -58,15 +60,15 @@ chart.ChartBehaviors.Add(trackballBehavior);
 * `FloatAllPoints` – Displays label for all the data points along the vertical line.
 * `NearestPoint` – Displays label for single data point that is nearer to the touch contact position.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:ChartTrackballBehavior LabelDisplayMode="NearestPoint" ShowLine="False"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 ChartTrackballBehavior trackballBehavior = new ChartTrackballBehavior();
 
@@ -76,9 +78,11 @@ trackballBehavior.LabelDisplayMode = TrackballLabelDisplayMode.NearestPoint;
 
 {% endhighlight %}
 
+{% endtabs %}
+
 In the following screenshot, trackball label is shown for only single data point,
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Chartbehavior -clubbed/Trackball-mode.png](trackball_images/trackball_img2.png)
+![](trackball_images/trackball_img2.png)
 
 ## Customizing appearance
 
@@ -92,8 +96,9 @@ Following properties are used to customize the trackball labels.
 * `TextColor` – used to change the text color.
 * `Font` – used to change label font size, family and weight.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart>
 ...
@@ -125,7 +130,6 @@ Following properties are used to customize the trackball labels.
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 SfChart chart = new SfChart();
 ...
@@ -146,6 +150,8 @@ chart.ChartBehaviors.Add(trackballBehavior);
 
 {% endhighlight %}
 
+{% endtabs %}
+
 **Customize Trackball Marker**
 
 Following properties are used to customize the trackball marker.
@@ -157,8 +163,9 @@ Following properties are used to customize the trackball marker.
 * `Width` – used to change the width of the marker.
 * `Height` – used to change the height of the marker.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
 ...
@@ -182,7 +189,6 @@ Following properties are used to customize the trackball marker.
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 SfChart chart = new SfChart();
 ...
@@ -205,6 +211,8 @@ chart.ChartBehaviors.Add(trackballBehavior);
 
 {% endhighlight %}
 
+{% endtabs %}
+
 **Customize Trackball Line**
 
 Following properties are used to customize the trackball line.
@@ -214,8 +222,9 @@ Following properties are used to customize the trackball line.
 * `StrokeColor` – used to change the stroke color of the line.
 * `StrokeDashArray` – Specifies the dashes to be applied on the line.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
 ...
@@ -239,7 +248,6 @@ Following properties are used to customize the trackball line.
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 SfChart chart = new SfChart();
 ...
@@ -258,6 +266,8 @@ chart.ChartBehaviors.Add(trackballBehavior);
 
 {% endhighlight %}
 
+{% endtabs %}
+
 Following screenshot illustrates the customization of trackball elements.
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Chartbehavior -clubbed/Trackball-customize.png](trackball_images/trackball_img3.png)
+![](trackball_images/trackball_img3.png)

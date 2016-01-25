@@ -32,4 +32,3 @@ The exported image will be saved in the different location across the platforms.
 **Windows Phone** – The image will be saved inside the “/Pictures/ Saved Pictures” directory.
 
 N> In order to save the image in Android and Windows Phone, you have to enable the permission to write the file in device storage.
-

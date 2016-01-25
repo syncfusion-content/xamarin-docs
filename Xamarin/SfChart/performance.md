@@ -11,8 +11,9 @@ documentation: ug
 
 * When there are large number of points to load in line series, you can use `FastLineSeries` series instead of `LineSeries`. To renderer a fast line chart, create an instance of `FastLineSeries` and add to the `Series` collection property of `SfChart`.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart>
 ...
@@ -24,7 +25,6 @@ documentation: ug
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 SfChart chart = new SfChart();
 ...
@@ -41,5 +41,7 @@ FastLineSeries fastLineSeries = new FastLineSeries()
 chart.Series.Add(fastLineSeries);
 
 {% endhighlight %}
+
+{% endtabs %}
 
 * Instead of enabling data markers and labels when there are large number of data points, you can use **Trackball** to view the point information.

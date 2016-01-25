@@ -70,7 +70,7 @@ wp8\Syncfusion.SfAutoComplete.xForms.WinPhone.dll
 
 * Adding reference to autocomplete.
 
-{% highlight c# %}
+{% highlight C# %}
 
 	using Syncfusion.SfAutoComplete.XForms;
 
@@ -78,7 +78,7 @@ wp8\Syncfusion.SfAutoComplete.xForms.WinPhone.dll
 
 * Create an instance for autocomplete control and adding to application.
 
-{% highlight c# %}
+{% highlight C# %}
 
 	SfAutoComplete countryAutoComplete= new SfAutoComplete ();
 	SetContentView(countryAutoComplete);
@@ -89,7 +89,7 @@ wp8\Syncfusion.SfAutoComplete.xForms.WinPhone.dll
 
 You can set the suggestion list to the AutoComplete using the AutoCompleteSource property. Check autocomplete mode for more details.
 
-{% highlight c# %}
+{% highlight C# %}
 
 	private List<String> countryName = new List<String>();
 	countryName.add("Afghanistan");
@@ -103,7 +103,7 @@ You can set the suggestion list to the AutoComplete using the AutoCompleteSource
 
 Autocomplete can be customized using the `watermark` and `popupdelay` properties.
 
-{% highlight c# %}
+{% highlight C# %}
 
 	countryAutoComplete.SuggestionMode = SuggestionMode.StartsWith;
 	countryAutoComplete.AutoCompleteMode = AutoCompleteMode.Suggest;

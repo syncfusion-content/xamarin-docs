@@ -1,4 +1,4 @@
-﻿---
+---
 
 layout: post
 title: Key features in Syncfusion SfCircularGauge control for Xamarin.Forms

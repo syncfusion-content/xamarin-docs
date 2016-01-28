@@ -1,4 +1,4 @@
-﻿---
+---
 
 layout: post
 title: Pointers in Syncfusion SfCircularGauge control for Xamarin.Forms

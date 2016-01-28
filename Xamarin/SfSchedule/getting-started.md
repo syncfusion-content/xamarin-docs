@@ -1,4 +1,4 @@
-﻿---
+---
 
 layout: post
 title:  Syncfusion SfSchedule control Getting Started for Xamarin.Forms

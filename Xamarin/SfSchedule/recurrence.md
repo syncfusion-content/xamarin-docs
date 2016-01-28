@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Recurrence in Syncfusion SfSchedule control for Xamarin.Forms
 description: Learn how to Create recurrence Appointments in SfSchedule control

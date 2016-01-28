@@ -1,4 +1,4 @@
-﻿---
+---
 
 layout: post
 title: Rim in Syncfusion SfCircularGauge control for Xamarin.Forms

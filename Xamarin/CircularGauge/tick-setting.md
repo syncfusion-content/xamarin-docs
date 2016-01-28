@@ -1,4 +1,4 @@
-﻿---
+---
 
 layout: post
 title: Tick Setting in Syncfusion SfCircularGauge control for Xamarin.Forms

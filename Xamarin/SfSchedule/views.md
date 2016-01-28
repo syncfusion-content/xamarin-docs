@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Accessing View modes in Syncfusion SfSchedule control for Xamarin.Forms
 description: Learn how to set views in SfSchedule control

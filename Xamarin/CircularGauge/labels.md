@@ -1,4 +1,4 @@
-﻿---
+---
 
 layout: post
 title: Labels in Syncfusion SfCircularGauge control for Xamarin.Forms

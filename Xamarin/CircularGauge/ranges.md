@@ -1,4 +1,4 @@
-﻿---
+---
 
 layout: post
 title: Ranges in Syncfusion SfCircularGauge control for Xamarin.Forms

@@ -114,16 +114,7 @@ You can change the default UI of schedule using [ScheduleView](/xamarin/sfschedu
 
 {% endhighlight %}
 
-<table>
-<tr>
-<td>
-{{'![](GettingStarted_images/WeekView/WeekView_Android.png)'| markdownify }}
-</td><td>
-{{'![](GettingStarted_images/WeekView/WeekView_iOS.png)'| markdownify }}
-</td><td>
-{{'![](GettingStarted_images/WeekView/WeekView_WP.png)'| markdownify }}
-</td></tr>
-</table>
+![](GettingStarted_images/WeekView/WeekView.png)
 
 ## Populating Events
 

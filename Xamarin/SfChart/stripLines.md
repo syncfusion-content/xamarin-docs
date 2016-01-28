@@ -30,8 +30,9 @@ Following properties are used to configure the strip line.
 
 `NumericalStripLine` are used to draw strip lines for `NumericalAxis` and `CategoryAxis`. To add a strip line, create an instance of `NumericalStripLine` and add to the `StripLines` collection property of the respective axis.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.SecondaryAxis>
 
@@ -50,7 +51,6 @@ Following properties are used to configure the strip line.
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 NumericalAxis numericalAxis = new NumericalAxis() 
 {
@@ -76,14 +76,17 @@ numericalAxis.StripLines.Add(stripLine1);
 
 {% endhighlight %}
 
-![C:/Users/yuvaraj.palanisamy/AppData/Local/Microsoft/Windows/INetCache/Content.Word/Numerical.png](striplines_images/stripline_img1.png)
+{% endtabs %}
+
+![](striplines_images/stripline_img1.png)
 
 **DateTimeStripLine**
 
 As the name indicates, `DateTimeStripLine` are used to draw strip lines for `DateTimeAxis`. To add a strip line for `DateTimeAxis`, create an instance of `DateTimeStripLine` and add to the `StripLines` collection property of `DateTimeAxis`.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.PrimaryAxis  >
 
@@ -118,7 +121,6 @@ As the name indicates, `DateTimeStripLine` are used to draw strip lines for `Dat
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 DateTimeAxis dateTimeAxis  =  new DateTimeAxis() 
 {
@@ -147,7 +149,9 @@ dateTimeAxis.StripLines.Add(stripLine);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin UG images/UG images for md/stripeline output/Date-time.png](striplines_images/stripline_img2.png)
+{% endtabs %}
+
+![](striplines_images/stripline_img2.png)
 
 ## Strip Line Recurrence
 
@@ -158,8 +162,9 @@ This feature is used to enable the strip lines to be drawn repeatedly at the reg
 
 Following code snippet and screenshot demonstrates this feature by highlighting weekends. 
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.PrimaryAxis>
 
@@ -186,7 +191,6 @@ Following code snippet and screenshot demonstrates this feature by highlighting 
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 NumericalAxis numericalAxis = new NumericalAxis() 
 { 
@@ -217,7 +221,9 @@ numericalAxis.StripLines.Add(stripLine);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/UG images/Stripline/Stripline Recurrence/striplinerecueernce.png](striplines_images/stripline_img3.png)
+{% endtabs %}
+
+![](striplines_images/stripline_img3.png)
 
 ## Customize Text
 
@@ -233,9 +239,9 @@ The `LabelStyle` property provide options to customize the font-family, color, s
 * `HorizontalAlignment` – used to change the horizontal alignment of text.
 * `VerticalAlignment`  - used to change the vertical alignment of text.
 
-{% highlight xaml %}
+{% tabs %} 
 
-[XAML]
+{% highlight xaml %}
 
 <chart:SfChart.SecondaryAxis>
 
@@ -270,7 +276,6 @@ The `LabelStyle` property provide options to customize the font-family, color, s
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 NumericalAxis numericalAxis = new NumericalAxis() 
 {
@@ -306,7 +311,9 @@ numericalAxis.StripLines.Add(stripLine);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin UG images/UG images for md/stripeline output/labelstyle.png](striplines_images/stripline_img4.png)
+{% endtabs %}
+
+![](striplines_images/stripline_img4.png)
 
 ## Segmented StripLine
 
@@ -323,8 +330,9 @@ N> You can set the double or DateTime value for SegmentStart and SegmentEnd prop
 
 Following code snippet shows how to set the segment start and end value if the associated axis type is numerical.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.PrimaryAxis>
 
@@ -349,7 +357,6 @@ Following code snippet shows how to set the segment start and end value if the a
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 NumericalStripLine stripLine = new NumericalStripLine()
 
@@ -389,12 +396,15 @@ chart.SecondaryAxis = numericalAxis;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin UG images/UG images for md/stripeline output/DateTimeSegmentStip.png](striplines_images/stripline_img5.png)
+{% endtabs %}
+
+![](striplines_images/stripline_img5.png)
 
 Following code snippet shows how to set the segment start and end value if the associated axis type is date time. 
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.PrimaryAxis>
 
@@ -449,7 +459,6 @@ Following code snippet shows how to set the segment start and end value if the a
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 NumericalStripLine stripLine = new NumericalStripLine()
 {
@@ -487,4 +496,6 @@ numericalAxis.StripLines.Add(stripLine);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin UG images/UG images for md/stripeline output/NumericalSegmentStrip.png](striplines_images/stripline_img6.png)
+{% endtabs %}
+
+![](striplines_images/stripline_img6.png)

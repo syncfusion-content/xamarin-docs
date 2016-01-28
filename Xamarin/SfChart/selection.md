@@ -11,15 +11,15 @@ documentation: ug
 
 You can select a data point by tapping on it. To enable the selection feature, set `EnableDataPointSelection` property as `true` for series. 
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:ColumnSeries EnableDataPointSelection="True" ItemsSource ="{Binding Data}" XBindingPath="Month" YBindingPath="Value"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 ColumnSeries columnSeries = new ColumnSeries() 
 { 
@@ -34,22 +34,24 @@ columnSeries.EnableDataPointSelection = true;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Chartbehavior -clubbed/selection.png](selection_images/selection_img1.png)
+{% endtabs %}
+
+![](selection_images/selection_img1.png)
 
 Following properties are used to configure the selection feature,
 
 * `SelectedDataPointIndex` – used to programmatically select a data point.
 * `SelectedDataPointColor` – used to change the selected data point color.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:ColumnSeries EnableDataPointSelection="True" SelectedDataPointIndex="2" SelectedDataPointColor="Red" ItemsSource ="{Binding Data}" />
 
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 ColumnSeries columnSeries = new ColumnSeries();
 
@@ -59,8 +61,9 @@ columnSeries.SelectedDataPointColor = Color.Red;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Chartbehavior -clubbed/selectionIndex.png](selection_images/selection_img2.png)
+{% endtabs %}
 
+![](selection_images/selection_img2.png)
 
 N> For Accumulation series like pie, doughnut, pyramid and funnel, when you select a data point, the corresponding legend item also will be selected.
 

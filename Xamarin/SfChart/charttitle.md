@@ -20,8 +20,9 @@ Following properties are used to customize its appearance.
 * `Font` – used to change the text size, font family and font weight.
 * `Margin` - used to change the margin for title.
 
+{% tabs %} 
+
 {% highlight xml %}
-[XAML]
 
 <chart:SfChart>
 
@@ -36,7 +37,6 @@ Following properties are used to customize its appearance.
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 SfChart sfChart = new SfChart();
 
@@ -46,15 +46,17 @@ sfChart.Title.TextColor = Color.Blue;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/ChartTitle/text.png](charttitle_images/charttitle_img1.png)
+{% endtabs %}
 
+![](charttitle_images/charttitle_img1.png)
 
 ## Text Alignment
 
 You can align the title text content to the Start, Center or End of the title using the `TextAlignment` property of the `ChartTitle`.
 
+{% tabs %} 
+
 {% highlight xml %}
-[XAML]
 
 <chart:SfChart.Title>
 
@@ -65,7 +67,6 @@ You can align the title text content to the Start, Center or End of the title us
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 sfChart.Title.Text = "Efficiency of oil-fired power production";
 
@@ -75,4 +76,6 @@ sfChart.Title.TextColor = Color.Blue;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/ChartTitle/text-alignment.png](charttitle_images/charttitle_img2.png)
+{% endtabs %}
+
+![](charttitle_images/charttitle_img2.png)

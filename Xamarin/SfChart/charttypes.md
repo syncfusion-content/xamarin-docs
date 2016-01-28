@@ -16,8 +16,9 @@ To render a line chart, create an instance of `LineSeries` and add to the `Serie
 * `Color` – used to change the color of the line.
 * `StrokeWidth` – used to change the stroke width of the line.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart>
 ...
@@ -29,7 +30,6 @@ To render a line chart, create an instance of `LineSeries` and add to the `Serie
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 SfChart chart = new SfChart();
 ...
@@ -44,7 +44,9 @@ chart.Series.Add(lineSeries);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/cartesianseries_clubbed/Line.png](charttypes_images/charttypes_img1.png)
+{% endtabs %}
+
+![](charttypes_images/charttypes_img1.png)
 
 ## Fast Line Chart
 
@@ -53,8 +55,9 @@ chart.Series.Add(lineSeries);
 * `Color` – used to change the color of the series.
 * `StrokeWidth` – used to change the stroke width of the series.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart>
 ...
@@ -66,7 +69,6 @@ chart.Series.Add(lineSeries);
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 SfChart chart = new SfChart();
 ...
@@ -81,7 +83,9 @@ chart.Series.Add(fastLineSeries);
 
 {% endhighlight %}
 
-![C:/Users/yuvaraj.palanisamy/Documents/My Received Files/fastline1.png](charttypes_images/charttypes_img14.png)
+{% endtabs %}
+
+![](charttypes_images/charttypes_img14.png)
 
 ### Dashed Lines
 
@@ -100,7 +104,7 @@ fastLineSeries.StrokeDashArray = new double[2] { 2, 3 };
 
 {% endhighlight %}
 
-![C:/Users/yuvaraj.palanisamy/Documents/My Received Files/faslinedas(1).png](charttypes_images/charttypes_img15.png)
+![](charttypes_images/charttypes_img15.png)
 
 ## Area Chart
 
@@ -110,8 +114,9 @@ To render an area chart, create an instance of `AreaSeries` and add to the `Seri
 * `StrokeWidth` – used to change the stroke width of the series.
 * `StrokeColor` – used to change the stroke color of the series.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart>
 ...
@@ -123,7 +128,6 @@ To render an area chart, create an instance of `AreaSeries` and add to the `Seri
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 SfChart chart = new SfChart();
 ...
@@ -138,7 +142,9 @@ chart.Series.Add(areaSeries);
 
 {% endhighlight %}
 
-![C:/Users/yuvaraj.palanisamy/Documents/My Received Files/area-clubbed.png](charttypes_images/charttypes_img2.png)
+{% endtabs %}
+
+![](charttypes_images/charttypes_img2.png)
 
 ## Spline Area Chart
 
@@ -148,8 +154,9 @@ To render a spline area chart, create an instance of `SplineAreaSeries` and add 
 * `StrokeWidth` – used to change the stroke width of the series.
 * `StrokeColor` – used to change the stroke color of the series.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart>
 ...
@@ -161,7 +168,6 @@ To render a spline area chart, create an instance of `SplineAreaSeries` and add 
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 SfChart chart = new SfChart();
 ...
@@ -176,7 +182,9 @@ chart.Series.Add(splineAreaSeries);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/cartesianseries_clubbed/SplinArea.png](charttypes_images/charttypes_img3.png)
+{% endtabs %}
+
+![](charttypes_images/charttypes_img3.png)
 
 ## Stacked Area Chart
 
@@ -186,8 +194,9 @@ To render a stacked area chart, create an instance of `StackingAreaSeries` and a
 * `StrokeWidth` – used to change the stroke width of the series.
 * `StrokeColor` – used to change the stroke color of the series.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart>
 ...
@@ -203,7 +212,6 @@ To render a stacked area chart, create an instance of `StackingAreaSeries` and a
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 SfChart chart = new SfChart();
 ...
@@ -235,7 +243,9 @@ chart.Series.Add(stackingAreaSeries3);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/cartesianseries_clubbed/StackingArea.png](charttypes_images/charttypes_img4.png)
+{% endtabs %}
+
+![](charttypes_images/charttypes_img4.png)
 
 ## 100% Stacked Area Chart
 
@@ -245,8 +255,9 @@ To render a 100% stacked area chart, create an instance of `StackingArea100Serie
 * `StrokeWidth` – used to change the stroke width of the series.
 * `StrokeColor` – used to change the stroke color of the series.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart>
 ...
@@ -262,7 +273,6 @@ To render a 100% stacked area chart, create an instance of `StackingArea100Serie
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 SfChart chart = new SfChart();
 ...
@@ -294,7 +304,9 @@ chart.Series.Add(stackingArea100Series3);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/cartesianseries_clubbed/StackingArea100.png](charttypes_images/charttypes_img5.png)
+{% endtabs %}
+
+![](charttypes_images/charttypes_img5.png)
 
 ## Column Chart
 
@@ -304,8 +316,9 @@ To render a column chart, create an instance of `ColumnSeries` and add to the `S
 * `StrokeWidth` – used to change the stroke width of the series.
 * `StrokeColor` – used to change the stroke color of the series. 
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart>
 ...
@@ -317,7 +330,6 @@ To render a column chart, create an instance of `ColumnSeries` and add to the `S
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 SfChart chart = new SfChart();
 ...
@@ -332,7 +344,9 @@ chart.Series.Add(columnSeries);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/cartesianseries_clubbed/column.png](charttypes_images/charttypes_img6.png)
+{% endtabs %}
+
+![](charttypes_images/charttypes_img6.png)
 
 ## Range Column Chart
 
@@ -372,9 +386,9 @@ chart.Series.Add(rangeColumnSeries);
 
 2.Or else you can use `High` and `Low` properties of `RangeColumnSeries` to map the high and low values from custom object to chart. 
 
+{% tabs %} 
 
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart>
 ...
@@ -385,9 +399,7 @@ chart.Series.Add(rangeColumnSeries);
 
 {% endhighlight %}
 
-
 {% highlight c# %}
-[C#]
    
 SfChart chart = new SfChart();
 ...
@@ -403,13 +415,15 @@ chart.Series.Add(rangeColumnSeries);
 
 {% endhighlight %}
 
+{% endtabs %}
+
 Following properties are used to customize the range column segment appearance,
 
 * `Color` – used to change the color of the series.
 * `StrokeWidth` – used to change the stroke width of the series.
 * `StrokeColor` – used to change the stroke color of the series.
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/cartesianseries_clubbed/RangeColumn.png](charttypes_images/charttypes_img7.png)
+![](charttypes_images/charttypes_img7.png)
 
 ## Stacked Column Chart
 
@@ -419,8 +433,9 @@ To render a stacked column chart, create an instance of `StackingColumnSeries` a
 * `StrokeWidth` – used to change the stroke width of the series.
 * `StrokeColor` – used to change the stroke color of the series.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart>
 ...
@@ -436,7 +451,6 @@ To render a stacked column chart, create an instance of `StackingColumnSeries` a
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 SfChart chart = new SfChart();
 ...
@@ -468,7 +482,9 @@ chart.Series.Add(stackingColumnSeries3);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/cartesianseries_clubbed/Stackingcolumn.png](charttypes_images/charttypes_img8.png)
+{% endtabs %}
+
+![](charttypes_images/charttypes_img8.png)
 
 ## 100% Stacked Column Chart
 
@@ -478,8 +494,9 @@ To render a 100% stacked column chart, create an instance of `StackingColumn100S
 * `StrokeWidth` – used to change the stroke width of the series.
 * `StrokeColor` – used to change the stroke color of the series.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart>
 ...
@@ -495,7 +512,6 @@ To render a 100% stacked column chart, create an instance of `StackingColumn100S
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 SfChart chart = new SfChart();
 ...
@@ -527,7 +543,9 @@ chart.Series.Add(stackingColumn100Series3);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Cartesianseries1-clubbed/StackingColumn100.png](charttypes_images/charttypes_img9.png)
+{% endtabs %}
+
+![](charttypes_images/charttypes_img9.png)
 
 ## Bar Chart
 
@@ -537,8 +555,9 @@ To render a bar chart, create an instance of `BarSeries` and add to the `Series`
 * `StrokeWidth` – used to change the stroke width of series.
 * `StrokeColor` – used to change the stroke color of the series.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart>
 ...
@@ -550,7 +569,6 @@ To render a bar chart, create an instance of `BarSeries` and add to the `Series`
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 SfChart chart = new SfChart();
 ...
@@ -565,7 +583,9 @@ chart.Series.Add(barSeries);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Cartesianseries1-clubbed/bar.png](charttypes_images/charttypes_img10.png)
+{% endtabs %}
+
+![](charttypes_images/charttypes_img10.png)
 
 ## Stacked Bar Chart
 
@@ -575,11 +595,12 @@ To render a stacked bar chart, create an instance of `StackingBarSeries` and add
 * `StrokeWidth` – used to change the stroke width of the series.
 * `StrokeColor` – used to change the stroke color of the series.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart>
-…
+...
 
 	<chart:StackingBarSeries ItemsSource ="{Binding Data1}" XBindingPath="Month" YBindingPath="Value"/>
 
@@ -592,7 +613,6 @@ To render a stacked bar chart, create an instance of `StackingBarSeries` and add
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 SfChart chart = new SfChart();
 ...
@@ -624,7 +644,9 @@ chart.Series.Add(stackingBarSeries3);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Cartesianseries1-clubbed/StackingBar.png](charttypes_images/charttypes_img11.png)
+{% endtabs %}
+
+![](charttypes_images/charttypes_img11.png)
 
 ## 100% Stacked Bar Chart
 
@@ -634,8 +656,9 @@ To render a 100% stacked bar chart, create an instance of `StackingBar100Series`
 * `StrokeWidth` – used to change the stroke width of the series.
 * `StrokeColor` – used to change the stroke color of the series.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart>
 ...
@@ -651,7 +674,6 @@ To render a 100% stacked bar chart, create an instance of `StackingBar100Series`
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 SfChart chart = new SfChart();
 ...
@@ -683,7 +705,9 @@ chart.Series.Add(stackingBar100Series3);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Cartesianseries1-clubbed/stackingbar100.png](charttypes_images/charttypes_img12.png)
+{% endtabs %}
+
+![](charttypes_images/charttypes_img12.png)
 
 ## Spline Chart
 
@@ -692,8 +716,9 @@ To render a spline chart, create an instance of `SplineSeries` and add to the `S
 * `Color` – used to change the color of the series.
 * `StrokeWidth` – used to change the stroke width of the series.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart>
 ...
@@ -705,7 +730,6 @@ To render a spline chart, create an instance of `SplineSeries` and add to the `S
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 SfChart chart = new SfChart();
 ...
@@ -720,45 +744,48 @@ chart.Series.Add(splineSeries);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Cartesianseries1-clubbed/Spline.png](charttypes_images/charttypes_img13.png)
+{% endtabs %}
+
+![](charttypes_images/charttypes_img13.png)
 
 ## StepLine Chart
 
 To render a step line chart, create an instance of StepLineSeries and add to the Series collection property of
 SfChart. You can use the following properties to customize the spline segment appearance.
 
-
 * `Color` – used to change the color of the series.
 * `StrokeWidth` – used to change the stroke width of the series.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.Series>
-<chart:StepLineSeries ItemsSource="{Binding Data}" 
-XBindingPath="Month" YBindingPath="Value" />
+
+	<chart:StepLineSeries ItemsSource="{Binding Data}" XBindingPath="Month" YBindingPath="Value" />
+	
 </chart:SfChart.Series>
 
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 SfChart chart = new SfChart();
 ...
 
 StepLineSeries stepLine = new StepLineSeries() 
 { 
-ItemsSource = Data, 
-XBindingPath = "Month", 
-YBindingPath = "Value"
+	ItemsSource = Data, 
+	XBindingPath = "Month", 
+	YBindingPath = "Value"
 };
 chart.Series.Add(stepLine);
 
-
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Cartesianseries1-clubbed/Spline.png](charttypes_images/stepline.png)
+{% endtabs %}
+
+![](charttypes_images/stepline.png)
 
 ## Bubble Chart
 
@@ -800,8 +827,9 @@ chart.Series.Add(bubbleSeries);
 
 2.Or else you can use `YBindingPath` and `Size` properties of `BubbleSeries`to map the Y value and size from custom object to chart. 
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart>
 ...
@@ -813,7 +841,6 @@ chart.Series.Add(bubbleSeries);
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 SfChart chart = new SfChart();
 ...
@@ -829,6 +856,7 @@ chart.Series.Add(bubbleSeries);
 
 {% endhighlight %}
 
+{% endtabs %}
 
 Following properties are used to customize the bubble segment appearance.
 
@@ -838,7 +866,7 @@ Following properties are used to customize the bubble segment appearance.
 * `MinimumRadius` – used to change the minimum size of the series.
 * `MaximumRadius` – used to change the maximum size of the series.
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Cartesianseries1-clubbed/bubble.png](charttypes_images/charttypes_img16.png)
+![](charttypes_images/charttypes_img16.png)
 
 ## Scatter Chart	
 
@@ -850,8 +878,9 @@ To render a scatter chart, create an instance of `ScatterSeries` and add to the 
 * `ScatterWidth` – used to change the width of the series.
 * `ScatterHeight` – used to change the height of the series.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart>
 ...
@@ -863,7 +892,6 @@ To render a scatter chart, create an instance of `ScatterSeries` and add to the 
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 SfChart chart = new SfChart();
 ...
@@ -880,7 +908,9 @@ chart.Series.Add(scatterSeries);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Cartesianseries1-clubbed/scatter.png](charttypes_images/charttypes_img17.png)
+{% endtabs %}
+
+![](charttypes_images/charttypes_img17.png)
 
 ## OHLC Chart
 
@@ -913,13 +943,14 @@ HiLoOpenCloseSeries hiLoOpenCloseSeries = new HiLoOpenCloseSeries()
 };
 	
 chart.Series.Add(hiLoOpenCloseSeries);
-{% endhighlight %}
 
+{% endhighlight %}
 
 2.Or else you can use `Open`,`High`,`Low` and `Close` properties of `HiLoOpenCloseSeries` to map Open, High, Low and Close values from custom object to chart.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart>
 ...
@@ -930,9 +961,7 @@ chart.Series.Add(hiLoOpenCloseSeries);
 
 {% endhighlight %}
 
-
 {% highlight c# %}
-[C#]
 
 SfChart chart = new SfChart();
 ...
@@ -950,27 +979,28 @@ chart.Series.Add(hiLoOpenCloseSeries);
 
 {% endhighlight %}
 
+{% endtabs %}
 
 You can use the following properties to customize the HiLoOpenCloseSeries segment appearance.
 
 * `Color` – used to change the color of the series.
 * `StrokeWidth` – used to change the stroke width of the series.
 
-![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/HILO.png](charttypes_images/charttypes_img18.png)
+![](charttypes_images/charttypes_img18.png)
 
 ### Bull and Bear Color	
 
 In OHLC chart, `BullFillColor` property is used to specify a fill color for the segments that indicates an increase in stock price in the measured time interval and `BearFillColor` property is used to specify a fill color for the segments that indicates a decrease in stock price in the measured time interval.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:HiLoOpenCloseSeries BearFillColor="Blue" BullFillColor="Purple" ItemsSource ="{Binding Data}" XBindingPath="Month" High="Value1" Low="Value2" Open="Value3" Close="Value4"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 HiLoOpenCloseSeries hiLoOpenCloseSeries = new HiLoOpenCloseSeries() 
 { 
@@ -986,7 +1016,9 @@ HiLoOpenCloseSeries hiLoOpenCloseSeries = new HiLoOpenCloseSeries()
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/HiloColor.png](charttypes_images/charttypes_img19.png)
+{% endtabs %}
+
+![](charttypes_images/charttypes_img19.png)
 
 ## Candle Chart
 
@@ -1022,11 +1054,11 @@ chart.Series.Add(candleSeries);
 
 {% endhighlight %}
 
-
 2.Or else you can use `Open`,`High`,`Low` and `Close` property of `CandleSeries` to map Open, High, Low and Close values from custom object to chart.
 
+{% tabs %} 
+
 {% highlight xaml %}  
-[XAML]
 
 <chart:SfChart>
 ...
@@ -1037,9 +1069,7 @@ chart.Series.Add(candleSeries);
 
 {% endhighlight %}
 
-
 {% highlight c# %} 
-[C#]
 
 SfChart chart = new SfChart();
 ...
@@ -1057,6 +1087,7 @@ chart.Series.Add(candleSeries);
 
 {% endhighlight %}
 
+{% endtabs %}
    
 You can use the following properties to customize the candle segment appearance.
 
@@ -1064,21 +1095,21 @@ You can use the following properties to customize the candle segment appearance.
 * `StrokeWidth` – used to change the stroke width of the series.
 * `StrokeColor` – used to change the stroke color of the series.
 
-![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/Candle.png](charttypes_images/charttypes_img20.png)
+![](charttypes_images/charttypes_img20.png)
 
 ### Bull and Bear Color
 
 In Candle chart, `BullFillColor` property is used to specify a fill color for the segments that indicates an increase in stock price in the measured time interval and `BearFillColor` property is used to specify a fill color for the segments that indicates a decrease in stock price in the measured time interval.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:CandleSeries BearFillColor="Blue" BullFillColor="Purple" ItemsSource ="{Binding Data}" XBindingPath="Year" YBindingPath="Value" />
 
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 CandleSeries candleSeries = new CandleSeries() 
 { 
@@ -1094,7 +1125,9 @@ CandleSeries candleSeries = new CandleSeries()
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/Candlecolor.png](charttypes_images/charttypes_img21.png)
+{% endtabs %}
+
+![](charttypes_images/charttypes_img21.png)
 
 ## Pie Chart
 
@@ -1104,8 +1137,9 @@ To render a pie chart, create an instance of `PieSeries` and add to the `Series`
 * `StrokeWidth` – used to change the stroke width of the series.
 * `StrokeColor` – used to change the stroke color of the series.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart>
 ...
@@ -1117,7 +1151,6 @@ To render a pie chart, create an instance of `PieSeries` and add to the `Series`
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 SfChart chart = new SfChart();
 ...
@@ -1132,21 +1165,23 @@ chart.Series.Add(pieSeries);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/pieseries.png](charttypes_images/charttypes_img22.png)
+{% endtabs %}
+
+![](charttypes_images/charttypes_img22.png)
 
 ### Changing the pie size
 
 You can use `CircularCoefficient` property to change the diameter of the pie chart with respect to the plot area. It ranges from 0 to 1 and the default value is `0.8`.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:PieSeries CircularCoefficient="0.5" ItemsSource ="{Binding Data}" XBindingPath="Expense" YBindingPath="Value"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 PieSeries pieSeries = new PieSeries() 
 { 
@@ -1158,21 +1193,23 @@ PieSeries pieSeries = new PieSeries()
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/pieCircularCo-efficient.png](charttypes_images/charttypes_img23.png)
+{% endtabs %}
+
+![](charttypes_images/charttypes_img23.png)
 
 ### Exploding a pie segment
 
 You can explode a pie segment using `ExplodeIndex` property and specify the explode radius using `ExplodeRadius` property of `PieSeries`.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:PieSeries ExplodeIndex="1" ItemsSource ="{Binding Data}" XBindingPath="Expense" YBindingPath="Value"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 PieSeries pieSeries = new PieSeries() 
 { 
@@ -1184,21 +1221,23 @@ PieSeries pieSeries = new PieSeries()
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/PieExplodeindex.png](charttypes_images/charttypes_img24.png)
+{% endtabs %}
+
+![](charttypes_images/charttypes_img24.png)
 
 ### Exploding all the segments
 
 Using `ExplodeAll` property of `PieSeries`, you can explode all the pie segments.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:PieSeries ExplodeAll="True" ItemsSource ="{Binding Data}" XBindingPath="Expense" YBindingPath="Value"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 PieSeries pieSeries = new PieSeries() 
 { 
@@ -1210,21 +1249,23 @@ PieSeries pieSeries = new PieSeries()
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/PieExplodeAll.png](charttypes_images/charttypes_img25.png)
+{% endtabs %}
+
+![](charttypes_images/charttypes_img25.png)
 
 ### Sector of Pie
 
 SfChart allows you to render all the data points/segments in semi-pie, quarter-pie or in any sector using `StartAngle` and `EndAngle` properties.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:PieSeries StartAngle="180" EndAngle="360" ItemsSource ="{Binding Data}" XBindingPath="Expense" YBindingPath="Value"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 PieSeries pieSeries = new PieSeries() 
 { 
@@ -1237,7 +1278,9 @@ PieSeries pieSeries = new PieSeries()
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/piesector.png](charttypes_images/charttypes_img26.png)
+{% endtabs %}
+
+![](charttypes_images/charttypes_img26.png)
 
 ## Doughnut Chart
 
@@ -1247,8 +1290,9 @@ To render a doughnut chart, create an instance of `DoughnutSeries` and add to th
 * `StrokeWidth` – used to change the stroke width of the series.
 * `StrokeColor` – used to change the stroke color of the series.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart>
 ...
@@ -1260,7 +1304,6 @@ To render a doughnut chart, create an instance of `DoughnutSeries` and add to th
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 SfChart chart = new SfChart();
 ...
@@ -1275,21 +1318,23 @@ chart.Series.Add(doughnutSeries);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/Donugnut.png](charttypes_images/charttypes_img27.png)
+{% endtabs %}
+
+![](charttypes_images/charttypes_img27.png)
 
 ### Changing Doughnut inner radius
 
 You can change the doughnut chart inner radius using `DoughnutCoefficient` with respect to the plot area. It ranges from 0 to 1 and the default value is `0.4`.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:DoughnutSeries DoughnutCoefficient="0.6" ItemsSource ="{Binding Data}" XBindingPath="Expense" YBindingPath="Value" />
 
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 DoughnutSeries doughnutSeries = new DoughnutSeries() 
 { 
@@ -1301,21 +1346,23 @@ DoughnutSeries doughnutSeries = new DoughnutSeries()
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/DoughnutCoefficient.png](charttypes_images/charttypes_img28.png)
+{% endtabs %}
+
+![](charttypes_images/charttypes_img28.png)
 
 ### Changing the doughnut size
 
 You can use the `CircularCoefficient` property to change the diameter of the doughnut chart with respect to the plot area. It ranges from 0 to 1 and the default value is 0.8.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:DoughnutSeries CircularCoefficient="0.5"  ItemsSource ="{Binding Data}" XBindingPath="Expense" YBindingPath="Value" />
 
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 DoughnutSeries doughnutSeries = new DoughnutSeries() 
 { 
@@ -1327,21 +1374,23 @@ DoughnutSeries doughnutSeries = new DoughnutSeries()
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/doughnutCircularCo-eff.png](charttypes_images/charttypes_img29.png)
+{% endtabs %}
+
+![](charttypes_images/charttypes_img29.png)
 
 ### Exploding a doughnut segment
 
 Exploding a specific doughnut segment, you have to set the index to be exploded using `ExplodeIndex` property of the series.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:DoughnutSeries ExplodeIndex="1" ItemsSource ="{Binding Data}" XBindingPath="Expense" YBindingPath="Value" />
 
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 DoughnutSeries doughnutSeries = new DoughnutSeries() 
 { 
@@ -1353,21 +1402,23 @@ DoughnutSeries doughnutSeries = new DoughnutSeries()
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/doughnutExplodeIndex.png](charttypes_images/charttypes_img30.png)
+{% endtabs %}
+
+![](charttypes_images/charttypes_img30.png)
 
 ### Exploding all the segments
 
 To explode all the segments, you have to enable `ExplodeAll` property of the series.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:DoughnutSeries ExplodeAll="True" ItemsSource ="{Binding Data}" XBindingPath="Expense" YBindingPath="Value" />
 
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 DoughnutSeries doughnutSeries = new DoughnutSeries() 
 { 
@@ -1379,21 +1430,23 @@ DoughnutSeries doughnutSeries = new DoughnutSeries()
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/doughnutExplodeAll.png](charttypes_images/charttypes_img31.png)
+{% endtabs %}
+
+![](charttypes_images/charttypes_img31.png)
 
 ### Sector of Doughnut
 
 SfChart allows you to render all the data points/segments in semi-doughnut, quarter- doughnut or in any sector using `StartAngle` and `EndAngle` properties.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:DoughnutSeries StartAngle="180" EndAngle="360" ItemsSource ="{Binding Data}" XBindingPath="Expense" YBindingPath="Value" />
 
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 DoughnutSeries doughnutSeries = new DoughnutSeries() 
 { 
@@ -1406,7 +1459,9 @@ DoughnutSeries doughnutSeries = new DoughnutSeries()
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/DoughnutSector.png](charttypes_images/charttypes_img32.png)
+{% endtabs %}
+
+![](charttypes_images/charttypes_img32.png)
 
 ## Pyramid Chart
 
@@ -1416,8 +1471,9 @@ To render a pyramid chart, create an instance of `PyramidSeries` and add to the 
 * `StrokeWidth` – used to change the stroke width of the series.
 * `StrokeColor` – used to change the stroke color of the series.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart>
 ...
@@ -1429,7 +1485,6 @@ To render a pyramid chart, create an instance of `PyramidSeries` and add to the 
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 SfChart chart = new SfChart();
 ...
@@ -1444,21 +1499,23 @@ chart.Series.Add(pyramidSeries);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/pyramid.png](charttypes_images/charttypes_img33.png)
+{% endtabs %}
+
+![](charttypes_images/charttypes_img33.png)
 
 ### Pyramid Mode
 
 You can render the pyramid series as linear or surface mode. In linear mode, height of the pyramid segment is based on the Y value and in surface mode, area of the pyramid segment is based on the Y values. The default value of `PyramidMode` property is `Linear`.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:PyramidSeries ItemsSource ="{Binding Data}" PyramidMode="Surface" XBindingPath="Country" YBindingPath="Value"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 PyramidSeries pyramidSeries = new PyramidSeries ()
 { 
@@ -1470,21 +1527,23 @@ PyramidSeries pyramidSeries = new PyramidSeries ()
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/pyramidmode.png](charttypes_images/charttypes_img34.png)
+{% endtabs %}
+
+![](charttypes_images/charttypes_img34.png)
 
 ### Gap between the segments
 
 You can control the gap between the two segments using `GapRatio` property. Its ranges from 0 to 1.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:PyramidSeries ItemsSource ="{Binding Data}" GapRatio="0.1" XBindingPath="Country" YBindingPath="Value"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 PyramidSeries pyramidSeries = new PyramidSeries() 
 { 
@@ -1496,21 +1555,23 @@ PyramidSeries pyramidSeries = new PyramidSeries()
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/pyramidgap.png](charttypes_images/charttypes_img35.png)
+{% endtabs %}
+
+![](charttypes_images/charttypes_img35.png)
 
 ### Exploding a pyramid segment
 
 You can explode a pyramid segment using `ExplodeIndex` property, and `ExplodeOffset` property is used to specify the exploded segment’s distance.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:PyramidSeries ItemsSource ="{Binding Data}" ExplodeIndex="2" XBindingPath="Country" YBindingPath="Value" />
 
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 PyramidSeries pyramidSeries = new PyramidSeries() 
 { 
@@ -1522,7 +1583,9 @@ PyramidSeries pyramidSeries = new PyramidSeries()
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/pyramidExplode.png](charttypes_images/charttypes_img36.png)
+{% endtabs %}
+
+![](charttypes_images/charttypes_img36.png)
 
 ## Funnel Chart
 
@@ -1532,8 +1595,9 @@ To render a funnel chart, create an instance of `FunnelSeries` and add to the `S
 * `StrokeWidth` – used to change the stroke width of the series.
 * `StrokeColor` – used to change the stroke color of the series.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart>
 ...
@@ -1545,7 +1609,6 @@ To render a funnel chart, create an instance of `FunnelSeries` and add to the `S
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 SfChart chart = new SfChart();
 ...
@@ -1560,21 +1623,23 @@ chart.Series.Add(funnelSeries);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin UG images/UG images for md/Non-cartesianseries-clubbed/Funnel.png](charttypes_images/charttypes_img37.png)
+{% endtabs %}
+
+![](charttypes_images/charttypes_img37.png)
 
 ### Gap between the segments
 
 You can control the gap between the two segments using `GapRatio` property. Its ranges from 0 to 1.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:FunnelSeries ItemsSource ="{Binding Data}" GapRatio="0.1" XBindingPath="Year" YBindingPath="Value"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 FunnelSeries funnelSeries = new FunnelSeries() 
 { 
@@ -1586,21 +1651,23 @@ FunnelSeries funnelSeries = new FunnelSeries()
 
 {% endhighlight %}
 
-![C:/Users/yuvaraj.palanisamy/Documents/My Received Files/funnelgap.png](charttypes_images/charttypes_img38.png)
+{% endtabs %}
+
+![](charttypes_images/charttypes_img38.png)
 
 ### Exploding a funnel segment
 
 You can explode a pyramid segment using `ExplodeIndex` property and `ExplodeOffset` property is used to specify the exploded segment’s distance.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:FunnelSeries ItemsSource ="{Binding Data}" ExplodeIndex="1" XBindingPath="Status" YBindingPath="Value" />
 
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 FunnelSeries funnelSeries = new FunnelSeries() 
 { 
@@ -1612,21 +1679,23 @@ FunnelSeries funnelSeries = new FunnelSeries()
 
 {% endhighlight %}
 
-![C:/Users/yuvaraj.palanisamy/Documents/My Received Files/funnel-explode.png](charttypes_images/charttypes_img39.png)
+{% endtabs %}
+
+![](charttypes_images/charttypes_img39.png)
 
 ### Changing the minimum width of the funnel
 
 You can change the minimum width of the funnel neck using `MinWidth` property of `FunnelSeries`. Default value of `MinWidth` is `40`.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:FunnelSeries ItemsSource ="{Binding Data}" MinWidth="20" XBindingPath="Year" YBindingPath="Value"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 FunnelSeries funnelSeries = new FunnelSeries() 
 { 
@@ -1638,4 +1707,6 @@ FunnelSeries funnelSeries = new FunnelSeries()
 
 {% endhighlight %}
 
-![C:/Users/yuvaraj.palanisamy/Documents/My Received Files/funnelminwidth.png](charttypes_images/charttypes_img40.png)
+{% endtabs %}
+
+![](charttypes_images/charttypes_img40.png)

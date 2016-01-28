@@ -30,13 +30,4 @@ As the subject of the appointments are given in the application level, it can be
     
 {% endhighlight %}
 
-<table>
-<tr>
-<td>
-{{'![](Localization_images/Locale_Android.png)'| markdownify }}
-</td><td>
-{{'![](Localization_images/Locale_iOS.png)'| markdownify }}
-</td><td>
-{{'![](Localization_images/Locale_WP.png)'| markdownify }}
-</td></tr>
-</table>
+![](Localization_images/Locale.png)

@@ -46,13 +46,4 @@ Create the collection of the ScheduleAppointments by setting required details us
     
 {% endhighlight %}
 
-<table>
-<tr>
-<td>
-{{'![](PopulatingAppointments_images/Appointment_Android.png)'| markdownify }}
-</td><td>
-{{'![](PopulatingAppointments_images/Appointment_iOS.png)'| markdownify }}
-</td><td>
-{{'![](PopulatingAppointments_images/Appointments_WP.png)'| markdownify }}
-</td></tr>
-</table>
+![](PopulatingAppointments_images/Appointments.png)

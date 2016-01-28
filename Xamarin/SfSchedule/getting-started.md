@@ -1,4 +1,4 @@
----
+﻿---
 
 layout: post
 title:  Syncfusion SfSchedule control Getting Started for Xamarin.Forms
@@ -102,16 +102,7 @@ The SfSchedule control is configured entirely in C# code.
     this.Content = sfschedule;
 {% endhighlight %}
 
-<table>
-<tr>
-<td>
-{{'![](GettingStarted_images/DayView/DayView_Android.png)'| markdownify }}
-</td><td>
-{{'![](GettingStarted_images/DayView/DayView_iOS.png)'| markdownify }}
-</td><td>
-{{'![](GettingStarted_images/DayView/DayView_WP.png)'| markdownify }}
-</td></tr>
-</table>
+![](GettingStarted_images/DayView/DayView.png)
 
 You can change the default UI of schedule using [ScheduleView](/xamarin/sfschedule/views "Schedule Views") to display the dates in different layouts available in the control.
 
@@ -211,13 +202,4 @@ When the schedule appointments are viewed in Monthview, it will not display much
 
 {% endhighlight %}
 
-<table>
-<tr>
-<td>
-{{'![](DateNavigationandGesture_images/Inline/Inline_Android.png)'| markdownify }}
-</td><td>
-{{'![](DateNavigationandGesture_images/Inline/Inline_iOS.png)'| markdownify }}
-</td><td>
-{{'![](DateNavigationandGesture_images/Inline/Inline_WP.png)'| markdownify }}
-</td></tr>
-</table>
+![](DateNavigationandGesture_images/Inline/Inline.png)

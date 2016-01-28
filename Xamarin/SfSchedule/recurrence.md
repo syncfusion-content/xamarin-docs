@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Recurrence in Syncfusion SfSchedule control for Xamarin.Forms
 description: Learn how to Create recurrence Appointments in SfSchedule control
@@ -70,13 +70,4 @@ RecurrenceGenerator/ recurrence builder is available with the control to create 
 	
 {% endhighlight %}
 
-<table>
-<tr>
-<td>
-{{'![](recurrence_images/Recurrence_Android.png)'| markdownify }}
-</td><td>
-{{'![](recurrence_images/Recurrence_iOS.png)'| markdownify }}
-</td><td>
-{{'![](recurrence_images/Recurrence_WP.png)'| markdownify }}
-</td></tr>
-</table>	
+![](recurrence_images/Recurrence.png)

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Date Navigation and Gesture in Syncfusion SfSchedule control for Xamarin.Forms
 description: Learn the complete navigation and gestures support
@@ -90,16 +90,7 @@ By enabling Inline feature in month view, while touch the month view cell, appoi
 
 {% endhighlight %}
 
-<table>
-<tr>
-<td>
-{{'![](DateNavigationandGesture_images/Inline/Inline_Android.png)'| markdownify }}
-</td><td>
-{{'![](DateNavigationandGesture_images/Inline/Inline_iOS.png)'| markdownify }}
-</td><td>
-{{'![](DateNavigationandGesture_images/Inline/Inline_WP.png)'| markdownify }}
-</td></tr>
-</table>
+![](DateNavigationandGesture_images/Inline/Inline.png)
 
 ## FirstDay of the Week
 
@@ -114,13 +105,5 @@ By default schedule control will be rendered with Sunday as the first day of the
 
 > **NOTE**: Where 1-Sunday, 2-Monday, 3-Tuesday, 4-Wednesday, 5-Thursday, 6-Friday,7-Saturday.
 
-<table>
-<tr>
-<td>
-{{'![](DateNavigationandGesture_images/FirstDayOFWeek/FirstDayOfWeek_Android.png)'| markdownify }}
-</td><td>
-{{'![](DateNavigationandGesture_images/FirstDayOFWeek/FirstDayOfWeek_iOS.png)'| markdownify }}
-</td><td>
-{{'![](DateNavigationandGesture_images/FirstDayOFWeek/FirstDayOfWeek_WP.png)'| markdownify }}
-</td></tr>
-</table>
+
+![](DateNavigationandGesture_images/FirstDayOFWeek/FirstDayOfWeek.png)

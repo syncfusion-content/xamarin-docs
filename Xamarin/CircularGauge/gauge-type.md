@@ -1,11 +1,12 @@
-
 ---
+
 layout: post
 title: Accessing Gauge Types in Syncfusion SfCircularGauge control for Xamarin.Forms Platform
 description: Learn how to set types in SfCircularGauge control
 platform: Xamarin.Forms
 control: SfCircularGauge
 documentation: ug
+
 ---
 
 # GAUGE TYPE

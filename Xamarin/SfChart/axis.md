@@ -983,3 +983,21 @@ chart.PrimaryAxis.LabelsIntersectAction = AxisLabelsIntersectAction.MultipleRows
 {% endtabs %}
 
 ![](axis_images/axis_img27.png)
+
+## Event
+
+**ActualRangeChanged**
+
+This event is triggered when the axis range has changed. The argument contains the following information.
+
+* `ActualMinimum` - used to get and set the axis actual minimum value.
+* `ActualMaximum` - used to get and set the axis actual maximum value.
+* `VisibleMinimum` - used to get and set the axis visible minimum value.
+* `VisibleMaximum` - used to get and set the axis visible maximum value.
+
+**LabelCreated**
+
+This event is triggered when the axis label is created. The argument contains the following information.
+
+* `LabelContent` - used to get and set the axis label content.
+* `Position` - used to get the position of label.

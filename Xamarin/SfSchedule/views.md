@@ -28,16 +28,7 @@ Day view is used to display a single day, current day will be visible by default
     
 {% endhighlight %}
 
-<table>
-<tr>
-<td>
-{{'![](views_images/DayView/DayView_Android.png)'| markdownify }}
-</td><td>
-{{'![](views_images/DayView/DayView_iOS.png)'| markdownify }}
-</td><td>
-{{'![](views_images/DayView/DayView_WP.png)'| markdownify }}
-</td></tr>
-</table>
+![](views_images/DayView/DayView.png)
 
 ### Settings
 
@@ -88,16 +79,7 @@ You can view AllDay appointments in separate panel and the panel’s visibility 
     
  {% endhighlight %} 
  
-<table>
-<tr>
-<td>
-{{'![](views_images/BlackOutDates/BlackOutDays_Android.png)'| markdownify }}
-</td><td>
-{{'![](views_images/BlackOutDates/BlackOutDays_iOS.png)'| markdownify }}
-</td><td>
-{{'![](views_images/BlackOutDates/BlackOutDays_WP.png)'| markdownify }}
-</td></tr>
-</table>
+![](views_images/NonAccessinleBlock/NonAcessibleBlock.png)
 
 ## Week View
 
@@ -115,16 +97,7 @@ To view all the seven days of a particular week, by default if will be current w
     
 {% endhighlight %}
 
-<table>
-<tr>
-<td>
-{{'![](views_images/WeekView/WeekView_Android.png)'| markdownify }}
-</td><td>
-{{'![](views_images/WeekView/WeekView_iOS.png)'| markdownify }}
-</td><td>
-{{'![](views_images/WeekView/WeekView_WP.png)'| markdownify }}
-</td></tr>
-</table>
+![](views_images/WeekView/WeekView.png)
 
 ### Settings
 
@@ -175,14 +148,7 @@ You can view Allday appointments in separate panel and the panel’s visibility 
 >**NOTE**:
 Non-Accessible Block is not applicable in Windows Phone.
 
-<table>
-<tr>
-<td>
-{{'![](views_images/NonAccessibleBlock_WeekView/NonAccessibleBlock_WeekView_Android.png)'| markdownify }}
-</td><td>
-{{'![](views_images/NonAccessibleBlock_WeekView/NonAccessibleBlock_WeekView_iOS.png)'| markdownify }}
-</td></tr>
-</table>
+![](views_images/NonAccessibleBlock_WeekView_images/NonAccessibleBlock_WeekView.png)
 
 ## Work Week View
 
@@ -200,16 +166,7 @@ To view working days of a particular week, by default current work week will be 
     
 {% endhighlight %}
 
-<table>
-<tr>
-<td>
-{{'![](views_images/WorkWeekView/WorkWeekView_Android.png)'| markdownify }}
-</td><td>
-{{'![](views_images/WorkWeekView/WorkWeekView_iOS.png)'| markdownify }}
-</td><td>
-{{'![](views_images/WorkWeekView/WorkWeekView_WP.png)'| markdownify }}
-</td></tr>
-</table>
+![](views_images/WorkWeekView/WorkWeekView.png)
 
 ### Settings
 
@@ -262,14 +219,7 @@ You can view Allday appointments in separate panel and the panel’s visibility 
 >**NOTE**:
 Non-Accessible Block is not applicable in Windows Phone.
 
-<table>
-<tr>
-<td>
-{{'![](views_images/NonAccessibleBlock_WorkWeekView/NonAccessibleBlock-WorkWeekView_Android.png)'| markdownify }}
-</td><td>
-{{'![](views_images/NonAccessibleBlock_WorkWeekView/NonAccessibleBlock-WorkWeekView_iOS.png)'| markdownify }}
-</td></tr>
-</table>
+![](views_images/NonAccessibleBlock_WorkWeekView_images/NonAccessibleBlock-WorkWeekView.png)
 
 ## Month View
 
@@ -287,16 +237,7 @@ To view entire dates of a particular month, by default current month will be dis
     
 {% endhighlight %}
 
-<table>
-<tr>
-<td>
-{{'![](views_images/MonthView/MonthView_Android.png)'| markdownify }}
-</td><td>
-{{'![](views_images/MonthView/MonthView_iOS.png)'| markdownify }}
-</td><td>
-{{'![](views_images/MonthView/MonthView_WP.png)'| markdownify }}
-</td></tr>
-</table>
+![](views_images/MonthView/MonthView.png)
 
 ### Settings
 
@@ -346,13 +287,4 @@ You display the week number of the year in month view by setting `showWeekNumber
 
 {% endhighlight %}
 
-<table>
-<tr>
-<td>
-{{'![](views_images/BlackOutDates/BlackOutDays_Android.png)'| markdownify }}
-</td><td>
-{{'![](views_images/BlackOutDates/BlackOutDays_iOS.png)'| markdownify }}
-</td><td>
-{{'![](views_images/BlackOutDates/BlackOutDays_WP.png)'| markdownify }}
-</td></tr>
-</table>
+![](views_images/BlackOutDates/BlackOutDays.png)

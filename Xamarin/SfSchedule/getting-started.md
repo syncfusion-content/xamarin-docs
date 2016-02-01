@@ -102,16 +102,7 @@ The SfSchedule control is configured entirely in C# code.
     this.Content = sfschedule;
 {% endhighlight %}
 
-<table>
-<tr>
-<td>
-{{'![](GettingStarted_images/DayView/DayView_Android.png)'| markdownify }}
-</td><td>
-{{'![](GettingStarted_images/DayView/DayView_iOS.png)'| markdownify }}
-</td><td>
-{{'![](GettingStarted_images/DayView/DayView_WP.png)'| markdownify }}
-</td></tr>
-</table>
+![](GettingStarted_images/DayView/DayView.png)
 
 You can change the default UI of schedule using [ScheduleView](/xamarin/sfschedule/views "Schedule Views") to display the dates in different layouts available in the control.
 
@@ -123,16 +114,7 @@ You can change the default UI of schedule using [ScheduleView](/xamarin/sfschedu
 
 {% endhighlight %}
 
-<table>
-<tr>
-<td>
-{{'![](GettingStarted_images/WeekView/WeekView_Android.png)'| markdownify }}
-</td><td>
-{{'![](GettingStarted_images/WeekView/WeekView_iOS.png)'| markdownify }}
-</td><td>
-{{'![](GettingStarted_images/WeekView/WeekView_WP.png)'| markdownify }}
-</td></tr>
-</table>
+![](GettingStarted_images/WeekView/WeekView.png)
 
 ## Populating Events
 
@@ -164,7 +146,7 @@ You can add events to the schedule by creating collection of ScheduleAppointment
 
 ## Populating Recursive Events
 
-You can also add recursive appointments to Schedule, refer Recurrence section to know more about creating the recursive appointments using Rrule generator in schedule.
+You can also add recursive appointments to Schedule, refer [Recurrence](/xamarin/sfschedule/recurrence "Schedule Recursive Appointments") section to know more about creating the recursive appointments using Rrule generator in schedule.
 
 {% highlight c# %}
 
@@ -211,13 +193,4 @@ When the schedule appointments are viewed in Monthview, it will not display much
 
 {% endhighlight %}
 
-<table>
-<tr>
-<td>
-{{'![](DateNavigationandGesture_images/Inline/Inline_Android.png)'| markdownify }}
-</td><td>
-{{'![](DateNavigationandGesture_images/Inline/Inline_iOS.png)'| markdownify }}
-</td><td>
-{{'![](DateNavigationandGesture_images/Inline/Inline_WP.png)'| markdownify }}
-</td></tr>
-</table>
+![](DateNavigationandGesture_images/Inline/Inline.png)

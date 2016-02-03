@@ -9,15 +9,14 @@ documentation: ug
 
 # Overview
 
-**SfDateTimeRangeNavigator** is a time based data visualization control. Its rich interface allows you to visualize and select particular date time range in the control. This control is easily used along with other controls such as Chart, Data Grid, etc., to create rich and powerful dashboards.
+The DateTime Range Navigator control provides an intuitive interface for selecting a smaller date range from a larger collection. It is commonly used in financial dashboards to filter the date range for which the data needs to be visualized.
 
-## Key Features:
+## Key features
 
-The **SfDateTimeRangeNavigator** is composed of the following features: 
+Main capabilities of the control are listed below
 
-* Major scale displays date time scale that is one or more level higher than the minor scale date time component.
-* Minor scale displays date time scale that is one or more level lower than the major level date time component.
-* Visualize data with built-in chart.
-* Rich user interface to select the particular time range.
+* Major scale displays a date time scale that is one or more level higher than the minor scale.
+* Visualize data with the available built-in chart types.
+* Intuitive user interface to select a particular time range.
 
 ![](overview_images/overview_img1.png)

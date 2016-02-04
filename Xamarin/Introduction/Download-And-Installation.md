@@ -40,6 +40,7 @@ You can find the following folders when extracting the downloaded zip package or
 
 * **Lib** Contains Syncfusion assemblies for Xamarin.Forms, Xamarin.Android and Xamarin.iOS.
 * **Samples** - Contains demo samples for Xamarin.Forms, Xamarin.Android and Xamarin.iOS.
+
 ## Add reference to the project
 
 
@@ -124,4 +125,4 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% endhighlight %}
 
-N> When you do not add the above line, controls are not loaded in WP, WinRT and iOS platforms, and it looks blank.
+N> If you do not add the above line, controls will not be loaded in WP, WinRT and iOS platforms, and it will look blank. 

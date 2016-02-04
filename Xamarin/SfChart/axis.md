@@ -988,16 +988,18 @@ chart.PrimaryAxis.LabelsIntersectAction = AxisLabelsIntersectAction.MultipleRows
 
 **ActualRangeChanged**
 
-This event is triggered when the axis range is changed. The argument contains the following information.
+This event is triggered when the actual range of the axis is changed. The argument contains the following information.
 
-* `ActualMinimum` - used to get and set the axis actual minimum value.
-* `ActualMaximum` - used to get and set the axis actual maximum value.
-* `VisibleMinimum` - used to get and set the axis visible minimum value.
-* `VisibleMaximum` - used to get and set the axis visible maximum value.
+* `ActualMinimum` - used to get or set the actual minimum value of the axis.
+* `ActualMaximum` - used to get or set the actual maximum value of the axis.
+* `VisibleMinimum` - used to get or set the visible minimum value of the axis.
+* `VisibleMaximum` - used to get or set the visible maximum value of the axis.
+
+N> Actual range and visible range are similar unless the range is changed by specifying the `ZoomPosition` and `ZoomPosition` properties or zoom the chart interactively. Visible range is always the range which you see visually in the screen.
 
 **LabelCreated**
 
 This event is triggered when the axis label is created. The argument contains the following information.
 
-* `LabelContent` - used to get and set the axis label content.
+* `LabelContent` - used to get or set the axis label content.
 * `Position` - used to get the position of label.

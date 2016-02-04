@@ -3,7 +3,7 @@
 layout: post
 title:  Syncfusion SfSchedule control Getting Started for Xamarin.Forms
 description: A quick tour to initial users on Syncfusion SfSchedule control for Xamarin.Forms platform
-platform: Xamarin.Forms
+platform: xamarin
 control: SfSchedule
 documentation: ug
 

@@ -988,7 +988,7 @@ chart.PrimaryAxis.LabelsIntersectAction = AxisLabelsIntersectAction.MultipleRows
 
 **ActualRangeChanged**
 
-This event is triggered when the axis range has changed. The argument contains the following information.
+This event is triggered when the axis range is changed. The argument contains the following information.
 
 * `ActualMinimum` - used to get and set the axis actual minimum value.
 * `ActualMaximum` - used to get and set the axis actual maximum value.

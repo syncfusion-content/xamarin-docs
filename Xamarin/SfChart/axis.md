@@ -995,7 +995,7 @@ This event is triggered when the actual range of the axis is changed. The argume
 * `VisibleMinimum` - used to get or set the visible minimum value of the axis.
 * `VisibleMaximum` - used to get or set the visible maximum value of the axis.
 
-N> Actual range and visible range are similar unless the range is changed by specifying the `ZoomPosition` and `ZoomPosition` properties or zoom the chart interactively. Visible range is always the range which you see visually in the screen.
+N> Actual range and visible range are similar unless the range is changed by specifying the `ZoomPosition` and `ZoomFactor` properties or zoom the chart interactively. Visible range is always the range which you see visually in the screen.
 
 **LabelCreated**
 

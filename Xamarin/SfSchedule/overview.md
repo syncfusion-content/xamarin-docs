@@ -1,12 +1,9 @@
 ---
-
-layout: post
 title: Overview of Syncfusion SfSchedule control for Xamarin.Forms
 description: Overview of SfSchedule control
-platform: Xamarin.Forms
+platform: xamarin
 control: SfSchedule
 documentation: ug
-
 ---
 
 

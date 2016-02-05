@@ -51,7 +51,7 @@ layer.Markers.Add (marker);
 {% endhighlight %}
 {% endtabs %}
 
-![](Images/Markers.png)  
+![](MapElements_images/markers_xamarin.png)  
 
 
 ## Bubbles
@@ -161,7 +161,7 @@ JSONObject getJsonObject(String state,double population,string name)
 {% endhighlight %}
 {% endtabs %}
 
-![](Images/Bubbles.png)  
+![](MapElements_images/bubble_android.png)  
 
 ## Legend
 
@@ -205,4 +205,4 @@ layer.LegendSetting = legendSetting;
 {% endhighlight %}
 {% endtabs %}
 
-![](Images/Legends.png)  
+![](MapElements_images/legend_xamarin.png)  

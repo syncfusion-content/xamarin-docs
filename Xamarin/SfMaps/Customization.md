@@ -43,7 +43,7 @@ layer.ShapeSettings = setting;
 {% endhighlight %}
 {% endtabs %}
 
-![](Images/Selection.png)  
+![](images/shapesettings_android.png)  
 
 ## Color Mapping
 
@@ -132,7 +132,7 @@ void SetColorMapping(ShapeSetting setting)
 {% endhighlight %}
 {% endtabs %}
 
-![](Images/customization.png)  
+![](images/colormapping_android.png)  
 
 
 ### Color Palette
@@ -156,4 +156,4 @@ layer.ShapeSettings.AutoFillColors = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](Images/palettes.png)  
+![](images/palette_android.png)  

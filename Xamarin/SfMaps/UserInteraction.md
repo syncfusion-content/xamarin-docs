@@ -42,7 +42,7 @@ layer.ShapeSettings = setting;
 {% endhighlight %}
 {% endtabs %}
 
-![](Images/Selection.png)  
+![](images/selection_android.png)  
 
 ## Zooming
 

@@ -25,9 +25,9 @@ XForms\Syncfusion. SfGauge.XForms.dll
 
 ### Android project
 
-Android\Syncfusion. SfGauge.Andriod.dll
+Android\Syncfusion. SfGauge.Android.dll
 
-Android\Syncfusion. SfGauge. XForms.Andriod.dll 
+Android\Syncfusion. SfGauge. XForms.Android.dll 
 
 ### iOS project
 
@@ -463,7 +463,7 @@ N> Assemblies are available in unzipped package location in Mac
 
 Add the following assembly references to the Android project.
 
- android\Syncfusion.SfLinearGauge.Andriod.dll
+ android\Syncfusion.SfLinearGauge.Android.dll
 
 ### Create a Linear Gauge
 

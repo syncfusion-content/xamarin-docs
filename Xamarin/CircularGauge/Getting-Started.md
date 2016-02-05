@@ -40,9 +40,9 @@ pcl\Syncfusion.SfGauge.XForms.dll
 
 ### Android project
 
-android\Syncfusion.SfGauge.Andriod.dll
+android\Syncfusion.SfGauge.Android.dll
 
-android\Syncfusion.SfGauge.XForms.Andriod.dll
+android\Syncfusion.SfGauge.XForms.Android.dll
 
 android\Syncfusion.SfGauge.XForms.dll
 

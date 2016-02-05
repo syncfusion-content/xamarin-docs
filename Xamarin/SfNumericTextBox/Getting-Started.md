@@ -36,7 +36,7 @@ N> Assemblies are available in unzipped package location in Mac.
 Add the following assembly references to the Xamarin project.
 
 
-android\Syncfusion.SfNumericTextBox.Andriod.dll
+android\Syncfusion.SfNumericTextBox.Android.dll
 
 
 
@@ -124,9 +124,9 @@ XForms\Syncfusion.SfNumericTextBox.XForms.dll 
 
 #### Android project
 
-Android\Syncfusion.SfNumericTextBox.Andriod.dll
+Android\Syncfusion.SfNumericTextBox.Android.dll
 
-Android\Syncfusion.SfNumericTextBox.XForms.Andriod.dll
+Android\Syncfusion.SfNumericTextBox.XForms.Android.dll
 
 #### iOS project
 

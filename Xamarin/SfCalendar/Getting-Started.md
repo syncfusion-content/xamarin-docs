@@ -34,9 +34,9 @@ pcl\Syncfusion.SfCalendar.XForm.dll
 
 **Android Project**
 
-android\Syncfusion.SfCalendar.Andriod.dll
+android\Syncfusion.SfCalendar.Android.dll
 
-android\Syncfusion.SfCalendar.xForms.Andriod.dll
+android\Syncfusion.SfCalendar.xForms.Android.dll
 
 **IOS (Classic) Project**
 

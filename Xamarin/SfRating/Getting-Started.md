@@ -27,7 +27,7 @@ Alternatively if you had downloaded Essential Studio from Syncfusion.com or thro
 
 After installing Essential Studio for Xamarin, all the required assemblies can be found in the installation folders, typically
 
-{Syncfusion Installed location}\Essential Studio\12.2.0.40\lib
+{Syncfusion Installed location}\Essential Studio\syncfusionessentialstudio-version\lib
 
 Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\12.2.0.40\lib
 
@@ -48,7 +48,7 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>Android Renderer</td>
-<td>android\Syncfusion.SfRating.Andriod.dll<br/>android\Syncfusion.SfRating.XForms.Andriod.dll</td>
+<td>android\Syncfusion.SfRating.Android.dll<br/>android\Syncfusion.SfRating.XForms.Android.dll</td>
 </tr>
 <tr>
 <td>iOS (Classic) Renderer</td>
@@ -74,7 +74,7 @@ You can then add the assembly references to the respective projects as shown bel
 
 Currently an additional step is required for Windows Phone and iOS projects. We need to create an instance of the rating custom renderer as shown below. 
 
-Create an instance of SfRatingRenderer in MainPage constructor in of the Windows Phone project as shown 
+Create an instance of SfRatingRenderer in MainPage constructor of the Windows Phone project as shown 
 
 {% highlight C# %}
 
@@ -107,8 +107,6 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 }	
 
 {% endhighlight %}
-
-
 
 ## Add and Configure the Rating
 

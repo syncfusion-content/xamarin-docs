@@ -22,7 +22,7 @@ Alternatively if you had downloaded Essential Studio from Syncfusion.com or thro
 
 After installing Essential Studio for Xamarin, all the required assemblies can be found in the installation folders, typically
 
-{Syncfusion Installed location}\Essential Studio\12.2.0.40\lib
+{Syncfusion Installed location}\Essential Studio\syncfusionessentialstudio-version\lib
 
 Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\12.2.0.40\lib
 
@@ -64,37 +64,47 @@ wp8\Syncfusion.SfMaps.WP8.dll
 
 wp8\Syncfusion.SfMaps.XForms.WinPhone.dll
 
+Currently an additional step is required for Windows Phone and iOS projects. We need to create an instance of the maps custom renderer as shown below. 
 
-N> Essential Maps for Xamarin is compatible with Xamarin. Forms v.1.2.3.6257.
-
-Currently an additional step is required for Windows Phone and iOS projects. We need to create an instance of the Maps custom renderer as shown below. 
-
-Create an instance of SfMaps in MainPage constructor in of the Windows Phone project as shown 
-
-{% highlight xaml %}
-
-    <syncfusion:SfMap>                     
-  
-    </syncfusion:SfMap>    
-
-{% endhighlight %}
+Create an instance of SfMapsRenderer in MainPage constructor of the Windows Phone project as shown 
 
 {% highlight C# %}
 
 public MainPage()
+
 {
-    
-    new SfMaps();
-    ...
-            
+
+    new SfMapsRenderer();
+
+    ...    
+
 }
 
 {% endhighlight %}
- 
+
+Create an instance of SfMapsRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below
+
+{% highlight C# %}
+
+public override bool FinishedLaunching(UIApplication app, NSDictionary options)
+
+{
+
+    ...
+
+    new SfMapsRenderer ();
+
+    ...
+
+}	
+
+{% endhighlight %}
 
 ## Initializing Maps   
 
 Create a Maps instance in Main Activity and set Maps as a ContentView in onCreate() overridden method.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -118,6 +128,8 @@ protected override void OnCreate (Bundle savedInstanceState)
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ## Loading Shapes to Maps
 
 The Maps control supports reading and loading shape files. A shape file is a set of files which are stored in a non-topological geometry and the attribute information for the spatial features and records in a data set. 
@@ -129,6 +141,8 @@ A shape file can be a set of files or a single file. Generally, the shape file c
 * dBASE file (.dbf)
 
 These files need to be added in Asset folder.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -157,12 +171,16 @@ protected override void OnCreate (Bundle savedInstanceState)
 
 {% endhighlight %}
 
-![](Getting-Started_images/maps_xamarin.png)
+{% endtabs %}
+
+![](Images/Maps.png)
 
 
 ## Adding Marker to the Maps
 
 Markers can be added into the shape layers. The below code snippets enables you to do so.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -195,4 +213,6 @@ protected override void OnCreate (Bundle savedInstanceState)
 
 {% endhighlight %}
 
-![](Getting-Started_images/markers_xamarin.png) 
+{% endtabs %}
+
+![](Images/Markers.png) 

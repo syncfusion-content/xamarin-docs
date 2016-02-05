@@ -28,17 +28,17 @@ Or after downloading through the Xamarin store web interface, all the required a
 {download location}\syncfusionessentialstudio-version\lib
 You can then add the assembly references to the respective projects as shown below
 
-**PCL Project**
+### PCL Project
 
 pcl\Syncfusion.SfCalendar.XForm.dll
 
-**Android Project**
+### Android Project
 
-android\Syncfusion.SfCalendar.Andriod.dll
+android\Syncfusion.SfCalendar.Android.dll
 
-android\Syncfusion.SfCalendar.xForms.Andriod.dll
+android\Syncfusion.SfCalendar.xForms.Android.dll
 
-**IOS (Classic) Project**
+### iOS (Classic) Project
 
 ios\Syncfusion.SfCalendar.iOS.dll
 
@@ -46,7 +46,7 @@ ios\Syncfusion.SfCalendar.xForms.iOS.dll
 
 ios\Syncfusion.SfCalendar.XForm.dll
 
-**IOS (Unified) Project**
+### iOS (Unified) Project
 
 ios-unified\Syncfusion.SfCalendar.iOS.dll
 
@@ -54,11 +54,47 @@ ios-unified\Syncfusion.SfCalendar.xForms.iOS.dll
 
 ios-unified\Syncfusion.SfCalendar.XForm.dll
 
-**Windows Phone Project**
+### Windows Phone Project
 
 wp8\Syncfusion.SfCalendar.WP8.dll
 
 wp8\Syncfusion.SfCalendar.xForms.WinPhone.dll
+
+Currently an additional step is required for Windows Phone and iOS projects. We need to create an instance of the calendar custom renderer as shown below. 
+
+Create an instance of SfCalendarRenderer in MainPage constructor of the Windows Phone project as shown 
+
+{% highlight C# %}
+
+public MainPage()
+
+{
+
+    new SfCalendarRenderer();
+
+    ...    
+
+}
+
+{% endhighlight %}
+
+Create an instance of SfCalendarRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below
+
+{% highlight C# %}
+
+public override bool FinishedLaunching(UIApplication app, NSDictionary options)
+
+{
+
+    ...
+
+    new SfCalendarRenderer ();
+
+    ...
+
+}	
+
+{% endhighlight %}
 
 ## Add and Configure the Calendar
 

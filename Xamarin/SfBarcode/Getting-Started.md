@@ -45,9 +45,9 @@ pcl\Syncfusion.SfBarcode.XForms.dll
 
 ### Android project
 
-android\Syncfusion.SfBarcode.Andriod.dll
+android\Syncfusion.SfBarcode.Android.dll
 
-android\Syncfusion.SfBarcode.XForms.Andriod.dll
+android\Syncfusion.SfBarcode.XForms.Android.dll
 
 ### iOS (Classic) project
 

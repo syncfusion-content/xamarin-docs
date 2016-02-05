@@ -40,9 +40,9 @@ pcl\Syncfusion.SfSchedule.XForms.dll
 
 ### Android project
 
-android\Syncfusion.SfSchedule.Andriod.dll
+android\Syncfusion.SfSchedule.Android.dll
 
-android\Syncfusion.SfSchedule.XForms.Andriod.dll
+android\Syncfusion.SfSchedule.XForms.Android.dll
 
 ### iOS (Classic) project
 

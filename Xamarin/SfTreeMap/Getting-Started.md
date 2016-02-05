@@ -39,9 +39,9 @@ XForms\Syncfusion.SfTreeMap.XForms.dll
 
 ### Android project:
 
-Android\Syncfusion. SfTreeMap.Andriod.dll
+Android\Syncfusion. SfTreeMap.Android.dll
 
-Android\Syncfusion. SfTreeMap. XForms.Andriod.dll 
+Android\Syncfusion. SfTreeMap. XForms.Android.dll 
 
 ### iOS project:
 

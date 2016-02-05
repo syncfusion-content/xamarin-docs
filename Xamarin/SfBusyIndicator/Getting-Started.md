@@ -25,9 +25,9 @@ XForms\Syncfusion. SfBusyIndicator.XForms.dll 
 
 ### Android project
 
-Android\Syncfusion. SfBusyIndicator.Andriod.dll
+Android\Syncfusion. SfBusyIndicator.Android.dll
 
-Android\Syncfusion. SfBusyIndicator. XForms.Andriod.dll
+Android\Syncfusion. SfBusyIndicator. XForms.Android.dll
 
 ### iOS project
 
@@ -207,7 +207,7 @@ N> Assemblies are available in unzipped package location in Mac
 
 ### Add the following assembly references to the Xamarin project.
 
- [android\Syncfusion.SfBusyIndicator.Andriod.dll]
+ [android\Syncfusion.SfBusyIndicator.Android.dll]
 
 To develop an application with the Xamarin BusyIndicator is simple. The following steps explain how to create and configure its properties.
 

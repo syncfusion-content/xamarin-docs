@@ -34,9 +34,9 @@ pcl\Syncfusion.SfDigitalGauge.XForm.dll
 
 **Android Project**
 
-android\Syncfusion.SfDigitalGauge.Andriod.dll
+android\Syncfusion.SfDigitalGauge.Android.dll
 
-android\Syncfusion.SfDigitalGauge.xForms.Andriod.dll
+android\Syncfusion.SfDigitalGauge.xForms.Android.dll
 
 **IOS (Classic) Project**
 

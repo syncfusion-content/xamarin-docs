@@ -38,9 +38,9 @@ pcl\Syncfusion.SfMaps.XForms.dll
 
 ### Android project
 
-android\Syncfusion.SfMaps.Andriod.dll
+android\Syncfusion.SfMaps.Android.dll
 
-android\Syncfusion.SfMaps.XForms.Andriod.dll
+android\Syncfusion.SfMaps.XForms.Android.dll
 
 ### iOS(Classic) project
 

@@ -43,7 +43,7 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>Android Renderer</td>
-<td>android\Syncfusion.SfAutoComplete.Andriod.dll<br/>android\Syncfusion.SfAutoComplete.XForms.Andriod.dll</td>
+<td>android\Syncfusion.SfAutoComplete.Android.dll<br/>android\Syncfusion.SfAutoComplete.XForms.Android.dll</td>
 </tr>
 <tr>
 <td>iOS (Classic) Renderer</td>

@@ -25,9 +25,9 @@ XForms\Syncfusion. SfRangeSlider.XForms.dll 
 
 ### Android project
 
-Android\Syncfusion. SfRangeSlider.Andriod.dll
+Android\Syncfusion. SfRangeSlider.Android.dll
 
-Android\Syncfusion. SfRangeSlider. XForms.Andriod.dll
+Android\Syncfusion. SfRangeSlider. XForms.Android.dll
 
 ### iOS project
 
@@ -290,7 +290,7 @@ N> Assemblies are available in unzipped package location in Mac
 
 Add the following assembly references to the Xamarin project,
 
-android\Syncfusion.SfRangeSlider.Andriod.dll
+android\Syncfusion.SfRangeSlider.Android.dll
 
 
 ### Create a Rangeslider

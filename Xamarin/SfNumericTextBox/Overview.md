@@ -14,6 +14,7 @@ NumericTextBox is an advanced version of the Entry control that restricts input 
 ![](Overview_images/img1.png)
 
 
+![](images/Overview.png)
 
 ## Key Features
 

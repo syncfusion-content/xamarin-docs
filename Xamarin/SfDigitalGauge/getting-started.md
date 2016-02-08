@@ -16,75 +16,112 @@ This section provides overview for working with Essential DigitalGauge for Xamar
 ## Referencing Essential Studio Components in Your Solution	
 
 If you had acquired Essential Studio components through the Xamarin component store interface from within your IDE, then after adding the components to your Xamarin.iOS, Xamarin.Android and Windows Phone projects through the Component manager, you will still need to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL project in your solution. You can do this by manually adding the relevant PCL assembly references to your PCL project contained in the following path inside of your solution folder.
+
 Components/syncfusionessentialstudio-version/lib/pcl/
 
-Alternatively, if you had downloaded Essential Studio from Syncfusion.com or through the Xamarin store web interface then all assembly references need to be added manually.
+Alternatively if you had downloaded Essential Studio from Syncfusion.com or through the Xamarin store web interface then all assembly references need to be added manually.
 
-After installing Essential Studio for Xamarin, all the required assemblies found in the installation folders, typically
-{Syncfusion Installed location}\Essential Studio\12.2.0.40\lib
+After installing Essential Studio for Xamarin, all the required assemblies can be found in the installation folders, typically
 
-Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\12.2.0.40\lib
+{Syncfusion Installed location}\Essential Studio\syncfusionessentialstudio-version\lib
+
+Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\lib
+
 Or after downloading through the Xamarin store web interface, all the required assemblies can be found in the below folder
-{download location}\syncfusionessentialstudio-version\lib
+
+{Download location}\syncfusionessentialstudio-version\lib
+
 You can then add the assembly references to the respective projects as shown below
 
-**PCL Project**
+<table>
+<tr>
+<th>Project</th>
+<th>Required assemblies</th>
+</tr>
+<tr>
+<td>PCL</td>
+<td>pcl\Syncfusion.SfGauge.XForms.dll</td>
+</tr>
+<tr>
+<td>Android</td>
+<td>android\Syncfusion.SfGauge.Android.dll<br/>android\Syncfusion.SfGauge.XForms.Android.dll</td>
+</tr>
+<tr>
+<td>iOS (Classic)</td>
+<td>ios\Syncfusion.SfGauge.iOS.dll<br/>ios\Syncfusion.SfGauge.XForms.iOS.dll<br/>ios\Syncfusion.SfGauge.XForms.dll</td>
+</tr>
+<tr>
+<td>iOS (Unified)</td>
+<td>ios-unified\Syncfusion.SfGauge.iOS.dll<br/>ios-unified\Syncfusion.SfGauge.XForms.iOS.dll<br/>ios-unified\Syncfusion.SfGauge.XForms.dll</td>
+</tr>
+<tr>
+<td>WindowsPhone</td>
+<td>wp8\Syncfusion.SfGauge.WP8.dll<br/>wp8\Syncfusion.SfGauge.XForms.dll<br/>wp8\Syncfusion.SfGauge.XForms.WinPhone.dll</td>
+</tr>
+<tr>
+<td>WindowsPhone 8.1</td>
+<td>wp81\Syncfusion.SfGauge.WP.dll<br/>wp81\Syncfusion.SfGauge.XForms.dll<br/>wp81\Syncfusion.SfGauge.XForms.WinPhone.dll</td>
+</tr>
+<tr>
+<td>WinRT</td>
+<td>winrt\Syncfusion.SfGauge.WinRT.dll<br/>winrt\Syncfusion.SfGauge.XForms.dll<br/>winrt\Syncfusion.SfGauge.XForms.WinRT.dll</td>
+</tr>
+</table>
 
-pcl\Syncfusion.SfDigitalGauge.XForm.dll
+Currently an additional step is required for Windows Phone, WindowsPhone 8.1, WinRT and iOS projects. We need to create an instance of the digitalgauge custom renderer as shown below. 
 
-**Android Project**
+Create an instance of SfDigitalGaugeRenderer in MainPage constructor of the Windows Phone , WindowsPhone 8.1 and WinRT project as shown 
 
-android\Syncfusion.SfDigitalGauge.Android.dll
+{% highlight C# %}
 
-android\Syncfusion.SfDigitalGauge.xForms.Android.dll
+public MainPage()
 
-**IOS (Classic) Project**
+{
 
-ios\Syncfusion.SfDigitalGauge.iOS.dll
+    new SfDigitalGaugeRenderer();
 
-ios\Syncfusion.SfDigitalGauge.xForms.iOS.dll
+    ...    
 
-ios\Syncfusion.SfDigitalGauge.XForm.dll
+}
 
-**IOS (Unified) Project**
+{% endhighlight %}
 
-ios-unified\Syncfusion.SfDigitalGauge.iOS.dll
+Create an instance of SfDigitalGaugeRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below
 
-ios-unified\Syncfusion.SfDigitalGauge.xForms.iOS.dll
+{% highlight C# %}
 
-ios-unified\Syncfusion.SfDigitalGauge.XForm.dll
+public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
-**Windows Phone Project**
+{
 
-wp8\Syncfusion.SfDigitalGauge.WP8.dll
+    ...
 
-wp8\Syncfusion.SfDigitalGauge.xForms.WinPhone.dll
+    new SfDigitalGaugeRenderer ();
+
+    ...
+
+}	
+
+{% endhighlight %}
 
 ## Add and Configure the DigitalGauge
 
-* Adding reference to digitalGauge.
+The DigitalGauge control is configured entirely in C# code or by using XAML markup. The following steps explain on how to create a DigitalGauge and configure its elements,
 
-{% highlight c# %}
+* Create an instance for digitalgauge control.
 
-	using Syncfusion.SfDigitalGauge.XForms;
+{% highlight C# %}
 
-{% endhighlight %}
-
-* Create an instance of SfDigitalGauge.
-
-{% highlight c# %}
-
-	SfDigitalGauge sfDigitalGauge=new SfDigitalGauge();
-	SetContentView(countryAutoComplete);
+	SfDigitalGauge sfdigitalgauge = new SfDigitalGauge(); 
 
 {% endhighlight %}
 
-## Configure the properties of DigitalGauge.
+* Configure the properties of DigitalGauge.
 
 {% highlight c# %}
 
 	SfDigitalGauge sfDigitalGauge = new SfDigitalGauge ();
-	sfDigitalGauge.Value =  DateTime.Now.ToString ("HH mm ss");;
+	sfDigitalGauge.Value =  DateTime.Now.ToString ("HH mm ss");
 	sfDigitalGauge.CharacterHeight = 50;
 	sfDigitalGauge.CharacterWidth= 25;
 	sfDigitalGauge.SegmentStrokeWidth = 3;
@@ -96,4 +133,12 @@ wp8\Syncfusion.SfDigitalGauge.xForms.WinPhone.dll
 
 {% endhighlight %}
 
+## Setting Value
 
+* The `Value` property sets the display value in the digitalgauge.
+
+{% highlight C# %}
+
+    sfDigitalGauge.Value =  DateTime.Now.ToString ("HH mm ss");
+
+{% endhighlight %}

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Getting Started with Syncfusion Calendar control for Xamarin.Forms
 description: A quick tour to initial users on Syncfusion calendar control for Xamarin.Forms platform
@@ -13,56 +13,64 @@ This section explains you the steps to configure a Calendar control in a real-
 
 ![](images/gettingstarted.png)
 
-## Referencing Essential Studio Components in Your Solution	
+## Referencing Essential Studio components in your solution
 
 If you had acquired Essential Studio components through the Xamarin component store interface from within your IDE, then after adding the components to your Xamarin.iOS, Xamarin.Android and Windows Phone projects through the Component manager, you will still need to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL project in your solution. You can do this by manually adding the relevant PCL assembly references to your PCL project contained in the following path inside of your solution folder.
+
 Components/syncfusionessentialstudio-version/lib/pcl/
 
-Alternatively, if you had downloaded Essential Studio from Syncfusion.com or through the Xamarin store web interface then all assembly references need to be added manually.
+Alternatively if you had downloaded Essential Studio from Syncfusion.com or through the Xamarin store web interface then all assembly references need to be added manually.
 
-After installing Essential Studio for Xamarin, all the required assemblies found in the installation folders, typically
-{Syncfusion Installed location}\Essential Studio\12.2.0.40\lib
+After installing Essential Studio for Xamarin, all the required assemblies can be found in the installation folders, typically
 
-Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\12.2.0.40\lib
+{Syncfusion Installed location}\Essential Studio\syncfusionessentialstudio-version\lib
+
+Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\lib
+
 Or after downloading through the Xamarin store web interface, all the required assemblies can be found in the below folder
-{download location}\syncfusionessentialstudio-version\lib
+
+{Download location}\syncfusionessentialstudio-version\lib
+
 You can then add the assembly references to the respective projects as shown below
 
-### PCL Project
+<table>
+<tr>
+<th>Project</th>
+<th>Required assemblies</th>
+</tr>
+<tr>
+<td>PCL</td>
+<td>pcl\Syncfusion.SfCalendar.XForms.dll</td>
+</tr>
+<tr>
+<td>Android</td>
+<td>android\Syncfusion.SfCalendar.Android.dll<br/>android\Syncfusion.SfCalendar.XForms.Android.dll</td>
+</tr>
+<tr>
+<td>iOS (Classic)</td>
+<td>ios\Syncfusion.SfCalendar.iOS.dll<br/>ios\Syncfusion.SfCalendar.XForms.iOS.dll<br/>ios\Syncfusion.SfCalendar.XForms.dll</td>
+</tr>
+<tr>
+<td>iOS (Unified)</td>
+<td>ios-unified\Syncfusion.SfCalendar.iOS.dll<br/>ios-unified\Syncfusion.SfCalendar.XForms.iOS.dll<br/>ios-unified\Syncfusion.SfCalendar.XForms.dll</td>
+</tr>
+<tr>
+<td>WindowsPhone</td>
+<td>wp8\Syncfusion.SfInput.WP8.dll<br/>wp8\Syncfusion.SfShared.WP8.dll<br/>wp8\Syncfusion.SfCalendar.XForms.dll<br/>wp8\Syncfusion.SfCalendar.XForms.WinPhone.dll</td>
+</tr>
+<tr>
+<td>WindowsPhone 8.1</td>
+<td>wp81\Syncfusion.SfInput.WP.dll<br/>wp81\Syncfusion.SfShared.WP.dll<br/>wp81\Syncfusion.SfCalendar.XForms.dll<br/>wp81\Syncfusion.SfCalendar.XForms.WinPhone.dll</td>
+</tr>
+<tr>
+<td>WinRT</td>
+<td>winrt\Syncfusion.SfInput.WinRT.dll<br/>winrt\Syncfusion.SfShared.WinRT.dll<br/>winrt\Syncfusion.SfCalendar.XForms.dll<br/>winrt\Syncfusion.SfCalendar.XForms.WinRT.dll</td>
+</tr>
+</table>
 
-pcl\Syncfusion.SfCalendar.XForm.dll
+Currently an additional step is required for Windows Phone, WindowsPhone 8.1, WinRT and iOS projects. We need to create an instance of the calendar custom renderer as shown below. 
 
-### Android Project
-
-android\Syncfusion.SfCalendar.Android.dll
-
-android\Syncfusion.SfCalendar.xForms.Android.dll
-
-### iOS (Classic) Project
-
-ios\Syncfusion.SfCalendar.iOS.dll
-
-ios\Syncfusion.SfCalendar.xForms.iOS.dll
-
-ios\Syncfusion.SfCalendar.XForm.dll
-
-### iOS (Unified) Project
-
-ios-unified\Syncfusion.SfCalendar.iOS.dll
-
-ios-unified\Syncfusion.SfCalendar.xForms.iOS.dll
-
-ios-unified\Syncfusion.SfCalendar.XForm.dll
-
-### Windows Phone Project
-
-wp8\Syncfusion.SfCalendar.WP8.dll
-
-wp8\Syncfusion.SfCalendar.xForms.WinPhone.dll
-
-Currently an additional step is required for Windows Phone and iOS projects. We need to create an instance of the calendar custom renderer as shown below. 
-
-Create an instance of SfCalendarRenderer in MainPage constructor of the Windows Phone project as shown 
+Create an instance of SfCalendarRenderer in MainPage constructor of the Windows Phone , WindowsPhone 8.1 and WinRT project as shown 
 
 {% highlight C# %}
 
@@ -111,41 +119,49 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {% highlight c# %}
 
 	SfCalendar sfCalendar=new SfCalendar();
-	SetContentView(sfCalendar);
 	
 {% endhighlight %}
 
-## Calendar Customization
+## Enabling Multiple Selection 
+
+To enable multiple selection, Change the selection type using `SelectionMode` property. Check the [Selection Mode](http://help.syncfusion.com/android/sfcalendar/selectionmode)  section for more details.
 
 {% highlight c# %}
-	
-	SfCalendar sfCalendar = new SfCalendar ();
-	sfCalendar.ViewMode=ViewMode.MonthView;
-	DateTime d1=new DateTime(2015,1,1);
-	sfCalendar.MinDate=mindate;
-	DateTime d2=new DateTime(2040,12,12);
-	sfCalendar.MaxDate=d2;
-	sfCalendar.SelectionMode=SelectionMode.SingleSelection;
-	List<DateTime> black_dates = new List<DateTime>();
-	black_dates.Add (new DateTime(2015,11,3));
-	black_dates.Add (new DateTime(2015,11,7));
-	black_dates.Add (new DateTime(2015,11,15));
-	black_dates.Add (new DateTime(2015,11,16));
-	black_dates.Add (new DateTime(2015,11,26));
-	black_dates.Add (new DateTime(2015,11,30));
-	sfCalendar.BlackoutDates= black_dates ;
-	sfCalendar.ShowInlineEvents=True;
-	sfCalendar.Locale= new System.Globalization.CultureInfo("zh-CN");
-	sfCalendar.TransitionMode=TransitionMode.Float;
-	//MonthView Setting
-	MonthViewSettings monthViewSettings = new MonthViewSettings();
-	monthViewSettings.TodayTextColor=Color.ParseColor("#1B79D6");
-	monthViewSettings.InlineBackgroundColor=Color.ParseColor("#E4E8ED");
-	monthViewSettings.SetWeekDayBackGroundColor(Color.ParseColor("#F7F7F7"));
-	sfCalendar.MonthViewSettings=monthViewSettings;
-	
+
+	SfCalendar calendar = new SfCalendar (this);
+	calendar.SelectionMode=SelectionMode.MultiSelection;
+
 {% endhighlight %}
 
+## Setting blackout dates
+
+Add the dates into `BlackOutDates` property, that needs to be disabled among visible dates. Check the [BlackOutDates](http://help.syncfusion.com/android/sfcalendar/blackoutdates) section for more details.
+
+For instance add all the holiday dates to blackout dates property.
+
+{% highlight c# %}
+
+	SfCalendar  calendar = new SfCalendar (this);
+	List<DateTime> black_dates = new List<DateTime>();
+	for (int i = 0; i < 5; i++)
+	{
+		DateTime date = DateTime.Now.Date.AddDays(i+7);
+		black_dates.Add(date);
+    }
+	calendar.BlackoutDates = black_dates;
 
 
+{% endhighlight %}
 
+## Restricting Dates
+
+Set `MinDate` and `MaxDate` property to limit visible dates range. Check the [Min Max dates](http://help.syncfusion.com/android/sfcalendar/datenavigation-and-gesture#min-max-dates) section for more details.
+
+{% highlight c# %}
+
+	SfCalendar  calendar = new SfCalendar (this);
+	calendar.MinDate = new DateTime(2014,4,1);
+	calendar.MaxDate = new DateTime(2018,4,1);
+
+
+{% endhighlight %}

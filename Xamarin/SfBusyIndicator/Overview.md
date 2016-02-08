@@ -13,6 +13,7 @@ The Busy Indicator control enables you to know when the application is busy. SfB
 
 ![](Overview_images/img1.png)
 
+![](images/overview.png)
 
 ## Key Features
 

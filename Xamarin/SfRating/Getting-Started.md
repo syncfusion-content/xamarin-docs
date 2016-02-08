@@ -1,4 +1,4 @@
----
+﻿---
 
 layout: post
 title: Getting Started with Syncfusion Rating control for Xamarin.Forms
@@ -29,7 +29,7 @@ After installing Essential Studio for Xamarin, all the required assemblies can b
 
 {Syncfusion Installed location}\Essential Studio\syncfusionessentialstudio-version\lib
 
-Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\12.2.0.40\lib
+Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\lib
 
 Or after downloading through the Xamarin store web interface, all the required assemblies can be found in the below folder
 
@@ -43,38 +43,38 @@ You can then add the assembly references to the respective projects as shown bel
 <th>Required assemblies</th>
 </tr>
 <tr>
-<td>Pcl</td>
+<td>PCL</td>
 <td>pcl\Syncfusion.SfRating.XForms.dll</td>
 </tr>
 <tr>
-<td>Android Renderer</td>
+<td>Android</td>
 <td>android\Syncfusion.SfRating.Android.dll<br/>android\Syncfusion.SfRating.XForms.Android.dll</td>
 </tr>
 <tr>
-<td>iOS (Classic) Renderer</td>
+<td>iOS (Classic)</td>
 <td>ios\Syncfusion.SfRating.iOS.dll<br/>ios\Syncfusion.SfRating.XForms.iOS.dll<br/>ios\Syncfusion.SfRating.XForms.dll</td>
 </tr>
 <tr>
-<td>iOS (Unified)  Renderer</td>
-<td>ios-unified\Syncfusion.SfRating.iOS.dll<br/>ios-unified\Syncfusion.SfRating.XForms.iOS.dll<br/>ios-unified\SyncfusionSfRating.XForms.dll</td>
+<td>iOS (Unified)</td>
+<td>ios-unified\Syncfusion.SfRating.iOS.dll<br/>ios-unified\Syncfusion.SfRating.XForms.iOS.dll<br/>ios-unified\Syncfusion.SfRating.XForms.dll</td>
 </tr>
 <tr>
-<td>WindowsPhone Renderer</td>
+<td>WindowsPhone</td>
 <td>wp8\Syncfusion.SfInput.WP8.dll<br/>wp8\Syncfusion.SfShared.WP8.dll<br/>wp8\Syncfusion.SfRating.XForms.dll<br/>wp8\Syncfusion.SfRating.XForms.WinPhone.dll</td>
 </tr>
 <tr>
-<td>WindowsPhone 8.1 Renderer</td>
+<td>WindowsPhone 8.1</td>
 <td>wp81\Syncfusion.SfInput.WP.dll<br/>wp81\Syncfusion.SfShared.WP.dll<br/>wp81\Syncfusion.SfRating.XForms.dll<br/>wp81\Syncfusion.SfRating.XForms.WinPhone.dll</td>
 </tr>
 <tr>
-<td>WinRT Renderer</td>
+<td>WinRT</td>
 <td>winrt\Syncfusion.SfInput.WinRT.dll<br/>winrt\Syncfusion.SfShared.WinRT.dll<br/>winrt\Syncfusion.SfRating.XForms.dll<br/>winrt\Syncfusion.SfRating.XForms.WinRT.dll</td>
 </tr>
 </table>
 
-Currently an additional step is required for Windows Phone and iOS projects. We need to create an instance of the rating custom renderer as shown below. 
+Currently an additional step is required for Windows Phone, WindowsPhone 8.1, WinRT and iOS projects. We need to create an instance of the rating custom renderer as shown below. 
 
-Create an instance of SfRatingRenderer in MainPage constructor of the Windows Phone project as shown 
+Create an instance of SfRatingRenderer in MainPage constructor of the Windows Phone , WindowsPhone 8.1 and WinRT project as shown 
 
 {% highlight C# %}
 

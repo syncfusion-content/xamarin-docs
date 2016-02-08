@@ -17,11 +17,11 @@ Header support allows you to show text, an image, or any UI content inside the G
 
 ###  Header
 
-The **Header** is an object that can be used to set a unique header for the Circular Gauge. You can add text as headers in a circular gauge,multiple headers can be added in a circular gauge.
+The `Header` can be used to set a unique header for the Circular Gauge. You can add text as headers in a circular gauge,multiple headers can be added in a circular gauge.
 
 ####  Position
 
-This property places the header in a circular gauge. The value for **Position** should be specified in offset value. By default, it is placed at (50, 70).
+This property places the header in a circular gauge. The value for `Position` should be specified in offset value. By default, it is placed at (50, 70).
 
 {% highlight c# %}
 

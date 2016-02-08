@@ -182,7 +182,7 @@ You can also add recursive appointments to Schedule, refer [Recurrence](/xamarin
 
 ## Enabling Appointments Inline
 
-When the schedule appointments are viewed in Monthview, it will not display much information about the appointments, you can view the appointments in inline by setting `ShowAppointmentsInline` property of MonthViewSettings as True.
+When the schedule appointments are viewed in Monthview, it will not display much information about the appointments, you can view the appointments in inline by setting `ShowAppointmentsInline` property of `MonthViewSettings` as `True`.
 
 {% highlight c# %}
 

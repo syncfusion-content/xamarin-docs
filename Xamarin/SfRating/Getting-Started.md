@@ -1,4 +1,4 @@
-﻿---
+---
 
 layout: post
 title: Getting Started with Syncfusion Rating control for Xamarin.Forms

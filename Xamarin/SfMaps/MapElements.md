@@ -173,11 +173,11 @@ The Legends can be made visible by setting the `ShowLegend` property of LegendSe
 
 ## Positioning of the Legend
 
-Based on the margin values of X and Y-axes, the Map legends can be positioned with the support of `LegendPosition` property in LegendSetting class
+Based on the margin values of X and Y-axes, the Map legends can be positioned with the support of `LegendPosition` property in `LegendSetting` class
 
 ### Legend Icon Size
 
-The map legend icon size can be modified by using the `IconHeight` and `IconWidth` properties in `LegendSettings`
+The map legend icon size can be modified by using the `IconHeight` and `IconWidth` properties in `LegendSetting`
 
 Refer Equal color mapping code for legend support
 

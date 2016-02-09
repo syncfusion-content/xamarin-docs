@@ -1,172 +1,97 @@
 ---
 layout: post
-title: Getting Started | SfNumericTextBox | Xamarin | Syncfusion
-description: getting started
-platform: xamarin
-control: SfNumericTextBox 
+title: Getting Started with Syncfusion NumericTextBox control for Xamarin.Forms 
+description: A quick tour to initial users on Syncfusion numerictextbox control for Xamarin.Forms platform
+platform: Xamarin.Forms
+control: NumericTextBox
 documentation: ug
 ---
 
 # Getting Started
 
-This section explains how to configure the NumericTextBox in the following three platforms.
-
-* Create your first NumericTextBox in Xamarin.Android.
-* Create your first NumericTextBox in Xamarin.iOS.
-* Create your first NumericTextBox in Xamarin.Forms.
-
-## Create your first NumericTextBox in Xamarin.Android
-
-This section encompasses how to create the NumericTextBox that lets you to enter values in an efficient way. You can also 
-display numbers in the format of its mentioned culture. In this instance, how to create a NumericTextBox and to use its several 
-features have been demonstrated.
-
-
-
-### Add Syncfusion assembly reference
-
-After installing the Essential StudioforXamarin, you can find all the required assemblies in the following installed folders,
-
-{Syncfusion Installed location}\Essential Studio\{version number}\lib
-
-
-N> Assemblies are available in unzipped package location in Mac.
-
-
-Add the following assembly references to the Xamarin project.
-
-
-android\Syncfusion.SfNumericTextBox.Android.dll
-
-
-
-
-![](Create-your-first-NumericTextBox-in-XamarinAndroid_images/img2.png)
-
-
-
-
-
-### Create a NumericTextBox
-
-To develop an application with the Android NumericTextBox is simple. The following steps explain how to create and configure its properties.
-
-Create an instance for the SfNumericTextBox in the constructor and set that SfNumericTextBox as content view of Activity. 
-
-{% highlight C# %}  
-
-
-
-SfNumericTextBox numtext=new SfNumericTextBox(this);
-
-SetContentView(numtext);
-
-{% endhighlight %} 
-
-### Configure the NumericTextBox
-
-You can set the initial value and numberformat for the NumericTextBox by using the value and formatString properties in the NumericTextBox. 
-
-{% highlight C# %}  
-
-
-
-numtext.Value=123.45;
-
-numtext.FormatString=”n”;
-
-numtext.MaximumNumberDecimalDigits=2;
-
-{% endhighlight %} 
-
-The above code example illustrates the value and formatstring of the NumericTextBox. The MaximumNumberDecimalDigits can be specified to determine the digits after the decimal.
-
-
-
-### Adding ParsingMode
-
-Value of the NumericTextBox gets parsed based on the ParsingMode property. ParsingMode is of type Parsers that is the enum of Double and Decimal.
-
-{% highlight C# %}  
-
-
-
-numtext.Value=123.45;
-
-numtext.ParsingMode=Parsers.Decimal
-
-{% endhighlight %} 
-
-![](Create-your-first-NumericTextBox-in-XamarinAndroid_images/img3.png)
-
-
-
-
-
-![](Create-your-first-NumericTextBox-in-XamarinAndroid_images/img4.png)
-
-
-## Create your first NumericTextBox in Xamarin.Forms
-
-This section provides a quick overview for working with the Essential NumericTextBox for Xamarin.Forms.
-
-### Add Syncfusion assembly reference
-
-Add the required Syncfusionassembly references to the respective projects as follows. Refer to the following installed location for the required assemblies:
-
-{Syncfusion Installed location}\Essential Studio\(version)\lib
-
-Example: C:\Program Files (x86)\Syncfusion\Essential Studio\(version)\lib
-
-#### PCL project
-
-XForms\Syncfusion.SfNumericTextBox.XForms.dll 
-
-#### Android project
-
-Android\Syncfusion.SfNumericTextBox.Android.dll
-
-Android\Syncfusion.SfNumericTextBox.XForms.Android.dll
-
-#### iOS project
-
-iOS\Syncfusion.SfNumericTextBox.iOS.dll  
-
-iOS\Syncfusion.SfNumericTextBox.XForms.iOS.dll
-
-#### Windows Phone project
-
-WinPhone\Syncfusion. SfInput.WP8.dll
-
-WinPhone\Syncfusion.SfNumericTextBox.XForms.WinPhone.dll
-
-WinPhone\Syncfusion. SfShared.WP8.dll
-
-
-N> Essential  NumericTextBox  for Xamarin is compatible with Xamarin Forms 1.3.
-
-
-
-An additional step is required for Windows Phone and iOS projects. Create an instance of the SfNumericTextBoxRenderer in the MainPage constructor in Windows Phone project as follows.
-
-{% highlight C# %}  
+This section provides overview for working with Essential NumericTextBox for Xamarin.Forms. You can walk through the entire process of creating an NumericTextBox.
+
+![](images/gettingstarted.png)
+
+## Referencing Essential Studio Components in Your Solution	
+
+If you had acquired Essential Studio components through the Xamarin component store interface from within your IDE, then after adding the components to your Xamarin.iOS, Xamarin.Android and Windows Phone projects through the Component manager, you will still need to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL project in your solution. You can do this by manually adding the relevant PCL assembly references to your PCL project contained in the following path inside of your solution folder.
+
+Components/syncfusionessentialstudio-version/lib/pcl/
+
+Alternatively if you had downloaded Essential Studio from Syncfusion.com or through the Xamarin store web interface then all assembly references need to be added manually.
+
+After installing Essential Studio for Xamarin, all the required assemblies can be found in the installation folders, typically
+
+{Syncfusion Installed location}\Essential Studio\syncfusionessentialstudio-version\lib
+
+Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\lib
+
+Or after downloading through the Xamarin store web interface, all the required assemblies can be found in the below folder
+
+{Download location}\syncfusionessentialstudio-version\lib
+
+You can then add the assembly references to the respective projects as shown below
+
+<table>
+<tr>
+<th>Project</th>
+<th>Required assemblies</th>
+</tr>
+<tr>
+<td>PCL</td>
+<td>pcl\Syncfusion.SfNumericTextBox.XForms.dll</td>
+</tr>
+<tr>
+<td>Android</td>
+<td>android\Syncfusion.SfNumericTextBox.Android.dll<br/>android\Syncfusion.SfNumericTextBox.XForms.Android.dll</td>
+</tr>
+<tr>
+<td>iOS (Classic)</td>
+<td>ios\Syncfusion.SfNumericTextBox.iOS.dll<br/>ios\Syncfusion.SfNumericTextBox.XForms.iOS.dll<br/>ios\Syncfusion.SfNumericTextBox.XForms.dll</td>
+</tr>
+<tr>
+<td>iOS (Unified)</td>
+<td>ios-unified\Syncfusion.SfNumericTextBox.iOS.dll<br/>ios-unified\Syncfusion.SfNumericTextBox.XForms.iOS.dll<br/>ios-unified\Syncfusion.SfNumericTextBox.XForms.dll</td>
+</tr>
+<tr>
+<td>WindowsPhone</td>
+<td>wp8\Syncfusion.SfInput.WP8.dll<br/>wp8\Syncfusion.SfShared.WP8.dll<br/>wp8\Syncfusion.SfNumericTextBox.XForms.dll<br/>wp8\Syncfusion.SfNumericTextBox.XForms.WinPhone.dll</td>
+</tr>
+<tr>
+<td>WindowsPhone 8.1</td>
+<td>wp81\Syncfusion.SfInput.WP.dll<br/>wp81\Syncfusion.SfShared.WP.dll<br/>wp81\Syncfusion.SfNumericTextBox.XForms.dll<br/>wp81\Syncfusion.SfNumericTextBox.XForms.WinPhone.dll</td>
+</tr>
+<tr>
+<td>WinRT</td>
+<td>winrt\Syncfusion.SfInput.WinRT.dll<br/>winrt\Syncfusion.SfShared.WinRT.dll<br/>winrt\Syncfusion.SfNumericTextBox.XForms.dll<br/>winrt\Syncfusion.SfNumericTextBox.XForms.WinRT.dll</td>
+</tr>
+</table>
+
+Currently an additional step is required for Windows Phone, WindowsPhone 8.1, WinRT and iOS projects. We need to create an instance of the numeric custom renderer as shown below. 
+
+Create an instance of SfNumericTextBoxRenderer in MainPage constructor of the Windows Phone , WindowsPhone 8.1 and WinRT project as shown 
+
+{% highlight C# %}
 
 public MainPage()
+
 {
 
-    new SfNumericTextBoxRenderer ();
+    new SfNumericTextBoxRenderer();
 
     ...    
 
 }
-		
-{% endhighlight %} 
 
-Create an instance of the SfNumericTextBoxRenderer in the FinishedLaunching overridden method of the AppDelegate class in the iOS Project as follows.
+{% endhighlight %}
+
+Create an instance of SfNumericTextBoxRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below
 
 {% highlight C# %}
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
+
 {
 
     ...
@@ -175,181 +100,40 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
     ...
 
-}
-
-{% endhighlight %} 
-
-
-### Create a NumericTextBox
-
-The NumericTextBox control is configured entirely in the C# code or by using the XAML markup.
-
-Create an instance of the SfNumericTextBox.
-
-{% tabs %}   
-
-{% highlight C# %}  
-
-// Update App.cs source in this file.
-
-using Syncfusion.XForms.SfNumericTextBox;
-
-…
-
-…
-
-public class App : Application
-{
-
-public App()
-{
-	MainPage = new NumericTextBoxPage ();
-}
-
-}
-
-public class NumericTextBoxPage : ContentPage
-{
-
-SfNumericTextBox sfnumerictextbox;
-public NumericTextBoxPage ()
-{        
-	sfnumerictextbox = new SfNumericTextBox();
-}
-
-}
-
-{% endhighlight %} 
-
-{% highlight xaml %} 
-
-Use this in App.CS source.
-
-<?xml version="1.0" encoding="UTF-8"?>
- <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" BackgroundColor="White" 
-   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="NumericTextBoxGettingStarted.NumericTextBoxPage"
-   xmlns:syncfusion="clr-namespace:Syncfusion.SfNumericTextBox.XForms;assembly=Syncfusion.SfNumericTextBox.XForms"> 
-	  <ContentPage.Content>
-			<syncfusion:SfNumericTextBox />
-	  </ContentPage.Content>
- </ContentPage> 
- </ContentPage.Content>
- </ContentPage>
+}	
 
 {% endhighlight %}
 
-{% endtabs %} 
+## Adding and Configuring the NumericTextBox
 
-### Configure the NumericTextBox
+* Adding reference to numerictextbox.
 
-Add the NumericTextBox properties in your application.
+{% highlight c# %}
 
-{% tabs %}   
+	using Syncfusion.SfNumericTextBox.XForms;
 
-{% highlight C# %} 
+{% endhighlight %}
 
-SfNumericTextBox sfnumerictextbox = new SfNumericTextBox();
+* Create an instance of NumericTextBox.
 
-sfnumerictextbox.Value= 1000;
+{% highlight c# %}
 
-sfnumerictextbox.FormatString= “c”;
+	SfNumericTextBox sfNumericTextBox=new SfNumericTextBox();
 
-sfnumerictextbox.AllowNull= true;
+{% endhighlight %}
 
-sfnumerictextbox.MaximumNumberDecimalDigits= 2;
+* Configure the properties of NumericTextBox.
 
-{% endhighlight %} 
- 
-{% highlight xaml %} 
+{% highlight c# %}
 
-<syncfusion:SfNumericTextBox HeightRequest="100"  Value="1000"  Orientation="Horizontal" 
-	
-	WidthRequest="200" FormatString=”C” AllowNull=”true” MaximumNumberDecimalDigits=”2”>
+	SfNumericTextBox sfNumericTextBox = new SfNumericTextBox ();
+	sfNumericTextBox.Value = 1000;
+	sfNumericTextBox.Watermark = "Principal Amount";
+	sfNumericTextBox.MaximumNumberDecimalDigits = 2;
+	sfNumericTextBox.FormatString = "c";
+	sfNumericTextBox.AllowNull = true;
+	sfNumericTextBox.Culture = new System.Globalization.CultureInfo("fr-FR");
 
-</syncfusion:SfNumericTextBox> 
-
-{% endhighlight %} 
-
-{% endtabs %} 
-
-The following screenshot shows the NumericTextBox in cross platforms.
+{% endhighlight %}
 
 
-![](Create-your-first-NumericTextBox-in-XamarinForms_images/img2.png)
-
-## Create your first NumericTextBox in Xamarin.iOS
-
-This section encompasses how to create the NumericTextBox that lets you enter values in an efficient way. You can also display numbers in the format of its mentioned culture. In this instance, how to create a NumericTextBox and to use its several features have been demonstrated.
-
-### Add Syncfusion assembly reference
-
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the following installed folders:
-
- {Syncfusion Installed location}\Essential Studio\{version number}\lib
-
-
-N> Assemblies are available in unzipped package location in Mac.
-
-Add the following assembly references to the iOS project.
-
-iOS\Syncfusion.SfNumericTextBox.iOS.dll
-
-### Creating a NumericTextBox
-
-To develop an application with the iOS NumericTextBox is simple. The following steps explain how to create and configure its properties.
-
-Create an instance for the SfNumericTextBox in the constructor and set that SfNumericTextBox as the content view of Activity. 
-
-
-
-{% highlight C# %}  
-
-public override void ViewDidLoad ()
-{
-
-  base.ViewDidLoad   ();
-
-  SFNumericTextBox numericTextBox1;
-
-  numericTextBox1.Frame = new CGRect (200, 120, 100, 40)]
-
-  }
-
-{% endhighlight %} 
-
-### Configure the NumericTextBox
-
-You can set the initial value and numberformat for the NumericTextBox by using the value and formatString properties in the NumericTextBox. 
-
-{% highlight C# %}  
-
-numericTextBox1.Value = 1000;
-
-numericTextBox1.FormatString=”n”;
-
-numericTextBox1.MaximumNumberDecimalDigits = 2;
-
-{% endhighlight %} 
-
-The above code example illustrates the value and formatstring of the NumericTextBox. The MaximumNumberDecimalDigits can be specified to determine the digits after the decimal.
-
-
-![](Create-your-first-NumericTextBox-in-XamariniOS_images/img2.png)
-
-
-
-### Adding ParsingMode
-
-Value of the NumericTextBox gets parsed based on the ParsingMode property. ParsingMode is of type Parsers that is the enum of
- Double and Decimal.
-
-{% highlight C# %} 
-
-numericTextBox1.ParserMode = SFNumericTextBoxParsers.Decimal;
-
-{% endhighlight %} 
-
-![](Create-your-first-NumericTextBox-in-XamariniOS_images/img3.png)
-
-
-![](Create-your-first-NumericTextBox-in-XamariniOS_images/img4.png)

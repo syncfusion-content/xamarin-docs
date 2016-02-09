@@ -10,6 +10,7 @@ documentation: ug
 # Overview
 
 Essential Linear Gauge for Xamarin.Forms allows you to visualize values on a linear scale. The appearance of the Linear Gauge is customized to integrate with your applications.
+![](images/overview.png)
 
 ## Key Features
 

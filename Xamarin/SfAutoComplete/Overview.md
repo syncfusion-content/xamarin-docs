@@ -10,6 +10,7 @@ documentation : ug
 # Overview
 
 The Essential Xamarin AutoComplete widget enables user to provide their input with help of predefined list. Also provides support to append suggestions based on input and filter the matching data in dropdown.
+![](images/overview.png)
 
 ## Key Features
 
@@ -18,5 +19,4 @@ The Essential Xamarin AutoComplete widget enables user to provide their input wi
 * `Suggestion Mode` - Provides various options to decide the filter data to be displayed.
 
 * `Watermark` - Provides a hint to start with input.
-
 

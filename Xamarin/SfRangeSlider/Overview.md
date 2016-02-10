@@ -14,7 +14,7 @@ RangeSlider control allows you to select the range of value within the specified
 ![](Overview_images/img1.png)
 
 
-![](images/overview.png)
+
 
 ## Key Features
 

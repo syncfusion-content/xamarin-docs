@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains how to create the LinearGauge and configure its properties.This section provides overview for working with LinearGauge for Xamarin.Forms. It walks through the entire process of creating a LinearGauge.
 
-![](images/LinearGauge.png)
+![](images/gettingstarted.png)
 
 ## Referencing Essential Studio Components in Your Solution	
 

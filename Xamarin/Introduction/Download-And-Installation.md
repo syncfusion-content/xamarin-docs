@@ -19,11 +19,11 @@ Following are the step by step instructions for configuring Syncfusion Nuget pac
 
 1. Click on the drop-down tool at the right corner of the Packages item in your project, then select Add Packages…
 
-![](images/img1.png)
+   ![](images/img1.png)
 
 2. Next, in the drop-down that appears in the left corner of Add Packages window, select Configure Sources.
 
-![](images/img2.png)
+   ![](images/img2.png)
 
 3. Next, click on the Add button in the window that appears now. Enter the following details in the Add Package Source dialog.
 
@@ -35,11 +35,11 @@ Following are the step by step instructions for configuring Syncfusion Nuget pac
 
 N> If you have already downloaded the NuGet package from Syncfusion website, enter the local path in the **URL** field. 
 
-![](images/img3.png)
+   ![](images/img3.png)
 
 4. Next, open Add Packages window by following step 1 and 2, then select Syncfusion (The package name specified in Step 3) as the source from the drop-down that appears at the top-left corner of the window.  You can now select from the list of Syncfusion’s components displayed in the window.
 
-![](images/img4.png)
+   ![](images/img4.png)
 
 ## Install Syncfusion’s NuGet in Visual Studio
 

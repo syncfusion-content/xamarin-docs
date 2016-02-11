@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains you the steps to configure a RangeSlider control in a real-time scenario and also provides a walk-through on some of the customization features available in RangeSlider control.
 
-![](images/RangeSlider.png)
+![](Getting-Started_images/img2.png)
 
 ## Referencing Essential Studio Components in Your Solution	
 

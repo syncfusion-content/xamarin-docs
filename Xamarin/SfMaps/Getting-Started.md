@@ -67,9 +67,9 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 </table>
 
-Currently an additional step is required for Windows Phone and iOS projects. We need to create an instance of the maps custom renderer as shown below. 
+Currently an additional step is required for Windows Phone, WindowsPhone 8.1, WinRT and iOS projects. We need to create an instance of the maps custom renderer as shown below. 
 
-Create an instance of SfMapsRenderer in MainPage constructor of the Windows Phone , WindowsPhone 8.1 and WinRT project as shown 
+Create an instance of SfMapsRenderer in MainPage constructor of the Windows Phone, WindowsPhone 8.1 and WinRT project as shown 
 
 {% highlight C# %}
 

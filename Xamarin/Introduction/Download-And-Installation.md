@@ -33,9 +33,9 @@ Following are the step by step instructions for configuring Syncfusion Nuget pac
 
     Now click Add Source and then click Ok.
 
-N> If you have already downloaded the NuGet package from Syncfusion website, enter the local path in the **URL** field. 
+    N> If you have already downloaded the NuGet package from Syncfusion website, enter the local path in the **URL** field. 
 
-   ![](images/img3.png)
+    ![](images/img3.png)
 
 4. Next, open Add Packages window by following step 1 and 2, then select Syncfusion (The package name specified in Step 3) as the source from the drop-down that appears at the top-left corner of the window.  You can now select from the list of Syncfusion’s components displayed in the window.
 

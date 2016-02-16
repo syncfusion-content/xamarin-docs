@@ -65,7 +65,7 @@ The following procedure illustrates how to install the installer of Syncfusion X
 
 You can find the following folders when extracting the downloaded zip package or from the installed location in Windows.
 
-* **Lib** Contains Syncfusion assemblies for Xamarin.Forms, Xamarin.Android and Xamarin.iOS.
+* **Lib** - Contains Syncfusion assemblies for Xamarin.Forms, Xamarin.Android and Xamarin.iOS.
 * **Samples** - Contains demo samples for Xamarin.Forms, Xamarin.Android and Xamarin.iOS.
 
 ## Add reference to the project

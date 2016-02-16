@@ -22,7 +22,7 @@ Following properties are used to customize its appearance.
 
 {% tabs %} 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <chart:SfChart>
 
@@ -56,7 +56,7 @@ You can align the title text content to the Start, Center or End of the title us
 
 {% tabs %} 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <chart:SfChart.Title>
 

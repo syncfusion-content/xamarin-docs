@@ -28,8 +28,7 @@ Following are the step by step instructions for configuring Syncfusion Nuget pac
 3. Next, click on the Add button in the window that appears now. Enter the following details in the Add Package Source dialog.
 
     *	**Name** – enter the name (For Ex., Syncfusion)
-    *	**URL** – enter Syncfusion Xamarin package URL. You can obtain your Syncfusion Nuget package URL using this link – http://nuget.syncfusion.com/package/xamarin.
-    *	**Username & Password** – enter your Syncfusion account credentials.
+    *	**URL** – enter the following URL — http://nuget.syncfusion.com/xamarin
 
     Now click Add Source and then click Ok.
 
@@ -66,7 +65,7 @@ The following procedure illustrates how to install the installer of Syncfusion X
 
 You can find the following folders when extracting the downloaded zip package or from the installed location in Windows.
 
-* **Lib** Contains Syncfusion assemblies for Xamarin.Forms, Xamarin.Android and Xamarin.iOS.
+* **Lib** - Contains Syncfusion assemblies for Xamarin.Forms, Xamarin.Android and Xamarin.iOS.
 * **Samples** - Contains demo samples for Xamarin.Forms, Xamarin.Android and Xamarin.iOS.
 
 ## Add reference to the project

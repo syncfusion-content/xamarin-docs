@@ -17,8 +17,10 @@ perceptive.
 [XAML]
 
 <chart:SfChart.Series>
-<chart:LineSeries ItemsSource="{Binding Data}" XBindingPath="Month"
-YBindingPath="Vaue" IsTransposed="True"/>
+
+	<chart:LineSeries ItemsSource="{Binding Data}" XBindingPath="Month"
+					  YBindingPath="Value" IsTransposed="True"/>
+
 </chart:SfChart.Series>
 
 

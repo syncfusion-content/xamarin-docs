@@ -2,7 +2,7 @@
 layout: post
 title: BlackOut Dates support in Syncfusion Calendar control for Xamarin.Forms
 description: Learn how to set min and max date in calendar
-platform: Xamarin.Forms
+platform: Xamarin
 control: Calendar
 documentation: ug
 ---

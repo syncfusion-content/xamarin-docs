@@ -2,7 +2,7 @@
 layout: post
 title: Overview of Syncfusion DigitalGauge control for Xamarin.Forms
 description: Overview and key features of DigitalGauge control
-platform: Xamarin.Forms
+platform: Xamarin
 control: DigitalGauge
 documentation: ug
 ---

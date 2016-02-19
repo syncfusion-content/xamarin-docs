@@ -2,7 +2,7 @@
 layout : post
 title : AutoComplete mode for Syncfusion AutoComplete control in Xamarin.Forms
 description : Learn how to change the AutoComplete mode in AutoComplete
-platform : Xamarin.Forms
+platform : Xamarin
 control : AutoComplete
 documentation : ug
 ---

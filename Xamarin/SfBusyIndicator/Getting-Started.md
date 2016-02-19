@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with Syncfusion BusyIndicator control for Xamarin.Forms
 description: A quick tour to initial users on Syncfusion busyIndicator control for Xamarin.Forms platform
-platform: Xamarin.Forms
+platform: Xamarin
 control: BusyIndicator
 documentation: ug
 ---

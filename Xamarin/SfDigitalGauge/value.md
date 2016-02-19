@@ -2,7 +2,7 @@
 layout: post
 title: Value of DigitalGauge
 description: Learn how to add  value to DigitalGauge
-platform: Xamarin.Forms
+platform: Xamarin
 control: DigitalGauge
 documentation: ug
 ---

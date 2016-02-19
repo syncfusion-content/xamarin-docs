@@ -3,7 +3,7 @@
 layout: post
 title: Tooltip in Syncfusion Rating control for Xamarin.Forms
 description: Learn how to change the Tooltip of rating control
-platform: Xamarin.Forms
+platform: Xamarin
 control: Rating
 documentation: ug
 

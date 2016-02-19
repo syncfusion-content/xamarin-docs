@@ -2,7 +2,7 @@
 layout : post
 title : MinimumPrefixCharacter for Syncfusion AutoComplete Control in Xamarin.Forms
 description : Learn how to set the MinimumPrefixCharacter in AutoComplete
-platform : Android
+platform : Xamarin
 control : AutoComplete
 documentation : ug
 ---

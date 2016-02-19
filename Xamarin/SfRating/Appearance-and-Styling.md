@@ -3,7 +3,7 @@
 layout: post
 title: Appearance and Styling in Syncfusion Rating control for Xamarin.Forms
 description: Learn how to change the Appearance and Styling of rating control
-platform: Xamarin.Forms
+platform: Xamarin
 control: Rating
 documentation: ug
 

@@ -38,14 +38,29 @@ You can add multiple series to `Series` property of `SfChart` class.
 SfChart chart = new SfChart();
 ...
 
-ColumnSeries columnSeries = new ColumnSeries() { ItemsSource = Data, XBindingPath = "Country", 
-YBindingPath = "Value" };
+ColumnSeries columnSeries = new ColumnSeries() { 
+	
+	ItemsSource = Data, 
+	XBindingPath = "Country", 
+	YBindingPath = "Value" 
 
-ColumnSeries columnSeries1 = new ColumnSeries() { ItemsSource = Data1, XBindingPath = "Country", 
-YBindingPath = "Value" };
+};
 
-ColumnSeries columnSeries2 = new ColumnSeries() { ItemsSource = Data2, XBindingPath = "Country", 
-YBindingPath = "Value" };
+ColumnSeries columnSeries1 = new ColumnSeries() { 
+
+	ItemsSource = Data1, 
+	XBindingPath = "Country", 
+	YBindingPath = "Value" 
+	
+};
+
+ColumnSeries columnSeries2 = new ColumnSeries() { 
+
+	ItemsSource = Data2, 
+	XBindingPath = "Country", 
+	YBindingPath = "Value" 
+	
+};
 
 chart.Series.Add(columnSeries);
 
@@ -139,11 +154,21 @@ When the combination of cartesian and accumulation series types are added to the
 SfChart chart = new SfChart();
 ...
 
-LineSeries lineSeries = new LineSeries() { ItemsSource = Data, XBindingPath = "Month", 
-YBindingPath = "Value" };
+LineSeries lineSeries = new LineSeries() { 
 
-PieSeries pieSeries = new PieSeries() { ItemsSource = Data1, XBindingPath = "Month", 
-YBindingPath = "Value" };
+	ItemsSource = Data, 
+	XBindingPath = "Month", 
+	YBindingPath = "Value" 
+	
+};
+
+PieSeries pieSeries = new PieSeries() { 
+
+	ItemsSource = Data1, 
+	XBindingPath = "Month", 
+	YBindingPath = "Value" 
+	
+};
 
 chart.Series.Add(lineSeries);
 

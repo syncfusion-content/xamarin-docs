@@ -2,7 +2,7 @@
 layout : post
 title : Overview of Syncfusion AutoComplete control for Xamarin.Forms
 description : Overview and key features of autocomplete control
-platform : Xamarin.Forms
+platform : Xamarin
 control : AutoComplete
 documentation : ug
 ---

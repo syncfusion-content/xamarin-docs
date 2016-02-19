@@ -2,7 +2,7 @@
 layout: post
 title: Character type in DigitalGauge
 description: Learn how to define character type in DigitalGauge
-platform: Xamarin.Forms
+platform: Xamarin
 control: DigitalGauge
 documentation: ug
 ---

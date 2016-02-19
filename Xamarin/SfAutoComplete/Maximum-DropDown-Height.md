@@ -2,7 +2,7 @@
 layout : post
 title : MaximumDropDownHeight for Syncfusion AutoComplete Control in Xamarin.Forms
 description : Learn how to set the MaximumDropDownHeight in AutoComplete
-platform : Xamarin.Forms
+platform : Xamarin
 control : AutoComplete
 documentation : ug
 ---

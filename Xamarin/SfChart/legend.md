@@ -154,7 +154,8 @@ Following properties are used to define and customize the legend title.
 
 		<chart:ChartLegend.Title >
 
-			<chart:ChartTitle Text="Years" TextColor="Maroon" TextAlignment="Center" BackgroundColor="Silver" BorderWidth="3" BorderColor="Blue">
+			<chart:ChartTitle Text="Years" TextColor="Maroon" TextAlignment="Center" 
+			BackgroundColor="Silver" BorderWidth="3" BorderColor="Blue">
 
 				<chart:ChartTitle.Font>
 
@@ -242,7 +243,8 @@ You can position the legend anywhere inside the chart. Following properties are 
 
 	<chart:SfChart.Legend>
 
-		<chart:ChartLegend DockPosition="Floating" OffsetX="70" OffsetY="90" Orientation="Vertical">        
+		<chart:ChartLegend DockPosition="Floating" OffsetX="70" OffsetY="90" 
+		Orientation="Vertical">        
 
 	</chart:SfChart.Legend>           
 

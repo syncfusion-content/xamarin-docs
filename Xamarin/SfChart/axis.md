@@ -365,7 +365,12 @@ xmlns:sys="clr-namespace:System;assembly=mscorlib"
 
 {% highlight c# %}
 
-chart.PrimaryAxis = new DateTimeAxis() { Minimum = new DateTime(2010, 1, 1), Maximum = new DateTime(2015, 12, 30) };
+chart.PrimaryAxis = new DateTimeAxis() { 
+
+	Minimum = new DateTime(2010, 1, 1), 
+	Maximum = new DateTime(2015, 12, 30) 
+	
+};
 
 {% endhighlight %}
 
@@ -409,7 +414,12 @@ Essential Chart supports the following types of interval for date time axis
 
 {% highlight c# %}
 
-chart.PrimaryAxis = new DateTimeAxis() { IntervalType = DateTimeIntervalType.Months, Interval = 6 };
+chart.PrimaryAxis = new DateTimeAxis() { 
+
+	IntervalType = DateTimeIntervalType.Months, 
+	Interval = 6 
+	
+};
 
 {% endhighlight %}
 
@@ -557,7 +567,12 @@ To customize the range of log axis, you can use the minimum and maximum properti
 
 {% highlight c# %}
 
-chart.SecondaryAxis = new LogarithmicAxis() { Minimum = 100, Maximum = 10000 };
+chart.SecondaryAxis = new LogarithmicAxis() { 
+
+	Minimum = 100, 
+	Maximum = 10000 
+
+};
 
 {% endhighlight %}
 
@@ -796,7 +811,8 @@ The `ShowMajorGridLines` and `ShowMinorGridLines` properties are used to control
 
 <chart:SfChart.SecondaryAxis >
 
-	<chart:NumericalAxis ShowMajorGridLines="True" ShowMinorGridLines="True" MinorTicksPerInterval="1"/>
+	<chart:NumericalAxis ShowMajorGridLines="True" ShowMinorGridLines="True" 
+	MinorTicksPerInterval="1"/>
 
 </chart:SfChart.SecondaryAxis >
 

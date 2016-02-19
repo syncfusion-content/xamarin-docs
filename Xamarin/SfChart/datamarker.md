@@ -61,7 +61,8 @@ Following code snippet illustrates the customization of label and its background
 
 		<chart:ChartDataMarker.LabelStyle>
 
-			<chart:DataMarkerLabelStyle TextColor="Blue" BorderColor="Red" BorderThickness="2" BackgroundColor="Aqua" Angle="315" Margin="5">
+			<chart:DataMarkerLabelStyle TextColor="Blue" BorderColor="Red" 
+			BorderThickness="2" BackgroundColor="Aqua" Angle="315" Margin="5">
 
 				<chart:DataMarkerLabelStyle.Font>
 
@@ -232,7 +233,7 @@ series.DataMarker.LabelStyle.LabelPosition = DataMarkerLabelPosition.Outer;
 
 ## Smart Labels
 
-This feature is used to arrange the data marker labels smartly and avoid the intersection when there is overlapping of labels. The property EnableSmartLabels in CircularSeries, is used to arrange the datamarker labels smartly. By default, it is false, we need to enable this property.
+This feature is used to arrange the data marker labels smartly and avoid the intersection when there is overlapping of labels. The property `EnableSmartLabels` in CircularSeries, is used to arrange the datamarker labels smartly. By default, it is false, we need to enable this property.
 
 The following code sample illustrates how to enable the smart labels.
 
@@ -242,7 +243,9 @@ The following code sample illustrates how to enable the smart labels.
 
 <chart:SfChart.Series>
 
-	<chart:PieSeries ItemsSource="{Binding Data}" XBindingPath="Expense" YBindingPath="Value" StartAngle="75" EndAngle ="435" EnableSmartLabels="True" ConnectorLineType = "Bezier" DataMarkerPosition = "OutsideExtended">
+	<chart:PieSeries ItemsSource="{Binding Data}" XBindingPath="Expense" YBindingPath="Value" 
+	StartAngle="75" EndAngle ="435" EnableSmartLabels="True" ConnectorLineType = "Bezier" 
+	DataMarkerPosition = "OutsideExtended">
 	
 		<chart:PieSeries.DataMarker>
 			<chart:ChartDataMarker />
@@ -284,7 +287,7 @@ chart.Series.Add(pieSeries);
 
 ## Customizing Marker Shapes
 
-Shapes can be added to chart data marker by setting the ShowMarker property to true. There are different shapes you can set to the chart using MarkerType property such as rectangle, circle, diamond etc. Following properties are used to customize marker appearance,
+Shapes can be added to chart data marker by setting the `ShowMarker` property to `true`. There are different shapes you can set to the chart using `MarkerType` property such as rectangle, circle, diamond etc. Following properties are used to customize marker appearance,
 
 * `MarkerWidth` - used to change the width of the marker
 * `MarkerHeight` - used to change the height of the marker
@@ -300,7 +303,8 @@ The following code example shows how to enable marker and specify its types,
 
 <chart:LineSeries.DataMarker>
 
-	<chart:ChartDataMarker ShowLabel="False" ShowMarker="True" MarkerType="Hexagon" MarkerWidth="20" MarkerHeight="20" MarkerColor="Aqua" MarkerBorderColor="Red" MarkerBorderWidth="2"/>
+	<chart:ChartDataMarker ShowLabel="False" ShowMarker="True" MarkerType="Hexagon" MarkerWidth="20" 
+	MarkerHeight="20" MarkerColor="Aqua" MarkerBorderColor="Red" MarkerBorderWidth="2"/>
 
 </chart:LineSeries.DataMarker>
 
@@ -352,7 +356,8 @@ The following code illustrates how to specify the connector height and its angle
 
 		<chart:ChartDataMarker.ConnectorLineStyle>
 
-			<chart:ConnectorLineStyle ConnectorHeight="50" ConnectorRotationAngle="175" StrokeColor="Blue" StrokeWidth="3"/>
+			<chart:ConnectorLineStyle ConnectorHeight="50" ConnectorRotationAngle="175" 
+			StrokeColor="Blue" StrokeWidth="3"/>
 
 		</chart:ChartDataMarker.ConnectorLineStyle>
 

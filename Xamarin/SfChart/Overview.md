@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | SfChart |Xamarin | Syncfusion
-description: overview
+title: Overview of Essential Javascript Chart
+description: What are the key features available in chart.
 platform: xamarin
 control: SfChart
 documentation: ug

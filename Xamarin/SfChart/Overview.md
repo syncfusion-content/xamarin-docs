@@ -3,7 +3,7 @@ layout: post
 title: Overview of Essential Xamarin.Forms Chart
 description: What are the key features available in chart.
 platform: xamarin
-control: SfChart
+control: Chart
 documentation: ug
 ---
 

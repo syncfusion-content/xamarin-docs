@@ -3,7 +3,7 @@ layout: post
 title: Getting Started for Essential Xamarin.Forms Chart
 description: How to create a chart, add series, legend and multiple Y axis in Chart.
 platform: xamarin
-control: SfChart
+control: Chart
 documentation: ug
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with Syncfusion RangeSlider control for Xamarin.Forms
 description: A quick tour to initial users on Syncfusion rangeSlider control for Xamarin.Forms platform
-platform: Xamarin.Forms
+platform: Xamarin
 control: RangeSlider
 documentation: ug
 ---

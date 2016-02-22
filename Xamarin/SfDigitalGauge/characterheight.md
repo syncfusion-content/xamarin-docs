@@ -2,7 +2,7 @@
 layout: post
 title: Character height of DigitalGauge
 description: Learn how set the height of Digital Character in DigitalGauge
-platform: Xamarin.Forms
+platform: Xamarin
 control: DigitalGauge
 documentation: ug
 ---

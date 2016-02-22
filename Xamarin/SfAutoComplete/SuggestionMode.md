@@ -2,7 +2,7 @@
 layout : post
 title : Suggestion mode for Syncfusion AutoComplete Control in Xamarin.Forms
 description : Learn how to display suggestion mode in AutoComplete 
-platform : Xamarin.Forms
+platform : Xamarin
 control : AutoComplete
 documentation : ug
 ---

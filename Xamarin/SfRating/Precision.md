@@ -3,7 +3,7 @@
 layout: post
 title: Precision Mode in Syncfusion Rating control for Xamarin.Forms
 description: Learn how to change the Precision Mode of rating control
-platform: Xamarin.Forms
+platform: Xamarin
 control: Rating
 documentation: ug
 

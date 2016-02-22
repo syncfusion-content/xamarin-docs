@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Xamarin.Forms | Strip Lines
-description: How to add strip lines in Essential Xamarin.Forms Chart
+title: Chart Striplines
+description: Learn how to add horizontal or vertical lines in Chart. 
 platform: xamarin
 control: Chart
 documentation: ug

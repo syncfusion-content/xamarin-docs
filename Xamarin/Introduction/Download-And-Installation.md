@@ -42,7 +42,7 @@ Following are the step by step instructions for configuring Syncfusion Nuget pac
 
 ## Configuring Syncfusion NuGet Packages in Visual Studio 
 
-Syncfusion Xamarin NuGet packages are available [here](http://nuget.syncfusion.com/xamarin# "").
+Syncfusion Xamarin NuGet packages are available [here](http://nuget.syncfusion.com/package/xamarin).
 
 ### NuGet Configuration  
 
@@ -56,25 +56,25 @@ The steps to install the Syncfusion Xamarin NuGet Packages in Visual Studio are 
 
    **Name**: Name of the package that listed in Available package sources  
    **Source**: Syncfusion Xamarin NuGet Package feed url 
-   [http://nuget.syncfusion.com/xamarin](http://nuget.syncfusion.com/xamarin# "")
+   [http://nuget.syncfusion.com/xamarin](http://nuget.syncfusion.com/xamarin)
     
    ![](images/NuGetConfig2.jpeg)
 
    N> The `Source` text box in the above image denotes the location of the NuGet packages and the `Name` section, allows you to provide a unique name for NuGet Packages Source.
     
-I> Syncfusion other platforms NuGet packages feed links are available [here](http://nuget.syncfusion.com/# "")
+I> Syncfusion other platforms NuGet packages feed links are available [here](http://nuget.syncfusion.com/)
 
 ### NuGet installation
 
 Syncfusion Xamarin NuGet can install once configured the package source. The NuGet installation steps as below,
 
-1. Once configured the Package source with Syncfusion NuGet Packages, right click on project and choose `Manage NuGet Packages | Online | &lt;Package Source Name&gt;`.
+1. Once configured the Package source with Syncfusion NuGet Packages, right click on project and choose `Manage NuGet Packages | Online | <Package Source Name>`.
 
    ![](images/NuGetConfig3.jpeg)
 
 2. The NuGet Packages are listed which are available in package source location. Install the required packages to your application by clicking `Install` button.
 
-   N> NuGet packages can be install directly through the **command line** (Package Manager Console). Further details click [here](http://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-install-and-configuration#install-from-package-manager-console "")
+   N> NuGet packages can be install directly through the **command line** (Package Manager Console). Further details click [here](http://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-install-and-configuration#install-from-package-manager-console).
 
 ## Updating a NuGet Package
 
@@ -82,7 +82,7 @@ Using the `Manage NuGet Packages` in Visual Studio, NuGet packages can be update
  
 1. Right click on Project and Navigate to the `Manage NuGet Packages` and click on the `Updates` tab to check for updates.
 
-2. Select the `Updates -> &lt;Syncfusion Package Source&gt;`. Refer to the following screenshot for more information.
+2. Select the `Updates -> <Syncfusion Package Source>`. Refer to the following screenshot for more information.
 
    ![](images/NuGetConfig4.jpeg)
 

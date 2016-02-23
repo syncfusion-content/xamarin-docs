@@ -40,7 +40,7 @@ Following are the step by step instructions for configuring Syncfusion Nuget pac
 
    ![](images/img4.png)
 
-# Configuring Syncfusion NuGet Packages in Visual Studio 
+## Configuring Syncfusion NuGet Packages in Visual Studio 
 
 Syncfusion Xamarin NuGet packages are available [here](http://nuget.syncfusion.com/xamarin# "").
 

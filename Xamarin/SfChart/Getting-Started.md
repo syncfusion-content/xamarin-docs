@@ -152,8 +152,6 @@ wp8\Syncfusion.SfChart.WP8.dll
 wp8\Syncfusion.SfChart.XForms.WinPhone.dll
 
 
-N> Essential Chart for Xamarin is compatible with Xamarin. Forms v.1.2.3.6257.
-
 Currently an additional step is required for Windows Phone and iOS projects. We need to create an instance of the chart custom renderer as shown below. 
 
 Create an instance of SfChartRenderer in MainPage constructor in of the Windows Phone project as shown 

@@ -13,8 +13,9 @@ documentation: ug
 Vertical chart is used to show the cartesian series vertically, which helps to view the data in different
 perceptive.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.Series>
 
@@ -27,7 +28,6 @@ perceptive.
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 SfChart chart = new SfChart();
 ...	
@@ -42,4 +42,6 @@ chart.Series.Add(lineSeries);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Chatseries-clubbed/multiple.png](chartseries_images/verticalchart.png)
+{% endtabs %}
+
+![](chartseries_images/verticalchart.png)

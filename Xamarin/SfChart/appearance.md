@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Xamarin.Froms | Chart Appearance
-description: How to customize the chart appearance
+title: Customizing the appearance of Essential Xamarin.Forms Chart
+description: Learn how to customize the appearance of Chart using palettes.
 platform: xamarin
 control: Chart
 documentation: ug
@@ -17,7 +17,7 @@ documentation: ug
 
 Currently, Chart supports only Metro palette and it is the default palette for SfChart. The following screenshot shows the default appearance of multiple series.
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Appearence/char_metr.png](appearance_images/appearance_img1.png)
+![](appearance_images/appearance_img1.png)
 
 **Custom Palette**
 
@@ -66,7 +66,7 @@ sfChart.ColorModel.CustomBrushes = colors;
 
 {% endtabs %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Appearence/chart-custom.png](appearance_images/appearance_img2.png)
+![](appearance_images/appearance_img2.png)
 
 **None Palette**
 
@@ -74,7 +74,7 @@ None palette will not apply any color to the series. So in order to define the c
 
 ## Apply palette for Series
 
-`ColorModel` property of ChartSeries is used to define the colors for each data point. Following palettes are used to define the colors.
+`ColorModel` property of `ChartSeries` is used to define the colors for each data point. Following palettes are used to define the colors.
 
 **Predefined Palettes**
 
@@ -122,7 +122,7 @@ chart.Series.Add(columnSeries);
 
 {% endtabs %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Appearence/METRO1.png](appearance_images/appearance_img3.png)
+![](appearance_images/appearance_img3.png)
 
 **Custom Palette**
 
@@ -184,8 +184,8 @@ chart.Series.Add(columnSeries);
 
 {% endtabs %}
 
-![C:/Users/yuvaraj.palanisamy/Documents/My Received Files/custom-clr.png](appearance_images/appearance_img4.png)
+![](appearance_images/appearance_img4.png)
 
 **None Palette**
 
-None palette will not apply any color to the data points. So in order to define the color for the data points, you can use the Color property of ChartSeries.
+None palette will not apply any color to the data points. So in order to define the color for the data points, you can use the `Color` property of `ChartSeries`.

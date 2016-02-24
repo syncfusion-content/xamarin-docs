@@ -372,12 +372,12 @@ SfChart chart = new SfChart();
 
 ObservableCollection<ChartDataPoint> data = new ObservableCollection<ChartDataPoint>()
 {    
-	new ChartDataPoint("Jan", 1.8, 7.6 ),
-	new ChartDataPoint("Feb", 3, 10),
-	new ChartDataPoint("Mar", 1.7, 7.5),
-	new ChartDataPoint("Apr", 4.5, 7.8),
-	new ChartDataPoint("May", 5, 11.4),
-	new ChartDataPoint("Jun", 4.2, 10.1),
+	new ChartDataPoint("Jan", 7.6, 1.8),
+	new ChartDataPoint("Feb", 10, 3),
+	new ChartDataPoint("Mar", 7.5, 1.7),
+	new ChartDataPoint("Apr", 7.8, 4.5),
+	new ChartDataPoint("May", 11.4, 5),
+	new ChartDataPoint("Jun", 10.1, 4.2),
 };
 	
 RangeColumnSeries rangeColumnSeries = new RangeColumnSeries() 

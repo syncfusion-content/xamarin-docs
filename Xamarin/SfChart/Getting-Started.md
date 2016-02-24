@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Getting Started | SfChart | Xamarin | Syncfusion
-description: getting started
+title: Getting Started for Essential Xamarin.Forms Chart
+description: How to create a chart, add series, legend and multiple Y axis in Chart.
 platform: xamarin
-control: SfChart
+control: Chart
 documentation: ug
 ---
 
@@ -151,8 +151,6 @@ wp8\Syncfusion.SfChart.WP8.dll
 
 wp8\Syncfusion.SfChart.XForms.WinPhone.dll
 
-
-N> Essential Chart for Xamarin is compatible with Xamarin. Forms v.2.0.1.
 
 Currently an additional step is required for Windows Phone and iOS projects. We need to create an instance of the chart custom renderer as shown below. 
 

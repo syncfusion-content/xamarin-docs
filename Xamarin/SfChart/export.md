@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Xamarin.Froms | Exporting Chart
+title:  Exporting options in Essential Xamarin.Forms Chart 
 description: How to export the Chart as an image
 platform: xamarin
 control: Chart

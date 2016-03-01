@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Xamarin.Forms | Zooming and Panning
+title: Zooming and Panning
 description: How to add ZoomPan behavior in Essential Xamarin.Forms Chart
 platform: xamarin
 control: Chart

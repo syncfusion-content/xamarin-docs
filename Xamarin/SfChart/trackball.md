@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Xamarin.Forms | Trackball
-description: How to add trackball behavior in Essential Xamarin.Forms Chart
+title: Chart Trackball
+description: How to enable and customize the trackball behavior in Essential Xamarin.Forms Chart
 platform: xamarin
 control: Chart
 documentation: ug

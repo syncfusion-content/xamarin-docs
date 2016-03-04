@@ -151,7 +151,7 @@ public class DataModel
   <chart:SfChart.Series>
 
 	  <chart:ColumnSeries ItemsSource="{Binding Demands}" XBindingPath="Demand" 
-	  YBindingPath="Year2010"/>
+	 					  YBindingPath="Year2010"/>
 
   </chart:SfChart.Series>
 

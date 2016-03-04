@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Xamarin.Forms | Populating data
-description: What are all the different types for add data point to series in Essential Xamarin.forms.
+title: Populating data
+description: How to add data point to series in  Essential Xamarin.forms Chart.
 platform: xamarin
 control: Chart
 documentation: ug
@@ -150,7 +150,8 @@ public class DataModel
 
   <chart:SfChart.Series>
 
-	  <chart:ColumnSeries ItemsSource="{Binding Demands}" XBindingPath="Demand" YBindingPath="Year2010"/>
+	  <chart:ColumnSeries ItemsSource="{Binding Demands}" XBindingPath="Demand" 
+	 					  YBindingPath="Year2010"/>
 
   </chart:SfChart.Series>
 

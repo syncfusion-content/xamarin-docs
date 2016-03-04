@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Multiple series, combination of series and grouping stacked series
-description: How to add multiple series and combination series in Essential Xamarin.Forms Chart
+title: Multiple chart series
+description: Learn how to render different types of series in a chart.
 platform: xamarin
 control: Chart
 documentation: ug
@@ -38,11 +38,29 @@ You can add multiple series to `Series` property of `SfChart` class.
 SfChart chart = new SfChart();
 ...
 
-ColumnSeries columnSeries = new ColumnSeries() { ItemsSource = Data, XBindingPath = "Country", YBindingPath = "Value" };
+ColumnSeries columnSeries = new ColumnSeries() { 
+	
+	ItemsSource = Data, 
+	XBindingPath = "Country", 
+	YBindingPath = "Value" 
 
-ColumnSeries columnSeries1 = new ColumnSeries() { ItemsSource = Data1, XBindingPath = "Country", YBindingPath = "Value" };
+};
 
-ColumnSeries columnSeries2 = new ColumnSeries() { ItemsSource = Data2, XBindingPath = "Country", YBindingPath = "Value" };
+ColumnSeries columnSeries1 = new ColumnSeries() { 
+
+	ItemsSource = Data1, 
+	XBindingPath = "Country", 
+	YBindingPath = "Value" 
+	
+};
+
+ColumnSeries columnSeries2 = new ColumnSeries() { 
+
+	ItemsSource = Data2, 
+	XBindingPath = "Country", 
+	YBindingPath = "Value" 
+	
+};
 
 chart.Series.Add(columnSeries);
 
@@ -81,9 +99,21 @@ SfChart chart = new SfChart();
 
 ...
 
-ColumnSeries columnSeries = new ColumnSeries() { ItemsSource = Data, XBindingPath = "Month", YBindingPath = "Value" };
+ColumnSeries columnSeries = new ColumnSeries() { 
+	
+	ItemsSource = Data, 
+	XBindingPath = "Month",
+	YBindingPath = "Value" 
+	
+};
 
-LineSeries lineSeries = new LineSeries() { ItemsSource = Data1, XBindingPath = "Month", YBindingPath = "Value" }; 
+LineSeries lineSeries = new LineSeries() { 
+	
+	ItemsSource = Data1, 
+	XBindingPath = "Month", 
+	YBindingPath = "Value" 
+	
+}; 
 
 chart.Series.Add(columnSeries);
 
@@ -109,9 +139,11 @@ When the combination of cartesian and accumulation series types are added to the
 <chart:SfChart>
 ...
 
-	<chart:LineSeries ItemsSource ="{Binding Data}" XBindingPath="Month" YBindingPath="Value"/>
+	<chart:LineSeries ItemsSource ="{Binding Data}" XBindingPath="Month" 
+	YBindingPath="Value"/>
 
-	<chart:PieSeries ItemsSource ="{Binding Data1}" XBindingPath="Month" YBindingPath="Value"/>
+	<chart:PieSeries ItemsSource ="{Binding Data1}" XBindingPath="Month" 
+	YBindingPath="Value"/>
 
 </chart:SfChart>
 
@@ -122,9 +154,21 @@ When the combination of cartesian and accumulation series types are added to the
 SfChart chart = new SfChart();
 ...
 
-LineSeries lineSeries = new LineSeries() { ItemsSource = Data, XBindingPath = "Month", YBindingPath = "Value" };
+LineSeries lineSeries = new LineSeries() { 
 
-PieSeries pieSeries = new PieSeries() { ItemsSource = Data1, XBindingPath = "Month", YBindingPath = "Value" };
+	ItemsSource = Data, 
+	XBindingPath = "Month", 
+	YBindingPath = "Value" 
+	
+};
+
+PieSeries pieSeries = new PieSeries() { 
+
+	ItemsSource = Data1, 
+	XBindingPath = "Month", 
+	YBindingPath = "Value" 
+	
+};
 
 chart.Series.Add(lineSeries);
 
@@ -147,13 +191,17 @@ You can group and stack the similar stacked series types using `GroupingLabel` p
 <chart:SfChart>
 ...
 
-	<chart:StackingColumnSeries ItemsSource ="{Binding Data1}" GroupingLabel="GroupOne" Label="Google" XBindingPath="Month" YBindingPath="Value"/>
+	<chart:StackingColumnSeries ItemsSource ="{Binding Data1}" GroupingLabel="GroupOne" 
+	Label="Google" XBindingPath="Month" YBindingPath="Value"/>
 
-	<chart:StackingColumnSeries ItemsSource ="{Binding Data2}" GroupingLabel="GroupTwo" Label="Bing" XBindingPath="Month" YBindingPath="Value"/>
+	<chart:StackingColumnSeries ItemsSource ="{Binding Data2}" GroupingLabel="GroupTwo" 
+	Label="Bing" XBindingPath="Month" YBindingPath="Value"/>
 
-	<chart:StackingColumnSeries ItemsSource ="{Binding Data3}" GroupingLabel="GroupOne" Label="Yahoo" XBindingPath="Month" YBindingPath="Value"/>
+	<chart:StackingColumnSeries ItemsSource ="{Binding Data3}" GroupingLabel="GroupOne" 
+	Label="Yahoo" XBindingPath="Month" YBindingPath="Value"/>
 	
-	<chart:StackingColumnSeries ItemsSource ="{Binding Data4}" GroupingLabel="GroupTwo" Label="Ask" XBindingPath="Month" YBindingPath="Value"/>
+	<chart:StackingColumnSeries ItemsSource ="{Binding Data4}" GroupingLabel="GroupTwo" 
+	Label="Ask" XBindingPath="Month" YBindingPath="Value"/>
 
 </chart:SfChart>
 

@@ -812,7 +812,7 @@ The `ShowMajorGridLines` and `ShowMinorGridLines` properties are used to control
 <chart:SfChart.SecondaryAxis >
 
 	<chart:NumericalAxis ShowMajorGridLines="True" ShowMinorGridLines="True" 
-	MinorTicksPerInterval="1"/>
+						 MinorTicksPerInterval="1"/>
 
 </chart:SfChart.SecondaryAxis >
 

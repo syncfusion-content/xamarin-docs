@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Xamarin.Forms | Data Point Selection
+title: Xamarin.Forms Chart Data Point Selection
 description: How to select the data point in Essential Xamarin.Forms Chart
 platform: xamarin
 control: Chart

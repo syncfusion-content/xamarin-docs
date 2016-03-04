@@ -23,7 +23,8 @@ To render a line chart, create an instance of `LineSeries` and add to the `Serie
 <chart:SfChart>
 ...
 
-	<chart:LineSeries ItemsSource ="{Binding Data}" XBindingPath="Year" YBindingPath="Value"/>
+	<chart:LineSeries ItemsSource ="{Binding Data}" XBindingPath="Year"
+	YBindingPath="Value"/>
 
 </chart:SfChart>
 

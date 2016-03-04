@@ -93,7 +93,7 @@ December</td><td>
 2.8</td></tr>
 </table>
 
-This is how the final output will look like on iOS, Android and Windows Phone devices. You can also download the entire source code of this demo from [here.](http://files2.syncfusion.com/Installs/v12.2.0.40/Samples/Xamarin/Chart_GettingStarted.zip)
+This is how the final output will look like on iOS, Android and Windows Phone devices. You can also download the entire source code of this demo from [here.](http://files2.syncfusion.com/Xamarin.Forms/Samples/Chart_GettingStarted.zip)
 
 ![](Getting-Started_images/img1.png)
 

@@ -202,13 +202,13 @@ To render a stacked area chart, create an instance of `StackingAreaSeries` and a
 ...
 
 	<chart:StackingAreaSeries ItemsSource ="{Binding Data1}" XBindingPath="Year" 
-	YBindingPath="Value"/>
+							  YBindingPath="Value"/>
 
 	<chart:StackingAreaSeries ItemsSource ="{Binding Data2}" XBindingPath="Year" 
-	YBindingPath="Value"/>
+							  YBindingPath="Value"/>
 
 	<chart:StackingAreaSeries ItemsSource ="{Binding Data3}" XBindingPath="Year" 
-	YBindingPath="Value"/>
+							  YBindingPath="Value"/>
 
 </chart:SfChart>
 
@@ -266,13 +266,13 @@ To render a 100% stacked area chart, create an instance of `StackingArea100Serie
 ...
 
 	<chart:StackingArea100Series ItemsSource ="{Binding Data1}" XBindingPath="Year" 
-	YBindingPath="Value"/>
+								 YBindingPath="Value"/>
 
 	<chart:StackingArea100Series ItemsSource ="{Binding Data2}" XBindingPath="Year" 
-	YBindingPath="Value"/>
+								 YBindingPath="Value"/>
 
 	<chart:StackingArea100Series ItemsSource ="{Binding Data3}" XBindingPath="Year" 
-	YBindingPath="Value"/>
+								 YBindingPath="Value"/>
 
 </chart:SfChart>
 
@@ -400,7 +400,7 @@ chart.Series.Add(rangeColumnSeries);
 ...
 
 	<chart:RangeColumnSeries ItemsSource ="{Binding Data}" XBindingPath="Month" High="Value1" 
-	Low="Value2"/>
+							 Low="Value2"/>
 
 </chart:SfChart>
 
@@ -448,13 +448,13 @@ To render a stacked column chart, create an instance of `StackingColumnSeries` a
 ...
 
 	<chart:StackingColumnSeries ItemsSource ="{Binding Data1}" XBindingPath="Month" 
-	YBindingPath="Value"/>
+								YBindingPath="Value"/>
 
 	<chart:StackingColumnSeries ItemsSource ="{Binding Data2}" XBindingPath="Month" 
-	YBindingPath="Value"/>
+								YBindingPath="Value"/>
 
 	<chart:StackingColumnSeries ItemsSource ="{Binding Data3}" XBindingPath="Month" 
-	YBindingPath="Value"/>
+								YBindingPath="Value"/>
 
 </chart:SfChart>
 
@@ -512,13 +512,13 @@ To render a 100% stacked column chart, create an instance of `StackingColumn100S
 ...
 
 	<chart:StackingColumn100Series ItemsSource ="{Binding Data1}" XBindingPath="Year" 
-	YBindingPath="Value"/>
+								   YBindingPath="Value"/>
 
 	<chart:StackingColumn100Series ItemsSource ="{Binding Data2}" XBindingPath="Year" 
-	YBindingPath="Value"/>
+								   YBindingPath="Value"/>
 
 	<chart:StackingColumn100Series ItemsSource ="{Binding Data3}" XBindingPath="Year" 
-	YBindingPath="Value"/>
+								   YBindingPath="Value"/>
 
 </chart:SfChart>
 
@@ -616,13 +616,13 @@ To render a stacked bar chart, create an instance of `StackingBarSeries` and add
 ...
 
 	<chart:StackingBarSeries ItemsSource ="{Binding Data1}" XBindingPath="Month" 
-	YBindingPath="Value"/>
+							 YBindingPath="Value"/>
 
 	<chart:StackingBarSeries ItemsSource ="{Binding Data2}" XBindingPath="Month" 
-	YBindingPath="Value"/>
+ 							 YBindingPath="Value"/>
 
 	<chart:StackingBarSeries ItemsSource ="{Binding Data3}" XBindingPath="Month" 
-	YBindingPath="Value"/>
+							 YBindingPath="Value"/>
 
 </chart:SfChart>
 
@@ -680,13 +680,13 @@ To render a 100% stacked bar chart, create an instance of `StackingBar100Series`
 ...
 
 	<chart:StackingBar100Series ItemsSource ="{Binding Data1}" XBindingPath="Year" 
-	YBindingPath="Value"/>
+								YBindingPath="Value"/>
 
 	<chart:StackingBar100Series ItemsSource ="{Binding Data2}" XBindingPath="Year" 
-	YBindingPath="Value"/>
+								YBindingPath="Value"/>
 
 	<chart:StackingBar100Series ItemsSource ="{Binding Data3}" XBindingPath="Year" 
-	YBindingPath="Value"/>
+								YBindingPath="Value"/>
 
 </chart:SfChart>
 
@@ -854,7 +854,7 @@ chart.Series.Add(bubbleSeries);
 ...
 
 	<chart:BubbleSeries ItemsSource ="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue" 
-	Size="Size"/>
+						Size="Size"/>
 
 </chart:SfChart>
 
@@ -906,7 +906,7 @@ To render a scatter chart, create an instance of `ScatterSeries` and add to the 
 ...
 
 	<chart:ScatterSeries ScatterHeight="15" ScatterWidth="15" ItemsSource ="{Binding Data}" 
-	XBindingPath="Year" YBindingPath="Value"/>
+						 XBindingPath="Year" YBindingPath="Value"/>
 
 </chart:SfChart>
 
@@ -977,7 +977,8 @@ chart.Series.Add(hiLoOpenCloseSeries);
 ...
 
 	<chart:HiLoOpenCloseSeries ItemsSource ="{Binding Data}" XBindingPath="Year" 
-	High="Value1" Low="Value2" Open="Value3" Close="Value4"/>
+							   High="Value1" Low="Value2"
+							   Open="Value3" Close="Value4"/>
 
 </chart:SfChart>
 
@@ -1018,8 +1019,14 @@ In OHLC chart, `BullFillColor` property is used to specify a fill color for the 
 
 {% highlight xaml %}
 
-<chart:HiLoOpenCloseSeries BearFillColor="Blue" BullFillColor="Purple" ItemsSource ="{Binding Data}" 
-XBindingPath="Year" High="Value1" Low="Value2" Open="Value3" Close="Value4"/>
+<chart:HiLoOpenCloseSeries BearFillColor="Blue" 
+						   BullFillColor="Purple"
+						   ItemsSource ="{Binding Data}" 
+						   XBindingPath="Year" 
+						   High="Value1" 
+						   Low="Value2" 
+						   Open="Value3" 
+						   Close="Value4"/>
 
 {% endhighlight %}
 
@@ -1087,7 +1094,7 @@ chart.Series.Add(candleSeries);
 ...
 
 	<chart:CandleSeries ItemsSource ="{Binding Data}" XBindingPath="Year" 
-	High="Value1" Low="Value2" Open="Value3" Close="Value4"/>
+						High="Value1" Low="Value2" Open="Value3" Close="Value4"/>
 
 </chart:SfChart>
 
@@ -1129,8 +1136,14 @@ In Candle chart, `BullFillColor` property is used to specify a fill color for th
 
 {% highlight xaml %}
 
-<chart:CandleSeries BearFillColor="Blue" BullFillColor="Purple" ItemsSource ="{Binding Data}" 
-XBindingPath="Year" High="Value1" Low="Value2" Open="Value3" Close="Value4" />
+<chart:CandleSeries BearFillColor="Blue"
+					BullFillColor="Purple"
+					ItemsSource ="{Binding Data}" 
+					XBindingPath="Year"
+					High="Value1"
+					Low="Value2"
+					Open="Value3"
+					Close="Value4" />
 
 {% endhighlight %}
 
@@ -1203,7 +1216,7 @@ You can use `CircularCoefficient` property to change the diameter of the pie ch
 {% highlight xaml %}
 
 <chart:PieSeries CircularCoefficient="0.5" ItemsSource ="{Binding Data}" XBindingPath="Expense" 
-YBindingPath="Value"/>
+				 YBindingPath="Value"/>
 
 {% endhighlight %}
 
@@ -1232,7 +1245,7 @@ You can explode a pie segment using `ExplodeIndex` property and specify the expl
 {% highlight xaml %}
 
 <chart:PieSeries ExplodeIndex="1" ItemsSource ="{Binding Data}" XBindingPath="Expense" 
-YBindingPath="Value"/>
+				 YBindingPath="Value"/>
 
 {% endhighlight %}
 
@@ -1261,7 +1274,7 @@ Using `ExplodeAll` property of `PieSeries`, you can explode all the pie segments
 {% highlight xaml %}
 
 <chart:PieSeries ExplodeAll="True" ItemsSource ="{Binding Data}" XBindingPath="Expense" 
-YBindingPath="Value"/>
+				 YBindingPath="Value"/>
 
 {% endhighlight %}
 
@@ -1290,7 +1303,7 @@ SfChart allows you to render all the data points/segments in semi-pie, quarter-p
 {% highlight xaml %}
 
 <chart:PieSeries StartAngle="180" EndAngle="360" ItemsSource ="{Binding Data}" XBindingPath="Expense" 
-YBindingPath="Value"/>
+				 YBindingPath="Value"/>
 
 {% endhighlight %}
 
@@ -1360,7 +1373,7 @@ You can change the doughnut chart inner radius using `DoughnutCoefficient` with
 {% highlight xaml %}
 
 <chart:DoughnutSeries DoughnutCoefficient="0.6" ItemsSource ="{Binding Data}" XBindingPath="Expense" 
-YBindingPath="Value" />
+					  YBindingPath="Value" />
 
 {% endhighlight %}
 
@@ -1389,7 +1402,7 @@ You can use the `CircularCoefficient` property to change the diameter of the do
 {% highlight xaml %}
 
 <chart:DoughnutSeries CircularCoefficient="0.5"  ItemsSource ="{Binding Data}" XBindingPath="Expense" 
-YBindingPath="Value" />
+					  YBindingPath="Value" />
 
 {% endhighlight %}
 
@@ -1418,7 +1431,7 @@ Exploding a specific doughnut segment, you have to set the index to be exploded 
 {% highlight xaml %}
 
 <chart:DoughnutSeries ExplodeIndex="1" ItemsSource ="{Binding Data}" XBindingPath="Expense" 
-YBindingPath="Value" />
+					  YBindingPath="Value" />
 
 {% endhighlight %}
 
@@ -1447,7 +1460,7 @@ To explode all the segments, you have to enable `ExplodeAll` property of the ser
 {% highlight xaml %}
 
 <chart:DoughnutSeries ExplodeAll="True" ItemsSource ="{Binding Data}" XBindingPath="Expense" 
-YBindingPath="Value" />
+					  YBindingPath="Value" />
 
 {% endhighlight %}
 
@@ -1476,7 +1489,7 @@ SfChart allows you to render all the data points/segments in semi-doughnut, quar
 {% highlight xaml %}
 
 <chart:DoughnutSeries StartAngle="180" EndAngle="360" ItemsSource ="{Binding Data}" 
-XBindingPath="Expense" YBindingPath="Value" />
+					  XBindingPath="Expense" YBindingPath="Value" />
 
 {% endhighlight %}
 
@@ -1546,7 +1559,7 @@ You can render the pyramid series as linear or surface mode. In linear mode, hei
 {% highlight xaml %}
 
 <chart:PyramidSeries ItemsSource ="{Binding Data}" PyramidMode="Surface" XBindingPath="Country" 
-YBindingPath="Value"/>
+					 YBindingPath="Value"/>
 
 {% endhighlight %}
 
@@ -1575,7 +1588,7 @@ You can control the gap between the two segments using `GapRatio` property. Its 
 {% highlight xaml %}
 
 <chart:PyramidSeries ItemsSource ="{Binding Data}" GapRatio="0.1" XBindingPath="Country" 
-YBindingPath="Value"/>
+				     YBindingPath="Value"/>
 
 {% endhighlight %}
 
@@ -1604,7 +1617,7 @@ You can explode a pyramid segment using `ExplodeIndex` property, and `ExplodeOff
 {% highlight xaml %}
 
 <chart:PyramidSeries ItemsSource ="{Binding Data}" ExplodeIndex="2" XBindingPath="Country" 
-YBindingPath="Value" />
+					 YBindingPath="Value" />
 
 {% endhighlight %}
 
@@ -1673,7 +1686,7 @@ You can control the gap between the two segments using `GapRatio` property. Its 
 {% highlight xaml %}
 
 <chart:FunnelSeries ItemsSource ="{Binding Data}" GapRatio="0.1" XBindingPath="Year" 
-YBindingPath="Value"/>
+				    YBindingPath="Value"/>
 
 {% endhighlight %}
 
@@ -1702,7 +1715,7 @@ You can explode a pyramid segment using `ExplodeIndex` property and `ExplodeOffs
 {% highlight xaml %}
 
 <chart:FunnelSeries ItemsSource ="{Binding Data}" ExplodeIndex="1" XBindingPath="Status" 
-YBindingPath="Value" />
+				    YBindingPath="Value" />
 
 {% endhighlight %}
 
@@ -1731,7 +1744,7 @@ You can change the minimum width of the funnel neck using `MinWidth` property of
 {% highlight xaml %}
 
 <chart:FunnelSeries ItemsSource ="{Binding Data}" MinWidth="20" XBindingPath="Year" 
-YBindingPath="Value"/>
+				    YBindingPath="Value"/>
 
 {% endhighlight %}
 

@@ -129,14 +129,6 @@ android\Syncfusion.SfChart.Andriod.dll
 
 android\Syncfusion.SfChart.XForms.Andriod.dll
 
-### iOS(Classic) project
-
-ios\Syncfusion.SfChart.iOS.dll 
-
-ios\Syncfusion.SfChart.XForms.iOS.dll
-
-ios\Syncfusion.SfChart.XForms.dll
-
 ### iOS(Unified) project
 
 ios-unified\Syncfusion.SfChart.iOS.dll 

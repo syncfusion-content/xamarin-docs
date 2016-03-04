@@ -11,7 +11,7 @@ documentation: ug
 
 # GETTING STARTED 
 
-This section explains how to configure a Barcode for Xamarin Forms application. The following screenshot illustrates the final output of barcode on iOS, Android and Windows Phone devices.
+This section explains how to configure a Barcode for Xamarin.Forms application. The following screenshot illustrates the final output of barcode on iOS, Android and Windows Phone devices.
 
 ![](getting-started_images/getting-started/getting-started.png)
 
@@ -159,7 +159,7 @@ Here, the following steps illustrates how to create and configure a barcode.
 {% endhighlight %}
 {% endtabs %}
 
-4. Specify the required symbology to encode the given text. By default<, the given text is encoded using Code 39 symbology.
+4. Specify the required symbology to encode the given text. By default, the given text is encoded using Code 39 symbology.
 
 {% tabs %}
 {% highlight xaml %}

@@ -129,6 +129,8 @@ android\Syncfusion.SfChart.Andriod.dll
 
 android\Syncfusion.SfChart.XForms.Andriod.dll
 
+android\Syncfusion.SfChart.XForms.dll 
+
 ### iOS(Unified) project
 
 ios-unified\Syncfusion.SfChart.iOS.dll 
@@ -142,6 +144,8 @@ ios-unified\Syncfusion.SfChart.XForms.dll
 wp8\Syncfusion.SfChart.WP8.dll
 
 wp8\Syncfusion.SfChart.XForms.WinPhone.dll
+
+wp8\Syncfusion.SfChart.XForms.dll 
 
 
 Currently an additional step is required for Windows Phone and iOS projects. We need to create an instance of the chart custom renderer as shown below. 

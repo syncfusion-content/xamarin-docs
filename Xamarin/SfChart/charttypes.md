@@ -153,7 +153,7 @@ To render a spline area chart, create an instance of `SplineAreaSeries` and add 
 
 * `Color` – used to change the color of the series.
 * `StrokeWidth` – used to change the stroke width of the series.
-* `StrokeColor` – used to change the stroke2 color of the series.
+* `StrokeColor` – used to change the stroke color of the series.
 
 {% tabs %} 
 

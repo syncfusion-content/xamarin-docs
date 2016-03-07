@@ -293,7 +293,7 @@ chart.Title = new ChartTitle ()
 
 In this sample, we will be visualize the temperature over the months using a Column Series. Before creating the series, let’s create a data model representing the climate details data. 
 
-In SfChart, the series itemsource should be a collection of _ChartDataPoint_ objects. Add the following class for generating the datapoints.
+In SfChart, the series ItemsSource should be a collection of _ChartDataPoint_ objects. Add the following class for generating the datapoints.
 
 
 {% highlight C# %}

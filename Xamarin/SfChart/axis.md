@@ -539,7 +539,7 @@ chart.SecondaryAxis = new LogarithmicAxis ();
 
 ![](axis_images/logaxis_img1.png)
 
-## Customizing the logarithmic range
+### Customizing the logarithmic range
 
 To customize the range of log axis, you can use the minimum and maximum properties of LogarithmicAxis. By default,nice range will be calculated automatically based on the provided data.
 
@@ -580,7 +580,7 @@ chart.SecondaryAxis = new LogarithmicAxis() {
 
 ![](axis_images/logaxis_img2.png)
 
-## Customizing the logarithmic base
+### Customizing the logarithmic base
 
 To customize the log base value, you can use LogarithmicBase property.
 

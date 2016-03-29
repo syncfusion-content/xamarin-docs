@@ -11,7 +11,7 @@ documentation: ug
 
 # GAUGE TYPE
 
-SfCircularGauge type is determined by positioning the control towards particular direction. GaugeType is an enum property that provides the option to select type of the SfCircularGauge type, which contains following options.
+`SfCircularGauge` type is determined by positioning the control towards particular direction. `GaugeType` is an enum property that provides the option to select type of the SfCircularGauge type, which contains following options.
 
 * Default,
 * East,

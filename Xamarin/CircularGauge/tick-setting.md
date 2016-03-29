@@ -15,11 +15,11 @@ Ticks help you identify the gauge’s data value by marking the gauge scale in r
 
 ## Tick Customization  
 
-The **Interval** property is used to calculate the tick count for a scale. Like ticks, minor ticks are calculated using the **MinorTicksPerInterval** property.
+The `Interval` property is used to calculate the tick count for a scale. Like ticks, minor ticks are calculated using the `MinorTicksPerInterval` property.
 
-A tick’s length, color, and thickness are set by the **Length**, **Color** and **Thickness** UI properties.
+A tick’s length, color, and thickness are set by the `Length`, `Color` and `Thickness` UI properties.
 
-The tick’s position from the rim is set using the **Offset** property.
+The tick’s position from the rim is set using the `Offset` property.
 
 {% highlight c# %}
 

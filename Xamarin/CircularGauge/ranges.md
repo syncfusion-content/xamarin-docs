@@ -15,7 +15,7 @@ A range is a visual element which begins and ends at specified values within a s
 
 ## Ranges Customization
 
-Ranges start and end values are set by the **StartValue** and **EndValue** properties of the range. A range’s UI is customized by the **Color** and **Thickness** properties.
+`Ranges` start and end values are set by the `StartValue` and `EndValue` properties of the range. A range’s UI is customized by the `Color` and `Thickness` properties.
 
 {% highlight c# %}
 
@@ -42,7 +42,7 @@ Ranges start and end values are set by the **StartValue** and **EndValue** prope
 
 ## Range Offset
 
-The range can be placed inside the scale, outside the scale, or on the scale by setting Offset property.
+The range can be placed inside the scale, outside the scale, or on the scale by setting `Offset` property.
 
 {% highlight c# %}
 

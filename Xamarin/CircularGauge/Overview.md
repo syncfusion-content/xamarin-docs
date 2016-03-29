@@ -17,14 +17,14 @@ Essential Gauge for Xamarin.Forms lets you visualize numeric values over a circu
 
 A **SfCircularGauge** is composed of a Scales that will be an integrated UI part of the SfCircularGauge.
 
-SfCircularGauge is composite UI element with following subparts:
+`SfCircularGauge` is composite UI element with following subparts:
 
 1. Scales
 2. Ranges
 3. Pointers
 4. Headers
 
-The Circular Gauge control is a highly customizable control with a variety of simple APIs to modify the basic look and feel of the SfCircularGauge. You can position the ranges, ticks, labels and range pointers as needed.
+The Circular Gauge control is a highly customizable control with a variety of simple APIs to modify the basic look and feel of the `SfCircularGauge`. You can position the ranges, ticks, labels and range pointers as needed.
 
 * **Scales** - The circular gauge scale contains labels, tick marks and a rim to specify the basic look and feel of the circular gauge. It defines the start angle, sweep direction and sweep angle, overall minimum and maximum values, and the frequency of labels and tick marks.
 * **Ranges** - A range is a visual element which depicts the start and end values of inner divisions within the scale’s range. Each scale is capable of displaying one or more ranges, and each range can depict different zones or regions of same metrics, such as high, low, and average temperatures.

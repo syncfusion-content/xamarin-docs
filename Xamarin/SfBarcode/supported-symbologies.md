@@ -1,4 +1,4 @@
----
+﻿---
 
 layout: post
 title: Supported Symbologies in Syncfusion SfBarcode control for Xamarin.Forms
@@ -30,7 +30,7 @@ One dimensional Barcode is also called as linear Barcode. The bars and spaces si
 
 ### Codabar
 
-Codabar is a discrete numeric symbology that is used in libraries, blood banks and a variety of other information processing applications.
+`Codabar` is a discrete numeric symbology that is used in libraries, blood banks and a variety of other information processing applications.
 
 * Encodes only numeric characters and some special characters like dash (-), colon (:), slash (/), plus (+).
 * Each character has three bars and four spaces.
@@ -44,13 +44,13 @@ Codabar is a discrete numeric symbology that is used in libraries, blood banks a
 
 ![](supported-symbologies_images/codabar/CodaBar.png)
 
-Codabar bar code
+Codabar barcode
 
 {:.caption}
 
 ### Code 11
 
-Code 11 symbology is used mainly for labeling the telecommunications equipment and it has the following structure.
+`Code11` Symbology is used mainly for labeling the telecommunications equipment and it has the following structure.
 
 * Allows character set of digits (0-9), dash (-).
 * Each character is encoded with 3 bars and 2 spaces.
@@ -64,13 +64,13 @@ Code 11 symbology is used mainly for labeling the telecommunications equipment a
 
 ![](supported-symbologies_images/code11/Code11.png)
 
-Code 11 bar code
+Code 11 barcode
 
 {:.caption}
 
 ### Code 32
 
-Code32 is mainly used for coding pharmaceuticals, cosmetics and dietetics and it contains the following structure:
+`Code32` is mainly used for coding pharmaceuticals, cosmetics and dietetics and it contains the following structure:
 
 * Starts with ‘A’ character (ASCII 65) that is not really encoded.
 * Encodes only the character set of length 8.
@@ -85,13 +85,13 @@ Code32 is mainly used for coding pharmaceuticals, cosmetics and dietetics and it
 
 ![](supported-symbologies_images/code32/Code32.png)
 
-Code32 bar code
+Code32 barcode
 
 {:.caption}
 
 ### Code 39
 
-Code 39 is a symbology of Barcode that encodes alphanumeric characters into a series of bars. It may be of any length, although more than 25 characters begin to push the bounds. This symbology is the only type of the Barcode in common use that does not require a checksum.
+`Code39` is a Symbology of Barcode that encodes alphanumeric characters into a series of bars. It may be of any length, although more than 25 characters begin to push the bounds. This Symbology is the only type of the Barcode in common use that does not require a checksum.
 
 * Allows character set of digits (0-9), upper case alphabets (A-Z), and symbols like space, minus (-), plus (+), period (.), dollar sign ($), slash (/), and percent (%).
 * Always starts and ends with an asterisk (*) symbol, termed as start and stop character.
@@ -105,13 +105,13 @@ Code 39 is a symbology of Barcode that encodes alphanumeric characters into a se
 
 ![](supported-symbologies_images/code39/Code39.png)
 
-Code 39 bar code
+Code 39 barcode
 
 {:.caption}
 
 ### Code 39 Extended
 
-Code 39 Extended symbology is an extended version of Code 39 that supports full ASCII character set. So, it encodes lower case alphabets (a-z) as well as special characters in the keyboard.
+`Code39 Extended` Symbology is an extended version of `Code39` that supports full ASCII character set. So, it encodes lower case alphabets (a-z) as well as special characters in the keyboard.
 {% highlight c# %}
 
     barcode.Symbology = BarcodeSymbolType.Code39Extended;
@@ -120,16 +120,16 @@ Code 39 Extended symbology is an extended version of Code 39 that supports full 
 
 ![](supported-symbologies_images/code39_extended/Code39Extended.png)
 
-Extended Code 39 bar code
+Extended Code 39 barcode
 
 {:.caption}
 
 ### Code 93
 
-Code 93 is designed to complement and improve upon Code 39. It represents the full ASCII character set by using the combination of 2 characters. It is a continuous, variable-length symbology and it produces denser code.
+`Code93` is designed to complement and improve upon `Code39`. It represents the full ASCII character set by using the combination of 2 characters. It is a continuous, variable-length symbology and it produces denser code.
 
 * Encodes character set of uppercase alphabets (A-Z), digits (0-9), and special characters like asterisk (*), dash (-), dollar ($), percent (%), Space, dot (.), slash (/), and plus (+).
-* The asterisk (*) is not a true encoding character, but it is the start and stop symbol for Code 93 symbology.
+* The asterisk (*) is not a true encoding character, but it is the start and stop symbol for `Code93` `Symbology`.
 
 {% highlight c# %}
 
@@ -139,13 +139,13 @@ Code 93 is designed to complement and improve upon Code 39. It represents the fu
 
 ![](supported-symbologies_images/code93/Code93.png)
 
-Code93 bar code 
+Code93 barcode 
 
 {:.caption}
 
 ### Code 93 Extended
 
-Code 93 is designed to complement and improve upon Code 39. It represents the full ASCII character set by using the combination of 2 characters. It is a continuous, variable-length symbology and it produces denser code.
+`Code93` is designed to complement and improve upon Code 39. It represents the full ASCII character set by using the combination of 2 characters. It is a continuous, variable-length Symbology and it produces denser code.
 
 * Encodes character set of uppercase alphabets (A-Z), digits (0-9), and special characters like asterisk (*), dash (-), dollar ($), percent (%), Space, dot (.), slash (/), and plus (+).
 * The asterisk (*) is not a true encoding character, but it is the start and stop symbol for Code 93 symbology.
@@ -159,17 +159,17 @@ Code 93 is designed to complement and improve upon Code 39. It represents the fu
 
 ![](supported-symbologies_images/code93_extended/Code93Extended.png)
 
-Code93 Extended bar code
+Code93 Extended barcode
 
 {:.caption}
 
 ### Code 128
 
-Code 128 is a variable length, high density, alphanumeric, linear Barcode symbology. It is capable of encoding full ASCII character set and extended character sets. This symbol includes a checksum digit for verification and the Barcode may also be verified character-by-character for parity of each data byte.
+`Code128` is a variable length, high density, alphanumeric, linear Barcode Symbology. It is capable of encoding full ASCII character set and extended character sets. This symbol includes a checksum digit for verification and the Barcode may also be verified character-by-character for parity of each data byte.
 
 #### Code 128 A
 
-Code 128 A (or Chars Set A) includes all the standard upper case U.S. alphanumeric keyboard characters and punctuation characters together with the control characters, (characters with ASCII values from 0 to 95 inclusive), and seven special characters.
+`Code128A` (or Chars Set A) includes all the standard upper case U.S. alphanumeric keyboard characters and punctuation characters together with the control characters, (characters with ASCII values from 0 to 95 inclusive), and seven special characters.
 
 {% highlight c# %}
 
@@ -179,13 +179,13 @@ Code 128 A (or Chars Set A) includes all the standard upper case U.S. alphanumer
 
 ![](supported-symbologies_images/code128A/Code128A.png)
 
-Code128A bar code
+Code128A barcode
 
 {:.caption}
 
 #### Code128 B
 
-Code 128 B (or Chars Set B) includes all the standard upper case alphanumeric keyboard characters and punctuation characters together with the lower case alphabetic characters (characters with ASCII values from 32 to 127 inclusive), and seven special characters.
+`Code128B` (or Chars Set B) includes all the standard upper case alphanumeric keyboard characters and punctuation characters together with the lower case alphabetic characters (characters with ASCII values from 32 to 127 inclusive), and seven special characters.
 
 {% highlight c# %}
 
@@ -195,13 +195,13 @@ Code 128 B (or Chars Set B) includes all the standard upper case alphanumeric ke
 
 ![](supported-symbologies_images/code128B/Code128B.png)
 
-Code128B bar code
+Code128B barcode
 
 {:.caption}
 
 #### Code128 C
 
-Code 128 C (or Chars Set C) includes a set of 100 digit pairs from 00 to 99 inclusive, as well as three special characters. This allows numeric data to be encoded as two data digits per symbol character effectively twice the density of standard data.
+`Code128C` (or Chars Set C) includes a set of 100 digit pairs from 00 to 99 inclusive, as well as three special characters. This allows numeric data to be encoded as two data digits per symbol character effectively twice the density of standard data.
 
 {% highlight c# %}
 
@@ -211,7 +211,7 @@ Code 128 C (or Chars Set C) includes a set of 100 digit pairs from 00 to 99 incl
 
 ![](supported-symbologies_images/code128C/Code128C.png)
 
-Code128C bar code
+Code128C barcode
 
 {:.caption}
 

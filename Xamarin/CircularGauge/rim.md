@@ -11,9 +11,9 @@ documentation: ug
 
 # RIM
 
-Scale determines the structure of the circular gauge using the circular rim. By setting the StartAngle, SweepDirection and SweepAngle properties, you can shape the circular gauge into a full circular gauge, half circular gauge, or quarter circular gauge.
+`Scale` determines the structure of the circular gauge using the circular rim. By setting the `StartAngle` and `SweepAngle` properties, you can shape the circular gauge into a full circular gauge, half circular gauge, or quarter circular gauge.
 
-The **StartValue** and **EndValue** properties will determine the overall range of the circular rim. The rim’s color and thickness can be set using the **RimColor** and **RimThickness** properties.
+The `StartValue` and `EndValue` properties will determine the overall range of the circular rim. The rim’s color and thickness can be set using the `RimColor` and `RimThickness` properties.
 
 {% highlight c# %}
 

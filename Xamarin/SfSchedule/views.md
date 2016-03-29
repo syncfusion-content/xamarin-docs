@@ -10,11 +10,11 @@ documentation: ug
 
 # VIEWS
 
-Schedule control provides four different types of views to display dates. Day view, Week view, WorkWeek view and month view. It can be assigned to the schedule control by using `ScheduleView` property. Based on the user’s preference appointments can be viewed in any of the four type of view available. By default schedule control is assigned with day view.
+Schedule control provides four different types of views to display dates. `DayView`, `WeekView`, `WorkWeekView` and `MonthView`. It can be assigned to the schedule control by using `ScheduleView` property. Based on the user’s preference appointments can be viewed in any of the four type of view available. By default schedule control is assigned with day view.
 
 ## Day View
 
-Day view is used to display a single day, current day will be visible by default. Appointments on a specific day will be arranged in respective timeslots based on its duration.
+DayView is used to display a single day, current day will be visible by default. Appointments on a specific day will be arranged in respective timeslots based on its duration.
 
 {% highlight c# %}
 
@@ -34,19 +34,19 @@ Day view is used to display a single day, current day will be visible by default
 
 #### Date Time Formatting
 
-You can format the time string in the schedule control using `DayLabelSettings` of DayViewSettings.
+You can format the time string in the schedule control using `DayLabelSettings` of `DayViewSettings`.
 
 #### Non-Accessible Blocks
 
-You can restrict/allocate certain timeslot as Non-accessible block using `NonAccessibleBlocks` of DayViewSettings, so that you can allocate those timeslots for predefined events/activities like Lunch hour.
+You can restrict/allocate certain timeslot as Non-accessible block using `NonAccessibleBlocks` of `DayViewSettings`, so that you can allocate those timeslots for predefined events/activities like Lunch hour.
 
 #### Working Hours
 
-You can differentiate working hours with non-working hour timeslots by its color using `WorkStartHour` and `WorkEndHour` properties of DayViewSettings.
+You can differentiate working hours with non-working hour timeslots by its color using `WorkStartHour` and `WorkEndHour` properties of `DayViewSettings`.
 
 #### All Day Appointments Panel
 
-You can view AllDay appointments in separate panel and the panel’s visibility can be enabled by setting `ShowAllDay` property of DayViewSettings as true. 
+You can view AllDay appointments in separate panel and the panel’s visibility can be enabled by setting `ShowAllDay` property of `DayViewSettings` as true. 
 
 {% highlight c# %}
 
@@ -103,19 +103,19 @@ To view all the seven days of a particular week, by default if will be current w
 
 #### Date Time Formatting
 
-You can format the time string in the schedule control using `WeekLabelSettings` of WeekViewSettings.
+You can format the time string in the schedule control using `WeekLabelSettings` of `WeekViewSettings`.
 
 #### Non-Accessible Blocks
 
-You can restrict/allocate certain timeslot as Non-accessible block using `NonAccessibleBlocks` of WeekViewSettings, so that you can allocate those timeslots for predefined events/activities like Lunch hour.
+You can restrict/allocate certain timeslot as Non-accessible block using `NonAccessibleBlocks` of `WeekViewSettings`, so that you can allocate those timeslots for predefined events/activities like Lunch hour.
 
 #### Working Hours
 
-You can differentiate working hours with non-working hour timeslots by its color using `WorkStartHour` and `WorkEndHour` properties of WeekViewSettings.
+You can differentiate working hours with non-working hour timeslots by its color using `WorkStartHour` and `WorkEndHour` properties of `WeekViewSettings`.
 
 #### All Day Appointments Panel
 
-You can view Allday appointments in separate panel and the panel’s visibility can be enabled by setting `ShowAllDay` property of WeekViewSettings as true. 
+You can view Allday appointments in separate panel and the panel’s visibility can be enabled by setting `ShowAllDay` property of `WeekViewSettings` as true. 
 
 {% highlight c# %}
     
@@ -152,7 +152,7 @@ Non-Accessible Block is not applicable in Windows Phone.
 
 ## Work Week View
 
-To view working days of a particular week, by default current work week will be displayed. Saturday and Sunday are the non-working days by default; it can be customized with any days in a week. Appointments arranged in timeslots based on its duration with respective day of the week.
+To view working days of a particular week, by default current work week will be displayed. Saturday and Sunday are the non-working days by default; it can be customized with any days in a WeekView. Appointments arranged in timeslots based on its duration with respective day of the week.
 
 {% highlight c# %}
 
@@ -172,19 +172,19 @@ To view working days of a particular week, by default current work week will be 
 
 #### Date Time Formatting
 
-You can format the time string in the schedule control using `WorkWeekLabelSettings` of WorkWeekViewSettings.
+You can format the time string in the schedule control using `WorkWeekLabelSettings` of `WorkWeekViewSettings`.
 
 #### Non-Accessible Blocks
 
-You can restrict/allocate certain timeslot as Non-accessible block using `NonAccessibleBlocks` of WorkWeekViewSettings, so that you can allocate those timeslots for predefined events/activities like Lunch hour.
+You can restrict/allocate certain timeslot as Non-accessible block using `NonAccessibleBlocks` of `WorkWeekViewSettings`, so that you can allocate those timeslots for predefined events/activities like Lunch hour.
 
 #### Working Hours
 
-You can differentiate working hours with non-working hour timeslots by its colour using `WorkStartHour` and `WorkEndHour`  properties of WorkWeekViewSettings.
+You can differentiate working hours with non-working hour timeslots by its colour using `WorkStartHour` and `WorkEndHour`  properties of `WorkWeekViewSettings`.
 
 #### All Day Appointments Panel
 
-You can view Allday appointments in separate panel and the panel’s visibility can be enabled by setting `ShowAllDay`  property of WorkWeekViewSettings as true. 
+You can view Allday appointments in separate panel and the panel’s visibility can be enabled by setting `ShowAllDay`  property of `WorkWeekViewSettings` as true. 
 
 {% highlight c# %}
 
@@ -244,15 +244,15 @@ To view entire dates of a particular month, by default current month will be dis
 #### Date Time formatting
 
 You can format the date and day string in the schedule control using 
-[MonthLabelSettings](#_VIEWS "") of MonthViewSettings.
+`MonthLabelSettings` of `MonthViewSettings`.
 
 #### Blackout dates
 
-You can restrict/allocate certain month cell as blackout days using `BlackoutDates` of MonthViewSettings, so that we can allocate those cells for predefined events/activities like Scheduled maintenance, planned leave etc.
+You can restrict/allocate certain month cell as blackout days using `BlackoutDates` of `MonthViewSettings`, so that we can allocate those cells for predefined events/activities like Scheduled maintenance, planned leave etc.
 
 #### Week number
 
-You display the week number of the year in month view by setting `showWeekNumber` in property of MonthViewSettings are true. By default it is false.
+You display the week number of the year in month view by setting `ShowWeekNumber` in property of `MonthViewSettings` are true. By default it is false.
 
 {% highlight c# %}
 

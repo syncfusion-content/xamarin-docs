@@ -12,7 +12,7 @@ documentation: ug
 
 ## Move to Date 
 
-Visible dates can be moved to specific date using “MoveToDate” method available in SfSchedule. It will move to any specific date if the [ScheduleView](/xamarin/sfschedule/views "Schedule Views") is Day View, similarly it will move to the specific week if it is week view and to specific month if it is month view.
+Visible dates can be moved to specific date using `MoveToDate` method available in `SfSchedule`. It will move to any specific date if the [ScheduleView](/xamarin/sfschedule/views "Schedule Views") is Day View, similarly it will move to the specific week if it is week view and to specific month if it is month view.
 
 
 {% highlight c# %}
@@ -26,11 +26,11 @@ Visible dates can be moved to specific date using “MoveToDate” method availa
 {% endhighlight %}
 
 >**NOTE**:
-The specified date should lies between`MinDisplayDate` and `MaxDisplayDate`, if the specified date is greater than “maxDisplayDate” then the view moved to maxDisplayDate similarly if the specified date is lesser than the “minDisplayDate” then the view moved to minDisplayDate.
+The specified date should lies between `MinDisplayDate` and `MaxDisplayDate`, if the specified date is greater than `MaxDisplayDate` then the view moved to `MaxDisplayDate` similarly if the specified date is lesser than the `MinDisplayDate` then the view moved to `MinDisplayDate`.
 
 ## Enable/disable navigation
 
-By default Schedule views can be moved backwards and forwards using touch swipe gesture. This navigation, using touch gesture can be enabled and disabled using `EnableNavigation` property available in Schedule control. By default this is enabled.
+By default Schedule views can be moved backwards and forwards using touch swipe gesture. This navigation, using touch gesture can be enabled and disabled using `EnableNavigation` property available in `SfSchedule`. By default this is enabled.
 
 {% highlight c# %}
 
@@ -41,9 +41,9 @@ By default Schedule views can be moved backwards and forwards using touch swipe 
 
 ## Min Max dates.
 
-Visible dates can be restricted between certain range of dates using`minDisplayDate`and`maxDisplayDate`properties available in Schedule control. It is applicable in all the schedule views.
+Visible dates can be restricted between certain range of dates using `MinDisplayDate` and `MaxDisplayDate` properties available in Schedule control. It is applicable in all the schedule views.
 
-So that beyond the min max date range, it will restrict date navigations features of moveToDate () and also can’t swipe the control using touch gesture beyond the min max date range. Also, beyond the min max date range, selection will also not works for month view. So that tapped listeners while tapped on the monthcell will not be listened. Thus Inline feature in month view will works only within the min max date range.
+So that beyond the min max date range, it will restrict date navigations features of `MoveToDate()` and also can’t swipe the control using touch gesture beyond the min max date range. Also, beyond the min max date range, selection will also not works for `MonthView`. So that tapped listeners while tapped on the monthcell will not be listened. Thus inline feature in month view will works only within the min max date range.
 
 {% highlight c# %}
 
@@ -66,7 +66,7 @@ So that beyond the min max date range, it will restrict date navigations feature
 
 ## Inline
 
-By enabling Inline feature in month view, while touch the month view cell, appointments available in a particular day will be listed in inline view. 
+By enabling `ShowAppointmentsInline` feature in `MonthView`, while touch the month view cell, appointments available in a particular day will be listed in inline View. 
 
 {% highlight c# %}
 
@@ -94,7 +94,7 @@ By enabling Inline feature in month view, while touch the month view cell, appoi
 
 ## FirstDay of the Week
 
-By default schedule control will be rendered with Sunday as the first day of the week, it can be customized to any day of the week by `FirstDayOfWeek` property of SfSchedule.
+By default schedule control will be rendered with Sunday as the first day of the week, it can be customized to any day of the week by `FirstDayOfWeek` property of `SfSchedule`.
 
 {% highlight c# %}
 

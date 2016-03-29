@@ -72,7 +72,7 @@ wp81\ Syncfusion.SfGauge.XForms.dll
 
 Currently an additional step is required for Windows Phone and iOS projects. We need to create an instance of the chart custom renderer as shown below.
 
-Create an instance of SfGaugeRenderer in MainPage constructor in of the Windows Phone project as shown.
+Create an instance of `SfGaugeRenderer` in MainPage constructor in of the Windows Phone project as shown.
 {% highlight c# %}
 
     public MainPage ()
@@ -83,7 +83,7 @@ Create an instance of SfGaugeRenderer in MainPage constructor in of the Windows 
     }
 {% endhighlight %}
 
-Create an instance of SfGaugeRenderer in Finished Launching overridden method of App Delegate class in iOS Project as shown below
+Create an instance of `SfGaugeRenderer` in Finished Launching overridden method of App Delegate class in iOS Project as shown below
 
 {% highlight c# %}
 
@@ -125,7 +125,7 @@ You can assign a unique header to **SfCircularGauge** by making use of **Header*
 
 ## Configuring Scales
 
-You can configure the **CircularScale** elements by making use of following API’s available in SfCircularGage.
+You can configure the **CircularScale** elements by making use of following API’s available in `SfCircularGage`.
 
 They are:
 
@@ -155,7 +155,7 @@ They are:
 
 ## Adding Ranges
 
-You can add ranges to SfCircularGauge by creating ranges collection using **Ranges**.
+You can add ranges to `SfCircularGauge` by creating ranges collection using **Ranges**.
 
 {% highlight c# %}
 
@@ -172,7 +172,7 @@ You can add ranges to SfCircularGauge by creating ranges collection using **Rang
 
 ## Adding a Needle Pointer
 
-You can create a needle pointer and associate it with a scale to display the current value.
+You can create a `NeedlePointer` and associate it with a scale to display the current value.
 
 {% highlight c# %}
 
@@ -190,7 +190,7 @@ You can create a needle pointer and associate it with a scale to display the cur
 
 ## Adding a Range Pointer
 
-A range pointer provides an alternative way of indicating the current value.
+A `RangePointer` provides an alternative way of indicating the current value.
 
 {% highlight c# %}
     

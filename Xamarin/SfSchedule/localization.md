@@ -12,7 +12,7 @@ documentation: ug
 
 # LOCALIZATION 
 
-Schedule control is available with complete localisation support. Localization can be specified by setting the Locale property of the control. In the format of `Language code` followed by `Country code`.  Based on the locale specified the strings in the control such as Date, time, days are localised accordingly.
+Schedule control is available with complete localisation support. Localization can be specified by setting the `Locale` property of the control. In the format of `Language code` followed by `Country code`.  Based on the locale specified the strings in the control such as Date, time, days are localised accordingly.
 
 By default schedule control is available with **en**-**US** locale. 
 

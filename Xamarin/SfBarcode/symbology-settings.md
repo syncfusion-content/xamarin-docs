@@ -11,22 +11,22 @@ documentation: ug
 
 # SYMBOLOGY SETTINGS
 
-Each and every Barcode symbology can be personalized with optional settings that may affect the appearance of specific Barcode.
+Each and every Barcode `Symbology` can be personalized with optional settings that may affect the appearance of specific Barcode.
 
 ## One Dimensional Barcode settings
 
 One dimensional Barcodes can be customized by using the following properties and they are commonly used for all the categories of supported one dimensional Barcodes.
 
-* By setting the Bar Height property, the height of the linear bars can be changed.
-* By setting the Narrow Bar Width property, the width ratio of the wide and narrow bars can be customized.
+* By setting the `BarHeight` property, the height of the linear bars can be changed.
+* By setting the `NarrowBarWidth` property, the width ratio of the wide and narrow bars can be customized.
 
 One dimensional Barcodes can also have error detection settings.
 
-* By enabling the EncodeStartStopSymbols property, start and stop symbols are added to signal a Barcode reader that a Barcode has been scanned.
-* The EnableCheckDigit property enables or disables the redundancy check by using a check digit that is the decimal equivalent of a binary parity bit.
-* With the help of ShowCheckDigit property, the check digit can be shown or hidden.
+* By enabling the `EncodeStartStopSymbols` property, start and stop symbols are added to signal a Barcode reader that a Barcode has been scanned.
+* The `EnableCheckDigit` property enables or disables the redundancy check by using a check digit that is the decimal equivalent of a binary parity bit.
+* With the help of `ShowCheckDigit` property, the check digit can be shown or hidden.
 
-The following code example shows how to change the settings of the Code 39 linear Barcode.
+The following code example shows how to change the settings of the `Code39` linear Barcode.
 
 {% highlight xaml %}
 
@@ -44,11 +44,11 @@ Similarly, you can specify the settings of other linear Barcodes corresponding t
 
 ## Two Dimensional Barcode Settings
 
-Two dimensional Barcodes are customized by using the xDimension property that modifies its block size and it is commonly used for all kinds of supported two dimensional Barcodes.
+Two dimensional Barcodes are customized by using the `XDimension` property that modifies its block size and it is commonly used for all kinds of supported two dimensional Barcodes.
 
 ### Data Matrix Settings
 
-The Data Matrix symbology can be customized with the help of the following settings.
+The `DataMatrixSetting` can be customized with the help of the following settings.
 
 {% highlight xaml %}
 
@@ -62,8 +62,8 @@ The Data Matrix symbology can be customized with the help of the following setti
 
 {% endhighlight %}
 
-* The encoding property is used to specify the encoding technique from enumeration of DataMatrixEncoding that contains encoding techniques such as ASCII, ASCIINumeric, Auto and Base256.
-* The size property allows you to specify the size of the Barcode from a set of predefined sizes available in the DataMatrixSize enumeration.
+* The `Encoding` property is used to specify the encoding technique from enumeration of `DataMatrixEncoding` that contains encoding techniques such as ASCII, ASCIINumeric, Auto and Base256.
+* The `Size` property allows you to specify the size of the Barcode from a set of predefined sizes available in the `DataMatrixSize` enumeration.
 
 <table>
 <tr>
@@ -198,7 +198,7 @@ Rectangular matrix with 16 rows and 48 columns.</td></tr>
 
 ### QR Code Settings
 
-The QR code symbology can be customized by using the following settings.
+The `QRCode` symbology can be customized by using the following settings.
 
 {% highlight xaml %}
 
@@ -212,7 +212,7 @@ The QR code symbology can be customized by using the following settings.
 
 {% endhighlight %}
 
-* The Version property allows you to set various types of version for QR code from QRVersion enumeration. By default, its value is set as Auto.
+* The `Version` property allows you to set various types of version for QR code from `QRVersion` enumeration. By default, its value is set as Auto.
 
 <table>
 <tr>
@@ -381,7 +381,7 @@ Version40</td><td>
 Measures 177 x 177 modules</td></tr>
 </table>
 
-* The ErrorCorrectionLevel property employs error correction to generate a series of error correction code words that are added to the data code word sequence in order to enable the symbol to withstand damage without loss of data. By default, its value is set as Low.
+* The `ErrorCorrectionLevel` property employs error correction to generate a series of error correction code words that are added to the data code word sequence in order to enable the symbol to withstand damage without loss of data. By default, its value is set as Low.
 
 <table>
 <tr>
@@ -406,7 +406,7 @@ High</td><td>
 30</td></tr>
 </table>
 
-* The InputMode property allows you to select specific set of input characters. You may select the most suitable input mode. By default, its value is set as BinaryMode.
+* The `InputMode` property allows you to select specific set of input characters. You may select the most suitable input mode. By default, its value is set as BinaryMode.
 
 <table>
 <tr>

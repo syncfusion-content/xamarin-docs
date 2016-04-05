@@ -10,9 +10,9 @@ documentation: ug
 
 # RECURRENCE
 
-Recursive appointments can be created by enabling isRecursive property in Schedule appointments, to know more about adding appointments in the control, refer [Schedule Appointments](/xamarin/sfschedule/populating-appointment "Schedule Appointments").
+Recursive appointments can be created by enabling `IsRecursive` property in Schedule appointments, to know more about adding appointments in the control, refer [Schedule Appointments](/xamarin/sfschedule/populating-appointment "Schedule Appointments").
 
-And then need to set the RecurrenceRule to populate the required recursive appointment collection in a specific pattern.
+And then need to set the `RecurrenceRule` to populate the required recursive appointment collection in a specific pattern.
 
 Recursive appointment can be created in any recurrence patterns, for instance, some events can be repeated every week such as “Server maintenance”, and where as some of they may repeat every year like wedding anniversary. 
 
@@ -28,7 +28,7 @@ Recursive appointment can be created in any recurrence patterns, for instance, s
 
 ## RRule generator
 
-RecurrenceGenerator/ recurrence builder is available with the control to create RRule. RRule can be easily created through this engine by simple APIs available.
+`RecurrenceGenerator/RecurrenceBuilder` is available with the control to create `RecurrenceRule`. RRule can be easily created through this engine by simple APIs available.
 
 {% highlight c# %}
     

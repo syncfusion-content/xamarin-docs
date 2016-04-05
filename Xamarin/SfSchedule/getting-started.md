@@ -68,7 +68,7 @@ wp81\Syncfusion.SfSchedule.XForms.WinPhone.dll
 
 Currently an additional step is required for Windows Phone and iOS projects. We need to create an instance of the chart custom renderer as shown below.
 
-Create an instance of SfScheduleRenderer in MainPage constructor in of the Windows Phone project as shown
+Create an instance of `SfScheduleRenderer` in MainPage constructor in of the Windows Phone project as shown
 
 {% highlight c# %}
 
@@ -80,7 +80,7 @@ Create an instance of SfScheduleRenderer in MainPage constructor in of the Windo
     }
 {% endhighlight %}
 
-Create an instance of SfScheduleRenderer in Finished Launching overridden method of App Delegate class in iOS Project as shown below
+Create an instance of `SfScheduleRenderer` in Finished Launching overridden method of App Delegate class in iOS Project as shown below
 
 {% highlight c# %}
 
@@ -118,7 +118,7 @@ You can change the default UI of schedule using [ScheduleView](/xamarin/sfschedu
 
 ## Populating Events
 
-You can add events to the schedule by creating collection of ScheduleAppointments using ScheduleAppointmentColletion.
+You can add events to the schedule by creating collection of `ScheduleAppointment` using `ScheduleAppointmentColletion`.
 
 {% highlight c# %}
 
@@ -146,7 +146,7 @@ You can add events to the schedule by creating collection of ScheduleAppointment
 
 ## Populating Recursive Events
 
-You can also add recursive appointments to Schedule, refer [Recurrence](/xamarin/sfschedule/recurrence "Schedule Recursive Appointments") section to know more about creating the recursive appointments using Rrule generator in schedule.
+You can also add recursive appointments to Schedule, refer [Recurrence](/xamarin/sfschedule/recurrence "Schedule Recursive Appointments") section to know more about creating the recursive appointments using `RRuleGenerator` in schedule.
 
 {% highlight c# %}
 
@@ -182,7 +182,7 @@ You can also add recursive appointments to Schedule, refer [Recurrence](/xamarin
 
 ## Enabling Appointments Inline
 
-When the schedule appointments are viewed in Monthview, it will not display much information about the appointments, you can view the appointments in inline by setting `ShowAppointmentsInline` property of `MonthViewSettings` as `True`.
+When the schedule appointments are viewed in Monthview, it will not display much information about the appointments, you can view the appointments in inline by setting `ShowAppointmentsInline` property of `MonthViewSettings` as True.
 
 {% highlight c# %}
 

@@ -76,7 +76,7 @@ Essential Barcode for Xamarin is compatible with Xamarin. Forms 1.3.4.6332.
 
 Currently an additional step is required for Windows Phone and iOS projects. Create an instance of the Barcode custom renderer as mentioned.
 
-Create an instance of SfBarcodeRenderer in MainPage constructor in of the Windows Phone project as shown
+Create an instance of `SfBarcodeRenderer` in MainPage constructor in of the Windows Phone project as shown
 
 {% highlight c# %}
 
@@ -90,7 +90,7 @@ Create an instance of SfBarcodeRenderer in MainPage constructor in of the Window
 
 {% endhighlight %}
 
-Similarly, create an instance of SfBarcodeRenderer in Finished Launching overridden method of AppDelegate class in iOS Project as follows.
+Similarly, create an instance of `SfBarcodeRenderer` in Finished Launching overridden method of `AppDelegate` class in iOS Project as follows.
 
 {% highlight c# %}
     
@@ -127,7 +127,7 @@ Here, the following steps illustrates how to create and configure a barcode.
 {% endhighlight %}
 {% endtabs %}
 
-2. Create an instance of SfBarcode in XAML or code-behind using the reference of SfBarcode.
+2. Create an instance of `SfBarcode` in XAML or code-behind using the reference of `SfBarcode`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -159,7 +159,7 @@ Here, the following steps illustrates how to create and configure a barcode.
 {% endhighlight %}
 {% endtabs %}
 
-4. Specify the required symbology to encode the given text. By default, the given text is encoded using Code 39 symbology.
+4. Specify the required `Symbology` to encode the given text. By default, the given text is encoded using Code 39 `Symbology`.
 
 {% tabs %}
 {% highlight xaml %}

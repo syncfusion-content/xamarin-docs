@@ -49,7 +49,7 @@ SfDataGrid allows you to customize the height of a grid row on demand by handlin
 
 * RowIndex: The property RowIndex helps you to identify a particular row in the grid.
 * Height: This property sets and returns the height for a grid row on demand. Default line size for the rows is 50.
-* Handled: This property decides whether the specified height can be set to row or not. The default value is false. When this property is not set, the decided height is not set to the row.
+* Handled: This property decides whether the specified height can be set to row or not. The default value is `false`. When this property is not set, the decided height is not set to the row.
 
 The following code example illustrates how to hook the `SfDatagrid.QueryRowHeight` event and customize a row‘s height in SfDataGrid.
 

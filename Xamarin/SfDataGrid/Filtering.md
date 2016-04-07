@@ -9,9 +9,9 @@ documentation: UG
 
 # Filtering 
 
-SfDataGrid provides support to filter the records in view by setting the **SfDataGrid.View.Filter** property. You have to call the **SfDataGrid.View.RefreshFilter()** method after assigning the Filter property for refreshing the view.
+SfDataGrid provides support to filter the records in view by setting the `SfDataGrid.View.Filter` property. You have to call the `SfDataGrid.View.RefreshFilter()` method after assigning the Filter property for refreshing the view.
  
-The following code example illustrates how to apply filtering in SfDataGrid. FilterRecords method filters the data that contains the filterText value. Assign FilterRecords method to **SfDataGrid.View.Filter** predicate to filter the CustomerID column.
+The following code example illustrates how to apply filtering in SfDataGrid. `FilterRecords` method filters the data that contains the filterText value. Assign `FilterRecords` method to `SfDataGrid.View.Filter` predicate to filter the CustomerID column.
 
 {% highlight xaml %}
 //Filtering.xaml
@@ -64,7 +64,7 @@ private void OnFilterChanged()
 } 
 {% endhighlight %}
 
-The following code example illustrates the code for filtering the data using FilterRecords method in the ViewModel.
+The following code example illustrates the code for filtering the data using `FilterRecords` method in the ViewModel.
 
 {% highlight c# %}
 //ViewModel.cs

@@ -9,7 +9,7 @@ documentation: UG
 
 # Conditional Styles in Xamarin.Forms
 
-SfDatagrid allows you to apply cell styles for a [GridColumn](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn.html) that is used to render the cells in that column. When applied cell style the GridCell appears in the custom style rather than the default one. The following code example shows you how to apply cell style for a `GridColumn`.
+SfDatagrid allows you to apply cell styles for a `GridColumn` that is used to render the cells in that column. When applied cell style the `GridCell` appears in the custom style rather than the default one. The following code example shows you how to apply cell style for a `GridColumn`.
 
 {% highlight xaml %}
 <syncfusion:SfDataGrid x:Name="dataGrid"
@@ -26,7 +26,7 @@ SfDatagrid allows you to apply cell styles for a [GridColumn](http://help.syncfu
 </syncfusion:SfDataGrid> 
 {% endhighlight %}
 
-SfDatagrid also allows you to apply styles for the GridCells in a column based on conditions by writing a converter for the property in [GridCell](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridCell.html) for which conditional styles need to be applied.
+SfDatagrid also allows you to apply styles for the `GridCell` in a column based on conditions by writing a converter for the property in `GridCell` for which conditional styles need to be applied.
 
 The following code example shows you how to apply conditional styling for a column by writing converter in SfDatagrid.
 

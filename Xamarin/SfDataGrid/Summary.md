@@ -11,7 +11,7 @@ documentation: UG
 
 SfDataGrid displays the summaries for each Group using the [CaptionSummaryRowControl](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.CaptionSummaryRowControl.html#  “”) which carries the information about a particular Group like the Group name, number of items (records) in the Group, etc.
 
-SfDataGrid control allows you to display summaries for each Group. You can derive additional information from your data like Sum, Average, Maximum, Minimum and Count using Caption Summary. These summary values are computed for Groups using [SfDatagrid.GridSummaryRow](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSummaryRow.html#  “”) and [SfDatagrid.GridSummaryColumn](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSummaryColumn.html#  “”) that implements [ISummaryRow](http://help.syncfusion.com/cr/cref_files/xamarin/data/Syncfusion.Data.Portable~Syncfusion.Data.ISummaryRow.html#  “”) and [ISummaryColumn](http://help.syncfusion.com/cr/cref_files/xamarin/data/Syncfusion.Data.Portable~Syncfusion.Data.ISummaryColumn.html#  “”) interface.
+SfDataGrid control allows you to display summaries for each Group. You can derive additional information from your data like Sum, Average, Maximum, Minimum and Count using Caption Summary. These summary values are computed for Groups using [SfDatagrid.GridSummaryRow](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSummaryRow.html#  “”) and [SfDatagrid.GridSummaryColumn](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSummaryColumn.html#  “”) that implements [ISummaryRow](http://help.syncfusion.com/cr/cref_files/xamarin/data/Syncfusion.Data.Portable~Syncfusion.Data.ISummaryRow.html#  “”) and `IsummaryColumn` interface.
 
 ## GridSummaryRow
 
@@ -112,7 +112,7 @@ For example when you declare the format as “{Sum:c}”, the keyword “Sum” 
 
 You can use these function names only when you define the Format property.
 Second part denotes the format. The key word “c” denotes the string format that defines how the summary value is displayed.
-To know more about the string format values, you can refer the following MSDN link: [http://msdn.microsoft.com/en-us/library/dwhawy9k.aspx](http://msdn.microsoft.com/en-us/library/dwhawy9k.aspx#  “”).
+To know more about the string format values click [here](http://msdn.microsoft.com/en-us/library/dwhawy9k.aspx#  “”).
 
 The following code example illustrates how to declare the summaries in SfDataGrid in code behind and XAML.
 

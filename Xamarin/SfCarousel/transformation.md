@@ -1,7 +1,7 @@
 ---
 layout : post
 title : Transformation in Syncfusion Carousel control in Xamarin.Forms
-description : Learn how to set the Transformation in Carousel for Xamarin.Forms
+description : Learn how to set the Rotation Angle and Offset in Carousel for Xamarin.Forms
 platform : Xamarin
 control : Carousel
 documentation : ug
@@ -11,11 +11,9 @@ documentation : ug
 
 ## Rotation Angle
 
-Rotate all the items to a specified angle using `RotationAngle` property. 
+The `RotationAngle` property in the SfCarousel control is used to rotate all the items to a specified angle. 
 
-If the angle value is positive, then the rotation is in the clockwise direction. If the angle value is negative, the rotation is in the counterclockwise direction. 
-
-N> This angle can also be specified from 0 to 360.
+N> If the angle value is positive, then the rotation is in the clockwise direction. If the angle value is negative, the rotation is in the counterclockwise direction. 
 
 {% highlight C# %}
 
@@ -23,13 +21,13 @@ N> This angle can also be specified from 0 to 360.
 
 {% endhighlight %}
 
-![](images/rotation angle.png)
+![](images/rotationangle.png)
 
 ## Offset
 
-### Items Offset
+### Offset between items
 
-Specify the distance between the items in Carousel panel using `Offset` property.
+The `Offset` property used to specify the accurate distance between the items in Carousel panel.  
 
 N> The default value is 20.
 
@@ -41,11 +39,9 @@ N> The default value is 20.
 
 ![](images/offset.png)
 
-### Selected Item Offset
+### Offset around selected item
 
-Distance between the selected item and other items can be customized by using `SelectedItemOffset` property.
-
-N> The default value is 0.
+Distance between the selected item and other items can be customized by using `SelectedItemOffset` property of the SfCarousel control.
 
 {% highlight C# %}
 
@@ -55,7 +51,7 @@ N> The default value is 0.
 
 ### Scale Offset
 
-The ScaleOffset property in the SfCarousel control is used to scale all the items to the specified scale value.
+The `ScaleOffset` property in the SfCarousel control is used to scale all the items to the specified scale value.
 
 {% highlight C# %}
 	
@@ -63,5 +59,5 @@ The ScaleOffset property in the SfCarousel control is used to scale all the item
 
 {% endhighlight %}
 
-![](images/scale offset.png)
+![](images/scaleoffset.png)
 

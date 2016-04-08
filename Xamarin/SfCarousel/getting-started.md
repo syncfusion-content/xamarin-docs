@@ -1,18 +1,20 @@
----
+﻿---
 layout : post
-title : Getting Started with Syncfusion Carousel Control for Xamarin.Forms
-description : A quick tour to initial users on Syncfusion carousel control for iOS and Xamarin.Forms platform.
+title : Getting Started with Syncfusion Carousel control for Xamarin.Forms
+description : A quick tour to initial users on Syncfusion Carousel control for Xamarin.Forms platform.
 platform : Xamarin
 control : Carousel
 documentation : ug
 ---
 
-# GettingStarted
+# Getting Started
 
-This section explains you the steps to configure a Carousel control in a real-time scenario and also provides a walk-through on some of the customization features available in Carousel control.
+This section explains you the steps to configure a Carousel control in a real-time scenario and also provides a walk-through on some of the customization features available in Carousel control.
+
+![](images/gettingstarted.png)
 
 ## Referencing Essential Studio components in your solution
- 
+
 If you had acquired Essential Studio components through the Xamarin component store interface from within your IDE, then after adding the components to your Xamarin.iOS, Xamarin.Android and Windows Phone projects through the Component manager, you will still need to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL project in your solution. You can do this by manually adding the relevant PCL assembly references to your PCL project contained in the following path inside of your solution folder.
 
 Components/syncfusionessentialstudio-version/lib/pcl/
@@ -21,9 +23,9 @@ Alternatively if you had downloaded Essential Studio from Syncfusion.com or thro
 
 After installing Essential Studio for Xamarin, all the required assemblies can be found in the installation folders, typically
 
-{Syncfusion Installed location}\Essential Studio\12.2.0.40\lib
+{Syncfusion Installed location}\Essential Studio\syncfusionessentialstudio-version\lib
 
-Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\12.2.0.40\lib
+Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\lib
 
 Or after downloading through the Xamarin store web interface, all the required assemblies can be found in the below folder
 
@@ -31,74 +33,123 @@ Or after downloading through the Xamarin store web interface, all the required a
 
 You can then add the assembly references to the respective projects as shown below
 
-### PCL Project
+<table>
+<tr>
+<th>Project</th>
+<th>Required assemblies</th>
+</tr>
+<tr>
+<td>PCL</td>
+<td>pcl\Syncfusion.SfCarousel.XForms.dll</td>
+</tr>
+<tr>
+<td>Android</td>
+<td>android\Syncfusion.SfCarousel.Android.dll<br/>android\Syncfusion.SfCarousel.XForms.Android.dll</td>
+</tr>
+<tr>
+<td>iOS (Unified)</td>
+<td>ios-unified\Syncfusion.SfCarousel.iOS.dll<br/>ios-unified\Syncfusion.SfCarousel.XForms.iOS.dll<br/>ios-unified\Syncfusion.SfCarousel.XForms.dll</td>
+</tr>
+<tr>
+<td>WindowsPhone</td>
+<td>wp8\Syncfusion.SfInput.WP8.dll<br/>wp8\Syncfusion.SfShared.WP8.dll<br/>wp8\Syncfusion.SfCarousel.XForms.dll<br/>wp8\Syncfusion.SfCarousel.XForms.WinPhone.dll</td>
+</tr>
+<tr>
+<td>WindowsPhone 8.1</td>
+<td>wp81\Syncfusion.SfInput.WP.dll<br/>wp81\Syncfusion.SfShared.WP.dll<br/>wp81\Syncfusion.SfCarousel.XForms.dll<br/>wp81\Syncfusion.SfCarousel.XForms.WinPhone.dll</td>
+</tr>
+<tr>
+<td>WinRT</td>
+<td>winrt\Syncfusion.SfInput.WinRT.dll<br/>winrt\Syncfusion.SfShared.WinRT.dll<br/>winrt\Syncfusion.SfCarousel.XForms.dll<br/>winrt\Syncfusion.SfCarousel.XForms.WinRT.dll</td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>uwp\Syncfusion.SfCarousel.UWP.dll<br/>uwp\Syncfusion.SfCarousel.XForms.dll<br/>uwp\Syncfusion.SfCarousel.XForms.UWP.dll</td>
+</tr>
+</table>
 
-pcl\Syncfusion.SfCaarousel.XForm.dll
+Currently an additional step is required for Windows Phone, WindowsPhone 8.1 and iOS projects. We need to create an instance of the carousel custom renderer as shown below. 
 
-### Android Project
+Create an instance of SfCarouselRenderer in MainPage constructor of the Windows Phone and WindowsPhone 8.1  project as shown 
 
-android\Syncfusion. SfCarousel.Andriod.dll
+{% highlight C# %}
 
-android\Syncfusion. SfCarousel.xForms.Andriod.dll
+public MainPage()
 
-### IOS (Classic) Project
+{
 
-iOS\Syncfusion. SfCarousel.iOS.dll
+    new SfCarouselRenderer();
 
-iOS\Syncfusion. SfCarousel.xForms.iOS.dll
+    ...    
 
-iOS\Syncfusion. SfCarousel.XForm.dll
+}
 
-### IOS (Unified) Project
+{% endhighlight %}
 
-iOS-unified\Syncfusion.SfCarousel.iOS.dll
+Create an instance of SfCarouselRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below
 
-iOS-unified\Syncfusion.SfCarousel.xForms.iOS.dll
+{% highlight C# %}
 
-iOS-unified\Syncfusion.SfCarousel.XForm.dll
+public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
+{
 
-### Windows Phone Project
+    ...
 
-wp8\Syncfusion.SfCarousel.WP8.dll
+    new SfCarouselRenderer ();
 
-wp8\Syncfusion.SfCarousel.xForms.WinPhone.dll
+    ...
 
-## Adding and Configuring the Carousel Control
+}	
+
+{% endhighlight %}
+
+## Add and Configure the Carousel
 
 The Carousel control is configured entirely in C# code or by using XAML markup. The following steps explain on how to create a Carousel and configure its elements,
+
+* Adding reference to carousel.
+
+{% highlight C# %}
+
+	using Com.Syncfusion.Carousel; 
+
+{% endhighlight %}
+
 
 * Create an instance for SfCarousel.
 
 {% highlight C# %}
 
 	SfCarousel sfCarousel=new SfCarousel();
+	this.Content=sfCarousel;
 
 {% endhighlight %}
 
-* Carousel Customization - To enable offset, scale and angle customizations for items, set the values for `Offset`,`ScaleOffset` and `RotationAngle` properties.
+## Setting Offset
 
-{% highlight C# %}	
+Set the Offset property to specify the distance between the items in Carousel panel.
 
-	//Add list of images name in Array list
-	ArrayList temp=new ArrayList();
-	For(int i=1;i<18;i++)
-	{
-	SfCarouselItem item = new SfCarouselItem(this); 
-	item.ImageName="image"+i;
-	temp.Add(item);
-	}
-	//Set data source of carousel
-	carousel.SelectedIndex=2;
-	carousel.DataSource=temp;
+{% highlight C# %}
 
-	carousel.Offset=20;
-	carousel.SelectedItemOffset=0;
-	carousel.RotationAngle=40;
-	carousel.ScaleOffset=0.7f;
+	SfCarousel sfCarousel = new SfCarousel();
+	sfCarousel.SelectedIndex=2;
+	sfCarousel.Offset=20;
 
 {% endhighlight %}
 
 
-![](images/gettingstarted.png)
+## Setting Rotation Angle
+
+Set the RotationAngle property to decide the angle in which items should be rotated.
+
+{% highlight C# %}
+
+	SfCarousel sfCarousel = new SfCarousel();
+	sfCarousel.SelectedIndex=2;
+	sfCarousel.Offset=20;
+	SfCarousel.RotationAngle = 45;
+
+{% endhighlight %}
+
 

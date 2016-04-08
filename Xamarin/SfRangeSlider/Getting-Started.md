@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Syncfusion RangeSlider control for Xamarin.Forms
-description: A quick tour to initial users on Syncfusion rangeSlider control for Xamarin.Forms platform
+description: A quick tour to initial users on Syncfusion RangeSlider control for Xamarin.Forms platform
 platform: Xamarin
 control: RangeSlider
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains you the steps to configure a RangeSlider control in a real-time scenario and also provides a walk-through on some of the customization features available in RangeSlider control.
 
-![](Getting-Started_images/img2.png)
+![](images/RangeSlider.png)
 
 ## Referencing Essential Studio Components in Your Solution	
 
@@ -47,10 +47,6 @@ You can then add the assembly references to the respective projects as shown bel
 <td>android\Syncfusion.SfRangeSlider.Android.dll<br/>android\Syncfusion.SfRangeSlider.XForms.Android.dll</td>
 </tr>
 <tr>
-<td>iOS (Classic)</td>
-<td>ios\Syncfusion.SfRangeSlider.iOS.dll<br/>ios\Syncfusion.SfRangeSlider.XForms.iOS.dll<br/>ios\Syncfusion.SfRangeSlider.XForms.dll</td>
-</tr>
-<tr>
 <td>iOS (Unified)</td>
 <td>ios-unified\Syncfusion.SfRangeSlider.iOS.dll<br/>ios-unified\Syncfusion.SfRangeSlider.XForms.iOS.dll<br/>ios-unified\Syncfusion.SfRangeSlider.XForms.dll</td>
 </tr>
@@ -63,14 +59,14 @@ You can then add the assembly references to the respective projects as shown bel
 <td>wp81\Syncfusion.SfInput.WP.dll<br/>wp81\Syncfusion.SfShared.WP.dll<br/>wp81\Syncfusion.SfRangeSlider.XForms.dll<br/>wp81\Syncfusion.SfRangeSlider.XForms.WinPhone.dll</td>
 </tr>
 <tr>
-<td>WinRT</td>
-<td>winrt\Syncfusion.SfInput.WinRT.dll<br/>winrt\Syncfusion.SfShared.WinRT.dll<br/>winrt\Syncfusion.SfRangeSlider.XForms.dll<br/>winrt\Syncfusion.SfRangeSlider.XForms.WinRT.dll</td>
+<td>UWP</td>
+<td>uwp\Syncfusion.SfRangeSlider.UWP.dll<br/>uwp\Syncfusion.SfRangeSlider.XForms.dll<br/>uwp\Syncfusion.SfRangeSlider.XForms.UWP.dll</td>
 </tr>
 </table>
 
-Currently an additional step is required for Windows Phone, WindowsPhone 8.1, WinRT and iOS projects. We need to create an instance of the rangeslider custom renderer as shown below. 
+Currently an additional step is required for Windows Phone, WindowsPhone 8.1 and iOS projects. We need to create an instance of the rangeslider custom renderer as shown below. 
 
-Create an instance of SfRangeSliderRenderer in MainPage constructor of the Windows Phone , WindowsPhone 8.1 and WinRT project as shown 
+Create an instance of SfRangeSliderRenderer in MainPage constructor of the Windows Phone and WindowsPhone 8.1 project as shown 
 
 {% highlight C# %}
 
@@ -119,45 +115,38 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {% highlight c# %}
 
 	SfRangeSlider sfRangeSlider=new SfRangeSlider();
+	this.Content = sfRangeSlider;
 	
 {% endhighlight %}
 
-## Add Values and Scale
+## Setting Range
 
-You can set the minimum value for the slider by using the `setMinimum()` and `setMaximum()` properties in the RangeSlider. It can be Numerical values.
+The `RangeStart` and `RangeEnd` properties can be set to denote the start range and end range values while dual thumb is used. 
+
+N> The `ShowRange` property is used to switch between a single thumb and double thumb. 
+
+{% highlight c# %}
+
+	range.RangeEnd=20; 
+	range.RangeStart=4;
+	range.ShowRange=true; 
+
+{% endhighlight %}
+
+## Restricting Values
+
+Set the minimum and maximum value for the slider by using the `Minimum` and `Maximum` properties in the RangeSlider.
 
 {% highlight c# %}
 
 	range.Minimum=0; 
 	range.Maximum=24; 
-	range.DirectionReversed=false; 
-	range.RangeEnd=20; 
-	range.RangeStart=4;
-	range.ShowRange=true; 
-	range.Orientation=Orientation.Horizontal;
 
 {% endhighlight %}
 
-N> Likewise, `RangeStart` and `RangeEnd` can be set that denote the start range and end range values while dual thumb is used. The `ShowRange` property is used to switch between a single thumb and double thumb. The `Orientation` property sets the type of orientation.
+## Adding Snapping Mode
 
-## Add Ticks and Labels for RangeSlider
-
-The ticks can be set by setting the `TickFrequency` and `TickPlacement`. Likewise, value labels can be set by setting the `ShowValueLabel` property to true. The position of label can be varied by the `LabelPlacement` property.
-
-{% highlight c# %}
-
-	range.TickFrequency=4; 
-	range.ShowValueLabel=true; 
-	range.ValuePlacement=ValuePlacement.TopLeft; 
-	range.TickPlacement=TickPlacement.BottomRight;
-
-{% endhighlight %}
-
-N> The TickFrequency determines the interval between the ticks.
-
-## Add Snapping Type for RangeSlider
-
-The movement of the thumb can be varied in different ways. This is achieved by setting the SnapsTo property.
+The movement of the thumb can be varied in different ways. This is achieved by setting the `SnapsTo` property.
 
 {% highlight c# %}
 
@@ -166,24 +155,6 @@ The movement of the thumb can be varied in different ways. This is achieved by s
 
 {% endhighlight %}
 
-## Configure the properties of RangeSlider.
-
-{% highlight c# %}
-
-	SfRangeSlider sfRangeSlider = new SfRangeSlider ();
-	sfRangeSlider.Minimum=0;
-	sfRangeSlider.Maximum=24;
-	sfRangeSlider.RangeStart=4;
-	sfRangeSlider.RangeEnd=20;
-	sfRangeSlider.TickFrequency=4;
-	sfRangeSlider.TickPlacement=TickPlacement.Outside;
-	sfRangeSlider.SnapsTo=SnapsTo.Ticks;
-	sfRangeSlider.ValuePlacement=ValuePlacement.TopLeft;
-	sfRangeSlider.ShowRange=True;
-	sfRangeSlider.LabelPlacement=LabelPlacement.TopLeft;
-	sfRangeSlider.ToolTipPlacement=ToolTipPlacement.TopLeft;
-
-{% endhighlight %}
 
 
 

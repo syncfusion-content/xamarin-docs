@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Getting Started with Syncfusion NumericTextBox control for Xamarin.Forms 
-description: A quick tour to initial users on Syncfusion numerictextbox control for Xamarin.Forms platform
-platform: Xamarin
+description: A quick tour to initial users on Syncfusion NumericTextBox control for Xamarin.Forms platform
+platform: Xamarin.Forms
 control: NumericTextBox
 documentation: ug
 ---
 
 # Getting Started
 
-This section provides overview for working with Essential NumericTextBox for Xamarin.Forms. You can walk through the entire process of creating an NumericTextBox.
+This section provides overview for working with Essential NumericTextBox for Xamarin.Forms. You can walk through the entire process of creating a NumericTextBox.
 
 ![](images/gettingstarted.png)
 
@@ -47,10 +47,6 @@ You can then add the assembly references to the respective projects as shown bel
 <td>android\Syncfusion.SfNumericTextBox.Android.dll<br/>android\Syncfusion.SfNumericTextBox.XForms.Android.dll</td>
 </tr>
 <tr>
-<td>iOS (Classic)</td>
-<td>ios\Syncfusion.SfNumericTextBox.iOS.dll<br/>ios\Syncfusion.SfNumericTextBox.XForms.iOS.dll<br/>ios\Syncfusion.SfNumericTextBox.XForms.dll</td>
-</tr>
-<tr>
 <td>iOS (Unified)</td>
 <td>ios-unified\Syncfusion.SfNumericTextBox.iOS.dll<br/>ios-unified\Syncfusion.SfNumericTextBox.XForms.iOS.dll<br/>ios-unified\Syncfusion.SfNumericTextBox.XForms.dll</td>
 </tr>
@@ -66,11 +62,15 @@ You can then add the assembly references to the respective projects as shown bel
 <td>WinRT</td>
 <td>winrt\Syncfusion.SfInput.WinRT.dll<br/>winrt\Syncfusion.SfShared.WinRT.dll<br/>winrt\Syncfusion.SfNumericTextBox.XForms.dll<br/>winrt\Syncfusion.SfNumericTextBox.XForms.WinRT.dll</td>
 </tr>
+<tr>
+<td>UWP</td>
+<td>uwp\Syncfusion.SfNumericTextBox.UWP.dll<br/>uwp\Syncfusion.SfNumericTextBox.XForms.dll<br/>uwp\Syncfusion.SfNumericTextBox.XForms.UWP.dll</td>
+</tr>
 </table>
 
-Currently an additional step is required for Windows Phone, WindowsPhone 8.1, WinRT and iOS projects. We need to create an instance of the numeric custom renderer as shown below. 
+Currently an additional step is required for Windows Phone, WindowsPhone 8.1 and iOS projects. We need to create an instance of the numerictextbox custom renderer as shown below. 
 
-Create an instance of SfNumericTextBoxRenderer in MainPage constructor of the Windows Phone , WindowsPhone 8.1 and WinRT project as shown 
+Create an instance of SfNumericTextBoxRenderer in MainPage constructor of the Windows Phone and WindowsPhone 8.1  project as shown 
 
 {% highlight C# %}
 
@@ -104,9 +104,11 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% endhighlight %}
 
-## Adding and Configuring the NumericTextBox
+## Add and Configure the NumericTextBox
 
-* Adding reference to numerictextbox.
+The NumericTextBox control configured entirely in C# code or by using XAML markup. The following steps explain on how to create a NumericTextBox and configure its elements,
+
+* Adding reference to NumericTextBox.
 
 {% highlight c# %}
 
@@ -122,18 +124,46 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% endhighlight %}
 
-* Configure the properties of NumericTextBox.
+## Setting Value
+
+The NumericTextBox control display value can be set using `Value` property.
 
 {% highlight c# %}
 
-	SfNumericTextBox sfNumericTextBox = new SfNumericTextBox ();
-	sfNumericTextBox.Value = 1000;
-	sfNumericTextBox.Watermark = "Principal Amount";
-	sfNumericTextBox.MaximumNumberDecimalDigits = 2;
-	sfNumericTextBox.FormatString = "c";
-	sfNumericTextBox.AllowNull = true;
-	sfNumericTextBox.Culture = new System.Globalization.CultureInfo("fr-FR");
+	sfNumericTextBox.Value = 123.45;
 
 {% endhighlight %}
 
 
+## Enable Parsing Mode
+
+The value of the NumericTextBox can be parsed based on the `ParsingMode` property. 
+
+N> The `ParsingMode` is of type Parsers containing enum values of Double and Decimal.
+
+{% highlight c# %}
+
+	sfNumericTextBox.ParsingMode=Parsers.Decimal;
+	
+{% endhighlight %}
+
+
+## Add Format String
+
+The `FormatString` property determines the format specifier by which the display text has to be formatted. 
+
+It has three types,
+
+* c - Display the value with currency notation.
+* n – Display the value in number format.
+* p – Display the value in Percentage.
+
+N> The control displays the formatted text on lost focus. Default Value of `FormatString` is "n".
+
+{% highlight c# %}
+
+	sfNumericTextBox.FormatString = "c";
+
+{% endhighlight %}
+
+![](images/FormatString.png)

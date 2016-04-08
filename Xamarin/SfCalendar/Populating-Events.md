@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Populating Events in Syncfusion Calendar control for Android
 description: Learn how to populate events inside a cell and inline events descriptions
-platform: Xamarin
+platform: Xamarin.Forms
 control: Calendar
 documentation: ug
 ---
@@ -33,7 +33,7 @@ Calendar Events collection can be provided to calendar using the following steps
 
 {% highlight c# %}
 		   
-	CalendarInlineEvent event=new CalendarInlineEvent();
+    CalendarInlineEvent event=new CalendarInlineEvent();
     DateTime d=new DateTime(2015,1,1);
     DateTime d1=new DateTime(2015,1,1);
     event.StartTime=d;

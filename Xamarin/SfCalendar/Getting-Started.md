@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Getting Started with Syncfusion Calendar control for Xamarin.Forms
 description: A quick tour to initial users on Syncfusion calendar control for Xamarin.Forms platform
-platform: Xamarin
+platform: Xamarin.Forms
 control: Calendar
 documentation: ug
 ---
@@ -47,10 +47,6 @@ You can then add the assembly references to the respective projects as shown bel
 <td>android\Syncfusion.SfCalendar.Android.dll<br/>android\Syncfusion.SfCalendar.XForms.Android.dll</td>
 </tr>
 <tr>
-<td>iOS (Classic)</td>
-<td>ios\Syncfusion.SfCalendar.iOS.dll<br/>ios\Syncfusion.SfCalendar.XForms.iOS.dll<br/>ios\Syncfusion.SfCalendar.XForms.dll</td>
-</tr>
-<tr>
 <td>iOS (Unified)</td>
 <td>ios-unified\Syncfusion.SfCalendar.iOS.dll<br/>ios-unified\Syncfusion.SfCalendar.XForms.iOS.dll<br/>ios-unified\Syncfusion.SfCalendar.XForms.dll</td>
 </tr>
@@ -66,11 +62,15 @@ You can then add the assembly references to the respective projects as shown bel
 <td>WinRT</td>
 <td>winrt\Syncfusion.SfInput.WinRT.dll<br/>winrt\Syncfusion.SfShared.WinRT.dll<br/>winrt\Syncfusion.SfCalendar.XForms.dll<br/>winrt\Syncfusion.SfCalendar.XForms.WinRT.dll</td>
 </tr>
+<tr>
+<td>UWP</td>
+<td>uwp\Syncfusion.SfCalendar.UWP.dll<br/>uwp\Syncfusion.SfCalendar.XForms.dll<br/>uwp\Syncfusion.SfCalendar.XForms.UWP.dll</td>
+</tr>
 </table>
 
-Currently an additional step is required for Windows Phone, WindowsPhone 8.1, WinRT and iOS projects. We need to create an instance of the calendar custom renderer as shown below. 
+Currently an additional step is required for Windows Phone, WindowsPhone 8.1 and iOS projects. We need to create an instance of the calendar custom renderer as shown below. 
 
-Create an instance of SfCalendarRenderer in MainPage constructor of the Windows Phone , WindowsPhone 8.1 and WinRT project as shown 
+Create an instance of SfCalendarRenderer in MainPage constructor of the Windows Phone and WindowsPhone 8.1  project as shown 
 
 {% highlight C# %}
 

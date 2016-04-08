@@ -1,9 +1,9 @@
 ---
-layout: posto
+layout: post
 title: Range in Syncfusion RangeSlider control for Xamarin.Forms
 description: Learn how to set Dual thumb slider and its ranges in RangeSlider control.
 platform: Xamarin
-control: RangeSLider
+control: RangeSlider
 documentation: ug
 ---
 

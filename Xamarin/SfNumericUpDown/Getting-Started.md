@@ -9,13 +9,11 @@ documentation: ug
 
 # Getting Started
 
-## Create your first NumericUpDown control in Xamarin.Forms
-
 This section provides overview for working with Essential NumericUpDown for Xamarin.Forms. You can walk through the entire process of creating a NumericUpDown.
 
 ![](images/gettingstarted.png)
 
-### Referencing Essential Studio Components in Your Solution	
+## Referencing Essential Studio Components in Your Solution	
 
 If you had acquired Essential Studio components through the Xamarin component store interface from within your IDE, then after adding the components to your Xamarin.iOS, Xamarin.Android and Windows Phone projects through the Component manager, you will still need to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL project in your solution. You can do this by manually adding the relevant PCL assembly references to your PCL project contained in the following path inside of your solution folder.
 
@@ -70,7 +68,7 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 </table>
 
-Currently an additional step is required for Windows Phone, WindowsPhone 8.1 and iOS projects. We need to create an instance of the carousel custom renderer as shown below. 
+Currently an additional step is required for Windows Phone, WindowsPhone 8.1 and iOS projects. We need to create an instance of the numericupdown custom renderer as shown below. 
 
 Create an instance of SfNumericUpDownRenderer in MainPage constructor of the Windows Phone and WindowsPhone 8.1 project as shown 
 
@@ -106,7 +104,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% endhighlight %}
 
-### Add and Configure the NumericUpDown
+## Add and Configure the NumericUpDown
 
 The NumericUpDown control configured entirely in C# code or by using XAML markup. The following steps explain on how to create a NumericUpDown and configure its elements,
 

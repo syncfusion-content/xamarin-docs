@@ -17,7 +17,7 @@ Dates can be selected by making a touch on month view cells. The default Selecti
 
 * `RangeSelection` – Range of dates can be selected by dragging on the date cells.
 
-The selected dates can be retrieved through `CalendarTappedListner` which is raised on selecting.
+The selected dates can be retrieved through `OnCalendarTappedEvent` which is raised on selecting.
 
 {% highlight c# %}
 	

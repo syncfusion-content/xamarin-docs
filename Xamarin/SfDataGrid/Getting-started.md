@@ -44,11 +44,11 @@ The following list of assemblies need to be added as reference from the lib fold
 <td>pcl\Syncfusion.Data.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfDataGrid.XForms.dll<br/>ios-unified\Syncfusion.SfDataGrid.XForms.iOS.dll<br/></td>
 </tr>
 <tr>
-<td>WindowsPhone Renderer</td>
+<td>Windows Phone Renderer</td>
 <td>pcl\Syncfusion.Data.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfDataGrid.XForms.dll<br/>wp8\Syncfusion.SfDataGrid.XForms.WinPhone.dll<br/></td>
 </tr>
 <tr>
-<td>WindowsPhone 8.1 Renderer</td>
+<td>Windows Phone 8.1 Renderer</td>
 <td>pcl\Syncfusion.Data.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfDataGrid.XForms.dll<br/>wp81\Syncfusion.SfDataGrid.XForms.WinPhone.dll<br/></td>
 </tr>
 <tr>
@@ -74,7 +74,7 @@ In order to use export to excel and export to pdf functionalities of SfDataGrid,
 </tr>
 </table>
 
-Currently, an additional step is required for Windows Phone, WindowsPhone 8.1, WinRT and iOS projects. You need to initialize the SfDataGridRenderer. 
+Currently, an additional step is required for Windows Phone, Windows Phone 8.1, WinRT and iOS projects. You need to initialize the SfDataGridRenderer. 
 
 Call the `SfDataGridRenderer.Init()` in the MainPage constructor of the Windows Phone, Windows Phone 8.1 and WinRT projects as follows.
 

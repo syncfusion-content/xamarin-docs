@@ -66,11 +66,15 @@ You can then add the assembly references to the respective projects as shown bel
 <td>WinRT</td>
 <td>winrt\Syncfusion.SfInput.WinRT.dll<br/>winrt\Syncfusion.SfShared.WinRT.dll<br/>winrt\Syncfusion.SfBusyIndicator.XForms.dll<br/>winrt\Syncfusion.SfBusyIndicator.XForms.WinRT.dll</td>
 </tr>
+<tr>
+<td>UWP</td>
+<td>uwp\Syncfusion.SfBusyIndicator.UWP.dll<br/>uwp\Syncfusion.SfBusyIndicator.XForms.dll<br/>uwp\Syncfusion.SfBusyIndicator.XForms.UWP.dll</td>
+</tr>
 </table>
 
-Currently an additional step is required for Windows Phone, WindowsPhone 8.1, WinRT and iOS projects. We need to create an instance of the busyindicator custom renderer as shown below. 
+Currently an additional step is required for Windows Phone, WindowsPhone 8.1 and iOS projects. We need to create an instance of the busyindicator custom renderer as shown below. 
 
-Create an instance of SfBusyIndicatorRenderer in MainPage constructor of the Windows Phone , WindowsPhone 8.1 and WinRT project as shown 
+Create an instance of SfBusyIndicatorRenderer in MainPage constructor of the Windows Phone and WindowsPhone 8.1 project as shown 
 
 {% highlight C# %}
 

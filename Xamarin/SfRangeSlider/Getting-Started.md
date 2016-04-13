@@ -102,7 +102,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ## Add and Configure the RangeSlider
 
-* Adding reference to rangeSlider.
+* Adding reference to RangeSlider.
 
 {% highlight c# %}
 

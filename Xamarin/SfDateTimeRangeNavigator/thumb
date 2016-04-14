@@ -1,0 +1,70 @@
+---
+layout: post
+title: Thumb customization for SfDateTimeRangeNavigator
+description: Thumb
+platform: xamarin
+control: SfDateTimeRangeNavigator
+documentation: ug
+---
+
+# Thumb
+
+The `LeftThumbStyle` and `RightThumbStyle` properties are used to configure the left and right thumb of the `SfDateTimeRangeNavigator`. Following properties are available in thumb style to configure left and right thumb individually. 
+
+* `BorderColor` – used to change the stroke color of the thumb.
+* `BackgroundColor` – used to change the background color of the thumb.
+* `BorderWidth` – used to change the stroke width of the thumb.
+* `Width` – used to change the width of the thumb.
+* `Height` – used to change the height of the thumb.
+* `LineColor` – used to change the line color of the thumb.
+* `LineWidth` – used to change the line width of the thumb.
+* `LineDashArray` – used to change the dash array of the thumb line.
+
+
+{% tabs %}
+{% highlight xaml %}
+<rangenavigator:SfDateTimeRangeNavigator HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Minimum="1/1/2015" Maximum="12/31/2015">
+
+<rangenavigator:SfDateTimeRangeNavigator.LeftThumbStyle>
+
+<rangenavigator:ThumbStyle BorderColor="#083928" BackgroundColor="Aqua" BorderWidth="3" LineColor="#E70E49" LineWidth="5"/>
+
+</rangenavigator:SfDateTimeRangeNavigator.LeftThumbStyle>
+
+<rangenavigator:SfDateTimeRangeNavigator.RightThumbStyle>
+
+<rangenavigator:ThumbStyle BorderColor="#083928" BackgroundColor="Aqua" BorderWidth="3" LineColor="#E70E49" LineWidth="5"/>
+
+</rangenavigator:SfDateTimeRangeNavigator.RightThumbStyle>
+
+</rangenavigator:SfDateTimeRangeNavigator>
+{% endhighlight %}
+
+{% highlight c# %}
+SfDateTimeRangeNavigator rangenavigator = new SfDateTimeRangeNavigator();
+
+...
+
+rangenavigator.LeftThumbStyle.BackgroundColor = Color.Aqua;
+
+rangenavigator.LeftThumbStyle.BorderColor = Color.FromHex("#083928");
+
+rangenavigator.LeftThumbStyle.BorderWidth = 3;
+
+rangenavigator.LeftThumbStyle.LineColor = Color.FromHex("#E70E49");
+
+rangenavigator.LeftThumbStyle.LineWidth = 5;
+
+rangenavigator.RightThumbStyle.BackgroundColor = Color.Aqua;
+
+rangenavigator.RightThumbStyle.BorderColor = Color.FromHex("#083928");
+
+rangenavigator.RightThumbStyle.BorderWidth = 3;
+
+rangenavigator.RightThumbStyle.LineColor = Color.FromHex("#E70E49");
+
+rangenavigator.RightThumbStyle.LineWidth = 5;
+{% endhighlight %}
+{% endtabs %}
+
+![](thumb_images/thumb_img1.jpeg)

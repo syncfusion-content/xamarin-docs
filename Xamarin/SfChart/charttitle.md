@@ -9,7 +9,7 @@ documentation: ug
 
 # Chart Title
 
-You can define and customise the Chart title using `Title` property of `SfChart`. The `Text` property of `ChartTitle` is used to set the text for the title. 
+You can define and customize the Chart title using `Title` property of `SfChart`. The `Text` property of `ChartTitle` is used to set the text for the title. 
 
 Following properties are used to customize its appearance.
 

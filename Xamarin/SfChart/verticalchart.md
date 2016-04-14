@@ -10,7 +10,7 @@ documentation: ug
 
 # Vertical Chart
 
-Vertical chart is used to show the cartesian series vertically, which helps to view the data in different
+Vertical chart is used to show the Cartesian series vertically, which helps to view the data in different
 perceptive.
 
 {% tabs %} 

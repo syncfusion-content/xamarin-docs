@@ -23,7 +23,7 @@ Beyond the min max date range, following restrictions will be applied.
 
 * Selection does not work for month view.
 
-* The tapped delegates will not be triggered while tapped on the monthcell.
+* The tapped delegates will not be triggered while tapped on the MonthCell.
     
 {% highlight c# %}
 	

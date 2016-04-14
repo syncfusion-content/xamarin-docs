@@ -11,7 +11,7 @@ documentation : ug
 
 ## DataSource
 
-SfCarousel items can be populated with a collection of image datas using `DataSource` property.
+SfCarousel items can be populated with a collection of image data using `DataSource` property.
 
 {% highlight C# %}
 

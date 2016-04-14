@@ -11,7 +11,7 @@ documentation: ug
 
 ## Transition Modes
 
-Dates can be navigated by using swipe gesture as well as using inbuilt methods `forward` and `backward`. By default those navigation are performed along with Scroll animation. Other than the default scroll animation, there are other options available like card, reveal, float animations. It can be changed by using  transitionMode property of calendar control.
+Dates can be navigated by using swipe gesture as well as using built-in methods `forward` and `backward`. By default those navigation are performed along with Scroll animation. Other than the default scroll animation, there are other options available like card, reveal, float animations. It can be changed by using  transitionMode property of calendar control.
 
 {% highlight c# %}
 	

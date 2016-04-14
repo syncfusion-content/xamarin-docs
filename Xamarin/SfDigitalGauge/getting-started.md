@@ -55,11 +55,11 @@ You can then add the assembly references to the respective projects as shown bel
 <td>ios-unified\Syncfusion.SfGauge.iOS.dll<br/>ios-unified\Syncfusion.SfGauge.XForms.iOS.dll<br/>ios-unified\Syncfusion.SfGauge.XForms.dll</td>
 </tr>
 <tr>
-<td>WindowsPhone</td>
+<td>Windows Phone</td>
 <td>wp8\Syncfusion.SfGauge.WP8.dll<br/>wp8\Syncfusion.SfGauge.XForms.dll<br/>wp8\Syncfusion.SfGauge.XForms.WinPhone.dll</td>
 </tr>
 <tr>
-<td>WindowsPhone 8.1</td>
+<td>Windows Phone 8.1</td>
 <td>wp81\Syncfusion.SfGauge.WP.dll<br/>wp81\Syncfusion.SfGauge.XForms.dll<br/>wp81\Syncfusion.SfGauge.XForms.WinPhone.dll</td>
 </tr>
 <tr>
@@ -72,9 +72,9 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 </table>
 
-Currently an additional step is required for Windows Phone, WindowsPhone 8.1 and iOS projects. We need to create an instance of the digitalgauge custom renderer as shown below. 
+Currently an additional step is required for Windows Phone, Windows Phone 8.1 and iOS projects. We need to create an instance of the DigitalGauge custom renderer as shown below. 
 
-Create an instance of SfDigitalGaugeRenderer in MainPage constructor of the Windows Phone and WindowsPhone 8.1 project as shown 
+Create an instance of SfDigitalGaugeRenderer in MainPage constructor of the Windows Phone and Windows Phone 8.1 project as shown 
 
 {% highlight C# %}
 
@@ -112,7 +112,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 The DigitalGauge control is configured entirely in C# code or by using XAML markup. The following steps explain on how to create a DigitalGauge and configure its elements,
 
-* Create an instance for digitalgauge control.
+* Create an instance for DigitalGauge control.
 
 {% highlight C# %}
 
@@ -139,7 +139,7 @@ The DigitalGauge control is configured entirely in C# code or by using XAML mark
 
 ## Setting Value
 
-* The `Value` property sets the display value in the digitalgauge.
+* The `Value` property sets the display value in the DigitalGauge.
 
 {% highlight C# %}
 

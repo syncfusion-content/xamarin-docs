@@ -15,7 +15,7 @@ Refer to [this](https://developer.xamarin.com/guides/cross-platform/application_
 
 ## Install Syncfusion’s NuGet package in Xamarin.Studio
 
-Following are the step by step instructions for configuring Syncfusion Nuget packages within Xamarin studio,
+Following are the step by step instructions for configuring Syncfusion NuGet packages within Xamarin studio,
 
 1. Click on the drop-down tool at the right corner of the Packages item in your project, then select Add Packages…
 
@@ -30,7 +30,7 @@ Following are the step by step instructions for configuring Syncfusion Nuget pac
     *	**Name** – enter the name (For Ex., Syncfusion)
     *	**URL** – enter the following URL — http://nuget.syncfusion.com/xamarin
 
-    Now click Add Source and then click Ok.
+    Now click Add Source and then click OK.
 
     N> If you have already downloaded the NuGet package from Syncfusion website, enter the local path in the **URL** field. 
 
@@ -55,7 +55,7 @@ The steps to install the Syncfusion Xamarin NuGet Packages in Visual Studio are 
 2. Select `NuGet Package Manager | Package Sources` and click `Add` button to add the `Package Name` and `Package Source` of Syncfusion NuGet Packages.    
 
    **Name**: Name of the package that listed in Available package sources  
-   **Source**: Syncfusion Xamarin NuGet Package feed url 
+   **Source**: Syncfusion Xamarin NuGet Package feed URL 
    [http://nuget.syncfusion.com/xamarin](http://nuget.syncfusion.com/xamarin)
     
    ![](images/NuGetConfig2.jpeg)
@@ -120,7 +120,7 @@ You can find the following folders when extracting the downloaded zip package or
 ## Add reference to the project
 
 
-You can then add the assembly references to the respective projects. The following is the location where you can locate dll for Chart control and you can find assemblies for the other controls also from the same location.
+You can then add the assembly references to the respective projects. The following is the location where you can locate assembly for Chart control and you can find assemblies for the other controls also from the same location.
 
 **PCL** **project**
 
@@ -136,11 +136,11 @@ android\Syncfusion.SfChart.XForm.dll
 
 **iOS****(****Classic****)** **project**
 
-ios\Syncfusion.SfChart.iOS.dll
+iOS\Syncfusion.SfChart.iOS.dll
 
-ios\Syncfusion.SfChart.XForms.iOS.dll
+iOS\Syncfusion.SfChart.XForms.iOS.dll
 
-ios\Syncfusion.SfChart.XForm.dll
+iOS\Syncfusion.SfChart.XForm.dll
 
 **iOS****(****Unified****)** **project**
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grid Lines | SfDateTimeRangeNavigator | Xamarin | Syncfusion
+title: Grid lines customization for SfDateTimeRangeNavigator
 description: Grid Lines
 platform: xamarin
 control: SfDateTimeRangeNavigator

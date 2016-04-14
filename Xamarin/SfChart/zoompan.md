@@ -50,7 +50,7 @@ chart.ChartBehaviors.Add(zoomPanBehavior);
 
 {% endtabs %}
 
-Following code snippet illustracts how to enable the box selection zooming,
+Following code snippet illustrates how to enable the box selection zooming,
 
 {% tabs %} 
 
@@ -124,23 +124,23 @@ zoomPanBehavior.ZoomMode = ZoomMode.X;
 
 **ZoomStart**
 
-This event is triggered when the user starts zooming the chart through pinch gesture, and this is a cancellable event. The argument contains the following information.
+This event is triggered when the user starts zooming the chart through pinch gesture, and this is a cancelable event. The argument contains the following information.
 
 * `Axis` – the zoom start event will be triggered for all the axis in the Chart.
 * `CurrentZoomFactor` – used to get the new zoom factor of the corresponding axis.
 * `CurrentZoomPosition`– used to get the new zoom position of the corresponding axis.
-* `Cancel` – used to set the value indicating whether the zooming should be cancelled.
+* `Cancel` – used to set the value indicating whether the zooming should be canceled.
 
 **ZoomDelta**
 
-This event is triggered while zooming, and this is a cancellable event. The argument contains the following information.
+This event is triggered while zooming, and this is a cancelable event. The argument contains the following information.
 
 * `Axis` – Instance of the axis whose range is changed because of zooming. This event is triggered for each axis in the chart.
 * `PreviousZoomFactor` – used to get the previous zoom factor of the axis.
 * `PreviousZoomPosition` – used to get the previous zoom position of the axis.
 * `CurrentZoomFactor` – used to get the current zoom factor of the axis.
 * `CurrentZoomPosition` – used to get the current zoom position of the axis.
-* `Cancel` – used to set the value indicating whether the zooming should be cancelled.
+* `Cancel` – used to set the value indicating whether the zooming should be canceled.
 
 **ZoomEnd**
 
@@ -158,10 +158,10 @@ This event is triggered when the user starts the box selection zooming. The argu
 
 **SelectionZoomDelta**
 
-This event is triggered while selecting a region to be zoomed, and this is a cancellable event. The argument contains the following information.
+This event is triggered while selecting a region to be zoomed, and this is a cancelable event. The argument contains the following information.
 
 * `ZoomRect` – contains the bounds of the currently selected region.
-* `Cancel` – used to set the value indicating whether the box selection zooming should be cancelled.
+* `Cancel` – used to set the value indicating whether the box selection zooming should be canceled.
 
 **SelectionZoomEnd**
 
@@ -171,11 +171,11 @@ This event is triggered after selection zooming ends. The argument contains the 
 
 **Scroll**
 
-This event is triggered while panning, and this is a cancellable event. The argument contains the following information.
+This event is triggered while panning, and this is a cancelable event. The argument contains the following information.
 
 * `Axis` – Instance of the axis whose range is changed while panning. This event is triggered for each axis in the chart.
 * `ZoomPosition` – the current zoom position of the axis.
-* `Cancel` – used to set a value indicating whether the scrolling should be cancelled.
+* `Cancel` – used to set a value indicating whether the scrolling should be canceled.
 
 **ResetZoom**
 

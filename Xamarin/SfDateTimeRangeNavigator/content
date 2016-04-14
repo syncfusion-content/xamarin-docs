@@ -36,6 +36,7 @@ rangenavigator.YBindingPath = "YValue";
 {% endtabs %}
 
 {% highlight c# %}
+
 [C#]
 
 public class ViewModel
@@ -101,8 +102,6 @@ ViewRangeEnd="5/30/2015" Minimum="4/1/2015" Maximum="6/30/2015">
 . . .
 
 </chart:SfChart>
-
-
 
 </rangenavigator:SfDateTimeRangeNavigator.Content>
 {% endhighlight %}

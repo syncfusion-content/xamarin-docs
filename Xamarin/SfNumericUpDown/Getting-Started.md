@@ -51,11 +51,11 @@ You can then add the assembly references to the respective projects as shown bel
 <td>ios-unified\Syncfusion.SfNumericUpDown.iOS.dll<br/>ios-unified\Syncfusion.SfNumericUpDown.XForms.iOS.dll<br/>ios-unified\Syncfusion.SfNumericUpDown.XForms.dll</td>
 </tr>
 <tr>
-<td>WindowsPhone</td>
+<td>Windows Phone</td>
 <td>wp8\Syncfusion.SfInput.WP8.dll<br/>wp8\Syncfusion.SfShared.WP8.dll<br/>wp8\Syncfusion.SfNumericUpDown.XForms.dll<br/>wp8\Syncfusion.SfNumericUpDown.XForms.WinPhone.dll</td>
 </tr>
 <tr>
-<td>WindowsPhone 8.1</td>
+<td>Windows Phone 8.1</td>
 <td>wp81\Syncfusion.SfInput.WP.dll<br/>wp81\Syncfusion.SfShared.WP.dll<br/>wp81\Syncfusion.SfNumericUpDown.XForms.dll<br/>wp81\Syncfusion.SfNumericUpDown.XForms.WinPhone.dll</td>
 </tr>
 <tr>
@@ -68,9 +68,9 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 </table>
 
-Currently an additional step is required for Windows Phone, WindowsPhone 8.1 and iOS projects. We need to create an instance of the numericupdown custom renderer as shown below. 
+Currently an additional step is required for Windows Phone, Windows Phone 8.1 and iOS projects. We need to create an instance of the NumericUpDown custom renderer as shown below. 
 
-Create an instance of SfNumericUpDownRenderer in MainPage constructor of the Windows Phone and WindowsPhone 8.1 project as shown 
+Create an instance of SfNumericUpDownRenderer in MainPage constructor of the Windows Phone and Windows Phone 8.1 project as shown 
 
 {% highlight C# %}
 

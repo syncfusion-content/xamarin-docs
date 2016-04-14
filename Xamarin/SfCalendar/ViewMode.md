@@ -15,7 +15,7 @@ By default calendar control is assigned with month view. Based on the user’s p
 
 ## Month View
 
-This displays entire dates of a particular month, by default current month will be displayed on loading. The current date is provided with seperate color different from the rest of the dates color in a month. The events availability will be denoted within the cell based on its duration.
+This displays entire dates of a particular month, by default current month will be displayed on loading. The current date is provided with separate color different from the rest of the dates color in a month. The events availability will be denoted within the cell based on its duration.
 
 The dates in month view can be selected by three ways such as single, multiple and range which can be modified using `SelectionMode`
 
@@ -35,7 +35,7 @@ The dates in month view can be selected by three ways such as single, multiple a
 
 * The background color of the inline view can be modified using `InlineBackgroundColor` property.
 
-* The blackoutdate color can be modified with `BlackOutColor` property.
+* The BlackOutDate color can be modified with `BlackOutColor` property.
 
 {% highlight c# %}
 	

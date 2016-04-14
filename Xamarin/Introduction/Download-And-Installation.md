@@ -120,7 +120,7 @@ You can find the following folders when extracting the downloaded zip package or
 ## Add reference to the project
 
 
-You can then add the assembly references to the respective projects. The following is the location where you can locate assembly for Chart control and you can find assemblies for the other controls also from the same location.
+You can then add the assembly references to the respective projects. The following is the location where you can locate assemblies for Chart control and you can find assemblies for the other controls also from the same location.
 
 **PCL** **project**
 

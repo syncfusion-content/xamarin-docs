@@ -15,15 +15,15 @@ N> Though the `Content` property’s data type is View and it can accept any Vie
 
 The following code snippet shows how to configure the range navigator using `ItemsSource` property.
 
-{% tab %}
+{% tabs %}
 {% highlight xaml %}
 <rangenavigator:SfDateTimeRangeNavigator ItemsSource="{Binding DateTimeRangeData}" XBindingPath="XValue" YBindingPath="YValue"/>
 {% endhighlight %}
 
 {% highlight c# %}
-SfDateTimeRangeNavigator rangenavigator = new SfDateTimeRangeNavigator();<br/><br/>ViewModel viewModel = new ViewModel();<br/><br/>rangenavigator.ItemsSource = viewModel.DateTimeRangeData;<br/><br/>rangenavigator.XBindingPath = "XValue";<br/><br/>rangenavigator.YBindingPath = "YValue";
+SfDateTimeRangeNavigator rangenavigator = new SfDateTimeRangeNavigator(); ViewModel viewModel = new ViewModel(); rangenavigator.ItemsSource = viewModel.DateTimeRangeData;<br/><br/>rangenavigator.XBindingPath = "XValue"; rangenavigator.YBindingPath = "YValue";
 {% endhighlight %}
-{% endtab %}
+{% endtabs %}
 
 {% highlight c# %}
 [C#]
@@ -78,7 +78,7 @@ new ChartDataPoint(new DateTime(2015, 12, 31), 35),
 
 The following code snippet shows how to configure the range navigator using **Minimum** and **Maximum** properties.****
 
-{% tab %}
+{% tabs %}
 {% highlight xaml %}
 <rangenavigator:SfDateTimeRangeNavigator ViewRangeStart="5/1/2015" 
 
@@ -114,7 +114,7 @@ SfChart chart = new SfChart();
 
 rangenavigator.Content = chart;
 {% endhighlight %}
-{% endtab %}
+{% endtabs %}
 
 ![](content_images/content_img1.jpeg)
 

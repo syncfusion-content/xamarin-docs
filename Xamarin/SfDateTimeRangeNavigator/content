@@ -11,7 +11,7 @@ documentation: ug
 
 `SfDateTimeRangeNavigator` allows you to set `SfChart` as its content, explicitly, using `Content` property. However, if you provide data source using `ItemsSource` property, the Chart with line series will be created for the provided ItemsSource and will be set as the content of range navigator internally, by default. But, if you configure the range navigator using `Minimum` and `Maximum` properties, you have to manually configure the Chart with data source.
 
-N> Though the `Content` property’s data type is View and it can accept any View as its value, `SfDateTimeRangeNavigator` can display only SfChart as its content.
+`Note:` Though the `Content` property’s data type is View and it can accept any View as its value, `SfDateTimeRangeNavigator` can display only SfChart as its content.
 
 The following code snippet shows how to configure the range navigator using `ItemsSource` property.
 

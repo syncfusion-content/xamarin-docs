@@ -48,7 +48,7 @@ N> By default the property value is false.
 
 ## Range
 
-User can restrict the Vvlues between a specific range by setting `Maximum` and `Minimum` property value.
+User can restrict the Values between a specific range by setting `Maximum` and `Minimum` property value.
 
 N> By default the minimum property value is 0 and maximum property value is 100.
 

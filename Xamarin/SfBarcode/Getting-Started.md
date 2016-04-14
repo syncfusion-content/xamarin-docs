@@ -59,11 +59,11 @@ iOS\Syncfusion.SfBarcode.XForms.dll
 
 ### iOS(Unified) project
 
-ios-unified\Syncfusion.SfBarcode.iOS.dll
+iOS-unified\Syncfusion.SfBarcode.iOS.dll
 
-ios-unified\Syncfusion.SfBarcode.XForms.iOS.dll
+iOS-unified\Syncfusion.SfBarcode.XForms.iOS.dll
 
-ios-unified\Syncfusion.SfBarcode.XForms.dll
+iOS-unified\Syncfusion.SfBarcode.XForms.dll
 
 ### Windows Phone project
 

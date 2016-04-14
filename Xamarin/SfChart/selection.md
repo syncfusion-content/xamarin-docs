@@ -71,12 +71,12 @@ N> For Accumulation series like pie, doughnut, pyramid and funnel, when you sele
 
 **SelectionChanging**
 
-This event is triggered before the data point is selected. You can restrict a data point from being selected, by cancelling this event, by setting `Cancel` property in the event argument to true. The argument contains the following information,
+This event is triggered before the data point is selected. You can restrict a data point from being selected, by canceling this event, by setting `Cancel` property in the event argument to true. The argument contains the following information,
 
 * `SelectedSeries` – used to get the series of selected data point.
 * `SelectedDataPointIndex` – used to get the selected data point index.
 * `PreviousSelectedIndex` – used to get the previous selected data point index.
-* `Cancel` – used to set the value indicating whether the selection should be cancelled.
+* `Cancel` – used to set the value indicating whether the selection should be canceled.
 
 **SelectionChanged**
 

@@ -21,8 +21,18 @@ The following code snippet shows how to configure the range navigator using `Ite
 {% endhighlight %}
 
 {% highlight c# %}
-SfDateTimeRangeNavigator rangenavigator = new SfDateTimeRangeNavigator(); ViewModel viewModel = new ViewModel(); rangenavigator.ItemsSource = viewModel.DateTimeRangeData;<br/><br/>rangenavigator.XBindingPath = "XValue"; rangenavigator.YBindingPath = "YValue";
+SfDateTimeRangeNavigator rangenavigator = new SfDateTimeRangeNavigator(); 
+
+ViewModel viewModel = new ViewModel(); 
+
+rangenavigator.ItemsSource = viewModel.DateTimeRangeData;
+
+rangenavigator.XBindingPath = "XValue"; 
+
+rangenavigator.YBindingPath = "YValue";
 {% endhighlight %}
+
+
 {% endtabs %}
 
 {% highlight c# %}
@@ -117,5 +127,3 @@ rangenavigator.Content = chart;
 {% endtabs %}
 
 ![](content_images/content_img1.jpeg)
-
-

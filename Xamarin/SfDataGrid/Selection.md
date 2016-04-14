@@ -51,7 +51,7 @@ dataGrid.SelectedItems.Add (viewModel.OrdersInfo [4]);
 dataGrid.SelectedItems.Add (viewModel.OrdersInfo [5]);
 {% endhighlight %}
 
-The following screesnshot shows the selction functionality in SfDataGrid.
+The following screenshot shows the selection functionality in SfDataGrid.
 
 ![](SfDataGrid_images/Selection.png)
 

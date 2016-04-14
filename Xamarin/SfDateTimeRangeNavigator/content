@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Content | SfDateTimeRangeNavigator | Xamarin | Syncfusion
+title: Setting SfChart as content for SfDateTimeRangeNavigator
 description: Content
 platform: xamarin
 control: SfDateTimeRangeNavigator

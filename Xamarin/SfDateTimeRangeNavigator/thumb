@@ -20,6 +20,7 @@ The `LeftThumbStyle` and `RightThumbStyle` properties are used to configure the 
 * `LineWidth` – used to change the line width of the thumb.
 * `LineDashArray` – used to change the dash array of the thumb line.
 
+
 {% tabs %}
 {% highlight xaml %}
 <rangenavigator:SfDateTimeRangeNavigator HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Minimum="1/1/2015" Maximum="12/31/2015">

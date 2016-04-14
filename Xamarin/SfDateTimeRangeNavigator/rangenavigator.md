@@ -53,11 +53,11 @@ ios\Syncfusion.SfChart.XForms.dll
 
 ### iOS(Unified) project
 
-ios-unified\Syncfusion.SfChart.iOS.dll
+iOS-unified\Syncfusion.SfChart.iOS.dll
 
-ios-unified\Syncfusion.SfChart.XForms.iOS.dll
+iOS-unified\Syncfusion.SfChart.XForms.iOS.dll
 
-ios-unified\Syncfusion.SfChart.XForms.dll
+iOS-unified\Syncfusion.SfChart.XForms.dll
 
 ### Windows Phone project
 

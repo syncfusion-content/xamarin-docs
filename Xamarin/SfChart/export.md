@@ -11,7 +11,7 @@ documentation: ug
 
 **Export as an image**
 
-You can export the Chart as a jpg image using `SaveAsImage` method of `SfChart`.
+You can export the Chart as a JPG image using `SaveAsImage` method of `SfChart`.
 
 {% highlight c# %}
 [C#]

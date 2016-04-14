@@ -53,11 +53,11 @@ ios\Syncfusion.SfChart.XForms.dll
 
 ### iOS(Unified) project
 
-ios-unified\Syncfusion.SfChart.iOS.dll
+iOS-unified\Syncfusion.SfChart.iOS.dll
 
-ios-unified\Syncfusion.SfChart.XForms.iOS.dll
+iOS-unified\Syncfusion.SfChart.XForms.iOS.dll
 
-ios-unified\Syncfusion.SfChart.XForms.dll
+iOS-unified\Syncfusion.SfChart.XForms.dll
 
 ### Windows Phone project
 
@@ -115,7 +115,7 @@ rangeNavigator.Maximum = new DateTime(2016, 01, 01);
 
 ![](gettingstarted_images/gettingstarted_img1.jpeg)
 
-N> If you don’t specify `Minimum` and `Maximum` properties, minimum and maximum dates will be choosen automatically based on the provided data using `ItemsSource` property, which is explained in the next step in this section.
+N> If you don’t specify `Minimum` and `Maximum` properties, minimum and maximum dates will be chosen automatically based on the provided data using `ItemsSource` property, which is explained in the next step in this section.
 
 Next, create a data model representing the list of sample data.
 

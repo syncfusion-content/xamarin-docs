@@ -45,7 +45,7 @@ The below table describes you the types of column and its purpose of usage in Sf
 
 ## GridColumn
 
-`GridColumn` is the base column type of all the columns in the SfDataGrid, hence `GridColumn` properties are used by all the columns. The following sub-sections explains you about the properties in the `GridColumn` and the customizations that can be done using those properties for all the types of GridColums available in SfDataGrid.
+`GridColumn` is the base column type of all the columns in the SfDataGrid, hence `GridColumn` properties are used by all the columns. The following sub-sections explains you about the properties in the `GridColumn` and the customizations that can be done using those properties for all the types of GridColumns available in SfDataGrid.
 
 ### Binding options
 

@@ -43,7 +43,7 @@ By default Schedule views can be moved backwards and forwards using touch swipe 
 
 Visible dates can be restricted between certain range of dates using `MinDisplayDate` and `MaxDisplayDate` properties available in Schedule control. It is applicable in all the schedule views.
 
-So that beyond the min max date range, it will restrict date navigations features of `MoveToDate()` and also can’t swipe the control using touch gesture beyond the min max date range. Also, beyond the min max date range, selection will also not works for `MonthView`. So that tapped listeners while tapped on the monthcell will not be listened. Thus inline feature in month view will works only within the min max date range.
+So that beyond the min max date range, it will restrict date navigations features of `MoveToDate()` and also can’t swipe the control using touch gesture beyond the min max date range. Also, beyond the min max date range, selection will also not works for `MonthView`. So that tapped listeners while tapped on the month cell will not be listened. Thus inline feature in month view will works only within the min max date range.
 
 {% highlight c# %}
 

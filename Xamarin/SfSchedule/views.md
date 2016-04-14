@@ -46,7 +46,7 @@ You can differentiate working hours with non-working hour timeslots by its color
 
 #### All Day Appointments Panel
 
-You can view AllDay appointments in separate panel and the panel’s visibility can be enabled by setting `ShowAllDay` property of `DayViewSettings` as true. 
+You can view All Day appointments in separate panel and the panel’s visibility can be enabled by setting `ShowAllDay` property of `DayViewSettings` as true. 
 
 {% highlight c# %}
 
@@ -115,7 +115,7 @@ You can differentiate working hours with non-working hour timeslots by its color
 
 #### All Day Appointments Panel
 
-You can view Allday appointments in separate panel and the panel’s visibility can be enabled by setting `ShowAllDay` property of `WeekViewSettings` as true. 
+You can view All Day appointments in separate panel and the panel’s visibility can be enabled by setting `ShowAllDay` property of `WeekViewSettings` as true. 
 
 {% highlight c# %}
     
@@ -180,11 +180,11 @@ You can restrict/allocate certain timeslot as Non-accessible block using `NonAcc
 
 #### Working Hours
 
-You can differentiate working hours with non-working hour timeslots by its colour using `WorkStartHour` and `WorkEndHour`  properties of `WorkWeekViewSettings`.
+You can differentiate working hours with non-working hour timeslots by its color using `WorkStartHour` and `WorkEndHour`  properties of `WorkWeekViewSettings`.
 
 #### All Day Appointments Panel
 
-You can view Allday appointments in separate panel and the panel’s visibility can be enabled by setting `ShowAllDay`  property of `WorkWeekViewSettings` as true. 
+You can view All Day appointments in separate panel and the panel’s visibility can be enabled by setting `ShowAllDay`  property of `WorkWeekViewSettings` as true. 
 
 {% highlight c# %}
 

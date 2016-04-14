@@ -26,9 +26,9 @@ Recursive appointment can be created in any recurrence patterns, for instance, s
     * Monthly Recurrence
     * Yearly Recurrence
 
-## RRule generator
+## RRULE generator
 
-`RecurrenceGenerator/RecurrenceBuilder` is available with the control to create `RecurrenceRule`. RRule can be easily created through this engine by simple APIs available.
+`RecurrenceGenerator/RecurrenceBuilder` is available with the control to create `RecurrenceRule`. RRULE can be easily created through this engine by simple APIs available.
 
 {% highlight c# %}
     

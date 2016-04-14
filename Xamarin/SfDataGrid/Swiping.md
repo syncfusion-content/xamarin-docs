@@ -110,7 +110,7 @@ The following customizations should give you an idea on how to use the swiping e
 
 ### Multiple Views
 
-You can use the swipe templates to customise your application by loading any view in the templates and assigning custom actions to them such as deleting a row, adding a row, editing the underlying data associated, etc. You can also display multiple views in a template like in the following example where two views are loaded for editing the cell values in the row and deleting the row respectively.
+You can use the swipe templates to customize your application by loading any view in the templates and assigning custom actions to them such as deleting a row, adding a row, editing the underlying data associated, etc. You can also display multiple views in a template like in the following example where two views are loaded for editing the cell values in the row and deleting the row respectively.
 Refer the following code example that shows how to load multiple views in template when swiping towards right.
 
 **Swiping.xaml**

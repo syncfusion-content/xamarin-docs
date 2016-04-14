@@ -61,7 +61,7 @@ The following list of assemblies need to be added as reference from the lib fold
 </tr>
 </table>
 
-In order to use export to excel and export to pdf functionalities of SfDataGrid, add the below assembly to your pcl project.
+In order to use export to excel and export to PDF functionalities of SfDataGrid, add the below assembly to your pcl project.
 
 <table>
 <tr>

@@ -54,11 +54,11 @@ iOS\Syncfusion.SfSchedule.XForms.dll
 
 ### iOS(Unified) project
 
-ios-unified\Syncfusion.SfSchedule.iOS.dll
+iOS-unified\Syncfusion.SfSchedule.iOS.dll
 
-ios-unified\Syncfusion.SfSchedule.XForms.iOS.dll
+iOS-unified\Syncfusion.SfSchedule.XForms.iOS.dll
 
-ios-unified\Syncfusion.SfSchedule.XForms.dll
+iOS-unified\Syncfusion.SfSchedule.XForms.dll
 
 ### Windows Phone project
 
@@ -118,7 +118,7 @@ You can change the default UI of schedule using [ScheduleView](/xamarin/sfschedu
 
 ## Populating Events
 
-You can add events to the schedule by creating collection of `ScheduleAppointment` using `ScheduleAppointmentColletion`.
+You can add events to the schedule by creating collection of `ScheduleAppointment` using `ScheduleAppointmentCollection`.
 
 {% highlight c# %}
 
@@ -182,7 +182,7 @@ You can also add recursive appointments to Schedule, refer [Recurrence](/xamarin
 
 ## Enabling Appointments Inline
 
-When the schedule appointments are viewed in Monthview, it will not display much information about the appointments, you can view the appointments in inline by setting `ShowAppointmentsInline` property of `MonthViewSettings` as True.
+When the schedule appointments are viewed in month view, it will not display much information about the appointments, you can view the appointments in inline by setting `ShowAppointmentsInline` property of `MonthViewSettings` as True.
 
 {% highlight c# %}
 

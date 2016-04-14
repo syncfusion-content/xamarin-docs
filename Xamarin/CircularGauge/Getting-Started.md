@@ -56,11 +56,11 @@ iOS \Syncfusion.SfGauge.XForms.dll
 
 ### iOS(Unified) project
 
-ios-unified\Syncfusion.SfGauge.iOS.dll
+iOS-unified\Syncfusion.SfGauge.iOS.dll
 
-ios-unified\Syncfusion.SfGauge.XForms.iOS.dll
+iOS-unified\Syncfusion.SfGauge.XForms.iOS.dll
 
-ios-unified\Syncfusion.SfGauge.XForms.dll
+iOS-unified\Syncfusion.SfGauge.XForms.dll
 
 ### Windows Phone project
 

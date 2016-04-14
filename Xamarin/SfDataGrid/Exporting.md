@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Exporting | SfDataGrid | Xamarin | Syncfusion
-description: How to export a SfDataGrid to excel and pdf and it's customizations.
+description: How to export a SfDataGrid to excel and PDF and it's customizations.
 platform: xamarin.iOS
 control: SfDataGrid
 documentation: ug
@@ -132,7 +132,7 @@ void excelExport_CellExporting(object sender, DataGridCellExcelExportingEvent
 {% endhighlight %}
 
 
-## Export to Pdf
+## Export to PDF
 
 You can Export data to PDF by using the ExportToPdf method by passing the SfDataGrid as an argument. The following code example illustrates exporting data to PDF using the ExportToPdf Method.
 
@@ -177,11 +177,11 @@ The SfDataGrid provides you the following Events for Exporting:
 The [DataGridRowPdfExportingEventHandler](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridRowPdfExportingEventhandler.html) delegate allows you to customize the styles for record rows and group caption rows. The`RowExporting` event is triggered with [DataGridRowPdfExportingEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridRowPdfExportingEventArgs.html) that contains the following properties:
 
 * PdfGrid – You can use this property to customize the PdfGrid’s properties such as Background, CellPadding, CellSpacing etc.
-* PfdRow – Specifies the `PdfGridRow` to be exported. You can use this to customize the properties of particular row. 
+* PdfRow – Specifies the `PdfGridRow` to be exported. You can use this to customize the properties of particular row. 
 * Record – Gets the collection of underlying data objects that are exported.
 * RowType – Specifies the row type by using ExportRowType Enum. You can use this property to check the row type and apply different styles based on the row type.
 
-You can use this event to customize the properties of the GridRows that are exported to pdf. The following code example illustrates how to change the background color of the record rows and caption summary rows while exporting.
+You can use this event to customize the properties of the GridRows that are exported to PDF. The following code example illustrates how to change the background color of the record rows and caption summary rows while exporting.
 
 {% highlight c# %}
 //HandlingRowExportingEvent for exporting to PDF

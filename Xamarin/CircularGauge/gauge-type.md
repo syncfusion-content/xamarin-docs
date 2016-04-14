@@ -23,12 +23,6 @@ documentation: ug
 * SouthEast,
 * SouthWest
 
-<table>
-<tr>
-<td>
-SfCircularGauge circulargauge = new SfCircularGauge();
-
-
 {% highlight c# %}
 
     SfCircularGauge circulargauge = new SfCircularGauge();

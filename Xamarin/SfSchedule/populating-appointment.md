@@ -12,7 +12,7 @@ documentation: ug
 
 # POPULATING APPOINTMENTS
 
-Schedule control has an inbuilt capability to handle the appointment arrangement internally based on the ScheduleAppointment collections. `ScheduleAppointment` is a class, which holds the details about the appointment to be rendered in schedule. `ScheduleAppointmentsCollection` can be provided to schedule using the following method.
+Schedule control has a built-in capability to handle the appointment arrangement internally based on the ScheduleAppointment collections. `ScheduleAppointment` is a class, which holds the details about the appointment to be rendered in schedule. `ScheduleAppointmentsCollection` can be provided to schedule using the following method.
 
 ### Adding appointments using Collection
 

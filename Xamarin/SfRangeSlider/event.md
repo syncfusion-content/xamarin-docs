@@ -22,7 +22,7 @@ The events of the RangeSlider control are as follows.
 </tr>
 <tr>
 <td>RangeChanging</td>
-<td>Trigerred when either RangeStart or RangeEnd changed when ShowRange is true.</td>
+<td>Triggered when either RangeStart or RangeEnd changed when ShowRange is true.</td>
 </tr>
 </table>
 
@@ -63,7 +63,7 @@ Triggered when value changed with single thumb.
 
 ## RangeChanging
 
-Trigerred when either RangeStart or RangeEnd changed when ShowRange is true.
+Triggered when either RangeStart or RangeEnd changed when ShowRange is true.
 
 <table>
 <tr>

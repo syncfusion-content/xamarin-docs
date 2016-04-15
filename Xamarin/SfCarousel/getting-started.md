@@ -1,4 +1,4 @@
----
+﻿---
 layout : post
 title : Getting Started with Syncfusion Carousel control for Xamarin.Forms
 description : A quick tour to initial users on Syncfusion Carousel control for Xamarin.Forms platform.
@@ -152,4 +152,19 @@ Set the RotationAngle property to decide the angle in which items should be rota
 
 {% endhighlight %}
 
+## Setting ItemsSource
 
+SfCarousel items can be populated with a collection of image datas. You can assign a collection to it. Collections include arrays, Lists and DataTables.
+
+{% highlight C# %}
+
+	ArrayList temp=new ArrayList();
+	For(int i=1;i<18;i++)
+	{
+	SfCarouselItem item =new SfCarouselItem();
+	item.ImageName="image"+i;
+	temp.add(item);
+	}
+	carousel.ItemsSource=temp;
+
+{% endhighlight %}

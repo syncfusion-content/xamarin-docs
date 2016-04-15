@@ -237,7 +237,7 @@ series.DataMarker.LabelStyle.LabelPosition = DataMarkerLabelPosition.Outer;
 
 ## Smart Labels
 
-This feature is used to arrange the data marker labels smartly and avoid the intersection when there is overlapping of labels. The property `EnableSmartLabels` in CircularSeries, is used to arrange the datamarker labels smartly. By default, it is false, we need to enable this property.
+This feature is used to arrange the data marker labels smartly and avoid the intersection when there is overlapping of labels. The property `EnableSmartLabels` in CircularSeries, is used to arrange the data marker labels smartly. By default, it is false, we need to enable this property.
 
 The following code sample illustrates how to enable the smart labels.
 

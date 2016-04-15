@@ -1,4 +1,4 @@
----
+﻿---
 layout : post
 title : Getting Started with Syncfusion Carousel control for Xamarin.Forms
 description : A quick tour to initial users on Syncfusion Carousel control for Xamarin.Forms platform.
@@ -51,11 +51,11 @@ You can then add the assembly references to the respective projects as shown bel
 <td>ios-unified\Syncfusion.SfCarousel.iOS.dll<br/>ios-unified\Syncfusion.SfCarousel.XForms.iOS.dll<br/>ios-unified\Syncfusion.SfCarousel.XForms.dll</td>
 </tr>
 <tr>
-<td>Windows Phone</td>
+<td>WindowsPhone</td>
 <td>wp8\Syncfusion.SfInput.WP8.dll<br/>wp8\Syncfusion.SfShared.WP8.dll<br/>wp8\Syncfusion.SfCarousel.XForms.dll<br/>wp8\Syncfusion.SfCarousel.XForms.WinPhone.dll</td>
 </tr>
 <tr>
-<td>Windows Phone 8.1</td>
+<td>WindowsPhone 8.1</td>
 <td>wp81\Syncfusion.SfInput.WP.dll<br/>wp81\Syncfusion.SfShared.WP.dll<br/>wp81\Syncfusion.SfCarousel.XForms.dll<br/>wp81\Syncfusion.SfCarousel.XForms.WinPhone.dll</td>
 </tr>
 <tr>
@@ -68,9 +68,9 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 </table>
 
-Currently an additional step is required for Windows Phone, Windows Phone 8.1 and iOS projects. We need to create an instance of the carousel custom renderer as shown below. 
+Currently an additional step is required for Windows Phone, WindowsPhone 8.1 and iOS projects. We need to create an instance of the carousel custom renderer as shown below. 
 
-Create an instance of SfCarouselRenderer in MainPage constructor of the Windows Phone and Windows Phone 8.1  project as shown 
+Create an instance of SfCarouselRenderer in MainPage constructor of the Windows Phone and WindowsPhone 8.1  project as shown 
 
 {% highlight C# %}
 
@@ -152,4 +152,19 @@ Set the RotationAngle property to decide the angle in which items should be rota
 
 {% endhighlight %}
 
+## Setting ItemsSource
 
+SfCarousel items can be populated with a collection of image datas. You can assign a collection to it. Collections include arrays, Lists and DataTables.
+
+{% highlight C# %}
+
+	ArrayList temp=new ArrayList();
+	For(int i=1;i<18;i++)
+	{
+	SfCarouselItem item =new SfCarouselItem();
+	item.ImageName="image"+i;
+	temp.add(item);
+	}
+	carousel.ItemsSource=temp;
+
+{% endhighlight %}

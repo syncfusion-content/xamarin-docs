@@ -197,7 +197,7 @@ The chart control can be configured entirely in C# code or using XAML markup.
 
 
 
-   ~~~ cs
+   ~~~ csharp
 
 		SfChart chart = new SfChart ();
 
@@ -215,9 +215,10 @@ The chart control can be configured entirely in C# code or using XAML markup.
 
 		this.Content = chart;
    ~~~ 
-   {:.prettyprint}
+   
 
-   ~~~ 
+   ~~~ xaml
+	  
 	  <chart:SfChart>
 
 
@@ -255,8 +256,7 @@ The chart control can be configured entirely in C# code or using XAML markup.
 		</chart:SfChart>
 
    ~~~
-   {:.prettyprint}
-
+   
 
 
 
@@ -265,13 +265,13 @@ The chart control can be configured entirely in C# code or using XAML markup.
 
 
 
-   ~~~ cs
+   ~~~ csharp
 
 		chart.Title = new ChartTitle (){ Text = "Weather Analysis" };
    ~~~
-   {:.prettyprint}
+   
 
-   ~~~ xml
+   ~~~ xaml
 
 
 	  <chart:SfChart>
@@ -288,7 +288,7 @@ The chart control can be configured entirely in C# code or using XAML markup.
 
 	  </chart:SfChart>
    ~~~
-   {:.prettyprint}
+   
 
 ## Add Chart series
 
@@ -1252,7 +1252,7 @@ The following steps explain how to create a Chart and configure its elements.
 
 1. Create an instance of SfChart.
 
-   ~~~ cs
+   ~~~ csharp
 
 	   public override void ViewDidLoad ()
 	       {
@@ -1265,11 +1265,11 @@ The following steps explain how to create a Chart and configure its elements.
 				}
 
    ~~~
-   {:.prettyprint}
+   
 
 2. Add the primary and secondary axes for the Chart as follows.
 
-   ~~~ cs
+   ~~~ csharp
 
 
 
@@ -1286,11 +1286,11 @@ The following steps explain how to create a Chart and configure its elements.
 		            chart.SecondaryAxis                     = secondaryAxis; 
 
    ~~~
-   {:.prettyprint}
+   
 
 3. A title for the Chart is set using the Title property as follows.
 
-   ~~~ cs
+   ~~~ csharp
 
 
 
@@ -1298,7 +1298,7 @@ The following steps explain how to create a Chart and configure its elements.
 		            chart.Title.Text                           = "Weather Analysis";
 
    ~~~
-   {:.prettyprint}
+   
 
 ### Add a Chart series
 

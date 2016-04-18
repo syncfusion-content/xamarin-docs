@@ -3,7 +3,7 @@
 layout: post
 title: Labels in Syncfusion SfCircularGauge control for Xamarin.Forms
 description:  Learn how to set labels in Syncfusion SfCircularGauge control
-platform: Xamarin.Forms
+platform: xamarin
 control: SfCircularGauge
 documentation: ug
 

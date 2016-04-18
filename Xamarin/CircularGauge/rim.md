@@ -3,7 +3,7 @@
 layout: post
 title: Rim in Syncfusion SfCircularGauge control for Xamarin.Forms
 description: Learn how to access rim in Syncfusion SfCircularGauge control for Xamarin.Forms Platform
-platform: Xamarin.Forms
+platform: xamarin
 control: SfCircularGauge
 documentation: ug
 

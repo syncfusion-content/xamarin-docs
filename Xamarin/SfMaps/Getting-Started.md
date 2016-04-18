@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with Syncfusion Maps control for Xamarin.Forms
 description: A quick tour to initial users on Syncfusion maps control for Xamarin.Forms platform
-platform: xamarin.Forms
+platform: xamarin
 control: SfMaps 
 documentation: ug
 ---

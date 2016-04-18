@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with Syncfusion NumericTextBox control for Xamarin.Forms 
 description: A quick tour to initial users on Syncfusion NumericTextBox control for Xamarin.Forms platform
-platform: Xamarin.Forms
+platform: xamarin
 control: NumericTextBox
 documentation: ug
 ---

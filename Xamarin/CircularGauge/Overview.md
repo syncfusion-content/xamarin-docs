@@ -3,7 +3,7 @@
 layout: post
 title: Overview of Syncfusion SfCircularGauge control for Xamarin.Forms
 description: Overview of SfCircularGauge control
-platform: Xamarin.Forms
+platform: xamarin
 control: SfCircularGauge
 documentation: ug
 

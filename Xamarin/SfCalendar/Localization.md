@@ -2,7 +2,7 @@
 layout: post
 title: Localization support in Syncfusion Calendar control for Xamarin.Forms
 description: Learn how to localize your calendar to regional language
-platform: Xamarin.Forms
+platform: xamarin
 control: Calendar
 documentation: ug
 ---

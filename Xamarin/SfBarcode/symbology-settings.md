@@ -3,7 +3,7 @@
 layout: post
 title: Symbology settings in Syncfusion SfBarcode control for Xamarin.Forms
 description: Learn about Symbology settings in SfBarcode control
-platform: Xamarin.Forms
+platform: xamarin
 control: SfBarcode
 documentation: ug
 

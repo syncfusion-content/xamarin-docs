@@ -2,7 +2,7 @@
 layout: post
 title: Events in Syncfusion Calendar control for Xamarin.Forms
 description: Learn how to populate events in calendar control
-platform: Xamarin.Forms
+platform: xamarin
 control: Calendar
 documentation: ug
 ---

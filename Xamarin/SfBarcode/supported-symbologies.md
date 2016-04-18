@@ -3,7 +3,7 @@
 layout: post
 title: Supported Symbologies in Syncfusion SfBarcode control for Xamarin.Forms
 description: Different Symbologies supported in SfBarcode control
-platform: Xamarin.Forms
+platform: xamarin
 control: SfBarcode
 documentation: ug
 

@@ -115,7 +115,7 @@ Refer the following code example that shows how to load multiple views in templa
 
 **Swiping.xaml**
 
-{% highlight xml %}
+{% highlight xaml %}
 
 //Defining left swipe template
 <sfgrid:SfDataGrid.LeftSwipeTemplate>

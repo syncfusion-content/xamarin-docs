@@ -2,7 +2,7 @@
 layout: post
 title: Paging | SfDataGrid | Xamarin | Syncfusion
 description: How to enable paging and use its properties
-platform: xamarin.iOS
+platform: xamarin
 control: SfDataGrid
 documentation: ug
 ---

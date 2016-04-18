@@ -3,7 +3,7 @@
 layout: post
 title: Overview of Syncfusion SfBarcode control for Xamarin.Forms
 description: Overview of SfBarcode control
-platform: Xamarin.Forms
+platform: xamarin
 control: SfBarcode
 documentation: ug
 

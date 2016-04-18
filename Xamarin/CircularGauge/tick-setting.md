@@ -3,7 +3,7 @@
 layout: post
 title: Tick Setting in Syncfusion SfCircularGauge control for Xamarin.Forms
 description:  Learn how to set ticks in Syncfusion SfCircularGauge control
-platform: Xamarin.Forms
+platform: xamarin
 control: SfCircularGauge
 documentation: ug
 

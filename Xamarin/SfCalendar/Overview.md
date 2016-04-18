@@ -2,7 +2,7 @@
 layout: post
 title: Overview of Syncfusion Calendar control for Xamarin.Forms
 description: Overview and key features of Calendar control
-platform: Xamarin.Forms
+platform: xamarin
 control: Calendar
 documentation: ug
 ---

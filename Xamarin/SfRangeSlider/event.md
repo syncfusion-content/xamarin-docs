@@ -2,7 +2,7 @@
 layout: post
 title: Events in Syncfusion RangeSlider control for Xamarin.Forms
 description: Learn how to populate events in RangeSlider control
-platform: Xamarin.Forms
+platform: xamarin
 control: RangeSlider 
 documentation: ug
 ---

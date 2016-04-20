@@ -1185,6 +1185,165 @@ CandleSeries candleSeries = new CandleSeries()
 
 ![](charttypes_images/charttypes_img21.png)
 
+## Radar Chart
+
+To render a radar chart, create an instance of `RadarSeries` and add to the `Series` collection property of `SfChart`.  
+
+### Draw type
+
+`DrawType` property is used to specify the radar series rendering type. Following are the two options you can set to this property,
+
+* `Line` – data points are visualized using line series.
+* `Area` – data points are visualized using area series.
+
+{% tabs %}
+{% highlight xaml %}
+<chart:RadarSeries ItemsSource="{Binding RadarData}" DrawType="Line"
+          XBindingPath="Name" YBindingPath="Value"  />
+
+{% endhighlight %}
+{% highlight c# %}
+RadarSeries radar = new RadarSeries ();
+radar.ItemsSource = viewModel.RadarData;
+radar.XBindingPath = "Name";
+radar.YBindingPath = "Value";
+radar.DrawType = PolarRadarSeriesDrawType.Line;
+
+{% endhighlight %}
+{% endtabs %}
+
+![](ChartTypes_images/Radar.png)
+
+### Customize the appearance
+
+You can use the following properties to customize the appearance.
+
+* `Color` – used to change the color of the series.
+* `BorderWidth` – used to change the stroke width of the series.
+* `BorderColor` – used to change the stroke color of the series when draw types is set to `Area`
+
+{% tabs %}
+{% highlight xaml %}
+<chart:RadarSeries ItemsSource="{Binding RadarData}" Color="Aqua" StrokeColor="Blue" 
+StrokeWidth="3" XBindingPath="Name" YBindingPath="Value"  />
+
+{% endhighlight %}
+{% highlight c# %}
+RadarSeries radar = new RadarSeries ();
+radar.ItemsSource = viewModel.RadarData;
+radar.XBindingPath = "Name";
+radar.YBindingPath = "Value";
+radar.Color = Color.Aqua;
+radar.StrokeColor = Color.Blue;
+radar.StrokeWidth = 3;
+
+{% endhighlight %}
+{% endtabs %}
+
+![](ChartTypes_images/RadarCustomization.png)
+
+### Closed
+
+`Closed` property is used to determine, whether to connect the first and last data point of the series. By default, the property is set to `true`.
+
+{% tabs %}
+{% highlight xaml %}
+<chart:RadarSeries ItemsSource="{Binding RadarData}" IsClosed="false"
+         XBindingPath="Name" YBindingPath="Value"  />
+
+{% endhighlight %}
+{% highlight c# %}
+RadarSeries radar = new RadarSeries ();
+radar.ItemsSource = viewModel.RadarData;
+radar.XBindingPath = "Name";
+radar.YBindingPath = "Value";
+radar.IsClosed = false;
+
+{% endhighlight %}
+{% endtabs %}
+
+![](ChartTypes_images/RadarClosed.png)
+
+## Polar Chart
+
+To render a polar chart, create an instance of `PolarSeries` and add to the `Series` collection property of `SfChart`. 
+ 
+
+### Draw type
+
+`DrawType` property is used to specify the polar series rendering type. Following are the two options you can set to this property,
+
+* `Line` – data points are visualized using line series.
+* `Area` – data points are visualized using area series.
+
+{% tabs %}
+{% highlight xaml %}
+<chart:PolarSeries ItemsSource="{Binding PolarData}" DrawType="Line" 
+XBindingPath="Name" YBindingPath="Value"  />
+
+{% endhighlight %}
+{% highlight c# %}
+PolarSeries polar = new PolarSeries ();
+polar.ItemsSource = viewModel.PolarData;
+polar.XBindingPath = "Name";
+polar.YBindingPath = "Value";
+polar.DrawType = PolarRadarSeriesDrawType.Line;
+
+{% endhighlight %}
+{% endtabs %}
+
+![](ChartTypes_images/Polar.png)
+
+### Customize the appearance
+
+You can use the following properties to customize the appearance.
+
+* `Color` – used to change the color of the series.
+* `BorderWidth` – used to change the stroke width of the series.
+* `BorderColor` – used to change the stroke color of the series when draw types is set to `Area`
+
+{% tabs %}
+{% highlight xaml %}
+<chart:PolarSeries ItemsSource="{Binding PolarData}" StrokeColor="Blue" Color="Aqua" 
+StrokeWidth="3" XBindingPath="Name" YBindingPath="Value"  />
+
+{% endhighlight %}
+{% highlight c# %}
+PolarSeries polar = new PolarSeries ();
+polar.ItemsSource = viewModel.PolarData;
+polar.XBindingPath = "Name";
+polar.YBindingPath = "Value";
+polar.Color = Color.Aqua;
+polar.StrokeColor = Color.Blue;
+polar.StrokeWidth = 3;
+
+{% endhighlight %}
+{% endtabs %}
+
+![](ChartTypes_images/PolarCustomization.png)
+
+### Closed
+
+`Closed` property is used to determine, whether to connect the first and last data point of the series. By default, the property is set to `true`.
+
+{% tabs %}
+{% highlight xaml %}
+<chart:PolarSeries ItemsSource="{Binding PolarData}" IsClosed="false"
+         XBindingPath="Name" YBindingPath="Value"  />
+
+{% endhighlight %}
+{% highlight c# %}
+PolarSeries polar = new PolarSeries ();
+polar.ItemsSource = viewModel.PolarData;
+polar.XBindingPath = "Name";
+polar.YBindingPath = "Value";
+polar.IsClosed = false;
+
+{% endhighlight %}
+{% endtabs %}
+
+![](ChartTypes_images/PolarClosed.png)
+
 ## Pie Chart
 
 To render a pie chart, create an instance of `PieSeries` and add to the `Series` collection property of `SfChart`. You can use the following properties to customize the pie segment appearance.

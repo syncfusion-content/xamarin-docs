@@ -99,3 +99,52 @@ chart.ChartBehaviors.Add(tool);
 {% endtabs %}
 
 ![](tooltip_images/tooltip2.png)
+
+## Tooltip Template
+
+You can customize the appearance of the tooltip with your own template by using the `TooltipTemplate` property of `Series`.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:ColumnSeries ItemsSource="{Binding ColumnData}" EnableTooltip="true" 
+XBindingPath="Month" YBindingPath="Value" >
+              <chart:ColumnSeries.TooltipTemplate>
+                  <DataTemplate>
+                      <StackLayout Orientation="Horizontal">
+                              <Label Text="Temperature:" />
+                              <Label Text="{Binding Value}"/>
+                      </StackLayout>
+                  </DataTemplate>
+              </chart:ColumnSeries.TooltipTemplate>
+</chart:ColumnSeries>
+
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ColumnSeries column = new ColumnSeries (); 
+column.ItemsSource = viewModel.ColumnData;
+column.XBindingPath = "Month";
+column.YBindingPath = "Value";
+column.EnableTooltip = true;
+
+DataTemplate template = new DataTemplate (() => {
+StackLayout stack = new StackLayout(){ Orientation = StackOrientation.Horizontal};
+Label ylabel = new Label(){Text="Temperature:"};
+Label yValue = new Label();
+yValue.SetBinding (Label.TextProperty, "Value");
+stack.Children.Add(ylabel);
+stack.Children.Add(yValue);
+return stack;
+});
+
+column.TooltipTemplate = template;
+Chart.Series.Add (column);
+
+{% endhighlight %}
+
+{% endtabs %}
+

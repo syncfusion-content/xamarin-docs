@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Number Formatting in Syncfusion NumericUpDown control for Xamarin.Forms
 description: Learn how to add format String, enable parser mode and percent display mode for NumericUpDown control.
@@ -20,7 +20,7 @@ It has three types,
 	
 {% highlight C# %}
 	
-	SfNumericUpDown.FormatString="c";
+	numericUpDown.FormatString="c";
 	 
 {% endhighlight %}
 	
@@ -29,7 +29,7 @@ It has three types,
 	
 {% highlight C# %}
 	
-	SfNumericUpDown.FormatString="n";
+	numericUpDown.FormatString="n";
 	 
 {% endhighlight %}
 	
@@ -38,7 +38,7 @@ It has three types,
 	
 {% highlight C# %}
 
-	SfNumericUpDown.FormatString="p";
+	numericUpDown.FormatString="p";
 	 
 {% endhighlight %}
 	
@@ -54,7 +54,7 @@ N> The `ParsingMode` is of type Parsers containing enum values of Double and Dec
 
 {% highlight C# %}
 
-	sfNumericUpDown.ParserMode=ParserMode.Decimal;
+	numericUpDown.ParserMode=ParserMode.Decimal;
 	  
 {% endhighlight %}
 
@@ -72,7 +72,7 @@ It provides the following options:
 
 {% highlight C# %}
 
-	sfNumericUpDown.PercentDisplayMode=PercentDisplayMode.Value;
+	numericUpDown.PercentDisplayMode=PercentDisplayMode.Value;
 
 {% endhighlight %}
 
@@ -80,7 +80,7 @@ It provides the following options:
 
 {% highlight C# %}
 
-	sfNumericUpDown.PercentDisplayMode=PercentDisplayMode.Compute;
+	numericUpDown.PercentDisplayMode=PercentDisplayMode.Compute;
 
 {% endhighlight %}
 

@@ -24,7 +24,7 @@ The Tooltip will display on top of the SfRating control.
 
 {% highlight C# %}
 
-	sfRating.TooltipPlacement=TooltipPlacement.LeftTop;
+	rating.TooltipPlacement=TooltipPlacement.LeftTop;
 
 {% endhighlight %} 
 
@@ -36,7 +36,7 @@ The Tooltip will display on bottom of the SfRating control.
 
 {% highlight C# %}
 
-	sfRating.TooltipPlacement=TooltipPlacement.RightBottom;
+	rating.TooltipPlacement=TooltipPlacement.RightBottom;
 
 {% endhighlight %}
 
@@ -48,7 +48,7 @@ It is used to invisible the tool tip in the SfRating control.
 
 {% highlight C# %}
 
-	sfRating.TooltipPlacement=TooltipPlacement.None;
+	rating.TooltipPlacement=TooltipPlacement.None;
 
 {% endhighlight %}
 
@@ -62,7 +62,7 @@ N> The default value of ToolTip precision is 1.
 
 {% highlight C# %}
 
-      sfRating.TooltipPlacement=6;
+      rating.TooltipPlacement=6;
 
 {% endhighlight %}
 

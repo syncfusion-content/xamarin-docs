@@ -17,7 +17,7 @@ The `ToolTipPrecision` property is used to define the precision of the value dis
 
 {% highlight c# %}
 
-	sfRangeSlider.ToolTipPrecision = 2;
+	rangeSlider.ToolTipPrecision = 2;
 	
 {% endhighlight %}
 
@@ -35,7 +35,7 @@ The Tooltip will be placed either below the Thumb in horizontal orientation or r
 
 {% highlight c# %}
 
-	sfRangeSlider.ToolTipPlacement = ToolTipPlacement.BottomRight;
+	rangeSlider.ToolTipPlacement = ToolTipPlacement.BottomRight;
 	
 {% endhighlight %}
 
@@ -45,7 +45,7 @@ the Tooltip will be placed either above the Thumb in horizontal orientation or l
 
 {% highlight c# %}
 
-	sfRangeSlider.ToolTipPlacement = ToolTipPlacement.TopLeft;
+	rangeSlider.ToolTipPlacement = ToolTipPlacement.TopLeft;
 	
 {% endhighlight %}
 
@@ -55,7 +55,7 @@ Tooltip will be collapsed.
 
 {% highlight c# %}
 
-	sfRangeSlider.ToolTipPlacement = ToolTipPlacement.None;
+	rangeSlider.ToolTipPlacement = ToolTipPlacement.None;
 	
 {% endhighlight %}
 

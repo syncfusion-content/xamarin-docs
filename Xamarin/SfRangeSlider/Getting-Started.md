@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Getting Started with Syncfusion RangeSlider control for Xamarin.Forms
 description: A quick tour to initial users on Syncfusion RangeSlider control for Xamarin.Forms platform
@@ -114,8 +114,8 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% highlight c# %}
 
-	SfRangeSlider sfRangeSlider=new SfRangeSlider();
-	this.Content = sfRangeSlider;
+	SfRangeSlider rangeSlider=new SfRangeSlider();
+	this.Content = rangeSlider;
 	
 {% endhighlight %}
 
@@ -127,9 +127,9 @@ N> The `ShowRange` property is used to switch between a single thumb and double 
 
 {% highlight c# %}
 
-	range.RangeEnd=20; 
-	range.RangeStart=4;
-	range.ShowRange=true; 
+	rangeSlider.RangeEnd=20; 
+	rangeSlider.RangeStart=4;
+	rangeSlider.ShowRange=true; 
 
 {% endhighlight %}
 
@@ -139,8 +139,8 @@ Set the minimum and maximum value for the slider by using the `Minimum` and `Max
 
 {% highlight c# %}
 
-	range.Minimum=0; 
-	range.Maximum=24; 
+	rangeSlider.Minimum=0; 
+	rangeSlider.Maximum=24; 
 
 {% endhighlight %}
 
@@ -150,8 +150,8 @@ The movement of the thumb can be varied in different ways. This is achieved by s
 
 {% highlight c# %}
 
-	range.SnapsTo=SnapsTo.Ticks; 
-	range.StepFrequency=6;
+	rangeSlider.SnapsTo=SnapsTo.Ticks; 
+	rangeSlider.StepFrequency=6;
 
 {% endhighlight %}
 

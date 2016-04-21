@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Getting Started with Syncfusion NumericTextBox control for Xamarin.Forms 
 description: A quick tour to initial users on Syncfusion NumericTextBox control for Xamarin.Forms platform
@@ -120,7 +120,7 @@ The NumericTextBox control configured entirely in C# code or by using XAML marku
 
 {% highlight c# %}
 
-	SfNumericTextBox sfNumericTextBox=new SfNumericTextBox();
+	SfNumericTextBox numericTextBox=new SfNumericTextBox();
 
 {% endhighlight %}
 
@@ -130,7 +130,7 @@ The NumericTextBox control display value can be set using `Value` property.
 
 {% highlight c# %}
 
-	sfNumericTextBox.Value = 123.45;
+	numericTextBox.Value = 123.45;
 
 {% endhighlight %}
 
@@ -143,7 +143,7 @@ N> The `ParsingMode` is of type Parsers containing enum values of Double and Dec
 
 {% highlight c# %}
 
-	sfNumericTextBox.ParsingMode=Parsers.Decimal;
+	numericTextBox.ParsingMode=Parsers.Decimal;
 	
 {% endhighlight %}
 
@@ -162,7 +162,7 @@ N> The control displays the formatted text on lost focus. Default Value of `Form
 
 {% highlight c# %}
 
-	sfNumericTextBox.FormatString = "c";
+	numericTextBox.FormatString = "c";
 
 {% endhighlight %}
 

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Number Formatting in Syncfusion NumericTextBox control for Xamarin.Forms
 description: Learn how to add format String, enable parser mode and percent display mode for NumericTextBox control.
@@ -20,7 +20,7 @@ It has three types,
 	
 {% highlight c# %}
 	
-	SfNumericTextBox.FormatString="c";
+	numericTextBox.FormatString="c";
 	 
 {% endhighlight %}
 	
@@ -29,7 +29,7 @@ It has three types,
 	
 {% highlight c# %}
 	
-	SfNumericTextBox.FormatString="n";
+	numericTextBox.FormatString="n";
 	 
 {% endhighlight %}
 	
@@ -38,7 +38,7 @@ It has three types,
 	
 {% highlight c# %}
 
-	SfNumericTextBox.FormatString="p";
+	numericTextBox.FormatString="p";
 	 
 {% endhighlight %}
 	
@@ -54,7 +54,7 @@ N> The `ParsingMode` is of type Parsers containing enum values of Double and Dec
 
 {% highlight c# %}
 
-	sfNumericTextBox.ParserMode=ParserMode.Decimal;
+	numericTextBox.ParserMode=ParserMode.Decimal;
 	  
 {% endhighlight %}
 
@@ -72,7 +72,7 @@ It provides the following options:
 
 {% highlight c# %}
 
-	sfNumericTextBox.PercentDisplayMode=PercentDisplayMode.Value;
+	numericTextBox.PercentDisplayMode=PercentDisplayMode.Value;
 
 {% endhighlight %}
 
@@ -80,7 +80,7 @@ It provides the following options:
 
 {% highlight c# %}
 
-	sfNumericTextBox.PercentDisplayMode=PercentDisplayMode.Compute;
+	numericTextBox.PercentDisplayMode=PercentDisplayMode.Compute;
 
 {% endhighlight %}
 

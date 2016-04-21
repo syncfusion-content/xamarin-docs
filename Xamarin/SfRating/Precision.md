@@ -19,7 +19,7 @@ The rating item will be filled completely based on the rating value.
 
 {% highlight C# %}
 
-	sfRating.Precision=Precision.Standard;
+	rating.Precision=Precision.Standard;
 
 {% endhighlight %} 
 
@@ -31,7 +31,7 @@ The rating item will be filled partially based on the rating value.
 
 {% highlight C# %}
 
-	sfRating.Precision=Precision.Half;
+	rating.Precision=Precision.Half;
 
 {% endhighlight %} 
 
@@ -43,7 +43,7 @@ The rating item will be filled exactly based on the rating value.
 
 {% highlight c# %}
 
-	sfRating.Precision=Precision.Exact;
+	rating.Precision=Precision.Exact;
 
 {% endhighlight %} 
 

@@ -1,4 +1,4 @@
----
+﻿---
 
 layout: post
 title: Getting Started with Syncfusion Rating control for Xamarin.Forms
@@ -120,7 +120,7 @@ The Rating control is configured entirely in C# code or by using XAML markup. Th
 
 {% highlight C# %}
 
-	SfRating sfRating = new SfRating(); 
+	SfRating rating = new SfRating(); 
 
 {% endhighlight %}
 
@@ -128,13 +128,13 @@ The Rating control is configured entirely in C# code or by using XAML markup. Th
 
 {% highlight C# %}
 
-	sfRating.ItemCount=5;
+	rating.ItemCount=5;
 
-	sfRating.Precision=Precision.Standard;
+	rating.Precision=Precision.Standard;
 
-	sfRating.ToolTipPlacement=ToolTipPlacement.None;
+	rating.ToolTipPlacement=ToolTipPlacement.None;
 
-	sfRating.ItemSize=70;
+	rating.ItemSize=70;
 
 {% endhighlight %}
 
@@ -146,7 +146,7 @@ N> By default, property value is 0.
 
 {% highlight C# %}
 
-    sfRating.Value=3;
+    rating.Value=3;
 
 {% endhighlight %}
 
@@ -156,7 +156,7 @@ N> By default, property value is 0.
 
 {% highlight C# %}
 
-    sfRating.Precision = Precision.Standard;
+    rating.Precision = Precision.Standard;
 
 {% endhighlight%}
 

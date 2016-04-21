@@ -15,7 +15,7 @@ Gets or sets the minimum possible value of the range. The thumb could not move b
 
 {% highlight c# %}
 
-	sfRangeSlider.Minimum=0;
+	rangeSlider.Minimum=0;
 
 {% endhighlight %}
 
@@ -25,7 +25,7 @@ Gets or sets the maximum possible value of the range. The thumb could not move a
 
 {% highlight c# %}
 
-	sfRangeSlider.Maximum=24;
+	rangeSlider.Maximum=24;
 
 {% endhighlight %}
 
@@ -35,7 +35,7 @@ The `TickFrequency` property is used to decide the number of ticks to be display
 
 {% highlight c# %}
 
-	sfRangeSlider.TickFrequency=4;
+	rangeSlider.TickFrequency=4;
 
 {% endhighlight %}
 
@@ -47,7 +47,7 @@ The `StepFrequency` property is used to specify the interval between snap points
 
 {% highlight c# %}
 
-	sfRangeSlider.TickFrequency=4;
+	rangeSlider.TickFrequency=4;
 
 {% endhighlight %}
 
@@ -67,7 +67,7 @@ N> The default option is Ticks.
 
 {% highlight c# %}
 
-	sfRangeSlider.SnapsTo=SnapsTo.Ticks;
+	rangeSlider.SnapsTo=SnapsTo.Ticks;
 
 {% endhighlight %}
 
@@ -81,7 +81,7 @@ In this orientation, the values and the slider are set horizontally.
 
 {% highlight c# %}
 
-	sfRangeSlider.Orientation=Orientation.Horizontal
+	rangeSlider.Orientation=Orientation.Horizontal
 
 {% endhighlight %}
 
@@ -95,7 +95,7 @@ N> The default option is Horizontal.
 
 {% highlight c# %}
 
-	sfRangeSlider.Orientation=Orientation.Vertical
+	rangeSlider.Orientation=Orientation.Vertical
 
 {% endhighlight %}
 

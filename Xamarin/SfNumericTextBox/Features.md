@@ -16,7 +16,7 @@ N> The `MaximumNumberDecimalDigits` property can be provided with positive value
 
 {% highlight c# %}
 
-	sfNumericTextBox.MaximumNumberDecimalDigits=2;
+	numericTextBox.MaximumNumberDecimalDigits=2;
   
 {% endhighlight %}
 
@@ -30,7 +30,7 @@ N> By default, the property value is false.
 
 {% highlight c# %}
 
-	SfNumericTextBox.AllowNull=true;
+	numericTextBox.AllowNull=true;
 
 {% endhighlight %}
 

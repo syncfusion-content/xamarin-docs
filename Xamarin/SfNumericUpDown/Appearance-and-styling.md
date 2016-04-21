@@ -21,7 +21,7 @@ Spin Buttons will get aligned to the right side of the control.
 
 {% highlight C# %}
 
-	sfNumericUpDown.SpinButttonAlignment = SpinButtonAlignment.Right;
+	numericUpDown.SpinButttonAlignment = SpinButtonAlignment.Right;
 
 {% endhighlight %}
 
@@ -33,7 +33,7 @@ Spin Buttons will get aligned to the left side of the control.
 
 {% highlight C# %}
 
-	sfNumericUpDown.SpinButttonAlignment = SpinButtonAlignment.Left;
+	numericUpDown.SpinButttonAlignment = SpinButtonAlignment.Left;
 
 {% endhighlight %}
 
@@ -45,7 +45,7 @@ Spin Buttons will get aligned to the both side of the control.
 
 {% highlight C# %}
 
-	sfNumericUpDown.SpinButttonAlignment = SpinButtonAlignment.Both;
+	numericUpDown.SpinButttonAlignment = SpinButtonAlignment.Both;
 
 {% endhighlight %}
 

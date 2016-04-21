@@ -16,7 +16,7 @@ N> Default `Culture` property value is en-US.
 
 {% highlight c# %}
 
-	sfNumericTextBox.Culture = new System.Globalization.CultureInfo("fr-FR");
+	numericTextBox.Culture = new System.Globalization.CultureInfo("fr-FR");
 	
 {% endhighlight %}
 

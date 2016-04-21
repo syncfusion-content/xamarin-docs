@@ -94,8 +94,8 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% highlight C# %}		
 
-	Rotator sfRotator = new Rotator();
-	this.Content = sfRotator;
+	SfRotator rotator = new SfRotator();
+	this.Content = rotator;
 	
 {% endhighlight %}
 
@@ -105,7 +105,7 @@ The navigation mode for navigating items can be decided using `NavigationMode` p
 
 {% highlight C# %}	
 
-	sfRotator.NavigationStripMode = NavigationStripMode.Dots;
+	rotator.NavigationStripMode = NavigationStripMode.Dots;
 
 {% endhighlight %}
 
@@ -115,8 +115,8 @@ The placement position of navigation strip items such as Thumbnail or Dots can b
 
 {% highlight C# %}	
 
-	sfRotator.NavigationStripMode = NavigationStripMode.Dots;
-	sfRotator.NavigationStripPosition = NavigationStripPosition.Bottom;
+	rotator.NavigationStripMode = NavigationStripMode.Dots;
+	rotator.NavigationStripPosition = NavigationStripPosition.Bottom;
 	
 {% endhighlight %}
 

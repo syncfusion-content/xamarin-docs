@@ -31,7 +31,7 @@ Tick marks can be placed either below the track in horizontal orientation or rig
 
 {% highlight c# %}
 
-	sfRangeSlider.TickPlacement=TickPlacement.BottomRight;
+	rangeSlider.TickPlacement=TickPlacement.BottomRight;
 
 {% endhighlight %}
 
@@ -43,7 +43,7 @@ Tick marks are placed either above the track in horizontal orientation or left o
 
 {% highlight c# %}
 
-	sfRangeSlider.TickPlacement=TickPlacement.TopLeft;
+	rangeSlider.TickPlacement=TickPlacement.TopLeft;
 
 {% endhighlight %}
 
@@ -55,7 +55,7 @@ Ticks are placed along the track.
 
 {% highlight c# %}
 
-	sfRangeSlider.TickPlacement=TickPlacement.Inline;
+	rangeSlider.TickPlacement=TickPlacement.Inline;
 
 {% endhighlight %}
 
@@ -67,7 +67,7 @@ Tick marks are placed on both sides of the track either in horizontal or vertica
 
 {% highlight c# %}
 
-	sfRangeSlider.TickPlacement=TickPlacement.Outside;
+	rangeSlider.TickPlacement=TickPlacement.Outside;
 
 {% endhighlight %}
 

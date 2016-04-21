@@ -15,7 +15,7 @@ The `NavigationStripMode` property specifies the appearance of navigation bar it
 
 {% highlight C# %}
 
-	sfRotator.NavigationStripMode = NavigationStripMode.Thumbnail;	
+	rotator.NavigationStripMode = NavigationStripMode.Thumbnail;	
 
 {% endhighlight %}
 
@@ -25,7 +25,7 @@ The `NavigationStripMode` property specifies the appearance of navigation bar it
 
 {% highlight C# %}
 
-	sfRotator.NavigationStripMode = NavigationStripMode.Dots;	
+	rotator.NavigationStripMode = NavigationStripMode.Dots;	
 
 {% endhighlight %}
 

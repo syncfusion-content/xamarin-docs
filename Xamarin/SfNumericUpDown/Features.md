@@ -16,7 +16,7 @@ N> The `MaximumNumberDecimalDigits` property can be provided with positive value
 
 {% highlight C# %}
 
-	sfNumericUpDown.MaximumNumberDecimalDigits = 2;
+	numericUpDown.MaximumNumberDecimalDigits = 2;
 
 {% endhighlight %}
 
@@ -28,7 +28,7 @@ N> By default, the property value is false.
 
 {% highlight C# %}
 
-	SfNumericUpDown.AllowNull=true;
+	numericUpDown.AllowNull=true;
 
 {% endhighlight %}
 
@@ -42,7 +42,7 @@ N> By default the property value is false.
 
 {% highlight C# %}
 
-	sfNumericUpDown.AutoReverse = true;
+	numericUpDown.AutoReverse = true;
 
 {% endhighlight %}
 
@@ -54,8 +54,8 @@ N> By default the minimum property value is 0 and maximum property value is 100.
 
 {% highlight C# %}
 
-	sfNumericUpDown.Minimum = 10;
-	sfNumerucUpDown.Maximum = 50
+	numericUpDown.Minimum = 10;
+	numerucUpDown.Maximum = 50
 
 {% endhighlight %}
 
@@ -71,6 +71,6 @@ N> By default the property value is 1.
 
 {% highlight C# %}
 
-	sfNumericUpDown.StepValue = 6;
+	numericUpDown.StepValue = 6;
 
 {% endhighlight %}

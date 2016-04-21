@@ -50,10 +50,10 @@ Triggered when value changed with single thumb.
 
 {% highlight c# %}
 
-	sfRangeSlider.ValueChanging  += (object sender, ValueEventArgs e) => 
+	rangeSlider.ValueChanging  += (object sender, ValueEventArgs e) => 
 			{
 				float range = e.Value;
-				SfRangeSlider rangeslider = e.RangeSlider;
+				SfRangeSlider rangeSlider = e.RangeSlider;
 			};
 	
 
@@ -88,11 +88,11 @@ Triggered when either RangeStart or RangeEnd changed when ShowRange is true.
 
 {% highlight c# %}
 
-	sfRangeSlider.RangeChanging+= (object sender, RangeEventArgs e) =>
+	rangeSlider.RangeChanging+= (object sender, RangeEventArgs e) =>
 			{
 				float rangestart = e.Start;
 				float rangeend = e.End;
-				SfRangeSlider rangeslider = e.RangeSlider;
+				SfRangeSlider rangeSlider = e.RangeSlider;
 			};	
 
 {% endhighlight %}

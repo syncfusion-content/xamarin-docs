@@ -19,7 +19,8 @@ The `MinorScaleStyle` and `MajorScaleStyle` properties of `SfDateTimeRangeNaviga
 
 {% tabs %}
 {% highlight xaml %}
-<rangenavigator:SfDateTimeRangeNavigator HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Minimum="1/5/2015" Maximum="11/7/2015">
+<rangenavigator:SfDateTimeRangeNavigator HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Minimum="1/5/2015" 
+	Maximum="11/7/2015">
 
 <rangenavigator:SfDateTimeRangeNavigator.MajorScaleStyle>
 

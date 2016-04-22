@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Getting Started with Syncfusion NumericUpDown control for Xamarin.Forms 
 description: A quick tour to initial users on Syncfusion NumericUpDown control for Xamarin.Forms platform
@@ -120,8 +120,8 @@ The NumericUpDown control configured entirely in C# code or by using XAML markup
 
 {% highlight C# %}
 
-	SfNumericUpDown sfnumericupdown=new SfNumericUpDown();
-	this.Content = sfnumericupdown;
+	SfNumericUpDown numericUpDown=new SfNumericUpDown();
+	this.Content = numericUpDown;
 
 {% endhighlight %}
 
@@ -131,7 +131,7 @@ The NumericUpDown control display value can be set using `Value` property.
 
 {% highlight C# %}
 
-	sfnumericupdown.Value= 5;
+	numericUpDown.Value= 5;
 
 {% endhighlight %}
 
@@ -143,7 +143,7 @@ N> The `ParsingMode` is of type Parsers containing enum values of Double and Dec
 
 {% highlight c# %}
 
-	sfnumericupdown.ParsingMode=Parsers.Decimal;
+	numericUpDown.ParsingMode=Parsers.Decimal;
 	
 {% endhighlight %}
 
@@ -161,6 +161,6 @@ N> The control displays the formatted text on lost focus. Default Value of `Form
 
 {% highlight C# %}
 
-	sfnumericupdown.FormatString= “c”;
+	numericUpDown.FormatString= “c”;
 
 {% endhighlight %}

@@ -17,7 +17,8 @@ The `ShowTooltip` property of `SfDateTimeRangeNavigator` is used to control the 
 
 {% tabs %}
 {% highlight xaml %}
-<rangenavigator:SfDateTimeRangeNavigator Minimum="1/1/2015" Maximum="1/1/2016" ViewRangeStart="5/1/2015" ViewRangeEnd="9/1/2016" EnableTooltip="False"/>
+<rangenavigator:SfDateTimeRangeNavigator Minimum="1/1/2015" Maximum="1/1/2016" ViewRangeStart="5/1/2015" 
+	ViewRangeEnd="9/1/2016" EnableTooltip="False"/>
 {% endhighlight %}
 
 {% highlight c# %}
@@ -61,12 +62,18 @@ The `LeftTooltipStyle` and `RightTooltipStyle` properties of `SfDateTimeRangeNav
 {% tabs %}
 {% highlight xaml %}
 <rangenavigator:SfDateTimeRangeNavigator Minimum="1/1/2015" Maximum="1/1/2016" ViewRangeStart="5/1/2015" ViewRangeEnd="9/1/2016">
-<rangenavigator:SfDateTimeRangeNavigator.LeftTooltipStyle>
-<rangenavigator:TooltipStyle TextColor="Blue" BackgroundColor="White" BorderColor="Blue" BorderWidth="2" FontSize="30" Margin="15"/>
-</rangenavigator:SfDateTimeRangeNavigator.LeftTooltipStyle>
-<rangenavigator:SfDateTimeRangeNavigator.RightTooltipStyle>
-<rangenavigator:TooltipStyle TextColor="Blue" BackgroundColor="White" BorderColor="Blue" BorderWidth="2" FontSize="30" Margin="15"/>
-</rangenavigator:SfDateTimeRangeNavigator.RightTooltipStyle>
+
+	<rangenavigator:SfDateTimeRangeNavigator.LeftTooltipStyle>
+		<rangenavigator:TooltipStyle TextColor="Blue" BackgroundColor="White" BorderColor="Blue" BorderWidth="2" 
+			FontSize="30" Margin="15"/>
+	</rangenavigator:SfDateTimeRangeNavigator.LeftTooltipStyle>
+	
+	<rangenavigator:SfDateTimeRangeNavigator.RightTooltipStyle>
+	
+		<rangenavigator:TooltipStyle TextColor="Blue" BackgroundColor="White" BorderColor="Blue" BorderWidth="2" 
+			FontSize="30" Margin="15"/>
+	</rangenavigator:SfDateTimeRangeNavigator.RightTooltipStyle>
+	
 </rangenavigator:SfDateTimeRangeNavigator>
 {% endhighlight %}
 
@@ -75,7 +82,9 @@ dateTimeRangeNavigator.LeftTooltipStyle.TextColor = Color.Blue;
 dateTimeRangeNavigator.LeftTooltipStyle.BackgroundColor = Color.White;
 dateTimeRangeNavigator.LeftTooltipStyle.BorderColor = Color.Blue;
 dateTimeRangeNavigator.LeftTooltipStyle.BorderWidth = 2;
-dateTimeRangeNavigator.LeftTooltipStyle.FontSize = 30;dateTimeRangeNavigator.LeftTooltipStyle.Margin = 15;
+dateTimeRangeNavigator.LeftTooltipStyle.FontSize = 30;
+dateTimeRangeNavigator.LeftTooltipStyle.Margin = 15;
+
 dateTimeRangeNavigator.RightTooltipStyle.TextColor = Color.Blue;
 dateTimeRangeNavigator.RightTooltipStyle.BackgroundColor = Color.White;
 dateTimeRangeNavigator.RightTooltipStyle.BorderColor = Color.Blue;

@@ -23,19 +23,20 @@ The `LeftThumbStyle` and `RightThumbStyle` properties are used to configure the 
 
 {% tabs %}
 {% highlight xaml %}
-<rangenavigator:SfDateTimeRangeNavigator HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Minimum="1/1/2015" Maximum="12/31/2015">
+<rangenavigator:SfDateTimeRangeNavigator HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Minimum="1/1/2015" 
+	Maximum="12/31/2015">
 
-<rangenavigator:SfDateTimeRangeNavigator.LeftThumbStyle>
+	<rangenavigator:SfDateTimeRangeNavigator.LeftThumbStyle>
 
-<rangenavigator:ThumbStyle BorderColor="#083928" BackgroundColor="Aqua" BorderWidth="3" LineColor="#E70E49" LineWidth="5"/>
+		<rangenavigator:ThumbStyle BorderColor="#083928" BackgroundColor="Aqua" BorderWidth="3" LineColor="#E70E49" LineWidth="5"/>
 
-</rangenavigator:SfDateTimeRangeNavigator.LeftThumbStyle>
+	</rangenavigator:SfDateTimeRangeNavigator.LeftThumbStyle>
 
-<rangenavigator:SfDateTimeRangeNavigator.RightThumbStyle>
+	<rangenavigator:SfDateTimeRangeNavigator.RightThumbStyle>
 
-<rangenavigator:ThumbStyle BorderColor="#083928" BackgroundColor="Aqua" BorderWidth="3" LineColor="#E70E49" LineWidth="5"/>
+		<rangenavigator:ThumbStyle BorderColor="#083928" BackgroundColor="Aqua" BorderWidth="3" LineColor="#E70E49" LineWidth="5"/>
 
-</rangenavigator:SfDateTimeRangeNavigator.RightThumbStyle>
+	</rangenavigator:SfDateTimeRangeNavigator.RightThumbStyle>
 
 </rangenavigator:SfDateTimeRangeNavigator>
 {% endhighlight %}

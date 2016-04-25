@@ -188,9 +188,19 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 The chart control can be configured entirely in C# code or using XAML markup.
 
+If you are using XAML markup, you can add the following namespace in XAML page,
+
+{% highlight xaml %} 
+
+xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms" 
+
+{% endhighlight %}
+
 1.Create an instance of SfChart.
 
 2.Add the primary and secondary axis for the chart as shown below.
+
+{% tabs %} 
 
 {% highlight C# %} 
 
@@ -261,8 +271,11 @@ this.Content = chart;
 
 {% endhighlight %}
 
+{% endtabs %} 
 
 3.A title for the chart is set using the Title property as shown below,
+
+{% tabs %}   
 
 {% highlight C# %}  
 
@@ -272,8 +285,6 @@ chart.Title = new ChartTitle ()
 };
 		
 {% endhighlight %}
-
-
 
 {% highlight xaml %} 
 
@@ -291,7 +302,7 @@ chart.Title = new ChartTitle ()
 	  
 {% endhighlight %}
 
-
+{% endtabs %} 
 
 ## Add Chart series
 

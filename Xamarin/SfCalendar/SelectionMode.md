@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Interactive Selection modes in Syncfusion Calendar control for Xamarin.Forms
 description: Learn how to change the selection mode of calendar control
@@ -9,19 +9,17 @@ documentation: ug
 
 # Selection
 
-Dates can be selected by making a touch on month view cells. The default Selection mode is Single which allows user to select one date at a time. Calendar provides support to select dates in three modes such as single, multiple and range selection.
+Dates can be selected by making a touch on month view cells. The default Selection mode is Single which allows user to select one date at a time. Calendar provides support to select dates in two modes such as single and multiple selection.
 
 * `SingleSelection` – A single date can be selected in a month view which can be equipped when user needs to select one date at a time / to view events.
 
 * `MultiSelection` – More than one date can be selected in a random manner. Clicking again on selected dates can do deselection.
 
-* `RangeSelection` – Range of dates can be selected by dragging on the date cells.
-
 The selected dates can be retrieved through `OnCalendarTapped` event which is raised on selecting.
 
 {% highlight c# %}
 	
-	sfCalendar.SelectionMode=SelectionMode.SingleSelection;
+	sfCalendar.SelectionMode=SelectionMode.MultiSelection;
 	
 {% endhighlight %}
 

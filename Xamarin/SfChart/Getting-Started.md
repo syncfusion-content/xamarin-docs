@@ -190,6 +190,16 @@ The chart control can be configured entirely in C# code or using XAML markup.
 
 If you are using XAML markup, you can add the following namespace in XAML page,
 
+1.Add SfChart reference.
+
+{% tabs %} 
+
+{% highlight C# %} 
+
+{% endhighlight %}
+
+using Syncfusion.SfChart.XForms;
+
 {% highlight xaml %} 
 
 xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms" 

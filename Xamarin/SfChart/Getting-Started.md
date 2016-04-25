@@ -194,15 +194,17 @@ The chart control can be configured entirely in C# code or using XAML markup.
 
 {% highlight C# %} 
 
-{% endhighlight %}
-
 using Syncfusion.SfChart.XForms;
+
+{% endhighlight %}
 
 {% highlight xaml %} 
 
 xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms" 
 
 {% endhighlight %}
+
+{% endtabs %} 
 
 2.Create an instance of SfChart.
 

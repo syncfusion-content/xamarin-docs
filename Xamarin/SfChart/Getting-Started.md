@@ -188,7 +188,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 The chart control can be configured entirely in C# code or using XAML markup.
 
-1.Importing the chart namespace.
+1.Importing the SfChart namespace.
 
 {% tabs %} 
 

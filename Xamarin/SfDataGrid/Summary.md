@@ -165,7 +165,7 @@ You can customize this group caption text format by setting the [SfDataGrid.Gro
 
 {% tabs %}
 {% highlight c# %}
-//Customized groupcaptiontext in German 
+//Customized group caption text in German 
 dataGrid.GroupCaptionTextFormat = "{ColumnName} : {Key} - {ItemsCount} Produkte";
 
 {% endhighlight %}

@@ -149,7 +149,7 @@ sfgrid.CaptionSummaryRow= summaryRow;
 
 The [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSummaryRow~ShowSummaryInRow.html#  “”) property can be set to true or false for displaying the Summary in the entire row or for displaying the summary within the column bounds it is mapped to. The following screenshot shows the final outcome for both values of `ShowSummaryInRow`.
 
-![](SfDataGrid_images/Summary_img1.jpeg)
+![]({:.SfDataGrid_images/Summary_img1.jpeg-center})
 
 ## How To?
 
@@ -161,11 +161,11 @@ SfDataGrid also supports setting custom GroupCaptionTextFormat for [CaptionSum
 * Key : Displays the group key value.
 * ItemsCount : Displays the number of items in group.
 
-You can customize this group caption text format by setting the [SfDataGrid.GroupCaptionTextFormat](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GroupCaptionTextFormat.html#  “”) property. The following code example illustrates how to customize GroupCaptionText in SfDataGrid.
+You can customize this group caption text format by setting the [SfDataGrid.GroupCaptionTextFormat](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GroupCaptionTextFormat.html#  “”) property. The following code example illustrates how to customize groupcaptiontext in SfDataGrid.
 
 {% tabs %}
 {% highlight c# %}
-//Customized GroupCaptionText in German 
+//Customized group caption text in German 
 dataGrid.GroupCaptionTextFormat = "{ColumnName} : {Key} - {ItemsCount} Produkte";
 
 {% endhighlight %}

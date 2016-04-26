@@ -19,7 +19,7 @@ SfDataGrid lets you refresh the data in view in runtime by triggering an `IComma
 
 You need to set the [SfDataGrid.IsBusy](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~IsBusy.html) property to true before refreshing the records to notify the grid that pull to refresh action is being performed and set the property to false after the view is refreshed. You can also alter the time for the PullToRefresh animation from the sample by setting a delay based on your requirement.
 
-The following code example illustrates how to enable and perform `PullToRefresh` operation in SfDataGrid.
+The following code example illustrates how to enable and perform PullToRefresh operation in SfDataGrid.
 
 {% highlight c# %}
 //Enable PullToRefresh in SfDataGrid

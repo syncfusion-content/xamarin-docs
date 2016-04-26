@@ -70,7 +70,7 @@ You can also customize a column’s header text, sorting, alignment, padding, et
 
 ## Manually generate Columns
 
-SfDatagrid also allows you to define the columns manually by adding the `GridColumn` objects to the `SfDatagrid.Columns` collection. In case if you want only the manually defined columns to be in view, then you can achieve it by setting the `SfDatagrid.AutoGenerateColumns` property to false. There are different types of columns available in SfDatagrid and you can create any column based on your requirements from both XAML and code.
+SfDatagrid also allows you to define the columns manually by adding the GridColumn objects to the `SfDatagrid.Columns` collection. In case if you want only the manually defined columns to be in view, then you can achieve it by setting the `SfDatagrid.AutoGenerateColumns` property to false. There are different types of columns available in SfDatagrid and you can create any column based on your requirements from both XAML and code.
  
 The following code example illustrates about creating columns manually in SfDatagrid
 

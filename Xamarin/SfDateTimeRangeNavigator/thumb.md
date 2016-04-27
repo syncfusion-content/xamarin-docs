@@ -28,13 +28,15 @@ The `LeftThumbStyle` and `RightThumbStyle` properties are used to configure the 
 
 	<rangenavigator:SfDateTimeRangeNavigator.LeftThumbStyle>
 
-		<rangenavigator:ThumbStyle BorderColor="#083928" BackgroundColor="Aqua" BorderWidth="3" LineColor="#E70E49" LineWidth="5"/>
+		<rangenavigator:ThumbStyle BorderColor="#083928" BackgroundColor="Aqua" BorderWidth="3" LineColor="#E70E49" 
+			LineWidth="5"/>
 
 	</rangenavigator:SfDateTimeRangeNavigator.LeftThumbStyle>
 
 	<rangenavigator:SfDateTimeRangeNavigator.RightThumbStyle>
 
-		<rangenavigator:ThumbStyle BorderColor="#083928" BackgroundColor="Aqua" BorderWidth="3" LineColor="#E70E49" LineWidth="5"/>
+		<rangenavigator:ThumbStyle BorderColor="#083928" BackgroundColor="Aqua" BorderWidth="3" LineColor="#E70E49" 
+			LineWidth="5"/>
 
 	</rangenavigator:SfDateTimeRangeNavigator.RightThumbStyle>
 

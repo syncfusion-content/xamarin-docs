@@ -28,7 +28,7 @@ dateTimeRangeNavigator.EnableTooltip = false;
 {% endhighlight %}
 {% endtabs %}
 
-![](tooltip_images/tooltip_img1.jpeg)
+![](tooltip_images/tooltip_img1.png)
 
 ## Tooltip Format
 
@@ -44,7 +44,7 @@ dateTimeRangeNavigator.TooltipFormat = "yyyy/MM";
 {% endhighlight %}
 {% endtabs %}
 
-![](tooltip_images/tooltip_img2.jpeg)
+![](tooltip_images/tooltip_img2.png)
 
 ## Appearance Customization
 
@@ -94,6 +94,6 @@ dateTimeRangeNavigator.RightTooltipStyle.Margin = 15;
 {% endhighlight %}
 {% endtabs %}
 
-![](tooltip_images/tooltip_img3.jpeg)
+![](tooltip_images/tooltip_img3.png)
 
 

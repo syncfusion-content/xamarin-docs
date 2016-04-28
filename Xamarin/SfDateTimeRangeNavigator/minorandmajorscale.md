@@ -27,7 +27,7 @@ dateTime.Intervals = DateTimeIntervalType.Year | DateTimeIntervalType. Month;
 {% endhighlight %}
 {% endtabs %}
 
-![](minorandmajorscale_images/minorandmajorscale_img1.jpeg)
+![](minorandmajorscale_images/minorandmajorscale_img1.png)
 
 ## Appearance Customization
 
@@ -91,6 +91,6 @@ dateTime.MinorScaleStyle.SelectedLabelFontSize = 20;
 {% endhighlight %}
 {% endtabs %}
 
-![](minorandmajorscale_images/minorandmajorscale_img2.jpeg)
+![](minorandmajorscale_images/minorandmajorscale_img2.png)
 
 

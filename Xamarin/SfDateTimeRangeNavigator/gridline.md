@@ -58,4 +58,4 @@ rangenavigator.MinorScaleStyle.GridLineDashArray = new double[2] { 4, 4 };
 {% endhighlight %}
 {% endtabs %}
 
-![](gridLine_images/gridline_img1.jpeg)
+![](gridLine_images/gridline_img1.png)

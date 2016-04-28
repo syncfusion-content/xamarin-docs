@@ -70,4 +70,4 @@ rangenavigator.RightThumbStyle.LineWidth = 5;
 {% endhighlight %}
 {% endtabs %}
 
-![](thumb_images/thumb_img1.jpeg)
+![](thumb_images/thumb_img1.png)

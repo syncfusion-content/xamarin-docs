@@ -143,4 +143,11 @@ The [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/x
 
 ![](SfDataGrid_images/CaptureColumn.png)
 
+<<<<<<< HEAD
+=======
+{% tabs %}
+{% highlight c# %}
+//Customized group caption text in German 
+dataGrid.GroupCaptionTextFormat = "{ColumnName} : {Key} - {ItemsCount} Produkte";
+>>>>>>> 723d8c2b7e9bdf475b8ecfec11ced3106a711050
 

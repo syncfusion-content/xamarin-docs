@@ -9,8 +9,6 @@ documentation: UG
 
 # Column Types 
 
-This section explains you the different types of column and the customizations that can done for a column.
-
 SfDataGrid contains different types of column each with its own functionalities as implied by its name. You can use any column based on your requirements. 
 
 The below table describes you the types of column and its purpose of usage in SfDataGrid.
@@ -96,19 +94,19 @@ public class DisplayBindingConverter : IValueConverter
 
 #### HeaderCellTextSize
 
-The FontSize for the content of header cell in the GridColumncan be customized by using the [GridColumn.HeaderCellTextSize](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderCellTextSize.html) property. The default font size of the header cells in SfDataGrid is 14.
+The FontSize for the content of header cell in the GridColumn can be customized by using the [GridColumn.HeaderCellTextSize](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderCellTextSize.html) property. The default font size of the header cells in SfDataGrid is 14.
 
 #### HeaderFont
 
-The FontFamily for the content of header cell in the GridColumn can be customized by using the [GridColumn.HeaderFont](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderFont.html) property. The default value font used in SfDataGrid is “HelveticaNeue LT 55 Roman”.
+The FontFamily for the content of header cell in the GridColumn can be customized by using the [GridColumn.HeaderFont](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderFont.html) property. The default value font used in SfDataGrid is `HelveticaNeue LT 55 Roman`.
 
 #### HeaderFontAttribute
 
-The FontAttribute for the content of the header cell in the GridColumn can be customized by using the [GridColumn.HeaderFontAttribute](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderFontAttribute.html) property. The default value of this property is “None” and you can customize this to “Bold” or “Italic”.
+The FontAttribute for the content of the header cell in the GridColumn can be customized by using the [GridColumn.HeaderFontAttribute](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderFontAttribute.html) property. The default value of this property is `None` and you can customize this to `Bold` or `Italic`.
 
 #### HeaderText
 
-SfDataGrid allows you to customize the display content of the header cell using the [GridColumn.HeaderText](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderText.html) property. It specifies the text displayed in the column header. If HeaderText is not defined, then `GridColumn.MappingName` will be assigned to the HeaderText and will be displayed as column header.
+SfDataGrid allows you to customize the display content of the header cell using the [GridColumn.HeaderText](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderText.html) property. It specifies the text displayed in the column header. If header text is not defined, then `GridColumn.MappingName` will be assigned to the header text and will be displayed as column header.
 
 #### HeaderTextAlignment
 
@@ -135,10 +133,30 @@ SfDataGrid allows you to customize the header cell based on your requirement by 
 
 SfDataGrid allows you to customize the width of each GridColumn in the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~Columns.html) collection. You can customize the column width by using the [GridColumn.Width](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~Width.html) property. By default this property will not be assigned any value and the GridColumn renders in view based on the value of [DefaultColumnWidth](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~DefaultColumnWidth.html) property in SfDataGrid.
 
+Customizing the width for auto generated columns in both XAML and code behind as shown below.
+
+{% tabs %}
+{% highlight c# %}
+void dataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e){
+if (e.Column.MappingName == "OrderID") {
+    e.Column.Width = 100;
+    }
+}
+{% endhighlight %}
+{% highlight xaml %}
+<sfgrid:SfDataGrid x:Name="dataGrid"
+                   AutoGenerateColumns="false"
+    <sfgrid:SfDataGrid.Columns x:TypeArguments="sfgrid:Columns">
+      <sfgrid:GridTextColumn MappingName="OrderID"
+                             Width="100"/>
+      </sfgrid:SfDataGrid.Columns > 
+  </sfgrid:SfDataGrid>
+{% endhighlight %}
+{% endtabs %}
 
 ## GridTextColumn
 
-[GridTextColumn](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridTextColumn.html) is derived from GridColumn and hence it inherits all the properties of GridColumn. It is used to host the textual content in the record cells. Each of the record cells in GridTextColumn displays the text based on the MappingName that associates the column with a property in the data source.
+GridTextColumn is derived from GridColumn and hence it inherits all the properties of GridColumn. It is used to host the textual content in the record cells. Each of the record cells in GridTextColumn displays the text based on the MappingName that associates the column with a property in the data source.
 
 The following code example creates GridTextColumn.
 
@@ -224,7 +242,7 @@ The FontSize for the content of record cells in GridColumn can be customized by 
 
 #### RecordFont
 
-The FontFamily for the content of header cell in the GridColumn can be customized by using the [GridColumn.RecordFont](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~RecordFont.html) property. The default value font used in SfDataGrid is “Helvetica Neue”.
+The FontFamily for the content of header cell in the GridColumn can be customized by using the [GridColumn.RecordFont](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~RecordFont.html) property. The default value font used in SfDataGrid is `Helvetica Neue`.
 
 #### TextAlignment
 
@@ -253,7 +271,7 @@ dataGrid.Columns.Add(new GridSwitchColumn() { MappingName = "IsClosed" });
 
 ## GridImageColumn
 
-[GridImageColumn](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridImageColumn.html) is derived from GridColumn, and hence it inherits all the properties of GridColumn. It displays images which as content of record cells in the column. The images loaded inside this column should be added as EmbeddedResource. To create GridImageColumn in SfDataGrid the property corresponding to the column in the underlying collection must be of type ImageSource.
+GridImageColumn is derived from GridColumn, and hence it inherits all the properties of GridColumn. It displays images which as content of record cells in the column. The images loaded inside this column should be added as EmbeddedResource. To create GridImageColumn in SfDataGrid the property corresponding to the column in the underlying collection must be of type ImageSource.
 
 The following code example shows how to use GridImageColumn.
  
@@ -269,7 +287,7 @@ dataGrid.Columns.Add(new GridImageColumn() { MappingName = "DealerImage" }
 
 ## GridTemplateColumn
 
-[GridTemplateColumn](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridTemplateColumn.html) is derived from GridColumn, and hence it inherits all the properties of GridColumn. It allows you to extend the functionality of GridColumn with your own view by creating the CellTemplate of GridTemplateColumn.
+GridTemplateColumn is derived from GridColumn, and hence it inherits all the properties of GridColumn. It allows you to extend the functionality of GridColumn with your own view by creating the `CellTemplate` of GridTemplateColumn.
 
 The below table provides the list of properties in GridTemplateColumn.
 
@@ -288,7 +306,7 @@ The below table provides the list of properties in GridTemplateColumn.
 </tr>
 </table>
 
-The following code example shows templating of GridTemplateColumn. Underlying record will be the BindingContext for the CellTemplate.
+The following code example shows templating of GridTemplateColumn. Underlying record will be the BindingContext for the `CellTemplate`.
 
 {% highlight xaml %}
 <syncfusion:GridTemplateColumn MappingName="CustomerID">

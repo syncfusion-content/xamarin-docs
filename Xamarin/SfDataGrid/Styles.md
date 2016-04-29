@@ -9,8 +9,6 @@ documentation: UG
 
 # Styles
 
-This section explains you about how to apply styles for changing the visual appearance of the SfDatagrid and its elements.
-
 SfDatagrid allows you to apply style to all of its elements by writing a Style class overriding from `DataGridStyle` and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridStyle.html) property.
   
 The following example explains you how to apply custom style to SfDatagrid.
@@ -102,9 +100,15 @@ public class Dark : DataGridStyle
     {
         return Color.FromRgb(34, 31, 31);
     }
+    
+    public override Color GetAlternatingRowBackgroundColor()
+    {
+        return Color.Yellow;
+    }
 } 
 {% endhighlight %}
 
 The following picture shows the grid loaded in a different style.
 
 ![](SfDataGrid_images/Style.png)
+![](SfDataGrid_images/AlternatingStyle1.png)

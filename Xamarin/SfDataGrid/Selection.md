@@ -92,3 +92,50 @@ dataGrid.SelectionMode = SelectionMode.None;
 //Clear selection using selection controller
 dataGrid.SelectionController.ClearSelection (); 
 {% endhighlight %}
+
+## Multiple Selection Colors
+
+SfDataGrid provides support to select one or more rows either programmatically or by touch interactions. By default SfDataGrid applies a common background color for the selected rows based on the current theme. However it also provides extensibility to have multiple selection colors when touching the rows by writing a custom SelectionController derived from [GridSelectionController](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSelectionController.html# "") and assigning it to the [SfDataGrid.SelectionController](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectionController.html# "") property. You need to override the GetSelectionColor () method to apply different colors for selection in runtime based on your requirement.
+The following code example illustrates how to set different colors for the selected rows in SfDataGrid.
+
+{% highlight c# %}
+sfGrid.SelectionController = new CustomSelectionController(sfGrid);
+sfGrid.SelectionMode = SelectionMode.Multiple;
+{% endhighlight %}
+
+{% highlight c# %}
+public class CustomSelectionController : GridSelectionController
+{
+    public Color[] SelectionColors { get; set; }
+
+    public CustomSelectionController(SfDataGrid datagrid)
+    {
+        this.DataGrid = datagrid;
+        SelectionColors = new Color[11] 
+        { 
+            Color.DarkSalmon,
+            Color.DarkSlateGray,
+            Color.Red, 
+            Color.Blue,
+            Color.DarkOliveGreen, 
+            Color.Black, 
+            Color.Gray, 
+            Color.MediumPurple,
+            Color.BurlyWood,
+            Color.DarkCyan,
+            Color.DarkGoldenrod 
+        };   
+    }
+    //Code to set multiple selection colors
+    public override Color GetSelectionColor(int rowIndex, object rowData)
+    {
+        if (SelectionColors != null)
+            return SelectionColors[rowIndex % 11];
+        else
+            return Color.Blue;
+    }
+}
+{% endhighlight %}
+The following screenshot shows the final outcome upon execution of the above code.
+
+![](SfDataGrid_images/MultipleSelectionColors.jpeg)

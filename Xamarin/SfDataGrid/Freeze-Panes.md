@@ -9,8 +9,7 @@ documentation: UG
 
 # Freeze panes
 
-This section explains you how to set Freeze panes in SfDataGrid. 
-
+SfDataGrid allows you to freeze the rows and columns when scrolling the grid.
 
 ## Freeze Rows
 

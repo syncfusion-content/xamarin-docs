@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Paging | SfDataGrid | Xamarin | Syncfusion
+title: Swiping| SfDataGrid | Xamarin | Syncfusion
 description: How to perform swiping and customize it
 platform: xamarin
 control: SfDataGrid

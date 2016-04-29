@@ -125,4 +125,4 @@ rangenavigator.Content = chart;
 {% endhighlight %}
 {% endtabs %}
 
-![](content_images/content_img1.jpeg)
+![](content_images/content_img1.png)

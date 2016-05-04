@@ -1,4 +1,4 @@
-﻿---
+---
 layout : post
 title : AutoCompleteSource mode in Syncfusion AutoComplete control for Xamarin.Forms
 description : Learn how to use AutoCompleteSource in AutoComplete

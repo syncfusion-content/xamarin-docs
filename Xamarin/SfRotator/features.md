@@ -15,11 +15,21 @@ The `EnableAutoPlay` property specifies whether the items should navigate automa
 
 N> By default, the property value is set to false.
 
+{% tabs %}
+
 {% highlight C# %}
 
 	rotator.EnableAutoPlay = True;
 
 {% endhighlight %}
+
+{% highlight xaml %}
+
+	<rotator:SfRotator x:Name="rotator" EnableAutoPlay="True" />
+	
+{% endhighlight %}
+
+{% endtabs %}
 
 ## Navigation Delay
 
@@ -27,15 +37,27 @@ The `NavigationDelay` property specifies the duration to delay the switch to nex
 
 N> The property value should be in milliseconds.
 
+{% tabs %}
+
 {% highlight C# %}
 
 	rotator.NavigationDelay = 2000;
 
 {% endhighlight %}
 
+{% highlight xaml %}
+
+	<rotator:SfRotator x:Name="rotator" NavigationDelay="2000" />
+	
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Item Looping
 
 The `EnableLooping` property specifies whether the items should navigate to first item once it reaches the last item and vice-versa.
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -43,11 +65,21 @@ The `EnableLooping` property specifies whether the items should navigate to firs
 
 {% endhighlight %}
 
+{% highlight xaml %}
+
+	<rotator:SfRotator x:Name="rotator" EnableLooping="True" />
+	
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Text Area 
 
 The `IsTextVisible` property can be used to enable the text area visibility in bottom area of rotator for providing additional information of items.
 
 N> By default, the property value is false.
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -55,11 +87,21 @@ N> By default, the property value is false.
 
 {% endhighlight %}
 
+{% highlight xaml %}
+
+	<rotator:SfRotator x:Name="rotator" IsTextVisible="True" />
+	
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Navigation Direction
 
 The `NavigationDirection` property specifies the direction in which items should be navigated in Rotator control.
 
 * `Horizontal` - Items can be navigated in horizontal direction.
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -67,10 +109,28 @@ The `NavigationDirection` property specifies the direction in which items should
 
 {% endhighlight %}
 
+{% highlight xaml %}
+
+	<rotator:SfRotator x:Name="rotator" NavigationDirection="Horizontal" />
+	
+{% endhighlight %}
+
+{% endtabs %}
+
 * `Vertical` - Items can be navigated in vertical direction.
+
+{% tabs %}
 
 {% highlight C# %}
 
 	rotator.NavigationDirection = NavigationDirection.Vertical;
 
 {% endhighlight %}
+
+{% highlight xaml %}
+
+	<rotator:SfRotator x:Name="rotator" NavigationDirection="Vertical" />
+	
+{% endhighlight %}
+
+{% endtabs %}

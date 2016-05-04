@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Character width of digital gauge
 description: Learn how set the width of Character in DigitalGauge

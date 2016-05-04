@@ -1,4 +1,4 @@
-﻿---
+---
 layout : post
 title : WaterMark in Syncfusion AutoComplete Control for Xamarin.Forms
 description : Learn how to set the Watermark in AutoComplete

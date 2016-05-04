@@ -104,13 +104,25 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 * Adding reference to RangeSlider.
 
+{% tabs %}
+
 {% highlight c# %}
 
 	using Syncfusion.SfRangeSlider.XForms;
 
 {% endhighlight %}
 
+{% highlight xaml %}
+
+	xmlns:range="clr-namespace:Syncfusion.SfRangeSlider.XForms;assembly=Syncfusion.SfRangeSlider.XForms"
+	
+{% endhighlight %}
+
+{% endtabs %}
+
 * Create an instance of SfRangeSlider.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -119,11 +131,21 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 	
 {% endhighlight %}
 
+{% highlight xaml %}
+
+	<range:SfRangeSlider />
+	
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Setting Range
 
 The `RangeStart` and `RangeEnd` properties can be set to denote the start range and end range values while dual thumb is used. 
 
 N> The `ShowRange` property is used to switch between a single thumb and double thumb. 
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -133,9 +155,19 @@ N> The `ShowRange` property is used to switch between a single thumb and double 
 
 {% endhighlight %}
 
+{% highlight xaml %}
+
+	<range:SfRangeSlider x:Name="rangeslider" RangeEnd="20" RangeStart="4"  ShowRange="true"/>
+	
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Restricting Values
 
 Set the minimum and maximum value for the slider by using the `Minimum` and `Maximum` properties in the RangeSlider.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -144,9 +176,19 @@ Set the minimum and maximum value for the slider by using the `Minimum` and `Max
 
 {% endhighlight %}
 
+{% highlight xaml %}
+
+	<range:SfRangeSlider x:Name="rangeslider" Minimum="0" Maximum="24"/>
+	
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Adding Snapping Mode
 
 The movement of the thumb can be varied in different ways. This is achieved by setting the `SnapsTo` property.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -155,7 +197,13 @@ The movement of the thumb can be varied in different ways. This is achieved by s
 
 {% endhighlight %}
 
+{% highlight xaml %}
 
+	<range:SfRangeSlider x:Name="rangeslider" SnapsTo="Ticks" StepFrequency="6"/>
+	
+{% endhighlight %}
+
+{% endtabs %}
 
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 layout : post
 title : PopUpDelay in Syncfusion AutoComplete Control for Xamarin.Forms
 description : Learn how to set the PopUpDelay in AutoComplete

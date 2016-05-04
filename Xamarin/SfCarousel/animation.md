@@ -1,4 +1,4 @@
-﻿---
+---
 layout : post
 title : Setting the duration for animation in Syncfusion Carousel control in Xamarin.Forms
 description : Learn how to set the duration for animation in Carousel for Xamarin.Forms

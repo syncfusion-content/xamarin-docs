@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Value of DigitalGauge
 description: Learn how to add  value to DigitalGauge

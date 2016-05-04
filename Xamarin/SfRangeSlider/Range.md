@@ -17,15 +17,27 @@ The `ShowRange` property should be set to true for displaying two thumbs in trac
 
 N> When this property is set to false, single thumb is displayed without any range 
 
+{% tabs %}
+
 {% highlight c# %}
 
 	rangeSlider.ShowRange= True;
 
 {% endhighlight %}
 
+{% highlight xaml %}
+
+	<range:SfRangeSlider x:Name="rangeslider" ShowRange="true"/>
+	
+{% endhighlight %}
+
+{% endtabs %}
+
 ## RangeStart
 
 Gets and sets the start value of the range.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -33,12 +45,30 @@ Gets and sets the start value of the range.
 
 {% endhighlight %}
 
+{% highlight xaml %}
+
+	<range:SfRangeSlider x:Name="rangeslider"  RangeStart="4" />
+	
+{% endhighlight %}
+
+{% endtabs %}
+
 ## RangeEnd
 
 Gets and sets the end value of the range.
+
+{% tabs %}
 
 {% highlight c# %}
 
 	rangeSlider.RangeEnd=10;
 
 {% endhighlight  %}
+
+{% highlight xaml %}
+
+	<range:SfRangeSlider x:Name="rangeslider" RangeEnd="20" />
+	
+{% endhighlight %}
+
+{% endtabs %}

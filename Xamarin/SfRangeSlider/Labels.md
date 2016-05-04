@@ -15,15 +15,27 @@ This property allows us to display labels for the ticks. When it sets to true, i
 
 N> The default value of the `ShowValueLabel` property is false.
 
+{% tabs %}
+
 {% highlight c# %}
 
 	rangeSlider.ShowValueLabel= True;
 
 {% endhighlight %}
 
+{% highlight xaml %}
+
+	<range:SfRangeSlider x:Name="rangeslider" ShowValueLabel="True"/>
+	
+{% endhighlight %}
+
+{% endtabs %}
+
 ## CustomLabel
 
 To display custom labels, `ShowCustomLabel` property should be set to true and need to populate the `CustomLabels` property with observable collection of items by specifying the custom labels for corresponding values.
+
+{% tabs %}
 
 {% highlight c# %}
 	
@@ -43,6 +55,14 @@ To display custom labels, `ShowCustomLabel` property should be set to true and n
 
 {% endhighlight %}
 
+{% highlight xaml %}
+
+	<range:SfRangeSlider x:Name="rangeslider" HeightRequest="400" ShowCustomLabel="true" CustomLabels="customCollection"/>
+	
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](images/customLabel.png)
 
 
@@ -56,19 +76,39 @@ Available options for this property are:
 
 * TopLeft
 
+{% tabs %}
+
 {% highlight c# %}
 
 	rangeSlider.ValuePlacement=ValuePlacement.TopLeft;
 
 {% endhighlight %}
 
+{% highlight xaml %}
+
+	<range:SfRangeSlider x:Name="rangeslider" ValuePlacement="TopLeft"/>
+	
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](images/value-TopLeft.png)
+
+{% tabs %}
 
 {% highlight c# %}
 
 	rangeSlider.ValuePlacement=ValuePlacement.BottomRight;
 
 {% endhighlight %}
+
+{% highlight xaml %}
+
+	<range:SfRangeSlider x:Name="rangeslider" ValuePlacement="BottomRight"/>
+	
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](images/Value-BottomRight.png)
 
@@ -82,8 +122,18 @@ Available options for this property are:
 
 * TopLeft
 
+{% tabs %}
+
 {% highlight c# %}
 
 	rangeSlider.LabelPlacement=LabelPlacement.TopLeft;
 
 {% endhighlight %}
+
+{% highlight xaml %}
+
+	<range:SfRangeSlider x:Name="rangeslider"LabelPlacement="TopLeft"/>
+	
+{% endhighlight %}
+
+{% endtabs %}

@@ -1,4 +1,4 @@
-﻿---
+---
 layout : post
 title : Populating data in Syncfusion Carousel control in Xamarin.Forms.
 description : Learn how to set the ItemsSource in Carousel for Xamarin.Forms.

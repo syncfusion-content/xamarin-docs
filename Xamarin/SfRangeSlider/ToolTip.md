@@ -15,11 +15,21 @@ The tooltip shows the current value based on thumb position.
 
 The `ToolTipPrecision` property is used to define the precision of the value displayed in the tooltip.
 
+{% tabs %}
+
 {% highlight c# %}
 
 	rangeSlider.ToolTipPrecision = 2;
 	
 {% endhighlight %}
+
+{% highlight xaml %}
+
+	<range:SfRangeSlider x:Name="rangeslider" ToolTipPrecision="2"/>
+	
+{% endhighlight %}
+
+{% endtabs %}
 
 ## ToolTipPlacement
 
@@ -33,15 +43,27 @@ The position of the tooltip in relation to the thumb can be controlled by the `T
 
 The Tooltip will be placed either below the Thumb in horizontal orientation or right of the Thumb in vertical orientation.
 
+{% tabs %}
+
 {% highlight c# %}
 
 	rangeSlider.ToolTipPlacement = ToolTipPlacement.BottomRight;
 	
 {% endhighlight %}
 
+{% highlight xaml %}
+
+	<range:SfRangeSlider x:Name="rangeslider" ToolTipPlacement="BottomRight"/>
+	
+{% endhighlight %}
+
+{% endtabs %}
+
 ### TopLeft
 
 the Tooltip will be placed either above the Thumb in horizontal orientation or left of the Thumb in vertical orientation.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -49,15 +71,33 @@ the Tooltip will be placed either above the Thumb in horizontal orientation or l
 	
 {% endhighlight %}
 
+{% highlight xaml %}
+
+	<range:SfRangeSlider x:Name="rangeslider" ToolTipPlacement="TopLeft"/>
+	
+{% endhighlight %}
+
+{% endtabs %}
+
 ### None
 
 Tooltip will be collapsed.
+
+{% tabs %}
 
 {% highlight c# %}
 
 	rangeSlider.ToolTipPlacement = ToolTipPlacement.None;
 	
 {% endhighlight %}
+
+{% highlight xaml %}
+
+	<range:SfRangeSlider x:Name="rangeslider" ToolTipPlacement="None"/>
+	
+{% endhighlight %}
+
+{% endtabs %}
 
 
 

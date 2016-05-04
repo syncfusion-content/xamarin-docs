@@ -1,4 +1,4 @@
-﻿---
+---
 layout : post
 title : Getting Started with Syncfusion AutoComplete Control for Xamarin.Forms
 description : A quick tour to initial users on Syncfusion autocomplete control for Xamarin.Forms platform

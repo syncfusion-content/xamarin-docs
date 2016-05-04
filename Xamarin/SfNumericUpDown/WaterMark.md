@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Watermark support in Syncfusion NumericUpDown control for Xamarin.Forms
 description: Learn how to add water mark text to NumericUpDown.

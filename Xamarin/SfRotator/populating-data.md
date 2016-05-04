@@ -13,6 +13,8 @@ documentation : ug
 
 SfRotator items can be populated with a collection of image datas. For example, a user may want to create a SfRotator control which will display a sequence of images.
 
+{% tabs %}
+
 {% highlight C# %}
 
 	ArrayList temp=new ArrayList();
@@ -25,3 +27,12 @@ SfRotator items can be populated with a collection of image datas. For example, 
 	rotator.DataSource=temp;
 
 {% endhighlight %}
+
+
+{% highlight xaml %}
+
+	<rotator:SfRotator x:Name="rotator" DataSource="temp" />
+	
+{% endhighlight %}
+
+{% endtabs %}

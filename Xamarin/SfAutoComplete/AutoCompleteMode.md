@@ -1,4 +1,4 @@
-﻿---
+---
 layout : post
 title : AutoComplete mode for Syncfusion AutoComplete control in Xamarin.Forms
 description : Learn how to change the AutoComplete mode in AutoComplete
@@ -14,6 +14,7 @@ The `AutocompleteMode` property is used to decide the suggestion pattern for dis
 N> By default, three types of autocomplete mode such as `Append`, `Suggest` and `SuggestAppend` are provided.
 
 ## Append
+
 Appends the first matching string with the entered character.
 
 {% tabs %}

@@ -82,15 +82,26 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 * Adding reference to Rotator.
 
+{% tabs %}
+
 {% highlight C# %}
 
 	using Com.Syncfusion.SfRotator.XForms; 
 
 {% endhighlight %}
 
+{% highlight xaml %}
+
+	xmlns:rotate="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms"
+	
+{% endhighlight %}
+
+{% endtabs %}
+
 
 * Create an instance of Rotator.
 
+{% tabs %}
 
 {% highlight C# %}		
 
@@ -99,9 +110,19 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 	
 {% endhighlight %}
 
+{% highlight xaml %}
+
+	<rotator:SfRotator />
+	
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Setting Navigation Mode
 
 The navigation mode for navigating items can be decided using `NavigationMode` property. The items can be navigated using Thumbnail or Dots.
+
+{% tabs %}
 
 {% highlight C# %}	
 
@@ -109,9 +130,19 @@ The navigation mode for navigating items can be decided using `NavigationMode` p
 
 {% endhighlight %}
 
+{% highlight xaml %}
+
+	<rotator:SfRotator x:Name="rotator" NavigationStripMode="Dots" />
+	
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Customizing Position
 
 The placement position of navigation strip items such as Thumbnail or Dots can be specified using `TabStripPosition` property. 
+
+{% tabs %}
 
 {% highlight C# %}	
 
@@ -120,10 +151,19 @@ The placement position of navigation strip items such as Thumbnail or Dots can b
 	
 {% endhighlight %}
 
+{% highlight xaml %}
+
+	<rotator:SfRotator x:Name="rotator" NavigationStripMode="Dots"  NavigationStripPosition="Bottom"/>
+	
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Setting DataSource
 
 SfRotator items can be populated with a collection of image datas. You can assign a collection to it. Collections include arrays, Lists and DataTables.
 
+{% tabs %}
 
 {% highlight C# %}
 
@@ -137,3 +177,11 @@ SfRotator items can be populated with a collection of image datas. You can assig
 	rotator.DataSource=temp;
 
 {% endhighlight %}
+
+{% highlight xaml %}
+
+	<rotator:SfRotator x:Name="rotator" DataSource="temp" />
+	
+{% endhighlight %}
+
+{% endtabs %}

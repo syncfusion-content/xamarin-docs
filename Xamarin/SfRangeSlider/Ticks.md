@@ -29,11 +29,21 @@ N> The default option is Inline.
 
 Tick marks can be placed either below the track in horizontal orientation or right of the track in vertical orientation.
 
+{% tabs %}
+
 {% highlight c# %}
 
 	rangeSlider.TickPlacement=TickPlacement.BottomRight;
 
 {% endhighlight %}
+
+{% highlight xaml %}
+
+	<range:SfRangeSlider x:Name="rangeslider" TickPlacement="BottomRight"/>
+	
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](images/BottomRight.png)
 
@@ -41,11 +51,21 @@ Tick marks can be placed either below the track in horizontal orientation or rig
 
 Tick marks are placed either above the track in horizontal orientation or left of the track in vertical orientation.
 
+{% tabs %}
+
 {% highlight c# %}
 
 	rangeSlider.TickPlacement=TickPlacement.TopLeft;
 
 {% endhighlight %}
+
+{% highlight xaml %}
+
+	<range:SfRangeSlider x:Name="rangeslider" TickPlacement="TopLeft"/>
+	
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](images/TopLeft.png)
 
@@ -53,11 +73,21 @@ Tick marks are placed either above the track in horizontal orientation or left o
 
 Ticks are placed along the track.
 
+{% tabs %}
+
 {% highlight c# %}
 
 	rangeSlider.TickPlacement=TickPlacement.Inline;
 
 {% endhighlight %}
+
+{% highlight xaml %}
+
+	<range:SfRangeSlider x:Name="rangeslider" TickPlacement="Inline"/>
+	
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](images/Inline.png)
 
@@ -65,11 +95,21 @@ Ticks are placed along the track.
 
 Tick marks are placed on both sides of the track either in horizontal or vertical orientation.
 
+{% tabs %}
+
 {% highlight c# %}
 
 	rangeSlider.TickPlacement=TickPlacement.Outside;
 
 {% endhighlight %}
+
+{% highlight xaml %}
+
+	<range:SfRangeSlider x:Name="rangeslider" TickPlacement="Outside"/>
+	
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](images/Outside.png)
 

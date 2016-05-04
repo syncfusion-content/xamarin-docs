@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Localization in Syncfusion NumericTextBox control for Xamarin.Forms
 description: Learn how to localize the  NumericTextBox

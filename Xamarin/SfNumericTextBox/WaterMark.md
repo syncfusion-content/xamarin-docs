@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: WaterMark Support in Syncfusion NumericTextBox control for Xamarin.Forms
 description: Learn how to add watermark text in NumericTextBox.

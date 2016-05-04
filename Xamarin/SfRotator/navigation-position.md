@@ -15,13 +15,25 @@ There are four available positions,
 
 * `Bottom` - Sets the position of the navigation bar items to bottom.
 
+{% tabs %}
+
 {% highlight C# %}
 
 	rotator.NavigationStripPosition = NavigationStripPosition.Bottom;
 
 {% endhighlight %}
 
+{% highlight xaml %}
+
+	<rotator:SfRotator x:Name="rotator" NavigationStripPosition="Bottom" />
+	
+{% endhighlight %}
+
+{% endtabs %}
+
 * `Left` - Sets the position of the navigation bar items to left.
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -29,7 +41,17 @@ There are four available positions,
 
 {% endhighlight %}
 
+{% highlight xaml %}
+
+	<rotator:SfRotator x:Name="rotator" NavigationStripPosition="Left" />
+	
+{% endhighlight %}
+
+{% endtabs %}
+
 * `Top` - Sets the position of the navigation bar items to top.
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -37,12 +59,31 @@ There are four available positions,
 
 {% endhighlight %}
 
+{% highlight xaml %}
+
+	<rotator:SfRotator x:Name="rotator" NavigationStripPosition="Top" />
+	
+{% endhighlight %}
+
+{% endtabs %}
+
 * `Right` - Sets the position of the navigation bar items to right.
+
+{% tabs %}
 
 {% highlight C# %}
 
 	rotator.NavigationStripPosition = NavigationStripPosition.Right;
 
 {% endhighlight %}
+
+
+{% highlight xaml %}
+
+	<rotator:SfRotator x:Name="rotator" NavigationStripPosition="Right" />
+	
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](images/tabstrip.png)

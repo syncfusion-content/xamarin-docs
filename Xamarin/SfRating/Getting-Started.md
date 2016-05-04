@@ -9,8 +9,6 @@ documentation: ug
 
 ---
 
-
-
 # Getting Started
 
 This section explains you the steps to configure a rating control in a real-time scenario and also provides a walk-through on some of the customization features available in Rating control.
@@ -116,7 +114,27 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 The Rating control is configured entirely in C# code or by using XAML markup. The following steps explain on how to create a Rating and configure its elements,
 
+* Adding reference to rating.
+
+{% tabs %}
+
+{% highlight c# %}
+
+	using Syncfusion.SfRating.XForms;
+
+{% endhighlight %}
+
+{% highlight xaml %}
+
+	xmlns:rating="clr-namespace:Syncfusion.SfRating.XForms;assembly=Syncfusion.SfRating.XForms"
+
+{% endhighlight %}
+
+{% endtabs %}
+
 * Create an instance for rating control.
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -124,19 +142,14 @@ The Rating control is configured entirely in C# code or by using XAML markup. Th
 
 {% endhighlight %}
 
-* Configure the properties of Rating.
+{% highlight xaml %}
 
-{% highlight C# %}
-
-	rating.ItemCount=5;
-
-	rating.Precision=Precision.Standard;
-
-	rating.ToolTipPlacement=ToolTipPlacement.None;
-
-	rating.ItemSize=70;
-
+	<rating:SfRating />
+	
 {% endhighlight %}
+
+{% endtabs %}
+
 
 ## Setting Value
 
@@ -144,21 +157,41 @@ The Rating control is configured entirely in C# code or by using XAML markup. Th
 
 N> By default, property value is 0.
 
+{% tabs %}
+
 {% highlight C# %}
 
     rating.Value=3;
 
 {% endhighlight %}
 
+{% highlight xaml %}
+
+	<rating:SfRating x:Name="rating" Value="3" />
+	
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Precision
 
 * To enable full, half and exact values of rating, set the `Precision` property.
+
+{% tabs %}
 
 {% highlight C# %}
 
     rating.Precision = Precision.Standard;
 
 {% endhighlight%}
+
+{% highlight xaml %}
+
+	<rating:SfRating x:Name="rating" Precision="Standard" />
+	
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](images/standard.jpg)
 

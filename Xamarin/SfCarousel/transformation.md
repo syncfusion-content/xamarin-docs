@@ -1,4 +1,4 @@
-﻿---
+---
 layout : post
 title : Transformation in Syncfusion Carousel control in Xamarin.Forms
 description : Learn how to set the Rotation Angle and Offset in Carousel for Xamarin.Forms

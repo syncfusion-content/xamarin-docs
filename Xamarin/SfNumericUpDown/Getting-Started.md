@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Getting Started with Syncfusion NumericUpDown control for Xamarin.Forms 
 description: A quick tour to initial users on Syncfusion NumericUpDown control for Xamarin.Forms platform
-platform: xamarin
+platform: Xamarin.Forms
 control: NumericUpDown
 documentation: ug
 ---
@@ -110,13 +110,26 @@ The NumericUpDown control configured entirely in C# code or by using XAML markup
 
 * Adding reference to NumericUpDown.
 
+{% tabs %}
+
 {% highlight c# %}
 
 	using Syncfusion.SfNumericUpDown.XForms;
 
 {% endhighlight %}
 
+{% highlight xaml %}
+
+	xmlns:numeric="clr-namespace:Syncfusion.SfNumericUpDown.XForms;assembly=Syncfusion.SfNumericUpDown.XForms"
+	
+{% endhighlight %}
+
+{% endtabs %}
+
+
 * Create an instance of NumericUpDown.
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -125,9 +138,19 @@ The NumericUpDown control configured entirely in C# code or by using XAML markup
 
 {% endhighlight %}
 
+{% highlight xaml %}
+
+	<numeric:SfNumericUpDown />
+	
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Setting Value
 
 The NumericUpDown control display value can be set using `Value` property. 
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -135,17 +158,36 @@ The NumericUpDown control display value can be set using `Value` property.
 
 {% endhighlight %}
 
+{% highlight xaml %}
+
+	<numeric:SfNumericUpDown x:Name="numericUpDown" Value="5"/>
+	
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Enable Parsing Mode
 
 The value of the NumericUpDown can be parsed based on the `ParsingMode` property. 
 
 N> The `ParsingMode` is of type Parsers containing enum values of Double and Decimal.
 
+{% tabs %}
+
 {% highlight c# %}
 
 	numericUpDown.ParsingMode=Parsers.Decimal;
 	
 {% endhighlight %}
+
+{% highlight xaml %}
+
+	<numeric:SfNumericUpDown x:Name="numericUpDown" ParsingMode="Decimal"/>
+	
+{% endhighlight %}
+
+{% endtabs %}
+
 
 ## Add Format String
 
@@ -159,8 +201,18 @@ It has three types,
 
 N> The control displays the formatted text on lost focus. Default Value of `FormatString` is "n".
 
+{% tabs %}
+
 {% highlight C# %}
 
 	numericUpDown.FormatString= “c”;
 
 {% endhighlight %}
+
+{% highlight xaml %}
+
+	<numeric:SfNumericUpDown x:Name="numericUpDown" FormatString="c"/>
+	
+{% endhighlight %}
+
+{% endtabs %}

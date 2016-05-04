@@ -1,4 +1,4 @@
----
+﻿---
 layout : post
 title : Setting the duration for animation in Syncfusion Carousel control in Xamarin.Forms
 description : Learn how to set the duration for animation in Carousel for Xamarin.Forms
@@ -15,8 +15,18 @@ The `Duration` property of the SfCarousel control is used to specify the time ta
 
 N> The duration is specified in seconds.  The default value is 300s.
 
+{% tabs %}
+
 {% highlight C# %}
 
 	carousel.Duration=100;
 
 {% endhighlight %}
+
+{% highlight xaml %}
+
+	<carousel:SfCarousel x:Name="carousel" Duration="100" />
+	
+{% endhighlight %}
+
+{% endtabs %}

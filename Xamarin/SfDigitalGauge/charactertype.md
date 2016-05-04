@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Character type in DigitalGauge
 description: Learn how to define character type in DigitalGauge
@@ -23,41 +23,76 @@ N> By default, SegmentSeven is the default CharacterType in the Digital Gauge.
 
 ## Seven Segment
 
+{% tabs %}
+
 {% highlight c# %}
 
-sfDigitalGauge.CharacterType = CharacterType.SegmentSeven;
+	sfDigitalGauge.CharacterType = CharacterType.SegmentSeven;
 
 {% endhighlight %}
 
-![](Getting-Started_images/SegmentSeven.png)
+{% highlight xaml %}
+
+	<gauge:SfDigitalGauge x:Name="sfdigitalgauge"  CharacterType="SegmentSeven" />
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ## Fourteen Segment
 
+{% tabs %}
+
 {% highlight c# %}
 
-sfDigitalGauge.CharacterType = CharacterType.SegmentFourteen;
+	sfDigitalGauge.CharacterType = CharacterType.SegmentFourteen;
 
 {% endhighlight %}
 
-![](Getting-Started_images/SegmentFourteen.png)
+{% highlight xaml %}
+
+	<gauge:SfDigitalGauge x:Name="sfdigitalgauge" CharacterType="SegmentFourteen" />
+
+{% endhighlight %}
+
+{% endtabs %}
+
  
 ## Sixteen Segment
  
+{% tabs %} 
+ 
 {% highlight c# %}
 
-sfDigitalGauge.CharacterType = CharacterType.SegmentSixteen;
+	sfDigitalGauge.CharacterType = CharacterType.SegmentSixteen;
 
 {% endhighlight %}
 
-![](Getting-Started_images/SegmentSixteen.png)
+{% highlight xaml %}
+
+	<gauge:SfDigitalGauge x:Name="sfdigitalgauge"  CharacterType="SegmentSixteen" />
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ## EightCrossEightDotMatrix Segment
 
+{% tabs %}
+
 {% highlight c# %}
 
-sfDigitalGauge.CharacterType = CharacterType.EightCrossEightDotMatrix;
+	sfDigitalGauge.CharacterType = CharacterType.EightCrossEightDotMatrix;
 
 {% endhighlight%}
 
-![](Getting-Started_images/SegmentMatrix.png)
+{% highlight xaml %}
+
+	<gauge:SfDigitalGauge x:Name="sfdigitalgauge"  CharacterType="EightCrossEightDotMatrix"  />
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Getting-Started_images/segment.png)
 

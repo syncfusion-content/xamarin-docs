@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Number Formatting in Syncfusion NumericTextBox control for Xamarin.Forms
 description: Learn how to add format String, enable parser mode and percent display mode for NumericTextBox control.
-platform: xamarin
+platform: Xamarin.Forms
 control: NumericTextBox
 documentation: ug
 ---
@@ -18,29 +18,59 @@ It has three types,
 
 * `c` - Display the value with currency notation.
 	
+{% tabs %}	
+	
 {% highlight c# %}
 	
 	numericTextBox.FormatString="c";
 	 
 {% endhighlight %}
+
+{% highlight xaml %}
+
+	<numeric:SfNumericTextBox x:Name="numericTextBox" FormatString="c" />
+	
+{% endhighlight %}
+
+{% endtabs %}
 	
 
 * `n` – Display the value in number format.
+
+{% tabs %}
 	
 {% highlight c# %}
 	
 	numericTextBox.FormatString="n";
 	 
 {% endhighlight %}
+
+{% highlight xaml %}
+
+	<numeric:SfNumericTextBox x:Name="numericTextBox" FormatString="n" />
+	
+{% endhighlight %}
+
+{% endtabs %}
 	
 
 * `p` – Display the value in percentage.
+	
+{% tabs %}	
 	
 {% highlight c# %}
 
 	numericTextBox.FormatString="p";
 	 
 {% endhighlight %}
+
+{% highlight xaml %}
+
+	<numeric:SfNumericTextBox x:Name="numericTextBox" FormatString="p" />
+	
+{% endhighlight %}
+
+{% endtabs %}
 	
 N> Instead of using above `FormatString` types, we can provide any symbol or value as string in `FormatString` property which will be appended with the value in NumericTextBox. 
 
@@ -52,11 +82,21 @@ The value of the NumericTextBox can be parsed based on the `ParsingMode` propert
 
 N> The `ParsingMode` is of type Parsers containing enum values of Double and Decimal. The default Value for `ParsingMode` is Double.
 
+{% tabs %}
+
 {% highlight c# %}
 
 	numericTextBox.ParserMode=ParserMode.Decimal;
 	  
 {% endhighlight %}
+
+{% highlight xaml %}
+
+	<numeric:SfNumericTextBox x:Name="numericTextBox" ParserMode="Decimal" />
+	
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](images/ParserMode.png)
 
@@ -70,19 +110,39 @@ It provides the following options:
 
 * `Value`: Displays the value with percentage symbol.
 
+{% tabs %}
+
 {% highlight c# %}
 
 	numericTextBox.PercentDisplayMode=PercentDisplayMode.Value;
 
 {% endhighlight %}
 
+{% highlight xaml %}
+
+	<numeric:SfNumericTextBox x:Name="numericTextBox" PercentDisplayMode="Value" />
+	
+{% endhighlight %}
+
+{% endtabs %}
+
 * `Compute`: Displays the computed value with percentage symbol.
+
+{% tabs %}
 
 {% highlight c# %}
 
 	numericTextBox.PercentDisplayMode=PercentDisplayMode.Compute;
 
 {% endhighlight %}
+
+{% highlight xaml %}
+
+	<numeric:SfNumericTextBox x:Name="numericTextBox" PercentDisplayMode="Compute" />
+	
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](images/PercentageDisplayMode.png)
 

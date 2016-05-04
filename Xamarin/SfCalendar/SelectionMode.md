@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Interactive Selection modes in Syncfusion Calendar control for Xamarin.Forms
 description: Learn how to change the selection mode of calendar control
-platform: xamarin
+platform: Xamarin.Forms
 control: Calendar
 documentation: ug
 ---
@@ -17,11 +17,21 @@ Dates can be selected by making a touch on month view cells. The default Selecti
 
 The selected dates can be retrieved through `OnCalendarTapped` event which is raised on selecting.
 
+{% tabs %}
+
 {% highlight c# %}
 	
 	sfCalendar.SelectionMode=SelectionMode.MultiSelection;
 	
 {% endhighlight %}
+
+{% highlight xaml %}
+
+	<CalendarSample:SfCalendar  x:Name="calendar" SelectionMode="MultiSelection"/>
+
+{% endhighlight %}
+
+{% endtabs %}
 
 N>In range selection, navigation through swipe will be restricted and moving between months can be done by clicking on navigation button available at top corners of calendar control.
 

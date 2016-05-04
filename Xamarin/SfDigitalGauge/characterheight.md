@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Character height of DigitalGauge
 description: Learn how set the height of Digital Character in DigitalGauge
@@ -11,10 +11,22 @@ documentation: ug
 
 The value of the Digital Characters is scaled by altering the height of the digital characters. It is achieved by setting the characterHeight property in the Digital GaugeSets the height of character in digital gauge.
 
+{% tabs %}
+
 {% highlight c# %}
 
 	sfDigitalGauge.CharacterHeight = 50;
 
 {% endhighlight  %}
 
-![](Getting-Started_images/CharacterHeight.png)
+{% highlight xaml %}
+
+{% highlight xaml %}
+
+	<gauge:SfDigitalGauge x:Name="sfdigitalgauge" CharacterHeight="50" />
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Getting-Started_images/characterheight.png)

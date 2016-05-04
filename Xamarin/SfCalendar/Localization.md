@@ -2,7 +2,7 @@
 layout: post
 title: Localization support in Syncfusion Calendar control for Xamarin.Forms
 description: Learn how to localize your calendar to regional language
-platform: xamarin
+platform: Xamarin.Forms
 control: Calendar
 documentation: ug
 ---
@@ -15,10 +15,20 @@ Localization can be specified by setting the `Locale` property of the control us
  
 N> By default, calendar control is available with en-US locale. 
      
+{% tabs %}	 
+	 
 {% highlight c# %}
 
 	sfCalendar.Locale= new System.Globalization.CultureInfo("zh-CN");
 	
 {% endhighlight %}
+
+{% highlight xaml %}
+
+	<CalendarSample:SfCalendar  x:Name="calendar" Locale="zh-CN"/>
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](images/Localization.png)

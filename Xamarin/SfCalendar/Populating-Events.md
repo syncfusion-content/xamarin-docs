@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Populating Events in Syncfusion Calendar control for Android
 description: Learn how to populate events inside a cell and inline events descriptions
-platform: xamarin
+platform: Xamarin.Forms
 control: Calendar
 documentation: ug
 ---
@@ -17,11 +17,21 @@ The default UI of the inline view with events will be like list of events with a
 
 Inline event support can be toggled on / off with `ShowInLineEvent` property.
     
+{% tabs %}    
+    
 {% highlight c# %}
 	
-	sfcalendar.showInLineEvent=True;
+	sfcalendar.ShowInLineEvent=True;
 	
 {% endhighlight %}
+
+{% highlight xaml %}
+
+	<CalendarSample:SfCalendar  x:Name="calendar" ShowInlineEvent="True" />
+
+{% endhighlight %}
+
+{% endtabs %}
 	
 N> The Inline function will be available only in MonthView with Single selection mode
 	
@@ -30,6 +40,8 @@ N> The Inline function will be available only in MonthView with Single selection
 Calendar Events collection can be provided to calendar using the following steps. `CalendarEventCollection` is a class, which holds the details about the events to be rendered in calendar. 
 
 `CalendarInlineEvent` has some basic properties such as `StartTime`, `EndTime` and `Subject`.
+
+{% tabs %}
 
 {% highlight c# %}
 		   
@@ -42,6 +54,14 @@ Calendar Events collection can be provided to calendar using the following steps
     event.Color=Color.RED;
 		   
 {% endhighlight %}
+
+{% highlight xaml %}
+
+	<CalendarSample:SfCalendar  x:Name="calendar" StartTime="d" EndTime="d1" Subject="Go to Meeting" Color="RED"/>
+
+{% endhighlight %}
+
+{% endtabs %}
 
 
 	

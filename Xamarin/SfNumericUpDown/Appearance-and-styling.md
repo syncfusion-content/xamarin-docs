@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Appearance and styling in Syncfusion NumericUpDown control for Xamarin.Forms
 description: Learn how to add customize spin buttons position in NumericUpDown.
-platform: xamarin
+platform: Xamarin.Forms
 control: NumericUpDown
 documentation: ug
 ---
@@ -19,11 +19,22 @@ There are three built-in modes.
 
 Spin Buttons will get aligned to the right side of the control.
 
+{% tabs %}
+
 {% highlight C# %}
 
 	numericUpDown.SpinButttonAlignment = SpinButtonAlignment.Right;
 
 {% endhighlight %}
+
+{% highlight xaml %}
+
+	<numeric:SfNumericUpDown x:Name="numericUpDown" SpinButtonAlignment="Right"/>
+	
+{% endhighlight %}
+
+{% endtabs %}
+
 
 ![](images/right.png)
 
@@ -31,11 +42,22 @@ Spin Buttons will get aligned to the right side of the control.
 
 Spin Buttons will get aligned to the left side of the control.
 
+{% tabs %}
+
 {% highlight C# %}
 
 	numericUpDown.SpinButttonAlignment = SpinButtonAlignment.Left;
 
 {% endhighlight %}
+
+{% highlight xaml %}
+
+	<numeric:SfNumericUpDown x:Name="numericUpDown" SpinButtonAlignment="Left"/>
+	
+{% endhighlight %}
+
+{% endtabs %}
+
 
 ![](images/left.png)
 
@@ -43,11 +65,22 @@ Spin Buttons will get aligned to the left side of the control.
 
 Spin Buttons will get aligned to the both side of the control.
 
+{% tabs %}
+
 {% highlight C# %}
 
 	numericUpDown.SpinButttonAlignment = SpinButtonAlignment.Both;
 
 {% endhighlight %}
+
+{% highlight xaml %}
+
+	<numeric:SfNumericUpDown x:Name="numericUpDown" SpinButtonAlignment="Both"/>
+	
+{% endhighlight %}
+
+{% endtabs %}
+
 
 ![](images/both.png)
 

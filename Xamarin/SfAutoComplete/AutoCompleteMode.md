@@ -1,4 +1,4 @@
----
+﻿---
 layout : post
 title : AutoComplete mode for Syncfusion AutoComplete control in Xamarin.Forms
 description : Learn how to change the AutoComplete mode in AutoComplete
@@ -15,34 +15,66 @@ N> By default, three types of autocomplete mode such as `Append`, `Suggest` and 
 
 ## Append
 Appends the first matching string with the entered character.
+
+{% tabs %}
 	
-{% highlight C# %}
+{% highlight c# %}
 	
 	countryAutoComplete.AutoCompleteMode = AutoCompleteMode.Append;
 	 
 {% endhighlight %}
 
+{% highlight xaml %}
+
+  		<autocomplete:SfAutoComplete x:Name="countryAutoComplete" AutoCompleteMode="Append" />
+		  
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](images/autocompletemode.png)
 
 ## Suggest 
+
 Displays the suggestion in the dropdown.
 
-{% highlight C# %}
+{% tabs %}
+
+{% highlight c# %}
 	
 	countryAutoComplete.AutoCompleteMode = AutoCompleteMode.Suggest;
 	 
 {% endhighlight %}
 
+{% highlight xaml %}
+
+  		<autocomplete:SfAutoComplete x:Name="countryAutoComplete" AutoCompleteMode="Suggest" />
+		  
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](images/autocompletesource.png)
 
 ## SuggestAppend
+
 Displays the suggestion in the dropdown along with appending the first matching string.
 	
-{% highlight C# %}
+{% tabs %}	
+	
+{% highlight c# %}
 	
 	countryAutoComplete.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
 	 
 {% endhighlight %}
+
+{% highlight xaml %}
+
+  		<autocomplete:SfAutoComplete x:Name="countryAutoComplete" AutoCompleteMode="SuggestAppend" />
+		  
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](images/suggestappend.png)
  

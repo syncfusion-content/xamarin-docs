@@ -1,4 +1,4 @@
----
+﻿---
 layout : post
 title : Getting Started with Syncfusion AutoComplete Control for Xamarin.Forms
 description : A quick tour to initial users on Syncfusion autocomplete control for Xamarin.Forms platform
@@ -109,19 +109,51 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% endhighlight %}
 
+## Add and Configure the AutoComplete
+
+* Adding reference to autocomplete.
+
+{% tabs %}
+
+{% highlight c# %}
+
+	using Syncfusion.SfAutoComplete.XForms;
+
+{% endhighlight %}
+
+{% highlight xaml %}
+
+	xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+
+{% endhighlight %}
+
+{% endtabs %}
+
 * Create an instance for autocomplete control and adding to application.
 
-{% highlight C# %}
+{% tabs %}
+
+{% highlight c# %}
 
 	SfAutoComplete countryAutoComplete = new SfAutoComplete ();
 
 {% endhighlight %}
 
+{% highlight xaml %}
+
+	<autocomplete:SfAutoComplete/>
+	
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Manipulation AutoCompleteSource to AutoComplete
 
 You can set the suggestion list to the AutoComplete using the AutoCompleteSource property. Check autocomplete mode for more details.
 
-{% highlight C# %}
+{% tabs %}
+
+{% highlight c# %}
 
 	private List<String> countryName = new List<String>();
 	countryName.Add("Afghanistan");
@@ -131,11 +163,21 @@ You can set the suggestion list to the AutoComplete using the AutoCompleteSource
 
 {% endhighlight %}
 
+{% highlight xaml %}
+
+  		<autocomplete:SfAutoComplete  x:Name="countryAutoComplete" HeightRequest="40" AutoCompleteSource="{Binding }" />
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Adding Customizations
 
 Autocomplete can be customized using the `Watermark` and `PopupDelay` properties.
 
-{% highlight C# %}
+{% tabs %}
+
+{% highlight c# %}
 
 	countryAutoComplete.SuggestionMode = SuggestionMode.StartsWith;
 	countryAutoComplete.AutoCompleteMode = AutoCompleteMode.Suggest;
@@ -145,3 +187,11 @@ Autocomplete can be customized using the `Watermark` and `PopupDelay` properties
 	countryAutoComplete.Watermark = "Enter a country name";  
 
 {% endhighlight %}
+
+{% highlight xaml %}
+
+  		<autocomplete:SfAutoComplete Watermark="Enter a country name" x:Name="countryAutoComplete" SuggestionMode="StartsWith" AutoCompleteMode="Suggest" HeightRequest="40" MinimumPrefixCharacters="2" MaximumDropDownHeight="300" />
+
+{% endhighlight %}
+
+{% endtabs %}

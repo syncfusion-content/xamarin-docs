@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Getting Started with Syncfusion NumericTextBox control for Xamarin.Forms 
 description: A quick tour to initial users on Syncfusion NumericTextBox control for Xamarin.Forms platform
-platform: xamarin
+platform: Xamarin.Forms
 control: NumericTextBox
 documentation: ug
 ---
@@ -110,13 +110,25 @@ The NumericTextBox control configured entirely in C# code or by using XAML marku
 
 * Adding reference to NumericTextBox.
 
+{% tabs %}
+
 {% highlight c# %}
 
 	using Syncfusion.SfNumericTextBox.XForms;
 
 {% endhighlight %}
 
+{% highlight xaml %}
+
+	xmlns:numeric="clr-namespace:Syncfusion.SfNumericTextBox.XForms;assembly=Syncfusion.SfNumericTextBox.XForms" 
+	
+{% endhighlight %}
+
+{% endtabs %}
+
 * Create an instance of NumericTextBox.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -124,15 +136,33 @@ The NumericTextBox control configured entirely in C# code or by using XAML marku
 
 {% endhighlight %}
 
+{% highlight xaml %}
+
+	<numeric:SfNumericTextBox />
+	
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Setting Value
 
 The NumericTextBox control display value can be set using `Value` property.
+
+{% tabs %}
 
 {% highlight c# %}
 
 	numericTextBox.Value = 123.45;
 
 {% endhighlight %}
+
+{% highlight xaml %}
+
+	<numeric:SfNumericTextBox x:Name="numericTextBox" Value="123.45" />
+	
+{% endhighlight %}
+
+{% endtabs %}
 
 
 ## Enable Parsing Mode
@@ -141,11 +171,21 @@ The value of the NumericTextBox can be parsed based on the `ParsingMode` propert
 
 N> The `ParsingMode` is of type Parsers containing enum values of Double and Decimal.
 
+{% tabs %}
+
 {% highlight c# %}
 
 	numericTextBox.ParsingMode=Parsers.Decimal;
 	
 {% endhighlight %}
+
+{% highlight xaml %}
+
+	<numeric:SfNumericTextBox x:Name="numericTextBox" ParsingMode="Decimal" />
+	
+{% endhighlight %}
+
+{% endtabs %}
 
 
 ## Add Format String
@@ -160,10 +200,20 @@ It has three types,
 
 N> The control displays the formatted text on lost focus. Default Value of `FormatString` is "n".
 
+{% tabs %}
+
 {% highlight c# %}
 
 	numericTextBox.FormatString = "c";
 
 {% endhighlight %}
+
+{% highlight xaml %}
+
+	<numeric:SfNumericTextBox x:Name="numericTextBox" FormatString="c" />
+	
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](images/FormatString.png)

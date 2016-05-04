@@ -2,7 +2,7 @@
 layout: post
 title: Date Navigation and Gestures with Syncfusion Calendar control for Xamarin.Forms
 description: Learn the complete navigation and gestures support
-platform: xamarin
+platform: Xamarin.Forms
 control: Calendar
 documentation: ug
 ---
@@ -69,9 +69,19 @@ Calendar moveToDate = Calendar.getInstance();
 
 By default, calendar views can be moved backwards and forwards using touch swipe gesture.  This navigation, using touch gesture can be enabled and disabled using `NavigationEnabled` property available in Calendar control. By default, `NavigationEnabled` property is enabled.
 
+{% tabs %}
+
 {% highlight c# %}
 
     calendar.ViewMode=ViewMode.MonthView;
 	calendar.NavigationEnable=false;
 
 {% endhighlight %}
+
+{% highlight xaml %}
+
+	<CalendarSample:SfCalendar  x:Name="calendar" ViewMode="MonthView" NavigationEnabled="false"/>
+
+{% endhighlight %}
+
+{% endtabs %}

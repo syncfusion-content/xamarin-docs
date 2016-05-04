@@ -1,4 +1,4 @@
----
+﻿---
 layout : post
 title : Getting Started with Syncfusion Carousel control for Xamarin.Forms
 description : A quick tour to initial users on Syncfusion Carousel control for Xamarin.Forms platform.
@@ -110,14 +110,25 @@ The Carousel control is configured entirely in C# code or by using XAML markup. 
 
 * Adding reference to carousel.
 
+{% tabs %}
+
 {% highlight C# %}
 
 	using Com.Syncfusion.Carousel; 
 
 {% endhighlight %}
 
+{% highlight xaml %}
+
+	xmlns:carousel="clr-namespace:Syncfusion.SfCarousel.XForms;assembly=Syncfusion.SfCarousel.XForms"
+
+{% endhighlight %}
+
+{% endtabs %}
 
 * Create an instance for SfCarousel.
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -126,9 +137,19 @@ The Carousel control is configured entirely in C# code or by using XAML markup. 
 
 {% endhighlight %}
 
+{% highlight xaml %}
+
+	<carousel:SfCarousel />
+	
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Setting Offset
 
 Set the Offset property to specify the distance between the items in Carousel panel.
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -138,10 +159,20 @@ Set the Offset property to specify the distance between the items in Carousel pa
 
 {% endhighlight %}
 
+{% highlight xaml %}
+
+	<carousel:SfCarousel x:Name="carousel" SelectedIndex="2" Offset="20" />
+	
+{% endhighlight %}
+
+{% endtabs %}
+
 
 ## Setting Rotation Angle
 
 Set the RotationAngle property to decide the angle in which items should be rotated.
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -152,9 +183,19 @@ Set the RotationAngle property to decide the angle in which items should be rota
 
 {% endhighlight %}
 
+{% highlight xaml %}
+
+	<carousel:SfCarousel x:Name="carousel" SelectedIndex="2" Offset="20" RotationAngle="45" />
+	
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Setting ItemsSource
 
 SfCarousel items can be populated with a collection of image datas. You can assign a collection to it. Collections include arrays, Lists and DataTables.
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -168,3 +209,11 @@ SfCarousel items can be populated with a collection of image datas. You can assi
 	carousel.ItemsSource=temp;
 
 {% endhighlight %}
+
+{% highlight xaml %}
+
+	<carousel:SfCarousel x:Name="carousel" ItemsSource="temp" />
+	
+{% endhighlight %}
+
+{% endtabs %}

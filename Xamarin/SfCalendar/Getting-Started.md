@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with Syncfusion Calendar control for Xamarin.Forms
 description: A quick tour to initial users on Syncfusion calendar control for Xamarin.Forms platform
-platform: xamarin
+platform: Xamarin.Forms
 control: Calendar
 documentation: ug
 ---
@@ -108,13 +108,25 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 * Adding reference to calendar.
 
+{% tabs %}
+
 {% highlight c# %}
 
 	using Syncfusion.SfCalendar.XForms;
 
 {% endhighlight %}
 
+{% highlight xaml %}
+
+	xmlns:CalendarSample="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.SfCalendar.XForms"
+	
+{% endhighlight %}
+
+{% endtabs %}
+
 * Create an instance of SfCalendar.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -122,9 +134,19 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 	
 {% endhighlight %}
 
+{% highlight xaml %}
+
+	<CalendarSample:SfCalendar />
+	
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Enabling Multiple Selection 
 
 To enable multiple selection, Change the selection type using `SelectionMode` property. Check the [Selection Mode](http://help.syncfusion.com/android/sfcalendar/selectionmode)  section for more details.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -133,11 +155,21 @@ To enable multiple selection, Change the selection type using `SelectionMode` pr
 
 {% endhighlight %}
 
+{% highlight xaml %}
+
+	<CalendarSample:SfCalendar x:Name="calendar" SelectionMode="MultiSelection" />
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Setting blackout dates
 
 Add the dates into `BlackOutDates` property, that needs to be disabled among visible dates. Check the [BlackOutDates](http://help.syncfusion.com/android/sfcalendar/blackoutdates) section for more details.
 
 For instance add all the holiday dates to blackout dates property.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -153,9 +185,20 @@ For instance add all the holiday dates to blackout dates property.
 
 {% endhighlight %}
 
+{% highlight xaml %}
+
+	<CalendarSample:SfCalendar VerticalOptions="FillAndExpand"  x:Name="calendar" ViewMode="MonthView" BlackOutDates="black_dates" />
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
 ## Restricting Dates
 
 Set `MinDate` and `MaxDate` property to limit visible dates range. Check the [Min Max dates](http://help.syncfusion.com/android/sfcalendar/datenavigation-and-gesture#min-max-dates) section for more details.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -165,3 +208,11 @@ Set `MinDate` and `MaxDate` property to limit visible dates range. Check the [Mi
 
 
 {% endhighlight %}
+
+{% highlight xaml %}
+
+	<CalendarSample:SfCalendar  x:Name="calendar" MinDate="2014,4,1" MaxDate="2018,4,1"/>
+
+{% endhighlight %}
+
+{% endtabs %}

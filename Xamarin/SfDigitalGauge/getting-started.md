@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Getting Started with Syncfusion DigitalGauge control for Xamarin.Forms
 description: A quick tour to initial users on Syncfusion digitalGauge control for Xamarin.Forms platform
@@ -11,7 +11,7 @@ documentation: ug
 
 This section provides overview for working with Essential DigitalGauge for Xamarin.Forms. You can walk through the entire process of creating an DigitalGauge.
 
-![](Getting-Started_images/DigitalGauge.png)
+![](Getting-Started_images/gettingstarted.png)
 
 ## Referencing Essential Studio Components in Your Solution	
 
@@ -112,7 +112,27 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 The DigitalGauge control is configured entirely in C# code or by using XAML markup. The following steps explain on how to create a DigitalGauge and configure its elements,
 
+* Adding reference to DigitalGauge.
+
+{% tabs %}
+
+{% highlight C# %}
+
+	using Com.Syncfusion.DigitalGauge; 
+
+{% endhighlight %}
+
+{% highlight xaml %}
+
+	xmlns:gauge="clr-namespace:Syncfusion.SfGauge.XForms;assembly=Syncfusion.SfGauge.XForms"
+
+{% endhighlight %}
+
+{% endtabs %}
+
 * Create an instance for DigitalGauge control.
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -120,7 +140,17 @@ The DigitalGauge control is configured entirely in C# code or by using XAML mark
 
 {% endhighlight %}
 
+{% highlight xaml %}
+
+	<gauge:SfDigitalGauge />
+	
+{% endhighlight %}
+
+{% endtabs %}
+
 * Configure the properties of DigitalGauge.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -137,12 +167,30 @@ The DigitalGauge control is configured entirely in C# code or by using XAML mark
 
 {% endhighlight %}
 
+{% highlight xaml %}
+
+	<gauge:SfDigitalGauge x:Name="sfdigitalgauge" SegmentStrokeWidth="3" CharacterHeight="50" CharacterWidth="25" CharacterType="SegmentSeven" DimmedSegmentAlpha="30" />
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Setting Value
 
 * The `Value` property sets the display value in the DigitalGauge.
+
+{% tabs %}
 
 {% highlight C# %}
 
     sfDigitalGauge.Value =  DateTime.Now.ToString ("HH mm ss");
 
 {% endhighlight %}
+
+{% highlight xaml %}
+
+	<gauge:SfDigitalGauge x:Name="sfdigitalgauge" Value="HH mm ss" />
+
+{% endhighlight %}
+
+{% endtabs %}

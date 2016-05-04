@@ -1,4 +1,4 @@
----
+﻿---
 layout : post
 title : MinimumPrefixCharacter for Syncfusion AutoComplete Control in Xamarin.Forms
 description : Learn how to set the MinimumPrefixCharacter in AutoComplete
@@ -13,10 +13,20 @@ The minimum number of characters to be entered in the text box before the autoco
 
 N> The default property value is 1.
 	
-{% highlight C# %}
+{% tabs %}	
+	
+{% highlight c# %}
 	
 	countryAutoComplete.MinimumPrefixCharacters = 4
 	 
 {% endhighlight %}
+
+{% highlight xaml %}
+
+  		<autocomplete:SfAutoComplete x:Name="countryAutoComplete"  MinimumPrefixCharacters="4" />
+
+{% endhighlight %}
+
+{% endtabs %}
 	
 ![](images/minimumprefixcharacter.png)

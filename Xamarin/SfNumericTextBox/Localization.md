@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Localization in Syncfusion NumericTextBox control for Xamarin.Forms
 description: Learn how to localize the  NumericTextBox
-platform: xamarin
+platform: Xamarin.Forms
 control: NumericTextBox
 documentation: ug
 ---
@@ -14,11 +14,21 @@ The NumericTextBox value can be localized to any specific culture. It can be spe
 
 N> Default `Culture` property value is en-US.
 
+{% tabs %}
+
 {% highlight c# %}
 
 	numericTextBox.Culture = new System.Globalization.CultureInfo("fr-FR");
 	
 {% endhighlight %}
+
+{% highlight xaml %}
+
+	<numeric:SfNumericTextBox x:Name="numericTextBox" Culture="fr-FR" />
+	
+{% endhighlight %}
+
+{% endtabs %}
 
 
 ![](images/Culture.png)

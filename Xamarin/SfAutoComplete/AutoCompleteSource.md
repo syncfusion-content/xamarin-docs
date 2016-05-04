@@ -1,4 +1,4 @@
----
+﻿---
 layout : post
 title : AutoCompleteSource mode in Syncfusion AutoComplete control for Xamarin.Forms
 description : Learn how to use AutoCompleteSource in AutoComplete
@@ -11,7 +11,9 @@ documentation : ug
 
 The `AutoCompleteSource` property is used to populate the list of data to the suggestions dropdown.
 	
-{% highlight C# %}
+{% tabs %}	
+	
+{% highlight c# %}
 	
    	List<String> countryList = new List<String>(); 
 	countryList.Add ("Iceland");
@@ -21,6 +23,14 @@ The `AutoCompleteSource` property is used to populate the list of data to the su
   	countryAutoComplete.AutoCompleteSource=countryList;
 	 
 {% endhighlight %}
+
+{% highlight xaml %}
+
+  		<autocomplete:SfAutoComplete  x:Name="countryAutoComplete" HeightRequest="40" AutoCompleteSource="{Binding }" />
+
+{% endhighlight %}
+
+{% endtabs %}
 	
 ![](images/autocompletesource.png)
 

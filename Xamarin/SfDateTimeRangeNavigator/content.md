@@ -87,7 +87,7 @@ public class ViewModel
 
 {% endhighlight %}
 
-The following code snippet shows how to configure the range navigator using **Minimum** and **Maximum** properties.****
+The following code snippet shows how to configure the range navigator using `Minimum` and `Maximum` properties.
 
 {% tabs %}
 {% highlight xaml %}

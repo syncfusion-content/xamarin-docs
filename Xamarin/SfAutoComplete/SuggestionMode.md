@@ -83,7 +83,7 @@ Display the list of suggestions, if autocomplete list contains that words.
 
 Display the list of suggestions, if autoComplete list contains that words with case sensitive.
 
-[% tabs %]
+{% tabs %}
 
 {% highlight c# %}
 	

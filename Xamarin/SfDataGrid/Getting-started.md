@@ -16,9 +16,9 @@ This section provides a quick overview for working with SfDataGrid for Xamarin.F
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders,
 
-{Syncfusion Essential Studio Installed location}\Essential Studio\{{ site.releaseversion }}\lib
+{Syncfusion Essential Studio Installed location}\Essential Studio\{{ site.releaseversion }}\Xamarin\lib
 
-Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\lib
+Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Xamarin\lib
 
 N> Assemblies can be found in unzipped package location in Mac
 

@@ -25,7 +25,7 @@ The SfDatagrid creates columns automatically based on the property [SfDataGrid.A
 * Reset: Retains the columns defined explicitly in application level and creates columns newly for all the other properties in a data source.
 * ResetAll: When changing the [ItemsSource](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ItemsSource.html), the columns for previous data are cleared and it creates new columns. Even when columns are explicitly defined it does not consider the defined columns and creates column based on the underlying collection.
 * RetainOld: Creates columns for all fields in a data source when the Grid does not have any explicit definition for columns. When columns are defined explicitly, then the defined columns alone are retained and new columns are not created.
-* SmartReset: Retains the columns defined explicitly in application level and the columns with MappingName identical to properties in a data source. Creates columns newly for all the other properties in the data source.
+* SmartReset: Retains the columns defined explicitly in application level and the columns with `MappingName` identical to properties in a data source. Creates columns newly for all the other properties in the data source.
 
 The default value of `SfDatagrid.AutoGenerateColumns` property is `true` and `SfDatagrid.AutoGenerateColumnsMode` is `Reset`. Hence by default SfDatagrid creates columns automatically for every non-explicitly defined public property in the underlying collection bound to its `ItemsSource` property.
 

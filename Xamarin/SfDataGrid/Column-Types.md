@@ -156,7 +156,7 @@ if (e.Column.MappingName == "OrderID") {
 
 ## GridTextColumn
 
-GridTextColumn is derived from GridColumn and hence it inherits all the properties of GridColumn. It is used to host the textual content in the record cells. Each of the record cells in GridTextColumn displays the text based on the MappingName that associates the column with a property in the data source.
+GridTextColumn is derived from GridColumn and hence it inherits all the properties of GridColumn. It is used to host the textual content in the record cells. Each of the record cells in GridTextColumn displays the text based on the `MappingName` that associates the column with a property in the data source.
 
 The following code example creates GridTextColumn.
 

@@ -9,9 +9,7 @@ documentation: UG
 
 # Grouping 
 
-This section explains you how to group a column in SfDataGrid and about the properties and customizations available for Grouping in SfDataGrid.
-
-A Group represents a collection of records that belong to a particular category. When Grouping is applied, the data is organized into a hierarchical structure based on matching field values. The records having identical values in the grouped column are combined to form a Group. Each Group is identified by its `CaptionSummaryRow` to get the underlying records in view.
+A group represents a collection of records that belong to a particular category. When grouping is applied, the data is organized into a hierarchical structure based on matching field values. The records having identical values in the grouped column are combined to form a group. Each group is identified by its `CaptionSummaryRow` to get the underlying records in view.
 
 
 ## Programmatic Grouping
@@ -21,7 +19,7 @@ SfDataGrid also allows to perform grouping from the code by defining the [GroupC
 `GroupColumnDescription` object holds following two properties:
 
 * ColumnName: Name of the grouped column.
-* Converter: Get the IValueConverter as input that helps to apply the custom grouping.
+* Converter: Get the `IValueConverter` as input that helps to apply the custom grouping.
 
 The following code example illustrates how to apply grouping by a column in SfDataGrid.
 
@@ -48,7 +46,7 @@ The following screenshot shows the output rendered when grouping is applied.
 
 ## Custom Grouping
 
-SfDataGrid allows you to group a column based on custom logic when the standard grouping techniques do not meet the requirements. To achieve the CustomGrouping, you need to write a converter that implements `IValueConverter` with your CustomGrouping logic and assign that converter to the [GroupColumnDescription.Converter](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GroupColumnDescription~Converter.html) property.
+SfDataGrid allows you to group a column based on custom logic when the standard grouping techniques do not meet the requirements. To achieve the custom grouping, you need to write a converter that implements `IValueConverter` with your custom grouping logic and assign that converter to the [GroupColumnDescription.Converter](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GroupColumnDescription~Converter.html) property.
 
 The following code example illustrates how to set the custom grouping converter for the group description that is added to group the Freight column.
 
@@ -88,7 +86,7 @@ dataGrid.GroupColumnDescriptions.Add (new GroupColumnDescription () {
 {% endhighlight %}
 {% endtabs %}
 
-The following code example illustrates the converter used for applying CustomGrouping logic.
+The following code example illustrates the converter used for applying custom grouping logic.
 
 {% highlight c# %}
 public class GroupConverter : IValueConverter

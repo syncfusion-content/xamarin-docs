@@ -9,8 +9,6 @@ documentation: ug
 
 # Row Height Customization
 
-This section explains you about how to customize the height of the rows in SfDataGrid.
-
 SfDataGrid provides you the options to customize the header row height and the row height of all the grid rows or particular rows based on your requirements. The following sections illustrates you about how to achieve this customization in SfDataGrid.
 
 

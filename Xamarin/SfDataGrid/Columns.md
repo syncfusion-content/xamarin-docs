@@ -9,7 +9,6 @@ documentation: UG
 
 # Columns 
 
-This section explains you about how to create and add columns, different ways to create columns and about the customizations that can done to a column.
 SfDatagrid allows you to create and add Columns in two ways:
 
 * Automatic Columns generation based on the underlying collection.
@@ -34,7 +33,7 @@ N> When you change items source for SfDatagrid during run time, then the columns
 
 ### Customize Automatically Generated Columns
 
-When `SfDatagrid.AutoGenerateColumns` is `true`, then [SfDataGrid.AutoGeneratingColumn](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoGeneratingColumn_EV.html) event is raised for each `GridColumn`. This event receives two arguments namely sender which is the SfDatagrid and [AutoGeneratingColumnArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.AutoGeneratingColumnArgs.html).
+When `SfDatagrid.AutoGenerateColumns` is `true`, then [SfDataGrid.AutoGeneratingColumn](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoGeneratingColumn_EV.html) event is raised for each GridColumn. This event receives two arguments namely sender which is the SfDatagrid and [AutoGeneratingColumnArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.AutoGeneratingColumnArgs.html).
 The `AutoGeneratingColumnArgs` object contains the following property:
 
 * Column: This property returns the created column using which you can customize the column.
@@ -70,7 +69,7 @@ You can also customize a column’s header text, sorting, alignment, padding, et
 
 ## Manually generate Columns
 
-SfDatagrid also allows you to define the columns manually by adding the GridColumn objects to the `SfDatagrid.Columns` collection. In case if you want only the manually defined columns to be in view, then you can achieve it by setting the `SfDatagrid.AutoGenerateColumns` property to false. There are different types of columns available in SfDatagrid and you can create any column based on your requirements from both XAML and code.
+SfDatagrid also allows you to define the columns manually by adding the GridColumn objects to the `SfDatagrid.Columns` collection. In case if you want only the manually defined columns to be in view, then you can achieve it by setting the `SfDatagrid.AutoGenerateColumns` property to `false`. There are different types of columns available in SfDatagrid and you can create any column based on your requirements from both XAML and code.
  
 The following code example illustrates about creating columns manually in SfDatagrid
 

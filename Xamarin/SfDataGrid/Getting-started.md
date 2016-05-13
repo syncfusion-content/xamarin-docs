@@ -32,7 +32,7 @@ The following list of assemblies need to be added as reference from the lib fold
 <th>Required assemblies</th>
 </tr>
 <tr>
-<td>Pcl</td>
+<td>PCL</td>
 <td>pcl\Syncfusion.Data.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfDataGrid.XForms.dll<br/></td>
 </tr>
 <tr>
@@ -57,7 +57,7 @@ The following list of assemblies need to be added as reference from the lib fold
 </tr>
 <tr>
 <td>UWP Renderer</td>
-<td>pcl\Syncfusion.Data.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfDataGrid.XForms.dll<br/>UWP\Syncfusion.SfDataGrid.XForms.UWP.dll<br/></td>
+<td>pcl\Syncfusion.Data.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfDataGrid.XForms.dll<br/>uwp\Syncfusion.SfDataGrid.XForms.UWP.dll<br/></td>
 </tr>
 </table>
 
@@ -69,7 +69,7 @@ In order to use export to excel and export to PDF functionalities of SfDataGrid,
 <th>Required assemblies</th>
 </tr>
 <tr>
-<td>Pcl</td>
+<td>PCL</td>
 <td>pcl\Syncfusion.SfGridConverter.XForms.dll<br/>pcl\Syncfusion.Compression.Portable.dll<br/>pcl\Syncfusion.Pdf.Portable.dll<br/>pcl\Syncfusion.XlsIO.Portable.dll<br/></td>
 </tr>
 </table>

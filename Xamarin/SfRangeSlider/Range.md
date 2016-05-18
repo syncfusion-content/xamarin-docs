@@ -21,7 +21,7 @@ N> When this property is set to false, single thumb is displayed without any ran
 
 {% highlight c# %}
 
-	rangeSlider.ShowRange= True;
+	rangeSlider.ShowRange= true;
 
 {% endhighlight %}
 

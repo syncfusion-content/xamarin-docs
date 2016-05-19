@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with Syncfusion LinearGauge control for Xamarin.Forms
 description: A quick tour to initial users on Syncfusion linearGauge control for Xamarin.Forms platform
-platform: Xamarin
+platform: Xamarin.Forms
 control: LinearGauge
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains how to create the LinearGauge and configure its properties.This section provides overview for working with LinearGauge for Xamarin.Forms. It walks through the entire process of creating a LinearGauge.
 
-![](images/gettingstarted.png)
+![](images/LinearGauge.png)
 
 ## Referencing Essential Studio Components in Your Solution	
 
@@ -47,19 +47,15 @@ You can then add the assembly references to the respective projects as shown bel
 <td>android\Syncfusion.SfGauge.Android.dll<br/>android\Syncfusion.SfGauge.XForms.Android.dll</td>
 </tr>
 <tr>
-<td>iOS (Classic)</td>
-<td>ios\Syncfusion.SfGauge.iOS.dll<br/>ios\Syncfusion.SfGauge.XForms.iOS.dll<br/>ios\Syncfusion.SfGauge.XForms.dll</td>
-</tr>
-<tr>
 <td>iOS (Unified)</td>
 <td>ios-unified\Syncfusion.SfGauge.iOS.dll<br/>ios-unified\Syncfusion.SfGauge.XForms.iOS.dll<br/>ios-unified\Syncfusion.SfGauge.XForms.dll</td>
 </tr>
 <tr>
-<td>Windows Phone</td>
+<td>WindowsPhone</td>
 <td>wp8\Syncfusion.SfGauge.WP8.dll<br/>wp8\Syncfusion.SfGauge.XForms.dll<br/>wp8\Syncfusion.SfGauge.XForms.WinPhone.dll</td>
 </tr>
 <tr>
-<td>Windows Phone 8.1</td>
+<td>WindowsPhone 8.1</td>
 <td>wp81\Syncfusion.SfGauge.WP.dll<br/>wp81\Syncfusion.SfGauge.XForms.dll<br/>wp81\Syncfusion.SfGauge.XForms.WinPhone.dll</td>
 </tr>
 <tr>
@@ -72,9 +68,9 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 </table>
 
-Currently an additional step is required for Windows Phone, Windows Phone 8.1 and iOS projects. We need to create an instance of the LinearGauge custom renderer as shown below. 
+Currently an additional step is required for Windows Phone, WindowsPhone 8.1 and iOS projects. We need to create an instance of the lineargauge custom renderer as shown below. 
 
-Create an instance of SfLinearGaugeRenderer in MainPage constructor of the Windows Phone and Windows Phone 8.1 project as shown 
+Create an instance of SfLinearGaugeRenderer in MainPage constructor of the Windows Phone and  WindowsPhone 8.1 project as shown 
 
 {% highlight C# %}
 
@@ -114,13 +110,25 @@ The LinearGauge control configured entirely in C# code or by using XAML markup.T
 
 * Adding reference to linearGauge.
 
+{% tabs %}
+
 {% highlight c# %}
 
 	using Syncfusion.SfLinearGauge.XForms;
 
 {% endhighlight %}
 
+{% highlight xaml %}
+
+	xmlns:linear="clr-namespace:Syncfusion.SfGauge.XForms;assembly=Syncfusion.SfGauge.XForms"
+	
+{% endhighlight %}
+
+{% endtabs %}
+
 * Create an instance of SfLinearGauge.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -128,17 +136,19 @@ The LinearGauge control configured entirely in C# code or by using XAML markup.T
 
 {% endhighlight %}
 
-* Configure the properties of LinearGauge.
+{% highlight xaml %}
 
-{% highlight c# %}
-
-	sfLinearGauge.Orientation= Syncfusion.SfGauge.XForms.Orientation.OrientationHorizontal;
+	<gauge:SfLinearGauge />
 	
 {% endhighlight %}
+
+{% endtabs %}
 
 ## Add Scales
 
 We will add one or more scale value to linear gauge. Before adding that scales we have to set Maximum and Minimum value to this.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -157,9 +167,19 @@ We will add one or more scale value to linear gauge. Before adding that scales w
 	
 {% endhighlight %}
 
+{% highlight xaml %}
+
+	<gauge:LinearScale x:Name="scale" MinimumValue="0" MaximumValue="100" Interval="20" ScaleBarLength="100" ScaleBarColor="Color.Red" MinorTicksPerInterval="1" ScaleBarSize="13" ScalePosition="Backward" />
+	
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Add Symbol Pointer
 
-We can point a value on scale in LinearGauge by creating instance of SymbolPointer.
+We can point a value on scale in lineargauge by creating instance of SymbolPointer.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -170,9 +190,19 @@ We can point a value on scale in LinearGauge by creating instance of SymbolPoint
 	
 {% endhighlight %}
 
+{% highlight xaml %}
+
+	<gauge:SymbolPointer x:Name="symbolPointer" Value="50" Offset="0.0" Thickness="3" />
+	
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Add a Bar Pointer
 
 Before adding that symbol and bar pointer into Scale’s pointer add value of that pointers.
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -185,9 +215,20 @@ Before adding that symbol and bar pointer into Scale’s pointer add value of th
 	
 {% endhighlight %}
 
+{% highlight xaml %}
+
+	<gauge:BarPointer x:Name="rangePointer" Value="50" Offset="0.0" Thickness="10" />
+	
+{% endhighlight %}
+
+{% endtabs %}
+
+
 ## Add a Range
 
 We can improve the readability of data by including ranges that quickly display when values fall within specific ranges
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -199,3 +240,11 @@ We can improve the readability of data by including ranges that quickly display 
 	symbolRange.EndWidth = 10; 
 	
 {% endhighlight %}
+
+{% highlight xaml %}
+
+	<gauge:LinearRange x:Name="symbolRange" StartValue="0" EndValue="50" StartWidth="10" EndWidth="10" />
+	
+{% endhighlight %}
+
+{% endtabs %}

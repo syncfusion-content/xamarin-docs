@@ -203,7 +203,7 @@ SfCarousel items can be populated with a collection of image datas. You can assi
 	For(int i=1;i<18;i++)
 	{
 	SfCarouselItem item =new SfCarouselItem();
-	item.ImageName="image"+i;
+	item.Image="image"+i;
 	temp.add(item);
 	}
 	carousel.ItemsSource=temp;

@@ -21,7 +21,7 @@ SfRotator items can be populated with a collection of image datas. For example, 
 	For(int i=1;i<18;i++)
 	{
 	SfRotatorItem item =new SfRotatorItem ();
-	item.ImageName="image"+i;
+	item.Image="image"+i;
 	temp.add(item);
 	}
 	rotator.DataSource=temp;

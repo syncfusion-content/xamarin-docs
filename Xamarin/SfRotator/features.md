@@ -19,13 +19,13 @@ N> By default, the property value is set to false.
 
 {% highlight C# %}
 
-	rotator.EnableAutoPlay = True;
+	rotator.EnableAutoPlay = true;
 
 {% endhighlight %}
 
 {% highlight xaml %}
 
-	<rotator:SfRotator x:Name="rotator" EnableAutoPlay="True" />
+	<rotator:SfRotator x:Name="rotator" EnableAutoPlay="true" />
 	
 {% endhighlight %}
 
@@ -61,13 +61,13 @@ The `EnableLooping` property specifies whether the items should navigate to firs
 
 {% highlight C# %}
 
-	rotator.EnableLooping = True;
+	rotator.EnableLooping = true;
 
 {% endhighlight %}
 
 {% highlight xaml %}
 
-	<rotator:SfRotator x:Name="rotator" EnableLooping="True" />
+	<rotator:SfRotator x:Name="rotator" EnableLooping="true" />
 	
 {% endhighlight %}
 
@@ -83,13 +83,13 @@ N> By default, the property value is false.
 
 {% highlight C# %}
 
-	rotator.IsTextVisible = True;
+	rotator.IsTextVisible = true;
 
 {% endhighlight %}
 
 {% highlight xaml %}
 
-	<rotator:SfRotator x:Name="rotator" IsTextVisible="True" />
+	<rotator:SfRotator x:Name="rotator" IsTextVisible="true" />
 	
 {% endhighlight %}
 

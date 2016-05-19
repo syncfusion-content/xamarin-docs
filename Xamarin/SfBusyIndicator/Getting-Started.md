@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Getting Started with Syncfusion BusyIndicator control for Xamarin.Forms
-description: A quick tour to initial users on Syncfusion busyIndicator control for Xamarin.Forms platform
-platform: Xamarin
+title: Getting Started with Syncfusion SfBusyIndicator control for Xamarin.Forms
+description: A quick tour to initial users on Syncfusion SfBusyIndicator control for Xamarin.Forms platform
+platform: Xamarin.Forms
 control: BusyIndicator
 documentation: ug
 ---
 
 # Getting Started
 
-This section explains you the steps to configure a BusyIndicator control in a real-time scenario and also provides a walk-through on some of the customization features available in BusyIndicator control.
+This section explains you the steps to configure a SfBusyIndicator control in a real-time scenario and also provides a walk-through on some of the customization features available in SfBusyIndicator control.
 
-![](Getting-Started_images/img2.png)
+![](images/Busyindicator.png)
 
 ## Referencing Essential Studio Components in Your Solution	
 
@@ -47,19 +47,15 @@ You can then add the assembly references to the respective projects as shown bel
 <td>android\Syncfusion.SfBusyIndicator.Android.dll<br/>android\Syncfusion.SfBusyIndicator.XForms.Android.dll</td>
 </tr>
 <tr>
-<td>iOS (Classic)</td>
-<td>ios\Syncfusion.SfBusyIndicator.iOS.dll<br/>ios\Syncfusion.SfBusyIndicator.XForms.iOS.dll<br/>ios\Syncfusion.SfBusyIndicator.XForms.dll</td>
-</tr>
-<tr>
 <td>iOS (Unified)</td>
 <td>ios-unified\Syncfusion.SfBusyIndicator.iOS.dll<br/>ios-unified\Syncfusion.SfBusyIndicator.XForms.iOS.dll<br/>ios-unified\Syncfusion.SfBusyIndicator.XForms.dll</td>
 </tr>
 <tr>
-<td>Windows Phone</td>
+<td>WindowsPhone</td>
 <td>wp8\Syncfusion.SfInput.WP8.dll<br/>wp8\Syncfusion.SfShared.WP8.dll<br/>wp8\Syncfusion.SfBusyIndicator.XForms.dll<br/>wp8\Syncfusion.SfBusyIndicator.XForms.WinPhone.dll</td>
 </tr>
 <tr>
-<td>Windows Phone 8.1</td>
+<td>WindowsPhone 8.1</td>
 <td>wp81\Syncfusion.SfInput.WP.dll<br/>wp81\Syncfusion.SfShared.WP.dll<br/>wp81\Syncfusion.SfBusyIndicator.XForms.dll<br/>wp81\Syncfusion.SfBusyIndicator.XForms.WinPhone.dll</td>
 </tr>
 <tr>
@@ -72,9 +68,9 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 </table>
 
-Currently an additional step is required for Windows Phone, Windows Phone 8.1 and iOS projects. We need to create an instance of the BusyIndicator custom renderer as shown below. 
+Currently an additional step is required for Windows Phone, WindowsPhone 8.1 and iOS projects. We need to create an instance of the busyindicator custom renderer as shown below. 
 
-Create an instance of SfBusyIndicatorRenderer in MainPage constructor of the Windows Phone and Windows Phone 8.1 project as shown 
+Create an instance of SfBusyIndicatorRenderer in MainPage constructor of the Windows Phone and WindowsPhone 8.1  project as shown 
 
 {% highlight C# %}
 
@@ -110,41 +106,64 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ## Add and Configure the BusyIndicator
 
-* Adding reference to BusyIndicator.
+* Adding reference to busyindicator.
+
+
+{% tabs %}
+
 {% highlight c# %}
 
 	using Com.Syncfusion.BusyIndicator; 
 
 {% endhighlight %}
 
-* Create an instance of BusyIndicator.
+{% highlight xaml %}
+
+	xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
+	
+{% endhighlight %}
+
+{% endtabs %}
+
+* Create an instance of SfBusyIndicator.
+
+{% tabs %}
 
 {% highlight c# %}
 	
-	SfBusyIndicator sfBusyIndicator = new SfBusyIndicator(this);
+	SfBusyIndicator busyindicator = new SfBusyIndicator();
+	this.Content=busyindicator;
 	
 {% endhighlight %}
 
-## Set the AnimationType to BusyIndicator
+{% highlight xaml %}
 
-To set AnimationType for the BusyIndicator, use AnimationType property and choose anyone of the 13 predefined animation types. 
+	<busyindicator:SfBusyIndicator />
+	
+{% endhighlight %}
+
+{% endtabs %}
+
+## Setting Animation Type
+
+To set animation type for SfBusyIndicator, use `AnimationType` property and choose anyone of the 10 predefined animation types. 
+
+{% tabs %}
 
 {% highlight c# %}
 
-	SfBusyIndicator busyIndicator = new SfBusyIndicator (this); 
-	busyIndicator.AnimationType = AnimationTypes.Battery;
+	SfBusyIndicator busyindicator = new SfBusyIndicator (this); 
+	busyindicator.AnimationType = AnimationTypes.Battery;
 
 {% endhighlight %}
 
-## Configure the properties of BusyIndicator.
-   
-{% highlight C# %}
+{% highlight xaml %}
 
-	SfBusyIndicator sfBusyIndicator=new SfBusyIndicator();
-	sfBusyIndicator.AnimationType=AnimationTypes.Ball;
-	sfBusyIndicator.TextColor=Color.RED;
-	sfBusyIndicator.ViewBoxHeight=20;
-	sfBusyIndicator.ViewBoxWidth=20;
-	sfBusyIndicator.IsBusy=true;
+	<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="Battery" />
 	
 {% endhighlight %}
+
+{% endtabs %}
+
+
+![](images/Busyindicator.png)

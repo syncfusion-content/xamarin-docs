@@ -51,7 +51,7 @@ The dates in month view can be selected by three ways such as single, multiple a
 
 {% highlight c# %}
 	
-	MonthLabelSettings labelsettings = new MonthLabelSettings();
+	MonthLabelSettings labelSettings = new MonthLabelSettings();
 	labelSettings.DateFormat = “dd”;
 	labelSettings.DayLabelSize = 20;
 	labelSettings.DayFormat = "EEE";
@@ -67,7 +67,7 @@ The dates in month view can be selected by three ways such as single, multiple a
 
 {% highlight xaml %}
 
-	<CalendarSample:SfCalendar  x:Name="monthviewSettings" TodayTextColor="Red" InlineBackgroundColor="Blue" WeekDayBackGroundColor="Yellow" MonthViewSettings="monthviewSettings"/>
+	<CalendarSample:SfCalendar  x:Name="monthViewSettings" TodayTextColor="Red" InlineBackgroundColor="Blue" WeekDayBackGroundColor="Yellow" MonthViewSettings="monthviewSettings"/>
 
 {% endhighlight %}
 

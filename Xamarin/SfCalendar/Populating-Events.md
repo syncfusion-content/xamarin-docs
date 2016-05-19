@@ -21,13 +21,13 @@ Inline event support can be toggled on / off with `ShowInLineEvent` property.
     
 {% highlight c# %}
 	
-	sfcalendar.ShowInLineEvent=True;
+	sfcalendar.ShowInLineEvent=true;
 	
 {% endhighlight %}
 
 {% highlight xaml %}
 
-	<CalendarSample:SfCalendar  x:Name="calendar" ShowInlineEvent="True" />
+	<CalendarSample:SfCalendar  x:Name="calendar" ShowInlineEvent="true" />
 
 {% endhighlight %}
 

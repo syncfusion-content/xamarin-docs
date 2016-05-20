@@ -18,12 +18,12 @@ The `ViewBoxWidth` property allows the user to set the width of the control View
 
 {% tabs %}
 
-{% hightlight c# %}
+{% highlight c# %}
 
 	busyindicator.ViewBoxHeight=20;
 	busyindicator.ViewBoxWidth=20;
 
-{% endhightlight %}
+{% endhighlight %}
 
 {% highlight xaml %}
 

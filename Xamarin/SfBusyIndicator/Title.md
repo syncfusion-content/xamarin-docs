@@ -12,7 +12,7 @@ The `Title` property can be used to get or set the text that indicates the infor
 
 {% tabs %}
 
-{% hightlight c# %}
+{% highlight c# %}
 
 	SfBusyIndicator busyindicator = new SfBusyIndicator(this);
 	busyindicator.Title =”Loading…”;

@@ -14,7 +14,7 @@ The `AnimationType` property allows you to choose one of the animation from the 
 
 {% highlight c# %}
 
-	SfBusyIndicator busyindicator = new SfBusyIndicator(this);
+	SfBusyIndicator busyindicator = new SfBusyIndicator();
 	busyindicator.AnimationType=AnimationTypes.ECG;
 	
 {% endhighlight %}

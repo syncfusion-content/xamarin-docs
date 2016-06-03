@@ -150,7 +150,7 @@ To enable multiple selection, Change the selection type using `SelectionMode` pr
 
 {% highlight c# %}
 
-	SfCalendar calendar = new SfCalendar (this);
+	SfCalendar calendar = new SfCalendar ();
 	calendar.SelectionMode=SelectionMode.MultiSelection;
 
 {% endhighlight %}
@@ -173,7 +173,7 @@ For instance add all the holiday dates to blackout dates property.
 
 {% highlight c# %}
 
-	SfCalendar  calendar = new SfCalendar (this);
+	SfCalendar  calendar = new SfCalendar ();
 	List<DateTime> black_dates = new List<DateTime>();
 	for (int i = 0; i < 5; i++)
 	{
@@ -202,7 +202,7 @@ Set `MinDate` and `MaxDate` property to limit visible dates range. Check the [Mi
 
 {% highlight c# %}
 
-	SfCalendar  calendar = new SfCalendar (this);
+	SfCalendar  calendar = new SfCalendar ();
 	calendar.MinDate = new DateTime(2014,4,1);
 	calendar.MaxDate = new DateTime(2018,4,1);
 

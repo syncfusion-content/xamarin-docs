@@ -14,7 +14,7 @@ The `Title` property can be used to get or set the text that indicates the infor
 
 {% highlight c# %}
 
-	SfBusyIndicator busyindicator = new SfBusyIndicator(this);
+	SfBusyIndicator busyindicator = new SfBusyIndicator();
 	busyindicator.Title =”Loading…”;
 
 {% endhighlight %}

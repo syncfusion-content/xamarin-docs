@@ -114,7 +114,7 @@ The LinearGauge control configured entirely in C# code or by using XAML markup.T
 
 {% highlight c# %}
 
-	using Syncfusion.SfLinearGauge.XForms;
+	using Syncfusion.SfGauge.XForms;
 
 {% endhighlight %}
 

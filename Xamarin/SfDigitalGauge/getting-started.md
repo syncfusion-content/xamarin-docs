@@ -118,7 +118,7 @@ The DigitalGauge control is configured entirely in C# code or by using XAML mark
 
 {% highlight C# %}
 
-	using Com.Syncfusion.DigitalGauge; 
+	using Syncfusion.SfGauge.XForms; 
 
 {% endhighlight %}
 

@@ -114,7 +114,7 @@ The Carousel control is configured entirely in C# code or by using XAML markup. 
 
 {% highlight C# %}
 
-	using Com.Syncfusion.Carousel; 
+	using Syncfusion.SfCarousel.XForms;
 
 {% endhighlight %}
 

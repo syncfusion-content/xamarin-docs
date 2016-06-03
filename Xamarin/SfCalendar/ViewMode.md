@@ -107,7 +107,7 @@ This displays entire dates/month of a particular year, by default current year w
 
 {% highlight c# %}
 
-	SfCalendar calendar = new SfCalendar(this);
+	SfCalendar calendar = new SfCalendar();
 	YearViewSettings yearViewSettings = new YearViewSettings();
 	yearViewSettings.YearHeaderTextColor=Color.parseColor("#1B79D6");
 	yearViewSettings.MonthHeaderBackground=Color.parseColor("#E4E8ED");

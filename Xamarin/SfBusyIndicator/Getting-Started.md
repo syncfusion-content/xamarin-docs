@@ -113,7 +113,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% highlight c# %}
 
-	using Com.Syncfusion.BusyIndicator; 
+	using Syncfusion.SfBusyIndicator.XForms; 
 
 {% endhighlight %}
 
@@ -152,7 +152,7 @@ To set animation type for SfBusyIndicator, use `AnimationType` property and choo
 
 {% highlight c# %}
 
-	SfBusyIndicator busyindicator = new SfBusyIndicator (this); 
+	SfBusyIndicator busyindicator = new SfBusyIndicator (); 
 	busyindicator.AnimationType = AnimationTypes.Battery;
 
 {% endhighlight %}

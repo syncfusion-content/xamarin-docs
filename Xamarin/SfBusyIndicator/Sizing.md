@@ -19,7 +19,7 @@ The `ViewBoxWidth` property allows the user to set the width of the control View
 {% tabs %}
 
 {% highlight c# %}
-
+    SfBusyIndicator busyindicator = new SfBusyIndicator();
 	busyindicator.ViewBoxHeight=20;
 	busyindicator.ViewBoxWidth=20;
 

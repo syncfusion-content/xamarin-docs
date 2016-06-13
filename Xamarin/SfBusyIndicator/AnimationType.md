@@ -15,13 +15,13 @@ The `AnimationType` property allows you to choose one of the animation from the 
 {% highlight c# %}
 
 	SfBusyIndicator busyindicator = new SfBusyIndicator();
-	busyindicator.AnimationType=AnimationTypes.ECG;
+	busyindicator.AnimationType=AnimationTypes.Ball;
 	
 {% endhighlight %}
 
 {% highlight xaml %}
 
-	<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="ECG" />
+	<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="Ball" />
 
 {% endhighlight %}
 

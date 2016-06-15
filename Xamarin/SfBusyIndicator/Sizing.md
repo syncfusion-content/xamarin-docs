@@ -20,6 +20,7 @@ The `ViewBoxWidth` property allows the user to set the width of the control View
 
 {% highlight c# %}
     SfBusyIndicator busyindicator = new SfBusyIndicator();
+	busyindicator.AnimationType=AnimationTypes.SlicedCircle;
 	busyindicator.ViewBoxHeight=20;
 	busyindicator.ViewBoxWidth=20;
 
@@ -27,7 +28,7 @@ The `ViewBoxWidth` property allows the user to set the width of the control View
 
 {% highlight xaml %}
 
-	<busyindicator:SfBusyIndicator x:Name="busyindicator" ViewBoxHeight="20" ViewBoxWidth="20" />
+	<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="SlicedCircle" ViewBoxHeight="20" ViewBoxWidth="20" />
 	
 {% endhighlight %}
 

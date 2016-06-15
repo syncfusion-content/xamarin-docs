@@ -15,13 +15,14 @@ The `IsBusy` property in SfBusyIndicator control is used to determine whether an
 {% highlight c# %}
 
 	SfBusyIndicator busyindicator = new SfBusyIndicator();
+	busyindicator.AnimationType=AnimationTypes.Ball;
 	busyindicator.IsBusy=true;
 
 {% endhighlight %}
 
 {% highlight xaml %}
 
-	<busyindicator:SfBusyIndicator x:Name="busyindicator" IsBusy="true" />
+	<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="Ball" IsBusy="true" />
 	
 {% endhighlight %}
 

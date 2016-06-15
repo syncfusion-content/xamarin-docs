@@ -15,13 +15,14 @@ The `Title` property can be used to get or set the text that indicates the infor
 {% highlight c# %}
 
 	SfBusyIndicator busyindicator = new SfBusyIndicator();
+	busyindicator.AnimationType=AnimationTypes.Ball;
 	busyindicator.Title =”Loading…”;
 
 {% endhighlight %}
 
 {% highlight xaml %}
 
-	<busyindicator:SfBusyIndicator x:Name="busyindicator" Title="Loading..." />
+	<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="Ball" Title="Loading..." />
 	
 {% endhighlight %}
 
@@ -36,14 +37,15 @@ The `FontFace` property can be used to define the font style and size of the tit
 {% highlight c# %}
 
 	SfBusyIndicator busyindicator = new SfBusyIndicator(this);
+	busyindicator.AnimationType=AnimationTypes.Ball;
 	busyindicator.Title="Loading...";
-	busyindicator.Fontface=Typeface.create("Arial",Typeface.BOLD);
+	busyindicator.Fontface=Typeface.create("Arial",Typeface.NONE);
 
 {% endhighlight %}
 
 {% highlight xaml %}
 
-	<busyindicator:SfBusyIndicator x:Name="busyindicator" Title="Loading..."  Fontface="Bold"/>
+	<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="Ball" Title="Loading..."  Fontface="Bold"/>
 	
 {% endhighlight %}
 

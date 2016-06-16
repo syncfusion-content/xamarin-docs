@@ -50,11 +50,11 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>iOS (Classic)</td>
-<td>ios\Syncfusion.SfRating.iOS.dll<br/>ios\Syncfusion.SfRating.XForms.iOS.dll<br/>ios\Syncfusion.SfRating.XForms.dll</td>
+<td>iOS\Syncfusion.SfRating.iOS.dll<br/>iOS\Syncfusion.SfRating.XForms.iOS.dll<br/>iOS\Syncfusion.SfRating.XForms.dll</td>
 </tr>
 <tr>
 <td>iOS (Unified)</td>
-<td>ios-unified\Syncfusion.SfRating.iOS.dll<br/>ios-unified\Syncfusion.SfRating.XForms.iOS.dll<br/>ios-unified\Syncfusion.SfRating.XForms.dll</td>
+<td>iOS-unified\Syncfusion.SfRating.iOS.dll<br/>iOS-unified\Syncfusion.SfRating.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfRating.XForms.dll</td>
 </tr>
 <tr>
 <td>Windows Phone</td>

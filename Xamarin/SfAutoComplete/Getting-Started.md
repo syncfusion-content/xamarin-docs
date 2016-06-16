@@ -49,11 +49,11 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>iOS (Classic)</td>
-<td>ios\Syncfusion.SfAutoComplete.iOS.dll<br/>ios\Syncfusion.SfAutoComplete.XForms.iOS.dll<br/>ios\Syncfusion.SfAutoComplete.XForms.dll</td>
+<td>iOS\Syncfusion.SfAutoComplete.iOS.dll<br/>iOS\Syncfusion.SfAutoComplete.XForms.iOS.dll<br/>iOS\Syncfusion.SfAutoComplete.XForms.dll</td>
 </tr>
 <tr>
 <td>iOS (Unified)</td>
-<td>ios-unified\Syncfusion.SfAutoComplete.iOS.dll<br/>ios-unified\Syncfusion.SfAutoComplete.XForms.iOS.dll<br/>ios-unified\Syncfusion.SfAutoComplete.XForms.dll</td>
+<td>iOS-unified\Syncfusion.SfAutoComplete.iOS.dll<br/>iOS-unified\Syncfusion.SfAutoComplete.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfAutoComplete.XForms.dll</td>
 </tr>
 <tr>
 <td>Windows Phone</td>

@@ -48,7 +48,7 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>iOS (Unified)</td>
-<td>ios-unified\Syncfusion.SfBusyIndicator.iOS.dll<br/>ios-unified\Syncfusion.SfBusyIndicator.XForms.iOS.dll<br/>ios-unified\Syncfusion.SfBusyIndicator.XForms.dll</td>
+<td>iOS-unified\Syncfusion.SfBusyIndicator.iOS.dll<br/>iOS-unified\Syncfusion.SfBusyIndicator.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfBusyIndicator.XForms.dll</td>
 </tr>
 <tr>
 <td>WindowsPhone</td>

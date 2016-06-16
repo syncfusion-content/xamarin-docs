@@ -49,7 +49,7 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>iOS (Unified)</td>
-<td>ios-unified\Syncfusion.SfRotator.iOS.dll<br/>ios-unified\Syncfusion.SfRotator.XForms.iOS.dll<br/>ios-unified\Syncfusion.SfRotator.XForms.dll</td>
+<td>iOS-unified\Syncfusion.SfRotator.iOS.dll<br/>iOS-unified\Syncfusion.SfRotator.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfRotator.XForms.dll</td>
 </tr>
 <tr>
 <td>UWP</td>

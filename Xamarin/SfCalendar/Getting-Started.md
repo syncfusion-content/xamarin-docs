@@ -48,7 +48,7 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>iOS (Unified)</td>
-<td>ios-unified\Syncfusion.SfCalendar.iOS.dll<br/>ios-unified\Syncfusion.SfCalendar.XForms.iOS.dll<br/>ios-unified\Syncfusion.SfCalendar.XForms.dll</td>
+<td>iOS-unified\Syncfusion.SfCalendar.iOS.dll<br/>iOS-unified\Syncfusion.SfCalendar.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfCalendar.XForms.dll</td>
 </tr>
 <tr>
 <td>Windows Phone</td>

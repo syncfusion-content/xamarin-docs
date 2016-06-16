@@ -48,7 +48,7 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>iOS (Unified)</td>
-<td>ios-unified\Syncfusion.SfCarousel.iOS.dll<br/>ios-unified\Syncfusion.SfCarousel.XForms.iOS.dll<br/>ios-unified\Syncfusion.SfCarousel.XForms.dll</td>
+<td>iOS-unified\Syncfusion.SfCarousel.iOS.dll<br/>iOS-unified\Syncfusion.SfCarousel.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfCarousel.XForms.dll</td>
 </tr>
 <tr>
 <td>WindowsPhone</td>

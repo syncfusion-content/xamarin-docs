@@ -193,7 +193,7 @@ Set the RotationAngle property to decide the angle in which items should be rota
 
 ## Setting ItemsSource
 
-SfCarousel items can be populated with a collection of image datas. You can assign a collection to it. Collections include arrays, Lists and DataTables.
+SfCarousel items can be populated with a collection of image data. You can assign a collection to it. Collections include arrays, Lists and DataTables.
 
 {% tabs %}
 

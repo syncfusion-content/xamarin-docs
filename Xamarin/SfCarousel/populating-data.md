@@ -11,7 +11,7 @@ documentation : ug
 
 ## ItemsSource
 
-SfCarousel items can be populated with a collection of image datas. For example, a user may want to create a SfCarousel control which will display a list of images.
+SfCarousel items can be populated with a collection of image data. For example, a user may want to create a SfCarousel control which will display a list of images.
 
 {% tabs %}
 

@@ -161,7 +161,7 @@ The placement position of navigation strip items such as Thumbnail or Dots can b
 
 ## Setting DataSource
 
-SfRotator items can be populated with a collection of image datas. You can assign a collection to it. Collections include arrays, Lists and DataTables.
+SfRotator items can be populated with a collection of image data. You can assign a collection to it. Collections include arrays, Lists and DataTables.
 
 {% tabs %}
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Animation
 
-SfChart provides animation support for data series. Series will be animated whenever the iems source changes. Animation can be enabled by setting the `EnableAnimation` property to `true`. You can also control the duration of the animation using `AnimationDuration` property.
+SfChart provides animation support for data series. Series will be animated whenever the items source changes. Animation can be enabled by setting the `EnableAnimation` property to `true`. You can also control the duration of the animation using `AnimationDuration` property.
 
 {% tabs %} 
 

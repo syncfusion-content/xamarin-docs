@@ -8,7 +8,7 @@ documentation: UG
 ---
 # DataSource
 ## Overview
-DataSource.Portable is a non UI component that consumes raw data and processes data manipulation operations such as sorting, filtering and grouping saving developers’ time and efforts in building the functionality themselves. We can apply DataSource to any data bound control which can be further processed using the bound DataSource.
+DataSource is a non UI component that consumes raw data and processes data operations such as sorting, filtering and grouping saving developers’ time and efforts in building the functionality themselves. We can apply DataSource to any data bound control which can be further processed using the bound DataSource.
 
 ![](DataSource-GettingStarted_images/datasource.png)
 ## Getting started 
@@ -24,7 +24,8 @@ pcl\Syncfusion.DataSource.Portable.dll
 {% endhighlight %}
 {% endtabs %}
 ## Creating your first DataSource in Xamarin.Forms
-* This is how the final output will look like on iOS, Android and Windows Phone devices.
+* This is how the final output will look like on iOS, Android and Windows Phone devices. You can also download the entire source code of this demo from [here](http://files2.syncfusion.com/Xamarin.Forms/Samples/DataSourceForms_GettingStarted.zip).
+
 ![](DataSource-GettingStarted_images/gettingstarted.png)
 
 * Create new **BlankApp** (Xamarin.Forms.Portable) application in**Xamarin Studio** or **Visual Studio**.

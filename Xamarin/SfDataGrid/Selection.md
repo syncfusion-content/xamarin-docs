@@ -55,36 +55,6 @@ The following screenshot shows the selection functionality in SfDataGrid.
 
 ![](SfDataGrid_images/Selection.png)
 
-## Scroll to Row and Column Index
-
-* You can scroll programmatically to particular Row and Column using `SfDataGrid.ScrollToRowColumnIndex` method by passing row and column index.
-
-{% highlight C# %}
-
-dataGrid.ScrollToRowColumnIndex(int rowIndex, int columnIndex);
-
-{% endhighlight %}
-
-## Scroll to Row Index
-
-* You can scroll programmatically to particular Row `SfDataGrid.ScrollToRowIndex` method by passing row index.
-
-{% highlight C# %}
-
-dataGrid.ScrollToRowIndex(int rowIndex);
-
-{% endhighlight %}
-
-## Scroll to Column Index
-
-* You can scroll programmatically to particular Column `SfDataGrid.ScrollToColumnIndex` method by passing column index.
-
-{% highlight C# %}
-
-dataGrid.ScrollToColumnIndex(int columnIndex);
-
-{% endhighlight %}
-
 ## Selection Events
 
 The SfDataGrid provides you the following events for Selection:

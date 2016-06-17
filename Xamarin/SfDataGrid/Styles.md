@@ -132,15 +132,15 @@ Following are the lists of options available to customize the grid borders.
 * Vertical
 * None
 
-# Both Border
+# Both
 
 *  `GridLinesVisibility.Both` allows you to display the DataGrid with both Horizontal and Vertical borders.
 
-# Horizontal Border
+# Horizontal
 
 * `GridLinesVisibility.Horizontal` allows you to display the DataGrid with Horizontal border only
 
-# Vertical Border
+# Vertical
 
 * `GridLinesVisibility.Vertical` allows you to display the DataGrid with Vertical border only
 

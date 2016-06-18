@@ -27,11 +27,14 @@ After installing Essential Studio for Xamarin, you can find all the required ass
 Add the following assemblies to the pcl project as shown below:
 
 **PCL project:**
-{% tabs %}
-{% highlight c# %}
+
+<table>
+<tr>
+<td>
 pcl\Syncfusion.DataSource.Portable.dll
-{% endhighlight %}
-{% endtabs %}
+</td>
+</tr>
+</table>
 
 ## Creating your first DataSource in Xamarin.Forms
 

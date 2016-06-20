@@ -44,7 +44,7 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>Android</td>
-<td>android\Syncfusion.SfNumericTextBox.Android.dll<br/>android\Syncfusion.SfNumericTextBox.XForms.Android.dll</td>
+<td>android\Syncfusion.SfNumericTextBox.Android.dll<br/>android\Syncfusion.SfNumericTextBox.XForms.Android.dll<br/>android\Syncfusion.SfNumericTextBox.XForms.dll</td>
 </tr>
 <tr>
 <td>iOS (Unified)</td>
@@ -138,7 +138,7 @@ The NumericTextBox control configured entirely in C# code or by using XAML marku
 
 {% highlight xaml %}
 
-	<numeric:SfNumericTextBox />
+	<numeric:SfNumericTextBox x:Name="numericTextBox" />
 	
 {% endhighlight %}
 

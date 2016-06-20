@@ -11,7 +11,7 @@ documentation: ug
 
 ## BarPointer
 
-Barpointer is an accenting line or colored bar that is placed on the Linear Gauge to mark the values. 
+BarPointer is an accenting line or colored bar that is placed on the Linear Gauge to mark the values. 
 
 {% tabs %}
 

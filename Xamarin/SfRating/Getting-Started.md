@@ -46,7 +46,7 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>Android</td>
-<td>android\Syncfusion.SfRating.Android.dll<br/>android\Syncfusion.SfRating.XForms.Android.dll</td>
+<td>android\Syncfusion.SfRating.Android.dll<br/>android\Syncfusion.SfRating.XForms.Android.dll<br/>android\Syncfusion.SfRating.XForms.dll</td>
 </tr>
 <tr>
 <td>iOS (Classic)</td>
@@ -144,7 +144,7 @@ The Rating control is configured entirely in C# code or by using XAML markup. Th
 
 {% highlight xaml %}
 
-	<rating:SfRating />
+	<rating:SfRating x:Name="rating" />
 	
 {% endhighlight %}
 

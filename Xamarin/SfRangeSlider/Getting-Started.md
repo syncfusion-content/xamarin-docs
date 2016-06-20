@@ -44,7 +44,7 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>Android</td>
-<td>android\Syncfusion.SfRangeSlider.Android.dll<br/>android\Syncfusion.SfRangeSlider.XForms.Android.dll</td>
+<td>android\Syncfusion.SfRangeSlider.Android.dll<br/>android\Syncfusion.SfRangeSlider.XForms.Android.dll<br/>android\Syncfusion.SfRangeSlider.XForms.dll</td>
 </tr>
 <tr>
 <td>iOS (Unified)</td>
@@ -133,7 +133,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% highlight xaml %}
 
-	<range:SfRangeSlider />
+	<range:SfRangeSlider x:Name="rangeSlider"/>
 	
 {% endhighlight %}
 

@@ -45,7 +45,7 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>Android</td>
-<td>android\Syncfusion.SfAutoComplete.Android.dll<br/>android\Syncfusion.SfAutoComplete.XForms.Android.dll</td>
+<td>android\Syncfusion.SfAutoComplete.Android.dll<br/>android\Syncfusion.SfAutoComplete.XForms.Android.dll<br/>android\Syncfusion.SfAutoComplete.XForms.dll</td>
 </tr>
 <tr>
 <td>iOS (Classic)</td>
@@ -141,7 +141,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% highlight xaml %}
 
-	<autocomplete:SfAutoComplete/>
+	<autocomplete:SfAutoComplete x:Name="countryAutoComplete"/>
 	
 {% endhighlight %}
 
@@ -159,7 +159,7 @@ You can set the suggestion list to the AutoComplete using the AutoCompleteSource
 	countryName.Add("Afghanistan");
 	countryName.Add("Akrotiri");
 	countryName.Add("Albania");
-	sfAutoComplete.AutoCompleteSource = countryName;
+	countryAutoComplete.AutoCompleteSource = countryName;
 
 {% endhighlight %}
 

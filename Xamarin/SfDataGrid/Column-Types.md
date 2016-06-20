@@ -252,6 +252,14 @@ You can get or set the TextAlignment of the header cell in the GridColumn by usi
 
 You can wrap the record cell velue when the text for the record cells exceeds the content area by setting [GridColumn.LineBreakMode](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~LineBreakMode.html) as `LineBreakMode.WordWrap` 
 
+The following code example shows how to use GridSwitchColumn.
+ 
+{% tabs %}
+{% highlight c# %}
+dataGrid.Columns[0].LineBreakMode=LineBreakMode.WordWrap; 
+{% endhighlight %}
+{% endtabs %}
+
 ## GridSwitchColumn
 
 GridSwitchColumn is derived from GridColumn, and hence it inherits all the properties of GridColumn. It loads a switch as a content of record cells in the column and responds to value changes in it. You can change the underlying data source that toggles the values shown in the switch. The SfDataGrid automatically generates GridSwitchColumn if the property in the underlying collection of type bool.

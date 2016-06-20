@@ -150,7 +150,7 @@ The following code example illustrates how to use ResetCache method:
 }
 {% endhighlight %}
 
-# AppearanceManager
+## AppearanceManager
 
 SfDatagrid allows you to change the appearance by writing a Style class overriding from `AppearanceManager` and assigning it to the [SfDataPager.AppearanceManager](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager~AppearanceManager.html) property.
   

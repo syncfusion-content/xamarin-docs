@@ -86,9 +86,9 @@ dataGrid.GroupColumnDescriptions.Add (new GroupColumnDescription () {
 {% endhighlight %}
 {% endtabs %}
 
-### Expand groups while grouping
+## Expand groups while grouping
  
-You can expand all the groups while grouping by setting [SfDataGrid.AutoExpandGroups](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoExpandGroups.html) to `true`. So, when user group any column, then all groups will be in expanded state. Also you can allow end-user to expand or collapse the groups by setting [SfDataGrid.AllowGroupExpandCollapse](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowGroupExpandCollapse.html) to `true`.
+You can expand all the groups while grouping by setting [SfDataGrid.AutoExpandGroups](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoExpandGroups.html) to `true`. So, when user group any column, then all groups will be in expanded state. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -108,10 +108,22 @@ this.dataGrid.AllowGroupExpandCollapse = true;
 ## Expanding or collapsing the groups
 
 By default, you can view the records in each group by expanding its group caption.
+Also you can allow end-user to expand or collapse the groups by setting [SfDataGrid.AllowGroupExpandCollapse](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowGroupExpandCollapse.html) to `true`.
+
+{% tabs %}
+{% highlight xaml %}
+
+AllowGroupExpandCollapse="True"
+                       
+{% endhighlight %}
+{% highlight c# %}
+this.dataGrid.AllowGroupExpandCollapse = true;
+{% endhighlight %}
+{% endtabs %}
+
+### Programmatically expanding or collapsing the groups
 
 You can allow end-user to expand or collapse the groups programmatically at runtime.
-  
-### Programmatically expanding or collapsing the groups
 
 #### Expand or collapse all the Groups
 
@@ -133,7 +145,6 @@ You can expand or collapse specific group by using [SfDataGrid.ExpandGroup](http
 {% highlight c# %}
 var group = (dataGrid.View.Groups[0] as Group);
 this.dataGrid.ExpandGroup(group);
-
 this.dataGrid.CollapseGroup(group);
 {% endhighlight %}
 {% endtabs %}

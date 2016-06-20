@@ -96,8 +96,7 @@ You can expand all the groups while grouping by setting [SfDataGrid.AutoExpandGr
                         AutoExpandGroups="True"
                         AutoGenerateColumns="True"
                         AllowGroupExpandCollapse="True"
-                        ItemsSource="{Binding Orders}"
-                        ShowGroupDropArea="True" />
+                        ItemsSource="{Binding Orders}"/>
 {% endhighlight %}
 {% highlight c# %}
 this.dataGrid.AutoExpandGroups = true;
@@ -105,15 +104,16 @@ this.dataGrid.AllowGroupExpandCollapse = true;
 {% endhighlight %}
 {% endtabs %}
 
-## Expand or collaps the groups
+## Expand or collapse the groups
 
-By default, you can view the records in expanded state with grouping.
-`SfDataGrid` allow the end-user to expand or collapse the groups by setting [SfDataGrid.AllowGroupExpandCollapse](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowGroupExpandCollapse.html) as `true`.
+By default, the groups will be in expanded state in a SfDataGrid. However, you can expand or collapse a group in runtime by setting the [SfDataGrid.AllowGroupExpandCollapse](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowGroupExpandCollapse.html) as `true`.
 
 {% tabs %}
 {% highlight xaml %}
 
-AllowGroupExpandCollapse="True"
+<syncfusion:SfDataGrid  x:Name="dataGrid"
+                        AllowGroupExpandCollapse="True"
+                        ItemsSource="{Binding Orders}"/>
                        
 {% endhighlight %}
 {% highlight c# %}

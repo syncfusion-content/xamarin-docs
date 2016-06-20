@@ -44,7 +44,7 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>Android</td>
-<td>android\Syncfusion.SfNumericUpDown.Android.dll<br/>android\Syncfusion.SfNumericUpDown.XForms.Android.dll</td>
+<td>android\Syncfusion.SfNumericUpDown.Android.dll<br/>android\Syncfusion.SfNumericUpDown.XForms.Android.dll<br/>android\Syncfusion.SfNumericUpDown.XForms.dll</td>
 </tr>
 <tr>
 <td>iOS (Unified)</td>
@@ -140,7 +140,7 @@ The NumericUpDown control configured entirely in C# code or by using XAML markup
 
 {% highlight xaml %}
 
-	<numeric:SfNumericUpDown />
+	<numeric:SfNumericUpDown x:Name="numericUpDown"/>
 	
 {% endhighlight %}
 

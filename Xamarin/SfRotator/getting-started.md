@@ -180,7 +180,7 @@ SfRotator items can be populated with a collection of image data. You can assign
 
 {% highlight xaml %}
 
-	<rotator:SfRotator x:Name="rotator" DataSource="temp" />
+	<rotator:SfRotator x:Name="rotator" DataSource="{Binding}" />
 	
 {% endhighlight %}
 

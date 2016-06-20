@@ -31,7 +31,7 @@ SfRotator items can be populated with a collection of image data. For example, a
 
 {% highlight xaml %}
 
-	<rotator:SfRotator x:Name="rotator" DataSource="temp" />
+	<rotator:SfRotator x:Name="rotator" DataSource="{Binding}" />
 	
 {% endhighlight %}
 

@@ -44,7 +44,7 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>Android</td>
-<td>android\Syncfusion.SfCalendar.Android.dll<br/>android\Syncfusion.SfCalendar.XForms.Android.dll</td>
+<td>android\Syncfusion.SfCalendar.Android.dll<br/>android\Syncfusion.SfCalendar.XForms.Android.dll<br/>android\Syncfusion.SfCalendar.XForms.dll</td>
 </tr>
 <tr>
 <td>iOS (Unified)</td>
@@ -130,13 +130,13 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% highlight c# %}
 
-	SfCalendar sfCalendar=new SfCalendar();
+	SfCalendar calendar=new SfCalendar();
 	
 {% endhighlight %}
 
 {% highlight xaml %}
 
-	<CalendarSample:SfCalendar />
+	<CalendarSample:SfCalendar x:Name="calendar" />
 	
 {% endhighlight %}
 

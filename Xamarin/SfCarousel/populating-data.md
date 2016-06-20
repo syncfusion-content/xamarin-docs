@@ -30,7 +30,7 @@ SfCarousel items can be populated with a collection of image data. For example, 
 
 {% highlight xaml %}
 
-	<carousel:SfCarousel x:Name="carousel" ItemsSource="temp" />
+	<carousel:SfCarousel x:Name="carousel" ItemsSource="{Binding}" />
 	
 {% endhighlight %}
 

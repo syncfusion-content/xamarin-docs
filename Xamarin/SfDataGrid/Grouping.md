@@ -105,10 +105,10 @@ this.dataGrid.AllowGroupExpandCollapse = true;
 {% endhighlight %}
 {% endtabs %}
 
-## Expanding or collapsing the groups
+## Expand or collaps the groups
 
-By default, you can view the records in each group by expanding its group caption.
-Also you can allow end-user to expand or collapse the groups by setting [SfDataGrid.AllowGroupExpandCollapse](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowGroupExpandCollapse.html) to `true`.
+By default, you can view the records in expanded state with grouping.
+`SfDataGrid` allow the end-user to expand or collapse the groups by setting [SfDataGrid.AllowGroupExpandCollapse](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowGroupExpandCollapse.html) as `true`.
 
 {% tabs %}
 {% highlight xaml %}

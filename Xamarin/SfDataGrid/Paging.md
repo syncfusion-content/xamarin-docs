@@ -150,3 +150,101 @@ The following code example illustrates how to use ResetCache method:
 }
 {% endhighlight %}
 
+## AppearanceManager
+
+SfDatagrid allows you to change the appearance by writing a Style class overriding from `AppearanceManager` and assigning it to the [SfDataPager.AppearanceManager](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager~AppearanceManager.html) property.
+  
+The following example explains you how to apply custom style to SfDatagrid.
+{% tabs %}
+{% highlight c# %}
+
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        this.dataGrid.ItemsSource = sfDataPager.PagedSource;
+        // Apply the custom appearence to SfDataPager
+        this.sfDataPager.AppearanceManager = new CustomAppearence();
+    }
+}
+
+{% endhighlight %}
+
+{% highlight xaml %}
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sfgrid="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms"
+             xmlns:local="clr-namespace:SfDataGrid_Sample;assembly=SfDataGrid_Sample"
+             xmlns:sfDataPager="clr-namespace:Syncfusion.SfDataGrid.XForms.DataPager;assembly=Syncfusion.SfDataGrid.XForms"
+             x:Class="SfDataGrid_Sample.Page1">
+
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <local:CustomAppearence x:Key="customAppearence"/>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+
+  <ContentPage.BindingContext>
+    <local:ViewModel x:Name="viewModel" />
+  </ContentPage.BindingContext>
+  
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+
+    <sfgrid:SfDataGrid x:Name="dataGrid" Grid.Row="1"
+                       AutoGenerateColumns="True" />
+
+    <sfDataPager:SfDataPager x:Name="sfDataPager"
+                         Grid.Row="0"
+                         PageCount="10"
+                         PageSize="10"
+                         NumericButtonCount="10"
+                         AppearanceManager="{StaticResource customAppearence}"
+                         Source="{Binding OrdersInfo}">
+    </sfDataPager:SfDataPager>
+  </Grid>
+</ContentPage>
+{% endhighlight %}
+{% endtabs %}
+
+{% highlight c# %}
+//Custom Appearance class
+public class CustomAppearence: AppearanceManager
+{
+	public override Color GetNumericButtonSelectionBackgroundColor()
+    {
+        return Color.FromRgb(255, 0, 0);
+    }
+
+    public override Color GetNumericButtonSelectionForegroundColor()
+    {
+        return Color.FromRgb(0, 255, 0);
+    }
+
+	public override Color GetNumericButtonBackgroundColor()
+    {
+        return Color.FromRgb(0, 0, 255);
+    }
+
+	public override Color GetNumericButtonForegroundColor()
+    {
+        return Color.FromRgb(82, 82, 82);
+    }
+
+    public override Color GetNavigationButtonBackgroundColor()
+    {
+        return Color.FromRgb(34, 34, 34);
+    }
+
+}
+{% endhighlight %}
+
+The following picture shows the customize appearence of data pager.
+
+![](SfDataGrid_images/datapagerappearence.png)
+
+

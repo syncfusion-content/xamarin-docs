@@ -11,7 +11,7 @@ documentation: ug
 
 ## Apply palette for Chart
 
-`ColorModel` property of `SfChart` is used to define the colors for each series. ColorModel contains the following color palettes.
+[`ColorModel`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorModel.html) property of [`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html) is used to define the colors for each series. ColorModel contains the following color palettes.
 
 **Predefined Palettes**
 
@@ -21,7 +21,7 @@ Currently, Chart supports only Metro palette and it is the default palette for S
 
 **Custom Palette**
 
-Chart will use the colors from `CustomBrushes` property if `ColorModel.Palette` is set to `Custom`.
+Chart will use the colors from [`CustomBrushes`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorModel~CustomBrushes.html) property if [`ColorModel.Palette`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorModel~Palette.html) is set to [`Custom`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorPalette.html).
 
 Following code illustrates how to set the custom colors.
 
@@ -74,7 +74,7 @@ None palette will not apply any color to the series. So in order to define the c
 
 ## Apply palette for Series
 
-`ColorModel` property of `ChartSeries` is used to define the colors for each data point. Following palettes are used to define the colors.
+[`ColorModel`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorModel.html) property of [`ChartSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries.html) is used to define the colors for each data point. Following palettes are used to define the colors.
 
 **Predefined Palettes**
 
@@ -188,4 +188,4 @@ chart.Series.Add(columnSeries);
 
 **None Palette**
 
-None palette will not apply any color to the data points. So in order to define the color for the data points, you can use the `Color` property of `ChartSeries`.
+None palette will not apply any color to the data points. So in order to define the color for the data points, you can use the [`Color`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorModel.html) property of [`ChartSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries.html).

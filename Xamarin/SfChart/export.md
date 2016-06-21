@@ -11,7 +11,7 @@ documentation: ug
 
 **Export as an image**
 
-You can export the Chart as a JPG image using `SaveAsImage` method of `SfChart`.
+You can export the Chart as a JPG image using [SaveAsImage](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~SaveAsImage.html#) method of [SfChart](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html#).
 
 {% highlight c# %}
 [C#]

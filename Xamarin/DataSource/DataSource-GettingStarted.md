@@ -243,6 +243,7 @@ public App()
     Device.OnPlatform(iOS:() => MainPage.Padding = new Thickness(0, 20, 0, 0));
 }
 
+//Will be executed only in grouping case. Existing view in view cell will be replaced by label.
 private void ViewCell_BindingContextChanged(object sender, EventArgs e)
 {
     var viewCell = sender as ViewCell;

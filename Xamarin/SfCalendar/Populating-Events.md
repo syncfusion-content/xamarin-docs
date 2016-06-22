@@ -57,7 +57,7 @@ Calendar Events collection can be provided to calendar using the following steps
 
 {% highlight xaml %}
 
-	<CalendarSample:SfCalendar  x:Name="calendar" StartTime="2015,1,1" EndTime="2015,1,1" Subject="Go to Meeting" Color="RED"/>
+	<CalendarSample:SfCalendar  x:Name="calendar" StartTime="d" EndTime="d1" Subject="Go to Meeting" Color="RED"/>
 
 {% endhighlight %}
 

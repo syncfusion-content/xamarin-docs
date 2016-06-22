@@ -44,18 +44,18 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>Android</td>
-<td>android\Syncfusion.SfCarousel.Android.dll<br/>android\Syncfusion.SfCarousel.XForms.Android.dll<br/>android\Syncfusion.SfCarousel.XForms.dll</td>
+<td>android\Syncfusion.SfCarousel.Android.dll<br/>android\Syncfusion.SfCarousel.XForms.Android.dll</td>
 </tr>
 <tr>
 <td>iOS (Unified)</td>
-<td>iOS-unified\Syncfusion.SfCarousel.iOS.dll<br/>iOS-unified\Syncfusion.SfCarousel.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfCarousel.XForms.dll</td>
+<td>ios-unified\Syncfusion.SfCarousel.iOS.dll<br/>ios-unified\Syncfusion.SfCarousel.XForms.iOS.dll<br/>ios-unified\Syncfusion.SfCarousel.XForms.dll</td>
 </tr>
 <tr>
-<td>Windows Phone</td>
+<td>WindowsPhone</td>
 <td>wp8\Syncfusion.SfInput.WP8.dll<br/>wp8\Syncfusion.SfShared.WP8.dll<br/>wp8\Syncfusion.SfCarousel.XForms.dll<br/>wp8\Syncfusion.SfCarousel.XForms.WinPhone.dll</td>
 </tr>
 <tr>
-<td>Windows Phone 8.1</td>
+<td>WindowsPhone 8.1</td>
 <td>wp81\Syncfusion.SfInput.WP.dll<br/>wp81\Syncfusion.SfShared.WP.dll<br/>wp81\Syncfusion.SfCarousel.XForms.dll<br/>wp81\Syncfusion.SfCarousel.XForms.WinPhone.dll</td>
 </tr>
 <tr>
@@ -64,13 +64,13 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>UWP</td>
-<td>uwp\Syncfusion.SfInput.UWP.dll<br/>uwp\Syncfusion.SfShared.UWP.dll<br/>uwp\Syncfusion.SfCarousel.XForms.dll<br/>uwp\Syncfusion.SfCarousel.XForms.UWP.dll</td>
+<td>uwp\Syncfusion.SfCarousel.UWP.dll<br/>uwp\Syncfusion.SfCarousel.XForms.dll<br/>uwp\Syncfusion.SfCarousel.XForms.UWP.dll</td>
 </tr>
 </table>
 
-Currently an additional step is required for Windows Phone, Windows Phone 8.1 and iOS projects. We need to create an instance of the carousel custom renderer as shown below. 
+Currently an additional step is required for Windows Phone, WindowsPhone 8.1 and iOS projects. We need to create an instance of the carousel custom renderer as shown below. 
 
-Create an instance of SfCarouselRenderer in MainPage constructor of the Windows Phone and Windows Phone 8.1  project as shown 
+Create an instance of SfCarouselRenderer in MainPage constructor of the Windows Phone and WindowsPhone 8.1  project as shown 
 
 {% highlight C# %}
 
@@ -191,29 +191,64 @@ Set the RotationAngle property to decide the angle in which items should be rota
 
 {% endtabs %}
 
-## Setting ItemsSource
+## Setting DataSource
 
-SfCarousel items can be populated with a collection of image data. You can assign a collection to it. Collections include arrays, Lists and DataTables.
+SfCarousel items can be populated with a collection of image data. You can assign a collection to it. Collections include arrays, Lists and DataTables.For example you may wants to create a carousel model.
 
-{% tabs %}
+The carousel model looks as follows
 
 {% highlight C# %}
 
-	ArrayList temp=new ArrayList();
-	For(int i=1;i<18;i++)
-	{
-	SfCarouselItem item =new SfCarouselItem();
-	item.Image="image"+i;
-	temp.add(item);
-	}
-	carousel.ItemsSource=temp;
+	public CarouselModel(string imagestr)
+        {
+            Image = imagestr;
+        }
+        private string _image;
+
+        public string Image
+        {
+            get { return _image; }
+            set { _image = value; }
+        }
 
 {% endhighlight %}
+
+Create and populate carousel collection as follows
+
+{% highlight C# %}
+
+	carousel.DataSource = GetDataSource();
+	List<CarouselModel> GetDataSource()
+    {
+	List<CarouselModel> list = new List<CarouselModel>();
+
+	list.Add(new CarouselModel("image1.png"));
+    list.Add(new CarouselModel("image2.png"));
+	list.Add(new CarouselModel("image3.png"));
+    list.Add(new CarouselModel("image4.png"));
+    list.Add(new CarouselModel("image5.png"));
+	}
+
+{% endhighlight %}
+
+## Setting ItemTemplate
+
+ItemTemplate property of Carousel control is used to customize the contents of carousel items.
 
 {% highlight xaml %}
 
-	<carousel:SfCarousel x:Name="carousel" ItemsSource="{Binding}" />
-	
-{% endhighlight %}
+	<local:SamplePage.Resources>
+    	<ResourceDictionary>
+     	 	<DataTemplate x:Key="itemTemplate">
+       	 		<Image Source="{Binding Image}" 
+					Aspect="AspectFit"/>
+      		</DataTemplate>
+    	</ResourceDictionary>
+ 	 </local:SamplePage.Resources>
 
-{% endtabs %}
+	<local:SamplePage.ContentView >
+		<carousel:SfCarousel x:Name="carousel"  ItemTemplate="{StaticResource itemTemplate}"    HeightRequest="400" WidthRequest="800" />
+	</local:SamplePage.ContentView >
+
+
+{% endhighlight %}

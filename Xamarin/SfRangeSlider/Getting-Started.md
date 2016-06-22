@@ -44,11 +44,11 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>Android</td>
-<td>android\Syncfusion.SfRangeSlider.Android.dll<br/>android\Syncfusion.SfRangeSlider.XForms.Android.dll</td>
+<td>android\Syncfusion.SfRangeSlider.Android.dll<br/>android\Syncfusion.SfRangeSlider.XForms.Android.dll<br/>android\Syncfusion.SfRangeSlider.XForms.dll</td>
 </tr>
 <tr>
 <td>iOS (Unified)</td>
-<td>ios-unified\Syncfusion.SfRangeSlider.iOS.dll<br/>ios-unified\Syncfusion.SfRangeSlider.XForms.iOS.dll<br/>ios-unified\Syncfusion.SfRangeSlider.XForms.dll</td>
+<td>iOS-unified\Syncfusion.SfRangeSlider.iOS.dll<br/>iOS-unified\Syncfusion.SfRangeSlider.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfRangeSlider.XForms.dll</td>
 </tr>
 <tr>
 <td>Windows Phone</td>
@@ -60,7 +60,7 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>UWP</td>
-<td>uwp\Syncfusion.SfRangeSlider.UWP.dll<br/>uwp\Syncfusion.SfRangeSlider.XForms.dll<br/>uwp\Syncfusion.SfRangeSlider.XForms.UWP.dll</td>
+<td>uwp\Syncfusion.SfInput.UWP.dll<br/>uwp\Syncfusion.SfShared.UWP.dll<br/>uwp\Syncfusion.SfRangeSlider.XForms.dll<br/>uwp\Syncfusion.SfRangeSlider.XForms.UWP.dll</td>
 </tr>
 </table>
 
@@ -133,7 +133,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% highlight xaml %}
 
-	<range:SfRangeSlider />
+	<range:SfRangeSlider x:Name="rangeSlider"/>
 	
 {% endhighlight %}
 

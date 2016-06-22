@@ -46,15 +46,15 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>Android</td>
-<td>android\Syncfusion.SfRating.Android.dll<br/>android\Syncfusion.SfRating.XForms.Android.dll</td>
+<td>android\Syncfusion.SfRating.Android.dll<br/>android\Syncfusion.SfRating.XForms.Android.dll<br/>android\Syncfusion.SfRating.XForms.dll</td>
 </tr>
 <tr>
 <td>iOS (Classic)</td>
-<td>ios\Syncfusion.SfRating.iOS.dll<br/>ios\Syncfusion.SfRating.XForms.iOS.dll<br/>ios\Syncfusion.SfRating.XForms.dll</td>
+<td>iOS\Syncfusion.SfRating.iOS.dll<br/>iOS\Syncfusion.SfRating.XForms.iOS.dll<br/>iOS\Syncfusion.SfRating.XForms.dll</td>
 </tr>
 <tr>
 <td>iOS (Unified)</td>
-<td>ios-unified\Syncfusion.SfRating.iOS.dll<br/>ios-unified\Syncfusion.SfRating.XForms.iOS.dll<br/>ios-unified\Syncfusion.SfRating.XForms.dll</td>
+<td>iOS-unified\Syncfusion.SfRating.iOS.dll<br/>iOS-unified\Syncfusion.SfRating.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfRating.XForms.dll</td>
 </tr>
 <tr>
 <td>Windows Phone</td>
@@ -70,7 +70,7 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>UWP</td>
-<td>uwp\Syncfusion.SfRating.UWP.dll<br/>uwp\Syncfusion.SfRating.XForms.dll<br/>uwp\Syncfusion.SfRating.XForms.UWP.dll</td>
+<td>uwp\Syncfusion.SfInput.UWP.dll<br/>uwp\Syncfusion.SfShared.UWP.dll<br/>uwp\Syncfusion.SfRating.XForms.dll<br/>uwp\Syncfusion.SfRating.XForms.UWP.dll</td>
 </tr>
 </table>
 
@@ -144,7 +144,7 @@ The Rating control is configured entirely in C# code or by using XAML markup. Th
 
 {% highlight xaml %}
 
-	<rating:SfRating />
+	<rating:SfRating x:Name="rating" />
 	
 {% endhighlight %}
 

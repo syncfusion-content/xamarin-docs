@@ -15,13 +15,13 @@ The value of the Digital Characters is scaled by altering the width of the digit
 
 {% highlight c# %}
 
-	sfDigitalGauge.CharacterWidth = 50;
+	digitalgauge.CharacterWidth = 50;
 
 {% endhighlight %}
 
 {% highlight xaml %}
 
-	<gauge:SfDigitalGauge x:Name="sfdigitalgauge" CharacterWidth="50" />
+	<gauge:SfDigitalGauge x:Name="digitalgauge" CharacterWidth="50" />
 
 {% endhighlight %}
 

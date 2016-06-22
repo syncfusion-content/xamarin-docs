@@ -45,15 +45,15 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>Android</td>
-<td>android\Syncfusion.SfAutoComplete.Android.dll<br/>android\Syncfusion.SfAutoComplete.XForms.Android.dll</td>
+<td>android\Syncfusion.SfAutoComplete.Android.dll<br/>android\Syncfusion.SfAutoComplete.XForms.Android.dll<br/>android\Syncfusion.SfAutoComplete.XForms.dll</td>
 </tr>
 <tr>
 <td>iOS (Classic)</td>
-<td>ios\Syncfusion.SfAutoComplete.iOS.dll<br/>ios\Syncfusion.SfAutoComplete.XForms.iOS.dll<br/>ios\Syncfusion.SfAutoComplete.XForms.dll</td>
+<td>iOS\Syncfusion.SfAutoComplete.iOS.dll<br/>iOS\Syncfusion.SfAutoComplete.XForms.iOS.dll<br/>iOS\Syncfusion.SfAutoComplete.XForms.dll</td>
 </tr>
 <tr>
 <td>iOS (Unified)</td>
-<td>ios-unified\Syncfusion.SfAutoComplete.iOS.dll<br/>ios-unified\Syncfusion.SfAutoComplete.XForms.iOS.dll<br/>ios-unified\Syncfusion.SfAutoComplete.XForms.dll</td>
+<td>iOS-unified\Syncfusion.SfAutoComplete.iOS.dll<br/>iOS-unified\Syncfusion.SfAutoComplete.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfAutoComplete.XForms.dll</td>
 </tr>
 <tr>
 <td>Windows Phone</td>
@@ -69,7 +69,7 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>UWP</td>
-<td>uwp\Syncfusion.SfAutoComplete.UWP.dll<br/>uwp\Syncfusion.SfAutoComplete.XForms.dll<br/>uwp\Syncfusion.SfAutoComplete.XForms.UWP.dll</td>
+<td>uwp\Syncfusion.SfInput.UWP.dll<br/>uwp\Syncfusion.SfShared.UWP.dll<br/>uwp\Syncfusion.SfAutoComplete.XForms.dll<br/>uwp\Syncfusion.SfAutoComplete.XForms.UWP.dll</td>
 </tr>
 </table>
 
@@ -141,7 +141,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% highlight xaml %}
 
-	<autocomplete:SfAutoComplete/>
+	<autocomplete:SfAutoComplete x:Name="countryAutoComplete"/>
 	
 {% endhighlight %}
 
@@ -159,7 +159,7 @@ You can set the suggestion list to the AutoComplete using the AutoCompleteSource
 	countryName.Add("Afghanistan");
 	countryName.Add("Akrotiri");
 	countryName.Add("Albania");
-	sfAutoComplete.AutoCompleteSource = countryName;
+	countryAutoComplete.AutoCompleteSource = countryName;
 
 {% endhighlight %}
 

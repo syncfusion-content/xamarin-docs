@@ -89,8 +89,8 @@ N> By default the minimum property value is 0 and maximum property value is 100.
 
 {% highlight C# %}
 
-	numericUpDown.Minimum = 10;
-	numerucUpDown.Maximum = 50
+	numericUpDown.Minimum = 0;
+	numerucUpDown.Maximum = 100
 
 {% endhighlight %}
 

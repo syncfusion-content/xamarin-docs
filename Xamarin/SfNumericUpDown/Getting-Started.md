@@ -44,11 +44,11 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>Android</td>
-<td>android\Syncfusion.SfNumericUpDown.Android.dll<br/>android\Syncfusion.SfNumericUpDown.XForms.Android.dll</td>
+<td>android\Syncfusion.SfNumericUpDown.Android.dll<br/>android\Syncfusion.SfNumericUpDown.XForms.Android.dll<br/>android\Syncfusion.SfNumericUpDown.XForms.dll</td>
 </tr>
 <tr>
 <td>iOS (Unified)</td>
-<td>ios-unified\Syncfusion.SfNumericUpDown.iOS.dll<br/>ios-unified\Syncfusion.SfNumericUpDown.XForms.iOS.dll<br/>ios-unified\Syncfusion.SfNumericUpDown.XForms.dll</td>
+<td>iOS-unified\Syncfusion.SfNumericUpDown.iOS.dll<br/>iOS-unified\Syncfusion.SfNumericUpDown.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfNumericUpDown.XForms.dll</td>
 </tr>
 <tr>
 <td>Windows Phone</td>
@@ -64,7 +64,7 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>UWP</td>
-<td>uwp\Syncfusion.SfNumericUpDown.UWP.dll<br/>uwp\Syncfusion.SfNumericUpDown.XForms.dll<br/>uwp\Syncfusion.SfNumericUpDown.XForms.UWP.dll</td>
+<td>uwp\Syncfusion.SfInput.UWP.dll<br/>uwp\Syncfusion.SfShared.UWP.dll<br/>uwp\Syncfusion.SfNumericUpDown.XForms.dll<br/>uwp\Syncfusion.SfNumericUpDown.XForms.UWP.dll</td>
 </tr>
 </table>
 
@@ -140,7 +140,7 @@ The NumericUpDown control configured entirely in C# code or by using XAML markup
 
 {% highlight xaml %}
 
-	<numeric:SfNumericUpDown />
+	<numeric:SfNumericUpDown x:Name="numericUpDown"/>
 	
 {% endhighlight %}
 

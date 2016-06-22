@@ -44,11 +44,11 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>Android</td>
-<td>android\Syncfusion.SfNumericTextBox.Android.dll<br/>android\Syncfusion.SfNumericTextBox.XForms.Android.dll</td>
+<td>android\Syncfusion.SfNumericTextBox.Android.dll<br/>android\Syncfusion.SfNumericTextBox.XForms.Android.dll<br/>android\Syncfusion.SfNumericTextBox.XForms.dll</td>
 </tr>
 <tr>
 <td>iOS (Unified)</td>
-<td>ios-unified\Syncfusion.SfNumericTextBox.iOS.dll<br/>ios-unified\Syncfusion.SfNumericTextBox.XForms.iOS.dll<br/>ios-unified\Syncfusion.SfNumericTextBox.XForms.dll</td>
+<td>iOS-unified\Syncfusion.SfNumericTextBox.iOS.dll<br/>iOS-unified\Syncfusion.SfNumericTextBox.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfNumericTextBox.XForms.dll</td>
 </tr>
 <tr>
 <td>Windows Phone</td>
@@ -64,7 +64,7 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>UWP</td>
-<td>uwp\Syncfusion.SfNumericTextBox.UWP.dll<br/>uwp\Syncfusion.SfNumericTextBox.XForms.dll<br/>uwp\Syncfusion.SfNumericTextBox.XForms.UWP.dll</td>
+<td>uwp\Syncfusion.SfInput.UWP.dll<br/>uwp\Syncfusion.SfShared.UWP.dll<br/>uwp\Syncfusion.SfNumericTextBox.XForms.dll<br/>uwp\Syncfusion.SfNumericTextBox.XForms.UWP.dll</td>
 </tr>
 </table>
 
@@ -138,7 +138,7 @@ The NumericTextBox control configured entirely in C# code or by using XAML marku
 
 {% highlight xaml %}
 
-	<numeric:SfNumericTextBox />
+	<numeric:SfNumericTextBox x:Name="numericTextBox" />
 	
 {% endhighlight %}
 

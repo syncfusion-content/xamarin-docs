@@ -44,15 +44,15 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>Android</td>
-<td>android\Syncfusion.SfGauge.Android.dll<br/>android\Syncfusion.SfGauge.XForms.Android.dll</td>
+<td>android\Syncfusion.SfGauge.Android.dll<br/>android\Syncfusion.SfGauge.XForms.Android.dll<br/>android\Syncfusion.SfGauge.XForms.dll</td>
 </tr>
 <tr>
 <td>iOS (Classic)</td>
-<td>ios\Syncfusion.SfGauge.iOS.dll<br/>ios\Syncfusion.SfGauge.XForms.iOS.dll<br/>ios\Syncfusion.SfGauge.XForms.dll</td>
+<td>iOS\Syncfusion.SfGauge.iOS.dll<br/>iOS\Syncfusion.SfGauge.XForms.iOS.dll<br/>iOS\Syncfusion.SfGauge.XForms.dll</td>
 </tr>
 <tr>
 <td>iOS (Unified)</td>
-<td>ios-unified\Syncfusion.SfGauge.iOS.dll<br/>ios-unified\Syncfusion.SfGauge.XForms.iOS.dll<br/>ios-unified\Syncfusion.SfGauge.XForms.dll</td>
+<td>iOS-unified\Syncfusion.SfGauge.iOS.dll<br/>iOS-unified\Syncfusion.SfGauge.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfGauge.XForms.dll</td>
 </tr>
 <tr>
 <td>Windows Phone</td>
@@ -136,13 +136,13 @@ The DigitalGauge control is configured entirely in C# code or by using XAML mark
 
 {% highlight C# %}
 
-	SfDigitalGauge sfdigitalgauge = new SfDigitalGauge(); 
+	SfDigitalGauge digitalgauge = new SfDigitalGauge(); 
 
 {% endhighlight %}
 
 {% highlight xaml %}
 
-	<gauge:SfDigitalGauge />
+	<gauge:SfDigitalGauge x:Name="digitalgauge" />
 	
 {% endhighlight %}
 
@@ -154,22 +154,22 @@ The DigitalGauge control is configured entirely in C# code or by using XAML mark
 
 {% highlight c# %}
 
-	SfDigitalGauge sfDigitalGauge = new SfDigitalGauge ();
-	sfDigitalGauge.Value =  DateTime.Now.ToString ("HH mm ss");
-	sfDigitalGauge.CharacterHeight = 50;
-	sfDigitalGauge.CharacterWidth= 25;
-	sfDigitalGauge.SegmentStrokeWidth = 3;
-	sfDigitalGauge.CharacterType = CharacterType.SegmentSeven;
-	sfDigitalGauge.DimmedSegmentAlpha = 30;
-	sfDigitalGauge.BackgroundColor = Color.FromRgb (235, 235, 235);
-	sfDigitalGauge.CharacterStrokeColor = Color.FromRgb (20,108,237);
-	sfDigitalGauge.DimmedSegmentColor = Color.FromRgb (20,108,237);
+	SfDigitalGauge digitalgauge = new SfDigitalGauge ();
+	digitalgauge.Value =  DateTime.Now.ToString ("HH mm ss");
+	digitalgauge.CharacterHeight = 50;
+	digitalgauge.CharacterWidth= 25;
+	digitalgauge.SegmentStrokeWidth = 3;
+	digitalgauge.CharacterType = CharacterType.SegmentSeven;
+	digitalgauge.DimmedSegmentAlpha = 30;
+	digitalgauge.BackgroundColor = Color.FromRgb (235, 235, 235);
+	digitalgauge.CharacterStrokeColor = Color.FromRgb (20,108,237);
+	digitalgauge.DimmedSegmentColor = Color.FromRgb (20,108,237);
 
 {% endhighlight %}
 
 {% highlight xaml %}
 
-	<gauge:SfDigitalGauge x:Name="sfdigitalgauge" SegmentStrokeWidth="3" CharacterHeight="50" CharacterWidth="25" CharacterType="SegmentSeven" DimmedSegmentAlpha="30" />
+	<gauge:SfDigitalGauge x:Name="digitalgauge" SegmentStrokeWidth="3" CharacterHeight="50" CharacterWidth="25" CharacterType="SegmentSeven" DimmedSegmentAlpha="30" />
 
 {% endhighlight %}
 
@@ -183,13 +183,13 @@ The DigitalGauge control is configured entirely in C# code or by using XAML mark
 
 {% highlight C# %}
 
-    sfDigitalGauge.Value =  DateTime.Now.ToString ("HH mm ss");
+    digitalgauge.Value =  DateTime.Now.ToString ("HH mm ss");
 
 {% endhighlight %}
 
 {% highlight xaml %}
 
-	<gauge:SfDigitalGauge x:Name="sfdigitalgauge" Value="HH mm ss" />
+	<gauge:SfDigitalGauge x:Name="digitalgauge" Value="{Binding}" />
 
 {% endhighlight %}
 

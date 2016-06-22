@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains how to create the LinearGauge and configure its properties.This section provides overview for working with LinearGauge for Xamarin.Forms. It walks through the entire process of creating a LinearGauge.
+This section explains how to create the SfLinearGauge and configure its properties.This section provides overview for working with SfLinearGauge for Xamarin.Forms. It walks through the entire process of creating a SfLinearGauge.
 
 ![](images/LinearGauge.png)
 
@@ -44,18 +44,18 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>Android</td>
-<td>android\Syncfusion.SfGauge.Android.dll<br/>android\Syncfusion.SfGauge.XForms.Android.dll</td>
+<td>android\Syncfusion.SfGauge.Android.dll<br/>android\Syncfusion.SfGauge.XForms.Android.dll<br/>android\Syncfusion.SfGauge.XForms.dll</td>
 </tr>
 <tr>
 <td>iOS (Unified)</td>
-<td>ios-unified\Syncfusion.SfGauge.iOS.dll<br/>ios-unified\Syncfusion.SfGauge.XForms.iOS.dll<br/>ios-unified\Syncfusion.SfGauge.XForms.dll</td>
+<td>iOS-unified\Syncfusion.SfGauge.iOS.dll<br/>iOS-unified\Syncfusion.SfGauge.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfGauge.XForms.dll</td>
 </tr>
 <tr>
-<td>WindowsPhone</td>
+<td>Windows Phone</td>
 <td>wp8\Syncfusion.SfGauge.WP8.dll<br/>wp8\Syncfusion.SfGauge.XForms.dll<br/>wp8\Syncfusion.SfGauge.XForms.WinPhone.dll</td>
 </tr>
 <tr>
-<td>WindowsPhone 8.1</td>
+<td>Windows Phone 8.1</td>
 <td>wp81\Syncfusion.SfGauge.WP.dll<br/>wp81\Syncfusion.SfGauge.XForms.dll<br/>wp81\Syncfusion.SfGauge.XForms.WinPhone.dll</td>
 </tr>
 <tr>
@@ -68,9 +68,9 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 </table>
 
-Currently an additional step is required for Windows Phone, WindowsPhone 8.1 and iOS projects. We need to create an instance of the lineargauge custom renderer as shown below. 
+Currently an additional step is required for Windows Phone, Windows Phone 8.1 and iOS projects. We need to create an instance of the lineargauge custom renderer as shown below. 
 
-Create an instance of SfLinearGaugeRenderer in MainPage constructor of the Windows Phone and  WindowsPhone 8.1 project as shown 
+Create an instance of SfLinearGaugeRenderer in MainPage constructor of the Windows Phone and  Windows Phone 8.1 project as shown 
 
 {% highlight C# %}
 
@@ -106,7 +106,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ## Adding and Configuring the LinearGauge
 
-The LinearGauge control configured entirely in C# code or by using XAML markup.The following steps explain on how to create an LinearGauge and configure its elements,
+The SfLinearGauge control configured entirely in C# code or by using XAML markup.The following steps explain on how to create an SfLinearGauge and configure its elements,
 
 * Adding reference to linearGauge.
 
@@ -132,13 +132,13 @@ The LinearGauge control configured entirely in C# code or by using XAML markup.T
 
 {% highlight c# %}
 
-   SfLinearGauge sfLinearGauge=new SfLinearGauge();
+   SfLinearGauge linearGauge=new SfLinearGauge();
 
 {% endhighlight %}
 
 {% highlight xaml %}
 
-	<gauge:SfLinearGauge />
+	<gauge:SfLinearGauge x:Name="linearGauge" />
 	
 {% endhighlight %}
 
@@ -152,7 +152,7 @@ We will add one or more scale value to linear gauge. Before adding that scales w
 
 {% highlight c# %}
 
-    //Adding scale to Lineargauge.
+    //Adding scale to SfLinearGauge.
 	LinearScale scale=new LinearScale();
 	scale.MinimumValue=0;
 	scale.MaximumValue=100;

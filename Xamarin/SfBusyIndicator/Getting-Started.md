@@ -44,18 +44,18 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>Android</td>
-<td>android\Syncfusion.SfBusyIndicator.Android.dll<br/>android\Syncfusion.SfBusyIndicator.XForms.Android.dll</td>
+<td>android\Syncfusion.SfBusyIndicator.Android.dll<br/>android\Syncfusion.SfBusyIndicator.XForms.Android.dll<br/>android\Syncfusion.SfBusyIndicator.XForms.dll</td>
 </tr>
 <tr>
 <td>iOS (Unified)</td>
-<td>ios-unified\Syncfusion.SfBusyIndicator.iOS.dll<br/>ios-unified\Syncfusion.SfBusyIndicator.XForms.iOS.dll<br/>ios-unified\Syncfusion.SfBusyIndicator.XForms.dll</td>
+<td>iOS-unified\Syncfusion.SfBusyIndicator.iOS.dll<br/>iOS-unified\Syncfusion.SfBusyIndicator.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfBusyIndicator.XForms.dll</td>
 </tr>
 <tr>
-<td>WindowsPhone</td>
+<td>Windows Phone</td>
 <td>wp8\Syncfusion.SfInput.WP8.dll<br/>wp8\Syncfusion.SfShared.WP8.dll<br/>wp8\Syncfusion.SfBusyIndicator.XForms.dll<br/>wp8\Syncfusion.SfBusyIndicator.XForms.WinPhone.dll</td>
 </tr>
 <tr>
-<td>WindowsPhone 8.1</td>
+<td>Windows Phone 8.1</td>
 <td>wp81\Syncfusion.SfInput.WP.dll<br/>wp81\Syncfusion.SfShared.WP.dll<br/>wp81\Syncfusion.SfBusyIndicator.XForms.dll<br/>wp81\Syncfusion.SfBusyIndicator.XForms.WinPhone.dll</td>
 </tr>
 <tr>
@@ -64,13 +64,13 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>UWP</td>
-<td>uwp\Syncfusion.SfBusyIndicator.UWP.dll<br/>uwp\Syncfusion.SfBusyIndicator.XForms.dll<br/>uwp\Syncfusion.SfBusyIndicator.XForms.UWP.dll</td>
+<td>uwp\Syncfusion.SfInput.UWP.dll<br/>uwp\Syncfusion.SfShared.UWP.dll<br/>uwp\Syncfusion.SfBusyIndicator.XForms.dll<br/>uwp\Syncfusion.SfBusyIndicator.XForms.UWP.dll</td>
 </tr>
 </table>
 
-Currently an additional step is required for Windows Phone, WindowsPhone 8.1 and iOS projects. We need to create an instance of the busyindicator custom renderer as shown below. 
+Currently an additional step is required for Windows Phone, Windows Phone 8.1 and iOS projects. We need to create an instance of the busyindicator custom renderer as shown below. 
 
-Create an instance of SfBusyIndicatorRenderer in MainPage constructor of the Windows Phone and WindowsPhone 8.1  project as shown 
+Create an instance of SfBusyIndicatorRenderer in MainPage constructor of the Windows Phone and Windows Phone 8.1  project as shown 
 
 {% highlight C# %}
 

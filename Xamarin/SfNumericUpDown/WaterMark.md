@@ -14,13 +14,13 @@ The `WaterMark` property can be used to provide a hint that helps the user to ge
 
 {% highlight C# %}
 
-	numericUpDown.Watermark = "Principal Amount";
+	numericUpDown.Watermark = "NumericUpDown";
 	
 {% endhighlight %}
 
 {% highlight xaml %}
 
-	<numeric:SfNumericUpDown x:Name="numericUpDown" Watermark="Principal Amount"/>
+	<numeric:SfNumericUpDown x:Name="numericUpDown" Watermark="NumericUpDown"/>
 	
 {% endhighlight %}
 

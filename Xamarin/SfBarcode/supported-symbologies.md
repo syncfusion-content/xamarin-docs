@@ -118,7 +118,7 @@ Code 39 barcode
 
 {% endhighlight %}
 
-![](supported-symbologies_images/code39_extended/Code39Extended.png)
+![](supported-symbologies_images/code39Extended/Code39Extended.png)
 
 Extended Code 39 barcode
 
@@ -157,7 +157,7 @@ Code93 barcode
 
 {% endhighlight %}
 
-![](supported-symbologies_images/code93_extended/Code93Extended.png)
+![](supported-symbologies_images/code93Extended/Code93Extended.png)
 
 Code93 Extended barcode
 

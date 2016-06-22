@@ -44,11 +44,11 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>Android</td>
-<td>android\Syncfusion.SfCalendar.Android.dll<br/>android\Syncfusion.SfCalendar.XForms.Android.dll<br/>android\Syncfusion.SfCalendar.XForms.dll</td>
+<td>android\Syncfusion.SfCalendar.Android.dll<br/>android\Syncfusion.SfCalendar.XForms.Android.dll</td>
 </tr>
 <tr>
 <td>iOS (Unified)</td>
-<td>iOS-unified\Syncfusion.SfCalendar.iOS.dll<br/>iOS-unified\Syncfusion.SfCalendar.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfCalendar.XForms.dll</td>
+<td>ios-unified\Syncfusion.SfCalendar.iOS.dll<br/>ios-unified\Syncfusion.SfCalendar.XForms.iOS.dll<br/>ios-unified\Syncfusion.SfCalendar.XForms.dll</td>
 </tr>
 <tr>
 <td>Windows Phone</td>
@@ -64,7 +64,7 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>UWP</td>
-<td>uwp\Syncfusion.SfInput.UWP.dll<br/>uwp\Syncfusion.SfShared.UWP.dll<br/>uwp\Syncfusion.SfCalendar.XForms.dll<br/>uwp\Syncfusion.SfCalendar.XForms.UWP.dll</td>
+<td>uwp\Syncfusion.SfShared.UWP.dll<br/>uwp\Syncfusion.SfInput.UWP.dll<br/>uwp\Syncfusion.SfCalendar.XForms.dll<br/>uwp\Syncfusion.SfCalendar.XForms.UWP.dll</td>
 </tr>
 </table>
 
@@ -130,13 +130,13 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% highlight c# %}
 
-	SfCalendar calendar=new SfCalendar();
+	SfCalendar sfCalendar=new SfCalendar();
 	
 {% endhighlight %}
 
 {% highlight xaml %}
 
-	<CalendarSample:SfCalendar x:Name="calendar" />
+	<CalendarSample:SfCalendar />
 	
 {% endhighlight %}
 

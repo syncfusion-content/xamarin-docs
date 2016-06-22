@@ -85,14 +85,7 @@ public class CalcData : ICalcData
     {
         object value = null;
 
-        var key = string.Empty;
-
-        if (col == 1)
-           key = "A" + row;
-        else if (col == 2)
-           key = "B" + row;
-        else if (col == 3)
-           key = "C" + row;
+        var key = RangeInfo.GetAlphaLabel(col) + row;
 
         this.values.TryGetValue(key, out value);
 
@@ -107,14 +100,7 @@ public class CalcData : ICalcData
     /// <param name="col">ColumnIndex</param>
     public void SetValueRowCol (object value, int row, int col)
     {
-        var key = string.Empty;
-
-        if (col == 1)
-           key = "A" + row;
-        else if (col == 2)
-           key = "B" + row;
-        else if (col == 3)
-           key = "C" + row;
+        var key = RangeInfo.GetAlphaLabel(col) + row;
 
         if (!values.ContainsKey(key))
            values.Add(key, value);
@@ -256,6 +242,8 @@ The evaluation of keys can be triggered using **SetDirty** method which will com
 string result;
 
 calcQuickBase.SetDirty();
+
+// Result of below code is “60”
 
 result = calcQuickBase[“Expression”];
 

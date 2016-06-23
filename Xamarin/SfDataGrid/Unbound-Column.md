@@ -17,17 +17,17 @@ SfDataGrid allows you to add **additional columns** which are **not bound with d
                        AutoGenerateColumns="False" 
                        ItemsSource="{Binding Orders}">
     <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridUnBoundColumn 
+        <syncfusion:GridUnboundColumn 
 		                       Expression="UnitPrice*Discount"
                                HeaderText="Discount Price"
                                MappingName="DiscountPrice"
                                Format="C"   >
-        </syncfusion:GridUnBoundColumn>
+        </syncfusion:GridUnboundColumn>
     </syncfusion:SfDataGrid.Columns>
 </syncfusion:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
-this.dataGrid.Columns.Add(new GridUnBoundColumn() { HeaderText="Discount Price", MappingName="DiscountPrice", Expression="UnitPrice*Discount" });
+this.dataGrid.Columns.Add(new GridUnboundColumn() { HeaderText="Discount Price", MappingName="DiscountPrice", Expression="UnitPrice*Discount" });
 {% endhighlight %}
 {% endtabs %}
 
@@ -186,13 +186,13 @@ NOT
                        AutoGenerateColumns="False" 
                        ItemsSource="{Binding Orders}">
     <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridUnBoundColumn HeaderText="Unbound Column"
+        <syncfusion:GridUnboundColumn HeaderText="Unbound Column"
                                       MappingName="UnboundColumn" />
     </syncfusion:SfDataGrid.Columns>
 </syncfusion:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
-(this.dataGrid.Columns[3] as GridUnBoundColumn).Expression = "Discount * UnitPrice > 0" + (char)135 + "UnitPrice * Quantity > 100";
+(this.dataGrid.Columns[3] as GridUnboundColumn).Expression = "Discount * UnitPrice > 0" + (char)135 + "UnitPrice * Quantity > 100";
 {% endhighlight %}
 {% endtabs %}
 
@@ -206,7 +206,7 @@ You can format the values of other columns and display the formatted value in un
                        AutoGenerateColumns="False" 
                        ItemsSource="{Binding Orders}">
     <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridUnBoundColumn Format="'{Discount}% for {OrderID}'"
+        <syncfusion:GridUnboundColumn Format="'{Discount}% for {OrderID}'"
                                       HeaderText="Discount Price"
                                       MappingName="DiscountPrice"/>
     </syncfusion:SfDataGrid.Columns>
@@ -216,6 +216,6 @@ You can format the values of other columns and display the formatted value in un
 
 {% tabs %}
 {% highlight c# %}
-this.dataGrid.Columns.Add(new GridUnBoundColumn() { HeaderText = "Discount Price", MappingName = "DiscountPrice", Format = "'{Discount}% for {OrderID}'" });
+this.dataGrid.Columns.Add(new GridUnboundColumn() { HeaderText = "Discount Price", MappingName = "DiscountPrice", Format = "'{Discount}% for {OrderID}'" });
 {% endhighlight %}
 {% endtabs %}

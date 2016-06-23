@@ -11,7 +11,7 @@ documentation: ug
 
 ## Multiple Series
 
-You can add multiple series to `Series` property of `SfChart` class.
+You can add multiple series to [`Series`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries.html) property of [`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html) class.
 
 {% tabs %} 
 
@@ -22,7 +22,7 @@ You can add multiple series to `Series` property of `SfChart` class.
 
 	<chart:ColumnSeries ItemsSource ="{Binding Data }" XBindingPath="Country"
 	 YBindingPath="Value"/>
-
+ 
 	<chart:ColumnSeries ItemsSource ="{Binding Data1}" XBindingPath="Country"
 	 YBindingPath="Value"/>
 
@@ -76,7 +76,7 @@ chart.Series.Add(columnSeries2);
 
 ## Combination Series
 
-`SfChart` allows you to render the combination of different types of series.
+[`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html) allows you to render the combination of different types of series.
 
 {% tabs %} 
 
@@ -130,7 +130,7 @@ chart.Series.Add(lineSeries);
 * Bar, StackingBar, and StackingBar100 cannot be combined with the other Cartesian type series.
 * Cartesian type series cannot be combined with Accumulation series (pie, doughnut, funnel, and pyramid).
 
-When the combination of Cartesian and Accumulation series types are added to the `Series` property, the series which are similar to the first series will be rendered and other series will be ignored. Following code snippet illustrates this.
+When the combination of Cartesian and Accumulation series types are added to the [`Series`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries.html) property, the series which are similar to the first series will be rendered and other series will be ignored. Following code snippet illustrates this.
 
 {% tabs %} 
 
@@ -182,7 +182,7 @@ chart.Series.Add(pieSeries);
 
 ## Grouping Stacked Series
 
-You can group and stack the similar stacked series types using `GroupingLabel` property of stacked series. The stacked series which contains the same `GroupingLabel` will be stacked in a single group.
+You can group and stack the similar stacked series types using [`GroupingLabel`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.StackingSeriesBase~GroupingLabel.html) property of stacked series. The stacked series which contains the same [`GroupingLabel`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.StackingSeriesBase~GroupingLabel.html) will be stacked in a single group.
 
 {% tabs %} 
 

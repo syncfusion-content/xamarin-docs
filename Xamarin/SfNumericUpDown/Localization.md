@@ -2,7 +2,7 @@
 layout: post
 title: Localization in Syncfusion NumericUpDown control for Xamarin.Forms
 description: Learn how to localize the NumericUpDown control
-platform: Xamarin.Forms
+platform: Xamarin
 control: NumericUpDown
 documentation: ug
 ---

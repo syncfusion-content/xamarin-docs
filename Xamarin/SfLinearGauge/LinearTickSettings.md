@@ -2,7 +2,7 @@
 layout: post
 title: Linear Tick Settings in LinearGauge
 description: Learn how to define settings of linear ticks in LinearGauge
-platform: Xamarin.Forms
+platform: Xamarin
 control: LinearGauge
 documentation: ug
 ---

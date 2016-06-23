@@ -2,7 +2,7 @@
 layout: post
 title: Populating Events in Syncfusion Calendar control for Android
 description: Learn how to populate events inside a cell and inline events descriptions
-platform: Xamarin.Forms
+platform: Xamarin
 control: Calendar
 documentation: ug
 ---

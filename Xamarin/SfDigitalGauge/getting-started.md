@@ -47,10 +47,6 @@ You can then add the assembly references to the respective projects as shown bel
 <td>android\Syncfusion.SfGauge.Android.dll<br/>android\Syncfusion.SfGauge.XForms.Android.dll<br/>android\Syncfusion.SfGauge.XForms.dll</td>
 </tr>
 <tr>
-<td>iOS (Classic)</td>
-<td>iOS\Syncfusion.SfGauge.iOS.dll<br/>iOS\Syncfusion.SfGauge.XForms.iOS.dll<br/>iOS\Syncfusion.SfGauge.XForms.dll</td>
-</tr>
-<tr>
 <td>iOS (Unified)</td>
 <td>iOS-unified\Syncfusion.SfGauge.iOS.dll<br/>iOS-unified\Syncfusion.SfGauge.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfGauge.XForms.dll</td>
 </tr>

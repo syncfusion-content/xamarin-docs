@@ -2,7 +2,7 @@
 layout: post
 title: BlackOut Dates support in Syncfusion Calendar control for Xamarin.Forms
 description: Learn how to set min and max date in calendar
-platform: Xamarin.Forms
+platform: Xamarin
 control: Calendar
 documentation: ug
 ---
@@ -71,7 +71,7 @@ By invoking the `AddDatesInPast` method, all past dates will be blacked out till
 
 {% highlight xaml %}
 
-	<CalendarSample:SfCalendar  x:Name="calendar" BlackoutDates="black_dates"/>
+	<CalendarSample:SfCalendar  x:Name="calendar" BlackoutDates="{Binding}"/>
 	
 {% endhighlight %}
 

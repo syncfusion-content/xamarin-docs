@@ -14,7 +14,9 @@ documentation : ug
 SfRotator items can be populated with a collection of image datas. You can assign a collection to it. Collections include arrays, Lists and DataTables.For example you may wants to create a rotator model.
 
 The Rotator model looks like as follows.
-{% highlight %}
+
+{% highlight C# %}
+	
 	public RotatorModel(string imagestr,string name)
         {
             Image = imagestr;
@@ -35,11 +37,12 @@ The Rotator model looks like as follows.
             get { return name; }
             set { name = value; }
         }
+
 {% endhighlight %}
 
 Create and populate rotator collection as follows
 
-{% highlight %}
+{% highlight C# %}
 
 	public RotatorViewModel()
         {

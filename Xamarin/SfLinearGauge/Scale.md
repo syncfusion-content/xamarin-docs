@@ -2,7 +2,7 @@
 layout: post
 title: Scale of LinearGauge in Xamarin.Forms
 description: Learn how to set maximum and minim value of lineargauge.
-platform: Xamarin.Android
+platform: Xamarin
 control: LinearGauge
 documentation: ug
 ---

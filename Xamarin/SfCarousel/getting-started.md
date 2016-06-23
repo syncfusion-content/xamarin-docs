@@ -52,15 +52,15 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>WindowsPhone</td>
-<td>wp8\Syncfusion.SfInput.WP8.dll<br/>wp8\Syncfusion.SfShared.WP8.dll<br/>wp8\Syncfusion.SfCarousel.XForms.dll<br/>wp8\Syncfusion.SfCarousel.XForms.WinPhone.dll</td>
+<td>wp8\Syncfusion.SfCarousel.WP8.dll<br/>wp8\Syncfusion.SfCarousel.XForms.dll<br/>wp8\Syncfusion.SfCarousel.XForms.WinPhone.dll</td>
 </tr>
 <tr>
 <td>WindowsPhone 8.1</td>
-<td>wp81\Syncfusion.SfInput.WP.dll<br/>wp81\Syncfusion.SfShared.WP.dll<br/>wp81\Syncfusion.SfCarousel.XForms.dll<br/>wp81\Syncfusion.SfCarousel.XForms.WinPhone.dll</td>
+<td>wp81\Syncfusion.SfCarousel.WP.dll<br/>wp81\Syncfusion.SfCarousel.XForms.dll<br/>wp81\Syncfusion.SfCarousel.XForms.WinPhone.dll</td>
 </tr>
 <tr>
 <td>WinRT</td>
-<td>winrt\Syncfusion.SfInput.WinRT.dll<br/>winrt\Syncfusion.SfShared.WinRT.dll<br/>winrt\Syncfusion.SfCarousel.XForms.dll<br/>winrt\Syncfusion.SfCarousel.XForms.WinRT.dll</td>
+<td>winrt\Syncfusion.SfCarousel.WinRT.dll<br/>winrt\Syncfusion.SfCarousel.XForms.dll<br/>winrt\Syncfusion.SfCarousel.XForms.WinRT.dll</td>
 </tr>
 <tr>
 <td>UWP</td>

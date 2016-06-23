@@ -145,7 +145,7 @@ Gets or sets the footer for the DrawerView panel in the SfNavigationDrawer contr
 
 Gets or sets the header of the DrawerView panel in the SfNavigationDrawer control using `DrawerHeaderView` property.
 
-{{% tabs %}
+{% tabs %}
 
 {% highlight c# %}
 

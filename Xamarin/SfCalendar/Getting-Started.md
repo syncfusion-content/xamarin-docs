@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with Syncfusion Calendar control for Xamarin.Forms
 description: A quick tour to initial users on Syncfusion calendar control for Xamarin.Forms platform
-platform: Xamarin.Forms
+platform: Xamarin
 control: Calendar
 documentation: ug
 ---
@@ -52,19 +52,19 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>Windows Phone</td>
-<td>wp8\Syncfusion.SfInput.WP8.dll<br/>wp8\Syncfusion.SfShared.WP8.dll<br/>wp8\Syncfusion.SfCalendar.XForms.dll<br/>wp8\Syncfusion.SfCalendar.XForms.WinPhone.dll</td>
+<td>wp8\Syncfusion.SfCalendar.WP8.dll<br/>wp8\Syncfusion.SfCalendar.XForms.dll<br/>wp8\Syncfusion.SfCalendar.XForms.WinPhone.dll</td>
 </tr>
 <tr>
 <td>Windows Phone 8.1</td>
-<td>wp81\Syncfusion.SfInput.WP.dll<br/>wp81\Syncfusion.SfShared.WP.dll<br/>wp81\Syncfusion.SfCalendar.XForms.dll<br/>wp81\Syncfusion.SfCalendar.XForms.WinPhone.dll</td>
+<td>wp81\Syncfusion.SfCalendar.WP.dll<br/>wp81\Syncfusion.SfCalendar.XForms.dll<br/>wp81\Syncfusion.SfCalendar.XForms.WinPhone.dll</td>
 </tr>
 <tr>
 <td>WinRT</td>
-<td>winrt\Syncfusion.SfInput.WinRT.dll<br/>winrt\Syncfusion.SfShared.WinRT.dll<br/>winrt\Syncfusion.SfCalendar.XForms.dll<br/>winrt\Syncfusion.SfCalendar.XForms.WinRT.dll</td>
+<td>winrt\Syncfusion.SfCalendar.WinRT.dll<br/>winrt\Syncfusion.SfCalendar.XForms.dll<br/>winrt\Syncfusion.SfCalendar.XForms.WinRT.dll</td>
 </tr>
 <tr>
 <td>UWP</td>
-<td>uwp\Syncfusion.SfShared.UWP.dll<br/>uwp\Syncfusion.SfInput.UWP.dll<br/>uwp\Syncfusion.SfCalendar.XForms.dll<br/>uwp\Syncfusion.SfCalendar.XForms.UWP.dll</td>
+<td>uwp\Syncfusion.SfCalendar.UWP.dll<br/>uwp\Syncfusion.SfCalendar.XForms.dll<br/>uwp\Syncfusion.SfCalendar.XForms.UWP.dll</td>
 </tr>
 </table>
 
@@ -187,7 +187,7 @@ For instance add all the holiday dates to blackout dates property.
 
 {% highlight xaml %}
 
-	<CalendarSample:SfCalendar VerticalOptions="FillAndExpand"  x:Name="calendar" ViewMode="MonthView" BlackOutDates="black_dates" />
+	<CalendarSample:SfCalendar VerticalOptions="FillAndExpand"  x:Name="calendar" ViewMode="MonthView" BlackOutDates="{Binding}" />
 
 {% endhighlight %}
 
@@ -196,7 +196,7 @@ For instance add all the holiday dates to blackout dates property.
 
 ## Restricting Dates
 
-Set `MinDate` and `MaxDate` property to limit visible dates range. Check the [Min Max dates](http://help.syncfusion.com/android/sfcalendar/datenavigation-and-gesture#min-max-dates) section for more details.
+Set `MinDate` and `MaxDate` property to limit visible dates range. Check the [Min Max dates](http://help.syncfusion.com/xamarin/sfcalendar/datenavigation-and-gesture#min-max-dates) section for more details.
 
 {% tabs %}
 

@@ -2,7 +2,7 @@
 layout: post
 title: Orientation in LinearGauge
 description: Learn how to set Orientation in LinearGauge
-platform: Xamarin.Forms
+platform: Xamarin
 control: LinearGauge
 documentation: ug
 ---

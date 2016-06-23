@@ -2,7 +2,7 @@
 layout: post
 title: Pointers in LinearGauge
 description: Learn how to define set pointers in LinearGauge
-platform: Xamarin.Forms
+platform: Xamarin
 control: LinearGauge
 documentation: ug
 ---

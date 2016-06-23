@@ -1,8 +1,8 @@
----
+﻿---
 layout: post
 title: Title support in Syncfusion SfBusyIndicator control for Xamarin.Forms
 description: Learn how to add title description to SfBusyIndicator
-platform: Xamarin.Forms
+platform: Xamarin
 control: BusyIndicator
 documentation: ug
 ---

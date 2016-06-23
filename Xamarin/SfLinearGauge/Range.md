@@ -2,7 +2,7 @@
 layout: post
 title: Range of LinearGauge in Xamarin.Forms
 description: Learn how to add range value in LinearGauge
-platform: Xamarin.Forms
+platform: Xamarin
 control: LinearGauge
 documentation: ug
 ---

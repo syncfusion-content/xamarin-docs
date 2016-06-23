@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with Syncfusion SfBusyIndicator control for Xamarin.Forms
 description: A quick tour to initial users on Syncfusion SfBusyIndicator control for Xamarin.Forms platform
-platform: Xamarin.Forms
+platform: Xamarin
 control: BusyIndicator
 documentation: ug
 ---
@@ -52,19 +52,19 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>Windows Phone</td>
-<td>wp8\Syncfusion.SfInput.WP8.dll<br/>wp8\Syncfusion.SfShared.WP8.dll<br/>wp8\Syncfusion.SfBusyIndicator.XForms.dll<br/>wp8\Syncfusion.SfBusyIndicator.XForms.WinPhone.dll</td>
+<td>wp8\Syncfusion.SfBusyIndicator.WP8.dll<br/>wp8\Syncfusion.SfBusyIndicator.XForms.dll<br/>wp8\Syncfusion.SfBusyIndicator.XForms.WinPhone.dll</td>
 </tr>
 <tr>
 <td>Windows Phone 8.1</td>
-<td>wp81\Syncfusion.SfInput.WP.dll<br/>wp81\Syncfusion.SfShared.WP.dll<br/>wp81\Syncfusion.SfBusyIndicator.XForms.dll<br/>wp81\Syncfusion.SfBusyIndicator.XForms.WinPhone.dll</td>
+<td>wp81\Syncfusion.SfBusyIndicator.WP.dll<br/>wp81\Syncfusion.SfBusyIndicator.XForms.dll<br/>wp81\Syncfusion.SfBusyIndicator.XForms.WinPhone.dll</td>
 </tr>
 <tr>
 <td>WinRT</td>
-<td>winrt\Syncfusion.SfInput.WinRT.dll<br/>winrt\Syncfusion.SfShared.WinRT.dll<br/>winrt\Syncfusion.SfBusyIndicator.XForms.dll<br/>winrt\Syncfusion.SfBusyIndicator.XForms.WinRT.dll</td>
+<td>winrt\Syncfusion.SfBusyIndicator.WinRT.dll<br/>winrt\Syncfusion.SfBusyIndicator.XForms.dll<br/>winrt\Syncfusion.SfBusyIndicator.XForms.WinRT.dll</td>
 </tr>
 <tr>
 <td>UWP</td>
-<td>uwp\Syncfusion.SfInput.UWP.dll<br/>uwp\Syncfusion.SfShared.UWP.dll<br/>uwp\Syncfusion.SfBusyIndicator.XForms.dll<br/>uwp\Syncfusion.SfBusyIndicator.XForms.UWP.dll</td>
+<td>uwp\Syncfusion.SfBusyIndicator.UWP.dll<br/>uwp\Syncfusion.SfBusyIndicator.XForms.dll<br/>uwp\Syncfusion.SfBusyIndicator.XForms.UWP.dll</td>
 </tr>
 </table>
 

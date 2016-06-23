@@ -2,7 +2,7 @@
 layout: post
 title: Overview of Syncfusion LinearGauge control for Xamarin.Forms
 description: Overview and key features of LinearGauge control
-platform: Xamarin.Forms
+platform: Xamarin
 control: LinearGauge
 documentation: ug
 ---

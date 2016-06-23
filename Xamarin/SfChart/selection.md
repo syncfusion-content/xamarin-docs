@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Point Selection
 
-You can select a data point by tapping on it. To enable the selection feature, set [`EnableDataPointSelection`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~EnableDataPointSelection.html#) property as `true` for series. 
+You can select a data point by tapping on it. To enable the selection feature, set [`EnableDataPointSelection`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~EnableDataPointSelection.html#) property as `true` for [`Series`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries.html). 
 
 {% tabs %} 
 

@@ -38,7 +38,7 @@ pcl\Syncfusion.Calculate.Portable.dll
 * Create new BlankApp (Xamarin.Forms.Portable) application in **Xamarin Studio** or **Visual Studio** for Xamarin.Forms.
 * Add the required assembly references to the project as discussed in Assembly Deployment section.
 
-### Calculate using CalcEngine
+## Calculate using CalcEngine
 
 This section explains about calculating a simple equation (SQRT (25) * 2) using CalcEngine. The ParseAndComputeFormula method of CalcEngine will be used to parse and calculate the result of the formula or equation like below.
 
@@ -56,7 +56,7 @@ result = engine.ParseAndComputeFormula(formula);
 
 {% endhighlight %}
 
-### Calculate using ICalcData
+## Calculate using ICalcData
 
 ICalcData is used to get and set the values or references.  The values are stored into ICalcData based on cell reference. By using this, compute the expressions or equations using CalcEngine. Here, CalcData class is derived from ICalcData and refer the below code example,
 
@@ -122,7 +122,7 @@ public class CalcData : ICalcData
 
 {% endhighlight %}
 
-#### Initializing a ICalcData
+### Initializing a ICalcData
 
 A ICalcData can be integrated into CalcEngine by passing it through constructor. Similarly, the ICalcData can be registered as a worksheet for identifying the cell references.
 
@@ -136,7 +136,7 @@ engine.UseNoAmpersandQuotes = true;
 
 {% endhighlight %}
 
-#### Setting value into ICalcData
+### Setting value into ICalcData
 
 The **SetValueRowCol** method is used to set the value to ICalcData. Please refer the below code example,
 
@@ -170,7 +170,7 @@ calcData.GetValueRowCol(2, 2);
 
 {% endhighlight %}
 
-#### Performing calculation
+### Performing calculation
 
 The **ParseAndComputeFormula** is used to evaluate the formulas by get the values from ICalcData by references. Please refer the following code example,
 
@@ -209,13 +209,13 @@ This is sample output look like on iOS, Android and Windows Phone devices. You c
 ![](Images/GettingStarted1.png)
 
 
-### Calculate using CalcQuickBase
+## Calculate using CalcQuickBase
 
 The CalcQuickBase will provide options to directly parse and compute a formula, or register variable names that can later be used in more complex formulas involving these variables. CalcQuickBase is predefined derived class from ICalcData.
 
 These registered variable names are keys. For example, [C] = [A] + [B] * 10, here the names A, B, C are keys. 
 
-#### Register elements as keys
+### Register elements as keys
 
 Create a CalcQuickBase object and registered the key or virtual references like below,
 
@@ -233,7 +233,7 @@ calcQuickBase[“Expression”] = “=SUM([A], [B], [C])”;
 
 {% endhighlight %}
 
-#### Evaluating keys
+### Evaluating keys
 
 The evaluation of keys can be triggered using **SetDirty** method which will compute the formulas of the keys. The result will be taken by using the same keys,
 

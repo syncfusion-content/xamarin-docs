@@ -20,7 +20,7 @@ Vertical(Y) axis always uses numerical scale. Horizontal(X) axis supports the fo
 
 ## Category Axis
 
-[`Category axis`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CategoryAxis.html) displays text labels instead of numbers. 
+Category axis displays text labels instead of numbers. 
 
 {% tabs %} 
 
@@ -98,7 +98,7 @@ chart.PrimaryAxis = new CategoryAxis() { Interval = 2, LabelPlacement = LabelPla
 
 ## Numeric Axis
 
-[`Numeric axis`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.NumericalAxis.html) uses numerical scale and displays numbers as labels. 
+Numeric axis uses numerical scale and displays numbers as labels. 
 
 {% tabs %} 
 
@@ -289,7 +289,7 @@ chart.SecondaryAxis = new NumericalAxis() { RangePadding = NumericalPadding.Norm
 
 ## Date Time Axis
 
-[`Date time axis`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeAxis.html) uses date time scale and displays date time values as axis labels in specified format. 
+Date time axis uses date time scale and displays date time values as axis labels in specified format. 
 
 {% tabs %} 
 
@@ -463,7 +463,7 @@ chart.PrimaryAxis = new DateTimeAxis() { RangePadding = DateTimeRangePadding.Non
 
 **Round**
 
-When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeAxis~RangePadding.html) property is [`round`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeRangePadding.html), axis range will be rounded to the nearest possible date time value.
+When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeAxis~RangePadding.html) property is [`Round`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeRangePadding.html), axis range will be rounded to the nearest possible date time value.
 
 {% tabs %} 
 
@@ -515,7 +515,7 @@ chart.PrimaryAxis = new DateTimeAxis() { RangePadding = DateTimeRangePadding.Add
 
 ## Logarithmic Axis
 
-[`Logarithmic axis`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.LogarithmicAxis.html) uses logarithmic scale and displays numbers as axis labels.
+Logarithmic axis uses logarithmic scale and displays numbers as axis labels.
 
 {% tabs %} 
 
@@ -541,7 +541,7 @@ chart.SecondaryAxis = new LogarithmicAxis ();
 
 ### Customizing the logarithmic range
 
-To customize the range of log axis, you can use the [`minimum`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.LogarithmicAxis~MinimumProperty.html) and [`maximum`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.LogarithmicAxis~MaximumProperty.html) properties of [`LogarithmicAxis`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.LogarithmicAxis.html). By default,nice range will be calculated automatically based on the provided data.
+To customize the range of log axis, you can use the [`Minimum`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.LogarithmicAxis~MinimumProperty.html) and [`Maximum`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.LogarithmicAxis~MaximumProperty.html) properties of [`LogarithmicAxis`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.LogarithmicAxis.html). By default,nice range will be calculated automatically based on the provided data.
 
 {% tabs %} 
 

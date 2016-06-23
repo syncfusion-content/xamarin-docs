@@ -11,30 +11,60 @@ documentation : ug
 
 ## ItemsSource
 
-SfCarousel items can be populated with a collection of image data. For example, a user may want to create a SfCarousel control which will display a list of images.
+SfCarousel items can be populated with a collection of image datas. For example, a user may want to create a SfCarousel control which will display a list of images.For example you may wants to create carousel model.
 
-{% tabs %}
+The Carousel model looks as follows
 
 {% highlight C# %}
 
-	ArrayList temp=new ArrayList();
-	For(int i=1;i<18;i++)
-	{
-	SfCarouselItem item =new SfCarouselItem();
-	item.Image="image"+i;
-	temp.add(item);
-	}
-	carousel.ItemsSource=temp;
+	public CarouselModel(string imagestr)
+        {
+            Image = imagestr;
+        }
+        private string _image;
+
+        public string Image
+        {
+            get { return _image; }
+            set { _image = value; }
+        }
 
 {% endhighlight %}
+
+Create and populate carousel collection as follows
+
+{% highlight C# %}
+
+	carousel.DataSource = GetDataSource();
+	List<CarouselModel> GetDataSource()
+    {
+	List<CarouselModel> list = new List<CarouselModel>();
+
+	list.Add(new CarouselModel("image1.png"));
+    list.Add(new CarouselModel("image2.png"));
+	list.Add(new CarouselModel("image3.png"));
+    list.Add(new CarouselModel("image4.png"));
+    list.Add(new CarouselModel("image5.png"));
+	}
+
+{% endhighlight %}
+
+## ItemTemplate
+
+SfCarousel contents can be customized by using `ItemTemplate` property. Through the ItemTemplate user can set up data bindings to the user objects.
+
 
 {% highlight xaml %}
 
-	<carousel:SfCarousel x:Name="carousel" ItemsSource="{Binding}" />
+	<ResourceDictionary>
+      <DataTemplate x:Key="itemTemplate">
+        <Image Source="{Binding Image}"  Aspect="AspectFit"/>
+      </DataTemplate>
+    </ResourceDictionary>
 	
-{% endhighlight %}
+	<carousel:SfCarousel x:Name="carousel" ItemTemplate="{StaticResource itemTemplate}" HeightRequest="600" WidthRequest="400" />
 
-{% endtabs %}
+{% endhighlight %}
 
 ## SelectedIndex
 

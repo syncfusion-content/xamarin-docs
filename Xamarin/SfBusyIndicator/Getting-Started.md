@@ -138,7 +138,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% highlight xaml %}
 
-	<busyindicator:SfBusyIndicator />
+	<busyindicator:SfBusyIndicator x:Name="busyindicator"/>
 	
 {% endhighlight %}
 

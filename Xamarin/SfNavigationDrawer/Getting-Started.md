@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with Syncfusion NavigationDrawer control for Xamarin.Forms
 description: A quick tour to initial users on Syncfusion NavigationDrawer control for Xamarin.Android platform
-platform: Xamarin.Forms
+platform: Xamarin
 control: NavigationDrawer
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 This section provides overview for working with Essential NavigationDrawer for Xamarin Forms. You can walk through the entire process of creating an NavigationDrawer.
 
-![](images/gettingstarted.png)
+![](images/getting-started.png)
 
 ## Referencing Essential Studio Components in Your Solution	
 

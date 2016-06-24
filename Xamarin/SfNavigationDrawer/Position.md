@@ -2,7 +2,7 @@
 layout: post
 title: Position of Drawer in Syncfusion NavigationDrawer control for Xamarin.Forms
 description: Learn how to set position of the DrawerView panel.
-platform: Xamarin.Forms
+platform: Xamarin
 control: NavigationDrawer
 documentation: ug
 ---

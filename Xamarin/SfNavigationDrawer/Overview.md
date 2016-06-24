@@ -2,7 +2,7 @@
 layout: post
 title: Overview of Syncfusion NavigationDrawer control for Xamarin.Forms
 description: Overview and key features of NavigationDrawer control
-platform: Xamarin.Forms
+platform: Xamarin
 control: NavigationDrawer
 documentation: ug
 ---

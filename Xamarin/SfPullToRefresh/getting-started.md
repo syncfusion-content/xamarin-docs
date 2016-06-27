@@ -46,24 +46,12 @@ You can then add the assembly references to the respective projects as shown bel
 <td>android\Syncfusion.SfPullToRefresh.Android.dll<br/>android\Syncfusion.SfPullToRefresh.XForms.Android.dll</td>
 </tr>
 <tr>
-<td>iOS (Classic)</td>
-<td>ios\Syncfusion.SfPullToRefresh.iOS.dll<br/>ios\Syncfusion.SfPullToRefresh.XForms.iOS.dll<br/>ios\Syncfusion.SfPullToRefresh.XForms.dll</td>
-</tr>
-<tr>
 <td>iOS (Unified)</td>
 <td>ios-unified\Syncfusion.SfPullToRefresh.iOS.dll<br/>ios-unified\Syncfusion.SfPullToRefresh.XForms.iOS.dll<br/>ios-unified\Syncfusion.SfPullToRefresh.XForms.dll</td>
 </tr>
 <tr>
-<td>WindowsPhone</td>
-<td>wp8\Syncfusion.SfPullToRefresh.XForms.dll<br/>wp8\Syncfusion.SfPullToRefresh.XForms.WinPhone.dll<br>wp8\Syncfusion.SfPullToRefresh.WP8.dll</td>
-</tr>
-<tr>
-<td>WindowsPhone 8.1</td>
-<td>wp81\Syncfusion.SfPullToRefresh.XForms.dll<br/>wp81\Syncfusion.SfPullToRefresh.XForms.WinPhone.dll<br>wp81\Syncfusion.SfPullToRefresh.WP.dll</td>
-</tr>
-<tr>
-<td>WinRT</td>
-<td>winrt\Syncfusion.SfPullToRefresh.XForms.dll<br/>winrt\Syncfusion.SfPullToRefresh.XForms.WinRT.dll<br>wp81\Syncfusion.SfPullToRefresh.WinRT.dll</td>
+<td>UWP</td>
+<td>uwp\Syncfusion.SfInput.UWP.dll<br/>uwp\Syncfusion.SfShared.UWP.dll<br/>uwp\Syncfusion.SfAutoComplete.XForms.dll<br/>uwp\Syncfusion.SfAutoComplete.XForms.UWP.dll</td>
 </tr>
 </table>
 
@@ -124,6 +112,8 @@ You can set the `PullableContent` for the `SfPullToRefresh` by adding the desire
 {% endtabs %}
 
 ## Events
+
+The pulling event will be notified whenever the swipe gesture is started. This event will notify the listener each and every time until the refresh content height exceeds. When we release the gesture from pullable content, Refreshing event will be triggered. Now user can proceed to fetching the data from web or database. Once the data is fetched, we should call Refresh to method to complete all animations.
 
 There are three built-in events in the PullToRefresh control namely:
 

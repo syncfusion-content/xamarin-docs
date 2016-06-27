@@ -46,24 +46,12 @@ You can then add the assembly references to the respective projects as shown bel
 <td>android\Syncfusion.SfPullToRefresh.Android.dll<br/>android\Syncfusion.SfPullToRefresh.XForms.Android.dll</td>
 </tr>
 <tr>
-<td>iOS (Classic)</td>
-<td>ios\Syncfusion.SfPullToRefresh.iOS.dll<br/>ios\Syncfusion.SfPullToRefresh.XForms.iOS.dll<br/>ios\Syncfusion.SfPullToRefresh.XForms.dll</td>
-</tr>
-<tr>
 <td>iOS (Unified)</td>
 <td>ios-unified\Syncfusion.SfPullToRefresh.iOS.dll<br/>ios-unified\Syncfusion.SfPullToRefresh.XForms.iOS.dll<br/>ios-unified\Syncfusion.SfPullToRefresh.XForms.dll</td>
 </tr>
 <tr>
-<td>WindowsPhone</td>
-<td>wp8\Syncfusion.SfPullToRefresh.XForms.dll<br/>wp8\Syncfusion.SfPullToRefresh.XForms.WinPhone.dll<br>wp8\Syncfusion.SfPullToRefresh.WP8.dll</td>
-</tr>
-<tr>
-<td>WindowsPhone 8.1</td>
-<td>wp81\Syncfusion.SfPullToRefresh.XForms.dll<br/>wp81\Syncfusion.SfPullToRefresh.XForms.WinPhone.dll<br>wp81\Syncfusion.SfPullToRefresh.WP.dll</td>
-</tr>
-<tr>
-<td>WinRT</td>
-<td>winrt\Syncfusion.SfPullToRefresh.XForms.dll<br/>winrt\Syncfusion.SfPullToRefresh.XForms.WinRT.dll<br>wp81\Syncfusion.SfPullToRefresh.WinRT.dll</td>
+<td>UWP</td>
+<td>uwp\Syncfusion.SfInput.UWP.dll<br/>uwp\Syncfusion.SfShared.UWP.dll<br/>uwp\Syncfusion.SfAutoComplete.XForms.dll<br/>uwp\Syncfusion.SfAutoComplete.XForms.UWP.dll</td>
 </tr>
 </table>
 
@@ -121,4 +109,103 @@ You can set the `PullableContent` for the `SfPullToRefresh` by adding the desire
 
 
 {%endhighlight%}
+{% endtabs %}
+
+## Events
+
+The pulling event will be notified whenever the swipe gesture is started. This event will notify the listener each and every time until the refresh content height exceeds. When we release the gesture from pullable content, Refreshing event will be triggered. Now user can proceed to fetching the data from web or database. Once the data is fetched, we should call Refresh to method to complete all animations.
+
+There are three built-in events in the PullToRefresh control namely:
+
+1. `Pulling`
+2. `Refreshing`
+3. `Refreshed`
+
+### Pulling
+
+`Pulling` event is triggered when we start pulling down the PullableContent. It is triggered as long as the pointer or finger is pressed and the progress is less than 100 and not equal to 0 . The arguments for the event are:
+
+* SfPullToRefresh
+* Progress
+
+{% tabs %}
+
+{% highlight c# %}
+   
+    pullToRefresh.PullingEvent+= (object sender, SfPullToRefresh.PullingEventArgs args) => 
+	{
+                
+    }; 			
+{% endhighlight %}
+
+{%highlight Xaml%}
+
+    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" Pulling="pullToRefresh_Pulling" />
+
+{%endhighlight%}
+
+{% endtabs %}
+
+### Refreshing
+
+`Refreshing` event is triggered once the content is pulled through the PullingThreshold or Progress reaches 100. This event is triggered till the Refresh() method is called.
+
+{% tabs %}
+
+{% highlight c# %}
+
+    pullToRefresh.RefreshingEvent+= (object sender) => 
+    {
+       
+    };
+
+{% endhighlight %}
+
+{%highlight Xaml%}
+
+    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" Refreshing="pullToRefresh_Refreshing" />
+
+{%endhighlight%}
+
+
+{% endtabs %}
+
+### Refreshed
+
+`Refreshed` event is triggered once the refreshing and all the animations associated with the control are completed.
+
+{% tabs %}
+
+
+{% highlight c# %}
+
+    pullToRefresh.RefreshedEvent += Pull_pullToRefreshedEvent;
+    void Pull_pullToRefreshedEvent (object sender)
+		{
+
+			Device.StartTimer(new TimeSpan(0,0,2), ()=> 
+				{ 
+					Random rnd = new Random();
+					int i = rnd.Next(0, 6); 
+
+					day=dataSource [i].Day+","+dataSource [i].Month+" "+date;
+					month=dataSource [i].Month;
+					String image=dataSource [i].Type;
+					String ImageSelected=dataSource [i].SelectedType;
+					String temparature=dataSource [i].Temperature;
+					page.UpdateData(day,month,image,ImageSelected,temparature);
+					pullToRefresh.Refresh();
+					return false;
+				});
+
+		}
+
+{% endhighlight %}
+
+{%highlight Xaml%}
+
+    <syncfusion:SfPullToRefresh x:Name=" pullToRefresh" Refreshed="pullToRefresh_Refreshed" />
+
+{%endhighlight%}
+
 {% endtabs %}

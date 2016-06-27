@@ -109,9 +109,9 @@ Alternatively if you had downloaded Essential Studio from Syncfusion.com or thro
 
 After installing Essential Studio for Xamarin, all the required assemblies can be found in the installation folders, typically
 
-{Syncfusion Installed location}\Essential Studio\14.1.0.41\lib
+{Syncfusion Installed location}\Essential Studio\14.2.0.26\lib
 
-Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\14.1.0.41\lib
+Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\14.2.0.26\lib
 
 or after downloading through the Xamarin store web interface, all the required assemblies can be found in the below folder
 

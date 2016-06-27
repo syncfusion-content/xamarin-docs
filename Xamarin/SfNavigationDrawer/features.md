@@ -2,7 +2,7 @@
 layout: post
 title: Various features of Syncfusion NavigationDrawer control for Xamarin.Forms
 description: Learn how to set content view, drawer content view, footer view, header view, drawer size in NavigationDrawer.
-platform: Xamarin.Forms
+platform: Xamarin
 control: NavigationDrawer
 documentation: ug
 ---

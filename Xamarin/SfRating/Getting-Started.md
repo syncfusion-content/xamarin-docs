@@ -58,19 +58,19 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>Windows Phone</td>
-<td>wp8\Syncfusion.SfRating.WP8.dll<br/>wp8\Syncfusion.SfRating.XForms.dll<br/>wp8\Syncfusion.SfRating.XForms.WinPhone.dll</td>
+<td>wp8\Syncfusion.SfInput.WP8.dll<br/>wp8\Syncfusion.SfShared.WP8.dll<br/>wp8\Syncfusion.SfRating.XForms.dll<br/>wp8\Syncfusion.SfRating.XForms.WinPhone.dll</td>
 </tr>
 <tr>
 <td>Windows Phone 8.1</td>
-<td>wp81\Syncfusion.SfRating.WP.dll<br/>wp81\Syncfusion.SfRating.XForms.dll<br/>wp81\Syncfusion.SfRating.XForms.WinPhone.dll</td>
+<td>wp81\Syncfusion.SfInput.WP.dll<br/>wp81\Syncfusion.SfShared.WP.dll<br/>wp81\Syncfusion.SfRating.XForms.dll<br/>wp81\Syncfusion.SfRating.XForms.WinPhone.dll</td>
 </tr>
 <tr>
 <td>WinRT</td>
-<td>winrt\Syncfusion.SfRating.WinRT.dll<br/>winrt\Syncfusion.SfRating.XForms.dll<br/>winrt\Syncfusion.SfRating.XForms.WinRT.dll</td>
+<td>winrt\Syncfusion.SfInput.WinRT.dll<br/>winrt\Syncfusion.SfShared.WinRT.dll<br/>winrt\Syncfusion.SfRating.XForms.dll<br/>winrt\Syncfusion.SfRating.XForms.WinRT.dll</td>
 </tr>
 <tr>
 <td>UWP</td>
-<td>uwp\Syncfusion.SfRating.UWP.dll<br/>uwp\Syncfusion.SfRating.XForms.dll<br/>uwp\Syncfusion.SfRating.XForms.UWP.dll</td>
+<td>uwp\Syncfusion.SfInput.UWP.dll<br/>uwp\Syncfusion.SfShared.UWP.dll<br/>uwp\Syncfusion.SfRating.XForms.dll<br/>uwp\Syncfusion.SfRating.XForms.UWP.dll</td>
 </tr>
 </table>
 

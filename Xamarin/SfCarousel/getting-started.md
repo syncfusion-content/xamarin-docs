@@ -44,7 +44,7 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>Android</td>
-<td>android\Syncfusion.SfCarousel.Android.dll<br/>android\Syncfusion.SfCarousel.XForms.Android.dll</td>
+<td>android\Syncfusion.SfCarousel.Android.dll<br/>android\Syncfusion.SfCarousel.XForms.Android.dll<br/>android\Syncfusion.SfCarousel.XForms.dll<br/> Xamarin.Android.Support.v17.Leanback (from Nuget Packages)</td>
 </tr>
 <tr>
 <td>iOS (Unified)</td>

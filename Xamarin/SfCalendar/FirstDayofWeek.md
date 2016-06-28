@@ -27,6 +27,6 @@ By default, the starting day will be Sunday. This can be modified using `FirstDa
 
 {% endtabs %}
 
-N> The default value of FirstDayofWeek is 0 (i.e) Sunday.
+N> The default value of FirstDayofWeek is Sunday when set as 0.
 	
 ![](images/Firstdayofweek.png)

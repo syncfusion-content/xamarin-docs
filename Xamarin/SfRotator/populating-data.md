@@ -11,7 +11,7 @@ documentation : ug
 
 ## Setting ItemSource
 
-SfRotator items can be populated with a collection of image datas. You can assign a collection to it. Collections include arrays, Lists and DataTables.For example you may wants to create a rotator model.
+SfRotator items can be populated with a collection of image data. You can assign a collection to it. Collections include arrays, Lists and DataTables.For example you may wants to create a rotator model.
 
 The Rotator model looks like as follows.
 

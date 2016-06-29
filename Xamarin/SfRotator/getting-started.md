@@ -49,7 +49,7 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>iOS (Unified)</td>
-<td>ios-unified\Syncfusion.SfRotator.iOS.dll<br/>ios-unified\Syncfusion.SfRotator.XForms.iOS.dll<br/>ios-unified\Syncfusion.SfRotator.XForms.dll</td>
+<td>iOS-unified\Syncfusion.SfRotator.iOS.dll<br/>iOS-unified\Syncfusion.SfRotator.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfRotator.XForms.dll</td>
 </tr>
 <tr>
 <td>UWP</td>
@@ -161,7 +161,7 @@ The placement position of navigation strip items such as Thumbnail or Dots can b
 
 ## Setting ItemSource
 
-SfRotator items can be populated with a collection of image datas. You can assign a collection to it. Collections include arrays, Lists and DataTables.For example you may wants to create a rotator model.
+SfRotator items can be populated with a collection of image data. You can assign a collection to it. Collections include arrays, Lists and DataTables.For example you may wants to create a rotator model.
 
 The Rotator model looks like as follows.
 

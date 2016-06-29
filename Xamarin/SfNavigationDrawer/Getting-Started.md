@@ -48,7 +48,7 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>iOS (Unified)</td>
-<td>ios-unified\Syncfusion.SfNavigationDrawer.iOS.dll<br/>ios-unified\SyncfusionSfNavigationDrawer.XForms.dll<br/>ios-unified\Syncfusion.SfNavigationDrawer.XForms.iOS.dll</td>
+<td>iOS-unified\Syncfusion.SfNavigationDrawer.iOS.dll<br/>iOS-unified\SyncfusionSfNavigationDrawer.XForms.dll<br/>iOS-unified\Syncfusion.SfNavigationDrawer.XForms.iOS.dll</td>
 </tr>
 <tr>
 <td>Windows Phone</td>

@@ -130,13 +130,14 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% highlight c# %}
 
-	SfCalendar sfCalendar=new SfCalendar();
+	SfCalendar calendar=new SfCalendar();
+	this.Content=calendar;
 	
 {% endhighlight %}
 
 {% highlight xaml %}
 
-	<CalendarSample:SfCalendar />
+	<CalendarSample:SfCalendar x:Name="calendar"/>
 	
 {% endhighlight %}
 

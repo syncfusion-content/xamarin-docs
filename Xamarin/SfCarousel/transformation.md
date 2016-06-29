@@ -11,7 +11,7 @@ documentation : ug
 
 ## Rotation Angle
 
-The `RotationAngle` property in the SfCarousel control is used to rotate all the unselecteditems to a specified angle. 
+The `RotationAngle` property in the SfCarousel control is used to rotate all the unselected items to a specified angle. 
 
 N> If the angle value is positive, then the rotation is in the clockwise direction. If the angle value is negative, the rotation is in the counterclockwise direction. 
 

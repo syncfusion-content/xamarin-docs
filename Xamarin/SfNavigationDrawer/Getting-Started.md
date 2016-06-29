@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section provides overview for working with Essential NavigationDrawer for Xamarin Forms. You can walk through the entire process of creating an NavigationDrawer.
+This section provides overview for working with Essential NavigationDrawer for Xamarin.Forms. You can walk through the entire process of creating an NavigationDrawer.
 
 ![](images/getting-started.png)
 

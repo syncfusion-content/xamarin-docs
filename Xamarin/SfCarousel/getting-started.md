@@ -48,14 +48,14 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>iOS (Unified)</td>
-<td>ios-unified\Syncfusion.SfCarousel.iOS.dll<br/>ios-unified\Syncfusion.SfCarousel.XForms.iOS.dll<br/>ios-unified\Syncfusion.SfCarousel.XForms.dll</td>
+<td>iOS-unified\Syncfusion.SfCarousel.iOS.dll<br/>iOS-unified\Syncfusion.SfCarousel.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfCarousel.XForms.dll</td>
 </tr>
 <tr>
-<td>WindowsPhone</td>
+<td>Windows Phone</td>
 <td>wp8\Syncfusion.SfCarousel.WP8.dll<br/>wp8\Syncfusion.SfCarousel.XForms.dll<br/>wp8\Syncfusion.SfCarousel.XForms.WinPhone.dll</td>
 </tr>
 <tr>
-<td>WindowsPhone 8.1</td>
+<td>Windows Phone 8.1</td>
 <td>wp81\Syncfusion.SfCarousel.WP.dll<br/>wp81\Syncfusion.SfCarousel.XForms.dll<br/>wp81\Syncfusion.SfCarousel.XForms.WinPhone.dll</td>
 </tr>
 <tr>
@@ -68,9 +68,9 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 </table>
 
-Currently an additional step is required for Windows Phone, WindowsPhone 8.1 and iOS projects. We need to create an instance of the carousel custom renderer as shown below. 
+Currently an additional step is required for Windows Phone, Windows Phone 8.1 and iOS projects. We need to create an instance of the carousel custom renderer as shown below. 
 
-Create an instance of SfCarouselRenderer in MainPage constructor of the Windows Phone and WindowsPhone 8.1  project as shown 
+Create an instance of SfCarouselRenderer in MainPage constructor of the Windows Phone and Windows Phone 8.1  project as shown 
 
 {% highlight C# %}
 

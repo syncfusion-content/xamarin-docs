@@ -112,7 +112,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% highlight xaml %}
 
-	<rotator:SfRotator />
+	<rotator:SfRotator x:Name="rotator"/>
 	
 {% endhighlight %}
 

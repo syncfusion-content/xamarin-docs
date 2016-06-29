@@ -139,7 +139,7 @@ The Carousel control is configured entirely in C# code or by using XAML markup. 
 
 {% highlight xaml %}
 
-	<carousel:SfCarousel />
+	<carousel:SfCarousel x:Name="carousel"/>
 	
 {% endhighlight %}
 

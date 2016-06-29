@@ -133,12 +133,13 @@ The NavigationDrawer control configured entirely in C# code or by using XAML mar
 {% highlight c# %}
 
 	SfNavigationDrawer navigationDrawer=new SfNavigationDrawer();
+	this.Content=navigationDrawer;
 
 {% endhighlight %}
 
 {% highlight xaml %}
 
-	<navigation:SfNavigationDrawer />
+	<navigation:SfNavigationDrawer x:Name="navigationDrawer"/>
 	
 {% endhighlight %}
 

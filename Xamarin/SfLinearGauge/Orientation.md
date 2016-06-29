@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Orientation
 
-SfLinearGauge provides support for the vertical orientation. By default SfLineargauge renders with horizontal orientation. You can the change the orientation by the orientation property. It can be,
+SfLinearGauge provides support for the vertical orientation. By default SfLinearGauge renders with horizontal orientation. You can the change the orientation by the orientation property. It can be,
 
 * Horizontal
 * Vertical

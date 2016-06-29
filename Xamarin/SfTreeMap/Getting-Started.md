@@ -46,18 +46,18 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>iOS (Classic)</td>
-<td>ios\Syncfusion.SfTreeMap.iOS.dll<br/>ios\Syncfusion.SfTreeMap.XForms.iOS.dll<br/>ios\Syncfusion.SfTreeMap.XForms.dll</td>
+<td>iOS\Syncfusion.SfTreeMap.iOS.dll<br/>iOS\Syncfusion.SfTreeMap.XForms.iOS.dll<br/>iOS\Syncfusion.SfTreeMap.XForms.dll</td>
 </tr>
 <tr>
 <td>iOS (Unified)</td>
-<td>ios-unified\Syncfusion.SfTreeMap.iOS.dll<br/>ios-unified\Syncfusion.SfTreeMap.XForms.iOS.dll<br/>ios-unified\Syncfusion.SfTreeMap.XForms.dll</td>
+<td>iOS-unified\Syncfusion.SfTreeMap.iOS.dll<br/>iOS-unified\Syncfusion.SfTreeMap.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfTreeMap.XForms.dll</td>
 </tr>
 <tr>
-<td>WindowsPhone</td>
+<td>Windows Phone</td>
 <td>wp8\Syncfusion.SfTreeMap.XForms.dll<br/>wp8\Syncfusion.SfTreeMap.XForms.WinPhone.dll<br>wp8\Syncfusion.SfTreeMap.WP8.dll</td>
 </tr>
 <tr>
-<td>WindowsPhone 8.1</td>
+<td>Windows Phone 8.1</td>
 <td>wp81\Syncfusion.SfTreeMap.XForms.dll<br/>wp81\Syncfusion.SfTreeMap.XForms.WinPhone.dll<br>wp81\Syncfusion.SfTreeMap.WP.dll</td>
 </tr>
 <tr>
@@ -68,7 +68,7 @@ You can then add the assembly references to the respective projects as shown bel
 
 Currently an additional step is required for Windows Phone and iOS projects. We need to create an instance of the TreeMap custom renderer as shown below.
 
-Create an instance of SfTreeMapRenderer in MainPage constructor of the Windows Phone , WindowsPhone 8.1 and WinRT project as shown
+Create an instance of SfTreeMapRenderer in MainPage constructor of the Windows Phone , Windows Phone 8.1 and WinRT project as shown
 
 {% highlight C# %}  
 

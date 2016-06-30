@@ -72,7 +72,7 @@ Create and populate autocomplete collection as follows
 
 {% highlight C# %}
 
-	autoComplete.ItemSource = GetItemSource();
+	autoComplete.DataSource = GetItemSource();
 	List<AutoCompleteModel> GetItemSource()
     {
 	List<AutoCompleteModel> list = new List<AutoCompleteModel>();
@@ -82,6 +82,7 @@ Create and populate autocomplete collection as follows
 	list.Add(new AutoCompleteModel("Label3","image3.png"));
     list.Add(new AutoCompleteModel("Label4","image4.png"));
     list.Add(new AutoCompleteModel("Label5","image5.png"));
+	return list;
 	}
 
 {% endhighlight %}

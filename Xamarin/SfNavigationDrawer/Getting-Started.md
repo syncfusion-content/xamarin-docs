@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section provides overview for working with Essential NavigationDrawer for Xamarin Forms. You can walk through the entire process of creating an NavigationDrawer.
+This section provides overview for working with Essential NavigationDrawer for Xamarin.Forms. You can walk through the entire process of creating an NavigationDrawer.
 
 ![](images/getting-started.png)
 
@@ -48,7 +48,7 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>iOS (Unified)</td>
-<td>ios-unified\Syncfusion.SfNavigationDrawer.iOS.dll<br/>ios-unified\SyncfusionSfNavigationDrawer.XForms.dll<br/>ios-unified\Syncfusion.SfNavigationDrawer.XForms.iOS.dll</td>
+<td>iOS-unified\Syncfusion.SfNavigationDrawer.iOS.dll<br/>iOS-unified\SyncfusionSfNavigationDrawer.XForms.dll<br/>iOS-unified\Syncfusion.SfNavigationDrawer.XForms.iOS.dll</td>
 </tr>
 <tr>
 <td>Windows Phone</td>
@@ -133,12 +133,13 @@ The NavigationDrawer control configured entirely in C# code or by using XAML mar
 {% highlight c# %}
 
 	SfNavigationDrawer navigationDrawer=new SfNavigationDrawer();
+	this.Content=navigationDrawer;
 
 {% endhighlight %}
 
 {% highlight xaml %}
 
-	<navigation:SfNavigationDrawer />
+	<navigation:SfNavigationDrawer x:Name="navigationDrawer"/>
 	
 {% endhighlight %}
 

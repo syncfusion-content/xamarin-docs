@@ -177,7 +177,7 @@ We will add one or more scale value to linear gauge. Before adding that scales w
 
 ## Add Symbol Pointer
 
-We can point a value on scale in lineargauge by creating instance of SymbolPointer.
+We can point a value on scale in SfLinearGauge by creating instance of SymbolPointer.
 
 {% tabs %}
 

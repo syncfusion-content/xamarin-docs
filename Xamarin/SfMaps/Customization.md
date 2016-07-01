@@ -157,3 +157,22 @@ layer.ShapeSettings.AutoFillColors = true;
 {% endtabs %}
 
 ![](Images/palettes.png)  
+
+
+### Item Templates
+
+Item Templates for Map Markers The maps control provides item template support for marker items, allowing custom templates to be created with any type of view element.
+
+{% highlight xaml %}
+
+    <maps:ShapeFileLayer.MarkerTemplate>
+      <DataTemplate >
+         <StackLayout  Padding="-12,-12,0,0" IsClippedToBounds="false" HorizontalOptions="StartAndExpand" VerticalOptions="Center" HeightRequest="60" WidthRequest="60"  >
+           <Image Source="{Binding ImageName}" Scale="1" Aspect="AspectFit " HorizontalOptions="StartAndExpand" VerticalOptions="Center"  HeightRequest="15" WidthRequest="23"   />    
+         </StackLayout>
+      </DataTemplate>
+    </maps:ShapeFileLayer.MarkerTemplate>
+ 
+{% endhighlight %}
+
+![](Images/MarkerTemplate.png)  

@@ -147,10 +147,33 @@ wp8\Syncfusion.SfChart.XForms.WinPhone.dll
 
 wp8\Syncfusion.SfChart.XForms.dll 
 
+### Windows Phone 8.1 project
 
-Currently an additional step is required for Windows Phone and iOS projects. We need to create an instance of the chart custom renderer as shown below. 
+wp81\Syncfusion.SfChart.WP.dll
 
-Create an instance of SfChartRenderer in MainPage constructor in of the Windows Phone project as shown 
+wp81\Syncfusion.SfChart.XForms.WinPhone.dll
+
+wp81\Syncfusion.SfChart.XForms.dll 
+
+### Windows Runtime project
+
+winrt\Syncfusion.SfChart.WinRT.dll
+
+winrt\Syncfusion.SfChart.XForms.WinRT.dll
+
+winrt\Syncfusion.SfChart.XForms.dll
+
+### Universal Windows Phone project
+
+uwp\Syncfusion.SfChart.UWP.dll
+
+uwp\Syncfusion.SfChart.XForms.dll
+
+uwp\Syncfusion.SfChart.XForms.UWP.dll
+
+Currently an additional step is required for Windows Phone, Windows Phone 8.1, Windows Runtime and iOS projects. We need to create an instance of the chart custom renderer as shown below. 
+
+Create an instance of SfChartRenderer in MainPage constructor in of the Windows Phone, Windows Phone 8.1 and Windows Runtime project as shown 
 
 {% highlight C# %}
 

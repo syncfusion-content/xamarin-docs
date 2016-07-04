@@ -17,10 +17,10 @@ The Rotator model looks like as follows.
 
 {% highlight C# %}
 	
-	public RotatorModel(string imagestr,string name)
+	public RotatorModel(string imagestr)
         {
             Image = imagestr;
-            Name = name;
+           
         }
         private String _image;
 
@@ -30,13 +30,7 @@ The Rotator model looks like as follows.
             set { _image = value; }
         }
 
-        private String name;
-
-        public String Name
-        {
-            get { return name; }
-            set { name = value; }
-        }
+       
 
 {% endhighlight %}
 
@@ -46,11 +40,11 @@ Create and populate rotator collection as follows
 
 	public RotatorViewModel()
         {
-            ImageCollection.Add(new RotatorModel("movie1.png","Autor: Stephen Haunts"));
-            ImageCollection.Add(new RotatorModel("movie2.png", "Autor: Macro Breveglieri"));
-            ImageCollection.Add(new RotatorModel("movie3.png", "Autor: Peter Shaw"));
-            ImageCollection.Add(new RotatorModel("movie4.png", "Autor: Del Sole"));
-            ImageCollection.Add(new RotatorModel("movie5.png", "Autor: Marko Valjeik"));
+            ImageCollection.Add(new RotatorModel("movie1.png"));
+            ImageCollection.Add(new RotatorModel("movie2.png"));
+            ImageCollection.Add(new RotatorModel("movie3.png"));
+            ImageCollection.Add(new RotatorModel("movie4.png"));
+            ImageCollection.Add(new RotatorModel("movie5.png"));
         }
         private List<RotatorModel> imageCollection = new List<RotatorModel>();
 

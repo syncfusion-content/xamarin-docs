@@ -166,10 +166,9 @@ SfRotator items can be populated with a collection of image data. You can assign
 The Rotator model looks like as follows.
 
 {% highlight C# %}
-	public RotatorModel(string imagestr,string name)
+	public RotatorModel(string imagestr)
         {
             Image = imagestr;
-            Name = name;
         }
         private String _image;
 
@@ -179,13 +178,7 @@ The Rotator model looks like as follows.
             set { _image = value; }
         }
 
-        private String name;
-
-        public String Name
-        {
-            get { return name; }
-            set { name = value; }
-        }
+     
 {% endhighlight %}
 
 Create and populate rotator collection as follows
@@ -194,11 +187,11 @@ Create and populate rotator collection as follows
 
 	public RotatorViewModel()
         {
-            ImageCollection.Add(new RotatorModel("movie1.png","Autor: Stephen Haunts"));
-            ImageCollection.Add(new RotatorModel("movie2.png", "Autor: Macro Breveglieri"));
-            ImageCollection.Add(new RotatorModel("movie3.png", "Autor: Peter Shaw"));
-            ImageCollection.Add(new RotatorModel("movie4.png", "Autor: Del Sole"));
-            ImageCollection.Add(new RotatorModel("movie5.png", "Autor: Marko Valjeik"));
+            ImageCollection.Add(new RotatorModel("movie1.png"));
+            ImageCollection.Add(new RotatorModel("movie2.png"));
+            ImageCollection.Add(new RotatorModel("movie3.png"));
+            ImageCollection.Add(new RotatorModel("movie4.png"));
+            ImageCollection.Add(new RotatorModel("movie5.png"));
         }
         private List<RotatorModel> imageCollection = new List<RotatorModel>();
 
@@ -228,15 +221,7 @@ ItemTemplate property of Rotator control is used to customize the contents of ro
 	<rotate:SfRotator x:Name="sfRotator"  Grid.Row="0" NavigationDelay="2000" ItemsSource="{Binding ImageCollection}" SelectedIndex="2" NavigationDirection="Horizontal" NavigationStripMode="Dots" BackgroundColor="#ececec" NavigationStripPosition="Bottom">
         <rotate:SfRotator.ItemTemplate>
           <DataTemplate>
-            <Image  Source="{Binding Image}">
-              <Image.Aspect>
-                <OnPlatform x:TypeArguments="Aspect">
-      			        <OnPlatform.Android>
-        			          AspectFill
-      			        </OnPlatform.Android>
-    		        </OnPlatform>
-              </Image.Aspect>
-            </Image>
+            <Image  Source="{Binding Image}"/>                   
           </DataTemplate>
         </rotate:SfRotator.ItemTemplate>
       </rotate:SfRotator>

@@ -237,7 +237,7 @@ The sliding main content of the NavigationDrawer which is a part of DrawerPanel 
 
 {% highlight xaml %}
 
-    <navigation:SfNavigationDrawer x:Name="navigationDrawer" DrawerContentView="{Binding }" />
+    <navigation:SfNavigationDrawer x:Name="navigationDrawer"  />
 	
 {% endhighlight %}
 

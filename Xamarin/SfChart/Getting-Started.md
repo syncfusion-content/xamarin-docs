@@ -173,7 +173,7 @@ uwp\Syncfusion.SfChart.XForms.UWP.dll
 
 Currently an additional step is required for Windows and iOS projects. We need to create an instance of the SfChartRenderer as shown below. 
 
-Create an instance of SfChartRenderer in the constructor of MainPage in  Windows Phone, Windows Phone 8.1, WinRT and UWP project as shown 
+Create an instance of SfChartRenderer in the constructor of MainPage in  Windows Phone, Windows Phone 8.1, WinRT and UWP project as shown below.
 
 {% highlight C# %}
 

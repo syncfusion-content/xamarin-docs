@@ -24,7 +24,7 @@ Slides the DrawerContent on top of the main content.
 	
 {% highlight c# %} 
 
-	slideDrawer.Transition=Transition.SlideOnTop;
+	navigationDrawer.Transition=Transition.SlideOnTop;
 
 {% endhighlight %}
 
@@ -46,7 +46,7 @@ This transition slides the Drawer and main content simultaneously.
 	
 {% highlight c# %} 
 
-	slideDrawer.Transition=Transition.Push;
+	navigationDrawer.Transition=Transition.Push;
 
 {% endhighlight %}
 
@@ -68,7 +68,7 @@ The Drawer content is in fixed position and the main content will slide to revea
 	
 {% highlight c# %} 
 
-	slideDrawer.Transition=Transition.Reveal;
+	navigationDrawer.Transition=Transition.Reveal;
 
 {% endhighlight %}
 

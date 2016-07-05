@@ -45,7 +45,7 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>Android</td>
-<td>android\Syncfusion.SfRotator.Android.dll<br/>android\Syncfusion.SfRotator.XForms.Android.dll<br/>android\Syncfusion.SfRotator.XForms.dll<br/> Xamarin.Android.Support.v17.Leanback (from Nuget Packages)</td>
+<td>android\Syncfusion.SfRotator.Android.dll<br/>android\Syncfusion.SfRotator.XForms.Android.dll<br/>android\Syncfusion.SfRotator.XForms.dll<br/> Xamarin.Android.Support.v17.Leanback (from NuGet Packages)</td>
 </tr>
 <tr>
 <td>iOS (Unified)</td>

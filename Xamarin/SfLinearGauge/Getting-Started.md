@@ -68,7 +68,7 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 </table>
 
-Currently an additional step is required for Windows Phone, Windows Phone 8.1 and iOS projects. We need to create an instance of the lineargauge custom renderer as shown below. 
+Currently an additional step is required for Windows Phone, Windows Phone 8.1 and iOS projects. We need to create an instance of the linear gauge custom renderer as shown below. 
 
 Create an instance of SfLinearGaugeRenderer in MainPage constructor of the Windows Phone and  Windows Phone 8.1 project as shown 
 

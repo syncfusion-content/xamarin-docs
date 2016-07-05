@@ -47,7 +47,7 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>iOS (Unified)</td>
-<td>ios-unified\Syncfusion.SfPullToRefresh.iOS.dll<br/>ios-unified\Syncfusion.SfPullToRefresh.XForms.iOS.dll<br/>ios-unified\Syncfusion.SfPullToRefresh.XForms.dll</td>
+<td>iOS-unified\Syncfusion.SfPullToRefresh.iOS.dll<br/>iOS-unified\Syncfusion.SfPullToRefresh.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfPullToRefresh.XForms.dll</td>
 </tr>
 <tr>
 <td>UWP</td>
@@ -55,7 +55,7 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 </table>
 
-# Intialization
+# Initialization
 
 ## Create your first SfPullToRefresh in Xamarin.Forms
 
@@ -92,9 +92,9 @@ Refer to the following code to add the SfPullToRefresh control:
 To develop an application with Xamarin PullToRefresh is simple. The following steps explains how to create and configure its properties.
 
 
-* Create the `PullableContent` for the `SfPullToRefresh`
+* Create the `pullableContent` for the `SfPullToRefresh`
 
-You can set the `PullableContent` for the `SfPullToRefresh` by adding the desired UIElement.
+You can set the `pullableContent` for the `SfPullToRefresh` by adding the desired UIElement.
 
 {% tabs %}
 
@@ -123,7 +123,7 @@ There are three built-in events in the PullToRefresh control namely:
 
 ### Pulling
 
-`Pulling` event is triggered when we start pulling down the PullableContent. It is triggered as long as the pointer or finger is pressed and the progress is less than 100 and not equal to 0 . The arguments for the event are:
+`Pulling` event is triggered when we start pulling down the pullableContent. It is triggered as long as the pointer or finger is pressed and the progress is less than 100 and not equal to 0 . The arguments for the event are:
 
 * SfPullToRefresh
 * Progress

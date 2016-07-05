@@ -34,7 +34,7 @@ Gets or sets the threshold value from the edges for easy panning from the edges.
 {% endtabs %}
 
 
-## PullableContent
+## pullableContent
 
 PullableContent is the main view of the PullToRefresh control on which the desired items can be placed.
 
@@ -134,7 +134,7 @@ PullableContent is the main view of the PullToRefresh control on which the desir
 
 ## Refresh ()
 
-Refresh method is used to Refresh the `PullableContent` and also hides the `RefreshContent`.
+Refresh method is used to Refresh the `pullableContent` and also hides the `RefreshContent`.
 
 {% highlight c# %}
 
@@ -149,7 +149,7 @@ The Transition property specifies the animations for the RefreshContent. Transit
 * `SlideOnTop`
 * `Push`
 
-The default transition is `SlideOnTop`. That draws the `RefreshContent` on top of the `PullableContent`.
+The default transition is `SlideOnTop`. That draws the `RefreshContent` on top of the `pullableContent`.
 
 {% tabs %}
 
@@ -195,7 +195,7 @@ PullDirection property specifies the position of the transition to take place.Pu
 * `Top`
 * `Bottom`
 
-The default PullDirection is `Top`. That draws the `RefreshContent` on top of the `PullableContent`.
+The default PullDirection is `Top`. That draws the `RefreshContent` on top of the `pullableContent`.
 
 {% tabs %}
 
@@ -216,7 +216,7 @@ The default PullDirection is `Top`. That draws the `RefreshContent` on top of th
 {% endtabs %}
 
 
-The following code example shows how to set `PullDirection` as `Bottom` to SfPullToRefresh.That draws the `RefreshContent` on Bottom of the `PullableContent`.
+The following code example shows how to set `PullDirection` as `Bottom` to SfPullToRefresh.That draws the `RefreshContent` on Bottom of the `pullableContent`.
 
 {% tabs %}
 

@@ -8,7 +8,7 @@ documentation: ug
 ---
 # AnimationType
 
-The `AnimationType` property allows you to choose one of the animation from the built-in animations supported.
+The `AnimationType` property allows you to choose anyone of the 10 predefined animation types.
 
 {% tabs %}
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Populating Events
 
-Calendar control has an built-in capability to display the events based on the calendar events collection provided to `DataSource` property. For events to be listed for a particular day, enable the inline feature in month view cell.
+SfCalendar control has an built-in capability to display the events based on the calendar events collection provided to `DataSource` property. For events to be listed for a particular day, enable the inline feature in month view cell.
 
 The default UI of the inline view with events will be like list of events with a Gray background
 
@@ -33,11 +33,11 @@ Inline event support can be toggled on / off with `ShowInLineEvent` property.
 
 {% endtabs %}
 	
-N> The Inline function will be available only in MonthView with Single selection mode
+N> The Inline function will be available only in MonthView with Single selection mode.
 	
 ## Adding events using collection
 
-Calendar Events collection can be provided to calendar using the following steps. `CalendarEventCollection` is a class, which holds the details about the events to be rendered in calendar. 
+Calendar Events collection can be provided to SfCalendar using the following steps. `CalendarEventCollection` is a class, which holds the details about the events to be rendered in calendar. 
 
 `CalendarInlineEvent` has some basic properties such as `StartTime`, `EndTime` and `Subject`.
 

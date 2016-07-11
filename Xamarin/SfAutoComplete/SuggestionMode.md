@@ -9,7 +9,7 @@ documentation : ug
 
 # SuggestionMode
 
-The `SuggestionMode` property is used to decide the filtered data to be displayed. 
+The `SuggestionMode` property provides various option to filter the data according to the text entered.  
 
 N> By default, there are eight types of suggestion modes.
 

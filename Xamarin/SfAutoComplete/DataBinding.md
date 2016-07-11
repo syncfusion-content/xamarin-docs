@@ -11,11 +11,11 @@ documentation : ug
 
 ## DataSource
 
-The `DataSource` property is used to set list of objects to the AutoComplete control. 
+The `DataSource` property is used to set list of objects to the SfAutoComplete control. 
 
 * Create a Student class with two properties Name and Age.
 
-* Create  Student collection using Student class and assign the collection to DataSource property of AutoComplete
+* Create Student collection using Student class and assign the collection to DataSource property of SfAutoComplete.
 
 {% highlight C# %}
 
@@ -54,7 +54,7 @@ The `DataSource` property is used to set list of objects to the AutoComplete con
 
 {% endhighlight %}
 
-* `DisplayMemberPath` decides the suggestions to be shown in dropdown. `SelectedValuePath`  Setting this will make the property `SelectedValue` return the value of the property you have selected here. 
+* `DisplayMemberPath` decides the suggestions to be shown in dropdown. Setting the `SelectedValuePath` property will make `SelectedValue` property to return the value you have selected here. 
 
 ![](images/datasource.png)
 

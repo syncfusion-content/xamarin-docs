@@ -11,9 +11,8 @@ documentation : ug
 
 ## Setting ItemSource
 
-SfRotator items can be populated with a collection of image data. You can assign a collection to it. Collections include arrays, Lists and DataTables.For example you may wants to create a rotator model.
+SfRotator items can be populated with a collection of image data. Collection includes Arrays, Lists and DataTables. For example you may wants to create a SfRotator model with Image as follows.
 
-The Rotator model looks like as follows.
 
 {% highlight C# %}
 	
@@ -34,7 +33,7 @@ The Rotator model looks like as follows.
 
 {% endhighlight %}
 
-Create and populate rotator collection as follows
+Create and populate Rotator collection as follows
 
 {% highlight C# %}
 
@@ -67,7 +66,7 @@ Assigning collection to ItemSource
 
 ## Setting ItemTemplate
 
-ItemTemplate property of Rotator control is used to customize the contents of rotator items.
+ItemTemplate property of SfRotator control is used to customize the contents of Rotator items.
 
 {% highlight xaml %}
 

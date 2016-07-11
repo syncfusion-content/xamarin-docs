@@ -8,13 +8,13 @@ documentation: ug
 ---
 # Transition
 
-The `Transition` property specifies the sliding animations for the DrawerView panel. The `Transition` property has the following three options:
+The `Transition` property specifies the sliding animations for the DrawerView panel. The `Transition` property has the following three options.
 
 * SlideOnTop
 * Push
 * Reveal
 
-N> The default transition is SlideOnTop.
+N> The default Transition is SlideOnTop.
 
 ## SlideOnTop
 
@@ -62,7 +62,7 @@ This transition slides the Drawer and main content simultaneously.
 
 ## Reveal
 
-The Drawer content is in fixed position and the main content will slide to reveal the drawer content.
+This transition keeps the Drawer content in fixed position and the main content will be slide to reveal the drawer content.
 
 {% tabs %}	
 	

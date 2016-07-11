@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains you the steps to configure a Rotator control in a real-time scenario and also provides a walk-through on some of the customization features available in Rotator control.
+This section explains you the steps to configure a SfRotator control in a real-time scenario and also provides a walk-through on some of the customization features available in SfRotator control.
 
 ![](images/rotator.png)
 
@@ -78,9 +78,9 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {% endhighlight %}
 
 
-## Add and Configure the Rotator
+## Add and Configure the SfRotator
 
-* Adding reference to Rotator.
+* Adding reference to SfRotator.
 
 {% tabs %}
 
@@ -99,7 +99,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {% endtabs %}
 
 
-* Create an instance of Rotator.
+* Create an instance of SfRotator.
 
 {% tabs %}
 
@@ -161,9 +161,7 @@ The placement position of navigation strip items such as Thumbnail or Dots can b
 
 ## Setting ItemSource
 
-SfRotator items can be populated with a collection of image data. You can assign a collection to it. Collections include arrays, Lists and DataTables.For example you may wants to create a rotator model.
-
-The Rotator model looks like as follows.
+SfRotator items can be populated with a collection of image data. Collection includes Arrays, Lists and DataTables. For example you may wants to create a Rotator model with Image as follows.
 
 {% highlight C# %}
 	public RotatorModel(string imagestr)
@@ -181,7 +179,7 @@ The Rotator model looks like as follows.
      
 {% endhighlight %}
 
-Create and populate rotator collection as follows
+Create and populate Rotator collection as follows
 
 {% highlight C# %}
 
@@ -214,7 +212,7 @@ Assigning collection to ItemSource
 
 ## Setting ItemTemplate
 
-ItemTemplate property of Rotator control is used to customize the contents of rotator items.
+ItemTemplate property of SfRotator control is used to customize the contents of SfRotator items.
 
 {% highlight xaml %}
 

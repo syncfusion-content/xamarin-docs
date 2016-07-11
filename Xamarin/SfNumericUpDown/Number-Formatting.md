@@ -12,7 +12,7 @@ documentation: ug
 
 The `FormatString` property determines the format specifier by which the display text has to be formatted. 
 
-N> The control displays the formatted text on lost focus. Default Value of `FormatString` is "n".
+N> The control displays the formatted text on lost focus. Default Value of `FormatString` is "n". 
 
 It has three types,
 
@@ -71,7 +71,7 @@ It has three types,
 {% endtabs %}
 
 	
-N> Instead of using above `FormatString` types, we can provide any symbol or value as string in `FormatString` property which will be appended with the value in NumericUpDown.
+N> Instead of using above `FormatString` types, we can provide any symbol or value as string in `FormatString` property which will be appended with the value in SfNumericUpDown.
 
 ![](images/format.png)
 

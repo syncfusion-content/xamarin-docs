@@ -33,7 +33,7 @@ N> The `MaximumNumberDecimalDigits` property can be provided with positive value
 
 ## Nullable Value
 
-The null values can be set in NumericUpDown `Value` property, by setting `AllowNull` property value to true.
+The null values can be set in SfNumericUpDown `Value` property, by setting `AllowNull` property value to true.
 
 N> By default, the property value is false.
 
@@ -101,7 +101,6 @@ N> By default the minimum property value is 0 and maximum property value is 100.
 {% endhighlight %}
 
 {% endtabs %}
-
 
 ![](images/maximum.png)
 

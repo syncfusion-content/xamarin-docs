@@ -14,7 +14,7 @@ documentation: ug
 
 ## TooltipPlacement
 
-Rating control provides tooltip support with rating value using `TooltipPlacement` property. 
+SfRating control provides Tooltip support to the SfRating control using `TooltipPlacement` property. 
 
 N> By default, this property value is set to None.
 
@@ -64,7 +64,7 @@ The Tooltip will display on bottom of the SfRating control.
 
 ### None
 
-It is used to invisible the tool tip in the SfRating control.
+It is used to invisible the Tooltip in the SfRating control.
 
 {% tabs %}
 
@@ -86,7 +86,7 @@ It is used to invisible the tool tip in the SfRating control.
 
 ## ToolTipPrecision
 
-The `ToolTipPrecision` property sets the number precisions to be displayed after decimal point in tool tip. 
+The `ToolTipPrecision` property sets the number precisions to be displayed after decimal point in Tooltip. 
 
 N> The default value of ToolTip precision is 1.
 

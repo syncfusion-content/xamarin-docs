@@ -97,7 +97,7 @@ N> By default, the property value is false.
 
 ## Navigation Direction
 
-The `NavigationDirection` property specifies the direction in which items should be navigated in Rotator control.
+The `NavigationDirection` property specifies the direction in which items should be navigated in SfRotator control.
 
 * `Horizontal` - Items can be navigated in horizontal direction.
 

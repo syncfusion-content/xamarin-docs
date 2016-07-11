@@ -95,7 +95,7 @@ N> When the `SnapsTo` property is set to `StepValues`, the `StepFrequency` prope
 
 ## SnapsTo
 
-The `SnapsTo` property determines whether the RangeSlider snaps to steps or ticks. Available options for this property are
+The `SnapsTo` property determines whether the SfRangeSlider snaps to steps or ticks. Available options for this property are
 
 * `StepValues` - The `StepFrequency` property will be used to specify the interval between snap points.
 
@@ -123,7 +123,7 @@ N> The default option is Ticks.
 
 ## Orientation
 
-The Orientation property has the following two options.
+The `Orientation` property has the following two options.
 
 ### Horizontal
 

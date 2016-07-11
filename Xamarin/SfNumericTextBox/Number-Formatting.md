@@ -86,13 +86,13 @@ N> The `ParsingMode` is of type Parsers containing enum values of Double and Dec
 
 {% highlight c# %}
 
-	numericTextBox.ParserMode=ParserMode.Decimal;
+	numericTextBox.ParsingMode=ParsingMode.Decimal;
 	  
 {% endhighlight %}
 
 {% highlight xaml %}
 
-	<numeric:SfNumericTextBox x:Name="numericTextBox" ParserMode="Decimal" />
+	<numeric:SfNumericTextBox x:Name="numericTextBox" ParsingMode="Decimal" />
 	
 {% endhighlight %}
 

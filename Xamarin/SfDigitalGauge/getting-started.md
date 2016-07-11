@@ -156,16 +156,16 @@ The SfDigitalGauge control is configured entirely in C# code or by using XAML ma
 	digitalgauge.CharacterWidth= 25;
 	digitalgauge.SegmentStrokeWidth = 3;
 	digitalgauge.CharacterType = CharacterType.SegmentSeven;
-	digitalgauge.DimmedSegmentAlpha = 30;
+	digitalgauge.DisabledSegmentAlpha = 30;
 	digitalgauge.BackgroundColor = Color.FromRgb (235, 235, 235);
 	digitalgauge.CharacterStrokeColor = Color.FromRgb (20,108,237);
-	digitalgauge.DimmedSegmentColor = Color.FromRgb (20,108,237);
+	digitalgauge.DisabledSegmentColor = Color.FromRgb (20,108,237);
 
 {% endhighlight %}
 
 {% highlight xaml %}
 
-	<gauge:SfDigitalGauge x:Name="digitalgauge" SegmentStrokeWidth="3" CharacterHeight="50" CharacterWidth="25" CharacterType="SegmentSeven" DimmedSegmentAlpha="30" />
+	<gauge:SfDigitalGauge x:Name="digitalgauge" SegmentStrokeWidth="3" CharacterHeight="50" CharacterWidth="25" CharacterType="SegmentSeven" DisabledSegmentAlpha="30" />
 
 {% endhighlight %}
 

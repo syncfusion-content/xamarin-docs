@@ -104,7 +104,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% endhighlight %}
 
-## Add and Configure the BusyIndicator
+## Add and Configure the SfBusyIndicator
 
 * Adding reference to SfBusyIndicator.
 

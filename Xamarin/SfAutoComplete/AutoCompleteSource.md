@@ -36,11 +36,11 @@ The `AutoCompleteSource` property is used to populate the list of data to the su
 	
 ![](images/autocompletesource.png)
 
-## ItemsSource
+## ItemSource
 
-ItemSource is a collection of AutoComplete items which holds the ImageName and TextProperties that to be displayed in suggestions.
+ItemSource is a collection of SfAutoComplete items which holds the ImageName and TextProperties that to be displayed in suggestions.
 
-The AutoComplete model looks as follows
+The SfAutoComplete model looks as follows.
 
 {% highlight C# %}
 

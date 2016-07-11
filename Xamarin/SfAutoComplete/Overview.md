@@ -16,7 +16,7 @@ The Essential Xamarin AutoComplete widget enables user to provide their input wi
 
 * `Autocomplete Mode` - Provides Append, Suggest and SuggestAppend options to decide the suggestion pattern for displaying the filtered data.
 
-* `Suggestion Mode` - Provides various options to decide the filter data to be displayed.
+* `Suggestion Mode` - Provides various options to filter the data to be displayed.
 
 * `Watermark` - Provides a hint to start with input.
 

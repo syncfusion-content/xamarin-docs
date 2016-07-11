@@ -11,13 +11,13 @@ documentation: ug
 
 ## Min and Max Dates
 
-Visible dates can be restricted between certain range of dates using `MinDate` and `MaxDate` properties available in calendar control. It is applicable in all the calendar views.
+Visible dates can be restricted between certain range of dates using `MinDate` and `MaxDate` properties available in SfCalendar control. It is applicable in all the calendar views.
 
 The inline feature in month view will work only within the min max date range.
 
 Beyond the min max date range, following restrictions will be applied.
 
-* Date navigations features of move to date will be restricted.
+* Date navigation features of move to date will be restricted.
 
 * Cannot swipe the control using touch gesture.
 
@@ -46,7 +46,7 @@ Beyond the min max date range, following restrictions will be applied.
 
 ## Blackout dates
 
-In Calendar, BlackoutDates refers the disabled dates that restrict the user from selecting it. These dates will be marked with slanted Stripes.
+In SfCalendar, BlackoutDates refers the disabled dates that restrict the user from selecting it. These dates will be marked with slanted Stripes.
 
 The BlackoutDays can be achieved in two ways.
 

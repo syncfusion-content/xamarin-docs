@@ -9,9 +9,9 @@ documentation: ug
 
 # Built-in Views
 
-Calendar control provides two types of views to display dates such as month view and year view. It can be assigned to the calendar control by using view mode property.
+Calendar control provides two types of views to display dates such as month view and year view. It can be assigned to the SfCalendar control by using `ViewMode` property.
 
-By default calendar control is assigned with month view. Based on the user’s preference calendar viewed in any of the available two type.
+By default SfCalendar control is assigned with month view. Based on the user’s preference SfCalendar can be viewed in any of the available two type.
 
 ## Month View
 
@@ -41,7 +41,7 @@ The dates in month view can be selected by three ways such as single, multiple a
 
 * Current day text color can be modified using `TodayTextColor`.
 
-* The month view label settings class has the APIs to change date text size, day text size and format options are available.
+* The month view label settings class has the APIs to change date text size, day text size and format options.
 
 * The background color of the inline view can be modified using `InlineBackgroundColor` property.
 
@@ -77,7 +77,7 @@ N> Similar way there are many settings available to modify Text and Background c
 
 ## YearView
 
-This displays entire dates/month of a particular year, by default current year will be displayed on loading. The Years can be changed by swiping back and forth or `forward` and `backward` methods can be used. The Months can be navigated quickly by selecting on the particular month in year view.
+This displays entire dates/month of a particular year, by default current year will be displayed on loading. The Years can be changed by swiping back and forth or `forward` and `backward` methods. The Months can be navigated quickly by selecting on the particular month in year view.
 
 {% tabs %}
 

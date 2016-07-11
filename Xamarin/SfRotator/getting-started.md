@@ -86,13 +86,13 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% highlight C# %}
 
-	using Com.Syncfusion.SfRotator.XForms; 
+	using Syncfusion.SfRotator.XForms; 
 
 {% endhighlight %}
 
 {% highlight xaml %}
 
-	xmlns:rotate="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms"
+	xmlns:rotator="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms"
 	
 {% endhighlight %}
 

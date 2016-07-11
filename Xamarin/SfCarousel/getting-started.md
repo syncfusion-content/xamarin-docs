@@ -227,6 +227,8 @@ Create and populate carousel collection as follows
 	list.Add(new CarouselModel("image3.png"));
     list.Add(new CarouselModel("image4.png"));
     list.Add(new CarouselModel("image5.png"));
+	
+	return list;
 	}
 
 {% endhighlight %}

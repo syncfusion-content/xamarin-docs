@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Range
 
-Ranges of the linear scale are a collection of the linear range. A linear range is a visual element that starts with a specified StartValue and ends with a specified EndValue within the linear scale. You can mention these start and end values are mentioned using LinearRange class.
+Ranges of the linear scale are a collection of the linear range. A linear range is a visual element that starts with a specified StartValue and ends with a specified EndValue within the linear scale. These start and end values can be mentioned using LinearRange class.
 
 {% tabs %}
 

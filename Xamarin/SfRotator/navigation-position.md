@@ -15,7 +15,7 @@ The `NavigationStripPosition` position specifies the placement position of the n
 
 There are four available positions,
 
-* `Bottom` - Sets the position of the navigation bar items to bottom.
+* `Bottom` - Sets the position of the navigation bar items to the bottom.
 
 {% tabs %}
 
@@ -33,7 +33,7 @@ There are four available positions,
 
 {% endtabs %}
 
-* `Left` - Sets the position of the navigation bar items to left.
+* `Left` - Sets the position of the navigation bar items to the left.
 
 {% tabs %}
 
@@ -51,7 +51,7 @@ There are four available positions,
 
 {% endtabs %}
 
-* `Top` - Sets the position of the navigation bar items to top.
+* `Top` - Sets the position of the navigation bar items to the top.
 
 {% tabs %}
 
@@ -69,7 +69,7 @@ There are four available positions,
 
 {% endtabs %}
 
-* `Right` - Sets the position of the navigation bar items to right.
+* `Right` - Sets the position of the navigation bar items to the right.
 
 {% tabs %}
 

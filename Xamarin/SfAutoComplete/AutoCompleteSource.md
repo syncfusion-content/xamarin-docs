@@ -45,11 +45,10 @@ The SfAutoComplete model looks as follows.
 {% highlight C# %}
 
 	public AutoCompleteModel(string label,string imagestr)
-	{
-        {
-            Label = label;
-			Image = imagestr;
-        }
+	{        
+         Label = label;
+	     Image = imagestr;
+        
     	 private string _label;
 
         public string Label

@@ -106,7 +106,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ## Add and Configure the SfCalendar
 
-* Adding reference to Sfcalendar.
+* Adding reference to SfCalendar.
 
 {% tabs %}
 

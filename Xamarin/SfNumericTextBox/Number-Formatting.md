@@ -72,13 +72,13 @@ It has three types,
 
 {% endtabs %}
 	
-N> Instead of using above `FormatString` types, we can provide any symbol or value as string in `FormatString` property which will be appended with the value in NumericTextBox. 
+N> Instead of using above `FormatString` types, we can provide any symbol or value as string in `FormatString` property which will be appended with the value in SfNumericTextBox. 
 
 ![](images/FormatString.png)
 
 ## Parser Mode
 
-The value of the NumericTextBox can be parsed based on the `ParsingMode` property. 
+The value of the SfNumericTextBox can be parsed based on the `ParsingMode` property. 
 
 N> The `ParsingMode` is of type Parsers containing enum values of Double and Decimal. The default Value for `ParsingMode` is Double.
 
@@ -86,13 +86,13 @@ N> The `ParsingMode` is of type Parsers containing enum values of Double and Dec
 
 {% highlight c# %}
 
-	numericTextBox.ParserMode=ParserMode.Decimal;
+	numericTextBox.ParsingMode=ParsingMode.Decimal;
 	  
 {% endhighlight %}
 
 {% highlight xaml %}
 
-	<numeric:SfNumericTextBox x:Name="numericTextBox" ParserMode="Decimal" />
+	<numeric:SfNumericTextBox x:Name="numericTextBox" ParsingMode="Decimal" />
 	
 {% endhighlight %}
 

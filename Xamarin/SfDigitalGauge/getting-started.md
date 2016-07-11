@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section provides overview for working with Essential DigitalGauge for Xamarin.Forms. You can walk through the entire process of creating an DigitalGauge.
+This section provides overview for working with Essential DigitalGauge for Xamarin.Forms. You can walk through the entire process of creating an SfDigitalGauge.
 
 ![](Getting-Started_images/gettingstarted.png)
 
@@ -104,11 +104,11 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% endhighlight %}
 
-## Add and Configure the DigitalGauge
+## Add and Configure the SfDigitalGauge
 
-The DigitalGauge control is configured entirely in C# code or by using XAML markup. The following steps explain on how to create a DigitalGauge and configure its elements,
+The SfDigitalGauge control is configured entirely in C# code or by using XAML markup. The following steps explain on how to create a SfDigitalGauge and configure its elements.
 
-* Adding reference to DigitalGauge.
+* Adding reference to SfDigitalGauge.
 
 {% tabs %}
 
@@ -126,7 +126,7 @@ The DigitalGauge control is configured entirely in C# code or by using XAML mark
 
 {% endtabs %}
 
-* Create an instance for DigitalGauge control.
+* Create an instance for SfDigitalGauge control.
 
 {% tabs %}
 
@@ -144,7 +144,7 @@ The DigitalGauge control is configured entirely in C# code or by using XAML mark
 
 {% endtabs %}
 
-* Configure the properties of DigitalGauge.
+* Configure the properties of SfDigitalGauge.
 
 {% tabs %}
 
@@ -156,16 +156,16 @@ The DigitalGauge control is configured entirely in C# code or by using XAML mark
 	digitalgauge.CharacterWidth= 25;
 	digitalgauge.SegmentStrokeWidth = 3;
 	digitalgauge.CharacterType = CharacterType.SegmentSeven;
-	digitalgauge.DimmedSegmentAlpha = 30;
+	digitalgauge.DisabledSegmentAlpha = 30;
 	digitalgauge.BackgroundColor = Color.FromRgb (235, 235, 235);
 	digitalgauge.CharacterStrokeColor = Color.FromRgb (20,108,237);
-	digitalgauge.DimmedSegmentColor = Color.FromRgb (20,108,237);
+	digitalgauge.DisabledSegmentColor = Color.FromRgb (20,108,237);
 
 {% endhighlight %}
 
 {% highlight xaml %}
 
-	<gauge:SfDigitalGauge x:Name="digitalgauge" SegmentStrokeWidth="3" CharacterHeight="50" CharacterWidth="25" CharacterType="SegmentSeven" DimmedSegmentAlpha="30" />
+	<gauge:SfDigitalGauge x:Name="digitalgauge" SegmentStrokeWidth="3" CharacterHeight="50" CharacterWidth="25" CharacterType="SegmentSeven" DisabledSegmentAlpha="30" />
 
 {% endhighlight %}
 
@@ -173,7 +173,7 @@ The DigitalGauge control is configured entirely in C# code or by using XAML mark
 
 ## Setting Value
 
-* The `Value` property sets the display value in the DigitalGauge.
+* The `Value` property sets the display value in the SfDigitalGauge.
 
 {% tabs %}
 

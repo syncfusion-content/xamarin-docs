@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains you the steps to configure a RangeSlider control in a real-time scenario and also provides a walk-through on some of the customization features available in RangeSlider control.
+This section explains you the steps to configure a SfRangeSlider control in a real-time scenario and also provides a walk-through on some of the customization features available in SfRangeSlider control.
 
 ![](images/RangeSlider.png)
 
@@ -100,9 +100,9 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% endhighlight %}
 
-## Add and Configure the RangeSlider
+## Add and Configure the SfRangeSlider
 
-* Adding reference to RangeSlider.
+* Adding reference to SfRangeSlider.
 
 {% tabs %}
 
@@ -165,7 +165,7 @@ N> The `ShowRange` property is used to switch between a single thumb and double 
 
 ## Restricting Values
 
-Set the minimum and maximum value for the slider by using the `Minimum` and `Maximum` properties in the RangeSlider.
+Set the minimum and maximum value for the slider by using the `Minimum` and `Maximum` properties in the SfRangeSlider.
 
 {% tabs %}
 

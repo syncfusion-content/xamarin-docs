@@ -10,7 +10,7 @@ documentation: ug
 
 ## Culture
 
-The NumericUpDown value can be localized to any specific culture. It can be specified by setting the `Culture` property with `System.Globalization.CultureInfo` object instance.
+The SfNumericUpDown value can be localized to any specific culture. It can be specified by setting the `Culture` property with `System.Globalization.CultureInfo` object instance.
 
 N> Default `Culture` property value is en-US.
 
@@ -29,7 +29,6 @@ N> Default `Culture` property value is en-US.
 {% endhighlight %}
 
 {% endtabs %}
-
 
 ![](images/Culture.png)
 

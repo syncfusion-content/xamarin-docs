@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains you the steps to configure a rating control in a real-time scenario and also provides a walk-through on some of the customization features available in Rating control.
+This section explains you the steps to configure a SfRating control in a real-time scenario and also provides a walk-through on some of the customization features available in SfRating control.
 
 ![](images/gettingstarted.png)
 
@@ -110,11 +110,11 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% endhighlight %}
 
-## Add and Configure the Rating
+## Add and Configure the SfRating
 
-The Rating control is configured entirely in C# code or by using XAML markup. The following steps explain on how to create a Rating and configure its elements,
+The SfRating control is configured entirely in C# code or by using XAML markup. The following steps explain on how to create a SfRating and configure its elements.
 
-* Adding reference to rating.
+* Adding reference to SfRating.
 
 {% tabs %}
 
@@ -132,7 +132,7 @@ The Rating control is configured entirely in C# code or by using XAML markup. Th
 
 {% endtabs %}
 
-* Create an instance for rating control.
+* Create an instance for SfRating control.
 
 {% tabs %}
 
@@ -153,7 +153,7 @@ The Rating control is configured entirely in C# code or by using XAML markup. Th
 
 ## Setting Value
 
-* The `Value` property sets the display value of the rating. 
+* The `Value` property sets the display value of the SfRating. 
 
 N> By default, property value is 0.
 

@@ -13,7 +13,7 @@ documentation : ug
 
 The `Duration` property of the SfCarousel control is used to specify the time taken to move an item to the selected item position. 
 
-N> The duration is specified in milliseconds.  The default value is 300ms.
+N> The duration is specified in milliseconds. The default value is 300ms.
 
 {% tabs %}
 

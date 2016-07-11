@@ -7,9 +7,9 @@ control: Calendar
 documentation: ug
 ---
 
-# Calendar Events
+# SfCalendar Events
 
-The events of the Calendar control are as follows.
+The events of the SfCalendar control are as follows.
 
 <table>
 <tr>
@@ -200,7 +200,7 @@ OnMonthCellLoaded  event allows us to customize calendar control. It returns Mon
 
 ### MonthCell
 
-MonthCell consisting of following members which allows us to customize calendar control in Month View mode.
+MonthCell consisting of following members which allows us to customize SfCalendar control in Month View mode.
 
 <table>
 <tr>

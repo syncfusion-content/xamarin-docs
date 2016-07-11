@@ -9,7 +9,7 @@ documentation : ug
 
 # Getting Started
 
-This section explains you the steps to configure a AutoComplete control in a real-time scenario and also provides a walk-through on some of the customization features available in AutoComplete control.
+This section explains you the steps to configure a SfAutoComplete control in a real-time scenario and also provides a walk-through on some of the customization features available in SfAutoComplete control.
 
 ![](images/gettingstarted.png)
 
@@ -105,9 +105,9 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% endhighlight %}
 
-## Add and Configure the AutoComplete
+## Add and Configure the SfAutoComplete
 
-* Adding reference to autocomplete.
+* Adding reference to SfAutoComplete.
 
 {% tabs %}
 
@@ -125,7 +125,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% endtabs %}
 
-* Create an instance for autocomplete control and adding to application.
+* Create an instance of SfAutoComplete control and add it to the application.
 
 {% tabs %}
 
@@ -145,7 +145,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ## Manipulation AutoCompleteSource to AutoComplete
 
-You can set the suggestion list to the AutoComplete using the AutoCompleteSource property. Check autocomplete mode for more details.
+You can set the suggestion list to the SfAutoComplete using the AutoCompleteSource property. Check autocomplete mode for more details.
 
 {% tabs %}
 
@@ -169,7 +169,7 @@ You can set the suggestion list to the AutoComplete using the AutoCompleteSource
 
 ## Adding Customizations
 
-Autocomplete can be customized using the `Watermark` and `PopupDelay` properties.
+SfAutocomplete can be customized using the `Watermark` and `PopupDelay` properties.
 
 {% tabs %}
 

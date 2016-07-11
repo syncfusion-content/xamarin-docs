@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains you the steps to configure a Calendar control in a real-time scenario and also provides a walk-through on some of the customization features available in Calendar control.
+This section explains you the steps to configure a SfCalendar control in a real-time scenario and also provides a walk-through on some of the customization features available in Calendar control.
 
 ![](images/gettingstarted.png)
 
@@ -104,9 +104,9 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% endhighlight %}
 
-## Add and Configure the Calendar
+## Add and Configure the SfCalendar
 
-* Adding reference to calendar.
+* Adding reference to Sfcalendar.
 
 {% tabs %}
 
@@ -145,7 +145,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ## Enabling Multiple Selection 
 
-To enable multiple selection, Change the selection type using `SelectionMode` property. Check the [Selection Mode](http://help.syncfusion.com/android/sfcalendar/selectionmode)  section for more details.
+To enable multiple selection, change the selection type using `SelectionMode` property. Check the [Selection Mode](http://help.syncfusion.com/android/sfcalendar/selectionmode)  section for more details.
 
 {% tabs %}
 
@@ -166,7 +166,7 @@ To enable multiple selection, Change the selection type using `SelectionMode` pr
 
 ## Setting blackout dates
 
-Add the dates into `BlackOutDates` property, that needs to be disabled among visible dates. Check the [BlackOutDates](http://help.syncfusion.com/android/sfcalendar/blackoutdates) section for more details.
+Add the dates into `BlackOutDates` property, which needs to be disabled among visible dates. Check the [BlackOutDates](http://help.syncfusion.com/android/sfcalendar/blackoutdates) section for more details.
 
 For instance add all the holiday dates to blackout dates property.
 

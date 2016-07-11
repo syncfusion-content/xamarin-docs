@@ -85,13 +85,13 @@ N> The `ParsingMode` is of type Parsers containing enum values of Double and Dec
 
 {% highlight C# %}
 
-	numericUpDown.ParserMode=ParserMode.Decimal;
+	numericUpDown.ParsingMode=ParsingMode.Decimal;
 	  
 {% endhighlight %}
 
 {% highlight xaml %}
 
-	<numeric:SfNumericUpDown x:Name="numericUpDown" ParserMode="Decimal"/>
+	<numeric:SfNumericUpDown x:Name="numericUpDown" ParsingMode="Decimal"/>
 	
 {% endhighlight %}
 

@@ -26,13 +26,13 @@ The Tooltip will display on top of the SfRating control.
 
 {% highlight C# %}
 
-	rating.TooltipPlacement=TooltipPlacement.LeftTop;
+	rating.TooltipPlacement=TooltipPlacement.TopLeft;
 
 {% endhighlight %} 
 
 {% highlight xaml %}
 
-	<rating:SfRating x:Name="rating" TooltipPlacement="LeftTop" />
+	<rating:SfRating x:Name="rating" TooltipPlacement="TopLeft" />
 	
 {% endhighlight %}
 
@@ -48,13 +48,13 @@ The Tooltip will display on bottom of the SfRating control.
 
 {% highlight C# %}
 
-	rating.TooltipPlacement=TooltipPlacement.RightBottom;
+	rating.TooltipPlacement=TooltipPlacement.BottomRight;
 
 {% endhighlight %}
 
 {% highlight xaml %}
 
-	<rating:SfRating x:Name="rating" TooltipPlacement="RightBottom" />
+	<rating:SfRating x:Name="rating" TooltipPlacement="BottomRight" />
 	
 {% endhighlight %}
 
@@ -94,13 +94,13 @@ N> The default value of ToolTip precision is 1.
 
 {% highlight C# %}
 
-      rating.ToolTipPrecision=6;
+      rating.TooltipPrecision=6;
 
 {% endhighlight %}
 
 {% highlight xaml %}
 
-	<rating:SfRating x:Name="rating" ToolTipPrecision="6" />
+	<rating:SfRating x:Name="rating" TooltipPrecision="6" />
 	
 {% endhighlight %}
 

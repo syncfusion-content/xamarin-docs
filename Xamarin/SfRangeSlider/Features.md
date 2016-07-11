@@ -133,7 +133,7 @@ In this orientation, the values and the slider are set horizontally.
 
 {% highlight c# %}
 
-	rangeslider.Orientation=Orientation.Horizontal
+	rangeslider.Orientation=Orientation.Horizontal;
 
 {% endhighlight %}
 
@@ -157,7 +157,7 @@ N> The default option is Horizontal.
 
 {% highlight c# %}
 
-	rangeslider.Orientation=Orientation.Vertical
+	rangeslider.Orientation=Orientation.Vertical;
 
 {% endhighlight %}
 

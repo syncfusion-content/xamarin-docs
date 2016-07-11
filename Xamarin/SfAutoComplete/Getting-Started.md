@@ -151,7 +151,7 @@ You can set the suggestion list to the SfAutoComplete using the AutoCompleteSour
 
 {% highlight c# %}
 
-	private List<String> countryName = new List<String>();
+    List<String> countryName = new List<String>();
 	countryName.Add("Afghanistan");
 	countryName.Add("Akrotiri");
 	countryName.Add("Albania");
@@ -178,7 +178,7 @@ SfAutocomplete can be customized using the `Watermark` and `PopupDelay` properti
 	countryAutoComplete.SuggestionMode = SuggestionMode.StartsWith;
 	countryAutoComplete.AutoCompleteMode = AutoCompleteMode.Suggest;
 	countryAutoComplete.MaximumDropDownHeight = 300;
-	countryAutoComplete.MinimumPrefixCharacters = 2
+	countryAutoComplete.MinimumPrefixCharacters = 2;
 	countryAutoComplete.HeightRequest = 40;
 	countryAutoComplete.Watermark = "Enter a country name";  
 

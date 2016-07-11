@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section provides overview for working with Essential NavigationDrawer for Xamarin.Forms. You can walk through the entire process of creating an NavigationDrawer.
+This section provides overview for working with Essential SfNavigationDrawer for Xamarin.Forms. You can walk through the entire process of creating an SfNavigationDrawer.
 
 ![](images/getting-started.png)
 
@@ -104,11 +104,11 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% endhighlight %}
 
-## Add and Configure the NavigationDrawer
+## Add and Configure the SfNavigationDrawer
 
-The NavigationDrawer control configured entirely in C# code or by using XAML markup. The following steps explain on how to create a NavigationDrawer and configure its elements,
+The SfNavigationDrawer control configured entirely in C# code or by using XAML markup. The following steps explain on how to create a SfNavigationDrawer and configure its elements.
 
-* Adding reference to NavigationDrawer.
+* Adding reference to SfNavigationDrawer.
 
 {% tabs %}
 
@@ -126,7 +126,7 @@ The NavigationDrawer control configured entirely in C# code or by using XAML mar
 
 {% endtabs %}
 
-* Create an instance of NavigationDrawer.
+* Create an instance of SfNavigationDrawer.
 
 {% tabs %}
 
@@ -147,7 +147,7 @@ The NavigationDrawer control configured entirely in C# code or by using XAML mar
 
 ### Setting Content View
 
-The main view of the NavigationDrawer can be set using `ContentView` property with desired views.
+The main view of the SfNavigationDrawer can be set using `ContentView` property with desired views.
 
 {% tabs %}
 
@@ -205,7 +205,7 @@ The main view of the NavigationDrawer can be set using `ContentView` property wi
 
 ### Setting DrawerContent View
 
-The sliding main content of the NavigationDrawer which is a part of DrawerPanel can be set using `DrawerContentView` property with desired views.
+The sliding main content of the SfNavigationDrawer which is a part of DrawerPanel can be set using `DrawerContentView` property with desired views.
 
 {% tabs %}
 

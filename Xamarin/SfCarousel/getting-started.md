@@ -9,7 +9,7 @@ documentation : ug
 
 # Getting Started
 
-This section explains you the steps to configure a Carousel control in a real-time scenario and also provides a walk-through on some of the customization features available in Carousel control.
+This section explains you the steps to configure a SfCarousel control in a real-time scenario and also provides a walk-through on some of the customization features available in SfCarousel control.
 
 ![](images/gettingstarted.png)
 
@@ -86,7 +86,7 @@ public MainPage()
 
 {% endhighlight %}
 
-Create an instance of SfCarouselRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below
+Create an instance of SfCarouselRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below.
 
 {% highlight C# %}
 
@@ -104,11 +104,11 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% endhighlight %}
 
-## Add and Configure the Carousel
+## Add and Configure the SfCarousel
 
-The Carousel control is configured entirely in C# code or by using XAML markup. The following steps explain on how to create a Carousel and configure its elements,
+The SfCarousel control is configured entirely in C# code or by using XAML markup. The following steps explain on how to create a SfCarousel and configure its elements,
 
-* Adding reference to carousel.
+* Adding reference to SfCarousel.
 
 {% tabs %}
 
@@ -147,7 +147,7 @@ The Carousel control is configured entirely in C# code or by using XAML markup. 
 
 ## Setting Offset
 
-Set the Offset property to specify the distance between the items in Carousel panel.
+Set the Offset property to specify the distance between the items in SfCarousel panel.
 
 {% tabs %}
 
@@ -170,7 +170,7 @@ Set the Offset property to specify the distance between the items in Carousel pa
 
 ## Setting Rotation Angle
 
-Set the RotationAngle property to decide the angle in which items should be rotated.
+Set the `RotationAngle` property to decide the angle in which items should be rotated.
 
 {% tabs %}
 
@@ -193,9 +193,8 @@ Set the RotationAngle property to decide the angle in which items should be rota
 
 ## Setting DataSource
 
-SfCarousel items can be populated with a collection of image data. You can assign a collection to it. Collections include arrays, Lists and DataTables.For example you may wants to create a carousel model.
+SfCarousel items can be populated with a collection of image data. This collection includes Arrays, Lists and DataTables. For example you can create a SfCarousel model as follows.
 
-The carousel model looks as follows
 
 {% highlight C# %}
 
@@ -213,7 +212,7 @@ The carousel model looks as follows
 
 {% endhighlight %}
 
-Create and populate carousel collection as follows
+Create and populate SfCarousel collection as follows.
 
 {% highlight C# %}
 
@@ -226,8 +225,7 @@ Create and populate carousel collection as follows
     list.Add(new CarouselModel("image2.png"));
 	list.Add(new CarouselModel("image3.png"));
     list.Add(new CarouselModel("image4.png"));
-    list.Add(new CarouselModel("image5.png"));
-	
+    list.Add(new CarouselModel("image5.png"));	
 	return list;
 	}
 
@@ -235,7 +233,7 @@ Create and populate carousel collection as follows
 
 ## Setting ItemTemplate
 
-ItemTemplate property of Carousel control is used to customize the contents of carousel items.
+`ItemTemplate` property of SfCarousel control is used to customize the contents of SfCarousel items.
 
 {% highlight xaml %}
 

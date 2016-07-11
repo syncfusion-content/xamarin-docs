@@ -35,7 +35,7 @@ N> When this property is set to false, single thumb is displayed without any ran
 
 ## RangeStart
 
-Gets and sets the start value of the range.
+Gets and sets the start value of the Range.
 
 {% tabs %}
 
@@ -55,7 +55,7 @@ Gets and sets the start value of the range.
 
 ## RangeEnd
 
-Gets and sets the end value of the range.
+Gets and sets the end value of the Range.
 
 {% tabs %}
 

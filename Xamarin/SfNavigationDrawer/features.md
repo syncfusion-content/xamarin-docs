@@ -12,7 +12,7 @@ documentation: ug
 
 ## ContentView
 
-The main view of the NavigationDrawer can be set using `ContentView` property with desired views.
+The main view of the SfNavigationDrawer can be set using `ContentView` property with desired views.
 
 {% tabs %}
 
@@ -72,7 +72,7 @@ The main view of the NavigationDrawer can be set using `ContentView` property wi
 
 ## DrawerContentView
 
-The sliding main content of the NavigationDrawer which is a part of DrawerPanel can be set using `DrawerContentView` property with desired views.
+The sliding main content of the SfNavigationDrawer which is a part of DrawerPanel can be set using `DrawerContentView` property with desired views.
 
 {% tabs %}
 

@@ -19,7 +19,7 @@ The Essential Xamarin SfRangeSlider control allows you to select the range of va
 
 * `Ticks Placement` – Support to determine the placement in which tick marks should be drawn.
 
-* `Tick Frequency` –IOptions to calculate number of ticks to be displayed based on frequency.
+* `Tick Frequency` –Options to calculate number of ticks to be displayed based on frequency.
 
 * `Maximum` - Determines the maximum possible value of the range.
 

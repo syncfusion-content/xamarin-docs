@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section provides overview for working with Essential NumericUpDown for Xamarin.Forms. You can walk through the entire process of creating a NumericUpDown.
+This section provides overview for working with Essential SfNumericUpDown for Xamarin.Forms. You can walk through the entire process of creating a SfNumericUpDown.
 
 ![](images/gettingstarted.png)
 
@@ -104,11 +104,11 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% endhighlight %}
 
-## Add and Configure the NumericUpDown
+## Add and Configure the SfNumericUpDown
 
-The NumericUpDown control configured entirely in C# code or by using XAML markup. The following steps explain on how to create a NumericUpDown and configure its elements,
+The SfNumericUpDown control configured entirely in C# code or by using XAML markup. The following steps explain on how to create a SfNumericUpDown and configure its elements.
 
-* Adding reference to NumericUpDown.
+* Adding reference to SfNumericUpDown.
 
 {% tabs %}
 
@@ -127,7 +127,7 @@ The NumericUpDown control configured entirely in C# code or by using XAML markup
 {% endtabs %}
 
 
-* Create an instance of NumericUpDown.
+* Create an instance of SfNumericUpDown.
 
 {% tabs %}
 
@@ -148,7 +148,7 @@ The NumericUpDown control configured entirely in C# code or by using XAML markup
 
 ## Setting Value
 
-The NumericUpDown control display value can be set using `Value` property. 
+The SfNumericUpDown control display value can be set using `Value` property. 
 
 {% tabs %}
 
@@ -168,7 +168,7 @@ The NumericUpDown control display value can be set using `Value` property.
 
 ## Enable Parsing Mode
 
-The value of the NumericUpDown can be parsed based on the `ParsingMode` property. 
+The value of the SfNumericUpDown can be parsed based on the `ParsingMode` property. 
 
 N> The `ParsingMode` is of type Parsers containing enum values of Double and Decimal.
 

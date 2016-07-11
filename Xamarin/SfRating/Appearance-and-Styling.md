@@ -85,7 +85,7 @@ N> The default property value is 5.
  
 ## Read Only
 
-Rating control provides support for changeable or unchangeable values for Rating control. This is achieved by the ReadOnly property. When this property is set to True, the Rating value becomes unchangeable. By default, this property value is set to False.
+SfRating control provides support for changeable or unchangeable values for Rating control. This is achieved by the ReadOnly property. When this property is set to True, the Rating value becomes unchangeable. By default, this property value is set to False.
 
 {% tabs %}
 
@@ -147,7 +147,7 @@ After adding Rating settings , add the Rating Settings instance to Rating instan
  
 ### Rated Fill
 
-The RatedFill property fills the rated area with the specified solid color in the SfRating control.
+The `RatedFill` property fills the rated area with the specified solid color in the SfRating control.
 
 {% tabs %}
 
@@ -191,7 +191,7 @@ The RatedStroke property sets the stroke for the rated area with the specified s
  
 ### Rated Stroke Thickness
 
-The RatedStrokeThickness property sets the stroke thickness for the rated area with the specified value in the SfRating control.
+The `RatedStrokeThickness` property sets the stroke thickness for the rated area with the specified value in the SfRating control.
 
 {% tabs %}
 
@@ -213,7 +213,7 @@ The RatedStrokeThickness property sets the stroke thickness for the rated area w
  
 ### UnRated Fill
 
-The UnRatedFill property fills the unrated area with the specified solid color in the SfRating control.
+The `UnRatedFill` property fills the unrated area with the specified solid color in the SfRating control.
 
 {% tabs %}
 
@@ -235,7 +235,7 @@ The UnRatedFill property fills the unrated area with the specified solid color i
 
 ### UnRated Stroke
 
-The UnRatedStroke property sets the stroke for the unrated area with the specified solid color in the SfRating control.
+The `UnRatedStroke` property sets the stroke for the unrated area with the specified solid color in the SfRating control.
 
 {% tabs %}
 
@@ -257,7 +257,7 @@ The UnRatedStroke property sets the stroke for the unrated area with the specifi
 
 ### UnRated Stroke Thickness
 
-The UnRatedStrokeThickness property sets the stroke thickness for the unrated area with the specified value in the SfRating control.
+The `UnRatedStrokeThickness` property sets the stroke thickness for the unrated area with the specified value in the SfRating control.
 
 {% tabs %}
 

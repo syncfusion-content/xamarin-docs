@@ -9,7 +9,7 @@ documentation: ug
 
 # CharacterWidth
 
-The value of the Digital Characters is scaled by altering the width of the digital characters. It is achieved by setting the characterWidth property.
+The value of the Digital Characters is scaled by altering the width of the digital characters. It is achieved by setting the `CharacterWidth` property.
 
 {% tabs %}
 

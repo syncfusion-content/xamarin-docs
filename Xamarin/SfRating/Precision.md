@@ -11,7 +11,7 @@ documentation: ug
 
 # Precision Mode
 
-The precision mode defines the accuracy level of the rating control. It has Standard, Half and Exact options.
+The Precision mode defines the accuracy level of the SfRating control. It has Standard, Half and Exact options.
 
 ## Standard
 

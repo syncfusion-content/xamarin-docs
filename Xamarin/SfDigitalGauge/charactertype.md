@@ -19,7 +19,7 @@ The Digital Characters can be drawn in 4 different segments as follows.
 
 4. EightCrossEightDotMatrix
 
-N> By default, SegmentSeven is the default CharacterType in the Digital Gauge.
+N> By default, SegmentSeven is the default CharacterType in the SfDigitalGauge.
 
 ## Seven Segment
 

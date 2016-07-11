@@ -33,7 +33,7 @@ N> The default value of the `ShowValueLabel` property is false.
 
 ## CustomLabel
 
-To display custom labels, `ShowCustomLabel` property should be set to true and need to populate the `CustomLabels` property with observable collection of items by specifying the custom labels for corresponding values.
+To display custom labels, `ShowCustomLabel` property should be set to true and need to populate the `CustomLabels` property with observable collection of items. Each items should be specified by the custom labels for corresponding values.
 
 {% tabs %}
 

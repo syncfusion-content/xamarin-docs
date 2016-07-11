@@ -9,7 +9,7 @@ documentation: ug
 
 # CharacterHeight
 
-The value of the Digital Characters is scaled by altering the height of the digital characters. It is achieved by setting the characterHeight property in the Digital GaugeSets the height of character in digital gauge.
+The value of the Digital Characters is scaled by altering the height of the digital characters. It is achieved by setting the `CharacterHeight` property in the SfDigitalGauge.
 
 {% tabs %}
 

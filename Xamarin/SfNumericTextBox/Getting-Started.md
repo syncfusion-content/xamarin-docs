@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section provides overview for working with Essential NumericTextBox for Xamarin.Forms. You can walk through the entire process of creating a NumericTextBox.
+This section provides overview for working with Essential NumericTextBox for Xamarin.Forms. You can walk through the entire process of creating a SfNumericTextBox.
 
 ![](images/gettingstarted.png)
 
@@ -104,11 +104,11 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% endhighlight %}
 
-## Add and Configure the NumericTextBox
+## Add and Configure the SfNumericTextBox
 
-The NumericTextBox control configured entirely in C# code or by using XAML markup. The following steps explain on how to create a NumericTextBox and configure its elements,
+The SfNumericTextBox control configured entirely in C# code or by using XAML markup. The following steps explain on how to create a NumericTextBox and configure its elements,
 
-* Adding reference to NumericTextBox.
+* Adding reference to SfNumericTextBox.
 
 {% tabs %}
 
@@ -126,7 +126,7 @@ The NumericTextBox control configured entirely in C# code or by using XAML marku
 
 {% endtabs %}
 
-* Create an instance of NumericTextBox.
+* Create an instance of SfNumericTextBox.
 
 {% tabs %}
 
@@ -146,7 +146,7 @@ The NumericTextBox control configured entirely in C# code or by using XAML marku
 
 ## Setting Value
 
-The NumericTextBox control display value can be set using `Value` property.
+The SfNumericTextBox control display value can be set using `Value` property.
 
 {% tabs %}
 
@@ -167,7 +167,7 @@ The NumericTextBox control display value can be set using `Value` property.
 
 ## Enable Parsing Mode
 
-The value of the NumericTextBox can be parsed based on the `ParsingMode` property. 
+The value of the SfNumericTextBox can be parsed based on the `ParsingMode` property. 
 
 N> The `ParsingMode` is of type Parsers containing enum values of Double and Decimal.
 

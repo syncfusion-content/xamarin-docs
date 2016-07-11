@@ -9,11 +9,11 @@ documentation : ug
 
 # Populating Data
 
-## ItemsSource
+## ItemSource
 
-SfCarousel items can be populated with a collection of image data. For example, a user may want to create a SfCarousel control which will display a list of images.For example you may wants to create carousel model.
+SfCarousel items can be populated with a collection of image data. For example, a user may wants to create a SfCarousel control which will display a list of images.
 
-The Carousel model looks as follows
+The SfCarousel model looks as follows.
 
 {% highlight C# %}
 
@@ -31,7 +31,7 @@ The Carousel model looks as follows
 
 {% endhighlight %}
 
-Create and populate carousel collection as follows
+Create and populate SfCarousel collection as follows
 
 {% highlight C# %}
 
@@ -68,9 +68,9 @@ SfCarousel contents can be customized by using `ItemTemplate` property. Through 
 
 ## SelectedIndex
 
-It gets or sets the Selected Item index value of carousel control to bring the particular item to center of the screen.
+It gets or sets the Selected Item index value of SfCarousel control to bring the particular item to center of the screen.
 
-N> The selectedIndex property will be 0 by default
+N> The `SelectedIndex` property will be 0 by default
 
 {% tabs %}
 

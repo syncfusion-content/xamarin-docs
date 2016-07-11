@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains how to create the SfLinearGauge and configure its properties.This section provides overview for working with SfLinearGauge for Xamarin.Forms. It walks through the entire process of creating a SfLinearGauge.
+This section explains how to create the SfLinearGauge and configure its properties. This section provides overview for working with SfLinearGauge for Xamarin.Forms. It walks through the entire process of creating a SfLinearGauge.
 
 ![](images/LinearGauge.png)
 
@@ -106,9 +106,9 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ## Adding and Configuring the LinearGauge
 
-The SfLinearGauge control configured entirely in C# code or by using XAML markup.The following steps explain on how to create an SfLinearGauge and configure its elements,
+The SfLinearGauge control configured entirely in C# code or by using XAML markup.The following steps explain on how to create an SfLinearGauge and configure its elements.
 
-* Adding reference to linearGauge.
+* Adding reference to SfLinearGauge.
 
 {% tabs %}
 
@@ -146,7 +146,7 @@ The SfLinearGauge control configured entirely in C# code or by using XAML markup
 
 ## Add Scales
 
-We will add one or more scale value to linear gauge. Before adding that scales we have to set Maximum and Minimum value to this.
+We will add one or more scale value to SfLinearGauge. Before adding that scales we have to set Maximum and Minimum value to this.
 
 {% tabs %}
 
@@ -177,7 +177,7 @@ We will add one or more scale value to linear gauge. Before adding that scales w
 
 ## Add Symbol Pointer
 
-We can point a value on scale in SfLinearGauge by creating instance of SymbolPointer.
+We can point a value on scale in SfLinearGauge by creating instance of `SymbolPointer`.
 
 {% tabs %}
 
@@ -226,7 +226,7 @@ Before adding that symbol and bar pointer into Scale’s pointer add value of th
 
 ## Add a Range
 
-We can improve the readability of data by including ranges that quickly display when values fall within specific ranges
+We can improve the readability of data by including ranges that quickly displays when values fall within a specific ranges.
 
 {% tabs %}
 

@@ -11,8 +11,9 @@ documentation : ug
 
 ## Setting ItemSource
 
-SfRotator items can be populated with a collection of image data. Collection includes Arrays, Lists and DataTables. For example you may wants to create a SfRotator model with Image as follows.
+SfRotator items can be populated with a collection of image data. You can assign a collection to it. Collections include arrays, Lists and DataTables.For example you may wants to create a rotator model.
 
+The Rotator model looks like as follows.
 
 {% highlight C# %}
 	
@@ -33,7 +34,7 @@ SfRotator items can be populated with a collection of image data. Collection inc
 
 {% endhighlight %}
 
-Create and populate Rotator collection as follows
+Create and populate rotator collection as follows
 
 {% highlight C# %}
 
@@ -66,24 +67,48 @@ Assigning collection to ItemSource
 
 ## Setting ItemTemplate
 
-ItemTemplate property of SfRotator control is used to customize the contents of Rotator items.
+SfRotator provides support to add a custom view as RotatorItems by designing a view inside its ItemTemplate. This template will be applied for all its items and its data will be binded.
 
 {% highlight xaml %}
 
 	<rotate:SfRotator x:Name="sfRotator"  Grid.Row="0" NavigationDelay="2000" ItemsSource="{Binding ImageCollection}" SelectedIndex="2" NavigationDirection="Horizontal" NavigationStripMode="Dots" BackgroundColor="#ececec" NavigationStripPosition="Bottom">
         <rotate:SfRotator.ItemTemplate>
           <DataTemplate>
-            <Image  Source="{Binding Image}">
-              <Image.Aspect>
-                <OnPlatform x:TypeArguments="Aspect">
-      			        <OnPlatform.Android>
-        			          AspectFill
-      			        </OnPlatform.Android>
-    		        </OnPlatform>
-              </Image.Aspect>
-            </Image>
+            <Image  Source="{Binding Image}"/>
           </DataTemplate>
         </rotate:SfRotator.ItemTemplate>
       </rotate:SfRotator>
 	  
 {% endhighlight %}
+
+## Setting variable views
+
+The ItemTemplate provides common template with different data, whereas if different views for every items is needed, it can also be provided using `ItemContent` property in SfRotatorItem class.
+
+{% highlight C# %}
+
+	SfRotator sfRotator = new SfRotator();
+	
+	SfRotatorItem rotatorItem = new SfRotatorItem ();
+	Label lbl = new Label ();
+	lbl.Text ="  Item No: 1 ";
+	lbl.BackgroundColor = Color.Gray;
+	lbl.FontSize = 20;
+	lbl.VerticalTextAlignment = TextAlignment.Center;
+	rotatorItem.ItemContent =lbl;
+	sfRotator.DataSource.Add (rotatorItem);	
+
+	SfRotatorItem rotatorItem1 = new SfRotatorItem ();
+	Image img = new Image ();
+	img.Source = ImageSource.FromFile("image2".png");
+	img.Aspect = Aspect.AspectFit;
+	img.VerticalOptions = LayoutOptions.Center;
+	img.HeightRequest = 400;
+	img.WidthRequest = 400;
+	rotatorItem1.ItemContent =img;
+	sfRotator.DataSource.Add (rotatorItem1);			
+	
+	  
+{% endhighlight %}
+
+Similar way every item can be created and customized in case of different Rotator item view is needed.

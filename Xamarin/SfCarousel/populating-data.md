@@ -51,7 +51,7 @@ Create and populate SfCarousel collection as follows
 
 ## ItemTemplate
 
-SfCarousel contents can be customized by using `ItemTemplate` property. Through the ItemTemplate user can set up data bindings to the user objects.
+SfCarousel provides support to add a custom view as Carouseltems by designing a view inside its ItemTemplate. This template will be applied for all its items and its data will be binded.
 
 
 {% highlight xaml %}
@@ -65,6 +65,38 @@ SfCarousel contents can be customized by using `ItemTemplate` property. Through 
 	<carousel:SfCarousel x:Name="carousel" ItemTemplate="{StaticResource itemTemplate}" HeightRequest="600" WidthRequest="400" />
 
 {% endhighlight %}
+
+## Setting variable views
+
+The ItemTemplate provides common template with different data, whereas if different views for every items is needed, it can also be provided using `ItemContent` property in SfCarouselItem class.
+
+{% highlight C# %}
+
+	SfCarousel carousel = new SfCarousel();
+	
+	SfCarouselItem carouselItem = new SfCarouselItem ();
+	Label lbl = new Label ();
+	lbl.Text ="  Item No: 1 ";
+	lbl.BackgroundColor = Color.Gray;
+	lbl.FontSize = 20;
+	lbl.VerticalTextAlignment = TextAlignment.Center;
+	rotatorItem.ItemContent =lbl;
+	carousel.DataSource.Add (carouselItem);	
+
+	SfCarouselItem carouselItem1 = new SfCarouselItem ();
+	Image img = new Image ();
+	img.Source = ImageSource.FromFile("image2".png");
+	img.Aspect = Aspect.AspectFit;
+	img.VerticalOptions = LayoutOptions.Center;
+	img.HeightRequest = 400;
+	img.WidthRequest = 400;
+	carouselItem1.ItemContent =img;
+	carousel.DataSource.Add (carouselItem1);			
+	
+	  
+{% endhighlight %}
+
+Similar way every item can be created and customized in case of different carousel item view is needed.
 
 ## SelectedIndex
 

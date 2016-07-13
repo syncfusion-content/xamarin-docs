@@ -147,7 +147,6 @@ this.dataGrid.CollapseGroup(group);
 {% endhighlight %}
 {% endtabs %}
 
-
 ![](SfDataGrid_images/GroupExpandCollapse.png)
 
 The following code example illustrates the converter used for applying custom grouping logic.
@@ -186,11 +185,11 @@ public class GroupConverter : IValueConverter
 
 The [SfDataGrid.GroupExpanding](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GroupExpanding_EV.html) event occurs when the group is being expanded.
  
-The [GroupChangingEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms.GroupChangingEventArgs.html) of the `GroupExpanding` event provides the information about the expanding group and it has the following members.
+The [GroupChangingEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GroupChangingEventArgs.html) of the `GroupExpanding` event provides the information about the expanding group and it has the following members.
 
-[Group](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms.GroupChangingEventArgs~Group.html) - Gets the group that’s being expanded.
+`Syncfusion.Data.Group` - Gets the group that’s being expanded.
 
-[Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) – Decides whether to cancel the group expansion.
+`Cancel` – Decides whether to cancel the group expansion.
  
 You can cancel the group expansion by setting [GroupChangingEventArgs.Cancel](http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) to `true`.
 
@@ -208,23 +207,22 @@ void dataGrid_GroupExpanding(object sender, Syncfusion.SfDataGrid.XForms.GroupCh
 
 ### GroupExpanded event
 
-The [SfDataGrid.GroupExpanded](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms.SfDataGrid~GroupExpanded_EV.html) event occurs after the group is expanded.
+The [SfDataGrid.GroupExpanded](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GroupExpanded_EV.html) event occurs after the group is expanded.
 
- The [GroupChangedEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms.GroupChangedEventArgs.html) of the `GroupExpanded` event provides the information about the expanded group and it has the following member.
+The [GroupChangedEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GroupChangedEventArgs.html) of the `GroupExpanded` event provides the information about the expanded group and it has the following member.
 
-[Group](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms.GroupChangedEventArgs~Group.html) - Gets the expanded group.
+`Syncfusion.Data.Group` - Gets the expanded group.
 
 ### GroupCollapsing event 
 
-The [SfDataGrid.GroupCollapsing](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms.SfDataGrid~GroupCollapsing_EV.html) event occurs when the group is being collapsed.
+The [SfDataGrid.GroupCollapsing](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GroupCollapsing_EV.html) event occurs when the group is being collapsed.
 
-The [GroupChangingEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms.GroupChangingEventArgs.html)  of the `GroupCollapsing` event provides the information about the collapsing group and it contains the following member.
+The [GroupChangingEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GroupChangingEventArgs.html)  of the `GroupCollapsing` event provides the information about the collapsing group and it contains the following member.
 
-[Group](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms.GroupChangingEventArgs~Group.html) - Gets the group that’s being collapsed.
+`Syncfusion.Data.Group` - Gets the group that’s being collapsed.
 
-[Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) – Decides whether to cancel the group collapsing.
+`Cancel` – Decides whether to cancel the group collapsing.
 
- 
 You can cancel the group is being collapsed by using [GroupChangingEventArgs.Cancel](http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) of `GroupCollapsing` event.
 
 {% tabs %}
@@ -241,11 +239,11 @@ void dataGrid_GroupCollapsing(object sender, Syncfusion.SfDataGrid.XForms.GroupC
 
 ### GroupCollapsed event
  
-The [SfDataGrid.GroupCollapsed](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms.SfDataGrid~GroupCollapsed.html) event occurs after the group is collapsed.
+The [SfDataGrid.GroupCollapsed](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GroupCollapsed_EV.html) event occurs after the group is collapsed.
  
-[GroupChangedEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms.GroupChangedEventArgs.html) of the `GroupCollapsed` event  provides the information about collapsed group and it contains the following member.
+[GroupChangedEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GroupChangedEventArgs.html) of the `GroupCollapsed` event  provides the information about collapsed group and it contains the following member.
 
-[Group](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms.GroupChangedEventArgs~Group.html) - Gets the collapsed group.
+`Syncfusion.Data.Group` - Gets the collapsed group.
 
 
 ## How To

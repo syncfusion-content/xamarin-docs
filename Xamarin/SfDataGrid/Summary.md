@@ -13,83 +13,73 @@ SfDataGrid displays the summaries for each Group using the [CaptionSummaryRowC
 
 SfDataGrid control allows you to display summaries for each Group. You can derive additional information from your data like Sum, Average, Maximum, Minimum and Count using Caption Summary. These summary values are computed for Groups using [SfDatagrid.GridSummaryRow](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSummaryRow.html#  “”) and [SfDatagrid.GridSummaryColumn](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSummaryColumn.html#  “”) that implements [ISummaryRow](http://help.syncfusion.com/cr/cref_files/xamarin/data/Syncfusion.Data.Portable~Syncfusion.Data.ISummaryRow.html#  “”) and `ISummaryColumn` interface.
 
-## GridSummaryRow
+##Caption Summaries
 
-All the summaries are represented by `SfDataGrid.GridSummaryRow` that contains the following important properties.
-<table>
-<tr>
-<td>
-{{'**Property**'| markdownify }}
-</td>
-<td>
-{{'**Type**'| markdownify }}
-</td>
-<td>
-{{'**Description**'| markdownify }}
-</td>
-<td>
-{{'**Default Value**'| markdownify }}
-</td>
-</tr>
-<tr>
-<td>
-{{'[GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSummaryRow~ShowSummaryInRow.html# “”)'| markdownify }}
-</td>
-<td>
-bool
-</td>
-<td>
-Indicates whether the summary value is displayed in specific column or row.
-</td>
-<td>
-True
-</td>
-</tr>
-<tr>
-<td>
-{{'[GridSummaryRow.Title](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSummaryRow~Title.html# “”)'| markdownify }}
-</td>
-<td>
-string
-</td>
-<td>
-Displays summary with title (with Statement) while ShowSummaryInRow is set to ‘true’.
-</td>
-<td>
-null
-</td>
-</tr>
-<tr>
-<td>
-{{'[GridSummaryRow.SummaryColumns](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSummaryRow~SummaryColumns.html# “”)'| markdownify }}
-</td>
-<td>
-ObservableCollection&lt;ISummaryColumn&gt;
-</td>
-<td>
-Gets or sets a value that stores the collection of GridSummaryColumns to calculate the summaries.
-</td>
-<td>
-new ObservableCollection&lt;ISummaryColumn&gt; ()
-</td>
-</tr>
-<tr>
-<td>
-{{'[GridSummaryRow.Name](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSummaryRow~Name.html# “”)'| markdownify }}
-</td>
-<td>
-string
-</td>
-<td>
-Gets or sets a value that indicates the name of GridSummaryRow.
-</td>
-<td>
-null
-</td>
-</tr>
-</table>
+SfDataGrid provides built-in support for caption summaries. The caption summary value calculated based on the records in a group and the summary information will be displayed in the caption of group.
 
-## GridSummaryColumn
+### Formatting built-in caption summary
+
+SfDataGrid also supports setting custom group caption text format for [CaptionSummaryRows](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.CaptionSummaryRowControl.html#  “”). By default the group caption text will be in the format “{ColumnName} : {Key} - {ItemsCount} Items”.
+
+* ColumnName : Displays the grouped column name.
+* Key : Displays the group key value.
+* ItemsCount : Displays the number of items in group.
+
+You can customize this group caption text format by setting the [SfDataGrid.GroupCaptionTextFormat](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GroupCaptionTextFormat.html#  “”) property. The following code example illustrates how to customize group caption text in SfDataGrid.
+
+{% tabs %}
+{% highlight c# %}
+//Customized group caption text in German 
+dataGrid.GroupCaptionTextFormat = "{ColumnName} : {Key} - {ItemsCount}";
+{% endhighlight %}
+{% endtabs %}
+
+Below screen shot shows the final outcome of the above code.
+
+![](SfDataGrid_images/CaptionSummary.png)
+
+### Defining summary for row
+
+You can display summary information in row by setting `GridSummaryRow.ShowSummaryInRow` to `true` and defining summary columns. 
+
+The following code example illustrates how to declare the summaries in SfDataGrid in code behind and XAML.
+
+{% tabs %}
+{% highlight c# %}
+GridSummaryRow summaryRow = new GridSummaryRow();
+summaryRow.Title = "Total Items:{CaptionSummary}";
+summaryRow.ShowSummaryInRow = false;
+summaryRow.SummaryColumns.Add{new GridSummaryColumn()
+{
+    Name="CaptionSummary",
+    MappingName="Percentage",
+    Format="Count-({Sum:c})",
+    SummaryType=SummaryType.DoubleAggregate
+});
+sfgrid.CaptionSummaryRow= summaryRow;
+{% endhighlight %}
+{% highlight xaml %}
+<sfgrid:SfDataGrid.CaptionSummaryRow>
+   <sfgrid:GridSummaryRow Title="Total Items :{CaptionSummary}" 
+                          ShowSummaryInRow="True" 
+                          Name="CaptionSummary">
+      <sfgrid:GridSummaryRow.SummaryColumns>
+         <sfgrid:GridSummaryColumn Name="CaptionSummary"
+                                   Format="Average-({Sum:c})"
+                                   MappingName="Percentage"
+                                   SummaryType="DoubleAggregate" />
+      </sfgrid:GridSummaryRow.SummaryColumns>
+   </sfgrid:GridSummaryRow>
+</sfgrid:SfDataGrid.CaptionSummaryRow>
+{% endhighlight %}
+{% endtabs %}
+
+The following screenshot shows the final outcome for both values of `ShowSummaryInRow` to `True`.
+
+![](SfDataGrid_images/CaptureRow1.png)
+
+
+### Defining summary for column
 
 `SfDataGrid.GridSummaryColumn` is the object of `GridSummaryRow.SummaryColumns` collection that contains the following important properties:
 
@@ -130,7 +120,6 @@ summaryRow.SummaryColumns.Add{new GridSummaryColumn()
 });
 sfgrid.CaptionSummaryRow= summaryRow;
 {% endhighlight %}
-
 {% highlight xaml %}
 <sfgrid:SfDataGrid.CaptionSummaryRow>
    <sfgrid:GridSummaryRow Title="Total Items :{CaptionSummary}" 
@@ -147,26 +136,13 @@ sfgrid.CaptionSummaryRow= summaryRow;
 {% endhighlight %}
 {% endtabs %}
 
-The [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSummaryRow~ShowSummaryInRow.html#  “”) property can be set to true or false for displaying the Summary in the entire row or for displaying the summary within the column bounds it is mapped to. The following screenshot shows the final outcome for both values of `ShowSummaryInRow`.
+The [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSummaryRow~ShowSummaryInRow.html#  “”) property can be set to true or false for displaying the Summary in the entire row or for displaying the summary within the column bounds it is mapped to. The following screenshot shows the final outcome for both `ShowSummaryInRow` to `False`.
 
-![]({:.SfDataGrid_images/Summary_img1.jpeg-center})
-
-## How To?
-
-### How to set custom GroupCaptionTextFormat for CaptionSummaryRows? 
-
-SfDataGrid also supports setting custom GroupCaptionTextFormat for [CaptionSummaryRows](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.CaptionSummaryRowControl.html#  “”). By default the group caption text will be in the format “{ColumnName} : {Key} - {ItemsCount} Items”.
-
-* ColumnName : Displays the grouped column name.
-* Key : Displays the group key value.
-* ItemsCount : Displays the number of items in group.
-
-You can customize this group caption text format by setting the [SfDataGrid.GroupCaptionTextFormat](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GroupCaptionTextFormat.html#  “”) property. The following code example illustrates how to customize group caption text in SfDataGrid.
+![](SfDataGrid_images/CaptureColumn.png)
 
 {% tabs %}
 {% highlight c# %}
 //Customized group caption text in German 
 dataGrid.GroupCaptionTextFormat = "{ColumnName} : {Key} - {ItemsCount} Produkte";
-
 {% endhighlight %}
 {% endtabs %}

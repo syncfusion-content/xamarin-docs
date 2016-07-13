@@ -163,7 +163,7 @@ winrt\Syncfusion.SfChart.XForms.WinRT.dll
 
 winrt\Syncfusion.SfChart.XForms.dll
 
-### Universal Windows Phone project
+### Universal Windows Platform
 
 uwp\Syncfusion.SfChart.UWP.dll
 

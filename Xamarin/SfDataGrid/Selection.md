@@ -138,4 +138,4 @@ public class CustomSelectionController : GridSelectionController
 {% endhighlight %}
 The following screenshot shows the final outcome upon execution of the above code.
 
-![](SfDataGrid_images/MultipleSelectionColors.png)
+![](SfDataGrid_images/MultipleSelectionColors.jpeg)

@@ -147,6 +147,8 @@ this.dataGrid.CollapseGroup(group);
 {% endhighlight %}
 {% endtabs %}
 
+![](SfDataGrid_images/GroupExpandCollapse.png)
+
 The following code example illustrates the converter used for applying custom grouping logic.
 
 {% highlight c# %}

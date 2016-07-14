@@ -159,9 +159,9 @@ The placement position of navigation strip items such as Thumbnail or Dots can b
 
 {% endtabs %}
 
-## Setting ItemSource
+## Add Data Collection
 
-SfRotator items can be populated with a collection of image data. Collection includes Arrays, Lists and DataTables. For example you may wants to create a Rotator model with Image as follows.
+SfRotator items can be populated with a collection of image data. This collection includes Arrays, Lists and DataTables. For example you may wants to create a Rotator model with Image as follows.
 
 {% highlight C# %}
 	public RotatorModel(string imagestr)
@@ -210,7 +210,7 @@ Assigning collection to ItemSource
 
 {% endhighlight %}
 
-## Setting ItemTemplate
+## Providing Template for Items
 
 ItemTemplate property of SfRotator control is used to customize the contents of SfRotator items.
 

@@ -16,7 +16,7 @@ In order to use export to excel and export to PDF functionalities of SfDataGrid,
 
 ## Export to excel
 
-You can export data to excel by using the `ExportToexcel` method by passing the SfDataGrid as an argument. The following code example illustrates exporting data to excel using the `ExportToexcel` Method.
+You can export data to excel by using the `ExportToExcel` method by passing the SfDataGrid as an argument. The following code example illustrates exporting data to excel using the `ExportToExcel` Method.
 
 {% highlight c# %}
 private void ExportToExcel()
@@ -38,7 +38,7 @@ private void ExportToExcel()
 
 ### Exporting Options
 
-You can also export data to excel with various customizing options while exporting the SfDataGrid by passing the grid and [DataGridExcelExportingOption](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption.html) as arguments to the `ExportToexcel` method. The following code example illustrates this.
+You can also export data to excel with various customizing options while exporting the SfDataGrid by passing the grid and [DataGridExcelExportingOption](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption.html) as arguments to the `ExportToExcel` method. The following code example illustrates this.
 
 {% highlight c# %}
 DataGridExcelExportingController excelExport = new DataGridExcelExportingController ();

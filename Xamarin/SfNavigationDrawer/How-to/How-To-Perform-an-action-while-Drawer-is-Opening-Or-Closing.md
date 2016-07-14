@@ -10,7 +10,7 @@ documentation: ug
 
 The `Toggled` event can be hooked to get opening and closing events. This has parameters of NavigationDrawer and a boolean property to display whether it is open or closed.
 
-{% highligh C# %}
+{% highlight C# %}
 
 navigationDrawer.Toggled += (object sender,Syncfusion.SfNavigationDrawer.XForms.ToggledEventArgs e) => {
 				// your codes here

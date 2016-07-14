@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Various features in Syncfusion Rotator control for Xamarin.Forms 
+title: Adding Looping and Delays in Syncfusion Rotator control for Xamarin.Forms 
 description: Learn how to set the autoplay option, loop the items, enable Text Area  and choose the navigation direction in Rotator control for Xamarin.Forms
 platform: xamarin 
 control: Rotator
 documentation: ug
 ---
 
-# Features
+# Adding Looping and Delays
 
-## AutoPlay
+## Toggle AutoPlay
 
 The `EnableAutoPlay` property specifies whether the items should navigate automatically based on `NavigationDelay` property, when the property value is set to true.
 
@@ -31,9 +31,9 @@ N> By default, the property value is set to false.
 
 {% endtabs %}
 
-## Navigation Delay
+## Setting Navigation Delay
 
-The `NavigationDelay` property specifies the duration to delay the switch to next navigation item, when `EnableAutoPlay` property is enabled.
+The `NavigationDelay` property specifies the delay duration while switching to next navigation item, when `EnableAutoPlay` property is enabled.
 
 N> The property value should be in milliseconds.
 
@@ -53,7 +53,7 @@ N> The property value should be in milliseconds.
 
 {% endtabs %}
 
-## Item Looping
+## Looping Items
 
 The `EnableLooping` property specifies whether the items should navigate to first item once it reaches the last item and vice-versa.
 
@@ -73,9 +73,9 @@ The `EnableLooping` property specifies whether the items should navigate to firs
 
 {% endtabs %}
 
-## Text Area 
+## Setting Text Area
 
-The `IsTextVisible` property can be used to enable the text area visibility in bottom area of rotator for providing additional information of items.
+The `IsTextVisible` property can be used to enable the text area visibility in bottom area of Rotator for providing additional information of items.
 
 N> By default, the property value is false.
 

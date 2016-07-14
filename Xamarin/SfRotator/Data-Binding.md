@@ -1,19 +1,18 @@
 ---
 layout : post
-title : Populating data in Syncfusion Rotator control in Xamarin.Forms.
+title : Data Binding in Syncfusion Rotator control in Xamarin.Forms.
 description : Learn how to set the DataSource in Rotator for Xamarin.Forms.
 platform : Xamarin
 control : Rotator 
 documentation : ug
 ---
 
-# Populating Data
+# Data Binding
 
 ## Setting ItemSource
 
-SfRotator items can be populated with a collection of image data. You can assign a collection to it. Collections include arrays, Lists and DataTables.For example you may wants to create a rotator model.
+SfRotator items can be populated with a collection of image data. You can assign a collection to it. Collections include arrays, Lists and DataTables. For example you may wants to create a Rotator model with Image as follows.
 
-The Rotator model looks like as follows.
 
 {% highlight C# %}
 	
@@ -34,7 +33,7 @@ The Rotator model looks like as follows.
 
 {% endhighlight %}
 
-Create and populate rotator collection as follows
+Create and populate SfRotator collection as follows
 
 {% highlight C# %}
 
@@ -61,7 +60,7 @@ Assigning collection to ItemSource
 
 {% highlight C# %}
 
- 		sfRotator.BindingContext = new RotatorViewModel();
+ 	sfRotator.BindingContext = new RotatorViewModel();
 
 {% endhighlight %}
 
@@ -111,4 +110,4 @@ The ItemTemplate provides common template with different data, whereas if differ
 	  
 {% endhighlight %}
 
-Similar way every item can be created and customized in case of different Rotator item view is needed.
+Similarly every item can be created and customized in case of different Rotator item view is needed.

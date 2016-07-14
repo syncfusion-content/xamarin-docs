@@ -9,7 +9,7 @@ documentation : ug
 
 # Getting Started
 
-This section explains you the steps to configure a SfCarousel control in a real-time scenario and also provides a walk-through on some of the customization features available in SfCarousel control.
+This section explains you the steps to configure a SfCarousel control in a real-time scenario and the customization features available in it.
 
 ![](images/gettingstarted.png)
 

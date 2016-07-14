@@ -243,7 +243,7 @@ public class CustomAppearence: AppearanceManager
 }
 {% endhighlight %}
 
-The following picture shows the customize appearence of data pager.
+The following picture shows the customize appearance of data pager.
 
 ![](SfDataGrid_images/datapagerappearence.png)
 

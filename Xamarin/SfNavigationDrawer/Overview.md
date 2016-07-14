@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-The SfNavigationDrawer is a sliding panel menu that comes out from the edge of the window and allows to have the contents in a hidden panel. It can be shown by swiping from any of the four screen edges or by demand.
+The SfNavigationDrawer is a sliding panel menu that comes out from the edge of the window and allows to have the contents in a hidden panel. It can be shown by swiping from any edges of the screen or by demand.
 
 ![](images/Overview.png)
 

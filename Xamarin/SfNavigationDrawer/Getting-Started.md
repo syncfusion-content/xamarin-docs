@@ -9,9 +9,8 @@ documentation: ug
 
 # Getting Started
 
-This section provides overview for working with Essential SfNavigationDrawer for Xamarin.Forms. You can walk through the entire process of creating an SfNavigationDrawer.
+This section provides overview for working with Essential NavigationDrawer for Xamarin.Forms. You can walk through the entire process of creating an NavigationDrawer.
 
-![](images/getting-started.png)
 
 ## Referencing Essential Studio Components in Your Solution	
 
@@ -44,7 +43,7 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>Android</td>
-<td>android\Syncfusion.SfNavigationDrawer.Android.dll<br/>android\Syncfusion.SfNavigationDrawer.XForms.dll<br/> android\Syncfusion.SfNavigationDrawer.XForms.Android.dll <br/> Xamarin.Android.Support.v4 (from NuGet Packages)</td>
+<td>android\Syncfusion.SfNavigationDrawer.Android.dll<br/>android\Syncfusion.SfNavigationDrawer.XForms.dll<br/> android\Syncfusion.SfNavigationDrawer.XForms.Android.dll <br/> Xamarin.Android.Support.v4 (from Nuget Packages)</td>
 </tr>
 <tr>
 <td>iOS (Unified)</td>
@@ -52,19 +51,19 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>Windows Phone</td>
-<td>wp8\Syncfusion.SfInput.WP8.dll<br/>wp8\Syncfusion.SfShared.WP8.dll<br/>wp8\Syncfusion.SfNavigationDrawer.XForms.dll<br/>wp8\Syncfusion.SfNavigationDrawer.XForms.WinPhone.dll</td>
+<td>wp8\Syncfusion.SfNavigationDrawer.WP8.dll<br/>wp8\Syncfusion.SfNavigationDrawer.XForms.dll<br/>wp8\Syncfusion.SfNavigationDrawer.XForms.WinPhone.dll</td>
 </tr>
 <tr>
 <td>Windows Phone 8.1</td>
-<td>wp81\Syncfusion.SfInput.WP.dll<br/>wp81\Syncfusion.SfShared.WP.dll<br/>wp81\Syncfusion.SfNavigationDrawer.XForms.dll<br/>wp81\Syncfusion.SfNavigationDrawer.XForms.WinPhone.dll</td>
+<td>wp81\Syncfusion.SfNavigationDrawer.WP.dll<br/>wp81\Syncfusion.SfNavigationDrawer.XForms.dll<br/>wp81\Syncfusion.SfNavigationDrawer.XForms.WinPhone.dll</td>
 </tr>
 <tr>
 <td>WinRT</td>
-<td>winrt\Syncfusion.SfInput.WinRT.dll<br/>winrt\Syncfusion.SfShared.WinRT.dll<br/>winrt\Syncfusion.SfNavigationDrawer.XForms.dll<br/>winrt\Syncfusion.SfNavigationDrawer.XForms.WinRT.dll</td>
+<td>winrt\Syncfusion.SfNavigationDrawer.WinRT.dll<br/>winrt\Syncfusion.SfNavigationDrawer.XForms.dll<br/>winrt\Syncfusion.SfNavigationDrawer.XForms.WinRT.dll</td>
 </tr>
 <tr>
 <td>UWP</td>
-<td>uwp\Syncfusion.SfInput.UWP.dll<br/>uwp\Syncfusion.SfShared.UWP.dll<br/>uwp\Syncfusion.SfNavigationDrawer.XForms.dll<br/>uwp\Syncfusion.SfNavigationDrawer.XForms.UWP.dll</td>
+<td>uwp\Syncfusion.SfNavigationDrawer.UWP.dll<br/>uwp\Syncfusion.SfNavigationDrawer.XForms.dll<br/>uwp\Syncfusion.SfNavigationDrawer.XForms.UWP.dll</td>
 </tr>
 </table>
 
@@ -104,11 +103,11 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% endhighlight %}
 
-## Add and Configure the SfNavigationDrawer
+## Add SfNavigationDrawer
 
 The SfNavigationDrawer control configured entirely in C# code or by using XAML markup. The following steps explain on how to create a SfNavigationDrawer and configure its elements.
 
-* Adding reference to SfNavigationDrawer.
+* Adding reference to NavigationDrawer.
 
 {% tabs %}
 
@@ -126,7 +125,7 @@ The SfNavigationDrawer control configured entirely in C# code or by using XAML m
 
 {% endtabs %}
 
-* Create an instance of SfNavigationDrawer.
+* Create an instance of NavigationDrawer.
 
 {% tabs %}
 
@@ -145,7 +144,68 @@ The SfNavigationDrawer control configured entirely in C# code or by using XAML m
 
 {% endtabs %}
 
-### Setting Content View
+## Add Drawer Content
+
+The sliding main content of the SfNavigationDrawer which is a part of DrawerPanel can be set using `DrawerContentView` property with desired views.
+
+{% tabs %}
+
+{% highlight c# %}
+
+	StackLayout mainStack = new StackLayout ();
+	mainStack.Opacity = 1;
+	mainStack.Orientation = StackOrientation.Vertical;
+	mainStack.HeightRequest = 500;
+	mainStack.BackgroundColor = Color.White;
+
+	ObservableCollection<String> list = new ObservableCollection<string> ();
+	list.Add ("Home");
+	list.Add ("Profile");
+	list.Add ("Inbox");
+	list.Add ("Outbox");
+    list.Add ("Sent");
+	list.Add ("Draft");
+
+	ListView listView = new ListView();
+	listView.WidthRequest= 200;
+	listView.VerticalOptions = LayoutOptions.FillAndExpand;
+	listView.ItemsSource = list;
+	mainStack.Children.Add (listView);
+            
+    navigationDrawer.DrawerContentView = mainStack;
+  
+{% endhighlight %}
+
+{% highlight xaml %}
+
+    <navigation:SfNavigationDrawer x:Name="navigationDrawer"  />
+	
+{% endhighlight %}
+
+{% endtabs %}
+
+## Adjust Drawer Width
+
+Drawer width and height can be set through `DrawerHeight` and `DrawerWidth` properties.
+
+{% tabs %}
+
+{% highlight c# %}
+        
+        
+        navigationDrawer.DrawerWidth = 300;
+  
+{% endhighlight %}
+
+{% highlight xaml %}
+
+	<navigation:SfNavigationDrawer x:Name="navigationDrawer"  DrawerWidth="300" />
+	
+{% endhighlight %}
+
+{% endtabs %}
+
+## Add main content 
 
 The main view of the SfNavigationDrawer can be set using `ContentView` property with desired views.
 
@@ -196,49 +256,70 @@ The main view of the SfNavigationDrawer can be set using `ContentView` property 
 				<Label x:Name="mainLabel" FontSize="14" TextColor="Black" />   
              </StackLayout>
         </navigation:SfNavigationDrawer.ContentView>
- 	</navigation:SfNavigationDrawer>
- 
+ 	</navigation:SfNavigationDrawer> 
  
 {% endhighlight %}
 
 {% endtabs %}
 
-### Setting DrawerContent View
+## Set drawing edge for drawer panel
 
-The sliding main content of the SfNavigationDrawer which is a part of DrawerPanel can be set using `DrawerContentView` property with desired views.
+The `Position` property specifies the sliding position of the DrawerView panel. The `Position` property has the following four options.
 
-{% tabs %}
+* Left
 
+* Right
+
+* Top
+
+* Bottom
+
+N> The default option is Left.
+
+
+{% tabs %}	
+	
 {% highlight c# %}
 
-	StackLayout mainStack = new StackLayout ();
-	mainStack.Opacity = 1;
-	mainStack.Orientation = StackOrientation.Vertical;
-	mainStack.HeightRequest = 500;
-	mainStack.BackgroundColor = Color.White;
+	navigationDrawer.Position=Position.Left;
 
-	ObservableCollection<String> list = new ObservableCollection<string> ();
-	list.Add ("Home");
-	list.Add ("Profile");
-	list.Add ("Inbox");
-	list.Add ("Outbox");
-    list.Add ("Sent");
-	list.Add ("Draft");
-
-	ListView listView = new ListView();
-	listView.WidthRequest= 200;
-	listView.VerticalOptions = LayoutOptions.FillAndExpand;
-	listView.ItemsSource = list;
-	mainStack.Children.Add (listView);
-            
-    navigationDrawer.DrawerContentView = mainStack;
-  
 {% endhighlight %}
 
 {% highlight xaml %}
 
-    <navigation:SfNavigationDrawer x:Name="navigationDrawer"  />
+	<navigation:SfNavigationDrawer x:Name="navigationDrawer" Position="Left">
+  	
+{% endhighlight %}
+
+{% endtabs %}
+
+
+## Change Drawer Opening Animation
+
+The `Transition` property specifies the opening animations for the DrawerView panel. The `Transition` property has the following three options.
+
+* SlideOnTop
+* Push
+* Reveal
+
+N> The default Transition is SlideOnTop.
+
+{% tabs %}	
+	
+{% highlight c# %} 
+
+	navigationDrawer.Transition=Transition.SlideOnTop;
+
+{% endhighlight %}
+
+{% highlight xaml %}
+
+	<navigation:SfNavigationDrawer x:Name="navigationDrawer" Transition="SlideOnTop">
 	
 {% endhighlight %}
 
 {% endtabs %}
+
+The NavigationDrawer looks as follows
+
+![](images/Slide-on-top.png)

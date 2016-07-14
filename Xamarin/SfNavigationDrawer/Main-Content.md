@@ -55,12 +55,16 @@ The main display view that displays our various content of the app can be set us
 
  	<navigation:SfNavigationDrawer x:Name="navigationDrawer">
         <navigation:SfNavigationDrawer.ContentView>
-            <StackLayout x:Name="ContentFrame" Orientation="Horizontal">
-				<StackLayout x:Name="headerFrame" Orientation="Vertical">
-					 <Button x:Name="imageButton" FontSize="20" HeightRequest="50" Grid.Column="0" Clicked="Btn_Clicked" BackgroundColor="#1aa1d6" HorizontalOptions="Start" WidthRequest="50" />
+           <StackLayout x:Name="ContentFrame" Orientation="Vertical">
+				<StackLayout x:Name="headerFrame" Orientation="Horizontal">
+					 <Button x:Name="imageButton" FontSize="20" HeightRequest="50"  BackgroundColor="#1aa1d6" HorizontalOptions="Start" WidthRequest="50" />
 					 <Label x:Name="homeLabel" FontSize="15" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"     HeightRequest="50"  TextColor="White" />
 			    </StackLayout>   
-				<Label x:Name="mainLabel" FontSize="14" TextColor="Black" />   
+				<Label x:Name="mainLabel" FontSize="14" TextColor="Black">
+					<Label.Text>
+						Lorem ipsum dolor sit amet, lacus amet amet ultricies. Quisque mi venenatis morbi libero, orci dis, mi ut et class porta, massa ligula magna enim, aliquam orci vestibulum tempus. Turpis facilisis vitae consequat, cum a a, turpis dui consequat massa in dolor per, felis non amet. Auctor eleifend in omnis elit vestibulum, donec non elementum tellus est mauris, id aliquam, at lacus, arcu pretium proin lacus dolor et. Eu tortor, vel ultrices amet dignissim mauris vehicula. Lorem tortor neque, purus taciti quis id. Elementum integer orci accumsan minim phasellus vel.
+					</Label.Text>
+				</Label>   
              </StackLayout>
         </navigation:SfNavigationDrawer.ContentView>
  	</navigation:SfNavigationDrawer>

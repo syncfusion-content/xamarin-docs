@@ -22,7 +22,14 @@ The header and footer contents are optional and Drawer content is the mandatory 
 
 The sliding main content of the NavigationDrawer can be set with any view using `DrawerContentView`. This part mostly holds the list of menus that to be selected to display the Main content.
 
-{% tabs %}
+The control has been initialized in Xaml
+{% highlight xaml %}
+
+    <navigation:SfNavigationDrawer x:Name="navigationDrawer"  />
+	
+{% endhighlight %}
+
+and the content has set using `DrawerContentView` property.
 
 {% highlight c# %}
 
@@ -49,14 +56,6 @@ The sliding main content of the NavigationDrawer can be set with any view using 
     navigationDrawer.DrawerContentView = mainStack;
   
 {% endhighlight %}
-
-{% highlight xaml %}
-
-    <navigation:SfNavigationDrawer x:Name="navigationDrawer" />
-       
-{% endhighlight %}
-
-{% endtabs %}
 
 ![](images/DrawerContentView.png)
 

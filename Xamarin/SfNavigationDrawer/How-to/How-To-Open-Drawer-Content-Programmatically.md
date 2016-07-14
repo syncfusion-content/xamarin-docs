@@ -6,11 +6,11 @@ platform: Xamarin
 control: NavigationDrawer
 documentation: ug
 ---
-# How To Open Drawer panel Programmatically?
+# How To Open Drawer panel Programmatically
 
 In order to open NavigationDrawer's drawer panel, it is needed to use the `IToggleDrawer` interface through DependencyService call, which in turn displays the available method `ToggleDrawer()`.
 
-{% highligh C# %}
+{% highlight C# %}
 
 	DependencyService.Get<IToggleDrawer>().ToggleDrawer();
 

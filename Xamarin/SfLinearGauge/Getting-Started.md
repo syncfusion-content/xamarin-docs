@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Getting Started with Syncfusion LinearGauge control for Xamarin.Forms
 description: A quick tour to initial users on Syncfusion linearGauge control for Xamarin.Forms platform
@@ -9,9 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains how to create the SfLinearGauge and configure its properties. This section provides overview for working with SfLinearGauge for Xamarin.Forms. It walks through the entire process of creating a SfLinearGauge.
-
-![](images/LinearGauge.png)
+This section explains the entire process of creating SfLinearGauge and configuring its properties.
 
 ## Referencing Essential Studio Components in Your Solution	
 
@@ -19,7 +17,7 @@ If you had acquired Essential Studio components through the Xamarin component st
 
 Components/syncfusionessentialstudio-version/lib/pcl/
 
-Alternatively if you had downloaded Essential Studio from Syncfusion.com or through the Xamarin store web interface then all assembly references need to be added manually.
+Alternatively if you had downloaded Essential Studio from Syncfusion.com or through the Xamarin store web interface then all assembly references needs to be added manually.
 
 After installing Essential Studio for Xamarin, all the required assemblies can be found in the installation folders, typically
 
@@ -104,7 +102,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% endhighlight %}
 
-## Adding and Configuring the LinearGauge
+## Adding and Configuring the SfLinearGauge
 
 The SfLinearGauge control configured entirely in C# code or by using XAML markup.The following steps explain on how to create an SfLinearGauge and configure its elements.
 
@@ -248,3 +246,5 @@ We can improve the readability of data by including ranges that quickly displays
 {% endhighlight %}
 
 {% endtabs %}
+
+![](images/LinearGauge.png)

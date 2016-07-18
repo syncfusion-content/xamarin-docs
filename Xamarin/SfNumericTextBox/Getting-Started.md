@@ -9,9 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section provides overview for working with Essential NumericTextBox for Xamarin.Forms. You can walk through the entire process of creating a SfNumericTextBox.
-
-![](images/gettingstarted.png)
+This section provides overview for working with Essential NumericTextBox for Xamarin.Forms.
 
 ## Referencing Essential Studio Components in Your Solution	
 
@@ -120,7 +118,7 @@ The SfNumericTextBox control configured entirely in C# code or by using XAML mar
 
 {% highlight xaml %}
 
-	xmlns:numeric="clr-namespace:Syncfusion.SfNumericTextBox.XForms;assembly=Syncfusion.SfNumericTextBox.XForms" 
+	<xmlns:numeric="clr-namespace:Syncfusion.SfNumericTextBox.XForms;assembly=Syncfusion.SfNumericTextBox.XForms"/> 
 	
 {% endhighlight %}
 
@@ -217,3 +215,5 @@ N> The control displays the formatted text on lost focus. Default Value of `Form
 {% endtabs %}
 
 ![](images/FormatString.png)
+
+![](images/gettingstarted.png)

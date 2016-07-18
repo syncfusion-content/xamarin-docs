@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Getting Started with Syncfusion LinearGauge control for Xamarin.Forms
 description: A quick tour to initial users on Syncfusion linearGauge control for Xamarin.Forms platform

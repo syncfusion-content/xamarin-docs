@@ -85,7 +85,7 @@ The ItemTemplate provides common template with different data, whereas if differ
 
 	SfCarouselItem carouselItem1 = new SfCarouselItem ();
 	Image img = new Image ();
-	img.Source = ImageSource.FromFile("image2".png");
+	img.Source = ImageSource.FromFile("image2.png");
 	img.Aspect = Aspect.AspectFit;
 	img.VerticalOptions = LayoutOptions.Center;
 	img.HeightRequest = 400;

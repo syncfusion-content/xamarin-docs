@@ -11,8 +11,6 @@ documentation: ug
 
 This section explains you the steps to configure a SfRotator control in a real-time scenario and also provides a walk-through on some of the customization features available in SfRotator control.
 
-![](images/rotator.png)
-
 ## Referencing Essential Studio Components in Your Solution	
 
 If you had acquired Essential Studio components through the Xamarin component store interface from within your IDE, then after adding the components to your Xamarin.iOS, Xamarin.Android and Windows Phone projects through the Component manager, you will still need to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL project in your solution. You can do this by manually adding the relevant PCL assembly references to your PCL project contained in the following path inside of your solution folder.
@@ -92,7 +90,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% highlight xaml %}
 
-	xmlns:rotator="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms"
+	<xmlns:rotator="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms"/>
 	
 {% endhighlight %}
 
@@ -216,14 +214,14 @@ ItemTemplate property of SfRotator control is used to customize the contents of 
 
 {% highlight xaml %}
 
-	<rotate:SfRotator x:Name="sfRotator"  Grid.Row="0" NavigationDelay="2000" ItemsSource="{Binding ImageCollection}" SelectedIndex="2" NavigationDirection="Horizontal" NavigationStripMode="Dots" BackgroundColor="#ececec" NavigationStripPosition="Bottom">
-        <rotate:SfRotator.ItemTemplate>
+	<rotator:SfRotator x:Name="sfRotator"  Grid.Row="0" NavigationDelay="2000" ItemsSource="{Binding ImageCollection}" SelectedIndex="2" NavigationDirection="Horizontal" NavigationStripMode="Dots" BackgroundColor="#ececec" NavigationStripPosition="Bottom">
+        <rotator:SfRotator.ItemTemplate>
           <DataTemplate>
             <Image  Source="{Binding Image}"/>                   
           </DataTemplate>
-        </rotate:SfRotator.ItemTemplate>
-      </rotate:SfRotator>
+        </rotator:SfRotator.ItemTemplate>
+      </rotator:SfRotator>
 	  
 {% endhighlight %}
 
-
+![](images/rotator.png)

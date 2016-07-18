@@ -13,7 +13,7 @@ The `Toggled` event can be hooked to get opening and closing events. This has pa
 {% highlight C# %}
 
 navigationDrawer.Toggled += (object sender,Syncfusion.SfNavigationDrawer.XForms.ToggledEventArgs e) => {
-				// your codes here
-				bool drawerState = e.isOpen;
-			};
+		// your codes here
+		bool drawerState = e.isOpen;
+};
 {% endhighlight %}

@@ -70,13 +70,13 @@ SfRotator provides support to add a custom view as RotatorItems by designing a v
 
 {% highlight xaml %}
 
-	<rotate:SfRotator x:Name="sfRotator"  Grid.Row="0" NavigationDelay="2000" ItemsSource="{Binding ImageCollection}" SelectedIndex="2" NavigationDirection="Horizontal" NavigationStripMode="Dots" BackgroundColor="#ececec" NavigationStripPosition="Bottom">
-        <rotate:SfRotator.ItemTemplate>
+	<rotator:SfRotator x:Name="sfRotator"  Grid.Row="0" NavigationDelay="2000" ItemsSource="{Binding ImageCollection}" SelectedIndex="2" NavigationDirection="Horizontal" NavigationStripMode="Dots" BackgroundColor="#ececec" NavigationStripPosition="Bottom">
+        <rotator:SfRotator.ItemTemplate>
           <DataTemplate>
             <Image  Source="{Binding Image}"/>
           </DataTemplate>
-        </rotate:SfRotator.ItemTemplate>
-      </rotate:SfRotator>
+        </rotator:SfRotator.ItemTemplate>
+      </rotator:SfRotator>
 	  
 {% endhighlight %}
 

@@ -9,9 +9,7 @@ documentation : ug
 
 # Getting Started
 
-This section explains you the steps to configure a SfCarousel control in a real-time scenario and the customization features available in it.
-
-![](images/gettingstarted.png)
+This section explains how to showcase a Gallery of photos along with a Title using SfCarousel Control.
 
 ## Referencing Essential Studio components in your solution
 
@@ -120,7 +118,7 @@ The SfCarousel control is configured entirely in C# code or by using XAML markup
 
 {% highlight xaml %}
 
-	xmlns:carousel="clr-namespace:Syncfusion.SfCarousel.XForms;assembly=Syncfusion.SfCarousel.XForms"
+	<xmlns:carousel="clr-namespace:Syncfusion.SfCarousel.XForms;assembly=Syncfusion.SfCarousel.XForms"/>
 
 {% endhighlight %}
 
@@ -145,53 +143,8 @@ The SfCarousel control is configured entirely in C# code or by using XAML markup
 
 {% endtabs %}
 
-## Setting Offset
 
-Set the Offset property to specify the distance between the items in SfCarousel panel.
-
-{% tabs %}
-
-{% highlight C# %}
-
-	SfCarousel carousel = new SfCarousel();
-	carousel.SelectedIndex=2;
-	carousel.Offset=20;
-
-{% endhighlight %}
-
-{% highlight xaml %}
-
-	<carousel:SfCarousel x:Name="carousel" SelectedIndex="2" Offset="20" />
-	
-{% endhighlight %}
-
-{% endtabs %}
-
-
-## Setting Rotation Angle
-
-Set the `RotationAngle` property to decide the angle in which items should be rotated.
-
-{% tabs %}
-
-{% highlight C# %}
-
-	SfCarousel carousel = new SfCarousel();
-	carousel.SelectedIndex=2;
-	carousel.Offset=20;
-	carousel.RotationAngle = 45;
-
-{% endhighlight %}
-
-{% highlight xaml %}
-
-	<carousel:SfCarousel x:Name="carousel" SelectedIndex="2" Offset="20" RotationAngle="45" />
-	
-{% endhighlight %}
-
-{% endtabs %}
-
-## Setting DataSource
+## Set DataSource
 
 SfCarousel items can be populated with a collection of image data. This collection includes Arrays, Lists and DataTables. For example you can create a SfCarousel model as follows.
 
@@ -231,7 +184,7 @@ Create and populate SfCarousel collection as follows.
 
 {% endhighlight %}
 
-## Setting ItemTemplate
+## Set ItemTemplate
 
 `ItemTemplate` property of SfCarousel control is used to customize the contents of SfCarousel items.
 
@@ -252,3 +205,51 @@ Create and populate SfCarousel collection as follows.
 
 
 {% endhighlight %}
+
+## Set Offset Between Items
+
+Set the Offset property to specify the distance between the items in SfCarousel panel.
+
+{% tabs %}
+
+{% highlight C# %}
+
+	SfCarousel carousel = new SfCarousel();
+	carousel.SelectedIndex=2;
+	carousel.Offset=20;
+
+{% endhighlight %}
+
+{% highlight xaml %}
+
+	<carousel:SfCarousel x:Name="carousel" SelectedIndex="2" Offset="20"/>
+	
+{% endhighlight %}
+
+{% endtabs %}
+
+
+## Set Rotation Angle
+
+Set the `RotationAngle` property to decide the angle in which items should be rotated.
+
+{% tabs %}
+
+{% highlight C# %}
+
+	SfCarousel carousel = new SfCarousel();
+	carousel.SelectedIndex=2;
+	carousel.Offset=20;
+	carousel.RotationAngle = 45;
+
+{% endhighlight %}
+
+{% highlight xaml %}
+
+	<carousel:SfCarousel x:Name="carousel" SelectedIndex="2" Offset="20" RotationAngle="45" />
+	
+{% endhighlight %}
+
+{% endtabs %}
+
+![](images/gettingstarted.png)

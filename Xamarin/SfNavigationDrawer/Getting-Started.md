@@ -119,7 +119,7 @@ The SfNavigationDrawer control configured entirely in C# code or by using XAML m
 
 {% highlight xaml %}
 
-	xmlns:navigation="clr-namespace:Syncfusion.SfNavigationDrawer.XForms;assembly=Syncfusion.SfNavigationDrawer.XForms" 
+	<xmlns:navigation="clr-namespace:Syncfusion.SfNavigationDrawer.XForms;assembly=Syncfusion.SfNavigationDrawer.XForms"/>
 	
 {% endhighlight %}
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section provides overview for working with Essential DigitalGauge for Xamarin.Forms. You can walk through the entire process of creating an SfDigitalGauge.
+This section explains you the steps to configure a SfDigitalGauge control in a real-time scenario and also provides a walk-through on some of the customization features available in it.
 
 ![](Getting-Started_images/gettingstarted.png)
 

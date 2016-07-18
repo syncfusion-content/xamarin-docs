@@ -11,7 +11,6 @@ documentation: ug
 
 This section explains you the steps to configure a SfDigitalGauge control in a real-time scenario and also provides a walk-through on some of the customization features available in it.
 
-![](Getting-Started_images/gettingstarted.png)
 
 ## Referencing Essential Studio Components in Your Solution	
 
@@ -120,7 +119,7 @@ The SfDigitalGauge control is configured entirely in C# code or by using XAML ma
 
 {% highlight xaml %}
 
-	xmlns:gauge="clr-namespace:Syncfusion.SfGauge.XForms;assembly=Syncfusion.SfGauge.XForms"
+	<xmlns:gauge="clr-namespace:Syncfusion.SfGauge.XForms;assembly=Syncfusion.SfGauge.XForms"/>
 
 {% endhighlight %}
 
@@ -190,3 +189,5 @@ The SfDigitalGauge control is configured entirely in C# code or by using XAML ma
 {% endhighlight %}
 
 {% endtabs %}
+
+![](Getting-Started_images/gettingstarted.png)

@@ -9,6 +9,8 @@ documentation: ug
 
 # Setting Character Dimensions
 
+The Digital Characters size can be scaled using `CharacterHeight` and `CharacterWidth` properties in the SfDigitalGauge control.
+
 ## CharacterHeight
 
 The value of the Digital Characters is scaled by altering the height of the digital characters. It is achieved by setting the `CharacterHeight` property in the SfDigitalGauge.

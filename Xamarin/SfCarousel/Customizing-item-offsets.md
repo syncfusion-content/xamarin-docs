@@ -9,6 +9,8 @@ documentation : ug
 
 # Customizing item offsets 
 
+The Offset between selected and unselected item can be customized in SfCarousel control. And also the items can be scaled to the specified value.
+
 ## Rotation Angle
 
 The `RotationAngle` property in the SfCarousel control is used to rotate all the unselected items in a specified angle. 

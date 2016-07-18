@@ -9,7 +9,9 @@ documentation : ug
 
 # Data Binding 
 
-## Setting  Items Source
+Carousel control, supports binding to different data sources such as IList Data Source, XML Data Source, Observable Collection Data Source.
+
+## Setting Items Source
 
 SfCarousel items can be populated with a collection of image data. For example, a user may wants to create a SfCarousel control which will display a list of images.
 

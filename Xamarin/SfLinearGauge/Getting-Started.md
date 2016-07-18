@@ -118,7 +118,7 @@ The SfLinearGauge control configured entirely in C# code or by using XAML markup
 
 {% highlight xaml %}
 
-	xmlns:linear="clr-namespace:Syncfusion.SfGauge.XForms;assembly=Syncfusion.SfGauge.XForms"
+	<xmlns:linear="clr-namespace:Syncfusion.SfGauge.XForms;assembly=Syncfusion.SfGauge.XForms"/>
 	
 {% endhighlight %}
 

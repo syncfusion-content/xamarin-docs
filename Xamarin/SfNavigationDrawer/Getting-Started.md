@@ -205,7 +205,7 @@ Drawer width and height can be set through `DrawerHeight` and `DrawerWidth` prop
 
 {% endtabs %}
 
-## Add main content 
+## Add Main Content 
 
 The main view of the SfNavigationDrawer can be set using `ContentView` property with desired views.
 

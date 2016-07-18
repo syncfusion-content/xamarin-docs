@@ -12,9 +12,9 @@ documentation: ug
 
 The sliding panel contents are divided into three parts and they are as follows
 	
-* [Drawer Content](#Drawer-Main-Content)
-* [Header Content](#Drawer-Header-Content) 
-* [Footer Content](#Drawer-Footer-Content)
+* [Drawer Content](#drawer-main-content)
+* [Header Content](#drawer-header-content) 
+* [Footer Content](#drawer-footer-content)
 		
 The header and footer contents are optional and Drawer content is the mandatory one which is due to the maximum space allocated for Drawer content view.
 		
@@ -165,4 +165,4 @@ Gets or sets the height and width of the DrawerView panel in the NavigationDrawe
 
 {% endtabs %}
 
-N> The Drawer width will be handy when [Position](/xamarin-docs/Xamarin/SfNavigationDrawer/Configuring-The-Drawer-In-Different-Sides ("Configuring The Drawer In Different Sides")) is left or right and `DrawerHeight` property can be used when Position is Top or bottom
+N> The Drawer width will be handy when [Position](/Xamarin/SfNavigationDrawer/Configuring-The-Drawer-In-Different-Sides "Configuring The Drawer In Different Sides") is left or right and `DrawerHeight` property can be used when Position is Top or bottom

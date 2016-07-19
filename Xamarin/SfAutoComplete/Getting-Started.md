@@ -11,8 +11,6 @@ documentation : ug
 
 This section explains you the steps to configure a SfAutoComplete control in a real-time scenario and also provides a walk-through on some of the customization features available in SfAutoComplete control.
 
-![](images/gettingstarted.png)
-
 ## Referencing Essential Studio Components in Your Solution	
 
 If you had acquired Essential Studio components through the Xamarin component store interface from within your IDE, then after adding the components to your Xamarin.iOS, Xamarin.Android and Windows Phone projects through the Component manager, you will still need to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL project in your solution. You can do this by manually adding the relevant PCL assembly references to your PCL project contained in the following path inside of your solution folder.
@@ -119,7 +117,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% highlight xaml %}
 
-	xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+	<xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"/>
 
 {% endhighlight %}
 
@@ -143,7 +141,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% endtabs %}
 
-## Manipulation AutoCompleteSource to AutoComplete
+## Manipulating AutoCompleteSource to AutoComplete
 
 You can set the suggestion list to the SfAutoComplete using the AutoCompleteSource property. Check autocomplete mode for more details.
 
@@ -191,3 +189,5 @@ SfAutocomplete can be customized using the `Watermark` and `PopupDelay` properti
 {% endhighlight %}
 
 {% endtabs %}
+
+![](images/gettingstarted.png)

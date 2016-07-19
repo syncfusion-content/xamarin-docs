@@ -10,14 +10,6 @@ documentation: ug
 
 The Indicator drawing size can be customized using `ViewBoxHeight` and `ViewBoxWidth` property.
 
-## ViewBoxHeight
-
-The `ViewBoxHeight` property allows the user to set the height of the control ViewBox. 
-
-## ViewBoxWidth
-
-The `ViewBoxWidth` property allows the user to set the width of the control ViewBox.
-
 {% tabs %}
 
 {% highlight c# %}

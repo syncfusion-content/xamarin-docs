@@ -9,6 +9,8 @@ documentation : ug
 
 # Data Binding
 
+SfRotator control, supports binding to different data sources such as IList Data Source, XML Data Source, Observable Collection Data Source.
+
 ## Setting ItemSource
 
 SfRotator items can be populated with a collection of image data. You can assign a collection to it. Collections include arrays, Lists and DataTables. For example you may wants to create a Rotator model with Image as follows.

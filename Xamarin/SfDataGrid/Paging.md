@@ -164,8 +164,8 @@ public partial class MainPage : ContentPage
     {
         InitializeComponent();
         this.dataGrid.ItemsSource = sfDataPager.PagedSource;
-        // Apply the custom appearence to SfDataPager
-        this.sfDataPager.AppearanceManager = new CustomAppearence();
+        // Apply the custom appearance to SfDataPager
+        this.sfDataPager.AppearanceManager = new CustomAppearance();
     }
 }
 
@@ -181,7 +181,7 @@ public partial class MainPage : ContentPage
 
   <ContentPage.Resources>
     <ResourceDictionary>
-      <local:CustomAppearence x:Key="customAppearence"/>
+      <local:CustomAppearance x:Key="customAppearance"/>
     </ResourceDictionary>
   </ContentPage.Resources>
 
@@ -203,7 +203,7 @@ public partial class MainPage : ContentPage
                          PageCount="10"
                          PageSize="10"
                          NumericButtonCount="10"
-                         AppearanceManager="{StaticResource customAppearence}"
+                         AppearanceManager="{StaticResource customAppearance}"
                          Source="{Binding OrdersInfo}">
     </sfDataPager:SfDataPager>
   </Grid>
@@ -213,7 +213,7 @@ public partial class MainPage : ContentPage
 
 {% highlight c# %}
 //Custom Appearance class
-public class CustomAppearence: AppearanceManager
+public class CustomAppearance: AppearanceManager
 {
 	public override Color GetNumericButtonSelectionBackgroundColor()
     {

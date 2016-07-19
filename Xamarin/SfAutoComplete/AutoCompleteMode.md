@@ -7,11 +7,11 @@ control : AutoComplete
 documentation : ug
 ---
 
-# AutoCompleteMode
+# AutoComplete Mode
 
 The `AutocompleteMode` property is used to decide the suggestion pattern for displaying the filtered data according to the text entered. 
 
-N> By default, three types of autocomplete mode such as `Append`, `Suggest` and `SuggestAppend` are provided.
+N> By default, three types of AutoComplete mode such as `Append`, `Suggest` and `SuggestAppend` are provided.
 
 ## Append
 

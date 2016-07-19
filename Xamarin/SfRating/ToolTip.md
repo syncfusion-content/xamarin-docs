@@ -12,6 +12,8 @@ documentation: ug
 
 # Tooltip
 
+The ToolTip shows the value of the SfRating control.
+
 ## TooltipPlacement
 
 SfRating control provides Tooltip support to the SfRating control using `TooltipPlacement` property. 

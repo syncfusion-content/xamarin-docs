@@ -11,7 +11,6 @@ documentation: ug
 
 This section provides overview for working with Essential NavigationDrawer for Xamarin.Forms. You can walk through the entire process of creating an NavigationDrawer.
 
-
 ## Referencing Essential Studio Components in Your Solution	
 
 If you had acquired Essential Studio components through the Xamarin component store interface from within your IDE, then after adding the components to your Xamarin.iOS, Xamarin.Android and Windows Phone projects through the Component manager, you will still need to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL project in your solution. You can do this by manually adding the relevant PCL assembly references to your PCL project contained in the following path inside of your solution folder.
@@ -184,14 +183,65 @@ and the content has set using `DrawerContentView` property.
 {% endhighlight %}
 
 
+## Add Drawer Header Content
+
+Instead of providing everyting in the drawer content view, `DrawerHeaderView` property can be used to display certain information like user id or names in the header part.
+
+{% tabs %}
+
+{% highlight c# %}
+
+	StackLayout headerLayout = new StackLayout ();
+	headerLayout.Orientation = StackOrientation.Vertical;
+	headerLayout.BackgroundColor = Color.FromHex ("#1aa1d6");
+	headerLayout.VerticalOptions = LayoutOptions.CenterAndExpand;
+	headerLayout.HorizontalOptions = LayoutOptions.CenterAndExpand;
+	headerLayout.HeightRequest = 200;
+	headerLayout.WidthRequest = 275;
+	Image image = new Image ();
+	image.Source = ImageSource.FromFile("user.png");
+	image.HeightRequest = 100;
+	image.WidthRequest =  70;
+	image.HorizontalOptions = LayoutOptions.CenterAndExpand;
+	image.VerticalOptions = LayoutOptions.Center;
+	image.BackgroundColor = Color.FromHex ("#1aa1d6");
+	headerLayout.Children.Add (image);
+
+	Label header = new Label ();
+	header.Text  = "James Pollock";
+    header.FontSize = 20;
+	header.HeightRequest = 30;
+	header.WidthRequest = 140;
+	header.TextColor = Color.White;
+	header.HorizontalOptions = LayoutOptions.Center;
+	header.VerticalOptions = LayoutOptions.Center;
+	header.BackgroundColor = Color.FromHex ("#1aa1d6");
+	headerLayout.Children.Add (header);			
+	navigationDrawer.DrawerHeaderView=headerLayout;
+  
+{% endhighlight %}
+
+{% highlight xaml %}
+    
+    <navigation:SfNavigationDrawer x:Name="navigationDrawer">
+        <navigation:SfNavigationDrawer.DrawerHeaderView>
+             <StackLayout x:Name="headerLayout" Orientation="Vertical" HeightRequest="200" WidthRequest="275">
+                    <Image x:Name="image" HeightRequest="100" WidthRequest="70" Source="user.png" />
+                    <Label x:Name="header" Text="James Pollock" FontSize="20" HeightRequest="30" WidthRequest="140" /> 
+             </StackLayout>
+        </navigation:SfNavigationDrawer.DrawerHeaderView>
+    </navigation:SfNavigationDrawer>
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Adjust Drawer Width
 
 Drawer width and height can be set through `DrawerHeight` and `DrawerWidth` properties.
 
 {% tabs %}
 
-{% highlight c# %}
-        
+{% highlight c# %}        
         
         navigationDrawer.DrawerWidth = 300;
   

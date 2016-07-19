@@ -8,6 +8,8 @@ documentation: ug
 ---
 # Number Formatting
 
+The Values of the SfNumericUpDown can be configured to display different formats like currency format, percent format etc. 
+
 ## Format String
 
 The `FormatString` property determines the format specifier by which the display text has to be formatted. 

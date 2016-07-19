@@ -9,8 +9,6 @@ documentation: ug
 
 # Appearance and Styling
 
-## SpinButton Alignment
-
 Spin Button position in the NumericUpDown control can be changed relative to the TextBox based on `SpinButtonAlignment` property. 
 
 There are three built-in modes.

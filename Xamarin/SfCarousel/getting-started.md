@@ -151,17 +151,17 @@ SfCarousel items can be populated with a collection of image data. This collecti
 
 {% highlight C# %}
 
-	public CarouselModel(string imagestr)
-        {
-            Image = imagestr;
-        }
-        private string _image;
+	 public CarouselModel(string imagestr)
+     {
+         Image = imagestr;
+     }
+     private string _image;
 
-        public string Image
-        {
-            get { return _image; }
-            set { _image = value; }
-        }
+     public string Image
+     {
+         get { return _image; }
+         set { _image = value; }
+     }
 
 {% endhighlight %}
 
@@ -172,14 +172,13 @@ Create and populate SfCarousel collection as follows.
 	carousel.DataSource = GetDataSource();
 	List<CarouselModel> GetDataSource()
     {
-	List<CarouselModel> list = new List<CarouselModel>();
-
-	list.Add(new CarouselModel("image1.png"));
-    list.Add(new CarouselModel("image2.png"));
-	list.Add(new CarouselModel("image3.png"));
-    list.Add(new CarouselModel("image4.png"));
-    list.Add(new CarouselModel("image5.png"));	
-	return list;
+	    List<CarouselModel> list = new List<CarouselModel>();
+	    list.Add(new CarouselModel("image1.png"));
+        list.Add(new CarouselModel("image2.png"));
+	    list.Add(new CarouselModel("image3.png"));
+        list.Add(new CarouselModel("image4.png"));
+        list.Add(new CarouselModel("image5.png"));	
+	    return list;
 	}
 
 {% endhighlight %}

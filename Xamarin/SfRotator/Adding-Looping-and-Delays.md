@@ -9,6 +9,8 @@ documentation: ug
 
 # Adding Looping and Delays
 
+This section explains about adding looping and delay in SfRotator control. And also the customizations available for Text and Navigation direction.
+
 ## Toggle AutoPlay
 
 The `EnableAutoPlay` property specifies whether the items should navigate automatically based on `NavigationDelay` property, when the property value is set to true.

@@ -11,6 +11,8 @@ documentation: ug
 
 # Customization of Navigation Strip
 
+This section explains about customization of NavigationStrip Mode and Position. 
+
 ## Strip Mode
 
 The `NavigationStripMode` property specifies the appearance of navigation bar items. The image data can be selected either by Thumbnail or by Dots navigation modes.

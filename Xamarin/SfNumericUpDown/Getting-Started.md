@@ -11,8 +11,6 @@ documentation: ug
 
 This section provides overview for working with Essential SfNumericUpDown for Xamarin.Forms. You can walk through the entire process of creating a SfNumericUpDown.
 
-![](images/gettingstarted.png)
-
 ## Referencing Essential Studio Components in Your Solution	
 
 If you had acquired Essential Studio components through the Xamarin component store interface from within your IDE, then after adding the components to your Xamarin.iOS, Xamarin.Android and Windows Phone projects through the Component manager, you will still need to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL project in your solution. You can do this by manually adding the relevant PCL assembly references to your PCL project contained in the following path inside of your solution folder.
@@ -120,7 +118,7 @@ The SfNumericUpDown control configured entirely in C# code or by using XAML mark
 
 {% highlight xaml %}
 
-	xmlns:numeric="clr-namespace:Syncfusion.SfNumericUpDown.XForms;assembly=Syncfusion.SfNumericUpDown.XForms"
+	<xmlns:numeric="clr-namespace:Syncfusion.SfNumericUpDown.XForms;assembly=Syncfusion.SfNumericUpDown.XForms"/>
 	
 {% endhighlight %}
 
@@ -216,3 +214,5 @@ N> The control displays the formatted text on lost focus. Default Value of `Form
 {% endhighlight %}
 
 {% endtabs %}
+
+![](images/gettingstarted.png)

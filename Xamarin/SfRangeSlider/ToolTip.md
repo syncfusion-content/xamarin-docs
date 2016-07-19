@@ -11,7 +11,7 @@ documentation: ug
 
 The tooltip shows the current value based on thumb position.
 
-## ToolTipPrecision
+## Set ToolTip Precision
 
 The `ToolTipPrecision` property is used to define the precision of the value displayed in the Tooltip.
 
@@ -31,9 +31,9 @@ The `ToolTipPrecision` property is used to define the precision of the value dis
 
 {% endtabs %}
 
-## ToolTipPlacement
+## Displaying ToolTip 
 
-The position of the Tooltip in relation to the thumb can be controlled by the `ToolTipPlacement` property. It has the following options.
+The position of the ToolTip in relation to the thumb can be controlled by the `ToolTipPlacement` property. It has the following options.
 
 1. BottomRight
 2. TopLeft
@@ -41,7 +41,7 @@ The position of the Tooltip in relation to the thumb can be controlled by the `T
 
 ### BottomRight
 
-The Tooltip will be placed either below the Thumb in horizontal orientation or right of the Thumb in vertical orientation.
+The ToolTip will be placed either below the Thumb in horizontal orientation or right of the Thumb in vertical orientation.
 
 {% tabs %}
 

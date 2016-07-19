@@ -11,8 +11,6 @@ documentation: ug
 
 This section explains you the steps to configure a SfRangeSlider control in a real-time scenario and also provides a walk-through on some of the customization features available in SfRangeSlider control.
 
-![](images/RangeSlider.png)
-
 ## Referencing Essential Studio Components in Your Solution	
 
 If you had acquired Essential Studio components through the Xamarin component store interface from within your IDE, then after adding the components to your Xamarin.iOS, Xamarin.Android and Windows Phone projects through the Component manager, you will still need to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL project in your solution. You can do this by manually adding the relevant PCL assembly references to your PCL project contained in the following path inside of your solution folder.
@@ -114,7 +112,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% highlight xaml %}
 
-	xmlns:range="clr-namespace:Syncfusion.SfRangeSlider.XForms;assembly=Syncfusion.SfRangeSlider.XForms"
+	<xmlns:range="clr-namespace:Syncfusion.SfRangeSlider.XForms;assembly=Syncfusion.SfRangeSlider.XForms"/>
 	
 {% endhighlight %}
 
@@ -205,7 +203,7 @@ The movement of the thumb can be varied in different ways. This is achieved by s
 
 {% endtabs %}
 
-
+![](images/RangeSlider.png)
 
 
 

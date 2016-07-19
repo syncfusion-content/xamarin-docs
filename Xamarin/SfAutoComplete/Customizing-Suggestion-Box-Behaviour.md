@@ -7,8 +7,9 @@ control : AutoComplete
 documentation : ug
 ---
 
-
 # Customizing Suggestion Box Behaviour
+
+Suggestion Box behavior can be customized using `MinimumPrefixCharacters` and `PopUpDelay` properties in SfAutoComplete.
 
 ## Set Minimum Prefix Character
 

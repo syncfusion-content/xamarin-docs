@@ -8,6 +8,8 @@ documentation: ug
 ---
 # Configuring Ticks and Labels
 
+This section explains major customization settings available in Ticks and Label.
+
 ## Settings Ticks 
 
 Ticks are categorized into two type as major and minor. These ticks are arranged with respect to the specified frequency i.e., Interval of the linear scale. The minor ticks are displayed using the 

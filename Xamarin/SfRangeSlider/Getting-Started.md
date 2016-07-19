@@ -203,6 +203,27 @@ The movement of the thumb can be varied in different ways. This is achieved by s
 
 {% endtabs %}
 
+## Setting Orientation
+
+SfRangeSlider can be displayed either horizontally or vertically. this can achieved by setting the `Orientation` property.
+
+{% tabs %}
+
+{% highlight c# %}
+
+	rangeslider.Orientation=Orientation.Horizontal;
+
+{% endhighlight %}
+
+{% highlight xaml %}
+
+	<range:SfRangeSlider x:Name="rangeslider" Orientation="Horizontal"/>
+	
+{% endhighlight %}
+
+{% endtabs %}
+
+
 ![](images/RangeSlider.png)
 
 

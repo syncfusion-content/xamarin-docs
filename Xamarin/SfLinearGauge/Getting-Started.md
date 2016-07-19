@@ -228,14 +228,24 @@ We can improve the readability of data by including ranges that quickly displays
 
 {% tabs %}
 
-{% highlight c# %}
-
+{% highlight c# %}    
+	
 	LinearRange symbolRange = new LinearRange ();
 	symbolRange.StartValue = 0;
 	symbolRange.EndValue = 50;
 	symbolRange.Color = Color.FromRgb (234, 248, 249);
 	symbolRange.StartWidth = 10;
 	symbolRange.EndWidth = 10; 
+	scale.Ranges.Add(symbolRange);
+	
+    LinearRange pointerRange = new LinearRange();
+    pointerRange.StartValue = 50;
+    pointerRange.EndValue = 100;
+    pointerRange.Color = Color.FromRgb(50, 184, 198);
+    pointerRange.StartWidth = 10;
+    pointerRange.EndWidth = 10;  
+    scale.Ranges.Add(pointerRange);
+
 	
 {% endhighlight %}
 

@@ -141,18 +141,20 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% endtabs %}
 
-## Manipulating AutoCompleteSource to AutoComplete
+## Setting AutoCompleteSource
 
-You can set the suggestion list to the SfAutoComplete using the AutoCompleteSource property. Check autocomplete mode for more details.
+You can set the suggestion list to the SfAutoComplete using the `AutoCompleteSource` property. Check autocomplete mode for more details.
 
 {% tabs %}
 
 {% highlight c# %}
 
     List<String> countryName = new List<String>();
-	countryName.Add("Afghanistan");
-	countryName.Add("Akrotiri");
-	countryName.Add("Albania");
+	countryName.Add("Uganda");
+	countryName.Add("Ukraine");
+	countryName.Add("United Arab Emirates");
+	countryName.Add("United Kingdom");
+	countryName.Add("United States");	
 	countryAutoComplete.AutoCompleteSource = countryName;
 
 {% endhighlight %}
@@ -178,13 +180,14 @@ SfAutocomplete can be customized using the `Watermark` and `PopupDelay` properti
 	countryAutoComplete.MaximumDropDownHeight = 300;
 	countryAutoComplete.MinimumPrefixCharacters = 2;
 	countryAutoComplete.HeightRequest = 40;
+	countryAutoComplete.PopUpDelay = 100;
 	countryAutoComplete.Watermark = "Enter a country name";  
 
 {% endhighlight %}
 
 {% highlight xaml %}
 
-  		<autocomplete:SfAutoComplete Watermark="Enter a country name" x:Name="countryAutoComplete" SuggestionMode="StartsWith" AutoCompleteMode="Suggest" HeightRequest="40" MinimumPrefixCharacters="2" MaximumDropDownHeight="300" />
+  		<autocomplete:SfAutoComplete Watermark="Enter a country name" x:Name="countryAutoComplete" SuggestionMode="StartsWith" AutoCompleteMode="Suggest" HeightRequest="40" MinimumPrefixCharacters="2" MaximumDropDownHeight="300" PopUpDelay ="100" />
 
 {% endhighlight %}
 

@@ -10,6 +10,17 @@ documentation: ug
 
 The `AnimationType` property allows you to choose anyone of the 10 predefined animation types.
 
+* Ball
+* HorizontalPulsingBox
+* Rectangle
+* Battery
+* Globe
+* SingleCircle
+* SlicedCircle
+* DoubleCircle
+* ECG
+* Print
+
 {% tabs %}
 
 {% highlight c# %}

@@ -11,7 +11,9 @@ documentation: ug
 
 # Appearance and Styling
 
-## Item Size
+This section explains about the various customizations available in SfRating control.
+
+## Setting Item Size
 
 The `ItemSize` property sets the size of the rating items. 
 
@@ -35,7 +37,7 @@ N> By default, property value is 50.
 
 ![](images/layoutSize.jpg)
  
-## Item Spacing
+## Setting Item Spacing
 
 The `ItemSpacing` property sets the spacing between the rating items. 
 
@@ -59,7 +61,7 @@ N> By default, property value is 5.
 
 ![](images/layoutSpace.jpg)
  
-## Number of Items
+## Setting Number of Items
 
 The `ItemCount` property sets the number of rating items to be displayed. 
 
@@ -83,7 +85,7 @@ N> The default property value is 5.
 
 ![](images/four star.jpg)
  
-## Read Only
+## Setting Read Only
 
 SfRating control provides support for changeable or unchangeable values for Rating control. This is achieved by the ReadOnly property. When this property is set to True, the Rating value becomes unchangeable. By default, this property value is set to False.
 
@@ -106,6 +108,8 @@ SfRating control provides support for changeable or unchangeable values for Rati
 ![](images/readOnly.jpg)
 
 ## Rating Settings
+
+This section explains various Rating settings available in SfRating control. 
 
 {% tabs %}
 

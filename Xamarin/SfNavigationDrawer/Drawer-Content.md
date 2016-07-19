@@ -165,4 +165,4 @@ Gets or sets the height and width of the DrawerView panel in the NavigationDrawe
 
 {% endtabs %}
 
-N> The Drawer width will be handy when [Position](/Xamarin/SfNavigationDrawer/Configuring-The-Drawer-In-Different-Sides "Configuring The Drawer In Different Sides") is left or right and `DrawerHeight` property can be used when Position is Top or bottom
+N> The Drawer width will be handy when [Position](/Xamarin/SfNavigationDrawer/Position "Configuring The Drawer In Different Sides") is left or right and `DrawerHeight` property can be used when Position is Top or bottom

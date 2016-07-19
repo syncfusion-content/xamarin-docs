@@ -214,6 +214,4 @@ N> The control displays the formatted text on lost focus. Default Value of `Form
 
 {% endtabs %}
 
-![](images/FormatString.png)
-
 ![](images/gettingstarted.png)

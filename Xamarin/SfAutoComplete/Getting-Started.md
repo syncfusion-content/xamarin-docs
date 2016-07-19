@@ -177,8 +177,8 @@ SfAutocomplete can be customized using the `Watermark` and `PopupDelay` properti
 
 	countryAutoComplete.SuggestionMode = SuggestionMode.StartsWith;
 	countryAutoComplete.AutoCompleteMode = AutoCompleteMode.Suggest;
-	countryAutoComplete.MaximumDropDownHeight = 300;
-	countryAutoComplete.MinimumPrefixCharacters = 2;
+	countryAutoComplete.MaximumDropDownHeight = 200;
+	countryAutoComplete.MinimumPrefixCharacters = 1;
 	countryAutoComplete.HeightRequest = 40;
 	countryAutoComplete.PopUpDelay = 100;
 	countryAutoComplete.Watermark = "Enter a country name";  
@@ -187,7 +187,7 @@ SfAutocomplete can be customized using the `Watermark` and `PopupDelay` properti
 
 {% highlight xaml %}
 
-  		<autocomplete:SfAutoComplete Watermark="Enter a country name" x:Name="countryAutoComplete" SuggestionMode="StartsWith" AutoCompleteMode="Suggest" HeightRequest="40" MinimumPrefixCharacters="2" MaximumDropDownHeight="300" PopUpDelay ="100" />
+  		<autocomplete:SfAutoComplete Watermark="Enter a country name" x:Name="countryAutoComplete" SuggestionMode="StartsWith" AutoCompleteMode="Suggest" HeightRequest="40" MinimumPrefixCharacters="1" MaximumDropDownHeight="200" PopUpDelay ="100" />
 
 {% endhighlight %}
 

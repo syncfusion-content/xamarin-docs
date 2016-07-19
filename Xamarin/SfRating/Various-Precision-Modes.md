@@ -9,7 +9,7 @@ documentation: ug
 
 ---
 
-# Precision Mode
+# Various Precision Modes
 
 The Precision mode defines the accuracy level of the SfRating control. It has Standard, Half and Exact options.
 

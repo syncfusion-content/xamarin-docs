@@ -7,7 +7,7 @@ control : AutoComplete
 documentation : ug
 ---
 
-# DataBinding
+# Data Binding
 
 SfAutoComplete control, supports binding to different data sources such as IList Data Source, XML Data Source, Observable Collection Data Source. This section explains 
 about setting AutoComplete source, Item Source and applying template to the data.
@@ -39,7 +39,7 @@ The `AutoCompleteSource` property is used to populate the list of data to the su
 	
 ![](images/autocompletesource.png)
 
-## ItemSource
+## Set Item Source
 
 ItemSource is a collection of SfAutoComplete items which holds the ImageName and TextProperties that to be displayed in suggestions.
 

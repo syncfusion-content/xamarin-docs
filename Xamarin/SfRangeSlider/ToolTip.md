@@ -9,7 +9,7 @@ documentation: ug
 
 # ToolTip Support
 
-The tooltip shows the current value based on thumb position.
+The ToolTip shows the current value based on thumb position.
 
 ## Set ToolTip Precision
 

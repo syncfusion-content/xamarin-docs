@@ -34,7 +34,7 @@ Gets or sets the threshold value from the edges for easy panning from the edges.
 {% endtabs %}
 
 
-## pullableContent
+## PullableContent
 
 PullableContent is the main view of the PullToRefresh control on which the desired items can be placed.
 

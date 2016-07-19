@@ -13,8 +13,6 @@ documentation: ug
 
 This section explains you the steps to configure a SfRating control in a real-time scenario and also provides a walk-through on some of the customization features available in SfRating control.
 
-![](images/gettingstarted.png)
-
 ## Referencing Essential Studio components in your solution
 
 If you had acquired Essential Studio components through the Xamarin component store interface from within your IDE, then after adding the components to your Xamarin.iOS, Xamarin.Android and Windows Phone projects through the Component manager, you will still need to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL project in your solution. You can do this by manually adding the relevant PCL assembly references to your PCL project contained in the following path inside of your solution folder.
@@ -126,7 +124,7 @@ The SfRating control is configured entirely in C# code or by using XAML markup. 
 
 {% highlight xaml %}
 
-	xmlns:rating="clr-namespace:Syncfusion.SfRating.XForms;assembly=Syncfusion.SfRating.XForms"
+	<xmlns:rating="clr-namespace:Syncfusion.SfRating.XForms;assembly=Syncfusion.SfRating.XForms"/>
 
 {% endhighlight %}
 
@@ -193,7 +191,7 @@ N> By default, property value is 0.
 
 {% endtabs %}
 
-![](images/standard.jpg)
+![](images/gettingstarted.png)
 
 
 

@@ -7,7 +7,7 @@ control : AutoComplete
 documentation : ug
 ---
 
-# SuggestionMode
+# Various Filtering Mode
 
 The `SuggestionMode` property provides various option to filter the data according to the text entered.  
 

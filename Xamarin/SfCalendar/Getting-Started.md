@@ -30,82 +30,107 @@ Or after downloading through the Xamarin store web interface, all the required a
 
 {Download location}\syncfusionessentialstudio-version\lib
 
-You can then add the assembly references to the respective projects as shown below
+You can then add the assembly references to the respective projects as shown below.
 
-<table>
-<tr>
-<th>Project</th>
-<th>Required assemblies</th>
-</tr>
-<tr>
-<td>PCL</td>
-<td>pcl\Syncfusion.SfCalendar.XForms.dll</td>
-</tr>
-<tr>
-<td>Android</td>
-<td>android\Syncfusion.SfCalendar.Android.dll<br/>android\Syncfusion.SfCalendar.XForms.Android.dll<br/>android\Syncfusion.SfCalendar.XForms.dll</td>
-</tr>
-<tr>
-<td>iOS (Unified)</td>
-<td>iOS-unified\Syncfusion.SfCalendar.iOS.dll<br/>iOS-unified\Syncfusion.SfCalendar.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfCalendar.XForms.dll</td>
-</tr>
-<tr>
-<td>Windows Phone</td>
-<td>wp8\Syncfusion.SfInput.WP8.dll<br/>wp8\Syncfusion.SfShared.WP8.dll<br/>wp8\Syncfusion.SfCalendar.XForms.dll<br/>wp8\Syncfusion.SfCalendar.XForms.WinPhone.dll</td>
-</tr>
-<tr>
-<td>Windows Phone 8.1</td>
-<td>wp81\Syncfusion.SfInput.WP.dll<br/>wp81\Syncfusion.SfShared.WP.dll<br/>wp81\Syncfusion.SfCalendar.XForms.dll<br/>wp81\Syncfusion.SfCalendar.XForms.WinPhone.dll</td>
-</tr>
-<tr>
-<td>WinRT</td>
-<td>winrt\Syncfusion.SfInput.WinRT.dll<br/>winrt\Syncfusion.SfShared.WinRT.dll<br/>winrt\Syncfusion.SfCalendar.XForms.dll<br/>winrt\Syncfusion.SfCalendar.XForms.WinRT.dll</td>
-</tr>
-<tr>
-<td>UWP</td>
-<td>uwp\Syncfusion.SfInput.UWP.dll<br/>uwp\Syncfusion.SfShared.UWP.dll<br/>uwp\Syncfusion.SfCalendar.XForms.dll<br/>uwp\Syncfusion.SfCalendar.XForms.UWP.dll</td>
-</tr>
-</table>
+{% tabs %}
+
+{% highlight PCL %}
+
+pcl\Syncfusion.SfCalendar.XForms.dll
+
+{% endhighlight %}
+
+{% highlight Android %}
+
+android\Syncfusion.SfCalendar.Android.dll
+android\Syncfusion.SfCalendar.XForms.Android.dll
+android\Syncfusion.SfCalendar.XForms.dll
+	
+{% endhighlight %}
+
+{% highlight iOS %}
+
+iOS-unified\Syncfusion.SfCalendar.iOS.dll
+iOS-unified\Syncfusion.SfCalendar.XForms.iOS.dll
+iOS-unified\Syncfusion.SfCalendar.XForms.dll
+
+{% endhighlight %}
+
+{% highlight Windows Phone %}
+
+**Windows Phone 8**
+
+wp8\Syncfusion.SfInput.WP8.dll
+wp8\Syncfusion.SfShared.WP8.dll
+wp8\Syncfusion.SfCalendar.XForms.dll
+wp8\Syncfusion.SfCalendar.XForms.WinPhone.dll
+
+**Windows Phone 8.1**
+
+wp81\Syncfusion.SfInput.WP.dll
+wp81\Syncfusion.SfShared.WP.dll
+wp81\Syncfusion.SfCalendar.XForms.dll
+wp81\Syncfusion.SfCalendar.XForms.WinPhone.dll
+
+{% endhighlight %}
+
+{% highlight WinRT %}
+
+winrt\Syncfusion.SfInput.WinRT.dll
+winrt\Syncfusion.SfShared.WinRT.dll
+winrt\Syncfusion.SfCalendar.XForms.dll
+winrt\Syncfusion.SfCalendar.XForms.WinRT.dll
+
+{% endhighlight %}
+
+{% highlight UWP %}
+
+uwp\Syncfusion.SfInput.UWP.dll
+uwp\Syncfusion.SfShared.UWP.dll
+uwp\Syncfusion.SfCalendar.XForms.dll
+uwp\Syncfusion.SfCalendar.XForms.UWP.dll
+
+{% endhighlight %}
+
+{% endtabs %}
 
 Currently an additional step is required for Windows Phone, Windows Phone 8.1 and iOS projects. We need to create an instance of the calendar custom renderer as shown below. 
 
 Create an instance of SfCalendarRenderer in MainPage constructor of the Windows Phone and Windows Phone 8.1  project as shown 
 
+{% tabs %}
+
 {% highlight C# %}
 
 public MainPage()
-
 {
-
     new SfCalendarRenderer();
-
-    ...    
-
 }
 
 {% endhighlight %}
 
+{% endtabs %}
+
 Create an instance of SfCalendarRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below
+
+{% tabs %}
 
 {% highlight C# %}
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
-
 {
-
-    ...
-
     new SfCalendarRenderer ();
-
-    ...
-
 }	
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ## Add and Configure the SfCalendar
 
-* Adding reference to SfCalendar.
+The following steps help to add a SfCalendar control through code.
+
+* Adding namespace for the added assemblies. 
 
 {% tabs %}
 
@@ -123,7 +148,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% endtabs %}
 
-* Create an instance of SfCalendar.
+* Now add the SfCalendar control with a required optimal name by using the included namespace.
 
 {% tabs %}
 

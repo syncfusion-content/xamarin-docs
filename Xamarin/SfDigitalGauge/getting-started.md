@@ -106,7 +106,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 The SfDigitalGauge control is configured entirely in C# code or by using XAML markup. The following steps explain on how to create a SfDigitalGauge and configure its elements.
 
-* Adding reference to SfDigitalGauge.
+* Adding namespace for the added assemblies. 
 
 {% tabs %}
 
@@ -124,7 +124,7 @@ The SfDigitalGauge control is configured entirely in C# code or by using XAML ma
 
 {% endtabs %}
 
-* Create an instance for SfDigitalGauge control.
+* Now add the SfDigitalGauge control with a required optimal name by using the included namespace.
 
 {% tabs %}
 

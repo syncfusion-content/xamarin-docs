@@ -9,7 +9,7 @@ documentation : ug
 
 # Data Binding
 
-SfAutoComplete control, supports binding to different data sources such as IList Data Source, XML Data Source, Observable Collection Data Source. This section explains 
+SfAutoComplete control, supports binding to different data sources such as IList Data Source, Observable Collection Data Source. This section explains 
 about setting AutoComplete source, Item Source and applying template to the data.
 
 ## Setting AutoComplete Source

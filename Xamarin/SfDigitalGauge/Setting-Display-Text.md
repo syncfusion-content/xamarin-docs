@@ -7,7 +7,7 @@ control: DigitalGauge
 documentation: ug
 ---
 
-# Setting Display Text
+# Setting Displaying Text
 
 The Digital Characters in the SfDigitalGauge is viewed in different types of segments. These digital characters are set to the SfDigitalGauge through the `Value` property of type string.
 

@@ -112,7 +112,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 The SfRating control is configured entirely in C# code or by using XAML markup. The following steps explain on how to create a SfRating and configure its elements.
 
-* Adding reference to SfRating.
+* Adding namespace for the added assemblies. 
 
 {% tabs %}
 
@@ -130,7 +130,7 @@ The SfRating control is configured entirely in C# code or by using XAML markup. 
 
 {% endtabs %}
 
-* Create an instance for SfRating control.
+* Now add the SfRating control with a required optimal name by using the included namespace.
 
 {% tabs %}
 

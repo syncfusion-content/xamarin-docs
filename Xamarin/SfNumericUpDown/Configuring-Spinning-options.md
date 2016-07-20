@@ -18,17 +18,17 @@ N> By default the minimum property value is 0 and maximum property value is 100.
 
 {% tabs %}
 
+{% highlight xaml %}
+
+	<numeric:SfNumericUpDown x:Name="numericUpDown" Minimum="10" Maximum="50"/>
+	
+{% endhighlight %}
+
 {% highlight C# %}
 
 	numericUpDown.Minimum = 0;
 	numerucUpDown.Maximum = 100
 
-{% endhighlight %}
-
-{% highlight xaml %}
-
-	<numeric:SfNumericUpDown x:Name="numericUpDown" Minimum="10" Maximum="50"/>
-	
 {% endhighlight %}
 
 {% endtabs %}
@@ -45,16 +45,16 @@ N> By default the property value is 1.
 
 {% tabs %}
 
-{% highlight C# %}
-
-	numericUpDown.StepValue = 6;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<numeric:SfNumericUpDown x:Name="numericUpDown" StepValue="6"/>
 	
+{% endhighlight %}
+
+{% highlight C# %}
+
+	numericUpDown.StepValue = 6;
+
 {% endhighlight %}
 
 {% endtabs %}

@@ -17,6 +17,12 @@ Ticks are categorized into two type as major and minor. These ticks are arranged
 
 {% tabs %}
 
+{% highlight xaml %}
+
+	<gauge:LinearTickSettings x:Name="minor" Length="5" Thickness="1" MinorTickSettings="minor" />
+	
+{% endhighlight %}
+
 {% highlight C# %}
 
 	LinearTickSettings minor = new LinearTickSettings ();
@@ -33,12 +39,6 @@ Ticks are categorized into two type as major and minor. These ticks are arranged
 	
 {% endhighlight %}
 
-{% highlight xaml %}
-
-	<gauge:LinearTickSettings x:Name="minor" Length="5" Thickness="1" MinorTickSettings="minor" />
-	
-{% endhighlight %}
-
 {% endtabs %}
 
 
@@ -49,6 +49,13 @@ Ticks are categorized into two type as major and minor. These ticks are arranged
 LinearScale is used to set the Labels, Values and Ticks to specify the basic look and feel of the SfLinearGauge. It defines the overall minimum and maximum values, along with the frequency of labels and ticks through the interval of the scale. It can contain multiple ranges within a scale. It also contains one or more pointers to point out the measures of the linear scale.
 
 {% tabs %}
+
+{% highlight xaml %}
+
+	<gauge:LinearScale x:Name="scale" MinimumValue="0" MaximumValue="100" Interval="20" ScaleBarLength="100" ScaleBarColor="Color.Red" MinorTicksPerInterval="1" ScaleBarSize="13" ScalePosition="Backward" />
+	
+{% endhighlight %}
+
 
 {% highlight C# %}
 
@@ -64,12 +71,6 @@ LinearScale is used to set the Labels, Values and Ticks to specify the basic loo
 	scale.ScaleBarSize = 13;
 	scale.ScalePosition = ScalePosition.BackWard;	
 	sfLinearGauge.Scales=scale;
-	
-{% endhighlight %}
-
-{% highlight xaml %}
-
-	<gauge:LinearScale x:Name="scale" MinimumValue="0" MaximumValue="100" Interval="20" ScaleBarLength="100" ScaleBarColor="Color.Red" MinorTicksPerInterval="1" ScaleBarSize="13" ScalePosition="Backward" />
 	
 {% endhighlight %}
 

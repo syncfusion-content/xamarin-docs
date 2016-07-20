@@ -14,15 +14,15 @@ N> Default `Culture` property value is en-US.
 
 {% tabs %}
 
-{% highlight c# %}
-
-	numericTextBox.Culture = new System.Globalization.CultureInfo("fr-FR");
-	
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<numeric:SfNumericTextBox x:Name="numericTextBox" Culture="fr-FR" />
+	
+{% endhighlight %}
+
+{% highlight c# %}
+
+	numericTextBox.Culture = new System.Globalization.CultureInfo("fr-FR");
 	
 {% endhighlight %}
 

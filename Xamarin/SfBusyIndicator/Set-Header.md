@@ -12,6 +12,12 @@ The `Title` property can be used to get or set the text that indicates the infor
 
 {% tabs %}
 
+{% highlight xaml %}
+
+	<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="Ball" Title="Loading..."  Fontface="Bold"/>
+	
+{% endhighlight %}
+
 {% highlight c# %}
 
 	SfBusyIndicator busyindicator = new SfBusyIndicator();
@@ -21,14 +27,7 @@ The `Title` property can be used to get or set the text that indicates the infor
 
 {% endhighlight %}
 
-{% highlight xaml %}
-
-	<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="Ball" Title="Loading..."  Fontface="Bold"/>
-	
-{% endhighlight %}
-
 {% endtabs %}
-
 
 ![](images/Title.png) 
 

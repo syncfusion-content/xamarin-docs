@@ -17,6 +17,12 @@ about setting AutoComplete source, Item Source and applying template to the data
 The `AutoCompleteSource` property is used to populate the list of data to the suggestions dropdown.
 	
 {% tabs %}	
+
+{% highlight xaml %}
+
+  	<autocomplete:SfAutoComplete  x:Name="countryAutoComplete" HeightRequest="40" AutoCompleteSource="{Binding }" />
+
+{% endhighlight %}
 	
 {% highlight c# %}
 	
@@ -27,12 +33,6 @@ The `AutoCompleteSource` property is used to populate the list of data to the su
 	countryList.Add ("Iran");
 	countryAutoComplete.AutoCompleteSource=countryList;
 	 
-{% endhighlight %}
-
-{% highlight xaml %}
-
-  		<autocomplete:SfAutoComplete  x:Name="countryAutoComplete" HeightRequest="40" AutoCompleteSource="{Binding }" />
-
 {% endhighlight %}
 
 {% endtabs %}

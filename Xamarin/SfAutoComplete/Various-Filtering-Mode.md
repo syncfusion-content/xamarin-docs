@@ -18,17 +18,17 @@ N> By default, there are eight types of suggestion modes.
 Display the list of suggestions based on starting letter.
 	
 {% tabs %}	
+
+{% highlight xaml %}
+
+  	<autocomplete:SfAutoComplete  x:Name="countryAutoComplete" SuggestionMode="StartsWith" />
+
+{% endhighlight %}
 	
 {% highlight c# %}
 	
 	countryAutoComplete.SuggestionMode = SuggestionMode.StartsWith;
 	 
-{% endhighlight %}
-
-{% highlight xaml %}
-
-  		<autocomplete:SfAutoComplete  x:Name="countryAutoComplete" SuggestionMode="StartsWith" />
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -41,16 +41,16 @@ Display the list of suggestions based on starting letter with case sensitive.
 
 {% tabs %}
 
+{% highlight xaml %}
+
+  	<autocomplete:SfAutoComplete  x:Name="countryAutoComplete" SuggestionMode="StartsWithCaseSensitive" />
+
+{% endhighlight %}
+
 {% highlight c# %}
 	
 	countryAutoComplete.SuggestionMode = SuggestionMode.StartsWithCaseSensitive;
 	 
-{% endhighlight %}
-
-{% highlight xaml %}
-
-  		<autocomplete:SfAutoComplete  x:Name="countryAutoComplete" SuggestionMode="StartsWithCaseSensitive" />
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -63,16 +63,16 @@ Display the list of suggestions, if autocomplete list contains that words.
 	
 {% tabs %}
 
+{% highlight xaml %}
+
+  	<autocomplete:SfAutoComplete  x:Name="countryAutoComplete" SuggestionMode="Contains" />
+
+{% endhighlight %}
+
 {% highlight c# %}
 	
 	countryAutoComplete.SuggestionMode = SuggestionMode.Contains;
 	 
-{% endhighlight %}
-
-{% highlight xaml %}
-
-  		<autocomplete:SfAutoComplete  x:Name="countryAutoComplete" SuggestionMode="Contains" />
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -85,16 +85,16 @@ Display the list of suggestions, if autoComplete list contains that words with c
 
 {% tabs %}
 
+{% highlight xaml %}
+
+  	<autocomplete:SfAutoComplete  x:Name="countryAutoComplete" SuggestionMode="ContainsWithCaseSensitive" />
+
+{% endhighlight %}
+
 {% highlight c# %}
 	
 	countryAutoComplete.SuggestionMode = SuggestionMode.ContainsWithCaseSensitive;
 	 
-{% endhighlight %}
-
-{% highlight xaml %}
-
-  		<autocomplete:SfAutoComplete  x:Name="countryAutoComplete" SuggestionMode="ContainsWithCaseSensitive" />
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -107,16 +107,16 @@ Displays the word that matches.
 	
 {% tabs %}
 
+{% highlight xaml %}
+
+  	<autocomplete:SfAutoComplete  x:Name="countryAutoComplete" SuggestionMode="Equals" />
+
+{% endhighlight %}
+
 {% highlight c# %}
 	
 	countryAutoComplete.SuggestionMode = SuggestionMode.Equals;
 	 
-{% endhighlight %}
-
-{% highlight xaml %}
-
-  		<autocomplete:SfAutoComplete  x:Name="countryAutoComplete" SuggestionMode="Equals" />
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -129,16 +129,16 @@ Displays the word that matches with case sensitive.
 	
 {% tabs %}
 
+{% highlight xaml %}
+
+  	<autocomplete:SfAutoComplete  x:Name="countryAutoComplete" SuggestionMode="EqualsWithCaseSensitive" />
+
+{% endhighlight %}
+
 {% highlight c# %}
 	
 	countryAutoComplete.SuggestionMode = SuggestionMode.EqualsWithCaseSensitive;
 	 
-{% endhighlight %}
-
-{% highlight xaml %}
-
-  		<autocomplete:SfAutoComplete  x:Name="countryAutoComplete" SuggestionMode="EqualsWithCaseSensitive" />
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -151,17 +151,18 @@ Display the list of suggestions based on ending word.
 
 {% tabs %}
 	
+{% highlight xaml %}
+
+  	<autocomplete:SfAutoComplete  x:Name="countryAutoComplete" SuggestionMode="EndsWith" />
+
+{% endhighlight %}
+
 {% highlight c# %}
 	
 	countryAutoComplete.SuggestionMode = SuggestionMode.EndsWith;
 	 
 {% endhighlight %}
 
-{% highlight xaml %}
-
-  		<autocomplete:SfAutoComplete  x:Name="countryAutoComplete" SuggestionMode="EndsWith" />
-
-{% endhighlight %}
 
 {% endtabs %}
 
@@ -173,16 +174,16 @@ Display the list of suggestions based on the ending word with case sensitive.
 	
 {% tabs %}
 
+{% highlight xaml %}
+
+  	<autocomplete:SfAutoComplete  x:Name="countryAutoComplete" SuggestionMode="EndsWithCaseSensitive" />
+
+{% endhighlight %}
+
 {% highlight c# %}
 	
 	countryAutoComplete.SuggestionMode = SuggestionMode.EndsWithCaseSensitive;
 	 
-{% endhighlight %}
-
-{% highlight xaml %}
-
-  		<autocomplete:SfAutoComplete  x:Name="countryAutoComplete" SuggestionMode="EndsWithCaseSensitive" />
-
 {% endhighlight %}
 
 {% endtabs %}

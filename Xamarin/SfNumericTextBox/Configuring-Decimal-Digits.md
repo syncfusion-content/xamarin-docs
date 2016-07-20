@@ -14,16 +14,16 @@ N> The `MaximumNumberDecimalDigits` property can be provided with positive value
 
 {% tabs %}
 
-{% highlight c# %}
-
-	numericTextBox.MaximumNumberDecimalDigits=2;
-  
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<numeric:SfNumericTextBox x:Name="numericTextBox" MaximumNumberDecimalDigits="2" />
 	
+{% endhighlight %}
+
+{% highlight c# %}
+
+	numericTextBox.MaximumNumberDecimalDigits=2;
+  
 {% endhighlight %}
 
 {% endtabs %}

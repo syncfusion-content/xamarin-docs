@@ -39,17 +39,18 @@ It has three types,
 * `n` – Display the value in number format.
 	
 {% tabs %}	
-	
-{% highlight C# %}
-	
-	numericUpDown.FormatString="n";
-	 
-{% endhighlight %}
 
 {% highlight xaml %}
 
 	<numeric:SfNumericUpDown x:Name="numericUpDown" FormatString="n"/>
 	
+{% endhighlight %}
+
+	
+{% highlight C# %}
+	
+	numericUpDown.FormatString="n";
+	 
 {% endhighlight %}
 
 {% endtabs %}
@@ -85,17 +86,18 @@ N> The `ParsingMode` is of type Parsers containing enum values of Double and Dec
 
 {% tabs %}
 
+{% highlight xaml %}
+
+	<numeric:SfNumericUpDown x:Name="numericUpDown" ParsingMode="Decimal"/>
+	
+{% endhighlight %}
+
 {% highlight C# %}
 
 	numericUpDown.ParsingMode=ParsingMode.Decimal;
 	  
 {% endhighlight %}
 
-{% highlight xaml %}
-
-	<numeric:SfNumericUpDown x:Name="numericUpDown" ParsingMode="Decimal"/>
-	
-{% endhighlight %}
 
 {% endtabs %}
 
@@ -114,16 +116,16 @@ It provides the following options:
 
 {% tabs %}
 
-{% highlight C# %}
-
-	numericUpDown.PercentDisplayMode=PercentDisplayMode.Value;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<numeric:SfNumericUpDown x:Name="numericUpDown" PercentDisplayMode="Value"/>
 	
+{% endhighlight %}
+
+{% highlight C# %}
+
+	numericUpDown.PercentDisplayMode=PercentDisplayMode.Value;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -133,16 +135,16 @@ It provides the following options:
 
 {% tabs %}
 
-{% highlight C# %}
-
-	numericUpDown.PercentDisplayMode=PercentDisplayMode.Compute;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<numeric:SfNumericUpDown x:Name="numericUpDown" PercentDisplayMode="Compute"/>
 	
+{% endhighlight %}
+
+{% highlight C# %}
+
+	numericUpDown.PercentDisplayMode=PercentDisplayMode.Compute;
+
 {% endhighlight %}
 
 {% endtabs %}

@@ -23,17 +23,17 @@ The `AnimationType` property allows you to choose anyone of the 10 predefined an
 
 {% tabs %}
 
+{% highlight xaml %}
+
+	<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="Ball" />
+
+{% endhighlight %}
+
 {% highlight c# %}
 
 	SfBusyIndicator busyindicator = new SfBusyIndicator();
 	busyindicator.AnimationType=AnimationTypes.Ball;
 	
-{% endhighlight %}
-
-{% highlight xaml %}
-
-	<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="Ball" />
-
 {% endhighlight %}
 
 {% endtabs %}

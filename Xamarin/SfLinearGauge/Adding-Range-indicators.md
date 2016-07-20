@@ -12,6 +12,12 @@ Ranges of the linear scale are a collection of the linear range. A linear range 
 
 {% tabs %}
 
+{% highlight xaml %}
+
+	<gauge:LinearRange x:Name="Range1" StartValue="0" EndValue="30" StartWidth="10" EndWidth="10" />
+	
+{% endhighlight %}
+
 {% highlight C# %}
 
 	LinearRange Range1 = new LinearRange ();
@@ -43,13 +49,6 @@ Ranges of the linear scale are a collection of the linear range. A linear range 
 	
 {% endhighlight %}
 
-{% highlight xaml %}
-
-	<gauge:LinearRange x:Name="Range1" StartValue="0" EndValue="30" StartWidth="10" EndWidth="10" />
-	
-{% endhighlight %}
-
 {% endtabs %}
-
 
 ![](images/Range.png)

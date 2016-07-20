@@ -32,25 +32,19 @@ Or after downloading through the Xamarin store web interface, all the required a
 You can then add the assembly references to the respective projects as shown below
 
 
-{% tabs %}
-
-{% highlight PCL %}
+### PCL 
 pcl\Syncfusion.SfBusyIndicator.XForms.dll
-{% endhighlight %}
 
-{% highlight Android %}
+### Android 
 android\Syncfusion.SfBusyIndicator.Android.dll
 android\Syncfusion.SfBusyIndicator.XForms.Android.dll
 android\Syncfusion.SfBusyIndicator.XForms.dll
-{% endhighlight %}
 
-{% highlight iOS %}
+### iOS 
 iOS-unified\Syncfusion.SfBusyIndicator.iOS.dll
 iOS-unified\Syncfusion.SfBusyIndicator.XForms.iOS.dll
 iOS-unified\Syncfusion.SfBusyIndicator.XForms.dll
-{% endhighlight %}
 
-{% highlight Windows %}
 ### Windows Phone
 wp8\Syncfusion.SfBusyIndicator.WP8.dll
 wp8\Syncfusion.SfBusyIndicator.XForms.dll
@@ -60,21 +54,17 @@ wp8\Syncfusion.SfBusyIndicator.XForms.WinPhone.dll
 wp81\Syncfusion.SfBusyIndicator.WP.dll
 wp81\Syncfusion.SfBusyIndicator.XForms.dll
 wp81\Syncfusion.SfBusyIndicator.XForms.WinPhone.dll
-{% endhighlight %}
 
 {% highlight WinRT %}
 winrt\Syncfusion.SfBusyIndicator.WinRT.dll
 winrt\Syncfusion.SfBusyIndicator.XForms.dll
 winrt\Syncfusion.SfBusyIndicator.XForms.WinRT.dll
-{% endhighlight %}
 
-{% highlight UWP %}
+### UWP 
 uwp\Syncfusion.SfBusyIndicator.UWP.dll
 uwp\Syncfusion.SfBusyIndicator.XForms.dll
 uwp\Syncfusion.SfBusyIndicator.XForms.UWP.dll
-{% endhighlight %}
 
-{% endtabs %}
 
 
 Currently an additional step is required for Windows Phone, Windows Phone 8.1 and iOS projects. We need to create an instance of the SfBusyIndicator custom renderer as shown below. 
@@ -111,16 +101,16 @@ The following steps help to add a SfBusyIndicator control through code.
 
 {% tabs %}
 
-{% highlight c# %}
-
-	using Syncfusion.SfBusyIndicator.XForms; 
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"/>
 	
+{% endhighlight %}
+
+{% highlight c# %}
+
+	using Syncfusion.SfBusyIndicator.XForms; 
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -129,16 +119,16 @@ The following steps help to add a SfBusyIndicator control through code.
 
 {% tabs %}
 
+{% highlight xaml %}
+
+	<busyindicator:SfBusyIndicator x:Name="busyindicator"/>
+	
+{% endhighlight %}
+
 {% highlight c# %}
 	
 	SfBusyIndicator busyindicator = new SfBusyIndicator();
 	this.Content=busyindicator;
-	
-{% endhighlight %}
-
-{% highlight xaml %}
-
-	<busyindicator:SfBusyIndicator x:Name="busyindicator"/>
 	
 {% endhighlight %}
 
@@ -150,17 +140,17 @@ To set animation type for SfBusyIndicator, use `AnimationType` property and choo
 
 {% tabs %}
 
+{% highlight xaml %}
+
+	<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="Battery" />
+	
+{% endhighlight %}
+
 {% highlight c# %}
 
 	SfBusyIndicator busyindicator = new SfBusyIndicator (); 
 	busyindicator.AnimationType = AnimationTypes.Battery;
 
-{% endhighlight %}
-
-{% highlight xaml %}
-
-	<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="Battery" />
-	
 {% endhighlight %}
 
 {% endtabs %}

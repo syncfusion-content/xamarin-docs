@@ -31,25 +31,25 @@ Or after downloading through the Xamarin store web interface, all the required a
 
 You can then add the assembly references to the respective projects as shown below
 
-{% tabs %}
 
-{% highlight PCL %}
+
+### PCL 
 pcl\Syncfusion.SfNumericUpDown.XForms.dll
-{% endhighlight %}
 
-{% highlight Android %}
+
+### Android 
 android\Syncfusion.SfNumericUpDown.Android.dll
 android\Syncfusion.SfNumericUpDown.XForms.Android.dll
 android\Syncfusion.SfNumericUpDown.XForms.dll
-{% endhighlight %}
 
-{% highlight iOS %}
+
+### iOS 
 iOS-unified\Syncfusion.SfNumericUpDown.iOS.dll
 iOS-unified\Syncfusion.SfNumericUpDown.XForms.iOS.dll
 iOS-unified\Syncfusion.SfNumericUpDown.XForms.dll
-{% endhighlight %}
 
-{% highlight Windows %}
+
+### Windows 
 ### Windows Phone
 wp8\Syncfusion.SfInput.WP8.dll
 wp8\Syncfusion.SfShared.WP8.dll
@@ -61,23 +61,21 @@ wp81\Syncfusion.SfInput.WP.dll
 wp81\Syncfusion.SfShared.WP.dll
 wp81\Syncfusion.SfNumericUpDown.XForms.dll
 wp81\Syncfusion.SfNumericUpDown.XForms.WinPhone.dll
-{% endhighlight %}
 
-{% highlight WinRT %}
+
+### WinRT 
 winrt\Syncfusion.SfInput.WinRT.dll
 winrt\Syncfusion.SfShared.WinRT.dll
 winrt\Syncfusion.SfNumericUpDown.XForms.dll
 winrt\Syncfusion.SfNumericUpDown.XForms.WinRT.dll
-{% endhighlight %}
 
-{% highlight UWP %}
+
+### UWP 
 uwp\Syncfusion.SfInput.UWP.dll
 uwp\Syncfusion.SfShared.UWP.dll
 uwp\Syncfusion.SfNumericUpDown.XForms.dll
 uwp\Syncfusion.SfNumericUpDown.XForms.UWP.dll
-{% endhighlight %}
 
-{% endtabs %}
 
 Currently an additional step is required for Windows Phone, Windows Phone 8.1 and iOS projects. We need to create an instance of the NumericUpDown custom renderer as shown below. 
 
@@ -113,16 +111,16 @@ The SfNumericUpDown control configured entirely in C# code or by using XAML mark
 
 {% tabs %}
 
-{% highlight c# %}
-
-	using Syncfusion.SfNumericUpDown.XForms;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<xmlns:numeric="clr-namespace:Syncfusion.SfNumericUpDown.XForms;assembly=Syncfusion.SfNumericUpDown.XForms"/>
 	
+{% endhighlight %}
+
+{% highlight c# %}
+
+	using Syncfusion.SfNumericUpDown.XForms;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -132,17 +130,17 @@ The SfNumericUpDown control configured entirely in C# code or by using XAML mark
 
 {% tabs %}
 
+{% highlight xaml %}
+
+	<numeric:SfNumericUpDown x:Name="numericUpDown"/>
+	
+{% endhighlight %}
+
 {% highlight C# %}
 
 	SfNumericUpDown numericUpDown=new SfNumericUpDown();
 	this.Content = numericUpDown;
 
-{% endhighlight %}
-
-{% highlight xaml %}
-
-	<numeric:SfNumericUpDown x:Name="numericUpDown"/>
-	
 {% endhighlight %}
 
 {% endtabs %}
@@ -153,17 +151,18 @@ The SfNumericUpDown control display value can be set using `Value` property.
 
 {% tabs %}
 
+{% highlight xaml %}
+
+	<numeric:SfNumericUpDown x:Name="numericUpDown" Value="5"/>
+	
+{% endhighlight %}
+
 {% highlight C# %}
 
 	numericUpDown.Value= 5;
 
 {% endhighlight %}
 
-{% highlight xaml %}
-
-	<numeric:SfNumericUpDown x:Name="numericUpDown" Value="5"/>
-	
-{% endhighlight %}
 
 {% endtabs %}
 
@@ -175,17 +174,18 @@ N> The `ParsingMode` is of type Parsers containing enum values of Double and Dec
 
 {% tabs %}
 
+{% highlight xaml %}
+
+	<numeric:SfNumericUpDown x:Name="numericUpDown" ParsingMode="Decimal"/>
+	
+{% endhighlight %}
+
 {% highlight c# %}
 
 	numericUpDown.ParsingMode=Parsers.Decimal;
 	
 {% endhighlight %}
 
-{% highlight xaml %}
-
-	<numeric:SfNumericUpDown x:Name="numericUpDown" ParsingMode="Decimal"/>
-	
-{% endhighlight %}
 
 {% endtabs %}
 
@@ -204,16 +204,16 @@ N> The control displays the formatted text on lost focus. Default Value of `Form
 
 {% tabs %}
 
-{% highlight C# %}
-
-	numericUpDown.FormatString= “c”;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<numeric:SfNumericUpDown x:Name="numericUpDown" FormatString="c"/>
 	
+{% endhighlight %}
+
+{% highlight C# %}
+
+	numericUpDown.FormatString= “c”;
+
 {% endhighlight %}
 
 {% endtabs %}

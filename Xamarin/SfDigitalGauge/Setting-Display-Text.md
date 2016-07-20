@@ -13,16 +13,16 @@ The Digital Characters in the SfDigitalGauge is viewed in different types of seg
 
 {% tabs %}
 
+{% highlight xaml %}
+
+	<gauge:SfDigitalGauge x:Name="digitalgauge" CharacterType="EightCrossEightDotMatrix" Value="{Binding}" />
+
+{% endhighlight %}
+
 {% highlight c# %}
 
 	digitalgauge.CharacterType=CharacterType.EightCrossEightDotMatrix;
 	digitalgauge.Value=”@ # $ &”;
-
-{% endhighlight %}
-
-{% highlight xaml %}
-
-	<gauge:SfDigitalGauge x:Name="digitalgauge" CharacterType="EightCrossEightDotMatrix" Value="{Binding}" />
 
 {% endhighlight %}
 

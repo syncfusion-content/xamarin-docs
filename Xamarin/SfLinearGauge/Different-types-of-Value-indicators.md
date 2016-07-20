@@ -17,6 +17,12 @@ This section explains about different types of Pointers available in SfLinearGau
 
 {% tabs %}
 
+{% highlight xaml %}
+
+	<gauge:BarPointer x:Name="rangePointer" Value="50" Offset="0.0" Thickness="10" />
+	
+{% endhighlight %}
+
 {% highlight c# %}
 
 	BarPointer rangePointer = new BarPointer ();
@@ -25,12 +31,6 @@ This section explains about different types of Pointers available in SfLinearGau
     rangePointer.Thickness = 10;
     pointers.Add (rangePointer);
 
-{% endhighlight %}
-
-{% highlight xaml %}
-
-	<gauge:BarPointer x:Name="rangePointer" Value="50" Offset="0.0" Thickness="10" />
-	
 {% endhighlight %}
 
 {% endtabs %}
@@ -43,6 +43,12 @@ This section explains about different types of Pointers available in SfLinearGau
 In SymbolPointer, the value is pointed by a symbol on the scale. The Symbol Pointer class is derived from Pointer class. You can modify the symbol pointers size using the StrokeWidth property. The color of the symbol pointer is changed using the Color property.
 
 {% tabs %}
+
+{% highlight xaml %}
+
+	<gauge:SymbolPointer x:Name="symbolPointer" Value="50" Offset="0.0" Thickness="3" />
+	
+{% endhighlight %}
 
 {% highlight c# %}
 
@@ -57,14 +63,6 @@ In SymbolPointer, the value is pointed by a symbol on the scale. The Symbol Poin
 	
 {% endhighlight  %}
 
-
-{% highlight xaml %}
-
-	<gauge:SymbolPointer x:Name="symbolPointer" Value="50" Offset="0.0" Thickness="3" />
-	
-{% endhighlight %}
-
 {% endtabs %}
-
 
 ![](images/SymbolPointer.png)

@@ -31,25 +31,21 @@ Or after downloading through the Xamarin store web interface, all the required a
 
 You can then add the assembly references to the respective projects as shown below
 
-% tabs %}
 
-{% highlight PCL %}
+### PCL 
 pcl\Syncfusion.SfGauge.XForms.dll
-{% endhighlight %}
 
-{% highlight Android %}
+
+### Android 
 android\Syncfusion.SfGauge.Android.dll
 android\Syncfusion.SfGauge.XForms.Android.dll
 android\Syncfusion.SfGauge.XForms.dll
-{% endhighlight %}
 
-{% highlight iOS %}
+### iOS 
 iOS-unified\Syncfusion.SfGauge.iOS.dll
 iOS-unified\Syncfusion.SfGauge.XForms.iOS.dll
 iOS-unified\Syncfusion.SfGauge.XForms.dll
-{% endhighlight %}
 
-{% highlight Windows %}
 ### Windows Phone
 wp8\Syncfusion.SfInput.WP8.dll
 wp8\Syncfusion.SfShared.WP8.dll
@@ -61,23 +57,18 @@ wp81\Syncfusion.SfInput.WP.dll
 wp81\Syncfusion.SfShared.WP.dll
 wp81\Syncfusion.SfGauge.XForms.dll
 wp81\Syncfusion.SfGauge.XForms.WinPhone.dll
-{% endhighlight %}
 
-{% highlight WinRT %}
+### WinRT 
 winrt\Syncfusion.SfInput.WinRT.dll
 winrt\Syncfusion.SfShared.WinRT.dll
 winrt\Syncfusion.SfGauge.XForms.dll
 winrt\Syncfusion.SfGauge.XForms.WinRT.dll
-{% endhighlight %}
 
-{% highlight UWP %}
+### UWP 
 uwp\Syncfusion.SfInput.UWP.dll
 uwp\Syncfusion.SfShared.UWP.dll
 uwp\Syncfusion.SfGauge.XForms.dll
 uwp\Syncfusion.SfGauge.XForms.UWP.dll
-{% endhighlight %}
-
-{% endtabs %}
 
 
 Currently an additional step is required for Windows Phone, Windows Phone 8.1 and iOS projects. We need to create an instance of the DigitalGauge custom renderer as shown below. 
@@ -114,15 +105,15 @@ The SfDigitalGauge control is configured entirely in C# code or by using XAML ma
 
 {% tabs %}
 
-{% highlight C# %}
-
-	using Syncfusion.SfGauge.XForms; 
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<xmlns:gauge="clr-namespace:Syncfusion.SfGauge.XForms;assembly=Syncfusion.SfGauge.XForms"/>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+	using Syncfusion.SfGauge.XForms; 
 
 {% endhighlight %}
 
@@ -132,16 +123,16 @@ The SfDigitalGauge control is configured entirely in C# code or by using XAML ma
 
 {% tabs %}
 
-{% highlight C# %}
-
-	SfDigitalGauge digitalgauge = new SfDigitalGauge(); 
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<gauge:SfDigitalGauge x:Name="digitalgauge" />
 	
+{% endhighlight %}
+
+{% highlight C# %}
+
+	SfDigitalGauge digitalgauge = new SfDigitalGauge(); 
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -149,6 +140,12 @@ The SfDigitalGauge control is configured entirely in C# code or by using XAML ma
 * Configure the properties of SfDigitalGauge.
 
 {% tabs %}
+
+{% highlight xaml %}
+
+	<gauge:SfDigitalGauge x:Name="digitalgauge" SegmentStrokeWidth="3" CharacterHeight="50" CharacterWidth="25" CharacterType="SegmentSeven" DisabledSegmentAlpha="30" />
+
+{% endhighlight %}
 
 {% highlight c# %}
 
@@ -165,12 +162,6 @@ The SfDigitalGauge control is configured entirely in C# code or by using XAML ma
 
 {% endhighlight %}
 
-{% highlight xaml %}
-
-	<gauge:SfDigitalGauge x:Name="digitalgauge" SegmentStrokeWidth="3" CharacterHeight="50" CharacterWidth="25" CharacterType="SegmentSeven" DisabledSegmentAlpha="30" />
-
-{% endhighlight %}
-
 {% endtabs %}
 
 ## Setting Value
@@ -179,15 +170,15 @@ The SfDigitalGauge control is configured entirely in C# code or by using XAML ma
 
 {% tabs %}
 
-{% highlight C# %}
-
-    digitalgauge.Value =  DateTime.Now.ToString ("HH mm ss");
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<gauge:SfDigitalGauge x:Name="digitalgauge" Value="{Binding}" />
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+    digitalgauge.Value =  DateTime.Now.ToString ("HH mm ss");
 
 {% endhighlight %}
 

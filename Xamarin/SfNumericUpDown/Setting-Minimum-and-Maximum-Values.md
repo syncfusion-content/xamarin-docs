@@ -14,16 +14,17 @@ N> The `MaximumNumberDecimalDigits` property can be provided with positive value
 
 {% tabs %}
 
-{% highlight C# %}
-
-	numericUpDown.MaximumNumberDecimalDigits = 2;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<numeric:SfNumericUpDown x:Name="numericUpDown" MaximumNumberDecimalDigits="2"/>
 	
+{% endhighlight %}
+
+
+{% highlight C# %}
+
+	numericUpDown.MaximumNumberDecimalDigits = 2;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -36,16 +37,16 @@ N> By default the property value is false.
 
 {% tabs %}
 
-{% highlight C# %}
-
-	numericUpDown.AutoReverse = true;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<numeric:SfNumericUpDown x:Name="numericUpDown" AutoReverse="true"/>
 	
+{% endhighlight %}
+
+{% highlight C# %}
+
+	numericUpDown.AutoReverse = true;
+
 {% endhighlight %}
 
 {% endtabs %}

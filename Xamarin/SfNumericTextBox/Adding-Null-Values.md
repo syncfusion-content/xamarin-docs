@@ -14,16 +14,16 @@ N> By default, the property value is false.
 
 {% tabs %}
 
-{% highlight c# %}
-
-	numericTextBox.AllowNull=true;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<numeric:SfNumericTextBox x:Name="numericTextBox" AllowNull="true" />
 	
+{% endhighlight %}
+
+{% highlight c# %}
+
+	numericTextBox.AllowNull=true;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -36,17 +36,18 @@ The `WaterMark` property can be used to provide a hint that helps the user to ge
 
 {% tabs %}
 
+{% highlight xaml %}
+
+	<numeric:SfNumericTextBox x:Name="numericTextBox" Watermark="Principal Amount" />
+	
+{% endhighlight %}
+
 {% highlight c# %}
 
 	numericTextBox.Watermark = "Principal Amount";
 	
 {% endhighlight %}
 
-{% highlight xaml %}
-
-	<numeric:SfNumericTextBox x:Name="numericTextBox" Watermark="Principal Amount" />
-	
-{% endhighlight %}
 
 {% endtabs %}
 

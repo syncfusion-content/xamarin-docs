@@ -15,16 +15,16 @@ SfLinearGauge provides support for the vertical orientation. By default SfLinear
 
 {% tabs %}
 
-{% highlight C# %}
-
-  linearGauge.Orientation = Syncfusion.SfGauge.XForms.Orientation.OrientationVertical;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<gauge:SfLinearGauge x:Name="linearGauge" Orientation="Vertical" />
 	
+{% endhighlight %}
+
+{% highlight C# %}
+
+  linearGauge.Orientation = Syncfusion.SfGauge.XForms.Orientation.OrientationVertical;
+
 {% endhighlight %}
 
 {% endtabs %}

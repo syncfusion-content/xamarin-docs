@@ -18,17 +18,17 @@ The minimum number of characters to be entered in the text box before the autoco
 N> The default property value is 1.
 	
 {% tabs %}	
+
+{% highlight xaml %}
+
+  	<autocomplete:SfAutoComplete x:Name="countryAutoComplete"  MinimumPrefixCharacters="4" />
+
+{% endhighlight %}
 	
 {% highlight c# %}
 	
 	countryAutoComplete.MinimumPrefixCharacters = 4
 	 
-{% endhighlight %}
-
-{% highlight xaml %}
-
-  		<autocomplete:SfAutoComplete x:Name="countryAutoComplete"  MinimumPrefixCharacters="4" />
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -43,16 +43,16 @@ N> The default value is 0. The property value should be in milliseconds.
 
 {% tabs %}
 
+{% highlight xaml %}
+
+  	<autocomplete:SfAutoComplete x:Name="countryAutoComplete" PopUpDelay="100" />
+
+{% endhighlight %}
+
 {% highlight c# %}
 	
 	sfAutoComplete.PopUpDelay = 100;
 	 
-{% endhighlight %}
-
-{% highlight xaml %}
-
-  		<autocomplete:SfAutoComplete x:Name="countryAutoComplete" PopUpDelay="100" />
-
 {% endhighlight %}
 
 {% endtabs %}

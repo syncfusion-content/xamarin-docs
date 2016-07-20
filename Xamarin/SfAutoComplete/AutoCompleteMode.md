@@ -18,17 +18,17 @@ N> By default, three types of AutoComplete mode such as `Append`, `Suggest` and 
 Appends the first matching string with the entered character.
 
 {% tabs %}
-	
+
+{% highlight xaml %}
+
+  	<autocomplete:SfAutoComplete x:Name="countryAutoComplete" AutoCompleteMode="Append" />
+		  
+{% endhighlight %}
+
 {% highlight c# %}
 	
 	countryAutoComplete.AutoCompleteMode = AutoCompleteMode.Append;
 	 
-{% endhighlight %}
-
-{% highlight xaml %}
-
-  		<autocomplete:SfAutoComplete x:Name="countryAutoComplete" AutoCompleteMode="Append" />
-		  
 {% endhighlight %}
 
 {% endtabs %}
@@ -41,16 +41,16 @@ Displays the suggestion in the dropdown.
 
 {% tabs %}
 
+{% highlight xaml %}
+
+  	<autocomplete:SfAutoComplete x:Name="countryAutoComplete" AutoCompleteMode="Suggest" />
+		  
+{% endhighlight %}
+
 {% highlight c# %}
 	
 	countryAutoComplete.AutoCompleteMode = AutoCompleteMode.Suggest;
 	 
-{% endhighlight %}
-
-{% highlight xaml %}
-
-  		<autocomplete:SfAutoComplete x:Name="countryAutoComplete" AutoCompleteMode="Suggest" />
-		  
 {% endhighlight %}
 
 {% endtabs %}
@@ -62,17 +62,18 @@ Displays the suggestion in the dropdown.
 Displays the suggestion in the dropdown along with appending the first matching string.
 	
 {% tabs %}	
+
+{% highlight xaml %}
+
+  	<autocomplete:SfAutoComplete x:Name="countryAutoComplete" AutoCompleteMode="SuggestAppend" />
+		  
+{% endhighlight %}
+
 	
 {% highlight c# %}
 	
 	countryAutoComplete.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
 	 
-{% endhighlight %}
-
-{% highlight xaml %}
-
-  		<autocomplete:SfAutoComplete x:Name="countryAutoComplete" AutoCompleteMode="SuggestAppend" />
-		  
 {% endhighlight %}
 
 {% endtabs %}

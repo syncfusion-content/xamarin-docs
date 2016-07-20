@@ -12,18 +12,18 @@ The Indicator drawing size can be customized using `ViewBoxHeight` and `ViewBoxW
 
 {% tabs %}
 
+{% highlight xaml %}
+
+	<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="SlicedCircle" ViewBoxHeight="20" ViewBoxWidth="20" />
+	
+{% endhighlight %}
+
 {% highlight c# %}
     SfBusyIndicator busyindicator = new SfBusyIndicator();
 	busyindicator.AnimationType=AnimationTypes.SlicedCircle;
 	busyindicator.ViewBoxHeight=20;
 	busyindicator.ViewBoxWidth=20;
 
-{% endhighlight %}
-
-{% highlight xaml %}
-
-	<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="SlicedCircle" ViewBoxHeight="20" ViewBoxWidth="20" />
-	
 {% endhighlight %}
 
 {% endtabs %}

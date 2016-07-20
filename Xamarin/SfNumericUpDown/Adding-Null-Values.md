@@ -14,17 +14,19 @@ N> By default, the property value is false.
 
 {% tabs %}
 
+{% highlight xaml %}
+
+	<numeric:SfNumericUpDown x:Name="numericUpDown" AllowNull="true"/>
+	
+{% endhighlight %}
+
 {% highlight C# %}
 
 	numericUpDown.AllowNull=true;
 
 {% endhighlight %}
 
-{% highlight xaml %}
 
-	<numeric:SfNumericUpDown x:Name="numericUpDown" AllowNull="true"/>
-	
-{% endhighlight %}
 
 {% endtabs %}
 
@@ -37,17 +39,19 @@ The `WaterMark` property can be used to provide a hint that helps the user to ge
 
 {% tabs %}
 
+{% highlight xaml %}
+
+	<numeric:SfNumericUpDown x:Name="numericUpDown" Watermark="NumericUpDown"/>
+	
+{% endhighlight %}
+
 {% highlight C# %}
 
 	numericUpDown.Watermark = "NumericUpDown";
 	
 {% endhighlight %}
 
-{% highlight xaml %}
 
-	<numeric:SfNumericUpDown x:Name="numericUpDown" Watermark="NumericUpDown"/>
-	
-{% endhighlight %}
 
 {% endtabs %}
 

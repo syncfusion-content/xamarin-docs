@@ -31,72 +31,90 @@ Or after downloading through the Xamarin store web interface, all the required a
 
 You can then add the assembly references to the respective projects as shown below
 
-<table>
-<tr>
-<th>Project</th>
-<th>Required assemblies</th>
-</tr>
-<tr>
-<td>PCL</td>
-<td>pcl\Syncfusion.SfRangeSlider.XForms.dll</td>
-</tr>
-<tr>
-<td>Android</td>
-<td>android\Syncfusion.SfRangeSlider.Android.dll<br/>android\Syncfusion.SfRangeSlider.XForms.Android.dll<br/>android\Syncfusion.SfRangeSlider.XForms.dll</td>
-</tr>
-<tr>
-<td>iOS (Unified)</td>
-<td>iOS-unified\Syncfusion.SfRangeSlider.iOS.dll<br/>iOS-unified\Syncfusion.SfRangeSlider.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfRangeSlider.XForms.dll</td>
-</tr>
-<tr>
-<td>Windows Phone</td>
-<td>wp8\Syncfusion.SfInput.WP8.dll<br/>wp8\Syncfusion.SfShared.WP8.dll<br/>wp8\Syncfusion.SfRangeSlider.XForms.dll<br/>wp8\Syncfusion.SfRangeSlider.XForms.WinPhone.dll</td>
-</tr>
-<tr>
-<td>Windows Phone 8.1</td>
-<td>wp81\Syncfusion.SfInput.WP.dll<br/>wp81\Syncfusion.SfShared.WP.dll<br/>wp81\Syncfusion.SfRangeSlider.XForms.dll<br/>wp81\Syncfusion.SfRangeSlider.XForms.WinPhone.dll</td>
-</tr>
-<tr>
-<td>UWP</td>
-<td>uwp\Syncfusion.SfInput.UWP.dll<br/>uwp\Syncfusion.SfShared.UWP.dll<br/>uwp\Syncfusion.SfRangeSlider.XForms.dll<br/>uwp\Syncfusion.SfRangeSlider.XForms.UWP.dll</td>
-</tr>
-</table>
+{% tabs %}
+
+{% highlight PCL %}
+
+pcl\Syncfusion.SfRangeSlider.XForms.dll
+
+{% endhighlight %}
+
+{% highlight Android %}
+
+android\Syncfusion.SfRangeSlider.Android.dll
+android\Syncfusion.SfRangeSlider.XForms.Android.dll
+android\Syncfusion.SfRangeSlider.XForms.dll
+	
+{% endhighlight %}
+
+{% highlight iOS %}
+
+iOS-unified\Syncfusion.SfRangeSlider.iOS.dll
+iOS-unified\Syncfusion.SfRangeSlider.XForms.iOS.dll
+iOS-unified\Syncfusion.SfRangeSlider.XForms.dll
+
+{% endhighlight %}
+
+{% highlight Windows Phone %}
+
+**Windows Phone 8**
+
+wp8\Syncfusion.SfInput.WP8.dll
+wp8\Syncfusion.SfShared.WP8.dll
+wp8\Syncfusion.SfRangeSlider.XForms.dll
+wp8\Syncfusion.SfRangeSlider.XForms.WinPhone.dll
+
+**Windows Phone 8.1**
+
+wp81\Syncfusion.SfInput.WP.dll
+wp81\Syncfusion.SfShared.WP.dll
+wp81\Syncfusion.SfRangeSlider.XForms.dll
+wp81\Syncfusion.SfRangeSlider.XForms.WinPhone.dll
+
+{% endhighlight %}
+
+{% highlight UWP %}
+
+uwp\Syncfusion.SfInput.UWP.dll
+uwp\Syncfusion.SfShared.UWP.dll
+uwp\Syncfusion.SfRangeSlider.XForms.dll
+uwp\Syncfusion.SfRangeSlider.XForms.UWP.dll
+
+{% endhighlight %}
+
+{% endtabs %}
 
 Currently an additional step is required for Windows Phone, Windows Phone 8.1 and iOS projects. We need to create an instance of the RangeSlider custom renderer as shown below. 
 
 Create an instance of SfRangeSliderRenderer in MainPage constructor of the Windows Phone and Windows Phone 8.1 project as shown 
 
+{% tabs %}
+
 {% highlight C# %}
 
 public MainPage()
-
 {
-
     new SfRangeSliderRenderer();
-
-    ...    
-
 }
 
 {% endhighlight %}
 
+{% endtabs %}
+
 Create an instance of SfRangeSliderRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below
+
+{% tabs %}
 
 {% highlight C# %}
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
-
 {
-
-    ...
-
     new SfRangeSliderRenderer ();
-
-    ...
-
 }	
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ## Add and Configure the SfRangeSlider
 

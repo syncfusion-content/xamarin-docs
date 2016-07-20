@@ -32,40 +32,28 @@ Or after downloading through the Xamarin store web interface, all the required a
 
 You can then add the assembly references to the respective projects as shown below.
 
-{% tabs %}
-
-{% highlight PCL %}
+### PCL 
 
 pcl\Syncfusion.SfRotator.XForms.dll
 
-{% endhighlight %}
-
-{% highlight Android %}
+### Android 
 
 android\Syncfusion.SfRotator.Android.dll
 android\Syncfusion.SfRotator.XForms.Android.dll
 android\Syncfusion.SfRotator.XForms.dll
 Xamarin.Android.Support.v17.Leanback (from NuGet Packages)
 
-{% endhighlight %}
-
-{% highlight iOS %}
+### iOS 
 
 iOS-unified\Syncfusion.SfRotator.iOS.dll
 iOS-unified\Syncfusion.SfRotator.XForms.iOS.dll
 iOS-unified\Syncfusion.SfRotator.XForms.dll
 
-{% endhighlight %}
-
-{% highlight UWP %}
+### UWP 
 
 uwp\Syncfusion.SfRotator.UWP.dll
 uwp\Syncfusion.SfRotator.XForms.dll
 uwp\Syncfusion.SfRotator.XForms.UWP.dll
-
-{% endhighlight %}
-
-{% endtabs %}
 
 Currently an additional step is required for iOS projects. We need to create an instance of the rotator custom renderer as shown below. 
 

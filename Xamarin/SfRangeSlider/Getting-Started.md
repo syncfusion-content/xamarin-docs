@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Getting Started with Syncfusion RangeSlider control for Xamarin.Forms
 description: A quick tour to initial users on Syncfusion RangeSlider control for Xamarin.Forms platform
@@ -31,31 +31,23 @@ Or after downloading through the Xamarin store web interface, all the required a
 
 You can then add the assembly references to the respective projects as shown below
 
-{% tabs %}
-
-{% highlight PCL %}
+### PCL 
 
 pcl\Syncfusion.SfRangeSlider.XForms.dll
 
-{% endhighlight %}
-
-{% highlight Android %}
+### Android 
 
 android\Syncfusion.SfRangeSlider.Android.dll
 android\Syncfusion.SfRangeSlider.XForms.Android.dll
 android\Syncfusion.SfRangeSlider.XForms.dll
 	
-{% endhighlight %}
-
-{% highlight iOS %}
+### iOS 
 
 iOS-unified\Syncfusion.SfRangeSlider.iOS.dll
 iOS-unified\Syncfusion.SfRangeSlider.XForms.iOS.dll
 iOS-unified\Syncfusion.SfRangeSlider.XForms.dll
 
-{% endhighlight %}
-
-{% highlight Windows Phone %}
+### Windows Phone 
 
 **Windows Phone 8**
 
@@ -71,18 +63,12 @@ wp81\Syncfusion.SfShared.WP.dll
 wp81\Syncfusion.SfRangeSlider.XForms.dll
 wp81\Syncfusion.SfRangeSlider.XForms.WinPhone.dll
 
-{% endhighlight %}
-
-{% highlight UWP %}
+### UWP 
 
 uwp\Syncfusion.SfInput.UWP.dll
 uwp\Syncfusion.SfShared.UWP.dll
 uwp\Syncfusion.SfRangeSlider.XForms.dll
 uwp\Syncfusion.SfRangeSlider.XForms.UWP.dll
-
-{% endhighlight %}
-
-{% endtabs %}
 
 Currently an additional step is required for Windows Phone, Windows Phone 8.1 and iOS projects. We need to create an instance of the RangeSlider custom renderer as shown below. 
 

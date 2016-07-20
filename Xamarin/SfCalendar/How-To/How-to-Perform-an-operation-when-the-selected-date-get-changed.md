@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Interactive Selection modes in Syncfusion Calendar control for Xamarin.Forms
 description: How to Perform an operation when the selected date get changed

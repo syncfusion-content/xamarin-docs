@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Resizing the Syncfusion Calendar control for Xamarin.Forms
 description: Learn how to resize the Calendar control

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Interactive Selection modes in Syncfusion Calendar control for Xamarin.Forms
 description: How to customize Cell or Month view

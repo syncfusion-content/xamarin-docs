@@ -9,6 +9,8 @@ documentation: ug
 
 # Different types of Value indicators
 
+This section explains about different types of Pointers available in SfLinearGauge.
+
 ## Setting Bar Pointer
 
 `BarPointer` is an accenting line or colored bar that is placed on the SfLinearGauge to mark the values. 

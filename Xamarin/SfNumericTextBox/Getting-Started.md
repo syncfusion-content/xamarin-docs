@@ -106,7 +106,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 The SfNumericTextBox control configured entirely in C# code or by using XAML markup. The following steps explain on how to create a NumericTextBox and configure its elements,
 
-* Adding reference to SfNumericTextBox.
+* Adding namespace for the added assemblies. 
 
 {% tabs %}
 
@@ -124,7 +124,7 @@ The SfNumericTextBox control configured entirely in C# code or by using XAML mar
 
 {% endtabs %}
 
-* Create an instance of SfNumericTextBox.
+* Now add the SfNumericTextBox control with a required optimal name by using the included namespace.
 
 {% tabs %}
 

@@ -6,7 +6,7 @@ platform: Xamarin
 control: LinearGauge
 documentation: ug
 ---
-# Changing display Orientation
+# Changing Display Orientation
 
 SfLinearGauge provides support for the vertical orientation. By default SfLinearGauge renders with horizontal orientation. You can the change the orientation by using the `Orientation` property. Orientation can be categorized as follows.
 

@@ -9,7 +9,7 @@ documentation : ug
 
 # Data Binding 
 
-Carousel control, supports binding to different data sources such as IList Data Source, XML Data Source, Observable Collection Data Source.
+Carousel control, supports binding to different data sources such as IList Data Source, Observable Collection Data Source.
 
 ## Setting Items Source
 
@@ -68,7 +68,7 @@ SfCarousel provides support to add a custom view as Carouseltems by designing a 
 
 {% endhighlight %}
 
-## Setting variable views
+## Setting Variable Views
 
 The ItemTemplate provides common template with different data, whereas if different views for every items is needed, it can also be provided using `ItemContent` property in SfCarouselItem class.
 

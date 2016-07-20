@@ -105,7 +105,9 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ## Add and Configure the SfAutoComplete
 
-* Adding reference to SfAutoComplete.
+The following steps help to add a SfAutoComplete control through code.
+
+* Adding namespace for the added assemblies. 
 
 {% tabs %}
 
@@ -123,7 +125,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% endtabs %}
 
-* Create an instance of SfAutoComplete control and add it to the application.
+* Now add the SfAutoComplete control with a required optimal name by using the included namespace.
 
 {% tabs %}
 

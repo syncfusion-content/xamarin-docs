@@ -106,7 +106,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 The SfNavigationDrawer control configured entirely in C# code or by using XAML markup. The following steps explain on how to create a SfNavigationDrawer and configure its elements.
 
-* Adding reference to NavigationDrawer.
+* Adding namespace for the added assemblies. 
 
 {% tabs %}
 
@@ -124,7 +124,7 @@ The SfNavigationDrawer control configured entirely in C# code or by using XAML m
 
 {% endtabs %}
 
-* Create an instance of NavigationDrawer.
+* Now add the SfNavigationDrawer control with a required optimal name by using the included namespace.
 
 {% tabs %}
 

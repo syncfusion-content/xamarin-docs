@@ -1,4 +1,4 @@
----
+﻿---
 
 layout: post
 title: Getting Started with Syncfusion Rating control for Xamarin.Forms
@@ -33,32 +33,23 @@ Or after downloading through the Xamarin store web interface, all the required a
 
 You can then add the assembly references to the respective projects as shown below
 
-{% tabs %}
-
-{% highlight PCL %}
+### PCL 
 
 pcl\Syncfusion.SfRating.XForms.dll
 
-{% endhighlight %}
-
-{% highlight Android %}
+### Android 
 
 android\Syncfusion.SfRating.Android.dll
 android\Syncfusion.SfRating.XForms.Android.dll
 android\Syncfusion.SfRating.XForms.dll
 	
-{% endhighlight %}
-
-{% highlight iOS %}
+### iOS 
 
 iOS-unified\Syncfusion.SfRating.iOS.dll
 iOS-unified\Syncfusion.SfRating.XForms.iOS.dll
 iOS-unified\Syncfusion.SfRating.XForms.dll
 
-{% endhighlight %}
-
-
-{% highlight Windows Phone %}
+### Windows Phone 
 
 **Windows Phone 8**
 
@@ -74,27 +65,20 @@ wp81\Syncfusion.SfShared.WP.dll
 wp81\Syncfusion.SfRating.XForms.dll
 wp81\Syncfusion.SfRating.XForms.WinPhone.dll
 
-{% endhighlight %}
-
-{% highlight WinRT %}
+### WinRT 
 
 winrt\Syncfusion.SfInput.WinRT.dll
 winrt\Syncfusion.SfShared.WinRT.dll
 winrt\Syncfusion.SfRating.XForms.dll
 winrt\Syncfusion.SfRating.XForms.WinRT.dll
 
-{% endhighlight %}
-
-{% highlight UWP %}
+### UWP 
 
 uwp\Syncfusion.SfInput.UWP.dll
 uwp\Syncfusion.SfShared.UWP.dll
 uwp\Syncfusion.SfRating.XForms.dll
 uwp\Syncfusion.SfRating.XForms.UWP.dll
 
-{% endhighlight %}
-
-{% endtabs %}
 
 Currently an additional step is required for Windows Phone, Windows Phone 8.1 and iOS projects. We need to create an instance of the rating custom renderer as shown below. 
 

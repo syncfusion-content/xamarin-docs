@@ -31,32 +31,24 @@ Or after downloading through the Xamarin store web interface, all the required a
 
 You can then add the assembly references to the respective projects as shown below
 
-{% tabs %}
-
-{% highlight PCL %}
+### PCL 
 
 pcl\Syncfusion.SfNavigationDrawer.XForms.dll
 
-{% endhighlight %}
-
-{% highlight Android %}
+### Android 
 
 android\Syncfusion.SfNavigationDrawer.Android.dll
 android\Syncfusion.SfNavigationDrawer.XForms.dll
 android\Syncfusion.SfNavigationDrawer.XForms.Android.dll 
 Xamarin.Android.Support.v4 (from Nuget Packages)
 	
-{% endhighlight %}
-
-{% highlight iOS %}
+### iOS 
 
 iOS-unified\Syncfusion.SfNavigationDrawer.iOS.dll
 iOS-unified\SyncfusionSfNavigationDrawer.XForms.dll
 iOS-unified\Syncfusion.SfNavigationDrawer.XForms.iOS.dll
 
-{% endhighlight %}
-
-{% highlight Windows Phone %}
+### Windows Phone
 
 **Windows Phone 8**
 
@@ -70,25 +62,17 @@ wp81\Syncfusion.SfNavigationDrawer.WP.dll
 wp81\Syncfusion.SfNavigationDrawer.XForms.dll
 wp81\Syncfusion.SfNavigationDrawer.XForms.WinPhone.dll
 
-{% endhighlight %}
-
-{% highlight WinRT %}
+### WinRT 
 
 winrt\Syncfusion.SfNavigationDrawer.WinRT.dll
 winrt\Syncfusion.SfNavigationDrawer.XForms.dll
 winrt\Syncfusion.SfNavigationDrawer.XForms.WinRT.dll
 
-{% endhighlight %}
-
-{% highlight UWP %}
+### UWP 
 
 uwp\Syncfusion.SfNavigationDrawer.UWP.dll
 uwp\Syncfusion.SfNavigationDrawer.XForms.dll
 uwp\Syncfusion.SfNavigationDrawer.XForms.UWP.dll
-
-{% endhighlight %}
-
-{% endtabs %}
 
 Currently an additional step is required for Windows Phone, Windows Phone 8.1 and iOS projects. We need to create an instance of the NavigationDrawer custom renderer as shown below. 
 

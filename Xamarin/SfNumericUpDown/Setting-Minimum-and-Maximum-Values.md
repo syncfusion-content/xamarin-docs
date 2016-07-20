@@ -8,8 +8,6 @@ documentation: ug
 ---
 # Setting Minimum and Maximum Values
 
-## MaximumNumberDecimalDigits
-
 The maximum number of digits to be displayed after the decimal point can be specified by using `MaximumNumberDecimalDigits` property. 
 
 N> The `MaximumNumberDecimalDigits` property can be provided with positive value only.

@@ -9,7 +9,7 @@ documentation : ug
 
 # Data Binding
 
-SfRotator control, supports binding to different data sources such as IList Data Source, XML Data Source, Observable Collection Data Source.
+SfRotator control, supports binding to different data sources such as IList Data Source, Observable Collection Data Source.
 
 ## Setting ItemSource
 
@@ -82,7 +82,7 @@ SfRotator provides support to add a custom view as RotatorItems by designing a v
 	  
 {% endhighlight %}
 
-## Setting variable views
+## Setting Variable Views
 
 The ItemTemplate provides common template with different data, whereas if different views for every items is needed, it can also be provided using `ItemContent` property in SfRotatorItem class.
 

@@ -106,7 +106,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 The SfLinearGauge control configured entirely in C# code or by using XAML markup.The following steps explain on how to create an SfLinearGauge and configure its elements.
 
-* Adding namespace for the added assemblies to the Main window. 
+* Adding namespace for the added assemblies. 
 
 {% tabs %}
 

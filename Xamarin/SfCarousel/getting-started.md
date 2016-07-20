@@ -106,7 +106,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 The SfCarousel control is configured entirely in C# code or by using XAML markup. The following steps explain on how to create a SfCarousel and configure its elements,
 
-* Adding reference to SfCarousel.
+* Adding namespace for the added assemblies to the Main window. 
 
 {% tabs %}
 
@@ -124,7 +124,7 @@ The SfCarousel control is configured entirely in C# code or by using XAML markup
 
 {% endtabs %}
 
-* Create an instance for SfCarousel.
+* Now add the SfCarousel control with a required optimal name by using the included namespace.
 
 {% tabs %}
 

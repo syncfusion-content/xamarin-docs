@@ -104,8 +104,9 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ## Add and Configure the SfBusyIndicator
 
-* Adding reference to SfBusyIndicator.
+The following steps help to add a SfBusyIndicator control through code.
 
+* Adding namespace for the added assemblies to the Main window. 
 
 {% tabs %}
 
@@ -123,7 +124,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% endtabs %}
 
-* Create an instance of SfBusyIndicator.
+* Now add the SfBusyIndicator control with a required optimal name by using the included namespace.
 
 {% tabs %}
 

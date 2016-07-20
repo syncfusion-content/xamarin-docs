@@ -78,7 +78,9 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ## Add and Configure the SfRotator
 
-* Adding reference to SfRotator.
+The following steps help to add a SfRotator control through code.
+
+* Adding namespace for the added assemblies to the Main window. 
 
 {% tabs %}
 
@@ -97,7 +99,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {% endtabs %}
 
 
-* Create an instance of SfRotator.
+* Now add the SfRotator control with a required optimal name by using the included namespace.
 
 {% tabs %}
 
@@ -204,7 +206,7 @@ Assigning collection to ItemSource
 
 {% highlight C# %}
 
- 		sfRotator.BindingContext = new RotatorViewModel();
+ 		rotator.BindingContext = new RotatorViewModel();
 
 {% endhighlight %}
 
@@ -214,7 +216,7 @@ ItemTemplate property of SfRotator control is used to customize the contents of 
 
 {% highlight xaml %}
 
-	<rotator:SfRotator x:Name="sfRotator"  Grid.Row="0" NavigationDelay="2000" ItemsSource="{Binding ImageCollection}" SelectedIndex="2" NavigationDirection="Horizontal" NavigationStripMode="Dots" BackgroundColor="#ececec" NavigationStripPosition="Bottom">
+	<rotator:SfRotator x:Name="rotator"  Grid.Row="0" NavigationDelay="2000" ItemsSource="{Binding ImageCollection}" SelectedIndex="2" NavigationDirection="Horizontal" NavigationStripMode="Dots" BackgroundColor="#ececec" NavigationStripPosition="Bottom">
         <rotator:SfRotator.ItemTemplate>
           <DataTemplate>
             <Image  Source="{Binding Image}"/>                   

@@ -100,7 +100,9 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ## Add and Configure the SfRangeSlider
 
-* Adding reference to SfRangeSlider.
+The following steps help to add a SfRangeSlider control through code.
+
+* Adding namespace for the added assemblies to the Main window. 
 
 {% tabs %}
 
@@ -118,7 +120,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% endtabs %}
 
-* Create an instance of SfRangeSlider.
+* Now add the SfRangeSlider control with a required optimal name by using the included namespace.
 
 {% tabs %}
 

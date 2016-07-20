@@ -62,7 +62,7 @@ Assigning collection to ItemSource
 
 {% highlight C# %}
 
- 	sfRotator.BindingContext = new RotatorViewModel();
+ 	rotator.BindingContext = new RotatorViewModel();
 
 {% endhighlight %}
 
@@ -72,7 +72,7 @@ SfRotator provides support to add a custom view as RotatorItems by designing a v
 
 {% highlight xaml %}
 
-	<rotator:SfRotator x:Name="sfRotator"  Grid.Row="0" NavigationDelay="2000" ItemsSource="{Binding ImageCollection}" SelectedIndex="2" NavigationDirection="Horizontal" NavigationStripMode="Dots" BackgroundColor="#ececec" NavigationStripPosition="Bottom">
+	<rotator:SfRotator x:Name="rotator"  Grid.Row="0" NavigationDelay="2000" ItemsSource="{Binding ImageCollection}" SelectedIndex="2" NavigationDirection="Horizontal" NavigationStripMode="Dots" BackgroundColor="#ececec" NavigationStripPosition="Bottom">
         <rotator:SfRotator.ItemTemplate>
           <DataTemplate>
             <Image  Source="{Binding Image}"/>
@@ -88,8 +88,7 @@ The ItemTemplate provides common template with different data, whereas if differ
 
 {% highlight C# %}
 
-	SfRotator sfRotator = new SfRotator();
-	
+	SfRotator rotator = new SfRotator();	
 	SfRotatorItem rotatorItem = new SfRotatorItem ();
 	Label lbl = new Label ();
 	lbl.Text ="  Item No: 1 ";
@@ -97,7 +96,7 @@ The ItemTemplate provides common template with different data, whereas if differ
 	lbl.FontSize = 20;
 	lbl.VerticalTextAlignment = TextAlignment.Center;
 	rotatorItem.ItemContent =lbl;
-	sfRotator.DataSource.Add (rotatorItem);	
+	rotator.DataSource.Add (rotatorItem);	
 
 	SfRotatorItem rotatorItem1 = new SfRotatorItem ();
 	Image img = new Image ();
@@ -107,7 +106,7 @@ The ItemTemplate provides common template with different data, whereas if differ
 	img.HeightRequest = 400;
 	img.WidthRequest = 400;
 	rotatorItem1.ItemContent =img;
-	sfRotator.DataSource.Add (rotatorItem1);			
+	rotator.DataSource.Add (rotatorItem1);			
 	
 	  
 {% endhighlight %}

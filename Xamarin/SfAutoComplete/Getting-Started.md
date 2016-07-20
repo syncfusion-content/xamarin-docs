@@ -32,40 +32,54 @@ Or after downloading through the Xamarin store web interface, all the required a
 
 You can then add the assembly references to the respective projects as shown below
 
-<table>
-<tr>
-<th>Project</th>
-<th>Required assemblies</th>
-</tr>
-<tr>
-<td>PCL</td>
-<td>pcl\Syncfusion.SfAutoComplete.XForms.dll</td>
-</tr>
-<tr>
-<td>Android</td>
-<td>android\Syncfusion.SfAutoComplete.Android.dll<br/>android\Syncfusion.SfAutoComplete.XForms.Android.dll<br/>android\Syncfusion.SfAutoComplete.XForms.dll</td>
-</tr>
-<tr>
-<td>iOS (Unified)</td>
-<td>iOS-unified\Syncfusion.SfAutoComplete.iOS.dll<br/>iOS-unified\Syncfusion.SfAutoComplete.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfAutoComplete.XForms.dll</td>
-</tr>
-<tr>
-<td>Windows Phone</td>
-<td>wp8\Syncfusion.SfInput.WP8.dll<br/>wp8\Syncfusion.SfShared.WP8.dll<br/>wp8\Syncfusion.SfAutoComplete.XForms.dll<br/>wp8\Syncfusion.SfAutoComplete.XForms.WinPhone.dll</td>
-</tr>
-<tr>
-<td>Windows Phone 8.1</td>
-<td>wp81\Syncfusion.SfInput.WP.dll<br/>wp81\Syncfusion.SfShared.WP.dll<br/>wp81\Syncfusion.SfAutoComplete.XForms.dll<br/>wp81\Syncfusion.SfAutoComplete.XForms.WinPhone.dll</td>
-</tr>
-<tr>
-<td>WinRT</td>
-<td>winrt\Syncfusion.SfInput.WinRT.dll<br/>winrt\Syncfusion.SfShared.WinRT.dll<br/>winrt\Syncfusion.SfAutoComplete.XForms.dll<br/>winrt\Syncfusion.SfAutoComplete.XForms.WinRT.dll</td>
-</tr>
-<tr>
-<td>UWP</td>
-<td>uwp\Syncfusion.SfInput.UWP.dll<br/>uwp\Syncfusion.SfShared.UWP.dll<br/>uwp\Syncfusion.SfAutoComplete.XForms.dll<br/>uwp\Syncfusion.SfAutoComplete.XForms.UWP.dll</td>
-</tr>
-</table>
+{% tabs %}
+
+{% highlight PCL %}
+pcl\Syncfusion.SfAutoComplete.XForms.dll
+{% endhighlight %}
+
+{% highlight Android %}
+android\Syncfusion.SfAutoComplete.Android.dll
+android\Syncfusion.SfAutoComplete.XForms.Android.dll
+android\Syncfusion.SfAutoComplete.XForms.dll
+{% endhighlight %}
+
+{% highlight iOS %}
+iOS-unified\Syncfusion.SfAutoComplete.iOS.dll
+iOS-unified\Syncfusion.SfAutoComplete.XForms.iOS.dll
+iOS-unified\Syncfusion.SfAutoComplete.XForms.dll
+{% endhighlight %}
+
+{% highlight Windows %}
+### Windows Phone
+wp8\Syncfusion.SfInput.WP8.dll
+wp8\Syncfusion.SfShared.WP8.dll
+wp8\Syncfusion.SfAutoComplete.XForms.dll
+wp8\Syncfusion.SfAutoComplete.XForms.WinPhone.dll
+
+### Windows Phone 8.1
+wp81\Syncfusion.SfInput.WP.dll
+wp81\Syncfusion.SfShared.WP.dll
+wp81\Syncfusion.SfAutoComplete.XForms.dll
+wp81\Syncfusion.SfAutoComplete.XForms.WinPhone.dll
+{% endhighlight %}
+
+{% highlight WinRT %}
+winrt\Syncfusion.SfInput.WinRT.dll
+winrt\Syncfusion.SfShared.WinRT.dll
+winrt\Syncfusion.SfAutoComplete.XForms.dll
+winrt\Syncfusion.SfAutoComplete.XForms.WinRT.dll
+{% endhighlight %}
+
+{% highlight UWP %}
+uwp\Syncfusion.SfInput.UWP.dll
+uwp\Syncfusion.SfShared.UWP.dll
+uwp\Syncfusion.SfAutoComplete.XForms.dll
+uwp\Syncfusion.SfAutoComplete.XForms.UWP.dll
+{% endhighlight %}
+
+{% endtabs %}
+
 
 Currently an additional step is required for Windows Phone, Windows Phone 8.1 and iOS projects. We need to create an instance of the autocomplete custom renderer as shown below. 
 
@@ -76,11 +90,7 @@ Create an instance of SfAutoCompleteRenderer in MainPage constructor of the Wind
 public MainPage()
 
 {
-
-    new SfAutoCompleteRenderer();
-
-    ...    
-
+ new SfAutoCompleteRenderer();  
 }
 
 {% endhighlight %}
@@ -92,13 +102,7 @@ Create an instance of SfAutoCompleteRenderer in FinishedLaunching overridden met
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {
-
-    ...
-
     new SfAutoCompleteRenderer ();
-
-    ...
-
 }	
 
 {% endhighlight %}

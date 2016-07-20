@@ -31,40 +31,53 @@ Or after downloading through the Xamarin store web interface, all the required a
 
 You can then add the assembly references to the respective projects as shown below
 
-<table>
-<tr>
-<th>Project</th>
-<th>Required assemblies</th>
-</tr>
-<tr>
-<td>PCL</td>
-<td>pcl\Syncfusion.SfNumericUpDown.XForms.dll</td>
-</tr>
-<tr>
-<td>Android</td>
-<td>android\Syncfusion.SfNumericUpDown.Android.dll<br/>android\Syncfusion.SfNumericUpDown.XForms.Android.dll<br/>android\Syncfusion.SfNumericUpDown.XForms.dll</td>
-</tr>
-<tr>
-<td>iOS (Unified)</td>
-<td>iOS-unified\Syncfusion.SfNumericUpDown.iOS.dll<br/>iOS-unified\Syncfusion.SfNumericUpDown.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfNumericUpDown.XForms.dll</td>
-</tr>
-<tr>
-<td>Windows Phone</td>
-<td>wp8\Syncfusion.SfInput.WP8.dll<br/>wp8\Syncfusion.SfShared.WP8.dll<br/>wp8\Syncfusion.SfNumericUpDown.XForms.dll<br/>wp8\Syncfusion.SfNumericUpDown.XForms.WinPhone.dll</td>
-</tr>
-<tr>
-<td>Windows Phone 8.1</td>
-<td>wp81\Syncfusion.SfInput.WP.dll<br/>wp81\Syncfusion.SfShared.WP.dll<br/>wp81\Syncfusion.SfNumericUpDown.XForms.dll<br/>wp81\Syncfusion.SfNumericUpDown.XForms.WinPhone.dll</td>
-</tr>
-<tr>
-<td>WinRT</td>
-<td>winrt\Syncfusion.SfInput.WinRT.dll<br/>winrt\Syncfusion.SfShared.WinRT.dll<br/>winrt\Syncfusion.SfNumericUpDown.XForms.dll<br/>winrt\Syncfusion.SfNumericUpDown.XForms.WinRT.dll</td>
-</tr>
-<tr>
-<td>UWP</td>
-<td>uwp\Syncfusion.SfInput.UWP.dll<br/>uwp\Syncfusion.SfShared.UWP.dll<br/>uwp\Syncfusion.SfNumericUpDown.XForms.dll<br/>uwp\Syncfusion.SfNumericUpDown.XForms.UWP.dll</td>
-</tr>
-</table>
+{% tabs %}
+
+{% highlight PCL %}
+pcl\Syncfusion.SfNumericUpDown.XForms.dll
+{% endhighlight %}
+
+{% highlight Android %}
+android\Syncfusion.SfNumericUpDown.Android.dll
+android\Syncfusion.SfNumericUpDown.XForms.Android.dll
+android\Syncfusion.SfNumericUpDown.XForms.dll
+{% endhighlight %}
+
+{% highlight iOS %}
+iOS-unified\Syncfusion.SfNumericUpDown.iOS.dll
+iOS-unified\Syncfusion.SfNumericUpDown.XForms.iOS.dll
+iOS-unified\Syncfusion.SfNumericUpDown.XForms.dll
+{% endhighlight %}
+
+{% highlight Windows %}
+### Windows Phone
+wp8\Syncfusion.SfInput.WP8.dll
+wp8\Syncfusion.SfShared.WP8.dll
+wp8\Syncfusion.SfNumericUpDown.XForms.dll
+wp8\Syncfusion.SfNumericUpDown.XForms.WinPhone.dll
+
+### Windows Phone 8.1
+wp81\Syncfusion.SfInput.WP.dll
+wp81\Syncfusion.SfShared.WP.dll
+wp81\Syncfusion.SfNumericUpDown.XForms.dll
+wp81\Syncfusion.SfNumericUpDown.XForms.WinPhone.dll
+{% endhighlight %}
+
+{% highlight WinRT %}
+winrt\Syncfusion.SfInput.WinRT.dll
+winrt\Syncfusion.SfShared.WinRT.dll
+winrt\Syncfusion.SfNumericUpDown.XForms.dll
+winrt\Syncfusion.SfNumericUpDown.XForms.WinRT.dll
+{% endhighlight %}
+
+{% highlight UWP %}
+uwp\Syncfusion.SfInput.UWP.dll
+uwp\Syncfusion.SfShared.UWP.dll
+uwp\Syncfusion.SfNumericUpDown.XForms.dll
+uwp\Syncfusion.SfNumericUpDown.XForms.UWP.dll
+{% endhighlight %}
+
+{% endtabs %}
 
 Currently an additional step is required for Windows Phone, Windows Phone 8.1 and iOS projects. We need to create an instance of the NumericUpDown custom renderer as shown below. 
 
@@ -75,11 +88,7 @@ Create an instance of SfNumericUpDownRenderer in MainPage constructor of the Win
 public MainPage()
 
 {
-
-    new SfNumericUpDownRenderer();
-
-    ...    
-
+    new SfNumericUpDownRenderer(); 
 }
 
 {% endhighlight %}
@@ -91,13 +100,7 @@ Create an instance of SfNumericUpDownRenderer in FinishedLaunching overridden me
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {
-
-    ...
-
     new SfNumericUpDownRenderer ();
-
-    ...
-
 }	
 
 {% endhighlight %}

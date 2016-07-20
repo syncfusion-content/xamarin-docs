@@ -30,41 +30,53 @@ Or after downloading through the Xamarin store web interface, all the required a
 {Download location}\syncfusionessentialstudio-version\lib
 
 You can then add the assembly references to the respective projects as shown below
+{% tabs %}
 
-<table>
-<tr>
-<th>Project</th>
-<th>Required assemblies</th>
-</tr>
-<tr>
-<td>PCL</td>
-<td>pcl\Syncfusion.SfNumericTextBox.XForms.dll</td>
-</tr>
-<tr>
-<td>Android</td>
-<td>android\Syncfusion.SfNumericTextBox.Android.dll<br/>android\Syncfusion.SfNumericTextBox.XForms.Android.dll<br/>android\Syncfusion.SfNumericTextBox.XForms.dll</td>
-</tr>
-<tr>
-<td>iOS (Unified)</td>
-<td>iOS-unified\Syncfusion.SfNumericTextBox.iOS.dll<br/>iOS-unified\Syncfusion.SfNumericTextBox.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfNumericTextBox.XForms.dll</td>
-</tr>
-<tr>
-<td>Windows Phone</td>
-<td>wp8\Syncfusion.SfInput.WP8.dll<br/>wp8\Syncfusion.SfShared.WP8.dll<br/>wp8\Syncfusion.SfNumericTextBox.XForms.dll<br/>wp8\Syncfusion.SfNumericTextBox.XForms.WinPhone.dll</td>
-</tr>
-<tr>
-<td>Windows Phone 8.1</td>
-<td>wp81\Syncfusion.SfInput.WP.dll<br/>wp81\Syncfusion.SfShared.WP.dll<br/>wp81\Syncfusion.SfNumericTextBox.XForms.dll<br/>wp81\Syncfusion.SfNumericTextBox.XForms.WinPhone.dll</td>
-</tr>
-<tr>
-<td>WinRT</td>
-<td>winrt\Syncfusion.SfInput.WinRT.dll<br/>winrt\Syncfusion.SfShared.WinRT.dll<br/>winrt\Syncfusion.SfNumericTextBox.XForms.dll<br/>winrt\Syncfusion.SfNumericTextBox.XForms.WinRT.dll</td>
-</tr>
-<tr>
-<td>UWP</td>
-<td>uwp\Syncfusion.SfInput.UWP.dll<br/>uwp\Syncfusion.SfShared.UWP.dll<br/>uwp\Syncfusion.SfNumericTextBox.XForms.dll<br/>uwp\Syncfusion.SfNumericTextBox.XForms.UWP.dll</td>
-</tr>
-</table>
+{% highlight PCL %}
+pcl\Syncfusion.SfNumericTextBox.XForms.dll
+{% endhighlight %}
+
+{% highlight Android %}
+android\Syncfusion.SfNumericTextBox.Android.dll
+android\Syncfusion.SfNumericTextBox.XForms.Android.dll
+android\Syncfusion.SfNumericTextBox.XForms.dll
+{% endhighlight %}
+
+{% highlight iOS %}
+iOS-unified\Syncfusion.SfNumericTextBox.iOS.dll
+iOS-unified\Syncfusion.SfNumericTextBox.XForms.iOS.dll
+iOS-unified\Syncfusion.SfNumericTextBox.XForms.dll
+{% endhighlight %}
+
+{% highlight Windows %}
+### Windows Phone
+wp8\Syncfusion.SfInput.WP8.dll
+wp8\Syncfusion.SfShared.WP8.dll
+wp8\Syncfusion.SfNumericTextBox.XForms.dll
+wp8\Syncfusion.SfNumericTextBox.XForms.WinPhone.dll
+
+### Windows Phone 8.1
+wp81\Syncfusion.SfInput.WP.dll
+wp81\Syncfusion.SfShared.WP.dll
+wp81\Syncfusion.SfNumericTextBox.XForms.dll
+wp81\Syncfusion.SfNumericTextBox.XForms.WinPhone.dll
+{% endhighlight %}
+
+{% highlight WinRT %}
+winrt\Syncfusion.SfInput.WinRT.dll
+winrt\Syncfusion.SfShared.WinRT.dll
+winrt\Syncfusion.SfNumericTextBox.XForms.dll
+winrt\Syncfusion.SfNumericTextBox.XForms.WinRT.dll
+{% endhighlight %}
+
+{% highlight UWP %}
+uwp\Syncfusion.SfInput.UWP.dll
+uwp\Syncfusion.SfShared.UWP.dll
+uwp\Syncfusion.SfNumericTextBox.XForms.dll
+uwp\Syncfusion.SfNumericTextBox.XForms.UWP.dll
+{% endhighlight %}
+
+{% endtabs %}
 
 Currently an additional step is required for Windows Phone, Windows Phone 8.1 and iOS projects. We need to create an instance of the NumericTextBox custom renderer as shown below. 
 
@@ -75,11 +87,7 @@ Create an instance of SfNumericTextBoxRenderer in MainPage constructor of the Wi
 public MainPage()
 
 {
-
-    new SfNumericTextBoxRenderer();
-
-    ...    
-
+    new SfNumericTextBoxRenderer(); 
 }
 
 {% endhighlight %}
@@ -91,13 +99,7 @@ Create an instance of SfNumericTextBoxRenderer in FinishedLaunching overridden m
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {
-
-    ...
-
     new SfNumericTextBoxRenderer ();
-
-    ...
-
 }	
 
 {% endhighlight %}

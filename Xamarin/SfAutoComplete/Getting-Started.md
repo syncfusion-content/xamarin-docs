@@ -107,7 +107,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 The following steps help to add a SfAutoComplete control through code.
 
-* Adding namespace for the added assemblies to the Main window. 
+* Adding namespace for the added assemblies. 
 
 {% tabs %}
 

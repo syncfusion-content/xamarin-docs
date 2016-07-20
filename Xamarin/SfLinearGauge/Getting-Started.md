@@ -31,40 +31,54 @@ Or after downloading through the Xamarin store web interface, all the required a
 
 You can then add the assembly references to the respective projects as shown below
 
-<table>
-<tr>
-<th>Project</th>
-<th>Required assemblies</th>
-</tr>
-<tr>
-<td>PCL</td>
-<td>pcl\Syncfusion.SfGauge.XForms.dll</td>
-</tr>
-<tr>
-<td>Android</td>
-<td>android\Syncfusion.SfGauge.Android.dll<br/>android\Syncfusion.SfGauge.XForms.Android.dll<br/>android\Syncfusion.SfGauge.XForms.dll</td>
-</tr>
-<tr>
-<td>iOS (Unified)</td>
-<td>iOS-unified\Syncfusion.SfGauge.iOS.dll<br/>iOS-unified\Syncfusion.SfGauge.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfGauge.XForms.dll</td>
-</tr>
-<tr>
-<td>Windows Phone</td>
-<td>wp8\Syncfusion.SfInput.WP8.dll<br/>wp8\Syncfusion.SfShared.WP8.dll<br/>wp8\Syncfusion.SfGauge.XForms.dll<br/>wp8\Syncfusion.SfGauge.XForms.WinPhone.dll</td>
-</tr>
-<tr>
-<td>Windows Phone 8.1</td>
-<td>wp81\Syncfusion.SfInput.WP.dll<br/>wp81\Syncfusion.SfShared.WP.dll<br/>wp81\Syncfusion.SfGauge.XForms.dll<br/>wp81\Syncfusion.SfGauge.XForms.WinPhone.dll</td>
-</tr>
-<tr>
-<td>WinRT</td>
-<td>winrt\Syncfusion.SfInput.WinRT.dll<br/>winrt\Syncfusion.SfShared.WinRT.dll<br/>winrt\Syncfusion.SfGauge.XForms.dll<br/>winrt\Syncfusion.SfGauge.XForms.WinRT.dll</td>
-</tr>
-<tr>
-<td>UWP</td>
-<td>uwp\Syncfusion.SfInput.UWP.dll<br/>uwp\Syncfusion.SfShared.UWP.dll<br/>uwp\Syncfusion.SfGauge.XForms.dll<br/>uwp\Syncfusion.SfGauge.XForms.UWP.dll</td>
-</tr>
-</table>
+{% tabs %}
+
+{% highlight PCL %}
+pcl\Syncfusion.SfGauge.XForms.dll
+{% endhighlight %}
+
+{% highlight Android %}
+android\Syncfusion.SfGauge.Android.dll
+android\Syncfusion.SfGauge.XForms.Android.dll
+android\Syncfusion.SfGauge.XForms.dll
+{% endhighlight %}
+
+{% highlight iOS %}
+iOS-unified\Syncfusion.SfGauge.iOS.dll
+iOS-unified\Syncfusion.SfGauge.XForms.iOS.dll
+iOS-unified\Syncfusion.SfGauge.XForms.dll
+{% endhighlight %}
+
+{% highlight Windows %}
+### Windows Phone
+wp8\Syncfusion.SfInput.WP8.dll
+wp8\Syncfusion.SfShared.WP8.dll
+wp8\Syncfusion.SfGauge.XForms.dll
+wp8\Syncfusion.SfGauge.XForms.WinPhone.dll
+
+### Windows Phone 8.1
+wp81\Syncfusion.SfInput.WP.dll
+wp81\Syncfusion.SfShared.WP.dll
+wp81\Syncfusion.SfGauge.XForms.dll
+wp81\Syncfusion.SfGauge.XForms.WinPhone.dll
+{% endhighlight %}
+
+{% highlight WinRT %}
+winrt\Syncfusion.SfInput.WinRT.dll
+winrt\Syncfusion.SfShared.WinRT.dll
+winrt\Syncfusion.SfGauge.XForms.dll
+winrt\Syncfusion.SfGauge.XForms.WinRT.dll
+{% endhighlight %}
+
+{% highlight UWP %}
+uwp\Syncfusion.SfInput.UWP.dll
+uwp\Syncfusion.SfShared.UWP.dll
+uwp\Syncfusion.SfGauge.XForms.dll
+uwp\Syncfusion.SfGauge.XForms.UWP.dll
+{% endhighlight %}
+
+{% endtabs %}
+
 
 Currently an additional step is required for Windows Phone, Windows Phone 8.1 and iOS projects. We need to create an instance of the linear gauge custom renderer as shown below. 
 
@@ -75,11 +89,7 @@ Create an instance of SfLinearGaugeRenderer in MainPage constructor of the Windo
 public MainPage()
 
 {
-
-    new SfLinearGaugeRenderer();
-
-    ...    
-
+	new SfLinearGaugeRenderer();  
 }
 
 {% endhighlight %}
@@ -91,13 +101,7 @@ Create an instance of SfLinearGaugeRenderer in FinishedLaunching overridden meth
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {
-
-    ...
-
     new SfLinearGaugeRenderer ();
-
-    ...
-
 }	
 
 {% endhighlight %}

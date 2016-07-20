@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Populating Events in Syncfusion Calendar control for Android
 description: Learn how to create appointments

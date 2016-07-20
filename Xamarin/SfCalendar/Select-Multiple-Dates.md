@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Interactive Selection modes in Syncfusion Calendar control for Xamarin.Forms
 description: Select Multiple Dates

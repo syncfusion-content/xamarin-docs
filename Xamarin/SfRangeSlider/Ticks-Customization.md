@@ -7,34 +7,11 @@ control: RangeSlider
 documentation: ug
 ---
 
-# Customizing Ticks 
+# Ticks Customization
 
 This section explains about the customization of the Ticks in SfRangeSlider control.
 
-## Set Tick Frequency
-
-The `TickFrequency` property is used to decide the number of ticks to be displayed along the track based on Minimum and Maximum values.
-
-{% tabs %}
-
-{% highlight c# %}
-
-	rangeslider.TickFrequency=4;
-
-{% endhighlight %}
-
-{% highlight xaml %}
-
-	<range:SfRangeSlider x:Name="rangeslider" TickFrequency="4" />
-	
-{% endhighlight %}
-
-{% endtabs %}
-
-N> When the `SnapsTo` property is set to `Ticks`, the `TickFrequency` is used to specify the interval between snap points.
-
-
-## Displaying Ticks in Different Positions
+## TickPlacement
 
 The `TickPlacement` property determines where to draw tick marks in relation to the track. Available options for this property are,
 
@@ -50,7 +27,7 @@ The `TickPlacement` property determines where to draw tick marks in relation to 
 
 N> The default option is Inline.
 
-### BottomRight
+## BottomRight
 
 Tick marks can be placed either below the track in horizontal orientation or right of the track in vertical orientation.
 
@@ -72,7 +49,7 @@ Tick marks can be placed either below the track in horizontal orientation or rig
 
 ![](images/BottomRight.png)
 
-### TopLeft
+## TopLeft
 
 Tick marks are placed either above the track in horizontal orientation or left of the track in vertical orientation.
 
@@ -94,7 +71,7 @@ Tick marks are placed either above the track in horizontal orientation or left o
 
 ![](images/TopLeft.png)
 
-### Inline
+## Inline
 
 Ticks are placed along the track.
 
@@ -116,7 +93,7 @@ Ticks are placed along the track.
 
 ![](images/Inline.png)
 
-### Outside
+## Outside
 
 Tick marks are placed on both sides of the track either in horizontal or vertical orientation.
 

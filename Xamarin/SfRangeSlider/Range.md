@@ -7,29 +7,15 @@ control: RangeSlider
 documentation: ug
 ---
 
-# Displaying Dual Thumb
+# Range
 
-The SfRangeSlider control supports to select range of value by using two Thumbs. The `ShowRange` property should be set to true for displaying two thumbs in track with range of values.
+The SfRangeSlider control supports to select range of value by using two Thumbs.
 
-Setting ShowRange property to false shows the single thumb without any range. To set the Range of the thumb in SfRangeSlider Value property is used when ShowRange is disabled.
+## Setting Show Range
 
-{% tabs %}
+The `ShowRange` property should be set to true for displaying two thumbs in track with range of values.
 
-{% highlight c# %}
-
-    rangeslider.Value = 50;
-
-{% endhighlight %}
-
-{% highlight xaml %}
-
-	<range:SfRangeSlider x:Name="rangeslider" ShowRange="false" Value="50"/>
-	
-{% endhighlight %}
-
-{% endtabs %}
-
-N> Default value of `ShowRange` is true.
+N> When this property is set to false, single thumb is displayed without any range 
 
 {% tabs %}
 
@@ -47,13 +33,14 @@ N> Default value of `ShowRange` is true.
 
 {% endtabs %}
 
-## Setting Thumb Values
+
+## Setting Range values
 
 This section explains about setting Range start and end value.
 
-### RangeStart
+## RangeStart
 
-Gets and sets the start value of the Range.
+Gets and sets the start value of the range.
 
 {% tabs %}
 
@@ -71,9 +58,9 @@ Gets and sets the start value of the Range.
 
 {% endtabs %}
 
-### RangeEnd
+## RangeEnd
 
-Gets and sets the end value of the Range.
+Gets and sets the end value of the range.
 
 {% tabs %}
 

@@ -47,16 +47,14 @@ iOS-unified\Syncfusion.SfRangeSlider.iOS.dll
 iOS-unified\Syncfusion.SfRangeSlider.XForms.iOS.dll
 iOS-unified\Syncfusion.SfRangeSlider.XForms.dll
 
-### Windows Phone 
-
-**Windows Phone 8**
+### Windows Phone
 
 wp8\Syncfusion.SfInput.WP8.dll
 wp8\Syncfusion.SfShared.WP8.dll
 wp8\Syncfusion.SfRangeSlider.XForms.dll
 wp8\Syncfusion.SfRangeSlider.XForms.WinPhone.dll
 
-**Windows Phone 8.1**
+### Windows Phone 8.1
 
 wp81\Syncfusion.SfInput.WP.dll
 wp81\Syncfusion.SfShared.WP.dll
@@ -102,7 +100,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% endtabs %}
 
-## Add and Configure the SfRangeSlider
+## Add SfRangeSlider
 
 The following steps help to add a SfRangeSlider control through code.
 
@@ -143,7 +141,7 @@ The following steps help to add a SfRangeSlider control through code.
 
 {% endtabs %}
 
-## Setting Range
+## Set Range
 
 The `RangeStart` and `RangeEnd` properties can be set to denote the start range and end range values while dual thumb is used. 
 
@@ -207,32 +205,5 @@ The movement of the thumb can be varied in different ways. This is achieved by s
 	
 {% endhighlight %}
 
-{% endtabs %}
-
-## Setting Orientation
-
-SfRangeSlider can be displayed either horizontally or vertically. this can achieved by setting the `Orientation` property.
-
-{% tabs %}
-
-{% highlight c# %}
-
-	rangeslider.Orientation=Orientation.Horizontal;
-
-{% endhighlight %}
-
-{% highlight xaml %}
-
-	<range:SfRangeSlider x:Name="rangeslider" Orientation="Horizontal"/>
-	
-{% endhighlight %}
-
-{% endtabs %}
-
-
-![](images/RangeSlider.png)
-
-
-
-    
+{% endtabs %}  
                                     

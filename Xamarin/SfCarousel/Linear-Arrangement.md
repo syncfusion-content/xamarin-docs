@@ -28,7 +28,7 @@ The Carousel items can be populated in the view in a stacked linear layout by se
 {% endtabs %}
 
 
-W> It is important to include Xamarin.Android.Support.v17.Leanback library to use carousel linear mode.
+N> It is important to include Xamarin.Android.Support.v17.Leanback library to use carousel linear mode in Android platform.
 
 
 

@@ -67,7 +67,7 @@ N> Images can also be referred in PCL and from website url as [instructed](https
 
 ### Binding the Data with Custom Template
 
-SfCarousel provides support to add a custom view as Carouseltems by designing a view inside its ItemTemplate. This template will be applied for all its items and its data will be binded.
+SfCarousel provides support to add a custom view as Carousel Items by designing a view inside its ItemTemplate. This template will be applied for all its items and its data will be binded.
 
 
 {% highlight xaml %}
@@ -85,6 +85,16 @@ SfCarousel provides support to add a custom view as Carouseltems by designing a 
 		<carousel:SfCarousel x:Name="carousel"  ItemTemplate="{StaticResource itemTemplate}" DataSource="{Binding ImageCollection}"   HeightRequest="400" WidthRequest="800" />	
 	</ContentPage.Content>
 {% endhighlight %}
+
+* Now set the `BindingContext` for the items collection in code behind.
+
+{% highlight C# %}
+
+	carousel.BindingContext = new CarouselViewModel();
+
+{% endhighlight %}
+
+
 
 ## Through Carousel Item
 
@@ -113,7 +123,7 @@ The ItemTemplate provides common template with different data, whereas if differ
 			carouselItem1.ItemContent = img;
 			carousel.ItemsSource.Add(carouselItem1);
 
-			this.Content = carousel;			
+			this.Content = carousel;	
 	
 	  
 {% endhighlight %}

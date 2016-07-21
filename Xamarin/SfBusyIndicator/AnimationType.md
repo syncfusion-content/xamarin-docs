@@ -6,7 +6,7 @@ platform: Xamarin
 control: BusyIndicator
 documentation: ug
 ---
-# AnimationType
+# Animation Type
 
 The `AnimationType` property allows you to choose anyone of the 10 predefined animation types.
 

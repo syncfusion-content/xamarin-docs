@@ -71,29 +71,35 @@ Currently an additional step is required for Windows Phone, Windows Phone 8.1 an
 
 Create an instance of SfBusyIndicatorRenderer in MainPage constructor of the Windows Phone and Windows Phone 8.1  project as shown 
 
+{% tabs %}
+
 {% highlight C# %}
 
 public MainPage()
-
 {
     new SfBusyIndicatorRenderer();
 }
 
 {% endhighlight %}
 
+{% endtabs %}
+
 Create an instance of SfBusyIndicatorRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below
+
+{% tabs %}
 
 {% highlight C# %}
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
-
 {
     new SfBusyIndicatorRenderer ();
 }	
 
 {% endhighlight %}
 
-## Add and Configure the SfBusyIndicator
+{% endtabs %}
+
+## Add BusyIndicator
 
 The following steps help to add a SfBusyIndicator control through code.
 

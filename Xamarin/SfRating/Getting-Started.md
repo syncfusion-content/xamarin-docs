@@ -51,14 +51,12 @@ iOS-unified\Syncfusion.SfRating.XForms.dll
 
 ### Windows Phone 
 
-**Windows Phone 8**
-
 wp8\Syncfusion.SfInput.WP8.dll
 wp8\Syncfusion.SfShared.WP8.dll
 wp8\Syncfusion.SfRating.XForms.dll
 wp8\Syncfusion.SfRating.XForms.WinPhone.dll
 
-**Windows Phone 8.1**
+### Windows Phone 8.1
 
 wp81\Syncfusion.SfInput.WP.dll
 wp81\Syncfusion.SfShared.WP.dll
@@ -112,7 +110,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% endtabs %}
 
-## Add and Configure the SfRating
+## Add SfRating
 
 The SfRating control is configured entirely in C# code or by using XAML markup. The following steps explain on how to create a SfRating and configure its elements.
 
@@ -152,8 +150,29 @@ The SfRating control is configured entirely in C# code or by using XAML markup. 
 
 {% endtabs %}
 
+## Set Number of Rating Items
 
-## Setting Value
+The `ItemCount` property sets the number of rating items to be displayed. 
+
+N> The default property value is 5.
+
+{% tabs %}
+
+{% highlight C# %}
+
+	rating.ItemCount=4;
+
+{% endhighlight %}
+
+{% highlight xaml %}
+
+	<rating:SfRating x:Name="rating" ItemCount="4" />
+	
+{% endhighlight %}
+
+{% endtabs %}
+
+## Set Value
 
 * The `Value` property sets the display value of the SfRating. 
 

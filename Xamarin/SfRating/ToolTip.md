@@ -14,7 +14,7 @@ documentation: ug
 
 The ToolTip shows the value of the SfRating control.
 
-## Setting ToolTip Placement
+## Set Tooltip Placement
 
 SfRating control provides Tooltip support to the SfRating control using `TooltipPlacement` property. 
 
@@ -86,7 +86,7 @@ It is used to invisible the Tooltip in the SfRating control.
 
 ![](images/null.jpg)
 
-## Setting ToolTip Precision
+## Set ToolTip Precision
 
 The `ToolTipPrecision` property sets the number precisions to be displayed after decimal point in Tooltip. 
 

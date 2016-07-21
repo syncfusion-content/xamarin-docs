@@ -55,7 +55,7 @@ wp81\Syncfusion.SfBusyIndicator.WP.dll
 wp81\Syncfusion.SfBusyIndicator.XForms.dll
 wp81\Syncfusion.SfBusyIndicator.XForms.WinPhone.dll
 
-{% highlight WinRT %}
+### WinRT 
 winrt\Syncfusion.SfBusyIndicator.WinRT.dll
 winrt\Syncfusion.SfBusyIndicator.XForms.dll
 winrt\Syncfusion.SfBusyIndicator.XForms.WinRT.dll

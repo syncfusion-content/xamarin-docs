@@ -53,7 +53,7 @@ Create and populate SfCarousel collection as follows
 
 ## ItemTemplate
 
-SfCarousel provides support to add a custom view as Carouseltems by designing a view inside its ItemTemplate. This template will be applied for all its items and its data will be binded.
+SfCarousel provides support to add a custom view as carousel items by designing a view inside its ItemTemplate. This template will be applied for all its items and its data will be binded.
 
 
 {% highlight xaml %}

@@ -7,7 +7,7 @@ control : AutoComplete
 documentation : ug
 ---
 
-# Customizing Suggestion Box Behaviour
+# Customizing Suggestion Box Behavior
 
 Suggestion Box behavior can be customized using `MinimumPrefixCharacters` and `PopUpDelay` properties in SfAutoComplete.
 

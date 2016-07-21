@@ -7,7 +7,7 @@ control : Carousel
 documentation : ug
 ---
 
-# Customizing Item Offsets 
+# Transformation
 
 The Offset between selected and unselected item can be customized in SfCarousel control. And also the items can be scaled to the specified value.
 
@@ -36,7 +36,7 @@ N> If the angle value is positive, then the rotation is in the clockwise directi
 ![](images/rotationangle.png)
 
 
-## Offset Between Items
+## Offset between Items
 
 The `Offset` property is used to specify the accurate distance between unselected items in SfCarousel panel.  
 
@@ -60,7 +60,7 @@ N> The default value is 20.
 
 ![](images/offset.png)
 
-## Offset Around Selected Item
+## Offset around Selected Item
 
 Distance between the selected item and other items can be customized by using `SelectedItemOffset` property of the SfCarousel control.
 

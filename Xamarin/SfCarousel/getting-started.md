@@ -122,7 +122,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% endtabs %}
 
-## Add and Configure the SfCarousel
+## Add SfCarousel
 
 The SfCarousel control is configured entirely in C# code or by using XAML markup. The following steps explain on how to create a SfCarousel and configure its elements,
 
@@ -164,7 +164,7 @@ The SfCarousel control is configured entirely in C# code or by using XAML markup
 {% endtabs %}
 
 
-## Set DataSource
+## Add Carousel Items
 
 SfCarousel items can be populated with a collection of image data. This collection includes Arrays, Lists and DataTables. For example you can create a SfCarousel model as follows.
 
@@ -185,7 +185,7 @@ SfCarousel items can be populated with a collection of image data. This collecti
 
 {% endhighlight %}
 
-Create and populate SfCarousel collection as follows.
+* Create and populate SfCarousel collection as follows.
 
 {% highlight C# %}
 
@@ -203,9 +203,8 @@ Create and populate SfCarousel collection as follows.
 
 {% endhighlight %}
 
-## Set ItemTemplate
 
-`ItemTemplate` property of SfCarousel control is used to customize the contents of SfCarousel items.
+* `ItemTemplate` property of SfCarousel control is used to customize the contents of SfCarousel items.
 
 {% highlight xaml %}
 
@@ -222,10 +221,9 @@ Create and populate SfCarousel collection as follows.
 		<carousel:SfCarousel x:Name="carousel"  ItemTemplate="{StaticResource itemTemplate}"    HeightRequest="400" WidthRequest="800" />
 	</local:SamplePage.ContentView >
 
-
 {% endhighlight %}
 
-## Set Offset Between Items
+## Set Gap between Items
 
 Set the Offset property to specify the distance between the items in SfCarousel panel.
 
@@ -248,7 +246,7 @@ Set the Offset property to specify the distance between the items in SfCarousel 
 {% endtabs %}
 
 
-## Set Rotation Angle
+## Tilt Non Selected Items
 
 Set the `RotationAngle` property to decide the angle in which items should be rotated.
 
@@ -266,6 +264,28 @@ Set the `RotationAngle` property to decide the angle in which items should be ro
 {% highlight xaml %}
 
 	<carousel:SfCarousel x:Name="carousel" SelectedIndex="2" Offset="20" RotationAngle="45" />
+	
+{% endhighlight %}
+
+{% endtabs %}
+
+## Set Desire Item to be Selected
+
+`SelectedIndex` property sets the Selected Item index value of SfCarousel control to bring the particular item to center of the screen.
+
+N> The `SelectedIndex` property will be 0 by default
+
+{% tabs %}
+
+{% highlight C# %}
+
+	carousel.SelectedIndex=2;
+
+{% endhighlight %}
+
+{% highlight xaml %}
+
+	<carousel:SfCarousel x:Name="carousel" SelectedIndex="2" />
 	
 {% endhighlight %}
 

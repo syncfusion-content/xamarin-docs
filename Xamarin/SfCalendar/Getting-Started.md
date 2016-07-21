@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Getting Started with Syncfusion Calendar control for Xamarin.Forms
 description: A quick tour to initial users on Syncfusion calendar control for Xamarin.Forms platform

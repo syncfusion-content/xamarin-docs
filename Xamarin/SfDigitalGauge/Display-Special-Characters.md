@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Setting Displaying Text of DigitalGauge
 description: Learn how to set Display Text in DigitalGauge

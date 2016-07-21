@@ -31,7 +31,6 @@ Or after downloading through the Xamarin store web interface, all the required a
 
 You can then add the assembly references to the respective projects as shown below
 
-
 ### PCL 
 pcl\Syncfusion.SfGauge.XForms.dll
 
@@ -69,35 +68,39 @@ uwp\Syncfusion.SfShared.UWP.dll
 uwp\Syncfusion.SfGauge.XForms.dll
 uwp\Syncfusion.SfGauge.XForms.UWP.dll
 
-
-
 Currently an additional step is required for Windows Phone, Windows Phone 8.1 and iOS projects. We need to create an instance of the linear gauge custom renderer as shown below. 
 
 Create an instance of SfLinearGaugeRenderer in MainPage constructor of the Windows Phone and  Windows Phone 8.1 project as shown 
 
+{% tabs %}
+
 {% highlight C# %}
 
 public MainPage()
-
 {
 	new SfLinearGaugeRenderer();  
 }
 
 {% endhighlight %}
 
+{% endtabs %}
+
 Create an instance of SfLinearGaugeRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below
+
+{% tabs %}
 
 {% highlight C# %}
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
-
 {
     new SfLinearGaugeRenderer ();
 }	
 
 {% endhighlight %}
 
-## Adding and Configuring the SfLinearGauge
+{% endtabs %}
+
+## Add SfLinearGauge
 
 The SfLinearGauge control configured entirely in C# code or by using XAML markup.The following steps explain on how to create an SfLinearGauge and configure its elements.
 
@@ -171,7 +174,7 @@ We will add one or more scale value to SfLinearGauge. Before adding that scales 
 
 {% endtabs %}
 
-## Add Symbol Pointer
+## Add a Symbol Pointer
 
 We can point a value on scale in SfLinearGauge by creating instance of `SymbolPointer`.
 
@@ -219,7 +222,6 @@ Before adding that symbol and bar pointer into Scale’s pointer add value of th
 
 {% endtabs %}
 
-
 ## Add a Range
 
 We can improve the readability of data by including ranges that quickly displays when values fall within a specific ranges.
@@ -249,10 +251,8 @@ We can improve the readability of data by including ranges that quickly displays
     pointerRange.StartWidth = 10;
     pointerRange.EndWidth = 10;  
     scale.Ranges.Add(pointerRange);
-
 	
 {% endhighlight %}
-
 
 {% endtabs %}
 

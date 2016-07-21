@@ -6,7 +6,7 @@ platform: Xamarin
 control: BusyIndicator
 documentation: ug
 ---
-# Set Header and Font
+# Set Header
 
 The `Title` property can be used to get or set the text that indicates the information related to loading. The `FontFace` property can be used to define the font style and size of the title.
 

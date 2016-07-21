@@ -6,7 +6,7 @@ platform: Xamarin
 control: BusyIndicator
 documentation: ug
 ---
-# Make Busy
+# Make Busy Animation Idle
 
 The `IsBusy` property in SfBusyIndicator control is used to determine whether an animation needs to be executed or not.
 

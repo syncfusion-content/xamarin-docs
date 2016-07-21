@@ -7,7 +7,7 @@ control: DigitalGauge
 documentation: ug
 ---
 
-# Different types of Character Type
+# Various types of Segment
 
 The Digital Characters can be drawn in 4 different segments as follows.
  

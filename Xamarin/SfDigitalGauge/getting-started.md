@@ -35,7 +35,6 @@ You can then add the assembly references to the respective projects as shown bel
 ### PCL 
 pcl\Syncfusion.SfGauge.XForms.dll
 
-
 ### Android 
 android\Syncfusion.SfGauge.Android.dll
 android\Syncfusion.SfGauge.XForms.Android.dll
@@ -75,29 +74,35 @@ Currently an additional step is required for Windows Phone, Windows Phone 8.1 an
 
 Create an instance of SfDigitalGaugeRenderer in MainPage constructor of the Windows Phone and Windows Phone 8.1 project as shown 
 
+{% tabs %}
+
 {% highlight C# %}
 
 public MainPage()
-
 {
     new SfDigitalGaugeRenderer();
 }
 
 {% endhighlight %}
 
+{% endtabs %}
+
 Create an instance of SfDigitalGaugeRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below
+
+{% tabs %}
 
 {% highlight C# %}
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
-
 {
     new SfDigitalGaugeRenderer ();
 }	
 
 {% endhighlight %}
 
-## Add and Configure the SfDigitalGauge
+{% endtabs %}
+
+## Add SfDigitalGauge
 
 The SfDigitalGauge control is configured entirely in C# code or by using XAML markup. The following steps explain on how to create a SfDigitalGauge and configure its elements.
 
@@ -164,7 +169,7 @@ The SfDigitalGauge control is configured entirely in C# code or by using XAML ma
 
 {% endtabs %}
 
-## Setting Value
+## Set Value
 
 * The `Value` property sets the display value in the SfDigitalGauge.
 
@@ -183,5 +188,26 @@ The SfDigitalGauge control is configured entirely in C# code or by using XAML ma
 {% endhighlight %}
 
 {% endtabs %}
+
+## Set Segments
+
+The Digital Characters can be drawn in 4 different segments.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+	<gauge:SfDigitalGauge x:Name="digitalgauge"  CharacterType="SegmentSeven" />
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+	digitalgauge.CharacterType = CharacterType.SegmentSeven;
+
+{% endhighlight %}
+
+{% endtabs %}
+
 
 ![](Getting-Started_images/gettingstarted.png)

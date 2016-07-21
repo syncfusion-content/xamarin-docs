@@ -7,39 +7,15 @@ control : AutoComplete
 documentation : ug
 ---
 
-# Data Binding
+# Populating Items
 
-SfAutoComplete control, supports binding to different data sources such as IList Data Source, Observable Collection Data Source. This section explains 
-about setting AutoComplete source, Item Source and applying template to the data.
+SfAutoComplete control, supports binding to different data sources such as IList Data Source, Observable Collection Data Source. 
 
-## Setting AutoComplete Source
+## Through Binding
 
-The `AutoCompleteSource` property is used to populate the list of data to the suggestions dropdown.
-	
-{% tabs %}	
+This section explains about setting Item Source and applying custom template to the data.
 
-{% highlight xaml %}
-
-  	<autocomplete:SfAutoComplete  x:Name="countryAutoComplete" HeightRequest="40" AutoCompleteSource="{Binding }" />
-
-{% endhighlight %}
-	
-{% highlight c# %}
-	
-	List<String> countryList = new List<String>(); 
-	countryList.Add ("Iceland");
-	countryList.Add ("India");
-	countryList.Add ("Indonesia");
-	countryList.Add ("Iran");
-	countryAutoComplete.AutoCompleteSource=countryList;
-	 
-{% endhighlight %}
-
-{% endtabs %}
-	
-![](images/autocompletesource.png)
-
-## Set Item Source
+### Create a Model with Data
 
 ItemSource is a collection of SfAutoComplete items which holds the ImageName and TextProperties that to be displayed in suggestions.
 
@@ -91,7 +67,7 @@ Create and populate autocomplete collection as follows
 
 ![](images/autocompleteitemsource.png)
 
-## Applying Template to Data 
+### Binding the Data with Custom Template
 
 SfAutoComplete contents can be customized by using `ItemTemplate` property. Through the ItemTemplate user can set up data bindings to the user objects.
 
@@ -113,3 +89,29 @@ SfAutoComplete contents can be customized by using `ItemTemplate` property. Thro
 
 ![](images/autocompleteitemsource.png)
 
+## Items AutoCompleteSource
+
+The `AutoCompleteSource` property is used to populate the list of data to the suggestions dropdown.
+	
+{% tabs %}	
+
+{% highlight xaml %}
+
+  	<autocomplete:SfAutoComplete  x:Name="countryAutoComplete" HeightRequest="40" AutoCompleteSource="{Binding }" />
+
+{% endhighlight %}
+	
+{% highlight c# %}
+	
+	List<String> countryList = new List<String>(); 
+	countryList.Add ("Iceland");
+	countryList.Add ("India");
+	countryList.Add ("Indonesia");
+	countryList.Add ("Iran");
+	countryAutoComplete.AutoCompleteSource=countryList;
+	 
+{% endhighlight %}
+
+{% endtabs %}
+	
+![](images/autocompletesource.png)

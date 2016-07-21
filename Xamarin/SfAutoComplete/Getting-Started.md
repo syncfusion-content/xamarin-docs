@@ -32,8 +32,6 @@ Or after downloading through the Xamarin store web interface, all the required a
 
 You can then add the assembly references to the respective projects as shown below
 
-
-
 ### PCL 
 pcl\Syncfusion.SfAutoComplete.XForms.dll
 
@@ -41,7 +39,6 @@ pcl\Syncfusion.SfAutoComplete.XForms.dll
 android\Syncfusion.SfAutoComplete.Android.dll
 android\Syncfusion.SfAutoComplete.XForms.Android.dll
 android\Syncfusion.SfAutoComplete.XForms.dll
-
 
 ### iOS 
 iOS-unified\Syncfusion.SfAutoComplete.iOS.dll
@@ -60,13 +57,11 @@ wp81\Syncfusion.SfShared.WP.dll
 wp81\Syncfusion.SfAutoComplete.XForms.dll
 wp81\Syncfusion.SfAutoComplete.XForms.WinPhone.dll
 
-
 ### WinRT 
 winrt\Syncfusion.SfInput.WinRT.dll
 winrt\Syncfusion.SfShared.WinRT.dll
 winrt\Syncfusion.SfAutoComplete.XForms.dll
 winrt\Syncfusion.SfAutoComplete.XForms.WinRT.dll
-
 
 ### UWP 
 uwp\Syncfusion.SfInput.UWP.dll
@@ -79,29 +74,35 @@ Currently an additional step is required for Windows Phone, Windows Phone 8.1 an
 
 Create an instance of SfAutoCompleteRenderer in MainPage constructor of the Windows Phone and Windows Phone 8.1 project as shown 
 
+{% tabs %}
+
 {% highlight C# %}
 
 public MainPage()
-
 {
  new SfAutoCompleteRenderer();  
 }
 
 {% endhighlight %}
 
+{% endtabs %}
+
 Create an instance of SfAutoCompleteRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below
+
+{% tabs %}
 
 {% highlight C# %}
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
-
 {
     new SfAutoCompleteRenderer ();
 }	
 
 {% endhighlight %}
 
-## Add and Configure the SfAutoComplete
+{% endtabs %}
+
+## Add SfAutoComplete
 
 The following steps help to add a SfAutoComplete control through code.
 
@@ -141,7 +142,7 @@ The following steps help to add a SfAutoComplete control through code.
 
 {% endtabs %}
 
-## Setting AutoCompleteSource
+## Add Items
 
 You can set the suggestion list to the SfAutoComplete using the `AutoCompleteSource` property. Check autocomplete mode for more details.
 
@@ -167,9 +168,9 @@ You can set the suggestion list to the SfAutoComplete using the `AutoCompleteSou
 
 {% endtabs %}
 
-## Adding Customizations
+## Set Filter Mode
 
-SfAutocomplete can be customized using the `Watermark` and `PopupDelay` properties.
+The `SuggestionMode` property provides various option to filter the data according to the text entered.  
 
 {% tabs %}
 

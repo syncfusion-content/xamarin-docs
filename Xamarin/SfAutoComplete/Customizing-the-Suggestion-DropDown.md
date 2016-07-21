@@ -7,9 +7,34 @@ control : AutoComplete
 documentation : ug
 ---
 
-# Customizing Suggestion Box Behaviour
+# Customizing the Suggestion DropDwon
 
 Suggestion Box behavior can be customized using `MinimumPrefixCharacters` and `PopUpDelay` properties in SfAutoComplete.
+
+## Set Maximum Height to the DropDown
+
+To set the maximum height of the drop-down portion of the SfAutocomplete control `MaximumDropDownHeight` property can be used. 
+
+N> The `MaximumDropDownHeight` value can be any integer value.	
+
+{% tabs %}
+
+{% highlight c# %}
+	
+	countryAutoComplete.MaximumDropDownHeight = 300;
+	 
+{% endhighlight %}
+
+{% highlight xaml %}
+
+  		<autocomplete:SfAutoComplete x:Name="countryAutoComplete"  MaximumDropDownHeight="300" />
+
+{% endhighlight %}
+
+{% endtabs %}
+ 
+![](images/maximumdropdownheight.png)
+
 
 ## Set Minimum Prefix Character
 
@@ -35,7 +60,7 @@ N> The default property value is 1.
 	
 ![](images/minimumprefixcharacter.png)
 
-## Set Popup Opening Delay
+## Set Popup Delay
 
 We can delay the time taken to display the dropdown with suggestion list based on the text entered by using the `PopUpDelay` property in SfAutoComplete .
 

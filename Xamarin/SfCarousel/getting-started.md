@@ -31,64 +31,46 @@ Or after downloading through the Xamarin store web interface, all the required a
 
 You can then add the assembly references to the respective projects as shown below.
 
-{% tabs %}
-
-{% highlight PCL %}
+### PCL 
 
 pcl\Syncfusion.SfCarousel.XForms.dll
 
-{% endhighlight %}
-
-{% highlight Android %}
+### Android 
 
 android\Syncfusion.SfCarousel.Android.dll
 android\Syncfusion.SfCarousel.XForms.Android.dll
 android\Syncfusion.SfCarousel.XForms.dll
 Xamarin.Android.Support.v17.Leanback (from NuGet Packages)
 	
-{% endhighlight %}
-
-{% highlight iOS %}
+### iOS 
 
 iOS-unified\Syncfusion.SfCarousel.iOS.dll
 iOS-unified\Syncfusion.SfCarousel.XForms.iOS.dll
 iOS-unified\Syncfusion.SfCarousel.XForms.dll
 
-{% endhighlight %}
-
-{% highlight Windows Phone %}
-
-**Windows Phone 8**
+### Windows Phone 8
 
 wp8\Syncfusion.SfCarousel.WP8.dll
 wp8\Syncfusion.SfCarousel.XForms.dll
 wp8\Syncfusion.SfCarousel.XForms.WinPhone.dll
 
-**Windows Phone 8.1**
+### Windows Phone 8.1
 
 wp81\Syncfusion.SfCarousel.WP.dll
 wp81\Syncfusion.SfCarousel.XForms.dll
 wp81\Syncfusion.SfCarousel.XForms.WinPhone.dll
 
-{% endhighlight %}
-
-{% highlight WinRT %}
+### WinRT 
 
 winrt\Syncfusion.SfCarousel.WinRT.dll
 winrt\Syncfusion.SfCarousel.XForms.dll
 winrt\Syncfusion.SfCarousel.XForms.WinRT.dll
 
-{% endhighlight %}
-
-{% highlight UWP %}
+### UWP
 
 uwp\Syncfusion.SfCarousel.UWP.dll
 uwp\Syncfusion.SfCarousel.XForms.dll
 uwp\Syncfusion.SfCarousel.XForms.UWP.dll
-
-{% endhighlight %}
-
-{% endtabs %}
 
 Currently an additional step is required for Windows Phone, Windows Phone 8.1 and iOS projects. We need to create an instance of the carousel custom renderer as shown below. 
 
@@ -157,7 +139,11 @@ The SfCarousel control is configured entirely in C# code or by using XAML markup
 
 {% highlight xaml %}
 
-	<carousel:SfCarousel x:Name="carousel"/>
+	<ContentPage.Content>
+
+		<carousel:SfCarousel x:Name="carousel"/>
+	
+	</ContentPage.Content>
 	
 {% endhighlight %}
 
@@ -166,66 +152,84 @@ The SfCarousel control is configured entirely in C# code or by using XAML markup
 
 ## Add Carousel Items
 
-SfCarousel items can be populated with a collection of image data. This collection includes Arrays, Lists and DataTables. For example you can create a SfCarousel model as follows.
+SfCarousel items can be populated with a collection of image data. This collection includes Arrays, Lists and DataTables. An example to populate image collection as carousel items as follows
 
-
-{% highlight C# %}
-
-	 public CarouselModel(string imagestr)
-     {
-         Image = imagestr;
-     }
-     private string _image;
-
-     public string Image
-     {
-         get { return _image; }
-         set { _image = value; }
-     }
-
-{% endhighlight %}
-
-* Create and populate SfCarousel collection as follows.
+* Create a model view which holde image data
 
 {% highlight C# %}
 
-	carousel.DataSource = GetDataSource();
-	List<CarouselModel> GetDataSource()
-    {
-	    List<CarouselModel> list = new List<CarouselModel>();
-	    list.Add(new CarouselModel("image1.png"));
-        list.Add(new CarouselModel("image2.png"));
-	    list.Add(new CarouselModel("image3.png"));
-        list.Add(new CarouselModel("image4.png"));
-        list.Add(new CarouselModel("image5.png"));	
-	    return list;
+	 public class CarouselModel
+	{
+		public CarouselModel(string imagestr)
+		{
+			Image = imagestr;
+		}
+		private string _image;
+
+		public string Image
+		{
+			get { return _image; }
+			set { _image = value; }
+		}
 	}
 
 {% endhighlight %}
 
+* Populate carousel items collection in Viewmodel with the image data. The below code works when the images are placed within the application folder for Android,iOS and UWP with build action AndroidResource,BundledResource and Content respectively.
 
-* `ItemTemplate` property of SfCarousel control is used to customize the contents of SfCarousel items.
+{% highlight C# %}
+
+	public class CarouselViewModel
+	{
+		public CarouselViewModel()
+		{
+			ImageCollection.Add(new CarouselModel("image1.png"));
+			ImageCollection.Add(new CarouselModel("image2.png"));
+			ImageCollection.Add(new CarouselModel("image3.png"));
+			ImageCollection.Add(new CarouselModel("image4.png"));
+			ImageCollection.Add(new CarouselModel("image5.png"));
+		}
+		private List<CarouselModel> imageCollection = new List<CarouselModel>();
+
+		public List<CarouselModel> ImageCollection
+		{
+			get { return imageCollection; }
+			set { imageCollection = value; }
+		}
+	}
+{% endhighlight %}
+
+
+* `ItemTemplate` property of SfCarousel control is used to customize the contents of SfCarousel items and the data source collection has been bound to it.
 
 {% highlight xaml %}
 
-	<local:SamplePage.Resources>
+	<ContentPage.Resources>
     	<ResourceDictionary>
      	 	<DataTemplate x:Key="itemTemplate">
        	 		<Image Source="{Binding Image}" 
 					Aspect="AspectFit"/>
       		</DataTemplate>
     	</ResourceDictionary>
- 	 </local:SamplePage.Resources>
+ 	 </ContentPage.Resources>
 
-	<local:SamplePage.ContentView >
-		<carousel:SfCarousel x:Name="carousel"  ItemTemplate="{StaticResource itemTemplate}"    HeightRequest="400" WidthRequest="800" />
-	</local:SamplePage.ContentView >
+	<ContentPage.Content>
+		<carousel:SfCarousel x:Name="carousel"  ItemTemplate="{StaticResource itemTemplate}" DataSource="{Binding ImageCollection}"   HeightRequest="400" WidthRequest="800" />	
+	</ContentPage.Content>
+
+{% endhighlight %}
+
+* Finally set the `BindingContext` for the items collection in code behind.
+
+{% highlight C# %}
+
+	carousel.BindingContext = new CarouselViewModel();
 
 {% endhighlight %}
 
 ## Set Gap between Items
 
-Set the Offset property to specify the distance between the items in SfCarousel panel.
+Set the Offset property to specify the distance between the items in SfCarousel panel. The items can be populated as described [above](#add-carousel-Items)
 
 {% tabs %}
 
@@ -248,14 +252,13 @@ Set the Offset property to specify the distance between the items in SfCarousel 
 
 ## Tilt Non Selected Items
 
-Set the `RotationAngle` property to decide the angle in which items should be rotated.
+Set the `RotationAngle` property to decide the angle in which items should be rotated. The items can be populated as described [above](#add-carousel-Items)
 
 {% tabs %}
 
 {% highlight C# %}
 
 	SfCarousel carousel = new SfCarousel();
-	carousel.SelectedIndex=2;
 	carousel.Offset=20;
 	carousel.RotationAngle = 45;
 
@@ -263,7 +266,7 @@ Set the `RotationAngle` property to decide the angle in which items should be ro
 
 {% highlight xaml %}
 
-	<carousel:SfCarousel x:Name="carousel" SelectedIndex="2" Offset="20" RotationAngle="45" />
+	<carousel:SfCarousel x:Name="carousel" Offset="20" RotationAngle="45" />
 	
 {% endhighlight %}
 
@@ -271,14 +274,13 @@ Set the `RotationAngle` property to decide the angle in which items should be ro
 
 ## Set Desire Item to be Selected
 
-`SelectedIndex` property sets the Selected Item index value of SfCarousel control to bring the particular item to center of the screen.
-
-N> The `SelectedIndex` property will be 0 by default
+`SelectedIndex` property sets the Selected Item index value of SfCarousel control to bring the particular item to center of the screen. The items can be populated as described [above](#add-carousel-Items)
 
 {% tabs %}
 
 {% highlight C# %}
 
+	SfCarousel carousel = new SfCarousel();
 	carousel.SelectedIndex=2;
 
 {% endhighlight %}
@@ -290,5 +292,7 @@ N> The `SelectedIndex` property will be 0 by default
 {% endhighlight %}
 
 {% endtabs %}
+
+N> The `SelectedIndex` property will be 0 by default
 
 ![](images/gettingstarted.png)

@@ -127,7 +127,9 @@ The following steps help to add a SfBusyIndicator control through code.
 
 {% highlight xaml %}
 
-	<busyindicator:SfBusyIndicator x:Name="busyindicator"/>
+	<ContentPage.Content>
+		<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="Battery" />
+	</ContentPage.Content>
 	
 {% endhighlight %}
 
@@ -156,6 +158,7 @@ To set animation type for SfBusyIndicator, use `AnimationType` property and choo
 
 	SfBusyIndicator busyindicator = new SfBusyIndicator (); 
 	busyindicator.AnimationType = AnimationTypes.Battery;
+	this.Content=busyindicator;
 
 {% endhighlight %}
 

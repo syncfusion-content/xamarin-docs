@@ -21,7 +21,7 @@ N> If the angle value is positive, then the rotation is in the clockwise directi
 
 {% highlight C# %}
 
-	carousel.RotationAngle=40;
+	carousel.RotationAngle=45;
 
 {% endhighlight %}
 
@@ -94,7 +94,7 @@ The `ScaleOffset` property in the SfCarousel control is used to scale all the it
 
 {% highlight xaml %}
 
-	<carousel:SfCarousel x:Name="carousel" ScaleOffset="0.7f" />
+	<carousel:SfCarousel x:Name="carousel" ScaleOffset="0.7" />
 	
 {% endhighlight %}
 

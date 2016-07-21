@@ -14,7 +14,7 @@ The `Title` property can be used to get or set the text that indicates the infor
 
 {% highlight xaml %}
 
-	<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="Ball" Title="Loading..."  Fontface="Bold"/>
+	<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="Ball" Title="Loading..." />
 	
 {% endhighlight %}
 
@@ -23,7 +23,6 @@ The `Title` property can be used to get or set the text that indicates the infor
 	SfBusyIndicator busyindicator = new SfBusyIndicator();
 	busyindicator.AnimationType=AnimationTypes.Ball;
 	busyindicator.Title ="Loading…";
-	busyindicator.Fontface=Typeface.create("Arial",Typeface.NONE);
 
 {% endhighlight %}
 

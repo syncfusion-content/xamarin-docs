@@ -9,9 +9,9 @@ documentation: ug
 
 # Labels Customization
 
-SfRangeSlider provides option to show or hide the label and position customization. 
+SfRangeSlider provides option to show or hide the label and position customization.
 
-## Show or Hide Value Label
+## Show Value Label
 
 This property allows us to display labels for the ticks. When it sets to true, it displays the label for all the ticks based on the `ValuePlacement` property.
 
@@ -33,8 +33,42 @@ N> The default value of the `ShowValueLabel` property is false.
 
 {% endtabs %}
 
+## Set Custom Label
 
-## Displaying Value in Different Positions
+To display custom labels, `ShowCustomLabel` property should be set to true and need to populate the `CustomLabels` property with observable collection of items by specifying the custom labels for corresponding values.
+
+{% tabs %}
+
+{% highlight c# %}
+	
+	 SfRangeSlider rangeSlider; 
+	 ObservableCollection<Items>  customCollection;
+	 public RangeSliderPage ()
+     {
+       	   customCollection = new ObservableCollection<Items> ();
+           customCollection.Add(new Items(){Label = "Min", Value= 0});
+           customCollection.Add(new Items() { Label = "Max", Value = 100 });
+           rangeSlider = new SfRangeSlider ();
+           rangeSlider.HeightRequest = 400;
+           rangeSlider.ShowCustomLabel = true;
+           rangeSlider.CustomLabels = customCollection
+
+	 }
+
+{% endhighlight %}
+
+{% highlight xaml %}
+
+	<range:SfRangeSlider x:Name="rangeslider" HeightRequest="400" ShowCustomLabel="true" CustomLabels="customCollection"/>
+	
+{% endhighlight %}
+
+{% endtabs %}
+
+![](images/customLabel.png)
+
+
+## Value Placement
 
 The `ValuePlacement` property describes the position of the Value respective to ticks. 
 
@@ -79,3 +113,29 @@ Available options for this property are:
 {% endtabs %}
 
 ![](images/Value-BottomRight.png)
+
+## Label Placement
+
+The `LabelPlacement` property describes the position of the labels respective to ticks. 
+
+Available options for this property are:
+
+* BottomRight
+
+* TopLeft
+
+{% tabs %}
+
+{% highlight c# %}
+
+	rangeslider.LabelPlacement=LabelPlacement.TopLeft;
+
+{% endhighlight %}
+
+{% highlight xaml %}
+
+	<range:SfRangeSlider x:Name="rangeslider"LabelPlacement="TopLeft"/>
+	
+{% endhighlight %}
+
+{% endtabs %}

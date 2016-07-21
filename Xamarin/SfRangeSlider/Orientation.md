@@ -7,7 +7,7 @@ control: RangeSlider
 documentation: ug
 ---
 
-# Changing Display Orientation
+# Orientation
 
 SfRangeSlider provides option to display the values and the slider either horizontally or vertically.
 

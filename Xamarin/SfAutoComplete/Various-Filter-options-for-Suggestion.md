@@ -7,13 +7,13 @@ control : AutoComplete
 documentation : ug
 ---
 
-# Various Filtering Mode
+# Various Filter Options for Suggestion
 
 The `SuggestionMode` property provides various option to filter the data according to the text entered.  
 
 N> By default, there are eight types of suggestion modes.
 
-## StartsWith
+## Words that Starts with Input Text
 
 Display the list of suggestions based on starting letter.
 	
@@ -35,7 +35,7 @@ Display the list of suggestions based on starting letter.
 
 ![](images/startswith.png)
 
-## StartsWithCaseSensitive
+### Consider the Character Casing
 
 Display the list of suggestions based on starting letter with case sensitive.
 
@@ -57,7 +57,7 @@ Display the list of suggestions based on starting letter with case sensitive.
 
 ![](images/startswithcasesensitive.png)
 
-## Contains
+## Words that Contains the Input Text
 
 Display the list of suggestions, if autocomplete list contains that words.
 	
@@ -79,7 +79,7 @@ Display the list of suggestions, if autocomplete list contains that words.
 
 ![](images/contains.png)
 
-## ContainsWithCaseSensitive
+### Consider the Character Casing
 
 Display the list of suggestions, if autoComplete list contains that words with case sensitive.
 
@@ -101,7 +101,7 @@ Display the list of suggestions, if autoComplete list contains that words with c
 
 ![](images/containswithcasesensitive.png)
 
-## Equals
+## Words that Equals to the Input Text
 
 Displays the word that matches.
 	
@@ -123,7 +123,7 @@ Displays the word that matches.
 
 ![](images/equals.png)
 
-## EqualsWithCaseSensitive
+### Consider the Character Casing
 
 Displays the word that matches with case sensitive.
 	
@@ -145,7 +145,7 @@ Displays the word that matches with case sensitive.
 
 ![](images/equalswithcasesensitive.png)
 
-## EndsWith
+## Words that Ends with Input Text
 
 Display the list of suggestions based on ending word.
 
@@ -168,7 +168,7 @@ Display the list of suggestions based on ending word.
 
 ![](images/endswith.png)
 
-## EndsWithCaseSensitive
+### Consider the Character Casing
 
 Display the list of suggestions based on the ending word with case sensitive.
 	

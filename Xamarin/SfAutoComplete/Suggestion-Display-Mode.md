@@ -7,7 +7,7 @@ control : AutoComplete
 documentation : ug
 ---
 
-# AutoComplete Mode
+# Suggestion Display Mode
 
 The `AutocompleteMode` property is used to decide the suggestion pattern for displaying the filtered data according to the text entered. 
 
@@ -35,7 +35,7 @@ Appends the first matching string with the entered character.
 
 ![](images/autocompletemode.png)
 
-## Suggest 
+## Suggest in Dropdown
 
 Displays the suggestion in the dropdown.
 
@@ -57,7 +57,7 @@ Displays the suggestion in the dropdown.
 
 ![](images/autocompletesource.png)
 
-## SuggestAppend
+## Both Append and Suggest in DropDown
 
 Displays the suggestion in the dropdown along with appending the first matching string.
 	

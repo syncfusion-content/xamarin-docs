@@ -30,7 +30,7 @@ You can use `groupGap` property to separate the items from every flat level and
 
 {% endhighlight %}
 
-![](TreeMapLevels_images/TreeMapLevels_img1.png)
+![](TreeMapLevels_images/TreeMapFlatLevel.png)
 
 ## Hierarchical Level
 
@@ -69,5 +69,5 @@ You can use `groupGap` property to separate the items from every flat level and
 
 
 
-![](TreeMapLevels_images/TreeMapLevels_img2.png)
+![](TreeMapLevels_images/TreeMapHierarchicalLevel.png)
 

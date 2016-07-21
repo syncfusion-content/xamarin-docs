@@ -154,7 +154,7 @@ The SfCarousel control is configured entirely in C# code or by using XAML markup
 
 SfCarousel items can be populated with a collection of image data. This collection includes Arrays, Lists and DataTables. An example to populate image collection as carousel items as follows
 
-* Create a model view which holde image data
+* Create a model view which holds image data
 
 {% highlight C# %}
 

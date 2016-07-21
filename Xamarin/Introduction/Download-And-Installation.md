@@ -93,45 +93,6 @@ Using the `Manage NuGet Packages` in Visual Studio, NuGet packages can be update
    N> By clicking `Update All` button, all NuGet packages are getting update. When the update is complete, close and re-open all open instances of Visual Studio.
 
 
-## Configuring Syncfusion NuGet packages from command line in Linux/MAC
-
-### NuGet Configuration
-
-1.	Download the latest NuGet executable from [here](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).  
- 
-2.	Open the downloaded executable location in command window and run the following command,
-
-       mono nuget.exe Sources Add –Name [Source name] –Source [source location]
-
-       Ex: mono nuget.exe Add –Name “Syncfusion Source” –Source “http://nuget.syncfusion.com/xamarin"
-                                                                                  
-3.	Once the Source gets added successfully the confirmation message will be shown like below.
-
-      For Linux OS :
-
-      ![](images/NuGetConfig5.jpeg)
-
-      For MAC OS :
-     
-      ![](images/NuGetConfig6.jpeg)
-     
-### NuGet Installation
-
-Once the NuGet source has been added, then install the NuGet package which is available in that source by using following command.
-
-mono nuget.exe install [Package name] 
-
-For Ex: mono nuget.exe install “Syncfusion.Xamarin.Calcuate" 
-     
-For Linux OS :
-
-![](images/NuGetConfig7.jpeg)
-
-For MAC OS :
-
-![](images/NuGetConfig8.jpeg)
-
-
 ## Download directly from Website
 
 You can also download the complete Xamarin.Forms component from [here](http://www.syncfusion.com/products/xamarin). You may be asked to choose the windows installer or zip file to download.

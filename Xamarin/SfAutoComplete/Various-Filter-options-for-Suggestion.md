@@ -9,9 +9,7 @@ documentation : ug
 
 # Various Filter Options for Suggestion
 
-The `SuggestionMode` property provides various option to filter the data according to the text entered.  
-
-N> By default, there are eight types of suggestion modes.
+By default, the items that matches with the starting letter will be displayed as suggestion. This phenomenon can be changed using  `SuggestionMode` property, which provides various option to filter the data according to the text entered. There are eight types of suggestion modes and are described as follows
 
 ## Words that Starts with Input Text
 

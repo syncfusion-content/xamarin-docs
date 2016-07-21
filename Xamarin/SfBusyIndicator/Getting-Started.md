@@ -65,8 +65,6 @@ uwp\Syncfusion.SfBusyIndicator.UWP.dll
 uwp\Syncfusion.SfBusyIndicator.XForms.dll
 uwp\Syncfusion.SfBusyIndicator.XForms.UWP.dll
 
-
-
 Currently an additional step is required for Windows Phone, Windows Phone 8.1 and iOS projects. We need to create an instance of the SfBusyIndicator custom renderer as shown below. 
 
 Create an instance of SfBusyIndicatorRenderer in MainPage constructor of the Windows Phone and Windows Phone 8.1  project as shown 
@@ -127,6 +125,7 @@ The following steps help to add a SfBusyIndicator control through code.
 
 {% highlight xaml %}
 
+   	<xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"/>
 	<ContentPage.Content>
 		<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="Battery" />
 	</ContentPage.Content>
@@ -134,7 +133,8 @@ The following steps help to add a SfBusyIndicator control through code.
 {% endhighlight %}
 
 {% highlight c# %}
-	
+
+    using Syncfusion.SfBusyIndicator.XForms; 	
 	SfBusyIndicator busyindicator = new SfBusyIndicator();
 	this.Content=busyindicator;
 	
@@ -144,21 +144,26 @@ The following steps help to add a SfBusyIndicator control through code.
 
 ## Setting Animation Type
 
-To set animation type for SfBusyIndicator, use `AnimationType` property and choose anyone of the 10 predefined animation types. 
+SfBusyIndicator provides an attached property `AnimationType` that helps to set anyone of the 10 predefined animation types. 
 
 {% tabs %}
 
 {% highlight xaml %}
 
+   	<xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"/>
+	<ContentPage.Content>
+		<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="Battery" />
+	</ContentPage.Content>
 	<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="Battery" />
 	
 {% endhighlight %}
 
 {% highlight c# %}
 
-	SfBusyIndicator busyindicator = new SfBusyIndicator (); 
-	busyindicator.AnimationType = AnimationTypes.Battery;
+    using Syncfusion.SfBusyIndicator.XForms; 	
+	SfBusyIndicator busyindicator = new SfBusyIndicator();
 	this.Content=busyindicator;
+	busyindicator.AnimationType = AnimationTypes.Battery;
 
 {% endhighlight %}
 

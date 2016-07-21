@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Set Header
 
-The `Title` property can be used to get or set the text that indicates the information related to loading. The `FontFace` property can be used to define the font style and size of the title.
+The `Title` property can be used to get or set the text that indicates the information related to loading.
 
 {% tabs %}
 

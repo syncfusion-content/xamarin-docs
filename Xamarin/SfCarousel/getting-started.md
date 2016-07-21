@@ -229,21 +229,20 @@ SfCarousel items can be populated with a collection of image data. This collecti
 
 ## Set Gap between Items
 
-Set the Offset property to specify the distance between the items in SfCarousel panel. The items can be populated as described [above](#add-carousel-Items)
+SfCarousel provides an attached property `Offset` that helps to set the distance between the items in panel. The items can be populated as described [above](#add-carousel-items)
 
 {% tabs %}
 
 {% highlight C# %}
 
-	SfCarousel carousel = new SfCarousel();
-	carousel.SelectedIndex=2;
+	SfCarousel carousel = new SfCarousel();	
 	carousel.Offset=20;
 
 {% endhighlight %}
 
 {% highlight xaml %}
 
-	<carousel:SfCarousel x:Name="carousel" SelectedIndex="2" Offset="20"/>
+	<carousel:SfCarousel x:Name="carousel" Offset="20"/>
 	
 {% endhighlight %}
 
@@ -252,7 +251,7 @@ Set the Offset property to specify the distance between the items in SfCarousel 
 
 ## Tilt Non Selected Items
 
-Set the `RotationAngle` property to decide the angle in which items should be rotated. The items can be populated as described [above](#add-carousel-Items)
+SfCarousel provides an attached property `RotationAngle` that helps to decide the angle in which items should be rotated. The items can be populated as described [above](#add-carousel-items)
 
 {% tabs %}
 
@@ -274,20 +273,22 @@ Set the `RotationAngle` property to decide the angle in which items should be ro
 
 ## Set Desire Item to be Selected
 
-`SelectedIndex` property sets the Selected Item index value of SfCarousel control to bring the particular item to center of the screen. The items can be populated as described [above](#add-carousel-Items)
+SfCarousel provides an attached property `SelectedIndex` that helps to bring the particular item to center of the screen. The items can be populated as described [above](#add-carousel-items)
 
 {% tabs %}
 
 {% highlight C# %}
 
 	SfCarousel carousel = new SfCarousel();
+	carousel.Offset=20;
+	carousel.RotationAngle = 45;
 	carousel.SelectedIndex=2;
 
 {% endhighlight %}
 
 {% highlight xaml %}
 
-	<carousel:SfCarousel x:Name="carousel" SelectedIndex="2" />
+	<carousel:SfCarousel x:Name="carousel" Offset="20" RotationAngle="45" SelectedIndex="2" />
 	
 {% endhighlight %}
 

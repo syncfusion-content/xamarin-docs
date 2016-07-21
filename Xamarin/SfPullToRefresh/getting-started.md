@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains you the steps to configure a SfPulloRefresh control in a real-time scenario and also provides a walk-through on some of the customization features available in PullToRefresh control.
+This section explains you the steps to configure a SfPullToRefresh control in a real-time scenario and also provides a walk-through on some of the customization features available in PullToRefresh control.
 
 ## Reference Essential Studio Components in your solution
 

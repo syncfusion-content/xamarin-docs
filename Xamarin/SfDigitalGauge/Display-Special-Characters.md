@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Setting Displaying Text of DigitalGauge
 description: Learn how to set Display Text in DigitalGauge
@@ -7,9 +7,9 @@ control: DigitalGauge
 documentation: ug
 ---
 
-# Setting Displaying Text
+# Display Special Characters
 
-The Digital Characters in the SfDigitalGauge is viewed in different types of segments. These digital characters are set to the SfDigitalGauge through the `Value` property of type string.
+The special characters in the SfDigitalGauge is viewed in different types of segments. These special characters are set to the SfDigitalGauge through the `Value` property of type string.
 
 {% tabs %}
 

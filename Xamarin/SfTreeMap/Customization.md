@@ -17,13 +17,13 @@ You can customize the colors of the leaf nodes of **TreeMap** using the ColorMap
 
 ColorMapping is categorized into three different types such as,
 
-* uniColorMapping
-* rangeColorMapping
-* desaturationColorMapping
+* UniColorMapping
+* RangeColorMapping
+* DesaturationColorMapping
 
-### Uni Color Mapping
+### UniColorMapping
 
-You can color, all the leaf nodes with the same color by setting the `color` value of the `uniColorMapping` property of the **TreeMap**.
+You can color, all the leaf nodes with the same color by setting the `color` value of the `UniColorMapping` property of the **TreeMap**.
 
 {% highlight c# %}
 

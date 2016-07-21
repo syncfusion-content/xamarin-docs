@@ -67,7 +67,7 @@ N> Images can also be referred in PCL and from website url as [instructed](https
 
 ### Binding the Data with Custom Template
 
-SfCarousel provides support to add a custom view as Carousel Items by designing a view inside its ItemTemplate. This template will be applied for all its items and its data will be binded.
+SfCarousel provides support to add a custom view as carousel items by designing a view inside its ItemTemplate. This template will be applied for all its items and its data will be binded.
 
 
 {% highlight xaml %}

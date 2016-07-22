@@ -178,15 +178,11 @@ Add the dates into `BlackOutDates` property, which needs to be disabled among vi
 
 For instance add all the holiday dates to blackout dates property.
 
-{% highlight xaml %}
-
-	<CalendarSample:SfCalendar VerticalOptions="FillAndExpand"  x:Name="calendar" ViewMode="MonthView" />
-
-{% endhighlight %}
 
 {% highlight c# %}
 
 	SfCalendar  calendar = new SfCalendar ();
+	calendar.SelectionMode=SelectionMode.MultiSelection;
 	List<DateTime> black_dates = new List<DateTime>();
 	for (int i = 0; i < 5; i++)
 	{
@@ -208,13 +204,21 @@ Set `MinDate` and `MaxDate` property to limit visible dates range. Check the [Mi
 
 {% highlight xaml %}
 
-	<CalendarSample:SfCalendar  x:Name="calendar" MinDate="2014,4,1" MaxDate="2018,4,1"/>
+	<CalendarSample:SfCalendar  x:Name="calendar" SelectionMode="MultiSelection" MinDate="2014,4,1" MaxDate="2018,4,1"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 	SfCalendar  calendar = new SfCalendar ();
+	calendar.SelectionMode=SelectionMode.MultiSelection;
+	List<DateTime> black_dates = new List<DateTime>();
+	for (int i = 0; i < 5; i++)
+	{
+		DateTime date = DateTime.Now.Date.AddDays(i+7);
+		black_dates.Add(date);
+    }
+	calendar.BlackoutDates = black_dates;
 	calendar.MinDate = new DateTime(2014,4,1);
 	calendar.MaxDate = new DateTime(2018,4,1);
 	

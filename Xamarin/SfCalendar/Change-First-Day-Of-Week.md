@@ -9,7 +9,7 @@ documentation: ug
 
 # Change First Day Of Week
 
-By default, the starting day will be Sunday. This can be modified using `FirstDayofWeek` property. Changing the first day of week will be applied to both month and year view.
+By default, the starting day will be taken from the device culture. This can be modified using `FirstDayofWeek` property. Changing the first day of week will be applied to both month and year view.
 
 {% tabs %}
 
@@ -21,12 +21,12 @@ By default, the starting day will be Sunday. This can be modified using `FirstDa
 
 {% highlight c# %}
 	
-	sfCalendar.FirstDayofWeek= 2;
+	calendar.FirstDayofWeek= 2;
 	
 {% endhighlight %}
 
 {% endtabs %}
 
-N> The default value of `FirstDayofWeek` is Sunday when set as 0.
+N> The value will be provided as integers starting from 0 as Sunday.
 	
 ![](images/Firstdayofweek.png)

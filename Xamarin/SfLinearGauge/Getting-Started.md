@@ -128,15 +128,16 @@ The SfLinearGauge control configured entirely in C# code or by using XAML markup
 {% tabs %}
 
 {% highlight xaml %}
-
+<ContentPage.Content>
 	<gauge:SfLinearGauge x:Name="linearGauge" />
-	
+</ContentPage.Content>
 {% endhighlight %}
 
 
 {% highlight c# %}
 
    SfLinearGauge linearGauge=new SfLinearGauge();
+   this.Content = linearGauge;
 
 {% endhighlight %}
 
@@ -144,31 +145,40 @@ The SfLinearGauge control configured entirely in C# code or by using XAML markup
 
 ## Add Scales
 
-We will add one or more scale value to SfLinearGauge. Before adding that scales we have to set Maximum and Minimum value to this.
+The scale that point out to the values can be added by instantiating LinearScale class and setting minimum values, maximum values scale intervals and colors etc.
 
 {% tabs %}
 
 {% highlight xaml %}
-
-	<gauge:LinearScale x:Name="scale" MinimumValue="0" MaximumValue="100" Interval="20" ScaleBarLength="100" ScaleBarColor="Color.Red" MinorTicksPerInterval="1" ScaleBarSize="13" ScalePosition="Backward" />
-	
+<ContentPage.Content>
+	<linear:SfLinearGauge>
+				<linear:SfLinearGauge.Scales>
+					<linear:LinearScale x:Name="scale" MinimumValue="0" MaximumValue="100" Interval="20" ScaleBarLength="100" ScaleBarColor="#FAECEC" MinorTicksPerInterval="1" ScaleBarSize="13" ScalePosition="BackWard" >						
+					</linear:LinearScale>
+				</linear:SfLinearGauge.Scales>
+			</linear:SfLinearGauge>	
+</ContentPage.Content>
 {% endhighlight %}
 
 
 {% highlight c# %}
 
     //Adding scale to SfLinearGauge.
-	LinearScale scale=new LinearScale();
-	scale.MinimumValue=0;
-	scale.MaximumValue=100;
-	scale.Interval=20;
-	scale.ScaleBarLength=100;
-	scale.ScaleBarColor= Color.FromRgb (250, 236, 236);
-	scale.LabelColor = Color.FromRgb (84, 84, 84); 
-	scale.MinorTicksPerInterval = 1;
-	scale.ScaleBarSize = 13;
-	scale.ScalePosition = ScalePosition.BackWard;	
-	linearGauge.Scales=scale;
+	SfLinearGauge linearGauge = new SfLinearGauge();
+			LinearScale scale = new LinearScale();
+			scale.MinimumValue = 0;
+			scale.MaximumValue = 100;
+			scale.Interval = 20;
+			scale.ScaleBarLength = 100;
+			scale.ScaleBarColor = Color.FromRgb(250, 236, 236);
+			scale.LabelColor = Color.FromRgb(84, 84, 84);
+			scale.MinorTicksPerInterval = 1;
+			scale.ScaleBarSize = 13;
+			scale.ScalePosition = ScalePosition.BackWard;
+			linearGauge.Scales.Add(scale);
+
+			
+			this.Content = linearGauge;
 	
 {% endhighlight %}
 
@@ -176,22 +186,47 @@ We will add one or more scale value to SfLinearGauge. Before adding that scales 
 
 ## Add a Symbol Pointer
 
-We can point a value on scale in SfLinearGauge by creating instance of `SymbolPointer`.
+An arrow head that points to the value can be added using SymbolPointer class instantiated and assigned to pointers collection.
 
 {% tabs %}
 
 {% highlight xaml %}
-
-	<gauge:SymbolPointer x:Name="symbolPointer" Value="50" Offset="0.0" Thickness="3" />
-	
+<ContentPage.Content>
+		<linear:SfLinearGauge>
+				<linear:SfLinearGauge.Scales>
+					<linear:LinearScale x:Name="scale" MinimumValue="0" MaximumValue="100" Interval="20" ScaleBarLength="100" ScaleBarColor="#FAECEC" MinorTicksPerInterval="1" ScaleBarSize="13" ScalePosition="BackWard" >
+						<linear:LinearScale.Pointers>
+							<linear:SymbolPointer x:Name="symbolPointer" Value="50"  Offset="0.0" Thickness="3" />
+						</linear:LinearScale.Pointers>
+					</linear:LinearScale>
+				</linear:SfLinearGauge.Scales>
+			</linear:SfLinearGauge>
+</ContentPage.Content>
 {% endhighlight %}
 
 {% highlight c# %}
 
-	SymbolPointer symbolPointer = new SymbolPointer ();
-	symbolPointer.Value = 50;
-	symbolPointer.Offset = 0.0;
-	symbolPointer.Thickness = 3; 
+	SfLinearGauge linearGauge = new SfLinearGauge();
+			LinearScale scale = new LinearScale();
+			scale.MinimumValue = 0;
+			scale.MaximumValue = 100;
+			scale.Interval = 20;
+			scale.ScaleBarLength = 100;
+			scale.ScaleBarColor = Color.FromRgb(250, 236, 236);
+			scale.LabelColor = Color.FromRgb(84, 84, 84);
+			scale.MinorTicksPerInterval = 1;
+			scale.ScaleBarSize = 13;
+			scale.ScalePosition = ScalePosition.BackWard;
+			linearGauge.Scales.Add(scale);
+
+			SymbolPointer symbolPointer = new SymbolPointer();
+			symbolPointer.Value = 50;
+			symbolPointer.Offset = 0.0;
+			symbolPointer.Thickness = 3;
+			scale.Pointers.Add(symbolPointer);
+
+		
+			this.Content = linearGauge;
 	
 {% endhighlight %}
 
@@ -199,24 +234,54 @@ We can point a value on scale in SfLinearGauge by creating instance of `SymbolPo
 
 ## Add a Bar Pointer
 
-Before adding that symbol and bar pointer into Scale’s pointer add value of that pointers.
+A flat solid bar that points to the current value can be added by instantiating BarPointer and it can be added to pointers collection.
 
 {% tabs %}
 
 {% highlight xaml %}
-
-	<gauge:BarPointer x:Name="rangePointer" Value="50" Offset="0.0" Thickness="10" />
-	
+<ContentPage.Content>
+		<linear:SfLinearGauge>
+				<linear:SfLinearGauge.Scales>
+					<linear:LinearScale x:Name="scale" MinimumValue="0" MaximumValue="100" Interval="20" ScaleBarLength="100" ScaleBarColor="#FAECEC" MinorTicksPerInterval="1" ScaleBarSize="13" ScalePosition="BackWard" >
+						<linear:LinearScale.Pointers>
+							<linear:SymbolPointer x:Name="symbolPointer" Value="50"  Offset="0.0" Thickness="3" />
+							<linear:BarPointer x:Name="rangePointer" Value="50"  Thickness="10" />
+						</linear:LinearScale.Pointers>
+					</linear:LinearScale>
+				</linear:SfLinearGauge.Scales>
+			</linear:SfLinearGauge>
+</ContentPage.Content>
 {% endhighlight %}
 
 {% highlight C# %}
 
-	BarPointer rangePointer = new BarPointer ();
-	rangePointer.Value = 50;
-	rangePointer.Color = Color.FromRgb (206, 69, 69);
-	rangePointer.Thickness = 10;
-	pointers.Add (symbolPointer);
-	pointers.Add (rangePointer);
+	SfLinearGauge linearGauge = new SfLinearGauge();
+			LinearScale scale = new LinearScale();
+			scale.MinimumValue = 0;
+			scale.MaximumValue = 100;
+			scale.Interval = 20;
+			scale.ScaleBarLength = 100;
+			scale.ScaleBarColor = Color.FromRgb(250, 236, 236);
+			scale.LabelColor = Color.FromRgb(84, 84, 84);
+			scale.MinorTicksPerInterval = 1;
+			scale.ScaleBarSize = 13;
+			scale.ScalePosition = ScalePosition.BackWard;
+			linearGauge.Scales.Add(scale);
+
+			SymbolPointer symbolPointer = new SymbolPointer();
+			symbolPointer.Value = 50;
+			symbolPointer.Offset = 0.0;
+			symbolPointer.Thickness = 3;
+			scale.Pointers.Add(symbolPointer);
+
+			BarPointer rangePointer = new BarPointer();
+			rangePointer.Value = 50;
+			rangePointer.Color = Color.FromRgb(206, 69, 69);
+			rangePointer.Thickness = 10;
+			scale.Pointers.Add(rangePointer);
+
+		
+			this.Content = linearGauge;
 	
 {% endhighlight %}
 
@@ -229,28 +294,59 @@ We can improve the readability of data by including ranges that quickly displays
 {% tabs %}
 
 {% highlight xaml %}
-
-	<gauge:LinearRange x:Name="symbolRange" StartValue="0" EndValue="50" StartWidth="10" EndWidth="10" />
-	
+<ContentPage.Content>
+		<linear:SfLinearGauge>
+				<linear:SfLinearGauge.Scales>
+					<linear:LinearScale x:Name="scale" MinimumValue="0" MaximumValue="100" Interval="20" ScaleBarLength="100" ScaleBarColor="#FAECEC" MinorTicksPerInterval="1" ScaleBarSize="13" ScalePosition="BackWard" >
+						<linear:LinearScale.Ranges>
+							<linear:LinearRange x:Name="symbolRange" StartValue="0" Color="#FAECEC" EndValue="50" StartWidth="10" EndWidth="10" />
+						</linear:LinearScale.Ranges>
+						<linear:LinearScale.Pointers>
+							<linear:SymbolPointer x:Name="symbolPointer" Value="50"  Offset="0.0" Thickness="3" />
+							<linear:BarPointer x:Name="rangePointer" Value="50" Color="#CE4545"  Thickness="10" />
+						</linear:LinearScale.Pointers>
+					</linear:LinearScale>
+				</linear:SfLinearGauge.Scales>
+			</linear:SfLinearGauge>
+</ContentPage.Content>
 {% endhighlight %}
 
 {% highlight c# %}    
 	
-	LinearRange symbolRange = new LinearRange ();
-	symbolRange.StartValue = 0;
-	symbolRange.EndValue = 50;
-	symbolRange.Color = Color.FromRgb (234, 248, 249);
-	symbolRange.StartWidth = 10;
-	symbolRange.EndWidth = 10; 
-	scale.Ranges.Add(symbolRange);
-	
-    LinearRange pointerRange = new LinearRange();
-    pointerRange.StartValue = 50;
-    pointerRange.EndValue = 100;
-    pointerRange.Color = Color.FromRgb(50, 184, 198);
-    pointerRange.StartWidth = 10;
-    pointerRange.EndWidth = 10;  
-    scale.Ranges.Add(pointerRange);
+	SfLinearGauge linearGauge = new SfLinearGauge();
+			LinearScale scale = new LinearScale();
+			scale.MinimumValue = 0;
+			scale.MaximumValue = 100;
+			scale.Interval = 20;
+			scale.ScaleBarLength = 100;
+			scale.ScaleBarColor = Color.FromRgb(250, 236, 236);
+			scale.LabelColor = Color.FromRgb(84, 84, 84);
+			scale.MinorTicksPerInterval = 1;
+			scale.ScaleBarSize = 13;
+			scale.ScalePosition = ScalePosition.BackWard;
+			linearGauge.Scales.Add(scale);
+
+			SymbolPointer symbolPointer = new SymbolPointer();
+			symbolPointer.Value = 50;
+			symbolPointer.Offset = 0.0;
+			symbolPointer.Thickness = 3;
+			scale.Pointers.Add(symbolPointer);
+
+			BarPointer rangePointer = new BarPointer();
+			rangePointer.Value = 50;
+			rangePointer.Color = Color.FromRgb(206, 69, 69);
+			rangePointer.Thickness = 10;
+			scale.Pointers.Add(rangePointer);
+
+			LinearRange symbolRange = new LinearRange();
+			symbolRange.StartValue = 0;
+			symbolRange.EndValue = 50;
+			symbolRange.Color = Color.FromRgb(234, 248, 249);
+			symbolRange.StartWidth = 10;
+			symbolRange.EndWidth = 10;
+			scale.Ranges.Add(symbolRange);
+
+			this.Content = linearGauge;
 	
 {% endhighlight %}
 

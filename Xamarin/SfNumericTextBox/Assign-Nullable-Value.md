@@ -6,7 +6,7 @@ platform: Xamarin
 control: NumericTextBox
 documentation: ug
 ---
-# Adding Null Values
+# Assign Nullable Value
 
 The null values can be set in SfNumericTextBox `Value` property, by setting `AllowNull` property value to true.
 

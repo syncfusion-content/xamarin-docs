@@ -6,7 +6,7 @@ platform: Xamarin
 control: NumericUpDown
 documentation: ug
 ---
-# Configuring Spinning options
+# Auto Reverse
 
 SfNumericUpDown Spin Button values can be customized using below properties.
 

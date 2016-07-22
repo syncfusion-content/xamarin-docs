@@ -31,25 +31,19 @@ Or after downloading through the Xamarin store web interface, all the required a
 
 You can then add the assembly references to the respective projects as shown below
 
-
-
 ### PCL 
 pcl\Syncfusion.SfNumericUpDown.XForms.dll
-
 
 ### Android 
 android\Syncfusion.SfNumericUpDown.Android.dll
 android\Syncfusion.SfNumericUpDown.XForms.Android.dll
 android\Syncfusion.SfNumericUpDown.XForms.dll
 
-
 ### iOS 
 iOS-unified\Syncfusion.SfNumericUpDown.iOS.dll
 iOS-unified\Syncfusion.SfNumericUpDown.XForms.iOS.dll
 iOS-unified\Syncfusion.SfNumericUpDown.XForms.dll
 
-
-### Windows 
 ### Windows Phone
 wp8\Syncfusion.SfInput.WP8.dll
 wp8\Syncfusion.SfShared.WP8.dll
@@ -62,13 +56,11 @@ wp81\Syncfusion.SfShared.WP.dll
 wp81\Syncfusion.SfNumericUpDown.XForms.dll
 wp81\Syncfusion.SfNumericUpDown.XForms.WinPhone.dll
 
-
 ### WinRT 
 winrt\Syncfusion.SfInput.WinRT.dll
 winrt\Syncfusion.SfShared.WinRT.dll
 winrt\Syncfusion.SfNumericUpDown.XForms.dll
 winrt\Syncfusion.SfNumericUpDown.XForms.WinRT.dll
-
 
 ### UWP 
 uwp\Syncfusion.SfInput.UWP.dll
@@ -81,29 +73,35 @@ Currently an additional step is required for Windows Phone, Windows Phone 8.1 an
 
 Create an instance of SfNumericUpDownRenderer in MainPage constructor of the Windows Phone and Windows Phone 8.1 project as shown 
 
+{% tabs %}
+
 {% highlight C# %}
 
 public MainPage()
-
 {
     new SfNumericUpDownRenderer(); 
 }
 
 {% endhighlight %}
 
+{% endtabs %}
+
 Create an instance of SfNumericUpDownRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below
+
+{% tabs %}
 
 {% highlight C# %}
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
-
 {
     new SfNumericUpDownRenderer ();
 }	
 
 {% endhighlight %}
 
-## Add and Configure the SfNumericUpDown
+{% endtabs %}
+
+## Add SfNumericUpDown
 
 The SfNumericUpDown control configured entirely in C# code or by using XAML markup. The following steps explain on how to create a SfNumericUpDown and configure its elements.
 
@@ -145,7 +143,7 @@ The SfNumericUpDown control configured entirely in C# code or by using XAML mark
 
 {% endtabs %}
 
-## Setting Value
+## Set Value
 
 The SfNumericUpDown control display value can be set using `Value` property. 
 

@@ -13,55 +13,65 @@ SfAutoComplete control, supports binding to different data sources such as IList
 
 ## Through Binding
 
-This section explains about setting Item Source and applying custom template to the data.
+This section explains about setting data Source and applying custom template to the data.
 
 ### Create a Model with Data
 
-ItemSource is a collection of SfAutoComplete items which holds the ImageName and TextProperties that to be displayed in suggestions.
+DataSource is a collection of SfAutoComplete items which is capable of holding any objects and displays the items based on the provided `DisplayMemberPath` value.
 
-The SfAutoComplete model looks as follows.
+To populate items using data source, create a model class with the properties that to be bound.
 
 {% highlight C# %}
 
-	public AutoCompleteModel(string label,string imagestr)
-	{        
-         Label = label;
-	     Image = imagestr;
-        
-    	 private string _label;
+	public class AutoCompleteModel
+		{
+			public AutoCompleteModel(string label, string imagestr)
+			{
+				Label = label;
+				Image = imagestr;
 
-        public string Label
-        {
-            get { return _label; }
-            set { _label = value; }
-        }
-		 private string _image;
+			}
+		 	private string _label;
 
-        public string Image
-        {
-            get { return _image; }
-            set { _image = value; }
-        }
-	}
+			public string Label
+			{
+				get { return _label; }
+				set { _label = value; }
+			}
+			private string _image;
+
+			public string Image
+			{
+				get { return _image; }
+				set { _image = value; }
+			}
+		}
 
 {% endhighlight %}
 
-Create and populate autocomplete collection as follows
+Create and populate the collection in a view model class. Here, countrylist and its flag are populated. 
 
 {% highlight C# %}
 
-	autoComplete.DataSource = GetItemSource();
-	List<AutoCompleteModel> GetItemSource()
-    {
-	List<AutoCompleteModel> list = new List<AutoCompleteModel>();
+	public class AutoCompleteViewModel
+		{
+			public AutoCompleteViewModel()
+			{
+				ItemsCollection.Add(new AutoCompleteModel("Austria", "image1.png"));
+				ItemsCollection.Add(new AutoCompleteModel("Canada",  "image2.png"));
+				ItemsCollection.Add(new AutoCompleteModel("Cambodia", "image3.png"));
+				ItemsCollection.Add(new AutoCompleteModel("Denmark", "image4.png"));
+				ItemsCollection.Add(new AutoCompleteModel("Equador", "image5.png"));
+			}
 
-	list.Add(new AutoCompleteModel("Label1","image1.png"));
-    list.Add(new AutoCompleteModel("Label2","image2.png"));
-	list.Add(new AutoCompleteModel("Label3","image3.png"));
-    list.Add(new AutoCompleteModel("Label4","image4.png"));
-    list.Add(new AutoCompleteModel("Label5","image5.png"));
-	return list;
-	}
+			private List<AutoCompleteModel> itemsCollection = new List<AutoCompleteModel>();
+
+			public List<AutoCompleteModel> ItemsCollection
+			{
+				get { return itemsCollection; }
+				set { itemsCollection = value; }
+			}
+		}
 
 {% endhighlight %}
 
@@ -69,40 +79,58 @@ Create and populate autocomplete collection as follows
 
 ### Binding the Data with Custom Template
 
-SfAutoComplete contents can be customized by using `ItemTemplate` property. Through the ItemTemplate user can set up data bindings to the user objects.
 
+* Now the created collection will be bound to the data source property and `DisplayMemberPath` has to be set for displaying selected item.
 
 {% highlight xaml %}
 
-	<ResourceDictionary>
-      <DataTemplate x:Key="itemTemplate">
-        <StackLayout Orientation="Horizontal">
-            <Label Text="{Binding Text}" />
-            <Image Source="{Binding Image}"  Aspect="AspectFit"/>
-         <StackLayout>
-      </DataTemplate>
-    </ResourceDictionary>
 	
-	<autocomplete:SfAutoComplete x:Name="autocomplete" ItemTemplate="{StaticResource itemTemplate}" HeightRequest="600" WidthRequest="400" />
-
+<ContentPage.Content>
+			<autocomplete:SfAutoComplete x:Name="autocomplete" DisplayMemberPath="Label" DataSource="{Binding ItemsCollection}" HeightRequest="60" WidthRequest="400" />
+	</ContentPage.Content>
+	
 {% endhighlight %}
+
+* Setting the binding context for the items collection
+
+{% highlight c# %}
+
+autocomplete.BindingContext = new AutoCompleteViewModel();
+	 
+{% endhighlight %}
+
+* The above code will display the object class as string. In order to display the provided data, a data template has to be created and need to bind the Model properties. This template has to be set to `ItemTemplate` property.
+
+{% highlight xaml %}
+
+	<ContentPage.Resources>
+    	<ResourceDictionary>
+     	 	<DataTemplate x:Key="itemTemplate">
+       	 		<StackLayout Orientation="Horizontal">
+        			<Image Source="{Binding Image}" HeightRequest="50" WidthRequest="50" Aspect="AspectFit"/>
+            		<Label Text="{Binding Label}" TextColor="Black"/>            
+         		</StackLayout>
+      		</DataTemplate>
+    	</ResourceDictionary>
+ 	 </ContentPage.Resources>
+	
+<ContentPage.Content>
+			<autocomplete:SfAutoComplete x:Name="autocomplete" DisplayMemberPath="Label" ItemTemplate="{StaticResource itemTemplate}" DataSource="{Binding ItemsCollection}" HeightRequest="60" WidthRequest="400" />
+	</ContentPage.Content>
+	
+{% endhighlight %}
+
+N> `DisplayMemberPath` property searches for the desired value to be displayed in textbox.
 
 ![](images/autocompleteitemsource.png)
 
 ## Items AutoCompleteSource
 
-The `AutoCompleteSource` property is used to populate the list of data to the suggestions dropdown.
-	
-{% tabs %}	
+The `AutoCompleteSource` property is used to populate the list of string to the suggestions dropdown.
 
-{% highlight xaml %}
-
-  	<autocomplete:SfAutoComplete  x:Name="countryAutoComplete" HeightRequest="40" AutoCompleteSource="{Binding }" />
-
-{% endhighlight %}
 	
 {% highlight c# %}
-	
+	SfAutoComplete countryAutoComplete = new SfAutoComplete ();
 	List<String> countryList = new List<String>(); 
 	countryList.Add ("Iceland");
 	countryList.Add ("India");
@@ -112,6 +140,5 @@ The `AutoCompleteSource` property is used to populate the list of data to the su
 	 
 {% endhighlight %}
 
-{% endtabs %}
 	
 ![](images/autocompletesource.png)

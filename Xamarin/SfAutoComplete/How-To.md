@@ -9,9 +9,9 @@ documentation : ug
 
 ## How to Modify DropDown Box Height?
 
-To set the maximum height of the drop-down portion of the SfAutocomplete control `MaximumDropDownHeight` property can be used. 
+Inorder to vary the number of items in the view or to make the list to fit your layout, the dropdown height of the suggestion box can be varied using the `MaximumDropDownHeight` property.
 
-N> The `MaximumDropDownHeight` value can be any integer value.	
+N> The `MaximumDropDownHeight` value can be any positive integer value.	
 
 {% tabs %}
 
@@ -34,22 +34,7 @@ N> The `MaximumDropDownHeight` value can be any integer value.
 
 ## How to Modify Suggestion Box Item Properties?
 
-Suggestion box item properties can be modified using `DrawCell` event in SfAutoComplete.
-
-{% highlight c# %}
-	
-sfAutoComplete.DrawCell += (object sender, DrawCellEventArgs e) =>
-{
-SfAutoComplete sfAutoComplete = (SfAutoComplete)e.AutoComplete;
-
-sfAutoComplete .DropDownTextSize = 34;
-
-sfAutoComplete .DropDownTextColor = Color.Fuchsia;
-};
-	 
-{% endhighlight %}
-
-Item Height and TextColor can be modified using `DropDownItemHeight` and `DropDownItemTextColor` properties in SfAutoComplete control.
+The suggestion list item's look can be customised with some of the basic options like item's height, text color and text size are available with autocomplete component.
 
 {% tabs %}
 
@@ -60,12 +45,14 @@ SfAutoComplete sfAutoComplete = new SfAutoComplete();
 sfAutoComplete.DropDownItemHeight = 300;
 
 sfAutoComplete.DropDownTextColor = Color.Blue;
+
+sfAutoComplete .DropDownTextSize = 34;
 	 
 {% endhighlight %}
 
 {% highlight xaml %}
 
-  		<autocomplete:SfAutoComplete x:Name="countryAutoComplete"  DropDownItemHeight="300" DropDownTextColor = "Blue"/>
+  		<autocomplete:SfAutoComplete x:Name="countryAutoComplete" DropDownTextSize="34"  DropDownItemHeight="300" DropDownTextColor="Blue"/>
 
 {% endhighlight %}
 

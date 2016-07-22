@@ -103,8 +103,7 @@ Create an instance of SfRatingRenderer in FinishedLaunching overridden method of
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {
     new SfRatingRenderer ();
-}
-	
+}	
 
 {% endhighlight %}
 
@@ -118,15 +117,15 @@ The SfRating control is configured entirely in C# code or by using XAML markup. 
 
 {% tabs %}
 
-{% highlight c# %}
-
-	using Syncfusion.SfRating.XForms;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<xmlns:rating="clr-namespace:Syncfusion.SfRating.XForms;assembly=Syncfusion.SfRating.XForms"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+	using Syncfusion.SfRating.XForms;
 
 {% endhighlight %}
 
@@ -136,16 +135,16 @@ The SfRating control is configured entirely in C# code or by using XAML markup. 
 
 {% tabs %}
 
-{% highlight C# %}
-
-	SfRating rating = new SfRating(); 
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<rating:SfRating x:Name="rating" />
 	
+{% endhighlight %}
+
+{% highlight C# %}
+
+	SfRating rating = new SfRating(); 
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -158,16 +157,16 @@ N> The default property value is 5.
 
 {% tabs %}
 
-{% highlight C# %}
-
-	rating.ItemCount=4;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<rating:SfRating x:Name="rating" ItemCount="4" />
 	
+{% endhighlight %}
+
+{% highlight C# %}
+
+	rating.ItemCount=4;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -180,16 +179,16 @@ N> By default, property value is 0.
 
 {% tabs %}
 
-{% highlight C# %}
-
-    rating.Value=3;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<rating:SfRating x:Name="rating" Value="3" />
 	
+{% endhighlight %}
+
+{% highlight C# %}
+
+    rating.Value=3;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -200,17 +199,17 @@ N> By default, property value is 0.
 
 {% tabs %}
 
-{% highlight C# %}
-
-    rating.Precision = Precision.Standard;
-
-{% endhighlight%}
-
 {% highlight xaml %}
 
 	<rating:SfRating x:Name="rating" Precision="Standard" />
 	
 {% endhighlight %}
+
+{% highlight C# %}
+
+    rating.Precision = Precision.Standard;
+
+{% endhighlight%}
 
 {% endtabs %}
 

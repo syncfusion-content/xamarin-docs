@@ -19,16 +19,16 @@ N> If the angle value is positive, then the rotation is in the clockwise directi
 
 {% tabs %}
 
-{% highlight C# %}
-
-	carousel.RotationAngle=45;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<carousel:SfCarousel x:Name="carousel" RotationAngle="45" />
 	
+{% endhighlight %}
+
+{% highlight C# %}
+
+	carousel.RotationAngle=45;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -44,16 +44,16 @@ N> The default value is 20.
 
 {% tabs %}
 
-{% highlight C# %}
-
-	carousel.Offset=30;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<carousel:SfCarousel x:Name="carousel" Offset="30" />
 	
+{% endhighlight %}
+
+{% highlight C# %}
+
+	carousel.Offset=30;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -66,16 +66,16 @@ Distance between the selected item and other items can be customized by using `S
 
 {% tabs %}
 
-{% highlight C# %}
-
-	carousel.SelectedItemOffset=5;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<carousel:SfCarousel x:Name="carousel" SelectedItemOffset="5" />
 	
+{% endhighlight %}
+
+{% highlight C# %}
+
+	carousel.SelectedItemOffset=5;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -86,16 +86,16 @@ The `ScaleOffset` property in the SfCarousel control is used to scale all the it
 
 {% tabs %}
 
-{% highlight C# %}
-	
-	carousel.ScaleOffset=0.7f;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<carousel:SfCarousel x:Name="carousel" ScaleOffset="0.7" />
 	
+{% endhighlight %}
+
+{% highlight C# %}
+	
+	carousel.ScaleOffset=0.7f;
+
 {% endhighlight %}
 
 {% endtabs %}

@@ -20,18 +20,18 @@ N> The default Transition is SlideOnTop.
 
 Slides the DrawerContent on top of the main content.
 
-{% tabs %}	
-	
-{% highlight c# %} 
-
-	navigationDrawer.Transition=Transition.SlideOnTop;
-
-{% endhighlight %}
+{% tabs %}
 
 {% highlight xaml %}
 
 	<navigation:SfNavigationDrawer x:Name="navigationDrawer" Transition="SlideOnTop">
 	
+{% endhighlight %}	
+	
+{% highlight c# %} 
+
+	navigationDrawer.Transition=Transition.SlideOnTop;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -43,17 +43,17 @@ Slides the DrawerContent on top of the main content.
 This transition slides the Drawer and main content simultaneously.
 
 {% tabs %}	
-	
-{% highlight c# %} 
-
-	navigationDrawer.Transition=Transition.Push;
-
-{% endhighlight %}
 
 {% highlight xaml %}
 
 	<navigation:SfNavigationDrawer x:Name="navigationDrawer" Transition="Push">
 	
+{% endhighlight %}
+	
+{% highlight c# %} 
+
+	navigationDrawer.Transition=Transition.Push;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -64,18 +64,18 @@ This transition slides the Drawer and main content simultaneously.
 
 This transition keeps the Drawer content in fixed position and the main content will be slide to reveal the drawer content.
 
-{% tabs %}	
-	
-{% highlight c# %} 
-
-	navigationDrawer.Transition=Transition.Reveal;
-
-{% endhighlight %}
+{% tabs %}
 
 {% highlight xaml %}
 
 	<navigation:SfNavigationDrawer x:Name="navigationDrawer" Transition="Reveal">
 	
+{% endhighlight %}	
+	
+{% highlight c# %} 
+
+	navigationDrawer.Transition=Transition.Reveal;
+
 {% endhighlight %}
 
 {% endtabs %}

@@ -9,22 +9,24 @@ documentation: ug
 
 # Selection Value Configuration
 
+This section explains about various customization options available for selection value in SfRangeSlider.
+
 ## Set Minimum Value
 
 Gets or sets the minimum possible value of the range. The thumb could not move beyond that value.
 
 {% tabs %}
 
-{% highlight c# %}
-
-	rangeslider.Minimum=0;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<range:SfRangeSlider x:Name="rangeslider" Minimum="0"/>
 	
+{% endhighlight %}
+
+{% highlight c# %}
+
+	rangeslider.Minimum=0;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -35,16 +37,16 @@ Gets or sets the maximum possible value of the range. The thumb could not move a
 
 {% tabs %}
 
-{% highlight c# %}
-
-	rangeslider.Maximum=24;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<range:SfRangeSlider x:Name="rangeslider" Maximum="24"/>
 	
+{% endhighlight %}
+
+{% highlight c# %}
+
+	rangeslider.Maximum=24;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -55,16 +57,16 @@ The `TickFrequency` property is used to decide the number of ticks to be display
 
 {% tabs %}
 
-{% highlight c# %}
-
-	rangeslider.TickFrequency=4;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<range:SfRangeSlider x:Name="rangeslider" TickFrequency="4" />
 	
+{% endhighlight %}
+
+{% highlight c# %}
+
+	rangeslider.TickFrequency=4;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -77,16 +79,16 @@ The `StepFrequency` property is used to specify the interval between snap points
 
 {% tabs %}
 
-{% highlight c# %}
-
-	rangeslider.StepFrequency=4;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<range:SfRangeSlider x:Name="rangeslider" StepFrequency="4"/>
 	
+{% endhighlight %}
+
+{% highlight c# %}
+
+	rangeslider.StepFrequency=4;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -107,16 +109,16 @@ N> The default option is Ticks.
 
 {% tabs %}
 
-{% highlight c# %}
-
-	rangeslider.SnapsTo=SnapsTo.Ticks;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<range:SfRangeSlider x:Name="rangeslider" SnapsTo="Ticks"/>
 	
+{% endhighlight %}
+
+{% highlight c# %}
+
+	rangeslider.SnapsTo=SnapsTo.Ticks;
+
 {% endhighlight %}
 
 {% endtabs %}

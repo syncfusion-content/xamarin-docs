@@ -13,11 +13,15 @@ SfCarousel control, supports binding to different data sources such as IList Dat
 
 ## Through Binding
 
+This section explains about setting Item Source and applying custom template to the data.
+
 ### Create a Model with Data
 
 SfCarousel items can be populated with a collection of image data. For example, a user may wants to create a SfCarousel control which will display a list of images.
 
 The SfCarousel model looks as follows.
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -34,11 +38,15 @@ The SfCarousel model looks as follows.
 			get { return _image; }
 			set { _image = value; }
 		}
-	}
+	 }
 
 {% endhighlight %}
 
+{% endtabs %}
+
 Populate carousel items collection in Viewmodel with the image data. The below code works when the images are placed within the application folder for Android,iOS and UWP with build action AndroidResource,BundledResource and Content respectively.
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -62,6 +70,8 @@ Populate carousel items collection in Viewmodel with the image data. The below c
 	}
 {% endhighlight %}
 
+{% endtabs %}
+
 N> Images can also be referred in PCL and from website url as [instructed](https://developer.xamarin.com/guides/xamarin-forms/working-with/images/)
 
 
@@ -69,6 +79,7 @@ N> Images can also be referred in PCL and from website url as [instructed](https
 
 SfCarousel provides support to add a custom view as carousel items by designing a view inside its ItemTemplate. This template will be applied for all its items and its data will be binded.
 
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -86,7 +97,11 @@ SfCarousel provides support to add a custom view as carousel items by designing 
 	</ContentPage.Content>
 {% endhighlight %}
 
+{% endtabs %}
+
 * Now set the `BindingContext` for the items collection in code behind.
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -94,15 +109,17 @@ SfCarousel provides support to add a custom view as carousel items by designing 
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 ## Through Carousel Item
 
 The ItemTemplate provides common template with different data, whereas if different views for every items is needed, it can also be provided using `ItemContent` property in SfCarouselItem class.
 
+{% tabs %}
+
 {% highlight C# %}
 
-	SfCarousel carousel = new SfCarousel();
+	        SfCarousel carousel = new SfCarousel();
 
 			SfCarouselItem carouselItem = new SfCarouselItem();
 			Label lbl = new Label();
@@ -127,6 +144,8 @@ The ItemTemplate provides common template with different data, whereas if differ
 	
 	  
 {% endhighlight %}
+
+{% endtabs %}
 
 Similar way every item can be created and customized in case of different carousel item view is needed.
 

@@ -112,15 +112,15 @@ The SfCarousel control is configured entirely in C# code or by using XAML markup
 
 {% tabs %}
 
-{% highlight C# %}
-
-	using Syncfusion.SfCarousel.XForms;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<xmlns:carousel="clr-namespace:Syncfusion.SfCarousel.XForms;assembly=Syncfusion.SfCarousel.XForms"/>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+	using Syncfusion.SfCarousel.XForms;
 
 {% endhighlight %}
 
@@ -129,13 +129,6 @@ The SfCarousel control is configured entirely in C# code or by using XAML markup
 * Now add the SfCarousel control with a required optimal name by using the included namespace.
 
 {% tabs %}
-
-{% highlight C# %}
-
-	SfCarousel carousel=new SfCarousel();
-	this.Content=carousel;
-
-{% endhighlight %}
 
 {% highlight xaml %}
 
@@ -147,6 +140,13 @@ The SfCarousel control is configured entirely in C# code or by using XAML markup
 	
 {% endhighlight %}
 
+{% highlight C# %}
+
+	SfCarousel carousel=new SfCarousel();
+	this.Content=carousel;
+
+{% endhighlight %}
+
 {% endtabs %}
 
 
@@ -156,9 +156,11 @@ SfCarousel items can be populated with a collection of image data. This collecti
 
 * Create a model view which holds image data
 
+{% tabs %}
+
 {% highlight C# %}
 
-	 public class CarouselModel
+	public class CarouselModel
 	{
 		public CarouselModel(string imagestr)
 		{
@@ -175,7 +177,11 @@ SfCarousel items can be populated with a collection of image data. This collecti
 
 {% endhighlight %}
 
+{% endtabs %}
+
 * Populate carousel items collection in Viewmodel with the image data. The below code works when the images are placed within the application folder for Android,iOS and UWP with build action AndroidResource,BundledResource and Content respectively.
+
+{% endtabs %}
 
 {% highlight C# %}
 
@@ -199,8 +205,12 @@ SfCarousel items can be populated with a collection of image data. This collecti
 	}
 {% endhighlight %}
 
+{% endtabs %}
+
 
 * `ItemTemplate` property of SfCarousel control is used to customize the contents of SfCarousel items and the data source collection has been bound to it.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -219,7 +229,11 @@ SfCarousel items can be populated with a collection of image data. This collecti
 
 {% endhighlight %}
 
+{% endtabs %}
+
 * Finally set the `BindingContext` for the items collection in code behind.
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -227,23 +241,25 @@ SfCarousel items can be populated with a collection of image data. This collecti
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ## Set Gap between Items
 
 SfCarousel provides an attached property `Offset` that helps to set the distance between the items in panel. The items can be populated as described [above](#add-carousel-items)
 
 {% tabs %}
 
+{% highlight xaml %}
+
+	<carousel:SfCarousel x:Name="carousel" Offset="20"/>
+	
+{% endhighlight %}
+
 {% highlight C# %}
 
 	SfCarousel carousel = new SfCarousel();	
 	carousel.Offset=20;
 
-{% endhighlight %}
-
-{% highlight xaml %}
-
-	<carousel:SfCarousel x:Name="carousel" Offset="20"/>
-	
 {% endhighlight %}
 
 {% endtabs %}
@@ -255,18 +271,18 @@ SfCarousel provides an attached property `RotationAngle` that helps to decide th
 
 {% tabs %}
 
+{% highlight xaml %}
+
+	<carousel:SfCarousel x:Name="carousel" Offset="20" RotationAngle="45" />
+	
+{% endhighlight %}
+
 {% highlight C# %}
 
 	SfCarousel carousel = new SfCarousel();
 	carousel.Offset=20;
 	carousel.RotationAngle = 45;
 
-{% endhighlight %}
-
-{% highlight xaml %}
-
-	<carousel:SfCarousel x:Name="carousel" Offset="20" RotationAngle="45" />
-	
 {% endhighlight %}
 
 {% endtabs %}
@@ -277,6 +293,12 @@ SfCarousel provides an attached property `SelectedIndex` that helps to bring the
 
 {% tabs %}
 
+{% highlight xaml %}
+
+	<carousel:SfCarousel x:Name="carousel" Offset="20" RotationAngle="45" SelectedIndex="2" />
+	
+{% endhighlight %}
+
 {% highlight C# %}
 
 	SfCarousel carousel = new SfCarousel();
@@ -284,12 +306,6 @@ SfCarousel provides an attached property `SelectedIndex` that helps to bring the
 	carousel.RotationAngle = 45;
 	carousel.SelectedIndex=2;
 
-{% endhighlight %}
-
-{% highlight xaml %}
-
-	<carousel:SfCarousel x:Name="carousel" Offset="20" RotationAngle="45" SelectedIndex="2" />
-	
 {% endhighlight %}
 
 {% endtabs %}

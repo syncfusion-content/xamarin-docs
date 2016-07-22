@@ -50,13 +50,11 @@ iOS-unified\Syncfusion.SfNavigationDrawer.XForms.iOS.dll
 
 ### Windows Phone
 
-**Windows Phone 8**
-
 wp8\Syncfusion.SfNavigationDrawer.WP8.dll
 wp8\Syncfusion.SfNavigationDrawer.XForms.dll
 wp8\Syncfusion.SfNavigationDrawer.XForms.WinPhone.dll
 
-**Windows Phone 8.1**
+### Windows Phone 8.1
 
 wp81\Syncfusion.SfNavigationDrawer.WP.dll
 wp81\Syncfusion.SfNavigationDrawer.XForms.dll
@@ -114,16 +112,16 @@ The SfNavigationDrawer control configured entirely in C# code or by using XAML m
 
 {% tabs %}
 
-{% highlight c# %}
-
-	using Syncfusion.SfNavigationDrawer.XForms;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<xmlns:navigation="clr-namespace:Syncfusion.SfNavigationDrawer.XForms;assembly=Syncfusion.SfNavigationDrawer.XForms"/>
 	
+{% endhighlight %}
+
+{% highlight c# %}
+
+	using Syncfusion.SfNavigationDrawer.XForms;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -132,17 +130,17 @@ The SfNavigationDrawer control configured entirely in C# code or by using XAML m
 
 {% tabs %}
 
+{% highlight xaml %}
+
+	<navigation:SfNavigationDrawer x:Name="navigationDrawer"/>
+	
+{% endhighlight %}
+
 {% highlight c# %}
 
 	SfNavigationDrawer navigationDrawer=new SfNavigationDrawer();
 	this.Content=navigationDrawer;
 
-{% endhighlight %}
-
-{% highlight xaml %}
-
-	<navigation:SfNavigationDrawer x:Name="navigationDrawer"/>
-	
 {% endhighlight %}
 
 {% endtabs %}
@@ -152,13 +150,20 @@ The SfNavigationDrawer control configured entirely in C# code or by using XAML m
 The sliding main content of the SfNavigationDrawer which is a part of DrawerPanel can be set using `DrawerContentView` property with desired views.
 
 The control has been initialized in Xaml
+
+{% tabs %}
+
 {% highlight xaml %}
 
     <navigation:SfNavigationDrawer x:Name="navigationDrawer"  />
 	
 {% endhighlight %}
 
+{% endtabs %}
+
 and the content has set using `DrawerContentView` property.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -186,12 +191,26 @@ and the content has set using `DrawerContentView` property.
   
 {% endhighlight %}
 
+{% endtabs %}
+
 
 ## Add Drawer Header Content
 
 Instead of providing everyting in the drawer content view, `DrawerHeaderView` property can be used to display certain information like user id or names in the header part.
 
 {% tabs %}
+
+{% highlight xaml %}
+    
+    <navigation:SfNavigationDrawer x:Name="navigationDrawer">
+        <navigation:SfNavigationDrawer.DrawerHeaderView>
+             <StackLayout x:Name="headerLayout" Orientation="Vertical" HeightRequest="200" WidthRequest="275">
+                    <Image x:Name="image" HeightRequest="100" WidthRequest="70" Source="user.png" />
+                    <Label x:Name="header" Text="James Pollock" FontSize="20" HeightRequest="30" WidthRequest="140" /> 
+             </StackLayout>
+        </navigation:SfNavigationDrawer.DrawerHeaderView>
+    </navigation:SfNavigationDrawer>
+{% endhighlight %}
 
 {% highlight c# %}
 
@@ -225,18 +244,6 @@ Instead of providing everyting in the drawer content view, `DrawerHeaderView` pr
   
 {% endhighlight %}
 
-{% highlight xaml %}
-    
-    <navigation:SfNavigationDrawer x:Name="navigationDrawer">
-        <navigation:SfNavigationDrawer.DrawerHeaderView>
-             <StackLayout x:Name="headerLayout" Orientation="Vertical" HeightRequest="200" WidthRequest="275">
-                    <Image x:Name="image" HeightRequest="100" WidthRequest="70" Source="user.png" />
-                    <Label x:Name="header" Text="James Pollock" FontSize="20" HeightRequest="30" WidthRequest="140" /> 
-             </StackLayout>
-        </navigation:SfNavigationDrawer.DrawerHeaderView>
-    </navigation:SfNavigationDrawer>
-{% endhighlight %}
-
 {% endtabs %}
 
 ## Adjust Drawer Width
@@ -245,16 +252,16 @@ Drawer width and height can be set through `DrawerHeight` and `DrawerWidth` prop
 
 {% tabs %}
 
-{% highlight c# %}        
-        
-        navigationDrawer.DrawerWidth = 300;
-  
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<navigation:SfNavigationDrawer x:Name="navigationDrawer"  DrawerWidth="300" />
 	
+{% endhighlight %}
+
+{% highlight c# %}        
+        
+        navigationDrawer.DrawerWidth = 300;
+  
 {% endhighlight %}
 
 {% endtabs %}
@@ -264,6 +271,26 @@ Drawer width and height can be set through `DrawerHeight` and `DrawerWidth` prop
 The main view of the SfNavigationDrawer can be set using `ContentView` property with desired views.
 
 {% tabs %}
+
+{% highlight xaml %}
+
+ 	<navigation:SfNavigationDrawer x:Name="navigationDrawer">
+        <navigation:SfNavigationDrawer.ContentView>
+             <StackLayout x:Name="ContentFrame" Orientation="Vertical">
+				<StackLayout x:Name="headerFrame" Orientation="Horizontal">
+					 <Button x:Name="imageButton" FontSize="20" HeightRequest="50" Grid.Column="0" BackgroundColor="#1aa1d6" HorizontalOptions="Start" WidthRequest="50" />
+					 <Label x:Name="homeLabel" FontSize="15" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"     HeightRequest="50"  TextColor="White" />
+			    </StackLayout>   
+				<Label x:Name="mainLabel" FontSize="14" TextColor="Black">
+					<Label.Text>
+						Lorem ipsum dolor sit amet, lacus amet amet ultricies. Quisque mi venenatis morbi libero, orci dis, mi ut et class porta, massa ligula magna enim, aliquam orci vestibulum tempus. Turpis facilisis vitae consequat, cum a a, turpis dui consequat massa in dolor per, felis non amet. Auctor eleifend in omnis elit vestibulum, donec non elementum tellus est mauris, id aliquam, at lacus, arcu pretium proin lacus dolor et. Eu tortor, vel ultrices amet dignissim mauris vehicula. Lorem tortor neque, purus taciti quis id. Elementum integer orci accumsan minim phasellus vel.
+					</Label.Text>
+				</Label>   
+             </StackLayout>
+        </navigation:SfNavigationDrawer.ContentView>
+ 	</navigation:SfNavigationDrawer> 
+ 
+{% endhighlight %}
 
 {% highlight c# %}
 	
@@ -297,27 +324,6 @@ The main view of the SfNavigationDrawer can be set using `ContentView` property 
   
 {% endhighlight %}
 
-	  
-{% highlight xaml %}
-
- 	<navigation:SfNavigationDrawer x:Name="navigationDrawer">
-        <navigation:SfNavigationDrawer.ContentView>
-             <StackLayout x:Name="ContentFrame" Orientation="Vertical">
-				<StackLayout x:Name="headerFrame" Orientation="Horizontal">
-					 <Button x:Name="imageButton" FontSize="20" HeightRequest="50" Grid.Column="0" BackgroundColor="#1aa1d6" HorizontalOptions="Start" WidthRequest="50" />
-					 <Label x:Name="homeLabel" FontSize="15" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"     HeightRequest="50"  TextColor="White" />
-			    </StackLayout>   
-				<Label x:Name="mainLabel" FontSize="14" TextColor="Black">
-					<Label.Text>
-						Lorem ipsum dolor sit amet, lacus amet amet ultricies. Quisque mi venenatis morbi libero, orci dis, mi ut et class porta, massa ligula magna enim, aliquam orci vestibulum tempus. Turpis facilisis vitae consequat, cum a a, turpis dui consequat massa in dolor per, felis non amet. Auctor eleifend in omnis elit vestibulum, donec non elementum tellus est mauris, id aliquam, at lacus, arcu pretium proin lacus dolor et. Eu tortor, vel ultrices amet dignissim mauris vehicula. Lorem tortor neque, purus taciti quis id. Elementum integer orci accumsan minim phasellus vel.
-					</Label.Text>
-				</Label>   
-             </StackLayout>
-        </navigation:SfNavigationDrawer.ContentView>
- 	</navigation:SfNavigationDrawer> 
- 
-{% endhighlight %}
-
 {% endtabs %}
 
 ## Set drawing edge for drawer panel
@@ -336,17 +342,17 @@ N> The default option is Left.
 
 
 {% tabs %}	
-	
-{% highlight c# %}
-
-	navigationDrawer.Position=Position.Left;
-
-{% endhighlight %}
 
 {% highlight xaml %}
 
 	<navigation:SfNavigationDrawer x:Name="navigationDrawer" Position="Left">
   	
+{% endhighlight %}
+	
+{% highlight c# %}
+
+	navigationDrawer.Position=Position.Left;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -363,17 +369,17 @@ The `Transition` property specifies the opening animations for the DrawerView pa
 N> The default Transition is SlideOnTop.
 
 {% tabs %}	
-	
-{% highlight c# %} 
-
-	navigationDrawer.Transition=Transition.SlideOnTop;
-
-{% endhighlight %}
 
 {% highlight xaml %}
 
 	<navigation:SfNavigationDrawer x:Name="navigationDrawer" Transition="SlideOnTop">
 	
+{% endhighlight %}
+	
+{% highlight c# %} 
+
+	navigationDrawer.Transition=Transition.SlideOnTop;
+
 {% endhighlight %}
 
 {% endtabs %}

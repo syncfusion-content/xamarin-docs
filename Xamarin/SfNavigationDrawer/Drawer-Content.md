@@ -23,13 +23,20 @@ The header and footer contents are optional and Drawer content is the mandatory 
 The sliding main content of the NavigationDrawer can be set with any view using `DrawerContentView`. This part mostly holds the list of menus that to be selected to display the Main content.
 
 The control has been initialized in Xaml
+
+{% tabs %}
+
 {% highlight xaml %}
 
     <navigation:SfNavigationDrawer x:Name="navigationDrawer"  />
 	
 {% endhighlight %}
 
+{% endtabs %}
+
 and the content has set using `DrawerContentView` property.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -57,14 +64,27 @@ and the content has set using `DrawerContentView` property.
   
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](images/DrawerContentView.png)
 
 ## Drawer Header Content
 
-
 Instead of providing everyting in the drawer content view, `DrawerHeaderView` property can be used to display certain information like user id or names in the header part.
 
 {% tabs %}
+
+{% highlight xaml %}
+    
+    <navigation:SfNavigationDrawer x:Name="navigationDrawer">
+        <navigation:SfNavigationDrawer.DrawerHeaderView>
+             <StackLayout x:Name="headerLayout" Orientation="Vertical" HeightRequest="200" WidthRequest="275">
+                    <Image x:Name="image" HeightRequest="100" WidthRequest="70" Source="user.png" />
+                    <Label x:Name="header" Text="James Pollock" FontSize="20" HeightRequest="30" WidthRequest="140" /> 
+             </StackLayout>
+        </navigation:SfNavigationDrawer.DrawerHeaderView>
+    </navigation:SfNavigationDrawer>
+{% endhighlight %}
 
 {% highlight c# %}
 
@@ -98,18 +118,6 @@ Instead of providing everyting in the drawer content view, `DrawerHeaderView` pr
   
 {% endhighlight %}
 
-{% highlight xaml %}
-    
-    <navigation:SfNavigationDrawer x:Name="navigationDrawer">
-        <navigation:SfNavigationDrawer.DrawerHeaderView>
-             <StackLayout x:Name="headerLayout" Orientation="Vertical" HeightRequest="200" WidthRequest="275">
-                    <Image x:Name="image" HeightRequest="100" WidthRequest="70" Source="user.png" />
-                    <Label x:Name="header" Text="James Pollock" FontSize="20" HeightRequest="30" WidthRequest="140" /> 
-             </StackLayout>
-        </navigation:SfNavigationDrawer.DrawerHeaderView>
-    </navigation:SfNavigationDrawer>
-{% endhighlight %}
-
 {% endtabs %}
 
 ![](images/DrawerHeaderView.png)
@@ -120,14 +128,6 @@ Similar to drawer header view, the `DrawerFooterView` property can be used to se
 
 {% tabs %}
 
-{% highlight c# %}
-
-	StackLayout footerLayout = new StackLayout ();
-	footerLayout.BackgroundColor = Color.Navy;		
-    navigationDrawer.DrawerFooterView=footerLayout;
-  
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<navigation:SfNavigationDrawer x:Name="navigationDrawer">
@@ -136,6 +136,14 @@ Similar to drawer header view, the `DrawerFooterView` property can be used to se
         </navigation:SfNavigationDrawer.DrawerFooterView>
  	</navigation:SfNavigationDrawer>
 	
+{% endhighlight %}
+
+{% highlight c# %}
+
+	StackLayout footerLayout = new StackLayout ();
+	footerLayout.BackgroundColor = Color.Navy;		
+    navigationDrawer.DrawerFooterView=footerLayout;
+  
 {% endhighlight %}
 
 {% endtabs %}
@@ -150,17 +158,17 @@ Gets or sets the height and width of the DrawerView panel in the NavigationDrawe
 
 {% tabs %}
 
+{% highlight xaml %} 
+
+	<navigation:SfNavigationDrawer x:Name="navigationDrawer" DrawerHeight="300" DrawerWidth="300" />
+	
+{% endhighlight %}
+
 {% highlight c# %}
         
         navigationDrawer.DrawerHeight = 300;
         navigationDrawer.DrawerWidth = 300;
   
-{% endhighlight %}
-
-{% highlight xaml %} 
-
-	<navigation:SfNavigationDrawer x:Name="navigationDrawer" DrawerHeight="300" DrawerWidth="300" />
-	
 {% endhighlight %}
 
 {% endtabs %}

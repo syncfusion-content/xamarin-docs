@@ -25,17 +25,17 @@ N> The default option is Left.
 Sets the SfNavigationDrawer sliding position to the left.
 
 {% tabs %}	
-	
-{% highlight c# %}
-
-	navigationDrawer.Position=Position.Left;
-
-{% endhighlight %}
 
 {% highlight xaml %}
 
 	<navigation:SfNavigationDrawer x:Name="navigationDrawer" Position="Left">
   	
+{% endhighlight %}
+	
+{% highlight c# %}
+
+	navigationDrawer.Position=Position.Left;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -47,17 +47,17 @@ Sets the SfNavigationDrawer sliding position to the left.
 Sets the SfNavigationDrawer sliding position to the right.
 
 {% tabs %}	
-	
-{% highlight c# %}
-
-	navigationDrawer.Position=Position.Right;
-
-{% endhighlight %}
 
 {% highlight xaml %}
 
 	<navigation:SfNavigationDrawer x:Name="navigationDrawer" Position="Right">
 	
+{% endhighlight %}
+	
+{% highlight c# %}
+
+	navigationDrawer.Position=Position.Right;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -68,18 +68,18 @@ Sets the SfNavigationDrawer sliding position to the right.
 
 Sets the SfNavigationDrawer sliding position to the top.
 
-{% tabs %}	
-	
-{% highlight c# %}
-	
-   	navigationDrawer.Position=Position.Top;
-
-{% endhighlight %}
+{% tabs %}
 
 {% highlight xaml %}
 
 	<navigation:SfNavigationDrawer x:Name="navigationDrawer" Position="Top">
 	
+{% endhighlight %}	
+	
+{% highlight c# %}
+	
+   	navigationDrawer.Position=Position.Top;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -91,17 +91,17 @@ Sets the SfNavigationDrawer sliding position to the top.
 Sets the SfNavigationDrawer sliding position to the bottom.
 
 {% tabs %}	
-	
-{% highlight c# %}
-
-	navigationDrawer.Position=Position.Bottom;
-
-{% endhighlight %}
 
 {% highlight xaml %}
 
 	<navigation:SfNavigationDrawer x:Name="navigationDrawer" Position="Bottom">
 	
+{% endhighlight %}
+	
+{% highlight c# %}
+
+	navigationDrawer.Position=Position.Bottom;
+
 {% endhighlight %}
 
 {% endtabs %}

@@ -23,16 +23,16 @@ The `RatedFill` property fills the rated area with the specified solid color in 
 
 {% tabs %}
 
-{% highlight C# %}
-
-	ratingSettings.RatedFill = Color.FromHex("#fbd10a");
-           
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<rating:SfRating x:Name="ratingSettings" RatedFill="Red" />
 	
+{% endhighlight %}
+
+{% highlight C# %}
+
+	ratingSettings.RatedFill = Color.FromHex("#fbd10a");
+           
 {% endhighlight %}
 
 {% endtabs %}
@@ -45,16 +45,16 @@ The `UnRatedFill` property fills the unrated area with the specified solid color
 
 {% tabs %}
 
-{% highlight C# %}
-
-	ratingSettings.UnRatedFill=Color.GRAY;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<rating:SfRating x:Name="ratingSettings" UnRatedFill="Gray" />
 	
+{% endhighlight %}
+
+{% highlight C# %}
+
+	ratingSettings.UnRatedFill=Color.GRAY;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -71,16 +71,16 @@ The RatedStroke property sets the stroke for the rated area with the specified s
 
 {% tabs %}
 
-{% highlight C# %}
-
-	ratingSettings.RatedStroke=Color.GREEN;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<rating:SfRating x:Name="ratingSettings" RatedStroke="Green" />
 	
+{% endhighlight %}
+
+{% highlight C# %}
+
+	ratingSettings.RatedStroke=Color.GREEN;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -93,16 +93,16 @@ The `UnRatedStroke` property sets the stroke for the unrated area with the speci
 
 {% tabs %}
 
-{% highlight C# %}
-
-	ratingSettings.UnRatedStroke=Color.BLACK;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<rating:SfRating x:Name="ratingSettings" UnRatedStroke="Black" />
 	
+{% endhighlight %}
+
+{% highlight C# %}
+
+	ratingSettings.UnRatedStroke=Color.BLACK;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -119,16 +119,16 @@ The `RatedStrokeThickness` property sets the stroke thickness for the rated area
 
 {% tabs %}
 
-{% highlight C# %}
-
-	ratingSettings.RatedStrokeThickness=3;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<rating:SfRating x:Name="ratingSettings" RatedStrokeThickness="3" />
 	
+{% endhighlight %}
+
+{% highlight C# %}
+
+	ratingSettings.RatedStrokeThickness=3;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -142,16 +142,16 @@ The `UnRatedStrokeThickness` property sets the stroke thickness for the unrated 
 
 {% tabs %}
 
-{% highlight C# %}
-
-	ratingSettings.UnRatedStrokeThickness=3;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<rating:SfRating x:Name="ratingSettings" UnRatedStrokeThickness="3" />
 	
+{% endhighlight %}
+
+{% highlight C# %}
+
+	ratingSettings.UnRatedStrokeThickness=3;
+
 {% endhighlight %}
 
 {% endtabs %}

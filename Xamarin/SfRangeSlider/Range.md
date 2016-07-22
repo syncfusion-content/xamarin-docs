@@ -19,16 +19,16 @@ N> When this property is set to false, single thumb is displayed without any ran
 
 {% tabs %}
 
-{% highlight c# %}
-
-	rangeslider.ShowRange= true;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<range:SfRangeSlider x:Name="rangeslider" ShowRange="true"/>
 	
+{% endhighlight %}
+
+{% highlight c# %}
+
+	rangeslider.ShowRange= true;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -44,16 +44,16 @@ Gets and sets the start value of the range.
 
 {% tabs %}
 
-{% highlight c# %}
-
-	rangeslider.RangeStart=0;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<range:SfRangeSlider x:Name="rangeslider"  RangeStart="4" />
 	
+{% endhighlight %}
+
+{% highlight c# %}
+
+	rangeslider.RangeStart=0;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -64,16 +64,16 @@ Gets and sets the end value of the range.
 
 {% tabs %}
 
-{% highlight c# %}
-
-	rangeslider.RangeEnd=10;
-
-{% endhighlight  %}
-
 {% highlight xaml %}
 
 	<range:SfRangeSlider x:Name="rangeslider" RangeEnd="20" />
 	
 {% endhighlight %}
+
+{% highlight c# %}
+
+	rangeslider.RangeEnd=10;
+
+{% endhighlight  %}
 
 {% endtabs %}

@@ -13,16 +13,16 @@ By default, the starting day will be Sunday. This can be modified using `FirstDa
 
 {% tabs %}
 
-{% highlight c# %}
-	
-	sfCalendar.FirstDayofWeek= 2;
-	
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<CalendarSample:SfCalendar  x:Name="calendar" FirstDayofWeek="2"/>
 
+{% endhighlight %}
+
+{% highlight c# %}
+	
+	sfCalendar.FirstDayofWeek= 2;
+	
 {% endhighlight %}
 
 {% endtabs %}

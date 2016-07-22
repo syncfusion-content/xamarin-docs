@@ -108,16 +108,16 @@ The following steps help to add a SfRangeSlider control through code.
 
 {% tabs %}
 
-{% highlight c# %}
-
-	using Syncfusion.SfRangeSlider.XForms;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<xmlns:range="clr-namespace:Syncfusion.SfRangeSlider.XForms;assembly=Syncfusion.SfRangeSlider.XForms"/>
 	
+{% endhighlight %}
+
+{% highlight c# %}
+
+	using Syncfusion.SfRangeSlider.XForms;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -126,16 +126,16 @@ The following steps help to add a SfRangeSlider control through code.
 
 {% tabs %}
 
+{% highlight xaml %}
+
+	<range:SfRangeSlider x:Name="rangeSlider"/>
+	
+{% endhighlight %}
+
 {% highlight c# %}
 
 	SfRangeSlider rangeSlider=new SfRangeSlider();
 	this.Content = rangeSlider;
-	
-{% endhighlight %}
-
-{% highlight xaml %}
-
-	<range:SfRangeSlider x:Name="rangeSlider"/>
 	
 {% endhighlight %}
 
@@ -149,18 +149,18 @@ N> The `ShowRange` property is used to switch between a single thumb and double 
 
 {% tabs %}
 
+{% highlight xaml %}
+
+	<range:SfRangeSlider x:Name="rangeslider" RangeEnd="20" RangeStart="4"  ShowRange="true"/>
+	
+{% endhighlight %}
+
 {% highlight c# %}
 
 	rangeSlider.RangeEnd=20; 
 	rangeSlider.RangeStart=4;
 	rangeSlider.ShowRange=true; 
 
-{% endhighlight %}
-
-{% highlight xaml %}
-
-	<range:SfRangeSlider x:Name="rangeslider" RangeEnd="20" RangeStart="4"  ShowRange="true"/>
-	
 {% endhighlight %}
 
 {% endtabs %}
@@ -171,17 +171,17 @@ Set the minimum and maximum value for the slider by using the `Minimum` and `Max
 
 {% tabs %}
 
+{% highlight xaml %}
+
+	<range:SfRangeSlider x:Name="rangeslider" Minimum="0" Maximum="24"/>
+	
+{% endhighlight %}
+
 {% highlight c# %}
 
 	rangeSlider.Minimum=0; 
 	rangeSlider.Maximum=24; 
 
-{% endhighlight %}
-
-{% highlight xaml %}
-
-	<range:SfRangeSlider x:Name="rangeslider" Minimum="0" Maximum="24"/>
-	
 {% endhighlight %}
 
 {% endtabs %}
@@ -192,17 +192,17 @@ The movement of the thumb can be varied in different ways. This is achieved by s
 
 {% tabs %}
 
+{% highlight xaml %}
+
+	<range:SfRangeSlider x:Name="rangeslider" SnapsTo="Ticks" StepFrequency="6"/>
+	
+{% endhighlight %}
+
 {% highlight c# %}
 
 	rangeSlider.SnapsTo=SnapsTo.Ticks; 
 	rangeSlider.StepFrequency=6;
 
-{% endhighlight %}
-
-{% highlight xaml %}
-
-	<range:SfRangeSlider x:Name="rangeslider" SnapsTo="Ticks" StepFrequency="6"/>
-	
 {% endhighlight %}
 
 {% endtabs %}  

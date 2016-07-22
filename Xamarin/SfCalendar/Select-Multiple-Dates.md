@@ -19,16 +19,16 @@ The selected dates can be retrieved through `OnCalendarTapped` event which is ra
 
 {% tabs %}
 
-{% highlight c# %}
-	
-	sfCalendar.SelectionMode=SelectionMode.MultiSelection;
-	
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<CalendarSample:SfCalendar  x:Name="calendar" SelectionMode="MultiSelection"/>
 
+{% endhighlight %}
+
+{% highlight c# %}
+	
+	sfCalendar.SelectionMode=SelectionMode.MultiSelection;
+	
 {% endhighlight %}
 
 {% endtabs %}

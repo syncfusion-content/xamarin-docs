@@ -51,14 +51,12 @@ iOS-unified\Syncfusion.SfCalendar.XForms.dll
 
 ### Windows Phone
 
-**Windows Phone 8**
-
 wp8\Syncfusion.SfInput.WP8.dll
 wp8\Syncfusion.SfShared.WP8.dll
 wp8\Syncfusion.SfCalendar.XForms.dll
 wp8\Syncfusion.SfCalendar.XForms.WinPhone.dll
 
-**Windows Phone 8.1**
+### Windows Phone 8.1
 
 wp81\Syncfusion.SfInput.WP.dll
 wp81\Syncfusion.SfShared.WP.dll
@@ -112,7 +110,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% endtabs %}
 
-## Add and Configure the SfCalendar
+## Add SfCalendar
 
 The following steps help to add a SfCalendar control through code.
 
@@ -120,16 +118,16 @@ The following steps help to add a SfCalendar control through code.
 
 {% tabs %}
 
-{% highlight c# %}
-
-	using Syncfusion.SfCalendar.XForms;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<xmlns:CalendarSample="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.SfCalendar.XForms"/>
 	
+{% endhighlight %}
+
+{% highlight c# %}
+
+	using Syncfusion.SfCalendar.XForms;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -138,16 +136,16 @@ The following steps help to add a SfCalendar control through code.
 
 {% tabs %}
 
+{% highlight xaml %}
+
+	<CalendarSample:SfCalendar x:Name="calendar"/>
+	
+{% endhighlight %}
+
 {% highlight c# %}
 
 	SfCalendar calendar=new SfCalendar();
 	this.Content=calendar;
-	
-{% endhighlight %}
-
-{% highlight xaml %}
-
-	<CalendarSample:SfCalendar x:Name="calendar"/>
 	
 {% endhighlight %}
 
@@ -159,6 +157,12 @@ To enable multiple selection, change the selection type using `SelectionMode` pr
 
 {% tabs %}
 
+{% highlight xaml %}
+
+	<CalendarSample:SfCalendar x:Name="calendar" SelectionMode="MultiSelection" />
+
+{% endhighlight %}
+
 {% highlight c# %}
 
 	SfCalendar calendar = new SfCalendar ();
@@ -166,15 +170,9 @@ To enable multiple selection, change the selection type using `SelectionMode` pr
 
 {% endhighlight %}
 
-{% highlight xaml %}
-
-	<CalendarSample:SfCalendar x:Name="calendar" SelectionMode="MultiSelection" />
-
-{% endhighlight %}
-
 {% endtabs %}
 
-## Setting blackout dates
+## Setting Blackout Dates
 
 Add the dates into `BlackOutDates` property, which needs to be disabled among visible dates. Check the [BlackOutDates](http://help.syncfusion.com/android/sfcalendar/blackoutdates) section for more details.
 
@@ -208,19 +206,18 @@ Set `MinDate` and `MaxDate` property to limit visible dates range. Check the [Mi
 
 {% tabs %}
 
+{% highlight xaml %}
+
+	<CalendarSample:SfCalendar  x:Name="calendar" MinDate="2014,4,1" MaxDate="2018,4,1"/>
+
+{% endhighlight %}
+
 {% highlight c# %}
 
 	SfCalendar  calendar = new SfCalendar ();
 	calendar.MinDate = new DateTime(2014,4,1);
 	calendar.MaxDate = new DateTime(2018,4,1);
-
-
-{% endhighlight %}
-
-{% highlight xaml %}
-
-	<CalendarSample:SfCalendar  x:Name="calendar" MinDate="2014,4,1" MaxDate="2018,4,1"/>
-
+	
 {% endhighlight %}
 
 {% endtabs %}

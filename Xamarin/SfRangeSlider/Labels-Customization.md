@@ -19,16 +19,16 @@ N> The default value of the `ShowValueLabel` property is false.
 
 {% tabs %}
 
-{% highlight c# %}
-
-	rangeslider.ShowValueLabel= true;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<range:SfRangeSlider x:Name="rangeslider" ShowValueLabel="true"/>
 	
+{% endhighlight %}
+
+{% highlight c# %}
+
+	rangeslider.ShowValueLabel= true;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -38,6 +38,12 @@ N> The default value of the `ShowValueLabel` property is false.
 To display custom labels, `ShowCustomLabel` property should be set to true and need to populate the `CustomLabels` property with observable collection of items by specifying the custom labels for corresponding values.
 
 {% tabs %}
+
+{% highlight xaml %}
+
+	<range:SfRangeSlider x:Name="rangeslider" HeightRequest="400" ShowCustomLabel="true" CustomLabels="customCollection"/>
+	
+{% endhighlight %}
 
 {% highlight c# %}
 	
@@ -57,12 +63,6 @@ To display custom labels, `ShowCustomLabel` property should be set to true and n
 
 {% endhighlight %}
 
-{% highlight xaml %}
-
-	<range:SfRangeSlider x:Name="rangeslider" HeightRequest="400" ShowCustomLabel="true" CustomLabels="customCollection"/>
-	
-{% endhighlight %}
-
 {% endtabs %}
 
 ![](images/customLabel.png)
@@ -80,16 +80,16 @@ Available options for this property are:
 
 {% tabs %}
 
-{% highlight c# %}
-
-	rangeslider.ValuePlacement=ValuePlacement.TopLeft;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<range:SfRangeSlider x:Name="rangeslider" ValuePlacement="TopLeft"/>
 	
+{% endhighlight %}
+
+{% highlight c# %}
+
+	rangeslider.ValuePlacement=ValuePlacement.TopLeft;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -98,16 +98,16 @@ Available options for this property are:
 
 {% tabs %}
 
-{% highlight c# %}
-
-	rangeslider.ValuePlacement=ValuePlacement.BottomRight;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<range:SfRangeSlider x:Name="rangeslider" ValuePlacement="BottomRight"/>
 	
+{% endhighlight %}
+
+{% highlight c# %}
+
+	rangeslider.ValuePlacement=ValuePlacement.BottomRight;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -126,16 +126,16 @@ Available options for this property are:
 
 {% tabs %}
 
-{% highlight c# %}
-
-	rangeslider.LabelPlacement=LabelPlacement.TopLeft;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<range:SfRangeSlider x:Name="rangeslider"LabelPlacement="TopLeft"/>
 	
+{% endhighlight %}
+
+{% highlight c# %}
+
+	rangeslider.LabelPlacement=LabelPlacement.TopLeft;
+
 {% endhighlight %}
 
 {% endtabs %}

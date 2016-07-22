@@ -13,16 +13,16 @@ The Carousel items can be populated in the view in a stacked linear layout by se
 
 {% tabs %}
 
-{% highlight C# %}
-
-	carousel.ViewMode = ViewMode.Linear;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<carousel:SfCarousel x:Name="carousel"  ViewMode="Linear" />
 	
+{% endhighlight %}
+
+{% highlight C# %}
+
+	carousel.ViewMode = ViewMode.Linear;
+
 {% endhighlight %}
 
 {% endtabs %}

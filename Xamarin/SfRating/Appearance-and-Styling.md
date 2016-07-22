@@ -21,16 +21,16 @@ N> By default, property value is 50.
 
 {% tabs %}
 
-{% highlight C# %}
-
-	rating.ItemSize=20;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<rating:SfRating x:Name="rating" ItemSize="20" />
 	
+{% endhighlight %}
+
+{% highlight C# %}
+
+	rating.ItemSize=20;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -45,16 +45,16 @@ N> The default property value is 5.
 
 {% tabs %}
 
-{% highlight C# %}
-
-	rating.ItemCount=4;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<rating:SfRating x:Name="rating" ItemCount="4" />
 	
+{% endhighlight %}
+
+{% highlight C# %}
+
+	rating.ItemCount=4;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -69,16 +69,16 @@ N> By default, property value is 5.
 
 {% tabs %}
 
-{% highlight C# %}
-
-	rating.ItemSpacing=20;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<rating:SfRating x:Name="rating" ItemSpacing="20" />
 	
+{% endhighlight %}
+
+{% highlight C# %}
+
+	rating.ItemSpacing=20;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -92,6 +92,12 @@ This section explains various Rating settings available in SfRating control.
 
 {% tabs %}
 
+{% highlight xaml %}
+
+	<rating:SfRating x:Name="ratingSettings" RatedFill="Red" UnRatedFill="Blue" RatedStrokeThickness="0" UnRatedStrokeThickness="0" />
+	
+{% endhighlight %}
+
 {% highlight C# %}
 
 	SfRatingSettings  ratingSettings = new SfRatingSettings();
@@ -102,29 +108,23 @@ This section explains various Rating settings available in SfRating control.
 
 {% endhighlight %}
 
-{% highlight xaml %}
-
-	<rating:SfRating x:Name="ratingSettings" RatedFill="Red" UnRatedFill="Blue" RatedStrokeThickness="0" UnRatedStrokeThickness="0" />
-	
-{% endhighlight %}
-
 {% endtabs %}
 
 After adding Rating settings , add the Rating Settings instance to Rating instance.
 
 {% tabs %}
 
-{% highlight C# %}
-
-	rating.RatingSettings=ratingSettings;
-
-{% endhighlight%}
-
 {% highlight xaml %}
 
 	<rating:SfRating x:Name="rating" RatingSettings="ratingSettings" />
 	
 {% endhighlight %}
+
+{% highlight C# %}
+
+	rating.RatingSettings=ratingSettings;
+
+{% endhighlight%}
 
 {% endtabs %}
  

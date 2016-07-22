@@ -17,16 +17,16 @@ N> The default option is Horizontal.
 
 {% tabs %}
 
-{% highlight c# %}
-
-	rangeslider.Orientation=Orientation.Horizontal;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<range:SfRangeSlider x:Name="rangeslider" Orientation="Horizontal"/>
 	
+{% endhighlight %}
+
+{% highlight c# %}
+
+	rangeslider.Orientation=Orientation.Horizontal;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -37,16 +37,16 @@ N> The default option is Horizontal.
 
 {% tabs %}
 
-{% highlight c# %}
-
-	rangeslider.Orientation=Orientation.Vertical;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<range:SfRangeSlider x:Name="rangeslider" Orientation="Vertical"/>
 	
+{% endhighlight %}
+
+{% highlight c# %}
+
+	rangeslider.Orientation=Orientation.Vertical;
+
 {% endhighlight %}
 
 {% endtabs %}

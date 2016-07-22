@@ -6,9 +6,11 @@ platform: Xamarin
 control: NavigationDrawer
 documentation: ug
 ---
-## How To Open Drawer panel Programmatically?
+## How To Open Drawer Panel Programmatically?
 
 In order to open NavigationDrawer's drawer panel, it is needed to use the `IToggleDrawer` interface through DependencyService call, which in turn displays the available method `ToggleDrawer()`.
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -16,10 +18,14 @@ In order to open NavigationDrawer's drawer panel, it is needed to use the `ITogg
 
 {% endhighlight %}
 
+{% endtabs %}
+
 
 ## How To Open the Drawer Content in Full Screen?
 
 It can be done using `DrawerWidth` and `DrawerHeight` properties in SfNavigationDrawer control. Width and Height can be set according to the screen bounds to acquire the sliding panel to desired size.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -28,9 +34,13 @@ It can be done using `DrawerWidth` and `DrawerHeight` properties in SfNavigation
 
 {% endhighlight %}
 
-## How To Perform an action while Drawer is Opening Or Closing?
+{% endtabs %}
+
+## How To Perform an Action while Drawer is Opening Or Closing?
 
 The `Toggled` event can be hooked to get opening and closing events. This has parameters of NavigationDrawer and a boolean property to display whether it is open or closed.
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -39,4 +49,6 @@ navigationDrawer.Toggled += (object sender,Syncfusion.SfNavigationDrawer.XForms.
 		bool drawerState = e.isOpen;
 };
 {% endhighlight %}
+
+{% endtabs %}
 

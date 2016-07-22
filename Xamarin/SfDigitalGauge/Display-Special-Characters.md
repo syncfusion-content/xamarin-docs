@@ -9,13 +9,13 @@ documentation: ug
 
 # Display Special Characters
 
-The special characters in the SfDigitalGauge is viewed in different types of segments. These special characters are set to the SfDigitalGauge through the `Value` property of type string.
+The special characters in the SfDigitalGauge can be viewed in any segment, here the dot matrix displays more accurately. These special characters are set to the SfDigitalGauge through the `Value` property of type string.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-	<gauge:SfDigitalGauge x:Name="digitalgauge" CharacterType="EightCrossEightDotMatrix" Value="{Binding}" />
+	<gauge:SfDigitalGauge x:Name="digitalgauge" CharacterType="EightCrossEightDotMatrix" Value=”@ # $ &” />
 
 {% endhighlight %}
 

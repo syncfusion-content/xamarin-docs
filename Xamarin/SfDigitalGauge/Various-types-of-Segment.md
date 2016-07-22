@@ -19,9 +19,11 @@ The Digital Characters can be drawn in 4 different segments as follows.
 
 4. EightCrossEightDotMatrix
 
-N> By default, SegmentSeven is the default CharacterType in the SfDigitalGauge.
+N>  SegmentSeven is the default CharacterType in the SfDigitalGauge.
 
 ## Seven Segment
+
+The seven segment type is capable of displaying numbers and few upper case letters efficiently.
 
 {% tabs %}
 
@@ -40,6 +42,8 @@ N> By default, SegmentSeven is the default CharacterType in the SfDigitalGauge.
 {% endtabs %}
 
 ## Fourteen Segment
+
+The fourteen segment type is capable of displaying numbers, alphabets efficiently.
 
 {% tabs %}
 
@@ -60,6 +64,8 @@ N> By default, SegmentSeven is the default CharacterType in the SfDigitalGauge.
 
  
 ## Sixteen Segment
+
+The sixteen segment type is capable of displaying numbers, alphabets with clear display.
  
 {% tabs %} 
 
@@ -78,6 +84,8 @@ N> By default, SegmentSeven is the default CharacterType in the SfDigitalGauge.
 {% endtabs %}
 
 ## EightCrossEightDotMatrix Segment
+
+The dot matrix segment type is capable of displaying numbers, alphabets and any special character efficiently with clear display.
 
 {% tabs %}
 

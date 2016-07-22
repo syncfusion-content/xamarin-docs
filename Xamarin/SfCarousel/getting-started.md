@@ -181,7 +181,7 @@ SfCarousel items can be populated with a collection of image data. This collecti
 
 * Populate carousel items collection in Viewmodel with the image data. The below code works when the images are placed within the application folder for Android,iOS and UWP with build action AndroidResource,BundledResource and Content respectively.
 
-{% endtabs %}
+{% tabs %}
 
 {% highlight C# %}
 

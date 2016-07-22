@@ -13,25 +13,25 @@ LinearScale is used to set the Labels, Values and Ticks to specify the basic loo
 {% tabs %}
 
 {% highlight xaml %}
-
-	<gauge:LinearScale x:Name="scale" MinimumValue="0" MaximumValue="100" Interval="20" ScaleBarLength="100" ScaleBarColor="Color.Red" MinorTicksPerInterval="1" ScaleBarSize="13" ScalePosition="Backward" />
+<linear:SfLinearGauge.Scales>
+		<linear:LinearScale x:Name="scale" MinimumValue="0" MaximumValue="100" Interval="20" ScaleBarLength="100" ScaleBarColor="#FAECEC" MinorTicksPerInterval="1" ScaleBarSize="13" ScalePosition="BackWard" />
+</linear:SfLinearGauge.Scales>		
 	
 {% endhighlight %}
 
 {% highlight C# %}
 
-	ObservableCollection<LinearScale> scales = new ObservableCollection<LinearScale> ();
-	LinearScale scale=new LinearScale();
-	scale.MinimumValue=0;
-	scale.MaximumValue=100;
-	scale.Interval=20;
-	scale.ScaleBarLength=100;
-	scale.ScaleBarColor= Color.FromRgb (250, 236, 236);
-	scale.LabelColor = Color.FromRgb (84, 84, 84); 
-	scale.MinorTicksPerInterval = 1;
-	scale.ScaleBarSize = 13;
-	scale.ScalePosition = ScalePosition.BackWard;	
-	sfLinearGauge.Scales=scale;
+	LinearScale scale = new LinearScale();
+			scale.MinimumValue = 0;
+			scale.MaximumValue = 100;
+			scale.Interval = 20;
+			scale.ScaleBarLength = 100;
+			scale.ScaleBarColor = Color.FromRgb(250, 236, 236);
+			scale.LabelColor = Color.FromRgb(84, 84, 84);
+			scale.MinorTicksPerInterval = 1;
+			scale.ScaleBarSize = 13;
+			scale.ScalePosition = ScalePosition.BackWard;
+			linearGauge.Scales.Add(scale);
 	
 {% endhighlight %}
 

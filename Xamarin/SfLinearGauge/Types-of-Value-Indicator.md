@@ -19,17 +19,33 @@ This section explains about different types of Pointers available in SfLinearGau
 
 {% highlight xaml %}
 
-	<gauge:BarPointer x:Name="rangePointer" Value="50" Offset="0.0" Thickness="10" />
+					<linear:LinearScale x:Name="scale" MinimumValue="0" MaximumValue="100" Interval="20" ScaleBarLength="100" ScaleBarColor="#FAECEC" MinorTicksPerInterval="1" ScaleBarSize="13" ScalePosition="BackWard" >
+						<linear:LinearScale.Pointers>
+							<linear:BarPointer x:Name="rangePointer" Value="50"  Thickness="10" />
+						</linear:LinearScale.Pointers>
+					</linear:LinearScale>
 	
 {% endhighlight %}
 
 {% highlight c# %}
-
-	BarPointer rangePointer = new BarPointer ();
-	rangePointer.Value = 60;
-    rangePointer.Color = Color.FromRgb (255, 12, 12);
-    rangePointer.Thickness = 10;
-    pointers.Add (rangePointer);
+LinearScale scale = new LinearScale();
+			scale.MinimumValue = 0;
+			scale.MaximumValue = 100;
+			scale.Interval = 20;
+			scale.ScaleBarLength = 100;
+			scale.ScaleBarColor = Color.FromRgb(250, 236, 236);
+			scale.LabelColor = Color.FromRgb(84, 84, 84);
+			scale.MinorTicksPerInterval = 1;
+			scale.ScaleBarSize = 13;
+			scale.ScalePosition = ScalePosition.BackWard;
+			
+			
+			BarPointer rangePointer = new BarPointer();
+			rangePointer.Value = 50;
+			rangePointer.Thickness = 10;
+			scale.Pointers.Add(rangePointer);
+			
+			linearGauge.Scales.Add(scale);
 
 {% endhighlight %}
 
@@ -46,20 +62,34 @@ In SymbolPointer, the value is pointed by a symbol on the scale. The Symbol Poin
 
 {% highlight xaml %}
 
-	<gauge:SymbolPointer x:Name="symbolPointer" Value="50" Offset="0.0" Thickness="3" />
+	<linear:LinearScale x:Name="scale" MinimumValue="0" MaximumValue="100" Interval="20" ScaleBarLength="100" ScaleBarColor="#FAECEC" MinorTicksPerInterval="1" ScaleBarSize="13" ScalePosition="BackWard" >
+						<linear:LinearScale.Pointers>
+							<linear:SymbolPointer x:Name="symbolPointer" Value="60"  Offset="0.0" Thickness="3" />
+						</linear:LinearScale.Pointers>
+					</linear:LinearScale>
 	
 {% endhighlight %}
 
 {% highlight c# %}
 
-	List<LinearPointer> pointers = new List<LinearPointer> ();
-     //SymbolPointer
-    SymbolPointer symbolPointer = new SymbolPointer ();
-    symbolPointer.Value = 60;
-    symbolPointer.Offset = 0.0;
-    symbolPointer.Thickness = 3;
-    symbolPointer.Color = Color.FromRgb (42, 150, 255);
-    pointers.Add (symbolPointer);
+LinearScale scale = new LinearScale();
+			scale.MinimumValue = 0;
+			scale.MaximumValue = 100;
+			scale.Interval = 20;
+			scale.ScaleBarLength = 100;
+			scale.ScaleBarColor = Color.FromRgb(250, 236, 236);
+			scale.LabelColor = Color.FromRgb(84, 84, 84);
+			scale.MinorTicksPerInterval = 1;
+			scale.ScaleBarSize = 13;
+			scale.ScalePosition = ScalePosition.BackWard;
+
+			SymbolPointer symbolPointer = new SymbolPointer();
+			symbolPointer.Value = 50;
+			symbolPointer.Offset = 0.0;
+			symbolPointer.Thickness = 3;
+			scale.Pointers.Add(symbolPointer);
+			
+			linearGauge.Scales.Add(scale);
 	
 {% endhighlight  %}
 

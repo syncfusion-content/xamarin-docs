@@ -38,7 +38,7 @@ N> When this property is set to false, single thumb is displayed without any ran
 
 This section explains about setting Range start and end value.
 
-## RangeStart
+### RangeStart
 
 Gets and sets the start value of the range.
 
@@ -58,7 +58,7 @@ Gets and sets the start value of the range.
 
 {% endtabs %}
 
-## RangeEnd
+### RangeEnd
 
 Gets and sets the end value of the range.
 

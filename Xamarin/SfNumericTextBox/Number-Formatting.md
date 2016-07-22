@@ -18,7 +18,7 @@ N> The control displays the formatted text on lost focus. Default Value of `Form
 
 ### Display Currency Notation
 
-* `c` - Display the value with currency notation.
+`c` - Display the value with currency notation.
 	
 {% tabs %}	
 
@@ -38,7 +38,7 @@ N> The control displays the formatted text on lost focus. Default Value of `Form
 	
 ### Display Number Notation
 
-* `n` – Display the value in number format.
+`n` – Display the value in number format.
 
 {% tabs %}
 
@@ -58,7 +58,7 @@ N> The control displays the formatted text on lost focus. Default Value of `Form
 
 ### Display Percentage Notation
 
-* `p` – Display the value in percentage.
+`p` – Display the value in percentage.
 	
 {% tabs %}	
 

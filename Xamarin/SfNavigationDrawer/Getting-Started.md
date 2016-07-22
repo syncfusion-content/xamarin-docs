@@ -326,7 +326,7 @@ The main view of the SfNavigationDrawer can be set using `ContentView` property 
 
 {% endtabs %}
 
-## Set drawing edge for drawer panel
+## Set Drawing Edge for Drawer Panel
 
 The `Position` property specifies the sliding position of the DrawerView panel. The `Position` property has the following four options.
 
@@ -360,7 +360,7 @@ N> The default option is Left.
 
 ## Change Drawer Opening Animation
 
-The `Transition` property specifies the opening animations for the DrawerView panel. The `Transition` property has the following three options.
+The `Transition` property specifies the opening animation for the DrawerView panel. The `Transition` property has the following three options.
 
 * SlideOnTop
 * Push
@@ -384,6 +384,6 @@ N> The default Transition is SlideOnTop.
 
 {% endtabs %}
 
-The NavigationDrawer looks as follows
+The SfNavigationDrawer looks as follows
 
 ![](images/Slide-on-top.png)

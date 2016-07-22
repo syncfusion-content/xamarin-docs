@@ -12,174 +12,21 @@ The `AnimationType` property allows you to choose anyone of the 10 predefined an
 
 * Ball
 
-{% tabs %}
-
-{% highlight xaml %}
-
-	<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="Ball" />
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-	SfBusyIndicator busyindicator = new SfBusyIndicator();
-	busyindicator.AnimationType=AnimationTypes.Ball;
-	
-{% endhighlight %}
-
-{% endtabs %}
-
 * HorizontalPulsingBox
-
-{% tabs %}
-
-{% highlight xaml %}
-
-	<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="HorizontalPulsingBox" />
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-	SfBusyIndicator busyindicator = new SfBusyIndicator();
-	busyindicator.AnimationType=AnimationTypes.HorizontalPulsingBox;
-	
-{% endhighlight %}
-
-{% endtabs %}
 
 * Rectangle
 
-{% tabs %}
-
-{% highlight xaml %}
-
-	<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="Rectangle" />
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-	SfBusyIndicator busyindicator = new SfBusyIndicator();
-	busyindicator.AnimationType=AnimationTypes.Rectangle;
-	
-{% endhighlight %}
-
-{% endtabs %}
-
 * Battery
-
-{% tabs %}
-
-{% highlight xaml %}
-
-	<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="Battery" />
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-	SfBusyIndicator busyindicator = new SfBusyIndicator();
-	busyindicator.AnimationType=AnimationTypes.Battery;
-	
-{% endhighlight %}
-
-{% endtabs %}
 
 * Globe
 
-{% tabs %}
-
-{% highlight xaml %}
-
-	<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="Globe" />
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-	SfBusyIndicator busyindicator = new SfBusyIndicator();
-	busyindicator.AnimationType=AnimationTypes.Globe;
-	
-{% endhighlight %}
-
-{% endtabs %}
-
 * SingleCircle
-
-{% tabs %}
-
-{% highlight xaml %}
-
-	<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="SingleCircle" />
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-	SfBusyIndicator busyindicator = new SfBusyIndicator();
-	busyindicator.AnimationType=AnimationTypes.SingleCircle;
-	
-{% endhighlight %}
-
-{% endtabs %}
 
 * SlicedCircle
 
-{% tabs %}
-
-{% highlight xaml %}
-
-	<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="SlicedCircle" />
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-	SfBusyIndicator busyindicator = new SfBusyIndicator();
-	busyindicator.AnimationType=AnimationTypes.SlicedCircle;
-	
-{% endhighlight %}
-
-{% endtabs %}
-
 * DoubleCircle
 
-{% tabs %}
-
-{% highlight xaml %}
-
-	<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="DoubleCircle" />
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-	SfBusyIndicator busyindicator = new SfBusyIndicator();
-	busyindicator.AnimationType=AnimationTypes.DoubleCircle;
-	
-{% endhighlight %}
-
-{% endtabs %}
-
 * ECG
-
-{% tabs %}
-
-{% highlight xaml %}
-
-	<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="ECG" />
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-	SfBusyIndicator busyindicator = new SfBusyIndicator();
-	busyindicator.AnimationType=AnimationTypes.ECG;
-	
-{% endhighlight %}
-
-{% endtabs %}
 
 * Print
 
@@ -187,18 +34,62 @@ The `AnimationType` property allows you to choose anyone of the 10 predefined an
 
 {% highlight xaml %}
 
-	<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="Print" />
+	<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="Ball" Title="Loading..." BackgroundColor="Color.Blue"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 	SfBusyIndicator busyindicator = new SfBusyIndicator();
-	busyindicator.AnimationType=AnimationTypes.Print;
+	busyindicator.AnimationType=AnimationTypes.Ball;
+	busyindicator.Title ="Loading…";
+	busyindicator.BackgroundColor= Color.Blue;
 	
 {% endhighlight %}
 
 {% endtabs %}
 
+![](images/ball1.png)
 
-![](images/Ball.png) 
+Busy Indicator with Ball type animation {:.caption}
+
+![](images/HorizontalPulsingBox.png) 
+
+Busy Indicator with HorizontalPulsingBox type animation {:.caption}
+
+![](images/rectangle.png) 
+
+Busy Indicator with Rectangle type animation {:.caption}
+ 
+![](images/battery.png) 
+
+Busy Indicator with Battery type animation {:.caption}
+ 
+![](images/globe.png) 
+
+Busy Indicator with Globe type animation {:.caption}
+ 
+![](images/singlecircle.png) 
+
+Busy Indicator with SingleCircle type animation {:.caption}
+
+![](images/SlicedCircle.png) 
+
+Busy Indicator with SlicedCircle type animation {:.caption}
+ 
+![](images/doublecircle.png) 
+
+Busy Indicator with DoubleCircle type animation {:.caption}
+ 
+![](images/ecg.png) 
+
+Busy Indicator with ECG type animation {:.caption}
+ 
+![](images/print.png) 
+
+Busy Indicator with Print type animation {:.caption}
+
+
+
+
+ 

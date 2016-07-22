@@ -66,16 +66,16 @@ N> The `MaximumDropDownHeight` value can be any positive integer value.
 
 {% tabs %}
 
-{% highlight c# %}
-	
-	countryAutoComplete.MaximumDropDownHeight = 300;
-	 
-{% endhighlight %}
-
 {% highlight xaml %}
 
   		<autocomplete:SfAutoComplete x:Name="countryAutoComplete"  MaximumDropDownHeight="300" />
 
+{% endhighlight %}
+
+{% highlight c# %}
+	
+	countryAutoComplete.MaximumDropDownHeight = 300;
+	 
 {% endhighlight %}
 
 {% endtabs %}

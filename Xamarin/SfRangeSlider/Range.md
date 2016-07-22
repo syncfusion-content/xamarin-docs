@@ -11,7 +11,7 @@ documentation: ug
 
 The SfRangeSlider control supports to select range of value by using two Thumbs.
 
-## Setting Show Range
+## Set Show Range
 
 The `ShowRange` property should be set to true for displaying two thumbs in track with range of values.
 
@@ -34,7 +34,7 @@ N> When this property is set to false, single thumb is displayed without any ran
 {% endtabs %}
 
 
-## Setting Range values
+## Set Range values
 
 This section explains about setting Range start and end value.
 

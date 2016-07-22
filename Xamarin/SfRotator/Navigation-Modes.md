@@ -9,11 +9,7 @@ documentation: ug
 
 ---
 
-# Customization of Navigation Strip
-
-This section explains about customization of NavigationStrip Mode and Position. 
-
-## Strip Mode
+# Navigation Modes
 
 The `NavigationStripMode` property specifies the appearance of navigation bar items. The image data can be selected either by Thumbnail or by Dots navigation modes.
 
@@ -21,16 +17,16 @@ The `NavigationStripMode` property specifies the appearance of navigation bar it
 
 {% tabs %}
 
-{% highlight C# %}
-
-	rotator.NavigationStripMode = NavigationStripMode.Thumbnail;	
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<rotator:SfRotator x:Name="rotator" NavigationStripMode="Thumbnail" />
 	
+{% endhighlight %}
+
+{% highlight C# %}
+
+	rotator.NavigationStripMode = NavigationStripMode.Thumbnail;	
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -41,16 +37,16 @@ The `NavigationStripMode` property specifies the appearance of navigation bar it
 
 {% tabs %}
 
-{% highlight C# %}
-
-	rotator.NavigationStripMode = NavigationStripMode.Dots;	
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<rotator:SfRotator x:Name="rotator" NavigationStripMode="Dots" />
 	
+{% endhighlight %}
+
+{% highlight C# %}
+
+	rotator.NavigationStripMode = NavigationStripMode.Dots;	
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -58,7 +54,7 @@ The `NavigationStripMode` property specifies the appearance of navigation bar it
 ![](images/dots.png)
 
 
-## Strip Position
+## Items / Dot Strip Positions
 
 The `NavigationStripPosition` specifies the placement position of the navigation bar items such as thumbnail or dots relative to the slider area. 
 
@@ -71,16 +67,16 @@ There are four available positions,
 
 {% tabs %}
 
-{% highlight C# %}
-
-	rotator.NavigationStripPosition = NavigationStripPosition.Bottom;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<rotator:SfRotator x:Name="rotator" NavigationStripPosition="Bottom" />
 	
+{% endhighlight %}
+
+{% highlight C# %}
+
+	rotator.NavigationStripPosition = NavigationStripPosition.Bottom;
+
 {% endhighlight %}
 
 {% endtabs %}

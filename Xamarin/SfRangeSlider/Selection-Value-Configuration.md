@@ -73,7 +73,7 @@ The `TickFrequency` property is used to decide the number of ticks to be display
 
 N> When the `SnapsTo` property is set to `Ticks`, the `TickFrequency` is used to specify the interval between snap points.
 
-## Set Step Frequency
+## Set Interval between Snap Points.
 
 The `StepFrequency` property is used to specify the interval between snap points.
 
@@ -95,7 +95,7 @@ The `StepFrequency` property is used to specify the interval between snap points
 
 N> When the `SnapsTo` property is set to `StepValues`, the `StepFrequency` property is enabled.
 
-## Set SnapsTo
+## Set Snapping Mode
 
 The `SnapsTo` property determines whether the RangeSlider snaps to steps or ticks. Available options for this property are
 

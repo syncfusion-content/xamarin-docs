@@ -142,33 +142,6 @@ The SfDigitalGauge control is configured entirely in C# code or by using XAML ma
 
 {% endtabs %}
 
-* Configure the properties of SfDigitalGauge.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-	<gauge:SfDigitalGauge x:Name="digitalgauge" SegmentStrokeWidth="3" CharacterHeight="50" CharacterWidth="25" CharacterType="SegmentSeven" DisabledSegmentAlpha="30" />
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-	SfDigitalGauge digitalgauge = new SfDigitalGauge ();
-	digitalgauge.Value =  DateTime.Now.ToString ("HH mm ss");
-	digitalgauge.CharacterHeight = 50;
-	digitalgauge.CharacterWidth= 25;
-	digitalgauge.SegmentStrokeWidth = 3;
-	digitalgauge.CharacterType = CharacterType.SegmentSeven;
-	digitalgauge.DisabledSegmentAlpha = 30;
-	digitalgauge.BackgroundColor = Color.FromRgb (235, 235, 235);
-	digitalgauge.CharacterStrokeColor = Color.FromRgb (20,108,237);
-	digitalgauge.DisabledSegmentColor = Color.FromRgb (20,108,237);
-
-{% endhighlight %}
-
-{% endtabs %}
-
 ## Set Value
 
 * The `Value` property sets the display value in the SfDigitalGauge.
@@ -177,13 +150,13 @@ The SfDigitalGauge control is configured entirely in C# code or by using XAML ma
 
 {% highlight xaml %}
 
-	<gauge:SfDigitalGauge x:Name="digitalgauge" Value="{Binding}" />
+	<gauge:SfDigitalGauge x:Name="digitalgauge" Value="1 2 3 4" />
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-    digitalgauge.Value =  DateTime.Now.ToString ("HH mm ss");
+    digitalgauge.Value =  "1 2 3 4";
 
 {% endhighlight %}
 
@@ -197,13 +170,44 @@ The Digital Characters can be drawn in 4 different segments.
 
 {% highlight xaml %}
 
-	<gauge:SfDigitalGauge x:Name="digitalgauge"  CharacterType="SegmentSeven" />
+	<gauge:SfDigitalGauge x:Name="digitalgauge" Value="1 2 3 4" CharacterType="SegmentSeven" />
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+	digitalgauge.Value = "1 2 3 4";
 	digitalgauge.CharacterType = CharacterType.SegmentSeven;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Configuring properties
+
+
+Configure the character height, width, stroke thickness and other properties to display the character.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+	<gauge:SfDigitalGauge x:Name="digitalgauge" SegmentStrokeWidth="3" CharacterHeight="50" CharacterWidth="25" CharacterType="SegmentSeven" DisabledSegmentAlpha="30" />
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+	SfDigitalGauge digitalgauge = new SfDigitalGauge ();
+	digitalgauge.Value ="1 2 3 4";
+	digitalgauge.CharacterHeight = 50;
+	digitalgauge.CharacterWidth= 25;
+	digitalgauge.SegmentStrokeWidth = 3;
+	digitalgauge.CharacterType = CharacterType.SegmentSeven;
+	digitalgauge.DisabledSegmentAlpha = 30;
+	digitalgauge.BackgroundColor = Color.FromRgb (235, 235, 235);
+	digitalgauge.CharacterStrokeColor = Color.FromRgb (20,108,237);
+	digitalgauge.DisabledSegmentColor = Color.FromRgb (20,108,237);
 
 {% endhighlight %}
 

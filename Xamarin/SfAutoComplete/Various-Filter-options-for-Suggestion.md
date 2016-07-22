@@ -33,7 +33,7 @@ Display the list of suggestions based on starting letter.
 
 ![](images/startswith.png)
 
-### Consider the Character Casing
+### Filter with Character Casing
 
 Display the list of suggestions based on starting letter with case sensitive.
 
@@ -77,7 +77,7 @@ Display the list of suggestions, if autocomplete list contains that words.
 
 ![](images/contains.png)
 
-### Consider the Character Casing
+### Filter with Character Casing
 
 Display the list of suggestions, if autoComplete list contains that words with case sensitive.
 
@@ -121,7 +121,7 @@ Displays the word that matches.
 
 ![](images/equals.png)
 
-### Consider the Character Casing
+### Filter with Character Casing
 
 Displays the word that matches with case sensitive.
 	
@@ -166,7 +166,7 @@ Display the list of suggestions based on ending word.
 
 ![](images/endswith.png)
 
-### Consider the Character Casing
+### Filter with Character Casing
 
 Display the list of suggestions based on the ending word with case sensitive.
 	

@@ -30,6 +30,4 @@ The `IsBusy` property in SfBusyIndicator control is used to determine whether an
 
 N> The default value is true.
 
-![](images/IsBusy.png) 
-
 

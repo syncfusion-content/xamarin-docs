@@ -43,7 +43,7 @@ Appends the first matching string with the entered character.
 
 ## Suggest in Dropdown
 
-Displays the suggestion in the dropdown.
+Suggest - It displays the suggestion in the dropdown.
 
 {% tabs %}
 
@@ -65,7 +65,7 @@ Displays the suggestion in the dropdown.
 
 ## Both Append and Suggest in DropDown
 
-Displays the suggestion in the dropdown along with appending the first matching string.
+SuggestionAppend - It displays the suggestion in the dropdown along with appending the first matching string.
 	
 {% tabs %}	
 

@@ -82,3 +82,32 @@ N> The `MaximumDropDownHeight` value can be any positive integer value.
  
 ![](images/maximumdropdownheight.png)
 
+
+## Customizing Suggestion Box Item
+
+The suggestion list item's look can be customised with some of the basic options like item's height, text color and text size are available with autocomplete component.
+
+{% tabs %}
+
+{% highlight c# %}
+	
+SfAutoComplete sfAutoComplete = new SfAutoComplete();
+
+sfAutoComplete.DropDownItemHeight = 300;
+
+sfAutoComplete.DropDownTextColor = Color.Blue;
+
+sfAutoComplete .DropDownTextSize = 34;
+	 
+{% endhighlight %}
+
+{% highlight xaml %}
+
+  		<autocomplete:SfAutoComplete x:Name="countryAutoComplete" DropDownTextSize="34"  DropDownItemHeight="300" DropDownTextColor="Blue"/>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+![](images/itemheight.png)

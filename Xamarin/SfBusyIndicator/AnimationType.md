@@ -10,25 +10,25 @@ documentation: ug
 
 The `AnimationType` property allows you to choose anyone of the 10 predefined animation types.
 
-* Ball
+### Ball
 
-* HorizontalPulsingBox
+### HorizontalPulsingBox
 
-* Rectangle
+### Rectangle
 
-* Battery
+### Battery
 
-* Globe
+### Globe
 
-* SingleCircle
+### SingleCircle
 
-* SlicedCircle
+### SlicedCircle
 
-* DoubleCircle
+### DoubleCircle
 
-* ECG
+### ECG
 
-* Print
+### Print
 
 {% tabs %}
 

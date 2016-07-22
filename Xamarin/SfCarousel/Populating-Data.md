@@ -44,7 +44,7 @@ The SfCarousel model looks as follows.
 
 {% endtabs %}
 
-Populate carousel items collection in Viewmodel with the image data. The below code works when the images are placed within the application folder for Android,iOS and UWP with build action AndroidResource,BundledResource and Content respectively.
+Populate carousel items collection in View model with the image data. The below code works when the images are placed within the application folder for Android, iOS and UWP with build action Android Resource, Bundled Resource and Content respectively.
 
 {% tabs %}
 
@@ -113,7 +113,7 @@ SfCarousel provides support to add a custom view as carousel items by designing 
 
 ## Through Carousel Item
 
-The ItemTemplate provides common template with different data, whereas if different views for every items is needed, it can also be provided using `ItemContent` property in SfCarouselItem class.
+Different set of views can be provided to every items through `ItemContent` property available in SfCarouselItem class.
 
 {% tabs %}
 

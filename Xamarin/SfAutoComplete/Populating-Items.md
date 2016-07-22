@@ -49,7 +49,7 @@ To populate items using data source, create a model class with the properties th
 
 {% endhighlight %}
 
-Create and populate the collection in a view model class. Here, countrylist and its flag are populated. 
+Create and populate the collection in a view model class. Here, country list and its flag are populated. 
 
 {% highlight C# %}
 

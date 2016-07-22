@@ -31,7 +31,6 @@ Or after downloading through the Xamarin store web interface, all the required a
 
 You can then add the assembly references to the respective projects as shown below
 
-
 ### PCL
 pcl\Syncfusion.SfNumericTextBox.XForms.dll
 
@@ -63,7 +62,6 @@ winrt\Syncfusion.SfShared.WinRT.dll
 winrt\Syncfusion.SfNumericTextBox.XForms.dll
 winrt\Syncfusion.SfNumericTextBox.XForms.WinRT.dll
 
-
 ### UWP
 uwp\Syncfusion.SfInput.UWP.dll
 uwp\Syncfusion.SfShared.UWP.dll
@@ -74,29 +72,35 @@ Currently an additional step is required for Windows Phone, Windows Phone 8.1 an
 
 Create an instance of SfNumericTextBoxRenderer in MainPage constructor of the Windows Phone and Windows Phone 8.1  project as shown 
 
+{% tabs %}
+
 {% highlight C# %}
 
 public MainPage()
-
 {
     new SfNumericTextBoxRenderer(); 
 }
 
 {% endhighlight %}
 
+{% endtabs %}
+
 Create an instance of SfNumericTextBoxRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below
+
+{% tabs %}
 
 {% highlight C# %}
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
-
 {
     new SfNumericTextBoxRenderer ();
 }	
 
 {% endhighlight %}
 
-## Add and Configure the SfNumericTextBox
+{% endtabs %}
+
+## Add SfNumericTextBox
 
 The SfNumericTextBox control configured entirely in C# code or by using XAML markup. The following steps explain on how to create a NumericTextBox and configure its elements,
 
@@ -136,7 +140,7 @@ The SfNumericTextBox control configured entirely in C# code or by using XAML mar
 
 {% endtabs %}
 
-## Setting Value
+## Set Value
 
 The SfNumericTextBox control display value can be set using `Value` property.
 

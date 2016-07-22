@@ -16,7 +16,7 @@ The `FormatString` property determines the format specifier by which the display
 
 N> The control displays the formatted text on lost focus. Default Value of `FormatString` is "n". 
 
-It has three types,
+### Display Currency Notation
 
 * `c` - Display the value with currency notation.
 
@@ -36,6 +36,8 @@ It has three types,
 
 {% endtabs %}
 
+### Display Number Notation
+
 * `n` – Display the value in number format.
 	
 {% tabs %}	
@@ -54,6 +56,8 @@ It has three types,
 {% endhighlight %}
 
 {% endtabs %}
+
+### Display Percentage Notation
 
 * `p` – Display the value in Percentage.
 	
@@ -78,7 +82,7 @@ N> Instead of using above `FormatString` types, we can provide any symbol or val
 
 ![](images/format.png)
 
-## Parser Mode
+## Parser Input Value
 
 The value of the NumericUpDown can be parsed based on the `ParsingMode` property. 
 
@@ -104,7 +108,7 @@ N> The `ParsingMode` is of type Parsers containing enum values of Double and Dec
 
 ![](images/ParserMode.png)
 
-## Percent Display Mode
+## Compute to Percentage
 
 The `PercentDisplayMode` property can be used to display numeric data in Percent mode. 
 

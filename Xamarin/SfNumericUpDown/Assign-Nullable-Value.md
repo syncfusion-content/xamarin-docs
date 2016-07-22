@@ -6,7 +6,7 @@ platform: Xamarin
 control: NumericUpDown
 documentation: ug
 ---
-# Adding Null Values
+# Assign Nullable Value
 
 The null values can be set in SfNumericUpDown `Value` property, by setting `AllowNull` property value to true.
 
@@ -50,7 +50,6 @@ The `WaterMark` property can be used to provide a hint that helps the user to ge
 	numericUpDown.Watermark = "NumericUpDown";
 	
 {% endhighlight %}
-
 
 
 {% endtabs %}

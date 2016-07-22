@@ -75,7 +75,6 @@ Create and populate the collection in a view model class. Here, countrylist and 
 
 {% endhighlight %}
 
-![](images/autocompleteitemsource.png)
 
 ### Binding the Data with Custom Template
 
@@ -124,7 +123,7 @@ N> `DisplayMemberPath` property searches for the desired value to be displayed i
 
 ![](images/autocompleteitemsource.png)
 
-## Items AutoCompleteSource
+## Through AutoComplete Source Item
 
 The `AutoCompleteSource` property is used to populate the list of string to the suggestions dropdown.
 

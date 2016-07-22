@@ -21,16 +21,16 @@ The dates in month view can be selected by three ways such as single, multiple a
 
 {% tabs %}
 
-{% highlight c# %}
-
-	sfCalendar.ViewMode=ViewMode.MonthView;
- 
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<CalendarSample:SfCalendar  x:Name="calendar" ViewMode="MonthView"/>
 
+{% endhighlight %}
+
+{% highlight c# %}
+
+	sfCalendar.ViewMode=ViewMode.MonthView;
+ 
 {% endhighlight %}
 
 {% endtabs %}
@@ -49,6 +49,12 @@ The dates in month view can be selected by three ways such as single, multiple a
 
 {% tabs %}
 
+{% highlight xaml %}
+
+	<CalendarSample:SfCalendar  x:Name="monthViewSettings" TodayTextColor="Red" InlineBackgroundColor="Blue" WeekDayBackGroundColor="Yellow" MonthViewSettings="monthviewSettings"/>
+
+{% endhighlight %}
+
 {% highlight c# %}
 	
 	MonthLabelSettings labelSettings = new MonthLabelSettings();
@@ -65,12 +71,6 @@ The dates in month view can be selected by three ways such as single, multiple a
 	
 {% endhighlight %}
 
-{% highlight xaml %}
-
-	<CalendarSample:SfCalendar  x:Name="monthViewSettings" TodayTextColor="Red" InlineBackgroundColor="Blue" WeekDayBackGroundColor="Yellow" MonthViewSettings="monthviewSettings"/>
-
-{% endhighlight %}
-
 {% endtabs %}
 
 N> Similar way there are many settings available to modify Text and Background colors of month view in `MonthViewSettings` class.
@@ -81,16 +81,16 @@ This displays entire dates/month of a particular year, by default current year w
 
 {% tabs %}
 
-{% highlight c# %}
-
-	calendar.ViewMode=ViewMode.YearView;
-	
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<CalendarSample:SfCalendar  x:Name="calendar" ViewMode="YearView"/>
 
+{% endhighlight %}
+
+{% highlight c# %}
+
+	calendar.ViewMode=ViewMode.YearView;
+	
 {% endhighlight %}
 
 {% endtabs %}
@@ -105,6 +105,12 @@ This displays entire dates/month of a particular year, by default current year w
 
 {% tabs %}
 
+{% highlight xaml %}
+
+	<CalendarSample:SfCalendar  x:Name="calendar" YearHeaderTextColor="Red" MonthHeaderBackground="Green" DateTextColor="Blue" HeaderLabelAlignment="Center" YearViewSettings="yearViewSettings" />
+
+{% endhighlight %}
+
 {% highlight c# %}
 
 	SfCalendar calendar = new SfCalendar();
@@ -115,13 +121,7 @@ This displays entire dates/month of a particular year, by default current year w
 	yearViewSettings.HeaderLabelAlignment=LabelAlignment.Center;
 	calendar.YearViewSettings=yearViewSettings;
 
-{% endhighlight %}    
-
-{% highlight xaml %}
-
-	<CalendarSample:SfCalendar  x:Name="calendar" YearHeaderTextColor="Red" MonthHeaderBackground="Green" DateTextColor="Blue" HeaderLabelAlignment="Center" YearViewSettings="yearViewSettings" />
-
-{% endhighlight %}
+{% endhighlight %}   
 
 {% endtabs %}                               
 

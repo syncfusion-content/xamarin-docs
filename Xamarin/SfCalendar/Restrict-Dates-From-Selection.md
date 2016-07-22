@@ -27,7 +27,13 @@ Beyond the min max date range, following restrictions will be applied.
 
 * The tapped delegates will not be triggered while tapped on the MonthCell.
     
-{% tabs %}	
+{% tabs %}
+
+{% highlight xaml %}
+
+	<CalendarSample:SfCalendar  x:Name="calendar" MinDate="2015,1,1" MaxDate="2040,12,12"/>
+
+{% endhighlight %}	
 	
 {% highlight c# %}
 	
@@ -36,12 +42,6 @@ Beyond the min max date range, following restrictions will be applied.
 	DateTime maxdate=new DateTime(2040,12,12);
 	sfCalendar.MaxDate=maxdate;
 	
-{% endhighlight %}
-
-{% highlight xaml %}
-
-	<CalendarSample:SfCalendar  x:Name="calendar" MinDate="2015,1,1" MaxDate="2040,12,12"/>
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -58,6 +58,12 @@ By invoking the `AddDatesInPast` method, all past dates will be blacked out till
 
 {% tabs %}
 
+{% highlight xaml %}
+
+	<CalendarSample:SfCalendar  x:Name="calendar" BlackoutDates="{Binding}"/>
+	
+{% endhighlight %}
+
 {% highlight c# %}
 	
 	List<DateTime> black_dates = new List<DateTime>();
@@ -71,14 +77,6 @@ By invoking the `AddDatesInPast` method, all past dates will be blacked out till
 	
 {%  endhighlight %}
 
-{% highlight xaml %}
-
-	<CalendarSample:SfCalendar  x:Name="calendar" BlackoutDates="{Binding}"/>
-	
-{% endhighlight %}
-
-{% endtabs %}
-
-	
+{% endtabs %}	
 	
 ![](images/Blackout.png)

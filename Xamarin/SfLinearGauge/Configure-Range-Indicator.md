@@ -14,7 +14,11 @@ Ranges of the linear scale are a collection of the linear range. A linear range 
 
 {% highlight xaml %}
 
-	<gauge:LinearRange x:Name="Range1" StartValue="0" EndValue="30" StartWidth="10" EndWidth="10" />
+<linear:LinearScale.Ranges>
+		<linear:LinearRange x:Name="Range1" StartValue="0" Color="Green" Offset ="0.07" EndValue="30" StartWidth="10" EndWidth="10" />
+		<linear:LinearRange x:Name="Range2" StartValue="30" Color="Yellow" EndValue="60" Offset ="0.07" StartWidth="10" EndWidth="10" />
+		<linear:LinearRange x:Name="Range3" StartValue="60" Color="Red" EndValue="100" Offset ="0.07" StartWidth="10" EndWidth="10" />
+</linear:LinearScale.Ranges>
 	
 {% endhighlight %}
 

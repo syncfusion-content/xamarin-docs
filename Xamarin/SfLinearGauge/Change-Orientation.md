@@ -17,7 +17,7 @@ SfLinearGauge provides support for the vertical orientation. By default SfLinear
 
 {% highlight xaml %}
 
-	<gauge:SfLinearGauge x:Name="linearGauge" Orientation="Vertical" />
+	<gauge:SfLinearGauge x:Name="linearGauge" Orientation="OrientationVertical" />
 	
 {% endhighlight %}
 

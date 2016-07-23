@@ -8,7 +8,25 @@ documentation: ug
 ---
 # Auto Reverse
 
-SfNumericUpDown Spin Button values can be customized using below properties.
+While incrementing, the control will start from Minimum value once it reaches the Maximum value and vice-versa.
+
+N> By default the property value is false.
+
+{% tabs %}
+
+{% highlight C# %}
+
+	numericUpDown.AutoReverse = true;
+
+{% endhighlight %}
+
+{% highlight xaml %}
+
+	<numeric:SfNumericUpDown x:Name="numericUpDown" AutoReverse="true"/>
+	
+{% endhighlight %}
+
+{% endtabs %}
 
 ## Continuous Spinning Between Ranges
 

@@ -7,14 +7,19 @@ control : Rotator
 documentation : ug
 ---
 
-# Data Binding
+# Populating Data
 
 SfRotator control, supports binding to different data sources such as IList Data Source, Observable Collection Data Source.
 
-## Setting ItemSource
+## Through Binding
+
+This section explains about setting Item Source and applying custom template to the data.
+
+### Create a Model with Data
 
 SfRotator items can be populated with a collection of image data. You can assign a collection to it. Collections include arrays, Lists and DataTables. For example you may wants to create a Rotator model with Image as follows.
 
+{% tabs %}
 
 {% highlight C# %}
 	
@@ -29,13 +34,15 @@ SfRotator items can be populated with a collection of image data. You can assign
         {
             get { return _image; }
             set { _image = value; }
-        }
-
-       
+        }       
 
 {% endhighlight %}
 
+{% endtabs %}
+
 Create and populate SfRotator collection as follows
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -58,7 +65,11 @@ Create and populate SfRotator collection as follows
 
 {% endhighlight %}
 
+{% endtabs %}
+
 Assigning collection to ItemSource
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -66,9 +77,13 @@ Assigning collection to ItemSource
 
 {% endhighlight %}
 
-## Setting ItemTemplate
+{% endtabs %}
+
+### Binding the Data with Custom Template
 
 SfRotator provides support to add a custom view as RotatorItems by designing a view inside its ItemTemplate. This template will be applied for all its items and its data will be binded.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -82,9 +97,13 @@ SfRotator provides support to add a custom view as RotatorItems by designing a v
 	  
 {% endhighlight %}
 
-## Setting Variable Views
+{% endtabs %}
+
+## Through Rotator Item
 
 The ItemTemplate provides common template with different data, whereas if different views for every items is needed, it can also be provided using `ItemContent` property in SfRotatorItem class.
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -106,9 +125,10 @@ The ItemTemplate provides common template with different data, whereas if differ
 	img.HeightRequest = 400;
 	img.WidthRequest = 400;
 	rotatorItem1.ItemContent =img;
-	rotator.DataSource.Add (rotatorItem1);			
-	
+	rotator.DataSource.Add (rotatorItem1);		
 	  
 {% endhighlight %}
+
+{% endtabs %}
 
 Similarly every item can be created and customized in case of different Rotator item view is needed.

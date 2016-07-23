@@ -144,7 +144,7 @@ The SfDigitalGauge control is configured entirely in C# code or by using XAML ma
 
 ## Set Value
 
-* The `Value` property sets the display value in the SfDigitalGauge.
+The `Value` property sets the display value in the SfDigitalGauge.
 
 {% tabs %}
 

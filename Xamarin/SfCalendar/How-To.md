@@ -27,11 +27,11 @@ We can perform operation while the Calendar cell is Tapped using `CalendarTapped
 </table>
 
 
-{% tabs %}
+
 
 {% highlight c# %}
 
-	sfCalendar.OnCalendarTapped+= (object sender, CalendarTappedEventArgs args) => 
+	calendar.OnCalendarTapped+= (object sender, CalendarTappedEventArgs args) => 
 			{
 				SfCalendar calendar = args.Calendar;
 				DateTime date = args.datetime;
@@ -40,7 +40,6 @@ We can perform operation while the Calendar cell is Tapped using `CalendarTapped
 
 {% endhighlight %}
 
-{% endtabs %}
 
 
 # How to Perform an Operation when the Selected Date Get Changed?
@@ -67,19 +66,15 @@ We can perform an operation when the selected date get changed using `SelectionC
 </table>
 
 
-{% tabs %}
-
 {% highlight c# %}
 
-	sfcalendar.SelectionChanged += (object sender, SelectionChangedEventArgs args) =
-			{
+	calendar.SelectionChanged += (object sender, Syncfusion.SfCalendar.XForms.SelectionChangedEventArgs args) => {
 				SfCalendar calendar = args.Calendar;
 				IList<DateTime> selectedDates = args.DateAdded;
 				IList<DateTime> deselectedDates = args.DateRemoved;
+
 			};
 {% endhighlight %}
-
-{% endtabs %}
 
 
 # How to Perform an Operation when Navigate to Next Month?
@@ -104,8 +99,7 @@ User defined operation can be performed using `MonthChanged` event when navigati
 
 {% highlight c# %}
 
-	sfcalendar.MonthChanged += (object sender, MonthChangedEventArgs args) =>
-			{
+calendar.MonthChanged += (object sender, MonthChangedEventArgs args) => { 
 				SfCalendar calendar = args.Calendar;
 				DateTime oldMonth = args.args.PreviousValue;
 				DateTime currentMonth = args.args.CurrentValue;
@@ -164,7 +158,7 @@ User defined operation can be performed using `MonthChanged` event when navigati
 
 {% highlight c# %}
 
-	sfcalendar.OnMonthCellLoaded += (object sender, Syncfusion.SfCalendar.XForms.MonthCell args) =>
+	calendar.OnMonthCellLoaded += (object sender, Syncfusion.SfCalendar.XForms.MonthCell args) =>
 	{
 			if ((args.Date.DayOfWeek == DayOfWeek.Sunday || args.Date.DayOfWeek == DayOfWeek.Saturday))
 			{
@@ -184,7 +178,7 @@ SfCalendar control can be resized using `WidthRequest` and `HeightRequest` prope
 
 {% highlight c# %}
 
-calendar = new SfCalendar();
+ SfCalendar calendar = new SfCalendar();
 calendar.WidthRequest = 200;
 calendar.HeightRequest = 200;
 	

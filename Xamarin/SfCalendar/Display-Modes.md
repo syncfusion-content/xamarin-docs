@@ -29,7 +29,7 @@ The dates in month view can be selected by three ways such as single, multiple a
 
 {% highlight c# %}
 
-	sfCalendar.ViewMode=ViewMode.MonthView;
+	calendar.ViewMode=ViewMode.MonthView;
  
 {% endhighlight %}
 
@@ -47,31 +47,22 @@ The dates in month view can be selected by three ways such as single, multiple a
 
 * The BlackOutDate color can be modified with `BlackOutColor` property.
 
-{% tabs %}
-
-{% highlight xaml %}
-
-	<CalendarSample:SfCalendar  x:Name="monthViewSettings" TodayTextColor="Red" InlineBackgroundColor="Blue" WeekDayBackGroundColor="Yellow" MonthViewSettings="monthviewSettings"/>
-
-{% endhighlight %}
 
 {% highlight c# %}
 	
 	MonthLabelSettings labelSettings = new MonthLabelSettings();
-	labelSettings.DateFormat = “dd”;
-	labelSettings.DayLabelSize = 20;
-	labelSettings.DayFormat = "EEE";
-	labelSettings.DateLabelSize =  12;
-	MonthViewSettings monthViewSettings = new MonthViewSettings();
-	monthViewSettings.TodayTextColor=Color.ParseColor("#1B79D6");
-	monthViewSettings.InlineBackgroundColor=Color.ParseColor("#E4E8ED");
-	monthViewSettings.WeekDayBackGroundColor(Color.ParseColor("#F7F7F7"));
-	monthviewSettings.MonthLabelSettings = labelSettings;
-	sfCalendar.MonthViewSettings=monthViewSettings;
+			labelSettings.DateFormat = "dd";
+			labelSettings.DayLabelSize = 20;
+			labelSettings.DayFormat = "EEE";
+			labelSettings.DateLabelSize = 12;
+			MonthViewSettings monthViewSettings = new MonthViewSettings();
+			monthViewSettings.TodayTextColor = Color.FromHex("#1B79D6");
+			monthViewSettings.InlineBackgroundColor = Color.FromHex("#E4E8ED");
+			monthViewSettings.WeekDayBackgroundColor = Color.FromHex("#F7F7F7");
+			monthViewSettings.MonthLabelSettings = labelSettings;
+			calendar.MonthViewSettings = monthViewSettings;
 	
 {% endhighlight %}
-
-{% endtabs %}
 
 N> Similar way there are many settings available to modify Text and Background colors of month view in `MonthViewSettings` class.
 
@@ -96,32 +87,5 @@ This displays entire dates/month of a particular year, by default current year w
 {% endtabs %}
 
 ![](images/Year View.png)  
-
-### Year View Settings
-
-* The Month header color can be modified using `MonthHeaderTextColor` property in similar way, year header and date text color can be changed using `YearTextColor` and `DateTextColor` properties respectively. 
-* The gravity of the month name can be modified using `LabelAlignment` property, to position it to Left, Right or Center. 
-* The complete layout’s background color can be modified using `YearLayoutBackground` property.   
-
-{% tabs %}
-
-{% highlight xaml %}
-
-	<CalendarSample:SfCalendar  x:Name="calendar" YearHeaderTextColor="Red" MonthHeaderBackground="Green" DateTextColor="Blue" HeaderLabelAlignment="Center" YearViewSettings="yearViewSettings" />
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-	SfCalendar calendar = new SfCalendar();
-	YearViewSettings yearViewSettings = new YearViewSettings();
-	yearViewSettings.YearHeaderTextColor=Color.parseColor("#1B79D6");
-	yearViewSettings.MonthHeaderBackground=Color.parseColor("#E4E8ED");
-	yearViewSettings.DateTextColor=Color.RED;
-	yearViewSettings.HeaderLabelAlignment=LabelAlignment.Center;
-	calendar.YearViewSettings=yearViewSettings;
-
-{% endhighlight %}   
-
-{% endtabs %}                               
+   
 

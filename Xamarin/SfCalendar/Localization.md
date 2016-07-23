@@ -17,27 +17,16 @@ N> By default, SfCalendar control is available with en-US locale.
      
 Control has been initialized in Xaml
 
-{% tabs %}
-
-{% highlight xaml %}
-
-	<CalendarSample:SfCalendar  x:Name="calendar"/>
-
-{% endhighlight %}
-
-{% endtabs %}
 
 and culture has been set in codes.
 
-{% tabs %}
 
 {% highlight c# %}
 
-	sfCalendar.Locale= new System.Globalization.CultureInfo("zh-CN");
+	calendar.Locale= new System.Globalization.CultureInfo("zh-CN");
 	
 {% endhighlight %}
 
-{% endtabs %}
 
 
 ![](images/Localization.png)

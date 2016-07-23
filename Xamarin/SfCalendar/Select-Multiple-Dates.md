@@ -27,7 +27,7 @@ The selected dates can be retrieved through `OnCalendarTapped` event which is ra
 
 {% highlight c# %}
 	
-	sfCalendar.SelectionMode=SelectionMode.MultiSelection;
+	calendar.SelectionMode=SelectionMode.MultiSelection;
 	
 {% endhighlight %}
 

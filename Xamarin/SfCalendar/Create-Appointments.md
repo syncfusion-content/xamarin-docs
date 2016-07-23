@@ -25,13 +25,13 @@ Inline event support can be toggled on / off with `ShowInLineEvent` property.
 
 {% highlight xaml %}
 
-	<CalendarSample:SfCalendar  x:Name="calendar" ShowInlineEvent="true" />
+	<Calendar:SfCalendar  x:Name="calendar" ShowInlineEvents="true" />
 
 {% endhighlight %}
     
 {% highlight c# %}
 	
-	sfcalendar.ShowInLineEvent=true;
+	sfcalendar.ShowInLineEvents=true;
 	
 {% endhighlight %}
 
@@ -46,14 +46,27 @@ Calendar Events collection can be provided to SfCalendar using the following ste
 `CalendarInlineEvent` has some basic properties such as `StartTime`, `EndTime` and `Subject`.
 
 {% tabs %}
+{% highlight xaml %}
+
+		<Calendar:SfCalendar VerticalOptions="FillAndExpand"  ShowInlineEvents="true" x:Name="calendar" ViewMode="MonthView" >
+				<CalendarSample:SfCalendar.DataSource>
+					<CalendarSample:CalendarInlineEvent Color="Fuchsia" Subject="Go To Meeting" StartTime="2016,7,7" EndTime="2016,7,7"/>
+				</CalendarSample:SfCalendar.DataSource>
+		</Calendar:SfCalendar>
+
+{% endhighlight %}
 
 {% highlight c# %}
 		   
-    CalendarInlineEvent event=new CalendarInlineEvent();
-    event.StartTime=new DateTime(2015,1,1);
-    event.EndTime=new DateTime(2015,1,1);
-    event.Subject=”Go to Meeting”;
-    event.Color=Color.Red;
+    CalendarInlineEvent events=new CalendarInlineEvent();
+			events.StartTime=new DateTime(2016,1,1);
+			events.EndTime=new DateTime(2016,1,1);
+			events.Subject="Go to Meeting";
+
+			CalendarEventCollection collection = new CalendarEventCollection();
+			collection.Add(events);
+
+			calendar.DataSource = collection;
 		   
 {% endhighlight %}
 

@@ -132,15 +132,15 @@ The SfCarousel control is configured entirely in C# code or by using XAML markup
 
 {% highlight xaml %}
 
-	<ContentPage.Content>
 
-		<carousel:SfCarousel x:Name="carousel"/>
-	
+	<ContentPage.Content>
+		<carousel:SfCarousel x:Name="carousel"/>	
 	</ContentPage.Content>
 	
 {% endhighlight %}
 
 {% highlight C# %}
+
 
 	SfCarousel carousel=new SfCarousel();
 	this.Content=carousel;
@@ -185,24 +185,23 @@ SfCarousel items can be populated with a collection of image data. This collecti
 
 {% highlight C# %}
 
-	public class CarouselViewModel
+public class CarouselViewModel
+{
+	public CarouselViewModel()
 	{
-		public CarouselViewModel()
-		{
-			ImageCollection.Add(new CarouselModel("image1.png"));
-			ImageCollection.Add(new CarouselModel("image2.png"));
-			ImageCollection.Add(new CarouselModel("image3.png"));
-			ImageCollection.Add(new CarouselModel("image4.png"));
-			ImageCollection.Add(new CarouselModel("image5.png"));
-		}
-		private List<CarouselModel> imageCollection = new List<CarouselModel>();
-
-		public List<CarouselModel> ImageCollection
-		{
-			get { return imageCollection; }
-			set { imageCollection = value; }
-		}
+		ImageCollection.Add(new CarouselModel("image1.png"));
+		ImageCollection.Add(new CarouselModel("image2.png"));
+		ImageCollection.Add(new CarouselModel("image3.png"));
+		ImageCollection.Add(new CarouselModel("image4.png"));
+		ImageCollection.Add(new CarouselModel("image5.png"));
 	}
+	private List<CarouselModel> imageCollection = new List<CarouselModel>();
+	public List<CarouselModel> ImageCollection
+	{
+		get { return imageCollection; }
+		set { imageCollection = value; }
+	}
+}
 {% endhighlight %}
 
 {% endtabs %}

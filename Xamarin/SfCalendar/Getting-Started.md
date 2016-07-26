@@ -112,7 +112,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ## Add SfCalendar
 
-The following steps help to add a SfCalendar control through code.
+The following steps helps to add a SfCalendar control through code.
 
 * Adding namespace for the added assemblies. 
 

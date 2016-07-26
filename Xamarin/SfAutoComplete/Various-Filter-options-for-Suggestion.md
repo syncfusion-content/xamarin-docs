@@ -13,7 +13,7 @@ By default, the items that matches with the starting letter will be displayed as
 
 ## Words that Starts with Input Text
 
-Display the list of suggestions based on starting letter.
+Displays the list of suggestions based on starting letter.
 	
 {% tabs %}	
 
@@ -35,7 +35,7 @@ Display the list of suggestions based on starting letter.
 
 ### Filter with Character Casing
 
-Display the list of suggestions based on starting letter with case sensitive.
+Displays the list of suggestions based on starting letter with case sensitive.
 
 {% tabs %}
 
@@ -57,7 +57,7 @@ Display the list of suggestions based on starting letter with case sensitive.
 
 ## Words that Contains the Input Text
 
-Display the list of suggestions, if autocomplete list contains that words.
+Displays the list of suggestions, if autocomplete list contains that words.
 	
 {% tabs %}
 
@@ -79,7 +79,7 @@ Display the list of suggestions, if autocomplete list contains that words.
 
 ### Filter with Character Casing
 
-Display the list of suggestions, if autoComplete list contains that words with case sensitive.
+Displays the list of suggestions, if autocomplete list contains that words with case sensitive.
 
 {% tabs %}
 
@@ -145,7 +145,7 @@ Displays the word that matches with case sensitive.
 
 ## Words that Ends with Input Text
 
-Display the list of suggestions based on ending word.
+Displays the list of suggestions based on ending word.
 
 {% tabs %}
 	
@@ -168,7 +168,7 @@ Display the list of suggestions based on ending word.
 
 ### Filter with Character Casing
 
-Display the list of suggestions based on the ending word with case sensitive.
+Displays the list of suggestions based on the ending word with case sensitive.
 	
 {% tabs %}
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Restrict Dates From Selection
 
-Dates can be restricted or a collection of dates can be blackout in SfCalendar Control.
+Dates can be restricted or a collection of dates can be blacked out in SfCalendar Control.
 
 ## Range between Min / Max Dates
 
@@ -46,13 +46,13 @@ Beyond the min max date range, following restrictions will be applied.
 
 {% endtabs %}
 
-## Blackout dates
+## Blackout Dates
 
 In SfCalendar, BlackoutDates refers the disabled dates that restrict the user from selecting it. These dates will be marked with slanted Stripes.
 
 The BlackoutDays can be achieved in two ways.
 
-A date collection can be provided to set the `BlackoutDates`. This is useful where one wants to block dates where holidays or any other events occur.
+A date collection can be provided to set the `BlackoutDates`. This is useful when one wants to block dates where holidays or any other events occur.
 
 By invoking the `AddDatesInPast` method, all past dates will be blacked out till current date.
 

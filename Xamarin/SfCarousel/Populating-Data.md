@@ -25,20 +25,19 @@ The SfCarousel model looks as follows.
 
 {% highlight C# %}
 
-	 public class CarouselModel
-	 {
-		public CarouselModel(string imagestr)
-		{
-			Image = imagestr;
-		}
-		private string _image;
-
-		public string Image
-		{
-			get { return _image; }
-			set { _image = value; }
-		}
-	 }
+public class CarouselModel
+{
+	public CarouselModel(string imagestr)
+	{
+		Image = imagestr;
+	}
+	private string _image;
+	public string Image
+	{
+		get { return _image; }
+		set { _image = value; }
+	}
+}
 
 {% endhighlight %}
 
@@ -50,24 +49,23 @@ Populate carousel items collection in View model with the image data. The below 
 
 {% highlight C# %}
 
-	public class CarouselViewModel
+public class CarouselViewModel
+{
+	public CarouselViewModel()
 	{
-		public CarouselViewModel()
-		{
-			ImageCollection.Add(new CarouselModel("image1.png"));
-			ImageCollection.Add(new CarouselModel("image2.png"));
-			ImageCollection.Add(new CarouselModel("image3.png"));
-			ImageCollection.Add(new CarouselModel("image4.png"));
-			ImageCollection.Add(new CarouselModel("image5.png"));
-		}
-		private List<CarouselModel> imageCollection = new List<CarouselModel>();
-
-		public List<CarouselModel> ImageCollection
-		{
-			get { return imageCollection; }
-			set { imageCollection = value; }
-		}
+		ImageCollection.Add(new CarouselModel("image1.png"));
+		ImageCollection.Add(new CarouselModel("image2.png"));
+		ImageCollection.Add(new CarouselModel("image3.png"));
+		ImageCollection.Add(new CarouselModel("image4.png"));
+		ImageCollection.Add(new CarouselModel("image5.png"));
 	}
+	private List<CarouselModel> imageCollection = new List<CarouselModel>();
+	public List<CarouselModel> ImageCollection
+	{
+		get { return imageCollection; }
+		set { imageCollection = value; }
+	}
+}
 {% endhighlight %}
 
 {% endtabs %}
@@ -119,28 +117,28 @@ Different set of views can be provided to every items through `ItemContent` prop
 
 {% highlight C# %}
 
-	        SfCarousel carousel = new SfCarousel();
+SfCarousel carousel = new SfCarousel();
 
-			SfCarouselItem carouselItem = new SfCarouselItem();
-			Label lbl = new Label();
-			lbl.Text = "  Item No: 1 ";
-			lbl.BackgroundColor = Color.Gray;
-			lbl.FontSize = 25;
-			lbl.VerticalTextAlignment = TextAlignment.Center;
-			carouselItem.ItemContent = lbl;
-			carousel.ItemsSource.Add(carouselItem);
+SfCarouselItem carouselItem = new SfCarouselItem();
+Label lbl = new Label();
+lbl.Text = "  Item No: 1 ";
+lbl.BackgroundColor = Color.Gray;
+lbl.FontSize = 25;
+lbl.VerticalTextAlignment = TextAlignment.Center;
+carouselItem.ItemContent = lbl;
+carousel.ItemsSource.Add(carouselItem);
 
-			SfCarouselItem carouselItem1 = new SfCarouselItem();
-			Image img = new Image();
-			img.Source = ImageSource.FromFile("image2.png");
-			img.Aspect = Aspect.AspectFit;
-			img.VerticalOptions = LayoutOptions.Center;
-			img.HeightRequest = 400;
-			img.WidthRequest = 400;
-			carouselItem1.ItemContent = img;
-			carousel.ItemsSource.Add(carouselItem1);
+SfCarouselItem carouselItem1 = new SfCarouselItem();
+Image img = new Image();
+img.Source = ImageSource.FromFile("image2.png");
+img.Aspect = Aspect.AspectFit;
+img.VerticalOptions = LayoutOptions.Center;
+img.HeightRequest = 400;
+img.WidthRequest = 400;
+carouselItem1.ItemContent = img;
+carousel.ItemsSource.Add(carouselItem1);
 
-			this.Content = carousel;	
+this.Content = carousel;	
 	
 	  
 {% endhighlight %}

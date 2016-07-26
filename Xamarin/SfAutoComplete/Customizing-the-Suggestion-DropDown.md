@@ -13,7 +13,7 @@ The suggestion list displaying behaviour can be customised based on the entered 
 
 ## Set Minimum Prefix Character
 
-Instead of displaying suggestion list on every text entry, the most possible match can be filtered and displayed after few text entries. This can be done by modifying minimum prefix character.
+Instead of displaying suggestion list on every text entry, the most possible match can be filtered and displayed after few text entries. This can be done by modifying `MinimumPrefixCharacters`.
 
 
 N> The default property value is 1.
@@ -85,7 +85,7 @@ N> The `MaximumDropDownHeight` value can be any positive integer value.
 
 ## Customizing Suggestion Box Item
 
-The suggestion list item's look can be customised with some of the basic options like item's height, text color and text size are available with autocomplete component.
+The suggestion list item's look can be customized with some of the basic options like item's height, text color and text size which are available with autocomplete component.
 
 {% tabs %}
 

@@ -21,13 +21,13 @@ N> If the angle value is positive, then the rotation is in the clockwise directi
 
 {% highlight xaml %}
 
-	<carousel:SfCarousel x:Name="carousel" RotationAngle="45" />
+	<carousel:SfCarousel x:Name="carousel" RotationAngle="90" />
 	
 {% endhighlight %}
 
 {% highlight C# %}
 
-	carousel.RotationAngle=45;
+	carousel.RotationAngle=90;
 
 {% endhighlight %}
 

@@ -99,7 +99,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ## Add BusyIndicator
 
-The following steps help to add a SfBusyIndicator control through code.
+The following steps helps to add a SfBusyIndicator control through code.
 
 * Adding namespace for the added assemblies. 
 
@@ -134,7 +134,7 @@ The following steps help to add a SfBusyIndicator control through code.
 
 {% highlight c# %}
 
-    using Syncfusion.SfBusyIndicator.XForms; 	
+    using Syncfusion.SfBusyIndicator.XForms;
 	SfBusyIndicator busyindicator = new SfBusyIndicator();
 	this.Content=busyindicator;
 	

@@ -21,7 +21,7 @@ N> The default option is suggest mode.
 
 ## Append
 
-Appends the first matching string with the entered character.
+Append - It appends the first matching string with the entered character.
 
 {% tabs %}
 

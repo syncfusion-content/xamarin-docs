@@ -48,25 +48,24 @@ Calendar Events collection can be provided to SfCalendar using the following ste
 {% tabs %}
 {% highlight xaml %}
 
-		<Calendar:SfCalendar VerticalOptions="FillAndExpand"  ShowInlineEvents="true" x:Name="calendar" ViewMode="MonthView" >
-				<CalendarSample:SfCalendar.DataSource>
-					<CalendarSample:CalendarInlineEvent Color="Fuchsia" Subject="Go To Meeting" StartTime="2016,7,7" EndTime="2016,7,7"/>
-				</CalendarSample:SfCalendar.DataSource>
-		</Calendar:SfCalendar>
+	<Calendar:SfCalendar VerticalOptions="FillAndExpand"  ShowInlineEvents="true" x:Name="calendar" ViewMode="MonthView" >
+		<CalendarSample:SfCalendar.DataSource>
+			<CalendarSample:CalendarInlineEvent Color="Fuchsia" Subject="Go To Meeting" StartTime="2016,7,7" EndTime="2016,7,7"/>
+		</CalendarSample:SfCalendar.DataSource>
+	</Calendar:SfCalendar>
 
 {% endhighlight %}
 
 {% highlight c# %}
 		   
     CalendarInlineEvent events=new CalendarInlineEvent();
-			events.StartTime=new DateTime(2016,1,1);
-			events.EndTime=new DateTime(2016,1,1);
-			events.Subject="Go to Meeting";
+	events.StartTime=new DateTime(2016,1,1);
+	events.EndTime=new DateTime(2016,1,1);
+	events.Subject="Go to Meeting";
 
-			CalendarEventCollection collection = new CalendarEventCollection();
-			collection.Add(events);
-
-			calendar.DataSource = collection;
+	CalendarEventCollection collection = new CalendarEventCollection();
+	collection.Add(events);
+	calendar.DataSource = collection;
 		   
 {% endhighlight %}
 

@@ -21,9 +21,11 @@ DataSource is a collection of SfAutoComplete items which is capable of holding a
 
 To populate items using data source, create a model class with the properties that to be bound.
 
+{% tabs %}
+
 {% highlight C# %}
 
-	public class AutoCompleteModel
+     	public class AutoCompleteModel
 		{
 			public AutoCompleteModel(string label, string imagestr)
 			{
@@ -49,11 +51,15 @@ To populate items using data source, create a model class with the properties th
 
 {% endhighlight %}
 
+{% endtabs %}
+
 Create and populate the collection in a view model class. Here, country list and its flag are populated. 
+
+{% tabs %}
 
 {% highlight C# %}
 
-	public class AutoCompleteViewModel
+	    public class AutoCompleteViewModel
 		{
 			public AutoCompleteViewModel()
 			{
@@ -75,22 +81,27 @@ Create and populate the collection in a view model class. Here, country list and
 
 {% endhighlight %}
 
+{% endtabs %}
+
 
 ### Binding the Data with Custom Template
 
-
 * Now the created collection will be bound to the data source property and `DisplayMemberPath` has to be set for displaying selected item.
+{% tabs %}
 
 {% highlight xaml %}
-
 	
-<ContentPage.Content>
+    <ContentPage.Content>
 			<autocomplete:SfAutoComplete x:Name="autocomplete" DisplayMemberPath="Label" DataSource="{Binding ItemsCollection}" HeightRequest="60" WidthRequest="400" />
 	</ContentPage.Content>
 	
 {% endhighlight %}
 
+{% endtabs %}
+
 * Setting the binding context for the items collection
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -98,7 +109,10 @@ autocomplete.BindingContext = new AutoCompleteViewModel();
 	 
 {% endhighlight %}
 
+{% endtabs %}
+
 * The above code will display the object class as string. In order to display the provided data, a data template has to be created and need to bind the Model properties. This template has to be set to `ItemTemplate` property.
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -111,13 +125,15 @@ autocomplete.BindingContext = new AutoCompleteViewModel();
          		</StackLayout>
       		</DataTemplate>
     	</ResourceDictionary>
- 	 </ContentPage.Resources>
+ 	</ContentPage.Resources>
 	
-<ContentPage.Content>
+    <ContentPage.Content>
 			<autocomplete:SfAutoComplete x:Name="autocomplete" DisplayMemberPath="Label" ItemTemplate="{StaticResource itemTemplate}" DataSource="{Binding ItemsCollection}" HeightRequest="60" WidthRequest="400" />
 	</ContentPage.Content>
 	
 {% endhighlight %}
+
+{% endtabs %}
 
 N> `DisplayMemberPath` property searches for the desired value to be displayed in textbox.
 
@@ -127,8 +143,10 @@ N> `DisplayMemberPath` property searches for the desired value to be displayed i
 
 The `AutoCompleteSource` property is used to populate the list of string to the suggestions dropdown.
 
+{% tabs %}
 	
 {% highlight c# %}
+
 	SfAutoComplete countryAutoComplete = new SfAutoComplete ();
 	List<String> countryList = new List<String>(); 
 	countryList.Add ("Iceland");
@@ -138,6 +156,8 @@ The `AutoCompleteSource` property is used to populate the list of string to the 
 	countryAutoComplete.AutoCompleteSource=countryList;
 	 
 {% endhighlight %}
+
+{% endtabs %}
 
 	
 ![](images/autocompletesource.png)

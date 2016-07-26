@@ -80,7 +80,7 @@ Create an instance of SfAutoCompleteRenderer in MainPage constructor of the Wind
 
 public MainPage()
 {
- new SfAutoCompleteRenderer();  
+    new SfAutoCompleteRenderer();  
 }
 
 {% endhighlight %}
@@ -104,7 +104,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ## Add SfAutoComplete
 
-The following steps help to add a SfAutoComplete control through code.
+The following steps helps to add a SfAutoComplete control through code.
 
 * Adding namespace for the added assemblies. 
 
@@ -131,7 +131,7 @@ The following steps help to add a SfAutoComplete control through code.
 {% highlight xaml %}
 
 	<ContentPage.Content>
-			<autocomplete:SfAutoComplete x:Name="autocomplete"/>
+		<autocomplete:SfAutoComplete x:Name="autocomplete"/>
 	</ContentPage.Content>
 	
 {% endhighlight %}
@@ -149,6 +149,8 @@ The following steps help to add a SfAutoComplete control through code.
 
 A list of string with country names are created and added to auto complete source. This list will be populated as suggestion list based on text entry.
 
+{% tabs %}
+
 {% highlight c# %}
 	SfAutoComplete countryAutoComplete = new SfAutoComplete ();
     List<String> countryName = new List<String>();
@@ -161,23 +163,24 @@ A list of string with country names are created and added to auto complete sourc
 	this.Content = countryAutoComplete;
 {% endhighlight %}
 
+{% endtabs %}
+
 
 ## Set Filter Mode
 
-The items can be displayed that matches the starting letter can be configured using `SuggestionMode` property and the displaying pattern can be set with `AutoCompleteMode` property.
+The displayed items that matches the starting letter can be configured using `SuggestionMode` property and the displaying pattern can be set with `AutoCompleteMode` property.
  
 {% tabs %}
 
 {% highlight xaml %}
 
 <ContentPage.Content>
-  	<autocomplete:SfAutoComplete Watermark="Enter a country name" x:Name="countryAutoComplete" SuggestionMode="StartsWith" AutoCompleteMode="Suggest" HeightRequest="40" MinimumPrefixCharacters="1" MaximumDropDownHeight="200" PopupDelay ="100" />
+   <autocomplete:SfAutoComplete Watermark="Enter a country name" x:Name="countryAutoComplete" SuggestionMode="StartsWith" AutoCompleteMode="Suggest" HeightRequest="40" MinimumPrefixCharacters="1" MaximumDropDownHeight="200" PopupDelay ="100" />
 </ContentPage.Content>
 {% endhighlight %}
 
 {% highlight c# %}
-	SfAutoComplete countryAutoComplete = new SfAutoComplete ();
-	
+	SfAutoComplete countryAutoComplete = new SfAutoComplete ();	
 	countryAutoComplete.SuggestionMode = SuggestionMode.StartsWith;
 	countryAutoComplete.AutoCompleteMode = AutoCompleteMode.Suggest;
 	countryAutoComplete.MaximumDropDownHeight = 200;

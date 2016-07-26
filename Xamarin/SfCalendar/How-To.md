@@ -27,20 +27,19 @@ We can perform operation while the Calendar cell is Tapped using `CalendarTapped
 </table>
 
 
-
+{% tabs %}
 
 {% highlight c# %}
 
 	calendar.OnCalendarTapped+= (object sender, CalendarTappedEventArgs args) => 
-			{
-				SfCalendar calendar = args.Calendar;
-				DateTime date = args.datetime;
-				
-			};
+	{
+		SfCalendar calendar = args.Calendar;
+		DateTime date = args.datetime;			
+	};
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 # How to Perform an Operation when the Selected Date Get Changed?
 
@@ -65,16 +64,19 @@ We can perform an operation when the selected date get changed using `SelectionC
 </tr>
 </table>
 
+{% tabs %}
 
 {% highlight c# %}
 
-	calendar.SelectionChanged += (object sender, Syncfusion.SfCalendar.XForms.SelectionChangedEventArgs args) => {
-				SfCalendar calendar = args.Calendar;
-				IList<DateTime> selectedDates = args.DateAdded;
-				IList<DateTime> deselectedDates = args.DateRemoved;
-
-			};
+	calendar.SelectionChanged += (object sender, Syncfusion.SfCalendar.XForms.SelectionChangedEventArgs args) =>
+	{
+    	SfCalendar calendar = args.Calendar;
+	    IList<DateTime> selectedDates = args.DateAdded;
+    	IList<DateTime> deselectedDates = args.DateRemoved;
+	};
 {% endhighlight %}
+
+{% endtabs %}
 
 
 # How to Perform an Operation when Navigate to Next Month?
@@ -96,15 +98,20 @@ User defined operation can be performed using `MonthChanged` event when navigati
 </tr>
 </table>
                                     
+{% tabs %}
 
 {% highlight c# %}
 
-calendar.MonthChanged += (object sender, MonthChangedEventArgs args) => { 
-				SfCalendar calendar = args.Calendar;
-				DateTime oldMonth = args.args.PreviousValue;
-				DateTime currentMonth = args.args.CurrentValue;
-			};
+        calendar.MonthChanged += (object sender, MonthChangedEventArgs args) =>
+        { 
+		    SfCalendar calendar = args.Calendar;
+		    DateTime oldMonth = args.args.PreviousValue;
+		    DateTime currentMonth = args.args.CurrentValue;
+		};
+		
 {% endhighlight %}
+
+{% endtabs %}
 
 
 # How to Perform an Operation while Dealing with Appointments?
@@ -130,20 +137,19 @@ calendar.MonthChanged += (object sender, MonthChangedEventArgs args) => {
 
 {% highlight c# %}
 
-	sfcalendar.InlineToggled += (object sender, InlineToggledEventArgs args) => {
-
-				string subject = args.selectedAppointment[0].Subject;
-				DateTime startTime = args.selectedAppointment[0].StartTime;
-				DateTime endTime = args.selectedAppointment[0].EndTime;
-		
-			};
+	sfcalendar.InlineToggled += (object sender, InlineToggledEventArgs args) => 
+	{
+		string subject = args.selectedAppointment[0].Subject;
+		DateTime startTime = args.selectedAppointment[0].StartTime;
+		DateTime endTime = args.selectedAppointment[0].EndTime;		
+	};
 {% endhighlight %}
 
 {% endtabs %}
 
 # How to Customize Cell or Month View?
 
-`OnMonthCellLoaded` event allows us to customize calendar control. It returns MonthCell args
+`OnMonthCellLoaded` event allows us to customize SfCalendar control. It returns MonthCell args
 
 <table>
 <tr>
@@ -156,29 +162,32 @@ calendar.MonthChanged += (object sender, MonthChangedEventArgs args) => {
 </tr>
 </table>
 
+{% tabs %}
+
 {% highlight c# %}
 
 	calendar.OnMonthCellLoaded += (object sender, Syncfusion.SfCalendar.XForms.MonthCell args) =>
 	{
-			if ((args.Date.DayOfWeek == DayOfWeek.Sunday || args.Date.DayOfWeek == DayOfWeek.Saturday))
-			{
-				args.BackgroundColor = Color.Gray;
-				args.TextColor = Color.Red;
-			}
+		if ((args.Date.DayOfWeek == DayOfWeek.Sunday || args.Date.DayOfWeek == DayOfWeek.Saturday))
+		{
+			args.BackgroundColor = Color.Gray;
+			args.TextColor = Color.Red;
+		}
 	};
 {% endhighlight %}
+
+{% endtabs %}
 
 
 # How to Resize the SfCalendar Control
 
 SfCalendar control can be resized using `WidthRequest` and `HeightRequest` properties in SfCalendar control.
 
-
 {% tabs %}
 
 {% highlight c# %}
 
- SfCalendar calendar = new SfCalendar();
+SfCalendar calendar = new SfCalendar();
 calendar.WidthRequest = 200;
 calendar.HeightRequest = 200;
 	

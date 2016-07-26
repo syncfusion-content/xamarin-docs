@@ -20,7 +20,7 @@ The header and footer contents are optional and Drawer content is the mandatory 
 		
 ## Drawer Main Content
 
-The sliding main content of the NavigationDrawer can be set with any view using `DrawerContentView`. This part mostly holds the list of menus that to be selected to display the Main content.
+The sliding main content of the SfNavigationDrawer can be set with any view using `DrawerContentView`. This part mostly holds the list of menus that has to be selected to display the Main content.
 
 The control has been initialized in Xaml
 
@@ -40,27 +40,27 @@ and the content has set using `DrawerContentView` property.
 
 {% highlight c# %}
 
-	StackLayout mainStack = new StackLayout ();
-	mainStack.Opacity = 1;
-	mainStack.Orientation = StackOrientation.Vertical;
-	mainStack.HeightRequest = 500;
-	mainStack.BackgroundColor = Color.White;
+StackLayout mainStack = new StackLayout ();
+mainStack.Opacity = 1;
+mainStack.Orientation = StackOrientation.Vertical;
+mainStack.HeightRequest = 500;
+mainStack.BackgroundColor = Color.White;
 
-	ObservableCollection<String> list = new ObservableCollection<string> ();
-	list.Add ("Home");
-	list.Add ("Profile");
-	list.Add ("Inbox");
-	list.Add ("Outbox");
-    list.Add ("Sent");
-	list.Add ("Draft");
+ObservableCollection<String> list = new ObservableCollection<string> ();
+list.Add ("Home");
+list.Add ("Profile");
+list.Add ("Inbox");
+list.Add ("Outbox");
+list.Add ("Sent");
+list.Add ("Draft");
 
-	ListView listView = new ListView();
-	listView.WidthRequest= 200;
-	listView.VerticalOptions = LayoutOptions.FillAndExpand;
-	listView.ItemsSource = list;
-	mainStack.Children.Add (listView);
+ListView listView = new ListView();
+listView.WidthRequest= 200;
+listView.VerticalOptions = LayoutOptions.FillAndExpand;
+listView.ItemsSource = list;
+mainStack.Children.Add (listView);
             
-    navigationDrawer.DrawerContentView = mainStack;
+navigationDrawer.DrawerContentView = mainStack;
   
 {% endhighlight %}
 
@@ -76,45 +76,45 @@ Instead of providing everyting in the drawer content view, `DrawerHeaderView` pr
 
 {% highlight xaml %}
     
-    <navigation:SfNavigationDrawer x:Name="navigationDrawer">
-        <navigation:SfNavigationDrawer.DrawerHeaderView>
-             <StackLayout x:Name="headerLayout" Orientation="Vertical" HeightRequest="200" WidthRequest="275">
-                    <Image x:Name="image" HeightRequest="100" WidthRequest="70" Source="user.png" />
-                    <Label x:Name="header" Text="James Pollock" FontSize="20" HeightRequest="30" WidthRequest="140" /> 
-             </StackLayout>
-        </navigation:SfNavigationDrawer.DrawerHeaderView>
-    </navigation:SfNavigationDrawer>
+<navigation:SfNavigationDrawer x:Name="navigationDrawer">
+    <navigation:SfNavigationDrawer.DrawerHeaderView>
+         <StackLayout x:Name="headerLayout" Orientation="Vertical" HeightRequest="200" WidthRequest="275">
+                <Image x:Name="image" HeightRequest="100" WidthRequest="70" Source="user.png" />
+                <Label x:Name="header" Text="James Pollock" FontSize="20" HeightRequest="30" WidthRequest="140" /> 
+         </StackLayout>
+    </navigation:SfNavigationDrawer.DrawerHeaderView>
+</navigation:SfNavigationDrawer>
 {% endhighlight %}
 
 {% highlight c# %}
 
-	StackLayout headerLayout = new StackLayout ();
-	headerLayout.Orientation = StackOrientation.Vertical;
-	headerLayout.BackgroundColor = Color.FromHex ("#1aa1d6");
-	headerLayout.VerticalOptions = LayoutOptions.CenterAndExpand;
-	headerLayout.HorizontalOptions = LayoutOptions.CenterAndExpand;
-	headerLayout.HeightRequest = 200;
-	headerLayout.WidthRequest = 275;
-	Image image = new Image ();
-	image.Source = ImageSource.FromFile("user.png");
-	image.HeightRequest = 100;
-	image.WidthRequest =  70;
-	image.HorizontalOptions = LayoutOptions.CenterAndExpand;
-	image.VerticalOptions = LayoutOptions.Center;
-	image.BackgroundColor = Color.FromHex ("#1aa1d6");
-	headerLayout.Children.Add (image);
+StackLayout headerLayout = new StackLayout ();
+headerLayout.Orientation = StackOrientation.Vertical;
+headerLayout.BackgroundColor = Color.FromHex ("#1aa1d6");
+headerLayout.VerticalOptions = LayoutOptions.CenterAndExpand;
+headerLayout.HorizontalOptions = LayoutOptions.CenterAndExpand;
+headerLayout.HeightRequest = 200;
+headerLayout.WidthRequest = 275;
+Image image = new Image ();
+image.Source = ImageSource.FromFile("user.png");
+image.HeightRequest = 100;
+image.WidthRequest =  70;
+image.HorizontalOptions = LayoutOptions.CenterAndExpand;
+image.VerticalOptions = LayoutOptions.Center;
+image.BackgroundColor = Color.FromHex ("#1aa1d6");
+headerLayout.Children.Add (image);
 
-	Label header = new Label ();
-	header.Text  = "James Pollock";
-    header.FontSize = 20;
-	header.HeightRequest = 30;
-	header.WidthRequest = 140;
-	header.TextColor = Color.White;
-	header.HorizontalOptions = LayoutOptions.Center;
-	header.VerticalOptions = LayoutOptions.Center;
-	header.BackgroundColor = Color.FromHex ("#1aa1d6");
-	headerLayout.Children.Add (header);			
-	navigationDrawer.DrawerHeaderView=headerLayout;
+Label header = new Label ();
+header.Text  = "James Pollock";
+header.FontSize = 20;
+header.HeightRequest = 30;
+header.WidthRequest = 140;
+header.TextColor = Color.White;
+header.HorizontalOptions = LayoutOptions.Center;
+header.VerticalOptions = LayoutOptions.Center;
+header.BackgroundColor = Color.FromHex ("#1aa1d6");
+headerLayout.Children.Add (header);			
+navigationDrawer.DrawerHeaderView=headerLayout;
   
 {% endhighlight %}
 
@@ -130,19 +130,19 @@ Similar to drawer header view, the `DrawerFooterView` property can be used to se
 
 {% highlight xaml %}
 
-	<navigation:SfNavigationDrawer x:Name="navigationDrawer">
-        <navigation:SfNavigationDrawer.DrawerFooterView>
-            <StackLayout x:Name="footerLayout" BackgroundColor="Navy" />           
-        </navigation:SfNavigationDrawer.DrawerFooterView>
- 	</navigation:SfNavigationDrawer>
+<navigation:SfNavigationDrawer x:Name="navigationDrawer">
+    <navigation:SfNavigationDrawer.DrawerFooterView>
+        <StackLayout x:Name="footerLayout" BackgroundColor="Navy" />           
+    </navigation:SfNavigationDrawer.DrawerFooterView>
+</navigation:SfNavigationDrawer>
 	
 {% endhighlight %}
 
 {% highlight c# %}
 
-	StackLayout footerLayout = new StackLayout ();
-	footerLayout.BackgroundColor = Color.Navy;		
-    navigationDrawer.DrawerFooterView=footerLayout;
+StackLayout footerLayout = new StackLayout ();
+footerLayout.BackgroundColor = Color.Navy;		
+navigationDrawer.DrawerFooterView=footerLayout;
   
 {% endhighlight %}
 
@@ -160,17 +160,17 @@ Gets or sets the height and width of the DrawerView panel in the NavigationDrawe
 
 {% highlight xaml %} 
 
-	<navigation:SfNavigationDrawer x:Name="navigationDrawer" DrawerHeight="300" DrawerWidth="300" />
+<navigation:SfNavigationDrawer x:Name="navigationDrawer" DrawerHeight="300" DrawerWidth="300" />
 	
 {% endhighlight %}
 
 {% highlight c# %}
         
-        navigationDrawer.DrawerHeight = 300;
-        navigationDrawer.DrawerWidth = 300;
+navigationDrawer.DrawerHeight = 300;
+navigationDrawer.DrawerWidth = 300;
   
 {% endhighlight %}
 
 {% endtabs %}
 
-N> The Drawer width will be handy when [Position](/Xamarin/SfNavigationDrawer/Position "Configuring The Drawer In Different Sides") is left or right and `DrawerHeight` property can be used when Position is Top or bottom
+N> The Drawer width will be handy when [Position](/Xamarin/SfNavigationDrawer/Position "Configuring The Drawer In Different Sides") is left or right and `DrawerHeight` property can be used when Position is Top or bottom.

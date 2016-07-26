@@ -106,7 +106,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ## Add SfNavigationDrawer
 
-The SfNavigationDrawer control configured entirely in C# code or by using XAML markup. The following steps explain on how to create a SfNavigationDrawer and configure its elements.
+The SfNavigationDrawer control configured entirely in C# code or by using XAML markup. The following steps explains how to create a SfNavigationDrawer and configure its elements.
 
 * Adding namespace for the added assemblies. 
 
@@ -132,14 +132,14 @@ The SfNavigationDrawer control configured entirely in C# code or by using XAML m
 
 {% highlight xaml %}
 
-	<navigation:SfNavigationDrawer x:Name="navigationDrawer"/>
+<navigation:SfNavigationDrawer x:Name="navigationDrawer"/>
 	
 {% endhighlight %}
 
 {% highlight c# %}
 
-	SfNavigationDrawer navigationDrawer=new SfNavigationDrawer();
-	this.Content=navigationDrawer;
+SfNavigationDrawer navigationDrawer=new SfNavigationDrawer();
+this.Content=navigationDrawer;
 
 {% endhighlight %}
 
@@ -167,27 +167,27 @@ and the content has set using `DrawerContentView` property.
 
 {% highlight c# %}
 
-	StackLayout mainStack = new StackLayout ();
-	mainStack.Opacity = 1;
-	mainStack.Orientation = StackOrientation.Vertical;
-	mainStack.HeightRequest = 500;
-	mainStack.BackgroundColor = Color.White;
+StackLayout mainStack = new StackLayout ();
+mainStack.Opacity = 1;
+mainStack.Orientation = StackOrientation.Vertical;
+mainStack.HeightRequest = 500;
+mainStack.BackgroundColor = Color.White;
 
-	ObservableCollection<String> list = new ObservableCollection<string> ();
-	list.Add ("Home");
-	list.Add ("Profile");
-	list.Add ("Inbox");
-	list.Add ("Outbox");
-    list.Add ("Sent");
-	list.Add ("Draft");
+ObservableCollection<String> list = new ObservableCollection<string> ();
+list.Add ("Home");
+list.Add ("Profile");
+list.Add ("Inbox");
+list.Add ("Outbox");
+list.Add ("Sent");
+list.Add ("Draft");
 
-	ListView listView = new ListView();
-	listView.WidthRequest= 200;
-	listView.VerticalOptions = LayoutOptions.FillAndExpand;
-	listView.ItemsSource = list;
-	mainStack.Children.Add (listView);
+ListView listView = new ListView();
+listView.WidthRequest= 200;
+listView.VerticalOptions = LayoutOptions.FillAndExpand;
+listView.ItemsSource = list;
+mainStack.Children.Add (listView);
             
-    navigationDrawer.DrawerContentView = mainStack;
+navigationDrawer.DrawerContentView = mainStack;
   
 {% endhighlight %}
 
@@ -202,45 +202,45 @@ Instead of providing everyting in the drawer content view, `DrawerHeaderView` pr
 
 {% highlight xaml %}
     
-    <navigation:SfNavigationDrawer x:Name="navigationDrawer">
-        <navigation:SfNavigationDrawer.DrawerHeaderView>
-             <StackLayout x:Name="headerLayout" Orientation="Vertical" HeightRequest="200" WidthRequest="275">
-                    <Image x:Name="image" HeightRequest="100" WidthRequest="70" Source="user.png" />
-                    <Label x:Name="header" Text="James Pollock" FontSize="20" HeightRequest="30" WidthRequest="140" /> 
-             </StackLayout>
-        </navigation:SfNavigationDrawer.DrawerHeaderView>
-    </navigation:SfNavigationDrawer>
+<navigation:SfNavigationDrawer x:Name="navigationDrawer">
+    <navigation:SfNavigationDrawer.DrawerHeaderView>
+         <StackLayout x:Name="headerLayout" Orientation="Vertical" HeightRequest="200" WidthRequest="275">
+                <Image x:Name="image" HeightRequest="100" WidthRequest="70" Source="user.png" />
+                <Label x:Name="header" Text="James Pollock" FontSize="20" HeightRequest="30" WidthRequest="140" /> 
+         </StackLayout>
+    </navigation:SfNavigationDrawer.DrawerHeaderView>
+</navigation:SfNavigationDrawer>
 {% endhighlight %}
 
 {% highlight c# %}
 
-	StackLayout headerLayout = new StackLayout ();
-	headerLayout.Orientation = StackOrientation.Vertical;
-	headerLayout.BackgroundColor = Color.FromHex ("#1aa1d6");
-	headerLayout.VerticalOptions = LayoutOptions.CenterAndExpand;
-	headerLayout.HorizontalOptions = LayoutOptions.CenterAndExpand;
-	headerLayout.HeightRequest = 200;
-	headerLayout.WidthRequest = 275;
-	Image image = new Image ();
-	image.Source = ImageSource.FromFile("user.png");
-	image.HeightRequest = 100;
-	image.WidthRequest =  70;
-	image.HorizontalOptions = LayoutOptions.CenterAndExpand;
-	image.VerticalOptions = LayoutOptions.Center;
-	image.BackgroundColor = Color.FromHex ("#1aa1d6");
-	headerLayout.Children.Add (image);
+StackLayout headerLayout = new StackLayout ();
+headerLayout.Orientation = StackOrientation.Vertical;
+headerLayout.BackgroundColor = Color.FromHex ("#1aa1d6");
+headerLayout.VerticalOptions = LayoutOptions.CenterAndExpand;
+headerLayout.HorizontalOptions = LayoutOptions.CenterAndExpand;
+headerLayout.HeightRequest = 200;
+headerLayout.WidthRequest = 275;
+Image image = new Image ();
+image.Source = ImageSource.FromFile("user.png");
+image.HeightRequest = 100;
+image.WidthRequest =  70;
+image.HorizontalOptions = LayoutOptions.CenterAndExpand;
+image.VerticalOptions = LayoutOptions.Center;
+image.BackgroundColor = Color.FromHex ("#1aa1d6");
+headerLayout.Children.Add (image);
 
-	Label header = new Label ();
-	header.Text  = "James Pollock";
-    header.FontSize = 20;
-	header.HeightRequest = 30;
-	header.WidthRequest = 140;
-	header.TextColor = Color.White;
-	header.HorizontalOptions = LayoutOptions.Center;
-	header.VerticalOptions = LayoutOptions.Center;
-	header.BackgroundColor = Color.FromHex ("#1aa1d6");
-	headerLayout.Children.Add (header);			
-	navigationDrawer.DrawerHeaderView=headerLayout;
+Label header = new Label ();
+header.Text  = "James Pollock";
+header.FontSize = 20;
+header.HeightRequest = 30;
+header.WidthRequest = 140;
+header.TextColor = Color.White;
+header.HorizontalOptions = LayoutOptions.Center;
+header.VerticalOptions = LayoutOptions.Center;
+header.BackgroundColor = Color.FromHex ("#1aa1d6");
+headerLayout.Children.Add (header);			
+navigationDrawer.DrawerHeaderView=headerLayout;
   
 {% endhighlight %}
 
@@ -254,13 +254,13 @@ Drawer width and height can be set through `DrawerHeight` and `DrawerWidth` prop
 
 {% highlight xaml %}
 
-	<navigation:SfNavigationDrawer x:Name="navigationDrawer"  DrawerWidth="300" />
+<navigation:SfNavigationDrawer x:Name="navigationDrawer"  DrawerWidth="300" />
 	
 {% endhighlight %}
 
 {% highlight c# %}        
         
-        navigationDrawer.DrawerWidth = 300;
+navigationDrawer.DrawerWidth = 300;
   
 {% endhighlight %}
 
@@ -294,33 +294,33 @@ The main view of the SfNavigationDrawer can be set using `ContentView` property 
 
 {% highlight c# %}
 	
-	Button imageButton = new Button();
-	imageButton.Source = (FileImageSource)ImageSource.FromFile ("_menu_.png");
-	imageButton.WidthRequest=50;
+Button imageButton = new Button();
+imageButton.Source = (FileImageSource)ImageSource.FromFile ("_menu_.png");
+imageButton.WidthRequest=50;
 	
-	Label homeLabel=new Label();
-	homeLabel.Text="Home";
-	homeLabel.FontSize=15;
-	homeLabel.TextColor=Color.White;
-	homeLabel.HorizontalTextAlignment=TextAlignment.Center;
-	homeLabel.VerticalTextAlignment=TextAlignment.Center;
+Label homeLabel=new Label();
+homeLabel.Text="Home";
+homeLabel.FontSize=15;
+homeLabel.TextColor=Color.White;
+homeLabel.HorizontalTextAlignment=TextAlignment.Center;
+homeLabel.VerticalTextAlignment=TextAlignment.Center;
 	
-	StackLayout headerFrame=new StackLayout(); 
-	headerFrame.Orientation = StackOrientation.Horizontal;
-	headerFrame.Children.Add(imageButton);
-	headerFrame.Children.Add(homeLabel);
+StackLayout headerFrame=new StackLayout(); 
+headerFrame.Orientation = StackOrientation.Horizontal;
+headerFrame.Children.Add(imageButton);
+headerFrame.Children.Add(homeLabel);
 	
-	Label mainLabel=new Label();
-	mainLabel.FontSize=14;
-	mainLabel.TextColor=Color.Black;
-	mainLabel.Text="Lorem ipsum dolor sit amet, lacus amet amet ultricies. Quisque mi venenatis morbi libero, orci dis, mi ut et class porta, massa ligula magna enim, aliquam orci vestibulum tempus. Turpis facilisis vitae consequat, cum a a, turpis dui consequat massa in dolor per, felis non amet. Auctor eleifend in omnis elit vestibulum, donec non elementum tellus est mauris, id aliquam, at lacus, arcu pretium proin lacus dolor et. Eu tortor, vel ultrices amet dignissim mauris vehicula. Lorem tortor neque, purus taciti quis id. Elementum integer orci accumsan minim phasellus vel.";
+Label mainLabel=new Label();
+mainLabel.FontSize=14;
+mainLabel.TextColor=Color.Black;
+mainLabel.Text="Lorem ipsum dolor sit amet, lacus amet amet ultricies. Quisque mi venenatis morbi libero, orci dis, mi ut et class porta, massa ligula magna enim, aliquam orci vestibulum tempus. Turpis facilisis vitae consequat, cum a a, turpis dui consequat massa in dolor per, felis non amet. Auctor eleifend in omnis elit vestibulum, donec non elementum tellus est mauris, id aliquam, at lacus, arcu pretium proin lacus dolor et. Eu tortor, vel ultrices amet dignissim mauris vehicula. Lorem tortor neque, purus taciti quis id. Elementum integer orci accumsan minim phasellus vel.";
 	
-	StackLayout ContentFrame=new StackLayout();
-	ContentFrame.Orientation = StackOrientation.Vertical; 
-	ContentFrame.BackgroundColor=Color.White;
-	ContentFrame.Children.Add(headerFrame);
-	ContentFrame.Children.Add(mainLabel);
-	navigationDrawer.ContentView=ContentFrame;
+StackLayout ContentFrame=new StackLayout();
+ContentFrame.Orientation = StackOrientation.Vertical; 
+ContentFrame.BackgroundColor=Color.White;
+ContentFrame.Children.Add(headerFrame);
+ContentFrame.Children.Add(mainLabel);
+navigationDrawer.ContentView=ContentFrame;
   
 {% endhighlight %}
 
@@ -345,13 +345,13 @@ N> The default option is Left.
 
 {% highlight xaml %}
 
-	<navigation:SfNavigationDrawer x:Name="navigationDrawer" Position="Left">
+<navigation:SfNavigationDrawer x:Name="navigationDrawer" Position="Left">
   	
 {% endhighlight %}
 	
 {% highlight c# %}
 
-	navigationDrawer.Position=Position.Left;
+navigationDrawer.Position=Position.Left;
 
 {% endhighlight %}
 
@@ -372,13 +372,13 @@ N> The default Transition is SlideOnTop.
 
 {% highlight xaml %}
 
-	<navigation:SfNavigationDrawer x:Name="navigationDrawer" Transition="SlideOnTop">
+<navigation:SfNavigationDrawer x:Name="navigationDrawer" Transition="SlideOnTop">
 	
 {% endhighlight %}
 	
 {% highlight c# %} 
 
-	navigationDrawer.Transition=Transition.SlideOnTop;
+navigationDrawer.Transition=Transition.SlideOnTop;
 
 {% endhighlight %}
 

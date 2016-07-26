@@ -135,6 +135,7 @@ The SfNumericTextBox control configured entirely in C# code or by using XAML mar
 {% highlight c# %}
 
 	SfNumericTextBox numericTextBox=new SfNumericTextBox();
+	this.Content = numericTextBox;
 
 {% endhighlight %}
 
@@ -154,7 +155,9 @@ The SfNumericTextBox control display value can be set using `Value` property.
 
 {% highlight c# %}
 
+SfNumericTextBox numericTextBox=new SfNumericTextBox();
 	numericTextBox.Value = 123.45;
+	this.Content = numericTextBox;
 
 {% endhighlight %}
 
@@ -163,21 +166,22 @@ The SfNumericTextBox control display value can be set using `Value` property.
 
 ## Enable Parsing Mode
 
-The value of the SfNumericTextBox can be parsed based on the `ParsingMode` property. 
-
-N> The `ParsingMode` is of type Parsers containing enum values of Double and Decimal.
+The value parser type can be decided between double and decimal using `ParsingMode` property
 
 {% tabs %}
 
 {% highlight xaml %}
 
-	<numeric:SfNumericTextBox x:Name="numericTextBox" ParsingMode="Decimal" />
+	<numeric:SfNumericTextBox x:Name="numericTextBox" Value="123.45" ParsingMode="Decimal" />
 	
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfNumericTextBox numericTextBox=new SfNumericTextBox();
 	numericTextBox.ParsingMode=Parsers.Decimal;
+	numericTextBox.Value = 123.45;
+	this.Content = numericTextBox;
 	
 {% endhighlight %}
 
@@ -186,30 +190,29 @@ N> The `ParsingMode` is of type Parsers containing enum values of Double and Dec
 
 ## Add Format String
 
-The `FormatString` property determines the format specifier by which the display text has to be formatted. 
+Providing currency format to display values using `FormatString` property
 
-It has three types,
-
-* c - Display the value with currency notation.
-* n – Display the value in number format.
-* p – Display the value in Percentage.
-
-N> The control displays the formatted text on lost focus. Default Value of `FormatString` is "n".
 
 {% tabs %}
 
 {% highlight xaml %}
 
-	<numeric:SfNumericTextBox x:Name="numericTextBox" FormatString="c" />
+
+	<numeric:SfNumericTextBox x:Name="numericTextBox" Value="123.45" ParsingMode="Decimal" FormatString="c" />
 	
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfNumericTextBox numericTextBox=new SfNumericTextBox();
 	numericTextBox.FormatString = "c";
+	numericTextBox.Value = 123.45;
+	this.Content = numericTextBox;
 
 {% endhighlight %}
 
 {% endtabs %}
+
+N> The control displays the formatted text on lost focus. Default Value of `FormatString` is "n".
 
 ![](images/gettingstarted.png)

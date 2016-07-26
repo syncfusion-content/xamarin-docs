@@ -23,7 +23,7 @@ N> The control displays the formatted text on lost focus. Default Value of `Form
 {% tabs %}
 	
 {% highlight C# %}
-	
+	SfNumericUpDown numericUpDown=new SfNumericUpDown();
 	numericUpDown.FormatString="c";
 	 
 {% endhighlight %}
@@ -51,6 +51,7 @@ N> The control displays the formatted text on lost focus. Default Value of `Form
 	
 {% highlight C# %}
 	
+	SfNumericUpDown numericUpDown=new SfNumericUpDown();
 	numericUpDown.FormatString="n";
 	 
 {% endhighlight %}
@@ -65,6 +66,7 @@ N> The control displays the formatted text on lost focus. Default Value of `Form
 	
 {% highlight C# %}
 
+SfNumericUpDown numericUpDown=new SfNumericUpDown();
 	numericUpDown.FormatString="p";
 	 
 {% endhighlight %}
@@ -98,6 +100,7 @@ N> The `ParsingMode` is of type Parsers containing enum values of Double and Dec
 
 {% highlight C# %}
 
+SfNumericUpDown numericUpDown=new SfNumericUpDown();
 	numericUpDown.ParsingMode=ParsingMode.Decimal;
 	  
 {% endhighlight %}
@@ -110,13 +113,9 @@ N> The `ParsingMode` is of type Parsers containing enum values of Double and Dec
 
 ## Compute to Percentage
 
-The `PercentDisplayMode` property can be used to display numeric data in Percent mode. 
+When the control is in percentage format, the value can be displayed in two ways as follows
 
-N> The control displays the percent value on lost focus. 
-
-It provides the following options:
-
-* `Value`: Displays the value with percentage symbol.
+* `Value`: Displays the actual value with percentage symbol.
 
 {% tabs %}
 
@@ -128,6 +127,8 @@ It provides the following options:
 
 {% highlight C# %}
 
+SfNumericUpDown numericUpDown=new SfNumericUpDown();
+	numericUpDown.FormatString="p";
 	numericUpDown.PercentDisplayMode=PercentDisplayMode.Value;
 
 {% endhighlight %}
@@ -135,7 +136,7 @@ It provides the following options:
 {% endtabs %}
 
 
-* `Compute`: Displays the computed value with percentage symbol.
+* `Compute`: Displays the value computed by 100 with percentage symbol.
 
 {% tabs %}
 
@@ -147,11 +148,15 @@ It provides the following options:
 
 {% highlight C# %}
 
+SfNumericUpDown numericUpDown=new SfNumericUpDown();
+	numericUpDown.FormatString="p";
 	numericUpDown.PercentDisplayMode=PercentDisplayMode.Compute;
 
 {% endhighlight %}
 
 {% endtabs %}
+
+N> The control displays the percent value on lost focus. 
 
 
 ![](images/PercentageDisplayMode.png)

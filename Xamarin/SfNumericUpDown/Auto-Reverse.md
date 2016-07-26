@@ -16,6 +16,7 @@ N> By default the property value is false.
 
 {% highlight C# %}
 
+SfNumericUpDown numericUpDown=new SfNumericUpDown();
 	numericUpDown.AutoReverse = true;
 
 {% endhighlight %}
@@ -43,7 +44,7 @@ N> By default the minimum property value is 0 and maximum property value is 100.
 {% endhighlight %}
 
 {% highlight C# %}
-
+SfNumericUpDown numericUpDown=new SfNumericUpDown();
 	numericUpDown.Minimum = 0;
 	numerucUpDown.Maximum = 100
 
@@ -71,6 +72,7 @@ N> By default the property value is 1.
 
 {% highlight C# %}
 
+SfNumericUpDown numericUpDown=new SfNumericUpDown();
 	numericUpDown.StepValue = 6;
 
 {% endhighlight %}

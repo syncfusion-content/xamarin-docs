@@ -29,8 +29,8 @@ It can be done using `DrawerWidth` and `DrawerHeight` properties in SfNavigation
 
 {% highlight c# %}
 
-    navigationDrawer.DrawerHeight=300;
-    navigationDrawer.DrawerWidth=300;
+navigationDrawer.DrawerHeight=300;
+navigationDrawer.DrawerWidth=300;
 
 {% endhighlight %}
 

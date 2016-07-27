@@ -116,20 +116,20 @@ autocomplete.BindingContext = new AutoCompleteViewModel();
 
 {% highlight xaml %}
 
-	<ContentPage.Resources>
-    	<ResourceDictionary>
-     	 	<DataTemplate x:Key="itemTemplate">
-       	 		<StackLayout Orientation="Horizontal">
-        			<Image Source="{Binding Image}" HeightRequest="50" WidthRequest="50" Aspect="AspectFit"/>
-            		<Label Text="{Binding Label}" TextColor="Black"/>            
-         		</StackLayout>
-      		</DataTemplate>
-    	</ResourceDictionary>
- 	</ContentPage.Resources>
+<ContentPage.Resources>
+   <ResourceDictionary>
+     	<DataTemplate x:Key="itemTemplate">
+       	 <StackLayout Orientation="Horizontal">
+        	<Image Source="{Binding Image}" HeightRequest="50" WidthRequest="50" Aspect="AspectFit"/>
+            <Label Text="{Binding Label}" TextColor="Black"/>            
+         </StackLayout>
+      </DataTemplate>
+   </ResourceDictionary>
+</ContentPage.Resources>
 	
-    <ContentPage.Content>
-			<autocomplete:SfAutoComplete x:Name="autocomplete" DisplayMemberPath="Label" ItemTemplate="{StaticResource itemTemplate}" DataSource="{Binding ItemsCollection}" HeightRequest="60" WidthRequest="400" />
-	</ContentPage.Content>
+<ContentPage.Content>
+     <autocomplete:SfAutoComplete x:Name="autocomplete" DisplayMemberPath="Label" ItemTemplate="{StaticResource itemTemplate}" DataSource="{Binding ItemsCollection}" HeightRequest="60" WidthRequest="400" />
+</ContentPage.Content>
 	
 {% endhighlight %}
 
@@ -147,13 +147,13 @@ The `AutoCompleteSource` property is used to populate the list of string to the 
 	
 {% highlight c# %}
 
-	SfAutoComplete countryAutoComplete = new SfAutoComplete ();
-	List<String> countryList = new List<String>(); 
-	countryList.Add ("Iceland");
-	countryList.Add ("India");
-	countryList.Add ("Indonesia");
-	countryList.Add ("Iran");
-	countryAutoComplete.AutoCompleteSource=countryList;
+SfAutoComplete countryAutoComplete = new SfAutoComplete ();
+List<String> countryList = new List<String>(); 
+countryList.Add ("Iceland");
+countryList.Add ("India");
+countryList.Add ("Indonesia");
+countryList.Add ("Iran");
+countryAutoComplete.AutoCompleteSource=countryList;
 	 
 {% endhighlight %}
 

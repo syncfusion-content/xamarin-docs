@@ -47,19 +47,18 @@ To display custom labels, `ShowCustomLabel` property should be set to true and n
 
 {% highlight c# %}
 	
-	 SfRangeSlider rangeSlider; 
-	 ObservableCollection<Items>  customCollection;
-	 public RangeSliderPage ()
-     {
-       	   customCollection = new ObservableCollection<Items> ();
-           customCollection.Add(new Items(){Label = "Min", Value= 0});
-           customCollection.Add(new Items() { Label = "Max", Value = 100 });
-           rangeSlider = new SfRangeSlider ();
-           rangeSlider.HeightRequest = 400;
-           rangeSlider.ShowCustomLabel = true;
-           rangeSlider.CustomLabels = customCollection
-
-	 }
+SfRangeSlider rangeSlider; 
+ObservableCollection<Items>  customCollection;
+public RangeSliderPage ()
+{
+     customCollection = new ObservableCollection<Items> ();
+     customCollection.Add(new Items(){Label = "Min", Value= 0});
+     customCollection.Add(new Items() { Label = "Max", Value = 100 });
+     rangeSlider = new SfRangeSlider ();
+     rangeSlider.HeightRequest = 400;
+     rangeSlider.ShowCustomLabel = true;
+     rangeSlider.CustomLabels = customCollection
+}
 
 {% endhighlight %}
 
@@ -116,7 +115,7 @@ Available options for this property are:
 
 ## Label Placement
 
-The `LabelPlacement` property describes the position of the labels respective to ticks. 
+The `LabelPlacement` property describes the position of the custom labels respective to ticks. 
 
 Available options for this property are:
 

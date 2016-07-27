@@ -28,27 +28,3 @@ N> The `MaximumNumberDecimalDigits` property can be provided with positive value
 {% endhighlight %}
 
 {% endtabs %}
-
-## AutoReverse
-
-While incrementing, the control will start from Minimum once it reaches the Maximum and vice-versa.
-
-N> By default the property value is false.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-	<numeric:SfNumericUpDown x:Name="numericUpDown" AutoReverse="true"/>
-	
-{% endhighlight %}
-
-{% highlight C# %}
-
-	numericUpDown.AutoReverse = true;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-

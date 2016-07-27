@@ -13,7 +13,7 @@ The ToolTip shows the current value based on thumb position.
 
 ## Set ToolTip Precision
 
-The `ToolTipPrecision` property is used to define the precision of the value displayed in the Tooltip.
+The `ToolTipPrecision` property is used to define the precision of the value displayed in the ToolTip.
 
 {% tabs %}
 

@@ -11,7 +11,7 @@ documentation: ug
 
 # Appearance and Styling
 
-This section explains about the various customizations available in SfRating control.
+This section explains about the various customization options available in SfRating control.
 
 ## Set Size
 

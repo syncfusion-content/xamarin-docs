@@ -53,7 +53,7 @@ The `UnRatedFill` property fills the unrated area with the specified solid color
 
 {% highlight C# %}
 
-	ratingSettings.UnRatedFill=Color.GRAY;
+	ratingSettings.UnRatedFill=Color.Gray;
 
 {% endhighlight %}
 
@@ -79,7 +79,7 @@ The RatedStroke property sets the stroke for the rated area with the specified s
 
 {% highlight C# %}
 
-	ratingSettings.RatedStroke=Color.GREEN;
+	ratingSettings.RatedStroke=Color.Green;
 
 {% endhighlight %}
 
@@ -101,7 +101,7 @@ The `UnRatedStroke` property sets the stroke for the unrated area with the speci
 
 {% highlight C# %}
 
-	ratingSettings.UnRatedStroke=Color.BLACK;
+	ratingSettings.UnRatedStroke=Color.Black;
 
 {% endhighlight %}
 

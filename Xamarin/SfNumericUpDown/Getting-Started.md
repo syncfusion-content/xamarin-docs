@@ -103,7 +103,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ## Add SfNumericUpDown
 
-The SfNumericUpDown control configured entirely in C# code or by using XAML markup. The following steps explain on how to create a SfNumericUpDown and configure its elements.
+The SfNumericUpDown control configured entirely in C# code or by using XAML markup. The following steps explains how to create a SfNumericUpDown and configure its elements.
 
 * Adding namespace for the added assemblies. 
 

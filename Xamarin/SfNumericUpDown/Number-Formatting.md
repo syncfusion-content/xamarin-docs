@@ -18,7 +18,7 @@ N> The control displays the formatted text on lost focus. Default Value of `Form
 
 ### Display Currency Notation
 
-`c` - Display the value with currency notation.
+`c` - Displays the value with currency notation.
 
 {% tabs %}
 	
@@ -38,7 +38,7 @@ N> The control displays the formatted text on lost focus. Default Value of `Form
 
 ### Display Number Notation
 
-`n` – Display the value in number format.
+`n` – Displays the value in number format.
 	
 {% tabs %}	
 
@@ -59,7 +59,7 @@ N> The control displays the formatted text on lost focus. Default Value of `Form
 
 ### Display Percentage Notation
 
-`p` – Display the value in Percentage.
+`p` – Displays the value in Percentage.
 	
 {% tabs %}	
 	
@@ -84,7 +84,7 @@ N> Instead of using above `FormatString` types, we can provide any symbol or val
 
 ## Parser Input Value
 
-The value of the NumericUpDown can be parsed based on the `ParsingMode` property. 
+The value of the SfNumericUpDown can be parsed based on the `ParsingMode` property. 
 
 N> The `ParsingMode` is of type Parsers containing enum values of Double and Decimal. The default Value for `ParsingMode` is Double.
 

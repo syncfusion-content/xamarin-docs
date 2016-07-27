@@ -102,7 +102,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ## Add SfRangeSlider
 
-The following steps help to add a SfRangeSlider control through code.
+The following steps helps to add a SfRangeSlider control through code.
 
 * Adding namespace for the added assemblies. 
 

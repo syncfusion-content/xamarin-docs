@@ -11,7 +11,7 @@ documentation: ug
 
 # Restrict User Selection 
 
-SfRating control provides support for changeable or unchangeable values for Rating control. This is achieved by the ReadOnly property. When this property is set to True, the Rating value becomes unchangeable. By default, this property value is set to False.
+SfRating control provides support for changeable or unchangeable values for Rating control. This is achieved by the `ReadOnly` property. When this property is set to True, the Rating value becomes unchangeable. By default, this property value is set to False.
 
 {% tabs %}
 

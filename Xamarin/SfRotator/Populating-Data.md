@@ -9,7 +9,7 @@ documentation : ug
 
 # Populating Data
 
-SfRotator control, supports binding to different data sources such as IList Data Source, Observable Collection Data Source.
+SfRotator control supports binding to different data sources such as IList Data Source, Observable Collection Data Source.
 
 ## Through Binding
 
@@ -23,18 +23,16 @@ SfRotator items can be populated with a collection of image data. You can assign
 
 {% highlight C# %}
 	
-	public RotatorModel(string imagestr)
-        {
-            Image = imagestr;
-           
-        }
-        private String _image;
-
-        public String Image
-        {
-            get { return _image; }
-            set { _image = value; }
-        }       
+public RotatorModel(string imagestr)
+{
+    Image = imagestr;       
+}
+private String _image;
+public String Image
+{
+    get { return _image; }
+    set { _image = value; }
+}       
 
 {% endhighlight %}
 
@@ -46,22 +44,21 @@ Create and populate SfRotator collection as follows
 
 {% highlight C# %}
 
-	public RotatorViewModel()
-        {
-            ImageCollection.Add(new RotatorModel("movie1.png"));
-            ImageCollection.Add(new RotatorModel("movie2.png"));
-            ImageCollection.Add(new RotatorModel("movie3.png"));
-            ImageCollection.Add(new RotatorModel("movie4.png"));
-            ImageCollection.Add(new RotatorModel("movie5.png"));
-        }
-        private List<RotatorModel> imageCollection = new List<RotatorModel>();
+public RotatorViewModel()
+{
+    ImageCollection.Add(new RotatorModel("movie1.png"));
+    ImageCollection.Add(new RotatorModel("movie2.png"));
+    ImageCollection.Add(new RotatorModel("movie3.png"));
+    ImageCollection.Add(new RotatorModel("movie4.png"));
+    ImageCollection.Add(new RotatorModel("movie5.png"));
+}
+private List<RotatorModel> imageCollection = new List<RotatorModel>();
 
-        public List<RotatorModel> ImageCollection
-        {
-            get { return imageCollection; }
-            set { imageCollection = value; }
-        }
-
+public List<RotatorModel> ImageCollection
+{
+    get { return imageCollection; }
+    set { imageCollection = value; }
+}
 
 {% endhighlight %}
 
@@ -73,7 +70,7 @@ Assigning collection to ItemSource
 
 {% highlight C# %}
 
- 	rotator.BindingContext = new RotatorViewModel();
+ rotator.BindingContext = new RotatorViewModel();
 
 {% endhighlight %}
 
@@ -87,13 +84,13 @@ SfRotator provides support to add a custom view as RotatorItems by designing a v
 
 {% highlight xaml %}
 
-	<rotator:SfRotator x:Name="rotator"  Grid.Row="0" NavigationDelay="2000" ItemsSource="{Binding ImageCollection}" SelectedIndex="2" NavigationDirection="Horizontal" NavigationStripMode="Dots" BackgroundColor="#ececec" NavigationStripPosition="Bottom">
-        <rotator:SfRotator.ItemTemplate>
-          <DataTemplate>
-            <Image  Source="{Binding Image}"/>
-          </DataTemplate>
-        </rotator:SfRotator.ItemTemplate>
-      </rotator:SfRotator>
+<rotator:SfRotator x:Name="rotator"  Grid.Row="0" NavigationDelay="2000" ItemsSource="{Binding ImageCollection}" SelectedIndex="2" NavigationDirection="Horizontal" NavigationStripMode="Dots" BackgroundColor="#ececec" NavigationStripPosition="Bottom">
+  <rotator:SfRotator.ItemTemplate>
+    <DataTemplate>
+      <Image  Source="{Binding Image}"/>
+    </DataTemplate>
+  </rotator:SfRotator.ItemTemplate>
+</rotator:SfRotator>
 	  
 {% endhighlight %}
 
@@ -107,25 +104,25 @@ The ItemTemplate provides common template with different data, whereas if differ
 
 {% highlight C# %}
 
-	SfRotator rotator = new SfRotator();	
-	SfRotatorItem rotatorItem = new SfRotatorItem ();
-	Label lbl = new Label ();
-	lbl.Text ="  Item No: 1 ";
-	lbl.BackgroundColor = Color.Gray;
-	lbl.FontSize = 20;
-	lbl.VerticalTextAlignment = TextAlignment.Center;
-	rotatorItem.ItemContent =lbl;
-	rotator.DataSource.Add (rotatorItem);	
+SfRotator rotator = new SfRotator();	
+SfRotatorItem rotatorItem = new SfRotatorItem ();
+Label lbl = new Label ();
+lbl.Text ="  Item No: 1 ";
+lbl.BackgroundColor = Color.Gray;
+lbl.FontSize = 20;
+lbl.VerticalTextAlignment = TextAlignment.Center;
+rotatorItem.ItemContent =lbl;
+rotator.DataSource.Add (rotatorItem);	
 
-	SfRotatorItem rotatorItem1 = new SfRotatorItem ();
-	Image img = new Image ();
-	img.Source = ImageSource.FromFile("image2.png");
-	img.Aspect = Aspect.AspectFit;
-	img.VerticalOptions = LayoutOptions.Center;
-	img.HeightRequest = 400;
-	img.WidthRequest = 400;
-	rotatorItem1.ItemContent =img;
-	rotator.DataSource.Add (rotatorItem1);		
+SfRotatorItem rotatorItem1 = new SfRotatorItem ();
+Image img = new Image ();
+img.Source = ImageSource.FromFile("image2.png");
+img.Aspect = Aspect.AspectFit;
+img.VerticalOptions = LayoutOptions.Center;
+img.HeightRequest = 400;
+img.WidthRequest = 400;
+rotatorItem1.ItemContent =img;
+rotator.DataSource.Add (rotatorItem1);		
 	  
 {% endhighlight %}
 

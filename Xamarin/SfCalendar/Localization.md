@@ -12,21 +12,16 @@ documentation: ug
 SfCalendar control is available with complete localization support.
  
 Localization can be specified by setting the `Locale` property of the control using the format of Language code followed by Country code. Based on the locale specified, the strings in the control are localized accordingly.
- 
-N> By default, SfCalendar control is available with en-US locale.      
-     
-Control has been initialized in Xaml
-
-
-and culture has been set in codes.
-
+    
+    
 
 {% highlight c# %}
 
+	SfCalendar  calendar = new SfCalendar ();
 	calendar.Locale= new System.Globalization.CultureInfo("zh-CN");
 	
 {% endhighlight %}
 
-
+N> By default, SfCalendar control is available with en-US locale.  
 
 ![](images/Localization.png)

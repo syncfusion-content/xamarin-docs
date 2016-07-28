@@ -7,7 +7,7 @@ control : AutoComplete
 documentation : ug
 ---
 
-# Customizing the Suggestion DropDwon
+# Customizing the Suggestion DropDown
 
 The suggestion list displaying behaviour can be customised based on the entered text and delays in displaying the items.
 

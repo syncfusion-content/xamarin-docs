@@ -157,7 +157,9 @@ The SfNumericUpDown control display value can be set using `Value` property.
 
 {% highlight C# %}
 
+SfNumericUpDown numericUpDown=new SfNumericUpDown();
 	numericUpDown.Value= 5;
+	this.Content = numericTextBox;
 
 {% endhighlight %}
 
@@ -174,13 +176,16 @@ N> The `ParsingMode` is of type Parsers containing enum values of Double and Dec
 
 {% highlight xaml %}
 
-	<numeric:SfNumericUpDown x:Name="numericUpDown" ParsingMode="Decimal"/>
+	<numeric:SfNumericUpDown x:Name="numericUpDown" Value="5" ParsingMode="Decimal"/>
 	
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfNumericUpDown numericUpDown=new SfNumericUpDown();
+	numericUpDown.Value= 5;
 	numericUpDown.ParsingMode=Parsers.Decimal;
+	this.Content = numericTextBox;
 	
 {% endhighlight %}
 
@@ -204,13 +209,17 @@ N> The control displays the formatted text on lost focus. Default Value of `Form
 
 {% highlight xaml %}
 
-	<numeric:SfNumericUpDown x:Name="numericUpDown" FormatString="c"/>
+	<numeric:SfNumericUpDown x:Name="numericUpDown" Value="5" ParsingMode="Decimal" FormatString="c"/>
 	
 {% endhighlight %}
 
 {% highlight C# %}
 
-	numericUpDown.FormatString= “c”;
+SfNumericUpDown numericUpDown=new SfNumericUpDown();
+	numericUpDown.Value= 5;
+	numericUpDown.ParsingMode=ParsingMode.Decimal;
+	numericUpDown.FormatString = "c";
+	this.Content = numericTextBox;
 
 {% endhighlight %}
 

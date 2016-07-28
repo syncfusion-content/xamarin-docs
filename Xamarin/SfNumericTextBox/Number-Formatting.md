@@ -29,7 +29,7 @@ N> The control displays the formatted text on lost focus. Default Value of `Form
 {% endhighlight %}
 	
 {% highlight c# %}
-	
+	SfNumericTextBox numericTextBox=new SfNumericTextBox();
 	numericTextBox.FormatString="c";
 	 
 {% endhighlight %}
@@ -50,6 +50,7 @@ N> The control displays the formatted text on lost focus. Default Value of `Form
 	
 {% highlight c# %}
 	
+	SfNumericTextBox numericTextBox=new SfNumericTextBox();
 	numericTextBox.FormatString="n";
 	 
 {% endhighlight %}
@@ -70,6 +71,7 @@ N> The control displays the formatted text on lost focus. Default Value of `Form
 	
 {% highlight c# %}
 
+SfNumericTextBox numericTextBox=new SfNumericTextBox();
 	numericTextBox.FormatString="p";
 	 
 {% endhighlight %}
@@ -96,6 +98,7 @@ N> The `ParsingMode` is of type Parsers containing enum values of Double and Dec
 
 {% highlight c# %}
 
+SfNumericTextBox numericTextBox=new SfNumericTextBox();
 	numericTextBox.ParsingMode=ParsingMode.Decimal;
 	  
 {% endhighlight %}
@@ -106,13 +109,9 @@ N> The `ParsingMode` is of type Parsers containing enum values of Double and Dec
 
 ## Compute to Percentage
 
-The `PercentDisplayMode` property can be used to display numeric data in Percent mode. 
+When the NumericTextBox is in percentage format, the value can be displayed in two ways as follows
 
-N> The control displays the percent value on lost focus. 
-
-It provides the following options:
-
-* `Value`: Displays the value with percentage symbol.
+* `Value`: Displays the actual value with percentage symbol.
 
 {% tabs %}
 {% highlight xaml %}
@@ -123,6 +122,7 @@ It provides the following options:
 
 {% highlight c# %}
 
+SfNumericTextBox numericTextBox=new SfNumericTextBox();
 	numericTextBox.PercentDisplayMode=PercentDisplayMode.Value;
 
 {% endhighlight %}
@@ -140,6 +140,7 @@ It provides the following options:
 
 {% highlight c# %}
 
+SfNumericTextBox numericTextBox=new SfNumericTextBox();
 	numericTextBox.PercentDisplayMode=PercentDisplayMode.Compute;
 
 {% endhighlight %}

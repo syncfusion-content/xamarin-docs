@@ -19,6 +19,8 @@ The `AutocompleteMode` property is used to decide the suggestion pattern for dis
 
 N> The default option is suggest mode.
 
+Adding Items to the SfAutoComplete is explained in [this](http://docs.syncfusion.com/xamarin/sfautocomplete/getting-started#add-items) link.
+
 ## Append
 
 Append - It appends the first matching string with the entered character.

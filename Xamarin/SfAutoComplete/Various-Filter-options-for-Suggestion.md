@@ -9,7 +9,7 @@ documentation : ug
 
 # Various Filter Options for Suggestion
 
-By default, the items that matches with the starting letter will be displayed as suggestion. This phenomenon can be changed using  `SuggestionMode` property, which provides various option to filter the data according to the text entered. There are eight types of suggestion modes and are described as follows
+By default, the items that matches with the starting letter will be displayed as suggestion. This phenomenon can be changed using  `SuggestionMode` property, which provides various option to filter the data according to the text entered. There are eight types of suggestion modes and are described as follows. Adding Items to the SfAutoComplete is explained in [this](http://docs.syncfusion.com/xamarin/sfautocomplete/getting-started#add-items) link.
 
 ## Words that Starts with Input Text
 

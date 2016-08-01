@@ -122,7 +122,7 @@ The following steps helps to add a SfRangeSlider control through code.
 
 {% endtabs %}
 
-* Now add the SfRangeSlider control with a required optimal name by using the included namespace.
+* Now instantiate and add the SfRangeSlider control with a required optimal name.
 
 {% tabs %}
 
@@ -143,7 +143,7 @@ The following steps helps to add a SfRangeSlider control through code.
 
 ## Set Range
 
-The `RangeStart` and `RangeEnd` properties can be set to denote the start range and end range values while dual thumb is used. 
+Displaying two thumbs and setting value for each thumb using `RangeStart` and `RangeEnd` values.
 
 N> The `ShowRange` property is used to switch between a single thumb and double thumb. 
 
@@ -157,9 +157,11 @@ N> The `ShowRange` property is used to switch between a single thumb and double 
 
 {% highlight c# %}
 
+SfRangeSlider rangeSlider=new SfRangeSlider();
 	rangeSlider.RangeEnd=20; 
 	rangeSlider.RangeStart=4;
 	rangeSlider.ShowRange=true; 
+	this.Content = rangeSlider;
 
 {% endhighlight %}
 
@@ -179,9 +181,13 @@ Set the minimum and maximum value for the slider by using the `Minimum` and `Max
 
 {% highlight c# %}
 
+SfRangeSlider rangeSlider=new SfRangeSlider();
+	rangeSlider.RangeEnd=20; 
+	rangeSlider.RangeStart=4;
+	rangeSlider.ShowRange=true; 
 	rangeSlider.Minimum=0; 
 	rangeSlider.Maximum=24; 
-
+	this.Content = rangeSlider;
 {% endhighlight %}
 
 {% endtabs %}
@@ -200,8 +206,15 @@ The movement of the thumb can be varied in different ways. This is achieved by s
 
 {% highlight c# %}
 
+SfRangeSlider rangeSlider=new SfRangeSlider();
+	rangeSlider.RangeEnd=20; 
+	rangeSlider.RangeStart=4;
+	rangeSlider.ShowRange=true; 
+	rangeSlider.Minimum=0; 
+	rangeSlider.Maximum=24; 
 	rangeSlider.SnapsTo=SnapsTo.Ticks; 
 	rangeSlider.StepFrequency=6;
+	this.Content = rangeSlider;
 
 {% endhighlight %}
 

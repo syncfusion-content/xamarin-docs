@@ -11,7 +11,7 @@ documentation: ug
 
 Dates can be restricted or a collection of dates can be blacked out in SfCalendar Control.
 
-## Range between Min / Max Dates
+## Range of Min / Max Dates
 
 Visible dates can be restricted between certain range of dates using `MinDate` and `MaxDate` properties available in SfCalendar control. It is applicable in all the calendar views.
 

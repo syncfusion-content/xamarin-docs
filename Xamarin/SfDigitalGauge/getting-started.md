@@ -46,26 +46,22 @@ iOS-unified\Syncfusion.SfGauge.XForms.iOS.dll
 iOS-unified\Syncfusion.SfGauge.XForms.dll
 
 ### Windows Phone
-wp8\Syncfusion.SfInput.WP8.dll
-wp8\Syncfusion.SfShared.WP8.dll
+wp8\Syncfusion.SfGauge.WP8.dll
 wp8\Syncfusion.SfGauge.XForms.dll
 wp8\Syncfusion.SfGauge.XForms.WinPhone.dll
 
 ### Windows Phone 8.1
-wp81\Syncfusion.SfInput.WP.dll
-wp81\Syncfusion.SfShared.WP.dll
+wp81\Syncfusion.SfGauge.WP.dll
 wp81\Syncfusion.SfGauge.XForms.dll
 wp81\Syncfusion.SfGauge.XForms.WinPhone.dll
 
 ### WinRT 
-winrt\Syncfusion.SfInput.WinRT.dll
-winrt\Syncfusion.SfShared.WinRT.dll
+winrt\Syncfusion.SfGauge.WinRT.dll
 winrt\Syncfusion.SfGauge.XForms.dll
 winrt\Syncfusion.SfGauge.XForms.WinRT.dll
 
 ### UWP 
-uwp\Syncfusion.SfInput.UWP.dll
-uwp\Syncfusion.SfShared.UWP.dll
+uwp\Syncfusion.SfGauge.UWP.dll
 uwp\Syncfusion.SfGauge.XForms.dll
 uwp\Syncfusion.SfGauge.XForms.UWP.dll
 

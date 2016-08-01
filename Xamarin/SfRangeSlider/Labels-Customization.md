@@ -128,7 +128,7 @@ Available options for this property are:
 
 {% highlight xaml %}
 
-	<range:SfRangeSlider x:Name="rangeslider"LabelPlacement="TopLeft"/>
+	<range:SfRangeSlider x:Name="rangeslider" LabelPlacement="TopLeft"/>
 	
 {% endhighlight %}
 

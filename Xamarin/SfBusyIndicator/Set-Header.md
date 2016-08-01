@@ -6,29 +6,27 @@ platform: Xamarin
 control: BusyIndicator
 documentation: ug
 ---
-# Set Header and Font
+# Set Header
 
-The `Title` property can be used to get or set the text that indicates the information related to loading. The `FontFace` property can be used to define the font style and size of the title.
+The `Title` property can be used to get or set the text that indicates the information related to loading.
 
 {% tabs %}
+
+{% highlight xaml %}
+
+	<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="Ball" Title="Loading..." />
+	
+{% endhighlight %}
 
 {% highlight c# %}
 
 	SfBusyIndicator busyindicator = new SfBusyIndicator();
 	busyindicator.AnimationType=AnimationTypes.Ball;
 	busyindicator.Title ="Loading…";
-	busyindicator.Fontface=Typeface.create("Arial",Typeface.NONE);
 
-{% endhighlight %}
-
-{% highlight xaml %}
-
-	<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="Ball" Title="Loading..."  Fontface="Bold"/>
-	
 {% endhighlight %}
 
 {% endtabs %}
-
 
 ![](images/Title.png) 
 

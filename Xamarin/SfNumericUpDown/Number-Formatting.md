@@ -16,14 +16,14 @@ The `FormatString` property determines the format specifier by which the display
 
 N> The control displays the formatted text on lost focus. Default Value of `FormatString` is "n". 
 
-It has three types,
+### Display Currency Notation
 
-* `c` - Display the value with currency notation.
+`c` - Displays the value with currency notation.
 
 {% tabs %}
 	
 {% highlight C# %}
-	
+	SfNumericUpDown numericUpDown=new SfNumericUpDown();
 	numericUpDown.FormatString="c";
 	 
 {% endhighlight %}
@@ -36,15 +36,11 @@ It has three types,
 
 {% endtabs %}
 
-* `n` – Display the value in number format.
+### Display Number Notation
+
+`n` – Displays the value in number format.
 	
 {% tabs %}	
-	
-{% highlight C# %}
-	
-	numericUpDown.FormatString="n";
-	 
-{% endhighlight %}
 
 {% highlight xaml %}
 
@@ -52,14 +48,25 @@ It has three types,
 	
 {% endhighlight %}
 
+	
+{% highlight C# %}
+	
+	SfNumericUpDown numericUpDown=new SfNumericUpDown();
+	numericUpDown.FormatString="n";
+	 
+{% endhighlight %}
+
 {% endtabs %}
 
-* `p` – Display the value in Percentage.
+### Display Percentage Notation
+
+`p` – Displays the value in Percentage.
 	
 {% tabs %}	
 	
 {% highlight C# %}
 
+SfNumericUpDown numericUpDown=new SfNumericUpDown();
 	numericUpDown.FormatString="p";
 	 
 {% endhighlight %}
@@ -77,19 +84,13 @@ N> Instead of using above `FormatString` types, we can provide any symbol or val
 
 ![](images/format.png)
 
-## Parser Mode
+## Parser Input Value
 
-The value of the NumericUpDown can be parsed based on the `ParsingMode` property. 
+The value of the SfNumericUpDown can be parsed based on the `ParsingMode` property. 
 
 N> The `ParsingMode` is of type Parsers containing enum values of Double and Decimal. The default Value for `ParsingMode` is Double.
 
 {% tabs %}
-
-{% highlight C# %}
-
-	numericUpDown.ParsingMode=ParsingMode.Decimal;
-	  
-{% endhighlight %}
 
 {% highlight xaml %}
 
@@ -97,28 +98,26 @@ N> The `ParsingMode` is of type Parsers containing enum values of Double and Dec
 	
 {% endhighlight %}
 
+{% highlight C# %}
+
+SfNumericUpDown numericUpDown=new SfNumericUpDown();
+	numericUpDown.ParsingMode=ParsingMode.Decimal;
+	  
+{% endhighlight %}
+
+
 {% endtabs %}
 
 
 ![](images/ParserMode.png)
 
-## Percent Display Mode
+## Compute to Percentage
 
-The `PercentDisplayMode` property can be used to display numeric data in Percent mode. 
+When the control is in percentage format, the value can be displayed in two ways as follows
 
-N> The control displays the percent value on lost focus. 
-
-It provides the following options:
-
-* `Value`: Displays the value with percentage symbol.
+* `Value`: Displays the actual value with percentage symbol.
 
 {% tabs %}
-
-{% highlight C# %}
-
-	numericUpDown.PercentDisplayMode=PercentDisplayMode.Value;
-
-{% endhighlight %}
 
 {% highlight xaml %}
 
@@ -126,18 +125,20 @@ It provides the following options:
 	
 {% endhighlight %}
 
+{% highlight C# %}
+
+SfNumericUpDown numericUpDown=new SfNumericUpDown();
+	numericUpDown.FormatString="p";
+	numericUpDown.PercentDisplayMode=PercentDisplayMode.Value;
+
+{% endhighlight %}
+
 {% endtabs %}
 
 
-* `Compute`: Displays the computed value with percentage symbol.
+* `Compute`: Displays the value computed by 100 with percentage symbol.
 
 {% tabs %}
-
-{% highlight C# %}
-
-	numericUpDown.PercentDisplayMode=PercentDisplayMode.Compute;
-
-{% endhighlight %}
 
 {% highlight xaml %}
 
@@ -145,7 +146,17 @@ It provides the following options:
 	
 {% endhighlight %}
 
+{% highlight C# %}
+
+SfNumericUpDown numericUpDown=new SfNumericUpDown();
+	numericUpDown.FormatString="p";
+	numericUpDown.PercentDisplayMode=PercentDisplayMode.Compute;
+
+{% endhighlight %}
+
 {% endtabs %}
+
+N> The control displays the percent value on lost focus. 
 
 
 ![](images/PercentageDisplayMode.png)

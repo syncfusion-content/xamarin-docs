@@ -14,15 +14,15 @@ N> Default `Culture` property value is en-US.
 
 {% tabs %}
 
-{% highlight C# %}
-
-	numericUpDown.Culture = new System.Globalization.CultureInfo("hi-IN");
-	
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<numeric:SfNumericUpDown x:Name="numericUpDown" Culture="hi-IN"/>
+	
+{% endhighlight %}
+
+{% highlight C# %}
+
+	numericUpDown.Culture = new System.Globalization.CultureInfo("hi-IN");
 	
 {% endhighlight %}
 

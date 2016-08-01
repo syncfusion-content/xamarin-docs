@@ -31,86 +31,82 @@ Or after downloading through the Xamarin store web interface, all the required a
 
 You can then add the assembly references to the respective projects as shown below
 
-<table>
-<tr>
-<th>Project</th>
-<th>Required assemblies</th>
-</tr>
-<tr>
-<td>PCL</td>
-<td>pcl\Syncfusion.SfRangeSlider.XForms.dll</td>
-</tr>
-<tr>
-<td>Android</td>
-<td>android\Syncfusion.SfRangeSlider.Android.dll<br/>android\Syncfusion.SfRangeSlider.XForms.Android.dll<br/>android\Syncfusion.SfRangeSlider.XForms.dll</td>
-</tr>
-<tr>
-<td>iOS (Unified)</td>
-<td>iOS-unified\Syncfusion.SfRangeSlider.iOS.dll<br/>iOS-unified\Syncfusion.SfRangeSlider.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfRangeSlider.XForms.dll</td>
-</tr>
-<tr>
-<td>Windows Phone</td>
-<td>wp8\Syncfusion.SfInput.WP8.dll<br/>wp8\Syncfusion.SfShared.WP8.dll<br/>wp8\Syncfusion.SfRangeSlider.XForms.dll<br/>wp8\Syncfusion.SfRangeSlider.XForms.WinPhone.dll</td>
-</tr>
-<tr>
-<td>Windows Phone 8.1</td>
-<td>wp81\Syncfusion.SfInput.WP.dll<br/>wp81\Syncfusion.SfShared.WP.dll<br/>wp81\Syncfusion.SfRangeSlider.XForms.dll<br/>wp81\Syncfusion.SfRangeSlider.XForms.WinPhone.dll</td>
-</tr>
-<tr>
-<td>UWP</td>
-<td>uwp\Syncfusion.SfInput.UWP.dll<br/>uwp\Syncfusion.SfShared.UWP.dll<br/>uwp\Syncfusion.SfRangeSlider.XForms.dll<br/>uwp\Syncfusion.SfRangeSlider.XForms.UWP.dll</td>
-</tr>
-</table>
+### PCL 
+
+pcl\Syncfusion.SfRangeSlider.XForms.dll
+
+### Android 
+
+android\Syncfusion.SfRangeSlider.Android.dll
+android\Syncfusion.SfRangeSlider.XForms.Android.dll
+android\Syncfusion.SfRangeSlider.XForms.dll
+	
+### iOS 
+
+iOS-unified\Syncfusion.SfRangeSlider.iOS.dll
+iOS-unified\Syncfusion.SfRangeSlider.XForms.iOS.dll
+iOS-unified\Syncfusion.SfRangeSlider.XForms.dll
+
+### Windows Phone
+
+wp8\Syncfusion.SfInput.WP8.dll
+wp8\Syncfusion.SfShared.WP8.dll
+wp8\Syncfusion.SfRangeSlider.XForms.dll
+wp8\Syncfusion.SfRangeSlider.XForms.WinPhone.dll
+
+### Windows Phone 8.1
+
+wp81\Syncfusion.SfInput.WP.dll
+wp81\Syncfusion.SfShared.WP.dll
+wp81\Syncfusion.SfRangeSlider.XForms.dll
+wp81\Syncfusion.SfRangeSlider.XForms.WinPhone.dll
+
+### UWP 
+
+uwp\Syncfusion.SfInput.UWP.dll
+uwp\Syncfusion.SfShared.UWP.dll
+uwp\Syncfusion.SfRangeSlider.XForms.dll
+uwp\Syncfusion.SfRangeSlider.XForms.UWP.dll
 
 Currently an additional step is required for Windows Phone, Windows Phone 8.1 and iOS projects. We need to create an instance of the RangeSlider custom renderer as shown below. 
 
 Create an instance of SfRangeSliderRenderer in MainPage constructor of the Windows Phone and Windows Phone 8.1 project as shown 
 
+{% tabs %}
+
 {% highlight C# %}
 
 public MainPage()
-
 {
-
     new SfRangeSliderRenderer();
-
-    ...    
-
 }
 
 {% endhighlight %}
 
+{% endtabs %}
+
 Create an instance of SfRangeSliderRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below
+
+{% tabs %}
 
 {% highlight C# %}
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
-
 {
-
-    ...
-
     new SfRangeSliderRenderer ();
-
-    ...
-
 }	
 
 {% endhighlight %}
 
-## Add and Configure the SfRangeSlider
+{% endtabs %}
 
-The following steps help to add a SfRangeSlider control through code.
+## Add SfRangeSlider
+
+The following steps helps to add a SfRangeSlider control through code.
 
 * Adding namespace for the added assemblies. 
 
 {% tabs %}
-
-{% highlight c# %}
-
-	using Syncfusion.SfRangeSlider.XForms;
-
-{% endhighlight %}
 
 {% highlight xaml %}
 
@@ -118,11 +114,23 @@ The following steps help to add a SfRangeSlider control through code.
 	
 {% endhighlight %}
 
+{% highlight c# %}
+
+	using Syncfusion.SfRangeSlider.XForms;
+
+{% endhighlight %}
+
 {% endtabs %}
 
-* Now add the SfRangeSlider control with a required optimal name by using the included namespace.
+* Now instantiate and add the SfRangeSlider control with a required optimal name.
 
 {% tabs %}
+
+{% highlight xaml %}
+
+	<range:SfRangeSlider x:Name="rangeSlider"/>
+	
+{% endhighlight %}
 
 {% highlight c# %}
 
@@ -131,34 +139,30 @@ The following steps help to add a SfRangeSlider control through code.
 	
 {% endhighlight %}
 
-{% highlight xaml %}
-
-	<range:SfRangeSlider x:Name="rangeSlider"/>
-	
-{% endhighlight %}
-
 {% endtabs %}
 
-## Setting Range
+## Set Range
 
-The `RangeStart` and `RangeEnd` properties can be set to denote the start range and end range values while dual thumb is used. 
+Displaying two thumbs and setting value for each thumb using `RangeStart` and `RangeEnd` values.
 
 N> The `ShowRange` property is used to switch between a single thumb and double thumb. 
 
 {% tabs %}
 
-{% highlight c# %}
-
-	rangeSlider.RangeEnd=20; 
-	rangeSlider.RangeStart=4;
-	rangeSlider.ShowRange=true; 
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<range:SfRangeSlider x:Name="rangeslider" RangeEnd="20" RangeStart="4"  ShowRange="true"/>
 	
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfRangeSlider rangeSlider=new SfRangeSlider();
+	rangeSlider.RangeEnd=20; 
+	rangeSlider.RangeStart=4;
+	rangeSlider.ShowRange=true; 
+	this.Content = rangeSlider;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -169,17 +173,21 @@ Set the minimum and maximum value for the slider by using the `Minimum` and `Max
 
 {% tabs %}
 
-{% highlight c# %}
-
-	rangeSlider.Minimum=0; 
-	rangeSlider.Maximum=24; 
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<range:SfRangeSlider x:Name="rangeslider" Minimum="0" Maximum="24"/>
 	
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfRangeSlider rangeSlider=new SfRangeSlider();
+	rangeSlider.RangeEnd=20; 
+	rangeSlider.RangeStart=4;
+	rangeSlider.ShowRange=true; 
+	rangeSlider.Minimum=0; 
+	rangeSlider.Maximum=24; 
+	this.Content = rangeSlider;
 {% endhighlight %}
 
 {% endtabs %}
@@ -190,45 +198,25 @@ The movement of the thumb can be varied in different ways. This is achieved by s
 
 {% tabs %}
 
-{% highlight c# %}
-
-	rangeSlider.SnapsTo=SnapsTo.Ticks; 
-	rangeSlider.StepFrequency=6;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<range:SfRangeSlider x:Name="rangeslider" SnapsTo="Ticks" StepFrequency="6"/>
 	
 {% endhighlight %}
 
-{% endtabs %}
-
-## Setting Orientation
-
-SfRangeSlider can be displayed either horizontally or vertically. this can achieved by setting the `Orientation` property.
-
-{% tabs %}
-
 {% highlight c# %}
 
-	rangeslider.Orientation=Orientation.Horizontal;
+SfRangeSlider rangeSlider=new SfRangeSlider();
+	rangeSlider.RangeEnd=20; 
+	rangeSlider.RangeStart=4;
+	rangeSlider.ShowRange=true; 
+	rangeSlider.Minimum=0; 
+	rangeSlider.Maximum=24; 
+	rangeSlider.SnapsTo=SnapsTo.Ticks; 
+	rangeSlider.StepFrequency=6;
+	this.Content = rangeSlider;
 
 {% endhighlight %}
 
-{% highlight xaml %}
-
-	<range:SfRangeSlider x:Name="rangeslider" Orientation="Horizontal"/>
-	
-{% endhighlight %}
-
-{% endtabs %}
-
-
-![](images/RangeSlider.png)
-
-
-
-    
+{% endtabs %}  
                                     

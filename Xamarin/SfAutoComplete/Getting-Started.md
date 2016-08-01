@@ -32,94 +32,93 @@ Or after downloading through the Xamarin store web interface, all the required a
 
 You can then add the assembly references to the respective projects as shown below
 
-<table>
-<tr>
-<th>Project</th>
-<th>Required assemblies</th>
-</tr>
-<tr>
-<td>PCL</td>
-<td>pcl\Syncfusion.SfAutoComplete.XForms.dll</td>
-</tr>
-<tr>
-<td>Android</td>
-<td>android\Syncfusion.SfAutoComplete.Android.dll<br/>android\Syncfusion.SfAutoComplete.XForms.Android.dll<br/>android\Syncfusion.SfAutoComplete.XForms.dll</td>
-</tr>
-<tr>
-<td>iOS (Unified)</td>
-<td>iOS-unified\Syncfusion.SfAutoComplete.iOS.dll<br/>iOS-unified\Syncfusion.SfAutoComplete.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfAutoComplete.XForms.dll</td>
-</tr>
-<tr>
-<td>Windows Phone</td>
-<td>wp8\Syncfusion.SfInput.WP8.dll<br/>wp8\Syncfusion.SfShared.WP8.dll<br/>wp8\Syncfusion.SfAutoComplete.XForms.dll<br/>wp8\Syncfusion.SfAutoComplete.XForms.WinPhone.dll</td>
-</tr>
-<tr>
-<td>Windows Phone 8.1</td>
-<td>wp81\Syncfusion.SfInput.WP.dll<br/>wp81\Syncfusion.SfShared.WP.dll<br/>wp81\Syncfusion.SfAutoComplete.XForms.dll<br/>wp81\Syncfusion.SfAutoComplete.XForms.WinPhone.dll</td>
-</tr>
-<tr>
-<td>WinRT</td>
-<td>winrt\Syncfusion.SfInput.WinRT.dll<br/>winrt\Syncfusion.SfShared.WinRT.dll<br/>winrt\Syncfusion.SfAutoComplete.XForms.dll<br/>winrt\Syncfusion.SfAutoComplete.XForms.WinRT.dll</td>
-</tr>
-<tr>
-<td>UWP</td>
-<td>uwp\Syncfusion.SfInput.UWP.dll<br/>uwp\Syncfusion.SfShared.UWP.dll<br/>uwp\Syncfusion.SfAutoComplete.XForms.dll<br/>uwp\Syncfusion.SfAutoComplete.XForms.UWP.dll</td>
-</tr>
-</table>
+### PCL 
+pcl\Syncfusion.SfAutoComplete.XForms.dll
+
+### Android 
+android\Syncfusion.SfAutoComplete.Android.dll
+android\Syncfusion.SfAutoComplete.XForms.Android.dll
+android\Syncfusion.SfAutoComplete.XForms.dll
+
+### iOS 
+iOS-unified\Syncfusion.SfAutoComplete.iOS.dll
+iOS-unified\Syncfusion.SfAutoComplete.XForms.iOS.dll
+iOS-unified\Syncfusion.SfAutoComplete.XForms.dll
+
+### Windows Phone
+wp8\Syncfusion.SfInput.WP8.dll
+wp8\Syncfusion.SfShared.WP8.dll
+wp8\Syncfusion.SfAutoComplete.XForms.dll
+wp8\Syncfusion.SfAutoComplete.XForms.WinPhone.dll
+
+### Windows Phone 8.1
+wp81\Syncfusion.SfInput.WP.dll
+wp81\Syncfusion.SfShared.WP.dll
+wp81\Syncfusion.SfAutoComplete.XForms.dll
+wp81\Syncfusion.SfAutoComplete.XForms.WinPhone.dll
+
+### WinRT 
+winrt\Syncfusion.SfInput.WinRT.dll
+winrt\Syncfusion.SfShared.WinRT.dll
+winrt\Syncfusion.SfAutoComplete.XForms.dll
+winrt\Syncfusion.SfAutoComplete.XForms.WinRT.dll
+
+### UWP 
+uwp\Syncfusion.SfInput.UWP.dll
+uwp\Syncfusion.SfShared.UWP.dll
+uwp\Syncfusion.SfAutoComplete.XForms.dll
+uwp\Syncfusion.SfAutoComplete.XForms.UWP.dll
+
 
 Currently an additional step is required for Windows Phone, Windows Phone 8.1 and iOS projects. We need to create an instance of the autocomplete custom renderer as shown below. 
 
 Create an instance of SfAutoCompleteRenderer in MainPage constructor of the Windows Phone and Windows Phone 8.1 project as shown 
 
+{% tabs %}
+
 {% highlight C# %}
 
 public MainPage()
-
 {
-
-    new SfAutoCompleteRenderer();
-
-    ...    
-
+    new SfAutoCompleteRenderer();  
 }
 
 {% endhighlight %}
 
+{% endtabs %}
+
 Create an instance of SfAutoCompleteRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below
+
+{% tabs %}
 
 {% highlight C# %}
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
-
 {
-
-    ...
-
     new SfAutoCompleteRenderer ();
-
-    ...
-
 }	
 
 {% endhighlight %}
 
-## Add and Configure the SfAutoComplete
+{% endtabs %}
 
-The following steps help to add a SfAutoComplete control through code.
+## Add SfAutoComplete
+
+The following steps helps to add a SfAutoComplete control through code.
 
 * Adding namespace for the added assemblies. 
 
 {% tabs %}
 
-{% highlight c# %}
-
-	using Syncfusion.SfAutoComplete.XForms;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+	using Syncfusion.SfAutoComplete.XForms;
 
 {% endhighlight %}
 
@@ -129,28 +128,31 @@ The following steps help to add a SfAutoComplete control through code.
 
 {% tabs %}
 
+{% highlight xaml %}
+
+	<ContentPage.Content>
+		<autocomplete:SfAutoComplete x:Name="autocomplete"/>
+	</ContentPage.Content>
+	
+{% endhighlight %}
+
 {% highlight c# %}
 
 	SfAutoComplete countryAutoComplete = new SfAutoComplete ();
+	this.Content = countryAutoComplete;
 
-{% endhighlight %}
-
-{% highlight xaml %}
-
-	<autocomplete:SfAutoComplete x:Name="countryAutoComplete"/>
-	
 {% endhighlight %}
 
 {% endtabs %}
 
-## Setting AutoCompleteSource
+## Add Items
 
-You can set the suggestion list to the SfAutoComplete using the `AutoCompleteSource` property. Check autocomplete mode for more details.
+A list of string with country names are created and added to auto complete source. This list will be populated as suggestion list based on text entry.
 
 {% tabs %}
 
 {% highlight c# %}
-
+	SfAutoComplete countryAutoComplete = new SfAutoComplete ();
     List<String> countryName = new List<String>();
 	countryName.Add("Uganda");
 	countryName.Add("Ukraine");
@@ -158,38 +160,45 @@ You can set the suggestion list to the SfAutoComplete using the `AutoCompleteSou
 	countryName.Add("United Kingdom");
 	countryName.Add("United States");	
 	countryAutoComplete.AutoCompleteSource = countryName;
-
-{% endhighlight %}
-
-{% highlight xaml %}
-
-  		<autocomplete:SfAutoComplete  x:Name="countryAutoComplete" HeightRequest="40" AutoCompleteSource="{Binding }" />
-
+	this.Content = countryAutoComplete;
 {% endhighlight %}
 
 {% endtabs %}
 
-## Adding Customizations
 
-SfAutocomplete can be customized using the `Watermark` and `PopupDelay` properties.
+## Set Filter Mode
 
+The displayed items that matches the starting letter can be configured using `SuggestionMode` property and the displaying pattern can be set with `AutoCompleteMode` property.
+ 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight xaml %}
 
+<ContentPage.Content>
+   <autocomplete:SfAutoComplete Watermark="Enter a country name" x:Name="countryAutoComplete" SuggestionMode="StartsWith" AutoCompleteMode="Suggest" HeightRequest="40" MinimumPrefixCharacters="1" MaximumDropDownHeight="200" PopupDelay ="100" />
+</ContentPage.Content>
+{% endhighlight %}
+
+{% highlight c# %}
+	SfAutoComplete countryAutoComplete = new SfAutoComplete ();	
 	countryAutoComplete.SuggestionMode = SuggestionMode.StartsWith;
 	countryAutoComplete.AutoCompleteMode = AutoCompleteMode.Suggest;
 	countryAutoComplete.MaximumDropDownHeight = 200;
 	countryAutoComplete.MinimumPrefixCharacters = 1;
 	countryAutoComplete.HeightRequest = 40;
-	countryAutoComplete.PopUpDelay = 100;
+	countryAutoComplete.PopupDelay = 100;
+	
+	List<String> countryName = new List<String>();
+	countryName.Add("Uganda");
+	countryName.Add("Ukraine");
+	countryName.Add("United Arab Emirates");
+	countryName.Add("United Kingdom");
+	countryName.Add("United States");	
+	
+	countryAutoComplete.AutoCompleteSource = countryName;
 	countryAutoComplete.Watermark = "Enter a country name";  
 
-{% endhighlight %}
-
-{% highlight xaml %}
-
-  		<autocomplete:SfAutoComplete Watermark="Enter a country name" x:Name="countryAutoComplete" SuggestionMode="StartsWith" AutoCompleteMode="Suggest" HeightRequest="40" MinimumPrefixCharacters="1" MaximumDropDownHeight="200" PopUpDelay ="100" />
+	this.Content = countryAutoComplete;
 
 {% endhighlight %}
 

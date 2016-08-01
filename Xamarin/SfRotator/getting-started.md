@@ -30,55 +30,52 @@ Or after downloading through the Xamarin store web interface, all the required a
 {Download location}\syncfusionessentialstudio-version\lib
 
 
-You can then add the assembly references to the respective projects as shown below
+You can then add the assembly references to the respective projects as shown below.
 
-<table>
-<tr>
-<th>Project</th>
-<th>Required assemblies</th>
-</tr>
-<tr>
-<td>PCL</td>
-<td>pcl\Syncfusion.SfRotator.XForms.dll</td>
-</tr>
-<tr>
-<td>Android</td>
-<td>android\Syncfusion.SfRotator.Android.dll<br/>android\Syncfusion.SfRotator.XForms.Android.dll<br/>android\Syncfusion.SfRotator.XForms.dll<br/> Xamarin.Android.Support.v17.Leanback (from NuGet Packages)</td>
-</tr>
-<tr>
-<td>iOS (Unified)</td>
-<td>iOS-unified\Syncfusion.SfRotator.iOS.dll<br/>iOS-unified\Syncfusion.SfRotator.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfRotator.XForms.dll</td>
-</tr>
-<tr>
-<td>UWP</td>
-<td>uwp\Syncfusion.SfRotator.UWP.dll<br/>uwp\Syncfusion.SfRotator.XForms.dll<br/>uwp\Syncfusion.SfRotator.XForms.UWP.dll</td>
-</tr>
-</table>
+### PCL 
+
+pcl\Syncfusion.SfRotator.XForms.dll
+
+### Android 
+
+android\Syncfusion.SfRotator.Android.dll
+android\Syncfusion.SfRotator.XForms.Android.dll
+android\Syncfusion.SfRotator.XForms.dll
+Xamarin.Android.Support.v17.Leanback (from NuGet Packages)
+
+### iOS 
+
+iOS-unified\Syncfusion.SfRotator.iOS.dll
+iOS-unified\Syncfusion.SfRotator.XForms.iOS.dll
+iOS-unified\Syncfusion.SfRotator.XForms.dll
+
+### UWP 
+
+uwp\Syncfusion.SfRotator.UWP.dll
+uwp\Syncfusion.SfRotator.XForms.dll
+uwp\Syncfusion.SfRotator.XForms.UWP.dll
 
 Currently an additional step is required for iOS projects. We need to create an instance of the rotator custom renderer as shown below. 
 
 Create an instance of SfRotatorRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below
 
+{% tabs %}
+
 {% highlight C# %}
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
-
 {
-
-    ...
-
     new SfRotatorRenderer ();
-
-    ...
-
 }	
 
 {% endhighlight %}
 
+{% endtabs %}
+
 
 ## Add and Configure the SfRotator
 
-The following steps help to add a SfRotator control through code.
+The following steps helps to add a SfRotator control through code.
 
 * Adding namespace for the added assemblies. 
 
@@ -105,14 +102,14 @@ The following steps help to add a SfRotator control through code.
 
 {% highlight C# %}		
 
-	SfRotator rotator = new SfRotator();
-	this.Content = rotator;
+SfRotator rotator = new SfRotator();
+this.Content = rotator;
 	
 {% endhighlight %}
 
 {% highlight xaml %}
 
-	<rotator:SfRotator x:Name="rotator"/>
+<rotator:SfRotator x:Name="rotator"/>
 	
 {% endhighlight %}
 
@@ -126,13 +123,13 @@ The navigation mode for navigating items can be decided using `NavigationMode` p
 
 {% highlight C# %}	
 
-	rotator.NavigationStripMode = NavigationStripMode.Dots;
+rotator.NavigationStripMode = NavigationStripMode.Dots;
 
 {% endhighlight %}
 
 {% highlight xaml %}
 
-	<rotator:SfRotator x:Name="rotator" NavigationStripMode="Dots" />
+<rotator:SfRotator x:Name="rotator" NavigationStripMode="Dots" />
 	
 {% endhighlight %}
 
@@ -140,20 +137,20 @@ The navigation mode for navigating items can be decided using `NavigationMode` p
 
 ## Customizing Position
 
-The placement position of navigation strip items such as Thumbnail or Dots can be specified using `TabStripPosition` property. 
+The placement position of navigation strip items such as Thumbnail or Dots can be specified using `NavigationStripPosition` property. 
 
 {% tabs %}
 
 {% highlight C# %}	
 
-	rotator.NavigationStripMode = NavigationStripMode.Dots;
-	rotator.NavigationStripPosition = NavigationStripPosition.Bottom;
+rotator.NavigationStripMode = NavigationStripMode.Dots;
+rotator.NavigationStripPosition = NavigationStripPosition.Bottom;
 	
 {% endhighlight %}
 
 {% highlight xaml %}
 
-	<rotator:SfRotator x:Name="rotator" NavigationStripMode="Dots"  NavigationStripPosition="Bottom"/>
+<rotator:SfRotator x:Name="rotator" NavigationStripMode="Dots"  NavigationStripPosition="Bottom"/>
 	
 {% endhighlight %}
 
@@ -163,52 +160,62 @@ The placement position of navigation strip items such as Thumbnail or Dots can b
 
 SfRotator items can be populated with a collection of image data. This collection includes Arrays, Lists and DataTables. For example you may wants to create a Rotator model with Image as follows.
 
-{% highlight C# %}
-	public RotatorModel(string imagestr)
-        {
-            Image = imagestr;
-        }
-        private String _image;
+{% tabs %}
 
-        public String Image
-        {
-            get { return _image; }
-            set { _image = value; }
-        }
+{% highlight C# %}
+public RotatorModel(string imagestr)
+{
+    Image = imagestr;
+}
+private String _image;
+public String Image
+{
+    get { return _image; }
+    set { _image = value; }
+}
 
      
 {% endhighlight %}
 
+{% endtabs %}
+
 Create and populate Rotator collection as follows
+
+{% tabs %}
 
 {% highlight C# %}
 
-	public RotatorViewModel()
-        {
-            ImageCollection.Add(new RotatorModel("movie1.png"));
-            ImageCollection.Add(new RotatorModel("movie2.png"));
-            ImageCollection.Add(new RotatorModel("movie3.png"));
-            ImageCollection.Add(new RotatorModel("movie4.png"));
-            ImageCollection.Add(new RotatorModel("movie5.png"));
-        }
-        private List<RotatorModel> imageCollection = new List<RotatorModel>();
+public RotatorViewModel()
+{
+    ImageCollection.Add(new RotatorModel("movie1.png"));
+    ImageCollection.Add(new RotatorModel("movie2.png"));
+    ImageCollection.Add(new RotatorModel("movie3.png"));
+    ImageCollection.Add(new RotatorModel("movie4.png"));
+    ImageCollection.Add(new RotatorModel("movie5.png"));
+}
+private List<RotatorModel> imageCollection = new List<RotatorModel>();
 
-        public List<RotatorModel> ImageCollection
-        {
-            get { return imageCollection; }
-            set { imageCollection = value; }
-        }
-
+public List<RotatorModel> ImageCollection
+{
+    get { return imageCollection; }
+    set { imageCollection = value; }
+}
 
 {% endhighlight %}
+
+{% endtabs %}
 
 Assigning collection to ItemSource
 
+{% tabs %}
+
 {% highlight C# %}
 
- 		rotator.BindingContext = new RotatorViewModel();
+ rotator.BindingContext = new RotatorViewModel();
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ## Providing Template for Items
 
@@ -216,13 +223,13 @@ ItemTemplate property of SfRotator control is used to customize the contents of 
 
 {% highlight xaml %}
 
-	<rotator:SfRotator x:Name="rotator"  Grid.Row="0" NavigationDelay="2000" ItemsSource="{Binding ImageCollection}" SelectedIndex="2" NavigationDirection="Horizontal" NavigationStripMode="Dots" BackgroundColor="#ececec" NavigationStripPosition="Bottom">
-        <rotator:SfRotator.ItemTemplate>
-          <DataTemplate>
-            <Image  Source="{Binding Image}"/>                   
-          </DataTemplate>
-        </rotator:SfRotator.ItemTemplate>
-      </rotator:SfRotator>
+<rotator:SfRotator x:Name="rotator"  Grid.Row="0" NavigationDelay="2000" ItemsSource="{Binding ImageCollection}" SelectedIndex="2" NavigationDirection="Horizontal" NavigationStripMode="Dots" BackgroundColor="#ececec" NavigationStripPosition="Bottom">
+    <rotator:SfRotator.ItemTemplate>
+      <DataTemplate>
+        <Image  Source="{Binding Image}"/>                   
+      </DataTemplate>
+    </rotator:SfRotator.ItemTemplate>
+</rotator:SfRotator>
 	  
 {% endhighlight %}
 

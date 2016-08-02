@@ -153,7 +153,9 @@ The following steps helps to add a SfCalendar control through code.
 
 ## Enabling Multiple Selection 
 
-To enable multiple selection, change the selection type using `SelectionMode` property. Check the [Selection Mode](http://help.syncfusion.com/xamarin/sfcalendar/restrict-dates-from-selection#range-of-min--max-dates)  section for more details.
+User can select the desired dates in SfCalendar control. For example user can select multiple dates in which he had meeting with customer.
+
+This can be done by using `MultiSelection` in SelectionMode enumeration property. Check the [Selection Mode](http://help.syncfusion.com/xamarin/sfcalendar/select-multiple-dates)  section for more details.
 
 {% tabs %}
 
@@ -174,10 +176,11 @@ To enable multiple selection, change the selection type using `SelectionMode` pr
 
 ## Setting Blackout Dates
 
-Add the dates into `BlackOutDates` property, which needs to be disabled among visible dates. Check the [BlackOutDates](http://help.syncfusion.com/android/sfcalendar/blackoutdates) section for more details.
+SfCalendar control provides option to black out the desired date which is in disabled state among the visible dates. Following example shows how to black out all the holiday dates by adding it into `BlackOutDates` list. 
 
-For instance add all the holiday dates to blackout dates property.
+Check the [BlackOutDates](http://help.syncfusion.com/android/sfcalendar/blackoutdates) section for more details.
 
+{% tabs %}
 
 {% highlight c# %}
 
@@ -191,20 +194,21 @@ For instance add all the holiday dates to blackout dates property.
     }
 	calendar.BlackoutDates = black_dates;
 
-
 {% endhighlight %}
 
-
+{% endtabs %}
 
 ## Restricting Dates
 
-Set `MinDate` and `MaxDate` property to limit visible dates range. Check the [Min Max dates](http://help.syncfusion.com/xamarin/sfcalendar/restrict-dates-from-selection#range-of-min--max-dates) section for more details.
+SfCalendar control provides option to set visible dates range from minimum date to maximum date. All the other dates in the SfCalendar are in disabled state. This can be done by using the properties named `MinDate` and `MaxDate`. Check the [Min Max dates](http://help.syncfusion.com/xamarin/sfcalendar/restrict-dates-from-selection#range-of-min--max-dates) section for more details.
+
+Following example shows how to set particular period of time the employee is working in a company.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-	<CalendarSample:SfCalendar  x:Name="calendar" SelectionMode="MultiSelection" MinDate="2014,4,1" MaxDate="2018,4,1"/>
+	<CalendarSample:SfCalendar  x:Name="calendar" SelectionMode="MultiSelection" MinDate="2014,4,1" MaxDate="2016,4,1"/>
 
 {% endhighlight %}
 
@@ -220,7 +224,7 @@ Set `MinDate` and `MaxDate` property to limit visible dates range. Check the [Mi
     }
 	calendar.BlackoutDates = black_dates;
 	calendar.MinDate = new DateTime(2014,4,1);
-	calendar.MaxDate = new DateTime(2018,4,1);
+	calendar.MaxDate = new DateTime(2016,4,1);
 	
 {% endhighlight %}
 

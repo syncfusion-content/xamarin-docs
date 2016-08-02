@@ -9,7 +9,7 @@ documentation : ug
 
 # Customizing the Suggestion DropDown
 
-The suggestion list displaying behaviour can be customised based on the entered text and delays in displaying the items.
+The suggestion list displaying behavior can be customized based on the entered text and delays in displaying the items.
 
 ## Set Minimum Prefix Character
 

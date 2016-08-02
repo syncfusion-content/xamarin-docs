@@ -153,7 +153,7 @@ The following steps helps to add a SfCalendar control through code.
 
 ## Enabling Multiple Selection 
 
-To enable multiple selection, change the selection type using `SelectionMode` property. Check the [Selection Mode](http://help.syncfusion.com/xamarin/sfcalendar/restrict-dates-from-selection#range-of-min--max-dates)  section for more details.
+We can select multiple dates in SfCalendar control. This can be done by using  `SelectionMode` property. Check the [Selection Mode](http://help.syncfusion.com/xamarin/sfcalendar/select-multiple-dates)  section for more details.
 
 {% tabs %}
 
@@ -174,10 +174,11 @@ To enable multiple selection, change the selection type using `SelectionMode` pr
 
 ## Setting Blackout Dates
 
-Add the dates into `BlackOutDates` property, which needs to be disabled among visible dates. Check the [BlackOutDates](http://help.syncfusion.com/android/sfcalendar/blackoutdates) section for more details.
+SfCalendar control provides option to black out the desired dates. This can be done by adding dates into `BlackOutDates`. Check the [BlackOutDates](http://help.syncfusion.com/android/sfcalendar/blackoutdates) section for more details.
 
-For instance add all the holiday dates to blackout dates property.
+Following is the example for black out all the holiday dates.
 
+{% tabs %}
 
 {% highlight c# %}
 
@@ -191,14 +192,15 @@ For instance add all the holiday dates to blackout dates property.
     }
 	calendar.BlackoutDates = black_dates;
 
-
 {% endhighlight %}
 
-
+{% endtabs %}
 
 ## Restricting Dates
 
-Set `MinDate` and `MaxDate` property to limit visible dates range. Check the [Min Max dates](http://help.syncfusion.com/xamarin/sfcalendar/restrict-dates-from-selection#range-of-min--max-dates) section for more details.
+SfCalendar control provides option to set visible dates range. This can be done by using the properties named `MinDate` and `MaxDate`. Check the [Min Max dates](http://help.syncfusion.com/xamarin/sfcalendar/restrict-dates-from-selection#range-of-min--max-dates) section for more details.
+
+Following example shows how to set visible dates from the range 2014 to 2018.
 
 {% tabs %}
 

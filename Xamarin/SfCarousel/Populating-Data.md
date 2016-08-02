@@ -70,7 +70,7 @@ public class CarouselViewModel
 
 {% endtabs %}
 
-N> Images can also be referred in PCL and from website url as [instructed](https://developer.xamarin.com/guides/xamarin-forms/working-with/images/)
+N> Images can also be referred in PCL and from website URL as [instructed](https://developer.xamarin.com/guides/xamarin-forms/working-with/images/)
 
 
 ### Binding the Data with Custom Template

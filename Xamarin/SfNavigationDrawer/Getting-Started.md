@@ -40,7 +40,7 @@ pcl\Syncfusion.SfNavigationDrawer.XForms.dll
 android\Syncfusion.SfNavigationDrawer.Android.dll
 android\Syncfusion.SfNavigationDrawer.XForms.dll
 android\Syncfusion.SfNavigationDrawer.XForms.Android.dll 
-Xamarin.Android.Support.v4 (from Nuget Packages)
+Xamarin.Android.Support.v4 (from NuGet Packages)
 	
 ### iOS 
 
@@ -149,7 +149,7 @@ this.Content=navigationDrawer;
 
 The sliding main content of the SfNavigationDrawer which is a part of DrawerPanel can be set using `DrawerContentView` property with desired views.
 
-The control has been initialized in Xaml
+The control has been initialized in XAML
 
 {% tabs %}
 
@@ -196,7 +196,7 @@ navigationDrawer.DrawerContentView = mainStack;
 
 ## Add Drawer Header Content
 
-Instead of providing everyting in the drawer content view, `DrawerHeaderView` property can be used to display certain information like user id or names in the header part.
+Instead of providing everything in the drawer content view, `DrawerHeaderView` property can be used to display certain information like user id or names in the header part.
 
 {% tabs %}
 

@@ -22,7 +22,7 @@ The header and footer contents are optional and Drawer content is the mandatory 
 
 The sliding main content of the SfNavigationDrawer can be set with any view using `DrawerContentView`. This part mostly holds the list of menus that has to be selected to display the Main content.
 
-The control has been initialized in Xaml
+The control has been initialized in XAML
 
 {% tabs %}
 
@@ -70,7 +70,7 @@ navigationDrawer.DrawerContentView = mainStack;
 
 ## Drawer Header Content
 
-Instead of providing everyting in the drawer content view, `DrawerHeaderView` property can be used to display certain information like user id or names in the header part.
+Instead of providing everything in the drawer content view, `DrawerHeaderView` property can be used to display certain information like user id or names in the header part.
 
 {% tabs %}
 
@@ -84,6 +84,7 @@ Instead of providing everyting in the drawer content view, `DrawerHeaderView` pr
          </StackLayout>
     </navigation:SfNavigationDrawer.DrawerHeaderView>
 </navigation:SfNavigationDrawer>
+
 {% endhighlight %}
 
 {% highlight c# %}

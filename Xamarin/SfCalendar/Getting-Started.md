@@ -198,7 +198,7 @@ For instance add all the holiday dates to blackout dates property.
 
 ## Restricting Dates
 
-Set `MinDate` and `MaxDate` property to limit visible dates range. Check the [Min Max dates](http://help.syncfusion.com/xamarin/sfcalendar/datenavigation-and-gesture#min-max-dates) section for more details.
+Set `MinDate` and `MaxDate` property to limit visible dates range. Check the [Min Max dates](http://help.syncfusion.com/xamarin/sfcalendar/restrict-dates-from-selection#range-of-min--max-dates) section for more details.
 
 {% tabs %}
 

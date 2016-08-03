@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Sizing
 
-The Indicator drawing size can be customized using `ViewBoxHeight` and `ViewBoxWidth` property.
+Drawing size can be customized in SfBusyIndicator. `ViewBoxHeight` and `ViewBoxWidth` properties can be used to set height and width of the Indicator.
 
 {% tabs %}
 

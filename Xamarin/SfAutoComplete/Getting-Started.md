@@ -168,7 +168,9 @@ A list of string with country names are created and added to auto complete sourc
 
 ## Set Filter Mode
 
-The displayed items that matches the starting letter can be configured using `SuggestionMode` property and the displaying pattern can be set with `AutoCompleteMode` property.
+Filters can be applied to the displayed items based on starting letter. We can also append the first item from the suggested list to the TextBox. This can be done by using the `SuggestionMode` and `AutoCompleteMode` properties in SfAutoComplete control.
+
+The following example shows the SfAutoComplete control which suggest the country list starting with the letter U.
  
 {% tabs %}
 

@@ -117,7 +117,7 @@ this.Content = rotator;
 
 ## Setting Navigation Mode
 
-The navigation mode for navigating items can be decided using `NavigationMode` property. The items can be navigated using Thumbnail or Dots.
+SfRoator provides option to display the navigating items either in Thumbnail or Dots mode. The navigation mode for navigating items can be decided using `NavigationMode` property.
 
 {% tabs %}
 
@@ -137,7 +137,7 @@ rotator.NavigationStripMode = NavigationStripMode.Dots;
 
 ## Customizing Position
 
-The placement position of navigation strip items such as Thumbnail or Dots can be specified using `NavigationStripPosition` property. 
+The placement position of navigation strip items such as Thumbnail or Dots can be customized in SfRotator. This can be specified using `NavigationStripPosition` property.   
 
 {% tabs %}
 

@@ -151,7 +151,7 @@ The SfRating control is configured entirely in C# code or by using XAML markup. 
 
 ## Set Number of Rating Items
 
-The `ItemCount` property sets the number of rating items to be displayed. 
+Number of rating items which are to be displayed can be customized in SfRatingControl. User may wants to create the rating application with 5 items as follows.  
 
 N> The default property value is 5.
 
@@ -159,13 +159,13 @@ N> The default property value is 5.
 
 {% highlight xaml %}
 
-	<rating:SfRating x:Name="rating" ItemCount="4" />
+	<rating:SfRating x:Name="rating" ItemCount="5" />
 	
 {% endhighlight %}
 
 {% highlight C# %}
 
-	rating.ItemCount=4;
+	rating.ItemCount=5;
 
 {% endhighlight %}
 
@@ -173,7 +173,7 @@ N> The default property value is 5.
 
 ## Set Value
 
-* The `Value` property sets the display value of the SfRating. 
+Display value can be set in SfRating control which is selected among the items. The following example shows the display value of 3 with 5 rating items. 
 
 N> By default, property value is 0.
 
@@ -195,7 +195,7 @@ N> By default, property value is 0.
 
 ## Precision
 
-* To enable full, half and exact values of rating, set the `Precision` property.
+SfRating control provides option to rate the items in full, half and exact value. This can be set through `Precision` property.
 
 {% tabs %}
 

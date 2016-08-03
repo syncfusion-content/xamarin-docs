@@ -244,7 +244,9 @@ public class CarouselViewModel
 
 ## Set Gap between Items
 
-SfCarousel provides an attached property `Offset` that helps to set the distance between the items in panel. The items can be populated as described [above](#add-carousel-items)
+SfCarousel provides option to set the distance between the items in the panel. This can be done by using the `Offset` property in SfCarousel control. 
+
+The items can be populated as described [above](#add-carousel-items)
 
 {% tabs %}
 
@@ -266,7 +268,9 @@ SfCarousel provides an attached property `Offset` that helps to set the distance
 
 ## Tilt Non Selected Items
 
-SfCarousel provides an attached property `RotationAngle` that helps to decide the angle in which items should be rotated. The items can be populated as described [above](#add-carousel-items)
+Items in the SfCarousel control can be rotated in user defined angle. `RotationAngle` property is used to decide the angle in which items should be rotated.
+
+The items can be populated as described [above](#add-carousel-items)
 
 {% tabs %}
 
@@ -288,7 +292,9 @@ SfCarousel provides an attached property `RotationAngle` that helps to decide th
 
 ## Set Desire Item to be Selected
 
-SfCarousel provides an attached property `SelectedIndex` that helps to bring the particular item to center of the screen. The items can be populated as described [above](#add-carousel-items)
+We can bring particular item to the center of the screen using `SelectedIndex` property in SfCarousel control.
+
+The items can be populated as described [above](#add-carousel-items)
 
 {% tabs %}
 

@@ -140,7 +140,7 @@ The SfDigitalGauge control is configured entirely in C# code or by using XAML ma
 
 ## Set Value
 
-The `Value` property sets the display value in the SfDigitalGauge.
+SfDigitalGauge provides option to display special characters or display values through the `Value` property.
 
 {% tabs %}
 
@@ -181,8 +181,7 @@ The Digital Characters can be drawn in 4 different segments.
 
 ## Configuring properties
 
-
-Configure the character height, width, stroke thickness and other properties to display the character.
+Character Height, Width and Stroke Thickness which is used to display the Characters can be customized as in the below code snippets.
 
 {% tabs %}
 

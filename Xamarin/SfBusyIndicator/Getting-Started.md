@@ -144,7 +144,7 @@ The following steps helps to add a SfBusyIndicator control through code.
 
 ## Setting Animation Type
 
-SfBusyIndicator provides 10 predefined animation types like Ball, Battery, Globe etc. User can select any one of the animation types using `AnimationType`property.
+SfBusyIndicator provides 10 predefined animation types like Ball, Battery, Globe and so on. User can select any one of the animation types using `AnimationType`property.
 
 Following example depicts the battery type animation for SfBusyIndicator. 
 

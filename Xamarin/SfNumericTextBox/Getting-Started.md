@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section provides overview for working with Essential NumericTextBox for Xamarin.Forms.
+This section explains you the steps to configure a SfNumericTextBox control in a real-time scenario and also provides a walk-through on some of the customization features available in SfNumericTextBox control.
 
 ## Referencing Essential Studio Components in Your Solution	
 
@@ -166,7 +166,7 @@ SfNumericTextBox numericTextBox=new SfNumericTextBox();
 
 ## Enable Parsing Mode
 
-The value parser type can be decided between double and decimal using `ParsingMode` property
+SfNumericTextBox provides option to display the value in double or decimal. Following code shows the Decimal parsing mode which can be set through `ParsingMode` property.
 
 {% tabs %}
 
@@ -190,8 +190,7 @@ SfNumericTextBox numericTextBox=new SfNumericTextBox();
 
 ## Add Format String
 
-Providing currency format to display values using `FormatString` property
-
+SfNumericTextBox provides option to format the display text in currency format. Following code explains how to set the currency format using `FormatString` property.
 
 {% tabs %}
 

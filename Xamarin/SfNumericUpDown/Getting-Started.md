@@ -168,9 +168,7 @@ SfNumericUpDown numericUpDown=new SfNumericUpDown();
 
 ## Enable Parsing Mode
 
-The value of the SfNumericUpDown can be parsed based on the `ParsingMode` property. 
-
-N> The `ParsingMode` is of type Parsers containing enum values of Double and Decimal.
+SfNumericTextBox provides option to display the value in double or decimal. Following code shows the Decimal parsing mode which can be set through `ParsingMode` property.
 
 {% tabs %}
 
@@ -189,13 +187,12 @@ SfNumericUpDown numericUpDown=new SfNumericUpDown();
 	
 {% endhighlight %}
 
-
 {% endtabs %}
 
 
 ## Add Format String
 
-The `FormatString` property determines the format specifier by which the display text has to be formatted. 
+SfNumericTextBox provides option to format the display text in currency format. 
 
 It has three types,
 
@@ -204,6 +201,8 @@ It has three types,
 * p – Display the value in Percentage.
 
 N> The control displays the formatted text on lost focus. Default Value of `FormatString` is "n".
+
+Following code explains how to set the currency format using `FormatString` property.
 
 {% tabs %}
 

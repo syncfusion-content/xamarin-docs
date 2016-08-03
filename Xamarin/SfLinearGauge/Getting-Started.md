@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains the entire process of creating SfLinearGauge and configuring its properties.
+This section explains you the steps to configure a SfLinearGauge control in a real-time scenario and also provides a walk-through on some of the customization features available in SfLinearGauge control.
 
 ## Referencing Essential Studio Components in Your Solution	
 

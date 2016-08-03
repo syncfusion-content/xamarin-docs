@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Set Header
 
-The `Title` property can be used to get or set the text that indicates the information related to loading.
+SfBusyIndicator provides option to set the text that indicates the information related to loading. This can be done using `Title` property.
 
 {% tabs %}
 

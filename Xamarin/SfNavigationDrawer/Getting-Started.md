@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section provides overview for working with Essential NavigationDrawer for Xamarin.Forms. You can walk through the entire process of creating an NavigationDrawer.
+This section explains you the steps to configure a SfNavigationDrawer control in a real-time scenario and also provides a walk-through on some of the customization features available in SfNavigationDrawer control.
 
 ## Referencing Essential Studio Components in Your Solution	
 
@@ -147,7 +147,7 @@ this.Content=navigationDrawer;
 
 ## Add Drawer Content
 
-The sliding main content of the SfNavigationDrawer which is a part of DrawerPanel can be set using `DrawerContentView` property with desired views.
+SfNavigationDrawer supports to set the Main content of the sliding DrawerPanel. This can be set using `DrawerContentView` property with desired views.
 
 The control has been initialized in XAML
 
@@ -196,7 +196,9 @@ navigationDrawer.DrawerContentView = mainStack;
 
 ## Add Drawer Header Content
 
-Instead of providing everything in the drawer content view, `DrawerHeaderView` property can be used to display certain information like user id or names in the header part.
+SfNavigationDrawer provides option to display certain information like user id or names in the header part instead of providing everything in the drawer content view. 
+
+This can be done using `DrawerHeaderView` property in SfNavigationDrawer.
 
 {% tabs %}
 
@@ -248,7 +250,7 @@ navigationDrawer.DrawerHeaderView=headerLayout;
 
 ## Adjust Drawer Width
 
-Drawer width and height can be set through `DrawerHeight` and `DrawerWidth` properties.
+Height and Width of the Drawer can be customized in SfNavigationDrawer. User can customize the size of the Drawer according to their requirement using `DrawerHeight` and `DrawerWidth` properties as in the below code snippet.
 
 {% tabs %}
 
@@ -328,7 +330,7 @@ navigationDrawer.ContentView=ContentFrame;
 
 ## Set Drawing Edge for Drawer Panel
 
-The `Position` property specifies the sliding position of the DrawerView panel. The `Position` property has the following four options.
+SfNavigationDrawer provides support to change the sliding position of the DrawerView panel. This can be set using `Position` property. The position can be any one of the following four options.
 
 * Left
 
@@ -360,7 +362,7 @@ navigationDrawer.Position=Position.Left;
 
 ## Change Drawer Opening Animation
 
-The `Transition` property specifies the opening animation for the DrawerView panel. The `Transition` property has the following three options.
+The DrawerView panel can be opened on the top of the Content. This opening animation for the DrawerView panel can be set using the `Transition` enumeration property which has the following three options.
 
 * SlideOnTop
 * Push

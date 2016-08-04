@@ -9,7 +9,7 @@ documentation: ug
 
 # Create Appointments
 
-This section explains the programmatic creation of appointments in SfCalendar control.
+SfCalendar control provides support to create appointments programmatically. 
 
 ## Programmatic Creation
 

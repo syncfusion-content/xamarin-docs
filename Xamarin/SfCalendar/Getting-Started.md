@@ -120,6 +120,8 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% endtabs %}
 
+![](images/gettingstarted.png)
+
 ## Setting Blackout Dates
 
 SfCalendar control provides option to black out the desired date which is in disabled state among the visible dates. Here, holidays are blacked out in the form which cannot be selected by the user. To black out the holiday, add them into `BlackoutDates` list. 
@@ -173,9 +175,9 @@ N> Check the [Selection Mode](http://help.syncfusion.com/xamarin/sfcalendar/sele
 
 ## Restricting Dates
 
-SfCalendar control provides option to set visible dates range from minimum date to maximum date. All the other dates in the SfCalendar are in disabled state. This can be done by using the properties named `MinDate` and `MaxDate`. Check the [Min Max dates](http://help.syncfusion.com/xamarin/sfcalendar/restrict-dates-from-selection#range-of-min--max-dates) section for more details.
+SfCalendar allows to select dates that falls between certain range of dates. Here, restrict user to select dates only in current year.
+To specify the range, set start date and end date to `MinDate` and `MaxDate` properties respectively.
 
-Following example shows how to set particular period of time the employee is working in a company.
 
 {% tabs %}
 
@@ -203,4 +205,4 @@ Following example shows how to set particular period of time the employee is wor
 
 {% endtabs %}
 
-![](images/gettingstarted.png)
+![](images/Gettingstartedfinal.png)

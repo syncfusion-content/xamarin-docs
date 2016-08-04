@@ -9,7 +9,7 @@ documentation: ug
 
 # Date Navigation
 
-This section explains about the programmatic and gesture navigation support available in SfCalendar control.
+SfCalendar control provides option to navigate through items either programmatically or by using gesture.
 
 ## Transition Modes
 

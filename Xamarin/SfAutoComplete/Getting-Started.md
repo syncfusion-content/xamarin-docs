@@ -11,64 +11,44 @@ documentation : ug
 
 This section explains you the steps to configure a SfAutoComplete control in a real-time scenario and also provides a walk-through on some of the customization features available in SfAutoComplete control.
 
-## Referencing Essential Studio Components in Your Solution	
-
-If you had acquired Essential Studio components through the Xamarin component store interface from within your IDE, then after adding the components to your Xamarin.iOS, Xamarin.Android and Windows Phone projects through the Component manager, you will still need to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL project in your solution. You can do this by manually adding the relevant PCL assembly references to your PCL project contained in the following path inside of your solution folder.
-
-Components/syncfusionessentialstudio-version/lib/pcl/
-
-Alternatively if you had downloaded Essential Studio from Syncfusion.com or through the Xamarin store web interface then all assembly references need to be added manually.
-
-After installing Essential Studio for Xamarin, all the required assemblies can be found in the installation folders, typically
-
-{Syncfusion Installed location}\Essential Studio\syncfusionessentialstudio-version\lib
-
-Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\lib
-
-Or after downloading through the Xamarin store web interface, all the required assemblies can be found in the below folder
-
-{Download location}\syncfusionessentialstudio-version\lib
-
+## Add SfAutoComplete
 
 You can then add the assembly references to the respective projects as shown below
 
-### PCL 
-pcl\Syncfusion.SfAutoComplete.XForms.dll
-
-### Android 
-android\Syncfusion.SfAutoComplete.Android.dll
-android\Syncfusion.SfAutoComplete.XForms.Android.dll
-android\Syncfusion.SfAutoComplete.XForms.dll
-
-### iOS 
-iOS-unified\Syncfusion.SfAutoComplete.iOS.dll
-iOS-unified\Syncfusion.SfAutoComplete.XForms.iOS.dll
-iOS-unified\Syncfusion.SfAutoComplete.XForms.dll
-
-### Windows Phone
-wp8\Syncfusion.SfInput.WP8.dll
-wp8\Syncfusion.SfShared.WP8.dll
-wp8\Syncfusion.SfAutoComplete.XForms.dll
-wp8\Syncfusion.SfAutoComplete.XForms.WinPhone.dll
-
-### Windows Phone 8.1
-wp81\Syncfusion.SfInput.WP.dll
-wp81\Syncfusion.SfShared.WP.dll
-wp81\Syncfusion.SfAutoComplete.XForms.dll
-wp81\Syncfusion.SfAutoComplete.XForms.WinPhone.dll
-
-### WinRT 
-winrt\Syncfusion.SfInput.WinRT.dll
-winrt\Syncfusion.SfShared.WinRT.dll
-winrt\Syncfusion.SfAutoComplete.XForms.dll
-winrt\Syncfusion.SfAutoComplete.XForms.WinRT.dll
-
-### UWP 
-uwp\Syncfusion.SfInput.UWP.dll
-uwp\Syncfusion.SfShared.UWP.dll
-uwp\Syncfusion.SfAutoComplete.XForms.dll
-uwp\Syncfusion.SfAutoComplete.XForms.UWP.dll
-
+<table>
+<tr>
+<th>Project</th>
+<th>Required assemblies</th>
+</tr>
+<tr>
+<td>PCL</td>
+<td>pcl\Syncfusion.SfAutoComplete.XForms.dll</td>
+</tr>
+<tr>
+<td>Android</td>
+<td>android\Syncfusion.SfAutoComplete.Android.dll<br/>android\Syncfusion.SfAutoComplete.XForms.Android.dll<br/>android\Syncfusion.SfAutoComplete.XForms.dll</td>
+</tr>
+<tr>
+<td>iOS (Unified)</td>
+<td>iOS-unified\Syncfusion.SfAutoComplete.iOS.dll<br/>iOS-unified\Syncfusion.SfAutoComplete.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfAutoComplete.XForms.dll</td>
+</tr>
+<tr>
+<td>Windows Phone</td>
+<td>wp8\Syncfusion.SfInput.WP8.dll<br/>wp8\Syncfusion.SfShared.WP8.dll<br/>wp8\Syncfusion.SfAutoComplete.XForms.dll<br/>wp8\Syncfusion.SfAutoComplete.XForms.WinPhone.dll</td>
+</tr>
+<tr>
+<td>Windows Phone 8.1</td>
+<td>wp81\Syncfusion.SfInput.WP.dll<br/>wp81\Syncfusion.SfShared.WP.dll<br/>wp81\Syncfusion.SfAutoComplete.XForms.dll<br/>wp81\Syncfusion.SfAutoComplete.XForms.WinPhone.dll</td>
+</tr>
+<tr>
+<td>WinRT</td>
+<td>winrt\Syncfusion.SfInput.WinRT.dll<br/>winrt\Syncfusion.SfShared.WinRT.dll<br/>winrt\Syncfusion.SfAutoComplete.XForms.dll<br/>winrt\Syncfusion.SfAutoComplete.XForms.WinRT.dll</td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>uwp\Syncfusion.SfInput.UWP.dll<br/>uwp\Syncfusion.SfShared.UWP.dll<br/>uwp\Syncfusion.SfAutoComplete.XForms.dll<br/>uwp\Syncfusion.SfAutoComplete.XForms.UWP.dll</td>
+</tr>
+</table>
 
 Currently an additional step is required for Windows Phone, Windows Phone 8.1 and iOS projects. We need to create an instance of the autocomplete custom renderer as shown below. 
 
@@ -101,10 +81,6 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {% endhighlight %}
 
 {% endtabs %}
-
-## Add SfAutoComplete
-
-The following steps helps to add a SfAutoComplete control through code.
 
 * Adding namespace for the added assemblies. 
 

@@ -143,7 +143,7 @@ The following steps helps to add a SfRangeSlider control through code.
 
 ## Set Range
 
-Displaying two thumbs and setting value for each thumb using `RangeStart` and `RangeEnd` values.
+SfRangeSlider provides option to set single thumb and double thumb. While setting the double thumb, each thumb value can be set using `RangeStart` and `RangeEnd` properties.
 
 N> The `ShowRange` property is used to switch between a single thumb and double thumb. 
 
@@ -169,7 +169,7 @@ SfRangeSlider rangeSlider=new SfRangeSlider();
 
 ## Restricting Values
 
-Set the minimum and maximum value for the slider by using the `Minimum` and `Maximum` properties in the SfRangeSlider.
+SfRangeSlider provides option to restrict slider range between minimum and maximum values. Following code explains how to set the range using `Minimum` and `Maximum` properties in the SfRangeSlider.
 
 {% tabs %}
 

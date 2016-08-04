@@ -31,16 +31,16 @@ Beyond the min max date range, following restrictions will be applied.
 
 {% highlight xaml %}
 
-	<CalendarSample:SfCalendar  x:Name="calendar" MinDate="2015,1,1" MaxDate="2040,12,12"/>
+<CalendarSample:SfCalendar  x:Name="calendar" MinDate="2015,1,1" MaxDate="2040,12,12"/>
 
 {% endhighlight %}	
 	
 {% highlight c# %}
 	
-	DateTime mindate=new DateTime(2015,1,1);
-	sfCalendar.MinDate=mindate;
-	DateTime maxdate=new DateTime(2040,12,12);
-	calendar.MaxDate=maxdate;
+DateTime mindate=new DateTime(2015,1,1);
+sfCalendar.MinDate=mindate;
+DateTime maxdate=new DateTime(2040,12,12);
+calendar.MaxDate=maxdate;
 	
 {% endhighlight %}
 
@@ -56,19 +56,21 @@ A date collection can be provided to set the `BlackoutDates`. This is useful whe
 
 By invoking the `AddDatesInPast` method, all past dates will be blacked out till current date.
 
+{% tabs %}
 
 {% highlight c# %}
 	
-	List<DateTime> black_dates = new List<DateTime>();
-	black_dates.Add (new DateTime(2015,11,3));
-	black_dates.Add (new DateTime(2015,11,7));
-	black_dates.Add (new DateTime(2015,11,15));
-	black_dates.Add (new DateTime(2015,11,16));
-	black_dates.Add (new DateTime(2015,11,26));
-	black_dates.Add (new DateTime(2015,11,30));
-	calendar.BlackoutDates= black_dates ;
+List<DateTime> black_dates = new List<DateTime>();
+black_dates.Add (new DateTime(2015,11,3));
+black_dates.Add (new DateTime(2015,11,7));
+black_dates.Add (new DateTime(2015,11,15));
+black_dates.Add (new DateTime(2015,11,16));
+black_dates.Add (new DateTime(2015,11,26));
+black_dates.Add (new DateTime(2015,11,30));
+calendar.BlackoutDates= black_dates ;
 	
 {%  endhighlight %}
 
+{% endtabs %}
 	
 ![](images/Blackout.png)

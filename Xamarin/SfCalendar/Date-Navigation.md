@@ -16,6 +16,7 @@ SfCalendar control provides option to navigate through items either programmatic
 Dates can be navigated by using swipe gesture as well as using built-in methods named `Forward` and `Backward`. By default those navigations are performed along with Scroll animation. Other than the default scroll animation, there are other options available like card, reveal, float animations. It can be changed by using `TransitionMode` property of SfCalendar control.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 	<CalendarSample:SfCalendar  x:Name="calendar" ViewMode="MonthView" TransitionMode="Float"/>

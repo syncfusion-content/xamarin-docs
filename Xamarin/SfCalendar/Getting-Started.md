@@ -113,8 +113,8 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% highlight c# %}
 
-	SfCalendar calendar=new SfCalendar();
-	this.Content=calendar;
+SfCalendar calendar=new SfCalendar();
+this.Content=calendar;
 	
 {% endhighlight %}
 
@@ -122,7 +122,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ![](images/gettingstarted.png)
 
-## Setting Blackout Dates
+## Set Blackout Dates
 
 SfCalendar control provides option to black out the desired date which is in disabled state among the visible dates. Here, holidays are blacked out in the form which cannot be selected by the user. To black out the holiday, add them into `BlackoutDates` list. 
 
@@ -132,21 +132,21 @@ N> Check the [BlackOutDates](http://help.syncfusion.com/android/sfcalendar/black
 
 {% highlight c# %}
 
-	SfCalendar  calendar = new SfCalendar ();
-	calendar.SelectionMode=SelectionMode.MultiSelection;
-	List<DateTime> black_dates = new List<DateTime>();
-	for (int i = 0; i < 5; i++)
-	{
-		DateTime date = DateTime.Now.Date.AddDays(i+7);
-		black_dates.Add(date);
-    }
-	calendar.BlackoutDates = black_dates;
+SfCalendar  calendar = new SfCalendar ();
+calendar.SelectionMode=SelectionMode.MultiSelection;
+List<DateTime> black_dates = new List<DateTime>();
+for (int i = 0; i < 5; i++)
+{
+	DateTime date = DateTime.Now.Date.AddDays(i+7);
+	black_dates.Add(date);
+}
+calendar.BlackoutDates = black_dates;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-## Enabling Multiple Selection 
+## Enable Multiple Selection
 
 SfCalendar control allows user to select one or more dates at a time among the non black out dates.
 
@@ -164,16 +164,15 @@ N> Check the [Selection Mode](http://help.syncfusion.com/xamarin/sfcalendar/sele
 
 {% highlight c# %}
 
-	SfCalendar calendar = new SfCalendar ();
-	calendar.SelectionMode=SelectionMode.MultiSelection;
+SfCalendar calendar = new SfCalendar ();
+calendar.SelectionMode=SelectionMode.MultiSelection;
 
 {% endhighlight %}
 
 {% endtabs %}
 
 
-
-## Restricting Dates
+## Restrict Dates
 
 SfCalendar allows to select dates that falls between certain range of dates. Here, restrict user to select dates only in current year.
 To specify the range, set start date and end date to `MinDate` and `MaxDate` properties respectively.
@@ -189,17 +188,17 @@ To specify the range, set start date and end date to `MinDate` and `MaxDate` pro
 
 {% highlight c# %}
 
-	SfCalendar  calendar = new SfCalendar ();
-	calendar.SelectionMode=SelectionMode.MultiSelection;
-	List<DateTime> black_dates = new List<DateTime>();
-	for (int i = 0; i < 5; i++)
-	{
-		DateTime date = DateTime.Now.Date.AddDays(i+7);
-		black_dates.Add(date);
-    }
-	calendar.BlackoutDates = black_dates;
-	calendar.MinDate = new DateTime(2014,4,1);
-	calendar.MaxDate = new DateTime(2016,4,1);
+SfCalendar  calendar = new SfCalendar ();
+calendar.SelectionMode=SelectionMode.MultiSelection;
+List<DateTime> black_dates = new List<DateTime>();
+for (int i = 0; i < 5; i++)
+{
+	DateTime date = DateTime.Now.Date.AddDays(i+7);
+	black_dates.Add(date);
+}
+calendar.BlackoutDates = black_dates;
+calendar.MinDate = new DateTime(2014,4,1);
+calendar.MaxDate = new DateTime(2016,4,1);
 	
 {% endhighlight %}
 

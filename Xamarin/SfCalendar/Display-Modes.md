@@ -47,6 +47,7 @@ The dates in month view can be selected by three ways such as single, multiple a
 
 * The BlackOutDate color can be modified with `BlackOutColor` property.
 
+{% tabs %}
 
 {% highlight c# %}
 	
@@ -63,6 +64,8 @@ The dates in month view can be selected by three ways such as single, multiple a
 	calendar.MonthViewSettings = monthViewSettings;
 	
 {% endhighlight %}
+
+{% endtabs %}
 
 N> Similar way there are many settings available to modify Text and Background colors of month view in `MonthViewSettings` class.
 

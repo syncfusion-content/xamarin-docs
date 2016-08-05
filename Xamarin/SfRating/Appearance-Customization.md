@@ -11,7 +11,7 @@ documentation: ug
 
 # Appearance Customization
 
-This section explains about the various appearance customizations available in SfRating control.
+Different colors can be applied for rated and unrated items and its border in SfRating control.
  
 ## Set Fill Color
 

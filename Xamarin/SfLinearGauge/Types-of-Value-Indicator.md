@@ -9,7 +9,7 @@ documentation: ug
 
 # Types of Value Indicator
 
-This section explains about different types of Pointers available in SfLinearGauge.
+SfLinearGauge provides support to mark the values using BarPointer and SymbolPointer.
 
 ## Through Bar Pointer
 

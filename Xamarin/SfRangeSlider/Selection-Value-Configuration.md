@@ -9,7 +9,7 @@ documentation: ug
 
 # Selection Value Configuration
 
-This section explains about various customization options available for selection value in SfRangeSlider.
+Various customization options are available to configure the selection value in SfRangeSlider.
 
 ## Set Minimum Value
 

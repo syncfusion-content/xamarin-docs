@@ -9,7 +9,7 @@ documentation: ug
 
 # Adding Looping and Delays
 
-This section explains about adding looping and delay in SfRotator control. And also the customizations available for Text and Navigation direction.
+Looping and delay can be enabled in SfRotator control and also we can customize the Text and Navigation direction.
 
 ## Toggle AutoPlay
 

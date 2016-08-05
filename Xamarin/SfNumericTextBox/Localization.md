@@ -10,6 +10,7 @@ documentation: ug
 
 The SfNumericTextBox value can be localized to any specific culture. It can be specified by setting the `Culture` property with `System.Globalization.CultureInfo` object instance.
 
+{% tabs %}
 
 {% highlight c# %}
 
@@ -17,6 +18,7 @@ The SfNumericTextBox value can be localized to any specific culture. It can be s
 	
 {% endhighlight %}
 
+{% endtabs %}
 
 ![](images/Culture.png)
 

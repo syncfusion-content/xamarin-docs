@@ -13,7 +13,7 @@ SfAutoComplete control, supports binding to different data sources such as IList
 
 ## Through Binding
 
-This section explains about setting data source and applying custom template to the data.
+Items can be populated in SfAutoComplete control through data source and applying custom template as explained below. 
 
 ### Create a Model with Data
 

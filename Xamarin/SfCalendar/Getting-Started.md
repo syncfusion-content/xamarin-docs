@@ -9,74 +9,46 @@ documentation: ug
 
 # Getting Started
 
-This section explains you the steps to configure a SfCalendar control in a real-time scenario and also provides a walk-through on some of the customization features available in Calendar control.
+This section explains how to implement simple holiday indicator application which allows user to select working days using SfCalendar control.
 
-
-## Referencing Essential Studio components in your solution
-
-If you had acquired Essential Studio components through the Xamarin component store interface from within your IDE, then after adding the components to your Xamarin.iOS, Xamarin.Android and Windows Phone projects through the Component manager, you will still need to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL project in your solution. You can do this by manually adding the relevant PCL assembly references to your PCL project contained in the following path inside of your solution folder.
-
-Components/syncfusionessentialstudio-version/lib/pcl/
-
-Alternatively if you had downloaded Essential Studio from Syncfusion.com or through the Xamarin store web interface then all assembly references need to be added manually.
-
-After installing Essential Studio for Xamarin, all the required assemblies can be found in the installation folders, typically
-
-{Syncfusion Installed location}\Essential Studio\syncfusionessentialstudio-version\lib
-
-Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\lib
-
-Or after downloading through the Xamarin store web interface, all the required assemblies can be found in the below folder
-
-{Download location}\syncfusionessentialstudio-version\lib
+## Add SfCalendar
 
 You can then add the assembly references to the respective projects as shown below.
 
-### PCL 
-
-pcl\Syncfusion.SfCalendar.XForms.dll
-
-
-### Android 
-
-android\Syncfusion.SfCalendar.Android.dll
-android\Syncfusion.SfCalendar.XForms.Android.dll
-android\Syncfusion.SfCalendar.XForms.dll
-
-### iOS 
-
-iOS-unified\Syncfusion.SfCalendar.iOS.dll
-iOS-unified\Syncfusion.SfCalendar.XForms.iOS.dll
-iOS-unified\Syncfusion.SfCalendar.XForms.dll
-
-### Windows Phone
-
-wp8\Syncfusion.SfInput.WP8.dll
-wp8\Syncfusion.SfShared.WP8.dll
-wp8\Syncfusion.SfCalendar.XForms.dll
-wp8\Syncfusion.SfCalendar.XForms.WinPhone.dll
-
-### Windows Phone 8.1
-
-wp81\Syncfusion.SfInput.WP.dll
-wp81\Syncfusion.SfShared.WP.dll
-wp81\Syncfusion.SfCalendar.XForms.dll
-wp81\Syncfusion.SfCalendar.XForms.WinPhone.dll
-
-### WinRT
-
-winrt\Syncfusion.SfInput.WinRT.dll
-winrt\Syncfusion.SfShared.WinRT.dll
-winrt\Syncfusion.SfCalendar.XForms.dll
-winrt\Syncfusion.SfCalendar.XForms.WinRT.dll
-
-### UWP 
-
-uwp\Syncfusion.SfInput.UWP.dll
-uwp\Syncfusion.SfShared.UWP.dll
-uwp\Syncfusion.SfCalendar.XForms.dll
-uwp\Syncfusion.SfCalendar.XForms.UWP.dll
-
+<table>
+<tr>
+<th>Project</th>
+<th>Required assemblies</th>
+</tr>
+<tr>
+<td>PCL</td>
+<td>pcl\Syncfusion.SfCalendar.XForms.dll</td>
+</tr>
+<tr>
+<td>Android</td>
+<td>android\Syncfusion.SfCalendar.Android.dll<br/>android\Syncfusion.SfCalendar.XForms.Android.dll<br/>android\Syncfusion.SfCalendar.XForms.dll</td>
+</tr>
+<tr>
+<td>iOS (Unified)</td>
+<td>iOS-unified\Syncfusion.SfCalendar.iOS.dll<br/>iOS-unified\Syncfusion.SfCalendar.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfCalendar.XForms.dll</td>
+</tr>
+<tr>
+<td>Windows Phone</td>
+<td>wp8\Syncfusion.SfInput.WP8.dll<br/>wp8\Syncfusion.SfShared.WP8.dll<br/>wp8\Syncfusion.SfCalendar.XForms.dll<br/>wp8\Syncfusion.SfCalendar.XForms.WinPhone.dll</td>
+</tr>
+<tr>
+<td>Windows Phone 8.1</td>
+<td>wp81\Syncfusion.SfInput.WP.dll<br/>wp81\Syncfusion.SfShared.WP.dll<br/>wp81\Syncfusion.SfCalendar.XForms.dll<br/>wp81\Syncfusion.SfCalendar.XForms.WinPhone.dll</td>
+</tr>
+<tr>
+<td>WinRT</td>
+<td>winrt\Syncfusion.SfInput.WinRT.dll<br/>winrt\Syncfusion.SfShared.WinRT.dll<br/>winrt\Syncfusion.SfCalendar.XForms.dll<br/>winrt\Syncfusion.SfCalendar.XForms.WinRT.dll</td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>uwp\Syncfusion.SfInput.UWP.dll<br/>uwp\Syncfusion.SfShared.UWP.dll<br/>uwp\Syncfusion.SfCalendar.XForms.dll<br/>uwp\Syncfusion.SfCalendar.XForms.UWP.dll</td>
+</tr>
+</table>
 
 Currently an additional step is required for Windows Phone, Windows Phone 8.1 and iOS projects. We need to create an instance of the calendar custom renderer as shown below. 
 
@@ -110,9 +82,6 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% endtabs %}
 
-## Add SfCalendar
-
-The following steps helps to add a SfCalendar control through code.
 
 * Adding namespace for the added assemblies. 
 
@@ -144,16 +113,46 @@ The following steps helps to add a SfCalendar control through code.
 
 {% highlight c# %}
 
-	SfCalendar calendar=new SfCalendar();
-	this.Content=calendar;
+SfCalendar calendar=new SfCalendar();
+this.Content=calendar;
 	
 {% endhighlight %}
 
 {% endtabs %}
 
-## Enabling Multiple Selection 
+![](images/gettingstarted.png)
 
-To enable multiple selection, change the selection type using `SelectionMode` property. Check the [Selection Mode](http://help.syncfusion.com/android/sfcalendar/selectionmode)  section for more details.
+## Set Blackout Dates
+
+SfCalendar control provides option to black out the desired date which is in disabled state among the visible dates. Here, holidays are blacked out in the form which cannot be selected by the user. To black out the holiday, add them into `BlackoutDates` list. 
+
+N> Check the [BlackOutDates](http://help.syncfusion.com/android/sfcalendar/blackoutdates) section for more details.
+
+{% tabs %}
+
+{% highlight c# %}
+
+SfCalendar  calendar = new SfCalendar ();
+calendar.SelectionMode=SelectionMode.MultiSelection;
+List<DateTime> black_dates = new List<DateTime>();
+for (int i = 0; i < 5; i++)
+{
+	DateTime date = DateTime.Now.Date.AddDays(i+7);
+	black_dates.Add(date);
+}
+calendar.BlackoutDates = black_dates;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Enable Multiple Selection
+
+SfCalendar control allows user to select one or more dates at a time among the non black out dates.
+
+To enable it set `MultiSelection` option in SelectionMode enumeration property.
+
+N> Check the [Selection Mode](http://help.syncfusion.com/xamarin/sfcalendar/select-multiple-dates)  section for more details.
 
 {% tabs %}
 
@@ -165,65 +164,44 @@ To enable multiple selection, change the selection type using `SelectionMode` pr
 
 {% highlight c# %}
 
-	SfCalendar calendar = new SfCalendar ();
-	calendar.SelectionMode=SelectionMode.MultiSelection;
+SfCalendar calendar = new SfCalendar ();
+calendar.SelectionMode=SelectionMode.MultiSelection;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-## Setting Blackout Dates
 
-Add the dates into `BlackOutDates` property, which needs to be disabled among visible dates. Check the [BlackOutDates](http://help.syncfusion.com/android/sfcalendar/blackoutdates) section for more details.
+## Restrict Dates
 
-For instance add all the holiday dates to blackout dates property.
+SfCalendar allows to select dates that falls between certain range of dates. Here, restrict user to select dates only in current year.
+To specify the range, set start date and end date to `MinDate` and `MaxDate` properties respectively.
 
-
-{% highlight c# %}
-
-	SfCalendar  calendar = new SfCalendar ();
-	calendar.SelectionMode=SelectionMode.MultiSelection;
-	List<DateTime> black_dates = new List<DateTime>();
-	for (int i = 0; i < 5; i++)
-	{
-		DateTime date = DateTime.Now.Date.AddDays(i+7);
-		black_dates.Add(date);
-    }
-	calendar.BlackoutDates = black_dates;
-
-
-{% endhighlight %}
-
-
-
-## Restricting Dates
-
-Set `MinDate` and `MaxDate` property to limit visible dates range. Check the [Min Max dates](http://help.syncfusion.com/xamarin/sfcalendar/datenavigation-and-gesture#min-max-dates) section for more details.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-	<CalendarSample:SfCalendar  x:Name="calendar" SelectionMode="MultiSelection" MinDate="2014,4,1" MaxDate="2018,4,1"/>
+	<CalendarSample:SfCalendar  x:Name="calendar" SelectionMode="MultiSelection" MinDate="2014,4,1" MaxDate="2016,4,1"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-	SfCalendar  calendar = new SfCalendar ();
-	calendar.SelectionMode=SelectionMode.MultiSelection;
-	List<DateTime> black_dates = new List<DateTime>();
-	for (int i = 0; i < 5; i++)
-	{
-		DateTime date = DateTime.Now.Date.AddDays(i+7);
-		black_dates.Add(date);
-    }
-	calendar.BlackoutDates = black_dates;
-	calendar.MinDate = new DateTime(2014,4,1);
-	calendar.MaxDate = new DateTime(2018,4,1);
+SfCalendar  calendar = new SfCalendar ();
+calendar.SelectionMode=SelectionMode.MultiSelection;
+List<DateTime> black_dates = new List<DateTime>();
+for (int i = 0; i < 5; i++)
+{
+	DateTime date = DateTime.Now.Date.AddDays(i+7);
+	black_dates.Add(date);
+}
+calendar.BlackoutDates = black_dates;
+calendar.MinDate = new DateTime(2014,4,1);
+calendar.MaxDate = new DateTime(2016,4,1);
 	
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/gettingstarted.png)
+![](images/Gettingstartedfinal.png)

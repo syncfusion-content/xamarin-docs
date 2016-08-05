@@ -175,7 +175,7 @@ The displayed items that matches the starting letter can be configured using `Su
 {% highlight xaml %}
 
 <ContentPage.Content>
-   <autocomplete:SfAutoComplete Watermark="Enter a country name" x:Name="countryAutoComplete" SuggestionMode="StartsWith" AutoCompleteMode="Suggest" HeightRequest="40" MinimumPrefixCharacters="1" MaximumDropDownHeight="200" PopupDelay ="100" />
+   <autocomplete:SfAutoComplete Watermark="Enter a country name" x:Name="countryAutoComplete" SuggestionMode="StartsWith" AutoCompleteMode="Suggest" HeightRequest="40" MinimumPrefixCharacters="1" MaximumDropDownHeight="200" />
 </ContentPage.Content>
 {% endhighlight %}
 
@@ -186,7 +186,6 @@ The displayed items that matches the starting letter can be configured using `Su
 	countryAutoComplete.MaximumDropDownHeight = 200;
 	countryAutoComplete.MinimumPrefixCharacters = 1;
 	countryAutoComplete.HeightRequest = 40;
-	countryAutoComplete.PopupDelay = 100;
 	
 	List<String> countryName = new List<String>();
 	countryName.Add("Uganda");

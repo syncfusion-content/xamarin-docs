@@ -135,9 +135,8 @@ Following example depicts the battery type animation for SfBusyIndicator.
 
    	<xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"/>
 	<ContentPage.Content>
-		<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="Battery" />
-	</ContentPage.Content>
-	<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="Battery" />
+		<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="Battery" ViewBoxWidth = "150" ViewBoxHeight="150" Color="Maroon"/>
+	</ContentPage.Content>	
 	
 {% endhighlight %}
 
@@ -147,6 +146,10 @@ Following example depicts the battery type animation for SfBusyIndicator.
 	SfBusyIndicator busyindicator = new SfBusyIndicator();
 	this.Content=busyindicator;
 	busyindicator.AnimationType = AnimationTypes.Battery;
+        busyindicator.ViewBoxWidth = 150;
+        busyindicator.ViewBoxHeight = 150;
+        busyindicator.Color = Color.Maroon;
+
 
 {% endhighlight %}
 

@@ -13,7 +13,7 @@ SfCarousel control, supports binding to different data sources such as IList Dat
 
 ## Through Binding
 
-This section explains about setting Item Source and applying custom template to the data.
+Items can be populated in SfCarousel control through data source and applying custom template as explained below. 
 
 ### Create a Model with Data
 

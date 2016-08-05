@@ -9,7 +9,7 @@ documentation: ug
 
 # Ticks Customization
 
-This section explains about the customization of the Ticks in SfRangeSlider control.
+Tick marks can be placed along the track in a uniform manner or it's position can also be customized.
 
 ## TickPlacement
 

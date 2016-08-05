@@ -8,27 +8,7 @@ documentation: ug
 ---
 # Animation Type
 
-The `AnimationType` property allows you to choose anyone of the 10 predefined animation types.
-
-### Ball
-
-### HorizontalPulsingBox
-
-### Rectangle
-
-### Battery
-
-### Globe
-
-### SingleCircle
-
-### SlicedCircle
-
-### DoubleCircle
-
-### ECG
-
-### Print
+The `AnimationType` property for the SfBusyIndicator allows the user to set one of the 10 animations from the built-in animations.
 
 {% tabs %}
 

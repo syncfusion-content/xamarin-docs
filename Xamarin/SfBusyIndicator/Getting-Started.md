@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Getting Started with Syncfusion SfBusyIndicator control for Xamarin.Forms
 description: A quick tour to initial users on Syncfusion SfBusyIndicator control for Xamarin.Forms platform
@@ -152,9 +152,8 @@ SfBusyIndicator provides an attached property `AnimationType` that helps to set 
 
    	<xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"/>
 	<ContentPage.Content>
-		<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="Battery" />
-	</ContentPage.Content>
-	<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="Battery" />
+		<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="Battery" ViewBoxWidth = "150" ViewBoxHeight="150" Color="Maroon"/>
+	</ContentPage.Content>	
 	
 {% endhighlight %}
 
@@ -164,6 +163,10 @@ SfBusyIndicator provides an attached property `AnimationType` that helps to set 
 	SfBusyIndicator busyindicator = new SfBusyIndicator();
 	this.Content=busyindicator;
 	busyindicator.AnimationType = AnimationTypes.Battery;
+        busyindicator.ViewBoxWidth = 150;
+        busyindicator.ViewBoxHeight = 150;
+        busyindicator.Color = Color.Maroon;
+
 
 {% endhighlight %}
 

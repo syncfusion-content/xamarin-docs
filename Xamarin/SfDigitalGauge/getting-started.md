@@ -11,60 +11,44 @@ documentation: ug
 
 This section explains you the steps to configure a SfDigitalGauge control in a real-time scenario and also provides a walk-through on some of the customization features available in it.
 
-## Referencing Essential Studio Components in Your Solution	
-
-If you had acquired Essential Studio components through the Xamarin component store interface from within your IDE, then after adding the components to your Xamarin.iOS, Xamarin.Android and Windows Phone projects through the Component manager, you will still need to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL project in your solution. You can do this by manually adding the relevant PCL assembly references to your PCL project contained in the following path inside of your solution folder.
-
-Components/syncfusionessentialstudio-version/lib/pcl/
-
-Alternatively if you had downloaded Essential Studio from Syncfusion.com or through the Xamarin store web interface then all assembly references need to be added manually.
-
-After installing Essential Studio for Xamarin, all the required assemblies can be found in the installation folders, typically
-
-{Syncfusion Installed location}\Essential Studio\syncfusionessentialstudio-version\lib
-
-Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\lib
-
-Or after downloading through the Xamarin store web interface, all the required assemblies can be found in the below folder
-
-{Download location}\syncfusionessentialstudio-version\lib
+## Add SfDigitalGauge
 
 You can then add the assembly references to the respective projects as shown below
 
-
-### PCL 
-pcl\Syncfusion.SfGauge.XForms.dll
-
-### Android 
-android\Syncfusion.SfGauge.Android.dll
-android\Syncfusion.SfGauge.XForms.Android.dll
-android\Syncfusion.SfGauge.XForms.dll
-
-### iOS 
-iOS-unified\Syncfusion.SfGauge.iOS.dll
-iOS-unified\Syncfusion.SfGauge.XForms.iOS.dll
-iOS-unified\Syncfusion.SfGauge.XForms.dll
-
-### Windows Phone
-wp8\Syncfusion.SfGauge.WP8.dll
-wp8\Syncfusion.SfGauge.XForms.dll
-wp8\Syncfusion.SfGauge.XForms.WinPhone.dll
-
-### Windows Phone 8.1
-wp81\Syncfusion.SfGauge.WP.dll
-wp81\Syncfusion.SfGauge.XForms.dll
-wp81\Syncfusion.SfGauge.XForms.WinPhone.dll
-
-### WinRT 
-winrt\Syncfusion.SfGauge.WinRT.dll
-winrt\Syncfusion.SfGauge.XForms.dll
-winrt\Syncfusion.SfGauge.XForms.WinRT.dll
-
-### UWP 
-uwp\Syncfusion.SfGauge.UWP.dll
-uwp\Syncfusion.SfGauge.XForms.dll
-uwp\Syncfusion.SfGauge.XForms.UWP.dll
-
+<table>
+<tr>
+<th>Project</th>
+<th>Required assemblies</th>
+</tr>
+<tr>
+<td>PCL</td>
+<td>pcl\Syncfusion.SfGauge.XForms.dll</td>
+</tr>
+<tr>
+<td>Android</td>
+<td>android\Syncfusion.SfGauge.Android.dll<br/>android\Syncfusion.SfGauge.XForms.Android.dll<br/>android\Syncfusion.SfGauge.XForms.dll</td>
+</tr>
+<tr>
+<td>iOS (Unified)</td>
+<td>iOS-unified\Syncfusion.SfGauge.iOS.dll<br/>iOS-unified\Syncfusion.SfGauge.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfGauge.XForms.dll</td>
+</tr>
+<tr>
+<td>Windows Phone</td>
+<td>wp8\Syncfusion.SfInput.WP8.dll<br/>wp8\Syncfusion.SfShared.WP8.dll<br/>wp8\Syncfusion.SfGauge.XForms.dll<br/>wp8\Syncfusion.SfGauge.XForms.WinPhone.dll</td>
+</tr>
+<tr>
+<td>Windows Phone 8.1</td>
+<td>wp81\Syncfusion.SfInput.WP.dll<br/>wp81\Syncfusion.SfShared.WP.dll<br/>wp81\Syncfusion.SfGauge.XForms.dll<br/>wp81\Syncfusion.SfGauge.XForms.WinPhone.dll</td>
+</tr>
+<tr>
+<td>WinRT</td>
+<td>winrt\Syncfusion.SfInput.WinRT.dll<br/>winrt\Syncfusion.SfShared.WinRT.dll<br/>winrt\Syncfusion.SfGauge.XForms.dll<br/>winrt\Syncfusion.SfGauge.XForms.WinRT.dll</td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>uwp\Syncfusion.SfInput.UWP.dll<br/>uwp\Syncfusion.SfShared.UWP.dll<br/>uwp\Syncfusion.SfGauge.XForms.dll<br/>uwp\Syncfusion.SfGauge.XForms.UWP.dll</td>
+</tr>
+</table>
 
 Currently an additional step is required for Windows Phone, Windows Phone 8.1 and iOS projects. We need to create an instance of the DigitalGauge custom renderer as shown below. 
 
@@ -97,8 +81,6 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {% endhighlight %}
 
 {% endtabs %}
-
-## Add SfDigitalGauge
 
 The SfDigitalGauge control is configured entirely in C# code or by using XAML markup. The following steps explain on how to create a SfDigitalGauge and configure its elements.
 
@@ -140,7 +122,7 @@ The SfDigitalGauge control is configured entirely in C# code or by using XAML ma
 
 ## Set Value
 
-The `Value` property sets the display value in the SfDigitalGauge.
+SfDigitalGauge provides option to display special characters or display values through the `Value` property.
 
 {% tabs %}
 
@@ -181,8 +163,7 @@ The Digital Characters can be drawn in 4 different segments.
 
 ## Configuring properties
 
-
-Configure the character height, width, stroke thickness and other properties to display the character.
+Character Height, Width and Stroke Thickness which is used to display the Characters can be customized as in the below code snippets.
 
 {% tabs %}
 

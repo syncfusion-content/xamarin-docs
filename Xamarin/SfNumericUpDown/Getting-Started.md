@@ -11,63 +11,44 @@ documentation: ug
 
 This section provides overview for working with Essential SfNumericUpDown for Xamarin.Forms. You can walk through the entire process of creating a SfNumericUpDown.
 
-## Referencing Essential Studio Components in Your Solution	
-
-If you had acquired Essential Studio components through the Xamarin component store interface from within your IDE, then after adding the components to your Xamarin.iOS, Xamarin.Android and Windows Phone projects through the Component manager, you will still need to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL project in your solution. You can do this by manually adding the relevant PCL assembly references to your PCL project contained in the following path inside of your solution folder.
-
-Components/syncfusionessentialstudio-version/lib/pcl/
-
-Alternatively if you had downloaded Essential Studio from Syncfusion.com or through the Xamarin store web interface then all assembly references need to be added manually.
-
-After installing Essential Studio for Xamarin, all the required assemblies can be found in the installation folders, typically
-
-{Syncfusion Installed location}\Essential Studio\syncfusionessentialstudio-version\lib
-
-Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\lib
-
-Or after downloading through the Xamarin store web interface, all the required assemblies can be found in the below folder
-
-{Download location}\syncfusionessentialstudio-version\lib
+## Add SfNumericUpDown
 
 You can then add the assembly references to the respective projects as shown below
 
-### PCL 
-pcl\Syncfusion.SfNumericUpDown.XForms.dll
-
-### Android 
-android\Syncfusion.SfNumericUpDown.Android.dll
-android\Syncfusion.SfNumericUpDown.XForms.Android.dll
-android\Syncfusion.SfNumericUpDown.XForms.dll
-
-### iOS 
-iOS-unified\Syncfusion.SfNumericUpDown.iOS.dll
-iOS-unified\Syncfusion.SfNumericUpDown.XForms.iOS.dll
-iOS-unified\Syncfusion.SfNumericUpDown.XForms.dll
-
-### Windows Phone
-wp8\Syncfusion.SfInput.WP8.dll
-wp8\Syncfusion.SfShared.WP8.dll
-wp8\Syncfusion.SfNumericUpDown.XForms.dll
-wp8\Syncfusion.SfNumericUpDown.XForms.WinPhone.dll
-
-### Windows Phone 8.1
-wp81\Syncfusion.SfInput.WP.dll
-wp81\Syncfusion.SfShared.WP.dll
-wp81\Syncfusion.SfNumericUpDown.XForms.dll
-wp81\Syncfusion.SfNumericUpDown.XForms.WinPhone.dll
-
-### WinRT 
-winrt\Syncfusion.SfInput.WinRT.dll
-winrt\Syncfusion.SfShared.WinRT.dll
-winrt\Syncfusion.SfNumericUpDown.XForms.dll
-winrt\Syncfusion.SfNumericUpDown.XForms.WinRT.dll
-
-### UWP 
-uwp\Syncfusion.SfInput.UWP.dll
-uwp\Syncfusion.SfShared.UWP.dll
-uwp\Syncfusion.SfNumericUpDown.XForms.dll
-uwp\Syncfusion.SfNumericUpDown.XForms.UWP.dll
-
+<table>
+<tr>
+<th>Project</th>
+<th>Required assemblies</th>
+</tr>
+<tr>
+<td>PCL</td>
+<td>pcl\Syncfusion.SfNumericUpDown.XForms.dll</td>
+</tr>
+<tr>
+<td>Android</td>
+<td>android\Syncfusion.SfNumericUpDown.Android.dll<br/>android\Syncfusion.SfNumericUpDown.XForms.Android.dll<br/>android\Syncfusion.SfNumericUpDown.XForms.dll</td>
+</tr>
+<tr>
+<td>iOS (Unified)</td>
+<td>iOS-unified\Syncfusion.SfNumericUpDown.iOS.dll<br/>iOS-unified\Syncfusion.SfNumericUpDown.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfNumericUpDown.XForms.dll</td>
+</tr>
+<tr>
+<td>Windows Phone</td>
+<td>wp8\Syncfusion.SfInput.WP8.dll<br/>wp8\Syncfusion.SfShared.WP8.dll<br/>wp8\Syncfusion.SfNumericUpDown.XForms.dll<br/>wp8\Syncfusion.SfNumericUpDown.XForms.WinPhone.dll</td>
+</tr>
+<tr>
+<td>Windows Phone 8.1</td>
+<td>wp81\Syncfusion.SfInput.WP.dll<br/>wp81\Syncfusion.SfShared.WP.dll<br/>wp81\Syncfusion.SfNumericUpDown.XForms.dll<br/>wp81\Syncfusion.SfNumericUpDown.XForms.WinPhone.dll</td>
+</tr>
+<tr>
+<td>WinRT</td>
+<td>winrt\Syncfusion.SfInput.WinRT.dll<br/>winrt\Syncfusion.SfShared.WinRT.dll<br/>winrt\Syncfusion.SfNumericUpDown.XForms.dll<br/>winrt\Syncfusion.SfNumericUpDown.XForms.WinRT.dll</td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>uwp\Syncfusion.SfInput.UWP.dll<br/>uwp\Syncfusion.SfShared.UWP.dll<br/>uwp\Syncfusion.SfNumericUpDown.XForms.dll<br/>uwp\Syncfusion.SfNumericUpDown.XForms.UWP.dll</td>
+</tr>
+</table>
 
 Currently an additional step is required for Windows Phone, Windows Phone 8.1 and iOS projects. We need to create an instance of the NumericUpDown custom renderer as shown below. 
 
@@ -100,8 +81,6 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {% endhighlight %}
 
 {% endtabs %}
-
-## Add SfNumericUpDown
 
 The SfNumericUpDown control configured entirely in C# code or by using XAML markup. The following steps explains how to create a SfNumericUpDown and configure its elements.
 
@@ -168,9 +147,7 @@ SfNumericUpDown numericUpDown=new SfNumericUpDown();
 
 ## Enable Parsing Mode
 
-The value of the SfNumericUpDown can be parsed based on the `ParsingMode` property. 
-
-N> The `ParsingMode` is of type Parsers containing enum values of Double and Decimal.
+SfNumericTextBox provides option to display the value in double or decimal. Following code shows the Decimal parsing mode which can be set through `ParsingMode` property.
 
 {% tabs %}
 
@@ -189,13 +166,12 @@ SfNumericUpDown numericUpDown=new SfNumericUpDown();
 	
 {% endhighlight %}
 
-
 {% endtabs %}
 
 
 ## Add Format String
 
-The `FormatString` property determines the format specifier by which the display text has to be formatted. 
+SfNumericTextBox provides option to format the display text in currency format. 
 
 It has three types,
 
@@ -204,6 +180,8 @@ It has three types,
 * p – Display the value in Percentage.
 
 N> The control displays the formatted text on lost focus. Default Value of `FormatString` is "n".
+
+Following code explains how to set the currency format using `FormatString` property.
 
 {% tabs %}
 

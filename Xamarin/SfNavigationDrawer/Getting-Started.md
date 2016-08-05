@@ -9,68 +9,46 @@ documentation: ug
 
 # Getting Started
 
-This section provides overview for working with Essential NavigationDrawer for Xamarin.Forms. You can walk through the entire process of creating an NavigationDrawer.
+This section explains you the steps to configure a SfNavigationDrawer control in a real-time scenario and also provides a walk-through on some of the customization features available in SfNavigationDrawer control.
 
-## Referencing Essential Studio Components in Your Solution	
-
-If you had acquired Essential Studio components through the Xamarin component store interface from within your IDE, then after adding the components to your Xamarin.iOS, Xamarin.Android and Windows Phone projects through the Component manager, you will still need to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL project in your solution. You can do this by manually adding the relevant PCL assembly references to your PCL project contained in the following path inside of your solution folder.
-
-Components/syncfusionessentialstudio-version/lib/pcl/
-
-Alternatively if you had downloaded Essential Studio from Syncfusion.com or through the Xamarin store web interface then all assembly references need to be added manually.
-
-After installing Essential Studio for Xamarin, all the required assemblies can be found in the installation folders, typically
-
-{Syncfusion Installed location}\Essential Studio\syncfusionessentialstudio-version\lib
-
-Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\lib
-
-Or after downloading through the Xamarin store web interface, all the required assemblies can be found in the below folder
-
-{Download location}\syncfusionessentialstudio-version\lib
+## Add SfNavigationDrawer
 
 You can then add the assembly references to the respective projects as shown below
 
-### PCL 
-
-pcl\Syncfusion.SfNavigationDrawer.XForms.dll
-
-### Android 
-
-android\Syncfusion.SfNavigationDrawer.Android.dll
-android\Syncfusion.SfNavigationDrawer.XForms.dll
-android\Syncfusion.SfNavigationDrawer.XForms.Android.dll 
-Xamarin.Android.Support.v4 (from Nuget Packages)
-	
-### iOS 
-
-iOS-unified\Syncfusion.SfNavigationDrawer.iOS.dll
-iOS-unified\SyncfusionSfNavigationDrawer.XForms.dll
-iOS-unified\Syncfusion.SfNavigationDrawer.XForms.iOS.dll
-
-### Windows Phone
-
-wp8\Syncfusion.SfNavigationDrawer.WP8.dll
-wp8\Syncfusion.SfNavigationDrawer.XForms.dll
-wp8\Syncfusion.SfNavigationDrawer.XForms.WinPhone.dll
-
-### Windows Phone 8.1
-
-wp81\Syncfusion.SfNavigationDrawer.WP.dll
-wp81\Syncfusion.SfNavigationDrawer.XForms.dll
-wp81\Syncfusion.SfNavigationDrawer.XForms.WinPhone.dll
-
-### WinRT 
-
-winrt\Syncfusion.SfNavigationDrawer.WinRT.dll
-winrt\Syncfusion.SfNavigationDrawer.XForms.dll
-winrt\Syncfusion.SfNavigationDrawer.XForms.WinRT.dll
-
-### UWP 
-
-uwp\Syncfusion.SfNavigationDrawer.UWP.dll
-uwp\Syncfusion.SfNavigationDrawer.XForms.dll
-uwp\Syncfusion.SfNavigationDrawer.XForms.UWP.dll
+<table>
+<tr>
+<th>Project</th>
+<th>Required assemblies</th>
+</tr>
+<tr>
+<td>PCL</td>
+<td>pcl\Syncfusion.SfNavigationDrawer.XForms.dll</td>
+</tr>
+<tr>
+<td>Android</td>
+<td>android\Syncfusion.SfNavigationDrawer.Android.dll<br/>android\Syncfusion.SfNavigationDrawer.XForms.dll<br/> android\Syncfusion.SfNavigationDrawer.XForms.Android.dll <br/> Xamarin.Android.Support.v4 (from Nuget Packages)</td>
+</tr>
+<tr>
+<td>iOS (Unified)</td>
+<td>iOS-unified\Syncfusion.SfNavigationDrawer.iOS.dll<br/>iOS-unified\SyncfusionSfNavigationDrawer.XForms.dll<br/>iOS-unified\Syncfusion.SfNavigationDrawer.XForms.iOS.dll</td>
+</tr>
+<tr>
+<td>Windows Phone</td>
+<td>wp8\Syncfusion.SfNavigationDrawer.WP8.dll<br/>wp8\Syncfusion.SfNavigationDrawer.XForms.dll<br/>wp8\Syncfusion.SfNavigationDrawer.XForms.WinPhone.dll</td>
+</tr>
+<tr>
+<td>Windows Phone 8.1</td>
+<td>wp81\Syncfusion.SfNavigationDrawer.WP.dll<br/>wp81\Syncfusion.SfNavigationDrawer.XForms.dll<br/>wp81\Syncfusion.SfNavigationDrawer.XForms.WinPhone.dll</td>
+</tr>
+<tr>
+<td>WinRT</td>
+<td>winrt\Syncfusion.SfNavigationDrawer.WinRT.dll<br/>winrt\Syncfusion.SfNavigationDrawer.XForms.dll<br/>winrt\Syncfusion.SfNavigationDrawer.XForms.WinRT.dll</td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>uwp\Syncfusion.SfNavigationDrawer.UWP.dll<br/>uwp\Syncfusion.SfNavigationDrawer.XForms.dll<br/>uwp\Syncfusion.SfNavigationDrawer.XForms.UWP.dll</td>
+</tr>
+</table>
 
 Currently an additional step is required for Windows Phone, Windows Phone 8.1 and iOS projects. We need to create an instance of the NavigationDrawer custom renderer as shown below. 
 
@@ -103,8 +81,6 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {% endhighlight %}
 
 {% endtabs %}
-
-## Add SfNavigationDrawer
 
 The SfNavigationDrawer control configured entirely in C# code or by using XAML markup. The following steps explains how to create a SfNavigationDrawer and configure its elements.
 
@@ -147,9 +123,9 @@ this.Content=navigationDrawer;
 
 ## Add Drawer Content
 
-The sliding main content of the SfNavigationDrawer which is a part of DrawerPanel can be set using `DrawerContentView` property with desired views.
+SfNavigationDrawer supports to set the Main content of the sliding DrawerPanel. This can be set using `DrawerContentView` property with desired views.
 
-The control has been initialized in Xaml
+The control has been initialized in XAML
 
 {% tabs %}
 
@@ -196,7 +172,9 @@ navigationDrawer.DrawerContentView = mainStack;
 
 ## Add Drawer Header Content
 
-Instead of providing everyting in the drawer content view, `DrawerHeaderView` property can be used to display certain information like user id or names in the header part.
+SfNavigationDrawer provides option to display certain information like user id or names in the header part instead of providing everything in the drawer content view. 
+
+This can be done using `DrawerHeaderView` property in SfNavigationDrawer.
 
 {% tabs %}
 
@@ -248,7 +226,7 @@ navigationDrawer.DrawerHeaderView=headerLayout;
 
 ## Adjust Drawer Width
 
-Drawer width and height can be set through `DrawerHeight` and `DrawerWidth` properties.
+Height and Width of the Drawer can be customized in SfNavigationDrawer. User can customize the size of the Drawer according to their requirement using `DrawerHeight` and `DrawerWidth` properties as in the below code snippet.
 
 {% tabs %}
 
@@ -328,7 +306,7 @@ navigationDrawer.ContentView=ContentFrame;
 
 ## Set Drawing Edge for Drawer Panel
 
-The `Position` property specifies the sliding position of the DrawerView panel. The `Position` property has the following four options.
+SfNavigationDrawer provides support to change the sliding position of the DrawerView panel. This can be set using `Position` property. The position can be any one of the following four options.
 
 * Left
 
@@ -360,7 +338,7 @@ navigationDrawer.Position=Position.Left;
 
 ## Change Drawer Opening Animation
 
-The `Transition` property specifies the opening animation for the DrawerView panel. The `Transition` property has the following three options.
+The DrawerView panel can be opened on the top of the Content. This opening animation for the DrawerView panel can be set using the `Transition` enumeration property which has the following three options.
 
 * SlideOnTop
 * Push

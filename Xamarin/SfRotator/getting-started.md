@@ -95,7 +95,7 @@ this.Content = rotator;
 
 ## Setting Navigation Mode
 
-SfRoator provides option to display the navigating items either in Thumbnail or Dots mode. The navigation mode for navigating items can be decided using `NavigationMode` property.
+SfRotator provides option to display the navigating items either in Thumbnail or Dots mode. The navigation mode for navigating items can be decided using `NavigationMode` property.
 
 {% tabs %}
 

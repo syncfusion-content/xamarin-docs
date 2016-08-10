@@ -11,7 +11,7 @@ documentation: ug
 
 # Appearance and Styling
 
-SfRating control provides support to customize the Size, Itemcount and space between rating items.
+SfRating control provides support to customize the Size, Item count and space between rating items.
 
 ## Set Size
 

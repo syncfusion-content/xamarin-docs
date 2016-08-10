@@ -204,3 +204,34 @@ SfNumericUpDown numericUpDown=new SfNumericUpDown();
 {% endtabs %}
 
 ![](images/gettingstarted.png)
+
+## Structure
+
+Text area and spin button are the two elements of SfNumericUpDown control. 
+
+### Text area 
+
+It is the area where the numeric values are displayed.
+
+### Spin Button
+
+Current value of the SfNumericUpDown control can be incremented or decremented using the spin button.
+
+Spin button position can be customized as follows.
+
+{% tabs %}
+
+{% highlight C# %}
+
+	numericUpDown.SpinButttonAlignment = SpinButtonAlignment.Right;
+
+{% endhighlight %}
+
+{% highlight xaml %}
+
+	<numeric:SfNumericUpDown x:Name="numericUpDown" SpinButtonAlignment="Right"/>
+	
+{% endhighlight %}
+
+{% endtabs %}
+

@@ -133,11 +133,10 @@ N> Check the [BlackOutDates](http://help.syncfusion.com/android/sfcalendar/black
 {% highlight c# %}
 
 SfCalendar  calendar = new SfCalendar ();
-calendar.SelectionMode=SelectionMode.MultiSelection;
 List<DateTime> black_dates = new List<DateTime>();
 for (int i = 0; i < 5; i++)
 {
-	DateTime date = DateTime.Now.Date.AddDays(i+7);
+	DateTime date = new DateTime(2018,4,1+i);
 	black_dates.Add(date);
 }
 calendar.BlackoutDates = black_dates;
@@ -166,6 +165,13 @@ N> Check the [Selection Mode](http://help.syncfusion.com/xamarin/sfcalendar/sele
 
 SfCalendar calendar = new SfCalendar ();
 calendar.SelectionMode=SelectionMode.MultiSelection;
+List<DateTime> black_dates = new List<DateTime>();
+for (int i = 0; i < 5; i++)
+{
+	DateTime date = new DateTime(2018,4,1+i);
+	black_dates.Add(date);
+}
+calendar.BlackoutDates = black_dates;
 
 {% endhighlight %}
 
@@ -193,12 +199,12 @@ calendar.SelectionMode=SelectionMode.MultiSelection;
 List<DateTime> black_dates = new List<DateTime>();
 for (int i = 0; i < 5; i++)
 {
-	DateTime date = DateTime.Now.Date.AddDays(i+7);
+	DateTime date = new DateTime(2018,4,1+i);
 	black_dates.Add(date);
 }
 calendar.BlackoutDates = black_dates;
 calendar.MinDate = new DateTime(2014,4,1);
-calendar.MaxDate = new DateTime(2016,4,1);
+calendar.MaxDate = new DateTime(2018,4,1);
 	
 {% endhighlight %}
 

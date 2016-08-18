@@ -220,7 +220,7 @@ The control has been initialized in XAML
 {% endhighlight %}
 
 
-and the list items are created in c#. 
+and the list items are created in C#. 
 
 
 {% highlight c# %}

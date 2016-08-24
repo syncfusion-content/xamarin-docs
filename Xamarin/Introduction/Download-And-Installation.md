@@ -61,7 +61,9 @@ The steps to install the Syncfusion Xamarin NuGet Packages in Visual Studio are 
    ![](images/NuGetConfig2.jpeg)
 
    N> The `Source` text box in the above image denotes the location of the NuGet packages and the `Name` section, allows you to provide a unique name for NuGet Packages Source.
-    
+   You may face the NuGet package installation/restore error while installing the Syncfusion Xamarin NuGet packages if you have UWP project in your Xamarin Application. This issue occurred since some URL redirecting issue in NuGet Package Manager for UWP projects. To resolve this issue, use the below Syncfusion Xamarin NuGet feed link.
+   Syncfusion Xamarin NuGet Full Feed Link: [http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin/](http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin/)
+ 
 I> Syncfusion other platforms NuGet packages feed links are available [here](http://nuget.syncfusion.com/)
 
 ### NuGet Installation

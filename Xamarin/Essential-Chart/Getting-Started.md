@@ -759,7 +759,7 @@ _//Adding Chart Legend for the Chart_
 
 ## Create your first Chart in Xamarin.Android
 
-This section provides a quick overview for working with Essential Chart for Xamarin Android. It guides you to the entire process of creating a real-world chart.
+This section provides a quick overview for working with Essential Chart for Xamarin.Android. It guides you to the entire process of creating a real-world chart.
 
 This section enables you to visualize the weather data for Washington, DC, during the period 1961-1990. The raw sample data is given as follows.
 
@@ -1001,7 +1001,7 @@ _//Adding ColumnSeries to the chart for Precipitation_
 {% endhighlight %}
 
 
-The OpposedPostion is set to true to place the secondary axis on the opposite side.
+The OpposedPosition is set to true to place the secondary axis on the opposite side.
 
 The following is the complete code example for creating the Chart.
 
@@ -1304,7 +1304,7 @@ The following steps explain how to create a Chart and configure its elements.
 
 In this example is visualized the temperature over the months using a Spline Series. Before creating the series, you have to create the data source representing the climate details. 
 
-In SFChart, series, the data source must be the collection of SfChartDataPoint__objects. Add the following class by inheriting from SfChartDatSource, for generating the data points.
+In SFChart, series, the data source must be the collection of SfChartDataPoint__objects. Add the following class by inheriting from SfChartDataSource, for generating the data points.
 
 
 

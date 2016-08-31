@@ -13,21 +13,30 @@ SfDataGrid allows you to add **additional columns** which are **not bound with d
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid"                                                                       
-                       AutoGenerateColumns="False" 
+<syncfusion:SfDataGrid x:Name="dataGrid" 
                        ItemsSource="{Binding Orders}">
     <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridUnboundColumn 
-		                       Expression="UnitPrice*Discount"
-                               HeaderText="Discount Price"
-                               MappingName="DiscountPrice"
-                               Format="C"   >
+        <syncfusion:GridUnboundColumn MappingName="DiscountPrice"
+                                      HeaderText="Discount Price"
+                                      Expression="UnitPrice*Discount"
+                                      Format="C">
         </syncfusion:GridUnboundColumn>
     </syncfusion:SfDataGrid.Columns>
 </syncfusion:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
-this.dataGrid.Columns.Add(new GridUnboundColumn() { HeaderText="Discount Price", MappingName="DiscountPrice", Expression="UnitPrice*Discount" });
+SfDataGrid dataGrid = new SfDataGrid();
+ViewModel viewModel = new ViewModel();
+dataGrid.ItemsSource = viewModel.Orders;
+
+GridUnboundColumn DiscountColumn = new GridUnboundColumn()
+{
+    MappingName = "DiscountPrice",
+    HeaderText = "Discount Price",
+    Expression = "UnitPrice*Discount"
+    Format = "C"
+};
+this.dataGrid.Columns.Add(DiscountColumn);
 {% endhighlight %}
 {% endtabs %}
 
@@ -183,16 +192,26 @@ NOT
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfDataGrid x:Name="dataGrid"                                                                       
-                       AutoGenerateColumns="False" 
                        ItemsSource="{Binding Orders}">
     <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridUnboundColumn HeaderText="Unbound Column"
-                                      MappingName="UnboundColumn" />
+        <syncfusion:GridUnboundColumn MappingName="UnboundColumn"
+                                      HeaderText="Unbound Column"
+                                      Expression="UnitPrice*Discount" />
     </syncfusion:SfDataGrid.Columns>
 </syncfusion:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
-(this.dataGrid.Columns[3] as GridUnboundColumn).Expression = "Discount * UnitPrice > 0" + (char)135 + "UnitPrice * Quantity > 100";
+SfDataGrid dataGrid = new SfDataGrid();
+ViewModel viewModel = new ViewModel();
+dataGrid.ItemsSource = viewModel.Orders;
+
+GridUnboundColumn DiscountColumn = new GridUnboundColumn()
+{
+    MappingName = "DiscountPrice",
+    HeaderText = "Discount Price",
+    Expression = "UnitPrice*Discount"
+};
+this.dataGrid.Columns.Add(DiscountColumn);
 {% endhighlight %}
 {% endtabs %}
 
@@ -203,19 +222,25 @@ You can format the values of other columns and display the formatted value in un
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfDataGrid x:Name="dataGrid"
-                       AutoGenerateColumns="False" 
                        ItemsSource="{Binding Orders}">
     <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridUnboundColumn Format="'{Discount}% for {OrderID}'"
+        <syncfusion:GridUnboundColumn MappingName="DiscountPrice"
                                       HeaderText="Discount Price"
-                                      MappingName="DiscountPrice"/>
+                                      Format="'{Discount}% for {OrderID}'" />
     </syncfusion:SfDataGrid.Columns>
 </syncfusion:SfDataGrid>
 {% endhighlight %}
-{% endtabs %}
-
-{% tabs %}
 {% highlight c# %}
-this.dataGrid.Columns.Add(new GridUnboundColumn() { HeaderText = "Discount Price", MappingName = "DiscountPrice", Format = "'{Discount}% for {OrderID}'" });
+SfDataGrid dataGrid = new SfDataGrid();
+ViewModel viewModel = new ViewModel();
+dataGrid.ItemsSource = viewModel.Orders;
+
+GridUnboundColumn DiscountColumn = new GridUnboundColumn()
+{
+    MappingName = "DiscountPrice",
+    HeaderText = "Discount Price",
+    Format = "'{Discount}% for {OrderID}'"
+};
+this.dataGrid.Columns.Add(DiscountColumn);
 {% endhighlight %}
 {% endtabs %}

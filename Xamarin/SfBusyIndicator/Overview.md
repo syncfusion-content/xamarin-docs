@@ -1,22 +1,27 @@
 ---
 layout: post
-title: Overview | SfBusyIndicator |Xamarin | Syncfusion
-description: overview
-platform: xamarin
-control: SfBusyIndicator
+title: Overview of Syncfusion BusyIndicator control for Xamarin.Forms
+description: Overview and key features of BusyIndicator control
+platform: Xamarin
+control: BusyIndicator
 documentation: ug
 ---
 
 # Overview
 
-The Busy Indicator control enables you to know when the application is busy. SfBusyIndicator includes over 10 pre-built animations that can be displayed within your applications.
+The Essential Xamarin BusyIndicator control includes over 10 built-in animations that can be displayed within your applications. It can be used to indicate busy status during app loading, data processing, etc. 
 
-![](Overview_images/img1.png)
-
+![](images/Overview.png)
 
 ## Key Features
 
-* IsBusy – The control displays the animation when this property is set.
-* Title – A user customized string that is displayed while showing animation.
-* Sizing – The control view box height and width can be set.
-* AnimationTypes – There are over 10 built-in animations that can be set with the control.
+* `IsBusy` – Option available to show the animation.
+
+* `Title` – Displays the customized text while showing animation.
+
+* `Sizing` – Height and Width customization support for control.
+
+* `AnimationTypes` – Supports 10 built-in animations to set and display within your application.
+
+
+

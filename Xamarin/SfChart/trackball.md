@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Xamarin.Forms | Trackball
-description: How to add trackball behavior in Essential Xamarin.Forms Chart
+title: Chart Trackball
+description: How to enable and customize the trackball behavior in Essential Xamarin.Forms Chart
 platform: xamarin
 control: Chart
 documentation: ug
@@ -9,16 +9,17 @@ documentation: ug
 
 # Trackball
 
-Trackball feature displays the tooltip for the data points that are closer to the point where you touch on the chart area. This feature, especially, can be used instead of data label feature when you cannot show data labels for all data points due to space constraint. To enable this feature, add an instance of `ChartTrackballBehavior` to the `ChartBehaviors` collection property of `SfChart`. Trackball will be activated once you long-press anywhere on the chart area. Once it is activated, it will appear in the UI and move based on your touch movement until you stop touching on the chart.
+Trackball feature displays the tooltip for the data points that are closer to the point where you touch on the chart area. This feature, especially, can be used instead of data label feature when you cannot show data labels for all data points due to space constraint. To enable this feature, add an instance of [`ChartTrackballBehavior`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballBehavior.html#) to the [`ChartBehaviors`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartBehavior.html#) collection property of [`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html#). Trackball will be activated once you long-press anywhere on the chart area. Once it is activated, it will appear in the UI and move based on your touch movement until you stop touching on the chart.
 
 You can use the following properties to show/hide the line and labels.
 
-* `ShowLabel` – Shows/hides trackball label. Default value is true.
+* [`ShowLabel`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballBehavior~ShowLabel.html#) – Shows/hides trackball label. Default value is true.
 
-* `ShowLine` – Shows/hides the trackball line. Default value is true.
+* [`ShowLine`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballBehavior~ShowLine.html#) – Shows/hides the trackball line. Default value is true.
+
+{% tabs %} 
 
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart>
 ...
@@ -34,7 +35,6 @@ You can use the following properties to show/hide the line and labels.
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 SfChart chart = new SfChart();
 ...
@@ -49,24 +49,26 @@ chart.ChartBehaviors.Add(trackballBehavior);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Chartbehavior -clubbed/Trackball.png](trackball_images/trackball_img1.png)
+{% endtabs %}
+
+![](trackball_images/trackball_img1.png)
 
 ## Label Display Mode
 
-`TrackballLabelDisplayMode` property is used to specify whether to display label for all the data points along the vertical line or display only single label. Following are the two options you can set to this property,
+[`TrackballLabelDisplayMode`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballBehavior~LabelDisplayModeProperty.html#) property is used to specify whether to display label for all the data points along the vertical line or display only single label. Following are the two options you can set to this property,
 
-* `FloatAllPoints` – Displays label for all the data points along the vertical line.
-* `NearestPoint` – Displays label for single data point that is nearer to the touch contact position.
+* [`FloatAllPoints`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.TrackballLabelDisplayMode.html#) – Displays label for all the data points along the vertical line.
+* [`NearestPoint`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.TrackballLabelDisplayMode.html#) – Displays label for single data point that is nearer to the touch contact position.
+
+{% tabs %} 
 
 {% highlight xaml %}
-[XAML]
 
 <chart:ChartTrackballBehavior LabelDisplayMode="NearestPoint" ShowLine="False"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 ChartTrackballBehavior trackballBehavior = new ChartTrackballBehavior();
 
@@ -76,9 +78,11 @@ trackballBehavior.LabelDisplayMode = TrackballLabelDisplayMode.NearestPoint;
 
 {% endhighlight %}
 
+{% endtabs %}
+
 In the following screenshot, trackball label is shown for only single data point,
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Chartbehavior -clubbed/Trackball-mode.png](trackball_images/trackball_img2.png)
+![](trackball_images/trackball_img2.png)
 
 ## Customizing appearance
 
@@ -86,14 +90,15 @@ In the following screenshot, trackball label is shown for only single data point
 
 Following properties are used to customize the trackball labels.
 
-* `BorderColor` – used to change the label border color.
-* `BackgroundColor` – used to change the label background color.
-* `BorderThickness` – used to change label border thickness.
-* `TextColor` – used to change the text color.
-* `Font` – used to change label font size, family and weight.
+* [`BorderColor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~BorderColor.html#) – used to change the label border color.
+* [`BackgroundColor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~BackgroundColor.html#) – used to change the label background color.
+* [`BorderThickness`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~BorderThickness.html#) – used to change label border thickness.
+* [`TextColor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~TextColor.html#) – used to change the text color.
+* [`Font`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~Font.html#) – used to change label font size, family and weight.
+
+{% tabs %} 
 
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart>
 ...
@@ -125,7 +130,6 @@ Following properties are used to customize the trackball labels.
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 SfChart chart = new SfChart();
 ...
@@ -146,19 +150,22 @@ chart.ChartBehaviors.Add(trackballBehavior);
 
 {% endhighlight %}
 
+{% endtabs %}
+
 **Customize Trackball Marker**
 
 Following properties are used to customize the trackball marker.
 
-* `ShowMarker` – used to enable / disable the marker. Default value is true.
-* `BorderColor` – used to change the marker border color.
-* `Color` – used to change the marker background color.
-* `BorderWidth` – used to change the width of the marker border.
-* `Width` – used to change the width of the marker.
-* `Height` – used to change the height of the marker.
+* [`ShowMarker`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballMarkerStyle~ShowMarker.html#) – used to enable / disable the marker. Default value is true.
+* [`BorderColor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballMarkerStyle~BorderColor.html#) – used to change the marker border color.
+* [`Color`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballMarkerStyle~Color.html#) – used to change the marker background color.
+* [`BorderWidth`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballMarkerStyle~BorderWidth.html#) – used to change the width of the marker border.
+* [`Width`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballMarkerStyle~Width.html#) – used to change the width of the marker.
+* [`Height`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballMarkerStyle~Height.html#) – used to change the height of the marker.
+
+{% tabs %} 
 
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
 ...
@@ -182,7 +189,6 @@ Following properties are used to customize the trackball marker.
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 SfChart chart = new SfChart();
 ...
@@ -205,17 +211,20 @@ chart.ChartBehaviors.Add(trackballBehavior);
 
 {% endhighlight %}
 
+{% endtabs %}
+
 **Customize Trackball Line**
 
 Following properties are used to customize the trackball line.
 
-* `ShowLine` – used to enable / disable the line. Default value is true.
-* `StrokeWidth` – used to change the stroke width of the line.
-* `StrokeColor` – used to change the stroke color of the line.
-* `StrokeDashArray` – Specifies the dashes to be applied on the line.
+* [`ShowLine`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballBehavior~ShowLine.html#) – used to enable / disable the line. Default value is true.
+* [`StrokeWidth`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLineStyle~StrokeWidth.html#) – used to change the stroke width of the line.
+* [`StrokeColor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLineStyle~StrokeColor.html#) – used to change the stroke color of the line.
+* [`StrokeDashArray`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLineStyle~StrokeDashArray.html#) – Specifies the dashes to be applied on the line.
+
+{% tabs %} 
 
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
 ...
@@ -239,7 +248,6 @@ Following properties are used to customize the trackball line.
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 SfChart chart = new SfChart();
 ...
@@ -258,6 +266,8 @@ chart.ChartBehaviors.Add(trackballBehavior);
 
 {% endhighlight %}
 
+{% endtabs %}
+
 Following screenshot illustrates the customization of trackball elements.
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Chartbehavior -clubbed/Trackball-customize.png](trackball_images/trackball_img3.png)
+![](trackball_images/trackball_img3.png)

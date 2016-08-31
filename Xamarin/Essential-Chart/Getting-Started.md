@@ -197,7 +197,7 @@ The chart control can be configured entirely in C# code or using XAML markup.
 
 
 
-   ~~~ cs
+   ~~~ csharp
 
 		SfChart chart = new SfChart ();
 
@@ -215,9 +215,10 @@ The chart control can be configured entirely in C# code or using XAML markup.
 
 		this.Content = chart;
    ~~~ 
-   {:.prettyprint}
+   
 
-   ~~~ 
+   ~~~ xaml
+	  
 	  <chart:SfChart>
 
 
@@ -255,8 +256,7 @@ The chart control can be configured entirely in C# code or using XAML markup.
 		</chart:SfChart>
 
    ~~~
-   {:.prettyprint}
-
+   
 
 
 
@@ -265,13 +265,13 @@ The chart control can be configured entirely in C# code or using XAML markup.
 
 
 
-   ~~~ cs
+   ~~~ csharp
 
 		chart.Title = new ChartTitle (){ Text = "Weather Analysis" };
    ~~~
-   {:.prettyprint}
+   
 
-   ~~~ xml
+   ~~~ xaml
 
 
 	  <chart:SfChart>
@@ -288,7 +288,7 @@ The chart control can be configured entirely in C# code or using XAML markup.
 
 	  </chart:SfChart>
    ~~~
-   {:.prettyprint}
+   
 
 ## Add Chart series
 
@@ -759,7 +759,7 @@ _//Adding Chart Legend for the Chart_
 
 ## Create your first Chart in Xamarin.Android
 
-This section provides a quick overview for working with Essential Chart for Xamarin Android. It guides you to the entire process of creating a real-world chart.
+This section provides a quick overview for working with Essential Chart for Xamarin.Android. It guides you to the entire process of creating a real-world chart.
 
 This section enables you to visualize the weather data for Washington, DC, during the period 1961-1990. The raw sample data is given as follows.
 
@@ -1001,7 +1001,7 @@ _//Adding ColumnSeries to the chart for Precipitation_
 {% endhighlight %}
 
 
-The OpposedPostion is set to true to place the secondary axis on the opposite side.
+The OpposedPosition is set to true to place the secondary axis on the opposite side.
 
 The following is the complete code example for creating the Chart.
 
@@ -1252,7 +1252,7 @@ The following steps explain how to create a Chart and configure its elements.
 
 1. Create an instance of SfChart.
 
-   ~~~ cs
+   ~~~ csharp
 
 	   public override void ViewDidLoad ()
 	       {
@@ -1265,11 +1265,11 @@ The following steps explain how to create a Chart and configure its elements.
 				}
 
    ~~~
-   {:.prettyprint}
+   
 
 2. Add the primary and secondary axes for the Chart as follows.
 
-   ~~~ cs
+   ~~~ csharp
 
 
 
@@ -1286,11 +1286,11 @@ The following steps explain how to create a Chart and configure its elements.
 		            chart.SecondaryAxis                     = secondaryAxis; 
 
    ~~~
-   {:.prettyprint}
+   
 
 3. A title for the Chart is set using the Title property as follows.
 
-   ~~~ cs
+   ~~~ csharp
 
 
 
@@ -1298,13 +1298,13 @@ The following steps explain how to create a Chart and configure its elements.
 		            chart.Title.Text                           = "Weather Analysis";
 
    ~~~
-   {:.prettyprint}
+   
 
 ### Add a Chart series
 
 In this example is visualized the temperature over the months using a Spline Series. Before creating the series, you have to create the data source representing the climate details. 
 
-In SFChart, series, the data source must be the collection of SfChartDataPoint__objects. Add the following class by inheriting from SfChartDatSource, for generating the data points.
+In SFChart, series, the data source must be the collection of SfChartDataPoint__objects. Add the following class by inheriting from SfChartDataSource, for generating the data points.
 
 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Xamarin.Froms | Chart Appearance
-description: How to customize the chart appearance
+title: Customizing the appearance of Essential Xamarin.Forms Chart
+description: Learn how to customize the appearance of Chart using palettes.
 platform: xamarin
 control: Chart
 documentation: ug
@@ -11,22 +11,23 @@ documentation: ug
 
 ## Apply palette for Chart
 
-`ColorModel` property of `SfChart` is used to define the colors for each series. ColorModel contains the following color palettes.
+[`ColorModel`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorModel.html) property of [`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html) is used to define the colors for each series. ColorModel contains the following color palettes.
 
 **Predefined Palettes**
 
 Currently, Chart supports only Metro palette and it is the default palette for SfChart. The following screenshot shows the default appearance of multiple series.
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Appearence/char_metr.png](appearance_images/appearance_img1.png)
+![](appearance_images/appearance_img1.png)
 
 **Custom Palette**
 
-Chart will use the colors from `CustomBrushes` property if `ColorModel.Palette` is set to `Custom`.
+Chart will use the colors from [`CustomBrushes`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorModel~CustomBrushes.html) property if [`ColorModel.Palette`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorModel~Palette.html) is set to [`Custom`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorPalette.html).
 
 Following code illustrates how to set the custom colors.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
 
@@ -43,7 +44,6 @@ Following code illustrates how to set the custom colors.
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 SfChart sfChart = new SfChart();
 ...
@@ -64,7 +64,9 @@ sfChart.ColorModel.CustomBrushes = colors;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Appearence/chart-custom.png](appearance_images/appearance_img2.png)
+{% endtabs %}
+
+![](appearance_images/appearance_img2.png)
 
 **None Palette**
 
@@ -72,14 +74,15 @@ None palette will not apply any color to the series. So in order to define the c
 
 ## Apply palette for Series
 
-`ColorModel` property of ChartSeries is used to define the colors for each data point. Following palettes are used to define the colors.
+[`ColorModel`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorModel.html) property of [`ChartSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries.html) is used to define the colors for each data point. Following palettes are used to define the colors.
 
 **Predefined Palettes**
 
 Currently, Chart supports only Metro palette.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart>
 ...
@@ -99,7 +102,6 @@ Currently, Chart supports only Metro palette.
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 SfChart chart = new SfChart();
 ...
@@ -118,7 +120,9 @@ chart.Series.Add(columnSeries);
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Appearence/METRO1.png](appearance_images/appearance_img3.png)
+{% endtabs %}
+
+![](appearance_images/appearance_img3.png)
 
 **Custom Palette**
 
@@ -126,8 +130,9 @@ Series will use the colors from `CustomBrushes` property if the `ColorModel.Pale
 
 Following code illustrates how to set the custom colors.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart>
 ...
@@ -147,7 +152,6 @@ Following code illustrates how to set the custom colors.
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 SfChart chart = new SfChart();
 ...
@@ -178,8 +182,10 @@ chart.Series.Add(columnSeries);
 
 {% endhighlight %}
 
-![C:/Users/yuvaraj.palanisamy/Documents/My Received Files/custom-clr.png](appearance_images/appearance_img4.png)
+{% endtabs %}
+
+![](appearance_images/appearance_img4.png)
 
 **None Palette**
 
-None palette will not apply any color to the data points. So in order to define the color for the data points, you can use the Color property of ChartSeries.
+None palette will not apply any color to the data points. So in order to define the color for the data points, you can use the [`Color`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~ColorProperty.html) property of [`ChartSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries.html).

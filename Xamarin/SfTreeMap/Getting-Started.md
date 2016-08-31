@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started | SfTreeMap | Xamarin | Syncfusion
-description: getting started
+title: Getting Started with Syncfusion TreeMap control for Xamarin.Forms
+description: A quick tour to initial users on Syncfusion TreeMap control for Xamarin.Forms platform.
 platform: xamarin
 control: SfTreeMap
 documentation: ug
@@ -9,61 +9,66 @@ documentation: ug
 
 # Getting Started
 
-This section provides a quick overview for working with EssentialTreemap for Xamarin.Forms, with a walk-through the entire process of creating a real world Treemap. The goal of this walk-through is to help you visualize population growth across continents.
-
-You can also download the entire source code of this demo from the following link: [http://files2.syncfusion.com/Installs/v12.2.0.40/Samples/Xamarin/TreeMap_GettingStarted.zip](http://files2.syncfusion.com/Installs/v12.2.0.40/Samples/Xamarin/TreeMap_GettingStarted.zip)
+This section explains you the steps to configure a TreeMap control in a real-time scenario and also provides a walk-through on some of the customization features available in TreeMap control.
 
 ## Reference Essential Studio Components in your solution
 
-When you acquire Essential Studio components through the Xamarin Component Store interface from your IDE, after adding the components to your Xamarin.iOS, Xamarin.Android and Windows Phone projects through the Component Manager, you need to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL Project in your solution. You can do this by manually adding the relevant PCL assembly references to your PCL project contained in the following path inside your solution folder:  
+If you had acquired Essential Studio components through the Xamarin component store interface from within your IDE, then after adding the components to your Xamarin.iOS, Xamarin.Android and Windows Phone projects through the Component manager, you will still need to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL project in your solution. You can do this by manually adding the relevant PCL assembly references to your PCL project contained in the following path inside of your solution folder.
 
 Components/syncfusionessentialstudio-version/lib/pcl/
 
-Alternatively when you download Essential Studio from Syncfusion.com or through the Xamarin Store web interface, all the assembly references need to be added manually.  
+Alternatively if you had downloaded Essential Studio from Syncfusion.com or through the Xamarin store web interface then all assembly references need to be added manually.
 
-After installing Essential Studio for Xamarin, all the required assemblies can be found in the installation folders, typically:
+After installing Essential Studio for Xamarin, all the required assemblies can be found in the installation folders, typically
 
-{Syncfusion Installed location}\Essential Studio\12.2.0.40\lib
+{Syncfusion Installed location}\Essential Studio\syncfusionessentialstudio-version\lib
 
-Example: C:\Program Files (x86)\Syncfusion\Essential Studio\12.2.0.40\lib
+Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\lib
 
-Otherwise, after downloading through the Xamarin Store web interface, all the required assemblies can be found in the following folder:
+Or after downloading through the Xamarin store web interface, all the required assemblies can be found in the below folder
 
-{download location}\syncfusionessentialstudio-version\lib
+{Download location}\syncfusionessentialstudio-version\lib
 
-You can then add the assembly references to the respective projects as follows.
+You can then add the assembly references to the respective projects as shown below
 
-### PCL project
+<table>
+<tr>
+<th>Project</th>
+<th>Required assemblies</th>
+</tr>
+<tr>
+<td>PCL</td>
+<td>pcl\Syncfusion.SfTreeMap.XForms.dll</td>
+</tr>
+<tr>
+<td>Android</td>
+<td>android\Syncfusion.SfTreeMap.Android.dll<br/>android\Syncfusion.SfTreeMap.XForms.Android.dll</td>
+</tr>
+<tr>
+<td>iOS (Classic)</td>
+<td>iOS\Syncfusion.SfTreeMap.iOS.dll<br/>iOS\Syncfusion.SfTreeMap.XForms.iOS.dll<br/>iOS\Syncfusion.SfTreeMap.XForms.dll</td>
+</tr>
+<tr>
+<td>iOS (Unified)</td>
+<td>iOS-unified\Syncfusion.SfTreeMap.iOS.dll<br/>iOS-unified\Syncfusion.SfTreeMap.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfTreeMap.XForms.dll</td>
+</tr>
+<tr>
+<td>Windows Phone</td>
+<td>wp8\Syncfusion.SfTreeMap.XForms.dll<br/>wp8\Syncfusion.SfTreeMap.XForms.WinPhone.dll<br>wp8\Syncfusion.SfTreeMap.WP8.dll</td>
+</tr>
+<tr>
+<td>Windows Phone 8.1</td>
+<td>wp81\Syncfusion.SfTreeMap.XForms.dll<br/>wp81\Syncfusion.SfTreeMap.XForms.WinPhone.dll<br>wp81\Syncfusion.SfTreeMap.WP.dll</td>
+</tr>
+<tr>
+<td>WinRT</td>
+<td>winrt\Syncfusion.SfTreeMap.XForms.dll<br/>winrt\Syncfusion.SfTreeMap.XForms.WinRT.dll<br>wp81\Syncfusion.SfTreeMap.WinRT.dll</td>
+</tr>
+</table>
 
-XForms\Syncfusion.SfTreeMap.XForms.dll  
+Currently an additional step is required for Windows Phone and iOS projects. We need to create an instance of the TreeMap custom renderer as shown below.
 
-### Android project:
-
-Android\Syncfusion. SfTreeMap.Andriod.dll
-
-Android\Syncfusion. SfTreeMap. XForms.Andriod.dll 
-
-### iOS project:
-
-iOS\Syncfusion. SfTreeMap.iOS.dll   
-
-iOS\Syncfusion. SfTreeMap.XForms.iOS.dll
-
-iOS\Syncfusion. SfTreeMap.XForms.dll
-
-### Windows Phone project
-
-wp8\Syncfusion. SfTreeMap.WP8.dll
-
-wp8\Syncfusion SfTreeMap.XForms.WinPhone.dll
-
-
-
-N> Essential TreeMap for Xamarin is compatible with Xamarin Forms 1.2.3.6257
-
-Currently an additional step is required for Windows Phone and iOS projects. You need to create an instance of the TreeMap custom renderer as follows.
-
-1.Create an instance of the SfTreeMapRenderer in MainPage constructor in Windows Phone project as follows.
+Create an instance of SfTreeMapRenderer in MainPage constructor of the Windows Phone , Windows Phone 8.1 and WinRT project as shown
 
 {% highlight C# %}  
 
@@ -79,9 +84,10 @@ public MainPage()
 {% endhighlight %}
 
    
-2.Create an instance of the SfTreeMapRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as follows.
+Create an instance of the SfTreeMapRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as follows.
 
 {% highlight C# %}  
+
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {
 

@@ -1,21 +1,22 @@
 ---
 layout: post
-title: Overview | SfNavigationDrawer  | Xamarin | Syncfusion
-description: overview
-platform: xamarin
-control: SfNavigationDrawer 
+title: Overview of Syncfusion NavigationDrawer control for Xamarin.Forms
+description: Overview and key features of NavigationDrawer control
+platform: Xamarin
+control: NavigationDrawer
 documentation: ug
 ---
 
 # Overview
 
-NavigationDrawer is a sliding panel menu to navigate between major modules of the application.  Most of the time the Navigation 
-Drawer is hidden and can be shown by swiping the screen from any of the four edges or tapping the app icon, when available.
+The SfNavigationDrawer is a sliding panel menu that comes out from the edge of the window and allows to have the contents in a hidden panel. It can be shown by swiping from any edges of the screen or by demand.
 
-![](Overview_images/img1.png)
-
+![](images/Overview.png)
 
 ## Key Features
 
-* Position: Specifies the rendering position for the NavigationDrawer. That is, you can display it from right or left or top or bottom edges.
-* Transition: Specifies the transition type of the NavigationDrawer. 
+* `Position` - Specifies various sliding positions of the drawer content in SfNavigationDrawer. 
+
+* `Transition` - Specifies the transition type of the SfNavigationDrawer.
+
+

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Xamarin.Froms | Exporting Chart
+title:  Exporting options in Essential Xamarin.Forms Chart 
 description: How to export the Chart as an image
 platform: xamarin
 control: Chart
@@ -11,7 +11,7 @@ documentation: ug
 
 **Export as an image**
 
-You can export the Chart as a jpg image using `SaveAsImage` method of `SfChart`.
+You can export the Chart as a JPG image using [`SaveAsImage`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~SaveAsImage.html#) method of [`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html#).
 
 {% highlight c# %}
 [C#]
@@ -32,4 +32,3 @@ The exported image will be saved in the different location across the platforms.
 **Windows Phone** – The image will be saved inside the “/Pictures/ Saved Pictures” directory.
 
 N> In order to save the image in Android and Windows Phone, you have to enable the permission to write the file in device storage.
-

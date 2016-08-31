@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Getting Started | SfChart | Xamarin | Syncfusion
-description: getting started
+title: Getting Started for Essential Xamarin.Forms Chart
+description: How to create a chart, add series, legend and multiple Y axis in Chart.
 platform: xamarin
-control: SfChart
+control: Chart
 documentation: ug
 ---
 
@@ -93,7 +93,7 @@ December</td><td>
 2.8</td></tr>
 </table>
 
-This is how the final output will look like on iOS, Android and Windows Phone devices. You can also download the entire source code of this demo from [here.](http://files2.syncfusion.com/Installs/v12.2.0.40/Samples/Xamarin/Chart_GettingStarted.zip)
+This is how the final output will look like on iOS, Android and Windows Phone devices. You can also download the entire source code of this demo from [here.](http://files2.syncfusion.com/Xamarin.Forms/Samples/Chart_GettingStarted.zip)
 
 ![](Getting-Started_images/img1.png)
 
@@ -109,9 +109,9 @@ Alternatively if you had downloaded Essential Studio from Syncfusion.com or thro
 
 After installing Essential Studio for Xamarin, all the required assemblies can be found in the installation folders, typically
 
-{Syncfusion Installed location}\Essential Studio\12.2.0.40\lib
+{Syncfusion Installed location}\Essential Studio\14.2.0.26\lib
 
-Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\12.2.0.40\lib
+Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\14.2.0.26\lib
 
 or after downloading through the Xamarin store web interface, all the required assemblies can be found in the below folder
 
@@ -129,21 +129,15 @@ android\Syncfusion.SfChart.Andriod.dll
 
 android\Syncfusion.SfChart.XForms.Andriod.dll
 
-### iOS(Classic) project
-
-ios\Syncfusion.SfChart.iOS.dll 
-
-ios\Syncfusion.SfChart.XForms.iOS.dll
-
-ios\Syncfusion.SfChart.XForms.dll
+android\Syncfusion.SfChart.XForms.dll 
 
 ### iOS(Unified) project
 
-ios-unified\Syncfusion.SfChart.iOS.dll 
+iOS-unified\Syncfusion.SfChart.iOS.dll 
 
-ios-unified\Syncfusion.SfChart.XForms.iOS.dll
+iOS-unified\Syncfusion.SfChart.XForms.iOS.dll
 
-ios-unified\Syncfusion.SfChart.XForms.dll
+iOS-unified\Syncfusion.SfChart.XForms.dll
 
 ### Windows Phone project
 
@@ -151,12 +145,35 @@ wp8\Syncfusion.SfChart.WP8.dll
 
 wp8\Syncfusion.SfChart.XForms.WinPhone.dll
 
+wp8\Syncfusion.SfChart.XForms.dll 
 
-N> Essential Chart for Xamarin is compatible with Xamarin. Forms v.1.2.3.6257.
+### Windows Phone 8.1 project
 
-Currently an additional step is required for Windows Phone and iOS projects. We need to create an instance of the chart custom renderer as shown below. 
+wp81\Syncfusion.SfChart.WP.dll
 
-Create an instance of SfChartRenderer in MainPage constructor in of the Windows Phone project as shown 
+wp81\Syncfusion.SfChart.XForms.WinPhone.dll
+
+wp81\Syncfusion.SfChart.XForms.dll 
+
+### Windows Runtime project
+
+winrt\Syncfusion.SfChart.WinRT.dll
+
+winrt\Syncfusion.SfChart.XForms.WinRT.dll
+
+winrt\Syncfusion.SfChart.XForms.dll
+
+### Universal Windows Platform project
+
+uwp\Syncfusion.SfChart.UWP.dll
+
+uwp\Syncfusion.SfChart.XForms.dll
+
+uwp\Syncfusion.SfChart.XForms.UWP.dll
+
+Currently an additional step is required for Windows and iOS projects. We need to create an instance of the SfChartRenderer as shown below. 
+
+Create an instance of SfChartRenderer in the constructor of MainPage in  Windows Phone, Windows Phone 8.1, WinRT and UWP project as shown below.
 
 {% highlight C# %}
 
@@ -194,9 +211,29 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 The chart control can be configured entirely in C# code or using XAML markup.
 
-1.Create an instance of SfChart.
+1.Importing the SfChart namespace.
 
-2.Add the primary and secondary axis for the chart as shown below.
+{% tabs %} 
+
+{% highlight C# %} 
+
+using Syncfusion.SfChart.XForms;
+
+{% endhighlight %}
+
+{% highlight xaml %} 
+
+xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms" 
+
+{% endhighlight %}
+
+{% endtabs %} 
+
+2.Create an instance of SfChart.
+
+3.Add the primary and secondary axis for the chart as shown below.
+
+{% tabs %} 
 
 {% highlight C# %} 
 
@@ -267,8 +304,11 @@ this.Content = chart;
 
 {% endhighlight %}
 
+{% endtabs %} 
 
-3.A title for the chart is set using the Title property as shown below,
+4.A title for the chart is set using the Title property as shown below,
+
+{% tabs %}   
 
 {% highlight C# %}  
 
@@ -278,8 +318,6 @@ chart.Title = new ChartTitle ()
 };
 		
 {% endhighlight %}
-
-
 
 {% highlight xaml %} 
 
@@ -297,13 +335,13 @@ chart.Title = new ChartTitle ()
 	  
 {% endhighlight %}
 
-
+{% endtabs %} 
 
 ## Add Chart series
 
 In this sample, we will be visualize the temperature over the months using a Column Series. Before creating the series, let’s create a data model representing the climate details data. 
 
-In SfChart, the series itemsource should be a collection of _ChartDataPoint_ objects. Add the following class for generating the datapoints.
+In SfChart, the series ItemsSource should be a collection of _ChartDataPoint_ objects. Add the following class for generating the datapoints.
 
 
 {% highlight C# %}
@@ -790,5 +828,3 @@ public class DataModel
 {% endtabs %}  
 
 ![](Getting-Started_images/img3.png)
-
-

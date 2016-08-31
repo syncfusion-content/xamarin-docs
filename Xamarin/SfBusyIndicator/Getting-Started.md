@@ -1,353 +1,159 @@
 ---
 layout: post
-title: Getting Started | SfBusyIndicator |Xamarin | Syncfusion
-description: getting started
-platform: xamarin
-control: SfBusyIndicator
+title: Getting Started with Syncfusion SfBusyIndicator control for Xamarin.Forms
+description: A quick tour to initial users on Syncfusion SfBusyIndicator control for Xamarin.Forms platform
+platform: Xamarin
+control: BusyIndicator
 documentation: ug
 ---
 
 # Getting Started
 
-This section provides a quick overview for working with Essential BusyIndicator for Xamarin.Forms.
+This section explains you the steps to configure a SfBusyIndicator control in a real-time scenario and also provides a walk-through on some of the customization features available in SfBusyIndicator control.
 
-## Add Syncfusion assembly reference
+## Add BusyIndicator
 
-Add the required Syncfusionassembly references to the respective projects as follows. Refer to the following installed location for the required assemblies.
+You can then add the assembly references to the respective projects as shown below
 
-{Syncfusion Installed location}\Essential Studio\12.4.0.34\lib
+<table>
+<tr>
+<th>Project</th>
+<th>Required assemblies</th>
+</tr>
+<tr>
+<td>PCL</td>
+<td>pcl\Syncfusion.SfBusyIndicator.XForms.dll</td>
+</tr>
+<tr>
+<td>Android</td>
+<td>android\Syncfusion.SfBusyIndicator.Android.dll<br/>android\Syncfusion.SfBusyIndicator.XForms.Android.dll<br/>android\Syncfusion.SfBusyIndicator.XForms.dll</td>
+</tr>
+<tr>
+<td>iOS (Unified)</td>
+<td>iOS-unified\Syncfusion.SfBusyIndicator.iOS.dll<br/>iOS-unified\Syncfusion.SfBusyIndicator.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfBusyIndicator.XForms.dll</td>
+</tr>
+<tr>
+<td>Windows Phone</td>
+<td>wp8\Syncfusion.SfBusyIndicator.WP8.dll<br/>wp8\Syncfusion.SfBusyIndicator.XForms.dll<br/>wp8\Syncfusion.SfBusyIndicator.XForms.WinPhone.dll</td>
+</tr>
+<tr>
+<td>Windows Phone 8.1</td>
+<td>wp81\Syncfusion.SfBusyIndicator.WP.dll<br/>wp81\Syncfusion.SfBusyIndicator.XForms.dll<br/>wp81\Syncfusion.SfBusyIndicator.XForms.WinPhone.dll</td>
+</tr>
+<tr>
+<td>WinRT</td>
+<td>winrt\Syncfusion.SfBusyIndicator.WinRT.dll<br/>winrt\Syncfusion.SfBusyIndicator.XForms.dll<br/>winrt\Syncfusion.SfBusyIndicator.XForms.WinRT.dll</td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>uwp\Syncfusion.SfBusyIndicator.UWP.dll<br/>uwp\Syncfusion.SfBusyIndicator.XForms.dll<br/>uwp\Syncfusion.SfBusyIndicator.XForms.UWP.dll</td>
+</tr>
+</table>
 
-Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\12.4.0.34\lib
+Currently an additional step is required for Windows Phone, Windows Phone 8.1 and iOS projects. We need to create an instance of the SfBusyIndicator custom renderer as shown below. 
 
-### PCL project
+Create an instance of SfBusyIndicatorRenderer in MainPage constructor of the Windows Phone and Windows Phone 8.1  project as shown 
 
-XForms\Syncfusion. SfBusyIndicator.XForms.dll 
+{% tabs %}
 
-### Android project
-
-Android\Syncfusion. SfBusyIndicator.Andriod.dll
-
-Android\Syncfusion. SfBusyIndicator. XForms.Andriod.dll
-
-### iOS project
-
-iOS\Syncfusion. SfBusyIndicator.iOS.dll  
-
-iOS\Syncfusion. SfBusyIndicator.XForms.iOS.dll
-
-### Windows Phone project
-
-WinPhone\Syncfusion. SfBusyIndicator.WP8.dll
-
-WinPhone\Syncfusion. SfBusyIndicator.XForms.WinPhone.dll
-
-
-N> Essential BusyIndicator for Xamarin is compatible with Xamarin Forms 1.3.
-
-An additional step is required for Windows Phone and iOS projects. Create an instance of the BusyIndicator custom renderer as follows.
-
-Create an instance of the SfBusyIndicatorRenderer in MainPage constructor in Windows Phone project as follows.
-
-{% highlight c# %}  
+{% highlight C# %}
 
 public MainPage()
-
 {
-
-new SfBusyIndicatorRenderer ();
-
-        ...    
-
+    new SfBusyIndicatorRenderer();
 }
 
- {% endhighlight %}
+{% endhighlight %}
 
+{% endtabs %}
 
-Create an instance of the SfBusyIndicatorRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as follows
+Create an instance of SfBusyIndicatorRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below
 
-{% highlight c# %}
-    
+{% tabs %}
+
+{% highlight C# %}
+
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
-
 {
-
-    ...
-
     new SfBusyIndicatorRenderer ();
-
-    ...
-
-}
+}	
 
 {% endhighlight %}
 
+{% endtabs %}
 
+* Adding namespace for the added assemblies. 
 
-## Add and configure the BusyIndicator
+{% tabs %}
 
-The BusyIndicator control is configured entirely in C# code or using XAML markup.
+{% highlight xaml %}
 
-Create an instance of SfBusyIndicator
-
-{% tabs %}  
-
-{% highlight c# %} 
-
-// Update App.cs source in this file.
-
-using Syncfusion.XForms.SfBusyIndicator;
-
-…
-
-…
-
-public class App : Application
-{
-	public App()
-	{
-		MainPage = new BusyIndicatorPage ();
-	}
-
-}
-
-public class BusyIndicatorPage : ContentPage
-
-{
-	SfBusyIndicator sfbusyindicator;
+	<xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"/>
 	
-	public BusyIndicatorPage ()
-	{	
-		sfbusyindicator = new SfBusyIndicator();
-	}
-
-}
 {% endhighlight %}
 
+{% highlight c# %}
 
-{% highlight xaml %}    
+	using Syncfusion.SfBusyIndicator.XForms; 
 
-// Use this in App.CS source.
+{% endhighlight %}
 
-<?xml version="1.0" encoding="UTF-8"?>
+{% endtabs %}
 
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
-	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"           
-x:Class="BusyIndicatorGettingStarted.BusyIndicatorGettingStarted" 
-	BackgroundColor="White"   
-xmlns:syncfusion="clr-namespace:Syncfusion.SfBusyIndicator.XForms;
-	assembly=Syncfusion.SfBusyIndicator.XForms"  	         
-xmlns:picker="clr-namespace:BusyIndicatorGettingStarted;
-	assembly=BusyIndicatorGettingStarted">
-	
-<ContentPage.Content> x:Class="BusyIndicatorGettingStarted.Sample">
+* Now add the SfBusyIndicator control with a required optimal name by using the included namespace.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+   	<xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"/>
 	<ContentPage.Content>
-		<syncfusion:SfBusyIndicator     
+		<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="Battery" />
 	</ContentPage.Content>
-</ContentPage>
-
+	
 {% endhighlight %}
-
-{% endtabs %}  
-
-
-
-### Configure the BusyIndicator Properties
-
-Add the BusyIndicator properties in your application.
-
-{% tabs %}  
-
-{% highlight c# %}    
-
-SfBusyIndicator sfbusyindicator = new SfBusyIndicator();
-
-sfbusyindicator.AnimationType = AnimationTypes.Battery;
-
-sfbusyindicator.ViewBoxWidth = 150;
-
-sfbusyindicator.ViewBoxHeight = 150;
-
-sfbusyindicator.BackgroundColor = Color.White;
-
-{% endhighlight %}
-
-
-
-{% highlight xaml %}   
-
-    <syncfusion:SfBusyIndicator x:Name="sfbusyindicator" BackgroundColor="White" ViewBoxHeight="150" ViewBoxWidth="150" AnimationType="Ball"/>
-
-{% endhighlight %}
-
-
-{% endtabs %}  
-
-
-The following screenshot illustrates the output.
-
-![](Getting-Started_images/img2.png)
-
-## Create your first BusyIndicator in Xamarin.Android
-
-This section provides a quick overview to work with the BusyIndicator in the Xamarin Studio. You can also set the requiredAnimationType to BusyIndicator and customize it according to your requirements. This example explains how to create theBusyIndicator with different AnimationTypes.
-
-
-
-![](Create-your-first-BusyIndicator-in-XamarinAndroid_images/img1.png)
-
-
-### Reference Essential Studio components in your solution
-
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders,
-
-{Syncfusion Installed location}\Essential Studio\13.1.0.21\lib
-
- 
-N> Assemblies are available in unzipped package location in Mac
-
-### Add the following assembly references to the Xamarin project.
-
- [android\Syncfusion.SfBusyIndicator.Andriod.dll]
-
-To develop an application with the Xamarin BusyIndicator is simple. The following steps explain how to create and configure its properties.
-
-Create an instance for the SfBusyIndicator in the constructor and set that BusyIndicator as content view of Activity.
-
-{% highlight c# %}   
-
-SfBusyIndicator sfBusyIndicator = new SfBusyIndicator(this);
-
-setContentView(sfBusyIndicator);
-
-{% endhighlight %}
-
-
-
-### Set the AnimationType to BusyIndicator
-
-You can set the AnimationType to the BusyIndicator by using the property Animationtype and choose among 13 predefined animation types.
-
-{% highlight c# %}    
-
-SfBusyIndicator busyIndicator = new SfBusyIndicato(this);
-
-busyIndicator.AnimationType=AnimationTypes.Battery;
-
-{% endhighlight %}
-
-   
-
-### Set BusyIndicator Customizations
-
-The BusyIndicator is customized by setting the properties as explained in the following code example.
-
-{% highlight c# %}   
- 
-SfBusyIndicator busyIndicator = new SfBusyIndicator (this);
-
-busyIndicator.AnimationType=AnimationTypes.Battery;
-
-busyIndicator.ViewBoxHeight=100;
-
-busyIndicator.ViewBoxWidth=100;
-
-busyIndicator.TextColor=Color.RED;
-
-busyIndicator.Title=“Loading”;
-
-setContentView(busyIndicator);
-
-{% endhighlight %}
-
-## Create your first BusyIndicator in Xamarin.iOS
-
-This section provides a quick overview to work with the BusyIndicator in Xamarin.iOS. You can also set the required AnimationType to the BusyIndicator and customize it according to your requirements. This example explains how to create a BusyIndicator with different AnimationTypes.
-
-
-
-![](Create-your-first-BusyIndicator-in-XamariniOS_images/img1.png)
-
-
-
-### Reference Essential Studio Components in your Solution
-
-After installing the Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, typically:
-
-
-
-{Syncfusion Installed location}\Essential Studio\{version number}\lib
-
-N> Assemblies are available in unzipped package location in Mac.
-
-You can add the following assembly references to the iOS project.
-
- [iOS\Syncfusion.SfBusyIndicator.iOS.dll]
-
-### Create a BusyIndicator
-
-To develop an application with the iOS BusyIndicator is simple. Following steps explain how to create and configure its elements,
-
-1.Create a BusyIndicator object and add BusyIndicator as subview in the viewdidload override method.
-
-2.You can create a BusyIndicator object by using the following code example.
 
 {% highlight c# %}
 
-public override void ViewDidLoad ()
-{
-	base.ViewDidLoad ();
-
-    SFBusyIndicator busyIndicator = new SFBusyIndicator ();
-
-    View.AddSubview (busyIndicator);
-
+    using Syncfusion.SfBusyIndicator.XForms;
+	SfBusyIndicator busyindicator = new SfBusyIndicator();
+	this.Content=busyindicator;
+	
 {% endhighlight %}
 
+{% endtabs %}
 
+## Setting Animation Type
 
+SfBusyIndicator provides 10 predefined animation types like Ball, Battery, Globe and so on. User can select any one of the animation types using `AnimationType`property.
 
+Following example depicts the battery type animation for SfBusyIndicator. 
 
+{% tabs %}
 
+{% highlight xaml %}
 
-### Set the Animation Type to BusyIndicator
-
-You can set the AnimationType to the BusyIndicator by using the property Animationtype and choose among 13 predefined animation types. 
-
-{% highlight c# %}  
-
-SFBusyIndicator busyIndicator = new SFBusyIndicator ();
-
-busyIndicator.AnimationType = SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeBall;
-
+   	<xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"/>
+	<ContentPage.Content>
+		<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="Battery" ViewBoxWidth = "150" ViewBoxHeight="150" Color="Maroon"/>
+	</ContentPage.Content>	
+	
 {% endhighlight %}
-
-
-
-
-
-### Set BusyIndicator Customizations
-
-BusyIndicator can be customized by setting the properties as explained in the following code example.
 
 {% highlight c# %}
- 
-SFBusyIndicator busyIndicator = new SFBusyIndicator ();
 
-busyIndicator.AnimationType = SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeBall;
+    using Syncfusion.SfBusyIndicator.XForms; 	
+	SfBusyIndicator busyindicator = new SfBusyIndicator();
+	this.Content=busyindicator;
+	busyindicator.AnimationType = AnimationTypes.Battery;
+        busyindicator.ViewBoxWidth = 150;
+        busyindicator.ViewBoxHeight = 150;
+        busyindicator.Color = Color.Maroon;
 
-busyIndicator.ViewBoxWidth = 100;
-
-busyIndicator.ViewBoxHeight = 100;
-
-busyIndicator.Foreground = UIColor.Red;
-
-busyIndicator.Title = "Loading.....";
-
-View.AddSubview (busyIndicator);
 
 {% endhighlight %}
 
- 
+{% endtabs %}
 
 
-
+![](images/Busyindicator.png)

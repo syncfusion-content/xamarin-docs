@@ -13,8 +13,9 @@ Legend contains list of chart series/data points in the chart. The information p
 
 Following code example shows how to enable legend in a chart,
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart>
 
@@ -29,24 +30,26 @@ Following code example shows how to enable legend in a chart,
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.Legend = new ChartLegend();
 
 {% endhighlight %}
 
-![E:/UG Images/Legend_clubbed/Legend1.png](legend_images/legend_img1.png)
+{% endtabs %}
+
+![](legend_images/legend_img1.png)
 
 ## Customizing Labels
 
-`Label` property of `ChartSeries` is used to define the label for the corresponding series legend item. The following properties are used to customize the legend items label appearance.
+[`Label`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~Label.html) property of [`ChartSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries.html) is used to define the label for the corresponding series legend item. The following properties are used to customize the legend items label appearance.
 
-* `TextColor` – used to change the color of the label.
-* `Font` – used to change the text size, font family and font weight.
-* `Margin` - used to change the margin size for labels.
+* [`TextColor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegendLabelStyle~TextColor.html) – used to change the color of the label.
+* [`Font`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegendLabelStyle~Font.html) – used to change the text size, font family and font weight.
+* [`Margin`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegendLabelStyle~Margin.html) - used to change the margin size for labels.
+
+{% tabs %} 
 
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.Legend>
 
@@ -73,7 +76,6 @@ chart.Legend = new ChartLegend();
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.Legend = new ChartLegend();
 
@@ -85,14 +87,17 @@ chart.Legend.LabelStyle.Margin = 5;
 
 {% endhighlight %}
 
-![E:/UG Images/Legend_clubbed/legenglabelStyle.png](legend_images/legend_img2.png)
+{% endtabs %}
+
+![](legend_images/legend_img2.png)
 
 ## Legend Icons
 
-Legend icons are enabled by default, however, you can control its visibility using `IsIconVisible` property. Also you can specify the icon type using `LegendIcon` property in ChartSeries. `IconWidth` and `IconHeight` properties are used to adjust the width and height of the legend icons respectively.
+Legend icons are enabled by default, however, you can control its visibility using [`IsIconVisible`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~IsIconVisible.html) property. Also you can specify the icon type using [`LegendIcon`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~LegendIconProperty.html#) property in ChartSeries. [`IconWidth`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~IconWidthProperty.html) and [`IconHeight`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~IconHeightProperty.html#) properties are used to adjust the width and height of the legend icons respectively.
+
+{% tabs %} 
 
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart>
 
@@ -109,7 +114,6 @@ Legend icons are enabled by default, however, you can control its visibility usi
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.Legend = new ChartLegend();
 
@@ -123,24 +127,26 @@ pieSeries.LegendIcon = ChartLegendIcon.SeriesType;
 
 {% endhighlight %}
 
-![E:/UG Images/Legend/legendIcon/ug-image.png](legend_images/legend_img3.png)
+{% endtabs %}
+
+![](legend_images/legend_img3.png)
 
 ## Legend Title
 
 Following properties are used to define and customize the legend title.
 
-* `Text` – used to change the title text.
-* `TextColor` – used to change the color of the title text.
-* `Font` – used to change the text size, font family and font weight of the title.
-* `Margin` – used to change the margin size for title.
-* `TextAlignment` – used to change the alignment of the title text, it can be start, end and center.
-* `BackgroundColor` – used to change the title background color.
-* `BorderColor` – used to change the border color.
-* `BorderWidth` – used to adjust the title border width.
+* [`Text`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTitle~Text.html) – used to change the title text.
+* [`TextColor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTitle~TextColor.html) – used to change the color of the title text.
+* [`Font`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTitle~Font.html) – used to change the text size, font family and font weight of the title.
+* [`Margin`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTitle~Margin.html) – used to change the margin size for title.
+* [`TextAlignment`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTitle~TextAlignment.html) – used to change the alignment of the title text, it can be start, end and center.
+* [`BackgroundColor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTitle~BackgroundColor.html) – used to change the title background color.
+* [`BorderColor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTitle~BorderColor.html) – used to change the border color.
+* [`BorderWidth`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTitle~BorderWidth.html) – used to adjust the title border width.
+
+{% tabs %} 
 
 {% highlight xaml %}
-
-[XAML]
 
 <chart:SfChart.Legend>
 
@@ -148,7 +154,8 @@ Following properties are used to define and customize the legend title.
 
 		<chart:ChartLegend.Title >
 
-			<chart:ChartTitle Text="Years" TextColor="Maroon" TextAlignment="Center" BackgroundColor="Silver" BorderWidth="3" BorderColor="Blue">
+			<chart:ChartTitle Text="Years" TextColor="Maroon" TextAlignment="Center" 
+							  BackgroundColor="Silver" BorderWidth="3" BorderColor="Blue">
 
 				<chart:ChartTitle.Font>
 
@@ -167,7 +174,6 @@ Following properties are used to define and customize the legend title.
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.Legend = new ChartLegend();
 
@@ -187,14 +193,17 @@ chart.Legend.Title.BorderColor = Color.Blue;
 
 {% endhighlight %}
 
-![E:/UG Images/Legend_clubbed/legendTitle.png](legend_images/legend_img4.png)
+{% endtabs %}
+
+![](legend_images/legend_img4.png)
 
 ## Toggle the series visibility
 
-You can control the visibility of the series by tapping on the legend item. You can enable this feature by enabling `ToggleSeriesVisibility` property.
+You can control the visibility of the series by tapping on the legend item. You can enable this feature by enabling [`ToggleSeriesVisibility`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~ToggleSeriesVisibility.html) property.
+
+{% tabs %} 
 
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart>
 
@@ -209,7 +218,6 @@ You can control the visibility of the series by tapping on the legend item. You 
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.Legend = new ChartLegend();
 
@@ -217,22 +225,26 @@ chart.Legend.ToggleSeriesVisibility = true;
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ## Positioning the Legend
 
 You can position the legend anywhere inside the chart. Following properties are used to customize the legend positions.
 
-* `DockPosition`– used to position the legend relatively. Options available are: Left, Right, Top, Bottom and Floating. If the DockPosition is Floating, you can position the legend using x and y coordinates.
-* `OffsetX`– used to move the legend on x coordinate by the given offset value, this will work only if the dock position is Floating.
-* `OffsetY` - used to move the legend on y coordinate by the given offset value, this will work only if the dock position is Floating.
-{% highlight c# %}
+* [`DockPosition`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~DockPosition.html) – used to position the legend relatively. Options available are: Left, Right, Top, Bottom and Floating. If the DockPosition is Floating, you can position the legend using x and y coordinates.
+* [`OffsetX`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~OffsetX.html) – used to move the legend on x coordinate by the given offset value, this will work only if the dock position is Floating.
+* [`OffsetY`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~OffsetY.html) - used to move the legend on y coordinate by the given offset value, this will work only if the dock position is Floating.
 
-[XAML]
+{% tabs %} 
+
+{% highlight xaml %}
 
 <chart:SfChart>
 
 	<chart:SfChart.Legend>
 
-		<chart:ChartLegend DockPosition="Floating" OffsetX="70" OffsetY="90" Orientation="Vertical">        
+		<chart:ChartLegend DockPosition="Floating" OffsetX="70" OffsetY="90" 
+						   Orientation="Vertical">        
 
 	</chart:SfChart.Legend>           
 
@@ -241,7 +253,6 @@ You can position the legend anywhere inside the chart. Following properties are 
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.Legend = new ChartLegend();
 
@@ -255,4 +266,6 @@ chart.Legend.OffsetY = 90;
 
 {% endhighlight %}
 
-![E:/UG Images/Legend_clubbed/legendDockposition.png](legend_images/legend_img5.png)
+{% endtabs %}
+
+![](legend_images/legend_img5.png)

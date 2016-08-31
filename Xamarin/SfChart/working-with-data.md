@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Xamarin.Forms | Populating data
-description: What are all the different types for add data point to series in Essential Xamarin.forms.
+title: Populating data
+description: How to add data point to series in  Essential Xamarin.forms Chart.
 platform: xamarin
 control: Chart
 documentation: ug
@@ -15,7 +15,7 @@ SfChart control can be configured with data points using `ItemsSource` property 
 
 One way is to create a collection of [ChartDataPoint](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataPoint.html#) objects and assign this collection to `ItemsSource` property. Here, each ChartDataPoint object represents a data point in a chart series.
 
-N> ChartDataPoint class has few overloaded constructors depending on the number of y-values required to plot a data point for a particular series type. For example, you can use a constructor with two parameters to instantiate data point for XyDataSeries like Line, Spline, and Pie etc.
+N> ChartDataPoint class has few overloaded constructors depending on the number of y-values required to plot a data point for a particular series type. For example, you can use a constructor with two parameters to instantiate data point for XYDataSeries like Line, Spline, and Pie etc.
 
 Following code snippet illustrates this,
 
@@ -50,8 +50,9 @@ public class DataModel
 
 {% endhighlight %}
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML] 
 
 <chart:SfChart>
 
@@ -66,7 +67,6 @@ public class DataModel
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]  
 
 //Adding the series to the chart and set the ItemsSource property
 
@@ -78,11 +78,13 @@ chart.Series.Add (new ColumnSeries () {
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ## Custom Object
 
 Another way is to assign a collection of custom objects to the ItemsSource property. In this case, you need to set the XBindingPath and YBindingPath properties of chart series with the property names of the custom object which contains the x-value/category and y-value respectively.
 
-N> While using custom objects, XBindingPath property is required for all types of chart series. You need to set YBindingPath property only for the XyDataSeries types which needs single y-value for a data point. For example, Line, Spline, Column, Bar, Pie etc.  For BubbleSeries type, you need to set both YBindingPath and Size properties since it requires two y-values to plot a single bubble data point. In the case of financial series types like Candle and HiloOpenClose, which requires four y-values for a single data point, you need to set High, Low, Open and Close properties with the property names of a custom object which contains respective values.
+N> While using custom objects, XBindingPath property is required for all types of chart series. You need to set YBindingPath property only for the XYDataSeries types which needs single y-value for a data point. For example, Line, Spline, Column, Bar, Pie etc.  For BubbleSeries type, you need to set both YBindingPath and Size properties since it requires two y-values to plot a single bubble data point. In the case of financial series types like Candle and HiLoOpenClose, which requires four y-values for a single data point, you need to set High, Low, Open and Close properties with the property names of a custom object which contains respective values.
 
 {% highlight c# %}
 [C#]
@@ -139,15 +141,17 @@ public class DataModel
 
 {% endhighlight %}
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML] 
 
 <chart:SfChart>
 ...
 
   <chart:SfChart.Series>
 
-	  <chart:ColumnSeries ItemsSource="{Binding Demands}" XBindingPath="Demand" YBindingPath="Year2010"/>
+	  <chart:ColumnSeries ItemsSource="{Binding Demands}" XBindingPath="Demand" 
+	 					  YBindingPath="Year2010"/>
 
   </chart:SfChart.Series>
 
@@ -156,8 +160,6 @@ public class DataModel
 {% endhighlight %}
 
 {% highlight c# %}
-
-[C#]  
 
 chart.Series.Add (new ColumnSeries () {
 	
@@ -170,3 +172,5 @@ chart.Series.Add (new ColumnSeries () {
 });
 
 {% endhighlight %}
+
+{% endtabs %}

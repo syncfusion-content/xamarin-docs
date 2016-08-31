@@ -1,7 +1,7 @@
 ---
 layout : post
 title : Overview of Syncfusion Carousel control for Xamarin.Forms
-description : Overview and key features of Carousel Control
+description : Overview and key features of Carousel control
 platform : Xamarin
 control : Carousel
 documentation : ug
@@ -9,12 +9,12 @@ documentation : ug
 
 # Overview
 
-Essential Carousel control for xamarin is a user interface providing rich visual navigation experience of image data. Also provides efficient customization of items and interactive navigation features. 
+The Essential Xamarin Carousel control allows navigating through image data in an interactive way so that they can be viewed or selected. Also provides various customization options for its item arrangements.
 
-## Key Featues:
+![](images/carousel.png)
 
-* `Offset` - Options to specify the space between the unselected carousel items.
-* `Rotation Angle` - Support to rotate the items to a specified angle.
-* `Duration` - Options to specify the time taken to move an item to the selected item position.
+Key Features:
 
-![](images/overview.png)
+* `Offset` - Support to specify the space between the unselected items in SfCarousel.
+* `Rotation Angle` - Options to rotate all the items to a specified angle.
+* `Duration` - Support to specify the time taken to move an item to the selected item position.

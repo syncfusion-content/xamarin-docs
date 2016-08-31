@@ -22,77 +22,92 @@ Alternatively if you had downloaded Essential Studio from Syncfusion.com or thro
 
 After installing Essential Studio for Xamarin, all the required assemblies can be found in the installation folders, typically
 
-{Syncfusion Installed location}\Essential Studio\12.2.0.40\lib
+{Syncfusion Installed location}\Essential Studio\syncfusionessentialstudio-version\lib
 
-Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\12.2.0.40\lib
+Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\lib
 
-or after downloading through the Xamarin store web interface, all the required assemblies can be found in the below folder
+Or after downloading through the Xamarin store web interface, all the required assemblies can be found in the below folder
 
-{download location}\syncfusionessentialstudio-version\lib
+{Download location}\syncfusionessentialstudio-version\lib
 
 You can then add the assembly references to the respective projects as shown below
 
-### PCL project
+<table>
+<tr>
+<th>Project</th>
+<th>Required assemblies</th>
+</tr>
+<tr>
+<td>PCL</td>
+<td>pcl\Syncfusion.SfMaps.XForms.dll</td>
+</tr>
+<tr>
+<td>Android</td>
+<td>android\Syncfusion.SfMaps.Android.dll<br/>android\Syncfusion.SfMaps.XForms.Android.dll</td>
+</tr>
+<tr>
+<td>iOS (Classic)</td>
+<td>iOS\Syncfusion.SfMaps.iOS.dll<br/>iOS\Syncfusion.SfMaps.XForms.iOS.dll<br/>iOS\Syncfusion.SfMaps.XForms.dll</td>
+</tr>
+<tr>
+<td>iOS (Unified)</td>
+<td>iOS-unified\Syncfusion.SfMaps.iOS.dll<br/>iOS-unified\Syncfusion.SfMaps.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfMaps.XForms.dll</td>
+</tr>
+<tr>
+<td>Windows Phone</td>
+<td>wp8\Syncfusion.SfMaps.XForms.dll<br/>wp8\Syncfusion.SfMaps.XForms.WinPhone.dll<br>wp8\Syncfusion.SfMaps.WP8.dll</td>
+</tr>
+<tr>
+<td>Windows Phone 8.1</td>
+<td>wp81\Syncfusion.SfMaps.XForms.dll<br/>wp81\Syncfusion.SfMaps.XForms.WinPhone.dll<br>wp81\Syncfusion.SfMaps.WP.dll</td>
+</tr>
+<tr>
+<td>WinRT</td>
+<td>winrt\Syncfusion.SfMaps.XForms.dll<br/>winrt\Syncfusion.SfMaps.XForms.WinRT.dll<br>wp81\Syncfusion.SfMaps.WinRT.dll</td>
+</tr>
+</table>
 
-pcl\Syncfusion.SfChart.XForms.dll 
+Currently an additional step is required for Windows Phone, Windows Phone 8.1, WinRT and iOS projects. We need to create an instance of the maps custom renderer as shown below. 
 
-### Android project
-
-android\Syncfusion.SfChart.Andriod.dll
-
-android\Syncfusion.SfChart.XForms.Andriod.dll
-
-### iOS(Classic) project
-
-ios\Syncfusion.SfChart.iOS.dll 
-
-ios\Syncfusion.SfChart.XForms.iOS.dll
-
-ios\Syncfusion.SfChart.XForms.dll
-
-### iOS(Unified) project
-
-ios-unified\Syncfusion.SfChart.iOS.dll 
-
-ios-unified\Syncfusion.SfChart.XForms.iOS.dll
-
-ios-unified\Syncfusion.SfChart.XForms.dll
-
-### Windows Phone project
-
-wp8\Syncfusion.SfChart.WP8.dll
-
-wp8\Syncfusion.SfChart.XForms.WinPhone.dll
-
-
-N> Essential Chart for Xamarin is compatible with Xamarin. Forms v.1.2.3.6257.
-
-Currently an additional step is required for Windows Phone and iOS projects. We need to create an instance of the chart custom renderer as shown below. 
-
-Create an instance of SfMaps in MainPage constructor in of the Windows Phone project as shown 
-
-{% highlight xaml %}
-    
-    <syncfusion:SfMap>                     
-   
-    </syncfusion:SfMap>    
-
-{% endhighlight %}
+Create an instance of SfMapsRenderer in MainPage constructor of the Windows Phone, Windows Phone 8.1 and WinRT project as shown 
 
 {% highlight C# %}
 
-    public MainPage()
-    {
-        new SfMaps();
-        ...    
-    }
+public MainPage()
+
+{
+
+    new SfMapsRenderer();
+
+    ...    
+
+}
 
 {% endhighlight %}
- 
+
+Create an instance of SfMapsRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below
+
+{% highlight C# %}
+
+public override bool FinishedLaunching(UIApplication app, NSDictionary options)
+
+{
+
+    ...
+
+    new SfMapsRenderer ();
+
+    ...
+
+}	
+
+{% endhighlight %}
 
 ## Initializing Maps   
 
 Create a Maps instance in Main Activity and set Maps as a ContentView in onCreate() overridden method.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -104,15 +119,19 @@ Create a Maps instance in Main Activity and set Maps as a ContentView in 
 
 {% highlight c# %}
 
-        protected override void OnCreate (Bundle savedInstanceState)
-        {
-            base.OnCreate (savedInstanceState);
+protected override void OnCreate (Bundle savedInstanceState)
+{
+    
+    base.OnCreate (savedInstanceState);
 
-            SfMaps maps = new SfMaps (this);
-            SetContentView (maps);
-        }
+    SfMaps maps = new SfMaps (this);
+    SetContentView (maps);
+    
+}
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ## Loading Shapes to Maps
 
@@ -122,9 +141,11 @@ A shape file can be a set of files or a single file. Generally, the shape file c
 
 * Main file (.shp)
 
-* dBASE file (.dbf)
+* dBase file (.dbf)
 
 These files need to be added in Asset folder.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -139,25 +160,30 @@ These files need to be added in Asset folder.
 
 {% highlight c# %}
 	
-        protected override void OnCreate (Bundle savedInstanceState)
-        {
-            base.OnCreate (savedInstanceState);
+protected override void OnCreate (Bundle savedInstanceState)
+{
+    base.OnCreate (savedInstanceState);
 
-            SfMaps maps = new SfMaps (this);
-            ShapeFileLayer layer = new ShapeFileLayer ();
-            layer.Uri = "usa_state.shp";
-            maps.Layers.Add (layer);
-            SetContentView (maps);
-        }
+    SfMaps maps = new SfMaps (this);
+    ShapeFileLayer layer = new ShapeFileLayer ();
+    layer.Uri = "usa_state.shp";
+    maps.Layers.Add (layer);
+    SetContentView (maps);
+    
+}
 
 {% endhighlight %}
 
-![](images/maps_android.png)
+{% endtabs %}
+
+![](Images/Maps.png)
 
 
 ## Adding Marker to the Maps
 
 Markers can be added into the shape layers. The below code snippets enables you to do so.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -171,21 +197,25 @@ Markers can be added into the shape layers. The below code snippets enables you 
 
 {% highlight c# %}
 	
-        protected override void OnCreate (Bundle savedInstanceState)
-        {
-            base.OnCreate (savedInstanceState);
+protected override void OnCreate (Bundle savedInstanceState)
+{
+    
+    base.OnCreate (savedInstanceState);
             
-            SfMaps maps = new SfMaps (this);
-            ShapeFileLayer layer = new ShapeFileLayer ();
-            SFMapMarker marker = new SFMapMarker ();
-            marker.Label = "California";
-            marker.Latitude = 37;
-            marker.Longitude = -120;
-            layer.Markers.Add (marker);  
-            maps.Layers.Add (layer);            
-            SetContentView (maps);
-        }
+    SfMaps maps = new SfMaps (this);
+    ShapeFileLayer layer = new ShapeFileLayer ();
+    SFMapMarker marker = new SFMapMarker ();
+    marker.Label = "California";
+    marker.Latitude = 37;
+    marker.Longitude = -120;
+    layer.Markers.Add (marker);  
+    maps.Layers.Add (layer);            
+    SetContentView (maps);
+    
+}
 
 {% endhighlight %}
 
-![](images/marker_android.png) 
+{% endtabs %}
+
+![](Images/Markers.png) 

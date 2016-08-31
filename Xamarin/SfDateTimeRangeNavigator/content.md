@@ -1,0 +1,128 @@
+---
+layout: post
+title: Setting SfChart as content of SfDateTimeRangeNavigator
+description: Content
+platform: xamarin
+control: SfDateTimeRangeNavigator
+documentation: ug
+---
+
+# Content
+
+`SfDateTimeRangeNavigator` allows you to set `SfChart` as its content, explicitly, using `Content` property. However, if you provide data source using `ItemsSource` property, the Chart with line series will be created for the provided ItemsSource and will be set as the content of range navigator internally, by default. But, if you configure the range navigator using `Minimum` and `Maximum` properties, you have to manually configure the Chart with data source.
+
+N> Though the `Content` property’s data type is View and it can accept any View as its value, but currently `SfDateTimeRangeNavigator` can accept only SfChart as its content.
+
+The following code snippet shows how to configure the range navigator using `ItemsSource` property.
+
+{% tabs %}
+{% highlight xaml %}
+<rangenavigator:SfDateTimeRangeNavigator ItemsSource="{Binding DateTimeRangeData}" XBindingPath="XValue" YBindingPath="YValue"/>
+{% endhighlight %}
+
+{% highlight c# %}
+SfDateTimeRangeNavigator rangenavigator = new SfDateTimeRangeNavigator(); 
+
+ViewModel viewModel = new ViewModel(); 
+
+rangenavigator.ItemsSource = viewModel.DateTimeRangeData;
+
+rangenavigator.XBindingPath = "XValue"; 
+
+rangenavigator.YBindingPath = "YValue";
+{% endhighlight %}
+
+
+{% endtabs %}
+
+{% highlight c# %}
+
+[C#]
+
+public class ViewModel
+
+{
+
+	public ObservableCollection<ChartDataPoint> DateTimeRangeData { get; set; }
+
+	public ViewModel()
+
+	{
+
+		DateTimeRangeData = new ObservableCollection<ChartDataPoint>
+
+		{
+
+			new ChartDataPoint(new DateTime(2015, 01, 1), 14),
+
+			new ChartDataPoint(new DateTime(2015, 02, 1), 54),
+
+			new ChartDataPoint(new DateTime(2015, 03, 1), 23),
+
+			new ChartDataPoint(new DateTime(2015, 04, 1), 53),
+
+			new ChartDataPoint(new DateTime(2015, 05, 1), 25),
+
+			new ChartDataPoint(new DateTime(2015, 06, 1), 32),
+
+			new ChartDataPoint(new DateTime(2015, 07, 1), 78),
+
+			new ChartDataPoint(new DateTime(2015, 08, 1), 100),
+
+			new ChartDataPoint(new DateTime(2015, 09, 1), 55),
+
+			new ChartDataPoint(new DateTime(2015, 10, 1), 38),
+
+			new ChartDataPoint(new DateTime(2015, 11, 1), 27),
+
+			new ChartDataPoint(new DateTime(2015, 12, 1), 56),
+
+			new ChartDataPoint(new DateTime(2015, 12, 31), 35),
+
+		};
+
+	}
+
+}
+
+{% endhighlight %}
+
+The following code snippet shows how to configure the range navigator using `Minimum` and `Maximum` properties.
+
+{% tabs %}
+{% highlight xaml %}
+<rangenavigator:SfDateTimeRangeNavigator ViewRangeStart="5/1/2015" 
+
+	ViewRangeEnd="5/30/2015" Minimum="4/1/2015" Maximum="6/30/2015">
+
+<rangenavigator:SfDateTimeRangeNavigator.Content>
+
+<chart:SfChart>
+
+. . .
+
+</chart:SfChart>
+
+</rangenavigator:SfDateTimeRangeNavigator.Content>
+{% endhighlight %}
+
+{% highlight c# %}
+SfDateTimeRangeNavigator rangenavigator = new SfDateTimeRangeNavigator();
+
+rangenavigator.Minimum = new DateTime(2015, 4, 1);
+
+rangenavigator.Maximum = new DateTime(2015, 6, 30);
+
+rangenavigator.ViewRangeStart = new DateTime(2015, 5, 1);
+
+rangenavigator.ViewRangeEnd = new DateTime(2015, 5, 31);
+
+SfChart chart = new SfChart();
+
+...
+
+rangenavigator.Content = chart;
+{% endhighlight %}
+{% endtabs %}
+
+![](content_images/content_img1.png)

@@ -1,24 +1,22 @@
 ---
-layout: post
-title: Overview |  SfAutoComplete  |Xamarin | Syncfusion
-description: overview
-platform: xamarin
-control: SfAutoComplete 
-documentation: ug
+layout : post
+title : Overview of Syncfusion AutoComplete control for Xamarin.Forms
+description : Overview and key features of autocomplete control
+platform : Xamarin
+control : AutoComplete
+documentation : ug
 ---
 
 # Overview
 
-AutoComplete functionality provides suggestions while typing. There are several modes of suggestions. The suggested text can be 
-appended to the original text or it can be displayed in a drop-down list so that you can choose from different options.
-
-![](Overview_images/img1.png)
-
+The Essential Xamarin AutoComplete widget enables user to provide their input with help of predefined list. Also provides support to append suggestions based on input and filter the matching data in dropdown.
+![](images/overview.png)
 
 ## Key Features
 
-* Watermark – The control shows the watermark text.
-* AutoCompleteMode – The control provides suggestions to end users based on a predefined collection while typing.
-* SuggestionMode – The suggestions list can be displayed with 8 types of search pattern.
-* AutoCompleteSource – A list of strings are loaded to the control to display the suggestions.
+* `Autocomplete Mode` - Provides Append, Suggest and SuggestAppend options to decide the suggestion pattern for displaying the filtered data.
+
+* `Suggestion Mode` - Provides various options to filter the data to be displayed.
+
+* `Watermark` - Provides a hint to start with input.
 

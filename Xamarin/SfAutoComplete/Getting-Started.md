@@ -1,374 +1,184 @@
 ---
-layout: post
-title: Getting Started | SfAutoComplete |Xamarin | Syncfusion
-description: getting started
-platform: xamarin
-control: SfAutoComplete 
-documentation: ug
+layout : post
+title : Getting Started with Syncfusion AutoComplete Control for Xamarin.Forms
+description : A quick tour to initial users on Syncfusion autocomplete control for Xamarin.Forms platform
+platform : Xamarin
+control : AutoComplete
+documentation : ug
 ---
 
 # Getting Started
 
-This section explains how to configure an AutoComplete in the following three platforms.
-
-* Create your first AutoComplete in Xamarin.Android
-* Create your first AutoComplete in Xamarin.iOS
-* Create your first AutoComplete in Xamarin.Forms
-
-## Create your first AutoComplete in Xamarin.Android
-
-This section provides a quick overview for working with AutoComplete in Android Studio. This example explains how to create an AutoComplete with different AutoCompleteModes and SuggestionModes.
-
-![](Create-your-first-AutoComplete-in-XamarinAndroid_images/img1.png)
-
-
-### Reference Essential Studio components in your solution
-
-After installing the Essential Studio for Xamarin, you can find all the required assemblies in the installation folders,
-
-{Syncfusion Installed location}\Essential Studio\13.2.0.29\lib
-
-
-
-N> Assemblies are available in unzipped package location in Mac.
-
-Add the following assembly references to the Xamarin project.
-
-android\Syncfusion.SfAutoComplete.Andriod.dll
-
-To develop an application with the Xamarin AutoComplete is simple.
-
-Create an instance for the SfAutoComplete in the constructor and set that AutoComplete as content view of Activity.
-
-{% highlight C# %}  
-
-SfBusyIndicator sfBusyIndicator = new SfBusyIndicator(this);
-
-setContentView(sfBusyIndicator);
-
-{% endhighlight %} 
-
-### Setting the AutoCompleteSource to AutoComplete
-
-You can set the suggestion list to the AutoComplete by using the AutoCompleteSource property and assign by using a DataAdapter. 
-
-{% highlight C# %}   
-
-List<String> cList = new List<String>(); 
-
-cList.Add ("Afghanistan"); 
-
-cList.Add ("Akrotiri");
-
-cList.Add ("Albania");
-
-cList.Add ("Algeria"); 
-
-ArrayAdapter<String> adapters = new ArrayAdapter<String>(con,
-     Android.Resource.Layout.SimpleListItem1, new Countrylist().Country);
-
-autoComplete1.SetAutoCompleteSource(adapters);  
-
-{% endhighlight %} 
-
-### Setting AutoComplete Customizations
-
-AutoComplete is customized by setting the properties as explained in the following code example.
-
-{% highlight C# %}  
-
- autoComplete1.SuggestionMode = SuggestionMode.StartsWith;
- 
- autoComplete1.MaximumDropDownHeight = 200;
-
- autoComplete1.Watermark = "Enter a country name";
-
- autoComplete1.PopUpDelay = 100;
-
- autoComplete1.AutoCompleteMode = AutoCompleteMode.Append;
-
- autoComplete1.MinimumPrefixCharacters = 2; 
-
-{% endhighlight %} 
-
-
-
-## Create your first AutoComplete in Xamarin.Forms
-
-This section provides a quick overview for working with Essential AutoComplete for Xamarin.Forms.
-
-### Add Syncfusion assembly reference
-
-Add the required Syncfusionassembly references to the respective projects as follows. Refer to the following installed 
-location for the required assemblies.
-
-{Syncfusion Installed location}\Essential Studio\13.2.0.29\lib
-
-For example: C:\Program Files (x86)\Syncfusion\Essential Studio\13.2.0.29\lib
-
-#### PCL project
-
-XForms\Syncfusion. SfAutoComplete.XForms.dll 
-
-#### Android project
-
-Android\Syncfusion. SfAutoComplete.Andriod.dll
-
-Android\Syncfusion. SfAutoComplete. XForms.Andriod.dll
-
-#### iOS project
-
-iOS\Syncfusion. SfAutoComplete.iOS.dll  
-
-iOS\Syncfusion. SfAutoComplete.XForms.iOS.dll
-
-#### Windows Phone project
-
-WinPhone\Syncfusion. SfInput.WP8.dll
-
-WinPhone\Syncfusion. SfShared.WP8.dll
-
-WinPhone\Syncfusion. SfAutoComplete.XForms.WinPhone.dll
-
-
-N> Essential AutoComplete for Xamarin is compatible with Xamarin Forms 1.3.
-
-
-
-An additional step is required for Windows Phone and iOS projects.
-
-Create an instance of the SfAutoCompleteRenderer in MainPage constructor of Windows Phone project as follows.
-
-{% highlight C# %} 
+This section explains you the steps to configure a SfAutoComplete control in a real-time scenario and also provides a walk-through on some of the customization features available in SfAutoComplete control.
+
+## Add SfAutoComplete
+
+You can then add the assembly references to the respective projects as shown below
+
+<table>
+<tr>
+<th>Project</th>
+<th>Required assemblies</th>
+</tr>
+<tr>
+<td>PCL</td>
+<td>pcl\Syncfusion.SfAutoComplete.XForms.dll</td>
+</tr>
+<tr>
+<td>Android</td>
+<td>android\Syncfusion.SfAutoComplete.Android.dll<br/>android\Syncfusion.SfAutoComplete.XForms.Android.dll<br/>android\Syncfusion.SfAutoComplete.XForms.dll</td>
+</tr>
+<tr>
+<td>iOS (Unified)</td>
+<td>iOS-unified\Syncfusion.SfAutoComplete.iOS.dll<br/>iOS-unified\Syncfusion.SfAutoComplete.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfAutoComplete.XForms.dll</td>
+</tr>
+<tr>
+<td>Windows Phone</td>
+<td>wp8\Syncfusion.SfInput.WP8.dll<br/>wp8\Syncfusion.SfShared.WP8.dll<br/>wp8\Syncfusion.SfAutoComplete.XForms.dll<br/>wp8\Syncfusion.SfAutoComplete.XForms.WinPhone.dll</td>
+</tr>
+<tr>
+<td>Windows Phone 8.1</td>
+<td>wp81\Syncfusion.SfInput.WP.dll<br/>wp81\Syncfusion.SfShared.WP.dll<br/>wp81\Syncfusion.SfAutoComplete.XForms.dll<br/>wp81\Syncfusion.SfAutoComplete.XForms.WinPhone.dll</td>
+</tr>
+<tr>
+<td>WinRT</td>
+<td>winrt\Syncfusion.SfInput.WinRT.dll<br/>winrt\Syncfusion.SfShared.WinRT.dll<br/>winrt\Syncfusion.SfAutoComplete.XForms.dll<br/>winrt\Syncfusion.SfAutoComplete.XForms.WinRT.dll</td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>uwp\Syncfusion.SfInput.UWP.dll<br/>uwp\Syncfusion.SfShared.UWP.dll<br/>uwp\Syncfusion.SfAutoComplete.XForms.dll<br/>uwp\Syncfusion.SfAutoComplete.XForms.UWP.dll</td>
+</tr>
+</table>
+
+Currently an additional step is required for Windows Phone, Windows Phone 8.1 and iOS projects. We need to create an instance of the autocomplete custom renderer as shown below. 
+
+Create an instance of SfAutoCompleteRenderer in MainPage constructor of the Windows Phone and Windows Phone 8.1 project as shown 
+
+{% tabs %}
+
+{% highlight C# %}
 
 public MainPage()
+{
+    new SfAutoCompleteRenderer();  
+}
 
-    {
+{% endhighlight %}
 
-        new SfAutoCompleteRenderer ();
+{% endtabs %}
 
-        ...    
+Create an instance of SfAutoCompleteRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below
 
-    }
+{% tabs %}
 
-
-{% endhighlight %} 
-
-Create an instance of the SfAutoCompleteRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as follows.
-
-{% highlight C# %} 
+{% highlight C# %}
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
+{
+    new SfAutoCompleteRenderer ();
+}	
 
-    {
+{% endhighlight %}
 
-        ...
+{% endtabs %}
 
-        new SfAutoCompleteRenderer ();
+* Adding namespace for the added assemblies. 
 
-        ...
+{% tabs %}
 
-    }
+{% highlight xaml %}
 
+	<xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"/>
 
-{% endhighlight %} 
-
-### Add and configure the AutoComplete
-
-The AutoComplete control is configured entirely in C# code or by using XAML markup.
-
-Create an instance of SfAutoComplete.
-
-
+{% endhighlight %}
 
 {% highlight c# %}
 
-// Update App.cs source in this file.
+	using Syncfusion.SfAutoComplete.XForms;
 
-using Syncfusion.XForms.SfAutoComplete;
+{% endhighlight %}
 
-…
+{% endtabs %}
 
-…
+* Now add the SfAutoComplete control with a required optimal name by using the included namespace.
 
-public class App : Application
-	{
-        public App()
-        {
-            MainPage = new AutoCompletePage ();
-        }
+{% tabs %}
 
-    }
+{% highlight xaml %}
 
-public class AutoCompletePage : ContentPage
+	<ContentPage.Content>
+		<autocomplete:SfAutoComplete x:Name="autocomplete"/>
+	</ContentPage.Content>
+	
+{% endhighlight %}
 
-{
-        SfAutoComplete sfautocomplete;
+{% highlight c# %}
 
-        public AutoCompletePage ()
-        {
-            sfautocomplete = new SfAutoComplete();
-        }
-}
+	SfAutoComplete countryAutoComplete = new SfAutoComplete ();
+	this.Content = countryAutoComplete;
 
-{% endhighlight %} 
+{% endhighlight %}
 
-{% highlight xaml %} 
+{% endtabs %}
 
-// Use this in App.CS source.
+## Add Items
 
-<?xml version="1.0" encoding="UTF-8"?>
+A list of string with country names are created and added to auto complete source. This list will be populated as suggestion list based on text entry.
 
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"  
-xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"    
-        
-x:Class="AutoCompleteGettingStarted.AutoCompleteGettingStarted " 
-	BackgroundColor="White"            
-xmlns:syncfusion="clr-namespace:Syncfusion.SfAutoComplete.XForms;
-	assembly=Syncfusion. SfAutoComplete.XForms"          
-xmlns:picker="clr-namespace: AutoCompleteGettingStarted;
-	assembly= AutoCompleteGettingStarted ">
-    
-<ContentPage.Content> x:Class=" AutoCompleteGettingStarted.Sample">
+{% tabs %}
+
+{% highlight c# %}
+	SfAutoComplete countryAutoComplete = new SfAutoComplete ();
+    List<String> countryName = new List<String>();
+	countryName.Add("Uganda");
+	countryName.Add("Ukraine");
+	countryName.Add("United Arab Emirates");
+	countryName.Add("United Kingdom");
+	countryName.Add("United States");	
+	countryAutoComplete.AutoCompleteSource = countryName;
+	this.Content = countryAutoComplete;
+{% endhighlight %}
+
+{% endtabs %}
+
+
+## Set Filter Mode
+
+Filters can be applied to the displayed items based on starting letter. We can also append the first item from the suggested list to the TextBox. This can be done by using the `SuggestionMode` and `AutoCompleteMode` properties in SfAutoComplete control.
+
+The following example shows the SfAutoComplete control which suggest the country list starting with the letter U.
+ 
+{% tabs %}
+
+{% highlight xaml %}
 
 <ContentPage.Content>
-        <syncfusion:SfAutoComplete    
+   <autocomplete:SfAutoComplete Watermark="Enter a country name" x:Name="countryAutoComplete" SuggestionMode="StartsWith" AutoCompleteMode="Suggest" HeightRequest="40" MinimumPrefixCharacters="1" MaximumDropDownHeight="200" />
 </ContentPage.Content>
+{% endhighlight %}
 
-</ContentPage>
+{% highlight c# %}
+	SfAutoComplete countryAutoComplete = new SfAutoComplete ();	
+	countryAutoComplete.SuggestionMode = SuggestionMode.StartsWith;
+	countryAutoComplete.AutoCompleteMode = AutoCompleteMode.Suggest;
+	countryAutoComplete.MaximumDropDownHeight = 200;
+	countryAutoComplete.MinimumPrefixCharacters = 1;
+	countryAutoComplete.HeightRequest = 40;
+	
+	List<String> countryName = new List<String>();
+	countryName.Add("Uganda");
+	countryName.Add("Ukraine");
+	countryName.Add("United Arab Emirates");
+	countryName.Add("United Kingdom");
+	countryName.Add("United States");	
+	
+	countryAutoComplete.AutoCompleteSource = countryName;
+	countryAutoComplete.Watermark = "Enter a country name";  
+
+	this.Content = countryAutoComplete;
 
 {% endhighlight %}
 
+{% endtabs %}
 
-
-### Configure the AutoComplete Properties
-
-Add the AutoComplete properties in your application.
-
-{% tabs %}   
-
-{% highlight C# %}   
-
-SfAutoComplete sfautocomplete = new SfAutoComplete  ();
-
-sfautocomplete .AutoCompleteSource= list1;
-
-sfautocomplete .MinimumPrefixCharacter= 2;
-
-sfautocomplete .MaximumDropDownHeight= 200;
-
-sfautocomplete .PopUpelay= 100;
-
-{% endhighlight %}
-
-{% highlight xaml %}  
-
-<syncfusion:SfAutoComplete x:Name="sfautocomplete" BackgroundColor="White" MinimumPrefixCharacter="2" MaximumDropDownHeight="200" PopUpDelay="100">
-
-{% endhighlight %}
-
-{% endtabs %} 
-
-The following screenshot illustrates the output.
-
-![](Create-your-first-AutoComplete-in-XamarinForms_images/img2.png)
-
-## Create your first AutoComplete in Xamarin.iOS
-
-This section provides a quick overview to work with the AutoComplete in Objective C. This example explains how to create an AutoComplete with different AutoCompleteModes and SuggestionModes.
-
-![](Create-your-first-AutoComplete-in-XamariniOS_images/img1.png)
-
-
-
-### Add Framework reference to the project
-
-You can refer to the following link to learn how to refer to the framework to your project. 
-
-<http://help.syncfusion.com/ios/introduction/add-framework-reference-to-the-project>
-
-### Create an AutoComplete
-
-To develop an application with iOS AutoComplete is simple. 
-
-Create an AutComplete object in the View Controller and add the AutoComplete as subview in viewdidload override method.
-
-You can create an AutoComplete object by using the following code example.
-
-{% highlight C# %}  
-
-@interface ViewController ()
-
-{
-
-    SFAutoComplete *autocomplete;
-
-}
-
-
-- (void)viewDidLoad
-
-{
-
-    [super viewDidLoad];
-
-    autocomplete=[[ SFAutoComplete alloc]init];
-
-    [self.view addSubview:autocomplete];
-
-}
-
-{% endhighlight %}
-
-### Setting the AutoCompleteSource to AutoComplete
-
-You can set the suggestion list to the AutoComplete by using the property AutoCompleteSource.
-
-{% highlight C# %} 
-
--(NSMutableArray*) countryArray{
-
-    NSMutableArray * array= [NSMutableArray array];
-
-    [array addObject:[[AutoCompleteSource alloc]init:@"Afghanistan"]];
-
-    [array addObject:[[AutoCompleteSource alloc]init:@"Akrotiri"]];
-
-    [array addObject:[[AutoCompleteSource alloc]init:@"Albania"]];
-
-    [array addObject:[[AutoCompleteSource alloc]init:@"Algeria"]];
-
-}
-
-@property (nonatomic, strong) AutoCompleteSource *source;
-
-_source=[[AutoCompleteSource alloc]init];
-
-autoComplete1.autoCompleteSource=[_source countryArray];
-
- {% endhighlight %}
-
-
-
-### Setting AutoComplete Customizations
-
-
-
-AutoComplete is customized by setting the properties as explained in the following code example.
-
-{% highlight C# %}  
-
-_autoComplete1.suggestionMode=SFAutoCompleteSuggestionModeStartsWith;
-
-_autoComplete1.autoCompleteSource=[_source countryArray];
-
-_autoComplete1.tableViewStyle=UITableViewCellStyleDefault;
-
-_autoComplete1.watermark=@"Enter country name";
-
-_autoComplete1.autoCompleteMode=SFAutoCompleteAutoCompleteModeSuggest;
-
-_autoComplete1.popUpDelay = 100;
-
-{% endhighlight %}
-
+![](images/gettingstarted.png)

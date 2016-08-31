@@ -16,14 +16,15 @@ Vertical(Y) axis always uses numerical scale. Horizontal(X) axis supports the fo
 * Category
 * Numeric
 * Date time
+* Logarithmic Axis
 
 ## Category Axis
 
-
 Category axis displays text labels instead of numbers. 
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.PrimaryAxis >
 
@@ -31,25 +32,25 @@ Category axis displays text labels instead of numbers.
 
 </chart:SfChart.PrimaryAxis>
 
-
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.PrimaryAxis = new CategoryAxis();
 
-
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/CategoryAxis.png](axis_images/axis_img1.png)
+{% endtabs %}
+
+![](axis_images/axis_img1.png)
 
 ### Placing labels between ticks
 
-Labels in category axis can be placed between the ticks by setting `LabelPlacement` to `BetweenTicks`. Default value of `LabelPlacement` property is `OnTicks` i.e. labels will be placed on the ticks by default.
+Labels in category axis can be placed between the ticks by setting [`LabelPlacement`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CategoryAxis~LabelPlacement.html) to [`BetweenTicks`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.LabelPlacement.html). Default value of [`LabelPlacement`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CategoryAxis~LabelPlacement.html) property is [`OnTicks`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.LabelPlacement.html) i.e. labels will be placed on the ticks by default.
+
+{% tabs %} 
 
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.PrimaryAxis >
 
@@ -57,24 +58,25 @@ Labels in category axis can be placed between the ticks by setting `LabelPlaceme
 
 </chart:SfChart.PrimaryAxis>
 
-
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.PrimaryAxis = new CategoryAxis() { LabelPlacement = LabelPlacement.BetweenTicks };
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/CategoryTicks.png](axis_images/axis_img2.png)
+{% endtabs %}
+
+![](axis_images/axis_img2.png)
 
 ### Displaying labels after a fixed interval
 
-To display labels after a fixed interval n, you can set `Interval` property of ChartAxis as n. Default value of interval is 1 i.e. all the labels will be displayed by default.
+To display labels after a fixed interval n, you can set [`Interval`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CategoryAxis~Interval.html) property of ChartAxis as n. Default value of interval is 1 i.e. all the labels will be displayed by default.
+
+{% tabs %} 
 
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.PrimaryAxis >
 
@@ -82,26 +84,25 @@ To display labels after a fixed interval n, you can set `Interval` property of C
 
 </chart:SfChart.PrimaryAxis>
 
-
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.PrimaryAxis = new CategoryAxis() { Interval = 2, LabelPlacement = LabelPlacement.BetweenTicks };
 
-
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/CategoryInterval.png](axis_images/axis_img3.png)
+{% endtabs %}
 
+![](axis_images/axis_img3.png)
 
 ## Numeric Axis
 
 Numeric axis uses numerical scale and displays numbers as labels. 
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.PrimaryAxis >
 
@@ -109,24 +110,25 @@ Numeric axis uses numerical scale and displays numbers as labels.
 
 </chart:SfChart.PrimaryAxis>
 
-
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.PrimaryAxis = new NumericalAxis();
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/numerical-1.png](axis_images/axis_img4.png)
+{% endtabs %}
+
+![](axis_images/axis_img4.png)
 
 ### Customizing numeric range
 
-To customize the range of an axis, you can use the `Minimum` and `Maximum` properties of `NumericalAxis`. By default, nice range will be calculated automatically based on the provided data.
+To customize the range of an axis, you can use the [`Minimum`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.NumericalAxis~Minimum.html) and [`Maximum`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.NumericalAxis~Maximum.html) properties of [`NumericalAxis`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.NumericalAxis.html). By default, nice range will be calculated automatically based on the provided data.
+
+{% tabs %} 
 
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.SecondaryAxis >
 
@@ -137,20 +139,22 @@ To customize the range of an axis, you can use the `Minimum` and `Maximum` prope
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.SecondaryAxis = new NumericalAxis() { Minimum = 10, Maximum = 50 };
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/NumericRange.png](axis_images/axis_img5.png)
+{% endtabs %}
+
+![](axis_images/axis_img5.png)
 
 ### Customizing numeric interval
 
-Axis interval can be customized using the `Interval` property of ChartAxis. By default, nice interval will be calculated based on the minimum and maximum value of the provided data.
+Axis interval can be customized using the [`Interval`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.NumericalAxis~Interval.html) property of ChartAxis. By default, nice interval will be calculated based on the minimum and maximum value of the provided data.
+
+{% tabs %} 
 
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.SecondaryAxis >
 
@@ -161,17 +165,18 @@ Axis interval can be customized using the `Interval` property of ChartAxis. By d
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.SecondaryAxis = new NumericalAxis() { Interval = 10 };
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/Numeric-Interval.png](axis_images/axis_img6.png)
+{% endtabs %}
+
+![](axis_images/axis_img6.png)
 
 ### Apply padding to the range
 
-Padding can be applied to the minimum and maximum extremes of the axis range by using `RangePadding` property. Numeric axis supports the following types of padding.
+Padding can be applied to the minimum and maximum extremes of the axis range by using [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.NumericalAxis~RangePadding.html) property. Numeric axis supports the following types of padding.
 
 * None
 * Round
@@ -180,10 +185,11 @@ Padding can be applied to the minimum and maximum extremes of the axis range by 
 
 **None**
 
-When the value of `RangePadding` property is `None`, padding will not be applied to the axis. This is also the default value of `RangePadding` for horizontal axis.
+When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.NumericalAxis~RangePadding.html) property is [`None`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.NumericalPadding.html), padding will not be applied to the axis. This is also the default value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.NumericalAxis~RangePadding.html) for horizontal axis.
+
+{% tabs %} 
 
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.SecondaryAxis>
 
@@ -191,24 +197,25 @@ When the value of `RangePadding` property is `None`, padding will not be applied
 
 </chart:SfChart.SecondaryAxis>
 
-
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.SecondaryAxis = new NumericalAxis() { RangePadding = NumericalPadding.None };
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/NumericRangeNone.png](axis_images/axis_img7.png)
+{% endtabs %}
+
+![](axis_images/axis_img7.png)
 
 **Round**
 
-When the value of `RangePadding` property is `Round`, axis range will be rounded to the nearest possible value divided by the interval.
+When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.NumericalAxis~RangePadding.html) property is [`Round`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.NumericalPadding.html), axis range will be rounded to the nearest possible value divided by the interval.
+
+{% tabs %} 
 
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.SecondaryAxis>
 
@@ -219,20 +226,22 @@ When the value of `RangePadding` property is `Round`, axis range will be rounded
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.SecondaryAxis = new NumericalAxis() { RangePadding = NumericalPadding.Round };
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/NumericRangeRound.png](axis_images/axis_img8.png)
+{% endtabs %}
+
+![](axis_images/axis_img8.png)
 
 **Additional**
 
-When the value of `RangePadding` property is `Additional`, axis range will be rounded and an interval of the axis will be added as padding to the minimum and maximum values of the range.
+When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.NumericalAxis~RangePadding.html) property is [`Additional`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.NumericalPadding.html), axis range will be rounded and an interval of the axis will be added as padding to the minimum and maximum values of the range.
+
+{% tabs %} 
 
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.SecondaryAxis>
 
@@ -243,20 +252,22 @@ When the value of `RangePadding` property is `Additional`, axis range will be ro
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.SecondaryAxis = new NumericalAxis() { RangePadding = NumericalPadding.Additional };
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/NuericRangeAdditional.png](axis_images/axis_img9.png)
+{% endtabs %}
+
+![](axis_images/axis_img9.png)
 
 **Normal**
 
-When the value of `RangePadding` property is `Normal`, nice range will be calculated for the axis based on the best readability of the data. This is also the default for vertical axis.
+When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.NumericalAxis~RangePadding.html) property is [`Normal`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.NumericalPadding.html), nice range will be calculated for the axis based on the best readability of the data. This is also the default for vertical axis.
+
+{% tabs %} 
 
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.SecondaryAxis>
 
@@ -267,20 +278,22 @@ When the value of `RangePadding` property is `Normal`, nice range will be calcul
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.SecondaryAxis = new NumericalAxis() { RangePadding = NumericalPadding.Normal };
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis- clubbed/NumericRangNormal.png](axis_images/axis_img10.png)
+{% endtabs %}
+
+![](axis_images/axis_img10.png)
 
 ## Date Time Axis
 
 Date time axis uses date time scale and displays date time values as axis labels in specified format. 
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.PrimaryAxis >
 
@@ -291,20 +304,22 @@ Date time axis uses date time scale and displays date time values as axis labels
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.PrimaryAxis = new DateTimeAxis();
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/DateTime.png](axis_images/axis_img11.png)
+{% endtabs %}
+
+![](axis_images/axis_img11.png)
 
 ### Customizing date time range
 
-To customize the range of an axis, you can use the `Minimum` and `Maximum` properties of `DateTimeAxis`. By default, nice range will be calculated automatically based on the provided data.
+To customize the range of an axis, you can use the [`Minimum`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeAxis~Minimum.html) and [`Maximum`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeAxis~Maximum.html) properties of [`DateTimeAxis`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeAxis.html). By default, nice range will be calculated automatically based on the provided data.
+
+{% tabs %} 
 
 {% highlight xaml %}
-[XAML]
 
 Namespace:
 
@@ -349,17 +364,23 @@ xmlns:sys="clr-namespace:System;assembly=mscorlib"
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
-chart.PrimaryAxis = new DateTimeAxis() { Minimum = new DateTime(2010, 1, 1), Maximum = new DateTime(2015, 12, 30) };
+chart.PrimaryAxis = new DateTimeAxis() { 
+
+	Minimum = new DateTime(2010, 1, 1), 
+	Maximum = new DateTime(2015, 12, 30) 
+	
+};
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/DateTimeRange.png](axis_images/axis_img12.png)
+{% endtabs %}
+
+![](axis_images/axis_img12.png)
 
 ### Date time intervals
 
-Date time intervals can be customized using `Interval` and `IntervalType` properties of the `DateTimeAxis`. For example, setting `Interval` as 2 and `IntervalType` as `Years` will consider 2 years as interval.
+Date time intervals can be customized using [`Interval`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeAxis~Interval.html) and [`IntervalType`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeAxis~IntervalType.html) properties of the [`DateTimeAxis`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeAxis.html). For example, setting [`Interval`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeAxis~Interval.html) as 2 and [`IntervalType`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeAxis~IntervalType.html) as [`Years`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeIntervalType.html) will consider 2 years as interval.
 
 Essential Chart supports the following types of interval for date time axis
 
@@ -371,9 +392,9 @@ Essential Chart supports the following types of interval for date time axis
 * Seconds
 * Milliseconds
 
-{% highlight xaml %}
+{% tabs %} 
 
-[XAML]
+{% highlight xaml %}
 
 <chart:SfChart.PrimaryAxis>
 
@@ -392,17 +413,23 @@ Essential Chart supports the following types of interval for date time axis
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
-chart.PrimaryAxis = new DateTimeAxis() { IntervalType = DateTimeIntervalType.Months, Interval = 6 };
+chart.PrimaryAxis = new DateTimeAxis() { 
+
+	IntervalType = DateTimeIntervalType.Months, 
+	Interval = 6 
+	
+};
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/DateTimeInterval.png](axis_images/axis_img13.png)
+{% endtabs %}
+
+![](axis_images/axis_img13.png)
 
 ### Apply padding to the range
 
-Padding can be applied to the minimum and maximum extremes of the range by using `RangePadding` property. Date time axis supports the following types of padding:
+Padding can be applied to the minimum and maximum extremes of the range by using [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeAxis~RangePadding.html) property. Date time axis supports the following types of padding:
 
 * None
 * Round
@@ -410,10 +437,11 @@ Padding can be applied to the minimum and maximum extremes of the range by using
 
 **None**
 
-When the value of `RangePadding` property is `None`, padding will not be applied to the axis. This is also the default value of `RangePadding`.
+When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeAxis~RangePadding.html) property is [`None`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeRangePadding.html), padding will not be applied to the axis. This is also the default value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeAxis~RangePadding.html).
+
+{% tabs %} 
 
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.PrimaryAxis>
 
@@ -424,20 +452,22 @@ When the value of `RangePadding` property is `None`, padding will not be applied
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.PrimaryAxis = new DateTimeAxis() { RangePadding = DateTimeRangePadding.None };
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/DateTimeNone.png](axis_images/axis_img14.png)
+{% endtabs %}
+
+![](axis_images/axis_img14.png)
 
 **Round**
 
-When the value of `RangePadding` property is `round`, axis range will be rounded to the nearest possible date time value.
+When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeAxis~RangePadding.html) property is [`Round`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeRangePadding.html), axis range will be rounded to the nearest possible date time value.
+
+{% tabs %} 
 
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.PrimaryAxis >
 
@@ -448,20 +478,22 @@ When the value of `RangePadding` property is `round`, axis range will be rounded
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.PrimaryAxis = new DateTimeAxis() { RangePadding = DateTimeRangePadding.Round };
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/DateTimeRound.png](axis_images/axis_img15.png)
+{% endtabs %}
+
+![](axis_images/axis_img15.png)
 
 **Additional**
 
-When the value of `RangePadding` property is `Additional`, range will be rounded and date time interval of the axis will be added as padding to the minimum and maximum extremes of the range.
+When the value of [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeAxis~RangePadding.html) property is [`Additional`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeRangePadding.html), range will be rounded and date time interval of the axis will be added as padding to the minimum and maximum extremes of the range.
+
+{% tabs %} 
 
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.PrimaryAxis >
 
@@ -472,13 +504,107 @@ When the value of `RangePadding` property is `Additional`, range will be rounded
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.PrimaryAxis = new DateTimeAxis() { RangePadding = DateTimeRangePadding.Additional };
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/DateTimeAdditional.png](axis_images/axis_img16.png)
+{% endtabs %}
+
+![](axis_images/axis_img16.png)
+
+## Logarithmic Axis
+
+Logarithmic axis uses logarithmic scale and displays numbers as axis labels.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.SecondaryAxis>
+
+	<chart:LogarithmicAxis />
+
+</chart:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.SecondaryAxis = new LogarithmicAxis (); 
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](axis_images/logaxis_img1.png)
+
+### Customizing the logarithmic range
+
+To customize the range of log axis, you can use the [`Minimum`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.LogarithmicAxis~MinimumProperty.html) and [`Maximum`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.LogarithmicAxis~MaximumProperty.html) properties of [`LogarithmicAxis`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.LogarithmicAxis.html). By default, nice range will be calculated automatically based on the provided data.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.SecondaryAxis>
+
+	<chart:LogarithmicAxis >
+	
+		<chart:LogarithmicAxis.Minimum>
+			<x:Double>100</x:Double>
+		</chart:LogarithmicAxis.Minimum>
+		
+		<chart:LogarithmicAxis.Maximum>
+			<x:Double>10000</x:Double>
+		</chart:LogarithmicAxis.Maximum>
+		
+	</chart:LogarithmicAxis>
+	
+</chart:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.SecondaryAxis = new LogarithmicAxis() { 
+
+	Minimum = 100, 
+	Maximum = 10000 
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](axis_images/logaxis_img2.png)
+
+### Customizing the logarithmic base
+
+To customize the log base value, you can use [`LogarithmicBase`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.LogarithmicAxis~LogarithmicBaseProperty.html) property.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.SecondaryAxis>
+
+	<chart:LogarithmicAxis LogarithmicBase="2" />
+
+</chart:SfChart.SecondaryAxis>	
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.SecondaryAxis = new LogarithmicAxis() { LogarithmicBase = 2 };
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](axis_images/logaxis_img3.png)
 
 ## Common axis features
 
@@ -486,10 +612,11 @@ Customization of features such as axis title, labels, grid lines and tick lines 
 
 ### Axis Visibility
 
-Axis visibility can be controlled using the `IsVisible` property of axis. Default value of `IsVisible` property is `True`.
+Axis visibility can be controlled using the [`IsVisible`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~IsVisible.html) property of axis. Default value of [`IsVisible`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~IsVisible.html) property is `True`.
+
+{% tabs %} 
 
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.SecondaryAxis>
 
@@ -500,30 +627,32 @@ Axis visibility can be controlled using the `IsVisible` property of axis. Defaul
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.SecondaryAxis.IsVisible = false;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/AxisVisible.png](axis_images/axis_img17.png)
+{% endtabs %}
+
+![](axis_images/axis_img17.png)
 
 ### Axis title
 
-The `Title` property in axis provides options to customize the text and font of axis title. Axis does not display title by default. The title can be customized using following properties,
+The [`Title`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~Title.html) property in axis provides options to customize the text and font of axis title. Axis does not display title by default. The title can be customized using following properties,
 
-* `Text` – used to set the title for axis.
-* `TextColor` – used to change the color of the label.
-* `BackgroundColor` – used to change the label background color.
-* `BorderColor` – used to change the border color.
-* `BorderWidth` – used to change the width of the border.
-* `Font` – used to change the text size, font family and font weight.
-* `Margin` - used to change the margin size for labels.
+* [`Text`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisTitle~Text.html) – used to set the title for axis.
+* [`TextColor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisTitle~TextColor.html) – used to change the color of the label.
+* [`BackgroundColor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisTitle~BackgroundColor.html) – used to change the label background color.
+* [`BorderColor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisTitle~BorderColor.html) – used to change the border color.
+* [`BorderWidth`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisTitle~BorderWidth.html) – used to change the width of the border.
+* [`Font`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisTitle~Font.html) – used to change the text size, font family and font weight.
+* [`Margin`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisTitle~Margin.html) - used to change the margin size for labels.
 
 Following code snippet illustrates how to enable and customize the axis title.
 
+{% tabs %} 
+
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.PrimaryAxis>
 
@@ -550,7 +679,6 @@ Following code snippet illustrates how to enable and customize the axis title.
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.PrimaryAxis.Title.Text = "Month";
 
@@ -558,24 +686,26 @@ chart.PrimaryAxis.Title.TextColor = Color.Blue;
 
 chart.PrimaryAxis.Title.Font = Font.SystemFontOfSize(20, FontAttributes.Bold);
 
-
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/Axis-title.png](axis_images/axis_img18.png)
+{% endtabs %}
+
+![](axis_images/axis_img18.png)
 
 ### Label customization
 
-The `LabelStyle` property of axis provides options to customize the font-family, color, size and font-weight of axis labels. The axis labels can be customized using following properties:
+The [`LabelStyle`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~LabelStyle.html) property of axis provides options to customize the font-family, color, size and font-weight of axis labels. The axis labels can be customized using following properties:
 
-* `TextColor` – used to change the color of the labels.
-* `BackgroundColor` – used to change the label background color.
-* `BorderColor` – used to change the border color.
-* `BorderThickness` – used to change the thickness of the border.
-* `Font` – used to change the text size, font family and font weight.
-* `Margin` - used to change the margin size for labels.
+* [`TextColor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~TextColor.html) – used to change the color of the labels.
+* [`BackgroundColor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~BackgroundColor.html) – used to change the label background color.
+* [`BorderColor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~BorderColor.html) – used to change the border color.
+* [`BorderThickness`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~BorderThickness.html) – used to change the thickness of the border.
+* [`Font`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~Font.html) – used to change the text size, font family and font weight.
+* [`Margin`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~Margin.html) - used to change the margin size for labels.
+
+{% tabs %} 
 
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.PrimaryAxis>
 
@@ -602,7 +732,6 @@ The `LabelStyle` property of axis provides options to customize the font-family,
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.PrimaryAxis.LabelStyle.Font = Font.SystemFontOfSize(20, FontAttributes.Bold);
 
@@ -610,14 +739,17 @@ chart.PrimaryAxis.LabelStyle.TextColor = Color.Red;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/AxisLabelStyle.png](axis_images/axis_img19.png)
+{% endtabs %}
+
+![](axis_images/axis_img19.png)
 
 ### Label and tick positioning
 
-Axis labels and ticks can be positioned inside or outside the chart area by using `LabelStyle`.`LabelsPosition` and `TickPosition` properties of ChartAxis. By default labels and ticks will be positioned outside the chart area.
+Axis labels and ticks can be positioned inside or outside the chart area by using [`LabelStyle.LabelsPosition`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisLabelStyle~LabelsPositionProperty.html) and [`TickPosition`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~TickPosition.html) properties of ChartAxis. By default labels and ticks will be positioned outside the chart area.
+
+{% tabs %} 
 
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.PrimaryAxis >
 
@@ -636,7 +768,6 @@ Axis labels and ticks can be positioned inside or outside the chart area by usin
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.PrimaryAxis.LabelStyle.LabelsPosition = AxisElementPosition.Inside;
 
@@ -644,45 +775,50 @@ chart.PrimaryAxis.TickPosition = AxisElementPosition.Inside;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/AxisTick.png](axis_images/axis_img20.png)
+{% endtabs %}
+
+![](axis_images/axis_img20.png)
 
 ### Edge labels placement
 
-Labels with long text at the edges of an axis may appear partially outside the chart. The `EdgeLabelsDrawingMode` property can be used to avoid the partial appearance of labels at the corners.
+Labels with long text at the edges of an axis may appear partially outside the chart. The [`EdgeLabelsDrawingMode`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~EdgeLabelsDrawingMode.html) property can be used to avoid the partial appearance of labels at the corners.
+
+{% tabs %} 
 
 {% highlight xaml %}
-[XAML]
 
 <chart:CategoryAxis EdgeLabelsDrawingMode="Shift"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.PrimaryAxis.EdgeLabelsDrawingMode = EdgeLabelsDrawingMode.Shift;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/edgeLabel.png](axis_images/axis_img21.png)
+{% endtabs %}
+
+![](axis_images/axis_img21.png)
 
 ### Grid lines customization
 
-The `ShowMajorGridLines` and `ShowMinorGridLines` properties are used to control the visibility of grid lines. `MajorGridLineStyle` and `MinorGridLineStyle` properties in axis are used to customize the major grid lines and minor grid lines of an axis respectively. They provide options to change the width, dashes, color of grid lines. By default minor grid lines will not be visible. 
+The [`ShowMajorGridLines`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~ShowMajorGridLines.html) and [`ShowMinorGridLines`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RangeAxisBase~ShowMinorGridLines.html) properties are used to control the visibility of grid lines. [`MajorGridLineStyle`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~MajorGridLineStyle.html) and [`MinorGridLineStyle`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RangeAxisBase~MinorGridLineStyleProperty.html) properties in axis are used to customize the major grid lines and minor grid lines of an axis respectively. They provide options to change the width, dashes, color of grid lines. By default minor grid lines will not be visible. 
+
+{% tabs %} 
 
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.SecondaryAxis >
 
-	<chart:NumericalAxis ShowMajorGridLines="True" ShowMinorGridLines="True" MinorTicksPerInterval="1"/>
+	<chart:NumericalAxis ShowMajorGridLines="True" ShowMinorGridLines="True" 
+						 MinorTicksPerInterval="1"/>
 
 </chart:SfChart.SecondaryAxis >
 
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart. SecondaryAxis = new NumericalAxis ()
 
@@ -698,14 +834,17 @@ chart. SecondaryAxis = new NumericalAxis ()
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/AxisGridLine.png](axis_images/axis_img22.png)
+{% endtabs %}
+
+![](axis_images/axis_img22.png)
 
 ### Tick lines customization
 
-The `MajorTickStyle` and `MinorTickStyle` properties in axis are used to customize the major tick lines of an axis and minor tick lines of an axis respectively. They provide options to change the width, size, color and visibility of tick lines. By default minor tick lines will not be visible.
+The [`MajorTickStyle`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~MajorTickStyle.html) and [`MinorTickStyle`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RangeAxisBase~MinorTickStyle.html) properties in axis are used to customize the major tick lines of an axis and minor tick lines of an axis respectively. They provide options to change the width, size, color and visibility of tick lines. By default minor tick lines will not be visible.
+
+{% tabs %} 
 
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.SecondaryAxis >
 
@@ -730,7 +869,6 @@ The `MajorTickStyle` and `MinorTickStyle` properties in axis are used to customi
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 NumericalAxis numerical = new NumericalAxis();
 
@@ -754,14 +892,17 @@ chart.SecondaryAxis = numerical;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/AxisTickStyle.png](axis_images/axis_img23.png)
+{% endtabs %}
+
+![](axis_images/axis_img23.png)
 
 ### Inversing axis
 
-Axis can be inversed using the `IsInversed` property of axis. Default value of `IsInversed` property is `False`.
+Axis can be inversed using the [`IsInversed`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~IsInversed.html) property of axis. Default value of [`IsInversed`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~IsInversed.html) property is `False`.
+
+{% tabs %} 
 
 {% highlight c# %}
-[XAML]
 
 <chart:SfChart.SecondaryAxis >
 
@@ -772,20 +913,22 @@ Axis can be inversed using the `IsInversed` property of axis. Default value of `
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.SecondaryAxis.IsInversed = true;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/AxisInverse.png](axis_images/axis_img24.png)
+{% endtabs %}
+
+![](axis_images/axis_img24.png)
 
 ### Placing axes at the opposite side
 
-The `OpposedPosition` property of axis can be used to place the axis at the opposite side of its default position. Default value of `OpposedPosition` property is `False`. 
+The [`OpposedPosition`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~OpposedPosition.html) property of axis can be used to place the axis at the opposite side of its default position. Default value of [`OpposedPosition`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~OpposedPosition.html) property is `False`. 
+
+{% tabs %} 
 
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.SecondaryAxis >
 
@@ -796,20 +939,22 @@ The `OpposedPosition` property of axis can be used to place the axis at the oppo
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.SecondaryAxis.OpposedPosition = true;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/AxisOpposedposition.png](axis_images/axis_img25.png)
+{% endtabs %}
+
+![](axis_images/axis_img25.png)
 
 ### Maximum number of labels per 100 pixels
 
-By default, a maximum of 3 labels are displayed for each 100 pixels in axis. The maximum number of labels that should be present within 100 pixels length can be customized using the `MaximumLabels` property of an axis. This property is applicable only for automatic range calculation and will not work if you set value for `Interval` property of an axis.
+By default, a maximum of 3 labels are displayed for each 100 pixels in axis. The maximum number of labels that should be present within 100 pixels length can be customized using the [`MaximumLabels`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~MaximumLabelsProperty.html) property of an axis. This property is applicable only for automatic range calculation and will not work if you set value for [`Interval`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.NumericalAxis~Interval.html) property of an axis.
+
+{% tabs %} 
 
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.SecondaryAxis >
 
@@ -820,20 +965,22 @@ By default, a maximum of 3 labels are displayed for each 100 pixels in axis. The
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 Chart.SecondaryAxis.MaximumLabels = 5;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/AxisMaximumLab.png](axis_images/axis_img26.png)
+{% endtabs %}
+
+![](axis_images/axis_img26.png)
 
 ## Smart Axis Labels
 
-Axis labels may overlap with each other based on chart dimensions and label size. The `LabelsIntersectAction` property of axis is useful in avoiding the overlapping of axis labels with each other. Default value of `LabelsIntersectAction` is `None`. Other available values of `LabelsIntersectAction` are `MultipleRows` and `Hide`.
+Axis labels may overlap with each other based on chart dimensions and label size. The [`LabelsIntersectAction`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~LabelsIntersectAction.html) property of axis is useful in avoiding the overlapping of axis labels with each other. Default value of [`LabelsIntersectAction`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~LabelsIntersectAction.html) is [`None`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.AxisLabelsIntersectAction.html). Other available values of [`LabelsIntersectAction`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~LabelsIntersectAction.html) are [`MultipleRows`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.AxisLabelsIntersectAction.html) and [`Hide`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.AxisLabelsIntersectAction.html).
+
+{% tabs %} 
 
 {% highlight xaml %}
-[XAML]
 
 <chart:SfChart.PrimaryAxis >
 
@@ -844,10 +991,31 @@ Axis labels may overlap with each other based on chart dimensions and label size
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 chart.PrimaryAxis.LabelsIntersectAction = AxisLabelsIntersectAction.MultipleRows;
 
 {% endhighlight %}
 
-![D:/Chart UG/Xamarin/UG images/Xamarin UG Images/Merged UG Images/Axis1-clubbed/smartlabel.png](axis_images/axis_img27.png)
+{% endtabs %}
+
+![](axis_images/axis_img27.png)
+
+## Event
+
+**ActualRangeChanged**
+
+This event is triggered when the actual range of the axis is changed. The argument contains the following information.
+
+* [`ActualMinimum`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ActualRangeChangedEventArgs~ActualMinimum.html) - used to get or set the actual minimum value of the axis.
+* [`ActualMaximum`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ActualRangeChangedEventArgs~ActualMaximum.html) - used to get or set the actual maximum value of the axis.
+* [`VisibleMinimum`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ActualRangeChangedEventArgs~VisibleMinimum.html) - used to get or set the visible minimum value of the axis.
+* [`VisibleMaximum`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ActualRangeChangedEventArgs~VisibleMaximum.html) - used to get or set the visible maximum value of the axis.
+
+N> Actual range and visible range are similar unless the range is changed by specifying the [`ZoomPosition`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~ZoomPosition.html) and [`ZoomFactor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~ZoomFactor.html) properties or zoom the chart interactively. Visible range is always the range which you see visually in the screen.
+
+**LabelCreated**
+
+This event is triggered when the axis label is created. The argument contains the following information.
+
+* [`LabelContent`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisLabelEventArgs~LabelContent.html) - used to get or set the axis label content.
+* [`Position`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisLabelEventArgs~Position.html) - used to get the position of label.

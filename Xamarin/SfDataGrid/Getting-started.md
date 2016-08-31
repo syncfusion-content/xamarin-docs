@@ -74,26 +74,53 @@ In order to use export to excel and export to PDF functionalities of SfDataGrid,
 </tr>
 </table>
 
-Currently, an additional step is required for Windows Phone, Windows Phone 8.1, WinRT and iOS projects. You need to initialize the SfDataGridRenderer. 
+## Launching the SfDataGrid on each platform
 
-Call the `SfDataGridRenderer.Init()` in the MainPage constructor of the Windows Phone, Windows Phone 8.1 and WinRT projects as follows.
+To use SfDataGrid inside an application, each platform application must initialize the SfDataGrid renderer. This initialization step varies from platform to platform and is discussed in the following sections.
+
+### Android
+
+The Android lauches the SfDataGrid without any intialization and is enough to only initialize the Xamarin.Forms framework to launch the application.
+
+### iOS
+
+To launch the SfDataGrid in iOS, you need to call the `SfDataGridRenderer.Init()` in the `FinishedLaunching` overridden method of the AppDelegate class after the Xamarin.Forms framework initialization and before the LoadApplication is called, as demonstrated in the following code example:
+
+{% highlight c# %}
+public override bool FinishedLaunching(UIApplication app, NSDictionary options)
+{
+    …
+    global::Xamarin.Forms.Forms.Init ();
+    SfDataGridRenderer.Init();
+    LoadApplication (new App ());
+    …
+}
+{% endhighlight %} 
+
+### Universal Windows Platform (UWP)
+
+To launch the SfDataGrid in UWP, you need to call the `SfDataGridRenderer.Init()` in the `MainPage` constructor before the LoadApplication is called, as demonstrated in the following code example:
 
 {% highlight c# %}
 public MainPage()
 {
     …
     SfDataGridRenderer.Init();
+    LoadApplication (new App ());
     …
 }
 {% endhighlight %}
 
-Call the `SfDataGridRenderer.Init()` in the `FinishedLaunching` overridden method of the AppDelegate class in the iOS Project as follows.
+### Windows Phone 8.1 (WinRT), Windows Phone 8
+
+To launch the SfDataGrid in WindowsPhone or WinRT, you need to call the `SfDataGridRenderer.Init()` in the `MainPage` constructor before the LoadApplication is called, as demonstrated in the following code example:
 
 {% highlight c# %}
-public override bool FinishedLaunching(UIApplication app, NSDictionary options)
+public MainPage()
 {
     …
     SfDataGridRenderer.Init();
+    LoadApplication (new App ());
     …
 }
 {% endhighlight %}
@@ -393,3 +420,25 @@ Run the application to render the following output.
 SfDataGrid allows you to select the row/rows by setting the [SfDataGrid.SelectionMode](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectionMode.html) property. You can set the `SfDataGrid.SelectionMode` property to single, multiple, single deselect or none based on your requirements. Information about the row/rows selected can be tracked using [SfDataGrid.SelectedItem](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectedItem.html) and [SfDataGrid.SelectedItems](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectedItems.html) properties.
 
 You can handle the selection operations with the help of [SelectionChanging](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectionChanging_EV.html) and [SelectionChanged](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectionChanged_EV.html) events of the SfDataGrid.
+
+## Launching the SfDataGrid inside a StackLayout
+
+The StackLayout positions the child element one after the other, either horizontally or vertically in the order they were added. How much space the StackLayout will use depends on how the HorizontalOptions and VerticalOptions properties are set, but by default the StackLayout will try to use the entire screen.
+
+SfDataGrid control can be loaded inside any layout such as GridLayout, StackLayout etc. When you load SfDataGrid inside a StackLayout, you have to set the Horizontal and/or VerticalOptions of the SfDataGrid and its parent to “LayoutOptions.FillAndExpand” based on the orientation of the container in which SfDataGrid is loaded.
+
+Refer the following code example to load the SfDataGrid control inside a StackLayout. The VerticalOptions of the StackLayout and SfDataGrid alone is set as “FillAndExpand” as the default orientation of the StackLayout is vertical. In case, if the orientation of the StackLayout is horizontal, then you have to set the HorizontalOptions instead. In some case, you may have to set both the “VerticalOptions” and “HorizontalOptions” of the SfDataGrid based on its parent.
+
+{% highlight xaml %}
+<StackLayout VerticalOptions="FillAndExpand">
+    <SearchBar Placeholder="UserName" TextChanged="searchBar_TextChanged" />
+    <sfgrid:SfDataGrid x:Name="dataGrid"
+                       ColumnSizer="Star"
+                       ItemsSource="{Binding OrdersInfo}"
+                       VerticalOptions="FillAndExpand" />
+</StackLayout>
+{% endhighlight %}
+
+Refer the following screenshot for the final outcome 
+
+![](SfDataGrid_images/SfDataGrid-in-StackLayout.jpeg)

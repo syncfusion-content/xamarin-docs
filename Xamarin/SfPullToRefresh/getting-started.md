@@ -66,21 +66,21 @@ Refer to the following code to add the SfPullToRefresh control:
 
 {%highlight Xaml%}
 
-    <Page
-    x:Class="PullToRefresh.MainPage"
-    xmlns:syncfusion="using:Syncfusion.UI.Xaml.PullToRefresh">
+    <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+        xmlns:Syncfusion="clr-namespace:Syncfusion.SfPullToRefresh.XForms;assembly=Syncfusion.SfPullToRefresh.XForms">
 
-    <Grid x:Name="LayoutRoot">
-        <syncfusion:SfPullToRefresh />
-    </Grid> 
-    
-    </Page>
+            <Grid x:Name="LayoutRoot">
+                    <Syncfusion:SfPullToRefresh />
+            </Grid> 
+    </ContentPage>
 
 {%endhighlight%}
 
 {% highlight c# %}
 
     SfPullToRefresh pullToRefresh = new SfPullToRefresh();
+    this.Content = pullToRefresh;
 
 {% endhighlight %}
 
@@ -100,9 +100,9 @@ You can set the `pullableContent` for the `SfPullToRefresh` by adding the desire
 
 {%highlight Xaml%}
 
-    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" PullingThreshold="150" >
+    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" PullingThershold="150" >
         <syncfusion:SfPullToRefresh.PullableContent>
-            <Grid Background="#039be5" Name="controlView" >
+            <Grid BackgroundColor="#039be5" Name="controlView" >
             </Grid>
         </syncfusion:SfPullToRefresh.PullableContent>
     </syncfusion:SfPullToRefresh>

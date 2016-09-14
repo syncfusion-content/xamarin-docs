@@ -109,7 +109,7 @@ You can configure the Barcode control entirely in C# code or by using the XAML m
 
 Here, the following steps illustrates how to create and configure a barcode.
 
-1. Add reference to SFBarcode such as follows.
+1. Add reference to SfBarcode such as follows.
 
 
 {% tabs %}

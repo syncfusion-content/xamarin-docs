@@ -165,7 +165,7 @@ You can also add recursive appointments to Schedule, refer [Recurrence](/xamarin
     clientMeeting.StartTime = startTime;
     clientMeeting.EndTime = endTime;
     clientMeeting.Color = Color.Blue;
-    clientMeeting.Subject = “ClientMeeting”;
+    clientMeeting.Subject = ClientMeeting;
     clientMeeting.IsRecursive = true;
 
     RecurrenceProperties recurrenceProperties = new RecurrenceProperties();

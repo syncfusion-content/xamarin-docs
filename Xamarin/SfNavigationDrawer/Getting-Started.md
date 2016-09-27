@@ -395,4 +395,4 @@ SfNavigationDrawer navigationDrawer=new SfNavigationDrawer();
 
 The SfNavigationDrawer looks as follows
 
-![](images/Slide-on-top.png)
+![](images/getting-started.png)

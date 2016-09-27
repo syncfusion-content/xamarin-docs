@@ -1,12 +1,9 @@
 ---
-
-layout: post
-title:  Syncfusion SfSchedule control Getting Started for Xamarin.Forms
+title: Syncfusion SfSchedule control Getting Started for Xamarin.Forms
 description: A quick tour to initial users on Syncfusion SfSchedule control for Xamarin.Forms platform
 platform: xamarin
 control: SfSchedule
 documentation: ug
-
 ---
 
 
@@ -165,7 +162,7 @@ You can also add recursive appointments to Schedule, refer [Recurrence](/xamarin
     clientMeeting.StartTime = startTime;
     clientMeeting.EndTime = endTime;
     clientMeeting.Color = Color.Blue;
-    clientMeeting.Subject = ClientMeeting;
+    clientMeeting.Subject = "ClientMeeting";
     clientMeeting.IsRecursive = true;
 
     RecurrenceProperties recurrenceProperties = new RecurrenceProperties();

@@ -80,11 +80,11 @@ To use SfDataGrid inside an application, each platform application must initiali
 
 ### Android
 
-The Android lauches the SfDataGrid without any intialization and is enough to only initialize the Xamarin.Forms framework to launch the application.
+The Android launches the SfDataGrid without any initialization and is enough to only initialize the Xamarin.Forms Framework to launch the application.
 
 ### iOS
 
-To launch the SfDataGrid in iOS, you need to call the `SfDataGridRenderer.Init()` in the `FinishedLaunching` overridden method of the AppDelegate class after the Xamarin.Forms framework initialization and before the LoadApplication is called, as demonstrated in the following code example:
+To launch the SfDataGrid in iOS, you need to call the `SfDataGridRenderer.Init()` in the `FinishedLaunching` overridden method of the AppDelegate class after the Xamarin.Forms Framework initialization and before the LoadApplication is called, as demonstrated in the following code example:
 
 {% highlight c# %}
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
@@ -113,7 +113,7 @@ public MainPage()
 
 ### Windows Phone 8.1 (WinRT), Windows Phone 8
 
-To launch the SfDataGrid in WindowsPhone or WinRT, you need to call the `SfDataGridRenderer.Init()` in the `MainPage` constructor before the LoadApplication is called, as demonstrated in the following code example:
+To launch the SfDataGrid in Windows Phone or WinRT, you need to call the `SfDataGridRenderer.Init()` in the `MainPage` constructor before the LoadApplication is called, as demonstrated in the following code example:
 
 {% highlight c# %}
 public MainPage()

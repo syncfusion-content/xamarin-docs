@@ -227,6 +227,41 @@ chart.Legend.ToggleSeriesVisibility = true;
 
 {% endtabs %}
 
+## Legend visibility for particular series
+
+You can control the visibility of particular series legend item by using the [`IsVisibleOnLegend`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~IsVisibleOnLegendProperty.html) property of series. Default value of [`IsVisibleOnLegend`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~IsVisibleOnLegendProperty.html) property is True.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:ColumnSeries ItemsSource="{Binding ColumnData}" XBindingPath="Name" 
+				YBindingPath="Value" IsVisibleOnLegend="true" 
+				LegendIcon="Rectangle" Label="Gold" > 
+</chart:ColumnSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ColumnSeries column = new ColumnSeries();
+
+column.XBindingPath = "Name";
+
+column.YBindingPath = "Value";
+
+column.ItemsSource = viewModel.ColumnData;
+
+column.IsVisibleOnLegend = true;
+
+column.LegendIcon = ChartLegendIcon.Rectangle;
+
+column.Label = "Gold";
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Positioning the Legend
 
 You can position the legend anywhere inside the chart. Following properties are used to customize the legend positions.

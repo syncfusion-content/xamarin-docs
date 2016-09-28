@@ -2,7 +2,7 @@
 layout: post
 title: Syncfusion Overview of Syncfusion TreeMap control for Xamarin.Forms
 description: Overview and key features of TreeMap control
-platform: xamarin
+platform: Xamarin.Forms
 control: SfTreeMap
 documentation: ug
 ---

@@ -2,95 +2,85 @@
 layout: post
 title: AnimationTypes in Syncfusion SfBusyIndicator control for Xamarin.Forms
 description: Learn various animation types available in SfBusyIndicator
-platform: Xamarin.Forms
+platform: Xamarin
 control: BusyIndicator
 documentation: ug
 ---
-# AnimationType
+# Animation Type
 
-The `AnimationType` property allows you to choose one of the animation from the built-in animations supported.
+The `AnimationType` property for the SfBusyIndicator allows the user to set one of the 10 animations from the built-in animations.
 
 {% tabs %}
+
+{% highlight xaml %}
+
+	<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="Ball" Title="Loading..." BackgroundColor="Color.Blue"/>
+
+{% endhighlight %}
 
 {% highlight c# %}
 
 	SfBusyIndicator busyindicator = new SfBusyIndicator();
-	busyindicator.AnimationType=AnimationTypes.ECG;
+	busyindicator.AnimationType=AnimationTypes.Ball;
+	busyindicator.Title ="Loading…";
+	busyindicator.BackgroundColor= Color.Blue;
 	
-{% endhighlight %}
-
-{% highlight xaml %}
-
-	<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="ECG" />
-
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/Ball.png) 
+![](images/ball1.png)
 
-AnimationType - Ball
-{:.caption}
-
-![](images/Battery.png) 
-
-AnimationType - Battery
-{:.caption}
-
-![](images/DoubleCircle.png)
-
-AnimationType - DoubleCircle
-{:.caption}
-
-![](images/ECG.png) 
-
-AnimationType - ECG
-{:.caption}
-
-![](images/Globe.png) 
-
-AnimationType - Globe
+Busy Indicator with Ball type animation 
 {:.caption}
 
 ![](images/HorizontalPulsingBox.png) 
 
-AnimationType - HorizontalPulsingBox
+Busy Indicator with HorizontalPulsingBox type animation 
 {:.caption}
 
-![](images/MovieTimer.png) 
+![](images/rectangle.png) 
 
-AnimationType - MovieTimer
+Busy Indicator with Rectangle type animation 
+{:.caption}
+ 
+![](images/battery.png) 
+
+Busy Indicator with Battery type animation 
+{:.caption}
+ 
+![](images/globe.png) 
+
+Busy Indicator with Globe type animation 
+{:.caption}
+ 
+![](images/singlecircle.png) 
+
+Busy Indicator with SingleCircle type animation 
 {:.caption}
 
-![](images/Print.png)
+![](images/SlicedCircle.png) 
 
-AnimationType - Print
+Busy Indicator with SlicedCircle type animation 
 {:.caption}
+ 
+![](images/doublecircle.png) 
 
-![](images/Rectangle.png) 
-
-AnimationType - Rectangle
+Busy Indicator with DoubleCircle type animation 
 {:.caption}
+ 
+![](images/ecg.png) 
 
-![](images/RollingBall.png)
-
-AnimationType - RollingBall
+Busy Indicator with ECG type animation 
 {:.caption}
+ 
+![](images/print.png) 
 
-![](images/SingleCircle.png) 
-
-AnimationType - SingleCircle
-{:.caption}
-
-![](images/SlicedCircle.png)
-
-AnimationType - SlicedCircle
-{:.caption}
-
-![](images/ZoomingTarget.png)
-
-AnimationType - ZoomingTarget 
+Busy Indicator with Print type animation 
 {:.caption}
 
 
 
+
+
+ 

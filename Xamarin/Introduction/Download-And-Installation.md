@@ -54,14 +54,16 @@ The steps to install the Syncfusion Xamarin NuGet Packages in Visual Studio are 
 
 2. Select `NuGet Package Manager | Package Sources` and click `Add` button to add the `Package Name` and `Package Source` of Syncfusion NuGet Packages.    
 
-   **Name**: Name of the package that listed in Available package sources  
+   **Name**: Name of the package that listed in available package sources  
    **Source**: Syncfusion Xamarin NuGet Package feed URL 
    [http://nuget.syncfusion.com/xamarin](http://nuget.syncfusion.com/xamarin)
     
    ![](images/NuGetConfig2.jpeg)
 
    N> The `Source` text box in the above image denotes the location of the NuGet packages and the `Name` section, allows you to provide a unique name for NuGet Packages Source.
-    
+   You may face the NuGet package installation/restore error while installing the Syncfusion Xamarin NuGet packages if you have UWP project in your Xamarin Application. This issue occurred since some URL redirecting issue in NuGet Package Manager for UWP projects. To resolve this issue, use the below Syncfusion Xamarin NuGet feed link.
+   Syncfusion Xamarin NuGet Full Feed Link: [http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin/](http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin/)
+ 
 I> Syncfusion other platforms NuGet packages feed links are available [here](http://nuget.syncfusion.com/)
 
 ### NuGet Installation
@@ -91,6 +93,45 @@ Using the `Manage NuGet Packages` in Visual Studio, NuGet packages can be update
 4. Select NuGet Package in the list and click `Update`. When the update is complete, close and re-open all open instances of Visual Studio.
 
    N> By clicking `Update All` button, all NuGet packages are getting update. When the update is complete, close and re-open all open instances of Visual Studio.
+
+
+## Configuring Syncfusion NuGet packages from command line in Linux/MAC
+
+### NuGet Configuration
+
+1.	Download the latest NuGet executable from [here](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).  
+ 
+2.	Open the downloaded executable location in command window and run the following command,
+
+    mono nuget.exe Sources Add –Name [Source name] –Source [source location]
+
+      Ex: mono nuget.exe Add –Name “Syncfusion Source” –Source “http://nuget.syncfusion.com/xamarin"
+                                                                                  
+3.	Once the Source gets added successfully the confirmation message will be shown like below.
+
+    For Linux OS :
+
+    ![](images/NuGetConfig5.jpeg)
+
+    For MAC OS :
+     
+    ![](images/NuGetConfig6.jpeg)
+     
+### NuGet Installation
+
+Once the NuGet source has been added, then install the NuGet package which is available in that source by using following command.
+
+mono nuget.exe install [Package name] 
+
+For Ex: mono nuget.exe install “Syncfusion.Xamarin.Calcuate" 
+     
+For Linux OS :
+
+![](images/NuGetConfig7.jpeg)
+
+For MAC OS :
+
+![](images/NuGetConfig8.jpeg)
 
 
 ## Download directly from Website

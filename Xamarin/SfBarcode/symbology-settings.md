@@ -67,9 +67,9 @@ The `DataMatrixSetting` can be customized with the help of the following setting
 
 <table>
 <tr>
-<td>
-**Matrix** **Size**</td><td>
-**Description**</td></tr>
+<th>
+Matrix Size</th><th>
+Description</th></tr>
 <tr>
 <td>
 Auto</td><td>
@@ -216,9 +216,9 @@ The `QRCode` symbology can be customized by using the following settings.
 
 <table>
 <tr>
-<td>
-**QRVersion**</td><td>
-**Description**</td></tr>
+<th>
+QRVersion</th><th>
+Description</th></tr>
 <tr>
 <td>
 Version01</td><td>
@@ -385,9 +385,9 @@ Measures 177 x 177 modules</td></tr>
 
 <table>
 <tr>
-<td>
-**Error** **Correction** **Level**</td><td>
-**Recovery** **Capacity** **%** **(**approx**.)**</td></tr>
+<th>
+Error Correction Level</th><th>
+Recovery Capacity % (approx.)</th></tr>
 <tr>
 <td>
 Low</td><td>
@@ -410,9 +410,9 @@ High</td><td>
 
 <table>
 <tr>
-<td>
-**Input** **Mode**</td><td>
-**Possible** **characters**</td></tr>
+<th>
+Input Mode</th><th>
+Possible characters</th></tr>
 <tr>
 <td>
 NumericMode</td><td>

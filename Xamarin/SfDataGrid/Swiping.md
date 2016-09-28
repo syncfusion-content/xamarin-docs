@@ -260,7 +260,7 @@ public partial class Swiping : SamplePage
 
 The following screenshot shows the final outcome upon execution of the above code where swiping towards right loads two views in the template to edit and delete a row respectively.
 
-![](Swiping_images/Swiping_img2.jpeg)
+![](SfDataGrid_images/Swiping_img2.jpeg)
 
 N> Similarly you can load the two views using the `SfDataGrid.RightSwipeTemplate` which when swiping towards left will result in the below outcome.
 

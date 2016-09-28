@@ -1,12 +1,9 @@
 ---
-
-layout: post
 title: Localization in Syncfusion SfSchedule control for Xamarin.Forms
 description: Learn how to Localize the SfSchedule control
 platform: xamarin
 control: SfSchedule
 documentation: ug
-
 ---
 
 

@@ -2,7 +2,7 @@
 layout: post
 title: Overview of Syncfusion NumericTextBox control for Xamarin.Forms
 description: Overview and key features of NumericTextBox control
-platform: Xamarin.Forms
+platform: Xamarin
 control: NumericTextBox
 documentation: ug
 ---

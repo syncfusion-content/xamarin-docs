@@ -2,7 +2,7 @@
 layout: post
 title: Overview of Syncfusion NumericUpDown control for Xamarin.Forms
 description: Overview and Key features of NumericUpDown control
-platform: Xamarin.Forms
+platform: Xamarin
 control: NumericUpDown
 documentation: ug
 ---

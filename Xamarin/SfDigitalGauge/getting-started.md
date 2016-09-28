@@ -9,27 +9,9 @@ documentation: ug
 
 # Getting Started
 
-This section provides overview for working with Essential DigitalGauge for Xamarin.Forms. You can walk through the entire process of creating an DigitalGauge.
+This section explains you the steps to configure a SfDigitalGauge control in a real-time scenario and also provides a walk-through on some of the customization features available in it.
 
-![](Getting-Started_images/gettingstarted.png)
-
-## Referencing Essential Studio Components in Your Solution	
-
-If you had acquired Essential Studio components through the Xamarin component store interface from within your IDE, then after adding the components to your Xamarin.iOS, Xamarin.Android and Windows Phone projects through the Component manager, you will still need to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL project in your solution. You can do this by manually adding the relevant PCL assembly references to your PCL project contained in the following path inside of your solution folder.
-
-Components/syncfusionessentialstudio-version/lib/pcl/
-
-Alternatively if you had downloaded Essential Studio from Syncfusion.com or through the Xamarin store web interface then all assembly references need to be added manually.
-
-After installing Essential Studio for Xamarin, all the required assemblies can be found in the installation folders, typically
-
-{Syncfusion Installed location}\Essential Studio\syncfusionessentialstudio-version\lib
-
-Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\lib
-
-Or after downloading through the Xamarin store web interface, all the required assemblies can be found in the below folder
-
-{Download location}\syncfusionessentialstudio-version\lib
+## Add SfDigitalGauge
 
 You can then add the assembly references to the respective projects as shown below
 
@@ -44,31 +26,27 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>Android</td>
-<td>android\Syncfusion.SfGauge.Android.dll<br/>android\Syncfusion.SfGauge.XForms.Android.dll</td>
-</tr>
-<tr>
-<td>iOS (Classic)</td>
-<td>ios\Syncfusion.SfGauge.iOS.dll<br/>ios\Syncfusion.SfGauge.XForms.iOS.dll<br/>ios\Syncfusion.SfGauge.XForms.dll</td>
+<td>android\Syncfusion.SfGauge.Android.dll<br/>android\Syncfusion.SfGauge.XForms.Android.dll<br/>android\Syncfusion.SfGauge.XForms.dll</td>
 </tr>
 <tr>
 <td>iOS (Unified)</td>
-<td>ios-unified\Syncfusion.SfGauge.iOS.dll<br/>ios-unified\Syncfusion.SfGauge.XForms.iOS.dll<br/>ios-unified\Syncfusion.SfGauge.XForms.dll</td>
+<td>iOS-unified\Syncfusion.SfGauge.iOS.dll<br/>iOS-unified\Syncfusion.SfGauge.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfGauge.XForms.dll</td>
 </tr>
 <tr>
 <td>Windows Phone</td>
-<td>wp8\Syncfusion.SfGauge.WP8.dll<br/>wp8\Syncfusion.SfGauge.XForms.dll<br/>wp8\Syncfusion.SfGauge.XForms.WinPhone.dll</td>
+<td>wp8\Syncfusion.SfInput.WP8.dll<br/>wp8\Syncfusion.SfShared.WP8.dll<br/>wp8\Syncfusion.SfGauge.XForms.dll<br/>wp8\Syncfusion.SfGauge.XForms.WinPhone.dll</td>
 </tr>
 <tr>
 <td>Windows Phone 8.1</td>
-<td>wp81\Syncfusion.SfGauge.WP.dll<br/>wp81\Syncfusion.SfGauge.XForms.dll<br/>wp81\Syncfusion.SfGauge.XForms.WinPhone.dll</td>
+<td>wp81\Syncfusion.SfInput.WP.dll<br/>wp81\Syncfusion.SfShared.WP.dll<br/>wp81\Syncfusion.SfGauge.XForms.dll<br/>wp81\Syncfusion.SfGauge.XForms.WinPhone.dll</td>
 </tr>
 <tr>
 <td>WinRT</td>
-<td>winrt\Syncfusion.SfGauge.WinRT.dll<br/>winrt\Syncfusion.SfGauge.XForms.dll<br/>winrt\Syncfusion.SfGauge.XForms.WinRT.dll</td>
+<td>winrt\Syncfusion.SfInput.WinRT.dll<br/>winrt\Syncfusion.SfShared.WinRT.dll<br/>winrt\Syncfusion.SfGauge.XForms.dll<br/>winrt\Syncfusion.SfGauge.XForms.WinRT.dll</td>
 </tr>
 <tr>
 <td>UWP</td>
-<td>uwp\Syncfusion.SfGauge.UWP.dll<br/>uwp\Syncfusion.SfGauge.XForms.dll<br/>uwp\Syncfusion.SfGauge.XForms.UWP.dll</td>
+<td>uwp\Syncfusion.SfInput.UWP.dll<br/>uwp\Syncfusion.SfShared.UWP.dll<br/>uwp\Syncfusion.SfGauge.XForms.dll<br/>uwp\Syncfusion.SfGauge.XForms.UWP.dll</td>
 </tr>
 </table>
 
@@ -76,45 +54,45 @@ Currently an additional step is required for Windows Phone, Windows Phone 8.1 an
 
 Create an instance of SfDigitalGaugeRenderer in MainPage constructor of the Windows Phone and Windows Phone 8.1 project as shown 
 
+{% tabs %}
+
 {% highlight C# %}
 
 public MainPage()
-
 {
-
     new SfDigitalGaugeRenderer();
-
-    ...    
-
 }
 
 {% endhighlight %}
 
+{% endtabs %}
+
 Create an instance of SfDigitalGaugeRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below
+
+{% tabs %}
 
 {% highlight C# %}
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
-
 {
-
-    ...
-
     new SfDigitalGaugeRenderer ();
-
-    ...
-
 }	
 
 {% endhighlight %}
 
-## Add and Configure the DigitalGauge
+{% endtabs %}
 
-The DigitalGauge control is configured entirely in C# code or by using XAML markup. The following steps explain on how to create a DigitalGauge and configure its elements,
+The SfDigitalGauge control is configured entirely in C# code or by using XAML markup. The following steps explain on how to create a SfDigitalGauge and configure its elements.
 
-* Adding reference to DigitalGauge.
+* Adding namespace for the added assemblies. 
 
 {% tabs %}
+
+{% highlight xaml %}
+
+	<xmlns:gauge="clr-namespace:Syncfusion.SfGauge.XForms;assembly=Syncfusion.SfGauge.XForms"/>
+
+{% endhighlight %}
 
 {% highlight C# %}
 
@@ -122,75 +100,95 @@ The DigitalGauge control is configured entirely in C# code or by using XAML mark
 
 {% endhighlight %}
 
-{% highlight xaml %}
-
-	xmlns:gauge="clr-namespace:Syncfusion.SfGauge.XForms;assembly=Syncfusion.SfGauge.XForms"
-
-{% endhighlight %}
-
 {% endtabs %}
 
-* Create an instance for DigitalGauge control.
+* Now add the SfDigitalGauge control with a required optimal name by using the included namespace.
 
 {% tabs %}
 
-{% highlight C# %}
-
-	SfDigitalGauge sfdigitalgauge = new SfDigitalGauge(); 
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
-	<gauge:SfDigitalGauge />
+	<gauge:SfDigitalGauge x:Name="digitalgauge" />
 	
 {% endhighlight %}
 
-{% endtabs %}
+{% highlight C# %}
 
-* Configure the properties of DigitalGauge.
-
-{% tabs %}
-
-{% highlight c# %}
-
-	SfDigitalGauge sfDigitalGauge = new SfDigitalGauge ();
-	sfDigitalGauge.Value =  DateTime.Now.ToString ("HH mm ss");
-	sfDigitalGauge.CharacterHeight = 50;
-	sfDigitalGauge.CharacterWidth= 25;
-	sfDigitalGauge.SegmentStrokeWidth = 3;
-	sfDigitalGauge.CharacterType = CharacterType.SegmentSeven;
-	sfDigitalGauge.DimmedSegmentAlpha = 30;
-	sfDigitalGauge.BackgroundColor = Color.FromRgb (235, 235, 235);
-	sfDigitalGauge.CharacterStrokeColor = Color.FromRgb (20,108,237);
-	sfDigitalGauge.DimmedSegmentColor = Color.FromRgb (20,108,237);
+	SfDigitalGauge digitalgauge = new SfDigitalGauge(); 
 
 {% endhighlight %}
+
+{% endtabs %}
+
+## Set Value
+
+SfDigitalGauge provides option to display special characters or display values through the `Value` property.
+
+{% tabs %}
 
 {% highlight xaml %}
 
-	<gauge:SfDigitalGauge x:Name="sfdigitalgauge" SegmentStrokeWidth="3" CharacterHeight="50" CharacterWidth="25" CharacterType="SegmentSeven" DimmedSegmentAlpha="30" />
+	<gauge:SfDigitalGauge x:Name="digitalgauge" Value="1 2 3 4" />
 
 {% endhighlight %}
-
-{% endtabs %}
-
-## Setting Value
-
-* The `Value` property sets the display value in the DigitalGauge.
-
-{% tabs %}
 
 {% highlight C# %}
 
-    sfDigitalGauge.Value =  DateTime.Now.ToString ("HH mm ss");
-
-{% endhighlight %}
-
-{% highlight xaml %}
-
-	<gauge:SfDigitalGauge x:Name="sfdigitalgauge" Value="HH mm ss" />
+    digitalgauge.Value =  "1 2 3 4";
 
 {% endhighlight %}
 
 {% endtabs %}
+
+## Set Segments
+
+The Digital Characters can be drawn in 4 different segments.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+	<gauge:SfDigitalGauge x:Name="digitalgauge" Value="1 2 3 4" CharacterType="SegmentSeven" />
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+	digitalgauge.Value = "1 2 3 4";
+	digitalgauge.CharacterType = CharacterType.SegmentSeven;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Configuring properties
+
+Character Height, Width and Stroke Thickness which is used to display the Characters can be customized as in the below code snippets.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+	<gauge:SfDigitalGauge x:Name="digitalgauge" SegmentStrokeWidth="3" CharacterHeight="50" CharacterWidth="25" CharacterType="SegmentSeven" DisabledSegmentAlpha="30" />
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+	SfDigitalGauge digitalgauge = new SfDigitalGauge ();
+	digitalgauge.Value ="1 2 3 4";
+	digitalgauge.CharacterHeight = 50;
+	digitalgauge.CharacterWidth= 25;
+	digitalgauge.SegmentStrokeWidth = 3;
+	digitalgauge.CharacterType = CharacterType.SegmentSeven;
+	digitalgauge.DisabledSegmentAlpha = 30;
+	digitalgauge.BackgroundColor = Color.FromRgb (235, 235, 235);
+	digitalgauge.CharacterStrokeColor = Color.FromRgb (20,108,237);
+	digitalgauge.DisabledSegmentColor = Color.FromRgb (20,108,237);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+![](Getting-Started_images/gettingstarted.png)

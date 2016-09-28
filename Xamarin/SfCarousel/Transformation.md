@@ -1,0 +1,104 @@
+---
+layout : post
+title : Transformation in Syncfusion Carousel control in Xamarin.Forms
+description : Learn how to set the Rotation Angle and Offset in Carousel for Xamarin.Forms
+platform : Xamarin
+control : Carousel
+documentation : ug
+---
+
+# Transformation
+
+The Offset between selected and unselected item can be customized in SfCarousel control. And also the items can be scaled to the specified value.
+
+## Tilt Non Selected Items
+
+The `RotationAngle` property in the SfCarousel control is used to tilt all the unselected items in a specified angle. 
+
+N> If the angle value is positive, then the rotation is in the clockwise direction. If the angle value is negative, the rotation is in the counterclockwise direction. 
+
+{% tabs %}
+
+{% highlight xaml %}
+
+	<carousel:SfCarousel x:Name="carousel" RotationAngle="90" />
+	
+{% endhighlight %}
+
+{% highlight C# %}
+
+	carousel.RotationAngle=90;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](images/rotationangle.png)
+
+
+## Set Gap between Unselected Items
+
+The `Offset` property is used to specify the accurate distance between unselected items in SfCarousel panel.  
+
+N> The default value is 20.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+	<carousel:SfCarousel x:Name="carousel" Offset="30" />
+	
+{% endhighlight %}
+
+{% highlight C# %}
+
+	carousel.Offset=30;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](images/offset.png)
+
+## Set Gap between Selected Item
+
+Distance between the selected item and other items can be customized by using `SelectedItemOffset` property of the SfCarousel control.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+	<carousel:SfCarousel x:Name="carousel" SelectedItemOffset="5" />
+	
+{% endhighlight %}
+
+{% highlight C# %}
+
+	carousel.SelectedItemOffset=5;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Set Scaling for Carousel Items
+
+The `ScaleOffset` property in the SfCarousel control is used to scale all the items to the specified scale value.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+	<carousel:SfCarousel x:Name="carousel" ScaleOffset="0.7" />
+	
+{% endhighlight %}
+
+{% highlight C# %}
+	
+	carousel.ScaleOffset=0.7f;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](images/scaleoffset.png)
+

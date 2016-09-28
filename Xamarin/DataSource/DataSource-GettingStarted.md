@@ -6,30 +6,45 @@ platform: xamarin
 control: DataSource
 documentation: UG
 ---
+
 # DataSource
+
 ## Overview
+
 DataSource is a non UI component that consumes raw data and processes data operations such as sorting, filtering and grouping saving developers’ time and efforts in building the functionality themselves. We can apply DataSource to any data bound control which can be further processed using the bound DataSource.
-
+
 ![](DataSource-GettingStarted_images/datasource.png)
+
 ## Getting started 
+
 ### Assembly deployment
+
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the following installation folders,
 {Syncfusion Essential Studio Installed location}\Essential Studio\{Syncfusion release version}\lib
-***Note: Assemblies can be found in unzipped package location in Mac***
+
+N> Assemblies can be found in unzipped package location in Mac
+
 Add the following assemblies to the pcl project as shown below:
+
 **PCL project:**
-{% tabs %}
-{% highlight c# %}
+
+<table>
+<tr>
+<td>
 pcl\Syncfusion.DataSource.Portable.dll
-{% endhighlight %}
-{% endtabs %}
+</td>
+</tr>
+</table>
+
 ## Creating your first DataSource in Xamarin.Forms
+
 * This is how the final output will look like on iOS, Android and Windows Phone devices. You can also download the entire source code of this demo from [here](http://files2.syncfusion.com/Xamarin.Forms/Samples/DataSourceForms_GettingStarted.zip).
 
 ![](DataSource-GettingStarted_images/gettingstarted.png)
 
-* Create new **BlankApp** (Xamarin.Forms.Portable) application in**Xamarin Studio** or **Visual Studio**.
-* Now, create a simple data source as shown in the following code example. Add the following code example in a newly created class file and save it as **Contacts.cs**file.
+* Create new **BlankApp** (Xamarin.Forms.Portable) application in **Xamarin Studio** or **Visual Studio**.
+* Now, create a simple data source as shown in the following code example. Add the following code example in a newly created class file and save it as **Contacts.cs** file.
+
 {% tabs %}
 {% highlight c# %}
 public class Contacts : INotifyPropertyChanged
@@ -66,7 +81,9 @@ public class Contacts : INotifyPropertyChanged
 }
 {% endhighlight %}
 {% endtabs %}
-* Add the following code example in a newly created class file and save it as **ContactList.cs**file.
+
+* Add the following code example in a newly created class file and save it as **ContactList.cs** file.
+
 {% tabs %}
 {% highlight c# %}
 public class ContactsList : ObservableCollection<Contacts>, INotifyPropertyChanged
@@ -102,7 +119,8 @@ public class ContactsList : ObservableCollection<Contacts>, INotifyPropertyChang
 }
 {% endhighlight %}
 {% endtabs %}
-* You can set the source of the DataSource by using the **`**DataSource.Source` property as follows. Now you can bind the DataSource.DisplayItems as ItemsSource for any data bound control.
+
+* You can set the source of the DataSource by using the `DataSource.Source` property as follows. Now you can bind the `DataSource.DisplayItems` as ItemsSource for any data bound control.
 
 {% tabs %}
 {% highlight c# %}
@@ -114,26 +132,36 @@ public App()
 }
 {% endhighlight %}
 {% endtabs %}
+
 ## Sorting
-DataSource also allows to sort the bound source by using the `DataSource.SortDescriptors` property**.**  You can create a `SortDescriptor` for the property to be sorted and add it in the `DataSource.SortDescriptors` collection. 
+
+DataSource also allows to sort the bound source by using the `DataSource.SortDescriptors` property.  You can create a `SortDescriptor` for the property to be sorted and add it in the `DataSource.SortDescriptors` collection. 
 SortDescriptor object holds following three properties:
+
 * PropertyName: Name of the sorted property.
 * Direction: An object of type `ListSortDirection` defines the sorting direction.
 * Comparer: Comparer to be applied in when sorting take place
+
  The following code illustrates this.
+ 
 {% tabs %}
 {% highlight c# %}
 [C#]
 dataSource.SortDescriptors.Add(new SortDescriptor("ContactName"));
 {% endhighlight %}
 {% endtabs %}
+
 ## Grouping
-DataSource also allows to sort the bound source by using the `DataSource.GroupDescriptors` property**.**  You can create a `GroupDescriptor` for the property to be grouped and add it in the `DataSource.GroupDescriptors` collection. 
-GroupDescriptor object holds following two properties:
+
+DataSource also allows to sort the bound source by using the `DataSource.GroupDescriptors` property. You can create a `GroupDescriptor` for the property to be grouped and add it in the `DataSource.GroupDescriptors` collection. 
+`GroupDescriptor` object holds following two properties:
+
 * PropertyName: Name of the grouped property.
-* KeySelector: Sets the key selector for grouping
+* KeySelector: Sets the `KeySelector` for grouping
 * Comparer: Comparer to be applied in when sorting take place
-The following code example illustrates this without Key Selector.
+
+The following code example illustrates this without `KeySelector`.
+
 {% tabs %}
 {% highlight c# %}
 [C#]
@@ -141,7 +169,9 @@ dataSource.GroupDescriptors.Add(new GroupDescriptor("ContactName"));
 
 {% endhighlight %}
 {% endtabs %}
-The following code example illustrates this with Key Selector.
+
+The following code example illustrates this with `KeySelector`.
+
 {% tabs %}
 {% highlight c# %}
 [C#]
@@ -157,7 +187,9 @@ The following code example illustrates this with Key Selector.
 
 {% endhighlight %}
 {% endtabs %}
+
 ## Binding DataSource to a ListView
+
 Please refer the below code example that illustrates binding the created DataSource to a ListView control.
 {% tabs %}
 {% highlight c# %}
@@ -211,6 +243,7 @@ public App()
     Device.OnPlatform(iOS:() => MainPage.Padding = new Thickness(0, 20, 0, 0));
 }
 
+//Will be executed only in grouping case. Existing view in view cell will be replaced by label.
 private void ViewCell_BindingContextChanged(object sender, EventArgs e)
 {
     var viewCell = sender as ViewCell;

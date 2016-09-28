@@ -136,13 +136,6 @@ SfDataGrid allows you to customize the width of each GridColumn in the [SfDataGr
 Customizing the width for auto generated columns in both XAML and code behind as shown below.
 
 {% tabs %}
-{% highlight c# %}
-void dataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e){
-if (e.Column.MappingName == "OrderID") {
-    e.Column.Width = 100;
-    }
-}
-{% endhighlight %}
 {% highlight xaml %}
 <sfgrid:SfDataGrid x:Name="dataGrid"
                    AutoGenerateColumns="false"
@@ -151,6 +144,13 @@ if (e.Column.MappingName == "OrderID") {
                              Width="100"/>
       </sfgrid:SfDataGrid.Columns > 
   </sfgrid:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+void dataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e){
+if (e.Column.MappingName == "OrderID") {
+    e.Column.Width = 100;
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -161,11 +161,11 @@ GridTextColumn is derived from GridColumn and hence it inherits all the properti
 The following code example creates GridTextColumn.
 
 {% tabs %}
-{% highlight c# %}
-dataGrid.Columns.Add(new GridTextColumn() { MappingName = "OrderID" });
-{% endhighlight %}
 {% highlight xaml %}
 <syncfusion:GridTextColumn MappingName="OrderID" /> 
+{% endhighlight %}
+{% highlight c# %}
+dataGrid.Columns.Add(new GridTextColumn() { MappingName = "OrderID" });
 {% endhighlight %}
 {% endtabs %}
 
@@ -178,6 +178,12 @@ SfDataGrid allows you to format the value displayed in the GridColumn by using t
 The following code example shows you how to apply formatting for a GridTextColumn.
 
 {% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid.Columns>
+    <syncfusion:GridTextColumn MappingName="Freight" Format="C" />
+    <syncfusion:GridTextColumn MappingName="ShippingDate" Format="dd/MM/yyyy" />
+</syncfusion:SfDataGrid.Columns> 
+{% endhighlight %}
 {% highlight c# %}
 dataGrid.Columns.Add (new GridTextColumn () { 
     MappingName = "Freight",
@@ -188,12 +194,6 @@ dataGrid.Columns.Add (new GridTextColumn () { 
     MappingName = "ShippingDate",
     Format = "dd/MM/yyyy"
 });
-{% endhighlight %}
-{% highlight xaml %}
-<syncfusion:SfDataGrid.Columns>
-    <syncfusion:GridTextColumn MappingName="Freight" Format="C" />
-    <syncfusion:GridTextColumn MappingName="ShippingDate" Format="dd/MM/yyyy" />
-</syncfusion:SfDataGrid.Columns> 
 {% endhighlight %}
 {% endtabs %}
 
@@ -260,11 +260,11 @@ GridSwitchColumn is derived from GridColumn, and hence it inherits all the prope
 The following code example shows how to use GridSwitchColumn.
  
 {% tabs %}
-{% highlight c# %}
-dataGrid.Columns.Add(new GridSwitchColumn() { MappingName = "IsClosed" }); 
-{% endhighlight %}
 {% highlight xaml %}
 <syncfusion:GridSwitchColumn MappingName="IsClosed" />  
+{% endhighlight %}
+{% highlight c# %}
+dataGrid.Columns.Add(new GridSwitchColumn() { MappingName = "IsClosed" }); 
 {% endhighlight %}
 {% endtabs %}
 
@@ -276,11 +276,11 @@ GridImageColumn is derived from GridColumn, and hence it inherits all the proper
 The following code example shows how to use GridImageColumn.
  
 {% tabs %}
-{% highlight c# %}
-dataGrid.Columns.Add(new GridImageColumn() { MappingName = "DealerImage" });  
-{% endhighlight %}
 {% highlight xaml %}
 <syncfusion:GridImageColumn MappingName="DealerImage" />  
+{% endhighlight %}
+{% highlight c# %}
+dataGrid.Columns.Add(new GridImageColumn() { MappingName = "DealerImage" });  
 {% endhighlight %}
 {% endtabs %}
 

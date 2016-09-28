@@ -24,14 +24,6 @@ SfDataGrid also allows to perform sorting from the code. This requires you to ma
 The following code example illustrates this.
 
 {% tabs %}
-{% highlight c# %}
-dataGrid.AllowSorting = true;
-
-dataGrid.SortColumnDescriptions.Add (new SortColumnDescription () {
-    ColumnName = "OrderID",
-    SortDirection = ListSortDirection.Descending
-}); 
-{% endhighlight %}
 {% highlight xaml %}
 <syncfusion:SfDataGrid x:Name="dataGrid"
             ItemsSource="{Binding OrdersInfo}">
@@ -41,6 +33,14 @@ dataGrid.SortColumnDescriptions.Add (new SortColumnDescription () {
                                           SortDirection="Descending" />
         </syncfusion:SfDataGrid.SortColumnDescriptions>
     </syncfusion:SfDataGrid> 
+{% endhighlight %}
+{% highlight c# %}
+dataGrid.AllowSorting = true;
+
+dataGrid.SortColumnDescriptions.Add (new SortColumnDescription () {
+    ColumnName = "OrderID",
+    SortDirection = ListSortDirection.Descending
+}); 
 {% endhighlight %}
 {% endtabs %}
 
@@ -55,11 +55,11 @@ In addition to sort the data in ascending / descending orders, SfDataGrid also a
 The following code example shows how to enable Tri-State sorting in SfDataGrid.
 
 {% tabs %}
-{% highlight c# %}
-dataGrid.AllowTriStateSorting = true;
-{% endhighlight %}
 {% highlight xaml %}
 <syncfusion:SfDataGrid AllowTriStateSorting="True" />
+{% endhighlight %}
+{% highlight c# %}
+dataGrid.AllowTriStateSorting = true;
 {% endhighlight %}
 {% endtabs %}
 
@@ -71,11 +71,11 @@ SfDataGrid allows you to sort the data against more than one columns by setting 
 The following code example shows how to enable multi-sorting in SfDataGrid.
 
 {% tabs %}
-{% highlight c# %}
-dataGrid.AllowMultiSorting = true;
-{% endhighlight %}
 {% highlight xaml %}
 <syncfusion:SfDataGrid AllowMultiSorting="True" />
+{% endhighlight %}
+{% highlight c# %}
+dataGrid.AllowMultiSorting = true;
 {% endhighlight %}
 {% endtabs %}
 
@@ -95,15 +95,15 @@ These two events are triggered with `DataGridSortColumnsChangingEventArgs` and [
 The following code example illustrates how to hook the `SortColumnsChanging` event and cancel the sorting of a column.
 
 {% tabs %}
-{% highlight c# %}
-dataGrid.SortColumnsChanging += DataGrid_SortColumnsChanging; 
-{% endhighlight %}
 {% highlight xaml %}
 <syncfusion:SfDataGrid x:Name="dataGrid"
             AllowSorting="True"
             SortColumnsChanging="DataGrid_SortColumnsChanging"
             ItemsSource="{Binding OrdersInfo}">
 </syncfusion:SfDataGrid> 
+{% endhighlight %}
+{% highlight c# %}
+dataGrid.SortColumnsChanging += DataGrid_SortColumnsChanging; 
 {% endhighlight %}
 {% endtabs %}
 
@@ -130,17 +130,6 @@ A `SortComparer` object has the following properties:
 The following code example illustrates how to perform custom sorting for FirstName column based on the string length of the names.
 
 {% tabs %}
-{% highlight c# %}
-dataGrid.SortComparers.Add (new SortComparer () {
-    PropertyName = "FirstName",
-    Comparer = new CustomComparer()
-});
-
-dataGrid.SortColumnDescriptions.Add (new SortColumnDescription () {
-    ColumnName = "FirstName",
-    SortDirection = ListSortDirection.Descending
-}); 
-{% endhighlight %}
 {% highlight xaml %}
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -174,6 +163,17 @@ dataGrid.SortColumnDescriptions.Add (new SortColumnDescription () {
         </syncfusion:SfDataGrid.SortColumnDescriptions>
     </syncfusion:SfDataGrid>
 </ContentPage> 
+{% endhighlight %}
+{% highlight c# %}
+dataGrid.SortComparers.Add (new SortComparer () {
+    PropertyName = "FirstName",
+    Comparer = new CustomComparer()
+});
+
+dataGrid.SortColumnDescriptions.Add (new SortColumnDescription () {
+    ColumnName = "FirstName",
+    SortDirection = ListSortDirection.Descending
+}); 
 {% endhighlight %}
 {% endtabs %}
 

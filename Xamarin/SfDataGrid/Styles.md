@@ -14,10 +14,6 @@ SfDatagrid allows you to apply style to all of its elements by writing a Style c
 The following example explains you how to apply custom style to SfDatagrid.
 
 {% tabs %}
-{% highlight c# %}
-//Apply custom style to SfDataGrid from code
-dataGrid.GridStyle = new Dark ();
-{% endhighlight %}
 {% highlight xaml %}
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -35,6 +31,10 @@ dataGrid.GridStyle = new Dark ();
                 GridStyle="{StaticResource dark}"
                 ItemsSource="{Binding OrdersInfo}" />
 </ContentPage> 
+{% endhighlight %}
+{% highlight c# %}
+//Apply custom style to SfDataGrid from code
+dataGrid.GridStyle = new Dark ();
 {% endhighlight %}
 {% endtabs %}
 

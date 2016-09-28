@@ -32,37 +32,6 @@ N>The `SfDataPager.PageSize` property should not be assigned with a value of 0.
 
 The following code example illustrates using `SfDataPager` with the SfDataGrid control.
 {% tabs %}
-{% highlight c# %}
-
-public partial class MainPage : ContentPage
-{
-    SfDataGrid sfGrid = new SfDataGrid();
-    SfDataPager sfPager = new SfDataPager();
-    ViewModel viewModel = new ViewModel();
-    public MainPage()
-    {
-        InitializeComponent();
-        sfPager.PageSize = 15;  //Setting the number of rows in a page        
-        sfPager.Source = viewModel.Info;  //Setting data source to SfDataPager
-        sfGrid.ItemsSource = sfPager.PagedSource;  //Setting ItemsSource to SfDataGrid
-        sfGrid.ColumnSizer = ColumnSizer.Star;
-
-        Grid myGrid = new Grid();
-        myGrid.HorizontalOptions = LayoutOptions.FillAndExpand;
-
-        myGrid.RowDefinitions = new RowDefinitionCollection
-        {
-          new RowDefinition { Height = 50 },
-          new RowDefinition {},    
-        };
-        myGrid.Children.Add(sfPager, 0, 0);
-        myGrid.Children.Add(sfGrid, 0, 1);
-        this.Content = myGrid;
-    }
-}
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 <local:SamplePage x:Class="SampleBrowser.Paging"
@@ -107,6 +76,36 @@ public partial class MainPage : ContentPage
     </Grid> 
   </local:SamplePage.ContentView>
 </local:SamplePage>
+
+{% endhighlight %}
+{% highlight c# %}
+
+public partial class MainPage : ContentPage
+{
+    SfDataGrid sfGrid = new SfDataGrid();
+    SfDataPager sfPager = new SfDataPager();
+    ViewModel viewModel = new ViewModel();
+    public MainPage()
+    {
+        InitializeComponent();
+        sfPager.PageSize = 15;  //Setting the number of rows in a page        
+        sfPager.Source = viewModel.Info;  //Setting data source to SfDataPager
+        sfGrid.ItemsSource = sfPager.PagedSource;  //Setting ItemsSource to SfDataGrid
+        sfGrid.ColumnSizer = ColumnSizer.Star;
+
+        Grid myGrid = new Grid();
+        myGrid.HorizontalOptions = LayoutOptions.FillAndExpand;
+
+        myGrid.RowDefinitions = new RowDefinitionCollection
+        {
+          new RowDefinition { Height = 50 },
+          new RowDefinition {},    
+        };
+        myGrid.Children.Add(sfPager, 0, 0);
+        myGrid.Children.Add(sfGrid, 0, 1);
+        this.Content = myGrid;
+    }
+}
 
 {% endhighlight %}
 {% endtabs %}

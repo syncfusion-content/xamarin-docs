@@ -24,11 +24,6 @@ SfDataGrid also allows to perform grouping from the code by defining the [GroupC
 The following code example illustrates how to apply grouping by a column in SfDataGrid.
 
 {% tabs %}
-{% highlight c# %}
-    dataGrid.GroupColumnDescriptions.Add (new GroupColumnDescription () {
-    ColumnName = "CustomerID",
-}); 
-{% endhighlight %}
 {% highlight xaml %}
 <syncfusion:SfDataGrid x:Name="dataGrid"
             ItemsSource="{Binding OrdersInfo}">
@@ -37,6 +32,11 @@ The following code example illustrates how to apply grouping by a column in SfDa
         <syncfusion:GroupColumnDescription ColumnName="CustomerID" />
     </syncfusion:SfDataGrid.GroupColumnDescriptions>
 </syncfusion:SfDataGrid> 
+{% endhighlight %}
+{% highlight c# %}
+    dataGrid.GroupColumnDescriptions.Add (new GroupColumnDescription () {
+    ColumnName = "CustomerID",
+}); 
 {% endhighlight %}
 {% endtabs %}
 
@@ -51,12 +51,6 @@ SfDataGrid allows you to group a column based on custom logic when the standard 
 The following code example illustrates how to set the custom grouping converter for the group description that is added to group the Freight column.
 
 {% tabs %}
-{% highlight c# %}
-dataGrid.GroupColumnDescriptions.Add (new GroupColumnDescription () {
-    ColumnName = "Freight",
-    Converter = new GroupConverter()
-}); 
-{% endhighlight %}
 {% highlight xaml %}
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -83,6 +77,12 @@ dataGrid.GroupColumnDescriptions.Add (new GroupColumnDescription () {
         </syncfusion:SfDataGrid.GroupColumnDescriptions>
     </syncfusion:SfDataGrid>
 </ContentPage> 
+{% endhighlight %}
+{% highlight c# %}
+dataGrid.GroupColumnDescriptions.Add (new GroupColumnDescription () {
+    ColumnName = "Freight",
+    Converter = new GroupConverter()
+}); 
 {% endhighlight %}
 {% endtabs %}
 
@@ -124,6 +124,15 @@ public class GroupConverter : IValueConverter
 In SfDataGrid a column will be generated with the default column width by default. In order to group by a column that should not be visible in view, add the column to the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~Columns.html) collection and set its width as 0. Thus the column will be grouped and will not be visually seen. Please refer the below code example.
 
 {% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid.Columns>
+    <syncfusion:GridTextColumn MappingName="ShippingDate" Width="0" />
+</syncfusion:SfDataGrid.Columns>
+
+<syncfusion:SfDataGrid.GroupColumnDescriptions>
+    <syncfusion:GroupColumnDescription ColumnName="ShippingDate" />
+</syncfusion:SfDataGrid.GroupColumnDescriptions> 
+{% endhighlight %}
 {% highlight c# %}
 dataGrid.Columns.Add (new GridTextColumn () { 
     MappingName = "ShippingDate",
@@ -133,14 +142,5 @@ dataGrid.Columns.Add (new GridTextColumn () { 
 dataGrid.GroupColumnDescriptions.Add (new GroupColumnDescription () { 
     ColumnName = "ShippingDate"
 });
-{% endhighlight %}
-{% highlight xaml %}
-<syncfusion:SfDataGrid.Columns>
-    <syncfusion:GridTextColumn MappingName="ShippingDate" Width="0" />
-</syncfusion:SfDataGrid.Columns>
-
-<syncfusion:SfDataGrid.GroupColumnDescriptions>
-    <syncfusion:GroupColumnDescription ColumnName="ShippingDate" />
-</syncfusion:SfDataGrid.GroupColumnDescriptions> 
 {% endhighlight %}
 {% endtabs %}

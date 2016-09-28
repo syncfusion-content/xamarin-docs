@@ -45,19 +45,6 @@ You can display summary information in row by setting `GridSummaryRow.ShowSummar
 The following code example illustrates how to declare the summaries in SfDataGrid in code behind and XAML.
 
 {% tabs %}
-{% highlight c# %}
-GridSummaryRow summaryRow = new GridSummaryRow();
-summaryRow.Title = "Total Items:{CaptionSummary}";
-summaryRow.ShowSummaryInRow = false;
-summaryRow.SummaryColumns.Add{new GridSummaryColumn()
-{
-    Name="CaptionSummary",
-    MappingName="Percentage",
-    Format="Count-({Sum:c})",
-    SummaryType=SummaryType.DoubleAggregate
-});
-sfgrid.CaptionSummaryRow= summaryRow;
-{% endhighlight %}
 {% highlight xaml %}
 <sfgrid:SfDataGrid.CaptionSummaryRow>
    <sfgrid:GridSummaryRow Title="Total Items :{CaptionSummary}" 
@@ -71,6 +58,19 @@ sfgrid.CaptionSummaryRow= summaryRow;
       </sfgrid:GridSummaryRow.SummaryColumns>
    </sfgrid:GridSummaryRow>
 </sfgrid:SfDataGrid.CaptionSummaryRow>
+{% endhighlight %}
+{% highlight c# %}
+GridSummaryRow summaryRow = new GridSummaryRow();
+summaryRow.Title = "Total Items:{CaptionSummary}";
+summaryRow.ShowSummaryInRow = false;
+summaryRow.SummaryColumns.Add{new GridSummaryColumn()
+{
+    Name="CaptionSummary",
+    MappingName="Percentage",
+    Format="Count-({Sum:c})",
+    SummaryType=SummaryType.DoubleAggregate
+});
+sfgrid.CaptionSummaryRow= summaryRow;
 {% endhighlight %}
 {% endtabs %}
 
@@ -107,19 +107,6 @@ To know more about the string format values click [here](http://msdn.microsoft.c
 The following code example illustrates how to declare the summaries in SfDataGrid in code behind and XAML.
 
 {% tabs %}
-{% highlight c# %}
-GridSummaryRow summaryRow = new GridSummaryRow();
-summaryRow.Title = "Total Items:{CaptionSummary}";
-summaryRow.ShowSummaryInRow = false;
-summaryRow.SummaryColumns.Add{new GridSummaryColumn()
-{
-    Name="CaptionSummary",
-    MappingName="Percentage",
-    Format="Count-({Sum:c})",
-    SummaryType=SummaryType.DoubleAggregate
-});
-sfgrid.CaptionSummaryRow= summaryRow;
-{% endhighlight %}
 {% highlight xaml %}
 <sfgrid:SfDataGrid.CaptionSummaryRow>
    <sfgrid:GridSummaryRow Title="Total Items :{CaptionSummary}" 
@@ -133,6 +120,19 @@ sfgrid.CaptionSummaryRow= summaryRow;
       </sfgrid:GridSummaryRow.SummaryColumns>
    </sfgrid:GridSummaryRow>
 </sfgrid:SfDataGrid.CaptionSummaryRow>
+{% endhighlight %}
+{% highlight c# %}
+GridSummaryRow summaryRow = new GridSummaryRow();
+summaryRow.Title = "Total Items:{CaptionSummary}";
+summaryRow.ShowSummaryInRow = false;
+summaryRow.SummaryColumns.Add{new GridSummaryColumn()
+{
+    Name="CaptionSummary",
+    MappingName="Percentage",
+    Format="Count-({Sum:c})",
+    SummaryType=SummaryType.DoubleAggregate
+});
+sfgrid.CaptionSummaryRow= summaryRow;
 {% endhighlight %}
 {% endtabs %}
 

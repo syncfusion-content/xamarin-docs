@@ -42,7 +42,9 @@ You can load any type of custom view inside `SfDataGrid.RowDragDropTemplate` ba
 
 Refer the following code example that shows how to load row like view in template.
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight xaml %}
 
 <sfgrid:SfDataGrid.RowDragDropTemplate>
     <DataTemplate>
@@ -124,6 +126,8 @@ public class RowTemplate : Grid
 }
 
 {% endhighlight %}
+
+{% endtabs %}
 
 <table>
 <tr>

@@ -54,7 +54,7 @@ navigationDrawer.Toggled += (object sender,Syncfusion.SfNavigationDrawer.XForms.
 
 ## How to add burger icon to toggle menu.?
 
-By default NavigationDrawer does not provide toggle button. This can be created and customised as per the application's requirement.
+By default NavigationDrawer does not provide toggle button. This can be created and customized as per the application's requirement.
 
 {% tabs %}
 
@@ -129,3 +129,25 @@ In few screens user may find difficult to drag the drawer from the edge, in such
 {% endhighlight %}
 
 {% endtabs %}
+
+## How to modify animation speed of the sliding drawer.?
+
+The animation speed can be varied by changing the duration of the animation using `Duration` property
+{% tabs %}
+
+{% highlight xaml %}
+
+ 	<navigation:SfNavigationDrawer x:Name="navigationDrawer" Duration="300">
+ 
+ 
+{% endhighlight %}
+
+{% highlight C# %}
+
+	navigationDrawer.Duration= 300;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> The duration is mentioned in milli seconds.

@@ -150,4 +150,4 @@ The animation speed can be varied by changing the duration of the animation usin
 
 {% endtabs %}
 
-N> The duration is mentioned in milli seconds.
+N> The duration is mentioned in milliseconds.

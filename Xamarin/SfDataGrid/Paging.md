@@ -131,7 +131,7 @@ The following code example illustrates how to load data for the DataPager contro
 private void OnDemandPageLoading(object sender, OnDemandLoadingEventArgs args)
 {
    sfDataPager.LoadDynamicItems(args.StartIndex, source.Skip(args.StartIndex).Take(args.PageSize));
-}
+}
 {% endhighlight %}
 
 
@@ -142,11 +142,11 @@ When you use `OnDemandPaging`, `SfDataPager.PagedSource` loads only the current 
 The following code example illustrates how to use ResetCache method:
 
 {% highlight c# %}
-private void OnDemandPageLoading(object sender, OnDemandLoadingEventArgs args)
+private void OnDemandPageLoading(object sender, OnDemandLoadingEventArgs args)
 {
   sfDataPager.LoadDynamicItems(args.StartIndex, source.Skip(args.StartIndex).Take(args.PageSize));
   (sfDataPager.PagedSource as PagedCollectionView).ResetCache();
-}
+}
 {% endhighlight %}
 
 ## AppearanceManager
@@ -155,21 +155,6 @@ SfDatagrid allows you to change the appearance by writing a Style class overridi
   
 The following example explains you how to apply custom style to SfDatagrid.
 {% tabs %}
-{% highlight c# %}
-
-public partial class MainPage : ContentPage
-{
-    public MainPage()
-    {
-        InitializeComponent();
-        this.dataGrid.ItemsSource = sfDataPager.PagedSource;
-        // Apply the custom appearance to SfDataPager
-        this.sfDataPager.AppearanceManager = new CustomAppearance();
-    }
-}
-
-{% endhighlight %}
-
 {% highlight xaml %}
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -207,6 +192,18 @@ public partial class MainPage : ContentPage
     </sfDataPager:SfDataPager>
   </Grid>
 </ContentPage>
+{% endhighlight %}
+{% highlight c# %}
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        this.dataGrid.ItemsSource = sfDataPager.PagedSource;
+        // Apply the custom appearance to SfDataPager
+        this.sfDataPager.AppearanceManager = new CustomAppearance();
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 

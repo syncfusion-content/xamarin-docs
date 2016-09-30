@@ -86,16 +86,16 @@ dataGrid.AllowMultiSorting = true;
 The following code example shows how to set `SortTapAction` is `DoubleTap` in SfDataGrid.
 
 {% tabs %}
-{% highlight c# %}
-
-dataGrid.SortTapAction=SortTapAction.DoubleTap;
-
-{% endhighlight %}
 {% highlight xaml %}
 <syncfusion:SfDataGrid x:Name="dataGrid"
             SortTapAction="DoubleTap"
             ItemsSource="{Binding OrdersInfo}">
     </syncfusion:SfDataGrid> 
+{% endhighlight %}
+{% highlight c# %}
+
+dataGrid.SortTapAction=SortTapAction.DoubleTap;
+
 {% endhighlight %}
 {% endtabs %}
 

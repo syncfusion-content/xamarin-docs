@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Column Drag and Drop | SfDataGrid | Xamarin | Syncfusion
-description: How to perform column drag and drop and its customization.
-platform: xamarin.Forms
+description: How to enable and perform row drag and drop operation and its customization.
+platform: xamarin
 control: SfDataGrid
 documentation: UG
 ---
@@ -11,7 +11,18 @@ documentation: UG
 
 SfDataGrid allows you to drag and drop a column header by setting the `SfDataGrid.AllowDraggingColumn` property to `true`. Drag view is displayed while dragging a column header. The drag and drop operation can be handled based on the requirement using `SfDataGrid QueryColumnDragging` event. 
 
-## Column Drag and Drop Event
+The following code example shows how to enable column drag and drop in SfDataGrid. 
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid AllowDraggingColumn="True" />
+{% endhighlight %}
+{% highlight c# %}
+dataGrid.AllowDraggingColumn = true;
+{% endhighlight %}
+{% endtabs %}
+
+## Column drag and drop event
 
 `QueryColumnDragging` event is fired upon starting to drag a column and will be continuously fired till the dragging ends. By handing the `SfDataGrid.QueryColumnDragging ` event you can also cancel the dragging of a particular column header.
 
@@ -28,7 +39,7 @@ The `QueryColumnDragging` event provides following properties in `QueryColumnDr
 
 ## How to 
 
-### Disable dropping when dragging over particular columns
+### Disable dragging for particular column 
 
 Dragging can be cancelled for particular column by handling `QueryColumnDragging` event and using conditions based on `QueryColumnDraggingReason`. Refer following code sample to disable dragging for particular column.
 

@@ -9,27 +9,9 @@ documentation: ug
 
 # Getting Started
 
-This section explains you the steps to configure a RangeSlider control in a real-time scenario and also provides a walk-through on some of the customization features available in RangeSlider control.
+This section explains you the steps to configure a SfRangeSlider control in a real-time scenario and also provides a walk-through on some of the customization features available in SfRangeSlider control.
 
-![](images/RangeSlider.png)
-
-## Referencing Essential Studio Components in Your Solution	
-
-If you had acquired Essential Studio components through the Xamarin component store interface from within your IDE, then after adding the components to your Xamarin.iOS, Xamarin.Android and Windows Phone projects through the Component manager, you will still need to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL project in your solution. You can do this by manually adding the relevant PCL assembly references to your PCL project contained in the following path inside of your solution folder.
-
-Components/syncfusionessentialstudio-version/lib/pcl/
-
-Alternatively if you had downloaded Essential Studio from Syncfusion.com or through the Xamarin store web interface then all assembly references need to be added manually.
-
-After installing Essential Studio for Xamarin, all the required assemblies can be found in the installation folders, typically
-
-{Syncfusion Installed location}\Essential Studio\syncfusionessentialstudio-version\lib
-
-Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\lib
-
-Or after downloading through the Xamarin store web interface, all the required assemblies can be found in the below folder
-
-{Download location}\syncfusionessentialstudio-version\lib
+## Add SfRangeSlider
 
 You can then add the assembly references to the respective projects as shown below
 
@@ -44,11 +26,11 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>Android</td>
-<td>android\Syncfusion.SfRangeSlider.Android.dll<br/>android\Syncfusion.SfRangeSlider.XForms.Android.dll</td>
+<td>android\Syncfusion.SfRangeSlider.Android.dll<br/>android\Syncfusion.SfRangeSlider.XForms.Android.dll<br/>android\Syncfusion.SfRangeSlider.XForms.dll</td>
 </tr>
 <tr>
 <td>iOS (Unified)</td>
-<td>ios-unified\Syncfusion.SfRangeSlider.iOS.dll<br/>ios-unified\Syncfusion.SfRangeSlider.XForms.iOS.dll<br/>ios-unified\Syncfusion.SfRangeSlider.XForms.dll</td>
+<td>iOS-unified\Syncfusion.SfRangeSlider.iOS.dll<br/>iOS-unified\Syncfusion.SfRangeSlider.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfRangeSlider.XForms.dll</td>
 </tr>
 <tr>
 <td>Windows Phone</td>
@@ -60,7 +42,7 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>UWP</td>
-<td>uwp\Syncfusion.SfRangeSlider.UWP.dll<br/>uwp\Syncfusion.SfRangeSlider.XForms.dll<br/>uwp\Syncfusion.SfRangeSlider.XForms.UWP.dll</td>
+<td>uwp\Syncfusion.SfInput.UWP.dll<br/>uwp\Syncfusion.SfShared.UWP.dll<br/>uwp\Syncfusion.SfRangeSlider.XForms.dll<br/>uwp\Syncfusion.SfRangeSlider.XForms.UWP.dll</td>
 </tr>
 </table>
 
@@ -68,43 +50,43 @@ Currently an additional step is required for Windows Phone, Windows Phone 8.1 an
 
 Create an instance of SfRangeSliderRenderer in MainPage constructor of the Windows Phone and Windows Phone 8.1 project as shown 
 
+{% tabs %}
+
 {% highlight C# %}
 
 public MainPage()
-
 {
-
     new SfRangeSliderRenderer();
-
-    ...    
-
 }
 
 {% endhighlight %}
 
+{% endtabs %}
+
 Create an instance of SfRangeSliderRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below
+
+{% tabs %}
 
 {% highlight C# %}
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
-
 {
-
-    ...
-
     new SfRangeSliderRenderer ();
-
-    ...
-
 }	
 
 {% endhighlight %}
 
-## Add and Configure the RangeSlider
+{% endtabs %}
 
-* Adding reference to RangeSlider.
+* Adding namespace for the added assemblies. 
 
 {% tabs %}
+
+{% highlight xaml %}
+
+	<xmlns:range="clr-namespace:Syncfusion.SfRangeSlider.XForms;assembly=Syncfusion.SfRangeSlider.XForms"/>
+	
+{% endhighlight %}
 
 {% highlight c# %}
 
@@ -112,17 +94,17 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% endhighlight %}
 
-{% highlight xaml %}
-
-	xmlns:range="clr-namespace:Syncfusion.SfRangeSlider.XForms;assembly=Syncfusion.SfRangeSlider.XForms"
-	
-{% endhighlight %}
-
 {% endtabs %}
 
-* Create an instance of SfRangeSlider.
+* Now instantiate and add the SfRangeSlider control with a required optimal name.
 
 {% tabs %}
+
+{% highlight xaml %}
+
+	<range:SfRangeSlider x:Name="rangeSlider"/>
+	
+{% endhighlight %}
 
 {% highlight c# %}
 
@@ -131,29 +113,15 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 	
 {% endhighlight %}
 
-{% highlight xaml %}
-
-	<range:SfRangeSlider />
-	
-{% endhighlight %}
-
 {% endtabs %}
 
-## Setting Range
+## Set Range
 
-The `RangeStart` and `RangeEnd` properties can be set to denote the start range and end range values while dual thumb is used. 
+SfRangeSlider provides option to set single thumb and double thumb. While setting the double thumb, each thumb value can be set using `RangeStart` and `RangeEnd` properties.
 
 N> The `ShowRange` property is used to switch between a single thumb and double thumb. 
 
 {% tabs %}
-
-{% highlight c# %}
-
-	rangeSlider.RangeEnd=20; 
-	rangeSlider.RangeStart=4;
-	rangeSlider.ShowRange=true; 
-
-{% endhighlight %}
 
 {% highlight xaml %}
 
@@ -161,25 +129,39 @@ N> The `ShowRange` property is used to switch between a single thumb and double 
 	
 {% endhighlight %}
 
+{% highlight c# %}
+
+SfRangeSlider rangeSlider=new SfRangeSlider();
+	rangeSlider.RangeEnd=20; 
+	rangeSlider.RangeStart=4;
+	rangeSlider.ShowRange=true; 
+	this.Content = rangeSlider;
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ## Restricting Values
 
-Set the minimum and maximum value for the slider by using the `Minimum` and `Maximum` properties in the RangeSlider.
+SfRangeSlider provides option to restrict slider range between minimum and maximum values. Following code explains how to set the range using `Minimum` and `Maximum` properties in the SfRangeSlider.
 
 {% tabs %}
-
-{% highlight c# %}
-
-	rangeSlider.Minimum=0; 
-	rangeSlider.Maximum=24; 
-
-{% endhighlight %}
 
 {% highlight xaml %}
 
 	<range:SfRangeSlider x:Name="rangeslider" Minimum="0" Maximum="24"/>
 	
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfRangeSlider rangeSlider=new SfRangeSlider();
+	rangeSlider.RangeEnd=20; 
+	rangeSlider.RangeStart=4;
+	rangeSlider.ShowRange=true; 
+	rangeSlider.Minimum=0; 
+	rangeSlider.Maximum=24; 
+	this.Content = rangeSlider;
 {% endhighlight %}
 
 {% endtabs %}
@@ -190,24 +172,25 @@ The movement of the thumb can be varied in different ways. This is achieved by s
 
 {% tabs %}
 
-{% highlight c# %}
-
-	rangeSlider.SnapsTo=SnapsTo.Ticks; 
-	rangeSlider.StepFrequency=6;
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	<range:SfRangeSlider x:Name="rangeslider" SnapsTo="Ticks" StepFrequency="6"/>
 	
 {% endhighlight %}
 
-{% endtabs %}
+{% highlight c# %}
 
+SfRangeSlider rangeSlider=new SfRangeSlider();
+	rangeSlider.RangeEnd=20; 
+	rangeSlider.RangeStart=4;
+	rangeSlider.ShowRange=true; 
+	rangeSlider.Minimum=0; 
+	rangeSlider.Maximum=24; 
+	rangeSlider.SnapsTo=SnapsTo.Ticks; 
+	rangeSlider.StepFrequency=6;
+	this.Content = rangeSlider;
 
+{% endhighlight %}
 
-
-
-    
+{% endtabs %}  
                                     

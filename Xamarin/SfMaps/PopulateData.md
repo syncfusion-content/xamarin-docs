@@ -15,7 +15,7 @@ In this section you can learn how to populate shape data for providing Data inpu
 
 The Maps control supports data binding with the dataSource property in the shape layers.
 
-The following properties in shape layers is be used for binding datas in Maps control,
+The following properties in shape layers is be used for binding data in Maps control,
 
 * DataSource
 * ShapeIdPath

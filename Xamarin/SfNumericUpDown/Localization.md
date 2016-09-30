@@ -2,34 +2,31 @@
 layout: post
 title: Localization in Syncfusion NumericUpDown control for Xamarin.Forms
 description: Learn how to localize the NumericUpDown control
-platform: Xamarin.Forms
+platform: Xamarin
 control: NumericUpDown
 documentation: ug
 ---
 # Localization
 
-## Culture
-
-The NumericUpDown value can be localized to any specific culture. It can be specified by setting the `Culture` property with `System.Globalization.CultureInfo` object instance.
+The SfNumericUpDown value can be localized to any specific culture. It can be specified by setting the `Culture` property with `System.Globalization.CultureInfo` object instance.
 
 N> Default `Culture` property value is en-US.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight xaml %}
 
-	numericUpDown.Culture = new System.Globalization.CultureInfo("en-US");
+	<numeric:SfNumericUpDown x:Name="numericUpDown" Culture="hi-IN"/>
 	
 {% endhighlight %}
 
-{% highlight xaml %}
+{% highlight C# %}
 
-	<numeric:SfNumericUpDown x:Name="numericUpDown" Culture="en-US"/>
+	numericUpDown.Culture = new System.Globalization.CultureInfo("hi-IN");
 	
 {% endhighlight %}
 
 {% endtabs %}
-
 
 ![](images/Culture.png)
 

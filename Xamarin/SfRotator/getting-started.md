@@ -9,30 +9,11 @@ documentation: ug
 
 # Getting Started
 
-This section explains you the steps to configure a Rotator control in a real-time scenario and also provides a walk-through on some of the customization features available in Rotator control.
+This section explains you the steps to configure a SfRotator control in a real-time scenario and also provides a walk-through on some of the customization features available in SfRotator control.
 
-![](images/rotator.png)
+## Add and Configure the SfRotator
 
-## Referencing Essential Studio Components in Your Solution	
-
-If you had acquired Essential Studio components through the Xamarin component store interface from within your IDE, then after adding the components to your Xamarin.iOS, Xamarin.Android and Windows Phone projects through the Component manager, you will still need to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL project in your solution. You can do this by manually adding the relevant PCL assembly references to your PCL project contained in the following path inside of your solution folder.
-
-Components/syncfusionessentialstudio-version/lib/pcl/
-
-Alternatively if you had downloaded Essential Studio from Syncfusion.com or through the Xamarin store web interface then all assembly references need to be added manually.
-
-After installing Essential Studio for Xamarin, all the required assemblies can be found in the installation folders, typically
-
-{Syncfusion Installed location}\Essential Studio\syncfusionessentialstudio-version\lib
-
-Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\lib
-
-Or after downloading through the Xamarin store web interface, all the required assemblies can be found in the below folder
-
-{Download location}\syncfusionessentialstudio-version\lib
-
-
-You can then add the assembly references to the respective projects as shown below
+You can then add the assembly references to the respective projects as shown below.
 
 <table>
 <tr>
@@ -45,11 +26,11 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>Android</td>
-<td>android\Syncfusion.SfRotator.Android.dll<br/>android\Syncfusion.SfRotator.XForms.Android.dll<br/>android\Syncfusion.SfRotator.XForms.dll</td>
+<td>android\Syncfusion.SfRotator.Android.dll<br/>android\Syncfusion.SfRotator.XForms.Android.dll<br/>android\Syncfusion.SfRotator.XForms.dll<br/> Xamarin.Android.Support.v17.Leanback (from NuGet Packages)</td>
 </tr>
 <tr>
 <td>iOS (Unified)</td>
-<td>ios-unified\Syncfusion.SfRotator.iOS.dll<br/>ios-unified\Syncfusion.SfRotator.XForms.iOS.dll<br/>ios-unified\Syncfusion.SfRotator.XForms.dll</td>
+<td>iOS-unified\Syncfusion.SfRotator.iOS.dll<br/>iOS-unified\Syncfusion.SfRotator.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfRotator.XForms.dll</td>
 </tr>
 <tr>
 <td>UWP</td>
@@ -61,58 +42,52 @@ Currently an additional step is required for iOS projects. We need to create an 
 
 Create an instance of SfRotatorRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below
 
+{% tabs %}
+
 {% highlight C# %}
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
-
 {
-
-    ...
-
     new SfRotatorRenderer ();
-
-    ...
-
 }	
 
 {% endhighlight %}
 
+{% endtabs %}
 
-## Add and Configure the Rotator
-
-* Adding reference to Rotator.
+* Adding namespace for the added assemblies. 
 
 {% tabs %}
 
 {% highlight C# %}
 
-	using Com.Syncfusion.SfRotator.XForms; 
+	using Syncfusion.SfRotator.XForms; 
 
 {% endhighlight %}
 
 {% highlight xaml %}
 
-	xmlns:rotate="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms"
+	<xmlns:rotator="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms"/>
 	
 {% endhighlight %}
 
 {% endtabs %}
 
 
-* Create an instance of Rotator.
+* Now add the SfRotator control with a required optimal name by using the included namespace.
 
 {% tabs %}
 
 {% highlight C# %}		
 
-	SfRotator rotator = new SfRotator();
-	this.Content = rotator;
+SfRotator rotator = new SfRotator();
+this.Content = rotator;
 	
 {% endhighlight %}
 
 {% highlight xaml %}
 
-	<rotator:SfRotator />
+<rotator:SfRotator x:Name="rotator"/>
 	
 {% endhighlight %}
 
@@ -120,19 +95,19 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ## Setting Navigation Mode
 
-The navigation mode for navigating items can be decided using `NavigationMode` property. The items can be navigated using Thumbnail or Dots.
+SfRotator provides option to display the navigating items either in Thumbnail or Dots mode. The navigation mode for navigating items can be decided using `NavigationMode` property.
 
 {% tabs %}
 
 {% highlight C# %}	
 
-	rotator.NavigationStripMode = NavigationStripMode.Dots;
+rotator.NavigationStripMode = NavigationStripMode.Dots;
 
 {% endhighlight %}
 
 {% highlight xaml %}
 
-	<rotator:SfRotator x:Name="rotator" NavigationStripMode="Dots" />
+<rotator:SfRotator x:Name="rotator" NavigationStripMode="Dots" />
 	
 {% endhighlight %}
 
@@ -140,48 +115,100 @@ The navigation mode for navigating items can be decided using `NavigationMode` p
 
 ## Customizing Position
 
-The placement position of navigation strip items such as Thumbnail or Dots can be specified using `TabStripPosition` property. 
+The placement position of navigation strip items such as Thumbnail or Dots can be customized in SfRotator. This can be specified using `NavigationStripPosition` property.   
 
 {% tabs %}
 
 {% highlight C# %}	
 
-	rotator.NavigationStripMode = NavigationStripMode.Dots;
-	rotator.NavigationStripPosition = NavigationStripPosition.Bottom;
+rotator.NavigationStripMode = NavigationStripMode.Dots;
+rotator.NavigationStripPosition = NavigationStripPosition.Bottom;
 	
 {% endhighlight %}
 
 {% highlight xaml %}
 
-	<rotator:SfRotator x:Name="rotator" NavigationStripMode="Dots"  NavigationStripPosition="Bottom"/>
+<rotator:SfRotator x:Name="rotator" NavigationStripMode="Dots"  NavigationStripPosition="Bottom"/>
 	
 {% endhighlight %}
 
 {% endtabs %}
 
-## Setting DataSource
+## Add Data Collection
 
-SfRotator items can be populated with a collection of image datas. You can assign a collection to it. Collections include arrays, Lists and DataTables.
+SfRotator items can be populated with a collection of image data. This collection includes Arrays, Lists and DataTables. For example you may wants to create a Rotator model with Image as follows.
+
+{% tabs %}
+
+{% highlight C# %}
+public RotatorModel(string imagestr)
+{
+    Image = imagestr;
+}
+private String _image;
+public String Image
+{
+    get { return _image; }
+    set { _image = value; }
+}
+
+     
+{% endhighlight %}
+
+{% endtabs %}
+
+Create and populate Rotator collection as follows
 
 {% tabs %}
 
 {% highlight C# %}
 
-	ArrayList temp=new ArrayList();
-	For(int i=1;i<18;i++)
-	{
-	SfRotatorItem item =new SfRotatorItem ();
-	item.Image="image"+i;
-	temp.add(item);
-	}
-	rotator.DataSource=temp;
+public RotatorViewModel()
+{
+    ImageCollection.Add(new RotatorModel("movie1.png"));
+    ImageCollection.Add(new RotatorModel("movie2.png"));
+    ImageCollection.Add(new RotatorModel("movie3.png"));
+    ImageCollection.Add(new RotatorModel("movie4.png"));
+    ImageCollection.Add(new RotatorModel("movie5.png"));
+}
+private List<RotatorModel> imageCollection = new List<RotatorModel>();
 
-{% endhighlight %}
+public List<RotatorModel> ImageCollection
+{
+    get { return imageCollection; }
+    set { imageCollection = value; }
+}
 
-{% highlight xaml %}
-
-	<rotator:SfRotator x:Name="rotator" DataSource="temp" />
-	
 {% endhighlight %}
 
 {% endtabs %}
+
+Assigning collection to ItemSource
+
+{% tabs %}
+
+{% highlight C# %}
+
+ rotator.BindingContext = new RotatorViewModel();
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Providing Template for Items
+
+ItemTemplate property of SfRotator control is used to customize the contents of SfRotator items.
+
+{% highlight xaml %}
+
+<rotator:SfRotator x:Name="rotator"  Grid.Row="0" NavigationDelay="2000" ItemsSource="{Binding ImageCollection}" SelectedIndex="2" NavigationDirection="Horizontal" NavigationStripMode="Dots" BackgroundColor="#ececec" NavigationStripPosition="Bottom">
+    <rotator:SfRotator.ItemTemplate>
+      <DataTemplate>
+        <Image  Source="{Binding Image}"/>                   
+      </DataTemplate>
+    </rotator:SfRotator.ItemTemplate>
+</rotator:SfRotator>
+	  
+{% endhighlight %}
+
+![](images/rotator.png)

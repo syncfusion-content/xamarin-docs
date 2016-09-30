@@ -109,9 +109,9 @@ Alternatively if you had downloaded Essential Studio from Syncfusion.com or thro
 
 After installing Essential Studio for Xamarin, all the required assemblies can be found in the installation folders, typically
 
-{Syncfusion Installed location}\Essential Studio\14.1.0.41\lib
+{Syncfusion Installed location}\Essential Studio\14.2.0.26\lib
 
-Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\14.1.0.41\lib
+Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\14.2.0.26\lib
 
 or after downloading through the Xamarin store web interface, all the required assemblies can be found in the below folder
 
@@ -147,10 +147,33 @@ wp8\Syncfusion.SfChart.XForms.WinPhone.dll
 
 wp8\Syncfusion.SfChart.XForms.dll 
 
+### Windows Phone 8.1 project
 
-Currently an additional step is required for Windows Phone and iOS projects. We need to create an instance of the chart custom renderer as shown below. 
+wp81\Syncfusion.SfChart.WP.dll
 
-Create an instance of SfChartRenderer in MainPage constructor in of the Windows Phone project as shown 
+wp81\Syncfusion.SfChart.XForms.WinPhone.dll
+
+wp81\Syncfusion.SfChart.XForms.dll 
+
+### Windows Runtime project
+
+winrt\Syncfusion.SfChart.WinRT.dll
+
+winrt\Syncfusion.SfChart.XForms.WinRT.dll
+
+winrt\Syncfusion.SfChart.XForms.dll
+
+### Universal Windows Platform project
+
+uwp\Syncfusion.SfChart.UWP.dll
+
+uwp\Syncfusion.SfChart.XForms.dll
+
+uwp\Syncfusion.SfChart.XForms.UWP.dll
+
+Currently an additional step is required for Windows and iOS projects. We need to create an instance of the SfChartRenderer as shown below. 
+
+Create an instance of SfChartRenderer in the constructor of MainPage in  Windows Phone, Windows Phone 8.1, WinRT and UWP project as shown below.
 
 {% highlight C# %}
 

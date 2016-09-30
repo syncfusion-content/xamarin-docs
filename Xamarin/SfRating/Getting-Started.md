@@ -11,27 +11,9 @@ documentation: ug
 
 # Getting Started
 
-This section explains you the steps to configure a rating control in a real-time scenario and also provides a walk-through on some of the customization features available in Rating control.
+This section explains you the steps to configure a SfRating control in a real-time scenario and also provides a walk-through on some of the customization features available in SfRating control.
 
-![](images/gettingstarted.png)
-
-## Referencing Essential Studio components in your solution
-
-If you had acquired Essential Studio components through the Xamarin component store interface from within your IDE, then after adding the components to your Xamarin.iOS, Xamarin.Android and Windows Phone projects through the Component manager, you will still need to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL project in your solution. You can do this by manually adding the relevant PCL assembly references to your PCL project contained in the following path inside of your solution folder.
-
-Components/syncfusionessentialstudio-version/lib/pcl/
-
-Alternatively if you had downloaded Essential Studio from Syncfusion.com or through the Xamarin store web interface then all assembly references need to be added manually.
-
-After installing Essential Studio for Xamarin, all the required assemblies can be found in the installation folders, typically
-
-{Syncfusion Installed location}\Essential Studio\syncfusionessentialstudio-version\lib
-
-Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\lib
-
-Or after downloading through the Xamarin store web interface, all the required assemblies can be found in the below folder
-
-{Download location}\syncfusionessentialstudio-version\lib
+## Add SfRating
 
 You can then add the assembly references to the respective projects as shown below
 
@@ -46,15 +28,15 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>Android</td>
-<td>android\Syncfusion.SfRating.Android.dll<br/>android\Syncfusion.SfRating.XForms.Android.dll</td>
+<td>android\Syncfusion.SfRating.Android.dll<br/>android\Syncfusion.SfRating.XForms.Android.dll<br/>android\Syncfusion.SfRating.XForms.dll</td>
 </tr>
 <tr>
 <td>iOS (Classic)</td>
-<td>ios\Syncfusion.SfRating.iOS.dll<br/>ios\Syncfusion.SfRating.XForms.iOS.dll<br/>ios\Syncfusion.SfRating.XForms.dll</td>
+<td>iOS\Syncfusion.SfRating.iOS.dll<br/>iOS\Syncfusion.SfRating.XForms.iOS.dll<br/>iOS\Syncfusion.SfRating.XForms.dll</td>
 </tr>
 <tr>
 <td>iOS (Unified)</td>
-<td>ios-unified\Syncfusion.SfRating.iOS.dll<br/>ios-unified\Syncfusion.SfRating.XForms.iOS.dll<br/>ios-unified\Syncfusion.SfRating.XForms.dll</td>
+<td>iOS-unified\Syncfusion.SfRating.iOS.dll<br/>iOS-unified\Syncfusion.SfRating.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfRating.XForms.dll</td>
 </tr>
 <tr>
 <td>Windows Phone</td>
@@ -70,53 +52,52 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>UWP</td>
-<td>uwp\Syncfusion.SfRating.UWP.dll<br/>uwp\Syncfusion.SfRating.XForms.dll<br/>uwp\Syncfusion.SfRating.XForms.UWP.dll</td>
+<td>uwp\Syncfusion.SfInput.UWP.dll<br/>uwp\Syncfusion.SfShared.UWP.dll<br/>uwp\Syncfusion.SfRating.XForms.dll<br/>uwp\Syncfusion.SfRating.XForms.UWP.dll</td>
 </tr>
 </table>
 
 Currently an additional step is required for Windows Phone, Windows Phone 8.1 and iOS projects. We need to create an instance of the rating custom renderer as shown below. 
 
 Create an instance of SfRatingRenderer in MainPage constructor of the Windows Phone and Windows Phone 8.1 project as shown 
+{% tabs %}
 
 {% highlight C# %}
 
 public MainPage()
-
 {
-
     new SfRatingRenderer();
-
-    ...    
-
 }
 
 {% endhighlight %}
 
+{% endtabs %}
+
 Create an instance of SfRatingRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below
+
+{% tabs %}
 
 {% highlight C# %}
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
-
 {
-
-    ...
-
     new SfRatingRenderer ();
-
-    ...
-
 }	
 
 {% endhighlight %}
 
-## Add and Configure the Rating
+{% endtabs %}
 
-The Rating control is configured entirely in C# code or by using XAML markup. The following steps explain on how to create a Rating and configure its elements,
+The SfRating control is configured entirely in C# code or by using XAML markup. The following steps explains how to create a SfRating and configure its elements.
 
-* Adding reference to rating.
+* Adding namespace for the added assemblies. 
 
 {% tabs %}
+
+{% highlight xaml %}
+
+	<xmlns:rating="clr-namespace:Syncfusion.SfRating.XForms;assembly=Syncfusion.SfRating.XForms"/>
+
+{% endhighlight %}
 
 {% highlight c# %}
 
@@ -124,17 +105,17 @@ The Rating control is configured entirely in C# code or by using XAML markup. Th
 
 {% endhighlight %}
 
-{% highlight xaml %}
-
-	xmlns:rating="clr-namespace:Syncfusion.SfRating.XForms;assembly=Syncfusion.SfRating.XForms"
-
-{% endhighlight %}
-
 {% endtabs %}
 
-* Create an instance for rating control.
+* Now add the SfRating control with a required optimal name by using the included namespace.
 
 {% tabs %}
+
+{% highlight xaml %}
+
+	<rating:SfRating x:Name="rating" />
+	
+{% endhighlight %}
 
 {% highlight C# %}
 
@@ -142,28 +123,37 @@ The Rating control is configured entirely in C# code or by using XAML markup. Th
 
 {% endhighlight %}
 
+{% endtabs %}
+
+## Set Number of Rating Items
+
+Number of rating items which are to be displayed can be customized in SfRatingControl. User may wants to create the rating application with 5 items as follows.  
+
+N> The default property value is 5.
+
+{% tabs %}
+
 {% highlight xaml %}
 
-	<rating:SfRating />
+	<rating:SfRating x:Name="rating" ItemCount="5" />
 	
+{% endhighlight %}
+
+{% highlight C# %}
+
+	rating.ItemCount=5;
+
 {% endhighlight %}
 
 {% endtabs %}
 
+## Set Value
 
-## Setting Value
-
-* The `Value` property sets the display value of the rating. 
+Display value can be set in SfRating control which is selected among the items. The following example shows the display value of 3 with 5 rating items. 
 
 N> By default, property value is 0.
 
 {% tabs %}
-
-{% highlight C# %}
-
-    rating.Value=3;
-
-{% endhighlight %}
 
 {% highlight xaml %}
 
@@ -171,19 +161,19 @@ N> By default, property value is 0.
 	
 {% endhighlight %}
 
+{% highlight C# %}
+
+    rating.Value=3;
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ## Precision
 
-* To enable full, half and exact values of rating, set the `Precision` property.
+SfRating control provides option to rate the items in full, half and exact value. This can be set through `Precision` property.
 
 {% tabs %}
-
-{% highlight C# %}
-
-    rating.Precision = Precision.Standard;
-
-{% endhighlight%}
 
 {% highlight xaml %}
 
@@ -191,9 +181,15 @@ N> By default, property value is 0.
 	
 {% endhighlight %}
 
+{% highlight C# %}
+
+    rating.Precision = Precision.Standard;
+
+{% endhighlight%}
+
 {% endtabs %}
 
-![](images/standard.jpg)
+![](images/gettingstarted.png)
 
 
 

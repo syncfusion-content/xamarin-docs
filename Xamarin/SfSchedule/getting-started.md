@@ -1,22 +1,19 @@
 ---
-
-layout: post
-title:  Syncfusion SfSchedule control Getting Started for Xamarin.Forms
+title: Syncfusion SfSchedule control Getting Started for Xamarin.Forms
 description: A quick tour to initial users on Syncfusion SfSchedule control for Xamarin.Forms platform
 platform: xamarin
 control: SfSchedule
 documentation: ug
-
 ---
 
 
-# GETTING STARTED 
+# Getting Started 
 
 This section explains you the steps required to render the Schedule control by populating  events(appointments), with inline support and min max dates support in the control. This section covers only the minimal features that you need to know to get started with the Schedule.
 
 ## Referencing Essential Studio components in your solution
 
-If you had acquired Essential Studio components through the Xamarin component store interface from within your IDE, then after adding the components to your Xamarin.iOS, Xamarin.Android and Windows Phone projects through the Component manager, you will still need to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL project in your solution. You can do this by manually adding the relevant PCL assembly references to your PCL project contained in the following path inside of your solution folder.
+If you had acquired Essential Studio components through the Xamarin component store interface from within your IDE, then after adding the components to your Xamarin.iOS and Xamarin.Android projects through the Component manager, you will still need to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL project in your solution. You can do this by manually adding the relevant PCL assembly references to your PCL project contained in the following path inside of your solution folder.
 
 Components/syncfusionessentialstudio-version/lib/pcl/
 
@@ -24,7 +21,7 @@ Alternatively if you had downloaded Essential Studio from Syncfusion.com or thro
 
 After installing Essential Studio for Xamarin, all the required assemblies can be found in the installation folders, typically
 
-{Syncfusion Installed location}\Essential Studio\12.2.0.40\lib
+{Syncfusion Installed location}\Essential Studio\{Version Number}\lib
 
 E.g.: C:\Program Files (x86)\Syncfusion\Essential Studio\12.2.0.40\lib
 
@@ -43,6 +40,8 @@ pcl\Syncfusion.SfSchedule.XForms.dll
 android\Syncfusion.SfSchedule.Android.dll
 
 android\Syncfusion.SfSchedule.XForms.Android.dll
+
+android\Syncfusion.SfSchedule.XForms.dll
 
 ### iOS (Classic) project
 
@@ -65,6 +64,8 @@ iOS-unified\Syncfusion.SfSchedule.XForms.dll
 wp81\Syncfusion.SfSchedule.WP.dll
 
 wp81\Syncfusion.SfSchedule.XForms.WinPhone.dll
+
+wp81\Syncfusion.SfSchedule.XForms.dll
 
 Currently an additional step is required for Windows Phone and iOS projects. We need to create an instance of the chart custom renderer as shown below.
 
@@ -161,7 +162,7 @@ You can also add recursive appointments to Schedule, refer [Recurrence](/xamarin
     clientMeeting.StartTime = startTime;
     clientMeeting.EndTime = endTime;
     clientMeeting.Color = Color.Blue;
-    clientMeeting.Subject = “ClientMeeting”;
+    clientMeeting.Subject = "ClientMeeting";
     clientMeeting.IsRecursive = true;
 
     RecurrenceProperties recurrenceProperties = new RecurrenceProperties();

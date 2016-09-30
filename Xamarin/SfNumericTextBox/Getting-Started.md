@@ -2,34 +2,16 @@
 layout: post
 title: Getting Started with Syncfusion NumericTextBox control for Xamarin.Forms 
 description: A quick tour to initial users on Syncfusion NumericTextBox control for Xamarin.Forms platform
-platform: Xamarin.Forms
+platform: Xamarin
 control: NumericTextBox
 documentation: ug
 ---
 
 # Getting Started
 
-This section provides overview for working with Essential NumericTextBox for Xamarin.Forms. You can walk through the entire process of creating a NumericTextBox.
+This section explains you the steps to configure a SfNumericTextBox control in a real-time scenario and also provides a walk-through on some of the customization features available in SfNumericTextBox control.
 
-![](images/gettingstarted.png)
-
-## Referencing Essential Studio Components in Your Solution	
-
-If you had acquired Essential Studio components through the Xamarin component store interface from within your IDE, then after adding the components to your Xamarin.iOS, Xamarin.Android and Windows Phone projects through the Component manager, you will still need to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL project in your solution. You can do this by manually adding the relevant PCL assembly references to your PCL project contained in the following path inside of your solution folder.
-
-Components/syncfusionessentialstudio-version/lib/pcl/
-
-Alternatively if you had downloaded Essential Studio from Syncfusion.com or through the Xamarin store web interface then all assembly references need to be added manually.
-
-After installing Essential Studio for Xamarin, all the required assemblies can be found in the installation folders, typically
-
-{Syncfusion Installed location}\Essential Studio\syncfusionessentialstudio-version\lib
-
-Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\lib
-
-Or after downloading through the Xamarin store web interface, all the required assemblies can be found in the below folder
-
-{Download location}\syncfusionessentialstudio-version\lib
+## Add SfNumericTextBox
 
 You can then add the assembly references to the respective projects as shown below
 
@@ -44,11 +26,11 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>Android</td>
-<td>android\Syncfusion.SfNumericTextBox.Android.dll<br/>android\Syncfusion.SfNumericTextBox.XForms.Android.dll</td>
+<td>android\Syncfusion.SfNumericTextBox.Android.dll<br/>android\Syncfusion.SfNumericTextBox.XForms.Android.dll<br/>android\Syncfusion.SfNumericTextBox.XForms.dll</td>
 </tr>
 <tr>
 <td>iOS (Unified)</td>
-<td>ios-unified\Syncfusion.SfNumericTextBox.iOS.dll<br/>ios-unified\Syncfusion.SfNumericTextBox.XForms.iOS.dll<br/>ios-unified\Syncfusion.SfNumericTextBox.XForms.dll</td>
+<td>iOS-unified\Syncfusion.SfNumericTextBox.iOS.dll<br/>iOS-unified\Syncfusion.SfNumericTextBox.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfNumericTextBox.XForms.dll</td>
 </tr>
 <tr>
 <td>Windows Phone</td>
@@ -64,7 +46,7 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>UWP</td>
-<td>uwp\Syncfusion.SfNumericTextBox.UWP.dll<br/>uwp\Syncfusion.SfNumericTextBox.XForms.dll<br/>uwp\Syncfusion.SfNumericTextBox.XForms.UWP.dll</td>
+<td>uwp\Syncfusion.SfInput.UWP.dll<br/>uwp\Syncfusion.SfShared.UWP.dll<br/>uwp\Syncfusion.SfNumericTextBox.XForms.dll<br/>uwp\Syncfusion.SfNumericTextBox.XForms.UWP.dll</td>
 </tr>
 </table>
 
@@ -72,45 +54,46 @@ Currently an additional step is required for Windows Phone, Windows Phone 8.1 an
 
 Create an instance of SfNumericTextBoxRenderer in MainPage constructor of the Windows Phone and Windows Phone 8.1  project as shown 
 
+{% tabs %}
+
 {% highlight C# %}
 
 public MainPage()
-
 {
-
-    new SfNumericTextBoxRenderer();
-
-    ...    
-
+    new SfNumericTextBoxRenderer(); 
 }
 
 {% endhighlight %}
 
+{% endtabs %}
+
 Create an instance of SfNumericTextBoxRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below
+
+{% tabs %}
 
 {% highlight C# %}
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
-
 {
-
-    ...
-
     new SfNumericTextBoxRenderer ();
-
-    ...
-
 }	
 
 {% endhighlight %}
 
-## Add and Configure the NumericTextBox
+{% endtabs %}
 
-The NumericTextBox control configured entirely in C# code or by using XAML markup. The following steps explain on how to create a NumericTextBox and configure its elements,
 
-* Adding reference to NumericTextBox.
+The SfNumericTextBox control configured entirely in C# code or by using XAML markup. The following steps explains how to create a NumericTextBox and configure its elements,
+
+* Adding namespace for the added assemblies. 
 
 {% tabs %}
+
+{% highlight xaml %}
+
+	<xmlns:numeric="clr-namespace:Syncfusion.SfNumericTextBox.XForms;assembly=Syncfusion.SfNumericTextBox.XForms"/> 
+	
+{% endhighlight %}
 
 {% highlight c# %}
 
@@ -118,43 +101,32 @@ The NumericTextBox control configured entirely in C# code or by using XAML marku
 
 {% endhighlight %}
 
-{% highlight xaml %}
-
-	xmlns:numeric="clr-namespace:Syncfusion.SfNumericTextBox.XForms;assembly=Syncfusion.SfNumericTextBox.XForms" 
-	
-{% endhighlight %}
-
 {% endtabs %}
 
-* Create an instance of NumericTextBox.
+* Now add the SfNumericTextBox control with a required optimal name by using the included namespace.
 
 {% tabs %}
+
+{% highlight xaml %}
+
+	<numeric:SfNumericTextBox x:Name="numericTextBox" />
+	
+{% endhighlight %}
 
 {% highlight c# %}
 
 	SfNumericTextBox numericTextBox=new SfNumericTextBox();
+	this.Content = numericTextBox;
 
-{% endhighlight %}
-
-{% highlight xaml %}
-
-	<numeric:SfNumericTextBox />
-	
 {% endhighlight %}
 
 {% endtabs %}
 
-## Setting Value
+## Set Value
 
-The NumericTextBox control display value can be set using `Value` property.
+The SfNumericTextBox control display value can be set using `Value` property.
 
 {% tabs %}
-
-{% highlight c# %}
-
-	numericTextBox.Value = 123.45;
-
-{% endhighlight %}
 
 {% highlight xaml %}
 
@@ -162,26 +134,35 @@ The NumericTextBox control display value can be set using `Value` property.
 	
 {% endhighlight %}
 
+{% highlight c# %}
+
+SfNumericTextBox numericTextBox=new SfNumericTextBox();
+	numericTextBox.Value = 123.45;
+	this.Content = numericTextBox;
+
+{% endhighlight %}
+
 {% endtabs %}
 
 
 ## Enable Parsing Mode
 
-The value of the NumericTextBox can be parsed based on the `ParsingMode` property. 
-
-N> The `ParsingMode` is of type Parsers containing enum values of Double and Decimal.
+SfNumericTextBox provides option to display the value in double or decimal. Following code shows the Decimal parsing mode which can be set through `ParsingMode` property.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight xaml %}
 
-	numericTextBox.ParsingMode=Parsers.Decimal;
+	<numeric:SfNumericTextBox x:Name="numericTextBox" Value="123.45" ParsingMode="Decimal" />
 	
 {% endhighlight %}
 
-{% highlight xaml %}
+{% highlight c# %}
 
-	<numeric:SfNumericTextBox x:Name="numericTextBox" ParsingMode="Decimal" />
+SfNumericTextBox numericTextBox=new SfNumericTextBox();
+	numericTextBox.ParsingMode=Parsers.Decimal;
+	numericTextBox.Value = 123.45;
+	this.Content = numericTextBox;
 	
 {% endhighlight %}
 
@@ -190,30 +171,28 @@ N> The `ParsingMode` is of type Parsers containing enum values of Double and Dec
 
 ## Add Format String
 
-The `FormatString` property determines the format specifier by which the display text has to be formatted. 
-
-It has three types,
-
-* c - Display the value with currency notation.
-* n – Display the value in number format.
-* p – Display the value in Percentage.
-
-N> The control displays the formatted text on lost focus. Default Value of `FormatString` is "n".
+SfNumericTextBox provides option to format the display text in currency format. Following code explains how to set the currency format using `FormatString` property.
 
 {% tabs %}
 
-{% highlight c# %}
-
-	numericTextBox.FormatString = "c";
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
-	<numeric:SfNumericTextBox x:Name="numericTextBox" FormatString="c" />
+
+	<numeric:SfNumericTextBox x:Name="numericTextBox" Value="123.45" ParsingMode="Decimal" FormatString="c" />
 	
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfNumericTextBox numericTextBox=new SfNumericTextBox();
+	numericTextBox.FormatString = "c";
+	numericTextBox.Value = 123.45;
+	this.Content = numericTextBox;
+
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/FormatString.png)
+N> The control displays the formatted text on lost focus. Default Value of `FormatString` is "n".
+
+![](images/gettingstarted.png)

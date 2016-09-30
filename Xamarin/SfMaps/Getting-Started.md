@@ -47,18 +47,18 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>iOS (Classic)</td>
-<td>ios\Syncfusion.SfMaps.iOS.dll<br/>ios\Syncfusion.SfMaps.XForms.iOS.dll<br/>ios\Syncfusion.SfMaps.XForms.dll</td>
+<td>iOS\Syncfusion.SfMaps.iOS.dll<br/>iOS\Syncfusion.SfMaps.XForms.iOS.dll<br/>iOS\Syncfusion.SfMaps.XForms.dll</td>
 </tr>
 <tr>
 <td>iOS (Unified)</td>
-<td>ios-unified\Syncfusion.SfMaps.iOS.dll<br/>ios-unified\Syncfusion.SfMaps.XForms.iOS.dll<br/>ios-unified\Syncfusion.SfMaps.XForms.dll</td>
+<td>iOS-unified\Syncfusion.SfMaps.iOS.dll<br/>iOS-unified\Syncfusion.SfMaps.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfMaps.XForms.dll</td>
 </tr>
 <tr>
-<td>WindowsPhone</td>
+<td>Windows Phone</td>
 <td>wp8\Syncfusion.SfMaps.XForms.dll<br/>wp8\Syncfusion.SfMaps.XForms.WinPhone.dll<br>wp8\Syncfusion.SfMaps.WP8.dll</td>
 </tr>
 <tr>
-<td>WindowsPhone 8.1</td>
+<td>Windows Phone 8.1</td>
 <td>wp81\Syncfusion.SfMaps.XForms.dll<br/>wp81\Syncfusion.SfMaps.XForms.WinPhone.dll<br>wp81\Syncfusion.SfMaps.WP.dll</td>
 </tr>
 <tr>
@@ -67,9 +67,9 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 </table>
 
-Currently an additional step is required for Windows Phone, WindowsPhone 8.1, WinRT and iOS projects. We need to create an instance of the maps custom renderer as shown below. 
+Currently an additional step is required for Windows Phone, Windows Phone 8.1, WinRT and iOS projects. We need to create an instance of the maps custom renderer as shown below. 
 
-Create an instance of SfMapsRenderer in MainPage constructor of the Windows Phone, WindowsPhone 8.1 and WinRT project as shown 
+Create an instance of SfMapsRenderer in MainPage constructor of the Windows Phone, Windows Phone 8.1 and WinRT project as shown 
 
 {% highlight C# %}
 
@@ -141,7 +141,7 @@ A shape file can be a set of files or a single file. Generally, the shape file c
 
 * Main file (.shp)
 
-* dBASE file (.dbf)
+* dBase file (.dbf)
 
 These files need to be added in Asset folder.
 

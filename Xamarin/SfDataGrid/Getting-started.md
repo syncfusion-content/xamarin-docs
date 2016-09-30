@@ -158,6 +158,19 @@ Create a new BlankApp (Xamarin.Forms.Portable) application in Xamarin Studio o
 
 
 {% tabs %}
+{% highlight xaml %}
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GettingStarted;assembly=GettingStarted"
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms" 
+             x:Class="GettingStarted.Sample">
+
+    <ContentPage.Content>
+        <syncfusion:SfDataGrid x:Name="dataGrid" />
+    </ContentPage.Content>
+</ContentPage> 
+{% endhighlight %}
 {% highlight c# %}
 using Syncfusion.SfDataGrid.XForms;
 using Xamarin.Forms;
@@ -174,19 +187,6 @@ namespace GettingStarted
         }
     }
 } 
-{% endhighlight %}
-{% highlight xaml %}
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:GettingStarted;assembly=GettingStarted"
-             xmlns:syncfusion="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms" 
-             x:Class="GettingStarted.Sample">
-
-    <ContentPage.Content>
-        <syncfusion:SfDataGrid x:Name="dataGrid" />
-    </ContentPage.Content>
-</ContentPage> 
 {% endhighlight %}
 {% endtabs %}
 
@@ -287,10 +287,6 @@ In order to bind the data source of the SfDataGrid, set the [SfDataGrid.ItemsS
 The following code example binds the collection created in previous step to `SfDataGrid.ItemsSource` property.
 
 {% tabs %}
-{% highlight c# %}
-OrderInfoRepository viewModel = new OrderInfoRepository ();
-dataGrid.ItemsSource = viewModel.OrderInfoCollection; 
-{% endhighlight %}
 {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -310,6 +306,10 @@ dataGrid.ItemsSource = viewModel.OrderInfoCollection;
     </ContentPage.Content>
 </ContentPage> 
 {% endhighlight %}
+{% highlight c# %}
+OrderInfoRepository viewModel = new OrderInfoRepository ();
+dataGrid.ItemsSource = viewModel.OrderInfoCollection; 
+{% endhighlight %}
 {% endtabs %}
 
 Now run the application to render the following output.
@@ -323,6 +323,23 @@ By default, the SfDataGrid automatically creates columns for all the properties 
 You can also define the columns manually by setting the [SfDataGrid.AutoGenerateColumns](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoGenerateColumns.html) property to false and by adding the GridColumn objects to the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~Columns.html) collection. It can be done from both XAML and code. The following code example illustrates this. 
 
 {% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"
+            ColumnSizer="Star"
+            AutoGenerateColumns="False"
+            ItemsSource="{Binding OrderInfoCollection}">
+
+    <syncfusion:SfDataGrid.Columns x:TypeArguments="syncfusion:Columns">
+        <syncfusion:GridTextColumn HeaderText="Order ID" 
+                                   MappingName="OrderID" />
+        <syncfusion:GridTextColumn HeaderText="Customer ID"
+                                   MappingName="CustomerID" />
+        <syncfusion:GridTextColumn MappingName="Customer" />
+        <syncfusion:GridTextColumn HeaderText="Ship Country"
+                                   MappingName="ShipCountry" />
+    </syncfusion:SfDataGrid.Columns>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
 {% highlight c# %}
 dataGrid.AutoGenerateColumns = false;
 
@@ -347,23 +364,6 @@ dataGrid.Columns.Add (customerIdColumn);
 dataGrid.Columns.Add (customerColumn);
 dataGrid.Columns.Add (countryColumn); 
 {% endhighlight %}
-{% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid"
-            ColumnSizer="Star"
-            AutoGenerateColumns="False"
-            ItemsSource="{Binding OrderInfoCollection}">
-
-    <syncfusion:SfDataGrid.Columns x:TypeArguments="syncfusion:Columns">
-        <syncfusion:GridTextColumn HeaderText="Order ID" 
-                                   MappingName="OrderID" />
-        <syncfusion:GridTextColumn HeaderText="Customer ID"
-                                   MappingName="CustomerID" />
-        <syncfusion:GridTextColumn MappingName="Customer" />
-        <syncfusion:GridTextColumn HeaderText="Ship Country"
-                                   MappingName="ShipCountry" />
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
-{% endhighlight %}
 {% endtabs %}
 
 ## Sorting
@@ -371,11 +371,11 @@ dataGrid.Columns.Add (countryColumn);
 SfDataGrid allows you to apply sorting on its data by setting the [SfDataGrid.AllowSorting](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowSorting.html) property to true.
  
 {% tabs %}
-{% highlight c# %}
-dataGrid.AllowSorting = true; 
-{% endhighlight %}
 {% highlight xaml %}
 <syncfusion:SfDataGrid AllowSorting="True" />
+{% endhighlight %}
+{% highlight c# %}
+dataGrid.AllowSorting = true; 
 {% endhighlight %}
 {% endtabs %}
 
@@ -386,13 +386,13 @@ Run the application and touch the header cell to sort the data and the following
 You can also configure sorting by adding the column to the [SfDataGrid.SortColumnDescriptions](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SortColumnDescriptions.html) collection as below.
 
 {% tabs %}
-{% highlight c# %}
-dataGrid.SortColumnDescriptions.Add (new SortColumnDescription () { ColumnName = "CustomerID" });
-{% endhighlight %}
 {% highlight xaml %}
 <syncfusion:SfDataGrid.SortColumnDescriptions>
     <syncfusion:SortColumnDescription ColumnName="CustomerID" />
 </syncfusion:SfDataGrid.SortColumnDescriptions> 
+{% endhighlight %}
+{% highlight c# %}
+dataGrid.SortColumnDescriptions.Add (new SortColumnDescription () { ColumnName = "CustomerID" });
 {% endhighlight %}
 {% endtabs %}
 
@@ -401,13 +401,13 @@ dataGrid.SortColumnDescriptions.Add (new SortColumnDescription () { ColumnNa
 SfDataGrid allows you to group a column by adding the column to the [SfDataGrid.GroupColumnDescriptions](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GroupColumnDescriptions.html) collection as shown below.
 
 {% tabs %}
-{% highlight c# %}
-dataGrid.GroupColumnDescriptions.Add (new GroupColumnDescription () { ColumnName = "ShipCountry" });
-{% endhighlight %}
 {% highlight xaml %}
 <syncfusion:SfDataGrid.GroupColumnDescriptions>
     <syncfusion:GroupColumnDescription ColumnName="ShipCountry" />
 </syncfusion:SfDataGrid.GroupColumnDescriptions> 
+{% endhighlight %}
+{% highlight c# %}
+dataGrid.GroupColumnDescriptions.Add (new GroupColumnDescription () { ColumnName = "ShipCountry" });
 {% endhighlight %}
 {% endtabs %}
 

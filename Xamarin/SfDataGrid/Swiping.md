@@ -17,6 +17,34 @@ SfDataGrid enables you to load a desired content using the [SfDataGrid.LeftSwipe
 Refer the following code example that shows how to load a template when swiping towards right.
 
 {% tabs %}
+{% highlight xaml %}
+
+//Defining left swipe template
+<sfgrid:SfDataGrid.LeftSwipeTemplate>
+  <DataTemplate>
+      <Grid  BackgroundColor="#009EDA">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition/>
+          <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        <Image Grid.Column="0"  
+               BackgroundColor="Transparent" 
+               HorizontalOptions="CenterAndExpand" 
+               Source="editicon.png"         
+               BindingContextChanged=”rightImage_BindingContextChanged"  />
+        
+        <Label Grid.Column="1" 
+               Text ="EDIT" 
+               HorizontalTextAlignment="Start" 
+               VerticalTextAlignment="Center"  
+               LineBreakMode ="NoWrap" 
+               BackgroundColor="Transparent" 
+               TextColor ="White" />
+      </Grid>
+  </DataTemplate>
+</sfgrid:SfDataGrid.LeftSwipeTemplate>
+{% endhighlight %}
 {% highlight c# %}
 
 //Defining left swipe template
@@ -51,35 +79,6 @@ dataGrid.LeftSwipeTemplate = new DataTemplate(() =>
 
     return myGrid;
 });
-{% endhighlight %}
-
-{% highlight xaml %}
-
-//Defining left swipe template
-<sfgrid:SfDataGrid.LeftSwipeTemplate>
-  <DataTemplate>
-      <Grid  BackgroundColor="#009EDA">
-        <Grid.ColumnDefinitions>
-          <ColumnDefinition/>
-          <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        
-        <Image Grid.Column="0"  
-               BackgroundColor="Transparent" 
-               HorizontalOptions="CenterAndExpand" 
-               Source="editicon.png"         
-               BindingContextChanged=”rightImage_BindingContextChanged"  />
-        
-        <Label Grid.Column="1" 
-               Text ="EDIT" 
-               HorizontalTextAlignment="Start" 
-               VerticalTextAlignment="Center"  
-               LineBreakMode ="NoWrap" 
-               BackgroundColor="Transparent" 
-               TextColor ="White" />
-      </Grid>
-  </DataTemplate>
-</sfgrid:SfDataGrid.LeftSwipeTemplate>
 {% endhighlight %}
 {% endtabs %}
 

@@ -74,6 +74,24 @@ SfDatagrid also allows you to define the columns manually by adding the GridCol
 The following code example illustrates about creating columns manually in SfDatagrid
 
 {% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"
+            ColumnSizer="Star"
+            AutoGenerateColumns="False"
+            ItemsSource="{Binding OrderInfoCollection}">
+
+    <syncfusion:SfDataGrid.Columns x:TypeArguments="syncfusion:Columns">
+        <syncfusion:GridTextColumn HeaderText="Order ID" 
+                                   MappingName="OrderID" />
+        <syncfusion:GridTextColumn HeaderText="Customer ID"
+                                   MappingName="CustomerID" />
+        <syncfusion:GridTextColumn MappingName="Customer" />
+        <syncfusion:GridTextColumn HeaderText="Ship Country"
+                                   MappingName="ShipCountry" />
+    </syncfusion:SfDataGrid.Columns>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+
 {% highlight c# %}
 dataGrid.AutoGenerateColumns = false;
 
@@ -97,21 +115,5 @@ dataGrid.Columns.Add (customerIdColumn);
 dataGrid.Columns.Add (customerColumn);
 dataGrid.Columns.Add (countryColumn); 
 {% endhighlight %}
-{% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid"
-            ColumnSizer="Star"
-            AutoGenerateColumns="False"
-            ItemsSource="{Binding OrderInfoCollection}">
 
-    <syncfusion:SfDataGrid.Columns x:TypeArguments="syncfusion:Columns">
-        <syncfusion:GridTextColumn HeaderText="Order ID" 
-                                   MappingName="OrderID" />
-        <syncfusion:GridTextColumn HeaderText="Customer ID"
-                                   MappingName="CustomerID" />
-        <syncfusion:GridTextColumn MappingName="Customer" />
-        <syncfusion:GridTextColumn HeaderText="Ship Country"
-                                   MappingName="ShipCountry" />
-    </syncfusion:SfDataGrid.Columns>
-</syncfusion:SfDataGrid>
-{% endhighlight %}
 {% endtabs %}

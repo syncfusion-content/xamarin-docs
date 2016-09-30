@@ -149,7 +149,7 @@ The `QueryRowDragging` event provides following properties in `QueryRowDragging
 * `RowData` – Returns the underlying data associated with the dragged row.
 * [Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs_properties(v=vs.110).aspx) – A Boolean property to cancel the event.
 
-## How to 
+## How to 
 
 ### Disable dragging for particular row 
 

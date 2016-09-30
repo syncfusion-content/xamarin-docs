@@ -135,7 +135,7 @@ public class RowTemplate : Grid
 
 {% endtabs %}
 
-![](SfDataGrid_images/DragAndDrop.png)
+![](SfDataGrid_images/RowDragAndDrop.png)
 
 ## Row drag and drop event
 

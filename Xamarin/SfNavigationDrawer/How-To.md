@@ -54,7 +54,7 @@ navigationDrawer.Toggled += (object sender,Syncfusion.SfNavigationDrawer.XForms.
 
 ## How to add burger icon to toggle menu.?
 
-By default NavigationDrawer does not provide toggle button. This can be created and customised as per the application's requirement.
+By default NavigationDrawer does not provide toggle button. This can be created and customized as per the application's requirement.
 
 {% tabs %}
 

@@ -384,7 +384,7 @@ SfNavigationDrawer navigationDrawer=new SfNavigationDrawer();
 
 			Btnmenu.Clicked += (sender, e) =>
 			{
-				DependencyService.Get<IToggleDrawer>().ToggleDrawer();
+				navigationDrawer.ToggleDrawer();
 			};
   
 {% endhighlight %}

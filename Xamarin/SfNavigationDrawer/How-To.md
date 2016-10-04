@@ -8,13 +8,13 @@ documentation: ug
 ---
 ## How To Open Drawer Panel Programmatically?
 
-In order to open NavigationDrawer's drawer panel, it is needed to use the `IToggleDrawer` interface through DependencyService call, which in turn displays the available method `ToggleDrawer()`.
+In order to open NavigationDrawer's drawer panel, a public method is available which can be hooked through NavigationDrawer instance
 
 {% tabs %}
 
 {% highlight C# %}
 
-	DependencyService.Get<IToggleDrawer>().ToggleDrawer();
+	navigationDrawer.ToggleDrawer();
 
 {% endhighlight %}
 
@@ -54,7 +54,7 @@ navigationDrawer.Toggled += (object sender,Syncfusion.SfNavigationDrawer.XForms.
 
 ## How to add burger icon to toggle menu.?
 
-By default NavigationDrawer does not provide toggle button. This can be created and customised as per the application's requirement.
+By default NavigationDrawer does not provide toggle button. This can be created and customized as per the application's requirement.
 
 {% tabs %}
 
@@ -102,7 +102,7 @@ navigationDrawer.ContentView=ContentFrame;
 
 imageButton.Clicked += (sender, e) =>
 {
-		DependencyService.Get<IToggleDrawer>().ToggleDrawer();
+		navigationDrawer.ToggleDrawer();
 };
   
 {% endhighlight %}

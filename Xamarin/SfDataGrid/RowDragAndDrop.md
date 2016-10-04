@@ -26,7 +26,7 @@ dataGrid.AllowDraggingRow = true;
 
 SfDataGrid allows you to perform the drag and drop operation with both the data rows and groups.
 
-* Records can be reordered to any positon with auto scrolling.
+* Records can be reordered to any position with auto scrolling.
 * Groups position can be reordered using drag and drop. But no groups can be added inside other groups. 
 * Data rows can be reordered within the same group or into the other groups as well. 
 
@@ -186,7 +186,7 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 
 ### Disable dropping of particular row 
 
-Dropping can be cancelled for particular row by handling `QueryRowDragging` event using conditions based on `QueryRowDraggingReason`. Refer following code sample to cancel dropping of particular row.
+Dropping can be canceled for particular row by handling `QueryRowDragging` event using conditions based on `QueryRowDraggingReason`. Refer following code sample to cancel dropping of particular row.
 
 {% highlight c# %}
 
@@ -202,7 +202,7 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 
 ### Disable dropping at a particular position 
 
-Dropping at a particular position can be cancelled by handling `QueryRowDragging` event using conditions based on `QueryRowDraggingReason`. Refer following code sample to cancel dropping at particular position.
+Dropping at a particular position can be canceled by handling `QueryRowDragging` event using conditions based on `QueryRowDraggingReason`. Refer following code sample to cancel dropping at particular position.
 
 {% highlight c# %}
 

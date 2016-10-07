@@ -14,7 +14,7 @@ In order to open NavigationDrawer's drawer panel, a public method is available w
 
 {% highlight C# %}
 
-	navigationDrawer.ToggleDrawer();
+				DependencyService.Get<IToggleDrawer>().ToggleDrawer();
 
 {% endhighlight %}
 
@@ -102,7 +102,7 @@ navigationDrawer.ContentView=ContentFrame;
 
 imageButton.Clicked += (sender, e) =>
 {
-		navigationDrawer.ToggleDrawer();
+			DependencyService.Get<IToggleDrawer>().ToggleDrawer();
 };
   
 {% endhighlight %}

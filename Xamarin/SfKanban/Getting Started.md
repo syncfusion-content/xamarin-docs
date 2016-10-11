@@ -132,68 +132,76 @@ using System.Collections.ObjectModel;
 using GettingStartedKanban;
 using Syncfusion.SfKanban.XForms;
 using Xamarin.Forms;
+
 namespace GettingStartedKanban
 {
-    public class KanbanGettingStartedViewModel
-{
-public ObservableCollection<KanbanModel> Cards { get; set; }
-public List<object> IList;
-public KanbanGettingStartedViewModel()
-{
-    Cards = new ObservableCollection<KanbanModel>();
-    Cards.Add(new KanbanModel()
-    {
-    ID = 1,
-    Title = "iOS - 1002",
-    ImageURL = "Image1.png",
-    Category = "Open",
-    Description = "Analyze customer requirements",
-    ColorKey = "Red",
-    Tags = new string[] { "Incident", "Customer" }
-    });
-    Cards.Add(new KanbanModel()
-    {
-    ID = 6,
-    Title = "Xamarin - 4576",
-    ImageURL = "Image2.png",
-    Category = "Open",
-    Description = "Show the retrieved data from the server in grid control",
-    ColorKey = "Green",
-    Tags = new string[] { "SfDataGrid", "Customer" }
-    });
-    Cards.Add(new KanbanModel()
-    {
-    ID = 13,
-    Title = "UWP - 13",
-    ImageURL = "Image4.png",
-    Category = "In Progress",
-    Description = "Add responsive support to application",
-    ColorKey = "Brown",
-    Tags = new string[] { "Story", "Kanban" }
-    });
-    Cards.Add(new KanbanModel()
-    {
-    ID = 2543,
-    Title = "Xamarin_iOS - 2543",
-    Category = "Code Review",
-    ImageURL = "Image3.png",
-    Description = "Provide swimlane support kanban",
-    ColorKey = "Brown",
-    Tags = new string[] { "Feature", "SfKanban" }
-    });
-    Cards.Add(new KanbanModel()
-    {
-    ID = 1975,
-    Title = "iOS - 1975",
-    Category = "Done",
-    ImageURL = "Image5.png",
-    Description = "Fix the issues reported by the customer",
-    ColorKey = "Purple",
-    Tags = new string[] { "Bug" }
-    });
+	public class KanbanGettingStartedViewModel
+	{
+		public ObservableCollection<KanbanModel> Cards { get; set; }
+
+		public KanbanGettingStartedViewModel()
+		{
+			Cards = new ObservableCollection<KanbanModel>();
+
+			Cards.Add(new KanbanModel()
+			{
+				ID = 1,
+				Title = "iOS - 1002",
+				ImageURL = "Image1.png",
+				Category = "Open",
+				Description = "Analyze customer requirements",
+				ColorKey = "Red",
+				Tags = new string[] { "Incident", "Customer" }
+			});
+
+			Cards.Add(new KanbanModel()
+			{
+				ID = 6,
+				Title = "Xamarin - 4576",
+				ImageURL = "Image2.png",
+				Category = "Open",
+				Description = "Show the retrieved data from the server in grid control",
+				ColorKey = "Green",
+				Tags = new string[] { "SfDataGrid", "Customer" }
+			});
+
+			Cards.Add(new KanbanModel()
+			{
+				ID = 13,
+				Title = "UWP - 13",
+				ImageURL = "Image4.png",
+				Category = "In Progress",
+				Description = "Add responsive support to application",
+				ColorKey = "Brown",
+				Tags = new string[] { "Story", "Kanban" }
+			});
+
+			Cards.Add(new KanbanModel()
+			{
+				ID = 2543,
+				Title = "Xamarin_iOS - 2543",
+				Category = "Code Review",
+				ImageURL = "Image3.png",
+				Description = "Provide swimlane support kanban",
+				ColorKey = "Brown",
+				Tags = new string[] { "Feature", "SfKanban" }
+			});
+
+			Cards.Add(new KanbanModel()
+			{
+				ID = 1975,
+				Title = "iOS - 1975",
+				Category = "Done",
+				ImageURL = "Image5.png",
+				Description = "Fix the issues reported by the customer",
+				ColorKey = "Purple",
+				Tags = new string[] { "Bug" }
+			});
+
+		}
+	}
 }
-}
-}
+
 {% endhighlight %}
 
 ## Binding data to SfKanban
@@ -221,7 +229,7 @@ By default, we need to define the columns manually by adding the `KanbanColumn` 
 
 We need to set the required property name to `ColumnMappingPath` which will be essential to add the data to the respective columns.
 
-In this example, the data whose `Category` propertyÕs value is set as `Open` will be added to the todo Column and other data will be added to the respective columns.
+In this example, the data whose `Category` propertyï¿½s value is set as `Open` will be added to the todo Column and other data will be added to the respective columns.
 
 The following code example illustrates how this can be done.
 
@@ -232,14 +240,17 @@ KanbanColumn todoColumn = new KanbanColumn();
 todoColumn.Title = "To Do";
 todoColumn.Categories = new List<object>() { "Open" };
 kanban.Columns.Add(todoColumn);
+
 KanbanColumn progressColumn = new KanbanColumn();
 progressColumn.Title = "In Progress";
 progressColumn.Categories = new List<object>() { "In Progress" };
 kanban.Columns.Add(progressColumn);
+
 KanbanColumn codeColumn = new KanbanColumn();
 codeColumn.Title = "Code Review";
 codeColumn.Categories = new List<object>() { "Code Review" };
 kanban.Columns.Add(codeColumn);
+
 KanbanColumn doneColumn = new KanbanColumn();
 doneColumn.Title = "Done";
 doneColumn.Categories = new List<object>() { "Done" };
@@ -249,20 +260,25 @@ kanban.Columns.Add(doneColumn);
 {% highlight xaml %} 
 
 <kanban:SfKanban.Columns>
+
     <kanban:KanbanColumn x:Name="todoColumn" Title="To Do"  >
     </kanban:KanbanColumn>
+    
     <kanban:KanbanColumn x:Name="progressColumn" Title="In Progress">
     </kanban:KanbanColumn>
+    
     <kanban:KanbanColumn x:Name="codeColumn" Title="Code Review" >
     </kanban:KanbanColumn>
+    
     <kanban:KanbanColumn x:Name="doneColumn" Title="Done"  >
     </kanban:KanbanColumn> 
+    
 </kanban:SfKanban.Columns>
 
 {% endhighlight %}
 {% endtabs %}
 
-You can also set `AutoGenerateColumns` property to true in which you don't need to define the columns as mentioned in the above example.  This will create columns depending on the `ColumnMappingPath` property for all the distinct values in `ItemsSource`.
+You can also set `AutoGenerateColumns` property to true in which you don't need to define the columns as mentioned in the above example. This will create columns depending on the `ColumnMappingPath` property for all the distinct values in `ItemsSource`.
 
 When the columns are auto-generated, you can handle the `ColumnsGenerated` event to customize the columns after they are added to the `ActualColumns` collection in `SfKanban`.
 
@@ -280,14 +296,18 @@ Initialize `Workflows` property with a list of `KanbanWorkflow` instances. Each 
 {% highlight C# %}
 
 var workflows = new List<KanbanWorkflow>();
+
 var openWorkflow = new KanbanWorkflow();  
 openWorkflow.Category = "Open"; 
 openWorkflow.AllowedTransitions = new List<object> { "In Progress" }; 
+
 var progressWorkflow = new KanbanWorkflow(); 
 progressWorkflow.Category = "In Progress"; 
-progressWorkflow.AllowedTransitions = new List<object> { "Open", "Code Review", "Closed-No Code Changes" }; 
+progressWorkflow.AllowedTransitions = new List<object> { "Open", "Code Review", "Closed-No Code Changes" };
+
 workflows.Add(openWorkflow); 
 workflows.Add(progressWorkflow); 
+
 kanban.Workflows = workflows;
 
 {% endhighlight %}
@@ -312,10 +332,10 @@ todoColumn.MaximumLimit = 10;
 {% highlight C# %}
 
 Following properties are used to customize its appearance.
-* Color Ð used to change the default color of the error bar
-* MaxValidationColor Ð used to change the maximum validation color of the error bar
-* MinValidationColor Ð used to change the minimum validation color of the error bar
-* Height Ð used to change the height of the error bar
+* Color : used to change the default color of the error bar
+* MaxValidationColor : used to change the maximum validation color of the error bar
+* MinValidationColor : used to change the minimum validation color of the error bar
+* Height : used to change the height of the error bar
 
 {% highlight C# %}
 todoColumn.ErrorbarSettings.Color = Color.Green;

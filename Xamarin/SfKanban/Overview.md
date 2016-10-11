@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Overview | SfKanban | Xamarin.Forms | Syncfusion
-description: overview
-platform: xamarin.Forms
-control: SfKanban
+title: Overview of Essential Xamarin.Forms Kanban
+description: What are the key features available in kanban.
+platform: xamarin
+control: Kanban
 documentation: ug
 ---
 

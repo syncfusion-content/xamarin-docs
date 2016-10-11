@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Getting Started | SfKanban | Xamarin.Forms | Syncfusion
-description: getting started 
-platform: xamarin.Forms
-control: SfKanban
+title: Getting Started for Essential Xamarin.Forms Kanban
+description: getting started kanban
+platform: xamarin
+control: Kanban
 documentation: ug
 ---
 
@@ -11,7 +11,7 @@ documentation: ug
 
 ## Create your first Kanban in Xamarin.Forms
 
-This section provides a quick overview for working with Essential Kanban for Xamarin.Forms. ItÕs an efficient way to visualize the workflow at each stage along its path to completion.
+This section provides a quick overview for working with Essential Kanban for Xamarin.Forms. It is an efficient way to visualize the workflow at each stage along its path to completion.
 
 ## Referencing Essential Studio components in your solution
 
@@ -34,7 +34,7 @@ You can then add the assembly references to the respective projects as shown bel
 
 ## PCL project
 
-pcl\Syncfusion. SfKanban.XForms.dll
+pcl\Syncfusion.SfKanban.XForms.dll
 
 ## Android project
 
@@ -48,40 +48,23 @@ ios-unified\Syncfusion.SfKanban.iOS.dll
 ios-unified\Syncfusion.SfKanban.XForms.iOS.dll
 ios-unified\Syncfusion.SfKanban.XForms.dll
 
-## Windows Phone 8.1 project
-
-wp81\Syncfusion.SfKanban.WP.dll
-wp81\Syncfusion.SfKanban.XForms.WinPhone.dll
-wp81\Syncfusion.SfKanban.XForms.dll
-
-## Windows Phone 8 project
-
-wp8\Syncfusion.SfKanban.WP8.dll
-wp8\Syncfusion.SfKanban.XForms.WinPhone.dll
-wp8\Syncfusion.SfKanban.XForms.dll
-
 ## UWP
 
 uwp\Syncfusion.SfKanban.UWP.dll
 uwp\Syncfusion.SfKanban.XForms.UWP.dll
 uwp\Syncfusion.SfKanban.XForms.dll
 
-## WinRT
-
-winrt\Syncfusion.SfKanban.WinRT.dll
-winrt\Syncfusion.SfKanban.XForms.WinRT.dll
-winrt\Syncfusion.SfKanban.XForms.dll
-
-N> Essential Kanban for Xamarin is compatible with Xamarin.Forms v2.3.0.49.
+N> Essential Kanban supporting Xamarin.Forms version 2.3.0.49 and greater.
 
 Currently an additional step is required for configuring Windows and iOS platforms. We need to create an instance of SfKanbanRenderer as shown below.
 
-Create an instance of SfKanbanRenderer in the constructor of MainPage in Windows Phone, Windows Phone 8.1, WinRT and UWP project as shown below.
+Create an instance of SfKanbanRenderer in the constructor of MainPage in UWP project as shown below.
 
 {% highlight C# %}
 
 public MainPage()
 {
+    ...
     new SfKanbanRenderer();
     ...  
 }
@@ -94,6 +77,7 @@ Create an instance of SfKanbanRenderer in FinishedLaunching overridden method of
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {
+    ...
     new SfKanbanRenderer();
     ...  
 }

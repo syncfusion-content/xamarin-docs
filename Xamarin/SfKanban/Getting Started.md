@@ -15,7 +15,7 @@ This section provides a quick overview for working with Essential Kanban for Xam
 
 ## Referencing Essential Studio components in your solution
 
-If you had acquired Essential Studio components through the Xamarin component store interface from within your IDE, then after adding the components to your Xamarin.iOS, Xamarin.Android and Windows Phone projects through the Component manager, you will still need to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL project in your solution. You can do this by manually adding the relevant PCL assembly references to your PCL project contained in the following path inside of your solution folder
+If you had acquired Essential Studio components through the Xamarin component store interface from within your IDE, then after adding the components to your Xamarin.iOS, Xamarin.Android and UWP projects through the Component manager, you will still need to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL project in your solution. You can do this by manually adding the relevant PCL assembly references to your PCL project contained in the following path inside of your solution folder
 
 Components/syncfusionessentialstudio-version/lib/pcl/
 
@@ -56,7 +56,7 @@ uwp\Syncfusion.SfKanban.XForms.dll
 
 N> Essential Kanban supporting Xamarin.Forms version 2.3.0.49 and greater.
 
-Currently an additional step is required for configuring Windows and iOS platforms. We need to create an instance of SfKanbanRenderer as shown below.
+Currently an additional step is required for configuring UWP and iOS platforms. We need to create an instance of SfKanbanRenderer as shown below.
 
 Create an instance of SfKanbanRenderer in the constructor of MainPage in UWP project as shown below.
 

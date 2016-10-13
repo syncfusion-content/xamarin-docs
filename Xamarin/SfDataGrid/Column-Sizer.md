@@ -22,6 +22,7 @@ SfDataGrid applies width for all the GridColumns in the [SfDataGrid.Columns](htt
 * None
 * LastColumnFill
 * Star
+* Auto
 
 
 ## ColumnSizer.None
@@ -39,3 +40,22 @@ When the `SfDataGrid.ColumnSizer` is `LastColumnFill`, the column width of the G
 When the `SfDataGrid.ColumnSizer` is `Star`, all the GridColumns are adjusted an equal column width to fit within the view. Setting `ColumnSizer` to `Star` will disable the HorizontalScrolling in SfDataGrid.
 
 N> If any column is specified a width explicitly using the [GridColumn.Width](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~Width.html) property then that column is not considered ColumnSizing width and skipped while applying the `ColumnSizer` for grid columns.
+
+
+## ColumnSizer.Auto
+
+When the `SfDataGrid.ColumnSizer` is `Auto`, the width of the `GridColumns` are adjusted based on the header text or cell contents.
+
+{% tabs %}
+{% highlight xaml %}
+<sfgrid:SfDataGrid x:Name="dataGrid"
+                   AutoGenerateColumns="True"
+                   ColumnSizer="Auto">
+{% endhighlight %}
+
+{% highlight c# %}
+dataGrid.ColumnSizer = ColumnSizer.Auto;
+{% endhighlight %}
+{% endtabs %}
+
+It is possible to apply auto width for selective column(s) by setting [GridColumn.ColumnSizer](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~ColumnSizer.html) property to `Auto`. In order to achieve this, `SfDataGrid.ColumnSizer` must set to `None`.

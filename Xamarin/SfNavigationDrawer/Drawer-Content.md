@@ -78,9 +78,9 @@ Instead of providing everything in the drawer content view, `DrawerHeaderView` p
     
 <navigation:SfNavigationDrawer x:Name="navigationDrawer">
     <navigation:SfNavigationDrawer.DrawerHeaderView>
-         <StackLayout x:Name="headerLayout" Orientation="Vertical" HeightRequest="200" WidthRequest="275">
+         <StackLayout x:Name="headerLayout" Orientation="Vertical" BackgroundColor="#1aa1d6" HeightRequest="150" WidthRequest="300">
                 <Image x:Name="image" HeightRequest="100" WidthRequest="70" Source="user.png" />
-                <Label x:Name="header" Text="James Pollock" FontSize="20" HeightRequest="30" WidthRequest="140" /> 
+                <Label x:Name="header" Text="James Pollock" FontSize="20" TextColor="White" HorizontalTextAlignment="Center" /> 
          </StackLayout>
     </navigation:SfNavigationDrawer.DrawerHeaderView>
 </navigation:SfNavigationDrawer>

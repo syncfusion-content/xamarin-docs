@@ -300,7 +300,7 @@ The main view of the SfNavigationDrawer can be set using `ContentView` property 
 
 {% highlight xaml %}
 
- <navigation:SfNavigationDrawer x:Name="navigationDrawer" Position="Left" Transition="SlideOnTop" DrawerWidth="300">
+ <navigation:SfNavigationDrawer x:Name="navigationDrawer" Position="Left" Transition="SlideOnTop" DrawerWidth="200" DrawerHeaderHeight="50" DrawerFooterHeight="0">
         <navigation:SfNavigationDrawer.ContentView>
             <Grid>
 				<Grid.RowDefinitions>
@@ -327,14 +327,16 @@ The main view of the SfNavigationDrawer can be set using `ContentView` property 
 
 {% highlight c# %}
 SfNavigationDrawer navigationDrawer=new SfNavigationDrawer();
-			navigationDrawer.Position=Position.Left;
-			navigationDrawer.Transition=Transition.SlideOnTop;
-			navigationDrawer.DrawerWidth = 300;
+			navigationDrawer.Position = Position.Left;
+			navigationDrawer.Transition = Transition.SlideOnTop;
+			navigationDrawer.DrawerWidth = 200;
+			navigationDrawer.DrawerHeaderHeight = 50;
+			navigationDrawer.DrawerFooterHeight = 0;
 			Grid headerLayout = new Grid();
 			headerLayout.BackgroundColor = Color.FromHex("#1aa1d6");
 			Label header = new Label();
 			header.Text = "Header View";
-			header.FontSize = 20;
+			header.FontSize = 14;
 			header.TextColor = Color.White;
 			header.HorizontalTextAlignment = TextAlignment.Center;
 			header.VerticalTextAlignment = TextAlignment.Center;
@@ -342,7 +344,7 @@ SfNavigationDrawer navigationDrawer=new SfNavigationDrawer();
 			headerLayout.Children.Add(header);
 
 			navigationDrawer.DrawerHeaderView = headerLayout;
-			
+
 			ListView listView = new ListView();
 			listView.BackgroundColor = Color.White;
 			ObservableCollection<String> list = new ObservableCollection<string>();
@@ -355,11 +357,12 @@ SfNavigationDrawer navigationDrawer=new SfNavigationDrawer();
 			listView.ItemsSource = list;
 
 			navigationDrawer.DrawerContentView = listView;
-	
+
 			Button Btnmenu = new Button();
 			Btnmenu.Text = "Show Menu";
 			Btnmenu.HorizontalOptions = LayoutOptions.Center;
 			Btnmenu.VerticalOptions = LayoutOptions.Center;
+			Btnmenu.BackgroundColor = Color.FromHex("#1aa1d6");
 
 			Label homeLabel = new Label();
 			homeLabel.Text = "Content View";
@@ -372,7 +375,7 @@ SfNavigationDrawer navigationDrawer=new SfNavigationDrawer();
 			homeLabel.VerticalTextAlignment = TextAlignment.Center;
 
 			Grid contentView = new Grid();
-			contentView.RowDefinitions.Add(new RowDefinition() { Height = new GridLength(50, GridUnitType.Auto)});
+			contentView.RowDefinitions.Add(new RowDefinition() { Height = new GridLength(50, GridUnitType.Auto) });
 			contentView.RowDefinitions.Add(new RowDefinition() { Height = new GridLength(1, GridUnitType.Star) });
 			contentView.Children.Add(homeLabel);
 			contentView.Children.Add(Btnmenu);
@@ -384,7 +387,7 @@ SfNavigationDrawer navigationDrawer=new SfNavigationDrawer();
 
 			Btnmenu.Clicked += (sender, e) =>
 			{
-					DependencyService.Get<IToggleDrawer>().ToggleDrawer();
+				DependencyService.Get<IToggleDrawer>().ToggleDrawer();
 			};
   
 {% endhighlight %}

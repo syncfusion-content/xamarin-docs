@@ -29,14 +29,20 @@ We can perform operation while the Calendar cell is Tapped using `CalendarTapped
 
 {% tabs %}
 
+{% highlight xaml %}
+
+	<CalendarSample:SfCalendar  x:Name="calendar" ViewMode="MonthView" OnCalendarTapped="Handle_OnCalendarTapped" />
+
+{% endhighlight %}
+
 {% highlight c# %}
-
-	calendar.OnCalendarTapped+= (object sender, CalendarTappedEventArgs args) => 
-	{
-		SfCalendar calendar = args.Calendar;
-		DateTime date = args.datetime;			
-	};
-
+	
+	   void Handle_OnCalendarTapped(object sender, Syncfusion.SfCalendar.XForms.CalendarTappedEventArgs args)
+		{
+			SfCalendar calendar = args.Calendar;
+		    DateTime date = args.datetime;		
+		}
+	
 {% endhighlight %}
 
 {% endtabs %}
@@ -66,14 +72,21 @@ We can perform an operation when the selected date get changed using `SelectionC
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight xaml %}
 
-	calendar.SelectionChanged += (object sender, Syncfusion.SfCalendar.XForms.SelectionChangedEventArgs args) =>
-	{
-    	SfCalendar calendar = args.Calendar;
+	<CalendarSample:SfCalendar  x:Name="calendar" ViewMode="MonthView"  SelectionChanged="Handle_SelectionChanged" />
+
+{% endhighlight %}
+
+{% highlight c# %}
+	
+	  	void Handle_SelectionChanged(object sender, Syncfusion.SfCalendar.XForms.SelectionChangedEventArgs args)
+		{
+		SfCalendar calendar = args.Calendar;
 	    IList<DateTime> selectedDates = args.DateAdded;
     	IList<DateTime> deselectedDates = args.DateRemoved;
-	};
+		}
+	
 {% endhighlight %}
 
 {% endtabs %}
@@ -100,15 +113,21 @@ User defined operation can be performed using `MonthChanged` event when navigati
                                     
 {% tabs %}
 
-{% highlight c# %}
+{% highlight xaml %}
 
-        calendar.MonthChanged += (object sender, MonthChangedEventArgs args) =>
-        { 
-		    SfCalendar calendar = args.Calendar;
+	<CalendarSample:SfCalendar  x:Name="calendar" ViewMode="MonthView" MonthChanged="Handle_MonthChanged" />
+
+{% endhighlight %}
+
+{% highlight c# %}
+	
+	   void Handle_MonthChanged(object sender, Syncfusion.SfCalendar.XForms.MonthChangedEventArgs args)
+		{
+			SfCalendar calendar = args.Calendar;
 		    DateTime oldMonth = args.args.PreviousValue;
 		    DateTime currentMonth = args.args.CurrentValue;
-		};
-		
+		}
+	
 {% endhighlight %}
 
 {% endtabs %}
@@ -133,19 +152,28 @@ User defined operation can be performed using `MonthChanged` event when navigati
 </tr>
 </table>
 
+                                    
 {% tabs %}
 
-{% highlight c# %}
+{% highlight xaml %}
 
-	sfcalendar.InlineToggled += (object sender, InlineToggledEventArgs args) => 
-	{
-		string subject = args.selectedAppointment[0].Subject;
-		DateTime startTime = args.selectedAppointment[0].StartTime;
-		DateTime endTime = args.selectedAppointment[0].EndTime;		
-	};
+	<CalendarSample:SfCalendar  x:Name="calendar" ViewMode="MonthView"  InlineToggled="Handle_InlineToggled" />
+
+{% endhighlight %}
+
+{% highlight c# %}
+	
+	  void Handle_InlineToggled(object sender, Syncfusion.SfCalendar.XForms.InlineToggledEventArgs args)
+		{
+         string subject = args.selectedAppointment[0].Subject;
+		 DateTime startTime = args.selectedAppointment[0].StartTime;
+		 DateTime endTime = args.selectedAppointment[0].EndTime;	
+		}
+	
 {% endhighlight %}
 
 {% endtabs %}
+
 
 # How to Customize Cell or Month View?
 
@@ -164,16 +192,25 @@ User defined operation can be performed using `MonthChanged` event when navigati
 
 {% tabs %}
 
+{% highlight xaml %}
+
+	<CalendarSample:SfCalendar  x:Name="calendar" ViewMode="MonthView"  OnMonthCellLoaded="Handle_OnMonthCellLoaded"  />
+
+{% endhighlight %}
+
 {% highlight c# %}
 
-	calendar.OnMonthCellLoaded += (object sender, Syncfusion.SfCalendar.XForms.MonthCell args) =>
-	{
+	void Handle_OnMonthCellLoaded(object sender, Syncfusion.SfCalendar.XForms.MonthCell args)
+		{
+
 		if ((args.Date.DayOfWeek == DayOfWeek.Sunday || args.Date.DayOfWeek == DayOfWeek.Saturday))
 		{
 			args.BackgroundColor = Color.Gray;
 			args.TextColor = Color.Red;
 		}
-	};
+
+		}
+
 {% endhighlight %}
 
 {% endtabs %}

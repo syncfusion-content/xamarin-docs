@@ -286,7 +286,7 @@ When the columns are auto-generated, you can handle the `ColumnsGenerated` event
 
 A Kanban workflow is a set of `Category` and  `AllowedTransitions`, that an item moves through during its lifecycle and typically represents processes within your organization.
 
-`Category ` represents a state of an item at a particular point in a specific workflow. An item can be in only one category at a specific point of time.
+`Category` represents a state of an item at a particular point in a specific workflow. An item can be in only one category at a specific point of time.
 
 `AllowedTransitions` is a list of categories to where the card can be moved from the current category.
 

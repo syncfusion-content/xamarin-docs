@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Overview | SfKanban | Xamarin.iOS | Syncfusion
-description: overview
-platform: xamarin.ios
-control: SfKanban
+title: Overview of Essential Xamarin.Forms Kanban
+description: What are the key features available in kanban.
+platform: xamarin
+control: Kanban
 documentation: ug
 ---
 
@@ -13,7 +13,7 @@ The Kanban control is an efficient way to visualize a workflow at each stage of 
 
 ![](Overview_images/Overview_img.png)           
 
-Essential Kanban for Xamarin.iOS
+Essential Kanban for Xamarin.Forms
 {:.caption}
 
 ## Key features

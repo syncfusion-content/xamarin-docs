@@ -15,7 +15,7 @@ This section provides a quick overview for working with Essential Kanban for Xam
 
 ## Referencing Essential Studio components in your solution
 
-If you had acquired Essential Studio components through the Xamarin component store interface from within your IDE, then after adding the components to your Xamarin.iOS, Xamarin.Android and UWP projects through the Component manager, you will still need to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL project in your solution. You can do this by manually adding the relevant PCL assembly references to your PCL project contained in the following path inside of your solution folder
+If you had acquired Essential Studio components through the Xamarin component store interface from within your IDE, then after adding the components to your Xamarin.iOS and Xamarin.Android projects through the Component manager, you will still need to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL project in your solution. You can do this by manually adding the relevant PCL assembly references to your PCL project contained in the following path inside of your solution folder
 
 Components/syncfusionessentialstudio-version/lib/pcl/
 
@@ -87,7 +87,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 ## Create a simple SfKanban
 
 This section explains how to create a SfKanban and configure it. 
-This is how the final output will look like on iOS, Android and windows devices. You can download the entire source code of this demo for Xamarin.Forms from [here](http://files2.syncfusion.com/Xamarin.iOS/Samples/KanbanForms_GettingStarted.zip).
+This is how the final output will look like on iOS, Android and Windows devices. You can download the entire source code of this demo for Xamarin.Forms from [here](http://files2.syncfusion.com/Xamarin.iOS/Samples/KanbanForms_GettingStarted.zip).
 
 ![](Getting-Started_images/gettingstarted.png)
 
@@ -104,7 +104,7 @@ In this walk through, you will create a new application that contains the SfKanb
 
 1. Add the required assembly references to the project as discussed in the _Reference Essential Studio Components in your Solution_ section.
 2. Import `SfKanban` control namespace.
-3. Create an instance of `SfKanban` control and add as page content.
+3. Create an instance of `SfKanban` control and set to Content property of a Page.
 
 {% tabs %}   
 {% highlight C# %}

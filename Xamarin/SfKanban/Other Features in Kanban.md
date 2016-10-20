@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started for Essential Xamarin.Forms Kanban
-description: getting started kanban
+title: Other Features in Essential Xamarin.Forms Kanban
+description: other features in kanban
 platform: xamarin
 control: Kanban
 documentation: ug
@@ -9,9 +9,9 @@ documentation: ug
 
 # Other features in Kanban
 
-AllowDrag â€“ It enable or disable the dragging cards in the corresponding Kanban column.
+AllowDrag – It enable or disable the dragging cards in the corresponding Kanban column.
 
-AllowDrop â€“ It used to enable or disable the Kanban column to drop the Kanban cards while dragging. 
+AllowDrop – It used to enable or disable the Kanban column to drop the Kanban cards while dragging. 
 
 {% tabs %}
 
@@ -39,7 +39,7 @@ kanban.Columns.Add(column);
 
 {% endhighlight %} {% endtabs %}
 
-Kanban Column Width â€“ we can modify the default width of the kanban columns using ColumnWidth property
+Kanban Column Width – we can modify the default width of the kanban columns using ColumnWidth property
 
 {% tabs %}
 

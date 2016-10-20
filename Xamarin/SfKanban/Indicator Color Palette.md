@@ -9,7 +9,7 @@ documentation: ug
 
 # Indicator color model
 
-Color Model is a collection of ColorMapping that are used to set the indicator color of Kanban cards. In the underlying data model, ColorKey (predefined property) values are set as the Key and Color are mapped to the corresponding Key values as shown in the below code sample.
+['ColorModel'](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~ColorModel.html) is a collection of ['KanbanColorMapping'](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanColorMapping.html) that are used to set the indicator color of Kanban cards. In the underlying data model, ColorKey (predefined property) values are set as the ['Key'](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanColorMapping~Key.html) and ['Color'](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanColorMapping~Color.html) are mapped to the corresponding Key values as shown in the below code sample.
 
 {% highlight c# %}
 

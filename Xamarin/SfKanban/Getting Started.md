@@ -15,7 +15,9 @@ This section provides a quick overview for working with Essential Kanban for Xam
 
 ## Referencing Essential Studio components in your solution
 
-If you had acquired Essential Studio components through the Xamarin component store interface from within your IDE, then after adding the components to your Xamarin.iOS and Xamarin.Android projects through the Component manager, you will still need to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL project in your solution. You can do this by manually adding the relevant PCL assembly references to your PCL project contained in the following path inside of your solution folder
+If you had acquired Essential Studio components through the Xamarin component store interface from within your IDE, then after adding the components to your Xamarin.iOS and Xamarin.Android projects through the Component manager, you will still need to manually reference the UWP and PCL (Portable Class Library) assemblies in the Xamarin.Forms UWP and PCL project in your solution. You can do this by manually adding the relevant assembly references to your UWP and PCL project contained in the following path inside of your solution folder
+
+Components/syncfusionessentialstudio-version/lib/uwp/
 
 Components/syncfusionessentialstudio-version/lib/pcl/
 

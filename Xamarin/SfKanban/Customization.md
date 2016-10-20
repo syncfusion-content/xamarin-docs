@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started for Essential Xamarin.Forms Kanban
-description: getting started kanban
+title: Customization for Essential Xamarin.Forms Kanban
+description: customization kanban
 platform: xamarin
 control: Kanban
 documentation: ug

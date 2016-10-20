@@ -88,12 +88,12 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ## Create a simple SfKanban
 
-This section explains how to create a SfKanban and configure it. 
+This section explains how to create a ['SfKanban'](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban.html) and configure it. 
 This is how the final output will look like on iOS, Android and Windows devices. You can download the entire source code of this demo for Xamarin.Forms from [here](http://files2.syncfusion.com/Xamarin.iOS/Samples/KanbanForms_GettingStarted.zip).
 
 ![](Getting-Started_images/gettingstarted.png)
 
-In this walk through, you will create a new application that contains the SfKanban which includes the below topics.
+In this walk through, you will create a new application that contains the ['SfKanban'](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban.html) which includes the below topics.
 
 * Adding SfKanban in Xamarin.Forms
 * Create data model
@@ -105,8 +105,8 @@ In this walk through, you will create a new application that contains the SfKanb
 ## Adding SfKanban in Xamarin.Forms
 
 1. Add the required assembly references to the project as discussed in the _Reference Essential Studio Components in your Solution_ section.
-2. Import `SfKanban` control namespace.
-3. Create an instance of `SfKanban` control and set to Content property of a Page.
+2. Import ['SfKanban'](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban.html) control namespace.
+3. Create an instance of [`SfKanban`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban.html) control and set to Content property of a Page.
 
 {% tabs %}   
 {% highlight C# %}
@@ -125,7 +125,7 @@ this.Content = kanban;
 
 ## Create KanbanModel for the SfKanban
 
-Create a collection of `KanbanModel` objects for populating `SfKanban`.
+Create a collection of [`KanbanModel`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanModel.html) objects for populating [`SfKanban`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban.html).
 {% highlight C# %}
 
 using System;
@@ -207,7 +207,7 @@ namespace GettingStartedKanban
 {% endhighlight %}
 
 ## Binding data to SfKanban
-In order to bind the data source of the `SfKanban`, set `ItemsSource` property as shown below. The following code binds the collection created in previous step to `ItemsSource` property.
+In order to bind the data source of the [`SfKanban`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban.html), set [`ItemsSource`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~ItemsSource.html) property as shown below. The following code binds the collection created in previous step to [`ItemsSource`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~ItemsSource.html) property.
 
 {% tabs %}   
 {% highlight C# %}
@@ -225,13 +225,13 @@ kanban.ItemsSource = model.Cards;
 
 ## Defining Columns
 
-By default, we need to define the columns manually by adding the `KanbanColumn` object to the `Columns` collection property in `SfKanban`.
+By default, we need to define the columns manually by adding the [`KanbanColumn`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanColumn.html) object to the [`Columns`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~Columns.html) collection property in [`SfKanban`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban.html).
 
-`ItemsSource` which was bound to the kanban will be added to the respective columns using `ColumnMappingPath` property in `SfKanban` and `Categories` collection property in `KanbanColumn`.
+[`ItemsSource`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~ItemsSource.html) which was bound to the kanban will be added to the respective columns using [`ColumnMappingPath`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~ColumnMappingPath.html) property in [`SfKanban`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban.html) and [`Categories`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanColumn~Categories.html) collection property in [`KanbanColumn`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanColumn.html).
 
-We need to set the required property name to `ColumnMappingPath` which will be essential to add the data to the respective columns.
+We need to set the required property name to [`ColumnMappingPath`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~ColumnMappingPath.html) which will be essential to add the data to the respective columns.
 
-In this example, the data whose `Category` property�s value is set as `Open` will be added to the todo Column and other data will be added to the respective columns.
+In this example, the data whose [`Category`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanColumn~Categories.html) property�s value is set as Open will be added to the todo Column and other data will be added to the respective columns.
 
 The following code example illustrates how this can be done.
 
@@ -280,20 +280,20 @@ kanban.Columns.Add(doneColumn);
 {% endhighlight %}
 {% endtabs %}
 
-You can also set `AutoGenerateColumns` property to true in which you don't need to define the columns as mentioned in the above example. This will create columns depending on the `ColumnMappingPath` property for all the distinct values in `ItemsSource`.
+You can also set [`AutoGenerateColumns`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~AutoGenerateColumns.html) property to true in which you don't need to define the columns as mentioned in the above example. This will create columns depending on the [`ColumnMappingPath`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~ColumnMappingPath.html) property for all the distinct values in [`ItemsSource`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~ItemsSource.html).
 
-When the columns are auto-generated, you can handle the `ColumnsGenerated` event to customize the columns after they are added to the `ActualColumns` collection in `SfKanban`.
+When the columns are auto-generated, you can handle the [`ColumnsGenerated`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~ColumnsGenerated_EV.html) event to customize the columns after they are added to the [`ActualColumns`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~ActualColumns.html) collection in SfKanban.
 
 ##Working with workflows
 
-A Kanban workflow is a set of `Category` and  `AllowedTransitions`, that an item moves through during its lifecycle and typically represents processes within your organization.
+A Kanban workflow is a set of [`Category`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanColumn~Categories.html) and ['AllowedTransitions'](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanWorkflow~AllowedTransitions.html), that an item moves through during its lifecycle and typically represents processes within your organization.
 
-`Category` represents a state of an item at a particular point in a specific workflow. An item can be in only one category at a specific point of time.
+[`Category`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanColumn~Categories.html) represents a state of an item at a particular point in a specific workflow. An item can be in only one category at a specific point of time.
 
-`AllowedTransitions` is a list of categories to where the card can be moved from the current category.
+['AllowedTransitions'](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanWorkflow~AllowedTransitions.html) is a list of categories to where the card can be moved from the current category.
 
 ## Creating the workflows
-Initialize `Workflows` property with a list of `KanbanWorkflow` instances. Each instance represents a workflow in Kanban. The following code example illustrates how this can be done.
+Initialize [`Workflows`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~Workflows.html) property with a list of [`KanbanWorkflow`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanWorkflow.html) instances. Each instance represents a workflow in Kanban. The following code example illustrates how this can be done.
 
 {% highlight C# %}
 
@@ -316,7 +316,7 @@ kanban.Workflows = workflows;
 
 ## Work In-Progress Limit
 
-In column, you can set minimum and maximum items limit by using the `MinimumLimit` and `MaximumLimit` properties. However, this will not restrict moving the items from one column to another column. But the violation of the limit can be indicated by changing the color of the error bar.
+In column, you can set minimum and maximum items limit by using the [`MinimumLimit`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanColumn~MinimumLimit.html) and [`MaximumLimit`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanColumn~MaximumLimit.html) properties. However, this will not restrict moving the items from one column to another column. But the violation of the limit can be indicated by changing the color of the error bar.
 
 {% tabs %}   
 {% highlight C# %}
@@ -334,10 +334,10 @@ todoColumn.MaximumLimit = 10;
 {% highlight C# %}
 
 Following properties are used to customize its appearance.
-* Color : used to change the default color of the error bar
-* MaxValidationColor : used to change the maximum validation color of the error bar
-* MinValidationColor : used to change the minimum validation color of the error bar
-* Height : used to change the height of the error bar
+* ['Color'](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanErrorBarSettings~Color.html) : used to change the default color of the error bar
+* ['MaxValidationColor'](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanErrorBarSettings~MaxValidationColor.html) : used to change the maximum validation color of the error bar
+* ['MinValidationColor'](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanErrorBarSettings~MinValidationColor.html) : used to change the minimum validation color of the error bar
+* ['Height'](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanErrorBarSettings~Height.html) : used to change the height of the error bar
 
 {% highlight C# %}
 todoColumn.ErrorbarSettings.Color = Color.Green;

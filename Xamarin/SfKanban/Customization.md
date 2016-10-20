@@ -9,7 +9,7 @@ documentation: ug
 
 # Customization
 
-'PlaceHolderStyle' – It is used to customize the place holder of Kanban cards.
+['PlaceHolderStyle'](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~PlaceholderStyle.html) – It is used to customize the place holder of Kanban cards.
 
 {% tabs %}
 
@@ -54,7 +54,7 @@ SelectedBackground – Indicates the color, when hover on any category of multip
 ![](SfKanban_images/SfKanban_img6.png)
 
 
-Kanban Card Template - You can customize the appearance of the cards with your own template by using 'CardTemplate' property.
+Kanban Card Template - You can customize the appearance of the cards with your own template by using ['CardTemplate'](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~CardTemplate.html) property.
 
 {% tabs %}
 
@@ -145,7 +145,7 @@ kanban.CardTemplate = cardTemplate;
 
 ![](SfKanban_images/SfKanban_img7.png)
 
-Kanban Column Header Template – We can also define template for column header using 'HeaderTemplate' property.
+Kanban Column Header Template – We can also define template for column header using ['HeaderTemplate'](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~HeaderTemplate.html) property.
 
 {% tabs %}
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization for Essential Xamarin.Forms Kanban
-description: customization kanban
+title: Customization of Kanban Control
+description: Customization of Kanban Control
 platform: xamarin
 control: Kanban
 documentation: ug

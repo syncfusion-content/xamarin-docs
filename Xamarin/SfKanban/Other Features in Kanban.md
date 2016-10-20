@@ -9,9 +9,9 @@ documentation: ug
 
 # Other features in Kanban
 
-AllowDrag – It enable or disable the dragging cards in the corresponding Kanban column.
+['AllowDrag'](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanColumn~AllowDrag.html) – It enable or disable the dragging cards in the corresponding Kanban column.
 
-AllowDrop – It used to enable or disable the Kanban column to drop the Kanban cards while dragging. 
+['AllowDrop'](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanColumn~AllowDrop.html) – It used to enable or disable the Kanban column to drop the Kanban cards while dragging. 
 
 {% tabs %}
 
@@ -39,7 +39,7 @@ kanban.Columns.Add(column);
 
 {% endhighlight %} {% endtabs %}
 
-Kanban Column Width – we can modify the default width of the kanban columns using ColumnWidth property
+Kanban Column Width – we can modify the default width of the kanban columns using ['ColumnWidth'](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~ColumnWidth.html) property
 
 {% tabs %}
 
@@ -65,7 +65,7 @@ kanban.ColumnWidth = 200;
 
 #Kanban Expand/Collapse Column 
 
-Columns can be collapsed or expanded interactively using IsExpanded property. Also set card limits for columns using MaximumLimit, MinimumLimit properties.
+Columns can be collapsed or expanded interactively using ['IsExpanded'](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanColumn~IsExpanded.html) property. Also set card limits for columns using ['MaximumLimit'](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanColumn~MaximumLimit.html), ['MinimumLimit'](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanColumn~MinimumLimit.html) properties.
 
 {% tabs %}
 
@@ -100,32 +100,32 @@ kanban.Columns.Add(column2);
 
 # Events
 
-'itemTapped'
+['itemTapped'](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~ItemTapped_EV.html)
 
 This event will be fired when we tap on the item.
 
-'dragStart'
+['dragStart'](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~DragStart_EV.html)
 ' 
 This event will be fired when we start to drag a item.
 
-'dragEnd'
+['dragEnd'](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~DragEnd_EV.html)
 
 This event should be fired whenever dragging is cancelled in following cases,
 Event can be cancelled. When this event is cancelled, item will not be dropped on to the target column.
 
-'dragEnter'
+['dragEnter'](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~DragEnter_EV.html)
 
 This event should be fired when a item enters a column. Event can be cancelled. When it is cancelled, DragOver events will not be fired for that target column at all and placeholder should not appear on further move over the same column.
 
-'dragLeave'
+['dragLeave'](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~DragLeave_EV.html)
 
 This event should be fired when the item leaves the column. So it means, this event should be preceded by DragStart or DragEnter events.
 
-'dragOver'
+['dragOver'](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~DragOver_EV.html)
 
 This event will be fired when placeholder appears in new position or whenever placeholder position changes on further move within same column.  Usually this event will be called after DragStart or DragEnter events.
 
-'columnsGenerated'
+['columnsGenerated'](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~ColumnsGenerated_EV.html)
  
 This event will be fired when after the columns are auto-generated.  In this event, user can change the header text of the column.
 

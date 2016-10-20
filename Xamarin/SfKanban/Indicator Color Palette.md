@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started for Essential Xamarin.Forms Kanban
-description: getting started kanban
+title: Indicator Color Model for Essential Xamarin.Forms Kanban
+description: indicator color model
 platform: xamarin
 control: Kanban
 documentation: ug

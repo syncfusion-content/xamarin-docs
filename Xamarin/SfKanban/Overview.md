@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-The Kanban control is an efficient way to visualize a workflow at each stage of completion. Kanban helps to define elegant planning and clear visualization of work progression. SfKanban also provide many features that are used to monitor the progressing tasks in software development cycle.
+The Kanban control is an efficient way to visualize a workflow at each stage of completion. Kanban helps to define elegant planning and clear visualization of work progression. ['SfKanban'](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban.html) also provide many features that are used to monitor the progressing tasks in software development cycle.
 
 ![](Overview_images/Overview_img.png)           
 

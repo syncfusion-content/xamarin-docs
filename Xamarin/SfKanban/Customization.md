@@ -49,12 +49,11 @@ kanban.PlaceholderStyle = style;
 ![](SfKanban_images/SfKanban_img5.png)
 
 
-SelectedBackground – Indicates the color, when hover on any category of multiple categories in a single column as shown in the below snapshot.
+['SelectedBackground'](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle~SelectedBackgroundColor.html) – Indicates the color, when hover on any category of multiple categories in a single column as shown in the below snapshot.
 
 ![](SfKanban_images/SfKanban_img6.png)
 
-
-Kanban Card Template - You can customize the appearance of the cards with your own template by using ['CardTemplate'](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~CardTemplate.html) property.
+['CardTemplate'](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~CardTemplate.html) - You can customize the appearance of the cards with your own template by using this property.
 
 {% tabs %}
 
@@ -145,7 +144,7 @@ kanban.CardTemplate = cardTemplate;
 
 ![](SfKanban_images/SfKanban_img7.png)
 
-Kanban Column Header Template – We can also define template for column header using ['HeaderTemplate'](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~HeaderTemplate.html) property.
+['HeaderTemplate'](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~HeaderTemplate.html) – We can also define template for column header using ['HeaderTemplate'](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~HeaderTemplate.html) property.
 
 {% tabs %}
 

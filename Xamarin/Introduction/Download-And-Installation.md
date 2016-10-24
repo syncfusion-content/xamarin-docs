@@ -13,7 +13,7 @@ documentation: ug
 
 Refer to [this](https://developer.xamarin.com/guides/cross-platform/application_fundamentals/components_walkthrough) article to know how to add a Xamarin Component Store component to Xamarin.Forms application.
 
-## Install Syncfusion’s NuGet package in Xamarin.Studio
+## Install Syncfusion’s NuGet package in Xamarin Studio
 
 Following are the step by step instructions for configuring Syncfusion NuGet packages within Xamarin studio,
 

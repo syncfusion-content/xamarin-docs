@@ -69,27 +69,24 @@ public void ItemsSourceRefresh()
 //OrderInfoRepository.cs
 public ObservableCollection<OrderInfo> GetOrderDetails (int count)
 {
-	ObservableCollection<OrderInfo> orderDetails = new ObservableCollection<OrderInfo> ();
+    ObservableCollection<OrderInfo> orderDetails = new ObservableCollection<OrderInfo> ();
 
-	for (int i = 10001; i <= count + 10000; i++) 
-    {
-	    var ord = new OrderInfo () 
-        {
-		    OrderID = i,
-		    CustomerID = CustomerID [random.Next (7)],
-		    EmployeeID = random.Next (1700, 1800).ToString (),
-		    FirstName = FirstNames [random.Next (7)],
-		    LastName = LastNames [random.Next (7)]
+    for (int i = 10001; i <= count + 10000; i++) {
+        var ord = new OrderInfo () {
+            OrderID = i,
+            CustomerID = CustomerID [random.Next (7)],
+            EmployeeID = random.Next (1700, 1800).ToString (),
+            FirstName = FirstNames [random.Next (7)],
+            LastName = LastNames [random.Next (7)]
         };
-	    orderDetails.Add (ord);
+        orderDetails.Add (ord);
     }
-	return orderDetails;
+    return orderDetails;
 }
 
 public OrderInfo RefreshItemsource(int i)
 {
-    var order = new OrderInfo()
-    {
+    var order = new OrderInfo(){
         OrderID = i,
         CustomerID = CustomerID[random.Next(7)],
         EmployeeID = random.Next(1700, 1800).ToString(),
@@ -100,37 +97,34 @@ public OrderInfo RefreshItemsource(int i)
 }
 
 //Main DataSources
-string[] FirstNames = new string[] 
-{
+string[] FirstNames = new string[] {
     "Kyle",
-	"Gina",
-	"Irene",
-	"Katie",
-	"Michael",
-	"Oscar",
-	"Ralph"
+    "Gina",
+    "Irene",
+    "Katie",
+    "Michael",
+    "Oscar",
+    "Ralph"
 };
 
-string[] LastNames = new string[] 
-{
-	"Adams",
-	"Crowley",
-	"Ellis",
-	"Gable",
-	"Irvine",
-	"Keefe",
-	"Mendoza"
+string[] LastNames = new string[] {
+    "Adams",
+    "Crowley",
+    "Ellis",
+    "Gable",
+    "Irvine",
+    "Keefe",
+    "Mendoza"
 };
 
-string[] CustomerID = new string[] 
-{
-	"Alfki",
-	"Frans",
-	"Merep",
-	"Folko",
-	"Simob",
-	"Warth",
-	"Vaffe"
+string[] CustomerID = new string[] {
+    "Alfki",
+    "Frans",
+    "Merep",
+    "Folko",
+    "Simob",
+    "Warth",
+    "Vaffe"
 };
 {% endhighlight %}
 

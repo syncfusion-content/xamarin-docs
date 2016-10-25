@@ -66,36 +66,3 @@ void DataGrid_QueryRowHeight (object sender, QueryRowHeightEventArgs e)
 } 
 {% endhighlight %}
 
-## Set the row height based on its content
-
-You can set the row height based on its content using the `SfDataGrid.QueryRowHeight` event handler where you can call the [SfDataGridHelpers.GetRowHeight](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGridHelpers~GetRowHeight(SfDataGrid,Int32).html) method. This helps in improving the readability of the content.
-
-`SfDataGridHelpers.GetRowHeight` method returns the calculated height based on the content which can be assigned to the Height property of `QueryRowHeightEventArgs`.
-
-Below are the parameters of the `SfDataGridHelpers.GetRowHeight` method,
-
-* `SfDataGrid` - denotes the current instance of the SfDataGrid
-
-* `RowIndex` – denotes the index of a row in SfDataGrid
-
-The following code example illustrates how to hook the `SfDatagrid.QueryRowHeight` event and customize a row‘s height based on its content in SfDataGrid.
-
-{% highlight c# %}
-//Hooks QueryRowHeight event in SfDataGrid
-dataGrid.QueryRowHeight += DataGrid_QueryRowHeight;  
-
-void DataGrid_QueryRowHeight (object sender, QueryRowHeightEventArgs e)
-{
-    //Returns the height of the rows based on its content
-    double height = SfDataGridHelpers.GetRowHeight(dataGrid, e.RowIndex);
-    e.Height = height;
-    e.Handled = true;
-} 
-{% endhighlight %}
-
-The following screenshot shows the final outcome upon applying AutoRowHeight to the rows of the SfDatagrid
-
-![](SfDataGrid_images/AutoRowHeight.png)
-
-N> Only columns with LineBreakMode WordWrap and CharacterWrap are considered for AutoRowHeight calculations.
-

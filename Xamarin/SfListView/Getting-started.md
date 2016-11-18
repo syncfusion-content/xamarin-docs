@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with SfListView.
+title: Getting started | SfListView | Xamarin | Syncfusion
 description: Getting started with SfListView.
 platform: xamarin
 control: SfListView

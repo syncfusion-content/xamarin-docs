@@ -91,6 +91,8 @@ This section explains how to create a SfListView and configure it. The SfListVie
  
 ![](SfListView_images/SfListView-Xamarin_img1.png)
 
+You can also download the entire source code of this demo from [here](http://files2.syncfusion.com/Xamarin.Forms/Samples/DataGrid_GettingStartedForms.zip).
+
 In this walk through, you will create a new application that contains the SfListView which includes the below topics.
 
 * [Creating the project](#creating-the-project) 

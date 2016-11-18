@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of SfListView
+title: Overview | SfListView | Xamarin | Syncfusion
 description: Overview
 platform: xamarin
 control: SfListView

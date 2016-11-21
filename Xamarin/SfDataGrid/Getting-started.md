@@ -44,18 +44,6 @@ The following list of assemblies need to be added as reference from the lib fold
 <td>pcl\Syncfusion.Data.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfDataGrid.XForms.dll<br/>ios-unified\Syncfusion.SfDataGrid.XForms.iOS.dll<br/></td>
 </tr>
 <tr>
-<td>Windows Phone Renderer</td>
-<td>pcl\Syncfusion.Data.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfDataGrid.XForms.dll<br/>wp8\Syncfusion.SfDataGrid.XForms.WinPhone.dll<br/></td>
-</tr>
-<tr>
-<td>Windows Phone 8.1 Renderer</td>
-<td>pcl\Syncfusion.Data.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfDataGrid.XForms.dll<br/>wp81\Syncfusion.SfDataGrid.XForms.WinPhone.dll<br/></td>
-</tr>
-<tr>
-<td>WinRT Renderer</td>
-<td>pcl\Syncfusion.Data.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfDataGrid.XForms.dll<br/>winrt\Syncfusion.SfDataGrid.XForms.WinRT.dll<br/></td>
-</tr>
-<tr>
 <td>UWP Renderer</td>
 <td>pcl\Syncfusion.Data.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfDataGrid.XForms.dll<br/>uwp\Syncfusion.SfDataGrid.XForms.UWP.dll<br/></td>
 </tr>
@@ -100,20 +88,6 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 ### Universal Windows Platform (UWP)
 
 To launch the SfDataGrid in UWP, you need to call the `SfDataGridRenderer.Init()` in the `MainPage` constructor before the LoadApplication is called, as demonstrated in the following code example:
-
-{% highlight c# %}
-public MainPage()
-{
-    …
-    SfDataGridRenderer.Init();
-    LoadApplication (new App ());
-    …
-}
-{% endhighlight %}
-
-### Windows Phone 8.1 (WinRT), Windows Phone 8
-
-To launch the SfDataGrid in Windows Phone or WinRT, you need to call the `SfDataGridRenderer.Init()` in the `MainPage` constructor before the LoadApplication is called, as demonstrated in the following code example:
 
 {% highlight c# %}
 public MainPage()

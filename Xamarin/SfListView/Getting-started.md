@@ -84,6 +84,7 @@ public MainPage()
     LoadApplication (new App ());
     …
 }
+{% endhighlight %} 
 
 ## Create a simple SfListView 
 

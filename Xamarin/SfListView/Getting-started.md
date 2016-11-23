@@ -88,7 +88,7 @@ public MainPage()
 
 ## Create a simple SfListView 
 
-This section explains how to create a SfListView and configure it. The SfListView control can be configured entirely in C# code or by using XAML markup. This is how the listview will look like on iOS, Android and Windows devices.
+This section explains how to create a SfListView and configure it. The SfListView control can be configured entirely in C# code or by using XAML markup. This is how the SfListView will look like on iOS, Android and Windows devices.
  
 ![](SfListView_images/SfListView-Xamarin_img1.png)
 

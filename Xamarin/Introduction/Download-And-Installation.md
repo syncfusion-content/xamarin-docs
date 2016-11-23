@@ -123,7 +123,7 @@ Once the NuGet source has been added, then install the NuGet package which is av
 
 mono nuget.exe install [Package name] 
 
-For Ex: mono nuget.exe install “Syncfusion.Xamarin.Calcuate" 
+For Ex: mono nuget.exe install “Syncfusion.Xamarin.Calculate" 
      
 For Linux OS :
 

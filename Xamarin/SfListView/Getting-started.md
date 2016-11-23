@@ -88,11 +88,9 @@ public MainPage()
 
 ## Create a simple SfListView 
 
-This section explains how to create a SfListView and configure it. The SfListView control can be configured entirely in C# code or by using XAML markup. This is how the final output will look like on iOS, Android and Windows Phone devices.
+This section explains how to create a SfListView and configure it. The SfListView control can be configured entirely in C# code or by using XAML markup. This is how the list view will look like on iOS, Android and Windows devices.
  
 ![](SfListView_images/SfListView-Xamarin_img1.png)
-
-You can also download the entire source code of this demo from [here](http://files2.syncfusion.com/Xamarin.Forms/Samples/ListView_GettingStarted.zip).
 
 In this walk through, you will create a new application that contains the SfListView which includes the below topics.
 
@@ -234,7 +232,7 @@ public class BookInfoRepository
 
 ## Binding data to SfListView
 
-To bind the data source of the SfListView, set the `SfListView.ItemsSource` property as shown below. You can bind the data source of the SfListView either from XAML or in code. 
+To bind the data source of the SfListView, set the [SfListView.ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemsSource.html) property as shown below. You can bind the data source of the SfListView either from XAML or in code. 
 
 The following code example binds the collection created in previous step to `SfListView.ItemsSource` property.
 
@@ -263,7 +261,7 @@ listView.ItemsSource = viewModel.BookInfo;
 
 ## Defining an ItemTemplate
  
- By defining the `ItemTemplate` of the SfListView, a custom user interface(UI) can be achieved to display the data items. 
+ By defining the [SfListView.ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html) of the SfListView, a custom user interface(UI) can be achieved to display the data items. 
  
 {% tabs %}
 {% highlight xaml %}
@@ -324,19 +322,19 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-Now run the application to render the following output.
+Now run the application to render the following output. You can also download the entire source code of this demo from [here](http://files2.syncfusion.com/Xamarin.Forms/Samples/ListView_GettingStarted.zip).
 
 ![](SfListView_images/SfListView-Xamarin_img2.png)
 
 ## Sorting
 
-SfListView allows you to apply sorting on its data by using `DataSource.SortDescriptors` property. You can create a `SortDescriptor` for the property to be sorted and add it into the `DataSource.SortDescriptors` collection.
-You can refresh the view by calling `SfListView.RefreshView` method. 
+SfListView allows you to apply sorting on its data by using [SfListView.DataSource.SortDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~SortDescriptors.html) property. You can create a [SortDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.SortDescriptor.html) for the property to be sorted and add it into the `DataSource.SortDescriptors` collection.
+You can refresh the view by calling [SfListView.RefreshView](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~RefreshView.html) method. 
 
 SortDescriptor object holds following three properties:
 
 * PropertyName: Name of the sorted property.
-* Direction: An object of type `ListSortDirection` defines the sorting direction.
+* Direction: An object of type [ListSortDirection](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.ListSortDirection.html) defines the sorting direction.
 * Comparer: Comparer to be applied in when sorting take place
  
 {% tabs %}
@@ -364,77 +362,56 @@ SortDescriptor object holds following three properties:
 
 ## Filtering
 
-SfListView provides support to filter the records in view by setting predicate to the SfListView.DataSource.Filter property. You have to call the SfListView.DataSource.RefreshFilter() method after assigning the Filter property for refreshing the view.
+SfListView provides support to filter the records in view by setting predicate to the [SfListView.DataSource.Filter](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~Filter.html) property. You have to call the [DataSource.RefreshFilter](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~RefreshFilter.html) method after assigning the Filter property for refreshing the view.
 
 The following code example illustrates how to filter the items based on the Title property of underlying data by using `FilterContacts` method.
  
-{% highlight xaml %}
-//Filtering.xaml
-
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:sync="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
-             xmlns:local="clr-namespace:SfListViewSample;assembly=SfListViewSample"
-             x:Class="SfListViewSample.MainPage">
-
-    <ContentPage.BindingContext>
-        <local:ViewModel x:Name="viewModel" />
-    </ContentPage.BindingContext>
-
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="50" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-
-        <SearchBar x:Name="filterText" Placeholder="Search here to filter"
-                   TextChanged="OnFilterTextChanged" />
-
-        <sync:SfListView x:Name="listView"
-                               Grid.Row="1"
-                               ItemsSource="{Binding Items}" />
-    </Grid>
-</ContentPage> 
-{% endhighlight %}
-
 {% highlight c# %}
-//Filtering.xaml.cs
+var grid = new Grid();
 
- SearchBar searchBar = null;
- private void OnFilterTextChanged(object sender, TextChangedEventArgs e)
- {
-   searchBar = (sender as SearchBar);
-   if (listView.DataSource != null)
-    {
-      this.listView.DataSource.Filter = FilterContacts;
-      this.listView.DataSource.RefreshFilter();
-    }
- }
+var searchbar = new SearchBar() { Placeholder = "Search here to filter" };
+searchbar.TextChanged += OnFilterTextChanged;
 
- private bool FilterContacts(object obj)
- {
-   if (searchBar == null || searchBar.Text == null)
+listView = new SfListView();
+listView.ItemsSource = viewmodel.customerDetails;
+
+grid.Children.Add(searchbar);
+grid.Children.Add(listView, 0, 1);
+...
+private void OnFilterTextChanged(object sender, TextChangedEventArgs e)
+{
+  searchBar = (sender as SearchBar);
+  if (listView.DataSource != null)
+  {
+     this.listView.DataSource.Filter = FilterContacts;
+     this.listView.DataSource.RefreshFilter();
+  }
+}
+
+private bool FilterContacts(object obj)
+{
+  if (searchBar == null || searchBar.Text == null)
     return true;
 
-   var taskInfo = obj as TaskInfo;
-   if (taskInfo.Title.ToLower().Contains(searchBar.Text.ToLower())
-       || taskInfo.Title.ToLower().Contains(searchBar.Text.ToLower()))
-        return true;
-   else
-        return false;
- }
+  var taskInfo = obj as TaskInfo;
+  if (taskInfo.Title.ToLower().Contains(searchBar.Text.ToLower())
+      || taskInfo.Title.ToLower().Contains(searchBar.Text.ToLower()))
+      return true;
+  else
+      return false;
+}
 {% endhighlight %}
 
 ## Grouping
 
-SfListView allows you to display the items in a group by using the `DataSource.GroupDescriptors` property. You can create a `GroupDescriptor` for the property to be grouped and add it in the `DataSource.GroupDescriptors` collection. 
+SfListView allows you to display the items in a group by using the [SfListView.DataSource.GroupDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~GroupDescriptors.html) property. You can create a [GroupDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor.html) for the property to be grouped and add it in the `DataSource.GroupDescriptors` collection. 
 `GroupDescriptor` object holds the following properties:
 
 * PropertyName: Name of the property to be grouped.
 * KeySelector: Selector to return the group key.
 * Comparer: Comparer to be applied in when sorting take place.
 
-It also provides support to stick the group header by enabling the property `SfListView.IsStickyGroupHeader`.
+It also provides support to stick the group header by enabling the property [SfListView.IsStickyGroupHeader](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsStickyGroupHeader.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -456,11 +433,11 @@ It also provides support to stick the group header by enabling the property `SfL
 
 ## Selection
 
-SfListView allows you to select the item by setting the `SfListView.SelectionMode` property. You can set the `SfListView.SelectionMode` property to single, multiple and none based on your requirements. Information about the selected item can be tracked using `SfListView.SelectedItem` and `SfListView.SelectedItems` properties. It also allows you to change the selection highlight color by using the `SfListView.SelectionBackgroundColor`.
+SfListView allows you to select the item by setting the [SfListView.SelectionMode](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionMode.html) property. You can set the `SfListView.SelectionMode` property to single, multiple and none based on your requirements. Information about the selected item can be tracked using [SfListView.SelectedItem](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItem.html) and [SfListView.SelectedItems](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItems.html) properties. It also allows you to change the selection highlight color by using the [SfListView.SelectionBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionBackgroundColor.html).
 
-You can change the gesture type to select the item by setting the `SfListView.SelectionGesture` property. You can set the `SfListView.SelectionGesture` property to Tap, DoubleTap and Hold based on your requirements.
+You can change the gesture type to select the item by setting the [SfListView.SelectionGesture](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionGesture.html) property. You can set the `SfListView.SelectionGesture` property to Tap, DoubleTap and Hold based on your requirements.
 
-You can handle the selection operations with the help of `SelectionChanging` and `SelectionChanged` events of the SfListView.
+You can handle the selection operations with the help of [SelectionChanging](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionChanging_EV.html) and [SelectionChanged](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionChanged_EV.html) events of the SfListView.
  
 {% tabs %}
 {% highlight xaml %}
@@ -486,8 +463,8 @@ listView.SelectionBackgroundColor = Color.FromHex("#E4E4E4");
 
 ## Header and Footer
 
-SfListView allows you to set the header and footer to your user interface(UI) view by setting the DataTemplate to the `HeaderTemplate` and `FooterTemplate`.
-You can handle the header and footer either scrollable or sticky to the view by enabling or disabling the `IsStickyHeader` and `IsStickyFooter` properties.
+SfListView allows you to set the header and footer to your user interface(UI) view by setting the DataTemplate to the [HeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~HeaderTemplate.html) and [FooterTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~FooterTemplate.html).
+You can handle the header and footer either scrollable or sticky to the view by enabling or disabling the [IsStickyHeader](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsStickyHeader.html) and [IsStickyFooter](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsStickyFooter.html) properties.
  
 {% tabs %}
 {% highlight xaml %}
@@ -533,27 +510,27 @@ ViewModel viewModel = new ViewModel ();
 listView.ItemsSource = viewModel.InboxInfo; 
 listView.IsStickyHeader = true;
 listView.IsStickyFooter = true;
-listView.HeaderTemplate = new DataTemplate(() => {
-                var grid = new Grid();
-                grid.BackgroundColor = Color.FromHex("#4CA1FE");
-                var headerlabel = new Label { BackgroundColor = Color.White, FontSize = 18, FontAttributes = FontAttributes.Bold };
-                headerlabel.Text = "Inbox";
-
-                grid.Children.Add(headerlabel);
-
-                return grid;
-            });
- listView.FooterTemplate = new DataTemplate(() => {
-                var grid = new Grid();
-                grid.BackgroundColor = Color.FromHex("#DC595F");
-                var editimage = new Image();
-                editimage.Source = "Edit.png";
-                var deleteimage = new Image();
-                deleteimage.Source = "Delete.png";
-                
-                grid.Children.Add(editimage);
-                grid.Children.Add(deleteimage, 0, 1);
-                return grid;
-            });
+listView.HeaderTemplate = new DataTemplate(() =>
+{
+  var grid = new Grid();
+  grid.BackgroundColor = Color.FromHex("#4CA1FE");
+  var headerlabel = new Label { BackgroundColor = Color.White, FontSize = 18,
+                                FontAttributes = FontAttributes.Bold };
+  headerlabel.Text = "Inbox";
+  grid.Children.Add(headerlabel);
+  return grid;
+});
+listView.FooterTemplate = new DataTemplate(() =>
+{
+  var grid = new Grid();
+  grid.BackgroundColor = Color.FromHex("#DC595F");
+  var editimage = new Image();
+  editimage.Source = "Edit.png";
+  var deleteimage = new Image();
+  deleteimage.Source = "Delete.png";
+  grid.Children.Add(editimage);
+  grid.Children.Add(deleteimage, 0, 1);
+  return grid;
+});
 {% endhighlight %}
 {% endtabs %}

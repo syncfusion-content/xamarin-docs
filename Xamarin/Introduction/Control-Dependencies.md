@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Control Dependencies | Xamarin Forms | Syncfusion
+title: Control Dependencies
 description: Control Dependencies
 platform: xamarin
-control: Control Dependencies
+control: Introduction
 documentation: ug
 ---
 

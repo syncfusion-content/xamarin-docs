@@ -25,8 +25,6 @@ SfListView for Xamarin.Forms renders set of data items with Xamarin.Forms views 
 
 * Selection with different selection modes and gestures.
 
-* Selection template to load customized template upon selection.
-
 * Swiping - Swipe template for loading views with custom actions.
 
 * Header and Footer with sticky options.

@@ -9,814 +9,583 @@ documentation: ug
 
 # Control Dependencies
 
-This page illustrates the required assemblies need to be referred for each control.
+This page lists the assemblies required for each control to be referred in each platform project.
 
 ## SfChart
 
-### PCL project
-
-Syncfusion.SfChart.XForms.dll
-
-### Android project
-
-Syncfusion.SfChart.Andriod.dll
-
-Syncfusion.SfChart.XForms.Andriod.dll
-
-Syncfusion.SfChart.XForms.dll
-
-### iOS project
-
-Syncfusion.SfChart.iOS.dll
-
-Syncfusion.SfChart.XForms.iOS.dll
-
-Syncfusion.SfChart.XForms.dll
-
-### UWP project
-
-Syncfusion.SfChart.UWP.dll
-
-Syncfusion.SfChart.XForms.dll
-
-Syncfusion.SfChart.XForms.UWP.dll
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfChart.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfChart.Andriod.dll<br/>Syncfusion.SfChart.XForms.Andriod.dll<br/>Syncfusion.SfChart.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfChart.iOS.dll<br/>Syncfusion.SfChart.XForms.iOS.dll<br/>Syncfusion.SfChart.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfChart.UWP.dll<br/>Syncfusion.SfChart.XForms.UWP.dll<br/>Syncfusion.SfChart.XForms.dll<br/></td>
+</tr>
+</table>
 
 ## SfPdfViewer
 
-### PCL project
-
-Syncfusion.SfPdfViewer.XForms.dll
-
-### Android project
-
-Syncfusion. SfPdfViewer.XForms.Andriod.dll
-
-Syncfusion. SfPdfViewer.XForms.dll
-
-### iOS project
-
-Syncfusion. SfPdfViewer.XForms.iOS.dll
-
-Syncfusion. SfPdfViewer.XForms.dll
-
-### UWP project
-
-Syncfusion. SfPdfViewer.XForms.dll
-
-Syncfusion. SfPdfViewer.XForms.UWP.dll
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfPdfViewer.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfPdfViewer.XForms.Andriod.dll<br/>Syncfusion.SfPdfViewer.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfPdfViewer.XForms.iOS.dll<br/>Syncfusion.SfPdfViewer.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfPdfViewer.XForms.dll<br/>Syncfusion.SfPdfViewer.XForms.UWP.dll<br/></td>
+</tr>
+</table>
 
 ## SfSchedule
 
-### PCL project
-
-Syncfusion.SfSchedule.XForms.dll
-
-### Android project
-
-Syncfusion.SfSchedule.Andriod.dll
-
-Syncfusion.SfSchedule.XForms.Andriod.dll
-
-Syncfusion.SfSchedule.XForms.dll
-
-### iOS project
-
-Syncfusion.SfSchedule.iOS.dll
-
-Syncfusion.SfSchedule.XForms.iOS.dll
-
-Syncfusion.SfSchedule.XForms.dll
-
-### UWP project
-
-Syncfusion.SfSchedule.UWP.dll
-
-Syncfusion.SfSchedule.XForms.dll
-
-Syncfusion.SfSchedule.XForms.UWP.dll
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfSchedule.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfSchedule.Andriod.dll<br/>Syncfusion.SfSchedule.XForms.Andriod.dll<br/>Syncfusion.SfSchedule.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfSchedule.iOS.dll<br/>Syncfusion.SfSchedule.XForms.iOS.dll<br/>Syncfusion.SfSchedule.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfSchedule.UWP.dll<br/>Syncfusion.SfSchedule.XForms.UWP.dll<br/>Syncfusion.SfSchedule.XForms.dll<br/></td>
+</tr>
+</table>
 
 ## SfCircularGauge
 
-### PCL project
-
-Syncfusion.SfGauge.XForms.dll
-
-### Android project
-
-Syncfusion.SfGauge.Andriod.dll
-
-Syncfusion.SfGauge.XForms.Andriod.dll
-
-Syncfusion.SfGauge.XForms.dll
-
-### iOS project
-
-Syncfusion.SfGauge.iOS.dll
-
-Syncfusion.SfGauge.XForms.iOS.dll
-
-Syncfusion.SfGauge.XForms.dll
-
-### UWP project
-
-Syncfusion.SfGauge.UWP.dll
-
-Syncfusion.SfGauge.XForms.dll
-
-Syncfusion.SfGauge.XForms.UWP.dll
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfGauge.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfGauge.Andriod.dll<br/>Syncfusion.SfGauge.XForms.Andriod.dll<br/>Syncfusion.SfGauge.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfGauge.iOS.dll<br/>Syncfusion.SfGauge.XForms.iOS.dll<br/>Syncfusion.SfGauge.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfGauge.UWP.dll<br/>Syncfusion.SfGauge.XForms.UWP.dll<br/>Syncfusion.SfGauge.XForms.dll<br/></td>
+</tr>
+</table>
 
 ## DocIO
 
-### PCL project
-
-Syncfusion.DocIO.Portable.dll
-
-Syncfusion.Compression.Portable.dll
-
-Syncfusion.OfficeChart.Portable.dll
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.DocIO.Portable.dll<br/>Syncfusion.Compression.Portable.dll<br/>Syncfusion.OfficeChart.Portable.dll<br/></td>
+</tr>
+</table>
 
 ## PDF
 
-### PCL project
-
-Syncfusion.Pdf.Portable.dll
-
-Syncfusion.Compression.Portable.dll
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.Pdf.Portable.dll<br/>Syncfusion.Compression.Portable.dll<br/></td>
+</tr>
+</table>
 
 ## Presentation
 
-### PCL project
-
-Syncfusion.Presentation.Portable.dll
-
-Syncfusion.Compression.Portable.dll
-
-Syncfusion.OfficeChart.Portable.dll
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.Presentation.Portable.dll<br/>Syncfusion.Compression.Portable.dll<br/>Syncfusion.OfficeChart.Portable.dll<br/></td>
+</tr>
+</table>
 
 ## XlsIO
 
-### PCL project
-
-Syncfusion.XlsIO.Portable.dll
-
-Syncfusion.Compression.Portable.dll
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.XlsIO.Portable.dll<br/>Syncfusion.Compression.Portable.dll<br/></td>
+</tr>
+</table>
 
 ## SfCalendar
 
-### PCL project
-
-Syncfusion.SfCalendar.XForms.dll
-
-### Android project
-
-Syncfusion.SfCalendar.Andriod.dll
-
-Syncfusion.SfCalendar.XForms.Andriod.dll
-
-Syncfusion.SfCalendar.XForms.dll
-
-### iOS project
-
-Syncfusion.SfCalendar.iOS.dll
-
-Syncfusion.SfCalendar.XForms.iOS.dll
-
-Syncfusion.SfCalendar.XForms.dll
-
-### UWP project
-
-Syncfusion.SfInput.UWP.dll
-
-Syncfusion.SfShared.UWP.dll
-
-Syncfusion.SfCalendar.XForms.dll
-
-Syncfusion.SfCalendar.XForms.UWP.dll
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfCalendar.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfCalendar.Andriod.dll<br/>Syncfusion.SfCalendar.XForms.Andriod.dll<br/>Syncfusion.SfCalendar.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfCalendar.iOS.dll<br/>Syncfusion.SfCalendar.XForms.iOS.dll<br/>Syncfusion.SfCalendar.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfInput.UWP.dll<br/>Syncfusion.SfShared.UWP.dll<br/>Syncfusion.SfCalendar.XForms.UWP.dll<br/>Syncfusion.SfCalendar.XForms.dll<br/></td>
+</tr>
+</table>
 
 ## SfCarousel
 
-### PCL project
-
-Syncfusion.SfCarousel.XForms.dll
-
-### Android project
-
-Syncfusion.SfCarousel.Andriod.dll
-
-Syncfusion.SfCarousel.XForms.Andriod.dll
-
-Syncfusion.SfCarousel.XForms.dll
-
-Xamarin.Android.Support.v17.Leanback (from NuGet Packages)
-
-### iOS project
-
-Syncfusion.SfCarousel.iOS.dll
-
-Syncfusion.SfCarousel.XForms.iOS.dll
-
-Syncfusion.SfCarousel.XForms.dll
-
-### UWP project
-
-Syncfusion.SfCarousel.UWP.dll
-
-Syncfusion.SfCarousel.XForms.dll
-
-Syncfusion.SfCarousel.XForms.UWP.dll
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfCarousel.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfCarousel.Andriod.dll<br/>Syncfusion.SfCarousel.XForms.Andriod.dll<br/>Syncfusion.SfCarousel.XForms.dll<br/>Xamarin.Android.Support.v17.Leanback (from NuGet Packages)<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfCarousel.iOS.dll<br/>Syncfusion.SfCarousel.XForms.iOS.dll<br/>Syncfusion.SfCarousel.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfCarousel.UWP.dll<br/>Syncfusion.SfCarousel.XForms.UWP.dll<br/>Syncfusion.SfCarousel.XForms.dll<br/></td>
+</tr>
+</table>
 
 ## SfRotator
 
-### PCL project
-
-Syncfusion.SfRotator.XForms.dll
-
-### Android project
-
-Syncfusion.SfRotator.Andriod.dll
-
-Syncfusion.SfRotator.XForms.Andriod.dll
-
-Syncfusion.SfRotator.XForms.dll
-
-Xamarin.Android.Support.v17.Leanback (from NuGet Packages)
-
-### iOS project
-
-Syncfusion.SfRotator.iOS.dll
-
-Syncfusion.SfRotator.XForms.iOS.dll
-
-Syncfusion.SfRotator.XForms.dll
-
-### UWP project
-
-Syncfusion.SfRotator.UWP.dll
-
-Syncfusion.SfRotator.XForms.dll
-
-Syncfusion.SfRotator.XForms.UWP.dll
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfRotator.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfRotator.Andriod.dll<br/>Syncfusion.SfRotator.XForms.Andriod.dll<br/>Syncfusion.SfRotator.XForms.dll<br/>Xamarin.Android.Support.v17.Leanback (from NuGet Packages)<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfRotator.iOS.dll<br/>Syncfusion.SfRotator.XForms.iOS.dll<br/>Syncfusion.SfRotator.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfRotator.UWP.dll<br/>Syncfusion.SfRotator.XForms.UWP.dll<br/>Syncfusion.SfRotator.XForms.dll<br/></td>
+</tr>
+</table>
 
 ## SfAutoComplete 
 
-### PCL project
-
-Syncfusion.SfAutoComplete.XForms.dll
-
-### Android project
-
-Syncfusion.SfAutoComplete.Andriod.dll
-
-Syncfusion.SfAutoComplete.XForms.Andriod.dll
-
-Syncfusion.SfAutoComplete.XForms.dll
-
-### iOS project
-
-Syncfusion.SfAutoComplete.iOS.dll
-
-Syncfusion.SfAutoComplete.XForms.iOS.dll
-
-Syncfusion.SfAutoComplete.XForms.dll
-
-### UWP project
-
-Syncfusion.SfInput.UWP.dll
-
-Syncfusion.SfShared.UWP.dll
-
-Syncfusion.SfAutoComplete.XForms.dll
-
-Syncfusion.SfAutoComplete.XForms.UWP.dll
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfAutoComplete.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfAutoComplete.Andriod.dll<br/>Syncfusion.SfAutoComplete.XForms.Andriod.dll<br/>Syncfusion.SfAutoComplete.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfAutoComplete.iOS.dll<br/>Syncfusion.SfAutoComplete.XForms.iOS.dll<br/>Syncfusion.SfAutoComplete.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfInput.UWP.dll<br/>Syncfusion.SfShared.UWP.dll<br/>Syncfusion.SfAutoComplete.XForms.UWP.dll<br/>Syncfusion.SfAutoComplete.XForms.dll<br/></td>
+</tr>
+</table>
 
 ## SfBusyIndicator
 
-### PCL project
-
-Syncfusion.SfBusyIndicator.XForms.dll
-
-### Android project
-
-Syncfusion.SfBusyIndicator.Andriod.dll
-
-Syncfusion.SfBusyIndicator.XForms.Andriod.dll
-
-Syncfusion.SfBusyIndicator.XForms.dll
-
-### iOS project
-
-Syncfusion.SfBusyIndicator.iOS.dll
-
-Syncfusion.SfBusyIndicator.XForms.iOS.dll
-
-Syncfusion.SfBusyIndicator.XForms.dll
-
-### UWP project
-
-Syncfusion.SfBusyIndicator.UWP.dll
-
-Syncfusion.SfBusyIndicator.XForms.dll
-
-Syncfusion.SfBusyIndicator.XForms.UWP.dll
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfBusyIndicator.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfBusyIndicator.Andriod.dll<br/>Syncfusion.SfBusyIndicator.XForms.Andriod.dll<br/>Syncfusion.SfBusyIndicator.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfBusyIndicator.iOS.dll<br/>Syncfusion.SfBusyIndicator.XForms.iOS.dll<br/>Syncfusion.SfBusyIndicator.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfBusyIndicator.UWP.dll<br/>Syncfusion.SfBusyIndicator.XForms.UWP.dll<br/>Syncfusion.SfBusyIndicator.XForms.dll<br/></td>
+</tr>
+</table>
 
 ## SfDigitalGauge
 
-### PCL project
-
-Syncfusion.SfGauge.XForms.dll
-
-### Android project
-
-Syncfusion.SfGauge.Andriod.dll
-
-Syncfusion.SfGauge.XForms.Andriod.dll
-
-Syncfusion.SfGauge.XForms.dll
-
-### iOS project
-
-Syncfusion.SfGauge.iOS.dll
-
-Syncfusion.SfGauge.XForms.iOS.dll
-
-Syncfusion.SfGauge.XForms.dll
-
-### UWP project
-
-Syncfusion.SfGauge.UWP.dll
-
-Syncfusion.SfGauge.XForms.dll
-
-Syncfusion.SfGauge.XForms.UWP.dll
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfGauge.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfGauge.Andriod.dll<br/>Syncfusion.SfGauge.XForms.Andriod.dll<br/>Syncfusion.SfGauge.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfGauge.iOS.dll<br/>Syncfusion.SfGauge.XForms.iOS.dll<br/>Syncfusion.SfGauge.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfGauge.UWP.dll<br/>Syncfusion.SfGauge.XForms.UWP.dll<br/>Syncfusion.SfGauge.XForms.dll<br/></td>
+</tr>
+</table>
 
 ## SfLinearGauge
 
-### PCL project
-
-Syncfusion.SfGauge.XForms.dll
-
-### Android project
-
-Syncfusion.SfGauge.Andriod.dll
-
-Syncfusion.SfGauge.XForms.Andriod.dll
-
-Syncfusion.SfGauge.XForms.dll
-
-### iOS project
-
-Syncfusion.SfGauge.iOS.dll
-
-Syncfusion.SfGauge.XForms.iOS.dll
-
-Syncfusion.SfGauge.XForms.dll
-
-### UWP project
-
-Syncfusion.SfGauge.UWP.dll
-
-Syncfusion.SfGauge.XForms.dll
-
-Syncfusion.SfGauge.XForms.UWP.dll
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfGauge.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfGauge.Andriod.dll<br/>Syncfusion.SfGauge.XForms.Andriod.dll<br/>Syncfusion.SfGauge.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfGauge.iOS.dll<br/>Syncfusion.SfGauge.XForms.iOS.dll<br/>Syncfusion.SfGauge.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfGauge.UWP.dll<br/>Syncfusion.SfGauge.XForms.UWP.dll<br/>Syncfusion.SfGauge.XForms.dll<br/></td>
+</tr>
+</table>
 
 ## SfNavigationDrawer
 
-### PCL project
-
-Syncfusion.SfNavigationDrawer.XForms.dll
-
-### Android project
-
-Syncfusion.SfNavigationDrawer.Andriod.dll
-
-Syncfusion.SfNavigationDrawer.XForms.Andriod.dll
-
-Syncfusion.SfNavigationDrawer.XForms.dll
-
-Xamarin.Android.Support.v4(from NuGet Packages)
-
-### iOS project
-
-Syncfusion.SfNavigationDrawer.iOS.dll
-
-Syncfusion.SfNavigationDrawer.XForms.iOS.dll
-
-Syncfusion.SfNavigationDrawer.XForms.dll
-
-### UWP project
-
-Syncfusion.SfNavigationDrawer.UWP.dll
-
-Syncfusion.SfNavigationDrawer.XForms.dll
-
-Syncfusion.SfNavigationDrawer.XForms.UWP.dll
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfNavigationDrawer.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfNavigationDrawer.Andriod.dll<br/>Syncfusion.SfNavigationDrawer.XForms.Andriod.dll<br/>Syncfusion.SfNavigationDrawer.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfNavigationDrawer.iOS.dll<br/>Syncfusion.SfNavigationDrawer.XForms.iOS.dll<br/>Syncfusion.SfNavigationDrawer.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfNavigationDrawer.UWP.dll<br/>Syncfusion.SfNavigationDrawer.XForms.UWP.dll<br/>Syncfusion.SfNavigationDrawer.XForms.dll<br/></td>
+</tr>
+</table>
 
 ## SfNumericTextBox
 
-### PCL project
-
-Syncfusion.SfNumericTextBox.XForms.dll
-
-### Android project
-
-Syncfusion.SfNumericTextBox.Andriod.dll
-
-Syncfusion.SfNumericTextBox.XForms.Andriod.dll
-
-Syncfusion.SfNumericTextBox.XForms.dll
-
-### iOS project
-
-Syncfusion.SfNumericTextBox.iOS.dll
-
-Syncfusion.SfNumericTextBox.XForms.iOS.dll
-
-Syncfusion.SfNumericTextBox.XForms.dll
-
-### UWP project
-
-Syncfusion.SfInput.UWP.dll
-
-Syncfusion.SfShared.UWP.dll
-
-Syncfusion.SfNumericTextBox.XForms.dll
-
-Syncfusion.SfNumericTextBox.XForms.UWP.dll
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfNumericTextBox.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfNumericTextBox.Andriod.dll<br/>Syncfusion.SfNumericTextBox.XForms.Andriod.dll<br/>Syncfusion.SfNumericTextBox.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfNumericTextBox.iOS.dll<br/>Syncfusion.SfNumericTextBox.XForms.iOS.dll<br/>Syncfusion.SfNumericTextBox.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfInput.UWP.dll<br/>Syncfusion.SfShared.UWP.dll<br/>Syncfusion.SfNumericTextBox.XForms.UWP.dll<br/>Syncfusion.SfNumericTextBox.XForms.dll<br/></td>
+</tr>
+</table>
 
 ## SfNumericUpDown
 
-### PCL project
-
-Syncfusion.SfNumericUpDown.XForms.dll
-
-### Android project
-
-Syncfusion.SfNumericUpDown.Andriod.dll
-
-Syncfusion.SfNumericUpDown.XForms.Andriod.dll
-
-Syncfusion.SfNumericUpDown.XForms.dll
-
-### iOS project
-
-Syncfusion.SfNumericUpDown.iOS.dll
-
-Syncfusion.SfNumericUpDown.XForms.iOS.dll
-
-Syncfusion.SfNumericUpDown.XForms.dll
-
-### UWP project
-
-Syncfusion.SfInput.UWP.dll
-
-Syncfusion.SfShared.UWP.dll
-
-Syncfusion.SfNumericUpDown.XForms.dll
-
-Syncfusion.SfNumericUpDown.XForms.UWP.dll
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfNumericUpDown.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfNumericUpDown.Andriod.dll<br/>Syncfusion.SfNumericUpDown.XForms.Andriod.dll<br/>Syncfusion.SfNumericUpDown.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfNumericUpDown.iOS.dll<br/>Syncfusion.SfNumericUpDown.XForms.iOS.dll<br/>Syncfusion.SfNumericUpDown.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfInput.UWP.dll<br/>Syncfusion.SfShared.UWP.dll<br/>Syncfusion.SfNumericUpDown.XForms.UWP.dll<br/>Syncfusion.SfNumericUpDown.XForms.dll<br/></td>
+</tr>
+</table>
 
 ## SfRangeSlider
 
-### PCL project
-
-Syncfusion.SfRangeSlider.XForms.dll
-
-### Android project
-
-Syncfusion.SfRangeSlider.Andriod.dll
-
-Syncfusion.SfRangeSlider.XForms.Andriod.dll
-
-Syncfusion.SfRangeSlider.XForms.dll
-
-### iOS project
-
-Syncfusion.SfRangeSlider.iOS.dll
-
-Syncfusion.SfRangeSlider.XForms.iOS.dll
-
-Syncfusion.SfRangeSlider.XForms.dll
-
-### UWP project
-
-Syncfusion.SfInput.UWP.dll
-
-Syncfusion.SfShared.UWP.dll
-
-Syncfusion.SfRangeSlider.XForms.dll
-
-Syncfusion.SfRangeSlider.XForms.UWP.dll
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfRangeSlider.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfRangeSlider.Andriod.dll<br/>Syncfusion.SfRangeSlider.XForms.Andriod.dll<br/>Syncfusion.SfRangeSlider.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfRangeSlider.iOS.dll<br/>Syncfusion.SfRangeSlider.XForms.iOS.dll<br/>Syncfusion.SfRangeSlider.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfInput.UWP.dll<br/>Syncfusion.SfShared.UWP.dll<br/>Syncfusion.SfRangeSlider.XForms.UWP.dll<br/>Syncfusion.SfRangeSlider.XForms.dll<br/></td>
+</tr>
+</table>
 
 ## SfRating
 
-### PCL project
-
-Syncfusion.SfRating.XForms.dll
-
-### Android project
-
-Syncfusion.SfRating.Andriod.dll
-
-Syncfusion.SfRating.XForms.Andriod.dll
-
-Syncfusion.SfRating.XForms.dll
-
-### iOS project
-
-Syncfusion.SfRating.iOS.dll
-
-Syncfusion.SfRating.XForms.iOS.dll
-
-Syncfusion.SfRating.XForms.dll
-
-### UWP project
-
-Syncfusion.SfInput.UWP.dll
-
-Syncfusion.SfShared.UWP.dll
-
-Syncfusion.SfRating.XForms.dll
-
-Syncfusion.SfRating.XForms.UWP.dll
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfRating.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfRating.Andriod.dll<br/>Syncfusion.SfRating.XForms.Andriod.dll<br/>Syncfusion.SfRating.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfRating.iOS.dll<br/>Syncfusion.SfRating.XForms.iOS.dll<br/>Syncfusion.SfRating.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfInput.UWP.dll<br/>Syncfusion.SfShared.UWP.dll<br/>Syncfusion.SfRating.XForms.UWP.dll<br/>Syncfusion.SfRating.XForms.dll<br/></td>
+</tr>
+</table>
 
 ## SfMaps 
 
-### PCL project
-
-Syncfusion.SfMaps.XForms.dll
-
-### Android project
-
-Syncfusion.SfMaps.Andriod.dll
-
-Syncfusion.SfMaps.XForms.Andriod.dll
-
-Syncfusion.SfMaps.XForms.dll
-
-### iOS project
-
-Syncfusion.SfMaps.iOS.dll
-
-Syncfusion.SfMaps.XForms.iOS.dll
-
-Syncfusion.SfMaps.XForms.dll
-
-### UWP project
-
-Syncfusion.SfMaps.UWP.dll
-
-Syncfusion.SfMaps.XForms.dll
-
-Syncfusion.SfMaps.XForms.UWP.dll
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfMaps.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfMaps.Andriod.dll<br/>Syncfusion.SfMaps.XForms.Andriod.dll<br/>Syncfusion.SfMaps.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfMaps.iOS.dll<br/>Syncfusion.SfMaps.XForms.iOS.dll<br/>Syncfusion.SfMaps.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfMaps.UWP.dll<br/>Syncfusion.SfMaps.XForms.UWP.dll<br/>Syncfusion.SfMaps.XForms.dll<br/></td>
+</tr>
+</table>
 
 ## SfTreeMap 
 
-### PCL project
-
-Syncfusion.SfTreeMap.XForms.dll
-
-### Android project
-
-Syncfusion.SfTreeMap.Andriod.dll
-
-Syncfusion.SfTreeMap.XForms.Andriod.dll
-
-Syncfusion.SfTreeMap.XForms.dll
-
-### iOS project
-
-Syncfusion.SfTreeMap.iOS.dll
-
-Syncfusion.SfTreeMap.XForms.iOS.dll
-
-Syncfusion.SfTreeMap.XForms.dll
-
-### UWP project
-
-Syncfusion.SfTreeMap.UWP.dll
-
-Syncfusion.SfTreeMap.XForms.dll
-
-Syncfusion.SfTreeMap.XForms.UWP.dll
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfTreeMap.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfTreeMap.Andriod.dll<br/>Syncfusion.SfTreeMap.XForms.Andriod.dll<br/>Syncfusion.SfTreeMap.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfTreeMap.iOS.dll<br/>Syncfusion.SfTreeMap.XForms.iOS.dll<br/>Syncfusion.SfTreeMap.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfTreeMap.UWP.dll<br/>Syncfusion.SfTreeMap.XForms.UWP.dll<br/>Syncfusion.SfTreeMap.XForms.dll<br/></td>
+</tr>
+</table>
 
 ## SfPullToRefresh
 
-### PCL project
-
-Syncfusion.SfPullToRefresh.XForms.dll
-
-### Android project
-
-Syncfusion.SfPullToRefresh.Andriod.dll
-
-Syncfusion.SfPullToRefresh.XForms.Andriod.dll
-
-Syncfusion.SfPullToRefresh.XForms.dll
-
-### iOS project
-
-Syncfusion.SfPullToRefresh.iOS.dll
-
-Syncfusion.SfPullToRefresh.XForms.iOS.dll
-
-Syncfusion.SfPullToRefresh.XForms.dll
-
-### UWP project
-
-Syncfusion.SfPullToRefresh.UWP.dll
-
-Syncfusion.SfPullToRefresh.XForms.dll
-
-Syncfusion.SfPullToRefresh.XForms.UWP.dll
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfPullToRefresh.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfPullToRefresh.Andriod.dll<br/>Syncfusion.SfPullToRefresh.XForms.Andriod.dll<br/>Syncfusion.SfPullToRefresh.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfPullToRefresh.iOS.dll<br/>Syncfusion.SfPullToRefresh.XForms.iOS.dll<br/>Syncfusion.SfPullToRefresh.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfPullToRefresh.UWP.dll<br/>Syncfusion.SfPullToRefresh.XForms.UWP.dll<br/>Syncfusion.SfPullToRefresh.XForms.dll<br/></td>
+</tr>
+</table>
 
 ## SfListView
 
-### PCL project
-
-Syncfusion.SfListView.XForms.dll
-
-Syncfusion.DataSource.Portable.dll
-
-### Android project
-
-Syncfusion.SfListView.XForms.Andriod.dll
-
-Syncfusion.SfListView.XForms.dll
-
-### iOS project
-
-Syncfusion.SfListView.XForms.iOS.dll
-
-Syncfusion.SfListView.XForms.dll
-
-### UWP project
-
-Syncfusion.SfListView.XForms.Andriod.dll
-
-Syncfusion.SfListView.XForms.dll
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfListView.XForms.dll<br/>Syncfusion.DataSource.Portable.dll</br></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfListView.XForms.Andriod.dll<br/>Syncfusion.SfListView.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfListView.XForms.iOS.dll<br/>Syncfusion.SfListView.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>>Syncfusion.SfListView.XForms.UWP.dll<br/>Syncfusion.SfListView.XForms.dll<br/></td>
+</tr>
+</table>
 
 ## Calculate
 
-### PCL project
-
-Syncfusion.Calculate.Portable.dll
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.Calculate.Portable.dll</br></td>
+</tr>
+</table>
 
 ## SfKanban
 
-### PCL project
-
-Syncfusion.SfKanban.XForms.dll
-
-### Android project
-
-Syncfusion.SfKanban.Android.dll
-
-Syncfusion.SfKanban.XForms.Android.dll
-
-Syncfusion.SfKanban.XForms.dll
-
-### iOS project
-
-Syncfusion.SfKanban.iOS.dll 
-
-Syncfusion.SfKanban.XForms.iOS.dll
-
-Syncfusion.SfKanban.XForms.dll
-
-### UWP project
-
-Syncfusion.SfKanban.UWP.dll
-
-Syncfusion.SfKanban.XForms.UWP.dll
-
-Syncfusion.SfKanban.XForms.dll
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfKanban.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfKanban.Andriod.dll<br/>Syncfusion.SfKanban.XForms.Andriod.dll<br/>Syncfusion.SfKanban.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfKanban.iOS.dll<br/>Syncfusion.SfKanban.XForms.iOS.dll<br/>Syncfusion.SfKanban.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfKanban.UWP.dll<br/>Syncfusion.SfKanban.XForms.UWP.dll<br/>Syncfusion.SfKanban.XForms.dll<br/></td>
+</tr>
+</table>
 
 ## SfDataGrid
 
-### PCL project
-
-Syncfusion.SfDataGrid.XForms.dll
-
-Syncfusion.GridCommon.Portable.dll
-
-Syncfusion.Data.Portable.dll
-
-### Android project
-
-Syncfusion.GridCommon.Portable.dll
-
-Syncfusion.Data.Portable.dll
-
-Syncfusion.SfDataGrid.XForms.Android.dll
-
-### iOS project
-
-Syncfusion.GridCommon.Portable.dll
-
-Syncfusion.Data.Portable.dll
-
-Syncfusion.SfDataGrid.XForms.iOS.dll
-
-### UWP project
-
-Syncfusion.GridCommon.Portable.dll
-
-Syncfusion.Data.Portable.dll
-
-Syncfusion.SfDataGrid.XForms.UWP.dll
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfDataGrid.XForms.dll<br/>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.Data.Portable.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.Data.Portable.dll<br/>Syncfusion.SfDataGrid.XForms.Android.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.Data.Portable.dll<br/>Syncfusion.SfDataGrid.XForms.iOS.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.Data.Portable.dll<br/>Syncfusion.SfDataGrid.XForms.UWP.dll<br/></td>
+</tr>
+</table>
 
 ## SfDateTimeRangeNavigator
 
-### PCL project
-
-Syncfusion.SfChart.XForms.dll
-
-### Android project
-
-Syncfusion.SfChart.Andriod.dll
-
-Syncfusion.SfChart.XForms.Andriod.dll
-
-Syncfusion.SfChart.XForms.dll
-
-### iOS project
-
-Syncfusion.SfChart.iOS.dll
-
-Syncfusion.SfChart.XForms.iOS.dll
-
-Syncfusion.SfChart.XForms.dll
-
-### UWP project
-
-Syncfusion.SfChart.UWP.dll
-
-Syncfusion.SfChart.XForms.dll
-
-Syncfusion.SfChart.XForms.UWP.dll
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfChart.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfChart.Andriod.dll<br/>Syncfusion.SfChart.XForms.Andriod.dll<br/>Syncfusion.SfChart.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfChart.iOS.dll<br/>Syncfusion.SfChart.XForms.iOS.dll<br/>Syncfusion.SfChart.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfChart.UWP.dll<br/>Syncfusion.SfChart.XForms.UWP.dll<br/>Syncfusion.SfChart.XForms.dll<br/></td>
+</tr>
+</table>
 
 ## SfSparkLine
 
-### PCL project
-
-Syncfusion.SfSparkline.XForms.dll
-
-### Android project
-
-Syncfusion.SfSparkline.Andriod.dll
-
-Syncfusion.SfSparkline.XForms.Andriod.dll
-
-Syncfusion.SfSparkline.XForms.dll
-
-### iOS project
-
-Syncfusion.SfSparkline.iOS.dll
-
-Syncfusion.SfSparkline.XForms.iOS.dll
-
-Syncfusion.SfSparkline.XForms.dll
-
-### UWP project
-
-Syncfusion.SfSparkline.UWP.dll
-
-Syncfusion.SfSparkline.XForms.dll
-
-Syncfusion.SfSparkline.XForms.UWP.dll
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfSparkline.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfSparkline.Andriod.dll<br/>Syncfusion.SfSparkline.XForms.Andriod.dll<br/>Syncfusion.SfSparkline.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfSparkline.iOS.dll<br/>Syncfusion.SfSparkline.XForms.iOS.dll<br/>Syncfusion.SfSparkline.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfSparkline.UWP.dll<br/>Syncfusion.SfSparkline.XForms.UWP.dll<br/>Syncfusion.SfSparkline.XForms.dll<br/></td>
+</tr>
+</table>
 
 ## DataSource
 
-### PCL project
-
-Syncfusion.DataSource.Portable.dll
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.DataSource.Portable.dll</br></td>
+</tr>
+</table>
 
 ## SfBarcode
 
-## PCL project
-
-Syncfusion.SfBarcode.XForms.dll
-
-### Android project
-
-Syncfusion.SfBarcode.Android.dll
-
-Syncfusion.SfBarcode.XForms.dll
-
-Syncfusion. SfBarcode.XForms.Android.dll
-
-### iOS project
-
-Syncfusion.SfBarcode.IOS.dll
-
-Syncfusion.SfBarcode.XForms.dll 
-
-Syncfusion. SfBarcode.XForms.IOS.dll
-
-### UWP project
-
-Syncfusion.SfBarcode.UWP.dll
-
-Syncfusion.SfBarcode.XForms.dll
-
-Syncfusion. SfBarcode.XForms.UWP.dll
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfBarcode.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfBarcode.Andriod.dll<br/>Syncfusion.SfBarcode.XForms.Andriod.dll<br/>Syncfusion.SfBarcode.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfBarcode.iOS.dll<br/>Syncfusion.SfBarcode.XForms.iOS.dll<br/>Syncfusion.SfBarcode.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfBarcode.UWP.dll<br/>Syncfusion.SfBarcode.XForms.UWP.dll<br/>Syncfusion.SfBarcode.XForms.dll<br/></td>
+</tr>
+</table>

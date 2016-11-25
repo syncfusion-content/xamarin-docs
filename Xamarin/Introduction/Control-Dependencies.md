@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Control Dependencies
+title: Control Dependencies | Xamarin Forms | Syncfusion
 description: Control Dependencies
 platform: xamarin
-control: Introduction
+control: Control Dependencies
 documentation: ug
 ---
 
@@ -13,11 +13,11 @@ This page lists the assemblies required for each control to be referred in each 
 
 ## SfChart
 
-### Nuget
+**Nuget**
 
 Syncfusion.Xamarin.SfChart
 
-### Assemblies
+**Assemblies**
 
 <table>
 <tr>
@@ -40,11 +40,11 @@ Syncfusion.Xamarin.SfChart
 
 ## SfPdfViewer
 
-### Nuget
+**Nuget**
 
 Syncfusion.Xamarin.SfPdfViewer
 
-### Assemblies
+**Assemblies**
 
 <table>
 <tr>
@@ -67,11 +67,11 @@ Syncfusion.Xamarin.SfPdfViewer
 
 ## SfSchedule
 
-### Nuget
+**Nuget**
 
 Syncfusion.Xamarin.Schedule
 
-### Assemblies
+**Assemblies**
 
 <table>
 <tr>
@@ -94,11 +94,11 @@ Syncfusion.Xamarin.Schedule
 
 ## SfCircularGauge
 
-### Nuget
+**Nuget**
 
 Syncfusion.Xamarin.SfGauge 
 
-### Assemblies
+**Assemblies**
 
 <table>
 <tr>
@@ -121,11 +121,11 @@ Syncfusion.Xamarin.SfGauge
 
 ## DocIO
 
-### Nuget
+**Nuget**
 
 Syncfusion.Xamarin.DocIO
 
-### Assemblies
+**Assemblies**
 
 <table>
 <tr>
@@ -136,11 +136,11 @@ Syncfusion.Xamarin.DocIO
 
 ## PDF
 
-### Nuget
+**Nuget**
 
 Syncfusion.Xamarin.PDF
 
-### Assemblies
+**Assemblies**
 
 <table>
 <tr>
@@ -151,11 +151,11 @@ Syncfusion.Xamarin.PDF
 
 ## Presentation
 
-### Nuget
+**Nuget**
 
 Syncfusion.Xamarin.Presentation
 
-### Assemblies
+**Assemblies**
 
 <table>
 <tr>
@@ -166,11 +166,11 @@ Syncfusion.Xamarin.Presentation
 
 ## XlsIO
 
-### Nuget
+**Nuget**
 
 Syncfusion.Xamarin.XlsIO
 
-### Assemblies
+**Assemblies**
 
 <table>
 <tr>
@@ -181,11 +181,11 @@ Syncfusion.Xamarin.XlsIO
 
 ## SfCalendar
 
-### Nuget
+**Nuget**
 
 Syncfusion.Xamarin.Calendar
 
-### Assemblies
+**Assemblies**
 
 <table>
 <tr>
@@ -208,11 +208,11 @@ Syncfusion.Xamarin.Calendar
 
 ## SfCarousel
 
-### Nuget
+**Nuget**
 
 Syncfusion.Xamarin.SfCarousel
 
-### Assemblies
+**Assemblies**
 
 <table>
 <tr>
@@ -235,11 +235,11 @@ Syncfusion.Xamarin.SfCarousel
 
 ## SfRotator
 
-### Nuget
+**Nuget**
 
 Syncfusion.Xamarin.SfRotator
 
-### Assemblies
+**Assemblies**
 
 <table>
 <tr>
@@ -262,11 +262,11 @@ Syncfusion.Xamarin.SfRotator
 
 ## SfAutoComplete 
 
-### Nuget
+**Nuget**
 
 Syncfusion.Xamarin.SfAutoComplete
 
-### Assemblies
+**Assemblies**
 
 <table>
 <tr>
@@ -289,11 +289,11 @@ Syncfusion.Xamarin.SfAutoComplete
 
 ## SfBusyIndicator
 
-### Nuget
+**Nuget**
 
 Syncfusion.Xamarin.SfBusyIndicator
 
-### Assemblies
+**Assemblies**
 
 <table>
 <tr>
@@ -316,11 +316,11 @@ Syncfusion.Xamarin.SfBusyIndicator
 
 ## SfDigitalGauge
 
-### Nuget
+**Nuget**
 
 Syncfusion.Xamarin.SfGauge
 
-### Assemblies
+**Assemblies**
 
 <table>
 <tr>
@@ -343,11 +343,11 @@ Syncfusion.Xamarin.SfGauge
 
 ## SfLinearGauge
 
-### Nuget
+**Nuget**
 
 Syncfusion.Xamarin.SfGauge
 
-### Assemblies
+**Assemblies**
 
 <table>
 <tr>
@@ -370,11 +370,11 @@ Syncfusion.Xamarin.SfGauge
 
 ## SfNavigationDrawer
 
-### Nuget
+**Nuget**
 
 Syncfusion.Xamarin.SfNavigationDrawer
 
-### Assemblies
+**Assemblies**
 
 <table>
 <tr>
@@ -397,11 +397,11 @@ Syncfusion.Xamarin.SfNavigationDrawer
 
 ## SfNumericTextBox
 
-### Nuget
+**Nuget**
 
 Syncfusion.Xamarin.SfNumericTextBox
 
-### Assemblies
+**Assemblies**
 
 <table>
 <tr>
@@ -424,11 +424,11 @@ Syncfusion.Xamarin.SfNumericTextBox
 
 ## SfNumericUpDown
 
-### Nuget
+**Nuget**
 
 Syncfusion.Xamarin.SfNumericUpDown 
 
-### Assemblies
+**Assemblies**
 
 <table>
 <tr>
@@ -451,11 +451,11 @@ Syncfusion.Xamarin.SfNumericUpDown
 
 ## SfRangeSlider
 
-### Nuget
+**Nuget**
 
 Syncfusion.Xamarin.SfRangeSlider 
 
-### Assemblies
+**Assemblies**
 
 <table>
 <tr>
@@ -478,11 +478,11 @@ Syncfusion.Xamarin.SfRangeSlider
 
 ## SfRating
 
-### Nuget
+**Nuget**
 
 Syncfusion.Xamarin.Rating 
 
-### Assemblies
+**Assemblies**
 
 <table>
 <tr>
@@ -505,11 +505,11 @@ Syncfusion.Xamarin.Rating
 
 ## SfMaps 
 
-### Nuget
+**Nuget**
 
 Syncfusion.Xamarin.SfMaps 
 
-### Assemblies
+**Assemblies**
 
 <table>
 <tr>
@@ -532,11 +532,11 @@ Syncfusion.Xamarin.SfMaps
 
 ## SfTreeMap 
 
-### Nuget
+**Nuget**
 
 Syncfusion.Xamarin.SfTreeMap 
 
-### Assemblies
+**Assemblies**
 
 <table>
 <tr>
@@ -559,11 +559,11 @@ Syncfusion.Xamarin.SfTreeMap
 
 ## SfPullToRefresh
 
-### Nuget
+**Nuget**
 
 Syncfusion.Xamarin.SfPullToRefresh 
 
-### Assemblies
+**Assemblies**
 
 <table>
 <tr>
@@ -586,11 +586,11 @@ Syncfusion.Xamarin.SfPullToRefresh
 
 ## SfListView
 
-### Nuget
+**Nuget**
 
 Syncfusion.Xamarin.SfListView 
 
-### Assemblies
+**Assemblies**
 
 <table>
 <tr>
@@ -613,11 +613,11 @@ Syncfusion.Xamarin.SfListView
 
 ## Calculate
 
-### Nuget
+**Nuget**
 
 Syncfusion.Xamarin.Calculate
 
-### Assemblies
+**Assemblies**
 
 <table>
 <tr>
@@ -628,11 +628,11 @@ Syncfusion.Xamarin.Calculate
 
 ## SfKanban
 
-### Nuget
+**Nuget**
 
 Syncfusion.Xamarin.SfKanban
 
-### Assemblies
+**Assemblies**
 
 <table>
 <tr>
@@ -655,11 +655,11 @@ Syncfusion.Xamarin.SfKanban
 
 ## SfDataGrid
 
-### Nuget
+**Nuget**
 
 Syncfusion.Xamarin.SfDataGrid 
 
-### Assemblies
+**Assemblies**
 
 <table>
 <tr>
@@ -682,11 +682,11 @@ Syncfusion.Xamarin.SfDataGrid
 
 ## SfDateTimeRangeNavigator
 
-### Nuget
+**Nuget**
 
 Syncfusion.Xamarin.SfChart 
 
-### Assemblies
+**Assemblies**
 
 <table>
 <tr>
@@ -709,11 +709,11 @@ Syncfusion.Xamarin.SfChart
 
 ## SfSparkline
 
-### Nuget
+**Nuget**
 
 Syncfusion.Xamarin.SfSparkline 
 
-### Assemblies
+**Assemblies**
 
 <table>
 <tr>
@@ -736,11 +736,11 @@ Syncfusion.Xamarin.SfSparkline
 
 ## DataSource
 
-### Nuget
+**Nuget**
 
 Syncfusion.Xamarin.DataSource 
 
-### Assemblies
+**Assemblies**
 
 <table>
 <tr>
@@ -751,11 +751,11 @@ Syncfusion.Xamarin.DataSource
 
 ## SfBarcode
 
-### Nuget
+**Nuget**
 
 Syncfusion.Xamarin.SfBarCode 
 
-### Assemblies
+**Assemblies**
 
 <table>
 <tr>

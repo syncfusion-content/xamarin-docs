@@ -13,9 +13,10 @@ This page lists the assemblies required for each control to be referred in each 
 
 ## SfChart
 
-**Nuget**
-
-Syncfusion.Xamarin.SfChart
+<dl>
+  <dt>Nuget</dt>
+  <dd>Syncfusion.Xamarin.SfChart</dd>
+</dl>
 
 **Assemblies**
 
@@ -40,9 +41,10 @@ Syncfusion.Xamarin.SfChart
 
 ## SfPdfViewer
 
-**Nuget**
-
-Syncfusion.Xamarin.SfPdfViewer
+<dl>
+  <dt>Nuget</dt>
+  <dd>Syncfusion.Xamarin.SfPdfViewer</dd>
+</dl>
 
 **Assemblies**
 
@@ -67,9 +69,10 @@ Syncfusion.Xamarin.SfPdfViewer
 
 ## SfSchedule
 
-**Nuget**
-
-Syncfusion.Xamarin.Schedule
+<dl>
+  <dt>Nuget</dt>
+  <dd>Syncfusion.Xamarin.Schedule</dd>
+</dl>
 
 **Assemblies**
 
@@ -94,9 +97,10 @@ Syncfusion.Xamarin.Schedule
 
 ## SfCircularGauge
 
-**Nuget**
-
-Syncfusion.Xamarin.SfGauge 
+<dl>
+  <dt>Nuget</dt>
+  <dd>Syncfusion.Xamarin.SfGauge</dd>
+</dl>
 
 **Assemblies**
 
@@ -121,9 +125,10 @@ Syncfusion.Xamarin.SfGauge
 
 ## DocIO
 
-**Nuget**
-
-Syncfusion.Xamarin.DocIO
+<dl>
+  <dt>Nuget</dt>
+  <dd>Syncfusion.Xamarin.DocIO</dd>
+</dl>
 
 **Assemblies**
 
@@ -136,9 +141,10 @@ Syncfusion.Xamarin.DocIO
 
 ## PDF
 
-**Nuget**
-
-Syncfusion.Xamarin.PDF
+<dl>
+  <dt>Nuget</dt>
+  <dd>Syncfusion.Xamarin.PDF</dd>
+</dl>
 
 **Assemblies**
 
@@ -151,9 +157,10 @@ Syncfusion.Xamarin.PDF
 
 ## Presentation
 
-**Nuget**
-
-Syncfusion.Xamarin.Presentation
+<dl>
+  <dt>Nuget</dt>
+  <dd>Syncfusion.Xamarin.Presentation</dd>
+</dl>
 
 **Assemblies**
 
@@ -166,9 +173,10 @@ Syncfusion.Xamarin.Presentation
 
 ## XlsIO
 
-**Nuget**
-
-Syncfusion.Xamarin.XlsIO
+<dl>
+  <dt>Nuget</dt>
+  <dd>Syncfusion.Xamarin.XlsIO</dd>
+</dl>
 
 **Assemblies**
 
@@ -181,9 +189,10 @@ Syncfusion.Xamarin.XlsIO
 
 ## SfCalendar
 
-**Nuget**
-
-Syncfusion.Xamarin.Calendar
+<dl>
+  <dt>Nuget</dt>
+  <dd>Syncfusion.Xamarin.Calendar</dd>
+</dl>
 
 **Assemblies**
 
@@ -208,9 +217,10 @@ Syncfusion.Xamarin.Calendar
 
 ## SfCarousel
 
-**Nuget**
-
-Syncfusion.Xamarin.SfCarousel
+<dl>
+  <dt>Nuget</dt>
+  <dd>Syncfusion.Xamarin.SfCarousel</dd>
+</dl>
 
 **Assemblies**
 
@@ -235,9 +245,10 @@ Syncfusion.Xamarin.SfCarousel
 
 ## SfRotator
 
-**Nuget**
-
-Syncfusion.Xamarin.SfRotator
+<dl>
+  <dt>Nuget</dt>
+  <dd>Syncfusion.Xamarin.SfRotator</dd>
+</dl>
 
 **Assemblies**
 
@@ -262,9 +273,10 @@ Syncfusion.Xamarin.SfRotator
 
 ## SfAutoComplete 
 
-**Nuget**
-
-Syncfusion.Xamarin.SfAutoComplete
+<dl>
+  <dt>Nuget</dt>
+  <dd>Syncfusion.Xamarin.SfAutoComplete</dd>
+</dl>
 
 **Assemblies**
 
@@ -289,9 +301,10 @@ Syncfusion.Xamarin.SfAutoComplete
 
 ## SfBusyIndicator
 
-**Nuget**
-
-Syncfusion.Xamarin.SfBusyIndicator
+<dl>
+  <dt>Nuget</dt>
+  <dd>Syncfusion.Xamarin.SfBusyIndicator</dd>
+</dl>
 
 **Assemblies**
 
@@ -316,9 +329,10 @@ Syncfusion.Xamarin.SfBusyIndicator
 
 ## SfDigitalGauge
 
-**Nuget**
-
-Syncfusion.Xamarin.SfGauge
+<dl>
+  <dt>Nuget</dt>
+  <dd>Syncfusion.Xamarin.SfGauge</dd>
+</dl>
 
 **Assemblies**
 
@@ -343,9 +357,10 @@ Syncfusion.Xamarin.SfGauge
 
 ## SfLinearGauge
 
-**Nuget**
-
-Syncfusion.Xamarin.SfGauge
+<dl>
+  <dt>Nuget</dt>
+  <dd>Syncfusion.Xamarin.SfGauge</dd>
+</dl>
 
 **Assemblies**
 
@@ -370,9 +385,10 @@ Syncfusion.Xamarin.SfGauge
 
 ## SfNavigationDrawer
 
-**Nuget**
-
-Syncfusion.Xamarin.SfNavigationDrawer
+<dl>
+  <dt>Nuget</dt>
+  <dd>Syncfusion.Xamarin.SfNavigationDrawer</dd>
+</dl>
 
 **Assemblies**
 
@@ -397,9 +413,10 @@ Syncfusion.Xamarin.SfNavigationDrawer
 
 ## SfNumericTextBox
 
-**Nuget**
-
-Syncfusion.Xamarin.SfNumericTextBox
+<dl>
+  <dt>Nuget</dt>
+  <dd>Syncfusion.Xamarin.SfNumericTextBox</dd>
+</dl>
 
 **Assemblies**
 
@@ -424,9 +441,10 @@ Syncfusion.Xamarin.SfNumericTextBox
 
 ## SfNumericUpDown
 
-**Nuget**
-
-Syncfusion.Xamarin.SfNumericUpDown 
+<dl>
+  <dt>Nuget</dt>
+  <dd>Syncfusion.Xamarin.SfNumericUpDown</dd>
+</dl>
 
 **Assemblies**
 
@@ -451,9 +469,10 @@ Syncfusion.Xamarin.SfNumericUpDown
 
 ## SfRangeSlider
 
-**Nuget**
-
-Syncfusion.Xamarin.SfRangeSlider 
+<dl>
+  <dt>Nuget</dt>
+  <dd>Syncfusion.Xamarin.SfRangeSlider</dd>
+</dl>
 
 **Assemblies**
 
@@ -478,9 +497,10 @@ Syncfusion.Xamarin.SfRangeSlider
 
 ## SfRating
 
-**Nuget**
-
-Syncfusion.Xamarin.Rating 
+<dl>
+  <dt>Nuget</dt>
+  <dd>Syncfusion.Xamarin.Rating</dd>
+</dl>
 
 **Assemblies**
 
@@ -505,9 +525,10 @@ Syncfusion.Xamarin.Rating
 
 ## SfMaps 
 
-**Nuget**
-
-Syncfusion.Xamarin.SfMaps 
+<dl>
+  <dt>Nuget</dt>
+  <dd>Syncfusion.Xamarin.SfMaps</dd>
+</dl>
 
 **Assemblies**
 
@@ -532,9 +553,10 @@ Syncfusion.Xamarin.SfMaps
 
 ## SfTreeMap 
 
-**Nuget**
-
-Syncfusion.Xamarin.SfTreeMap 
+<dl>
+  <dt>Nuget</dt>
+  <dd>Syncfusion.Xamarin.SfTreeMap</dd>
+</dl>
 
 **Assemblies**
 
@@ -559,9 +581,10 @@ Syncfusion.Xamarin.SfTreeMap
 
 ## SfPullToRefresh
 
-**Nuget**
-
-Syncfusion.Xamarin.SfPullToRefresh 
+<dl>
+  <dt>Nuget</dt>
+  <dd>Syncfusion.Xamarin.SfPullToRefresh</dd>
+</dl>
 
 **Assemblies**
 
@@ -586,9 +609,10 @@ Syncfusion.Xamarin.SfPullToRefresh
 
 ## SfListView
 
-**Nuget**
-
-Syncfusion.Xamarin.SfListView 
+<dl>
+  <dt>Nuget</dt>
+  <dd>Syncfusion.Xamarin.SfListView</dd>
+</dl>
 
 **Assemblies**
 
@@ -613,9 +637,10 @@ Syncfusion.Xamarin.SfListView
 
 ## Calculate
 
-**Nuget**
-
-Syncfusion.Xamarin.Calculate
+<dl>
+  <dt>Nuget</dt>
+  <dd>Syncfusion.Xamarin.Calculate</dd>
+</dl>
 
 **Assemblies**
 
@@ -628,9 +653,10 @@ Syncfusion.Xamarin.Calculate
 
 ## SfKanban
 
-**Nuget**
-
-Syncfusion.Xamarin.SfKanban
+<dl>
+  <dt>Nuget</dt>
+  <dd>Syncfusion.Xamarin.SfKanban</dd>
+</dl>
 
 **Assemblies**
 
@@ -655,9 +681,10 @@ Syncfusion.Xamarin.SfKanban
 
 ## SfDataGrid
 
-**Nuget**
-
-Syncfusion.Xamarin.SfDataGrid 
+<dl>
+  <dt>Nuget</dt>
+  <dd>Syncfusion.Xamarin.SfDataGrid</dd>
+</dl>
 
 **Assemblies**
 
@@ -682,9 +709,10 @@ Syncfusion.Xamarin.SfDataGrid
 
 ## SfDateTimeRangeNavigator
 
-**Nuget**
-
-Syncfusion.Xamarin.SfChart 
+<dl>
+  <dt>Nuget</dt>
+  <dd>Syncfusion.Xamarin.SfChart</dd>
+</dl>
 
 **Assemblies**
 
@@ -709,9 +737,10 @@ Syncfusion.Xamarin.SfChart
 
 ## SfSparkline
 
-**Nuget**
-
-Syncfusion.Xamarin.SfSparkline 
+<dl>
+  <dt>Nuget</dt>
+  <dd>Syncfusion.Xamarin.SfSparkline</dd>
+</dl>
 
 **Assemblies**
 
@@ -736,9 +765,10 @@ Syncfusion.Xamarin.SfSparkline
 
 ## DataSource
 
-**Nuget**
-
-Syncfusion.Xamarin.DataSource 
+<dl>
+  <dt>Nuget</dt>
+  <dd>Syncfusion.Xamarin.DataSource</dd>
+</dl>
 
 **Assemblies**
 
@@ -751,9 +781,10 @@ Syncfusion.Xamarin.DataSource
 
 ## SfBarcode
 
-**Nuget**
-
-Syncfusion.Xamarin.SfBarCode 
+<dl>
+  <dt>Nuget</dt>
+  <dd>Syncfusion.Xamarin.SfBarCode</dd>
+</dl>
 
 **Assemblies**
 

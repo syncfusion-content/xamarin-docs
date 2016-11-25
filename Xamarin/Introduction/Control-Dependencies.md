@@ -13,6 +13,12 @@ This page lists the assemblies required for each control to be referred in each 
 
 ## SfChart
 
+### Nuget
+
+Syncfusion.Xamarin.SfChart
+
+### Assemblies
+
 <table>
 <tr>
 <td>PCL</td>
@@ -33,6 +39,12 @@ This page lists the assemblies required for each control to be referred in each 
 </table>
 
 ## SfPdfViewer
+
+### Nuget
+
+Syncfusion.Xamarin.SfPdfViewer
+
+### Assemblies
 
 <table>
 <tr>
@@ -55,6 +67,12 @@ This page lists the assemblies required for each control to be referred in each 
 
 ## SfSchedule
 
+### Nuget
+
+Syncfusion.Xamarin.Schedule
+
+### Assemblies
+
 <table>
 <tr>
 <td>PCL</td>
@@ -75,6 +93,12 @@ This page lists the assemblies required for each control to be referred in each 
 </table>
 
 ## SfCircularGauge
+
+### Nuget
+
+Syncfusion.Xamarin.SfGauge 
+
+### Assemblies
 
 <table>
 <tr>
@@ -97,6 +121,12 @@ This page lists the assemblies required for each control to be referred in each 
 
 ## DocIO
 
+### Nuget
+
+Syncfusion.Xamarin.DocIO
+
+### Assemblies
+
 <table>
 <tr>
 <td>PCL</td>
@@ -105,6 +135,12 @@ This page lists the assemblies required for each control to be referred in each 
 </table>
 
 ## PDF
+
+### Nuget
+
+Syncfusion.Xamarin.PDF
+
+### Assemblies
 
 <table>
 <tr>
@@ -115,6 +151,12 @@ This page lists the assemblies required for each control to be referred in each 
 
 ## Presentation
 
+### Nuget
+
+Syncfusion.Xamarin.Presentation
+
+### Assemblies
+
 <table>
 <tr>
 <td>PCL</td>
@@ -124,6 +166,12 @@ This page lists the assemblies required for each control to be referred in each 
 
 ## XlsIO
 
+### Nuget
+
+Syncfusion.Xamarin.XlsIO
+
+### Assemblies
+
 <table>
 <tr>
 <td>PCL</td>
@@ -132,6 +180,12 @@ This page lists the assemblies required for each control to be referred in each 
 </table>
 
 ## SfCalendar
+
+### Nuget
+
+Syncfusion.Xamarin.Calendar
+
+### Assemblies
 
 <table>
 <tr>
@@ -154,6 +208,12 @@ This page lists the assemblies required for each control to be referred in each 
 
 ## SfCarousel
 
+### Nuget
+
+Syncfusion.Xamarin.SfCarousel
+
+### Assemblies
+
 <table>
 <tr>
 <td>PCL</td>
@@ -174,6 +234,12 @@ This page lists the assemblies required for each control to be referred in each 
 </table>
 
 ## SfRotator
+
+### Nuget
+
+Syncfusion.Xamarin.SfRotator
+
+### Assemblies
 
 <table>
 <tr>
@@ -196,6 +262,12 @@ This page lists the assemblies required for each control to be referred in each 
 
 ## SfAutoComplete 
 
+### Nuget
+
+Syncfusion.Xamarin.SfAutoComplete
+
+### Assemblies
+
 <table>
 <tr>
 <td>PCL</td>
@@ -216,6 +288,12 @@ This page lists the assemblies required for each control to be referred in each 
 </table>
 
 ## SfBusyIndicator
+
+### Nuget
+
+Syncfusion.Xamarin.SfBusyIndicator
+
+### Assemblies
 
 <table>
 <tr>
@@ -238,6 +316,12 @@ This page lists the assemblies required for each control to be referred in each 
 
 ## SfDigitalGauge
 
+### Nuget
+
+Syncfusion.Xamarin.SfGauge
+
+### Assemblies
+
 <table>
 <tr>
 <td>PCL</td>
@@ -258,6 +342,12 @@ This page lists the assemblies required for each control to be referred in each 
 </table>
 
 ## SfLinearGauge
+
+### Nuget
+
+Syncfusion.Xamarin.SfGauge
+
+### Assemblies
 
 <table>
 <tr>
@@ -280,6 +370,12 @@ This page lists the assemblies required for each control to be referred in each 
 
 ## SfNavigationDrawer
 
+### Nuget
+
+Syncfusion.Xamarin.SfNavigationDrawer
+
+### Assemblies
+
 <table>
 <tr>
 <td>PCL</td>
@@ -300,6 +396,12 @@ This page lists the assemblies required for each control to be referred in each 
 </table>
 
 ## SfNumericTextBox
+
+### Nuget
+
+Syncfusion.Xamarin.SfNumericTextBox
+
+### Assemblies
 
 <table>
 <tr>
@@ -322,6 +424,12 @@ This page lists the assemblies required for each control to be referred in each 
 
 ## SfNumericUpDown
 
+### Nuget
+
+Syncfusion.Xamarin.SfNumericUpDown 
+
+### Assemblies
+
 <table>
 <tr>
 <td>PCL</td>
@@ -342,6 +450,12 @@ This page lists the assemblies required for each control to be referred in each 
 </table>
 
 ## SfRangeSlider
+
+### Nuget
+
+Syncfusion.Xamarin.SfRangeSlider 
+
+### Assemblies
 
 <table>
 <tr>
@@ -364,6 +478,12 @@ This page lists the assemblies required for each control to be referred in each 
 
 ## SfRating
 
+### Nuget
+
+Syncfusion.Xamarin.Rating 
+
+### Assemblies
+
 <table>
 <tr>
 <td>PCL</td>
@@ -384,6 +504,12 @@ This page lists the assemblies required for each control to be referred in each 
 </table>
 
 ## SfMaps 
+
+### Nuget
+
+Syncfusion.Xamarin.SfMaps 
+
+### Assemblies
 
 <table>
 <tr>
@@ -406,6 +532,12 @@ This page lists the assemblies required for each control to be referred in each 
 
 ## SfTreeMap 
 
+### Nuget
+
+Syncfusion.Xamarin.SfTreeMap 
+
+### Assemblies
+
 <table>
 <tr>
 <td>PCL</td>
@@ -426,6 +558,12 @@ This page lists the assemblies required for each control to be referred in each 
 </table>
 
 ## SfPullToRefresh
+
+### Nuget
+
+Syncfusion.Xamarin.SfPullToRefresh 
+
+### Assemblies
 
 <table>
 <tr>
@@ -448,6 +586,12 @@ This page lists the assemblies required for each control to be referred in each 
 
 ## SfListView
 
+### Nuget
+
+Syncfusion.Xamarin.SfListView 
+
+### Assemblies
+
 <table>
 <tr>
 <td>PCL</td>
@@ -469,6 +613,12 @@ This page lists the assemblies required for each control to be referred in each 
 
 ## Calculate
 
+### Nuget
+
+Syncfusion.Xamarin.Calculate
+
+### Assemblies
+
 <table>
 <tr>
 <td>PCL</td>
@@ -477,6 +627,12 @@ This page lists the assemblies required for each control to be referred in each 
 </table>
 
 ## SfKanban
+
+### Nuget
+
+Syncfusion.Xamarin.SfKanban
+
+### Assemblies
 
 <table>
 <tr>
@@ -499,6 +655,12 @@ This page lists the assemblies required for each control to be referred in each 
 
 ## SfDataGrid
 
+### Nuget
+
+Syncfusion.Xamarin.SfDataGrid 
+
+### Assemblies
+
 <table>
 <tr>
 <td>PCL</td>
@@ -520,6 +682,12 @@ This page lists the assemblies required for each control to be referred in each 
 
 ## SfDateTimeRangeNavigator
 
+### Nuget
+
+Syncfusion.Xamarin.SfChart 
+
+### Assemblies
+
 <table>
 <tr>
 <td>PCL</td>
@@ -539,7 +707,13 @@ This page lists the assemblies required for each control to be referred in each 
 </tr>
 </table>
 
-## SfSparkLine
+## SfSparkline
+
+### Nuget
+
+Syncfusion.Xamarin.SfSparkline 
+
+### Assemblies
 
 <table>
 <tr>
@@ -562,6 +736,12 @@ This page lists the assemblies required for each control to be referred in each 
 
 ## DataSource
 
+### Nuget
+
+Syncfusion.Xamarin.DataSource 
+
+### Assemblies
+
 <table>
 <tr>
 <td>PCL</td>
@@ -570,6 +750,12 @@ This page lists the assemblies required for each control to be referred in each 
 </table>
 
 ## SfBarcode
+
+### Nuget
+
+Syncfusion.Xamarin.SfBarCode 
+
+### Assemblies
 
 <table>
 <tr>

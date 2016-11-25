@@ -1,6 +1,6 @@
 ---
 platform: Xamarin.Forms
-control: PDF Viewer
+control: PDF viewer
 ---
 
 # PDF Viewer
@@ -11,7 +11,7 @@ Essential PDF viewer for Xamarin is a new control that allows PDF documents to b
 
 ## Key Features
 
-Here is a quick summary of the features available in Essential PDF Viewer.
+Here is a quick summary of the features available in Essential PDF viewer.
 
 * View PDF files.
 * Navigate through the pages seamlessly.

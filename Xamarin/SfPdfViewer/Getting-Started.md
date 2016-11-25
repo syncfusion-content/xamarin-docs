@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Getting Started for Essential Xamarin.Forms PDFViewer
+title:  Getting Started for Essential Xamarin.Forms PDF viewer
 description: getting started
 platform: Xamarin.Forms
 control: SfPdfViewer

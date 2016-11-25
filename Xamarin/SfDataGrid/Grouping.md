@@ -246,9 +246,7 @@ The [SfDataGrid.GroupCollapsed](http://help.syncfusion.com/cr/cref_files/xamarin
 `Syncfusion.Data.Group` - Gets the collapsed group.
 
 
-## How To
-
-### How to hide the grouped column in SfDataGrid?
+## How to hide the grouped column in SfDataGrid?
 
 In SfDataGrid a column will be generated with the default column width by default. In order to group by a column that should not be visible in view, add the column to the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~Columns.html) collection and set its width as 0. Thus the column will be grouped and will not be visually seen. Please refer the below code example.
 

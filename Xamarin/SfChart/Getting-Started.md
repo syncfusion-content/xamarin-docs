@@ -15,7 +15,9 @@ This section explains you the steps required to populate the Chart with data, ti
 
 Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain and reference Essential Studio components in your solution; then refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies) link to know about the assemblies required for adding Chart to your project.
 
-N> After adding the reference, currently, an additional step is required for iOS and UWP projects. We need to create an instance of the SfChartRenderer as shown in this [KB article.](https://www.syncfusion.com/kb/7144/how-to-resolve-sfchart-not-rendering-issue-in-ios-and-uwp)
+I> After adding the reference, currently, an additional step is required for iOS and UWP projects. We need to create an instance of the SfChartRenderer as shown in this [KB article.](https://www.syncfusion.com/kb/7144/how-to-resolve-sfchart-not-rendering-issue-in-ios-and-uwp)
+
+I> For UWP, an additional step is required when the project is built in release mode with .Net Native tool chain enabled. You can refer the [KB article.](https://www.syncfusion.com/kb/7149) for more details.
 
 ## Initialize Chart
 
@@ -235,7 +237,7 @@ chart.Series.Add(series);
 
 ## Add Title
 
-You can add title to chart to provide quick information to the user about the data being plotted in the chart. You can set title using [SfChart.Title](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~Title.html) property as shown below.
+You can add title to chart to provide quick information to the user about the data being plotted in the chart. You can set title using [`SfChart.Title`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~Title.html) property as shown below.
 
 {% tabs %} 
 
@@ -265,7 +267,7 @@ Refer this [link](https://help.syncfusion.com/xamarin/sfchart/charttitle) to lea
 
 ## Enable data labels
 
-You can add data labels to improve the readability of the chart. This can be achieved using [ChartSeries.DataMarkers](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~DataMarker.html) property as shown below.
+You can add data labels to improve the readability of the chart. This can be achieved using [`ChartSeries.DataMarkers`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~DataMarker.html) property as shown below.
 
 {% tabs %} 
 
@@ -299,7 +301,7 @@ Refer this [link](https://help.syncfusion.com/xamarin/sfchart/datamarker) to lea
 
 ## Enable legend
 
-You can enable legend using [SfChart.Legend](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~Legend.html) property as shown below,
+You can enable legend using [`SfChart.Legend`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~Legend.html) property as shown below,
 
 {% tabs %} 
 
@@ -325,7 +327,7 @@ chart.Legend = new ChartLegend ();
 
 {% endtabs %}  
 
-Additionally, you need to set label for each series using [ChartSeries.Label](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~Label.html) property, which will be displayed in corresponding legend.
+Additionally, you need to set label for each series using [`ChartSeries.Label`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~Label.html) property, which will be displayed in corresponding legend.
 
 {% tabs %} 
 
@@ -355,7 +357,7 @@ Refer this [link](https://help.syncfusion.com/xamarin/sfchart/legend) to learn m
 
 ## Enable tooltip
 
-Tooltips are used to show information about the segment, when you tap on the segment. You can enable tooltip by setting [ChartSeries.EnableTooltip](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~EnableTooltip.html) property to true.
+Tooltips are used to show information about the segment, when you tap on the segment. You can enable tooltip by setting [`ChartSeries.EnableTooltip`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~EnableTooltip.html) property to true.
 
 {% tabs %} 
 
@@ -386,8 +388,6 @@ series.EnableTooltip = true;
 Refer this [link](https://help.syncfusion.com/xamarin/sfchart/tooltip) to learn more about the options available in SfChart to customize tooltip.
 
 ![](Getting-Started_images/img2.png)
-
-## Information
 
 You can find the complete getting started sample from this [link.](http://files2.syncfusion.com/Xamarin.Forms/Samples/Chart_GettingStarted.zip)
 

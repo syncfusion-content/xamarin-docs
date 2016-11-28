@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 ## Programmatic Filtering
-SfListView provides support to filter the data by setting the [SfListView.DataSource.Filter](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~Filter.html) property. You have to call the [SfListView.DataSource.RefreshFilter()](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~RefreshFilter.html) method after assigning the `Filter` property for refreshing the view.
+[SfListView](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView.html) provides support to filter the data by setting the [SfListView.DataSource.Filter](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~Filter.html) property. You have to call the [SfListView.DataSource.RefreshFilter()](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~RefreshFilter.html) method after assigning the `Filter` property for refreshing the view.
  
 The following code example illustrates how to apply filtering in SfListView. `FilterContacts` method filters the data that contains the filter text value. Assign `FilterContacts` method to `SfListView.DataSource.Filter` predicate to filter the `ContactName`.
 
@@ -55,6 +55,25 @@ private bool FilterContacts(object obj)
 }
 {% endhighlight %}
 
+### Filter by using multiple properties
+
+[SfListView](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView.html) allows you to filter the items on applying the different criteria by custom logic. The following example illustrates how to filter the data using multiple properties.
+
+{% highlight c# %}
+private bool FilterContacts(object obj)
+{
+  if (searchBar == null || searchBar.Text == null)
+     return true;
+
+  var contacts = obj as Contacts;
+  if (contacts.ContactName.ToLower().Contains(searchBar.Text.ToLower())
+      || contacts.ContactNumber.ToLower().Contains(searchBar.Text.ToLower()))
+      return true;
+  else
+      return false;
+}
+{% endhighlight %}
+
 ## Events
 
 ### FilterChanged event
@@ -87,41 +106,17 @@ private void DataSource_FilterChanged(object sender, NotifyCollectionChangedEven
 }
 {% endhighlight %}
 
-## Clear the filtered data
+## Clear Filtering
 
-You can remove the filtered items from the `ViewModel`. The following example illustrates that how to remove the filtered items from the `ViewModel`.
+You can clear the filtered items from the [SfListView.DataSource.DisplayItems](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~DisplayItems.html) by using [SfListView.DataSource.Items](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~Items.html) property. The following example illustrates that how to clear the filtered items from the `DisplayItems`.
 
 {% highlight c# %}
 listView.DataSource.FilterChanged += DataSource_FilterChanged;
 ...
 private void DataSource_FilterChanged(object sender, NotifyCollectionChangedEventArgs e)
 {
-  var items = (sender as DataSource).DisplayItems;
-  foreach (var item in items)
-  {
-     var contact = item as Contacts;
-     if (viewmodel.customerDetails[0] == contact)
-        viewmodel.customerDetails.Remove(contact);
-  }
-}
-{% endhighlight %}
-
-## Filter by using multiple properties
-
-SfListView allows you to filter the items on applying the different criteria by custom logic. The following example illustrates how to filter the data using multiple properties.
-
-{% highlight c# %}
-private bool FilterContacts(object obj)
-{
-  if (searchBar == null || searchBar.Text == null)
-     return true;
-
-  var contacts = obj as Contacts;
-  if (contacts.ContactName.ToLower().Contains(searchBar.Text.ToLower())
-      || contacts.ContactNumber.ToLower().Contains(searchBar.Text.ToLower()))
-      return true;
-  else
-      return false;
+  listView.DataSource.Items.Clear();
+  listView.RefreshView();
 }
 {% endhighlight %}
 

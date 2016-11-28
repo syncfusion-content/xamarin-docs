@@ -567,7 +567,7 @@ This page lists the assemblies required for each control to be referred in each 
 </tr>
 <tr>
 <td>Android</td>
-<td>Syncfusion.SfTreeMap.Andrioid.dll<br/>Syncfusion.SfTreeMap.XForms.Android.dll<br/>Syncfusion.SfTreeMap.XForms.dll<br/></td>
+<td>Syncfusion.SfTreeMap.Android.dll<br/>Syncfusion.SfTreeMap.XForms.Android.dll<br/>Syncfusion.SfTreeMap.XForms.dll<br/></td>
 </tr>
 <tr>
 <td>iOS</td>

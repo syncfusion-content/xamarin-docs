@@ -197,9 +197,9 @@ listView.CollapseGroup(group);
 
 ## Stick the GroupHeader
 
-SfListView allows you to stick the group header to view by enabling the property [SfListView.IsStickyGroupHeader](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsStickyGroupHeader.html). If `SfListView.IsStickyGroupHeader` is `true`, the group key is binded to the sticky group header and on scrolling the sticky group header gets updated based on group key and underlying data.
+SfListView allows you to stick the group header to view by enabling the property [SfListView.IsStickyGroupHeader](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsStickyGroupHeader.html). If `SfListView.IsStickyGroupHeader` is `true`, the key value of group is bind to the sticky group header. On scrolling the sticky group header gets updated based on the key value of group.
 
-N> When the `IsStickyGroupHeader` is `true`, [IsStickyHeader](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsStickyHeader.html) property will be changed to `true` because the header item can't be scrollable when the `IsStickyGroupHeader` is `true` and vice-versa. 
+N> When the `IsStickyGroupHeader` is set as `true`, [IsStickyHeader](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsStickyHeader.html) property will be changed to `true` because the header item can't be scrollable when the `IsStickyGroupHeader` is `true`. When the `IsStickyHeader` is set as `false`, if `IsStickyGroupHeader` is `true` then it will be changed to `false` because the group header item can't be sticky when the `IsStickyHeader` is `true`.
 
 {% tabs %}
 {% highlight xaml %}

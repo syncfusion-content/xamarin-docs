@@ -17,7 +17,7 @@ Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-a
 
 I> After adding the reference, we need to create an instance of the `SfChartRenderer` in iOS and UWP projects as shown in this [KB article.](https://www.syncfusion.com/kb/7144)
 
-I> For UWP, an additional step is required when the project is built in release mode with .Net Native tool chain enabled. You can refer the [KB article](https://www.syncfusion.com/kb/7149) for more details.
+I> For UWP alone, one more additional step is required if the project is built in release mode with .Net Native tool chain enabled. You can refer the [KB article](https://www.syncfusion.com/kb/7149) for more details.
  
 ## Initialize Chart
 

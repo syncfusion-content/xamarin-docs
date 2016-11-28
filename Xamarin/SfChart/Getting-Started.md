@@ -15,13 +15,13 @@ This section explains you the steps required to populate the Chart with data, ti
 
 Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain and reference Essential Studio components in your solution; then refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies) link to know about the assemblies required for adding Chart to your project.
 
-I> After adding the reference, currently, an additional step is required for iOS and UWP projects. We need to create an instance of the SfChartRenderer as shown in this [KB article.](https://www.syncfusion.com/kb/7144/how-to-resolve-sfchart-not-rendering-issue-in-ios-and-uwp)
+I> After adding the reference, we need to create an instance of the `SfChartRenderer` in iOS and UWP projects as shown in this [KB article.](https://www.syncfusion.com/kb/7144)
 
-I> For UWP, an additional step is required when the project is built in release mode with .Net Native tool chain enabled. You can refer the [KB article.](https://www.syncfusion.com/kb/7149) for more details.
-
+I> For UWP, an additional step is required when the project is built in release mode with .Net Native tool chain enabled. You can refer the [KB article](https://www.syncfusion.com/kb/7149) for more details.
+ 
 ## Initialize Chart
 
-Import the SfChart namespace as shown below in your respective Page,
+Import the `SfChart` namespace as shown below in your respective Page,
 
 {% tabs %} 
 
@@ -87,13 +87,13 @@ this.Content = chart;
 
 {% endtabs %} 
 
-Run the project and check if you get following output to make sure you have configured your project properly to add SfChart.
+Run the project and check if you get following output to make sure you have configured your project properly to add `SfChart`.
 
 ![](Getting-Started_images/img1.png)
 
 ## Initialize view model
 
-Now, let us define a simple data model that represents a data point in SfChart.
+Now, let us define a simple data model that represents a data point in `SfChart`.
 
 {% highlight c# %}
 public class Model   
@@ -104,7 +104,7 @@ public class Model
 }
 {% endhighlight %} 
 
-Next, create a view model class and initialize a list of Model objects as shown below,
+Next, create a view model class and initialize a list of `Model` objects as shown below,
 
 {% highlight c# %}
 public class ViewModel  
@@ -124,9 +124,9 @@ public class ViewModel
  }
 {% endhighlight %} 
 
-Set the ViewModel instance as the BindingContext of your Page; this is done to bind properties of ViewModel to SfChart.
+Set the `ViewModel` instance as the `BindingContext` of your Page; this is done to bind properties of `ViewModel` to `SfChart`.
  
-N> Add namespace of ViewModel class in your XAML page if you prefer to set BindingContext in XAML.
+N> Add namespace of `ViewModel` class in your XAML page if you prefer to set `BindingContext` in XAML.
 
 {% tabs %} 
 
@@ -158,9 +158,9 @@ this.BindingContext = new ViewModel();
 
 ## Populate Chart with data
 
-As we are going to visualize the comparison of heights in the data model, add ColumnSeries to SfChart.Series property, and then bind the Data property of the above ViewModel to the ColumnSeries.ItemsSource property as shown below.
+As we are going to visualize the comparison of heights in the data model, add `ColumnSeries` to `SfChart.Series` property, and then bind the Data property of the above `ViewModel` to the `ColumnSeries.ItemsSource` property as shown below.
 
-N> You need to set XBindingPath and YBindingPath properties, so that SfChart would fetch values from the respective properties in the data model to plot the series.
+N> You need to set `XBindingPath` and `YBindingPath` properties, so that `SfChart` would fetch values from the respective properties in the data model to plot the series.
 
 {% tabs %}   
 
@@ -263,7 +263,7 @@ chart.Title.Text = "Chart";
 
 {% endtabs %}  
 
-Refer this [link](https://help.syncfusion.com/xamarin/sfchart/charttitle) to learn more about the options available in SfChart to customize chart title.
+Refer this [link](https://help.syncfusion.com/xamarin/sfchart/charttitle) to learn more about the options available in `SfChart` to customize chart title.
 
 ## Enable data labels
 
@@ -297,7 +297,7 @@ series.DataMarker = new ChartDataMarker();
 
 {% endtabs %}  
 
-Refer this [link](https://help.syncfusion.com/xamarin/sfchart/datamarker) to learn more about the options available in SfChart to customize data markers.
+Refer this [link](https://help.syncfusion.com/xamarin/sfchart/datamarker) to learn more about the options available in `SfChart` to customize data markers.
 
 ## Enable legend
 
@@ -353,7 +353,7 @@ series.Label = "Heights";
 
 {% endtabs %}  
 
-Refer this [link](https://help.syncfusion.com/xamarin/sfchart/legend) to learn more about the options available in SfChart to customize legend.
+Refer this [link](https://help.syncfusion.com/xamarin/sfchart/legend) to learn more about the options available in `SfChart` to customize legend.
 
 ## Enable tooltip
 
@@ -385,7 +385,7 @@ series.EnableTooltip = true;
 
 {% endtabs %}
 
-Refer this [link](https://help.syncfusion.com/xamarin/sfchart/tooltip) to learn more about the options available in SfChart to customize tooltip.
+Refer this [link](https://help.syncfusion.com/xamarin/sfchart/tooltip) to learn more about the options available in `SfChart` to customize tooltip.
 
 ![](Getting-Started_images/img2.png)
 

@@ -40,7 +40,7 @@ listView.DataSource.GroupDescriptors.Add(new GroupDescriptor()
 {% endhighlight %}
 {% endtabs %}
 
-## Define an ItemTemplate for Group Header
+## Define an ItemTemplate for GroupHeader
 
 SfListView allows you to customize the User Interface (UI) for group header items by using [SfListView.GroupHeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~GroupHeaderTemplate.html) property.
 
@@ -84,7 +84,7 @@ listView.GroupHeaderTemplate = new DataTemplate(() =>
 {% endhighlight %}
 {% endtabs %}
 
-## Customize the Group Header Size
+## Customize the GroupHeaderSize
 
 SfListView allows you to customize the size of the group header items by setting the [SfListView.GroupHeaderSize](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~GroupHeaderSize.html) property. The default value of this property is 40. This property responds to runtime changes and hence you can customize it based on your requirement.
 
@@ -123,26 +123,16 @@ The following code example illustrates how to apply the custom grouping logic.
 {% highlight c# %}
 public class CustomGroupComparer : IComparer<GroupResult>, ISortDirection
 {
-  #region Constructor
-
   public CustomGroupComparer()
   {
     this.SortDirection = ListSortDirection.Ascending;
   }
-
-  #endregion
-
-  #region Property
 
   public ListSortDirection SortDirection
   {
     get;
     set;
   }
-
-  #endregion
-
-  #region IComparer<Group> Members
 
   public int Compare(GroupResult x, GroupResult y)
   {
@@ -161,9 +151,6 @@ public class CustomGroupComparer : IComparer<GroupResult>, ISortDirection
       return 0;
 
   }
-
-   #endregion
-
 }
 {% endhighlight %}
 
@@ -210,10 +197,9 @@ listView.CollapseGroup(group);
 
 ## Stick the GroupHeader
 
-SfListView allows you to stick the group header to view by enabling the property [SfListView.IsStickyGroupHeader](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsStickyGroupHeader.html). If `SfListView.IsStickyGroupHeader` is `true`, the first group header item at the top of the view is stick to the view and on scrolling the sticky group header gets updated corresponding to group header and underlying data.
+SfListView allows you to stick the group header to view by enabling the property [SfListView.IsStickyGroupHeader](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsStickyGroupHeader.html). If `SfListView.IsStickyGroupHeader` is `true`, the group key is binded to the sticky group header and on scrolling the sticky group header gets updated based on group key and underlying data.
 
-N> When the `IsStickyGroupHeader` is true, [IsStickyHeader](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsStickyHeader.html) property will be changed to true because the header item can't be added to the group items.
-When the `IsStickyHeader` property is changed to false if the `IsStickyGroupHeader` is true, then the `IsStickyGroupHeader` will be changed to false.
+N> When the `IsStickyGroupHeader` is `true`, [IsStickyHeader](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsStickyHeader.html) property will be changed to `true` because the header item can't be scrollable when the `IsStickyGroupHeader` is `true` and vice-versa. 
 
 {% tabs %}
 {% highlight xaml %}

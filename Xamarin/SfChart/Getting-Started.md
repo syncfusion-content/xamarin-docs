@@ -151,9 +151,7 @@ N> Add namespace of `ViewModel` class in your XAML page if you prefer to set `Bi
 {% endhighlight %}
 
 {% highlight C# %} 
-
 this.BindingContext = new ViewModel();
-
 {% endhighlight %}
 
 {% endtabs %} 
@@ -175,7 +173,7 @@ N> You need to set [`XBindingPath`](https://help.syncfusion.com/cr/cref_files/xa
 
             <chart:CategoryAxis.Title>
 
-                  <chart:ChartAxisTitle Text= "Name"> </chart:ChartAxisTitle>
+                  <chart:ChartAxisTitle Text="Name"> </chart:ChartAxisTitle>
 
             </chart:CategoryAxis.Title>
 
@@ -260,9 +258,7 @@ You can add title to chart to provide quick information to the user about the da
 {% endhighlight %}
 
 {% highlight C# %} 
-
 chart.Title.Text = "Chart";
-
 {% endhighlight %}
 
 {% endtabs %}  
@@ -296,9 +292,7 @@ You can add data labels to improve the readability of the chart. This can be ach
 {% endhighlight %}
 
 {% highlight C# %} 
-
 series.DataMarker = new ChartDataMarker();
-
 {% endhighlight %}
 
 {% endtabs %}  
@@ -328,9 +322,7 @@ You can enable legend using [`SfChart.Legend`](https://help.syncfusion.com/cr/cr
 {% endhighlight %}
 
 {% highlight C# %} 
-
 chart.Legend = new ChartLegend (); 
-
 {% endhighlight %}
 
 {% endtabs %}  
@@ -358,9 +350,7 @@ Additionally, you need to set label for each series using [`ChartSeries.Label`](
 {% endhighlight %}
 
 {% highlight C# %} 
-
 series.Label = "Heights";
-
 {% endhighlight %}
 
 {% endtabs %}  
@@ -392,9 +382,7 @@ Tooltips are used to show information about the segment, when you tap on the seg
 {% endhighlight %}
 
 {% highlight C# %} 
-
 series.EnableTooltip = true;
-
 {% endhighlight %}
 
 {% endtabs %}

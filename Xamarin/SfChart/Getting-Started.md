@@ -13,11 +13,11 @@ This section explains you the steps required to populate the Chart with data, ti
 
 ## Adding Chart Reference
 
-Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain and reference Essential Studio components in your solution; then refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies) link to know about the assemblies required for adding Chart to your project.
+Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain and reference Essential Studio components in your solution; then refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfchart) link to know about the assemblies required for adding Chart to your project.
 
 I> After adding the reference, currently, an additional step is required for iOS and UWP projects. We need to create an instance of the `SfChartRenderer` in iOS and UWP projects as shown in this [KB article.](https://www.syncfusion.com/kb/7144)
 
-I> For UWP alone, one more additional step is required if the project is built in release mode with .Net Native tool chain enabled. You can refer the [KB article](https://www.syncfusion.com/kb/7149) for more details.
+I> For UWP alone, one more additional step is required if the project is built in release mode with .NET Native tool chain enabled. You can refer the [KB article](https://www.syncfusion.com/kb/7149) for more details.
  
 ## Initialize Chart
 
@@ -25,15 +25,15 @@ Import the [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart
 
 {% tabs %} 
 
-{% highlight C# %} 
-
-using Syncfusion.SfChart.XForms;
-
-{% endhighlight %}
-
 {% highlight xaml %} 
 
 xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms" 
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+using Syncfusion.SfChart.XForms;
 
 {% endhighlight %}
 
@@ -42,22 +42,6 @@ xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart
 Then initialize an empty chart with two axes as shown below,
 
 {% tabs %} 
-
-{% highlight C# %} 
-SfChart chart = new SfChart();
-
- //Initializing Primary Axis
-CategoryAxis primaryAxis = new CategoryAxis();
-
-chart.PrimaryAxis = primaryAxis;
-
-//Initializing Secondary Axis
-NumericalAxis secondaryAxis  =  new NumericalAxis  ();
-
-chart.SecondaryAxis = secondaryAxis;
-
-this.Content = chart;
-{% endhighlight %}
 
 {% highlight xaml %} 
 <chart:SfChart>
@@ -83,6 +67,22 @@ this.Content = chart;
     </chart:SfChart.SecondaryAxis>
 		  
 </chart:SfChart>
+{% endhighlight %}
+
+{% highlight C# %} 
+SfChart chart = new SfChart();
+
+ //Initializing Primary Axis
+CategoryAxis primaryAxis = new CategoryAxis();
+
+chart.PrimaryAxis = primaryAxis;
+
+//Initializing Secondary Axis
+NumericalAxis secondaryAxis  =  new NumericalAxis  ();
+
+chart.SecondaryAxis = secondaryAxis;
+
+this.Content = chart;
 {% endhighlight %}
 
 {% endtabs %} 
@@ -130,10 +130,6 @@ N> Add namespace of `ViewModel` class in your XAML page if you prefer to set `Bi
 
 {% tabs %} 
 
-{% highlight C# %} 
-this.BindingContext = new ViewModel();
-{% endhighlight %}
-
 {% highlight xaml %} 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
 
@@ -154,6 +150,10 @@ this.BindingContext = new ViewModel();
 </ContentPage>
 {% endhighlight %}
 
+{% highlight C# %} 
+this.BindingContext = new ViewModel();
+{% endhighlight %}
+
 {% endtabs %} 
 
 ## Populate Chart with data
@@ -164,33 +164,6 @@ N> You need to set [`XBindingPath`](https://help.syncfusion.com/cr/cref_files/xa
 
 {% tabs %}   
 
-{% highlight C# %}
-//Initializing primary axis
-CategoryAxis primaryAxis = new CategoryAxis();
-
-primaryAxis.Title.Text = "Name";
-
-chart.PrimaryAxis = primaryAxis;
-
-//Initializing secondary Axis
-NumericalAxis secondaryAxis = new NumericalAxis();
-
-secondaryAxis.Title.Text = "Height (in cm)";
-
-chart.SecondaryAxis = secondaryAxis;
-
-//Initializing column series
-ColumnSeries series = new ColumnSeries();
-
-series.SetBinding(ChartSeries.ItemsSourceProperty, "Data");
-
-series.XBindingPath = "Name";
-
-series.YBindingPath = "Height";
-
-chart.Series.Add(series);
-{% endhighlight %}
-
 {% highlight xaml %}
 <chart:SfChart>
    
@@ -200,7 +173,7 @@ chart.Series.Add(series);
 
             <chart:CategoryAxis.Title>
 
-                  <chart:ChartAxisTitle Text=”Name”> </chart:ChartAxisTitle>
+                  <chart:ChartAxisTitle Text="Name"> </chart:ChartAxisTitle>
 
             </chart:CategoryAxis.Title>
 
@@ -233,6 +206,33 @@ chart.Series.Add(series);
  </chart:SfChart> 
 {% endhighlight %}
 
+{% highlight C# %}
+//Initializing primary axis
+CategoryAxis primaryAxis = new CategoryAxis();
+
+primaryAxis.Title.Text = "Name";
+
+chart.PrimaryAxis = primaryAxis;
+
+//Initializing secondary Axis
+NumericalAxis secondaryAxis = new NumericalAxis();
+
+secondaryAxis.Title.Text = "Height (in cm)";
+
+chart.SecondaryAxis = secondaryAxis;
+
+//Initializing column series
+ColumnSeries series = new ColumnSeries();
+
+series.SetBinding(ChartSeries.ItemsSourceProperty, "Data");
+
+series.XBindingPath = "Name";
+
+series.YBindingPath = "Height";
+
+chart.Series.Add(series);
+{% endhighlight %}
+
 {% endtabs %} 
 
 ## Add Title
@@ -240,10 +240,6 @@ chart.Series.Add(series);
 You can add title to chart to provide quick information to the user about the data being plotted in the chart. You can set title using [`SfChart.Title`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~Title.html) property as shown below.
 
 {% tabs %} 
-
-{% highlight C# %} 
-chart.Title.Text = "Chart";
-{% endhighlight %}
 
 {% highlight xaml %}
 <chart:SfChart>
@@ -261,6 +257,10 @@ chart.Title.Text = "Chart";
 </chart:SfChart>
 {% endhighlight %}
 
+{% highlight C# %} 
+chart.Title.Text = "Chart";
+{% endhighlight %}
+
 {% endtabs %}  
 
 Refer this [link](https://help.syncfusion.com/xamarin/sfchart/charttitle) to learn more about the options available in [`SfChart`]((https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html)) to customize chart title.
@@ -270,10 +270,6 @@ Refer this [link](https://help.syncfusion.com/xamarin/sfchart/charttitle) to lea
 You can add data labels to improve the readability of the chart. This can be achieved using [`ChartSeries.DataMarkers`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~DataMarker.html) property as shown below.
 
 {% tabs %} 
-
-{% highlight C# %} 
-series.DataMarker = new ChartDataMarker();
-{% endhighlight %}
 
 {% highlight xaml %}
 <chart:SfChart>
@@ -295,6 +291,10 @@ series.DataMarker = new ChartDataMarker();
 </chart:SfChart>
 {% endhighlight %}
 
+{% highlight C# %} 
+series.DataMarker = new ChartDataMarker();
+{% endhighlight %}
+
 {% endtabs %}  
 
 Refer this [link](https://help.syncfusion.com/xamarin/sfchart/datamarker) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html) to customize data markers.
@@ -304,10 +304,6 @@ Refer this [link](https://help.syncfusion.com/xamarin/sfchart/datamarker) to lea
 You can enable legend using [`SfChart.Legend`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~Legend.html) property as shown below,
 
 {% tabs %} 
-
-{% highlight C# %} 
-chart.Legend = new ChartLegend (); 
-{% endhighlight %}
 
 {% highlight xaml %}
 <chart:SfChart>
@@ -325,15 +321,15 @@ chart.Legend = new ChartLegend ();
 </chart:SfChart>
 {% endhighlight %}
 
+{% highlight C# %} 
+chart.Legend = new ChartLegend (); 
+{% endhighlight %}
+
 {% endtabs %}  
 
 Additionally, you need to set label for each series using [`ChartSeries.Label`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~Label.html) property, which will be displayed in corresponding legend.
 
 {% tabs %} 
-
-{% highlight C# %} 
-series.Label = "Heights";
-{% endhighlight %}
 
 {% highlight xaml %}
 <chart:SfChart>
@@ -345,10 +341,16 @@ series.Label = "Heights";
          <chart:ColumnSeries Label="Heights" ItemsSource="{Binding Data}" XBindingPath="Name" YBindingPath="Height">
 		 
 		 </chart:ColumnSeries>
+         
+       </chart:SfChart.Series>
 
 	...
 
 </chart:SfChart>
+{% endhighlight %}
+
+{% highlight C# %} 
+series.Label = "Heights";
 {% endhighlight %}
 
 {% endtabs %}  
@@ -360,10 +362,6 @@ Refer this [link](https://help.syncfusion.com/xamarin/sfchart/legend) to learn m
 Tooltips are used to show information about the segment, when you tap on the segment. You can enable tooltip by setting [`ChartSeries.EnableTooltip`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~EnableTooltip.html) property to true.
 
 {% tabs %} 
-
-{% highlight C# %} 
-series.EnableTooltip = true;
-{% endhighlight %}
 
 {% highlight xaml %}
 <chart:SfChart>
@@ -381,6 +379,10 @@ series.EnableTooltip = true;
 	...
 
  </chart:SfChart> 
+{% endhighlight %}
+
+{% highlight C# %} 
+series.EnableTooltip = true;
 {% endhighlight %}
 
 {% endtabs %}

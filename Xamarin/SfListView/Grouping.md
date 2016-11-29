@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Grouping | SfListView | Xamarin | Syncfusion
-description: How to group the data in SfListView and about the properties and customizations in grouping.
+title: Grouping in SfListView
+description: Describes about the grouping and its functionalities in SfListView.
 platform: xamarin
 control: SfListView
 documentation: ug
@@ -99,9 +99,11 @@ listView.GroupHeaderSize = 60;
 {% endhighlight %}
 {% endtabs %}
 
+N> For Vertical orientation, the group header size is considered as height and for Horizontal orientation, it will be considered as width.
+
 ## Custom Grouping
 
-SfListView allows you to group the items based on custom logic. The custom grouping can be applied to either [SfListView.DataSource.GroupComparer](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~GroupComparer.html) property or [Comparer](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~Comparer.html) of [GroupDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor.html) property which is added into the [DataSource.GroupDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~GroupDescriptors.html) collection.
+SfListView allows you to group the items based on custom logic. The custom grouping can be applied to either [SfListView.DataSource.GroupComparer](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~GroupComparer.html) property or [GroupDescriptor.Comparer](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~Comparer.html) which is added into the [DataSource.GroupDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~GroupDescriptors.html) collection.
 
 The following code example illustrates how to perform custom grouping for underlying data based on the group item count.
 
@@ -154,7 +156,7 @@ public class CustomGroupComparer : IComparer<GroupResult>, ISortDirection
 }
 {% endhighlight %}
 
-## Expand or Collapse the groups
+## Expand or Collapse the Groups
  
 By default, the groups will be in expanded state in SfListView. You can expand or collapse the group in runtime by setting [SfListView.AllowGroupExpandCollapse](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AllowGroupExpandCollapse.html) to `true`. So, when user tap on group header, then the tapped group gets collapse if the group is in expand state and vice-versa. 
 
@@ -168,11 +170,11 @@ listView.AllowGroupExpandCollapse = true;
 {% endhighlight %}
 {% endtabs %}
 
-### Programmatically Expand or Collapse the groups
+### Programmatically Expand or Collapse the Groups
 
 You can allow end-user to expand or collapse the groups programmatically at runtime.
 
-#### Expand or Collapse all the groups
+#### Expand or Collapse All the Groups
 
 You can expand or collapse all the groups programmatically at runtime by using [SfListView.ExpandAll()](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ExpandAll.html) method and [SfListView.CollapseAll()](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~CollapseAll.html) method.
 
@@ -183,7 +185,7 @@ listView.CollapseAll();
 {% endhighlight %}
 {% endtabs %}
 
-#### Expand or Collapse the specific group
+#### Expand or Collapse the Specific Group
 
 You can expand or collapse specific group by using [SfListView.ExpandGroup(GroupResult group)](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ExpandGroup.html) method and [SfListView.CollapseGroup(GroupResult group)](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~CollapseGroup.html) method.
 

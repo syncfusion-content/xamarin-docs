@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Header and Footer | SfListView | Xamarin | Syncfusion
-description: How to enable header and footer, about properties and customizations available for header and footer in a SfListView.
+title: Header and Footer in SfListView
+description: Describes the Header and Footer features in SfListView.
 platform: xamarin
 control: SfListView
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Header and Footer
 
-This section explains you about how to define and customize the header and footer in SfListView and about properties which provides different functionalities for header and footer.
+This section explains about how to define and customize the header and footer in SfListView.
 
-## Customization of Header and Footer
+## Adding Header and Footer
 
-[SfListView](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView.html) let’s you to customize the appearance of header and footer by using [SfListView.HeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~HeaderTemplate.html) and [SfListView.FooterTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~FooterTemplate.html) properties.
+[SfListView](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView.html) let’s you to add and customize the appearance of header and footer by setting the [SfListView.HeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~HeaderTemplate.html) and [SfListView.FooterTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~FooterTemplate.html).
 
 The following example illustrates how to set the `HeaderTemplate` in SfListView.
 
@@ -36,41 +36,25 @@ The following example illustrates how to set the `HeaderTemplate` in SfListView.
   </sync:SfListView>
 {% endhighlight %}
 {% highlight c# %}
-using Syncfusion.ListView.XForms;
-using Xamarin.Forms;
-
-namespace GettingStarted
+viewModel = new ViewModel ();
+listView = new SfListView();
+listView.ItemsSource = viewModel.InboxInfo;
+listView.HeaderTemplate = new DataTemplate(() =>
 {
-    public class App : Application
-    {
-        SfListView listView;
-        ViewModel viewModel;
-        public App()
-        {
-            viewModel = new ViewModel ();
-            listView = new SfListView();
-            listView.ItemSize = 100;
-            listView.ItemsSource = viewModel.InboxInfo;
-            listView.HeaderTemplate = new DataTemplate(() =>
-            {
-                var grid = new Grid();
-                grid.BackgroundColor = Color.FromHex("#4CA1FE");
-                var headerlabel = new Label
-                {
-                    BackgroundColor = Color.White,
-                    FontSize = 18,
-                    FontAttributes = FontAttributes.Bold,
-                    Text = "Inbox"
-                };
+   var grid = new Grid();
+   grid.BackgroundColor = Color.FromHex("#4CA1FE");
+   var headerlabel = new Label
+   {
+       BackgroundColor = Color.White,
+       FontSize = 18,
+       FontAttributes = FontAttributes.Bold,
+       Text = "Inbox"
+   };
 
-                grid.Children.Add(headerlabel);
+   grid.Children.Add(headerlabel);
 
-                return grid;
-            });
-            MainPage = new ContentPage { Content = listView };
-        }
-    }
-} 
+   return grid;
+});
 {% endhighlight %}
 {% endtabs %}
 
@@ -89,6 +73,8 @@ listView.HeaderSize = 70;
 listView.FooterSize = 60;
 {% endhighlight %}
 {% endtabs %}
+
+N> For Vertical orientation, the header and footer size is considered as height and for Horizontal orientation, it will be considered as width.
 
 ## Stick the Header and Footer
 

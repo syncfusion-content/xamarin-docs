@@ -345,6 +345,8 @@ series.Label = "Heights";
          <chart:ColumnSeries Label="Heights" ItemsSource="{Binding Data}" XBindingPath="Name" YBindingPath="Height">
 		 
 		 </chart:ColumnSeries>
+         
+       </chart:SfChart.Series>
 
 	...
 

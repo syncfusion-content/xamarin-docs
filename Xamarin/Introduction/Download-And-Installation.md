@@ -165,15 +165,15 @@ You can then add the assembly references to the respective projects. The followi
 
 **PCL** **project**
 
-pcl\Syncfusion.SfChart.XForm.dll
+pcl\Syncfusion.SfChart.XForms.dll
 
 **Android** **project**
 
-android\Syncfusion.SfChart.Andriod.dll
+android\Syncfusion.SfChart.Android.dll
 
-android\Syncfusion.SfChart.XForms.Andriod.dll
+android\Syncfusion.SfChart.XForms.Android.dll
 
-android\Syncfusion.SfChart.XForm.dll
+android\Syncfusion.SfChart.XForms.dll
 
 **iOS****(****Classic****)** **project**
 
@@ -181,7 +181,7 @@ iOS\Syncfusion.SfChart.iOS.dll
 
 iOS\Syncfusion.SfChart.XForms.iOS.dll
 
-iOS\Syncfusion.SfChart.XForm.dll
+iOS\Syncfusion.SfChart.XForms.dll
 
 **iOS****(****Unified****)** **project**
 
@@ -189,35 +189,19 @@ ios-unified\Syncfusion.SfChart.iOS.dll
 
 ios-unified\Syncfusion.SfChart.XForms.iOS.dll
 
-ios-unified\Syncfusion.SfChart.XForm.dll
+ios-unified\Syncfusion.SfChart.XForms.dll
 
-**Windows** **Phone** **project**
+**UWP** **project**
 
-wp8\Syncfusion.SfChart.WP8.dll
+uwp\Syncfusion.SfChart.UWP.dll
 
-wp8\Syncfusion.SfChart.XForms.WinPhone.dll
+uwp\Syncfusion.SfChart.XForms.UWP.dll
 
-wp8\Syncfusion.SfChart.XForm.dll
+uwp\Syncfusion.SfChart.XForms.dll
 
-**Windows** **Phone** **8****.****1** **project**
+After you have added assemblies to the respective projects, you have to follow an additional step for loading our components in UWP and iOS projects. 
 
-wp81\Syncfusion.SfChart.WP.dll
-
-wp81\Syncfusion.SfChart.XForms.WinPhone.dll
-
-wp81\Syncfusion.SfChart.XForm.dll
-
-**WinRT** **project**
-
-winrt\Syncfusion.SfChart.WinRT.dll
-
-winrt\Syncfusion.SfChart.XForms.WinRT.dll
-
-winrt\Syncfusion.SfChart.XForm.dll
-
-After you have added assemblies to the respective projects, you have to follow an additional step for loading our components in Windows Phone, WinRT and iOS projects. 
-
-The following is an example for Chart component. create an instance of the SfChartRenderer in MainPage constructor of the Windows Phone and WinRT project as follows.
+The following is an example for Chart component. create an instance of the SfChartRenderer in MainPage constructor of the UWP project as follows.
 
 {% highlight C# %}
 
@@ -242,4 +226,4 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% endhighlight %}
 
-N> If you do not add the above line, controls will not be loaded in WP, WinRT and iOS platforms, and it will look blank. 
+N> If you do not add the above line, controls will not be loaded in UWP and iOS platforms, and it will look blank. 

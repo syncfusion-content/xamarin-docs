@@ -11,7 +11,7 @@ documentation: ug
 
 **Integrated** **Development** **Environment** **for** **Windows**
 
-By using the following IDEs, you can develop Android, Windows Phone and WinRT apps:
+By using the following IDEs, you can develop Android, UWP apps:
 
 * Visual Studio 2012 (.Net 4.5)
 * Visual Studio 2013
@@ -69,26 +69,14 @@ The following table lists the platforms supported by our Xamarin.Forms controls.
     </tr>
     <tr>
         <td>
-            Windows Phone
+            UWP
             <br/>
             <br/>
         </td>
         <td>
-            Windows Phone 8.0 & Windows Phone 8.1
+            Windows 10 & Windows 10.1 devices
             <br/>
             <br/>
         </td>
-    </tr>
-    <tr>
-        <td>
-            WinRT
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Windows 8 & Windows 8.1
-            <br/>
-            <br/>
-        </td>
-    </tr>
+    </tr>    
 </table>

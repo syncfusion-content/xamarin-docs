@@ -33,19 +33,19 @@ The following list of assemblies need to be added as reference from the lib fold
 </tr>
 <tr>
 <td>PCL</td>
-<td>pcl\Syncfusion.DataSource.Portable.dll<br/>pcl\Syncfusion.SfListView.XForms.dll<br/></td>
+<td>pcl\Syncfusion.DataSource.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfListView.XForms.dll<br/></td>
 </tr>
 <tr>
 <td>Android Renderer</td>
-<td>pcl\Syncfusion.SfListView.XForms.dll<br/>android\Syncfusion.SfListView.XForms.Android.dll<br/></td>
+<td>pcl\Syncfusion.DataSource.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfListView.XForms.dll<br/>android\Syncfusion.SfListView.XForms.Android.dll<br/></td>
 </tr>
 <tr>
 <td>iOS Renderer</td>
-<td>pcl\Syncfusion.SfListView.XForms.dll<br/>ios-unified\Syncfusion.SfListView.XForms.iOS.dll<br/></td>
+<td>pcl\Syncfusion.DataSource.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfListView.XForms.dll<br/>ios-unified\Syncfusion.SfListView.XForms.iOS.dll<br/></td>
 </tr>
 <tr>
 <td>UWP Renderer</td>
-<td>pcl\Syncfusion.SfListView.XForms.dll<br/>uwp\Syncfusion.SfListView.XForms.UWP.dll<br/></td>
+<td>pcl\Syncfusion.DataSource.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfListView.XForms.dll<br/>uwp\Syncfusion.SfListView.XForms.UWP.dll<br/></td>
 </tr>
 </table>
 

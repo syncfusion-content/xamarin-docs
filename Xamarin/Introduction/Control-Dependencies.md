@@ -619,7 +619,7 @@ This page lists the assemblies required for each control to be referred in each 
 <table>
 <tr>
 <td>PCL</td>
-<td>Syncfusion.SfListView.XForms.dll<br/>Syncfusion.DataSource.Portable.dll</br>Syncfusion.GridCommon.Portable.dll<br/></td>
+<td>Syncfusion.SfListView.XForms.dll<br/>Syncfusion.DataSource.Portable.dll</br></td>
 </tr>
 <tr>
 <td>Android</td>

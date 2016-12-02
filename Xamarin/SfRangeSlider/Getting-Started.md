@@ -33,35 +33,12 @@ You can then add the assembly references to the respective projects as shown bel
 <td>iOS-unified\Syncfusion.SfRangeSlider.iOS.dll<br/>iOS-unified\Syncfusion.SfRangeSlider.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfRangeSlider.XForms.dll</td>
 </tr>
 <tr>
-<td>Windows Phone</td>
-<td>wp8\Syncfusion.SfInput.WP8.dll<br/>wp8\Syncfusion.SfShared.WP8.dll<br/>wp8\Syncfusion.SfRangeSlider.XForms.dll<br/>wp8\Syncfusion.SfRangeSlider.XForms.WinPhone.dll</td>
-</tr>
-<tr>
-<td>Windows Phone 8.1</td>
-<td>wp81\Syncfusion.SfInput.WP.dll<br/>wp81\Syncfusion.SfShared.WP.dll<br/>wp81\Syncfusion.SfRangeSlider.XForms.dll<br/>wp81\Syncfusion.SfRangeSlider.XForms.WinPhone.dll</td>
-</tr>
-<tr>
 <td>UWP</td>
 <td>uwp\Syncfusion.SfInput.UWP.dll<br/>uwp\Syncfusion.SfShared.UWP.dll<br/>uwp\Syncfusion.SfRangeSlider.XForms.dll<br/>uwp\Syncfusion.SfRangeSlider.XForms.UWP.dll</td>
 </tr>
 </table>
 
-Currently an additional step is required for Windows Phone, Windows Phone 8.1 and iOS projects. We need to create an instance of the RangeSlider custom renderer as shown below. 
-
-Create an instance of SfRangeSliderRenderer in MainPage constructor of the Windows Phone and Windows Phone 8.1 project as shown 
-
-{% tabs %}
-
-{% highlight C# %}
-
-public MainPage()
-{
-    new SfRangeSliderRenderer();
-}
-
-{% endhighlight %}
-
-{% endtabs %}
+Currently an additional step is required for iOS project. We need to create an instance of the RangeSlider custom renderer as shown below. 
 
 Create an instance of SfRangeSliderRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below
 

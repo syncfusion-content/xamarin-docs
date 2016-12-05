@@ -619,19 +619,19 @@ This page lists the assemblies required for each control to be referred in each 
 <table>
 <tr>
 <td>PCL</td>
-<td>Syncfusion.SfListView.XForms.dll<br/>Syncfusion.DataSource.Portable.dll</br></td>
+<td>Syncfusion.DataSource.Portable.dll<br/>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.SfListView.XForms.dll<br/></td>
 </tr>
 <tr>
 <td>Android</td>
-<td>Syncfusion.SfListView.XForms.Android.dll<br/>Syncfusion.SfListView.XForms.dll<br/></td>
+<td>Syncfusion.DataSource.Portable.dll<br/>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.SfListView.XForms.Android.dll<br/>Syncfusion.SfListView.XForms.dll<br/></td>
 </tr>
 <tr>
 <td>iOS</td>
-<td>Syncfusion.SfListView.XForms.iOS.dll<br/>Syncfusion.SfListView.XForms.dll<br/></td>
+<td>Syncfusion.DataSource.Portable.dll<br/>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.SfListView.XForms.iOS.dll<br/>Syncfusion.SfListView.XForms.dll<br/></td>
 </tr>
 <tr>
 <td>UWP</td>
-<td>>Syncfusion.SfListView.XForms.UWP.dll<br/>Syncfusion.SfListView.XForms.dll<br/></td>
+<td>Syncfusion.DataSource.Portable.dll<br/>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.SfListView.XForms.UWP.dll<br/>Syncfusion.SfListView.XForms.dll<br/></td>
 </tr>
 </table>
 

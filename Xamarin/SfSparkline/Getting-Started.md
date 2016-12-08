@@ -24,29 +24,32 @@ I> For UWP alone, one more additional step is required if the project is built i
 Now, let us define a simple data model that represents a data point in [`SfSparkline`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsparkline/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfLineSparkline.html).
 
 {% highlight c# %}
-public class Model
-{
-	public double Performance { get; set; }
+public class Model   
+{   
+    public double Performance { get; set; }
 }
 {% endhighlight %} 
 
 Next, create a view model class and initialize a list of `Model` objects as shown below,
 
 {% highlight c# %}
-public class ViewModel
-{     
-	public List<Model> Data { get; set; }      
-	public ViewModel()
-	{
-		Data = new List <Model>();
-		Data.Add(new Model() { Performance = 3000 });
-		Data.Add(new Model() { Performance = 5000 });
-		Data.Add(new Model() { Performance = -3000 });
-		Data.Add(new Model() { Performance = -4000 });
-		Data.Add(new Model() { Performance = 2000 });
-		Data.Add(new Model() { Performance = 3000 });
-    }
-}
+public class ViewModel  
+{
+      public List<Model> Data { get; set; }      
+
+      public ViewModel()       
+      {
+            Data = new List<Model>()
+            {
+                new Model { Performance = 3000 },
+                new Model { Performance = 5000 },
+                new Model { Performance = -3000 },
+                new Model { Performance = -4000 },
+				new Model { Performance = 2000 },
+				new Model { Performance = 3000 }
+            }; 
+       }
+ }
 {% endhighlight %} 
 
 Set the `ViewModel` instance as the `BindingContext` of your Page; this is done to bind properties of `ViewModel` to [`SfSparkline`.](https://help.syncfusion.com/cr/cref_files/xamarin/sfsparkline/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfLineSparkline.html)
@@ -66,11 +69,11 @@ N> Add namespace of `ViewModel` class in your XAML page if you prefer to set `Bi
 
              xmlns:local="clr-namespace:SparklineDemo">    
 
-<ContentPage.BindingContext>       
+	<ContentPage.BindingContext>       
 
-	<local:ViewModel></local:ViewModel>  
+		<local:ViewModel></local:ViewModel>  
 
-</ContentPage.BindingContext>
+	</ContentPage.BindingContext>
  
 </ContentPage>
 {% endhighlight %}
@@ -99,7 +102,7 @@ using Syncfusion.SfSparkline.XForms;
 
 Bind the Data property of the above `ViewModel` to the [`SfSparkline.ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsparkline/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~ItemsSource.html) property as shown below.
 
-N> You need to set [`YBindingPath`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsparkline/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~YBindingPath.html) property, so that [`SfSparkline`] (https://help.syncfusion.com/cr/cref_files/xamarin/sfsparkline/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfLineSparkline.html) would fetch values from the respective property in the data model to plot the Sparkline.
+N> You need to set [`YBindingPath`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsparkline/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~YBindingPath.html) property, so that [`SfSparkline`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsparkline/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfLineSparkline.html) would fetch values from the respective property in the data model to plot the Sparkline.
 
 {% tabs %}   
 
@@ -112,13 +115,13 @@ N> You need to set [`YBindingPath`](https://help.syncfusion.com/cr/cref_files/xa
 {% highlight C# %}
 SfLineSparkline lineSparkline = new SfLineSparkline(); 
 
-lineSparkline.YBindingPath = “Performance”;
+lineSparkline.YBindingPath = "Performance";
 
 lineSparkline.SetBinding(SfSparklineBase.ItemsSourceProperty, "Data");
 {% endhighlight %}
 
 {% endtabs %} 
 
-![](Getting-Started_images/LineSparkline.png)
+![](Getting-Started_image/LineSparkline.png)
 
 You can find the complete getting started sample from this [link.](http://files2.syncfusion.com/Xamarin.Forms/Samples/Sparkline_GettingStarted.zip)

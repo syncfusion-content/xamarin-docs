@@ -11,13 +11,12 @@ documentation: ug
 
 Essential Sparkline for Xamarin.Forms is a very small chart, typically drawn without axes or coordinates. It presents the general shape of data’s in a simple and highly condensed way.
 
-![](Overview_images/Overview.png)
-
+![](Overview_image/Overview.png)
 
 ## Key features
 
 * Data Binding support
 * Range Band support
-* Support 4 different types of sparkline.
+* Supports 4 different types of sparkline.
 * Marker support for line and area sparkline.
 * Empty point support.

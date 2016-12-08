@@ -45,8 +45,8 @@ public class ViewModel
                 new Model { Performance = 5000 },
                 new Model { Performance = -3000 },
                 new Model { Performance = -4000 },
-                new Model { Performance = -2000 },
-                new Model { Performance = -3000 },
+                new Model { Performance = 2000 },
+                new Model { Performance = 3000 }
             }; 
        }
  }

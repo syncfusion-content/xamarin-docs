@@ -190,7 +190,7 @@ This page lists the assemblies required for each control to be referred in each 
 ## SfCalendar
 
 <dl>
-  <dt>Nuget</dt>
+  <dt>NuGet</dt>
   <dd>Syncfusion.Xamarin.Calendar</dd>
 </dl>
 

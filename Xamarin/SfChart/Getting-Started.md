@@ -141,11 +141,11 @@ N> Add namespace of `ViewModel` class in your XAML page if you prefer to set `Bi
 
              xmlns:local="clr-namespace:ChartDemo"> 
    
-<ContentPage.BindingContext>
+    <ContentPage.BindingContext>
        
-	<local:ViewModel></local:ViewModel>
+	    <local:ViewModel></local:ViewModel>
    
-</ContentPage.BindingContext>
+    </ContentPage.BindingContext>
  
 </ContentPage>
 {% endhighlight %}

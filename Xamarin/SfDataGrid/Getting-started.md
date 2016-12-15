@@ -413,11 +413,17 @@ Refer the following code example to load the SfDataGrid control inside a StackLa
 </StackLayout>
 {% endhighlight %}
 
-## Linker problem in Forms.iOS
 
-There are some known framework issues in Forms.iOS platform.
+Refer the following screenshot for the final outcome 
 
-When creating `Xamarin.Forms` samples that use SfDataGrid with `Linker behavior` in iOS renderer project as “Link Framework SDKs only”, sometimes `System.MethodMissingException` or `No method Count exists on type System.Linq.Queryable` exception will be thrown.
+![](SfDataGrid_images/SfDataGrid-in-StackLayout.jpeg)
+
+
+## Linker issue in Xamarin.Forms.iOS
+
+There are some known Framework issues in Xamarin.Forms.iOS platform.
+
+When creating SfDataGrid in `Xamarin.Forms` with `Linker behavior` in iOS renderer project as “Link Framework SDKs only”, sometimes `System.MethodMissingException` or `No method Count exists on type System.Linq.Queryable` exception will be thrown.
 
 The above exceptions can be resolved by using the below workaround.
 
@@ -430,8 +436,3 @@ The above exceptions can be resolved in two ways.
 
 
 ![](SfDataGrid_images/GettingStarted_img1.png)
-
-
-Refer the following screenshot for the final outcome 
-
-![](SfDataGrid_images/SfDataGrid-in-StackLayout.jpeg)

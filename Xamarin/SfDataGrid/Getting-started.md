@@ -413,6 +413,26 @@ Refer the following code example to load the SfDataGrid control inside a StackLa
 </StackLayout>
 {% endhighlight %}
 
+## Linker problem in Forms.iOS
+
+There are some known framework issues in Forms.iOS platform.
+
+1.	When perform `Sorting` operation, exception will be throw.
+2.	When try to access the `IEnumerable` collection, exception will be throw.
+
+These problems can be resolved by using the below workaround.
+
+**Workaround:**
+
+The above problems can be resolved in two ways.
+ 
+1.	By setting LinkerBehavior as “Don’t Link” 
+2.	By setting custom linker argument in iOS renderer project as like in below screenshot,
+
+
+![](SfDataGrid_images/GettingStarted_img1.png)
+
+
 Refer the following screenshot for the final outcome 
 
 ![](SfDataGrid_images/SfDataGrid-in-StackLayout.jpeg)

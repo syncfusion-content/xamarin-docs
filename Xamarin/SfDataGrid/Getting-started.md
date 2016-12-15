@@ -417,14 +417,13 @@ Refer the following code example to load the SfDataGrid control inside a StackLa
 
 There are some known framework issues in Forms.iOS platform.
 
-1.	When perform `Sorting` operation, exception will be throw.
-2.	When try to access the `IEnumerable` collection, exception will be throw.
+When creating `Xamarin.Forms` samples that use SfDataGrid with `Linker behavior` in iOS renderer project as “Link Framework SDKs only”, sometimes `System.MethodMissingException` or `No method Count exists on type System.Linq.Queryable` exception will be thrown.
 
-These problems can be resolved by using the below workaround.
+The above exceptions can be resolved by using the below workaround.
 
 **Workaround:**
 
-The above problems can be resolved in two ways.
+The above exceptions can be resolved in two ways.
  
 1.	By setting LinkerBehavior as “Don’t Link” 
 2.	By setting custom linker argument in iOS renderer project as like in below screenshot,

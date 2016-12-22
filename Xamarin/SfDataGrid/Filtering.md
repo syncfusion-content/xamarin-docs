@@ -204,7 +204,7 @@ The following code example illustrates how to create a `SearchBar` and apply the
            TextChanged="OnFilterTextChanged" />
 {% endhighlight %}
 {% highlight c# %}
-void OnFilterTextChanged(object sender, TextChangedEventArgs e)
+private void OnFilterTextChanged(object sender, TextChangedEventArgs e)
 {
     if (e.NewTextValue == null)
         viewModel.FilterText = "";
@@ -223,7 +223,7 @@ Once you create a `SearchBar` and a view model, you can perform filtering by set
 
 viewModel.filtertextchanged = OnFilterChanged; //where ‘filtertextchanged’ is a delegate declared in ViewModel class.
 
-void OnFilterChanged()
+private void OnFilterChanged()
 {
     if (dataGrid.View != null)
     {
@@ -256,7 +256,7 @@ For example, you can filter the records in `OrderID` or any other particular col
 </Picker>
 {% endhighlight %}        
 {% highlight c# %}
-void OnColumnsSelectionChanged(object sender, EventArgs e)
+private void OnColumnsSelectionChanged(object sender, EventArgs e)
 {
     Picker newPicker = (Picker)sender;
     viewModel.SelectedColumn = newPicker.Items[newPicker.SelectedIndex];
@@ -450,7 +450,7 @@ The following code example illustrates how to create a `Picker` for conditions a
 </Picker>
 {% endhighlight %}
 {% highlight c# %}
-void OnFilterOptionsChanged(object sender, EventArgs e)
+private void OnFilterOptionsChanged(object sender, EventArgs e)
 {
     Picker newPicker = (Picker)sender;
     if (newPicker.SelectedIndex >= 0)
@@ -568,7 +568,7 @@ this.dataGrid.ItemsSource = viewModel.OrdersInfo;
 viewModel.filtertextchanged = OnFilterChanged;
 ColumnsList.SelectedIndex = 0;
 
-void OnColumnsSelectionChanged(object sender, EventArgs e)
+private void OnColumnsSelectionChanged(object sender, EventArgs e)
 {
     Picker newPicker = (Picker)sender;
     viewModel.SelectedColumn = newPicker.Items[newPicker.SelectedIndex];
@@ -613,7 +613,7 @@ void OnColumnsSelectionChanged(object sender, EventArgs e)
     }
 }
 
-void OnFilterOptionsChanged(object sender, EventArgs e)
+private void OnFilterOptionsChanged(object sender, EventArgs e)
 {
     Picker newPicker = (Picker)sender;
     if (newPicker.SelectedIndex >= 0)
@@ -624,7 +624,7 @@ void OnFilterOptionsChanged(object sender, EventArgs e)
     }
 }
 
-void OnFilterTextChanged(object sender, TextChangedEventArgs e)
+private void OnFilterTextChanged(object sender, TextChangedEventArgs e)
 {
     if (e.NewTextValue == null)
         viewModel.FilterText = "";
@@ -632,7 +632,7 @@ void OnFilterTextChanged(object sender, TextChangedEventArgs e)
         viewModel.FilterText = e.NewTextValue;
 }
 
-void OnFilterChanged()
+private void OnFilterChanged()
 {
     if (dataGrid.View != null)
     {
@@ -654,7 +654,7 @@ The below code example illustrates how to clear the applied filtering in SfDataG
 {% highlight c# %}
 // Code-Behind
 
-void OnFilterChanged()
+private void OnFilterChanged()
 {
     if (dataGrid.View != null)
     {

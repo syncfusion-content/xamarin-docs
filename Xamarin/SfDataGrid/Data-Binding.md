@@ -73,7 +73,7 @@ this.dataGrid.Columns.Add(new GridTextColumn() { MappingName = "OrderID.Order" }
 
 ## View
 
-DataGrid has the `View` property of type [ICollectionViewAdv](https://help.syncfusion.com/cr/cref_files/xamarin/data/Syncfusion.Data.Portable~Syncfusion.Data.CollectionViewAdv.html) interface that implements `ICollectionView` interface. `View` is responsible for maintain and manipulation data and other advanced operations like `Sorting`, `Grouping`, and etc.
+DataGrid has the `View` property of type [ICollectionViewAdv](https://help.syncfusion.com/cr/cref_files/xamarin/data/Syncfusion.Data.Portable~Syncfusion.Data.CollectionViewAdv.html) interface that implements `ICollectionView` interface. `View` is responsible for maintaining and manipulating data and other advanced operations like `Sorting`, `Grouping`, and etc.
 
 When you bind collection to `ItemsSource` property of SfDataGrid, then `View` will be created and maintains the operations on `Data` such as `Grouping`, `Sorting`, `Insert`, `Delete`, and `Modification`.
 

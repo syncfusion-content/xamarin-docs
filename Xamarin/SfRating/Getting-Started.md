@@ -31,24 +31,8 @@ You can then add the assembly references to the respective projects as shown bel
 <td>android\Syncfusion.SfRating.Android.dll<br/>android\Syncfusion.SfRating.XForms.Android.dll<br/>android\Syncfusion.SfRating.XForms.dll</td>
 </tr>
 <tr>
-<td>iOS (Classic)</td>
-<td>iOS\Syncfusion.SfRating.iOS.dll<br/>iOS\Syncfusion.SfRating.XForms.iOS.dll<br/>iOS\Syncfusion.SfRating.XForms.dll</td>
-</tr>
-<tr>
 <td>iOS (Unified)</td>
 <td>iOS-unified\Syncfusion.SfRating.iOS.dll<br/>iOS-unified\Syncfusion.SfRating.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfRating.XForms.dll</td>
-</tr>
-<tr>
-<td>Windows Phone</td>
-<td>wp8\Syncfusion.SfInput.WP8.dll<br/>wp8\Syncfusion.SfShared.WP8.dll<br/>wp8\Syncfusion.SfRating.XForms.dll<br/>wp8\Syncfusion.SfRating.XForms.WinPhone.dll</td>
-</tr>
-<tr>
-<td>Windows Phone 8.1</td>
-<td>wp81\Syncfusion.SfInput.WP.dll<br/>wp81\Syncfusion.SfShared.WP.dll<br/>wp81\Syncfusion.SfRating.XForms.dll<br/>wp81\Syncfusion.SfRating.XForms.WinPhone.dll</td>
-</tr>
-<tr>
-<td>WinRT</td>
-<td>winrt\Syncfusion.SfInput.WinRT.dll<br/>winrt\Syncfusion.SfShared.WinRT.dll<br/>winrt\Syncfusion.SfRating.XForms.dll<br/>winrt\Syncfusion.SfRating.XForms.WinRT.dll</td>
 </tr>
 <tr>
 <td>UWP</td>
@@ -56,21 +40,7 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 </table>
 
-Currently an additional step is required for Windows Phone, Windows Phone 8.1 and iOS projects. We need to create an instance of the rating custom renderer as shown below. 
-
-Create an instance of SfRatingRenderer in MainPage constructor of the Windows Phone and Windows Phone 8.1 project as shown 
-{% tabs %}
-
-{% highlight C# %}
-
-public MainPage()
-{
-    new SfRatingRenderer();
-}
-
-{% endhighlight %}
-
-{% endtabs %}
+Currently an additional step is required for iOS project. We need to create an instance of the rating custom renderer as shown below. 
 
 Create an instance of SfRatingRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below
 

@@ -33,39 +33,12 @@ You can then add the assembly references to the respective projects as shown bel
 <td>iOS-unified\Syncfusion.SfNavigationDrawer.iOS.dll<br/>iOS-unified\SyncfusionSfNavigationDrawer.XForms.dll<br/>iOS-unified\Syncfusion.SfNavigationDrawer.XForms.iOS.dll</td>
 </tr>
 <tr>
-<td>Windows Phone</td>
-<td>wp8\Syncfusion.SfNavigationDrawer.WP8.dll<br/>wp8\Syncfusion.SfNavigationDrawer.XForms.dll<br/>wp8\Syncfusion.SfNavigationDrawer.XForms.WinPhone.dll</td>
-</tr>
-<tr>
-<td>Windows Phone 8.1</td>
-<td>wp81\Syncfusion.SfNavigationDrawer.WP.dll<br/>wp81\Syncfusion.SfNavigationDrawer.XForms.dll<br/>wp81\Syncfusion.SfNavigationDrawer.XForms.WinPhone.dll</td>
-</tr>
-<tr>
-<td>WinRT</td>
-<td>winrt\Syncfusion.SfNavigationDrawer.WinRT.dll<br/>winrt\Syncfusion.SfNavigationDrawer.XForms.dll<br/>winrt\Syncfusion.SfNavigationDrawer.XForms.WinRT.dll</td>
-</tr>
-<tr>
 <td>UWP</td>
 <td>uwp\Syncfusion.SfNavigationDrawer.UWP.dll<br/>uwp\Syncfusion.SfNavigationDrawer.XForms.dll<br/>uwp\Syncfusion.SfNavigationDrawer.XForms.UWP.dll</td>
 </tr>
 </table>
 
-Currently an additional step is required for Windows Phone, Windows Phone 8.1 and iOS projects. We need to create an instance of the NavigationDrawer custom renderer as shown below. 
-
-Create an instance of SfNavigationDrawerRenderer in MainPage constructor of the Windows Phone and Windows Phone 8.1  project as shown 
-
-{% tabs %}
-
-{% highlight C# %}
-
-public MainPage()
-{
-    new SfNavigationDrawerRenderer();
-}
-
-{% endhighlight %}
-
-{% endtabs %}
+Currently an additional step is required for iOS project. We need to create an instance of the NavigationDrawer custom renderer as shown below. 
 
 Create an instance of SfNavigationDrawerRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below
 

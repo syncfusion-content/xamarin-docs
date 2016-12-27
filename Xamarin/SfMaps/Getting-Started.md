@@ -14,7 +14,7 @@ This section explains you the steps to configure a Maps control in a real-time
 
 ## Referencing Essential Studio components in your solution
 
-If you had acquired Essential Studio components through the Xamarin component store interface from within your IDE, then after adding the components to your Xamarin.iOS, Xamarin.Android and Windows Phone projects through the Component manager, you will still need to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL project in your solution. You can do this by manually adding the relevant PCL assembly references to your PCL project contained in the following path inside of your solution folder.  
+If you had acquired Essential Studio components through the Xamarin component store interface from within your IDE, then after adding the components to your Xamarin.iOS, Xamarin.Android and UWP projects through the Component manager, you will still need to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL project in your solution. You can do this by manually adding the relevant PCL assembly references to your PCL project contained in the following path inside of your solution folder.  
 
 Components/syncfusionessentialstudio-version/lib/pcl/
 
@@ -54,22 +54,14 @@ You can then add the assembly references to the respective projects as shown bel
 <td>iOS-unified\Syncfusion.SfMaps.iOS.dll<br/>iOS-unified\Syncfusion.SfMaps.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfMaps.XForms.dll</td>
 </tr>
 <tr>
-<td>Windows Phone</td>
-<td>wp8\Syncfusion.SfMaps.XForms.dll<br/>wp8\Syncfusion.SfMaps.XForms.WinPhone.dll<br>wp8\Syncfusion.SfMaps.WP8.dll</td>
-</tr>
-<tr>
-<td>Windows Phone 8.1</td>
-<td>wp81\Syncfusion.SfMaps.XForms.dll<br/>wp81\Syncfusion.SfMaps.XForms.WinPhone.dll<br>wp81\Syncfusion.SfMaps.WP.dll</td>
-</tr>
-<tr>
-<td>WinRT</td>
-<td>winrt\Syncfusion.SfMaps.XForms.dll<br/>winrt\Syncfusion.SfMaps.XForms.WinRT.dll<br>wp81\Syncfusion.SfMaps.WinRT.dll</td>
+<td>UWP</td>
+<td>uwp\Syncfusion.SfMaps.XForms.dll<br/>uwp\Syncfusion.SfMaps.XForms.UWP.dll<br>uwp\Syncfusion.SfMaps.UWP.dll</td>
 </tr>
 </table>
 
-Currently an additional step is required for Windows Phone, Windows Phone 8.1, WinRT and iOS projects. We need to create an instance of the maps custom renderer as shown below. 
+Currently an additional step is required for UWP and iOS projects. We need to create an instance of the maps custom renderer as shown below. 
 
-Create an instance of SfMapsRenderer in MainPage constructor of the Windows Phone, Windows Phone 8.1 and WinRT project as shown 
+Create an instance of SfMapsRenderer in MainPage constructor of the UWP project as shown 
 
 {% highlight C# %}
 

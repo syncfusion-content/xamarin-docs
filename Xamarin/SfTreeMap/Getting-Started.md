@@ -13,7 +13,7 @@ This section explains you the steps to configure a TreeMap control in a real-t
 
 ## Reference Essential Studio Components in your solution
 
-If you had acquired Essential Studio components through the Xamarin component store interface from within your IDE, then after adding the components to your Xamarin.iOS, Xamarin.Android and Windows Phone projects through the Component manager, you will still need to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL project in your solution. You can do this by manually adding the relevant PCL assembly references to your PCL project contained in the following path inside of your solution folder.
+If you had acquired Essential Studio components through the Xamarin component store interface from within your IDE, then after adding the components to your Xamarin.iOS, Xamarin.Android and UWP projects through the Component manager, you will still need to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL project in your solution. You can do this by manually adding the relevant PCL assembly references to your PCL project contained in the following path inside of your solution folder.
 
 Components/syncfusionessentialstudio-version/lib/pcl/
 
@@ -53,22 +53,14 @@ You can then add the assembly references to the respective projects as shown bel
 <td>iOS-unified\Syncfusion.SfTreeMap.iOS.dll<br/>iOS-unified\Syncfusion.SfTreeMap.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfTreeMap.XForms.dll</td>
 </tr>
 <tr>
-<td>Windows Phone</td>
-<td>wp8\Syncfusion.SfTreeMap.XForms.dll<br/>wp8\Syncfusion.SfTreeMap.XForms.WinPhone.dll<br>wp8\Syncfusion.SfTreeMap.WP8.dll</td>
-</tr>
-<tr>
-<td>Windows Phone 8.1</td>
-<td>wp81\Syncfusion.SfTreeMap.XForms.dll<br/>wp81\Syncfusion.SfTreeMap.XForms.WinPhone.dll<br>wp81\Syncfusion.SfTreeMap.WP.dll</td>
-</tr>
-<tr>
-<td>WinRT</td>
-<td>winrt\Syncfusion.SfTreeMap.XForms.dll<br/>winrt\Syncfusion.SfTreeMap.XForms.WinRT.dll<br>wp81\Syncfusion.SfTreeMap.WinRT.dll</td>
+<td>UWP</td>
+<td>uwp\Syncfusion.SfTreeMap.XForms.dll<br/>uwp\Syncfusion.SfTreeMap.XForms.UWP.dll<br>uwp\Syncfusion.SfTreeMap.UWP.dll</td>
 </tr>
 </table>
 
-Currently an additional step is required for Windows Phone and iOS projects. We need to create an instance of the TreeMap custom renderer as shown below.
+Currently an additional step is required for UWP projects. We need to create an instance of the TreeMap custom renderer as shown below.
 
-Create an instance of SfTreeMapRenderer in MainPage constructor of the Windows Phone , Windows Phone 8.1 and WinRT project as shown
+Create an instance of SfTreeMapRenderer in MainPage constructor of the UWP project as shown
 
 {% highlight C# %}  
 

@@ -121,7 +121,7 @@ The following events are associated with `View`.
 
 [OldStartingIndex](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.Collections.Specialized.NotifyCollectionChangedEventArgs.OldStartingIndex)&rd=true) - It contains the index at which the `Action` occurred.
 
-The following is the methods that are associated with `View` which can be used to defer refresh the view.
+The following are the methods that are associated with `View` which can be used to defer refresh the view.
 
 <table>
 <tr>

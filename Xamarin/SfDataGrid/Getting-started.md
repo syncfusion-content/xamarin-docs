@@ -408,7 +408,7 @@ Refer the following code example to load the SfDataGrid control inside a StackLa
     <SearchBar Placeholder="UserName" TextChanged="searchBar_TextChanged" />
     <sfgrid:SfDataGrid x:Name="dataGrid"
                        ColumnSizer="Star"
-                       ItemsSource="{Binding OrdersInfo}"
+                       ItemsSource="{Binding OrderInfoCollection}"
                        VerticalOptions="FillAndExpand" />
 </StackLayout>
 {% endhighlight %}

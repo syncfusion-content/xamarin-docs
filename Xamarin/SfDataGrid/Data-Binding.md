@@ -43,7 +43,7 @@ If the data source implements `ICollectionChanged` interface, then SfDataGrid wi
 
 If the data model implements the `INotifyPropertyChanged` interface, then the SfDataGrid responds to the property change in runtime to update the view.
 
-Note> SfDataGrid do not supports `DataTable` binding in `Xamarin.Forms` since `System.Data` is inaccessible in `Forms`.
+Note> SfDataGrid does not supports `DataTable` binding in `Xamarin.Forms` since `System.Data` is inaccessible in `Portable Class Library`.
 
 ## Binding with IEnumerable
 

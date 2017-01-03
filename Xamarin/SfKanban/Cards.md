@@ -62,29 +62,25 @@ You can replace the entire card template with your own design using [CardTemplat
 
 <kanban:SfKanban.CardTemplate >
 
-    <DataTemplate>
+<DataTemplate>
+    <StackLayout WidthRequest="250" Orientation="Vertical" BackgroundColor="Gray" Padding="10,10,10,10"> 
+        
+        <StackLayout  Orientation="Horizontal"> 
 
-        <StackLayout WidthRequest="250" Orientation="Vertical" BackgroundColor="Gray" Padding="10,10,10,10"> 
+            <Label Text="{Binding Path=Title}" TextColor="Silver" HorizontalOptions="StartAndExpand" >
+            </Label>
 
-            <StackLayout  Orientation="Horizontal"> 
+        </StackLayout>      
 
-                <Label Text="{Binding Path=Title}" HorizontalOptions="StartAndExpand" >
-                </Label>
+        <StackLayout  Orientation="Horizontal"> 
 
-            </StackLayout>
-
-            <Label  HeightRequest="2" WidthRequest="250" BackgroundColor="Black"></Label>                
-
-            <StackLayout  Orientation="Horizontal"> 
-
-                <Label Text="{Binding Description}" WidthRequest="150" FontSize="14" TextColor="Silver" LineBreakMode="WordWrap" ></Label>                    
-                <Image Source="{Binding ImageURL}" HeightRequest="50" WidthRequest="50"  ></Image>
-
-            </StackLayout>
+            <Label Text="{Binding Description}" WidthRequest="150" FontSize="14" TextColor="Silver" LineBreakMode="WordWrap" ></Label>                    
+            <Image Source="{Binding ImageURL}" HeightRequest="50" WidthRequest="50"  ></Image>
 
         </StackLayout>
-
-    </DataTemplate>
+        
+    </StackLayout>
+</DataTemplate>
 
 </kanban:SfKanban.CardTemplate>
 
@@ -111,14 +107,7 @@ var cardTemplate = new DataTemplate(() =>
     };
     title.SetBinding(Label.TextProperty, new Binding("Title"));
     titleLayout.Children.Add(title);
-
-    Label line = new Label()
-    {
-        HeightRequest = 2,
-        WidthRequest = 250,
-        BackgroundColor = Color.Black
-    };
-
+    
     StackLayout contentLayout = new StackLayout()
     {
         Orientation = StackOrientation.Horizontal
@@ -141,7 +130,6 @@ var cardTemplate = new DataTemplate(() =>
     contentLayout.Children.Add(image);
 
     root.Children.Add(titleLayout);
-    root.Children.Add(line);
     root.Children.Add(contentLayout);
 
     return root;

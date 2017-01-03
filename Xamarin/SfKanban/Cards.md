@@ -9,8 +9,6 @@ documentation: ug
 
 #Cards
 
-##Cards Customization
-
 The default elements of a card can be customized using the below properties of [KanbanModel](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanModel.html).
 
 [Title](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanModel~Title.html)         - Used to set the title of a card.

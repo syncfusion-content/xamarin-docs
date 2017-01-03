@@ -22,7 +22,7 @@ I> For UWP alone, one more additional step is required if the project is built i
 
 ## Initialize Kanban
 
-Import [�SfKanban�](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban.html) namespace as shown below in your respective page,
+Import ['SfKanban'](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban.html) namespace as shown below in your respective page,
 
 {% tabs %}
 
@@ -38,7 +38,7 @@ using Syncfusion.SfKanban.XForms;
 
 {% endtabs %}
 
-Create an instance of [`SfKanban`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban.html) control and set to Content property of a Page.
+Create an instance of ['SfKanban'](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban.html) control and set to Content property of a Page.
 
 {% tabs %}
 
@@ -167,7 +167,7 @@ kanban.SetBinding(SfKanban.ItemsSourceProperty, "Cards");
 
 ## Defining columns
 
-The columns are generated automatically based on the distinct values of KanbanModel.Category from [`ItemsSource`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~ItemsSource.html). But, you can also define the columns by setting 'AutoGenerateColumns' property to false and adding [`KanbanColumn`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanColumn.html) instance to [`Columns`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~Columns.html) property of [`SfKanban`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban.html).
+The columns are generated automatically based on the distinct values of ['KanbanModel.Category'](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanModel~Category.html) from ['ItemsSource'](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~ItemsSource.html). But, you can also define the columns by setting ['AutoGenerateColumns'](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~AutoGenerateColumns.html) property to false and adding ['KanbanColumn'](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanColumn.html) instance to ['Columns'](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~Columns.html) property of ['SfKanban'](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban.html).
 {% tabs %}
 
 {% highlight xaml %}

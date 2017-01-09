@@ -37,7 +37,7 @@ kanban.Workflows = workflows;
 {% endhighlight %}
 
 
-In the below output, you can see the card which was picked from Open state is not allowed to drop on “Code Review” state, because we have defined to move the card from Open to “In Progress” state only and not to any other states.
+In the below output, you can see the card which was picked from Open state is not allowed to drop on “Code Review” and "Done" state, because we have defined to move the card from Open to “In Progress” state only and not to any other states.
 
 
 ![](SfKanban_images/Workflows.png)

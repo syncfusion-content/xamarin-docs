@@ -81,7 +81,7 @@ You can also add an object in the month cell view using `view` property passed t
 		
 {% endhighlight %}
 
-![](Appearance/Appearance1.jpeg)
+![](AppearanceAndStyling_images/MonthCellStyling/MonthView.png)
 
 ## Appointment Customization.
 
@@ -160,7 +160,7 @@ You can also add an object in the appointment view using `view` property passed 
 
 >**Note** : You can only get appointment properties such as subject,location,StartTime,EndTime,etc from the `AppointmentLoadedEventArgs`.
 
-![](Appearance/appointCust.png)
+![](AppearanceAndStyling_images/AppointmentStyling/Appointments.png)
 
 ## Panel Customization
 
@@ -258,6 +258,8 @@ You can change the all day appointment panel color using the property `AllDayApp
  {% endhighlight %} 
  
  {% endtabs %}
+
+![](AppearanceAndStyling_images/DayViewAppearance/DayView.png) 
 
 ### Custom Week View
 
@@ -360,6 +362,8 @@ You can change the all day appointment panel color using the property `AllDayApp
 {% endhighlight %}
 
 {% endtabs %}
+
+![](AppearanceAndStyling_images/WeekViewAppearance/WeekView.png)
 
 ### Custom Work Week View
 
@@ -464,6 +468,8 @@ You can change the all day appointment panel color using the property `AllDayApp
 
 {% endtabs %}
 
+![](AppearanceAndStyling_images/WorkWeekViewAppearance/WorkWeekView.png)
+
 ## Inline view Customization.
 
 You can able to know the details of appointments in inline using `MonthAppointmentInlineTapped` event in `Schedule`.Details of the selected  appointment and the corresponding date is passed through `MonthInlineAppointmentTappedEventArgs` as `selectedAppointment` and `selectedDate` respectively.
@@ -478,6 +484,4 @@ You can able to know the details of appointments in inline using `MonthAppointme
 
 {% endhighlight %}
 
-![](Appearance/Appearance2.jpeg)
-
-![](Appearance/Appearance3.jpeg)
+![](AppearanceAndStyling_images/Inline.png)

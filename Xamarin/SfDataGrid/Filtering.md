@@ -15,7 +15,7 @@ SfDataGrid provides support for view filtering.
 
 SfDataGrid provides support to filter the records in view by setting `SfDataGrid.View.Filter` property where `Filter` is a `predicate`.
 
-In order to filter the records in SfDataGrid, you have to assign the filtered strings to the `ViewModel.FilterText` property which will be later assign to `SfDataGrid.View.Filter` in OnFilterChanged() method.
+In order to filter the records in SfDataGrid, you have to assign the filtered strings to the `ViewModel.FilterText` property which will be later applied in `Filter predicate` that is assigned to `SfDataGrid.View.Filter` in OnFilterChanged() method.
 
 The following code example illustrates the delegate, properties, and methods used in the `ViewModel` class in order to perform the filtering operation.
 
@@ -237,7 +237,7 @@ private void OnFilterChanged()
 
 You can filter the records in all the columns or in particular column using the codes in OnColumnSelected() method. 
 
-For example, you can filter the records in `OrderID` or any other particular column alone.The following code example illustrates how to create a `Picker` for columns and add appropriate strings to that `Picker`. Also, it illustrates how the records will be filtered based on the column selected.
+For example, you can filter the records in `OrderID` or any other particular column alone.The following code example illustrates how to create a `Picker` for columns. Also, it illustrates how the records will be filtered based on the column selected.
 
 {% tabs %}
 {% highlight xaml %}

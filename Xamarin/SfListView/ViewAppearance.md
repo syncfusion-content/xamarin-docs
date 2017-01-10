@@ -74,3 +74,56 @@ private void ListView_Loaded(object sender, ListViewLoadedEventArgs e)
    listView.SelectedItems.Add(viewModel.Customers[2]);
 }
 {% endhighlight %}
+
+### Tapped Event
+
+The [ItemTapped](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTapped_EV.html) event will be triggered whenever you tapped on the item. [ItemTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemTappedEventArgs.html) has the following members which provides the information for `ItemTapped` event.
+
+* **ItemType** - Gets the type of the item on which you have tapped
+* **ItemData** - The underlying data associated with the tapped item as its arguments
+ 
+{% highlight c# %}
+listView.ItemTapped += ListView_ItemTapped;
+
+private void ListView_ItemTapped(object sender, Syncfusion.ListView.XForms.ItemTappedEventArgs e)
+{
+    if (e.ItemData == viewModel.InboxInfo[0])
+      viewModel.InboxInfo.Remove(e.ItemData as ListViewInboxInfo);  
+}
+{% endhighlight %}
+
+### ItemDoubleTapped Event
+
+TThe [ItemDoubleTapped](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemDoubleTapped_EV.html) event will be triggered whenever you have double tapped on the item. [ItemDoubleTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDoubleTappedEventArgs.html) has the following members which provides the information for `ItemDoubleTapped` event.
+
+* **ItemType** - Gets the type of the item on which you have double tapped
+* **ItemData** - The underlying data associated with the double tapped item as its arguments
+
+{% highlight c# %}
+listView.ItemDoubleTapped += ListView_ItemDoubleTapped;
+
+private void ListView_ItemDoubleTapped(object sender, ItemDoubleTappedEventArgs e)
+{
+    var listviewinboxinfo = new ListViewInboxInfo();
+    listviewinboxinfo.Title = "Bryce Thomas";
+    listviewinboxinfo.Subject = "Congratulations on the move!";
+    viewModel.InboxInfo.Add(listviewinboxinfo);
+}
+{% endhighlight %}
+
+### ItemHolding Event
+
+The [ItemHolding](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemHolding_EV.html) event will be triggered whenever you have long pressed on the item. [ItemHoldingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemHoldingEventArgs.html) has the following members which provides the information for `ItemHolding` event.
+
+* **ItemType** - Gets the type of the item on which you have long pressed.
+* **ItemData** - The underlying data associated with the holding item as its arguments
+ 
+{% highlight c# %}
+listView.ItemHolding += ListView_ItemHolding;
+
+private void ListView_ItemHolding(object sender, ItemHoldingEventArgs e)
+{
+   if (e.ItemData == viewModel.InboxInfo[3])
+      viewModel.InboxInfo.Remove(e.ItemData as ListViewInboxInfo);         
+}
+{% endhighlight %}

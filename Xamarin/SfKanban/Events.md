@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Events for Essential Xamarin.Forms Kanban
+title: Evetns in Xamarin.Forms Kanban control
 description: Kanban Events
 platform: xamarin
 control: Kanban

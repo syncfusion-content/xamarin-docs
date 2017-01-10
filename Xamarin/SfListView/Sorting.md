@@ -47,6 +47,10 @@ listView.RefreshView();
 {% endhighlight %}
 {% endtabs %}
 
+The following screenshot shows the output rendered when the sorting is applied.
+
+![](SfListView_images/SfListView-Sorting.png)
+
 ## Custom Sorting
 
 SfListView allows you to sort the items based on the custom logic. The custom sorting can be applied to either [SfListView.DataSource.SortComparer](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~SortComparer.html) property or [SortDescriptor.Comparer](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.SortDescriptor~Comparer.html) which is added into the [DataSource.SortDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~SortDescriptors.html) collection.

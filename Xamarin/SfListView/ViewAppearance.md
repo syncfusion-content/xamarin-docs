@@ -58,6 +58,8 @@ listView.Orientation = Orientation.Horizontal;
 {% endhighlight %}
 {% endtabs %}
 
+![](SfListView_images/SfListView-Orientation.png)
+
 ## Events
 
 ### Loaded Event

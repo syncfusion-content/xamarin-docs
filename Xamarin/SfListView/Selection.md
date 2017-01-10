@@ -26,6 +26,10 @@ listView.SelectionMode = SelectionMode.Multiple;
 listView.SelectionGesture = TouchGesture.Hold;
 {% endhighlight %}
 
+The following screenshot shows the output rendered when the selection is performed on the items.
+
+![](SfListView_images/SfListView-Selection-1.png)
+
 ## Programmatic Selection
 
 When [SelectionMode](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionMode.html) is other than `None`, you can select the item / items in SfListView from the code by setting the [SelectedItem](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItem.html) or adding items to the [SelectedItems](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItems.html) property based on the `SelectionMode`.
@@ -161,7 +165,9 @@ public class SelectionBoolToImageConverter : IValueConverter
 
 In the above example, to change the appearance of selected item, `IsSelected` property is maintained in model class and binded to an image element in the [ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html). And `IsSelected` property of data item has been updated based on the selection from `SelectionChanged` event of SfListView. The binded image's source is changed by using `SelectionBoolToImageConverter` converter. 
 
-You can download the entire source code of this demo from [here](http://files2.syncfusion.com/Xamarin.Forms/Samples/CustomSelection.zip).
+Now run the application to render the following output. You can download the entire source code of this demo from [here](http://files2.syncfusion.com/Xamarin.Forms/Samples/CustomSelection.zip).
+
+![](SfListView_images/SfListView-Selection-2.png)
 
 ## Limitation
 

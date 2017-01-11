@@ -99,6 +99,34 @@ public MainPage()
 }
 {% endhighlight %}
 
+### ReleaseMode issue in UWP platform
+
+There is a known Framework issue in UWP platform. The custom controls will not render when deployed the application in `Release Mode`.
+
+The above problem can be resolved by initializing the SfDataGrid assemblies in `App.xaml.cs` in UWP project as like in below code snippet.
+
+{% highlight c# %}
+// In App.xaml.cs
+
+protected override void OnLaunched(LaunchActivatedEventArgs e)
+{
+    …
+
+    rootFrame.NavigationFailed += OnNavigationFailed;
+        
+    // you'll need to add `using System.Reflection;`
+    List<Assembly> assembliesToInclude = new List<Assembly>();
+
+    //Now, add all the assemblies your app uses
+    assembliesToInclude.Add(typeof(SfDataGridRenderer).GetTypeInfo().Assembly);
+
+    // replaces Xamarin.Forms.Forms.Init(e);        
+    Xamarin.Forms.Forms.Init(e, assembliesToInclude);
+        
+    …     
+}
+{% endhighlight %}
+
 ## Create a simple SfDataGrid 
 
 This section explains how to create a SfDataGrid and configure it. The SfDataGrid control can be configured entirely in C# code or by using XAML markup. This is how the final output will look like on iOS, Android and Windows Phone devices.

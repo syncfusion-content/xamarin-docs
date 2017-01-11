@@ -534,17 +534,3 @@ listView.FooterTemplate = new DataTemplate(() =>
 });
 {% endhighlight %}
 {% endtabs %}
-
-## Launching the SfListView inside the StackLayout
-
-The StackLayout positions the child element one after the other, either horizontally or vertically based on the orientation of StackLayout. The size of the StackLayout depends on how the HorizontalOptions and VerticalOptions properties are set, but by default the StackLayout will try to use the entire screen. When you load SfListView inside the StackLayout, you should set the HorizontalOptions and VerticalOptions to the SfListView’ s parent as “LayoutOptions.FillAndExpand”.
-
-Refer the following code example to load the SfListView control inside a ScrollView in the StackLayout. The VerticalOptions of the ScrollView alone is set as “FillAndExpand” as the default orientation of the StackLayout is Vertical. In case, if the orientation of the StackLayout is Horizontal, then you should set the HorizontalOptions instead. In some case, you may have to set both the “VerticalOptions” and “HorizontalOptions” of the SfListView based on its parent.
-
-{% highlight xaml %}
-<StackLayout>
-  <ScrollView VerticalOptions="FillAndExpand">
-    <sync:SfListView x:Name="listView" ItemsSource="{Binding BookInfo}" /> 
-  </ScrollView> 
-</StackLayout>
-{% endhighlight %}

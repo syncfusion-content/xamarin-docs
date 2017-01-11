@@ -260,6 +260,83 @@ dataGrid.Columns[0].LineBreakMode=LineBreakMode.WordWrap;
 {% endhighlight %}
 {% endtabs %}
 
+## GridSwitchColumn
+
+GridSwitchColumn is derived from GridColumn, and hence it inherits all the properties of GridColumn. It loads a switch as a content of record cells in the column and responds to value changes in it. You can change the underlying data source that toggles the values shown in the switch. The SfDataGrid automatically generates GridSwitchColumn if the property in the underlying collection of type bool.
+
+The following code example shows how to use GridSwitchColumn.
+ 
+{% tabs %}
+{% highlight xaml %}
+<ContentPage.BindingContext>
+    <local:ViewModel />
+</ContentPage.BindingContext>
+
+<sfGrid:SfDataGrid x:Name="dataGrid"
+                   AutoGenerateColumns="True"
+                   ItemsSource="{Binding OrdersInfo}">
+    <sfGrid:SfDataGrid.Columns>
+        <sfGrid:GridSwitchColumn MappingName="IsClosed" />
+    </sfGrid:SfDataGrid.Columns>
+</sfGrid:SfDataGrid> 
+{% endhighlight %}
+{% highlight c# %}
+// Model class
+public class Model
+{
+    private bool _isClosed;
+
+    public bool IsClosed
+    {
+        get { return _isClosed; }
+        set
+        {
+            this._isClosed = value;
+        }
+    }
+}
+
+// ViewModel class
+public class ViewModel
+{
+    public ViewModel()
+    {
+        GetOrderDetails(50);
+    }
+
+    #region ItemsSource
+
+    private ObservableCollection<OrderInfo> ordersInfo;
+
+    public ObservableCollection<OrderInfo> OrdersInfo
+    {
+        get { return ordersInfo; }
+        set { this.ordersInfo = value; }
+    }
+
+    #endregion
+
+    #region ItemSource Generator
+
+    public void GetOrderDetails(int count)
+    {
+        var order = new ObservableCollection<OrderInfo>();
+        for (int i = 1; i <= count; i++)
+        {
+            var ord = new OrderInfo()
+            {
+                IsClosed = (i % 2) == 0 ? true : false
+            };
+            order.Add(ord);
+        }
+        ordersInfo = order;
+    }
+
+    #endregion
+} 
+{% endhighlight %}
+{% endtabs %}
+
 ## GridImageColumn
 
 GridImageColumn is derived from GridColumn, and hence it inherits all the properties of GridColumn. It displays images as cell content of a column. To create GridImageColumn in SfDataGrid the property corresponding to the column in the underlying collection must be of type `ImageSource`.
@@ -345,83 +422,6 @@ public class ViewModel
 {% endtabs %}
 
 ![](SfDataGrid_images/SfDataGrid-Xamarin_showcase1.png)
-
-## GridSwitchColumn
-
-GridSwitchColumn is derived from GridColumn, and hence it inherits all the properties of GridColumn. It loads a switch as a content of record cells in the column and responds to value changes in it. You can change the underlying data source that toggles the values shown in the switch. The SfDataGrid automatically generates GridSwitchColumn if the property in the underlying collection of type bool.
-
-The following code example shows how to use GridSwitchColumn.
- 
-{% tabs %}
-{% highlight xaml %}
-<ContentPage.BindingContext>
-    <local:ViewModel />
-</ContentPage.BindingContext>
-
-<sfGrid:SfDataGrid x:Name="dataGrid"
-                   AutoGenerateColumns="True"
-                   ItemsSource="{Binding OrdersInfo}">
-    <sfGrid:SfDataGrid.Columns>
-        <sfGrid:GridSwitchColumn MappingName="IsClosed" />
-    </sfGrid:SfDataGrid.Columns>
-</sfGrid:SfDataGrid> 
-{% endhighlight %}
-{% highlight c# %}
-// Model class
-public class Model
-{
-    private bool _isClosed;
-
-    public bool IsClosed
-    {
-        get { return _isClosed; }
-        set
-        {
-            this._isClosed = value;
-        }
-    }
-}
-
-// ViewModel class
-public class ViewModel
-{
-    public ViewModel()
-    {
-        GetOrderDetails(50);
-    }
-
-    #region ItemsSource
-
-    private ObservableCollection<OrderInfo> ordersInfo;
-
-    public ObservableCollection<OrderInfo> OrdersInfo
-    {
-        get { return ordersInfo; }
-        set { this.ordersInfo = value; }
-    }
-
-    #endregion
-
-    #region ItemSource Generator
-
-    public void GetOrderDetails(int count)
-    {
-        var order = new ObservableCollection<OrderInfo>();
-        for (int i = 1; i <= count; i++)
-        {
-            var ord = new OrderInfo()
-            {
-                IsClosed = (i % 2) == 0 ? true : false
-            };
-            order.Add(ord);
-        }
-        ordersInfo = order;
-    }
-
-    #endregion
-} 
-{% endhighlight %}
-{% endtabs %}
 
 ## GridTemplateColumn
 
@@ -520,7 +520,6 @@ public class ImageConverter:IValueConverter
 {% endhighlight %}
 
 The following screenshot shows the different types of columns in SfDataGrid
-![](SfDataGrid_images/SfDataGrid-Xamarin_showcase1.png)
 
 ![](SfDataGrid_images/TemplateColumns2.png)
 

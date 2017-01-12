@@ -184,7 +184,7 @@ exportOption.DefaultColumnWidth = 150;
 var excelEngine = excelExport.ExportToExcel (this.dataGrid, exportOption);
 {% endhighlight %}
 
-SfDataGrid provides you with several properties in `DataGridExcelExportingOption` class to customize the grid while exporting it to excel.
+SfDataGrid provides you with several properties in `DataGridExcelExportingOption` class to customize the grid while exporting it to excel.
 
 ### Events
 

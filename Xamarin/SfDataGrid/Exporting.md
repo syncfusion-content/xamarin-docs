@@ -184,27 +184,7 @@ exportOption.DefaultColumnWidth = 150;
 var excelEngine = excelExport.ExportToExcel (this.dataGrid, exportOption);
 {% endhighlight %}
 
-SfDataGrid provides you with following properties in `DataGridExcelExportingOption` class to customize the grid while exporting it to excel.
-
-* [AllowOutlining](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption~AllowOutlining.html) - Specifies whether the groups should export with expand/collapse options or not.
-* [AllowSortingAndFiltering](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption~AllowSortingAndFiltering.html) - Specifies whether need to apply excel filtering and sorting for the exported file.
-* [ApplyGridStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption~ApplyGridStyle.html) - Specifies whether datagrid gridstyle need to be exported or not.
-* [DefaultColumnWidth](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption~DefaultColumnWidth.html) - Gets or sets the default column width for exporting.
-* [DefaultRowHeight](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption~DefaultRowHeight.html) - Gets or sets the default row height for exporting.
-* [ExcelVersion](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption~ExcelVersion.html) - Exports data to Excel in the specificed workbook version.
-* [ExcludedColumns](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption~ExcludedColumns.html) - Specifies list of columns that to be excluded from exporting.
-* [ExportColumnWidth](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption~ExportColumnWidth.html) - Gets or sets whether the column widths can be exported or not, if not default column width will be assigned.
-* [ExportGroups](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption~ExportGroups.html) - Specifies whether groups to be exported or not.
-* [ExportHeader](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption~ExportHeader.html) - Specifies whether header to be exported or not.
-* [ExportMode](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption~ExportMode.html) - Specifies whether data should exported as value or text.
-* [ExportRowHeight](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption~ExportRowHeight.html) - Gets or sets whether the row heights can be exported or not,if not default row height will be assigned.
-* [GroupCaptionStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption~GroupCaptionStyle.html) - Gets or sets groupcaption style for exporting.
-* [HeaderStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption~HeaderStyle.html) - Gets or sets headerstyle for exporting.
-* [RecordStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption~RecordStyle.html) - Gets or sets recordstyle for exporting.
-* [StartColumnIndex](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption~StartColumnIndex.html) - Exports data to the specified column index in Excel.
-* [StartRowIndex](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption~StartRowIndex.html) - Exports data to the specified column index in Excel.
-
-Note > Grid Styles are not exported when user sets recordstyle , headerstyle , groupstyle for exporting.
+SfDataGrid provides you with several properties in `DataGridExcelExportingOption` class to customize the grid while exporting it to excel.
 
 ### Events
 
@@ -319,24 +299,7 @@ exportOption.FitAllColumnsInOnePage = true;
 var doc = pdfExport.ExportToPdf (this.dataGrid, exportOption); 
 {% endhighlight %}
 
-SfDataGrid provides you with following properties in `DataGridPdfExportingOption` class to customize the grid while exporting it to PDF. 
-
-* [ApplyGridStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridPdfExportOption~ApplyGridStyle.html) - Specifies whether datagrid gridstyle need to be applied or not.
-* [DefaultColumnWidth](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridPdfExportOption~DefaultColumnWidth.html) - Gets or sets the default column width for exporting.
-* [DefaultRowHeight](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridPdfExportOption~DefaultRowHeight.html) - Gets or sets the default row height for exporting.
-* [ExcludeColumns](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridPdfExportOption~ExcludeColumns.html) - Gets or sets the columns that needs to be excluded while exporting.
-* [ExportColumnWidth](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridPdfExportOption~ExportColumnWidth.html) - Gets or sets whether the column widths are automatically assigned or not,if not default column width will be assigned.
-* [ExportGroups](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridPdfExportOption~ExportGroups.html) - Gets or sets whether groups can be exported or not.
-* [ExportHeader](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridPdfExportOption~ExportHeader.html) - Specifies whether header to be exported or not.
-* [ExportRowHeight](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridPdfExportOption~ExportRowHeight.html) - Gets or sets whether the row heights can be exported or not,if not default row height will be assigned.
-* [FitAllColumnsInOnePage](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridPdfExportOption~FitAllColumnsInOnePage.html) - Gets or sets whether the all columns should be fit on a page or not true.
-* [GridLineType](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridPdfExportOption~GridLineType.html) - Gets or sets the type of gridLine.
-* [GroupCaptionStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridPdfExportOption~GroupCaptionStyle.html) - Gets or sets groupcaption style for exporting.
-* [HeaderStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridPdfExportOption~HeaderStyle.html) - Gets or sets headerstyle for exporting.
-* [RecordStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridPdfExportOption~RecordStyle.html) - Gets or sets recordstyle for exporting.
-* [RepeatHeaders](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridPdfExportOption~RepeatHeaders.html) - Gets or sets whether the headers can be repeated in each page or not.
-
-Note > Grid Styles are not exported when user sets recordstyle , headerstyle , groupstyle for exporting.
+SfDataGrid provides you with several properties in `DataGridPdfExportingOption` class to customize the grid while exporting it to PDF. 
 
 ### Events
 

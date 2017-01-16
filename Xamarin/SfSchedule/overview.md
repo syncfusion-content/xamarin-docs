@@ -14,8 +14,10 @@ Essential Schedule for Xamarin.Forms provides all the common scheduling function
 
 ## Key features
 
-* Schedule has different layouts to display the appointments in different periods of times, such as Day, Week, Work week and Month views.
+**Built-in Views** — Schedule provides 4 different types of views such as Day, WorkWeek, Week and Month
 
-* Schedule is bound to an external data source to display in the required schedule view.
+**Recurrence Appointment** — Recurring appointments can be created with Daily, weekly, monthly, and yearly recurrence patterns which is supported in ICalc standard.
 
-* User friendly customization support. SfSchedule provides various options for you to customize appointments, month cells, inline, selection and so on.
+**Customization** — Control has simple APIs allowing for elegant customizations. You can edit the look to match the rest of your application.
+
+**Localization** — The build-in content of the User Interface can be changed according to culture that is needed. Also, it has built-in culture support for basic items such us day and month text representations.

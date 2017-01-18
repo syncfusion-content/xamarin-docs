@@ -640,7 +640,6 @@ You can restrict/allocate certain month cell as blackout days using `BlackoutDat
 
 {% endhighlight %}
 
-{% endtabs %}
 
 #### Week number
 

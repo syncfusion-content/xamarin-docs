@@ -39,6 +39,34 @@ This page lists the assemblies required for each control to be referred in each 
 </tr>
 </table>
 
+## SfDataGrid
+
+<dl>
+  <dt>NuGet</dt>
+  <dd>Syncfusion.Xamarin.SfDataGrid</dd>
+</dl>
+
+**Assemblies**
+
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.Data.Portable.dll<br/>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.SfDataGrid.XForms.dll<br/>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.Data.Portable.dll<br/>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.SfDataGrid.XForms.dll<br/>Syncfusion.SfDataGrid.XForms.Android.dll<br/>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.Data.Portable.dll<br/>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.SfDataGrid.XForms.dll<br/>Syncfusion.SfDataGrid.XForms.iOS.dll<br/>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.Data.Portable.dll<br/>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.SfDataGrid.XForms.dll<br/>Syncfusion.SfDataGrid.XForms.UWP.dll<br/>
+</tr>
+</table>
+
 ## SfPdfViewer
 
 <dl>
@@ -676,34 +704,6 @@ This page lists the assemblies required for each control to be referred in each 
 <tr>
 <td>UWP</td>
 <td>Syncfusion.SfKanban.UWP.dll<br/>Syncfusion.SfKanban.XForms.UWP.dll<br/>Syncfusion.SfKanban.XForms.dll<br/></td>
-</tr>
-</table>
-
-## SfDataGrid
-
-<dl>
-  <dt>NuGet</dt>
-  <dd>Syncfusion.Xamarin.SfDataGrid</dd>
-</dl>
-
-**Assemblies**
-
-<table>
-<tr>
-<td>PCL</td>
-<td>Syncfusion.SfDataGrid.XForms.dll<br/>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.Data.Portable.dll<br/></td>
-</tr>
-<tr>
-<td>Android</td>
-<td>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.Data.Portable.dll<br/>Syncfusion.SfDataGrid.XForms.Android.dll<br/></td>
-</tr>
-<tr>
-<td>iOS</td>
-<td>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.Data.Portable.dll<br/>Syncfusion.SfDataGrid.XForms.iOS.dll<br/></td>
-</tr>
-<tr>
-<td>UWP</td>
-<td>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.Data.Portable.dll<br/>Syncfusion.SfDataGrid.XForms.UWP.dll<br/></td>
 </tr>
 </table>
 

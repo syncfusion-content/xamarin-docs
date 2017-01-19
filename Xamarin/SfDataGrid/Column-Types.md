@@ -268,29 +268,160 @@ The following code example shows how to use GridSwitchColumn.
  
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:GridSwitchColumn MappingName="IsClosed" />  
+<ContentPage.BindingContext>
+    <local:ViewModel />
+</ContentPage.BindingContext>
+
+<sfGrid:SfDataGrid x:Name="dataGrid"
+                   AutoGenerateColumns="True"
+                   ItemsSource="{Binding OrdersInfo}">
+    <sfGrid:SfDataGrid.Columns>
+        <sfGrid:GridSwitchColumn MappingName="IsClosed" />
+    </sfGrid:SfDataGrid.Columns>
+</sfGrid:SfDataGrid> 
 {% endhighlight %}
 {% highlight c# %}
-dataGrid.Columns.Add(new GridSwitchColumn() { MappingName = "IsClosed" }); 
+// Model class
+public class Model
+{
+    private bool _isClosed;
+
+    public bool IsClosed
+    {
+        get { return _isClosed; }
+        set
+        {
+            this._isClosed = value;
+        }
+    }
+}
+
+// ViewModel class
+public class ViewModel
+{
+    public ViewModel()
+    {
+        GetOrderDetails(50);
+    }
+
+    #region ItemsSource
+
+    private ObservableCollection<OrderInfo> ordersInfo;
+
+    public ObservableCollection<OrderInfo> OrdersInfo
+    {
+        get { return ordersInfo; }
+        set { this.ordersInfo = value; }
+    }
+
+    #endregion
+
+    #region ItemSource Generator
+
+    public void GetOrderDetails(int count)
+    {
+        var order = new ObservableCollection<OrderInfo>();
+        for (int i = 1; i <= count; i++)
+        {
+            var ord = new OrderInfo()
+            {
+                IsClosed = (i % 2) == 0 ? true : false
+            };
+            order.Add(ord);
+        }
+        ordersInfo = order;
+    }
+
+    #endregion
+} 
 {% endhighlight %}
 {% endtabs %}
-
 
 ## GridImageColumn
 
-GridImageColumn is derived from GridColumn, and hence it inherits all the properties of GridColumn. It displays images which as content of record cells in the column. The images loaded inside this column should be added as EmbeddedResource. To create GridImageColumn in SfDataGrid the property corresponding to the column in the underlying collection must be of type ImageSource.
+GridImageColumn is derived from GridColumn, and hence it inherits all the properties of GridColumn. It displays images as cell content of a column. To create GridImageColumn in SfDataGrid the property corresponding to the column in the underlying collection must be of type `ImageSource`.
 
-The following code example shows how to use GridImageColumn.
+In GridImageColumn, it is possible to load images in any of the below four ways,
+
+* **FromFile** - Required to specify the path of the file
+* **FromResource** - Required to set image as embedded resource
+* **FromStream** -  Load image from byte[] array
+* **FromURI** -  Get image from a webservice or website
+
+The following code example shows how to load image(embedded resource) in GridImageColumn.
  
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:GridImageColumn MappingName="DealerImage" />  
+<ContentPage.BindingContext>
+    <local:ViewModel />
+</ContentPage.BindingContext>
+
+<sfGrid:SfDataGrid x:Name="dataGrid"
+                   AutoGenerateColumns="True"
+                   ItemsSource="{Binding OrdersInfo}">
+    <sfGrid:SfDataGrid.Columns>
+        <sfGrid:GridImageColumn MappingName="DealerImage" />
+    </sfGrid:SfDataGrid.Columns>
+</sfGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
-dataGrid.Columns.Add(new GridImageColumn() { MappingName = "DealerImage" });  
+// Model class
+public class Model
+{
+    private ImageSource _dealer;
+
+    public ImageSource DealerImage
+    {
+        get { return _dealer; }
+        set
+        {
+            this._dealer = value;
+        }
+    }
+}
+
+// ViewModel class
+public class ViewModel
+{
+    public ViewModel()
+    {
+        GetOrderDetails(50);
+    }
+
+    #region ItemsSource
+
+    private ObservableCollection<OrderInfo> ordersInfo;
+
+    public ObservableCollection<OrderInfo> OrdersInfo
+    {
+        get { return ordersInfo; }
+        set { this.ordersInfo = value; }
+    }
+
+    #endregion
+
+    #region ItemSource Generator
+
+    public void GetOrderDetails(int count)
+    {
+        var order = new ObservableCollection<OrderInfo>();
+        for (int i = 1; i <= count; i++)
+        {
+            var ord = new OrderInfo()
+            {
+                DealerImage = ImageSource.FromResource("DataGridDemo.Buchanan.png") // Need to give the image path properly. Here, DataGridDemo denotes the project name and Buchanan denotes the image name.
+            };
+            order.Add(ord);
+        }
+        ordersInfo = order;
+    }
+
+    #endregion
+}
 {% endhighlight %}
 {% endtabs %}
 
+![](SfDataGrid_images/SfDataGrid-Xamarin_showcase1.png)
 
 ## GridTemplateColumn
 
@@ -389,7 +520,6 @@ public class ImageConverter:IValueConverter
 {% endhighlight %}
 
 The following screenshot shows the different types of columns in SfDataGrid
-![](SfDataGrid_images/SfDataGrid-Xamarin_showcase1.png)
 
 ![](SfDataGrid_images/TemplateColumns2.png)
 

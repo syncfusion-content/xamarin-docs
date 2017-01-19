@@ -170,6 +170,10 @@ listView.AllowGroupExpandCollapse = true;
 {% endhighlight %}
 {% endtabs %}
 
+The following screenshot shows the output rendered when the groups are collapsed.
+
+![](SfListView_images/SfListView-Grouping.png)
+
 ### Programmatically Expand or Collapse the Groups
 
 You can allow end-user to expand or collapse the groups programmatically at runtime.

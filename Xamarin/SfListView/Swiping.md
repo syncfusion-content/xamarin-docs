@@ -65,6 +65,10 @@ listView.LeftSwipeTemplate = new DataTemplate(() =>
 
 N> Similarly you can load a desired content using the [RightSwipeTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~RightSwipeTemplate.html) when swiping towards left.
 
+The following screenshot shows the output rendered when `LeftSwipeTemplate` is applied.
+
+![](SfListView_images/SfListView-Swiping--1.png)
+
 ## Swipe Events
 
 ### SwipeStarted Event
@@ -313,3 +317,5 @@ private void ListView_SwipeEnded(object sender, SwipeEndedEventArgs e)
 }
 
 {% endhighlight %}
+
+![](SfListView_images/SfListView-Swiping--2.png)

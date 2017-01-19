@@ -58,17 +58,4 @@ listView.Orientation = Orientation.Horizontal;
 {% endhighlight %}
 {% endtabs %}
 
-## Events
-
-### Loaded Event
-
-The [Loaded Event](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~Loaded_EV.html) event is raised when the SfListView is loaded in view for the first time.
-
-{% highlight c# %}
-listView.Loaded += ListView_Loaded;
-
-private void ListView_Loaded(object sender, ListViewLoadedEventArgs e)
-{
-   listView.SelectedItems.Add(viewModel.Customers[2]);
-}
-{% endhighlight %}
+![](SfListView_images/SfListView-Orientation.png)

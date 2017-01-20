@@ -78,7 +78,7 @@ Alternatively, we can add the following Xaml code in our main page to make use o
      
     <ContentPage.Content>
         <syncfusion:SfPdfViewer x:Name="pdfViewerControl">
-        </syncfusion:pdfViewerControl>
+        </syncfusion:SfPdfViewer>
     </ContentPage.Content>
 </ContentPage>
 

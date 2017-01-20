@@ -266,7 +266,6 @@ GridSwitchColumn is derived from GridColumn, and hence it inherits all the prope
 
 The following code example shows how to use GridSwitchColumn.
  
-{% tabs %}
 {% highlight xaml %}
 <ContentPage.BindingContext>
     <local:ViewModel />
@@ -280,6 +279,7 @@ The following code example shows how to use GridSwitchColumn.
     </sfGrid:SfDataGrid.Columns>
 </sfGrid:SfDataGrid> 
 {% endhighlight %}
+
 {% highlight c# %}
 // Model class
 public class Model
@@ -335,7 +335,6 @@ public class ViewModel
     #endregion
 } 
 {% endhighlight %}
-{% endtabs %}
 
 ## GridImageColumn
 
@@ -350,7 +349,6 @@ In GridImageColumn, it is possible to load images in any of the below four ways,
 
 The following code example shows how to load image(embedded resource) in GridImageColumn.
  
-{% tabs %}
 {% highlight xaml %}
 <ContentPage.BindingContext>
     <local:ViewModel />
@@ -364,6 +362,7 @@ The following code example shows how to load image(embedded resource) in GridIma
     </sfGrid:SfDataGrid.Columns>
 </sfGrid:SfDataGrid>
 {% endhighlight %}
+
 {% highlight c# %}
 // Model class
 public class Model
@@ -419,7 +418,6 @@ public class ViewModel
     #endregion
 }
 {% endhighlight %}
-{% endtabs %}
 
 ![](SfDataGrid_images/SfDataGrid-Xamarin_showcase1.png)
 

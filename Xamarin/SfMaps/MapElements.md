@@ -35,18 +35,18 @@ Without datasource, n number of markers can be added to shape layers with marker
                 
                 <SfMaps:MapMarker Label = "California" Latitude = "37" Longitude = "-120"/>                
                     
-        </SfMaps:ShapeFileLayer:ShapeSetting>
+        </SfMaps:ShapeFileLayer:MapMarker>
                                	      
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-MapMarker marker = new MapMarker ();
-marker.Label = "California";
-marker.Latitude = 37;
-marker.Longitude = -120;
-layer.Markers.Add (marker);
+    MapMarker marker = new MapMarker ();
+    marker.Label = "California";
+    marker.Latitude = 37;
+    marker.Longitude = -120;
+    layer.Markers.Add (marker);
 
 {% endhighlight %}
 {% endtabs %}
@@ -104,7 +104,7 @@ To add bubbles to a map, the bubble marker setting is added to the shape file la
 
         <syncfusion:SfMap.Layers>
 
-                <syncfusion:ShapeFileLayer EnableSelection="False" ShapeIDPath="state">
+                <syncfusion:ShapeFileLayer EnableSelection="false" ShapeIDPath="Country" ShapeIDTableField="NAME">
 
                         <syncfusion:ShapeFileLayer.BubbleMarkerSetting>
                         
@@ -117,7 +117,7 @@ To add bubbles to a map, the bubble marker setting is added to the shape file la
                 </syncfusion:ShapeFileLayer>
 
         </syncfusion:SfMap.Layers>                                       
-
+ 
 
 {% endhighlight %}
 
@@ -126,8 +126,8 @@ To add bubbles to a map, the bubble marker setting is added to the shape file la
 {
         
         //..
-        layer.ShapeIdTableField ="STATE_NAME";
-        layer.ShapeIdPath ="State";
+        layer.ShapeIdTableField ="NAME";
+        layer.ShapeIdPath ="Country";
         layer.DataSource = GetDataSource ();
 
         BubbleMarkerSetting markerSetting = new BubbleMarkerSetting();
@@ -137,25 +137,54 @@ To add bubbles to a map, the bubble marker setting is added to the shape file la
         markerSetting.ValuePath="Population";
         //..
 }
-JSONArray GetDataSource()
-{
-        
-        JSONArray array = new JSONArray ();
-        array.Put(getJsonObject("California",38332521,"CA"));
-        array.Put(getJsonObject("New York",19651127,"NY"));
-        array.Put(getJsonObject("Iowa",3090416,"IA"));
-        return array;
-}
 
-JSONObject getJsonObject(String state,double population,string name)
-{
-        
-        JSONObject obj= new JSONObject();
-        obj.Put ("State", state);
-        obj.Put ("Population", population);
-        obj.Put ("Name", name);
-        return obj;
-}
+
+            public List<BubbleData> GetDataSource()
+            
+            {
+            
+            List<BubbleData> list = new List<BubbleData>();
+            list.Add(new BubbleData("Brazil", "BRA", 204436000, 22));
+            list.Add(new BubbleData("Russia", "RUS", 146267288, 134));
+            list.Add(new BubbleData("United States", "USA", 321174000, 167));
+            list.Add(new BubbleData("India", "IND", 1272470000, 73));
+            list.Add(new BubbleData("China", "CHI", 1370320000, 30));
+            list.Add(new BubbleData("Indonasia", "INO", 255461700, 72));
+
+
+            return list;
+           }
+
+    public class BubbleData
+	{
+		public BubbleData (string country, string countrycode,double population,int Index)
+		{
+			Country = country;
+			Code = countrycode;
+			Population = population;
+			index = Index;
+		}
+
+		public string Code {
+			get;
+			set;
+		}
+		public string Country {
+			get;
+			set;
+		}
+
+		public double Population {
+			get;
+			set;
+		}
+
+		public int index {
+			get;
+			set;
+		}
+	}
+
 
 
 {% endhighlight %}
@@ -184,22 +213,21 @@ Refer Equal color mapping code for legend support
 {% tabs %}
 {% highlight xaml %}
         
-        <SfMaps:ShapeFileLayer:LegendSetting >
-            <SfMaps:LegendSetting ShowLegend ="true" IconHeight ="20" 
+        <SfMaps:ShapeFileLayer:LegendSettings >
+            <SfMaps:MapLegendSetting ShowLegend ="true" IconHeight ="20" 
             IconWidth ="20" LegendPosition =(100,400)/>
-        </SfMaps:ShapeFileLayer:ShapeSetting>      
+        </SfMaps:ShapeFileLayer:LegendSettings>      
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-LegendSetting legendSetting = new LegendSetting ();
-legendSetting.ShowLegend = true;
-legendSetting.IconHeight = 20;
-legendSetting.IconWidth = 20;
-legendSetting.LegendPosition = new Point (100, 400);
-
-layer.LegendSetting = legendSetting;
+         LegendSettings legendSetting = new LegendSettings ();
+         legendSetting.ShowLegend = true;
+         legendSetting.IconHeight = 20;
+         legendSetting.IconWidth = 20;
+         legendSetting.LegendPosition = new Point (100, 400);
+         layer.LegendSettings = legendSetting;
 
 
 {% endhighlight %}

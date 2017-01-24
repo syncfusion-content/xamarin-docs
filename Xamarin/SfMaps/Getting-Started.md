@@ -111,15 +111,10 @@ Create a Maps instance in Main Activity and set Maps as a ContentView in 
 
 {% highlight c# %}
 
-protected override void OnCreate (Bundle savedInstanceState)
-{
+    SfMaps maps = new SfMaps ();
+    this.ContentView=maps;
     
-    base.OnCreate (savedInstanceState);
 
-    SfMaps maps = new SfMaps (this);
-    SetContentView (maps);
-    
-}
 
 {% endhighlight %}
 
@@ -152,24 +147,45 @@ These files need to be added in Asset folder.
 
 {% highlight c# %}
 	
-protected override void OnCreate (Bundle savedInstanceState)
-{
-    base.OnCreate (savedInstanceState);
 
-    SfMaps maps = new SfMaps (this);
+
+    SfMaps maps = new SfMaps ();
     ShapeFileLayer layer = new ShapeFileLayer ();
     layer.Uri = "usa_state.shp";
     maps.Layers.Add (layer);
-    SetContentView (maps);
+    this.ContentView=maps;
     
-}
+
 
 {% endhighlight %}
-
+ 
 {% endtabs %}
 
 ![](Images/Maps.png)
 
+## Steps for adding shapefiles in Android
+     
+     * Add shape files in Assets folder in SampleBrowser.Droid .                       	
+    
+     * Right click on the added shape file. 
+   	
+     * Select BuildAction property and then enable Android  Asset.If it is already enabled don't do nothing.
+
+## Steps for adding shapefiles in iOS
+  
+     * Add shape files in Resource folder in SampleBrowser.iOS.  
+    
+     * Right click on the added shape file. 
+    
+     * Select BuildAction property and then enable Bundle Resource.If it is already enabled don't do nothing.
+          	
+## Steps for adding shapefiles in UWP
+   
+     * Add shape files in Assets folder in SampleBrowser.UWP.
+     
+     * Right click on the added shape file.
+ 
+     * Select BuildAction property and then enable Embedded Resource.If it is already enabled don't do nothing.
 
 ## Adding Marker to the Maps
 
@@ -189,22 +205,19 @@ Markers can be added into the shape layers. The below code snippets enables you 
 
 {% highlight c# %}
 	
-protected override void OnCreate (Bundle savedInstanceState)
-{
-    
-    base.OnCreate (savedInstanceState);
+
             
-    SfMaps maps = new SfMaps (this);
+    SfMaps maps = new SfMaps ();
     ShapeFileLayer layer = new ShapeFileLayer ();
-    SFMapMarker marker = new SFMapMarker ();
+    MapMarker marker = new MapMarker ();
     marker.Label = "California";
     marker.Latitude = 37;
     marker.Longitude = -120;
     layer.Markers.Add (marker);  
     maps.Layers.Add (layer);            
-    SetContentView (maps);
+    this.ContentView=maps;
     
-}
+
 
 {% endhighlight %}
 

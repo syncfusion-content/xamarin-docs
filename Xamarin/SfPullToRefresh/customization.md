@@ -183,3 +183,75 @@ The following code example shows how to set `PullDirection` as `Bottom` to SfPul
 {%endhighlight%}
 
 {% endtabs %}
+
+
+## StartRefreshing()
+
+StartRefreshing method is used to refresh the content without interaction in pullable content.When invoke this StartRefreshing() method,then Progress indicator will be shown with progress value. 
+
+{% tabs %}
+
+{% highlight C# %}
+
+    pullToRefresh.StartRefreshing();
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+## EndRefreshing()
+
+EndRefreshing method is used to stop or end up the animation of refreshing method.
+
+{% tabs %}
+
+{% highlight C# %}
+
+    pullToRefresh.EndRefreshing();
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+## IsRefreshing()
+
+IsRefreshing property indicates pulltorefresh state is in refreshing state or not.It returns the boolean value either true or false.
+ 
+{% tabs %}
+
+{% highlight C# %}
+
+    if(pullToRefresh.IsRefreshing())
+     {
+
+     }
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+## Progress
+
+progress property specifies progress value set by the user for progress indicator.
+ 
+{% tabs %}
+
+{% highlight C# %}
+
+    pullToRefresh.Progress = 10;
+
+{% endhighlight %}
+
+
+{%highlight Xaml%}
+
+    <syncfusion:SfPullToRefresh x:Name=" pullToRefresh" Progress="10" />
+
+{%endhighlight%}
+
+
+{% endtabs %}

@@ -24,7 +24,9 @@ PullToRefresh controls are mainly used in applications where the user needs to r
 
 
 • `Transition`: Specifies the transition type of the `PullToRefresh`. 
+
 • `Position`: Specifies the position of the transition to take place.
+
 • `Refresh()`: `Refresh()` refreshes the content being viewed.
 
 ![](overview_images/img1.png)

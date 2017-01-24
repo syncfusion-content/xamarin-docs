@@ -33,12 +33,12 @@ The shapeSettings defines the basic customization settings of shapes in the map.
 
 {% highlight c# %}
 
-ShapeSetting setting = new ShapeSetting ();
-setting.ShapeFill = Color.ParseColor("#9CBF4E");
-setting.SelectedShapeColor = Color.ParseColor("#BC5353");
-setting.ShapeStroke = Color.White;
-setting.ShapeStrokeThickess = 1;
-layer.ShapeSettings = setting;
+         ShapeSetting setting = new ShapeSetting ();
+         setting.ShapeFill = Color.ParseColor("#9CBF4E");
+         setting.SelectedShapeColor = Color.ParseColor("#BC5353");
+         setting.ShapeStroke = Color.White;
+         setting.ShapeStrokeThickess = 1;
+         layer.ShapeSettings = setting;
 
 {% endhighlight %}
 {% endtabs %}
@@ -97,19 +97,19 @@ Gets or sets the color for mapping.<br/><br/></td></tr>
 
 {% highlight c# %}
 
-{
+    {
 
     //..           
     layer.ShapeIdTableField ="STATE_NAME";
     layer.ShapeIdPath ="State";
-    layer.DataSource = GetDataSource ();
-    SetColorMapping(layer.ShapeSettings);
+    layer.DataSource = GetDataSource (); 
     layer.ShapeSettings.ShapeColorValuePath ="Candidate";
+     SetColorMapping(layer.ShapeSettings);
     //..
-}
+    }
 
-void SetColorMapping(ShapeSetting setting)
-{
+   void SetColorMapping(ShapeSetting setting)
+   {
 
     List<ColorMapping> colorMappings= new List<ColorMapping>();
 
@@ -126,7 +126,7 @@ void SetColorMapping(ShapeSetting setting)
     colorMappings.Add(colorMapping2);
 
     setting.ColorMapping = colorMappings;
-}
+  }
 
 
 {% endhighlight %}
@@ -151,7 +151,7 @@ When `AutoFillColors` property is set to true, shapes are filled with default 
 
 {% highlight c# %}
         
-layer.ShapeSettings.AutoFillColors = true;
+      layer.ShapeSettings.AutoFillColors = true;
 
 {% endhighlight %}
 {% endtabs %}
@@ -176,3 +176,279 @@ Item Templates for Map Markers The maps control provides item template support f
 {% endhighlight %}
 
 ![](Images/MarkerTemplate.png)  
+
+### Geometry Type
+  
+  Geometry type property specifies the maps control supports any type of shape files that is suppose if shape file  contains  normal or geographic latitude and longitude points it supports both  type of shpae file.
+Geometry property has the following two options:
+           
+ * Points
+
+ * GeographicPoints
+
+The default GeometryType is Geographic Points.it shows the GeographicPoints shapes.
+
+{% tabs %}
+
+{% highlight xaml %}
+        
+       <SfMaps:ShapeFileLayer Uri="world1.shp" GeometryType="GeographicPoints">
+        </SfMaps:ShapeFileLayer>               	  
+
+
+{% endhighlight %}
+
+
+ {% highlight c# %}
+     
+      ShapeFileLayer layer=new ShapeFileLayer();
+      layer.GeometryType = GeometryType.GeographicPoints;
+ 
+{% endhighlight %}
+
+{% endtabs %}
+The following code example shows how to set GeometryType as Points.Points GeometryType property shows Points type shapes.
+
+{% tabs %}
+
+{% highlight xaml %}
+        
+    <SfMaps:ShapeFileLayer Uri="world1.shp" GeometryType="Points">
+    </SfMaps:ShapeFileLayer>               	  
+
+
+{% endhighlight %}
+
+
+ {% highlight c# %}
+      
+      ShapeFileLayer layer=new ShapeFileLayer();
+      layer.GeometryType = GeometryType.Points;
+ 
+{% endhighlight %}
+{% endtabs %}
+
+### MapPointIcon
+    MapPointIcon Property is used for  points GeometryType shape file.it specifies the customized  shapes for points GeometryType shape.
+    It can be customized by five shapes.
+ 
+ * Circle
+ 
+ * Rectangle  
+
+ * Square
+
+ * Diamond
+
+ * Star
+
+
+
+{% tabs %}
+
+{% highlight xaml %}
+        
+       <SfMaps:ShapeFileLayer Uri="world1.shp"   MapPointIcon="Circle">
+        </SfMaps:ShapeFileLayer>               	  
+
+
+{% endhighlight %}
+
+
+ {% highlight c# %}
+     
+      ShapeFileLayer layer=new ShapeFileLayer();
+      layer.MapPointIcon = MapPointIcon.Circle;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Map selection
+  
+  Each shape in the map can be selected and unselected when interacted with shapes. There are two ways to select the map shapes:
+
+  * Single Selection
+
+  * Multi Selection
+
+  The selected map shapes is differentiate by its fill. “SelectedShapeColor” of ShapeSetting is the API that is used to get or set the selected shape color.
+All selected shapes available in the “SelectedMapShapes” of ShapeFileLayer.
+
+
+### Single Selection
+     
+     Single selection allows only one map shape to be selected at a time. You can select the shape by tapping on the shape.By default single selection is enabled when EnableSelection is set to true. Single selection is enabled by "SelectionMode.Single ” property of ShapeFileLayer. When EnableSelection is set to true, then the map can be selected. When it is set to false, the shapes cannot be selected. When any other shape or the map area is selected, then the shape that is already selected is unselected.
+
+{% tabs %}
+
+{% highlight xaml %}
+        
+       <SfMaps:ShapeFileLayer EnableSelection="true" SelectionMode="Single">
+        </SfMaps:ShapeFileLayer>               	  
+
+
+{% endhighlight %}
+
+
+ {% highlight c# %}
+     
+      ShapeFileLayer layer=new ShapeFileLayer();
+      layer.SelectionMode = SelectionMode.Single;
+      layer.EnableSelection = true;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Multi Selection
+     
+   Multi selection allows to select multiple mapshapes at a time. You can select the many mapshape by tapping on the shape. To enable this feature, set the selectionMode property as “multiple” along with the enableSelection property is true. When EnableSelection is set to false, the shapes cannot be selected. 
+
+{% tabs %}
+
+{% highlight xaml %}
+        
+       <SfMaps:ShapeFileLayer EnableSelection="true" SelectionMode="Multiple">
+        </SfMaps:ShapeFileLayer>               	  
+
+
+{% endhighlight %}
+
+
+ {% highlight c# %}
+     
+      ShapeFileLayer layer=new ShapeFileLayer();
+      layer.SelectionMode = SelectionMode.Multiple;
+      layer.EnableSelection = true;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Selected Items
+    
+    SelectedItems property allows to select shapes without tapping or touching shapes by calling SelectedItems.Add(Object)  and also remove the SelectedItems by calling  SelectedItems.Remove(object).
+    
+{% tabs %}
+
+{% highlight c# %}
+     
+      var model = GetDataSource();
+	  ShapeFileLayer layer=new ShapeFileLayer();
+      layer.ItemsSource=model;
+      SelectedItemButton.Clicked += (sender, e) =>
+			{
+				
+                layer.SelectedItems.Add(model[0]);
+			};
+
+
+       RemoveItemButton.Clicked += (sender, e) =>
+			{
+				
+                layer.SelectedItems.Remove(model[0]);
+			};
+
+
+ {% endhighlight %}
+
+
+
+
+{% endtabs %}
+
+
+      
+
+
+
+### GeoJSON Support
+
+ The Maps control supports reading and loading GeoJson files.A GeoJson file contains  attribute information for the spatial features and coordinates in a data set. 
+ 
+{% tabs %}
+
+{% highlight xaml %}
+        
+       <SfMaps:ShapeFileLayer Uri="world.json">
+        </SfMaps:ShapeFileLayer>               	  
+
+
+{% endhighlight %}
+
+
+ {% highlight c# %}
+     
+      ShapeFileLayer layer=new ShapeFileLayer();
+      layer.Uri = "world.json";
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### MapMarkerIcon
+  The markers property has a list of objects that contains the data for Annotation. By default, it displays the bound data at the specified latitude and longitude.   
+ MapMarkerIcon can be  customized into four shapes.
+
+ *  Circle
+
+ *  Square
+
+ *  Diamond   
+
+ *  Rectangle
+
+{% tabs %}
+
+{% highlight xaml %}
+   
+    <SfMaps:ShapeFileLayer Uri="world1.shp"  >
+    <SfMaps:ShapeFileLayer.MarkerSettings > 
+	<SfMaps:MapMarkerSetting MarkerIcon="Rectangle"/>
+    </SfMaps:ShapeFileLayer.MarkerSettings>
+    <SfMaps:ShapeFileLayer.Markers >
+	<SfMaps:MapMarker  Label = "California" Latitude = "37" Longitude = "-120"/>
+    <SfMaps:MapMarker  Label="Brazil" Latitude="-15.7833" Longitude= "-47.8667" />
+    <SfMaps:MapMarker Label="India" Latitude="21.0000" Longitude= "78.0000" />
+    <SfMaps:MapMarker Label="China" Latitude="35.0000" Longitude= "103.0000" />
+    <SfMaps:MapMarker Label="Indonesia" Latitude="-6.1750" Longitude= "106.8283" /> 
+    </SfMaps:ShapeFileLayer.Markers>
+    </SfMaps:ShapeFileLayer>
+
+{% endhighlight %}
+
+
+ {% highlight c# %}
+     
+            ShapeFileLayer layer = new ShapeFileLayer ();
+			layer.Uri ="world1.shp";
+		    MapMarkerSetting setting = new MapMarkerSetting();
+			setting.MarkerIcon = MapMarkerIcon.Diamond;
+			layer.MarkerSettings = setting;
+			MapMarker usa= new MapMarker();
+			usa.Latitude ="38.8833";
+			usa.Longitude="-77.0167";
+			usa.Label= "United States";
+		
+			layer.Markers.Add(usa);
+
+
+			MapMarker brazil= new MapMarker();
+			brazil.Latitude="-15.7833";
+			brazil.Longitude="-47.8667";
+			brazil.Label = "Brazil";
+			layer.Markers.Add(brazil);
+
+{% endhighlight %}
+
+  
+    
+   
+
+
+
+  
+
+
+

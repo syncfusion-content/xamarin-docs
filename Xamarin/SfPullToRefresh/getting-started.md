@@ -131,16 +131,20 @@ There are three built-in events in the PullToRefresh control namely:
 {% tabs %}
 
 {% highlight c# %}
-   
-    pullToRefresh.PullingEvent+= (object sender, SfPullToRefresh.PullingEventArgs args) => 
-	{
-                
-    }; 			
+   pulltorefresh.PullingEvent +=pullToRefresh_ Pulling;
+
+   void pullToRefresh_ Pulling(object sender,SfPullToRefresh.PullingEventArgs args) 
+		{ 
+		
+	
+		
+		}
+   		
 {% endhighlight %}
 
 {%highlight Xaml%}
 
-    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" Pulling="pullToRefresh_Pulling" />
+    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" PullingEvent="pullToRefresh_Pulling" />
 
 {%endhighlight%}
 
@@ -154,16 +158,19 @@ There are three built-in events in the PullToRefresh control namely:
 
 {% highlight c# %}
 
-    pullToRefresh.RefreshingEvent+= (object sender) => 
-    {
-       
-    };
+    pullToRefresh.RefreshingEvent+= pullToRefresh_Refreshing;
+   
+    void pullToRefresh_Refreshing(object sender)
+        {
+
+        }
+
 
 {% endhighlight %}
 
 {%highlight Xaml%}
 
-    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" Refreshing="pullToRefresh_Refreshing" />
+    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" RefreshingEvent="pullToRefresh_Refreshing" />
 
 {%endhighlight%}
 
@@ -183,28 +190,19 @@ There are three built-in events in the PullToRefresh control namely:
     void Pull_pullToRefreshedEvent (object sender)
 		{
 
-			Device.StartTimer(new TimeSpan(0,0,2), ()=> 
-				{ 
-					Random rnd = new Random();
-					int i = rnd.Next(0, 6); 
-
-					day=dataSource [i].Day+","+dataSource [i].Month+" "+date;
-					month=dataSource [i].Month;
-					String image=dataSource [i].Type;
-					String ImageSelected=dataSource [i].SelectedType;
-					String temparature=dataSource [i].Temperature;
-					page.UpdateData(day,month,image,ImageSelected,temparature);
-					pullToRefresh.Refresh();
-					return false;
-				});
-
+         Device.StartTimer(new TimeSpan(0, 0, 2), () =>
+				{
+                      pulltorefresh.Refresh();
+					  return false;
+				  });
+				
 		}
 
 {% endhighlight %}
 
 {%highlight Xaml%}
 
-    <syncfusion:SfPullToRefresh x:Name=" pullToRefresh" Refreshed="pullToRefresh_Refreshed" />
+    <syncfusion:SfPullToRefresh x:Name=" pullToRefresh" RefreshedEvent="Pull_pullToRefreshedEvent" />
 
 {%endhighlight%}
 

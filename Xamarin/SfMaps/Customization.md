@@ -442,7 +442,7 @@ All selected shapes available in the “SelectedMapShapes” of ShapeFileLayer.
 
 {% endhighlight %}
 
-  
+{% endtabs %} 
     
    
 

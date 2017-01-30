@@ -163,29 +163,56 @@ These files need to be added in Asset folder.
 
 ![](Images/Maps.png)
 
-## Steps for adding shapefiles in Android
-     
-     * Add shape files in Assets folder in SampleBrowser.Droid .                       	
-    
-     * Right click on the added shape file. 
-   	
-     * Select BuildAction property and then enable Android  Asset.If it is already enabled don't do nothing.
+## Steps for adding shapefiles 
 
-## Steps for adding shapefiles in iOS
-  
-     * Add shape files in Resource folder in SampleBrowser.iOS.  
-    
-     * Right click on the added shape file. 
-    
-     * Select BuildAction property and then enable Bundle Resource.If it is already enabled don't do nothing.
-          	
-## Steps for adding shapefiles in UWP
-   
-     * Add shape files in Assets folder in SampleBrowser.UWP.
+Android    
      
-     * Right click on the added shape file.
+  * Add shape files in Assets folder in ProjectFileName.Droid.                       	
+    
+  * Right click on the added shape file. 
+   	
+  * Select BuildAction property and then enable Android  Asset.If it is already enabled don't do nothing.
+
+iOS   
+  
+  * Add shape files in Resource folder in ProjectFileName.iOS.  
+    
+  * Right click on the added shape file. 
+    
+  * Select BuildAction property and then enable Bundle Resource.If it is already enabled don't do nothing.
+
+ UWP
+   
+  * Add shape files in Assets folder in ProjectFileName.UWP.
+     
+  * Right click on the added shape file.
  
-     * Select BuildAction property and then enable Embedded Resource.If it is already enabled don't do nothing.
+  * Select BuildAction property and then enable Embedded Resource.If it is already enabled don't do nothing.
+
+
+## GeoJson Support
+
+ The Maps control supports reading and loading GeoJson files.A GeoJson file contains  attribute information for the spatial features and coordinates in a data set. 
+ 
+{% tabs %}
+
+{% highlight xaml %}
+        
+       <SfMaps:ShapeFileLayer Uri="world.json">
+       </SfMaps:ShapeFileLayer>               	  
+
+
+{% endhighlight %}
+
+
+ {% highlight c# %}
+     
+      ShapeFileLayer layer=new ShapeFileLayer();
+      layer.Uri = "world.json";
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ## Adding Marker to the Maps
 

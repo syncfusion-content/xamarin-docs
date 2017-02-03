@@ -104,7 +104,7 @@ public class Person
 }
 {% endhighlight %} 
 
-Next, create a view model class and initialize a list of `Model` objects as shown below,
+Next, create a view model class and initialize a list of `Person` objects as shown below,
 
 {% highlight c# %}
 public class ViewModel  

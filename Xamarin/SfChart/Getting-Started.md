@@ -96,7 +96,7 @@ Run the project and check if you get following output to make sure you have conf
 Now, let us define a simple data model that represents a data point in [`SfChart`.](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html)
 
 {% highlight c# %}
-public class Model   
+public class Person   
 {   
     public string Name { get; set; }
 
@@ -109,16 +109,16 @@ Next, create a view model class and initialize a list of `Model` objects as show
 {% highlight c# %}
 public class ViewModel  
 {
-      public List<Model> Data { get; set; }      
+      public List<Person> Data { get; set; }      
 
       public ViewModel()       
       {
-            Data = new List<Model>()
+            Data = new List<Person>()
             {
-                new Model { Name = "David", Height = 180 },
-                new Model { Name = "Michael", Height = 170 },
-                new Model { Name = "Steve", Height = 160 },
-                new Model { Name = "Joel", Height = 182 }
+                new Person { Name = "David", Height = 180 },
+                new Person { Name = "Michael", Height = 170 },
+                new Person { Name = "Steve", Height = 160 },
+                new Person { Name = "Joel", Height = 182 }
             }; 
        }
  }

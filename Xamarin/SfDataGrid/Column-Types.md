@@ -345,7 +345,7 @@ In GridImageColumn, it is possible to load images in any of the below four ways,
 * **FromFile** - Required to specify the path of the file
 * **FromResource** - Required to set image as embedded resource
 * **FromStream** -  Load image from byte[] array
-* **FromURI** -  Get image from a webservice or website
+* **FromURI** -  Get image from a web service or website
 
 The following code example shows how to load image(embedded resource) in GridImageColumn.
  

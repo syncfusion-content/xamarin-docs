@@ -9,7 +9,7 @@ documentation: ug
 
 # Map Elements
 
-Map control contains a set of map elements such as shapes, bubbles, markers, legend, labels and data items that can be visualized with the customized appearance showing additional information on the map by using the data bound data.
+Maps control contains a set of map elements such as shapes, bubbles, markers, legend, labels and data items that can be visualized with the customized appearance showing additional information on the map by using the data bound data.
 
 ## Markers
 
@@ -29,6 +29,7 @@ Without datasource, n number of markers can be added to shape layers with marker
 * `Longitude` - Longitude point determine the X-axis position of marker.
 
 {% tabs %}
+
 {% highlight xaml %}
                                                     
         <SfMaps:ShapeFileLayer:MapMarker>
@@ -49,9 +50,70 @@ Without datasource, n number of markers can be added to shape layers with marker
     layer.Markers.Add (marker);
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ![](Images/Markers.png)  
+
+
+### MapMarkerIcon
+  The markers property has a list of objects that contains the data for Annotation. By default, it displays the bound data at the specified latitude and longitude.   
+ MapMarkerIcon can be  customized into four shapes.
+
+ *  Circle
+
+ *  Square
+
+ *  Diamond   
+
+ *  Rectangle
+
+{% tabs %}
+
+{% highlight xaml %}
+   
+    <SfMaps:ShapeFileLayer Uri="world1.shp"  >
+    <SfMaps:ShapeFileLayer.MarkerSettings > 
+    <SfMaps:MapMarkerSetting MarkerIcon="Rectangle"/>
+    </SfMaps:ShapeFileLayer.MarkerSettings>
+   
+    <SfMaps:ShapeFileLayer.Markers >
+    <SfMaps:MapMarker  Label = "California" Latitude = "37" Longitude = "-120"/>
+    <SfMaps:MapMarker  Label="Brazil" Latitude="-15.7833" Longitude= "-47.8667" />
+    <SfMaps:MapMarker Label="India" Latitude="21.0000" Longitude= "78.0000" />
+    <SfMaps:MapMarker Label="China" Latitude="35.0000" Longitude= "103.0000" />
+    <SfMaps:MapMarker Label="Indonesia" Latitude="-6.1750" Longitude= "106.8283" /> 
+    </SfMaps:ShapeFileLayer.Markers>
+    
+    </SfMaps:ShapeFileLayer>
+
+{% endhighlight %}
+
+
+ {% highlight c# %}
+     
+     ShapeFileLayer layer = new ShapeFileLayer ();
+     layer.Uri ="world1.shp";
+     MapMarkerSetting setting = new MapMarkerSetting();  
+     setting.MarkerIcon = MapMarkerIcon.Diamond;
+     layer.MarkerSettings = setting;
+			
+     MapMarker usa= new MapMarker();
+     usa.Latitude ="38.8833";
+     usa.Longitude="-77.0167";
+     usa.Label= "United States";
+     layer.Markers.Add(usa);
+
+     MapMarker brazil= new MapMarker();
+     brazil.Latitude="-15.7833";
+     brazil.Longitude="-47.8667";
+     brazil.Label = "Brazil";
+     layer.Markers.Add(brazil);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 
 
 ## Bubbles
@@ -100,6 +162,7 @@ Gets or sets the fill color for bubbles.</td></tr>
 To add bubbles to a map, the bubble marker setting is added to the shape file layer. Create the Model and ViewModel as illustrated in the Data Binding topic and add the following code. Also set the `MaxSize`, `MinSize`, and `ValuePath` properties as illustrated in the following code sample.
 
 {% tabs %}
+
 {% highlight xaml %}        
 
         <syncfusion:SfMap.Layers>
@@ -123,7 +186,7 @@ To add bubbles to a map, the bubble marker setting is added to the shape file la
 
 {% highlight c# %}
 
-{
+       {
         
         //..
         layer.ShapeIdTableField ="NAME";
@@ -136,12 +199,12 @@ To add bubbles to a map, the bubble marker setting is added to the shape file la
         markerSetting.MaxSize =25;
         markerSetting.ValuePath="Population";
         //..
-}
+       }
 
 
-            public List<BubbleData> GetDataSource()
+        public List<BubbleData> GetDataSource()
             
-            {
+        {
             
             List<BubbleData> list = new List<BubbleData>();
             list.Add(new BubbleData("Brazil", "BRA", 204436000, 22));
@@ -153,10 +216,10 @@ To add bubbles to a map, the bubble marker setting is added to the shape file la
 
 
             return list;
-           }
+        }
 
-    public class BubbleData
-	{
+            public class BubbleData
+	    {
 		public BubbleData (string country, string countrycode,double population,int Index)
 		{
 			Country = country;
@@ -183,11 +246,12 @@ To add bubbles to a map, the bubble marker setting is added to the shape file la
 			get;
 			set;
 		}
-	}
+	    }
 
 
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ![](Images/Bubbles.png)  
@@ -211,11 +275,11 @@ The map legend icon size can be modified by using the `IconHeight` and `IconWidt
 Refer Equal color mapping code for legend support
 
 {% tabs %}
+
 {% highlight xaml %}
         
         <SfMaps:ShapeFileLayer:LegendSettings >
-            <SfMaps:MapLegendSetting ShowLegend ="true" IconHeight ="20" 
-            IconWidth ="20" LegendPosition =(100,400)/>
+        <SfMaps:MapLegendSetting ShowLegend ="true" IconHeight ="20" IconWidth ="20" LegendPosition =(100,400)/>
         </SfMaps:ShapeFileLayer:LegendSettings>      
 
 {% endhighlight %}
@@ -231,6 +295,47 @@ Refer Equal color mapping code for legend support
 
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ![](Images/Legends.png)  
+
+
+### MapPointIcon
+ 
+ MapPointIcon Property is used for  points GeometryType shape file.It specifies the customized  shapes for points GeometryType shape.
+ It can be customized by five shapes.
+ 
+ * Circle
+ 
+ * Rectangle  
+
+ * Square
+
+ * Diamond
+
+ * Star
+
+
+{% tabs %}
+
+{% highlight xaml %}
+        
+       <SfMaps:ShapeFileLayer Uri="world1.shp"   MapPointIcon="Circle">
+       </SfMaps:ShapeFileLayer>               	  
+
+
+{% endhighlight %}
+
+
+ {% highlight c# %}
+     
+      ShapeFileLayer layer=new ShapeFileLayer();
+      layer.Uri = "world1.shp";
+      layer.MapPointIcon = MapPointIcon.Circle;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+

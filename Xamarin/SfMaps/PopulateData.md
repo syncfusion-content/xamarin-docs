@@ -43,7 +43,7 @@ Refer the following USA Election data as datasource is used for better understan
     
         <SfMaps:ShapeFileLayer ShapeIdTableField="STATE_NAME" ShapeIdPath="State"/>
                                                     
-    </SfMaps:ShapeFileLayer>           
+        </SfMaps:ShapeFileLayer>           
 
 
 {% endhighlight %}

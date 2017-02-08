@@ -9,7 +9,7 @@ documentation: ug
 
 # Restricted Hours And Dates 
 
-You cab restrict the timeslots and certain month cells using `Non-Accessible Blocks` and `BlackOutDates` properties in the respective view settings of schedule
+You can restrict the timeslots and certain month cells using `NonAccessibleBlocks` and `BlackOutDates` properties in the respective view settings of schedule
 
 ## Non-Accessible blocks
 
@@ -139,6 +139,8 @@ You can restrict/allocate certain timeslot as Non-accessible block using `NonAcc
 >**NOTE**:
 Non-Accessible Block is not applicable in Windows Phone.
 
+![](RestrictedHoursandDates_images/NonAccessibleBlocks.png)
+
 ## Blackout Dates
 
 You can restrict/allocate certain month cell as blackout days using `BlackoutDates` of `MonthViewSettings`, so that we can allocate those cells for predefined events/activities like Scheduled maintenance, planned leave etc.
@@ -169,4 +171,4 @@ You can restrict/allocate certain month cell as blackout days using `BlackoutDat
 
 {% endhighlight %}
 
-![](Localization_images/Localization_img2.jpeg)
+![](RestrictedHoursandDates_images/Blackoutdates.png)

@@ -41,8 +41,6 @@ DayView is used to display a single day, current day will be visible by default.
 
 {% endtabs %}
 
-![](views_images/DayView/DayView.png)
-
 ### Settings
 
 #### Date Time Formatting
@@ -76,42 +74,6 @@ You can format the time string in the schedule control using `DayLabelSettings` 
 	this.content = sfschedule;
 
 {% endhighlight %} 
-
-{% endtabs %}
-
-#### Non-Accessible Blocks
-
-You can restrict/allocate certain timeslot as Non-accessible block using `NonAccessibleBlocks` of `DayViewSettings`, so that you can allocate those timeslots for predefined events/activities like Lunch hour.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-	<!--setting non-accessing blocks-->
-	<schedule:DayViewSettings.NonAccessibleBlocks>
-	<schedule:NonAccessibleBlock 
-	StartTime="13" 
-	EndTime ="14"
-	Text="LUNCH"
-	Color="Black"/>			
-	</schedule:DayViewSettings.NonAccessibleBlocks>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-	//setting non-accessing blocks.
-	NonAccessibleBlock nonAccessibleBlock = new NonAccessibleBlock ();
-	NonAccessibleBlocksCollection nonAccessibleBlocksCollection = new    NonAccessibleBlocksCollection ();
-	nonAccessibleBlock.StartTime = 13;
-	nonAccessibleBlock.EndTime = 14;
-	nonAccessibleBlock.Text = “LUNCH”;
-	nonAccessibleBlock.Color = Color.Black;
-	nonAccessibleBlocksCollection.Add (nonAccessibleBlock);
-	dayViewSettings.NonAccessibleBlocks =nonAccessibleBlocksCollection;
-	sfschedule.DayViewSettings = dayViewSettings;
-
-{% endhighlight %}
 
 {% endtabs %}
 
@@ -175,7 +137,7 @@ Also you can change the all day appointment panel color using the property `AllD
 
 {% endtabs %}
 
-![](views_images/NonAccessinleBlock/NonAcessibleBlock.png)
+![](views_images/DayView.png)
 
 >**Note**:These properties and customizations are applicable only for Day View. Customizations for other views are discussed under the respective views.
 
@@ -206,8 +168,6 @@ To view all the seven days of a particular week, by default if will be current w
 {% endhighlight %}
 
 {% endtabs %}
-
-![](views_images/WeekView/WeekView.png)
 
 ### Settings
 
@@ -244,50 +204,6 @@ You can format the time string in the schedule control using `WeekLabelSettings`
 {% endhighlight %}
 
 {% endtabs %}
-
-#### Non-Accessible Blocks
-
-You can restrict/allocate certain timeslot as Non-accessible block using `NonAccessibleBlocks` of `WeekViewSettings`, so that you can allocate those timeslots for predefined events/activities like Lunch hour.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-	<schedule:SfSchedule ScheduleView="WeekView">
-	<schedule:SfSchedule.WeekViewSettings>
-	<!--setting non-accessing blocks-->
-	<schedule:WeekViewSettings.NonAccessibleBlocks>
-	<schedule:NonAccessibleBlock 
-	StartTime="13" 
-	EndTime ="14"
-	Text="LUNCH"
-	Color="Black"/>			
-	</schedule:WeekViewSettings.NonAccessibleBlocks>
-	</schedule:WeekViewSettings>
-	</schedule:SfSchedule.WeekViewSettings>
-	</schedule:SfSchedule>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-	//setting non-accessing blocks
-	NonAccessibleBlock nonAccessibleBlock = new NonAccessibleBlock ();
-	NonAccessibleBlocksCollection nonAccessibleBlocksCollection = new NonAccessibleBlocksCollection ();
-	nonAccessibleBlock.StartTime = 13;
-	nonAccessibleBlock.EndTime = 14;
-	nonAccessibleBlock.Text = "LUNCH”; 
-	nonAccessibleBlock.Color = Color.Black;
-	nonAccessibleBlocksCollection.Add (nonAccessibleBlock);
-	weekViewSettings.NonAccessibleBlocks = nonAccessibleBlocksCollection;
-	sfschedule.WeekViewSettings = weekViewSettings;
-
-{% endhighlight %}
-
-{% endtabs %}
-
->**NOTE**:
-Non-Accessible Block is not applicable in Windows Phone.
 
 #### Working Hours
 
@@ -354,7 +270,7 @@ You can view All Day appointments in separate panel and the panel’s visibility
 
 {% endtabs %}
 
-![](views_images/NonAccessibleBlock_WeekView_images/NonAccessibleBlock_WeekView.png)
+![](views_images/weekview.png)
 
 ## Work Week View
 
@@ -383,8 +299,6 @@ To view working days of a particular week, by default current work week will be 
 {% endhighlight %}
 
 {% endtabs %}
-
-![](views_images/WorkWeekView/WorkWeekView.png)
 
 ### Settings
 
@@ -423,52 +337,6 @@ Also you can differentiate the timeslot panel using `VerticalLineColor` and `Ver
 {% endhighlight %}
 
 {% endtabs %}
-
-#### Non-Accessible Blocks
-
-You can restrict/allocate certain timeslot as Non-accessible block using `NonAccessibleBlocks` of `WorkWeekViewSettings`, so that you can allocate those timeslots for predefined events/activities like Lunch hour.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-	<schedule:SfSchedule ScheduleView="WorkWeekView">
-	<schedule:SfSchedule.WorkWeekViewSettings>
-	<!--setting non-accessing blocks-->
-	<schedule:WorkWeekViewSettings.NonAccessibleBlocks>
-	<schedule:NonAccessibleBlock 
-	StartTime="13" 
-	EndTime ="14"
-	Text="LUNCH"
-	Color="Black"/>			
-	</schedule:WorkWeekViewSettings.NonAccessibleBlocks>
-	</schedule:WorkWeekViewSettings>
-	</schedule:SfSchedule.WorkWeekViewSettings>
-	</schedule:SfSchedule>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-	//setting non-accessing blocks.
-	NonAccessibleBlock nonAccessibleBlock = new NonAccessibleBlock ();
-	NonAccessibleBlocksCollection nonAccessibleBlocksCollection = new NonAccessibleBlocksCollection ();
-	nonAccessibleBlock.StartTime = 13;
-	nonAccessibleBlock.EndTime = 14;
-	nonAccessibleBlock.Text = "LUNCH”;
-	nonAccessibleBlock.Color = Color.Black;
-	nonAccessibleBlocksCollection.Add (nonAccessibleBlock);
-	workWeekViewSettings.NonAccessibleBlocks = nonAccessibleBlocksCollection;
-	sfschedule.WorkWeekViewSettings = workWeekViewSettings;
-	sfschedule.WorkWeekViewSettings = (workWeekViewSettings);
-	this.Content= sfschedule;
-
-{% endhighlight %}
-
-{% endtabs %}
-
->**NOTE**:
-Non-Accessible Block is not applicable in Windows Phone.
 
 #### Working Hours
 
@@ -538,7 +406,7 @@ Also you can change the all day appointment panel color using the property `AllD
 
 {% endtabs %}
 
-![](views_images/NonAccessibleBlock_WorkWeekView_images/NonAccessibleBlock-WorkWeekView.png)
+![](views_images/WorkWeek.png)
 
 ## Month View
 
@@ -567,8 +435,6 @@ To view entire dates of a particular month, by default current month will be dis
 {% endhighlight %}
 
 {% endtabs %}
-
-![](views_images/MonthView/MonthView.png)
 
 ### Inline
 
@@ -599,8 +465,6 @@ By enabling `ShowAppointmentsInline` feature in `MonthView`, while touch the mon
 
 {% endtabs %}
 
-![](DateNavigationandGesture_images/Inline/Inline.png)
-
 #### Inline View Customization
 
 By enabling the Inline view feature, while tap on the schedule month view cell it will open a inline view which can be customized accordingly. To know more about Inline view customization of Month cell refer [View Customization](/xamarin-android/sfschedule/view-customization "View Customization").
@@ -622,6 +486,8 @@ You can able to know the details of appointments in inline using `MonthInlineApp
 			};
 			
 {% endhighlight %}
+
+![](views_images/Inline.png)
 
 ### Month Navigation Direction
 
@@ -686,36 +552,6 @@ You can format the date and day string in the schedule control using
 
 {% endtabs %}
 
-#### Blackout dates
-
-You can restrict/allocate certain month cell as blackout days using `BlackoutDates` of `MonthViewSettings`, so that we can allocate those cells for predefined events/activities like Scheduled maintenance, planned leave etc.
-
-{% highlight c# %}
-
-	//setting month view settings properties
-	MonthViewSettings monthViewSettings =  new MonthViewSettings();
-	ObservableCollection<DateTime> black_out_days_collection = new ObservableCollection<DateTime>();
-	DateTime date = DateTime.Now.Date;
-	DateTime date1 = DateTime.Now.Date.AddDays(1);
-	DateTime date2 = DateTime.Now.Date.AddDays(2);
-	DateTime date3 = DateTime.Now.Date.AddDays(3);
-	DateTime date4 = DateTime.Now.Date.AddDays(4);
-	DateTime date5 = DateTime.Now.Date.AddDays(5);
-
-	black_out_days_collection.Add(date);
-	black_out_days_collection.Add(date1);
-	black_out_days_collection.Add(date2);
-	black_out_days_collection.Add(date3);
-	black_out_days_collection.Add(date4);
-	black_out_days_collection.Add(date5);
-	monthViewSettings.BlackoutDates = black_out_days_collection;
-
-	monthViewSettings.MonthLabelSettings = monthLabelSettings;
-	schedule.MonthViewSettings = monthViewSettings;
-	this.Content = sfschedule;
-
-{% endhighlight %}
-
 #### Week number
 
 You display the week number of the year in month view by setting `ShowWeekNumber` in property of `MonthViewSettings` are true. By default it is false.
@@ -747,4 +583,4 @@ You display the week number of the year in month view by setting `ShowWeekNumber
 
 You can customize the month cells of MonthView using vaious properties of `MonthCellStyle`. To know more about customization of MonthView refer [View Customization](/xamarin-android/sfschedule/view-customization "View Customization")
 
-![](views_images/BlackOutDates/BlackOutDays.png)
+![](views_images/MonthView.png)

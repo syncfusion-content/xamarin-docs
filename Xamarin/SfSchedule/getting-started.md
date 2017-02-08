@@ -28,8 +28,6 @@ The SfSchedule control is configured entirely in C# code.
 
 {% endhighlight %}
 
-![](GettingStarted_images/DayView/DayView.png)
-
 You can change the default UI of schedule using [ScheduleView](/xamarin/sfschedule/views "Schedule Views") to display the dates in different layouts available in the control.
 
 {% highlight c# %}
@@ -39,8 +37,6 @@ You can change the default UI of schedule using [ScheduleView](/xamarin/sfschedu
 	this.Content= meetingRoomScheduler;
 
 {% endhighlight %}
-
-![](GettingStarted_images/WeekView/WeekView.png)
 
 ## Custom Data 
 
@@ -166,4 +162,4 @@ You can add `Subject` and `Color` to the appointments created by creating a coll
 
 {% endhighlight %}
 
-![](DateNavigationandGesture_images/Inline/Inline.png)
+![](GettingStarted_images/GettingStarted.png)

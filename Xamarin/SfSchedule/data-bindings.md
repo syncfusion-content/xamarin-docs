@@ -90,7 +90,7 @@ To know more about customization of all day appointment panel refer [Recurrence 
 
 ### Appointment Editor
 
-Appointments can be edit using this Appointmenteditor by tapping the Appointment using `ScheduleCellTapped`event and set the required properties of `ScheduleAppointment` for editing, To know more about Appointment Editor please refer the KB (Knowledge Base).
+Appointments can be edit using this Appointmenteditor by tapping the Appointment using `ScheduleCellTapped`event and set the required properties of `ScheduleAppointment` for editing.
 
 ## Custom Data
 
@@ -181,4 +181,4 @@ You can add `Subject` and `Color` to the appointments created by creating a coll
 
 Appointments can be customized using `AppointmentStyle` property in schedule. To know more about customization of Schedule Appointment refer [View Customization](/xamarin/sfschedule/view-customization "View Customization")
 
-![](PopulatingAppointments_images/Appointments.png)
+![](PopulatingAppointments_images/GettingStarted.png)

@@ -24,10 +24,10 @@ As the subject of the appointments are given in the application level, it can be
 
     <schedule:SfSchedule
     x:Name="sfschedule" 
-    ScheduleView="DayView"
+    ScheduleView="WeekView"
     Locale="fr">
     </schedule:SfSchedule>
-
+	
 {% endhighlight %}
 
 {% highlight c# %}
@@ -35,7 +35,7 @@ As the subject of the appointments are given in the application level, it can be
     //creating new instance for schedule
     SfSchedule sfschedule = new SfSchedule();
     //setting schedule view 
-    sfschedule.ScheduleView=(ScheduleView.DayView);
+    sfschedule.ScheduleView=(ScheduleView.WeekView);
     //setting locale for the control 
     sfschedule.Locale=("fr");
     this.Content= sfschedule;

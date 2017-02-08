@@ -90,7 +90,7 @@ You can also add an object in the appointment view using `view` property passed 
 
 >**Note** : You can only get appointment properties such as subject,location,StartTime,EndTime,etc from the `AppointmentLoadedEventArgs`.
 
-![](AppearanceAndStyling_images/AppointmentStyling/Appointments.png)
+![](ViewCustomization_images/AppointmentLoaded.png)
 
 ## MonthCell Customization
 
@@ -168,7 +168,7 @@ You can also add an object in the month cell view using `view` property passed t
 
 {% endhighlight %}
 
-![](AppearanceAndStyling_images/MonthCellStyling/MonthView.png)
+![](ViewCustomization_images/MonthCellLoaded.png)
 
 ## Inline view Customization.
 
@@ -180,7 +180,7 @@ You can able to customize the inline view style using `MonthInlineLoadedEvent` o
 
 {% highlight C# %}
 
-	schedule.OnMonthInlineLoadedEvent += (object sender, MonthInlineLoadedEventArgs args) =>
+	sfschedule.OnMonthInlineLoadedEvent += (object sender, MonthInlineLoadedEventArgs args) =>
 	{
 	MonthInlineViewStyle monthInlineViewStyle = new MonthInlineViewStyle();
 	monthInlineViewStyle.BackgroundColor = Color.Gray;
@@ -195,11 +195,13 @@ You can able to customize the inline view style using `MonthInlineLoadedEvent` o
 
 ### Inline Custom View
 
-You can also add an object in the month cell view using `View` property passed through `MonthInlineAppointmentLoadedEvent`. To know about this refer the KB.
+You can also add an object in the month cell view using `View` property passed through `MonthInlineAppointmentLoadedEvent`. 
 
 ## Inline Appointment Customization
 
-You can able to know the details of appointments in inline using `OnMonthInlineAppointmentLoadedEvent` event in `Schedule`. Details of the selected  appointment also view can be passed through `OnMonthInlineAppointmentLoadedEvent`.To know more about it refer KB.
+You can able to know the details of appointments in inline using `OnMonthInlineAppointmentLoadedEvent` event in `Schedule`. Details of the selected  appointment also view can be passed through `OnMonthInlineAppointmentLoadedEvent`.
+
+![](ViewCustomization_images/InlineAppointmentCustom.png)
 
 ## Selection
 
@@ -207,7 +209,7 @@ Cells can be selected using customized properties by setting `selectionStyle` pr
 
 ### Selection Style
 
-Cells can be selected using customized properties such as `BackgroundColor`, `BorderColor`,`BorderThickness`,`CornerRadius` in the `selectionStyle` property of Schedule.
+Cells can be selected using customized properties such as `BackgroundColor`, `BorderColor`,`BorderThickness`,`BorderCornerRadius` in the `selectionStyle` property of Schedule.
 
 {% highlight C# %}
 
@@ -226,11 +228,9 @@ Also custom view can be passed using the `SelectionView` in Schedule.
 {% highlight C# %}
 
 	Button button = new Button();
-	button.Text = "+ New event";
-	button.TextColor=Color.White;
-	button.BackgroundColor=Color.Green;
-	schedule.SelectionView = button;
+	button.BackgroundColor=Color.Blue;
+	sfschedule.SelectionView = button;
 
 {% endhighlight %}
 
-![](AppearanceAndStyling_images/Inline.png)
+![](ViewCustomization_images/Selection.png)

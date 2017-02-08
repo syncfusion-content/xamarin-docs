@@ -34,10 +34,10 @@ You can change the backgroundcolor,text style and text size using properties suc
 {% highlight c# %}
 
 	HeaderStyle headerStyle = new HeaderStyle();
-	headerStyle.BackgroundColor = Color.Transparent;
+	headerStyle.BackgroundColor = Color.FromRgb(249, 192, 177);
 	headerStyle.TextStyle = Font.Default;
-	headerStyle.TextSize = 12;
-	headerStyle.TextColor=Color.Black;
+	headerStyle.TextSize = 15;
+	headerStyle.TextColor=Color.White;
 	schedule.HeaderStyle = headerStyle;
 
 {% endhighlight %}
@@ -55,9 +55,9 @@ You can change the backgroundcolor,text style and text size using properties suc
 {% highlight c# %}
 
 	ViewHeaderStyle viewHeaderStyle = new ViewHeaderStyle();
-	viewHeaderStyle.BackgroundColor = Color.Transparent;
-	viewHeaderStyle.DayTextColor = Color.Black;
-	viewHeaderStyle.DateTextColor = Color.Gray;
+	viewHeaderStyle.BackgroundColor = Color.FromRgb(251,211,201);
+	viewHeaderStyle.DayTextColor = Color.White;
+	viewHeaderStyle.DateTextColor = Color.White;
 	viewHeaderStyle.DateTextSize = 15;
 	viewHeaderStyle.DayTextSize = 10;
 	viewHeaderStyle.DateTextStyle = Font.Default;
@@ -76,6 +76,8 @@ You can customize the height for the Header in Schedule using `HeaderHeight` in 
 
 {% endhighlight %}
 
+![](AppearanceAndStyling_images/HeaderCustomization.png)
+
 ## Timeslots customization
 
 ### Custom Day View
@@ -92,7 +94,7 @@ You can differentiate working hours with non-working hour timeslots by its color
 	<schedule:SfSchedule.DayViewSettings>
 	<!--setting working hours properties -->
 	<schedule:DayViewSettings
-	NonWorkingHoursTimeSlotColor="Silver"
+	NonWorkingHoursTimeSlotColor="Gray"
 	NonWorkingHoursTimeSlotBorderColor="Gray">
 	</schedule:DayViewSettings>
 	</schedule:SfSchedule.DayViewSettings>
@@ -105,7 +107,7 @@ You can differentiate working hours with non-working hour timeslots by its color
 	//setting working hours properties 
 	DayViewSettings dayViewSettings = new DayViewSettings ();
 	dayviewsettings.NonWorkingHoursTimeSlotBorderColor = Color.Gray;
-	dayviewsettings.NonWorkingHoursTimeSlotColor = Color.Silver;
+	dayviewsettings.NonWorkingHoursTimeSlotColor = Color.Gray;
 	sfschedule.DayViewSettings = dayviewsettings;
 
 {% endhighlight %}
@@ -124,9 +126,9 @@ You can differentiate working hours with non-working hour timeslots by its color
 	<schedule:SfSchedule.DayViewSettings>
 	<!--setting working hours properties -->
 	<schedule:DayViewSettings
-	TimeSlotColor="Yellow"
-	TimeSlotBorderColor="Aqua"
-	TimeSlotBorderStrokeWidth="5">
+	TimeSlotColor="White"
+	TimeSlotBorderColor="Blue"
+	TimeSlotBorderStrokeWidth="2">
 	</schedule:DayViewSettings>
 	</schedule:SfSchedule.DayViewSettings>
 	</schedule:SfSchedule>
@@ -137,9 +139,9 @@ You can differentiate working hours with non-working hour timeslots by its color
 
 	//setting working hours properties 
 	DayViewSettings dayViewSettings = new DayViewSettings ();
-	dayviewsettings.TimeSlotColor = Color.Yellow;
-	dayviewsettings.TimeSlotBorderColor = Color.Aqua;
-	dayviewsettings.TimeSlotBorderStrokeWidth = 5;
+	dayviewsettings.TimeSlotColor = Color.White;
+	dayviewsettings.TimeSlotBorderColor = Color.Blue;
+	dayviewsettings.TimeSlotBorderStrokeWidth = 2;
 	sfschedule.DayViewSettings = dayviewsettings;
 
 {% endhighlight %}
@@ -233,7 +235,7 @@ You can differentiate working hours with non-working hour timeslots by its color
 	<schedule:SfSchedule.WeekViewSettings>
 	<!--setting week view settings properties -->
 	<schedule:WeekViewSettings
-	NonWorkingHoursTimeSlotColor="Silver"
+	NonWorkingHoursTimeSlotColor="Gray"
 	NonWorkingHoursTimeSlotBorderColor="Gray">
 	</schedule:WeekViewSettings>
 	</schedule:SfSchedule.WeekViewSettings>
@@ -246,7 +248,7 @@ You can differentiate working hours with non-working hour timeslots by its color
 	//setting week view settings properties
 	WeekViewSettings weekViewSettings = new WeekViewSettings ();
 	weekViewSettings.NonWorkingHoursTimeSlotBorderColor = Color.Gray;
-	weekViewSettings.NonWorkingHoursTimeSlotColor = Color.Silver;
+	weekViewSettings.NonWorkingHoursTimeSlotColor = Color.Gray;
 	sfschedule.WeekViewSettings = weekViewSettings;
 	this.Content= sfschedule;
 
@@ -266,9 +268,9 @@ You can differentiate working hours with non-working hour timeslots by its color
 	<schedule:SfSchedule.WeekViewSettings>
 	<!--setting week view settings properties -->
 	<schedule:WeekViewSettings
-	TimeSlotColor="Yellow"
+	TimeSlotColor="White"
 	TimeSlotBorderColor="Aqua" 
-	TimeSlotBorderStrokeWidth="5">
+	TimeSlotBorderStrokeWidth="2">
 	</schedule:WeekViewSettings>
 	</schedule:SfSchedule.WeekViewSettings>
 	</schedule:SfSchedule>
@@ -280,8 +282,8 @@ You can differentiate working hours with non-working hour timeslots by its color
 	//setting week view settings properties
 	WeekViewSettings weekViewSettings = new WeekViewSettings ();
 	weekViewSettings.TimeSlotBorderColor = Color.Aqua;
-	weekViewSettings.TimeSlotColor = Color.Yellow;
-	weekViewSettings.TimeSlotBorderStrokeWidth = 5;
+	weekViewSettings.TimeSlotColor = Color.White;
+	weekViewSettings.TimeSlotBorderStrokeWidth = 2;
 	sfschedule.WeekViewSettings = weekViewSettings;
 	this.Content= sfschedule;
 
@@ -527,19 +529,18 @@ You can change the time interval and time interval height using `TimeInterval` a
 {% highlight xaml %}
 
 	<schedule:SfSchedule ScheduleView="WeekView" 
-	TimeInterval="5"
-	TimeIntervalHeight="10" >
+	TimeInterval="120"
+	TimeIntervalHeight="100" >
 	</schedule:SfSchedule>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-	sfSchedule.TimeInterval = 5;
-	sfSchedule.TimeIntervalHeight = 10;
+	sfSchedule.TimeInterval = 120;
+	sfSchedule.TimeIntervalHeight = 100;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](Appearance/Appearance2.jpeg)

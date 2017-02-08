@@ -73,7 +73,7 @@ By default schedule control will be rendered with Sunday as the first day of the
 
 ## Visible Dates Event
 
-Appointments can be loaded in schedule after the visible dates has changed using `VisibleDatesChangedEvent` in Schedule. To know more about the event refer the following KB.
+Appointments can be loaded in schedule after the visible dates has changed using `VisibleDatesChangedEvent` in Schedule. 
 
 ## Forward
 
@@ -147,10 +147,10 @@ By default Schedule views can be moved backwards and forwards using touch swipe 
 
 ## Cell tapped event
 
-Scehdule cell taaped event enable to know the details of the appointment and dates passed for an appointment. To know more about this event please refer the KB.
+Scehdule cell taaped event enable to know the details of the appointment and dates passed for an appointment.
 
 ## Selection
 
 Cells can be selected using customized properties such as `BackgroundColor`, `BorderColor`,`BorderThickness`,`CornerRadius` in the `selectionStyle` property of Schedule. Also view can be passed using the `SelectionView` in Schedule. To know more about customization of selection refer [View Customization](/xamarin/sfschedule/appearance-and-styling "View Customization")
 
-![](DateNavigationandGesture_images/FirstDayOFWeek/FirstDayOfWeek.png)
+![](DateNavigationandGesture_images/DayView.png)

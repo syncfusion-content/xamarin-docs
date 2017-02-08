@@ -77,7 +77,7 @@ Appointments can be loaded in schedule after the visible dates has changed using
 
 ## Forward
 
-Schedule views by default can be navigated to next view using touch swipe gesture. The view can also be changed programatically using `Forward` and `Backward` methods available in `SfSchedule`.So that next immediate visible dates will be viewed. It will move to next month if the schedule views is month, similarly it will move to next week for week view and next day for day view.
+Schedule views by default can be navigated to next view using touch swipe gesture. The view can also be changed programmatically using `Forward` and `Backward` methods available in `SfSchedule`.So that next immediate visible dates will be viewed. It will move to next month if the schedule views is month, similarly it will move to next week for week view and next day for day view.
 
 {% highlight C# %}
 
@@ -88,7 +88,7 @@ Schedule views by default can be navigated to next view using touch swipe gestur
 
 ## Backward
 
-Schedule views by default can be navigated to previous view using touch swipe gesture. The view can also be changed programatically using `Backward` method available in `SfSchedule`.So that previous immediate visible dates will be displayed. It will move to previous month if the schedule views is month, similarly it will move to previous week for week view and previous day for day view.
+Schedule views by default can be navigated to previous view using touch swipe gesture. The view can also be changed programmatically using `Backward` method available in `SfSchedule`.So that previous immediate visible dates will be displayed. It will move to previous month if the schedule views is month, similarly it will move to previous week for week view and previous day for day view.
 
 {% highlight C# %}
 
@@ -99,7 +99,7 @@ Schedule views by default can be navigated to previous view using touch swipe ge
 
 ## Navigate To
 
-Visible dates can be moved to specific date using `NavigateTo` method and `MoveToDate` propery available in `SfSchedule`. It will move to any specific date if the [ScheduleView](/xamarin/sfschedule/views "Schedule Views") is Day View, similarly it will move to the specific week if it is week view and to specific month if it is month view.
+Visible dates can be moved to specific date using `NavigateTo` method and `MoveToDate` property available in `SfSchedule`. It will move to any specific date if the [ScheduleView](/xamarin/sfschedule/views "Schedule Views") is Day View, similarly it will move to the specific week if it is week view and to specific month if it is month view.
 
 {% highlight c# %}
 
@@ -147,7 +147,7 @@ By default Schedule views can be moved backwards and forwards using touch swipe 
 
 ## Cell tapped event
 
-Scehdule cell taaped event enable to know the details of the appointment and dates passed for an appointment.
+Schedule cell tapped event enable to know the details of the appointment and dates passed for an appointment.
 
 ## Selection
 

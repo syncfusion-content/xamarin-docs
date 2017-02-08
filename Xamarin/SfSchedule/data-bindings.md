@@ -50,7 +50,7 @@ Create the collection of the ScheduleAppointments by setting required details us
 
 ### Adding AllDayAppointments 
 
-AllDayAppointment is for setting appointmet for fullday by using `ShowAllDay` property in the `ScheduleAppointment`. Create the collection of the `ScheduleAppointment` by setting required details using above mentioned properties for each appointment. And then assign the created collection to the `DataSource` property of `SfSchedule` as like in below code example.
+AllDayAppointment is for setting appointment for full day by using `ShowAllDay` property in the `ScheduleAppointment`. Create the collection of the `ScheduleAppointment` by setting required details using above mentioned properties for each appointment. And then assign the created collection to the `DataSource` property of `SfSchedule` as like in below code example.
 
 {% highlight c# %}
 
@@ -90,7 +90,7 @@ To know more about customization of all day appointment panel refer [Recurrence 
 
 ### Appointment Editor
 
-Appointments can be edit using this Appointmenteditor by tapping the Appointment using `ScheduleCellTapped`event and set the required properties of `ScheduleAppointment` for editing.
+Appointments can be edit using this Appointment editor by tapping the Appointment using `ScheduleCellTapped`event and set the required properties of `ScheduleAppointment` for editing.
 
 ## Custom Data
 

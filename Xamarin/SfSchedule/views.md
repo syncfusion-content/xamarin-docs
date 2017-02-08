@@ -581,6 +581,6 @@ You display the week number of the year in month view by setting `ShowWeekNumber
 
 ### Month cell customization
 
-You can customize the month cells of MonthView using vaious properties of `MonthCellStyle`. To know more about customization of MonthView refer [View Customization](/xamarin-android/sfschedule/view-customization "View Customization")
+You can customize the month cells of MonthView using various properties of `MonthCellStyle`. To know more about customization of MonthView refer [View Customization](/xamarin-android/sfschedule/view-customization "View Customization")
 
 ![](views_images/MonthView.png)

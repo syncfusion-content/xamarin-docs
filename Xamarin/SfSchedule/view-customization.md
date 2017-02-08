@@ -22,7 +22,7 @@ You can customize the Schedule Appointments in two ways.
 
 **Using AppointmentStyle property**
 
-Schedule Appointment can be customized by setting appointmentstyle properties such as TextColor,TextStyle,BorderColor,BorderCornerRadius,BorderWidth,SelectionBorderColor,SelectionTextColor to the `AppointmentStyle` property of schedule.
+Schedule Appointment can be customized by setting appointment style properties such as TextColor,TextStyle,BorderColor,BorderCornerRadius,BorderWidth,SelectionBorderColor,SelectionTextColor to the `AppointmentStyle` property of schedule.
 
 {% tabs %}
 

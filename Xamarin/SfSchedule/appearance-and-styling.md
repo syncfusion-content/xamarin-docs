@@ -29,7 +29,7 @@ you can change the header format and style using `HeaderStyle` property in sched
 
 #### Fonts and colors
 
-You can change the backgroundcolor,text style and text size using properties such as `BackgroundColor`,`TextStyle`, `TextSize` of Header using `HeaderStyle` property in schedule.
+You can change the background color,text style and text size using properties such as `BackgroundColor`,`TextStyle`, `TextSize` of Header using `HeaderStyle` property in schedule.
 
 {% highlight c# %}
 
@@ -50,7 +50,7 @@ You can customize the header of the Schedule using `ViewHeaderStyle` and `ViewHe
 
 #### Fonts and Colors
 
-You can change the backgroundcolor,text style and text size using properties such as `BackgroundColor`,`DateTextStyle`, `DayTextStyle`, `DayTextColor`, `DateTextColor`,`DateTextSize`, `DayTextSize` of ViewHeader using `ViewHeaderStyle` property in schedule.
+You can change the background color,text style and text size using properties such as `BackgroundColor`,`DateTextStyle`, `DayTextStyle`, `DayTextColor`, `DateTextColor`,`DateTextSize`, `DayTextSize` of ViewHeader using `ViewHeaderStyle` property in schedule.
 
 {% highlight c# %}
 

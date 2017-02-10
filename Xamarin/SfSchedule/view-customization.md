@@ -82,9 +82,12 @@ You can also add an object in the appointment view using `view` property passed 
 
 {% highlight C# %}
 
-	Button button = new Button();
-	button.BackgroundColor = Color.Green;
-	args.view = button;
+    sfschedule.OnAppointmentLoadedEvent += (object sender, AppointmentLoadedEventArgs args) =>
+    {
+    Button button = new Button();
+    button.BackgroundColor = Color.Green;
+    args.view = button;
+    };
 
 {% endhighlight %}
 

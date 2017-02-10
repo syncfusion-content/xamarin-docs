@@ -16,7 +16,7 @@ Based on the locale specified the strings in the control such as Date, time, day
 
 By default schedule control is available with **en**-**US** locale. 
 
-As the subject of the appointments are given in the application level, it can be set as localized strings as per the requirement. To know more about settings the subject refer [Schedule Appointments](/xamarin/sfschedule/populating-appointment "Schedule Appointments").
+As the subject of the appointments are given in the application level, it can be set as localized strings as per the requirement. To know more about settings the subject refer [Schedule Appointments](/xamarin/sfschedule/data-bindings "Schedule Appointments").
 
 {% tabs %}
 
@@ -37,13 +37,13 @@ As the subject of the appointments are given in the application level, it can be
     //setting schedule view 
     sfschedule.ScheduleView=(ScheduleView.WeekView);
     //setting locale for the control 
-    sfschedule.Locale=("fr");
+    sfschedule.Locale= "fr";
     this.Content= sfschedule;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-N> AM/PM in the timeline will not be localized in the Schedule views.
+>**NOTE** AM/PM in the timeline will not be localized in the Schedule views.
 
-![](Localization_images/Locale.png)
+![](Localization_images/Localization.png)

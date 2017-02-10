@@ -71,7 +71,7 @@ You can format the time string in the schedule control using `DayLabelSettings` 
 	dayLabelSettings.TimeFormat =("hh a");
 	dayViewSettings.DayLabelSettings= dayLabelSettings;
 	sfschedule.DayViewSettings = dayViewSettings;
-	this.content = sfschedule;
+	this.Content = sfschedule;
 
 {% endhighlight %} 
 
@@ -105,7 +105,7 @@ You can also differentiate working hours with non-working hour timeslots by its 
 	DayViewSettings dayViewSettings = new DayViewSettings ();
 	dayViewSettings.WorkStartHour = 10;
 	dayViewSettings.WorkEndHour = 18;
-	sfschedule.DayViewSettings = dayviewsettings;
+	sfschedule.DayViewSettings = dayViewSettings;
 
 {% endhighlight %}
 
@@ -131,7 +131,7 @@ Also you can change the all day appointment panel color using the property `AllD
 
 {% highlight c# %}
 
-	dayviewsettings.ShowAllDay = true;
+	dayViewSettings.ShowAllDay = true;
 
 {% endhighlight %} 
 
@@ -329,9 +329,9 @@ Also you can differentiate the timeslot panel using `VerticalLineColor` and `Ver
 	WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings ();
 	//setting label formats
 	WorkWeekLabelSettings workWeekLabelSettings = new WorkWeekLabelSettings();
-	workWeekLabelSettings.TimeFormat = ("hh a");
-	workWeekViewSettings.WorkWeekLabelSettings =(workWeekLabelSettings);
-	sfschedule.WorkWeekViewSettings = (workWeekViewSettings);
+	workWeekLabelSettings.TimeFormat = "hh a";
+	workWeekViewSettings.WorkWeekLabelSettings = workWeekLabelSettings;
+	sfschedule.WorkWeekViewSettings = workWeekViewSettings;
 	this.Content= sfschedule;
 
 {% endhighlight %}
@@ -457,7 +457,7 @@ By enabling `ShowAppointmentsInline` feature in `MonthView`, while touch the mon
 {% highlight c# %}
 
 	SfSchedule sfschedule = new SfSchedule();
-	sfschedule.ScheduleView = ScheduleView.MonthView
+	sfschedule.ScheduleView = ScheduleView.MonthView;
 	sfschedule.ShowAppointmentsInline = true;
 	this.Content= sfschedule;
 
@@ -471,7 +471,7 @@ By enabling the Inline view feature, while tap on the schedule month view cell i
 
 #### Inline Appointment Customization
 
-By enabling the Inline view feature, while tap on the schedule month view cell it will open a inline view which contains list of appointments on a particular day.You can customize the inline appointments. To know more about Inline appointment customization of Month cell refer [View Customization](/xamarin-android/sfschedule/view-custmization "View Customization").
+By enabling the Inline view feature, while tap on the schedule month view cell it will open a inline view which contains list of appointments on a particular day.You can customize the inline appointments. To know more about Inline appointment customization of Month cell refer [View Customization](/xamarin-android/sfschedule/view-customization "View Customization").
 
 #### InlineAppointmentTapped Event
 
@@ -479,11 +479,11 @@ You can able to know the details of appointments in inline using `MonthInlineApp
 
 {% highlight C# %}
 
-			sfschedule.MonthInlineAppointmentTapped += (object sender, MonthInlineAppointmentTappedEventArgs args) =>
-			{
-				var appointment= args.selectedAppointment;
-				var date = args.selectedDate;
-			};
+	sfschedule.MonthInlineAppointmentTapped += (object sender, MonthInlineAppointmentTappedEventArgs args) =>
+	{
+	    var appointment= args.selectedAppointment;
+		var date = args.selectedDate;
+	};
 			
 {% endhighlight %}
 
@@ -541,12 +541,12 @@ You can format the date and day string in the schedule control using
 	//setting month view settings properties
 	MonthViewSettings monthViewSettings =  new MonthViewSettings();
 	//setting label size and formats
-	MonthLabelSettings monthLabelSettings  = new MonthLabelSettings();
-	monthLabelSettings.DayFormat=("E");
-	monthLabelSettings. DateFormat=("dd");
-	monthViewSettings.MonthLabelSettings = (monthLabelSettings);
-	schedule.MonthViewSettings = (monthViewSettings);
-	this.Content = (sfschedule);
+	MonthLabelSettings monthLabelSettings = new MonthLabelSettings();
+	monthLabelSettings.DayFormat = "E";
+	monthLabelSettings. DateFormat = "dd";
+	monthViewSettings.MonthLabelSettings = monthLabelSettings;
+	sfschedule.MonthViewSettings = monthViewSettings;
+	this.Content = sfschedule;
 
 {% endhighlight %}
 
@@ -572,15 +572,15 @@ You display the week number of the year in month view by setting `ShowWeekNumber
 	//setting month view settings properties
 	MonthViewSettings monthViewSettings =  new MonthViewSettings();
 	monthViewSettings.ShowWeekNumber = true;
-	schedule.MonthViewSettings = monthViewSettings;
+	sfschedule.MonthViewSettings = monthViewSettings;
 	this.Content = sfschedule;
 
 {% endhighlight %}
 
 {% endtabs %}
 
+![](views_images/MonthView.png)
+
 ### Month cell customization
 
 You can customize the month cells of MonthView using various properties of `MonthCellStyle`. To know more about customization of MonthView refer [View Customization](/xamarin-android/sfschedule/view-customization "View Customization")
-
-![](views_images/MonthView.png)

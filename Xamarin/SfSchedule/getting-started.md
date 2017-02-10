@@ -15,7 +15,7 @@ This section explains you the steps required to render the `Meeting Room Booking
 
 Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain and reference Essential Studio components in your solution; then refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies) link to know about the assemblies required for adding Schedule to your project.
 
-N> After adding the reference, currently, an additional step is required for iOS and UWP projects. We need to create an instance of the SfScheduleRenderer as shown in this.[KB article.](https://www.syncfusion.com/kb/7202/how-to-resolve-sfschedule-not-rendering-issue-in-ios-and-uwp)
+>**NOTE**  After adding the reference, currently, an additional step is required for iOS and UWP projects. We need to create an instance of the SfScheduleRenderer as shown in this.[KB article.](https://www.syncfusion.com/kb/7202/how-to-resolve-sfschedule-not-rendering-issue-in-ios-and-uwp)
 
 ## Initializing Schedule 
 

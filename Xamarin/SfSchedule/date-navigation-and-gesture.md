@@ -1,12 +1,12 @@
 ---
-title: Date Navigation and Gesture in Syncfusion SfSchedule control for Xamarin.Forms Platform
+title: Dates, Navigations and Gestures in Syncfusion SfSchedule control for Xamarin.Forms Platform
 description: Learn the complete navigation and gestures support
 platform: xamarin
 control: SfSchedule
 documentation: ug
 ---
 
-# Date Navigation and Gesture
+# Dates, Navigations and Gestures
 
 ## Min Date
 
@@ -69,6 +69,8 @@ By default schedule control will be rendered with Sunday as the first day of the
 
 {% endtabs %}
 
+![](DateNavigationandGesture_images/FirstDayOfWeek.png)
+
 > **NOTE**: Where 1-Sunday, 2-Monday, 3-Tuesday, 4-Wednesday, 5-Thursday, 6-Friday,7-Saturday.
 
 ## Visible Dates Event
@@ -102,6 +104,8 @@ Schedule views by default can be navigated to previous view using touch swipe ge
 Visible dates can be moved to specific date using `NavigateTo` method and `MoveToDate` property available in `SfSchedule`. It will move to any specific date if the [ScheduleView](/xamarin/sfschedule/views "Schedule Views") is Day View, similarly it will move to the specific week if it is week view and to specific month if it is month view.
 
 {% highlight c# %}
+    
+    //using NavigateTo method
 
 	DateTime currentDate = DateTime.Now;
 
@@ -109,9 +113,7 @@ Visible dates can be moved to specific date using `NavigateTo` method and `MoveT
 
 	sfschedule.NavigateTo(SpecificDate); 
 
-{% endhighlight %}
-
-{% highlight c# %}
+    //using MoveToDate property
 
 	DateTime currentDate = DateTime.Now;
 
@@ -147,10 +149,20 @@ By default Schedule views can be moved backwards and forwards using touch swipe 
 
 ## Cell tapped event
 
-Schedule cell tapped event enable to know the details of the appointment and dates passed for an appointment.
+`ScheduleCellTapped` event enable to know the details of the appointment and dates passed for an appointment.
+
+{% highlight c# %}
+
+    sfschedule.ScheduleCellTapped += (object sender, ScheduleTappedEventArgs args) =>
+    {
+    var appointment = args.selectedAppointment;
+    var date = args.datetime;
+    };
+
+{% endhighlight %}
 
 ## Selection
 
-Cells can be selected using customized properties such as `BackgroundColor`, `BorderColor`,`BorderThickness`,`CornerRadius` in the `selectionStyle` property of Schedule. Also view can be passed using the `SelectionView` in Schedule. To know more about customization of selection refer [View Customization](/xamarin/sfschedule/appearance-and-styling "View Customization")
+Cells can be selected using customized properties such as `BackgroundColor`, `BorderColor`,`BorderThickness`,`CornerRadius` in the `selectionStyle` property of Schedule. Also view can be passed using the `SelectionView` in Schedule. To know more about customization of selection refer [View Customization](/xamarin/sfschedule/view-customization "View Customization")
 
 ![](DateNavigationandGesture_images/DayView.png)

@@ -146,7 +146,8 @@ The `QueryRowDragging` event provides following properties in `QueryRowDragging
 * `From` - Returns the index of the row currently being dragged.
 * `To` – Returns the dragging index where you try to drop the row. 
 * `Reason` - Returns row dragging details as `QueryRowDraggingReason`.
-* `RowData` – Returns the underlying data associated with the dragged row.
+* `RowData`  – Returns the underlying data associated with the dragged row.
+* `CurrentRowData`  - Returns the corresponding row data on which the dragged row is currently placed.
 * [Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs_properties(v=vs.110).aspx) – A Boolean property to cancel the event.
 
 ## How to disable dragging for particular row?

@@ -144,7 +144,8 @@ public class RowTemplate : Grid
 The `QueryRowDragging` event provides following properties in `QueryRowDraggingEventArgs`:
 
 * `From` – Returns the index of the row currently being dragged.
-* `To` – Returns the dragging index where you try to drop the row. 
+* `To` – Returns the dragging index where you try to drop the row.
+* `Position` - Returns the current x and y coordinates of the RowDragView.
 * `Reason` – Returns row dragging details as `QueryRowDraggingReason`.
 * `RowData`  – Returns the underlying data associated with the dragged row.
 * `CurrentRowData` – Returns the corresponding row data, over which the row drag view is currently placed.

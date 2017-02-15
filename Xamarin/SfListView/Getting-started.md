@@ -333,7 +333,7 @@ Now run the application to render the following output. You can also download th
 
 ## Layouts
 
-SfListView provides support for Linear Layout and Grid Layout. The linear layout arranges the items in a single column, whereas the grid layout arranges the items in a predefined number of columns. Linear layout is default layout for the SfListView. Layouts are defined by [SfListView.LayoutManager](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LayoutManagerProperty.html) property of the SfListView.
+SfListView supports different layouts such as linear layout and grid layout. The linear layout arranges the items in a single column, whereas the grid layout arranges the items in a predefined number of columns and its defined by [SpanCount](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GridLayout~SpanCount.html) property. Linear layout is default layout for SfListView. [SfListView.LayoutManager](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LayoutManagerProperty.html) property is used to define the layout for SfListView.
 
 {% tabs %}
 {% highlight xaml %}

@@ -123,11 +123,11 @@ Create a new Blank App (Xamarin.Forms.Portable) application in Xamarin Studio 
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:sync="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
              xmlns:local="clr-namespace:GettingStarted;assembly=GettingStarted"
              x:Class="GettingStarted.MainPage">
              
-  <sync:SfListView x:Name="listView" />
+  <syncfusion:SfListView x:Name="listView" />
 </ContentPage>
 {% endhighlight %}
 {% highlight c# %}
@@ -241,7 +241,7 @@ The following code example binds the collection created in previous step to `SfL
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:sync="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
              xmlns:local="clr-namespace:GettingStarted;assembly=GettingStarted"
              x:Class="GettingStarted.MainPage">
              
@@ -249,7 +249,7 @@ The following code example binds the collection created in previous step to `SfL
     <local:BookInfoRepository />
   </ContentPage.BindingContext>
 
-  <sync:SfListView x:Name="listView" 
+  <syncfusion:SfListView x:Name="listView" 
                    ItemsSource="{Binding BookInfo}" />
 </ContentPage>
 {% endhighlight %}
@@ -265,16 +265,20 @@ listView.ItemsSource = viewModel.BookInfo;
  
 {% tabs %}
 {% highlight xaml %}
-<xmlns:sync="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:local="clr-namespace:GettingStarted;assembly=GettingStarted"
+             x:Class="GettingStarted.MainPage">
 
   <ContentPage.BindingContext>
     <local:BookInfoRepository />
   </ContentPage.BindingContext>
 
-  <sync:SfListView x:Name="listView" 
+  <syncfusion:SfListView x:Name="listView" 
                    ItemsSource="{Binding BookInfo}"
                    ItemSize="100">
-    <sync:SfListView.ItemTemplate>
+    <syncfusion:SfListView.ItemTemplate>
       <DataTemplate>
         <Grid Padding="10">
           <Grid.RowDefinitions>
@@ -285,8 +289,9 @@ listView.ItemsSource = viewModel.BookInfo;
           <Label Grid.Row="1" Text="{Binding BookDescription}" TextColor="Teal" FontSize="15"/>
         </Grid>
       </DataTemplate>
-    </sync:SfListView.ItemTemplate>
-  </sync:SfListView>
+    </syncfusion:SfListView.ItemTemplate>
+  </syncfusion:SfListView>
+</ContentPage>
 {% endhighlight %}
 {% highlight c# %}
 using Syncfusion.ListView.XForms;
@@ -325,6 +330,26 @@ namespace GettingStarted
 Now run the application to render the following output. You can also download the entire source code of this demo from [here](http://files2.syncfusion.com/Xamarin.Forms/Samples/ListView_GettingStarted.zip).
 
 ![](SfListView_images/SfListView-Xamarin_img2.png)
+
+## Layouts
+
+SfListView supports different layouts such as linear layout and grid layout. The linear layout arranges the items in a single column, whereas the grid layout arranges the items in a predefined number of columns which is defined by [SpanCount](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GridLayout~SpanCount.html) property of `GridLayout`. 
+[SfListView.LayoutManager](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LayoutManagerProperty.html) property is used to define the layout for SfListView. `LinearLayout` is default layout of SfListView.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfListView x:Name="listView" 
+                   ItemsSource="{Binding BookInfo}"
+                   ItemSize="100">
+    <syncfusion:SfListView.LayoutManager>
+      <syncfusion:GridLayout SpanCount="3" />
+    </syncfusion:SfListView.LayoutManager>
+</syncfusion:SfListView>
+{% endhighlight%}
+{% highlight c# %}
+listView.LayoutManager = new GridLayout() { SpanCount = 3 };
+{% endhighlight%}
+{% endtabs %}
 
 ## Sorting
 

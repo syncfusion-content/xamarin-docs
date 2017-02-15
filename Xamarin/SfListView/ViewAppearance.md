@@ -17,11 +17,11 @@ A template can be used to present the data in a way that makes sense for your ap
 
 ## Defining the Data Template Selector
 
-SfListView lets you customize the appearance of each row bounded to the [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemsSource.html) property by different templates based on specific constraints using [DataTemplateSelector](https://developer.xamarin.com/api/type/Xamarin.Forms.DataTemplateSelector/). You can choose a `DataTemplate` at runtime based on the value of a data-bound property using `DataTemplateSelector`.
+SfListView lets you customize the appearance of each item with different templates based on specific constraints using [DataTemplateSelector](https://developer.xamarin.com/api/type/Xamarin.Forms.DataTemplateSelector/). You can choose a `DataTemplate` for each item at runtime based on the value of a data-bound property using `DataTemplateSelector`.
 
 ### Create a Data Template Selector
 
-You can create the custom [DataTemplateSelector](https://developer.xamarin.com/api/type/Xamarin.Forms.DataTemplateSelector/) class that inherits from `DataTemplateSelector` and override the `OnSelectTemplate` method to return the `DataTemplate` which is used to the display item. At runtime, the SfListView calls the `OnSelectTemplate` method for each item in the underlying collection and passes the data object as item parameter.
+You can create the custom class that inherits from `DataTemplateSelector` and override the `OnSelectTemplate` method to return the `DataTemplate` for that item. At runtime, the SfListView invokes the `OnSelectTemplate` method for each item and passes the data object as parameter.
 
 {% highlight c# %}
 
@@ -51,7 +51,7 @@ class MyDataTemplateSelector : Xamarin.Forms.DataTemplateSelector
 
 ### Applying the Data Template Selector to SfListView
 
-You can define the [DataTemplateSelector](https://developer.xamarin.com/api/type/Xamarin.Forms.DataTemplateSelector/) to [ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html) property either in XAML and C#.
+You can assign that custom `DataTemplateSelector` to the [ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html) of SfListView either in XAML and C#.
 
 {% tabs %}
 {% highlight xaml %}

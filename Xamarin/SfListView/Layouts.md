@@ -64,6 +64,26 @@ The following screenshot shows the output of Grid layout. You can download the e
 
 [SpanCount](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GridLayout~SpanCount.html) property of GridLayout can be customized based on platform specific to avoid squeezed problem of listview item in tablet devices or windows desktop. The below code illustrates how to customize the `SpanCount` specific to platform and devices,
 
+{% tabs %}
+{% highlight xaml %}
+ <syncfusion:SfListView.LayoutManager>
+   <syncfusion:GridLayout>
+     <syncfusion:GridLayout.SpanCount>
+       <OnPlatform x:TypeArguments="x:Int32">
+         <OnPlatform.WinPhone>
+           <OnIdiom x:TypeArguments="x:Int32" Phone="2" Tablet="4" />
+         </OnPlatform.WinPhone>
+         <OnPlatform.Android>
+           <OnIdiom x:TypeArguments="x:Int32" Phone="2" Tablet="4" />
+         </OnPlatform.Android>
+         <OnPlatform.iOS>
+           <OnIdiom x:TypeArguments="x:Int32" Phone="2" Tablet="4" />
+         </OnPlatform.iOS>
+       </OnPlatform>
+     </syncfusion:GridLayout.SpanCount>
+   </syncfusion:GridLayout>
+ </syncfusion:SfListView.LayoutManager>
+{% endhighlight%}
 {% highlight c# %}
 GridLayout gridLayout = new GridLayout();
 
@@ -74,6 +94,7 @@ else if (Device.OS == TargetPlatform.Windows)
 
 listView.LayoutManager = gridLayout;
 {% endhighlight%}
+{% endtabs %}
 
 The below screenshot shows the output for tablet devices,
 ![](SfListView_images/SfListView-GridLayoutTablet.png)

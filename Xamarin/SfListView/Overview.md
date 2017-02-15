@@ -17,9 +17,9 @@ SfListView for Xamarin.Forms renders set of data items with Xamarin.Forms views 
 
 * Item Templating for rich UI.
 
-* DataTemplateSelector - To customize the view through different templates for each item.
+* Supports dynamic selection of UI for each item using the `DataTemplateSelector`.
 
-* Layouts support such as linear and grid layout.
+* Supports linear layout and grid layout.
 
 * Orientation support.
 

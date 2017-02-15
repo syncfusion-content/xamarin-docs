@@ -62,7 +62,7 @@ The following screenshot shows the output of Grid layout. You can download the e
 
 ### Customize SpanCount based on devices
 
-[SpanCount](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GridLayout~SpanCount.html) property of GridLayout can be customized based on platform specific to avoid squeezed problems of listview item in tablet devices or desktop for windows. The below code illustrates how to customize the `SpanCount` specific to platform and devices,
+[SpanCount](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GridLayout~SpanCount.html) property of GridLayout can be customized based on platform specific to avoid squeezed problem of listview item in tablet devices or windows desktop. The below code illustrates how to customize the `SpanCount` specific to platform and devices,
 
 {% highlight c# %}
 GridLayout gridLayout = new GridLayout();

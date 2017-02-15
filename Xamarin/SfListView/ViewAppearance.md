@@ -15,6 +15,84 @@ SfListView lets you customize the appearance of the underlying data and provides
 
 A template can be used to present the data in a way that makes sense for your application by using different controls. SfListView lets you customize the appearance of view by setting the [ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html) property. In SfListView, by default a [SfLabel](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfLabel.html) is used to present the list of data.
 
+## Defining the Data Template Selector
+
+SfListView lets you customize the appearance of each row bounded to the [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemsSource.html) property by different templates based on specific constraints using [DataTemplateSelector](https://developer.xamarin.com/api/type/Xamarin.Forms.DataTemplateSelector/). You can choose a `DataTemplate` at runtime based on the value of a data-bound property using `DataTemplateSelector`.
+
+### Create a Data Template Selector
+
+You can create the custom [DataTemplateSelector](https://developer.xamarin.com/api/type/Xamarin.Forms.DataTemplateSelector/) class that inherits from `DataTemplateSelector` and override the `OnSelectTemplate` method to return the `DataTemplate` which is used to the display item. At runtime, the SfListView calls the `OnSelectTemplate` method for each item in the underlying collection and passes the data object as item parameter.
+
+{% highlight c# %}
+
+class MyDataTemplateSelector : Xamarin.Forms.DataTemplateSelector
+{
+
+   private readonly DataTemplate incomingDataTemplate;
+   private readonly DataTemplate outgoingDataTemplate;
+
+   public MyDataTemplateSelector()
+   {
+      this.incomingDataTemplate = new DataTemplate(typeof(IncomingViewCell));
+      this.outgoingDataTemplate = new DataTemplate(typeof(OutgoingViewCell));      
+   }
+
+   protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
+   {
+      var messageVm = item as Message;
+      if (messageVm == null)
+         return null;
+      return messageVm.IsIncoming ? this.incomingDataTemplate : this.outgoingDataTemplate;
+   }
+
+}
+
+{% endhighlight %}
+
+### Applying the Data Template Selector to SfListView
+
+You can define the [DataTemplateSelector](https://developer.xamarin.com/api/type/Xamarin.Forms.DataTemplateSelector/) to [ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html) property either in XAML and C#.
+
+{% tabs %}
+{% highlight xaml %}
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DataTemplateSelector.MainPage"
+             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:local="clr-namespace:DataTemplateSelector;assembly=DataTemplateSelector">
+<ContentPage.Resources>
+    <ResourceDictionary>
+      <local:MyDataTemplateSelector x:Key="MessageTemplateSelector"></local:MyDataTemplateSelector>
+    </ResourceDictionary>
+</ContentPage.Resources>
+ <Grid>
+   <syncfusion:SfListView x:Name="ListView" ItemTemplate="{StaticResource MessageTemplateSelector}" 
+                          ItemsSource="{Binding Messages}" ItemSize="100"/>
+ </Grid>
+</ContentPage>
+{% endhighlight %}
+{% highlight c# %}
+public class MainPageCs : ContentPage
+{
+   public MainPageCs()
+   {
+      var viewModel = new MainPageViewModel();
+      BindingContext = viewModel;
+      Content = new SfListView()
+      {
+          ItemSize = 100,
+          ItemsSource = viewModel.Messages,
+          ItemTemplate = new MyDataTemplateSelector()
+      };
+   }
+}
+{% endhighlight %}
+{% endtabs %}
+
+Now run the application to render the following output. You can also download the entire source code of this demo from [here](http://files2.syncfusion.com/Xamarin.Forms/Samples/ListView_DataTemplateSelector.zip).
+
+![](SfListView_images/SfListView-DataTemplateSelector.png)
+
 ## Defining the Item Size
 
 SfListView allows you to customize the size of the items by setting the [ItemSize](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemSize.html) property. The default value of this property is 40. This property responds to runtime changes and hence you can customize it based on your requirement.
@@ -49,9 +127,9 @@ SfListView allows you to layout every item in the [SfListView.ItemsSource](https
 
 {% tabs %}
 {% highlight xaml %}
-<xmlns:sync="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+<xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
 
-<sync:SfListView x:Name="listView" Orientation="Horizontal" />
+<syncfusion:SfListView x:Name="listView" Orientation="Horizontal" />
 {% endhighlight %}
 {% highlight c# %}
 listView.Orientation = Orientation.Horizontal;

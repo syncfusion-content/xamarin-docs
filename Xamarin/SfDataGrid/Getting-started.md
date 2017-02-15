@@ -80,7 +80,6 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
     …
     global::Xamarin.Forms.Forms.Init ();
     SfDataGridRenderer.Init();
-    new SfNumericTextBoxRenderer ();
     LoadApplication (new App ());
     …
 }

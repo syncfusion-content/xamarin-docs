@@ -32,7 +32,8 @@ You can enable or disable editing for particular column by setting [GridColumn.A
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:GridTextColumn AllowEditing="True" MappingName="OrderID" />{% endhighlight %}
+<syncfusion:GridTextColumn AllowEditing="True" MappingName="OrderID" />
+{% endhighlight %}
 {% highlight c# %}
 GridTextColumn column = new GridTextColumn();
 column.AllowEditing = false;
@@ -51,6 +52,7 @@ You can enter into edit mode by selecting the row and touching the cell. Users c
                            AllowEditing="True"
                            AutoGenerateColumns="True"
                            EditTapAction="OnTap">
+{% endhighlight %}
 {% highlight c# %}
 //Enter edit mode in single tap
 this.dataGrid.EditTapAction = TapAction.OnTap;
@@ -72,6 +74,7 @@ When the cell enters into edit mode, cursor is placed based on [SfDataGrid.Edito
                            AutoGenerateColumns="True"
                            EditTapAction="OnTap"
                            EditorSelectionBehavior="SelectAll">
+{% endhighlight %}
 {% highlight c# %}
 //Selects all the text in the edit mode
 this.dataGrid.EditorSelectionBehavior = EditorSelectionBehavior.SelectAll;

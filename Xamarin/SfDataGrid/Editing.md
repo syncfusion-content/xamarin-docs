@@ -40,7 +40,7 @@ column.AllowEditing = false;
 {% endhighlight %}
 {% endtabs %}
 
-N > `GridColumn.AllowEditing` takes higher priority than `SfDataGrid.AllowEditing`.
+N> `GridColumn.AllowEditing` takes higher priority than `SfDataGrid.AllowEditing`.
 
 ## Entering into edit mode
 

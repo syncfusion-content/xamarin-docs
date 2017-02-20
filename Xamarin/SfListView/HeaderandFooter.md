@@ -93,4 +93,4 @@ listView.IsStickyFooter = true;
 
 The following screenshot shows the output rendered when the header and footer is defined with `IsStickyHeader` as true and `IsStickyFooter` as true.
 
-![](SfListView_images/SfListView-Header&Footer.png)
+![](SfListView_images/SfListView-HeaderAndFooter.png)

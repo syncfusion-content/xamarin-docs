@@ -148,6 +148,7 @@ The `QueryRowDragging` event provides following properties in `QueryRowDragging
 * `Position` - Returns the current x and y coordinates of the RowDragView.
 * `Reason` – Returns row dragging details as `QueryRowDraggingReason`.
 * `RowData`  – Returns the underlying data associated with the dragged row.
+* `CurrentRowData`  – Returns the corresponding row data, over which the row drag view is currently placed.
 * [Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs_properties(v=vs.110).aspx) – A Boolean property to cancel the event.
 
 ## How to disable dragging for particular row?

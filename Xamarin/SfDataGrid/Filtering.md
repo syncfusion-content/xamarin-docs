@@ -17,6 +17,8 @@ SfDataGrid provides support to filter the records in view by setting `SfDataGrid
 
 In order to filter the records in SfDataGrid, you have to assign the filtered strings to the `ViewModel.FilterText` property which will be later applied in `FilterPredicate` that is assigned to `SfDataGrid.View.Filter` in OnFilterChanged() method.
 
+N> To update the filtering for the newly added row or column, set the `SfDataGrid.View.LiveDataUpdateMode` to `LiveDataUpdateMode.AllowDataShaping`.
+
 The following code example illustrates the delegate, properties, and methods used in the `ViewModel` class in order to perform the filtering operation.
 
 {% highlight c# %}

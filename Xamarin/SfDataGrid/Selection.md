@@ -93,6 +93,8 @@ dataGrid.SelectionMode = SelectionMode.None;
 dataGrid.SelectionController.ClearSelection (); 
 {% endhighlight %}
 
+N> Selected items and the selections will be cleared whenever the ItemsSource is changed in runtime.
+
 ## Multiple Selection Colors
 
 SfDataGrid provides support to select one or more rows either programmatically or by touch interactions. By default SfDataGrid applies a common background color for the selected rows based on the current theme. However it also provides extensibility to have multiple selection colors when touching the rows by writing a custom SelectionController derived from [GridSelectionController](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSelectionController.html# "") and assigning it to the [SfDataGrid.SelectionController](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectionController.html# "") property. You need to override the GetSelectionColor () method to apply different colors for selection in runtime based on your requirement.

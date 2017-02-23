@@ -79,6 +79,38 @@ When you bind collection to `ItemsSource` property of SfDataGrid, then `View` wi
 
 Note> DataGrid creates different types of views derived from `ICollectionViewAdv` interface based on `ItemsSource`.
 
+The following property is associated with `View`.
+
+### LiveDataUpdateMode
+
+SfDataGrid provides support to update the view during data manipulation operations and property changes using [LiveDataUpdateMode](https://help.syncfusion.com/cr/cref_files/xamarin/data/Syncfusion.Data.Portable~Syncfusion.Data.CollectionViewAdv~LiveDataUpdateMode.html). It allows you to customize when to update the view based on the `SfDataGrid.View.LiveDataUpdateMode` property.
+
+<table>
+<tr>
+<th>LiveDataUpdateMode</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>Default</td>
+<td>Data operations are not updated </td>
+</tr>
+<tr>
+<td>AllowSummaryUpdate</td>
+<td>Summaries are updated during data manipulation change</td>
+</tr>
+<tr>
+<td>AllowDataShaping</td>
+<td>DataOperations like sorting, grouping and filtering are updated during data manipulation change</td>
+</tr>
+
+<% highlight c# %>
+dataGrid.GridViewCreated += DataGrid_GridViewCreated;
+private void DataGrid_GridViewCreated(object sender, GridViewCreatedEventArgs e)
+{
+    dataGrid.View.LiveDataUpdateMode = LiveDataUpdateMode.Default;
+}
+<% endhighlight %>
+
 The following events are associated with `View`.
 
 ### RecordPropertyChanged

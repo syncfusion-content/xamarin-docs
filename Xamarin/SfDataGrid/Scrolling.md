@@ -16,6 +16,8 @@ SfDataGrid provides three types of scrolling mode which can be customized using 
 * Line
 * Pixel
 
+N> SfDataGrid provides support for the vertical and horizontal scrollbar in UWP. In addition to that, mouse scrolling support is also provided in UWP Desktop application.
+
 ### PixelLine
 
 `ScrollingMode.PixelLine`, will allow to scroll its contents like an excel sheet. i.e., whenever a row or a column is clipped on the top, the particular row or column will be auto scrolled to display fully in view.

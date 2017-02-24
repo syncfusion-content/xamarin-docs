@@ -62,6 +62,11 @@ In order to use export to excel and export to PDF functionalities of SfDataGrid,
 </tr>
 </table>
 
+N> When there is a mismatch of Xamarin NuGet packages between your sample and SfDataGrid assemblies, an error `Could not load type Xamarin.Forms.ElementTemplate` will occur. Please refer the `ReadMe` to know the software requirements of Syncfusion controls.
+
+N> When there is a mismatch between Syncfusion NuGet packages among your projects, `System.IO.FileLoadException` will occur. To overcome this exception, install the same version of SfDataGrid assemblies in all your projects. 
+
+
 ## Launching the SfDataGrid on each platform
 
 To use SfDataGrid inside an application, each platform application must initialize the SfDataGrid renderer. This initialization step varies from platform to platform and is discussed in the following sections.

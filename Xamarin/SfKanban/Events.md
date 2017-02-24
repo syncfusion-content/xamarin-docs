@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Evetns in Xamarin.Forms Kanban control
+title: Events in Xamarin.Forms Kanban control
 description: Kanban Events
 platform: xamarin
 control: Kanban
@@ -29,7 +29,7 @@ This event is triggered when you start to drag a card. The argument contains the
 
 ## DragEnd  
 
-This event is triggered when whenever dragging is cancelled. The argument contains the following information.
+This event is triggered whenever the card is dropped or dragging action is canceled. The argument contains the following information.
 
 * [`Cancel`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanDragEndEventArgs~Cancel.html)			- Used to cancel the drag action.
 * [`Data`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanDragEventArgs~Data.html)			- Used to get the underlying model of the card.
@@ -74,4 +74,4 @@ This event is triggered when a card is dragged to a new index within a column. T
 
 ## ColumnsGenerated 
 
-This event will be fired after the columns are generated automatically. You can access the auto-generated columns using SfKanban.ActualColumns property.
+This event will be fired after the columns are generated automatically. You can access the auto-generated columns using [`SfKanban.ActualColumns`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~ActualColumns.html) property.

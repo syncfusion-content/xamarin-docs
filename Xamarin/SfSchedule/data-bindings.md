@@ -23,8 +23,6 @@ Schedule control has a built-in capability to handle the appointment arrangement
 Create the collection of the ScheduleAppointments by setting required details using above mentioned properties for each appointment. And then assign the created collection to the `DataSource` property of `IEnumerable` type in `SfSchedule` as like in below code example.
 
 {% highlight c# %}
-    
-    ScheduleAppointmentCollection appointmentCollection;
 
 	//creating new instance for schedule
 	SfSchedule sfschedule=new SfSchedule();

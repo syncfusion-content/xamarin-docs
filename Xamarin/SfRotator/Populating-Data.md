@@ -84,13 +84,13 @@ SfRotator provides support to add a custom view as RotatorItems by designing a v
 
 {% highlight xaml %}
 
-<rotator:SfRotator x:Name="rotator"  Grid.Row="0" NavigationDelay="2000" ItemsSource="{Binding ImageCollection}" SelectedIndex="2" NavigationDirection="Horizontal" NavigationStripMode="Dots" BackgroundColor="#ececec" NavigationStripPosition="Bottom">
-  <rotator:SfRotator.ItemTemplate>
+<syncfusion:SfRotator x:Name="rotator"  Grid.Row="0" NavigationDelay="2000" ItemsSource="{Binding ImageCollection}" SelectedIndex="2" NavigationDirection="Horizontal" NavigationStripMode="Dots" BackgroundColor="#ececec" NavigationStripPosition="Bottom">
+  <syncfusion:SfRotator.ItemTemplate>
     <DataTemplate>
       <Image  Source="{Binding Image}"/>
     </DataTemplate>
-  </rotator:SfRotator.ItemTemplate>
-</rotator:SfRotator>
+  </syncfusion:SfRotator.ItemTemplate>
+</syncfusion:SfRotator>
 	  
 {% endhighlight %}
 
@@ -122,7 +122,9 @@ img.VerticalOptions = LayoutOptions.Center;
 img.HeightRequest = 400;
 img.WidthRequest = 400;
 rotatorItem1.ItemContent =img;
-rotator.DataSource.Add (rotatorItem1);		
+rotator.DataSource.Add (rotatorItem1);
+
+this.Content=rotator;		
 	  
 {% endhighlight %}
 

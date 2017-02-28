@@ -17,7 +17,7 @@ N> By default, the property value is false.
 
 {% highlight xaml %}
 
-	<rotator:SfRotator x:Name="rotator" IsTextVisible="true" />
+	<syncfusion:SfRotator x:Name="rotator" IsTextVisible="true" />
 	
 {% endhighlight %}
 

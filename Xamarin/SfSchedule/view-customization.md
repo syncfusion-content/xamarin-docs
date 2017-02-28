@@ -142,17 +142,31 @@ Month cells can be customized using the `cellStyle` property as follows,
 
 {% highlight C# %}
 
-	sfschedule.OnMonthCellLoadedEvent += (object sender, MonthCellLoadedEventArgs args) =>
-	{
-	if (args.isToday)
-	{
-	//setting Month Cell style properties
-	args.cellStyle.BackgroundColor = Color.Gray;
-	args.cellStyle.TextColor = Color.Blue;
-	args.cellStyle.TextSize = 12;
-	args.cellStyle.TextStyle = Font.SystemFontOfSize(12, FontAttributes.Bold);
-	}
-	};
+
+    schedule.OnMonthCellLoadedEvent += (object sender, MonthCellLoadedEventArgs args) =>
+    {
+    if (args.isToday)
+    {
+    //setting Month Cell style properties
+    args.cellStyle.BackgroundColor = Color.Gray;
+    args.cellStyle.TextColor = Color.Blue;
+    args.cellStyle.TextSize = 12;
+    args.cellStyle.TextStyle = Font.SystemFontOfSize(12, FontAttributes.Bold);
+    }
+    if (args.isNextMonthDate)
+    {
+    args.cellStyle.BackgroundColor = Color.FromRgb(251, 211, 201);
+    args.cellStyle.TextColor = Color.White;
+    args.cellStyle.TextStyle = Font.SystemFontOfSize(15, FontAttributes.Bold);
+    }
+    if (args.isPreviousMonthDate)
+    {
+    args.cellStyle.BackgroundColor = Color.FromRgb(251, 211, 201);
+    args.cellStyle.TextColor = Color.White;
+    args.cellStyle.TextStyle = Font.SystemFontOfSize(15, FontAttributes.Bold);
+    }
+
+    };
 
 {% endhighlight %}
 

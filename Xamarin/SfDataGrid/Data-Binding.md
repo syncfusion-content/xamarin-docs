@@ -102,6 +102,7 @@ SfDataGrid provides support to update the view during data manipulation operatio
 <td>AllowDataShaping</td>
 <td>DataOperations like sorting, grouping and filtering are updated during data manipulation change</td>
 </tr>
+</table>
 
 <% highlight c# %>
 dataGrid.GridViewCreated += DataGrid_GridViewCreated;

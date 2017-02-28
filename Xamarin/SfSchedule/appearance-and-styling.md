@@ -44,7 +44,7 @@ You can change the background color,text style and text size using properties su
 
 ## View Header Customization
 
-You can customize the header of the Schedule using `ViewHeaderStyle` and `ViewHeaderHeight` property in schedule.
+You can customize the view header of the Schedule using `ViewHeaderStyle` and `ViewHeaderHeight` property in schedule.
 
 ### Labels
 
@@ -68,7 +68,7 @@ You can change the background color,text style and text size using properties su
 
 ### ViewHeader Height
 
-You can customize the height for the Header in Schedule using `HeaderHeight` in schedule.
+You can customize the height for the view header in Schedule using `HeaderHeight` in schedule.
 
 {% highlight c# %}
 
@@ -106,9 +106,9 @@ You can differentiate working hours with non-working hour timeslots by its color
 
 	//setting working hours properties 
 	DayViewSettings dayViewSettings = new DayViewSettings ();
-	dayviewsettings.NonWorkingHoursTimeSlotBorderColor = Color.Gray;
-	dayviewsettings.NonWorkingHoursTimeSlotColor = Color.Gray;
-	sfschedule.DayViewSettings = dayviewsettings;
+	dayViewSettings.NonWorkingHoursTimeSlotBorderColor = Color.Gray;
+	dayViewSettings.NonWorkingHoursTimeSlotColor = Color.Gray;
+	sfschedule.DayViewSettings = dayViewSettings;
 
 {% endhighlight %}
 
@@ -139,10 +139,10 @@ You can differentiate working hours with non-working hour timeslots by its color
 
 	//setting working hours properties 
 	DayViewSettings dayViewSettings = new DayViewSettings ();
-	dayviewsettings.TimeSlotColor = Color.White;
-	dayviewsettings.TimeSlotBorderColor = Color.Blue;
-	dayviewsettings.TimeSlotBorderStrokeWidth = 2;
-	sfschedule.DayViewSettings = dayviewsettings;
+	dayViewSettings.TimeSlotColor = Color.White;
+	dayViewSettings.TimeSlotBorderColor = Color.Blue;
+	dayViewSettings.TimeSlotBorderStrokeWidth = 2;
+	sfschedule.DayViewSettings = dayViewSettings;
 
 {% endhighlight %}
 
@@ -172,8 +172,8 @@ You can differentiate the timeslot panel using `VerticalLineColor` and `Vertical
 	dayviewsettings.VerticalLineColor = Color.Green;
 	dayviewsettings.VerticalLineStrokeWidth = 5;
 
-	sfschedule.DayViewSettings = dayViewSettings;
-	this.content = sfschedule;
+	sfschedule.DayViewSettings = dayviewsettings;
+	this.Content = sfschedule;
 
 {% endhighlight %} 
 
@@ -217,9 +217,9 @@ You can change the all day appointment panel color using the property `AllDayApp
 
 {% endhighlight %} 
 
-{% endtabs %}
+{% endtabs %} 
 
-![](AppearanceAndStyling_images/DayViewAppearance/DayView.png) 
+![](AppearanceAndStyling_images/NonWorkingDay.png)
 
 ### Custom Week View
 
@@ -368,7 +368,10 @@ You can change the all day appointment panel color using the property `AllDayApp
 
 {% endtabs %}
 
-![](AppearanceAndStyling_images/WeekViewAppearance/WeekView.png)
+
+![](AppearanceAndStyling_images/NonWorkingWeek.png)
+
+>**NOTE** Timeslots customization is not applicable for `WeekView` and `WorkWeekView` in UWP mobile device.
 
 ### Custom Work Week View
 
@@ -518,7 +521,7 @@ You can change the all day appointment panel color using the property `AllDayApp
 
 {% endtabs %}
 
-![](AppearanceAndStyling_images/WorkWeekViewAppearance/WorkWeekView.png)
+![](AppearanceAndStyling_images/NonWorkingWorkWeek.png)
 
 ### Interval
 
@@ -544,3 +547,6 @@ You can change the time interval and time interval height using `TimeInterval` a
 
 {% endtabs %}
 
+>**NOTE** : `TimeInterval` value should be given in minutes.
+
+![](AppearanceAndStyling_images/TimeInterval.png)

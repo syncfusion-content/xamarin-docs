@@ -32,7 +32,7 @@ Create the collection of the ScheduleAppointments by setting required details us
 	appointmentCollection = new ScheduleAppointmentCollection();
 
 	//Creating new event
-	ScheduleAppointment clientMeeting = new ScheduleAppointment()
+	ScheduleAppointment clientMeeting = new ScheduleAppointment();
 
 	DateTime currentDate = DateTime.Now;
 	DateTime startTime = new DateTime (currentDate.Year,currentDate.Month,currentDate.Day, 10, 0, 0); 
@@ -59,10 +59,13 @@ AllDayAppointment is for setting appointment for full day by using `ShowAllDay` 
 	//creating new instance for schedule
 	SfSchedule sfschedule=new SfSchedule();
 	sfschedule.ScheduleView = ScheduleView.WeekView;
+	WeekViewSettings weekViewSeetings = new WeekViewSettings();
+	weekViewSeetings.ShowAllDay = true;
+	sfschedule.WeekViewSettings = weekViewSeetings;
 	appointmentCollection = new ScheduleAppointmentCollection();
 
 	//Creating new event
-	ScheduleAppointment clientMeeting = new ScheduleAppointment()
+	ScheduleAppointment clientMeeting = new ScheduleAppointment();
 
 	DateTime currentDate = DateTime.Now;
 	DateTime startTime = new DateTime (currentDate.Year,currentDate.Month,currentDate.Day, 10, 0, 0); 
@@ -72,6 +75,7 @@ AllDayAppointment is for setting appointment for full day by using `ShowAllDay` 
 	clientMeeting.EndTime = endTime;
 	clientMeeting.Color = Color.Blue;
 	clientMeeting.Subject = "ClientMeeting";
+	clientMeeting.IsAllDay = true;
 	appointmentCollection.Add(clientMeeting);
 	sfschedule.DataSource = appointmentCollection;
 	this.Content= sfschedule;
@@ -177,8 +181,9 @@ You can add `Subject` and `Color` to the appointments created by creating a coll
 
 {% endhighlight %}
 
+![](PopulatingAppointments_images/GettingStarted.png)
+
 ## Appointment Customization
 
 Appointments can be customized using `AppointmentStyle` property in schedule. To know more about customization of Schedule Appointment refer [View Customization](/xamarin/sfschedule/view-customization "View Customization")
 
-![](PopulatingAppointments_images/GettingStarted.png)

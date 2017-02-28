@@ -8,22 +8,45 @@ documentation: ug
 ---
 # Animation Type
 
-The `AnimationType` property for the SfBusyIndicator allows the user to set one of the 10 animations from the built-in animations.
+The `AnimationType` property for the SfBusyIndicator allows the user to set one of the 15 animations from the built-in animations.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-	<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="Ball" Title="Loading..." BackgroundColor="Color.Blue"/>
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:GettingStarted" 
+	xmlns:syncfusion="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
+	x:Class="GettingStarted.CarouselControlPage">
+<ContentPage.Content>
+ <syncfusion:SfBusyIndicator x:Name="busyindicator" AnimationType="Ball" Title="Loading..." BackgroundColor="Blue" TextColor="White" />	
+</ContentPage.Content>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-	SfBusyIndicator busyindicator = new SfBusyIndicator();
-	busyindicator.AnimationType=AnimationTypes.Ball;
-	busyindicator.Title ="Loading…";
-	busyindicator.BackgroundColor= Color.Blue;
+using Syncfusion.SfBusyIndicator.XForms;
+using Xamarin.Forms;
+
+namespace GettingStarted
+{
+	public partial class CarouselControlPage : ContentPage
+	{
+		public CarouselControlPage()
+		{
+			InitializeComponent();
+
+			SfBusyIndicator busyindicator = new SfBusyIndicator();
+			busyindicator.AnimationType = AnimationTypes.Ball;
+			busyindicator.BackgroundColor = Color.Blue;
+			busyindicator.TextColor = Color.White;
+			busyindicator.Title ="Loading…";
+			this.Content = busyindicator;
+		}
+	}
+}
 	
 {% endhighlight %}
 
@@ -77,6 +100,31 @@ Busy Indicator with ECG type animation
 ![](images/print.png) 
 
 Busy Indicator with Print type animation 
+{:.caption}
+
+![](images/box.png) 
+
+Busy Indicator with Box type animation 
+{:.caption}
+
+![](images/gear.png) 
+
+Busy Indicator with Gear type animation 
+{:.caption}
+
+![](images/movietimer.png) 
+
+Busy Indicator with movieTimer type animation 
+{:.caption}
+
+![](images/zoomingtarget.png) 
+
+Busy Indicator with ZoomingTarget type animation 
+{:.caption}
+
+![](images/rollingball.png) 
+
+Busy Indicator with RollingBall type animation 
 {:.caption}
 
 

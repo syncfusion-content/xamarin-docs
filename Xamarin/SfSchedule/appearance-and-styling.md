@@ -34,7 +34,7 @@ You can change the background color,text style and text size using properties su
 {% highlight c# %}
 
 	HeaderStyle headerStyle = new HeaderStyle();
-	headerStyle.BackgroundColor = Color.FromRgb(249, 192, 177);
+	headerStyle.BackgroundColor = Color.FromRgb(251, 211, 201);
 	headerStyle.TextStyle = Font.Default;
 	headerStyle.TextSize = 15;
 	headerStyle.TextColor=Color.White;
@@ -213,7 +213,7 @@ You can change the all day appointment panel color using the property `AllDayApp
 
 {% highlight c# %}
 
-	dayviewsettings.AllDayAppointmentLayoutColor = Color.Pink; 
+	dayViewSettings.AllDayAppointmentLayoutColor = Color.Pink; 
 
 {% endhighlight %} 
 
@@ -269,7 +269,7 @@ You can differentiate working hours with non-working hour timeslots by its color
 	<!--setting week view settings properties -->
 	<schedule:WeekViewSettings
 	TimeSlotColor="White"
-	TimeSlotBorderColor="Aqua" 
+	TimeSlotBorderColor="Green" 
 	TimeSlotBorderStrokeWidth="2">
 	</schedule:WeekViewSettings>
 	</schedule:SfSchedule.WeekViewSettings>
@@ -281,7 +281,7 @@ You can differentiate working hours with non-working hour timeslots by its color
 
 	//setting week view settings properties
 	WeekViewSettings weekViewSettings = new WeekViewSettings ();
-	weekViewSettings.TimeSlotBorderColor = Color.Aqua;
+	weekViewSettings.TimeSlotBorderColor = Color.Green;
 	weekViewSettings.TimeSlotColor = Color.White;
 	weekViewSettings.TimeSlotBorderStrokeWidth = 2;
 	sfschedule.WeekViewSettings = weekViewSettings;
@@ -302,7 +302,7 @@ You can differentiate the timeslot panel using `VerticalLineColor` and `Vertical
 	<schedule:SfSchedule ScheduleView="WeekView">
 	<schedule:SfSchedule.WeekViewSettings>
 	<schedule:WeekViewSettings 
-	VerticalLineColor="Green"
+	VerticalLineColor="Blue"
 	VerticalLineStrokeWidth="5">
 	</schedule:WeekViewSettings>
 	</schedule:SfSchedule.WeekViewSettings>
@@ -313,7 +313,7 @@ You can differentiate the timeslot panel using `VerticalLineColor` and `Vertical
 {% highlight c# %}
 
 	WeekViewSettings weekViewSettings = new WeekViewSettings ();
-	weekViewSettings.VerticalLineColor = Color.Green;
+	weekViewSettings.VerticalLineColor = Color.Blue;
 	weekViewSettings.VerticalLineStrokeWidth = 5;
 	sfschedule.WeekViewSettings = weekViewSettings;
 	this.Content= sfschedule;

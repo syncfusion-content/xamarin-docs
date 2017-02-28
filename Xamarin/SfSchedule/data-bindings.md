@@ -23,13 +23,13 @@ Schedule control has a built-in capability to handle the appointment arrangement
 Create the collection of the ScheduleAppointments by setting required details using above mentioned properties for each appointment. And then assign the created collection to the `DataSource` property of `IEnumerable` type in `SfSchedule` as like in below code example.
 
 {% highlight c# %}
-
-	ScheduleAppointmentCollection appointmentCollection;
+    
+    ScheduleAppointmentCollection appointmentCollection;
 
 	//creating new instance for schedule
 	SfSchedule sfschedule=new SfSchedule();
 	sfschedule.ScheduleView = ScheduleView.WeekView;
-	appointmentCollection = new ScheduleAppointmentCollection();
+	ScheduleAppointmentCollection appointmentCollection = new ScheduleAppointmentCollection();
 
 	//Creating new event
 	ScheduleAppointment clientMeeting = new ScheduleAppointment();
@@ -54,15 +54,13 @@ AllDayAppointment is for setting appointment for full day by using `ShowAllDay` 
 
 {% highlight c# %}
 
-	ScheduleAppointmentCollection appointmentCollection;
-
 	//creating new instance for schedule
 	SfSchedule sfschedule=new SfSchedule();
 	sfschedule.ScheduleView = ScheduleView.WeekView;
 	WeekViewSettings weekViewSeetings = new WeekViewSettings();
 	weekViewSeetings.ShowAllDay = true;
 	sfschedule.WeekViewSettings = weekViewSeetings;
-	appointmentCollection = new ScheduleAppointmentCollection();
+	ScheduleAppointmentCollection appointmentCollection = new ScheduleAppointmentCollection();
 
 	//Creating new event
 	ScheduleAppointment clientMeeting = new ScheduleAppointment();
@@ -181,9 +179,24 @@ You can add `Subject` and `Color` to the appointments created by creating a coll
 
 {% endhighlight %}
 
+You can set random time for the appointments in schedule.
+
+{% highlight c# %}
+
+    private List<Point> GettingTimeRanges()
+    {
+    List<Point> randomTimeCollection = new List<Point>();
+    randomTimeCollection.Add(new Point(9, 11));
+    randomTimeCollection.Add(new Point(12, 14));
+    randomTimeCollection.Add(new Point(15, 17));
+
+    return randomTimeCollection;
+    }
+
+{% endhighlight %}
+
 ![](PopulatingAppointments_images/GettingStarted.png)
 
 ## Appointment Customization
 
 Appointments can be customized using `AppointmentStyle` property in schedule. To know more about customization of Schedule Appointment refer [View Customization](/xamarin/sfschedule/view-customization "View Customization")
-

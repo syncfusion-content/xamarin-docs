@@ -19,7 +19,7 @@ Items can be navigated in horizontal direction.
 
 {% highlight xaml %}
 
-	<rotator:SfRotator x:Name="rotator" NavigationDirection="Horizontal" />
+	<syncfusion:SfRotator x:Name="rotator" NavigationDirection="Horizontal" />
 	
 {% endhighlight %}
 
@@ -39,7 +39,7 @@ Items can be navigated in vertical direction.
 
 {% highlight xaml %}
 
-	<rotator:SfRotator x:Name="rotator" NavigationDirection="Vertical" />
+	<syncfusion:SfRotator x:Name="rotator" NavigationDirection="Vertical" />
 	
 {% endhighlight %}
 

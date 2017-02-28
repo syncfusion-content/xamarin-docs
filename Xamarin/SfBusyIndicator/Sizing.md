@@ -14,16 +14,39 @@ Drawing size can be customized in SfBusyIndicator. `ViewBoxHeight` and `ViewBoxW
 
 {% highlight xaml %}
 
-	<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="SlicedCircle" ViewBoxHeight="20" ViewBoxWidth="20" />
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:GettingStarted" 
+	xmlns:syncfusion="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
+	x:Class="GettingStarted.CarouselControlPage">
+<ContentPage.Content>
+ <syncfusion:SfBusyIndicator x:Name="busyindicator" AnimationType="SlicedCircle"  ViewBoxWidth = "20" ViewBoxHeight="20" TextColor="Maroon" />	
+</ContentPage.Content>
+</ContentPage>
 	
 {% endhighlight %}
 
 {% highlight c# %}
-    SfBusyIndicator busyindicator = new SfBusyIndicator();
-	busyindicator.AnimationType=AnimationTypes.SlicedCircle;
-	busyindicator.ViewBoxHeight=20;
-	busyindicator.ViewBoxWidth=20;
 
+using Syncfusion.SfBusyIndicator.XForms;
+using Xamarin.Forms;
+namespace GettingStarted
+{
+	public partial class CarouselControlPage : ContentPage
+	{
+		public CarouselControlPage()
+		{
+			InitializeComponent();
+
+			SfBusyIndicator busyindicator = new SfBusyIndicator();
+			busyindicator.AnimationType = AnimationTypes.SlicedCircle;
+			busyindicator.ViewBoxWidth = 20;
+			busyindicator.ViewBoxHeight = 20;
+			busyindicator.TextColor = Color.Maroon;
+			this.Content = busyindicator;
+		}
+	}
+}
+    
 {% endhighlight %}
 
 {% endtabs %}

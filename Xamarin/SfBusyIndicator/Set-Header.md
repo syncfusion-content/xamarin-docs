@@ -14,15 +14,40 @@ SfBusyIndicator provides option to set the text that indicates the information r
 
 {% highlight xaml %}
 
-	<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="Ball" Title="Loading..." />
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:GettingStarted" 
+	xmlns:syncfusion="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
+	x:Class="GettingStarted.CarouselControlPage">
+<ContentPage.Content>
+ <syncfusion:SfBusyIndicator x:Name="busyindicator" AnimationType="Ball" Title="Loading..." ViewBoxWidth = "150" ViewBoxHeight="150" TextColor="Maroon" />	
+</ContentPage.Content>
+</ContentPage>
 	
 {% endhighlight %}
 
 {% highlight c# %}
 
-	SfBusyIndicator busyindicator = new SfBusyIndicator();
-	busyindicator.AnimationType=AnimationTypes.Ball;
-	busyindicator.Title ="Loading…";
+using Syncfusion.SfBusyIndicator.XForms;
+using Xamarin.Forms;
+namespace GettingStarted
+{
+	public partial class CarouselControlPage : ContentPage
+	{
+		public CarouselControlPage()
+		{
+			InitializeComponent();
+
+			SfBusyIndicator busyindicator = new SfBusyIndicator();
+			busyindicator.AnimationType = AnimationTypes.Ball;
+			busyindicator.ViewBoxWidth = 150;
+			busyindicator.ViewBoxHeight = 150;
+			busyindicator.Title ="Loading…";
+			busyindicator.TextColor = Color.Maroon;
+			this.Content = busyindicator;
+		}
+	}
+}
+
 
 {% endhighlight %}
 

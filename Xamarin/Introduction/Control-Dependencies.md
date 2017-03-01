@@ -287,7 +287,7 @@ This page lists the assemblies required for each control to be referred in each 
 </tr>
 <tr>
 <td>Android</td>
-<td>Syncfusion.SfRotator.Android.dll<br/>Syncfusion.SfRotator.XForms.Android.dll<br/>Syncfusion.SfRotator.XForms.dll<br/>Xamarin.Android.Support.v17.Leanback (from NuGet Packages)<br/></td>
+<td>Syncfusion.SfRotator.Android.dll<br/>Syncfusion.SfRotator.XForms.Android.dll<br/>Syncfusion.SfRotator.XForms.dll<br/></td>
 </tr>
 <tr>
 <td>iOS</td>

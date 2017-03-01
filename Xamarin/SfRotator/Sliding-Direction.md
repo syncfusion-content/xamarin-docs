@@ -45,6 +45,7 @@ Items can be navigated in vertical direction.
 
 {% highlight C# %}
 
+    SfRotator rotator = new SfRotator();
 	rotator.NavigationDirection = NavigationDirection.Vertical;
 
 {% endhighlight %}

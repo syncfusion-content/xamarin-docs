@@ -98,7 +98,7 @@ SfRotator provides support to add a custom view as RotatorItems by designing a v
 
 ## Through Rotator Item
 
-The ItemTemplate provides common template with different data, whereas if different views for every items is needed, it can also be provided using `ItemContent` property in SfRotatorItem class.
+The ItemTemplate provides common template with different data, whereas if different views for every items is needed, it can also be provided using `ItemContent` property  in SfRotatorItem class.
 
 {% tabs %}
 
@@ -126,6 +126,38 @@ rotator.DataSource.Add (rotatorItem1);
 
 this.Content=rotator;		
 	  
+{% endhighlight %}
+
+{% endtabs %}
+
+And also rotator provides a support to display only the Image data with `Image` property in SfRotatorItem class.
+
+% tabs %}
+
+{% highlight C# %}
+
+public partial class CarouselControlPage : ContentPage
+{
+	public CarouselControlPage()
+	{
+		InitializeComponent();
+
+		SfRotator rotator = new SfRotator();
+
+		List<SfRotatorItem> collectionOfItems = new List<SfRotatorItem>();
+		collectionOfItems.Add(new SfRotatorItem() { Image = "movie1.png" });
+		collectionOfItems.Add(new SfRotatorItem() { Image = "movie2.png" });
+		collectionOfItems.Add(new SfRotatorItem() { Image = "movie3.png" });
+		collectionOfItems.Add(new SfRotatorItem() { Image = "movie4.png" });
+		collectionOfItems.Add(new SfRotatorItem() { Image = "movie5.png" });
+
+		rotator.DataSource = collectionOfItems;
+		this.Content = rotator;
+
+	}
+}
+
+
 {% endhighlight %}
 
 {% endtabs %}

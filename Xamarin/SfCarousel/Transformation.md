@@ -21,13 +21,15 @@ N> If the angle value is positive, then the rotation is in the clockwise directi
 
 {% highlight xaml %}
 
-	<carousel:SfCarousel x:Name="carousel" RotationAngle="90" />
+	<syncfusion:SfCarousel x:Name="carousel" RotationAngle="90" />
 	
 {% endhighlight %}
 
 {% highlight C# %}
 
-	carousel.RotationAngle=90;
+	SfCarousel carousel = new SfCarousel();
+	carousel.RotationAngle = 90;
+	
 
 {% endhighlight %}
 
@@ -46,13 +48,15 @@ N> The default value is 20.
 
 {% highlight xaml %}
 
-	<carousel:SfCarousel x:Name="carousel" Offset="30" />
+	<syncfusion:SfCarousel x:Name="carousel" Offset="30" />
 	
 {% endhighlight %}
 
 {% highlight C# %}
 
+	SfCarousel carousel = new SfCarousel();
 	carousel.Offset=30;
+	
 
 {% endhighlight %}
 
@@ -60,7 +64,7 @@ N> The default value is 20.
 
 ![](images/offset.png)
 
-## Set Gap between Selected Item
+## Set Gap between Selected and unselected Item
 
 Distance between the selected item and other items can be customized by using `SelectedItemOffset` property of the SfCarousel control.
 
@@ -68,12 +72,13 @@ Distance between the selected item and other items can be customized by using `S
 
 {% highlight xaml %}
 
-	<carousel:SfCarousel x:Name="carousel" SelectedItemOffset="5" />
+	<syncfusion:SfCarousel x:Name="carousel" SelectedItemOffset="5" />
 	
 {% endhighlight %}
 
 {% highlight C# %}
 
+    SfCarousel carousel = new SfCarousel();
 	carousel.SelectedItemOffset=5;
 
 {% endhighlight %}
@@ -88,12 +93,13 @@ The `ScaleOffset` property in the SfCarousel control is used to scale all the it
 
 {% highlight xaml %}
 
-	<carousel:SfCarousel x:Name="carousel" ScaleOffset="0.7" />
+	<syncfusion:SfCarousel x:Name="carousel" ScaleOffset="0.7" />
 	
 {% endhighlight %}
 
 {% highlight C# %}
-	
+
+	SfCarousel carousel = new SfCarousel();
 	carousel.ScaleOffset=0.7f;
 
 {% endhighlight %}

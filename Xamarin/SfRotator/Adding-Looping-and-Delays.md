@@ -26,7 +26,8 @@ N> By default, the property value is set to false.
 {% endhighlight %}
 
 {% highlight C# %}
-
+    
+	SfRotator rotator = new SfRotator();
 	rotator.EnableAutoPlay = true;
 
 {% endhighlight %}
@@ -49,6 +50,7 @@ N> The property value should be in milliseconds.
 
 {% highlight C# %}
 
+    SfRotator rotator = new SfRotator();
 	rotator.NavigationDelay = 2000;
 
 {% endhighlight %}
@@ -69,6 +71,7 @@ The `EnableLooping` property specifies whether the items should navigate to firs
 
 {% highlight C# %}
 
+    SfRotator rotator = new SfRotator();
 	rotator.EnableLooping = true;
 
 {% endhighlight %}

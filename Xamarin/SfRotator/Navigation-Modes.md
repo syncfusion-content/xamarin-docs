@@ -25,6 +25,7 @@ The `NavigationStripMode` property specifies the appearance of navigation bar it
 
 {% highlight C# %}
 
+    SfRotator rotator = new SfRotator();
 	rotator.NavigationStripMode = NavigationStripMode.Thumbnail;	
 
 {% endhighlight %}
@@ -45,6 +46,7 @@ The `NavigationStripMode` property specifies the appearance of navigation bar it
 
 {% highlight C# %}
 
+	SfRotator rotator = new SfRotator();
 	rotator.NavigationStripMode = NavigationStripMode.Dots;	
 
 {% endhighlight %}
@@ -75,6 +77,7 @@ There are four available positions,
 
 {% highlight C# %}
 
+	SfRotator rotator = new SfRotator();
 	rotator.NavigationStripPosition = NavigationStripPosition.Bottom;
 
 {% endhighlight %}

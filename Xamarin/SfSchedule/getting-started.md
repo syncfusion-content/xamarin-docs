@@ -63,6 +63,7 @@ You can map those custom properties with schedule appointment properties using `
 
 {% highlight c# %}
 
+    ViewModel viewModel = new ViewModel();
 	ObservableCollection<Meeting> meetings = new ObservableCollection<Meeting>();
 
 	ScheduleAppointmentMapping dataMapping = new ScheduleAppointmentMapping();
@@ -83,7 +84,14 @@ You can schedule meetings for a particular day by setting `From` and `To` of `Me
 
 {% highlight c# %}
 
-	ObservableCollection<Meeting> ListOfMeeting = new ObservableCollection<Meeting>();
+	public ObservableCollection<Meeting> ListOfMeeting = new ObservableCollection<Meeting>();
+
+    public ViewModel()
+    {
+    ListOfMeeting = new ObservableCollection<Meeting>();
+    InitializeDataForBookings();
+    BookingAppointments();
+    }
 
 	private void BookingAppointments()
 	{
@@ -162,4 +170,22 @@ You can add `Subject` and `Color` to the appointments created by creating a coll
 
 {% endhighlight %}
 
+You can set random time for the appointments in schedule.
+
+{% highlight c# %}
+
+    private List<Point> GettingTimeRanges()
+    {
+        List<Point> randomTimeCollection = new List<Point>();
+        randomTimeCollection.Add(new Point(9, 11));
+        randomTimeCollection.Add(new Point(12, 14));
+        randomTimeCollection.Add(new Point(15, 17));
+
+        return randomTimeCollection;
+    }
+
+{% endhighlight %}
+
 ![](GettingStarted_images/GettingStarted.png)
+
+You can find the complete getting started sample from this link [ScheduleGettingStarted](http://files2.syncfusion.com/dtsupport/directtrac/general/ze/ScheduleGettingStarted220511696.zip)

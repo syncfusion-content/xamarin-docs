@@ -23,6 +23,7 @@ N> By default, the property value is false.
 
 {% highlight C# %}
 
+    SfRotator rotator = new SfRotator();
 	rotator.IsTextVisible = true;
 
 {% endhighlight %}

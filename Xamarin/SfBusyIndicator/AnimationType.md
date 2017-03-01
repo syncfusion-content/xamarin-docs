@@ -112,9 +112,9 @@ Busy Indicator with Box type animation
 Busy Indicator with Gear type animation 
 {:.caption}
 
-![](images/movietimer.png) 
+![](images/timer.png) 
 
-Busy Indicator with movieTimer type animation 
+Busy Indicator with MovieTimer type animation 
 {:.caption}
 
 ![](images/zoomingtarget.png) 

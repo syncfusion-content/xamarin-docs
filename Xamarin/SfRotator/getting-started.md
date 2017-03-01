@@ -33,7 +33,13 @@ To launch SfRotator in iOS, need to create an instance of SfRotatorRenderer in F
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {
-    new SfRotatorRenderer ();
+	global::Xamarin.Forms.Forms.Init();
+
+	new SfRotatorRenderer();
+
+	LoadApplication(new App());
+
+	return base.FinishedLaunching(app, options);
 }	
 
 {% endhighlight %}
@@ -56,7 +62,7 @@ The SfRotator control is configured entirely in C# code or by using XAML markup.
 
 {% highlight xaml %}
 
-	<xmlns:rotator="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms"/>
+	xmlns:rotator="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms"
 	
 {% endhighlight %}
 
@@ -69,13 +75,16 @@ The SfRotator control is configured entirely in C# code or by using XAML markup.
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:GettingStarted" 
-		xmlns:syncfusion="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms"
-		x:Class="GettingStarted.CarouselControlPage">
-  <ContentPage.Content>
-     <syncfusion:SfRotator x:Name="rotator" />	
-	</ContentPage.Content>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:local="clr-namespace:GettingStarted" 
+	xmlns:syncfusion="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms"
+	x:Class="GettingStarted.CarouselControlPage">
+<ContentPage.Content>
+ <syncfusion:SfRotator x:Name="rotator" />	
+</ContentPage.Content>
 </ContentPage>
+	
 	
 {% endhighlight %}
 
@@ -112,7 +121,7 @@ We can populate the rotator's items by using any one of the following ways,
 
 * Through ItemTemplate
 
-## Through SfRotatorItem
+### Through SfRotatorItem
 
 By passing the list of `SfRotatorItem` , we can get the view of SfRotator control. In that we can pass Images as well as Item content.
 
@@ -122,26 +131,26 @@ The following code example illustrates to add list of Images in Carousel ,
 
 {% highlight C# %}
 
-	public partial class CarouselControlPage : ContentPage
+public partial class CarouselControlPage : ContentPage
+{
+	public CarouselControlPage()
 	{
-		public CarouselControlPage()
-		{
-			InitializeComponent();
+		InitializeComponent();
 
-			SfRotator rotator = new SfRotator();
+		SfRotator rotator = new SfRotator();
 
-			List<SfRotatorItem> collectionOfItems = new List<SfRotatorItem>();
-			collectionOfItems.Add(new SfRotatorItem() { Image = "movie1.png" });
-			collectionOfItems.Add(new SfRotatorItem() { Image = "movie2.png" });
-			collectionOfItems.Add(new SfRotatorItem() { Image = "movie3.png" });
-			collectionOfItems.Add(new SfRotatorItem() { Image = "movie4.png" });
-			collectionOfItems.Add(new SfRotatorItem() { Image = "movie5.png" });
+		List<SfRotatorItem> collectionOfItems = new List<SfRotatorItem>();
+		collectionOfItems.Add(new SfRotatorItem() { Image = "movie1.png" });
+		collectionOfItems.Add(new SfRotatorItem() { Image = "movie2.png" });
+		collectionOfItems.Add(new SfRotatorItem() { Image = "movie3.png" });
+		collectionOfItems.Add(new SfRotatorItem() { Image = "movie4.png" });
+		collectionOfItems.Add(new SfRotatorItem() { Image = "movie5.png" });
 
-			rotator.DataSource = collectionOfItems;
-			this.Content = rotator;
+		rotator.DataSource = collectionOfItems;
+		this.Content = rotator;
 
-		}
 	}
+}
 
 
 {% endhighlight %}
@@ -154,20 +163,20 @@ The following code example illustrates to add list of Item in Carousel ,
 
 {% highlight C# %}
 
-	public partial class CarouselControlPage : ContentPage
+public partial class CarouselControlPage : ContentPage
 {
 	public CarouselControlPage()
 	{
 		InitializeComponent();
 
-	    SfRotator rotator = new SfRotator();			
+		SfRotator rotator = new SfRotator();
 		List<SfRotatorItem> collectionOfItems = new List<SfRotatorItem>();
 		collectionOfItems.Add(new SfRotatorItem() { ItemContent = new Button() { Text = "ItemContent1", TextColor = Color.White, BackgroundColor = Color.FromHex("#7E6E6B"), FontSize = 12 } });
 		collectionOfItems.Add(new SfRotatorItem() { ItemContent = new Label() { Text = "ItemContent2", BackgroundColor = Color.FromHex("#7E6E6B"), FontSize = 12 } });
 		collectionOfItems.Add(new SfRotatorItem() { ItemContent = new Image() { Source = "image1.png", Aspect = Aspect.AspectFit } });
 
-	    rotator.DataSource = collectionOfItems;
-	    this.Content = rotator;
+		rotator.DataSource = collectionOfItems;
+		this.Content = rotator;
 
 	}
 }
@@ -176,9 +185,9 @@ The following code example illustrates to add list of Item in Carousel ,
 
 {% endtabs %}
 
-## Through ItemTemplate
+### Through ItemTemplate
 
-SfRotator items can be populated with a collection of image data. This collection includes Arrays, Lists and DataTables. For example you may wants to create a Rotator model with Image as follows.
+ItemTemplate property of SfRotator control is used to customize the contents of SfRotator items.ItemTemplate provides common template with different data.SfRotator items can be populated with a collection of image data. This collection includes Arrays, Lists and DataTables. For example you may wants to create a Rotator model with Image as follows.
 
 {% tabs %}
 
@@ -199,6 +208,7 @@ public String Image
 {% endhighlight %}
 
 {% endtabs %}
+
 
 Create and populate Rotator collection as follows
 
@@ -226,54 +236,53 @@ public List<RotatorModel> ImageCollection
 
 {% endtabs %}
 
-ItemTemplate property of SfRotator control is used to customize the contents of SfRotator items.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <syncfusion:SfRotator x:Name="rotator"  Grid.Row="0" NavigationDelay="2000" ItemsSource="{Binding ImageCollection}" SelectedIndex="2" NavigationDirection="Horizontal" NavigationStripMode="Dots" BackgroundColor="#ececec" NavigationStripPosition="Bottom">
-    <syncfusion:SfRotator.ItemTemplate>
-      <DataTemplate>
-        <Image  Source="{Binding Image}"/>                   
-      </DataTemplate>
-    </syncfusion:SfRotator.ItemTemplate>
+<syncfusion:SfRotator.ItemTemplate>
+  <DataTemplate>
+    <Image  Source="{Binding Image}"/>                   
+  </DataTemplate>
+</syncfusion:SfRotator.ItemTemplate>
 </syncfusion:SfRotator>
 	  
 {% endhighlight %}
 
 {% highlight c# %}
 
-public partial class CarouselControlPage : ContentPage
-    {
-        public CarouselControlPage()
-        {
-            InitializeComponent();
+public partial class CarouselControlPage : ContentPage
+{
+public CarouselControlPage()
+{
+	InitializeComponent();
 
-            SfRotator rotator = new SfRotator();
+	SfRotator rotator = new SfRotator();
 
-             var ImageCollection = new List<RotatorModel> {
-	  			new RotatorModel ("image1.png"),
-				new RotatorModel ("image2.png"),
-				new RotatorModel ("image3.png"),
-				new RotatorModel ("image4.png"),
-				new RotatorModel ("image5.png")
-			};
-			var itemTemplate = new DataTemplate(() =>
-			{
-				var grid = new Grid();
-				var nameLabel = new Image();
-				nameLabel.SetBinding(Image.SourceProperty, "Image");
-				grid.Children.Add(nameLabel);
-				return grid;
-			});
+	var ImageCollection = new List<RotatorModel> {
+  			new RotatorModel ("image1.png"),
+			new RotatorModel ("image2.png"),
+			new RotatorModel ("image3.png"),
+			new RotatorModel ("image4.png"),
+			new RotatorModel ("image5.png")
+		};
+	var itemTemplate = new DataTemplate(() =>
+	{
+		var grid = new Grid();
+		var nameLabel = new Image();
+		nameLabel.SetBinding(Image.SourceProperty, "Image");
+		grid.Children.Add(nameLabel);
+		return grid;
+	});
 
-			rotator.ItemTemplate = itemTemplate;
-			rotator.ItemSource = ImageCollection;
+	rotator.ItemTemplate = itemTemplate;
+	rotator.ItemSource = ImageCollection;
 
-            this.Content = rotator;
-        }
-    }
+	this.Content = rotator;
+}
+}
 
 {% endhighlight %}
 
@@ -291,9 +300,7 @@ public partial class CarouselControlPage : ContentPage
 
 {% endtabs %}
 
-N> Rotator's Images are placed within the application folder for Android, iOS and UWP with build action Android Resource, Bundled Resource and Content respectively. In addition, rotator provides a support 
-
-to load the Images from `URL` and `SD Card` location.
+N> Rotator's Images are placed within the application folder for Android, iOS and UWP with build action Android Resource, Bundled Resource and Content respectively. In addition, rotator provides a support to load the Images from `URL` and `SD Card` location.
  
 ## Setting Navigation Mode
 
@@ -303,6 +310,7 @@ SfRotator provides option to display the navigating items either in Thumbnail or
 
 {% highlight C# %}	
 
+SfRotator rotator = new SfRotator();
 rotator.NavigationStripMode = NavigationStripMode.Dots;
 
 {% endhighlight %}
@@ -323,6 +331,7 @@ The placement position of navigation strip items such as Thumbnail or Dots can b
 
 {% highlight C# %}	
 
+SfRotator rotator = new SfRotator();
 rotator.NavigationStripMode = NavigationStripMode.Dots;
 rotator.NavigationStripPosition = NavigationStripPosition.Bottom;
 	

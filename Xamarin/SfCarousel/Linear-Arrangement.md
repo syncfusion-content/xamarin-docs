@@ -15,12 +15,13 @@ The Carousel items can be populated in the view in a stacked linear layout by se
 
 {% highlight xaml %}
 
-	<carousel:SfCarousel x:Name="carousel"  ViewMode="Linear" />
+	<syncfusion:SfCarousel x:Name="carousel"  ViewMode="Linear" />
 	
 {% endhighlight %}
 
 {% highlight C# %}
 
+    SfCarousel carousel = new SfCarousel();
 	carousel.ViewMode = ViewMode.Linear;
 
 {% endhighlight %}

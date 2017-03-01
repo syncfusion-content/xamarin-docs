@@ -33,8 +33,14 @@ To launch SfBusyIndicator in iOS, need to create an instance of SfBusyIndicatorR
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {
-    new SfBusyIndicatorRenderer ();
-}	
+	global::Xamarin.Forms.Forms.Init();
+
+	new SfBusyIndicatorRenderer();
+
+	LoadApplication(new App());
+
+	return base.FinishedLaunching(app, options);
+}
 
 {% endhighlight %}
 
@@ -50,7 +56,7 @@ The SfBusyIndicator control is configured entirely in C# code or by using XAML m
 
 {% highlight xaml %}
 
-	<xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"/>
+	xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
 	
 {% endhighlight %}
 

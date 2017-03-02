@@ -21,25 +21,47 @@ A tick’s length, color, and thickness are set by the `Length`, `Color` and `Th
 
 The tick’s position from the rim is set using the `Offset` property.
 
+{% tabs %}
+
+{% highlight xaml %}
+  
+    <gauge:SfCircularGauge.Scales>
+      <gauge:Scale StartAngle="135" StartValue="0" EndValue="100" Interval="10" SweepAngle="270"
+                   RimThickness="20" RimColor="Gray" MinorTicksPerInterval="1">
+        
+          <gauge:Scale.MajorTickSettings>
+              <gauge:TickSettings Length="12" Color ="#2bbfb8" Thickness="3"/>
+            </gauge:Scale.MajorTickSettings>
+              
+          <gauge:Scale.MinorTickSettings>
+              <gauge:TickSettings  Length="6" Color ="#2bbfb8"  Offset="0.5" Thickness="3"/>
+           </gauge:Scale.MinorTickSettings>               
+    
+      </gauge:Scale>
+    </gauge:SfCircularGauge.Scales>
+
+{% endhighlight %}
+
 {% highlight c# %}
 
     SfCircularGauge circulargauge = new SfCircularGauge();
+    scale.MinorTicksPerInterval = 1;
     TickSettings minor = new TickSettings();
     minor.Length = 6;
-    minor.Color = Color.FromHex("#444444");
+    minor.Color = Color.FromHex("#2bbfb8");
     minor.Thickness = 3;
 	minor.Offset = 0.5;
     scale.MinorTickSettings = minor;
     TickSettings major = new TickSettings();
     major.Length = 12;
-    major.Color = Color.FromHex("#444444");
+    major.Color = Color.FromHex("#2bbfb8");
     major.Thickness = 3;
-	major.Offset = 0.5;
-    major.Offset = Device.OnPlatform(0.05, 0.1,0.3);
     scale.MajorTickSettings = major;
     circulargauge.Scales = scale;
     this.Content= circulargauge;
     
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](tick-setting_images/offset.png)

@@ -12,7 +12,7 @@ documentation: ug
 
 # GETTING STARTED 
 
-This section explains you the steps required to configure the **SfCircularGauge** and also explains the steps to add basic elements of **SfCircularGauge** through various API’s available within it.
+This section explains you the steps required to configure the `SfCircularGauge` and also explains the steps to add basic elements of `SfCircularGauge` through various API’s available within it.
 
 ## Referencing Essential Studio components in your solution
 
@@ -62,32 +62,21 @@ iOS-unified\Syncfusion.SfGauge.XForms.iOS.dll
 
 iOS-unified\Syncfusion.SfGauge.XForms.dll
 
-### Windows Phone project
+### UWP project
 
-wp81\Syncfusion.SfGauge.WP.dll
+uwp\Syncfusion.SfGauge.UWP.dll
 
-wp81\Syncfusion.SfGauge.XForms.WinPhone.dll
+uwp\Syncfusion.SfGauge.XForms.UWP.dll
 
-wp81\ Syncfusion.SfGauge.XForms.dll
+uwp\ Syncfusion.SfGauge.XForms.dll
 
-Currently an additional step is required for Windows Phone and iOS projects. We need to create an instance of the chart custom renderer as shown below.
-
-Create an instance of `SfGaugeRenderer` in MainPage constructor in of the Windows Phone project as shown.
-{% highlight c# %}
-
-    public MainPage ()
-    {
-    …
-    new SfGaugeRenderer();
-    ...
-    }
-{% endhighlight %}
+Currently an additional step is required for iOS projects. We need to create an instance of the gauge custom renderer as shown below.
 
 Create an instance of `SfGaugeRenderer` in Finished Launching overridden method of App Delegate class in iOS Project as shown below
 
 {% highlight c# %}
 
-    public override bool Finished Launching (UIApplication app, NSDictionary options)
+    public override bool FinishedLaunching (UIApplication app, NSDictionary options)
     {
     ...
     new SfGaugeRenderer();
@@ -95,20 +84,52 @@ Create an instance of `SfGaugeRenderer` in Finished Launching overridden method 
     }
 {% endhighlight %}
 
+### Adding namespace for the assemblies
+{% tabs %}
+{% highlight xaml %}
+ 
+     <xmlns:gauge="clr-namespace:Syncfusion.SfGauge.XForms;assembly=Syncfusion.SfGauge.XForms"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    using Syncfusion.SfGauge.XForms;
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ## Initializing Gauge 
 
-The SfGauge control is configured entirely in C# code. 
+Initializing the SfCircularGauge control with a required optimal name by using the included namespace.
+
+{% tabs %}
+{% highlight xaml %}
+ 
+     <gauge:SfCircularGauge x:Name="circulargauge"/> 
+
+{% endhighlight %}
 {% highlight c# %}
 
     SfCircularGauge circulargauge = new SfCircularGauge ();
     this.Content = circulargauge;
 
 {% endhighlight %}
-
+{% endtabs %}
 ## Adding Header
 
-You can assign a unique header to **SfCircularGauge** by making use of **Header** property and you can positioned it wherever you want using **Position** and **HeaderAlignment** property.
+You can assign a unique header to `SfCircularGauge` by making use of `Header` property and you can positioned it wherever you want using `Position` and `HeaderAlignment` property.
+
+{% tabs %}
+
+{% highlight xaml %}
+ 
+    <gauge:SfCircularGauge.Headers>
+      <gauge:Header Text="Speedmeter" Position="0.5,0.5" TextSize="20" ForegroundColor="Gray"/>
+    </gauge:SfCircularGauge.Headers>
+
+{% endhighlight %}
 
 {% highlight c# %}
 
@@ -122,10 +143,11 @@ You can assign a unique header to **SfCircularGauge** by making use of **Header*
     this.content = circularGauge;
     
 {% endhighlight %}
+{% endtabs %}
 
 ## Configuring Scales
 
-You can configure the **CircularScale** elements by making use of following API’s available in `SfCircularGage`.
+You can configure the `CircularScale` elements by making use of following API’s available in `SfCircularGage`.
 
 They are:
 
@@ -137,8 +159,21 @@ They are:
 * RimThickness
 * RimColor
 
+{% tabs %}
+
+{% highlight xaml %}
+
+    <gauge:SfCircularGauge.Scales>
+         <gauge:Scale NumberOfDecimalDigits="4" StartAngle="135" StartValue="0" EndValue="100" Interval="10" SweepAngle="270"
+                   RimThickness="20" RimColor="Gray" MinorTicksPerInterval="0">
+         </gauge:Scale>
+    </gauge:SfCircularGauge.Scales>
+
+{% endhighlight %}
+
 {% highlight c# %}
 
+    ObservableCollection<Scale> scales = new ObservableCollection<Scale>();
     Scale scale = new Scale();
     scale.StartValue = 0; 
     scale.EndValue = 100;
@@ -146,16 +181,29 @@ They are:
     scale.StartAngle = 135;
     scale.SweepAngle = 270;
     scale.RimThickness =  20;
-    scale.RimColor = Color.FromHex("#d14646");
+    scale.RimColor = Color.Gray;
     scale.MinorTicksPerInterval = 0;
-    circularGauge.Scales = scale;
+    scales.Add(scale);
+    circulargauge.Scales = scales;  
     this.Content= circulargauge;
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ## Adding Ranges
 
-You can add ranges to `SfCircularGauge` by creating ranges collection using **Ranges**.
+You can add ranges to `SfCircularGauge` by creating ranges collection using `Ranges`.
+
+{% tabs %}
+
+{% highlight xaml %}
+             
+    <gauge:Scale.Ranges>
+        <gauge:Range StartValue="0" EndValue="80" Thickness="10" Color="#FF777777" />
+    </gauge:Scale.Ranges>
+
+{% endhighlight %}
 
 {% highlight c# %}
 
@@ -170,16 +218,29 @@ You can add ranges to `SfCircularGauge` by creating ranges collection using **Ra
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ## Adding a Needle Pointer
 
 You can create a `NeedlePointer` and associate it with a scale to display the current value.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+     <gauge:Scale.Pointers>       
+          <gauge:NeedlePointer Value="60" KnobRadius="20" Color="Gray" 
+                 Thickness="5" KnobColor="#2bbfb8"  LengthFactor="0.8"/>         
+     </gauge:Scale.Pointers>
+
+{% endhighlight %}
 
 {% highlight c# %}
 
     NeedlePointer needlePointer = new NeedlePointer(); 
     needlePointer.Value = 60; 
-    needlePointer.Color = Color.White; 
-    needlePointer.KnobColor = Color.White;
+    needlePointer.Color = Color.Gray; 
+    needlePointer.KnobColor = Color.FromHex("#2bbfb8");
     needlePointer.Thickness = 5;
     needlePointer.KnobRadius = 20;
     needlePointer.LengthFactor= 0.8;
@@ -188,20 +249,33 @@ You can create a `NeedlePointer` and associate it with a scale to display the cu
 
 {% endhighlight %}
 
+{% endtabs %}
+
+
 ## Adding a Range Pointer
 
 A `RangePointer` provides an alternative way of indicating the current value.
 
+{% tabs %}
+
+{% highlight xaml %}
+   
+    <gauge:Scale.Pointers>
+       <gauge:RangePointer  Value="60"  Color="#2bbfb8"  Thickness="20"/>
+    </gauge:Scale.Pointers>
+
+ {% endhighlight %}
+
 {% highlight c# %}
-    
-    ... 
+       
     RangePointer rangePointer = new RangePointer();
     rangePointer.Value = 60; 
     rangePointer.Color = Color.FromHex("#2bbfb8");
     rangePointer.Thickness = 20; 
     scale.Pointers.Add(rangePointer);
-    ...
-    
- {% endhighlight %}
+    {% endhighlight %}
+       
+{% endtabs %}
+
  
 ![](getting-started_images/default.png)

@@ -17,9 +17,25 @@ A range is a visual element which begins and ends at specified values within a s
 
 `Ranges` start and end values are set by the `StartValue` and `EndValue` properties of the range. A range’s UI is customized by the `Color` and `Thickness` properties.
 
+{% tabs %}
+
+{% highlight xaml %}
+  
+    <gauge:SfCircularGauge.Scales>
+         <gauge:Scale>
+             <gauge:Scale.Ranges>
+                <gauge:Range StartValue="0" EndValue="70" Thickness="10" Color="#2bbfb8" />
+                <gauge:Range StartValue="70" EndValue="100" Thickness="10" Color="#444444" />
+             </gauge:Scale.Ranges>  
+         </gauge:Scale>
+    </gauge:SfCircularGauge.Scales>
+
+{% endhighlight %}
+
 {% highlight c# %}
 
     SfCircularGauge circulargauge = new SfCircularGauge();
+    ObservableCollection<Scale> scales = new ObservableCollection<Scale>();
     Scale scale=new Scale();
     Range range1 = new Range();
     range1.StartValue = 0; 
@@ -33,7 +49,8 @@ A range is a visual element which begins and ends at specified values within a s
     range2.Color = Color.FromHex("#444444");
     range2.Thickness = 10;
     scale.Ranges.Add(range2);
-    circularGauge.Scales = scale;
+    scales.Add(scale);
+    circularGauge.Scales = scales;
     this.Content = circulargauge;
     
 {% endhighlight %}
@@ -44,9 +61,25 @@ A range is a visual element which begins and ends at specified values within a s
 
 The range can be placed inside the scale, outside the scale, or on the scale by setting `Offset` property.
 
+{% tabs %}
+
+{% highlight xaml %}
+  
+    <gauge:SfCircularGauge.Scales>
+         <gauge:Scale>
+             <gauge:Scale.Ranges>
+                <gauge:Range StartValue="0" EndValue="70" Thickness="10" Color="#2bbfb8" Offset="0.3" />
+                <gauge:Range StartValue="70" EndValue="100" Thickness="10" Color="#444444" Offset="0.3" />
+             </gauge:Scale.Ranges>  
+         </gauge:Scale>
+    </gauge:SfCircularGauge.Scales>
+
+{% endhighlight %}
+
 {% highlight c# %}
 
     SfCircularGauge circulargauge = new SfCircularGauge();
+    ObservableCollection<Scale> scales = new ObservableCollection<Scale>();
     Scale scale=new Scale();
     Range range1 = new Range();
     range1.StartValue = 0;
@@ -62,7 +95,8 @@ The range can be placed inside the scale, outside the scale, or on the scale by 
     range2.Thickness = 10;
     range2.Offset=0.3;
     scale.Ranges.Add(range2);
-    circularGauge.Scales = scale; 
+    scales.Add(scale);
+    circularGauge.Scales = scales; 
     this.Content= circulargauge;
     
 {% endhighlight %}

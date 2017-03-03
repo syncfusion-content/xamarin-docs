@@ -132,13 +132,13 @@ this.Content=rotator;
 
 And also rotator provides a support to display only the Image data with `Image` property in SfRotatorItem class.
 
-% tabs %}
+{% tabs %}
 
 {% highlight C# %}
 
-public partial class CarouselControlPage : ContentPage
+public partial class RotatorControlPage : ContentPage
 {
-	public CarouselControlPage()
+	public RotatorControlPage()
 	{
 		InitializeComponent();
 

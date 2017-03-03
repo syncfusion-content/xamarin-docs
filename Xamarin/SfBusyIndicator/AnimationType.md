@@ -17,7 +17,7 @@ The `AnimationType` property for the SfBusyIndicator allows the user to set one 
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:GettingStarted" 
 	xmlns:syncfusion="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
-	x:Class="GettingStarted.CarouselControlPage">
+	x:Class="GettingStarted.BusyIndicatorPage">
 <ContentPage.Content>
  <syncfusion:SfBusyIndicator x:Name="busyindicator" AnimationType="Ball" Title="Loading..." BackgroundColor="Blue" TextColor="White" />	
 </ContentPage.Content>
@@ -32,9 +32,9 @@ using Xamarin.Forms;
 
 namespace GettingStarted
 {
-	public partial class CarouselControlPage : ContentPage
+	public partial class BusyIndicatorPage : ContentPage
 	{
-		public CarouselControlPage()
+		public BusyIndicatorPage()
 		{
 			InitializeComponent();
 

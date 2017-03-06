@@ -23,7 +23,7 @@ The `Header` can be used to set a unique header for the Circular Gauge. You can 
 
 This property places the header in a circular gauge. The value for `Position` should be specified in offset value. By default, it is placed at (0.5, 0.7).
 
-% tabs %}
+{% tabs %}
 
 {% highlight xaml %}
  

@@ -120,7 +120,7 @@ We can populate the carousel's items by using any one of the following ways,
 
 * Through ItemTemplate
 
-## Through SfCarouselItem
+### Through SfCarouselItem
 
 By passing the list of `SfCarouselItem` , we can get the view of SfCarousel control. In that we can pass Images as well as Item content.
 
@@ -131,8 +131,8 @@ The following code example illustrates to add list of Images in Carousel ,
 
 {% highlight C# %}
 
-	public partial class CarouselControlPage : ContentPage
-    {
+public partial class CarouselControlPage : ContentPage
+{
         public CarouselControlPage()
         {
             InitializeComponent();
@@ -151,6 +151,8 @@ The following code example illustrates to add list of Images in Carousel ,
             carousel. DataSource = collectionOfItems;
 
             this.Content =carousel;
+        }
+}	
 
 
 {% endhighlight %}
@@ -163,8 +165,8 @@ The following code example illustrates to add list of Item in Carousel ,
 
 {% highlight C# %}
 
-	public partial class CarouselControlPage : ContentPage
-    {
+public partial class CarouselControlPage : ContentPage
+{
         public CarouselControlPage()
         {
             InitializeComponent();
@@ -180,15 +182,17 @@ The following code example illustrates to add list of Item in Carousel ,
 			carousel.DataSource = collectionOfItems;
 
             this.Content =carousel;
+        }
+}	
 
 
 {% endhighlight %}
 
 {% endtabs %}
 
-## Through ItemTemplate
+### Through ItemTemplate
 
-`ItemTemplate` property of SfCarousel control is used to customize the contents of SfCarousel items and the data source collection has been bound to it.
+`ItemTemplate` property of SfCarousel control is used to customize the contents of SfCarousel items.
 
 * Create a model view which holds image data
 
@@ -197,7 +201,7 @@ The following code example illustrates to add list of Item in Carousel ,
 {% highlight C# %}
 
 public class CarouselModel
-	{
+{
 		public CarouselModel(string imagestr)
 		{
 			Image = imagestr;
@@ -209,7 +213,7 @@ public class CarouselModel
 			get { return _image; }
 			set { _image = value; }
 		}
-	}
+}
 {% endhighlight %}
 
 {% endtabs %}
@@ -312,9 +316,9 @@ public partial class CarouselControlPage : ContentPage
 
 {% endtabs %}
 
-N> Carousel's Images are placed within the application folder for Android, iOS and UWP with build action Android Resource, Bundled Resource and Content respectively. In addition, carousel provides a support 
+I> Carousel's Images are placed within the application folder for Android, iOS and UWP with build action Android Resource, Bundled Resource and Content respectively. 
 
-to load the Images from `URL` and `SD Card` location.
+N> In addition, carousel provides a support to load the Images from `URL` and `SD Card` location.
 
 ## Set Gap between Items
 
@@ -392,3 +396,5 @@ The items can be populated as described [above](#add-carousel-items)
 N> The `SelectedIndex` property will be 0 by default.
 
 ![](images/gettingstarted.png)
+
+You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted1240666182)

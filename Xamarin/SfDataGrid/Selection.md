@@ -78,6 +78,16 @@ void DataGrid_SelectionChanging (object sender, GridSelectionChangingEventAr
 }
 {% endhighlight %}
 
+The following code explains how to get the selected row in code-behind, by making use of the `SelectionChanged` event.
+
+{% highlight c# %}
+dataGrid.SelectionChanged += DataGrid_SelectionChanged;
+
+void DataGrid_SelectionChanged (object sender, GridSelectionChangedEventArgs e)
+{
+    var selectedItems = e.AddedItems;
+}
+{% endhighlight %}
 
 ## Clear Selection
 

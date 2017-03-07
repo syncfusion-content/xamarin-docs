@@ -355,3 +355,51 @@ The following screenshot shows the final outcome upon execution of the above cod
 
 ![](SfDataGrid_images/Swiping_img4.jpeg)
 
+### Swiping in GridTemplateColumn
+
+When a complex layout is loaded in the GridTemplateColumn, swiping will not occur, this is because swiping will occur only when the SfDataGrid touch event is fired. In case of loading a complex layout in the template column, touch event will be recognized by the layout in the GridTemplateColumn. Inorder to resolve this issue, the "InputTransparent" property of the layout in the GridTemplateColumn should be set "True".
+
+Refer the below code example in which the "InputTransparent" property of the layout in the GridTemplateColumn is set as "True" to resolve the swiping issue when a complex layout is loaded in the GridTemplateColumn.
+
+{% highlight xaml %}
+
+<sfgrid:GridTemplateColumn MappingName="" HeaderText="Customer Details" Width="200">
+    <sfgrid:GridTemplateColumn.CellTemplate>
+        <DataTemplate>
+            <Grid InputTransparent="True" 
+                  ColumnSpacing="0" 
+                  RowSpacing="0" 
+                  HorizontalOptions="FillAndExpand" 
+                  BackgroundColor="Black"
+                  Margin="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+			    <StackLayout InputTransparent="True"
+                           Margin="2" 
+                           BackgroundColor="White" 
+                           Orientation="Vertical" 
+                           HorizontalOptions="FillAndExpand"
+                           VerticalOptions="FillAndExpand"
+                           Grid.Column="0"
+                           Grid.ColumnSpan="3"
+                           >
+			        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" >
+                        <Label Text="Customer ID: " />
+                        <Label Text="{Binding CustomerID}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor="Black" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                        <Label Text="Country:" />
+                        <Label Text="{Binding ShipCountry}" TextColor="Black" />
+                    </StackLayout>
+			    </StackLayout>
+		    </Grid>
+        </DataTemplate>
+    </sfgrid:GridTemplateColumn.CellTemplate>
+</sfgrid:GridTemplateColumn>
+
+{% endhighlight %}
+
+![](SfDataGrid_images/SwipingInTemplateColumn.png)

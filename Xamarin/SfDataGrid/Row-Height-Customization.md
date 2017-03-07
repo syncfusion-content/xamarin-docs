@@ -66,3 +66,22 @@ void DataGrid_QueryRowHeight (object sender, QueryRowHeightEventArgs e)
 } 
 {% endhighlight %}
 
+The following code example illustrates how to hook the `SfDatagrid.QueryRowHeight` event and customize a row‘s height based on the AutoRowHeight feature in SfDataGrid.
+
+{% highlight c# %}
+//Hooks QueryRowHeight event in SfDataGrid
+dataGrid.QueryRowHeight += DataGrid_QueryRowHeight;  
+
+//Event to set the row height on demand
+void DataGrid_QueryRowHeight (object sender, QueryRowHeightEventArgs e)
+{
+    //Sets height of the row based on the content of the GridCell
+    if (e.RowIndex != 0) {
+        e.Height = dataGrid.GetRowHeight(e.RowIndex);
+        e.Handled = true;
+    }
+} 
+{% endhighlight %}
+
+![](SfDataGrid_images/AutoRowHeight_forms.png)
+

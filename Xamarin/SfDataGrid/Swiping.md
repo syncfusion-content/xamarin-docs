@@ -378,14 +378,13 @@ Refer the below code example in which the "InputTransparent" property of the lay
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
 			    <StackLayout InputTransparent="True"
-                           Margin="2" 
-                           BackgroundColor="White" 
-                           Orientation="Vertical" 
-                           HorizontalOptions="FillAndExpand"
-                           VerticalOptions="FillAndExpand"
-                           Grid.Column="0"
-                           Grid.ColumnSpan="3"
-                           >
+                             Margin="2" 
+                             BackgroundColor="White" 
+                             Orientation="Vertical" 
+                             HorizontalOptions="FillAndExpand"
+                             VerticalOptions="FillAndExpand"
+                             Grid.Column="0"
+                             Grid.ColumnSpan="3" >
 			        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" >
                         <Label Text="Customer ID: " />
                         <Label Text="{Binding CustomerID}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor="Black" />

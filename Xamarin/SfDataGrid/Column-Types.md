@@ -521,3 +521,26 @@ The following screenshot shows the different types of columns in SfDataGrid
 
 ![](SfDataGrid_images/TemplateColumns2.png)
 
+### Row Header 
+
+RowHeader is a special column which is placed as first cell of each row. To enable the RowHeader in SfDataGrid, you need to set the `SfDataGrid.ShowRowHeader` as `true`. Also, you can set the row header width using `SfDataGrid.RowHeaderWidth property`. Hence, by default SfDataGrid RowHeaderWidth is 20.
+
+The below code example illustrates how to enable the row header.
+{% tabs %}
+{% highlight xaml %}
+<sfgrid:SfDataGrid x:Name="dataGrid"
+                   ColumnSizer="Star"
+                   ShowRowHeader="True"
+                   RowHeaderWidth="50"
+                   ItemsSource="{Binding OrdersInfo}">
+</sfgrid:SfDataGrid>
+
+{% endhighlight %}
+{% highlight c# %}
+
+dataGrid.ShowRowHeader = true;
+dataGrid.RowHeaderWidth = 50;
+
+{% endhighlight %}
+{% endtabs %}
+

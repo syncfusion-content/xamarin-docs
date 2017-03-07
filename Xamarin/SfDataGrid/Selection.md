@@ -55,33 +55,6 @@ The following screenshot shows the selection functionality in SfDataGrid.
 
 ![](SfDataGrid_images/Selection.png)
 
-## Row Header Selection
-
-SfDataGrid lets you to select a specific row or group of rows either programmatically or by touch interactions. To enable Selection in SfDataGrid, you need to set the `SfDataGrid.SelectionMode` property to value other than `None`.
-
-### Select records in SfDataGrid when tapping on row header cells
-You can select the specific row or group of rows by touch the row header cells. To enable the RowHeader in SfDataGrid, you need to set the `SfDataGrid.ShowRowHeader` is `true`. Also, you can set the row header width using `SfDataGrid.RowHeaderWidth property`. Hence, by default SfDataGrid RowHeaderWidth is 20.
- 
-The below code example illustrates how to enable RowHeader.
-{% tabs %}
-{% highlight xaml %}
-
-<sfgrid:SfDataGrid x:Name="dataGrid"
-                   ColumnSizer="Star"
-                   ShowRowHeader="True"
-                   RowHeaderWidth="50"
-                   ItemsSource="{Binding OrdersInfo}">
-  </sfgrid:SfDataGrid>
-  
-{% endhighlight %}
-{% highlight c# %}
-
- dataGrid.ShowRowHeader = true;
- dataGrid.RowHeaderWidth = 50;
- 
-{% endhighlight %}
-{% endtabs %}
-
 ## Selection Events
 
 The SfDataGrid provides you the following events for Selection:
@@ -104,6 +77,36 @@ void DataGrid_SelectionChanging (object sender, GridSelectionChangingEventAr
     e.Cancel = true;
 }
 {% endhighlight %}
+
+
+## Row Header Selection
+
+SfDataGrid lets you to select the grid row(s) upon tapping them over the grid cells. It also allows you select the grid rows when you tap the row header cells. To enable Selection in SfDataGrid, you need to set the `SfDataGrid.SelectionMode` property to value other than `None`.
+
+### Select records in SfDataGrid when tapping only on the row header cells
+
+SfDataGrid allows you to select a specific row or group of rows by touching the grid cells. However, if your requirement is to select the record only when tapping on the row header cells, then you can acheive the requirement by handling the `SfDataGrid.SelectionChanging` event. 
+ 
+The below code example illustrates how to select records in SfDataGrd when tapping only on the row header cells.
+
+{% highlight c# %}
+
+private void DataGrid_SelectionChanging(object sender, GridSelectionChangingEventArgs e)
+{
+    e.Cancel = true;
+}
+
+private void DataGrid_GridTapped(object sender, GridTappedEventsArgs e)
+{
+    if(e.RowColumnindex.ColumnIndex == 0)
+    {
+        dataGrid.SelectedIndex = e.RowColumnindex.RowIndex;
+    }
+}
+ 
+{% endhighlight %}
+
+N> To enable the row header in SfDataGrid, you need to set the `SfDataGrid.ShowRowHeader` as `true`.
 
 
 ## Clear Selection

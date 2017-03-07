@@ -79,7 +79,7 @@ The SfRotator control is configured entirely in C# code or by using XAML markup.
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 	xmlns:local="clr-namespace:GettingStarted" 
 	xmlns:syncfusion="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms"
-	x:Class="GettingStarted.CarouselControlPage">
+	x:Class="GettingStarted.RotatorControlPage">
 <ContentPage.Content>
  <syncfusion:SfRotator x:Name="rotator" />	
 </ContentPage.Content>
@@ -95,9 +95,9 @@ using Xamarin.Forms;
 
 namespace GettingStarted
 {
-public partial class CarouselControlPage : ContentPage
+public partial class RotatorControlPage : ContentPage
     {
-        public CarouselControlPage()
+        public RotatorControlPage()
         {
             InitializeComponent();
 
@@ -131,9 +131,9 @@ The following code example illustrates to add list of Images in Carousel ,
 
 {% highlight C# %}
 
-public partial class CarouselControlPage : ContentPage
+public partial class RotatorControlPage : ContentPage
 {
-	public CarouselControlPage()
+	public RotatorControlPage()
 	{
 		InitializeComponent();
 
@@ -163,9 +163,9 @@ The following code example illustrates to add list of Item in Carousel ,
 
 {% highlight C# %}
 
-public partial class CarouselControlPage : ContentPage
+public partial class RotatorControlPage : ContentPage
 {
-	public CarouselControlPage()
+	public RotatorControlPage()
 	{
 		InitializeComponent();
 
@@ -253,9 +253,9 @@ public List<RotatorModel> ImageCollection
 
 {% highlight c# %}
 
-public partial class CarouselControlPage : ContentPage
+public partial class RotatorControlPage : ContentPage
 {
-public CarouselControlPage()
+public RotatorControlPage()
 {
 	InitializeComponent();
 
@@ -300,7 +300,9 @@ public CarouselControlPage()
 
 {% endtabs %}
 
-N> Rotator's Images are placed within the application folder for Android, iOS and UWP with build action Android Resource, Bundled Resource and Content respectively. In addition, rotator provides a support to load the Images from `URL` and `SD Card` location.
+I> Rotator's Images are placed within the application folder for Android, iOS and UWP with build action Android Resource, Bundled Resource and Content respectively. 
+
+N> In addition, rotator provides a support to load the Images from `URL` and `SD Card` location.
  
 ## Setting Navigation Mode
 
@@ -346,3 +348,6 @@ rotator.NavigationStripPosition = NavigationStripPosition.Bottom;
 {% endtabs %}
 
 ![](images/rotator.png)
+
+You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted1566657755)
+

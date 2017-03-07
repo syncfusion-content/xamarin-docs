@@ -423,7 +423,7 @@ public class ViewModel
 
 ## GridTemplateColumn
 
-GridTemplateColumn is derived from GridColumn, and hence it inherits all the properties of GridColumn. It allows you to extend the functionality of GridColumn with your own view by creating the `CellTemplate` of GridTemplateColumn.
+GridTemplateColumn is derived from GridColumn, and hence it inherits all the properties of GridColumn. It allows you to extend the functionality of GridColumn with your own view by creating the `CellTemplate` or `CellTemplateSelector` of GridTemplateColumn.
 
 The below table provides the list of properties in GridTemplateColumn.
 
@@ -440,7 +440,15 @@ The below table provides the list of properties in GridTemplateColumn.
 <td>Gets or sets the template that is used to display the contents of the record cells.</td>
 <td>Null</td>
 </tr>
+<tr>
+<td>CellTemplateSelector</td>
+<td>DataTemplateSelector</td>
+<td>Gets or sets the templateSelector that is used to display the contents of the record cells.</td>
+<td>Null</td>
+</tr>
 </table>
+
+## CellTemplate
 
 The following code example shows templating of GridTemplateColumn. Underlying record will be the BindingContext for the `CellTemplate`.
 
@@ -454,6 +462,53 @@ The following code example shows templating of GridTemplateColumn. Underlying re
     </syncfusion:GridTemplateColumn.CellTemplate>
 </syncfusion:GridTemplateColumn> 
 {% endhighlight %}
+
+## CellTemplateSelector
+
+The following code example shows templating of the GridTemplateColumn by using the `CellTemplateSelector` property.
+
+{% highlight xaml %}
+<ContentPage.Resources>
+    <ResourceDictionary>
+        <DataTemplate x:key = "experienced">
+            <Label Text = "{ Binding EmployeeID }" 
+                   TextColor = "Black"
+                   VerticalTextAlignment = "Center" 
+                   HorizontalTextAlignment = "Center" />
+        </DataTemplate>
+        <DataTemplate x:key = "fresher">
+            <Label Text = "{ Binding EmployeeID }" 
+                   TextColor = "Black"
+                   BackgroundColor = "Aqua" 
+                   VerticalTextAlignment = "Center" 
+                   HorizontalTextAlignment = "Center" />
+        </DataTemplate>
+    </ResourceDictionary>
+</ContentPage.Resources>
+
+<syncfusion:GridTemplateColumn MappingName="EmployeeID">
+    <syncfusion:GridTemplateColumn.CellTemplateSelector>
+        <local:EmployeeIDSelector Experienced = "{ StaticResource experienced }"
+                                  Fresher = "{ StaticResource fresher }" />
+    </syncfusion:GridTemplateColumn.CellTemplateSelector>
+</syncfusion:GridTemplateColumn> 
+{% endhighlight %}
+
+{% highlight c# %}
+// EmployeeIDSelector implementation
+public class EmployeeIDSelector : DataTemplateSelector
+{
+    public DataTemplate Experienced { get; set; }
+    public DataTemplate Fresher { get; set; }
+
+    protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
+    {
+        return ((OrderInfo)item).EmployeeID % 2 == 0 ? Experienced : Fresher;
+    }
+}
+{% endhighlight %}
+
+![](SfDataGrid_images/CellTemplateSelector.png)
 
 The following code example illustrates how template column can be used to load a stock cell inside it.
 

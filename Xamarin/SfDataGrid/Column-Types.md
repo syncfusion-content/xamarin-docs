@@ -443,7 +443,7 @@ The below table provides the list of properties in GridTemplateColumn.
 <tr>
 <td>CellTemplateSelector</td>
 <td>DataTemplateSelector</td>
-<td>Gets or sets the templateSelector that is used to display the contents of the record cells.</td>
+<td>Gets or sets the template selector that is used to display the contents of the record cells.</td>
 <td>Null</td>
 </tr>
 </table>
@@ -465,45 +465,63 @@ The following code example shows templating of GridTemplateColumn. Underlying re
 
 ## CellTemplateSelector
 
-The following code example shows templating of the GridTemplateColumn by using the `CellTemplateSelector` property.
+The following code example shows templating of the GridTemplateColumn by using the `CellTemplateSelector` property. Underlying record will be the BindingContext for the `CellTemplateSelector`.
 
 {% highlight xaml %}
 <ContentPage.Resources>
     <ResourceDictionary>
-        <DataTemplate x:key = "experienced">
-            <Label Text = "{ Binding EmployeeID }" 
-                   TextColor = "Black"
-                   VerticalTextAlignment = "Center" 
-                   HorizontalTextAlignment = "Center" />
+        <DataTemplate x:Key="low" >
+            <Label Text="{Binding Freight}"
+                   TextColor="White" 
+                   BackgroundColor="Red" 
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" />
         </DataTemplate>
-        <DataTemplate x:key = "fresher">
-            <Label Text = "{ Binding EmployeeID }" 
-                   TextColor = "Black"
-                   BackgroundColor = "Aqua" 
-                   VerticalTextAlignment = "Center" 
-                   HorizontalTextAlignment = "Center" />
+        <DataTemplate x:Key="average" >
+            <Label Text="{Binding Freight}"
+                   TextColor="Black" 
+                   BackgroundColor="Yellow" 
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" />
+        </DataTemplate>
+        <DataTemplate x:Key="high" >
+            <Label Text="{Binding Freight}" 
+                   TextColor="White" 
+                   BackgroundColor="Green" 
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" />
         </DataTemplate>
     </ResourceDictionary>
 </ContentPage.Resources>
 
-<syncfusion:GridTemplateColumn MappingName="EmployeeID">
-    <syncfusion:GridTemplateColumn.CellTemplateSelector>
-        <local:EmployeeIDSelector Experienced = "{ StaticResource experienced }"
-                                  Fresher = "{ StaticResource fresher }" />
-    </syncfusion:GridTemplateColumn.CellTemplateSelector>
-</syncfusion:GridTemplateColumn> 
+<sfgrid:GridTemplateColumn MappingName="Freight" >
+    <sfgrid:GridTemplateColumn.CellTemplateSelector>
+        <local:FreightTemplateSelector High="{StaticResource high}"
+                                       Average="{StaticResource average}"
+                                       Low="{StaticResource low}"/>
+    </sfgrid:GridTemplateColumn.CellTemplateSelector>
+</sfgrid:GridTemplateColumn>
 {% endhighlight %}
 
 {% highlight c# %}
-// EmployeeIDSelector implementation
-public class EmployeeIDSelector : DataTemplateSelector
+// FreightTemplateSelector implementation
+public class FreightTemplateSelector : DataTemplateSelector
 {
-    public DataTemplate Experienced { get; set; }
-    public DataTemplate Fresher { get; set; }
+    public DataTemplate Low { get; set; }
+
+    public DataTemplate Average { get; set; }
+
+    public DataTemplate High { get; set; }
 
     protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
     {
-        return ((OrderInfo)item).EmployeeID % 2 == 0 ? Experienced : Fresher;
+        var value = double.Parse((item as OrderInfo).Freight);
+        if (value > 750)
+            return High;
+        else if (value > 500)
+            return Average;
+        else
+            return Low;
     }
 }
 {% endhighlight %}

@@ -19,26 +19,24 @@ SfListView enables you to load a desired content using the [LeftSwipeTemplate](h
 
 {% tabs %}
 {% highlight xaml %}
-xmlns:sync="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
-...
-<sync:SfListView x:Name="listView">
-<sync:SfListView.LeftSwipeTemplate>
-   <DataTemplate x:Name="LeftSwipeTemplate">
+<syncfusion:SfListView x:Name="listView" AllowSwiping="True">
+  <syncfusion:SfListView.LeftSwipeTemplate>
+    <DataTemplate x:Name="LeftSwipeTemplate">
       <Grid>
-         <Grid BackgroundColor="#009EDA" HorizontalOptions="Fill" VerticalOptions="Fill" Grid.Column="0">
-            <Grid VerticalOptions="Center" HorizontalOptions="Center">
-              <Image Grid.Column="0"
-                     Grid.Row="0"
-                     BackgroundColor="Transparent"
-                     HeightRequest="35"
-                     WidthRequest="35"
-                     Source="Favorites.png" />
-            </Grid>
-         </Grid>
+        <Grid BackgroundColor="#009EDA" HorizontalOptions="Fill" VerticalOptions="Fill" Grid.Column="0">
+          <Grid VerticalOptions="Center" HorizontalOptions="Center">
+            <Image Grid.Column="0"
+                   Grid.Row="0"
+                   BackgroundColor="Transparent"
+                   HeightRequest="35"
+                   WidthRequest="35"
+                   Source="Favorites.png" />
+          </Grid>
+        </Grid>
       </Grid>
-   </DataTemplate>
-</sync:SfListView.LeftSwipeTemplate>
-</sync:SfListView>
+    </DataTemplate>
+  </syncfusion:SfListView.LeftSwipeTemplate>
+</syncfusion:SfListView>
 {% endhighlight %}
 {% highlight c# %}
 
@@ -83,9 +81,7 @@ The [SwipeStarted](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/
 
 {% tabs %}
 {% highlight xaml %}
-xmlns:listView="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
-...
-<listView:SfListView x:Name="listView" ItemsSource="{Binding InboxInfo}" 
+<syncfusion:SfListView x:Name="listView" ItemsSource="{Binding InboxInfo}" 
                      SwipeStarted="ListView_SwipeStarted" />
 {% endhighlight %}
 {% highlight c# %}
@@ -117,9 +113,7 @@ The [Swiping](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncf
 
 {% tabs %}
 {% highlight xaml %}
-xmlns:listView="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
-...
-<listView:SfListView x:Name="listView" ItemsSource="{Binding InboxInfo}" 
+<syncfusion:SfListView x:Name="listView" ItemsSource="{Binding InboxInfo}" 
                      Swiping="ListView_Swiping" />
 {% endhighlight %}
 {% highlight c# %}
@@ -150,9 +144,7 @@ The [SwipeEnded](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Sy
 
 {% tabs %}
 {% highlight xaml %}
-xmlns:listView="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
-...
-<listView:SfListView x:Name="listView" ItemsSource="{Binding InboxInfo}" 
+<syncfusion:SfListView x:Name="listView" ItemsSource="{Binding InboxInfo}" 
                      SwipeEnded="ListView_SwipeEnded" />
 {% endhighlight %}
 {% highlight c# %}
@@ -181,43 +173,40 @@ The following customizations should give you an idea on how to use the swiping e
 You can use the swipe templates to customize your application by loading any view in the templates and assigning custom actions to them such as deleting the data, adding the data, etc. You can also display multiple views in a template like in the following example where two views are loaded for deleting the item and setting the favorites to the item respectively.
 
 {% highlight xaml %}
-
-xmlns:sync="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
-...
-<sync:SfListView x:Name="listView">
-<sync:SfListView.LeftSwipeTemplate>
-      <DataTemplate x:Name="LeftSwipeTemplate">
-        <Grid>
-          <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-          </Grid.ColumnDefinitions>
-          <Grid BackgroundColor="#009EDA" HorizontalOptions="Fill" VerticalOptions="Fill" Grid.Column="0">
-            <Grid VerticalOptions="Center" HorizontalOptions="Center">
-              <Image Grid.Column="0"
-                     Grid.Row="0"
-                     BackgroundColor="Transparent"
-                     HeightRequest="35"
-                     WidthRequest="35"
-                     BindingContextChanged="leftImage_BindingContextChanged"
-                     Source="Favorites.png" />
-            </Grid>
-          </Grid>
-          <Grid BackgroundColor="#DC595F" HorizontalOptions="Fill" VerticalOptions="Fill" Grid.Column="1">
-            <Grid VerticalOptions="Center" HorizontalOptions="Center">
-              <Image Grid.Column="0"
-                     Grid.Row="0"
-                     HeightRequest="35"
-                     WidthRequest="35"
-                     BackgroundColor="Transparent"
-                     BindingContextChanged="rightImage_BindingContextChanged"
-                     Source="Delete.png" />
-            </Grid>
+<syncfusion:SfListView x:Name="listView">
+  <syncfusion:SfListView.LeftSwipeTemplate>
+    <DataTemplate x:Name="LeftSwipeTemplate">
+      <Grid>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid BackgroundColor="#009EDA" HorizontalOptions="Fill" VerticalOptions="Fill" Grid.Column="0">
+          <Grid VerticalOptions="Center" HorizontalOptions="Center">
+            <Image Grid.Column="0"
+                   Grid.Row="0"
+                   BackgroundColor="Transparent"
+                   HeightRequest="35"
+                   WidthRequest="35"
+                   BindingContextChanged="leftImage_BindingContextChanged"
+                   Source="Favorites.png" />
           </Grid>
         </Grid>
-      </DataTemplate>
-</sync:SfListView.LeftSwipeTemplate>
-</sync:SfListView>
+        <Grid BackgroundColor="#DC595F" HorizontalOptions="Fill" VerticalOptions="Fill" Grid.Column="1">
+          <Grid VerticalOptions="Center" HorizontalOptions="Center">
+            <Image Grid.Column="0"
+                   Grid.Row="0"
+                   HeightRequest="35"
+                   WidthRequest="35"
+                   BackgroundColor="Transparent"
+                   BindingContextChanged="rightImage_BindingContextChanged"
+                   Source="Delete.png" />
+          </Grid>
+        </Grid>
+      </Grid>
+    </DataTemplate>
+  </syncfusion:SfListView.LeftSwipeTemplate>
+</syncfusion:SfListView>
 {% endhighlight %}
 
 The following code snippet illustrates how to delete the item when `Delete` image is tapped and setting favorites to item when `Favorites` image is tapped.
@@ -282,27 +271,27 @@ private void rightImage_BindingContextChanged(object sender, EventArgs e)
 You can perform operations such as deleting an item when swiping the data from one extent to other in the view by setting the [SwipeOffset](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SwipeOffset.html) value to the view size and when [SwipeEnded](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SwipeEnded_EV.html) event is raised delete the swiping item as like below example.
 
 {% highlight xaml %}
-
-xmlns:sync="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
-...
-<sync:SfListView x:Name="listView" AllowSwiping="True" SelectionMode="None" SwipeOffset="360" SwipeThreshold="30"
-                 SwipeStarted="ListView_SwipeStarted" SwipeEnded="ListView_SwipeEnded" Swiping="ListView_Swiping">
-...
-<sync:SfListView.RightSwipeTemplate>
+<syncfusion:SfListView x:Name="listView" 
+                 AllowSwiping="True" SelectionMode="None" 
+                 SwipeOffset="360" SwipeThreshold="30"
+                 SwipeStarted="ListView_SwipeStarted" 
+                 SwipeEnded="ListView_SwipeEnded" 
+                 Swiping="ListView_Swiping">
+  <syncfusion:SfListView.RightSwipeTemplate>
     <DataTemplate x:Name="RightSwipeTemplate">
-       <Grid BackgroundColor="#DC595F" HorizontalOptions="Fill" VerticalOptions="Fill">
-         <Grid VerticalOptions="Center" HorizontalOptions="Center">
-            <Image Grid.Column="0"
-                   Grid.Row="0"
-                   HeightRequest="35"
-                   WidthRequest="35"
-                   BackgroundColor="Transparent"
-                   Source="Delete.png" />
-         </Grid>
-       </Grid>
+      <Grid BackgroundColor="#DC595F" HorizontalOptions="Fill" VerticalOptions="Fill">
+        <Grid VerticalOptions="Center" HorizontalOptions="Center">
+          <Image Grid.Column="0"
+                 Grid.Row="0"
+                 HeightRequest="35"
+                 WidthRequest="35"
+                 BackgroundColor="Transparent"
+                 Source="Delete.png" />
+        </Grid>
+      </Grid>
     </DataTemplate>
-</sync:SfListView.RightSwipeTemplate>
-</sync:SfListView>
+  </syncfusion:SfListView.RightSwipeTemplate>
+</syncfusion:SfListView>
 {% endhighlight %}
 
 {% highlight c# %}

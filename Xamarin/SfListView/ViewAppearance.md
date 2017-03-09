@@ -60,15 +60,18 @@ You can assign that custom `DataTemplateSelector` to the [ItemTemplate](https://
              x:Class="DataTemplateSelector.MainPage"
              xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
              xmlns:local="clr-namespace:DataTemplateSelector;assembly=DataTemplateSelector">
-<ContentPage.Resources>
+  <ContentPage.Resources>
     <ResourceDictionary>
-      <local:MyDataTemplateSelector x:Key="MessageTemplateSelector"></local:MyDataTemplateSelector>
+      <local:MyDataTemplateSelector x:Key="MessageTemplateSelector" />
     </ResourceDictionary>
-</ContentPage.Resources>
- <Grid>
-   <syncfusion:SfListView x:Name="ListView" ItemTemplate="{StaticResource MessageTemplateSelector}" 
-                          ItemsSource="{Binding Messages}" ItemSize="100"/>
- </Grid>
+  </ContentPage.Resources>
+  <Grid>
+    <syncfusion:SfListView x:Name="ListView"
+                           ItemTemplate="{StaticResource MessageTemplateSelector}"
+                           ItemsSource="{Binding Messages}"
+                           ItemSize="100">
+    </syncfusion:SfListView>
+  </Grid>
 </ContentPage>
 {% endhighlight %}
 {% highlight c# %}
@@ -99,7 +102,7 @@ SfListView allows you to customize the size of the items by setting the [ItemSiz
 
 {% tabs %}
 {% highlight xaml %}
-<listView:SfListView x:Name="listView" ItemSize="60" />
+<syncfusion:SfListView x:Name="listView" ItemSize="60" />
 {% endhighlight %}
 {% highlight c# %}
 listView.ItemSize = 60;
@@ -114,7 +117,7 @@ SfListView allows you to specify the spacing between each item in the list by se
 
 {% tabs %}
 {% highlight xaml %}
-<listView:SfListView x:Name="listView" ItemSpacing="5,0,0,0" />
+<syncfusion:SfListView x:Name="listView" ItemSpacing="5,0,0,0" />
 {% endhighlight %}
 {% highlight c# %}
 listView.ItemSpacing = new Thickness(5, 0, 0, 0)
@@ -127,8 +130,6 @@ SfListView allows you to layout every item in the [SfListView.ItemsSource](https
 
 {% tabs %}
 {% highlight xaml %}
-<xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
-
 <syncfusion:SfListView x:Name="listView" Orientation="Horizontal" />
 {% endhighlight %}
 {% highlight c# %}

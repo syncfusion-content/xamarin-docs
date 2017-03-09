@@ -26,16 +26,15 @@ SortDescriptor object holds following three properties:
  
 {% tabs %}
 {% highlight xaml %}
-xmlns:sync="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
-xmlns:dataSource="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable"
-...
-<sync:SfListView.DataSource>
-  <dataSource:DataSource>
-    <dataSource:DataSource.SortDescriptors>
-      <dataSource:SortDescriptor PropertyName="ContactName" Direction="Ascending"/>
-    </dataSource:DataSource.SortDescriptors>
-  </dataSource:DataSource>
-</sync:SfListView.DataSource>
+<syncfusion:SfListView x:Name="listView">
+  <syncfusion:SfListView.DataSource>
+    <data:DataSource>
+      <data:DataSource.SortDescriptors>
+        <data:SortDescriptor PropertyName="ContactName" Direction="Ascending"/>
+      </data:DataSource.SortDescriptors>
+    </dataSource:DataSource>
+  </syncfusion:SfListView.DataSource>
+</syncfusion:SfListView>
 {% endhighlight %}
 {% highlight c# %}
 listView.DataSource.SortDescriptors.Add(new SortDescriptor()
@@ -59,23 +58,23 @@ The following code example illustrates how to perform custom sorting for underly
 
 {% tabs %}
 {% highlight xaml %}
-xmlns:local="clr-namespace:Sorting;assembly=Sorting"
-xmlns:listView="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
-xmlns:sfdatasource="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable"
-...
-<ContentPage.Resources>
-  <ResourceDictionary>
-    <local:CustomComparer x:Key="Comparer" />
-  </ResourceDictionary>
-</ContentPage.Resources>
-...
-<listView:SfListView.DataSource>
-  <sfdatasource:DataSource>
-    <sfdatasource:DataSource.SortDescriptors>
-      <sfdatasource:SortDescriptor PropertyName="ContactName" Direction="Ascending" Comparer="{StaticResource Comparer}"/>
-    </sfdatasource:DataSource.SortDescriptors>
-  </sfdatasource:DataSource>
-</listView:SfListView.DataSource>
+<ContentPage>
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <local:CustomComparer x:Key="Comparer" />
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  <syncfusion:SfListView x:Name="listView"
+    <syncfusion:SfListView.DataSource>
+      <data:DataSource>
+        <data:DataSource.SortDescriptors>
+          <data:SortDescriptor PropertyName="ContactName" Direction="Ascending" 
+                               Comparer="{StaticResource Comparer}"/>
+        </data:DataSource.SortDescriptors>
+      </data:DataSource>
+    </syncfusion:SfListView.DataSource>
+  </syncfusion:SfListView>
+</ContentPage>
 {% endhighlight %}
 {% highlight c# %}
 listView.DataSource.SortDescriptors.Add(new SortDescriptor()
@@ -135,21 +134,22 @@ SfListView allows you to sort the items on tapping the header by handling [ItemT
 
 {% tabs %}
 {% highlight xaml %}
-xmlns:listView="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
-...
-<listView:SfListView x:Name="listView" ItemSize="60"
-                     ItemsSource="{Binding customerDetails}" ItemTapped="ListView_ItemTapped" IsStickyHeader="True">
-<listView:SfListView.HeaderTemplate>
-  <DataTemplate>
-    <ViewCell>
-      <ViewCell.View>
-        <StackLayout BackgroundColor="Teal">
-          <Label TextColor="White" FontSize="20" FontAttributes="Bold" Text="CustomerDetails" />
-        </StackLayout>
-      </ViewCell.View>
-    </ViewCell>
-  </DataTemplate>  
-</listView:SfListView.HeaderTemplate>
+<syncfusion:SfListView x:Name="listView" ItemSize="60"
+                       ItemsSource="{Binding customerDetails}" 
+                       ItemTapped="ListView_ItemTapped" 
+                       IsStickyHeader="True">
+  <syncfusion:SfListView.HeaderTemplate>
+    <DataTemplate>
+      <ViewCell>
+        <ViewCell.View>
+          <StackLayout BackgroundColor="Teal">
+            <Label TextColor="White" FontSize="20" FontAttributes="Bold" Text="CustomerDetails" />
+          </StackLayout>
+        </ViewCell.View>
+      </ViewCell>
+    </DataTemplate>
+  </syncfusion:SfListView.HeaderTemplate>
+</syncfusion:SfListView>
 {% endhighlight %}
 {% highlight c# %}
 listView = new SfListView();

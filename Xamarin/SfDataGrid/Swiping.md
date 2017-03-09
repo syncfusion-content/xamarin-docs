@@ -391,7 +391,7 @@ Refer the below code example in which the `InputTransparent` property of the vie
                            Grid.ColumnSpan="3"
                            Grid.Row="1"
                            >
-			    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" >
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" >
                     <Label Text="Customer ID: " />
                     <Label Text="{Binding CustomerID}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor="Black" />
                 </StackLayout>
@@ -400,7 +400,7 @@ Refer the below code example in which the `InputTransparent` property of the vie
                     <Label Text="{Binding ShipCountry}" TextColor="Black" />
                 </StackLayout>
               </StackLayout>
-		   </Grid>
+           </Grid>
         </DataTemplate>
     </sfgrid:GridTemplateColumn.CellTemplate>
 </sfgrid:GridTemplateColumn>

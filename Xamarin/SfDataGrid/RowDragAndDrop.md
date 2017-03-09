@@ -252,7 +252,7 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
         if (Math.Ceiling(e.Position.Y + (dataGrid.RowHeight)) > totalHeight && e.To == viewModel.OrdersInfo.Count)
         {
             //Will hit if the row is dropped at the last position                 
-            DisplayAlert("RowDragAndDrop info", "The RowDragView is droppped below the last row of the collection", "OK");
+            DisplayAlert("RowDragAndDrop info", "The row is dropped at the last position", "OK");
         }
     }
 }

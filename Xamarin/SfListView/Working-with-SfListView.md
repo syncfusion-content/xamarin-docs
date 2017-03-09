@@ -39,6 +39,8 @@ SfListView allows you to scroll programmatically to a row based on index by usin
 {% highlight c# %}
 
 (listView.LayoutManager as LinearLayout).ScrollToRowIndex(50);   
+// Or
+(listView.LayoutManager as GridLayout).ScrollToRowIndex(20);
 
 {% endhighlight %}
 

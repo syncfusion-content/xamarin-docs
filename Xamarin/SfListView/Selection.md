@@ -123,24 +123,21 @@ private void ListView_OnSelectionChanged(object sender, ItemSelectionChangedEven
 SfListView allows to customize the appearance of selected item/items. The following customizations should give you an idea about how to customize the appearance of selected items in SfListView. 
 
 {% highlight xaml %}
-
-xmlns:sync="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
-xmlns:local="clr-namespace:CustomSelection;assembly=CustomSelection"
-...
+<ContentPage>
   <ContentPage.Resources>
     <ResourceDictionary>
       <local:SelectionBoolToImageConverter x:Key="BoolToImageConverter"/>
     </ResourceDictionary>
   </ContentPage.Resources>
-....
-  <sync:SfListView.ItemTemplate>
-     <DataTemplate>
-....
+  <syncfusion:SfListView x:Name="listView">
+    <syncfusion:SfListView.ItemTemplate>
+      <DataTemplate>
         <Image x:Name="selectionImage" Margin="10,0,10,0"
                Source="{Binding Path=IsSelected, Converter={StaticResource BoolToImageConverter}}"/>
-        
-     </DataTemplate>
-  </sync:SfListView.ItemTemplate>
+      </DataTemplate>
+    </syncfusion:SfListView.ItemTemplate>
+  </syncfusion:SfListView>
+</ContentPage>
 {% endhighlight %}
 
 {% highlight c# %}
@@ -174,13 +171,11 @@ Now run the application to render the following output. You can download the ent
 When the background color is set for an element in [ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html), touch interaction is not passed to the SfListView's item and selection will not be performed. To overcome this problem, set the `InputTransparent` property as `true` for the element whose background color is set to perform the selection.
 
 {% highlight xaml %}
-xmlns:sync="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
-...
-<sync:SfListView>
-<sync:SfListView.ItemTemplate>
-   <DataTemplate>
+<syncfusion:SfListView>
+  <syncfusion:SfListView.ItemTemplate>
+    <DataTemplate>
       <Frame BackgroundColor="#E4E4E4" InputTransparent="True"/>
-   </DataTemplate>
-</sync:SfListView.ItemTemplate>
-</sync:SfListView>
+    </DataTemplate>
+  </syncfusion:SfListView.ItemTemplate>
+</syncfusion:SfListView>
 {% endhighlight %}

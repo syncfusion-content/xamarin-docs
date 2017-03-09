@@ -91,6 +91,8 @@ The below code example illustrates how to select records in SfDataGrd when tappi
 
 {% highlight c# %}
 
+dataGrid.SelectionMode = SelectionMode.Single;
+
 private void DataGrid_SelectionChanging(object sender, GridSelectionChangingEventArgs e)
 {
     e.Cancel = true;
@@ -107,7 +109,6 @@ private void DataGrid_GridTapped(object sender, GridTappedEventsArgs e)
 {% endhighlight %}
 
 N> To enable the row header in SfDataGrid, you need to set the `SfDataGrid.ShowRowHeader` as `true`.
-
 
 ## Clear Selection
 

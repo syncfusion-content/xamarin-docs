@@ -21,7 +21,7 @@ A needle pointer contains two parts, the needle and the knob that can be placed 
 
 `NeedlePointer` appearance can be customized by using the Type property the default value of this property is `Bar`.
 
-% tabs %}
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -120,7 +120,6 @@ The `RangePointer` in the scale can be placed inside the scale or outside the sc
         </gauge:Scale.Pointers>
      </gauge:Scale>
     </gauge:SfCircularGauge.Scales>
-</linear:LinearScale>
 
 {% endhighlight %}
 

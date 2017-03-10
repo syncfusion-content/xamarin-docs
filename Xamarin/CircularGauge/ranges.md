@@ -55,6 +55,8 @@ A range is a visual element which begins and ends at specified values within a s
     
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](ranges_images/range-customization/range-customization.png)
 
 ## Range Offset
@@ -100,5 +102,7 @@ The range can be placed inside the scale, outside the scale, or on the scale by 
     this.Content= circulargauge;
     
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](ranges_images/range-offset/range-offset.png)

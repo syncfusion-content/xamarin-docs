@@ -238,7 +238,7 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 
 ## Drop a grid row in the last position
 
-The `To` property of the `QueryRowDraggingEventArgs` denotes the current drop position of the dragged row, it returns the same index when you drop a row at last position or last but one. In order to track the row programmatically whether it is dropped at the last position, SfDataGrid provides the `Position` property which denotes the position of the RowDragView.
+The `To` property of the `QueryRowDraggingEventArgs` denotes the current drop index of the dragged row, it returns the same index when you drop a row at last position or last but one. In order to track the row programmatically whether it is dropped at the last position, SfDataGrid provides the `Position` property which denotes the position of the RowDragView.
 
 Refer the following code example in which the `Position` property is used to determine whether the row is dropped in the last position.
 

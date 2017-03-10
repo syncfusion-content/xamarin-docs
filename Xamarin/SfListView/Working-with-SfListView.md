@@ -14,7 +14,7 @@ Because, the StackLayout positions the child element one after the other, either
 
 {% highlight xaml %}
 <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-    <sync:SfListView x:Name="listView" ItemsSource="{Binding BookInfo}" /> 
+  <syncfusion:SfListView x:Name="listView" ItemsSource="{Binding BookInfo}" />
 </StackLayout>
 {% endhighlight %}
 
@@ -25,8 +25,8 @@ When the SfListView is loaded inside a ScrollView or any layout such as Grid, St
 {% highlight xaml %}
 <StackLayout>
   <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-    <sync:SfListView x:Name="listView" ItemsSource="{Binding BookInfo}" /> 
-  </ScrollView> 
+    <syncfusion:SfListView x:Name="listView" ItemsSource="{Binding BookInfo}" />
+  </ScrollView>
 </StackLayout>
 {% endhighlight %}
 
@@ -34,11 +34,13 @@ When the SfListView is loaded inside a ScrollView or any layout such as Grid, St
 
 ### Scroll to Row Index
 
-SfListView allows you to scroll programmatically to a row based on index by using [ScrollToRowIndex](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LinearLayout~ScrollToRowIndex.html) method.
+SfListView allows you to scroll programmatically to a row based on index by using [ScrollToRowIndex](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LinearLayout~ScrollToRowIndex.html) method of linear layout or grid layout.
 
 {% highlight c# %}
 
 (listView.LayoutManager as LinearLayout).ScrollToRowIndex(50);   
+// Or
+(listView.LayoutManager as GridLayout).ScrollToRowIndex(20);
 
 {% endhighlight %}
 

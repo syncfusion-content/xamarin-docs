@@ -19,20 +19,21 @@ The following example illustrates how to set the `HeaderTemplate` in SfListView.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfListView x:Name="listView"
-                 ItemsSource="{Binding InboxInfo}"
-                 ItemSize="100">
-  <syncfusion:SfListView.HeaderTemplate>
-    <DataTemplate>
-      <Grid BackgroundColor="#4CA1FE" HeightRequest="45">
-        <Label LineBreakMode="NoWrap"
-               Margin="10,0,0,0" Text="Inbox" FontAttributes="Bold"
-               FontSize="18" TextColor="White" HorizontalOptions="Center"
-               VerticalOptions="Center"/>
-      </Grid>
-    </DataTemplate>
-  </syncfusion:SfListView.HeaderTemplate>
-</syncfusion:SfListView>
+<xmlns:sync="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+
+  <sync:SfListView x:Name="listView" 
+                   ItemsSource="{Binding InboxInfo}"
+                   ItemSize="100">
+    <sync:SfListView.HeaderTemplate>
+     <DataTemplate>
+        <Grid BackgroundColor="#4CA1FE" HeightRequest="45">
+          <Label LineBreakMode="NoWrap"
+                 Margin="10,0,0,0" Text="Inbox" FontAttributes="Bold"
+                 FontSize="18" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
+        </Grid>
+      </DataTemplate>
+    </sync:SfListView.HeaderTemplate>
+  </sync:SfListView>
 {% endhighlight %}
 {% highlight c# %}
 viewModel = new ViewModel ();
@@ -65,7 +66,7 @@ The following code example illustrates how to customize the header and footer si
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfListView x:Name="listView" HeaderSize="70" FooterSize="60" />
+<listView:SfListView x:Name="listView" HeaderSize="70" FooterSize="60" />
 {% endhighlight %}
 {% highlight c# %}
 listView.HeaderSize = 70;
@@ -81,7 +82,7 @@ N> For Vertical orientation, the header and footer size is considered as height 
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfListView x:Name="listView" IsStickyHeader="True" 
+<listView:SfListView x:Name="listView" IsStickyHeader="True" 
                      IsStickyFooter="True" />          
 {% endhighlight %}
 {% highlight c# %}

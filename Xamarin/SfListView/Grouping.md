@@ -24,15 +24,13 @@ The following code example illustrates how to apply grouping to the data in SfLi
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfListView x:Name="listView">
-  <syncfusion:SfListView.DataSource>
-    <data:DataSource>
-      <data:DataSource.GroupDescriptors>
-        <data:GroupDescriptor PropertyName="ContactName" />
-      </data:DataSource.GroupDescriptors>
-    </data:DataSource>
-  </syncfusion:SfListView.DataSource>
-</syncfusion:SfListView>
+<listView:SfListView.DataSource>
+  <dataSource:DataSource>
+    <dataSource:DataSource.GroupDescriptors>
+      <dataSource:GroupDescriptor PropertyName="ContactName" />
+    </dataSource:DataSource.GroupDescriptors>
+  </dataSource:DataSource>
+</listView:SfListView.DataSource>
 {% endhighlight %}
 {% highlight c# %}
 listView.DataSource.GroupDescriptors.Add(new GroupDescriptor()
@@ -50,24 +48,22 @@ The following code illustrates how to create the custom view for group header it
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfListView x:Name="listView">
-  <syncfusion:SfListView.GroupHeaderTemplate>
-    <DataTemplate>
-      <ViewCell>
-        <ViewCell.View>
-          <StackLayout BackgroundColor="#E4E4E4">
-            <Label Text="{Binding Key}"
-                   FontSize="22"
-                   FontAttributes="Bold"
-                   VerticalOptions="Center"
-                   HorizontalOptions="Start"
-                   Margin="20,0,0,0" />
-          </StackLayout>
-        </ViewCell.View>
-      </ViewCell>
-    </DataTemplate>
-  </syncfusion:SfListView.GroupHeaderTemplate>
-</syncfusion:SfListView>
+<listView:SfListView.GroupHeaderTemplate>
+  <DataTemplate>
+    <ViewCell>
+      <ViewCell.View>
+        <StackLayout BackgroundColor="#E4E4E4">
+          <Label Text="{Binding Key}" 
+                 FontSize="22" 
+                 FontAttributes="Bold"
+                 VerticalOptions="Center" 
+                 HorizontalOptions="Start" 
+                 Margin="20,0,0,0" />
+        </StackLayout>
+      </ViewCell.View>
+    </ViewCell>
+  </DataTemplate>
+</listView:SfListView.GroupHeaderTemplate>
 {% endhighlight %}
 {% highlight c# %}
 listView.GroupHeaderTemplate = new DataTemplate(() =>
@@ -96,7 +92,7 @@ The following code example illustrates how to customize the group header size in
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfListView x:Name="listView" GroupHeaderSize="60" />
+<listView:SfListView x:Name="listView" GroupHeaderSize="60" />
 {% endhighlight %}
 {% highlight c# %}
 listView.GroupHeaderSize = 60;
@@ -166,7 +162,7 @@ By default, the groups will be in expanded state in SfListView. You can expand o
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfListView x:Name="listView" ItemSize="70" AllowGroupExpandCollapse="True" 
+<listView:SfListView x:Name="listView" ItemSize="70" AllowGroupExpandCollapse="True" 
                      ItemsSource="{Binding contactsinfo}" />          
 {% endhighlight %}
 {% highlight c# %}
@@ -213,7 +209,7 @@ N> When the `IsStickyGroupHeader` is set as `true`, [IsStickyHeader](https://hel
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfListView x:Name="listView" ItemSize="70" IsStickyGroupHeader="True" 
+<listView:SfListView x:Name="listView" ItemSize="70" IsStickyGroupHeader="True" 
                      ItemsSource="{Binding contactsinfo}" />          
 {% endhighlight %}
 {% highlight c# %}
@@ -237,7 +233,7 @@ You can cancel the group expansion by setting `GroupExpandCollapseChangingEventA
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfListView x:Name="listView" ItemsSource="{Binding contactsinfo}" 
+<listView:SfListView x:Name="listView" ItemsSource="{Binding contactsinfo}" 
                      GroupExpanding="ListView_GroupExpanding" />
 {% endhighlight %}
 {% highlight c# %}
@@ -277,7 +273,7 @@ You can cancel the group is being collapsed by using `GroupExpandCollapseChangin
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfListView x:Name="listView" ItemsSource="{Binding contactsinfo}" 
+<listView:SfListView x:Name="listView" ItemsSource="{Binding contactsinfo}" 
                      GroupCollapsing="ListView_GroupCollapsing" />
 {% endhighlight %}
 {% highlight c# %}

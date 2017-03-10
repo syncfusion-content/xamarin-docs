@@ -393,7 +393,7 @@ Refer the below code example in which the `InputTransparent` property of the vie
                            >
                 <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" >
                     <Label Text="Customer ID: " />
-                    <Label Text="{Binding CustomerID}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor="Black" />
+                    <Label Text="{Binding CustomerID}"  TextColor="Black" />
                 </StackLayout>
                 <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                     <Label Text="Country:" />

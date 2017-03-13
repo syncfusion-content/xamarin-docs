@@ -78,6 +78,17 @@ void DataGrid_SelectionChanging (object sender, GridSelectionChangingEventAr
 }
 {% endhighlight %}
 
+The following code explains how to get the selected item in code-behind using the `SelectionChanged` event.
+
+{% highlight c# %}
+dataGrid.SelectionChanged += DataGrid_SelectionChanged;
+
+private void DataGrid_SelectionChanged (object sender, GridSelectionChangedEventArgs e)
+{
+    // Gets the first selected item from the list that contains the items that were selected.
+    var selectedItem = e.AddedItems[0];
+}
+{% endhighlight %}
 
 ## Clear Selection
 

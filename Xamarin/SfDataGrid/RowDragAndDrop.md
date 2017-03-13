@@ -238,7 +238,7 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 
 ## Drop a grid row in the last position
 
-The `To` property of the `QueryRowDraggingEventArgs` denotes the current drop index of the dragged row, it returns the same index when you drop a row at last position or last but one. In order to track the row programmatically whether it is dropped at the last position, SfDataGrid provides the `Position` property which denotes the position of the RowDragView.
+The `To` property of the `QueryRowDraggingEventArgs` denotes the current drop index of the dragged row when dragging over the grid rows. It returns the same index when you drag a row over the rows in last position or last but one. In order to programmatically track whether the dragged row is dropped at the last position or last but one, SfDataGrid provides the `Position` property in `QueryRowDraggingEventArgs` which denotes the position of the RowDragView.
 
 Refer the following code example in which the `Position` property is used to determine whether the row is dropped in the last position.
 
@@ -246,7 +246,7 @@ Refer the following code example in which the `Position` property is used to det
 
 private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 {
-    var totalHeight = dataGrid.RowColumnIndexToPoint(new RowColumnIndex(viewModel.OrdersInfo.Count,0)).Y + this.dataGrid.RowHeight;
+    var totalHeight = dataGrid.RowColumnIndexToPoint(new RowColumnIndex(viewModel.OrdersInfo.Count, 0)).Y + this.dataGrid.RowHeight;
     if (e.Reason == QueryRowDraggingReason.DragEnded)
     {
         if (Math.Ceiling(e.Position.Y + (dataGrid.RowHeight)) > totalHeight && e.To == viewModel.OrdersInfo.Count)

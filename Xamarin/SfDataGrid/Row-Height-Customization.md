@@ -70,17 +70,17 @@ void DataGrid_QueryRowHeight (object sender, QueryRowHeightEventArgs e)
 
 SfDataGrid provides support for AutoRowHeight feature by which you can customize the row's height based on the content. This can be achieved by using the `SfDatagrid.QueryRowHeight` event and `SfDatagrid.GetRowHeight` method. `SfDatagrid.QueryRowHeight` event returns the row height on demand and `SfDatagrid.GetRowHeight` method returns the height of the row based on the content.
 
-The following code example illustrates how to hook the `SfDatagrid.QueryRowHeight` event and customize a row‘s height based on the AutoRowHeight feature in SfDataGrid.
+The following code example illustrates how to hook the `SfDatagrid.QueryRowHeight` event and auto fit a row's height based on the content in SfDataGrid.
 
 {% highlight c# %}
-//Hooks QueryRowHeight event in SfDataGrid
-dataGrid.QueryRowHeight += DataGrid_QueryRowHeight;  
+//Hooks QueryRowHeight event in SfDataGrid to set the row height on demand
+dataGrid.QueryRowHeight += DataGrid_QueryRowHeight;
 
-//Event to set the row height on demand
 private void DataGrid_QueryRowHeight (object sender, QueryRowHeightEventArgs e)
 {
-    if (e.RowIndex != 0) {
-        //Sets height of the row based on the content 
+    if (e.RowIndex != 0) 
+    {
+        //Calculates and sets the height of the row based on its content.
         e.Height = dataGrid.GetRowHeight(e.RowIndex);
         e.Handled = true;
     }

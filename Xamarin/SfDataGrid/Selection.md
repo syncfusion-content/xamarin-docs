@@ -86,7 +86,7 @@ dataGrid.SelectionChanged += DataGrid_SelectionChanged;
 private void DataGrid_SelectionChanged (object sender, GridSelectionChangedEventArgs e)
 {
     // Gets the selected item 
-    var selectedItem = e.AddedItems;
+    var selectedItem = e.AddedItems[0];
 }
 {% endhighlight %}
 

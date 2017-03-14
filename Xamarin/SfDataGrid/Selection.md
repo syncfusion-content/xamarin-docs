@@ -85,7 +85,7 @@ dataGrid.SelectionChanged += DataGrid_SelectionChanged;
 
 private void DataGrid_SelectionChanged (object sender, GridSelectionChangedEventArgs e)
 {
-    // Gets the first selected item from the list that contains the items that were selected.
+    // Gets the selected item 
     var selectedItem = e.AddedItems[0];
 }
 {% endhighlight %}

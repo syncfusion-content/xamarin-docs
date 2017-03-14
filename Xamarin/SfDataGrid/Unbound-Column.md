@@ -244,3 +244,21 @@ GridUnboundColumn DiscountColumn = new GridUnboundColumn()
 this.dataGrid.Columns.Add(DiscountColumn);
 {% endhighlight %}
 {% endtabs %}
+
+### Using QueryUnboundColumnValue event
+
+You can populate data for the Unbound column by handling `DataGrid_QueryUnboundColumnValue` event, which allows you to customize the value of the `GridUnboundColumn`. `GridUnboundColumnEventsArgs` exposes `Value` property by which you can get or set the value of the unbound column.
+
+Refer the below code example in which data for the unbound column is populated by handling the `DataGrid_QueryUnboundColumnValue` event.
+
+{% highlight c# %}
+dataGrid.QueryUnboundColumnValue += DataGrid_QueryUnboundColumnValue;
+
+private void DataGrid_QueryUnboundColumnValue(object sender, GridUnboundColumnEventsArgs e)
+{
+    var quantity = Convert.ToInt16(e.Record.GetType().GetProperty("Quantity").GetValue(e.Record));
+    var unitPrice = Convert.ToInt16(e.Record.GetType().GetProperty("UnitPrice").GetValue(e.Record));
+    var amount = quantity * unitPrice;
+    e.Value = amount;
+}
+{% endhighlight %}

@@ -90,6 +90,38 @@ private void DataGrid_SelectionChanged (object sender, GridSelectionChangedEvent
 }
 {% endhighlight %}
 
+## Row Header Selection
+
+SfDataGrid lets you to select the grid row(s) upon tapping them over the grid cells. It also allows you select the grid rows when you tap the row header cells. To enable Selection in SfDataGrid, you need to set the `SfDataGrid.SelectionMode` property to value other than `None`.
+
+### Select records in SfDataGrid when tapping only on the row header cells
+
+SfDataGrid allows you to select a specific row or group of rows by touching the grid cells. However, if your requirement is to select the record only when tapping on the row header cells, then you can acheive the requirement by handling the `SfDataGrid.SelectionChanging` event. 
+ 
+The below code example illustrates how to select records in SfDataGrd when tapping only on the row header cells.
+
+{% highlight c# %}
+
+dataGrid.SelectionMode = SelectionMode.Single;
+
+private void DataGrid_SelectionChanging(object sender, GridSelectionChangingEventArgs e)
+{
+    e.Cancel = true;
+}
+
+private void DataGrid_GridTapped(object sender, GridTappedEventsArgs e)
+{
+    if(e.RowColumnindex.ColumnIndex == 0)
+    {
+        dataGrid.SelectedIndex = e.RowColumnindex.RowIndex;
+    }
+}
+ 
+{% endhighlight %}
+
+N> To enable the row header in SfDataGrid, you need to set the `SfDataGrid.ShowRowHeader` as `true`.
+
+
 ## Clear Selection
 
 SfDataGrid allows you to clear the selection applied in the grid rows in two ways, either by setting the `SfDataGrid.SelectionMode` to `None` or by calling the [SfDataGrid.SelectionController.ClearSelection ()](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSelectionController~ClearSelection.html) method.

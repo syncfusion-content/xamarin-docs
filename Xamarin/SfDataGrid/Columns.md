@@ -21,7 +21,7 @@ The SfDatagrid creates columns automatically based on the property [SfDataGrid.A
 
 `SfDataGrid.AutoGenerateColumnsMode` decides a way to create columns when `SfDataGrid.AutoGenerateColumns` is set to `true`. It also decides whether to retain the grouping and sorting when ItemsSource is changed. 
 
-The `SfDataGrid.AutoGenerateColumnsMode` is of type [AutoGenerateColumnsMode] (http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoGenerateColumnsMode.html) which has the following five options.
+The `SfDataGrid.AutoGenerateColumnsMode` is of type [AutoGenerateColumnsMode](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoGenerateColumnsMode.html) which has the following five options.
 
 * None: Stores only the columns that are defined in [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~Columns.html) collection. When changing the ItemsSource, the grouping and sorting for explicitly defined `SfDataGrid.Columns` alone will be retained.
 * Reset: Retains the columns defined explicitly in the application level and creates columns newly for all the other properties in a data source. When changing the ItemsSource, the grouping and sorting for explicitly defined `SfDataGrid.Columns` alone will be retained.

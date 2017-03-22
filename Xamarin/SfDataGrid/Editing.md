@@ -83,6 +83,8 @@ this.dataGrid.EditorSelectionBehavior = EditorSelectionBehavior.MoveLast;
 {% endhighlight %}
 {% endtabs %}
 
+N> Editing support for GridTemplateColumn and GridUnboundColumn are not provided yet.
+
 ## Editing Events
 SfDataGrid triggers the following events while editing.
 

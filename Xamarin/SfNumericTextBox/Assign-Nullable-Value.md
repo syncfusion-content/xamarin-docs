@@ -16,19 +16,21 @@ N> By default, the property value is false.
 
 {% highlight xaml %}
 
-	<numeric:SfNumericTextBox x:Name="numericTextBox" AllowNull="true" />
+	<syncfusion:SfNumericTextBox x:Name="numericTextBox" AllowNull="true" />
 	
 {% endhighlight %}
 
 {% highlight c# %}
 
+    SfNumericTextBox numericTextBox=new SfNumericTextBox();
 	numericTextBox.AllowNull=true;
+	this.Content = numericTextBox;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/AllowNull.png)
+![](images/allownull.png)
 
 ## Set Hint Text
 
@@ -38,20 +40,21 @@ The `WaterMark` property can be used to provide a hint that helps the user to ge
 
 {% highlight xaml %}
 
-	<numeric:SfNumericTextBox x:Name="numericTextBox" Watermark="Principal Amount" />
+	<syncfusion:SfNumericTextBox x:Name="numericTextBox" AllowNull = "true"  Watermark="Getting Started" />
 	
 {% endhighlight %}
 
 {% highlight c# %}
 
-	numericTextBox.Watermark = "Principal Amount";
+    SfNumericTextBox  numericTextBox=new SfNumericTextBox();
+	numericTextBox.Watermark = "Getting Started";
+	numericTextBox.AllowNull = true;
+	this.Content=numericTextBox;
 	
 {% endhighlight %}
 
-
 {% endtabs %}
 
+![](images/gettingstarted1.png)
 
-![](images/WaterMark.png)
-
-
+For customizing the color of NumericTextBox's Watermark [refer](https://help.syncfusion.com/xamarin/sfnumerictextbox/colors)

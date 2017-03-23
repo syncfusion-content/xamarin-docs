@@ -13,7 +13,7 @@ The Essential Xamarin.Forms NumericTextBox is an advanced version of the Entry c
 
 Also provides, a gesture friendly UI culture and can be configured to display different formats like currency format, scientific format etc.
 
-![](images/Overview.png)
+![](images/overview.png)
 
 ## Key Features
 

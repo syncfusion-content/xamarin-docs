@@ -13,9 +13,12 @@ The SfNumericTextBox value can be localized to any specific culture. It can be s
 {% tabs %}
 
 {% highlight c# %}
-
+ 
+    SfNumericTextBox numericTextBox=new SfNumericTextBox();
+	numericTextBox.Value=123.45;
 	numericTextBox.Culture = new System.Globalization.CultureInfo("fr-FR");
-	
+	this.Content = numericTextBox;
+
 {% endhighlight %}
 
 {% endtabs %}

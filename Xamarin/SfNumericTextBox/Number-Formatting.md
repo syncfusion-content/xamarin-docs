@@ -30,10 +30,10 @@ N> The control displays the formatted text on lost focus. Default Value of `Form
 	
 {% highlight c# %}
 
-	SfNumericTextBox numericTextBox=new SfNumericTextBox();
-	numericTextBox.FormatString="c";
-	numericTextBox.Value=1000;
-	this.content=numericTextBox;
+SfNumericTextBox numericTextBox=new SfNumericTextBox();
+numericTextBox.FormatString="c";
+numericTextBox.Value=1000;
+this.content=numericTextBox;
 
 {% endhighlight %}
 
@@ -55,10 +55,10 @@ N> The control displays the formatted text on lost focus. Default Value of `Form
 	
 {% highlight c# %}
 	
-    SfNumericTextBox numericTextBox=new SfNumericTextBox();
-	numericTextBox.FormatString="n";
-	numericTextBox.Value=1000;
-	this.content=numericTextBox;
+SfNumericTextBox numericTextBox=new SfNumericTextBox();
+numericTextBox.FormatString="n";
+numericTextBox.Value=1000;
+this.content=numericTextBox;
 	 
 {% endhighlight %}
 
@@ -80,10 +80,10 @@ N> The control displays the formatted text on lost focus. Default Value of `Form
 	
 {% highlight c# %}
 
-    SfNumericTextBox numericTextBox=new SfNumericTextBox();
-	numericTextBox.FormatString="p";
-	numericTextBox.Value=1000;
-	this.content=numericTextBox;
+SfNumericTextBox numericTextBox=new SfNumericTextBox();
+numericTextBox.FormatString="p";
+numericTextBox.Value=1000;
+this.content=numericTextBox;
 	 
 {% endhighlight %}
 
@@ -105,10 +105,10 @@ By passing any string , we can get the same as appended with the value of Numeri
 	
 {% highlight c# %}
 
-    SfNumericTextBox numericTextBox=new SfNumericTextBox();
-	numericTextBox.FormatString="years";
-	numericTextBox.Value=23;
-	this.content=numericTextBox;
+SfNumericTextBox numericTextBox=new SfNumericTextBox();
+numericTextBox.FormatString="years";
+numericTextBox.Value=23;
+this.content=numericTextBox;
 	 
 {% endhighlight %}
 
@@ -133,11 +133,11 @@ When the NumericTextBox is in percentage format, the value can be displayed in t
 
 {% highlight c# %}
 
-    SfNumericTextBox numericTextBox=new SfNumericTextBox();
-	numericTextBox.PercentDisplayMode=PercentDisplayMode.Value;
-	numericTextBox.FormatString="p";
-	numericTextBox.Value=1000;
-	this.content=numericTextBox;
+SfNumericTextBox numericTextBox=new SfNumericTextBox();
+numericTextBox.PercentDisplayMode=PercentDisplayMode.Value;
+numericTextBox.FormatString="p";
+numericTextBox.Value=1000;
+this.content=numericTextBox;
 
 {% endhighlight %}
 
@@ -157,11 +157,11 @@ When the NumericTextBox is in percentage format, the value can be displayed in t
 
 {% highlight c# %}
 
-    SfNumericTextBox numericTextBox=new SfNumericTextBox();
-	numericTextBox.PercentDisplayMode=PercentDisplayMode.Compute;
-	numericTextBox.FormatString="p";
-	numericTextBox.Value=1000;
-	this.content=numericTextBox;
+SfNumericTextBox numericTextBox=new SfNumericTextBox();
+numericTextBox.PercentDisplayMode=PercentDisplayMode.Compute;
+numericTextBox.FormatString="p";
+numericTextBox.Value=1000;
+this.content=numericTextBox;
 
 {% endhighlight %}
 

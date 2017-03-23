@@ -32,10 +32,10 @@ To set the TextColor color in XAML as well as in C#:
 
 {% highlight c# %}
 
-    SfNumericTextBox numericTextBox=new SfNumericTextBox();
-	numericTextBox.TextColor = Color.Green;
-	numericTextBox.Value = 123;
-	this.Content = numericTextBox;
+SfNumericTextBox numericTextBox=new SfNumericTextBox();
+numericTextBox.TextColor = Color.Green;
+numericTextBox.Value = 123;
+this.Content = numericTextBox;
 
 {% endhighlight %}
 
@@ -57,11 +57,11 @@ To set the BackgroundColor color in XAML as well as in C#:
 
 {% highlight c# %}
 
-    SfNumericTextBox numericTextBox=new SfNumericTextBox();
-	numericTextBox.BackgroundColor = Color.Maroon;
-	numericTextBox.TextColor = Color.White;
-	numericTextBox.Value = 123;
-	this.Content = numericTextBox;
+SfNumericTextBox numericTextBox=new SfNumericTextBox();
+numericTextBox.BackgroundColor = Color.Maroon;
+numericTextBox.TextColor = Color.White;
+numericTextBox.Value = 123;
+this.Content = numericTextBox;
 
 {% endhighlight %}
 
@@ -83,10 +83,10 @@ To set the BorderColor color in XAML as well as in C#:
 
 {% highlight c# %}
 
-    SfNumericTextBox numericTextBox=new SfNumericTextBox();
-	numericTextBox.BorderColor = Color.Red;
-	numericTextBox.Value = 123;
-	this.Content = numericTextBox;
+SfNumericTextBox numericTextBox=new SfNumericTextBox();
+numericTextBox.BorderColor = Color.Red;
+numericTextBox.Value = 123;
+this.Content = numericTextBox;
 
 {% endhighlight %}
 
@@ -108,11 +108,11 @@ To set the WatermarkColor color in XAML as well as in C#:
 
 {% highlight c# %}
 
-    SfNumericTextBox numericTextBox=new SfNumericTextBox();
-	numericTextBox.WatermarkColor = Color.Blue;
-	numericTextBox.Value = 123;
-	numericTextBox.AllowNull=true;
-	this.Content = numericTextBox;
+SfNumericTextBox numericTextBox=new SfNumericTextBox();
+numericTextBox.WatermarkColor = Color.Blue;
+numericTextBox.Value = 123;
+numericTextBox.AllowNull=true;
+this.Content = numericTextBox;
 
 {% endhighlight %}
 

@@ -37,12 +37,12 @@ To set the font size and attributes in XAML as well as in C#:
 
 {% highlight c# %}
 
-    SfNumericTextBox numericTextBox=new SfNumericTextBox();
-	numericTextBox.FontSize = 27;
-	numericTextBox.Value = 123;
-	numericTextBox.TextAlignment=TextAlignment.End;
-	numericTextBox.FontAttributes = FontAttributes.Bold;
-	this.Content = numericTextBox;
+SfNumericTextBox numericTextBox=new SfNumericTextBox();
+numericTextBox.FontSize = 27;
+numericTextBox.Value = 123;
+numericTextBox.TextAlignment=TextAlignment.End;
+numericTextBox.FontAttributes = FontAttributes.Bold;
+this.Content = numericTextBox;
 
 {% endhighlight %}
 

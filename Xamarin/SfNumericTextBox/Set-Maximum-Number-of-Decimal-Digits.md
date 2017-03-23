@@ -22,10 +22,10 @@ N> The `MaximumNumberDecimalDigits` property can be provided with positive value
 
 {% highlight c# %}
 
-    SfNumericTextBox numericTextBox=new SfNumericTextBox();
-	numericTextBox.Value = 123.456;
-	numericTextBox.MaximumNumberDecimalDigits=2;
-	this.Content = numericTextBox;
+SfNumericTextBox numericTextBox=new SfNumericTextBox();
+numericTextBox.Value = 123.456;
+numericTextBox.MaximumNumberDecimalDigits=2;
+this.Content = numericTextBox;
   
 {% endhighlight %}
 

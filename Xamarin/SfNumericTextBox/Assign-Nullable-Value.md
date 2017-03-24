@@ -22,9 +22,9 @@ N> By default, the property value is false.
 
 {% highlight c# %}
 
-    SfNumericTextBox numericTextBox=new SfNumericTextBox();
-	numericTextBox.AllowNull=true;
-	this.Content = numericTextBox;
+SfNumericTextBox numericTextBox = new SfNumericTextBox();
+numericTextBox.AllowNull=true;
+this.Content = numericTextBox;
 
 {% endhighlight %}
 
@@ -46,10 +46,10 @@ The `WaterMark` property can be used to provide a hint that helps the user to ge
 
 {% highlight c# %}
 
-    SfNumericTextBox  numericTextBox=new SfNumericTextBox();
-	numericTextBox.Watermark = "Getting Started";
-	numericTextBox.AllowNull = true;
-	this.Content=numericTextBox;
+SfNumericTextBox  numericTextBox=new SfNumericTextBox();
+numericTextBox.Watermark = "Getting Started";
+numericTextBox.AllowNull = true;
+this.Content=numericTextBox;
 	
 {% endhighlight %}
 

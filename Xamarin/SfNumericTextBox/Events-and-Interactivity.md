@@ -33,13 +33,13 @@ We can perform operation while the changing the value of NumericTextBox's Value 
 
 {% highlight c# %}
 
-    SfNumericTextBox numericTextBox=new SfNumericTextBox();
-	numericTextBox.Value = 123;
-    numericTextBox.ValueChanged += (object sender, ValueEventArgs e) =>
-	{
-		System.Diagnostics.Debug.WriteLine(e.Value.ToString());
-	};
-	this.Content=numericTextBox;
+SfNumericTextBox numericTextBox=new SfNumericTextBox();
+numericTextBox.Value = 123;
+numericTextBox.ValueChanged += (object sender, ValueEventArgs e) =>
+{
+	System.Diagnostics.Debug.WriteLine(e.Value.ToString());
+};
+this.Content=numericTextBox;
 
 {% endhighlight %}
 
@@ -64,10 +64,10 @@ The ValueChangeMode property is used to mention when the validation need to take
 
 {% highlight c# %}
 
-    SfNumericTextBox numericTextBox=new SfNumericTextBox();
-	numericTextBox.Value = 123;
-    numericTextBox.ValueChangeMode = ValueChangeMode.OnKeyFocus;
-	this.Content=numericTextBox;
+SfNumericTextBox numericTextBox=new SfNumericTextBox();
+numericTextBox.Value = 123;
+numericTextBox.ValueChangeMode = ValueChangeMode.OnKeyFocus;
+this.Content=numericTextBox;
 
 {% endhighlight %}
 
@@ -87,10 +87,10 @@ The ValueChangeMode property is used to mention when the validation need to take
 
 {% highlight c# %}
 
-    SfNumericTextBox numericTextBox=new SfNumericTextBox();
-	numericTextBox.Value = 123;
-    numericTextBox.ValueChangeMode = ValueChangeMode.OnLostFocus;
-	this.Content=numericTextBox;
+SfNumericTextBox numericTextBox=new SfNumericTextBox();
+numericTextBox.Value = 123;
+numericTextBox.ValueChangeMode = ValueChangeMode.OnLostFocus;
+this.Content=numericTextBox;
 
 {% endhighlight %}
 

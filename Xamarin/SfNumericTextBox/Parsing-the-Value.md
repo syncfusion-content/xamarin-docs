@@ -22,10 +22,10 @@ Following code shows the Decimal parsing mode which can be set through `ParserMo
 
 {% highlight c# %}
 
-    SfNumericTextBox numericTextBox=new SfNumericTextBox();
-	numericTextBox.ParserMode=Parsers.Decimal;
-	numericTextBox.Value = 123.45;
-	this.Content = numericTextBox;
+SfNumericTextBox numericTextBox=new SfNumericTextBox();
+numericTextBox.ParserMode=Parsers.Decimal;
+numericTextBox.Value = 123.45;
+this.Content = numericTextBox;
 	
 {% endhighlight %}
 

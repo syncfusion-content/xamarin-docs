@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Syncfusion Maps control for Xamarin.Forms
-description: A quick tour to initial users on Syncfusion maps control for Xamarin.Forms platform
+description: A quick tour about Syncfusion maps control in Xamarin.Forms platform
 platform: xamarin
 control: SfMaps 
 documentation: ug
@@ -167,32 +167,33 @@ These files need to be added in Asset folder.
 
 Android    
      
-  * Add shape files in Assets folder in ProjectFileName.Droid.                       	
+  * Add necessary shape files to the Assets folder of ProjectFileName.Droid.                       	
     
-  * Right click on the added shape file. 
+  * Right click on the added shape file and navigate to properties. 
    	
-  * Select BuildAction property and then enable Android  Asset.If it is already enabled don't do nothing.
+  * Choose `AndroidAsset` option under BuildAction of respective shape file. 
 
 iOS   
   
-  * Add shape files in Resource folder in ProjectFileName.iOS.  
+  * Add necessary shape files to the Assets folder of ProjectFileName.iOS.  
     
-  * Right click on the added shape file. 
+  * Right click on the added shape file and navigate to properties. 
     
-  * Select BuildAction property and then enable Bundle Resource.If it is already enabled don't do nothing.
+  * Choose `BundleResource` option under BuildAction of respective shape file.
+
 
  UWP
    
-  * Add shape files in Assets folder in ProjectFileName.UWP.
+  * Add necessary shape files to the Assets folder of ProjectFileName.UWP.
      
-  * Right click on the added shape file.
+  * Right click on the added shape file and navigate to properties. 
  
-  * Select BuildAction property and then enable Embedded Resource.If it is already enabled don't do nothing.
+  * Choose `EmbeddedResource` option under BuildAction of respective shape file.
 
 
 ## GeoJson Support
 
- The Maps control supports reading and loading GeoJson files.A GeoJson file contains  attribute information for the spatial features and coordinates in a data set. 
+ The Maps control supports reading and loading GeoJson files. The GeoJson file contains attribute information for the spatial features and coordinates in a data set. 
  
 {% tabs %}
 

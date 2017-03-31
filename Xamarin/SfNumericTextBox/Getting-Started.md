@@ -46,6 +46,35 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% endtabs %}
 
+### Release mode issue in UWP Platform
+
+There is a known Framework issue in UWP platform. The custom controls will not render when deployed the application in Release Mode.
+
+The above problem can be resolved by adding the SfNumericTextBox Renderer in MainPage.xaml.cs in UWP project as like in below code snippet.
+
+{% tabs %}
+
+{% highlight C# %}
+
+namespace GettingStarted.UWP
+{
+public sealed partial class MainPage
+{
+    public MainPage()
+    {
+        this.InitializeComponent();
+
+        new SfNumericTextBoxRenderer();
+
+        LoadApplication(new GettingStarted.App());
+    }
+}
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Create a Simple SfNumericTextBox 
 
 The SfNumericTextBox control is configured entirely in C# code or by using XAML markup. The following steps explain on how to create a SfNumericTextBox and configure its elements,

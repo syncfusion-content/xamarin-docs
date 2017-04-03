@@ -23,17 +23,29 @@ The `Header` can be used to set a unique header for the Circular Gauge. You can 
 
 This property places the header in a circular gauge. The value for `Position` should be specified in offset value. By default, it is placed at (0.5, 0.7).
 
+{% tabs %}
+
+{% highlight xaml %}
+ 
+    <gauge:SfCircularGauge.Headers>
+      <gauge:Header Text="Speedmeter" Position="0.5,0.5" TextSize="20" ForegroundColor="Gray"/>
+    </gauge:SfCircularGauge.Headers>
+
+{% endhighlight %}
+
 {% highlight c# %}
 
-    SfCircularGauge circularGauge = new SfCircularGauge();
+    SfCircularGauge circularGauge = new SfCircularGauge(); 
     Header header = new Header();
-    header.Text = "Speedometer";
+    header.Text = "Speedmeter";
     header.TextSize = 20;
-    header.Position = Device.OnPlatform(iOS: new Point(.3, .7), Android:new Point(0.5, 0.7), WinPhone: new Point(0.38, 0.7));
+    header.Position = Device.OnPlatform(iOS: new Point(.3, .7), Android:new Point(0.38, 0.7), WinPhone: new Point(0.38, 0.7));
     header.ForegroundColor = Color.Gray;
     circularGauge.Headers.Add(header); 
     this.content = circularGauge;
-
+    
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](header_images/Header.png)

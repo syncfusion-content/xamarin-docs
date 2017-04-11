@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Getting Started with Essential Calculate
 description: How to compute the formulas using CalcQuickBase,CalcEngine and ICalcData

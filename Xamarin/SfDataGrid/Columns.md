@@ -147,6 +147,21 @@ N> The resizing indicator appears when you tap the right corner of the column he
 
 You can interactively hide a column by setting the `GridColumn.MinimumWidth` property to zero and resizing the column to a width less than 0.
 
+### Resizing Modes
+
+SfDataGrid allows two modes of resizing, which can be set using the 'SfDataGrid.ResizingMode' property. The available resizing modes are,
+
+* OnMoved - The resizing indicator is moved based on the touch point and the width of the column is updated as the resizing indicator moves.
+* OnTouchUp - The resizing indicator is moved based on the touch point but however the width of the column is updated only on a touch up operation.
+
+N> The default resizing mode is OnMoved.
+
+The below image shows the resizing mode OnMoved
+![](SfDataGrid_images/Resizing_OnMoved.png)
+
+The below image shows the resizing mode OnTouchUp
+![](SfDataGrid_images/Resizing_OnTouchUp.png)
+
 ### Resizing Events
 
 The resizing operation can be handled based on the requirement using [SfDataGrid.ColumnResizing](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ColumnResizing_EV.html) event. The `SfDataGrid.ColumnResizing` event is fired upon starting to resize a column and will be continuously fired till the resizing operation ends.

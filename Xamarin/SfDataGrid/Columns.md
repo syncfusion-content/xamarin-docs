@@ -151,10 +151,10 @@ You can interactively hide a column by setting the `GridColumn.MinimumWidth` pro
 
 SfDataGrid allows two modes of resizing, which can be set using the 'SfDataGrid.ResizingMode' property. The available resizing modes are,
 
-* OnMoved - The resizing indicator is moved based on the touch point and the width of the column is changed as the resizing indicator moves.
-* OnTouchUp - Only the resizing indicator is moved based on the touch point. The width of the column is updated only on a touch up operation.
+* OnMoved - The resizing indicator is moved based on the touch point and the width of the column is updated as the resizing indicator moves.
+* OnTouchUp - The resizing indicator is moved based on the touch point but however the width of the column is updated only on a touch up operation.
 
-The default resizing mode is OnMoved.
+N> The default resizing mode is OnMoved.
 
 The below image shows the resizing mode OnMoved
 ![](SfDataGrid_images/Resizing_OnMoved.png)

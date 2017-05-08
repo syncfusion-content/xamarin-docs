@@ -19,12 +19,13 @@ The `NavigationStripMode` property specifies the appearance of navigation bar it
 
 {% highlight xaml %}
 
-	<rotator:SfRotator x:Name="rotator" NavigationStripMode="Thumbnail" />
+	<syncfusion:SfRotator x:Name="rotator" NavigationStripMode="Thumbnail" />
 	
 {% endhighlight %}
 
 {% highlight C# %}
 
+    SfRotator rotator = new SfRotator();
 	rotator.NavigationStripMode = NavigationStripMode.Thumbnail;	
 
 {% endhighlight %}
@@ -39,12 +40,13 @@ The `NavigationStripMode` property specifies the appearance of navigation bar it
 
 {% highlight xaml %}
 
-	<rotator:SfRotator x:Name="rotator" NavigationStripMode="Dots" />
+	<syncfusion:SfRotator x:Name="rotator" NavigationStripMode="Dots" />
 	
 {% endhighlight %}
 
 {% highlight C# %}
 
+	SfRotator rotator = new SfRotator();
 	rotator.NavigationStripMode = NavigationStripMode.Dots;	
 
 {% endhighlight %}
@@ -69,12 +71,13 @@ There are four available positions,
 
 {% highlight xaml %}
 
-	<rotator:SfRotator x:Name="rotator" NavigationStripPosition="Bottom" />
+	<syncfusion:SfRotator x:Name="rotator" NavigationStripPosition="Bottom" />
 	
 {% endhighlight %}
 
 {% highlight C# %}
 
+	SfRotator rotator = new SfRotator();
 	rotator.NavigationStripPosition = NavigationStripPosition.Bottom;
 
 {% endhighlight %}

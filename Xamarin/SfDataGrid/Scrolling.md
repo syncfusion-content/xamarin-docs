@@ -16,6 +16,8 @@ SfDataGrid provides three types of scrolling mode which can be customized using 
 * Line
 * Pixel
 
+N> SfDataGrid provides support for the vertical and horizontal scrollbar in UWP. In addition to that, mouse scrolling support is also provided in UWP Desktop application.
+
 ### PixelLine
 
 `ScrollingMode.PixelLine`, will allow to scroll its contents like an excel sheet. i.e., whenever a row or a column is clipped on the top, the particular row or column will be auto scrolled to display fully in view.
@@ -73,3 +75,29 @@ dataGrid.ScrollToRowIndex(int rowIndex);
 dataGrid.ScrollToColumnIndex(int columnIndex);
 
 {% endhighlight %}
+
+### Vertical Over Scroll Mode
+`SfDataGrid.VerticalOverScrollMode` property allows you to customize the bouncing behavior of the SfDataGrid.
+
+ `SfDataGrid.VerticalOverScrollMode` is of type [VerticalScrollMode](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~VerticalOverScrollMode.html) which has the below two modes. 
+ * `Bounce` - It allows the SfDataGrid to have bouncing effect. The default value of `SfDataGrid.VerticalOverScrollMode` is `Bounce` 
+ * `None` - It disables the bouncing effect in SfDataGrid.
+
+The below code example illustrates the how to customize the bouncing effect in SfDataGrid. 
+{% tabs %}
+{% highlight C# %}
+
+dataGrid.VerticalOverScrollMode = VerticalOverScrollMode.None;
+
+{% endhighlight %}
+{% highlight xaml %}
+
+  <sfgrid:SfDataGrid x:Name="dataGrid"
+                     ColumnSizer="Star"
+                     VerticalOverScrollMode="None"
+                     ItemsSource="{Binding OrdersInfo}">  
+  </sfgrid:SfDataGrid>
+
+{% endhighlight %}
+{% endtabs %}
+

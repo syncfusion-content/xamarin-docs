@@ -11,36 +11,21 @@ documentation: ug
 
 This section explains you the steps to configure a SfBusyIndicator control in a real-time scenario and also provides a walk-through on some of the customization features available in SfBusyIndicator control.
 
-## Add BusyIndicator
+## Add SfBusyIndicator reference
 
-You can then add the assembly references to the respective projects as shown below
+Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain and reference Essential Studio components in your solution; then refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfchart) link to know about the assemblies required for adding Busyindicator to your project.
 
-<table>
-<tr>
-<th>Project</th>
-<th>Required assemblies</th>
-</tr>
-<tr>
-<td>PCL</td>
-<td>pcl\Syncfusion.SfBusyIndicator.XForms.dll</td>
-</tr>
-<tr>
-<td>Android</td>
-<td>android\Syncfusion.SfBusyIndicator.Android.dll<br/>android\Syncfusion.SfBusyIndicator.XForms.Android.dll<br/>android\Syncfusion.SfBusyIndicator.XForms.dll</td>
-</tr>
-<tr>
-<td>iOS (Unified)</td>
-<td>iOS-unified\Syncfusion.SfBusyIndicator.iOS.dll<br/>iOS-unified\Syncfusion.SfBusyIndicator.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfBusyIndicator.XForms.dll</td>
-</tr>
-<tr>
-<td>UWP</td>
-<td>uwp\Syncfusion.SfBusyIndicator.UWP.dll<br/>uwp\Syncfusion.SfBusyIndicator.XForms.dll<br/>uwp\Syncfusion.SfBusyIndicator.XForms.UWP.dll</td>
-</tr>
-</table>
+## Launching the SfBusyIndicator on each platform
 
-Currently an additional step is required for  iOS project. We need to create an instance of the SfBusyIndicator custom renderer as shown below. 
+To use SfBusyIndicator inside an application, each platform application must initialize the SfBusyIndicator renderer. This initialization step varies from platform to platform and is discussed in the following sections.
 
-Create an instance of SfBusyIndicatorRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below
+### Android and  UWP
+
+The Android and UWP launches the SfBusyIndicator without any initialization and is enough to only initialize the Xamarin.Forms Framework to launch the application
+
+### iOS
+
+To launch SfBusyIndicator in iOS, need to create an instance of SfBusyIndicatorRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below.
 
 {% tabs %}
 
@@ -48,12 +33,22 @@ Create an instance of SfBusyIndicatorRenderer in FinishedLaunching overridden me
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {
-    new SfBusyIndicatorRenderer ();
-}	
+	global::Xamarin.Forms.Forms.Init();
+
+	new SfBusyIndicatorRenderer();
+
+	LoadApplication(new App());
+
+	return base.FinishedLaunching(app, options);
+}
 
 {% endhighlight %}
 
 {% endtabs %}
+
+## Create a Simple SfBusyIndicator 
+
+The SfBusyIndicator control is configured entirely in C# code or by using XAML markup. The following steps explain on how to create a SfBusyIndicator and configure its elements,
 
 * Adding namespace for the added assemblies. 
 
@@ -61,7 +56,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% highlight xaml %}
 
-	<xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"/>
+	xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
 	
 {% endhighlight %}
 
@@ -79,26 +74,44 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% highlight xaml %}
 
-   	<xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"/>
-	<ContentPage.Content>
-		<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="Battery" />
-	</ContentPage.Content>
-	
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:GettingStarted" 
+	xmlns:syncfusion="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
+	x:Class="GettingStarted.BusyIndicatorPage">
+<ContentPage.Content>
+ <syncfusion:SfBusyIndicator x:Name="busyindicator" />	
+</ContentPage.Content>
+</ContentPage>
+   
 {% endhighlight %}
 
 {% highlight c# %}
 
-    using Syncfusion.SfBusyIndicator.XForms;
-	SfBusyIndicator busyindicator = new SfBusyIndicator();
-	this.Content=busyindicator;
-	
+using Syncfusion.SfBusyIndicator.XForms;
+using Xamarin.Forms;
+
+namespace GettingStarted
+{
+public partial class BusyIndicatorPage : ContentPage
+{
+	public BusyIndicatorPage()
+	{
+		InitializeComponent();
+
+		SfBusyIndicator busyindicator = new SfBusyIndicator();
+
+		this.Content = busyindicator;
+	}
+}
+}
+
 {% endhighlight %}
 
 {% endtabs %}
 
 ## Setting Animation Type
 
-SfBusyIndicator provides 10 predefined animation types like Ball, Battery, Globe and so on. User can select any one of the animation types using `AnimationType`property.
+SfBusyIndicator provides 15 predefined animation types like Ball, Battery, Globe and so on. User can select any one of the animation types using `AnimationType`property.
 
 Following example depicts the battery type animation for SfBusyIndicator. 
 
@@ -106,27 +119,43 @@ Following example depicts the battery type animation for SfBusyIndicator.
 
 {% highlight xaml %}
 
-   	<xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"/>
-	<ContentPage.Content>
-		<busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="Battery" ViewBoxWidth = "150" ViewBoxHeight="150" Color="Maroon"/>
-	</ContentPage.Content>	
-	
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:GettingStarted" 
+	xmlns:syncfusion="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
+	x:Class="GettingStarted.BusyIndicatorPage">
+<ContentPage.Content>
+ <syncfusion:SfBusyIndicator x:Name="busyindicator" AnimationType="Battery" ViewBoxWidth = "150" ViewBoxHeight="150" TextColor="Maroon" />	
+</ContentPage.Content>
+</ContentPage>
+
 {% endhighlight %}
 
 {% highlight c# %}
 
-    using Syncfusion.SfBusyIndicator.XForms; 	
-	SfBusyIndicator busyindicator = new SfBusyIndicator();
-	this.Content=busyindicator;
-	busyindicator.AnimationType = AnimationTypes.Battery;
-        busyindicator.ViewBoxWidth = 150;
-        busyindicator.ViewBoxHeight = 150;
-        busyindicator.Color = Color.Maroon;
+using Syncfusion.SfBusyIndicator.XForms;
+using Xamarin.Forms;
+namespace GettingStarted
+{
+	public partial class BusyIndicatorPage : ContentPage
+	{
+		public BusyIndicatorPage()
+		{
+			InitializeComponent();
 
+			SfBusyIndicator busyindicator = new SfBusyIndicator();
+			busyindicator.AnimationType = AnimationTypes.Battery;
+			busyindicator.ViewBoxWidth = 150;
+			busyindicator.ViewBoxHeight = 150;
+			busyindicator.TextColor = Color.Maroon;
+			this.Content = busyindicator;
+		}
+	}
+}
 
 {% endhighlight %}
 
 {% endtabs %}
 
-
 ![](images/Busyindicator.png)
+
+You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted776352567)

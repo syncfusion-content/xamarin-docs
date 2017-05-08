@@ -9,89 +9,13 @@ documentation: ug
 
 # Getting Started 
 
-This section explains you the steps required to render the Schedule control by populating  events(appointments), with inline support and min max dates support in the control. This section covers only the minimal features that you need to know to get started with the Schedule.
+This section explains you the steps required to render the `Meeting Room Booking Scheduler` using Schedule control by populating events(appointments), with custom data support in the control. This section covers only the minimal features that you need to know to get started with the Schedule.
 
-## Referencing Essential Studio components in your solution
+## Adding Schedule Reference
 
-If you had acquired Essential Studio components through the Xamarin component store interface from within your IDE, then after adding the components to your Xamarin.iOS and Xamarin.Android projects through the Component manager, you will still need to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL project in your solution. You can do this by manually adding the relevant PCL assembly references to your PCL project contained in the following path inside of your solution folder.
+Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain and reference Essential Studio components in your solution; then refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies) link to know about the assemblies required for adding Schedule to your project.
 
-Components/syncfusionessentialstudio-version/lib/pcl/
-
-Alternatively if you had downloaded Essential Studio from Syncfusion.com or through the Xamarin store web interface then all assembly references need to be added manually.
-
-After installing Essential Studio for Xamarin, all the required assemblies can be found in the installation folders, typically
-
-{Syncfusion Installed location}\Essential Studio\{Version Number}\lib
-
-E.g.: C:\Program Files (x86)\Syncfusion\Essential Studio\12.2.0.40\lib
-
-Or after downloading through the Xamarin store web interface, all the required assemblies can be found in the below folder
-
-{Download location}\syncfusionessentialstudio-version\lib
-
-You can then add the assembly references to the respective projects as shown below
-
-### PCL project
-
-pcl\Syncfusion.SfSchedule.XForms.dll
-
-### Android project
-
-android\Syncfusion.SfSchedule.Android.dll
-
-android\Syncfusion.SfSchedule.XForms.Android.dll
-
-android\Syncfusion.SfSchedule.XForms.dll
-
-### iOS (Classic) project
-
-iOS\Syncfusion.SfSchedule.iOS.dll
-
-iOS\Syncfusion.SfSchedule.XForms.iOS.dll
-
-iOS\Syncfusion.SfSchedule.XForms.dll
-
-### iOS(Unified) project
-
-iOS-unified\Syncfusion.SfSchedule.iOS.dll
-
-iOS-unified\Syncfusion.SfSchedule.XForms.iOS.dll
-
-iOS-unified\Syncfusion.SfSchedule.XForms.dll
-
-### Windows Phone project
-
-wp81\Syncfusion.SfSchedule.WP.dll
-
-wp81\Syncfusion.SfSchedule.XForms.WinPhone.dll
-
-wp81\Syncfusion.SfSchedule.XForms.dll
-
-Currently an additional step is required for Windows Phone and iOS projects. We need to create an instance of the chart custom renderer as shown below.
-
-Create an instance of `SfScheduleRenderer` in MainPage constructor in of the Windows Phone project as shown
-
-{% highlight c# %}
-
-    public MainPage ()
-    {
-    ... 
-    new SfScheduleRenderer();
-    ...
-    }
-{% endhighlight %}
-
-Create an instance of `SfScheduleRenderer` in Finished Launching overridden method of App Delegate class in iOS Project as shown below
-
-{% highlight c# %}
-
-    public override bool Finished Launching (UIApplication app, NSDictionary options)
-    {
-    ...
-    new SfScheduleRenderer();
-    ...
-    }
-{% endhighlight %}
+>**NOTE**  After adding the reference, currently, an additional step is required for iOS and UWP projects. We need to create an instance of the SfScheduleRenderer as shown in this.[KB article.](https://www.syncfusion.com/kb/7202/how-to-resolve-sfschedule-not-rendering-issue-in-ios-and-uwp)
 
 ## Initializing Schedule 
 
@@ -99,99 +23,169 @@ The SfSchedule control is configured entirely in C# code.
 
 {% highlight c# %}
 
-    SfSchedule sfschedule = new SfSchedule ();
-    this.Content = sfschedule;
-{% endhighlight %}
+	SfSchedule meetingRoomScheduler = new SfSchedule();
+	this.Content = meetingRoomScheduler;
 
-![](GettingStarted_images/DayView/DayView.png)
+{% endhighlight %}
 
 You can change the default UI of schedule using [ScheduleView](/xamarin/sfschedule/views "Schedule Views") to display the dates in different layouts available in the control.
 
 {% highlight c# %}
 
-    SfSchedule sfschedule=new SfSchedule ();
-    sfschedule.ScheduleView = ScheduleView.WeekView;
-    this.Content= sfschedule;
+	SfSchedule meetingRoomScheduler=new SfSchedule ();
+	meetingRoomScheduler.ScheduleView = ScheduleView.WeekView;
+	this.Content= meetingRoomScheduler;
 
 {% endhighlight %}
 
-![](GettingStarted_images/WeekView/WeekView.png)
+## Custom Data 
 
-## Populating Events
-
-You can add events to the schedule by creating collection of `ScheduleAppointment` using `ScheduleAppointmentCollection`.
+You can map custom data appointments to schedule by creating class with custom properties.Here for `MeetingRoomScheduler` respective custom data properties are created in a class `Meeting`.
 
 {% highlight c# %}
 
-    ScheduleAppointmentCollection appointmentCollection;
-
-    appointmentCollection = new ScheduleAppointmentCollection();
-
-    //Creating new event
-    ScheduleAppointment clientMeeting = new ScheduleAppointment();
-
-    DateTime currentDate = DateTime.Now;
-    DateTime startTime = new DateTime (currentDate.Year, currentDate.Month, currentDate.Day, 10, 0, 0);
-    DateTime endTime = new DateTime (currentDate.Year, currentDate.Month, currentDate.Day, 12, 0, 0);
-
-    clientMeeting.StartTime = startTime;
-    clientMeeting.EndTime = endTime;
-    clientMeeting.Color = Color.Blue;
-    clientMeeting.Subject = "ClientMeeting";
-
-    appointmentCollection.Add(clientMeeting);
-    sfschedule.DataSource = appointmentCollection;
-    this.Content= sfschedule;
+	public class Meeting
+	{
+	public string EventName { get; set; }
+	public string Organizer { get; set; }
+	public string ContactID { get; set; }
+	public int Capacity { get; set; }
+	public DateTime From { get; set; }
+	public DateTime To { get; set; }
+	public Color color { get; set; }
+	}
 
 {% endhighlight %}
 
-## Populating Recursive Events
+## Custom Appointment Mapping
 
-You can also add recursive appointments to Schedule, refer [Recurrence](/xamarin/sfschedule/recurrence "Schedule Recursive Appointments") section to know more about creating the recursive appointments using `RRuleGenerator` in schedule.
+You can map those custom properties with schedule appointment properties using `ScheduleAppointmentMapping`. Create meetings of type `ObservableCollection <Meeting>` and assign those appointments collection `ListOfMeeting` to the `DataSource` property which is of `IEnumerable` type.
 
 {% highlight c# %}
 
-    ScheduleAppointmentCollection appointmentCollection = new ScheduleAppointmentCollection();
-    //Creating new events
-    ScheduleAppointment clientMeeting = new ScheduleAppointment();
-    DateTime currentDate = DateTime.Now;
+    ViewModel viewModel = new ViewModel();
+	ObservableCollection<Meeting> meetings = new ObservableCollection<Meeting>();
 
-    DateTime startTime = new DateTime (currentDate.Year, currentDate.Month, currentDate.Day, 10, 0, 0);
-
-    DateTime endTime = new DateTime (currentDate.Year, currentDate.Month, currentDate.Day, 12, 0, 0);
-    clientMeeting.StartTime = startTime;
-    clientMeeting.EndTime = endTime;
-    clientMeeting.Color = Color.Blue;
-    clientMeeting.Subject = "ClientMeeting";
-    clientMeeting.IsRecursive = true;
-
-    RecurrenceProperties recurrenceProperties = new RecurrenceProperties();
-    recurrencePropertiesForAlternativeDay.RecurrenceType =RecurrenceType.Daily;
-    recurrenceProperties.IsDailyEveryNDays = true;
-    recurrenceProperties.DailyNDays = 2;
-    recurrenceProperties.IsRangeRecurrenceCount = true;
-    recurrenceProperties.IsRangeNoEndDate = false;
-    recurrenceProperties.IsRangeEndDate = false;
-    recurrenceProperties.RangeRecurrenceCount = 10; 
-    recurrenceProperties.RecurrenceRule = DependencyService.Get<IRecurrenceBuilder>().RRuleGenerator(recurrenceProperties, clientMeeting.StartTime, clientMeeting.EndTime);
-    clientMeeting.RecurrenceRule = recurrenceProperties.RecurrenceRule;
-    appointmentCollection.Add(clientMeeting);
-    sfschedule.DataSource = appointmentCollection;
-    this.Content= sfschedule;
+	ScheduleAppointmentMapping dataMapping = new ScheduleAppointmentMapping();
+	dataMapping.SubjectMapping = "EventName";
+	dataMapping.StartTimeMapping = "From";
+	dataMapping.EndTimeMapping = "To";
+	dataMapping.ColorMapping = "color";
+	meetingRoomScheduler.AppointmentMapping = dataMapping;
+	meetings = viewModel.ListOfMeeting;
+	meetingRoomScheduler.DataSource = meetings;
+	this.Content = meetingRoomScheduler;
 
 {% endhighlight %}
 
-## Enabling Appointments Inline
+## Creating Appointment Collection
 
-When the schedule appointments are viewed in month view, it will not display much information about the appointments, you can view the appointments in inline by setting `ShowAppointmentsInline` property of `MonthViewSettings` as True.
+You can schedule meetings for a particular day by setting `From` and `To` of `Meeting` class.Also you can change subject and color of appointment using `EventName` and `color` of Meeting class.
 
 {% highlight c# %}
 
-    sfschedule.ScheduleView = ScheduleView.MonthView;
-    sfschedule.ShowAppointmentsInline = true;
-    this.Content= sfschedule;
+	public ObservableCollection<Meeting> ListOfMeeting = new ObservableCollection<Meeting>();
 
+    public ViewModel()
+    {
+    ListOfMeeting = new ObservableCollection<Meeting>();
+    InitializeDataForBookings();
+    BookingAppointments();
+    }
+
+	private void BookingAppointments()
+	{
+	Random randomTime = new Random();
+	List<Point> randomTimeCollection = GettingTimeRanges();
+
+	int appointmentIndex = 0;
+	DateTime date;
+	DateTime DateFrom = DateTime.Now.AddDays(-10);
+	DateTime DateTo = DateTime.Now.AddDays(10);
+	DateTime dataRangeStart = DateTime.Now.AddDays(-3);
+	DateTime dataRangeEnd = DateTime.Now.AddDays(3);
+
+	for (date = DateFrom; date < DateTo; date = date.AddDays(1))
+	{
+	if ((DateTime.Compare(date, dataRangeStart) > 0) && (DateTime.Compare(date, dataRangeEnd) < 0))
+	{
+	for (int AdditionalAppointmentIndex = 0; AdditionalAppointmentIndex < 3; AdditionalAppointmentIndex++)
+	{
+	Meeting meeting = new Meeting();
+	int hour = (randomTime.Next((int)randomTimeCollection[AdditionalAppointmentIndex].X, (int)randomTimeCollection[AdditionalAppointmentIndex].Y));
+	meeting.From = new DateTime(date.Year, date.Month, date.Day, hour, 0, 0);
+	meeting.To = (meeting.From.AddHours(1));
+	meeting.EventName = meeting_collection[randomTime.Next(9)];
+	meeting.color = color_collection[randomTime.Next(9)];
+	ListOfMeeting.Add(meeting);
+	}
+	}
+	else {
+	Meeting meeting = new Meeting();
+	meeting.From = new DateTime(date.Year, date.Month, date.Day, randomTime.Next(9, 11), 0, 0);
+	meeting.To = (meeting.From.AddHours(1));
+	meeting.EventName = meeting_collection[randomTime.Next(9)];
+	meeting.color = color_collection[randomTime.Next(9)];
+	ListOfMeeting.Add(meeting);
+	}
+	}
+	}
 
 {% endhighlight %}
 
-![](DateNavigationandGesture_images/Inline/Inline.png)
+You can add `Subject` and `Color` to the appointments created by creating a collection for the same.
+
+{% highlight c# %}
+
+	List<string> meeting_collection;
+	List<Color> color_collection;
+
+	private void InitializeDataForBookings()
+	{
+	meeting_collection = new List<string>();
+	meeting_collection.Add("General Meeting");
+	meeting_collection.Add("Plan Execution");
+	meeting_collection.Add("Project Plan");
+	meeting_collection.Add("Consulting");
+	meeting_collection.Add("Performance Check");
+	meeting_collection.Add("Yoga Therapy");
+	meeting_collection.Add("Plan Execution");
+	meeting_collection.Add("Project Plan");
+	meeting_collection.Add("Consulting");
+	meeting_collection.Add("Performance Check");
+
+	color_collection = new List<Color>();
+	color_collection.Add(Color.FromHex("#117EB4"));
+	color_collection.Add(Color.FromHex("#B4112E"));
+	color_collection.Add(Color.FromHex("#C44343"));
+	color_collection.Add(Color.FromHex("#11B45E"));
+	color_collection.Add(Color.FromHex("#43BEC4"));
+	color_collection.Add(Color.FromHex("#B4112E"));
+	color_collection.Add(Color.FromHex("#C44343"));
+	color_collection.Add(Color.FromHex("#117EB4"));
+	color_collection.Add(Color.FromHex("#C4435A"));
+	color_collection.Add(Color.FromHex("#DF5348"));
+	color_collection.Add(Color.FromHex("#43c484"));
+	}
+
+{% endhighlight %}
+
+You can set random time for the appointments in schedule.
+
+{% highlight c# %}
+
+    private List<Point> GettingTimeRanges()
+    {
+        List<Point> randomTimeCollection = new List<Point>();
+        randomTimeCollection.Add(new Point(9, 11));
+        randomTimeCollection.Add(new Point(12, 14));
+        randomTimeCollection.Add(new Point(15, 17));
+
+        return randomTimeCollection;
+    }
+
+{% endhighlight %}
+
+![](GettingStarted_images/GettingStarted.png)
+
+You can find the complete getting started sample from this link [ScheduleGettingStarted](http://files2.syncfusion.com/dtsupport/directtrac/general/ze/ScheduleGettingStarted220511696.zip)

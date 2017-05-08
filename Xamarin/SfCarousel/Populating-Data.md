@@ -145,6 +145,39 @@ this.Content = carousel;
 
 {% endtabs %}
 
+and also carousel provides a support to display only the Image data with `Image` property in SfCarouselItem class.
+
+{% tabs %}
+
+{% highlight C# %}
+
+public partial class CarouselControlPage : ContentPage
+{
+        public CarouselControlPage()
+        {
+            InitializeComponent();
+
+            SfCarousel carousel = new SfCarousel() { ItemWidth = 170, ItemHeight = 250 };
+
+            ObservableCollection<SfCarouselItem> collectionOfItems = new ObservableCollection<SfCarouselItem>();
+
+            collectionOfItems.Add(new SfCarouselItem() { ImageName = "images1.png" });
+            collectionOfItems.Add(new SfCarouselItem() { ImageName = "images2.png" });
+            collectionOfItems.Add(new SfCarouselItem() { ImageName = "images3.png" });
+            collectionOfItems.Add(new SfCarouselItem() { ImageName = "images4.png" });
+            collectionOfItems.Add(new SfCarouselItem() { ImageName = "images5.png" });
+            collectionOfItems.Add(new SfCarouselItem() { ImageName = "images6.png" });
+
+            carousel. DataSource = collectionOfItems;
+
+            this.Content =carousel;
+        }
+}	
+
+{% endhighlight %}
+
+{% endtabs %}
+
 Similar way every item can be created and customized in case of different carousel item view is needed.
 
 

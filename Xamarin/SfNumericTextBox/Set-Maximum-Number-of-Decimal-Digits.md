@@ -16,13 +16,16 @@ N> The `MaximumNumberDecimalDigits` property can be provided with positive value
 
 {% highlight xaml %}
 
-	<numeric:SfNumericTextBox x:Name="numericTextBox" MaximumNumberDecimalDigits="2" />
+	<syncfusion:SfNumericTextBox x:Name="numericTextBox" Value="123.456" MaximumNumberDecimalDigits="2" />
 	
 {% endhighlight %}
 
 {% highlight c# %}
 
-	numericTextBox.MaximumNumberDecimalDigits=2;
+SfNumericTextBox numericTextBox=new SfNumericTextBox();
+numericTextBox.Value = 123.456;
+numericTextBox.MaximumNumberDecimalDigits=2;
+this.Content = numericTextBox;
   
 {% endhighlight %}
 

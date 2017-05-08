@@ -11,36 +11,21 @@ documentation : ug
 
 This section explains how to showcase a Gallery of photos along with a Title using SfCarousel Control.
 
-## Add SfCarousel
+## Add SfCarousel reference
 
-You can then add the assembly references to the respective projects as shown below.
+Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain and reference Essential Studio components in your solution; then refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfchart) link to know about the assemblies required for adding Carousel to your project.
 
-<table>
-<tr>
-<th>Project</th>
-<th>Required assemblies</th>
-</tr>
-<tr>
-<td>PCL</td>
-<td>pcl\Syncfusion.SfCarousel.XForms.dll</td>
-</tr>
-<tr>
-<td>Android</td>
-<td>android\Syncfusion.SfCarousel.Android.dll<br/>android\Syncfusion.SfCarousel.XForms.Android.dll<br/>android\Syncfusion.SfCarousel.XForms.dll<br/> Xamarin.Android.Support.v17.Leanback (from NuGet Packages)</td>
-</tr>
-<tr>
-<td>iOS (Unified)</td>
-<td>iOS-unified\Syncfusion.SfCarousel.iOS.dll<br/>iOS-unified\Syncfusion.SfCarousel.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfCarousel.XForms.dll</td>
-</tr>
-<tr>
-<td>UWP</td>
-<td>uwp\Syncfusion.SfCarousel.UWP.dll<br/>uwp\Syncfusion.SfCarousel.XForms.dll<br/>uwp\Syncfusion.SfCarousel.XForms.UWP.dll</td>
-</tr>
-</table>
+## Launching the SfCarousel on each platform
 
-Currently an additional step is required for iOS Project. We need to create an instance of the carousel custom renderer as shown below. 
+To use SfCarousel inside an application, each platform application must initialize the SfCarousel renderer. This initialization step varies from platform to platform and is discussed in the following sections.
 
-Create an instance of SfCarouselRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below.
+### Android and  UWP
+
+The Android and UWP launches the SfCarousel without any initialization and is enough to only initialize the Xamarin.Forms Framework to launch the application
+
+### iOS
+
+To launch SfCarousel in iOS, need to create an instance of SfCarouselRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below.
 
 {% tabs %}
 
@@ -48,12 +33,20 @@ Create an instance of SfCarouselRenderer in FinishedLaunching overridden method 
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {
-    new SfCarouselRenderer ();
-}	
+	global::Xamarin.Forms.Forms.Init();
+
+	new SfCarouselRenderer();
+
+	LoadApplication(new App());
+
+	return base.FinishedLaunching(app, options);
+}
 
 {% endhighlight %}
 
 {% endtabs %}
+
+## Create a Simple SfCarousel 
 
 The SfCarousel control is configured entirely in C# code or by using XAML markup. The following steps explain on how to create a SfCarousel and configure its elements,
 
@@ -63,7 +56,7 @@ The SfCarousel control is configured entirely in C# code or by using XAML markup
 
 {% highlight xaml %}
 
-	<xmlns:carousel="clr-namespace:Syncfusion.SfCarousel.XForms;assembly=Syncfusion.SfCarousel.XForms"/>
+	xmlns:syncfusion="clr-namespace:Syncfusion.SfCarousel.XForms;assembly=Syncfusion.SfCarousel.XForms"
 
 {% endhighlight %}
 
@@ -81,18 +74,38 @@ The SfCarousel control is configured entirely in C# code or by using XAML markup
 
 {% highlight xaml %}
 
-
-	<ContentPage.Content>
-		<carousel:SfCarousel x:Name="carousel"/>	
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:GettingStarted" 
+		xmlns:syncfusion="clr-namespace:Syncfusion.SfCarousel.XForms;assembly=Syncfusion.SfCarousel.XForms"
+		x:Class="GettingStarted.CarouselControlPage">
+  <ContentPage.Content>
+     <syncfusion:SfCarousel x:Name="carousel" />	
 	</ContentPage.Content>
 	
+</ContentPage>
+
 {% endhighlight %}
 
 {% highlight C# %}
 
 
-	SfCarousel carousel=new SfCarousel();
-	this.Content=carousel;
+using Syncfusion.SfCarousel.XForms;
+using Xamarin.Forms;
+
+namespace GettingStarted
+{
+public partial class CarouselControlPage : ContentPage
+    {
+        public CarouselControlPage()
+        {
+            InitializeComponent();
+
+            SfCarousel carousel = new SfCarousel();
+
+            this.Content = carousel;
+        }
+    }
+}
 
 {% endhighlight %}
 
@@ -101,7 +114,85 @@ The SfCarousel control is configured entirely in C# code or by using XAML markup
 
 ## Add Carousel Items
 
-SfCarousel items can be populated with a collection of image data. This collection includes Arrays, Lists and DataTables. An example to populate image collection as carousel items as follows
+We can populate the carousel's items by using any one of the following ways,
+
+* Through SfCarouselItem
+
+* Through ItemTemplate
+
+### Through SfCarouselItem
+
+By passing the list of `SfCarouselItem` , we can get the view of SfCarousel control. In that we can pass Images as well as Item content.
+
+The following code example illustrates to add list of Images in Carousel ,
+
+
+{% tabs %}
+
+{% highlight C# %}
+
+public partial class CarouselControlPage : ContentPage
+{
+        public CarouselControlPage()
+        {
+            InitializeComponent();
+
+            SfCarousel carousel = new SfCarousel() { ItemWidth = 170, ItemHeight = 250 };
+
+            ObservableCollection<SfCarouselItem> collectionOfItems = new ObservableCollection<SfCarouselItem>();
+
+            collectionOfItems.Add(new SfCarouselItem() { ImageName = "images1.png" });
+            collectionOfItems.Add(new SfCarouselItem() { ImageName = "images2.png" });
+            collectionOfItems.Add(new SfCarouselItem() { ImageName = "images3.png" });
+            collectionOfItems.Add(new SfCarouselItem() { ImageName = "images4.png" });
+            collectionOfItems.Add(new SfCarouselItem() { ImageName = "images5.png" });
+            collectionOfItems.Add(new SfCarouselItem() { ImageName = "images6.png" });
+
+            carousel. DataSource = collectionOfItems;
+
+            this.Content =carousel;
+        }
+}	
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+The following code example illustrates to add list of Item in Carousel ,
+
+{% tabs %}
+
+{% highlight C# %}
+
+public partial class CarouselControlPage : ContentPage
+{
+        public CarouselControlPage()
+        {
+            InitializeComponent();
+
+            SfCarousel carousel = new SfCarousel() { ItemWidth = 170, ItemHeight = 250 };
+
+            ObservableCollection<SfCarouselItem> collectionOfItems = new ObservableCollection<SfCarouselItem>();
+
+			collectionOfItems.Add(new SfCarouselItem() { ItemContent = new Button() { Text = "ItemContent1",TextColor=Color.White, BackgroundColor = Color.FromHex("#7E6E6B"), FontSize = 12 } });
+			collectionOfItems.Add(new SfCarouselItem() { ItemContent = new Label() { Text = "ItemContent2", BackgroundColor = Color.FromHex("#7E6E6B"), FontSize = 12 } });
+			collectionOfItems.Add(new SfCarouselItem() { ItemContent = new Image() { Source = "image1.png", Aspect = Aspect.AspectFit } });
+
+			carousel.DataSource = collectionOfItems;
+
+            this.Content =carousel;
+        }
+}	
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Through ItemTemplate
+
+`ItemTemplate` property of SfCarousel control is used to customize the contents of SfCarousel items.
 
 * Create a model view which holds image data
 
@@ -109,8 +200,8 @@ SfCarousel items can be populated with a collection of image data. This collecti
 
 {% highlight C# %}
 
-	public class CarouselModel
-	{
+public class CarouselModel
+{
 		public CarouselModel(string imagestr)
 		{
 			Image = imagestr;
@@ -122,13 +213,12 @@ SfCarousel items can be populated with a collection of image data. This collecti
 			get { return _image; }
 			set { _image = value; }
 		}
-	}
-
+}
 {% endhighlight %}
 
 {% endtabs %}
 
-* Populate carousel items collection in View model with the image data. The below code works when the images are placed within the application folder for Android, iOS and UWP with build action Android Resource, Bundled Resource and Content respectively.
+* Populate carousel items collection in View model with the image data. 
 
 {% tabs %}
 
@@ -156,7 +246,7 @@ public class CarouselViewModel
 {% endtabs %}
 
 
-* `ItemTemplate` property of SfCarousel control is used to customize the contents of SfCarousel items and the data source collection has been bound to it.
+The following code illustrates the way to use `ItemTemplate` in both xaml as well as c#
 
 {% tabs %}
 
@@ -165,17 +255,52 @@ public class CarouselViewModel
 	<ContentPage.Resources>
     	<ResourceDictionary>
      	 	<DataTemplate x:Key="itemTemplate">
-       	 		<Image Source="{Binding Image}" 
-					Aspect="AspectFit"/>
+       	 		<Image Source="{Binding Image}" Aspect="AspectFit"/>
       		</DataTemplate>
     	</ResourceDictionary>
  	 </ContentPage.Resources>
 
 	<ContentPage.Content>
-		<carousel:SfCarousel x:Name="carousel"  ItemTemplate="{StaticResource itemTemplate}" DataSource="{Binding ImageCollection}"   HeightRequest="400" WidthRequest="800" />	
+		<syncfusion:SfCarousel x:Name="carousel"  ItemTemplate="{StaticResource itemTemplate}" DataSource="{Binding ImageCollection}"  HeightRequest="400" WidthRequest="800" />	
 	</ContentPage.Content>
 
 {% endhighlight %}
+
+{% highlight C# %}
+
+public partial class CarouselControlPage : ContentPage
+    {
+        public CarouselControlPage()
+        {
+            InitializeComponent();
+
+            SfCarousel carousel = new SfCarousel() {HeightRequest=400,WidthRequest=800};
+
+             var ImageCollection = new List<CarouselModel> {
+	  			new CarouselModel ("image1.png"),
+				new CarouselModel ("image2.png"),
+				new CarouselModel ("image3.png"),
+				new CarouselModel ("image4.png"),
+				new CarouselModel ("image5.png")
+			};
+			var itemTemplate = new DataTemplate(() =>
+			{
+				var grid = new Grid();
+				var nameLabel = new Image();
+				nameLabel.SetBinding(Image.SourceProperty, "Image");
+				grid.Children.Add(nameLabel);
+				return grid;
+			});
+
+			carousel.ItemTemplate = itemTemplate;
+			carousel.DataSource = ImageCollection;
+
+            this.Content = carousel;
+        }
+    }
+
+{% endhighlight %}
+
 
 {% endtabs %}
 
@@ -191,9 +316,13 @@ public class CarouselViewModel
 
 {% endtabs %}
 
+I> Carousel's Images are placed within the application folder for Android, iOS and UWP with build action Android Resource, Bundled Resource and Content respectively. 
+
+N> In addition, carousel provides a support to load the Images from `URL` and `SD Card` location.
+
 ## Set Gap between Items
 
-SfCarousel provides option to set the distance between the items in the panel. This can be done by using the `Offset` property in SfCarousel control. 
+SfCarousel provides option to set the distance between the unselected items in the panel. This can be done by using the `Offset` property in SfCarousel control. 
 
 The items can be populated as described [above](#add-carousel-items)
 
@@ -201,7 +330,7 @@ The items can be populated as described [above](#add-carousel-items)
 
 {% highlight xaml %}
 
-	<carousel:SfCarousel x:Name="carousel" Offset="20"/>
+	<syncfusion:SfCarousel x:Name="carousel" Offset="20"/>
 	
 {% endhighlight %}
 
@@ -225,7 +354,7 @@ The items can be populated as described [above](#add-carousel-items)
 
 {% highlight xaml %}
 
-	<carousel:SfCarousel x:Name="carousel" Offset="20" RotationAngle="45" />
+	<syncfusion:SfCarousel x:Name="carousel" Offset="20" RotationAngle="45" />
 	
 {% endhighlight %}
 
@@ -249,7 +378,7 @@ The items can be populated as described [above](#add-carousel-items)
 
 {% highlight xaml %}
 
-	<carousel:SfCarousel x:Name="carousel" Offset="20" RotationAngle="45" SelectedIndex="2" />
+	<syncfusion:SfCarousel x:Name="carousel" Offset="20" RotationAngle="45" SelectedIndex="2" />
 	
 {% endhighlight %}
 
@@ -264,6 +393,8 @@ The items can be populated as described [above](#add-carousel-items)
 
 {% endtabs %}
 
-N> The `SelectedIndex` property will be 0 by default
+N> The `SelectedIndex` property will be 0 by default.
 
 ![](images/gettingstarted.png)
+
+You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted1240666182)

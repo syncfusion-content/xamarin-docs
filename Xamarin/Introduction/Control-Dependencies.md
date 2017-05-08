@@ -39,6 +39,34 @@ This page lists the assemblies required for each control to be referred in each 
 </tr>
 </table>
 
+## SfDataGrid
+
+<dl>
+  <dt>NuGet</dt>
+  <dd>Syncfusion.Xamarin.SfDataGrid</dd>
+</dl>
+
+**Assemblies**
+
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.Data.Portable.dll<br/>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.SfDataGrid.XForms.dll<br/>Syncfusion.SfNumericTextBox.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.Data.Portable.dll<br/>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.SfDataGrid.XForms.dll<br/>Syncfusion.SfDataGrid.XForms.Android.dll<br/>Syncfusion.SfNumericTextBox.Android.dll<br/>Syncfusion.SfNumericTextBox.XForms.Android.dll<br/>Syncfusion.SfNumericTextBox.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.Data.Portable.dll<br/>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.SfDataGrid.XForms.dll<br/>Syncfusion.SfDataGrid.XForms.iOS.dll<br/>Syncfusion.SfNumericTextBox.iOS.dll<br/>Syncfusion.SfNumericTextBox.XForms.iOS.dll<br/>Syncfusion.SfNumericTextBox.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.Data.Portable.dll<br/>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.SfDataGrid.XForms.dll<br/>Syncfusion.SfDataGrid.XForms.UWP.dll<br/>Syncfusion.SfInput.UWP.dll<br/>Syncfusion.SfShared.UWP.dll<br/>Syncfusion.SfNumericTextBox.XForms.UWP.dll<br/>Syncfusion.SfNumericTextBox.XForms.dll<br/></td>
+</tr>
+</table>
+
 ## SfPdfViewer
 
 <dl>
@@ -190,7 +218,7 @@ This page lists the assemblies required for each control to be referred in each 
 ## SfCalendar
 
 <dl>
-  <dt>Nuget</dt>
+  <dt>NuGet</dt>
   <dd>Syncfusion.Xamarin.Calendar</dd>
 </dl>
 
@@ -259,7 +287,7 @@ This page lists the assemblies required for each control to be referred in each 
 </tr>
 <tr>
 <td>Android</td>
-<td>Syncfusion.SfRotator.Android.dll<br/>Syncfusion.SfRotator.XForms.Android.dll<br/>Syncfusion.SfRotator.XForms.dll<br/>Xamarin.Android.Support.v17.Leanback (from NuGet Packages)<br/></td>
+<td>Syncfusion.SfRotator.Android.dll<br/>Syncfusion.SfRotator.XForms.Android.dll<br/>Syncfusion.SfRotator.XForms.dll<br/></td>
 </tr>
 <tr>
 <td>iOS</td>
@@ -676,34 +704,6 @@ This page lists the assemblies required for each control to be referred in each 
 <tr>
 <td>UWP</td>
 <td>Syncfusion.SfKanban.UWP.dll<br/>Syncfusion.SfKanban.XForms.UWP.dll<br/>Syncfusion.SfKanban.XForms.dll<br/></td>
-</tr>
-</table>
-
-## SfDataGrid
-
-<dl>
-  <dt>NuGet</dt>
-  <dd>Syncfusion.Xamarin.SfDataGrid</dd>
-</dl>
-
-**Assemblies**
-
-<table>
-<tr>
-<td>PCL</td>
-<td>Syncfusion.SfDataGrid.XForms.dll<br/>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.Data.Portable.dll<br/></td>
-</tr>
-<tr>
-<td>Android</td>
-<td>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.Data.Portable.dll<br/>Syncfusion.SfDataGrid.XForms.Android.dll<br/></td>
-</tr>
-<tr>
-<td>iOS</td>
-<td>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.Data.Portable.dll<br/>Syncfusion.SfDataGrid.XForms.iOS.dll<br/></td>
-</tr>
-<tr>
-<td>UWP</td>
-<td>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.Data.Portable.dll<br/>Syncfusion.SfDataGrid.XForms.UWP.dll<br/></td>
 </tr>
 </table>
 

@@ -17,12 +17,13 @@ N> By default, the property value is false.
 
 {% highlight xaml %}
 
-	<rotator:SfRotator x:Name="rotator" IsTextVisible="true" />
+	<syncfusion:SfRotator x:Name="rotator" IsTextVisible="true" />
 	
 {% endhighlight %}
 
 {% highlight C# %}
 
+    SfRotator rotator = new SfRotator();
 	rotator.IsTextVisible = true;
 
 {% endhighlight %}

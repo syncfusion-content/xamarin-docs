@@ -13,9 +13,17 @@ The `Duration` property of the SfCarousel control is used to specify the time ta
 
 {% tabs %}
 
+{% highlight xaml %}
+
+	<syncfusion:SfCarousel x:Name="carousel" Duration="1000" />
+	
+{% endhighlight %}
+
 {% highlight C# %}
 
-	carousel.Duration=100;
+	SfCarousel carousel = new SfCarousel();
+	carousel.Duration = 1000;
+	
 
 {% endhighlight %}
 

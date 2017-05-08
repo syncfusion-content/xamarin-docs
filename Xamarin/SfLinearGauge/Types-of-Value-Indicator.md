@@ -19,32 +19,33 @@ SfLinearGauge provides support to mark the values using BarPointer and SymbolPoi
 
 {% highlight xaml %}
 
-<linear:LinearScale x:Name="scale" MinimumValue="0" MaximumValue="100" Interval="20" ScaleBarLength="100" ScaleBarColor="#FAECEC" MinorTicksPerInterval="1" ScaleBarSize="13" ScalePosition="BackWard" >
-		<linear:LinearScale.Pointers>
-			<linear:BarPointer x:Name="rangePointer" Value="50"  Thickness="10" />
-		</linear:LinearScale.Pointers>
-</linear:LinearScale>
+		<linear:LinearScale x:Name="scale" MinimumValue="0" MaximumValue="100" Interval="20" ScaleBarLength="100" ScaleBarColor="#FAECEC" MinorTicksPerInterval="1" ScaleBarSize="13" ScalePosition="BackWard" >
+				<linear:LinearScale.Pointers>
+					<linear:BarPointer x:Name="rangePointer" Value="50"  Thickness="10" />
+				</linear:LinearScale.Pointers>
+		</linear:LinearScale>
 	
 {% endhighlight %}
 
 {% highlight c# %}
-LinearScale scale = new LinearScale();
-scale.MinimumValue = 0;
-scale.MaximumValue = 100;
-scale.Interval = 20;
-scale.ScaleBarLength = 100;
-scale.ScaleBarColor = Color.FromRgb(250, 236, 236);
-scale.LabelColor = Color.FromRgb(84, 84, 84);
-scale.MinorTicksPerInterval = 1;
-scale.ScaleBarSize = 13;
-scale.ScalePosition = ScalePosition.BackWard;			
-			
-BarPointer rangePointer = new BarPointer();
-rangePointer.Value = 50;
-rangePointer.Thickness = 10;
-scale.Pointers.Add(rangePointer);
-			
-linearGauge.Scales.Add(scale);
+	
+		LinearScale scale = new LinearScale();
+		scale.MinimumValue = 0;
+		scale.MaximumValue = 100;
+		scale.Interval = 20;
+		scale.ScaleBarLength = 100;
+		scale.ScaleBarColor = Color.FromRgb(250, 236, 236);
+		scale.LabelColor = Color.FromRgb(84, 84, 84);
+		scale.MinorTicksPerInterval = 1;
+		scale.ScaleBarSize = 13;
+		scale.ScalePosition = ScalePosition.BackWard;			
+					
+		BarPointer rangePointer = new BarPointer();
+		rangePointer.Value = 50;
+		rangePointer.Thickness = 10;
+		scale.Pointers.Add(rangePointer);
+					
+		linearGauge.Scales.Add(scale);
 
 {% endhighlight %}
 
@@ -61,37 +62,65 @@ In SymbolPointer, the value is pointed by a symbol on the scale. The Symbol Poin
 
 {% highlight xaml %}
 
-<linear:LinearScale x:Name="scale" MinimumValue="0" MaximumValue="100" Interval="20" ScaleBarLength="100" ScaleBarColor="#FAECEC" MinorTicksPerInterval="1" ScaleBarSize="13" ScalePosition="BackWard" >
-		<linear:LinearScale.Pointers>
-			<linear:SymbolPointer x:Name="symbolPointer" Value="60"  Offset="0.0" Thickness="3" />
-		</linear:LinearScale.Pointers>
-</linear:LinearScale>
-	
+		<linear:LinearScale x:Name="scale" MinimumValue="0" MaximumValue="100" Interval="20" ScaleBarLength="100" ScaleBarColor="#FAECEC" MinorTicksPerInterval="1" ScaleBarSize="13" ScalePosition="BackWard" >
+				<linear:LinearScale.Pointers>
+					<linear:SymbolPointer x:Name="symbolPointer" Value="60"  Offset="0.0" Thickness="3" />
+				</linear:LinearScale.Pointers>
+		</linear:LinearScale>
+			
 {% endhighlight %}
 
 {% highlight c# %}
 
-LinearScale scale = new LinearScale();
-scale.MinimumValue = 0;
-scale.MaximumValue = 100;
-scale.Interval = 20;
-scale.ScaleBarLength = 100;
-scale.ScaleBarColor = Color.FromRgb(250, 236, 236);
-scale.LabelColor = Color.FromRgb(84, 84, 84);
-scale.MinorTicksPerInterval = 1;
-scale.ScaleBarSize = 13;
-scale.ScalePosition = ScalePosition.BackWard;
+		LinearScale scale = new LinearScale();
+		scale.MinimumValue = 0;
+		scale.MaximumValue = 100;
+		scale.Interval = 20;
+		scale.ScaleBarLength = 100;
+		scale.ScaleBarColor = Color.FromRgb(250, 236, 236);
+		scale.LabelColor = Color.FromRgb(84, 84, 84);
+		scale.MinorTicksPerInterval = 1;
+		scale.ScaleBarSize = 13;
+		scale.ScalePosition = ScalePosition.BackWard;
 
-SymbolPointer symbolPointer = new SymbolPointer();
-symbolPointer.Value = 50;
-symbolPointer.Offset = 0.0;
-symbolPointer.Thickness = 3;
-scale.Pointers.Add(symbolPointer);
-			
-linearGauge.Scales.Add(scale);
+		SymbolPointer symbolPointer = new SymbolPointer();
+		symbolPointer.Value = 50;
+		symbolPointer.Offset = 0.0;
+		symbolPointer.Thickness = 3;
+		scale.Pointers.Add(symbolPointer);
+					
+		linearGauge.Scales.Add(scale);
 	
 {% endhighlight  %}
 
 {% endtabs %}
 
 ![](images/SymbolPointer.png)
+
+## Pointer Animation
+
+ EnableAnimation property is a Boolean property that enables or disables the animation of the pointers in LinearGauge.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <linear:LinearScale x:Name="scale" MinimumValue="0" MaximumValue="100" Interval="20">
+		<linear:LinearScale.Pointers>
+			<linear:BarPointer x:Name="rangePointer" Value="50"  Thickness="10" EnableAnimation = "True" />
+		</linear:LinearScale.Pointers>
+</linear:LinearScale>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+        BarPointer rangePointer = new BarPointer();
+		rangePointer.Value = 50;
+		rangePointer.Thickness = 10;
+		rangePointer.EnableAnimation = true;
+		scale.Pointers.Add(rangePointer);
+
+{% endhighlight  %}
+
+{% endtabs %}

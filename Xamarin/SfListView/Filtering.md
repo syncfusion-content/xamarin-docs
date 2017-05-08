@@ -62,6 +62,10 @@ private bool FilterContacts(object obj)
 }
 {% endhighlight %}
 
+The following screenshot shows the output rendered when the items are filtered.
+
+![](SfListView_images/SfListView-Filtering.png)
+
 ### Filter based on multiple criteria
 
 [SfListView](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView.html) allows you to filter the items based on the multiple criteria. The following example illustrates how to filter the data using multiple properties.

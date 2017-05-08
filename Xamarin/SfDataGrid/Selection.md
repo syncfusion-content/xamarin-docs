@@ -78,6 +78,49 @@ void DataGrid_SelectionChanging (object sender, GridSelectionChangingEventAr
 }
 {% endhighlight %}
 
+The following code explains how to get the selected item in code-behind using the `SelectionChanged` event.
+
+{% highlight c# %}
+dataGrid.SelectionChanged += DataGrid_SelectionChanged;
+
+private void DataGrid_SelectionChanged (object sender, GridSelectionChangedEventArgs e)
+{
+    // Gets the selected item 
+    var selectedItem = e.AddedItems[0];
+}
+{% endhighlight %}
+
+## Row Header Selection
+
+SfDataGrid lets you to select the grid row(s) upon tapping them over the grid cells. It also allows you select the grid rows when you tap the row header cells. To enable Selection in SfDataGrid, you need to set the `SfDataGrid.SelectionMode` property to value other than `None`.
+
+### Select records in SfDataGrid when tapping only on the row header cells
+
+SfDataGrid allows you to select a specific row or group of rows by touching the grid cells. However, if your requirement is to select the record only when tapping on the row header cells, then you can acheive the requirement by handling the `SfDataGrid.SelectionChanging` event. 
+ 
+The below code example illustrates how to select records in SfDataGrd when tapping only on the row header cells.
+
+{% highlight c# %}
+
+dataGrid.SelectionMode = SelectionMode.Single;
+
+private void DataGrid_SelectionChanging(object sender, GridSelectionChangingEventArgs e)
+{
+    e.Cancel = true;
+}
+
+private void DataGrid_GridTapped(object sender, GridTappedEventsArgs e)
+{
+    if(e.RowColumnindex.ColumnIndex == 0)
+    {
+        dataGrid.SelectedIndex = e.RowColumnindex.RowIndex;
+    }
+}
+ 
+{% endhighlight %}
+
+N> To enable the row header in SfDataGrid, you need to set the `SfDataGrid.ShowRowHeader` as `true`.
+
 
 ## Clear Selection
 
@@ -92,6 +135,8 @@ dataGrid.SelectionMode = SelectionMode.None;
 //Clear selection using selection controller
 dataGrid.SelectionController.ClearSelection (); 
 {% endhighlight %}
+
+N> Selected items and the selections will be cleared whenever the ItemsSource is changed in runtime.
 
 ## Multiple Selection Colors
 

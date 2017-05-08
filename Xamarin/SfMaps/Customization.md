@@ -21,11 +21,11 @@ The shapeSettings defines the basic customization settings of shapes in the map.
 * `SelectedShapeColor` - It is used to set the selection color for shapes in the map.
 
 {% tabs %}
+
 {% highlight xaml %}
 
         <SfMaps:ShapeFileLayer:ShapeSetting>
-            <SfMaps:ShapeSetting ShapeFill="#9CBF4E" SelectedShapeColor="#BC5353" 
-            ShapeStroke="white" ShapeStrokeThickess="1"/>
+        <SfMaps:ShapeSetting ShapeFill="#9CBF4E" SelectedShapeColor="#BC5353"  ShapeStroke="white" ShapeStrokeThickess="1"/>
         </SfMaps:ShapeFileLayer:ShapeSetting>
                       
       
@@ -33,14 +33,15 @@ The shapeSettings defines the basic customization settings of shapes in the map.
 
 {% highlight c# %}
 
-ShapeSetting setting = new ShapeSetting ();
-setting.ShapeFill = Color.ParseColor("#9CBF4E");
-setting.SelectedShapeColor = Color.ParseColor("#BC5353");
-setting.ShapeStroke = Color.White;
-setting.ShapeStrokeThickess = 1;
-layer.ShapeSettings = setting;
+         ShapeSetting setting = new ShapeSetting ();
+         setting.ShapeFill = Color.ParseColor("#9CBF4E");
+         setting.SelectedShapeColor = Color.ParseColor("#BC5353");
+         setting.ShapeStroke = Color.White;
+         setting.ShapeStrokeThickess = 1;
+         layer.ShapeSettings = setting;
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ![](Images/Selection.png)  
@@ -75,21 +76,18 @@ Gets or sets the color for mapping.<br/><br/></td></tr>
 </table>
 
 {% tabs %}
+
 {% highlight xaml %}
         
     <SfMaps:ShapeFileLayer>
-        <SfMaps:ShapeFileLayer ShapeIdTableField="STATE_NAME" ShapeIdPath="State"/>
-                                      
-        <SfMaps:ShapeFileLayer:ShapeSetting>
-            <SfMaps:ShapeSetting ShapeColorValuePath="Candidate" >
-            <SfMaps:ShapeSetting.ColorMappings>
-                    
-                <sfMaps:EqualColorMapping Value="Obama" LegendLabel="Obama" Color="#316DB5"/>
-                <sfMaps:EqualColorMapping Value="Romney" LegendLabel="Romney" Color="#D84444"/>
-                
-            </SfMaps:ShapeSetting.ColorMappings>
-                    
-        </SfMaps:ShapeFileLayer:ShapeSetting>
+    <SfMaps:ShapeFileLayer ShapeIdTableField="STATE_NAME" ShapeIdPath="State"/>
+    <SfMaps:ShapeFileLayer:ShapeSetting>
+    <SfMaps:ShapeSetting ShapeColorValuePath="Candidate" >
+    <SfMaps:ShapeSetting.ColorMappings>
+    <SfMaps:EqualColorMapping Value="Obama" LegendLabel="Obama" Color="#316DB5"/>
+    <SfMaps:EqualColorMapping Value="Romney" LegendLabel="Romney" Color="#D84444"/>
+    </SfMaps:ShapeSetting.ColorMappings>
+    </SfMaps:ShapeFileLayer:ShapeSetting>
     </SfMaps:ShapeFileLayer>               	  
 
 
@@ -97,19 +95,20 @@ Gets or sets the color for mapping.<br/><br/></td></tr>
 
 {% highlight c# %}
 
-{
+    {
 
     //..           
     layer.ShapeIdTableField ="STATE_NAME";
     layer.ShapeIdPath ="State";
-    layer.DataSource = GetDataSource ();
-    SetColorMapping(layer.ShapeSettings);
+    layer.DataSource = GetDataSource (); 
     layer.ShapeSettings.ShapeColorValuePath ="Candidate";
+     SetColorMapping(layer.ShapeSettings);
     //..
-}
+    }
 
-void SetColorMapping(ShapeSetting setting)
-{
+    void SetColorMapping(ShapeSetting setting)
+    
+     {
 
     List<ColorMapping> colorMappings= new List<ColorMapping>();
 
@@ -126,10 +125,11 @@ void SetColorMapping(ShapeSetting setting)
     colorMappings.Add(colorMapping2);
 
     setting.ColorMapping = colorMappings;
-}
+     }
 
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ![](Images/customization.png)  
@@ -141,6 +141,7 @@ When `AutoFillColors` property is set to true, shapes are filled with default 
 
 
 {% tabs %}
+
 {% highlight xaml %}
            
                                       
@@ -151,9 +152,10 @@ When `AutoFillColors` property is set to true, shapes are filled with default 
 
 {% highlight c# %}
         
-layer.ShapeSettings.AutoFillColors = true;
+      layer.ShapeSettings.AutoFillColors = true;
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ![](Images/palettes.png)  
@@ -176,3 +178,23 @@ Item Templates for Map Markers The maps control provides item template support f
 {% endhighlight %}
 
 ![](Images/MarkerTemplate.png)  
+
+
+
+
+      
+
+
+
+
+
+
+    
+   
+
+
+
+  
+
+
+

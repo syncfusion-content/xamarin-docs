@@ -9,11 +9,12 @@ documentation : ug
 
 # Overview
 
-The Essential Xamarin Carousel control allows navigating through image data in an interactive way so that they can be viewed or selected. Also provides various customization options for its item arrangements.
+The Essential Xamarin Carousel control allows navigating through image data in an interactive way so that they can be viewed or selected. Also, provides various customization options for its item arrangements.
+It has been available in Xamarin.Forms,Xamarin.Android and Xamarin.iOS platfoms also.
 
 ![](images/carousel.png)
 
-Key Features:
+## Key Features:
 
 * `Offset` - Support to specify the space between the unselected items in SfCarousel.
 * `Rotation Angle` - Options to rotate all the items to a specified angle.

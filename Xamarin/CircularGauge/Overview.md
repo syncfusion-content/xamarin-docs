@@ -15,7 +15,7 @@ Essential Gauge for Xamarin.Forms lets you visualize numeric values over a circu
 
 ## KEY FEATURES
 
-A **SfCircularGauge** is composed of a Scales that will be an integrated UI part of the SfCircularGauge.
+A `SfCircularGauge` is composed of a Scales that will be an integrated UI part of the SfCircularGauge.
 
 `SfCircularGauge` is composite UI element with following subparts:
 

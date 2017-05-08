@@ -23,6 +23,14 @@ documentation: ug
 * SouthEast,
 * SouthWest
 
+{% tabs %}
+
+{% highlight xaml %}
+ 
+     <gauge:SfCircularGauge x:Name="circulargauge" GaugeType="East"/> 
+
+{% endhighlight %}
+
 {% highlight c# %}
 
     SfCircularGauge circulargauge = new SfCircularGauge();
@@ -31,4 +39,5 @@ documentation: ug
 
 {% endhighlight %}
 
+{% endtabs %}
 ![](gauge-type_images/gauge-type.png)

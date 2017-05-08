@@ -145,6 +145,18 @@ The SfDataGrid control is available in Xamarin.Forms, Xamarin.Android and Xamari
 <td><i class="fa fa-check"></i></td>
 <td><i class="fa fa-check"></i></td>
 </tr>
+<tr>
+<td>Editing</td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-times"></i></td>
+</tr>
+<tr>
+<td>Resizing Columns</td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-times"></i></td>
+<td><i class="fa fa-times"></i></td>
+</tr>
 </table>
 
 ![](SfDataGrid_images/SfDataGrid-Xamarin_showcase1.png)

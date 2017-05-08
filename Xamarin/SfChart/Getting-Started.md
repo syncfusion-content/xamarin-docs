@@ -96,7 +96,7 @@ Run the project and check if you get following output to make sure you have conf
 Now, let us define a simple data model that represents a data point in [`SfChart`.](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html)
 
 {% highlight c# %}
-public class Model   
+public class Person   
 {   
     public string Name { get; set; }
 
@@ -104,21 +104,21 @@ public class Model
 }
 {% endhighlight %} 
 
-Next, create a view model class and initialize a list of `Model` objects as shown below,
+Next, create a view model class and initialize a list of `Person` objects as shown below,
 
 {% highlight c# %}
 public class ViewModel  
 {
-      public List<Model> Data { get; set; }      
+      public List<Person> Data { get; set; }      
 
       public ViewModel()       
       {
-            Data = new List<Model>()
+            Data = new List<Person>()
             {
-                new Model { Name = "David", Height = 180 },
-                new Model { Name = "Michael", Height = 170 },
-                new Model { Name = "Steve", Height = 160 },
-                new Model { Name = "Joel", Height = 182 }
+                new Person { Name = "David", Height = 180 },
+                new Person { Name = "Michael", Height = 170 },
+                new Person { Name = "Steve", Height = 160 },
+                new Person { Name = "Joel", Height = 182 }
             }; 
        }
  }
@@ -141,11 +141,11 @@ N> Add namespace of `ViewModel` class in your XAML page if you prefer to set `Bi
 
              xmlns:local="clr-namespace:ChartDemo"> 
    
-<ContentPage.BindingContext>
+    <ContentPage.BindingContext>
        
-	<local:ViewModel></local:ViewModel>
+	    <local:ViewModel></local:ViewModel>
    
-</ContentPage.BindingContext>
+    </ContentPage.BindingContext>
  
 </ContentPage>
 {% endhighlight %}
@@ -263,7 +263,7 @@ chart.Title.Text = "Chart";
 
 {% endtabs %}  
 
-Refer this [link](https://help.syncfusion.com/xamarin/sfchart/charttitle) to learn more about the options available in [`SfChart`]((https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html)) to customize chart title.
+Refer this [link](https://help.syncfusion.com/xamarin/sfchart/charttitle) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html) to customize chart title.
 
 ## Enable data labels
 

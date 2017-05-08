@@ -143,13 +143,15 @@ public class RowTemplate : Grid
 
 The `QueryRowDragging` event provides following properties in `QueryRowDraggingEventArgs`:
 
-* `From` - Returns the index of the row currently being dragged.
-* `To` – Returns the dragging index where you try to drop the row. 
-* `Reason` - Returns row dragging details as `QueryRowDraggingReason`.
-* `RowData` – Returns the underlying data associated with the dragged row.
+* `From` – Returns the index of the row currently being dragged.
+* `To` – Returns the dragging index where you try to drop the row.
+* `Position` - Returns the current x and y coordinates of the RowDragView.
+* `Reason` – Returns row dragging details as `QueryRowDraggingReason`.
+* `RowData`  – Returns the underlying data associated with the dragged row.
+* `CurrentRowData`  – Returns the corresponding row data, over which the row drag view is currently placed.
 * [Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs_properties(v=vs.110).aspx) – A Boolean property to cancel the event.
 
-## How to disable dragging for particular row?
+## Disable dragging for particular row
 
 Dragging can be disabled for a particular row by handling the `QueryRowDragging` event using conditions based on `QueryRowDraggingReason`. Refer following code sample to disable dragging for particular row.
 
@@ -165,7 +167,7 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 
 {% endhighlight %}
 
-## How to disable dropping when dragging over particular rows?
+## Disable dropping when dragging over particular rows
 
 Dropping can be disabled for particular rows while dragging a row.Refer following code sample to cancel dropping of particular row.
 
@@ -182,7 +184,7 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 
 {% endhighlight %}
 
-## How to disable dropping of particular row?
+## Disable dropping of particular row
 
 Dropping can be canceled for particular row by handling `QueryRowDragging` event using conditions based on `QueryRowDraggingReason`. Refer following code sample to cancel dropping of particular row.
 
@@ -198,7 +200,7 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 
 {% endhighlight %}
 
-## How to disable dropping at a particular position?
+## Disable dropping at a particular position
 
 Dropping at a particular position can be canceled by handling `QueryRowDragging` event using conditions based on `QueryRowDraggingReason`. Refer following code sample to cancel dropping at particular position.
 
@@ -214,7 +216,7 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 
 {% endhighlight %}
 
-## How to reorder the underlying data?
+## Reorder the underlying data
 
 Reordering changes directly on the underlying data can be done by handling `QueryRowDragging` event using conditions based on `QueryRowDraggingReason`. Refer following code sample to make permanent reordering changes.
 
@@ -229,6 +231,29 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
         var collection = (sender as SfDataGrid).ItemsSource as IList;
         collection.RemoveAt(e.From - 1);
         collection.Insert(e.To - 1, e.RowData);
+    }
+}
+
+{% endhighlight %}
+
+## Drop a grid row in the last position
+
+The `To` property of the `QueryRowDraggingEventArgs` denotes the current drop index of the dragged row when dragging over the grid rows. It returns the same index when you drag a row over the rows in last position or last but one. In order to programmatically track whether the dragged row is dropped at the last position or last but one, SfDataGrid provides the `Position` property in `QueryRowDraggingEventArgs` which denotes the position of the RowDragView.
+
+Refer the following code example in which the `Position` property is used to determine whether the row is dropped in the last position.
+
+{% highlight c# %}
+
+private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
+{
+    var totalHeight = dataGrid.RowColumnIndexToPoint(new RowColumnIndex(viewModel.OrdersInfo.Count, 0)).Y + this.dataGrid.RowHeight;
+    if (e.Reason == QueryRowDraggingReason.DragEnded)
+    {
+        if (Math.Ceiling(e.Position.Y + (dataGrid.RowHeight / 2)) > totalHeight && e.To == viewModel.OrdersInfo.Count)
+        {
+            //Will hit if the row is dropped at the last position                 
+            DisplayAlert("RowDragAndDrop info", "The row is dropped at the last position", "OK");
+        }
     }
 }
 

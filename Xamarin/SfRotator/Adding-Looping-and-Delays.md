@@ -21,12 +21,13 @@ N> By default, the property value is set to false.
 
 {% highlight xaml %}
 
-	<rotator:SfRotator x:Name="rotator" EnableAutoPlay="true" />
+	<syncfusion:SfRotator x:Name="rotator" EnableAutoPlay="true" />
 	
 {% endhighlight %}
 
 {% highlight C# %}
-
+    
+	SfRotator rotator = new SfRotator();
 	rotator.EnableAutoPlay = true;
 
 {% endhighlight %}
@@ -43,12 +44,13 @@ N> The property value should be in milliseconds.
 
 {% highlight xaml %}
 
-	<rotator:SfRotator x:Name="rotator" NavigationDelay="2000" />
+	<syncfusion:SfRotator x:Name="rotator" NavigationDelay="2000" />
 	
 {% endhighlight %}
 
 {% highlight C# %}
 
+    SfRotator rotator = new SfRotator();
 	rotator.NavigationDelay = 2000;
 
 {% endhighlight %}
@@ -63,12 +65,13 @@ The `EnableLooping` property specifies whether the items should navigate to firs
 
 {% highlight xaml %}
 
-	<rotator:SfRotator x:Name="rotator" EnableLooping="true" />
+	<syncfusion:SfRotator x:Name="rotator" EnableLooping="true" />
 	
 {% endhighlight %}
 
 {% highlight C# %}
 
+    SfRotator rotator = new SfRotator();
 	rotator.EnableLooping = true;
 
 {% endhighlight %}

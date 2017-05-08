@@ -67,7 +67,7 @@ Content = pdfViewerControl;
 {% endhighlight %}
 {% endtabs %}
 
-Alternatively, we can add the following Xaml code in our main page to make use of PdfViewerControl.
+Alternatively, we can add the following XAML code in our main page to make use of PdfViewerControl.
 
 {% tabs %}
 {% highlight xaml %}
@@ -78,7 +78,7 @@ Alternatively, we can add the following Xaml code in our main page to make use o
      
     <ContentPage.Content>
         <syncfusion:SfPdfViewer x:Name="pdfViewerControl">
-        </syncfusion:pdfViewerControl>
+        </syncfusion:SfPdfViewer>
     </ContentPage.Content>
 </ContentPage>
 

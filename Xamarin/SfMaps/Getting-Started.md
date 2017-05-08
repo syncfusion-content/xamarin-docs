@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Syncfusion Maps control for Xamarin.Forms
-description: A quick tour to initial users on Syncfusion maps control for Xamarin.Forms platform
+description: A quick tour about Syncfusion maps control in Xamarin.Forms platform
 platform: xamarin
 control: SfMaps 
 documentation: ug
@@ -111,15 +111,10 @@ Create a Maps instance in Main Activity and set Maps as a ContentView in 
 
 {% highlight c# %}
 
-protected override void OnCreate (Bundle savedInstanceState)
-{
+    SfMaps maps = new SfMaps ();
+    this.ContentView=maps;
     
-    base.OnCreate (savedInstanceState);
 
-    SfMaps maps = new SfMaps (this);
-    SetContentView (maps);
-    
-}
 
 {% endhighlight %}
 
@@ -152,24 +147,73 @@ These files need to be added in Asset folder.
 
 {% highlight c# %}
 	
-protected override void OnCreate (Bundle savedInstanceState)
-{
-    base.OnCreate (savedInstanceState);
 
-    SfMaps maps = new SfMaps (this);
+
+    SfMaps maps = new SfMaps ();
     ShapeFileLayer layer = new ShapeFileLayer ();
     layer.Uri = "usa_state.shp";
     maps.Layers.Add (layer);
-    SetContentView (maps);
+    this.ContentView=maps;
     
-}
+
 
 {% endhighlight %}
-
+ 
 {% endtabs %}
 
 ![](Images/Maps.png)
 
+## Steps for adding shapefiles 
+
+Android    
+     
+  * Add necessary shape files to the Assets folder of ProjectFileName.Droid.                       	
+    
+  * Right click on the added shape file and navigate to properties. 
+   	
+  * Choose `AndroidAsset` option under BuildAction of respective shape file. 
+
+iOS   
+  
+  * Add necessary shape files to the Assets folder of ProjectFileName.iOS.  
+    
+  * Right click on the added shape file and navigate to properties. 
+    
+  * Choose `BundleResource` option under BuildAction of respective shape file.
+
+
+ UWP
+   
+  * Add necessary shape files to the Assets folder of ProjectFileName.UWP.
+     
+  * Right click on the added shape file and navigate to properties. 
+ 
+  * Choose `EmbeddedResource` option under BuildAction of respective shape file.
+
+
+## GeoJson Support
+
+ The Maps control supports reading and loading GeoJson files. The GeoJson file contains attribute information for the spatial features and coordinates in a data set. 
+ 
+{% tabs %}
+
+{% highlight xaml %}
+        
+       <SfMaps:ShapeFileLayer Uri="world.json">
+       </SfMaps:ShapeFileLayer>               	  
+
+
+{% endhighlight %}
+
+
+ {% highlight c# %}
+     
+      ShapeFileLayer layer=new ShapeFileLayer();
+      layer.Uri = "world.json";
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ## Adding Marker to the Maps
 
@@ -189,22 +233,19 @@ Markers can be added into the shape layers. The below code snippets enables you 
 
 {% highlight c# %}
 	
-protected override void OnCreate (Bundle savedInstanceState)
-{
-    
-    base.OnCreate (savedInstanceState);
+
             
-    SfMaps maps = new SfMaps (this);
+    SfMaps maps = new SfMaps ();
     ShapeFileLayer layer = new ShapeFileLayer ();
-    SFMapMarker marker = new SFMapMarker ();
+    MapMarker marker = new MapMarker ();
     marker.Label = "California";
     marker.Latitude = 37;
     marker.Longitude = -120;
     layer.Markers.Add (marker);  
     maps.Layers.Add (layer);            
-    SetContentView (maps);
+    this.ContentView=maps;
     
-}
+
 
 {% endhighlight %}
 

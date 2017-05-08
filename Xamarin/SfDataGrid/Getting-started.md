@@ -33,19 +33,19 @@ The following list of assemblies need to be added as reference from the lib fold
 </tr>
 <tr>
 <td>PCL</td>
-<td>pcl\Syncfusion.Data.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfDataGrid.XForms.dll<br/></td>
+<td>pcl\Syncfusion.Data.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfDataGrid.XForms.dll<br/>Syncfusion.SfNumericTextBox.XForms.dll<br/></td>
 </tr>
 <tr>
 <td>Android Renderer</td>
-<td>pcl\Syncfusion.Data.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfDataGrid.XForms.dll<br/>android\Syncfusion.SfDataGrid.XForms.Android.dll<br/></td>
+<td>pcl\Syncfusion.Data.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfDataGrid.XForms.dll<br/>android\Syncfusion.SfDataGrid.XForms.Android.dll<br/>Syncfusion.SfNumericTextBox.Android.dll<br/>Syncfusion.SfNumericTextBox.XForms.Android.dll<br/>Syncfusion.SfNumericTextBox.XForms.dll<br/></td>
 </tr>
 <tr>
 <td>iOS Renderer</td>
-<td>pcl\Syncfusion.Data.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfDataGrid.XForms.dll<br/>ios-unified\Syncfusion.SfDataGrid.XForms.iOS.dll<br/></td>
+<td>pcl\Syncfusion.Data.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfDataGrid.XForms.dll<br/>ios-unified\Syncfusion.SfDataGrid.XForms.iOS.dll<br/>Syncfusion.SfNumericTextBox.iOS.dll<br/>Syncfusion.SfNumericTextBox.XForms.iOS.dll<br/>Syncfusion.SfNumericTextBox.XForms.dll<br/></td>
 </tr>
 <tr>
 <td>UWP Renderer</td>
-<td>pcl\Syncfusion.Data.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfDataGrid.XForms.dll<br/>uwp\Syncfusion.SfDataGrid.XForms.UWP.dll<br/></td>
+<td>pcl\Syncfusion.Data.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfDataGrid.XForms.dll<br/>uwp\Syncfusion.SfDataGrid.XForms.UWP.dll<br/>Syncfusion.SfInput.UWP.dll<br/>Syncfusion.SfShared.UWP.dll<br/>Syncfusion.SfNumericTextBox.XForms.UWP.dll<br/>Syncfusion.SfNumericTextBox.XForms.dll<br/></td>
 </tr>
 </table>
 
@@ -61,6 +61,11 @@ In order to use export to excel and export to PDF functionalities of SfDataGrid,
 <td>pcl\Syncfusion.SfGridConverter.XForms.dll<br/>pcl\Syncfusion.Compression.Portable.dll<br/>pcl\Syncfusion.Pdf.Portable.dll<br/>pcl\Syncfusion.XlsIO.Portable.dll<br/></td>
 </tr>
 </table>
+
+N> When there is a mismatch of Xamarin NuGet packages between your sample and SfDataGrid assemblies, an error `Could not load type Xamarin.Forms.ElementTemplate` will occur. Please refer the `ReadMe` to know the software requirements of Syncfusion controls.
+
+N> When there is a mismatch between Syncfusion NuGet packages among your projects, `System.IO.FileLoadException` will occur. To overcome this exception, install the same version of SfDataGrid assemblies in all your projects. 
+
 
 ## Launching the SfDataGrid on each platform
 
@@ -96,6 +101,34 @@ public MainPage()
     SfDataGridRenderer.Init();
     LoadApplication (new App ());
     …
+}
+{% endhighlight %}
+
+### ReleaseMode issue in UWP platform
+
+There is a known Framework issue in UWP platform. The custom controls will not render when deployed the application in `Release Mode`.
+
+The above problem can be resolved by initializing the SfDataGrid assemblies in `App.xaml.cs` in UWP project as like in below code snippet.
+
+{% highlight c# %}
+// In App.xaml.cs
+
+protected override void OnLaunched(LaunchActivatedEventArgs e)
+{
+    …
+
+    rootFrame.NavigationFailed += OnNavigationFailed;
+        
+    // you'll need to add `using System.Reflection;`
+    List<Assembly> assembliesToInclude = new List<Assembly>();
+
+    //Now, add all the assemblies your app uses
+    assembliesToInclude.Add(typeof(SfDataGridRenderer).GetTypeInfo().Assembly);
+
+    // replaces Xamarin.Forms.Forms.Init(e);        
+    Xamarin.Forms.Forms.Init(e, assembliesToInclude);
+        
+    …     
 }
 {% endhighlight %}
 
@@ -408,11 +441,31 @@ Refer the following code example to load the SfDataGrid control inside a StackLa
     <SearchBar Placeholder="UserName" TextChanged="searchBar_TextChanged" />
     <sfgrid:SfDataGrid x:Name="dataGrid"
                        ColumnSizer="Star"
-                       ItemsSource="{Binding OrdersInfo}"
+                       ItemsSource="{Binding OrderInfoCollection}"
                        VerticalOptions="FillAndExpand" />
 </StackLayout>
 {% endhighlight %}
 
+
 Refer the following screenshot for the final outcome 
 
 ![](SfDataGrid_images/SfDataGrid-in-StackLayout.jpeg)
+
+
+## Linker issue in Xamarin.Forms.iOS
+
+There are some known Framework issues in Xamarin.Forms.iOS platform.
+
+When creating SfDataGrid in `Xamarin.Forms` with `Linker behavior` in iOS renderer project as “Link Framework SDKs only”, sometimes `System.MethodMissingException` or `No method Count exists on type System.Linq.Queryable` exception will be thrown.
+
+The above exceptions can be resolved by using the below workaround.
+
+**Workaround:**
+
+The above exceptions can be resolved in two ways.
+ 
+1.	By setting LinkerBehavior as “Don’t Link” 
+2.	By setting custom linker argument in iOS renderer project as like in below screenshot,
+
+
+![](SfDataGrid_images/GettingStarted_img1.png)

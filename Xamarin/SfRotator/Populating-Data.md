@@ -84,13 +84,13 @@ SfRotator provides support to add a custom view as RotatorItems by designing a v
 
 {% highlight xaml %}
 
-<rotator:SfRotator x:Name="rotator"  Grid.Row="0" NavigationDelay="2000" ItemsSource="{Binding ImageCollection}" SelectedIndex="2" NavigationDirection="Horizontal" NavigationStripMode="Dots" BackgroundColor="#ececec" NavigationStripPosition="Bottom">
-  <rotator:SfRotator.ItemTemplate>
+<syncfusion:SfRotator x:Name="rotator"  Grid.Row="0" NavigationDelay="2000" ItemsSource="{Binding ImageCollection}" SelectedIndex="2" NavigationDirection="Horizontal" NavigationStripMode="Dots" BackgroundColor="#ececec" NavigationStripPosition="Bottom">
+  <syncfusion:SfRotator.ItemTemplate>
     <DataTemplate>
       <Image  Source="{Binding Image}"/>
     </DataTemplate>
-  </rotator:SfRotator.ItemTemplate>
-</rotator:SfRotator>
+  </syncfusion:SfRotator.ItemTemplate>
+</syncfusion:SfRotator>
 	  
 {% endhighlight %}
 
@@ -98,7 +98,7 @@ SfRotator provides support to add a custom view as RotatorItems by designing a v
 
 ## Through Rotator Item
 
-The ItemTemplate provides common template with different data, whereas if different views for every items is needed, it can also be provided using `ItemContent` property in SfRotatorItem class.
+The ItemTemplate provides common template with different data, whereas if different views for every items is needed, it can also be provided using `ItemContent` property  in SfRotatorItem class.
 
 {% tabs %}
 
@@ -122,8 +122,42 @@ img.VerticalOptions = LayoutOptions.Center;
 img.HeightRequest = 400;
 img.WidthRequest = 400;
 rotatorItem1.ItemContent =img;
-rotator.DataSource.Add (rotatorItem1);		
+rotator.DataSource.Add (rotatorItem1);
+
+this.Content=rotator;		
 	  
+{% endhighlight %}
+
+{% endtabs %}
+
+And also rotator provides a support to display only the Image data with `Image` property in SfRotatorItem class.
+
+{% tabs %}
+
+{% highlight C# %}
+
+public partial class RotatorControlPage : ContentPage
+{
+	public RotatorControlPage()
+	{
+		InitializeComponent();
+
+		SfRotator rotator = new SfRotator();
+
+		List<SfRotatorItem> collectionOfItems = new List<SfRotatorItem>();
+		collectionOfItems.Add(new SfRotatorItem() { Image = "movie1.png" });
+		collectionOfItems.Add(new SfRotatorItem() { Image = "movie2.png" });
+		collectionOfItems.Add(new SfRotatorItem() { Image = "movie3.png" });
+		collectionOfItems.Add(new SfRotatorItem() { Image = "movie4.png" });
+		collectionOfItems.Add(new SfRotatorItem() { Image = "movie5.png" });
+
+		rotator.DataSource = collectionOfItems;
+		this.Content = rotator;
+
+	}
+}
+
+
 {% endhighlight %}
 
 {% endtabs %}

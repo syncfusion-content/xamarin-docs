@@ -9,32 +9,168 @@ documentation: ug
 
 # Exporting
 
-SfDataGrid provides support for exporting the data to excel and PDF with several customization options like custom appearance, excluding specific columns, excluding headers, setting custom row height, setting custom column width, etc. It also provides support for Grouping, Filtering and Sorting when exporting.
+SfDataGrid provides support for exporting the data to excel and PDF with several customization options like custom appearance, excluding specific columns, excluding headers, setting custom row height, setting custom column width, etc. It also provides support for `Grouping`, `Filtering` and `Sorting` when exporting.
 
 In order to use export to excel and export to PDF functionalities of SfDataGrid, add the required assembly references to your application as discussed in the [Assembly deployment](/xamarin/sfdatagrid/getting-started#assembly-deployment) section.
 
+The below code illustrates how to create and display a SfDataGrid in view.
 
-## Export to excel
+{% tabs %}
+{% highlight xaml %}
+<Grid RowSpacing="10">
+    <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+    <StackLayout Grid.Row="0"
+                 HorizontalOptions="Center"
+                 Orientation="Horizontal">
+        <Button BackgroundColor="Gray"
+                Clicked="ExportToExcel"
+                FontSize="12"
+                Text="Export to Excel"
+                TextColor="White"
+                WidthRequest="110" />
+        <Button BackgroundColor="Gray"
+                Clicked="ExportToPdf"
+                FontSize="12"
+                Text="Export to PDF"
+                TextColor="White"
+                WidthRequest="110" />
+    </StackLayout>
 
-You can export data to excel by using the `ExportToExcel` method by passing the SfDataGrid as an argument. The following code example illustrates exporting data to excel using the `ExportToExcel` Method.
+    <sfgrid:SfDataGrid x:Name="dataGrid"
+                       Grid.Row="1"
+                       AutoGenerateColumns="false"
+                       ColumnSizer="Star"
+                       SelectionMode="Single">
+
+        <sfgrid:SfDataGrid.HeaderRowHeight>
+            <OnPlatform x:TypeArguments="x:Double"
+                        Android="40"
+                        WinPhone="55"
+                        iOS="40" />
+        </sfgrid:SfDataGrid.HeaderRowHeight>
+
+        <sfgrid:SfDataGrid.Columns x:TypeArguments="sfgrid:Columns">
+
+            <sfgrid:GridTextColumn HeaderFontAttribute="Bold"
+                                   HeaderText="OrderID"
+                                   HeaderTextAlignment="Start"
+                                   MappingName="OrderID"
+                                   Padding="5,0,5,0"
+                                   TextAlignment="End">
+                <sfgrid:GridTextColumn.HeaderCellTextSize>
+                    <OnPlatform x:TypeArguments="x:Double"
+                                Android="14"
+                                WinPhone="12"
+                                iOS="12" />
+                </sfgrid:GridTextColumn.HeaderCellTextSize>
+                <sfgrid:GridTextColumn.CellTextSize>
+                    <OnPlatform x:TypeArguments="x:Double"
+                                Android="14"
+                                WinPhone="12"
+                                iOS="12" />
+                </sfgrid:GridTextColumn.CellTextSize>
+            </sfgrid:GridTextColumn>
+
+            <sfgrid:GridTextColumn HeaderFontAttribute="Bold"
+                                   HeaderText="CustomerID"
+                                   HeaderTextAlignment="Start"
+                                   MappingName="CustomerID"
+                                   Padding="5,0,5,0"
+                                   TextAlignment="End">
+                <sfgrid:GridTextColumn.HeaderCellTextSize>
+                    <OnPlatform x:TypeArguments="x:Double"
+                                Android="14"
+                                WinPhone="12"
+                                iOS="12" />
+                </sfgrid:GridTextColumn.HeaderCellTextSize>
+                <sfgrid:GridTextColumn.CellTextSize>
+                    <OnPlatform x:TypeArguments="x:Double"
+                                Android="14"
+                                WinPhone="12"
+                                iOS="12" />
+                </sfgrid:GridTextColumn.CellTextSize>
+            </sfgrid:GridTextColumn>
+
+            <sfgrid:GridTextColumn HeaderFontAttribute="Bold"
+                                   HeaderText="Freight"
+                                   HeaderTextAlignment="Start"
+                                   MappingName="Freight"
+                                   Padding="5, 0, 0, 0"
+                                   TextAlignment="Start">
+                <sfgrid:GridTextColumn.HeaderCellTextSize>
+                    <OnPlatform x:TypeArguments="x:Double"
+                                Android="14"
+                                WinPhone="12"
+                                iOS="12" />
+                </sfgrid:GridTextColumn.HeaderCellTextSize>
+                <sfgrid:GridTextColumn.CellTextSize>
+                     <OnPlatform x:TypeArguments="x:Double"
+                                 Android="14"
+                                 WinPhone="12"
+                                 iOS="12" />
+                </sfgrid:GridTextColumn.CellTextSize>
+            </sfgrid:GridTextColumn>
+
+            <sfgrid:GridTextColumn HeaderFontAttribute="Bold"
+                                   HeaderText="Country"
+                                   HeaderTextAlignment="Start"
+                                   MappingName="Country"
+                                   Padding="5, 0, 0, 0"
+                                   TextAlignment="Start">
+                <sfgrid:GridTextColumn.HeaderCellTextSize>
+                    <OnPlatform x:TypeArguments="x:Double"
+                                Android="14"
+                                WinPhone="12"
+                                iOS="12" />
+                </sfgrid:GridTextColumn.HeaderCellTextSize>
+                <sfgrid:GridTextColumn.CellTextSize>
+                    <OnPlatform x:TypeArguments="x:Double"
+                                Android="14"
+                                WinPhone="12"
+                                iOS="12" />
+                </sfgrid:GridTextColumn.CellTextSize>
+            </sfgrid:GridTextColumn>
+
+        </sfgrid:SfDataGrid.Columns>
+    </sfgrid:SfDataGrid>
+</Grid>
+{% endhighlight %}
+{% highlight c# %}
+private void ExportToPdf(object sender, EventArgs e)
+{
+    // Perform exporting to PDF document operations here.
+}
+
+private void ExportToExcel_Clicked(object sender, EventArgs e)
+{
+    // Perform exporting to Excel sheet operations here.
+}
+{% endhighlight %}
+{% endtabs %}
+
+## Export to Excel
+
+You can export data to excel by using the `ExportToExcel` method by passing the SfDataGrid as an argument. The following code example illustrates exporting data to excel using the `ExportToExcel` method.
 
 {% highlight c# %}
-private void ExportToExcel()
+private void ExportToExcel(object sender, EventArgs e)
 {
-    DataGridExcelExportingController excelExport = new DataGridExcelExportingController ();
-    var excelEngine = excelExport.ExportToExcel (this.dataGrid);
-    var workbook = excelEngine.Excel.Workbooks [0];
-    MemoryStream stream = new MemoryStream ();
-    workbook.SaveAs (stream);
-    workbook.Close ();
-    excelEngine.Dispose ();
+    DataGridExcelExportingController excelExport = new DataGridExcelExportingController();
+    var excelEngine = excelExport.ExportToExcel(this.dataGrid);
+    var workbook = excelEngine.Excel.Workbooks[0];
+    MemoryStream stream = new MemoryStream();
+    workbook.SaveAs(stream);
+    workbook.Close();
+    excelEngine.Dispose();
 
-    if (Device.OS == TargetPlatform.WinPhone || Device.OS == TargetPlatform.Windows)
-        DependencyService.Get<ISaveWindowsPhone> ().Save ("DataGrid.xlsx", "application/msexcel", stream);
-    else
-        DependencyService.Get<ISave> ().Save ("DataGrid.xlsx", "application/msexcel", stream);
-} 
+    Xamarin.Forms.DependencyService.Get<ISave>().Save("DataGrid.xlsx", "application/msexcel", stream);
+}
 {% endhighlight %}
+
+![](SfDataGrid_images/Exporting_img1.png)
 
 ### Exporting Options
 
@@ -45,10 +181,10 @@ DataGridExcelExportingController excelExport = new DataGridExcelExportingCon
 DataGridExcelExportingOption exportOption = new DataGridExcelExportingOption ();
 exportOption.ExportColumnWidth = false;
 exportOption.DefaultColumnWidth = 150;
-var excelEngine = excelExport.ExportToExcel (this.dataGrid, exportOption); 
+var excelEngine = excelExport.ExportToExcel (this.dataGrid, exportOption);
 {% endhighlight %}
 
-SfDataGrid provides you with several [properties in DataGridExcelExportingOption](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption_properties.html) class to customize the grid while exporting it to excel. 
+SfDataGrid provides you with several properties in `DataGridExcelExportingOption` class to customize the grid while exporting it to excel.
 
 ### Events
 
@@ -61,12 +197,12 @@ The SfDataGrid provides you the following events for exporting to excel:
 
 The [DataGridRowExcelExportingEventHandler](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridRowExcelExportingEventHandler.html) delegate allows you to customize the styles for record rows and group caption rows. The `RowExporting` event is triggered with [DataGridRowExcelExportingEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridRowExcelExportingEventArgs.html) that contains the following properties:
 
-* Range – Specifies the excel range to be exported. It provides full access to the exporting cell in excel.
-* Record – Gets the collection of underlying data objects that are exported.
-* RowType – Specifies the row type by using `ExportRowType` Enum. You can use this property to check the row type and apply different styles based on the row type.
-* Worksheet – Sets the Worksheet properties such as sheet protection, gridlines, and so on. 
+* **Range** – Specifies the excel range to be exported. It provides full access to the exporting cell in excel.
+* **Record** – Gets the collection of underlying data objects that are exported.
+* **RowType** – Specifies the row type by using `ExportRowType` `Enum`. You can use this property to check the row type and apply different styles based on the row type.
+* **Worksheet** – Sets the `Worksheet` properties such as sheet protection, gridlines, and so on. 
 
-You can use this event to customize the properties of the GridRows that are exported to excel. The following code example illustrates how to change the background color of the record rows and caption summary rows while exporting.
+You can use this event to customize the properties of the grid rows that are exported to excel. The following code example illustrates how to change the background color of the record rows and caption summary rows while exporting.
 
 {% highlight c# %}
 //HandlingRowExportingEvent for exporting to excel
@@ -88,18 +224,20 @@ void excelExport_RowExporting (object sender, DataGridRowExcelExportingEvent
 }
 {% endhighlight %}
 
+![](SfDataGrid_images/Exporting_img2.png)
+
 #### CellExporting
 
 The [DataGridCellExcelExportingEventHandler](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridCellExcelExportingEventHandler.html) delegate allows you to customize the styles for header cells, record cells and group caption cells. The `CellExporting` event is triggered with [DataGridCellExcelExportingEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridCellExcelExportingEventArgs.html) that contains the following properties:
 
-* CellType – Specifies the cell type by using `ExportCellType` Enum. You can use this property to check the cell type and apply different cell styles based on the cell type.
-* CellValue – Contains the actual value that is exported to the excel. You can use this value to apply formatting in excel using Range property.
-* ColumnName – Specifies the Column Name (MappingName) of the exporting cell. You can apply formatting for a particular column by checking the ColumnName.
-* Handled – Determines whether the cell is exported to excel or not.
-* Range – Specifies the excel range to be exported. It provides full access to the exporting cell in excel.
-* Record – Gets the collection of underlying data objects that are exported. 
+* **CellType** – Specifies the cell type by using `ExportCellType` Enum. You can use this property to check the cell type and apply different cell styles based on the cell type.
+* **CellValue** – Contains the actual value that is exported to the excel. You can use this value to apply formatting in excel using `Range` property.
+* **ColumnName** – Specifies the column name (MappingName) of the exporting cell. You can apply formatting for a particular column by checking the `ColumnName`.
+* **Handled** – Determines whether the cell is exported to excel or not.
+* **Range** – Specifies the excel range to be exported. It provides full access to the exporting cell in excel.
+* **Record** – Gets the collection of underlying data objects that are exported. 
 
-You can use this event to customize the properties of the GridCells that are exported to excel. The following code example illustrates how to customize the background color, Foreground color and CellValue of the header cells, record cells and caption summary cells while exporting.
+You can use this event to customize the properties of the grid cells that are exported to excel. The following code example illustrates how to customize the background color, foreground color and cell value of the header cells, record cells and caption summary cells while exporting.
 
 {% highlight c# %}
 //HandlingCellExportingEvent for exporting to Excel
@@ -129,30 +267,30 @@ void excelExport_CellExporting(object sender, DataGridCellExcelExportingEvent
 }
 {% endhighlight %}
 
+![](SfDataGrid_images/Exporting_img3.png)
 
 ## Export to PDF
 
-You can export data to PDF by using the `ExportToPdf` method by passing the SfDataGrid as an argument. The following code example illustrates exporting data to PDF using the `ExportToPdf` Method.
+You can export data to PDF by using the `ExportToPdf` method by passing the SfDataGrid as an argument. The following code example illustrates exporting data to PDF using the `ExportToPdf` method.
 
 {% highlight c# %}
-private void ExportToPdf()
+private void ExportToPdf(object sender, EventArgs e)
 {
-    DataGridPdfExportingController pdfExport = new DataGridPdfExportingController ();
-    MemoryStream stream = new MemoryStream ();
-    var doc = pdfExport.ExportToPdf (this.dataGrid);
-    doc.Save (stream);
-    doc.Close (true);
+    DataGridPdfExportingController pdfExport = new DataGridPdfExportingController();
+    MemoryStream stream = new MemoryStream();
+    var doc = pdfExport.ExportToPdf(this.dataGrid);
+    doc.Save(stream);
+    doc.Close(true);
 
-    if (Device.OS == TargetPlatform.WinPhone || Device.OS == TargetPlatform.Windows)
-        DependencyService.Get<ISaveWindowsPhone> ().Save ("DataGrid.pdf", "application/pdf", stream);
-    else
-        DependencyService.Get<ISave> ().Save ("DataGrid.pdf", "application/pdf", stream);
+    Xamarin.Forms.DependencyService.Get<ISave>().Save("DataGrid.pdf", "application/pdf", stream);
 }
 {% endhighlight %}
 
+![](SfDataGrid_images/Exporting_img4.png)
+
 ### Exporting Options
 
-You can also export data to PDF with various customizing options while exporting the SfDataGrid by passing the grid and [DataGridPdfExportingOption](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridPdfExportOption.html) as arguments to the `ExportToPDF` method. The following code example illustrates this.
+You can also export data to PDF with various customizing options while exporting the SfDataGrid by passing the grid and [DataGridPdfExportingOption](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridPdfExportOption.html) as arguments to the `ExportToPdf` method. The following code example illustrates this.
 
 {% highlight c# %}
 DataGridPdfExportingController pdfExport = new DataGridPdfExportingController ();
@@ -161,23 +299,23 @@ exportOption.FitAllColumnsInOnePage = true;
 var doc = pdfExport.ExportToPdf (this.dataGrid, exportOption); 
 {% endhighlight %}
 
-SfDataGrid provides you with several [properties in DataGridPdfExportingOption](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridPdfExportOption_properties.html) class to customize the grid while exporting it to PDF. 
+SfDataGrid provides you with several properties in `DataGridPdfExportingOption` class to customize the grid while exporting it to PDF. 
 
 ### Events
 
 The SfDataGrid provides you the following events for exporting:
 
-* [RowExporting](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridPdfExportingController~RowExporting_EV.html) – This Event is raised while exporting a row at the execution time before the row is exported.
-* [CellExporting](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridPdfExportingController~CellExporting_EV.html) – This Event is raised while exporting a cell at the execution time before the cell is exported.
+* [RowExporting](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridPdfExportingController~RowExporting_EV.html) – This event is raised while exporting a row at the execution time before the row is exported.
+* [CellExporting](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridPdfExportingController~CellExporting_EV.html) – This event is raised while exporting a cell at the execution time before the cell is exported.
 
 #### RowExporting
 
-The [DataGridRowPdfExportingEventHandler](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridRowPdfExportingEventhandler.html) delegate allows you to customize the styles for record rows and group caption rows. The`RowExporting` event is triggered with [DataGridRowPdfExportingEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridRowPdfExportingEventArgs.html) that contains the following properties:
+The [DataGridRowPdfExportingEventHandler](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridRowPdfExportingEventhandler.html) delegate allows you to customize the styles for record rows and group caption rows. The `RowExporting` event is triggered with [DataGridRowPdfExportingEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridRowPdfExportingEventArgs.html) that contains the following properties:
 
-* PdfGrid – You can use this property to customize the PdfGrid’s properties such as Background, CellPadding, CellSpacing etc.
-* PdfRow – Specifies the `PdfGridRow` to be exported. You can use this to customize the properties of particular row. 
-* Record – Gets the collection of underlying data objects that are exported.
-* RowType – Specifies the row type by using ExportRowType Enum. You can use this property to check the row type and apply different styles based on the row type.
+* **PdfGrid** – You can use this property to customize the PdfGrid’s properties such as `Background`, `CellPadding`, `CellSpacing` etc.
+* **PdfRow** – Specifies the `PDFGridRow` to be exported. You can use this to customize the properties of particular row. 
+* **Record** – Gets the collection of underlying data objects that are exported.
+* **RowType** – Specifies the row type by using `ExportRowType` `Enum`. You can use this property to check the row type and apply different styles based on the row type.
 
 You can use this event to customize the properties of the grid rows that are exported to PDF. The following code example illustrates how to change the background color of the record rows and caption summary rows while exporting.
 
@@ -201,18 +339,20 @@ void pdfExport_RowExporting (object sender, DataGridRowPdfExportingEventArgs
 } 
 {% endhighlight %}
 
+![](SfDataGrid_images/Exporting_img5.png)
+
 #### CellExporting
 
 The [DataGridCellPdfExportingEventHandler](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridCellPdfExportingEventhandler.html) delegate allows you to customize the styles for header cells, record cells and group caption cells. The `CellExporting` event is triggered with [DataGridCellPdfExportingEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridCellPdfExportingEventArgs.html) that contains the following properties:
 
-* CellType – Specifies the cell type by using `ExportCellType` Enum. You can use this property to check the cell type and apply different cell styles based on the cell type.
-* CellValue – Contains the actual value that is exported to the PDF. You can use this value to apply formatting in PDF using Range property.
-* ColumnName – Specifies the Column Name (MappingName) of the exporting cell. You can apply formatting for a particular column by checking the ColumnName.
-* Handled – Determines whether the cell is exported to PDF or not.
-* PdfGrid – Specifies the PDFGridCell to be exported. You can use this to customize the properties (Background, Foreground, Font, Alignment etc.,) of particular cell.
-* Record – Gets the collection of underlying data objects that are exported.
+* **CellType** – Specifies the cell type by using `ExportCellType` `Enum`. You can use this property to check the cell type and apply different cell styles based on the cell type.
+* **CellValue** – Contains the actual value that is exported to the PDF. You can use this value to apply formatting in PDF using `Range` property.
+* **ColumnName** – Specifies the column name (MappingName) of the exporting cell. You can apply formatting for a particular column by checking the `ColumnName`.
+* **Handled** – Determines whether the cell is exported to PDF or not.
+* **PdfGrid** – Specifies the `PDFGridCell` to be exported. You can use this to customize the properties (Background, Foreground, Font, Alignment etc.,) of particular cell.
+* **Record** – Gets the collection of underlying data objects that are exported.
 
-You can use this event to customize the properties of the GridCells that are exported to PDF. The following code example illustrates how to customize the background color, Foreground color and CellValue of the header cells, record cells and caption summary cells while exporting.
+You can use this event to customize the properties of the grid cells that are exported to PDF. The following code example illustrates how to customize the background color, foreground color and cell value of the header cells, record cells and caption summary cells while exporting.
 
 {% highlight c# %}
 //HandlingCellExportingEvent for exporting to PDF
@@ -241,3 +381,284 @@ void pdfExport_CellExporting(object sender, DataGridCellPdfExportingEventArgs
     }
 }
 {% endhighlight %}
+
+![](SfDataGrid_images/Exporting_img6.png)
+
+#### HeaderAndFooterExporting
+
+The [PdfHeaderFooterEventHandler](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.PdfHeaderFooterEventHandler.html) delegate allows you to customize the header and footer of the exported PDF. The `HeaderAndFooterExporting` event is triggered with [PdfHeaderFooterEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.PdfHeaderFooterEventArgs.html) that contains the following properties:
+
+* **PdfDocumentTemplate** – Specifies the header and footer template for the exported PDF.
+
+The following code example illustrates how to customize the header and footer of the exported PDF document.
+
+{% highlight c#%}
+private void ExportToPdf(object sender, EventArgs e)
+{
+    DataGridPdfExportingController pdfExport = new DataGridPdfExportingController();
+    pdfExport.HeaderAndFooterExporting += pdfExport_HeaderAndFooterExporting;
+}
+
+private void pdfExport_HeaderAndFooterExporting(object sender, PdfHeaderFooterEventArgs e)
+{
+    var width = e.PdfPage.GetClientSize().Width;
+    PdfPageTemplateElement header = new PdfPageTemplateElement(width, 60);
+    var assmbely = Assembly.GetExecutingAssembly();
+    var imagestream = assmbely.GetManifestResourceStream("GettingStarted.SyncfusionLogo.jpg");
+    PdfImage pdfImage = PdfImage.FromStream(imagestream);
+    header.Graphics.DrawImage(pdfImage, new RectangleF(0, 0, width, 50));
+    e.PdfDocumentTemplate.Top = header;
+}
+{% endhighlight %}
+
+## Save a file
+
+The below code snippet explains how to save the converted PDF document and excel sheet in our local device.
+
+{% highlight c# %}
+// Need to define the Interfaces in-order to use it in platform wise using Dependency Service
+public interface ISave
+{
+    void Save(string filename, string contentType, MemoryStream stream);
+}
+public interface ISaveWindows
+{
+    Task Save(string filename, string contentType, MemoryStream stream);
+}
+
+// In Android renderer project
+public class SaveAndroid : ISave
+{
+    public void Save(string filename, string contentType, MemoryStream stream)
+    {
+        string exception = string.Empty;
+        string root = null;
+        if (Android.OS.Environment.IsExternalStorageEmulated)
+        {
+            root = Android.OS.Environment.ExternalStorageDirectory.ToString();
+        }
+        else
+            root = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+
+        Java.IO.File myDir = new Java.IO.File(root + "/Syncfusion");
+        myDir.Mkdir();
+        Java.IO.File file = new Java.IO.File(myDir, filename);
+        
+        if (file.Exists()) file.Delete();
+        
+        try
+        {
+            FileOutputStream outs = new FileOutputStream(file);
+            outs.Write(stream.ToArray());
+            outs.Flush();
+            outs.Close();
+        }
+        catch (Exception e)
+        {
+            exception = e.ToString();
+        }
+        if (file.Exists() && contentType != "application/html")
+        {
+            Android.Net.Uri path = Android.Net.Uri.FromFile(file);
+            string extension = Android.Webkit.MimeTypeMap.GetFileExtensionFromUrl(Android.Net.Uri.FromFile(file).ToString());
+            string mimeType = Android.Webkit.MimeTypeMap.Singleton.GetMimeTypeFromExtension(extension);
+            Intent intent = new Intent(Intent.ActionView);
+            intent.SetDataAndType(path, mimeType);
+            Forms.Context.StartActivity(Intent.CreateChooser(intent, "Choose App"));
+        }
+    }
+}
+
+// In iOS renderer project
+public class SaveIOS : ISave
+{
+    void ISave.Save(string filename, string contentType, MemoryStream stream)
+    {
+        string exception = string.Empty;
+        string path = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+        string filePath = Path.Combine(path, filename);
+        try
+        {
+            FileStream fileStream = File.Open(filePath, FileMode.Create);
+            stream.Position = 0;
+            stream.CopyTo(fileStream);
+            fileStream.Flush();
+            fileStream.Close();
+        }
+        catch (Exception e)
+        {
+            exception = e.ToString();
+        }
+        
+        if (contentType == "application/html" || exception != string.Empty)
+            return;
+        
+        UIViewController currentController = UIApplication.SharedApplication.KeyWindow.RootViewController;
+        while (currentController.PresentedViewController != null)
+            currentController = currentController.PresentedViewController;
+        UIView currentView = currentController.View;
+
+        QLPreviewController qlPreview = new QLPreviewController();
+        QLPreviewItem item = new QLPreviewItemBundle(filename, filePath);
+        qlPreview.DataSource = new PreviewControllerDS(item);
+
+        currentController.PresentViewController((UIViewController)qlPreview, true, (Action)null);
+    }
+}
+
+public class PreviewControllerDS : QLPreviewControllerDataSource
+{
+    private QLPreviewItem _item;
+
+    public PreviewControllerDS(QLPreviewItem item)
+    {
+        _item = item;
+    }
+
+    public override nint PreviewItemCount (QLPreviewController controller)
+    {
+        return (nint)1;
+    }
+
+    public override IQLPreviewItem GetPreviewItem (QLPreviewController controller, nint index)
+    {
+        return _item;
+    }
+}
+
+public class QLPreviewItemFileSystem : QLPreviewItem
+{
+    string _fileName, _filePath;
+
+    public QLPreviewItemFileSystem(string fileName, string filePath)
+    {
+        _fileName = fileName;
+        _filePath = filePath;
+    }
+
+    public override string ItemTitle
+    {
+        get
+        {
+            return _fileName;
+        }
+    }
+    public override NSUrl ItemUrl
+    {
+        get
+        {
+            return NSUrl.FromFilename(_filePath);
+        }
+    }
+}
+
+public class QLPreviewItemBundle : QLPreviewItem
+{
+    string _fileName, _filePath;
+    public QLPreviewItemBundle(string fileName, string filePath)
+    {
+        _fileName = fileName;
+        _filePath = filePath;
+    }
+
+    public override string ItemTitle
+    {
+        get
+        {
+            return _fileName;
+        }
+    }
+    public override NSUrl ItemUrl
+    {
+        get
+        {
+            var documents = NSBundle.MainBundle.BundlePath;
+            var lib = Path.Combine(documents, _filePath);
+            var url = NSUrl.FromFilename(lib);
+            return url;
+        }
+    }
+}
+
+// In UWP renderer project
+public class SaveWindows : ISaveWindows
+{
+    public async Task Save(string filename, string contentType, MemoryStream stream)
+    {
+        if (Device.Idiom != TargetIdiom.Desktop)
+        {
+            StorageFolder local = Windows.Storage.ApplicationData.Current.LocalFolder;
+            StorageFile outFile = await local.CreateFileAsync(filename, CreationCollisionOption.ReplaceExisting);
+            using (Stream outStream = await outFile.OpenStreamForWriteAsync())
+            {
+                outStream.Write(stream.ToArray(), 0, (int)stream.Length);
+            }
+            if (contentType != "application/html")
+                await Windows.System.Launcher.LaunchFileAsync(outFile);
+        }
+        else
+        {
+            StorageFile storageFile = null;
+            FileSavePicker savePicker = new FileSavePicker();
+            savePicker.SuggestedStartLocation = PickerLocationId.Desktop;
+            savePicker.SuggestedFileName = filename;
+            switch (contentType)
+            {
+                case "application/vnd.openxmlformats-officedocument.presentationml.presentation":
+                    savePicker.FileTypeChoices.Add("PowerPoint Presentation", new List<string>() { ".pptx", });
+                    break;
+
+                case "application/msexcel":
+                    savePicker.FileTypeChoices.Add("Excel Files", new List<string>() { ".xlsx", });
+                    break;
+
+                case "application/msword":
+                    savePicker.FileTypeChoices.Add("Word Document", new List<string>() { ".docx" });
+                    break;
+
+                case "application/pdf":
+                    savePicker.FileTypeChoices.Add("Adobe PDF Document", new List<string>() { ".pdf" });
+                    break;
+                
+                case "application/html":
+                    savePicker.FileTypeChoices.Add("HTML Files", new List<string>() { ".html" });
+                    break;
+            }
+            storageFile = await savePicker.PickSaveFileAsync();
+
+            using (Stream outStream = await storageFile.OpenStreamForWriteAsync())
+            {
+                outStream.Write(stream.ToArray(), 0, (int)stream.Length);
+                outStream.Flush();
+                outStream.Dispose();
+            }
+            stream.Flush();
+            stream.Dispose();
+            await Windows.System.Launcher.LaunchFileAsync(storageFile);
+        }
+    }
+}
+{% endhighlight %}
+
+## Exporting unbound columns
+
+`SfDataGrid.GridUnboundColumns` will be exported as like `SfDataGrid.GridTextColumns` without any specific codes. You can customize the `SfDataGrid.GridUnboundColumns` as like `SfDataGrid.GridTextColumns` using `CellExporting` and `RowExporting` events.
+
+The below code illustrates how to create and export unbound columns.
+
+{% highlight xaml %}
+<sfgrid:GridUnboundColumn Expression="OrderID * 12"
+                          HeaderFontAttribute="Bold"
+                          HeaderText="Unbound"
+                          HeaderTextAlignment="Start"
+                          MappingName="Unbound"
+                          Padding="5, 0, 0, 0"
+                          TextAlignment="Start">
+</sfgrid:GridUnboundColumn>
+{% endhighlight %}
+
+The below screenshot shows that the unbound column is exported to PDF document along with text columns.
+![](SfDataGrid_images/Exporting_img7.png)
+
+The below screenshot shows that the unbound column is exported to excel sheet along with text columns.
+![](SfDataGrid_images/Exporting_img8.png)

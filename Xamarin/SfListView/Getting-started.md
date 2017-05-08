@@ -123,11 +123,11 @@ Create a new Blank App (Xamarin.Forms.Portable) application in Xamarin Studio 
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:sync="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
              xmlns:local="clr-namespace:GettingStarted;assembly=GettingStarted"
              x:Class="GettingStarted.MainPage">
              
-  <sync:SfListView x:Name="listView" />
+  <syncfusion:SfListView x:Name="listView" />
 </ContentPage>
 {% endhighlight %}
 {% highlight c# %}
@@ -241,7 +241,7 @@ The following code example binds the collection created in previous step to `SfL
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:sync="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
              xmlns:local="clr-namespace:GettingStarted;assembly=GettingStarted"
              x:Class="GettingStarted.MainPage">
              
@@ -249,7 +249,7 @@ The following code example binds the collection created in previous step to `SfL
     <local:BookInfoRepository />
   </ContentPage.BindingContext>
 
-  <sync:SfListView x:Name="listView" 
+  <syncfusion:SfListView x:Name="listView" 
                    ItemsSource="{Binding BookInfo}" />
 </ContentPage>
 {% endhighlight %}
@@ -265,28 +265,22 @@ listView.ItemsSource = viewModel.BookInfo;
  
 {% tabs %}
 {% highlight xaml %}
-<xmlns:sync="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
-
-  <ContentPage.BindingContext>
-    <local:BookInfoRepository />
-  </ContentPage.BindingContext>
-
-  <sync:SfListView x:Name="listView" 
+<syncfusion:SfListView x:Name="listView" 
                    ItemsSource="{Binding BookInfo}"
                    ItemSize="100">
-    <sync:SfListView.ItemTemplate>
-      <DataTemplate>
-        <Grid Padding="10">
-          <Grid.RowDefinitions>
-            <RowDefinition Height="0.4*" />
-            <RowDefinition Height="0.6*" />
-          </Grid.RowDefinitions>
-          <Label Text="{Binding BookName}" FontAttributes="Bold" TextColor="Teal" FontSize="21" />
-          <Label Grid.Row="1" Text="{Binding BookDescription}" TextColor="Teal" FontSize="15"/>
-        </Grid>
-      </DataTemplate>
-    </sync:SfListView.ItemTemplate>
-  </sync:SfListView>
+  <syncfusion:SfListView.ItemTemplate>
+    <DataTemplate>
+      <Grid Padding="10">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="0.4*" />
+          <RowDefinition Height="0.6*" />
+        </Grid.RowDefinitions>
+        <Label Text="{Binding BookName}" FontAttributes="Bold" TextColor="Teal" FontSize="21" />
+        <Label Grid.Row="1" Text="{Binding BookDescription}" TextColor="Teal" FontSize="15"/>
+      </Grid>
+    </DataTemplate>
+  </syncfusion:SfListView.ItemTemplate>
+</syncfusion:SfListView>
 {% endhighlight %}
 {% highlight c# %}
 using Syncfusion.ListView.XForms;
@@ -326,6 +320,26 @@ Now run the application to render the following output. You can also download th
 
 ![](SfListView_images/SfListView-Xamarin_img2.png)
 
+## Layouts
+
+SfListView supports different layouts such as linear layout and grid layout. The linear layout arranges the items in a single column, whereas the grid layout arranges the items in a predefined number of columns which is defined by [SpanCount](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GridLayout~SpanCount.html) property of `GridLayout`. 
+[SfListView.LayoutManager](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LayoutManagerProperty.html) property is used to define the layout for SfListView. `LinearLayout` is default layout of SfListView.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfListView x:Name="listView" 
+                   ItemsSource="{Binding BookInfo}"
+                   ItemSize="100">
+    <syncfusion:SfListView.LayoutManager>
+      <syncfusion:GridLayout SpanCount="3" />
+    </syncfusion:SfListView.LayoutManager>
+</syncfusion:SfListView>
+{% endhighlight%}
+{% highlight c# %}
+listView.LayoutManager = new GridLayout() { SpanCount = 3 };
+{% endhighlight%}
+{% endtabs %}
+
 ## Sorting
 
 SfListView allows you to apply sorting on its data by using [SfListView.DataSource.SortDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~SortDescriptors.html) property. You can create a [SortDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.SortDescriptor.html) for the property to be sorted and add it into the `DataSource.SortDescriptors` collection.
@@ -339,16 +353,24 @@ SortDescriptor object holds following three properties:
  
 {% tabs %}
 {% highlight xaml %}
- xmlns:sync="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
- xmlns:dataSource="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable"
-  
-   <sync:SfListView.DataSource>
-       <dataSource:DataSource>
-         <dataSource:DataSource.SortDescriptors>
-            <dataSource:SortDescriptor PropertyName="Title" Direction="Ascending"/>
-         </dataSource:DataSource.SortDescriptors>
-       </dataSource:DataSource>
-   </sync:SfListView.DataSource> 
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:data="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable"
+             xmlns:local="clr-namespace:GettingStarted;assembly=GettingStarted"
+             x:Class="GettingStarted.MainPage">
+             
+  <syncfusion:SfListView x:Name="listView">
+    <syncfusion:SfListView.DataSource>
+      <data:DataSource>
+        <data:DataSource.SortDescriptors>
+          <data:SortDescriptor PropertyName="Title" Direction="Ascending"/>
+        </data:DataSource.SortDescriptors>
+      </data:DataSource>
+    </syncfusion:SfListView.DataSource>
+  </syncfusion:SfListView>
+</ContentPage>
 {% endhighlight %}
 {% highlight c# %}
  listView.DataSource.SortDescriptors.Add(new SortDescriptor()
@@ -415,13 +437,15 @@ It also provides support to stick the group header by enabling the property [SfL
 
 {% tabs %}
 {% highlight xaml %}
- <sync:SfListView.DataSource>
-   <dataSource:DataSource>
-     <dataSource:DataSource.GroupDescriptors>
-       <dataSource:GroupDescriptor PropertyName="Country"/>
-     </dataSource:DataSource.GroupDescriptors>
-   </dataSource:DataSource>
- </sync:SfListView.DataSource> 
+<syncfusion:SfListView x:Name="listView">
+  <syncfusion:SfListView.DataSource>
+    <data:DataSource>
+      <data:DataSource.GroupDescriptors>
+        <data:GroupDescriptor PropertyName="Country"/>
+      </data:DataSource.GroupDescriptors>
+    </data:DataSource>
+  </syncfusion:SfListView.DataSource>
+</syncfusion:SfListView>
 {% endhighlight %}
 {% highlight c# %}
  listView.DataSource.GroupDescriptors.Add(new GroupDescriptor()
@@ -441,18 +465,10 @@ You can handle the selection operations with the help of [SelectionChanging](htt
  
 {% tabs %}
 {% highlight xaml %}
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:sync="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
-             xmlns:local="clr-namespace:SelectionSample;assembly=SelectionSample"
-             x:Class="SelectionSample.MainPage">
-
-  <sync:SfListView x:Name="listView" 
-                   SelectionMode="Single"
-                   SelectionGesture="Tap"
-                   SelectionBackgroundColor="#E4E4E4"/>
-</ContentPage>
+<syncfusion:SfListView x:Name="listView" 
+                 SelectionMode="Single"
+                 SelectionGesture="Tap"
+                 SelectionBackgroundColor="#E4E4E4"/>
 {% endhighlight %}
 {% highlight c# %}
 listView.SelectionMode = SelectionMode.Single;
@@ -468,42 +484,30 @@ You can handle the header and footer either scrollable or sticky to the view by 
  
 {% tabs %}
 {% highlight xaml %}
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:sync="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
-             xmlns:local="clr-namespace:SwipingSample;assembly=SwipingSample"
-             x:Class="SwipingSample.MainPage">
-
-  <sync:SfListView x:Name="listView" 
-                   ItemsSource="{Binding InboxInfo}"
-                   IsStickyHeader="true"
-                   IsStickyFooter="true">
-     <sync:SfListView.HeaderTemplate>
-       <DataTemplate>
-        <Grid BackgroundColor="#4CA1FE" HeightRequest="45">
-          <Label LineBreakMode="NoWrap"
-                 Margin="10,0,0,0" Text="Inbox" FontAttributes="Bold"
-                 FontSize="18" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
-        </Grid>
-      </DataTemplate>
-     </sync:SfListView.HeaderTemplate>
-     <sync:SfListView.FooterTemplate>
-       <DataTemplate>
-        <Grid BackgroundColor="#DC595F">
-          <Grid.ColumnDefinitions>
-            <ColumnDefinition />
-            <ColumnDefinition />
-          </Grid.ColumnDefinitions>
-          <Image Grid.Column="0"
-                 Source="Edit.png" />
-          <Image Grid.Column="1"
-                  Source="Delete.png" />
-        </Grid>
-      </DataTemplate>
-     </sync:SfListView.FooterTemplate>
-  </sync:SfListView>
-</ContentPage>
+<sync:SfListView x:Name="listView"
+                 ItemsSource="{Binding InboxInfo}"
+                 IsStickyHeader="true"
+                 IsStickyFooter="true">
+  <sync:SfListView.HeaderTemplate>
+    <DataTemplate>
+      <Grid BackgroundColor="#4CA1FE" HeightRequest="45">
+        <Label Text="Inbox" FontAttributes="Bold" FontSize="18" TextColor="White" />
+      </Grid>
+    </DataTemplate>
+  </sync:SfListView.HeaderTemplate>
+  <sync:SfListView.FooterTemplate>
+    <DataTemplate>
+      <Grid BackgroundColor="#DC595F">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition />
+          <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Image Grid.Column="0" Source="Edit.png" />
+        <Image Grid.Column="1" Source="Delete.png" />
+      </Grid>
+    </DataTemplate>
+  </sync:SfListView.FooterTemplate>
+</sync:SfListView>
 {% endhighlight %}
 {% highlight c# %}
 ViewModel viewModel = new ViewModel ();

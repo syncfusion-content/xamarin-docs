@@ -21,13 +21,15 @@ The selected dates can be retrieved through `OnCalendarTapped` event which is ra
 
 {% highlight xaml %}
 
-	<CalendarSample:SfCalendar  x:Name="calendar" SelectionMode="MultiSelection"/>
+<syncfusion:SfCalendar  x:Name="calendar" SelectionMode="MultiSelection"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 	
-	calendar.SelectionMode=SelectionMode.MultiSelection;
+SfCalendar calendar = new SfCalendar();	
+calendar.SelectionMode=SelectionMode.MultiSelection;
+this.Content = calendar;
 	
 {% endhighlight %}
 

@@ -9,67 +9,46 @@ documentation: ug
 
 # Create Appointments
 
-SfCalendar control provides support to create appointments programmatically. 
+SfCalendar control provides support to add appointments on calendar's dates. By the way of adding collection of appointments, it will show the event with indicator on the desired dates.
 
-## Programmatic Creation
+Calendar's events can be added to SfCalendar using the following ways. `CalendarEventCollection` holds the details about the events to be rendered in calendar. Events contains the following attributes
 
-SfCalendar control has an built-in capability to display the events based on the calendar events collection provided to `DataSource` property. For events to be listed for a particular day, enable the inline feature in month view cell.
+1. StartTime
 
-The default UI of the inline view with events will be like list of events with a Gray background
+2. EndTime
 
-![](images/Event.png)
+3. Subject
 
-Inline event support can be toggled on / off with `ShowInLineEvent` property.
-    
-{% tabs %}    
+4. Color
 
-{% highlight xaml %}
+Finally add this collection of CalendarInlineEvents into `DataSource` of SfCalendar. The following code example will help to create an appointments on Calendar's date. For events to be listed for a particular day, enable the inline feature in month view cell.
 
-	<Calendar:SfCalendar  x:Name="calendar" ShowInlineEvents="true" />
+I> Inline event support can be toggled on / off with `ShowInlineEvents` property.
 
-{% endhighlight %}
-    
 {% highlight c# %}
-	
-	sfcalendar.ShowInLineEvents=true;
-	
+		   
+SfCalendar calendar = new SfCalendar();
+calendar.ShowInlineEvents = true;
+
+CalendarInlineEvent events = new CalendarInlineEvent();
+events.StartTime = new DateTime(2017, 5, 1,5,0,0);
+events.EndTime = new DateTime(2017, 5, 1,7,0,0);
+events.Subject = "Go to Meeting";
+events.Color = Color.Fuchsia;
+
+CalendarEventCollection collection = new CalendarEventCollection();
+collection.Add(events);
+
+calendar.DataSource = collection;
+
+this.Content = calendar;
+		   
 {% endhighlight %}
 
-{% endtabs %}
-	
 N> The Inline function will be available only in MonthView with Single selection mode.
-	
-### Adding Events using Collection
 
-Calendar Events collection can be provided to SfCalendar using the following steps. `CalendarEventCollection` is a class, which holds the details about the events to be rendered in calendar. 
+![](images/events.png)
 
-`CalendarInlineEvent` has some basic properties such as `StartTime`, `EndTime` and `Subject`.
-
-{% tabs %}
-{% highlight xaml %}
-
-	<Calendar:SfCalendar VerticalOptions="FillAndExpand"  ShowInlineEvents="true" x:Name="calendar" ViewMode="MonthView" >
-		<CalendarSample:SfCalendar.DataSource>
-			<CalendarSample:CalendarInlineEvent Color="Fuchsia" Subject="Go To Meeting" StartTime="2016,7,7" EndTime="2016,7,7"/>
-		</CalendarSample:SfCalendar.DataSource>
-	</Calendar:SfCalendar>
-
-{% endhighlight %}
-
-{% highlight c# %}
-		   
-    CalendarInlineEvent events=new CalendarInlineEvent();
-	events.StartTime=new DateTime(2016,1,1);
-	events.EndTime=new DateTime(2016,1,1);
-	events.Subject="Go to Meeting";
-
-	CalendarEventCollection collection = new CalendarEventCollection();
-	collection.Add(events);
-	calendar.DataSource = collection;
-		   
-{% endhighlight %}
-
-{% endtabs %}
 
 
 

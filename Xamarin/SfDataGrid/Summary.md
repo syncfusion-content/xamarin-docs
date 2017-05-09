@@ -9,11 +9,11 @@ documentation: UG
 
 # Summary
 
-SfDataGrid provides support to display the concise information about the data objects using summaries. SfDataGrid provides below two different types of summary rows.
+SfDataGrid provides support to display the concise information about the bound data objects using summaries. SfDataGrid provides below summary types.
 
-* Table Summary - Used to display the summary information of SfDataGrid either at top or bottom or at both of SfDataGrid.
+* **Table Summary** - Used to display the summary information of SfDataGrid either at top or bottom or at both of SfDataGrid.
 
-* Caption Summary - Used to display the summary information in the caption of the group.
+* **Caption Summary** - Used to display the summary information in the caption of the group.
 
 ![](SfDataGrid_images/Summary_img1.png)
 
@@ -27,11 +27,76 @@ N> Summary does not refresh with data. To update the summary for the newly added
 
 SfDataGrid provides built-in support for table summaries. The table summary value calculated based on all the records in SfDataGrid. SfDataGrid allows you to add any number of table summary rows either at top or bottom or at both of SfDataGrid.
 
-You can add table summary row in SfDataGrid by adding [GridTableSummaryRow](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridTableSummaryRow.html) to [TableSummaryRows](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~TableSummaryRows.html) collection.
+You can add table summary row in SfDataGrid by adding `GridTableSummaryRow` to `TableSummaryRows` collection.
 
 Below screenshot illustrates the table summary rows in SfDataGrid.
 
 ![](SfDataGrid_images/Summary_img2.png)
+
+You can also able to add more than one table summary rows either at top or bottom or at both positions in SfDataGrid.
+
+{% tabs %}
+{% highlight xaml%}
+<sfgrid:SfDataGrid.TableSummaryRows>
+    <sfgrid:GridTableSummaryRow Title="Total Salary :{TotalSalary} for {ProductCount} members"
+                                Position="Top"
+                                ShowSummaryInRow="True">
+        <sfgrid:GridTableSummaryRow.SummaryColumns>
+            <sfgrid:GridSummaryColumn Name="TotalSalary"
+                                      Format="{}{Sum:c}"
+                                      MappingName="Salary"
+                                      SummaryType="DoubleAggregate" />
+            <sfgrid:GridSummaryColumn Name="ProductCount"
+                                      Format="{}{Count}"
+                                      MappingName="Salary"
+                                      SummaryType="CountAggregate" />
+            </sfgrid:GridTableSummaryRow.SummaryColumns>
+        </sfgrid:GridTableSummaryRow>
+    <sfgrid:GridTableSummaryRow Position="Top" ShowSummaryInRow="True">
+        <sfgrid:GridTableSummaryRow.SummaryColumns>
+            <sfgrid:GridSummaryColumn Name="TotalSalary"
+                                      Format="{}{Sum}"
+                                      MappingName="Salary"
+                                      SummaryType="DoubleAggregate" />
+            </sfgrid:GridTableSummaryRow.SummaryColumns>
+        </sfgrid:GridTableSummaryRow>
+</sfgrid:SfDataGrid.TableSummaryRows>
+{% endhighlight %}
+
+{% highlight c#%}
+GridTableSummaryRow summaryRow1 = new GridTableSummaryRow();
+summaryRow1.Title = "Total Salary:{TotalSalary} for {ProductCount} members";
+summaryRow1.ShowSummaryInRow = true;
+summaryRow1.SummaryColumns.Add(new GridSummaryColumn()
+{
+    Name = "TotalSalary",
+    MappingName = "Salary",
+    Format = "{Sum:c}",
+    SummaryType = SummaryType.DoubleAggregate
+});
+summaryRow1.SummaryColumns.Add(new GridSummaryColumn()
+{
+    Name = "ProductCount",
+    MappingName = "Salary",
+    Format = "{Count}",
+    SummaryType = SummaryType.CountAggregate
+});
+sfgrid.TableSummaryRows.Add(summaryRow1);
+
+GridTableSummaryRow summaryRow2 = new GridTableSummaryRow();
+summaryRow2.ShowSummaryInRow = false;
+summaryRow2.SummaryColumns.Add(new GridSummaryColumn()
+{
+    Name = "TotalSalary",
+    MappingName = "Salary",
+    Format = "{Sum}",
+    SummaryType = SummaryType.DoubleAggregate
+});
+sfgrid.TableSummaryRows.Add(summaryRow2);
+{% endhighlight %}
+{% endtabs %}
+
+![](SfDataGrid_images/Summary_img3.png)
 
 ### Defining summary for row
 
@@ -80,7 +145,7 @@ sfgrid.TableSummaryRows.Add(summaryRow);
 
 The following screenshot shows the table summary row if `ShowSummaryInRow` is `true`.
 
-![](SfDataGrid_images/Summary_img3.png)
+![](SfDataGrid_images/Summary_img4.png)
 
 ### Defining summary for column
 
@@ -111,7 +176,7 @@ In the below code snippet, summary is defined for `Salary` column.
     <sfgrid:GridTableSummaryRow Name="TableSummary" ShowSummaryInRow="False">
         <sfgrid:GridTableSummaryRow.SummaryColumns>
             <sfgrid:GridSummaryColumn Name="TableSummary"
-                                      Format="{}{Sum:c}"
+                                      Format="{}{Sum}"
                                       MappingName="Salary"
                                       SummaryType="DoubleAggregate" />
         </sfgrid:GridTableSummaryRow.SummaryColumns>
@@ -126,7 +191,7 @@ summaryRow.SummaryColumns.Add(new GridSummaryColumn()
 {
     Name = "TableSummary",
     MappingName = "Salary",
-    Format = "{Sum:c}",
+    Format = "{Sum}",
     SummaryType = SummaryType.DoubleAggregate
 });
 sfgrid.TableSummaryRows.Add(summaryRow);
@@ -135,7 +200,7 @@ sfgrid.TableSummaryRows.Add(summaryRow);
 
 The following screenshot shows the table summary row if `ShowSummaryInRow` is `false`.
 
-![](SfDataGrid_images/Summary_img4.png)
+![](SfDataGrid_images/Summary_img5.png)
 
 ### Positioning TableSummaryRows
 
@@ -148,13 +213,9 @@ SfDataGrid allows you to add table summary rows either at top or bottom position
                                 ShowSummaryInRow="False">
         <sfgrid:GridTableSummaryRow.SummaryColumns>
             <sfgrid:GridSummaryColumn Name="TotalSalary"
-                                      Format="{}{Sum:c}"
+                                      Format="{}{Sum}"
                                       MappingName="Salary"
                                       SummaryType="DoubleAggregate" />
-            <sfgrid:GridSummaryColumn Name="ProductCount"
-                                      Format="{}{Count}"
-                                      MappingName="Salary"
-                                      SummaryType="CountAggregate" />
             </sfgrid:GridTableSummaryRow.SummaryColumns>
         </sfgrid:GridTableSummaryRow>
     <sfgrid:GridTableSummaryRow Position="Bottom"
@@ -176,26 +237,19 @@ SfDataGrid allows you to add table summary rows either at top or bottom position
 
 {% highlight c#%}
 GridTableSummaryRow topSummaryRow = new GridTableSummaryRow();
-topSummaryRow.Position = TableSummaryRowPosition.Top;
+topSummaryRow.Position = Position.Top;
 topSummaryRow.ShowSummaryInRow = false;
 topSummaryRow.SummaryColumns.Add(new GridSummaryColumn()
 {
     Name = "TotalSalary",
     MappingName = "Salary",
-    Format = "{Sum:c}",
+    Format = "{Sum}",
     SummaryType = SummaryType.DoubleAggregate
-});
-topSummaryRow.SummaryColumns.Add(new GridSummaryColumn()
-{
-    Name = "ProductCount",
-    MappingName = "Salary",
-    Format = "{Count}",
-    SummaryType = SummaryType.CountAggregate
 });
 sfgrid.TableSummaryRows.Add(topSummaryRow);
 
 GridTableSummaryRow bottomSummaryRow = new GridTableSummaryRow();
-bottomSummaryRow.Position = TableSummaryRowPosition.Bottom;
+bottomSummaryRow.Position = Position.Bottom;
 bottomSummaryRow.Title = "Total Salary:{TotalSalary} for {ProductCount} members";
 bottomSummaryRow.ShowSummaryInRow = true;
 bottomSummaryRow.SummaryColumns.Add(new GridSummaryColumn()
@@ -218,7 +272,7 @@ sfgrid.TableSummaryRows.Add(bottomSummaryRow);
 
 The below screenshot illustrates the positioning of table summary rows in SfDataGrid.
 
-![](SfDataGrid_images/Summary_img5.png)
+![](SfDataGrid_images/Summary_img6.png)
 
 
 ## Caption Summaries
@@ -227,7 +281,7 @@ SfDataGrid provides built-in support for caption summaries. The caption summary 
 
 Below screenshot shows the built-in caption summary of a group.
 
-![](SfDataGrid_images/Summary_img6.png)
+![](SfDataGrid_images/Summary_img7.png)
 
 
 ### Formatting built-in caption summary
@@ -242,7 +296,7 @@ The default group caption format is `{ColumnName}: {Key} - {ItemsCount} Items`.
 
 * **ItemsCount** - Displays the number of items in a group.
 
-![](SfDataGrid_images/Summary_img7.png)
+![](SfDataGrid_images/Summary_img8.png)
 
 You can customize this group caption text format by setting the `SfDataGrid.GroupCaptionTextFormat` property. The following code example illustrates how to customize group caption text in SfDataGrid.
 
@@ -251,7 +305,7 @@ You can customize this group caption text format by setting the `SfDataGrid.Grou
 <sfgrid:SfDataGrid x:Name="dataGrid"
                    AutoGenerateColumns="True"
                    ColumnSizer="Star"
-                   GroupCaptionTextFormat="ColumnName: {Key}">
+                   GroupCaptionTextFormat="{}{ColumnName}: {Key}">
 {% endhighlight %}
 
 {% highlight c#%}
@@ -262,7 +316,7 @@ dataGrid.GroupCaptionTextFormat = "{ColumnName} : {Key}";
 
 Below screenshot shows the final outcome of the above code.
 
-![](SfDataGrid_images/Summary_img8.png)
+![](SfDataGrid_images/Summary_img9.png)
 
 
 ### Defining summary for row
@@ -272,7 +326,7 @@ You can display summary information in a row by setting [GridSummaryRow.ShowSumm
 {% tabs %}
 {% highlight xaml%}
 <sfgrid:SfDataGrid.CaptionSummaryRow>
-    <sfgrid:GridSummaryRow Title="Total Salary :{TotalSalary} for {ProductCount} items"
+    <sfgrid:GridSummaryRow Title="Total Salary :{TotalSalary} for {ProductCount} members"
                            ShowSummaryInRow="True">
         <sfgrid:GridSummaryRow.SummaryColumns>
             <sfgrid:GridSummaryColumn Name="TotalSalary"
@@ -290,7 +344,7 @@ You can display summary information in a row by setting [GridSummaryRow.ShowSumm
 
 {% highlight c#%}
 GridSummaryRow summaryRow = new GridSummaryRow();
-summaryRow.Title = "Total Salary:{TotalSalary} for {ProductCount} items";
+summaryRow.Title = "Total Salary:{TotalSalary} for {ProductCount} members";
 summaryRow.ShowSummaryInRow = true;
 summaryRow.SummaryColumns.Add(new GridSummaryColumn()
 {
@@ -312,7 +366,7 @@ sfgrid.CaptionSummaryRow= summaryRow;
 
 The following screenshot shows the final outcome for both values of `ShowSummaryInRow` to `true`.
 
-![](SfDataGrid_images/Summary_img9.png)
+![](SfDataGrid_images/Summary_img10.png)
 
 
 ### Defining summary for column
@@ -344,7 +398,7 @@ In the below code snippet, summary is defined for `Salary` column.
     <sfgrid:GridSummaryRow Name="CaptionSummary" ShowSummaryInRow="False">
         <sfgrid:GridSummaryRow.SummaryColumns>
             <sfgrid:GridSummaryColumn Name="CaptionSummary"
-                                      Format="{}{Sum:c}"
+                                      Format="{}{Sum}"
                                       MappingName="Salary"
                                       SummaryType="DoubleAggregate" />
         </sfgrid:GridSummaryRow.SummaryColumns>
@@ -366,7 +420,7 @@ sfgrid.CaptionSummaryRow= summaryRow;
 {% endhighlight c#%}
 {% endtabs %}
 
-![](SfDataGrid_images/Summary_img10.png)
+![](SfDataGrid_images/Summary_img11.png)
 
 
 ## Formatting Summary
@@ -406,7 +460,7 @@ sfgrid.CaptionSummaryRow= summaryRow;
 {% endhighlight c#%}
 {% endtabs %}
 
-![](SfDataGrid_images/Summary_img11.png)
+![](SfDataGrid_images/Summary_img12.png)
 
 
 ### Formatting Summary Value
@@ -443,7 +497,7 @@ sfgrid.CaptionSummaryRow= summaryRow;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/Summary_img12.png)
+![](SfDataGrid_images/Summary_img13.png)
 
 
 ### Displaying additional Content in Summary
@@ -480,7 +534,7 @@ sfgrid.CaptionSummaryRow= summaryRow;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/Summary_img13.png)
+![](SfDataGrid_images/Summary_img14.png)
 
  
 ### Formatting Summary for Row using Title property
@@ -490,7 +544,7 @@ You can format the summary value for row using [GridSummaryRow.Title](https://he
 {% tabs %}
 {% highlight xaml%}
 <sfgrid:SfDataGrid.CaptionSummaryRow>
-    <sfgrid:GridSummaryRow Title="Total Salary:{TotalSalary} for {ProductCount} items" ShowSummaryInRow="True">
+    <sfgrid:GridSummaryRow Title="Total Salary:{TotalSalary} for {ProductCount} members" ShowSummaryInRow="True">
         <sfgrid:GridSummaryRow.SummaryColumns>
             <sfgrid:GridSummaryColumn Name="TotalSalary"
                                       Format="{}{Sum:c}"
@@ -507,7 +561,7 @@ You can format the summary value for row using [GridSummaryRow.Title](https://he
 
 {% highlight c#%}
 GridSummaryRow summaryRow = new GridSummaryRow();
-summaryRow.Title = "Total Salary:{TotalSalary} for {ProductCount} items";
+summaryRow.Title = "Total Salary:{TotalSalary} for {ProductCount} members";
 summaryRow.ShowSummaryInRow = true;
 summaryRow.SummaryColumns.Add(new GridSummaryColumn()
 {
@@ -527,7 +581,7 @@ sfgrid.CaptionSummaryRow= summaryRow;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/Summary_img14.png)
+![](SfDataGrid_images/Summary_img15.png)
 
 
 ## Aggregate Types
@@ -671,6 +725,6 @@ dataGrid.CaptionSummaryRow = summaryRow;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/Summary_img15.png)
+![](SfDataGrid_images/Summary_img16.png)
 
-You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SummaryDemo1538050345) .
+You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SummaryDemo610629184) .

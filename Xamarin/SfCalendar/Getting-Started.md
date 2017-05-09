@@ -13,48 +13,38 @@ This section explains how to implement simple holiday indicator application whic
 
 ## Add SfCalendar
 
-You can then add the assembly references to the respective projects as shown below.
+Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain and reference Essential Studio components in your solution; then refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfchart) link to know about the assemblies required for adding Calendar to your project.
 
-<table>
-<tr>
-<th>Project</th>
-<th>Required assemblies</th>
-</tr>
-<tr>
-<td>PCL</td>
-<td>pcl\Syncfusion.SfCalendar.XForms.dll</td>
-</tr>
-<tr>
-<td>Android</td>
-<td>android\Syncfusion.SfCalendar.Android.dll<br/>android\Syncfusion.SfCalendar.XForms.Android.dll<br/>android\Syncfusion.SfCalendar.XForms.dll</td>
-</tr>
-<tr>
-<td>iOS (Unified)</td>
-<td>iOS-unified\Syncfusion.SfCalendar.iOS.dll<br/>iOS-unified\Syncfusion.SfCalendar.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfCalendar.XForms.dll</td>
-</tr>
-<tr>
-<td>UWP</td>
-<td>uwp\Syncfusion.SfInput.UWP.dll<br/>uwp\Syncfusion.SfShared.UWP.dll<br/>uwp\Syncfusion.SfCalendar.XForms.dll<br/>uwp\Syncfusion.SfCalendar.XForms.UWP.dll</td>
-</tr>
-</table>
+## Launching the SfCalendar on each platform
 
-Currently an additional step is required for iOS project. We need to create an instance of the calendar custom renderer as shown below. 
+To use SfCalendar inside an application, each platform application must initialize the SfCalendar renderer. This initialization step varies from platform to platform and is discussed in the following sections.
 
-Create an instance of SfCalendarRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below
+### Android and  UWP
 
-{% tabs %}
+The Android and UWP launches the SfCalendar without any initialization and is enough to only initialize the Xamarin.Forms Framework to launch the application
+
+### iOS
+
+To launch SfCalendar in iOS, need to create an instance of SfCalendarRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below.
 
 {% highlight C# %}
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {
-    new SfCalendarRenderer ();
-}	
+	global::Xamarin.Forms.Forms.Init();
+
+	new SfCalendarRenderer();
+
+	LoadApplication(new App());
+
+	return base.FinishedLaunching(app, options);
+}
 
 {% endhighlight %}
 
-{% endtabs %}
+## Create a Simple SfCalendar
 
+The SfCalendar control is configured entirely in C# code or by using XAML markup. The following steps explain on how to create a SfCalendar and configure its elements,
 
 * Adding namespace for the added assemblies. 
 
@@ -62,13 +52,13 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% highlight xaml %}
 
-	<xmlns:CalendarSample="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.SfCalendar.XForms"/>
+xmlns:CalendarSample="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.SfCalendar.XForms"
 	
 {% endhighlight %}
 
 {% highlight c# %}
 
-	using Syncfusion.SfCalendar.XForms;
+using Syncfusion.SfCalendar.XForms;
 
 {% endhighlight %}
 
@@ -80,43 +70,59 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% highlight xaml %}
 
-	<CalendarSample:SfCalendar x:Name="calendar"/>
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:GettingStarted" 
+	xmlns:syncfusion="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.SfCalendar.XForms"
+	x:Class="GettingStarted.CalendarPage">
+<ContentPage.Content>
+ <syncfusion:SfCalendar x:Name="calendar" />	
+</ContentPage.Content>
+</ContentPage>
 	
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfCalendar calendar=new SfCalendar();
-this.Content=calendar;
-	
+using Syncfusion.SfCalendar.XForms;
+using Xamarin.Forms;
+
+namespace GettingStarted
+{
+public partial class CalendarPage : ContentPage
+{
+	public CalendarPage()
+	{
+		InitializeComponent();
+
+		SfCalendar calendar = new SfCalendar();
+
+		this.Content = calendar;
+	}
+}
+}
 {% endhighlight %}
 
 {% endtabs %}
-
-![](images/gettingstarted.png)
 
 ## Set Blackout Dates
 
 SfCalendar control provides option to black out the desired date which is in disabled state among the visible dates. Here, holidays are blacked out in the form which cannot be selected by the user. To black out the holiday, add them into `BlackoutDates` list. 
 
-N> Check the [BlackOutDates](http://help.syncfusion.com/android/sfcalendar/blackoutdates) section for more details.
-
-{% tabs %}
-
 {% highlight c# %}
 
-SfCalendar  calendar = new SfCalendar ();
+SfCalendar  calendar = new SfCalendar();
+
 List<DateTime> black_dates = new List<DateTime>();
+
 for (int i = 0; i < 5; i++)
 {
 	DateTime date = new DateTime(2018,4,1+i);
 	black_dates.Add(date);
 }
+
 calendar.BlackoutDates = black_dates;
 
 {% endhighlight %}
-
-{% endtabs %}
 
 ## Enable Multiple Selection
 
@@ -124,63 +130,40 @@ SfCalendar control allows user to select one or more dates at a time among the n
 
 To enable it set `MultiSelection` option in SelectionMode enumeration property.
 
-N> Check the [Selection Mode](http://help.syncfusion.com/xamarin/sfcalendar/select-multiple-dates)  section for more details.
-
 {% tabs %}
 
 {% highlight xaml %}
 
-	<CalendarSample:SfCalendar x:Name="calendar" SelectionMode="MultiSelection" />
+<syncfusion:SfCalendar x:Name="calendar" SelectionMode="MultiSelection" />
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfCalendar calendar = new SfCalendar ();
+SfCalendar calendar = new SfCalendar();
+
 calendar.SelectionMode=SelectionMode.MultiSelection;
-List<DateTime> black_dates = new List<DateTime>();
-for (int i = 0; i < 5; i++)
-{
-	DateTime date = new DateTime(2018,4,1+i);
-	black_dates.Add(date);
-}
-calendar.BlackoutDates = black_dates;
 
 {% endhighlight %}
 
 {% endtabs %}
-
 
 ## Restrict Dates
 
 SfCalendar allows to select dates that falls between certain range of dates. Here, restrict user to select dates only in current year.
-To specify the range, set start date and end date to `MinDate` and `MaxDate` properties respectively.
 
-
-{% tabs %}
-
-{% highlight xaml %}
-
-	<CalendarSample:SfCalendar  x:Name="calendar" SelectionMode="MultiSelection" MinDate="2014,4,1" MaxDate="2016,4,1"/>
-
-{% endhighlight %}
+N> To specify the range, set start date and end date to `MinDate` and `MaxDate` properties respectively.
 
 {% highlight c# %}
 
-SfCalendar  calendar = new SfCalendar ();
-calendar.SelectionMode=SelectionMode.MultiSelection;
-List<DateTime> black_dates = new List<DateTime>();
-for (int i = 0; i < 5; i++)
-{
-	DateTime date = new DateTime(2018,4,1+i);
-	black_dates.Add(date);
-}
-calendar.BlackoutDates = black_dates;
+SfCalendar  calendar = new SfCalendar();
+
 calendar.MinDate = new DateTime(2014,4,1);
 calendar.MaxDate = new DateTime(2018,4,1);
+
+this.Content = calendar;
 	
 {% endhighlight %}
 
-{% endtabs %}
 
-![](images/Gettingstartedfinal.png)
+![](images/GS.png)

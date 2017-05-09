@@ -85,6 +85,217 @@ this.dataGrid.EditorSelectionBehavior = EditorSelectionBehavior.MoveLast;
 
 N> Editing support for GridTemplateColumn and GridUnboundColumn are not provided yet.
 
+## Support for IEditableObject
+SfDataGrid supports to commit and roll back the changes in cell level when underlying data object implements IEditableObject interface.
+
+The editing changes in a cell will be committed only when user move to next cell by tapping.
+
+IEditableObject has the following methods to capture editing,
+
+BeginEdit – Gets called to begin edit on underlying data object when cell in a row get into edit mode.
+
+CancelEdit – Gets called when user cencels editing to discard the changes in a row since last BeginEdit call.
+
+EndEdit – Gets called when user move to the next cell by tapping to commit changes in underlying data object since last BeginEdit call.
+
+In the below code snippet explains the simple implementation of IEditableObject.
+
+{% highlight c# %}
+public class OrderInfo : INotifyPropertyChanged, IEditableObject
+{
+    public OrderInfo()
+    {
+    }
+
+    #region private variables
+
+    private int _orderID;
+    private int _employeeID;
+    private int _customerID;
+    private bool _isClosed;
+    private string _firstname;
+    private string _lastname;
+    private string _gender;
+    private string _shipCity;
+    private string _shipCountry;
+    private string _freight;
+    private DateTime _shippingDate;
+
+    #endregion
+
+    #region Public Properties
+
+    public int OrderID
+    {
+        get { return _orderID; }
+        set
+        {
+            this._orderID = value;
+            RaisePropertyChanged("OrderID");
+        }
+    }
+
+    public int EmployeeID
+    {
+        get { return _employeeID; }
+        set
+        {
+            this._employeeID = value;
+            RaisePropertyChanged("EmployeeID");
+        }
+    }
+
+    public int CustomerID
+    {
+        get { return _customerID; }
+        set
+        {
+            this._customerID = value;
+            RaisePropertyChanged("CustomerID");
+        }
+    }
+
+    public bool IsClosed
+    {
+        get { return _isClosed; }
+        set
+        {
+            this._isClosed = value;
+            RaisePropertyChanged("IsClosed");
+        }
+    }
+
+    public string FirstName
+    {
+        get { return _firstname; }
+        set
+        {
+            this._firstname = value;
+            RaisePropertyChanged("FirstName");
+        }
+    }
+
+    public string LastName
+    {
+        get { return _lastname; }
+        set
+        {
+            this._lastname = value;
+            RaisePropertyChanged("LastName");
+        }
+    }
+
+    public string Gender
+    {
+        get { return _gender; }
+        set
+        {
+            this._gender = value;
+            RaisePropertyChanged("Gender");
+        }
+    }
+
+    public string ShipCity
+    {
+        get { return _shipCity; }
+        set
+        {
+            this._shipCity = value;
+            RaisePropertyChanged("ShipCity");
+        }
+    }
+
+    public string ShipCountry
+    {
+        get { return _shipCountry; }
+        set
+        {
+            this._shipCountry = value;
+            RaisePropertyChanged("ShipCountry");
+        }
+    }
+
+    public string Freight
+    {
+        get { return _freight; }
+        set
+        {
+            this._freight = value;
+            RaisePropertyChanged("Freight");
+        }
+    }
+
+    public DateTime ShippingDate
+    {
+        get { return _shippingDate; }
+        set
+        {
+            this._shippingDate = value;
+            RaisePropertyChanged("ShippingDate");
+        }
+    }
+
+    #endregion
+
+    #region INotifyPropertyChanged implementation
+
+    public event PropertyChangedEventHandler PropertyChanged;
+
+	private void RaisePropertyChanged (String Name)
+	{
+		if (PropertyChanged != null)
+			this.PropertyChanged (this, new PropertyChangedEventArgs (Name));
+	}
+
+    private Dictionary<string, object> storedValues;
+
+
+    public void BeginEdit()
+    {
+        this.storedValues = this.BackUp();
+    }
+
+    public void CancelEdit()
+    {
+        if (this.storedValues == null)
+            return;
+
+        foreach (var item in this.storedValues)
+        {
+            var itemProperties = this.GetType().GetTypeInfo().DeclaredProperties;
+            var pDesc = itemProperties.FirstOrDefault(p => p.Name == item.Key);
+            if (pDesc != null)
+                pDesc.SetValue(this, item.Value);
+        }
+    }
+
+    public void EndEdit()
+    {
+        if (this.storedValues != null)
+        {
+            this.storedValues.Clear();
+            this.storedValues = null;
+        }
+        Debug.WriteLine("End Edit Called");
+    }
+
+    protected Dictionary<string, object> BackUp()
+    {
+        var dict = new Dictionary<string, object>();
+        var itemProperties = this.GetType().GetTypeInfo().DeclaredProperties;
+        foreach (var pDescriptor in itemProperties)
+        {
+            if (pDescriptor.CanWrite)
+                dict.Add(pDescriptor.Name, pDescriptor.GetValue(this));
+        }
+        return dict;
+    }
+
+    #endregion
+}
+{% endhighlight %}
+
+
 ## Editing Events
 SfDataGrid triggers the following events while editing.
 

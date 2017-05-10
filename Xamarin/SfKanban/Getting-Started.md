@@ -16,7 +16,7 @@ This section provides a quick overview for working with Essential Kanban for Xam
 Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain and reference Essential Studio components in your solution; then refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfkanban) link to know about the assemblies required for adding Kanban to your project.
 
 
-I> After adding the reference, currently, an additional step is required for iOS and UWP projects. We need to call the `SfKanbanRenderer.Init()` in iOS and UWP projects as shown in this [KB article](https://www.syncfusion.com/kb/7171).
+I> After adding the reference, currently, an additional step is required for iOS and UWP projects. We need to call `SfKanbanRenderer.Init()` in iOS and UWP projects as shown in this [KB article](https://www.syncfusion.com/kb/7171).
 
 I> For UWP alone, one more additional step is required if the project is built in release mode with .NET Native tool chain enabled. You can refer the [KB article](https://www.syncfusion.com/kb/7170) for more details.
 

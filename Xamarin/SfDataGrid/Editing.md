@@ -44,7 +44,7 @@ N> `GridColumn.AllowEditing` takes higher priority than `SfDataGrid.AllowEditing
 
 ## Entering into edit mode
 
-You can enter into edit mode by selecting the row and tapping the cell. Users can also choose to edit the cell in single tap or double tap by setting by [SfDataGrid.EditTapAction](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~EditTapAction.html) property.
+You can enter into edit mode by just tapping or double tapping the grid cells by setting the [SfDataGrid.EditTapAction](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~EditTapAction.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -318,7 +318,7 @@ SfDataGrid triggers the following events while editing.
 
 ### Begin editing
 
-SfDataGrid allows you to edit the cell programmatically by calling the [SfDataGrid.BeginEdit](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~BeginEdit.html) method. Calling this method makes that particular cell enter the edit mode after which you can customize the data manually. The below code example shows how to edit a cell programmatically.
+SfDataGrid allows you to edit the cell programmatically by calling the [SfDataGrid.BeginEdit](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~BeginEdit.html) method. Calling this method makes that particular cell enter the edit mode after which you can edit the data manually or programmatically. The below code example shows how to edit a cell programmatically.
 
 {% highlight c# %}
 this.dataGrid.Loaded += dataGrid_Loaded;
@@ -331,7 +331,7 @@ void dataGrid_Loaded(object sender, RoutedEventArgs e)
 
 ### End editing
 
-You can call the [SfDataGrid.EndEdit](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~EndEdit.html) method to programmatically end editing. Calling this method for a cell currently undergoing editing commits the edited value to the underlying collection and exits the edit mode. The below code example shows how to end the editing programmatically.
+You can call the [SfDataGrid.EndEdit](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~EndEdit.html) method to programmatically end editing. A cell that is currently in edit mode commits the edited value to the underlying collection and exits the edit mode when this method is called. The below code example shows how to end the editing programmatically.
 
 {% highlight c# %}
 this.dataGrid.EndEdit();

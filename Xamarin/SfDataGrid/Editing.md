@@ -44,7 +44,7 @@ N> `GridColumn.AllowEditing` takes higher priority than `SfDataGrid.AllowEditing
 
 ## Entering into edit mode
 
-You can enter into edit mode by selecting the row and touching the cell. Users can also choose to edit the cell in single tap or double tap by setting by [SfDataGrid.EditTapAction](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~EditTapAction.html) property.
+You can enter into edit mode by selecting the row and tapping the cell. Users can also choose to edit the cell in single tap or double tap by setting by [SfDataGrid.EditTapAction](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~EditTapAction.html) property.
 
 {% tabs %}
 {% highlight xaml %}

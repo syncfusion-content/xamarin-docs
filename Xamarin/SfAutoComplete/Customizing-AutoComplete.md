@@ -1,0 +1,180 @@
+---
+layout : post
+title : MinimumPrefixCharacter for Syncfusion AutoComplete Control in Xamarin.Forms
+description : Learn how to set the MinimumPrefixCharacter in AutoComplete
+platform : Xamarin
+control : AutoComplete
+documentation : ug
+---
+
+# Customizing AutoComplete
+
+AutoComplete provides user friendly customizing options for both entry part and drop down part. In this section, customizing entire AutoComplete control is explained.
+
+## Customizing the Entry
+
+TextColor, TextSize, FontAttributes, FontFamily and BorderColor are the properties used to customize the foreground color, font size, font attribute, font family and border color of the entry part.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+	<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+	<autocomplete:SfAutoComplete HeightRequest="40" WidthRequest="180" x:Name="autoComplete" Text="Sample text" TextColor="Red" TextSize="20" BorderColor="Yellow"/>
+	</StackLayout>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+	StackLayout stackLayout = new StackLayout() { VerticalOptions = LayoutOptions.Center, HorizontalOptions = LayoutOptions.Center };
+	SfAutoComplete autoComplete = new SfAutoComplete() { HeightRequest = 40, WidthRequest = 180 , Text = "Sample text", TextColor = Color.Red, TextSize = 20, BorderColor = Color.Yellow};
+	stackLayout.Children.Add(autoComplete);
+	this.Content = stackLayout;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Custom template for Suggestion items
+
+ItemTemplate property helps to decorate suggestion items with custom templates. The following code explains the steps to add an image to the suggestion list item.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+	<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+	<autocomplete:SfAutoComplete HeightRequest="40" WidthRequest="180" x:Name="autoComplete" DisplayMemberPath="Name" DataSource="{Binding PersonCollection}">
+		<autocomplete:SfAutoComplete.ItemTemplate>
+		<DataTemplate>
+			<StackLayout Orientation="Horizontal">
+			<Image Source="User.png" Width="12"/>
+			<Label Text="{Binding Name}" />
+			</StackLayout>
+		</DataTemplate>
+		</autocomplete:SfAutoComplete.ItemTemplate>
+	</autocomplete:SfAutoComplete>
+	</StackLayout>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+	public class Person
+	{
+	private int age;
+	public int Age
+	{
+	get { return age; }
+	set { age = value; }
+	}
+
+	private string name;
+	public string Name
+	{
+		get { return name; }
+		set { name = value; }
+	}
+	}
+
+	public class PersonViewModel
+	{
+	private ObservableCollection<Person> personCollection;
+	public ObservableCollection<Person> PersonCollection
+	{
+	get { return personCollection; }
+	set { personCollection = value; }
+	}
+
+	public PersonViewModel()
+	{
+	personCollection = new ObservableCollection<Person>();
+	personCollection.Add(new Person() { Age = 21, Name = "Aldan" });
+	personCollection.Add(new Person() { Age = 25, Name = "Clara" });
+	personCollection.Add(new Person() { Age = 23, Name = "Aldrin" });            
+	personCollection.Add(new Person() { Age = 25, Name = "Mark" });
+	personCollection.Add(new Person() { Age = 25, Name = "Lucas" });
+	personCollection.Add(new Person() { Age = 24, Name = "Alan" });
+	personCollection.Add(new Person() { Age = 25, Name = "James" });
+	personCollection.Add(new Person() { Age = 22, Name = "Aaron" });
+	}
+	}
+
+	public partial class SamplePage : ContentPage
+	{
+	public SamplePage()
+	{
+		InitializeComponent();       
+		autoComplete.BindingContext = new PersonViewModel();
+	}
+	}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](images/item-template.png)
+
+## Customizing the Suggestion Box
+
+### Changing Suggestion Item Height
+
+DropDownItemHeight property is used to modify the height of suggestion items in drop down list. The code example is given below:
+
+{% tabs %}
+
+{% highlight xaml %}
+
+	<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+	<autocomplete:SfAutoComplete HeightRequest="40" WidthRequest="180" x:Name="autoComplete" DropDownItemHeight="45"/>
+	</StackLayout>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+	List<String> countryNames = new List<String>();
+	countryNames.Add("Uganda");
+	countryNames.Add("Ukraine");
+	countryNames.Add("United Arab Emirates");
+	countryNames.Add("United Kingdom");
+	countryNames.Add("United States");
+	autoComplete.DataSource = countryNames;
+	autoComplete.DropDownItemHeight = 45;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Customizing Suggestion Items
+
+Suggestion box items can be customized using DropDownItemFontAttributes, DropDownItemFontFamily, DropDownTextSize and DropDownTextColor properties.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+	<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+	<autocomplete:SfAutoComplete HeightRequest="40" WidthRequest="180" x:Name="autoComplete" DropDownTextSize="16"/>
+	</StackLayout>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+	List<String> countryNames = new List<String>();
+	countryNames.Add("Uganda");
+	countryNames.Add("Ukraine");
+	countryNames.Add("United Arab Emirates");
+	countryNames.Add("United Kingdom");
+	countryNames.Add("United States");
+	autoComplete.DataSource = countryNames;
+	autoComplete.DropDownTextColor = Color.FromHex("#1976d2");
+	autoComplete.DropDownTextSize = 16;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](images/customizing-dropdown.png)

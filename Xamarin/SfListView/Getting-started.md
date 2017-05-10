@@ -33,19 +33,19 @@ The following list of assemblies need to be added as reference from the lib fold
 </tr>
 <tr>
 <td>PCL</td>
-<td>pcl\Syncfusion.DataSource.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfListView.XForms.dll<br/></td>
+<td>pcl\Syncfusion.DataSource.Portable.dll<br/>pcl\Syncfusion.Core.XForms.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfListView.XForms.dll<br/></td>
 </tr>
 <tr>
 <td>Android Renderer</td>
-<td>pcl\Syncfusion.DataSource.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfListView.XForms.dll<br/>android\Syncfusion.SfListView.XForms.Android.dll<br/></td>
+<td>pcl\Syncfusion.DataSource.Portable.dll<br/>pcl\Syncfusion.Core.XForms.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfListView.XForms.dll<br/>android\Syncfusion.SfListView.XForms.Android.dll<br/></td>
 </tr>
 <tr>
 <td>iOS Renderer</td>
-<td>pcl\Syncfusion.DataSource.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfListView.XForms.dll<br/>ios-unified\Syncfusion.SfListView.XForms.iOS.dll<br/></td>
+<td>pcl\Syncfusion.DataSource.Portable.dll<br/>pcl\Syncfusion.Core.XForms.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfListView.XForms.dll<br/>ios-unified\Syncfusion.SfListView.XForms.iOS.dll<br/></td>
 </tr>
 <tr>
 <td>UWP Renderer</td>
-<td>pcl\Syncfusion.DataSource.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfListView.XForms.dll<br/>uwp\Syncfusion.SfListView.XForms.UWP.dll<br/></td>
+<td>pcl\Syncfusion.DataSource.Portable.dll<br/>pcl\Syncfusion.Core.XForms.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfListView.XForms.dll<br/>uwp\Syncfusion.SfListView.XForms.UWP.dll<br/></td>
 </tr>
 </table>
 
@@ -98,7 +98,8 @@ In this walk through, you will create a new application that contains the SfList
 * [Adding SfListView in Xamarin.Forms](#adding-sflistview-in-xamarin.forms)     
 * [Creating Data Model](#creating-data-model-for-the-sflistview)  
 * [Binding data](#binding-data-to-sflistview) 
-* [Defining an ItemTemplate](#defining-an-itemtemplate) 
+* [Defining an ItemTemplate](#defining-an-itemtemplate)
+* [Layouts](#layouts)
 * [Sorting](#sorting) 
 * [Filtering](#filtering) 
 * [Grouping](#grouping) 
@@ -365,7 +366,7 @@ SortDescriptor object holds following three properties:
     <syncfusion:SfListView.DataSource>
       <data:DataSource>
         <data:DataSource.SortDescriptors>
-          <data:SortDescriptor PropertyName="Title" Direction="Ascending"/>
+          <data:SortDescriptor PropertyName="BookName" Direction="Ascending"/>
         </data:DataSource.SortDescriptors>
       </data:DataSource>
     </syncfusion:SfListView.DataSource>
@@ -375,7 +376,7 @@ SortDescriptor object holds following three properties:
 {% highlight c# %}
  listView.DataSource.SortDescriptors.Add(new SortDescriptor()
  {
-   PropertyName = "Title",
+   PropertyName = "BookName",
    Direction = ListSortDirection.Ascending,
  }); 
  listView.RefreshView();
@@ -390,12 +391,13 @@ The following code example illustrates how to filter the items based on the Titl
  
 {% highlight c# %}
 var grid = new Grid();
+var viewModel = new BookInfoRepository ();
 
 var searchbar = new SearchBar() { Placeholder = "Search here to filter" };
 searchbar.TextChanged += OnFilterTextChanged;
 
 listView = new SfListView();
-listView.ItemsSource = viewmodel.customerDetails;
+listView.ItemsSource = viewModel.BookInfo;
 
 grid.Children.Add(searchbar);
 grid.Children.Add(listView, 0, 1);
@@ -415,9 +417,9 @@ private bool FilterContacts(object obj)
   if (searchBar == null || searchBar.Text == null)
     return true;
 
-  var taskInfo = obj as TaskInfo;
-  if (taskInfo.Title.ToLower().Contains(searchBar.Text.ToLower())
-      || taskInfo.Title.ToLower().Contains(searchBar.Text.ToLower()))
+  var bookInfo = obj as BookInfo;
+  if (bookInfo.BookName.ToLower().Contains(searchBar.Text.ToLower())
+      || bookInfo.BookDescription.ToLower().Contains(searchBar.Text.ToLower()))
       return true;
   else
       return false;
@@ -441,7 +443,7 @@ It also provides support to stick the group header by enabling the property [SfL
   <syncfusion:SfListView.DataSource>
     <data:DataSource>
       <data:DataSource.GroupDescriptors>
-        <data:GroupDescriptor PropertyName="Country"/>
+        <data:GroupDescriptor PropertyName="BookName"/>
       </data:DataSource.GroupDescriptors>
     </data:DataSource>
   </syncfusion:SfListView.DataSource>
@@ -450,7 +452,7 @@ It also provides support to stick the group header by enabling the property [SfL
 {% highlight c# %}
  listView.DataSource.GroupDescriptors.Add(new GroupDescriptor()
  {
-   PropertyName = "Country",
+   PropertyName = "BookName",
  });
 {% endhighlight %}
 {% endtabs %}
@@ -484,18 +486,18 @@ You can handle the header and footer either scrollable or sticky to the view by 
  
 {% tabs %}
 {% highlight xaml %}
-<sync:SfListView x:Name="listView"
+<syncfusion:SfListView x:Name="listView"
                  ItemsSource="{Binding InboxInfo}"
                  IsStickyHeader="true"
                  IsStickyFooter="true">
-  <sync:SfListView.HeaderTemplate>
+  <syncfusion:SfListView.HeaderTemplate>
     <DataTemplate>
       <Grid BackgroundColor="#4CA1FE" HeightRequest="45">
         <Label Text="Inbox" FontAttributes="Bold" FontSize="18" TextColor="White" />
       </Grid>
     </DataTemplate>
-  </sync:SfListView.HeaderTemplate>
-  <sync:SfListView.FooterTemplate>
+  </syncfusion:SfListView.HeaderTemplate>
+  <syncfusion:SfListView.FooterTemplate>
     <DataTemplate>
       <Grid BackgroundColor="#DC595F">
         <Grid.ColumnDefinitions>
@@ -506,8 +508,8 @@ You can handle the header and footer either scrollable or sticky to the view by 
         <Image Grid.Column="1" Source="Delete.png" />
       </Grid>
     </DataTemplate>
-  </sync:SfListView.FooterTemplate>
-</sync:SfListView>
+  </syncfusion:SfListView.FooterTemplate>
+</syncfusion:SfListView>
 {% endhighlight %}
 {% highlight c# %}
 ViewModel viewModel = new ViewModel ();

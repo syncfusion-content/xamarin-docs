@@ -76,7 +76,7 @@ Call the `SfRangeNavigatorRenderer.Init()` in MainPage constructor of the Window
 
 public MainPage() 
 { 
-	new SfRangeNavigatorRenderer.Init(); 
+	SfRangeNavigatorRenderer.Init(); 
 	... 
 }
 
@@ -90,7 +90,7 @@ Call the `SfRangeNavigatorRenderer.Init()` in FinishedLaunching overridden metho
 public override bool FinishedLaunching(UIApplication app, NSDictionary options) 
 { 
 	... 
-	new SfRangeNavigatorRenderer.Init();  
+	SfRangeNavigatorRenderer.Init();  
 	... 
 }
 

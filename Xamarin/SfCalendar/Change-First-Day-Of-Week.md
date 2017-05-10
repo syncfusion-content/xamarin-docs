@@ -15,13 +15,17 @@ By default, the starting day will be taken from the device culture. This can be 
 
 {% highlight xaml %}
 
-	<CalendarSample:SfCalendar  x:Name="calendar" FirstDayofWeek="2"/>
+<syncfusion:SfCalendar  x:Name="calendar" FirstDayofWeek="2"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 	
-	calendar.FirstDayofWeek= 2;
+SfCalendar  calendar = new SfCalendar();
+
+calendar.FirstDayofWeek= 2;
+
+this.Content = calendar;
 	
 {% endhighlight %}
 

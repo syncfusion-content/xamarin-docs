@@ -32,7 +32,7 @@ The following list of assemblies need to be added as reference from the lib fold
 </tr>
 <tr>
 <td>PCL</td>
-<td>pcl\Syncfusion.SfPullToRefresh.XForms.dll<br/></td>
+<td>pcl\Syncfusion.SfPullToRefresh.XForms.dll<br/>pcl\Syncfusion.Core.XForms.dll<br/></td>
 </tr>
 <tr>
 <td>Android Renderer</td>
@@ -44,20 +44,7 @@ The following list of assemblies need to be added as reference from the lib fold
 </tr>
 <tr>
 <td>UWP Renderer</td>
-<td>pcl\Syncfusion.SfPullToRefresh.XForms.dll<br/>uwp\Syncfusion.SfPullToRefresh.XForms.UWP.dll<br/></td>
-</tr>
-</table>
-
-In order to check whether the content is `SfPullToRefresh.PullableContent` or not by implementing IPullToRefresh interface in your project.
-
-<table>
-<tr>
-<th>Project</th>
-<th>Required assemblies</th>
-</tr>
-<tr>
-<td>PCL</td>
-<td>pcl\Syncfusion.Core.XForms.dll<br/></td>
+<td>pcl\Syncfusion.SfPullToRefresh.XForms.dll<br/>pcl\Syncfusion.Core.XForms.dll<br/>uwp\Syncfusion.SfPullToRefresh.XForms.UWP.dll<br/></td>
 </tr>
 </table>
 
@@ -152,12 +139,12 @@ Create a new BlankApp (Xamarin.Forms.Portable) application in Xamarin Studio o
 using Syncfusion.SfPullToRefresh.XForms;
 using Xamarin.Forms;
 
-public partial class SfDataGridPage : ContentPage
+public partial class SfPullToRefreshPage : ContentPage
 {
     Random random = new Random();
     string[] monthsno = new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" };
     string[] monthsname = new string[] { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" };
-    public SfDataGridPage()
+    public SfPullToRefreshPage()
     {
         InitializeComponent();
         Month.Text = monthsno[1]+" month is "+ monthsname[1].ToString();

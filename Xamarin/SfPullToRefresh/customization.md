@@ -32,9 +32,7 @@ Gets or sets the content of the refresh view. `PullableContent` is the main view
 
 {%endhighlight%}
 
-
-
-## Transition
+## TransitionMode
 
 The `TransitionMode` property specifies the mode of the animations. It has the following two modes:
 
@@ -60,8 +58,7 @@ The default transition is `SlideOnTop`. That draws the RefreshContent on top of 
 
 {% endtabs %}
 
-![](overview_images/img1.png)
-
+![](overview_images/SlideOnTop.png)
 
 The following code example shows how to set `TransitionMode` as `Push` to SfPullToRefresh. This transition moves the refresh content and main content simultaneously.
 
@@ -80,6 +77,8 @@ The following code example shows how to set `TransitionMode` as `Push` to SfPull
 {%endhighlight%}
 
 {% endtabs %}
+
+![](overview_images/Push.png)
 
 ## RefreshContentThreshold
 

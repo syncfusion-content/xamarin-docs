@@ -27,4 +27,4 @@ SfPullToRefresh is a refresh control that allows you to interact and refresh the
 
 • `EndRefreshing()`: Stop the refreshing in runtime.
 
-![](overview_images/img1.png)
+![](overview_images/SlideOnTop.png)

@@ -39,7 +39,7 @@ The `TransitionMode` property specifies the mode of the animations. It has the f
 * `SlideOnTop`
 * `Push`
 
-The default transition is `SlideOnTop`. That draws the RefreshContent on top of the `PullableContent`.
+The default transition is `SlideOnTop` that draws the RefreshContent on top of the `PullableContent`.
 
 {% tabs %}
 
@@ -131,7 +131,7 @@ Gets or sets the value for the refresh content threshold, this indicate progress
 
 ## IsRefreshing
 
-Get and set the state for refreshing the view. View will get refresh while `IsRefreshing` property is set `true` and View refreshing will be stopped when you set `IsRefreshing` is `false`.
+Get or set the state for refreshing the view. View will get refresh while `IsRefreshing` property is set `true` and View refreshing will be stopped when you set `IsRefreshing` is `false`.
  
 {% tabs %}
 
@@ -155,7 +155,7 @@ Get and set the state for refreshing the view. View will get refresh while `IsRe
 
 ## ProgressBackgroundColor
 
-Get and set the background color to the progress indicator.
+Get or set the background color to the progress indicator.
 
 {% tabs %}
 
@@ -179,7 +179,7 @@ Get and set the background color to the progress indicator.
 
 ## ProgressStrokeColor
 
-Get and set the color to the progress indicator stroke 
+Get or set the color to the progress indicator stroke 
 
 {% tabs %}
 
@@ -203,7 +203,7 @@ Get and set the color to the progress indicator stroke
 
 ## ProgressStrokeWidth
 
-Get and set the width to the progress indicator stroke. 
+Get or set the width to the progress indicator stroke. 
 
 {% tabs %}
 
@@ -227,7 +227,7 @@ Get and set the width to the progress indicator stroke.
 
 ## RefreshContentWidth
 
-Get and set the width to the refresh content.
+Get or set the width to the refresh content.
 
 {% tabs %}
 
@@ -251,7 +251,7 @@ Get and set the width to the refresh content.
 
 ## RefreshContentHeight
 
-Get and set the width to the refresh content.
+Get or set the width to the refresh content.
 
 {% tabs %}
 
@@ -273,9 +273,9 @@ Get and set the width to the refresh content.
 
 {% endtabs %}
 
-# RunTime Support 
+## Programmatic Support 
 
-## StartRefreshing()
+### StartRefreshing()
 
 StartRefreshing method is used to refresh the content without interaction in pullable content. When invoke this StartRefreshing() method,then Progress indicator will be shown. 
 
@@ -290,9 +290,9 @@ StartRefreshing method is used to refresh the content without interaction in pul
 {% endtabs %}
 
 
-## EndRefreshing()
+### EndRefreshing()
 
-EndRefreshing method is used to stop the animation of refreshing method in runtime.
+EndRefreshing method is used to ends the progress animation of `SfPullToRefresh`.
 
 {% tabs %}
 

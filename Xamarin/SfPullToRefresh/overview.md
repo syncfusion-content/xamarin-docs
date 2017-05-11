@@ -13,7 +13,12 @@ SfPullToRefresh is a refresh control that allows you to interact and refresh the
  
 ## Use Case Scenarios
 
-`SfPullToRefresh` controls are mainly used in applications where the user needs to refresh the content on demand. This will be support to host any custom layout along with notifications has been provided.
+`SfPullToRefresh` controls are mainly used in applications where the user needs to refresh the content on demand. PullToRefresh controls are mainly used in applications where the user needs to refresh the content on demand. The main applications that use the PullToRefresh are listed below:
+
+1. Facebook
+2. Weather
+3. Gmail
+4. Live Score applications
 
 ## Key Features
 
@@ -23,8 +28,8 @@ SfPullToRefresh is a refresh control that allows you to interact and refresh the
 
 • `Colour`: Background and progress stroke color customization support for `SfPullToRefresh`. 
 
-• `StartRefreshing()`: Start the refreshing in runtime.
+• `StartRefreshing()`: Starts the programmatic refreshing.
 
-• `EndRefreshing()`: Stop the refreshing in runtime.
+• `EndRefreshing()`: Ends the programmatic refreshing.
 
 ![](overview_images/SlideOnTop.png)

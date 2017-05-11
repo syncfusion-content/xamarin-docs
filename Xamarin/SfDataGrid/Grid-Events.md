@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grouping | SfDataGrid | Xamarin | Syncfusion
+title: Grid Events | SfDataGrid | Xamarin | Syncfusion
 description: How to use different events exposed in SfDataGrid.
 platform: xamarin
 control: SfDataGrid

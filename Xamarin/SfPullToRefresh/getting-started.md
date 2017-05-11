@@ -32,7 +32,7 @@ The following list of assemblies need to be added as reference from the lib fold
 </tr>
 <tr>
 <td>PCL</td>
-<td>pcl\Syncfusion.SfPullToRefresh.XForms.dll<br/>pcl\Syncfusion.Core.XForms.dll<br/></td>
+<td>pcl\Syncfusion.Core.XForms.dll<br/>pcl\Syncfusion.SfPullToRefresh.XForms.dll<br/></td>
 </tr>
 <tr>
 <td>Android Renderer</td>
@@ -44,7 +44,7 @@ The following list of assemblies need to be added as reference from the lib fold
 </tr>
 <tr>
 <td>UWP Renderer</td>
-<td>pcl\Syncfusion.SfPullToRefresh.XForms.dll<br/>pcl\Syncfusion.Core.XForms.dll<br/>uwp\Syncfusion.SfPullToRefresh.XForms.UWP.dll<br/></td>
+<td>pcl\Syncfusion.Core.XForms.dll<br/>pcl\Syncfusion.SfPullToRefresh.XForms.dll<br/>uwp\Syncfusion.SfPullToRefresh.XForms.UWP.dll<br/></td>
 </tr>
 </table>
 
@@ -119,11 +119,6 @@ Create a new BlankApp (Xamarin.Forms.Portable) application in Xamarin Studio o
              xmlns:local="clr-namespace:XamarinForms;assembly=XamarinForms"
              xmlns:syncfusion="clr-namespace:Syncfusion.SfPullToRefresh.XForms;assembly=Syncfusion.SfPullToRefresh.XForms">
         <syncfusion:SfPullToRefresh x:Name="pullToRefresh"
-                                    IsRefreshing="False"
-                                    TransitionMode="SlideOnTop" 
-                                    ProgressBackgroundColor="Blue"
-                                    ProgressStrokeWidth="3" 
-                                    ProgressStrokeColor="White"
                                     PullingThershold="120"
                                     RefreshContentHeight="30"
                                     RefreshContentThreshold="30"
@@ -148,7 +143,6 @@ public partial class SfPullToRefreshPage : ContentPage
     {
         InitializeComponent();
         Month.Text = monthsno[1]+" month is "+ monthsname[1].ToString();
-        pullToRefresh.Refreshed += PullToRefresh_Refreshed;
         pullToRefresh.Pulling += PullToRefresh_Pulling;
         pullToRefresh.Refreshing += PullToRefresh_Refreshing;
     }
@@ -168,10 +162,6 @@ public partial class SfPullToRefreshPage : ContentPage
     {
         args.Cancel = false;
         var progress = args.Progress;
-    }
-    private void PullToRefresh_Refreshed(object sender , EventArgs args)
-    {
-        pullToRefresh.IsRefreshing = false;
     }
 }
 
@@ -226,90 +216,3 @@ public class MonthData : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-## Events
-
-The pulling event will be notified whenever the swipe gesture is started. This event will notify the listener each and every time until the refresh content height exceeds. When we release the gesture from pullable content, Refreshing event will be triggered. Now user can proceed to fetching the data from web or database. Once the data is fetched, we should call Refresh to method to complete all animations.
-
-There are three built-in events in the PullToRefresh control namely:
-
-1. `Pulling`
-2. `Refreshing`
-3. `Refreshed`
-
-### Pulling
-
-`Pulling` event is triggered whenever you start pulling down on the `PullableContent`. It is triggered as long as the pointer is pressed. `PullingEventArgs` contains the following properties
-
-* **Cancel** - You can cancel the pulling action based on the `Progress` value.
-* **Progress** - Gets the progress completion value.
-
-{% tabs %}
-{% highlight c# %}
-  pullToRefresh.Pulling += PullToRefresh_Pulling;
-
-  private void PullToRefresh_Pulling(object sender, PullingEventArgs args)
-  {
-    args.Cancel = false;
-    var progress = args.Progress;
-  }
-{% endhighlight %}
-{%highlight Xaml%}
-
-    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" PullingEvent="PullToRefresh_Pulling" />
-
-{%endhighlight%}
-
-{% endtabs %}
-
-### Refreshing
-
-`Refreshing` event is triggered once pointer is released. This event is triggered till the `IsRefreshing` property is set false.
-
-{% tabs %}
-
-{% highlight c# %}
-
-    pullToRefresh.Refreshing += PullToRefresh_Refreshing;
-   
-    private void PullToRefresh_Refreshing(object sender, EventArgs args)
-    {
-        pullToRefresh.IsRefreshing = true;
-        Device.StartTimer(new TimeSpan(0, 0, 2), () =>
-        {
-            pullToRefresh.IsRefreshing = false;
-            return false;
-        });
-    }
-{% endhighlight %}
-
-{%highlight Xaml%}
-
-    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" RefreshingEvent="PullToRefresh_Refreshing" />
-
-{%endhighlight%}
-
-
-{% endtabs %}
-
-### Refreshed
-
-`Refreshed` event is triggered once the refreshing is completed and `IsRefreshing` is set `False`.
-
-{% tabs %}
-{% highlight c# %}
-
-    pullToRefresh.Refreshed += PullToRefresh_Refreshed;
-    private void PullToRefresh_Refreshed(object sender , EventArgs args)
-    {
-        pullToRefresh.IsRefreshing = false;
-    }
-
-{% endhighlight %}
-
-{%highlight Xaml%}
-
-    <syncfusion:SfPullToRefresh x:Name=" pullToRefresh" RefreshedEvent="PullToRefresh_Refreshed" />
-
-{%endhighlight%}
-
-{% endtabs %}

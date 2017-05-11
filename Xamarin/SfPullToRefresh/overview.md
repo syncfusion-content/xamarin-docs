@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion PullToRefresh control for Xamarin.Forms.
-description: Overview and key features of PullToRefresh control in Xamarin.Forms
+title: Overview of Syncfusion SfPullToRefresh control for Xamarin.Forms.
+description: Overview and key features of SfPullToRefresh control in Xamarin.Forms
 platform: Xamarin.Forms 
 control: PullToRefresh 
 documentation: ug
@@ -9,24 +9,22 @@ documentation: ug
 
 # Overview
 
-SfPullToRefresh is a pullable panel which on pulling down the main content in order to refresh the data in the application application.  RefreshContent will be hidden and can be shown by swiping down on the main content and a refresh content, mainly a progress indicator or refresh indicator will be shown. The application will be refreshed once you have pulled down a certain distance.
+SfPullToRefresh is a refresh control that allows you to interact and refresh the view loaded in it. The SfPullToRefresh control allows you to refresh the view upon performing the pull to refresh action. A progress indicator or refresh indicator will be shown while start the pulling. The application will be refreshed once you have pulled down a certain distance and release the touch.
  
 ## Use Case Scenarios
 
-PullToRefresh controls are mainly used in applications where the user needs to refresh the content on demand. The main applications that use the PullToRefresh are listed below:
-
-1. Facebook
-2. Weather
-3. Gmail
-4. Live Score applications
+`SfPullToRefresh` controls are mainly used in applications where the user needs to refresh the content on demand. This will be support to host any custom layout along with notifications has been provided.
 
 ## Key Features
 
+• `TransitionMode`: Specifies the transition mode of the `SfPullToRefresh`. 
 
-• `Transition`: Specifies the transition type of the `PullToRefresh`. 
+• `Sizing`: Width, Height and progress stroke width customization support for `SfPullToRefresh`. 
 
-• `Position`: Specifies the position of the transition to take place.
+• `Colour`: Background and progress stroke color customization support for `SfPullToRefresh`. 
 
-• `Refresh()`: `Refresh()` refreshes the content being viewed.
+• `StartRefreshing()`: Start the refreshing in runtime.
+
+• `EndRefreshing()`: Stop the refreshing in runtime.
 
 ![](overview_images/img1.png)

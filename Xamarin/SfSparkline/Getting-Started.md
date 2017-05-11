@@ -15,7 +15,7 @@ This section explains you the steps required to populate the Sparkline with data
 
 Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain and reference Essential Studio components in your solution; then refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfsparkline) link to know about the assemblies required for adding Sparkline to your project.
 
-I> After adding the reference, currently, an additional step is required for iOS and UWP projects. We need to call `SfSparklineRenderer.Init()` as shown in this [KB article.](https://www.syncfusion.com/kb/7166)
+I> After adding the reference, currently, an additional step is required for iOS and UWP projects. We need to call the `SfSparklineRenderer.Init()` as shown in this [KB article.](https://www.syncfusion.com/kb/7166)
 
 I> For UWP alone, one more additional step is required if the project is built in release mode with .NET Native tool chain enabled. You can refer the [KB article](https://www.syncfusion.com/kb/7167) for more details.
 

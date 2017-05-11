@@ -18,12 +18,12 @@ As the subject of the appointments are given in the application level, it can be
 {% highlight c# %}
     
     //creating new instance for schedule
-    SfSchedule sfschedule = new SfSchedule();
+    SfSchedule schedule = new SfSchedule();
     //setting schedule view 
-    sfschedule.ScheduleView=(ScheduleView.WeekView);
+    schedule.ScheduleView=(ScheduleView.WeekView);
     //setting locale for the control 
-    sfschedule.Locale=("fr","FR");
-    this.Content= sfschedule;
+    schedule.Locale=("fr","FR");
+    this.Content= schedule;
     
 {% endhighlight %}
 

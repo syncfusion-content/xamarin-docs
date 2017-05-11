@@ -25,8 +25,8 @@ Create the collection of the ScheduleAppointments by setting required details us
 {% highlight c# %}
 
 	//creating new instance for schedule
-	SfSchedule sfschedule=new SfSchedule();
-	sfschedule.ScheduleView = ScheduleView.WeekView;
+	SfSchedule schedule=new SfSchedule();
+	schedule.ScheduleView = ScheduleView.WeekView;
 	ScheduleAppointmentCollection appointmentCollection = new ScheduleAppointmentCollection();
 
 	//Creating new event
@@ -41,8 +41,8 @@ Create the collection of the ScheduleAppointments by setting required details us
 	clientMeeting.Color = Color.Blue;
 	clientMeeting.Subject = "ClientMeeting";
 	appointmentCollection.Add(clientMeeting);
-	sfschedule.DataSource = appointmentCollection;
-	this.Content= sfschedule;
+	schedule.DataSource = appointmentCollection;
+	this.Content= schedule;
 
 {% endhighlight %}
 
@@ -53,11 +53,11 @@ AllDayAppointment is for setting appointment for full day by using `ShowAllDay` 
 {% highlight c# %}
 
 	//creating new instance for schedule
-	SfSchedule sfschedule=new SfSchedule();
-	sfschedule.ScheduleView = ScheduleView.WeekView;
-	WeekViewSettings weekViewSeetings = new WeekViewSettings();
-	weekViewSeetings.ShowAllDay = true;
-	sfschedule.WeekViewSettings = weekViewSeetings;
+	SfSchedule schedule=new SfSchedule();
+	schedule.ScheduleView = ScheduleView.WeekView;
+	WeekViewSettings weekViewSettings = new WeekViewSettings();
+	weekViewSettings.ShowAllDay = true;
+	schedule.WeekViewSettings = weekViewSettings;
 	ScheduleAppointmentCollection appointmentCollection = new ScheduleAppointmentCollection();
 
 	//Creating new event
@@ -73,8 +73,8 @@ AllDayAppointment is for setting appointment for full day by using `ShowAllDay` 
 	clientMeeting.Subject = "ClientMeeting";
 	clientMeeting.IsAllDay = true;
 	appointmentCollection.Add(clientMeeting);
-	sfschedule.DataSource = appointmentCollection;
-	this.Content= sfschedule;
+	schedule.DataSource = appointmentCollection;
+	this.Content= schedule;
 
 {% endhighlight %}
 

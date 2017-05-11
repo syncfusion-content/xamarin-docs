@@ -43,7 +43,7 @@ You can restrict/allocate certain timeslot as Non-accessible block using `NonAcc
 	nonAccessibleBlock.Color = Color.Black;
 	nonAccessibleBlocksCollection.Add (nonAccessibleBlock);
 	dayViewSettings.NonAccessibleBlocks =nonAccessibleBlocksCollection;
-	sfschedule.DayViewSettings = dayViewSettings;
+	schedule.DayViewSettings = dayViewSettings;
 
 {% endhighlight %}
 
@@ -84,7 +84,7 @@ You can restrict/allocate certain timeslot as Non-accessible block using `NonAcc
 	nonAccessibleBlock.Color = Color.Black;
 	nonAccessibleBlocksCollection.Add (nonAccessibleBlock);
 	weekViewSettings.NonAccessibleBlocks = nonAccessibleBlocksCollection;
-	sfschedule.WeekViewSettings = weekViewSettings;
+	schedule.WeekViewSettings = weekViewSettings;
 
 {% endhighlight %}
 
@@ -128,9 +128,9 @@ You can restrict/allocate certain timeslot as Non-accessible block using `NonAcc
 	nonAccessibleBlock.Color = Color.Black;
 	nonAccessibleBlocksCollection.Add (nonAccessibleBlock);
 	workWeekViewSettings.NonAccessibleBlocks = nonAccessibleBlocksCollection;
-	sfschedule.WorkWeekViewSettings = workWeekViewSettings;
-	sfschedule.WorkWeekViewSettings = (workWeekViewSettings);
-	this.Content= sfschedule;
+	schedule.WorkWeekViewSettings = workWeekViewSettings;
+	schedule.WorkWeekViewSettings = (workWeekViewSettings);
+	this.Content= schedule;
 
 {% endhighlight %}
 
@@ -167,7 +167,7 @@ You can restrict/allocate certain month cell as blackout days using `BlackoutDat
 
 	monthViewSettings.MonthLabelSettings = monthLabelSettings;
 	schedule.MonthViewSettings = monthViewSettings;
-	this.Content = sfschedule;
+	this.Content = schedule;
 
 {% endhighlight %}
 

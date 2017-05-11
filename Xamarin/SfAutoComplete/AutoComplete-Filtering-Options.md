@@ -35,28 +35,28 @@ Displays all the matches that starts with the typed characters in control. This 
 
 {% highlight xaml %}
 
-	<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
 	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" SuggestionMode="StartsWith"/>                            
-	</StackLayout>
+</StackLayout>
 
 {% endhighlight %}
 	
 {% highlight c# %}
 	
-	List<String> countryNames = new List<String>();
-	countryNames.Add("Uganda");
-	countryNames.Add("Ukraine");
-	countryNames.Add("United Arab Emirates");
-	countryNames.Add("United Kingdom");
-	countryNames.Add("United States");
-	autoComplete.DataSource = countryNames;
-	autoComplete.SuggestionMode= SuggestionMode.StartsWith;
+List<String> countryNames = new List<String>();
+countryNames.Add("Uganda");
+countryNames.Add("Ukraine");
+countryNames.Add("United Arab Emirates");
+countryNames.Add("United Kingdom");
+countryNames.Add("United States");
+autoComplete.DataSource = countryNames;
+autoComplete.SuggestionMode= SuggestionMode.StartsWith;
 	 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/starts-with.png)
+![](images/AutoComplete-Filtering-Options/starts-with.png)
 
 ### Filtering Words that Starts with Input Text - CaseSensitive
 
@@ -66,28 +66,28 @@ Displays all the matches that starts with the typed characters in control. This 
 
 {% highlight xaml %}
 
-	<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
 	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" SuggestionMode="StartsWithCaseSensitive"/>                            
-	</StackLayout>
+</StackLayout>
 
 {% endhighlight %}
 
 {% highlight c# %}
 	
-	List<String> countryNames = new List<String>();
-	countryNames.Add("Uganda");
-	countryNames.Add("Ukraine");
-	countryNames.Add("United Arab Emirates");
-	countryNames.Add("United Kingdom");
-	countryNames.Add("United States");
-	autoComplete.DataSource = countryNames;
-	autoComplete.SuggestionMode= SuggestionMode.StartsWithCaseSensitive;
+List<String> countryNames = new List<String>();
+countryNames.Add("Uganda");
+countryNames.Add("Ukraine");
+countryNames.Add("United Arab Emirates");
+countryNames.Add("United Kingdom");
+countryNames.Add("United States");
+autoComplete.DataSource = countryNames;
+autoComplete.SuggestionMode= SuggestionMode.StartsWithCaseSensitive;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/starts-with-case-sensitive.png)
+![](images/AutoComplete-Filtering-Options/starts-with-case-sensitive.png)
 
 ## Filtering Words that Contains the Input Text
 
@@ -97,26 +97,28 @@ Displays all the matches that contains the typed characters in control. This str
 
 {% highlight xaml %}
 
-	<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
 	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" SuggestionMode="Contains"/>                            
-	</StackLayout>
+</StackLayout>
 
 {% endhighlight %}
 
 {% highlight c# %}
 	
-	List<String> countryNames = new List<String>();
-	countryNames.Add("Uganda");
-	countryNames.Add("Ukraine");
-	countryNames.Add("United Arab Emirates");
-	countryNames.Add("United Kingdom");
-	countryNames.Add("United States");
-	autoComplete.DataSource = countryNames;
-	autoComplete.SuggestionMode= SuggestionMode.Contains;
+List<String> countryNames = new List<String>();
+countryNames.Add("Uganda");
+countryNames.Add("Ukraine");
+countryNames.Add("United Arab Emirates");
+countryNames.Add("United Kingdom");
+countryNames.Add("United States");
+autoComplete.DataSource = countryNames;
+autoComplete.SuggestionMode= SuggestionMode.Contains;
 	 
 {% endhighlight %}
 
 {% endtabs %}
+
+![](images/AutoComplete-Filtering-Options/contains.png)
 
 ### Filtering Words that Contains the Input Text - CaseSensitive
 
@@ -126,26 +128,28 @@ Displays all the matches that contains the typed characters in control. This str
 
 {% highlight xaml %}
 
-	<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" SuggestionMode="ContainsCaseSensitive"/>                            
-	</StackLayout>
+<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" SuggestionMode="ContainsWithCaseSensitive"/>                            
+</StackLayout>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-	List<String> countryNames = new List<String>();
-	countryNames.Add("Uganda");
-	countryNames.Add("Ukraine");
-	countryNames.Add("United Arab Emirates");
-	countryNames.Add("United Kingdom");
-	countryNames.Add("United States");
-	autoComplete.DataSource = countryNames;
-	autoComplete.SuggestionMode= SuggestionMode.ContainsCaseSensitive;
+List<String> countryNames = new List<String>();
+countryNames.Add("Uganda");
+countryNames.Add("Ukraine");
+countryNames.Add("United Arab Emirates");
+countryNames.Add("United Kingdom");
+countryNames.Add("United States");
+autoComplete.DataSource = countryNames;
+autoComplete.SuggestionMode= SuggestionMode.ContainsWithCaseSensitive;
 
 {% endhighlight %}
 
 {% endtabs %}
+
+![](images/AutoComplete-Filtering-Options/contains-casesensitive.png)
 
 ## Filtering Words that Equals the Input Text
 
@@ -155,22 +159,22 @@ Displays all the words that completely matches with the typed characters in cont
 
 {% highlight xaml %}
 
-	<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
 	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" SuggestionMode="Equals"/>                            
-	</StackLayout>
+</StackLayout>
 
 {% endhighlight %}
 
 {% highlight c# %}
 	
-	List<String> countryNames = new List<String>();
-	countryNames.Add("Uganda");
-	countryNames.Add("Ukraine");
-	countryNames.Add("United Arab Emirates");
-	countryNames.Add("United Kingdom");
-	countryNames.Add("United States");
-	autoComplete.DataSource = countryNames;
-	autoComplete.SuggestionMode= SuggestionMode.Equals;
+List<String> countryNames = new List<String>();
+countryNames.Add("Uganda");
+countryNames.Add("Ukraine");
+countryNames.Add("United Arab Emirates");
+countryNames.Add("United Kingdom");
+countryNames.Add("United States");
+autoComplete.DataSource = countryNames;
+autoComplete.SuggestionMode= SuggestionMode.Equals;
 
 {% endhighlight %}
 
@@ -184,22 +188,22 @@ Displays all the words that completely matches with the typed characters in cont
 
 {% highlight xaml %}
 
-	<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" SuggestionMode="EqualsCaseSensitive"/>                            
-	</StackLayout>
+<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" SuggestionMode="EqualsWithCaseSensitive"/>                            
+</StackLayout>
 
 {% endhighlight %}
 
 {% highlight c# %}
 	
-	List<String> countryNames = new List<String>();
-	countryNames.Add("Uganda");
-	countryNames.Add("Ukraine");
-	countryNames.Add("United Arab Emirates");
-	countryNames.Add("United Kingdom");
-	countryNames.Add("United States");
-	autoComplete.DataSource = countryNames;
-	autoComplete.SuggestionMode= SuggestionMode.EqualsCaseSensitive;
+List<String> countryNames = new List<String>();
+countryNames.Add("Uganda");
+countryNames.Add("Ukraine");
+countryNames.Add("United Arab Emirates");
+countryNames.Add("United Kingdom");
+countryNames.Add("United States");
+autoComplete.DataSource = countryNames;
+autoComplete.SuggestionMode= SuggestionMode.EqualsWithCaseSensitive;
 
 {% endhighlight %}
 
@@ -213,28 +217,28 @@ Displays all the matches that ends with the typed characters in control. This st
 	
 {% highlight xaml %}
 
-	<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
 	<autocomplete:SfAutoComplete HeightRequest="40" WidthRequest="180" x:Name="autoComplete" SuggestionMode="EndsWith"/>                            
-	</StackLayout>
+</StackLayout>
 
 {% endhighlight %}
 
 {% highlight c# %}
 	
-	List<String> countryNames = new List<String>();
-	countryNames.Add("Uganda");
-	countryNames.Add("Ukraine");
-	countryNames.Add("United Arab Emirates");
-	countryNames.Add("United Kingdom");
-	countryNames.Add("United States");
-	autoComplete.DataSource = countryNames;
-	autoComplete.SuggestionMode= SuggestionMode.EndsWith;
+List<String> countryNames = new List<String>();
+countryNames.Add("Uganda");
+countryNames.Add("Ukraine");
+countryNames.Add("United Arab Emirates");
+countryNames.Add("United Kingdom");
+countryNames.Add("United States");
+autoComplete.DataSource = countryNames;
+autoComplete.SuggestionMode= SuggestionMode.EndsWith;
  
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/ends-with.png)
+![](images/AutoComplete-Filtering-Options/ends-with.png)
 
 ### Filtering Words that Ends with the Input Text - CaseSensitive 
 
@@ -244,25 +248,25 @@ Displays all the matches that ends with the typed characters in control. This st
 
 {% highlight xaml %}
 
-	<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
 	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" SuggestionMode="EndsWithCaseSensitive"/>                            
-	</StackLayout>
+</StackLayout>
 
 {% endhighlight %}
 
 {% highlight c# %}
 	
-	List<String> countryNames = new List<String>();
-	countryNames.Add("Uganda");
-	countryNames.Add("Ukraine");
-	countryNames.Add("United Arab Emirates");
-	countryNames.Add("United Kingdom");
-	countryNames.Add("United States");
-	autoComplete.DataSource = countryNames;
-	autoComplete.SuggestionMode= SuggestionMode.EndsWithCaseSensitive;
+List<String> countryNames = new List<String>();
+countryNames.Add("Uganda");
+countryNames.Add("Ukraine");
+countryNames.Add("United Arab Emirates");
+countryNames.Add("United Kingdom");
+countryNames.Add("United States");
+autoComplete.DataSource = countryNames;
+autoComplete.SuggestionMode= SuggestionMode.EndsWithCaseSensitive;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/ends-with-case-sensitive.png)
+![](images/AutoComplete-Filtering-Options/ends-with-case-sensitive.png)

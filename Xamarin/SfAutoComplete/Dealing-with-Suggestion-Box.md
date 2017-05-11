@@ -19,24 +19,26 @@ Suggestion Box can be placed either at top or bottom using the SuggestionBoxPlac
 
 {% highlight xaml %}
 
-    <autocomplete:SfAutoComplete HeightRequest="40" WidthRequest="180" SuggestionBoxPlacement="Top" x:Name="autoComplete" />
+<autocomplete:SfAutoComplete HeightRequest="40" WidthRequest="180" SuggestionBoxPlacement="Top" x:Name="autoComplete" />
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-	List<String> countryNames = new List<String>();
-	countryNames.Add("Uganda");
-	countryNames.Add("Ukraine");
-	countryNames.Add("United Arab Emirates");
-	countryNames.Add("United Kingdom");
-	countryNames.Add("United States");
-	autoComplete.DataSource = countryNames;
-	autoComplete.SuggestionBoxPlacement = SuggestionBoxPlacement.Top;
+List<String> countryNames = new List<String>();
+countryNames.Add("Uganda");
+countryNames.Add("Ukraine");
+countryNames.Add("United Arab Emirates");
+countryNames.Add("United Kingdom");
+countryNames.Add("United States");
+autoComplete.DataSource = countryNames;
+autoComplete.SuggestionBoxPlacement = SuggestionBoxPlacement.Top;
 
 {% endhighlight %}
 
 {% endtabs %}
+
+![](images/Dealing-with-Suggestion-Box/suggestion-box-placement-top.png)
 
 ## Maximum Suggestion Box Height
 
@@ -46,33 +48,33 @@ The maximum height of the suggestion box in the SfAutocomplete control can be va
 
 {% highlight xaml %}
 
-    <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Padding="30">
-    <autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" MaximumDropDownHeight="100" />                     
-    </StackLayout> 
+<StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Padding="30">
+	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" MaximumDropDownHeight="100" />                     
+</StackLayout> 
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-	List<String> countryNames = new List<String>();
-	countryNames.Add("Great Britain");
-	countryNames.Add("Uganda");
-	countryNames.Add("Ukraine");
-	countryNames.Add("Canada");
-	countryNames.Add("United Arab Emirates");
-	countryNames.Add("France");
-	countryNames.Add("United Kingdom");
-	countryNames.Add("China");
-	countryNames.Add("United States");
-	countryNames.Add("Japan");
-	autoComplete.DataSource = countryNames;
-	autoComplete.MaximumDropDownHeight = 100;
+List<String> countryNames = new List<String>();
+countryNames.Add("Great Britain");
+countryNames.Add("Uganda");
+countryNames.Add("Ukraine");
+countryNames.Add("Canada");
+countryNames.Add("United Arab Emirates");
+countryNames.Add("France");
+countryNames.Add("United Kingdom");
+countryNames.Add("China");
+countryNames.Add("United States");
+countryNames.Add("Japan");
+autoComplete.DataSource = countryNames;
+autoComplete.MaximumDropDownHeight = 100;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/maximum-dropdown-height.png)
+![](images/Dealing-with-Suggestion-Box/maximum-dropdown-height.png)
 
 ## Opening Suggestion Box on Focus
 
@@ -82,32 +84,34 @@ Suggestion Box can be shown whenever control receives focus using ShowSuggestion
 
 {% highlight xaml %}
 
-    <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Padding="30">
-    <autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" ShowSuggestionsOnFocus="true" />                        
-    </StackLayout> 
+<StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Padding="30">
+	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" ShowSuggestionsOnFocus="true" />                        
+</StackLayout> 
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-	List<String> countryNames = new List<String>();
-	countryNames.Add("Great Britain");
-	countryNames.Add("Uganda");
-	countryNames.Add("Ukraine");
-	countryNames.Add("Canada");
-	countryNames.Add("United Arab Emirates");
-	countryNames.Add("France");
-	countryNames.Add("Italy");
-	countryNames.Add("United Kingdom");
-	countryNames.Add("China");
-	countryNames.Add("United States");
-	countryNames.Add("Japan");
-	autoComplete.DataSource = countryNames;
-	autoComplete.ShowSuggestionsOnFocus = true;
+List<String> countryNames = new List<String>();
+countryNames.Add("Great Britain");
+countryNames.Add("Uganda");
+countryNames.Add("Ukraine");
+countryNames.Add("Canada");
+countryNames.Add("United Arab Emirates");
+countryNames.Add("France");
+countryNames.Add("Italy");
+countryNames.Add("United Kingdom");
+countryNames.Add("China");
+countryNames.Add("United States");
+countryNames.Add("Japan");
+autoComplete.DataSource = countryNames;
+autoComplete.ShowSuggestionsOnFocus = true;
 
 {% endhighlight %}
 
 {% endtabs %}
+
+![](images/Dealing-with-Suggestion-Box/show-suggestions-on-focus.png)
 
 ## Delay Opening Suggestion Box
 
@@ -118,22 +122,22 @@ Here in this example, a time duration of 3 seconds is set as popup delay.
 
 {% highlight xaml %}
 
-    <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Padding="30">
-    <autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" PopupDelay="3000" />                            
-    </StackLayout> 
+<StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Padding="30">
+	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" PopupDelay="3000" />                            
+</StackLayout> 
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-	List<String> countryNames = new List<String>();
-	countryNames.Add("Uganda");
-	countryNames.Add("Ukraine");
-	countryNames.Add("United Arab Emirates");
-	countryNames.Add("United Kingdom");
-	countryNames.Add("United States");
-	autoComplete.DataSource = countryNames;
-	autoComplete.PopupDelay = 3000;
+List<String> countryNames = new List<String>();
+countryNames.Add("Uganda");
+countryNames.Add("Ukraine");
+countryNames.Add("United Arab Emirates");
+countryNames.Add("United Kingdom");
+countryNames.Add("United States");
+autoComplete.DataSource = countryNames;
+autoComplete.PopupDelay = 3000;
 
 {% endhighlight %}
 

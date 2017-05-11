@@ -14,22 +14,22 @@ Instead of displaying suggestion list on every character entry, matches can be f
 
 {% highlight xaml %}
 
-	<StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Padding="30">
+<StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Padding="30">
 	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" MinimumPrefixCharacters="3" />                    
-	</StackLayout> 
+</StackLayout> 
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-	List<String> countryNames = new List<String>();
-	countryNames.Add("Uganda");
-	countryNames.Add("Ukraine");
-	countryNames.Add("United Arab Emirates");
-	countryNames.Add("United Kingdom");
-	countryNames.Add("United States");
-	autoComplete.DataSource = countryNames;
-	autoComplete.MinimumPrefixCharacters = 3;
+List<String> countryNames = new List<String>();
+countryNames.Add("Uganda");
+countryNames.Add("Ukraine");
+countryNames.Add("United Arab Emirates");
+countryNames.Add("United Kingdom");
+countryNames.Add("United States");
+autoComplete.DataSource = countryNames;
+autoComplete.MinimumPrefixCharacters = 3;
 
 {% endhighlight %}
 

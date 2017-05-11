@@ -27,28 +27,28 @@ The filtered suggestions are displayed in a drop down list. User can pick an ite
 
 {% highlight xaml %}
 
-	<StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Padding="30">
+<StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Padding="30">
 	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" AutoCompleteMode="Suggest"/>                      
-	</StackLayout> 
+</StackLayout> 
 		  
 {% endhighlight %}
 
 {% highlight c# %}
 	
-	List<String> countryNames = new List<String>();
-	countryNames.Add("Uganda");
-	countryNames.Add("Ukraine");
-	countryNames.Add("United Arab Emirates");
-	countryNames.Add("United Kingdom");
-	countryNames.Add("United States");
-	autoComplete.DataSource = countryNames;
-	autoComplete.AutoCompleteMode = AutoCompleteMode.Suggest;
+List<String> countryNames = new List<String>();
+countryNames.Add("Uganda");
+countryNames.Add("Ukraine");
+countryNames.Add("United Arab Emirates");
+countryNames.Add("United Kingdom");
+countryNames.Add("United States");
+autoComplete.DataSource = countryNames;
+autoComplete.AutoCompleteMode = AutoCompleteMode.Suggest;
 	 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/suggest.png)
+![](images/AutoComplete-Suggesting-Modes/suggest.png)
 
 ## Appending Suggestion to Text
 
@@ -58,28 +58,28 @@ The first item in filtered suggestions is appended to SfAutoComplete text. In th
 
 {% highlight xaml %}
 
-	<StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Padding="30">
+<StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Padding="30">
 	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" AutoCompleteMode="Append"/>                       
-	</StackLayout> 
+</StackLayout> 
 		  
 {% endhighlight %}
 
 {% highlight c# %}
 	
-	List<String> countryNames = new List<String>();
-	countryNames.Add("Uganda");
-	countryNames.Add("Ukraine");
-	countryNames.Add("United Arab Emirates");
-	countryNames.Add("United Kingdom");
-	countryNames.Add("United States");
-	autoComplete.DataSource = countryNames;
-	autoComplete.AutoCompleteMode = AutoCompleteMode.Append;
+List<String> countryNames = new List<String>();
+countryNames.Add("Uganda");
+countryNames.Add("Ukraine");
+countryNames.Add("United Arab Emirates");
+countryNames.Add("United Kingdom");
+countryNames.Add("United States");
+autoComplete.DataSource = countryNames;
+autoComplete.AutoCompleteMode = AutoCompleteMode.Append;
 	 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/append.png)
+![](images/AutoComplete-Suggesting-Modes/append.png)
 
 ## Suggesting Choices and Appending Suggestions to Text
 
@@ -89,25 +89,25 @@ The text is appended with the first matched item in the suggestions collection a
 
 {% highlight xaml %}
 
-	<StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Padding="30">
+<StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Padding="30">
 	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" AutoCompleteMode="SuggestAppend"/>                
-	</StackLayout> 
+</StackLayout> 
 		  
 {% endhighlight %}
 	
 {% highlight c# %}
 	
-	List<String> countryNames = new List<String>();
-	countryNames.Add("Uganda");
-	countryNames.Add("Ukraine");
-	countryNames.Add("United Arab Emirates");
-	countryNames.Add("United Kingdom");
-	countryNames.Add("United States");
-	autoComplete.DataSource = countryNames;
-	autoComplete.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+List<String> countryNames = new List<String>();
+countryNames.Add("Uganda");
+countryNames.Add("Ukraine");
+countryNames.Add("United Arab Emirates");
+countryNames.Add("United Kingdom");
+countryNames.Add("United States");
+autoComplete.DataSource = countryNames;
+autoComplete.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/suggest-append.png)
+![](images/AutoComplete-Suggesting-Modes/suggest-append.png)

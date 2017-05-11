@@ -23,9 +23,9 @@ SfRotator items can be populated with a collection of image data. You can assign
 
 {% highlight C# %}
 	
-public RotatorModel(string imagestr)
+public RotatorModel(string imageString)
 {
-    Image = imagestr;       
+    Image = imageString;       
 }
 private String _image;
 public String Image
@@ -106,22 +106,22 @@ The ItemTemplate provides common template with different data, whereas if differ
 
 SfRotator rotator = new SfRotator();	
 SfRotatorItem rotatorItem = new SfRotatorItem ();
-Label lbl = new Label ();
-lbl.Text ="  Item No: 1 ";
-lbl.BackgroundColor = Color.Gray;
-lbl.FontSize = 20;
-lbl.VerticalTextAlignment = TextAlignment.Center;
-rotatorItem.ItemContent =lbl;
+Label label = new Label ();
+label.Text ="  Item No: 1 ";
+label.BackgroundColor = Color.Gray;
+label.FontSize = 20;
+label.VerticalTextAlignment = TextAlignment.Center;
+rotatorItem.ItemContent =label;
 rotator.DataSource.Add (rotatorItem);	
 
 SfRotatorItem rotatorItem1 = new SfRotatorItem ();
-Image img = new Image ();
-img.Source = ImageSource.FromFile("image2.png");
-img.Aspect = Aspect.AspectFit;
-img.VerticalOptions = LayoutOptions.Center;
-img.HeightRequest = 400;
-img.WidthRequest = 400;
-rotatorItem1.ItemContent =img;
+Image image = new Image ();
+image.Source = ImageSource.FromFile("image2.png");
+image.Aspect = Aspect.AspectFit;
+image.VerticalOptions = LayoutOptions.Center;
+image.HeightRequest = 400;
+image.WidthRequest = 400;
+rotatorItem1.ItemContent =image;
 rotator.DataSource.Add (rotatorItem1);
 
 this.Content=rotator;		

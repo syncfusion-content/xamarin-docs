@@ -201,7 +201,7 @@ and the list items are created in C#.
 			list.Add("Home");
 			list.Add("Profile");
 			list.Add("Inbox");
-			list.Add("Outbox");
+			list.Add("OutBox");
 			list.Add("Sent");
 			list.Add("Draft");
 			listView.ItemsSource = list;  
@@ -254,7 +254,7 @@ SfNavigationDrawer navigationDrawer=new SfNavigationDrawer();
 			list.Add("Home");
 			list.Add("Profile");
 			list.Add("Inbox");
-			list.Add("Outbox");
+			list.Add("OutBox");
 			list.Add("Sent");
 			list.Add("Draft");
 			listView.ItemsSource = list;
@@ -324,18 +324,18 @@ SfNavigationDrawer navigationDrawer=new SfNavigationDrawer();
 			list.Add("Home");
 			list.Add("Profile");
 			list.Add("Inbox");
-			list.Add("Outbox");
+			list.Add("OutBox");
 			list.Add("Sent");
 			list.Add("Draft");
 			listView.ItemsSource = list;
 
 			navigationDrawer.DrawerContentView = listView;
 
-			Button Btnmenu = new Button();
-			Btnmenu.Text = "Show Menu";
-			Btnmenu.HorizontalOptions = LayoutOptions.Center;
-			Btnmenu.VerticalOptions = LayoutOptions.Center;
-			Btnmenu.BackgroundColor = Color.FromHex("#1aa1d6");
+			Button buttonMenu = new Button();
+			buttonMenu.Text = "Show Menu";
+			buttonMenu.HorizontalOptions = LayoutOptions.Center;
+			buttonMenu.VerticalOptions = LayoutOptions.Center;
+			buttonMenu.BackgroundColor = Color.FromHex("#1aa1d6");
 
 			Label homeLabel = new Label();
 			homeLabel.Text = "Content View";
@@ -351,14 +351,14 @@ SfNavigationDrawer navigationDrawer=new SfNavigationDrawer();
 			contentView.RowDefinitions.Add(new RowDefinition() { Height = new GridLength(50, GridUnitType.Auto) });
 			contentView.RowDefinitions.Add(new RowDefinition() { Height = new GridLength(1, GridUnitType.Star) });
 			contentView.Children.Add(homeLabel);
-			contentView.Children.Add(Btnmenu);
+			contentView.Children.Add(buttonMenu);
 
 			Grid.SetRow(homeLabel, 0);
-			Grid.SetRow(Btnmenu, 1);
+			Grid.SetRow(buttonMenu, 1);
 
 			navigationDrawer.ContentView = contentView;
 
-			Btnmenu.Clicked += (sender, e) =>
+			buttonMenu.Clicked += (sender, e) =>
 			{
 				DependencyService.Get<IToggleDrawer>().ToggleDrawer();
 			};

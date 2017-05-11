@@ -19,22 +19,36 @@ TextColor, TextSize, FontAttributes, FontFamily and BorderColor are the properti
 
 {% highlight xaml %}
 
-	<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
 	<autocomplete:SfAutoComplete HeightRequest="40" WidthRequest="180" x:Name="autoComplete" Text="Sample text" TextColor="Red" TextSize="20" BorderColor="Yellow"/>
-	</StackLayout>
+</StackLayout>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-	StackLayout stackLayout = new StackLayout() { VerticalOptions = LayoutOptions.Center, HorizontalOptions = LayoutOptions.Center };
-	SfAutoComplete autoComplete = new SfAutoComplete() { HeightRequest = 40, WidthRequest = 180 , Text = "Sample text", TextColor = Color.Red, TextSize = 20, BorderColor = Color.Yellow};
-	stackLayout.Children.Add(autoComplete);
-	this.Content = stackLayout;
+StackLayout stackLayout = new StackLayout() 
+{ 
+VerticalOptions = LayoutOptions.Center, 
+HorizontalOptions = LayoutOptions.Center 
+};
+SfAutoComplete autoComplete = new SfAutoComplete() 
+{ 
+HeightRequest = 40, 
+WidthRequest = 180 , 
+Text = "Sample text", 
+TextColor = Color.Red, 
+TextSize = 20, 
+BorderColor = Color.Yellow
+};
+stackLayout.Children.Add(autoComplete);
+this.Content = stackLayout;
 
 {% endhighlight %}
 
 {% endtabs %}
+
+![](images/Customizing-AutoComplete/customizing-entry.png)
 
 ## Custom template for Suggestion items
 
@@ -44,51 +58,51 @@ ItemTemplate property helps to decorate suggestion items with custom templates. 
 
 {% highlight xaml %}
 
-	<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-	<autocomplete:SfAutoComplete HeightRequest="40" WidthRequest="180" x:Name="autoComplete" DisplayMemberPath="Name" DataSource="{Binding PersonCollection}">
-		<autocomplete:SfAutoComplete.ItemTemplate>
-		<DataTemplate>
-			<StackLayout Orientation="Horizontal">
-			<Image Source="User.png" Width="12"/>
-			<Label Text="{Binding Name}" />
-			</StackLayout>
-		</DataTemplate>
-		</autocomplete:SfAutoComplete.ItemTemplate>
-	</autocomplete:SfAutoComplete>
-	</StackLayout>
+<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+<autocomplete:SfAutoComplete HeightRequest="40" WidthRequest="180" x:Name="autoComplete" DisplayMemberPath="Name" DataSource="{Binding PersonCollection}">
+	<autocomplete:SfAutoComplete.ItemTemplate>
+	<DataTemplate>
+		<StackLayout Orientation="Horizontal">
+		<Image Source="User.png" WidthRequest="12"/>
+		<Label Text="{Binding Name}" />
+		</StackLayout>
+	</DataTemplate>
+	</autocomplete:SfAutoComplete.ItemTemplate>
+</autocomplete:SfAutoComplete>
+</StackLayout>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-	public class Person
-	{
-	private int age;
-	public int Age
-	{
+public class Person
+{
+private int age;
+public int Age
+{
 	get { return age; }
 	set { age = value; }
-	}
+}
 
-	private string name;
-	public string Name
-	{
-		get { return name; }
-		set { name = value; }
-	}
-	}
+private string name;
+public string Name
+{
+	get { return name; }
+	set { name = value; }
+}
+}
 
-	public class PersonViewModel
-	{
-	private ObservableCollection<Person> personCollection;
-	public ObservableCollection<Person> PersonCollection
-	{
+public class PersonViewModel
+{
+private ObservableCollection<Person> personCollection;
+public ObservableCollection<Person> PersonCollection
+{
 	get { return personCollection; }
 	set { personCollection = value; }
-	}
+}
 
-	public PersonViewModel()
-	{
+public PersonViewModel()
+{
 	personCollection = new ObservableCollection<Person>();
 	personCollection.Add(new Person() { Age = 21, Name = "Aldan" });
 	personCollection.Add(new Person() { Age = 25, Name = "Clara" });
@@ -98,23 +112,23 @@ ItemTemplate property helps to decorate suggestion items with custom templates. 
 	personCollection.Add(new Person() { Age = 24, Name = "Alan" });
 	personCollection.Add(new Person() { Age = 25, Name = "James" });
 	personCollection.Add(new Person() { Age = 22, Name = "Aaron" });
-	}
-	}
+}
+}
 
-	public partial class SamplePage : ContentPage
-	{
-	public SamplePage()
-	{
-		InitializeComponent();       
-		autoComplete.BindingContext = new PersonViewModel();
-	}
-	}
+public partial class SamplePage : ContentPage
+{
+public SamplePage()
+{
+	InitializeComponent();       
+	autoComplete.BindingContext = new PersonViewModel();
+}
+}
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/item-template.png)
+![](images/Customizing-AutoComplete/item-template.png)
 
 ## Customizing the Suggestion Box
 
@@ -126,26 +140,28 @@ DropDownItemHeight property is used to modify the height of suggestion items in 
 
 {% highlight xaml %}
 
-	<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
 	<autocomplete:SfAutoComplete HeightRequest="40" WidthRequest="180" x:Name="autoComplete" DropDownItemHeight="45"/>
-	</StackLayout>
+</StackLayout>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-	List<String> countryNames = new List<String>();
-	countryNames.Add("Uganda");
-	countryNames.Add("Ukraine");
-	countryNames.Add("United Arab Emirates");
-	countryNames.Add("United Kingdom");
-	countryNames.Add("United States");
-	autoComplete.DataSource = countryNames;
-	autoComplete.DropDownItemHeight = 45;
+List<String> countryNames = new List<String>();
+countryNames.Add("Uganda");
+countryNames.Add("Ukraine");
+countryNames.Add("United Arab Emirates");
+countryNames.Add("United Kingdom");
+countryNames.Add("United States");
+autoComplete.DataSource = countryNames;
+autoComplete.DropDownItemHeight = 45;
 
 {% endhighlight %}
 
 {% endtabs %}
+
+![](images/Customizing-AutoComplete/dropdown-item-height.png)
 
 ### Customizing Suggestion Items
 
@@ -155,26 +171,26 @@ Suggestion box items can be customized using DropDownItemFontAttributes, DropDow
 
 {% highlight xaml %}
 
-	<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
 	<autocomplete:SfAutoComplete HeightRequest="40" WidthRequest="180" x:Name="autoComplete" DropDownTextSize="16"/>
-	</StackLayout>
+</StackLayout>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-	List<String> countryNames = new List<String>();
-	countryNames.Add("Uganda");
-	countryNames.Add("Ukraine");
-	countryNames.Add("United Arab Emirates");
-	countryNames.Add("United Kingdom");
-	countryNames.Add("United States");
-	autoComplete.DataSource = countryNames;
-	autoComplete.DropDownTextColor = Color.FromHex("#1976d2");
-	autoComplete.DropDownTextSize = 16;
+List<String> countryNames = new List<String>();
+countryNames.Add("Uganda");
+countryNames.Add("Ukraine");
+countryNames.Add("United Arab Emirates");
+countryNames.Add("United Kingdom");
+countryNames.Add("United States");
+autoComplete.DataSource = countryNames;
+autoComplete.DropDownTextColor = Color.FromHex("#1976d2");
+autoComplete.DropDownTextSize = 16;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/customizing-dropdown.png)
+![](images/Customizing-AutoComplete/customizing-dropdown.png)

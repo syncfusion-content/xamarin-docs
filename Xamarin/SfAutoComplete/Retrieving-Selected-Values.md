@@ -22,23 +22,25 @@ The following code example demonstrates the way to retrieve SelectedIndex and di
 
 {% highlight xaml %}
 
-	<StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Padding="30">
+<StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Padding="30">
 	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" />                            
-	</StackLayout> 
+</StackLayout> 
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-	List<String> countryNames = new List<String>();
-	countryNames.Add("Uganda");
-	countryNames.Add("Ukraine");
-	countryNames.Add("United Arab Emirates");
-	countryNames.Add("United Kingdom");
-	countryNames.Add("United States");
-	autoComplete.DataSource = countryNames;
-	autoComplete.SelectionChanged += (sender, e) => {
-	DisplayAlert("Selection Changed", "Selected Index: " + autoComplete.SelectedIndex, "OK"); };
+List<String> countryNames = new List<String>();
+countryNames.Add("Uganda");
+countryNames.Add("Ukraine");
+countryNames.Add("United Arab Emirates");
+countryNames.Add("United Kingdom");
+countryNames.Add("United States");
+autoComplete.DataSource = countryNames;
+autoComplete.SelectionChanged += (sender, e) =>
+{
+DisplayAlert("Selection Changed", "Selected Index: " + autoComplete.SelectedIndex, "OK"); 
+};
 
 {% endhighlight %}
 
@@ -54,23 +56,25 @@ The following code example demonstrates the way to retrieve SelectedValue and di
 
 {% highlight xaml %}
 
-	<StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Padding="30">
+<StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Padding="30">
 	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" />                            
-	</StackLayout> 
+</StackLayout> 
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-	List<String> countryNames = new List<String>();
-	countryNames.Add("Uganda");
-	countryNames.Add("Ukraine");
-	countryNames.Add("United Arab Emirates");
-	countryNames.Add("United Kingdom");
-	countryNames.Add("United States");
-	autoComplete.DataSource = countryNames;
-	autoComplete.SelectionChanged += (sender, e) => {
-	DisplayAlert("Selection Changed", "Selected Value: " + autoComplete.SelectedValue, "OK"); };
+List<String> countryNames = new List<String>();
+countryNames.Add("Uganda");
+countryNames.Add("Ukraine");
+countryNames.Add("United Arab Emirates");
+countryNames.Add("United Kingdom");
+countryNames.Add("United States");
+autoComplete.DataSource = countryNames;
+autoComplete.SelectionChanged += (sender, e) => 
+{
+DisplayAlert("Selection Changed", "Selected Value: " + autoComplete.SelectedValue, "OK"); 
+};
 
 {% endhighlight %}
 
@@ -84,59 +88,59 @@ If DataSource is bound to business object data, there is an additional step to g
 
 {% highlight xaml %}
 
-	<StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Padding="30">
+<StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Padding="30">
 	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" DataSource="{Binding EmployeeCollection}"/>                            
-	</StackLayout> 
+</StackLayout> 
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-	public partial class SamplePage : ContentPage
-	{
-	public SamplePage()
-	{
-		InitializeComponent();       
-		autoComplete.BindingContext = new EmployeeViewModel();
-		autoComplete.DisplayMemberPath = "Name";
-		autoComplete.SelectedValuePath = "ID";
-		autoComplete.SelectionChanged += (sender, e) => {
-		DisplayAlert("Selection Changed", "Selected Value: " +    autoComplete.SelectedValue, "OK"); };
-	}
-	}
-	public class Employee
-	{
-	private int id;
-	public int ID
-	{
-		get { return id; }
-		set { id = value; }
-	}
-	private string name;
-	public string Name
-	{
-		get { return name; }
-		set { name = value; }
-	}
-	}
-	public class EmployeeViewModel
-	{
-	private ObservableCollection<Employee> employeeCollection;
-	public ObservableCollection<Employee> EmployeeCollection
-	{
+public partial class SamplePage : ContentPage
+{
+public SamplePage()
+{
+	InitializeComponent();       
+	autoComplete.BindingContext = new EmployeeViewModel();
+	autoComplete.DisplayMemberPath = "Name";
+	autoComplete.SelectedValuePath = "ID";
+	autoComplete.SelectionChanged += (sender, e) => {
+	DisplayAlert("Selection Changed", "Selected Value: " +    autoComplete.SelectedValue, "OK"); };
+}
+}
+public class Employee
+{
+private int id;
+public int ID
+{
+	get { return id; }
+	set { id = value; }
+}
+private string name;
+public string Name
+{
+	get { return name; }
+	set { name = value; }
+}
+}
+public class EmployeeViewModel
+{
+private ObservableCollection<Employee> employeeCollection;
+public ObservableCollection<Employee> EmployeeCollection
+{
 	get { return employeeCollection; }
 	set { employeeCollection = value; }
-	}
-	public EmployeeViewModel()
-	{
+}
+public EmployeeViewModel()
+{
 	employeeCollection = new ObservableCollection<Employee>();
 	employeeCollection.Add(new Employee() { ID = 1, Name = "Eric" });
 	employeeCollection.Add(new Employee() { ID = 2, Name = "James" });
 	employeeCollection.Add(new Employee() { ID = 3, Name = "Jacob" });
 	employeeCollection.Add(new Employee() { ID = 4, Name = "Lucas" });
 	employeeCollection.Add(new Employee() { ID = 5, Name = "Mark" });
-	}
-	}
+}
+}
 
 {% endhighlight %}
 

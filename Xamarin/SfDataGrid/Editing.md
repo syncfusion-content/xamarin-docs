@@ -86,19 +86,19 @@ this.dataGrid.EditorSelectionBehavior = EditorSelectionBehavior.MoveLast;
 N> Editing support for GridTemplateColumn and GridUnboundColumn are not provided yet.
 
 ## Support for IEditableObject
-SfDataGrid supports to commit and roll back the changes in row level when underlying data object implements IEditableObject interface.
+SfDataGrid supports to commit and roll back the changes in row level when underlying data object implements [IEditableObject](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.aspx) interface.
 
 The editing changes in a row will be committed only when user moves to next row by tapping.
 
-IEditableObject has the following methods to capture editing,
+`IEditableObject` has the following methods to capture editing,
 
-BeginEdit – Gets called to begin edit on underlying data object when cell in a row enters into edit mode.
+* [BeginEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.beginedit.aspx) – Gets called to begin edit on underlying data object when cell in a row enters into edit mode.
 
-CancelEdit – Gets called when user cencels editing to discard the changes in a row since last BeginEdit call.
+* [CancelEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.canceledit.aspx) – Gets called when user cencels editing to discard the changes in a row since last BeginEdit call.
 
-EndEdit – Gets called when user move to the next row by tapping to commit changes in underlying data object since last BeginEdit call.
+* [EndEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.endedit.aspx) – Gets called when user move to the next row by tapping to commit changes in underlying data object since last BeginEdit call.
 
-In the below code snippet explains the simple implementation of IEditableObject.
+In the below code snippet explains the simple implementation of `IEditableObject`.
 
 {% highlight c# %}
 public class OrderInfo : INotifyPropertyChanged, IEditableObject

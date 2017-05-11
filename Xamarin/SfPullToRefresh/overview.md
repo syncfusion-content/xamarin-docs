@@ -3,13 +3,13 @@ layout: post
 title: Overview of Syncfusion SfPullToRefresh control for Xamarin.Forms.
 description: Overview and key features of SfPullToRefresh control in Xamarin.Forms
 platform: Xamarin.Forms 
-control: PullToRefresh 
+control: SfPullToRefresh 
 documentation: ug
 ---
 
 # Overview
 
-SfPullToRefresh is a refresh control that allows you to interact and refresh the view loaded in it. The SfPullToRefresh control allows you to refresh the view upon performing the pull to refresh action. A progress indicator or refresh indicator will be shown while start the pulling. The application will be refreshed once you have pulled down a certain distance and release the touch.
+SfPullToRefresh is a refresh control that allows you to interact and refresh the view loaded in it. The SfPullToRefresh control allows you to refresh the view upon performing the pull to refresh action. A progress indicator will be shown while start the pulling. The application will be refreshed once you have pulled down a certain distance and release the touch.
  
 ## Use Case Scenarios
 

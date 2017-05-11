@@ -66,7 +66,7 @@ N> When there is a mismatch of Xamarin NuGet packages between your sample and Sf
 N> When there is a mismatch between Syncfusion NuGet packages among your projects, `System.IO.FileLoadException` will occur. To overcome this exception, install the same version of SfPullToRefresh assemblies in all your projects. 
 
 
-## Launching the SfDataGrid on each platform
+## Launching the SfPullToRefresh on each platform
 
 To use SfPullToRefresh inside an application, each platform application must initialize the SfPullToRefresh renderer. This initialization step varies from platform to platform and is discussed in the following sections.
 
@@ -113,7 +113,7 @@ You can download the entire source code of this demo for Xamarin.Forms from [her
 
 Create a new BlankApp (Xamarin.Forms.Portable) application in Xamarin Studio or Visual Studio for Xamarin.Forms.
 
-## Adding SfDataGrid in Xamarin.Forms 
+## Adding SfPullToRefresh in Xamarin.Forms 
 
 1. Add the required assembly references to the pcl and renderer projects as discussed in the [Assembly deployment](#assembly-deployment) section.
 
@@ -125,7 +125,8 @@ Create a new BlankApp (Xamarin.Forms.Portable) application in Xamarin Studio o
 {% tabs %}
 {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage x:Class="XamarinForms.SfDataGridPage"
+<ContentPage x:Class="XamarinForms.SfPullToRefreshPage"
+             Title="SfPullToRefreshPage"
              xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:XamarinForms;assembly=XamarinForms"

@@ -312,10 +312,7 @@ This section covers the features of SfCalendar specific to Android,iOS and UWP p
 <p>Card</p>
 </td>
 <td align="center">
-<p>Scroll</p>
-<p>Float</p>
-<p>Reveal</p>
-<p>Card</p>
+<p>No</p>
 </td>
 <td align="center">
 <p>No</p>

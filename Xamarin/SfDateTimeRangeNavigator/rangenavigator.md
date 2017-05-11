@@ -67,22 +67,22 @@ wp8\Syncfusion.SfChart.XForms.WinPhone.dll
 
 wp8\Syncfusion.SfChart.XForms.dll
 
-Currently an additional step is required for Windows Phone and iOS projects. We need to call SfRangeNavigatorRenderer.Init() as shown below.
+Currently an additional step is required for Windows Phone and iOS projects. We need to create an instance of the `SfRangeNavigatorRenderer` as shown below.
 
-Call `SfRangeNavigatorRenderer.Init()` in MainPage constructor of the Windows Phone project as shown
+Create an instance of `SfRangeNavigatorRenderer` in MainPage constructor of the Windows Phone project as shown
 
 {% highlight c# %}
 [C#]
 
 public MainPage() 
 { 
-	SfRangeNavigatorRenderer.Init(); 
+	new SfRangeNavigatorRenderer(); 
 	... 
 }
 
 {% endhighlight %}
 
-Call `SfRangeNavigatorRenderer.Init()` in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below
+Create an instance of `SfRangeNavigatorRenderer` in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below
 
 {% highlight c# %}
 [C#]
@@ -90,7 +90,7 @@ Call `SfRangeNavigatorRenderer.Init()` in FinishedLaunching overridden method of
 public override bool FinishedLaunching(UIApplication app, NSDictionary options) 
 { 
 	... 
-	SfRangeNavigatorRenderer.Init();  
+	new SfRangeNavigatorRenderer(); 
 	... 
 }
 

@@ -98,9 +98,9 @@ public partial class BusyIndicatorPage : ContentPage
 	{
 		InitializeComponent();
 
-		SfBusyIndicator busyindicator = new SfBusyIndicator();
+		SfBusyIndicator busyIndicator = new SfBusyIndicator();
 
-		this.Content = busyindicator;
+		this.Content = busyIndicator;
 	}
 }
 }
@@ -142,12 +142,12 @@ namespace GettingStarted
 		{
 			InitializeComponent();
 
-			SfBusyIndicator busyindicator = new SfBusyIndicator();
-			busyindicator.AnimationType = AnimationTypes.Battery;
-			busyindicator.ViewBoxWidth = 150;
-			busyindicator.ViewBoxHeight = 150;
-			busyindicator.TextColor = Color.Maroon;
-			this.Content = busyindicator;
+			SfBusyIndicator busyIndicator = new SfBusyIndicator();
+			busyIndicator.AnimationType = AnimationTypes.Battery;
+			busyIndicator.ViewBoxWidth = 150;
+			busyIndicator.ViewBoxHeight = 150;
+			busyIndicator.TextColor = Color.Maroon;
+			this.Content = busyIndicator;
 		}
 	}
 }

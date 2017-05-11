@@ -72,8 +72,8 @@ N> `ShowRange` value must be true.
 
 	rangeSlider.RangeChanging+= (object sender, RangeEventArgs e) =>
 			{
-				float rangestart = e.Start;
-				float rangeend = e.End;
+				float rangeStart = e.Start;
+				float rangeEnd = e.End;
 				SfRangeSlider rangeSlider = e.RangeSlider;
 			};	
 

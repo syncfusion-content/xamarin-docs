@@ -27,7 +27,7 @@ N> The default value of the `ShowValueLabel` property is false.
 
 {% highlight c# %}
 
-	rangeslider.ShowValueLabel= true;
+	rangeSlider.ShowValueLabel= true;
 
 {% endhighlight %}
 
@@ -87,7 +87,7 @@ Available options for this property are:
 
 {% highlight c# %}
 
-	rangeslider.ValuePlacement=ValuePlacement.TopLeft;
+	rangeSlider.ValuePlacement=ValuePlacement.TopLeft;
 
 {% endhighlight %}
 
@@ -105,7 +105,7 @@ Available options for this property are:
 
 {% highlight c# %}
 
-	rangeslider.ValuePlacement=ValuePlacement.BottomRight;
+	rangeSlider.ValuePlacement=ValuePlacement.BottomRight;
 
 {% endhighlight %}
 

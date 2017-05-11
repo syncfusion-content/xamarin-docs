@@ -25,7 +25,7 @@ N> The default option is Horizontal.
 
 {% highlight c# %}
 
-	rangeslider.Orientation=Orientation.Horizontal;
+	rangeSlider.Orientation=Orientation.Horizontal;
 
 {% endhighlight %}
 
@@ -45,7 +45,7 @@ N> The default option is Horizontal.
 
 {% highlight c# %}
 
-	rangeslider.Orientation=Orientation.Vertical;
+	rangeSlider.Orientation=Orientation.Vertical;
 
 {% endhighlight %}
 

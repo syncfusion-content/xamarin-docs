@@ -49,7 +49,7 @@ Schedule Appointment can be customized by setting appointment style properties s
 	appointmentStyle.BorderWidth = 10;
 	appointmentStyle.SelectionBorderColor = Color.Yellow;
 	appointmentStyle.SelectionTextColor = Color.Yellow;
-	sfschedule.AppointmentStyle = appointmentStyle;
+	schedule.AppointmentStyle = appointmentStyle;
 
 {% endhighlight %}
 
@@ -63,7 +63,7 @@ ScheduleAppointment can be customized using the `appointmentStyle` property.
 
 {% highlight C# %}
 
-	sfschedule.OnAppointmentLoadedEvent += (object sender, AppointmentLoadedEventArgs args) =>
+	schedule.OnAppointmentLoadedEvent += (object sender, AppointmentLoadedEventArgs args) =>
 	{
 	args.appointmentStyle.TextColor = Color.Red;
 	args.appointmentStyle.TextStyle = Font.SystemFontOfSize(15, FontAttributes.Bold);
@@ -82,7 +82,7 @@ You can also add an object in the appointment view using `view` property passed 
 
 {% highlight C# %}
 
-    sfschedule.OnAppointmentLoadedEvent += (object sender, AppointmentLoadedEventArgs args) =>
+    schedule.OnAppointmentLoadedEvent += (object sender, AppointmentLoadedEventArgs args) =>
     {
     Button button = new Button();
     button.BackgroundColor = Color.Green;
@@ -128,7 +128,7 @@ MonthView can be customized by setting monthViewCellStyle properties such as Tex
 	monthViewCellStyle.TextColor = Color.Blue;
 	monthViewCellStyle.TextSize = 12;
 	monthViewCellStyle.TextStyle=Font.SystemFontOfSize(12, FontAttributes.Bold);
-	sfschedule.MonthCellStyle = monthViewCellStyle;
+	schedule.MonthCellStyle = monthViewCellStyle;
 
 {% endhighlight %}
 
@@ -176,7 +176,7 @@ You can also add an object in the month cell view using `view` property passed t
 
 {% highlight C# %}
 
-	sfschedule.OnMonthCellLoadedEvent += (object sender, MonthCellLoadedEventArgs args) =>
+	schedule.OnMonthCellLoadedEvent += (object sender, MonthCellLoadedEventArgs args) =>
 	{
 	Button button = new Button();
 	button.BackgroundColor = Color.Green;
@@ -197,7 +197,7 @@ You can able to customize the inline view style using `MonthInlineLoadedEvent` o
 
 {% highlight C# %}
 
-	sfschedule.OnMonthInlineLoadedEvent += (object sender, MonthInlineLoadedEventArgs args) =>
+	schedule.OnMonthInlineLoadedEvent += (object sender, MonthInlineLoadedEventArgs args) =>
 	{
 	MonthInlineViewStyle monthInlineViewStyle = new MonthInlineViewStyle();
 	monthInlineViewStyle.BackgroundColor = Color.Gray;
@@ -234,7 +234,7 @@ Cells can be selected using customized properties such as `BackgroundColor`, `Bo
 	selectionStyle.BackgroundColor = Color.Blue;
 	selectionStyle.BorderColor = Color.Yellow;
 	selectionStyle.BorderThickness = 5;
-	sfSchedule.SelectionStyle = selectionStyle;
+	schedule.SelectionStyle = selectionStyle;
 
 {% endhighlight %}
 
@@ -246,7 +246,7 @@ Also custom view can be passed using the `SelectionView` in Schedule.
 
 	Button button = new Button();
 	button.BackgroundColor=Color.Blue;
-	sfschedule.SelectionView = button;
+	schedule.SelectionView = button;
 
 {% endhighlight %}
 

@@ -65,7 +65,7 @@ You can format the time string in the schedule control using `DayLabelSettings` 
 
 {% highlight c# %}
 
-	DayViewSettings dayviewsettings = new DayViewSettings();
+	DayViewSettings dayViewSettings = new DayViewSettings();
 	//setting label size and formats
 	DayLabelSettings dayLabelSettings =new DayLabelSettings();
 	dayLabelSettings.TimeFormat =("hh a");
@@ -362,7 +362,7 @@ You can also differentiate working hours with non-working hour timeslots by its 
 
 {% highlight c# %}
 
-	//setting workweekviewsettings properties
+	//setting workWeekViewSettings properties
 	WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings ();
 	workWeekViewSettings.WorkStartHour = 10;
 	workWeekViewSettings.WorkEndHour = 18;
@@ -396,11 +396,11 @@ Also you can change the all day appointment panel color using the property `AllD
 
 {% highlight c# %}
 
-	//setting workweekviewsettings properties
+	//setting workWeekViewSettings properties
 	WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings ();
 	workWeekViewSettings.ShowAllDay = true;
-	sfschedule.WorkWeekViewSettings = workWeekViewSettings;
-	this.Content= sfschedule;
+	schedule.WorkWeekViewSettings = workWeekViewSettings;
+	this.Content= schedule;
 
 {% endhighlight %}
 
@@ -416,7 +416,7 @@ To view entire dates of a particular month, by default current month will be dis
 
 {% highlight xaml %}
 
-	<schedule:SfSchedule x:Name="sfschedule" 
+	<schedule:SfSchedule x:Name="schedule" 
 	ScheduleView="MonthView">
 	</schedule:SfSchedule>
 
@@ -425,12 +425,12 @@ To view entire dates of a particular month, by default current month will be dis
 {% highlight c# %}
 
 	//creating new instance for schedule
-	SfSchedule sfschedule= new SfSchedule ();
+	SfSchedule schedule= new SfSchedule ();
 
 	//setting schedule view
-	sfschedule.ScheduleView = ScheduleView.MonthView;
+	schedule.ScheduleView = ScheduleView.MonthView;
 
-	this.Content= sfschedule;
+	this.Content= schedule;
 
 {% endhighlight %}
 
@@ -447,7 +447,7 @@ By enabling `ShowAppointmentsInline` feature in `MonthView`, while touch the mon
 {% highlight xaml %}
 
 	<schedule:SfSchedule
-	x:Name="sfschedule" 
+	x:Name="schedule" 
 	ScheduleView="MonthView" 
 	ShowAppointmentsInline="true" >
 	</schedule:SfSchedule>
@@ -456,10 +456,10 @@ By enabling `ShowAppointmentsInline` feature in `MonthView`, while touch the mon
 
 {% highlight c# %}
 
-	SfSchedule sfschedule = new SfSchedule();
-	sfschedule.ScheduleView = ScheduleView.MonthView;
-	sfschedule.ShowAppointmentsInline = true;
-	this.Content= sfschedule;
+	SfSchedule schedule = new SfSchedule();
+	schedule.ScheduleView = ScheduleView.MonthView;
+	schedule.ShowAppointmentsInline = true;
+	this.Content= schedule;
 
 {% endhighlight %}
 
@@ -479,7 +479,7 @@ You can able to know the details of appointments in inline using `MonthInlineApp
 
 {% highlight C# %}
 
-	sfschedule.MonthInlineAppointmentTapped += (object sender, MonthInlineAppointmentTappedEventArgs args) =>
+	schedule.MonthInlineAppointmentTapped += (object sender, MonthInlineAppointmentTappedEventArgs args) =>
 	{
 	    var appointment= args.selectedAppointment;
 		var date = args.selectedDate;
@@ -507,7 +507,7 @@ You can able to know the details of appointments in inline using `MonthInlineApp
 	MonthViewSettings monthViewSettings = new MonthViewSettings();
 	//To navigate vertically
 	monthViewSettings.MonthNavigationDirection =  MonthNavigationDirections.Vertical;
-	sfschedule.MonthViewSettings = monthViewSettings;
+	schedule.MonthViewSettings = monthViewSettings;
 
 {% endhighlight %}
 {% endtabs %}
@@ -545,8 +545,8 @@ You can format the date and day string in the schedule control using
 	monthLabelSettings.DayFormat = "E";
 	monthLabelSettings. DateFormat = "dd";
 	monthViewSettings.MonthLabelSettings = monthLabelSettings;
-	sfschedule.MonthViewSettings = monthViewSettings;
-	this.Content = sfschedule;
+	schedule.MonthViewSettings = monthViewSettings;
+	this.Content = schedule;
 
 {% endhighlight %}
 
@@ -572,8 +572,8 @@ You display the week number of the year in month view by setting `ShowWeekNumber
 	//setting month view settings properties
 	MonthViewSettings monthViewSettings =  new MonthViewSettings();
 	monthViewSettings.ShowWeekNumber = true;
-	sfschedule.MonthViewSettings = monthViewSettings;
-	this.Content = sfschedule;
+	schedule.MonthViewSettings = monthViewSettings;
+	this.Content = schedule;
 
 {% endhighlight %}
 

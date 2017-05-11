@@ -571,5 +571,5 @@ Following is the final output screenshot,
 
 ![SfSunburstChart with data label and legend](Getting-Started_images/gettingstarted.png)
 
-You can find the complete getting started sample from this [`link`]().
+You can find the complete getting started sample from this [`link`](http://files2.syncfusion.com/Xamarin.Forms/Samples/SunburstChart_GettingStarted.zip).
 

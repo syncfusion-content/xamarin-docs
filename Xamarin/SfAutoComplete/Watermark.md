@@ -16,28 +16,38 @@ The following example, explains the usability of watermark which hints user to s
 
 {% highlight xaml %}
 
-    <autocomplete:SfAutoComplete HeightRequest="40" WidthRequest="180" Watermark="Enter 'U' to filter suggestions" x:Name="autoComplete" />
+<autocomplete:SfAutoComplete HeightRequest="40" WidthRequest="180" Watermark="Enter 'U' to filter suggestions" x:Name="autoComplete" />
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    autoComplete.Watermark = "Enter 'U' to filter suggestions"; 
+autoComplete.Watermark = "Enter 'U' to filter suggestions"; 
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/watermark.png)
+![](images/Watermark/watermark.png)
 
 # Changing Watermark Text Color
 
 Text color of watermark can be customized using WatermarkColor property.
 
+{% tabs %}
+
 {% highlight xaml %}
 
-    <autocomplete:SfAutoComplete HeightRequest="40" WidthRequest="180" Watermark="Enter some text" WatermarkColor="#1976d2" x:Name="autoComplete" />
+<autocomplete:SfAutoComplete HeightRequest="40" WidthRequest="180" Watermark="Enter some text" WatermarkColor="#1976d2" x:Name="autoComplete" />
 
 {% endhighlight %}
 
-![](images/watermark-color.png)
+{% highlight c# %}
+
+autoComplete.WatermarkColor = Color.FromHex("1976d2");
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](images/Watermark/watermark-color.png)

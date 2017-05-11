@@ -22,13 +22,16 @@ Create an instance of SfAutoCompleteRenderer in FinishedLaunching overridden met
 
 {% highlight C# %}
 
-	public override bool FinishedLaunching(UIApplication app, NSDictionary options)
-	{
-	new Syncfusion.SfAutoComplete.XForms.iOS.SfAutoCompleteRenderer();
-	global::Xamarin.Forms.Forms.Init();
-	LoadApplication(new App());
-	return base.FinishedLaunching(app, options);
-	}	
+public override bool FinishedLaunching(UIApplication app, NSDictionary options)
+{
+new Syncfusion.SfAutoComplete.XForms.iOS.SfAutoCompleteRenderer();
+
+global::Xamarin.Forms.Forms.Init();
+
+LoadApplication(new App());
+
+return base.FinishedLaunching(app, options);
+}	
 
 {% endhighlight %}
 
@@ -38,17 +41,18 @@ There is a known Framework issue in UWP platform Release mode. Custom controls w
 
 {% highlight C# %}
 
-	protected override void OnLaunched(LaunchActivatedEventArgs e)
-	{
-	#if DEBUG
-	if (System.Diagnostics.Debugger.IsAttached)
-	{
+protected override void OnLaunched(LaunchActivatedEventArgs e)
+{
+#if DEBUG
+if (System.Diagnostics.Debugger.IsAttached)
+{
 	this.DebugSettings.EnableFrameRateCounter = true;
-	}
-	#endif
-	Frame rootFrame = Window.Current.Content as Frame; 
-	if (rootFrame == null)
-	{
+}
+#endif
+
+Frame rootFrame = Window.Current.Content as Frame; 
+if (rootFrame == null)
+{
 	rootFrame = new Frame();
 	rootFrame.NavigationFailed += OnNavigationFailed;                
 	List<System.Reflection.Assembly> assembliesToInclude = new List<System.Reflection.Assembly>();
@@ -58,21 +62,21 @@ There is a known Framework issue in UWP platform Release mode. Custom controls w
 	Xamarin.Forms.Forms.Init(e, assembliesToInclude);
 	if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
 	{
-	//TODO: Load state from previously suspended application
+		//TODO: Load state from previously suspended application
 	}
 	// Place the frame in the current Window
 	Window.Current.Content = rootFrame;
-	}
-	if (rootFrame.Content == null)
-	{
+}
+if (rootFrame.Content == null)
+{
 	// When the navigation stack isn't restored navigate to the first page,
 	// configuring the new page by passing required information as a navigation
 	// parameter
 	rootFrame.Navigate(typeof(MainPage), e.Arguments);
-	}
-	// Ensure the current window is active
-	Window.Current.Activate();
-	}
+}
+// Ensure the current window is active
+Window.Current.Activate();
+}
 
 {% endhighlight %}
 
@@ -84,13 +88,13 @@ Import the SfAutoComplete namespace in respective Page as shown below:
 
 {% highlight xaml %}
 
-	xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-	using Syncfusion.SfAutoComplete.XForms;
+using Syncfusion.SfAutoComplete.XForms;
 
 {% endhighlight %}
 
@@ -102,18 +106,25 @@ Then initialize an empty autocomplete as shown below,
 
 {% highlight xaml %}
 
-	<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
 	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete"/>
-	</StackLayout>
+</StackLayout>
 	
 {% endhighlight %}
 
 {% highlight c# %}
 
-	StackLayout layout = new StackLayout() { VerticalOptions = LayoutOptions.Center, HorizontalOptions = LayoutOptions.Center };
-	SfAutoComplete autoComplete = new SfAutoComplete() { HeightRequest = 40 };
-	layout.Children.Add(autoComplete);
-	Content = layout;
+StackLayout layout = new StackLayout()
+{ 
+VerticalOptions = LayoutOptions.Center, 
+HorizontalOptions = LayoutOptions.Center 
+};
+SfAutoComplete autoComplete = new SfAutoComplete() 
+{
+HeightRequest = 40 
+};
+layout.Children.Add(autoComplete);
+Content = layout;
 
 {% endhighlight %}
 
@@ -123,28 +134,40 @@ Then initialize an empty autocomplete as shown below,
 
 Now, let us create a simple list of country names and set it as the DataSource of AutoComplete.
 
+{% tabs %}
+
+{% highlight xaml %}
+
+<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete"/>
+</StackLayout>
+	
+{% endhighlight %}
+
 {% highlight c# %}
 
-	List<String> countryNames = new List<String>();
-	countryNames.Add("Great Britain");
-	countryNames.Add("Uganda");
-	countryNames.Add("Ukraine");
-	countryNames.Add("Canada");
-	countryNames.Add("United Arab Emirates");
-	countryNames.Add("France");
-	countryNames.Add("United Kingdom");
-	countryNames.Add("China");
-	countryNames.Add("United States");
-	countryNames.Add("Japan");
-	autoComplete.DataSource = countryNames;
+List<String> countryNames = new List<String>();
+countryNames.Add("Great Britain");
+countryNames.Add("Uganda");
+countryNames.Add("Ukraine");
+countryNames.Add("Canada");
+countryNames.Add("United Arab Emirates");
+countryNames.Add("France");
+countryNames.Add("United Kingdom");
+countryNames.Add("China");
+countryNames.Add("United States");
+countryNames.Add("Japan");
+autoComplete.DataSource = countryNames;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ## Configuring filter options
 
 By default, items are filtered in “StartsWith” case insensitive mode and the suggestions are displayed in a drop down popup. Autocomplete can now filter suggestions and it is shown below: 
 
-![](images/getting-started.png)
+![](images/Getting-Started/getting-started.png)
 
 Here in this example, let us configure it to “Contains” case sensitive filter mode. This can be achieved by setting SuggestionMode property.
  
@@ -153,15 +176,29 @@ Here in this example, let us configure it to “Contains” case sensitive filte
 {% highlight xaml %}
 
 	<StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Padding="30">
-	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" SuggestionMode="ContainsWithCaseSensitive"/>
+		<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" SuggestionMode="ContainsWithCaseSensitive"/>
 	</StackLayout> 
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-	autoComplete.SuggestionMode = Syncfusion.SfAutoComplete.XForms.SuggestionMode.ContainsWithCaseSensitive;
+List<String> countryNames = new List<String>();
+countryNames.Add("Great Britain");
+countryNames.Add("Uganda");
+countryNames.Add("Ukraine");
+countryNames.Add("Canada");
+countryNames.Add("United Arab Emirates");
+countryNames.Add("France");
+countryNames.Add("United Kingdom");
+countryNames.Add("China");
+countryNames.Add("United States");
+countryNames.Add("Japan");
+autoComplete.DataSource = countryNames;
+autoComplete.SuggestionMode = Syncfusion.SfAutoComplete.XForms.SuggestionMode.ContainsWithCaseSensitive;
 
 {% endhighlight %}
 
 {% endtabs %}
+
+![](images/Getting-Started/contains-casesensitive.png)

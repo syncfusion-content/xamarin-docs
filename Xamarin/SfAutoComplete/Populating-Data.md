@@ -19,33 +19,33 @@ Create an instance of string list and populate items as shown below:
 
 {% highlight xaml %}
 
-	<StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Padding="30">
+<StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Padding="30">
 	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" />
-	</StackLayout>
+</StackLayout>
 	
 {% endhighlight %}
 
 {% highlight c# %}
 
-	List<String> countryNames = new List<String>();
-	countryNames.Add("Great Britain");
-	countryNames.Add("Uganda");
-	countryNames.Add("Ukraine");
-	countryNames.Add("Canada");
-	countryNames.Add("United Arab Emirates");
-	countryNames.Add("France");
-	countryNames.Add("Italy");
-	countryNames.Add("United Kingdom");
-	countryNames.Add("China");
-	countryNames.Add("United States");
-	countryNames.Add("Japan");
-	autoComplete.DataSource = countryNames;
+List<String> countryNames = new List<String>();
+countryNames.Add("Great Britain");
+countryNames.Add("Uganda");
+countryNames.Add("Ukraine");
+countryNames.Add("Canada");
+countryNames.Add("United Arab Emirates");
+countryNames.Add("France");
+countryNames.Add("Italy");
+countryNames.Add("United Kingdom");
+countryNames.Add("China");
+countryNames.Add("United States");
+countryNames.Add("Japan");
+autoComplete.DataSource = countryNames;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/populating-data-string.png)
+![](images/Populating-Data/populating-data-string.png)
 
 ## Populating Business Objects
 
@@ -59,31 +59,32 @@ Define a simple model class Employee with fields ID, Name and populate employee 
 
 {% highlight C# %}
 
-	public class Employee
-	{
-	private int id;
-	public int ID
-	{
-		get { return id; }
-		set { id = value; }
-	}
-	private string name;
-	public string Name
-	{
-		get { return name; }
-		set { name = value; }
-	}
-	}
-	public class EmployeeViewModel
-	{
-	private ObservableCollection<Employee> employeeCollection;
-	public ObservableCollection<Employee> EmployeeCollection
-	{
+public class Employee
+{
+private int id;
+public int ID
+{
+	get { return id; }
+	set { id = value; }
+}
+private string name;
+public string Name
+{
+	get { return name; }
+	set { name = value; }
+}
+}
+
+public class EmployeeViewModel
+{
+private ObservableCollection<Employee> employeeCollection;
+public ObservableCollection<Employee> EmployeeCollection
+{
 	get { return employeeCollection; }
 	set { employeeCollection = value; }
-	}
-	public EmployeeViewModel()
-	{
+}
+public EmployeeViewModel()
+{
 	employeeCollection = new ObservableCollection<Employee>();
 	employeeCollection.Add(new Employee() { ID = 1, Name = "Eric" });
 	employeeCollection.Add(new Employee() { ID = 2, Name = "James" });
@@ -94,8 +95,8 @@ Define a simple model class Employee with fields ID, Name and populate employee 
 	employeeCollection.Add(new Employee() { ID = 7, Name = "Aldrin" });
 	employeeCollection.Add(new Employee() { ID = 8, Name = "Alan" });
 	employeeCollection.Add(new Employee() { ID = 9, Name = "Aaron" });
-	}
-	}
+}
+}
 
 {% endhighlight %}
 
@@ -109,15 +110,15 @@ Now populate this ViewModel data in SfAutoComplete control by binding with DataS
 
 {% highlight xaml %}
 
-	<StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Padding="30">
+<StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Padding="30">
 	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" DataSource="{Binding EmployeeCollection}"/>
-	</StackLayout> 
+</StackLayout> 
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-	autoComplete.BindingContext = new EmployeeViewModel();
+autoComplete.BindingContext = new EmployeeViewModel();
 
 {% endhighlight %}
 
@@ -129,11 +130,11 @@ At this point, the control is populated with the list of employees. But the Empl
 
 {% highlight c# %}
 	
-	autoComplete.DisplayMemberPath = "Name";
+autoComplete.DisplayMemberPath = "Name";
 	
 {% endhighlight %}
 
-![](images/populating-data-business-object.png)
+![](images/Populating-Data/populating-data-business-object.png)
 
 ### Setting ItemTemplate
 
@@ -141,19 +142,19 @@ ItemTemplate property helps to decorate suggestion items with custom templates. 
 
 {% highlight xaml %}
 
-	<StackLayout VerticalOptions="Center" HorizontalOptions="Center" Padding="30">
-	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" DataSource="{Binding EmployeeCollection}">
+<StackLayout VerticalOptions="Center" HorizontalOptions="Center" Padding="30">
+	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" DisplayMemberPath="Name" DataSource="{Binding EmployeeCollection}">
 	<autocomplete:SfAutoComplete.ItemTemplate>
-	<DataTemplate>
-	<StackLayout Orientation="Horizontal">
-	<Image Source="User.png" Width="12"/>
-	<Label Text="{Binding Name}" />
-	</StackLayout>
-	</DataTemplate>
+		<DataTemplate>
+			<StackLayout Orientation="Horizontal">
+				<Image Source="User.png" WidthRequest="12"/>
+				<Label Text="{Binding Name}" />
+			</StackLayout>
+		</DataTemplate>
 	</autocomplete:SfAutoComplete.ItemTemplate>
 	</autocomplete:SfAutoComplete>
-	</StackLayout>
+</StackLayout>
 
 {% endhighlight %}
 
-![](images/item-template.png)
+![](images/Populating-Data/item-template.png)

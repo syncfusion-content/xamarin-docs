@@ -29,7 +29,7 @@ The main display view that displays our various content of the app can be set us
 			    </StackLayout>   
 				<Label x:Name="mainLabel" FontSize="14" TextColor="Black">
 					<Label.Text>
-						Lorem ipsum dolor sit amet, lacus amet amet ultricies. Quisque mi venenatis morbi libero, orci dis, mi ut et class porta, massa ligula magna enim, aliquam orci vestibulum tempus. Turpis facilisis vitae consequat, cum a a, turpis dui consequat massa in dolor per, felis non amet. Auctor eleifend in omnis elit vestibulum, donec non elementum tellus est mauris, id aliquam, at lacus, arcu pretium proin lacus dolor et. Eu tortor, vel ultrices amet dignissim mauris vehicula. Lorem tortor neque, purus taciti quis id. Elementum integer orci accumsan minim phasellus vel.
+						HomePage ContentView
 					</Label.Text>
 				</Label>   
              </StackLayout>
@@ -66,7 +66,7 @@ SfNavigationDrawer navigationDrawer = new SfNavigationDrawer();
 			Label mainLabel = new Label();
 			mainLabel.FontSize = 14;
 			mainLabel.TextColor = Color.Black;
-			mainLabel.Text = "Lorem ipsum dolor sit amet, lacus amet amet ultricies. Quisque mi venenatis morbi libero, orci dis, mi ut et class porta, massa ligula magna enim, aliquam orci vestibulum tempus. Turpis facilisis vitae consequat, cum a a, turpis dui consequat massa in dolor per, felis non amet. Auctor eleifend in omnis elit vestibulum, donec non elementum tellus est mauris, id aliquam, at lacus, arcu pretium proin lacus dolor et. Eu tortor, vel ultrices amet dignissim mauris vehicula. Lorem tortor neque, purus taciti quis id. Elementum integer orci accumsan minim phasellus vel.";
+			mainLabel.Text = "HomePage ContentView";
 
 			StackLayout ContentFrame = new StackLayout();
 			ContentFrame.Orientation = StackOrientation.Vertical;

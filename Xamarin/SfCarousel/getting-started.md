@@ -202,9 +202,9 @@ public partial class CarouselControlPage : ContentPage
 
 public class CarouselModel
 {
-		public CarouselModel(string imagestr)
+		public CarouselModel(string imageString)
 		{
-			Image = imagestr;
+			Image = imageString;
 		}
 		private string _image;
 
@@ -246,7 +246,7 @@ public class CarouselViewModel
 {% endtabs %}
 
 
-The following code illustrates the way to use `ItemTemplate` in both xaml as well as c#
+The following code illustrates the way to use `ItemTemplate` in both XAML as well as C#
 
 {% tabs %}
 

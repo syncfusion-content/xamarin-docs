@@ -9,7 +9,7 @@ documentation : ug
 
 # AutoComplete Filtering Options
 
-The phenomenon of string comparison for filtering suggestions can be changed using the SuggestionMode property. The default filtering strategy is “StartsWith” and it is case insensitive. The available filtering modes are
+The phenomenon of string comparison for filtering suggestions can be changed using the [`SuggestionMode`] property. The default filtering strategy is “StartsWith” and it is case insensitive. The available filtering modes are
 
 * StartsWith
 
@@ -35,7 +35,7 @@ Displays all the matches that starts with the typed characters in control. This 
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
 	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" SuggestionMode="StartsWith"/>                            
 </StackLayout>
 
@@ -66,7 +66,7 @@ Displays all the matches that starts with the typed characters in control. This 
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
 	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" SuggestionMode="StartsWithCaseSensitive"/>                            
 </StackLayout>
 
@@ -97,7 +97,7 @@ Displays all the matches that contains the typed characters in control. This str
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
 	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" SuggestionMode="Contains"/>                            
 </StackLayout>
 
@@ -111,6 +111,7 @@ countryNames.Add("Ukraine");
 countryNames.Add("United Arab Emirates");
 countryNames.Add("United Kingdom");
 countryNames.Add("United States");
+countryNames.Add("Italy");
 autoComplete.DataSource = countryNames;
 autoComplete.SuggestionMode= SuggestionMode.Contains;
 	 
@@ -128,7 +129,7 @@ Displays all the matches that contains the typed characters in control. This str
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
 	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" SuggestionMode="ContainsWithCaseSensitive"/>                            
 </StackLayout>
 
@@ -142,6 +143,7 @@ countryNames.Add("Ukraine");
 countryNames.Add("United Arab Emirates");
 countryNames.Add("United Kingdom");
 countryNames.Add("United States");
+countryNames.Add("Italy");
 autoComplete.DataSource = countryNames;
 autoComplete.SuggestionMode= SuggestionMode.ContainsWithCaseSensitive;
 
@@ -159,7 +161,7 @@ Displays all the words that completely matches with the typed characters in cont
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
 	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" SuggestionMode="Equals"/>                            
 </StackLayout>
 
@@ -188,7 +190,7 @@ Displays all the words that completely matches with the typed characters in cont
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
 	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" SuggestionMode="EqualsWithCaseSensitive"/>                            
 </StackLayout>
 
@@ -217,7 +219,7 @@ Displays all the matches that ends with the typed characters in control. This st
 	
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
 	<autocomplete:SfAutoComplete HeightRequest="40" WidthRequest="180" x:Name="autoComplete" SuggestionMode="EndsWith"/>                            
 </StackLayout>
 
@@ -248,7 +250,7 @@ Displays all the matches that ends with the typed characters in control. This st
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
 	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" SuggestionMode="EndsWithCaseSensitive"/>                            
 </StackLayout>
 

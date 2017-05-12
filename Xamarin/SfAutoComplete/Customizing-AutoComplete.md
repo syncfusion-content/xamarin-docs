@@ -13,14 +13,14 @@ AutoComplete provides user friendly customizing options for both entry part and 
 
 ## Customizing the Entry
 
-TextColor, TextSize, FontAttributes, FontFamily and BorderColor are the properties used to customize the foreground color, font size, font attribute, font family and border color of the entry part.
+[`TextColor`], [`TextSize`], [`FontAttributes`], [`FontFamily`] and [`BorderColor`] are the properties used to customize the foreground color, font size, font attribute, font family and border color of the entry part.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-	<autocomplete:SfAutoComplete HeightRequest="40" WidthRequest="180" x:Name="autoComplete" Text="Sample text" TextColor="Red" TextSize="20" BorderColor="Yellow"/>
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" Text="Sample text" TextColor="#1976d2" TextSize="20" BorderColor="#1976d2"/>
 </StackLayout>
 
 {% endhighlight %}
@@ -29,17 +29,17 @@ TextColor, TextSize, FontAttributes, FontFamily and BorderColor are the properti
 
 StackLayout stackLayout = new StackLayout() 
 { 
-VerticalOptions = LayoutOptions.Center, 
-HorizontalOptions = LayoutOptions.Center 
+VerticalOptions = LayoutOptions.Start, 
+HorizontalOptions = LayoutOptions.Start,
+Padding = new Thickness(30) 
 };
 SfAutoComplete autoComplete = new SfAutoComplete() 
 { 
-HeightRequest = 40, 
-WidthRequest = 180 , 
+HeightRequest = 40,  
 Text = "Sample text", 
-TextColor = Color.Red, 
+TextColor = Color.FromHex("1976d2"), 
 TextSize = 20, 
-BorderColor = Color.Yellow
+BorderColor = Color.FromHex("1976d2")
 };
 stackLayout.Children.Add(autoComplete);
 this.Content = stackLayout;
@@ -52,14 +52,14 @@ this.Content = stackLayout;
 
 ## Custom template for Suggestion items
 
-ItemTemplate property helps to decorate suggestion items with custom templates. The following code explains the steps to add an image to the suggestion list item.
+[`ItemTemplate`] property helps to decorate suggestion items with custom templates. The following code explains the steps to add an image to the suggestion list item.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-<autocomplete:SfAutoComplete HeightRequest="40" WidthRequest="180" x:Name="autoComplete" DisplayMemberPath="Name" DataSource="{Binding PersonCollection}">
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" DisplayMemberPath="Name" DataSource="{Binding PersonCollection}">
 	<autocomplete:SfAutoComplete.ItemTemplate>
 	<DataTemplate>
 		<StackLayout Orientation="Horizontal">
@@ -134,14 +134,14 @@ public SamplePage()
 
 ### Changing Suggestion Item Height
 
-DropDownItemHeight property is used to modify the height of suggestion items in drop down list. The code example is given below:
+[`DropDownItemHeight`] property is used to modify the height of suggestion items in drop down list. The code example is given below:
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-	<autocomplete:SfAutoComplete HeightRequest="40" WidthRequest="180" x:Name="autoComplete" DropDownItemHeight="45"/>
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" DropDownItemHeight="45"/>
 </StackLayout>
 
 {% endhighlight %}
@@ -153,7 +153,6 @@ countryNames.Add("Uganda");
 countryNames.Add("Ukraine");
 countryNames.Add("United Arab Emirates");
 countryNames.Add("United Kingdom");
-countryNames.Add("United States");
 autoComplete.DataSource = countryNames;
 autoComplete.DropDownItemHeight = 45;
 
@@ -165,14 +164,14 @@ autoComplete.DropDownItemHeight = 45;
 
 ### Customizing Suggestion Items
 
-Suggestion box items can be customized using DropDownItemFontAttributes, DropDownItemFontFamily, DropDownTextSize and DropDownTextColor properties.
+Suggestion box items can be customized using [`DropDownItemFontAttributes`], [`DropDownItemFontFamily`], [`DropDownTextSize`] and [`DropDownTextColor`] properties.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-	<autocomplete:SfAutoComplete HeightRequest="40" WidthRequest="180" x:Name="autoComplete" DropDownTextSize="16"/>
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" DropDownTextSize="16" DropDownTextColor="1976d2"/>
 </StackLayout>
 
 {% endhighlight %}

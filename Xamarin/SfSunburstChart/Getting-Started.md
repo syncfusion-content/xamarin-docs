@@ -489,7 +489,7 @@ sunburst.Levels.Add(new SunburstHierarchicalLevel() {GroupMemberPath = "JobRole"
 
 ## Add Title
 
-You can add title to Sunburst chart to provide quick information to the user about the data being plotted in the chart. You can set title using [`SfSunburstChart.Title`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~Title.html) property as shown below.
+You can add title to sunburst chart to provide quick information to the user about the data being plotted in the chart. You can set title using [`SfSunburstChart.Title`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~Title.html) property as shown below.
 
 {% tabs %} 
 

@@ -8,13 +8,13 @@ documentation: ug
 ---
 # Prefix Characters Constraint
 
-Instead of displaying suggestion list on every character entry, matches can be filtered and displayed after a few character entries. This can be done by MinimumPrefixCharacters property and its default value is 1.
+Instead of displaying suggestion list on every character entry, matches can be filtered and displayed after a few character entries. This can be done by [`MinimumPrefixCharacters`] property and its default value is 1.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Padding="30">
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
 	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" MinimumPrefixCharacters="3" />                    
 </StackLayout> 
 

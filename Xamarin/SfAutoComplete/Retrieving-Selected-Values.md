@@ -13,7 +13,7 @@ SfAutoComplete provides way to get the selected values using SelectedValue and S
 
 ## Retrieving the Index of Selected Item
 
-When an item is selected from suggestion list, its index can be retrieved using SelectedIndex property. 
+When an item is selected from suggestion list, its index can be retrieved using [`SelectedIndex`] property. 
 SelectedIndex property holds the index of selected item in suggestion list. 
 
 The following code example demonstrates the way to retrieve SelectedIndex and display it in a alert.
@@ -22,7 +22,7 @@ The following code example demonstrates the way to retrieve SelectedIndex and di
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Padding="30">
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
 	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" />                            
 </StackLayout> 
 
@@ -48,7 +48,7 @@ DisplayAlert("Selection Changed", "Selected Index: " + autoComplete.SelectedInde
 
 ## Retrieving the Value of Selected Item
 
-When an item is selected from suggestion list, selected value can be retrieved using SelectedValue property. If DataSource is bound to string data, then selected string is set to SelectedValue property.  
+When an item is selected from suggestion list, selected value can be retrieved using [`SelectedValue`] property. If DataSource is bound to string data, then selected string is set to SelectedValue property.  
 
 The following code example demonstrates the way to retrieve SelectedValue and display it in a alert.
 
@@ -56,7 +56,7 @@ The following code example demonstrates the way to retrieve SelectedValue and di
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Padding="30">
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
 	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" />                            
 </StackLayout> 
 
@@ -73,7 +73,7 @@ countryNames.Add("United States");
 autoComplete.DataSource = countryNames;
 autoComplete.SelectionChanged += (sender, e) => 
 {
-DisplayAlert("Selection Changed", "Selected Value: " + autoComplete.SelectedValue, "OK"); 
+DisplayAlert("Selection Changed", "Selected Value: " + autoComplete.SelectedValue.ToString(), "OK"); 
 };
 
 {% endhighlight %}
@@ -82,13 +82,13 @@ DisplayAlert("Selection Changed", "Selected Value: " + autoComplete.SelectedValu
 
 ### Retrieving a Member of Model Object
 
-If DataSource is bound to business object data, there is an additional step to get the SelectedValue. The model class may have one or more properties so it is necessary to intimate AutoComplete that which property of model class should be stored in SelectedValue property. This can be accomplished by SelectedValuePath property.
+If DataSource is bound to business object data, there is an additional step to get the SelectedValue. The model class may have one or more properties so it is necessary to intimate AutoComplete that which property of model class should be stored in SelectedValue property. This can be accomplished by [`SelectedValuePath`] property.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Padding="30">
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
 	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" DataSource="{Binding EmployeeCollection}"/>                            
 </StackLayout> 
 
@@ -105,7 +105,7 @@ public SamplePage()
 	autoComplete.DisplayMemberPath = "Name";
 	autoComplete.SelectedValuePath = "ID";
 	autoComplete.SelectionChanged += (sender, e) => {
-	DisplayAlert("Selection Changed", "Selected Value: " +    autoComplete.SelectedValue, "OK"); };
+	DisplayAlert("Selection Changed", "Selected Value: " +    autoComplete.SelectedValue.ToString(), "OK"); };
 }
 }
 public class Employee

@@ -9,7 +9,9 @@ documentation : ug
 
 # Populating Data
 
-SfAutoComplete control can be populated with a list of string or business objects, which assists the user while typing. Users can choose one item from the filtered suggestion list. For example, let us populate AutoComplete with list of string and list of Employee details.
+SfAutoComplete control can be populated with a list of string or business objects, which assists the user while typing. Users can choose one item from the filtered suggestion list.
+
+[`DataSource`] property is used to populate data in SfAutoComplete control. This section explains populating AutoComplete with list of string and list of Employee details separately.
 
 ## Populating String Data
 
@@ -19,7 +21,7 @@ Create an instance of string list and populate items as shown below:
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Padding="30">
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
 	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" />
 </StackLayout>
 	
@@ -104,13 +106,13 @@ public EmployeeViewModel()
 
 ### Populate data in AutoComplete
 
-Now populate this ViewModel data in SfAutoComplete control by binding with DataSource property. 
+Now populate this EmployeeViewModel data in SfAutoComplete control by binding with [`DataSource`] property. 
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Padding="30">
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
 	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" DataSource="{Binding EmployeeCollection}"/>
 </StackLayout> 
 
@@ -124,9 +126,11 @@ autoComplete.BindingContext = new EmployeeViewModel();
 
 {% endtabs %}
 
+N> Set the EmployeeViewModel instance as the BindingContext of your control; this is done to bind properties of EmployeeViewModel to SfAutoComplete.
+
 ### Setting DisplayMemberPath
 
-At this point, the control is populated with the list of employees. But the Employee model contains two properties ID and Name so it is necessary to intimate by which property it should filter suggestions. DisplayMemberPath property specifies the property path with which filtering is done on business objects.
+At this point, the control is populated with the list of employees. But the Employee model contains two properties ID and Name so it is necessary to intimate by which property it should filter suggestions. [`DisplayMemberPath`] property specifies the property path with which filtering is done on business objects.
 
 {% highlight c# %}
 	
@@ -138,11 +142,11 @@ autoComplete.DisplayMemberPath = "Name";
 
 ### Setting ItemTemplate
 
-ItemTemplate property helps to decorate suggestion items with custom templates. The following code explains the steps to add an image to the suggestion list item.
+[`ItemTemplate`] property helps to decorate suggestion items with custom templates. The following code explains the steps to add an image to the suggestion list item.
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Center" HorizontalOptions="Center" Padding="30">
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
 	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" DisplayMemberPath="Name" DataSource="{Binding EmployeeCollection}">
 	<autocomplete:SfAutoComplete.ItemTemplate>
 		<DataTemplate>
@@ -156,5 +160,32 @@ ItemTemplate property helps to decorate suggestion items with custom templates. 
 </StackLayout>
 
 {% endhighlight %}
+
+The ItemTemplate in above XAML code is translated to C# and given below:
+
+{% highlight c# %}
+
+DataTemplate itemTemplate = new DataTemplate(() =>
+{
+StackLayout stack;
+Image image;
+Label label;
+stack = new StackLayout();
+stack.Orientation = StackOrientation.Horizontal;
+image = new Image();
+image.Source = (FileImageSource)ImageSource.FromFile("User.png");
+label = new Label();
+label.SetBinding(Label.TextProperty, "Name");
+stack.Children.Add(image);
+stack.Children.Add(label);
+return new ViewCell { View = stack };
+});
+autoComplete.ItemTemplate = itemTemplate;
+
+{% endhighlight %}
+
+Refer [this](https://help.syncfusion.com/xamarin/sfautocomplete/customizing-autocomplete) link to learn more about the customizing options available in SfAutoComplete control.
+
+N> Add the required image in drawable folder(Android), Resources folder(iOS) and at project location for UWP.
 
 ![](images/Populating-Data/item-template.png)

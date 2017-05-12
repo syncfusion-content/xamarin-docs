@@ -16,7 +16,9 @@ The following example, explains the usability of watermark which hints user to s
 
 {% highlight xaml %}
 
-<autocomplete:SfAutoComplete HeightRequest="40" WidthRequest="180" Watermark="Enter 'U' to filter suggestions" x:Name="autoComplete" />
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+<autocomplete:SfAutoComplete HeightRequest="40" Watermark="Enter 'U' to filter suggestions" x:Name="autoComplete" />
+</StackLayout>
 
 {% endhighlight %}
 
@@ -32,13 +34,15 @@ autoComplete.Watermark = "Enter 'U' to filter suggestions";
 
 # Changing Watermark Text Color
 
-Text color of watermark can be customized using WatermarkColor property.
+Text color of watermark can be customized using [`WatermarkColor`] property.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<autocomplete:SfAutoComplete HeightRequest="40" WidthRequest="180" Watermark="Enter some text" WatermarkColor="#1976d2" x:Name="autoComplete" />
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+<autocomplete:SfAutoComplete HeightRequest="40" Watermark="Enter some text" WatermarkColor="#1976d2" x:Name="autoComplete" />
+</StackLayout>
 
 {% endhighlight %}
 

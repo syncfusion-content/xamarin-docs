@@ -18,7 +18,7 @@ After adding the assemblies reference, an additional step is required for iOS an
 
 ### Additional Step for iOS
 
-Create an instance of SfAutoCompleteRenderer in FinishedLaunching overridden method of AppDelegate class in iOS project as shown below:
+Create an instance of [`SfAutoCompleteRenderer`] in FinishedLaunching overridden method of AppDelegate class in iOS project as shown below:
 
 {% highlight C# %}
 
@@ -37,7 +37,7 @@ return base.FinishedLaunching(app, options);
 
 ### Additional Step for UWP
 
-There is a known Framework issue in UWP platform Release mode. Custom controls will not render in UWP if the application is deployed in Release mode. This issue can be resolved by initializing the SfAutoComplete assemblies in OnLaunched overridden method of App class in UWP project as shown in below highlighted code example:
+This step is required only if application is deployed in Release mode with .NET native tool chain enabled and it is for resolving the known Framework issue “Custom controls not rendering in Release mode” in UWP platform. Initializing the SfAutoComplete assembly at OnLaunched overridden method of App class in UWP project is the suggested workaround. And the code example is shown below:
 
 {% highlight C# %}
 
@@ -106,7 +106,7 @@ Then initialize an empty autocomplete as shown below,
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
 	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete"/>
 </StackLayout>
 	
@@ -116,8 +116,9 @@ Then initialize an empty autocomplete as shown below,
 
 StackLayout layout = new StackLayout()
 { 
-VerticalOptions = LayoutOptions.Center, 
-HorizontalOptions = LayoutOptions.Center 
+VerticalOptions = LayoutOptions.Start, 
+HorizontalOptions = LayoutOptions.Start,
+Padding = new Thickness(30) 
 };
 SfAutoComplete autoComplete = new SfAutoComplete() 
 {
@@ -132,13 +133,13 @@ Content = layout;
 
 ## Populating AutoComplete with Data
 
-Now, let us create a simple list of country names and set it as the DataSource of AutoComplete.
+Now, let us create a simple list of country names and set it as the [`DataSource`] of AutoComplete.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
 	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete"/>
 </StackLayout>
 	
@@ -147,7 +148,6 @@ Now, let us create a simple list of country names and set it as the DataSource o
 {% highlight c# %}
 
 List<String> countryNames = new List<String>();
-countryNames.Add("Great Britain");
 countryNames.Add("Uganda");
 countryNames.Add("Ukraine");
 countryNames.Add("Canada");
@@ -163,28 +163,27 @@ autoComplete.DataSource = countryNames;
 
 {% endtabs %}
 
+Refer [this](https://help.syncfusion.com/xamarin/sfautocomplete/populating-data) link to learn more about the options available in SfAutoComplete to populate data.
+
 ## Configuring filter options
 
-By default, items are filtered in “StartsWith” case insensitive mode and the suggestions are displayed in a drop down popup. Autocomplete can now filter suggestions and it is shown below: 
+By default, items are filtered in “StartsWith” case insensitive mode and the suggestions are displayed in a drop down popup. Autocomplete can now filter suggestions.
 
-![](images/Getting-Started/getting-started.png)
-
-Here in this example, let us configure it to “Contains” case sensitive filter mode. This can be achieved by setting SuggestionMode property.
+Here in this example, let us configure it to “Contains” case sensitive filter mode. This can be achieved by setting [`SuggestionMode`] property.
  
 {% tabs %}
 
 {% highlight xaml %}
 
-	<StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Padding="30">
-		<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" SuggestionMode="ContainsWithCaseSensitive"/>
-	</StackLayout> 
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" SuggestionMode="ContainsWithCaseSensitive"/>
+</StackLayout> 
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 List<String> countryNames = new List<String>();
-countryNames.Add("Great Britain");
 countryNames.Add("Uganda");
 countryNames.Add("Ukraine");
 countryNames.Add("Canada");
@@ -201,4 +200,8 @@ autoComplete.SuggestionMode = Syncfusion.SfAutoComplete.XForms.SuggestionMode.Co
 
 {% endtabs %}
 
+Refer [this](https://help.syncfusion.com/xamarin/sfautocomplete/autocomplete-filtering-options) link to learn more about the options available in SfAutoComplete to filter suggestions.
+
 ![](images/Getting-Started/contains-casesensitive.png)
+
+The complete Getting Started sample is available in [this](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AutoComplete_GettingStarted1729075944) link.

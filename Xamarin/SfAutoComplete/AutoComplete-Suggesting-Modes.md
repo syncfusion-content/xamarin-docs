@@ -17,7 +17,7 @@ AutoComplete provides three different ways to display the filtered suggestions. 
 
 * SuggestAppend - Both of these
 
-AutoCompleteMode property is used to choose the suggestion display mode in SfAutoComplete control. The default value is Suggest.
+[`AutoCompleteMode`] property is used to choose the suggestion display mode in SfAutoComplete control. The default value is Suggest.
 
 ## Suggesting Choices in List
 
@@ -27,7 +27,7 @@ The filtered suggestions are displayed in a drop down list. User can pick an ite
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Padding="30">
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
 	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" AutoCompleteMode="Suggest"/>                      
 </StackLayout> 
 		  
@@ -58,7 +58,7 @@ The first item in filtered suggestions is appended to SfAutoComplete text. In th
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Padding="30">
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
 	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" AutoCompleteMode="Append"/>                       
 </StackLayout> 
 		  
@@ -89,7 +89,7 @@ The text is appended with the first matched item in the suggestions collection a
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Padding="30">
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
 	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" AutoCompleteMode="SuggestAppend"/>                
 </StackLayout> 
 		  

@@ -39,6 +39,34 @@ This page lists the assemblies required for each control to be referred in each 
 </tr>
 </table>
 
+## SfSunburstChart
+
+<dl>
+  <dt>NuGet</dt>
+  <dd>Syncfusion.Xamarin.SfSunburstChart</dd>
+</dl>
+
+**Assemblies**
+
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfSunburstChart.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfSunburstChart.Android.dll<br/>Syncfusion.SfSunburstChart.XForms.Android.dll<br/>Syncfusion.SfSunburstChart.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfSunburstChart.iOS.dll<br/>Syncfusion.SfSunburstChart.XForms.iOS.dll<br/>Syncfusion.SfSunburstChart.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfSunburstChart.UWP.dll<br/>Syncfusion.SfSunburstChart.XForms.UWP.dll<br/>Syncfusion.SfSunburstChart.XForms.dll<br/></td>
+</tr>
+</table>
+
 ## SfDataGrid
 
 <dl>

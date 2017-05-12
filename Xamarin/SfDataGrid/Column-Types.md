@@ -744,33 +744,14 @@ public class ViewModel
 
 ### Collection of User Defined Types
 
-You can create a `SfDataGrid.GridPickerColumn` and set its ItemsSource property to a user-typed collection to display a list of user defined items in the picker drop down. 
-The following code example shows you how to load the `SfDataGrid.GridPickerColumn` with user defined objects.
+You can create a `SfDataGrid.GridPickerColumn` and set its ItemsSource property to a user-typed collection to display a list of user defined items in the picker drop down. Initially the picker column will be displayed with the values from the [GridColumn.MappingName](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~MappingName.html) property of the column if the [DisplayMemberPath](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridPickerColumn~DisplayMemberPath.html) and [ValueMemberPath](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridPickerColumn~ValueMemberPath.html) are not set. You can also edit the other columns based on the `DisplayMemberPath` and `ValueMemberPah` using a `GridPickerColumn`.
 
-{% highlight xaml %}
-<ContentPage.BindingContext>
-    <local:ViewModel x:Name="viewModel"/>
-</ContentPage.BindingContext>
-
-<sfGrid:SfDataGrid x:Name="dataGrid"                   
-                   ItemsSource="{Binding OrdersInfo}">
-    <sfGrid:SfDataGrid.Columns>
-        <sfgrid:GridPickerColumn BindingContext="{x:Reference viewModel}"
-                                 HeaderText="Dealer Name"                                 
-                                 ItemsSource="{Binding OrdersInfo}"                                 
-                                 MappingName="DealerName"/>
-    </sfGrid:SfDataGrid.Columns>
-</sfGrid:SfDataGrid>
-{% endhighlight %}
-
-#### Further customization of picker data
-
-Initially the picker column will be displayed with the data based on the [GridColumn.MappingName](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~MappingName.html) property of the column. In the editing mode you can further customize the data loaded in the picker using the following properties,
- * [DisplayMemberPath](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridPickerColumn~DisplayMemberPath.html) - denotes the path to a value on the source object(`GridPickerColumn.ItemsSource`) and displays the values as the picker items.
- * [ValueMemberPath](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridPickerColumn~ValueMemberPath.html) - displays the `GridColumn.MappingName` property's value corresponding to the selected DisplayMemberPath item in the picker once editing is completed.
+ * `DisplayMemberPath` - Compares the values of the properties set as `GridColumn.MappingName` and `ValueMemberPath` in their respective underlying collections. If the `ValueMeberPath` property's values contains the `MappingName` property's current value, then its corresponding `DisplayMemberPath` property's value is displayed in the `GridCell`. Else the `GridCell` appears blank. However in the edit mode the values of the `DisplayMemberPath` property are dispayed as the picker items.
+ * `ValueMemberPath` - Once editing is ended the column having the `MappingName` equal to the `ValueMeberPath` has its data changed to the corresponding `ValueMemberPath` value for the selected `DisplayMemberPath` value in the picker. 
 
 The following code example shows you how to customize the picker data using `DisplayMemberPath` and `ValueMemberPath`
 
+{% tabs %}
 {% highlight xaml %}
 <ContentPage.BindingContext>
     <local:ViewModel x:Name="viewModel"/>
@@ -779,17 +760,40 @@ The following code example shows you how to customize the picker data using `Dis
 <sfGrid:SfDataGrid x:Name="dataGrid"                   
                    ItemsSource="{Binding OrdersInfo}">
     <sfGrid:SfDataGrid.Columns>
+
+        <sfgrid:GridTextColumn   HeaderText="Order ID"                                 
+                                 MappingName="OrderID"/>
+
         <sfgrid:GridPickerColumn BindingContext="{x:Reference viewModel}"
-                                 HeaderText="Last Name"
-                                 DisplayMemberPath="OrderID"
-                                 ValueMemberPath="LastName"                         
+                                 HeaderText="Picker Column"
+                                 DisplayMemberPath="EmployeeID"
+                                 ValueMemberPath="OrderID"                         
                                  ItemsSource="{Binding OrdersInfo}"                                 
-                                 MappingName="LastName"/>
+                                 MappingName="OrderID"/>
     </sfGrid:SfDataGrid.Columns>
 </sfGrid:SfDataGrid>
 {% endhighlight %}
 
 {% highlight c# %}
+
+sfGrid = new SfDataGrid(context);
+viewModel = new ViewModel();
+sfGrid.ItemsSource = viewmodel.DealerInformation;
+
+GridTextColumn orderIDColumn = new GridTextColumn();
+orderIDColumn.MappingName = "OrderID";
+orderIDColumn.HeaderText = "Order ID";
+
+GridPickerColumn pickerColumn = new GridPickerColumn();
+pickerColumn.MappingName = "OrderID";
+pickerColumn.HeaderText = "Picker Column";
+pickerColumn.DisplayMemberPath = "EmployeeID";
+pickerColumn.ValueMemberPath = "OrderID";
+pickerColumn.ItemsSource = viewmodel.DealerInformation;
+
+sfGrid.Columns.Add(orderIDColumn);
+sfGrid.Columns.Add(pickerColumn);
+
 // ViewModel class
 public class ViewModel
 {
@@ -831,7 +835,7 @@ public class ViewModel
 
 				var ord = new OrderInfo () {
 					OrderID = i,
-					LastName = LastNames [random.Next (15)],
+                    EmployeeID = i+5,
 				};
 				orderDetails.Add (ord);
 			}
@@ -850,11 +854,24 @@ public class ViewModel
 
         #endregion
     }
-}
+ }
 {% endhighlight %}
+{% endtabs %}
 
-The following screenshots shows the outcome of the above code
-![](SfDataGrid_images/Editing_Picker_Customization.png)
+The following screenshots expalins the above code and shows the working of the `PickerColumn` with `ValueMemberPath` and `DisplayMemberPath` properties set.
+
+Here in the above code example underlying collection has 2 properties (OrderID,EmployeeID). We have created a `GridPickerColumn` with MappingName = OrderID, DisplayMemberPath = EmployeeID, ValueMemberPath = OrderID. EmployeeId has the values 6,7,8,9,10.... and OrderID has the values 1,2,3,4,5.... Initially the GridCells of the `PickerColumn` will be displayed with the values 6,7,8,9,10.... in row wise order based on the `DisplayMemberPath`.
+
+![](SfDataGrid_images/PickerColumn_DisplayMemberPath.png)
+
+Upon entering the edit mode at RowColumnIndex(1,1) , the Picker pop up opens and with the picker items as 6,7,8,9,10.... again based on the `DisplayMemberPath`.
+
+![](SfDataGrid_images/PickerColumn_PickerPopUp.png)
+
+When edit mode is exited by selecting a value(9) from the Picker pop up, the `GridCell` at RowColumn index (0,1) displays the corresponding OrderID value for the selected EmployeeID value which is 4. Note that the PickerColumn's `GridCell` data is not changed and only the OrderID columns data is changed to 4. 
+
+![](SfDataGrid_images/PickerColumn_Customization.png)
+
 
 ## GridNumericColumn
 

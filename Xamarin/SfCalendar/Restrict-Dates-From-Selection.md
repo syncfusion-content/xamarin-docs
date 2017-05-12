@@ -31,10 +31,10 @@ Beyond the min max date range, following restrictions will be applied.
 {% highlight c# %}
 	
 SfCalendar calendar = new SfCalendar();    
-DateTime mindate=new DateTime(2015,1,1);
-calendar.MinDate=mindate;
-DateTime maxdate=new DateTime(2040,12,12);
-calendar.MaxDate=maxdate;
+DateTime minDate=new DateTime(2015,1,1);
+calendar.MinDate=minDate;
+DateTime maxDate=new DateTime(2040,12,12);
+calendar.MaxDate=maxDate;
 this.Content = calendar;
 	
 

@@ -27,7 +27,6 @@ The Android and UWP launches the SfNumericTextBox without any initialization and
 
 To launch SfNumericTextBox in iOS, need to create an instance of SfNumericTextBoxRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below.
 
-{% tabs %}
 
 {% highlight C# %}
 
@@ -44,7 +43,30 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% endhighlight %}
 
-{% endtabs %}
+
+### ReleaseMode issue in UWP platform
+
+There is a known Framework issue in UWP platform. The custom controls will not render when deployed the application in Release Mode.
+
+The above problem can be resolved by initializing the SfNumericTextBox assemblies in Main.xaml.cs in UWP project as like in below code snippet.
+
+
+{% highlight C# %}
+
+public sealed partial class MainPage
+{
+	public MainPage()
+	{
+		this.InitializeComponent();
+
+		new SfNumericTextBoxRenderer();
+
+		LoadApplication(new NumericUp.App());
+	}
+}
+
+{% endhighlight %}
+
 
 ## Create a Simple SfNumericTextBox 
 

@@ -38,12 +38,12 @@ namespace GettingStarted
 		{
 			InitializeComponent();
 
-			SfBusyIndicator busyindicator = new SfBusyIndicator();
-			busyindicator.AnimationType = AnimationTypes.Ball;
-			busyindicator.BackgroundColor = Color.Blue;
-			busyindicator.TextColor = Color.White;
-			busyindicator.Title ="Loading…";
-			this.Content = busyindicator;
+			SfBusyIndicator busyIndicator = new SfBusyIndicator();
+			busyIndicator.AnimationType = AnimationTypes.Ball;
+			busyIndicator.BackgroundColor = Color.Blue;
+			busyIndicator.TextColor = Color.White;
+			busyIndicator.Title ="Loading…";
+			this.Content = busyIndicator;
 		}
 	}
 }

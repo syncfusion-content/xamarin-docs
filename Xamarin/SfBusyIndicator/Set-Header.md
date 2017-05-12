@@ -37,13 +37,13 @@ namespace GettingStarted
 		{
 			InitializeComponent();
 
-			SfBusyIndicator busyindicator = new SfBusyIndicator();
-			busyindicator.AnimationType = AnimationTypes.Ball;
-			busyindicator.ViewBoxWidth = 150;
-			busyindicator.ViewBoxHeight = 150;
-			busyindicator.Title ="Loading…";
-			busyindicator.TextColor = Color.Maroon;
-			this.Content = busyindicator;
+			SfBusyIndicator busyIndicator = new SfBusyIndicator();
+			busyIndicator.AnimationType = AnimationTypes.Ball;
+			busyIndicator.ViewBoxWidth = 150;
+			busyIndicator.ViewBoxHeight = 150;
+			busyIndicator.Title ="Loading…";
+			busyIndicator.TextColor = Color.Maroon;
+			this.Content = busyIndicator;
 		}
 	}
 }

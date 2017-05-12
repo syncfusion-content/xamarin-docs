@@ -50,7 +50,7 @@ ObservableCollection<String> list = new ObservableCollection<string> ();
 list.Add ("Home");
 list.Add ("Profile");
 list.Add ("Inbox");
-list.Add ("Outbox");
+list.Add ("OutBox");
 list.Add ("Sent");
 list.Add ("Draft");
 

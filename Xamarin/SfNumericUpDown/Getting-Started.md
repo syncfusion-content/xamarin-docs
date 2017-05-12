@@ -196,7 +196,7 @@ Spin button position can be customized as follows.
 
 {% highlight C# %}
 
-	numericUpDown.SpinButttonAlignment = SpinButtonAlignment.Right;
+	numericUpDown.SpinButtonAlignment = SpinButtonAlignment.Right;
 
 {% endhighlight %}
 

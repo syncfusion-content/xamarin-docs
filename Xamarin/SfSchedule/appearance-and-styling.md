@@ -19,7 +19,7 @@ You can customize the height for the Header in Schedule using `HeaderHeight` in 
 
 {% highlight c# %}
 
-	sfSchedule.HeaderHeight = 50;
+	schedule.HeaderHeight = 50;
 
 {% endhighlight %}
 
@@ -72,7 +72,7 @@ You can customize the height for the view header in Schedule using `HeaderHeight
 
 {% highlight c# %}
 
-	sfSchedule.ViewHeaderHeight = 50;
+	schedule.ViewHeaderHeight = 50;
 
 {% endhighlight %}
 
@@ -108,7 +108,7 @@ You can differentiate working hours with non-working hour timeslots by its color
 	DayViewSettings dayViewSettings = new DayViewSettings ();
 	dayViewSettings.NonWorkingHoursTimeSlotBorderColor = Color.Gray;
 	dayViewSettings.NonWorkingHoursTimeSlotColor = Color.Gray;
-	sfschedule.DayViewSettings = dayViewSettings;
+	schedule.DayViewSettings = dayViewSettings;
 
 {% endhighlight %}
 
@@ -142,7 +142,7 @@ You can differentiate working hours with non-working hour timeslots by its color
 	dayViewSettings.TimeSlotColor = Color.White;
 	dayViewSettings.TimeSlotBorderColor = Color.Blue;
 	dayViewSettings.TimeSlotBorderStrokeWidth = 2;
-	sfschedule.DayViewSettings = dayViewSettings;
+	schedule.DayViewSettings = dayViewSettings;
 
 {% endhighlight %}
 
@@ -168,12 +168,12 @@ You can differentiate the timeslot panel using `VerticalLineColor` and `Vertical
 
 {% highlight c# %}
 
-	DayViewSettings dayviewsettings = new DayViewSettings();
-	dayviewsettings.VerticalLineColor = Color.Green;
-	dayviewsettings.VerticalLineStrokeWidth = 5;
+	DayViewSettings dayViewSettings = new DayViewSettings();
+	dayViewSettings.VerticalLineColor = Color.Green;
+	dayViewSettings.VerticalLineStrokeWidth = 5;
 
-	sfschedule.DayViewSettings = dayviewsettings;
-	this.Content = sfschedule;
+	schedule.DayViewSettings = dayViewSettings;
+	this.Content = schedule;
 
 {% endhighlight %} 
 
@@ -191,7 +191,7 @@ You can change the format,colors,size of text using `TimeFormat`, `TimeLabelColo
 	dayLabelSettings.TimeLabelColor = Color.Blue;
 	dayLabelSettings.TimeLabelSize = 10;
 	dayViewSettings.DayLabelSettings = dayLabelSettings;
-	sfSchedule.DayViewSettings = dayViewSettings;
+	schedule.DayViewSettings = dayViewSettings;
 
 {% endhighlight %}
 
@@ -249,8 +249,8 @@ You can differentiate working hours with non-working hour timeslots by its color
 	WeekViewSettings weekViewSettings = new WeekViewSettings ();
 	weekViewSettings.NonWorkingHoursTimeSlotBorderColor = Color.Gray;
 	weekViewSettings.NonWorkingHoursTimeSlotColor = Color.Gray;
-	sfschedule.WeekViewSettings = weekViewSettings;
-	this.Content= sfschedule;
+	schedule.WeekViewSettings = weekViewSettings;
+	this.Content= schedule;
 
 {% endhighlight %}
 
@@ -284,8 +284,8 @@ You can differentiate working hours with non-working hour timeslots by its color
 	weekViewSettings.TimeSlotBorderColor = Color.Green;
 	weekViewSettings.TimeSlotColor = Color.White;
 	weekViewSettings.TimeSlotBorderStrokeWidth = 2;
-	sfschedule.WeekViewSettings = weekViewSettings;
-	this.Content= sfschedule;
+	schedule.WeekViewSettings = weekViewSettings;
+	this.Content= schedule;
 
 {% endhighlight %}
 
@@ -315,8 +315,8 @@ You can differentiate the timeslot panel using `VerticalLineColor` and `Vertical
 	WeekViewSettings weekViewSettings = new WeekViewSettings ();
 	weekViewSettings.VerticalLineColor = Color.Blue;
 	weekViewSettings.VerticalLineStrokeWidth = 5;
-	sfschedule.WeekViewSettings = weekViewSettings;
-	this.Content= sfschedule;
+	schedule.WeekViewSettings = weekViewSettings;
+	this.Content= schedule;
 
 {% endhighlight %}
 
@@ -334,7 +334,7 @@ You can change the format,colors,size,style of text using `TimeFormat`, `TimeLab
 	weekLabelSettings.TimeLabelColor = Color.Blue;
 	weekLabelSettings.TimeLabelSize = 10;
 	weekViewSettings.WeekLabelSettings = weekLabelSettings;
-	sfSchedule.WeekViewSettings = weekViewSettings;
+	schedule.WeekViewSettings = weekViewSettings;
 
 {% endhighlight %}
 
@@ -361,8 +361,8 @@ You can change the all day appointment panel color using the property `AllDayApp
 	//setting week view settings properties
 	WeekViewSettings weekViewSettings = new WeekViewSettings ();
 	weekViewSettings.AllDayAppointmentLayoutColor = Color.Pink;
-	sfschedule.WeekViewSettings = weekViewSettings;
-	this.Content= sfschedule;
+	schedule.WeekViewSettings = weekViewSettings;
+	this.Content= schedule;
 
 {% endhighlight %}
 
@@ -397,12 +397,12 @@ You can also differentiate working hours with non-working hour timeslots by its 
 
 {% highlight c# %}
 
-	//setting workweekviewsettings properties
+	//setting workweek view settings properties
 	WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings ();
 	workWeekViewSettings.NonWorkingHoursTimeSlotBorderColor = Color.Gray;
 	workWeekViewSettings.NonWorkingHoursTimeSlotColor = Color.Silver;
-	sfschedule.WorkWeekViewSettings = workWeekViewSettings;
-	this.Content= sfschedule;
+	schedule.WorkWeekViewSettings = workWeekViewSettings;
+	this.Content= schedule;
 
 {% endhighlight %}
 
@@ -431,13 +431,13 @@ You can also differentiate working hours with non-working hour timeslots by its 
 
 {% highlight c# %}
 
-	//setting workweekviewsettings properties
+	//setting workweek view settings properties
 	WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings ();
 	workWeekViewSettings.TimeSlotBorderColor = Color.Aqua;
 	workWeekViewSettings.TimeSlotColor = Color.Yellow;
 	workWeekViewSettings.TimeSlotBorderStrokeWidth = 5;
-	sfschedule.WorkWeekViewSettings = workWeekViewSettings;
-	this.Content= sfschedule;
+	schedule.WorkWeekViewSettings = workWeekViewSettings;
+	this.Content= schedule;
 
 {% endhighlight %}
 
@@ -467,8 +467,8 @@ You can differentiate the timeslot panel using `VerticalLineColor` and `Vertical
 	WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings ();
 	workWeekViewSettings.VerticalLineColor = Color.Green;
 	workWeekViewSettings.VerticalLineStrokeWidth = 5;
-	sfschedule.WorkWeekViewSettings = (workWeekViewSettings);
-	this.Content= sfschedule;
+	schedule.WorkWeekViewSettings = (workWeekViewSettings);
+	this.Content= schedule;
 
 {% endhighlight %}
 
@@ -486,7 +486,7 @@ You can change the format , colors, size, style of text using `TimeFormat`, `Tim
 	workWeekLabelSettings.TimeLabelColor = Color.Blue;
 	workWeekLabelSettings.TimeLabelSize = 10;
 	workweekViewSettings.WorkWeekLabelSettings = workWeekLabelSettings;
-	sfSchedule.WorkWeekViewSettings = workweekViewSettings;
+	schedule.WorkWeekViewSettings = workweekViewSettings;
 
 {% endhighlight %}
 
@@ -511,11 +511,11 @@ You can change the all day appointment panel color using the property `AllDayApp
 
 {% highlight c# %}
 
-	//setting workweekviewsettings properties
+	//setting workweek view settings properties
 	WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings ();
 	workWeekViewSettings.AllDayAppointmentLayoutColor = Color.Pink;
-	sfschedule.WorkWeekViewSettings = workWeekViewSettings;
-	this.Content= sfschedule;
+	schedule.WorkWeekViewSettings = workWeekViewSettings;
+	this.Content= schedule;
 
 {% endhighlight %}
 
@@ -540,8 +540,8 @@ You can change the time interval and time interval height using `TimeInterval` a
 
 {% highlight c# %}
 
-	sfSchedule.TimeInterval = 120;
-	sfSchedule.TimeIntervalHeight = 100;
+	schedule.TimeInterval = 120;
+	schedule.TimeIntervalHeight = 100;
 
 {% endhighlight %}
 

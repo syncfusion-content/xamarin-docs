@@ -22,9 +22,9 @@ So that beyond the min date range, it will restrict date navigations features of
 
 	DateTime minDate= new DateTime (currentDate.Year, currentDate.Month -     monthRange, currentDate.Day, 10, 0, 0);
 
-	sfschedule.MinDisplayDate = minDate;
+	schedule.MinDisplayDate = minDate;
 
-	this.Content= sfschedule;
+	this.Content= schedule;
 
 {% endhighlight %}
 
@@ -42,9 +42,9 @@ So that beyond the max date range, it will restrict date navigations features of
 
 	DateTime maxDate= new DateTime (currentDate.Year, currentDate.Month+     monthRange, currentDate.Day, 10, 0, 0);
 
-	sfschedule.MaxDisplayDate = maxDate;
+	schedule.MaxDisplayDate = maxDate;
 
-	this.Content= sfschedule;
+	this.Content= schedule;
 
 {% endhighlight %}
 
@@ -63,7 +63,7 @@ By default schedule control will be rendered with Sunday as the first day of the
 {% highlight c# %}
 
 	//setting first day of the week 
-	sfschedule.FirstDayOfWeek = 3;
+	schedule.FirstDayOfWeek = 3;
 
 {% endhighlight %}
 
@@ -84,7 +84,7 @@ Schedule views by default can be navigated to next view using touch swipe gestur
 {% highlight C# %}
 
 	//using Schedule Forward()
-	sfschedule.Forward();
+	schedule.Forward();
 
 {% endhighlight %}
 
@@ -95,7 +95,7 @@ Schedule views by default can be navigated to previous view using touch swipe ge
 {% highlight C# %}
 
 	//using Schedule Backward()
-	sfschedule.Backward();
+	schedule.Backward();
 
 {% endhighlight %}
 
@@ -111,7 +111,7 @@ Visible dates can be moved to specific date using `NavigateTo` method and `MoveT
 
 	DateTime SpecificDate= new DateTime (currentDate.Year- 5,currentDate.Month-3, currentDate.Day, 0, 0, 0);
 
-	sfschedule.NavigateTo(SpecificDate); 
+	schedule.NavigateTo(SpecificDate); 
 
     //using MoveToDate property
 
@@ -119,7 +119,7 @@ Visible dates can be moved to specific date using `NavigateTo` method and `MoveT
 
 	DateTime SpecificDate= new DateTime (currentDate.Year- 5,currentDate.Month-3, currentDate.Day, 0, 0, 0);
 
-	sfschedule.MoveToDate = SpecificDate;
+	schedule.MoveToDate = SpecificDate;
 
 {% endhighlight %}
 
@@ -141,7 +141,7 @@ By default Schedule views can be moved backwards and forwards using touch swipe 
 {% highlight c# %}
 
 	//disabling navigation gesture
-	sfschedule.EnableNavigation = false;
+	schedule.EnableNavigation = false;
 
 {% endhighlight %}
 
@@ -153,7 +153,7 @@ By default Schedule views can be moved backwards and forwards using touch swipe 
 
 {% highlight c# %}
 
-    sfschedule.ScheduleCellTapped += (object sender, ScheduleTappedEventArgs args) =>
+    schedule.ScheduleCellTapped += (object sender, ScheduleTappedEventArgs args) =>
     {
     var appointment = args.selectedAppointment;
     var date = args.datetime;

@@ -193,9 +193,9 @@ ItemTemplate property of SfRotator control is used to customize the contents of 
 
 {% highlight C# %}
 
-public RotatorModel(string imagestr)
+public RotatorModel(string imageString)
 {
-    Image = imagestr;
+    Image = imageString;
 }
 private String _image;
 public String Image

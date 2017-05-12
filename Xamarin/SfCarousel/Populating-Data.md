@@ -27,9 +27,9 @@ The SfCarousel model looks as follows.
 
 public class CarouselModel
 {
-	public CarouselModel(string imagestr)
+	public CarouselModel(string imageString)
 	{
-		Image = imagestr;
+		Image = imageString;
 	}
 	private string _image;
 	public string Image
@@ -120,22 +120,22 @@ Different set of views can be provided to every items through `ItemContent` prop
 SfCarousel carousel = new SfCarousel();
 
 SfCarouselItem carouselItem = new SfCarouselItem();
-Label lbl = new Label();
-lbl.Text = "  Item No: 1 ";
-lbl.BackgroundColor = Color.Gray;
-lbl.FontSize = 25;
-lbl.VerticalTextAlignment = TextAlignment.Center;
-carouselItem.ItemContent = lbl;
+Label label = new Label();
+label.Text = "  Item No: 1 ";
+label.BackgroundColor = Color.Gray;
+label.FontSize = 25;
+label.VerticalTextAlignment = TextAlignment.Center;
+carouselItem.ItemContent = label;
 carousel.ItemsSource.Add(carouselItem);
 
 SfCarouselItem carouselItem1 = new SfCarouselItem();
-Image img = new Image();
-img.Source = ImageSource.FromFile("image2.png");
-img.Aspect = Aspect.AspectFit;
-img.VerticalOptions = LayoutOptions.Center;
-img.HeightRequest = 400;
-img.WidthRequest = 400;
-carouselItem1.ItemContent = img;
+Image image = new Image();
+image.Source = ImageSource.FromFile("image2.png");
+image.Aspect = Aspect.AspectFit;
+image.VerticalOptions = LayoutOptions.Center;
+image.HeightRequest = 400;
+image.WidthRequest = 400;
+carouselItem1.ItemContent = image;
 carousel.ItemsSource.Add(carouselItem1);
 
 this.Content = carousel;	

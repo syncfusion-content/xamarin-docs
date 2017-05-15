@@ -9,7 +9,7 @@ documentation : ug
 
 # AutoComplete Filtering Options
 
-The phenomenon of string comparison for filtering suggestions can be changed using the [`SuggestionMode`] property. The default filtering strategy is “StartsWith” and it is case insensitive. The available filtering modes are
+The phenomenon of string comparison for filtering suggestions can be changed using the `SuggestionMode` property. The default filtering strategy is “StartsWith” and it is case insensitive. The available filtering modes are
 
 * StartsWith
 

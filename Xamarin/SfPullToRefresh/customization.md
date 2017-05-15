@@ -16,11 +16,6 @@ Gets or sets the content of the refresh view. `PullableContent` is the main view
 {%highlight Xaml%}
 
   <syncfusion:SfPullToRefresh x:Name="pullToRefresh"
-                                    IsRefreshing="False" 
-                                    TransitionMode="SlideOnTop" 
-                                    ProgressBackgroundColor="White"
-                                    ProgressStrokeWidth="3" 
-                                    ProgressStrokeColor="Blue"
                                     PullingThershold="120"
                                     RefreshContentHeight="30"
                                     RefreshContentThreshold="30"
@@ -28,7 +23,7 @@ Gets or sets the content of the refresh view. `PullableContent` is the main view
             <syncfusion:SfPullToRefresh.PullableContent>
                     <Label x:Name="Monthlabel" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" />
             </syncfusion:SfPullToRefresh.PullableContent>
-        </syncfusion:SfPullToRefresh>
+  </syncfusion:SfPullToRefresh>
 
 {%endhighlight%}
 

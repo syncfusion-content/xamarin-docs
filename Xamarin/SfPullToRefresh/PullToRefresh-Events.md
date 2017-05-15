@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grid Events | SfDataGrid | Xamarin | Syncfusion
+title: Grid Events | SfPullToRefresh | Xamarin | Syncfusion
 description: How to use different events exposed in SfPullToRefresh.
 platform: Xamarin.Forms 
 control: SfPullToRefresh 
@@ -9,7 +9,7 @@ documentation: ug
 
 # Events
 
-The pulling event will be notified whenever the swipe gesture is started. This event will notify the listener each and every time until the refresh content height exceeds. When we release the gesture from pullable content, Refreshing event will be triggered. Now the refresh operation can be performed. Once the content is refreshed, we should set `SfPullToRefresh.IsRefreshing` to `false` to stop the animation.
+The `Pulling` event will be notified whenever the swipe gesture is started. This event will notify the listener each and every time until the refresh content height exceeds. When we release the gesture from pullable content, `Refreshing` event will be triggered. Now the refresh operation can be performed. Once the content is refreshed, we should set `SfPullToRefresh.IsRefreshing` to `false` to stop the animation. The `Refreshed` event will be triggered whenever we set `IsRefreshing` is `False`. using this event we can end the progress animation after content is refreshed. 
 
 There are three built-in events in the PullToRefresh control namely:
 

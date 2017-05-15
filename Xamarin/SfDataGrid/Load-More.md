@@ -38,7 +38,7 @@ private async void ExecuteLoadMoreCommand()
 private OrderInfoRepository order;
 public ViewModel()
 {
-    SetRowstoGenerate(50);
+    SetRowsToGenerate(50);
 }
 
 //ItemsSource
@@ -51,7 +51,7 @@ public ObservableCollection<OrderInfo> OrdersInfo
 }
 
 //ItemsSource Generator
-public void SetRowstoGenerate(int count)
+public void SetRowsToGenerate(int count)
 {
     order = new OrderInfoRepository();
     ordersInfo = order.GetOrderDetails(count);
@@ -69,14 +69,14 @@ public ObservableCollection<OrderInfo> GetOrderDetails (int count)
     ObservableCollection<OrderInfo> orderDetails = new ObservableCollection<OrderInfo> ();
 
     for (int i = 10001; i <= count + 10000; i++) {
-        var ord = new OrderInfo () {
+        var order = new OrderInfo () {
             OrderID = i,
             CustomerID = CustomerID [random.Next (7)],
             EmployeeID = random.Next (1700, 1800).ToString (),
             FirstName = FirstNames [random.Next (7)],
             LastName = LastNames [random.Next (7)]
         };
-        orderDetails.Add (ord);
+        orderDetails.Add (order);
     }
     return orderDetails;
 } 

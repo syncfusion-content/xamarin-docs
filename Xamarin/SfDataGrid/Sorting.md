@@ -204,30 +204,30 @@ public class CustomerInfo : IComparer<Object>, ISortDirection
 {
     public int Compare(object x, object y)
     {
-        int namX;
-        int namY;
+        int nameX;
+        int nameY;
 
         //For OrderInfo type data
         if (x.GetType () == typeof(OrderInfo)) {
             //Calculating the length of FirstName in OrderInfo objects
-            namX = ((OrderInfo)x).FirstName.Length;
-            namY = ((OrderInfo)y).FirstName.Length;
+            nameX = ((OrderInfo)x).FirstName.Length;
+            nameY = ((OrderInfo)y).FirstName.Length;
         }
 
         //For Group type data                                   
         else if (x.GetType () == typeof(Group)) {
             //Calculating the group key length
-            namX = ((Group)x).Key.ToString ().Length;
-            namY = ((Group)y).Key.ToString ().Length;
+            nameX = ((Group)x).Key.ToString ().Length;
+            nameY = ((Group)y).Key.ToString ().Length;
         } else {
-            namX = x.ToString ().Length;
-            namY = y.ToString ().Length;
+            nameX = x.ToString ().Length;
+            nameY = y.ToString ().Length;
         }
 
         // Objects are compared and return the SortDirection
-        if (namX.CompareTo (namY) > 0)
+        if (nameX.CompareTo (nameY) > 0)
             return SortDirection == ListSortDirection.Ascending ? 1 : -1;
-        else if (namX.CompareTo (namY) == -1)
+        else if (nameX.CompareTo (nameY) == -1)
             return SortDirection == ListSortDirection.Ascending ? -1 : 1;
         else
             return 0; 

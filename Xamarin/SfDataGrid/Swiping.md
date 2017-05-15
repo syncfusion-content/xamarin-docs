@@ -31,7 +31,7 @@ Refer the following code example that shows how to load a template when swiping 
         <Image Grid.Column="0"  
                BackgroundColor="Transparent" 
                HorizontalOptions="CenterAndExpand" 
-               Source="editicon.png"         
+               Source="EditIcon.png"         
                BindingContextChanged=”rightImage_BindingContextChanged"  />
         
         <Label Grid.Column="1" 
@@ -63,7 +63,7 @@ dataGrid.LeftSwipeTemplate = new DataTemplate(() =>
     {
       BackgroundColor="Transparent",
       HorizontalOptions=LayoutOptions. CenterAndExpand,
-      Source="editicon.png",
+      Source="EditIcon.png",
       BindingContextChanged+= MainPage_BindingContextChanged
     },0,0);
 
@@ -150,7 +150,7 @@ Refer the following code example that shows how to load multiple views in templa
                       BackgroundColor="Transparent"
                       BindingContextChanged="rightImage_BindingContextChanged"
                       HorizontalOptions="CenterAndExpand"
-                      Source="Trashimage.png" />
+                      Source="TrashImage.png" />
 
                <Label Grid.Column="1"
                       BackgroundColor="Transparent"
@@ -316,7 +316,7 @@ Swiping.Xaml.cs
 //Call to delete() when swipe is ended
 private void dataGrid_SwipeEnded(object sender, SwipeEndedEventArgs e)
 {
-    swipedRowindex = e.RowIndex;
+    swipedRowIndex = e.RowIndex;
     if (Math.Abs(e.SwipeOffset) >= dataGrid.Width)
     {
         if (e.SwipeOffset > 0)
@@ -337,13 +337,13 @@ private async void doDeleting()
     else if (rightTemplateView.Content.IsVisible)
         rightTemplateView.Content.IsVisible = false;
     if (!IsUndoClicked)
-        viewModel.OrdersInfo.RemoveAt(swipedRowindex - 1);
+        viewModel.OrdersInfo.RemoveAt(swipedRowIndex - 1);
     else
     {
-        var removedData = viewModel.OrdersInfo[swipedRowindex - 1];
+        var removedData = viewModel.OrdersInfo[swipedRowIndex - 1];
         var isSelected = dataGrid.SelectedItems.Contains(removedData);
         viewModel.OrdersInfo.Remove(removedData);
-        viewModel.OrdersInfo.Insert(swipedRowindex - 1, removedData);
+        viewModel.OrdersInfo.Insert(swipedRowIndex - 1, removedData);
         if (isSelected)
             dataGrid.SelectedItems.Add(removedData);
         IsUndoClicked = false;
@@ -357,7 +357,7 @@ The following screenshot shows the final outcome upon execution of the above cod
 
 ### Swiping when using complex template in SfDataGrid
 
-When a complex layout is loaded in the GridTemplateColumn, swiping may not occur or may not be smooth at times since the touches will be intercepted by the views loaded in the template. As a result the SfDataGrid may not recognize the touches which might restrict swiping operation. Inorder to resolve this issue, we need to set the `InputTransparent` property of the views loaded in the `DataTemplate` of the `GridTemplateColumn` as `True`.
+When a complex layout is loaded in the GridTemplateColumn, swiping may not occur or may not be smooth at times since the touches will be intercepted by the views loaded in the template. As a result the SfDataGrid may not recognize the touches which might restrict swiping operation. In-order to resolve this issue, we need to set the `InputTransparent` property of the views loaded in the `DataTemplate` of the `GridTemplateColumn` as `True`.
 
 Refer the below code example in which the `InputTransparent` property of the views loaded in the `GridTemplateColumn.CellTemplate` is set as `True` to resolve the swiping not working issue when a complex layout is loaded in the GridTemplateColumn.
 

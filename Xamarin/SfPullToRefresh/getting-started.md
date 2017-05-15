@@ -1,36 +1,29 @@
 ---
 layout: post
-title: Getting Started with syncfusion SfPullToRefresh control for Xamarin.Forms 
-description:  A quick tour to initial users on Syncfusion SfPullToRefresh control for Xamarin.Forms platform
-platform: Xamarin.Forms 
-control: PullToRefresh
+title: Getting started | SfPullToRefresh | Xamarin | Syncfusion
+description: Getting started with SfPullToRefresh.
+platform: xamarin
+control: SfPullToRefresh
 documentation: ug
 ---
 
-
 # Getting Started
 
-This section explains you the steps to configure a SfPullToRefresh control in a real-time scenario and also provides a walk-through on some of the customization features available in PullToRefresh control.
+This section provides a quick overview for working with SfPullToRefresh for Xamarin.Forms.
 
-## Reference Essential Studio Components in your solution
+## Assembly deployment
 
-If you had acquired Essential Studio components through the Xamarin component store interface from within your IDE, then after adding the components to your Xamarin.iOS, Xamarin.Android and UWP projects through the Component manager, you will still need to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL project in your solution. You can do this by manually adding the relevant PCL assembly references to your PCL project contained in the following path inside of your solution folder.
+After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders,
 
-Components/syncfusionessentialstudio-version/lib/pcl/
+{Syncfusion Essential Studio Installed location}\Essential Studio\{{ site.releaseversion }}\Xamarin\lib
 
-Alternatively if you had downloaded Essential Studio from Syncfusion.com or through the Xamarin store web interface then all assembly references need to be added manually.
+Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Xamarin\lib
 
-After installing Essential Studio for Xamarin, all the required assemblies can be found in the installation folders, typically
+N> Assemblies can be found in unzipped package location in Mac
 
-{Syncfusion Installed location}\Essential Studio\syncfusionessentialstudio-version\lib
+### SfPullToRefresh for Xamarin.Forms
 
-Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\lib
-
-Or after downloading through the Xamarin store web interface, all the required assemblies can be found in the below folder
-
-{Download location}\syncfusionessentialstudio-version\lib
-
-You can then add the assembly references to the respective projects as shown below
+The following list of assemblies need to be added as reference from the lib folder to use SfPullToRefresh in your application.
 
 <table>
 <tr>
@@ -39,171 +32,180 @@ You can then add the assembly references to the respective projects as shown bel
 </tr>
 <tr>
 <td>PCL</td>
-<td>pcl\Syncfusion.SfPullToRefresh.XForms.dll</td>
+<td>pcl\Syncfusion.Core.XForms.dll<br/>pcl\Syncfusion.SfPullToRefresh.XForms.dll<br/></td>
 </tr>
 <tr>
-<td>Android</td>
-<td>android\Syncfusion.SfPullToRefresh.Android.dll<br/>android\Syncfusion.SfPullToRefresh.XForms.Android.dll</td>
+<td>Android Renderer</td>
+<td>pcl\Syncfusion.Core.XForms.dll<br/>pcl\Syncfusion.SfPullToRefresh.XForms.dll<br/>android\Syncfusion.SfPullToRefresh.XForms.Android.dll<br/></td>
 </tr>
 <tr>
-<td>iOS (Unified)</td>
-<td>iOS-unified\Syncfusion.SfPullToRefresh.iOS.dll<br/>iOS-unified\Syncfusion.SfPullToRefresh.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfPullToRefresh.XForms.dll</td>
+<td>iOS Renderer</td>
+<td>pcl\Syncfusion.Core.XForms.dll<br/>pcl\Syncfusion.SfPullToRefresh.XForms.dll<br/>ios-unified\Syncfusion.SfPullToRefresh.XForms.iOS.dll<br/></td>
 </tr>
 <tr>
-<td>UWP</td>
-<td>uwp\Syncfusion.SfInput.UWP.dll<br/>uwp\Syncfusion.SfShared.UWP.dll<br/>uwp\Syncfusion.SfAutoComplete.XForms.dll<br/>uwp\Syncfusion.SfAutoComplete.XForms.UWP.dll</td>
+<td>UWP Renderer</td>
+<td>pcl\Syncfusion.Core.XForms.dll<br/>pcl\Syncfusion.SfPullToRefresh.XForms.dll<br/>uwp\Syncfusion.SfPullToRefresh.XForms.UWP.dll<br/></td>
 </tr>
 </table>
 
-# Initialization
+N> When there is a mismatch of Xamarin NuGet packages between your sample and SfPullToRefresh assemblies, an error `Could not load type Xamarin.Forms.ElementTemplate` will occur. Please refer the `ReadMe` to know the software requirements of Syncfusion controls.
 
-## Create your first SfPullToRefresh in Xamarin.Forms
-
-Refer to the following code to add the SfPullToRefresh control:
+N> When there is a mismatch between Syncfusion NuGet packages among your projects, `System.IO.FileLoadException` will occur. To overcome this exception, install the same version of SfPullToRefresh assemblies in all your projects. 
 
 
-{% tabs %}
+## Launching the SfPullToRefresh on each platform
 
-{%highlight Xaml%}
+To use SfPullToRefresh inside an application, each platform application must initialize the SfPullToRefresh renderer. This initialization step varies from platform to platform and is discussed in the following sections.
 
-    <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
-        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-        xmlns:Syncfusion="clr-namespace:Syncfusion.SfPullToRefresh.XForms;assembly=Syncfusion.SfPullToRefresh.XForms">
+### Android
 
-            <Grid x:Name="LayoutRoot">
-                    <Syncfusion:SfPullToRefresh />
-            </Grid> 
-    </ContentPage>
+The Android launches the SfPullToRefresh without any initialization and is enough to only initialize the Xamarin.Forms Framework to launch the application.
 
-{%endhighlight%}
+### iOS
+
+To launch the SfPullToRefresh in iOS, you need to call the `SfPullToRefreshRenderer.Init()` in the `FinishedLaunching` overridden method of the AppDelegate class after the Xamarin.Forms Framework initialization and before the LoadApplication is called, as demonstrated in the following code example:
 
 {% highlight c# %}
+public override bool FinishedLaunching(UIApplication app, NSDictionary options)
+{
+    …
+    global::Xamarin.Forms.Forms.Init ();
+    SfPullToRefreshRenderer.Init();
+    LoadApplication (new App ());
+    …
+}
+{% endhighlight %} 
 
-    SfPullToRefresh pullToRefresh = new SfPullToRefresh();
-    this.Content = pullToRefresh;
+### Universal Windows Platform (UWP)
 
+To launch the SfPullToRefresh in UWP, you need to call the `SfPullToRefreshRenderer.Init()` in the `MainPage` constructor before the LoadApplication is called, as demonstrated in the following code example:
+
+{% highlight c# %}
+public MainPage()
+{
+    …
+    SfPullToRefreshRenderer.Init();
+    LoadApplication (new App ());
+    …
+}
 {% endhighlight %}
 
-{% endtabs %}
+## Create a sample with SfPullToRefresh 
 
+This section explains how to create a SfPullToRefresh and configure it. 
+ 
+You can download the entire source code of this demo for Xamarin.Forms from [here](http://files2.syncfusion.com/Xamarin.Forms/Samples/SfPullToRefresh_GettingStarted.zip).
 
-## Customizing a simple SfPullToRefresh sample
+## Creating the project
 
-To develop an application with Xamarin PullToRefresh is simple. The following steps explains how to create and configure its properties.
+Create a new BlankApp (Xamarin.Forms.Portable) application in Xamarin Studio or Visual Studio for Xamarin.Forms.
 
+## Adding SfPullToRefresh in Xamarin.Forms 
 
-* Create the `pullableContent` for the `SfPullToRefresh`
+1. Add the required assembly references to the pcl and renderer projects as discussed in the [Assembly deployment](#assembly-deployment) section.
+2. Import SfPullToRefresh control namespace `Syncfusion.SfPullToRefresh.XForms`.
+3. Set the any `View` as `PullableContent` of the `SfPullToRefresh`.
 
-You can set the `pullableContent` for the `SfPullToRefresh` by adding the desired UIElement.
 
 {% tabs %}
-
-{%highlight Xaml%}
-
-    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" PullingThershold="150" >
+{% highlight xaml %}
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GettingStarted"
+             x:Class="GettingStarted.MainPage" 
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfPullToRefresh.XForms;assembly=Syncfusion.SfPullToRefresh.XForms">
+        <syncfusion:SfPullToRefresh x:Name="pullToRefresh"
+                                    IsRefreshing="False" 
+                                    PullingThershold="100"
+                                    RefreshContentHeight="30"
+                                    RefreshContentThreshold="30"
+                                    RefreshContentWidth="30">
         <syncfusion:SfPullToRefresh.PullableContent>
-            <Grid BackgroundColor="#039be5" Name="controlView" >
-            </Grid>
+            <StackLayout BackgroundColor="#00AFF9" Orientation="Vertical">
+                <Label Text="New York Temperature" FontSize="Large" TextColor="White" HorizontalTextAlignment="Center" Margin="20"/>
+                <Image  WidthRequest="100" HorizontalOptions="Center" HeightRequest="100"  Margin="20" Source="GettingStarted/warmselected.png"/>
+                <Label x:Name="weatherData" FontSize="Large" TextColor="White" HorizontalTextAlignment="Center" Margin="20"/>
+            </StackLayout>
         </syncfusion:SfPullToRefresh.PullableContent>
-    </syncfusion:SfPullToRefresh>
+        </syncfusion:SfPullToRefresh>
+</ContentPage>
 
-
-{%endhighlight%}
-{% endtabs %}
-
-## Events
-
-The pulling event will be notified whenever the swipe gesture is started. This event will notify the listener each and every time until the refresh content height exceeds. When we release the gesture from pullable content, Refreshing event will be triggered. Now user can proceed to fetching the data from web or database. Once the data is fetched, we should call Refresh to method to complete all animations.
-
-There are three built-in events in the PullToRefresh control namely:
-
-1. `Pulling`
-2. `Refreshing`
-3. `Refreshed`
-
-### Pulling
-
-`Pulling` event is triggered when we start pulling down the pullableContent. It is triggered as long as the pointer or finger is pressed and the progress is less than 100 and not equal to 0 . The arguments for the event are:
-
-* SfPullToRefresh
-* Progress
-
-{% tabs %}
-
-{% highlight c# %}
-   pulltorefresh.PullingEvent +=pullToRefresh_ Pulling;
-
-   void pullToRefresh_ Pulling(object sender,SfPullToRefresh.PullingEventArgs args) 
-		{ 
-		
-	
-		
-		}
-   		
 {% endhighlight %}
-
-{%highlight Xaml%}
-
-    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" PullingEvent="pullToRefresh_Pulling" />
-
-{%endhighlight%}
-
-{% endtabs %}
-
-### Refreshing
-
-`Refreshing` event is triggered once the content is pulled through the PullingThreshold or Progress reaches 100. This event is triggered till the Refresh() method is called.
-
-{% tabs %}
-
 {% highlight c# %}
+using Syncfusion.SfPullToRefresh.XForms;
+using Xamarin.Forms;
 
-    pullToRefresh.RefreshingEvent+= pullToRefresh_Refreshing;
-   
-    void pullToRefresh_Refreshing(object sender)
+namespace GettingStarted
+{
+    public partial class MainPage : ContentPage
+    {
+        Random random = new Random();
+        string[] temperatures = new string[] { "22°", "18°", "12°", "25°", "23°", "20°", "25°" };
+
+        public MainPage()
         {
-
+            InitializeComponent();
+            this.BindingContext = this;
+            weatherData.Text = temperatures[0].ToString()+" degree";
+            pullToRefresh.Pulling += PullToRefresh_Pulling;
+            pullToRefresh.Refreshing += PullToRefresh_Refreshing;
         }
 
+        private async void PullToRefresh_Refreshing(object sender, EventArgs args)
+        {
+            pullToRefresh.IsRefreshing = true;
+            await Task.Delay(2000);
+            int number = random.Next(0, 6);
+            new WeatherData(temperatures[number]);
+            weatherData.Text = temperatures[number].ToString() + " degree";
+            pullToRefresh.IsRefreshing = false;
+        }
+
+        private void PullToRefresh_Pulling(object sender, PullingEventArgs args)
+        {
+            args.Cancel = false;
+            var prog = args.Progress;
+        }
+    }
+}
+
+
+Model class:
+
+public class WeatherData: INotifyPropertyChanged
+{
+    private string _temperature;
+
+    public WeatherData(string temperature)
+    {
+        Temperature = temperature;
+    }
+
+    public string Temperature
+    {
+        get
+        {
+            return _temperature;
+        }
+        set
+        {
+            _temperature = value;
+            RaisePropertyChanged("Temperature");
+        }
+    }
+        
+    #region INotifyPropertyChanged implementation
+
+    public event PropertyChangedEventHandler PropertyChanged;
+    private void RaisePropertyChanged(String Name)
+    {
+        if (PropertyChanged != null)
+            this.PropertyChanged(this, new PropertyChangedEventArgs(Name));
+    }
+    #endregion
+}
 
 {% endhighlight %}
-
-{%highlight Xaml%}
-
-    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" RefreshingEvent="pullToRefresh_Refreshing" />
-
-{%endhighlight%}
-
-
 {% endtabs %}
 
-### Refreshed
-
-`Refreshed` event is triggered once the refreshing and all the animations associated with the control are completed.
-
-{% tabs %}
-
-
-{% highlight c# %}
-
-    pullToRefresh.RefreshedEvent += Pull_pullToRefreshedEvent;
-    void Pull_pullToRefreshedEvent (object sender)
-		{
-
-         Device.StartTimer(new TimeSpan(0, 0, 2), () =>
-				{
-                      pulltorefresh.Refresh();
-					  return false;
-				  });
-				
-		}
-
-{% endhighlight %}
-
-{%highlight Xaml%}
-
-    <syncfusion:SfPullToRefresh x:Name=" pullToRefresh" RefreshedEvent="Pull_pullToRefreshedEvent" />
-
-{%endhighlight%}
-
-{% endtabs %}

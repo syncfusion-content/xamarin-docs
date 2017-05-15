@@ -403,9 +403,9 @@ private void pdfExport_HeaderAndFooterExporting(object sender, PdfHeaderFooterEv
 {
     var width = e.PdfPage.GetClientSize().Width;
     PdfPageTemplateElement header = new PdfPageTemplateElement(width, 60);
-    var assmbely = Assembly.GetExecutingAssembly();
-    var imagestream = assmbely.GetManifestResourceStream("GettingStarted.SyncfusionLogo.jpg");
-    PdfImage pdfImage = PdfImage.FromStream(imagestream);
+    var assembly = Assembly.GetExecutingAssembly();
+    var imageStream = assembly.GetManifestResourceStream("GettingStarted.SyncfusionLogo.jpg");
+    PdfImage pdfImage = PdfImage.FromStream(imageStream);
     header.Graphics.DrawImage(pdfImage, new RectangleF(0, 0, width, 50));
     e.PdfDocumentTemplate.Top = header;
 }
@@ -498,11 +498,11 @@ public class SaveIOS : ISave
             currentController = currentController.PresentedViewController;
         UIView currentView = currentController.View;
 
-        QLPreviewController qlPreview = new QLPreviewController();
+        QLPreviewController previewController = new QLPreviewController();
         QLPreviewItem item = new QLPreviewItemBundle(filename, filePath);
-        qlPreview.DataSource = new PreviewControllerDS(item);
+        previewController.DataSource = new PreviewControllerDS(item);
 
-        currentController.PresentViewController((UIViewController)qlPreview, true, (Action)null);
+        currentController.PresentViewController((UIViewController)previewController, true, (Action)null);
     }
 }
 

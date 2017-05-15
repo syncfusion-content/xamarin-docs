@@ -498,11 +498,11 @@ public class SaveIOS : ISave
             currentController = currentController.PresentedViewController;
         UIView currentView = currentController.View;
 
-        QLPreviewController preview = new QLPreviewController();
+        QLPreviewController previewController = new QLPreviewController();
         QLPreviewItem item = new QLPreviewItemBundle(filename, filePath);
-        preview.DataSource = new PreviewControllerDS(item);
+        previewController.DataSource = new PreviewControllerDS(item);
 
-        currentController.PresentViewController((UIViewController)preview, true, (Action)null);
+        currentController.PresentViewController((UIViewController)previewController, true, (Action)null);
     }
 }
 

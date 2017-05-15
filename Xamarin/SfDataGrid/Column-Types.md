@@ -563,7 +563,7 @@ dataGrid.RowHeaderWidth = 50;
 
 ## GridDateTimeColumn
 
-The [SfDatarGrid.GridDateTimeColumn](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridDateTimeColumn.html) is derived from `SfDataGrid.GridColumn` thereby inheriting all the properties of `SfDataGrid.GridColumn`. It displays the date information as the content of a column. To create `SfDatarGrid.GridDateTimeColumn` in SfDataGrid, the property corresponding to the column in the underlying collection must be of type DateTime. You can enable or disable editing for the particular column by setting the [GridColumn.AllowEditing](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~AllowEditing.html) property to true or false. In the editing mode it displays [SfDatePicker](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDatePicker.html) element which is derived from the [Xamarin.Forms.DatePicker](https://developer.xamarin.com/api/type/Xamarin.Forms.DatePicker/).
+The [SfDatarGrid.GridDateTimeColumn](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridDateTimeColumn.html) is derived from `SfDataGrid.GridColumn` thereby inheriting all the properties of `SfDataGrid.GridColumn`. It displays the date information as the content of a column. To create `SfDatarGrid.GridDateTimeColumn` in SfDataGrid, the property corresponding to the column in the underlying collection must be of type DateTime. You can enable or disable editing for the particular column by setting the [GridColumn.AllowEditing](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~AllowEditing.html) property to true or false. In the editing mode it displays [SfDatePicker](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDatePicker.html) element which is derived from the [Xamarin.Forms.DatePicker](https://developer.xamarin.com/api/type/Xamarin.Forms.DatePicker/). The `SfDatePicker` enables you to scroll through a list of dates between the [GridDateTimeColumn.MinimumDate](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridDateTimeColumn~MinimumDate.html) and [GridDateTimeColumn.MaximumDate](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridDateTimeColumn~MaximumDate.html) and select one from it.
 
 {% tabs %}
 {% highlight xaml %}
@@ -600,14 +600,14 @@ public class Model
     private DateTime shippedDate;
 
     public DateTime ShippedDate
+    {
+        get { return shippedDate; }
+        set
         {
-            get { return shippedDate; }
-            set
-            {
-                shippedDate = value;
-                RaisePropertyChanged("ShippedDate");
-            }
+            shippedDate = value;
+            RaisePropertyChanged("ShippedDate");
         }
+    }
 }
 
 // ViewModel class
@@ -635,21 +635,21 @@ public class ViewModel
     #region ItemSource Generator
 
      private List<DateTime> GetDateBetween(int startYear, int endYear, int count)
+     {
+        List<DateTime> date = new List<DateTime>();
+        Random d = new Random(1);
+        Random m = new Random(2);
+        Random y = new Random(startYear);
+        for (int i = 0; i < count; i++)
         {
-            List<DateTime> date = new List<DateTime>();
-            Random d = new Random(1);
-            Random m = new Random(2);
-            Random y = new Random(startYear);
-            for (int i = 0; i < count; i++)
-            {
-                int year = y.Next(startYear, endYear);
-                int month = m.Next(3, 13);
-                int day = d.Next(1, 31);
+            int year = y.Next(startYear, endYear);
+            int month = m.Next(3, 13);
+            int day = d.Next(1, 31);
 
-                date.Add(new DateTime(year, month, day));
-            }
-            return date;
+            date.Add(new DateTime(year, month, day));
         }
+        return date;
+     }
 
     public void GetOrderDetails(int count)
     {
@@ -727,24 +727,14 @@ public class ViewModel
         this.CustomerNames = Customers.ToObservableCollection();
     }
 
-    internal string[] Customers = new string[] {
-			"Adams",
-			"Crowley",
-			"Ellis",
-			"Gable",
-			"Irvine",
-			"Keefe",
-			"Mendoza",
-			"Owens",
-			"Rooney",
-			"Waddell",
-		};
+    internal string[] Customers = new string[] {"Adams","Crowley","Ellis","Gable","Irvine","Keefe","Mendoza","Owens","Rooney","Waddell",};
+    
 }
 {% endhighlight %}
 
 ### Collection of User Defined Types
 
-You can create a `SfDataGrid.GridPickerColumn` and set its ItemsSource property to a user-typed collection to display a list of user defined items in the picker drop down. Initially the picker column will be displayed with the values from the [GridColumn.MappingName](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~MappingName.html) property of the column if the [DisplayMemberPath](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridPickerColumn~DisplayMemberPath.html) and [ValueMemberPath](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridPickerColumn~ValueMemberPath.html) are not set.
+You can create a `SfDataGrid.GridPickerColumn` and set its `ItemsSource` property to a user-defined collection to display a list of user defined items in the picker drop down. Initially the picker column will be displayed with the values from the [GridColumn.MappingName](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~MappingName.html) property of the column if the [DisplayMemberPath](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridPickerColumn~DisplayMemberPath.html) and [ValueMemberPath](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridPickerColumn~ValueMemberPath.html) are not set.
 
  #### DisplayMemberPath
  
@@ -844,9 +834,10 @@ public class ViewModel
 		{
             ObservableCollection<OrderInfo> orderDetails = new ObservableCollection<OrderInfo> ();
 
-			for (int i = 1; i <= count; i++) {
-
-				var ord = new OrderInfo () {
+			for (int i = 1; i <= count; i++)
+			{
+				var ord = new OrderInfo ()
+				{
 					OrderID = i,
                     EmployeeID = i+5,
 				};
@@ -898,10 +889,9 @@ The [GridNumericColumn](https://help.syncfusion.com/cr/cref_files/xamarin/sfdata
 <sfGrid:SfDataGrid x:Name="dataGrid"                   
                    ItemsSource="{Binding OrdersInfo}">
     <sfGrid:SfDataGrid.Columns>
-        <sfgrid:GridNumericColumn
-                           NumberDecimalDigits="0"
-                           HeaderText="Product No"
-                           MappingName="ProductNo"/>
+        <sfgrid:GridNumericColumn NumberDecimalDigits="0"
+                                  HeaderText="Product No"
+                                  MappingName="ProductNo"/>
     </sfGrid:SfDataGrid.Columns>
 </sfGrid:SfDataGrid>
 {% endhighlight %}

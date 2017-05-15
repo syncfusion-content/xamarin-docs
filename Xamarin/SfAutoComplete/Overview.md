@@ -9,7 +9,7 @@ documentation : ug
 
 # Overview
 
-Essential AutoComplete for Xamarin.Forms provides a simpler way to complete the text without requiring the user to type completely. It also provides support to choose a suggestion from drop down or append a suggestion to the text directly.
+Essential AutoComplete for Xamarin.Forms provides a simpler way to complete the text based on the characters that the user has entered before. It also provides option to choose a suggestion from drop down or append a suggestion to the text directly.
 
 ![](images/Overview/overview.png)
 

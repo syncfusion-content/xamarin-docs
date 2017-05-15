@@ -94,7 +94,7 @@ public MainPage()
 
 This section explains how to create a SfPullToRefresh and configure it. 
  
-You can download the entire source code of this demo for Xamarin.Forms from [here](http://files2.syncfusion.com/Xamarin.Forms/Samples/DataGrid_GettingStartedForms.zip).
+You can download the entire source code of this demo for Xamarin.Forms from [here](http://files2.syncfusion.com/Xamarin.Forms/Samples/SfPullToRefresh_GettingStarted.zip).
 
 ## Creating the project
 
@@ -112,20 +112,24 @@ Create a new BlankApp (Xamarin.Forms.Portable) application in Xamarin Studio o
 {% tabs %}
 {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage x:Class="XamarinForms.SfPullToRefreshPage"
-             Title="SfPullToRefreshPage"
-             xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:XamarinForms;assembly=XamarinForms"
+             xmlns:local="clr-namespace:GettingStarted"
+             x:Class="GettingStarted.MainPage" 
              xmlns:syncfusion="clr-namespace:Syncfusion.SfPullToRefresh.XForms;assembly=Syncfusion.SfPullToRefresh.XForms">
         <syncfusion:SfPullToRefresh x:Name="pullToRefresh"
-                                    PullingThershold="120"
+                                    IsRefreshing="False" 
+                                    PullingThershold="100"
                                     RefreshContentHeight="30"
                                     RefreshContentThreshold="30"
                                     RefreshContentWidth="30">
-            <syncfusion:SfPullToRefresh.PullableContent>
-                    <Label x:Name="Month" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
-            </syncfusion:SfPullToRefresh.PullableContent>
+        <syncfusion:SfPullToRefresh.PullableContent>
+            <StackLayout BackgroundColor="#00AFF9" Orientation="Vertical">
+                <Label Text="New York Temperature" FontSize="Large" TextColor="White" HorizontalTextAlignment="Center" Margin="20"/>
+                <Image  WidthRequest="100" HorizontalOptions="Center" HeightRequest="100"  Margin="20" Source="GettingStarted/warmselected.png"/>
+                <Label x:Name="weatherData" FontSize="Large" TextColor="White" HorizontalTextAlignment="Center" Margin="20"/>
+            </StackLayout>
+        </syncfusion:SfPullToRefresh.PullableContent>
         </syncfusion:SfPullToRefresh>
 </ContentPage>
 
@@ -134,73 +138,65 @@ Create a new BlankApp (Xamarin.Forms.Portable) application in Xamarin Studio o
 using Syncfusion.SfPullToRefresh.XForms;
 using Xamarin.Forms;
 
-public partial class SfPullToRefreshPage : ContentPage
+namespace GettingStarted
 {
-    Random random = new Random();
-    string[] monthsno = new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" };
-    string[] monthsname = new string[] { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" };
-    public SfPullToRefreshPage()
+    public partial class MainPage : ContentPage
     {
-        InitializeComponent();
-        Month.Text = monthsno[1]+" month is "+ monthsname[1].ToString();
-        pullToRefresh.Pulling += PullToRefresh_Pulling;
-        pullToRefresh.Refreshing += PullToRefresh_Refreshing;
-    }
-    private void PullToRefresh_Refreshing(object sender, EventArgs args)
-    {
-        pullToRefresh.IsRefreshing = true;
-        Device.StartTimer(new TimeSpan(0, 0, 2), () =>
+        Random random = new Random();
+        string[] temperatures = new string[] { "22°", "18°", "12°", "25°", "23°", "20°", "25°" };
+
+        public MainPage()
         {
-            int number = random.Next(0, 11);
-            new MonthData(monthsname[number], monthsname[number]);
-            Month.Text = monthsno[number] + " month is " + monthsname[number].ToString();
+            InitializeComponent();
+            this.BindingContext = this;
+            weatherData.Text = temperatures[0].ToString()+" degree";
+            pullToRefresh.Pulling += PullToRefresh_Pulling;
+            pullToRefresh.Refreshing += PullToRefresh_Refreshing;
+        }
+
+         private void PullToRefresh_Refreshing(object sender, EventArgs args)
+        {
+            pullToRefresh.IsRefreshing = true;
+            await Task.Delay(2000);
+            int number = random.Next(0, 6);
+            new WeatherData(temperatures[number]);
+            weatherData.Text = temperatures[number].ToString() + " degree";
             pullToRefresh.IsRefreshing = false;
-            return false;
-        });
-    }
-    private void PullToRefresh_Pulling(object sender, PullingEventArgs args)
-    {
-        args.Cancel = false;
-        var progress = args.Progress;
+        }
+
+        private void PullToRefresh_Pulling(object sender, PullingEventArgs args)
+        {
+            args.Cancel = false;
+            var prog = args.Progress;
+        }
     }
 }
 
+
 Model class:
 
-public class MonthData : INotifyPropertyChanged
+public class WeatherData: INotifyPropertyChanged
 {
-    private string month_SNo;
-    private string monthName;
-    public MonthData(string month_sno, String month)
+    private string _temperature;
+
+    public WeatherData(string temperature)
     {
-        Month_SNo = month_sno;
-        MonthName = month;
+        Temperature = temperature;
     }
 
-    public string Month_SNo
+    public string Temperature
     {
         get
         {
-            return month_SNo;
+            return _temperature;
         }
         set
         {
-            this.month_SNo = value;
-            RaisePropertyChanged("Month_SNo");
+            _temperature = value;
+            RaisePropertyChanged("Temperature");
         }
     }
-    public string MonthName
-    {
-        get
-        {
-            return monthName;
-        }
-        set
-        {
-            this.monthName = value;
-            RaisePropertyChanged("MonthName");
-        }
-    }
+        
     #region INotifyPropertyChanged implementation
 
     public event PropertyChangedEventHandler PropertyChanged;
@@ -209,7 +205,6 @@ public class MonthData : INotifyPropertyChanged
         if (PropertyChanged != null)
             this.PropertyChanged(this, new PropertyChangedEventArgs(Name));
     }
-
     #endregion
 }
 

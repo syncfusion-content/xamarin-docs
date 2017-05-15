@@ -18,7 +18,7 @@ After adding the assemblies reference, an additional step is required for iOS an
 
 ### Additional Step for iOS
 
-Create an instance of [`SfAutoCompleteRenderer`] in FinishedLaunching overridden method of AppDelegate class in iOS project as shown below:
+Create an instance of `SfAutoCompleteRenderer` in FinishedLaunching overridden method of AppDelegate class in iOS project as shown below:
 
 {% highlight C# %}
 
@@ -133,7 +133,7 @@ Content = layout;
 
 ## Populating AutoComplete with Data
 
-Now, let us create a simple list of country names and set it as the [`DataSource`] of AutoComplete.
+Now, let us create a simple list of country names and set it as the `DataSource` of AutoComplete.
 
 {% tabs %}
 
@@ -169,7 +169,7 @@ Refer [this](https://help.syncfusion.com/xamarin/sfautocomplete/populating-data)
 
 By default, items are filtered in “StartsWith” case insensitive mode and the suggestions are displayed in a drop down popup. Autocomplete can now filter suggestions.
 
-Here in this example, let us configure it to “Contains” case sensitive filter mode. This can be achieved by setting [`SuggestionMode`] property.
+Here in this example, let us configure it to “Contains” case sensitive filter mode. This can be achieved by setting `SuggestionMode` property.
  
 {% tabs %}
 

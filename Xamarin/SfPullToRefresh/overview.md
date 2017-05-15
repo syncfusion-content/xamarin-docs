@@ -22,14 +22,10 @@ SfPullToRefresh is a refresh control that allows you to interact and refresh the
 
 ## Key Features
 
-• `TransitionMode`: Specifies the transition mode of the `SfPullToRefresh`. 
-
-• `Sizing`: Width, Height and progress stroke width customization support for `SfPullToRefresh`. 
-
-• `Colour`: Background and progress stroke color customization support for `SfPullToRefresh`. 
-
-• `StartRefreshing()`: Starts the programmatic refreshing.
-
-• `EndRefreshing()`: Ends the programmatic refreshing.
+* `TransitionMode`: Specifies the transition mode of the `SfPullToRefresh`. 
+* `Sizing`: Width, Height and progress stroke width customization support for `SfPullToRefresh`. 
+* `Colour`: Background and progress stroke color customization support for `SfPullToRefresh`. 
+* `StartRefreshing()`: Starts the programmatic refreshing.
+* `EndRefreshing()`: Ends the programmatic refreshing.
 
 ![](overview_images/SlideOnTop.png)

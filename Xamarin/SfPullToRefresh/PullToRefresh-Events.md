@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grid Events | SfPullToRefresh | Xamarin | Syncfusion
+title: SfPullToRefresh Events | SfPullToRefresh | Xamarin | Syncfusion
 description: How to use different events exposed in SfPullToRefresh.
 platform: Xamarin.Forms 
 control: SfPullToRefresh 
@@ -9,13 +9,13 @@ documentation: ug
 
 # Events
 
-The `Pulling` event will be notified whenever the swipe gesture is started. This event will notify the listener each and every time until the refresh content height exceeds. When we release the gesture from pullable content, `Refreshing` event will be triggered. Now the refresh operation can be performed. Once the content is refreshed, we should set `SfPullToRefresh.IsRefreshing` to `false` to stop the animation. The `Refreshed` event will be triggered whenever we set `IsRefreshing` is `False`. using this event we can end the progress animation after content is refreshed. 
-
 There are three built-in events in the PullToRefresh control namely:
 
 1. `Pulling`
 2. `Refreshing`
 3. `Refreshed`
+
+The `Pulling` event will be notified whenever the swipe gesture is started. This event will notify the listener each and every time until the refresh content height exceeds. When we release the gesture from pullable content, `Refreshing` event will be triggered. Now the refresh operation can be performed. Once the content is refreshed, we should set `SfPullToRefresh.IsRefreshing` to `false` to stop the animation. Once the animation is stopped the `Refreshed` event will be triggered to notify that the refreshing is completed. 
 
 ## Pulling
 
@@ -44,7 +44,7 @@ There are three built-in events in the PullToRefresh control namely:
 
 ## Refreshing
 
-`Refreshing` event is triggered once pointer is released. This event is triggered till the `IsRefreshing` property is set false.
+`Refreshing` event is triggered once pointer is released. This event will occur till the `IsRefreshing` property is set as `false`.
 
 {% tabs %}
 
@@ -52,14 +52,11 @@ There are three built-in events in the PullToRefresh control namely:
 
     pullToRefresh.Refreshing += PullToRefresh_Refreshing;
    
-    private void PullToRefresh_Refreshing(object sender, EventArgs args)
+    private async void PullToRefresh_Refreshing(object sender, EventArgs args)
     {
         pullToRefresh.IsRefreshing = true;
-        Device.StartTimer(new TimeSpan(0, 0, 2), () =>
-        {
-            pullToRefresh.IsRefreshing = false;
-            return false;
-        });
+        await Task.Delay(2000);
+        pullToRefresh.IsRefreshing = false;
     }
 {% endhighlight %}
 
@@ -74,7 +71,7 @@ There are three built-in events in the PullToRefresh control namely:
 
 ## Refreshed
 
-`Refreshed` event is triggered once the refreshing is completed and `IsRefreshing` is set `False`.
+`Refreshed` event is triggered once the `Refreshing` event is completed.
 
 {% tabs %}
 {% highlight c# %}

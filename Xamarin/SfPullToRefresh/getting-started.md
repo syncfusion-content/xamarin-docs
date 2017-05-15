@@ -36,11 +36,11 @@ The following list of assemblies need to be added as reference from the lib fold
 </tr>
 <tr>
 <td>Android Renderer</td>
-<td>pcl\Syncfusion.SfPullToRefresh.XForms.dll<br/>android\Syncfusion.SfPullToRefresh.XForms.Android.dll<br/></td>
+<td>pcl\Syncfusion.Core.XForms.dll<br/>pcl\Syncfusion.SfPullToRefresh.XForms.dll<br/>android\Syncfusion.SfPullToRefresh.XForms.Android.dll<br/></td>
 </tr>
 <tr>
 <td>iOS Renderer</td>
-<td>pcl\Syncfusion.SfPullToRefresh.XForms.dll<br/>ios-unified\Syncfusion.SfPullToRefresh.XForms.iOS.dll<br/></td>
+<td>pcl\Syncfusion.Core.XForms.dll<br/>pcl\Syncfusion.SfPullToRefresh.XForms.dll<br/>ios-unified\Syncfusion.SfPullToRefresh.XForms.iOS.dll<br/></td>
 </tr>
 <tr>
 <td>UWP Renderer</td>
@@ -103,9 +103,7 @@ Create a new BlankApp (Xamarin.Forms.Portable) application in Xamarin Studio o
 ## Adding SfPullToRefresh in Xamarin.Forms 
 
 1. Add the required assembly references to the pcl and renderer projects as discussed in the [Assembly deployment](#assembly-deployment) section.
-
 2. Import SfPullToRefresh control namespace `Syncfusion.SfPullToRefresh.XForms`.
-
 3. Set the any `View` as `PullableContent` of the `SfPullToRefresh`.
 
 
@@ -154,7 +152,7 @@ namespace GettingStarted
             pullToRefresh.Refreshing += PullToRefresh_Refreshing;
         }
 
-         private void PullToRefresh_Refreshing(object sender, EventArgs args)
+        private async void PullToRefresh_Refreshing(object sender, EventArgs args)
         {
             pullToRefresh.IsRefreshing = true;
             await Task.Delay(2000);

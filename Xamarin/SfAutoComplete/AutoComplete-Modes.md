@@ -7,7 +7,7 @@ control : AutoComplete
 documentation : ug
 ---
 
-# AutoComplete Suggesting Modes
+# AutoComplete Modes
 
 AutoComplete provides three different ways to display the filtered suggestions. They are 
 
@@ -17,7 +17,7 @@ AutoComplete provides three different ways to display the filtered suggestions. 
 
 * SuggestAppend - Both of these
 
-[`AutoCompleteMode`] property is used to choose the suggestion display mode in SfAutoComplete control. The default value is Suggest.
+`AutoCompleteMode` property is used to choose the suggestion display mode in SfAutoComplete control. The default value is Suggest.
 
 ## Suggesting Choices in List
 

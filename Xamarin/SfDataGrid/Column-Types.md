@@ -332,16 +332,16 @@ public class ViewModel
 
     public void GetOrderDetails(int count)
     {
-        var order = new ObservableCollection<OrderInfo>();
+        var orderDetails = new ObservableCollection<OrderInfo>();
         for (int i = 1; i <= count; i++)
         {
-            var ord = new OrderInfo()
+            var order = new OrderInfo()
             {
                 IsClosed = (i % 2) == 0 ? true : false
             };
-            order.Add(ord);
+            orderDetails.Add(order);
         }
-        ordersInfo = order;
+        ordersInfo = orderDetails;
     }
 
     #endregion
@@ -415,16 +415,16 @@ public class ViewModel
 
     public void GetOrderDetails(int count)
     {
-        var order = new ObservableCollection<OrderInfo>();
+        var orderDetails = new ObservableCollection<OrderInfo>();
         for (int i = 1; i <= count; i++)
         {
-            var ord = new OrderInfo()
+            var order = new OrderInfo()
             {
                 DealerImage = ImageSource.FromResource("DataGridDemo.Buchanan.png") // Need to give the image path properly. Here, DataGridDemo denotes the project name and Buchanan denotes the image name.
             };
-            order.Add(ord);
+            orderDetails.Add(order);
         }
-        ordersInfo = order;
+        ordersInfo = orderDetails;
     }
 
     #endregion

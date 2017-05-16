@@ -26,6 +26,8 @@ By using the following IDE, you can develop iOS and Android apps:
 
 * Xamarin Studio
 
+* Visual Studio for Mac
+
 **Supported** **Platforms**
 
 The following table lists the platforms supported by our Xamarin.Forms controls.

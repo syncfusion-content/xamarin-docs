@@ -23,7 +23,7 @@ You can download our Xamarin.Forms components directly from our website, refer [
  
 Once the assemblies has been downloaded and explored, you can find all the required assemblies in the installation folders.   
    
-{Syncfusion Essential Studio Installed location}\Essential Studio{{ site.releaseversion }}\Xamarin\lib   
+{Syncfusion Essential Studio Installed location}\Essential Studio\syncfusionessentialstudio-releaseversion\Xamarin\lib   
     
 Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\15.1.0.41\Xamarin\lib  
     
@@ -103,15 +103,14 @@ The above problem can be resolved by initializing the SfSchedule assemblies in `
 
     protected override void OnLaunched(LaunchActivatedEventArgs e)
     {
-    …
-    rootFrame.NavigationFailed += OnNavigationFailed;
-    // you'll need to add `using System.Reflection;`
-    List<Assembly> assembliesToInclude = new List<Assembly>();
-    //Now, add all the assemblies your app uses assembliesToInclude.Add(typeof(SfScheduleRenderer).GetTypeInfo().Assembly);
-
-    // replaces Xamarin.Forms.Forms.Init(e);        
-    Xamarin.Forms.Forms.Init(e, assembliesToInclude);
-    …     
+        ...
+        rootFrame.NavigationFailed += OnNavigationFailed;
+        // you'll need to add `using System.Reflection;`
+        List<Assembly> assembliesToInclude = new List<Assembly>();
+        //Now, add all the assemblies your app uses assembliesToInclude.Add(typeof(SfScheduleRenderer).GetTypeInfo().Assembly);
+        // replaces Xamarin.Forms.Forms.Init(e);        
+        Xamarin.Forms.Forms.Init(e, assembliesToInclude);
+        ...     
     }
 
 {% endhighlight %}
@@ -124,7 +123,7 @@ This section explains how to create a simple application using SfSchedule contro
 ![](GettingStarted_images/GettingStarted.png)   
     
 You can download the entire source code of this demo for Xamarin.Forms from   
-here [ScheduleGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ScheduleGettingStarted-275177667.zip)   
+here [ScheduleGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ScheduleGettingStarted-209092808.zip)   
     
 This section provides a walks through to create `MeetingRoomScheduler` using our Schedule control.  
     

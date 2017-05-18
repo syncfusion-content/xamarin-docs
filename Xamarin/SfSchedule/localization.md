@@ -1,4 +1,4 @@
----
+﻿---
 title: Localization in Syncfusion SfSchedule control for Xamarin.Forms
 description: Learn how to Localize the SfSchedule control
 platform: xamarin
@@ -8,11 +8,11 @@ documentation: ug
 
 # Localization 
 
-Schedule control is available with complete localization support. Localization can be specified by setting the `Locale` property of SfSchedule. In the format of `Language code`.
+Schedule control is available with complete localization support. Localization can be specified by setting the [Locale](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~Locale.html) property of SfSchedule. In the format of `Language code`.
 
 ## Change default control language
 
-Based on the locale specified the strings in the control such as Date, time, days are localized accordingly.
+Based on the `Locale` specified the strings in the control such as Date, time, days are localized accordingly.
 
 By default, schedule control is available with en locale, which is English.
 
@@ -50,7 +50,6 @@ You can localize the custom strings used in the schedule control. For that you n
 * [Localizing custom text in iOS renderer](localizing-custom-text-in-iOS-renderer)
 * [Localizing custom text in UWP renderer](localizing-custom-text-in-UWP-renderer)
 
-
 ### Localizing custom text in Android renderer
 
 You can localize custom text available in the control by adding equivalent localized string in the string.xml file.
@@ -86,4 +85,3 @@ You can localize custom text available in the control by adding equivalent local
 
 ![](Localization_images/Localization_XFUWP.png) 
  
-

@@ -64,7 +64,7 @@ The following table lists the platforms supported by our Xamarin.Forms controls.
             <br/>
         </td>
         <td>
-            iOS 7.0 and later versions
+            iOS 9.0 and later versions
             <br/>
             <br/>
         </td>

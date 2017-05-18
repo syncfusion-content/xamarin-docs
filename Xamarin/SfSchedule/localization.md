@@ -40,6 +40,8 @@ By default, schedule control is available with en locale, which is English.
 {% endhighlight %}   
 {% endtabs %}   
 
+>**Note ** AM/PM in the timeline will not be localized in the Schedule views
+
 ![](Localization_images/Localization.png)   
 
 ## Change custom texts in the control.

@@ -10,6 +10,7 @@ documentation: ug
 # Getting Started   
     
 This section provides you an overview for working with SfSchedule for Xamarin.Forms and also provides a walk through to configure SfSchedule control in real time scenario.   
+
 ## Assembly Configuration   
     
 SfSchedule can be included in your Xamarin.Forms project in two ways,  
@@ -66,11 +67,11 @@ Alternatively you can refer SfSchedule in your application by configuring nuget 
  
 To use SfSchedule inside an application, each platform application must initialize the SfScheduleRenderer. This initialization step varies from platform to platform and it is discussed in the following sections.   
     
-**Android**   
+#### Android 
     
 Android application launches SfSchedule without any initialization.  
     
-**iOS** 
+#### iOS
 
 To launch SfSchedule in iOS, you need to call `SfScheduleRenderer.Init()` in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms Framework initialization.   
     
@@ -87,11 +88,11 @@ To launch SfSchedule in iOS, you need to call `SfScheduleRenderer.Init()` in the
     
 {% endhighlight %}   
     
-**Universal Windows Platform (UWP)**   
+#### Universal Windows Platform (UWP)
  
 UWP application launches SfSchedule without any initialization.  
 
-### ReleaseMode issue in UWP platform
+##### ReleaseMode issue in UWP platform
 
 There is a known Framework issue in UWP platform. The custom controls will not render when deployed the application in `Release Mode`.
 
@@ -185,9 +186,9 @@ Set the SfSchedule control as content to the ContentPage.
     
 ## Changing Schedule Views   
     
-SfSchedule control provides four different types of views to display dates and it can be assigned to the control by using `ScheduleView` property. By default the control is assigned with `DayView`. Current date will be displayed initially for all the Schedule views.  
-  
-Schedule control will be rendered with `Sunday` as the first day of the week, but you can customize to any day by using `FirstDayOfWeek` property of `SfSchedule`.  
+SfSchedule control provides four different types of views to display dates and it can be assigned to the control by using [ScheduleView](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleView.html) property. By default the control is assigned with `DayView`. Current date will be displayed initially for all the Schedule views.  
+
+Schedule control will be rendered with `Sunday` as the first day of the week, but you can customize to any day by using [FirstDayOfWeek](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~FirstDayOfWeek.html) property of `SfSchedule`.
     
 {% tabs %}  
 {% highlight xaml %}   
@@ -266,7 +267,7 @@ DayView is used to display a single day, current day will be visible by default.
 
 ### Month View   
     
-`MonthView` in Schedule control is to view entire dates of a particular month. Appointments can be viewed in inline by setting `ShowAppointmentsInline` property of `SfSchedule` as true.   
+`MonthView` in Schedule control is to view entire dates of a particular month. Appointments can be viewed in inline by setting [ShowAppointmentsInline](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ShowAppointmentsInline.html) property of `SfSchedule` as true.    
     
 {% tabs %}   
 {% highlight xaml %}   
@@ -290,11 +291,11 @@ DayView is used to display a single day, current day will be visible by default.
 
 ## Binding data to SfSchedule control   
   
-Schedule control has a built-in capability to handle the appointment arrangement internally based on the ScheduleAppointment collections. You need to assign the created collection to the `DataSource` property of `SfSchedule`, which is of type `IEnumerable`.  
+Schedule control has a built-in capability to handle the appointment arrangement internally based on the ScheduleAppointment collections. You need to assign the created collection to the [DataSource](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~DataSource.html) property of `SfSchedule`.  
   
 ### Adding Appointments   
   
- `ScheduleAppointment` is a class, which holds the details about the appointment to be rendered in schedule. It has some basic properties such as StartTime, EndTime, Subject and some additional information about the appointment can be added using Color, Notes, Location, All Day, Recursive properties.   
+[ScheduleAppointment](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment.html) is a class, which holds the details about the appointment to be rendered in schedule. It has some basic properties such as [StartTime](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~StartTime.html), [EndTime](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~EndTime.html), [Subject](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~Subject.html) and some additional information about the appointment can be added using [Color](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~Color.html), [Notes](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~Notes.html), [Location](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~Location.html), [IsAllDay](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~IsAllDay.html), [IsRecursive](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~IsRecursive.html) properties.    
     
 {% highlight c# %}   
     
@@ -321,13 +322,12 @@ You can also map custom appointments data to our schedule.
  
 Here steps to render `MeetingRoomScheduler` using SfSchedule control with respective custom data properties created in a class Meeting.  
   
-* [Creating custom class](#creating-custom-class)  
+* [Creating custom class for appointments](#creating-custom-class-for-appointments) 
+* [Creating view model](#creating-view-model)
 * [Mapping custom class](#mapping-custom-class)  
-* [Adding data for custom class](#adding-data-for-custom-class)
-* [Populating custom data collection](#populating-custom-data-collection)  
 * [Setting data source for SfSchedule](#setting-data-source-for-sfschedule)  
 
-#### Creating custom class  
+#### Creating custom class for appointments
  
 You can create a custom class `Meeting` with mandatory fields "From", "To" and "EventName". 
  
@@ -351,170 +351,147 @@ You can create a custom class `Meeting` with mandatory fields "From", "To" and "
     
 >**Notes**: You can inherit this class from `INotifyPropertyChanged` for dynamic changes in custom data.  
 
-#### Mapping custom class  
- 
-You can map those properties of `Meeting` class with our schedule control by using ScheduleAppointmentMapping.   
-    
+#### Creating view model 
+
+You can schedule meetings for a particular day by setting `From` and `To` of `Meeting` class.Also you can change subject and color of appointment using `EventName` and `color` of Meeting class. In a separate ViewModel class you can describe the collection of custom appointments.  
+
 {% highlight c# %}   
-      
+
+    /// <summary>   
+    /// Represents collection of appointments.   
+    /// </summary> 
+    public class ViewModel : ContentPage
+    {
+    public ObservableCollection<Meeting> ListOfMeeting = new ObservableCollection<Meeting>();
+    List<string> eventNameCollection;
+    List<Color> colorCollection;
+    public ViewModel()
+    {
+        ListOfMeeting = new ObservableCollection<Meeting>();
+        CreateEventNameCollection();
+        CreateColorCollection();
+        CreateAppointments();
+    }
+
+    /// <summary>
+    /// Creates meetings and stores in a collection.  
+    /// </summary>
+    private void CreateAppointments()
+    {
+        Random randomTime = new Random();
+        List<Point> randomTimeCollection = GettingTimeRanges();
+        DateTime date;
+        DateTime DateFrom = DateTime.Now.AddDays(-10);
+        DateTime DateTo = DateTime.Now.AddDays(10);
+        DateTime dataRangeStart = DateTime.Now.AddDays(-3);
+        DateTime dataRangeEnd = DateTime.Now.AddDays(3);
+
+        for (date = DateFrom; date < DateTo; date = date.AddDays(1))
+        {
+            if ((DateTime.Compare(date, dataRangeStart) > 0) && (DateTime.Compare(date, dataRangeEnd) < 0))
+            {
+            for (int AdditionalAppointmentIndex = 0; AdditionalAppointmentIndex < 3; AdditionalAppointmentIndex++)
+            {
+                Meeting meeting = new Meeting();
+                int hour = (randomTime.Next((int)randomTimeCollection[AdditionalAppointmentIndex].X, (int)randomTimeCollection[AdditionalAppointmentIndex].Y));
+                meeting.From = new DateTime(date.Year, date.Month, date.Day, hour, 0, 0);
+                meeting.To = (meeting.From.AddHours(1));
+                meeting.EventName = eventNameCollection[randomTime.Next(9)];
+                meeting.color = colorCollection[randomTime.Next(9)];
+                ListOfMeeting.Add(meeting);
+            }
+            }
+            else
+            {
+                Meeting meeting = new Meeting();
+                meeting.From = new DateTime(date.Year, date.Month, date.Day, randomTime.Next(9, 11), 0, 0);
+                meeting.To = (meeting.From.AddHours(1));
+                meeting.EventName = eventNameCollection[randomTime.Next(9)];
+                meeting.color = colorCollection[randomTime.Next(9)];
+                ListOfMeeting.Add(meeting);
+            }
+        }
+    }
+
+    /// <summary>  
+    /// Creates event names collection.  
+    /// </summary>  
+    private void CreateEventNameCollection()
+    {
+        eventNameCollection = new List<string>();
+        eventNameCollection.Add("General Meeting");
+        eventNameCollection.Add("Plan Execution");
+        eventNameCollection.Add("Project Plan");
+        eventNameCollection.Add("Consulting");
+        eventNameCollection.Add("Performance Check");
+        eventNameCollection.Add("Yoga Therapy");
+        eventNameCollection.Add("Plan Execution");
+        eventNameCollection.Add("Project Plan");
+        eventNameCollection.Add("Consulting");
+        eventNameCollection.Add("Performance Check");
+    }
+
+    /// <summary>  
+    /// Creates color collection.  
+    /// </summary>  
+    private void CreateColorCollection()
+    {
+        colorCollection = new List<Color>();
+        colorCollection.Add(Color.FromHex("#117EB4"));
+        colorCollection.Add(Color.FromHex("#B4112E"));
+        colorCollection.Add(Color.FromHex("#C44343"));
+        colorCollection.Add(Color.FromHex("#11B45E"));
+        colorCollection.Add(Color.FromHex("#43BEC4"));
+        colorCollection.Add(Color.FromHex("#B4112E"));
+        colorCollection.Add(Color.FromHex("#C44343"));
+        colorCollection.Add(Color.FromHex("#117EB4"));
+        colorCollection.Add(Color.FromHex("#C4435A"));
+        colorCollection.Add(Color.FromHex("#DF5348"));
+        colorCollection.Add(Color.FromHex("#43c484"));
+    }
+
+    /// <summary>
+    /// Gets the time ranges.
+    /// </summary>
+    private List<Point> GettingTimeRanges()
+    {
+        List<Point> randomTimeCollection = new List<Point>();
+        randomTimeCollection.Add(new Point(9, 11));
+        randomTimeCollection.Add(new Point(12, 14));
+        randomTimeCollection.Add(new Point(15, 17));
+        return randomTimeCollection;
+    }
+    }
+
+{% endhighlight %}
+
+#### Mapping custom class  
+
+You can map those properties of `Meeting` class with our schedule control by using [ScheduleAppointmentMapping](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping.html).   
+
+{% highlight c# %}   
+
     ScheduleAppointmentMapping dataMapping = new ScheduleAppointmentMapping();   
     dataMapping.SubjectMapping = "EventName";   
     dataMapping.StartTimeMapping = "From";   
     dataMapping.EndTimeMapping = "To";   
     dataMapping.ColorMapping = "color";   
     schedule.AppointmentMapping = dataMapping;  
-    
-{% endhighlight %}   
 
-#### Adding data for custom class  
-  
-##### Adding event names  
- 
-You can add `Subject` to the appointments created by creating a collection for the same.   
-    
-{% highlight c# %}   
-    
-    List<string> eventNameCollection;   
-       
-    /// <summary>   
-    /// Creates event names collection.   
-    /// </summary>   
-    private void CreateEventNameCollection()   
-    {   
-        eventNameCollection = new List<string>();   
-        eventNameCollection.Add("General Meeting");   
-        eventNameCollection.Add("Plan Execution");   
-        eventNameCollection.Add("Project Plan");   
-        eventNameCollection.Add("Consulting");   
-        eventNameCollection.Add("Performance Check");   
-        eventNameCollection.Add("Yoga Therapy");   
-        eventNameCollection.Add("Plan Execution");   
-        eventNameCollection.Add("Project Plan");   
-        eventNameCollection.Add("Consulting");   
-        eventNameCollection.Add("Performance Check");  
-    }   
-    
-{% endhighlight %}   
+{% endhighlight %}
 
-##### Adding color collection   
-  
-You can add `Color` to the appointments created by creating a collection for the same.  
- 
-{% highlight c# %}   
-   
-    List<Color> colorCollection;   
-       
-    /// <summary>   
-    /// Creates color collection.   
-    /// </summary>   
-    private void CreateColorCollection()   
-    {  
-        colorCollection = new List<Color>();   
-        colorCollection.Add(Color.FromHex("#117EB4"));   
-        colorCollection.Add(Color.FromHex("#B4112E"));   
-        colorCollection.Add(Color.FromHex("#C44343"));   
-        colorCollection.Add(Color.FromHex("#11B45E"));   
-        colorCollection.Add(Color.FromHex("#43BEC4"));   
-        colorCollection.Add(Color.FromHex("#B4112E"));   
-        colorCollection.Add(Color.FromHex("#C44343"));   
-        colorCollection.Add(Color.FromHex("#117EB4"));   
-        colorCollection.Add(Color.FromHex("#C4435A"));   
-        colorCollection.Add(Color.FromHex("#DF5348"));   
-        colorCollection.Add(Color.FromHex("#43c484"));   
-    }   
-    
-{% endhighlight %}   
-  
-##### Generating random times  
-  
-You can add required times for the meetings in schedule. Here random times duration is created. 
-    
-{% highlight c# %}   
-    
-    /// <summary>   
-    /// Creates random time required for meeting.  
-    /// It can be replaced with desired time.   
-    /// </summary>   
-    private List<Point> GettingTimeRanges()   
-    {   
-        List<Point> randomTimeCollection = new List<Point>();   
-        randomTimeCollection.Add(new Point(9, 11));   
-        randomTimeCollection.Add(new Point(12, 14));   
-        randomTimeCollection.Add(new Point(15, 17));   
-        return randomTimeCollection;   
-    }   
-    
-{% endhighlight %}   
-  
-#### Populating custom data collection  
-    
-You can schedule meetings for a particular day by setting `From` and `To` of `Meeting` class.Also you can change subject and color of appointment using `EventName` and `color` of Meeting class. In a separate ViewModel class you can describe the collection of custom appointments.   
-    
-{% highlight c# %}   
-    
-    public ObservableCollection<Meeting> ListOfMeeting = new ObservableCollection<Meeting>();   
-    public ViewModel()   
-    {   
-        ListOfMeeting = new ObservableCollection<Meeting>();   
-        CreateEventNameCollection();   
-        CreateColorCollection();  
-        CreateAppointments();   
-    }   
-       
-    /// <summary>   
-    /// Creates meetings and stores in a collection.   
-    /// </summary>   
-    private void CreateAppointments()   
-    {   
-        Random randomTime = new Random();   
-        List<Point> randomTimeCollection = GettingTimeRanges();   
-        int appointmentIndex = 0;   
-        DateTime date;   
-        DateTime DateFrom = DateTime.Now.AddDays(-10);   
-        DateTime DateTo = DateTime.Now.AddDays(10);   
-        DateTime dataRangeStart = DateTime.Now.AddDays(-3);   
-        DateTime dataRangeEnd = DateTime.Now.AddDays(3);   
-        for (date = DateFrom; date < DateTo; date = date.AddDays(1))   
-        {   
-            if ((DateTime.Compare(date, dataRangeStart) > 0) && (DateTime.Compare(date, dataRangeEnd) < 0))   
-            {   
-                for (int AdditionalAppointmentIndex = 0; AdditionalAppointmentIndex < 3; AdditionalAppointmentIndex++)   
-                    {   
-                        Meeting meeting = new Meeting();   
-                        int hour = (randomTime.Next((int)randomTimeCollection[AdditionalAppointmentIndex].X, (int)randomTimeCollection[AdditionalAppointmentIndex].Y));   
-                        meeting.From = new DateTime(date.Year, date.Month, date.Day, hour, 0, 0);   
-                        meeting.To = (meeting.From.AddHours(1));   
-                        meeting.EventName = eventNameCollection[randomTime.Next(9)];   
-                        meeting.color = colorCollection[randomTime.Next(9)];   
-                        ListOfMeeting.Add(meeting);   
-                    }      
-            }   
-        else {   
-                Meeting meeting = new Meeting();   
-                meeting.From = new DateTime(date.Year, date.Month, date.Day, randomTime.Next(9, 11), 0, 0);   
-                meeting.To = (meeting.From.AddHours(1));   
-                meeting.EventName = eventNameCollection[randomTime.Next(9)];   
-                meeting.color = colorCollection[randomTime.Next(9)];   
-                ListOfMeeting.Add(meeting);   
-              }   
-            }   
-    }   
-    
-{% endhighlight %}   
-    
- #### Setting data source for SfSchdeule  
-   
- Create meetings of type `ObservableCollection <Meeting>`  and assign those appointments collection `ListOfMeeting` to the `DataSource` property which is of `IEnumerable` type.  
-  
+#### Setting data source for SfSchdeule  
+
+Create meetings of type `ObservableCollection <Meeting>`  and assign those appointments collection `ListOfMeeting` to the `DataSource` property of `SfSchedule`.
+
 {% highlight c# %}  
-  
+
     ViewModel viewModel = new ViewModel();   
     ObservableCollection<Meeting> meetings = new ObservableCollection<Meeting>();  
     meetings = viewModel.ListOfMeeting;   
     schedule.DataSource = meetings;  
-      
+
 {% endhighlight %}  
-  
-![](GettingStarted_images/GettingStarted.png)   
-  
- 
+
+![](GettingStarted_images/GettingStarted.png)    
+

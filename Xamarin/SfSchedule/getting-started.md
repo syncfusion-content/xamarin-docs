@@ -360,14 +360,14 @@ You can schedule meetings for a particular day by setting `From` and `To` of `Me
     /// <summary>   
     /// Represents collection of appointments.   
     /// </summary> 
-    public class ViewModel : ContentPage
+    public class ViewModel
     {
-    public ObservableCollection<Meeting> ListOfMeeting = new ObservableCollection<Meeting>();
+    public ObservableCollection<Meeting> Meetings;
     List<string> eventNameCollection;
     List<Color> colorCollection;
     public ViewModel()
     {
-        ListOfMeeting = new ObservableCollection<Meeting>();
+        Meetings = new ObservableCollection<Meeting>();
         CreateEventNameCollection();
         CreateColorCollection();
         CreateAppointments();
@@ -398,7 +398,7 @@ You can schedule meetings for a particular day by setting `From` and `To` of `Me
                 meeting.To = (meeting.From.AddHours(1));
                 meeting.EventName = eventNameCollection[randomTime.Next(9)];
                 meeting.color = colorCollection[randomTime.Next(9)];
-                ListOfMeeting.Add(meeting);
+                Meetings.Add(meeting);
             }
             }
             else
@@ -408,7 +408,7 @@ You can schedule meetings for a particular day by setting `From` and `To` of `Me
                 meeting.To = (meeting.From.AddHours(1));
                 meeting.EventName = eventNameCollection[randomTime.Next(9)];
                 meeting.color = colorCollection[randomTime.Next(9)];
-                ListOfMeeting.Add(meeting);
+                Meetings.Add(meeting);
             }
         }
     }
@@ -469,27 +469,40 @@ You can schedule meetings for a particular day by setting `From` and `To` of `Me
 
 You can map those properties of `Meeting` class with our schedule control by using [ScheduleAppointmentMapping](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping.html).   
 
+{% tabs %}
+{% highlight xaml %}
+
+    <syncfusion:SfSchedule x:Name="schedule">
+        <syncfusion:SfSchedule.AppointmentMapping>
+            <syncfusion:ScheduleAppointmentMapping
+                ColorMapping="color"
+                EndTimeMapping="To"
+                StartTimeMapping="From"
+                SubjectMapping="EventName" />
+        </syncfusion:SfSchedule.AppointmentMapping>
+    </syncfusion:SfSchedule>
+
+{% endhighlight %}
 {% highlight c# %}   
 
-    ScheduleAppointmentMapping dataMapping = new ScheduleAppointmentMapping();   
-    dataMapping.SubjectMapping = "EventName";   
-    dataMapping.StartTimeMapping = "From";   
-    dataMapping.EndTimeMapping = "To";   
-    dataMapping.ColorMapping = "color";   
+    ScheduleAppointmentMapping dataMapping = new ScheduleAppointmentMapping(); 
+    dataMapping.ColorMapping = "color";  
+    dataMapping.EndTimeMapping = "To";
+    dataMapping.StartTimeMapping = "From"; 
+    dataMapping.SubjectMapping = "EventName";
     schedule.AppointmentMapping = dataMapping;  
 
 {% endhighlight %}
+{% endtabs %}
 
 #### Setting data source for SfSchdeule  
 
-Create meetings of type `ObservableCollection <Meeting>`  and assign those appointments collection `ListOfMeeting` to the `DataSource` property of `SfSchedule`.
+Create meetings of type `ObservableCollection <Meeting>`  and assign those appointments collection `Meetings` to the `DataSource` property of `SfSchedule`.
 
 {% highlight c# %}  
 
-    ViewModel viewModel = new ViewModel();   
-    ObservableCollection<Meeting> meetings = new ObservableCollection<Meeting>();  
-    meetings = viewModel.ListOfMeeting;   
-    schedule.DataSource = meetings;  
+    ViewModel viewModel = new ViewModel();
+    schedule.DataSource = viewModel.Meetings;
 
 {% endhighlight %}  
 

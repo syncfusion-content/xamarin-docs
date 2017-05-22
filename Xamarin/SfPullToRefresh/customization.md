@@ -117,7 +117,7 @@ Gets or sets the value for the refresh content threshold, this indicate progress
 
 {% highlight xaml %}
 
-    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" PullingThreshold="200"/>
+    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" PullingThershold="200"/>
 
 {%endhighlight%} 
 

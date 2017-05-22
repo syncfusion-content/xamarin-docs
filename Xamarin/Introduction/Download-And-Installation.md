@@ -28,7 +28,7 @@ Following are the step by step instructions for configuring Syncfusion NuGet pac
 3. Next, click on the Add button in the window that appears now. Enter the following details in the Add Package Source dialog.
 
     *	**Name** – enter the name (For Ex., Syncfusion)
-    *	**URL** – enter the following URL — http://nuget.syncfusion.com/xamarin
+    *	**URL** – enter the following URL - http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin/
 
     Now click Add Source and then click OK.
 
@@ -56,14 +56,12 @@ The steps to install the Syncfusion Xamarin NuGet Packages in Visual Studio are 
 
    **Name**: Name of the package that listed in available package sources  
    **Source**: Syncfusion Xamarin NuGet Package feed URL 
-   [http://nuget.syncfusion.com/xamarin](http://nuget.syncfusion.com/xamarin)
+   [http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin/](http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin/)
     
    ![](images/NuGetConfig2.jpeg)
 
    N> The `Source` text box in the above image denotes the location of the NuGet packages and the `Name` section, allows you to provide a unique name for NuGet Packages Source.
-   You may face the NuGet package installation/restore error while installing the Syncfusion Xamarin NuGet packages if you have UWP project in your Xamarin Application. This issue occurred since some URL redirecting issue in NuGet Package Manager for UWP projects. To resolve this issue, use the below Syncfusion Xamarin NuGet feed link.
-   Syncfusion Xamarin NuGet Full Feed Link: [http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin/](http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin/)
- 
+   
 I> Syncfusion other platforms NuGet packages feed links are available [here](http://nuget.syncfusion.com/)
 
 ### NuGet Installation
@@ -105,7 +103,7 @@ Using the `Manage NuGet Packages` in Visual Studio, NuGet packages can be update
 
     mono nuget.exe Sources Add –Name [Source name] –Source [source location]
 
-      Ex: mono nuget.exe Add –Name “Syncfusion Source” –Source “http://nuget.syncfusion.com/xamarin"
+      Ex: mono nuget.exe Add –Name “Syncfusion Source” –Source “http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin/"
                                                                                   
 3.	Once the Source gets added successfully the confirmation message will be shown like below.
 

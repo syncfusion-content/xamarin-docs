@@ -653,17 +653,17 @@ public class ViewModel
 
     public void GetOrderDetails(int count)
     {
-        var order = new ObservableCollection<OrderInfo>();
+        var orderDetails= new ObservableCollection<OrderInfo>();
         this.OrderedDates = GetDateBetween(2000, 2014, count);
         for (int i = 1; i <= count; i++)
         {
-            var ord = new OrderInfo()
+            var order = new OrderInfo()
             {
                 ShippedDate = this.OrderedDates[i - 1],
             };
-            order.Add(ord);
+            orderDetails.Add(order);
         }
-        ordersInfo = order;
+        ordersInfo = orderDetails;
     }
 
     #endregion
@@ -838,12 +838,12 @@ public class ViewModel
 
 			for (int i = 1; i <= count; i++)
 			{
-				var ord = new OrderInfo ()
+				var order = new OrderInfo ()
 				{
 					OrderID = i,
                     EmployeeID = i+5,
 				};
-				orderDetails.Add (ord);
+				orderDetails.Add (order);
 			}
 			return orderDetails;
 		}

@@ -214,7 +214,7 @@ Get or set the width to the progress indicator stroke.
 
 {%highlight Xaml%}
 
-    <syncfusion:SfPullToRefresh x:Name="pulltorefresh" ProgressStrokeWidth="5"/>
+    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" ProgressStrokeWidth="5"/>
 
 {%endhighlight%}
 
@@ -238,7 +238,7 @@ Get or set the width to the refresh content.
 
 {%highlight Xaml%}
 
-    <syncfusion:SfPullToRefresh x:Name="pulltorefresh" RefreshContentWidth="50"/>
+    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" RefreshContentWidth="50"/>
 
 {%endhighlight%}
 
@@ -262,7 +262,7 @@ Get or set the width to the refresh content.
 
 {%highlight Xaml%}
 
-    <syncfusion:SfPullToRefresh x:Name="pulltorefresh" RefreshContentHeight="50"/>
+    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" RefreshContentHeight="50"/>
 
 {%endhighlight%}
 

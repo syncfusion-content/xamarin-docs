@@ -182,7 +182,7 @@ N> The image's BuildAction must be set to EmbeddedResource in order to access th
 
 ### Change the color of the resizing indicator
 
-You can change the color of the resizing indicator using the [GetResizingIndicatorColor](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetResizingIndicatorColor.html) override of the `DataGridStyle` class. The following code example illustrates how to change the color of the ResizingIndicator in `SfDataGrid`. 
+You can change the color of the resizing indicator using the [GetResizingIndicatorColor](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetResizingIndicatorColor.html) override of the `DataGridStyle` class. The following code example illustrates how to change the color of the resizing indicator in `SfDataGrid`. 
 
 {% highlight c# %}
 

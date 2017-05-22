@@ -130,7 +130,7 @@ Refer the following code example that shows how to load multiple views in templa
                   BackgroundColor="Transparent"
                   BindingContextChanged="leftImage_BindingContextChanged"
                   HorizontalOptions="CenterAndExpand"
-                  Source="editicon.png" />
+                  Source="EditIcon.png" />
 
            <Label Grid.Column="1"
                   BackgroundColor="Transparent"

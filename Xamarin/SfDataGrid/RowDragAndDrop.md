@@ -137,6 +137,8 @@ public class RowTemplate : Grid
 
 ![](SfDataGrid_images/RowDragAndDrop.png)
 
+N> Currently RowDragAndDrop cannot be used if different rows are set with different heights using the [QueryRowHeight](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~QueryRowHeight_EV.html) event. 
+
 ## Row drag and drop event
 
 `QueryRowDragging` event is fired upon starting to drag a row and will be continuously fired till the dragging ends. By handing the `SfDataGrid.QueryRowDragging` event you can also cancel the dragging of a particular row.

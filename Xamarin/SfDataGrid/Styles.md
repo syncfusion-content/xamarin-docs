@@ -148,5 +148,53 @@ Following are the lists of options available to customize the grid borders.
 
 * `GridLinesVisibility.None` allows you to display the DataGrid without borders
 
+## How to
 
+### Change the Sorting Icon in column headers
+
+You can load any desired image as the sort indicator in the `SfDataGrid` using the [GetHeaderSortIndicatorDown](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetHeaderSortIndicatorDown.html) and [GetHeaderSortIndicatorUp](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetHeaderSortIndicatorUp.html) overrides of the `DataGridStyle` class. The following code example illustrates how to change the sort indicators in `SfDataGrid`.
+
+{% highlight c# %}
+
+//Apply custom style to SfDataGrid from code
+dataGrid.GridStyle = new Custom();
+
+public class Custom : DataGridStyle
+{
+
+    public override ImageSource GetHeaderSortIndicatorDown()
+    {
+        return ImageSource.FromResource("SfDataGrid_Sample.SortDown.png");
+    }
+
+    public override ImageSource GetHeaderSortIndicatorUp()
+    {
+        return ImageSource.FromResource("SfDataGrid_Sample.SortUp.png");
+    }
+
+}
+{% endhighlight %}
+
+The following screenshots shows the final outcome of the above code
+![](SfDataGrid_images/SortIconCustomization.png)
+
+N> The image's BuildAction must be set to EmbeddedResource in order to access the image as resource as shown in above code.
+
+### Change the color of the resizing indicator
+
+You can change the color of the resizing indicator using the [GetResizingIndicatorColor](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetResizingIndicatorColor.html) override of the `DataGridStyle` class. The following code example illustrates how to change the color of the resizing indicator in `SfDataGrid`. 
+
+{% highlight c# %}
+
+//Apply custom style to SfDataGrid from code
+dataGrid.GridStyle = new Custom();
+
+public class Custom : DataGridStyle
+{
+    public override Color GetResizingIndicatorColor()
+    {
+        return Color.Blue;
+    }
+}
+{% endhighlight %}
 

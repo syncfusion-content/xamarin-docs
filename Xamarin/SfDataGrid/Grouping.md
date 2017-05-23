@@ -180,6 +180,28 @@ public class GroupConverter : IValueConverter
 }
 {% endhighlight %}
 
+### GroupMode
+
+By default column grouping occurs based on the value in the underlying collection thereby creating a new group for each new value of that column. However you can also group a column based on the Display value by setting the [GridColumn.GroupMode](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~GroupMode.html) property as `Display`. In the below code example we have set [GridColumn.Format](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~Format.html) property as "#" which displays only the rounded off value in the `GridCell`.  
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:GridTextColumn HeaderText="Shipment Weight" 
+                           MappingName="ShipmentWeight"
+                           GroupMode="Display"
+                           Format="#" />
+{% endhighlight %}
+{% highlight c# %}
+GridNumericColumn cargoWeight = new GridTextColumn();
+cargoWeight.MappingName = "ShipmentWeight";
+cargoWeight.GroupMode = Syncfusion.Data.DataReflectionMode.Display;
+cargoWeight.Format = "#";
+{% endhighlight%} 
+{% endtabs %}
+
+The below screenshot shows the comparison between the two Group modes. GroupMode.Value on the left and GroupMode.Display on the right.
+![](SfDataGrid_images/GroupMode.png)
+
 ## Events
 
 ### GroupExpanding event

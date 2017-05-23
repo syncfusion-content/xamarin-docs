@@ -90,6 +90,34 @@ public MainPage()
 }
 {% endhighlight %}
 
+### ReleaseMode issue in UWP platform
+
+There is a known Framework issue in UWP platform. The custom controls will not render when deployed the application in `Release Mode`.
+
+The above problem can be resolved by initializing the SfPullToRefresh assemblies in `App.xaml.cs` in UWP project as like in below code snippet.
+
+{% highlight c# %}
+// In App.xaml.cs
+
+protected override void OnLaunched(LaunchActivatedEventArgs e)
+{
+    …
+
+    rootFrame.NavigationFailed += OnNavigationFailed;
+        
+    // you'll need to add `using System.Reflection;`
+    List<Assembly> assembliesToInclude = new List<Assembly>();
+
+    //Now, add all the assemblies your app uses
+    assembliesToInclude.Add(typeof(SfPullToRefreshRenderer).GetTypeInfo().Assembly);
+
+    // replaces Xamarin.Forms.Forms.Init(e);        
+    Xamarin.Forms.Forms.Init(e, assembliesToInclude);
+        
+    …     
+}
+{% endhighlight %}
+
 ## Create a sample with SfPullToRefresh 
 
 This section explains how to create a SfPullToRefresh and configure it. 
@@ -98,7 +126,9 @@ You can download the entire source code of this demo for Xamarin.Forms from [her
 
 ## Creating the project
 
-Create a new BlankApp (Xamarin.Forms.Portable) application in Xamarin Studio or Visual Studio for Xamarin.Forms.
+Create a new BlankApp (Xamarin.Forms.Portable) application in Xamarin Studio or Visual Studio for Xamarin.Forms. This is how the final output will look like on iOS, Android and Windows Phone devices.
+
+![](overview_images/SlideOnTop.png)
 
 ## Adding SfPullToRefresh in Xamarin.Forms 
 
@@ -209,3 +239,6 @@ public class WeatherData: INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
+If we run the above sample with `TransitionMode` as `Push`, the output will look like on iOS, Android and Windows Phone devices as shown below.
+
+![](overview_images/Push.png)

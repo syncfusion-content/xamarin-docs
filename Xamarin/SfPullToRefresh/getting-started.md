@@ -239,6 +239,6 @@ public class WeatherData: INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-If we run the above sample with `TransitionMode` as `Push`, the output will look like on iOS, Android and Windows Phone devices as in the below
+If we run the above sample with `TransitionMode` as `Push`, the output will look like on iOS, Android and Windows Phone devices as shown below.
 
 ![](overview_images/Push.png)

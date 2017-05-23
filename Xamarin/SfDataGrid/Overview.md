@@ -62,6 +62,18 @@ The SfDataGrid control is available in Xamarin.Forms, Xamarin.Android and Xamari
 <td><i class="fa fa-check"></i></td>
 </tr>
 <tr>
+<td>Editing</td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td>Resizing Columns</td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
 <td>Selection</td>
 <td><i class="fa fa-check"></i></td>
 <td><i class="fa fa-check"></i></td>
@@ -141,18 +153,6 @@ The SfDataGrid control is available in Xamarin.Forms, Xamarin.Android and Xamari
 </tr>
 <tr>
 <td>Row Height Customization</td>
-<td><i class="fa fa-check"></i></td>
-<td><i class="fa fa-check"></i></td>
-<td><i class="fa fa-check"></i></td>
-</tr>
-<tr>
-<td>Editing</td>
-<td><i class="fa fa-check"></i></td>
-<td><i class="fa fa-check"></i></td>
-<td><i class="fa fa-check"></i></td>
-</tr>
-<tr>
-<td>Resizing Columns</td>
 <td><i class="fa fa-check"></i></td>
 <td><i class="fa fa-check"></i></td>
 <td><i class="fa fa-check"></i></td>

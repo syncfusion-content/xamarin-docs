@@ -39,7 +39,7 @@ The following code example illustrates using `SfDataPager` with the SfDataGrid c
                   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                   xmlns:local="clr-namespace:SampleBrowser;assembly=SampleBrowser"
                   xmlns:sfgrid="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms"
-                  xmlns:sfpager="clr-namespace:Syncfusion.SfDataGrid.XForms.DataPager;
+                  xmlns:sfPager="clr-namespace:Syncfusion.SfDataGrid.XForms.DataPager;
                                  assembly=Syncfusion.SfDataGrid.XForms">
 
   <local:SamplePage.BindingContext>
@@ -53,19 +53,19 @@ The following code example illustrates using `SfDataPager` with the SfDataGrid c
         <RowDefinition Height="*" />
       </Grid.RowDefinitions>
 
-      <sfpager:SfDataPager x:Name ="dataPager"
+      <sfPager:SfDataPager x:Name ="dataPager"
                            Grid.Row="0"           
                            PageSize="15" 
                            HeightRequest ="50"
                            NumericButtonCount="20">
            
-        <sfpager:SfDataPager.HeightRequest>
+        <sfPager:SfDataPager.HeightRequest>
           <OnPlatform x:TypeArguments="x:Double"
                       iOS="50"
                       Android="50"
                       WinPhone="70"/>
-        </sfpager:SfDataPager.HeightRequest>
-      </sfpager:SfDataPager>
+        </sfPager:SfDataPager.HeightRequest>
+      </sfPager:SfDataPager>
        
       <sfgrid:SfDataGrid x:Name="dataGrid"
                          Grid.Row="1"

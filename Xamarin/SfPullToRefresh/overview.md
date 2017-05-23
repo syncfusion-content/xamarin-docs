@@ -28,4 +28,5 @@ SfPullToRefresh is a refresh control that allows you to interact and refresh the
 * `StartRefreshing()`: Starts the programmatic refreshing.
 * `EndRefreshing()`: Ends the programmatic refreshing.
 
-![](overview_images/SlideOnTop.png)
+![](overview_images/pulltorefresh.png)
+![](overview_images/pulltorefresh1.png)

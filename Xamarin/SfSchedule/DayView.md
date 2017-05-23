@@ -50,6 +50,8 @@ You can customize the default appearance of view header in [DayView](https://hel
 
 {% endhighlight %}
 
+![](daymodule_images/viewheaderappearance_day.png)
+
 You can customize the height of the ViewHeader in `DayView` by setting [ViewHeaderHeight](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ViewHeaderHeight.html) property of `SfSchedule`.
 
 {% highlight C# %}
@@ -64,6 +66,7 @@ You can customize the height of the ViewHeader in `DayView` by setting [ViewHead
      <schedule:SfSchedule x:Name="schedule" ScheduleView = "DayView"      ViewHeaderHeight="50" >
            
 {% endhighlight %}
+![](daymodule_images/viewheaderheight_day.png)
 
 ## Change Time Interval:
 You can customize the interval of timeslots in `DayView` by setting [TimeInterval](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~TimeInterval.html)  property of `SfSchedule`.
@@ -77,6 +80,8 @@ You can customize the interval of timeslots in `DayView` by setting [TimeInterva
 
     <schedule:SfSchedule  x:Name="schedule"  ScheduleView="DayView" TimeInterval="120"/> 
 {% endhighlight %}
+
+![](daymodule_images/timeinterval_day.png)
 
 ## Change Working hours:
 
@@ -103,6 +108,8 @@ Working hours in `DayView` of Schedule control will be differentiated with non-w
        </schedule:SfSchedule.DayViewSettings>
 </schedule:SfSchedule> 
 {% endhighlight %}
+
+![](daymodule_images/changeworkinghours_day.png)
 
 >**Note**:
 `WorkStartHour` and `WorkEndHour` should be in integer value to represent hours.
@@ -141,6 +148,8 @@ You can customize the appearance of the WorkingHourTimeslot by its color using [
      </schedule:SfSchedule> 
 {% endhighlight %}
 
+![](daymodule_images/timeslotappearance_day.png)
+
 ### Timeslot customization in Non-Working hours:
 
 You can customize the appearance of the Non-workingHourTimeslots by its color using [NonWorkingHoursTimeSlotBorderColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DayViewSettings~NonWorkingHoursTimeSlotBorderColor.html), [NonWorkingHoursTimeSlotColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DayViewSettings~NonWorkingHoursTimeSlotColor.html) properties of `DayViewSettings`.
@@ -168,6 +177,9 @@ You can customize the appearance of the Non-workingHourTimeslots by its color us
      </schedule:SfSchedule.DayViewSettings>
     </schedule:SfSchedule> 
 {% endhighlight %}
+
+![](daymodule_images/nonworkinghours_day.png)
+
 >**Note**:
 `TimeSlotBorderStrokeWidth` property common for both Working hours and Non-Working hour time slot customization.
 
@@ -209,7 +221,7 @@ You can restrict or allocate certain timeslot as non-accessible blocks by using 
             </schedule:SfSchedule.DayViewSettings>
     </schedule:SfSchedule> 
 {% endhighlight %}
-
+![](daymodule_images/non-accessibleblock_day.png)
 >**Note**:
 Selection and related events will not be working in this blocks.
 
@@ -230,6 +242,8 @@ You can customize the format for the labels which are mentioning the time, by se
 			schedule.DayViewSettings = dayViewSettings;
 {% endhighlight %}
 
+![](daymodule_images/timelabelformat_day.png)
+
 ## Time Label Appearance:
 
 You can customize the color for the labels which are mentioning the time, by setting [TimeLabelColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DayLabelSettings~TimeLabelColor.html) property of `DayLabelSettings` in `DayViewSettings`.
@@ -245,6 +259,8 @@ You can customize the color for the labels which are mentioning the time, by set
 			dayViewSettings.DayLabelSettings = dayLabelSettings;
 			schedule.DayViewSettings = dayViewSettings;
 {% endhighlight %}
+
+![](daymodule_images/timelabelappearance_day.png)
 
 ## Selection:
 You can customize the default appearance of selection UI in the timeslots.
@@ -281,6 +297,8 @@ You can customize the timeslot selection by using [SelectionStyle](https://help.
     </schedule:SfSchedule> 
 {% endhighlight %}
 
+![](daymodule_images/selectionstyle_day.png)
+
 ### Selection customization using custom View:
 You can replace the default selection UI with your custom view by setting [SelectionView](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~SelectionView.html) property of `SfSchedule`.
 {% highlight C# %}
@@ -305,6 +323,8 @@ You can replace the default selection UI with your custom view by setting [Selec
             </schedule:SfSchedule.SelectionView>
     </schedule:SfSchedule> 
 {% endhighlight %}
+
+![](daymodule_images/selectioncustomview_day.png)
 
 >**Note:**
 Selection customization is applicable for time slots alone.

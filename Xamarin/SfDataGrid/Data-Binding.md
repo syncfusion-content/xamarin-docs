@@ -100,7 +100,7 @@ SfDataGrid provides support to update the view during data manipulation operatio
 </tr>
 <tr>
 <td>AllowDataShaping</td>
-<td>DataOperations like sorting, grouping and filtering are updated during data manipulation change</td>
+<td>Data operations like sorting, grouping and filtering are updated during data manipulation change</td>
 </tr>
 </table>
 

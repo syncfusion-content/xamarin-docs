@@ -16,42 +16,37 @@ documentation: ug
 
 {% highlight c# %}
 
-    // Creating an instance for schedule appointment collection                     ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection(); 
-    
-    //Adding schedule appointment in schedule appointment collection        scheduleAppointmentCollection.Add(new ScheduleAppointment() 
-    { 
-         StartTime = new DateTime(2017, 05, 08, 10, 0, 0), 
-         EndTime = new DateTime(2017, 05, 08, 12, 0, 0), 
-         Subject = "Meeting", Location = "Hutchison road", 
-    }); 
+// Creating an instance for schedule appointment collection
+        ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
+    //Adding schedule appointment in schedule appointment collection 
+        scheduleAppointmentCollection.Add(new ScheduleAppointment()
+            { 
+                StartTime = new DateTime(2017, 05, 08, 10, 0, 0), 
+                EndTime = new DateTime(2017, 05, 08, 12, 0, 0), 
+                Subject = "Meeting", 
+                Location = "Hutchison road", 
+            }); 
     
     //Adding schedule appointment collection to DataSource of SfSchedule
          schedule.DataSource=scheduleAppointmentCollection;
 {% endhighlight %}
-
+![](PopulatingAppointments_images/appointment.png)
 ## Mapping
 Schedule supports full data binding to any type of IEnumerable source. Specify the [ScheduleAppointmentMapping](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping.html) attributes to map the properties in the underlying data source to the schedule appointments.
 
 | Property Name | Description |
-|-----------------------|--------------------------------------------------------------------------------------------------------------------------|
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
 | [StartTimeMapping](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping~StartTimeMapping.html) | This property is to map the property name of custom class which is equivalent for StartTime of ScheduleAppointment. |
-|  |  |
 | [EndTimeMapping](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping~EndTimeMapping.html) | This property is to map the property name of custom class which is equivalent for EndTime of ScheduleAppointment. |
-|  |  |
 | [SubjectMapping](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping~SubjectMapping.html) | This property is to map the property name of custom class which is equivalent for Subject of ScheduleAppointment. |
 | [ColorMapping](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping~ColorMapping.html) | This property is to map the property name of custom class which is equivalent for Color of ScheduleAppointment. |
-|  |  |
 | [IsAllDayMapping](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping~IsAllDayMapping.html) | This property is to map the property name of custom class which is equivalent for IsAllDay of ScheduleAppointment. |
-|  |  |
 | [RecurrenceRuleMapping](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping~RecurrenceRuleMapping.html) | This property is to map the property name of custom class which is equivalent for RecurrenceRule of ScheduleAppointment. |
-|  |  |
 | [NotesMapping](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping~NotesMapping.html) | This property is to map the property name of custom class which is equivalent for Notes of ScheduleAppointment. |
-|  |  |
 | [LocationMapping](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping~LocationMapping.html) | This property is to map the property name of custom class which is equivalent for Location of ScheduleAppointment. |
-|  |  |
 | [IsRecursiveMapping](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping~IsRecursiveMapping.html) | This property is to map the property name of custom class which is equivalent for IsRecursive of ScheduleAppointment. |
 
-N>**Note:** CustomAppointment class should contain two DateTime fields and a string field as mandatory.
+N> CustomAppointment class should contain two DateTime fields and a string field as mandatory.
 
 ### Creating custom Appointments
 You can create a custom class `Meeting` with mandatory fields `From`, `To` and `EventName`.
@@ -71,7 +66,7 @@ You can create a custom class `Meeting` with mandatory fields `From`, `To` and `
 
 {% endhighlight %}
 
-N>**Note:** You can inherit this class from `INotifyPropertyChanged` for dynamic changes in custom data.
+N> You can inherit this class from `INotifyPropertyChanged` for dynamic changes in custom data.
 
 You can map those properties of `Meeting` class with our SfSchedule control by using `ScheduleAppointmentMapping`.
 {% tabs %}
@@ -150,7 +145,7 @@ Spanned Appointment is an appointment which lasts more than 24 hours.
         schedule.DataSource= Meetings ; 
 
 {% endhighlight %} 
-
+![](PopulatingAppointments_images/span.png)
 ## All Day Appointments
 All-Day appointment is an appointment which is scheduled for a whole day. It can be set by using `IsAllDay` property in the `ScheduleAppointment`.
 
@@ -192,7 +187,7 @@ of the respective view settings.
         weekViewSeetings.AllDayAppointmentLayoutColor = Color.Silver; 
 
 {% endhighlight %} 
-
+![](PopulatingAppointments_images/allday.png)
 ## Recurrence Appointment
 Recurring an appointment on a daily, weekly, monthly, or yearly interval. Recursive appointments can be created by enabling `IsRecursive` property in Schedule appointments. 
 
@@ -278,11 +273,15 @@ Schedule appointment [RecurrenceRule](https://help.syncfusion.com/cr/cref_files/
         scheduleAppointment.RecurrenceRule = recurrenceProperties.RecurrenceRule; 
 
 {% endhighlight %} 
-
+![](PopulatingAppointments_images/recurrence.png)
 ## Appearance Customization
 The default appearance of the appointment can be customized by using the [AppointmentStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle.html) property and [AppointmentLoadedEvent](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentLoadedEventArgs.html). The event and property is used to customize or override the default template of the Appointments.
 
-### Appointment Customization
+* [Customize appearance using Style](#customize-appearance-using-style) 
+* [Customize appearance using Event](#customize-appearance-using-event) 
+* [Customize appearance using Custom View](#customize-appearance-using-custom-view) 
+
+### Customize appearance using Style
 Schedule appointment can be customized by setting appointment style properties such as [TextColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~TextColor.html), [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~TextStyle.html), [BorderColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~BorderColor.html), [BorderCornerRadius](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~BorderCornerRadius.html), [BorderWidth](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~BorderWidth.html) to the [AppointmentStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle.html) property of `SfSchedule`.
 {% tabs %} 
 {% highlight c# %}
@@ -314,8 +313,8 @@ Schedule appointment can be customized by setting appointment style properties s
  
 {% endhighlight %}
 {% endtabs %} 
-
-### Customization based on attributes.
+![](PopulatingAppointments_images/style.png)
+### Customize appearance using Event
 Schedule appointment can be customized during runtime using [OnAppointmentLoadedEvent](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule+OnAppointmentLoadedEventHandler.html). `ScheduleAppointment` style can be customized using the `appointmentStyle` property.
 
 [AppointmentLoadedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentLoadedEventArgs.html) has below properties,
@@ -341,7 +340,7 @@ Schedule appointment can be customized during runtime using [OnAppointmentLoaded
  
 {% endhighlight %}
 
-## Custom View
+## Customize appearance using Custom View
 Default appointment UI can be changed using `view` property passed through `AppointmentLoadedEventArgs`.
 
 {% highlight c# %} 
@@ -393,7 +392,7 @@ These events will be triggered while perform respective touch actions in timeslo
 ### Selection customization
 The default selection of an appointment can be customized by using [SelectionBorderColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~SelectionBorderColor.html), [SelectionTextColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~SelectionTextColor.html) properties in `AppointmentStyle` property of `SfSchedule`. The property is used to customize or override the default selection of the appointments.
 
-N>**Note:** `BorderWidth` value must be set to highlight `SelectionBorderColor`.
+N> `BorderWidth` value must be set to highlight `SelectionBorderColor`.
 
 {% tabs %} 
 {% highlight c# %} 
@@ -422,4 +421,4 @@ N>**Note:** `BorderWidth` value must be set to highlight `SelectionBorderColor`.
 {% endhighlight %} 
 {% endtabs %} 
 
-![](PopulatingAppointments_images/GettingStarted.png)
+![](PopulatingAppointments_images/selection.png)

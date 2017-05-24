@@ -30,6 +30,19 @@ When the SfListView is loaded inside a ScrollView or any layout such as Grid, St
 </StackLayout>
 {% endhighlight %}
 
+## Load the SfListView in CarouselView
+
+When the SfListView is loaded in CarouselView with [SfListView.AllowSwiping](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AllowSwiping.html) as false, SfListView will behave like below in UWP platform. 
+ 
+* While performing first swipe on the view, it will handled by SfListView’s ScrollView itself to ensure whether scrolling is happened or not. If not, we are unable to pass manipulation to parent immediately due to UWP platform behavior and on second swipe will be listened by CarouselView and the view gets swiped. This is the behavior of SfListView. 
+  
+When SfListView is loaded in CarouselView with `SfListView.AllowSwiping` as true, SfListView will behave like below.  
+ 
+* In iOS, when swipe suddenly carousel swipe is happened. If want to swipe ListViewItem, touch and hold on a item for some fraction of second (0.25 - 0.5 seconds) and then swipe. 
+* When swipe on any Item, SfListView handles the touch and swipe the ListViewItem.  
+* After swiped on ListViewItem, SwipeView is loaded along with ListViewItem. Then, if swipe on SwipeView element, Carousel view is swiped. Else, swipe on ListViewItem, SfListView handles touch and swipe the item as usual. 
+* If swipe on Header, Footer or Group Header elements, Carousel view is swiped in Android platform. But in UWP, first swipe on those elements will handled by SfListView itself, since unable to pass Manipulation to parent immediately and then second swipe will be listened by CarouselView.
+
 ## Programmatic Scrolling
 
 ### Scroll to Row Index
@@ -111,3 +124,17 @@ private void ListView_ItemHolding(object sender, ItemHoldingEventArgs e)
       viewModel.InboxInfo.Remove(e.ItemData as ListViewInboxInfo);         
 }
 {% endhighlight %}
+
+N> In SfListView, unable to perform ItemHolding operations by using Mouse in Windows Desktop platform. Sinse, there is no any long pressed events (like Holding event in touch) for the mouse in framework itself.
+
+## Improving ListView Performance
+
+SfListView has been built from the ground up with an optimized view reuse strategy to achieve the best possible performance on the Xamarin platform, even when loading large data sets. Below some techniques to Improving performance of a SfListView,
+
+* Bind the ItemsSource property to an IList<T> collection instead of an IEnumerable<T> collection, because IEnumerable<T> collections don't support random access.
+* Avoid loading complex layout in the template that contains large size of images or nested containers which cause some performance degradation on scrolling. So, recommended to use fewer elements and images with less size and resolution to achieve the maximum performance.
+* Avoid placing a SfListView inside a ScrollView for the following reasons:
+  * The SfListView implements its own scrolling.
+  * The SfListView will not receive any gestures, as they will be handled by the parent ScrollView.
+  * Should define the size to SfListView if load it inside ScrollView.
+* Avoid changing the cell layout based on the BindingContext. This incurs large layout and initialization costs.

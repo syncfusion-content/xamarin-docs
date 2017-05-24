@@ -109,7 +109,7 @@ N> For Vertical orientation, the group header size is considered as height and f
 
 SfListView allows you to group the items based on custom logic. The custom grouping can be applied to either [SfListView.DataSource.GroupComparer](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~GroupComparer.html) property or [GroupDescriptor.Comparer](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~Comparer.html) which is added into the [DataSource.GroupDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~GroupDescriptors.html) collection.
 
-The following code example illustrates how to perform custom grouping for underlying data based on the group item count.
+The following code example illustrates how to perform custom grouping for sort the groups based on the group item count in ascending.
 
 {% highlight c# %}
 listView.DataSource.GroupDescriptors.Add(new GroupDescriptor()
@@ -216,7 +216,7 @@ N> When the `IsStickyGroupHeader` is set as `true`, [IsStickyHeader](https://hel
 <syncfusion:SfListView x:Name="listView" ItemSize="70" IsStickyGroupHeader="True" 
                      ItemsSource="{Binding contactsinfo}" />          
 {% endhighlight %}
-{% highlight c# %}
+{% highlight c# %}  
 listView.IsStickyGroupHeader = true;
 {% endhighlight %}
 {% endtabs %}

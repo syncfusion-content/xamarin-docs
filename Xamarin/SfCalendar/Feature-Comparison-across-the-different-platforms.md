@@ -13,23 +13,23 @@ This section covers the features of SfCalendar specific to Android,iOS and UWP p
 
 <table>
 
-<tr style="background-color: #08838C;">
-<th style="color: #000000;" >Features are in SfCalendar</th>
-<th style="color: #000000;" >Android</th>
-<th style="color: #000000;" >iOS</th>
-<th style="color: #000000;" >UWP</th>
-<th style="color: #000000;" >Achieved By</th>
+<tr style=>
+<th style="color: #ffffff;background-color: #08838C;" >Features are in SfCalendar</th>
+<th style="color: #ffffff;background-color: #08838C;" >Android</th>
+<th style="color: #ffffff;background-color: #08838C;" >iOS</th>
+<th style="color: #ffffff;background-color: #08838C;">UWP</th>
+<th style="color: #ffffff;background-color: #08838C;">Achieved By</th>
 </tr>
 
-<tr style="background-color: #606060;">
+<tr style="background-color: #ffefd5;color: #000000;">
 <td>View of  SfCalendar</td>
 <td align="center" >
-<p>MonthView</p>  
-<p>YearView</p>
+<p>MonthView</p><br> 
+<p>YearView</p><br> 
 </td>
 <td align="center">
-<p>MonthView</p>
-<p>YearView</p>
+<p>MonthView</p><br> 
+<p>YearView</p><br> 
 </td>
 <td align="center">
 <p>MonthView</p>
@@ -42,26 +42,26 @@ This section covers the features of SfCalendar specific to Android,iOS and UWP p
 <tr>
 <td>Date Selection</td>
 <td align="center">
-<p>Single</p>
-<p>Multiple</p>
-<p>Range</p>
+<p>Single</p><br> 
+<p>Multiple</p><br> 
+<p>Range</p><br> 
 </td>
 <td align="center">
-<p>Single</p>
-<p>Multiple</p>
-<p>Range</p>
+<p>Single</p><br> 
+<p>Multiple</p><br> 
+<p>Range</p><br> 
 </td>
 <td align="center">
-<p>Single</p>
-<p>Multiple</p>
-<p>Range</p>
+<p>Single</p><br> 
+<p>Multiple</p><br> 
+<p>Range</p><br> 
 </td>
 <td align="center">
 <p>SelectionMode</p>
 </td>
 </tr>
 
-<tr style="background-color: #606060;">
+<tr style="background-color: #ffefd5;color: #000000;">
 <td>Blackout Dates</td>
 <td align="center">
 <p>Yes</p>
@@ -93,7 +93,7 @@ This section covers the features of SfCalendar specific to Android,iOS and UWP p
 </td>
 </tr>
 
-<tr style="background-color: #606060;">
+<tr style="background-color: #ffefd5;color: #000000;">
 <td>Adding the appointments</td>
 <td align="center">
 <p>Yes</p>
@@ -125,7 +125,7 @@ This section covers the features of SfCalendar specific to Android,iOS and UWP p
 </td>
 </tr>
 
-<tr style="background-color: #606060;">
+<tr style="background-color: #ffefd5;color: #000000;">
 <td>Localization support</td>
 <td align="center">
 <p>Yes</p>
@@ -157,7 +157,7 @@ This section covers the features of SfCalendar specific to Android,iOS and UWP p
 </td>
 </tr>
 
-<tr style="background-color: #606060;">
+<tr style="background-color: #ffefd5;color: #000000;">
 <td>Move to Specific date</td>
 <td align="center">
 <p>Yes</p>
@@ -169,7 +169,7 @@ This section covers the features of SfCalendar specific to Android,iOS and UWP p
 <p>Yes</p>
 </td>
 <td align="center">
-<p>MoveToDate</p>
+<p>MoveToDate and MoveToDate(DateTime datetime)</p>
 </td>
 </tr>
 
@@ -189,7 +189,7 @@ This section covers the features of SfCalendar specific to Android,iOS and UWP p
 </td>
 </tr>
 
-<tr style="background-color: #606060;">
+<tr style="background-color: #ffefd5;color: #000000;">
 <td>Custom Day label support</td>
 <td align="center">
 <p>Yes</p>
@@ -221,7 +221,7 @@ This section covers the features of SfCalendar specific to Android,iOS and UWP p
 </td>
 </tr>
 
-<tr style="background-color: #606060;">
+<tr style="background-color: #ffefd5;color: #000000;">
 <td>Dynamically select the dates</td>
 <td align="center">
 <p>Yes</p>
@@ -253,7 +253,7 @@ This section covers the features of SfCalendar specific to Android,iOS and UWP p
 </td>
 </tr>
 
-<tr style="background-color: #606060;">
+<tr style="background-color: #ffefd5;color: #000000;">
 <td>Enabling and disabling the header of SfCalendar</td>
 <td align="center">
 <p>Yes</p>
@@ -281,13 +281,13 @@ This section covers the features of SfCalendar specific to Android,iOS and UWP p
 <p>No</p>
 </td>
 <td align="center">
-<p>NavigationButtonHeight</p>
-<p>NavigationButtonWidth</p>
-<p>NavigationButtonWidth</p>
+<p>NavigationButtonHeight</p><br> 
+<p>NavigationButtonWidth</p><br> 
+<p>NavigationArrowThickness</p><br> 
 </td>
 </tr>
 
-<tr style="background-color: #606060;">
+<tr style="background-color: #ffefd5;color: #000000;">
 <td>Enable or disable the navigation button visible</td>
 <td align="center">
 <p>Yes</p>
@@ -306,10 +306,10 @@ This section covers the features of SfCalendar specific to Android,iOS and UWP p
 <tr>
 <td>Animation support on transition </td>
 <td align="center">
-<p>Scroll</p>
-<p>Float</p>
-<p>Reveal</p>
-<p>Card</p>
+<p>Scroll</p><br> 
+<p>Float</p><br> 
+<p>Reveal</p><br> 
+<p>Card</p><br> 
 </td>
 <td align="center">
 <p>No</p>
@@ -322,7 +322,7 @@ This section covers the features of SfCalendar specific to Android,iOS and UWP p
 </td>
 </tr>
 
-<tr style="background-color: #606060;">
+<tr style="background-color: #ffefd5;color: #000000;">
 <td>Customization of Monthview </td>
 <td align="center">
 <p>Yes</p>
@@ -344,7 +344,7 @@ This section covers the features of SfCalendar specific to Android,iOS and UWP p
 <p>Yes</p>
 </td>
 <td align="center">
-<p>Yes</p>
+<p>No</p>
 </td>
 <td align="center">
 <p>No</p>
@@ -354,7 +354,7 @@ This section covers the features of SfCalendar specific to Android,iOS and UWP p
 </td>
 </tr>
 
-<tr style="background-color: #606060;">
+<tr style="background-color: #ffefd5;color: #000000;">
 <td>Deselect the date selection in single selection mode </td>
 <td align="center">
 <p>Yes</p>
@@ -388,7 +388,7 @@ This section covers the features of SfCalendar specific to Android,iOS and UWP p
 </tr>
 
 
-<tr style="background-color: #606060;">
+<tr style="background-color: #ffefd5;color: #000000;">
 <td>Option to move the next / previous month while clicking the previous/next month date in current active cell </td>
 <td align="center">
 <p>Yes</p>
@@ -424,7 +424,7 @@ This section covers the features of SfCalendar specific to Android,iOS and UWP p
 </td>
 </tr>
 
-<tr style="background-color: #606060;">
+<tr style="background-color: #ffefd5;color: #000000;">
 <td>Restrict the swiping behavior</td>
 <td align="center">
 <p>Yes</p>

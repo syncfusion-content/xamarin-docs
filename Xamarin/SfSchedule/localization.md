@@ -49,9 +49,9 @@ By default, schedule control is available with en locale, which is English.
 
 You can localize the custom strings used in the schedule control. For that you need to configure it for each platform separately.
 
-Localizing custom text in Android renderer.
-Localizing custom text in iOS renderer.
-Localizing custom text in UWP renderer.
+*	Localizing custom text in Android renderer.
+*	Localizing custom text in iOS renderer.
+*	Localizing custom text in UWP renderer.
 
 ### Localizing custom text in Android renderer.
 
@@ -69,11 +69,11 @@ Android can select and load resources from different directories, based on the c
 
 The procedure for creating strings.xml files is as follows:
 
-	* Translate the strings.xml file to each language.
-	* Create three new folders under res –values-ar, values-de, values-en and values-fr (The original values folder already exists).
-	* Place the translated strings.xml files in the respective folders.
+*	Translate the strings.xml file to each language.
+*	Create three new folders under res –values-ar, values-de, values-en and values-fr (The original values folder already exists).
+*	Place the translated strings.xml files in the respective folders.
  
-![](Localization_images/localization_img2.png)  
+![](Localization_images/localization_img2.jpeg)  
 
 ### Localizing custom text in iOS renderer.
 

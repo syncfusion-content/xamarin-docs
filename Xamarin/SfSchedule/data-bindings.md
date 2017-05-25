@@ -377,8 +377,10 @@ Schedule control has built-in events to handle tapped, double tapped and long pr
 
 These events will be triggered while perform respective touch actions in timeslots, month cells and in appointments. All the three events contain the same argument [CellTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.CellTappedEventArgs.html) which holds selected appointment and date time details in it.
 
-• [Appointment](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.CellTappedEventArgs~Appointment.html) -  Contains the selected appointment value, it will be null, if any time slots selected.
+• [Appointment](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.CellTappedEventArgs~Appointment.html) -  Contains the selected appointment value, it will be null, if any time slots selected. Recurrence appointment`s occurrence will have master appointment value. 
 • [DateTime](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.CellTappedEventArgs~Datetime.html) - Contains selected time slot DateTime value.
+
+>N Selected Recurrence appointment`s occurrence value will be master appointment value and the value can be handled based on the master appointment and DateTime (DateTime will be selected date).
 
 {% highlight c# %} 
  

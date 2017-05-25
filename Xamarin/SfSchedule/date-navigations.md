@@ -28,22 +28,24 @@ By default, Schedule views can be moved backwards and forwards using touch swipe
 ## Programmatically change to specific dates 
 Visible dates can be moved to specific date using [NavigateTo](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~NavigateTo.html) method and [MoveToDate](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~MoveToDate.html) property available in SfSchedule. It will move to any specific date if the schedule view is Day View, similarly it will move to the specific week if it is week view and to specific month if it is month view
 
-{% tabs %}   
+   
 {% highlight c# %} 
 
             //using NavigateTo
 
             DateTime currentDate = DateTime.Now;
-            DateTime SpecificDate = new DateTime(currentDate.Year - 5,                    currentDate.Month - 3, currentDate.Day, 0, 0, 0);
+            DateTime SpecificDate = new DateTime(currentDate.Year - 5,currentDate.Month - 3, currentDate.Day, 0, 0, 0);
             Schedule.NavigateTo(SpecificDate);
 
             //using MoveToDate
             DateTime currentDate = DateTime.Now;
-            DateTime SpecificDate = new DateTime(currentDate.Year - 5,                    currentDate.Month - 3, currentDate.Day, 0, 0, 0);
+            DateTime SpecificDate = new DateTime(currentDate.Year - 5,currentDate.Month - 3, currentDate.Day, 0, 0, 0);
             Schedule.MoveToDate = SpecificDate;
 
 {% endhighlight %}   
-{% endtabs %}  
+
+>**Note:** The specified date should lies between MinDisplayDate and MaxDisplayDate, if the specified date is greater than *MaxDisplayDate* then the view moved to MaxDisplayDate similarly if the specified date is lesser than the *MinDisplayDate* then the view moved to MinDisplayDate.
+
 
 ## Programmatically change to adjacent dates.
 By default the date can be navigated to next and previous view using touch gesture, by swiping the control in right to left and right to left direction. The view can be also changed programmatically using [Forward](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~Forward.html) and [Backward](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~Backward.html) method available in SfSchedule. 
@@ -62,6 +64,8 @@ You can use the `Forward` method for viewing the next immediate visible dates in
 
 {% endhighlight %}   
 
+>**Note:** - Date can be navigated until it reaches the Min Max date.**
+
 
 ### Backward
 You can use the `Backward` method for viewing the previous immediate visible dates in the SfSchedule. It will move to previous month if the schedule view is month, similarly it will move to previous week for week view and previous day for day view.
@@ -73,6 +77,8 @@ You can use the `Backward` method for viewing the previous immediate visible dat
 
 
 {% endhighlight %}   
+
+>**Note:** - Date can be navigated until it reaches the Min Max date.**
 
 
 ## Range for visible dates
@@ -86,7 +92,7 @@ Visible dates can be restricted between certain range of dates, using [MinDispla
 
              int monthRange = 2; DateTime currentDate = DateTime.Now;
             //setting minimum display date
-            DateTime minDate = new DateTime(currentDate.Year, currentDate.Month -         monthRange, currentDate.Day, 10, 0, 0);
+            DateTime minDate = new DateTime(currentDate.Year, currentDate.Month - monthRange, currentDate.Day, 10, 0, 0);
             schedule.MinDisplayDate = minDate;
 
 {% endhighlight %}   
@@ -99,7 +105,7 @@ Visible dates can be restricted between certain range of dates, using [MinDispla
 
             int monthRange = 2; DateTime currentDate = DateTime.Now;
             //setting maximum display date
-            DateTime maxDate = new DateTime(currentDate.Year, currentDate.Month +         monthRange, currentDate.Day, 10, 0, 0);
+            DateTime maxDate = new DateTime(currentDate.Year, currentDate.Month + monthRange, currentDate.Day, 10, 0, 0);
             schedule.MaxDisplayDate = maxDate
 
 

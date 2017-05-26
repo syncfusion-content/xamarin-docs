@@ -284,8 +284,8 @@ You can customize the appearance of the Trackball label with your own template b
     <ResourceDictionary>
       <DataTemplate x:Key="trackballTemplate">
         <StackLayout  Orientation="Horizontal">
-            <Label  Text="{Binding Value}" TextColor="White" FontSize = "15" VerticalTextAlignment="Center"/>
-            <Image Source = "grain.jpg" WidthRequest="30" HeightRequest="30"/>
+            <Label  Text="{Binding Value}" TextColor="White" FontSize ="15" VerticalTextAlignment="Center"/>
+            <Image Source ="grain.jpg" WidthRequest="30" HeightRequest="30"/>
         </StackLayout>
       </DataTemplate>
     </ResourceDictionary>

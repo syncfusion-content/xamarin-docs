@@ -41,8 +41,8 @@ You can change the background color,text style and text size using properties su
 		<syncfusion:SfSchedule.HeaderStyle>
 			<syncfusion:HeaderStyle
 				BackgroundColor="#FADBD8" 
-				TextColor="White" 
-				TextStyle="Default" />
+				TextColor="Blue" 
+				TextStyle="20" />
 		</syncfusion:SfSchedule.HeaderStyle>
 	</syncfusion:SfSchedule>
 
@@ -51,14 +51,16 @@ You can change the background color,text style and text size using properties su
 
 	HeaderStyle headerStyle = new HeaderStyle();
 	headerStyle.BackgroundColor = Color.FromRgb(250, 219, 216);
-	headerStyle.TextStyle = Font.Default;
-	headerStyle.TextColor=Color.White;
+	headerStyle.TextStyle = Font.SystemFontOfSize(20);
+	headerStyle.TextColor=Color.Blue;
 	schedule.HeaderStyle = headerStyle;
 
 {% endhighlight %}
 {% endtabs %} 
 
 ![](Header_images/HeaderStyle.png) 
+
+>**Note**:  FontAttributes and FontFamily are native to the  platform. Custom font and the font which are not available in the specified platform will not be applied.
 
 ## Loading Custom Headers
 

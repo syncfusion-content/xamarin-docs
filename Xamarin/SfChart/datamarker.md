@@ -452,20 +452,18 @@ barSeries.DataMarker = new ChartDataMarker();
 barSeries.DataMarker.ShowLabel = true;
 barSeries.DataMarker.LabelStyle.LabelPosition = DataMarkerLabelPosition.Outer;
 
-DataTemplate dataMarkerTemplate = new DataTemplate(() => {	
+DataTemplate dataMarkerTemplate = new DataTemplate(() => 
+{
     StackLayout stack = new StackLayout();
     stack.Orientation = StackOrientation.Horizontal;
-
     Label label = new Label();
     label.SetBinding(Label.TextProperty, "Value");
     label.FontSize = 15;
     label.VerticalOptions = LayoutOptions.Center;
-
     Image image = new Image();
     image.Source = "Down.jpg";
     image.WidthRequest = 30;
     image.HeightRequest = 30;
-
     stack.Children.Add(label);
     stack.Children.Add(image);
     return stack;

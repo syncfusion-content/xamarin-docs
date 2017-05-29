@@ -452,8 +452,7 @@ barSeries.DataMarker = new ChartDataMarker();
 barSeries.DataMarker.ShowLabel = true;
 barSeries.DataMarker.LabelStyle.LabelPosition = DataMarkerLabelPosition.Outer;
 
-DataTemplate dataMarkerTemplate = new DataTemplate(() =>
-{	
+DataTemplate dataMarkerTemplate = new DataTemplate(() => {	
     StackLayout stack = new StackLayout();
     stack.Orientation = StackOrientation.Horizontal;
 

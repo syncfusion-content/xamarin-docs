@@ -18,7 +18,7 @@ WorkWeekView is to view only working days of a particular week. By default, Satu
 ## ViewHeader Appearance:
 You can customize the default appearance of view header in [WorkWeekView](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleView.html) by using [ViewHeaderStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderStyle.html) property of [SfSchedule](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule.html).
 
-
+{% tabs %}
 {% highlight c# %}
 
             //Create new instance of Schedule
@@ -50,11 +50,13 @@ You can customize the default appearance of view header in [WorkWeekView](https:
     </schedule:SfSchedule>
 
 {% endhighlight %}
+{% endtabs %} 
 
 ![](daymodule_images/viewheaderappearance_workweek.png)
 
 You can customize the height of the ViewHeader in `WeekView` by setting [ViewHeaderHeight](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ViewHeaderHeight.html) property of `SfSchedule`.
 
+{% tabs %} 
 {% highlight C# %}
 
         schedule.ScheduleView = ScheduleView.WorkWeekView;
@@ -67,12 +69,14 @@ You can customize the height of the ViewHeader in `WeekView` by setting [ViewHea
     <schedule:SfSchedule x:Name="schedule" ScheduleView ="WorkWeekView" ViewHeaderHeight="50" />
            
 {% endhighlight %}
+{% endtabs %}
 
 ![](daymodule_images/viewheaderheight_workweek.png)
 
 ## Change Time Interval:
 You can customize the interval of timeslots in `WorkWeekView` by setting [TimeInterval](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~TimeInterval.html)  property of `SfSchedule`.
 
+{% tabs %}
 {% highlight C# %}
 
     schedule.ScheduleView = ScheduleView.WorkWeekView;
@@ -82,6 +86,7 @@ You can customize the interval of timeslots in `WorkWeekView` by setting [TimeIn
 
     <schedule:SfSchedule x:Name="schedule" ScheduleView="WorkWeekView" TimeInterval="120"/>  
 {% endhighlight %}
+{% endtabs %} 
 
 ![](daymodule_images/timeinterval_workweek.png)
 
@@ -89,6 +94,7 @@ You can customize the interval of timeslots in `WorkWeekView` by setting [TimeIn
 
 Working hours in `WorkWeekView` of Schedule control will be differentiated with non-working hours by separate color. By default, working hours will be between 09 to 18. You can customize the working hours by setting [WorkStartHour](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WorkWeekViewSettings~WorkStartHour.html) and [WorkEndHour](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WorkWeekViewSettings~WorkEndHour.html) properties of [WorkWeekViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~WorkWeekViewSettings.html).
 
+{% tabs %} 
 {% highlight C# %}
 
     schedule.ScheduleView = ScheduleView.WorkWeekView;
@@ -110,6 +116,7 @@ Working hours in `WorkWeekView` of Schedule control will be differentiated with 
         </schedule:SfSchedule.WorkWeekViewSettings>
     </schedule:SfSchedule>
 {% endhighlight %}
+{% endtabs %}
 
 ![](daymodule_images/changeworkinghours_workweek.png)
 
@@ -126,6 +133,7 @@ You can customize the appearance of timeslots in `WeekView`.
 
 You can customize the appearance of the working hour timeslots by its color using[TimeSlotColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WorkWeekViewSettings~TimeSlotColor.html), [TimeSlotBorderColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WorkWeekViewSettings~TimeSlotBorderColor.html), [VerticalLineStrokeWidth](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WorkWeekViewSettings~VerticalLineStrokeWidth.html),  [VerticalLineColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WorkWeekViewSettings~VerticalLineColor.html) and  [TimeSlotBorderStrokeWidth](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WorkWeekViewSettings~TimeSlotBorderStrokeWidth.html) properties of `WorkWeekViewSettings`.
 
+{% tabs %}
 {% highlight C# %}
 
             schedule.ScheduleView = ScheduleView.WorkWeekView;
@@ -153,6 +161,7 @@ You can customize the appearance of the working hour timeslots by its color usin
      </schedule:SfSchedule.WorkWeekViewSettings>
     </schedule:SfSchedule>
 {% endhighlight %}
+{% endtabs %} 
 
 ![](daymodule_images/timeslotappearance_workweek.png)
 
@@ -160,6 +169,7 @@ You can customize the appearance of the working hour timeslots by its color usin
 
 You can customize the appearance of the non-working hour timeslots by its color using [NonWorkingHoursTimeSlotBorderColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WorkWeekViewSettings~NonWorkingHoursTimeSlotBorderColor.html),[NonWorkingHoursTimeSlotColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WorkWeekViewSettings~NonWorkingHoursTimeSlotColor.html),`VerticalLineStrokeWidth`, `VerticalLineColor` and `TimeSlotBorderStrokeWidth` properties of `WorkWeekViewSettings`.
 
+{% tabs %}
 {% highlight C# %}
 
             schedule.ScheduleView = ScheduleView.WorkWeekView;
@@ -188,6 +198,7 @@ You can customize the appearance of the non-working hour timeslots by its color 
      </schedule:SfSchedule.WorkWeekViewSettings>
     </schedule:SfSchedule> 
 {% endhighlight %}
+{% endtabs %} 
 
 ![](daymodule_images/nonworkinghours_workweek.png)
 
@@ -198,6 +209,7 @@ You can customize the appearance of the non-working hour timeslots by its color 
 
 You can restrict or allocate certain timeslot as Non-accessible blocks by using [NonAccessibleBlocks](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WorkWeekViewSettings~NonAccessibleBlocks.html) of `WorkWeekViewSettings` so that you can allocate those timeslots for predefined events/activities like Lunch hour.
 
+{% tabs %}
 {% highlight C# %}
 
             schedule.ScheduleView = ScheduleView.WorkWeekView;
@@ -232,6 +244,7 @@ You can restrict or allocate certain timeslot as Non-accessible blocks by using 
             </schedule:SfSchedule.WorkWeekViewSettings>
         </schedule:SfSchedule> 
 {% endhighlight %}
+{% endtabs %} 
 
 ![](daymodule_images/nonaccessibleblock_workweek.png)
 
@@ -241,6 +254,7 @@ Selection and related events will not be working in this blocks.
 ## Change first day of week:
 By default, schedule control will be rendered with Sunday as the first day of the week, it can be customized to any day of the week by using[FirstDayOfWeek](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~FirstDayOfWeek.html) property of `SfSchedule`.
 
+{% tabs %}
 {% highlight C# %}
 
     schedule.ScheduleView = ScheduleView.WorkWeekView;
@@ -251,6 +265,7 @@ By default, schedule control will be rendered with Sunday as the first day of th
 
     <schedule:SfSchedule x:Name="schedule" ScheduleView="WorkWeekView" FirstDayOfWeek="3"/>
 {% endhighlight %}
+{% endtabs %} 
 
 ![](daymodule_images/firstdayofweek_workweek.png)
 
@@ -299,6 +314,7 @@ You can customize the default appearance of selection UI in the timeslots.
 ### Selection customization using style:
 You can customize the timeslot selection by using [SelectionStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~SelectionStyle.html) property of `SfSchedule`.
 
+{% tabs %}
 {% highlight C# %}
 
             schedule.ScheduleView = ScheduleView.WorkWeekView;
@@ -324,11 +340,14 @@ You can customize the timeslot selection by using [SelectionStyle](https://help.
             </schedule:SfSchedule.SelectionStyle>
     </schedule:SfSchedule>
 {% endhighlight %}
+{% endtabs %} 
 
 ![](daymodule_images/selectionstyle_workweek.png)
 
 ### Selection customization using custom View:
 You can replace the default selection UI with your custom view by setting [SelectionView](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~SelectionView.html) property of `SfSchedule`.
+
+{% tabs %}
 {% highlight C# %}
 
             schedule.ScheduleView = ScheduleView.WorkWeekView;
@@ -351,6 +370,7 @@ You can replace the default selection UI with your custom view by setting [Selec
       </schedule:SfSchedule.SelectionView>
     </schedule:SfSchedule>
 {% endhighlight %}
+{% endtabs %} 
 
 ![](daymodule_images/selectioncustomview_workweek.png)
 

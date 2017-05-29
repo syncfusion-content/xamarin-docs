@@ -51,6 +51,8 @@ You can customize the default appearance of view header in [WeekView](https://he
 {% endhighlight %}
 
 ![](daymodule_images/viewheader_appearance_week.png)
+
+>**Note**:  FontAttributes and FontFamily are native to the platform. Custom font and the font which are not available in the specified platform will not be applied.
     
 You can customize the height of the ViewHeader in `WeekView` by setting [ViewHeaderHeight](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ViewHeaderHeight.html) property of `SfSchedule`.
 

@@ -52,6 +52,8 @@ You can customize the default appearance of view header in [DayView](https://hel
 
 ![](daymodule_images/viewheaderappearance_day.png)
 
+>**Note**:  FontAttributes and FontFamily are native to the platform. Custom font and the font which are not available in the specified platform will not be applied.
+
 You can customize the height of the ViewHeader in `DayView` by setting [ViewHeaderHeight](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ViewHeaderHeight.html) property of `SfSchedule`.
 
 {% highlight C# %}

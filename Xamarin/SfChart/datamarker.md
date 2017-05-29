@@ -403,3 +403,78 @@ lineSeries.DataMarker.ConnectorLineStyle.StrokeDashArray = new double[2] { 2, 3 
 ![](datamarker_images/datamarker_img9.png)
 
 N> For Pie and Doughnut series, you can set the Bezier curve for connector line using ConnectorType property of Pie and Doughnut series.
+
+## Data Marker Label Template
+
+You can customize the appearance of the data marker label with your own template by using [`LabelTemplate`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataMarker~LabelTemplate.html) property of [`ChartDataMarker`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataMarker.html).
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<ContentPage.Resources>
+    <ResourceDictionary>
+      <DataTemplate x:Key="dataMarkerTemplate">
+        <StackLayout Orientation="Horizontal">
+          <Label Text="{Binding Value}" VerticalOptions="Center" FontSize = "15" />
+          <Image Source="Down.jpg" WidthRequest="30" HeightRequest="30"/>
+        </StackLayout>
+      </DataTemplate>    
+	</ResourceDictionary>
+</ContentPage.Resources>
+
+<chart:SfChart.Series>
+    <chart:BarSeries ItemsSource="{Binding Data}" XBindingPath="Name" YBindingPath="Value">
+        <chart:BarSeries.DataMarker>
+            <chart:ChartDataMarker ShowLabel="True" LabelTemplate="{StaticResource dataMarkerTemplate}">
+	            <chart:ChartDataMarker.LabelStyle>
+		            <chart:DataMarkerLabelStyle LabelPosition="Outer" />
+	            </chart:ChartDataMarker.LabelStyle>
+	        </chart:ChartDataMarker>
+        </chart:BarSeries.DataMarker>
+    </chart:BarSeries>
+</chart:SfChart.Series>
+
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart ();
+...
+
+var barSeries = new BarSeries();
+barSeries.Color = Color.FromRgb(231, 87, 89);
+barSeries.ItemsSource = Data;
+barSeries.XBindingPath = "Name";
+barSeries.YBindingPath = "Value";
+barSeries.DataMarker = new ChartDataMarker();
+barSeries.DataMarker.ShowLabel = true;
+barSeries.DataMarker.LabelStyle.LabelPosition = DataMarkerLabelPosition.Outer;
+
+DataTemplate dataMarkerTemplate = new DataTemplate(() => 
+{
+    StackLayout stack = new StackLayout();
+    stack.Orientation = StackOrientation.Horizontal;
+    Label label = new Label();
+    label.SetBinding(Label.TextProperty, "Value");
+    label.FontSize = 15;
+    label.VerticalOptions = LayoutOptions.Center;
+    Image image = new Image();
+    image.Source = "Down.jpg";
+    image.WidthRequest = 30;
+    image.HeightRequest = 30;
+    stack.Children.Add(label);
+    stack.Children.Add(image);
+    return stack;
+});
+
+barSeries.DataMarker.LabelTemplate = dataMarkerTemplate;
+chart.Series.Add(barSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](datamarker_images/datamarker_img10.png)
+

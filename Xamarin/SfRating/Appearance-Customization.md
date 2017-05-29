@@ -25,13 +25,21 @@ The `RatedFill` property fills the rated area with the specified solid color in 
 
 {% highlight xaml %}
 
-	<rating:SfRating x:Name="ratingSettings" RatedFill="Red" />
+    <rating:SfRating  x:Name="rating" Value="3">
+    <rating:SfRating.RatingSettings>
+    <rating:SfRatingSettings RatedFill="Red"/>
+    </rating:SfRating.RatingSettings>
+    </rating:SfRating>
 	
 {% endhighlight %}
 
 {% highlight C# %}
 
-	ratingSettings.RatedFill = Color.FromHex("#fbd10a");
+    SfRating rating= new SfRating();
+    rating.Value = 3;
+    SfRatingSettings ratingSettings = new SfRatingSettings();
+    ratingSettings.RatedFill = Color.FromHex("#fbd10a");
+    rating.RatingSettings = ratingSettings;
            
 {% endhighlight %}
 
@@ -47,13 +55,21 @@ The `UnRatedFill` property fills the unrated area with the specified solid color
 
 {% highlight xaml %}
 
-	<rating:SfRating x:Name="ratingSettings" UnRatedFill="Gray" />
-	
+    <rating:SfRating  x:Name="rating" Value="3">
+    <rating:SfRating.RatingSettings>
+    <rating:SfRatingSettings UnRatedFill="Gray"/>
+    </rating:SfRating.RatingSettings>
+    </rating:SfRating>
+
 {% endhighlight %}
 
 {% highlight C# %}
 
-	ratingSettings.UnRatedFill=Color.Gray;
+    SfRating rating= new SfRating();
+    rating.Value = 3;
+    SfRatingSettings ratingSettings = new SfRatingSettings();
+    ratingSettings.UnRatedFill=Color.Gray;
+    rating.RatingSettings = ratingSettings;
 
 {% endhighlight %}
 
@@ -73,13 +89,21 @@ The RatedStroke property sets the stroke for the rated area with the specified s
 
 {% highlight xaml %}
 
-	<rating:SfRating x:Name="ratingSettings" RatedStroke="Green" />
+    <rating:SfRating  x:Name="rating" Value="3">
+    <rating:SfRating.RatingSettings>
+    <rating:SfRatingSettings RatedStroke="Black"/>
+    </rating:SfRating.RatingSettings>
+    </rating:SfRating>
 	
 {% endhighlight %}
 
 {% highlight C# %}
 
-	ratingSettings.RatedStroke=Color.Green;
+    SfRating rating= new SfRating();
+    rating.Value = 3;
+    SfRatingSettings ratingSettings = new SfRatingSettings();
+    ratingSettings.RatedStroke=Color.Black;
+    rating.RatingSettings = ratingSettings;	
 
 {% endhighlight %}
 
@@ -95,13 +119,21 @@ The `UnRatedStroke` property sets the stroke for the unrated area with the speci
 
 {% highlight xaml %}
 
-	<rating:SfRating x:Name="ratingSettings" UnRatedStroke="Black" />
-	
+    <rating:SfRating  x:Name="rating" Value="3">
+    <rating:SfRating.RatingSettings>
+    <rating:SfRatingSettings UnRatedStroke="Black"/>
+    </rating:SfRating.RatingSettings>
+    </rating:SfRating>
+
 {% endhighlight %}
 
 {% highlight C# %}
 
-	ratingSettings.UnRatedStroke=Color.Black;
+    SfRating rating= new SfRating();
+    rating.Value = 3;
+    SfRatingSettings ratingSettings = new SfRatingSettings();
+    ratingSettings.UnRatedStroke=Color.Black;
+    rating.RatingSettings = ratingSettings;
 
 {% endhighlight %}
 
@@ -109,25 +141,33 @@ The `UnRatedStroke` property sets the stroke for the unrated area with the speci
 
 ![](images/unRatedStroke.jpg)
  
-## Set Stroke Thickness
+## Set Stroke Width
 
-SfRating control has support to set the stroke thickness for the selected and unselected items.
+SfRating control has support to set the stroke width for the selected and unselected items.
 
 ### Selected Items
 
-The `RatedStrokeThickness` property sets the stroke thickness for the rated area with the specified value in the SfRating control.
+The `RatedStrokeWidth` property sets the stroke width for the rated area with the specified value in the SfRating control.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-	<rating:SfRating x:Name="ratingSettings" RatedStrokeThickness="3" />
-	
+    <rating:SfRating  x:Name="rating" Value="3">
+    <rating:SfRating.RatingSettings>
+    <rating:SfRatingSettings RatedStrokeWidth="3"/>
+    </rating:SfRating.RatingSettings>
+    </rating:SfRating>
+
 {% endhighlight %}
 
 {% highlight C# %}
 
-	ratingSettings.RatedStrokeThickness=3;
+    SfRating rating= new SfRating();
+    rating.Value = 3;
+    SfRatingSettings ratingSettings = new SfRatingSettings();
+    ratingSettings.RatedStrokeWidth=3;
+    rating.RatingSettings = ratingSettings;
 
 {% endhighlight %}
 
@@ -138,19 +178,27 @@ The `RatedStrokeThickness` property sets the stroke thickness for the rated area
 
 ### Unselected Items
 
-The `UnRatedStrokeThickness` property sets the stroke thickness for the unrated area with the specified value in the SfRating control.
+The `UnRatedStrokeWidth` property sets the stroke width for the unrated area with the specified value in the SfRating control.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-	<rating:SfRating x:Name="ratingSettings" UnRatedStrokeThickness="3" />
+    <rating:SfRating  x:Name="rating" Value="3">
+    <rating:SfRating.RatingSettings>
+    <rating:SfRatingSettings UnRatedStrokeWidth="3"/>
+    </rating:SfRating.RatingSettings>
+    </rating:SfRating>
 	
 {% endhighlight %}
 
 {% highlight C# %}
 
-	ratingSettings.UnRatedStrokeThickness=3;
+    SfRating rating= new SfRating();
+    rating.Value = 3;
+    SfRatingSettings ratingSettings = new SfRatingSettings();
+    ratingSettings.UnRatedStrokeWidth=3;
+    rating.RatingSettings = ratingSettings;
 
 {% endhighlight %}
 

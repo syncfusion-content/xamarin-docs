@@ -189,6 +189,76 @@ chart.Series.Add(splineAreaSeries);
 
 ![](charttypes_images/charttypes_img3.png)
 
+## Range Area Chart
+
+To render a range area chart, create an instance of [`RangeAreaSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RangeAreaSeries.html) and add to the [`Series`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~Series.html) collection property of [`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html).
+
+Since the [`RangeAreaSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RangeAreaSeries.html) requires two Y values for a point, your data should contain high and low values. High and low value specifies the maximum and minimum range of the point.
+
+There are two ways you can provide data to range area chart,
+
+1.You can use [`ChartDataPoint's`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataPoint~_ctor%28IComparable,Double,Double%29.html) three parameter constructor to pass x value, high and low values to [`RangeAreaSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RangeAreaSeries.html),
+
+{% highlight c# %}
+[C#] 
+
+SfChart chart = new SfChart();
+...
+
+ObservableCollection<ChartDataPoint> data = new ObservableCollection<ChartDataPoint>()
+{
+     new ChartDataPoint("Jan/10", 30, 18),
+     new ChartDataPoint("Feb/10", 24, 12),
+     new ChartDataPoint("Mar/10", 29, 15),
+     new ChartDataPoint("Apr/10", 24, 10),
+     new ChartDataPoint("May/10", 30, 18),
+     new ChartDataPoint("Jun/10", 24, 10),
+};
+
+RangeAreaSeries rangeAreaSeries = new RangeAreaSeries()
+{
+     ItemsSource = data
+};
+
+chart.Series.Add(rangeAreaSeries);
+
+{% endhighlight %}
+
+2.Or else you can use [`High`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RangeSeriesBase~High.html) and [`Low`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RangeSeriesBase~Low.html) properties of [`RangeAreaSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RangeAreaSeries.html) to map the high and low values from custom object to chart.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart>
+...
+    <chart:SfChart.Series>
+        <chart:RangeAreaSeries ItemsSource="{Binding RangeAreaData}" XBindingPath="Name" High="High" Low="Low"/>
+    </chart:SfChart.Series>
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+...
+
+RangeAreaSeries rangeAreaSeries = new RangeAreaSeries()
+{
+     ItemsSource = RangeAreaData,
+     XBindingPath = "Name",
+     High = "High",
+     Low = "Low"
+};
+chart.Series.Add(rangeAreaSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](charttypes_images/RangeArea.png)
+
 ## Stacked Area Chart
 
 To render a stacked area chart, create an instance of [`StackingAreaSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.StackingAreaSeries.html) and add to the [`Series`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~Series.html) collection property of [`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the stacked area appearance.

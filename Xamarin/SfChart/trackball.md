@@ -271,3 +271,82 @@ chart.ChartBehaviors.Add(trackballBehavior);
 Following screenshot illustrates the customization of trackball elements.
 
 ![](trackball_images/trackball_img3.png)
+
+## Trackball Label Template
+
+You can customize the appearance of the Trackball label with your own template by using [`TrackballLabelTemplate`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CartesianSeries~TrackballLabelTemplate.html) property of [`ChartSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries.html).
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<ContentPage.Resources>
+    <ResourceDictionary>
+      <DataTemplate x:Key="trackballTemplate">
+        <StackLayout  Orientation="Horizontal">
+            <Label  Text="{Binding Value}" TextColor="White" FontSize ="15" VerticalTextAlignment="Center"/>
+            <Image Source ="grain.jpg" WidthRequest="30" HeightRequest="30"/>
+        </StackLayout>
+      </DataTemplate>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+
+<chart:SfChart.Series>
+    <chart:LineSeries TrackballLabelTemplate="{StaticResource trackballTemplate}" ItemsSource="{Binding Data1}" XBindingPath="Name" YBindingPath="Value"/>
+    <chart:LineSeries TrackballLabelTemplate="{StaticResource trackballTemplate}" ItemsSource="{Binding Data2}" XBindingPath="Name" YBindingPath="Value"/>
+</chart:SfChart.Series>
+
+<chart:SfChart.ChartBehaviors>
+          <chart:ChartTrackballBehavior/>
+</chart:SfChart.ChartBehaviors>
+
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart ();
+...
+
+var lineSeries1 = new LineSeries();
+lineSeries1.ItemsSource = Data1;
+lineSeries1.XBindingPath = "Name";
+lineSeries1.YBindingPath = "Value";
+
+var lineSeries2 = new LineSeries();
+lineSeries2.ItemsSource = Data2;
+lineSeries2.XBindingPath = "Name";
+lineSeries2.YBindingPath = "Value";
+
+DataTemplate trackBallTemplate = new DataTemplate(() =>
+{
+     StackLayout stack = new StackLayout();
+     stack.Orientation = StackOrientation.Horizontal;
+     Label label = new Label();
+     label.SetBinding(Label.TextProperty, "Value");
+     label.FontSize = 15;
+     label.VerticalTextAlignment = TextAlignment.Center;
+     label.TextColor = Color.White;
+     Image image = new Image();
+     image.Source = "grain.jpg";
+     image.WidthRequest = 30;
+     image.HeightRequest = 30;
+     stack.Children.Add(label);
+     stack.Children.Add(image);
+     return stack;
+});
+
+lineSeries1.TrackballLabelTemplate = trackBallTemplate;
+lineSeries2.TrackballLabelTemplate = trackBallTemplate;
+
+chart.Series.Add(lineSeries1);
+chart.Series.Add(lineSeries2);
+
+chart.ChartBehaviors.Add(new ChartTrackballBehavior());
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](trackball_images/trackball_img4.png)
+

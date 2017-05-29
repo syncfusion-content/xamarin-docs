@@ -322,18 +322,15 @@ DataTemplate trackBallTemplate = new DataTemplate(() =>
 {
      StackLayout stack = new StackLayout();
      stack.Orientation = StackOrientation.Horizontal;
-
      Label label = new Label();
      label.SetBinding(Label.TextProperty, "Value");
      label.FontSize = 15;
      label.VerticalTextAlignment = TextAlignment.Center;
      label.TextColor = Color.White;
-
      Image image = new Image();
      image.Source = "grain.jpg";
      image.WidthRequest = 30;
      image.HeightRequest = 30;
-
      stack.Children.Add(label);
      stack.Children.Add(image);
      return stack;

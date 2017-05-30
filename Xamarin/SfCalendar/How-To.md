@@ -214,7 +214,7 @@ void Handle_OnMonthCellLoaded(object sender, Syncfusion.SfCalendar.XForms.MonthC
 
 {% endtabs %}
 
-# How to Perform the Operation while longpressing the dateCell
+# How to Perform the Operation while long pressing the dateCell
 
 `OnDateCellHolding` event returns the long pressed date along with the SfCalendar it carries. Using this event user can perform operation while long pressing the date.
 

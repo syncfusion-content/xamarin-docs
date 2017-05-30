@@ -21,7 +21,7 @@ The dates in month view can be selected by three ways such as single, multiple a
 
 ### Customization of SfCalendar's dates in MonthView
 
-We can customize the calendar view in monthview mode by using `MonthViewSettings`. 
+We can customize the calendar view in monthView mode by using `MonthViewSettings`. 
 
 * Current day text color can be modified using `TodayTextColor`.
 
@@ -91,11 +91,11 @@ this.Content = calendar;
 
 ### Customization of SfCalendar's dates in YearView
 
-We can customize the calendar view in yearview mode by using `YearViewSettings`. 
+We can customize the calendar view in yearView mode by using `YearViewSettings`. 
 
 *  date text color can be modified using `DateTextColor`.
 
-* We can also customiza the header, monthlayout in yearview 's textColor and background color.
+* We can also customize the header, monthLayout in yearView 's textColor and background color.
 
 {% highlight c# %}
 	

@@ -133,7 +133,7 @@ Available options for this property are:
 
 {% highlight c# %}
 
-	rangeslider.LabelPlacement=LabelPlacement.TopLeft;
+	rangeSlider.LabelPlacement=LabelPlacement.TopLeft;
 
 {% endhighlight %}
 

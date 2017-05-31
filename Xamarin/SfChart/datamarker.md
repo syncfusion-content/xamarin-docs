@@ -414,12 +414,12 @@ You can customize the appearance of the data marker label with your own template
 
 <ContentPage.Resources>
     <ResourceDictionary>
-       <DataTemplate x:Key="dataMarkerTemplate">
-          <StackLayout Orientation="Horizontal">
-             <Label Text="{Binding Value}" VerticalOptions="Center" FontSize = "15"/>
-             <Image Source="Down.jpg" WidthRequest="30" HeightRequest="30"/>
-          </StackLayout>
-       </DataTemplate>    
+        <DataTemplate x:Key="dataMarkerTemplate">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="{Binding Value}" VerticalOptions="Center" FontSize = "15"/>
+                <Image Source="Down.jpg" WidthRequest="30" HeightRequest="30"/>
+            </StackLayout>
+        </DataTemplate>    
     </ResourceDictionary>
 </ContentPage.Resources>
 
@@ -427,10 +427,10 @@ You can customize the appearance of the data marker label with your own template
     <chart:BarSeries ItemsSource="{Binding Data}" XBindingPath="Name" YBindingPath="Value">
         <chart:BarSeries.DataMarker>
             <chart:ChartDataMarker ShowLabel="True" LabelTemplate="{StaticResource dataMarkerTemplate}">
-	            <chart:ChartDataMarker.LabelStyle>
-		            <chart:DataMarkerLabelStyle LabelPosition="Outer" />
-	            </chart:ChartDataMarker.LabelStyle>
-	        </chart:ChartDataMarker>
+                <chart:ChartDataMarker.LabelStyle>
+                    <chart:DataMarkerLabelStyle LabelPosition="Outer" />
+                </chart:ChartDataMarker.LabelStyle>  
+            </chart:ChartDataMarker>
         </chart:BarSeries.DataMarker>
     </chart:BarSeries>
 </chart:SfChart.Series>

@@ -404,7 +404,7 @@ lineSeries.DataMarker.ConnectorLineStyle.StrokeDashArray = new double[2] { 2, 3 
 
 N> For Pie and Doughnut series, you can set the Bezier curve for connector line using ConnectorType property of Pie and Doughnut series.
 
-## Data Marker Label Template
+## Label Template
 
 You can customize the appearance of the data marker label with your own template by using [`LabelTemplate`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataMarker~LabelTemplate.html) property of [`ChartDataMarker`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataMarker.html).
 
@@ -414,23 +414,23 @@ You can customize the appearance of the data marker label with your own template
 
 <ContentPage.Resources>
     <ResourceDictionary>
-      <DataTemplate x:Key="dataMarkerTemplate">
-        <StackLayout Orientation="Horizontal">
-          <Label Text="{Binding Value}" VerticalOptions="Center" FontSize = "15" />
-          <Image Source="Down.jpg" WidthRequest="30" HeightRequest="30"/>
-        </StackLayout>
-      </DataTemplate>    
-	</ResourceDictionary>
+        <DataTemplate x:Key="dataMarkerTemplate">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="{Binding Value}" VerticalOptions="Center" FontSize = "15"/>
+                <Image Source="Down.jpg" WidthRequest="30" HeightRequest="30"/>
+            </StackLayout>
+        </DataTemplate>    
+    </ResourceDictionary>
 </ContentPage.Resources>
 
 <chart:SfChart.Series>
     <chart:BarSeries ItemsSource="{Binding Data}" XBindingPath="Name" YBindingPath="Value">
         <chart:BarSeries.DataMarker>
             <chart:ChartDataMarker ShowLabel="True" LabelTemplate="{StaticResource dataMarkerTemplate}">
-	            <chart:ChartDataMarker.LabelStyle>
-		            <chart:DataMarkerLabelStyle LabelPosition="Outer" />
-	            </chart:ChartDataMarker.LabelStyle>
-	        </chart:ChartDataMarker>
+                <chart:ChartDataMarker.LabelStyle>
+                    <chart:DataMarkerLabelStyle LabelPosition="Outer" />
+                </chart:ChartDataMarker.LabelStyle>  
+            </chart:ChartDataMarker>
         </chart:BarSeries.DataMarker>
     </chart:BarSeries>
 </chart:SfChart.Series>

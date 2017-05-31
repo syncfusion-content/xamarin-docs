@@ -272,7 +272,7 @@ Following screenshot illustrates the customization of trackball elements.
 
 ![](trackball_images/trackball_img3.png)
 
-## Trackball Label Template
+## Label Template
 
 You can customize the appearance of the Trackball label with your own template by using [`TrackballLabelTemplate`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CartesianSeries~TrackballLabelTemplate.html) property of [`ChartSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries.html).
 
@@ -282,14 +282,14 @@ You can customize the appearance of the Trackball label with your own template b
 
 <ContentPage.Resources>
     <ResourceDictionary>
-      <DataTemplate x:Key="trackballTemplate">
-        <StackLayout  Orientation="Horizontal">
-            <Label  Text="{Binding Value}" TextColor="White" FontSize ="15" VerticalTextAlignment="Center"/>
-            <Image Source ="grain.jpg" WidthRequest="30" HeightRequest="30"/>
-        </StackLayout>
-      </DataTemplate>
+       <DataTemplate x:Key="trackballTemplate">
+          <StackLayout  Orientation="Horizontal">
+             <Label  Text="{Binding Value}" TextColor="White" FontSize ="15" VerticalTextAlignment="Center"/>
+             <Image Source ="grain.jpg" WidthRequest="30" HeightRequest="30"/>
+          </StackLayout>
+       </DataTemplate>
     </ResourceDictionary>
-  </ContentPage.Resources>
+</ContentPage.Resources>
 
 <chart:SfChart.Series>
     <chart:LineSeries TrackballLabelTemplate="{StaticResource trackballTemplate}" ItemsSource="{Binding Data1}" XBindingPath="Name" YBindingPath="Value"/>
@@ -297,7 +297,7 @@ You can customize the appearance of the Trackball label with your own template b
 </chart:SfChart.Series>
 
 <chart:SfChart.ChartBehaviors>
-          <chart:ChartTrackballBehavior/>
+    <chart:ChartTrackballBehavior/>
 </chart:SfChart.ChartBehaviors>
 
 

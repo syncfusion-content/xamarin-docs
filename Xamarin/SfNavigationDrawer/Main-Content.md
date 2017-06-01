@@ -8,75 +8,97 @@ documentation: ug
 ---
 
 
-# Setting Main Content
+# Main Content
 
-The SfNavigationDrawer is mainly divided into two parts, such as [Main Content](#main-content) and  [Drawer Panel Content](/Xamarin/SfNavigationDrawer/Drawer-Content "Sliding Panel Contents")
-
-## Main Content
-
-The main display view that displays our various content of the app can be set using `ContentView` property with desired views.
+Main content of NavigationDrawer is always visible and it can be set using `ContentView` property. In the following code example, ContentView is switched when selection changes in ListView.
 
 {% tabs %}
 
 {% highlight xaml %}
 
- 	<navigation:SfNavigationDrawer x:Name="navigationDrawer">
-        <navigation:SfNavigationDrawer.ContentView>
-           <StackLayout x:Name="ContentFrame" Orientation="Vertical">
-				<StackLayout x:Name="headerFrame" BackgroundColor="#1aa1d6" Orientation="Horizontal">
-					 <Button x:Name="imageButton" FontSize="20" HeightRequest="50" Image="_menu_.png"  BackgroundColor="#1aa1d6" HorizontalOptions="Start" WidthRequest="50" />
-					 <Label x:Name="homeLabel" FontSize="15" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Home"  HeightRequest="50" HorizontalOptions="FillAndExpand" TextColor="White" />
-			    </StackLayout>   
-				<Label x:Name="mainLabel" FontSize="14" TextColor="Black">
-					<Label.Text>
-						HomePage ContentView
-					</Label.Text>
-				</Label>   
-             </StackLayout>
-        </navigation:SfNavigationDrawer.ContentView>
- 	</navigation:SfNavigationDrawer>
- 
- 
+	<navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer" DrawerHeaderHeight="160">
+        <navigationdrawer:SfNavigationDrawer.ContentView>
+            <Grid x:Name="mainContentView" BackgroundColor="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <StackLayout BackgroundColor="#1aa1d6" Orientation="Horizontal">
+                    <Button x:Name="hamburgerButton" HeightRequest="50" WidthRequest="50" HorizontalOptions="Start" FontSize="20" BackgroundColor="#1aa1d6" Clicked="hamburgerButton_Clicked"/>
+                    <Label x:Name="headerLabel" HeightRequest="50" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Home" FontSize="16" TextColor="White" BackgroundColor="#1aa1d6"/>
+                </StackLayout>
+                <Label Grid.Row="1" x:Name="contentLabel" VerticalOptions="Center" HorizontalOptions="Center" Text="Content View" FontSize="14" TextColor="Black"/>
+            </Grid>
+        </navigationdrawer:SfNavigationDrawer.ContentView>
+        <navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
+            <Grid BackgroundColor="#1aa1d6">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="120"/>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+                <Image Source="user.png" HeightRequest="110" Margin="0,10,0,0" BackgroundColor="#1aa1d6" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label Text="James Pollock" Grid.Row="1" HorizontalTextAlignment="Center" HorizontalOptions="Center" FontSize="20" TextColor="White"/>
+            </Grid>
+        </navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
+        <navigationdrawer:SfNavigationDrawer.DrawerContentView>
+            <ListView x:Name="listView" ItemSelected="listView_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout HeightRequest="40">
+                                <Label Margin="10,7,0,0" Text="{Binding}" FontSize="16"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </navigationdrawer:SfNavigationDrawer.DrawerContentView>
+    </navigationdrawer:SfNavigationDrawer>
+
+
 {% endhighlight %}
 
 {% highlight c# %}
-	
-SfNavigationDrawer navigationDrawer = new SfNavigationDrawer();
-			Button imageButton = new Button();
-			imageButton.Image = (FileImageSource)ImageSource.FromFile("_menu_.png");
-			imageButton.BackgroundColor = Color.Transparent;
-			imageButton.BorderColor = Color.Transparent;
-			imageButton.WidthRequest = 50;
 
-			Label homeLabel = new Label();
-			homeLabel.Text = "Home";
-			homeLabel.FontSize = 15;
-			homeLabel.TextColor = Color.White;
-			homeLabel.HorizontalOptions = LayoutOptions.FillAndExpand;
-			homeLabel.HorizontalTextAlignment = TextAlignment.Center;
-			homeLabel.VerticalTextAlignment = TextAlignment.Center;
+public MainPage()
 
-			StackLayout headerFrame = new StackLayout();
-			headerFrame.Padding = new Thickness(0, 0, 0, 0);
-			headerFrame.BackgroundColor = Color.FromHex("#1aa1d6");
-			headerFrame.Orientation = StackOrientation.Horizontal;
-			headerFrame.Children.Add(imageButton);
-			headerFrame.Children.Add(homeLabel);
+        {
+            InitializeComponent();
+            navigationDrawer.DrawerWidth = 200;
+            hamburgerButton.Image = (FileImageSource)ImageSource.FromFile("hamburgericon.png");
+            List<string> list = new List<string>();
+            list.Add("Home");
+            list.Add("Profile");
+            list.Add("Inbox");
+            list.Add("Outbox");
+            list.Add("Sent");
+            list.Add("Draft");
+            listView.ItemsSource = list;            
+        }
 
-			Label mainLabel = new Label();
-			mainLabel.FontSize = 14;
-			mainLabel.TextColor = Color.Black;
-			mainLabel.Text = "HomePage ContentView";
+        void hamburgerButton_Clicked(object sender, EventArgs e)
+        {
+            navigationDrawer.ToggleDrawer();
+        }
 
-			StackLayout ContentFrame = new StackLayout();
-			ContentFrame.Orientation = StackOrientation.Vertical;
-			ContentFrame.BackgroundColor = Color.White;
-			ContentFrame.Children.Add(headerFrame);
-			ContentFrame.Children.Add(mainLabel);
-			navigationDrawer.ContentView = ContentFrame;
+        private void listView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            if (e.SelectedItem.ToString() == "Home")
+                contentLabel.Text = "Home";
+            else if (e.SelectedItem.ToString() == "Profile")
+                contentLabel.Text = "Profile";
+            else if (e.SelectedItem.ToString() == "Inbox")
+                contentLabel.Text = "Inbox";
+            else if (e.SelectedItem.ToString() == "Outbox")
+                contentLabel.Text = "Outbox";
+            else if (e.SelectedItem.ToString() == "Sent")
+                contentLabel.Text = "Sent";
+            else if (e.SelectedItem.ToString() == "Draft")
+                contentLabel.Text = "The folder is empty";
+            navigationDrawer.ToggleDrawer();
+        }
+
   
 {% endhighlight %}
 
 {% endtabs %}
-	
-![](images/Content-View.png)

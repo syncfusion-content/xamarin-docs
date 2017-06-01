@@ -9,14 +9,14 @@ documentation: ug
 
 # Overview
 
-The SfNavigationDrawer is a sliding panel menu that comes out from the edge of the window and allows to have the contents in a hidden panel. It can be shown by swiping from any edges of the screen or by demand.
+Essential NavigationDrawer for Xamarin.Forms is a simpler component to create navigation pane in application. It has a content area and a sliding pane that slides out from the edge of the page. The pane can be opened by swiping the edges of the screen or programmatically.
 
 ![](images/Overview.png)
 
 ## Key Features
 
-* `Position` - Specifies various sliding positions of the drawer content in SfNavigationDrawer. 
+* Pane positions – Supports pane position in all four directions such as Left, Right, Top and Bottom. 
 
-* `Transition` - Specifies the transition type of the SfNavigationDrawer.
+* Animated transitions – Open/Close of supplemental pane is adorable due to these transitions SlideOnTop, Push and Reveal.
 
-
+* Changeable swipe sensitivity – Flexibile for the users to update touch threshold based on their device screen size.

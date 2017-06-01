@@ -11,7 +11,7 @@ documentation: ug
 
 Essential Sparkline for Xamarin.Forms is a very small chart, typically drawn without axes or coordinates. It presents the general shape of data’s in a simple and highly condensed way.
 
-![](Overview_image/Overview.png)
+![](Overview-image/Overview.png)
 
 ## Key features
 

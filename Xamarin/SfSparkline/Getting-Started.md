@@ -122,6 +122,6 @@ lineSparkline.SetBinding(SfSparklineBase.ItemsSourceProperty, "Data");
 
 {% endtabs %} 
 
-![](Getting-Started_image/LineSparkline.png)
+![](Getting-Started-image/LineSparkline.png)
 
 You can find the complete getting started sample from this [link.](http://files2.syncfusion.com/Xamarin.Forms/Samples/Sparkline_GettingStarted.zip)

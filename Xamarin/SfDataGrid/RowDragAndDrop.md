@@ -11,6 +11,8 @@ documentation: UG
 
 SfDataGrid allows you to drag and drop a row by setting the `SfDataGrid.AllowDraggingRow` property to `true`. A Customizable row drag and drop template is displayed  while dragging a row. The drag and drop operation can be handled based on the requirement using `SfDataGrid.QueryRowDragging` event. 
 
+N> Currently SfDataGrid have a support to drag the rows over mouse in UWP platform
+
 The following code example shows how to enable row drag and drop in SfDataGrid. 
 
 {% tabs %}

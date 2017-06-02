@@ -13,12 +13,11 @@ This section covers the features of SfCalendar specific to Android,iOS and UWP p
 
 <table>
 
-<tr style=>
-<th style="color: #ffffff;background-color: #08838C;" >Features are in SfCalendar</th>
-<th style="color: #ffffff;background-color: #08838C;" >Android</th>
-<th style="color: #ffffff;background-color: #08838C;" >iOS</th>
-<th style="color: #ffffff;background-color: #08838C;">UWP</th>
-<th style="color: #ffffff;background-color: #08838C;">Achieved By</th>
+<th style="color: #ffffff;background-color: #08838C;" align="center" >Features are in SfCalendar</th>
+<th style="color: #ffffff;background-color: #08838C;" align="center" >Android</th>
+<th style="color: #ffffff;background-color: #08838C;" align="center" >iOS</th>
+<th style="color: #ffffff;background-color: #08838C;" align="center" >UWP</th>
+<th style="color: #ffffff;background-color: #08838C;" align="center" >Achieved By</th>
 </tr>
 
 <tr style="background-color: #ffefd5;color: #000000;">
@@ -323,7 +322,7 @@ This section covers the features of SfCalendar specific to Android,iOS and UWP p
 </tr>
 
 <tr style="background-color: #ffefd5;color: #000000;">
-<td>Customization of MonthView </td>
+<td>Customization of Monthview </td>
 <td align="center">
 <p>Yes</p>
 </td>
@@ -339,7 +338,7 @@ This section covers the features of SfCalendar specific to Android,iOS and UWP p
 </tr>
 
 <tr>
-<td>Customization of YearView </td>
+<td>Customization of Yearview </td>
 <td align="center">
 <p>Yes</p>
 </td>
@@ -415,7 +414,7 @@ This section covers the features of SfCalendar specific to Android,iOS and UWP p
 <p align="center">Yes</p>
 <p align="left">Swiping of SfCalendar has been restricted only with RangeSelection.With that RangeSelection mode We can swipe the month by using navigation buttons</p>
 </td>
-<td >
+<td align="center">
 <p align="center">Yes</p>
 <p align="left">Swiping of SfCalendar has been restricted only with RangeSelection.With that RangeSelection mode We can swipe the month by using navigation buttons</p>
 </td>
@@ -432,12 +431,28 @@ This section covers the features of SfCalendar specific to Android,iOS and UWP p
 <td align="center">
 <p>Yes</p>
 </td>
-<td align="left">
+<td align="center">
 <p align="center">No</p>
-<p>With RangeSelection mode , automatically restrict the swiping action</p>
+<p align="left">With RangeSelection mode , automatically restrict the swiping action</p>
 </td>
 <td align="center">
 <p>EnableSwiping</p>
+</td>
+</tr>
+
+<tr>
+<td>Maximum number of Inline event count indication</td>
+<td align="center">
+<p>No</p>
+</td>
+<td align="center">
+<p>Yes</p>
+</td>
+<td align="center">
+<p>No</p>
+</td>
+<td align="center">
+<p>MaximumEventIndicatorCount</p>
 </td>
 </tr>
 

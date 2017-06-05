@@ -18,13 +18,13 @@ It can be enabled/disabled using `EnableSwipeGesture` property.
 
 {% highlight xaml %}
 
-<navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer" EnableSwipeGesture="True">
-	<navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
-		<Grid BackgroundColor="#1aa1d6" VerticalOptions="Center" HorizontalOptions="Center">
-			<Label Text="Header view" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center"/>
-		</Grid>
-	</navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
-</navigationdrawer:SfNavigationDrawer>
+	<navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer" EnableSwipeGesture="True">
+		<navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
+			<Grid BackgroundColor="#1aa1d6" VerticalOptions="Center" HorizontalOptions="Center">
+				<Label Text="Header view" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center"/>
+			</Grid>
+		</navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
+	</navigationdrawer:SfNavigationDrawer>
 
 {% endhighlight %}	
 	
@@ -44,13 +44,13 @@ In smaller screens user may find it difficult to swipe the drawer from the edge 
 
 {% highlight xaml %}
 
-<navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer" EnableSwipeGesture="True" TouchThreshold="70">
-	<navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
-		<Grid BackgroundColor="#1aa1d6" VerticalOptions="Center" HorizontalOptions="Center">
-			<Label Text="Header view" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center"/>
-		</Grid>
-	</navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
-</navigationdrawer:SfNavigationDrawer>
+	<navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer" EnableSwipeGesture="True" TouchThreshold="70">
+		<navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
+			<Grid BackgroundColor="#1aa1d6" VerticalOptions="Center" HorizontalOptions="Center">
+				<Label Text="Header view" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center"/>
+			</Grid>
+		</navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
+	</navigationdrawer:SfNavigationDrawer>
 
 {% endhighlight %}	
 	

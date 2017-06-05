@@ -23,13 +23,13 @@ Drawer can be toggled using
 
 {% highlight xaml %}
 
-<navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer" IsOpen="True">
-	<navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
-		<Grid BackgroundColor="#1aa1d6" VerticalOptions="Center" HorizontalOptions="Center">
-			<Label Text="Header view" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center"/>
-		</Grid>
-	</navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
-</navigationdrawer:SfNavigationDrawer>
+	<navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer" IsOpen="True">
+		<navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
+			<Grid BackgroundColor="#1aa1d6" VerticalOptions="Center" HorizontalOptions="Center">
+				<Label Text="Header view" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center"/>
+			</Grid>
+		</navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
+	</navigationdrawer:SfNavigationDrawer>
 
 {% endhighlight %}	
 	

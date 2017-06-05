@@ -27,18 +27,18 @@ The navigation pane overlays the main content area when opened. It can be set as
 {% highlight xaml %}
 
 	<navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer" Transition="SlideOnTop" DrawerHeaderHeight="50">
-	<navigationdrawer:SfNavigationDrawer.ContentView>
-	<StackLayout>
-	<Grid HeightRequest="50" VerticalOptions="Start" BackgroundColor="#1aa1d6">
-	<Button x:Name="hamburgerButton" HeightRequest="50" WidthRequest="50" HorizontalOptions="Start" FontSize="20" BackgroundColor="#1aa1d6" Clicked="hamburgerButton_Clicked"/>
-	</Grid>
-	</StackLayout>
-	</navigationdrawer:SfNavigationDrawer.ContentView>
-	<navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
-	<Grid BackgroundColor="#1aa1d6" VerticalOptions="Center" HorizontalOptions="Center">
-	<Label Text="Header view" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center"/>
-	</Grid>
-	</navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
+		<navigationdrawer:SfNavigationDrawer.ContentView>
+			<StackLayout>
+				<Grid HeightRequest="50" VerticalOptions="Start" BackgroundColor="#1aa1d6">
+					<Button x:Name="hamburgerButton" HeightRequest="50" WidthRequest="50" HorizontalOptions="Start" FontSize="20" BackgroundColor="#1aa1d6" Clicked="hamburgerButton_Clicked"/>
+				</Grid>
+			</StackLayout>
+		</navigationdrawer:SfNavigationDrawer.ContentView>
+		<navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
+			<Grid BackgroundColor="#1aa1d6" VerticalOptions="Center" HorizontalOptions="Center">
+				<Label Text="Header view" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center"/>
+			</Grid>
+		</navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
 	</navigationdrawer:SfNavigationDrawer>
 	
 {% endhighlight %}	
@@ -75,18 +75,18 @@ The navigation pane is hidden. It pushes the main content area in opposite side 
 {% highlight xaml %}
 
 	<navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer" Transition="Push" DrawerHeaderHeight="50">
-	<navigationdrawer:SfNavigationDrawer.ContentView>
-	<StackLayout>
-	<Grid HeightRequest="50" VerticalOptions="Start" BackgroundColor="#1aa1d6">
-	<Button x:Name="hamburgerButton" HeightRequest="50" WidthRequest="50" HorizontalOptions="Start" FontSize="20" BackgroundColor="#1aa1d6" Clicked="hamburgerButton_Clicked"/>
-	</Grid>
-	</StackLayout>
-	</navigationdrawer:SfNavigationDrawer.ContentView>
-	<navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
-	<Grid BackgroundColor="#1aa1d6" VerticalOptions="Center" HorizontalOptions="Center">
-	<Label Text="Header view" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center"/>
-	</Grid>
-	</navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
+		<navigationdrawer:SfNavigationDrawer.ContentView>
+			<StackLayout>
+				<Grid HeightRequest="50" VerticalOptions="Start" BackgroundColor="#1aa1d6">
+					<Button x:Name="hamburgerButton" HeightRequest="50" WidthRequest="50" HorizontalOptions="Start" FontSize="20" BackgroundColor="#1aa1d6" Clicked="hamburgerButton_Clicked"/>
+				</Grid>
+			</StackLayout>
+		</navigationdrawer:SfNavigationDrawer.ContentView>
+		<navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
+			<Grid BackgroundColor="#1aa1d6" VerticalOptions="Center" HorizontalOptions="Center">
+				<Label Text="Header view" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center"/>
+			</Grid>
+		</navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
 	</navigationdrawer:SfNavigationDrawer>
 
 {% endhighlight %}
@@ -122,18 +122,18 @@ The navigation pane is hidden behind the main content. Main content moves away i
 {% highlight xaml %}
 
 	<navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer" Transition="Reveal" DrawerHeaderHeight="50">
-	<navigationdrawer:SfNavigationDrawer.ContentView>
-	<StackLayout>
-	<Grid HeightRequest="50" VerticalOptions="Start" BackgroundColor="#1aa1d6">
-	<Button x:Name="hamburgerButton" HeightRequest="50" WidthRequest="50" HorizontalOptions="Start" FontSize="20" BackgroundColor="#1aa1d6" Clicked="hamburgerButton_Clicked"/>
-	</Grid>
-	</StackLayout>
-	</navigationdrawer:SfNavigationDrawer.ContentView>
-	<navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
-	<Grid BackgroundColor="#1aa1d6" VerticalOptions="Center" HorizontalOptions="Center">
-	<Label Text="Header view" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center"/>
-	</Grid>
-	</navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
+		<navigationdrawer:SfNavigationDrawer.ContentView>
+			<StackLayout>
+				<Grid HeightRequest="50" VerticalOptions="Start" BackgroundColor="#1aa1d6">
+					<Button x:Name="hamburgerButton" HeightRequest="50" WidthRequest="50" HorizontalOptions="Start" FontSize="20" BackgroundColor="#1aa1d6" Clicked="hamburgerButton_Clicked"/>
+				</Grid>
+			</StackLayout>
+		</navigationdrawer:SfNavigationDrawer.ContentView>
+		<navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
+			<Grid BackgroundColor="#1aa1d6" VerticalOptions="Center" HorizontalOptions="Center">
+				<Label Text="Header view" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center"/>
+			</Grid>
+		</navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
 	</navigationdrawer:SfNavigationDrawer>
 	
 {% endhighlight %}	

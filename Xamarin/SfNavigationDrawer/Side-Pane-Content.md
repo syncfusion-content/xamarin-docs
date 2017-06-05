@@ -102,7 +102,7 @@ public MainPage()
 
         {
             InitializeComponent();
-           navigationDrawer.DrawerWidth = 200;
+            navigationDrawer.DrawerWidth = 200;
             hamburgerButton.Image = (FileImageSource)ImageSource.FromFile("hamburgericon.png");
         }
 
@@ -150,7 +150,7 @@ public MainPage()
 
         {
             InitializeComponent();
-           navigationDrawer.DrawerWidth = 200;
+            navigationDrawer.DrawerWidth = 200;
             hamburgerButton.Image = (FileImageSource)ImageSource.FromFile("hamburgericon.png");
         }
 

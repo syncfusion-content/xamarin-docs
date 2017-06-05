@@ -18,11 +18,11 @@ The size of side pane can be adjusted using `DrawerHeight` and `DrawerWidth` pro
 
 {% highlight xaml %}
 
-<navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer" DrawerHeight="40" Position=”Top”>       
+    <navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer" DrawerHeight="40" Position=”Top”>       
         <navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
             <Label Text="This is a very short content used to demonstrate the DrawerHeight property "/>            
         </navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
-</navigationdrawer:SfNavigationDrawer>
+    </navigationdrawer:SfNavigationDrawer>
 	
 {% endhighlight %}	
 	
@@ -59,11 +59,11 @@ Content = navigationDrawer;
 
 {% highlight xaml %}
 
-<navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer" DrawerWidth="200" Position=”Left”>       
-	<navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
-		<Label Text="This is a very long text used to demonstrate the DrawerWidth property"/>            
-	</navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
-</navigationdrawer:SfNavigationDrawer>
+    <navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer" DrawerWidth="200" Position=”Left”>       
+	    <navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
+	    	<Label Text="This is a very long text used to demonstrate the DrawerWidth property"/>            
+	    </navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
+    </navigationdrawer:SfNavigationDrawer>
 	
 {% endhighlight %}	
 	

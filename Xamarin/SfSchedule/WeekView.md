@@ -129,7 +129,7 @@ Working hours in `WeekView` of Schedule control will be differentiated with non-
 You can customize the appearance of timeslots in `WeekView`.
 
  * [Timeslot customization in Work hours](#timeslot-customization-in-work-hours)
- * [Timeslot customization in Non-Working hours](timeslot-customization-in-non-working-hours)
+* [Timeslot customization in Non Working hours](#timeslot-customization-in-non-working-hours)
 
 ### Timeslot customization in Work hours
 

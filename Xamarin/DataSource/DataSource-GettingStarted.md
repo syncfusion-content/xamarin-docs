@@ -120,7 +120,7 @@ public class ContactsList : ObservableCollection<Contacts>, INotifyPropertyChang
 {% endhighlight %}
 {% endtabs %}
 
-* You can set the source of the DataSource by using the [DataSource.Source](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~Source.html) property as follows. Now you can bind the [DataSource.DisplayItems](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~DisplayItems.html) as `ItemsSource` for any data bound control.
+* You can set the source of the DataSource by using the [DataSource.Source](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~Source.html) property as follows. Now you can bind the [DataSource.DisplayItems](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~DisplayItems.html) to any data bound control.
 
 {% tabs %}
 {% highlight c# %}

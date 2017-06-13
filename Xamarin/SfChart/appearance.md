@@ -157,7 +157,7 @@ Following code illustrates how to set the custom colors.
 <chart:SfChart>
     ...
     <chart:SfChart.Series>
-        <chart:ColumnSeries Label="Heights" ItemsSource="{Binding Data}" XBindingPath="Name" YBindingPath="Height">
+        <chart:ColumnSeries ItemsSource="{Binding Data}" XBindingPath="Name" YBindingPath="Height">
             <chart:ColumnSeries.ColorModel>
                 <chart:ChartColorModel Palette="Custom" CustomBrushes="{StaticResource Colors}"/>
             </chart:ColumnSeries.ColorModel>

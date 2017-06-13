@@ -167,9 +167,9 @@ if (e.Column.MappingName == "OrderID") {
 {% endtabs %}
 
 ### IsHidden 
-SfDatagrid allows you to hide the particular column using [GridColumn.IsHidden](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~IsHidden.html) property. You can set the IsHidden property as `True` instead of setting column width as  `0`. The default value of the IsHidden property is `False`. 
+SfDatagrid allows you to hide the particular column using [GridColumn.IsHidden](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~IsHidden.html) property. You can set the `IsHidden` property as `True` instead of setting column width as  `0`. The default value of the IsHidden property is `False`. 
 
-The following code example shows you how to set the Hidden property.
+The following code example shows you how to hide the column using IsHidden property.
 {% tabs %}
 {% highlight xaml %}    
     <syncfusion:GridTextColumn MappingName="OrderID" IsHidden="True"/>

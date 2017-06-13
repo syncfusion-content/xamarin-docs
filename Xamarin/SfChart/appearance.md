@@ -21,7 +21,7 @@ Currently, Chart supports only Metro palette and it is the default palette for S
 
 **Custom Palette**
 
-Chart will use the colors from [`CustomBrushes`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorModel~CustomBrushes.html) property if [`ColorModel.Palette`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorModel~Palette.html) is set to [`Custom`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorPalette.html). You can add the custom colors to [`ChartColorCollection`].
+Chart will use the colors from [`CustomBrushes`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorModel~CustomBrushes.html) property if [`ColorModel.Palette`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorModel~Palette.html) is set to [`Custom`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorPalette.html).
 
 Following code illustrates how to set the custom colors.
 
@@ -134,7 +134,7 @@ chart.Series.Add(columnSeries);
 
 **Custom Palette**
 
-Series will use the colors from `CustomBrushes` property if the `ColorModel.Palette` property of series is set to `Custom`. You can add the custom colors to [`ChartColorCollection`].
+Series will use the colors from `CustomBrushes` property if the `ColorModel.Palette` property of series is set to `Custom`.
 
 Following code illustrates how to set the custom colors.
 

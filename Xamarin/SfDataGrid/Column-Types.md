@@ -166,6 +166,19 @@ if (e.Column.MappingName == "OrderID") {
 {% endhighlight %}
 {% endtabs %}
 
+### IsHidden 
+SfDatagrid allows you to hide the particular column using [GridColumn.IsHidden](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~IsHidden.html) property. You can set the IsHidden property as `True` instead of setting column width as  `0`. The default value of the IsHidden property is `False`. 
+
+The following code example shows you how to set the Hidden property.
+{% tabs %}
+{% highlight xaml %}    
+    <syncfusion:GridTextColumn MappingName="OrderID" IsHidden="True"/>
+{% endhighlight %}
+{% highlight c# %}
+dataGrid.Columns.Add(new GridTextColumn() { MappingName = "OrderID", IsHidden = true});
+{% endhighlight %}
+{% endtabs %}
+
 ## GridTextColumn
 
 GridTextColumn is derived from GridColumn and hence it inherits all the properties of GridColumn. It is used to host the textual content in the record cells. Each of the record cells in GridTextColumn displays the text based on the `MappingName` that associates the column with a property in the data source.

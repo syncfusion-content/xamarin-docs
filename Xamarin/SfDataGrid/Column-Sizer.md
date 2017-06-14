@@ -95,7 +95,9 @@ N> If any column is specified a width explicitly using the [GridColumn.Width](ht
 
 ### Apply ColumnSizer for a particular column
 
-You can apply ColumnSizer to individual columns using the [GridColumn.ColumnSizer]() property. The `GridColumn.ColumnSizer` property takes the same values as the `SfDataGrid.ColumnSizer` and applies width to that particular column based on the ColumnSizer value. The following code example illustrates how to apply `ColumnSizer` for a particular column.
+SfDataGrid allows you to setting the ColumnSizer for particular columns using the [GridColumn.ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~DefaultColumnWidth.html) property. 
+
+The following code example illustrates how to apply `ColumnSizer` for a particular column.
 
 {% tabs %}
 {% highlight xaml %}

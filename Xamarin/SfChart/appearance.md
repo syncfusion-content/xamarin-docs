@@ -29,38 +29,46 @@ Following code illustrates how to set the custom colors.
 
 {% highlight xaml %}
 
-<chart:SfChart HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+<ContentPage.Resources>
+    <ResourceDictionary>
+        <chart:ChartColorCollection x:Key="Colors">
+            <Color>Red</Color>
+            <Color>Gray</Color>
+            <Color>Blue</Color>
+            <Color>Maroon</Color>
+            <Color>Pink</Color>
+        </chart:ChartColorCollection>
+    </ResourceDictionary>
+</ContentPage.Resources>
 
-	<chart:SfChart.ColorModel>
+<chart:SfChart>
+    <chart:SfChart.ColorModel>
+        <chart:ChartColorModel Palette="Custom" CustomBrushes="{StaticResource Colors}"/>
+    </chart:SfChart.ColorModel>
 
-		<chart:ChartColorModel Palette="Custom" CustomBrushes="{Binding Colors}"/>
-
-	</chart:SfChart.ColorModel>
-
-...
-
+    ...
 </chart:SfChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfChart sfChart = new SfChart();
-...
-
-List<Color> colors = new List<Color>(){
-
-	Color.Yellow,
-
-	Color.Silver,
-
-	Color.Maroon,                             
-
-};
-
-sfChart.ColorModel.Palette = ChartColorPalette.Custom;
-
-sfChart.ColorModel.CustomBrushes = colors; 
+SfChart chart = new SfChart()
+{
+     ColorModel = new ChartColorModel()
+     {
+         Palette = ChartColorPalette.Custom,
+         CustomBrushes = new ChartColorCollection()
+         {
+             Color.Red,
+             Color.Gray,
+             Color.Blue,
+             Color.Maroon,
+             Color.Pink,
+         }
+     },
+	 ...
+}; 
 
 {% endhighlight %}
 
@@ -134,51 +142,58 @@ Following code illustrates how to set the custom colors.
 
 {% highlight xaml %}
 
+<ContentPage.Resources>
+    <ResourceDictionary>
+        <chart:ChartColorCollection x:Key="Colors">
+             <Color>Red</Color>
+             <Color>Gray</Color>
+             <Color>Blue</Color>
+             <Color>Maroon</Color>
+             <Color>Pink</Color>
+        </chart:ChartColorCollection>
+    </ResourceDictionary>
+</ContentPage.Resources>
+
 <chart:SfChart>
-...
-
-	<chart:ColumnSeries ItemsSource ="{Binding Data}" XBindingPath="Country" YBindingPath="Value">
-
-		<chart:ColumnSeries.ColorModel>
-
-			<chart:ChartColorModel Palette="Custom" CustomBrushes="{Binding Colors}"/>
-
-		</chart:ColumnSeries.ColorModel>
-
-	</chart:ColumnSeries>
-
+    ...
+    <chart:SfChart.Series>
+        <chart:ColumnSeries ItemsSource="{Binding Data}" XBindingPath="Name" YBindingPath="Height">
+            <chart:ColumnSeries.ColorModel>
+                <chart:ChartColorModel Palette="Custom" CustomBrushes="{StaticResource Colors}"/>
+            </chart:ColumnSeries.ColorModel>
+        </chart:ColumnSeries>
+    </chart:SfChart.Series>
 </chart:SfChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfChart chart = new SfChart();
-...
-
-ColumnSeries columnSeries = new ColumnSeries() { 
-
-	ItemsSource = Data, 
-	XBindingPath = "Country", 
-	YBindingPath = "Value" 
-
+SfChart chart = new SfChart()
+{
+    ...
+    Series =
+    {
+       new ColumnSeries()
+       {
+             ItemsSource = viewModel.Data,
+             XBindingPath = "Name",
+             YBindingPath = "Height",
+             ColorModel = new ChartColorModel()
+             {
+                 Palette = ChartColorPalette.Custom,
+                 CustomBrushes = new ChartColorCollection()
+                 {
+                    Color.Red,
+                    Color.Gray,
+                    Color.Blue,
+                    Color.Maroon,
+                    Color.Pink,
+                 }
+             }
+        }
+    }
 };
-
-List<Color> colors = new List<Color>(){
-
-	Color.Red,
-	Color.Gray,
-	Color.Blue,
-	Color.Maroon,
-	Color.Pink,               
-
-};
-
-columnSeries.ColorModel.Palette = ChartColorPalette.Custom;
-
-columnSeries.ColorModel.CustomBrushes = colors;
-
-chart.Series.Add(columnSeries);
 
 {% endhighlight %}
 

@@ -13,6 +13,8 @@ SfListView lets you enable the swiping option by setting the [AllowSwiping](http
 
 It provides customizable swipe templates for swiping on the left and right side. You can restrict the layout of swipe view up to a certain position while swiping the item by setting the [SwipeThreshold](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SwipeThreshold.html) property. You can set the size of the swipe views by setting the [SwipeOffset](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SwipeOffset.html) property. 
 
+N> Swipe Template is mandatory to perform swiping in SfListView.
+
 ## Defining the Swipe Template
 
 SfListView enables you to load a desired content using the [LeftSwipeTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LeftSwipeTemplate.html) when swiping towards right. The template can be defined either in code or XAML. The contents inside the swipe template are arranged based on the offset values when you swipe an item. You can reset the swiping item or swiped item by calling the [ResetSwipe](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ResetSwipe.html) method.
@@ -168,6 +170,10 @@ By handling the swipe events, you can make use of these property values from the
 
 The following customizations should give you an idea on how to use the swiping event in SfListView.
 
+### Defining DataTemplateSelector
+
+You can customize the appearence of each swipe item with different templates based on specific constraints using [DataTemplateSelector](https://developer.xamarin.com/api/type/Xamarin.Forms.DataTemplateSelector/).
+
 ### Multiple Views
 
 You can use the swipe templates to customize your application by loading any view in the templates and assigning custom actions to them such as deleting the data, adding the data, etc. You can also display multiple views in a template like in the following example where two views are loaded for deleting the item and setting the favorites to the item respectively.
@@ -306,5 +312,7 @@ private void ListView_SwipeEnded(object sender, SwipeEndedEventArgs e)
 }
 
 {% endhighlight %}
+
+The following screenshot shows the output rendered when `RightSwipeTemplate` is applied. You can download the entire source code of this demo from [here](https://files2.syncfusion.com/Xamarin.Forms/Samples/Swiping.zip). 
 
 ![](SfListView_images/SfListView-Swiping--2.png)

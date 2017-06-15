@@ -47,7 +47,7 @@ Following code illustrates how to set the custom colors.
     </chart:SfChart.ColorModel>
 
     ...
-<chart:SfChart>
+</chart:SfChart>
 
 {% endhighlight %}
 

@@ -213,13 +213,13 @@ void excelExport_RowExporting (object sender, DataGridRowExcelExportingEvent
 {
     if (e.RowType == ExportRowType.Record) {
         if ((e.Record.Data as OrderInfo).IsClosed)
-            e.Range.CellStyle.FillBackground = Syncfusion.XlsIO.ExcelKnownColors.Yellow;
+            e.Range.CellStyle.ColorIndex = Syncfusion.XlsIO.ExcelKnownColors.Yellow;
         else
-            e.Range.CellStyle.FillBackground = Syncfusion.XlsIO.ExcelKnownColors.LightGreen;
+            e.Range.CellStyle.ColorIndex = Syncfusion.XlsIO.ExcelKnownColors.LightGreen;
     }
 
     if (e.RowType == ExportRowType.CaptionSummary) {
-        e.Range.CellStyle.FillBackground = Syncfusion.XlsIO.ExcelKnownColors.Grey_25_percent;
+        e.Range.CellStyle.ColorIndex = Syncfusion.XlsIO.ExcelKnownColors.Grey_25_percent;
     }
 }
 {% endhighlight %}
@@ -247,21 +247,21 @@ excelExport.CellExporting += excelExport_CellExporting;
 void excelExport_CellExporting(object sender, DataGridCellExcelExportingEventArgs e)
 {
     if (e.CellType == ExportCellType.HeaderCell) {
-        e.Range.CellStyle.FillBackground = Syncfusion.XlsIO.ExcelKnownColors.Blue;
-        e.Range.CellStyle.FillForeground = Syncfusion.XlsIO.ExcelKnownColors.White;
+        e.Range.CellStyle.ColorIndex = Syncfusion.XlsIO.ExcelKnownColors.Blue;
+        e.Range.CellStyle.PatternColorIndex = Syncfusion.XlsIO.ExcelKnownColors.White;
         e.CellValue = "HeaderCell";
     }
 
     if (e.CellType == ExportCellType.RecordCell) {
-        e.Range.CellStyle.FillBackground = Syncfusion.XlsIO.ExcelKnownColors.Yellow;
-        e.Range.CellStyle.FillForeground = Syncfusion.XlsIO.ExcelKnownColors.Black;
+        e.Range.CellStyle.ColorIndex = Syncfusion.XlsIO.ExcelKnownColors.Yellow;
+        e.Range.CellStyle.PatternColorIndex = Syncfusion.XlsIO.ExcelKnownColors.Black;
         if (e.CellValue is string)
             e.CellValue = "RecordCell";
     }
 
     if (e.CellType == ExportCellType.GroupCaptionCell) {
-        e.Range.CellStyle.FillBackground = Syncfusion.XlsIO.ExcelKnownColors.Grey_25_percent;
-        e.Range.CellStyle.FillForeground = Syncfusion.XlsIO.ExcelKnownColors.Blue;
+        e.Range.CellStyle.ColorIndex = Syncfusion.XlsIO.ExcelKnownColors.Grey_25_percent;
+        e.Range.CellStyle.PatternColorIndex = Syncfusion.XlsIO.ExcelKnownColors.Blue;
         e.CellValue = "CaptionSummary";
     }
 }

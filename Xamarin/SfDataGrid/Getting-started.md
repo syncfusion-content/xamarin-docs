@@ -159,7 +159,7 @@ Create a new BlankApp (Xamarin.Forms.Portable) application in Xamarin Studio o
 
 1. Add the required assembly references to the pcl and renderer projects as discussed in the [Assembly deployment](#assembly-deployment) section.
 
-2. Import SfDataGrid control namespace Syncfusion.SfDataGrid.XForms.
+2. Import SfDataGrid control namespace as `xmlns:syncfusion="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms` in Xaml Page.
 
 3. Set the SfDataGrid control as content to the ContentPage.
 
@@ -430,27 +430,70 @@ You can handle the selection operations with the help of [SelectionChanging](htt
 
 ## Launching the SfDataGrid inside a StackLayout
 
-The StackLayout positions the child element one after the other, either horizontally or vertically in the order they were added. How much space the StackLayout will use depends on how the HorizontalOptions and VerticalOptions properties are set, but by default the StackLayout will try to use the entire screen.
+1. The StackLayout positions the child element one after the other, either horizontally or vertically in the order they were added.
+2. How much space the StackLayout will use depends on how the HorizontalOptions and VerticalOptions properties are set, but by default the StackLayout will try to use the entire screen.
+3. SfDataGrid control can be loaded inside any layout such as GridLayout, StackLayout etc. 
+4. When you load SfDataGrid inside a StackLayout, you have to set the Horizontal and/or VerticalOptions of the SfDataGrid and its parent to “LayoutOptions.FillAndExpand” based on the orientation of the container in which SfDataGrid is loaded.
+5. The VerticalOptions of the StackLayout and SfDataGrid alone is set as “FillAndExpand” as the default orientation of the StackLayout is vertical
+6. In case, if the orientation of the StackLayout is horizontal, then you have to set the HorizontalOptions instead.
+7. In some case, you may have to set both the “VerticalOptions” and “HorizontalOptions” of the SfDataGrid based on its parent.
 
-SfDataGrid control can be loaded inside any layout such as GridLayout, StackLayout etc. When you load SfDataGrid inside a StackLayout, you have to set the Horizontal and/or VerticalOptions of the SfDataGrid and its parent to “LayoutOptions.FillAndExpand” based on the orientation of the container in which SfDataGrid is loaded.
+Refer the following code example to load the SfDataGrid control inside a StackLayout.
 
-Refer the following code example to load the SfDataGrid control inside a StackLayout. The VerticalOptions of the StackLayout and SfDataGrid alone is set as “FillAndExpand” as the default orientation of the StackLayout is vertical. In case, if the orientation of the StackLayout is horizontal, then you have to set the HorizontalOptions instead. In some case, you may have to set both the “VerticalOptions” and “HorizontalOptions” of the SfDataGrid based on its parent.
-
+{% tabs %}
 {% highlight xaml %}
-<StackLayout VerticalOptions="FillAndExpand">
-    <SearchBar Placeholder="UserName" TextChanged="searchBar_TextChanged" />
-    <sfgrid:SfDataGrid x:Name="dataGrid"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GridInForms"
+             xmlns:sfgrid="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms"
+             x:Class="GridInForms.MainPage">
+  <ContentPage.BindingContext>
+    <local:ViewModel x:Name="viewModel"/>
+  </ContentPage.BindingContext>
+  <ContentPage.Content>
+    <StackLayout VerticalOptions="FillAndExpand">
+        <SearchBar Placeholder="UserName" TextChanged="searchBar_TextChanged" />
+        <sfgrid:SfDataGrid x:Name="dataGrid"
                        ColumnSizer="Star"
                        ItemsSource="{Binding OrderInfoCollection}"
                        VerticalOptions="FillAndExpand" />
-</StackLayout>
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>
 {% endhighlight %}
-
+{% highlight c# %}
+namespace GettingStarted
+{
+    public partial class MainPage : ContentPage
+    {
+        private StackLayout stackLayout;
+        private SfDataGrid dataGrid;
+        private ViewModel viewModel;
+        private SearchBar seacrchBar;
+        public MainPage()
+        {
+            InitializeComponent();
+            stackLayout = new StackLayout();
+            dataGrid = new SfDataGrid();
+            viewModel = new ViewModel();
+            seacrchBar = new SearchBar();
+            seacrchBar.Placeholder = "UserName";
+            dataGrid.ItemsSource = viewModel.OrdersInfo;
+            dataGrid.ColumnSizer = ColumnSizer.Star;
+            stackLayout.VerticalOptions = LayoutOptions.FillAndExpand;
+            stackLayout.HorizontalOptions = LayoutOptions.FillAndExpand;
+            stackLayout.Children.Add(seacrchBar);
+            stackLayout.Children.Add(dataGrid);
+            this.Content = stackLayout;
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
 
 Refer the following screenshot for the final outcome 
 
 ![](SfDataGrid_images/SfDataGrid-in-StackLayout.jpeg)
-
 
 ## Linker issue in Xamarin.Forms.iOS
 

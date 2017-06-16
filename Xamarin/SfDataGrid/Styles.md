@@ -114,17 +114,32 @@ The following picture shows the grid loaded in a different style.
 
 ![](SfDataGrid_images/AlternatingStyle1.png)
 
+N> XamarinForms styles which have specified target type will not be applied in the internal components which is used under SfDataGrid.
+
 ## Border Customization
 
 * SfDatagrid allows you to customize the grid borders to vertical, horizontal or both based on requirements. you have override the `DataGridStyle.GetGridLinesVisibility`
 method. 
 
 {% highlight c# %}
-public virtual GridLinesVisibility GetGridLinesVisibility()
-{
-    return GridLinesVisibility;
-} 
+//Apply custom style to SfDataGrid from code
+dataGrid.GridStyle = new CustomStyle ();
 {% endhighlight %}
+
+{% highlight c# %}
+//Custom Style class
+public class CustomStyle : DataGridStyle
+{
+    public CustomStyle ()
+    {
+    }
+    public virtual GridLinesVisibility GetGridLinesVisibility()
+    {
+        return GridLinesVisibility;
+    } 
+}
+{% endhighlight %}
+
 Following are the lists of options available to customize the grid borders.
 
 * Both
@@ -135,18 +150,42 @@ Following are the lists of options available to customize the grid borders.
 ### Both
 
 *  `GridLinesVisibility.Both` allows you to display the DataGrid with both Horizontal and Vertical borders.
+{% highlight c# %}
+public virtual GridLinesVisibility GetGridLinesVisibility()
+{
+    return GridLinesVisibility.Both;
+} 
+{% endhighlight %}
 
 ### Horizontal
 
 * `GridLinesVisibility.Horizontal` allows you to display the DataGrid with Horizontal border only
+{% highlight c# %}
+public virtual GridLinesVisibility GetGridLinesVisibility()
+{
+    return GridLinesVisibility.Horizontal;
+} 
+{% endhighlight %}
 
 ### Vertical
 
 * `GridLinesVisibility.Vertical` allows you to display the DataGrid with Vertical border only
+{% highlight c# %}
+public virtual GridLinesVisibility GetGridLinesVisibility()
+{
+    return GridLinesVisibility.Vertical;
+} 
+{% endhighlight %}
 
 ### None
 
 * `GridLinesVisibility.None` allows you to display the DataGrid without borders
+{% highlight c# %}
+public virtual GridLinesVisibility GetGridLinesVisibility()
+{
+    return GridLinesVisibility.None;
+} 
+{% endhighlight %}
 
 ## How to
 

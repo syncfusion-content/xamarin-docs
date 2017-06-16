@@ -89,3 +89,26 @@ private void DataGrid_QueryRowHeight (object sender, QueryRowHeightEventArgs
 
 ![](SfDataGrid_images/AutoRowHeight_forms.png)
 
+## How to ?
+
+### Optimize performance when using QueryRowHeight event
+
+By default the `SfDataGrid.QueryRowHeight` event will be fired each time a row comes into the view. If you want to prevent the same row from being queried again, you can check if the `Height` property in the `QueryRowHeightEventArgs` is not equal to the `SfDataGrid.RowHeight` property which prevents from proceeding further. The following code example illustrates how to enhance the performance by preventing the the same row from being queryied again. 
+
+{% highlight c# %}
+//Hooks QueryRowHeight event in SfDataGrid to set the row height on demand
+dataGrid.QueryRowHeight += DataGrid_QueryRowHeight;
+
+private void DataGrid_QueryRowHeight (object sender, QueryRowHeightEventArgs e)
+{
+    // Code to skip querying of a row if already queried
+    if (e.Height != dataGrid.RowHeight)
+        return;
+    if (e.RowIndex != 0) 
+    {
+        //Calculates and sets the height of the row based on its content.
+        e.Height = dataGrid.GetRowHeight(e.RowIndex);
+        e.Handled = true;
+    }
+} 
+{% endhighlight %}

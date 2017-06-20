@@ -493,7 +493,7 @@ namespace GettingStarted
 
 Refer the following screenshot for the final outcome 
 
-![](SfDataGrid_images/SfDataGrid-in-StackLayout.jpeg)
+![](SfDataGrid_images/GridInStackLayout.png)
 
 ## Linker issue in Xamarin.Forms.iOS
 

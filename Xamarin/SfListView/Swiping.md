@@ -215,6 +215,10 @@ You can use the swipe templates to customize your application by loading any vie
 </syncfusion:SfListView>
 {% endhighlight %}
 
+The following screenshot shows the output rendered when multiple views are added in swipe templates.
+
+![](SfListView_images/SfListView-Swiping--3.png)
+
 The following code snippet illustrates how to delete the item when `Delete` image is tapped and setting favorites to item when `Favorites` image is tapped.
 
 {% highlight c# %}

@@ -430,15 +430,11 @@ You can handle the selection operations with the help of [SelectionChanging](htt
 
 ## Launching the SfDataGrid inside a StackLayout
 
-1. The StackLayout positions the child element one after the other, either horizontally or vertically in the order they were added.
-2. How much space the StackLayout will use depends on how the HorizontalOptions and VerticalOptions properties are set, but by default the StackLayout will try to use the entire screen.
-3. SfDataGrid control can be loaded inside any layout such as GridLayout, StackLayout etc. 
-4. When you load SfDataGrid inside a StackLayout, you have to set the Horizontal and/or VerticalOptions of the SfDataGrid and its parent to “LayoutOptions.FillAndExpand” based on the orientation of the container in which SfDataGrid is loaded.
-5. The VerticalOptions of the StackLayout and SfDataGrid alone is set as “FillAndExpand” as the default orientation of the StackLayout is vertical
-6. In case, if the orientation of the StackLayout is horizontal, then you have to set the HorizontalOptions instead.
-7. In some case, you may have to set both the “VerticalOptions” and “HorizontalOptions” of the SfDataGrid based on its parent.
+The StackLayout positions the child element one after the other, either horizontally or vertically in the order they were added. How much space the StackLayout will use depends on how the HorizontalOptions and VerticalOptions properties are set, but by default the StackLayout will try to use the entire screen.
 
-Refer the following code example to load the SfDataGrid control inside a StackLayout.
+SfDataGrid control can be loaded inside any layout such as GridLayout, StackLayout etc. When you load SfDataGrid inside a StackLayout, you have to set the Horizontal and/or VerticalOptions of the SfDataGrid and its parent to “LayoutOptions.FillAndExpand” based on the orientation of the container in which SfDataGrid is loaded.
+
+Refer the following code example to load the SfDataGrid control inside a StackLayout. The VerticalOptions of the StackLayout and SfDataGrid alone is set as “FillAndExpand” as the default orientation of the StackLayout is vertical
 
 {% tabs %}
 {% highlight xaml %}
@@ -494,6 +490,8 @@ namespace GettingStarted
 Refer the following screenshot for the final outcome 
 
 ![](SfDataGrid_images/GridInStackLayout.png)
+
+N> In case, if the orientation of the StackLayout is horizontal, then you have to set the HorizontalOptions instead. In some case, you may have to set both the “VerticalOptions” and “HorizontalOptions” of the SfDataGrid based on its parent.
 
 ## Linker issue in Xamarin.Forms.iOS
 

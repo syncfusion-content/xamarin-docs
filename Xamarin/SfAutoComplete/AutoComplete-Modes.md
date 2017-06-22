@@ -83,7 +83,7 @@ autoComplete.AutoCompleteMode = AutoCompleteMode.Append;
 
 ## Suggesting Choices and Appending Suggestions to Text
 
-The text is appended with the first matched item in the suggestions collection and filtered suggestions are displayed in a drop down list. User can pick from list directly or use up and down keys for browsing the list.
+The text is appended to the first matched item in the suggestions collection and filtered suggestions are displayed in a drop down list. The user can pick from a list directly or use up and down keys for browsing the list.
 	
 {% tabs %}	
 

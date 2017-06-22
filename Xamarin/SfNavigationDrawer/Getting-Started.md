@@ -212,6 +212,8 @@ public MainPage()
 
 N> Add the required images in drawable folder of Android project, Assets folder of iOS project and add it directly to the UWP project.
 
+![](Images/HamburgerIcon.png)
+
 
 ## Set ListView as Drawer Content
 
@@ -296,3 +298,5 @@ public MainPage()
 {% endhighlight %}
 
 {% endtabs %}
+
+![](Images/GettingStarted.png)

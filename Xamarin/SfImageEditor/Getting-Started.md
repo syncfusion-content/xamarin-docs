@@ -42,7 +42,7 @@ Import the SfImageEditor namespace as shown below in your resceptive page,
 
 {% endtabs %}
 
-1. Initialize an image editor as shown below,
+* Initialize an image editor as shown below,
 
 {% tabs %}
 
@@ -63,7 +63,7 @@ Import the SfImageEditor namespace as shown below in your resceptive page,
 
 {% endtabs %}
 
-2. Load an image to the image editor as bitmap object for Android.Since SfImageEditor supports bitmap images in Android. you can load the image to the control as a bitmap object only in Android.
+* Load an image to the image editor as bitmap object for Android.Since SfImageEditor supports bitmap images in Android. you can load the image to the control as a bitmap object only in Android.
 In iOS you can load an image to the image editor as image.
   
   * Android
@@ -80,7 +80,7 @@ In iOS you can load an image to the image editor as image.
 
 If an image is not loaded to the image editor it will display the `Signature` control like white background view where we can draw path and add shapes as if we are doing on a simple canvas.
 
-3. Loading the image to the SfImageEditor, you can start to edit the image by using the built-in Toolbars.
+* Loading the image to the SfImageEditor, you can start to edit the image by using the built-in Toolbars.
 
 
 

@@ -159,7 +159,7 @@ Create a new BlankApp (Xamarin.Forms.Portable) application in Xamarin Studio o
 
 1. Add the required assembly references to the pcl and renderer projects as discussed in the [Assembly deployment](#assembly-deployment) section.
 
-2. Import SfDataGrid control namespace as `xmlns:syncfusion="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms` in Xaml Page.
+2. Import SfDataGrid control namespace as `xmlns:syncfusion="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms` in XAML Page.
 
 3. Set the SfDataGrid control as content to the ContentPage.
 

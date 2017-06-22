@@ -171,7 +171,7 @@ Suggestion box items can be customized using `DropDownItemFontAttributes`, `Drop
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" DropDownTextSize="16" DropDownTextColor="1976d2"/>
+	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" DropDownTextSize="16" DropDownTextColor="#1976d2"/>
 </StackLayout>
 
 {% endhighlight %}

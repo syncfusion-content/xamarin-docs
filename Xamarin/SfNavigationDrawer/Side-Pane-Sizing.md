@@ -51,6 +51,8 @@ Content = navigationDrawer;
 
 {% endtabs %}
 
+![](Images/DrawerHeight.png)
+
 ## Drawer Width
 
 `DrawerWidth` property is used to change the width of side pane when the Position is Left or Right.
@@ -89,3 +91,5 @@ Content = navigationDrawer;
 {% endhighlight %}
 
 {% endtabs %}
+
+![](Images/DrawerWidth.png)

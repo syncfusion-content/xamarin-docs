@@ -66,6 +66,8 @@ public MainPage()
 
 {% endtabs %}
 
+![](Images/SlideOnTop.png)
+
 ## Push
 
 The navigation pane is hidden. It pushes the main content area in opposite side up to drawer width when opened. It can be set as shown below:
@@ -113,6 +115,8 @@ public MainPage()
 
 {% endtabs %}
 
+![](Images/Push.png)
+
 ## Reveal
 
 The navigation pane is hidden behind the main content. Main content moves away in opposite side up to drawer width to show the drawer content. It can be set as shown below:
@@ -158,3 +162,5 @@ public MainPage()
 {% endhighlight %}
 
 {% endtabs %}
+
+![](Images/Reveal.png)

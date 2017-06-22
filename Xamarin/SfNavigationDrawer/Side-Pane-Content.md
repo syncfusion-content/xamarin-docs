@@ -68,6 +68,8 @@ public MainPage()
 
 {% endtabs %}
 
+![](Images/Header.png)
+
 ## Header Height
 
 Height of the drawer header content can be adjusted using `DrawerHeaderHeight` property.
@@ -115,6 +117,8 @@ public MainPage()
 {% endhighlight %}
 
 {% endtabs %}
+
+![](Images/HeaderHeight.png)
 
 ## Footer Content
 
@@ -164,6 +168,8 @@ public MainPage()
 
 {% endtabs %}
 
+![](Images/Footer.png)
+
 ## Footer Height
 
 Height of the drawer footer content can be adjusted using `DrawerFooterHeight` property.
@@ -212,6 +218,8 @@ public MainPage()
 
 {% endtabs %}
 
+![](Images/FooterHeight.png)
+
 ## Main Content
 
 Drawer main content is displayed in between header and footer content. It can be set using `DrawerContentView` property. Content view occupies the remaining space left by header and footer content.
@@ -257,3 +265,5 @@ public MainPage()
 {% endhighlight %}
 
 {% endtabs %}
+
+![](Images/Content.png)

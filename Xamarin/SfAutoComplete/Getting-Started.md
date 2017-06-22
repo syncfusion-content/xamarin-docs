@@ -13,12 +13,12 @@ This section explains the steps to create AutoComplete, populate it with data an
 
 ## Adding AutoComplete References
 
-Refer [this](https://help.syncfusion.com/xamarin/introduction/download-and-installation) section to know the steps for obtaining Essential Studio components in your solution; then refer this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfautocomplete) to know the dependency assemblies details for adding AutoComplete to your project.
-After adding the assemblies reference, an additional step is required for iOS and UWP projects.
+Refer [this](https://help.syncfusion.com/xamarin/introduction/download-and-installation) section to know the steps for obtaining Essential Studio components in your solution; then refer this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfautocomplete) to know the dependency assembly details for adding AutoComplete to your project.
+After adding the assembly reference, an additional step is required for iOS and UWP projects.
 
 ### Additional Step for iOS
 
-Create an instance of `SfAutoCompleteRenderer` in FinishedLaunching overridden method of AppDelegate class in iOS project as shown below:
+Create an instance of `SfAutoCompleteRenderer` in FinishedLaunching overridden method of an AppDelegate class in iOS project as shown below:
 
 {% highlight C# %}
 
@@ -37,7 +37,7 @@ return base.FinishedLaunching(app, options);
 
 ### Additional Step for UWP
 
-This step is required only if application is deployed in Release mode with .NET native tool chain enabled and it is for resolving the known Framework issue “Custom controls not rendering in Release mode” in UWP platform. Initializing the SfAutoComplete assembly at OnLaunched overridden method of App class in UWP project is the suggested workaround. And the code example is shown below:
+This step is required only if the application is deployed in Release mode with .NET native tool chain enabled and it is for resolving the known Framework issue “Custom controls not rendering in Release mode” in UWP platform. Initializing the SfAutoComplete assembly at OnLaunched overridden method of the App class in UWP project is the suggested workaround. And the code example is shown below:
 
 {% highlight C# %}
 

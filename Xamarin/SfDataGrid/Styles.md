@@ -114,7 +114,7 @@ The following picture shows the grid loaded in a different style.
 
 ![](SfDataGrid_images/AlternatingStyle1.png)
 
-N> XamarinForms styles which have specified target type will not be applied in the internal components which is used under SfDataGrid.
+N> Xamarin.Forms.Style which has specified target type will not be applied to the internal components which are used in SfDataGrid.
 
 ## Border Customization
 

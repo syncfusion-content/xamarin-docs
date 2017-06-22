@@ -102,3 +102,5 @@ public MainPage()
 {% endhighlight %}
 
 {% endtabs %}
+
+![](Images/MainContent.png)

@@ -9,14 +9,14 @@ documentation: ug
 
 # Retrieving Selected values
 
-SfAutoComplete provides way to get the selected values using SelectedValue and SelectedIndex properties.
+SfAutoComplete provides a way to get the selected values using SelectedValue and SelectedIndex properties.
 
 ## Retrieving the Index of Selected Item
 
 When an item is selected from suggestion list, its index can be retrieved using [`SelectedIndex`] property. 
 SelectedIndex property holds the index of selected item in suggestion list. 
 
-The following code example demonstrates the way to retrieve SelectedIndex and display it in a alert.
+The following code example demonstrates the way to retrieve SelectedIndex and display it in an alert.
 
 {% tabs %}
 
@@ -48,9 +48,9 @@ DisplayAlert("Selection Changed", "Selected Index: " + autoComplete.SelectedInde
 
 ## Retrieving the Value of Selected Item
 
-When an item is selected from suggestion list, selected value can be retrieved using [`SelectedValue`] property. If DataSource is bound to string data, then selected string is set to SelectedValue property.  
+When an item is selected from suggestion list, selected value can be retrieved using [`SelectedValue`] property. If the DataSource is bound to string data, then selected string is set to the SelectedValue property.  
 
-The following code example demonstrates the way to retrieve SelectedValue and display it in a alert.
+The following code example demonstrates the way to retrieve SelectedValue and display it in an alert.
 
 {% tabs %}
 
@@ -82,7 +82,7 @@ DisplayAlert("Selection Changed", "Selected Value: " + autoComplete.SelectedValu
 
 ### Retrieving a Member of Model Object
 
-If DataSource is bound to business object data, there is an additional step to get the SelectedValue. The model class may have one or more properties so it is necessary to intimate AutoComplete that which property of model class should be stored in SelectedValue property. This can be accomplished by [`SelectedValuePath`] property.
+If the DataSource is bound to business object data, there is an additional step to get the SelectedValue. The model class may have one or more properties. So, it is necessary to intimate AutoComplete that which property of model class should be stored in SelectedValue property. This can be accomplished by [`SelectedValuePath`] property.
 
 {% tabs %}
 

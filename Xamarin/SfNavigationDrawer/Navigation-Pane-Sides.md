@@ -91,6 +91,8 @@ public MainPage()
 
 {% endtabs %}
 
+![](Images/Left.png)
+
 ## Right
 
 The navigation pane draws in and out from Left side. It can be set as shown below:
@@ -161,6 +163,8 @@ public MainPage()
 {% endhighlight %}
 
 {% endtabs %}
+
+![](Images/Right.png)
 	
 ## Top
 
@@ -233,6 +237,8 @@ public MainPage()
 
 {% endtabs %}
 
+![](Images/Top.png)
+
 ## Bottom
 
 The navigation pane draws in and out from Left side. It can be set as shown below:
@@ -303,3 +309,5 @@ public MainPage()
 {% endhighlight %}
 
 {% endtabs %}
+
+![](Images/Bottom.png)

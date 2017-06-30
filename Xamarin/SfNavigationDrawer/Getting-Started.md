@@ -300,3 +300,5 @@ public MainPage()
 {% endtabs %}
 
 ![](Images/GettingStarted.png)
+
+You can find the Getting Started Sample from this [link](_http://www.syncfusion.com/downloads/support/directtrac/170260/ze/NavigationDrawerGettingStarted-858071784).

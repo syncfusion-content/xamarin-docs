@@ -23,12 +23,32 @@ The SfDatagrid creates columns automatically based on the property [SfDataGrid.A
 
 The `SfDataGrid.AutoGenerateColumnsMode` is of type [AutoGenerateColumnsMode](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoGenerateColumnsMode.html) which has the following five options.
 
-* None: Stores only the columns that are defined in [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~Columns.html) collection. When changing the ItemsSource, the grouping and sorting for explicitly defined `SfDataGrid.Columns` alone will be retained.
-* Reset: Retains the columns defined explicitly in the application level and creates columns newly for all the other properties in a data source. When changing the ItemsSource, the grouping and sorting for explicitly defined `SfDataGrid.Columns` alone will be retained.
-* ResetAll: When changing the ItemsSource, the columns for the previous data source are cleared and the columns will be created newly for the new data source. Even when columns are explicitly defined it does not consider the defined columns and creates the column based on the underlying collection. Further, when changing the ItemsSource, the grouping and sorting for all the columns will be cleared.
-* RetainOld: When changing the ItemsSource, creates columns for all fields in a data source when the Grid does not have any explicit definition for columns. When columns are defined explicitly, then the defined columns alone are retained and new columns are not created. Similarly, when changing the ItemsSource and when the Grid have any explicit definition for columns, the grouping and sorting are retained as it is.
-* SmartReset: Retains the columns defined explicitly in application level and the columns with `MappingName` identical to the properties in the new data source. Creates columns newly for all the other properties in the data source. Similarly, it retains the grouping and sorting of the columns that are defined explicitly in application level and the columns with `MappingName` identical to the properties in new data source.
-
+<table>
+<tr>
+<th> Modes </th>
+<th> Description </th>
+</tr>
+<tr>
+<td> {{'[None](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.AutoGenerateColumnsMode.html)'| markdownify }} </td>
+<td> Stores only the columns that are defined in SfDataGrid.Columnss collection.<br/> When changing the ItemsSource, the grouping and sorting for explicitly defined SfDataGrid.Columns alone will be retained. </td>
+</tr>
+<tr>
+<td> {{'[Reset](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.AutoGenerateColumnsMode.html)'| markdownify }} </td>
+<td> Retains the columns defined explicitly in the application level and creates columns newly for all the other properties in a data source.<br/> When changing the ItemsSource, the grouping and sorting for explicitly defined `SfDataGrid.Columns` alone will be retained. </td>
+</tr>
+<tr>
+<td> {{'[ResetAll](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.AutoGenerateColumnsMode.html)'| markdownify }}  </td>
+<td> When changing the ItemsSource, the columns for the previous data source are cleared and the columns will be created newly for the new data source. Even when columns are explicitly defined it does not consider the defined columns and creates the column based on the underlying collection.<br/> Further, when changing the ItemsSource, the grouping and sorting for all the columns will be cleared. </td>
+</tr>
+<tr>
+<td>  {{'[RetainOld](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.AutoGenerateColumnsMode.html)'| markdownify }}  </td>
+<td> When changing the ItemsSource, creates columns for all fields in a data source when the Grid does not have any explicit definition for columns. When columns are defined explicitly, then the defined columns alone are retained and new columns are not created.<br/>Similarly, when changing the ItemsSource and when the Grid have any explicit definition for columns, the grouping and sorting are retained as it is </td>
+</tr>
+<tr>
+<td>  {{'[SmartReset](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.AutoGenerateColumnsMode.html)'| markdownify }}  </td>
+<td> Retains the columns defined explicitly in application level and the columns with MappingName identical to the properties in the new data source. Creates columns newly for all the other properties in the data source.<br/> Similarly, it retains the grouping and sorting of the columns that are defined explicitly in application level and the columns with MappingName identical to the properties in new data source </td>
+</tr>
+</table>
 
 The default value of `SfDatagrid.AutoGenerateColumns` property is `true` and `SfDatagrid.AutoGenerateColumnsMode` is `Reset`. Hence by default SfDatagrid creates columns automatically for every non-explicitly defined public property in the underlying collection bound to its `ItemsSource` property.
 

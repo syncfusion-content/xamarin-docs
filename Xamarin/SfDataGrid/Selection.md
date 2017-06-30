@@ -206,8 +206,8 @@ public class CustomSelectionController : GridSelectionController
     }
     protected override async void SetSelectionAnimation(VirtualizingCellsControl rowElement)
     {
-        await rowElement.FadeTo(0.50, 250, Easing.CubicIn);
-        await rowElement.FadeTo(1, 250, Easing.CubicInOut);
+        rowElement.Opacity = 0.5;
+        await rowElement.FadeTo(1, 600, Easing.CubicInOut);
     }
 }
 {% endhighlight %}

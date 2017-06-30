@@ -32,6 +32,8 @@ SfDataGrid allows you to perform the drag and drop operation with both the data 
 
 N> Reordering changes are made only in `SfDataGrid.View` and not in the underlying data. Thus the changes will be reverted when performing sorting, grouping or any other operation that refreshes the view. Reordering changes in the underlying data can be achieved by handling `QueryRowDragging` event in the sample side as explained below in [Reordering underlying data](# Reordering underlying data ).
 
+N> Now, you can drag and drop the grid rows using mouse in UWP (Desktop) platform.
+
 ## Row drag and drop template
 
 SfDataGrid allows you to load a desired content when performing row drag and drop operation using the `SfDataGrid.RowDragDropTemplate`. The template can be defined either in code or XAML. 

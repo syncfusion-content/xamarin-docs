@@ -11,8 +11,6 @@ documentation: UG
 
 SfDataGrid allows you to drag and drop a row by setting the `SfDataGrid.AllowDraggingRow` property to `true`. A Customizable row drag and drop template is displayed  while dragging a row. The drag and drop operation can be handled based on the requirement using `SfDataGrid.QueryRowDragging` event. 
 
-N> Currently SfDataGrid have a support to drag the rows over mouse in UWP platform
-
 The following code example shows how to enable row drag and drop in SfDataGrid. 
 
 {% tabs %}
@@ -33,6 +31,8 @@ SfDataGrid allows you to perform the drag and drop operation with both the data 
 * Data rows can be reordered within the same group or into the other groups as well. 
 
 N> Reordering changes are made only in `SfDataGrid.View` and not in the underlying data. Thus the changes will be reverted when performing sorting, grouping or any other operation that refreshes the view. Reordering changes in the underlying data can be achieved by handling `QueryRowDragging` event in the sample side as explained below in [Reordering underlying data](# Reordering underlying data ).
+
+N> Now, you can drag and drop the grid rows using mouse in UWP (Desktop) platform.
 
 ## Row drag and drop template
 

@@ -21,8 +21,6 @@ SfCarousel items can be populated with a collection of image data. For example, 
 
 The SfCarousel model looks as follows.
 
-{% tabs %}
-
 {% highlight C# %}
 
 public class CarouselModel
@@ -41,11 +39,7 @@ public class CarouselModel
 
 {% endhighlight %}
 
-{% endtabs %}
-
 Populate carousel items collection in View model with the image data. The below code works when the images are placed within the application folder for Android, iOS and UWP with build action Android Resource, Bundled Resource and Content respectively.
-
-{% tabs %}
 
 {% highlight C# %}
 
@@ -68,16 +62,12 @@ public class CarouselViewModel
 }
 {% endhighlight %}
 
-{% endtabs %}
-
 N> Images can also be referred in PCL and from website URL as [instructed](https://developer.xamarin.com/guides/xamarin-forms/working-with/images/)
 
 
 ### Binding the Data with Custom Template
 
 SfCarousel provides support to add a custom view as carousel items by designing a view inside its ItemTemplate. This template will be applied for all its items and its data will be binded.
-
-{% tabs %}
 
 {% highlight xaml %}
 
@@ -93,13 +83,10 @@ SfCarousel provides support to add a custom view as carousel items by designing 
 	<ContentPage.Content>
 		<carousel:SfCarousel x:Name="carousel"  ItemTemplate="{StaticResource itemTemplate}" DataSource="{Binding ImageCollection}"   HeightRequest="400" WidthRequest="800" />	
 	</ContentPage.Content>
+
 {% endhighlight %}
 
-{% endtabs %}
-
 * Now set the `BindingContext` for the items collection in code behind.
-
-{% tabs %}
 
 {% highlight C# %}
 
@@ -107,47 +94,30 @@ SfCarousel provides support to add a custom view as carousel items by designing 
 
 {% endhighlight %}
 
-{% endtabs %}
-
 ## Through Carousel Item
 
 Different set of views can be provided to every items through `ItemContent` property available in SfCarouselItem class.
-
-{% tabs %}
 
 {% highlight C# %}
 
 SfCarousel carousel = new SfCarousel();
 
-SfCarouselItem carouselItem = new SfCarouselItem();
-Label label = new Label();
-label.Text = "  Item No: 1 ";
-label.BackgroundColor = Color.Gray;
-label.FontSize = 25;
-label.VerticalTextAlignment = TextAlignment.Center;
-carouselItem.ItemContent = label;
-carousel.ItemsSource.Add(carouselItem);
+ObservableCollection<SfCarouselItem> listOf = new ObservableCollection<SfCarouselItem>();
 
-SfCarouselItem carouselItem1 = new SfCarouselItem();
-Image image = new Image();
-image.Source = ImageSource.FromFile("image2.png");
-image.Aspect = Aspect.AspectFit;
-image.VerticalOptions = LayoutOptions.Center;
-image.HeightRequest = 400;
-image.WidthRequest = 400;
-carouselItem1.ItemContent = image;
-carousel.ItemsSource.Add(carouselItem1);
+listOf.Add(new SfCarouselItem() { ItemContent = new Image() { Source = "image1.png",Aspect=Aspect.Fill } });
+listOf.Add(new SfCarouselItem() { ItemContent = new Image() { Source = "image2.png",Aspect=Aspect.Fill } });
+listOf.Add(new SfCarouselItem() { ItemContent = new Image() { Source = "image3.png",Aspect=Aspect.Fill } });
+listOf.Add(new SfCarouselItem() { ItemContent = new Image() { Source = "image4.png",Aspect=Aspect.Fill } });
+listOf.Add(new SfCarouselItem() { ItemContent = new Image() { Source = "image5.png",Aspect=Aspect.Fill } });
+
+carousel.DataSource = listOf;
 
 this.Content = carousel;	
-	
+
 	  
 {% endhighlight %}
 
-{% endtabs %}
-
 and also carousel provides a support to display only the Image data with `Image` property in SfCarouselItem class.
-
-{% tabs %}
 
 {% highlight C# %}
 
@@ -168,7 +138,7 @@ public partial class CarouselControlPage : ContentPage
             collectionOfItems.Add(new SfCarouselItem() { ImageName = "images5.png" });
             collectionOfItems.Add(new SfCarouselItem() { ImageName = "images6.png" });
 
-            carousel. DataSource = collectionOfItems;
+            carousel.DataSource = collectionOfItems;
 
             this.Content =carousel;
         }
@@ -176,7 +146,6 @@ public partial class CarouselControlPage : ContentPage
 
 {% endhighlight %}
 
-{% endtabs %}
 
 Similar way every item can be created and customized in case of different carousel item view is needed.
 

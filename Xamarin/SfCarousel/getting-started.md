@@ -27,7 +27,6 @@ The Android and UWP launches the SfCarousel without any initialization and is en
 
 To launch SfCarousel in iOS, need to create an instance of SfCarouselRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below.
 
-{% tabs %}
 
 {% highlight C# %}
 
@@ -44,7 +43,6 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% endhighlight %}
 
-{% endtabs %}
 
 ## Create a Simple SfCarousel 
 
@@ -126,9 +124,6 @@ By passing the list of `SfCarouselItem` , we can get the view of SfCarousel cont
 
 The following code example illustrates to add list of Images in Carousel ,
 
-
-{% tabs %}
-
 {% highlight C# %}
 
 public partial class CarouselControlPage : ContentPage
@@ -148,7 +143,7 @@ public partial class CarouselControlPage : ContentPage
             collectionOfItems.Add(new SfCarouselItem() { ImageName = "images5.png" });
             collectionOfItems.Add(new SfCarouselItem() { ImageName = "images6.png" });
 
-            carousel. DataSource = collectionOfItems;
+            carousel.DataSource = collectionOfItems;
 
             this.Content =carousel;
         }
@@ -157,11 +152,7 @@ public partial class CarouselControlPage : ContentPage
 
 {% endhighlight %}
 
-{% endtabs %}
-
 The following code example illustrates to add list of Item in Carousel ,
-
-{% tabs %}
 
 {% highlight C# %}
 
@@ -188,15 +179,11 @@ public partial class CarouselControlPage : ContentPage
 
 {% endhighlight %}
 
-{% endtabs %}
-
 ### Through ItemTemplate
 
 `ItemTemplate` property of SfCarousel control is used to customize the contents of SfCarousel items.
 
 * Create a model view which holds image data
-
-{% tabs %}
 
 {% highlight C# %}
 
@@ -216,11 +203,7 @@ public class CarouselModel
 }
 {% endhighlight %}
 
-{% endtabs %}
-
 * Populate carousel items collection in View model with the image data. 
-
-{% tabs %}
 
 {% highlight C# %}
 
@@ -242,9 +225,6 @@ public class CarouselViewModel
 	}
 }
 {% endhighlight %}
-
-{% endtabs %}
-
 
 The following code illustrates the way to use `ItemTemplate` in both XAML as well as C#
 
@@ -306,15 +286,11 @@ public partial class CarouselControlPage : ContentPage
 
 * Finally set the `BindingContext` for the items collection in code behind.
 
-{% tabs %}
-
 {% highlight C# %}
 
-	carousel.BindingContext = new CarouselViewModel();
+carousel.BindingContext = new CarouselViewModel();
 
 {% endhighlight %}
-
-{% endtabs %}
 
 I> Carousel's Images are placed within the application folder for Android, iOS and UWP with build action Android Resource, Bundled Resource and Content respectively. 
 
@@ -330,14 +306,14 @@ The items can be populated as described [above](#add-carousel-items)
 
 {% highlight xaml %}
 
-	<syncfusion:SfCarousel x:Name="carousel" Offset="20"/>
+<syncfusion:SfCarousel x:Name="carousel" Offset="20"/>
 	
 {% endhighlight %}
 
 {% highlight C# %}
 
-	SfCarousel carousel = new SfCarousel();	
-	carousel.Offset=20;
+SfCarousel carousel = new SfCarousel();	
+carousel.Offset=20;
 
 {% endhighlight %}
 
@@ -354,19 +330,32 @@ The items can be populated as described [above](#add-carousel-items)
 
 {% highlight xaml %}
 
-	<syncfusion:SfCarousel x:Name="carousel" Offset="20" RotationAngle="45" />
+<syncfusion:SfCarousel x:Name="carousel" Offset="20" RotationAngle="45" />
 	
 {% endhighlight %}
 
 {% highlight C# %}
 
-	SfCarousel carousel = new SfCarousel();
-	carousel.Offset=20;
-	carousel.RotationAngle = 45;
+SfCarousel carousel = new SfCarousel();
+carousel.Offset=20;
+carousel.RotationAngle = 45;
 
 {% endhighlight %}
 
 {% endtabs %}
+
+
+## Setting the height and width of carousel's Item
+
+`ItemHeight` and `ItemWidth` properties are used to change the height and width of carouselItem in carousel panel.
+
+{% highlight C# %}
+
+SfCarousel sfCarousel=new SfCarousel();
+sfCarousel.ItemWidth=150;
+sfCarousel.ItemHeight=170;
+
+{% endhighlight %}
 
 ## Set Desire Item to be Selected
 
@@ -378,16 +367,16 @@ The items can be populated as described [above](#add-carousel-items)
 
 {% highlight xaml %}
 
-	<syncfusion:SfCarousel x:Name="carousel" Offset="20" RotationAngle="45" SelectedIndex="2" />
+<syncfusion:SfCarousel x:Name="carousel" Offset="20" RotationAngle="45" SelectedIndex="2" />
 	
 {% endhighlight %}
 
 {% highlight C# %}
 
-	SfCarousel carousel = new SfCarousel();
-	carousel.Offset=20;
-	carousel.RotationAngle = 45;
-	carousel.SelectedIndex=2;
+SfCarousel carousel = new SfCarousel();
+carousel.Offset=20;
+carousel.RotationAngle = 45;
+carousel.SelectedIndex=2;
 
 {% endhighlight %}
 

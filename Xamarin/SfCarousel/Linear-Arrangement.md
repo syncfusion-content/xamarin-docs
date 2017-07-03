@@ -15,21 +15,22 @@ The Carousel items can be populated in the view in a stacked linear layout by se
 
 {% highlight xaml %}
 
-	<syncfusion:SfCarousel x:Name="carousel"  ViewMode="Linear" />
+<syncfusion:SfCarousel x:Name="carousel"  ViewMode="Linear" />
 	
 {% endhighlight %}
 
 {% highlight C# %}
 
-    SfCarousel carousel = new SfCarousel();
-	carousel.ViewMode = ViewMode.Linear;
+SfCarousel carousel = new SfCarousel();
+carousel.ViewMode = ViewMode.Linear;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-
 N> It is important to include Xamarin.Android.Support.v17.Leanback library to use carousel linear mode in Android platform.
+
+![](images/linear.png)
 
 
 

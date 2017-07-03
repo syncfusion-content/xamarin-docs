@@ -21,16 +21,15 @@ N> If the angle value is positive, then the rotation is in the clockwise directi
 
 {% highlight xaml %}
 
-	<syncfusion:SfCarousel x:Name="carousel" RotationAngle="90" />
+<syncfusion:SfCarousel x:Name="carousel" RotationAngle="90" />
 	
 {% endhighlight %}
 
 {% highlight C# %}
 
-	SfCarousel carousel = new SfCarousel();
-	carousel.RotationAngle = 90;
+SfCarousel carousel = new SfCarousel();
+carousel.RotationAngle = 90;
 	
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -48,16 +47,15 @@ N> The default value is 20.
 
 {% highlight xaml %}
 
-	<syncfusion:SfCarousel x:Name="carousel" Offset="30" />
+<syncfusion:SfCarousel x:Name="carousel" Offset="30" />
 	
 {% endhighlight %}
 
 {% highlight C# %}
 
-	SfCarousel carousel = new SfCarousel();
-	carousel.Offset=30;
+SfCarousel carousel = new SfCarousel();
+carousel.Offset=30;
 	
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -72,14 +70,14 @@ Distance between the selected item and other items can be customized by using `S
 
 {% highlight xaml %}
 
-	<syncfusion:SfCarousel x:Name="carousel" SelectedItemOffset="5" />
+<syncfusion:SfCarousel x:Name="carousel" SelectedItemOffset="5" />
 	
 {% endhighlight %}
 
 {% highlight C# %}
 
-    SfCarousel carousel = new SfCarousel();
-	carousel.SelectedItemOffset=5;
+SfCarousel carousel = new SfCarousel();
+carousel.SelectedItemOffset=5;
 
 {% endhighlight %}
 
@@ -89,22 +87,34 @@ Distance between the selected item and other items can be customized by using `S
 
 The `ScaleOffset` property in the SfCarousel control is used to scale all the items to the specified scale value.
 
+{% highlight C# %}
+
+SfCarousel carousel = new SfCarousel();
+carousel.ScaleOffset=0.7f;
+
+{% endhighlight %}
+
+![](images/scaleoffset.png)
+
+## Spacing between the Items in Linear mode
+
+Spacing of all the items in Linear mode can be determined by using `ItemSpacing` property.
+
 {% tabs %}
 
 {% highlight xaml %}
 
-	<syncfusion:SfCarousel x:Name="carousel" ScaleOffset="0.7" />
+<syncfusion:SfCarousel x:Name="carousel" ItemSpacing="10" ViewMode="Linear" />
 	
 {% endhighlight %}
 
 {% highlight C# %}
 
-	SfCarousel carousel = new SfCarousel();
-	carousel.ScaleOffset=0.7f;
+SfCarousel carousel = new SfCarousel();
+carousel.ItemSpacing=5;
+carousel.ViewMode=ViewMode.Linear;
 
 {% endhighlight %}
 
 {% endtabs %}
-
-![](images/scaleoffset.png)
 

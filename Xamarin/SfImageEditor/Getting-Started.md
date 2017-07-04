@@ -78,7 +78,7 @@ In iOS you can load an image to the image editor as image.
            Content = editor;
 
 
-If an image is not loaded to the image editor it will display the `Signature` control like white background view where we can draw path and add shapes as if we are doing on a simple canvas.
+
 
 * Loading the image to the SfImageEditor, you can start to edit the image by using the built-in Toolbars.
 

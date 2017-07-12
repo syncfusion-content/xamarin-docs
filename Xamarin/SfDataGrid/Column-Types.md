@@ -632,7 +632,7 @@ The following code example illustrates how to load DatePicker and TimePicker com
 
 The following screenshot shows that how DatePicker and TimePicker are combainedly viewed in SfDataGrid.
 
-![](SfDataGrid_images/DateTimePicker)
+![](SfDataGrid_images/DateTimePicker.png)
 
 ## Row Header 
 

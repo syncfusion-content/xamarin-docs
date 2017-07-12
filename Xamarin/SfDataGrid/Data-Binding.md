@@ -131,7 +131,7 @@ public class ViewModel
 {
        public const string JsonData = "[{\"OrderID\":1,\"EmployeeID\":100,\"FirstName\":'Gina',\"LastName\":'Gable'}," +
                                        "{\"OrderID\":2,\"EmployeeID\":200,\"FirstName\":'Danielle',\"LastName\":'Rooney'}," +
-                                      "{\"OrderID\":3,\"EmployeeID\":300,\"FirstName\":'Frank',\"LastName\":'Gable'}," +
+                                      "{\"OrderID\":3,\"EmployeeID\":300,\"FirstName\":'Frank',\"LastName\":'Gable'},]";
                                       
        public ObservableCollection<DynamicModel> DynamicCollection { get; set; }
        public List<Dictionary<string, object>> DynamicJsonCollection { get; set; }

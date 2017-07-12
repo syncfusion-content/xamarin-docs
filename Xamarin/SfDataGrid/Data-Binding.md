@@ -43,7 +43,7 @@ If the data source implements `ICollectionChanged` interface, then SfDataGrid wi
 
 If the data model implements the `INotifyPropertyChanged` interface, then the SfDataGrid responds to the property change in runtime to update the view.
 
-Note> SfDataGrid does not supports `DataTable` binding in `Xamarin.Forms` since `System.Data` is inaccessible in `Portable Class Library`.
+N> SfDataGrid does not supports `DataTable` binding in `Xamarin.Forms` since `System.Data` is inaccessible in `Portable Class Library`.
 
 ## Binding with IEnumerable
 
@@ -70,6 +70,154 @@ SfDataGrid control provides support to bind complex property to its columns. 
 this.dataGrid.Columns.Add(new GridTextColumn() { MappingName = "OrderID.Order" });
 {% endhighlight %}
 {% endtabs %}
+
+
+## Binding JSON data
+
+JSON data cannot be bound directly to SfDataGrid. To bind SfDataGrid with JSON data, we must deserialize the JSON data to a bindable format. You can use the open source NuGet Newtonsoft.Json to serialize and deserialize JSON objects.
+
+Xamarin.Forms have limitations in loading dynamic object (Expando object). Hence dynamic objects can be loaded only using dictionary collection. Refer the dynamic limitations for more details.
+
+JSON data can be parsed into a dictionary collection using JsonConvert.DeserializeObject<List<Dictionary<string, object>>>(json_object). 
+
+You can then convert the list of dictionary objects to an observable collection if your data source need to respond to collection changes. 
+
+The List of Dictionary objects or the converted ObservableCollection can now be binded as ItemsSource of SfDataGrid.
+
+Refer the below example in which the list of dictionary objects are converted as an ObservableCollection and bound to SfDataGrid. 
+
+{% highlight c# %}
+// MainPage.cs 
+public partial class MainPage : ContentPage
+{
+        private SfDataGrid grid;
+        private ViewModel viewModel;
+        public MainPage()
+        {
+            InitializeComponent();
+            grid = new SfDataGrid();
+            viewModel = new ViewModel();
+            grid.AllowSorting = true;
+            grid.AutoGenerateColumns = false;
+            grid.ColumnSizer = ColumnSizer.Star;
+            grid.ItemsSource = viewModel.DynamicCollection;
+            grid.Columns.Add(new GridTextColumn()
+            {
+                HeaderText = "Order ID",
+                MappingName = "Values[OrderID]",
+                LineBreakMode = LineBreakMode.WordWrap,
+                TextAlignment = TextAlignment.Center,
+                HeaderTextAlignment = TextAlignment.Center,
+            });
+
+            grid.Columns.Add(new GridTextColumn()
+            {
+                HeaderText = "Customer ID",
+                MappingName = "Values[EmployeeID]",
+                LineBreakMode = LineBreakMode.WordWrap,
+                TextAlignment = TextAlignment.Center,
+                HeaderTextAlignment = TextAlignment.Center,
+            });
+
+        this.Content = grid;
+
+        }
+}
+{% endhighlight %}
+
+{% highlight c# %}
+// ViewModel.cs
+public class ViewModel
+{
+       public const string JsonData = "[{\"OrderID\":1,\"EmployeeID\":100,\"FirstName\":'Gina',\"LastName\":'Gable'}," +
+                                       "{\"OrderID\":2,\"EmployeeID\":200,\"FirstName\":'Danielle',\"LastName\":'Rooney'}," +
+                                      "{\"OrderID\":3,\"EmployeeID\":300,\"FirstName\":'Frank',\"LastName\":'Gable'}," +
+                                      
+       public ObservableCollection<DynamicModel> DynamicCollection { get; set; }
+       public List<Dictionary<string, object>> DynamicJsonCollection { get; set; }
+
+        public ViewModel()
+        {
+            DynamicJsonCollection = JsonConvert.DeserializeObject<List<Dictionary<string, object>>>(JsonData);
+            DynamicCollection = PopulateData();
+        }
+
+        private ObservableCollection<DynamicModel> PopulateData()
+        {
+            var data = new ObservableCollection<DynamicModel>();
+            foreach (var item in DynamicJsonCollection)
+            {
+                var obj = new DynamicModel() { Values = item };
+                data.Add(obj);
+            }
+            return data;
+        }
+}
+{% endhighlight %}
+
+{% highlight c# %}
+//DynamicModel.cs
+public class DynamicModel : INotifyPropertyChanged
+{
+        public Dictionary<string, object> data;
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        public Dictionary<string, object> Values
+        {
+            get
+            {
+                return data;
+            }
+            set
+            {
+                data = value;
+                if (PropertyChanged != null)
+                    PropertyChanged(this, new PropertyChangedEventArgs("Values"));
+            }
+
+        }
+        public DynamicModel()
+        {
+            this. data = new Dictionary<string, object>();
+
+        }
+}
+{% endhighlight %}
+
+N> In order to apply sorting for JSON data, you have to customize the GridQueryableCollectionViewWrapper class and initialize the customized GridQueryableCollectionViewWrapper while setting the ItemSource to SfDataGrid.
+
+Refer the below code example to customize the GridQueryableCollectionViewWrapper class.
+{% highlight c# %}
+public class QueryableViewExt : GridQueryableCollectionViewWrapper
+{
+    public QueryableViewExt(IEnumerable source, SfDataGrid grid) : base(source, grid)
+    {
+
+    }
+
+    public override Expression<Func<string, object, object>> GetExpressionFunc(string propertyName, DataOperation operation = DataOperation.Default, DataReflectionMode reflectionMode = DataReflectionMode.Default)
+    {
+            Expression<Func<string, object, object>> exp = base.GetExpressionFunc(propertyName, operation, reflectionMode);
+            if (exp == null)
+            {
+                Func<string, object, object> func;
+                func = (propertyname, record) =>
+                {
+                    var provider = this.GetPropertyAccessProvider();
+                    return provider.GetValue(record, propertyName);
+                };
+                exp = (propertyname, record) => func(propertyName, record);
+            }
+            return exp;
+     }
+}
+{% endhighlight %}
+
+{% highlight c# %}
+//MainPage.cs
+grid.ItemsSource = new QueryableViewExt(viewModel.DynamicCollection, grid);
+{% endhighlight %}
 
 ## View
 
@@ -104,13 +252,13 @@ SfDataGrid provides support to update the view during data manipulation operatio
 </tr>
 </table>
 
-<% highlight c# %>
+{% highlight c# %}
 dataGrid.GridViewCreated += DataGrid_GridViewCreated;
 private void DataGrid_GridViewCreated(object sender, GridViewCreatedEventArgs e)
 {
     dataGrid.View.LiveDataUpdateMode = LiveDataUpdateMode.Default;
 }
-<% endhighlight %>
+{% endhighlight %}
 
 The following events are associated with `View`.
 

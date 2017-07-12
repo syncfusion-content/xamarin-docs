@@ -574,6 +574,66 @@ The following screenshot shows the different types of columns in SfDataGrid
 
 ![](SfDataGrid_images/TemplateColumns2.png)
 
+### Getting Row Index of a Row
+SfDataGrid provides various resolving methods to resolve the row index of grid rows based on certain criteria. The actual RowIndex of a row can be resolved by using the `ResolveToRowIndex(recordRowIndex)` method in SfDataGrid. 
+
+The RowIndex of a row can be obtained from GridTemplateColumn by retrieving the record index of the row using the bound data from its `BindingContext` and passing the recordRowIndex to the `ResolveToRowIndex()` method.
+
+{% highlight xaml %}
+// MainPage.Xaml
+<sfgrid:GridTemplateColumn HeaderText="ShipCity" MappingName="ShipCity">
+  <sfgrid:GridTemplateColumn.CellTemplate>
+    <DataTemplate>
+      <Button Clicked="button_Clicked" WidthRequest="120" Text="{Binding ShipCity}"/>
+    </DataTemplate>
+  </sfgrid:GridTemplateColumn.CellTemplate>
+</sfgrid:GridTemplateColumn>
+{% endhighlight %}
+
+{% highlight c# %}
+// MainPage.cs 
+public partial class MainPage : ContentPage
+{
+     public MainPage()
+     {
+         InitializeComponent();
+     }
+     private void button_Clicked(object sender, EventArgs e)
+     {
+          var button = sender as Button;
+          var record = button.BindingContext as OrderInfo;
+          var recordRowIndex = viewModel.OrderInfoCollection.IndexOf(record);
+          var rowIndex = sfGrid.ResolveToRowIndex(recordRowIndex);
+     }
+}
+{% endhighlight %}
+
+N> RowIndex of the row can also be accessed by using [GridTapped](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridTapped_EV.html), [GridDoubleTapped](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridDoubleTapped_EV.html) and [GridLongPressed events](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridLongPressed_EV.html). When using complex layout inside a Template, ensure to set the InputTransparent property of the views loaded in the DataTemplate of the GridTemplateColumn as True.
+
+### Loading DatePicker and TimePicker Combainedly 
+
+Currently, Xamarin.Forms does not provide a view that combines both the DatePicker and the TimePicker as one control, but however the two are available individually. 
+SfDataGrid have a support for using DatePicker and TimePicker in a same column. It can be achieved by loading the [DatePicker](https://developer.xamarin.com/api/type/Xamarin.Forms.DatePicker/) and [TimePicker](https://developer.xamarin.com/api/type/Xamarin.Forms.TimePicker/) in a `StackLayout` in the `GridTemplateColumn`.
+
+The following code example illustrates how to load DatePicker and TimePicker combainedly in GridColumn.
+
+{% highlight xaml %}
+<sfgrid:GridTemplateColumn MappingName="ShippingDate">
+     <sfgrid:GridTemplateColumn.CellTemplate>
+        <DataTemplate>
+           <StackLayout Orientation="Horizontal">
+              <DatePicker Date="{Binding ShippingDate}" TextColor="Black"/>
+              <TimePicker Time="{Binding ShippingTime}" TextColor="Black"/>
+           </StackLayout>
+      </DataTemplate>
+   </sfgrid:GridTemplateColumn.CellTemplate>
+</sfgrid:GridTemplateColumn>
+{% endhighlight %}
+
+The following screenshot shows that how DatePicker and TimePicker are combainedly viewed in SfDataGrid.
+
+![](SfDataGrid_images/DateTimePicker)
+
 ## Row Header 
 
 RowHeader is a special column which is placed as first cell of each row and it will always be frozen. To enable the row header in SfDataGrid, you need to set the `SfDataGrid.ShowRowHeader` as `true`.

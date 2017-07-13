@@ -59,7 +59,7 @@ GridColumn is the base column type of all the columns in the SfDataGrid, hence G
 
 ### Binding options
 
-The display content of GridColumn is determined from [GridColumn.DisplayBinding](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~DisplayBinding.html) property. It gets and sets the binding that associates the GridColumn with a property in the data source. 
+The display content of GridColumn is determined from [GridColumn.DisplayBinding](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~DisplayBinding.html) property. It gets and sets the binding that associates the GridColumn with a property in the data source. The values of the GridColumn is determined from [GridColumn.ValueBinding](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~ValueBinding.html) property. Its gets or sets the value binding that associates the column with a property in the data source.  
 
 #### MappingName
 
@@ -907,11 +907,11 @@ The following screenshots expalins the above code and shows the working of the `
 
 Here in the above code example underlying collection has 2 properties (OrderID,EmployeeID). We have created a `GridPickerColumn` with MappingName = OrderID, DisplayMemberPath = EmployeeID, ValueMemberPath = OrderID. EmployeeId has the values 6,7,8,9,10.... and OrderID has the values 1,2,3,4,5.... Initially the GridCells of the `PickerColumn` will be displayed with the values 6,7,8,9,10.... in row wise order based on the `DisplayMemberPath`.
 
-![](SfDataGrid_images/PickerColumn_DisplayMemberPath.jpg)
+![](SfDataGrid_images/PickerColumn_DisplayMemberPath.png)
 
 Upon entering the edit mode at RowColumnIndex(1,1) , the Picker pop up opens and with the picker items as 6,7,8,9,10.... again based on the `DisplayMemberPath`.
 
-![](SfDataGrid_images/PickerColumn_PickerPopUp.jpg)
+![](SfDataGrid_images/PickerColumn_PickerPopUp.png)
 
 When edit mode is exited by selecting a value(9) from the Picker pop up, the `GridCell` at RowColumn index (0,1) displays the corresponding OrderID value for the selected EmployeeID value which is 4. Note that the PickerColumn's `GridCell` data is not changed and only the OrderID columns data is changed to 4. 
 
@@ -964,3 +964,39 @@ data.Colum.Add(numericColumn);
 * [NumberNegativePatter](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridNumericColumn~NumberNegativePattern.html) - You can format the pattern of negative numeric values using `GridNumericColumn.NumberNegativePattern`.
 
 ![](SfDataGrid_images/Editing_NumericColumn_Forms.png)
+
+## How to
+
+### How to bind a view model property to header template
+
+SfDataGrid allows you to bind the view model property to [HeaderTemplate](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderTemplateProperty.html) by setting the BindingContext of the [GridColumn](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn.html) as `ViewModel`.
+
+The below code example illustrates how to bind the view model property to `Header Template`.
+
+{% highlight xaml %}
+
+<sfgrid:SfDataGrid x:Name="dataGrid" 
+                    ItemsSource="{Binding OrdersInfo}" 
+                    AutoGenerateColumns="False"
+                    ColumnSizer="Star" 
+                    SelectionMode="Single">
+      <sfgrid:SfDataGrid.Columns>
+        <sfgrid:GridTextColumn MappingName="OrderID">
+           <sfgrid:GridColumn.HeaderTemplate>
+              <DataTemplate>
+               <Label BindingContext="{StaticResource viewModel}" 
+                            VerticalTextAlignment ="Center"
+                            HorizontalTextAlignment="Center"
+                      Text="{Binding Headertext}" TextColor="Blue" IsVisible="{Binding _Visibility}"/>
+              </DataTemplate>
+            </sfgrid:GridColumn.HeaderTemplate>
+        </sfgrid:GridTextColumn>
+        <sfgrid:GridTextColumn MappingName="EmployeeID"/>
+        <sfgrid:GridTextColumn MappingName="FirstName"/>
+        <sfgrid:GridTextColumn MappingName="ShipCity"/>
+      </sfgrid:SfDataGrid.Columns>
+ </sfgrid:SfDataGrid>
+
+{% endhighlight %}
+
+![](SfDataGrid_images/ViewModelPropertyHeaderTemplate.png)

@@ -182,3 +182,36 @@ When BeginInit method is called it suspends all the updates until EndInit method
 </td>
 </tr>
 </table>
+
+## How to
+
+### How to bind the viewModel property as BindingContext
+
+SfDataGrid allows you to bind the view model property to [HeaderTemplate](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderTemplate.html) by setting the BindingContext of the `GridColumn` as `ViewModel`.
+
+The below code example illustrates how to bind the view model property to Header Template.
+
+<% highlight xaml %>
+<sfgrid:SfDataGrid x:Name="dataGrid" 
+                    ItemsSource="{Binding OrdersInfo}" 
+                    AutoGenerateColumns="False"
+                    ColumnSizer="Star" 
+                    SelectionMode="Single">
+      <sfgrid:SfDataGrid.Columns>
+        <sfgrid:GridTextColumn MappingName="OrderID">
+           <sfgrid:GridColumn.HeaderTemplate>
+              <DataTemplate>
+               <Label BindingContext="{StaticResource viewModel}" 
+                            VerticalTextAlignment ="Center"
+                            HorizontalTextAlignment="Center"
+                      Text="{Binding Headertext}" TextColor="Blue" IsVisible="{Binding _Visibility}"/>
+              </DataTemplate>
+            </sfgrid:GridColumn.HeaderTemplate>
+        </sfgrid:GridTextColumn>
+        <sfgrid:GridTextColumn MappingName="EmployeeID"/>
+        <sfgrid:GridTextColumn MappingName="FirstName"/>
+        <sfgrid:GridTextColumn MappingName="ShipCity"/>
+      </sfgrid:SfDataGrid.Columns>
+ </sfgrid:SfDataGrid>
+
+<% endhighlight %>

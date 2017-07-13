@@ -411,9 +411,9 @@ Refer the below code example in which the `InputTransparent` property of the vie
 
 ## How to
 
-### How to cancel the swipe programmatically 
+### How to cancel the swipe programmatically? 
 
-SfDataGrid allows you to cancel the swipe programmatically by calling the [SfDataGrid.ResetSwipeOffset]() method in [SfDataGrid.SwipeEnded]() event.
+SfDataGrid allows you to cancel the swipe programmatically by calling the [SfDataGrid.ResetSwipeOffset](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ResetswipeOffset.html) method in [SfDataGrid.SwipeEnded](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SwipeEnded_EV.html#%20%E2%80%9C%E2%80%9D) event.
 
 The below code example illustrates how to cancel the swiping programmatically by calling the `ResetSwipeOffset` method.
 

@@ -59,7 +59,8 @@ GridColumn is the base column type of all the columns in the SfDataGrid, hence G
 
 ### Binding options
 
-The display content of GridColumn is determined from [GridColumn.DisplayBinding](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~DisplayBinding.html) property. It gets and sets the binding that associates the GridColumn with a property in the data source. The values of the GridColumn is determined from [GridColumn.ValueBinding](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~ValueBinding.html) property. Its gets or sets the value binding that associates the column with a property in the data source.  
+The display content of GridColumn is determined from [GridColumn.DisplayBinding](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~DisplayBinding.html) property. It gets or sets the binding that associates the GridColumn with a property in the data source. 
+The actual bound value of the GridColumn is determined from [GridColumn.ValueBinding](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~ValueBinding.html) property. It gets or sets the value binding that associates the GridColumn with a property in the data source.  
 
 #### MappingName
 
@@ -967,11 +968,11 @@ data.Colum.Add(numericColumn);
 
 ## How to
 
-### How to bind a view model property to header template
+### How to bind a view model property inside header template?
 
 SfDataGrid allows you to bind the view model property to [HeaderTemplate](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderTemplateProperty.html) by setting the BindingContext of the [GridColumn](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn.html) as `ViewModel`.
 
-The below code example illustrates how to bind the view model property to `Header Template`.
+The below code example illustrates how to bind a view model property inside `HeaderTemplate`.
 
 {% highlight xaml %}
 

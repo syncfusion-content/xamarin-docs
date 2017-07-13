@@ -185,7 +185,7 @@ When BeginInit method is called it suspends all the updates until EndInit method
 
 ## How to
 
-### How to bind the viewModel property as BindingContext
+### How to bind the viewModel property inside HeaderTemplate?
 
 SfDataGrid allows you to bind the view model property to [HeaderTemplate](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderTemplate.html) by setting the BindingContext of the `GridColumn` as `ViewModel`.
 

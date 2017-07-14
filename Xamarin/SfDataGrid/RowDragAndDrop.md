@@ -263,3 +263,39 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 
 {% endhighlight %}
 
+## Updating summaries when dragging and dropping a row between groups
+
+Grouping and summaries of items in SfDataGrid are manipulated based on group key. When you drag and drop an item from one group to another group, the group key of the dragged item will differ from the group key of the items in the dropped group. Hence by default, the summaries will not be updated. This is the actual behavior of SfDataGrid. 
+
+Hence, in order to update the summaries when a row is dragged and dropped between groups you need to call the `UpdateCaptionSummaries` and `Refresh` methods in the `QueryRowDragging` event.
+
+{% highlight c#%}
+public partial class MainPage : ContentPage
+{
+    private SfDataGrid dataGrid;
+    private ViewModel viewModel;
+    public MainPage()
+    {
+         InitializeComponent();
+         dataGrid = new SfDataGrid();
+         viewModel = new ViewModel();
+         dataGrid.ItemsSource = viewModel.OrdersInfo;
+         dataGrid.QueryRowDragging += DataGrid_QueryRowDragging;
+         this.Content = dataGrid;
+    }
+    private async void DataGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
+    {
+         if (e.Reason == QueryRowDraggingReason.DragEnded)
+         {
+             // Delay is given for refreshing the view.
+             await Task.Delay(100);                
+             this.dataGrid.View.TopLevelGroup.UpdateCaptionSummaries();
+             this.dataGrid.View.Refresh();
+          }
+    }
+}
+{% endhighlight %}
+
+The following screenshot shows the output rendered when executing the above code example.
+
+![](SfDataGrid_images/SummaryUpdate.png)

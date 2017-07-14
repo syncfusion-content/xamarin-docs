@@ -537,7 +537,7 @@ sfGrid.CaptionSummaryRow= summaryRow;
 ![](SfDataGrid_images/Summary_img14.png)
 
  
-### Formatting Summary for Row using Title property
+### Formatting Summary for row using Title property
 
 You can format the summary value for row using [GridSummaryRow.Title](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSummaryRow~Title.html) when `ShowSummaryInRow` set to `true`.
 
@@ -584,43 +584,6 @@ sfGrid.CaptionSummaryRow= summaryRow;
 ![](SfDataGrid_images/Summary_img15.png)
 
 N> Setting the `SummaryColumn.Format` property to {Sum:c} throws an exception since the compiler treats it like how we set binding to a string, since the syntax is the same. But here we are trying to set the cuture format for the string. Hence set the format as Format = "{}{Sum:c}" when setting the format in XAML.  
-
-### Updating the summaries if row drag and drop performed between groups
-
-Grouping and summaries of items in SfDataGrid are manipulated based on a group key. When you drag and drop an item from one group to another group, the group key of the dragged item will differ from the group key of the items in the dropped group. Hence by default the summaries will not be updated. This is the actual behavior of SfDataGrid. 
-
-Hence, in order to update the summaries when a row is dragged and dropped between groups you need to call the `UpdateCaptionSummaries` and `Refresh` methods in the `QueryRowDragging` event.
-
-{% highlight c#%}
-public partial class MainPage : ContentPage
-{
-        private SfDataGrid dataGrid;
-        private ViewModel viewModel;
-        public MainPage()
-        {
-            InitializeComponent();
-            dataGrid = new SfDataGrid();
-            viewModel = new ViewModel();
-            dataGrid.ItemsSource = viewModel.OrdersInfo;
-            dataGrid.QueryRowDragging += DataGrid_QueryRowDragging;
-            this.Content = dataGrid;
-        }
-       private async void DataGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
-       {
-            if (e.Reason == QueryRowDraggingReason.DragEnded)
-            {
-                    // Delay is given for refreshing the view.
-                    await Task.Delay(100);                
-                    this.dataGrid.View.TopLevelGroup.UpdateCaptionSummaries();
-                    this.dataGrid.View.Refresh();
-            }
-        }
-}
-{% endhighlight %}
-
-The following screenshot shows the output rendered when executing the above code example.
-
-![](SfDataGrid_images/SummaryUpdate.png)
 
 ## Aggregate Types
 

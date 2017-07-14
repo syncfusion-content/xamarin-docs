@@ -537,7 +537,7 @@ sfGrid.CaptionSummaryRow= summaryRow;
 ![](SfDataGrid_images/Summary_img14.png)
 
  
-### Formatting Summary for Row using Title property
+### Formatting Summary for row using Title property
 
 You can format the summary value for row using [GridSummaryRow.Title](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSummaryRow~Title.html) when `ShowSummaryInRow` set to `true`.
 

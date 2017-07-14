@@ -408,3 +408,59 @@ Refer the below code example in which the `InputTransparent` property of the vie
 {% endhighlight %}
 
 ![](SfDataGrid_images/SwipingInTemplateColumn.png)
+
+## How to
+
+### How to cancel the swipe programmatically? 
+
+SfDataGrid allows you to cancel the swipe programmatically by calling the [SfDataGrid.ResetSwipeOffset](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ResetswipeOffset.html) method in [SfDataGrid.SwipeEnded](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SwipeEnded_EV.html#%20%E2%80%9C%E2%80%9D) event.
+
+The below code example illustrates how to cancel the swiping programmatically by calling the `ResetSwipeOffset` method.
+
+{% highlight xaml %}
+
+<syncfusion:SfDataGrid x:Name="datagrid"
+                        ColumnSizer="Star"
+                        AutoGenerateColumns="True"
+                        AllowSwiping="True"
+                        ItemsSource="{Binding OrdersInfo}"
+                        SwipeEnded="Datagrid_SwipeEnded">
+
+  <syncfusion:SfDataGrid.LeftSwipeTemplate>
+    <DataTemplate>
+      <Grid BackgroundColor="Blue">
+        <Label Text ="EDIT"
+                HorizontalTextAlignment="Start"
+                VerticalTextAlignment="Center"
+                LineBreakMode ="NoWrap"
+                BackgroundColor="Transparent"
+                TextColor ="White" />
+      </Grid>
+    </DataTemplate>
+  </syncfusion:SfDataGrid.LeftSwipeTemplate>
+
+  <syncfusion:SfDataGrid.RightSwipeTemplate>
+    <DataTemplate>
+      <Grid BackgroundColor="Red">
+
+        <Label FontSize="15"
+                HorizontalTextAlignment ="Center"
+                Text ="Deleted"
+                TextColor ="White"
+                VerticalTextAlignment ="Center"
+                LineBreakMode ="NoWrap" />
+      </Grid>
+      </DataTemplate>
+  </syncfusion:SfDataGrid.RightSwipeTemplate>
+</syncfusion:SfDataGrid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+private void Datagrid_SwipeEnded(object sender, SwipeEndedEventArgs e)
+{
+    datagrid.ResetSwipeOffset();
+}
+
+{% endhighlight %}

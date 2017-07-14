@@ -59,7 +59,8 @@ GridColumn is the base column type of all the columns in the SfDataGrid, hence G
 
 ### Binding options
 
-The display content of GridColumn is determined from [GridColumn.DisplayBinding](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~DisplayBinding.html) property. It gets and sets the binding that associates the GridColumn with a property in the data source. 
+The display content of GridColumn is determined from [GridColumn.DisplayBinding](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~DisplayBinding.html) property. It gets or sets the binding that associates the GridColumn with a property in the data source. 
+The actual bound value of the GridColumn is determined from [GridColumn.ValueBinding](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~ValueBinding.html) property. It gets or sets the value binding that associates the GridColumn with a property in the data source.  
 
 #### MappingName
 
@@ -574,6 +575,66 @@ The following screenshot shows the different types of columns in SfDataGrid
 
 ![](SfDataGrid_images/TemplateColumns2.png)
 
+### Getting row index of a row in GridTemplateColumn
+SfDataGrid provides various resolving methods to resolve the row index of grid rows based on certain criteria. The actual row index of a row can be resolved by using the `ResolveToRowIndex(recordRowIndex)` method in SfDataGrid. 
+
+The row index of a grid row can be obtained in GridTemplateColumn by retrieving the record index of the row using the bound data from its `BindingContext` and then by resolving the recordRowIndex using `SfDataGrid.ResolveToRowIndex(recordRowIndex)` method.
+
+{% highlight xaml %}
+// MainPage.Xaml
+<sfgrid:GridTemplateColumn HeaderText="ShipCity" MappingName="ShipCity">
+  <sfgrid:GridTemplateColumn.CellTemplate>
+    <DataTemplate>
+      <Button Clicked="button_Clicked" WidthRequest="120" Text="{Binding ShipCity}"/>
+    </DataTemplate>
+  </sfgrid:GridTemplateColumn.CellTemplate>
+</sfgrid:GridTemplateColumn>
+{% endhighlight %}
+
+{% highlight c# %}
+// MainPage.cs 
+public partial class MainPage : ContentPage
+{
+     public MainPage()
+     {
+         InitializeComponent();
+     }
+     private void button_Clicked(object sender, EventArgs e)
+     {
+          var button = sender as Button;
+          var record = button.BindingContext as OrderInfo;
+          var recordRowIndex = viewModel.OrderInfoCollection.IndexOf(record);
+          var rowIndex = sfGrid.ResolveToRowIndex(recordRowIndex);
+     }
+}
+{% endhighlight %}
+
+N> The row index of the row can also be accessed by using [GridTapped](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridTapped_EV.html), [GridDoubleTapped](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridDoubleTapped_EV.html) and [GridLongPressed events](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridLongPressed_EV.html). When using complex layout inside a `DataTemplate`, ensure to set the `InputTransparent` property of the views loaded in the `DataTemplate` of the GridTemplateColumn as `True`.
+
+### Loading DatePicker and TimePicker Combinedly 
+
+Currently, Xamarin.Forms does not provide a view that combines both the [DatePicker](https://developer.xamarin.com/api/type/Xamarin.Forms.DatePicker/) and the [TimePicker](https://developer.xamarin.com/api/type/Xamarin.Forms.TimePicker/) as one control,however, the two are available individually. 
+SfDataGrid have support for using `DatePicker` and `TimePicker` in a same column. It can be achieved by loading the `DatePicker` and `TimePicker` in a [StackLayou](https://developer.xamarin.com/api/type/Xamarin.Forms.StackLayout/) in the `GridTemplateColumn`.
+
+The following code example illustrates how to load `DatePicker` and `TimePicker` combinedly in GridColumn.
+
+{% highlight xaml %}
+<sfgrid:GridTemplateColumn MappingName="ShippingDate">
+    <sfgrid:GridTemplateColumn.CellTemplate>
+        <DataTemplate>
+           <StackLayout Orientation="Horizontal">
+              <DatePicker Date="{Binding ShippingDate}" TextColor="Black"/>
+              <TimePicker Time="{Binding ShippingTime}" TextColor="Black"/>
+           </StackLayout>
+      </DataTemplate>
+   </sfgrid:GridTemplateColumn.CellTemplate>
+</sfgrid:GridTemplateColumn>
+{% endhighlight %}
+
+The following screenshot shows that how `DatePicker` and `TimePicker` are combinedly viewed in SfDataGrid.
+
+![](SfDataGrid_images/DateTimePicker.png)
+
 ## Row Header 
 
 RowHeader is a special column which is placed as first cell of each row and it will always be frozen. To enable the row header in SfDataGrid, you need to set the `SfDataGrid.ShowRowHeader` as `true`.
@@ -907,11 +968,11 @@ The following screenshots expalins the above code and shows the working of the `
 
 Here in the above code example underlying collection has 2 properties (OrderID,EmployeeID). We have created a `GridPickerColumn` with MappingName = OrderID, DisplayMemberPath = EmployeeID, ValueMemberPath = OrderID. EmployeeId has the values 6,7,8,9,10.... and OrderID has the values 1,2,3,4,5.... Initially the GridCells of the `PickerColumn` will be displayed with the values 6,7,8,9,10.... in row wise order based on the `DisplayMemberPath`.
 
-![](SfDataGrid_images/PickerColumn_DisplayMemberPath.jpg)
+![](SfDataGrid_images/PickerColumn_DisplayMemberPath.png)
 
 Upon entering the edit mode at RowColumnIndex(1,1) , the Picker pop up opens and with the picker items as 6,7,8,9,10.... again based on the `DisplayMemberPath`.
 
-![](SfDataGrid_images/PickerColumn_PickerPopUp.jpg)
+![](SfDataGrid_images/PickerColumn_PickerPopUp.png)
 
 When edit mode is exited by selecting a value(9) from the Picker pop up, the `GridCell` at RowColumn index (0,1) displays the corresponding OrderID value for the selected EmployeeID value which is 4. Note that the PickerColumn's `GridCell` data is not changed and only the OrderID columns data is changed to 4. 
 
@@ -964,3 +1025,39 @@ data.Colum.Add(numericColumn);
 * [NumberNegativePatter](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridNumericColumn~NumberNegativePattern.html) - You can format the pattern of negative numeric values using `GridNumericColumn.NumberNegativePattern`.
 
 ![](SfDataGrid_images/Editing_NumericColumn_Forms.png)
+
+## How to
+
+### How to bind a view model property inside header template?
+
+SfDataGrid allows you to bind the view model property to [HeaderTemplate](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderTemplateProperty.html) by setting the BindingContext of the [GridColumn](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn.html) as `ViewModel`.
+
+The below code example illustrates how to bind a view model property inside `HeaderTemplate`.
+
+{% highlight xaml %}
+
+<sfgrid:SfDataGrid x:Name="dataGrid" 
+                    ItemsSource="{Binding OrdersInfo}" 
+                    AutoGenerateColumns="False"
+                    ColumnSizer="Star" 
+                    SelectionMode="Single">
+      <sfgrid:SfDataGrid.Columns>
+        <sfgrid:GridTextColumn MappingName="OrderID">
+           <sfgrid:GridColumn.HeaderTemplate>
+              <DataTemplate>
+               <Label BindingContext="{StaticResource viewModel}" 
+                            VerticalTextAlignment ="Center"
+                            HorizontalTextAlignment="Center"
+                      Text="{Binding Headertext}" TextColor="Blue" IsVisible="{Binding _Visibility}"/>
+              </DataTemplate>
+            </sfgrid:GridColumn.HeaderTemplate>
+        </sfgrid:GridTextColumn>
+        <sfgrid:GridTextColumn MappingName="EmployeeID"/>
+        <sfgrid:GridTextColumn MappingName="FirstName"/>
+        <sfgrid:GridTextColumn MappingName="ShipCity"/>
+      </sfgrid:SfDataGrid.Columns>
+ </sfgrid:SfDataGrid>
+
+{% endhighlight %}
+
+![](SfDataGrid_images/ViewModelPropertyHeaderTemplate.png)

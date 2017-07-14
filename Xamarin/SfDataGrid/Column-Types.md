@@ -615,7 +615,7 @@ N> The row index of the row can also be accessed by using [GridTapped](https://h
 Currently, Xamarin.Forms does not provide a view that combines both the [DatePicker](https://developer.xamarin.com/api/type/Xamarin.Forms.DatePicker/) and the [TimePicker](https://developer.xamarin.com/api/type/Xamarin.Forms.TimePicker/) as one control,however, the two are available individually. 
 SfDataGrid have support for using `DatePicker` and `TimePicker` in a same column. It can be achieved by loading the `DatePicker` and `TimePicker` in a [StackLayou](https://developer.xamarin.com/api/type/Xamarin.Forms.StackLayout/) in the `GridTemplateColumn`.
 
-The following code example illustrates how to load DatePicker and TimePicker combainedly in GridColumn.
+The following code example illustrates how to load DatePicker and TimePicker combinedly in GridColumn.
 
 {% highlight xaml %}
 <sfgrid:GridTemplateColumn MappingName="ShippingDate">

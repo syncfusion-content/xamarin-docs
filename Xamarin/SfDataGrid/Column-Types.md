@@ -475,7 +475,7 @@ public class ViewModel
 
 ## GridTemplateColumn
 
-GridTemplateColumn is derived from GridColumn, and hence it inherits all the properties of GridColumn. It allows you to extend the functionality of GridColumn with your own view by creating the CellTemplate or CellTemplateSelector of GridTemplateColumn.
+GridTemplateColumn is derived from GridColumn, and hence it inherits all the properties of GridColumn. It allows you to extend the functionality of GridColumn with your own view by creating the `CellTemplate` or `CellTemplateSelector` of GridTemplateColumn.
 
 The below table provides the list of properties in GridTemplateColumn.
 

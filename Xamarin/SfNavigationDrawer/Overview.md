@@ -17,6 +17,6 @@ Essential NavigationDrawer for Xamarin.Forms is a simpler component to create na
 
 * Pane positions – Supports pane position in all four directions such as Left, Right, Top and Bottom. 
 
-* Animated transitions – Open/Close of supplemental pane is adorable due to these transitions SlideOnTop, Push and Reveal.
+* Animated transitions – Supports opening/closing of pane due to the transition SlideOnTop, Push and Reveal.
 
 * Changeable swipe sensitivity – Flexibile for the users to update touch threshold based on their device screen size.

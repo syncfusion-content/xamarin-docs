@@ -127,7 +127,7 @@ string[] CustomerID = new string[] {
 
 ## Customize Load More Display Text
 
-You can customize the text displayed in the [LoadMoreView](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.LoadMoreView.html) by setting the [SfDataGrid.LoadMoreText](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~LoadMoreText.html) property as below.
+You can customize the text displayed in the `LoadMoreView` by setting the [SfDataGrid.LoadMoreText](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~LoadMoreText.html) property as below.
 
 {% highlight c# %}
 //setting load more text in SfDataGrid
@@ -136,7 +136,7 @@ dataGrid.LoadMoreText = "Load More Items";
 
 ## Customize LoadMoreView Position
 
-You can also customize the position in which the [LoadMoreView](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.LoadMoreView.html) is displayed to either `top` or `bottom` based on your requirements.
+You can also customize the position in which the `LoadMoreView` is displayed to either `top` or `bottom` based on your requirements.
  
 {% highlight c# %}
 //Enable load more in SfDataGrid
@@ -145,7 +145,7 @@ dataGrid.LoadMorePosition = LoadMoreViewPosition.Bottom;
 
 ## Customize LoadMoreView
 
-SfDataGrid also allows you to customize the [LoadMoreView](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.LoadMoreView.html) based on your requirements. To do this you need to write your custom `LoadMoreView` class inheriting from the `LoadMoreView` and perform the `LoadMoreOperation` based on your requirement.
+SfDataGrid also allows you to customize the `LoadMoreView` based on your requirements. To do this you need to write your custom `LoadMoreView` class inheriting from the `LoadMoreView` and perform the `LoadMoreOperation` based on your requirement.
 
 The following code example illustrates how to customize the `LoadMoreView` in SfDataGrid.
  

@@ -41,7 +41,7 @@ dataGrid.ItemsSource = viewModel.OrderInfoCollection;
 
 If the data source implements `ICollectionChanged` interface, then SfDataGrid will automatically refresh the view when an item is added, removed or cleared. When you add or remove an item in `ObservableCollection`, the SfDataGrid automatically refreshes the view as the `ObservableCollection` implements the [INotifyCollectionChanged](https://msdn.microsoft.com/en-us/library/system.collections.specialized.inotifycollectionchanged(v=vs.110).aspx). But when you do the same in `List`, SfDataGrid will not refresh the view automatically.
 
-If the data model implements the `INotifyPropertyChanged` interface, then the SfDataGrid responds to the property change in runtime to update the view.
+If the data model implements the [INotifyPropertyChanged](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifypropertychanged(v=vs.110).aspx) interface, then the SfDataGrid responds to the property change in runtime to update the view.
 
 N> SfDataGrid does not supports `DataTable` binding in `Xamarin.Forms` since `System.Data` is inaccessible in `Portable Class Library`.
 
@@ -73,9 +73,9 @@ this.dataGrid.Columns.Add(new GridTextColumn() { MappingName = "OrderID.Order" }
 
 ## View
 
-DataGrid has the `View` property of type [ICollectionViewAdv](https://help.syncfusion.com/cr/cref_files/xamarin/data/Syncfusion.Data.Portable~Syncfusion.Data.CollectionViewAdv.html) interface that implements `ICollectionView` interface. `View` is responsible for maintaining and manipulating data and other advanced operations like `Sorting`, `Grouping`, and etc.
+DataGrid has the [View](https://developer.xamarin.com/api/type/Xamarin.Forms.View/) property of type [ICollectionViewAdv](https://help.syncfusion.com/cr/cref_files/xamarin/data/Syncfusion.Data.Portable~Syncfusion.Data.CollectionViewAdv.html) interface that implements [ICollectionView](https://help.syncfusion.com/cr/cref_files/xamarin/data/Syncfusion.Data.Portable~Syncfusion.Data.ICollectionView.html) interface. `View` is responsible for maintaining and manipulating data and other advanced operations like [Sorting](https://help.syncfusion.com/xamarin/sfdatagrid/getting-started#sorting), [Grouping](https://help.syncfusion.com/xamarin/sfdatagrid/getting-started#grouping), and etc.
 
-When you bind collection to `ItemsSource` property of SfDataGrid, then `View` will be created and maintains the operations on `Data` such as `Grouping`, `Sorting`, `Insert`, `Delete`, and `Modification`.
+When you bind collection to [ItemsSource](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ItemsSource.html) property of SfDataGrid, then `View` will be created and maintains the operations on `Data` such as `Grouping`, `Sorting`, `Insert`, `Delete`, and `Modification`.
 
 Note> DataGrid creates different types of views derived from `ICollectionViewAdv` interface based on `ItemsSource`.
 
@@ -116,7 +116,7 @@ The following events are associated with `View`.
 
 ### RecordPropertyChanged
 
-[RecordPropertyChanged](https://help.syncfusion.com/cr/cref_files/xamarin/data/Syncfusion.Data.Portable~Syncfusion.Data.ICollectionViewAdv~RecordPropertyChanged_EV.html) event is raised when the `DataModel` property value is changed, if the `DataModel` implements the `INotifyPropertyChanged` interface. The event receives with two arguments namely sender that handles the `DataModel` and [PropertyChangedEventArgs](http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.PropertyChangedEventArgs)&rd=true) as argument.
+[RecordPropertyChanged](https://help.syncfusion.com/cr/cref_files/xamarin/data/Syncfusion.Data.Portable~Syncfusion.Data.ICollectionViewAdv~RecordPropertyChanged_EV.html) event is raised when the `DataModel` property value is changed, if the `DataModel` implements the [INotifyPropertyChanged](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifypropertychanged(v=vs.110).aspx) interface. The event receives with two arguments namely sender that handles the `DataModel` and [PropertyChangedEventArgs](http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.PropertyChangedEventArgs)&rd=true) as argument.
 
 `PropertyChangedEventArgs` has below property,
 
@@ -140,7 +140,7 @@ The following events are associated with `View`.
 
 ### SourceCollectionChanged
 
-[SourceCollectionChanged](https://help.syncfusion.com/cr/cref_files/xamarin/data/Syncfusion.Data.Portable~Syncfusion.Data.ICollectionViewAdv~SourceCollectionChanged_EV.html) event is raised when you make changes in `SourceCollection` for example add or remove the collection. The event receives two arguments namely sender that handles `GridQueryableCollectionViewWrapper` object and `NotifyCollectionChangedEventArgs` as argument.
+[SourceCollectionChanged](https://help.syncfusion.com/cr/cref_files/xamarin/data/Syncfusion.Data.Portable~Syncfusion.Data.ICollectionViewAdv~SourceCollectionChanged_EV.html) event is raised when you make changes in [SourceCollection](https://help.syncfusion.com/cr/cref_files/xamarin/data/Syncfusion.Data.Portable~Syncfusion.Data.ICollectionView~SourceCollection.html) for example add or remove the collection. The event receives two arguments namely sender that handles `GridQueryableCollectionViewWrapper` object and [NotifyCollectionChangedEventArgs](http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.Collections.Specialized.NotifyCollectionChangedEventArgs)&rd=true) as argument.
 
 `NotifyCollectionChangedEventArgs` has below properties,
 

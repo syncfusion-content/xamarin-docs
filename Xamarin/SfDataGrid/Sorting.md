@@ -187,7 +187,7 @@ The following code example illustrates how to perform custom sorting for FirstNa
 {% highlight c# %}
 dataGrid.SortComparers.Add (new SortComparer () {
     PropertyName = "FirstName",
-    Comparer = new CustomComparer()
+    Comparer = new CustomerInfo()
 });
 
 dataGrid.SortColumnDescriptions.Add (new SortColumnDescription () {

@@ -805,7 +805,7 @@ The following code example shows you how to load the `GridPickerColumn` with a s
 
 {% highlight c# %}
 dataGrid = new SfDataGrid();
-GridPickerColumn pickercolumn = new GridPickerColumn()
+GridPickerColumn pickerColumn = new GridPickerColumn()
 {
     BindingContext = viewModel,
     MappingName = "DealerName",
@@ -813,7 +813,7 @@ GridPickerColumn pickercolumn = new GridPickerColumn()
     HeaderText = "Dealer Name"
 
 };
-dataGrid.Columns.Add(pickercolumn);
+dataGrid.Columns.Add(pickerColumn);
 {% endhighlight %}
 {% endtabs %}
 
@@ -1002,13 +1002,13 @@ The [GridNumericColumn](https://help.syncfusion.com/cr/cref_files/xamarin/sfdata
 {% highlight c# %}
 dataGrid = new SfDataGrid();
             
-GridNumericColumn numeric = new GridNumericColumn()
+GridNumericColumn numericColumn = new GridNumericColumn()
 {
     MappingName = "ProductNo",
     HeaderText = "Product No",
     NumberDecimalDigits =0
 };
-dataGrid.Columns.Add(numeric);
+dataGrid.Columns.Add(numericColumn);
 {% endhighlight %}
 {% endtabs %}
 

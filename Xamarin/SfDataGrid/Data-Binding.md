@@ -77,7 +77,7 @@ DataGrid has the `View` property of type [ICollectionViewAdv](https://help.sync
 
 When you bind collection to `ItemsSource` property of SfDataGrid, then `View` will be created and maintains the operations on `Data` such as `Grouping`, `Sorting`, `Insert`, `Delete`, and `Modification`.
 
-Note> DataGrid creates different types of views derived from `ICollectionViewAdv` interface based on `ItemsSource`.
+N> DataGrid creates different types of views derived from `ICollectionViewAdv` interface based on `ItemsSource`.
 
 The following property is associated with `View`.
 

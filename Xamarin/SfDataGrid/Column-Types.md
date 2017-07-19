@@ -668,7 +668,7 @@ The [SfDatarGrid.GridDateTimeColumn](https://help.syncfusion.com/cr/cref_files/x
 {% tabs %}
 {% highlight xaml %}
 <ContentPage.BindingContext>
-    <local:ViewModel />
+    <local:ViewModel x:Name ="viewModel"/>
 </ContentPage.BindingContext>
 
 <sfGrid:SfDataGrid x:Name="dataGrid"                   
@@ -685,11 +685,11 @@ The [SfDatarGrid.GridDateTimeColumn](https://help.syncfusion.com/cr/cref_files/x
 dataGrid = new SfDataGrid();
 GridDateTimeColumn dateColumn = new GridDateTimeColumn()
 {
-    Format = "d",
+    MappingName = "ShippedDate",
     HeaderText = "Shipped Date",
-    MappingName = "ShippedDate"
+    Format = "d"
 };
-data.Colum.Add(dateColumn);
+dataGrid.Columns.Add(dateColumn);
 {% endhighlight %}
 {% endtabs %}
 
@@ -807,12 +807,13 @@ The following code example shows you how to load the `GridPickerColumn` with a s
 dataGrid = new SfDataGrid();
 GridPickerColumn pickerColumn = new GridPickerColumn()
 {
-    BindingContext = viewModel;
-    ItemsSource = viewModel.CustomerNames;
-    HeaderText = "Dealer Name",
-    MappingName = "DealerName"
+    BindingContext = viewModel,
+    MappingName = "DealerName",
+    ItemsSource = viewModel.CustomerNames,
+    HeaderText = "Dealer Name"
+
 };
-data.Colum.Add(pickerColumn);
+dataGrid.Columns.Add(pickerColumn);
 {% endhighlight %}
 {% endtabs %}
 
@@ -985,7 +986,7 @@ The [GridNumericColumn](https://help.syncfusion.com/cr/cref_files/xamarin/sfdata
 {% tabs %}
 {% highlight xaml %}
 <ContentPage.BindingContext>
-    <local:ViewModel />
+    <local:ViewModel  x:Name ="viewModel"/>
 </ContentPage.BindingContext>
 
 <sfGrid:SfDataGrid x:Name="dataGrid"                   
@@ -1000,13 +1001,14 @@ The [GridNumericColumn](https://help.syncfusion.com/cr/cref_files/xamarin/sfdata
 
 {% highlight c# %}
 dataGrid = new SfDataGrid();
+            
 GridNumericColumn numericColumn = new GridNumericColumn()
 {
-    numericColumn.MappingName = "ProductNo",
-    numericColumn.HeaderText = "Product No",
-    numericColumn.NumberDecimalDigits = 0
+    MappingName = "ProductNo",
+    HeaderText = "Product No",
+    NumberDecimalDigits =0
 };
-data.Colum.Add(numericColumn);
+dataGrid.Columns.Add(numericColumn);
 {% endhighlight %}
 {% endtabs %}
 
@@ -1022,7 +1024,7 @@ data.Colum.Add(numericColumn);
 
 * [NumberGroupSizes](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridNumericColumn~NumberGroupSizes.html) - You can change the number of digits in each group before the decimal point on numeric values using `GridNumericColumn.NumberGroupSizes` property.
 
-* [NumberNegativePatter](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridNumericColumn~NumberNegativePattern.html) - You can format the pattern of negative numeric values using `GridNumericColumn.NumberNegativePattern`.
+* [NumberNegativePattern](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridNumericColumn~NumberNegativePattern.html) - You can format the pattern of negative numeric values using `GridNumericColumn.NumberNegativePattern`.
 
 ![](SfDataGrid_images/Editing_NumericColumn_Forms.png)
 

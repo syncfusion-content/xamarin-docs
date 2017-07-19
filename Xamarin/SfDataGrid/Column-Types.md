@@ -475,7 +475,7 @@ public class ViewModel
 
 ## GridTemplateColumn
 
-GridTemplateColumn is derived from GridColumn, and hence it inherits all the properties of GridColumn. It allows you to extend the functionality of GridColumn with your own view by creating the `CellTemplate` of GridTemplateColumn.
+GridTemplateColumn is derived from GridColumn, and hence it inherits all the properties of GridColumn. It allows you to extend the functionality of GridColumn with your own view by creating the `CellTemplate` or `CellTemplateSelector` of GridTemplateColumn.
 
 The below table provides the list of properties in GridTemplateColumn.
 
@@ -490,6 +490,12 @@ The below table provides the list of properties in GridTemplateColumn.
 <td>CellTemplate</td>
 <td>DataTemplate</td>
 <td>Gets or sets the template that is used to display the contents of the record cells.</td>
+<td>Null</td>
+</tr>
+<tr>
+<td>CellTemplateSelector</td>
+<td>DataTemplateSelector</td>
+<td>Gets or sets the template selector that is used to display the contents of the record cells.</td>
 <td>Null</td>
 </tr>
 </table>
@@ -574,6 +580,71 @@ public class ImageConverter:IValueConverter
 The following screenshot shows the different types of columns in SfDataGrid
 
 ![](SfDataGrid_images/TemplateColumns2.png)
+
+## CellTemplateSelector
+
+The following code example shows templating of the GridTemplateColumn by using the `CellTemplateSelector` property. Underlying record will be the BindingContext for the `CellTemplateSelector`.
+
+{% highlight xaml %}
+<ContentPage.Resources>
+    <ResourceDictionary>
+        <DataTemplate x:Key="low" >
+            <Label Text="{Binding Freight}"
+                   TextColor="White" 
+                   BackgroundColor="Red" 
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" />
+        </DataTemplate>
+        <DataTemplate x:Key="average" >
+            <Label Text="{Binding Freight}"
+                   TextColor="Black" 
+                   BackgroundColor="Yellow" 
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" />
+        </DataTemplate>
+        <DataTemplate x:Key="high" >
+            <Label Text="{Binding Freight}" 
+                   TextColor="White" 
+                   BackgroundColor="Green" 
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" />
+        </DataTemplate>
+    </ResourceDictionary>
+</ContentPage.Resources>
+
+<sfgrid:GridTemplateColumn MappingName="Freight" >
+    <sfgrid:GridTemplateColumn.CellTemplateSelector>
+        <local:FreightTemplateSelector High="{StaticResource high}"
+                                       Average="{StaticResource average}"
+                                       Low="{StaticResource low}"/>
+    </sfgrid:GridTemplateColumn.CellTemplateSelector>
+</sfgrid:GridTemplateColumn>
+{% endhighlight %}
+
+{% highlight c# %}
+// FreightTemplateSelector implementation
+public class FreightTemplateSelector : DataTemplateSelector
+{
+    public DataTemplate Low { get; set; }
+
+    public DataTemplate Average { get; set; }
+
+    public DataTemplate High { get; set; }
+
+    protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
+    {
+        var value = double.Parse((item as OrderInfo).Freight);
+        if (value > 750)
+            return High;
+        else if (value > 500)
+            return Average;
+        else
+            return Low;
+    }
+}
+{% endhighlight %}
+
+![](SfDataGrid_images/CellTemplateSelector.png)
 
 ### Getting row index of a row in GridTemplateColumn
 SfDataGrid provides various resolving methods to resolve the row index of grid rows based on certain criteria. The actual row index of a row can be resolved by using the `ResolveToRowIndex(recordRowIndex)` method in SfDataGrid. 

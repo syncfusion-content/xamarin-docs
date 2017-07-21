@@ -327,7 +327,7 @@ Now run the application to render the following output.
 
 By default, the SfDataGrid automatically creates columns for all the properties in the data source. The type of the column generated depends on the type of data in the column. When the columns are auto-generated, you can handle the [SfDataGrid.AutoGeneratingColumn](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoGeneratingColumn_EV.html) event to customize or cancel the columns before they are added to the Columns collection in SfDataGrid.
  
-You can also define the columns manually by setting the [SfDataGrid.AutoGenerateColumns](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoGenerateColumns.html) property to false and by adding the GridColumn objects to the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~Columns.html) collection. It can be done from both XAML and code. The following code example illustrates this. 
+You can also define the columns manually by setting the [SfDataGrid.AutoGenerateColumns](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoGenerateColumns.html) property to false and by adding the [GridColumn](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn.html) objects to the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~Columns.html) collection. It can be done from both XAML and code. The following code example illustrates this. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -430,11 +430,11 @@ You can handle the selection operations with the help of [SelectionChanging](htt
 
 ## Launching the SfDataGrid inside a StackLayout
 
-The StackLayout positions the child element one after the other, either horizontally or vertically in the order they were added. How much space the StackLayout will use depends on how the HorizontalOptions and VerticalOptions properties are set, but by default the StackLayout will try to use the entire screen.
+The StackLayout positions the child element one after the other, either horizontally or vertically in the order they were added. How much space the [StackLayout](https://developer.xamarin.com/api/type/Xamarin.Forms.StackLayout/) will use depends on how the HorizontalOptions and VerticalOptions properties are set, but by default the `StackLayout` will try to use the entire screen.
 
-SfDataGrid control can be loaded inside any layout such as GridLayout, StackLayout etc. When you load SfDataGrid inside a StackLayout, you have to set the Horizontal and/or VerticalOptions of the SfDataGrid and its parent to “LayoutOptions.FillAndExpand” based on the orientation of the container in which SfDataGrid is loaded.
+SfDataGrid control can be loaded inside any layout such as [Grid](https://developer.xamarin.com/api/type/Xamarin.Forms.Grid/), `StackLayout` etc. When you load SfDataGrid inside a `StackLayout`, you have to set the Horizontal and/or VerticalOptions of the SfDataGrid and its parent to “LayoutOptions.FillAndExpand” based on the orientation of the container in which SfDataGrid is loaded.
 
-Refer the following code example to load the SfDataGrid control inside a StackLayout. The VerticalOptions of the StackLayout and SfDataGrid alone is set as “FillAndExpand” as the default orientation of the StackLayout is vertical.
+Refer the following code example to load the SfDataGrid control inside a `StackLayout`. The VerticalOptions of the `StackLayout` and SfDataGrid alone is set as “FillAndExpand” as the default orientation of the `StackLayout` is vertical.
 
 {% tabs %}
 {% highlight xaml %}
@@ -491,7 +491,7 @@ Refer the following screenshot for the final outcome
 
 ![](SfDataGrid_images/GridInStackLayout.png)
 
-N> In case, if the orientation of the StackLayout is horizontal, then you have to set the HorizontalOptions instead. In some case, you may have to set both the “VerticalOptions” and “HorizontalOptions” of the SfDataGrid based on its parent.
+N> In case, if the orientation of the `StackLayout` is horizontal, then you have to set the HorizontalOptions instead. In some case, you may have to set both the “VerticalOptions” and “HorizontalOptions” of the SfDataGrid based on its parent.
 
 ## Linker issue in Xamarin.Forms.iOS
 

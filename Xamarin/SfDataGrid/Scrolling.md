@@ -48,7 +48,7 @@ SfDataGrid allow you to scroll to particular Row and Column index from programma
 
 ### Scroll to Row and Column Index
 
-* You can scroll programmatically to particular Row and Column using `SfDataGrid.ScrollToRowColumnIndex` method by passing row and column index.
+* You can scroll programmatically to particular Row and Column using [SfDataGrid.ScrollToRowColumnIndex]http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ScrollToRowColumnIndex.html() method by passing row and column index.
 
 {% highlight C# %}
 
@@ -58,7 +58,7 @@ dataGrid.ScrollToRowColumnIndex(int rowIndex, int columnIndex);
 
 ### Scroll to Row Index
 
-* You can scroll programmatically to particular Row `SfDataGrid.ScrollToRowIndex` method by passing row index.
+* You can scroll programmatically to particular Row [SfDataGrid.ScrollToRowIndex](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ScrollToRowIndex.html) method by passing row index.
 
 {% highlight C# %}
 
@@ -68,7 +68,7 @@ dataGrid.ScrollToRowIndex(int rowIndex);
 
 ### Scroll to Column Index
 
-* You can scroll programmatically to particular Column `SfDataGrid.ScrollToColumnIndex` method by passing column index.
+* You can scroll programmatically to particular Column [SfDataGrid.ScrollToColumnIndex](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ScrollToColumnIndex.html) method by passing column index.
 
 {% highlight C# %}
 
@@ -77,7 +77,7 @@ dataGrid.ScrollToColumnIndex(int columnIndex);
 {% endhighlight %}
 
 ### Vertical Over Scroll Mode
-`SfDataGrid.VerticalOverScrollMode` property allows you to customize the bouncing behavior of the SfDataGrid.
+[SfDataGrid.VerticalOverScrollMode](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~VerticalOverScrollMode.html) property allows you to customize the bouncing behavior of the SfDataGrid.
 
  `SfDataGrid.VerticalOverScrollMode` is of type [VerticalScrollMode](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~VerticalOverScrollMode.html) which has the below two modes. 
  * `Bounce` - It allows the SfDataGrid to have bouncing effect. The default value of `SfDataGrid.VerticalOverScrollMode` is `Bounce` 

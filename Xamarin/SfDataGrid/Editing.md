@@ -349,7 +349,7 @@ this.dataGrid.CancelEdit();
 
 ### Cancel Editing
 
-You can use the `SfDataGrid.CurrentCellBeginEdit` event to cancel the editing operation for the corresponding cell. The below code example shows how to cancel the editing operation using the `SfDataGrid.CurrentCellBeginEdit` event.
+You can use the [SfDataGrid.CurrentCellBeginEdit](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~CurrentCellBeginEdit_EV.html) event to cancel the editing operation for the corresponding cell. The below code example shows how to cancel the editing operation using the `SfDataGrid.CurrentCellBeginEdit` event.
 
 {% highlight c# %}
 this.dataGrid.CurrentCellBeginEdit += DataGrid_CurrentCellBeginEdit;
@@ -362,7 +362,7 @@ private void DataGrid_CurrentCellBeginEdit(object sender, GridCurrentCellBeginEd
 
 ### Cancel edited value from getting committed
 
-You can prevent the edited value from getting committed using the `SfDataGrid.CurrentCellEndEdit` event. The below code example shows how to prevent the edited values from getting committed in the underlying collection.
+You can prevent the edited value from getting committed using the [CurrentCellEndEdit](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~CurrentCellEndEdit_EV.html) event. The below code example shows how to prevent the edited values from getting committed in the underlying collection.
 
 {% highlight c# %}
 this.dataGrid.CurrentCellEndEdit += DataGrid_CurrentCellEndEdit;

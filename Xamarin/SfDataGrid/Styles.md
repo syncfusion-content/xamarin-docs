@@ -9,7 +9,7 @@ documentation: UG
 
 # Styles
 
-SfDatagrid allows you to apply style to all of its elements by writing a Style class overriding from `DataGridStyle` and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridStyle.html) property.
+SfDatagrid allows you to apply style to all of its elements by writing a Style class overriding from [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle.html) and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridStyle.html) property.
   
 The following example explains you how to apply custom style to SfDatagrid.
 
@@ -118,7 +118,7 @@ N> Xamarin.Forms.Style which has specified target type will not be applied to th
 
 ## Border Customization
 
-* SfDatagrid allows you to customize the grid borders to vertical, horizontal, both or none based on requirements. Override the DataGridStyle.GetGridLinesVisibility method to customize the borders in SfDataGrid.
+* SfDatagrid allows you to customize the grid borders to vertical, horizontal, both or none based on requirements. Override the [DataGridStyle.GetGridLinesVisibility](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetGridLinesVisibility.html) method to customize the borders in SfDataGrid.
 
 {% highlight c# %}
 //Apply custom style to SfDataGrid from code
@@ -206,7 +206,7 @@ The following screenshot shows the final outcome upon execution of the above cod
 
 ### Change the Sorting Icon in column headers
 
-You can load any desired image as the sort indicator in the `SfDataGrid` using the [GetHeaderSortIndicatorDown](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetHeaderSortIndicatorDown.html) and [GetHeaderSortIndicatorUp](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetHeaderSortIndicatorUp.html) overrides of the `DataGridStyle` class. The following code example illustrates how to change the sort indicators in `SfDataGrid`.
+You can load any desired image as the sort indicator in the `SfDataGrid` using the [GetHeaderSortIndicatorDown](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetHeaderSortIndicatorDown.html) and [GetHeaderSortIndicatorUp](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetHeaderSortIndicatorUp.html) overrides of the [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle.html) class. The following code example illustrates how to change the sort indicators in `SfDataGrid`.
 
 {% highlight c# %}
 
@@ -236,7 +236,7 @@ N> The image's BuildAction must be set to EmbeddedResource in order to access th
 
 ### Change the color of the resizing indicator
 
-You can change the color of the resizing indicator using the [GetResizingIndicatorColor](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetResizingIndicatorColor.html) override of the `DataGridStyle` class. The following code example illustrates how to change the color of the resizing indicator in `SfDataGrid`. 
+You can change the color of the resizing indicator using the [GetResizingIndicatorColor](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetResizingIndicatorColor.html) override of the [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle.html) class. The following code example illustrates how to change the color of the resizing indicator in `SfDataGrid`. 
 
 {% highlight c# %}
 

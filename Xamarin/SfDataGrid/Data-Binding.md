@@ -77,7 +77,7 @@ DataGrid has the [View](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatag
 
 When you bind collection to [ItemsSource](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ItemsSource.html) property of SfDataGrid, then `View` will be created and maintains the operations on `Data` such as `Grouping`, `Sorting`, `Insert`, `Delete`, and `Modification`.
 
-Note> DataGrid creates different types of views derived from `ICollectionViewAdv` interface based on `ItemsSource`.
+N> DataGrid creates different types of views derived from `ICollectionViewAdv` interface based on `ItemsSource`.
 
 The following property is associated with `View`.
 

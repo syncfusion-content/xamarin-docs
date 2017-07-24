@@ -475,7 +475,7 @@ public class ViewModel
 
 ## GridTemplateColumn
 
-GridTemplateColumn is derived from GridColumn, and hence it inherits all the properties of GridColumn. It allows you to extend the functionality of GridColumn with your own view by creating the `CellTemplate` of GridTemplateColumn.
+GridTemplateColumn is derived from GridColumn, and hence it inherits all the properties of GridColumn. It allows you to extend the functionality of GridColumn with your own view by creating the `CellTemplate` or `CellTemplateSelector` of GridTemplateColumn.
 
 The below table provides the list of properties in GridTemplateColumn.
 
@@ -490,6 +490,12 @@ The below table provides the list of properties in GridTemplateColumn.
 <td>CellTemplate</td>
 <td>DataTemplate</td>
 <td>Gets or sets the template that is used to display the contents of the record cells.</td>
+<td>Null</td>
+</tr>
+<tr>
+<td>CellTemplateSelector</td>
+<td>DataTemplateSelector</td>
+<td>Gets or sets the template selector that is used to display the contents of the record cells.</td>
 <td>Null</td>
 </tr>
 </table>
@@ -574,6 +580,71 @@ public class ImageConverter:IValueConverter
 The following screenshot shows the different types of columns in SfDataGrid
 
 ![](SfDataGrid_images/TemplateColumns2.png)
+
+## CellTemplateSelector
+
+The following code example shows templating of the GridTemplateColumn by using the `CellTemplateSelector` property. Underlying record will be the BindingContext for the `CellTemplateSelector`.
+
+{% highlight xaml %}
+<ContentPage.Resources>
+    <ResourceDictionary>
+        <DataTemplate x:Key="low" >
+            <Label Text="{Binding Freight}"
+                   TextColor="White" 
+                   BackgroundColor="Red" 
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" />
+        </DataTemplate>
+        <DataTemplate x:Key="average" >
+            <Label Text="{Binding Freight}"
+                   TextColor="Black" 
+                   BackgroundColor="Yellow" 
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" />
+        </DataTemplate>
+        <DataTemplate x:Key="high" >
+            <Label Text="{Binding Freight}" 
+                   TextColor="White" 
+                   BackgroundColor="Green" 
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" />
+        </DataTemplate>
+    </ResourceDictionary>
+</ContentPage.Resources>
+
+<sfgrid:GridTemplateColumn MappingName="Freight" >
+    <sfgrid:GridTemplateColumn.CellTemplateSelector>
+        <local:FreightTemplateSelector High="{StaticResource high}"
+                                       Average="{StaticResource average}"
+                                       Low="{StaticResource low}"/>
+    </sfgrid:GridTemplateColumn.CellTemplateSelector>
+</sfgrid:GridTemplateColumn>
+{% endhighlight %}
+
+{% highlight c# %}
+// FreightTemplateSelector implementation
+public class FreightTemplateSelector : DataTemplateSelector
+{
+    public DataTemplate Low { get; set; }
+
+    public DataTemplate Average { get; set; }
+
+    public DataTemplate High { get; set; }
+
+    protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
+    {
+        var value = double.Parse((item as OrderInfo).Freight);
+        if (value > 750)
+            return High;
+        else if (value > 500)
+            return Average;
+        else
+            return Low;
+    }
+}
+{% endhighlight %}
+
+![](SfDataGrid_images/CellTemplateSelector.png)
 
 ### Getting row index of a row in GridTemplateColumn
 SfDataGrid provides various resolving methods to resolve the row index of grid rows based on certain criteria. The actual row index of a row can be resolved by using the `ResolveToRowIndex(recordRowIndex)` method in SfDataGrid. 
@@ -668,7 +739,7 @@ The [SfDatarGrid.GridDateTimeColumn](https://help.syncfusion.com/cr/cref_files/x
 {% tabs %}
 {% highlight xaml %}
 <ContentPage.BindingContext>
-    <local:ViewModel />
+    <local:ViewModel x:Name ="viewModel"/>
 </ContentPage.BindingContext>
 
 <sfGrid:SfDataGrid x:Name="dataGrid"                   
@@ -685,11 +756,11 @@ The [SfDatarGrid.GridDateTimeColumn](https://help.syncfusion.com/cr/cref_files/x
 dataGrid = new SfDataGrid();
 GridDateTimeColumn dateColumn = new GridDateTimeColumn()
 {
-    Format = "d",
+    MappingName = "ShippedDate",
     HeaderText = "Shipped Date",
-    MappingName = "ShippedDate"
+    Format = "d"
 };
-data.Colum.Add(dateColumn);
+dataGrid.Columns.Add(dateColumn);
 {% endhighlight %}
 {% endtabs %}
 
@@ -807,12 +878,13 @@ The following code example shows you how to load the `GridPickerColumn` with a s
 dataGrid = new SfDataGrid();
 GridPickerColumn pickerColumn = new GridPickerColumn()
 {
-    BindingContext = viewModel;
-    ItemsSource = viewModel.CustomerNames;
-    HeaderText = "Dealer Name",
-    MappingName = "DealerName"
+    BindingContext = viewModel,
+    MappingName = "DealerName",
+    ItemsSource = viewModel.CustomerNames,
+    HeaderText = "Dealer Name"
+
 };
-data.Colum.Add(pickerColumn);
+dataGrid.Columns.Add(pickerColumn);
 {% endhighlight %}
 {% endtabs %}
 
@@ -985,7 +1057,7 @@ The [GridNumericColumn](https://help.syncfusion.com/cr/cref_files/xamarin/sfdata
 {% tabs %}
 {% highlight xaml %}
 <ContentPage.BindingContext>
-    <local:ViewModel />
+    <local:ViewModel  x:Name ="viewModel"/>
 </ContentPage.BindingContext>
 
 <sfGrid:SfDataGrid x:Name="dataGrid"                   
@@ -1000,13 +1072,14 @@ The [GridNumericColumn](https://help.syncfusion.com/cr/cref_files/xamarin/sfdata
 
 {% highlight c# %}
 dataGrid = new SfDataGrid();
+            
 GridNumericColumn numericColumn = new GridNumericColumn()
 {
-    numericColumn.MappingName = "ProductNo",
-    numericColumn.HeaderText = "Product No",
-    numericColumn.NumberDecimalDigits = 0
+    MappingName = "ProductNo",
+    HeaderText = "Product No",
+    NumberDecimalDigits =0
 };
-data.Colum.Add(numericColumn);
+dataGrid.Columns.Add(numericColumn);
 {% endhighlight %}
 {% endtabs %}
 
@@ -1022,7 +1095,7 @@ data.Colum.Add(numericColumn);
 
 * [NumberGroupSizes](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridNumericColumn~NumberGroupSizes.html) - You can change the number of digits in each group before the decimal point on numeric values using `GridNumericColumn.NumberGroupSizes` property.
 
-* [NumberNegativePatter](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridNumericColumn~NumberNegativePattern.html) - You can format the pattern of negative numeric values using `GridNumericColumn.NumberNegativePattern`.
+* [NumberNegativePattern](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridNumericColumn~NumberNegativePattern.html) - You can format the pattern of negative numeric values using `GridNumericColumn.NumberNegativePattern`.
 
 ![](SfDataGrid_images/Editing_NumericColumn_Forms.png)
 

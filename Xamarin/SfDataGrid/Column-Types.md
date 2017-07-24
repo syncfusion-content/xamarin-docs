@@ -554,7 +554,7 @@ The following code example illustrates how template column can be used to load a
 </ContentPage.ContentView>
 {% endhighlight %}
 
-In order to get the above code example working, you need to write a converter to load the images inside GridCell based on the CellValue. The images that has to be loaded inside the GridCell must be added as EmbeddedResource.
+In order to get the above code example working, you need to write a converter to load the images inside [GridCell](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridCell.html) based on the CellValue. The images that has to be loaded inside the `GridCell` must be added as EmbeddedResource.
 
 The following code example shows you converter code for loading the images in a template column.
 

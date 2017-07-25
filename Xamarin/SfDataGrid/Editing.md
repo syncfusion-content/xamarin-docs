@@ -8,9 +8,9 @@ documentation: ug
 ---
 
 # Editing
-SfDataGrid provides support for editing the cell values by setting [SfDataGrid.AllowEditing](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowEditing.html) property.
+[SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) provides support for editing the cell values by setting [SfDataGrid.AllowEditing](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowEditing.html) property.
 
-The following code example shows how to enable editing in SfDataGrid. 
+The following code example shows how to enable editing in `SfDataGrid`. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -86,7 +86,7 @@ this.dataGrid.EditorSelectionBehavior = EditorSelectionBehavior.MoveLast;
 N> Editing support for GridTemplateColumn and GridUnboundColumn are not provided yet.
 
 ## Support for IEditableObject
-SfDataGrid supports to commit and roll back the changes in row level when underlying data object implements [IEditableObject](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.aspx) interface.
+`SfDataGrid` supports to commit and roll back the changes in row level when underlying data object implements [IEditableObject](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.aspx) interface.
 
 The editing changes in a row will be committed only when user moves to next row by tapping.
 
@@ -304,14 +304,14 @@ SfDataGrid triggers the following events while editing.
 [SfDataGrid.CurrentCellBeginEdit](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~CurrentCellBeginEdit_EV.html) event occurs when the CurrentCell enters into edit mode. [GridCurrentCellBeginEditEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridCurrentCellBeginEditEventArgs.html) has the following members which provides information for `SfDataGrid.CurrentCellBeginEdit` event.
 
 * [Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) : When set to ‘true’, the event is canceled and the CurrentCell does not enter into the edit mode.
-* RowColumnIndex : Gets the current row,column index of the DataGrid.
-* Column : Gets the Grid Column of the SfDataGrid.
+* [RowColumnIndex](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridCurrentCellBeginEditEventArgs~RowColumnIndex.html) : Gets the current row,column index of the DataGrid.
+* [Column](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridCurrentCellBeginEditEventArgs~Column.html) : Gets the Grid Column of the SfDataGrid.
 
 ### CurrentCellEndEdit
 
 [CurrentCellEndEdit](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~CurrentCellEndEdit_EV.html) event occurs when the CurrentCell exits the edit mode. [GridCurrentCellEndEditEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridCurrentCellEndEditEventArgs.html) has following members which provides information for `SfDataGrid.CurrentCellEndEdit` event.
 
-* RowColumnIndex : Gets the current row,column index of the DataGrid.
+* [RowColumnIndex](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridCurrentCellEndEditEventArgs~RowColumnIndex.html) : Gets the current row,column index of the DataGrid.
 * [Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) : When set to ‘true’, the event is canceled and the edited value is not committed in the underlying collection.
 
 ## Programmatically edit a cell

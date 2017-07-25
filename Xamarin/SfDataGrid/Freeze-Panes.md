@@ -9,13 +9,13 @@ documentation: UG
 
 # Freeze panes
 
-SfDataGrid allows you to freeze the rows and columns when scrolling the grid.
+[SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) allows you to freeze the rows and columns when scrolling the grid.
 
 ## Freeze Rows
 
-SfDataGrid provides extensive support to freeze the rows at the top of the view below the header row by setting the [SfDataGrid.FrozenRowsCount](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~FrozenRowsCount.html) property. 
+`SfDataGrid` provides extensive support to freeze the rows at the top of the view below the header row by setting the [SfDataGrid.FrozenRowsCount](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~FrozenRowsCount.html) property. 
 
-The following code example illustrates freezing two rows in SfDataGrid.
+The following code example illustrates freezing two rows in `SfDataGrid`.
 
 {% highlight c# %}
 //Setting number of rows to freeze in SfDataGrid
@@ -33,9 +33,9 @@ N> Header row is frozen by default and works regardless of the `FrozenRowsCount`
 
 ## Freeze Columns
 
-SfDataGrid also provides support to freeze the columns at the left of the view by setting the [SfDataGrid.FrozenColumnsCount](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~FrozenColumnsCount.html) property. 
+`SfDataGrid` also provides support to freeze the columns at the left of the view by setting the [SfDataGrid.FrozenColumnsCount](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~FrozenColumnsCount.html) property. 
 
-The following code example illustrates freezing two columns in SfDataGrid.
+The following code example illustrates freezing two columns in `SfDataGrid`.
 
 {% highlight c# %}
 //Setting number of columns to freeze in SfDataGrid

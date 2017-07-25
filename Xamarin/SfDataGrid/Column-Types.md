@@ -9,9 +9,9 @@ documentation: UG
 
 # Column Types 
 
-SfDataGrid contains different types of column each with its own functionalities as implied by its name. You can use any column based on your requirements. 
+[SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) contains different types of column each with its own functionalities as implied by its name. You can use any column based on your requirements. 
 
-The below table describes you the types of column and its purpose of usage in SfDataGrid.
+The below table describes you the types of column and its purpose of usage in `SfDataGrid`.
 
 <table>
 <tr>
@@ -55,7 +55,7 @@ The below table describes you the types of column and its purpose of usage in Sf
 
 ## GridColumn
 
-[GridColumn](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn.html) is the base column type of all the columns in the SfDataGrid, hence GridColumn properties are used by all the columns. The following sub-sections explains you about the properties in the GridColumn and the customizations that can be done using those properties for all the types of GridColumns available in SfDataGrid.
+[GridColumn](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn.html) is the base column type of all the columns in the `SfDataGrid`, hence GridColumn properties are used by all the columns. The following sub-sections explains you about the properties in the GridColumn and the customizations that can be done using those properties for all the types of GridColumns available in `SfDataGrid`.
 
 ### Binding options
 
@@ -107,7 +107,7 @@ public class DisplayBindingConverter : IValueConverter
 
 #### HeaderCellTextSize
 
-The FontSize for the content of header cell in the GridColumn can be customized by using the [GridColumn.HeaderCellTextSize](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderCellTextSize.html) property. The default font size of the header cells in SfDataGrid is 14.
+The FontSize for the content of header cell in the GridColumn can be customized by using the [GridColumn.HeaderCellTextSize](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderCellTextSize.html) property. The default font size of the header cells in `SfDataGrid` is 14.
 
 #### HeaderFont
 
@@ -119,15 +119,15 @@ The FontAttribute for the content of the header cell in the GridColumn can be cu
 
 #### HeaderText
 
-SfDataGrid allows you to customize the display content of the header cell using the [GridColumn.HeaderText](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderText.html) property. It specifies the text displayed in the column header. If header text is not defined, then `GridColumn.MappingName` will be assigned to the header text and will be displayed as column header.
+`SfDataGrid` allows you to customize the display content of the header cell using the [GridColumn.HeaderText](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderText.html) property. It specifies the text displayed in the column header. If header text is not defined, then `GridColumn.MappingName` will be assigned to the header text and will be displayed as column header.
 
 #### HeaderTextAlignment
 
-You can get or set the TextAlignment of the header cell in the GridColumn by using the [GridColumn.HeaderTextAlignment](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderTextAlignment.html) property. The default alignment for the header cells in SfDataGrid is `Center` and you can customize this to `Start` or `End`.
+You can get or set the TextAlignment of the header cell in the GridColumn by using the [GridColumn.HeaderTextAlignment](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderTextAlignment.html) property. The default alignment for the header cells in `SfDataGrid` is `Center` and you can customize this to `Start` or `End`.
 
 #### HeaderTemplate
 
-SfDataGrid allows you to customize the header cell based on your requirement by using the [GridColumn.HeaderTemplate](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderTemplate.html) property. The following code example shows you how to customize the header cell by loading a template in the header cell.
+`SfDataGrid` allows you to customize the header cell based on your requirement by using the [GridColumn.HeaderTemplate](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderTemplate.html) property. The following code example shows you how to customize the header cell by loading a template in the header cell.
 
 {% highlight xaml %}
 <syncfusion:SfDataGrid.Columns>
@@ -144,7 +144,7 @@ SfDataGrid allows you to customize the header cell based on your requirement by 
 
 ### Column Width
 
-SfDataGrid allows you to customize the width of each GridColumn in the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~Columns.html) collection. You can customize the column width by using the [GridColumn.Width](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~Width.html) property. By default this property will not be assigned any value and the GridColumn renders in view based on the value of [DefaultColumnWidth](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~DefaultColumnWidth.html) property in SfDataGrid.
+`SfDataGrid` allows you to customize the width of each GridColumn in the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~Columns.html) collection. You can customize the column width by using the [GridColumn.Width](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~Width.html) property. By default this property will not be assigned any value and the GridColumn renders in view based on the value of [DefaultColumnWidth](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~DefaultColumnWidth.html) property in `SfDataGrid`.
 
 N> You can set the `IsHidden` property as `True` instead of setting column width as `0` to hide a column.
 
@@ -180,7 +180,7 @@ dataGrid.Columns.Add(new GridTextColumn() { MappingName = "OrderID" ,Width = 100
 {% endtabs %}
 
 ### IsHidden 
-SfDataGrid allows you to hide a particular column using [GridColumn.IsHidden](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~IsHidden.html) property. The default value of the `IsHidden` property is `False`. 
+`SfDataGrid` allows you to hide a particular column using [GridColumn.IsHidden](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~IsHidden.html) property. The default value of the `IsHidden` property is `False`. 
 
 N> You can set the `IsHidden` property as `True` instead of setting column width as `0` to hide a column.
 
@@ -225,7 +225,7 @@ The below topics explain you about the customizations that can be done in the Gr
 
 ### Formatting
 
-SfDataGrid allows you to format the value displayed in the GridColumn by using the [GridColumn.Format](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~Format.html) property. Assign the FormatString to this property based on the type of the property the GridColumn is associated with to format the value. You can use different [StringFormats](http://msdn.microsoft.com/en-us/library/fbxft59x(v=vs.90).aspx) to customize the value displayed in the record cells.
+`SfDataGrid` allows you to format the value displayed in the GridColumn by using the [GridColumn.Format](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~Format.html) property. Assign the FormatString to this property based on the type of the property the GridColumn is associated with to format the value. You can use different [StringFormats](http://msdn.microsoft.com/en-us/library/fbxft59x(v=vs.90).aspx) to customize the value displayed in the record cells.
 
 The following code example shows you how to apply formatting for a GridTextColumn.
 
@@ -253,7 +253,7 @@ N> For AutoGenerated columns the Formatting can be applied by handling the [SfDa
 
 #### Formatting GridTextColumn with different Culture
 
-SfDataGrid allows you to apply different [CultureInfo](https://developer.xamarin.com/api/type/System.Globalization.CultureInfo/) for the GridColumns by using the [GridColumn.CultureInfo](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~CultureInfo.html) property. Assign the FormatString to this property based on the type of the property the column is associated with to format the value. You can use different `StringFormats` to customize the value displayed in the record cells.
+`SfDataGrid` allows you to apply different [CultureInfo](https://developer.xamarin.com/api/type/System.Globalization.CultureInfo/) for the GridColumns by using the [GridColumn.CultureInfo](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~CultureInfo.html) property. Assign the FormatString to this property based on the type of the property the column is associated with to format the value. You can use different `StringFormats` to customize the value displayed in the record cells.
 
 The following code example shows you how to apply different cultures for the GridColumns.
 
@@ -290,7 +290,7 @@ void GridAutoGeneratingColumns(object sender, AutoGeneratingColumnArgs e)
 
 #### CellTextSize
 
-The FontSize for the content of record cells in GridColumn can be customized by using the [GridColumn.CellTextSize](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~CellTextSize.html) property. The default font size of the record cells in SfDataGrid is 14.
+The FontSize for the content of record cells in GridColumn can be customized by using the [GridColumn.CellTextSize](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~CellTextSize.html) property. The default font size of the record cells in `SfDataGrid` is 14.
 
 #### RecordFont
 
@@ -298,7 +298,7 @@ The FontFamily for the content of header cell in the GridColumn can be customize
 
 #### TextAlignment
 
-You can get or set the TextAlignment of the header cell in the GridColumn by using the [GridColumn.TextAlignment](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~TextAlignment.html) property. The default alignment for the record cells in SfDataGrid is `Center` and you can customize this to `Start` or `End`.
+You can get or set the TextAlignment of the header cell in the GridColumn by using the [GridColumn.TextAlignment](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~TextAlignment.html) property. The default alignment for the record cells in `SfDataGrid` is `Center` and you can customize this to `Start` or `End`.
 
 #### LineBreakMode
 
@@ -647,7 +647,7 @@ public class FreightTemplateSelector : DataTemplateSelector
 ![](SfDataGrid_images/CellTemplateSelector.png)
 
 ### Getting row index of a row in GridTemplateColumn
-SfDataGrid provides various resolving methods to resolve the row index of grid rows based on certain criteria. The actual row index of a row can be resolved by using the `ResolveToRowIndex(recordRowIndex)` method in SfDataGrid. 
+`SfDataGrid` provides various resolving methods to resolve the row index of grid rows based on certain criteria. The actual row index of a row can be resolved by using the `ResolveToRowIndex(recordRowIndex)` method in `SfDataGrid`. 
 
 The row index of a grid row can be obtained in GridTemplateColumn by retrieving the record index of the row using the bound data from its `BindingContext` and then by resolving the recordRowIndex using `SfDataGrid.ResolveToRowIndex(recordRowIndex)` method.
 

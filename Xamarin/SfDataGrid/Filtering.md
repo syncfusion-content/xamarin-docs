@@ -9,11 +9,11 @@ documentation: UG
 
 # Filtering
 
-SfDataGrid provides support for view filtering.
+[SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) provides support for view filtering.
 
 ## View Filtering
 
-SfDataGrid provides support to filter the records in view by setting `SfDataGrid.View.Filter` property where `Filter` is a `predicate`.
+`SfDataGrid` provides support to filter the records in view by setting `SfDataGrid.View.Filter` property where `Filter` is a `predicate`.
 
 In order to filter the records in SfDataGrid, you have to assign the filtered strings to the `ViewModel.FilterText` property which will be later applied in `FilterPredicate` that is assigned to `SfDataGrid.View.Filter` in OnFilterChanged() method.
 
@@ -651,7 +651,7 @@ private void OnFilterChanged()
 
 SfDataGrid allows you to clear the applied filtering by setting the `SfDataGrid.View.Filter` property to `null`.
 
-The below code example illustrates how to clear the applied filtering in SfDataGrid.
+The below code example illustrates how to clear the applied filtering in `SfDataGrid`.
 
 {% highlight c# %}
 // Code-Behind

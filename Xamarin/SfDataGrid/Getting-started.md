@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section provides a quick overview for working with SfDataGrid for Xamarin.Forms. You will walk through the entire process of creating a real world SfDataGrid.
+This section provides a quick overview for working with SfDataGrid for Xamarin.Forms. You will walk through the entire process of creating a real world [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html).
 
 
 ## Assembly deployment
@@ -24,7 +24,7 @@ N> Assemblies can be found in unzipped package location in Mac
 
 ### SfDataGrid for Xamarin.Forms
 
-The following list of assemblies need to be added as reference from the lib folder to use SfDataGrid in your application.
+The following list of assemblies need to be added as reference from the lib folder to use `SfDataGrid` in your application.
 
 <table>
 <tr>
@@ -49,7 +49,7 @@ The following list of assemblies need to be added as reference from the lib fold
 </tr>
 </table>
 
-In order to use export to excel and export to PDF functionalities of SfDataGrid, add the below assembly to your pcl project.
+In order to use export to excel and export to PDF functionalities of `SfDataGrid`, add the below assembly to your pcl project.
 
 <table>
 <tr>
@@ -62,22 +62,22 @@ In order to use export to excel and export to PDF functionalities of SfDataGrid,
 </tr>
 </table>
 
-N> When there is a mismatch of Xamarin NuGet packages between your sample and SfDataGrid assemblies, an error `Could not load type Xamarin.Forms.ElementTemplate` will occur. Please refer the `ReadMe` to know the software requirements of Syncfusion controls.
+N> When there is a mismatch of Xamarin NuGet packages between your sample and `SfDataGrid` assemblies, an error `Could not load type Xamarin.Forms.ElementTemplate` will occur. Please refer the `ReadMe` to know the software requirements of Syncfusion controls.
 
-N> When there is a mismatch between Syncfusion NuGet packages among your projects, `System.IO.FileLoadException` will occur. To overcome this exception, install the same version of SfDataGrid assemblies in all your projects. 
+N> When there is a mismatch between Syncfusion NuGet packages among your projects, `System.IO.FileLoadException` will occur. To overcome this exception, install the same version of `SfDataGrid` assemblies in all your projects. 
 
 
 ## Launching the SfDataGrid on each platform
 
-To use SfDataGrid inside an application, each platform application must initialize the SfDataGrid renderer. This initialization step varies from platform to platform and is discussed in the following sections.
+To use `SfDataGrid` inside an application, each platform application must initialize the `SfDataGrid` renderer. This initialization step varies from platform to platform and is discussed in the following sections.
 
 ### Android
 
-The Android launches the SfDataGrid without any initialization and is enough to only initialize the Xamarin.Forms Framework to launch the application.
+The Android launches the `SfDataGrid` without any initialization and is enough to only initialize the Xamarin.Forms Framework to launch the application.
 
 ### iOS
 
-To launch the SfDataGrid in iOS, you need to call the `SfDataGridRenderer.Init()` in the `FinishedLaunching` overridden method of the AppDelegate class after the Xamarin.Forms Framework initialization and before the LoadApplication is called, as demonstrated in the following code example:
+To launch the `SfDataGrid` in iOS, you need to call the `SfDataGridRenderer.Init()` in the `FinishedLaunching` overridden method of the AppDelegate class after the Xamarin.Forms Framework initialization and before the LoadApplication is called, as demonstrated in the following code example:
 
 {% highlight c# %}
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
@@ -92,7 +92,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ### Universal Windows Platform (UWP)
 
-To launch the SfDataGrid in UWP, you need to call the `SfDataGridRenderer.Init()` in the `MainPage` constructor before the LoadApplication is called, as demonstrated in the following code example:
+To launch the `SfDataGrid` in UWP, you need to call the `SfDataGridRenderer.Init()` in the `MainPage` constructor before the LoadApplication is called, as demonstrated in the following code example:
 
 {% highlight c# %}
 public MainPage()
@@ -134,7 +134,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 ## Create a simple SfDataGrid 
 
-This section explains how to create a SfDataGrid and configure it. The SfDataGrid control can be configured entirely in C# code or by using XAML markup. This is how the final output will look like on iOS, Android and Windows Phone devices.
+This section explains how to create a SfDataGrid and configure it. The `SfDataGrid` control can be configured entirely in C# code or by using XAML markup. This is how the final output will look like on iOS, Android and Windows Phone devices.
  
 ![](SfDataGrid_images/SfDataGrid-Xamarin_img2.png)
 
@@ -199,7 +199,7 @@ namespace GettingStarted
 
 ## Create DataModel for the SfDataGrid
 
-SfDataGrid is a data-bound control. Hence you must create a data model to bind it to the control. 
+`SfDataGrid` is a data-bound control. Hence you must create a data model to bind it to the control. 
 
 Create a simple data source as shown in the following code example in a new class file and save it as OrderInfo.cs file. 
 
@@ -375,7 +375,7 @@ dataGrid.Columns.Add (countryColumn);
 
 ## Sorting
 
-SfDataGrid allows you to apply sorting on its data by setting the [SfDataGrid.AllowSorting](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowSorting.html) property to true.
+`SfDataGrid` allows you to apply sorting on its data by setting the [SfDataGrid.AllowSorting](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowSorting.html) property to true.
  
 {% tabs %}
 {% highlight xaml %}
@@ -405,7 +405,7 @@ dataGrid.SortColumnDescriptions.Add (new SortColumnDescription () { ColumnNa
 
 ## Grouping
 
-SfDataGrid allows you to group a column by adding the column to the [SfDataGrid.GroupColumnDescriptions](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GroupColumnDescriptions.html) collection as shown below.
+`SfDataGrid` allows you to group a column by adding the column to the [SfDataGrid.GroupColumnDescriptions](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GroupColumnDescriptions.html) collection as shown below.
 
 {% tabs %}
 {% highlight xaml %}
@@ -432,9 +432,9 @@ You can handle the selection operations with the help of [SelectionChanging](htt
 
 The StackLayout positions the child element one after the other, either horizontally or vertically in the order they were added. How much space the [StackLayout](https://developer.xamarin.com/api/type/Xamarin.Forms.StackLayout/) will use depends on how the HorizontalOptions and VerticalOptions properties are set, but by default the `StackLayout` will try to use the entire screen.
 
-SfDataGrid control can be loaded inside any layout such as [Grid](https://developer.xamarin.com/api/type/Xamarin.Forms.Grid/), `StackLayout` etc. When you load SfDataGrid inside a `StackLayout`, you have to set the Horizontal and/or VerticalOptions of the SfDataGrid and its parent to “LayoutOptions.FillAndExpand” based on the orientation of the container in which SfDataGrid is loaded.
+`SfDataGrid` control can be loaded inside any layout such as [Grid](https://developer.xamarin.com/api/type/Xamarin.Forms.Grid/), `StackLayout` etc. When you load `SfDataGrid` inside a `StackLayout`, you have to set the Horizontal and/or VerticalOptions of the `SfDataGrid` and its parent to “LayoutOptions.FillAndExpand” based on the orientation of the container in which SfDataGrid is loaded.
 
-Refer the following code example to load the SfDataGrid control inside a `StackLayout`. The VerticalOptions of the `StackLayout` and SfDataGrid alone is set as “FillAndExpand” as the default orientation of the `StackLayout` is vertical.
+Refer the following code example to load the `SfDataGrid` control inside a `StackLayout`. The VerticalOptions of the `StackLayout` and `SfDataGrid` alone is set as “FillAndExpand” as the default orientation of the `StackLayout` is vertical.
 
 {% tabs %}
 {% highlight xaml %}
@@ -497,7 +497,7 @@ N> In case, if the orientation of the `StackLayout` is horizontal, then you have
 
 There are some known Framework issues in Xamarin.Forms.iOS platform.
 
-When creating SfDataGrid in `Xamarin.Forms` with `Linker behavior` in iOS renderer project as “Link Framework SDKs only”, sometimes `System.MethodMissingException` or `No method Count exists on type System.Linq.Queryable` exception will be thrown.
+When creating `SfDataGrid` in `Xamarin.Forms` with `Linker behavior` in iOS renderer project as “Link Framework SDKs only”, sometimes `System.MethodMissingException` or `No method Count exists on type System.Linq.Queryable` exception will be thrown.
 
 The above exceptions can be resolved by using the below workaround.
 

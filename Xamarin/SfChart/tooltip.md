@@ -64,13 +64,7 @@ You can customize the tooltip label. For customizing, you need to add an instanc
 
 <chart:SfChart.ChartBehaviors>
 
-	<chart:ChartTooltipBehavior BackgroundColor="Blue" BorderWidth="3" BorderColor="Aqua" TextColor="White" Margin="5" Duration="10" Font="15">
-
-		<chart:ChartTooltipBehavior.Font>
-
-			<Font FontFamily="Times New Roman"/>
-
-		</chart:ChartTooltipBehavior.Font>
+	<chart:ChartTooltipBehavior BackgroundColor="Blue" BorderWidth="3" BorderColor="Aqua" TextColor="White" Margin="5" Duration="10" Font="Times New Roman, 15"/>
 
 	</chart:ChartTooltipBehavior>
 

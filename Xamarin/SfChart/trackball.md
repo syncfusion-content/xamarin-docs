@@ -109,15 +109,7 @@ Following properties are used to customize the trackball labels.
 
 			<chart:ChartTrackballBehavior.LabelStyle>
 
-				<chart:ChartTrackballLabelStyle BorderColor="Maroon" BackgroundColor="Aqua" BorderThickness="2" TextColor="Red">
-
-					<chart:ChartTrackballLabelStyle.Font>
-
-						<Font FontSize="18" FontAttributes="Italic"/>
-
-					</chart:ChartTrackballLabelStyle.Font>
-
-				</chart:ChartTrackballLabelStyle>
+				<chart:ChartTrackballLabelStyle BorderColor="Maroon" BackgroundColor="Aqua" BorderThickness="2" TextColor="Red" Font="Italic,18"/>
 
 			</chart:ChartTrackballBehavior.LabelStyle>
 

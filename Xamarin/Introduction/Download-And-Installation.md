@@ -46,14 +46,7 @@ Syncfusion Xamarin NuGet packages are available [here](http://nuget.syncfusion.c
 
 ### NuGet Configuration  
 
-Syncfusion NuGet Package feed links are configured in Visual Studio in the following ways,
-
-1. Syncfusion NuGet Package Manager
-2. NuGet Package Manager settings
-
-#### Syncfusion NuGet Package Manager
-
-The steps to configure the Syncfusion Xamarin NuGet Packages in Visual Studio are as follows,
+The steps to install the Syncfusion Xamarin NuGet Packages in Visual Studio are as follows,
 
 1. **Syncfusion NuGet Manager** is allows you to **add** the Syncfusion NuGet sources (for available platforms) to NuGet Package Manager. Download the [Syncfusion NuGet Manager](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SyncfusionNugetManager-1610952973.zip) utility.
 2. Extract zip file and run the SyncfusionNuGetManager.exe

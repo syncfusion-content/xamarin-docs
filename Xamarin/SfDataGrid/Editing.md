@@ -8,9 +8,9 @@ documentation: ug
 ---
 
 # Editing
-[SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) provides support for editing the cell values by setting [SfDataGrid.AllowEditing](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowEditing.html) property.
+SfDataGrid provides support for editing the cell values by setting [SfDataGrid.AllowEditing](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowEditing.html) property.
 
-The following code example shows how to enable editing in `SfDataGrid`. 
+The following code example shows how to enable editing in SfDataGrid. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -86,7 +86,7 @@ this.dataGrid.EditorSelectionBehavior = EditorSelectionBehavior.MoveLast;
 N> Editing support for GridTemplateColumn and GridUnboundColumn are not provided yet.
 
 ## Support for IEditableObject
-`SfDataGrid` supports to commit and roll back the changes in row level when underlying data object implements [IEditableObject](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.aspx) interface.
+SfDataGrid supports to commit and roll back the changes in row level when underlying data object implements [IEditableObject](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.aspx) interface.
 
 The editing changes in a row will be committed only when user moves to next row by tapping.
 

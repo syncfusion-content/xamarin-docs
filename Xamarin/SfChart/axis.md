@@ -660,15 +660,7 @@ Following code snippet illustrates how to enable and customize the axis title.
 
 		<chart:CategoryAxis.Title>
 
-			<chart:ChartAxisTitle Text="Month" TextColor="Blue">
-
-				<chart:ChartAxisTitle.Font>
-
-					<Font FontSize="20" FontAttributes ="Bold"/>
-
-				</chart:ChartAxisTitle.Font>
-
-			</chart:ChartAxisTitle>
+			<chart:ChartAxisTitle Text="Month" TextColor="Blue" Font="Bold,20"/>
 
 		</chart:CategoryAxis.Title>
 
@@ -713,15 +705,7 @@ The [`LabelStyle`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Sync
 
 		<chart:CategoryAxis.LabelStyle>
 
-			<chart:ChartAxisLabelStyle TextColor="Red">
-
-				<chart:ChartAxisLabelStyle.Font>
-
-					<Font FontSize="20" FontAttributes ="Bold"/>
-
-				</chart:ChartAxisLabelStyle.Font>
-
-			</chart:ChartAxisLabelStyle>
+			<chart:ChartAxisLabelStyle TextColor="Red" Font="Bold,20"/>
 
 		</chart:CategoryAxis.LabelStyle>
 

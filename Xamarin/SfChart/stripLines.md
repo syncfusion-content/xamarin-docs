@@ -253,16 +253,8 @@ The [`LabelStyle`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Sync
 
 				<chart:NumericalStripLine.LabelStyle>
 
-					<chart:ChartStripLineLabelStyle HorizontalAlignment="Near" VerticalAlignment="Center" TextColor="Blue">
-
-						<chart:ChartStripLineLabelStyle.Font>
-
-							<Font FontSize="20" />
-
-						</chart:ChartStripLineLabelStyle.Font>
-
-					</chart:ChartStripLineLabelStyle>              
-
+					<chart:ChartStripLineLabelStyle HorizontalAlignment="Near" VerticalAlignment="Center" TextColor="Blue" Font="20"/>
+       
 				</chart:NumericalStripLine.LabelStyle>
 
 			</chart:NumericalStripLine>

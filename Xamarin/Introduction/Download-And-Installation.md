@@ -167,23 +167,11 @@ pcl\Syncfusion.SfChart.XForms.dll
 
 **Android** **project**
 
-android\Syncfusion.SfChart.Android.dll
-
 android\Syncfusion.SfChart.XForms.Android.dll
 
 android\Syncfusion.SfChart.XForms.dll
 
-**iOS****(****Classic****)** **project**
-
-iOS\Syncfusion.SfChart.iOS.dll
-
-iOS\Syncfusion.SfChart.XForms.iOS.dll
-
-iOS\Syncfusion.SfChart.XForms.dll
-
-**iOS****(****Unified****)** **project**
-
-ios-unified\Syncfusion.SfChart.iOS.dll
+**iOS** **project**
 
 ios-unified\Syncfusion.SfChart.XForms.iOS.dll
 

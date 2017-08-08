@@ -27,11 +27,11 @@ This page lists the assemblies required for each control to be referred in each 
 </tr>
 <tr>
 <td>Android</td>
-<td>Syncfusion.SfChart.Android.dll<br/>Syncfusion.SfChart.XForms.Android.dll<br/>Syncfusion.SfChart.XForms.dll<br/></td>
+<td>Syncfusion.SfChart.XForms.Android.dll<br/>Syncfusion.SfChart.XForms.dll<br/></td>
 </tr>
 <tr>
 <td>iOS</td>
-<td>Syncfusion.SfChart.iOS.dll<br/>Syncfusion.SfChart.XForms.iOS.dll<br/>Syncfusion.SfChart.XForms.dll<br/></td>
+<td>Syncfusion.SfChart.XForms.iOS.dll<br/>Syncfusion.SfChart.XForms.dll<br/></td>
 </tr>
 <tr>
 <td>UWP</td>
@@ -775,11 +775,11 @@ This page lists the assemblies required for each control to be referred in each 
 </tr>
 <tr>
 <td>Android</td>
-<td>Syncfusion.SfChart.Android.dll<br/>Syncfusion.SfChart.XForms.Android.dll<br/>Syncfusion.SfChart.XForms.dll<br/></td>
+<td>Syncfusion.SfChart.XForms.Android.dll<br/>Syncfusion.SfChart.XForms.dll<br/></td>
 </tr>
 <tr>
 <td>iOS</td>
-<td>Syncfusion.SfChart.iOS.dll<br/>Syncfusion.SfChart.XForms.iOS.dll<br/>Syncfusion.SfChart.XForms.dll<br/></td>
+<td>Syncfusion.SfChart.XForms.iOS.dll<br/>Syncfusion.SfChart.XForms.dll<br/></td>
 </tr>
 <tr>
 <td>UWP</td>

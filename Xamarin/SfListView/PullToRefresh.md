@@ -9,9 +9,9 @@ documentation: ug
 
 # PullToRefresh 
 
-SfListView lets you to enable the `PullToRefresh` support by loading it directly into the [PullableContent](https://help.syncfusion.com/cr/cref_files/xamarin/sfpulltorefresh/Syncfusion.SfPullToRefresh.XForms~Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh~PullableContent.html) as child element. At runtime, SfListView provides support for refreshing the data in view while performing the pull-to-refresh action.
+SfListView lets you to enable the `PullToRefresh` support by loading it directly into the [PullableContent](https://help.syncfusion.com/cr/cref_files/xamarin/sfpulltorefresh/Syncfusion.SfPullToRefresh.XForms~Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh~PullableContent.html). At runtime, SfListView provides support for refreshing the data in view while performing the `PullToRefresh` action.
 
-N> You need to load the SfListView into the PullableContent as first children to render the pulltorefresh action properly. 
+N> You need to load the SfListView as first children of `PullableContent` for the `PulltoRefresh`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -47,9 +47,9 @@ public ListViewPullToRefresh()
 {% endhighlight %}
 {% endtabs %}
 
-### Adding the data into SfListView while progress indicator is being loaded
+### Load the data into SfListView on pull-to-refresh refreshing
 
-SfListView lets you refresh the data in view at runtime by using [Refreshing](https://help.syncfusion.com/cr/cref_files/xamarin/sfpulltorefresh/Syncfusion.SfPullToRefresh.XForms~Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh~Refreshing_EV.html) event. The `Refreshing` event gets triggered once the progress bar meets 100 %. You can add the data into the underlying collection and the data gets updated in view once the `Refreshing` event gets completed.
+SfListView lets you to refresh the data in view at runtime by using [Refreshing](https://help.syncfusion.com/cr/cref_files/xamarin/sfpulltorefresh/Syncfusion.SfPullToRefresh.XForms~Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh~Refreshing_EV.html) event. The `Refreshing` event gets triggered once the progress bar meets 100 %. You can add the data into the underlying collection and the data gets updated in view once the `Refreshing` event gets completed.
 
 {% highlight c# %}
 
@@ -59,18 +59,7 @@ private async void PullToRefresh_Refreshing(object sender, EventArgs args)
 {
    pullToRefresh.IsRefreshing = true;
    await Task.Delay(2000);
-   var blogsTitleCount = pulltoRefreshViewModel.BlogsTitle.Count() - 1;
-
-   if ((pulltoRefreshViewModel.BlogsInfo.Count - 1) == blogsTitleCount)
-   {
-      pullToRefresh.IsRefreshing = false;
-      return;
-   }
-
-   var blogsCategoryCount = pulltoRefreshViewModel.BlogsCategory.Count() - 1;
-   var blogsAuthorCount = pulltoRefreshViewModel.BlogsAuthers.Count() - 1;
-   var blogsReadMoreCount = pulltoRefreshViewModel.BlogsReadMoreInfo.Count() - 1;
-
+ 
    for (int i = 0; i < 3; i++)
    {
       var blogsCount = pulltoRefreshViewModel.BlogsInfo.Count;

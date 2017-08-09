@@ -47,7 +47,7 @@ public ListViewPullToRefresh()
 {% endhighlight %}
 {% endtabs %}
 
-### Load the data into SfListView on pull-to-refresh refreshing
+### Load the data into SfListView on pull-to-refresh
 
 SfListView lets you to refresh the data in view at runtime by using [Refreshing](https://help.syncfusion.com/cr/cref_files/xamarin/sfpulltorefresh/Syncfusion.SfPullToRefresh.XForms~Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh~Refreshing_EV.html) event. The `Refreshing` event gets triggered once the progress bar meets 100 %. You can add the data into the underlying collection and the data gets updated in view once the `Refreshing` event gets completed.
 

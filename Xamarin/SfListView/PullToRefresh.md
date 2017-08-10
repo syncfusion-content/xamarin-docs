@@ -80,3 +80,7 @@ private async void PullToRefresh_Refreshing(object sender, EventArgs args)
 Now run the application to render the following output. You can also download the entire source code of this demo from [here](http://files2.syncfusion.com/Xamarin.Forms/Samples/ListView_PullToRefresh.zip).
 
 ![](SfListView_images/SfListView-PullToRefresh.png)
+
+## Limitations
+
+SfListView does not support for `PullToRefresh` when [Orientation](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~Orientation.html) is `Horizontal`.

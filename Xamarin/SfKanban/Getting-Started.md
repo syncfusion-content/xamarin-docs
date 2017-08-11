@@ -176,7 +176,7 @@ The columns are generated automatically based on the distinct values of ['Kanban
 
 	<kanban:SfKanban.Columns>
 
-		<kanban:KanbanColumn x:Name="todoColumn" Title="To Do"  >
+		<kanban:KanbanColumn x:Name="openColumn" Title="To Do"  >
 		</kanban:KanbanColumn>
 
 		<kanban:KanbanColumn x:Name="progressColumn" Title="In Progress">
@@ -198,9 +198,9 @@ The columns are generated automatically based on the distinct values of ['Kanban
 
 kanban.AutoGenerateColumns = false; 
 
-KanbanColumn todoColumn = new KanbanColumn();
-todoColumn.Title = "To Do";
-kanban.Columns.Add(todoColumn);
+KanbanColumn openColumn = new KanbanColumn();
+openColumn.Title = "To Do";
+kanban.Columns.Add(openColumn);
 
 KanbanColumn progressColumn = new KanbanColumn();
 progressColumn.Title = "In Progress";
@@ -222,7 +222,7 @@ Define the categories of column using [`Categories`](http://help.syncfusion.com/
 
 {% highlight C# %}
 
-todoColumn.Categories = new List<object>() { "Open" };
+openColumn.Categories = new List<object>() { "Open" };
 progressColumn.Categories = new List<object>() { "In Progress" };
 codeColumn.Categories = new List<object>() { "Code Review" };
 doneColumn.Categories = new List<object>() { "Done" };

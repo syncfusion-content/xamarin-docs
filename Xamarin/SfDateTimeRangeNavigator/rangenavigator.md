@@ -37,9 +37,9 @@ pcl\Syncfusion.SfChart.XForms.dll
 
 ### Android project
 
-android\Syncfusion.SfChart.Andriod.dll
+android\Syncfusion.SfChart.Android.dll
 
-android\Syncfusion.SfChart.XForms.Andriod.dll
+android\Syncfusion.SfChart.XForms.Android.dll
 
 android\Syncfusion.SfChart.XForms.dll
 

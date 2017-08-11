@@ -38,12 +38,12 @@ Following code snippet is used to define the colors for each key.
 
 {% highlight C# %}
 
-List<KanbanColorMapping> colormodels = new List<KanbanColorMapping>();
-colormodels.Add(new KanbanColorMapping("Green", Color.Green));
-colormodels.Add(new KanbanColorMapping("Red", Color.Red));
-colormodels.Add(new KanbanColorMapping("Aqua", Color.Aqua));
-colormodels.Add(new KanbanColorMapping("Blue", Color.Blue));
-kanban.ColorModel = colormodels;
+List<KanbanColorMapping> colorModels = new List<KanbanColorMapping>();
+colorModels.Add(new KanbanColorMapping("Green", Color.Green));
+colorModels.Add(new KanbanColorMapping("Red", Color.Red));
+colorModels.Add(new KanbanColorMapping("Aqua", Color.Aqua));
+colorModels.Add(new KanbanColorMapping("Blue", Color.Blue));
+kanban.ColorModel = colorModels;
 
 {% endhighlight %}
 

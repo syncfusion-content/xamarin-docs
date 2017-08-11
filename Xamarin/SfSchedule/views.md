@@ -21,7 +21,7 @@ DayView is used to display a single day, current day will be visible by default.
 {% highlight xaml %}
 
 	<schedule:SfSchedule
-	x:Name="sfschedule" 
+	x:Name="schedule" 
 	ScheduleView="DayView">
 	</schedule:SfSchedule>
 
@@ -30,12 +30,12 @@ DayView is used to display a single day, current day will be visible by default.
 {% highlight c# %}
 
 	//creating new instance for schedule
-	SfSchedule sfschedule= new SfSchedule ();
+	SfSchedule schedule = new SfSchedule ();
 
 	//setting schedule view
-	sfschedule.ScheduleView = ScheduleView.DayView;
+	schedule.ScheduleView = ScheduleView.DayView;
 
-	this.Content= sfschedule;
+	this.Content= schedule;
 
 {% endhighlight %}
 
@@ -70,8 +70,8 @@ You can format the time string in the schedule control using `DayLabelSettings` 
 	DayLabelSettings dayLabelSettings =new DayLabelSettings();
 	dayLabelSettings.TimeFormat =("hh a");
 	dayViewSettings.DayLabelSettings= dayLabelSettings;
-	sfschedule.DayViewSettings = dayViewSettings;
-	this.Content = sfschedule;
+	schedule.DayViewSettings = dayViewSettings;
+	this.Content = schedule;
 
 {% endhighlight %} 
 
@@ -105,7 +105,7 @@ You can also differentiate working hours with non-working hour timeslots by its 
 	DayViewSettings dayViewSettings = new DayViewSettings ();
 	dayViewSettings.WorkStartHour = 10;
 	dayViewSettings.WorkEndHour = 18;
-	sfschedule.DayViewSettings = dayViewSettings;
+	schedule.DayViewSettings = dayViewSettings;
 
 {% endhighlight %}
 
@@ -149,7 +149,7 @@ To view all the seven days of a particular week, by default if will be current w
 
 {% highlight xaml %}
 
-	<schedule:SfSchedule x:Name="sfschedule" 
+	<schedule:SfSchedule x:Name="schedule" 
 	ScheduleView="WeekView">
 	</schedule:SfSchedule>
 
@@ -158,12 +158,12 @@ To view all the seven days of a particular week, by default if will be current w
 {% highlight c# %}
 
 	//creating new instance for schedule
-	SfSchedule sfschedule= new SfSchedule ();
+	SfSchedule schedule = new SfSchedule ();
 
 	//setting schedule view
-	sfschedule.ScheduleView = ScheduleView.WeekView;
+	schedule.ScheduleView = ScheduleView.WeekView;
 
-	this.Content= sfschedule;
+	this.Content= schedule;
 
 {% endhighlight %}
 
@@ -198,8 +198,8 @@ You can format the time string in the schedule control using `WeekLabelSettings`
 	WeekLabelSettings weekLabelSettings = new WeekLabelSettings (); 
 	weekLabelSettings.TimeFormat =("hh a");
 	weekViewSettings.WeekLabelSettings = weekLabelSettings;
-	sfschedule.WeekViewSettings = weekViewSettings;
-	this.Content= sfschedule;
+	schedule.WeekViewSettings = weekViewSettings;
+	this.Content= schedule;
 
 {% endhighlight %}
 
@@ -233,8 +233,8 @@ You can also differentiate working hours with non-working hour timeslots by its 
 	WeekViewSettings weekViewSettings = new WeekViewSettings ();
 	weekViewSettings.WorkStartHour = 10;
 	weekViewSettings.WorkEndHour = 18;
-	sfschedule.WeekViewSettings = weekViewSettings;
-	this.Content= sfschedule;
+	schedule.WeekViewSettings = weekViewSettings;
+	this.Content= schedule;
 
 {% endhighlight %}
 
@@ -263,8 +263,8 @@ You can view All Day appointments in separate panel and the panel’s visibility
 	//setting week view settings properties
 	WeekViewSettings weekViewSettings = new WeekViewSettings ();
 	weekViewSettings.ShowAllDay = true;
-	sfschedule.WeekViewSettings = weekViewSettings;
-	this.Content= sfschedule;
+	schedule.WeekViewSettings = weekViewSettings;
+	this.Content = schedule;
 
 {% endhighlight %}
 
@@ -280,7 +280,7 @@ To view working days of a particular week, by default current work week will be 
 
 {% highlight xaml %}
 
-	<schedule:SfSchedule x:Name="sfschedule" 
+	<schedule:SfSchedule x:Name="schedule" 
 	ScheduleView="WorkWeekView">
 	</schedule:SfSchedule>
 
@@ -289,12 +289,12 @@ To view working days of a particular week, by default current work week will be 
 {% highlight c# %}
 
 	//creating new instance for schedule
-	SfSchedule sfschedule= new SfSchedule ();
+	SfSchedule schedule= new SfSchedule ();
 
 	//setting schedule view
-	sfschedule.ScheduleView = ScheduleView.WorkWeekView;
+	schedule.ScheduleView = ScheduleView.WorkWeekView;
 
-	this.Content= sfschedule;
+	this.Content= schedule;
 
 {% endhighlight %}
 
@@ -331,8 +331,8 @@ Also you can differentiate the timeslot panel using `VerticalLineColor` and `Ver
 	WorkWeekLabelSettings workWeekLabelSettings = new WorkWeekLabelSettings();
 	workWeekLabelSettings.TimeFormat = "hh a";
 	workWeekViewSettings.WorkWeekLabelSettings = workWeekLabelSettings;
-	sfschedule.WorkWeekViewSettings = workWeekViewSettings;
-	this.Content= sfschedule;
+	schedule.WorkWeekViewSettings = workWeekViewSettings;
+	this.Content= schedule;
 
 {% endhighlight %}
 
@@ -366,8 +366,8 @@ You can also differentiate working hours with non-working hour timeslots by its 
 	WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings ();
 	workWeekViewSettings.WorkStartHour = 10;
 	workWeekViewSettings.WorkEndHour = 18;
-	sfschedule.WorkWeekViewSettings = workWeekViewSettings;
-	this.Content= sfschedule;
+	schedule.WorkWeekViewSettings = workWeekViewSettings;
+	this.Content= schedule;
 
 {% endhighlight %}
 

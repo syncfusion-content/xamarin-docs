@@ -21,15 +21,15 @@ The following code snippet shows how to configure the range navigator using `Ite
 {% endhighlight %}
 
 {% highlight c# %}
-SfDateTimeRangeNavigator rangenavigator = new SfDateTimeRangeNavigator(); 
+SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator(); 
 
 ViewModel viewModel = new ViewModel(); 
 
-rangenavigator.ItemsSource = viewModel.DateTimeRangeData;
+rangeNavigator.ItemsSource = viewModel.DateTimeRangeData;
 
-rangenavigator.XBindingPath = "XValue"; 
+rangeNavigator.XBindingPath = "XValue"; 
 
-rangenavigator.YBindingPath = "YValue";
+rangeNavigator.YBindingPath = "YValue";
 {% endhighlight %}
 
 
@@ -107,21 +107,21 @@ The following code snippet shows how to configure the range navigator using `Min
 {% endhighlight %}
 
 {% highlight c# %}
-SfDateTimeRangeNavigator rangenavigator = new SfDateTimeRangeNavigator();
+SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator();
 
-rangenavigator.Minimum = new DateTime(2015, 4, 1);
+rangeNavigator.Minimum = new DateTime(2015, 4, 1);
 
-rangenavigator.Maximum = new DateTime(2015, 6, 30);
+rangeNavigator.Maximum = new DateTime(2015, 6, 30);
 
-rangenavigator.ViewRangeStart = new DateTime(2015, 5, 1);
+rangeNavigator.ViewRangeStart = new DateTime(2015, 5, 1);
 
-rangenavigator.ViewRangeEnd = new DateTime(2015, 5, 31);
+rangeNavigator.ViewRangeEnd = new DateTime(2015, 5, 31);
 
 SfChart chart = new SfChart();
 
 ...
 
-rangenavigator.Content = chart;
+rangeNavigator.Content = chart;
 {% endhighlight %}
 {% endtabs %}
 

@@ -21,7 +21,7 @@ I> For UWP alone, one more additional step is required if the project is built i
 
 ## Initialize SunburstChart
 
-Import the [`SfSunburstChart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart.html) namespace as shown below in your resceptive page,
+Import the [`SfSunburstChart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart.html) namespace as shown below in your respective page,
 
 {% tabs %} 
 
@@ -39,7 +39,7 @@ using Syncfusion.SfSunburstChart.XForms;
 
 {% endtabs %} 
 
-Then initialize an empty sunburstchart as shown below,
+Then initialize an empty sunburst chart as shown below,
 
 {% tabs %} 
 
@@ -50,7 +50,7 @@ Then initialize an empty sunburstchart as shown below,
 {% endhighlight %}
 
 {% highlight C# %} 
-SfSunburstChart sunburst = new SfSunbusrtChart();
+SfSunburstChart sunburst = new SfSunburstChart();
 
 this.Content = sunburst;
 {% endhighlight %}

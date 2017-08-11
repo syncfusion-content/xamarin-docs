@@ -38,23 +38,23 @@ The `MinorScaleStyle` and `MajorScaleStyle` properties of `SfDateTimeRangeNaviga
 {% endhighlight %}
 
 {% highlight c# %}
-SfDateTimeRangeNavigator rangenavigator = new SfDateTimeRangeNavigator();
+SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator();
 
 ...
 
-rangenavigator.MajorScaleStyle.ShowGridLines = true;
+rangeNavigator.MajorScaleStyle.ShowGridLines = true;
 
-rangenavigator.MajorScaleStyle.GridLineColor = Color.FromHex("#F109D7");
+rangeNavigator.MajorScaleStyle.GridLineColor = Color.FromHex("#F109D7");
 
-rangenavigator.MajorScaleStyle.GridLineWidth = 10;
+rangeNavigator.MajorScaleStyle.GridLineWidth = 10;
 
-rangenavigator.MinorScaleStyle.ShowGridLines = true;
+rangeNavigator.MinorScaleStyle.ShowGridLines = true;
 
-rangenavigator.MinorScaleStyle.GridLineColor = Color.Red;
+rangeNavigator.MinorScaleStyle.GridLineColor = Color.Red;
 
-rangenavigator.MinorScaleStyle.GridLineWidth = 3;
+rangeNavigator.MinorScaleStyle.GridLineWidth = 3;
 
-rangenavigator.MinorScaleStyle.GridLineDashArray = new double[2] { 4, 4 };
+rangeNavigator.MinorScaleStyle.GridLineDashArray = new double[2] { 4, 4 };
 {% endhighlight %}
 {% endtabs %}
 

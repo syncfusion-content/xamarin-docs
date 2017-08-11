@@ -413,9 +413,9 @@ You can customize the Month inline view Appointment by using [OnMonthInlineAppoi
 			...
 			void Schedule_OnMonthInlineAppointmentLoadedEvent(object sender, MonthInlineAppointmentLoadedEventArgs args)
 		{
-			var appointmnet = (args.appointment as ScheduleAppointment);
+			var appointment = (args.appointment as ScheduleAppointment);
 			Button button = new Button();
-			button.Text = appointmnet.Subject;
+			button.Text = appointment.Subject;
 			button.BackgroundColor = Color.Blue;
 			button.TextColor = Color.White;
 			args.view = button;

@@ -66,15 +66,8 @@ Following code snippet illustrates the customization of label and its background
 										BorderThickness="2"
 										BackgroundColor="Aqua"
 										Angle="315"
-										Margin="5">
-
-				<chart:DataMarkerLabelStyle.Font>
-
-					<Font FontSize="18" FontAttributes="Italic"/>
-
-				</chart:DataMarkerLabelStyle.Font>
-
-			</chart:DataMarkerLabelStyle>
+										Margin="5"
+										Font="Italic,18"/>
 
 		</chart:ChartDataMarker.LabelStyle>
 

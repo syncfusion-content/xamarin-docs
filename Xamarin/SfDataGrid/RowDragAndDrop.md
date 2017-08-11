@@ -9,7 +9,7 @@ documentation: UG
 
 # Row Drag and Drop
 
-SfDataGrid allows you to drag and drop a row by setting the `SfDataGrid.AllowDraggingRow` property to `true`. A Customizable row drag and drop template is displayed  while dragging a row. The drag and drop operation can be handled based on the requirement using `SfDataGrid.QueryRowDragging` event. 
+SfDataGrid allows you to drag and drop a row by setting the [SfDataGrid.AllowDraggingRow](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowDraggingRow.html) property to `true`. A Customizable row drag and drop template is displayed  while dragging a row. The drag and drop operation can be handled based on the requirement using [SfDataGrid.QueryRowDragging](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~QueryRowDragging_EV.html) event. 
 
 The following code example shows how to enable row drag and drop in SfDataGrid. 
 
@@ -30,13 +30,13 @@ SfDataGrid allows you to perform the drag and drop operation with both the data 
 * Groups position can be reordered using drag and drop. But no groups can be added inside other groups. 
 * Data rows can be reordered within the same group or into the other groups as well. 
 
-N> Reordering changes are made only in `SfDataGrid.View` and not in the underlying data. Thus the changes will be reverted when performing sorting, grouping or any other operation that refreshes the view. Reordering changes in the underlying data can be achieved by handling `QueryRowDragging` event in the sample side as explained below in [Reordering underlying data](# Reordering underlying data ).
+N> Reordering changes are made only in [SfDataGrid.View](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~View.html) and not in the underlying data. Thus the changes will be reverted when performing sorting, grouping or any other operation that refreshes the view. Reordering changes in the underlying data can be achieved by handling `QueryRowDragging` event in the sample side as explained below in [Reordering underlying data](# Reordering underlying data ).
 
 N> Now, you can drag and drop the grid rows using mouse in UWP (Desktop) platform.
 
 ## Row drag and drop template
 
-SfDataGrid allows you to load a desired content when performing row drag and drop operation using the `SfDataGrid.RowDragDropTemplate`. The template can be defined either in code or XAML. 
+SfDataGrid allows you to load a desired content when performing row drag and drop operation using the [SfDataGrid.RowDragDropTemplate](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~RowDragDropTemplate.html). The template can be defined either in code or XAML. 
 
 ## Default template
 
@@ -46,7 +46,7 @@ Default template will be loaded, if template is not explicitly assigned for row 
 
 ## Customizing row drag and drop template
 
-You can load any type of custom view inside `SfDataGrid.RowDragDropTemplate` based on your application’s  requirement.
+You can load any type of custom view inside [SfDataGrid.RowDragDropTemplate](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~RowDragDropTemplate.html) based on your application’s  requirement.
 
 Refer the following code example that shows how to load row like view in template.
 
@@ -143,16 +143,16 @@ N> Currently RowDragAndDrop cannot be used if different rows are set with differ
 
 ## Row drag and drop event
 
-`QueryRowDragging` event is fired upon starting to drag a row and will be continuously fired till the dragging ends. By handing the `SfDataGrid.QueryRowDragging` event you can also cancel the dragging of a particular row.
+`QueryRowDragging` event is fired upon starting to drag a row and will be continuously fired till the dragging ends. By handing the [SfDataGrid.QueryRowDragging](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~QueryRowDragging_EV.html) event you can also cancel the dragging of a particular row.
 
-The `QueryRowDragging` event provides following properties in `QueryRowDraggingEventArgs`:
+The `QueryRowDragging` event provides following properties in [QueryRowDraggingEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryRowDraggingEventArgs.html):
 
-* `From` – Returns the index of the row currently being dragged.
-* `To` – Returns the dragging index where you try to drop the row.
-* `Position` - Returns the current x and y coordinates of the RowDragView.
-* `Reason` – Returns row dragging details as `QueryRowDraggingReason`.
-* `RowData`  – Returns the underlying data associated with the dragged row.
-* `CurrentRowData`  – Returns the corresponding row data, over which the row drag view is currently placed.
+* [From](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryRowDraggingEventArgs~From.html) – Returns the index of the row currently being dragged.
+* [To](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryRowDraggingEventArgs~To.html) – Returns the dragging index where you try to drop the row.
+* [Position](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryRowDraggingEventArgs~Position.html) - Returns the current x and y coordinates of the RowDragView.
+* [Reason](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryRowDraggingEventArgs~Reason.html) – Returns row dragging details as [QueryRowDraggingReason](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryRowDraggingReason.html).
+* [RowData](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryRowDraggingEventArgs~RowData.html)  – Returns the underlying data associated with the dragged row.
+* [CurrentRowData](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryRowDraggingEventArgs~CurrentRowData.html)  – Returns the corresponding row data, over which the row drag view is currently placed.
 * [Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs_properties(v=vs.110).aspx) – A Boolean property to cancel the event.
 
 ## Disable dragging for particular row
@@ -263,3 +263,39 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 
 {% endhighlight %}
 
+## Updating summaries when dragging and dropping a row between groups
+
+Grouping and summaries of items in SfDataGrid are manipulated based on group key. When you drag and drop an item from one group to another group, the group key of the dragged item will differ from the group key of the items in the dropped group. Hence by default, the summaries will not be updated. This is the actual behavior of SfDataGrid. 
+
+Hence, in order to update the summaries when a row is dragged and dropped between groups you need to call the `UpdateCaptionSummaries` and `Refresh` methods in the `QueryRowDragging` event.
+
+{% highlight c#%}
+public partial class MainPage : ContentPage
+{
+    private SfDataGrid dataGrid;
+    private ViewModel viewModel;
+    public MainPage()
+    {
+         InitializeComponent();
+         dataGrid = new SfDataGrid();
+         viewModel = new ViewModel();
+         dataGrid.ItemsSource = viewModel.OrdersInfo;
+         dataGrid.QueryRowDragging += DataGrid_QueryRowDragging;
+         this.Content = dataGrid;
+    }
+    private async void DataGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
+    {
+         if (e.Reason == QueryRowDraggingReason.DragEnded)
+         {
+             // Delay is given for refreshing the view.
+             await Task.Delay(100);                
+             this.dataGrid.View.TopLevelGroup.UpdateCaptionSummaries();
+             this.dataGrid.View.Refresh();
+          }
+    }
+}
+{% endhighlight %}
+
+The following screenshot shows the output rendered when executing the above code example.
+
+![](SfDataGrid_images/SummaryUpdate.png)

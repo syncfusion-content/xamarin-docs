@@ -57,15 +57,7 @@ chart.Legend = new ChartLegend();
 
 		<chart:ChartLegend.LabelStyle>
 
-			<chart:ChartLegendLabelStyle TextColor="Blue" Margin="5">
-
-				<chart:ChartLegendLabelStyle.Font>
-
-					<Font FontSize="18" FontAttributes ="Bold"/>
-
-				</chart:ChartLegendLabelStyle.Font>
-
-			</chart:ChartLegendLabelStyle>
+			<chart:ChartLegendLabelStyle TextColor="Blue" Margin="5" Font="Bold,18"/>
 
 		</chart:ChartLegend.LabelStyle>
 
@@ -155,13 +147,7 @@ Following properties are used to define and customize the legend title.
 		<chart:ChartLegend.Title >
 
 			<chart:ChartTitle Text="Years" TextColor="Maroon" TextAlignment="Center" 
-							  BackgroundColor="Silver" BorderWidth="3" BorderColor="Blue">
-
-				<chart:ChartTitle.Font>
-
-					<Font FontSize="20" FontAttributes ="Bold"/>
-
-				</chart:ChartTitle.Font>
+							  BackgroundColor="Silver" BorderWidth="3" BorderColor="Blue" Font="Bold,20"/>
 
 			</chart:ChartTitle>
 

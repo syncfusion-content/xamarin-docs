@@ -160,7 +160,7 @@ The following code example illustrates how to perform custom sorting for FirstNa
 
     <ContentPage.Resources>
         <ResourceDictionary>
-            <local:CustomerInfo x:Key="Comparer" />
+            <local:CustomComparer x:Key="Comparer" />
         </ResourceDictionary>
     </ContentPage.Resources>
 
@@ -200,7 +200,7 @@ dataGrid.SortColumnDescriptions.Add (new SortColumnDescription () {
 The following code example illustrates how to write a Custom Comparer.
 
 {% highlight c# %}
-public class CustomerInfo : IComparer<Object>, ISortDirection
+public class CustomComparer : IComparer<Object>, ISortDirection
 {
     public int Compare(object x, object y)
     {
@@ -241,4 +241,4 @@ public class CustomerInfo : IComparer<Object>, ISortDirection
 
 ## How to disable sorting for an individual column?
 
-SfDataGrid allows you to disable the sorting for individual columns by using the [GridColumn.AllowSorting](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~AllowSorting.html) property. The default value of this property is `true` and hence all the columns in the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~Columns.html) collection can be sorted when `SfDataGrid.AllowSorting` is set to `true`.
+SfDataGrid allows you to disable the sorting for individual columns by using the [GridColumn.AllowSorting](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~AllowSorting.html) property. The default value of this property is `true` and hence all the columns in the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~Columns.html) collection can be sorted when [SfDataGrid.AllowSorting](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowSorting.html) is set to `true`.

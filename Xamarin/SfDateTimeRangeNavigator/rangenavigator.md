@@ -23,7 +23,7 @@ After installing Essential Studio for Xamarin, all the required assemblies can b
 
 {Syncfusion Installed location}\Essential Studio\{release version}\lib
 
-Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\12.2.0.40\lib
+Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\15.3.0.26\lib
 
 or after downloading through the Xamarin store web interface, all the required assemblies can be found in the below folder
 
@@ -37,23 +37,11 @@ pcl\Syncfusion.SfChart.XForms.dll
 
 ### Android project
 
-android\Syncfusion.SfChart.Android.dll
-
-android\Syncfusion.SfChart.XForms.Android.dll
+android\Syncfusion.SfChart.XForms.Andriod.dll
 
 android\Syncfusion.SfChart.XForms.dll
 
-### iOS(Classic) project
-
-ios\Syncfusion.SfChart.iOS.dll
-
-ios\Syncfusion.SfChart.XForms.iOS.dll
-
-ios\Syncfusion.SfChart.XForms.dll
-
-### iOS(Unified) project
-
-iOS-unified\Syncfusion.SfChart.iOS.dll
+### iOS project
 
 iOS-unified\Syncfusion.SfChart.XForms.iOS.dll
 

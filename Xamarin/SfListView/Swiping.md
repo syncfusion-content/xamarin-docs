@@ -61,7 +61,9 @@ listView.LeftSwipeTemplate = new DataTemplate(() =>
 {% endhighlight %}
 {% endtabs %}
 
-N> Similarly you can load a desired content using the [RightSwipeTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~RightSwipeTemplate.html) when swiping towards left.
+N> * Similarly you can load a desired content using the [RightSwipeTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~RightSwipeTemplate.html) when swiping towards left.
+N>
+N> * Swipe Template is mandatory to perform swiping in SfListView.
 
 The following screenshot shows the output rendered when `LeftSwipeTemplate` is applied.
 
@@ -168,6 +170,10 @@ By handling the swipe events, you can make use of these property values from the
 
 The following customizations should give you an idea on how to use the swiping event in SfListView.
 
+### Defining the Data Template Selector
+
+You can customize the appearence of each swipe item with different templates based on specific constraints using [DataTemplateSelector](https://developer.xamarin.com/api/type/Xamarin.Forms.DataTemplateSelector/).
+
 ### Multiple Views
 
 You can use the swipe templates to customize your application by loading any view in the templates and assigning custom actions to them such as deleting the data, adding the data, etc. You can also display multiple views in a template like in the following example where two views are loaded for deleting the item and setting the favorites to the item respectively.
@@ -208,6 +214,10 @@ You can use the swipe templates to customize your application by loading any vie
   </syncfusion:SfListView.LeftSwipeTemplate>
 </syncfusion:SfListView>
 {% endhighlight %}
+
+The following screenshot shows the output rendered when multiple views are added in swipe templates.
+
+![](SfListView_images/SfListView-Swiping--3.png)
 
 The following code snippet illustrates how to delete the item when `Delete` image is tapped and setting favorites to item when `Favorites` image is tapped.
 
@@ -306,5 +316,7 @@ private void ListView_SwipeEnded(object sender, SwipeEndedEventArgs e)
 }
 
 {% endhighlight %}
+
+The following screenshot shows the output rendered when `RightSwipeTemplate` is applied. You can download the entire source code of this demo from [here](https://files2.syncfusion.com/Xamarin.Forms/Samples/Swiping.zip). 
 
 ![](SfListView_images/SfListView-Swiping--2.png)

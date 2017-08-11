@@ -9,7 +9,7 @@ documentation: UG
 
 # Grouping 
 
-A group represents a collection of records that belong to a particular category. When grouping is applied, the data is organized into a hierarchical structure based on matching field values. The records having identical values in the grouped column are combined to form a group. Each group is identified by its `CaptionSummaryRow` to get the underlying records in view.
+A group represents a collection of records that belong to a particular category. When grouping is applied, the data is organized into a hierarchical structure based on matching field values. The records having identical values in the grouped column are combined to form a group. Each group is identified by its [CaptionSummaryRow](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~CaptionSummaryRowProperty.html) to get the underlying records in view.
 
 N> To update grouping for the newly added row or column, set the `SfDataGrid.View.LiveDataUpdateMode` to `LiveDataUpdateMode.AllowDataShaping`.
 
@@ -87,6 +87,37 @@ dataGrid.GroupColumnDescriptions.Add (new GroupColumnDescription () {
 {% endhighlight %}
 {% endtabs %}
 
+The following code example illustrates the converter used for applying custom grouping logic.
+
+{% highlight c# %}
+public class GroupConverter : IValueConverter
+{
+    public GroupConverter()
+    {
+        
+    }
+
+    public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        var orderInfo = value as OrderInfo;
+        if (orderInfo.Freight > 0 && orderInfo.Freight <= 250)
+            return "<=250";
+        else if (orderInfo.Freight > 250 && orderInfo.Freight <= 500)
+            return ">250 & <=500";
+        else if (orderInfo.Freight > 500 && orderInfo.Freight <= 750)
+            return ">500 & <=750";
+        else
+            return ">1000";
+    }
+
+    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        return null;
+    }
+}
+{% endhighlight %}
+
+
 ## Expand groups while grouping
  
 You can expand all the groups while grouping by setting [SfDataGrid.AutoExpandGroups](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoExpandGroups.html) to `true`. So, when user group any column, then all groups will be in expanded state. 
@@ -150,39 +181,9 @@ this.dataGrid.CollapseGroup(group);
 
 ![](SfDataGrid_images/GroupExpandCollapse.png)
 
-The following code example illustrates the converter used for applying custom grouping logic.
-
-{% highlight c# %}
-public class GroupConverter : IValueConverter
-{
-    public GroupConverter()
-    {
-        
-    }
-
-    public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
-    {
-        var orderInfo = value as OrderInfo;
-        if (orderInfo.Freight > 0 && orderInfo.Freight <= 250)
-            return "<=250";
-        else if (orderInfo.Freight > 250 && orderInfo.Freight <= 500)
-            return ">250 & <=500";
-        else if (orderInfo.Freight > 500 && orderInfo.Freight <= 750)
-            return ">500 & <=750";
-        else
-            return ">1000";
-    }
-
-    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
-    {
-        return null;
-    }
-}
-{% endhighlight %}
-
 ### GroupMode
 
-By default column grouping occurs based on the value in the underlying collection thereby creating a new group for each new value of that column. However you can also group a column based on the Display value by setting the [GridColumn.GroupMode](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~GroupMode.html) property as `Display`. In the below code example we have set [GridColumn.Format](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~Format.html) property as "#" which displays only the rounded off value in the `GridCell`.  
+By default column grouping occurs based on the value in the underlying collection thereby creating a new group for each new value of that column. However you can also group a column based on the Display value by setting the [GridColumn.GroupMode](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~GroupMode.html) property as `Display`. In the below code example we have set [GridColumn.Format](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~Format.html) property as "#" which displays only the rounded off value in the [GridCell](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridCell.html).  
 
 {% tabs %}
 {% highlight xaml %}

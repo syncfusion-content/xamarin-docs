@@ -9,7 +9,7 @@ documentation: ug
 
 # Column Sizer
 
-SfDataGrid allows you to apply `ColumnSizer` for the `GridColumns` by setting the [SfDataGrid.ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ColumnSizer.html) property. 
+SfDataGrid allows you to apply `ColumnSizer` for the [GridColumn](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn.html) by setting the [SfDataGrid.ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ColumnSizer.html) property. 
 
 The following code example illustrates how to apply `ColumnSizer` in SfDataGrid.
 
@@ -36,7 +36,7 @@ SfDataGrid applies width for all the `GridColumns` in the [SfDataGrid.Columns](h
 
 No column sizing is applied when the [SfDataGrid.ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ColumnSizer.html) is set to [None](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.ColumnSizer.html). Columns are arranged in view based on the [SfDataGrid.DefaultColumnWidth](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~DefaultColumnWidth.html) property. This is the default value of the `SfDataGrid.ColumnSizer` property.
 
-![](SfDataGrid_images/ColumnSizer_img1.png)
+![](SfDataGrid_images/CoumnSizer_Img1.png)
 
 ## ColumnSizer.LastColumnFill
 
@@ -53,7 +53,7 @@ dataGrid.ColumnSizer = ColumnSizer.LastColumnFill;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/ColumnSizer_img2.png)
+![](SfDataGrid_images/CoumnSizer_Img2.png)
 
 ## ColumnSizer.Star
 
@@ -70,7 +70,7 @@ dataGrid.ColumnSizer = ColumnSizer.Star;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/ColumnSizer_img3.png)
+![](SfDataGrid_images/CoumnSizer_Img3.png)
 
 ## ColumnSizer.Auto
 
@@ -87,7 +87,7 @@ dataGrid.ColumnSizer = ColumnSizer.Auto;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/ColumnSizer_img4.png)
+![](SfDataGrid_images/CoumnSizer_Img4.png)
 
 N> If any column is specified a width explicitly using the [GridColumn.Width](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~Width.html) property then that column is not considered ColumnSizing width and skipped while applying the ColumnSizer for grid columns.
 

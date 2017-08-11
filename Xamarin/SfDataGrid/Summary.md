@@ -428,7 +428,7 @@ sfGrid.CaptionSummaryRow= summaryRow;
 In the below sections formatting is explained using `CaptionSummary`.
 
 ### Defining Summary Function
-In the below code snippet `Format` property is defined to display sum of `Salary` by specifying the function name inside curly braces.
+In the below code snippet [Format](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSummaryColumn~Format.html) property is defined to display sum of `Salary` by specifying the function name inside curly braces.
 
 N> `DoubleAggregate` is used as `SummaryType` which has the count, max, min, average and sum functions.
 
@@ -537,7 +537,7 @@ sfGrid.CaptionSummaryRow= summaryRow;
 ![](SfDataGrid_images/Summary_img14.png)
 
  
-### Formatting Summary for Row using Title property
+### Formatting Summary for row using Title property
 
 You can format the summary value for row using [GridSummaryRow.Title](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSummaryRow~Title.html) when `ShowSummaryInRow` set to `true`.
 
@@ -587,7 +587,7 @@ N> Setting the `SummaryColumn.Format` property to {Sum:c} throws an exception si
 
 ## Aggregate Types
 
-You can specify the different summary aggregate types by using [GridSummaryColumn.SummaryType](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSummaryColumn~SummaryType.html) property and use the built-in function in `GridSummaryColumn.Format`.
+You can specify the different summary aggregate types by using [GridSummaryColumn.SummaryType](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSummaryColumn~SummaryType.html) property and use the built-in function in [GridSummaryColumn.Format](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSummaryColumn~Format.html).
 
 The following are the list of predefined aggregate types and its built-in functions.
 

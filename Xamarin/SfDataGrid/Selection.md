@@ -194,26 +194,25 @@ Refer the below example in which a CustomSelectionController derived from `GridS
 
 {% tabs %}
 {% highlight xaml %}
-<local:SampleView.Resources>
+<ContentPage.Resources>
     <ResourceDictionary>
-      <local:CustomSelectionController x:Key="CustomSelectionController" DataGrid="{x:Reference dataGrid}">
-      </local:CustomSelectionController>
+        <local:CustomSelectionController x:Key="CustomSelectionController" DataGrid="{x:Reference dataGrid}">
+        </local:CustomSelectionController>
     </ResourceDictionary>
-  </local:SampleView.Resources>
+</ContentPage.Resources>
 
-    <local:SampleView.Content>
-        <sfgrid:SfDataGrid x:Name="dataGrid"
-                           AutoGenerateColumns="true"
-                           SelectedIndex="1"
-                           SelectionMode="Multiple"
-                           VerticalOverScrollMode="None">
-                           VerticalOverScrollMode="None"
-                           SelectionController="{StaticResource CustomSelectionController}"/>
-    </local:SampleView.Content>
+<ContentPage.Content>
+    <sfgrid:SfDataGrid x:Name="dataGrid"
+            ColumnSizer="Star"
+            SelectedIndex="1"
+            SelectionMode="Single"
+            VerticalOverScrollMode="None"
+            SelectionController="{StaticResource CustomSelectionController}" />
+</ContentPage.Content>
 {% endhighlight %}
 {% highlight c# %}
-dataGrid.SelectionController = new CustomSelectionController(dataGrid);
-dataGrid.SelectionMode = SelectionMode.Multiple;
+this.dataGrid.ItemsSource = viewModel.OrdersInfo;
+this.dataGrid.SelectionController = new CustomSelectionController();
 SelectionPicker.SelectedIndex = 1;
 {% endhighlight %}
 {% endtabs %}
@@ -221,14 +220,14 @@ SelectionPicker.SelectedIndex = 1;
 {% highlight c# %}
 public class CustomSelectionController : GridSelectionController
 {
-    public CustomSelectionController(SfDataGrid dataGrid) : base(dataGrid)
+    public CustomSelectionController()
     {
-
+        this.SelectedRows = new GridSelectedRowsCollection();
     }
     protected override async void SetSelectionAnimation(VirtualizingCellsControl rowElement)
     {
-        rowElement.Opacity = 0.5;
-        await rowElement.FadeTo(1, 600, Easing.CubicInOut);
+        rowElement.Opacity = 0.50;
+        await rowElement.FadeTo(1, 400, Easing.CubicInOut);
     }
 }
 {% endhighlight %}

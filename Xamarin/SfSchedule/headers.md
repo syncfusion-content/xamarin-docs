@@ -73,18 +73,18 @@ You can collapse the default header of schedule by setting `HeaderHeight` proper
     
     void Schedule_VisibleDatesChangedEvent(object sender, VisibleDatesChangedEventArgs args)
         {
-            List<DateTime> datelist = new List<DateTime>();
-            datelist = (args.visibleDates);
+            List<DateTime> dateList = new List<DateTime>();
+            dateList = (args.visibleDates);
 			var headerString = String.Empty;
-            var item = datelist[0];
+            var item = dateList[0];
 			if (Schedule.ScheduleView == ScheduleView.DayView)
 			{
-				item = datelist[0];
+				item = dateList[0];
 				headerString = item.Date.ToString("MMMM, yyyy");
 			}
 			else
 			{
-				item = datelist[datelist.Count / 2];
+				item = dateList[dateList.Count / 2];
 				headerString = item.Date.ToString("MMMM, yyyy");
 			}
         }

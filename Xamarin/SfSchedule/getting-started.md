@@ -16,7 +16,7 @@ This section provides you an overview for working with SfSchedule for Xamarin.Fo
 SfSchedule can be included in your Xamarin.Forms project in two ways,  
  
 * [Assembly Reference](#assembly-reference)  
-* [Nuget Configuration](#nuget-configuration)  
+* [NuGet Configuration](#nuget-configuration)  
 
 ### Assembly Reference  
  
@@ -55,7 +55,7 @@ The following list of assemblies need to be added as reference from the lib fold
 </tr>   
 </table>   
     
-### Nuget Configuration  
+### NuGet Configuration  
     
 Alternatively you can refer SfSchedule in your application by configuring nuget packages.    
   
@@ -227,7 +227,7 @@ DayView is used to display a single day, current day will be visible by default.
 
 ### Week View   
  
-`WeekView` is to view all days of a particular week. Appointments will be arranged based on the dates on the week in repective timeslots.  
+`WeekView` is to view all days of a particular week. Appointments will be arranged based on the dates on the week in respective timeslots.  
     
 {% tabs %}   
 {% highlight xaml %}   
@@ -495,7 +495,7 @@ You can map those properties of `Meeting` class with our schedule control by usi
 {% endhighlight %}
 {% endtabs %}
 
-#### Setting data source for SfSchdeule  
+#### Setting data source for SfSchedule  
 
 Create meetings of type `ObservableCollection <Meeting>`  and assign those appointments collection `Meetings` to the `DataSource` property of `SfSchedule`.
 

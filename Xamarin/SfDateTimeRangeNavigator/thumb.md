@@ -44,29 +44,29 @@ The `LeftThumbStyle` and `RightThumbStyle` properties are used to configure the 
 {% endhighlight %}
 
 {% highlight c# %}
-SfDateTimeRangeNavigator rangenavigator = new SfDateTimeRangeNavigator();
+SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator();
 
 ...
 
-rangenavigator.LeftThumbStyle.BackgroundColor = Color.Aqua;
+rangeNavigator.LeftThumbStyle.BackgroundColor = Color.Aqua;
 
-rangenavigator.LeftThumbStyle.BorderColor = Color.FromHex("#083928");
+rangeNavigator.LeftThumbStyle.BorderColor = Color.FromHex("#083928");
 
-rangenavigator.LeftThumbStyle.BorderWidth = 3;
+rangeNavigator.LeftThumbStyle.BorderWidth = 3;
 
-rangenavigator.LeftThumbStyle.LineColor = Color.FromHex("#E70E49");
+rangeNavigator.LeftThumbStyle.LineColor = Color.FromHex("#E70E49");
 
-rangenavigator.LeftThumbStyle.LineWidth = 5;
+rangeNavigator.LeftThumbStyle.LineWidth = 5;
 
-rangenavigator.RightThumbStyle.BackgroundColor = Color.Aqua;
+rangeNavigator.RightThumbStyle.BackgroundColor = Color.Aqua;
 
-rangenavigator.RightThumbStyle.BorderColor = Color.FromHex("#083928");
+rangeNavigator.RightThumbStyle.BorderColor = Color.FromHex("#083928");
 
-rangenavigator.RightThumbStyle.BorderWidth = 3;
+rangeNavigator.RightThumbStyle.BorderWidth = 3;
 
-rangenavigator.RightThumbStyle.LineColor = Color.FromHex("#E70E49");
+rangeNavigator.RightThumbStyle.LineColor = Color.FromHex("#E70E49");
 
-rangenavigator.RightThumbStyle.LineWidth = 5;
+rangeNavigator.RightThumbStyle.LineWidth = 5;
 {% endhighlight %}
 {% endtabs %}
 

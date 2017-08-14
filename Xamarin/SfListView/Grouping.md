@@ -88,6 +88,22 @@ listView.GroupHeaderTemplate = new DataTemplate(() =>
 {% endhighlight %}
 {% endtabs %}
 
+## Binding multiple properties in Group Descriptor
+
+SfListView provides supports to bind the multiple properties to [GroupDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor.html) object by using `KeySelector` in which you can create the group header items with multiple data model object effectively.
+
+{% highlight c# %}
+listView.DataSource.GroupDescriptors.Add(new GroupDescriptor()
+{
+  PropertyName = "Designation",
+  KeySelector = (object obj1) =>
+  {
+     var item = (obj1 as Employee);
+     return item.Designation + item.Level;
+  }
+});
+{% endhighlight %}
+
 ## Customizing the Group Header Size
 
 SfListView allows you to customize the size of the group header items by setting the [SfListView.GroupHeaderSize](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~GroupHeaderSize.html) property. The default value of this property is 40. This property responds to runtime changes and hence you can customize it based on your requirement.
@@ -109,7 +125,7 @@ N> For Vertical orientation, the group header size is considered as height and f
 
 SfListView allows you to group the items based on custom logic. The custom grouping can be applied to either [SfListView.DataSource.GroupComparer](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~GroupComparer.html) property or [GroupDescriptor.Comparer](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~Comparer.html) which is added into the [DataSource.GroupDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~GroupDescriptors.html) collection.
 
-The following code example illustrates how to perform custom grouping for sort the groups based on the group item count in ascending.
+The following code example illustrates how to perform custom grouping for underlying data based on the group item count.
 
 {% highlight c# %}
 listView.DataSource.GroupDescriptors.Add(new GroupDescriptor()
@@ -302,3 +318,74 @@ The [SfListView.GroupCollapsed](https://help.syncfusion.com/cr/cref_files/xamari
 The [GroupExpandCollapseChangedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GroupExpandCollapseChangedEventHandler.html) of the `GroupCollapsed` event provides the information about collapsed group and it contains the following member.
 
 `Groups` - Gets a list of groups which are collapsed.
+
+## How To 
+
+### Multilevel Grouping in SfListView
+
+SfListView lets you to arrange the grouped items in hierarchical structure by customizing the [GroupHeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~GroupHeaderTemplate.html) property and by adding the multiple [GroupDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor.html) objects into the [GroupDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~GroupDescriptors.html) collection. 
+
+In the `GroupHeaderTemplate`, you need to set the `Margin` property to the custom view based on the requirement in order to arrange the group header items and sub group header items in the hierarchical structure. You can also download the entire source code of this demo from [here](http://files2.syncfusion.com/Xamarin.Forms/Samples/ListView_Multilevelgrouping.zip).
+
+{% highlight xaml %}
+xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+xmlns:dataSource="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable"
+...
+<ContentPage.Resources>
+  <ResourceDictionary>
+    <local:GroupHeaderConverter x:Key="TemplateConverter"/>
+  </ResourceDictionary>
+</ContentPage.Resources>
+<syncfusion:SfListView ItemsSource="{Binding EmployeeInfo}" ItemSize="60">
+  <syncfusion:SfListView.DataSource>
+    <dataSource:DataSource>
+       <dataSource:DataSource.GroupDescriptors>
+          <dataSource:GroupDescriptor PropertyName="Designation" />
+          <dataSource:GroupDescriptor PropertyName="Level" />
+       </dataSource:DataSource.GroupDescriptors>
+    </dataSource:DataSource>
+  </syncfusion:SfListView.DataSource>
+  <syncfusion:SfListView.GroupHeaderTemplate>
+     <DataTemplate>
+        <ViewCell>
+          <ViewCell.View>
+             <StackLayout BackgroundColor="{Binding Level,Converter={StaticResource TemplateConverter}}"
+                          Margin="{Binding Level,Converter={StaticResource TemplateConverter}}">
+                <Label Text="{Binding Key}" FontSize="22" FontAttributes="Bold" Margin="0"
+                       VerticalOptions="Center" HorizontalOptions="Start"/>
+             </StackLayout>
+          </ViewCell.View>
+        </ViewCell>
+     </DataTemplate>
+  </syncfusion:SfListView.GroupHeaderTemplate>
+...
+</syncfusion:SfListView>
+{% endhighlight %}
+
+{% highlight c# %}
+public class GroupHeaderConverter : IValueConverter
+{
+  public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+  {
+     if (targetType.Name == "Color")
+     {
+        if ((int)value == 1)
+           return Color.FromHex("#D3D3D3");
+        else
+           return Color.FromHex("E4E4E4");
+     }
+     else
+     {
+        if ((int)value == 1)
+           return new Thickness(5, 5, 5, 0);
+        else
+           return new Thickness((int)value * 15, 5, 5, 0);
+     }
+  }
+
+  public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+  {
+     throw new NotImplementedException();
+  }
+}
+{% endhighlight %}

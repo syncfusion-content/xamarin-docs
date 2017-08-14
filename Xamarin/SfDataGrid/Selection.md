@@ -205,7 +205,7 @@ Refer the below example in which a CustomSelectionController derived from `GridS
     <sfgrid:SfDataGrid x:Name="dataGrid"
             ColumnSizer="Star"
             SelectedIndex="1"
-            SelectionMode="Single"
+            SelectionMode="Multiple"
             VerticalOverScrollMode="None"
             SelectionController="{StaticResource CustomSelectionController}" />
 </ContentPage.Content>
@@ -213,6 +213,7 @@ Refer the below example in which a CustomSelectionController derived from `GridS
 {% highlight c# %}
 this.dataGrid.ItemsSource = viewModel.OrdersInfo;
 this.dataGrid.SelectionController = new CustomSelectionController();
+this.dataGrid.SelectionMode = SelectionMode.Multiple;
 SelectionPicker.SelectedIndex = 1;
 {% endhighlight %}
 {% endtabs %}

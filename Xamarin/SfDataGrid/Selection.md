@@ -192,10 +192,31 @@ It can be done by extending the [GridSelectionController](http://help.syncfusion
 
 Refer the below example in which a CustomSelectionController derived from `GridSelectionController` and an instance of it is assigned to [SfDataGrid.SelectionController](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectionController.html ) property to achieve selection animation.
 
+{% tabs %}
+{% highlight xaml %}
+<local:SampleView.Resources>
+    <ResourceDictionary>
+      <local:CustomSelectionController x:Key="CustomSelectionController" DataGrid="{x:Reference dataGrid}">
+      </local:CustomSelectionController>
+    </ResourceDictionary>
+  </local:SampleView.Resources>
+
+    <local:SampleView.Content>
+        <sfgrid:SfDataGrid x:Name="dataGrid"
+                           AutoGenerateColumns="true"
+                           SelectedIndex="1"
+                           SelectionMode="Multiple"
+                           VerticalOverScrollMode="None">
+                           VerticalOverScrollMode="None"
+                           SelectionController="{StaticResource CustomSelectionController}"/>
+    </local:SampleView.Content>
+{% endhighlight %}
 {% highlight c# %}
 dataGrid.SelectionController = new CustomSelectionController(dataGrid);
 dataGrid.SelectionMode = SelectionMode.Multiple;
+SelectionPicker.SelectedIndex = 1;
 {% endhighlight %}
+{% endtabs %}
 
 {% highlight c# %}
 public class CustomSelectionController : GridSelectionController

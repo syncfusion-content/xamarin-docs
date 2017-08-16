@@ -127,10 +127,10 @@ column.EnableTooltip = true;
 
 DataTemplate template = new DataTemplate (() => {
 StackLayout stack = new StackLayout(){ Orientation = StackOrientation.Horizontal};
-Label ylabel = new Label(){Text="Temperature:"};
+Label label = new Label(){Text="Temperature:"};
 Label yValue = new Label();
 yValue.SetBinding (Label.TextProperty, "Value");
-stack.Children.Add(ylabel);
+stack.Children.Add(label);
 stack.Children.Add(yValue);
 return stack;
 });

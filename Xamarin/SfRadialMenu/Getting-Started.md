@@ -348,6 +348,7 @@ Public class RadialMenuPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
+![](images/gettingStarted2.png)
+
 N> To use FontIcons, add respcetive FontFamily name in `info.plist` file under Fonts provided by application category.
 
-![](images/gettingStarted2.png)

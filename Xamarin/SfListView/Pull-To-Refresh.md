@@ -7,7 +7,7 @@ control: SfListView
 documentation: ug
 ---
 
-# PullToRefresh 
+# Pull To Refresh 
 
 SfListView lets you to enable the `PullToRefresh` support by loading it directly into the [PullableContent](https://help.syncfusion.com/cr/cref_files/xamarin/sfpulltorefresh/Syncfusion.SfPullToRefresh.XForms~Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh~PullableContent.html). At runtime, SfListView provides support for refreshing the data in view while performing the `PullToRefresh` action.
 

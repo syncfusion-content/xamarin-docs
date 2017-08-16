@@ -121,6 +121,7 @@ Public class RadialMenuPage : ContentPage
 }
 {% endhighlight %}
 {% endtabs %}
+
 ![](images/centerButtonCaption.png)
 
 ## Add any View
@@ -328,7 +329,7 @@ Public class RadialMenuPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-![](images/backButtonIcontFont.png)
+![](images/backButtonIconFont.png)
 
 ### BackButton with CustomView 
 

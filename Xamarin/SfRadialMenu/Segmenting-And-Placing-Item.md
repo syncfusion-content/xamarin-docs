@@ -28,6 +28,8 @@ Number of segments in the panel is determined by `VisibleSegmentsCount` property
 
 `VisibleSegmentsCount` property is used to specify the number of segments available in circular panel. When children count is greater than the value given in VisibleSegmentsCount property then overflowing children are not arranged in the panel. When children count is lesser than VisibleSegmentsCount property then remaining segments are left free.
 
+![](images/beforeVisbleSegment.png)
+
 If Number of item count is higher than VisibleItemCount means excessive items will not be shown.
 
 {% tabs %}
@@ -113,7 +115,7 @@ Public class RadialMenuPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-![](images/radialMenuVisibleItemCount.png)
+![](images/visibleSegmentCount.png)
 
 ### SegmentIndex
 

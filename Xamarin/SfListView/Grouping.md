@@ -92,6 +92,15 @@ listView.GroupHeaderTemplate = new DataTemplate(() =>
 
 SfListView allows you to customize the size of the group header items by setting the [SfListView.GroupHeaderSize](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~GroupHeaderSize.html) property. The default value of this property is 40. This property responds to runtime changes and hence you can customize it based on your requirement.
 
+When [AutoFitMode](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AutoFitMode.html) is `Height`, need to set the maximum size among the measured size of each group header item to the `GroupHeaderSize` property. For e.g., If expected measured size of items like below, then we need to set `GroupHeaderSize` as 200.
+ 
+* Item1 - 150
+* Item2 - 50
+* Item3 - 180
+* Item4 - 90
+
+You can get the measured item size for each group header item from the [QueryItemSize](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~QueryItemSize_EV.html) event on scrolling.
+
 The following code example illustrates how to customize the group header size in SfListView.
 
 {% tabs %}

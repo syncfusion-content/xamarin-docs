@@ -100,6 +100,15 @@ Now run the application to render the following output. You can also download th
 
 SfListView allows you to customize the size of the items by setting the [ItemSize](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemSize.html) property. The default value of this property is 40. This property responds to runtime changes and hence you can customize it based on your requirement.
 
+When [AutoFitMode](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AutoFitMode.html) is `Height`, need to set the maximum size among the measured size of each item to the `ItemSize` property. For e.g., If expected measured size of items like below, then we need to set `ItemSize` as 200.
+ 
+* Item1 - 150
+* Item2 - 50
+* Item3 - 180
+* Item4 - 90
+
+You can get the measured item size for each item from the [QueryItemSize](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~QueryItemSize_EV.html) event on scrolling.
+
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfListView x:Name="listView" ItemSize="60" />

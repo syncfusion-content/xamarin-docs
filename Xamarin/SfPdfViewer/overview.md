@@ -1,6 +1,6 @@
 ---
 platform: Xamarin.Forms
-control: PDF viewer
+control: SfPdfViewer
 ---
 
 # PDF Viewer 

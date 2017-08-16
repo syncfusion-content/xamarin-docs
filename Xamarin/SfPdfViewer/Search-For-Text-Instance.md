@@ -174,8 +174,8 @@ When NoMoreOccurrence is set to true, it means that the PDF viewer had completed
 
 With the continuation of the getting started sample, you can extend the UI design to perform the text search in the PDF Viewer. Design the search toolbar in parallel to the main toolbar, here when the main toolbar is visible, search bar will be invisible and vice versa.
 
-•	Main toolbar – A new option to initiate text search toolbar will be added to the existing options.
-•	Search toolbar - A new and separate toolbar is created to search a text instance – it includes option to enter the text, perform search, cancel search and navigate back to the main toolbar.
+* Main toolbar – A new option to initiate text search toolbar will be added to the existing options.
+* Search toolbar - A new and separate toolbar is created to search a text instance – it includes option to enter the text, perform search, cancel search and navigate back to the main toolbar.
 
 In the PdfViewerViewModel class, create a new command (named – SearchAndToolbarToggleCommand) to toggle between the main toolbar and search toolbar. The view model class after the creation of the command and necessary boolean variables to toggle the visibility will be like
 

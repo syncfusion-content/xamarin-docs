@@ -49,6 +49,8 @@ The following list of assemblies need to be added as reference from the lib fold
 </tr>
 </table>
 
+N> You can also configure the syncfusion nuget packages in Visual Studio, please refer [here]( https://help.syncfusion.com/xamarin/introduction/download-and-installation#configuring-syncfusion-nuget-packages-in-visual-studio) for more information.
+
 ## Launching the SfListView on each platform
 
 To use SfListView inside an application, each platform application must initialize the SfListView renderer. This initialization step varies from platform to platform and is discussed in the following sections.
@@ -85,6 +87,34 @@ public MainPage()
     …
 }
 {% endhighlight %} 
+
+### ReleaseMode issue in UWP platform
+
+There is a known Framework issue in UWP platform. The custom controls will not render when deployed the application in `Release Mode`.
+
+The above problem can be resolved by initializing the SfListView assemblies in `App.xaml.cs` in UWP project as like in below code snippet.
+
+{% highlight c# %}
+// In App.xaml.cs
+
+protected override void OnLaunched(LaunchActivatedEventArgs e)
+{
+    …
+
+    rootFrame.NavigationFailed += OnNavigationFailed;
+        
+    // you'll need to add `using System.Reflection;`
+    List<Assembly> assembliesToInclude = new List<Assembly>();
+
+    //Now, add all the assemblies your app uses
+    assembliesToInclude.Add(typeof(SfListViewRenderer).GetTypeInfo().Assembly);
+
+    // replaces Xamarin.Forms.Forms.Init(e);        
+    Xamarin.Forms.Forms.Init(e, assembliesToInclude);
+        
+    …     
+}
+{% endhighlight %}
 
 ## Create a simple SfListView 
 

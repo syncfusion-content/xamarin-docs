@@ -184,3 +184,55 @@ public class CustomSelectionController : GridSelectionController
 The following screenshot shows the final outcome upon execution of the above code.
 
 ![](SfDataGrid_images/MultipleSelectionColors_img1.png)
+
+## Selection Animation
+
+SfDataGrid provides support to select one or more rows programmatically or by touch interactions. In addition, SfDataGrid also provides extensibility to animate the selected rows. 
+It can be done by extending the [GridSelectionController](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSelectionController.html# ).
+
+Refer the below example in which a CustomSelectionController derived from `GridSelectionController` and an instance of it is assigned to [SfDataGrid.SelectionController](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectionController.html ) property to achieve selection animation.
+
+{% tabs %}
+{% highlight xaml %}
+<ContentPage.Resources>
+    <ResourceDictionary>
+        <local:CustomSelectionController x:Key="CustomSelectionController" DataGrid="{x:Reference dataGrid}">
+        </local:CustomSelectionController>
+    </ResourceDictionary>
+</ContentPage.Resources>
+
+<ContentPage.Content>
+    <sfgrid:SfDataGrid x:Name="dataGrid"
+            ColumnSizer="Star"
+            SelectedIndex="1"
+            SelectionMode="Multiple"
+            VerticalOverScrollMode="None"
+            SelectionController="{StaticResource CustomSelectionController}" />
+</ContentPage.Content>
+{% endhighlight %}
+{% highlight c# %}
+this.dataGrid.ItemsSource = viewModel.OrdersInfo;
+this.dataGrid.SelectionController = new CustomSelectionController();
+this.dataGrid.SelectionMode = SelectionMode.Multiple;
+SelectionPicker.SelectedIndex = 1;
+{% endhighlight %}
+{% endtabs %}
+
+{% highlight c# %}
+public class CustomSelectionController : GridSelectionController
+{
+    public CustomSelectionController()
+    {
+        this.SelectedRows = new GridSelectedRowsCollection();
+    }
+    protected override async void SetSelectionAnimation(VirtualizingCellsControl rowElement)
+    {
+        rowElement.Opacity = 0.50;
+        await rowElement.FadeTo(1, 400, Easing.CubicInOut);
+    }
+}
+{% endhighlight %}
+
+The following screenshot shows the selection animation in SfDataGrid.
+
+![](SfDataGrid_images/SelectionAnimation_Forms.png)

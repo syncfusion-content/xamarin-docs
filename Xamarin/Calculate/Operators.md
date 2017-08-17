@@ -172,10 +172,10 @@ To register the strings in `CalcQuickBase`, it must be enclosed within square br
 {% tabs %}
 {% highlight c# %}
 
-CalcQuickBase cq = new CalcQuickBase();
-cq["A"] = "5";
-cq["B"] = "6";
-cq["C"] = "11";
+CalcQuickBase calcQuickBase = new CalcQuickBase();
+calcQuickBase["A"] = "5";
+calcQuickBase["B"] = "6";
+calcQuickBase["C"] = "11";
 
 {% endhighlight %}
 {% endtabs %}

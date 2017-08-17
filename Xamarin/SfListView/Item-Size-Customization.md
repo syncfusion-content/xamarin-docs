@@ -15,11 +15,11 @@ This section explains about how to customize the item size in SfListView.
 
 SfListView allows you to customize the size of item on demand by [SfListView.QueryItemSize](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~QueryItemSize_EV.html) event. This event is raised whenever items come to view. You can customize the size of a particular item on demand by using the item index.
 
-## Autofit the items based on content
+## AutoFit the items based on content
 
 SfListView allows you to dynamically adjust the size of items based on content loaded in the [SfListView.ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html) by defining the [SfListView.AutoFitMode](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AutoFitMode.html) property. SfListView has two types of AutoFitMode as listed below,
 
-* Height - Autofit the item based on it's content and consider the height of the item when vertical [SfListView.Orientation](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~Orientation.html). For horizontal orientation, consider the width of the item. If [SfListView.GridLayout](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GridLayout.html), after autofit all items in a row, it will take the maximum item height in that row and applies to all other items in the row.
+* Height - AutoFit the item based on it's content and consider the height of the item when vertical [SfListView.Orientation](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~Orientation.html). For horizontal orientation, consider the width of the item. If [SfListView.GridLayout](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GridLayout.html), after AutoFit all items in a row, it will take the maximum item height in that row and applies to all other items in the row.
 * None - SfListView items are layout by [SfListView.ItemSize](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemSize.html).
 
 The following code example illustrates how to customize the item size based on content.
@@ -38,7 +38,7 @@ listView.AutoFitMode = AutoFitMode.Height;
 
 N> If define any size manually to view which loaded in [SfListView.ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html), SfListView will returns that size as item size of each item. 
 
-The following screenshot shows the output of Autofit items. You can download the entire source code of this demo from [here](http://files2.syncfusion.com/Xamarin.Forms/Samples/ListView_AutoFitItems.zip)
+The following screenshot shows the output of AutoFit items. You can download the entire source code of this demo from [here](http://files2.syncfusion.com/Xamarin.Forms/Samples/ListView_AutoFitItems.zip)
 
 ![](SfListView_images/AutofitItems.png)
 

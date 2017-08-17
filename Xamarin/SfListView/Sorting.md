@@ -93,26 +93,26 @@ public class CustomComparer : IComparer<object>, ISortDirection
 {
   public int Compare(object x, object y)
   {
-     int namX;
-     int namY;
+     int nameX;
+     int nameY;
 
      //For Contacts Type data
      if (x.GetType() == typeof(Contacts))
      {
        //Calculating the length of ContactName if the object type is Contacts
-       namX = ((Contacts)x).ContactName.Length;
-       namY = ((Contacts)y).ContactName.Length;
+       nameX = ((Contacts)x).ContactName.Length;
+       nameY = ((Contacts)y).ContactName.Length;
      }
      else
      {
-       namX = x.ToString().Length;
-       namY = y.ToString().Length;
+       nameX = x.ToString().Length;
+       nameY = y.ToString().Length;
      }
 
      // Objects are compared and return the SortDirection
-     if (namX.CompareTo(namY) > 0)
+     if (nameX.CompareTo(nameY) > 0)
         return SortDirection == ListSortDirection.Ascending ? 1 : -1;
-     else if (namX.CompareTo(namY) == -1)
+     else if (nameX.CompareTo(nameY) == -1)
         return SortDirection == ListSortDirection.Ascending ? -1 : 1;
      else
         return 0;
@@ -153,17 +153,17 @@ SfListView allows you to sort the items on tapping the header by handling [ItemT
 {% endhighlight %}
 {% highlight c# %}
 listView = new SfListView();
-listView.ItemsSource = viewmodel.customerDetails;
+listView.ItemsSource = viewModel.customerDetails;
 listView.ItemSize = 60;
 listView.ItemTapped += ListView_ItemTapped;
 listView.IsStickyHeader = true;
 listView.HeaderTemplate = new DataTemplate(() => 
 {
-  var stacklayout = new StackLayout { BackgroundColor = Color.Teal };
+  var stackLayout = new StackLayout { BackgroundColor = Color.Teal };
   var label = new Label { Text = "CustomerDetails", TextColor = Color.White, 
                           FontAttributes = FontAttributes.Bold, FontSize = 20 };
-  stacklayout.Children.Add(label);
-  return stacklayout;
+  stackLayout.Children.Add(label);
+  return stackLayout;
 });
 {% endhighlight %}
 {% endtabs %}

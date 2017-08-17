@@ -246,12 +246,12 @@ public class BookInfoRepository
     internal void GenerateBookInfo()
     {
         bookInfo = new ObservableCollection<BookInfo>();
-        bookInfo.Add(new BookInfo() { BookName = "Object-Oriented Programming in C#", BookDescription = "Object-oriented programming is the de facto programming paradigm" });
+        bookInfo.Add(new BookInfo() { BookName = "Object-Oriented Programming in C#", BookDescription = "Object-oriented programming is a programming paradigm based on the concept of objects" });
         bookInfo.Add(new BookInfo() { BookName = "C# Code Contracts", BookDescription = "Code Contracts provide a way to convey code assumptions" });
         bookInfo.Add(new BookInfo() { BookName = "Machine Learning Using C#", BookDescription = "You’ll learn several different approaches to applying machine learning" });
         bookInfo.Add(new BookInfo() { BookName = "Neural Networks Using C#", BookDescription = "Neural networks are an exciting field of software development" });
         bookInfo.Add(new BookInfo() { BookName = "Visual Studio Code", BookDescription = "It is a powerful tool for editing code and serves for end-to-end programming" });
-        bookInfo.Add(new BookInfo() { BookName = "Android Programming", BookDescription = "It is provides a useful overview of the Android application lifecycle" });
+        bookInfo.Add(new BookInfo() { BookName = "Android Programming", BookDescription = "It is provides a useful overview of the Android application life cycle" });
         bookInfo.Add(new BookInfo() { BookName = "iOS Succinctly", BookDescription = "It is for developers looking to step into frightening world of iPhone" });
         bookInfo.Add(new BookInfo() { BookName = "Visual Studio 2015", BookDescription = "The new version of the widely-used integrated development environment" });
         bookInfo.Add(new BookInfo() { BookName = "Xamarin.Forms", BookDescription = "Its creates mappings from its C# classes and controls directly" });
@@ -330,13 +330,13 @@ namespace GettingStarted
             listView.ItemsSource = viewModel.BookInfo;
             listView.ItemTemplate = new DataTemplate(() => {
                 var grid = new Grid();
-                var bookname = new Label { FontAttributes = FontAttributes.Bold, BackgroundColor = Color.Teal, FontSize = 21 };
-                bookname.SetBinding(Label.TextProperty, new Binding("BookName"));
-                var bookdescription = new Label { BackgroundColor = Color.Teal, FontSize = 15 };
-                bookdescription.SetBinding(Label.TextProperty, new Binding("BookDescription"));
+                var bookName = new Label { FontAttributes = FontAttributes.Bold, BackgroundColor = Color.Teal, FontSize = 21 };
+                bookName.SetBinding(Label.TextProperty, new Binding("BookName"));
+                var bookDescription = new Label { BackgroundColor = Color.Teal, FontSize = 15 };
+                bookDescription.SetBinding(Label.TextProperty, new Binding("BookDescription"));
 
-                grid.Children.Add(bookname);
-                grid.Children.Add(bookdescription, 1, 0);
+                grid.Children.Add(bookName);
+                grid.Children.Add(bookDescription, 1, 0);
 
                 return grid;
             });
@@ -423,13 +423,13 @@ The following code example illustrates how to filter the items based on the Titl
 var grid = new Grid();
 var viewModel = new BookInfoRepository ();
 
-var searchbar = new SearchBar() { Placeholder = "Search here to filter" };
-searchbar.TextChanged += OnFilterTextChanged;
+var searchBar = new SearchBar() { Placeholder = "Search here to filter" };
+searchBar.TextChanged += OnFilterTextChanged;
 
 listView = new SfListView();
 listView.ItemsSource = viewModel.BookInfo;
 
-grid.Children.Add(searchbar);
+grid.Children.Add(searchBar);
 grid.Children.Add(listView, 0, 1);
 ...
 private void OnFilterTextChanged(object sender, TextChangedEventArgs e)
@@ -550,22 +550,22 @@ listView.HeaderTemplate = new DataTemplate(() =>
 {
   var grid = new Grid();
   grid.BackgroundColor = Color.FromHex("#4CA1FE");
-  var headerlabel = new Label { BackgroundColor = Color.White, FontSize = 18,
+  var headerLabel = new Label { BackgroundColor = Color.White, FontSize = 18,
                                 FontAttributes = FontAttributes.Bold };
-  headerlabel.Text = "Inbox";
-  grid.Children.Add(headerlabel);
+  headerLabel.Text = "Inbox";
+  grid.Children.Add(headerLabel);
   return grid;
 });
 listView.FooterTemplate = new DataTemplate(() =>
 {
   var grid = new Grid();
   grid.BackgroundColor = Color.FromHex("#DC595F");
-  var editimage = new Image();
-  editimage.Source = "Edit.png";
-  var deleteimage = new Image();
-  deleteimage.Source = "Delete.png";
-  grid.Children.Add(editimage);
-  grid.Children.Add(deleteimage, 0, 1);
+  var editImage = new Image();
+  editImage.Source = "Edit.png";
+  var deleteImage = new Image();
+  deleteImage.Source = "Delete.png";
+  grid.Children.Add(editImage);
+  grid.Children.Add(deleteImage, 0, 1);
   return grid;
 });
 {% endhighlight %}

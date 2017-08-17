@@ -59,7 +59,7 @@ Syncfusion.Calculate.Android<br/>
 </tr>
 <tr>
 <td>
-Xamarin.IOS
+Xamarin.iOS
 </td>
 <td>
 Syncfusion.Calculate.IOS<br/>
@@ -78,17 +78,17 @@ Below example shows the computation of formula using [ParseAndCompute](https://h
 {% tabs %}
 {% highlight c# %}
 
-CalcQuickBase cq = new CalcQuickBase();   
+CalcQuickBase calcQuickBase = new CalcQuickBase();   
 
 //Computing expressions,
 
 string formula = "(5+25)*2";
-string result = cq.ParseAndCompute(formula);
+string result = calcQuickBase.ParseAndCompute(formula);
 
 //Computing in built formulas,
 
 string formula = "SUM(5,5)";
-string result = cq.ParseAndCompute(formula);
+string result = calcQuickBase.ParseAndCompute(formula);
 
 {% endhighlight %}
 {% endtabs %}

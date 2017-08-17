@@ -90,9 +90,9 @@ public class ContactsList : ObservableCollection<Contacts>, INotifyPropertyChang
 {
     public ContactsList()
     {
-        foreach (var cusName in CustomerNames)
+        foreach (var customerName in CustomerNames)
         {
-            var contact = new Contacts(cusName);
+            var contact = new Contacts(customerName);
             this.Add(contact);
         }
     }

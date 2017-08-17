@@ -192,7 +192,7 @@ By default, the groups will be in expanded state in SfListView. You can expand o
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfListView x:Name="listView" ItemSize="70" AllowGroupExpandCollapse="True" 
-                     ItemsSource="{Binding contactsinfo}" />          
+                     ItemsSource="{Binding contactsInfo}" />          
 {% endhighlight %}
 {% highlight c# %}
 listView.AllowGroupExpandCollapse = true;
@@ -239,7 +239,7 @@ N> When the `IsStickyGroupHeader` is set as `true`, [IsStickyHeader](https://hel
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfListView x:Name="listView" ItemSize="70" IsStickyGroupHeader="True" 
-                     ItemsSource="{Binding contactsinfo}" />          
+                     ItemsSource="{Binding contactsInfo}" />          
 {% endhighlight %}
 {% highlight c# %}  
 listView.IsStickyGroupHeader = true;
@@ -262,7 +262,7 @@ You can cancel the group expansion by setting `GroupExpandCollapseChangingEventA
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfListView x:Name="listView" ItemsSource="{Binding contactsinfo}" 
+<syncfusion:SfListView x:Name="listView" ItemsSource="{Binding contactsInfo}" 
                      GroupExpanding="ListView_GroupExpanding" />
 {% endhighlight %}
 {% highlight c# %}
@@ -302,7 +302,7 @@ You can cancel the group is being collapsed by using `GroupExpandCollapseChangin
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfListView x:Name="listView" ItemsSource="{Binding contactsinfo}" 
+<syncfusion:SfListView x:Name="listView" ItemsSource="{Binding contactsInfo}" 
                      GroupCollapsing="ListView_GroupCollapsing" />
 {% endhighlight %}
 {% highlight c# %}

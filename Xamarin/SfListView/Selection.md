@@ -165,3 +165,17 @@ In the above example, to change the appearance of selected item, `IsSelected` pr
 Now run the application to render the following output. You can download the entire source code of this demo from [here](http://files2.syncfusion.com/Xamarin.Forms/Samples/CustomSelection.zip).
 
 ![](SfListView_images/SfListView-Selection-2.png)
+
+## Limitation
+
+When the background color is set for an element in [ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html), touch interaction is not passed to the SfListView's item and selection will not be performed. To overcome this problem, set the `InputTransparent` property as `true` for the element whose background color is set to perform the selection.
+
+{% highlight xaml %}
+<syncfusion:SfListView>
+  <syncfusion:SfListView.ItemTemplate>
+    <DataTemplate>
+      <Frame BackgroundColor="#E4E4E4" InputTransparent="True"/>
+    </DataTemplate>
+  </syncfusion:SfListView.ItemTemplate>
+</syncfusion:SfListView>
+{% endhighlight %}

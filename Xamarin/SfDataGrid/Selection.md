@@ -96,9 +96,9 @@ SfDataGrid lets you to select the grid row(s) upon tapping them over the grid ce
 
 ### Select records in SfDataGrid when tapping only on the row header cells
 
-SfDataGrid allows you to select a specific row or group of rows by touching the grid cells. However, if your requirement is to select the record only when tapping on the row header cells, then you can acheive the requirement by handling the `SfDataGrid.SelectionChanging` event. 
+SfDataGrid allows you to select a specific row or group of rows by touching the grid cells. However, if your requirement is to select the record only when tapping on the row header cells, then you can achieve the requirement by handling the `SfDataGrid.SelectionChanging` event. 
  
-The below code example illustrates how to select records in SfDataGrd when tapping only on the row header cells.
+The below code example illustrates how to select records in SfDataGrid when tapping only on the row header cells.
 
 {% highlight c# %}
 
@@ -111,9 +111,9 @@ private void DataGrid_SelectionChanging(object sender, GridSelectionChangingEven
 
 private void DataGrid_GridTapped(object sender, GridTappedEventsArgs e)
 {
-    if(e.RowColumnindex.ColumnIndex == 0)
+    if(e.RowColumnIndex.ColumnIndex == 0)
     {
-        dataGrid.SelectedIndex = e.RowColumnindex.RowIndex;
+        dataGrid.SelectedIndex = e.RowColumnIndex.RowIndex;
     }
 }
  

@@ -94,7 +94,7 @@ The editing changes in a row will be committed only when user moves to next row 
 
 * [BeginEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.beginedit.aspx) – Gets called to begin edit on underlying data object when cell in a row enters into edit mode.
 
-* [CancelEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.canceledit.aspx) – Gets called when user cencels editing to discard the changes in a row since last BeginEdit call.
+* [CancelEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.canceledit.aspx) – Gets called when user cancels editing to discard the changes in a row since last BeginEdit call.
 
 * [EndEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.endedit.aspx) – Gets called when user move to the next row by tapping to commit changes in underlying data object since last BeginEdit call.
 
@@ -113,8 +113,8 @@ public class OrderInfo : INotifyPropertyChanged, IEditableObject
     private int _employeeID;
     private int _customerID;
     private bool _isClosed;
-    private string _firstname;
-    private string _lastname;
+    private string _firstName;
+    private string _lastName;
     private string _gender;
     private string _shipCity;
     private string _shipCountry;
@@ -167,20 +167,20 @@ public class OrderInfo : INotifyPropertyChanged, IEditableObject
 
     public string FirstName
     {
-        get { return _firstname; }
+        get { return _firstName; }
         set
         {
-            this._firstname = value;
+            this._firstName = value;
             RaisePropertyChanged("FirstName");
         }
     }
 
     public string LastName
     {
-        get { return _lastname; }
+        get { return _lastName; }
         set
         {
-            this._lastname = value;
+            this._lastName = value;
             RaisePropertyChanged("LastName");
         }
     }

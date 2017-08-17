@@ -16,7 +16,7 @@ Gets or sets the content of the refresh view. `PullableContent` is the main view
 {%highlight Xaml%}
 
   <syncfusion:SfPullToRefresh x:Name="pullToRefresh"
-                                    PullingThershold="120"
+                                    PullingThreshold="120"
                                     RefreshContentHeight="30"
                                     RefreshContentThreshold="30"
                                     RefreshContentWidth="30">
@@ -99,7 +99,7 @@ Gets or sets the refresh content threshold value that indicates progress indicat
 
 {% endtabs %}
 
-## PullingThershold
+## PullingThreshold
 
 Gets or sets the value for the refresh content threshold, this indicate progress indicator maximum pulling position in view.
 
@@ -107,7 +107,7 @@ Gets or sets the value for the refresh content threshold, this indicate progress
 
 {% highlight c# %}
 
-    pullToRefresh.PullingThershold = 200d;
+    pullToRefresh.PullingThreshold = 200d;
 
 {% endhighlight %}
 
@@ -117,7 +117,7 @@ Gets or sets the value for the refresh content threshold, this indicate progress
 
 {% highlight xaml %}
 
-    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" PullingThershold="200"/>
+    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" PullingThreshold="200"/>
 
 {%endhighlight%} 
 

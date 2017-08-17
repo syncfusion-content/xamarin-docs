@@ -39,10 +39,10 @@ class MyDataTemplateSelector : Xamarin.Forms.DataTemplateSelector
 
    protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
    {
-      var messageVm = item as Message;
-      if (messageVm == null)
+      var message = item as Message;
+      if (message == null)
          return null;
-      return messageVm.IsIncoming ? this.incomingDataTemplate : this.outgoingDataTemplate;
+      return message.IsIncoming ? this.incomingDataTemplate : this.outgoingDataTemplate;
    }
 
 }

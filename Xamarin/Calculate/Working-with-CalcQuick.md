@@ -19,17 +19,17 @@ The [ParseAndCompute](https://help.syncfusion.com/cr/cref_files/windowsforms/cal
 {% tabs %}
 {% highlight c# %}
 
-CalcQuickBase calcQuickBase = new CalcQuickBase();   
+CalcQuickBase cq = new CalcQuickBase();   
 
 //Computing Expressions,
 
 string formula = "(5+25)*2";
-string result = calcQuickBase.ParseAndCompute(formula);
+string result = cq.ParseAndCompute(formula);
 
 //Computing In-Built formulas,
 
 string formula = "SUM(5,5)";
-string result = calcQuickBase.ParseAndCompute(formula);
+string result = cq.ParseAndCompute(formula);
 
 {% endhighlight %}
 {% endtabs %}
@@ -47,10 +47,10 @@ simply index the `CalcQuickBase` object with the name. To set its value, assign 
 {% tabs %}
 {% highlight c# %}
 
-CalcQuickBase calcQuickBase = new CalcQuickBase();
-calcQuickBase["A"] = "5";
-calcQuickBase["B"] = "6";
-calcQuickBase["C"] = "11";
+CalcQuickBase cq = new CalcQuickBase();
+cq["A"] = "5";
+cq["B"] = "6";
+cq["C"] = "11";
 
 {% endhighlight %}
 {% endtabs %}
@@ -67,18 +67,18 @@ Below example shows the computation of formula or expressions directly with regi
 {% tabs %}
 {% highlight c# %}
 
-CalcQuickBase calcQuickBase = new CalcQuickBase();
-calcQuickBase["A"] = "5";
-calcQuickBase["B"] = "6";
-calcQuickBase["C"] = "11";
+CalcQuickBase cq = new CalcQuickBase();
+cq["A"] = "5";
+cq["B"] = "6";
+cq["C"] = "11";
 
-//Computing expressions,
+//Comptuing expressions,
 
-calcQuickBase["result"] = "=([A]+[B])/[C]";
+cq["result"] = "=([A]+[B])/[C]";
 
 //Computing In-Built formulas,
 
-calcQuickBase["result"] = "=SUM([A],[B])"
+cq["result"] = "=SUM([A],[B])"
 
 {% endhighlight %}
 {% endtabs %}
@@ -93,18 +93,18 @@ Below example shows the computation of formula or expressions using `ParseAndCom
 {% tabs %}
 {% highlight c# %}
 
-CalcQuickBase calcQuickBase = new CalcQuickBase();
-calcQuickBase["A"] = "5";
-calcQuickBase["B"] = "6";
-calcQuickBase["C"] = "11";   
+CalcQuickBase cq = new CalcQuickBase();
+cq["A"] = "5";
+cq["B"] = "6";
+cq["C"] = "11";   
 
 //Computing expressions,
 
-calcQuickBase["result"]  = calcQuickBase.ParseAndCompute("([A]+[B])/[C]");
+cq["result"]  = cq.ParseAndCompute("([A]+[B])/[C]");
 
 //Computing in built formulas,
 
-calcQuickBase["result"]  = calcQuickBase.ParseAndCompute("SUM([A],[B])");
+cq["result"]  = cq.ParseAndCompute("SUM([A],[B])");
 
 {% endhighlight %}
 {% endtabs %}
@@ -123,27 +123,27 @@ This has to be done after the `AutoCalc` property has been set to `True`, so tha
 {% highlight c# %}
 
 //Initialize,
-CalcQuickBase calcQuickBase = new CalcQuickBase();
+CalcQuickBase cq = new CalcQuickBase();
 
 //Registering keys with values,
-calcQuickBase["A"] = "5";
-calcQuickBase["B"] = "6";
-calcQuickBase["C"] = "11";   
+cq["A"] = "5";
+cq["B"] = "6";
+cq["C"] = "11";   
 
 //Computing in built formulas,
-calcQuickBase["result"]  = calcQuickBase.ParseAndCompute("SUM([A],[B],[C])");
+cq["result"]  = cq.ParseAndCompute("SUM([A],[B],[C])");
 
 //Setting the Auto calculation mode,
-calcQuickBase.AutoCalc = true;
+cq.AutoCalc = true;
 
 //To recompute formulas stored in CalcQuickBase object,
-calcQuickBase.RefreshAllCalculations();
+cq.RefreshAllCalculations();
 
 //Changing the variable "C" value to "3",
-calcQuickBase["C"] = "3"; 
+cq["C"] = "3"; 
 
 //Output result after the change of variable "C",
-var Output = calcQuickBase["result"];
+var Output = cq["result"];
 
 {% endhighlight %}
 {% endtabs %}
@@ -156,15 +156,15 @@ Registered variables or indexer keys registered with `CalcQuickBase` object can 
 {% highlight c# %}
 
 //Initialize,
-CalcQuickBase calcQuickBase = new CalcQuickBase();
+CalcQuickBase cq = new CalcQuickBase();
 
 //Registering keys with values,
-calcQuickBase["A"] = "5";
-calcQuickBase["B"] = "6";
-calcQuickBase["C"] = "11"; 
+cq["A"] = "5";
+cq["B"] = "6";
+cq["C"] = "11"; 
 
 //Clears the registered keys,
-calcQuickBase.ResetKeys();
+cq.ResetKeys();
 
 {% endhighlight %}
 {% endtabs %}

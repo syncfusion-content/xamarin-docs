@@ -43,7 +43,7 @@ CalcEngine engine = new CalcEngine(calcData);
 
 string formula = “2+3*1”;
 
-string parsedFormula = engine.ParseFormula(formula);
+string parsedformula = engine.ParseFormula(formula);
 
 {% endhighlight %}
 {% endtabs %}
@@ -53,11 +53,11 @@ Using CalcQuickBase,
 {% tabs %}
 {% highlight c# %}
 
-CalcQuickBase calcQuickBase = new CalcQuickBase();
+CalcQuickBase cq = new CalcQuickBase();
 
 string formula = “2+3*1”;
 
-string parsedFormula = calcQuickBase.Engine.ParseFormula(formula);
+string parsedformula = cq.Engine.ParseFormula(formula);
 
 {% endhighlight %}
 {% endtabs %}
@@ -97,9 +97,9 @@ CalcEngine engine = new CalcEngine(calcData);
 
 string formula = “2+3*1”;
 
-string parsedFormula = engine.ParseFormula(formula);
+string parsedformula = engine.ParseFormula(formula);
 
-string result = engine.ComputeFormula(parsedFormula);
+string result = engine.ComputeFormula(parsedformula);
 
 {% endhighlight %}
 {% endtabs %}
@@ -109,13 +109,13 @@ Using CalcQuickBase,
 {% tabs %}
 {% highlight c# %}
 
-CalcQuickBase calcQuickBase = new CalcQuickBase();
+CalcQuickBase cq = new CalcQuickBase();
 
 string formula = “2+3*1”;
 
-string parsedFormula = calcQuickBase.Engine.ParseFormula(formula);
+string parsedformula = cq.Engine.ParseFormula(formula);
 
-string result = calcQuickBase.Engine.ComputeFormula(parsedFormula);
+string result = cq.Engine.ComputeFormula(parsedformula);
 
 {% endhighlight %}
 {% endtabs %}
@@ -127,17 +127,17 @@ The [ParseAndCompute](https://help.syncfusion.com/cr/cref_files/windowsforms/cal
 {% tabs %}
 {% highlight c# %}
 
-CalcQuickBase calcQuickBase = new CalcQuickBase();   
+CalcQuickBase cq = new CalcQuickBase();   
 
 //Computing Expressions,
 
 string formula = "(5+25) *2";
-string result = calcQuickBase.ParseAndCompute(formula);
+string result = cq.ParseAndCompute(formula);
 
 //Computing In-Built formulas,
 
 string formula = "SUM (5,5)";
-string result = calcQuickBase.ParseAndCompute(formula);
+string result = cq.ParseAndCompute(formula);
 
 {% endhighlight %}
 {% endtabs %}
@@ -174,17 +174,17 @@ Using CalcQuickBase,
 {% tabs %}
 {% highlight c# %}
 
-CalcQuickBase calcQuickBase = new CalcQuickBase();
+CalcQuickBase cq = new CalcQuickBase();
 
 //Computing Expressions,
 
 string formula = "(5+25) *2";
-string result = calcQuickBase.Engine.ParseAndComputeFormula(formula);
+string result = cq.Engine.ParseAndComputeFormula(formula);
 
 //Computing In-Built formulas,
 
 string formula = “SUM (4,5,6)”;
-string result = calcQuickBase.Engine.ParseAndComputeFormula(formula);
+string result = cq.Engine.ParseAndComputeFormula(formula);
 
 {% endhighlight %}
 {% endtabs %}
@@ -271,12 +271,12 @@ Using CalcQuickBase,
 {% tabs %}
 {% highlight c# %}
 
-CalcQuickBase calcQuickBase = new CalcQuickBase();
+CalcQuickBase cq = new CalcQuickBase();
 
 string formula = “SUM (4,5,6)”;
 
 //Formatted as decimal value,
-string result = decimal.Parse(calcQuickBase.ParseAndCompute(formula)).ToString("0.00");
+string result = decimal.Parse(cq.ParseAndCompute(formula)).ToString("0.00");
 
 //Formatted as double value,
 string result1 = double.Parse(engine.ParseAndCompute(formula)).ToString("0.00%");

@@ -270,16 +270,16 @@ public class OrderInfoRepository
     private void GenerateOrders ()
     {
         orderInfo.Add (new OrderInfo (1001, "Maria Anders", "Germany", "ALFKI", "Berlin"));
-        orderInfo.Add (new OrderInfo (1002, "Ana Trujilo", "Mexico", "ANATR", "México D.F."));
+        orderInfo.Add (new OrderInfo (1002, "Ana Trujillo", "Mexico", "ANATR", "Mexico D.F."));
         orderInfo.Add (new OrderInfo (1003, "Ant Fuller", "Mexico", "ANTON", "México D.F."));
         orderInfo.Add (new OrderInfo (1004, "Thomas Hardy", "UK", "AROUT", "London"));
-        orderInfo.Add (new OrderInfo (1005, "Tim Adams", "Sweden", "BERGS", "Luleå"));
+        orderInfo.Add (new OrderInfo (1005, "Tim Adams", "Sweden", "BERGS", "Lulea"));
         orderInfo.Add (new OrderInfo (1006, "Hanna Moos", "Germany", "BLAUS", "Mannheim"));
         orderInfo.Add (new OrderInfo (1007, "Andrew Fuller", "France", "BLONP", "Strasbourg"));
         orderInfo.Add (new OrderInfo (1008, "Martin King", "Spain", "BOLID", "Madrid"));
-        orderInfo.Add (new OrderInfo (1009, "Lenny Lin", "France", "BONAP", "Marseille"));
-        orderInfo.Add (new OrderInfo (1010, "John Carter", "Canada", "BOTTM", "Tsawassen"));
-        orderInfo.Add (new OrderInfo (1011, "Lauro King", "UK", "AROUT", "London"));
+        orderInfo.Add (new OrderInfo (1009, "Lenny Lin", "France", "BONAP", "Marsiella"));
+        orderInfo.Add (new OrderInfo (1010, "John Carter", "Canada", "BOTTM", "Lenny Lin"));
+        orderInfo.Add (new OrderInfo (1011, "Laura King", "UK", "AROUT", "London"));
         orderInfo.Add (new OrderInfo (1012, "Anne Wilson", "Germany", "BLAUS", "Mannheim"));
         orderInfo.Add (new OrderInfo (1013, "Alfki Kyle", "France", "BLONP", "Strasbourg"));
         orderInfo.Add (new OrderInfo (1014, "Gina Irene", "UK", "AROUT", "London"));
@@ -465,20 +465,20 @@ namespace GettingStarted
         private StackLayout stackLayout;
         private SfDataGrid dataGrid;
         private ViewModel viewModel;
-        private SearchBar seacrchBar;
+        private SearchBar searchBar;
         public MainPage()
         {
             InitializeComponent();
             stackLayout = new StackLayout();
             dataGrid = new SfDataGrid();
             viewModel = new ViewModel();
-            seacrchBar = new SearchBar();
-            seacrchBar.Placeholder = "UserName";
+            searchBar = new SearchBar();
+            searchBar.Placeholder = "UserName";
             dataGrid.ItemsSource = viewModel.OrdersInfo;
             dataGrid.ColumnSizer = ColumnSizer.Star;
             stackLayout.VerticalOptions = LayoutOptions.FillAndExpand;
             stackLayout.HorizontalOptions = LayoutOptions.FillAndExpand;
-            stackLayout.Children.Add(seacrchBar);
+            stackLayout.Children.Add(searchBar);
             stackLayout.Children.Add(dataGrid);
             this.Content = stackLayout;
         }

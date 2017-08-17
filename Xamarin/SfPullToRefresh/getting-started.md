@@ -147,7 +147,7 @@ Create a new BlankApp (Xamarin.Forms.Portable) application in Xamarin Studio o
              xmlns:syncfusion="clr-namespace:Syncfusion.SfPullToRefresh.XForms;assembly=Syncfusion.SfPullToRefresh.XForms">
         <syncfusion:SfPullToRefresh x:Name="pullToRefresh"
                                     IsRefreshing="False" 
-                                    PullingThershold="100"
+                                    PullingThreshold="100"
                                     RefreshContentHeight="30"
                                     RefreshContentThreshold="30"
                                     RefreshContentWidth="30">

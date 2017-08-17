@@ -583,7 +583,7 @@ sfGrid.CaptionSummaryRow= summaryRow;
 
 ![](SfDataGrid_images/Summary_img15.png)
 
-N> Setting the `SummaryColumn.Format` property to {Sum:c} throws an exception since the compiler treats it like how we set binding to a string, since the syntax is the same. But here we are trying to set the cuture format for the string. Hence set the format as Format = "{}{Sum:c}" when setting the format in XAML.  
+N> Setting the `SummaryColumn.Format` property to {Sum:c} throws an exception since the compiler treats it like how we set binding to a string, since the syntax is the same. But here we are trying to set the culture format for the string. Hence set the format as Format = "{}{Sum:c}" when setting the format in XAML.  
 
 ## Aggregate Types
 

@@ -684,6 +684,34 @@ chart.PrimaryAxis.Title.Font = Font.SystemFontOfSize(20, FontAttributes.Bold);
 
 ![](axis_images/axis_img18.png)
 
+### Axis label rotation
+
+The [`LabelRotationAngle`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~LabelRotationAngle.html) property of axis can be used to rotate the axis labels position. Default value of `LabelRotationAngle` property is 0d.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis> 
+       
+       <chart:CategoryAxis LabelRotationAngle="-45"/>       
+    
+</chart:SfChart.PrimaryAxis> 
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+CategoryAxis categoryAxis = new CategoryAxis(); 
+  
+categoryAxis.LabelRotationAngle = -45; 
+  
+chart.PrimaryAxis = categoryAxis; 
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ### Label customization
 
 The [`LabelStyle`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~LabelStyle.html) property of axis provides options to customize the font-family, color, size and font-weight of axis labels. The axis labels can be customized using following properties:

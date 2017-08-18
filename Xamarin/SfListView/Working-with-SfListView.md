@@ -101,10 +101,10 @@ listView.ItemDoubleTapped += ListView_ItemDoubleTapped;
 
 private void ListView_ItemDoubleTapped(object sender, ItemDoubleTappedEventArgs e)
 {
-    var listviewinboxinfo = new ListViewInboxInfo();
-    listviewinboxinfo.Title = "Bryce Thomas";
-    listviewinboxinfo.Subject = "Congratulations on the move!";
-    viewModel.InboxInfo.Add(listviewinboxinfo);
+    var listViewInboxInfo = new ListViewInboxInfo();
+    listViewInboxInfo.Title = "Bryce Thomas";
+    listViewInboxInfo.Subject = "Congratulations on the move!";
+    viewModel.InboxInfo.Add(listViewInboxInfo);
 }
 {% endhighlight %}
 
@@ -125,7 +125,7 @@ private void ListView_ItemHolding(object sender, ItemHoldingEventArgs e)
 }
 {% endhighlight %}
 
-N> In SfListView, unable to perform ItemHolding operations by using Mouse in Windows Desktop platform. Sinse, there is no any long pressed events (like Holding event in touch) for the mouse in framework itself.
+N> In SfListView, unable to perform ItemHolding operations by using Mouse in Windows Desktop platform. Since, there is no any long pressed events (like Holding event in touch) for the mouse in Framework itself.
 
 ## Improving ListView Performance
 

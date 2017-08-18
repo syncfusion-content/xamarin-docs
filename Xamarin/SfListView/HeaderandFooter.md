@@ -42,7 +42,7 @@ listView.HeaderTemplate = new DataTemplate(() =>
 {
    var grid = new Grid();
    grid.BackgroundColor = Color.FromHex("#4CA1FE");
-   var headerlabel = new Label
+   var headerLabel = new Label
    {
        BackgroundColor = Color.White,
        FontSize = 18,
@@ -50,7 +50,7 @@ listView.HeaderTemplate = new DataTemplate(() =>
        Text = "Inbox"
    };
 
-   grid.Children.Add(headerlabel);
+   grid.Children.Add(headerLabel);
 
    return grid;
 });

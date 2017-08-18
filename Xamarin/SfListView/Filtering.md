@@ -22,14 +22,14 @@ The following code example illustrates how to apply filtering in SfListView. `Fi
 {% highlight c# %}
 var grid = new Grid();
 
-var searchbar = new SearchBar() { Placeholder = "Search here to filter" };
-searchbar.TextChanged += OnFilterTextChanged;
+var searchBar = new SearchBar() { Placeholder = "Search here to filter" };
+searchBar.TextChanged += OnFilterTextChanged;
 
 var listView = new SfListView();
-listView.ItemsSource = viewmodel.customerDetails;
+listView.ItemsSource = viewModel.customerDetails;
 listView.ItemSize = 60;
 
-grid.Children.Add(searchbar);
+grid.Children.Add(searchBar);
 grid.Children.Add(listView, 0, 1);
 
 {% endhighlight %}

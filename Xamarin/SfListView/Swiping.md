@@ -47,11 +47,11 @@ listView.LeftSwipeTemplate = new DataTemplate(() =>
 
     var grid1 = new Grid() { BackgroundColor = Color.FromHex("#009EDA"), HorizontalOptions = LayoutOptions.Fill, 
                              VerticalOptions = LayoutOptions.Fill };
-    var favouritegrid = new Grid() { HorizontalOptions = LayoutOptions.Center, VerticalOptions = LayoutOptions.Center };
+    var favouriteGrid = new Grid() { HorizontalOptions = LayoutOptions.Center, VerticalOptions = LayoutOptions.Center };
     var favouriteImage = new Image() { BackgroundColor = Color.Transparent, HeightRequest = 35, WidthRequest = 35 };
     favouriteImage.Source = ImageSource.FromResource("Swiping.Images.Favorites.png");
-    favouritegrid.Children.Add(favouriteImage);
-    grid1.Children.Add(favouritegrid);
+    favouriteGrid.Children.Add(favouriteImage);
+    grid1.Children.Add(favouriteGrid);
 
     grid.Children.Add(grid1);
 
@@ -172,7 +172,7 @@ The following customizations should give you an idea on how to use the swiping e
 
 ### Defining the Data Template Selector
 
-You can customize the appearence of each swipe item with different templates based on specific constraints using [DataTemplateSelector](https://developer.xamarin.com/api/type/Xamarin.Forms.DataTemplateSelector/).
+You can customize the appearance of each swipe item with different templates based on specific constraints using [DataTemplateSelector](https://developer.xamarin.com/api/type/Xamarin.Forms.DataTemplateSelector/).
 
 ### Multiple Views
 

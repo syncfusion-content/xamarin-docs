@@ -13,7 +13,7 @@ This section explains you the steps required to launch the SfRadialMenu with hie
 
 ## Adding SfRadialMenu reference 
 
-Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain and reference Essential Studio components in your solution; then refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfradilamenu) link to know about the assemblies required for adding RadialMenu to your project.
+Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain and reference Essential Studio components in your solution; then refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfradilmenu) link to know about the assemblies required for adding RadialMenu to your project.
 
 ## Initialize SfRadialMenu on each platform
 
@@ -38,7 +38,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 }
 {% endhighlight %} 
 
-##Adding a simple RadialMenu
+## Adding a simple RadialMenu
 
 This section explains how to create a SfRadialMenu and configure it. The SfDataGrid control can be configured entirely in C# code or by using XAML markup.
 

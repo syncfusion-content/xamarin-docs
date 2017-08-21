@@ -7,7 +7,7 @@ control: SfRadialMenu
 documentation: ug
 ---
 
-# Placing and Dragging CenterButton
+# Placing and Dragging RadialMenu
 
 We can place SfRadialMenu anywhere on its parent layout and  able to drag it with in the parent layout. 
 

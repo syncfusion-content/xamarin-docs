@@ -30,7 +30,7 @@ Example: C:\Program Files (x86)\Syncfusion\Essential Studio\15.3.0.28\Xamarin\li
 </tr>
 <tr>
 <td>Android project</td>
-<td>android\Syncfusion.SfPdfViewer.XForms.Andriod.dll<br/>android\Syncfusion.SfPdfViewer.XForms.dll<br/></td>
+<td>android\Syncfusion.SfPdfViewer.XForms.Android.dll<br/>android\Syncfusion.SfPdfViewer.XForms.dll<br/></td>
 </tr>
 <tr>
 <td>iOS project</td>

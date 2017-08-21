@@ -30,7 +30,7 @@ Example: C:\Program Files (x86)\Syncfusion\Essential Studio\15.3.0.28\Xamarin\li
 </tr>
 <tr>
 <td>Android project</td>
-<td>android\Syncfusion.SfPdfViewer.XForms.Andriod.dll<br/>android\Syncfusion.SfPdfViewer.XForms.dll<br/></td>
+<td>android\Syncfusion.SfPdfViewer.XForms.Android.dll<br/>android\Syncfusion.SfPdfViewer.XForms.dll<br/></td>
 </tr>
 <tr>
 <td>iOS project</td>
@@ -61,6 +61,12 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% endhighlight %}
 {% endtabs %}
+
+### Working with files
+
+File handling with Xamarin.Forms can be done using embedded resources or writing against the native filesystem APIs. Please find more details in the below link:
+
+https://developer.xamarin.com/guides/xamarin-forms/application-fundamentals/files/ 
 
 Add a folder in the portable project with the name "Assets" and add the PDF document you need to display in the PDF viewer, here a PDF file named "GIS Succinctly.pdf" was used. In the properties of the PDF document set the build action property to be "Embedded Resource".
 
@@ -161,20 +167,6 @@ You need to call the Unload method of SfPdfViewer control as in the below code s
 {% highlight c# %}
 
 //Unloads the PDF document from the PDF viewer, freeing all the accessed resources.
-pdfViewerControl.Unload();
-
-{% endhighlight %}
-{% endtabs %}
-
-## Unloading PDF document from the Viewer
-
-The SfPdfViewer control allows you to unload the PDF document from the viewer when the control is not in use anymore. This releases the PDF document and all its associated resources of the application.
-
-We need to call the Unload method of SfPdfViewer control as in the below code snippet to achieve the same.
-
-{% tabs %}
-{% highlight c# %}
-
 pdfViewerControl.Unload();
 
 {% endhighlight %}

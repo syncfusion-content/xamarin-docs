@@ -712,6 +712,8 @@ chart.PrimaryAxis = categoryAxis;
 
 {% endtabs %}
 
+![](axis_images/axis_img28.png)
+
 ### Label customization
 
 The [`LabelStyle`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~LabelStyle.html) property of axis provides options to customize the font-family, color, size and font-weight of axis labels. The axis labels can be customized using following properties:

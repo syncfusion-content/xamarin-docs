@@ -140,12 +140,12 @@ private void pdfViewerControl_SearchCompleted(object sender, TextSearchEventArgs
 
 ## How to cancel text search?
 
-CancelTextSearchCommand is used to cancel the text search progress. When the text search is in progress this command can be used to cancel the same, when text search is completed, this command can be used to clear all the highlighted texts in the PDF viewer.
+CancelSearchTextCommand is used to cancel the text search progress. When the text search is in progress this command can be used to cancel the same, when text search is completed, this command can be used to clear all the highlighted texts in the PDF viewer.
 
 {% tabs %}
 {% highlight xaml %}
 
-<Button x:Name="cancelSearchButton" Grid.Column="3" BackgroundColor="Transparent" Image="CancelSearch.png" HorizontalOptions="Start" VerticalOptions="Center" Command="{Binding CancelTextSearchCommand, Source={x:Reference Name=pdfViewerControl}}"/>
+<Button x:Name="cancelSearchButton" Grid.Column="3" BackgroundColor="Transparent" Image="CancelSearch.png" HorizontalOptions="Start" VerticalOptions="Center" Command="{Binding CancelSearchTextCommand, Source={x:Reference Name=pdfViewerControl}}"/>
 
 {% endhighlight %}
 {% endtabs %}
@@ -344,7 +344,7 @@ The complete XAML code after the design of the search bar will look like below
                 <Button x:Name="backIcon" Grid.Column="0" BackgroundColor="Transparent" Image="BackIcon.png" HorizontalOptions="Start" VerticalOptions="Center" Command="{Binding SearchAndToolbarToggleCommand}"/>
                 <Entry Grid.Column="1" x:Name="textSearchEntry" FontSize="18" HorizontalTextAlignment="Center" HorizontalOptions="Fill" VerticalOptions="Center"/>
                 <Button x:Name="searchTextButton" Grid.Column="2" BackgroundColor="Transparent" Image="SearchIcon.png" HorizontalOptions="Start" Command="{Binding SearchTextCommand, Source={x:Reference Name=pdfViewerControl}}" CommandParameter="{Binding Source ={x:Reference textSearchEntry}, Path=Text}"/>
-                <Button x:Name="cancelSearchButton" Grid.Column="3" BackgroundColor="Transparent" Image="CancelSearch.png" HorizontalOptions="Start" VerticalOptions="Center" Command="{Binding CancelTextSearchCommand, Source={x:Reference Name=pdfViewerControl}}"/>
+                <Button x:Name="cancelSearchButton" Grid.Column="3" BackgroundColor="Transparent" Image="CancelSearch.png" HorizontalOptions="Start" VerticalOptions="Center" Command="{Binding CancelSearchTextCommand, Source={x:Reference Name=pdfViewerControl}}"/>
             </Grid>
         </AbsoluteLayout>
         <Grid x:Name="pdfViewGrid" Grid.Row="1">

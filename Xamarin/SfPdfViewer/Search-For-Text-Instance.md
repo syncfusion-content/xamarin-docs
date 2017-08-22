@@ -24,7 +24,7 @@ PDF Viewer provides support to find and highlight texts in the PDF document and 
 </tr>
 
 <tr>
-<td>CancelSearchCommand</td>
+<td>CancelSearchTextCommand</td>
 <td>Command that is executed to cancel the text search operation when it is in progress and used to clear the highlighted text instances when the text search is completed.</td>
 </tr>
 

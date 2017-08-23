@@ -119,6 +119,35 @@ This page lists the assemblies required for each control to be referred in each 
 </tr>
 </table>
 
+## SfPicker
+
+<dl>
+<dt>NuGet</dt>
+<dd>Syncfusion.Xamarin.SfPicker</dd>
+</dl>
+
+**Assemblies**
+
+
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfPicker.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfPicker.Android.dll<br/>Syncfusion.SfPicker.XForms.Android.dll<br/>Syncfusion.SfPicker.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfPicker.iOS.dll<br/>Syncfusion.SfPicker.XForms.iOS.dll<br/>Syncfusion.SfPicker.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfInput.UWP.dll<br/>Syncfusion.SfShared.UWP.dll<br/>Syncfusion.SfPicker.XForms.UWP.dll<br/>Syncfusion.SfPicker.XForms.dll<br/></td>
+</tr>
+</table>
+
 ## SfPdfViewer
 
 <dl>

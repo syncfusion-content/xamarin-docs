@@ -16,7 +16,7 @@ The following table lists the key features of the SfRadialMenu in Xamarin.Forms 
 <table>
 <tr>
 <th>Features</th>
-<th>Xamarin.Forms<br/>(Android, iOS and UWP)</th>
+<th>Xamarin.Forms<br/>(Android and iOS)</th>
 <th>Xamarin.Android</th>
 <th>Xamarin.iOS</th>
 </tr>

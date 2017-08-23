@@ -9,55 +9,38 @@ documentation: ug
 
 ---
 
+
 # Getting Started
 
 This section explains you the steps to configure a SfPicker control in a real-time scenario and also provides a walk-through on some of the customization features available in SfPicker control.
 
-## Add SfPicker
+## Adding SfPicker reference 
 
-You can then add the assembly references to the respective projects as shown below
+Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain and reference Essential Studio components in your solution; then refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfpicker) link to know about the assemblies required for adding SfPicker to your project.
 
-<table>
-<tr>
-<th>Project</th>
-<th>Required assemblies</th>
-</tr>
-<tr>
-<td>PCL</td>
-<td>pcl\pcl\Syncfusion.SfPicker.XForms.dll
-</td>
-</tr>
-<tr>
-<td>Android</td>
-<td>android\pcl\Syncfusion.SfPicker.XForms.dll
-<br/>android\Syncfusion.SfPicker.XForms.Android.dll
-<br/>android\Syncfusion.SfPicker.Android.dll
-</td>
-</tr>
-<tr>
-<td>iOS (Unified)</td>
-<td>iOS-unified\Syncfusion.SfPicker.iOS.dll<br/>iOS-unified\Syncfusion.SfPicker.Xforms.dll
-<br/>iOS-unified\Syncfusion.SfPicker.XForms.iOS.dll
-</td>
-</tr>
-<tr>
-<td>UWP</td>
-<td>uwp\Syncfusion.SfInput.UWP.dll<br/>uwp\Syncfusion.SfShared.UWP.dll<br/>uwp\Syncfusion.SfPicker.XForms.dll<br/>uwp\Syncfusion.Sfpicker.XForms.UWP.dll</td>
-</tr>
-</table>
+## Initialize SfPicker on each platform
 
-Currently an additional step is required for iOS project. We need to create an instance of the picker custom renderer as shown below. 
+To use SfPicker inside an application, each platform application must initialize the SfPicker renderer. This initialization step varies from platform to platform and is discussed in the following sections.
 
-Create an instance of SfPickerRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below
+### Android
 
-{% highlight C# %}
+The Android launches the SfPicker without any initialization and is enough to only initialize the Xamarin.Forms Framework to launch the application.
 
+### iOS
+
+To launch the SfPicker in iOS, you need to call the `new SfPickerRenderer ()` in the `FinishedLaunching` overridden method of the AppDelegate class after the Xamarin.Forms Framework initialization and before the LoadApplication is called, as demonstrated in the following code example:
+
+{% highlight c# %}
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {
-    new SfPickerRenderer ();
-}	
+…
+global::Xamarin.Forms.Forms.Init ();
+new SfPickerRenderer ();
+LoadApplication (new App ());
+…
+}
+{% endhighlight %} 
 
-{% endhighlight %}
 
 The SfPicker control is configured entirely in C# code or by using XAML markup. The following steps explains how to create a SfPicker and configure its elements.
 

@@ -49,7 +49,7 @@ The following list of assemblies need to be added as reference from the lib fold
 </tr>
 </table>
 
-N> You can also configure the syncfusion nuget packages in Visual Studio, please refer [here]( https://help.syncfusion.com/xamarin/introduction/download-and-installation#configuring-syncfusion-nuget-packages-in-visual-studio) for more information.
+N> You can also configure the Syncfusion nuget packages in Visual Studio, please refer [here]( https://help.syncfusion.com/xamarin/introduction/download-and-installation#configuring-syncfusion-nuget-packages-in-visual-studio) for more information.
 
 ## Launching the SfListView on each platform
 

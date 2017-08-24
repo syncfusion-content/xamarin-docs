@@ -29,9 +29,9 @@ The following code illustrates how to hook the `GridTapped` event and get the ro
 {% highlight c# %}
 private void DataGrid_GridTapped(object sender, GridTappedEventsArgs e)
 {
-    var rowIndex = e.RowColumnindex.RowIndex;
+    var rowIndex = e.RowColumnIndex.RowIndex;
     var rowData = e.RowData;
-    var columnIndex = e.RowColumnindex.ColumnIndex;
+    var columnIndex = e.RowColumnIndex.ColumnIndex;
 }
 {% endhighlight %}
 {% endtabs %}
@@ -83,9 +83,9 @@ The following code illustrates how to hook the `GridLongPressed` event and get t
 {% highlight c# %}
 private void DataGrid_GridLongPressed(object sender, GridLongPressedEventsArgs e)
 {
-    var rowIndex = e.RowColumnindex.RowIndex;
+    var rowIndex = e.RowColumnIndex.RowIndex;
     var rowData = e.RowData;
-    var columnIndex = e.RowColumnindex.ColumnIndex;
+    var columnIndex = e.RowColumnIndex.ColumnIndex;
 }
 {% endhighlight %}
 {% endtabs %}

@@ -682,12 +682,12 @@ public partial class MainPage : ContentPage
 
 N> The row index of the row can also be accessed by using [GridTapped](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridTapped_EV.html), [GridDoubleTapped](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridDoubleTapped_EV.html) and [GridLongPressed events](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridLongPressed_EV.html). When using complex layout inside a `DataTemplate`, ensure to set the `InputTransparent` property of the views loaded in the `DataTemplate` of the GridTemplateColumn as `True`.
 
-### Loading DatePicker and TimePicker Combinedly 
+### Loading DatePicker and TimePicker together
 
 Currently, Xamarin.Forms does not provide a view that combines both the [DatePicker](https://developer.xamarin.com/api/type/Xamarin.Forms.DatePicker/) and the [TimePicker](https://developer.xamarin.com/api/type/Xamarin.Forms.TimePicker/) as one control,however, the two are available individually. 
 SfDataGrid have support for using `DatePicker` and `TimePicker` in a same column. It can be achieved by loading the `DatePicker` and `TimePicker` in a [StackLayout](https://developer.xamarin.com/api/type/Xamarin.Forms.StackLayout/) in the `GridTemplateColumn`.
 
-The following code example illustrates how to load `DatePicker` and `TimePicker` combinedly in GridColumn.
+The following code example illustrates how to load `DatePicker` and `TimePicker` together in GridColumn.
 
 {% highlight xaml %}
 <sfgrid:GridTemplateColumn MappingName="ShippingDate">
@@ -702,7 +702,7 @@ The following code example illustrates how to load `DatePicker` and `TimePicker`
 </sfgrid:GridTemplateColumn>
 {% endhighlight %}
 
-The following screenshot shows that how `DatePicker` and `TimePicker` are combinedly viewed in SfDataGrid.
+The following screenshot shows that how `DatePicker` and `TimePicker` are  together viewed in SfDataGrid.
 
 ![](SfDataGrid_images/DateTimePicker.png)
 
@@ -734,7 +734,7 @@ dataGrid.RowHeaderWidth = 50;
 
 ## GridDateTimeColumn
 
-The [SfDataGrid.GridDateTimeColumn](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridDateTimeColumn.html) is derived from [SfDataGrid.GridColumn](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn.html) thereby inheriting all the properties of `SfDataGrid.GridColumn`. It displays the date information as the content of a column. To create `SfDatarGrid.GridDateTimeColumn` in SfDataGrid, the property corresponding to the column in the underlying collection must be of type DateTime. You can enable or disable editing for the particular column by setting the [GridColumn.AllowEditing](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~AllowEditing.html) property to true or false. In the editing mode it displays [SfDatePicker](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.Renderers.SfDatePicker.html) element which is derived from the [Xamarin.Forms.DatePicker](https://developer.xamarin.com/api/type/Xamarin.Forms.DatePicker/). The `SfDatePicker` enables you to scroll through a list of dates between the [GridDateTimeColumn.MinimumDate](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridDateTimeColumn~MinimumDate.html) and [GridDateTimeColumn.MaximumDate](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridDateTimeColumn~MaximumDate.html) and select one from it.
+The [SfDataGrid.GridDateTimeColumn](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridDateTimeColumn.html) is derived from [SfDataGrid.GridColumn](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn.html) thereby inheriting all the properties of `SfDataGrid.GridColumn`. It displays the date information as the content of a column. To create `SfDataGrid.GridDateTimeColumn` in SfDataGrid, the property corresponding to the column in the underlying collection must be of type DateTime. You can enable or disable editing for the particular column by setting the [GridColumn.AllowEditing](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~AllowEditing.html) property to true or false. In the editing mode it displays [SfDatePicker](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.Renderers.SfDatePicker.html) element which is derived from the [Xamarin.Forms.DatePicker](https://developer.xamarin.com/api/type/Xamarin.Forms.DatePicker/). The `SfDatePicker` enables you to scroll through a list of dates between the [GridDateTimeColumn.MinimumDate](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridDateTimeColumn~MinimumDate.html) and [GridDateTimeColumn.MaximumDate](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridDateTimeColumn~MaximumDate.html) and select one from it.
 
 {% tabs %}
 {% highlight xaml %}
@@ -947,7 +947,7 @@ The following code example shows you how to customize the picker data using `Dis
 
 sfGrid = new SfDataGrid(context);
 viewModel = new ViewModel();
-sfGrid.ItemsSource = viewmodel.OrdersInfo;
+sfGrid.ItemsSource = viewModel.OrdersInfo;
 
 GridTextColumn orderIDColumn = new GridTextColumn();
 orderIDColumn.MappingName = "OrderID";
@@ -958,7 +958,7 @@ pickerColumn.MappingName = "OrderID";
 pickerColumn.HeaderText = "Picker Column";
 pickerColumn.DisplayMemberPath = "EmployeeID";
 pickerColumn.ValueMemberPath = "OrderID";
-pickerColumn.ItemsSource = viewmodel.PickerInfo;
+pickerColumn.ItemsSource = viewModel.PickerInfo;
 
 sfGrid.Columns.Add(orderIDColumn);
 sfGrid.Columns.Add(pickerColumn);

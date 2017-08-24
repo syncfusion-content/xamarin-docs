@@ -1255,6 +1255,47 @@ CandleSeries candleSeries = new CandleSeries()
 
 ![](charttypes_images/charttypes_img21.png)
 
+### EnableSolidCandles
+
+In Candle Series, [`EnableSolidCandles`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CandleSeries~EnableSolidCandles.html) property is used to specify whether the candle segment should be filled or hollow. The default value of this property is false.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart>
+    ...
+    <chart:SfChart.Series>
+
+        <chart:CandleSeries ItemsSource="{Binding FinancialData}" EnableSolidCandles="True"/>
+
+    </chart:SfChart.Series>
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart()
+
+{
+     ...
+     Series =
+     {
+         new CandleSeries()
+         {
+               ItemsSource = viewModel.FinancialData,
+   
+               EnableSolidCandles = true,
+         }
+     }
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Radar Chart
 
 To render a radar chart, create an instance of [`RadarSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RadarSeries.html) and add to the [`Series`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~Series.html) collection property of [`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html).  

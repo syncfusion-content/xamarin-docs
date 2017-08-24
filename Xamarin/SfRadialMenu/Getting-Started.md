@@ -13,7 +13,7 @@ This section explains you the steps required to launch the SfRadialMenu with hie
 
 ## Adding SfRadialMenu reference 
 
-Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain and reference Essential Studio components in your solution; then refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfradilmenu) link to know about the assemblies required for adding RadialMenu to your project.
+Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain and reference Essential Studio components in your solution; then refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfradialmenu) link to know about the assemblies required for adding RadialMenu to your project.
 
 ## Initialize SfRadialMenu on each platform
 

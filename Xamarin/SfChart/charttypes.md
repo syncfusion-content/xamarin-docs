@@ -845,6 +845,63 @@ chart.Series.Add(splineSeries);
 
 ![](charttypes_images/charttypes_img13.png)
 
+## Spline Types
+
+Spline and SplineArea series allows you to change the spline type using SplineType property. Using this property you can change the spline rendering method. The following types are used in Spline and SplineArea series as 
+
+ * Natural
+ * Monotonic
+ * Cardinal
+ * Clamped
+
+By default SplineType value is Natural.
+
+The following code shows how to set the SplineType value as Cardinal
+
+{% tabs %}
+
+{% highlight xaml%}
+
+<chart:SfChart>
+...
+
+	<chart:SplineSeries ItemsSource ="{Binding Data}" XBindingPath="Month"
+	  					YBindingPath="Value" SplineType="Cardinal" />
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+...
+
+SplineSeries splineSeries = new SplineSeries() 
+{ 
+	ItemsSource = Data, 
+	XBindingPath = "Month", 
+	YBindingPath = "Value",
+	SplineType = SplineType.Cardinal
+};
+chart.Series.Add(splineSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Cardinal 
+
+![](charttypes_images/charttypes_img13.png)
+
+Monotonic
+
+![](charttypes_images/charttypes_img13.png)
+
+Clamped
+
+![](charttypes_images/charttypes_img13.png)
+
 ## StepLine Chart
 
 To render a step line chart, create an instance of [`StepLineSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.StepLineSeries.html) and add to the [`Series`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~Series.html) collection property of

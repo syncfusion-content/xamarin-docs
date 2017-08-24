@@ -126,9 +126,9 @@ pcl\Syncfusion.SfChart.XForm.dll
 
 ### Android project
 
- 	android\Syncfusion.SfChart.Andriod.dll
+android\Syncfusion.SfChart.Android.dll
 
-android\Syncfusion.SfChart.xForms.Andriod.dll
+android\Syncfusion.SfChart.xForms.Android.dll
 
 ### iOS(Classic) project
 
@@ -863,7 +863,7 @@ Add the following assembly references to the Android project,
 
 
 
-android\Syncfusion.SfChart.Andriod.dll
+android\Syncfusion.SfChart.Android.dll
 
 
 
@@ -1244,7 +1244,7 @@ ios\Syncfusion.SfChart.iOS.dll
 and below assembly reference to the iOS unified project.
 
 
-ios-unifed\Syncfusion.SfChart.iOS.dll
+ios-unified\Syncfusion.SfChart.iOS.dll
 
 ### Add and Configure Chart
 
@@ -1582,13 +1582,13 @@ The following is the code example for creating the Chart.
 
         public override void DidReceiveMemoryWarning ()
         {
-_// Releases the view if it doesn't have a superview._
+_// Releases the view if it doesn't have a super view._
             base.DidReceiveMemoryWarning ();
 
 _// Release any cached data, images, etc that aren't in use._
         }
 
-        #region View lifecycle
+        #region View life cycle
 
         public override void ViewDidLoad ()
         {

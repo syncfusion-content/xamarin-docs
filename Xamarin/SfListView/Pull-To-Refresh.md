@@ -11,26 +11,26 @@ documentation: ug
 
 SfListView lets you to enable the `PullToRefresh` support by loading it directly into the [PullableContent](https://help.syncfusion.com/cr/cref_files/xamarin/sfpulltorefresh/Syncfusion.SfPullToRefresh.XForms~Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh~PullableContent.html). At runtime, SfListView provides support for refreshing the data in view while performing the `PullToRefresh` action.
 
-N> You need to load the SfListView as first children of `PullableContent` for the `PulltoRefresh`.
+N> You need to load the SfListView as first children of `PullableContent` for the `PullToRefresh`.
 
 {% tabs %}
 {% highlight xaml %}
-<pulltoRefresh:SfPullToRefresh x:Name="pullToRefresh"
+<pullToRefresh:SfPullToRefresh x:Name="pullToRefresh"
                                ProgressBackgroundColor="#428BCA" RefreshContentHeight="50" 
                                RefreshContentWidth="50" TransitionMode="Push" IsRefreshing="False">
-  <pulltoRefresh:SfPullToRefresh.PullableContent>
+  <pullToRefresh:SfPullToRefresh.PullableContent>
     <syncfusion:SfListView x:Name="listView" ItemSize="120"
                            SelectionMode="None">
     </syncfusion:SfListView>
-  </pulltoRefresh:SfPullToRefresh.PullableContent>
-</pulltoRefresh:SfPullToRefresh>
+  </pullToRefresh:SfPullToRefresh.PullableContent>
+</pullToRefresh:SfPullToRefresh>
 {% endhighlight %}
 {% highlight c# %}
 public ListViewPullToRefresh()
 {
    InitializeComponent();
    //Initializing the PullToRefresh control.
-   SfPullToRefresh pulltoRefresh = new SfPullToRefresh();
+   SfPullToRefresh pullToRefresh = new SfPullToRefresh();
    pullToRefresh.RefreshContentHeight = 50;
    pullToRefresh.RefreshContentWidth = 50;
    pullToRefresh.TransitionMode = TransitionType.Push;
@@ -62,15 +62,15 @@ private async void PullToRefresh_Refreshing(object sender, EventArgs args)
  
    for (int i = 0; i < 3; i++)
    {
-      var blogsCount = pulltoRefreshViewModel.BlogsInfo.Count;
+      var blogsCount = pullToRefreshViewModel.BlogsInfo.Count;
       var item = new ListViewBlogsInfo()
       {
-         BlogTitle = pulltoRefreshViewModel.BlogsTitle[blogsTitleCount - blogsCount],
-         BlogAuthor = pulltoRefreshViewModel.BlogsAuthers[blogsAuthorCount - blogsCount],
-         BlogCategory = pulltoRefreshViewModel.BlogsCategory[blogsCategoryCount - blogsCount],
-         ReadMoreContent = pulltoRefreshViewModel.BlogsReadMoreInfo[blogsReadMoreCount - blogsCount],
+         BlogTitle = pullToRefreshViewModel.BlogsTitle[blogsTitleCount - blogsCount],
+         BlogAuthor = pullToRefreshViewModel.BlogsAuthors[blogsAuthorCount - blogsCount],
+         BlogCategory = pullToRefreshViewModel.BlogsCategory[blogsCategoryCount - blogsCount],
+         ReadMoreContent = pullToRefreshViewModel.BlogsReadMoreInfo[blogsReadMoreCount - blogsCount],
       };
-      pulltoRefreshViewModel.BlogsInfo.Insert(0, item);
+      pullToRefreshViewModel.BlogsInfo.Insert(0, item);
    }
    pullToRefresh.IsRefreshing = false;
 }

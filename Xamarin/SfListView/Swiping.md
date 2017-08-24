@@ -47,11 +47,11 @@ listView.LeftSwipeTemplate = new DataTemplate(() =>
 
     var grid1 = new Grid() { BackgroundColor = Color.FromHex("#009EDA"), HorizontalOptions = LayoutOptions.Fill, 
                              VerticalOptions = LayoutOptions.Fill };
-    var favouriteGrid = new Grid() { HorizontalOptions = LayoutOptions.Center, VerticalOptions = LayoutOptions.Center };
-    var favouriteImage = new Image() { BackgroundColor = Color.Transparent, HeightRequest = 35, WidthRequest = 35 };
-    favouriteImage.Source = ImageSource.FromResource("Swiping.Images.Favorites.png");
-    favouriteGrid.Children.Add(favouriteImage);
-    grid1.Children.Add(favouriteGrid);
+    var favoriteGrid = new Grid() { HorizontalOptions = LayoutOptions.Center, VerticalOptions = LayoutOptions.Center };
+    var favoriteImage = new Image() { BackgroundColor = Color.Transparent, HeightRequest = 35, WidthRequest = 35 };
+    favoriteImage.Source = ImageSource.FromResource("Swiping.Images.Favorites.png");
+    favoriteGrid.Children.Add(favoriteImage);
+    grid1.Children.Add(favoriteGrid);
 
     grid.Children.Add(grid1);
 

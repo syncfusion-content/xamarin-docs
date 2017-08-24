@@ -78,7 +78,7 @@ The completion of the text selection action would trigger TextSelectionCompleted
 {% tabs %}
 {% highlight xaml %}
 
-<sfpdfviewer:SfPdfViewer x:Name="pdfViewerControl" InputFileStream="{Binding PdfDocumentStream}" TextSelectionCompleted="PdfViewerControl_TextSelectionCompleted"/>
+<syncfusion:SfPdfViewer x:Name="pdfViewerControl" InputFileStream="{Binding PdfDocumentStream}" TextSelectionCompleted="PdfViewerControl_TextSelectionCompleted"/>
 
 {% endhighlight %}
 {% endtabs %}
@@ -102,7 +102,7 @@ The completion of the text selection action would trigger TextSelectionCompleted
 {% tabs %}
 {% highlight xaml %}
 
-<sfpdfviewer:SfPdfViewer x:Name="pdfViewerControl" InputFileStream="{Binding PdfDocumentStream}" TextSelectionCompleted="PdfViewerControl_TextSelectionCompleted"/>
+<syncfusion:SfPdfViewer x:Name="pdfViewerControl" InputFileStream="{Binding PdfDocumentStream}" TextSelectionCompleted="PdfViewerControl_TextSelectionCompleted"/>
 
 {% endhighlight %}
 {% endtabs %}

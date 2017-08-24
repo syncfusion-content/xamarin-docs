@@ -71,7 +71,7 @@ SearchCompleted event of the PDF viewer can be used to identify if no instance o
 {% tabs %}
 {% highlight c# %}
 
-private void pdfViewerControl_SearchCompleted(object sender, TextSearchEventArgs args)
+private void pdfViewerControl_SearchCompleted(object sender, TextSearchCompletedEventArgs args)
 {
     bool isNoMatchFound = args.NoMatchFound;
 }

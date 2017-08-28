@@ -46,6 +46,35 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% endtabs %}
 
+### ReleaseMode issue in UWP platform
+
+There is a known Framework issue in UWP platform. The custom controls will not render when deployed the application in `Release Mode`.
+
+The above problem can be resolved by initializing the SfBusyIndicator assemblies in `App.xaml.cs` in UWP project as like in below code snippet.
+
+{% highlight C# %}
+
+// In App.xaml.cs
+
+protected override void OnLaunched(LaunchActivatedEventArgs e)
+{
+…
+
+	rootFrame.NavigationFailed += OnNavigationFailed;
+		
+	// you'll need to add `using System.Reflection;`
+	List<Assembly> assembliesToInclude = new List<Assembly>();
+
+	//Now, add all the assemblies your app uses
+	assembliesToInclude.Add(typeof(SfBusyIndicatorRenderer).GetTypeInfo().Assembly);
+
+	// replaces Xamarin.Forms.Forms.Init(e);        
+	Xamarin.Forms.Forms.Init(e, assembliesToInclude);
+		
+…     
+}
+{% endhighlight %}
+
 ## Create a Simple SfBusyIndicator 
 
 The SfBusyIndicator control is configured entirely in C# code or by using XAML markup. The following steps explain on how to create a SfBusyIndicator and configure its elements,

@@ -50,12 +50,43 @@ Create an instance of SfRatingRenderer in FinishedLaunching overridden method of
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {
+	...
     new SfRatingRenderer ();
+	...
 }	
 
 {% endhighlight %}
 
 {% endtabs %}
+
+### ReleaseMode issue in UWP platform
+
+There is a known Framework issue in UWP platform. The custom controls will not render when deployed the application in `Release Mode`.
+
+The above problem can be resolved by initializing the SfRating assemblies in `App.xaml.cs` in UWP project as like in below code snippet.
+
+{% highlight C# %}
+
+// In App.xaml.cs
+
+protected override void OnLaunched(LaunchActivatedEventArgs e)
+{
+…
+
+	rootFrame.NavigationFailed += OnNavigationFailed;
+		
+	// you'll need to add `using System.Reflection;`
+	List<Assembly> assembliesToInclude = new List<Assembly>();
+
+	//Now, add all the assemblies your app uses
+	assembliesToInclude.Add(typeof(SfRatingRenderer).GetTypeInfo().Assembly);
+
+	// replaces Xamarin.Forms.Forms.Init(e);        
+	Xamarin.Forms.Forms.Init(e, assembliesToInclude);
+		
+…     
+}
+{% endhighlight %}
 
 The SfRating control is configured entirely in C# code or by using XAML markup. The following steps explains how to create a SfRating and configure its elements.
 

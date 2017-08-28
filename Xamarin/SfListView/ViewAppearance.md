@@ -152,7 +152,7 @@ listView.Orientation = Orientation.Horizontal;
 
 SfListView provides an option to enable or disable the `Scrollbar` visibility by using [IsScrollBarVisible](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsScrollBarVisible.html) property. By default, the value will be `true`.  
 
-N> Due to some restrictions in native ScrollView renderer in Xamarin Forms, you cannot change the `IsScrollBarVisible` value at runtime. It can be defined only while initializing the SfListView. 
+N> Due to some restrictions in native ScrollView renderer in Xamarin.Forms, you cannot change the `IsScrollBarVisible` value at runtime. It can be defined only while initializing the SfListView. 
 
 {% tabs %}
 {% highlight xaml %}

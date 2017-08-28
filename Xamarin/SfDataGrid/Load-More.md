@@ -115,13 +115,13 @@ string[] LastNames = new string[] {
 };
 
 string[] CustomerID = new string[] {
-    "Alfki",
+    "Adams",
     "Frans",
-    "Merep",
-    "Folko",
-    "Simob",
-    "Warth",
-    "Vaffe"
+    "Katie",
+    "Laura",
+    "Wilson",
+    "Andrew",
+    "Lenny"
 };
 {% endhighlight %}
 

@@ -36,6 +36,7 @@ You can enable or disable editing for particular column by setting [GridColumn.A
 {% endhighlight %}
 {% highlight c# %}
 GridTextColumn column = new GridTextColumn();
+column.MappingName="OrderID";
 column.AllowEditing = false;
 {% endhighlight %}
 {% endtabs %}

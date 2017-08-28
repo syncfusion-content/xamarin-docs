@@ -195,7 +195,7 @@ namespace GettingStarted
         private void PullToRefresh_Pulling(object sender, PullingEventArgs args)
         {
             args.Cancel = false;
-            var prog = args.Progress;
+            var progress = args.Progress;
         }
     }
 }

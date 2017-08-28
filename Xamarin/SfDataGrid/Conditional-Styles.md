@@ -71,7 +71,7 @@ public class CellStyleConverter : IValueConverter
     public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
     {
         if (System.Convert.ToDouble(value) < 300)
-            return Color.Red;
+            return Color.White;
         return Color.Green;
     }
 
@@ -81,3 +81,5 @@ public class CellStyleConverter : IValueConverter
     }
 }
 {% endhighlight %}
+
+![](SfDataGrid_images/Conditional_Style_img.png)

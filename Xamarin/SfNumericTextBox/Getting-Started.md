@@ -53,17 +53,24 @@ The above problem can be resolved by initializing the SfNumericTextBox assemblie
 
 {% highlight C# %}
 
-public sealed partial class MainPage
+// In App.xaml.cs
+
+protected override void OnLaunched(LaunchActivatedEventArgs e)
 {
-	public MainPage()
-	{
-		this.InitializeComponent();
+…
 
-		new SfNumericTextBoxRenderer();
+	rootFrame.NavigationFailed += OnNavigationFailed;
+		
+	// you'll need to add `using System.Reflection;`
+	List<Assembly> assembliesToInclude = new List<Assembly>();
 
-		LoadApplication(new NumericUp.App());
-	}
-}
+	//Now, add all the assemblies your app uses
+	assembliesToInclude.Add(typeof(SfNumericTextBoxRenderer).GetTypeInfo().Assembly);
+
+	// replaces Xamarin.Forms.Forms.Init(e);        
+	Xamarin.Forms.Forms.Init(e, assembliesToInclude);
+		
+…     
 
 {% endhighlight %}
 

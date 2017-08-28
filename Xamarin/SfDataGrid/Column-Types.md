@@ -945,7 +945,7 @@ The following code example shows you how to customize the picker data using `Dis
 
 {% highlight c# %}
 
-sfGrid = new SfDataGrid(context);
+sfGrid = new SfDataGrid();
 viewModel = new ViewModel();
 sfGrid.ItemsSource = viewModel.OrdersInfo;
 

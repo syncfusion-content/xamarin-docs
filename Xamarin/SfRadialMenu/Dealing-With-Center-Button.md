@@ -9,7 +9,7 @@ documentation: ug
 
 # Dealing with CenterButton
 
-CenterButton/BackButton in RadialMenu is nothing but the view in center of the RadialMenu. It performs the operations like Openining and Closing the rim and Navigation to next level items. SfRadialMenu allows us to customize the CenterButton/BackButton with `FontIcon`, `Custom View` and `Caption`.
+CenterButton/BackButton in RadialMenu is nothing but the view in center of the RadialMenu. It performs the operations like Opening and Closing the rim and Navigation to next level items. SfRadialMenu allows us to customize the CenterButton/BackButton with `FontIcon`, `Custom View` and `Caption`.
 
 ## Add Icon through Icon Font
 
@@ -54,7 +54,7 @@ Public class RadialMenuPage : ContentPage
 		InitializeComponent();
 		SfRadialMenu radialMenu = new SfRadialMenu();
 
-		//Initilizing RadialMenu's properties
+		//Initializing RadialMenu's properties
 		radialMenu.CenterButtonText = "H";
 		radialMenu.CenterButtonFontFamily = "navigation.ttf";
 		radialMenu.CenterButtonRadius = 26;
@@ -110,7 +110,7 @@ Public class RadialMenuPage : ContentPage
 			//Creating instance for RadialMenu
 			SfRadialMenu radialMenu = new SfRadialMenu();
 
-			//Initilizing RadialMenu's properties
+			//Initializing RadialMenu's properties
 			radialMenu.CenterButtonText = "Click";
 			radialMenu.CenterButtonFontSize = 12;
 			radialMenu.CenterButtonRadius = 24;
@@ -219,7 +219,7 @@ Public class RadialMenuPage : ContentPage
 SfRadialMenu allows us to add items hierarchically.We can navigate to first level to next level by tapping the respective item and can go back to first by tapping the BackButton.The BackButton helps us to know we were navigated to next level of submenu items from first level. We can able customize the RadialMenu's BackButton with FontIcons,CustomView and Caption like CenterButton.     
 
 
-### BackButton with IconFotns
+### BackButton with IconFonts
 
 We can able to set IconFonts to BackButton using the `CenterButtonBackText` property available in SfRadialMenu.And we have to set respective FontFamily for the text in `CenterButtonBackFontFamily`.
 
@@ -285,7 +285,7 @@ Public class RadialMenuPage : ContentPage
 			//Creating instance for RadialMenu
 			SfRadialMenu radialMenu = new SfRadialMenu();
 
-			//Initilizing RadialMenu's properties
+			//Initializing RadialMenu's properties
 			radialMenu.CenterButtonText = "\uE713";
 			radialMenu.CenterButtonBackText = "\uE72B";
 			radialMenu.CenterButtonFontFamily = "Segoe MDL2 Assets.ttf";
@@ -502,7 +502,7 @@ Public class RadialMenuPage : ContentPage
 
 ![](images/backButtonView.png)
 
-## Performaing an action while navigating to next level
+## Performing an action while navigating to next level
 
 In SfRadialMenu we can perform an action while navigating from one level to another level. `Navigating`  event will be fired when navigating from one level to another level and there is a another event called `Navigated` which will be triggered once the navigation is done.
 
@@ -567,7 +567,7 @@ Public class RadialMenuPage : ContentPage
 			//Creating instance for RadialMenu
 			SfRadialMenu radialMenu = new SfRadialMenu();
 
-			//Initilizing RadialMenu's properties
+			//Initializing RadialMenu's properties
 			radialMenu.CenterButtonText = "\uE713";
 			radialMenu.CenterButtonBackText = "\uE72B";
 			radialMenu.CenterButtonFontFamily = "Segoe MDL2 Assets.ttf";

@@ -9,7 +9,7 @@ documentation : ug
 
 # Populating Items
 
-This section explains about the ways of populating items through SfRadailMenuItem and Item source with Item Template.
+This section explains about the ways of populating items through SfRadialMenuItem and Item source with Item Template.
 
 ## Through RadialMenuItems
 
@@ -99,7 +99,7 @@ Public class RadialMenuPage : ContentPage
 		//Creating instance for RadialMenu
 			SfRadialMenu radialMenu = new SfRadialMenu();
 
-			//Initilizing RadialMenu's properties
+			//Initializing RadialMenu's properties
 			radialMenu.CenterButtonText = "\uE713";
 			radialMenu.CenterButtonBackText = "\uE72B";
 			radialMenu.CenterButtonFontFamily = "Segoe MDL2 Assets.ttf";
@@ -229,4 +229,4 @@ void Handle_ItemTapped(object sender, Syncfusion.SfRadialMenu.XForms.ItemTappedE
 
 ![](images/populatingItems.png)
 
-N> To use FontIcons, add respcetive FontFamily name in `info.plist` file under Fonts provided by application category.
+N> To use FontIcons, add respective FontFamily name in `info.plist` file under Fonts provided by application category.

@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains you the steps required to launch the SfRadialMenu with hieratical items that to be used as mobile phone system settings. This section covers only the minimal features that you need to know to get started with the SfRadialMenu.
+This section explains you the steps required to launch the SfRadialMenu with hierarchical items that to be used as mobile phone system settings. This section covers only the minimal features that you need to know to get started with the SfRadialMenu.
 
 ## Adding SfRadialMenu reference 
 
@@ -150,7 +150,7 @@ Public class RadialMenuPage : ContentPage
 
 ## Create SfRadialMenu items
 
-SfRadialMenu is completed, once we add neccessary items to it. For adding items to RadialMenu follow the below codes.
+SfRadialMenu is completed, once we add necessary items to it. For adding items to RadialMenu follow the below codes.
 
 {% tabs %}
 
@@ -235,7 +235,7 @@ Public class RadialMenuPage : ContentPage
 		InitializeComponent();
 		SfRadialMenu radialMenu = new SfRadialMenu();
 		 	
-		//Initilizing RadialMenu's properties
+		//Initializing RadialMenu's properties
 		radialMenu.CenterButtonText = "\uE713";
 		radialMenu.CenterButtonBackText = "\uE72B";
 		radialMenu.CenterButtonFontFamily = "Segoe MDL2 Assets.ttf";
@@ -350,5 +350,5 @@ Public class RadialMenuPage : ContentPage
 
 ![](images/gettingStarted2.png)
 
-N> To use FontIcons, add respcetive FontFamily name in `info.plist` file under Fonts provided by application category.
+N> To use FontIcons, add respective FontFamily name in `info.plist` file under Fonts provided by application category.
 

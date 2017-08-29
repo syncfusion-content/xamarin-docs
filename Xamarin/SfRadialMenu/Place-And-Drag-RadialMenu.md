@@ -55,7 +55,7 @@ Public class RadialMenuPage : ContentPage
 		//Creating instance for RadialMenu
 		SfRadialMenu radialMenu = new SfRadialMenu();
 
-		//Initilizing RadialMenu's properties
+		//Initializing RadialMenu's properties
 		radialMenu.CenterButtonText = "\uE713";
 		radialMenu.CenterButtonFontFamily = "Segoe MDL2 Assets.ttf";
 		radialMenu.CenterButtonBackFontFamily = "Segoe MDL2 Assets.ttf";
@@ -114,7 +114,7 @@ Public class RadialMenuPage : ContentPage
 		//Creating instance for RadialMenu
 		SfRadialMenu radialMenu = new SfRadialMenu();
 
-		//Initilizing RadialMenu's properties
+		//Initializing RadialMenu's properties
 		radialMenu.CenterButtonText = "\uE713";
 		radialMenu.CenterButtonFontFamily = "Segoe MDL2 Assets.ttf";
 		radialMenu.CenterButtonBackFontFamily = "Segoe MDL2 Assets.ttf";

@@ -19,4 +19,4 @@ Essential NavigationDrawer for Xamarin.Forms is a simpler component to create na
 
 * Animated transitions – Supports opening/closing of pane due to the transition SlideOnTop, Push and Reveal.
 
-* Changeable swipe sensitivity – Flexibile for the users to update touch threshold based on their device screen size.
+* Changeable swipe sensitivity – Flexible for the users to update touch threshold based on their device screen size.

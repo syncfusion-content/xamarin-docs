@@ -49,9 +49,7 @@ Then initialize an empty chart with two axes as shown below,
     <chart:SfChart.PrimaryAxis>
 
         <chart:CategoryAxis>
-
-            <chart:CategoryAxis></chart:CategoryAxis>  
-
+ 
         </chart:CategoryAxis>
 
     </chart:SfChart.PrimaryAxis>
@@ -59,8 +57,6 @@ Then initialize an empty chart with two axes as shown below,
     <chart:SfChart.SecondaryAxis>
 
         <chart:NumericalAxis>
-
-            <chart:NumericalAxis></chart:NumericalAxis>   
 
         </chart:NumericalAxis>
 

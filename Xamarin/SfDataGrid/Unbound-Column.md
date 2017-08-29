@@ -33,7 +33,7 @@ GridUnboundColumn DiscountColumn = new GridUnboundColumn()
 {
     MappingName = "DiscountPrice",
     HeaderText = "Discount Price",
-    Expression = "UnitPrice*Discount"
+    Expression = "UnitPrice*Discount",
     Format = "C"
 };
 this.dataGrid.Columns.Add(DiscountColumn);

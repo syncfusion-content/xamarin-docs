@@ -85,7 +85,7 @@ Public class RadialMenuPage : ContentPage
 			//Creating instance for RadialMenu
 			SfRadialMenu radialMenu = new SfRadialMenu();
 
-			//Initilizing RadialMenu's properties
+			//Initializing RadialMenu's properties
 			radialMenu.CenterButtonText = "\uE713";
 			radialMenu.LayoutType = LayoutType.Custom;
 			radialMenu.VisibleSegmentsCount = 5;
@@ -166,7 +166,7 @@ Public class RadialMenuPage : ContentPage
 			//Creating instance for RadialMenu
 			SfRadialMenu radialMenu = new SfRadialMenu();
 
-			//Initilizing RadialMenu's properties
+			//Initializing RadialMenu's properties
 			radialMenu.CenterButtonText = "\uE713";
 			radialMenu.LayoutType = LayoutType.Custom;
 			radialMenu.VisibleSegmentsCount = 12;

@@ -970,7 +970,7 @@ public class ViewModel
 	{
 		public ViewModel ()
 		{
-			SetRowstoGenerate (100);
+			SetRowsToGenerate (100);
             this.PickerInfo = OrdersInfo.ToList();
 		}
 
@@ -996,7 +996,7 @@ public class ViewModel
 
 		#region ItemSource Generator
 
-		public void SetRowstoGenerate (int count)
+		public void SetRowsToGenerate (int count)
 		{
 			order = new OrderInfoRepository ();
 			ordersInfo = order.GetOrderDetails (count);

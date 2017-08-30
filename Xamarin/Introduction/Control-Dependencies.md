@@ -656,6 +656,30 @@ This page lists the assemblies required for each control to be referred in each 
 </tr>
 </table>
 
+## SfRadialMenu
+
+<dl>
+  <dt>NuGet</dt>
+  <dd>Syncfusion.Xamarin.SfRadialMenu</dd>
+</dl>
+
+**Assemblies**
+
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfRadialMenu.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfRadialMenu.Android.dll<br/>Syncfusion.SfRadialMenu.XForms.Android.dll<br/>Syncfusion.SfRadialMenu.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfRadialMenu.iOS.dll<br/>Syncfusion.SfRadialMenu.XForms.iOS.dll<br/>Syncfusion.SfRadialMenu.XForms.dll<br/></td>
+</tr>
+</table>
+
 ## SfMaps 
 
 <dl>

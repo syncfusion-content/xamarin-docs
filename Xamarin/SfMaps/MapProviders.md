@@ -14,7 +14,7 @@ Maps control supports any type of shapefiles like geographic,normal type given b
 
 ## Geometry Type
   
-  Geometry type property specifies the maps control supports any type of shape files that is suppose if shape file  contains  normal or geographic latitude and longitude points it supports both  type of shpae file.
+  Geometry type property specifies the maps control supports any type of shape files that is suppose if shape file  contains  normal or geographic latitude and longitude points it supports both  type of shape file.
 Geometry property has the following two options:
            
  * Points

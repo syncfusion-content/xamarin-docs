@@ -25,7 +25,7 @@ The shapeSettings defines the basic customization settings of shapes in the map.
 {% highlight xaml %}
 
         <SfMaps:ShapeFileLayer:ShapeSetting>
-        <SfMaps:ShapeSetting ShapeFill="#9CBF4E" SelectedShapeColor="#BC5353"  ShapeStroke="white" ShapeStrokeThickess="1"/>
+        <SfMaps:ShapeSetting ShapeFill="#9CBF4E" SelectedShapeColor="#BC5353"  ShapeStroke="white" ShapeStrokeThickness="1"/>
         </SfMaps:ShapeFileLayer:ShapeSetting>
                       
       
@@ -37,7 +37,7 @@ The shapeSettings defines the basic customization settings of shapes in the map.
          setting.ShapeFill = Color.ParseColor("#9CBF4E");
          setting.SelectedShapeColor = Color.ParseColor("#BC5353");
          setting.ShapeStroke = Color.White;
-         setting.ShapeStrokeThickess = 1;
+         setting.ShapeStrokeThickness = 1;
          layer.ShapeSettings = setting;
 
 {% endhighlight %}

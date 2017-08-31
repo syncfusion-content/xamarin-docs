@@ -24,7 +24,7 @@ I> After adding the reference, currently, an additional step is required for iOS
 
 # Initialize the image editor
 
-Import the SfImageEditor namespace as shown below in your resceptive page,
+Import the SfImageEditor namespace as shown below in your respective page,
 
 {% tabs %}
 

@@ -212,7 +212,7 @@ To add bubbles to a map, the bubble marker setting is added to the shape file la
             list.Add(new BubbleData("United States", "USA", 321174000, 167));
             list.Add(new BubbleData("India", "IND", 1272470000, 73));
             list.Add(new BubbleData("China", "CHI", 1370320000, 30));
-            list.Add(new BubbleData("Indonasia", "INO", 255461700, 72));
+            list.Add(new BubbleData("Indonesia", "INO", 255461700, 72));
 
 
             return list;

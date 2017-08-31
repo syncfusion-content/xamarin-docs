@@ -12,13 +12,13 @@ documentation : ug
 The image editor control gives you an option to crop the image as desired. Cropping the image can be done in two ways:
 
 * From Toolbar
-* Cropping programatically
+* Cropping programmatically
 
 ### From Toolbar
 
 From the `Transforms` submenu, click on the `Crop` button. It will enable cropping and a selector region appears on top of the image which stretches to the size of the image. The toolbars will disappear while cropping is enabled and only `Cancel` and `OK` buttons will be available. To disable cropping region, click on `Cancel` button. Click on the `OK` button after selecting the desired area for cropping and the toolbars will be reappear after the cropping operation is completed.
 
-### Cropping Programatically
+### Cropping programmatically
 
 Cropping operation can be done programmatically in two ways:
 
@@ -46,7 +46,7 @@ editor.Crop();
 
 ## Manually enter the cropping area
 
-If you want to manually enter the cropping rectangle without even enabling the cropping funtionality, you can make use of the overloaded Crop(Rectangle rect) method. This can be done by defining a rectangle yourself and pass it to Crop(rect) method.
+If you want to manually enter the cropping rectangle without even enabling the cropping functionality, you can make use of the overloaded Crop(Rectangle rect) method. This can be done by defining a rectangle yourself and pass it to Crop(rect) method.
 
 {% tabs %}
 

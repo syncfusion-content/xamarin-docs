@@ -11,79 +11,14 @@ documentation: ug
 
 This section walks you through the steps required to add `SfDateTimeRangeNavigator` and populate it with data, and also explains how to respond to range selection performed in the control. 
 
-## Referencing Essential Studio components in your solution
+## Adding RangeNavigator Reference
 
-If you had acquired Essential Studio components through the Xamarin component store interface from within your IDE, then after adding the components to your Xamarin.iOS, Xamarin.Android and Windows Phone projects through the Component manager, you will still need to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL project in your solution. You can do this by manually adding the relevant PCL assembly references to your PCL project contained in the following path inside of your solution folder.
+Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain and reference Essential Studio components in your solution; then refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfdatetimerangenavigator) link to know about the assemblies required for adding RangeNavigator to your project.
 
-Components/syncfusionessentialstudio-version/lib/pcl/
+I> After adding the reference, currently, an additional step is required for iOS and UWP projects. You need to call `SfChartRenderer.Init()` in iOS and UWP projects as shown in this [KB article.](https://www.syncfusion.com/kb/7977)
 
-Alternatively if you had downloaded Essential Studio from Syncfusion.com or through the Xamarin store web interface then all assembly references need to be added manually.
-
-After installing Essential Studio for Xamarin, all the required assemblies can be found in the installation folders, typically
-
-{Syncfusion Installed location}\Essential Studio\{release version}\lib
-
-Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\15.3.0.26\lib
-
-or after downloading through the Xamarin store web interface, all the required assemblies can be found in the below folder
-
-{download location}\syncfusionessentialstudio-version\lib
-
-You can then add the assembly references to the respective projects as shown below
-
-### PCL project
-
-pcl\Syncfusion.SfChart.XForms.dll
-
-### Android project
-
-android\Syncfusion.SfChart.XForms.Android.dll
-
-android\Syncfusion.SfChart.XForms.dll
-
-### iOS project
-
-iOS-unified\Syncfusion.SfChart.XForms.iOS.dll
-
-iOS-unified\Syncfusion.SfChart.XForms.dll
-
-### Windows Phone project
-
-wp8\Syncfusion.SfChart.WP8.dll
-
-wp8\Syncfusion.SfChart.XForms.WinPhone.dll
-
-wp8\Syncfusion.SfChart.XForms.dll
-
-Currently an additional step is required for Windows Phone and iOS projects. We need to create an instance of the `SfRangeNavigatorRenderer` as shown below.
-
-Create an instance of `SfRangeNavigatorRenderer` in MainPage constructor of the Windows Phone project as shown
-
-{% highlight c# %}
-[C#]
-
-public MainPage() 
-{ 
-	new SfRangeNavigatorRenderer(); 
-	... 
-}
-
-{% endhighlight %}
-
-Create an instance of `SfRangeNavigatorRenderer` in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below
-
-{% highlight c# %}
-[C#]
-
-public override bool FinishedLaunching(UIApplication app, NSDictionary options) 
-{ 
-	... 
-	new SfRangeNavigatorRenderer(); 
-	... 
-}
-
-{% endhighlight %}
-
+I> For UWP alone, one more additional step is required if the project is built in release mode with .NET Native tool chain enabled. You can refer the [KB article](https://www.syncfusion.com/kb/7944) for more details.
+ 
 ## Adding and configuring SfDateTimeRangeNavigator 
 
 First, let us initialize the control with major and minor date time scales by specifying the minimum and maximum date to be visualized in the control using `Minimum` and `Maximum` properties.

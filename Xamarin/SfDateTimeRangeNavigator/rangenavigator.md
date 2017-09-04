@@ -13,7 +13,7 @@ This section walks you through the steps required to add `SfDateTimeRangeNavigat
 
 ## Adding RangeNavigator Reference
 
-Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain and reference Essential Studio components in your solution; then refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfdatetimerangenavigator) link to know about the assemblies required for adding RangeNavigator to your project.
+Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain and reference Essential Studio components in your solution; then refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfdatetimerangenavigator) link to know about the assemblies required for adding range navigator to your project.
 
 I> After adding the reference, currently, an additional step is required for iOS and UWP projects. You need to call `SfChartRenderer.Init()` in iOS and UWP projects as shown in this [KB article.](https://www.syncfusion.com/kb/7977)
 

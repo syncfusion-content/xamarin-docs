@@ -288,6 +288,8 @@ chart.PrimaryAxis.ShowTrackballInfo = true;
 
 {% endtabs %}
 
+![](trackball_images/trackball_img5.png)
+
 ## ShowTrackballInfo for series
 
 You can able to show/hide the trackball label for particular series by using [`ShowTrackballInfo`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CartesianSeries~ShowTrackballInfo.html) property of [`CartesianSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CartesianSeries.html). Default value of this [`ShowTrackballInfo`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CartesianSeries~ShowTrackballInfo.html) property is `True`.
@@ -326,6 +328,8 @@ chart.Series.Add(lineSeries);
 {% endtabs %}
 
 N> This ShowTrackballInfo property is common for all types of cartesian series.
+
+![](trackball_images/trackball_img6.png)
 
 ## Label Template
 

@@ -44,7 +44,7 @@ The tick’s position from the rim is set using the `Offset` property.
 
 {% highlight c# %}
 
-    SfCircularGauge circulargauge = new SfCircularGauge();
+    SfCircularGauge circular = new SfCircularGauge();
     scale.MinorTicksPerInterval = 1;
     TickSettings minor = new TickSettings();
     minor.Length = 6;
@@ -57,8 +57,8 @@ The tick’s position from the rim is set using the `Offset` property.
     major.Color = Color.FromHex("#2bbfb8");
     major.Thickness = 3;
     scale.MajorTickSettings = major;
-    circulargauge.Scales = scale;
-    this.Content= circulargauge;
+    circular.Scales = scale;
+    this.Content= circular;
     
 {% endhighlight %}
 

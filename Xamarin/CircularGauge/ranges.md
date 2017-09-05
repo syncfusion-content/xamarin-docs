@@ -34,7 +34,7 @@ A range is a visual element which begins and ends at specified values within a s
 
 {% highlight c# %}
 
-    SfCircularGauge circulargauge = new SfCircularGauge();
+    SfCircularGauge circular = new SfCircularGauge();
     ObservableCollection<Scale> scales = new ObservableCollection<Scale>();
     Scale scale=new Scale();
     Range range1 = new Range();
@@ -50,8 +50,8 @@ A range is a visual element which begins and ends at specified values within a s
     range2.Thickness = 10;
     scale.Ranges.Add(range2);
     scales.Add(scale);
-    circularGauge.Scales = scales;
-    this.Content = circulargauge;
+    circular.Scales = scales;
+    this.Content = circular;
     
 {% endhighlight %}
 
@@ -80,7 +80,7 @@ The range can be placed inside the scale, outside the scale, or on the scale by 
 
 {% highlight c# %}
 
-    SfCircularGauge circulargauge = new SfCircularGauge();
+    SfCircularGauge circular = new SfCircularGauge();
     ObservableCollection<Scale> scales = new ObservableCollection<Scale>();
     Scale scale=new Scale();
     Range range1 = new Range();
@@ -98,8 +98,8 @@ The range can be placed inside the scale, outside the scale, or on the scale by 
     range2.Offset=0.3;
     scale.Ranges.Add(range2);
     scales.Add(scale);
-    circularGauge.Scales = scales; 
-    this.Content= circulargauge;
+    circular.Scales = scales; 
+    this.Content= circular;
     
 {% endhighlight %}
 

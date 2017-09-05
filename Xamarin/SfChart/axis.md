@@ -988,6 +988,30 @@ Chart.SecondaryAxis.MaximumLabels = 5;
 
 ![](axis_images/axis_img26.png)
 
+### ShowTrackballInfo
+
+[`ShowTrackballInfo`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~ShowTrackballInfo.html) property can be used to show the axis information when the trackball is enabled. Default value of [`ShowTrackballInfo`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~ShowTrackballInfo.html) is `False`.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis >
+
+    <chart:CategoryAxis ShowTrackballInfo = "true" />
+
+</chart:SfChart.PrimaryAxis >
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis.ShowTrackballInfo = true;
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ### AutoScrollingDelta
 
 [`AutoScrollingDelta`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~AutoScrollingDelta.html) is used to ensure that the specified range of data is always visible in the chart. It always shows the recently added data points at the end and scrolling will be reset to the end of the range whenever a new point is added. 

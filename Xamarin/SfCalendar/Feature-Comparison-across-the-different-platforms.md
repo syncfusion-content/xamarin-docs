@@ -322,7 +322,7 @@ This section covers the features of SfCalendar specific to Android,iOS and UWP p
 </tr>
 
 <tr style="background-color: #ffefd5;color: #000000;">
-<td>Customization of Monthview </td>
+<td>Customization of MonthView </td>
 <td align="center">
 <p>Yes</p>
 </td>
@@ -338,7 +338,7 @@ This section covers the features of SfCalendar specific to Android,iOS and UWP p
 </tr>
 
 <tr>
-<td>Customization of Yearview </td>
+<td>Customization of YearView </td>
 <td align="center">
 <p>Yes</p>
 </td>

@@ -847,7 +847,8 @@ chart.Series.Add(splineSeries);
 
 ## Spline Types
 
-Spline and SplineArea series allows you to change the spline type using SplineType property. Using this property you can change the spline rendering method. The following types are used in Spline and SplineArea series as 
+SplineType allows you to change the Spline curve in series. 
+The following types are used in Spline series as 
 
  * Natural
  * Monotonic

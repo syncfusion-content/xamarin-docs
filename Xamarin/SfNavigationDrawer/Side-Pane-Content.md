@@ -55,7 +55,7 @@ public MainPage()
         {
             InitializeComponent();
              navigationDrawer.DrawerWidth = 200;
-            hamburgerButton.Image = (FileImageSource)ImageSource.FromFile("hamburgericon.png");
+            hamburgerButton.Image = (FileImageSource)ImageSource.FromFile("hamburger_icon.png");
         }
 
         void hamburgerButton_Clicked(object sender, EventArgs e)
@@ -105,7 +105,7 @@ public MainPage()
         {
             InitializeComponent();
             navigationDrawer.DrawerWidth = 200;
-            hamburgerButton.Image = (FileImageSource)ImageSource.FromFile("hamburgericon.png");
+            hamburgerButton.Image = (FileImageSource)ImageSource.FromFile("hamburger_icon.png");
         }
 
         void hamburgerButton_Clicked(object sender, EventArgs e)
@@ -155,7 +155,7 @@ public MainPage()
         {
             InitializeComponent();
             navigationDrawer.DrawerWidth = 200;
-            hamburgerButton.Image = (FileImageSource)ImageSource.FromFile("hamburgericon.png");
+            hamburgerButton.Image = (FileImageSource)ImageSource.FromFile("hamburger_icon.png");
         }
 
         void hamburgerButton_Clicked(object sender, EventArgs e)
@@ -205,7 +205,7 @@ public MainPage()
         {
             InitializeComponent();
             navigationDrawer.DrawerWidth = 200;
-            hamburgerButton.Image = (FileImageSource)ImageSource.FromFile("hamburgericon.png");
+            hamburgerButton.Image = (FileImageSource)ImageSource.FromFile("hamburger_icon.png");
         }
 
         void hamburgerButton_Clicked(object sender, EventArgs e)
@@ -253,7 +253,7 @@ public MainPage()
         {
             InitializeComponent();
             navigationDrawer.DrawerWidth = 200;
-            hamburgerButton.Image = (FileImageSource)ImageSource.FromFile("hamburgericon.png");
+            hamburgerButton.Image = (FileImageSource)ImageSource.FromFile("hamburger_icon.png");
         }
 
         void hamburgerButton_Clicked(object sender, EventArgs e)

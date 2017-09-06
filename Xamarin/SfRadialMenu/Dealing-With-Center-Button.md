@@ -188,7 +188,7 @@ Public class RadialMenuPage : ContentPage
 			if (Device.OS == TargetPlatform.iOS)
 				textLabel.FontFamily = "Social";
 			else
-				textLabel.FontFamily = "socialicons.ttf#socialicons";
+				textLabel.FontFamily = "social_icons.ttf#social_icons";
 			textLabel.FontSize = 20;
 			textLabel.HorizontalTextAlignment = TextAlignment.Center;
 			textLabel.VerticalTextAlignment = TextAlignment.Center;
@@ -294,7 +294,7 @@ Public class RadialMenuPage : ContentPage
 			radialMenu.CenterButtonBorderColor = Color.White;
 
 			string[] layer = new string[] { "\uE701", "\uE702", "\uEA8F", "\uE706", "\uEBAA", "\uE7E8" };
-			string[] wifi = new string[] { "\uEC3B", "\uEC3A", "\uEC39", "\uEC38", "\uEC37" };
+			string[] Wi-Fi = new string[] { "\uEC3B", "\uEC3A", "\uEC39", "\uEC38", "\uEC37" };
 
 
 			//Adding radialMenu main menu items
@@ -310,17 +310,17 @@ Public class RadialMenuPage : ContentPage
 				radialMenu.Items.Add(mainMenuItems);
 			}
 
-			// Adding wifi submenu items
+			// Adding Wi-Fi submenu items
 			for (int i = 0; i < 5; i++)
 			{
-				SfRadialMenuItem wifiSubMenuItems = new SfRadialMenuItem();
-				wifiSubMenuItems.IconFontSize = 20;
-				wifiSubMenuItems.FontIconText = wifi[i];
-				wifiSubMenuItems.ItemHeight = 30;
-				wifiSubMenuItems.ItemWidth = 40;
-				wifiSubMenuItems.TextColor = Color.White;
-				wifiSubMenuItems.IconFontFamily = "Segoe MDL2 Assets.ttf";
-				radialMenu.Items[0].Items.Add(wifiSubMenuItems);
+				SfRadialMenuItem Wi-FiSubMenuItems = new SfRadialMenuItem();
+				Wi-FiSubMenuItems.IconFontSize = 20;
+				Wi-FiSubMenuItems.FontIconText = wifi[i];
+				Wi-FiSubMenuItems.ItemHeight = 30;
+				Wi-FiSubMenuItems.ItemWidth = 40;
+				Wi-FiSubMenuItems.TextColor = Color.White;
+				Wi-FiSubMenuItems.IconFontFamily = "Segoe MDL2 Assets.ttf";
+				radialMenu.Items[0].Items.Add(Wi-FiSubMenuItems);
 			}
 
 			this.Content = radialMenu;
@@ -426,7 +426,7 @@ Public class RadialMenuPage : ContentPage
 			if (Device.OS == TargetPlatform.iOS)
 				textLabel.FontFamily = "Social";
 			else
-				textLabel.FontFamily = "socialicons.ttf#socialicons";
+				textLabel.FontFamily = "social_icons.ttf#social_icons";
 			textLabel.FontSize = 20;
 			textLabel.HorizontalTextAlignment = TextAlignment.Center;
 			textLabel.VerticalTextAlignment = TextAlignment.Center;
@@ -465,7 +465,7 @@ Public class RadialMenuPage : ContentPage
 			radialMenu.CenterButtonBackgroundColor = Color.Transparent;
 
 			string[] layer = new string[] { "\uE701", "\uE702", "\uEA8F", "\uE706", "\uEBAA", "\uE7E8" };
-			string[] wifi = new string[] { "\uEC3B", "\uEC3A", "\uEC39", "\uEC38", "\uEC37" };
+			string[] Wi-Fi = new string[] { "\uEC3B", "\uEC3A", "\uEC39", "\uEC38", "\uEC37" };
 
 
 			//Adding radialMenu main menu items
@@ -481,17 +481,17 @@ Public class RadialMenuPage : ContentPage
 				radialMenu.Items.Add(mainMenuItems);
 			}
 
-			// Adding wifi submenu items
+			// Adding Wi-Fi submenu items
 			for (int i = 0; i < 5; i++)
 			{
-				SfRadialMenuItem wifiSubMenuItems = new SfRadialMenuItem();
-				wifiSubMenuItems.IconFontSize = 20;
-				wifiSubMenuItems.FontIconText = wifi[i];
-				wifiSubMenuItems.ItemHeight = 30;
-				wifiSubMenuItems.ItemWidth = 40;
-				wifiSubMenuItems.TextColor = Color.White;
-				wifiSubMenuItems.IconFontFamily = "Segoe MDL2 Assets.ttf";
-				radialMenu.Items[0].Items.Add(wifiSubMenuItems);
+				SfRadialMenuItem Wi-FiSubMenuItems = new SfRadialMenuItem();
+				Wi-FiSubMenuItems.IconFontSize = 20;
+				Wi-FiSubMenuItems.FontIconText = wifi[i];
+				Wi-FiSubMenuItems.ItemHeight = 30;
+				Wi-FiSubMenuItems.ItemWidth = 40;
+				Wi-FiSubMenuItems.TextColor = Color.White;
+				Wi-FiSubMenuItems.IconFontFamily = "Segoe MDL2 Assets.ttf";
+				radialMenu.Items[0].Items.Add(Wi-FiSubMenuItems);
 			}
 
 			this.Content = radialMenu;
@@ -578,7 +578,7 @@ Public class RadialMenuPage : ContentPage
 			radialMenu.Navigating += Handle_Navigating;
 
 			string[] layer = new string[] { "\uE701", "\uE702", "\uEA8F", "\uE706", "\uEBAA", "\uE7E8" };
-			string[] wifi = new string[] { "\uEC3B", "\uEC3A", "\uEC39", "\uEC38", "\uEC37" };
+			string[] Wi-Fi = new string[] { "\uEC3B", "\uEC3A", "\uEC39", "\uEC38", "\uEC37" };
 
 
 			//Adding radialMenu main menu items
@@ -594,17 +594,17 @@ Public class RadialMenuPage : ContentPage
 				radialMenu.Items.Add(mainMenuItems);
 			}
 
-			// Adding wifi submenu items
+			// Adding Wi-Fi submenu items
 			for (int i = 0; i < 5; i++)
 			{
-				SfRadialMenuItem wifiSubMenuItems = new SfRadialMenuItem();
-				wifiSubMenuItems.IconFontSize = 20;
-				wifiSubMenuItems.FontIconText = wifi[i];
-				wifiSubMenuItems.ItemHeight = 30;
-				wifiSubMenuItems.ItemWidth = 40;
-				wifiSubMenuItems.TextColor = Color.White;
-				wifiSubMenuItems.IconFontFamily = "Segoe MDL2 Assets.ttf";
-				radialMenu.Items[0].Items.Add(wifiSubMenuItems);
+				SfRadialMenuItem Wi-FiSubMenuItems = new SfRadialMenuItem();
+				Wi-FiSubMenuItems.IconFontSize = 20;
+				Wi-FiSubMenuItems.FontIconText = wifi[i];
+				Wi-FiSubMenuItems.ItemHeight = 30;
+				Wi-FiSubMenuItems.ItemWidth = 40;
+				Wi-FiSubMenuItems.TextColor = Color.White;
+				Wi-FiSubMenuItems.IconFontFamily = "Segoe MDL2 Assets.ttf";
+				radialMenu.Items[0].Items.Add(Wi-FiSubMenuItems);
 			}
 
 			this.Content = radialMenu;

@@ -93,7 +93,7 @@ Public class RadialMenuPage : ContentPage
 			radialMenu.CenterButtonRadius = 26;
 			radialMenu.CenterButtonBorderColor = Color.White;
 
-			//Adding Mainmenu Items
+			//Adding Main menu Items
 
 			string[] menuItems = new string[] { "\uE701", "\uE702", "\uEA8F", "\uE706", "\uEBAA", "\uE7E8","\uE114" };
 
@@ -174,7 +174,7 @@ Public class RadialMenuPage : ContentPage
 			radialMenu.CenterButtonRadius = 26;
 			radialMenu.CenterButtonBorderColor = Color.White;
 
-			//Adding Mainmenu Items
+			//Adding Main menu Items
 
 			string[] menuItems = new string[] { "\uE701", "\uE702","\uE114" };
 			int[] index = new int[] { 0, 4, 8 };

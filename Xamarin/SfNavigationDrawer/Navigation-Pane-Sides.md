@@ -65,7 +65,7 @@ public MainPage()
             InitializeComponent();
             navigationDrawer.DrawerWidth = 200; 
 		    navigationDrawer.Position = Syncfusion.SfNavigationDrawer.XForms.Position.Left;
-            hamburgerButton.Image = (FileImageSource)ImageSource.FromFile("hamburgericon.png");
+            hamburgerButton.Image = (FileImageSource)ImageSource.FromFile("hamburger_icon.png");
             List<string> list = new List<string>();
             list.Add("Web");
             list.Add("Images");
@@ -138,7 +138,7 @@ public MainPage()
             InitializeComponent();
             navigationDrawer.DrawerWidth = 200;
 		    navigationDrawer.Position = Syncfusion.SfNavigationDrawer.XForms.Position.Right;
-            hamburgerButton.Image = (FileImageSource)ImageSource.FromFile("hamburgericon.png");
+            hamburgerButton.Image = (FileImageSource)ImageSource.FromFile("hamburger_icon.png");
             List<string> list = new List<string>();
             list.Add("Web");
             list.Add("Images");
@@ -211,7 +211,7 @@ public MainPage()
             InitializeComponent();
 		    navigationDrawer.DrawerWidth = 200;
 	    	navigationDrawer.Position = Syncfusion.SfNavigationDrawer.XForms.Position.Top;
-            hamburgerButton.Image = (FileImageSource)ImageSource.FromFile("hamburgericon.png");
+            hamburgerButton.Image = (FileImageSource)ImageSource.FromFile("hamburger_icon.png");
             List<string> list = new List<string>();
             list.Add("Web");
             list.Add("Images");
@@ -284,7 +284,7 @@ public MainPage()
             InitializeComponent();
 	     	navigationDrawer.DrawerWidth = 200;
 	     	navigationDrawer.Position = Syncfusion.SfNavigationDrawer.XForms.Position.Bottom;
-            hamburgerButton.Image = (FileImageSource)ImageSource.FromFile("hamburgericon.png");
+            hamburgerButton.Image = (FileImageSource)ImageSource.FromFile("hamburger_icon.png");
             List<string> list = new List<string>();
             list.Add("Web");
             list.Add("Images");

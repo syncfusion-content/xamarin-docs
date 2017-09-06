@@ -30,7 +30,7 @@ The `StartValue` and `EndValue` properties will determine the overall range of t
 
 {% highlight c# %}
 
-    SfCircularGauge circulargauge = new SfCircularGauge();
+    SfCircularGauge circular = new SfCircularGauge();
     ObservableCollection<Scale> scales = new ObservableCollection<Scale>();
     Scale scale=new Scale();
     scale.StartValue = 0;
@@ -44,8 +44,8 @@ The `StartValue` and `EndValue` properties will determine the overall range of t
     scale.LabelOffset = 0.1;
     scale.MinorTicksPerInterval = 0;
     scales.Add(scale);
-    circulargauge.Scales = scales;
-    this.content=circulargauge;
+    circular.Scales = scales;
+    this.content=circular;
 
 {% endhighlight %}
 
@@ -61,7 +61,7 @@ Show Rim property is a Boolean property which is used to enable or disable featu
 
 {% highlight xaml %}
 
-        <gauge:SfCircularGauge x:Name="circularGauge">
+        <gauge:SfCircularGauge x:Name="circular">
           <gauge:SfCircularGauge.Scales>
 	  	    <gauge:Scale x:Name="scale" ShowRim = "False">
                     </gauge:Scale>
@@ -72,13 +72,13 @@ Show Rim property is a Boolean property which is used to enable or disable featu
 
 {% highlight c# %}
 
-            SfCircularGauge circulargauge = new SfCircularGauge();       
+            SfCircularGauge circular = new SfCircularGauge();       
             ObservableCollection<Scale> scales = new ObservableCollection<Scale>();
             Scale scale = new Scale();                
             scale.ShowRim = false;
             scales.Add(scale);
-            circulargauge.Scales.Add(scale);
-            this.Content = circulargauge;
+            circular.Scales.Add(scale);
+            this.Content = circular;
    
     
 {% endhighlight %}

@@ -112,8 +112,8 @@ Initializing the SfCircularGauge control with a required optimal name by using t
 {% endhighlight %}
 {% highlight c# %}
 
-    SfCircularGauge circulargauge = new SfCircularGauge ();
-    this.Content = circulargauge;
+    SfCircularGauge circular = new SfCircularGauge ();
+    this.Content = circular;
 
 {% endhighlight %}
 {% endtabs %}
@@ -135,7 +135,7 @@ You can assign a unique header to `SfCircularGauge` by making use of `Header` pr
 
     SfCircularGauge circularGauge = new SfCircularGauge(); 
     Header header = new Header();
-    header.Text = "Speedmeter";
+    header.Text = "Speedometer";
     header.TextSize = 20;
     header.Position = Device.OnPlatform(iOS: new Point(.3, .7), Android:new Point(0.38, 0.7), WinPhone: new Point(0.38, 0.7));
     header.ForegroundColor = Color.Gray;
@@ -184,8 +184,8 @@ They are:
     scale.RimColor = Color.Gray;
     scale.MinorTicksPerInterval = 0;
     scales.Add(scale);
-    circulargauge.Scales = scales;  
-    this.Content= circulargauge;
+    circular.Scales = scales;  
+    this.Content= circular;
 
 {% endhighlight %}
 
@@ -214,7 +214,7 @@ You can add ranges to `SfCircularGauge` by creating ranges collection using `Ran
     range.Thickness = 10;
     scale.Ranges.Add(range);
     circularGauge.Scales = scale; 
-    this.Content= circulargauge;
+    this.Content= circular;
 
 {% endhighlight %}
 

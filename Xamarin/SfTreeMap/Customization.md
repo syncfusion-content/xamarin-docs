@@ -63,11 +63,11 @@ You can differentiate all the leaf nodes using the `desaturationColorMapping` pr
 {% highlight c# %}
 
 
-    DesaturationColorMapping desat = new DesaturationColorMapping ();
-	desat.Color = Color.FromHex ("#41B8C4");
-	desat.From = 1;
-	desat.To = 0.2;
-    tree.LeafItemColorMapping = desat;
+    DesaturationColorMapping desaturation = new DesaturationColorMapping ();
+	desaturation.Color = Color.FromHex ("#41B8C4");
+	desaturation.From = 1;
+	desaturation.To = 0.2;
+    tree.LeafItemColorMapping = desaturation;
 
 {% endhighlight %}
 

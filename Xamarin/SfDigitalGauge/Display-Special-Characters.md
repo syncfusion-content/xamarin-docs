@@ -15,14 +15,14 @@ The special characters in the SfDigitalGauge can be viewed in any segment, here 
 
 {% highlight xaml %}
 
-<gauge:SfDigitalGauge x:Name="digitalgauge" CharacterType="EightCrossEightDotMatrix" Value=”@ # $ &” />
+<gauge:SfDigitalGauge x:Name="digital" CharacterType="EightCrossEightDotMatrix" Value=”@ # $ &” />
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-digitalgauge.CharacterType=CharacterType.EightCrossEightDotMatrix;
-digitalgauge.Value=”@ # $ &”;
+digital.CharacterType=CharacterType.EightCrossEightDotMatrix;
+digital.Value=”@ # $ &”;
 
 {% endhighlight %}
 

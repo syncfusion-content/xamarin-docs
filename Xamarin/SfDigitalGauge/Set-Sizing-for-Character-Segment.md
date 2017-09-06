@@ -19,14 +19,14 @@ The value of the Digital Characters is scaled by altering the height of the digi
 
 {% highlight xaml %}
 
-	<gauge:SfDigitalGauge x:Name="digitalgauge" CharacterHeight="50" />
+	<gauge:SfDigitalGauge x:Name="digital" CharacterHeight="50" />
 
 {% endhighlight %}
 
 
 {% highlight c# %}
 
-	digitalgauge.CharacterHeight = 50;
+	digital.CharacterHeight = 50;
 
 {% endhighlight  %}
 
@@ -42,13 +42,13 @@ The value of the Digital Characters is scaled by altering the width of the digit
 
 {% highlight xaml %}
 
-	<gauge:SfDigitalGauge x:Name="digitalgauge" CharacterWidth="50" />
+	<gauge:SfDigitalGauge x:Name="digital" CharacterWidth="50" />
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-	digitalgauge.CharacterWidth = 50;
+	digital.CharacterWidth = 50;
 
 {% endhighlight %}
 

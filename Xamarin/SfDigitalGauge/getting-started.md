@@ -81,13 +81,13 @@ The SfDigitalGauge control is configured entirely in C# code or by using XAML ma
 
 {% highlight xaml %}
 
-	<gauge:SfDigitalGauge x:Name="digitalgauge" />
+	<gauge:SfDigitalGauge x:Name="digital" />
 	
 {% endhighlight %}
 
 {% highlight C# %}
 
-	SfDigitalGauge digitalgauge = new SfDigitalGauge(); 
+	SfDigitalGauge digital = new SfDigitalGauge(); 
 
 {% endhighlight %}
 
@@ -101,13 +101,13 @@ SfDigitalGauge provides option to display special characters or display values t
 
 {% highlight xaml %}
 
-	<gauge:SfDigitalGauge x:Name="digitalgauge" Value="1 2 3 4" />
+	<gauge:SfDigitalGauge x:Name="digital" Value="1 2 3 4" />
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-    digitalgauge.Value =  "1 2 3 4";
+    digital.Value =  "1 2 3 4";
 
 {% endhighlight %}
 
@@ -121,14 +121,14 @@ The Digital Characters can be drawn in 4 different segments.
 
 {% highlight xaml %}
 
-	<gauge:SfDigitalGauge x:Name="digitalgauge" Value="1 2 3 4" CharacterType="SegmentSeven" />
+	<gauge:SfDigitalGauge x:Name="digital" Value="1 2 3 4" CharacterType="SegmentSeven" />
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-	digitalgauge.Value = "1 2 3 4";
-	digitalgauge.CharacterType = CharacterType.SegmentSeven;
+	digital.Value = "1 2 3 4";
+	digital.CharacterType = CharacterType.SegmentSeven;
 
 {% endhighlight %}
 
@@ -142,22 +142,22 @@ Character Height, Width and Stroke Thickness which is used to display the Charac
 
 {% highlight xaml %}
 
-	<gauge:SfDigitalGauge x:Name="digitalgauge" SegmentStrokeWidth="3" CharacterHeight="50" CharacterWidth="25" CharacterType="SegmentSeven" DisabledSegmentAlpha="30" />
+	<gauge:SfDigitalGauge x:Name="digital" SegmentStrokeWidth="3" CharacterHeight="50" CharacterWidth="25" CharacterType="SegmentSeven" DisabledSegmentAlpha="30" />
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-	SfDigitalGauge digitalgauge = new SfDigitalGauge ();
-	digitalgauge.Value ="1 2 3 4";
-	digitalgauge.CharacterHeight = 50;
-	digitalgauge.CharacterWidth= 25;
-	digitalgauge.SegmentStrokeWidth = 3;
-	digitalgauge.CharacterType = CharacterType.SegmentSeven;
-	digitalgauge.DisabledSegmentAlpha = 30;
-	digitalgauge.BackgroundColor = Color.FromRgb (235, 235, 235);
-	digitalgauge.CharacterStrokeColor = Color.FromRgb (20,108,237);
-	digitalgauge.DisabledSegmentColor = Color.FromRgb (20,108,237);
+	SfDigitalGauge digital = new SfDigitalGauge ();
+	digital.Value ="1 2 3 4";
+	digital.CharacterHeight = 50;
+	digital.CharacterWidth= 25;
+	digital.SegmentStrokeWidth = 3;
+	digital.CharacterType = CharacterType.SegmentSeven;
+	digital.DisabledSegmentAlpha = 30;
+	digital.BackgroundColor = Color.FromRgb (235, 235, 235);
+	digital.CharacterStrokeColor = Color.FromRgb (20,108,237);
+	digital.DisabledSegmentColor = Color.FromRgb (20,108,237);
 
 {% endhighlight %}
 

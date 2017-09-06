@@ -193,7 +193,7 @@ public MainPage()
 
 	InitializeComponent();	
 	navigationDrawer.DrawerWidth = 200;
-    hamburgerButton.Image = (FileImageSource)ImageSource.FromFile("hamburgericon.png");
+    hamburgerButton.Image = (FileImageSource)ImageSource.FromFile("hamburger_icon.png");
 
 }
 
@@ -272,12 +272,12 @@ public MainPage()
         {
             InitializeComponent();
             navigationDrawer.DrawerWidth = 200;
-            hamburgerButton.Image = (FileImageSource)ImageSource.FromFile("hamburgericon.png");
+            hamburgerButton.Image = (FileImageSource)ImageSource.FromFile("hamburger_icon.png");
             List<string> list = new List<string>();
             list.Add("Home");
             list.Add("Profile");
             list.Add("Inbox");
-            list.Add("Outbox");
+            list.Add("Out box");
             list.Add("Sent");
             list.Add("Draft");
             listView.ItemsSource = list;

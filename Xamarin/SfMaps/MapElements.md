@@ -220,10 +220,10 @@ To add bubbles to a map, the bubble marker setting is added to the shape file la
 
             public class BubbleData
 	    {
-		public BubbleData (string country, string countrycode,double population,int Index)
+		public BubbleData (string country, string code,double population,int Index)
 		{
 			Country = country;
-			Code = countrycode;
+			Code = code;
 			Population = population;
 			index = Index;
 		}

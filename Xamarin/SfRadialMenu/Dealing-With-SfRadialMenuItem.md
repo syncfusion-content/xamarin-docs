@@ -75,7 +75,7 @@ Public class RadialMenuPage : ContentPage
 			radialMenu.CenterButtonRadius = 26;
 			radialMenu.CenterButtonBorderColor = Color.White;
 
-			//Adding Mainmenu Items
+			//Adding Main menu Items
 
 			string[] icons = new string[] { "I", "G", "S", "T", "R", "D" };
 
@@ -170,9 +170,9 @@ Public class RadialMenuPage : ContentPage
 		radialMenu.SelectionColor = Color.Transparent;
 		radialMenu.CenterButtonBackgroundColor = Color.Transparent;
 
-		//Adding Mainmenu Items
+		//Adding Main menu Items
 
-		string[] images = new string[] { "facebook.png", "twitter.png", "whatsapp.jpeg", "youtube.png", "linkedin.png", "instagram.jpeg" };
+		string[] images = new string[] { "Facebook.png", "twitter.png", "WhatsApp.jpeg", "YouTube.png", "LinkedIn.png", "Instagram.jpeg" };
 
 		for (int i = 0; i < 6; i++)
 		{
@@ -248,7 +248,7 @@ Public class RadialMenuPage : ContentPage
 		radialMenu.CenterButtonRadius = 24;
 		radialMenu.CenterButtonBorderThickness = 3;
 
-		//Adding Mainmenu Items
+		//Adding Main menu Items
 
 		string[] text = new string[] { "Cut", "Copy", "Paste", "Clear"};
 
@@ -412,7 +412,7 @@ Public class RadialMenuPage : ContentPage
 			if (Device.OS == TargetPlatform.iOS)
 				textLabel.FontFamily = "Social";
 			else
-				textLabel.FontFamily = "socialicons.ttf#socialicons";
+				textLabel.FontFamily = "social_icons.ttf#social_icons";
 			textLabel.FontSize = 20;
 			textLabel.HorizontalTextAlignment = TextAlignment.Center;
 			textLabel.VerticalTextAlignment = TextAlignment.Center;
@@ -430,10 +430,10 @@ Public class RadialMenuPage : ContentPage
 			radialMenu.SelectionColor = Color.Transparent;
 			radialMenu.CenterButtonBackgroundColor = Color.Transparent;
 
-			//Adding Mainmenu Items
+			//Adding Main menu Items
 
 			string[] text = new string[] { "\ue700", "\ue707", "\ue704", "\ue705", "\ue706", "\ue708" };
-			string[] bgImage = new string[] { "blue.png", "red.png", "lightblue.png", "skyblue.png", "orange.png", "maroon.png" };
+			string[] Image = new string[] { "blue.png", "red.png", "light_blue.png", "skyblue.png", "orange.png", "maroon.png" };
 			for (int i = 0; i < 6; i++)
 			{
 				SfRadialMenuItem mainMenuItems = new SfRadialMenuItem();
@@ -445,14 +445,14 @@ Public class RadialMenuPage : ContentPage
 				if (Device.OS == TargetPlatform.iOS)
 					itemCustomLabel.FontFamily = "Social";
 				else
-					itemCustomLabel.FontFamily = "socialicons.ttf#socialicons";
+					itemCustomLabel.FontFamily = "social_icons.ttf#social_icons";
 				itemCustomLabel.FontSize = 20;
 				itemCustomLabel.HorizontalTextAlignment = TextAlignment.Center;
 				itemCustomLabel.VerticalTextAlignment = TextAlignment.Center;
 				itemCustomLabel.HeightRequest = 30;
 				itemCustomLabel.WidthRequest = 30;
 				Image itemBackgroundImage = new Image();
-				itemBackgroundImage.Source = (FileImageSource)ImageSource.FromFile(bgImage[i]);
+				itemBackgroundImage.Source = (FileImageSource)ImageSource.FromFile(Image[i]);
 				itemCustomView.Children.Add(itemBackgroundImage);
 				itemCustomView.Children.Add(itemCustomLabel);
 

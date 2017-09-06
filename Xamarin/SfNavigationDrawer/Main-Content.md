@@ -65,12 +65,12 @@ public MainPage()
         {
             InitializeComponent();
             navigationDrawer.DrawerWidth = 200;
-            hamburgerButton.Image = (FileImageSource)ImageSource.FromFile("hamburgericon.png");
+            hamburgerButton.Image = (FileImageSource)ImageSource.FromFile("hamburger_icon.png");
             List<string> list = new List<string>();
             list.Add("Home");
             list.Add("Profile");
             list.Add("Inbox");
-            list.Add("Outbox");
+            list.Add("Out box");
             list.Add("Sent");
             list.Add("Draft");
             listView.ItemsSource = list;            
@@ -89,8 +89,8 @@ public MainPage()
                 contentLabel.Text = "Profile";
             else if (e.SelectedItem.ToString() == "Inbox")
                 contentLabel.Text = "Inbox";
-            else if (e.SelectedItem.ToString() == "Outbox")
-                contentLabel.Text = "Outbox";
+            else if (e.SelectedItem.ToString() == "Out box")
+                contentLabel.Text = "Out box";
             else if (e.SelectedItem.ToString() == "Sent")
                 contentLabel.Text = "Sent";
             else if (e.SelectedItem.ToString() == "Draft")

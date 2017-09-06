@@ -245,7 +245,7 @@ Public class RadialMenuPage : ContentPage
 
 		//Adding RadialMenu items
 		string[] layer = new string[] { "\uE701", "\uE702", "\uEA8F", "\uE706", "\uEBAA", "\uE7E8" };
-		string[] wifi = new string[] { "\uEC3B", "\uEC3A", "\uEC39", "\uEC38"};
+		string[] Wi-Fi = new string[] { "\uEC3B", "\uEC3A", "\uEC39", "\uEC38"};
 		string[] battery = new string[] { "\uEBB8", "\uEBBC", "\uEBC0" };
 		string[] brightness = new string[] { "\uEC8A", "\uEC8A", "\uE706" };
 		string[] profile = new string[] { "\uE7ED", "\uE877", "\uEA8F" };
@@ -264,17 +264,17 @@ Public class RadialMenuPage : ContentPage
 			radialMenu.Items.Add(mainMenuItems);
 		}
 
-		// Adding wifi submenu items
+		// Adding Wi-Fi submenu items
 		for (int i = 0; i < 4; i++)
 		{
-			SfRadialMenuItem wifiSubMenuItems = new SfRadialMenuItem();
-			wifiSubMenuItems.IconFontSize = 20;
-			wifiSubMenuItems.FontIconText = wifi[i];
-			wifiSubMenuItems.ItemHeight = 30;
-			wifiSubMenuItems.ItemWidth = 40;
-			wifiSubMenuItems.TextColor = Color.White;
-			wifiSubMenuItems.IconFontFamily = "Segoe MDL2 Assets.ttf";
-			radialMenu.Items[0].Items.Add(wifiSubMenuItems);
+			SfRadialMenuItem Wi-FiSubMenuItems = new SfRadialMenuItem();
+			Wi-FiSubMenuItems.IconFontSize = 20;
+			Wi-FiSubMenuItems.FontIconText = wifi[i];
+			Wi-FiSubMenuItems.ItemHeight = 30;
+			Wi-FiSubMenuItems.ItemWidth = 40;
+			Wi-FiSubMenuItems.TextColor = Color.White;
+			Wi-FiSubMenuItems.IconFontFamily = "Segoe MDL2 Assets.ttf";
+			radialMenu.Items[0].Items.Add(Wi-FiSubMenuItems);
 		}
 
 		//Adding bluetooth submenu items
@@ -282,7 +282,7 @@ Public class RadialMenuPage : ContentPage
 		{
 			SfRadialMenuItem bluetoothSubMenuItems = new SfRadialMenuItem();
 			bluetoothSubMenuItems.IconFontSize = 20;
-			bluetoothSubMenuItems.FontIconText = wifi[i];
+			bluetoothSubMenuItems.FontIconText = Wi-Fi[i];
 			bluetoothSubMenuItems.ItemHeight = 30;
 			bluetoothSubMenuItems.ItemWidth = 40;
 			bluetoothSubMenuItems.TextColor = Color.White;

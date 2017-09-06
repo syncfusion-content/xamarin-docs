@@ -656,7 +656,7 @@ public class CustomAggregate : ISummaryAggregate
     {
     }
     public double StdDev { get; set; }
-    public Action<System.Collections.IEnumerable, string, System.ComponentModel.PropertyDescriptor> CalculateAggregateFunc()
+    public Action<System.Collections.IEnumerable, string, PropertyInfo> CalculateAggregateFunc()
     {
         return (items, property, pd) =>
         {
@@ -728,4 +728,4 @@ dataGrid.CaptionSummaryRow = summaryRow;
 
 ![](SfDataGrid_images/Summary_img16.png)
 
-You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SummaryDemo610629184) .
+You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SummaryDemo-142807621) .

@@ -29,13 +29,13 @@ The seven segment type is capable of displaying numbers and few upper case lette
 
 {% highlight xaml %}
 
-	<gauge:SfDigitalGauge x:Name="digitalgauge"  CharacterType="SegmentSeven" />
+	<gauge:SfDigitalGauge x:Name="digital"  CharacterType="SegmentSeven" />
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-	digitalgauge.CharacterType = CharacterType.SegmentSeven;
+	digital.CharacterType = CharacterType.SegmentSeven;
 
 {% endhighlight %}
 
@@ -49,13 +49,13 @@ The fourteen segment type is capable of displaying numbers, alphabets efficientl
 
 {% highlight xaml %}
 
-	<gauge:SfDigitalGauge x:Name="digitalgauge" CharacterType="SegmentFourteen" />
+	<gauge:SfDigitalGauge x:Name="digital" CharacterType="SegmentFourteen" />
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-	digitalgauge.CharacterType = CharacterType.SegmentFourteen;
+	digital.CharacterType = CharacterType.SegmentFourteen;
 
 {% endhighlight %}
 
@@ -71,13 +71,13 @@ The sixteen segment type is capable of displaying numbers, alphabets with clear 
 
 {% highlight xaml %}
 
-	<gauge:SfDigitalGauge x:Name="digitalgauge"  CharacterType="SegmentSixteen" />
+	<gauge:SfDigitalGauge x:Name="digital"  CharacterType="SegmentSixteen" />
 
 {% endhighlight %}
  
 {% highlight c# %}
 
-	digitalgauge.CharacterType = CharacterType.SegmentSixteen;
+	digital.CharacterType = CharacterType.SegmentSixteen;
 
 {% endhighlight %}
 
@@ -91,13 +91,13 @@ The dot matrix segment type is capable of displaying numbers, alphabets and any 
 
 {% highlight xaml %}
 
-	<gauge:SfDigitalGauge x:Name="digitalgauge"  CharacterType="EightCrossEightDotMatrix"  />
+	<gauge:SfDigitalGauge x:Name="digital"  CharacterType="EightCrossEightDotMatrix"  />
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-	digitalgauge.CharacterType = CharacterType.EightCrossEightDotMatrix;
+	digital.CharacterType = CharacterType.EightCrossEightDotMatrix;
 
 {% endhighlight%}
 

@@ -27,15 +27,15 @@ documentation: ug
 
 {% highlight xaml %}
  
-     <gauge:SfCircularGauge x:Name="circulargauge" GaugeType="East"/> 
+     <gauge:SfCircularGauge x:Name="circular" GaugeType="East"/> 
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfCircularGauge circulargauge = new SfCircularGauge();
-    Circulargauge.GaugeType=GaugeType.East;
-    this.content=circulargauge;
+    SfCircularGauge circular = new SfCircularGauge();
+    circular.GaugeType=GaugeType.East;
+    this.content=circular;
 
 {% endhighlight %}
 

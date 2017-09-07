@@ -437,7 +437,7 @@ Public class RadialMenuPage : ContentPage
 			customView.Children.Add(backgroundImage);
 			customView.Children.Add(textLabel);
 
-			//Creating CenterButtonbackView
+			//Creating CenterButtonBackView
 			Grid customBackView = new Grid();
 			Label backTextLabel = new Label();
 			backTextLabel.Text = "\ue72B";

@@ -847,15 +847,15 @@ chart.Series.Add(splineSeries);
 
 ## Spline Types
 
-SplineType allows you to change the Spline curve in series. 
-The following types are used in Spline series as 
+['SplineType'](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineSeries~SplineType.html) allows you to change the spline curve in series. 
+The following types are used in [`SplineSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineSeries.html) as 
 
  * Natural
  * Monotonic
  * Cardinal
  * Clamped
 
-By default SplineType value is Natural.
+By default ['SplineType'](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineType.html) value is Natural.
 
 The following code shows how to set the SplineType value as Cardinal
 

@@ -845,7 +845,7 @@ chart.Series.Add(splineSeries);
 
 ![](charttypes_images/charttypes_img13.png)
 
-## Spline Types
+# SplineSeries Types
 
 [`SplineType`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineSeries~SplineType.html) allows you to change the spline curve in series. 
 The following types are used in [`SplineSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineSeries.html) as 

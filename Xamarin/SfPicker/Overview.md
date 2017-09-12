@@ -1,29 +1,87 @@
 ---
-
 layout: post
 title: Overview of Syncfusion Picker control for Xamarin.Forms
 description: Overview and key features of Picker control
 platform: Xamarin
 control: Picker
 documentation: ug
-
 ---
+
 # Overview
+
+## Description
 
 The picker control allows users to pick an item among a list of items that can be customized with custom view. This control can be opened as dialog. Its rich feature set includes functionalities like data binding, multi column, header/footer, custom view on header/footer and default validation buttons.
 
-![](images/overview.png)
+## Feature comparison across iOS, Andriod and UWP
 
-## Key Features
+<table>
+<tr>
+<th>Features</th>
+<th>Xamarin.Forms<br/>(Android, iOS and UWP)</th>
+<th>Xamarin.Android</th>
+<th>Xamarin.iOS</th>
+</tr>
+<tr>
+<td>Show Picker in Dialog</td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td>Selection</td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td>Header Customization</td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td>Footer Customization</td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td>Item Customization</td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td>Multi Column Support</td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td>Customize each column width</td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td>Column Header support</td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td>Column Header Customization</td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+</table>
 
-* `Multi Column`
+Please find the SfPicker color selection sample
 
-* `Header view`
+![](images/forms_picker.png)
 
-* `Footer view with default buttons`
+Please find the SfPicker multicolumn sample
 
-* `Template support`
-
-* `RTL support.`
-
-
+![](images/multicolumn.png)

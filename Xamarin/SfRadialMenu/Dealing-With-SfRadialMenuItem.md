@@ -242,7 +242,7 @@ Public class RadialMenuPage : ContentPage
 		InitializeComponent();
 		SfRadialMenu radialMenu = new SfRadialMenu();
 
-		//Initilizing RadialMenu's properties
+		//Initializing RadialMenu's properties
 		radialMenu.CenterButtonText = "Click";
 		radialMenu.CenterButtonFontSize = 12;
 		radialMenu.CenterButtonRadius = 24;

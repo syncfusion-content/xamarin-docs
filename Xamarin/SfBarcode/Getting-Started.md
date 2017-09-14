@@ -84,7 +84,7 @@ Create an instance of `SfBarcodeRenderer` in MainPage constructor in of the Wind
     {
     ...
     new SfBarcodeRenderer();
-    Initializecomponent();
+    InitializeComponent();
     ...
     }
 

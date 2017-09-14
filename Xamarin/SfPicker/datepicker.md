@@ -431,12 +431,12 @@ date.IsOpen = !date.IsOpen;
 {% endhighlight %}
 {% endtabs %}
 
-Please find the below screen shot using the above codes.
+Screen shot for the above code.
 
 ![](images/datepicker_img1.jpeg)
 
 
 We have attached DatePicker sample for reference. Please download the sample from the following link.
 
-Sample link: [DatePicker](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DatePicker1441640702# "")
+Sample link: [DatePicker](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DatePicker1441640702)
 

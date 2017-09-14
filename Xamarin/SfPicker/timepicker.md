@@ -262,10 +262,10 @@ date.IsOpen = !date.IsOpen;
 {% endtabs %}
 
 
-Please find the below screen shot using the above codes.
+Screen shot for the above codes.
 
-![http://www.syncfusion.com/uploads/user/kb/xamarin/xamarin-9878/xamarin-9878_img1.png](timepicker_images/timepicker_img1.jpeg)
+![](images/timepicker_img1.jpeg)
 
 We have attached TimePicker sample for reference. Please download the sample from the following link.
 
-Sample link: [TimePicker](http://www.syncfusion.com/downloads/support/directtrac/general/ze/TimePicker-2129220014.zip# "")
+Sample link: [TimePicker](http://www.syncfusion.com/downloads/support/directtrac/general/ze/TimePicker-2129220014.zip)

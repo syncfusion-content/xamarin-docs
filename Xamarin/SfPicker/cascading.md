@@ -312,12 +312,12 @@ picker.IsOpen = true;
 {% endhighlight %}
 {% endtabs %}
 
-Please find the below screen shot using the above codes.
+Screen shot for the above codes.
 
 ![](images/cascading_img1.jpeg)
 
 
 We have attached Cascading sample for reference. Please download the sample from the following link.
 
-Sample link: [CascadingSample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CascadingPicker-212266727# "")
+Sample link: [CascadingSample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CascadingPicker-212266727)
 

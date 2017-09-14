@@ -9,8 +9,6 @@ documentation: ug
 
 # Overview
 
-## Description
-
 The picker control allows users to pick an item among a list of items that can be customized with custom view. This control can be opened as dialog. Its rich feature set includes functionalities like data binding, multi column, header/footer, custom view on header/footer and default validation buttons.
 
 ## Feature comparison across iOS, Andriod and UWP
@@ -78,10 +76,10 @@ The picker control allows users to pick an item among a list of items that can b
 </tr>
 </table>
 
-Please find the SfPicker color selection sample
+Please find the screen shot of SfPicker color selection
 
 ![](images/forms_picker.png)
 
-Please find the SfPicker multicolumn sample
+Please find the screen shot of SfPicker multicolumn
 
 ![](images/multicolumn.png)

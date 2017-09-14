@@ -500,12 +500,12 @@ date.IsOpen = !date.IsOpen;
 {% endhighlight %}
 {% endtabs %}
 
-Please find the below screen shot using the above codes.
+Screen shot for the above codes.
 
 ![](images/datetimepicker_img1.jpeg)
 
 
 We have attached DateTimePicker sample for reference. Please download the sample from the following link.
 
-Sample link: [DateTimePicker](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DatePicker1441640702# "")
+Sample link: [DateTimePicker](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DatePicker1441640702)
 

@@ -185,7 +185,7 @@ e.ColumnWidth = 130;
 
 We have attached sample for reference. Please download the below sample.
 
-Sample link: [DateTimePicker](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DateTimePicker589676073# "")
+Sample link: [DateTimePicker](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DateTimePicker589676073)
 
 ## Add Caption
 
@@ -196,7 +196,7 @@ If a string type is assigned in `SfPicker.ColumnHeaderText`, that string will be
 
 To assign the collection in `SfPicker.ColumnHeaderText`, SfPicker column header update based on index with value on collection.
 
-The below code illustrate assign the 
+The below code illustrate assign the ColumnHeaderText for SfPicker
 
 {% tabs %}
 {% highlight c# %}
@@ -526,7 +526,7 @@ We have prepared cascading sample for change the SfPicker background color when 
         }
     }
 
-*ColorInfo:*
+ColorInfo:
 
 public class ColorInfo
 
@@ -572,7 +572,7 @@ SelectedColor = "Yellow";
 
 }
 
-*PickerHelper:*
+PickerHelper:
 
 public static class PickerHelper
 
@@ -617,9 +617,10 @@ return colors[color.ToString()];
 
 {% endtabs %}
 
+Screen shot for the above code
 
 ![](images/casecade.png)
 
 We have attached sample for reference. please download the sample from the below link.
 
-Sample link:[Cascadingcolor](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Cascading-527874888# "")
+Sample link:[Cascadingcolor](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Cascading-527874888)

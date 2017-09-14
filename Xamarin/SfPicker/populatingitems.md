@@ -186,9 +186,11 @@ ItemsSource="{Binding Dates}" />
 {% endhighlight %}
 {% endtabs %}
 
-Please refer MultiColumn sample from the following link
+MultiColumn sample from the following link
 
-Sample link: [MultiColumn](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MultiColumnSample1888887988# "")
+Sample link: [MultiColumn](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MultiColumnSample798010799)
+
+Screen shot for the above code.
 
 ![](images/multicolumn.png)
 
@@ -596,7 +598,7 @@ this.BindingContext = this;
 {% endhighlight %}
 {% endtabs %}
 
-Output screen shot for the above code.
+Screen shot for the above code.
 
 ![](images/populatingitems_img2.jpeg)
 

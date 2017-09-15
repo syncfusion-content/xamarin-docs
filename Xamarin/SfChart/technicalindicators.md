@@ -11,7 +11,7 @@ documentation: ug
 
 Technical indicators are the base of technical analysis, which are used to determine the future market trends. Technical indicators are security analysis methodology for forecasting the direction of prices through the study of past market data, primarily price and volume. 
 
-### Types of Technical Indicator:
+### Types of Technical Indicator
 
 * [`AverageTrueIndicator`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.AverageTrueIndicator.html)
 * [`SimpleMovingAverageIndicator`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SimpleMovingAverageIndicator.html)

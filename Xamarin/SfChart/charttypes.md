@@ -891,17 +891,13 @@ chart.Series.Add(splineSeries);
 
 {% endtabs %}
 
-Cardinal 
-
-![](charttypes_images/charttypes_img13.png)
-
 Monotonic
 
-![](charttypes_images/charttypes_img13.png)
+![](charttypes_images/MonotonicSplineType.png)
 
 Clamped
 
-![](charttypes_images/charttypes_img13.png)
+![](charttypes_images/ClampedSplineType.png)
 
 ## StepLine Chart
 

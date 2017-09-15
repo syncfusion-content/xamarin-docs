@@ -9,9 +9,7 @@ documentation: ug
 
 # Technical Indicators
 
-Technical indicators are the base of technical analysis, which are used to determine the future market trends. Technical indicators are security analysis methodology for forecasting the direction of prices through the study of past market data, primarily price and volume. 
-
-### Types of Technical Indicator
+Types of Technical Indicators are,
 
 * [`AverageTrueIndicator`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.AverageTrueIndicator.html)
 * [`SimpleMovingAverageIndicator`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SimpleMovingAverageIndicator.html)
@@ -24,8 +22,7 @@ Technical indicators are the base of technical analysis, which are used to deter
 * [`BollingerBandIndicator`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.BollingerBandIndicator.html)
 * [`MACDIndicator`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.MACDIndicator.html)
 
-
-## Adding Technical Indicators to the Chart
+## Adding technical indicators to the chart
 
 The following steps illustrates how to add the technical indicators to the chart.
 

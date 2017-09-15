@@ -714,6 +714,70 @@ chart.PrimaryAxis = categoryAxis;
 
 ![](axis_images/axis_img28.png)
 
+### Axis line customization
+
+[`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html) provides support to customize the style of the axis line by defining the [`AxisLineStyle`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~AxisLineStyle.html) property as shown in the below code snippet.
+
+* [`StrokeColor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLineStyle~StrokeColor.html) – used to change the stroke color of axis line.
+* [`StrokeWidth`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLineStyle~StrokeWidth.html) – used to change the stroke width of axis line.
+* [`StrokeDashArray`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLineStyle~StrokeDashArray.html) - used to render axis line series with dashes.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+
+    <chart:DateTimeAxis>
+
+        <chart:DateTimeAxis.AxisLineStyle>
+
+            <chart:ChartLineStyle StrokeWidth ="10" StrokeColor="Red">
+
+                <chart:ChartLineStyle.StrokeDashArray>
+
+                    <x:Array Type="{x:Type x:Double}">
+
+                        <sys:Double>5</sys:Double>
+
+                        <sys:Double>6</sys:Double>
+
+                    </x:Array>
+
+                </chart:ChartLineStyle.StrokeDashArray>
+
+            </chart:ChartLineStyle>
+
+        </chart:DateTimeAxis.AxisLineStyle>
+
+    </chart:DateTimeAxis>
+
+</chart:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+CategoryAxis primaryAxis = new CategoryAxis();
+
+ChartLineStyle axisLineStyle = new ChartLineStyle();
+
+axisLineStyle.StrokeColor = Color.Red;
+
+axisLineStyle.StrokeWidth = 10;
+
+axisLineStyle.StrokeDashArray = new double[2] { 5,6 };
+
+primaryAxis.AxisLineStyle = axisLineStyle;
+
+chart.PrimaryAxis = primaryAxis;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](axis_images/axis_img29.png)
+
 ### Label customization
 
 The [`LabelStyle`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~LabelStyle.html) property of axis provides options to customize the font-family, color, size and font-weight of axis labels. The axis labels can be customized using following properties:

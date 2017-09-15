@@ -39,7 +39,7 @@ A needle pointer contains two parts, the needle and the knob that can be placed 
 
 {% highlight c# %}
 
-    SfCircularGauge circulargauge = new SfCircularGauge();
+    SfCircularGauge circular = new SfCircularGauge();
     ObservableCollection<Scale> scales = new ObservableCollection<Scale>();
     Scale scale=new Scale();
     List<Pointer> pointers = new List<Pointer>();
@@ -54,7 +54,7 @@ A needle pointer contains two parts, the needle and the knob that can be placed 
     pointers.Add(needlePointer);
     scale.Pointers = pointers;
     circularGauge.Scales = scales;
-    this.Content=circularGauge;
+    this.Content=circular;
 
 {% endhighlight %}
 
@@ -86,7 +86,7 @@ The `RangePointer` in the scale can be placed inside the scale or outside the sc
 
 {% highlight c# %}
 
-    SfCircularGauge circulargauge = new SfCircularGauge();
+    SfCircularGauge circular = new SfCircularGauge();
     ObservableCollection<Scale> scales = new ObservableCollection<Scale>();
     Scale scale=new Scale();
     List<Pointer> pointers = new List<Pointer>();
@@ -97,7 +97,7 @@ The `RangePointer` in the scale can be placed inside the scale or outside the sc
     rangePointer.Offset=0.3F;
     pointers.Add(rangePointer);
     scale.Pointers = pointers;
-    circularGauge.Scales = scales;
+    circular.Scales = scales;
     this.Content=circularGauge;
 
 {% endhighlight %}

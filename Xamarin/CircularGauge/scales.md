@@ -44,8 +44,8 @@ A range is a visual element which begins and ends at specified values within a `
     scale.RimColor = Color.Gray;
     scale.MinorTicksPerInterval = 0;
     scales.Add(scale);
-    circulargauge.Scales = scales;  
-    this.Content= circulargauge;
+    circular.Scales = scales;  
+    this.Content= circular;
 
 {% endhighlight %}
 
@@ -77,8 +77,8 @@ ShowTicks property is Boolean property that enables or disables the Tick feature
     Scale scale = new Scale();
     scale.ShowTicks = False;
     scales.Add(scale);
-    circulargauge.Scales = scales;  
-    this.Content= circulargauge;
+    circular.Scales = scales;  
+    this.Content= circular;
 {% endhighlight %}
     
 {% endtabs %}

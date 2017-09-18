@@ -169,7 +169,7 @@ Here, the following steps illustrates how to create and configure a barcode.
 
 {% highlight c# %}
     
-    barcode.Symbology = BarcodeSymboltype.QRCode;
+    barcode.Symbology = BarcodeSymbolType.QRCode;
 
 {% endhighlight %}
 {% endtabs %}
@@ -219,7 +219,7 @@ Here, the following steps illustrates how to create and configure a barcode.
 
     <syncfusion:SfBarcode.SymbologySettings>
 
-    <syncfusion:QRcodeSettings XDimension="6"/> 
+    <syncfusion:QRBarcodeSettings XDimension="6"/> 
 
     </syncfusion:SfBarcode.SymbologySettings>
 
@@ -240,9 +240,9 @@ Here, the following steps illustrates how to create and configure a barcode.
 
     barcode.Text = "http://www.syncfusion.com"; 
 
-    barcode.Symbology = BarcodeSymboltype.QRCode;
+    barcode.Symbology = BarcodeSymbolType.QRCode;
 
-    QRcodeSettings settings = new QRcodeSettings(); 
+    QRBarcodeSettings settings = new QRBarcodeSettings(); 
 
     settings.XDimension = 6; 
 

@@ -43,7 +43,7 @@ public class PickerCascading:INotifyPropertyChanged
 
 /// <summary>
 
-/// Area is the acutal DataSource for SfPicker control which will holds the collection of Country and State
+/// Area is the actual DataSource for SfPicker control which will holds the collection of Country and State
 
 /// </summary>
 
@@ -61,7 +61,7 @@ private ObservableCollection<object> State { get; set; }
 
 /// <summary>
 
-/// Headers api is holds the column name for every column in cascading picker
+/// Headers API is holds the column name for every column in cascading picker
 
 /// </summary>
 
@@ -133,7 +133,7 @@ SelectedArea = new ObservableCollection<object>() { "UK", "London" };
 
 }
 
-//Hooked when changes occured 
+//Hooked when changes occurred 
 
 public void RaisePropertyChanged(string name)
 
@@ -183,7 +183,7 @@ public class PickerCascading:INotifyPropertyChanged
 
 /// <summary>
 
-/// Headers api is holds the column name for every column in cascading picker
+/// Headers API is holds the column name for every column in cascading picker
 
 /// </summary>
 

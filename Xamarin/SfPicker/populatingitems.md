@@ -59,9 +59,9 @@ ItemsSource="{Binding Colors}" />
 
 {% highlight c# %}
 
-ColorInfo colorinfo = new ColorInfo();
+ColorInfo info = new ColorInfo();
 
-picker.ItemsSource = colorinfo.Colors;
+picker.ItemsSource = info.Colors;
 
 {% endhighlight %}
 {% endtabs %}
@@ -312,7 +312,7 @@ Unselected item text color can be customized by setting `SfPicker.UnSelectedItem
 
 <syncfusion:SfPicker
 
-x:Name="sfpicker"
+x:Name="picker"
 
 ItemsSource="{Binding Colors}"
 
@@ -340,7 +340,7 @@ Unselected item text FontFamily can be customized by setting `SfPicker.UnSelecte
 
 <syncfusion:SfPicker
 
-x:Name="sfpicker"
+x:Name="picker"
 
 ItemsSource="{Binding Colors}"
 
@@ -364,7 +364,7 @@ Unselected item text FontSize can be customized by setting `SfPicker.UnSelectedI
 
 <syncfusion:SfPicker
 
-x:Name="sfpicker"
+x:Name="picker"
 
 ItemsSource="{Binding Colors}"
 
@@ -388,7 +388,7 @@ Unselected item text FontAttribute can be customized by setting `SfPicker.UnSele
 
 <syncfusion:SfPicker
 
-x:Name="sfpicker"
+x:Name="picker"
 
 ItemsSource="{Binding Colors}"
 

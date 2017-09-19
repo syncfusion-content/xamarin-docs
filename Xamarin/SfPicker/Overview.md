@@ -11,7 +11,7 @@ documentation: ug
 
 The picker control allows users to pick an item among a list of items that can be customized with custom view. This control can be opened as dialog. Its rich feature set includes functionalities like data binding, multi column, header/footer, custom view on header/footer and default validation buttons.
 
-## Feature comparison across iOS, Andriod and UWP
+## Feature comparison across iOS, Android and UWP
 
 <table>
 <tr>

@@ -327,8 +327,6 @@ chart.Series.Add(lineSeries);
 
 {% endtabs %}
 
-N> This ShowTrackballInfo property is common for all types of cartesian series.
-
 ![](trackball_images/trackball_img6.png)
 
 ## Label Template

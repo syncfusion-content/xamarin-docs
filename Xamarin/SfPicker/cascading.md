@@ -83,7 +83,7 @@ public object Selected
 
 get { return _selected; }
 
-set { _selected = value; RaisePropertyChanged("SelectedArea"); }
+set { _selected = value; RaisePropertyChanged("Selected"); }
 
 }
 
@@ -129,7 +129,7 @@ Area.Add(Country);
 
 Area.Add(State);
 
-SelectedArea = new ObservableCollection<object>() { "UK", "London" };
+Selected = new ObservableCollection<object>() { "UK", "London" };
 
 }
 
@@ -265,7 +265,7 @@ PickerMode="Dialog"
 
 PickerWidth="280"
 
-SelectedItem="{Binding SelectedArea}"
+SelectedItem="{Binding Selected}"
 
 SelectionChanged="picker_SelectionChanged"
 

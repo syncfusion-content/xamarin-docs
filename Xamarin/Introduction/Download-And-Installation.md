@@ -9,207 +9,228 @@ documentation: ug
 
 # Download and Installation
 
-## Install from Xamarin Component Store
+## Mac
 
-Refer to [this](https://developer.xamarin.com/guides/cross-platform/xamarin-studio/components_walkthrough/) article to know how to add a Xamarin Component Store component to Xamarin.Forms application.
+## Install NuGet from NuGet Package Manager
 
-## Install Syncfusion’s NuGet package in Xamarin Studio/ Visual Studio for MAC
+### Configuring and Installing Syncfusion NuGet Packages in Visual Studio
 
-Following are the step by step instructions for configuring Syncfusion NuGet packages within Xamarin studio,
+Syncfusion Xamarin NuGet packages are available [`here`](http://nuget.syncfusion.com/package/xamarin).
 
-1. Click on the drop-down tool at the right corner of the Packages item in your project, then select Add Packages…
+Following are the step by step instructions for configuring Syncfusion NuGet packages within Visual studio,
 
-   ![](images/img1.png)
+1. Right click on the Packages folder in the project and then select Add Packages…
+
+![](images/img1.png)
 
 2. Next, in the drop-down that appears in the left corner of Add Packages window, select Configure Sources.
 
-   ![](images/img2.png)
+![](images/img2.png)
 
-3. Next, click on the Add button in the window that appears now. Enter the following details in the Add Package Source dialog.
+3.	Next, click on the Add button in the window that appears now. Enter the following details in the Add Package Source dialog.
 
-    *	**Name** – enter the name (For Ex., Syncfusion)
-    *	**URL** – enter the following URL - http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin/
+ 	* **Name** - enter the name (For Ex., Syncfusion Xamarin Packages)
+    * **Location** - enter the following URL - http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin/
 
     Now click Add Source and then click OK.
 
-    N> If you have already downloaded the NuGet package from Syncfusion website, enter the local path in the **URL** field. 
+    N> If you have already downloaded the NuGet package from Syncfusion website, enter the local path in the **Location** field.
 
-    ![](images/img3.png)
+![](images/img3.png)
 
-4. Next, open Add Packages window by following step 1 and 2, then select Syncfusion (The package name specified in Step 3) as the source from the drop-down that appears at the top-left corner of the window.  You can now select from the list of Syncfusion’s components displayed in the window.
+4.	Next, open Add Packages window by following step 1, then select Syncfusion Xamarin Packages (The package name specified in Step 3) as the source from the drop-down that appears at the top-left corner of the window.  You can now select from the list of Syncfusion’s components displayed in the window.
 
-   ![](images/img4.png)
+5. You need to do this in all the projects such as PCL, XForms.Droid, XForms.iOS.
 
-## Configuring Syncfusion NuGet Packages in Visual Studio 
-
-Syncfusion Xamarin NuGet packages are available [here](http://nuget.syncfusion.com/package/xamarin).
-
-### NuGet Configuration  
-
-The steps to install the Syncfusion Xamarin NuGet Packages in Visual Studio are as follows,
-
-1. In Visual Studio, navigate to `Tools | NuGet Package Manager | Package Manager Settings`, the options dialog will appear on the screen as shows below,
-
-   ![](images/NuGetConfig1.jpeg)
-
-2. Select `NuGet Package Manager | Package Sources` and click `Add` button to add the `Package Name` and `Package Source` of Syncfusion NuGet Packages.    
-
-   **Name**: Name of the package that listed in available package sources  
-   **Source**: Syncfusion Xamarin NuGet Package feed URL 
-   [http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin/](http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin/)
-    
-   ![](images/NuGetConfig2.jpeg)
-
-   N> The `Source` text box in the above image denotes the location of the NuGet packages and the `Name` section, allows you to provide a unique name for NuGet Packages Source.
-   
-I> Syncfusion other platforms NuGet packages feed links are available [here](http://nuget.syncfusion.com/)
-
-### NuGet Installation
-
-Syncfusion Xamarin NuGet can install once configured the package source. The NuGet installation steps as below,
-
-1. Once configured the Package source with Syncfusion NuGet Packages, right click on project and choose `Manage NuGet Packages | Online | <Package Source Name>`.
-
-   ![](images/NuGetConfig3.jpeg)
-
-2. The NuGet Packages are listed which are available in package source location. Install the required packages to your application by clicking `Install` button.
-
-   N> NuGet packages can be install directly through the **command line** (Package Manager Console). Further details click [here](http://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-install-and-configuration#install-from-package-manager-console).
+![](images/img4.png)
 
 ### Updating a NuGet Package
 
-Using the `Manage NuGet Packages` in Visual Studio, NuGet packages can be update.
- 
-1. Right click on Project and Navigate to the `Manage NuGet Packages` and click on the `Updates` tab to check for updates.
+Right click on the Packages folder in the individual projects, then select Update. This will update the NuGet package to the available latest version. You can double click Add Packages and choose the specific version for the package for which you want to update. You need to do this in all the projects such as PCL, XForms.Droid, XForms.iOS.
 
-2. Select the `Updates -> <Syncfusion Package Source>`. Refer to the following screenshot for more information.
+![](images/img5.png)
 
-   ![](images/NuGetConfig4.jpeg)
+## Download directly from website
 
-3. If there is a new version of NuGet you will see it in the list of available updates.
+You can also download the complete Xamarin.Forms component from [`here`](https://www.syncfusion.com/downloads/latest-version).
 
-4. Select NuGet Package in the list and click `Update`. When the update is complete, close and re-open all open instances of Visual Studio.
+**MAC Installer (pkg)**
 
-   N> By clicking `Update All` button, all NuGet packages are getting update. When the update is complete, close and re-open all open instances of Visual Studio.
+The following procedure illustrates how to install the installer of Syncfusion Xamarin components in Mac.
+
+1. Double-click the Syncfusion Essential Studio for Xamarin Setup file. The Self-Extractor wizard opens, click continue.
+2. After reading the terms in Software License Agreement, click continue.
+3. Click Agree in the dialog box that appears to continue the installation.
+4. Select a destination to install the software and click continue.
+5. Choose the installation location and samples installation.
+6. To install it in the displayed default location, click Install.
+7. Click Close. The NuGet and samples locations are launched automatically.
 
 
-## Configuring Syncfusion NuGet packages from command line in Linux/MAC
+### Explore the libraries package
+
+You can find the Syncfusion libraries, samples and NuGet when extracting the downloaded zip package or from the installed location in Mac.
+
+{Essential studio installed location}\Syncfusion\Essential Studio\15.3.0.29\Xamarin
+
+For example,
+
+* **lib** - /Users/labuser/Documents/Syncfusion/15.3.0.29/Xamarin/lib
+* **sample** - /Users/labuser/Documents/Syncfusion/15.3.0.29/sample
+* **nuget** - /Users/labuser/Documents/Syncfusion/15.3.0.29/nuget
+
+For configuring this NuGet, please refer [`this`](https://help.syncfusion.com/xamarin/introduction/download-and-installation#configuring-and-installing-syncfusion-nuget-packages-in-visual-studio) section.
+
+### Add reference to the project
+
+You can then add the assembly references to the respective projects such as PCL, XForms.Droid, XForms.iOS. You can find the dependencies for each control from this [`link`](https://help.syncfusion.com/xamarin/introduction/control-dependencies).
+
+I> After adding the reference, currently, an additional step is required for iOS and UWP projects. For example, if we are using SfKanban, we need to call the Init method of SfKanbanRenderer as shown in this [`KB article`](https://www.syncfusion.com/kb/7171).
+
+## Install NuGet from command line
 
 ### NuGet Configuration
 
-1.	Download the latest NuGet executable from [here](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).  
- 
-2.	Open the downloaded executable location in command window and run the following command,
+1. Download the latest NuGet executable from [`here`](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
 
-    mono nuget.exe Sources Add –Name [Source name] –Source [source location]
+2. Open the downloaded executable location in command window and run the following command,
 
-      Ex: mono nuget.exe Add –Name “Syncfusion Source” –Source “http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin/"
-                                                                                  
-3.	Once the Source gets added successfully the confirmation message will be shown like below.
+   mono nuget.exe Sources Add –Name [Source name] –Source [source location]
 
-    For Linux OS :
+   Ex: mono nuget.exe Sources Add –Name “Syncfusion Xamarin Packages” -Source “http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin/”
 
-    ![](images/NuGetConfig5.jpeg)
+3. Once the Source gets added successfully the confirmation message will be shown like below.
 
-    For MAC OS :
-     
-    ![](images/NuGetConfig6.jpeg)
-     
+![](images/img6.jpg)
+
 ### NuGet Installation
 
 Once the NuGet source has been added, then install the NuGet package which is available in that source by using following command.
 
-mono nuget.exe install [Package name] 
+mono nuget.exe install [Package name]
 
-For Ex: mono nuget.exe install “Syncfusion.Xamarin.Calculate" 
-     
-For Linux OS :
+For Ex: mono nuget.exe install “Syncfusion.Xamarin.Calculate” 
 
-![](images/NuGetConfig7.jpeg)
+![](images/img7.jpg)
 
-For MAC OS :
+## Windows
 
-![](images/NuGetConfig8.jpeg)
+## Install NuGet from NuGet Package Manager
 
+### Configuring and Installing Syncfusion NuGet Packages in Visual Studio
 
-## Download directly from Website
+Syncfusion Xamarin NuGet packages are available [`here`](http://nuget.syncfusion.com/package/xamarin).
 
-You can also download the complete Xamarin.Forms component from [here](http://www.syncfusion.com/products/xamarin). You may be asked to choose the windows installer or zip file to download.
+**NuGet Configuration**
 
-**Windows** **Installer** **(****exe****)**
+The steps to install the Syncfusion Xamarin NuGet Packages in Visual Studio are as follows,
+
+1. In Visual Studio, navigate to Tools | NuGet Package Manager | Package Manager Settings, the options dialog will appear on the screen as shows below,
+
+![](images/img8.png)
+
+2. Select NuGet Package Manager | Package Sources and click Add button to add the Package Name and Package Source of Syncfusion NuGet Packages.
+
+   **Name** - Name of the package that listed in available package sources 
+   **Source** - Syncfusion Xamarin NuGet Package feed URL - http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin/ 
+   
+   N> If you have already downloaded the NuGet package from Syncfusion website, enter the local path in the **URL** field.
+
+![](images/img9.png)
+
+**NuGet Installation**
+
+Syncfusion Xamarin NuGet can install once configured the package source. The NuGet installation steps as below,
+
+1.	Once configured the Package source with Syncfusion NuGet Packages, right click on project and choose Manage NuGet Packages and select Syncfusion Xamarin Packages from Package source.
+
+![](images/img10.png)
+
+2.	The NuGet Packages are listed which are available in package source location. Install the required packages to your application by clicking Install button.
+
+3.	Repeat the above steps in PCL, XForms.Droid, XForms.iOS, XForms.UWP projects.  
+
+### Updating a NuGet Package
+
+Using the Manage NuGet Packages in Visual Studio, NuGet packages can be updated.
+
+1.	Right click on Project and Navigate to the Manage NuGet Packages and click on the Updates tab to check for updates.
+
+2.	Select the Updates -> < Syncfusion Xamarin Packages >. Refer to the following screenshot for more information.
+
+![](images/img11.png)
+
+3.	If there is a new version of NuGet you will see it in the list of available updates.
+
+4.	Select NuGet Package in the list and click Update. 
+
+## Download directly from website
+
+You can also download the complete Xamarin.Forms component from [`here`](https://www.syncfusion.com/downloads/latest-version). You may be asked to choose the windows installer or zip file to download.
+
+**Windows Installer (exe)**
 
 The following procedure illustrates how to install the installer of Syncfusion Xamarin components in Windows.
 
-1. Double-click the Syncfusion Essential Studio for Xamarin Setup file. The Self-Extractor wizard opens and extracts the package automatically.
-2. Enter User Name, Organization and Unlock Key in the corresponding text boxes provided.
-3. Click Next.
-4. After reading the terms, click "I accept the terms and conditions" check box.
-5. Click Next and choose the installation location and samples installation.
-6. To install it in the displayed default location, click Install.
-7. Click Finish. The library and samples locations are launched automatically.
+1. Double-click the Syncfusion Essential Studio for Xamarin Setup file. The Self-Extractor wizard opens and extracts the package automatically.
+2. Enter User Name, Organization and Unlock Key in the corresponding text boxes provided.
+3. Click Next.
+4. After reading the terms, click “I accept the terms and conditions” check box.
+5. Click Next and choose the installation location and samples installation.
+6. To install it in the displayed default location, click Install.
+7. Click Finish. The **NuGet and samples** locations are launched automatically.
 
-## Exploring the package
+## Explore the libraries package
+
+You can find the Syncfusion libraries, samples and NuGet when extracting the downloaded zip package or from the installed location in Windows.
+
+{Essential studio installed location}\Syncfusion\Essential Studio\15.3.0.29\Xamarin
+
+For example,
+
+* **lib** - C:\Program Files (x86)\Syncfusion\Essential Studio\15.3.0.29\Xamarin\lib
+* **sample** - C:\Users\labuser\AppData\Local\Syncfusion\EssentialStudio\15.3.0.29\Xamarin\sample
+* **nuget** - C:\Users\labuser\AppData\Local\Syncfusion\EssentialStudio\15.3.0.29\Xamarin\nuget
+
+For configuring this NuGet, please refer [`this`](https://help.syncfusion.com/xamarin/introduction/download-and-installation#configuring-and-installing-syncfusion-nuget-packages-in-visual-studio) section.
+
+### Add reference to the project
+
+You can then add the assembly references to the respective projects such as PCL, XForms.Droid, XForms.iOS and XForms.UWP. You can find the dependencies for each control from this [`link`](https://help.syncfusion.com/xamarin/introduction/control-dependencies).
+
+I> After adding the reference, currently, an additional step is required for iOS and UWP projects. For example, if we are using SfKanban, we need to call the Init method of SfKanbanRenderer as shown in this [`KB article`](https://www.syncfusion.com/kb/7171).
+
+I> For UWP alone, one more additional step is required if the project is built in release mode with .NET Native tool chain enabled. For example, if we are using SfKanban, you can refer the [`KB article`](https://www.syncfusion.com/kb/7170) for more details.
+
+## Install NuGet from command line
+
+### NuGet Configuration
+
+1. Download the latest NuGet executable from [`here`](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
+
+2. Open the downloaded executable location in command window and run the following command,
+
+   nuget.exe Sources Add –Name [Source name] –Source [source location]
+
+   For Ex: nuget.exe Sources Add –Name “Syncfusion Source” –Source “http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin/”
+
+3. Once the Source gets added successfully the confirmation message will be shown like below.
+
+![](images/img12.png)
+
+### NuGet Installation
+
+Once the NuGet source has been added, then install the NuGet package which is available in that source by using following command.
+
+nuget.exe install [Package name]
+
+For Ex: nuget.exe install “Syncfusion.Xamarin.Calculate” 
+
+![](images/img13.png)
+
+## Install from Xamarin Component Store
+
+Refer to [`this`](https://developer.xamarin.com/guides/cross-platform/xamarin-studio/components_walkthrough/) article to know how to add a Xamarin Component Store component to Xamarin.Forms application.
 
 
-You can find the following folders when extracting the downloaded zip package or from the installed location in Windows.
 
-* **Lib** - Contains Syncfusion assemblies for Xamarin.Forms, Xamarin.Android and Xamarin.iOS.
-* **Samples** - Contains demo samples for Xamarin.Forms, Xamarin.Android and Xamarin.iOS.
-
-## Add reference to the project
-
-
-You can then add the assembly references to the respective projects. The following is the location where you can locate assemblies for Chart control and you can find assemblies for the other controls also from the same location.
-
-**PCL** **project**
-
-pcl\Syncfusion.SfChart.XForms.dll
-
-**Android** **project**
-
-android\Syncfusion.SfChart.XForms.Android.dll
-
-android\Syncfusion.SfChart.XForms.dll
-
-**iOS** **project**
-
-ios-unified\Syncfusion.SfChart.XForms.iOS.dll
-
-ios-unified\Syncfusion.SfChart.XForms.dll
-
-**UWP** **project**
-
-uwp\Syncfusion.SfChart.UWP.dll
-
-uwp\Syncfusion.SfChart.XForms.UWP.dll
-
-uwp\Syncfusion.SfChart.XForms.dll
-
-After you have added assemblies to the respective projects, you have to follow an additional step for loading our components in UWP and iOS projects. 
-
-The following is an example for Chart component. create an instance of the SfChartRenderer in MainPage constructor of the UWP project as follows.
-
-{% highlight C# %}
-
-public MainPage() 
-{
-     new SfChartRenderer();
-     ...
-}
-
-{% endhighlight %}
-
-Create an instance of SfChartRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as follows.
-
-{% highlight C# %} 
-
-public override bool FinishedLaunching(UIApplication app, NSDictionary options) 
-{
-   ... 
-   new SfChartRenderer (); 
-   ... 
-}
-
-{% endhighlight %}
-
-N> If you do not add the above line, controls will not be loaded in UWP and iOS platforms, and it will look blank. 

@@ -69,7 +69,7 @@ private ObservableCollection<object> State { get; set; }
 
 public ObservableCollection<string> Header { get; set; }
 
-private object _selectedarea;
+private object _selected;
 
 public event PropertyChangedEventHandler PropertyChanged;
 
@@ -77,13 +77,13 @@ public event PropertyChangedEventHandler PropertyChanged;
 
 //Identify the selected area using property changed method
 
-public object SelectedArea
+public object Selected
 
 {
 
-get { return _selectedarea; }
+get { return _selected; }
 
-set { _selectedarea = value; RaisePropertyChanged("SelectedArea"); }
+set { _selected = value; RaisePropertyChanged("SelectedArea"); }
 
 }
 

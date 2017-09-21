@@ -24,7 +24,8 @@ Following properties are used to customize the selected category when you have m
 * [`SelectedBorderThickness`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle~SelectedBorderThickness.html) 	- This property is used to change the border width of the selected placeholder.
 * [`SelectedStrokeDashArray`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle~SelectedStrokeDashArray.html)     - This property is used to change the dashes of the selected placeholder.
 * [`SelectedFontSize`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle~SelectedFontSize.html)            - This is used to change the font size of the text in selected placeholder.
-* [`SelectedTextColor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle~SelectedTextColor.html)           - This property is used to change the color of the text in selected placeholder. The following code example describes the above behavior.
+* [`SelectedTextColor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle~SelectedTextColor.html)           - This property is used to change the color of the text in selected placeholder. 
+* The following code example describes the above behavior.
 
 {% tabs %}
 

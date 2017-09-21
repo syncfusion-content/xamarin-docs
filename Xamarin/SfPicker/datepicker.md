@@ -49,13 +49,13 @@ public class CustomDatePicker : SfPicker
 
 #region Public Properties
 
-// Months api is used to modify the Day collection as per change in Month
+// Months API is used to modify the Day collection as per change in Month
 
 internal Dictionary<string, string> Months { get; set; }
 
 /// <summary>
 
-/// Date is the acutal DataSource for SfPicker control which will holds the collection of Day ,Month and Year
+/// Date is the actual DataSource for SfPicker control which will holds the collection of Day ,Month and Year
 
 /// </summary>
 
@@ -180,7 +180,7 @@ UpdateDays(Date, e);
 
 }
 
-//Updatedays method is used to alter the Date collection as per selection change in Month column(if feb is Selected day collection has value from 1 to 28)
+//Update days method is used to alter the Date collection as per selection change in Month column(if Feb is Selected day collection has value from 1 to 28)
 
 public void UpdateDays(ObservableCollection<object> Date, SelectionChangedEventArgs e)
 
@@ -194,7 +194,7 @@ try
 
 {
 
-bool isupdate = false;
+bool update = false;
 
 if (e.OldValue != null && e.NewValue != null && (e.OldValue as IList).Count>0 && (e.NewValue as IList).Count>0)
 
@@ -204,7 +204,7 @@ if ((e.OldValue as IList)[0] != (e.NewValue as IList)[0])
 
 {
 
-isupdate = true;
+update = true;
 
 }
 
@@ -212,13 +212,13 @@ if ((e.OldValue as IList)[2] != (e.NewValue as IList)[2])
 
 {
 
-isupdate = true;
+update = true;
 
 }
 
 }
 
-if (isupdate)
+if (update)
 
 {
 
@@ -281,7 +281,7 @@ public class CustomDatePicker : SfPicker
 
 /// <summary>
 
-/// Headers api is holds the column name for every column in date picker
+/// Headers API is holds the column name for every column in date picker
 
 /// </summary>
 

@@ -15,7 +15,7 @@ This section explains about the customization of SfPicker Columns
 
 SfPicker allows user to adjust the column width by hooking `SfPicker.OnColumnLoaded` event and then check the column using `ColumnLoadedEventArgs.Column` property and then adjust width of column by setting `ColumnLoadedEventArgs.ColumnWidth` property.
 
-We have prepared below code snippets to demonstarted DateTimePicker sample using `OnColumnLoaded` event.
+We have prepared below code snippets to demonstrated DateTimePicker sample using `OnColumnLoaded` event.
 
 *MainPage*
 
@@ -337,7 +337,7 @@ Column header background color can be customized by setting `SfPicker. ColumnHea
 
 <syncfusion:SfPicker
 
-x:Name="sfpicker"
+x:Name="picker"
 
 ColumnHeaderBackgroundColor="SkyBlue"
 
@@ -363,7 +363,7 @@ Column header text color can be customized by setting `SfPicker.ColumnHeaderText
 
 <syncfusion:SfPicker
 
-x:Name="sfpicker"
+x:Name="picker"
 
 ColumnHeaderTextColor="Red"
 
@@ -393,7 +393,7 @@ Column Header text FontFamily can be customized by setting `SfPicker.ColumnHeade
 
 <syncfusion:SfPicker
 
-x:Name="sfpicker"
+x:Name="picker"
 
 ColumnHeaderFontFamily="Courier New"
 
@@ -419,7 +419,7 @@ Column header text FontSize can be customized  by setting `SfPicker.ColumnHeader
 
 <syncfusion:SfPicker
 
-x:Name="sfpicker"
+x:Name="picker"
 
 ColumnHeaderFontSize="16"
 
@@ -445,7 +445,7 @@ picker.ColumnHeaderFontSize = 16;
 
 <syncfusion:SfPicker
 
-x:Name="sfpicker"
+x:Name="picker"
 
 ColumnHeaderFontAttribute="Bold"
 
@@ -623,4 +623,4 @@ Screen shot for the above code
 
 We have attached sample for reference. please download the sample from the below link.
 
-Sample link:[Cascadingcolor](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Cascading-527874888)
+Sample link:[Cascading](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Cascading-527874888)

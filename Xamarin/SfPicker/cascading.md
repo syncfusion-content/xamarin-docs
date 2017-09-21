@@ -43,7 +43,7 @@ public class PickerCascading:INotifyPropertyChanged
 
 /// <summary>
 
-/// Area is the acutal DataSource for SfPicker control which will holds the collection of Country and State
+/// Area is the actual DataSource for SfPicker control which will holds the collection of Country and State
 
 /// </summary>
 
@@ -61,7 +61,7 @@ private ObservableCollection<object> State { get; set; }
 
 /// <summary>
 
-/// Headers api is holds the column name for every column in cascading picker
+/// Headers API is holds the column name for every column in cascading picker
 
 /// </summary>
 
@@ -69,7 +69,7 @@ private ObservableCollection<object> State { get; set; }
 
 public ObservableCollection<string> Header { get; set; }
 
-private object _selectedarea;
+private object _selected;
 
 public event PropertyChangedEventHandler PropertyChanged;
 
@@ -77,13 +77,13 @@ public event PropertyChangedEventHandler PropertyChanged;
 
 //Identify the selected area using property changed method
 
-public object SelectedArea
+public object Selected
 
 {
 
-get { return _selectedarea; }
+get { return _selected; }
 
-set { _selectedarea = value; RaisePropertyChanged("SelectedArea"); }
+set { _selected = value; RaisePropertyChanged("Selected"); }
 
 }
 
@@ -129,11 +129,11 @@ Area.Add(Country);
 
 Area.Add(State);
 
-SelectedArea = new ObservableCollection<object>() { "UK", "London" };
+Selected = new ObservableCollection<object>() { "UK", "London" };
 
 }
 
-//Hooked when changes occured 
+//Hooked when changes occurred 
 
 public void RaisePropertyChanged(string name)
 
@@ -183,7 +183,7 @@ public class PickerCascading:INotifyPropertyChanged
 
 /// <summary>
 
-/// Headers api is holds the column name for every column in cascading picker
+/// Headers API is holds the column name for every column in cascading picker
 
 /// </summary>
 
@@ -265,7 +265,7 @@ PickerMode="Dialog"
 
 PickerWidth="280"
 
-SelectedItem="{Binding SelectedArea}"
+SelectedItem="{Binding Selected}"
 
 SelectionChanged="picker_SelectionChanged"
 

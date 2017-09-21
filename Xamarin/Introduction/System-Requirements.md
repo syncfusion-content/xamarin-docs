@@ -11,24 +11,25 @@ documentation: ug
 
 **Integrated** **Development** **Environment** **for** **Windows**
 
-By using the following IDEs, you can develop Android, UWP apps:
+By using the following IDEs, you can develop Android and UWP applications:
 
-* Visual Studio 2012 (.Net 4.5)
 * Visual Studio 2013
 * Visual Studio 2015
-* Xamarin Studio
+* Visual Studio 2017
 
-N> You can use Xamarin build host feature to deploy Xamarin.iOS and Xamarin.Forms iOS apps from Visual Studio, read the Xamarin documentation for more information about build host feature.
+N> For installing and configuring Xamarin in Visual Studio, please refer this [`link`](https://developer.xamarin.com/guides/android/getting_started/installation/windows/).
+
+N> You can use Xamarin build host feature to deploy Xamarin.iOS and Xamarin.Forms for iOS apps from Visual Studio, read the [`Xamarin documentation`](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/introduction_to_xamarin_ios_for_visual_studio/) for more information about build host feature.
 
 **Integrated** **Development** **Environment** **for** **Mac**
 
-By using the following IDE, you can develop iOS and Android apps:
-
-* Xamarin Studio
+By using the following IDEs, you can develop iOS and Android applications:
 
 * Visual Studio for Mac
 
-**Supported** **Platforms**
+N> For installing and configuring Xamarin in Visual Studio for Mac, please refer this [`link`](https://docs.microsoft.com/en-us/visualstudio/mac/installation).
+
+**Supported Platforms**
 
 The following table lists the platforms supported by our Xamarin.Forms controls.
 
@@ -39,6 +40,11 @@ The following table lists the platforms supported by our Xamarin.Forms controls.
             <br/>
             <br/>
         </td>
+          <td>
+            Controls
+            <br/>
+            <br/>
+        </td>
         <td>
             Supported versions
             <br/>
@@ -46,13 +52,30 @@ The following table lists the platforms supported by our Xamarin.Forms controls.
         </td>
     </tr>
     <tr>
-        <td>
+        <td rowspan="2">
             Android
             <br/>
             <br/>
         </td>
         <td>
-            Android 4.1 (API level 16) and later versions
+            SfPdfViewer
+            <br/>
+            <br/>
+        </td>
+         <td>
+            API level 21 and later versions
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+        <td>
+            All other controls 
+            <br/>
+            <br/>
+        </td>
+         <td>
+            API level 17 and later versions
             <br/>
             <br/>
         </td>
@@ -60,6 +83,11 @@ The following table lists the platforms supported by our Xamarin.Forms controls.
     <tr>
         <td>
             iOS
+            <br/>
+            <br/>
+        </td>
+          <td>
+            All controls 
             <br/>
             <br/>
         </td>
@@ -72,6 +100,11 @@ The following table lists the platforms supported by our Xamarin.Forms controls.
     <tr>
         <td>
             UWP
+            <br/>
+            <br/>
+        </td>
+          <td>
+            All controls 
             <br/>
             <br/>
         </td>

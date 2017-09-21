@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Download and Installation | Xamarin Forms | Syncfusion
-description: Download and Installation
+title: Download and Installation in Windows | Xamarin Forms | Syncfusion
+description: Download and Installation in Windows
 platform: xamarin
 control: Download and Installation
 documentation: ug

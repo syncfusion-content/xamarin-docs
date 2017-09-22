@@ -264,6 +264,71 @@ Following screenshot illustrates the customization of trackball elements.
 
 ![](trackball_images/trackball_img3.png)
 
+## Show/hide the trackball label in axis
+
+This feature is used to highlight the respective axis label when the trackball is moving across the axis. [`ChartAxis.ShowTrackballInfo`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~ShowTrackballInfo.html) property is used show/hide the trackball label of the axis. ChartAxis.TrackballLabelStyle property is used to customize its appearance. Default value of [`ChartAxis.ShowTrackballInfo`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~ShowTrackballInfo.html) is `False`.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis >
+
+    <chart:CategoryAxis ShowTrackballInfo = "true" />
+
+</chart:SfChart.PrimaryAxis >
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis.ShowTrackballInfo = true;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](trackball_images/trackball_img5.png)
+
+## Show/hide the series label
+
+This feature is used to show/hide the trackball label of the series by using [`CartesianSeries.ShowTrackballInfo`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CartesianSeries~ShowTrackballInfo.html) property. Default value of [`CartesianSeries.ShowTrackballInfo`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CartesianSeries~ShowTrackballInfo.html) property is `True`.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart>
+...
+
+    <chart:LineSeries ItemsSource ="{Binding Data}" XBindingPath="Year"
+    YBindingPath="Value" ShowTrackballInfo = "false" />
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+...
+
+LineSeries lineSeries = new LineSeries()
+{
+    ItemsSource = Data,
+    XBindingPath = "Year",
+    YBindingPath = "Value",
+    ShowTrackballInfo = false
+
+};
+chart.Series.Add(lineSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](trackball_images/trackball_img6.png)
+
 ## Label Template
 
 You can customize the appearance of the Trackball label with your own template by using [`TrackballLabelTemplate`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CartesianSeries~TrackballLabelTemplate.html) property of [`ChartSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries.html).

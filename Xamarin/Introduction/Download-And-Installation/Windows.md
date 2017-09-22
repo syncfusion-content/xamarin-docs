@@ -25,10 +25,10 @@ The steps to install the Syncfusion Xamarin NuGet Packages in Visual Studio are 
 
 2. Select NuGet Package Manager | Package Sources and click Add button to add the Package Name and Package Source of Syncfusion NuGet Packages.
 
-   **Name** - Name of the package that listed in available package sources 
-   **Source** - Syncfusion Xamarin NuGet Package feed URL - http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin/ 
+* **Name** - Name of the package that listed in available package sources 
+* **Source** - Syncfusion Xamarin NuGet Package feed URL - http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin/ 
    
-   N> If you have already downloaded the NuGet package from Syncfusion website, enter the local path in the **URL** field.
+N> If you have already downloaded the NuGet package from Syncfusion website, enter the local path in the **URL** field.
 
 ![](images/img9.png)
 
@@ -104,9 +104,9 @@ I> For UWP alone, one more additional step is required if the project is built i
 
 2. Open the downloaded executable location in command window and run the following command,
 
-   nuget.exe Sources Add –Name [Source name] –Source [source location]
+nuget.exe Sources Add –Name [Source name] –Source [source location]
 
-   For Ex: nuget.exe Sources Add –Name “Syncfusion Source” –Source “http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin/”
+For Ex: nuget.exe Sources Add –Name “Syncfusion Source” –Source “http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin/”
 
 3. Once the Source gets added successfully the confirmation message will be shown like below.
 

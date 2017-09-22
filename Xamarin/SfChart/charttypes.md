@@ -891,6 +891,10 @@ chart.Series.Add(splineSeries);
 
 {% endtabs %}
 
+Cardinal 
+
+![](charttypes_images/CardinalSplineType.png)
+
 Monotonic
 
 ![](charttypes_images/MonotonicSplineType.png)

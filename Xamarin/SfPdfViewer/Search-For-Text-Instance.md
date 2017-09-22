@@ -194,7 +194,7 @@ namespace GettingStarted
     {
         private Stream m_pdfDocumentStream;
         private bool m_isToolbarVisible = true;
-        private bool m_isSearchbarVisible = false;
+        private bool m_isSearchBarVisible = false;
         /// <summary>
         /// An event to detect the change in the value of a property.
         /// </summary>
@@ -245,15 +245,15 @@ namespace GettingStarted
         /// <remarks>
         /// The value true will make the toolbar visible and false would make the search bar invisible.
         /// </remarks>
-        public bool IsSearchbarVisible
+        public bool IsSearchBarVisible
         {
-            get { return m_isSearchbarVisible; }
+            get { return m_isSearchBarVisible; }
             set
             {
-                if (m_isSearchbarVisible == value)
+                if (m_isSearchBarVisible == value)
                     return;
-                m_isSearchbarVisible = value;
-                NotifyPropertyChanged("IsSearchbarVisible");
+                m_isSearchBarVisible = value;
+                NotifyPropertyChanged("IsSearchBarVisible");
             }
         }
 
@@ -287,7 +287,7 @@ namespace GettingStarted
         private void OnSearchAndToolbarToggleCommand(object destinationPageParam)
         {
             IsToolbarVisible = !IsToolbarVisible;
-            IsSearchbarVisible = !IsToolbarVisible;
+            IsSearchBarVisible = !IsToolbarVisible;
         }
     }
 }
@@ -333,7 +333,7 @@ The complete XAML code after the design of the search bar will look like below
                 <Button x:Name="goToPreviousButton" Grid.Column="4" BackgroundColor="Transparent" Image="PageUp.png" HorizontalOptions="Center" VerticalOptions="Center" Command="{Binding GoToPreviousPageCommand, Source={x:Reference Name=pdfViewerControl}}"/>
                 <Button x:Name="searchButton" Grid.Column="6" BackgroundColor="Transparent" Image="SearchIcon.png" HorizontalOptions="Start" Command="{Binding SearchAndToolbarToggleCommand}"/>
             </Grid>
-            <Grid x:Name="searchBar" Grid.Row="0" BackgroundColor="#E9E9E9" HorizontalOptions="Fill" VerticalOptions="Fill" IsVisible="{Binding IsSearchbarVisible}">
+            <Grid x:Name="searchBar" Grid.Row="0" BackgroundColor="#E9E9E9" HorizontalOptions="Fill" VerticalOptions="Fill" IsVisible="{Binding IsSearchBarVisible}">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="5*" />

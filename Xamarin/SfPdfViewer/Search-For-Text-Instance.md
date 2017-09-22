@@ -264,7 +264,7 @@ namespace GettingStarted
         {
             //Accessing the PDF document that is added as embedded resource as stream.
             m_pdfDocumentStream = typeof(App).GetTypeInfo().Assembly.GetManifestResourceStream("GettingStarted.Assets.GIS Succinctly.pdf");
-            //Command used to toggle the visibility of the toolbar and searchbar.
+            //Command used to toggle the visibility of the toolbar and search bar.
             SearchAndToolbarToggleCommand= new Command<object>(OnSearchAndToolbarToggleCommand, CanExecute);
         }
         
@@ -282,7 +282,7 @@ namespace GettingStarted
         }
 
         /// <summary>
-        /// Method used to toggle the visibility of the toolbar and searchbar.
+        /// Method used to toggle the visibility of the toolbar and search bar.
         /// </summary>
         private void OnSearchAndToolbarToggleCommand(object destinationPageParam)
         {

@@ -15,7 +15,7 @@ documentation: ug
 
 Syncfusion Xamarin NuGet packages are available [`here`](http://nuget.syncfusion.com/package/xamarin).
 
-Following are the step by step instructions for configuring Syncfusion NuGet packages within Visual Studio,
+Following are the step by step instructions for configuring Syncfusion NuGet packages within Visual studio,
 
 1. Right click on the Packages folder in the project and then select Add Packages…
 
@@ -69,7 +69,7 @@ The following procedure illustrates how to install the installer of Syncfusion X
 
 You can find the Syncfusion libraries, samples and NuGet when extracting the downloaded zip package or from the installed location in Mac.
 
-{Essential Studio installed location}\Syncfusion\Essential Studio\15.3.0.29\Xamarin
+{Essential studio installed location}\Syncfusion\Essential Studio\15.3.0.29\Xamarin
 
 For example,
 

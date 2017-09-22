@@ -112,7 +112,7 @@ This section explains how to create simple SfPicker control and configure it. Sf
 
 ### Create the Xamarin Form project 
 
-Create new blank project (Xamarin.Form Portable) using Visual Studio or Xamarin Studio for Xamarin Forms. 
+Create new blank project (Xamarin.Forms Portable) using Visual Studio or Xamarin Studio for Xamarin.Forms. 
 
 ### Adding SfPicker in Xamarin Form project
 
@@ -298,9 +298,9 @@ ItemsSource="{Binding Colors}" />
 
 {% highlight c# %}
 
-ColorInfo colorinfo = new ColorInfo();
+ColorInfo info = new ColorInfo();
 
-picker.ItemsSource = colorinfo.Colors;
+picker.ItemsSource = info.Colors;
 
 {% endhighlight %}
 {% endtabs %}
@@ -371,7 +371,7 @@ picker.PickerMode = PickerMode.Dialog;
 {% endhighlight %}
 {% endtabs %}
 
-The picker can be opened programatically by setting by setting `SfPicker.IsOpen` property to True. Default value of `SfPicker.IsOpen` is False.
+The picker can be opened programmatically by setting by setting `SfPicker.IsOpen` property to True. Default value of `SfPicker.IsOpen` is False.
 
 Note: This property automatically changed to False when close the dialog by click outside of dialog SfPicker.
 

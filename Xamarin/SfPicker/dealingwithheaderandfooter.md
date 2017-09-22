@@ -20,7 +20,7 @@ SfPicker allows enabling or disabling the header section by setting `SfPicker.Sh
 
 <syncfusion:SfPicker
 
-x:Name="sfpicker" ShowColumnHeader="False"
+x:Name="picker" ShowColumnHeader="False"
 
 HeaderText="Select a Date" />
 
@@ -42,7 +42,7 @@ SfPicker allows providing custom text to Header of SfPicker by setting `SfPicker
 
 <syncfusion:SfPicker
 
-x:Name="sfpicker"
+x:Name="picker"
 
 HeaderText="Select a Date" />
 
@@ -192,7 +192,7 @@ SfPicker allows enabling or disabling the footer section by setting `SfPicker.Sh
 
 <syncfusion:SfPicker
 
-x:Name="sfpicker" ShowFooter="True"
+x:Name="picker" ShowFooter="True"
 
 />
 
@@ -212,7 +212,7 @@ SfPicker allows providing custom view to Footer of SfPicker by setting `SfPicker
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfPicker x:Name="sfpicker" ShowFooter="True">
+<syncfusion:SfPicker x:Name="picker" ShowFooter="True">
 
 <syncfusion:SfPicker.FooterView>
 
@@ -232,18 +232,18 @@ SfPicker allows providing custom view to Footer of SfPicker by setting `SfPicker
 
 picker.ShowFooter = true;
 
-Grid gridlayout = new Grid();
+Grid layout = new Grid();
 
-gridlayout.Children.Add(new Button() { Text = "Ok", TextColor = Color.Red });
+layout.Children.Add(new Button() { Text = "Ok", TextColor = Color.Red });
 
-picker.FooterView = gridlayout;
+picker.FooterView = layout;
 
 {% endhighlight %}
 {% endtabs %}
 
 ## Perform validation with default validation Button
 
-SfPicker allows performing validation based on Ok or Cancel button by hooking `SfPicker.OkButtonClicked` and `SfPicker.CancelButtonClicked`. In this event from the `SelectionChangedEvent` Argument current selected items can be obtained.
+SfPicker allows performing validation based on OK or Cancel button by hooking `SfPicker.OkButtonClicked` and `SfPicker.CancelButtonClicked`. In this event from the `SelectionChangedEvent` Argument current selected items can be obtained.
 
 
 {% tabs %}
@@ -251,11 +251,11 @@ SfPicker allows performing validation based on Ok or Cancel button by hooking `S
 
 <syncfusion:SfPicker
 
-x:Name="sfpicker"
+x:Name="picker"
 
-CancelButtonClicked="sfpicker_CancelButtonClicked"
+CancelButtonClicked="picker_CancelButtonClicked"
 
-OkButtonClicked="sfpicker_OkButtonClicked"
+OkButtonClicked="picker_OkButtonClicked"
 
 ShowFooter="True" />
 
@@ -263,9 +263,9 @@ ShowFooter="True" />
 
 {% highlight c# %}
 
-picker.OkButtonClicked += sfpicker_OkButtonClicked;
+picker.OkButtonClicked += picker_OkButtonClicked;
 
-picker.CancelButtonClicked += sfpicker_CancelButtonClicked;
+picker.CancelButtonClicked += picker_CancelButtonClicked;
 
 {% endhighlight %}
 {% endtabs %}

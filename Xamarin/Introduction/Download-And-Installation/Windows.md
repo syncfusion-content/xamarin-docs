@@ -36,27 +36,27 @@ The steps to install the Syncfusion Xamarin NuGet Packages in Visual Studio are 
 
 Syncfusion Xamarin NuGet can install once configured the package source. The NuGet installation steps as below,
 
-1.	Once configured the Package source with Syncfusion NuGet Packages, right click on project and choose Manage NuGet Packages and select Syncfusion Xamarin Packages from Package source.
+1. Once configured the Package source with Syncfusion NuGet Packages, right click on project and choose Manage NuGet Packages and select Syncfusion Xamarin Packages from Package source.
 
     ![](images/img10.png)
 
-2.	The NuGet Packages are listed which are available in package source location. Install the required packages to your application by clicking Install button.
+2. The NuGet Packages are listed which are available in package source location. Install the required packages to your application by clicking Install button.
 
-3.	Repeat the above steps in PCL, XForms.Droid, XForms.iOS, XForms.UWP projects.  
+3. Repeat the above steps in PCL, XForms.Droid, XForms.iOS, XForms.UWP projects.  
 
 ### Updating a NuGet Package
 
 Using the Manage NuGet Packages in Visual Studio, NuGet packages can be updated.
 
-1.	Right click on Project and Navigate to the Manage NuGet Packages and click on the Updates tab to check for updates.
+1. Right click on Project and Navigate to the Manage NuGet Packages and click on the Updates tab to check for updates.
 
-2.	Select the Updates -> < Syncfusion Xamarin Packages >. Refer to the following screenshot for more information.
+2. Select the Updates -> < Syncfusion Xamarin Packages >. Refer to the following screenshot for more information.
 
     ![](images/img11.png)
 
-3.	If there is a new version of NuGet you will see it in the list of available updates.
+3. If there is a new version of NuGet you will see it in the list of available updates.
 
-4.	Select NuGet Package in the list and click Update. 
+4. Select NuGet Package in the list and click Update. 
 
 ## Download directly from website
 

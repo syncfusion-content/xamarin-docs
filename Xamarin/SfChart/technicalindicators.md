@@ -282,7 +282,7 @@ SfChart chart = new SfChart()
 
 {% endtabs %}
 
-In the following screenshot, Average True type technicalIndicators is shown,
+In the following screenshot, Average True type technical indicators is shown,
 
 ![](technicalindicators_images/averagetrue.png)
 
@@ -331,7 +331,7 @@ SfChart chart = new SfChart()
 
 {% endtabs %}
 
-In the following screenshot, Simple Moving Average type technicalIndicators is shown,
+In the following screenshot, Simple Moving Average type technical indicators is shown,
 
 ![](technicalindicators_images/simplemovingaverage.png)
 
@@ -384,7 +384,7 @@ SfChart chart = new SfChart()
 
 {% endtabs %}
 
-In the following screenshot, Relative Strength Index type technicalIndicators is shown,
+In the following screenshot, Relative Strength Index type technical indicators is shown,
 
 ![](technicalindicators_images/relativestrengthindex.png)
 
@@ -433,6 +433,6 @@ SfChart chart = new SfChart()
 
 {% endtabs %}
 
-In the following screenshot, Accumulation Distribution type technicalIndicators is shown,
+In the following screenshot, Accumulation Distribution type technical indicators is shown,
 
 ![](technicalindicators_images/accumulationdistribution.png)

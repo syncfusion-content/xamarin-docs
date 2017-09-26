@@ -46,7 +46,7 @@ Following are the step by step instructions for configuring Syncfusion NuGet pac
 
 Right click on the Packages folder in the individual projects, then select Update. This will update the NuGet package to the available latest version. You can double click Add Packages and choose the specific version for the package for which you want to update. You need to do this in all the projects such as PCL, XForms.Droid, XForms.iOS.
 
-    ![](images/img5.png)
+![](images/img5.png)
 
 ## Download directly from website
 

@@ -334,7 +334,7 @@ The [GroupExpandCollapseChangedEventArgs](https://help.syncfusion.com/cr/cref_fi
 
 SfListView lets you to arrange the grouped items in hierarchical structure by customizing the [GroupHeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~GroupHeaderTemplate.html) property and by adding the multiple [GroupDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor.html) objects into the [GroupDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~GroupDescriptors.html) collection. 
 
-In the `GroupHeaderTemplate`, you need to set the `Margin` property to the custom view based on the requirement in order to arrange the group header items and sub group header items in the hierarchical structure. You can also download the entire source code of this demo from [here](http://files2.syncfusion.com/Xamarin.Forms/Samples/ListView_Multilevelgrouping.zip).
+In the `GroupHeaderTemplate`, you need to set the `Padding` property to the custom view based on the requirement in order to arrange the group header items and sub group header items in the hierarchical structure. You can also download the entire source code of this demo from [here](http://files2.syncfusion.com/Xamarin.Forms/Samples/ListView_Multilevelgrouping.zip).
 
 {% highlight xaml %}
 xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
@@ -359,7 +359,7 @@ xmlns:dataSource="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSo
         <ViewCell>
           <ViewCell.View>
              <StackLayout BackgroundColor="{Binding Level,Converter={StaticResource TemplateConverter}}"
-                          Margin="{Binding Level,Converter={StaticResource TemplateConverter}}">
+                          Padding="{Binding Level,Converter={StaticResource TemplateConverter}}">
                 <Label Text="{Binding Key}" FontSize="22" FontAttributes="Bold" Margin="0"
                        VerticalOptions="Center" HorizontalOptions="Start"/>
              </StackLayout>
@@ -381,7 +381,7 @@ public class GroupHeaderConverter : IValueConverter
         if ((int)value == 1)
            return Color.FromHex("#D3D3D3");
         else
-           return Color.FromHex("E4E4E4");
+           return Color.Transparent;
      }
      else
      {

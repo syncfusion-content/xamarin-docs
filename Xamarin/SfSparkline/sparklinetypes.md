@@ -11,7 +11,7 @@ documentation: ug
 
 ## Line Sparkline
 
-[`SfLineSparkline`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsparkline/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfLineSparkline.html) is used to visualize a data trend of specific intervals. You can use the following properties to customize the appearance.
+[`SfLineSparkline`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsparkline/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfLineSparkline.html) is used for identifying patterns and trends in the data such as seasonal effects, large changes and turning points over a period of time.
 
 * [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsparkline/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~StrokeWidth.html) - used to change the stroke width of the sparkline.
 * [`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsparkline/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~StrokeColor.html) - used to change the stroke color of the sparkline.
@@ -45,7 +45,7 @@ SfLineSparkline lineSparkline = new SfLineSparkline()
 
 ## Column Sparkline
 
-[`SfColumnSparkline`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsparkline/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfColumnSparkline.html) is used to facilitate comparison of values in discrete categories. You can use the following properties to customize the appearance.
+[`SfColumnSparkline`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsparkline/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfColumnSparkline.html) is very similar to a line sparkline in the sense that it is designed to show different values of two or more subjects but instead of using lines it using horizontal and vertical bars that represent a different value.
 
 * [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsparkline/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~StrokeWidth.html) - used to change the stroke width of the sparkline.
 * [`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsparkline/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~StrokeColor.html) - used to change the stroke color of the sparkline.

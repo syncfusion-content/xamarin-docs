@@ -47,7 +47,7 @@ When SfListView is loaded in CarouselView with `SfListView.AllowSwiping` as true
 
 ### Scroll to Row Index
 
-SfListView allows you to scroll programmatically to a row based on index by using [ScrollToRowIndex](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LinearLayout~ScrollToRowIndex.html) method of linear layout or grid layout.
+SfListView allows you to scroll programmatically to a row based on index by using [ScrollToRowIndex](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LayoutBase~ScrollToRowIndex.html) method of linear layout or grid layout.
 
 {% highlight c# %}
 

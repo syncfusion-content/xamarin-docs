@@ -116,3 +116,25 @@ dataGrid.VerticalOverScrollMode = VerticalOverScrollMode.None;
 ![](SfDataGrid_images/VerticalOverScrollMode_Bounce.gif)
 
 ![](SfDataGrid_images/VerticalOverScrollMode_none.gif)
+
+## How to
+
+### Scrolling customization using Slider
+
+SfDataGrid allows you to customize the scrolling using `Slider` by passing the NewValue property as argument to the `ScrollToRowIndex` method.
+
+The below code illustrates how to customize scrolling using slider.
+
+{% highlight C# %}
+
+Slider slider = new Slider();
+
+slider.ValueChanged += Slider_ValueChanged;
+private void Slider_ValueChanged(object sender, ValueChangedEventArgs e)
+{
+    dataGrid.ScrollToRowIndex((int)(e.NewValue));
+}
+{% endhighlight %}
+
+
+![](SfDataGrid_images/Slider.gif)

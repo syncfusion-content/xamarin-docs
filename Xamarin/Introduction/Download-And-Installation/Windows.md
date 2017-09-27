@@ -74,7 +74,7 @@ The following procedure illustrates how to install the installer of Syncfusion X
 6. To install it in the displayed default location, click Install.
 7. Click Finish. The **NuGet and samples** locations are launched automatically.
 
-## Explore the libraries package
+### Explore the libraries package
 
 You can find the Syncfusion libraries, samples and NuGet when extracting the downloaded zip package or from the installed location in Windows.
 

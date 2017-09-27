@@ -207,7 +207,7 @@ dataGrid.Columns.Add(new GridTextColumn() { MappingName = "OrderID", IsHidden = 
 {% endtabs %}
 
 ### LoadUIView
-[GridColumn.LoadUIView](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~LoadUIView.html) property denoting whether to load UIView or draw cell value in android platform. The default value of the LoadUIView is false. so draw the grid cells content in canvas. While setting the LoadUIView to true, it will load a TextView inside the GridCells and instead of drawing the content in canvas, the content of the TextView is set and hence the contents are wrapped. 
+[GridColumn.LoadUIView](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~LoadUIView.html) property denotes whether to load element or draw cell value in android platform. The default value of the LoadUIView is false. so draw the grid cells content in canvas. While setting the LoadUIView to true, it will load a element inside the GridCells and instead of drawing the content in canvas, the content of the TextView is set and hence the contents are wrapped. 
 
 {% highlight c# %}
 
@@ -514,6 +514,7 @@ The below table provides the list of properties in GridTemplateColumn.
 ### CellTemplate
 
 The following code example shows templating of GridTemplateColumn. Underlying record will be the BindingContext for the `CellTemplate`.
+
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:GridTemplateColumn MappingName="CustomerID">
@@ -545,6 +546,7 @@ return label;
 templateColumn.CellTemplate = dataTemplate;
 {% endhighlight %}
 {% endtabs %}
+
 The following code example illustrates how template column can be used to load a stock cell inside it.
 
 {% highlight xaml %}

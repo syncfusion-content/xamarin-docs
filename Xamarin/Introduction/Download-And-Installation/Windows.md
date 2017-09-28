@@ -15,6 +15,8 @@ documentation: ug
 
 Syncfusion Xamarin NuGet packages are available [here](http://nuget.syncfusion.com/package/xamarin).
 
+N> If you wish to use the Xamarin NuGet packages then Essential Studio or Xamarin platform installation not required to implement with Syncfusion Xamarin controls. 
+
 **NuGet Configuration**
 
 The steps to install the Syncfusion Xamarin NuGet Packages in Visual Studio are as follows,

@@ -63,7 +63,7 @@ SfLineSparkline lineSparkline = new SfLineSparkline()
 
 {% endtabs %}
 
-![](sparklinetypes_images/charttypes_img1.png)
+![](sparkline_images/MarkerCustomization.png)
 
 Code snippet to customize the segments
 
@@ -100,4 +100,4 @@ SfColumnSparkline columnSparkline = new SfColumnSparkline()
 
 {% endtabs %}
 
-![](sparklinetypes_images/charttypes_img1.png)
+![](sparkline_images/SegmentsCustomization.png)

@@ -40,12 +40,12 @@ SfLineSparkline lineSparkline = new SfLineSparkline()
 
 {% endtabs %}
 
-![](sparklinetypes_images/charttypes_img1.png)
+![](sparkline_images/LineSparkline.png)
 
 
 ## Column Sparkline
 
-[`SfColumnSparkline`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsparkline/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfColumnSparkline.html) is very similar to a line sparkline in the sense that it is designed to show different values of two or more subjects but instead of using lines it using horizontal and vertical bars that represent a different value.
+[`SfColumnSparkline`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsparkline/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfColumnSparkline.html) is very similar to a line sparkline in the sense that it is designed to show different values of two or more subjects but instead of using lines it is using horizontal and vertical bars that represent a different value.
 
 * [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsparkline/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~StrokeWidth.html) - used to change the stroke width of the sparkline.
 * [`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsparkline/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~StrokeColor.html) - used to change the stroke color of the sparkline.
@@ -74,7 +74,7 @@ SfColumnSparkline columnSparkline = new SfColumnSparkline()
 
 {% endtabs %}
 
-![](sparklinetypes_images/charttypes_img1.png)
+![](sparkline_images/ColumnSparkline.png)
 
 
 ## Area Sparkline
@@ -83,6 +83,7 @@ SfColumnSparkline columnSparkline = new SfColumnSparkline()
 
 * [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsparkline/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~StrokeWidth.html) - used to change the stroke width of the sparkline.
 * [`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsparkline/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~StrokeColor.html) - used to change the stroke color of the sparkline.
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsparkline/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfAreaSparkline~Color.html) - used to change the color of interior area of the sparkline.
 
 The following code is used to create the [`SfAreaSparkline`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsparkline/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfAreaSparkline.html).
 
@@ -108,7 +109,7 @@ SfAreaSparkline areaSparkline = new SfAreaSparkline()
 
 {% endtabs %}
 
-![](sparklinetypes_images/charttypes_img1.png)
+![](sparkline_images/AreaSparkline.png)
 
 
 ## WinLoss Sparkline
@@ -142,4 +143,4 @@ SfWinLossSparkline winLossSparkline = new SfWinLossSparkline()
 
 {% endtabs %}
 
-![](sparklinetypes_images/charttypes_img1.png)
+![](sparkline_images/WinLossSparkline.png)

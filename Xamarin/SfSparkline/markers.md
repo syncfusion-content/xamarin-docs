@@ -14,7 +14,7 @@ documentation: ug
 * [`IsVisible`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsparkline/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.MarkerBase~IsVisible.html) - used to change the visibility of the marker.
 * [`Width`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsparkline/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.MarkerBase~Width.html) - used to change the width of the marker.
 * [`Height`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsparkline/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.MarkerBase~Height.html) - used to change the height of the marker.
-* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsparkline/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.MarkerBase~Color.html) - used to change the height of the marker.
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsparkline/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.MarkerBase~Color.html) - used to change the color of the marker.
 
 {% tabs %} 
 
@@ -49,4 +49,4 @@ SfLineSparkline lineSparkline = new SfLineSparkline()
 
 {% endtabs %}
 
-![](sparklinetypes_images/charttypes_img1.png)
+![](sparkline_images/Markers.png)

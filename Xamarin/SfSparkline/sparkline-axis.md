@@ -48,4 +48,4 @@ SfLineSparkline lineSparkline = new SfLineSparkline()
 
 {% endtabs %}
 
-![](sparklinetypes_images/charttypes_img1.png)
+![](sparkline_images/Axis.png)

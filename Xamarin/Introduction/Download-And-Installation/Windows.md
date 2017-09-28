@@ -78,13 +78,13 @@ The following procedure illustrates how to install the installer of Syncfusion X
 
 You can find the Syncfusion libraries, samples and NuGet when extracting the downloaded zip package or from the installed location in Windows.
 
-{Essential studio installed location}\Syncfusion\Essential Studio\15.3.0.29\Xamarin
+{Essential Studio installed location}\Syncfusion\Essential Studio\15.3.0.29\Xamarin
 
 For example,
 
 * **lib** - C:\Program Files (x86)\Syncfusion\Essential Studio\15.3.0.29\Xamarin\lib
-* **sample** - C:\Users\labuser\AppData\Local\Syncfusion\EssentialStudio\15.3.0.29\Xamarin\sample
-* **nuget** - C:\Users\labuser\AppData\Local\Syncfusion\EssentialStudio\15.3.0.29\Xamarin\nuget
+* **sample** - C:\Users\lab user\AppData\Local\Syncfusion\EssentialStudio\15.3.0.29\Xamarin\sample
+* **nuget** - C:\Users\lab user\AppData\Local\Syncfusion\EssentialStudio\15.3.0.29\Xamarin\nuget
 
 For configuring this NuGet, please refer [this](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows#configuring-and-installing-syncfusion-nuget-packages-in-visual-studio) section.
 

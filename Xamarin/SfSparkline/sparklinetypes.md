@@ -84,7 +84,7 @@ SfColumnSparkline columnSparkline = new SfColumnSparkline()
 
 * [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsparkline/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~StrokeWidth.html) - used to change the stroke width of the sparkline.
 * [`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsparkline/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~StrokeColor.html) - used to change the stroke color of the sparkline.
-* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsparkline/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfAreaSparkline~Color.html) - used to change color of interior area.
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsparkline/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfAreaSparkline~Color.html) - used to change the color of interior area.
 
 The following code is used to create the [`SfAreaSparkline`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsparkline/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfAreaSparkline.html).
 
@@ -119,7 +119,7 @@ SfAreaSparkline areaSparkline = new SfAreaSparkline()
 
 * [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsparkline/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~StrokeWidth.html) - used to change the stroke width of the sparkline.
 * [`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsparkline/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~StrokeColor.html) - used to change the stroke color of the sparkline.
-* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsparkline/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfWinLossSparkline~Color.html) - used to change the interior color of the column.
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsparkline/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfWinLossSparkline~Color.html) - used to change the interior color of the positive columns.
 * [`NeutralPointColor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsparkline/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfWinLossSparkline~NeutralPointColor.html) - used to change the interior color of the neutral columns.
 
 The following code is used to create the [`SfWinLossSparkline`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsparkline/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfWinLossSparkline.html).

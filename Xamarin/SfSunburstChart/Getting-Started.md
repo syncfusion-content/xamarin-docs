@@ -15,9 +15,9 @@ This section explains you the steps required to populate the sunburst chart with
 
 Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain and reference Essential Studio components in your solution; then refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfsunburstchart) link to know about the assemblies required for adding SfSunburstChart to your project.
 
-I> After adding the reference, currently, an additional step is required for iOS and UWP projects. We need to call Init method in the `SfSunburstChartRenderer` as shown in this [KB article.](http://www.syncfusion.com/support/kb/7715)
+I> After adding the reference, currently, an additional step is required for iOS and UWP projects. We need to call Init method in the `SfSunburstChartRenderer` as shown in this [KB article.](http://www.syncfusion.com/support/kb/7714)
 
-I> For UWP alone, one more additional step is required if the project is built in release mode with .NET Native tool chain enabled. You can refer the [KB article](http://www.syncfusion.com/support/kb/7714) for more details.
+I> For UWP alone, one more additional step is required if the project is built in release mode with .NET Native tool chain enabled. You can refer the [KB article](http://www.syncfusion.com/support/kb/7715) for more details.
 
 ## Initialize SunburstChart
 

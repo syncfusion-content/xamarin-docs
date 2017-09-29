@@ -11,9 +11,47 @@ documentation: ug
 
 ## Customizing Column Size
 
-By default, columns are sized smartly to arrange the default elements of the cards with better readability while resizing [`SfKanban`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban.html). However, you can define the minimum and maximum width for the columns in [`SfKanban`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban.html) using [`SfKanban.MinimumColumnWidth`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~MinimumColumnWidth.html) and [`SfKanban.MaximumColumnWidth`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~MaximumColumnWidth.html) properties respectively. You can also define the exact column width using [`SfKanban.ColumnWidth`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~ColumnWidth.html) property.
+By default, columns are sized smartly to arrange the default elements of the cards with better readability. However, you can define the minimum and maximum width for the columns in [`SfKanban`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban.html) using [`SfKanban.MinimumColumnWidth`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~MinimumColumnWidth.html) and [`SfKanban.MaximumColumnWidth`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~MaximumColumnWidth.html) properties respectively. 
 
-## ColumnMappingPath
+{% tabs %}
+
+{% highlight xaml %}
+
+<kanban:SfKanban MinimumColumnWidth ="300" MaximumColumnWidth ="340">
+</kanban:SfKanban>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+kanban. MinimumColumnWidth = 300;
+kanban. MaximumColumnWidth = 340;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+You can also define the exact column width using [`SfKanban.ColumnWidth`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~ColumnWidth.html) property.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<kanban:SfKanban ColumnWidth ="250">
+</kanban:SfKanban>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+kanban.ColumnWidth = 250;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Categorizing Columns
 
 If [`ItemsSource`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~ItemsSource.html) contains custom objects, the path of the property which can be used to categorize the card should be explicitly defined using [`ColumnMappingPath`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~ColumnMappingPath.html) property. By default, [`SfKanban`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban.html) will automatically categorize the items using [`KanbanModel.Category`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanModel~Category.html) property.
 
@@ -34,9 +72,9 @@ kanban.ColumnMappingPath = "Group";
 
 {% endtabs %}
 
-## Multiple Category Mapping 
+### Multiple category for a column
 
-You can map more than one category for a column by assigning multiple values to Categories collection of [`KanbanColumn`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanColumn.html). For e.g., you can map “In progress, Validate” types under “In progress” column.
+More than one category can be mapped to a column by assigning multiple values to Categories collection of [`KanbanColumn`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanColumn.html). For e.g., you can map “In progress, Validate types under “In progress” column.
 
 {% highlight C# %} 
 
@@ -48,9 +86,7 @@ progressColumn.Categories = new List<object>() { "In Progress", "Validated" };
 
 ## Headers
 
-### Header Template
-
-You can replace the entire header template with your own design using [`SfKanban.HeaderTemplate`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~HeaderTemplate.html) property. The following code snippet and screenshot illustrates this.
+Header shows the category, items count, min and max informations of a column. The UI of the header can be replaced entirely using [`SfKanban.HeaderTemplate`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~HeaderTemplate.html) property. The following code snippet and screenshot illustrates this.
 
 {% tabs %}
 
@@ -94,7 +130,7 @@ The following output is displayed as a result of the above code example.
 
 ## Expand/Collapse Column
 
-You can expand/collapse the particular column in Kanban by setting [`IsExpanded`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanColumn~IsExpanded.html) property. The following code example describes the above behavior.
+Columns can be expanded/collapsed by tapping the toggle button which is placed at top right corner of the Kanban header. [`KanbanColumn.IsExpanded`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanColumn~IsExpanded.html) ‘ property is used to programmatically expand/collapse the Kanban column. The following code example describes the above behavior.   
 
 {% tab %}
 
@@ -178,7 +214,6 @@ The following output demonstrates the above example code.
 
 
 ## Items Count
-
 [`ItemsCount`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanColumn~ItemsCount.html) property is used to get the total cards count in each column.
 
 {% highlight C# %}
@@ -190,7 +225,12 @@ int count = todoColumn.ItemsCount;
 
 ## Work In-Progress Limit
 
-In column, you can set minimum and maximum items limit by using the [`MinimumLimit`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanColumn~MinimumLimit.html) and [`MaximumLimit`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanColumn~MaximumLimit.html) properties. 
+[`MinimumLimit`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanColumn~MinimumLimit.html) and [`MaximumLimit`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanColumn~MaximumLimit.html) properties are used to define the minimum and maximum number of items in a column. If the actual items count is exceeded or lesser than the specified limits, the error bars are used to indicate this violation. Following properties are used to customize the appearance of error bar.
+
+* [`Color`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanErrorBarSettings~Color.html) - used to change the default color of the error bar.
+* [`MaxValidationColor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanErrorBarSettings~MaxValidationColor.html) - used to change the maximum validation color of the error bar.
+* [`MinValidationColor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanErrorBarSettings~MinValidationColor.html) - used to change the minimum validation color of the error bar.
+* [`Height`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanErrorBarSettings~Height.html) - used to change the height of the error bar.
 
 {% tab %}
 
@@ -210,17 +250,6 @@ todoColumn.MaximumLimit = 1;
 
 {% endtabs %}
 
-
-## Error Bar Settings
-
-[`MinimumLimit`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanColumn~MinimumLimit.html) and [`MaximumLimit`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanColumn~MaximumLimit.html) will not restrict moving the items from one column to another column. But changing the color of the error bar can indicate this violation of the limit.
-
-Following properties are used to customize its appearance.
-
-* [`Color`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanErrorBarSettings~Color.html) - used to change the default color of the error bar.
-* [`MaxValidationColor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanErrorBarSettings~MaxValidationColor.html) - used to change the maximum validation color of the error bar.
-* [`MinValidationColor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanErrorBarSettings~MinValidationColor.html) - used to change the minimum validation color of the error bar.
-* [`Height`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanErrorBarSettings~Height.html) - used to change the height of the error bar.
 
 
 {% tab %}

@@ -24,7 +24,6 @@ The following code example illustrates how to customize header row height in SfD
 dataGrid.HeaderRowHeight = 50;  
 {% endhighlight %}
 
-
 ## Customize RowHeight for all rows
 
 SfDataGrid allows you to customize the height of the grid rows in the scrolling region by setting the [SfDataGrid.RowHeight](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~RowHeight.html) property. The default value of this property is 50. This property responds to runtime changes and hence you can customize it based on your requirement. Setting this property will change the height of all the rows in the body region with the common value. Setting `SfDataGrid.RowHeight` to zero will collapse all the rows in the grid.
@@ -35,11 +34,6 @@ The following code example illustrates how to customize header row height in SfD
 //Customizing row height in SfDataGrid
 dataGrid.RowHeight = 60;
 {% endhighlight %}
-
-
-## Customize RowHeight of a particular row on demand
-
-SfDataGrid allows you to customize the height of a grid row on demand by handling the [SfDataGrid.QueryRowHeight](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~QueryRowHeight_EV.html) event. This event is raised for the grid rows whenever they come to view and hence you can customize the height of a particular row on demand by using the row index. Setting height to zero will collapse all the row in the grid. 
 
 ### QueryRowHeight
 
@@ -66,9 +60,65 @@ void DataGrid_QueryRowHeight (object sender, QueryRowHeightEventArgs e)
 } 
 {% endhighlight %}
 
+## GridRowSizingOptions
+
+SfDataGrid allows you to customize the grid row's height with various customizing options while auto calculating the row height based on content using the `GridRowSizingOptions`.
+
+### Calculate Height based on certain columns
+
+SfDataGrid allows you to calculate the RowHeight with exclude certain columns using `ExcludeColumns` property.
+
+The following code example illustrates calculating the height of the grid rows based on certain columns.
+{% highlight c# %}
+ 
+ private void DataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
+{
+    GridRowSizingOptions options = new GridRowSizingOptions();
+    options.ExcludeColumns.Add("Description");
+    options.ExcludeColumns.Add("CustomerID");
+    if (e.RowIndex == 0)
+    {
+        e.Height = 50;
+    }
+    else
+    {
+        e.Height = dataGrid.GetRowHeight(e.RowIndex, options);
+    }
+    e.Handled = true;
+}
+{% endhighlight %}
+
+### Calculate Height include with hidden columns 
+
+SfDataGrid allows you to calculate the row height based on content by including/excluding the hidden columns using the `CanIncludeHiddenColumns` property.
+The following code example illustrates how to calculate Height include with hidden columns .
+{% highlight c# %}
+ 
+ private void DataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
+{
+    GridRowSizingOptions options = new GridRowSizingOptions();
+    options.CanIncludeHiddenColumns = true;
+    if (e.RowIndex == 0)
+    {
+        e.Height = 50;
+    }
+    else
+    {
+        e.Height = dataGrid.GetRowHeight(e.RowIndex, options);
+    }
+    e.Handled = true;
+}
+{% endhighlight %}
+
+## Reset Row Height at runtime
+
+SfDataGrid allows you to customize the height of a grid row on demand by handling the [SfDataGrid.QueryRowHeight](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~QueryRowHeight_EV.html) event. This event is raised for the grid rows whenever they come to view and hence you can customize the height of a particular row on demand by using the row index. Setting height to zero will collapse all the row in the grid. 
+  
 ## Auto fit the grid rows based on content
 
 SfDataGrid provides support for AutoRowHeight feature by which you can customize the row's height based on the content. This can be achieved by using the `SfDatagrid.QueryRowHeight` event and [SfDatagrid.GetRowHeight](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGridHelpers~GetRowHeight(SfDataGrid,Int32,GridRowSizingOptions).html) method. `SfDatagrid.QueryRowHeight` event returns the row height on demand and `SfDatagrid.GetRowHeight` method returns the height of the row based on the content.
+
+N> Row drag and drop operation is not supported while customizing the row height based on content.
 
 The following code example illustrates how to hook the `SfDatagrid.QueryRowHeight` event and auto fit a row's height based on the content in SfDataGrid.
 
@@ -88,6 +138,72 @@ private void DataGrid_QueryRowHeight (object sender, QueryRowHeightEventArgs
 {% endhighlight %}
 
 ![](SfDataGrid_images/AutoRowHeight_forms.png)
+
+## Customize header row height based on header content
+
+SfDataGrid allows you to customize the height of the header row based on its content using the `SfDatagrid.QueryRowHeight` event and [SfDatagrid.GetRowHeight](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGridHelpers~GetRowHeight(SfDataGrid,Int32,GridRowSizingOptions).html) method.
+
+The following code example illustrates how to hook the `SfDatagrid.QueryRowHeight` event and change the header row height based on the content in SfDataGrid.
+
+{% highlight c# %}
+//Hooks QueryRowHeight event in SfDataGrid to set the header row height on demand
+dataGrid.QueryRowHeight += DataGrid_QueryRowHeight;
+
+private void DataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
+{
+    if (e.RowIndex == dataGrid.GetHeaderIndex())
+    {
+        e.Height = dataGrid.GetRowHeight(e.RowIndex);
+    }
+    e.Handled = true;
+}
+{% endhighlight %}
+
+![](SfDataGrid_images/HeaderRowHeight.png)
+
+## Customize caption summary row height
+
+SfDataGrid allows you to customize the height of the `CaptionSummaryRow` by setting the height of the caption rows in the `SfDataGrid.QueryRowHeight` event. By default the `CaptionSummaryRow` renders with the height of the [SfDataGrid.RowHeight](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGridHelpers~GetRowHeight(SfDataGrid,Int32,GridRowSizingOptions) which is `50`. 
+
+The following code example illustrates how to customize CaptionSummaryRow height in SfDataGrid.
+
+{% highlight c# %}
+//Hooks QueryRowHeight event in SfDataGrid to set the CaptionSummaryRow height on demand
+dataGrid.QueryRowHeight += DataGrid_QueryRowHeight;
+
+private void DataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
+{
+    if (dataGrid.IsCaptionSummaryRow(e.RowIndex))
+    {
+        e.Height = 70;
+    }
+    e.Handled = true;
+}
+{% endhighlight %}
+
+![](SfDataGrid_images/CaptionSummarRowHeight.png)
+
+## Change TableSummaryRow Height
+
+SfDataGrid allows you to customize the height of the `TableSummaryRow` by setting the height of the table summary rows in the `SfDataGrid.QueryRowHeight` event. By default the `TableSummaryRow` renders with the height of the [SfDataGrid.RowHeight](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~RowHeight.html) which is `50`. 
+
+The following code example illustrates how to customize header row height in SfDataGrid.
+
+{% highlight c# %}
+//Hooks QueryRowHeight event in SfDataGrid to set the CaptionSummaryRow height on demand
+dataGrid.QueryRowHeight += DataGrid_QueryRowHeight;
+
+private void DataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
+{
+    if (dataGrid.IsTableSummaryRow(e.RowIndex))
+    {
+        e.Height = 70;
+    }
+    e.Handled = true;
+}
+{% endhighlight %}
+
+![](SfDataGrid_images/TableSummaryRowHeight.png)
 
 ## How to ?
 

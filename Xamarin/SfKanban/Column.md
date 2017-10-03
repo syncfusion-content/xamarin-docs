@@ -132,7 +132,7 @@ The following output is displayed as a result of the above code example.
 
 Columns can be expanded/collapsed by tapping the toggle button which is placed at top right corner of the Kanban header. [`KanbanColumn.IsExpanded`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanColumn~IsExpanded.html) ‘ property is used to programmatically expand/collapse the Kanban column. The following code example describes the above behavior.   
 
-{% tab %}
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -168,7 +168,7 @@ You can enable and disable the drag and drop operation of the cards for particul
 
 The following code is used to disable the drag operation from progress column.
 
-{% tab %}
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -189,7 +189,7 @@ progressColumn.AllowDrag = false;
 
 The following code is used to disable the drop operation of the cards into the progress column.
 
-{% tab %}
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -214,6 +214,7 @@ The following output demonstrates the above example code.
 
 
 ## Items Count
+
 [`ItemsCount`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanColumn~ItemsCount.html) property is used to get the total cards count in each column.
 
 {% highlight C# %}
@@ -232,7 +233,7 @@ int count = todoColumn.ItemsCount;
 * [`MinValidationColor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanErrorBarSettings~MinValidationColor.html) - used to change the minimum validation color of the error bar.
 * [`Height`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanErrorBarSettings~Height.html) - used to change the height of the error bar.
 
-{% tab %}
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -252,7 +253,7 @@ todoColumn.MaximumLimit = 1;
 
 
 
-{% tab %}
+{% tabs %}
 
 {% highlight xaml %}
 

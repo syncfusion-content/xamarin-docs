@@ -413,4 +413,4 @@ N> The `SelectedIndex` property will be 0 by default.
 
 ![](images/gettingstarted.png)
 
-You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted1240666182)
+You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted89724085)

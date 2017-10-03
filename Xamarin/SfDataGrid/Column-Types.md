@@ -206,6 +206,22 @@ dataGrid.Columns.Add(new GridTextColumn() { MappingName = "OrderID", IsHidden = 
 {% endhighlight %}
 {% endtabs %}
 
+### LoadUIView
+[GridColumn.LoadUIView](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~LoadUIView.html) property denotes whether to load `UIElement` inside the `GridCell` or to draw the cell value directly in the `canvas` of the `GridCell` in Android platform. 
+
+* When `LoadUIView` is set as `false`, the cell value of the column is directly drawn in the `canvas` of the grid cells for improving performance. 
+* While setting the `LoadUIView` to `true`, a `UIElement` ([SfLabel](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfLabel.html)) is loaded inside the `GridCells`. Hence, instead of drawing the cell value in the canvas, the content of the TextView is set and hence the contents are wrapped. 
+
+The default value of the `LoadUIView` is `false` for Xamarin.Forms.Android and `true` for other platforms in Xamarin.Forms. 
+
+{% highlight c# %}
+
+GridTextColumn customerID = new GridTextColumn();
+customerID.MappingName = "Description";
+customerID.LoadUIView = true;
+
+{% endhighlight %}
+
 ## GridTextColumn
 
 GridTextColumn is derived from GridColumn and hence it inherits all the properties of GridColumn. It is used to host the textual content in the record cells. Each of the record cells in GridTextColumn displays the text based on the `MappingName` that associates the column with a property in the data source.
@@ -504,16 +520,37 @@ The below table provides the list of properties in GridTemplateColumn.
 
 The following code example shows templating of GridTemplateColumn. Underlying record will be the BindingContext for the `CellTemplate`.
 
+{% tabs %}
 {% highlight xaml %}
 <syncfusion:GridTemplateColumn MappingName="CustomerID">
     <syncfusion:GridTemplateColumn.CellTemplate>
         <DataTemplate>
-            <Label Text="{Binding CustomerID}" TextColor="Black" 
+            <Label Text="{Binding CustomerID}" TextColor="Blue" 
                    XAlign="Center" YAlign="Center" />
         </DataTemplate>
     </syncfusion:GridTemplateColumn.CellTemplate>
 </syncfusion:GridTemplateColumn> 
 {% endhighlight %}
+{% highlight c# %}
+GridTemplateColumn templateColumn = new GridTemplateColumn()
+{
+    MappingName = "CustomerID",
+    Width = 50,
+};
+var dataTemplate = new DataTemplate(() =>
+{
+var label = new Label()
+{
+    TextColor = Color.Blue,
+    VerticalOptions = LayoutOptions.Center,
+    HorizontalOptions = LayoutOptions.Center
+};
+label.SetBinding(Label.TextProperty, "CustomerID");
+return label;
+});
+templateColumn.CellTemplate = dataTemplate;
+{% endhighlight %}
+{% endtabs %}
 
 The following code example illustrates how template column can be used to load a stock cell inside it.
 
@@ -1096,6 +1133,10 @@ dataGrid.Columns.Add(numericColumn);
 * [NumberGroupSizes](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridNumericColumn~NumberGroupSizes.html) - You can change the number of digits in each group before the decimal point on numeric values using `GridNumericColumn.NumberGroupSizes` property.
 
 * [NumberNegativePattern](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridNumericColumn~NumberNegativePattern.html) - You can format the pattern of negative numeric values using `GridNumericColumn.NumberNegativePattern`.
+
+* [MinValue](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridEditorColumn~MinValue.html) - You can set the minimum value for the numeric column using `GridNumericColumn.MinValue` property.
+* [MaxValue](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridEditorColumn~MaxValue.html) - You can set the maximum value for the numeric column using `GridNumericColumn.MaxValue` property.
+
 
 ![](SfDataGrid_images/Editing_NumericColumn_Forms.png)
 

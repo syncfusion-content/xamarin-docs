@@ -187,4 +187,4 @@ namespace GettingStarted
 
 ![](images/Busyindicator.png)
 
-You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted776352567)
+You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted618636106)

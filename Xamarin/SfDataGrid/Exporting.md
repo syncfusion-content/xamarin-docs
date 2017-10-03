@@ -250,6 +250,12 @@ void excelExport_CellExporting(object sender, DataGridCellExcelExportingEvent
         e.Range.CellStyle.ColorIndex = Syncfusion.XlsIO.ExcelKnownColors.Blue;
         e.Range.CellStyle.PatternColorIndex = Syncfusion.XlsIO.ExcelKnownColors.White;
         e.CellValue = "HeaderCell";
+        e.Range.CellStyle.BeginUpdate();
+        e.Range.CellStyle.Borders.LineStyle = Syncfusion.XlsIO.ExcelLineStyle.Thin;
+        e.Range.CellStyle.Borders[ExcelBordersIndex.DiagonalDown].LineStyle = ExcelLineStyle.None;
+        e.Range.CellStyle.Borders[ExcelBordersIndex.DiagonalUp].LineStyle = ExcelLineStyle.None;
+        e.Range.CellStyle.Borders.Color = ExcelKnownColors.Black;
+        e.Range.CellStyle.EndUpdate();
     }
 
     if (e.CellType == ExportCellType.RecordCell) {
@@ -257,12 +263,24 @@ void excelExport_CellExporting(object sender, DataGridCellExcelExportingEvent
         e.Range.CellStyle.PatternColorIndex = Syncfusion.XlsIO.ExcelKnownColors.Black;
         if (e.CellValue is string)
             e.CellValue = "RecordCell";
+        e.Range.CellStyle.BeginUpdate();
+        e.Range.CellStyle.Borders.LineStyle = Syncfusion.XlsIO.ExcelLineStyle.Thin;
+        e.Range.CellStyle.Borders[ExcelBordersIndex.DiagonalDown].LineStyle = ExcelLineStyle.None;
+        e.Range.CellStyle.Borders[ExcelBordersIndex.DiagonalUp].LineStyle = ExcelLineStyle.None;
+        e.Range.CellStyle.Borders.Color = ExcelKnownColors.Black;
+        e.Range.CellStyle.EndUpdate();
     }
 
     if (e.CellType == ExportCellType.GroupCaptionCell) {
         e.Range.CellStyle.ColorIndex = Syncfusion.XlsIO.ExcelKnownColors.Grey_25_percent;
         e.Range.CellStyle.PatternColorIndex = Syncfusion.XlsIO.ExcelKnownColors.Blue;
         e.CellValue = "CaptionSummary";
+        e.Range.CellStyle.BeginUpdate();
+        e.Range.CellStyle.Borders.LineStyle = Syncfusion.XlsIO.ExcelLineStyle.Thin;
+        e.Range.CellStyle.Borders[ExcelBordersIndex.DiagonalDown].LineStyle = ExcelLineStyle.None;
+        e.Range.CellStyle.Borders[ExcelBordersIndex.DiagonalUp].LineStyle = ExcelLineStyle.None;
+        e.Range.CellStyle.Borders.Color = ExcelKnownColors.Black;
+        e.Range.CellStyle.EndUpdate();
     }
 }
 {% endhighlight %}

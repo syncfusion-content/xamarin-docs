@@ -13,16 +13,46 @@ This section explains you about how to enable selection in SfDataGrid and about 
 
 SfDataGrid lets you to select a specific row or group of rows either programmatically or by touch interactions. To enable Selection in SfDataGrid, you need to set the [SfDataGrid.SelectionMode](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectionMode.html) property to value other than `None`. SfDataGrid has different selection modes to perform selection operation as listed below.
 
-* None: Disables selection and no rows can be selected. This is the default value.
-* Single: Allows you to select a single row only. Upon selecting the next row the selection in the previous row is cleared.
-* Multiple: Allows you to select more than one row. Selection is not cleared when selecting more than one records. When you click on a selected row for the second time, selection is cleared.
-* SingleDeselect: Allows you to select only a single row, however upon tapping the row again the Selection is cleared. Similar to `Single` mode, upon selecting the next row the selection in the previous row is cleared.
+## Selection Modes 
+
+<table>
+<tr>
+<th> Modes </th>
+<th> Description </th>
+</tr>
+<tr>
+<td> {{'[None](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SelectionMode.html)'| markdownify }} </td>
+<td>Disables selection and no rows can be selected. This is the default value.</td>
+</tr>
+<tr>
+<td> {{'[Single](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SelectionMode.html)'| markdownify }} </td>
+<td> Allows you to select a single row only. Upon selecting the next row the selection in the previous row is cleared. </td>
+</tr>
+<tr>
+<td> {{'[Multiple](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SelectionMode.html)'| markdownify }}  </td>
+<td> Allows you to select more than one row. Selection is not cleared when selecting more than one records. When you click on a selected row for the second time, selection is cleared. </td>
+</tr>
+<tr>
+<td>  {{'[SingleDeselect](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SelectionMode.html)'| markdownify }}  </td>
+<td> Allows you to select only a single row, however upon tapping the row again the Selection is cleared. Similar to Single mode, upon selecting the next row the selection in the previous row is cleared. </td>
+</tr>
+</table>
 
 The following code example illustrates how to set the selection mode in SfDataGrid.
 
-{% highlight c# %}
-dataGrid.SelectionMode = SelectionMode.Single; 
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       ColumnSizer="Star"
+                       AutoGenerateColumns="True"
+                       SelectionMode="Multiple" 
+                       ItemsSource="{Binding OrdersInfo}"/>
 {% endhighlight %}
+{% highlight c# %}
+dataGrid.SelectionMode = SelectionMode.Multiple; 
+{% endhighlight %}
+{% endtabs %}
+
 
 
 ## Programmatic Selection
@@ -55,6 +85,27 @@ The following screenshot shows the selection functionality in SfDataGrid.
 
 ![](SfDataGrid_images/Selection.png)
 
+### CurrentItem
+
+[SfDataGrid.CurrentItem](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~CurrentItem.html) property holds the underlying data of the last selected row in a SfDataGrid. 
+
+You can get the current item in the `SfDataGrid.SelectionChanged` event, by setting the `SfDataGrid.SelectionMode` as `Multiple` or `SingleDeselect`. If the `SelectionMode` is `Single` currentItem and selectedItem are same.
+
+The below code example illustrates how to set the selection mode for SfDataGrid in the SelectionChanged event.
+
+{% highlight c# %}
+dataGrid.SelectionMode = SelectionMode.Multiple; 
+ 
+dataGrid.SelectionChanged += DataGrid_SelectionChanged; 
+ 
+void DataGrid_SelectionChanged (object sender, GridSelectionChangedEventArgs e) 
+{ 
+ var currentItem = dataGrid.CurrentItem; 
+
+ //your codes
+}   
+{% endhighlight %}
+ 
 ## Selection Events
 
 The SfDataGrid provides you the following events for Selection:
@@ -235,4 +286,4 @@ public class CustomSelectionController : GridSelectionController
 
 The following screenshot shows the selection animation in SfDataGrid.
 
-![](SfDataGrid_images/SelectionAnimation_Forms.png)
+![](SfDataGrid_images/SelectionAnimation.gif)

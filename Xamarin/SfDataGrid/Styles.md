@@ -141,7 +141,7 @@ public class CustomGridStyle : DataGridStyle
 
 ![](SfDataGrid_images/AlternateRowStyle.png)
 
-## Customizing the alernation count
+## Customizing the alternation count
 
 SfDataGrid allows you to customize the alternate row count for applying the alternate row style using the [SfDataGrid.AlternationCount](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AlternationCountProperty.html) property.
 

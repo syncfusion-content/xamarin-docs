@@ -81,7 +81,7 @@ N> DataGrid creates different types of views derived from `ICollectionViewAdv` i
 
 The following property is associated with `View`
 
-I> `View` related properties are use only afetr creating `SfDataGrid` view.
+I> `View` related properties are use only after creating `SfDataGrid` view.
 
 ### LiveDataUpdateMode
 

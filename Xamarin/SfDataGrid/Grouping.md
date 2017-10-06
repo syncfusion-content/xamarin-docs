@@ -169,7 +169,7 @@ this.dataGrid.CollapseAllGroup();
 #### Animate Expand and Collapse Icon
 
 SfDatagrid allows you to apply style to all of its elements by writing a Style class overriding  from DataGridStyle and assigning it to the SfDataGrid.GridStyle property.
-and then By overriding the GetGroupCollapseIcon() as null then icons will animate. 
+By overriding the GetGroupCollapseIcon() as null then icons will animate. 
 
 {% tabs %}
 {% highlight c# %}

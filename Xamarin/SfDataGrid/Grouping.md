@@ -166,6 +166,27 @@ this.dataGrid.CollapseAllGroup();
 {% endhighlight %}
 {% endtabs %}
 
+#### Animate Expand and Collapse Icon
+      SfDatagrid allows you to apply style to all of its elements by writing a Style class overriding  from DataGridStyle and assigning it to the SfDataGrid.GridStyle property. By overriding the GetGroupCollapseIcon() as null then icons will animate. 
+{% tabs %}
+{% highlight c# %}
+//Apply custom style to SfDataGrid from code 
+dataGrid.GridStyle = new CustomStyle ();
+
+//Custom Style class
+ public class CustomStyle : DataGridStyle
+{ 
+   public CustomStyle () 
+    {
+    }
+   public override ImageSource GetGroupCollapseIcon()
+    { 
+     return null;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
 #### Expand or Collapse the specific Group
 
 You can expand or collapse specific group by using [SfDataGrid.ExpandGroup](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ExpandGroup.html) and [SfDataGrid.CollapseGroup](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~CollapseGroup.html) methods.

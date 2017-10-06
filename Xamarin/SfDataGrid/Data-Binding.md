@@ -79,7 +79,9 @@ When you bind collection to [ItemsSource](http://help.syncfusion.com/cr/cref_fil
 
 N> DataGrid creates different types of views derived from `ICollectionViewAdv` interface based on `ItemsSource`.
 
-The following property is associated with `View`.
+The following property is associated with `View`
+
+I> `View` related properties can be used only after creating `SfDataGrid` view. Hence changes related to view can be done in `SfDataGrid.GridViewCreated` or `SfDataGrid.GridLoaded` event or in runtime only. 
 
 ### LiveDataUpdateMode
 

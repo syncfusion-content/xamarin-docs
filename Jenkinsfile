@@ -3,7 +3,7 @@ node('content')
 String platform='Xamarin';
    try
 	{   
-		//Clone scm repository in Workspace source directory
+ 	//Clone scm repository in Workspace source directory
 		stage ('Checkout')   
 	    { 
 	    dir('Spell-Checker') 

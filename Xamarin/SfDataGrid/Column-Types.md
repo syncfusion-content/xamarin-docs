@@ -314,9 +314,9 @@ The FontFamily for the content of header cell in the GridColumn can be customize
 
 #### FontAttribute
 
-The FontAttribute for the content of record cells in GridColumn can be customized by using the `[GridColumn.FontAttribute]`.The record cells text can be customized as bold or Italic font attributes using this property.The default value for Font Attribute is `None`.
+The FontAttribute for the content of record cells in GridColumn can be customized by using the `[GridColumn.FontAttribute]`.The record cells text can be customized as `Bold` or `Italic` or `None`. The default value for this property is `None`.
 
-    The following code example illustrates how to set the Font Attribute in SfDataGrid
+The below code example illustrates how to set the font attribute for a column in a SfDataGrid.
     
 {% tabs %}
 {% highlight xaml %}
@@ -333,7 +333,7 @@ The FontAttribute for the content of record cells in GridColumn can be customize
          dataGrid.Columns.Add (new GridTextColumn ()
         { 
             MappingName = "Freight",
-            FontAttribute = FontAttribute.Bold
+            FontAttribute = FontAttribute.Bold,
 
         });
 
@@ -341,7 +341,7 @@ The FontAttribute for the content of record cells in GridColumn can be customize
 {% endtabs %}
 
 Run the application to render the following output.
-![](SfDataGrid_images/FontAttribute.png)
+![](SfDataGrid_images/FontAttribute_Bold.png)
 
 #### TextAlignment
 

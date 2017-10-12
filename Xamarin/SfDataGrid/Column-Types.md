@@ -312,6 +312,37 @@ The FontSize for the content of record cells in GridColumn can be customized by 
 
 The FontFamily for the content of header cell in the GridColumn can be customized by using the [GridColumn.RecordFont](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~RecordFont.html) property. The default value font used in SfDataGrid is `Helvetica Neue`.
 
+#### FontAttribute
+
+The FontAttribute for the content of record cells in GridColumn can be customized by using the `[GridColumn.FontAttribute]`.The record cells text can be customized as bold or Italic font attributes using this property.The default value for Font Attribute is `None`.
+
+    The following code example illustrates how to set the Font Attribute in SfDataGrid
+    
+{% tabs %}
+{% highlight xaml %}
+
+  <sfgrid:SfDataGrid x:Name="dataGrid" ItemsSource="{Binding OrdersInfo}">
+     <sfgrid:SfDataGrid.Columns>
+      <sfgrid:GridTextColumn MappingName="Freight" FontAttribute="Bold" />
+      </sfgrid:SfDataGrid.Columns>
+   </sfgrid:SfDataGrid>
+
+{% endhighlight %}
+{% highlight c# %}
+
+         dataGrid.Columns.Add (new GridTextColumn ()
+        { 
+            MappingName = "Freight",
+            FontAttribute = FontAttribute.Bold
+
+        });
+
+{% endhighlight %}
+{% endtabs %}
+
+Run the application to render the following output.
+![](SfDataGrid_images/FontAttribute.png)
+
 #### TextAlignment
 
 You can get or set the TextAlignment of the header cell in the GridColumn by using the [GridColumn.TextAlignment](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~TextAlignment.html) property. The default alignment for the record cells in SfDataGrid is `Center` and you can customize this to `Start` or `End`.

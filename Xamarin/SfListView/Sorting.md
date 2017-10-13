@@ -46,7 +46,7 @@ listView.RefreshView();
 {% endhighlight %}
 {% endtabs %}
 
-N> It is mandatory to specify the PropertyName for SortDescriptor.
+N> It is mandatory to specify the `PropertyName` of `SortDescriptor`.
 
 The following screenshot shows the output rendered when the sorting is applied.
 

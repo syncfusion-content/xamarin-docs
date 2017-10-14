@@ -46,6 +46,8 @@ listView.RefreshView();
 {% endhighlight %}
 {% endtabs %}
 
+N> It is mandatory to specify the `PropertyName` of `SortDescriptor`.
+
 The following screenshot shows the output rendered when the sorting is applied.
 
 ![](SfListView_images/SfListView-Sorting.png)

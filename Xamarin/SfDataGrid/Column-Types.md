@@ -341,7 +341,7 @@ The below code example illustrates how to set the font attribute for a column in
 {% endtabs %}
 
 Run the application to render the following output.
-![](SfDataGrid_images/FontAttribute_Bold.png)
+![](SfDataGrid_images/FontAttribute_Bold_Forms.png)
 
 #### TextAlignment
 

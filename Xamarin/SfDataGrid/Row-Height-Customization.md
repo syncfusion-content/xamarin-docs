@@ -60,6 +60,24 @@ void DataGrid_QueryRowHeight (object sender, QueryRowHeightEventArgs e)
 } 
 {% endhighlight %}
 
+### QueryRowHeights Customization
+
+SfDataGrid allows you to query a range of rows programmatically by using the `SfDataGrid.QueryingRowHeights` method based on the requirement. 
+
+QueryRowHeights has two arguments start index and end index.
+* Start index: It indicates, from which row index the `SfDataGrid.QueryRowHeight` event has to fire.
+* End index: It indicates the end row index for the `SfDataGrid.QueryRowHeight` event to fire.
+
+The following code illustrates how to customize the row height for a range of rows in SfDataGrid.
+
+{% highlight c# %}
+
+//Customizing the QueryingRowHeights in SfDataGrid
+dataGrid.QueringRowHeights(2,5);
+//Its starts to query the rows from second row to the fifth row.
+{% endhighlight %}
+
+
 ## GridRowSizingOptions
 
 SfDataGrid allows you to customize the grid row's height with various customizing options while auto calculating the row height based on content using the `GridRowSizingOptions`.

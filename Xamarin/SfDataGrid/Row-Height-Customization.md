@@ -73,7 +73,7 @@ The following code illustrates how to customize the row height for a range of ro
 {% highlight c# %}
 
 //Customizing the QueryingRowHeights in SfDataGrid
-dataGrid.QueringRowHeights(2,5);
+dataGrid.QueryingRowHeights(2,5);
 //Its starts to query the rows from second row to the fifth row.
 {% endhighlight %}
 

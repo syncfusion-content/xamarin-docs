@@ -1,5 +1,8 @@
 node('content')
 { 
+timestamps
+  {
+     timeout(time: 7200000, unit: 'MILLISECONDS') {
 String platform='Xamarin';
    try
 	{   
@@ -50,6 +53,8 @@ if(currentBuild.result != 'FAILURE')
          archiveArtifacts artifacts: 'cireports/', excludes: null 	 
     }
 	    step([$class: 'WsCleanup'])	
+	    }
+	}
 }
 @NonCPS
 def changeLogs(){

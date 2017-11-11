@@ -25,3 +25,8 @@ this.Content = numericTextBox;
 
 ![](images/Culture.png)
 
+## Change Localization of Return key text
+
+The SfNumericTextBox provides the Localization support for the Return Key in soft keypad of iOS. We have provided the knowledge base document for the same. Please refer this link for more details.
+
+

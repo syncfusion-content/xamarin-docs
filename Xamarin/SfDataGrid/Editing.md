@@ -26,7 +26,7 @@ dataGrid.AllowEditing = true;
 
 ![](SfDataGrid_images/Editing_Column_Forms.png)
 
-N> If you set [ValueBinding](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~ValueBinding.html) property explicitly, then you have to set the `Mode` of `ValueBinding` property as "TwoWay" to update the underlying property as soon as after editing the cell value.  
+N> If you set [ValueBinding](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~ValueBinding.html) property explicitly, then you have to set the `Mode` of `ValueBinding` property as "TwoWay" for updating the underlying property as soon as after editing the cell value.  
 
 ## Column Editing
 

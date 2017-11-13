@@ -1,3 +1,4 @@
+---
 layout: post
 title: EnableGroupSeparator in Syncfusion NumericTextBox control for Xamarin.Forms
 description: Learn how to set EnableGroupSeparator the  NumericTextBox

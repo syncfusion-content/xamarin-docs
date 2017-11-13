@@ -34,6 +34,7 @@ The following example explains you how to apply custom style to SfDatagrid.
 {% endhighlight %}
 {% highlight c# %}
 //Apply custom style to SfDataGrid from code
+SfDataGrid dataGrid = new SfDataGrid();
 dataGrid.GridStyle = new Dark ();
 {% endhighlight %}
 {% endtabs %}
@@ -117,7 +118,7 @@ N> Xamarin.Forms.Style which has specified target type will not be applied to th
 
 ## Applying alternate row style
 
-SfDataGrid allows you to apply the alternative row style by writing a Style class overriding from DataGridStyle and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridStyle.html) property.
+SfDataGrid allows you to apply the alternative row style by writing a Style class deriving from `DataGridStyle` and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridStyle.html) property.
 
 The below code illustrates how to apply alternate row style.
 
@@ -241,8 +242,57 @@ The following screenshot shows the final outcome upon execution of the above cod
 
 ![](SfDataGrid_images/BorderCustomization_None.png)
 
-## Customizing the sort icons in header
+## Header border color customization
+SfDataGrid allows you to customize the header border color for different `DataGridStyle.GridLinesVisibility` by writing a custom style class deriving from `DataGridStyle` and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridStyle.html) property. Override the `GetHeaderBorderColor` method in the custom style to customize the color of column header and row header.
 
+The below code illustrates how to customize the header border color by writing a custom style in a SfDataGrid. 
+
+{% tabs %}
+{% highlight xaml %}
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms"
+             xmlns:local ="clr-namespace:DataGridSample;assembly=DataGridSample"
+             x:Class="DataGridSample.Sample">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:CustomStyle x:Key="customStyle" />
+        </ResourceDictionary>
+    </ContentPage. mResources>
+
+    <syncfusion:SfDataGrid x:Name="dataGrid"
+                GridStyle="{StaticResource customStyle}"
+                ItemsSource="{Binding OrdersInfo}" />
+</ContentPage> 
+{% endhighlight %}
+{% highlight c# %}
+//Applying custom style to SfDataGrid from code to customize header border color
+SfDataGrid dataGrid = new SfDataGrid();
+dataGrid.GridStyle = new customStyle ();
+{% endhighlight %}
+{% endtabs %}
+
+ {% highlight c# %}
+//Custom style class
+public class CustomStyle : DataGridStyle
+{
+    Public CustomStyle()
+    {
+        
+    }
+    
+    Public override color GetHeaderBorderColor()
+    {
+        return Color.Red;
+    } 
+}
+{% endhighlight %}
+
+The following screenshot shows the final outcome upon execution of the above code.
+![](SfDataGrid_images/HeaderBorderCustomization_Both.png)
+
+## Customizing the sort icons in header
 
 You can load any desired image as the sort indicator in the SfDataGrid using the [GetHeaderSortIndicatorDown](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetHeaderSortIndicatorDown.html) and [GetHeaderSortIndicatorUp](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetHeaderSortIndicatorUp.html) overrides of the [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle.html) class. The following code example illustrates how to change the sort indicators in SfDataGrid.
 

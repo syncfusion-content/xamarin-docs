@@ -269,6 +269,35 @@ The [SfDataGrid.GroupCollapsed](http://help.syncfusion.com/cr/cref_files/xamarin
 
 `Syncfusion.Data.Group` - Gets the collapsed group.
 
+## Animate group expand/collapse icon
+
+SfDatagrid loads two different icons for denoting the group expanded and collapsed state. However, SfDataGrid allows you to rotate the expander icon animatedly for denoting the collapsed status by overriding the `DataGridStyle.GetGroupCollapseIcon` method and returning `null`.
+
+The below code example illustrates how to enable the group/expand collapse icons animation by writing a custom style. 
+
+{% tabs %}
+{% highlight c# %}
+
+//Apply custom style to SfDataGrid from code 
+
+dataGrid.GridStyle = new CustomStyle ();
+
+//Custom Style class
+
+public class CustomStyle : DataGridStyle
+{ 
+   public CustomStyle ()
+   {
+       
+   }
+   public override ImageSource GetGroupCollapseIcon()
+   {
+       return null;
+   }
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 ## How to hide the grouped column in SfDataGrid?
 

@@ -23,6 +23,8 @@ SfListView for Xamarin.Forms renders set of data items with Xamarin.Forms views 
 
 * Supports linear layout and grid layout.
 
+* Reordering items by dragging and dropping them in a linear layout with displaying custom UI in a template.
+
 * Orientation support.
 
 * Data operations such as sorting, grouping and filtering.

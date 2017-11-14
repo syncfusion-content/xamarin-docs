@@ -53,8 +53,8 @@ N> If grouping is enabled, group header item index is also included in the index
 
 {% highlight c# %}
 
-int itemindex = listView.DataSource.DisplayItems.IndexOf(viewModel.Customers[2]); 
-listView.LayoutManager.ScrollToRowIndex(itemindex, true); 
+int index = listView.DataSource.DisplayItems.IndexOf(viewModel.Customers[2]); 
+listView.LayoutManager.ScrollToRowIndex(index, true); 
 
 {% endhighlight %}
 

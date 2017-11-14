@@ -47,15 +47,21 @@ When SfListView is loaded in CarouselView with `SfListView.AllowSwiping` as true
 
 ### Scroll to Row Index
 
-SfListView allows you to scroll programmatically to a row based on index by using [ScrollToRowIndex](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LayoutBase~ScrollToRowIndex.html) method of linear layout or grid layout.
+SfListView allows you to scroll programmatically to a row based on index by using [ScrollToRowIndex](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LayoutBase~ScrollToRowIndex.html) method for both linear and grid layouts. Also, provided support to enable and disable the scrolling animation while changing the view. By default, the scrolling animation is `false`.
+
+N> If grouping is enabled, group header item index is also included in the index parameter and you can get the desired item index by passing the underlying data in [DisplayItems.IndexOf](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DisplayItems~IndexOf.html) method.
 
 {% highlight c# %}
 
-(listView.LayoutManager as LinearLayout).ScrollToRowIndex(50);   
-// Or
-(listView.LayoutManager as GridLayout).ScrollToRowIndex(20);
+int itemindex = listView.DataSource.DisplayItems.IndexOf(viewModel.Customers[2]); 
+listView.LayoutManager.ScrollToRowIndex(itemindex, true); 
 
 {% endhighlight %}
+
+### Limitation in Scroll to Row Index
+
+* When [AutoFitMode](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AutoFitMode.html) is `Height`, scroll animation will be disabled by default in android and iOS platforms. 
+* If [ScrollToRowIndex](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LayoutBase~ScrollToRowIndex.html) method is called while loading the `SfListView`, then set `disableAnimation` as `true` to scroll to appropriate row index, else view doesn't scrolled in android.
 
 ## Events
 

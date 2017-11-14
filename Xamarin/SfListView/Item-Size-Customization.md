@@ -38,7 +38,7 @@ listView.AutoFitMode = AutoFitMode.Height;
 
 N> If define any size manually to view which loaded in [SfListView.ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html), SfListView will returns that size as item size of each item. 
 
-The following screenshot shows the output of AutoFit items. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListView_AutoFitItems-6769625)
+The following screenshot shows the output of AutoFit items. You can download the entire source code of this demo from [here](http://files2.syncfusion.com/Xamarin.Forms/Samples/ListView_AutoFitItems.zip)
 
 ![](SfListView_images/AutofitItems.png)
 
@@ -71,6 +71,5 @@ private void ListView_QueryItemSize(object sender, Syncfusion.ListView.XForms.Qu
 
 ## Limitations
 
-* Need to set the maximum size among the measured size of each item to the [ItemSize](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemSize.html) property. For e.g., If expected measured size of items like `Item1 as 150`, `Item2 as 50`, `Item3 as 180` and `Item4 as 90`, then we need to set `ItemSize` as `200` to avoid the reverse scrolling when scroll to end of SfListView. Also, you can get the measured item size for each item from the [QueryItemSize](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~QueryItemSize_EV.html) event on scrolling.
 * To define the size of the image when load image in the [SfListView.ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html). Because, it doesn't returns actual measured size while measuring before layout the item.
 * Avoid SfListView inside SfListView if [SfListView.AutoFitMode](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AutoFitMode.html) as Height, because inner SfListView doesn't returns actual measured size while measuring before layout the item.

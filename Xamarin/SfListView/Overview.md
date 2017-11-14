@@ -35,4 +35,14 @@ SfListView for Xamarin.Forms renders set of data items with Xamarin.Forms views 
 
 * Header and Footer with sticky options.
 
+## Advantages in SfListView
+ 
+* Better scrolling performance equivalent to native platforms.
+
+* Support for `DataTemplateSelector` for item template, group header template and swipe templates.
+
+* Support for notifying the different scroll states.
+
+* Support for reordering the items by dragging and dropping them in `Linear` layout.
+
 ![](SfListView_images/Overview.png)

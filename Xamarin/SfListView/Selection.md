@@ -60,9 +60,13 @@ listView.SelectAll();
 
 SfListView allows you to get all the selected items through [SelectedItems](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItems.html) property.
 
+N>  You cannot set or bind the value to the `SelectedItems` property, you can only add, remove or reset the items to the predefined value of `SelectedItems` property to update the selection.
+
 ### CurrentItem vs SelectedItem
 
 SfListView allows you to get the selected item by using [SelectedItem](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItem.html) and [CurrentItem](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~CurrentItem.html) properties. Both `SelectedItem` and `CurrentItem` returns the same data object when single item is selected. When more than one items are selected, then `SelectedItem` property returns the first selected item and `CurrentItem` property returns the last selected item.
+
+N> `SelectedItem` and `CurrentItem` properties will be based on `ItemsSource` value. so, you need to define the value which contains in underlying collection to `SelectedItem` or `CurrentItem` property to update the selection.
 
 ## Clear Selected Items
 You can clear the selected items by calling the [SelectedItems.Clear()](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItems.html) method.
@@ -117,6 +121,8 @@ private void ListView_OnSelectionChanged(object sender, ItemSelectionChangedEven
    listView.SelectedItems.Clear();
 }
 {% endhighlight %}
+
+N> [SelectionChanging](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionChanging_EV.html) and [SelectionChanged](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionChanged_EV.html) events will be triggered only on UI interactions.
 
 ## Customize the Selected Items
 

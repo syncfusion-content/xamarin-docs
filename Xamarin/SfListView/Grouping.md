@@ -330,6 +330,22 @@ The [GroupExpandCollapseChangedEventArgs](https://help.syncfusion.com/cr/cref_fi
 
 ## How To 
 
+### Group the items by ignoring the case sensitive
+
+SfListView lets you to group the items by ignoring the case sensitive by using `KeySelector` property in the [GroupDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor.html). While returning the `KeySelector`, convert the required property name in the data model which needed to be group either as `Upper` or `Lower` case as per the requirement and the items will be grouped based on the `KeySelector` with the case sensitive which has been returned in it.
+
+{% highlight c# %}
+listView.DataSource.GroupDescriptors.Add(new GroupDescriptor() 
+{ 
+  PropertyName = "ContactName", 
+  KeySelector = (object obj) => 
+  { 
+    return (obj as Contacts).ContactName.ToUpper()[0]; 
+  } 
+}); 
+{% endhighlight %}
+
+
 ### Multilevel Grouping in SfListView
 
 SfListView lets you to arrange the grouped items in hierarchical structure by customizing the [GroupHeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~GroupHeaderTemplate.html) property and by adding the multiple [GroupDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor.html) objects into the [GroupDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~GroupDescriptors.html) collection. 

@@ -490,7 +490,7 @@ public class OrderInfoRepository
 
         string[] FirstNames = new string[] {"Kyle","Gina","Irene","Katie","Michael"};
         string[] LastNames = new string[] {"Adams","Crowley","Ellis","Gable","Irvine"};
-        string[] Customer = new string[] {"Alfki","Frans","Merep","Folko","Simob"};
+        string[] Customer = new string[] {"Alfie","Frans","Mered","Folios","Simon"};
         string[] country = new string[] {"US","Australia","Canada","UK","India"};
       }
 
@@ -536,7 +536,7 @@ using Syncfusion.ListView.XForms;
 
 3.	Define SfListView as PullableContent of the SfPullToRefresh. 
 4.	Handle the pull to refresh events for refreshing the data. 
-5.	Customize the required properties of SfListView and SfPullToRefesh based on your requirement. 
+5.	Customize the required properties of SfListView and SfPullToRefresh based on your requirement. 
 
 This is how the final output will look like on iOS, Android and Windows Phone devices when hosting a SfListView control as pullable content.
 

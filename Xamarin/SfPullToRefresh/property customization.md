@@ -300,22 +300,13 @@ EndRefreshing method is used to ends the progress animation of `SfPullToRefresh`
 {% endtabs %}
 
 
-## Hosting complex and custom layouts as pullable content
-
-### Host SfDataGrid as pullable content
+## Host SfDataGrid as pullable content
 
 SfPullToRefresh controls provides support for loading any custom control as pullable content. To host SfDatagrid inside the SfPullToRefresh, follow the below steps.
 
-1.	Add the required assembly references to the pcl and renderer projects as discussed in the [Assembly deployment](#assembly-deployment) section of SfDataGrid and SfPullToRefresh.
+1.	Add the required assembly references to the pcl and renderer projects as discussed in the [Assembly deployment](https://help.syncfusion.com/xamarin/sfdatagrid/getting-started#assembly-deployment) section of SfDataGrid and SfPullToRefresh.
 2.	Import SfPullToRefresh and SfDataGrid control namespace as follows.
-
 {% tabs %}
-{% highlight c# %}
-
-using Syncfusion.SfPullToRefresh.XForms;
-using Syncfusion.SfDataGrid.XForms;
-
-{% endhighlight %}
 
 {%highlight Xaml%}
 
@@ -323,6 +314,15 @@ using Syncfusion.SfDataGrid.XForms;
 <xmlns:pull="clr-namespace:Syncfusion.SfPullToRefresh.XForms;assembly=Syncfusion.SfPullToRefresh.XForms">
 
 {%endhighlight%}
+
+
+{% highlight c# %}
+
+using Syncfusion.SfPullToRefresh.XForms;
+using Syncfusion.SfDataGrid.XForms;
+
+{% endhighlight %}
+
 {% endtabs %}
 
 3.	Define SfDataGrid as PullableContent of the SfPullToRefresh. 
@@ -507,21 +507,13 @@ If we run the above sample with TransitionMode as Push, the output will look lik
 ![](hostingsfdatagrid_images/PUSH-Xamarin.Forms.gif)
 
 
-### Host SfListView as pullable content
+## Host SfListView as pullable content
 
 To host SfListView inside the SfPullToRefresh which is used to update items in the list while performing the pull to refresh action.
 
-1.	Add the required assembly references to the pcl and renderer projects as discussed in the [Assembly deployment](#assembly-deployment) section of SfListView and SfPullToRefresh.
+1.	Add the required assembly references to the pcl and renderer projects as discussed in the [Assembly deployment](https://help.syncfusion.com/xamarin/sflistview/getting-started#assembly-deployment) section of SfListView and SfPullToRefresh.
 2.	Import SfPullToRefresh control and SfListView control namespace as follows.
-
 {% tabs %}
-
-{% highlight c# %}
-
-using Syncfusion.SfPullToRefresh.XForms;
-using Syncfusion.ListView.XForms;
-
-{% endhighlight %}
 
 
 {%highlight Xaml%}
@@ -531,6 +523,15 @@ using Syncfusion.ListView.XForms;
 
 
 {%endhighlight%}
+
+
+{% highlight c# %}
+
+using Syncfusion.SfPullToRefresh.XForms;
+using Syncfusion.ListView.XForms;
+
+{% endhighlight %}
+
 
 {% endtabs %}
 

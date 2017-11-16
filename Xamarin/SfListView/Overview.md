@@ -35,14 +35,26 @@ SfListView for Xamarin.Forms renders set of data items with Xamarin.Forms views 
 
 * Header and Footer with sticky options.
 
-## Advantages in SfListView
+## Advantages of SfListView over Xamarin Forms ListView
  
-* Better scrolling performance equivalent to native platforms.
+* Support for `Orientation` (i.e., ListView orientation such as `Horizontal` and `Vertical`).
 
-* Support for `DataTemplateSelector` for item template, group header template and swipe templates.
+* Support for different layouts such as `Linear Layout` and `GridLayout`.
+
+* Support for `Swiping` to both left and right swipe.
+
+* Support for `Header` and `Footer` with sticky and non-sticky option.
 
 * Support for notifying the different scroll states.
 
-* Support for reordering the items by dragging and dropping them in `Linear` layout.
+* Support for reordering the items by dragging and dropping actions in `Linear` layout.
+
+* Support for `SelectionBackground` Color.
+
+* Support for `Sorting` and `Filtering` (including custom sorting and filtering).
+
+* Support for `Grouping`, `Custom Grouping` with sticky and non-sticky option.
+
+* `DataTemplateSelector` support for header, footer, group header, swipe view and data items.
 
 ![](SfListView_images/Overview.png)

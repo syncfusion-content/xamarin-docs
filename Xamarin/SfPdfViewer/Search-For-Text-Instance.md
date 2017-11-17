@@ -363,8 +363,34 @@ The colors in which the current instance and other instances are highlighted can
 {% tabs %}
 {% highlight c# %}
 
-pdfViewerControl.TextSearchSettings.OtherInstanceColor = Color.FromRgba(255, 0, 0, 200);
-pdfViewerControl.TextSearchSettings.CurrentInstanceColor = Color.FromRgba(0, 0, 255, 200);
-
+pdfViewerControl.TextSearchSettings.OtherInstanceColor = Color.FromRgba(255, 255, 0, 50);
+pdfViewerControl.TextSearchSettings.CurrentInstanceColor = Color.FromRgba(255, 255, 0, 90);
+{% endhighlight %}
+{% endtabs %}
+{% tabs %}
+{% highlight xaml %}
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GettingStarted"
+             x:Class="GettingStarted.MainPage"
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms"
+             >
+	 <ContentPage.Resources>
+        <ResourceDictionary>
+            <sfpdfviewer:TextSearchSettings x:Key="SearchSettings">
+                <sfpdfviewer:TextSearchSettings.CurrentInstanceColor>
+                    <Color>#90FFFF00</Color>
+                </sfpdfviewer:TextSearchSettings.CurrentInstanceColor>
+                <sfpdfviewer:TextSearchSettings.OtherInstanceColor>
+                    <Color>#50FFFF00</Color>
+                </sfpdfviewer:TextSearchSettings.OtherInstanceColor>
+            </sfpdfviewer:TextSearchSettings>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <Grid x:Name="mainGrid">
+            <syncfusion:SfPdfViewer x:Name="pdfViewerControl" TextSearchSettings="{StaticResource Key=SearchSettings}"/>
+    </Grid>
+</ContentPage>
 {% endhighlight %}
 {% endtabs %}

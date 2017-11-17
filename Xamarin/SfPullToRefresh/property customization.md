@@ -497,11 +497,6 @@ public class OrderInfoRepository
 
 {% endhighlight %}
 
-{% endtabs %}
-
-{% tabs %}
-
-
 If we run the above sample with TransitionMode as Push, the output will look like on iOS, Android and Windows Phone devices as shown below.
 
 ![](hostingsfdatagrid_images/PUSH-Xamarin.Forms.gif)
@@ -628,8 +623,3 @@ namespace PullToRefreshSample
 
 
 {% endhighlight %}
-
-{% endtabs %}
-
-{% tabs %}
-

@@ -376,9 +376,6 @@ pdfViewerControl.TextSearchSettings.CurrentInstanceColor = Color.FromRgba(255, 2
              x:Class="GettingStarted.MainPage"
              xmlns:syncfusion="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms"
              >
-    <ContentPage.BindingContext>
-        <local:PdfViewerViewModel></local:PdfViewerViewModel>
-    </ContentPage.BindingContext>
 	 <ContentPage.Resources>
         <ResourceDictionary>
             <sfpdfviewer:TextSearchSettings x:Key="SearchSettings">
@@ -392,45 +389,7 @@ pdfViewerControl.TextSearchSettings.CurrentInstanceColor = Color.FromRgba(255, 2
         </ResourceDictionary>
     </ContentPage.Resources>
     <Grid x:Name="mainGrid">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="50" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-        <AbsoluteLayout>
-            <Grid x:Name="toolbar" Grid.Row="0" BackgroundColor="#E9E9E9" HorizontalOptions="Fill" VerticalOptions="Fill" IsVisible="{Binding IsGridVisible}">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="1*" />
-                    <ColumnDefinition Width="0.4*" />
-                    <ColumnDefinition Width="1*" />
-                    <ColumnDefinition Width="1*" />
-                    <ColumnDefinition Width="1*" />
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="1*" />
-                </Grid.ColumnDefinitions>
-                <Entry Keyboard="Numeric" FontSize="18" x:Name="pageNumberEntry" HorizontalTextAlignment="Center" Grid.Column="0" VerticalOptions="Center" Text="{Binding PageNumber, Source={x:Reference Name=pdfViewerControl}}"/>
-                <Label Text="/" Grid.Column="1" FontSize="18" x:Name="slashLabel"  VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
-                <Label x:Name="pageCountLabel" Grid.Column="2" FontSize="18" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Text="{Binding PageCount, Source={x:Reference Name=pdfViewerControl}}"/>
-                <Button x:Name="goToNextButton"  Grid.Column="3" BackgroundColor="Transparent" Image="PageDown.png" HorizontalOptions="Center" VerticalOptions="Center" Command="{Binding GoToNextPageCommand, Source={x:Reference Name=pdfViewerControl}}"/>
-                <Button x:Name="goToPreviousButton" Grid.Column="4" BackgroundColor="Transparent" Image="PageUp.png" HorizontalOptions="Center" VerticalOptions="Center" Command="{Binding GoToPreviousPageCommand, Source={x:Reference Name=pdfViewerControl}}"/>
-                <Button x:Name="searchButton" Grid.Column="6" BackgroundColor="Transparent" Image="SearchIcon.png" HorizontalOptions="Start" Command="{Binding SearchAndToolbarToggleCommand}"/>
-            </Grid>
-            <Grid x:Name="searchBar" Grid.Row="0" BackgroundColor="#E9E9E9" HorizontalOptions="Fill" VerticalOptions="Fill" IsVisible="{Binding IsSearchBarVisible}">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="5*" />
-                    <ColumnDefinition Width="1.5*" />
-                    <ColumnDefinition Width="1.5*" />
-                    <ColumnDefinition Width="1.5*" />
-                </Grid.ColumnDefinitions>
-                <Button x:Name="backIcon" Grid.Column="0" BackgroundColor="Transparent" Image="BackIcon.png" HorizontalOptions="Start" VerticalOptions="Center" Command="{Binding SearchAndToolbarToggleCommand}"/>
-                <Entry Grid.Column="1" x:Name="textSearchEntry" FontSize="18" HorizontalTextAlignment="Center" HorizontalOptions="Fill" VerticalOptions="Center"/>
-                <Button x:Name="searchTextButton" Grid.Column="2" BackgroundColor="Transparent" Image="SearchIcon.png" HorizontalOptions="Start" Command="{Binding SearchTextCommand, Source={x:Reference Name=pdfViewerControl}}" CommandParameter="{Binding Source ={x:Reference textSearchEntry}, Path=Text}"/>
-                <Button x:Name="cancelSearchButton" Grid.Column="3" BackgroundColor="Transparent" Image="CancelSearch.png" HorizontalOptions="Start" VerticalOptions="Center" Command="{Binding CancelSearchTextCommand, Source={x:Reference Name=pdfViewerControl}}"/>
-            </Grid>
-        </AbsoluteLayout>
-        <Grid x:Name="pdfViewGrid" Grid.Row="1">
-            <syncfusion:SfPdfViewer x:Name="pdfViewerControl" InputFileStream="{Binding PdfDocumentStream}" TextSearchSettings="{StaticResource Key=SearchSettings}"/>
-        </Grid>
+            <syncfusion:SfPdfViewer x:Name="pdfViewerControl" TextSearchSettings="{StaticResource Key=SearchSettings}"/>
     </Grid>
 </ContentPage>
 {% endhighlight %}

@@ -30,6 +30,13 @@ When the SfListView is loaded inside a ScrollView or any layout such as Grid, St
 </StackLayout>
 {% endhighlight %}
 
+## Load the SfListView inside a SfPullToRefresh
+SfPullToRefresh is a refresh control that allows you to interact and refresh the view loaded in it. When the SfListView is loaded inside the SfPullToRefresh, it is used to refresh the item while performing the pull to refresh action. The steps to be followed to load the SfListView inside SfPullToRefresh is explained in SfPullToRefresh Property Customization tab.
+
+The final output will look like on iOS, Android and Windows Phone devices as shown below.
+
+![](SfListView_images/SfListView-Push_XForms.png)
+
 ## Load the SfListView in CarouselView
 
 When the SfListView is loaded in CarouselView with [SfListView.AllowSwiping](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AllowSwiping.html) as false, SfListView will behave like below in UWP platform. 

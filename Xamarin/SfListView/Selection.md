@@ -60,13 +60,13 @@ listView.SelectAll();
 
 SfListView allows you to get all the selected items through [SelectedItems](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItems.html) property.
 
-N>  You cannot set or bind the value to the `SelectedItems` property, you can only add, remove or reset the items to the predefined value of `SelectedItems` property to update the selection.
+N>  You cannot set or bind the value to the `SelectedItems` property, you can only add, remove or reset the items to the `SelectedItems` property to update the selection.
 
 ### CurrentItem vs SelectedItem
 
 SfListView allows you to get the selected item by using [SelectedItem](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItem.html) and [CurrentItem](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~CurrentItem.html) properties. Both `SelectedItem` and `CurrentItem` returns the same data object when single item is selected. When more than one items are selected, then `SelectedItem` property returns the first selected item and `CurrentItem` property returns the last selected item.
 
-N> `SelectedItem` and `CurrentItem` properties will be based on `ItemsSource` value. so, you need to define the value which contains in underlying collection to `SelectedItem` or `CurrentItem` property to update the selection.
+N> If you set any value to `SelectedItem` and `CurrentItem` properties other than the `ItemsSource` value, `ItemsSource doesn't contains the provided item` exception will be internally thrown.
 
 ## Clear Selected Items
 You can clear the selected items by calling the [SelectedItems.Clear()](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItems.html) method.

@@ -330,7 +330,7 @@ The [GroupExpandCollapseChangedEventArgs](https://help.syncfusion.com/cr/cref_fi
 
 ## How To 
 
-### Group the items by ignoring the case sensitive
+### Group the items by ignoring the case
 
 SfListView lets you to group the items by ignoring the case sensitive by using `KeySelector` property in the [GroupDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor.html). While returning the `KeySelector`, convert the required property name in the data model which needed to be group either as `Upper` or `Lower` case as per the requirement and the items will be grouped based on the `KeySelector` with the case sensitive which has been returned in it.
 

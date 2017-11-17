@@ -517,4 +517,4 @@ SfPullToRefresh is a refresh control that allows you to interact and refresh the
 
 The final output will look like on iOS, Android and Windows Phone devices as shown below.
 
-![](SfDataGrid_images/SlideOnTop-Xamarin.forms.gif)
+![](SfDataGrid_images/SfDataGrid_SlideOnTop_XForms.gif)

@@ -95,8 +95,8 @@ The Conditional style can be applied for any cell based on any condition by usin
   >[`e.Handled`](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridHandledEventArgs~Handled.html) - Should be set to true to apply the changes
   >[`Style`](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryCellStyleEventArgs~Style.html) - Sets style to the current cell in iteration
  
-{% highlight c# %}
 
+{% highlight c# %}
 this.dataGrid.QueryCellStyle += DataGrid_QueryCellStyle;
 private void DataGrid_QueryCellStyle(object sender, QueryCellStyleEventArgs e)
 {
@@ -122,9 +122,7 @@ private void DataGrid_QueryCellStyle(object sender, QueryCellStyleEventArgs e)
         e.Style.ForegroundColor = Color.White;
     }
     e.Handled = true;
-
 }
-
 {% endhighlight %}
 
 ![](SfDataGrid_images/ConditionalStyle_CellStyle_img.png)
@@ -153,7 +151,6 @@ private void DataGrid_QueryRowStyle(object sender, QueryRowStyleEventArgs e)
     }
     e.Handled = true;
 }
-
 {% endhighlight %}
 
 ![](SfDataGrid_images/ConditionalStyle_RowStyle_img.png)

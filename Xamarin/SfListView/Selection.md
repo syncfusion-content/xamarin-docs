@@ -81,34 +81,33 @@ listView.SelectionBackgroundColor = Color.Blue;
 
 ## Programmatic Animation in Selection
 
-When [SelectionMode](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionMode.html) is other than `None`, you can select the item / items in SfListView from the code by setting the [SelectedItem](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItem.html) or adding items to the [SelectedItems](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItems.html) property based on the `SelectionMode`.
-
-When the selection mode is `Single` or `Multiple` you can programmatically select an item by setting the underlying object to the `SelectedItem` property. 
-
-## Override Methods
-
 You can animate the selection process within this method by inheriting the SelectionController class.
 
-The following code example illustrates how to inherite the `SelectionController` class and override the AnimateSelectedItem() method. 
+The following code example illustrates how to inherit the `SelectionController` class and override the AnimateSelectedItem() method. 
 
 You can also use any of the animation method to apply for selectedListViewItem.
 
 {% highlight c# %}
-listView.SelectionController = new SelectionController(listView);
+listView.SelectionController = new SelectionControllerExt(listView);
 
-public class SelectionAnimation : SelectionController
+public class SelectionControllerExt : SelectionController
 {
-	public SelectionAnimation(SfListView listView) : base(listView)
-  	{
-  	}
- 	protected override void AnimateSelectedItem(ListViewItem selectedListViewItem)
-  	{
-    	base.AnimateSelectedItem(selectedListViewItem);
-    	selectedListViewItem.Opacity = 0;
-    	selectedListViewItem.FadeTo(1, 3000, Easing.SinInOut);
-  	}
+   public SelectionControllerExt(SfListView listView) : base(listView)
+   {
+   }
+   
+   protected override void AnimateSelectedItem(ListViewItem selectedListViewItem)
+   {
+      base.AnimateSelectedItem(selectedListViewItem);
+      selectedListViewItem.Opacity = 0;
+      selectedListViewItem.FadeTo(1, 3000, Easing.SinInOut);
+   }
 }
 {% endhighlight %}
+
+You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Selection-1915286868).
+
+The following screenshot shows the output rendered when the selection animation is performed on the items.
 
 ## Selection Events
 

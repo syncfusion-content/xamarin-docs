@@ -196,9 +196,9 @@ public class DragDropControllerExt : DragDropController
 
 ### Adjust Auto Scroll Margin
 
-Adjust the auto scroll margin to enable the auto scorlling being dragging by setting value to [ScrollMargin](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.AutoScroller~ScrollMargin.html) property of [AutoScroller](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.AutoScroller.html). The default value is 15. The auto scrolling will be enabled being dragging when reach `ScrollMargin` from view bounds.
+Adjust the auto scroll margin to enable the auto scrolling being dragging by setting value to [ScrollMargin](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.AutoScroller~ScrollMargin.html) property of [AutoScroller](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.AutoScroller.html). The default value is 15. The auto scrolling will be enabled being dragging when reach `ScrollMargin` from view bounds.
 
-Disable the auto scorlling by setting the value to `0` for `ScrollMargin`.
+Disable the auto scrolling by setting the value to `0` for `ScrollMargin`.
 
 {% highlight c# %}
 this.listView.AutoScroller.ScrollMargin = 20;
@@ -329,7 +329,7 @@ private async void ListView_ItemDragging(object sender, ItemDraggingEventArgs e)
 }
 {% endhighlight %}
 
-The screenshots shows the output of reordering items by drag and drop in SfListView. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/DRAGAN~1-54215034.ZIP)
+The screenshot shows the output of reordering items by drag and drop in SfListView. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/DRAGAN~1-54215034.ZIP)
 
 ![](SfListView_images/SfListView-ItemReordering.gif)
 

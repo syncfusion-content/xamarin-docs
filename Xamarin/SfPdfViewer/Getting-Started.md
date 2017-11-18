@@ -30,15 +30,15 @@ Example: C:\Program Files (x86)\Syncfusion\Essential Studio\15.3.0.28\Xamarin\li
 </tr>
 <tr>
 <td>Android project</td>
-<td>android\Syncfusion.SfPdfViewer.XForms.Android.dll<br/>android\Syncfusion.SfPdfViewer.XForms.dll<br/></td>
+<td>android\Syncfusion.SfPdfViewer.XForms.dll<br/>android\Syncfusion.SfPdfViewer.XForms.Android.dll<br/>pcl\Syncfusion.Compression.Portable.dll<br/>pcl\ Syncfusion.Pdf.Portable.dll<br/></td>
 </tr>
 <tr>
 <td>iOS project</td>
-<td>iOS-unified\Syncfusion.SfPdfViewer.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfPdfViewer.XForms.dll<br/></td>
+<td>iOS-unified\Syncfusion.SfPdfViewer.XForms.dll<br/>iOS-unified\Syncfusion.SfPdfViewer.XForms.iOS.dll<br/>pcl\Syncfusion.Compression.Portable.dll<br/>pcl\ Syncfusion.Pdf.Portable.dll<br/></td>
 </tr>
 <tr>
 <td>UWP Renderer</td>
-<td>UWP\Syncfusion.SfPdfViewer.XForms.UWP.dll<br/>UWP\Syncfusion.SfPdfViewer.XForms.dll<br/></td>
+<td>UWP\Syncfusion.SfPdfViewer.XForms.dll<br/>UWP\Syncfusion.SfPdfViewer.XForms.UWP.dll<br/>pcl\Syncfusion.Compression.Portable.dll<br/>pcl\ Syncfusion.Pdf.Portable.dll<br/></td>
 </tr>
 </table>
 

@@ -13,19 +13,19 @@ documentation: UG
 
 Gets or sets the content of the refresh view. `PullableContent` is the main view of the `SfPullToRefresh` control on which the desired items can be placed.
 
-{%highlight Xaml%}
+{% highlight Xaml %}
 
   <syncfusion:SfPullToRefresh x:Name="pullToRefresh"
                                     PullingThreshold="120"
                                     RefreshContentHeight="30"
                                     RefreshContentThreshold="30"
                                     RefreshContentWidth="30">
-            <syncfusion:SfPullToRefresh.PullableContent>
-                    <Label x:Name="Monthlabel" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" />
-            </syncfusion:SfPullToRefresh.PullableContent>
+     <syncfusion:SfPullToRefresh.PullableContent>
+             <Label x:Name="Monthlabel" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" />
+     </syncfusion:SfPullToRefresh.PullableContent>
   </syncfusion:SfPullToRefresh>
 
-{%endhighlight%}
+{% endhighlight %}
 
 ## TransitionMode
 
@@ -38,18 +38,17 @@ The default transition is `SlideOnTop` that draws the RefreshContent on top of t
 
 {% tabs %}
 
+{% highlight Xaml %}
+
+    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" TransitionMode="SlideOnTop" />
+
+{% endhighlight %}
+
 {% highlight c# %}
 
     pullToRefresh.TransitionMode = TransitionType.SlideOnTop;
 
 {% endhighlight %}
-
-
-{%highlight Xaml%}
-
-    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" TransitionMode="SlideOnTop" />
-
-{%endhighlight%}
 
 {% endtabs %}
 
@@ -59,21 +58,23 @@ The following code example shows how to set `TransitionMode` as `Push` to SfPull
 
 {% tabs %}
 
+{% highlight Xaml %}
+
+    <syncfusion:SfPullToRefresh x:Name=" pullToRefresh" TransitionMode="Push" />
+
+{% endhighlight %}
+
 {% highlight c# %}
 
     pullToRefresh.TransitionMode = TransitionType.Push;
 
 {% endhighlight %}
 
-{%highlight Xaml%}
-
-    <syncfusion:SfPullToRefresh x:Name=" pullToRefresh" TransitionMode="Push" />
-
-{%endhighlight%}
-
 {% endtabs %}
 
 ![](overview_images/Push.png)
+
+
 
 ## RefreshContentThreshold
 
@@ -81,23 +82,20 @@ Gets or sets the refresh content threshold value that indicates progress indicat
 
 {% tabs %}
 
+{% highlight xaml %}
+
+    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" RefreshContentThreshold="50"/>
+
+{% endhighlight %}
+
 {% highlight c# %}
 
     pullToRefresh.RefreshContentThreshold = 50d;
 
 {% endhighlight %}
 
-{% endtabs %} 
-
-{% tabs %}
-
-{% highlight xaml %}
-
-    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" RefreshContentThreshold="50"/>
-
-{%endhighlight%} 
-
 {% endtabs %}
+
 
 ## PullingThreshold
 
@@ -105,21 +103,17 @@ Gets or sets the value for the refresh content threshold, this indicate progress
 
 {% tabs %}
 
+{% highlight xaml %}
+
+    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" PullingThreshold="200"/>
+
+{% endhighlight %} 
+
 {% highlight c# %}
 
     pullToRefresh.PullingThreshold = 200d;
 
 {% endhighlight %}
-
-{% endtabs %} 
-
-{% tabs %}
-
-{% highlight xaml %}
-
-    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" PullingThreshold="200"/>
-
-{%endhighlight%} 
 
 {% endtabs %}
 
@@ -130,23 +124,20 @@ Get or set the state for refreshing the view. View will get refresh while `IsRef
  
 {% tabs %}
 
+{% highlight xaml %}
+
+    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" IsRefreshing = "True"/>
+
+{% endhighlight %} 
+
 {% highlight c# %}
 
     pullToRefresh.IsRefreshing = true;
 
 {% endhighlight %}
 
-{% endtabs %} 
-
-{% tabs %}
-
-{% highlight xaml %}
-
-    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" IsRefreshing = "True"/>
-
-{%endhighlight%} 
-
 {% endtabs %}
+
 
 ## ProgressBackgroundColor
 
@@ -154,23 +145,20 @@ Get or set the background color to the progress indicator.
 
 {% tabs %}
 
+{% highlight xaml %}
+
+    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" ProgressBackgroundColor = "White"/>
+
+{% endhighlight %} 
+
 {% highlight c# %}
 
     pullToRefresh.ProgressBackgroundColor = Color.White;
 
 {% endhighlight %}
 
-{% endtabs %} 
-
-{% tabs %}
-
-{% highlight xaml %}
-
-    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" ProgressBackgroundColor = "White"/>
-
-{%endhighlight%} 
-
 {% endtabs %}
+
 
 ## ProgressStrokeColor
 
@@ -178,23 +166,20 @@ Get or set the color to the progress indicator stroke
 
 {% tabs %}
 
+{% highlight xaml %}
+
+    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" ProgressStrokeColor = "Blue"/>
+
+{% endhighlight %} 
+
 {% highlight c# %}
 
     pullToRefresh.ProgressStrokeColor = Color.Blue;
 
 {% endhighlight %}
 
-{% endtabs %} 
-
-{% tabs %}
-
-{% highlight xaml %}
-
-    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" ProgressStrokeColor = "Blue"/>
-
-{%endhighlight%} 
-
 {% endtabs %}
+
 
 ## ProgressStrokeWidth
 
@@ -202,29 +187,31 @@ Get or set the width to the progress indicator stroke.
 
 {% tabs %}
 
+{% highlight Xaml%}
+
+    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" ProgressStrokeWidth="5"/>
+
+{% endhighlight %}
+
 {% highlight c# %}
 
     pullToRefresh.ProgressStrokeWidth = 5d;
 
 {% endhighlight %}
-
 {% endtabs %}
 
-{% tabs %}
-
-{%highlight Xaml%}
-
-    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" ProgressStrokeWidth="5"/>
-
-{%endhighlight%}
-
-{% endtabs %}
 
 ## RefreshContentWidth
 
 Get or set the width to the refresh content.
 
 {% tabs %}
+
+{% highlight Xaml %}
+
+    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" RefreshContentWidth="50"/>
+
+{% endhighlight %}
 
 {% highlight c# %}
 
@@ -234,29 +221,10 @@ Get or set the width to the refresh content.
 
 {% endtabs %}
 
-{% tabs %}
-
-{%highlight Xaml%}
-
-    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" RefreshContentWidth="50"/>
-
-{%endhighlight%}
-
-{% endtabs %}
 
 ## RefreshContentHeight
 
 Get or set the width to the refresh content.
-
-{% tabs %}
-
-{% highlight c# %}
-
-    pullToRefresh.RefreshContentHeight = 50d;
-
-{% endhighlight %}
-
-{% endtabs %}
 
 {% tabs %}
 
@@ -266,9 +234,17 @@ Get or set the width to the refresh content.
 
 {%endhighlight%}
 
+{% highlight c# %}
+
+    pullToRefresh.RefreshContentHeight = 50d;
+
+{% endhighlight %}
+
 {% endtabs %}
 
+
 ## Programmatic Support 
+
 
 ### StartRefreshing()
 
@@ -303,17 +279,21 @@ EndRefreshing method is used to ends the progress animation of `SfPullToRefresh`
 ## Host SfDataGrid as pullable content
 
 SfPullToRefresh controls provides support for loading any custom control as pullable content. To host SfDatagrid inside the SfPullToRefresh, follow the below steps.
+<ol>
 
-1.	Add the required assembly references to the pcl and renderer projects as discussed in the [Assembly deployment](https://help.syncfusion.com/xamarin/sfdatagrid/getting-started#assembly-deployment) section of SfDataGrid and SfPullToRefresh.
-2.	Import SfPullToRefresh and SfDataGrid control namespace as follows.
+<li> Add the required assembly references to the pcl and renderer projects as discussed in the Assembly deployment section of <a href="https://help.syncfusion.com/xamarin/sfdatagrid/getting-started#assembly-deployment">SfDataGrid </a> and <a href="https://help.syncfusion.com/xamarin/sfpulltorefresh/getting-started#assembly-deployment">SfPullToRefresh </a>.</li>
+<li>	Import SfPullToRefresh and SfDataGrid control namespace as follows.</li>
+
+<br/>
+
 {% tabs %}
 
-{%highlight Xaml%}
+{% highlight Xaml %}
 
 <xmlns:syncfusion="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms">          
 <xmlns:pull="clr-namespace:Syncfusion.SfPullToRefresh.XForms;assembly=Syncfusion.SfPullToRefresh.XForms">
 
-{%endhighlight%}
+{% endhighlight %}
 
 
 {% highlight c# %}
@@ -325,16 +305,19 @@ using Syncfusion.SfDataGrid.XForms;
 
 {% endtabs %}
 
-3.	Define SfDataGrid as PullableContent of the SfPullToRefresh. 
-4.	Handle the pull to refresh events for refreshing the data. 
-5.	Customize the required properties of SfDataGrid and SfPullToRefresh based on your requirement. 
+<br/>
 
+<li>	Define SfDataGrid as PullableContent of the SfPullToRefresh.</li> 
+<li>	Handle the pull to refresh events for refreshing the data. </li>
+<li>	Customize the required properties of SfDataGrid and SfPullToRefresh based on your requirement.</li> 
+
+</ol>
 This is how the final output will look like on iOS, Android and Windows Phone devices when hosting a SfDatagrid control as pullable content.
 
-![](hostingsfdatagrid_images/SlideOnTop-Xamarin.forms.gif)
+![](hostingsfdatagrid_images/SfDataGrid_SlideOnTop-Xamarin.forms.gif)
 
 
-{%highlight Xaml%}
+{% highlight Xaml %}
 
     <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -376,7 +359,7 @@ This is how the final output will look like on iOS, Android and Windows Phone de
 </ContentPage>
 
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% highlight c# %}
 
@@ -499,46 +482,38 @@ public class OrderInfoRepository
 
 If we run the above sample with TransitionMode as Push, the output will look like on iOS, Android and Windows Phone devices as shown below.
 
-![](hostingsfdatagrid_images/PUSH-Xamarin.Forms.gif)
+![](hostingsfdatagrid_images/SfDataGrid_Push_Xamarin.Forms.gif)
 
 
 ## Host SfListView as pullable content
 
 To host SfListView inside the SfPullToRefresh which is used to update items in the list while performing the pull to refresh action.
+<ol>
+<li>	Add the required assembly references to the pcl and renderer projects as discussed in the Assembly deployment section of <a href="https://help.syncfusion.com/xamarin/sflistview/getting-started#assembly-deployment">SfListView </a> and <a href="https://help.syncfusion.com/xamarin/sfpulltorefresh/getting-started#assembly-deployment">SfPullToRefresh </a>.</li>
+<li>	Import SfPullToRefresh control and SfListView control namespace as follows.</li>
+<br/>
 
-1.	Add the required assembly references to the pcl and renderer projects as discussed in the [Assembly deployment](https://help.syncfusion.com/xamarin/sflistview/getting-started#assembly-deployment) section of SfListView and SfPullToRefresh.
-2.	Import SfPullToRefresh control and SfListView control namespace as follows.
 {% tabs %}
-
-
-{%highlight Xaml%}
-
-<xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">          
-<xmlns:pull="clr-namespace:Syncfusion.SfPullToRefresh.XForms;assembly=Syncfusion.SfPullToRefresh.XForms">
-
-
-{%endhighlight%}
-
-
+{% highlight Xaml %}
+<xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XFormsassembly=Syncfusion.SfListView.XForms">      
+<xmlns:pull="clr-namespace:Syncfusion.SfPullToRefresh.XFormsassembly=Syncfusion.SfPullToRefreshXForms">
+{% endhighlight %}
 {% highlight c# %}
-
 using Syncfusion.SfPullToRefresh.XForms;
 using Syncfusion.ListView.XForms;
-
 {% endhighlight %}
-
-
 {% endtabs %}
-
-3.	Define SfListView as PullableContent of the SfPullToRefresh. 
-4.	Handle the pull to refresh events for refreshing the data. 
-5.	Customize the required properties of SfListView and SfPullToRefresh based on your requirement. 
+<br/>
+<li>	Define SfListView as PullableContent of the SfPullToRefresh.</li>
+<li>	Handle the pull to refresh events for refreshing the data. </li>
+<li>	Customize the required properties of SfListView and SfPullToRefresh based on your requirement.</li>
+</ol>
 
 This is how the final output will look like on iOS, Android and Windows Phone devices when hosting a SfListView control as pullable content.
 
-![](hostingsfdatagrid_images/listimg.png)
+![](hostingsfdatagrid_images/SfListView-Push_XForms.png)
 
-{%highlight Xaml%}
+{% highlight Xaml%}
 
     <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -553,8 +528,8 @@ This is how the final output will look like on iOS, Android and Windows Phone de
     </ContentPage.BindingContext>
 
     <ContentPage.Content>
-        <pullToRefresh:SfPullToRefresh x:Name="pullToRefresh" PullingThreshold="80"
-                               ProgressBackgroundColor="#428BCA" RefreshContentWidth="40" RefreshContentHeight="40"
+        <pullToRefresh:SfPullToRefresh x:Name="pullToRefresh" PullingThreshold="60" ProgressStrokeWidth="5" ProgressBackgroundColor="CornflowerBlue" ProgressStrokeColor="White" 
+                               RefreshContentWidth="40" RefreshContentHeight="40" 
                                TransitionMode="Push" IsRefreshing="False">
             <pullToRefresh:SfPullToRefresh.PullableContent>
                 <syncfusion:SfListView x:Name="listView" ItemSize="80" ItemsSource="{Binding InboxItems}"  ItemSpacing="0,0,0,1" BackgroundColor="LightGray"
@@ -594,7 +569,7 @@ This is how the final output will look like on iOS, Android and Windows Phone de
     
 
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% highlight c# %}
 

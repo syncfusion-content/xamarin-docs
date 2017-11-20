@@ -13,7 +13,7 @@ A group represents a collection of records that belong to a particular category.
 
 N> To update grouping for the newly added row or column, set the `SfDataGrid.View.LiveDataUpdateMode` to `LiveDataUpdateMode.AllowDataShaping`.
 
-N> When BeginInit method is called it suspends all the updates until EndInit method is called.
+N> When `BeginInit` method is called it suspends all the updates until `EndInit` method is called.
 
 ## Programmatic Grouping
 

@@ -166,9 +166,9 @@ private void ListView_SwipeEnded(object sender, SwipeEndedEventArgs e)
 
 By handling the swipe events, you can make use of these property values from the arguments to perform any desired action such as deleting the item, inserting the data, etc. 
 
-## Resetting the swiped item
+## Reset the swipe view automatically 
 
- If a data is being added or removed from underlying collection while swiping is completed, you can reset the swiped item by defining the [SwipeOffSet](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SwipeEndedEventArgs~SwipeOffset.html) argument of [SwipeEnded](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SwipeEnded_EV.html) event to `0`.
+ You can reset the swiped item by defining the [SwipeOffSet](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SwipeEndedEventArgs~SwipeOffset.html) argument of [SwipeEnded](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SwipeEnded_EV.html) event to `0` when the swiping action is completed.
 
 {% highlight c# %}
 private void ListView_SwipeEnded(object sender, SwipeEndedEventArgs e)

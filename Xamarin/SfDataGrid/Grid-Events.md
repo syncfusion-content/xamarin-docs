@@ -151,3 +151,115 @@ private void DataGrid_GridLoaded(object sender, GridLoadedEventArgs e)
 }
 {% endhighlight %}
 {% endtabs %}
+
+## Create custom Context Menu using Grid Events
+
+SfDataGrid allows you to create a custom context menu by loading the number of buttons in different layouts in the `GridLongPressed` event. 
+
+The following code illustrates how to create a custom context menu using Grid events.
+
+{% highlight xaml %}
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ContextMenuSupport"
+             x:Class="ContextMenuSupport.MainPage"
+             xmlns:sfgrid="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms">
+
+  <ContentPage.BindingContext>
+    <local:ViewModel />
+  </ContentPage.BindingContext>
+  <ContentPage.Content>
+    <RelativeLayout x:Name="relativeLayout">
+      <sfgrid:SfDataGrid x:Name="dataGrid"
+                         ItemsSource="{Binding Collection}"
+                         ColumnSizer="Star"
+                         RelativeLayout.WidthConstraint="{ConstraintExpression
+                                                      Type=RelativeToParent,Property=Width,Factor=1,Constant=0}"
+                         RelativeLayout.HeightConstraint="{ConstraintExpression
+                                                      Type=RelativeToParent,Property=Height,Factor=1,Constant=0}"
+                         GridLongPressed="DataGrid_GridLongPressed"
+                       />     
+    </RelativeLayout>
+  </ContentPage.Content>  
+</ContentPage>
+{% endhighlight %}
+
+{% highlight c# %}
+public partial class MainPage : ContentPage
+    {
+
+        StackLayout contextMenu;
+        Button sortButton;
+        Button clearSortButton;
+        private bool isContextMenuDisplayed = false;
+        private string currentColumnName;
+        public MainPage()
+        {
+            InitializeComponent();
+            CreateContextMenu();
+            dataGrid.AllowSorting = true;
+            dataGrid.GridTapped += DataGrid_GridTapped;           
+        }
+
+        private void DataGrid_GridTapped(object sender, GridTappedEventsArgs e)
+        {
+            relativeLayout.Children.Remove(contextMenu);
+            isContextMenuDisplayed = false;
+        }
+
+        public void CreateContextMenu()
+        {
+            contextMenu = new StackLayout(); 
+            sortButton = new Button();
+            sortButton.Text = "Sort";           
+            sortButton.BackgroundColor = Color.Black;
+            sortButton.TextColor = Color.White;
+            sortButton.Clicked += SortButton_Clicked;
+            
+            clearSortButton = new Button();
+            clearSortButton.Text = "Clear sort";           
+            clearSortButton.BackgroundColor = Color.Black;
+            clearSortButton.TextColor = Color.White;
+            clearSortButton.Clicked += ClearSortButton_Clicked;
+
+            contextMenu.Children.Add(sortButton);
+            contextMenu.Children.Add(clearSortButton);            
+        }
+
+        private void ClearSortButton_Clicked(object sender, EventArgs e)
+        {
+            relativeLayout.Children.Remove(contextMenu);
+            isContextMenuDisplayed = false;
+            dataGrid.SortColumnDescriptions.Clear();
+        }
+
+        private void SortButton_Clicked(object sender, EventArgs e)
+        {
+            relativeLayout.Children.Remove(contextMenu);
+            isContextMenuDisplayed = false;
+            dataGrid.SortColumnDescriptions.Clear();
+            dataGrid.SortColumnDescriptions.Add(new SortColumnDescription()
+            {
+                ColumnName = currentColumnName
+            });
+        }
+
+        public void DataGrid_GridLongPressed(object sender, GridLongPressedEventsArgs e)
+        {
+            if (!isContextMenuDisplayed)
+            {
+                currentColumnName = dataGrid.Columns[e.RowColumnindex.ColumnIndex].MappingName;
+                var point = dataGrid.RowColumnIndexToPoint(e.RowColumnindex);
+                relativeLayout.Children.Add(contextMenu, Constraint.Constant(point.X), Constraint.Constant(point.Y));
+                isContextMenuDisplayed = true;
+            }
+            else
+            {
+                relativeLayout.Children.Remove(contextMenu);
+                isContextMenuDisplayed = false;
+            }
+        }
+    }
+{% endhighlight %}
+
+On executing the above code example, the below output will appear.

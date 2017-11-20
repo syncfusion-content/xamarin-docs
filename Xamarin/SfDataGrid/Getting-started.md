@@ -493,6 +493,31 @@ Refer the following screenshot for the final outcome
 
 N> In case, if the orientation of the `StackLayout` is horizontal, then you have to set the HorizontalOptions instead. In some case, you may have to set both the “VerticalOptions” and “HorizontalOptions” of the SfDataGrid based on its parent.
 
+## Loading SfDataGrid with specified Height and Width
+
+SfDataGrid can be load with specific height and width inside different layouts using [SfDataGrid.HeightRequest](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~HeightRequest.html) and [SfDataGrid.WidthRequest](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~WidthRequest.html) property. You need to set the [HorizontalOptions](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~HorizontalOptions.html) and [VerticalOptions](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~VerticalOptions.html) for the grid accordingly.
+
+For example, if you are setting width request then you should set the `HorizontalOptions` of the SfDataGrid based on your requirement and if you are setting the height request then you should set the `VerticalOptions` of the grid accordingly. In case of setting both, you need to set both `HorizontalOptions` and `VerticalOptions` accordingly. The following code example illustrates how this can be done.
+
+{% highlight c# %}
+public MainPage()
+{
+    InitializeComponent();
+    viewModel = new ViewModel();
+    dataGrid = new SfDataGrid();
+    dataGrid.ItemsSource = viewModel.OrdersInfo;
+    dataGrid.HeightRequest = 200;
+    dataGrid.WidthRequest = 500;
+    dataGrid.VerticalOptions = LayoutOptions.CenterAndExpand;
+    dataGrid.HorizontalOptions = LayoutOptions.CenterAndExpand;
+    this.Content = dataGrid; ;
+}
+{% endhighlight %}
+
+The following screenshot shows how the SfdataGrid is loaded with specific height and width.
+
+![](SfDataGrid_images/Loading_with specific_height_and_width.png)
+
 ## Linker issue in Xamarin.Forms.iOS
 
 There are some known Framework issues in Xamarin.Forms.iOS platform.

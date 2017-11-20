@@ -9,15 +9,15 @@ documentation: UG
 
 # Conditional Styles
 
-SfDataGrid allows to customize the style of the individual cells and text of the SfDataGrid based on the requirements. It can be customized in the following ways: 
+SfDataGrid allows to customize the style of the individual cells and rows based on the requirements. It can be customized in the following ways: 
 
 * Using Column CellStyle
 * Using QueryCellStyle Event
 * Using QueryRowStyle Event
 
-## Styling Cells using Column CellStyle
+## Styling cells using column cellstyle
 
-SfDatagrid allows to apply cell style for a [GridColumn](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn.html), that is used to render the cells in that column. When applying cell style, the [GridCell](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridCell.html) appears in the custom style should be rather than the default one. The following code example shows how to apply cell style for a GridColumn using [CellStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~CellStyle.html).
+SfDatagrid allows to apply cell style for a [GridColumn](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn.html) which is used to render the cells in that column. While applying cell style, the [GridCell](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridCell.html) appears in the custom style should be the default one. To apply cell style for a GridColumn using [CellStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~CellStyle.html), follow the code example:
 
 {% highlight xaml %}
 <syncfusion:SfDataGrid x:Name="dataGrid"
@@ -34,11 +34,11 @@ SfDatagrid allows to apply cell style for a [GridColumn](http://help.syncfusion.
 </syncfusion:SfDataGrid> 
 {% endhighlight %}
 
-## Styling Cells using Converter
+## Styling cells using converter
 
 SfDataGrid also allows to apply styles for the `GridCell` in a column based on conditions by writing a converter for the property in `GridCell` for which conditional styles need to be applied.
 
-The following code example shows how to apply conditional styling for a column by writing converter in SfDataGrid.
+To apply conditional styling for a column by writing converter in SfDataGrid, follow the code example:
 
 {% highlight xaml %}
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -96,9 +96,9 @@ public class CellStyleConverter : IValueConverter
 ![](SfDataGrid_images/Conditional_Style_img.png)
 
 
-## Styling Cells using CellStyle Event
+## Styling cells using cellstyle event
 
-The Conditional style can be applied for any cell based on any condition by using the [QueryCellStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~QueryCellStyle_EV.html) event. This event will be fired for each row initially and provides the following properties through the [QueryCellStyleEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryCellStyleEventArgs.html) in its EventHandler:
+The conditional style can be applied for any cell by using the [QueryCellStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~QueryCellStyle_EV.html) event based on any condition. This event will be fired for each cell and provides the following properties through the [QueryCellStyleEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryCellStyleEventArgs.html) in its EventHandler:
   
 * [RowIndex](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryConditionalStyleEventArgs~RowIndex.html): Provides the row index of current cell in iteration. 
 * [ColumnIndex](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryCellStyleEventArgs~ColumnIndex.html): Provides the column index of current cell in iteration. 
@@ -140,7 +140,7 @@ private void DataGrid_QueryCellStyle(object sender, QueryCellStyleEventArgs e)
 
 ## How to style a particular column
 
-User can apply style to a paticular column based on the properties of the `Column` provided in the `QueryCellStyleEventArgs` of the `QueryCellStyle` event.
+Based on the properties of the `Column` provided in the `QueryCellStyleEventArgs` of the `QueryCellStyle` event, style can be applied to a particular column.
 
 {% highlight c# %}
 
@@ -197,9 +197,9 @@ private void DataGrid_QueryCellStyle(object sender, QueryCellStyleEventArgs e)
 
 ![](SfDataGrid_images/ConditionalStyle_CellStyle_2.png)
 
-## Styling Cells using RowStyle Event
+## Styling Cells using RowStyle event
 
-The Conditional style can be applied for an entire row based on any condition by using [QueryRowStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~QueryRowStyle_EV.html) event, this event will be fired for each row initaially and provides the following properties through the [QueryRowStyleEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryRowStyleEventArgs.html) in its EventHandler:
+The Conditional style can be applied for an entire row based on any condition by using [QueryRowStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~QueryRowStyle_EV.html) event. This event will be fired for each row and provides the following properties through the [QueryRowStyleEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryRowStyleEventArgs.html) in its EventHandler:
 
 * `RowData`: Provides the row data of current row in iteration.
 * `RowIndex`: Provides the row index of current row in iteration.
@@ -228,7 +228,7 @@ private void DataGrid_QueryRowStyle(object sender, QueryRowStyleEventArgs e)
 
 ## How to style a particular row based on RowIndex
 
-Styling can be applied to a particular row Based on `RowIndex` property in `QueryRowStyleEventArgs` of the `QueryRowStyle` event.
+Styling can be applied to a particular row based on `RowIndex` property in `QueryRowStyleEventArgs` of the `QueryRowStyle` event.
 
 {% highlight c# %}
 private void DataGrid_QueryRowStyle(object sender, QueryRowStyleEventArgs e)
@@ -265,7 +265,7 @@ private void DataGrid_QueryRowStyle(object sender, QueryRowStyleEventArgs e)
 
 ![](SfDataGrid_images/ConditionalStyle_RowStyle_2.png)
 
-N> By default, only the selection backgroud color will be applied for the selected row even if row style is applied for that row. If in case you might want to apply the selection color over the row style upon selection, set the Conditional stylingpreference property to StylePreference.RowStyleAndSelection
+N> By default, only the selection backgroud color will be applied for the selected row even if row style is applied for that row. If in case you might want to apply the selection color over the row style upon selection, set the Conditional stylingpreference property to StylePreference.RowStyleAndSelection.
 
 {% highlight c# %}
 private void DataGrid_QueryRowStyle(object sender, QueryRowStyleEventArgs e)

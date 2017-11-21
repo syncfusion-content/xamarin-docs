@@ -102,14 +102,14 @@ namespace GettingStarted{    public class App : Application    {       
 The following code snippet illustrates the creation of Nodes and Connectors in the diagram.
 {% tabs %}
 {% highlight c# %}
-public Gettingstarted()
+public GettingStarted()
         {
            InitializeComponent();           //Initializes the SfDiagram
            SfDiagram diagram = new SfDiagram();
            Node Begin = AddNode("Begin", 150, 60, 120, 40, "Begin", ShapeType.Ellipse);
            Node Process = AddNode("Process", 150, 140, 120, 60, "Process", ShapeType.Rectangle);
            Node End = AddNode("End", 190, 225, 40, 40, "End", ShapeType.Ellipse);
-//Add nodes to the sfdiagramdiagram.AddNode(Begin);
+//Add nodes to the SfDiagramdiagram.AddNode(Begin);
 diagram.AddNode(Process);
 diagram.AddNode(End);
 Connector connector1 = new Connector()
@@ -121,7 +121,7 @@ Connector connector2 = new Connector()
 {
 SourceNode = Process,
 TargetNode = End,
-};//Add connectors to the sfdiagram
+};//Add connectors to the SfDiagram
 diagram.AddConnector(connector1);
 diagram.AddConnector(connector2);this.Content = diagram;
                           }
@@ -144,7 +144,7 @@ The flow chart will get displayed in the SfDiagram as follows
 ![](Getting-Started_images/Getting-Started_img1.jpeg)
 
 This demo project can be downloaded from the following link.
-[Gettingstarted_Demo](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Gettingstarted-178948186# "")
+[GettingStarted_Demo](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Gettingstarted-178948186# "")
 ## Create a simple organizational chart
 SfDiagram provides support to auto-arrange the nodes based on hierarchical relation. Organization chart is an example of displaying hierarchical information.
 Now, you have to create a class named “Employee” to store the employee’s information like name, designation, ID, reporting person ID, etc. Also, create a collection class that stores a collection of the employees.
@@ -171,18 +171,18 @@ Define Employee Information as a Collection. The below code example shows an emp
 * ParentId is used to identify the person to whom an employee report to, in the organization.
 {% tabs %}
 {% highlight xml %}
-<!-- Initializes the employee colletion--> 
+<!-- Initializes the employee collection--> 
 <local:Employees x:Key="employees"> 
-<local:Employee Name="Elizabeth" EmpId="1" ParentId="" Designation="CEO"/> 
-<local:Employee Name="Christina" EmpId="2" ParentId="1" Designation="Manager"/> 
-<local:Employee Name="Yang" EmpId="3" ParentId="1" Designation="Manager"/> 
-<local:Employee Name="Yoshi" EmpId="4" ParentId="2" Designation="Team Lead"/> 
-<local:Employee Name="Philip" EmpId="5" ParentId="2" Designation="S/w Developer"/> 
-<local:Employee Name="Roland" EmpId="6" ParentId="3" Designation="TeamLead"/> 
-<local:Employee Name="Yuonne" EmpId="7" ParentId="3" Designation="Testing Engineer"/> 
+<local:Employee Name="Elizabeth" Employee_Id="1" ParentId="" Designation="CEO"/> 
+<local:Employee Name="Christina" Employee_Id="2" ParentId="1" Designation="Manager"/> 
+<local:Employee Name="Yang" Employee_Id="3" ParentId="1" Designation="Manager"/> 
+<local:Employee Name="Yoshi" Employee_Id="4" ParentId="2" Designation="Team Lead"/> 
+<local:Employee Name="Philip" Employee_Id="5" ParentId="2" Designation="S/w Developer"/> 
+<local:Employee Name="Roland" Employee_Id="6" ParentId="3" Designation="TeamLead"/> 
+<local:Employee Name="Yuonne" Employee_Id="7" ParentId="3" Designation="Testing Engineer"/> 
 </local:Employees> 
 <!--Initializes the DataSourceSettings --> 
-<syncfusion:DataSourceSettings x:Key="DataSourceSettings" DataSource="{StaticResource employees}" ParentId="ParentId" Id="EmpId" Root="1"/> 
+<syncfusion:DataSourceSettings x:Key="DataSourceSettings" DataSource="{StaticResource employees}" ParentId="ParentId" Id="Employee_Id" Root="1"/> 
 <!--Initializes the Layout--> 
 <syncfusion:DirectedTreeLayout x:Key="treeLayout" HorizontalSpacing="80" VerticalSpacing="50" SpaceBetweenSubTrees="20" Orientation="TopToBottom"/> 
 <syncfusion:LayoutManager x:Key="layoutManager" Layout="{StaticResource treeLayout}"/> 
@@ -190,16 +190,16 @@ Define Employee Information as a Collection. The below code example shows an emp
 <syncfusion:SfDiagram x:Name="diagram" LayoutManager="{StaticResource layoutManager}" DataSourceSettings="{StaticResource DataSourceSettings}">
 {% endhighlight %}
 {% highlight c# %}
-//Initializes the employee colletionObservableCollection<Employee> employees = new ObservableCollection<Employee>();            employees.Add(new Employee() { Name = "Elizabeth", EmpId = "1", ParentId = "", Designation = "CEO" });
-employees.Add(new Employee() { Name = "Christina", EmpId = "2", ParentId = "1", Designation = "Manager" });
-employees.Add(new Employee() { Name = "Yang", EmpId = "3", ParentId = "1", Designation = "Manager" });
-employees.Add(new Employee() { Name = "Yoshi", EmpId = "4", ParentId = "2", Designation = "Team Lead" });
-employees.Add(new Employee() { Name = "Philip", EmpId = "5", ParentId = "2", Designation = "S/w Developer" });
-employees.Add(new Employee() { Name = "Roland", EmpId = "6", ParentId = "3", Designation = "TeamLead" });
-employees.Add(new Employee() { Name = "Yuonne", EmpId = "7", ParentId = "3", Designation = "Testing Enginner" });
-//Initializes the DataSourceSettingsdiagram.DataSourceSettings = new DataSourceSettings() { DataSource = employees, Id = "EmpId", ParentId = "ParentId" };
-//Initializes the LayoutDirectedTreeLayout treelayout = new DirectedTreeLayout() { HorizontalSpacing = 80, VerticalSpacing = 50, TreeOrientation = TreeOrientation.TopToBottom };
-diagram.LayoutManager = new LayoutManager() { Layout = treelayout };
+//Initializes the employee colletionObservableCollection<Employee> employees = new ObservableCollection<Employee>();            employees.Add(new Employee() { Name = "Elizabeth", Employee_Id = "1", ParentId = "", Designation = "CEO" });
+employees.Add(new Employee() { Name = "Christina", Employee_Id = "2", ParentId = "1", Designation = "Manager" });
+employees.Add(new Employee() { Name = "Yang", Employee_Id = "3", ParentId = "1", Designation = "Manager" });
+employees.Add(new Employee() { Name = "Yoshi", Employee_Id = "4", ParentId = "2", Designation = "Team Lead" });
+employees.Add(new Employee() { Name = "Philip", Employee_Id = "5", ParentId = "2", Designation = "S/w Developer" });
+employees.Add(new Employee() { Name = "Roland", Employee_Id = "6", ParentId = "3", Designation = "TeamLead" });
+employees.Add(new Employee() { Name = "Yuonne", Employee_Id = "7", ParentId = "3", Designation = "Testing Engineer" });
+//Initializes the DataSourceSettingsdiagram.DataSourceSettings = new DataSourceSettings() { DataSource = employees, Id = "Employee_Id", ParentId = "ParentId" };
+//Initializes the LayoutDirectedTreeLayout treeLayout = new DirectedTreeLayout() { HorizontalSpacing = 80, VerticalSpacing = 50, TreeOrientation = TreeOrientation.TopToBottom };
+diagram.LayoutManager = new LayoutManager() { Layout = treeLayout };
 {% endhighlight %}
 The Employee data is displayed in the SfDiagram as follows
 ![](Getting-Started_images/Getting-Started_img2.jpeg)

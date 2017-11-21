@@ -464,6 +464,7 @@ public class CustomStyle : DataGridStyle
 User can decide to hide / show that particular column that gets grouped by setting [SfDataGrid.ShowColumnWhenGrouped](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ShowColumnWhenGrouped.html) property to false. In cases of `SfDataGrid.AllowMultiGrouping` = true, all the columns that are added in the `GroupColumnDescriptions` collection will be shown or hidden based on the value. Please refer the below code snippet.
 
 {% tabs %}
+
 {% highlight xaml %}
 <syncfusion:SfDataGrid  x:Name="dataGrid"
                         AutoGenerateColumns="True"
@@ -480,6 +481,7 @@ User can decide to hide / show that particular column that gets grouped by setti
 {% endhighlight %}
 {% highlight c# %}
 this.dataGrid.ShowColumnWhenGrouped = false;
+
 dataGrid.Columns.Add (new GridTextColumn () { 
     MappingName = "ShippingDate",
     Width = 0
@@ -489,5 +491,4 @@ dataGrid.GroupColumnDescriptions.Add (new GroupColumnDescription () { 
     ColumnName = "ShippingDate"
 });
 {% endhighlight %}
-
 {% endtabs %}

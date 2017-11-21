@@ -92,7 +92,7 @@ public class MainPageCs : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-Now run the application to render the following output. You can also download the entire source code of this demo from [here](http://files2.syncfusion.com/Xamarin.Forms/Samples/ListView_DataTemplateSelector.zip).
+Now run the application to render the following output. You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Listview_DataTemplateSelector659971950).
 
 ![](SfListView_images/SfListView-DataTemplateSelector.png)
 

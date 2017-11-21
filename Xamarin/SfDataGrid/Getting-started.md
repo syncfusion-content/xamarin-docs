@@ -514,7 +514,7 @@ public MainPage()
 }
 {% endhighlight %}
 
-The following screenshot shows how the SfdataGrid is loaded with specific height and width.
+The following screenshot shows how the SfDataGrid is loaded with specific height and width.
 
 ![](SfDataGrid_images/Loading_with specific_height_and_width.png)
 

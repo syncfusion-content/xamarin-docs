@@ -248,8 +248,8 @@ public partial class MainPage : ContentPage
         {
             if (!isContextMenuDisplayed)
             {
-                currentColumnName = dataGrid.Columns[e.RowColumnindex.ColumnIndex].MappingName;
-                var point = dataGrid.RowColumnIndexToPoint(e.RowColumnindex);
+                currentColumnName = dataGrid.Columns[e.RowColumnIndex.ColumnIndex].MappingName;
+                var point = dataGrid.RowColumnIndexToPoint(e.RowColumnIndex);
                 relativeLayout.Children.Add(contextMenu, Constraint.Constant(point.X), Constraint.Constant(point.Y));
                 isContextMenuDisplayed = true;
             }

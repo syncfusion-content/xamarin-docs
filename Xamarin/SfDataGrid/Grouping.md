@@ -241,21 +241,21 @@ public partial class MainPage : ContentPage
 
 ### Removing the Group based on group item
 
-SfDataGrid allows you to remove the grouping by removing the groupcolumn from `SfDataGrid.GroupColumnDescriptions` in a button click.
+SfDataGrid allows you to remove the grouping by removing the group column from `SfDataGrid.GroupColumnDescriptions` in a button click.
 
 The following code example illustrates how to remove grouping in SfDataGrid.
 
 {% highlight c# %}
 private void RemoveGroupingButton_Clicked(object sender, EventArgs e)
 {
-    var groupcolumn = dataGrid.GroupColumnDescriptions[0];
-    dataGrid.GroupColumnDescriptions.Remove(groupcolumn);
+    var groupColumn = dataGrid.GroupColumnDescriptions[0];
+    dataGrid.GroupColumnDescriptions.Remove(groupColumn);
 }
 {% endhighlight %}
 
 ### Removing the Group based on group index 
 
-SfDataGrid allows you to remove the grouping by removing the groupcolumn index from `SfDataGrid.GroupColumnDescriptions` in a button click.
+SfDataGrid allows you to remove the grouping by removing the group column index from `SfDataGrid.GroupColumnDescriptions` in a button click.
 
 The following code example illustrates how to remove grouping in SfDataGrid.
 

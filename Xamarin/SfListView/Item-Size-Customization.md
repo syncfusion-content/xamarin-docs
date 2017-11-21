@@ -38,7 +38,7 @@ listView.AutoFitMode = AutoFitMode.Height;
 
 N> If define any size manually to view which loaded in [SfListView.ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html), SfListView will returns that size as item size of each item. 
 
-The following screenshot shows the output of AutoFit items. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListView_AutoFitItems-6769625)
+The following screenshot shows the output of AutoFit items. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Listview_AutoFit336794972)
 
 ![](SfListView_images/AutofitItems.png)
 

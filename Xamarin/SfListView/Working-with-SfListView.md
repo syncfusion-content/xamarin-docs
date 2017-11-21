@@ -56,7 +56,7 @@ When SfListView is loaded in CarouselView with `SfListView.AllowSwiping` as true
 
 SfListView allows you to scroll programmatically to a row based on index by using [ScrollToRowIndex](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LayoutBase~ScrollToRowIndex.html) method for both linear and grid layouts. Also, provided support to enable and disable the scrolling animation while changing the view. By default, the scrolling will be animated.
 
-N> If grouping is enabled, group header item index is also included in the index parameter and you can get the desired item index by passing the underlying data in [DisplayItems.IndexOf](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DisplayItems~IndexOf.html) method.
+N> If grouping is enabled, you can get the desired row index by passing the underlying data in [DisplayItems.IndexOf](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DisplayItems~IndexOf.html) method.
 
 {% highlight c# %}
 
@@ -72,7 +72,9 @@ listView.LayoutManager.ScrollToRowIndex(index, true);
 
 ## Identifying the Scroll state changes
 
-SfListView lets you to detect the different scroll states by using [ScrollStateChanged](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ScrollStateChanged_EV.html) event. The [ScrollStateChangedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ScrollStateChangedEventArgs.html) contains the `ScrollState` argument which specifies the scrolling state of `SfListView` and the [ScrollState](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ScrollState.html) property has the following enumeration values.
+SfListView will notify the scrolling state changes by using [ScrollStateChanged](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ScrollStateChanged_EV.html) event.
+
+Following states will be notified via [ScrollState](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ScrollState.html) property in the event argument.
 
 * **Dragging** - Specifies that `SfListView` is currently being dragged in the view.
 * **Fling** - Specifies that fling action is performed on `SfListView`.

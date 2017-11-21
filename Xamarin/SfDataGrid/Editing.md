@@ -314,8 +314,7 @@ The below code example shows how to hook the `SfDataGrid.CurrentCellBeginEdit` e
 this.dataGrid.CurrentCellBeginEdit += DataGrid_CurrentCellBeginEdit;
 private void DataGrid_CurrentCellBeginEdit(object sender, GridCurrentCellBeginEditEventArgs args)
 {
-    // Editing prevented for the column at RowColumnIndex(2,2).
-    if (args.RowColumnIndex == new RowColumnIndex(2, 2))
+    if (args.RowColumnIndex == new Syncfusion.GridCommon.ScrollAxis.RowColumnIndex(2, 2))
         args.Cancel = true;
 }
 {% endhighlight %}
@@ -333,8 +332,7 @@ The below code example shows how to hook the `SfDataGrid.CurrentCellEndEdit` eve
 dataGrid.CurrentCellEndEdit += DataGrid_CurrentCellEndEdit;
 private void DataGrid_CurrentCellEndEdit(object sender, GridCurrentCellEndEditEventArgs args)
 {
-    // Editing prevented for the column at RowColumnIndex(1,3).
-    if (args.RowColumnIndex == new RowColumnIndex(1,3))
+    if (args.RowColumnIndex == new Syncfusion.GridCommon.ScrollAxis.RowColumnIndex(1,3))
         args.Cancel = true;
 }
 {% endhighlight %}

@@ -154,11 +154,10 @@ private void DataGrid_GridLoaded(object sender, GridLoadedEventArgs e)
 
 ## Create custom Context Menu using Grid Events
 
-SfDataGrid allows you to display any custom view like a context menu that can act similar to a pop using the `GridLongPressed` event and `GridTappedEvent` event. 
+SfDataGrid allows you to create a custom context menu by loading the number of buttons in different layouts in the `GridLongPressed` event. 
 
 The following code illustrates how to create a custom context menu using Grid events.
 
-//MainPage.xaml
 {% highlight xaml %}
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -166,10 +165,10 @@ The following code illustrates how to create a custom context menu using Grid ev
              x:Class="ContextMenuSupport.MainPage"
              xmlns:sfgrid="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms">
 
-    <ContentPage.BindingContext>
-        <local:ViewModel />
-    </ContentPage.BindingContext>
-    <ContentPage.Content>
+  <ContentPage.BindingContext>
+    <local:ViewModel />
+  </ContentPage.BindingContext>
+  <ContentPage.Content>
     <RelativeLayout x:Name="relativeLayout">
       <sfgrid:SfDataGrid x:Name="dataGrid"
                          ItemsSource="{Binding Collection}"
@@ -185,7 +184,6 @@ The following code illustrates how to create a custom context menu using Grid ev
 </ContentPage>
 {% endhighlight %}
 
-//MainPage.cs
 {% highlight c# %}
 public partial class MainPage : ContentPage
     {
@@ -198,7 +196,6 @@ public partial class MainPage : ContentPage
         public MainPage()
         {
             InitializeComponent();
-            // Creates the view for the ContextMenu
             CreateContextMenu();
             dataGrid.AllowSorting = true;
             dataGrid.GridTapped += DataGrid_GridTapped;           
@@ -206,7 +203,6 @@ public partial class MainPage : ContentPage
 
         private void DataGrid_GridTapped(object sender, GridTappedEventsArgs e)
         {
-            // Hides the context menu when SfDataGrid is tapped anywhere outside the context menu view
             relativeLayout.Children.Remove(contextMenu);
             isContextMenuDisplayed = false;
         }
@@ -225,12 +221,11 @@ public partial class MainPage : ContentPage
             clearSortButton.BackgroundColor = Color.Black;
             clearSortButton.TextColor = Color.White;
             clearSortButton.Clicked += ClearSortButton_Clicked;
-            // A custom view hosting two buttons are now created
+
             contextMenu.Children.Add(sortButton);
             contextMenu.Children.Add(clearSortButton);            
         }
 
-        // Removes the sorting applied to the SfDataGrid
         private void ClearSortButton_Clicked(object sender, EventArgs e)
         {
             relativeLayout.Children.Remove(contextMenu);
@@ -238,7 +233,6 @@ public partial class MainPage : ContentPage
             dataGrid.SortColumnDescriptions.Clear();
         }
 
-        // Sorts the SfDataGrid data based on the column selected in the context menu
         private void SortButton_Clicked(object sender, EventArgs e)
         {
             relativeLayout.Children.Remove(contextMenu);
@@ -256,13 +250,11 @@ public partial class MainPage : ContentPage
             {
                 currentColumnName = dataGrid.Columns[e.RowColumnIndex.ColumnIndex].MappingName;
                 var point = dataGrid.RowColumnIndexToPoint(e.RowColumnIndex);
-                // Display the ContextMenu when the SfDataGrid is long pressed
                 relativeLayout.Children.Add(contextMenu, Constraint.Constant(point.X), Constraint.Constant(point.Y));
                 isContextMenuDisplayed = true;
             }
             else
             {
-                // Hides the context menu when SfDataGrid is long pressed when the context menu is already visible in screen
                 relativeLayout.Children.Remove(contextMenu);
                 isContextMenuDisplayed = false;
             }
@@ -270,4 +262,4 @@ public partial class MainPage : ContentPage
     }
 {% endhighlight %}
 
-Please refer the below GIF for the final rendering on execution of the above code example.
+On executing the above code example, the below output will appear.

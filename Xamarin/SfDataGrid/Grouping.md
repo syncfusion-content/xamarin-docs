@@ -202,12 +202,42 @@ The below screenshot shows the comparison between the two Group modes. GroupMode
 
 ## Clearing or Removing Group
 
-### Clearing the Group
+You can clear the grouping applied to the SfDataGrid by removing the items from the `SfDataGrid.GroupColumnDescriptions` collection or clearing the collection. Please refer the below code snippets to remove the grouping applied to the SfDataGrid.
 
-SfDataGrid allows you to clear the grouping by clearing the `SfDataGrid.GroupColumnDescriptions` in a button click.
+{% tabs %}
+{% highlight xaml %}
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GridInForms"
+             x:Class="GridInForms.MainPage"
+             xmlns:sfgrid="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms" >            
 
-The following code example illustrates how to clear grouping in SfDataGrid.
+    <ContentPage.BindingContext>
+        <local:ViewModel x:Name="viewModel"/>
+    </ContentPage.BindingContext>
+    
+    <StackLayout VerticalOptions="FillAndExpand">
+    
+        <Button Text="Remove Grouping"
+             TextColor="Black"
+             BackgroundColor="White"
+             Clicked="ClearGroupingButton_Click"/>
 
+        <sfgrid:SfDataGrid x:Name="dataGrid"
+                           ItemsSource="{Binding OrdersInfo}"
+                           >
+            <syncfusion:SfDataGrid.GroupColumnDescriptions>
+                <syncfusion:GroupColumnDescription ColumnName="Freight" />
+            </syncfusion:SfDataGrid.GroupColumnDescriptions>
+            <syncfusion:SfDataGrid.GroupColumnDescriptions>
+                <syncfusion:GroupColumnDescription ColumnName="CustomerID" />
+            </syncfusion:SfDataGrid.GroupColumnDescriptions>           
+        </sfgrid:SfDataGrid>
+    
+    </StackLayout>
+
+</ContentPage>
+{% endhighlight%} 
 {% highlight c# %}
 public partial class MainPage : ContentPage
 {
@@ -223,6 +253,15 @@ public partial class MainPage : ContentPage
         clearGroupingButton = new Button();
         stackLayout = new StackLayout();
         dataGrid.ItemsSource = viewModel.OrdersInfo;
+        dataGrid.GroupingMode = GroupingMode.Multiple;
+        dataGrid.GroupColumnDescriptions.Add(new GroupColumnDescription()
+        {
+            ColumnName = "Freight",
+        });
+        dataGrid.GroupColumnDescriptions.Add(new GroupColumnDescription()
+        {
+            ColumnName = "CustomerID",
+        });
         clearGroupingButton.Text = "Remove Grouping";
         clearGroupingButton.TextColor = Color.Black;
         clearGroupingButton.BackgroundColor = Color.White;
@@ -231,40 +270,24 @@ public partial class MainPage : ContentPage
         stackLayout.Children.Add(dataGrid);
         this.Content = stackLayout;       
     }
+{% endhighlight%} 
 
+{% highlight c# %}
     private void ClearGroupingButton_Click(object sender, System.EventArgs e)
     {
+        //Clearing the Group
         dataGrid.GroupColumnDescriptions.Clear();
+
+        //Removing the Group based on group item
+        //var groupColumn = dataGrid.GroupColumnDescriptions[0];
+        //dataGrid.GroupColumnDescriptions.Remove(groupColumn);
+        
+        //Removing the Group based on group index
+        //dataGrid.GroupColumnDescriptions.RemoveAt(0);
     }
 }
-{% endhighlight %}
-
-### Removing the Group based on group item
-
-SfDataGrid allows you to remove the grouping by removing the group column from `SfDataGrid.GroupColumnDescriptions` in a button click.
-
-The following code example illustrates how to remove grouping in SfDataGrid.
-
-{% highlight c# %}
-private void RemoveGroupingButton_Clicked(object sender, EventArgs e)
-{
-    var groupColumn = dataGrid.GroupColumnDescriptions[0];
-    dataGrid.GroupColumnDescriptions.Remove(groupColumn);
-}
-{% endhighlight %}
-
-### Removing the Group based on group index 
-
-SfDataGrid allows you to remove the grouping by removing the group column index from `SfDataGrid.GroupColumnDescriptions` in a button click.
-
-The following code example illustrates how to remove grouping in SfDataGrid.
-
-{% highlight c# %}
-private void RemoveGroupingButton_Clicked(object sender, EventArgs e)
-{
-   dataGrid.GroupColumnDescriptions.RemoveAt(0);
-}
-{% endhighlight %}
+{% endhighlight%} 
+{% endtabs %}
 
 Run the application to render the following output. 
 

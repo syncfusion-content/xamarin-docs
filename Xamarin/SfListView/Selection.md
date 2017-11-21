@@ -81,11 +81,9 @@ listView.SelectionBackgroundColor = Color.Blue;
 
 ## Programmatic Animation in Selection
 
-SfListView allows programmatic animation in selection at runtime. This can be achieved by inheriting the SelectionController class.
+SfListView allows programmatic animation in selection at runtime by using virtual method [AnimateSelectedItem](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SelectionController~AnimateSelectedItem.html) of `SelectionController` class
 
-The following code example illustrates how to inherit the `SelectionController` class and override the AnimateSelectedItem() method. 
-
-Also apply custom animation for selectedListViewItem.
+The following code example illustrates how to inherit the `SelectionController` class and override the AnimateSelectedItem() method for animation in selection.
 
 {% highlight c# %}
 listView.SelectionController = new SelectionControllerExt(listView);
@@ -106,8 +104,6 @@ public class SelectionControllerExt : SelectionController
 {% endhighlight %}
 
 You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Selection-1915286868).
-
-The following screenshot shows the output rendered when the selection animation is performed on the items.
 
 ## Selection Events
 

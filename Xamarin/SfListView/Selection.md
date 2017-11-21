@@ -60,9 +60,13 @@ listView.SelectAll();
 
 SfListView allows you to get all the selected items through [SelectedItems](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItems.html) property.
 
+N>  You cannot set or bind the value to the `SelectedItems` property, you can only add, remove or reset the items to the `SelectedItems` property to update the selection.
+
 ### CurrentItem vs SelectedItem
 
 SfListView allows you to get the selected item by using [SelectedItem](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItem.html) and [CurrentItem](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~CurrentItem.html) properties. Both `SelectedItem` and `CurrentItem` returns the same data object when single item is selected. When more than one items are selected, then `SelectedItem` property returns the first selected item and `CurrentItem` property returns the last selected item.
+
+W> If you set any item which is not available in `ItemsSource` to `SelectedItem` or `CurrentItem` property, then exception will be thrown.
 
 ## Clear Selected Items
 You can clear the selected items by calling the [SelectedItems.Clear()](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItems.html) method.
@@ -144,6 +148,8 @@ private void ListView_OnSelectionChanged(object sender, ItemSelectionChangedEven
 }
 {% endhighlight %}
 
+N> [SelectionChanging](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionChanging_EV.html) and [SelectionChanged](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionChanged_EV.html) events will be triggered only on UI interactions.
+
 ## Customize the Selected Items
 
 SfListView allows to customize the appearance of selected item/items. The following customizations should give you an idea about how to customize the appearance of selected items in SfListView. 
@@ -188,6 +194,6 @@ public class SelectionBoolToImageConverter : IValueConverter
 
 In the above example, to change the appearance of selected item, `IsSelected` property is maintained in model class and binded to an image element in the [ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html). And `IsSelected` property of data item has been updated based on the selection from `SelectionChanged` event of SfListView. The binded image's source is changed by using `SelectionBoolToImageConverter` converter. 
 
-Now run the application to render the following output. You can download the entire source code of this demo from [here](http://files2.syncfusion.com/Xamarin.Forms/Samples/CustomSelection.zip).
+Now run the application to render the following output. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Listview_CustomSelection546520441).
 
 ![](SfListView_images/SfListView-Selection-2.png)

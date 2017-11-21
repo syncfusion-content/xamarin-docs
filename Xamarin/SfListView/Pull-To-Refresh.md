@@ -77,7 +77,7 @@ private async void PullToRefresh_Refreshing(object sender, EventArgs args)
 
 {% endhighlight %}
 
-Now run the application to render the following output. You can also download the entire source code of this demo from [here](http://files2.syncfusion.com/Xamarin.Forms/Samples/ListView_PullToRefresh.zip).
+Now run the application to render the following output. You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Listview_Sfpulltorefresh1602348765).
 
 ![](SfListView_images/SfListView-PullToRefresh.png)
 

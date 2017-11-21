@@ -25,6 +25,11 @@ The `Pulling` event will be notified whenever the swipe gesture is started. This
 * **Progress** - Gets the progress completion value.
 
 {% tabs %}
+{%highlight Xaml%}
+
+    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" PullingEvent="PullToRefresh_Pulling" />
+
+{%endhighlight%}
 {% highlight c# %}
   pullToRefresh.Pulling += PullToRefresh_Pulling;
 
@@ -34,11 +39,7 @@ The `Pulling` event will be notified whenever the swipe gesture is started. This
     var progress = args.Progress;
   }
 {% endhighlight %}
-{%highlight Xaml%}
 
-    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" PullingEvent="PullToRefresh_Pulling" />
-
-{%endhighlight%}
 
 {% endtabs %}
 
@@ -47,6 +48,14 @@ The `Pulling` event will be notified whenever the swipe gesture is started. This
 `Refreshing` event is triggered once pointer is released. This event will occur till the `IsRefreshing` property is set as `false`.
 
 {% tabs %}
+
+
+
+{%highlight Xaml%}
+
+    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" RefreshingEvent="PullToRefresh_Refreshing" />
+
+{%endhighlight%}
 
 {% highlight c# %}
 
@@ -59,14 +68,6 @@ The `Pulling` event will be notified whenever the swipe gesture is started. This
         pullToRefresh.IsRefreshing = false;
     }
 {% endhighlight %}
-
-{%highlight Xaml%}
-
-    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" RefreshingEvent="PullToRefresh_Refreshing" />
-
-{%endhighlight%}
-
-
 {% endtabs %}
 
 ## Refreshed
@@ -74,6 +75,14 @@ The `Pulling` event will be notified whenever the swipe gesture is started. This
 `Refreshed` event is triggered once the `Refreshing` event is completed.
 
 {% tabs %}
+
+
+{%highlight Xaml%}
+
+    <syncfusion:SfPullToRefresh x:Name=" pullToRefresh" RefreshedEvent="PullToRefresh_Refreshed" />
+
+{%endhighlight%}
+
 {% highlight c# %}
 
     pullToRefresh.Refreshed += PullToRefresh_Refreshed;
@@ -83,11 +92,4 @@ The `Pulling` event will be notified whenever the swipe gesture is started. This
     }
 
 {% endhighlight %}
-
-{%highlight Xaml%}
-
-    <syncfusion:SfPullToRefresh x:Name=" pullToRefresh" RefreshedEvent="PullToRefresh_Refreshed" />
-
-{%endhighlight%}
-
 {% endtabs %}

@@ -33,7 +33,7 @@ The following list of assemblies need to be added as reference from the lib fold
 </tr>
 <tr>
 <td>PCL</td>
-<td>pcl\Syncfusion.Data.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfDataGrid.XForms.dll<br/>Syncfusion.SfNumericTextBox.XForms.dll<br/></td>
+<td>pcl\Syncfusion.Core.XForms.dll<br/>pcl\Syncfusion.Data.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfDataGrid.XForms.dll<br/>Syncfusion.SfNumericTextBox.XForms.dll<br/></td>
 </tr>
 <tr>
 <td>Android Renderer</td>
@@ -510,3 +510,11 @@ The above exceptions can be resolved in two ways.
 
 
 ![](SfDataGrid_images/GettingStarted_img1.png)
+
+## Loading the SfDataGrid inside a SfPullToRefresh
+
+SfPullToRefresh is a refresh control that allows you to interact and refresh the view loaded in it. When the SfDataGrid is hosted inside the SfPullToRefresh, it is used to refresh the item while performing the pull to refresh action. The steps to be followed to host the SfDataGrid inside SfPullToRefresh is explained in SfPullToRefresh Property Customization tab.
+
+The final output will look like on iOS, Android and Windows Phone devices as shown below.
+
+![](SfDataGrid_images/SfDataGrid_SlideOnTop_XForms.gif)

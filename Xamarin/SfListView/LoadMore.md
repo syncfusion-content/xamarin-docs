@@ -279,6 +279,7 @@ The following code example shows to disable the `Load More View`, if the maximum
 
 {% highlight c# %}
 LoadMoreItemsCommand = new Command<object>(LoadMoreItems, CanLoadMoreItems);
+
 private async void LoadMoreItems(object obj)
 {
     var listview = obj as Syncfusion.ListView.XForms.SfListView;

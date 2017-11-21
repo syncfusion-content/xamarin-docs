@@ -23,8 +23,6 @@ SfListView for Xamarin.Forms renders set of data items with Xamarin.Forms views 
 
 * Supports linear layout and grid layout.
 
-* Reordering items by dragging and dropping them in a linear layout with displaying custom UI in a template.
-
 * Orientation support.
 
 * Data operations such as sorting, grouping and filtering.
@@ -36,6 +34,8 @@ SfListView for Xamarin.Forms renders set of data items with Xamarin.Forms views 
 * Swiping - Swipe template for loading views with custom actions.
 
 * Header and Footer with sticky options.
+
+* Supports load more data at runtime automatically or manually when end of list is reached.
 
 
 ## Advantages of SfListView over Xamarin Forms ListView

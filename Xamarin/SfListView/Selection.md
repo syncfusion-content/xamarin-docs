@@ -79,6 +79,32 @@ SfListView allows you change the selection background color for the selected ite
 listView.SelectionBackgroundColor = Color.Blue;
 {% endhighlight %}
 
+## Programmatic Animation in Selection
+
+SfListView allows programmatic animation in selection at runtime by using virtual method [AnimateSelectedItem](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SelectionController~AnimateSelectedItem.html) of `SelectionController` class
+
+The following code example illustrates how to animate the selection by override the AnimateSelectedItem method.
+
+{% highlight c# %}
+listView.SelectionController = new SelectionControllerExt(listView);
+
+public class SelectionControllerExt : SelectionController
+{
+   public SelectionControllerExt(SfListView listView) : base(listView)
+   {
+   }
+   
+   protected override void AnimateSelectedItem(ListViewItem selectedListViewItem)
+   {
+      base.AnimateSelectedItem(selectedListViewItem);
+      selectedListViewItem.Opacity = 0;
+      selectedListViewItem.FadeTo(1, 3000, Easing.SinInOut);
+   }
+}
+{% endhighlight %}
+
+You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Selection-1915286868).
+
 ## Selection Events
 
 ### SelectionChanging Event

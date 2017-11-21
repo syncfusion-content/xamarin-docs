@@ -246,7 +246,7 @@ SfDataGrid allows you to remove the grouping by removing the groupcolumn from `S
 The following code example illustrates how to remove grouping in SfDataGrid.
 
 {% highlight c# %}
-private void RemoveButton_Clicked(object sender, EventArgs e)
+private void RemoveGroupingButton_Clicked(object sender, EventArgs e)
 {
     var groupcolumn = dataGrid.GroupColumnDescriptions[0];
     dataGrid.GroupColumnDescriptions.Remove(groupcolumn);
@@ -260,7 +260,7 @@ SfDataGrid allows you to remove the grouping by removing the groupcolumn index f
 The following code example illustrates how to remove grouping in SfDataGrid.
 
 {% highlight c# %}
-private void RemoveButton_Clicked(object sender, EventArgs e)
+private void RemoveGroupingButton_Clicked(object sender, EventArgs e)
 {
    dataGrid.GroupColumnDescriptions.RemoveAt(0);
 }

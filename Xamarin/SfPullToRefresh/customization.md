@@ -96,7 +96,6 @@ Gets or sets the refresh content threshold value that indicates progress indicat
 
 {% endtabs %}
 
-<br/>
 
 ## PullingThreshold
 
@@ -118,7 +117,6 @@ Gets or sets the value for the refresh content threshold, this indicate progress
 
 {% endtabs %}
 
-<br/>
 
 ## IsRefreshing
 
@@ -140,7 +138,6 @@ Get or set the state for refreshing the view. View will get refresh while `IsRef
 
 {% endtabs %}
 
-<br/>
 
 ## ProgressBackgroundColor
 
@@ -162,7 +159,6 @@ Get or set the background color to the progress indicator.
 
 {% endtabs %}
 
-<br/>
 
 ## ProgressStrokeColor
 
@@ -184,7 +180,6 @@ Get or set the color to the progress indicator stroke
 
 {% endtabs %}
 
-<br/>
 
 ## ProgressStrokeWidth
 
@@ -205,7 +200,6 @@ Get or set the width to the progress indicator stroke.
 {% endhighlight %}
 {% endtabs %}
 
-<br/>
 
 ## RefreshContentWidth
 
@@ -227,7 +221,6 @@ Get or set the width to the refresh content.
 
 {% endtabs %}
 
-<br/>
 
 ## RefreshContentHeight
 
@@ -249,11 +242,9 @@ Get or set the width to the refresh content.
 
 {% endtabs %}
 
-<br/>
 
 ## Programmatic Support 
 
-<br/>
 
 ### StartRefreshing()
 
@@ -269,7 +260,6 @@ StartRefreshing method is used to refresh the content without interaction in pul
 
 {% endtabs %}
 
-<br/>
 
 ### EndRefreshing()
 
@@ -285,7 +275,6 @@ EndRefreshing method is used to ends the progress animation of `SfPullToRefresh`
 
 {% endtabs %}
 
-<br/>
 
 ## Host SfDataGrid as pullable content
 
@@ -495,7 +484,6 @@ If we run the above sample with TransitionMode as Push, the output will look lik
 
 ![](hostingsfdatagrid_images/SfDataGrid_Push_Xamarin.Forms.gif)
 
-<br/>
 
 ## Host SfListView as pullable content
 

@@ -329,6 +329,6 @@ private void ListView_SwipeEnded(object sender, SwipeEndedEventArgs e)
 
 {% endhighlight %}
 
-The following screenshot shows the output rendered when `RightSwipeTemplate` is applied. You can download the entire source code of this demo from [here](https://files2.syncfusion.com/Xamarin.Forms/Samples/Swiping.zip). 
+The following screenshot shows the output rendered when `RightSwipeTemplate` is applied. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Listview_Swiping1471330093). 
 
 ![](SfListView_images/SfListView-Swiping--2.png)

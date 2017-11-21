@@ -83,6 +83,32 @@ SfListView allows you change the selection background color for the selected ite
 listView.SelectionBackgroundColor = Color.Blue;
 {% endhighlight %}
 
+## Programmatic Animation in Selection
+
+SfListView allows programmatic animation in selection at runtime by using virtual method [AnimateSelectedItem](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SelectionController~AnimateSelectedItem.html) of `SelectionController` class
+
+The following code example illustrates how to animate the selection by override the AnimateSelectedItem method.
+
+{% highlight c# %}
+listView.SelectionController = new SelectionControllerExt(listView);
+
+public class SelectionControllerExt : SelectionController
+{
+   public SelectionControllerExt(SfListView listView) : base(listView)
+   {
+   }
+   
+   protected override void AnimateSelectedItem(ListViewItem selectedListViewItem)
+   {
+      base.AnimateSelectedItem(selectedListViewItem);
+      selectedListViewItem.Opacity = 0;
+      selectedListViewItem.FadeTo(1, 3000, Easing.SinInOut);
+   }
+}
+{% endhighlight %}
+
+You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Selection-1915286868).
+
 ## Selection Events
 
 ### SelectionChanging Event
@@ -168,6 +194,6 @@ public class SelectionBoolToImageConverter : IValueConverter
 
 In the above example, to change the appearance of selected item, `IsSelected` property is maintained in model class and binded to an image element in the [ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html). And `IsSelected` property of data item has been updated based on the selection from `SelectionChanged` event of SfListView. The binded image's source is changed by using `SelectionBoolToImageConverter` converter. 
 
-Now run the application to render the following output. You can download the entire source code of this demo from [here](http://files2.syncfusion.com/Xamarin.Forms/Samples/CustomSelection.zip).
+Now run the application to render the following output. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Listview_CustomSelection546520441).
 
 ![](SfListView_images/SfListView-Selection-2.png)

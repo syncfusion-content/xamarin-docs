@@ -263,3 +263,5 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 
 On executing the above code example, the below output will appear.
+
+![](SfDataGrid_images/CustomContextMenu.gif)

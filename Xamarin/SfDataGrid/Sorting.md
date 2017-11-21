@@ -64,6 +64,7 @@ dataGrid.AllowTriStateSorting = true;
 {% endhighlight %}
 {% endtabs %}
 
+![](SfDataGrid_images/Tristate_Sorting.gif)
 
 ## Multi-Column Sorting
 
@@ -79,6 +80,8 @@ The following code example shows how to enable multi-sorting in SfDataGrid.
 dataGrid.AllowMultiSorting = true;
 {% endhighlight %}
 {% endtabs %}
+
+![](SfDataGrid_images/MultiColumn_Sorting.gif)
 
 ## Sort column in double click
 

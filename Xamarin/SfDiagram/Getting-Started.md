@@ -190,7 +190,7 @@ Define Employee Information as a Collection. The below code example shows an emp
 <syncfusion:SfDiagram x:Name="diagram" LayoutManager="{StaticResource layoutManager}" DataSourceSettings="{StaticResource DataSourceSettings}">
 {% endhighlight %}
 {% highlight c# %}
-//Initializes the employee colletionObservableCollection<Employee> employees = new ObservableCollection<Employee>();            employees.Add(new Employee() { Name = "Elizabeth", Employee_Id = "1", ParentId = "", Designation = "CEO" });
+//Initializes the employee collectionObservableCollection<Employee> employees = new ObservableCollection<Employee>();            employees.Add(new Employee() { Name = "Elizabeth", Employee_Id = "1", ParentId = "", Designation = "CEO" });
 employees.Add(new Employee() { Name = "Christina", Employee_Id = "2", ParentId = "1", Designation = "Manager" });
 employees.Add(new Employee() { Name = "Yang", Employee_Id = "3", ParentId = "1", Designation = "Manager" });
 employees.Add(new Employee() { Name = "Yoshi", Employee_Id = "4", ParentId = "2", Designation = "Team Lead" });

@@ -495,10 +495,31 @@ N> In case, if the orientation of the `StackLayout` is horizontal, then you have
 
 ## Loading SfDataGrid with specified Height and Width
 
-SfDataGrid can be load with specific height and width inside different layouts using [SfDataGrid.HeightRequest](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~HeightRequest.html) and [SfDataGrid.WidthRequest](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~WidthRequest.html) property. You need to set the [HorizontalOptions](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~HorizontalOptions.html) and [VerticalOptions](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~VerticalOptions.html) for the grid accordingly.
+SfDataGrid can be load with specific height and width inside different layouts using [SfDataGrid.HeightRequest](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~HeightRequest.html) and [SfDataGrid.WidthRequest](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~WidthRequest.html) property. 
 
-For example, if you are setting width request then you should set the `HorizontalOptions` of the SfDataGrid based on your requirement and if you are setting the height request then you should set the `VerticalOptions` of the grid accordingly. In case of setting both, you need to set both `HorizontalOptions` and `VerticalOptions` accordingly. The following code example illustrates how this can be done.
+If you load SfDataGrid as a single child to its parent, then you need to set the [HorizontalOptions](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~HorizontalOptions.html) and [VerticalOptions](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~VerticalOptions.html) for the grid accordingly.
 
+{% tabs %}
+{% highlight xaml %}
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GridInForms"
+             x:Class="GridInForms.MainPage"
+             xmlns:sfgrid="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms" >
+
+    <ContentPage.BindingContext>
+        <local:ViewModel x:Name="viewModel"/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <sfgrid:SfDataGrid x:Name="dataGrid"
+                           ItemsSource="{Binding OrdersInfo}"
+                           HeightRequest="290"
+                           WidthRequest="200"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="Center"/>
+    <ContentPage.Content>
+</ContentPage>
+{% endhighlight %}
 {% highlight c# %}
 public MainPage()
 {
@@ -506,15 +527,16 @@ public MainPage()
     viewModel = new ViewModel();
     dataGrid = new SfDataGrid();
     dataGrid.ItemsSource = viewModel.OrdersInfo;
-    dataGrid.HeightRequest = 200;
-    dataGrid.WidthRequest = 500;
+    dataGrid.HeightRequest = 290;
+    dataGrid.WidthRequest = 200;
     dataGrid.VerticalOptions = LayoutOptions.CenterAndExpand;
-    dataGrid.HorizontalOptions = LayoutOptions.CenterAndExpand;
-    this.Content = dataGrid; ;
+    dataGrid.HorizontalOptions = LayoutOptions.Center;
+    this.Content = dataGrid;
 }
 {% endhighlight %}
+{% endtabs %}
 
-The following screenshot shows how the SfDataGrid is loaded with specific height and width.
+The following screenshot shows how the SfDataGrid is loaded with specific height and width with VerticalOptions and HorizontalOptions.
 
 ![](SfDataGrid_images/Loading_with specific_height_and_width.png)
 

@@ -12,6 +12,7 @@ documentation: UG
 A group represents a collection of records that belong to a particular category. When grouping is applied, the data is organized into a hierarchical structure based on matching field values. The records having identical values in the grouped column are combined to form a group. Each group is identified by its [CaptionSummaryRow](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~CaptionSummaryRowProperty.html) to get the underlying records in view.
 
 N> To update grouping for the newly added row or column, set the `SfDataGrid.View.LiveDataUpdateMode` to `LiveDataUpdateMode.AllowDataShaping`.
+
 N> When `BeginInit` method is called it suspends all the updates until `EndInit` method is called.  
 
 ## Programmatic Grouping
@@ -269,7 +270,9 @@ The below screenshot shows the comparison between the two Group modes. GroupMode
 
 ## Clearing or Removing Group
 
-You can clear the grouping applied to the SfDataGrid by removing the items from the `SfDataGrid.GroupColumnDescriptions` collection or clearing the collection. Please refer the below code snippets to remove the grouping applied to the SfDataGrid.
+You can clear the grouping applied to the SfDataGrid by removing the items from the `SfDataGrid.GroupColumnDescriptions` collection or clearing the collection. 
+
+Please refer the below code snippets to remove the grouping applied to the SfDataGrid.
 
 {% tabs %}
 {% highlight xaml %}
@@ -338,6 +341,7 @@ public partial class MainPage : ContentPage
         this.Content = stackLayout;       
     }
 {% endhighlight%} 
+{% endtabs %}
 
 {% highlight c# %}
     private void ClearGroupingButton_Click(object sender, System.EventArgs e)
@@ -354,13 +358,12 @@ public partial class MainPage : ContentPage
     }
 }
 {% endhighlight%} 
-{% endtabs %}
 
 Run the application to render the following output. 
 
 ![](SfDataGrid_images/Remove_Grouping.png)
 
-N> You can also clear or remove the grouping on [GridTapped](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridTapped_EV.html), [GridDoubleTapped](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridDoubleTapped_EV.html) or [GridLongPressed events](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridLongPressed_EV.html).
+N> You can also clear or remove the grouping on [GridTapped event](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridTapped_EV.html), [GridDoubleTapped event](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridDoubleTapped_EV.html) or [GridLongPressed event](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridLongPressed_EV.html).
 
 ## Events
 

@@ -263,6 +263,7 @@ public MainPage()
 }
 private void DataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnEventArgs e)
 {
+    // Sorting will not be done for the Freight column
     if (e.Column.MappingName == "Freight")
         e.Column.AllowSorting = false;
 }
@@ -280,6 +281,7 @@ public MainPage()
     dataGrid.AutoGenerateColumns = false;
     dataGrid.AllowSorting = true;
     dataGrid.Columns.Add(new GridTextColumn() { MappingName = "OrderID" });
+    // Sorting will not be done for the Freight column
     dataGrid.Columns.Add(new GridTextColumn() { MappingName = "Freight", AllowSorting = false });
     dataGrid.Columns.Add(new GridTextColumn() { MappingName = "Country" });
     this.Content = dataGrid;          

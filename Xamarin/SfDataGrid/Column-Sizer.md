@@ -118,10 +118,11 @@ textColumn.ColumnSizer = ColumnSizer.Auto;
 
 ### Fill Remaining width for any column
 
-SfDataGrid allows to fill the remaining width for any column by using [GridColumn.ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~ColumnSizer.html) property.
-The `GridColumn.ColumnSizer` property is also type of [ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.ColumnSizer.html) and If we want to fill any columns accordingly in the view, then follow the below code example to acheive it.
+SfDataGrid allows to fill the remaining width in view for any column by using [GridColumn.ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~ColumnSizer.html) property.
+The `GridColumn.ColumnSizer` has higher priority than the [SfDataGrid.ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.ColumnSizer.html) property. Hence the individual columns having the `GridColumn.ColumnSizer` property set will not be included in the column sizer calculations of the `SfDataGrid`. Set the `GridColumn.ColumnSizer` property as [ColumnSizer.LastColumnFill](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.ColumnSizer.html#) for the column you want to fill with the remaining width in the view. Please refer the below code example to acheive the same.
 
-The following example shows how to fill the remaining width for any column in `SfDataGrid`
+In the below code snippet, the SfDataGrid is applied `ColumnSizer.Star` and the second column is applied ColumnSizer.LastColumnFill.
+Hence the second column will take up the remaining space, after the other columns are rendered with star sizer.
 
 {% tabs %}
 {% highlight xaml %}
@@ -129,103 +130,27 @@ The following example shows how to fill the remaining width for any column in `S
                    AutoGenerateColumns="False"
                    ItemsSource="{Binding OrdersInfo}">
 
-<sfgrid:SfDataGrid.Columns x:TypeArguments="sfgrid:Columns">
-    <sfgrid:GridTextColumn HeaderFontAttribute="Bold"
-                        HeaderText="OrderID"
-                        HeaderTextAlignment="Start"
-                        MappingName="OrderID"
-                        TextAlignment="End">
-        <sfgrid:GridTextColumn.HeaderCellTextSize>
-            <OnPlatform x:TypeArguments="x:Double"
-                    Android="14"
-                    WinPhone="12"
-                    iOS="12" />
-        </sfgrid:GridTextColumn.HeaderCellTextSize>
-        <sfgrid:GridTextColumn.CellTextSize>
-            <OnPlatform x:TypeArguments="x:Double"
-                    Android="14"
-                    WinPhone="12"
-                    iOS="12" />
-        </sfgrid:GridTextColumn.CellTextSize>
-    </sfgrid:GridTextColumn>
-
-<sfgrid:GridTextColumn HeaderFontAttribute="Bold"
-                    HeaderText="CustomerID"
-                    HeaderTextAlignment="Center"
-                    MappingName="CustomerID"
-                    TextAlignment="Center"
-                    ColumnSizer="LastColumnFill">
-    <sfgrid:GridTextColumn.HeaderCellTextSize>
-        <OnPlatform x:TypeArguments="x:Double"
-                Android="14"
-                WinPhone="12"
-                iOS="12" />
-    </sfgrid:GridTextColumn.HeaderCellTextSize>
-    <sfgrid:GridTextColumn.CellTextSize>
-        <OnPlatform x:TypeArguments="x:Double"
-                Android="14"
-                WinPhone="12"
-                iOS="12" />
-    </sfgrid:GridTextColumn.CellTextSize>
-</sfgrid:GridTextColumn>
-
-<sfgrid:GridTextColumn HeaderFontAttribute="Bold"
-                    HeaderText="Salary"
-                    HeaderTextAlignment="Start"
-                    MappingName="Salary"
-                    TextAlignment="Start">
-    <sfgrid:GridTextColumn.HeaderCellTextSize>
-        <OnPlatform x:TypeArguments="x:Double"
-                Android="14"
-                WinPhone="12"
-                iOS="12" />
-    </sfgrid:GridTextColumn.HeaderCellTextSize>
-    <sfgrid:GridTextColumn.CellTextSize>
-        <OnPlatform x:TypeArguments="x:Double"
-                    Android="14"
-                    WinPhone="12"
-                    iOS="12" />
-    </sfgrid:GridTextColumn.CellTextSize>
-</sfgrid:GridTextColumn>
-
-<sfgrid:GridTextColumn HeaderFontAttribute="Bold"
-                    HeaderText="Country"
-                    HeaderTextAlignment="Start"
-                    MappingName="Country"
-                    TextAlignment="Start">
-    <sfgrid:GridTextColumn.HeaderCellTextSize>
-        <OnPlatform x:TypeArguments="x:Double"
-                Android="14"
-                WinPhone="12"
-                iOS="12" />
-    </sfgrid:GridTextColumn.HeaderCellTextSize>
-    <sfgrid:GridTextColumn.CellTextSize>
-        <OnPlatform x:TypeArguments="x:Double"
-                Android="14"
-                WinPhone="12"
-                iOS="12" />
-    </sfgrid:GridTextColumn.CellTextSize>
-</sfgrid:GridTextColumn>
-</sfgrid:SfDataGrid.Columns> 
-</sfgrid:SfDataGrid> 
+<sfgrid:SfDataGrid.Columns>
+    <sfgrid:GridTextColumn MappingName="OrderID"/>
+    <sfgrid:GridTextColumn MappingName="CustomerID" ColumnSizer="LastColumnFill"/>
+    <sfgrid:GridTextColumn MappingName="Salary"/>
+    <sfgrid:GridTextColumn MappingName="Country"/>
+</sfgrid:SfDataGrid.Columns>
+</sfgrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %} 
 GridTextColumn orderIDColumn = new GridTextColumn();
 orderIDColumn.MappingName = "OrderID";
-orderIDColumn.HeaderText = "OrderID";
 
 GridTextColumn customerIDColumn = new GridTextColumn();
 customerIDColumn.MappingName = "CustomerID";
-customerIDColumn.HeaderText = "CustomerID";
 customerIDColumn.ColumnSizer = ColumnSizer.LastColumnFill;
 
 GridTextColumn salaryColumn = new GridTextColumn();
 salaryColumn.MappingName = "Salary";
-salaryColumn.HeaderText = "Salary";
 
 GridTextColumn countryColumn = new GridTextColumn();
 countryColumn.MappingName = "Country";
-countryColumn.HeaderText = "Country";
 
 dataGrid.Columns.Add(orderIDColumn);
 dataGrid.Columns.Add(customerIDColumn);
@@ -234,41 +159,32 @@ dataGrid.Columns.Add(countryColumn);
 {% endhighlight %}
 {% endtabs %}   
 
-![](SfDataGrid_images/FillRemaining_Width_ForAnycolumn.png)
-
 ### Refreshing ColumnSizer at runtime
 
-You can refresh the column sizing for SfDataGrid columns by using [GridColumn.ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~ColumnSizer.html) property.
-
-The following code example guides how to refresh `ColumnSizer` at runtime in SfDataGrid.
+You can refresh the column sizing for `SfDataGrid.Columns` by using [GridColumn.ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~ColumnSizer.html) property.
+Consider that `ColumnSizer.Auto` is applied to the SfDataGrid. If in case the underlying values are changed in run time, you can refresh the ColumnSizer as shown below.
 
 {% tabs %}
 {% highlight xaml %}    
-<Grid RowSpacing="10">
-    <Grid.RowDefinitions>
-        <RowDefinition Height="Auto"/>
-        <RowDefinition Height="*"/>
-    </Grid.RowDefinitions>
-<StackLayout Grid.Row="0"
-             HorizontalOptions="Center" 
-             Orientation="Horizontal">
+<StackLayout HorizontalOptions="Center" 
+             Orientation="Vertical">
     <Button x:Name="button"
-            Text="ColumnSizer"
-            WidthRequest="250"
+            Text="Refresh ColumnSizer"
+            HeightRequest="100"
             HorizontalOptions="Center"
             Clicked="ColumnSizerChanged"/>
-</StackLayout>
 <sfgrid:SfDataGrid x:Name="dataGrid"
-                   Grid.Row="1"
                    AutoGenerateColumns="True"
-                   ColumnSizer="LastColumnFill"
+                   AllowEditing="True"
+                   ColumnSizer="Auto"
                    ItemsSource="{Binding OrdersInfo}">
 </sfgrid:SfDataGrid>
-</Grid>   
+</StackLayout>
 {% endhighlight %}
 {% highlight c# %}  
 private void ColumnSizerChanged(object sender, EventArgs e)
 {
+    //Refreshes the column sizer of the SfDataGrid
     dataGrid.GridColumnSizer.Refresh(true);
 }    
 {% endhighlight %}
@@ -276,43 +192,47 @@ private void ColumnSizerChanged(object sender, EventArgs e)
 
 ### Resetting column width to apply ColumnSizer   
 
-You can reset and apply the `ColumnSizer` for any column by using the below way.
+By default, the columns having the [GridColumn.Width](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~Width.html) property set, will not be included for the SfDataGrid's column sizer calculations. If in case you want to include the width columns and refresh the column sizer in runtime, please set the `GridColumn.Width` property to double.NaN before calling the [GridColumnSizer.Refresh()](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumnSizer~Refresh(Boolean).html) method. Please refer the below code example to achieve the same.
 
-{% highlight c# %}
-GridTextColumn orderIDColumn = new GridTextColumn();
-orderIDColumn.MappingName = "OrderID";
-orderIDColumn.HeaderText = "OrderID";
-orderIDColumn.Width = 20;
-
-GridTextColumn customerIDColumn = new GridTextColumn();
-customerIDColumn.MappingName = "CustomerID";
-customerIDColumn.HeaderText = "CustomerID";
-
-GridTextColumn salaryColumn = new GridTextColumn();
-salaryColumn.MappingName = "Salary";
-salaryColumn.HeaderText = "Salary";
-
-GridTextColumn countryColumn = new GridTextColumn();
-countryColumn.MappingName = "Country";
-countryColumn.HeaderText = "Country";
-
-dataGrid.Columns.Add(orderIDColumn);
-dataGrid.Columns.Add(customerIDColumn);
-dataGrid.Columns.Add(salaryColumn);
-dataGrid.Columns.Add(countryColumn);
-
-RetsetColumns(dataGrid.Columns);
+{% tabs %}
+{% highlight xaml %}
+<StackLayout
+    Orientation="Vertical">
+    <Button x:Name="button"
+        Text=" Refresh ColumnSizer"
+        TextColor="White"
+        HeightRequest="50"
+        BackgroundColor="Black"
+        HorizontalOptions="Center"
+        Clicked="ColumnSizerChanged"/>
+    <sfgrid:SfDataGrid x:Name="dataGrid"
+                    AllowEditing="True"
+                    AutoGenerateColumns="False"
+                    ItemsSource="{Binding OrdersInfo}">
+        <sfgrid:SfDataGrid.Columns>
+            <sfgrid:GridTextColumn MappingName="OrderID" Width="20"/>
+            <sfgrid:GridTextColumn MappingName="CustomerID"/>
+            <sfgrid:GridTextColumn MappingName="Salary"/>
+            <sfgrid:GridTextColumn MappingName="Country"/>
+        </sfgrid:SfDataGrid.Columns>
+    </sfgrid:SfDataGrid>
+</StackLayout>
 {% endhighlight %}
-
 {% highlight c# %}
-private void RetsetColumns(IEnumerable<GridColumn>columns)
+private void ColumnSizerChanged(object sender, EventArgs e)
 {
-    foreach(var column in columns)
+    //Refreshes the column sizer calculation of the SfDataGrid
+    ResetColumns();
+    dataGrid.GridColumnSizer.Refresh(true);
+}
+private void ResetColumns()
+{
+    foreach (var column in dataGrid.Columns)
     {
-        if(column.MappingName =="OrderID")
+        // Setting NaN values to columns for which width is applied
+        if (!double.IsNaN(column.Width))
         {
-            dataGrid.Columns[0].Width = dataGrid.Columns[1].Width;
-            dataGrid.Columns[0].ColumnSizer = ColumnSizer.LastColumnFill;
+            column.Width = double.NaN;
         }
     }
 }
@@ -320,9 +240,9 @@ private void RetsetColumns(IEnumerable<GridColumn>columns)
 
 ## Star column sizer ratio support
 
-You can customize the ColumnSizer.Star width calculation by setting the [SfDataGrid.ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ColumnSizer.html) property which is processed in [GridColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumnSizer.html) class. If you want to divide the columns width in different ratio,you need to override the [SetStarWidthForColumns](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumnSizer~SetStarWidthForColumns.html) method in `GridColumnSizer` class.  
+You can customize the `ColumnSizer.Star` width calculation by writing a custom GridColumnSizer class derived from [GridColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumnSizer.html) and assign it to the `SfDataGrid.ColumnSizer` property. You can implement your own logic to divide the column widths in different ratios,by overriding the [SetStarWidthForColumns](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumnSizer~SetStarWidthForColumns.html) method in your custom GridColumnSizer class.
 
-The following code example shows how to add column sizer ratio for columns.
+The following code example shows how to set star sizer ratio for individual columns.
 
 {% tabs %}
 {% highlight c# %}
@@ -334,14 +254,14 @@ The following code example shows how to add column sizer ratio for columns.
 </sfgrid:SfDataGrid.Columns>
 {% endhighlight %}
 
-The following code example demonstrates how the width is calculated for column, based on the `ColumnSizerAttachedProperty.ColumnSizer` property in `SetStarWidthForColumns` method.
+The following code example demonstrates how the width is calculated for column, based on the `ColumnSizerAttachedProperty.ColumnRatio` property in `SetStarWidthForColumns` method.
 
 {% highlight c# %}   
 // Assign custom GridColumnSizer to datagrid GridColumnSizer
-dataGrid.GridColumnSizer = new ColumnSizerExt(this.dataGrid);
-public class ColumnSizerExt : GridColumnSizer
+dataGrid.GridColumnSizer = new CustomColumnSizer(this.dataGrid);
+public class CustomColumnSizer : GridColumnSizer
 {
-    public ColumnSizerExt(SfDataGrid grid) : base(grid)
+    public CustomColumnSizer(SfDataGrid grid) : base(grid)
     {
     }
     protected override void SetStarWidthForColumns(double columnsWidth, IEnumerable<GridColumn> columns)
@@ -362,7 +282,8 @@ public class ColumnSizerExt : GridColumnSizer
             }
             double starWidth = Math.Floor((totalRemainingStarValue / columnsCount));
             var getColumn = column.First();
-
+            
+            //Calculate the ColumnSizer ratio for every column 
             starWidth *= ColumnSizerAttachedProperty.GetColumnRatio(getColumn);
             var columnSizer = DataGrid.GridColumnSizer;
             var method = columnSizer.GetType().GetRuntimeMethods().FirstOrDefault(x => x.Name == "SetColumnWidth");
@@ -403,14 +324,14 @@ public static class ColumnSizerAttachedProperty
 {
     public static int GetColumnRatio(BindableObject obj)
     {
-        return (int)obj.GetValue(ColumnSizerProperty);
+        return (int)obj.GetValue(ColumnRatioProperty);
     }
     public static void SetColumnRatio(BindableObject obj, int value)
     {
-        obj.SetValue(ColumnSizerProperty, value);
+        obj.SetValue(ColumnRatioProperty, value);
     }
 
-    public static readonly BindableProperty ColumnSizerProperty =
+    public static readonly BindableProperty ColumnRatioProperty =
         BindableProperty.Create("ColumnRatio", typeof(int), typeof(ColumnSizerAttachedProperty), 1, BindingMode.TwoWay);
     public static void OnColumnSizerChanged(BindableObject bindable, object oldValue, object newValue)
     {

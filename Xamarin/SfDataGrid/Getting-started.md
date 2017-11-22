@@ -512,14 +512,14 @@ The following code example illustrates how this can be done.
     <ContentPage.BindingContext>
         <local:ViewModel x:Name="viewModel"/>
     </ContentPage.BindingContext>
-    <ContentPage.Content>
+    
         <sfgrid:SfDataGrid x:Name="dataGrid"
                            ItemsSource="{Binding OrdersInfo}"
                            HeightRequest="290"
                            WidthRequest="200"
                            VerticalOptions="CenterAndExpand"
                            HorizontalOptions="Center"/>
-    <ContentPage.Content>
+    
 </ContentPage>
 {% endhighlight %}
 {% highlight c# %}

@@ -340,22 +340,22 @@ public partial class MainPage : ContentPage
         stackLayout.Children.Add(dataGrid);
         this.Content = stackLayout;       
     }
+}
 {% endhighlight%} 
 {% endtabs %}
 
 {% highlight c# %}
-    private void ClearGroupingButton_Click(object sender, System.EventArgs e)
-    {
-        //Clearing the Group
-        dataGrid.GroupColumnDescriptions.Clear();
+private void ClearGroupingButton_Click(object sender, System.EventArgs e)
+{
+    //Clearing the Group
+    dataGrid.GroupColumnDescriptions.Clear();
 
-        //Removing the Group based on group item
-        //var groupColumn = dataGrid.GroupColumnDescriptions[0];
-        //dataGrid.GroupColumnDescriptions.Remove(groupColumn);
+    //Removing the Group based on group item
+    //var groupColumn = dataGrid.GroupColumnDescriptions[0];
+    //dataGrid.GroupColumnDescriptions.Remove(groupColumn);
         
-        //Removing the Group based on group index
-        //dataGrid.GroupColumnDescriptions.RemoveAt(0);
-    }
+    //Removing the Group based on group index
+    //dataGrid.GroupColumnDescriptions.RemoveAt(0);
 }
 {% endhighlight%} 
 
@@ -473,24 +473,7 @@ User can decide to hide / show that particular column that gets grouped by setti
                         ItemsSource="{Binding Orders}"
                         ShowColumnWhenGrouped="False"/>
 {% endhighlight %}
-<syncfusion:SfDataGrid.Columns>
-    <syncfusion:GridTextColumn MappingName="ShippingDate" Width="0" />
-</syncfusion:SfDataGrid.Columns>
-
-<syncfusion:SfDataGrid.GroupColumnDescriptions>
-    <syncfusion:GroupColumnDescription ColumnName="ShippingDate" />
-</syncfusion:SfDataGrid.GroupColumnDescriptions> 
-{% endhighlight %}
 {% highlight c# %}
 this.dataGrid.ShowColumnWhenGrouped = false;
-
-dataGrid.Columns.Add (new GridTextColumn () { 
-    MappingName = "ShippingDate",
-    Width = 0
-});
-
-dataGrid.GroupColumnDescriptions.Add (new GroupColumnDescription () { 
-    ColumnName = "ShippingDate"
-});
 {% endhighlight %}
 {% endtabs %}

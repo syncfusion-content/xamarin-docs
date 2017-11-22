@@ -27,6 +27,6 @@ this.Content = numericTextBox;
 
 ## Change Localization of Return key text
 
-The SfNumericTextBox provides the Localization support for the Return Key in soft keypad of iOS. We have provided the knowledge base document for the same. Please refer this link for more details.
+The SfNumericTextBox provides the Localization support for the Return Key in soft keypad of iOS. We have provided the knowledge base document for the same. Please refer the Knowledge Base document from this [link.](https://www.syncfusion.com/kb/8075/how-to-localize-the-return-buttons-text-in-sfnumerictextbox-in-xforms-ios)
 
 

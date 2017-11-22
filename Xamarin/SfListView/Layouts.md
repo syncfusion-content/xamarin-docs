@@ -56,7 +56,7 @@ listView.LayoutManager = new GridLayout() { SpanCount = 2 };
 {% endhighlight%}
 {% endtabs %}
 
-The following screenshot shows the output of Grid layout. You can download the entire source code of this demo from [here](http://files2.syncfusion.com/Xamarin.Forms/Samples/ListViewGridLayout.zip)
+The following screenshot shows the output of Grid layout. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewGridLayout1867232074)
 
 ![](SfListView_images/SfListView-GridLayout.png)
 

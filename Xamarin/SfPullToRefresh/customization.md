@@ -16,12 +16,15 @@ Gets or sets the content of the refresh view. `PullableContent` is the main view
 {% highlight Xaml %}
 
   <syncfusion:SfPullToRefresh x:Name="pullToRefresh"
-                                    PullingThreshold="120"
-                                    RefreshContentHeight="30"
-                                    RefreshContentThreshold="30"
-                                    RefreshContentWidth="30">
+                              PullingThreshold="120"
+                              RefreshContentHeight="30"
+                              RefreshContentThreshold="30"
+                              RefreshContentWidth="30">
      <syncfusion:SfPullToRefresh.PullableContent>
-             <Label x:Name="Monthlabel" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" />
+             <Label x:Name="Monthlabel" 
+                    TextColor="White" 
+                    HorizontalTextAlignment="Center"   
+                    VerticalTextAlignment="Start" />
      </syncfusion:SfPullToRefresh.PullableContent>
   </syncfusion:SfPullToRefresh>
 
@@ -324,8 +327,8 @@ This is how the final output will look like on iOS, Android and Windows Phone de
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:PullToRefreshSample"
              x:Class="PullToRefreshSample.MainPage"
-            xmlns:syncfusion="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms"
-            xmlns:pull="clr-namespace:Syncfusion.SfPullToRefresh.XForms;assembly=Syncfusion.SfPullToRefresh.XForms">
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms"
+             xmlns:pull="clr-namespace:Syncfusion.SfPullToRefresh.XForms;assembly=Syncfusion.SfPullToRefresh.XForms">
 
     <ContentPage.BindingContext>
         <local:ViewModel x:Name="viewModel" />
@@ -340,9 +343,9 @@ This is how the final output will look like on iOS, Android and Windows Phone de
                            RefreshContentWidth="30">
         <pull:SfPullToRefresh.PullableContent>
 
-            <syncfusion:SfDataGrid x:Name="dataGrid" ItemsSource="{Binding OrdersInfo}" 
+            <syncfusion:SfDataGrid x:Name="dataGrid" 
+                                   ItemsSource="{Binding OrdersInfo}" 
                                    AutoGenerateColumns="false">
-
 
                         <syncfusion:SfDataGrid.Columns>
                             <syncfusion:GridTextColumn MappingName="OrderID" />
@@ -350,8 +353,8 @@ This is how the final output will look like on iOS, Android and Windows Phone de
                             <syncfusion:GridTextColumn MappingName="FirstName" />
                             <syncfusion:GridTextColumn MappingName="LastName" />
                             <syncfusion:GridTextColumn MappingName="Country" />
-
                         </syncfusion:SfDataGrid.Columns>
+
             </syncfusion:SfDataGrid>
 
         </pull:SfPullToRefresh.PullableContent>
@@ -515,7 +518,7 @@ This is how the final output will look like on iOS, Android and Windows Phone de
 
 {% highlight Xaml%}
 
-    <?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ListviewPulltorefresh"
@@ -528,36 +531,75 @@ This is how the final output will look like on iOS, Android and Windows Phone de
     </ContentPage.BindingContext>
 
     <ContentPage.Content>
-        <pullToRefresh:SfPullToRefresh x:Name="pullToRefresh" PullingThreshold="60" ProgressStrokeWidth="5" ProgressBackgroundColor="CornflowerBlue" ProgressStrokeColor="White" 
-                               RefreshContentWidth="40" RefreshContentHeight="40" 
-                               TransitionMode="Push" IsRefreshing="False">
+        <pullToRefresh:SfPullToRefresh x:Name="pullToRefresh" 
+                                       PullingThreshold="60" 
+                                       ProgressStrokeWidth="5" 
+                                       ProgressBackgroundColor="CornflowerBlue" 
+                                       ProgressStrokeColor="White" 
+                                       RefreshContentWidth="40" 
+                                       RefreshContentHeight="40" 
+                                       TransitionMode="Push" 
+                                       IsRefreshing="False">
             <pullToRefresh:SfPullToRefresh.PullableContent>
-                <syncfusion:SfListView x:Name="listView" ItemSize="80" ItemsSource="{Binding InboxItems}"  ItemSpacing="0,0,0,1" BackgroundColor="LightGray"
-                           SelectionMode="None">
+                <syncfusion:SfListView x:Name="listView" 
+                                       ItemSize="80" 
+                                       ItemsSource="{Binding InboxItems}"  
+                                       ItemSpacing="0,0,0,1" 
+                                       BackgroundColor="LightGray"
+                                       SelectionMode="None">
                     <syncfusion:SfListView.ItemTemplate>
                         <DataTemplate>
                             <Grid ColumnSpacing="5" BackgroundColor="White" Padding="5" >
+
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="80" />
                                     <ColumnDefinition Width="*"/>
                                 </Grid.ColumnDefinitions>
-                                <StackLayout Grid.Column="0"  HeightRequest="70" WidthRequest="70" VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="{Binding BackgroundColor}">
-                                    <Grid  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" >
-                                        <Label Text="{Binding DisplayString}" TextColor="White" FontSize="25" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+
+                                <StackLayout Grid.Column="0"  
+                                             HeightRequest="70" 
+                                             WidthRequest="70"  
+                                             VerticalOptions="Center" 
+                                             HorizontalOptions="Center" 
+                                             BackgroundColor="{Binding BackgroundColor}">
+
+                                    <Grid  HorizontalOptions="CenterAndExpand"
+                                           VerticalOptions="CenterAndExpand" >
+
+                                        <Label Text="{Binding DisplayString}" 
+                                               TextColor="White" 
+                                               FontSize="25" 
+                                               HorizontalOptions="CenterAndExpand" 
+                                               VerticalOptions="CenterAndExpand"/>
                                     </Grid>
                                     
                                 </StackLayout>
 
                                 <Grid Grid.Column="1" RowSpacing="0">
+
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="Auto"/>
                                         <RowDefinition Height="Auto" />
                                         <RowDefinition Height="Auto" />
                                     </Grid.RowDefinitions>
-                                    <Label Text="{Binding Sender}" TextColor="Black" FontAttributes="Bold" FontSize="20"/>
-                                    <Label Grid.Row="1" FontSize = "15" TextColor="Black"  FontAttributes="Bold" Text="{Binding Subject}" LineBreakMode="TailTruncation"  />
-                                    <Label Grid.Row="2" FontSize="14" TextColor="Black" Text="{Binding Details}" LineBreakMode="TailTruncation" />
+
+                                    <Label Text="{Binding Sender}" 
+                                           TextColor="Black" 
+                                           FontAttributes="Bold" 
+                                           FontSize="20"/>
+                                    <Label Grid.Row="1" 
+                                           FontSize = "15" 
+                                           TextColor="Black" 
+                                           FontAttributes="Bold" 
+                                           Text="{Binding Subject}" 
+                                           LineBreakMode="TailTruncation"  />
+                                    <Label Grid.Row="2" 
+                                           FontSize="14" 
+                                           TextColor="Black" 
+                                           Text="{Binding Details}" 
+                                           LineBreakMode="TailTruncation" />
                                 </Grid>
+                                
                             </Grid>
                         </DataTemplate>
                     </syncfusion:SfListView.ItemTemplate>

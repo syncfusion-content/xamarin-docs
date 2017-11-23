@@ -166,6 +166,18 @@ private void ListView_SwipeEnded(object sender, SwipeEndedEventArgs e)
 
 By handling the swipe events, you can make use of these property values from the arguments to perform any desired action such as deleting the item, inserting the data, etc. 
 
+## Reset the swipe view automatically 
+
+ You can reset the swiped item by defining the [SwipeOffSet](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SwipeEndedEventArgs~SwipeOffset.html) argument of [SwipeEnded](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SwipeEnded_EV.html) event to `0` when the swiping action is completed.
+
+{% highlight c# %}
+private void ListView_SwipeEnded(object sender, SwipeEndedEventArgs e)
+{
+  if (e.SwipeOffset > 70)
+      e.SwipeOffset = 0;
+}
+{% endhighlight %}
+
 ## Swipe Customizations
 
 The following customizations should give you an idea on how to use the swiping event in SfListView.
@@ -317,6 +329,6 @@ private void ListView_SwipeEnded(object sender, SwipeEndedEventArgs e)
 
 {% endhighlight %}
 
-The following screenshot shows the output rendered when `RightSwipeTemplate` is applied. You can download the entire source code of this demo from [here](https://files2.syncfusion.com/Xamarin.Forms/Samples/Swiping.zip). 
+The following screenshot shows the output rendered when `RightSwipeTemplate` is applied. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Listview_Swiping1471330093). 
 
 ![](SfListView_images/SfListView-Swiping--2.png)

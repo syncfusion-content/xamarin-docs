@@ -26,6 +26,8 @@ dataGrid.AllowEditing = true;
 
 ![](SfDataGrid_images/Editing_Column_Forms.png)
 
+N> If you set [ValueBinding](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~ValueBinding.html) property explicitly, then you have to set the `Mode` of `ValueBinding` property as `TwoWay` for committing the edited cell value in the underlying property.
+
 ## Column Editing
 
 You can enable or disable editing for particular column by setting [GridColumn.AllowEditing](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~AllowEditing.html) property.

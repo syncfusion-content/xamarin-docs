@@ -301,4 +301,6 @@ public MainPage()
 
 ![](Images/GettingStarted.png)
 
-You can find the Getting Started Sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/170260/ze/NavigationDrawerGettingStarted-858071784)
+We have created knowledge base document by creating SfNavigationDrawer sample fully in code behind. Please refer the same in this [link.](https://www.syncfusion.com/kb/8020/how-to-create-sfnavigationdrawer-sample-in-code-behind)
+
+You can find the Getting Started Sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfNavigationDrawerSampleBrowser-2067704556.zip)

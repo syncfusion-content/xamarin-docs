@@ -148,7 +148,7 @@ N> Resizing considers [GridColumn.MinimumWidth](https://help.syncfusion.com/cr/c
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfDataGrid  x:Name="dataGrid"
-                        AllowResizingColumns="True"
+                        AllowResizingColumn="True"
                         AutoGenerateColumns="True"
                         ItemsSource="{Binding Orders}" />
 {% endhighlight %}

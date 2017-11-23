@@ -30,6 +30,10 @@ N> Default `Culture` property value is en-US.
 
 ![](images/Culture.png)
 
+## Change Localization of Return key text
+
+The SfNumericUpDown provides the Localization support for the Return Key in soft keypad of iOS. We have provided the knowledge base document for the same. Please refer the Knowledge Base document from this [link.](https://www.syncfusion.com/kb/8074/how-to-localize-the-return-buttons-text-in-sfnumericupdown-in-xforms-ios)
+
 
 
 

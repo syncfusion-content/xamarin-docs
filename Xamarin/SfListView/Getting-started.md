@@ -49,7 +49,7 @@ The following list of assemblies need to be added as reference from the lib fold
 </tr>
 </table>
 
-N> You can also configure the Syncfusion nuget packages in Visual Studio, please refer [here]( https://help.syncfusion.com/xamarin/introduction/download-and-installation#configuring-syncfusion-nuget-packages-in-visual-studio) for more information.
+N> You can also configure the Syncfusion NuGet packages in Visual Studio, please refer [here]( https://help.syncfusion.com/xamarin/introduction/download-and-installation#configuring-syncfusion-nuget-packages-in-visual-studio) for more information.
 
 ## Launching the SfListView on each platform
 
@@ -347,7 +347,7 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-Now run the application to render the following output. You can also download the entire source code of this demo from [here](http://files2.syncfusion.com/Xamarin.Forms/Samples/ListView_GettingStarted.zip).
+Now run the application to render the following output. You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Listview_GettingStarted1048237669).
 
 ![](SfListView_images/SfListView-Xamarin_img2.png)
 

@@ -139,23 +139,34 @@ Hence the second column will take up the remaining space, after the other column
 </sfgrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %} 
-GridTextColumn orderIDColumn = new GridTextColumn();
-orderIDColumn.MappingName = "OrderID";
+SfDataGrid dataGrid;
+ViewModel viewModel;
+public MainPage()
+{
+    InitializeComponent();
+    dataGrid = new SfDataGrid();
+    viewModel = new ViewModel();
+    dataGrid.AutoGenerateColumns = false;
+    dataGrid.ItemsSource = viewModel.OrdersInfo;
 
-GridTextColumn customerIDColumn = new GridTextColumn();
-customerIDColumn.MappingName = "CustomerID";
-customerIDColumn.ColumnSizer = ColumnSizer.LastColumnFill;
+    GridTextColumn orderIDColumn = new GridTextColumn();
+    orderIDColumn.MappingName = "OrderID";
 
-GridTextColumn salaryColumn = new GridTextColumn();
-salaryColumn.MappingName = "Salary";
+    GridTextColumn customerIDColumn = new GridTextColumn();
+    customerIDColumn.MappingName = "CustomerID";
+    customerIDColumn.ColumnSizer = ColumnSizer.LastColumnFill;
 
-GridTextColumn countryColumn = new GridTextColumn();
-countryColumn.MappingName = "Country";
+    GridTextColumn salaryColumn = new GridTextColumn();
+    salaryColumn.MappingName = "Salary";
 
-dataGrid.Columns.Add(orderIDColumn);
-dataGrid.Columns.Add(customerIDColumn);
-dataGrid.Columns.Add(salaryColumn);
-dataGrid.Columns.Add(countryColumn);
+    GridTextColumn countryColumn = new GridTextColumn();
+    countryColumn.MappingName = "Country";
+
+    dataGrid.Columns.Add(orderIDColumn);
+    dataGrid.Columns.Add(customerIDColumn);
+    dataGrid.Columns.Add(salaryColumn);
+    dataGrid.Columns.Add(countryColumn);
+}
 {% endhighlight %}
 {% endtabs %}   
 

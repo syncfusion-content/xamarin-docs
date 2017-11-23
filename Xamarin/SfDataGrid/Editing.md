@@ -317,7 +317,7 @@ this.dataGrid.CurrentCellBeginEdit += DataGrid_CurrentCellBeginEdit;
 
 private void DataGrid_CurrentCellBeginEdit(object sender, GridCurrentCellBeginEditEventArgs args)
 {
-    // Editing prevented for the column at RowColumnIndex(2,2).
+    // Editing prevented for the cell at RowColumnIndex(2,2).
     if (args.RowColumnIndex == new Syncfusion.GridCommon.ScrollAxis.RowColumnIndex(2, 2))
         args.Cancel = true;
 }
@@ -337,7 +337,7 @@ this.dataGrid.CurrentCellEndEdit += DataGrid_CurrentCellEndEdit;
 
 private void DataGrid_CurrentCellEndEdit(object sender, GridCurrentCellEndEditEventArgs args)
 {
-    // Editing prevented for the column at RowColumnIndex(1,3).
+    // Editing prevented for the cell at RowColumnIndex(1,3).
     if (args.RowColumnIndex == new Syncfusion.GridCommon.ScrollAxis.RowColumnIndex(1,3))
         args.Cancel = true;
 }

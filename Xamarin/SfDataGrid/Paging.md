@@ -254,7 +254,7 @@ The following picture shows the customize appearance of data pager:
 
 Based on the requirements, customize the numeric button border color by overriding the [GetPagerButtonBorderColor](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.AppearanceManager~GetPagerButtonBorderColor.html) method.
 
-To customize the numeric button boder color, follow the code example:
+To customize the numeric button border color, follow the code example:
 
 {% tabs %}
 {% highlight xaml %}

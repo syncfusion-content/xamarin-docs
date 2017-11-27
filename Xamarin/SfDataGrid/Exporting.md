@@ -321,7 +321,7 @@ SfDataGrid provides you with several properties in `DataGridPdfExportingOption` 
 
 ### Exporting SfDataGrid from particular starting point
 
-SfDataGrid allows to export the data from a particular point in the PDf page by setting the [DataGridPdfExportingOption.StartPoint](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridPdfExportOption~StartPoint.html) property.
+SfDataGrid allows to export the data from a particular point in the PDF page by setting the [DataGridPdfExportingOption.StartPoint](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridPdfExportOption~StartPoint.html) property.
 
 To export the DataGrid with particular starting point, follow the code example:
 

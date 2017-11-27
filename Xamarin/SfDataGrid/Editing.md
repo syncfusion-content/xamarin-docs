@@ -323,7 +323,7 @@ The [CurrentCellEndEdit](https://help.syncfusion.com/cr/cref_files/xamarin/sfdat
 
 ### Begin editing
 
-SfDataGrid allows to edit the cell programmatically by calling the [SfDataGrid.BeginEdit](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~BeginEdit.html) method. By calling this method, the particular cell enters into edit mode. It edits the data manually or programmatically. To edit a cell programmatically, follow the code exmaple:
+SfDataGrid allows to edit the cell programmatically by calling the [SfDataGrid.BeginEdit](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~BeginEdit.html) method. By calling this method, the particular cell enters into edit mode. It edits the data manually or programmatically. To edit a cell programmatically, follow the code example:
 
 {% highlight c# %}
 this.dataGrid.Loaded += dataGrid_Loaded;

@@ -239,6 +239,44 @@ public class CustomComparer : IComparer<Object>, ISortDirection
 {% endhighlight %}
 
 
+## Animating sorting icon 
+
+SfDatagrid loads two different icons for denoting the `Ascending` and `Descending` sort direction state. However, rotate the [DataGridStyle.GetHeaderSortIndicatorUp](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetHeaderSortIndicatorUp.html) icon animatedly for denoting the descending state by overriding the [DataGridStyle.GetHeaderSortIndicatorDown](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetHeaderSortIndicatorDown.html) method and returning `null`.
+
+To animate the sorting icon, follow the code example:
+
+{% tabs %}
+{% highlight xaml %}
+<sfgrid:SfDataGrid x:Name="dataGrid"
+                   ItemsSource="{Binding OrdersInfo}"
+                   AllowSorting ="true"
+                   GridStyle="{local:CustomStyle}">
+    </sfgrid:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+ dataGrid.AllowSorting = true;
+ dataGrid.GridStyle = new CustomStyle();
+{% endhighlight %}
+{% endtabs %}
+
+{% highlight c# %}
+//Custom style class
+
+ public class  CustomStyle :DataGridStyle
+    {
+        public CustomStyle()
+        {
+        }
+
+        public override ImageSource GetHeaderSortIndicatorDown()
+        {
+            return null;
+        }
+    }
+{% endhighlight %}
+
+![](SfDataGrid_images/Sorting-Animation.gif)
+
 ## How to disable sorting for an individual column?
 
-SfDataGrid allows you to disable the sorting for individual columns by using the [GridColumn.AllowSorting](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~AllowSorting.html) property. The default value of this property is `true` and hence all the columns in the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~Columns.html) collection can be sorted when [SfDataGrid.AllowSorting](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowSorting.html) is set to `true`.
+SfDataGrid allows to disable the sorting for individual columns by using the [GridColumn.AllowSorting](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~AllowSorting.html) property. The default value of this property is `true` and hence all the columns in the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~Columns.html) collection can be sorted when [SfDataGrid.AllowSorting](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowSorting.html) is set to `true`.

@@ -96,18 +96,18 @@ To format the cell content, use the Converter of the `GridColumn.DisplayBinding`
 {% endhighlight %}
 
 {% highlight c# %}
-public class DisplayBindingConverter : IValueConverter
+public class DisplayBindingConverter : IValueConverter
 {
-    public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+    public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
     {
-        if (value != null)
-            return "Customer:" + value.ToString();
-        return null;
+        if (value != null)
+            return "Customer:" + value.ToString();
+        return null;
     }
 
-    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
     {
-        return value.ToString().Substring(9);
+        return value.ToString().Substring(9);
     }
 }
 {% endhighlight %}

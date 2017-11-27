@@ -107,7 +107,7 @@ The SfDataGrid provides you the following events for the sorting functionality:
 * [SortColumnsChanging](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SortColumnsChanging_EV.html) – This event is raised while sorting the column at execution time before the column gets sorted. It helps to cancel the sorting action by setting the Cancel property of [DataGridSortColumnsChangingEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridSortColumnsChangingEventArgs.html).
 * [SortColumnsChanged](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SortColumnsChanged_EV.html) – This event is raised after the column is sorted.
 
-These two events are triggered with `DataGridSortColumnsChangingEventArgs` and [DataGridSortColumnsChangedEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridSortColumnsChangedEventArgs.html) that contain the following properties.
+These two events are triggered with `DataGridSortColumnsChangingEventArgs` and `DataGridSortColumnsChangedEventArgs` that contain the following properties.
 
 * AddedItems – Gets the collection of `SortColumnDescription` objects that are added to `SortColumnDescriptions` collection for Sorting.
 * RemovedItems – Gets the collection of `SortColumnDescription` objects that are removed from `SortColumnDescriptions` collection.
@@ -239,6 +239,44 @@ public class CustomComparer : IComparer<Object>, ISortDirection
 {% endhighlight %}
 
 
+## Animating sorting icon 
+
+SfDatagrid loads two different icons for denoting the `Ascending` and `Descending` sort direction state. However, rotate the [DataGridStyle.GetHeaderSortIndicatorUp](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetHeaderSortIndicatorUp.html) icon animatedly for denoting the descending state by overriding the [DataGridStyle.GetHeaderSortIndicatorDown](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetHeaderSortIndicatorDown.html) method and returning `null`.
+
+To animate the sorting icon, follow the code example:
+
+{% tabs %}
+{% highlight xaml %}
+<sfgrid:SfDataGrid x:Name="dataGrid"
+                   ItemsSource="{Binding OrdersInfo}"
+                   AllowSorting ="true"
+                   GridStyle="{local:CustomStyle}">
+    </sfgrid:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+ dataGrid.AllowSorting = true;
+ dataGrid.GridStyle = new CustomStyle();
+{% endhighlight %}
+{% endtabs %}
+
+{% highlight c# %}
+//Custom style class
+
+ public class  CustomStyle :DataGridStyle
+    {
+        public CustomStyle()
+        {
+        }
+
+        public override ImageSource GetHeaderSortIndicatorDown()
+        {
+            return null;
+        }
+    }
+{% endhighlight %}
+
+![](SfDataGrid_images/Sorting-Animation.gif)
+
 ## How to disable sorting for an individual column?
 
-SfDataGrid allows you to disable the sorting for individual columns by using the [GridColumn.AllowSorting](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~AllowSorting.html) property. The default value of this property is `true` and hence all the columns in the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~Columns.html) collection can be sorted when [SfDataGrid.AllowSorting](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowSorting.html) is set to `true`.
+SfDataGrid allows to disable the sorting for individual columns by using the [GridColumn.AllowSorting](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~AllowSorting.html) property. The default value of this property is `true` and hence all the columns in the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~Columns.html) collection can be sorted when [SfDataGrid.AllowSorting](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowSorting.html) is set to `true`.

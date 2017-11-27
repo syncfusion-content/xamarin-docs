@@ -124,9 +124,3 @@ For Ex: nuget.exe install “Syncfusion.Xamarin.Calculate”
 
 ![](images/img13.png)
 
-## Install from Xamarin Component Store
-
-Refer to [this](https://developer.xamarin.com/guides/cross-platform/xamarin-studio/components_walkthrough/) article to know how to add a Xamarin Component Store component to Xamarin.Forms application.
-
-
-

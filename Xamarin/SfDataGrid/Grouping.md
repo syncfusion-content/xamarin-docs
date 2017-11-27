@@ -13,7 +13,7 @@ A group represents a collection of records that belong to a particular category.
 
 N> To update grouping for the newly added row or column, set the `SfDataGrid.View.LiveDataUpdateMode` to `LiveDataUpdateMode.AllowDataShaping`.
 
-N> When `BeginInit` method is called it suspends all the updates until `EndInit` method is called.  
+N> When `BeginInit` method is called, it suspends all the updates until `EndInit` method is called.  
 
 ## Programmatic Grouping
 
@@ -47,9 +47,9 @@ The following screenshot shows the output rendered when grouping is applied.
 
 ![](SfDataGrid_images/SfDataGrid-Xamarin_img2.png)
 
-### MultiGrouping
+### Multi grouping
 
-SfDataGrid also allows you to group the data against one or more columns using the [SfDataGrid.GroupingMode](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GroupingMode.html) property. When `GroupingMode` is set as `GroupingMode.Multiple`, the data is organized into a hierarchical tree structure based on identical values of that column. The MultiGrouping feature works similarly to the MultiSorting feature. Here the data is first grouped according to the first column added in the `GroupColumnDescriptions` collection. Now when a new column is added to the `GroupColumnDescriptions`, the already grouped data will now be taken for further processing, and the newly added group will be added as a sub group of the existing group. This results in a tree like hierarchy. The data can be grouped by any number of columns in the `SfDataGrid.Columns` collection. Please refer the below code snippet to enable multi grouping in SfDataGrid.
+SfDataGrid also allows to group the data against one or more columns using the [SfDataGrid.GroupingMode](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GroupingMode.html) property. When `GroupingMode` is set as `GroupingMode.Multiple` the data is organized into a hierarchical tree structure based on identical values of that column. Multi grouping feature works similarly as multi sorting feature. Here the data is first grouped according to the first column added in the `GroupColumnDescriptions` collection. When a new column is added to the `GroupColumnDescriptions`, the already grouped data will now be taken for further processing and the newly added group will be added as a sub group of the existing group. This results in a tree like hierarchy. The data can be grouped by any number of columns in the `SfDataGrid.Columns` collection. Refer to the following code snippet to enable multi grouping:
 
 {% highlight xaml %}
 <syncfusion:SfDataGrid  x:Name="dataGrid"
@@ -65,7 +65,7 @@ this.dataGrid.GroupingMode = GroupingMode.Multiple;
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot shows the output rendered when above code is executed.
+The following screenshot shows the output rendered when above code is executed:
 ![](SfDataGrid_images/MultiColumnGrouping_XForms.png)
 
 ## IndentColumn customizations
@@ -219,7 +219,7 @@ this.dataGrid.AllowGroupExpandCollapse = true;
 {% endhighlight %}
 {% endtabs %}
 
-### Expand or collapse all the Groups
+### Expand or collapse all the groups
 
 You can expand or collapse all the groups at programmatically at runtime by using [SfDataGrid.ExpandAllGroup](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ExpandAllGroup.html) and [SfDataGrid.CollapseAllGroup](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~CollapseAllGroup.html) methods.
 
@@ -230,7 +230,7 @@ this.dataGrid.CollapseAllGroup();
 {% endhighlight %}
 {% endtabs %}
 
-### Expand or Collapse the specific Group
+### Expand or collapse the specific group
 
 You can expand or collapse specific group by using [SfDataGrid.ExpandGroup](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ExpandGroup.html) and [SfDataGrid.CollapseGroup](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~CollapseGroup.html) methods.
 
@@ -268,11 +268,11 @@ The below screenshot shows the comparison between the two Group modes. GroupMode
 
 ![](SfDataGrid_images/GroupMode.png)
 
-## Clearing or Removing Group
+## Clearing or removing group
 
-You can clear the grouping applied to the SfDataGrid by removing the items from the `SfDataGrid.GroupColumnDescriptions` collection or clearing the collection. 
+To clear grouping applied to SfDataGrid, remove the items from the `SfDataGrid.GroupColumnDescriptions` collection or clear the collection. 
 
-Please refer the below code snippets to remove the grouping applied to the SfDataGrid.
+Refer to the following code snippets to remove grouping:
 
 {% tabs %}
 {% highlight xaml %}
@@ -359,11 +359,11 @@ private void ClearGroupingButton_Click(object sender, System.EventArgs e)
 }
 {% endhighlight%} 
 
-Run the application to render the following output. 
+Run the application to render the following output: 
 
 ![](SfDataGrid_images/Remove_Grouping.png)
 
-N> You can also clear or remove the grouping on [GridTapped event](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridTapped_EV.html), [GridDoubleTapped event](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridDoubleTapped_EV.html) or [GridLongPressed event](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridLongPressed_EV.html).
+N> You can also clear or remove the grouping on [GridTapped event](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridTapped_EV.html), [GridDoubleTapped event](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridDoubleTapped_EV.html), or [GridLongPressed event](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridLongPressed_EV.html).
 
 ## Events
 

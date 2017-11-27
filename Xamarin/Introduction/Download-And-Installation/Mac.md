@@ -111,7 +111,3 @@ mono nuget.exe install [Package name]
 For Ex: mono nuget.exe install “Syncfusion.Xamarin.Calculate” 
 
 ![](images/img7.jpg)
-
-## Install from Xamarin Component Store
-
-Refer to [this](https://developer.xamarin.com/guides/cross-platform/xamarin-studio/components_walkthrough/) article to know how to add a Xamarin Component Store component to Xamarin.Forms application.

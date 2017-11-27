@@ -55,8 +55,8 @@ N> When you change items source for SfDatagrid during run time, then the columns
 
 ### Customize Automatically Generated Columns
 
-When `SfDatagrid.AutoGenerateColumns` is `true`, then [SfDataGrid.AutoGeneratingColumn](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoGeneratingColumn_EV.html) event is raised for each GridColumn. This event receives two arguments namely sender which is the SfDatagrid and [AutoGeneratingColumnArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.AutoGeneratingColumnArgs.html).
-The `AutoGeneratingColumnArgs` object contains the following property:
+When `SfDatagrid.AutoGenerateColumns` is `true`, then [SfDataGrid.AutoGeneratingColumn](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoGeneratingColumn_EV.html) event is raised for each GridColumn. This event receives two arguments namely sender which is the SfDatagrid and [AutoGeneratingColumnEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.AutoGeneratingColumnEventArgs.html).
+The `AutoGeneratingColumnEventArgs` object contains the following property:
 
 * Column: This property returns the created column using which you can customize the column.
 * Cancel: This property cancels the column creation.
@@ -66,7 +66,7 @@ You can skip generating a column by handling the `SfDataGrid.AutoGeneratingColum
 {% highlight c# %}
 dataGrid.AutoGeneratingColumn += GridAutoGeneratingColumns; 
 
-void GridAutoGeneratingColumns(object sender, AutoGeneratingColumnArgs e)
+void GridAutoGeneratingColumns(object sender, AutoGeneratingColumnEventArgs e)
 {
     if (e.Column.MappingName == "EmployeeID")
         e.Cancel = true;
@@ -76,7 +76,7 @@ void GridAutoGeneratingColumns(object sender, AutoGeneratingColumnArgs e)
 You can also apply formatting for auto generated columns as shown below.
 
 {% highlight c# %}
-void GridAutoGeneratingColumns(object sender, AutoGeneratingColumnArgs e)
+void GridAutoGeneratingColumns(object sender, AutoGeneratingColumnEventArgs e)
 {
     if (e.Column.MappingName == "Freight") {
         e.Column.Format = "C";

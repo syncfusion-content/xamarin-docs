@@ -312,12 +312,38 @@ SfDataGrid triggers the following events while editing:
 * [RowColumnIndex](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridCurrentCellBeginEditEventArgs~RowColumnIndex.html): Gets the current row and column index of the DataGrid.
 * [Column](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridCurrentCellBeginEditEventArgs~Column.html): Gets the Grid Column of the SfDataGrid.
 
+To hook the `SfDataGrid.CurrentCellBeginEdit` event, follow the code example:
+
+{% highlight c# %}
+this.dataGrid.CurrentCellBeginEdit += DataGrid_CurrentCellBeginEdit;
+
+private void DataGrid_CurrentCellBeginEdit(object sender, GridCurrentCellBeginEditEventArgs args)
+{
+    // Editing prevented for the cell at RowColumnIndex(2,2).
+    if (args.RowColumnIndex == new Syncfusion.GridCommon.ScrollAxis.RowColumnIndex(2, 2))
+        args.Cancel = true;
+}
+{% endhighlight %}
+
 ### CurrentCellEndEdit
 
 The [CurrentCellEndEdit](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~CurrentCellEndEdit_EV.html) event occurs when the CurrentCell exits the edit mode. The [GridCurrentCellEndEditEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridCurrentCellEndEditEventArgs.html) has following members which provides information for `SfDataGrid.CurrentCellEndEdit` event:
 
 * [RowColumnIndex](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridCurrentCellEndEditEventArgs~RowColumnIndex.html): Gets the current row and column index of the DataGrid.
 * [Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true): When this member set to ‘true’, the event is canceled and the edited value is not committed in the underlying collection.
+
+To hook the `SfDataGrid.CurrentCellEndEdit` event, follow the code example:
+
+{% highlight c# %}
+this.dataGrid.CurrentCellEndEdit += DataGrid_CurrentCellEndEdit;
+
+private void DataGrid_CurrentCellEndEdit(object sender, GridCurrentCellEndEditEventArgs args)
+{
+    // Editing prevented for the cell at RowColumnIndex(1,3).
+    if (args.RowColumnIndex == new Syncfusion.GridCommon.ScrollAxis.RowColumnIndex(1,3))
+        args.Cancel = true;
+}
+{% endhighlight %}
 
 ## Programmatically edit a cell
 

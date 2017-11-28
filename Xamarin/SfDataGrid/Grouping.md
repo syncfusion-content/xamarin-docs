@@ -13,7 +13,7 @@ A group represents a collection of records that belong to a particular category.
 
 N> To update grouping for the newly added row or column, set the `SfDataGrid.View.LiveDataUpdateMode` to `LiveDataUpdateMode.AllowDataShaping`.
 
-N> When `BeginInit` method is called it suspends all the updates until `EndInit` method is called.
+N> When `BeginInit` method is called, it suspends all the updates until `EndInit` method is called.  
 
 ## Programmatic Grouping
 
@@ -47,9 +47,9 @@ The following screenshot shows the output rendered when grouping is applied.
 
 ![](SfDataGrid_images/SfDataGrid-Xamarin_img2.png)
 
-### MultiGrouping
+### Multi grouping
 
-SfDataGrid also allows you to group the data against one or more columns using the [SfDataGrid.GroupingMode](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GroupingMode.html) property. When `GroupingMode` is set as `GroupingMode.Multiple`, the data is organized into a hierarchical tree structure based on identical values of that column. The MultiGrouping feature works similarly to the MultiSorting feature. Here the data is first grouped according to the first column added in the `GroupColumnDescriptions` collection. Now when a new column is added to the `GroupColumnDescriptions`, the already grouped data will now be taken for further processing, and the newly added group will be added as a sub group of the existing group. This results in a tree like hierarchy. The data can be grouped by any number of columns in the `SfDataGrid.Columns` collection. Please refer the below code snippet to enable multi grouping in SfDataGrid.
+SfDataGrid also allows to group the data against one or more columns using the [SfDataGrid.GroupingMode](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GroupingMode.html) property. When `GroupingMode` is set as `GroupingMode.Multiple` the data is organized into a hierarchical tree structure based on identical values of that column. Multi grouping feature works similarly as multi sorting feature. Here the data is first grouped according to the first column added in the `GroupColumnDescriptions` collection. When a new column is added to the `GroupColumnDescriptions`, the already grouped data will now be taken for further processing and the newly added group will be added as a sub group of the existing group. This results in a tree like hierarchy. Refer to the following code snippet to enable multi grouping:
 
 {% tabs %}
 {% highlight xaml %}
@@ -66,7 +66,7 @@ this.dataGrid.GroupingMode = GroupingMode.Multiple;
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot shows the output rendered when above code is executed.
+The following screenshot shows the output rendered when above code is executed:
 ![](SfDataGrid_images/MultiColumnGrouping_XForms.png)
 
 ## IndentColumn customizations
@@ -112,9 +112,7 @@ public class CustomStyle : DataGridStyle
 {% endhighlight %}
 {% endtabs %}
 
-
 ![](SfDataGrid_images/IndentColumnStyling.png)
-
 
 ## Custom Grouping
 
@@ -222,11 +220,7 @@ this.dataGrid.AllowGroupExpandCollapse = true;
 {% endhighlight %}
 {% endtabs %}
 
-### Programmatically expanding or collapsing the groups
-
-You can allow end-user to expand or collapse the groups programmatically at runtime.
-
-#### Expand or collapse all the Groups
+### Expand or collapse all the groups
 
 You can expand or collapse all the groups at programmatically at runtime by using [SfDataGrid.ExpandAllGroup](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ExpandAllGroup.html) and [SfDataGrid.CollapseAllGroup](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~CollapseAllGroup.html) methods.
 
@@ -237,7 +231,7 @@ this.dataGrid.CollapseAllGroup();
 {% endhighlight %}
 {% endtabs %}
 
-#### Expand or Collapse the specific Group
+### Expand or collapse a specific group
 
 You can expand or collapse specific group by using [SfDataGrid.ExpandGroup](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ExpandGroup.html) and [SfDataGrid.CollapseGroup](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~CollapseGroup.html) methods.
 
@@ -252,7 +246,7 @@ this.dataGrid.CollapseGroup(group);
 
 ![](SfDataGrid_images/GroupExpandCollapse.png)
 
-## GroupMode
+## Display based grouping using GroupMode property
 
 By default column grouping occurs based on the value in the underlying collection thereby creating a new group for each new value of that column. However you can also group a column based on the Display value by setting the [GridColumn.GroupMode](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~GroupMode.html) property as `Display`. In the below code example we have set [GridColumn.Format](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~Format.html) property as "#" which displays only the rounded off value in the [GridCell](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridCell.html).  
 
@@ -272,7 +266,105 @@ cargoWeight.Format = "#";
 {% endtabs %}
 
 The below screenshot shows the comparison between the two Group modes. GroupMode.Value on the left and GroupMode.Display on the right.
+
 ![](SfDataGrid_images/GroupMode.png)
+
+## Clearing or removing a group
+
+To clear grouping applied to SfDataGrid, remove the items from the `SfDataGrid.GroupColumnDescriptions` collection or clear the collection. 
+
+Refer to the following code snippets to remove grouping:
+
+{% tabs %}
+{% highlight xaml %}
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GridInForms"
+             x:Class="GridInForms.MainPage"
+             xmlns:sfgrid="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms" >            
+
+    <ContentPage.BindingContext>
+        <local:ViewModel x:Name="viewModel"/>
+    </ContentPage.BindingContext>
+    
+    <StackLayout VerticalOptions="FillAndExpand">
+    
+        <Button Text="Remove Grouping"
+             TextColor="Black"
+             BackgroundColor="White"
+             Clicked="ClearGroupingButton_Click"/>
+
+        <sfgrid:SfDataGrid x:Name="dataGrid"
+                           ItemsSource="{Binding OrdersInfo}"
+                           >
+            <syncfusion:SfDataGrid.GroupColumnDescriptions>
+                <syncfusion:GroupColumnDescription ColumnName="Freight" />
+            </syncfusion:SfDataGrid.GroupColumnDescriptions>
+            <syncfusion:SfDataGrid.GroupColumnDescriptions>
+                <syncfusion:GroupColumnDescription ColumnName="CustomerID" />
+            </syncfusion:SfDataGrid.GroupColumnDescriptions>           
+        </sfgrid:SfDataGrid>
+    
+    </StackLayout>
+
+</ContentPage>
+{% endhighlight%} 
+{% highlight c# %}
+public partial class MainPage : ContentPage
+{
+    StackLayout stackLayout;
+    SfDataGrid dataGrid;
+    ViewModel viewModel;
+    Button clearGroupingButton;
+    public MainPage()
+    {
+        InitializeComponent();
+        viewModel = new ViewModel();
+        dataGrid = new SfDataGrid();
+        clearGroupingButton = new Button();
+        stackLayout = new StackLayout();
+        dataGrid.ItemsSource = viewModel.OrdersInfo;
+        dataGrid.GroupingMode = GroupingMode.Multiple;
+        dataGrid.GroupColumnDescriptions.Add(new GroupColumnDescription()
+        {
+            ColumnName = "Freight",
+        });
+        dataGrid.GroupColumnDescriptions.Add(new GroupColumnDescription()
+        {
+            ColumnName = "CustomerID",
+        });
+        clearGroupingButton.Text = "Remove Grouping";
+        clearGroupingButton.TextColor = Color.Black;
+        clearGroupingButton.BackgroundColor = Color.White;
+        clearGroupingButton.Clicked += ClearGroupingButton_Click;
+        stackLayout.Children.Add(clearGroupingButton);
+        stackLayout.Children.Add(dataGrid);
+        this.Content = stackLayout;       
+    }
+}
+{% endhighlight%} 
+{% endtabs %}
+
+{% highlight c# %}
+private void ClearGroupingButton_Click(object sender, System.EventArgs e)
+{
+    //Clearing the Group
+    dataGrid.GroupColumnDescriptions.Clear();
+
+    //Removing the Group based on group item
+    //var groupColumn = dataGrid.GroupColumnDescriptions[0];
+    //dataGrid.GroupColumnDescriptions.Remove(groupColumn);
+        
+    //Removing the Group based on group index
+    //dataGrid.GroupColumnDescriptions.RemoveAt(0);
+}
+{% endhighlight%} 
+
+Run the application to render the following output: 
+
+![](SfDataGrid_images/Remove_Grouping.png)
+
+N> You can also clear or remove the grouping on [GridTapped event](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridTapped_EV.html), [GridDoubleTapped event](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridDoubleTapped_EV.html), or [GridLongPressed event](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridLongPressed_EV.html).
 
 ## Events
 
@@ -370,7 +462,7 @@ public class CustomStyle : DataGridStyle
 {% endhighlight %}
 {% endtabs %}
 
-## How to hide the grouped column in SfDataGrid?
+## Hiding the column when grouped
 
 User can decide to hide / show that particular column that gets grouped by setting [SfDataGrid.ShowColumnWhenGrouped](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ShowColumnWhenGrouped.html) property to false. In cases of `SfDataGrid.AllowMultiGrouping` = true, all the columns that are added in the `GroupColumnDescriptions` collection will be shown or hidden based on the value. Please refer the below code snippet.
 
@@ -382,10 +474,7 @@ User can decide to hide / show that particular column that gets grouped by setti
                         ItemsSource="{Binding Orders}"
                         ShowColumnWhenGrouped="False"/>
 {% endhighlight %}
-
 {% highlight c# %}
-
 this.dataGrid.ShowColumnWhenGrouped = false;
-
 {% endhighlight %}
 {% endtabs %}

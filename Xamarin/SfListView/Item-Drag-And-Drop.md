@@ -57,7 +57,7 @@ N> Reordering changes are made only in view and not in the underlying data. Thus
 
 ## Drag indicator view
 
-To perform drag and drop items by [DragIndicatorView](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.DragIndicatorView.html), set the [SfListView.DragStartMode](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~DragStartMode.html) property to `OnDragIndicator`. To display drag item, define any custom user interface(UI) in `DragIndicatorView` and its binding context.
+To perform drag and drop items by [DragIndicatorView](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.DragIndicatorView.html), set the [SfListView.DragStartMode](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~DragStartMode.html) property to `OnDragIndicator`. To display drag item, define any custom user interface(UI) in `DragIndicatorView`.
 
 N> You must set SfListView instance as reference to `ListView` property in `DragIndicatorView`.
 

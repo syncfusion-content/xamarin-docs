@@ -9,13 +9,19 @@ documentation: ug
 
 # Item Drag and Drop
 
-SfListView allows you to reordering items by dragging and dropping them in SfListView. It supports to displaying the customized view in a template while dragging the item. It is enable by setting the [SfListView.DragStartMode](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~DragStartMode.html) property to `OnHold`. The below listed options for drag and drop,
+SfListView allows you to reordering items by dragging and dropping them in SfListView. It supports to displaying the customized view in a template while dragging the item. It can be enabled by setting the [SfListView.DragStartMode](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~DragStartMode.html) property to `OnHold`. The drag and drop options are listed below,
 
-* None: Disables the drag and drop. This is default value.
-* OnHold: Allows you to perform the drag and drop by hold the item.
+* None: Disables the drag and drop. This is a default value.
+* OnHold: Allows you to perform the drag and drop by holding the item.
 * OnDragIndicator: Allows you to perform the drag and drop by loading the [DragIndicatorView](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.DragIndicatorView.html) within [ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html).
 
 N> [GridLayout](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GridLayout.html) doesn't have support for drag and drop. 
+
+The drag and drop scenarios are below,
+
+* Items can be reordered to any position with auto-scrolling.
+* Items can be reordered within the same group or into the other groups as well. But no groups can be added to other groups.
+* Groups, Header and Footer are not able to reorder.
 
 The following code example shows how to enable drag and drop in SfListView.
 
@@ -32,50 +38,26 @@ listView.DragStartMode = DragStartMode.OnHold;
 {% endhighlight %}
 {% endtabs %}
 
-## Dragging scenarios
-
-Perform the drag and drop operation with and without groups.
-
-* Items can be reordered to any position with auto scrolling. 
-* Items can be reordered within the same group or into the other groups as well. But no groups can be added inside other groups.
-* Groups, Header and Footer are not able to reorder.
-
-N> Reordering changes are made only in view and not in the underlying data. Thus the changes will be reverted when performing sorting, grouping or any other operation that refreshes the view.
-
-## Item Drag and Drop Template
-
-By defining the [SfListView.DragItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~DragItemTemplate.html) of the SfListView, displaying the custom user interface(UI) when performing the drag and drop operation. The template can be defined either in code or XAML.
+The following code example shows how to enable both drag and drop options,
 
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfListView x:Name="listView" 
                    ItemsSource="{Binding ToDoList}"
-                   DragStartMode="OnHold,OnDragIndicator"
+                   DragStartMode="OnHold, OnDragIndicator"
                    BackgroundColor="#FFE8E8EC"
-                   ItemSize="60">
-  <syncfusion:SfListView.DragItemTemplate>
-    <DataTemplate>
-      <Grid Padding="10">
-        <Label x:Name="textLabel" Text="{Binding Name}" FontSize="15" />
-      </Grid>
-    </DataTemplate>
-  </syncfusion:SfListView.DragItemTemplate>
-</syncfusion:SfListView>
+                   ItemSize="60" />
 {% endhighlight %}
 {% highlight c# %}
-listView.ItemTemplate = new DataTemplate(() => {
-  var grid = new Grid();
-  var name = new Label { FontSize = 15 };
-  name.SetBinding(Label.TextProperty, new Binding("Name"));
-  grid.Children.Add(name);
-  return grid;
-});
+listView.DragStartMode = DragStartMode.OnHold | DragStartMode.OnDragIndicator; 
 {% endhighlight %}
 {% endtabs %}
 
+N> Reordering changes are made only in view and not in the underlying data. Thus the changes will be reverted when performing sorting, grouping or any other operation that refreshes the view.
+
 ## Drag Indicator View
 
-To perform the drag and drop by setting the [SfListView.DragStartMode](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~DragStartMode.html) property to `OnDragIndicator`. To display the drag item by defining any custom user interface(UI) in [DragIndicatorView](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.DragIndicatorView.html) and it's binding context is drag item.
+To perform the drag and drop items by [DragIndicatorView](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.DragIndicatorView.html) by setting the [SfListView.DragStartMode](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~DragStartMode.html) property to `OnDragIndicator`. To display the drag item by defining any custom user interface(UI) in `DragIndicatorView` and its binding context is drag item.
 
 N> Must set SfListView instance as reference to `ListView` property in `DragIndicatorView`.
 
@@ -138,67 +120,62 @@ listView.ItemTemplate = new DataTemplate(() =>
 {% endhighlight %}
 {% endtabs %}
 
-## Adjust Drag Item Axis
+The screenshot shows the output of reordering items by drag and drop in SfListView. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ITEMDR~1-296035285.ZIP)
 
-Adjust the drag item axis by return true from virtual method [CanAdjustDragItemAxis](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.DragDropController~CanAdjustDragItemAxis.html) of [DragDropController](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.DragDropController.html) being dragging. The default value is false.
-
-{% highlight c# %}
-this.listView.DragDropController = new DragDropControllerExt(this.listView);
-
-public class DragDropControllerExt : DragDropController
-{
-  public DragDropControllerExt(SfListView listView) : base(listView)
-  {
-
-  }
-
-  protected override bool CanAdjustDragItemAxis()
-  {
-    return true;
-  }
-}
-{% endhighlight %}
-
-## Layout Item on Dragging
-
-In SfListView, layout the [ListViewItem](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ListViewItem.html) with different animation and time on dragging by virtual method [OnLayoutItem](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.DragDropController~OnLayoutItem.html).
-
-{% highlight c# %}
-this.listView.DragDropController = new DragDropControllerExt(this.listView);
-
-public class DragDropControllerExt : DragDropController
-{
-  public DragDropControllerExt(SfListView listView) : base(listView)
-  {
-
-  }
-
-  protected override Task<bool> OnLayoutItem(View element, Rectangle rect)
-  {
-    return element.LayoutTo(rect, 250, Easing.BounceIn);
-  }
-}
-{% endhighlight %}
+![](SfListView_images/SfListView-ItemReordering.gif)
 
 ## Item drag and drop event
 
-[ItemDragging](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemDragging_EV.html) event is raised when perform dragging and dropping the item in [SfListView](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView.html). [ItemDraggingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs.html) has the following members which provides the information for `ItemDragging` event.
+[ItemDragging](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemDragging_EV.html) event is raised when perform dragging and dropping the item in [SfListView](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView.html). [ItemDraggingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs.html) has the following members which provide the information for `ItemDragging` event.
 
-* Action: Returns the drag action such as Start, Dragging and Drop. Its a enum type.
+* Action: Returns the drag [Action](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs~Action.html) such as Start, Dragging and Drop.
 * Bounds: Returns bounds of the drag item when perform dragging and dropping it.
-* Handled: When perform dragging, can handle the dragging item if its set to true. And it's only applicable if [Action](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs~Action.html) is `Dragging`.
+* Handled: When perform dragging, can handle the dragging item if its set to true. And it's only applicable if `Action` is `Dragging`.
 * ItemData: Returns the underlying data of the drag item. 
 * NewIndex: Returns the item index of underlying collection where the dragging item going to be dropped.
 * OldIndex: Returns the item index of underlying collection where the dragging item started. The OldIndex and NewIndex will be same if `Action` is `Start`.
 * Position: Returns the touch position of drag item from screen coordinates.
 
+## Drag Item Template
+
+By defining the [SfListView.DragItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~DragItemTemplate.html) of the SfListView, displaying the custom user interface(UI) when performing the drag and drop operation. The template can be defined either in code or XAML.
+
+N> To set `InputTransparent` to true if setting `BackgroundColor` to `DragItemTemplate` or [DragIndicatorView](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.DragIndicatorView.html) since the dragging does not happen when perform by `DragIndicatorView` in UWP.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfListView x:Name="listView" 
+                   ItemsSource="{Binding ToDoList}"
+                   DragStartMode="OnHold,OnDragIndicator"
+                   BackgroundColor="#FFE8E8EC"
+                   ItemSize="60">
+  <syncfusion:SfListView.DragItemTemplate>
+    <DataTemplate>
+      <Grid Padding="10">
+        <Label x:Name="textLabel" Text="{Binding Name}" FontSize="15" />
+      </Grid>
+    </DataTemplate>
+  </syncfusion:SfListView.DragItemTemplate>
+</syncfusion:SfListView>
+{% endhighlight %}
+{% highlight c# %}
+listView.ItemTemplate = new DataTemplate(() => {
+  var grid = new Grid();
+  var name = new Label { FontSize = 15 };
+  name.SetBinding(Label.TextProperty, new Binding("Name"));
+  grid.Children.Add(name);
+  return grid;
+});
+{% endhighlight %}
+{% endtabs %}
+
 ## Auto Scroll Options
 
 ### Adjust Auto Scroll Margin
 
-Adjust the auto scroll margin to enable the auto scrolling being dragging by setting value to [ScrollMargin](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.AutoScroller~ScrollMargin.html) property of [AutoScroller](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.AutoScroller.html). The default value is 15. The auto scrolling will be enabled being dragging when reach `ScrollMargin` from view bounds.
+Adjust the auto scroll margin to enable the auto-scrolling being dragging by setting a value to [ScrollMargin](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.AutoScroller~ScrollMargin.html) property of [AutoScroller](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.AutoScroller.html). The default value is 15. The auto-scrolling will be enabled being dragging when reaching `ScrollMargin` from view bounds.
 
-Disable the auto scrolling by setting the value to `0` for `ScrollMargin`.
+Disable the auto-scrolling by setting the value to `0` for `ScrollMargin`.
 
 {% highlight c# %}
 this.listView.AutoScroller.ScrollMargin = 20;
@@ -206,7 +183,7 @@ this.listView.AutoScroller.ScrollMargin = 20;
 
 ### Adjust Auto Scroll Interval
 
-Adjust the auto scrolling interval being dragging by setting [Interval](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.AutoScroller~Interval.html) property of [AutoScroller](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.AutoScroller.html). The default value is 150 milliseconds.
+Adjust the auto-scrolling interval being dragging by setting [Interval](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.AutoScroller~Interval.html) property of [AutoScroller](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.AutoScroller.html). The default value is 150 milliseconds.
 
 {% highlight c# %}
 this.listView.AutoScroller.Interval = new TimeSpan(0, 0, 0, 0, 200);
@@ -214,7 +191,7 @@ this.listView.AutoScroller.Interval = new TimeSpan(0, 0, 0, 0, 200);
 
 ### Disable Outside Scroll
 
-Disable the auto scrolling being dragging when drag item moves into outside of SfListView by setting [AllowOutsideScroll](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.AutoScroller~AllowOutsideScroll.html) property of [AutoScroller](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.AutoScroller.html). The default value is true.
+Disable the auto-scrolling being dragging when drag item moves into an outside of SfListView by setting [AllowOutsideScroll](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.AutoScroller~AllowOutsideScroll.html) property of [AutoScroller](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.AutoScroller.html). The default value is true.
 
 {% highlight c# %}
 this.listView.AutoScroller.AllowOutsideScroll = false;
@@ -222,7 +199,7 @@ this.listView.AutoScroller.AllowOutsideScroll = false;
 
 ## Disable Dragging for particular Item
 
-Dragging can be disabled for a particular item by handling the [ItemDragging](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemDragging_EV.html) event using conditions based on event argument [Action](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs~Action.html). The following code example shows to disable dragging for particular item.
+Dragging can be disabled for a particular item by handling the [ItemDragging](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemDragging_EV.html) event using conditions based on event argument [Action](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs~Action.html). The following code example shows to disable dragging for the particular item.
 
 {% highlight c# %}
 private void ListView_ItemDragging(object sender, ItemDraggingEventArgs e)
@@ -235,7 +212,7 @@ private void ListView_ItemDragging(object sender, ItemDraggingEventArgs e)
 
 ## Cancel Dropping for Drag Item
 
-Dropping can be canceled for drag item by handling the [ItemDragging](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemDragging_EV.html) event using conditions based on event argument [Action](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs~Action.html). The following code example shows to cancel dropping of particular item.
+Dropping can be canceled for drag item by handling the [ItemDragging](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemDragging_EV.html) event using conditions based on event argument [Action](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs~Action.html). The following code example shows to cancel dropping of the particular item.
 
 {% highlight c# %}
 private void ListView_ItemDragging(object sender, ItemDraggingEventArgs e)
@@ -265,11 +242,11 @@ private async void ListView_ItemDragging(object sender, ItemDraggingEventArgs e)
 }
 {% endhighlight %}
 
-## Delete item when drop in particular view
+## Delete item when dropping in particular view
 
-Delete the drag item when drop into particular view by handling the [ItemDragging](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemDragging_EV.html) event using conditions based on event arguments [Action](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs~Action.html) and `Bounds`. The following code example shows to delete drag item when drop into particular view.
+Delete the drag item when dropping into particular view by handling the [ItemDragging](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemDragging_EV.html) event using conditions based on event arguments [Action](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs~Action.html) and `Bounds`. The following code example shows to delete drag item when dropping into particular view.
 
-The following example shows to delete the drag item from underlying collection when drop into delete icon which is in above SfListView. It will enable and disable whenever drag started and dropped by IsVisible property in ViewModel.
+The following example shows to delete the drag item from underlying collection when dropping into delete icon which is in above SfListView. It will enable and disable whenever drag started and dropped by IsVisible property in ViewModel.
 
 {% highlight xaml %}
 <Grid>
@@ -329,8 +306,85 @@ private async void ListView_ItemDragging(object sender, ItemDraggingEventArgs e)
 }
 {% endhighlight %}
 
-The screenshot shows the output of reordering items by drag and drop in SfListView. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/DRAGAN~1-54215034.ZIP)
+You can download the sample for above source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ITEMDR~1499947492.ZIP)
 
-![](SfListView_images/SfListView-ItemReordering.gif)
+## Skip dragging item into another group
 
+To skip dragging from one group to another group by handling the [ItemDragging](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemDragging_EV.html) event using conditions based on event arguments [Action](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs~Action.html) and `Bounds`.
 
+N> Unable to skip the dragging item in auto scrolling.
+
+The following example code shows to skip the dragging from one group another group. Skip the dragging item by bounds of dragging item and bounds of current and next group item. 
+
+{% highlight c# %}
+private async void ListView_ItemDragging(object sender, ItemDraggingEventArgs e)
+{
+  if (e.Action == DragAction.Dragging)
+  {
+    var currentGroup = this.GetGroup(e.ItemData);
+    var container = this.listView.GetVisualContainer();
+    var groupIndex = this.listView.DataSource.Groups.IndexOf(currentGroup);
+    var nextGroup = (groupIndex + 1 < this.listView.DataSource.Groups.Count) ? this.listView.DataSource.Groups[groupIndex + 1] : null;
+    ListViewItem groupItem = null;
+    ListViewItem nextGroupItem = null;
+
+    foreach (ListViewItem item in container.Children)
+    {
+      if (item.BindingContext.Equals(currentGroup))
+        groupItem = item;
+
+      if (nextGroup != null && item.BindingContext.Equals(nextGroup))
+        nextGroupItem = item;
+    }
+
+    if (e.Bounds.Y <= groupItem.Y + groupItem.Height || nextGroupItem != null && (e.Bounds.Y + e.Bounds.Height >= nextGroupItem.Y))
+      e.Handled = true;
+  }
+}
+{% endhighlight %}
+
+You can download the sample for above source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ITEMDR~1-1162681143.ZIP)
+
+## Drag and Drop Customization
+
+### Adjust Drag Item Axis
+
+Adjust the drag item co-coordinates(X and Y) being dragging by return true from virtual method [CanAdjustDragItemAxis](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.DragDropController~CanAdjustDragItemAxis.html) of [DragDropController](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.DragDropController.html). By default, adjust Y co-ordinates only if [SfListView.Orientation](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~Orientation.html) is `Vertical` and adjust X co-ordinates only if `Orientation` is `Horizontal`.
+
+{% highlight c# %}
+this.listView.DragDropController = new DragDropControllerExt(this.listView);
+
+public class DragDropControllerExt : DragDropController
+{
+  public DragDropControllerExt(SfListView listView) : base(listView)
+  {
+
+  }
+
+  protected override bool CanAdjustDragItemAxis()
+  {
+    return true;
+  }
+}
+{% endhighlight %}
+
+### Layout Item on Dragging
+
+In SfListView, layout the [ListViewItem](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ListViewItem.html) with different animation and time on dragging by virtual method [OnLayoutItem](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.DragDropController~OnLayoutItem.html).
+
+{% highlight c# %}
+this.listView.DragDropController = new DragDropControllerExt(this.listView);
+
+public class DragDropControllerExt : DragDropController
+{
+  public DragDropControllerExt(SfListView listView) : base(listView)
+  {
+
+  }
+
+  protected override Task<bool> OnLayoutItem(View element, Rectangle rect)
+  {
+    return element.LayoutTo(rect, 250, Easing.BounceIn);
+  }
+}
+{% endhighlight %}

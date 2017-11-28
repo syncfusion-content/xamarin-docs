@@ -497,8 +497,6 @@ N> In case, if the orientation of the `StackLayout` is horizontal, then you have
 
 SfDataGrid can be load with specific height and width inside different layouts using [SfDataGrid.HeightRequest](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~HeightRequest.html) and [SfDataGrid.WidthRequest](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~WidthRequest.html) property. 
 
-If you load SfDataGrid as a single child to its parent, set the [HorizontalOptions](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~HorizontalOptions.html) and [VerticalOptions](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~VerticalOptions.html) for the grid accordingly.
-
 The following code example illustrates how this can be done:
 
 {% tabs %}
@@ -541,6 +539,8 @@ public MainPage()
 The following screenshot shows how the SfDataGrid is loaded with specific height and width with VerticalOptions and HorizontalOptions:
 
 ![](SfDataGrid_images/Loading_with specific_height_and_width.png)
+
+N> Set the [HorizontalOptions](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~HorizontalOptions.html) and [VerticalOptions](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~VerticalOptions.html) for the grid accordingly.
 
 ## Linker issue in Xamarin.Forms.iOS
 

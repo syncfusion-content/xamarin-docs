@@ -174,8 +174,7 @@ return node;
 The flow chart will get displayed in the SfDiagram as follows
 ![](Getting-Started_images/Getting-Started_img1.jpeg)
 
-This demo project can be downloaded from the following link.
-[GettingStarted_Demo](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Gettingstarted-178948186# "")
+This demo project can be downloaded from the following link [GettingStarted_Demo.](http://files2.syncfusion.com/Xamarin.Forms/Samples/Gettingstarted_SfDiagram.zip)
 
 ## Create a simple organizational chart
 SfDiagram provides support to auto-arrange the nodes based on hierarchical relation. Organization chart is an example of displaying hierarchical information.
@@ -242,5 +241,4 @@ diagram.LayoutManager = new LayoutManager() { Layout = treeLayout };
 The Employee data is displayed in the SfDiagram as follows
 ![](Getting-Started_images/Getting-Started_img2.jpeg)
 
-This demo project can be downloaded from the following link.
-[OrganizationalChart_Demo](http://www.syncfusion.com/downloads/support/directtrac/general/ze/OrganizationalChart-1288056# "")
+This demo project can be downloaded from the following link [OrganizationalChart_Demo.](http://files2.syncfusion.com/Xamarin.Forms/Samples/OrganizationalChart_SfDiagram.zip)

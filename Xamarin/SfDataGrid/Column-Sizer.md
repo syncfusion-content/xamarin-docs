@@ -170,6 +170,8 @@ public MainPage()
 {% endhighlight %}
 {% endtabs %}   
 
+![](SfDataGrid_images/FillRemainigColumn_Forms.png)
+
 ### Refreshing ColumnSizer at runtime
 
 To refresh the column sizing for `SfDataGrid.Columns`, use the [GridColumn.ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~ColumnSizer.html) property.
@@ -200,7 +202,9 @@ private void ColumnSizerChanged(object sender, EventArgs e)
     dataGrid.GridColumnSizer.Refresh(true);
 }    
 {% endhighlight %}
-{% endtabs %}  
+{% endtabs %} 
+
+![](SfDataGrid_images/RefreshColumnSizer_Forms.gif) 
 
 ### Resetting column width to apply ColumnSizer   
 
@@ -249,6 +253,8 @@ private void ResetColumns()
     }
 }
 {% endhighlight %}
+
+![](SfDataGrid_images/ResetColumnSizer_Forms.gif)
 
 ## Star column sizer ratio support
 
@@ -351,3 +357,5 @@ public static class ColumnSizerAttachedProperty
     }
 }  
 {% endhighlight %}   
+
+![](SfDataGrid_images/StarColumnSizerRatio_Forms.png)

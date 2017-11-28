@@ -8,6 +8,7 @@ keywords:
 ---
 # Getting Started
 This section provides a quick overview for working with Diagram for Xamarin.Forms. This walkthrough demonstrates that, how to create a simple flow chart and an organization chart.
+
 ## Assemblies Required
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders.
 {Syncfusion Essential Studio Installed location}\Essential Studio{Essential Studio version}\Xamarin\lib
@@ -66,12 +67,14 @@ PM> Get-Project -All | Install-Package Syncfusion.Xamarin.SfDiagram -source{{'[h
 </td>
 </tr>
 </table>
+
 ## Basic building blocks of Diagram
 * **Diagram**- It represents the drawing surface where all the graphical elements like nodes and connectors resides, can be used to display various types of diagrams and it is the root instance of the diagram control. A Diagram instance contains a collection of nodes and  connectors to represent the  graphical diagram.
 * **Nodes**- This represents the geometric shapes such as flowchart elements, network diagram elements, use case elements, etc. 
 * **Connectors-**These are the objects used to create link between two nodes, to represent the relationships between them in the diagram. 
 * **Ports-**It represents a point in the node, where the connectors can be connected. A Node can contain any number of ports.
 * **Annotation-**It is a block of the text that can be displayed over a Node or Connector. Annotation is used to textually represent an object with a string that can be edited at run time.
+
 ## Creating a Simple Flow Chart
 Create a new cross platform app (Xamarin.Forms) with portable class library in the Visual Studio and name the project as “GettingStarted” and refer to the above mentioned assemblies to the respective projects.
 An additional step is required to render the SfDiagram control in iOS project. You need to create an instance of the SfDiagramRenderer class within FinishedLaunching method of AppDelegate class in iOS project as shown as follows 
@@ -171,8 +174,8 @@ return node;
 The flow chart will get displayed in the SfDiagram as follows
 ![](Getting-Started_images/Getting-Started_img1.jpeg)
 
-This demo project can be downloaded from the following link.
-[GettingStarted_Demo](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Gettingstarted-178948186# "")
+This demo project can be downloaded from the following link [GettingStarted_Demo.](http://files2.syncfusion.com/Xamarin.Forms/Samples/Gettingstarted_SfDiagram.zip)
+
 ## Create a simple organizational chart
 SfDiagram provides support to auto-arrange the nodes based on hierarchical relation. Organization chart is an example of displaying hierarchical information.
 Now, you have to create a class named “Employee” to store the employee’s information like name, designation, ID, reporting person ID, etc. Also, create a collection class that stores a collection of the employees.
@@ -234,8 +237,8 @@ DirectedTreeLayout treeLayout = new DirectedTreeLayout() { HorizontalSpacing = 8
 
 diagram.LayoutManager = new LayoutManager() { Layout = treeLayout };
 {% endhighlight %}
+{% endtabs %}
 The Employee data is displayed in the SfDiagram as follows
 ![](Getting-Started_images/Getting-Started_img2.jpeg)
 
-This demo project can be downloaded from the following link.
-[OrganizationalChart_Demo](http://www.syncfusion.com/downloads/support/directtrac/general/ze/OrganizationalChart-1288056# "")
+This demo project can be downloaded from the following link [OrganizationalChart_Demo.](http://files2.syncfusion.com/Xamarin.Forms/Samples/OrganizationalChart_SfDiagram.zip)

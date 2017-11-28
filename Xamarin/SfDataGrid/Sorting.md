@@ -64,8 +64,9 @@ dataGrid.AllowTriStateSorting = true;
 {% endhighlight %}
 {% endtabs %}
 
+![](SfDataGrid_images/Tristate_Sorting.gif)
 
-## Multi Sorting
+## Multi-column sorting
 
 SfDataGrid allows you to sort the data against more than one columns by setting the [SfDataGrid.AllowMultiSorting](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowMultiSorting.html) property to `true`. The number of columns by which the data can be sorted is unlimited. To apply sorting for multiple columns, tap the desired column headers after setting the `SfDataGrid.AllowMultiSorting` property.
 
@@ -79,6 +80,8 @@ The following code example shows how to enable multi-sorting in SfDataGrid.
 dataGrid.AllowMultiSorting = true;
 {% endhighlight %}
 {% endtabs %}
+
+![](SfDataGrid_images/MultiColumn_Sorting.gif)
 
 ## Sort column in double click
 
@@ -277,6 +280,48 @@ To animate the sorting icon, follow the code example:
 
 ![](SfDataGrid_images/Sorting-Animation.gif)
 
-## How to disable sorting for an individual column?
+## How to disable sorting for an individual column
 
-SfDataGrid allows to disable the sorting for individual columns by using the [GridColumn.AllowSorting](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~AllowSorting.html) property. The default value of this property is `true` and hence all the columns in the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~Columns.html) collection can be sorted when [SfDataGrid.AllowSorting](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowSorting.html) is set to `true`.
+SfDataGrid allows to disable sorting for individual column using the [GridColumn.AllowSorting](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~AllowSorting.html) property. The default value of this property is `true`. Hence all the columns in the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~Columns.html) collection can be sorted when `SfDataGrid.AllowSorting` is set to `true`.
+
+To disable sorting for an individual column, follow the code example:
+
+### For auto generated column
+
+{% highlight c# %}
+public MainPage()
+{
+    InitializeComponent();
+    viewModel = new ViewModel();
+    dataGrid = new SfDataGrid();
+    dataGrid.ItemsSource = viewModel.OrdersInfo;
+    dataGrid.AllowSorting = true;
+    dataGrid.AutoGeneratingColumn += DataGrid_AutoGeneratingColumn;
+    this.Content = dataGrid;          
+}
+private void DataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnEventArgs e)
+{
+    // Sorting will not be done for the Freight column
+    if (e.Column.MappingName == "Freight")
+        e.Column.AllowSorting = false;
+}
+{% endhighlight %}
+
+### For manually defined column
+
+{% highlight c# %}
+public MainPage()
+{
+    InitializeComponent();
+    viewModel = new ViewModel();
+    dataGrid = new SfDataGrid();
+    dataGrid.ItemsSource = viewModel.OrdersInfo;
+    dataGrid.AutoGenerateColumns = false;
+    dataGrid.AllowSorting = true;
+    dataGrid.Columns.Add(new GridTextColumn() { MappingName = "OrderID" });
+    // Sorting will not be done for the Freight column
+    dataGrid.Columns.Add(new GridTextColumn() { MappingName = "Freight", AllowSorting = false });
+    dataGrid.Columns.Add(new GridTextColumn() { MappingName = "Country" });
+    this.Content = dataGrid;          
+}
+{% endhighlight %}

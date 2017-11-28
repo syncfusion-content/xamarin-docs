@@ -51,6 +51,7 @@ The following screenshot shows the output rendered when grouping is applied.
 
 SfDataGrid also allows to group the data against one or more columns using the [SfDataGrid.GroupingMode](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GroupingMode.html) property. When `GroupingMode` is set as `GroupingMode.Multiple` the data is organized into a hierarchical tree structure based on identical values of that column. Multi grouping feature works similarly as multi sorting feature. Here the data is first grouped according to the first column added in the `GroupColumnDescriptions` collection. When a new column is added to the `GroupColumnDescriptions`, the already grouped data will now be taken for further processing and the newly added group will be added as a sub group of the existing group. This results in a tree like hierarchy. Refer to the following code snippet to enable multi grouping:
 
+{% tabs %}
 {% highlight xaml %}
 <syncfusion:SfDataGrid  x:Name="dataGrid"
                         AutoGenerateColumns="True"

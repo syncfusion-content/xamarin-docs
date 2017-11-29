@@ -71,9 +71,10 @@ The following screenshot shows the output rendered when above code is executed.
 
 ## Indent column customizations
 
-Indent columns are the columns present to the left of the `CaptionSummaryRows` when `GroupingMode` is set as multiple. The number of indent cells in each CaptionSummaryRow will be determined by the level of that Group. For example, the first group will have only one indent cell and the next immediate group will have an extra indent cell and keeps on adding in multiples of one for lower level groups to maintain the tree structure. Each data row will have indent cells count equal to the level of the last sub group in view. The following controls can be customized for indent cells:
+Indent columns are the columns present to the left of the `CaptionSummaryRows` when `GroupingMode` is set as multiple. The number of indent cells in each `CaptionSummaryRow` will be determined by the level of that `Group`. For example, the first group will have only one indent cell and the next immediate group will have an extra indent cell and keeps on adding by one for each lower level groups to maintain the tree structure. Each data row will have indent cells count equal to the level of the last sub group in view. The following customizations can be done for indent cells:
 
-* Width : By default, the width of the indent column is 20. To customize the width of indent column, use [IndentColumnWidth](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~IndentColumnWidth.html) property as follows: 
+### Customize indent column width
+By default, the width of the indent column is 20. To customize the width of indent column, use [IndentColumnWidth](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~IndentColumnWidth.html) property as follows: 
 {% tabs %}
 
 {% highlight xaml %}
@@ -90,7 +91,8 @@ this.dataGrid.IndentColumnWidth = 60;
 {% endhighlight %}
 {% endtabs %}
 
-* BackgroundColor : You can set background colors to indent cells based on the row where the indent cells are present. To set the desired background color, use the `GetIndentBackgroundColor()` override in the custom `DataGridStyle` class. Refer to this [link](https://help.syncfusion.com/xamarin/sfdatagrid/styles) to know how to apply custom style to SfDataGrid. Refer to the following code snippet to apply background color to indent cells based on the row type:
+### Customize indent column background color 
+You can set background colors to indent cells based on the row where the indent cells are present. To set the desired background color, use the `GetIndentBackgroundColor()` override in the custom `DataGridStyle` class. Refer to this [link](https://help.syncfusion.com/xamarin/sfdatagrid/styles) to know how to apply custom style to SfDataGrid. Refer to the following code snippet to apply background color to indent cells based on the row type:
 
 {% tabs %}
 {% highlight c# %}
@@ -465,7 +467,7 @@ public class CustomStyle : DataGridStyle
 
 ## How to hide the grouped column in SfDataGrid
 
-To hide/show a particular column gets grouped, set [SfDataGrid.ShowColumnWhenGrouped](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ShowColumnWhenGrouped.html) property to false. In case the `SfDataGrid.AllowMultiGrouping` property is true, all the columns that are added in the `GroupColumnDescriptions` collection will be shown or hidden based on the value of the [SfDataGrid.ShowColumnWhenGrouped](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ShowColumnWhenGrouped.html) property. Refer to the following code snippet:
+To hide/show a particular column gets grouped, set [SfDataGrid.ShowColumnWhenGrouped](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ShowColumnWhenGrouped.html) property to `false`/`true`. Any column(s) that is added in the `GroupColumnDescriptions` collection will be shown or hidden based on the value of the [SfDataGrid.ShowColumnWhenGrouped](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ShowColumnWhenGrouped.html) property. Refer to the following code snippet:
 
 {% tabs %}
 

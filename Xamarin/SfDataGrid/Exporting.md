@@ -319,6 +319,51 @@ var doc = pdfExport.ExportToPdf (this.dataGrid, exportOption);
 
 SfDataGrid provides you with several properties in `DataGridPdfExportingOption` class to customize the grid while exporting it to PDF. 
 
+### Exporting SfDataGrid from particular starting point
+
+SfDataGrid allows to export the data from a particular point in the PDF page by setting the [DataGridPdfExportingOption.StartPoint](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridPdfExportOption~StartPoint.html) property.
+
+To export the DataGrid with particular starting point, follow the code example:
+
+{% highlight c#%}
+
+DataGridPdfExportingController pdfExport = new DataGridPdfExportingController();
+DataGridPdfExportOption exportOption = new DataGridPdfExportOption()
+{
+    ExportColumnWidth = false,
+    FitAllColumnsInOnePage = true,
+    StartPoint = new PointF(0, 200)           
+};
+MemoryStream stream = new MemoryStream();
+var doc = pdfExport.ExportToPdf(this.dataGrid,exportOption);
+
+{% endhighlight%}
+
+![](SfDataGrid_images/StartingWithPoint.png)
+
+
+### Exporting SfDataGrid from particular starting page
+
+SfDataGrid allows to export the data from a particular staring page by setting the [DataGridPdfExportingOption.StartPageIndex](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridPdfExportOption~StartPageIndex.html) property. 
+
+To export the DataGrid with particular starting page, follow the code example:
+
+{% highlight c# %}
+
+PdfDocument pdfDocument = new PdfDocument();
+pdfDocument.Pages.Add();
+DataGridPdfExportingController pdfExport = new DataGridPdfExportingController();
+DataGridPdfExportOption exportOption = new DataGridPdfExportOption()
+{
+ExportColumnWidth = false,
+PdfDocument = pdfDocument,
+FitAllColumnsInOnePage = true,
+StartPageIndex = 1,
+});
+{% endhighlight %}
+
+![](SfDataGrid_images/StartingWithPage.png)
+
 ### Events
 
 The SfDataGrid provides you the following events for exporting:

@@ -28,17 +28,17 @@ The following code example illustrates how to apply grouping by a column in SfDa
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="dataGrid"
-            ItemsSource="{Binding OrdersInfo}">
+<syncfusion:SfDataGrid x:Name="dataGrid"
+            ItemsSource="{Binding OrdersInfo}">
 
     <syncfusion:SfDataGrid.GroupColumnDescriptions>
-        <syncfusion:GroupColumnDescription ColumnName="CustomerID" />
+        <syncfusion:GroupColumnDescription ColumnName="CustomerID" />
     </syncfusion:SfDataGrid.GroupColumnDescriptions>
 </syncfusion:SfDataGrid> 
 {% endhighlight %}
 {% highlight c# %}
-    dataGrid.GroupColumnDescriptions.Add (new GroupColumnDescription () {
-    ColumnName = "CustomerID",
+    dataGrid.GroupColumnDescriptions.Add (new GroupColumnDescription () {
+    ColumnName = "CustomerID",
 }); 
 {% endhighlight %}
 {% endtabs %}
@@ -47,9 +47,9 @@ The following screenshot shows the output rendered when grouping is applied.
 
 ![](SfDataGrid_images/SfDataGrid-Xamarin_img2.png)
 
-### Multi grouping
+## MultiGrouping
 
-SfDataGrid also allows to group the data against one or more columns using the [SfDataGrid.GroupingMode](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GroupingMode.html) property. When `GroupingMode` is set as `GroupingMode.Multiple` the data is organized into a hierarchical tree structure based on identical values of that column. Multi grouping feature works similarly as multi sorting feature. Here the data is first grouped according to the first column added in the `GroupColumnDescriptions` collection. When a new column is added to the `GroupColumnDescriptions`, the already grouped data will now be taken for further processing and the newly added group will be added as a sub group of the existing group. This results in a tree like hierarchy. Refer to the following code snippet to enable multi grouping:
+SfDataGrid also allows to group the data against one or more columns using the [SfDataGrid.GroupingMode](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GroupingMode.html) property. When `GroupingMode` is set as `GroupingMode.Multiple`, the data is organized into hierarchical tree structure based on identical values of that column. MultiGrouping feature works similarly as MultiSorting feature. Initially the data is grouped according to the first column added in the `GroupColumnDescriptions` collection. When a new column is added to the `GroupColumnDescriptions`, the already grouped data will be taken for further processing. The newly added group will be added as a sub group of the existing group. This results in a tree like hierarchy. Refer to the following code snippet to enable MultiGrouping:
 
 {% tabs %}
 {% highlight xaml %}
@@ -66,14 +66,14 @@ this.dataGrid.GroupingMode = GroupingMode.Multiple;
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot shows the output rendered when above code is executed:
+The following screenshot shows the output rendered when above code is executed.
 ![](SfDataGrid_images/MultiColumnGrouping_XForms.png)
 
-## IndentColumn customizations
+## Indent column customizations
 
-Indent columns are the columns present to the left of the `CaptionSummaryRows` when `GroupingMode` is set as Multiple. The number of indent cells in each CaptionSummaryRow will be determined by the level of that Group. For example the first group will have only one indent cell, and the next immediate group will have an extra indent cell and keeps on adding in multiples of one for lower level groups to maintain the tree structure. Each data row will have indent cells count equal to the level of the last sub group in view. The following can be customized for the indent cells.
+Indent columns are the columns present to the left of the `CaptionSummaryRows` when `GroupingMode` is set as multiple. The number of indent cells in each CaptionSummaryRow will be determined by the level of that Group. For example, the first group will have only one indent cell and the next immediate group will have an extra indent cell and keeps on adding in multiples of one for lower level groups to maintain the tree structure. Each data row will have indent cells count equal to the level of the last sub group in view. The following controls can be customized for indent cells:
 
-* Width : You can customize the width of IndentColumn in SfDataGrid by using [IndentColumnWidth](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~IndentColumnWidth.html) property as like below. By default the width of the indent column is 20.
+* Width : By default, the width of the indent column is 20. To customize the width of indent column, use [IndentColumnWidth](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~IndentColumnWidth.html) property as follows: 
 {% tabs %}
 
 {% highlight xaml %}
@@ -90,7 +90,7 @@ this.dataGrid.IndentColumnWidth = 60;
 {% endhighlight %}
 {% endtabs %}
 
-* BackgroundColor : You can set background colors to the indent cells based on the row the indent cells are present at. You can set the desired background color using the `GetIndentBackgroundColor()` override in the custom `DataGridStyle` class. Please refer this [link](https://help.syncfusion.com/xamarin/sfdatagrid/styles) to know how to apply custom style to the SfDataGrid.Please refer the below code snippet to apply background color to indent cells based on the row type.
+* BackgroundColor : You can set background colors to indent cells based on the row where the indent cells are present. To set the desired background color, use the `GetIndentBackgroundColor()` override in the custom `DataGridStyle` class. Refer to this [link](https://help.syncfusion.com/xamarin/sfdatagrid/styles) to know how to apply custom style to SfDataGrid. Refer to the following code snippet to apply background color to indent cells based on the row type:
 
 {% tabs %}
 {% highlight c# %}
@@ -112,7 +112,9 @@ public class CustomStyle : DataGridStyle
 {% endhighlight %}
 {% endtabs %}
 
+
 ![](SfDataGrid_images/IndentColumnStyling.png)
+
 
 ## Custom Grouping
 
@@ -122,36 +124,36 @@ The following code example illustrates how to set the custom grouping converter 
 
 {% tabs %}
 {% highlight xaml %}
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:syncfusion="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms"
-             xmlns:local ="clr-namespace:DataGridSample;assembly=DataGridSample"
+             xmlns:local ="clr-namespace:DataGridSample;assembly=DataGridSample"
              x:Class="DataGridSample.Sample">
 
     <ContentPage.Resources>
         <ResourceDictionary>
-            <local:GroupConverter x:Key="groupConverter" />
+            <local:GroupConverter x:Key="groupConverter" />
         </ResourceDictionary>
     </ContentPage.Resources>
 
     <ContentPage.BindingContext>
-        <local:ViewModel x:Name="viewModel" />
+        <local:ViewModel x:Name="viewModel" />
     </ContentPage.BindingContext>
 
-    <syncfusion:SfDataGrid x:Name="dataGrid"
-                           ItemsSource="{Binding OrdersInfo}">
+    <syncfusion:SfDataGrid x:Name="dataGrid"
+                           ItemsSource="{Binding OrdersInfo}">
 
         <syncfusion:SfDataGrid.GroupColumnDescriptions>
-            <syncfusion:GroupColumnDescription ColumnName="Freight"
-                                               Converter="{StaticResource groupConverter}" />
+            <syncfusion:GroupColumnDescription ColumnName="Freight"
+                                               Converter="{StaticResource groupConverter}" />
         </syncfusion:SfDataGrid.GroupColumnDescriptions>
     </syncfusion:SfDataGrid>
 </ContentPage> 
 {% endhighlight %}
 {% highlight c# %}
-dataGrid.GroupColumnDescriptions.Add (new GroupColumnDescription () {
-    ColumnName = "Freight",
-    Converter = new GroupConverter()
+dataGrid.GroupColumnDescriptions.Add (new GroupColumnDescription () {
+    ColumnName = "Freight",
+    Converter = new GroupConverter()
 }); 
 {% endhighlight %}
 {% endtabs %}
@@ -161,27 +163,27 @@ The following code example illustrates the converter used for applying custom gr
 {% highlight c# %}
 public class GroupConverter : IValueConverter
 {
-    public GroupConverter()
+    public GroupConverter()
     {
         
     }
 
-    public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+    public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
     {
-        var orderInfo = value as OrderInfo;
-        if (orderInfo.Freight > 0 && orderInfo.Freight <= 250)
-            return "<=250";
-        else if (orderInfo.Freight > 250 && orderInfo.Freight <= 500)
-            return ">250 & <=500";
-        else if (orderInfo.Freight > 500 && orderInfo.Freight <= 750)
-            return ">500 & <=750";
+        var orderInfo = value as OrderInfo;
+        if (orderInfo.Freight > 0 && orderInfo.Freight <= 250)
+            return "<=250";
+        else if (orderInfo.Freight > 250 && orderInfo.Freight <= 500)
+            return ">250 & <=500";
+        else if (orderInfo.Freight > 500 && orderInfo.Freight <= 750)
+            return ">500 & <=750";
         else
-            return ">1000";
+            return ">1000";
     }
 
-    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
     {
-        return null;
+        return null;
     }
 }
 {% endhighlight %}
@@ -252,10 +254,10 @@ By default column grouping occurs based on the value in the underlying collectio
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:GridTextColumn HeaderText="Shipment Weight" 
+<syncfusion:GridTextColumn HeaderText="Shipment Weight" 
                            MappingName="ShipmentWeight"
                            GroupMode="Display"
-                           Format="#" />
+                           Format="#" />
 {% endhighlight %}
 {% highlight c# %}
 GridNumericColumn cargoWeight = new GridTextColumn();
@@ -266,7 +268,6 @@ cargoWeight.Format = "#";
 {% endtabs %}
 
 The below screenshot shows the comparison between the two Group modes. GroupMode.Value on the left and GroupMode.Display on the right.
-
 ![](SfDataGrid_images/GroupMode.png)
 
 ## Clearing or removing a group
@@ -462,9 +463,9 @@ public class CustomStyle : DataGridStyle
 {% endhighlight %}
 {% endtabs %}
 
-## Hiding the column when grouped
+## How to hide the grouped column in SfDataGrid
 
-User can decide to hide / show that particular column that gets grouped by setting [SfDataGrid.ShowColumnWhenGrouped](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ShowColumnWhenGrouped.html) property to false. In cases of `SfDataGrid.AllowMultiGrouping` = true, all the columns that are added in the `GroupColumnDescriptions` collection will be shown or hidden based on the value. Please refer the below code snippet.
+To hide/show a particular column gets grouped, set [SfDataGrid.ShowColumnWhenGrouped](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ShowColumnWhenGrouped.html) property to false. In case the `SfDataGrid.AllowMultiGrouping` property is true, all the columns that are added in the `GroupColumnDescriptions` collection will be shown or hidden based on the value of the [SfDataGrid.ShowColumnWhenGrouped](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ShowColumnWhenGrouped.html) property. Refer to the following code snippet:
 
 {% tabs %}
 
@@ -474,7 +475,10 @@ User can decide to hide / show that particular column that gets grouped by setti
                         ItemsSource="{Binding Orders}"
                         ShowColumnWhenGrouped="False"/>
 {% endhighlight %}
+
 {% highlight c# %}
+
 this.dataGrid.ShowColumnWhenGrouped = false;
+
 {% endhighlight %}
 {% endtabs %}

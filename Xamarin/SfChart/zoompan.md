@@ -219,7 +219,7 @@ zoomPan.ZoomOut();
 
 This method is used to change the zoom level by using zoom factor.
 
-{ % highlight c# %}
+{% highlight c# %}
 
 ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior();
 
@@ -231,7 +231,7 @@ zoomPan.Zoom(0.5f);
 
 This method is used to zoom the chart for a given rectangle value.
 
-{ % highlight c# %}
+{% highlight c# %}
 
 ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior();
 
@@ -243,7 +243,7 @@ zoomPan.Zoom(new Rect(10, 10, 200, 350));
 
 This method is used to change the zoom level of given axis to the specified level and origin.
 
-{ % highlight c# %}
+{% highlight c# %}
 
 ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior();
 
@@ -257,7 +257,7 @@ zoomPan.Zoom(axis, 0.5f, 0.5f);
 
 This method is used to zoom the given axis to the given range.
 
-{ % highlight c# %}
+{% highlight c# %}
 
 ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior();
 
@@ -269,7 +269,7 @@ zoomPan.ZoomByRange(axis, 20, 25);
 
 This method is used to zoom the given axis to the given date time range.
 
-{ % highlight c# %}
+{% highlight c# %}
 
 ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior();
 
@@ -281,7 +281,7 @@ zoomPan.ZoomByRange(axis, new DateTime(2017,3,1), new DateTime(2017,5,1));
 
 [`ZoomToFactor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~ZoomToFactor.html) method is used to change the zoom level by using zoom position and zoom factor. Zoom position value specifies the starting point of zooming, and zoom factor value specifies the level of zooming.
 
-{ % highlight c# %}
+{% highlight c# %}
 
 ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior();
 
@@ -294,7 +294,7 @@ zoomPan.ZoomToFactor(axis, 0.5f, 0.5f);
 
 [`Reset`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~Reset.html) method is used to return the plot area back to its original position after zooming.
 
-{ % highlight c# %}
+{% highlight c# %}
 
 ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior();
 

@@ -43,6 +43,7 @@ private bool CanLoadMoreItems(object obj)
         return false;
     return true;
 }
+
 private async void LoadMoreItems(object obj)
 {
     var listview = obj as Syncfusion.ListView.XForms.SfListView;
@@ -53,6 +54,7 @@ private async void LoadMoreItems(object obj)
     AddProducts(index, count);
     IsBusy = false;
 }
+
 private void AddProducts(int index, int count)
 {
     for (int i = index; i < index + count; i++)
@@ -99,6 +101,7 @@ private bool CanLoadMoreItems(object obj)
         return false;
     return true;
 }
+
 private async void LoadMoreItems(object obj)
 {
     var listview = obj as Syncfusion.ListView.XForms.SfListView;
@@ -109,6 +112,7 @@ private async void LoadMoreItems(object obj)
     AddProducts(index, count);
     IsBusy = false;
 }
+
 private void AddProducts(int index, int count)
 {
     for (int i = index; i < index + count; i++)

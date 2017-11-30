@@ -37,8 +37,10 @@ SfListView for Xamarin.Forms renders set of data items with Xamarin.Forms views 
 
 * Header and Footer with sticky options.
 
+* Supports load more data automatically or manually at runtime, when end of list is reached.
 
-## Advantages of SfListView over Xamarin Forms ListView
+
+## Advantages of SfListView over Xamarin.Forms ListView
  
 * Horizontal orientation support.
 

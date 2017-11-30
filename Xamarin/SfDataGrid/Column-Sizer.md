@@ -118,11 +118,11 @@ textColumn.ColumnSizer = ColumnSizer.Auto;
 
 ### Fill remaining width for any column
 
-SfDataGrid allows to fill the remaining width in view for any column using [GridColumn.ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~ColumnSizer.html) property.
+`SfDataGrid` allows to fill the remaining width in view for any column using [GridColumn.ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~ColumnSizer.html) property.
 
 The `GridColumn.ColumnSizer` has higher priority than the [SfDataGrid.ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.ColumnSizer.html) property. Hence the individual columns having the `GridColumn.ColumnSizer` property set will not be included in the column sizer calculations of the `SfDataGrid`. To fill the column with remaining width in view, set the `GridColumn.ColumnSizer` property as [ColumnSizer.LastColumnFill](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.ColumnSizer.html#). Refer to the following code example to acheive the same:
 
-In the below code snippet, SfDataGrid is applied as `ColumnSizer.Star` and the second column is applied as ColumnSizer.LastColumnFill. Hence the second column will take up the remaining space after the other columns are rendered with star sizer.
+In the below code snippet, SfDataGrid is applied with `ColumnSizer.Star` and the second column is applied with `ColumnSizer.LastColumnFill`. Hence the second column will take up the remaining space after the other columns are rendered with star size.
 
 {% tabs %}
 {% highlight xaml %}
@@ -174,9 +174,9 @@ public MainPage()
 
 ### Refreshing ColumnSizer at runtime
 
-To refresh the column sizing for `SfDataGrid.Columns`, use the [GridColumn.ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~ColumnSizer.html) property.
+To refresh the column sizing for `SfDataGrid.Columns` in runtime, use the [SfDataGrid.GridColumnSizer.Refresh](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumnSizer~Refresh(Boolean).html)() method.
 
-Consider that `ColumnSizer.Auto` is applied to the SfDataGrid. If the underlying values are changed in run time, refresh the column sizer as shown as follows:
+Consider that `ColumnSizer.Auto` is applied to the SfDataGrid. If the underlying values are changed in run time, refresh the column sizer as shown below:
 
 {% tabs %}
 {% highlight xaml %}    
@@ -208,14 +208,14 @@ private void ColumnSizerChanged(object sender, EventArgs e)
 
 ### Resetting column width to apply ColumnSizer   
 
-By default, the columns having the [GridColumn.Width](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~Width.html) property set will not be included for column sizer calculations of SfDataGrid. To include the width columns and refresh the column sizer in runtime, set the `GridColumn.Width` property to double.NaN before calling the [GridColumnSizer.Refresh()](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumnSizer~Refresh(Boolean).html) method. Refer to the following code example to achieve the same:
+By default, the columns having the [GridColumn.Width](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~Width.html) property set will not be included for column sizer calculations of SfDataGrid. To include the width columns and reset the column sizer in runtime, set the `GridColumn.Width` property to double.NaN before calling the [SfDataGrid.GridColumnSizer.Refresh()](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumnSizer~Refresh(Boolean).html) method. Refer to the following code example to achieve the same:
 
 {% tabs %}
 {% highlight xaml %}
 <StackLayout
     Orientation="Vertical">
     <Button x:Name="button"
-        Text=" Refresh ColumnSizer"
+        Text=" Reset ColumnWidth"
         TextColor="White"
         HeightRequest="50"
         BackgroundColor="Black"
@@ -237,8 +237,8 @@ By default, the columns having the [GridColumn.Width](http://help.syncfusion.com
 {% highlight c# %}
 private void ColumnSizerChanged(object sender, EventArgs e)
 {
-    //Refreshes the column sizer calculation of the SfDataGrid
-    ResetColumns();
+    //Resets the widths for the columns having GridColumn.Width property set
+    ResetColumns(); 
     dataGrid.GridColumnSizer.Refresh(true);
 }
 private void ResetColumns()
@@ -254,7 +254,7 @@ private void ResetColumns()
 }
 {% endhighlight %}
 
-![](SfDataGrid_images/ResetColumnSizer_Forms.gif)
+![](SfDataGrid_images/Reset_ColumnWidth_Forms.png)
 
 ## Star column sizer ratio support
 
@@ -265,14 +265,14 @@ To set star sizer ratio for individual column, follow the code example:
 {% tabs %}
 {% highlight c# %}
 <sfgrid:SfDataGrid.Columns >
-<sfgrid:GridTextColumn HeaderText="OrderID"  MappingName="OrderID" local:ColumnSizerAttachedProperty.ColumnRatio="2"/>
-<sfgrid:GridTextColumn HeaderText="CustomerID" MappingName="CustomerID" local:ColumnSizerAttachedProperty.ColumnRatio="3"/>
+<sfgrid:GridTextColumn HeaderText="OrderID"  MappingName="OrderID" local:StarSizerRatioHelpers.ColumnRatio="2"/>
+<sfgrid:GridTextColumn HeaderText="CustomerID" MappingName="CustomerID" local:StarSizerRatioHelpers.ColumnRatio="3"/>
 <sfgrid:GridTextColumn HeaderText="Salary" MappingName="Salary"/>
 <sfgrid:GridTextColumn HeaderText="Country" MappingName="Country"/>
 </sfgrid:SfDataGrid.Columns>
 {% endhighlight %}
 
-The following code example demonstrates how the width is calculated for column based on the `ColumnSizerAttachedProperty.ColumnRatio` property in `SetStarWidthForColumns` method:
+The following code example demonstrates how the width is calculated for column using the `SetStarWidthForColumns` method based on the `ColumnRatio` property of the `StarSizerRatioHelpers` class:
 
 {% highlight c# %}   
 // Assign custom GridColumnSizer to datagrid GridColumnSizer
@@ -296,13 +296,13 @@ public class CustomColumnSizer : GridColumnSizer
             var columnsCount = 0;
             foreach (var data in column)
             {
-                columnsCount += ColumnSizerAttachedProperty.GetColumnRatio(data);
+                columnsCount += StarSizerRatioHelpers.GetColumnRatio(data);
             }
             double starWidth = Math.Floor((totalRemainingStarValue / columnsCount));
             var getColumn = column.First();
             
             //Calculate the ColumnSizer ratio for every column 
-            starWidth *= ColumnSizerAttachedProperty.GetColumnRatio(getColumn);
+            starWidth *= StarSizerRatioHelpers.GetColumnRatio(getColumn);
             var columnSizer = DataGrid.GridColumnSizer;
             var method = columnSizer.GetType().GetRuntimeMethods().FirstOrDefault(x => x.Name == "SetColumnWidth");
             var width = method.Invoke(columnSizer, new object[] { getColumn, starWidth });
@@ -335,10 +335,10 @@ public class CustomColumnSizer : GridColumnSizer
 }
 {% endhighlight %}   
 
-The following code example explains the `ColumnSizerAttachedProperty` property:
+The following code example explains the `StarSizerRatioHelpers` class:
 
 {% highlight c# %} 
-public static class ColumnSizerAttachedProperty
+public static class StarSizerRatioHelpers
 {
     public static int GetColumnRatio(BindableObject obj)
     {
@@ -350,7 +350,7 @@ public static class ColumnSizerAttachedProperty
     }
 
     public static readonly BindableProperty ColumnRatioProperty =
-        BindableProperty.Create("ColumnRatio", typeof(int), typeof(ColumnSizerAttachedProperty), 1, BindingMode.TwoWay);
+        BindableProperty.Create("ColumnRatio", typeof(int), typeof(StarSizerRatioHelpers), 1, BindingMode.TwoWay);
     public static void OnColumnSizerChanged(BindableObject bindable, object oldValue, object newValue)
     {
 

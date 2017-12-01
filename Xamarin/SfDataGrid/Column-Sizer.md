@@ -253,6 +253,7 @@ private void ResetColumnsWidth()
     }
 }
 {% endhighlight %}
+{% endtabs %}
 
 ![](SfDataGrid_images/Reset_ColumnWidth_Forms.png)
 

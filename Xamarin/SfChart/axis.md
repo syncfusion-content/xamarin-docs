@@ -980,7 +980,7 @@ Axis can be inversed using the [`IsInversed`](http://help.syncfusion.com/cr/cref
 
 {% tabs %} 
 
-{% highlight c# %}
+{% highlight xaml %}
 
 <chart:SfChart.SecondaryAxis >
 
@@ -1081,6 +1081,35 @@ chart.PrimaryAxis = new DateTimeAxis()
       AutoScrollingDelta = 3,
 	  
       AutoScrollingDeltaType = DateTimeDeltaType.Days
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### AutoScrollingMode
+
+[`AutoScrollingMode`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~AutoScrollingMode.html) property can be used to determine whether the axis should be scrolled from start position or end position. The default value of [`AutoScrollingMode`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~AutoScrollingMode.html) is `End`.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+
+    <chart:CategoryAxis AutoScrollingDelta = "3" AutoScrollingMode = "Start">
+
+</chart:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new DateTimeAxis()
+{
+      AutoScrollingDelta = 3,
+	  
+      AutoScrollingMode = ChartAutoScrollingMode.Start
 };
 
 {% endhighlight %}

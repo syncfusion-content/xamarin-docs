@@ -7,11 +7,11 @@ control: SfDataGrid
 documentation: UG
 ---
 
-# Column Drag and Drop
+# Column Drag And Drop
 
-SfDataGrid allows you to drag and drop a column header by setting the [SfDataGrid.AllowDraggingColumn](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowDraggingColumn.html) property to `true`. Drag view is displayed while dragging a column header. The drag and drop operation can be handled based on the requirement using [SfDataGrid.QueryColumnDragging](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~QueryColumnDragging_EV.html) event. 
+The SfDataGrid allows dragging and dropping a column header by setting the [SfDataGrid.AllowDraggingColumn](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowDraggingColumn.html) property to `true`. Drag view is displayed while dragging a column header. Based on the requirement drag and drop operations can be handled using the [SfDataGrid.QueryColumnDragging](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~QueryColumnDragging_EV.html) event. 
 
-The following code example shows how to enable column drag and drop in SfDataGrid. 
+To enable column drag and drop, follow the code example:
 
 {% tabs %}
 {% highlight xaml %}
@@ -24,23 +24,23 @@ dataGrid.AllowDraggingColumn = true;
 
 ## Column drag and drop event
 
-`QueryColumnDragging` event is fired upon starting to drag a column and will be continuously fired till the dragging ends. By handing the `SfDataGrid.QueryColumnDragging ` event you can also cancel the dragging of a particular column header.
+`QueryColumnDragging` event is fired on dragging a column. It will be continuously fired till the dragging ends. By handling the `SfDataGrid.QueryColumnDragging ` event, dragging of a particular column header can be canceled.
 
-The `QueryColumnDragging` event provides following properties in [QueryColumnDraggingEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryColumnDraggingEventArgs.html):
+The `QueryColumnDragging` event provides following properties in [QueryColumnDraggingEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryColumnDraggingEventArgs.html):
 
-* [From](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryColumnDraggingEventArgs~From.html) - Returns the index of the column currently being dragged.
-* [To](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryColumnDraggingEventArgs~To.html) – Returns the dragging index where you try to drop the column.
-* [Reason](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryColumnDraggingEventArgs~Reason.html) - Returns column dragging details as [QueryColumnDraggingReason](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryColumnDraggingReason.html).
-* [DraggingPosition](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryColumnDraggingEventArgs~DraggingPosition.html) – Returns the positions of the drag view during column drag and drop operations.
-* [Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs_properties(v=vs.110).aspx) – A Boolean property to cancel the event.
+ * [From](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryColumnDraggingEventArgs~From.html): Returns the index of the column currently being dragged.
+ * [To](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryColumnDraggingEventArgs~To.html): Returns the dragging index where you try to drop the column.
+ * [Reason](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryColumnDraggingEventArgs~Reason.html): Returns column dragging details as the [QueryColumnDraggingReason](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryColumnDraggingReason.html).
+ * [DraggingPosition](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryColumnDraggingEventArgs~DraggingPosition.html): Returns the positions of drag view during column drag and drop operations.
+ * [Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs_properties(v=vs.110).aspx): A Boolean property to cancel the event.
 
 ![](SfDataGrid_images/ColumnDragAndDrop.png)
 
 ## Customize column drag and drop indicators
 
-SfDataGrid allows you to customize the column drag and drop indicators by writing a custom grid style deriving from [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle.html) and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridStyle.html) property.
+The SfDataGrid allows to customize the column drag and drop indicators by writing a custom grid style deriving from the [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle.html) and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridStyle.html) property.
 
-The following code example shows how to customize column drag and drop indicators in SfDataGrid.
+To customize column drag and drop indicators, follow the code example:
 
 {% highlight c#%}
 
@@ -70,9 +70,9 @@ public class CustomGridStyle : DataGridStyle
 
 ![](SfDataGrid_images/CustomizeColumnDragAndDrop.png)
 
-## How to disable dragging for particular column?
+## How to disable dragging for particular column
 
-Dragging can be canceled for particular column by handling `QueryColumnDragging` event and using conditions based on `QueryColumnDraggingReason`. Refer following code sample to disable dragging for particular column.
+Dragging can be canceled for a particular column by handling `QueryColumnDragging` event and using conditions based on `QueryColumnDraggingReason`. Refer to following code sample to disable dragging for a particular column:
 
 {% highlight c# %}
 
@@ -86,9 +86,9 @@ private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventA
 
 {% endhighlight %}
 
-## How to disable dropping when dragging over particular columns?
+## How to disable dropping when dragging over a particular column
 
-Dropping can be disabled for particular columns while dragging a column.Refer following code sample to cancel dropping of particular column.
+Dropping can be disabled for a particular columns while dragging a column. Refer to the following code sample to cancel dropping of a particular column:
 
 {% highlight c# %}
 
@@ -103,9 +103,9 @@ private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventA
 
 {% endhighlight %}
 
-## How to disable dropping of particular column?
+## How to disable dropping of a particular column
 
-Dropping can be canceled for particular column by handling `QueryColumnDragging` event and using conditions based on `QueryColumnDraggingReason`. Refer following code sample to cancel dropping of particular column.
+Dropping can be canceled for a particular column by handling `QueryColumnDragging` event and using conditions based on `QueryColumnDraggingReason`. Refer to the following code sample to cancel dropping of a particular column:
 
 {% highlight c# %}
 
@@ -119,9 +119,9 @@ private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventA
 
 {% endhighlight %}
 
-## How to disable dropping at a particular position? 
+## How to disable dropping at a particular position 
 
-Dropping at a particular position can be canceled by handling `QueryColumnDragging` event and using conditions based on `QueryColumnDraggingReason`. Refer following code sample to cancel dropping at particular position.
+Dropping at a particular position can be canceled by handling `QueryColumnDragging` event and using conditions based on `QueryColumnDraggingReason`. Refer to the following code sample to cancel dropping at a particular position:
 
 {% highlight c# %}
 

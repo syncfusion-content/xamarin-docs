@@ -272,6 +272,7 @@ To set star sizer ratio for individual column, follow the code example:
 <sfgrid:GridTextColumn HeaderText="Country" MappingName="Country"/>
 </sfgrid:SfDataGrid.Columns>
 {% endhighlight %}
+{% endtabs %}
 
 The following code example demonstrates how the width is calculated for column using the `SetStarWidthForColumns` method based on the `ColumnRatio` property of the `StarSizerRatioHelpers` class:
 

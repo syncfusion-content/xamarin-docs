@@ -10,81 +10,20 @@ documentation: ug
 ---
 
 
-# GETTING STARTED 
+# Getting Started
 
 This section explains you the steps required to configure the `SfCircularGauge` and also explains the steps to add basic elements of `SfCircularGauge` through various API’s available within it.
 
-## Referencing Essential Studio components in your solution
+## Adding CircularGauge Reference
 
-If you had acquired Essential Studio components through the Xamarin component store interface from within your IDE, then after adding the components to your Xamarin.iOS, Xamarin.Android and Windows Phone projects through the Component manager, you will still need to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL project in your solution. You can do this by manually adding the relevant PCL assembly references to your PCL project contained in the following path inside of your solution folder.
+Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain and reference Essential Studio components in your solution; then refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfcirculargauge) link to know about the assemblies required for adding CircularGauge to your project.
 
-Components/syncfusionessentialstudio-version/lib/pcl/
+I> After adding the reference, currently, an additional step is required for iOS and UWP projects. We need to create an instance of the `SfCircularGaugeRenderer` in iOS and UWP projects as shown in this [KB article.](https://www.syncfusion.com/kb/7144)
 
-Alternatively if you had downloaded Essential Studio from Syncfusion.com or through the Xamarin store web interface then all assembly references need to be added manually.
-
-After installing Essential Studio for Xamarin, all the required assemblies can be found in the installation folders, typically
-
-{Syncfusion Installed location}\Essential Studio\12.2.0.40\lib
-
-E.g.: C:\Program Files (x86)\Syncfusion\Essential Studio\12.2.0.40\lib
-
-Or after downloading through the Xamarin store web interface, all the required assemblies can be found in the below folder
-
-{Download location}\syncfusionessentialstudio-version\lib
-
-You can then add the assembly references to the respective projects as shown below
-
-### PCL project
-
-pcl\Syncfusion.SfGauge.XForms.dll
-
-### Android project
-
-android\Syncfusion.SfGauge.Android.dll
-
-android\Syncfusion.SfGauge.XForms.Android.dll
-
-android\Syncfusion.SfGauge.XForms.dll
-
-### iOS (Classic) project
-
-iOS\Syncfusion.SfGauge.iOS.dll
-
-iOS\Syncfusion.SfGauge.XForms.iOS.dll
-
-iOS \Syncfusion.SfGauge.XForms.dll
-
-### iOS(Unified) project
-
-iOS-unified\Syncfusion.SfGauge.iOS.dll
-
-iOS-unified\Syncfusion.SfGauge.XForms.iOS.dll
-
-iOS-unified\Syncfusion.SfGauge.XForms.dll
-
-### UWP project
-
-uwp\Syncfusion.SfGauge.UWP.dll
-
-uwp\Syncfusion.SfGauge.XForms.UWP.dll
-
-uwp\ Syncfusion.SfGauge.XForms.dll
-
-Currently an additional step is required for iOS projects. We need to create an instance of the gauge custom renderer as shown below.
-
-Create an instance of `SfGaugeRenderer` in Finished Launching overridden method of App Delegate class in iOS Project as shown below
-
-{% highlight c# %}
-
-    public override bool FinishedLaunching (UIApplication app, NSDictionary options)
-    {
-    ...
-    new SfGaugeRenderer();
-    ...
-    }
-{% endhighlight %}
+I> For UWP alone, one more additional step is required if the project is built in release mode with .NET Native tool chain enabled. You can refer the [KB article](https://www.syncfusion.com/kb/7149) for more details.
 
 ### Adding namespace for the assemblies
+
 {% tabs %}
 {% highlight xaml %}
  
@@ -117,6 +56,7 @@ Initializing the SfCircularGauge control with a required optimal name by using t
 
 {% endhighlight %}
 {% endtabs %}
+
 ## Adding Header
 
 You can assign a unique header to `SfCircularGauge` by making use of `Header` property and you can positioned it wherever you want using `Position` and `HeaderAlignment` property.

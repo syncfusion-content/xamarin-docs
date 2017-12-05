@@ -11,88 +11,13 @@ documentation: ug
 
 This section explains you the steps to configure a TreeMap control in a real-time scenario and also provides a walk-through on some of the customization features available in TreeMap control.
 
-## Reference Essential Studio Components in your solution
+## Adding SfMaps Reference
 
-If you had acquired Essential Studio components through the Xamarin component store interface from within your IDE, then after adding the components to your Xamarin.iOS, Xamarin.Android and UWP projects through the Component manager, you will still need to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL project in your solution. You can do this by manually adding the relevant PCL assembly references to your PCL project contained in the following path inside of your solution folder.
+Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain and reference Essential Studio components in your solution; then refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sftreemap) link to know about the assemblies required for adding TreeMap to your project.
 
-Components/syncfusionessentialstudio-version/lib/pcl/
+I> After adding the reference, currently, an additional step is required for iOS and UWP projects. We need to create an instance of the `SfTreeMapRenderer` in iOS and UWP projects as shown in this [KB article.](https://www.syncfusion.com/kb/7144)
 
-Alternatively if you had downloaded Essential Studio from Syncfusion.com or through the Xamarin store web interface then all assembly references need to be added manually.
-
-After installing Essential Studio for Xamarin, all the required assemblies can be found in the installation folders, typically
-
-{Syncfusion Installed location}\Essential Studio\syncfusionessentialstudio-version\lib
-
-Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\lib
-
-Or after downloading through the Xamarin store web interface, all the required assemblies can be found in the below folder
-
-{Download location}\syncfusionessentialstudio-version\lib
-
-You can then add the assembly references to the respective projects as shown below
-
-<table>
-<tr>
-<th>Project</th>
-<th>Required assemblies</th>
-</tr>
-<tr>
-<td>PCL</td>
-<td>pcl\Syncfusion.SfTreeMap.XForms.dll</td>
-</tr>
-<tr>
-<td>Android</td>
-<td>android\Syncfusion.SfTreeMap.Android.dll<br/>android\Syncfusion.SfTreeMap.XForms.Android.dll</td>
-</tr>
-<tr>
-<td>iOS (Classic)</td>
-<td>iOS\Syncfusion.SfTreeMap.iOS.dll<br/>iOS\Syncfusion.SfTreeMap.XForms.iOS.dll<br/>iOS\Syncfusion.SfTreeMap.XForms.dll</td>
-</tr>
-<tr>
-<td>iOS (Unified)</td>
-<td>iOS-unified\Syncfusion.SfTreeMap.iOS.dll<br/>iOS-unified\Syncfusion.SfTreeMap.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfTreeMap.XForms.dll</td>
-</tr>
-<tr>
-<td>UWP</td>
-<td>uwp\Syncfusion.SfTreeMap.XForms.dll<br/>uwp\Syncfusion.SfTreeMap.XForms.UWP.dll<br>uwp\Syncfusion.SfTreeMap.UWP.dll</td>
-</tr>
-</table>
-
-Currently an additional step is required for UWP projects. We need to create an instance of the TreeMap custom renderer as shown below.
-
-Create an instance of SfTreeMapRenderer in MainPage constructor of the UWP project as shown
-
-{% highlight C# %}  
-
-public MainPage()
-{
-
-    new SfTreeMapRenderer ();
-
-    ...    
-
-}
-
-{% endhighlight %}
-
-   
-Create an instance of the SfTreeMapRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as follows.
-
-{% highlight C# %}  
-
-public override bool FinishedLaunching(UIApplication app, NSDictionary options)
-{
-
-    ...
-
-    new SfTreeMapRenderer ();
-
-    ...
-
-}
-
-{% endhighlight %}
-
+I> For UWP alone, one more additional step is required if the project is built in release mode with .NET Native tool chain enabled. You can refer the [KB article](https://www.syncfusion.com/kb/7149) for more details.
    
 ## Initializing the TreeMap
 

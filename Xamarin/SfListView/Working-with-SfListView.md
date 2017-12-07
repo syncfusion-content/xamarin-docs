@@ -35,7 +35,7 @@ SfPullToRefresh is a refresh control that allows you to interact and refresh the
 
 The final output will look like on iOS, Android and Windows Phone devices as shown below.
 
-![](SfListView_images/SfListView-Push_XForms.png)
+![](SfListView_images/SfListView_SlideOnTop-Xamarin.forms.gif)
 
 ## Load the SfListView in CarouselView
 

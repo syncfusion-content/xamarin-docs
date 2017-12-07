@@ -1116,6 +1116,153 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endtabs %}
 
+## Axis Crossing
+
+Axis can be positioned anywhere in the chart area by using [`CrossesAt`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~CrossesAt.html) property. This property specifies where the horizontal axis should intersect or cross the vertical axis or vice-versa. Default value of [`CrossesAt`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~CrossesAt.html) property is null.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+
+    <chart:CategoryAxis CrossesAt = “0” />
+
+</chart:SfChart.PrimaryAxis>
+ 
+<chart:SfChart.SecondaryAxis>
+
+    <chart:NumericalAxis CrossesAt = “8” />
+
+</chart:SfChart.SecondaryAxis >
+ 
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis  = new CategoryAxis() { CrossesAt = 0 };
+
+chart.SecondaryAxis =  new NumericalAxis() { CrossesAt  = 8 };
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](axis_images/axiscrossing_img1.png)
+
+## Crossing value below or above the visible range
+
+Axis will be placed in the opposite side if the value of [`CrossesAt`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~CrossesAt.html) property is greater than the maximum value of crossing axis. Axis will be placed in the default position if the value of [`CrossesAt`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~CrossesAt.html) property is less than the minimum value of crossing axis.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+
+    <chart:CategoryAxis CrossesAt = “150” />
+
+</chart:SfChart.PrimaryAxis >
+ 
+<chart:SfChart.SecondaryAxis>
+
+    <chart:NumericalAxis CrossesAt = “-1” />
+
+</chart:SfChart.SecondaryAxis >
+ 
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new CategoryAxis() { CrossesAt = 150 };
+
+chart.SecondaryAxis = new NumericalAxis() { CrossesAt = -1 };
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Crossing in date time axis
+
+For crossing in date time horizontal axis, date object should be provided as value for [`CrossesAt`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~CrossesAt.html) property of vertical axis.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+
+    <chart:DateTimeAxis CrossesAt="0" />
+
+</chart:SfChart.PrimaryAxis >
+ 
+<chart:SfChart.SecondaryAxis>
+
+    <chart:NumericalAxis>
+
+        <chart:NumericalAxis.CrossesAt>
+
+            <sys:Datetime x:FactoryMethod = “Parse”>
+
+                <x:Arguments>
+
+                    <x:String>Jan 1 2003</x:String>
+
+                </x:Arguments>
+
+            </sys:Datetime>
+
+        </chart:NumericalAxis.CrossesAt>
+
+    </chart:NumericalAxis>
+
+</chart:SfChart.SecondaryAxis>
+ 
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis  = new DateTimeAxis() { CrossesAt = 0 };
+
+chart.SecondaryAxis =  new NumericalAxis() { CrossesAt  = new DateTime(2003, 1, 1) };
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](axis_images/axiscrossing_img2.png)
+
+### Positioning the axis elements while crossing
+
+[`RenderNextToCrossingValue`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~RenderNextToCrossingValue.html) property is used to determine whether the crossing axis should be placed at crossing position or not. The default value of [`RenderNextToCrossingValue`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~RenderNextToCrossingValue.html) property is true.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+
+    <chart:CategoryAxis CrossesAt="0" RenderNextToCrossingValue="False"/>
+
+</ chart:SfChart.PrimaryAxis >
+ 
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+    CrossesAt = 0,
+
+    RenderNextToCrossingValue = false
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](axis_images/axiscrossing_img3.png)
+
 ## Smart Axis Labels
 
 Axis labels may overlap with each other based on chart dimensions and label size. The [`LabelsIntersectAction`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~LabelsIntersectAction.html) property of axis is useful in avoiding the overlapping of axis labels with each other. Default value of [`LabelsIntersectAction`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~LabelsIntersectAction.html) is [`None`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.AxisLabelsIntersectAction.html). Other available values of [`LabelsIntersectAction`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~LabelsIntersectAction.html) are [`MultipleRows`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.AxisLabelsIntersectAction.html) and [`Hide`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.AxisLabelsIntersectAction.html).

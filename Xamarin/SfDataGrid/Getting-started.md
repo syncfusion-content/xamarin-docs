@@ -33,19 +33,19 @@ The following list of assemblies need to be added as reference from the lib fold
 </tr>
 <tr>
 <td>PCL</td>
-<td>pcl\Syncfusion.Core.XForms.dll<br/>pcl\Syncfusion.Data.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfDataGrid.XForms.dll<br/>Syncfusion.SfNumericTextBox.XForms.dll<br/></td>
+<td>pcl\Syncfusion.Core.XForms.dll<br/>pcl\Syncfusion.Data.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfDataGrid.XForms.dll<br/>pcl\Syncfusion.SfNumericTextBox.XForms.dll<br/></td>
 </tr>
 <tr>
 <td>Android Renderer</td>
-<td>pcl\Syncfusion.Data.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfDataGrid.XForms.dll<br/>android\Syncfusion.SfDataGrid.XForms.Android.dll<br/>Syncfusion.SfNumericTextBox.Android.dll<br/>Syncfusion.SfNumericTextBox.XForms.Android.dll<br/>Syncfusion.SfNumericTextBox.XForms.dll<br/></td>
+<td>android\Syncfusion.Core.XForms.dll<br/>android\Syncfusion.Data.Portable.dll<br/>android\Syncfusion.GridCommon.Portable.dll<br/>android\Syncfusion.SfDataGrid.XForms.dll<br/>android\Syncfusion.SfDataGrid.XForms.Android.dll<br/>android\Syncfusion.SfNumericTextBox.Android.dll<br/>android\Syncfusion.SfNumericTextBox.XForms.Android.dll<br/>android\Syncfusion.SfNumericTextBox.XForms.dll<br/></td>
 </tr>
 <tr>
 <td>iOS Renderer</td>
-<td>pcl\Syncfusion.Data.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfDataGrid.XForms.dll<br/>ios-unified\Syncfusion.SfDataGrid.XForms.iOS.dll<br/>Syncfusion.SfNumericTextBox.iOS.dll<br/>Syncfusion.SfNumericTextBox.XForms.iOS.dll<br/>Syncfusion.SfNumericTextBox.XForms.dll<br/></td>
+<td>ios-unified\Syncfusion.Core.XForms.dll<br/>ios-unified\Syncfusion.Data.Portable.dll<br/>ios-unified\Syncfusion.GridCommon.Portable.dll<br/>ios-unified\Syncfusion.SfDataGrid.XForms.dll<br/>ios-unified\Syncfusion.SfDataGrid.XForms.iOS.dll<br/>ios-unified\Syncfusion.SfNumericTextBox.iOS.dll<br/>ios-unified\Syncfusion.SfNumericTextBox.XForms.dll<br/>ios-unified\Syncfusion.SfNumericTextBox.XForms.iOS.dll<br/></td>
 </tr>
 <tr>
 <td>UWP Renderer</td>
-<td>pcl\Syncfusion.Data.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfDataGrid.XForms.dll<br/>uwp\Syncfusion.SfDataGrid.XForms.UWP.dll<br/>Syncfusion.SfInput.UWP.dll<br/>Syncfusion.SfShared.UWP.dll<br/>Syncfusion.SfNumericTextBox.XForms.UWP.dll<br/>Syncfusion.SfNumericTextBox.XForms.dll<br/></td>
+<td>uwp\Syncfusion.Core.XForms.dll<br/>uwp\Syncfusion.Data.Portable.dll<br/>uwp\Syncfusion.GridCommon.Portable.dll<br/>uwp\Syncfusion.SfDataGrid.XForms.dll<br/>uwp\Syncfusion.SfDataGrid.XForms.UWP.dll<br/>uwp\Syncfusion.SfInput.UWP.dll<br/>uwp\Syncfusion.SfShared.UWP.dll<br/>uwp\Syncfusion.SfNumericTextBox.XForms.dll<br/>uwp\Syncfusion.SfNumericTextBox.XForms.UWP.dll<br/></td>
 </tr>
 </table>
 
@@ -138,7 +138,7 @@ This section explains how to create a SfDataGrid and configure it. The SfDataGri
  
 ![](SfDataGrid_images/SfDataGrid-Xamarin_img2.png)
 
-You can download the entire source code of this demo for Xamarin.Forms from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-1703822847).
+You can download the entire source code of this demo for Xamarin.Forms from [here](http://files2.syncfusion.com/Xamarin.Forms/Samples/DataGrid_GettingStartedForms.zip).
 
 In this walk through, you will create a new application that contains the SfDataGrid which includes the below topics.
 

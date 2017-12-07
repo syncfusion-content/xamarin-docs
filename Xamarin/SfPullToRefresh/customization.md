@@ -514,7 +514,7 @@ using Syncfusion.ListView.XForms;
 
 This is how the final output will look like on iOS, Android and Windows Phone devices when hosting a SfListView control as pullable content.
 
-![](hostingsfdatagrid_images/SfListView-Push_XForms.png)
+![](hostingsfdatagrid_images/SfListView_SlideOnTop-Xamarin.forms.gif)
 
 {% highlight Xaml%}
 
@@ -640,3 +640,7 @@ namespace PullToRefreshSample
 
 
 {% endhighlight %}
+
+If we run the above sample with TransitionMode as Push, the output will look like on iOS, Android and Windows Phone devices as shown below.
+
+![](hostingsfdatagrid_images/SfListView_Push_Xamarin.Forms.gif)

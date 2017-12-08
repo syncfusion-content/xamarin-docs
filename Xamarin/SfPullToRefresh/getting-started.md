@@ -36,15 +36,15 @@ The following list of assemblies need to be added as reference from the lib fold
 </tr>
 <tr>
 <td>Android Renderer</td>
-<td>pcl\Syncfusion.Core.XForms.dll<br/>pcl\Syncfusion.SfPullToRefresh.XForms.dll<br/>android\Syncfusion.SfPullToRefresh.XForms.Android.dll<br/></td>
+<td>android\Syncfusion.Core.XForms.dll<br/>android\Syncfusion.SfPullToRefresh.XForms.dll<br/>android\Syncfusion.SfPullToRefresh.XForms.Android.dll<br/></td>
 </tr>
 <tr>
 <td>iOS Renderer</td>
-<td>pcl\Syncfusion.Core.XForms.dll<br/>pcl\Syncfusion.SfPullToRefresh.XForms.dll<br/>ios-unified\Syncfusion.SfPullToRefresh.XForms.iOS.dll<br/></td>
+<td>ios-unified\Syncfusion.Core.XForms.dll<br/>ios-unified\Syncfusion.SfPullToRefresh.XForms.dll<br/>ios-unified\Syncfusion.SfPullToRefresh.XForms.iOS.dll<br/></td>
 </tr>
 <tr>
 <td>UWP Renderer</td>
-<td>pcl\Syncfusion.Core.XForms.dll<br/>pcl\Syncfusion.SfPullToRefresh.XForms.dll<br/>uwp\Syncfusion.SfPullToRefresh.XForms.UWP.dll<br/></td>
+<td>uwp\Syncfusion.Core.XForms.dll<br/>uwp\Syncfusion.SfPullToRefresh.XForms.dll<br/>uwp\Syncfusion.SfPullToRefresh.XForms.UWP.dll<br/></td>
 </tr>
 </table>
 
@@ -122,7 +122,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 This section explains how to create a SfPullToRefresh and configure it. 
  
-You can download the entire source code of this demo for Xamarin.Forms from [here](http://files2.syncfusion.com/Xamarin.Forms/Samples/SfPullToRefresh_GettingStarted.zip).
+You can download the entire source code of this demo for Xamarin.Forms from [here](http://files2.syncfusion.com/Xamarin.Forms/Samples/PullToRefresh_GettingStartedForms.zip).
 
 ## Creating the project
 

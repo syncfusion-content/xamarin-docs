@@ -243,6 +243,70 @@ column.IsVisibleOnLegend = true;
 
 {% endtabs %}
 
+## Legend Wrap
+
+The legend items can be placed in multiple rows by using [`OverflowMode`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~OverflowMode.html) property if size of the total legend exceeds the available size. The default value of [`OverflowMode`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~OverflowMode.html) property is Scroll.    
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfChart.Legend>
+
+    <chart:ChartLegend OverflowMode="Wrap"/>
+
+</chart:SfChart.Legend>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.Legend = new ChartLegend()
+{
+    OverflowMode = ChartLegendOverflowMode.Wrap
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](legend_images/legendwrap_img1.png)
+
+### Legend Width
+
+The legend width can be specified by using [`MaxWidth`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~MaxWidth.html) property. This property works only  when the [`OverflowMode`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~MaxWidth.html) is Wrap. The default value of [`MaxWidth`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~MaxWidth.html) property is double.NAN.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfChart>
+
+    <chart:SfChart.Legend>
+
+        <chart:ChartLegend OverflowMode = “Wrap”  MaxWidth = “750” />
+
+    </chart:SfChart.Legend>
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.Legend = new ChartLegend()
+{
+    OverflowMode = ChartLegendOverflowMode.Wrap,
+
+    MaxWidth = 750
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](legend_images/legendwrap_img2.png)
+
 ## Positioning the Legend
 
 You can position the legend anywhere inside the chart. Following properties are used to customize the legend positions.

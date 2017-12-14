@@ -1244,7 +1244,13 @@ chart.SecondaryAxis =  new NumericalAxis() { CrossesAt  = new DateTime(2003, 1, 
 
     <chart:CategoryAxis CrossesAt="0" RenderNextToCrossingValue="False"/>
 
-</ chart:SfChart.PrimaryAxis >
+</chart:SfChart.PrimaryAxis>
+
+<chart:SfChart.SecondaryAxis>
+
+    <chart:NumericalAxis CrossesAt="5" />
+
+</chart:SfChart.SecondaryAxis>
  
 {% endhighlight %}
 
@@ -1255,6 +1261,11 @@ chart.PrimaryAxis = new CategoryAxis()
     CrossesAt = 0,
 
     RenderNextToCrossingValue = false
+};
+
+chart.SecondaryAxis = new NumericalAxis()
+{
+    CrossesAt = 5,
 };
 
 {% endhighlight %}

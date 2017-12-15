@@ -1150,38 +1150,6 @@ chart.SecondaryAxis =  new NumericalAxis() { CrossesAt  = 8 };
 
 ![](axis_images/axiscrossing_img1.png)
 
-### Crossing value below or above the visible range
-
-Axis will be placed in the opposite side if the value of [`CrossesAt`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~CrossesAt.html) property is greater than the maximum value of crossing axis. Axis will be placed in the default position if the value of [`CrossesAt`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~CrossesAt.html) property is less than the minimum value of crossing axis.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfChart.PrimaryAxis>
-
-    <chart:CategoryAxis CrossesAt = “150” />
-
-</chart:SfChart.PrimaryAxis >
- 
-<chart:SfChart.SecondaryAxis>
-
-    <chart:NumericalAxis CrossesAt = “-1” />
-
-</chart:SfChart.SecondaryAxis >
- 
-{% endhighlight %}
-
-{% highlight c# %}
-
-chart.PrimaryAxis = new CategoryAxis() { CrossesAt = 150 };
-
-chart.SecondaryAxis = new NumericalAxis() { CrossesAt = -1 };
-
-{% endhighlight %}
-
-{% endtabs %}
-
 ### Crossing in date time axis
 
 For crossing in date time horizontal axis, date object should be provided as value for [`CrossesAt`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~CrossesAt.html) property of vertical axis.

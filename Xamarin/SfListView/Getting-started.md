@@ -51,6 +51,10 @@ The following list of assemblies need to be added as reference from the lib fold
 
 N> You can also configure the Syncfusion NuGet packages in Visual Studio, please refer [here]( https://help.syncfusion.com/xamarin/introduction/download-and-installation#configuring-syncfusion-nuget-packages-in-visual-studio) for more information.
 
+## System requirements
+
+In SfListView, minimum support version for Android is `API Level 19` and Xamarin forms current version is `2.4.0.280`.
+
 ## Launching the SfListView on each platform
 
 To use SfListView inside an application, each platform application must initialize the SfListView renderer. This initialization step varies from platform to platform and is discussed in the following sections.

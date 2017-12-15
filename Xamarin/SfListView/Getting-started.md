@@ -53,7 +53,60 @@ N> You can also configure the Syncfusion NuGet packages in Visual Studio, please
 
 ## System requirements
 
-In SfListView, minimum supported SDK version for Android is `API Level 19` and above. Xamarin.Forms current version is `2.4.0.280` and later versions.
+Current Xamarin.Forms version is `2.4.0.280` and later.
+
+The following table lists the platforms supported versions.
+
+<table>
+    <tr>
+        <td>
+            Platform
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Supported versions
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Android
+            <br/>
+            <br/>
+        </td>       
+         <td>
+            API level 19 and later versions
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            iOS
+            <br/>
+            <br/>
+        </td>
+        <td>
+            iOS 9.0 and later versions
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            UWP
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Windows 10 devices
+            <br/>
+            <br/>
+        </td>
+    </tr>    
+</table>
 
 ## Launching the SfListView on each platform
 

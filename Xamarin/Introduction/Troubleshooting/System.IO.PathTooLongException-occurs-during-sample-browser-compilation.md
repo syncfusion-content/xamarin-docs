@@ -27,7 +27,7 @@ Sometimes this kind of error may occur while compiling the sample browser projec
 
 You can resolve this issue by using anyone of the following steps.
 
-1. If you are facing this issue while building the application, change the OutputPath and IntermdeiateOutputPath to a shorter path in the respective project’s .csproj under the required configuration.
+1. If you are facing this issue while building the application, change the OutputPath and IntermediateOutputPath to a shorter path in the respective project’s .csproj under the required configuration.
 
    ![](images/img1.png)
 

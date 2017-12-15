@@ -53,7 +53,7 @@ N> You can also configure the Syncfusion NuGet packages in Visual Studio, please
 
 ## System requirements
 
-Current Xamarin.Forms version is `2.4.0.280` and later.
+In SfListView, current supported Xamarin.Forms version is `2.4.0.280` and later.
 
 The following table lists the platforms supported versions.
 

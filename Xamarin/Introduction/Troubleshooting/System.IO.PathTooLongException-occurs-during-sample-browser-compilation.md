@@ -9,7 +9,7 @@ documentation: ug
 
 # System.IO.PathTooLongException occurs during sample browser compilation
 
-Sometimes this kind of error may occur while compiling the sample browser project due to the paths of intermediate output files and the NuGet packages are too long.
+Sometimes this kind of error may occur while compiling the sample browser project due to the paths of intermediate output files and the nuget packages are too long.
 
 <table>
     <tr>

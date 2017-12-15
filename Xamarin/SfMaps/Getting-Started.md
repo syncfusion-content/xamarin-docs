@@ -12,52 +12,9 @@ documentation: ug
 This section explains you the steps to configure a Maps control in a real-time scenario and also provides a walk-through on some of the customization features available in Maps control.
 
 
-## Referencing Essential Studio components in your solution
+## Adding SfMaps Reference
 
-If you had acquired Essential Studio components through the Xamarin component store interface from within your IDE, then after adding the components to your Xamarin.iOS, Xamarin.Android and UWP projects through the Component manager, you will still need to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL project in your solution. You can do this by manually adding the relevant PCL assembly references to your PCL project contained in the following path inside of your solution folder.  
-
-Components/syncfusionessentialstudio-version/lib/pcl/
-
-Alternatively if you had downloaded Essential Studio from Syncfusion.com or through the Xamarin store web interface then all assembly references need to be added manually.
-
-After installing Essential Studio for Xamarin, all the required assemblies can be found in the installation folders, typically
-
-{Syncfusion Installed location}\Essential Studio\syncfusionessentialstudio-version\lib
-
-Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\lib
-
-Or after downloading through the Xamarin store web interface, all the required assemblies can be found in the below folder
-
-{Download location}\syncfusionessentialstudio-version\lib
-
-You can then add the assembly references to the respective projects as shown below
-
-<table>
-<tr>
-<th>Project</th>
-<th>Required assemblies</th>
-</tr>
-<tr>
-<td>PCL</td>
-<td>pcl\Syncfusion.SfMaps.XForms.dll</td>
-</tr>
-<tr>
-<td>Android</td>
-<td>android\Syncfusion.SfMaps.Android.dll<br/>android\Syncfusion.SfMaps.XForms.Android.dll</td>
-</tr>
-<tr>
-<td>iOS (Classic)</td>
-<td>iOS\Syncfusion.SfMaps.iOS.dll<br/>iOS\Syncfusion.SfMaps.XForms.iOS.dll<br/>iOS\Syncfusion.SfMaps.XForms.dll</td>
-</tr>
-<tr>
-<td>iOS (Unified)</td>
-<td>iOS-unified\Syncfusion.SfMaps.iOS.dll<br/>iOS-unified\Syncfusion.SfMaps.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfMaps.XForms.dll</td>
-</tr>
-<tr>
-<td>UWP</td>
-<td>uwp\Syncfusion.SfMaps.XForms.dll<br/>uwp\Syncfusion.SfMaps.XForms.UWP.dll<br>uwp\Syncfusion.SfMaps.UWP.dll</td>
-</tr>
-</table>
+Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain and reference Essential Studio components in your solution; then refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfmaps) link to know about the assemblies required for adding Maps to your project.
 
 Currently an additional step is required for UWP and iOS projects. We need to create an instance of the maps custom renderer as shown below. 
 

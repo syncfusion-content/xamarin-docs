@@ -82,13 +82,24 @@ You can find the Syncfusion libraries, samples and NuGet when extracting the dow
 
 {Essential Studio installed location}\Syncfusion\Essential Studio\15.3.0.29\Xamarin
 
-For example,
+* **"lib"** folder - e.g., C:\Program Files (x86)\Syncfusion\Essential Studio\15.4.0.17\Xamarin\lib
 
-* **lib** - C:\Program Files (x86)\Syncfusion\Essential Studio\15.3.0.29\Xamarin\lib
-* **sample** - C:\Users\lab user\AppData\Local\Syncfusion\EssentialStudio\15.3.0.29\Xamarin\sample
-* **nuget** - C:\Users\lab user\AppData\Local\Syncfusion\EssentialStudio\15.3.0.29\Xamarin\nuget
+   It contains all the required libraries for Xamarin.iOS, Xamarin.Android, and Xamarin.Forms projects.
+   
+* **"nuget"** folder - e.g., C:\Users\Public\Documents\Syncfusion\15.4.0.17\Xamarin\nuget
 
-For configuring this NuGet, please refer [this](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows#configuring-and-installing-syncfusion-nuget-packages-in-visual-studio) section.
+   It contains the above libraries as NuGet packages. The same NuGet packages also can be configured from online [nuget.org](https://api.nuget.org/v3/index.json).
+   
+* **"sample"** folder - e.g., C:\Users\Public\Documents\Syncfusion\15.4.0.17\Xamarin\sample
+
+   It contains the sample applications for our controls in Xamarin.iOS, Xamarin.Android, and Xamarin.Forms platforms in iOS, Android, and Forms folders, respectively.
+
+The "Forms" directory includes,
+
+* Individual control sample folders: It contains the samples for individual controls such as SfChart, SfDataGrid, etc. Since they represent the individual controls, these samples are light-weighted. You can check the samples for your required controls alone faster with minimum deployment time.
+* “nuget” folder: It contains the compiled assemblies of the above samples as NuGet package. It is referred in the common sample browser as explained in the next step.
+* “SampleBrowser” folder: It contains common sample browser, which refers the individual control's samples as NuGet package. Run this to see the demo samples of all the controls in single application.
+* It also contains showcase samples such as Patient Monitor, Server Monitor, and Invoice.
 
 ### Add reference to the project
 

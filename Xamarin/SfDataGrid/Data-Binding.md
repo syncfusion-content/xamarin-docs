@@ -184,3 +184,20 @@ When BeginInit method is called it suspends all the updates until EndInit method
 </td>
 </tr>
 </table>
+
+### Data Virtualization
+SfDataGrid allows you to load large amount of data in less time by setting SfDataGrid.EnableDataVirtualization property to true.
+
+To set the EnableDataVirtualization property, follow the code example:
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AutoGenerateColumns="True"
+                       ItemsSource="{Binding EmployeeDetails}"
+                       EnableDataVirtualization="True">
+{% endhighlight %} 
+{% highlight c# %}
+datagrid.EnableDataVirtualization = true;
+{% endhighlight %}
+{% endtabs %}

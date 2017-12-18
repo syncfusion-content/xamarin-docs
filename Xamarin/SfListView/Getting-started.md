@@ -51,6 +51,63 @@ The following list of assemblies need to be added as reference from the lib fold
 
 N> You can also configure the Syncfusion NuGet packages in Visual Studio, please refer [here]( https://help.syncfusion.com/xamarin/introduction/download-and-installation#configuring-syncfusion-nuget-packages-in-visual-studio) for more information.
 
+## System requirements
+
+In SfListView, current supported Xamarin.Forms version is `2.4.0.280` and later.
+
+The following table lists the platforms supported versions.
+
+<table>
+    <tr>
+        <td>
+            Platform
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Supported versions
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Android
+            <br/>
+            <br/>
+        </td>       
+         <td>
+            API level 19 and later versions
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            iOS
+            <br/>
+            <br/>
+        </td>
+        <td>
+            iOS 9.0 and later versions
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            UWP
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Windows 10 devices
+            <br/>
+            <br/>
+        </td>
+    </tr>    
+</table>
+
 ## Launching the SfListView on each platform
 
 To use SfListView inside an application, each platform application must initialize the SfListView renderer. This initialization step varies from platform to platform and is discussed in the following sections.

@@ -12,17 +12,15 @@ documentation: ug
 Sometimes this kind of error may occur while compiling the sample browser project due to the paths of intermediate output files and the nuget packages are too long.
 
 <table>
-    <tr>
-        <td>
-            <br/>
-            **Error 1: The "CreateLibraryResourceArchive" task failed unexpectedly.**
-            <br/>
-            <br/>
-            **System.IO.PathTooLongException: The specified path, file name, or both are too long. The fully qualified file name must be less than 260 characters, and the directory name must be less than 248 characters.**
-            <br/>
-            <br/>
-        </td>
-    </tr>
+<tr>
+<td>
+
+**Error 1: The "CreateLibraryResourceArchive" task failed unexpectedly.**
+<br/>
+
+**System.IO.PathTooLongException: The specified path, file name, or both are too long. The fully qualified file name must be less than 260 characters, and the directory name must be less than 248 characters.**
+</td>
+</tr>
 </table>
 
 You can resolve this issue by using anyone of the following steps.

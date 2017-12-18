@@ -87,8 +87,11 @@ You can find the Syncfusion libraries, samples and NuGet when extracting the dow
 The "Forms" directory includes,
 
 * Individual control sample folders: It contains the samples for individual controls such as SfChart, SfDataGrid, etc. Since they represent the individual controls, these samples are light-weighted. You can check the samples for your required controls alone faster with minimum deployment time.
+ 
 * “nuget” folder: It contains the compiled assemblies of the above samples as NuGet package. It is referred in the common sample browser as explained in the next step.
+
 * “SampleBrowser” folder: It contains common sample browser, which refers the individual control's samples as NuGet package. Run this to see the demo samples of all the controls in single application.
+
 * It also contains showcase samples such as Patient Monitor, Server Monitor, and Invoice.
 
 ### Add reference to the project

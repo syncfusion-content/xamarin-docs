@@ -9,10 +9,9 @@ documentation: ug
 
 # SfDataGrid
 
-The SfDataGrid control is available in Xamarin.Forms, Xamarin.Android and Xamarin.iOS. It helps you to create entirely customizable features used to display and manipulate a large amount of data in a tabular view. The following table lists the key features of the SfDataGrid in Xamarin.Forms, Xamarin.Android and Xamarin.iOS.
+The SfDataGrid control is available in Xamarin.Forms, Xamarin.Android, and Xamarin.iOS. It helps to create entirely customizable features. It is used to display and manipulate a large amount of data in a tabular view. The following table lists the key features of this control in Xamarin.Forms, Xamarin.Android, and Xamarin.iOS:
 
-I> Xamarin.Forms is unique by offering a single language(C#) and runtime that works across all three mobile platforms of iOS, Android, and UWP. So SfDataGrid for Xamarin.Forms works in all three platforms.
-
+I> Xamarin.Forms is unique by offering a single language(C#) and runtime. It works across all the three mobile platforms of iOS, Android, and UWP. So the SfDataGrid for Xamarin.Forms works in all the three platforms.
 
 <table>
 <tr>

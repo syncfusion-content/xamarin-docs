@@ -1223,9 +1223,7 @@ dataGrid.RowHeaderWidth = 50;
 {% endhighlight %}
 {% endtabs %}
 
-##How to
-
-###bind a view model property inside header template?
+## Bind a view model property inside header template?
 
 SfDataGrid allows to bind the view model property to the [HeaderTemplate](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderTemplateProperty.html) by setting the BindingContext of the the [GridColumn](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn.html) as `ViewModel`.
 

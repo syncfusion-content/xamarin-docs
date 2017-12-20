@@ -192,9 +192,7 @@ The `SfDataGrid.ColumnResizing` event provides the following properties through 
 * ResizingState - Returns the current state of the user-interaction through a value from the ProgressStates enum.
 * [Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) - A Boolean property to cancel the event and the resizing operation. 
 
-### How To
-
-#### Cancel resizing for a column
+### Cancel resizing for a column
 
 You can cancel resizing for a particular column using the `SfDataGrid.ColumnResizing` event. You can cancel the resizing operation of a column based on the different arguments provided in the `GridResizingEventArgs`. 
 

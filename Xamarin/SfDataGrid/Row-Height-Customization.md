@@ -172,8 +172,8 @@ private void DataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
     if (e.RowIndex == dataGrid.GetHeaderIndex())
     {
         e.Height = dataGrid.GetRowHeight(e.RowIndex);
+        e.Handled = true;
     }
-    e.Handled = true;
 }
 {% endhighlight %}
 
@@ -194,8 +194,8 @@ private void DataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
     if (dataGrid.IsCaptionSummaryRow(e.RowIndex))
     {
         e.Height = 70;
+        e.Handled = true;
     }
-    e.Handled = true;
 }
 {% endhighlight %}
 
@@ -216,8 +216,8 @@ private void DataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
     if (dataGrid.IsTableSummaryRow(e.RowIndex))
     {
         e.Height = 70;
+        e.Handled = true;
     }
-    e.Handled = true;
 }
 {% endhighlight %}
 

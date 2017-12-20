@@ -9,9 +9,9 @@ documentation: UG
 
 # Styles
 
-SfDatagrid allows you to apply style to all of its elements by writing a Style class overriding from [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle.html) and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridStyle.html) property.
+The SfDatagrid allows applying style to all of its elements by writing a Style class overriding from [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle.html), and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridStyle.html) property.
   
-The following example explains you how to apply custom style to SfDatagrid.
+To apply custom style, follow the code example:
 
 {% tabs %}
 {% highlight xaml %}
@@ -109,18 +109,17 @@ public class Dark : DataGridStyle
 } 
 {% endhighlight %}
 
-The following picture shows the grid loaded in a different style.
+The following picture shows the grid loaded in a different style:
 
 ![](SfDataGrid_images/Style.png)
 
-
-N> Xamarin.Forms.Style which has specified target type will not be applied to the internal components which are used in SfDataGrid.
+N> Xamarin.Forms.Style which has specified target type, that will not be applied to the internal components used in the SfDataGrid.
 
 ## Applying alternate row style
 
-SfDataGrid allows you to apply the alternative row style by writing a Style class deriving from `DataGridStyle` and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridStyle.html) property.
+The SfDataGrid allows applying the alternative row style by writing a Style class deriving from `DataGridStyle`, and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridStyle.html) property.
 
-The below code illustrates how to apply alternate row style.
+To apply alternate row style, follow the code example:
 
 {% highlight c# %}
 //Apply alternative row style
@@ -144,9 +143,9 @@ public class CustomGridStyle : DataGridStyle
 
 ## Customizing the alternation count
 
-SfDataGrid allows you to customize the alternate row count for applying the alternate row style using the [SfDataGrid.AlternationCount](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AlternationCountProperty.html) property.
+The SfDataGrid allows customizing the alternate row count for applying the alternate row style using the [SfDataGrid.AlternationCount](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AlternationCountProperty.html) property.
 
-The below code illustrates how to set the alternate row count.
+To set the alternate row count, follow the code example:
 
 {% highlight c# %}
 
@@ -156,9 +155,10 @@ dataGrid.AlternationCount = 3;
 {% endhighlight %}
 
 ![](SfDataGrid_images/AlernationCount.png)
+
 ## Border Customization
 
-* SfDatagrid allows you to customize the grid borders to vertical, horizontal, both or none based on requirements. Override the [DataGridStyle.GetGridLinesVisibility](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetGridLinesVisibility.html) method to customize the borders in SfDataGrid.
+The SfDatagrid allows customizing the grid borders to vertical, horizontal, both, or none based on requirements. Override the [DataGridStyle.GetGridLinesVisibility](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetGridLinesVisibility.html) method to customize borders in the SfDataGrid.
 
 {% highlight c# %}
 //Apply custom style to SfDataGrid from code
@@ -179,16 +179,17 @@ public class CustomStyle : DataGridStyle
 }
 {% endhighlight %}
 
-Following are the lists of options available to customize the grid borders.
+Following are the lists of options available to customize the grid borders:
 
-* Both
-* Horizontal
-* Vertical
-* None
+ * Both
+ * Horizontal
+ * Vertical
+ * None
 
 ### Both
 
-*  [GridLinesVisibility.Both](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridLinesVisibility.html) allows you to display the DataGrid with both Horizontal and Vertical borders.
+The [GridLinesVisibility.Both](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridLinesVisibility.html) allows displaying the DataGrid with both horizontal and vertical borders.
+
 {% highlight c# %}
 public override GridLinesVisibility GetGridLinesVisibility()
 {
@@ -196,13 +197,13 @@ public override GridLinesVisibility GetGridLinesVisibility()
 } 
 {% endhighlight %}
 
-The following screenshot shows the final outcome upon execution of the above code.
+The following screenshot shows the final outcome upon execution of the above code:
 
 ![](SfDataGrid_images/BorderCustomization_Both.png)
 
 ### Horizontal
 
-* [GridLinesVisibility.Horizontal](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridLinesVisibility.html) allows you to display the DataGrid with Horizontal border only
+The [GridLinesVisibility.Horizontal](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridLinesVisibility.html) allows displaying the DataGrid with horizontal border only.
 {% highlight c# %}
 public override GridLinesVisibility GetGridLinesVisibility()
 {
@@ -210,13 +211,14 @@ public override GridLinesVisibility GetGridLinesVisibility()
 } 
 {% endhighlight %}
 
-The following screenshot shows the final outcome upon execution of the above code.
+The following screenshot shows the final outcome upon execution of the above code:
 
 ![](SfDataGrid_images/BorderCustomization_Horizontal.png)
 
 ### Vertical
 
-* [GridLinesVisibility.Vertical](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridLinesVisibility.html) allows you to display the DataGrid with Vertical border only
+The [GridLinesVisibility.Vertical](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridLinesVisibility.html) allows displaying the DataGrid with vertical border only.
+
 {% highlight c# %}
 public override GridLinesVisibility GetGridLinesVisibility()
 {
@@ -224,13 +226,14 @@ public override GridLinesVisibility GetGridLinesVisibility()
 } 
 {% endhighlight %}
 
-The following screenshot shows the final outcome upon execution of the above code.
+The following screenshot shows the final outcome upon execution of the above code:
 
 ![](SfDataGrid_images/BorderCustomization_Vertical.png)
 
 ### None
 
-* [GridLinesVisibility.None](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridLinesVisibility.html) allows you to display the DataGrid without borders
+The [GridLinesVisibility.None](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridLinesVisibility.html) allows displaying the DataGrid without borders.
+
 {% highlight c# %}
 public override GridLinesVisibility GetGridLinesVisibility()
 {
@@ -238,14 +241,15 @@ public override GridLinesVisibility GetGridLinesVisibility()
 } 
 {% endhighlight %}
 
-The following screenshot shows the final outcome upon execution of the above code.
+The following screenshot shows the final outcome upon execution of the above code:
 
 ![](SfDataGrid_images/BorderCustomization_None.png)
 
 ## Header border color customization
-SfDataGrid allows you to customize the header border color for different `DataGridStyle.GridLinesVisibility` by writing a custom style class deriving from `DataGridStyle` and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridStyle.html) property. Override the `GetHeaderBorderColor` method in the custom style to customize the color of column header and row header.
 
-The below code illustrates how to customize the header border color by writing a custom style in a SfDataGrid. 
+The SfDataGrid allows customizing the header border color for different `DataGridStyle.GridLinesVisibility` by writing a custom style class deriving from `DataGridStyle`, and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridStyle.html) property. Override the `GetHeaderBorderColor` method in the custom style to customize color of the column header and row header.
+
+To customize the header border color by writing a custom style, follow the code example:
 
 {% tabs %}
 {% highlight xaml %}
@@ -289,12 +293,12 @@ public class CustomStyle : DataGridStyle
 }
 {% endhighlight %}
 
-The following screenshot shows the final outcome upon execution of the above code.
+The following screenshot shows the final outcome upon execution of the above code:
 ![](SfDataGrid_images/HeaderBorderCustomization_Both.png)
 
 ## Customizing the sort icons in header
 
-You can load any desired image as the sort indicator in the SfDataGrid using the [GetHeaderSortIndicatorDown](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetHeaderSortIndicatorDown.html) and [GetHeaderSortIndicatorUp](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetHeaderSortIndicatorUp.html) overrides of the [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle.html) class. The following code example illustrates how to change the sort indicators in SfDataGrid.
+Any desired image can be loaded as the sort indicator using the [GetHeaderSortIndicatorDown](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetHeaderSortIndicatorDown.html) and [GetHeaderSortIndicatorUp](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetHeaderSortIndicatorUp.html) overriding from the [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle.html) class. To change the sort indicators, follow the code example:
 
 {% highlight c# %}
 
@@ -317,14 +321,14 @@ public class Custom : DataGridStyle
 }
 {% endhighlight %}
 
-The following screenshots shows the final outcome of the above code
+The following screenshots shows the final outcome of the above code:
 ![](SfDataGrid_images/SortIconCustomization.png)
 
-N> The image's BuildAction must be set to EmbeddedResource in order to access the image as resource as shown in above code.
+N> The BuildAction image must be set to EmbeddedResource in order to access the image as resource as shown in above code.
 
 ## Customizing resizing indicator
 
-You can change the color of the resizing indicator using the [GetResizingIndicatorColor](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetResizingIndicatorColor.html) override of the [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle.html) class. The following code example illustrates how to change the color of the resizing indicator in SfDataGrid. 
+The color of the resizing indicator can be changed using the [GetResizingIndicatorColor](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetResizingIndicatorColor.html) overriding from the [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle.html) class. To change the color of the resizing indicator, follow the code example:
 
 {% highlight c# %}
 

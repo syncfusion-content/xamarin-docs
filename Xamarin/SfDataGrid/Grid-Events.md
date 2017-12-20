@@ -158,7 +158,6 @@ SfDataGrid allows to display any custom view like a context menu that can act si
 
 To create a custom context menu using grid events, follow the code example:
 
-//MainPage.xaml
 {% highlight xaml %}
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -185,7 +184,6 @@ To create a custom context menu using grid events, follow the code example:
 </ContentPage>
 {% endhighlight %}
 
-//MainPage.cs
 {% highlight c# %}
 public partial class MainPage : ContentPage
 {

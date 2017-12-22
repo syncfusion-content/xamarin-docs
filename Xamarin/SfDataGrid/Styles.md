@@ -232,8 +232,7 @@ The following screenshot shows the final outcome upon execution of the above cod
 
 ### None
 
-The [GridLinesVisibility.None](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridLinesVisibility.html) allows displaying the DataGrid without borders.
-
+[GridLinesVisibility.None](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridLinesVisibility.html) allows you to display the DataGrid without borders
 {% highlight c# %}
 public override GridLinesVisibility GetGridLinesVisibility()
 {

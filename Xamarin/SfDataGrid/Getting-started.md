@@ -429,7 +429,7 @@ The selection operations can be handled with the help of the [SelectionChanging]
 
 The StackLayout positions the child element one after the other. They are adding either horizontally or vertically. Space of the [StackLayout](https://developer.xamarin.com/api/type/Xamarin.Forms.StackLayout/) depends on the HorizontalOptions and VerticalOptions properties are set. But by default, the `StackLayout` will try to use the entire screen.
 
-The SfDataGrid control can be loaded inside any layout such as [Grid](https://developer.xamarin.com/api/type/Xamarin.Forms.Grid/), `StackLayout`, etc., When loadding SfDataGrid inside a `StackLayout`, set the Horizontal and/or VerticalOptions of the SfDataGrid and its parent to “LayoutOptions.FillAndExpand” based on the orientation of the container in which the SfDataGrid is loaded.
+The SfDataGrid control can be loaded inside any layout such as [Grid](https://developer.xamarin.com/api/type/Xamarin.Forms.Grid/), `StackLayout`, etc., When loading SfDataGrid inside a `StackLayout`, set the Horizontal and/or VerticalOptions of the SfDataGrid and its parent to “LayoutOptions.FillAndExpand” based on the orientation of the container in which the SfDataGrid is loaded.
 
 Refer to the following code example to load the SfDataGrid control inside a `StackLayout`. The VerticalOptions of the `StackLayout` and the SfDataGrid alone is set as “FillAndExpand” as the default orientation of the `StackLayout` is vertical.
 

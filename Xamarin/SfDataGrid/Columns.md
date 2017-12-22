@@ -191,16 +191,7 @@ Based on the requiremnt resizing operation can be handled using the [SfDataGrid.
 
 By handling the `SfDataGrid.ColumnResizing` event, the resizing of a particular column can be canceled.
 
-The `SfDataGrid.ColumnResizing` event provides the following properties through [GridResizingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridResizingEventArgs.html):
-
- * [Index](https://msdn.microsoft.com/en-us/library/office/ff768335.aspx): Returns index of the column currently resized.
- * NewValue: Returns current width of the resized column.
- * ResizingState: Returns the current state of the user-interaction through a value from the ProgressStates enum.
- * [Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true): A Boolean property to cancel the event and resizing operations. 
-
-### How To
-
-#### Cancel resizing a column
+### Cancel resizing for a column
 
 To cancel resizing a particular column, use the `SfDataGrid.ColumnResizing` event. Based on the different arguments provided in the `GridResizingEventArgs`, the resizing operation of a column can be canceled.
 

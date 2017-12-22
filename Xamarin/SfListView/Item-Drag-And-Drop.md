@@ -306,7 +306,9 @@ private async void ListView_ItemDragging(object sender, ItemDraggingEventArgs e)
 }
 {% endhighlight %}
 
-Download the sample for above source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ITEMDR~1499947492.ZIP).
+The screenshot shows the output of delete the dragged item when drop into particular view. You can download the sample for above source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ITEMDR~1499947492.ZIP).
+
+![](SfListView_images/SfListView-ItemReordering1.gif)
 
 ## Skip dragging item into another group
 
@@ -340,6 +342,21 @@ private async void ListView_ItemDragging(object sender, ItemDraggingEventArgs e)
     if (e.Bounds.Y <= groupItem.Y + groupItem.Height || nextGroupItem != null && (e.Bounds.Y + e.Bounds.Height >= nextGroupItem.Y))
       e.Handled = true;
   }
+}
+
+private GroupResult GetGroup(object itemData)
+{
+  GroupResult itemGroup = null;
+
+  foreach (var item in this.listView.DataSource.DisplayItems)
+  {
+    if (item is GroupResult)
+      itemGroup = item as GroupResult;
+
+    if (item == itemData)
+      break;
+  }
+  return itemGroup;
 }
 {% endhighlight %}
 

@@ -79,9 +79,9 @@ When you bind collection to the [ItemsSource](http://help.syncfusion.com/cr/cref
 
 N> The DataGrid creates different types of view derived from `ICollectionViewAdv` interface based on the `ItemsSource`.
 
-The following property is associated with `View`:
+I> `View` related properties can be used only after creating `SfDataGrid` view. Hence changes related to view can be done in `SfDataGrid.GridViewCreated` or `SfDataGrid.GridLoaded` event or in runtime only. 
 
-I> `View` related properties can be used only after creating the `SfDataGrid` view. Hence changes related to view can be done in `SfDataGrid.GridViewCreated` or `SfDataGrid.GridLoaded` event or at runtime only. 
+The following property is associated with `View`
 
 ### LiveDataUpdateMode
 
@@ -176,3 +176,20 @@ When BeginInit method is called it suspends all the updates until EndInit method
 </td>
 </tr>
 </table>
+
+### Data Virtualization
+SfDataGrid allows you to load large amount of data in less time by setting SfDataGrid.EnableDataVirtualization property to true.
+
+To set the EnableDataVirtualization property, follow the code example:
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AutoGenerateColumns="True"
+                       ItemsSource="{Binding EmployeeDetails}"
+                       EnableDataVirtualization="True">
+{% endhighlight %} 
+{% highlight c# %}
+datagrid.EnableDataVirtualization = true;
+{% endhighlight %}
+{% endtabs %}

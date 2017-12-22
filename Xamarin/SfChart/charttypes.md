@@ -1429,8 +1429,8 @@ radar.DrawType = PolarRadarSeriesDrawType.Line;
 You can use the following properties to customize the appearance.
 
 * [`Color`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~Color.html) – used to change the color of the series.
-* [`BorderWidth`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~StrokeWidth.html) – used to change the stroke width of the series.
-* [`BorderColor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.PolarRadarSeriesBase~StrokeColor.html) – used to change the stroke color of the series when draw types is set to `Area`
+* [`StrokeWidth`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~StrokeWidth.html) – used to change the stroke width of the series.
+* [`StrokeColor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.PolarRadarSeriesBase~StrokeColor.html) – used to change the stroke color of the series when draw types is set to `Area`
 
 {% tabs %}
 {% highlight xaml %}
@@ -1474,6 +1474,98 @@ radar.IsClosed = false;
 
 ![](ChartTypes_images/RadarClosed.png)
 
+### Radar start angle for primary axis
+
+The start position of the radar series can be set by using [`PolarAngle`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~PolarAngle.html) property of axis. Default value of [`PolarAngle`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~PolarAngle.html) property is `Rotate270`. PolarAngle property can be set for primary axis, secondary axis, or both axes
+ 
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+
+    <chart:CategoryAxis PolarAngle = “Rotate0”/>
+
+</chart:SfChart.PrimaryAxis >
+ 
+<chart:SfChart.SecondaryAxis>
+
+    <chart:NumericalAxis/>
+
+</chart:SfChart.SecondaryAxis >
+ 
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis  = new CategoryAxis(){ PolarAngle = ChartPolarAngle.Rotate0 };
+
+chart.SecondaryAxis =  new NumericalAxis(); 
+
+{% endhighlight %}
+
+{% endtabs %}
+ ![](charttypes_images/radarangle_img1.png)
+ ### Radar start angle for secondary axis
+ {% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+
+    <chart:CategoryAxis/>
+
+</chart:SfChart.PrimaryAxis>
+
+<chart:SfChart.SecondaryAxis>
+
+    <chart:NumericalAxis  PolarAngle="Rotate0"/>
+
+</chart:SfChart.SecondaryAxis>
+ 
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis  = new CategoryAxis();
+
+chart.SecondaryAxis =  new NumericalAxis() { PolarAngle = ChartPolarAngle.Rotate0 }; 
+
+{% endhighlight %}
+
+{% endtabs %}
+ ![](charttypes_images/radarangle_img2.png)
+ ### Radar start angle for both axis
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+
+    <chart:CategoryAxis PolarAngle = “Rotate0” />
+
+</chart:SfChart.PrimaryAxis>
+ 
+<chart:SfChart.SecondaryAxis>
+
+    <chart:NumericalAxis  PolarAngle = “Rotate0” />
+
+</chart:SfChart.SecondaryAxis >
+ 
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis  = new CategoryAxis(){ PolarAngle = ChartPolarAngle.Rotate0 };
+
+chart.SecondaryAxis =  new NumericalAxis() { PolarAngle = ChartPolarAngle.Rotate0 }; 
+
+{% endhighlight %}
+
+{% endtabs %}
+ ![](charttypes_images/radarangle_img3.png)
+
 ## Polar Chart
 
 To render a polar chart, create an instance of [`PolarSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.PolarSeries.html) and add to the [`Series`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~Series.html) collection property of [`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html). 
@@ -1509,8 +1601,8 @@ polar.DrawType = PolarRadarSeriesDrawType.Line;
 You can use the following properties to customize the appearance.
 
 * [`Color`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~Color.html) – used to change the color of the series.
-* [`BorderWidth`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~StrokeWidth.html) – used to change the stroke width of the series.
-* [`BorderColor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.PolarRadarSeriesBase~StrokeColor.html) – used to change the stroke color of the series when draw types is set to `Area`
+* [`StrokeWidth`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~StrokeWidth.html) – used to change the stroke width of the series.
+* [`StrokeColor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.PolarRadarSeriesBase~StrokeColor.html) – used to change the stroke color of the series when draw types is set to `Area`
 
 {% tabs %}
 {% highlight xaml %}
@@ -1553,6 +1645,97 @@ polar.IsClosed = false;
 {% endtabs %}
 
 ![](ChartTypes_images/PolarClosed.png)
+
+### Polar start angle for primary axis
+
+The start position of the polar series can be set by using [`PolarAngle`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~PolarAngle.html) property of axis. Default value of [`PolarAngle`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~PolarAngle.html) property is `Rotate270`. [`PolarAngle`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~PolarAngle.html) property can be set for primary axis, secondary axis, or both axes.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+
+    <chart:CategoryAxis PolarAngle = “Rotate0”/>
+
+</chart:SfChart.PrimaryAxis >
+ 
+<chart:SfChart.SecondaryAxis>
+
+    <chart:NumericalAxis/>
+
+</chart:SfChart.SecondaryAxis >
+ 
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis  = new CategoryAxis(){ PolarAngle = ChartPolarAngle.Rotate0 };
+
+chart.SecondaryAxis =  new NumericalAxis(); 
+
+{% endhighlight %}
+
+{% endtabs %}
+ ![](charttypes_images/polarangle_img1.png)
+ ### Polar start angle for secondary axis
+ {% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+
+    <chart:CategoryAxis/>
+
+</chart:SfChart.PrimaryAxis>
+
+<chart:SfChart.SecondaryAxis>
+
+    <chart:NumericalAxis PolarAngle="Rotate0"/>
+
+</chart:SfChart.SecondaryAxis>
+ 
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis  = new CategoryAxis();
+
+chart.SecondaryAxis =  new NumericalAxis() { PolarAngle = ChartPolarAngle.Rotate0 }; 
+
+{% endhighlight %}
+
+{% endtabs %}
+ ![](charttypes_images/polarangle_img2.png)
+ ### Polar start angle for both axis
+ {% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+
+    <chart:CategoryAxis PolarAngle = “Rotate0” />
+
+</chart:SfChart.PrimaryAxis >
+ 
+<chart:SfChart.SecondaryAxis>
+
+    <chart:NumericalAxis  PolarAngle = “Rotate0” />
+
+</chart:SfChart.SecondaryAxis >
+ 
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis  = new CategoryAxis(){ PolarAngle = ChartPolarAngle.Rotate0 };
+
+chart.SecondaryAxis =  new NumericalAxis() { PolarAngle = ChartPolarAngle.Rotate0 }; 
+
+{% endhighlight %}
+
+{% endtabs %}
+ ![](charttypes_images/polarangle_img3.png)
 
 ## Pie Chart
 

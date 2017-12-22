@@ -310,7 +310,7 @@ private void OnColumnsSelectionChanged(object sender, EventArgs e)
 
 ### Condition based filtering
 
-In addition to column based filtering, the records can be filtered based on some conditions. For example, the records can be filtered based on the given input or the records can be filtered contrast to the input. The condition based filtering can be acheieved for all the columns or any particular column.
+In addition to column based filtering, the records can be filtered based on some conditions. For example, the records can be filtered based on the given input or the records can be filtered contrast to the input. The condition based filtering can be achieved for all the columns or any particular column.
 
 The records can be filtered in view based on any of the following conditions:
 

@@ -156,9 +156,10 @@ dataGrid.AlternationCount = 3;
 {% endhighlight %}
 
 ![](SfDataGrid_images/AlernationCount.png)
+
 ## Border Customization
 
-* SfDatagrid allows you to customize the grid borders to vertical, horizontal, both or none based on requirements. Override the [DataGridStyle.GetGridLinesVisibility](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetGridLinesVisibility.html) method to customize the borders in SfDataGrid.
+SfDatagrid allows you to customize the grid borders to vertical, horizontal, both or none based on requirements. Override the [DataGridStyle.GetGridLinesVisibility](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetGridLinesVisibility.html) method to customize the borders in SfDataGrid.
 
 {% highlight c# %}
 //Apply custom style to SfDataGrid from code
@@ -188,7 +189,7 @@ Following are the lists of options available to customize the grid borders.
 
 ### Both
 
-*  [GridLinesVisibility.Both](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridLinesVisibility.html) allows you to display the DataGrid with both Horizontal and Vertical borders.
+[GridLinesVisibility.Both](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridLinesVisibility.html) allows you to display the DataGrid with both Horizontal and Vertical borders.
 {% highlight c# %}
 public override GridLinesVisibility GetGridLinesVisibility()
 {
@@ -202,7 +203,7 @@ The following screenshot shows the final outcome upon execution of the above cod
 
 ### Horizontal
 
-* [GridLinesVisibility.Horizontal](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridLinesVisibility.html) allows you to display the DataGrid with Horizontal border only
+[GridLinesVisibility.Horizontal](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridLinesVisibility.html) allows you to display the DataGrid with Horizontal border only
 {% highlight c# %}
 public override GridLinesVisibility GetGridLinesVisibility()
 {
@@ -216,7 +217,7 @@ The following screenshot shows the final outcome upon execution of the above cod
 
 ### Vertical
 
-* [GridLinesVisibility.Vertical](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridLinesVisibility.html) allows you to display the DataGrid with Vertical border only
+[GridLinesVisibility.Vertical](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridLinesVisibility.html) allows you to display the DataGrid with Vertical border only
 {% highlight c# %}
 public override GridLinesVisibility GetGridLinesVisibility()
 {
@@ -230,7 +231,7 @@ The following screenshot shows the final outcome upon execution of the above cod
 
 ### None
 
-* [GridLinesVisibility.None](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridLinesVisibility.html) allows you to display the DataGrid without borders
+[GridLinesVisibility.None](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridLinesVisibility.html) allows you to display the DataGrid without borders
 {% highlight c# %}
 public override GridLinesVisibility GetGridLinesVisibility()
 {

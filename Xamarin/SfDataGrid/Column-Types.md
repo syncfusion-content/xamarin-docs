@@ -1011,7 +1011,7 @@ To display a list of user-defined items in the picker drop down, create a `SfDat
 
 #### DisplayMemberPath
  
-Displays a value by comparing values of the properties set as `GridColumn.MappingName` and `ValueMemberPath` in their respective underlying collections. If the values of `ValueMemberPath` property contains the current value of `MappingName` property, its corresponding value of `DisplayMemberPath` property is displayed in the `GridCell`. Orelse the `GridCell` appears blank. However, in edit mode the values of the `DisplayMemberPath` property are displayed as picker items.
+Displays a value by comparing values of the properties set as `GridColumn.MappingName` and `ValueMemberPath` in their respective underlying collections. If the values of `ValueMemberPath` property contains the current value of `MappingName` property, its corresponding value of `DisplayMemberPath` property is displayed in the `GridCell`. Or else the `GridCell` appears blank. However, in edit mode the values of the `DisplayMemberPath` property are displayed as picker items.
  
 #### ValueMemberPath
  

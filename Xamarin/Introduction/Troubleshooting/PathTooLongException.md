@@ -15,10 +15,10 @@ Sometimes this kind of error may occur while compiling the sample browser projec
 <tr>
 <td>
 
-**Error 1: The "CreateLibraryResourceArchive" task failed unexpectedly.**
+<b>Error 1: The "CreateLibraryResourceArchive" task failed unexpectedly.</b>
 <br/>
 
-**System.IO.PathTooLongException: The specified path, file name, or both are too long. The fully qualified file name must be less than 260 characters, and the directory name must be less than 248 characters.**
+<b>System.IO.PathTooLongException: The specified path, file name, or both are too long. The fully qualified file name must be less than 260 characters, and the directory name must be less than 248 characters.</b>
 </td>
 </tr>
 </table>
@@ -34,5 +34,6 @@ You can resolve this issue by using anyone of the following steps.
    ![](images/img2.png)
 
 3. If the above steps did not resolve the error, move the Xamarin folder to a shorter path, manually. The Xamarin folder can be found in the below location.
+   
+   {Essential Studio installed location}\Syncfusion\Essential Studio{version}
 
-   {Essential Studio installed location}\Syncfusion\Essential Studio\{version}

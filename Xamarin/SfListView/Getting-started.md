@@ -1,4 +1,4 @@
----
+                                                                                                                                    ---
 layout: post
 title: Getting started | SfListView | Xamarin | Syncfusion
 description: Getting started with SfListView.
@@ -111,11 +111,11 @@ To use this control inside an application, each platform application must initia
 
 ### Android
 
-The Android launches the SfListView without any initialization, and is enough to only initialize the Xamarin.Forms framework to launch the application.
+The Android launches the SfListView without any initialization, and is enough to only initialize the Xamarin.Forms Framework to launch the application.
 
 ### iOS
 
-To launch the SfListView in iOS, call the `SfListViewRenderer.Init()` in the `FinishedLaunching` overridden method of the AppDelegate class after the Xamarin.Forms framework initialization, and before the LoadApplication is called as demonstrated in the following code example:
+To launch the SfListView in iOS, call the `SfListViewRenderer.Init()` in the `FinishedLaunching` overridden method of the AppDelegate class after the Xamarin.Forms Framework initialization, and before the LoadApplication is called as demonstrated in the following code example:
 
 {% highlight c# %}
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
@@ -144,7 +144,7 @@ public MainPage()
 
 ### ReleaseMode issue in UWP platform
 
-The known framework issue in UWP platform is the custom controls will not render when deployed the application in `Release Mode`.
+The known Framework issue in UWP platform is the custom controls will not render when deployed the application in `Release Mode`.
 
 The above problem can be resolved by initializing the SfListView assemblies in `App.xaml.cs` in UWP project as in the following code snippet:
 
@@ -519,7 +519,7 @@ The SfListView allows displaying the items in a group using the [SfListView.Data
 `GroupDescriptor` object holds the following properties:
 
  * PropertyName: Describes name of the property to be grouped.
- * KeySelector: Decribes selector to return the group key.
+ * KeySelector: Describes selector to return the group key.
  * Comparer: Describes comparer to be applied when sorting takes place.
 
 It also supports to stick the group header by enabling the [SfListView.IsStickyGroupHeader](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsStickyGroupHeader.html) property.

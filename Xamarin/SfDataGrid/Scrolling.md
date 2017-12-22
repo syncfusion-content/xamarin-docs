@@ -97,7 +97,8 @@ dataGrid.ScrollToColumnIndex(7);
 
 ![](SfDataGrid_images/ScrollToColumnIndex.gif)
 
-### Vertical over scroll mode
+## Vertical Over Scroll Mode
+[SfDataGrid.VerticalOverScrollMode](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~VerticalOverScrollMode.html) property allows you to customize the bouncing behavior of the SfDataGrid.
 
 The [SfDataGrid.VerticalOverScrollMode](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~VerticalOverScrollMode.html) property allows customizing the bouncing behavior of the SfDataGrid.
 
@@ -106,7 +107,7 @@ The `SfDataGrid.VerticalOverScrollMode` is of [VerticalScrollMode](http://help.s
  * Bounce
  * None
 
-#### Bounce
+### Bounce
  
 Bounce allows the SfDataGrid to have bouncing effect. The default value of `SfDataGrid.VerticalOverScrollMode` is `Bounce` .
 
@@ -131,7 +132,7 @@ dataGrid.VerticalOverScrollMode = VerticalOverScrollMode.Bounce;
 
 ![](SfDataGrid_images/VerticalOverScrollMode_Bounce.gif)
 
-#### None
+### None
 
 None disables the bouncing effect in the SfDataGrid.
 
@@ -156,7 +157,7 @@ dataGrid.VerticalOverScrollMode = VerticalOverScrollMode.None;
 
 ![](SfDataGrid_images/VerticalOverScrollMode_none.gif)
 
-## How to scroll customization using slider
+## Scrolling customization using Slider
 
 The SfDataGrid allows scrolling to a particular row by passing the row index to the `ScrollToRowIndex` method. To scroll the control when interacting on a `Slider`, pass the `Slider.Value` as row index to the `ScrollToRowIndex` method.
 

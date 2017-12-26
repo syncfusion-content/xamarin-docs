@@ -68,7 +68,7 @@ QueryRowHeights has two arguments start index and end index.
 * Start index: It indicates from which row index the `SfDataGrid.QueryRowHeight` event has to fire.
 * End index: It indicates the end row index for the `SfDataGrid.QueryRowHeight` event to fire.
 
-To customize the row height for a range of rows, follow the code exmaple:
+To customize the row height for a range of rows, follow the code example:
 
 {% highlight c# %}
 
@@ -111,7 +111,7 @@ The following code example illustrates calculating the height of grid rows based
 
 SfDataGrid allows calculating the row height based on content by including/excluding the hidden columns using the `CanIncludeHiddenColumns` property.
 
-To calculate the height incluing hidden columns, follow the code example:
+To calculate the height including hidden columns, follow the code example:
 
 {% highlight c# %}
  

@@ -27,7 +27,7 @@ Cropping operation can be done programmatically in the following two ways:
 
 #### Handling the cropping tool
 
-The `ToggleCropping` method in the SfImageEditor control is used to enable and disable a cropping region placed over the image to visually choose the area for cropping. After the croppin area has been selected, the `Crop` method is called which in turn crops the selected region and displays the cropped image on the ImageEditor.
+The `ToggleCropping` method in the SfImageEditor control is used to enable and disable a cropping region placed over the image to visually choose the area for cropping. After the cropping area has been selected, the `Crop` method is called which in turn crops the selected region and displays the cropped image on the ImageEditor.
 
 {% tabs %}
 

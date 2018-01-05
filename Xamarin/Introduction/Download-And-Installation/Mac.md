@@ -12,8 +12,7 @@ documentation: ug
 ## Install NuGet from NuGet Package Manager
 
 ### Configuring and Installing Syncfusion NuGet Packages in Visual Studio
-
-Syncfusion Xamarin NuGet packages are available [here](http://nuget.syncfusion.com/package/xamarin).
+The Syncfusion Xamarin NuGet packages are published in public [NuGet.org](https://www.nuget.org/) from v15.4.0.17. So, no need any additional configurations required to utilize the Syncfusion Xamarin NuGet packages from v15.4.0.17. If you required to utilize the Syncfusion Xamarin NuGet packages from Syncfusion private NuGet server instead of NuGet.org, follow the below topics to configure and install the Syncfusion Xamarin NuGet packages.
 
 N> If you wish to use the Xamarin NuGet packages then Essential Studio or Xamarin platform installation not required to implement with Syncfusion Xamarin controls. 
 

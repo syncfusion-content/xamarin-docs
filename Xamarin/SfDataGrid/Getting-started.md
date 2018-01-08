@@ -87,7 +87,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 }
 {% endhighlight %} 
 
-### Universal Windows Platform(UWP)
+### Universal Windows Platform (UWP)
 
 To launch the SfDataGrid in UWP, call the `SfDataGridRenderer.Init()` in the `MainPage` constructor before the LoadApplication is called as demonstrated in the following code example:
 

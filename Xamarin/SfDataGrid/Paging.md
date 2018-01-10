@@ -17,7 +17,7 @@ To use paging functionality in the SfDataGrid, add the following namespace to th
 There are two different modes in paging as stated as follows:
 
  * NormalPaging: NormalPaging loads the entire data collection to the `SfDataPager`.
- * OnDemandPaging: OnDemandPaging loads the data to current page dynamically in `SfDataPager`.
+ * OnDemandPaging: OnDemandPaging loads the data to the current page dynamically in the `SfDataPager`.
 
 ## Normal paging
 
@@ -30,7 +30,7 @@ The SfDataGrid performs paging of data using the `SfDataPager`. To enable paging
 
 N> The `SfDataPager.PageSize` property should not be assigned with a value 0.
 
-The following code example illustrates using `SfDataPager` with the SfDataGrid control:
+The following code example illustrates using the `SfDataPager` with the SfDataGrid control:
 
 {% tabs %}
 {% highlight xaml %}
@@ -121,12 +121,12 @@ N> The `SfDataPager` provides scrolling animation while tapping the [FirstPageBu
 
 In normal Paging, data collection is entirely loaded initially to the `SfDataPager`. However, the control also allows loading the data for the current page dynamically by setting the [SfDataPager.UseOnDemandPaging](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager~UseOnDemandPaging.html# “”) to `true`.
 
-To load current page item dynamically, hook the [OnDemandLoading](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager~OnDemandLoading_EV.html# “”) event. In the `OnDemandLoading` event, use the[LoadDynamicItems](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager~LoadDynamicItems.html# “”) method to load data for the corresponding page in `SfDataPager`.
+To load current page item dynamically, hook the [OnDemandLoading](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager~OnDemandLoading_EV.html# “”) event. In the `OnDemandLoading` event, use the[LoadDynamicItems](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager~LoadDynamicItems.html# “”) method to load data for the corresponding page in the `SfDataPager`.
 
 The `OnDemandLoading` event is triggered when the pager moves to the corresponding page. It contains the following event arguments:
 
  * [StartIndex](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.OnDemandLoadingEventArgs~StartIndex.html# “”): Displays corresponding page start index.
- * [PageSize](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.OnDemandLoadingEventArgs~PageSize.html# “”): Displays number of items to be loaded for that page.
+ * [PageSize](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.OnDemandLoadingEventArgs~PageSize.html# “”): Displays the number of items to be loaded for that page.
 
 To load data for the DataPager control dynamically, follow the code example:
 
@@ -140,7 +140,7 @@ private void OnDemandPageLoading(object sender, OnDemandLoadingEventArgs args)
 
 N> In OnDemand paging, you cannot assign a value for the Source property in the SfDataPager.
 
-When using `OnDemandPaging`, `SfDataPager.PagedSource` loads only the current page data. Upon navigation to another page, `OnDemandLoading` event is fired which loads another set of data, but maintains the previous page data also. When you navigate to previous page again, OnDemandLoading event is not fired and the required data is loaded which was maintained in cache. However, for further performance enhancement if you do not want to maintain the previous page data, call [Syncfusion.Data.PagedCollectionView.ResetCache()](http://help.syncfusion.com/cr/cref_files/xamarin/data/Syncfusion.Data.Portable~Syncfusion.Data.PagedCollectionView~ResetCache.html# “”) in `OnDemandLoading` event. ResetCache method call resets the cache except current page.
+When using `OnDemandPaging`, `SfDataPager.PagedSource` loads only the current page data. Upon navigation to another page, `OnDemandLoading` event is fired which loads another set of data, but maintains the previous page data also. When you navigate to previous page again, OnDemandLoading event is not fired, and the required data is loaded which was maintained in cache. However, for further performance enhancement if you do not want to maintain the previous page data, call [Syncfusion.Data.PagedCollectionView.ResetCache()](http://help.syncfusion.com/cr/cref_files/xamarin/data/Syncfusion.Data.Portable~Syncfusion.Data.PagedCollectionView~ResetCache.html# “”) in `OnDemandLoading` event. ResetCache method call resets the cache except current page.
 
 To use ResetCache method, follow the code example:
 
@@ -154,7 +154,7 @@ private void OnDemandPageLoading(object sender, OnDemandLoadingEventArgs args)
 
 ## AppearanceManager
 
-The SfDatagrid allows changing the appearance by writing a style class overriding from `AppearanceManager`, and assigning it to the [SfDataPager.AppearanceManager](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager~AppearanceManager.html) property.
+The SfDatagrid allows changing the appearance by writing a style class overriding from the `AppearanceManager`, and assigning it to the [SfDataPager.AppearanceManager](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager~AppearanceManager.html) property.
   
 To apply custom style, follow the code example:
 

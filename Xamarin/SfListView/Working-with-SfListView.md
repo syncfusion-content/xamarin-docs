@@ -20,11 +20,10 @@ Because, the StackLayout positions the child element one after the other, either
 
 ## Load the SfListView inside the ScrollView
 
-When the SfListView is loaded inside a ScrollView, `HeightRequest` must be set to the SfListView.
-If not, the following problems will occur.
+When the SfListView is loaded inside a ScrollView, `HeightRequest` must be set to the SfListView.If not, the following problems will occur.
 
 * If the position of the SfListView is not in a view while loading inside the StackLayout with more than one children, then SfListView will not be loaded. Because the StackLayout passes the height for the `SfListView` as 1. 
-* Stickyheader and  stickygroupheader changed to scrollable and the empty space remains after the `SfListView` items, when the device orientation is changed to horizontal. Because the total extend is set to the ScrollView in horizontal orientation. 
+* Sticky header and  sticky group header changed to scrollable and the empty space remains after the `SfListView` items, when the device orientation is changed to horizontal. Because the total extend is set to the ScrollView in horizontal orientation. 
 * When loading SfListView inside the `Grid` with row definition as `Auto` in UWP, Grid passes the height for the SfListView to be `1`.
 
 In the following sample, ScrollView height is set into the `HeightRequest` of SfListView.

@@ -107,7 +107,9 @@ public class SelectionControllerExt : SelectionController
 }
 {% endhighlight %}
 
-You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Selection-1915286868).
+The screenshot shows the output of programmatic animation in selection. You can download the sample for above source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Selection-1915286868).
+
+![](SfListView_images/SfListView-SelectionAnimation.gif)
 
 ## Selection Events
 

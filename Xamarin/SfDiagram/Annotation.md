@@ -201,6 +201,7 @@ diagram.AddConnector(Connector1);
 
 
 {% endhighlight %}
+{% endtabs %}
 The following output is displayed as result of the above code example.
 ![](Annotation_images/Annotation_img3.jpeg)
 

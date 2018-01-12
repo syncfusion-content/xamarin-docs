@@ -224,5 +224,6 @@ stencil.SymbolGroups.Add(new SymbolGroup() { SymbolSource = coll2, HeaderName = 
 stencil.SymbolGroups.Add(new SymbolGroup() { SymbolSource = con1, HeaderName = "Connectors" });
 diagram.Stencil=stencil;
 {% endhighlight %}
+{% endtabs %}
 ![](Stencil_images/Stencil_img3.jpeg)
 

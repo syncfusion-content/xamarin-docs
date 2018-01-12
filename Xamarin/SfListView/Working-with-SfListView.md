@@ -24,7 +24,7 @@ When the SfListView is loaded inside a ScrollView, `HeightRequest` must be set t
 If not, the following problems will occur.
 
 * If the position of the SfListView is not in a view while loading inside the StackLayout with more than one children, then SfListView will not be loaded. Because the StackLayout passes the height for the `SfListView` as 1. 
-* Sticky Header and  Sticky Group Header changed to scrollable and the empty space remains after the `SfListView` items, when the device orientation is changed to `Horizontal`. Because the total extend is set to the ScrollView in Horizontal Orientation. 
+* Stickyheader and  stickygroupheader changed to scrollable and the empty space remains after the `SfListView` items, when the device orientation is changed to horizontal. Because the total extend is set to the ScrollView in horizontal orientation. 
 * When loading SfListView inside the `Grid` with row definition as `Auto` in UWP, Grid passes the height for the SfListView to be `1`.
 
 In the following sample, ScrollView height is set into the `HeightRequest` of SfListView.
@@ -45,7 +45,7 @@ In the following sample, ScrollView height is set into the `HeightRequest` of Sf
 }
 {% endhighlight %}
 
-You can download the entire source code from [here] (http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfListViewSample-1260554104.zip).
+You can download the entire source code from [here] (http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfListViewSample197024233.zip).
 
 ## Load the SfListView inside a SfPullToRefresh
 SfPullToRefresh is a refresh control that allows you to interact and refresh the view loaded in it. When the SfListView is loaded inside the SfPullToRefresh, it is used to refresh the item while performing the pull to refresh action. The steps to be followed to load the SfListView inside SfPullToRefresh is explained in SfPullToRefresh Property Customization tab.

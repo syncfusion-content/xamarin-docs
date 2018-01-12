@@ -292,5 +292,6 @@ Width = 12
 diagram.AddConnector(connector1);
 
 {% endhighlight %}
+{% endtabs %}
 ![](Connector_images/Connector_img7.jpeg)
 

@@ -7,7 +7,7 @@ control: SfListView
 documentation: ug
 ---
 
-## Load the SfListView inside the StackLayout
+## Launching the SfListView inside the StackLayout
 
 When you load SfListView inside the StackLayout, you should set the `HorizontalOptions` and `VerticalOptions` of the StackLayout as `LayoutOptions.FillAndExpand`.
 Because, the StackLayout positions the child element one after the other, either horizontally or vertically based on the orientation of StackLayout. The size of the StackLayout depends on how the HorizontalOptions and VerticalOptions properties are set, but by default, the StackLayout will try to use the entire screen. 
@@ -18,34 +18,17 @@ Because, the StackLayout positions the child element one after the other, either
 </StackLayout>
 {% endhighlight %}
 
-## Load the SfListView inside the ScrollView
+### Load the SfListView inside a ScrollView within StackLayout
 
-When the SfListView is loaded inside a ScrollView, `HeightRequest` must be set to the SfListView.
-If not, the following problems will occur.
-
-* If the position of the SfListView is not in a view while loading inside the StackLayout with more than one children, then SfListView will not be loaded. Because the StackLayout passes the height for the `SfListView` as 1. 
-* Sticky Header and  Sticky Group Header changed to scrollable and the empty space remains after the `SfListView` items, when the device orientation is changed to `Horizontal`. Because the total extend is set to the ScrollView in Horizontal Orientation. 
-* When loading SfListView inside the `Grid` with row definition as `Auto` in UWP, Grid passes the height for the SfListView to be `1`.
-
-In the following sample, ScrollView height is set into the `HeightRequest` of SfListView.
+When the SfListView is loaded inside a ScrollView or any layout such as Grid, StackLayout etc., into the StackLayout. You should set the `VerticalOptions` and `HorizontalOptions` of the SfListView's immediate parent as `LayoutOptions.FillAndExpand`.
 
 {% highlight xaml %}
-<local:ExtScrollView x:Name="scrollView" >
-   <sync:SfListView x:Name="listView" ItemsSource="{Binding BookInfo}"/>
-</local:ExtScrollView>
+<StackLayout>
+  <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+    <syncfusion:SfListView x:Name="listView" ItemsSource="{Binding BookInfo}" />
+  </ScrollView>
+</StackLayout>
 {% endhighlight %}
-{% highlight C# %}
- public class ExtScrollView: ScrollView
- {    
-     protected override void LayoutChildren(double x, double y, double width, double height)
-     {
-         this.Content.HeightRequest = height;
-         base.LayoutChildren(x, y, width, height);
-     }
-}
-{% endhighlight %}
-
-You can download the entire source code from [here] (http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfListViewSample-1260554104.zip).
 
 ## Load the SfListView inside a SfPullToRefresh
 SfPullToRefresh is a refresh control that allows you to interact and refresh the view loaded in it. When the SfListView is loaded inside the SfPullToRefresh, it is used to refresh the item while performing the pull to refresh action. The steps to be followed to load the SfListView inside SfPullToRefresh is explained in SfPullToRefresh Property Customization tab.

@@ -125,3 +125,4 @@ The following code illustrates how to disable node dragging.
 //Initialize the node with constraints
 Node node = new Node() {EnableDrag = false;, Width = 50, Height = 50, OffsetX = 100, OffsetY = 100};
 {% endhighlight %}
+{% endtabs %}

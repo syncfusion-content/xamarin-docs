@@ -100,3 +100,4 @@ SfDiagram diagram = new SfDiagram();
 diagram.EnableDrag = false;
 this.Content = diagram;
 {% endhighlight %}
+{% endtabs %}

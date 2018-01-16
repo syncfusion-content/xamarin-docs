@@ -9,11 +9,11 @@ documentation: UG
 
 # Pull To Refresh
 
-The SfDataGrid allows enabling the `PullToRefresh` option by setting the [SfDataGrid.AllowPullToRefresh](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowPullToRefresh.html) property to `true`, and by setting the [SfDataGrid.PullToRefreshCommand](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~PullToRefreshCommand.html) property. When the `PullToRefresh` is enabled, the control supports for refreshing the data source at runtime while doing the pull to refresh action. 
+The SfDataGrid allows `PullToRefresh` option by setting the [SfDataGrid.AllowPullToRefresh](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowPullToRefresh.html) property to `true`, and also by setting the [SfDataGrid.PullToRefreshCommand](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~PullToRefreshCommand.html) property. When `PullToRefresh` is enabled, the control refreshes the data source at runtime. 
 
-### PullToRefreshCommand
+### Pull to refresh command
 
-The SfDataGrid allows refreshing the data in view at runtime by triggering an `ICommand` binded to the `SfDataGrid.PullToRefreshCommand` property. While performing pull to refresh action, if the progress bar meets 100 %, this command is triggered to refresh the records in view. 
+The SfDataGrid allows refreshing the data in view at runtime by triggering an `ICommand` bound to the `SfDataGrid.PullToRefreshCommand` property. When the progress bar shows 100 %, this command is triggered to refresh the records in view. 
 
 Set the [SfDataGrid.IsBusy](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~IsBusy.html) property to `true` before refreshing the records to notify the grid that pull to refresh action is being performed. Set the property to `false` after the view is refreshed. The pull to refresh animation time can also be altered from the sample by setting a delay based on the requirement.
 

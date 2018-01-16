@@ -9,28 +9,28 @@ documentation: ug
 
 # Paging
 
-The SfDataGrid interactively supports to manipulate data using the [SfDataPager](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager_namespace.html# “”) control. It also provides built-in options to page data on demand when dealing with large volumes of data. It allows to place the `SfDataPager` above or below based on the requirement to easily manage the data paging.
+The data grid interactively supports manipulation of data using [SfDataPager](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager_namespace.html# “”) control. This provides built-in options to page data on demand when dealing with large volumes of data. `SfDataPager` can be placed above or below based on the requirement to easily manage data paging.
 
-To use paging functionality in the SfDataGrid, add the following namespace to the project:
+To use paging functionality in SfDataGrid, add the following namespace to the project:
 [Syncfusion.SfDataGrid.XForms.DataPager](http://help.syncfusion.com/cr/xamarin/sfdatagrid# “”)
 
-There are two different modes in paging as stated as follows:
+There are two different modes in paging:
 
  * NormalPaging: NormalPaging loads the entire data collection to the `SfDataPager`.
- * OnDemandPaging: OnDemandPaging loads the data to the current page dynamically in the `SfDataPager`.
+ * OnDemandPaging: OnDemandPaging loads data to the current page dynamically in the `SfDataPager`.
 
 ## Normal paging
 
-The SfDataGrid performs paging of data using the `SfDataPager`. To enable paging, follow the procedure:
+The data grid performs paging of data using the `SfDataPager`. To enable paging, follow the procedure:
 
  * Create a new SfDataPager instance, and bind the data collection to the [SfDataPager.Source](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager~Source.html# “”) property based on which [SfDataPager.PagedSource](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager~PagedSource.html# “”) is created internally. 
  * Bind the `PagedSource` property to the [ItemsSource](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ItemsSource.html# “”) of the SfDataGrid. 
- * Set the number of rows to be displayed in a page by setting the [SfDataPager.PageSize](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager~PageSize.html# “”) property.
+ * Set the number of rows to be displayed on a page by setting the [SfDataPager.PageSize](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager~PageSize.html# “”) property.
  * Set the number of buttons that should be displayed in view by setting the [SfDataPager.NumericButtonCount](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager~NumericButtonCount.html# “”) property.
 
-N> The `SfDataPager.PageSize` property should not be assigned with a value 0.
+N> The `SfDataPager.PageSize` property should not be assigned with value 0.
 
-The following code example illustrates using the `SfDataPager` with the SfDataGrid control:
+The following code example illustrates using `SfDataPager` with SfDataGrid control:
 
 {% tabs %}
 {% highlight xaml %}
@@ -111,7 +111,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot shows the final outcome upon execution of the above code:
+The following screenshot shows the outcome upon execution of the above code:
 
 ![](SfDataGrid_images/Paging_img1.jpeg)
 
@@ -138,9 +138,9 @@ private void OnDemandPageLoading(object sender, OnDemandLoadingEventArgs args)
 {% endhighlight %}
 
 
-N> In on demand paging, you cannot assign a value for the Source property in the SfDataPager.
+N> In on demand paging, you cannot assign a value for the Source property.
 
-When using `OnDemandPaging`, `SfDataPager.PagedSource` loads only the current page data. Upon navigation to another page, `OnDemandLoading` event is fired which loads another set of data, but maintains the previous page data also. When you navigate to previous page again, OnDemandLoading event is not fired, and the required data is loaded which was maintained in cache. However, for further performance enhancement if you do not want to maintain the previous page data, call [Syncfusion.Data.PagedCollectionView.ResetCache()](http://help.syncfusion.com/cr/cref_files/xamarin/data/Syncfusion.Data.Portable~Syncfusion.Data.PagedCollectionView~ResetCache.html# “”) in `OnDemandLoading` event. ResetCache method call resets the cache except current page.
+When using `OnDemandPaging`, `SfDataPager.PagedSource` loads only the current page data. Upon navigation to another page, `OnDemandLoading` event is fired which loads another set of data, but maintains the previous page data also. When you navigate to the previous page again, OnDemandLoading event is not fired, and the required data maintained in the cache is loaded. However, for further performance enhancement if you do not want to maintain the previous page data, call [Syncfusion.Data.PagedCollectionView.ResetCache()](http://help.syncfusion.com/cr/cref_files/xamarin/data/Syncfusion.Data.Portable~Syncfusion.Data.PagedCollectionView~ResetCache.html# “”) in `OnDemandLoading` event. ResetCache method call resets the cache except the current page.
 
 To use ResetCache method, follow the code example:
 
@@ -253,7 +253,7 @@ The following picture shows the customize appearance of data pager:
 
 ### Numeric button border color
 
-Based on the requirements, customize the numeric button border color by overriding the [GetPagerButtonBorderColor](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.AppearanceManager~GetPagerButtonBorderColor.html) method.
+Based on the requirement, customize the numeric button border color by overriding the [GetPagerButtonBorderColor](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.AppearanceManager~GetPagerButtonBorderColor.html) method.
 
 To customize the numeric button border color, follow the code example:
 

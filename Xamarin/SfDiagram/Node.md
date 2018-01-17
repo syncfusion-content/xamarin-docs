@@ -31,7 +31,7 @@ The following code snippet illustrates how to create the node.
 {% highlight c# %}
 //Initialize Node
 Node n = new Node() { Width = 120, Height = 40, OffsetX = 300,OffsetY = 60, ShapeType = ShapeType.Ellipse };
-//Adds the node to the sfdiagram
+//Adds the node to the SfDiagram
 diagram.AddNode(n);
 {% endhighlight %}
 {% endtabs %}
@@ -53,7 +53,7 @@ SolidBrush brush = new SolidBrush(Color.Yellow);
 brush.FillColor = Color.Yellow;
 pen.Brush = brush2;
 graphics.DrawRectangle(pen, new Rectangle(0, 0, 50, 50));
-//Update the Sfgraphics to the node
+//Update the SfGraphics to the node
 node.UpdateSfGraphics(graphics);
 {% endhighlight %}
 {% endtabs %}
@@ -98,7 +98,7 @@ var template = new DataTemplate(() =>
     grid.WidthRequest = 80;
     grid.HeightRequest = 80;
     Image image = new Image();
-    image.Source = "emp.png";
+    image.Source = "employee.png";
     grid.Children.Add(image);
     return grid;
 });

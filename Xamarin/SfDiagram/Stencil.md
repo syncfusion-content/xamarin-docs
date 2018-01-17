@@ -82,15 +82,15 @@ The following example illustrates how to add the custom shapes into a Collection
             pen1.Brush = brush1;
 
             Node custom = new Node();
-            SfGraphics grap = new SfGraphics();
+            SfGraphics graphics = new SfGraphics();
             Pen pen2 = new Pen();
             pen2.StrokeBrush = new SolidBrush(Color.Blue);
             pen2.StrokeWidth = 2;
             SolidBrush brush2 = new SolidBrush(Color.FromRgb(99, 184, 225));
             brush2.FillColor = Color.FromRgb(99, 184, 225);
             pen2.Brush = brush2;
-            grap.DrawRectangle(pen2, new Xamarin.Forms.Rectangle(0, 0, 50, 50));
-            custom.UpdateSfGraphics(grap);
+            graphics.DrawRectangle(pen2, new Xamarin.Forms.Rectangle(0, 0, 50, 50));
+            custom.UpdateSfGraphics(graphics);
 
             Node custom1 = new Node();
             SfGraphics grap4 = new SfGraphics();
@@ -217,7 +217,7 @@ SymbolCollection con1 = new SymbolCollection();
 con1.Add(new Connector() { SegmentType = SegmentType.OrthoSegment, SourcePoint = new Point(0, 0), TargetPoint = new Point(50, 50) });
 con1.Add(new Connector() { SegmentType = SegmentType.StraightSegment, SourcePoint = new Point(0, 0), TargetPoint = new Point(50, 50) });
 
-//Add category of symbolgroup with heading text
+//Add category of symbol group with heading text
 stencil.SymbolGroups.Add(new SymbolGroup() { SymbolSource = coll, HeaderName = "BasicShapes" });
 stencil.SymbolGroups.Add(new SymbolGroup() { SymbolSource = coll1, HeaderName = "Flow Chart" });
 stencil.SymbolGroups.Add(new SymbolGroup() { SymbolSource = coll2, HeaderName = "CustomShapes" });

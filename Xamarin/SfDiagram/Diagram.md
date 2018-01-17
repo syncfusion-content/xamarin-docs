@@ -63,17 +63,17 @@ The following code snippet and screenshot illustrates this.
 <control:SfDiagram x:Name="diagram" NodeTemplate="{StaticResource template}">
 {% endhighlight %}
 {% highlight c# %}
-var nodetemplate = new DataTemplate(() =>
+var template = new DataTemplate(() =>
 {
     Grid grid = new Grid();
     grid.WidthRequest = 80;
     grid.HeightRequest = 80;
     Image image = new Image();
-    image.Source = "emp.png";
+    image.Source = "employee.png";
     grid.Children.Add(image);
     return grid;
 });
-diagram.NodeTemplate = nodetemplate;
+diagram.NodeTemplate = template;
 {% endhighlight %}
 {% endtabs %}
 

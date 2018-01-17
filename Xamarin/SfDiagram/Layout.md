@@ -20,7 +20,7 @@ We have explained the Automatic Layout with Employee class and DataSourceSetting
     {
         public string Team { get; set; }
         public string Role { get; set; }
-        public int EmpiD { get; set; }
+        public int EmployeeId { get; set; }
     }
 
     //Employee Collection
@@ -35,7 +35,7 @@ We have explained the Automatic Layout with Employee class and DataSourceSetting
 {% highlight xml %}
 <!--Initializes the DataSourceSettings -->
 <control:SfDiagram.DataSourceSettings>
-        <control:DataSourceSettings x:Key="DataSourceSettings" ParentId="Team" Id="EmpiD" 
+        <control:DataSourceSettings x:Key="DataSourceSettings" ParentId="Team" Id="EmployeeId" 
         DataSource="{StaticResource Employees}" />
       </control:SfDiagram.DataSourceSettings>
 
@@ -59,28 +59,28 @@ An organizational chart is a Diagram that displays the structure of an organizat
    <ResourceDictionary>
       <local:Employees x:Key="Employees">
     <!—-Employee Collection -->
-          <local:Employee EmpiD="0" Role="Project Management" />
-          <local:Employee EmpiD= "1"  Role= "R and D Team" Team= "0"/>
-          <local:Employee EmpiD= "3"  Role= "Philosophy" Team= "1"/>
-          <local:Employee EmpiD= "4"  Role= "Organization" Team= "1"/>
-          <local:Employee EmpiD= "5"  Role= "Technology" Team= "1"/>
-          <local:Employee EmpiD= "7"  Role= "Funding" Team= "1"/>
-          <local:Employee EmpiD= "8"  Role= "Resource Allocation" Team= "1"/>
-          <local:Employee EmpiD= "9"  Role= "Targeting" Team= "1"/>
-          <local:Employee EmpiD= "11"  Role= "Evaluation" Team= "1"/>
-          <local:Employee EmpiD= "156"  Role= "HR Team" Team= "0"/>
-          <local:Employee EmpiD= "13"  Role= "Recruitment" Team= "156"/>
-          <local:Employee EmpiD= "113"  Role= "Training" Team= "156"/>
-          <local:Employee EmpiD= "112"  Role= "Employee Relation" Team= "156"/>
-          <local:Employee EmpiD= "14"  Role= "Record Keeping" Team= "156"/>
-          <local:Employee EmpiD= "17"  Role= "Production and Sales Team" Team= "0"/>
-          <local:Employee EmpiD= "119"  Role= "Design" Team= "17"/>
-          <local:Employee EmpiD= "19"  Role= "Operation" Team= "17"/>
-          <local:Employee EmpiD= "20"  Role= "Support" Team= "17"/>
-          <local:Employee EmpiD= "21"  Role= "Quality Assurance" Team= "17"/>
-          <local:Employee EmpiD= "23"  Role= "Customer Interaction" Team= "17"/>
-          <local:Employee EmpiD= "24"  Role= "Support and Maintenance" Team= "17"/>
-          <local:Employee EmpiD= "25"  Role= "Task Coordination" Team= "17"/>
+          <local:Employee EmployeeId="0" Role="Project Management" />
+          <local:Employee EmployeeId= "1"  Role= "R and D Team" Team= "0"/>
+          <local:Employee EmployeeId= "3"  Role= "Philosophy" Team= "1"/>
+          <local:Employee EmployeeId= "4"  Role= "Organization" Team= "1"/>
+          <local:Employee EmployeeId= "5"  Role= "Technology" Team= "1"/>
+          <local:Employee EmployeeId= "7"  Role= "Funding" Team= "1"/>
+          <local:Employee EmployeeId= "8"  Role= "Resource Allocation" Team= "1"/>
+          <local:Employee EmployeeId= "9"  Role= "Targeting" Team= "1"/>
+          <local:Employee EmployeeId= "11"  Role= "Evaluation" Team= "1"/>
+          <local:Employee EmployeeId= "156"  Role= "HR Team" Team= "0"/>
+          <local:Employee EmployeeId= "13"  Role= "Recruitment" Team= "156"/>
+          <local:Employee EmployeeId= "113"  Role= "Training" Team= "156"/>
+          <local:Employee EmployeeId= "112"  Role= "Employee Relation" Team= "156"/>
+          <local:Employee EmployeeId= "14"  Role= "Record Keeping" Team= "156"/>
+          <local:Employee EmployeeId= "17"  Role= "Production and Sales Team" Team= "0"/>
+          <local:Employee EmployeeId= "119"  Role= "Design" Team= "17"/>
+          <local:Employee EmployeeId= "19"  Role= "Operation" Team= "17"/>
+          <local:Employee EmployeeId= "20"  Role= "Support" Team= "17"/>
+          <local:Employee EmployeeId= "21"  Role= "Quality Assurance" Team= "17"/>
+          <local:Employee EmployeeId= "23"  Role= "Customer Interaction" Team= "17"/>
+          <local:Employee EmployeeId= "24"  Role= "Support and Maintenance" Team= "17"/>
+          <local:Employee EmployeeId= "25"  Role= "Task Coordination" Team= "17"/>
           </local:Employees>
     <control:DirectedTreeLayout x:Key="TreeLayout" TreeOrientation="TopToBottom" Type="Organization"/>
     </ResourceDictionary>
@@ -91,7 +91,7 @@ An organizational chart is a Diagram that displays the structure of an organizat
   <control:SfDiagram x:Name="diagram" >
     <!--Initializes the DataSourceSettings--> 
     <control:SfDiagram.DataSourceSettings>
-        <control:DataSourceSettings x:Key="DataSourceSettings" ParentId="Team" Id="EmpiD" 
+        <control:DataSourceSettings x:Key="DataSourceSettings" ParentId="Team" Id="EmployeeId" 
         DataSource="{StaticResource Employees}" />
       </control:SfDiagram.DataSourceSettings>
    <!--Initializes the Layout-->
@@ -105,33 +105,33 @@ An organizational chart is a Diagram that displays the structure of an organizat
 {% highlight c# %}
 //Employee Collection
 ObservableCollection<Employee> employee = new ObservableCollection<Employee>();
-            employee.Add(new Employee { EmpiD = 0, Role = "Project Management" });
-            employee.Add(new Employee { EmpiD = 1,  Role = "R and D Team" ,Team = "0" });
-            employee.Add(new Employee { EmpiD = 3 , Role = "Philosophy", Team = "1" });
-            employee.Add(new Employee { EmpiD =4 , Role = "Organization", Team = "1" });
-            employee.Add(new Employee { EmpiD = 5 , Role = "Technology", Team = "1" });
-            employee.Add(new Employee { EmpiD = 7,  Role = "Funding" ,Team = "1" });
-            employee.Add(new Employee { EmpiD = 8 , Role = "Resource Allocation" ,Team = "1" });
-            employee.Add(new Employee { EmpiD = 9,  Role = "Targeting" ,Team = "1" });
-            employee.Add(new Employee { EmpiD = 11,  Role = "Evaluation" ,Team = "1" });
-            employee.Add(new Employee { EmpiD = 156 , Role = "HR Team", Team = "0" });
-            employee.Add(new Employee { EmpiD = 13 , Role = "Recruitment", Team = "156" });
-            employee.Add(new Employee { EmpiD = 113 , Role = "Training" ,Team = "156" });
-            employee.Add(new Employee { EmpiD = 112 , Role = "Employee Relation" ,Team = "156" });
-            employee.Add(new Employee { EmpiD = 14 , Role = "Record Keeping", Team = "156" });
-            employee.Add(new Employee { EmpiD = 17 , Role = "Production and Sales Team" ,Team = "0" });
-            employee.Add(new Employee { EmpiD = 119,  Role = "Design", Team = "17" });
-            employee.Add(new Employee { EmpiD = 19 , Role = "Operation", Team = "17" });
-            employee.Add(new Employee { EmpiD = 20 , Role = "Support" ,Team = "17" });
-            employee.Add(new Employee { EmpiD = 21 , Role = "Quality Assurance" ,Team = "17" });
-            employee.Add(new Employee { EmpiD = 23 , Role = "Customer Interaction" ,Team = "17" });
-            employee.Add(new Employee { EmpiD = 24 , Role = "Support and Maintenance" ,Team = "17" });
-            employee.Add(new Employee { EmpiD = 25 , Role = "Task Coordination", Team = "17" });
+            employee.Add(new Employee { EmployeeId = 0, Role = "Project Management" });
+            employee.Add(new Employee { EmployeeId = 1,  Role = "R and D Team" ,Team = "0" });
+            employee.Add(new Employee { EmployeeId = 3 , Role = "Philosophy", Team = "1" });
+            employee.Add(new Employee { EmployeeId =4 , Role = "Organization", Team = "1" });
+            employee.Add(new Employee { EmployeeId = 5 , Role = "Technology", Team = "1" });
+            employee.Add(new Employee { EmployeeId = 7,  Role = "Funding" ,Team = "1" });
+            employee.Add(new Employee { EmployeeId = 8 , Role = "Resource Allocation" ,Team = "1" });
+            employee.Add(new Employee { EmployeeId = 9,  Role = "Targeting" ,Team = "1" });
+            employee.Add(new Employee { EmployeeId = 11,  Role = "Evaluation" ,Team = "1" });
+            employee.Add(new Employee { EmployeeId = 156 , Role = "HR Team", Team = "0" });
+            employee.Add(new Employee { EmployeeId = 13 , Role = "Recruitment", Team = "156" });
+            employee.Add(new Employee { EmployeeId = 113 , Role = "Training" ,Team = "156" });
+            employee.Add(new Employee { EmployeeId = 112 , Role = "Employee Relation" ,Team = "156" });
+            employee.Add(new Employee { EmployeeId = 14 , Role = "Record Keeping", Team = "156" });
+            employee.Add(new Employee { EmployeeId = 17 , Role = "Production and Sales Team" ,Team = "0" });
+            employee.Add(new Employee { EmployeeId = 119,  Role = "Design", Team = "17" });
+            employee.Add(new Employee { EmployeeId = 19 , Role = "Operation", Team = "17" });
+            employee.Add(new Employee { EmployeeId = 20 , Role = "Support" ,Team = "17" });
+            employee.Add(new Employee { EmployeeId = 21 , Role = "Quality Assurance" ,Team = "17" });
+            employee.Add(new Employee { EmployeeId = 23 , Role = "Customer Interaction" ,Team = "17" });
+            employee.Add(new Employee { EmployeeId = 24 , Role = "Support and Maintenance" ,Team = "17" });
+            employee.Add(new Employee { EmployeeId = 25 , Role = "Task Coordination", Team = "17" });
 
 //Set parentId and id for DataSourceSettings
 DataSourceSettings setting = new DataSourceSettings();
 setting.DataSource = employee;
-setting.Id = "EmpiD";
+setting.Id = "EmployeeId";
 setting.ParentId = "Team";
 diagram.DataSourceSettings = setting;
 diagram.LayoutManager = new LayoutManager() { Layout = new DirectedTreeLayout() { TreeOrientation = TreeOrientation.TopToBottom, Type = LayoutType.Organization } };

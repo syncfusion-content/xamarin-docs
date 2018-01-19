@@ -25,7 +25,6 @@ The following code illustrates how to add ports to Node.
                         </control:Node.Ports >
 </control:Node>
 {% endhighlight %}
-# 
 {% highlight c# %}
 //Creating node instance
 Node node1 = new Node() { OffsetX = 300, OffsetY = 300, Width = 100, Height = 100, ShapeType = ShapeType.Rectangle };
@@ -82,7 +81,7 @@ The following code illustrates how to customization a port.
 {% tabs %}
 {% highlight xml %}
 <control:Node x:Name="node1" OffsetX="300" OffsetY="300" Width="100" Height="100" ShapeType="Rectangle" >
-    c--><!--reating port instance--><!--
+    <!--creating port instance-->
     <control:Node.Ports >
         <control:PortCollection>
             <control:Port x:Name="port1" NodeOffsetX="0.5" NodeOffsetY="1" Height="10" Width="10" ShapeType=" Circle">

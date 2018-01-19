@@ -8,15 +8,15 @@ documentation: UG
 ---
 # Load More
 
-The SfDataGrid allows enabling `LoadMore` option by setting the [SfDataGrid.AllowLoadMore](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowLoadMore.html) property to `true`, and by setting the [SfDataGrid.LoadMoreCommand](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~LoadMoreCommand.html) property. When `LoadMore` is enabled, the control provides an option to load a subset of data to its data source at runtime using the [LoadMoreView](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.LoadMoreView.html). 
+The data grid enables `LoadMore` option when the [SfDataGrid.AllowLoadMore](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowLoadMore.html) property is set to `true`, and also by setting the [SfDataGrid.LoadMoreCommand](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~LoadMoreCommand.html) property. When `LoadMore` is enabled, the control loads a subset of data to its data source at runtime using [LoadMoreView](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.LoadMoreView.html). 
 
-When the grid reaches maximum offset while scrolling down, an interactive load more view is displayed in view. On tapping the load more view, it triggers a command to add more data to the data source of the grid at runtime.
+When the grid reaches maximum offset while scrolling down, an interactive load more view is displayed. Tapping the load more view triggers a command to add more data to the data source of the grid at runtime.
 
-## LoadMoreCommand
+## Load more command
 
-The SfDataGrid allows loading records to its data source at runtime by triggering an `ICommand` binded to the `SfDataGrid.LoadMoreCommand` property. When tapping the load more view, if the `CanExecute` of the `ICommand` returns `true`, this command triggered to load the records at runtime.
+The data grid load records to its data source at runtime by triggering an `ICommand` bound to the `SfDataGrid.LoadMoreCommand` property. When the load more view is tapped, the `CanExecute` of the `ICommand` returns `true`, and this command is triggered to load the records at runtime.
  
-Set the [SfDataGrid.IsBusy](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~IsBusy.html) property to `true` before loading the items to notify the grid, that more items are loaded to it. Set the property to `false` after loading the items to the grid. When loading the items, alter the time for the `LoadMore` animation from the sample by setting a delay based on the requirement.
+Set the [SfDataGrid.IsBusy](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~IsBusy.html) property to `true` before loading items to notify the grid that more items are to be loaded. Set the property to `false` after loading items to the grid. When loading items, alter the time for the `LoadMore` animation from the sample by setting a delay based on the requirement.
 
 To enable and load items at runtime, follow the code example:
 
@@ -133,9 +133,9 @@ Customize the text displayed in the `LoadMoreView` by setting the [SfDataGrid.Lo
 dataGrid.LoadMoreText = "Load More Items"; 
 {% endhighlight %}
 
-## Customize LoadMoreView position
+## Customize load more view position
 
-Customize the position in which the `LoadMoreView` is displayed to either `top` or `bottom` based on the requirements.
+Customize the displayed `LoadMoreView` to either `top` or `bottom` based on the requirement.
  
 {% highlight c# %}
 //Enable load more in SfDataGrid
@@ -144,9 +144,9 @@ dataGrid.LoadMorePosition = LoadMoreViewPosition.Bottom;
 
 ## Customize LoadMoreView
 
-The SfDataGrid also allows customizing the `LoadMoreView` based on the requirements. To do this, write custom `LoadMoreView` class inheriting from the `LoadMoreView`, and perform the `LoadMoreOperation` based on the requirement.
+The data grid also customizes `LoadMoreView` based on the requirements. To do this, write custom `LoadMoreView` class inheriting from `LoadMoreView`, and perform the `LoadMoreOperation`.
 
-To customize the `LoadMoreView`, follow the code example:
+To customize `LoadMoreView`, follow the code example:
  
 {% highlight c# %}
 public class CustomLoadMoreView : LoadMoreView
@@ -177,6 +177,6 @@ public class CustomLoadMoreView : LoadMoreView
 }
 {% endhighlight %}
 
-Running the application renders the following output.
+Running application renders the following output:
 
 ![](SfDataGrid_images/LoadMore.png)

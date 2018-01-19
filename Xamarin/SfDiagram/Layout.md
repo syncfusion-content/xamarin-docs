@@ -29,7 +29,7 @@ We have explained the Automatic Layout with Employee class and DataSourceSetting
 }
 {% endhighlight %}
 {% endtabs %}
-##
+
 ## Initialize Data Source Settings 
 {% tabs %}
 {% highlight xml %}
@@ -40,7 +40,6 @@ We have explained the Automatic Layout with Employee class and DataSourceSetting
       </control:SfDiagram.DataSourceSettings>
 
 {% endhighlight %}
-# 
 {% highlight c# %}
 // Initializes the DataSourceSettings 
  DataSourceSettings setting = new DataSourceSettings();

@@ -22,7 +22,6 @@ The following code illustrates how to customize the page size and the appearance
 </diagram:SfDiagram.PageSettings> 
 </diagram:SfDiagram>
 {% endhighlight %}
-# 
 {% highlight c# %}
 //Sets Page background 
 diagram.BackgroundColor = Color.Lime; 

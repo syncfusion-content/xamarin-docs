@@ -27,7 +27,6 @@ The following code snippet illustrates how to create the node.
     </syncfusion:SfDiagram.Nodes>
 </syncfusion:SfDiagram>
 {% endhighlight %}
-# 
 {% highlight c# %}
 //Initialize Node
 Node n = new Node() { Width = 120, Height = 40, OffsetX = 300,OffsetY = 60, ShapeType = ShapeType.Ellipse };

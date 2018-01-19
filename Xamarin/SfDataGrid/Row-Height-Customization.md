@@ -80,7 +80,7 @@ dataGrid.QueryingRowHeights(2,5);
 
 ## GridRowSizingOptions
 
-The data grid allows you to customize the height of grid rows with various customizing options while autocalculating the row height based on the content using the `GridRowSizingOptions`.
+The data grid allows you to customize the height of grid rows with various customizing options while auto calculating the row height based on the content using the `GridRowSizingOptions`.
 
 ### Calculate height based on certain columns
 
@@ -135,13 +135,13 @@ To calculate the height including hidden columns, follow the code example:
 
 The data grid allows you to customize the height of a grid row on demand by handling the [SfDataGrid.QueryRowHeight](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~QueryRowHeight_EV.html) event. This event is raised for the grid rows whenever they come into view. So the height of a particular row can be customized on demand using the row index. Setting the height to zero will collapse all rows in the grid. 
   
-## Autofit the grid rows based on content
+## Auto fit the grid rows based on content
 
 The data grid supports the AutoRowHeight feature. The height of a row can be customized based on the content. This can be achieved using the `SfDatagrid.QueryRowHeight` event and the [SfDatagrid.GetRowHeight](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGridHelpers~GetRowHeight(SfDataGrid,Int32,GridRowSizingOptions).html) method. The `SfDatagrid.QueryRowHeight` event returns the row height on demand. The `SfDatagrid.GetRowHeight` method returns the height of the row based on the content.
 
 N> The row drag and drop operation is not supported while customizing the row height based on content.
 
-To hook the `SfDatagrid.QueryRowHeight` event and autofit the height of a row based on content, follow the code example:
+To hook the `SfDatagrid.QueryRowHeight` event and auto fit the height of a row based on content, follow the code example:
 
 {% highlight c# %}
 //Hooks QueryRowHeight event in SfDataGrid to set the row height on demand

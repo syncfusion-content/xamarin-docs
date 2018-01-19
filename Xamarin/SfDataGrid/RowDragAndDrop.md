@@ -26,7 +26,7 @@ dataGrid.AllowDraggingRow = true;
 
 The data grid performs drag-and-drop operations with both data rows and groups as in the following scenarios:
 
- * Records can be reordered to any position with autoscrolling.
+ * Records can be reordered to any position with auto scrolling.
  * Group position can be reordered using drag and drop. But no groups can be added inside other groups. 
  * Data rows can be reordered within the same group or into other groups, as well. 
 

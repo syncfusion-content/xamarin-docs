@@ -11,26 +11,26 @@ documentation: ug
 
 The data grid interactively supports manipulation of data using [SfDataPager](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager_namespace.html# “”) control. This provides built-in options to page data on demand when dealing with large volumes of data. `SfDataPager` can be placed above or below based on the requirement to easily manage data paging.
 
-To use paging functionality in SfDataGrid, add the following namespace to the project:
+To use paging functionality in the data grid, add the following namespace to the project:
 [Syncfusion.SfDataGrid.XForms.DataPager](http://help.syncfusion.com/cr/xamarin/sfdatagrid# “”)
 
 There are two different modes in paging:
 
  * NormalPaging: NormalPaging loads the entire data collection to the `SfDataPager`.
- * OnDemandPaging: OnDemandPaging loads data to the current page dynamically in the `SfDataPager`.
+ * OnDemandPaging: OnDemandPaging loads data to the current page dynamically in `SfDataPager`.
 
 ## Normal paging
 
 The data grid performs paging of data using the `SfDataPager`. To enable paging, follow the procedure:
 
  * Create a new SfDataPager instance, and bind the data collection to the [SfDataPager.Source](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager~Source.html# “”) property based on which [SfDataPager.PagedSource](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager~PagedSource.html# “”) is created internally. 
- * Bind the `PagedSource` property to the [ItemsSource](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ItemsSource.html# “”) of the SfDataGrid. 
+ * Bind the `PagedSource` property to the [ItemsSource](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ItemsSource.html# “”) of the data grid. 
  * Set the number of rows to be displayed on a page by setting the [SfDataPager.PageSize](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager~PageSize.html# “”) property.
  * Set the number of buttons that should be displayed in view by setting the [SfDataPager.NumericButtonCount](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager~NumericButtonCount.html# “”) property.
 
 N> The `SfDataPager.PageSize` property should not be assigned with value 0.
 
-The following code example illustrates using `SfDataPager` with SfDataGrid control:
+The following code example illustrates using `SfDataPager` with the data grid control:
 
 {% tabs %}
 {% highlight xaml %}
@@ -125,7 +125,7 @@ To load current page item dynamically, hook the [OnDemandLoading](http://help.sy
 
 The `OnDemandLoading` event is triggered when the pager moves to the corresponding page. It contains the following event arguments:
 
- * [StartIndex](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.OnDemandLoadingEventArgs~StartIndex.html# “”): Displays corresponding page start index.
+ * [StartIndex](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.OnDemandLoadingEventArgs~StartIndex.html# “”): Displays the corresponding page start index.
  * [PageSize](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.OnDemandLoadingEventArgs~PageSize.html# “”): Displays the number of items to be loaded for that page.
 
 To load data for the DataPager control dynamically, follow the code example:
@@ -154,7 +154,7 @@ private void OnDemandPageLoading(object sender, OnDemandLoadingEventArgs args)
 
 ## AppearanceManager
 
-The SfDatagrid allows changing the appearance by writing a style class overriding from the `AppearanceManager`, and assigning it to the [SfDataPager.AppearanceManager](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager~AppearanceManager.html) property.
+The data grid allows changing the appearance by writing a style class overriding from the `AppearanceManager`, and assigning it to the [SfDataPager.AppearanceManager](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager~AppearanceManager.html) property.
   
 To apply custom style, follow the code example:
 

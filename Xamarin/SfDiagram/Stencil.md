@@ -15,7 +15,7 @@ Stencil has a collection of Symbols. Stencil is used to clone the desired symbol
 xmlns:sfDiagram="clr-namespace:Syncfusion.SfDiagram.XForms;assembly=Syncfusion.SfDiagram.XForms"
 {% endhighlight %}
 {% endtabs %}
-## 
+
 ## Add Default shapes into stencil
 The following example illustrates how to add the Symbol into a Collection:
 {% tabs %}
@@ -49,7 +49,6 @@ The following example illustrates how to add the Symbol into a Collection:
       </Grid>
 </ContentPage.Content>
 {% endhighlight %}
-# 
 {% highlight c# %}
 //Add Symbols into SymbolCollection
 SymbolCollection Collection1 = new SymbolCollection();
@@ -173,19 +172,19 @@ We can able to add category of symbol group heading in stencil. The following ex
         <control:Node Height="50" Width="50" ShapeType="Triangle" />
         <control:Node Height="50" Width="50" ShapeType="RightAngleTriangle" />
       </control:SymbolCollection>
-<!—SymbolCollection2-->
+<!--SymbolCollection2-->
       <control:SymbolCollection x:Key="collection2">
         <control:Node Height="50" Width="50" ShapeType="RoundedRectangle" />
         <control:Node Height="50" Width="50" ShapeType="Rectangle" />
         <control:Node Height="50" Width="50" ShapeType="Diamond" />
         <control:Node Height="50" Width="50" ShapeType="Parallelogram" />
       </control:SymbolCollection>
-<!—SymbolCollection3-->
+<!--SymbolCollection3-->
       <control:SymbolCollection x:Key="collection3">
         <control:Connector SourcePoint="50,50" TargetPoint="100,100" SegmentType="OrthoSegment" />
         <control:Connector SourcePoint="50,50" TargetPoint="100,100" SegmentType="StraightSegment" />
       </control:SymbolCollection>
-<!— Add category of symbolgroup with heading text -->
+<!--Add category of symbolgroup with heading text -->
       <control:SymbolGroups x:Key="groups">
        <control:SymbolGroup SymbolSource="{StaticResource collection1}" HeaderName="BasicShapes" />
         <control:SymbolGroup SymbolSource="{StaticResource collection2}" HeaderName="Flow Chart" />

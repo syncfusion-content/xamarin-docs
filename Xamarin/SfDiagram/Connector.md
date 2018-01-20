@@ -1,4 +1,4 @@
----
+﻿---
 title: Adding Connectors in Diagram control for Xamarin.Forms
 description: Learn how to add connector in diagram control.
 platform: Xamarin
@@ -22,7 +22,6 @@ Connector can be created by defining the start and end points.
     </control:SfDiagram.ConnectorCollection>
  </control:SfDiagram.Connectors>  
 {% endhighlight %}
-# 
 {% highlight c# %}
 // creating connector instance
 var connector1 = new Connector() 
@@ -46,10 +45,10 @@ diagram.AddNode(node2);
 // creating connector instance and connecting nodes with it
 var connector1 = new Connector()
 { 
-SourceNode = node1, 
-TargetNode = node2 
-}; 
-diagram.AddConnector(connector1); 
+SourceNode = node1,
+TargetNode = node2
+};
+diagram.AddConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
 ![](Connector_images/Connector_img1.jpeg)
@@ -64,15 +63,15 @@ The following code example illustrates how to create Port and connect using that
 // creating node  instance
 var node1 = new Node(100, 100, 100, 100);
 //adding port instance to the node	
-node1.Ports.Add(new Port() { NodeOffsetX = 0.5, NodeOffsetY = 0 }); 
+node1.Ports.Add(new Port() { NodeOffsetX = 0.5, NodeOffsetY = 0 });
 //adding node to the diagram 
-diagram.AddNode(node1); 
+diagram.AddNode(node1);
 // creating node  instance
 var node2 = new Node(300, 300, 100, 100);
 //adding port instance to the node
-node2.Ports.Add(new Port() { NodeOffsetX = 0.5, NodeOffsetY = 1 }); 
+node2.Ports.Add(new Port() { NodeOffsetX = 0.5, NodeOffsetY = 1 });
 //adding node to the diagram 
-diagram.AddNode(node2); 
+diagram.AddNode(node2);
 //creating and connecting the ports with connector
 var connector1 = new Connector() 
 { 
@@ -89,6 +88,7 @@ diagram.AddConnector(connector1);
 
 ## Segments
 The path of the Connector is defined with a collection of segments.
+
 ## Straight
 Straight segment allows to create a straight line. To create a straight line, you should specify the segment as StraightSegment.The following code example illustrates how to create a default straight segment.
 {% tabs %}
@@ -108,8 +108,8 @@ var connector1 = new Connector()
 SourcePoint=new Point(100,100),
 TargetPoint=new Point(300,300), 
 SegmentType= SegmentType.StraightSegment
-}; 
-diagram.AddConnector(connector1); 
+};
+diagram.AddConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
 ![](Connector_images/Connector_img3.jpeg)
@@ -134,8 +134,8 @@ var connector1 = new Connector()
 SourcePoint=new Point(100,100),
 TargetPoint=new Point(300,300), 
 SegmentType= SegmentType.OrthoSegment
-}; 
-diagram.AddConnector(connector1); 
+};
+diagram.AddConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
 ![](Connector_images/Connector_img4.jpeg)
@@ -163,7 +163,7 @@ SourceDecoratorType = DecoratorType.Circle,
 TargetDecoratorType = DecoratorType.Diamond,
 SegmentType= SegmentType.StraightSegment
 };
-diagram.AddConnector(connector1); 
+diagram.AddConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
 ![](Connector_images/Connector_img5.jpeg)
@@ -229,7 +229,7 @@ var connector1 = new Connector()
 SourcePoint=new Point(100,100),
 TargetPoint= new Point(300,300),
 SegmentType= SegmentType.StraightSegment
-}; 
+};
 //defining connector styles
 connector1.Style = new Syncfusion.SfDiagram.XForms.Style()
 { 
@@ -250,11 +250,11 @@ The following code example illustrates how to customize the appearance of the de
 <control:SfDiagram.Connectors>
     <control:SfDiagram.ConnectorCollection>
       <control:Connector SourcePoint="100,100" TargetPoint="300,300" TargetDecoratorType="Diamond" SourceDecoratorType="Circle">
-       <!—defining decorator style for a connector-->
+       <!--defining decorator style for a connector-->
        <control:Connector.SourceDecoratorStyle>
          <control:DecoratorStyle  Fill="Green" Stroke="Grey" StrokeThickness="5" Width="12"/>
       </control:Connector.SourceDecoratorStyle>
-      <!—defining decorator style for a connector-->
+      <!--defining decorator style for a connector-->
      <control:Connector.TargetDecoratorStyle>
          <control:DecoratorStyle Fill="Yellow" Stroke="Brown" StrokeThickness="4" Width="10"/>
        </control:Connector.TargetDecoratorStyle>
@@ -288,7 +288,7 @@ Fill = Color.Green,
 Stroke = Color.Gray, 
 StrokeThickness = 5, 
 Width = 12
-}; 
+};
 diagram.AddConnector(connector1);
 
 {% endhighlight %}

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Adding Connectors in Diagram control for Xamarin.Forms
 description: Learn how to add connector in diagram control.
 platform: Xamarin

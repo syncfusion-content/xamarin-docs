@@ -6,7 +6,6 @@ control: Diagram
 documentation: UG
 keywords: 
 ---
-
 # Connector
 Connectors are objects used to create link between two Points, Nodes or ports to represent the relationships between them.
 
@@ -16,11 +15,11 @@ Connector can be created by defining the start and end points.
 {% highlight xml %}
 <!--creating connector instance-->
 <control:SfDiagram.Connectors>
-    <control:SfDiagram.ConnectorCollection>
+    <control:ConnectorCollection>
       <control:Connector SourcePoint="100,100" TargetPoint="300,300">
       </control:Connector>
-    </control:SfDiagram.ConnectorCollection>
- </control:SfDiagram.Connectors>  
+    </control:ConnectorCollection>
+ </control:SfDiagram.Connectors>
 {% endhighlight %}
 {% highlight c# %}
 // creating connector instance
@@ -60,13 +59,13 @@ The SourcePort and TargetPort properties allow to create connections between som
 The following code example illustrates how to create Port and connect using that ports.
 {% tabs %}
 {% highlight c# %}
-// creating node  instance
+// creating node instance
 var node1 = new Node(100, 100, 100, 100);
-//adding port instance to the node	
+//adding port instance to the node
 node1.Ports.Add(new Port() { NodeOffsetX = 0.5, NodeOffsetY = 0 });
 //adding node to the diagram 
 diagram.AddNode(node1);
-// creating node  instance
+// creating node instance
 var node2 = new Node(300, 300, 100, 100);
 //adding port instance to the node
 node2.Ports.Add(new Port() { NodeOffsetX = 0.5, NodeOffsetY = 1 });
@@ -95,10 +94,10 @@ Straight segment allows to create a straight line. To create a straight line, yo
 {% highlight xml %}
 <!--creating connector instance with define its segment type-->
 <control:SfDiagram.Connectors>
-    <control:SfDiagram.ConnectorCollection>
+    <control:ConnectorCollection>
       <control:Connector SourcePoint="100,100" TargetPoint="300,300" SegmentType="StraightSegment">
       </control:Connector>
-    </control:SfDiagram.ConnectorCollection>
+    </control:ConnectorCollection>
  </control:SfDiagram.Connectors>
 {% endhighlight %}
 {% highlight c# %}
@@ -121,10 +120,10 @@ Set the segment as OrthogonalSegment to create the default orthogonal segment. T
 {% highlight xml %}
 <!--creating connector instance with define its segment type-->
 <control:SfDiagram.Connectors>
-    <control:SfDiagram.ConnectorCollection>
+    <control:ConnectorCollection>
       <control:Connector SourcePoint="100,100" TargetPoint="300,300" SegmentType="OrthoSegment">
       </control:Connector>
-    </control:SfDiagram.ConnectorCollection>
+    </control:ConnectorCollection>
  </control:SfDiagram.Connectors>
 {% endhighlight %}
 {% highlight c# %}
@@ -147,42 +146,42 @@ The SourceDecoratorStyle and TargetDecoratorStyle properties allows to define t
 {% highlight xml %}
 <!--creating connector instance with decorator-->
 <control:SfDiagram.Connectors>
-    <control:SfDiagram.ConnectorCollection>
+    <control:ConnectorCollection>
       <control:Connector SourcePoint="100,100" TargetPoint="300,300" SegmentType="StraightSegment"  TargetDecoratorType="Diamond" SourceDecoratorType="Circle">
      </control:Connector>
-   </control:SfDiagram.ConnectorCollection>
+   </control:ConnectorCollection>
   </control:SfDiagram.Connectors>
 {% endhighlight %}
 {% highlight c# %}
 //creating connector instance with decorator-->
-var connector1 = new Connector() 
+var connector1 = new Connector()
 { 
-SourcePoint = new Point(100,100), 
-TargetPoint = new Point(300,300), 
-SourceDecoratorType = DecoratorType.Circle, 
+SourcePoint = new Point(100,100),
+TargetPoint = new Point(300,300),
+SourceDecoratorType = DecoratorType.Circle,
 TargetDecoratorType = DecoratorType.Diamond,
 SegmentType= SegmentType.StraightSegment
 };
 diagram.AddConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img5.jpeg)
+![](Connector_images/Connector_img6.jpeg)
 
 ## Remove Connector
 Connector can be removed or detached from connection in two ways.
-1.Directing passing the connector as parameter to Remove connector method in diagram
+1.By passing the connector as parameter to Remove connector method in diagram
 The following code example illustrates how to remove a connector from connection
 {% tabs %}
 {% highlight c# %}
 //creating connector instance
-var connector1 = new Connector() 
+var connector1 = new Connector()
 { 
 SourcePoint=new Point(100,100),
-TargetPoint=new Point(300,300) 
+TargetPoint=new Point(300,300)
 };
 //adding connector to the diagram
 diagram.AddConnector(connector1);
-//removing connector from the diagram using object. 
+//removing connector from the diagram using object.
 diagram.RemoveConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
@@ -191,14 +190,14 @@ The following code example illustrates how to remove a connector from connection
 {% tabs %}
 {% highlight c# %}
 //creating connector instance
-var connector1 = new Connector() 
-{ 
+var connector1 = new Connector()
+{
 SourcePoint=new Point(100,100),
-TargetPoint=new Point(300,300) 
+TargetPoint=new Point(300,300)
 };
 //adding connector to the diagram
 diagram.AddConnector(connector1);
-//removing connector from the diagram using index. 
+//removing connector from the diagram using index.
 diagram.Connectors.RemoveAt(0);
 {% endhighlight %}
 {% endtabs %}
@@ -212,19 +211,19 @@ The following code example illustrates how to customize the Connector appearance
 {% highlight xml %}
 <!--creating connector instance-->
 <control:SfDiagram.Connectors>
-    <control:SfDiagram.ConnectorCollection>
+    <control:ConnectorCollection>
       <control:Connector SourcePoint="100,100" TargetPoint="300,300">
         <!--defining connector styles-->
        <control:Connector.Style>
          <control:Style StrokeStyle="Dashed" StrokeWidth="4"/>
        </control:Connector.Style>
       </control:Connector>
-    </control:SfDiagram.ConnectorCollection>
+    </control:ConnectorCollection>
   </control:SfDiagram.Connectors>
 {% endhighlight %}
 {% highlight c# %}
 // creating connector instance
-var connector1 = new Connector() 
+var connector1 = new Connector()
 {
 SourcePoint=new Point(100,100),
 TargetPoint= new Point(300,300),
@@ -233,14 +232,14 @@ SegmentType= SegmentType.StraightSegment
 //defining connector styles
 connector1.Style = new Syncfusion.SfDiagram.XForms.Style()
 { 
-StrokeBrush = new SolidBrush(Color.Gray), 
-StrokeStyle = StrokeStyle.Dashed, 
-StrokeWidth = 4 
+StrokeBrush = new SolidBrush(Color.Gray),
+StrokeStyle = StrokeStyle.Dashed,
+StrokeWidth = 4
 };
 diagram.AddConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img6.jpeg)
+![](Connector_images/Connector_img7.jpeg)
 
 ## Decorator Appearance
 The following code example illustrates how to customize the appearance of the decorator.
@@ -248,7 +247,7 @@ The following code example illustrates how to customize the appearance of the de
 {% highlight xml %}
 <!--creating connector instance with decorator-->
 <control:SfDiagram.Connectors>
-    <control:SfDiagram.ConnectorCollection>
+    <control:ConnectorCollection>
       <control:Connector SourcePoint="100,100" TargetPoint="300,300" TargetDecoratorType="Diamond" SourceDecoratorType="Circle">
        <!--defining decorator style for a connector-->
        <control:Connector.SourceDecoratorStyle>
@@ -259,39 +258,37 @@ The following code example illustrates how to customize the appearance of the de
          <control:DecoratorStyle Fill="Yellow" Stroke="Brown" StrokeThickness="4" Width="10"/>
        </control:Connector.TargetDecoratorStyle>
       </control:Connector>
-    </control:SfDiagram.ConnectorCollection>
-  </control:SfDiagram.Connectors> 
-
+    </control:ConnectorCollection>
+  </control:SfDiagram.Connectors>
 {% endhighlight %}
 {% highlight c# %}
 // creating connector instance with decorator
-var connector1 = new Connector() 
+var connector1 = new Connector()
 {
 SourcePoint=new Point(100,100),
 TargetPoint= new Point(300,300),
 SegmentType= SegmentType.StraightSegment,
-SourceDecoratorType = DecoratorType.Circle, 
-TargetDecoratorType = DecoratorType.Diamond 
+SourceDecoratorType = DecoratorType.Circle,
+TargetDecoratorType = DecoratorType.Diamond
 };
-//defining decorator style for a connector 
-connector1.TargetDecoratorStyle = new DecoratorStyle() 
+//defining decorator style for a connector
+connector1.TargetDecoratorStyle = new DecoratorStyle()
 { 
-Fill = Color.Yellow, 
-Stroke = Color.Brown, 
-StrokeThickness = 4, 
-Width = 12 
+Fill = Color.Yellow,
+Stroke = Color.Brown,
+StrokeThickness = 4,
+Width = 12
 };
 // defining decorator style for a connector
-connector1.SourceDecoratorStyle = new DecoratorStyle() 
-{ 
-Fill = Color.Green, 
-Stroke = Color.Gray, 
-StrokeThickness = 5, 
+connector1.SourceDecoratorStyle = new DecoratorStyle()
+{
+Fill = Color.Green,
+Stroke = Color.Gray,
+StrokeThickness = 5,
 Width = 12
 };
 diagram.AddConnector(connector1);
-
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img7.jpeg)
+![](Connector_images/Connector_img8.jpeg)
 

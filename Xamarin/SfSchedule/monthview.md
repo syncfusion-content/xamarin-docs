@@ -8,26 +8,57 @@ documentation: ug
 ---   
     
 # Month View
-`MonthView` of `SfSchedule` used to display entire dates of the specific month, current month will be displayed by default initially. Current date color is differentiated with other dates of the current month, also the color differentiation for dates will be applicable for previous and next month dates. Single notation will be displayed in the cell to indicate the appointment availability in the specific cell.
+`MonthView` of `SfSchedule` used to display entire dates of the specific month, current month will be displayed by default initially. Current date color is differentiated with other dates of the current month, also the color differentiation for dates will be applicable for previous and next month dates.
 
 {% tabs %}
 {% highlight xaml %}
 
         <schedule:SfSchedule 
-				x:Name="schedule" 
-				ScheduleView="MonthView">
+			x:Name="schedule" 
+			ScheduleView="MonthView">
 		</schedule:SfSchedule>
 
 {% endhighlight %}
 {% highlight c# %}
 
-			//setting schedule view
-			schedule.ScheduleView = ScheduleView.MonthView;
+		//setting schedule view
+		schedule.ScheduleView = ScheduleView.MonthView;
 
 {% endhighlight %}
 {% endtabs %}
 
 ![](monthview_images/monthview.png)
+
+## Month Appointment indicator
+In `MonthView`, appointments are not viewed in the month cell instead appointment indicators are drawn. You can customize the number of appointment indicators displayed in month cell using  [AppointmentIndicatorCount](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~AppointmentIndicatorCount.html) property of [MonthViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings.html) in `SfSchedule`, by default Appointment indicator count is 3.
+
+{% tabs %}
+{% highlight xaml %}
+
+        <schedule:SfSchedule 
+                x:Name="schedule"
+                ScheduleView="MonthView">
+            <schedule:SfSchedule.MonthViewSettings>
+                <schedule:MonthViewSettings 
+					AppointmentIndicatorCount = "2" >
+                </schedule:MonthViewSettings>
+            </schedule:SfSchedule.MonthViewSettings>
+        </schedule:SfSchedule> 
+
+{% endhighlight %}
+{% highlight c# %}
+
+			//creating new instance for MonthViewSettings
+			MonthViewSettings monthViewSettings = new MonthViewSettings();
+			monthViewSettings.AppointmentIndicatorCount = 2;
+			schedule.MonthViewSettings = monthViewSettings;
+
+{% endhighlight %}
+{% endtabs %}
+
+>**Notes**: If appointments count are lesser than the AppointmentIndicatorCount value in the particular day, then according to number of appointments available, indicator will be displayed in the month cell.Maximum number of appointment indicators drawn in the month cell is 6 in android and ios platforms. 
+
+![](monthview_images/appointmentindicator.png)
 
 ## Month InlineView
 You can use [ShowAppointmentsInline](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ShowAppointmentsInline.html) bool property in `SfSchedule` to enable / disable the month inline view, by setting `ShowAppointmentsInline` property as `true` you can view the Appointments in the specific date. 
@@ -49,7 +80,7 @@ You can use [ShowAppointmentsInline](http://help.syncfusion.com/cr/cref_files/xa
 {% endhighlight %}
 {% endtabs %}
 
-![](monthview_images/monthinlineview.png)
+![](monthview_images/appointmentindicator.png)
 
 >**Notes**: If appointments not there in the selected day, Inline view displays the text as "No Events"      
 

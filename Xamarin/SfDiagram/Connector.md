@@ -139,31 +139,6 @@ diagram.AddConnector(connector1);
 {% endtabs %}
 ![](Connector_images/Connector_img4.jpeg)
 
-## Curve
-Curve segments are used to create curve connector type. Set the segment as CurveSegment to create the default curve segment. The following code example illustrates how to create a default curve segment.
-{% tabs %}
-{% highlight xml %}
-<!--creating connector instance with define its segment type-->
- <control:SfDiagram.Connectors>
-    <control:ConnectorCollection>
-      <control:Connector SourcePoint="100,100" TargetPoint="300,300" SegmentType="CurveSegment">
-      </control:Connector>
-    </control:ConnectorCollection>
- </control:SfDiagram.Connectors>
-{% endhighlight %}
-{% highlight c# %}
-// creating connector instance with define its segment type
-var connector1 = new Connector()
-{
-SourcePoint=new Point(100,100),
-TargetPoint=new Point(300,300),
-SegmentType= SegmentType.CurveSegment
-};
-diagram.AddConnector(connector1);
-{% endhighlight %}
-{% endtabs %}
-![](Connector_images/Connector_img5.jpeg)
-
 ## Decorator
 Start and end points of a Connector can be decorated with some customizable shapes like arrows, circles, diamond and square. You can decorate the connection end points with the SourceDecorator and TargetDecorator properties of Connector.
 The SourceDecoratorStyle and TargetDecoratorStyle properties allows to define the shape of the decorators. The following code example illustrates how to create decorators of various shapes.
@@ -194,7 +169,7 @@ diagram.AddConnector(connector1);
 
 ## Remove Connector
 Connector can be removed or detached from connection in two ways.
-1.Directing passing the connector as parameter to Remove connector method in diagram
+1.By passing the connector as parameter to Remove connector method in diagram
 The following code example illustrates how to remove a connector from connection
 {% tabs %}
 {% highlight c# %}

@@ -106,10 +106,48 @@ Visible dates can be restricted between certain range of dates, using [MinDispla
             int monthRange = 2; DateTime currentDate = DateTime.Now;
             //setting maximum display date
             DateTime maxDate = new DateTime(currentDate.Year, currentDate.Month + monthRange, currentDate.Day, 10, 0, 0);
-            schedule.MaxDisplayDate = maxDate
+            schedule.MaxDisplayDate = maxDate;
 
 
 {% endhighlight %}   
 
 
+## VisibleDatesChanged event
+You can get the visible dates of the Schedule using [VisibleDatesChangedEvent](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~VisibleDatesChangedEvent_EV.html) in `SfSchedule`. It is applicable in all the schedule views.The event handler receives an argument of type [VisibleDatesChangedEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.VisibleDatesChangedEventArgs.html) containing [visibleDates](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.VisibleDatesChangedEventArgs~visibleDates.html) and [Schedule](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.VisibleDatesChangedEventArgs~Schedule.html).
 
+{% highlight c# %} 
+
+        schedule.VisibleDatesChangedEvent += Schedule_VisibleDatesChangedEvent;
+        void Schedule_VisibleDatesChangedEvent(object sender, VisibleDatesChangedEventArgs e)
+		{
+		    var visibleDates = e.visibleDates;
+		    var Schedule = e.Schedule;
+    }
+{% endhighlight %}  
+
+`VisibleDatesChangedEvent` will be triggered when view is swiped back or forth and also when schedule view is switched dynamically.
+
+You can add appointments on demand in the visible date ranges in this event by setting DataSource property to schedule in the VisibleDatesChangedEvent.
+
+{% highlight c# %} 
+
+    void Schedule_VisibleDatesChangedEvent(object sender, VisibleDatesChangedEventArgs e)
+	{
+		schedule.DataSource = scheduleAppointmentCollection;
+	} 
+
+{% endhighlight %}  
+
+You can also move to specific time of the day or current time of day when view is swiped by setting specific time in MoveToDate property in the VisibleDatesChanged event. Such that when the schedule view is swiped, it moves to the mentioned time.  
+
+% highlight c# %
+
+         schedule.VisibleDatesChangedEvent += Schedule_VisibleDatesChangedEvent;
+        void Schedule_VisibleDatesChangedEvent(object sender, VisibleDatesChangedEventArgs e)
+    {
+        var date = DateTime.Now;
+		var formatDate = e.visibleDates[0];
+		schedule.MoveToDate = new DateTime(formatDate.Year, formatDate.Month, formatDate.Day, date.Hour, date.Minute, date.Second);
+    }
+
+{% endhighlight %}  

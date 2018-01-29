@@ -122,12 +122,12 @@ You can get the visible dates of the Schedule using [VisibleDatesChangedEvent](h
 		{
 		    var visibleDates = e.visibleDates;
 		    var Schedule = e.Schedule;
-    }
+        }
 {% endhighlight %}  
 
 `VisibleDatesChangedEvent` will be triggered when view is swiped back or forth and also when schedule view is switched dynamically.
 
-You can add appointments on demand in the visible date ranges in this event by setting DataSource property to schedule in the VisibleDatesChangedEvent.
+You can add appointments on demand based on the visible date range in this event by setting DataSource property to schedule in the VisibleDatesChangedEvent.
 
 {% highlight c# %} 
 

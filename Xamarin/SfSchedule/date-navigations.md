@@ -117,12 +117,12 @@ You can get the visible dates of the Schedule using [VisibleDatesChangedEvent](h
 
 {% highlight c# %} 
 
-        schedule.VisibleDatesChangedEvent += Schedule_VisibleDatesChangedEvent;
-        void Schedule_VisibleDatesChangedEvent(object sender, VisibleDatesChangedEventArgs e)
-		{
-		    var visibleDates = e.visibleDates;
-		    var Schedule = e.Schedule;
-        }
+    schedule.VisibleDatesChangedEvent += Schedule_VisibleDatesChangedEvent;
+    void Schedule_VisibleDatesChangedEvent(object sender, VisibleDatesChangedEventArgs e)
+    {
+        var visibleDates = e.visibleDates;
+        var Schedule = e.Schedule;
+    }
 {% endhighlight %}  
 
 `VisibleDatesChangedEvent` will be triggered when view is swiped back or forth and also when schedule view is switched dynamically.

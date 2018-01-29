@@ -140,7 +140,7 @@ You can add appointments on demand based on the visible date range in this event
 
 You can also move to specific time of the day or current time of day when view is swiped by setting specific time in MoveToDate property in the VisibleDatesChanged event. Such that when the schedule view is swiped, it moves to the mentioned time.  
 
-% highlight c# %
+{% highlight c# %}
 
          schedule.VisibleDatesChangedEvent += Schedule_VisibleDatesChangedEvent;
         void Schedule_VisibleDatesChangedEvent(object sender, VisibleDatesChangedEventArgs e)

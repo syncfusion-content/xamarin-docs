@@ -681,9 +681,104 @@ In the following code snippet, summary is defined for `Salary` and `CustomerID` 
 
 The data grid hosts any view(s) inside a group summary by setting the `GridSummaryColumn.Template` property. 
 
+### Displaying template for a row
+
+To load label in the group summary template for a row, follow the code example:
+
+{% highlight xaml%}
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:GroupSummaryConverter x:Key="SummaryConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+  <sfgrid:SfDataGrid x:Name="dataGrid"
+                   ItemsSource="{Binding OrdersInfo}">
+
+       <sfgrid:SfDataGrid.GroupSummaryTemplate>
+            <DataTemplate>
+                <StackLayout Orientation="Horizontal" BackgroundColor="Gray">
+                <Label Text="{Binding Converter={StaticResource SummaryConverter}, ConverterParameter = {x:Reference dataGrid} }"
+                                           TextColor="White"
+                                           FontSize="Large"
+                                           VerticalTextAlignment="Center"
+                                           HorizontalTextAlignment="Start"
+                                           LineBreakMode="NoWrap"
+                                           HorizontalOptions="FillAndExpand"
+                                           VerticalOptions="FillAndExpand">
+                    <Label.Style>
+                        <Style TargetType="Label">
+                            <Setter Property="FontAttributes" Value="Bold, Italic" />
+                        </Style>
+                    </Label.Style>
+                </Label>
+                </StackLayout>
+            </DataTemplate>
+       </sfgrid:SfDataGrid.GroupSummaryTemplate>
+
+   <sfgrid:SfDataGrid.GroupSummaryRows>
+            <sfgrid:GridSummaryRow ShowSummaryInRow="True">
+                
+                <sfgrid:GridSummaryRow.SummaryColumns>
+
+                    <sfgrid:GridSummaryColumn Name="Salary" 
+                                                  MappingName="Salary" 
+                                                  Format="{}{Sum}"
+                                                  SummaryType="DoubleAggregate">
+                    </sfgrid:GridSummaryColumn>
+
+                    <sfgrid:GridSummaryColumn Name="customerID" 
+                                                  MappingName="CustomerID" 
+                                                  Format="{}{Count}"
+                                                  SummaryType="CountAggregate">
+                    </sfgrid:GridSummaryColumn>
+
+                </sfgrid:GridSummaryRow.SummaryColumns>
+                
+            </sfgrid:GridSummaryRow>
+        </sfgrid:SfDataGrid.GroupSummaryRows>
+</sfgrid:SfDataGrid>
+
+{% endhighlight%}
+
+{% highlight c# %}
+
+// To write a converter, follow the code example:
+
+public class GroupSummaryConverter : IValueConverter
+    {
+
+        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            var data = value != null ? value as SummaryRecordEntry : null;
+            if (data != null)
+            {
+                SfDataGrid dataGrid = (SfDataGrid)parameter;
+                
+                var summaryText = SummaryCreator.GetSummaryDisplayText(data,"Salary",dataGrid.View);
+
+                return "Total Salary:" + " " + summaryText.ToString();
+            }
+            return null;
+        }
+
+        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            return null;
+        }
+    }
+
+
+{% endhighlight %}
+
+![](SfDataGrid_images/Row_Template.PNG)
+
+N> The `DataTemplateSelector` can also be directly assigned to the `GroupSummaryTemplate`.
+
 ### Displaying template for a column
 
-To load label and image in the group summary template for a column, follow the code example:
+To load label in the group summary template for a column, follow the code example:
 
 {% highlight xaml%}
 

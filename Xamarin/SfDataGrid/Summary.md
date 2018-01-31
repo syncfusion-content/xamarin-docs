@@ -173,7 +173,9 @@ The data grid hosts the any view(s) inside a caption summary row by setting the 
 
 ### Displaying template for a row
 
-To load label and image in the caption summary template, follow the code example:
+The template for a caption summary row can be set by using `SfDataGrid.CaptionSummaryTemplate` to customize it based on requirement. 
+
+Refer the below code example in which a label is loaded in the caption summary template of caption summary row.
 
 {% highlight xaml%}
 
@@ -258,7 +260,9 @@ N> The `DataTemplateSelector` can also be directly assigned to the `CaptionSumma
 
 ### Displaying template for a column
 
-To load label and image in caption summary template for a column, follow the code example:
+The template for a Caption summary column can be set by using `GridSummaryColumn.Template` to customize it based on requirement. 
+
+Refer the below code example in which a label is loaded in the template of caption summary column.
 
 {% highlight xaml%}
 

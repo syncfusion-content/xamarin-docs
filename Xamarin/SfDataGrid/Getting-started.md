@@ -557,11 +557,3 @@ The above exceptions can be resolved in two ways.
 
 
 ![](SfDataGrid_images/GettingStarted_img1.png)
-
-## Loading the data grid inside a pull-to-refresh
-
-The pull-to-refresh is a refreshing control that allows you to interact and refresh the view loaded in it. When the control is hosted inside the pull-to-refresh, it is used to refresh the item while performing the pull to refresh action. The steps to be followed to host the data grid inside pull-to-refresh [Click here](https://help.syncfusion.com/xamarin/sfpulltorefresh/customization#host-sfdatagrid-as-pullable-content).
-
-The Output will look like on iOS, Android, and Windows Phone devices as follows:
-
-![](SfDataGrid_images/SfDataGrid_SlideOnTop_XForms.gif)

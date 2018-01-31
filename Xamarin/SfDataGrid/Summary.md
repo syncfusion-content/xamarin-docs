@@ -169,11 +169,11 @@ N> The `CaptionSummaryColumn` text will be aligned based on the `GridColumn.Text
 
 ### Caption summary template
 
-The data grid hosts the any view(s) inside a caption summary row by setting the [SfDataGrid.CaptionSummaryTemplate](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~CaptionSummaryTemplateProperty.html) property. 
+The data grid hosts any view(s) inside a caption summary for the entire row or for individual columns by loading a template.  
 
 ### Displaying template for a row
 
-The template for a caption summary row can be set by using `SfDataGrid.CaptionSummaryTemplate` to customize it based on requirement. 
+The template for a caption summary row can be set by using [SfDataGrid.CaptionSummaryTemplate](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~CaptionSummaryTemplateProperty.html) to customize it based on requirement. 
 
 Refer the below code example in which a label is loaded in the caption summary template of caption summary row.
 
@@ -909,9 +909,9 @@ N> The above custom summaries section is explained using `CaptionSummary` but th
 
 ## Overriding summary renderer
 
-Each summary cell in the data grid is associated with its own renderer. It can be customized by overriding the available virtual methods in the corresponding renderer.
+Each summary cell in the data grid is associated with its own cell renderer. The data grid allows to extend this renderer to customize the grid cells based on your requirement. Customization can be applied by overriding the available virtual methods in the each cell renderer.
 
-Each summary has a specific key using which can be registered the custom summary renderer to the [SfDataGrid.CellRenderers](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~CellRenderers.html) collection. Remove the key from collection and add a new entry with the same key along with the instance of custom renderer to register.
+Each summary has a specific key using which the custom summary renderer can be registered to the [SfDataGrid.CellRenderers](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~CellRenderers.html) collection. Remove the key from collection and add a new entry with the same key along with the instance of custom renderer to register.
 
 <table>
 
@@ -943,7 +943,7 @@ Each summary has a specific key using which can be registered the custom summary
 
 ### Customizing table summary
 
-The data grid customizes the table summary by overriding the [GridTableSummaryCellRenderer](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridTableSummaryCellRenderer.html).
+The data grid allows customizing the table summary by extending the [GridTableSummaryCellRenderer](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridTableSummaryCellRenderer.html) class.
 
 To customize the table summary, follow the code example:
 
@@ -972,7 +972,6 @@ public class GridTableSummaryCellRendererExt : GridTableSummaryCellRenderer
         base.OnInitializeDisplayView(dataColumn, view);
         view.HorizontalTextAlignment = TextAlignment.Center;
         view.BackgroundColor = Color.DarkCyan;
-        view.FontAttributes = FontAttributes.Bold;
         view.FontSize = 16;
         view.TextColor = Color.White;
 

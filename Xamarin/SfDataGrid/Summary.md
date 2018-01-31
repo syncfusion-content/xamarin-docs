@@ -679,11 +679,13 @@ In the following code snippet, summary is defined for `Salary` and `CustomerID` 
 
 ### Group summary template
 
-The data grid hosts any view(s) inside a group summary by setting the `GridSummaryColumn.Template` property. 
+The data grid hosts any view(s) inside a group summary for the entire row or for individual columns by loading a template.  
 
 ### Displaying template for a row
 
-To load label in the group summary template for a row, follow the code example:
+The template for a group summary row can be set by using `SfDataGrid.GroupSummaryTemplate` to customize it based on requirement. 
+
+Refer the below code example in which a label is loaded in the group summary template of group summary row.
 
 {% highlight xaml%}
 
@@ -774,11 +776,13 @@ public class GroupSummaryConverter : IValueConverter
 
 ![](SfDataGrid_images/RowTemplate.PNG)
 
-N> The `DataTemplateSelector` can also be directly assigned to the `GroupSummaryTemplate`.
+N> The `DataTemplateSelector` can also be directly assigned to the `SfDataGrid.GroupSummaryTemplate`.
 
 ### Displaying template for a column
 
-To load label in the group summary template for a column, follow the code example:
+The template for a group summary column can be set by using `GridSummaryColumn.Template` to customize it based on requirement. 
+
+Refer the below code example in which a label is loaded in the template of group summary column.
 
 {% highlight xaml%}
 

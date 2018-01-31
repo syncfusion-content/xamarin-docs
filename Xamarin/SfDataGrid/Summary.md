@@ -772,7 +772,7 @@ public class GroupSummaryConverter : IValueConverter
 
 {% endhighlight %}
 
-![](SfDataGrid_images/Row_Template.PNG)
+![](SfDataGrid_images/RowTemplate.PNG)
 
 N> The `DataTemplateSelector` can also be directly assigned to the `GroupSummaryTemplate`.
 
@@ -868,7 +868,7 @@ To load label in the group summary template for a column, follow the code exampl
 
 {% endhighlight %}
 
-![](SfDataGrid_images/GroupTemplate.PNG)
+![](SfDataGrid_images/ColumnTemplate.PNG)
 
 ## Formatting Summary
 

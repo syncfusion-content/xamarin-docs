@@ -13,7 +13,7 @@ SfDataGrid provides support to display the concise information about the bound d
 
 * **Table Summary** - Used to display the summary information at top and/or bottom in SfDataGrid.
 
-* **Group Summary** - used to display summary information of data objects in each group.
+* **Group Summary** - Used to display summary information of data objects in each group.
 
 * **Caption Summary** - Used to display the summary information in the caption of the group.
 

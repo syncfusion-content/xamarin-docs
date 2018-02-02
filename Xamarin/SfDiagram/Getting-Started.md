@@ -172,6 +172,7 @@ return node;
 {% endhighlight %}
 {% endtabs %}
 The flow chart will get displayed in the SfDiagram as follows
+
 ![](Getting-Started_images/Getting-Started_img1.jpeg)
 
 This demo project can be downloaded from the following link [GettingStarted_Demo.](http://files2.syncfusion.com/Xamarin.Forms/Samples/Gettingstarted_SfDiagram.zip)

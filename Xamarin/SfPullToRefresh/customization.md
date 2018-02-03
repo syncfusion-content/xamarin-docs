@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Styles | SfPullToRefresh | Xamarin | Syncfusion
+title: Customization | SfPullToRefresh | Xamarin | Syncfusion
 description: How to customize the SfPullToRefresh Control Styles.
 platform: xamarin
 control: SfPullToRefresh

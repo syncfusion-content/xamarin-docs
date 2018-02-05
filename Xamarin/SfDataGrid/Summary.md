@@ -11,8 +11,9 @@ documentation: UG
 
 The data grid supports to display the concise information about the bound data objects using summaries. The control provides the following summary types:
 
-* **Caption Summary**: Used to display the summary information in the caption of the group.
-* **Table Summary**: Used to display the summary information at top and/or bottom in the data grid.
+* **Caption Summary** - Used to display the summary information in the caption of the group.
+* **Table Summary** - Used to display the summary information at top and/or bottom in SfDataGrid.
+
 
 ![](SfDataGrid_images/Summary.png)
 
@@ -422,7 +423,7 @@ sfGrid.TableSummaryRows.Add(summaryRow2);
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/Tablesummaries_2.png)
+![](SfDataGrid_images/Summary2.png)
 
 ### Displaying summary in a row
 
@@ -607,7 +608,6 @@ In the following sections, the formatting is explained using the `CaptionSummary
 
 In the following code snippet, the [Format](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSummaryColumn~Format.html) property is defined to display sum of `Salary` by specifying the function name inside curly braces:
 
-N> The `DoubleAggregate` is used as `SummaryType` which has the count, max, min, average, and sum functions.
 
 {% tabs %}
 {% highlight xaml%}

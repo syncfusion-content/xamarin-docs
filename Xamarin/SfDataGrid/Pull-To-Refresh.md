@@ -136,7 +136,7 @@ Running the application renders the following output.
 
 The pull-to-refresh is a refreshing control allows you to interact and refresh the view loaded in it. When the control is hosted inside the pull-to-refresh, it is used to refresh the item while performing the pull to refresh action. 
 
-Check the following link to host the SfDataGrid inside SfPullToRefresh [Click here](https://help.syncfusion.com/xamarin/sfpulltorefresh/customization#host-sfdatagrid-as-pullable-content).
+For more details and code example for hosting the SfDataGrid inside SfPullToRefresh, refer [here](https://help.syncfusion.com/xamarin/sfpulltorefresh/customization#host-sfdatagrid-as-pullable-content).
 
 The output will look like on iOS, Android, and Windows Phone devices as follows:
 

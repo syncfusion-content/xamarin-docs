@@ -85,7 +85,7 @@ The following property is associated with `View`
 
 ### LiveDataUpdateMode
 
-SfDataGrid provides support to update the view during data manipulation operations and property changes using [LiveDataUpdateMode](https://help.syncfusion.com/cr/cref_files/xamarin/data/Syncfusion.Data.Portable~Syncfusion.Data.CollectionViewAdv~LiveDataUpdateMode.html). It allows you to customize when to update the view based on the `SfDataGrid.LiveDataUpdateMode` property.
+SfDataGrid provides support to update the view during data manipulation operations and property changes using [LiveDataUpdateMode](https://help.syncfusion.com/cr/cref_files/xamarin/data/Syncfusion.Data.Portable~Syncfusion.Data.CollectionViewAdv~LiveDataUpdateMode.html). It allows you to customize when to update the view based on the `SfDataGrid.View.LiveDataUpdateMode` property.
 
 <table>
 <tr>
@@ -105,18 +105,15 @@ SfDataGrid provides support to update the view during data manipulation operatio
 <td>Data operations like sorting, grouping and filtering are updated during data manipulation change</td>
 </tr>
 </table>
-{% tabs %}
 
-{% highlight xaml %}
-    <syncfusion:SfDataGrid x:Name="dataGrid" 
-                        LiveDataUpdateMode="Default">
-    </syncfusion:SfDataGrid>
-{% endhighlight %}
 {% highlight c# %}
-dataGrid.LiveDataUpdateMode = LiveDataUpdateMode.Default;
+dataGrid.GridViewCreated += DataGrid_GridViewCreated;
+private void DataGrid_GridViewCreated(object sender, GridViewCreatedEventArgs e)
+{
+    dataGrid.View.LiveDataUpdateMode = LiveDataUpdateMode.Default;
+}
 {% endhighlight %}
 
-{% endtabs %}
 The following events are associated with `View`.
 
 ### RecordPropertyChanged
@@ -204,11 +201,3 @@ To set the EnableDataVirtualization property, follow the code example:
 datagrid.EnableDataVirtualization = true;
 {% endhighlight %}
 {% endtabs %}
-
-### Programmatic refresh
-
-The data grid control provides an option to refresh the view programmatically in runtime by calling the `SfDataGrid.Refresh` method. This helps in refresh the grid manually for runtime property and collection changes when the bound collection does not notify it automatically. 
-
-{% highlight c# %}
-datagrid.Refresh();
-{% endhighlight %}

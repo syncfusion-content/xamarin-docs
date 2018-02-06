@@ -19,7 +19,7 @@ After installing Essential Studio for Xamarin, you can find all the required ass
 
 Example: C:\Program Files (x86)\Syncfusion\Essential Studio\15.3.0.28\Xamarin\lib
 
-Refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfpdfviewer) link to know about the assemblies required for adding SfPdfViewer to your project.
+Refer [this link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfpdfviewer) to know about the assemblies required for adding SfPdfViewer control in a Xamarin project.
 
 ## Create a simple PDF Viewer
 

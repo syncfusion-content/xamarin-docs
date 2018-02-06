@@ -9,7 +9,7 @@ documentation: UG
 
 # Styles
 
-The SfDatagrid allows applying style to all of its elements by writing a Style class overriding from [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle.html), and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridStyle.html) property.
+The data grid applyies style for all of its elements by writing a Style class overriding from [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle.html), and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridStyle.html) property.
   
 To apply custom style, follow the code example:
 
@@ -117,7 +117,7 @@ N> Xamarin.Forms.Style which has specified target type, that will not be applied
 
 ## Applying alternate row style
 
-The SfDataGrid allows applying the alternative row style by writing a Style class deriving from `DataGridStyle`, and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridStyle.html) property.
+The SfDataGrid applyies the alternative row style by writing a Style class deriving from `DataGridStyle`, and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridStyle.html) property.
 
 To apply alternate row style, follow the code example:
 
@@ -143,7 +143,7 @@ public class CustomGridStyle : DataGridStyle
 
 ## Customizing the alternation count
 
-The SfDataGrid allows customizing the alternate row count for applying the alternate row style using the [SfDataGrid.AlternationCount](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AlternationCountProperty.html) property.
+The data grid customizies the alternate row count for applying the alternate row style using the [SfDataGrid.AlternationCount](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AlternationCountProperty.html) property.
 
 To set the alternate row count, follow the code example:
 
@@ -156,9 +156,9 @@ dataGrid.AlternationCount = 3;
 
 ![](SfDataGrid_images/AlernationCount.png)
 
-## Border Customization
+## Border customization
 
-The SfDatagrid allows customizing the grid borders to vertical, horizontal, both, or none based on requirements. Override the [DataGridStyle.GetGridLinesVisibility](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetGridLinesVisibility.html) method to customize borders in the SfDataGrid.
+The data grid customizies the grid borders to vertical, horizontal, both, or none. Override the [DataGridStyle.GetGridLinesVisibility](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetGridLinesVisibility.html) method to customize borders in the data grid.
 
 {% highlight c# %}
 //Apply custom style to SfDataGrid from code
@@ -179,7 +179,7 @@ public class CustomStyle : DataGridStyle
 }
 {% endhighlight %}
 
-Following are the lists of options available to customize the grid borders:
+Following are the list of options available to customize the grid borders:
 
  * Both
  * Horizontal
@@ -188,7 +188,7 @@ Following are the lists of options available to customize the grid borders:
 
 ### Both
 
-The [GridLinesVisibility.Both](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridLinesVisibility.html) allows displaying the DataGrid with both horizontal and vertical borders.
+The [GridLinesVisibility.Both](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridLinesVisibility.html) displayes the data grid with both horizontal and vertical borders.
 
 {% highlight c# %}
 public override GridLinesVisibility GetGridLinesVisibility()
@@ -197,13 +197,14 @@ public override GridLinesVisibility GetGridLinesVisibility()
 } 
 {% endhighlight %}
 
-The following screenshot shows the final outcome upon execution of the above code:
+The following screenshot shows the outcome upon execution of the above code:
 
 ![](SfDataGrid_images/BorderCustomization_Both.png)
 
 ### Horizontal
 
-The [GridLinesVisibility.Horizontal](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridLinesVisibility.html) allows displaying the DataGrid with horizontal border only.
+The [GridLinesVisibility.Horizontal](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridLinesVisibility.html) allows displayes the data grid with horizontal border only.
+
 {% highlight c# %}
 public override GridLinesVisibility GetGridLinesVisibility()
 {
@@ -211,13 +212,13 @@ public override GridLinesVisibility GetGridLinesVisibility()
 } 
 {% endhighlight %}
 
-The following screenshot shows the final outcome upon execution of the above code:
+The following screenshot shows the outcome upon execution of the above code:
 
 ![](SfDataGrid_images/BorderCustomization_Horizontal.png)
 
 ### Vertical
 
-The [GridLinesVisibility.Vertical](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridLinesVisibility.html) allows displaying the DataGrid with vertical border only.
+The [GridLinesVisibility.Vertical](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridLinesVisibility.html) displayes the data grid with vertical border only.
 
 {% highlight c# %}
 public override GridLinesVisibility GetGridLinesVisibility()
@@ -226,13 +227,14 @@ public override GridLinesVisibility GetGridLinesVisibility()
 } 
 {% endhighlight %}
 
-The following screenshot shows the final outcome upon execution of the above code:
+The following screenshot shows the outcome upon execution of the above code:
 
 ![](SfDataGrid_images/BorderCustomization_Vertical.png)
 
 ### None
 
-[GridLinesVisibility.None](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridLinesVisibility.html) allows you to display the DataGrid without borders
+[GridLinesVisibility.None](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridLinesVisibility.html) allows you to display the data grid without borders.
+
 {% highlight c# %}
 public override GridLinesVisibility GetGridLinesVisibility()
 {
@@ -240,13 +242,13 @@ public override GridLinesVisibility GetGridLinesVisibility()
 } 
 {% endhighlight %}
 
-The following screenshot shows the final outcome upon execution of the above code:
+The following screenshot shows the outcome upon execution of the above code:
 
 ![](SfDataGrid_images/BorderCustomization_None.png)
 
 ## Header border color customization
 
-The SfDataGrid allows customizing the header border color for different `DataGridStyle.GridLinesVisibility` by writing a custom style class deriving from `DataGridStyle`, and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridStyle.html) property. Override the `GetHeaderBorderColor` method in the custom style to customize color of the column header and row header.
+The data grid customizes the header border color for different `DataGridStyle.GridLinesVisibility` by writing a custom style class deriving from `DataGridStyle`, and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridStyle.html) property. Override the `GetHeaderBorderColor` method in the custom style to customize color of the column header and row header.
 
 To customize the header border color by writing a custom style, follow the code example:
 
@@ -295,7 +297,7 @@ public class CustomStyle : DataGridStyle
 The following screenshot shows the final outcome upon execution of the above code:
 ![](SfDataGrid_images/HeaderBorderCustomization_Both.png)
 
-## Customizing the sort icons in header
+## Customizing sort icons in the header
 
 Any desired image can be loaded as the sort indicator using the [GetHeaderSortIndicatorDown](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetHeaderSortIndicatorDown.html) and [GetHeaderSortIndicatorUp](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetHeaderSortIndicatorUp.html) overriding from the [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle.html) class. To change the sort indicators, follow the code example:
 

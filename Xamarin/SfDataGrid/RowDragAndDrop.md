@@ -34,8 +34,6 @@ N> Reordering changes are made only in [SfDataGrid.View](http://help.syncfusion.
 
 N> Now, you can drag and drop the grid rows using mouse in UWP (Desktop) platform.
 
-N> Now, QueryRowDraggingReason.DragEnded event triggered even when we drop a row without changing the row index.
-
 ## Row drag and drop template
 
 SfDataGrid allows you to load a desired content when performing row drag and drop operation using the [SfDataGrid.RowDragDropTemplate](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~RowDragDropTemplate.html). The template can be defined either in code or XAML. 
@@ -156,6 +154,8 @@ The `QueryRowDragging` event provides following properties in [QueryRowDragging
 * [RowData](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryRowDraggingEventArgs~RowData.html)  – Returns the underlying data associated with the dragged row.
 * [CurrentRowData](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryRowDraggingEventArgs~CurrentRowData.html)  – Returns the corresponding row data, over which the row drag view is currently placed.
 * [Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs_properties(v=vs.110).aspx) – A Boolean property to cancel the event.
+
+N> Now, `QueryRowDragging` event will be triggered even when dropping a row in the same index it is dragged from.
 
 ## Customizing row drag and drop indicators
 

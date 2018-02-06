@@ -9,7 +9,7 @@ documentation: UG
 
 # Styles
 
-The data grid applyies style for all of its elements by writing a Style class overriding from [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle.html), and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridStyle.html) property.
+The data grid applies style for all of its elements by writing a Style class overriding from [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle.html), and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridStyle.html) property.
   
 To apply custom style, follow the code example:
 
@@ -117,7 +117,7 @@ N> Xamarin.Forms.Style which has specified target type, that will not be applied
 
 ## Applying alternate row style
 
-The SfDataGrid applyies the alternative row style by writing a Style class deriving from `DataGridStyle`, and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridStyle.html) property.
+The SfDataGrid applies the alternative row style by writing a Style class deriving from `DataGridStyle`, and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridStyle.html) property.
 
 To apply alternate row style, follow the code example:
 
@@ -143,7 +143,7 @@ public class CustomGridStyle : DataGridStyle
 
 ## Customizing the alternation count
 
-The data grid customizies the alternate row count for applying the alternate row style using the [SfDataGrid.AlternationCount](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AlternationCountProperty.html) property.
+The data grid customizes the alternate row count for applying the alternate row style using the [SfDataGrid.AlternationCount](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AlternationCountProperty.html) property.
 
 To set the alternate row count, follow the code example:
 
@@ -158,7 +158,7 @@ dataGrid.AlternationCount = 3;
 
 ## Border customization
 
-The data grid customizies the grid borders to vertical, horizontal, both, or none. Override the [DataGridStyle.GetGridLinesVisibility](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetGridLinesVisibility.html) method to customize borders in the data grid.
+The data grid customizes the grid borders to vertical, horizontal, both, or none. Override the [DataGridStyle.GetGridLinesVisibility](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetGridLinesVisibility.html) method to customize borders in the data grid.
 
 {% highlight c# %}
 //Apply custom style to SfDataGrid from code
@@ -188,7 +188,7 @@ Following are the list of options available to customize the grid borders:
 
 ### Both
 
-The [GridLinesVisibility.Both](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridLinesVisibility.html) displayes the data grid with both horizontal and vertical borders.
+The [GridLinesVisibility.Both](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridLinesVisibility.html) displays the data grid with both horizontal and vertical borders.
 
 {% highlight c# %}
 public override GridLinesVisibility GetGridLinesVisibility()
@@ -203,7 +203,7 @@ The following screenshot shows the outcome upon execution of the above code:
 
 ### Horizontal
 
-The [GridLinesVisibility.Horizontal](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridLinesVisibility.html) allows displayes the data grid with horizontal border only.
+The [GridLinesVisibility.Horizontal](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridLinesVisibility.html) allows displays the data grid with horizontal border only.
 
 {% highlight c# %}
 public override GridLinesVisibility GetGridLinesVisibility()
@@ -218,7 +218,7 @@ The following screenshot shows the outcome upon execution of the above code:
 
 ### Vertical
 
-The [GridLinesVisibility.Vertical](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridLinesVisibility.html) displayes the data grid with vertical border only.
+The [GridLinesVisibility.Vertical](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridLinesVisibility.html) displays the data grid with vertical border only.
 
 {% highlight c# %}
 public override GridLinesVisibility GetGridLinesVisibility()

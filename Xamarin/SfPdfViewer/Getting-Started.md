@@ -19,28 +19,7 @@ After installing Essential Studio for Xamarin, you can find all the required ass
 
 Example: C:\Program Files (x86)\Syncfusion\Essential Studio\15.3.0.28\Xamarin\lib
 
-<table>
-<tr>
-<th>Project</th>
-<th>Required assemblies</th>
-</tr>
-<tr>
-<td>PCL project</td>
-<td>pcl\Syncfusion.SfPdfViewer.XForms.dll<br/>pcl\Syncfusion.Compression.Portable.dll<br/>pcl\ Syncfusion.Pdf.Portable.dll<br/></td>
-</tr>
-<tr>
-<td>Android project</td>
-<td>android\Syncfusion.SfPdfViewer.XForms.dll<br/>android\Syncfusion.SfPdfViewer.XForms.Android.dll<br/>pcl\Syncfusion.Compression.Portable.dll<br/>pcl\ Syncfusion.Pdf.Portable.dll<br/></td>
-</tr>
-<tr>
-<td>iOS project</td>
-<td>iOS-unified\Syncfusion.SfPdfViewer.XForms.dll<br/>iOS-unified\Syncfusion.SfPdfViewer.XForms.iOS.dll<br/>pcl\Syncfusion.Compression.Portable.dll<br/>pcl\ Syncfusion.Pdf.Portable.dll<br/></td>
-</tr>
-<tr>
-<td>UWP Renderer</td>
-<td>UWP\Syncfusion.SfPdfViewer.XForms.dll<br/>UWP\Syncfusion.SfPdfViewer.XForms.UWP.dll<br/>pcl\Syncfusion.Compression.Portable.dll<br/>pcl\ Syncfusion.Pdf.Portable.dll<br/></td>
-</tr>
-</table>
+Refer [this link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfpdfviewer) to know about the assemblies required for adding SfPdfViewer control in a Xamarin project.
 
 ## Create a simple PDF Viewer
 

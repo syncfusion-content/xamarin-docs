@@ -357,6 +357,10 @@ picker.ShowFooter = true;
 
 In SfPickerSfPicker can be rendered as a dialog by setting `SfPicker.PickerMode` property to Dialog. Default value of `SfPicker.PickerMode` property is Default. 
 
+N> For dialog mode we need to specify parent layout of the SfPicker as Grid. Because grid layout allows SfPicker dialog mode overlay view.
+ 
+N> For iOS platform we need to specify the `SfPicker.Parent` property for dialog mode.
+
 {% tabs %}
 {% highlight xaml %}
 

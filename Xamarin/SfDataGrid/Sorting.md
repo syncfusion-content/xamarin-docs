@@ -51,7 +51,7 @@ The following screenshot shows the sorting functionality in the data grid:
 
 ## Tri-State sorting
 
-In addition to sort the data in ascending/descending order, the SfDataGrid unsorts the data in the original order by clicking the header again after sorting to descending order by setting the [SfDataGrid.AllowTriStateSorting](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowTriStateSorting.html) property to `true`. When this property is set, sorting in each column iterates through three sort states: ascending, descending, and unsort.
+In addition to sort the data in ascending/descending order, the SfDataGrid unsort the data in the original order by clicking the header again after sorting to descending order by setting the [SfDataGrid.AllowTriStateSorting](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowTriStateSorting.html) property to `true`. When this property is set, sorting in each column iterates through three sort states: ascending, descending, and unsort.
 
 To enable tri-State sorting in the SfDataGrid, follow the code example:
 

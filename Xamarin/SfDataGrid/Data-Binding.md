@@ -108,17 +108,12 @@ SfDataGrid provides support to update the view during data manipulation operatio
 {% tabs %}
 
 {% highlight xaml %}
-    <syncfusion:SfDataGrid x:Name="dataGrid" AllowResizingColumn="True" AllowGroupExpandCollapse="True"
-                       AutoGenerateColumns="False" LiveDataUpdateMode="Default"
-                       ColumnSizer="Star">
+    <syncfusion:SfDataGrid x:Name="dataGrid" 
+                        LiveDataUpdateMode="Default">
     </syncfusion:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
-dataGrid.GridViewCreated += DataGrid_GridViewCreated;
-private void DataGrid_GridViewCreated(object sender, GridViewCreatedEventArgs e)
-{
-    dataGrid.LiveDataUpdateMode = LiveDataUpdateMode.Default;
-}
+dataGrid.LiveDataUpdateMode = LiveDataUpdateMode.Default;
 {% endhighlight %}
 
 {% endtabs %}
@@ -210,10 +205,10 @@ datagrid.EnableDataVirtualization = true;
 {% endhighlight %}
 {% endtabs %}
 
-### Notify property change
+### Programmatic refresh
 
-The data grid control provides an option to notify property changes and refresh the view programmatically in runtime.
+The data grid control provides an option to refresh the view programmatically in runtime by calling the `SfDataGrid.Refresh` method. This helps in refresh the grid manually for runtime property and collection changes when the bound collection does not notify it automatically. 
 
 {% highlight c# %}
-    datagrid.Refresh();
+datagrid.Refresh();
 {% endhighlight %}

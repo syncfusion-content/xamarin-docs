@@ -111,6 +111,7 @@ schedule.TimeIntervalHeight = 180;
 
 ## Change Working hours:
 
+You can hide the time slots by setting [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WorkWeekViewSettings~StartHour.html) and [EndHour](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WorkWeekViewSettings~EndHour.html) properties of [WeekViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~WorkWeekViewSettings.html). Default value for StartHour and EndHour will be 0 to 24 hours. 
 Working hours in `WorkWeekView` of Schedule control will be differentiated with non-working hours by separate color. By default, working hours will be between 09 to 18. You can customize the working hours by setting [WorkStartHour](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WorkWeekViewSettings~WorkStartHour.html) and [WorkEndHour](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WorkWeekViewSettings~WorkEndHour.html) properties of [WorkWeekViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~WorkWeekViewSettings.html).
 
 {% tabs %} 
@@ -119,8 +120,10 @@ Working hours in `WorkWeekView` of Schedule control will be differentiated with 
     schedule.ScheduleView = ScheduleView.WorkWeekView;
 	//Create new instance of WorkWeekViewSettings
 	WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings();
-	workWeekViewSettings.WorkStartHour = 10;
-	workWeekViewSettings.WorkEndHour = 18;
+	workWeekViewSettings.StartHour = 08;
+    workWeekViewSettings.EndHour = 15;
+	workWeekViewSettings.WorkStartHour = 09;
+	workWeekViewSettings.WorkEndHour = 16;
 	schedule.WorkWeekViewSettings = workWeekViewSettings;
 {% endhighlight %}
 {% highlight XAML %}
@@ -129,8 +132,10 @@ Working hours in `WorkWeekView` of Schedule control will be differentiated with 
        <schedule:SfSchedule.WorkWeekViewSettings>
             <!--setting working hours properties -->
              <schedule:WorkWeekViewSettings 
-                WorkStartHour="10" 
-                WorkEndHour="18">
+			    StartHour =”08”
+  			    EndHour =”15”
+                WorkStartHour="09" 
+                WorkEndHour="16">
              </schedule:WorkWeekViewSettings>
         </schedule:SfSchedule.WorkWeekViewSettings>
     </schedule:SfSchedule>

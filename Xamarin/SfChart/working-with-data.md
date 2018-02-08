@@ -9,13 +9,13 @@ documentation: ug
 
 # Populating Data
 
-SfChart control can be configured with data points using `ItemsSource` property of `ChartSeries`. There are two ways, you can create data points for chart.
+Chart control can be configured with data points using the `ItemsSource` property of the `ChartSeries`. You can create data points using the following two ways.
 
-## Chart Data Point	
+## Chart data point	
 
-One way is to create a collection of [ChartDataPoint](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataPoint.html#) objects and assign this collection to `ItemsSource` property. Here, each ChartDataPoint object represents a data point in a chart series.
+One way is creating a collection of [ChartDataPoint](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataPoint.html#) objects, and assigning this collection to the `ItemsSource` property. Here, each `ChartDataPoint` object represents a data point in a chart series.
 
-N> ChartDataPoint class has few overloaded constructors depending on the number of y-values required to plot a data point for a particular series type. For example, you can use a constructor with two parameters to instantiate data point for XYDataSeries like Line, Spline, and Pie etc.
+N> `ChartDataPoint` class has few overloaded constructors depending on the number of y-values required to plot a data point for a particular series type. For example, you can use a constructor with two parameters to instantiate a data point for `XYDataSeries` such as Line, Spline, and Pie, etc.
 
 Following code snippet illustrates this,
 
@@ -80,11 +80,11 @@ chart.Series.Add (new ColumnSeries () {
 
 {% endtabs %}
 
-## Custom Object
+## Custom object
 
-Another way is to assign a collection of custom objects to the ItemsSource property. In this case, you need to set the XBindingPath and YBindingPath properties of chart series with the property names of the custom object which contains the x-value/category and y-value respectively.
+Another way is assigning a collection of custom objects to the `ItemsSource` property. In this case, you should set the `XBindingPath` and `YBindingPath` properties of chart series with the property names of the custom object, which contains the x-value/category and y-value, respectively.
 
-N> While using custom objects, XBindingPath property is required for all types of chart series. You need to set YBindingPath property only for the XYDataSeries types which needs single y-value for a data point. For example, Line, Spline, Column, Bar, Pie etc.  For BubbleSeries type, you need to set both YBindingPath and Size properties since it requires two y-values to plot a single bubble data point. In the case of financial series types like Candle and HiLoOpenClose, which requires four y-values for a single data point, you need to set High, Low, Open and Close properties with the property names of a custom object which contains respective values.
+N> While using custom objects, `XBindingPath` property is required for all types of chart series. You should set the `YBindingPath` property only for the `XYDataSeries` types, which need single y-value for a data point, e.g., Line, Spline, Column, Bar, Pie, etc. For bubble series type, you should set both `YBindingPath` and `Size` properties since it requires two y-values to plot a single bubble data point. In financial series types such as Candle and HiLoOpenClose, you should set the `High`, `Low`, `Open`, and `Close` properties with the property names of a custom object, which contains respective values since the chart types require four y-values for a single data point.
 
 {% highlight c# %}
 [C#]

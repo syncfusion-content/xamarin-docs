@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains the steps required to populate a chart with data, title, data labels, and tooltips. This section covers only the minimal features that are needed to get started with chart.
+This section explains the steps required to populate a chart with data, a title, data labels, and tooltips. This section covers only the minimal features needed to get started with chart.
 
 ## Adding chart reference
 
@@ -17,7 +17,7 @@ Refer to this [article](https://help.syncfusion.com/xamarin/introduction/downloa
 
 I> After adding the reference, an additional step is required for iOS and UWP projects. Create an instance of the `SfChartRenderer` in iOS and UWP projects as shown in this [KB article](https://www.syncfusion.com/kb/7144).
 
-I> For UWP alone, an additional step is required if the project is built-in release mode with .NET Native tool chain enabled. Refer this [KB article](https://www.syncfusion.com/kb/7149) for more details.
+I> For UWP alone, an additional step is required if the project is built-in release mode with .NET Native tool chain enabled. Refer to this [KB article](https://www.syncfusion.com/kb/7149) for more details.
  
 ## Initialize chart
 
@@ -83,13 +83,13 @@ this.Content = chart;
 
 {% endtabs %} 
 
-Run the project, and check if you get following output to make sure that you have configured your project properly to add [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html).
+Run the project, and check whether you get following output to make sure that you have configured your project properly to add chart.
 
 ![](Getting-Started_images/img1.png)
 
 ## Initialize view model
 
-The following code illustrates a simple data model that represents a data point in [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html).
+The following code illustrates a simple data model that represents a data point in chart.
 
 {% highlight c# %}
 public class Person   
@@ -154,7 +154,7 @@ this.BindingContext = new ViewModel();
 
 ## Populate chart with data
 
-To visualize the comparison of heights in the data model, add the [`ColumnSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ColumnSeries.html) to the [`SfChart.Series`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~Series.html) property, and then bind the data property of previous `ViewModel` to the [`ColumnSeries.ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~ItemsSource.html) property as shown in the following code,
+To visualize the comparison of heights in the data model, add the [`ColumnSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ColumnSeries.html) to the [`SfChart.Series`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~Series.html) property, and then bind the data property of the previous `ViewModel` to the [`ColumnSeries.ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~ItemsSource.html) property as shown in the following code,
 
 N> You should set [`XBindingPath`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~XBindingPath.html) and [`YBindingPath`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.XyDataSeries~YBindingPath.html) properties to [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html). By setting these properties, chart can fetch the values from the respective properties in the data model to plot the series.
 
@@ -233,7 +233,7 @@ chart.Series.Add(series);
 
 ## Add title
 
-You can add title to chart to provide information to the user about the data being plotted in the chart. Title can be set using the [`SfChart.Title`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~Title.html) property as shown in the following code,
+You can add a title to chart to provide information to the user about the data being plotted in the chart. Titles can be set using the [`SfChart.Title`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~Title.html) property as shown in the following code:
 
 {% tabs %} 
 
@@ -259,7 +259,7 @@ chart.Title.Text = "Chart";
 
 {% endtabs %}  
 
-Refer to this [link](https://help.syncfusion.com/xamarin/sfchart/charttitle) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html) to customize chart title.
+Refer to this [link](https://help.syncfusion.com/xamarin/sfchart/charttitle) to learn more about the options available in chart to customize chart titles.
 
 ## Enable data labels
 
@@ -293,7 +293,7 @@ series.DataMarker = new ChartDataMarker();
 
 {% endtabs %}  
 
-Refer to this [link](https://help.syncfusion.com/xamarin/sfchart/datamarker) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html) to customize data markers.
+Refer to this [link](https://help.syncfusion.com/xamarin/sfchart/datamarker) to learn more about the options available in chart to customize data markers.
 
 ## Enable legend
 
@@ -355,7 +355,7 @@ Refer to this [link](https://help.syncfusion.com/xamarin/sfchart/legend) to lear
 
 ## Enable tooltip
 
-Tooltips are used to show information about the segment, when the segment is tapped. You can enable the tooltip by setting the [`ChartSeries.EnableTooltip`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~EnableTooltip.html) property to true.
+Tooltips are used to show information about a segment, when the segment is tapped. You can enable the tooltip by setting the [`ChartSeries.EnableTooltip`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~EnableTooltip.html) property to true.
 
 {% tabs %} 
 
@@ -383,7 +383,7 @@ series.EnableTooltip = true;
 
 {% endtabs %}
 
-Refer to this [link](https://help.syncfusion.com/xamarin/sfchart/tooltip) to learn more about the options available in the [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html) to customize the tooltip.
+Refer to this [link](https://help.syncfusion.com/xamarin/sfchart/tooltip) to learn more about the options available in chart to customize the tooltip.
 
 ![](Getting-Started_images/img2.png)
 

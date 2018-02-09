@@ -9,16 +9,16 @@ documentation: ug
 
 # Chart Title
 
-You can define and customize the title of a chart using the `Title` property of `SfChart`. The `Text` property of the `ChartTitle` is used to set the text for title. 
+You can define and customize the title of a chart using the `Title` property of chart. The `Text` property of the `ChartTitle` is used to set the text for title. 
 
-Following properties are used to customize its appearance:
+The following properties are used to customize its appearance:
 
-* `TextColor` – Used to change the color of the text.
-* `BackgroundColor` – Used to change the background color.
-* `BorderColor` – Used to change the border color.
-* `BorderWidth` – Used to change the border width.
-* `Font` – Used to change the text size, font family, and font weight.
-* `Margin` - Used to change the margin of title.
+* `TextColor`—Used to change the color of the text.
+* `BackgroundColor`—Used to change the background color.
+* `BorderColor`—Used to change the border color.
+* `BorderWidth`—Used to change the border width.
+* `Font`—Used to change the text size, font family, and font weight.
+* `Margin`—Used to change the margin of title.
 
 {% tabs %} 
 
@@ -52,7 +52,7 @@ sfChart.Title.TextColor = Color.Blue;
 
 ## Text alignment
 
-You can align the text of the title to start, center, or end of the title using the `TextAlignment` property of the `ChartTitle`.
+You can align the text of the title to the start, center, or end of the title area using the `TextAlignment` property of the `ChartTitle`.
 
 {% tabs %} 
 

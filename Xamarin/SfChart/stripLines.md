@@ -158,7 +158,7 @@ dateTimeAxis.StripLines.Add(stripLine);
 This feature is used to enable the strip lines to be drawn repeatedly at the regular intervals – this will be useful when you want to mark an event that occurs recursively along the timeline of the chart. Following properties are used to configure this feature.
 
 * [`RepeatEvery`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartStripLine~RepeatEvery.html#) – used to change the frequency of the strip line being repeated.
-* `RepeatUntil` – specifies the end value at which point strip line has to stop repeating.
+* [`RepeatUntil`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.NumericalStripLine~RepeatUntil.html) – specifies the end value at which point strip line has to stop repeating.
 
 Following code snippet and screenshot demonstrates this feature by highlighting weekends. 
 

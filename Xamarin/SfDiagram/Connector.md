@@ -165,11 +165,11 @@ SegmentType= SegmentType.StraightSegment
 diagram.AddConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img6.jpeg)
+![](Connector_images/Connector_img5.jpeg)
 
 ## Remove Connector
 Connector can be removed or detached from connection in two ways.
-1.By passing the connector as parameter to Remove connector method in diagram
+1. passing the connector as parameter to Remove connector method in diagram
 The following code example illustrates how to remove a connector from connection
 {% tabs %}
 {% highlight c# %}
@@ -185,7 +185,7 @@ diagram.AddConnector(connector1);
 diagram.RemoveConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
-2.By passing the index value of the connector to connector collection (using RemoveAt method)
+2. passing the index value of the connector to connector collection (using RemoveAt method)
 The following code example illustrates how to remove a connector from connection
 {% tabs %}
 {% highlight c# %}
@@ -239,7 +239,7 @@ StrokeWidth = 4
 diagram.AddConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img7.jpeg)
+![](Connector_images/Connector_img6.jpeg)
 
 ## Decorator Appearance
 The following code example illustrates how to customize the appearance of the decorator.
@@ -290,5 +290,5 @@ Width = 12
 diagram.AddConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img8.jpeg)
+![](Connector_images/Connector_img7.jpeg)
 

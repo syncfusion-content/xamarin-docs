@@ -144,7 +144,10 @@ Working hours in `DayView` of Schedule control will be differentiated with non-w
 ![](daymodule_images/changeworkinghours_day.png)
 
 >**Note**:
-`WorkStartHour` and `WorkEndHour` should be in integer value to represent hours.
+•	`WorkStartHour` and `WorkEndHour` value be in integer value to represent hours.
+•	`StartHour` must be greater than 0 and `EndHour` must be lesser than 24, otherwise exception will thrown.
+•	`EndHour` value must be greater than `StartHour`, otherwise exception will thrown.
+•	Before `StartHour` and after `EndHour` values, Schedule UI such as Appointments and NonAccessibleBlocks will be clipped.
 
 ## Timeslot Appearance
 You can customize the appearance of timeslots in `DayView`.

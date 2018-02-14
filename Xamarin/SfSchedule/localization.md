@@ -75,7 +75,7 @@ The procedure for creating strings.xml files is as follows:
  
 ![](Localization_images/localization_img2.jpeg)  
 
->**Note:** The correspondings values folder loads only depends on the device configuration and locale.
+>**Note:** The corresponding values folder loads only depends on the device configuration and locale.
 
 ### Localizing custom text in iOS renderer.
 
@@ -91,7 +91,7 @@ The procedure to use Localizable.Strings for multiple language
 * 	Place the Localizable.Strings file in the respective language.lproj folders.
 
 
->**Note:** The corresponding .lproj folder loades only depends on the device configuration and locale.
+>**Note:** The corresponding .lproj folder loads only depends on the device configuration and locale.
 
  
 ### Localizing custom text in UWP renderer.

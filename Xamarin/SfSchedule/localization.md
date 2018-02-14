@@ -79,7 +79,7 @@ The procedure for creating strings.xml files is as follows:
 
 ### Localizing custom text in iOS renderer.
 
-You can localize custom text available in the control by adding equivalent localized string in the Localizable.strings file.
+You can localize custom text available in the control by adding equivalent localized string in the Localizable.strings file, refer [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization_Forms-583877984.zip).
 
 ![](Localization_images/Localization_IOS.png) 
 

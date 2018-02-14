@@ -6,8 +6,7 @@ control: Diagram
 documentation: ug
 keywords: 
 ---
-
-# Stencil 
+# Stencil
 Stencil has a collection of Symbols. Stencil is used to clone the desired symbol by dragging it from the Stencil and dropping it into the SfDiagram. Each symbol can be grouped together by using the SymbolGroup .
 {% tabs %}
 {% highlight xml %}
@@ -61,13 +60,14 @@ stencil.SymbolGroups.Add(new SymbolGroup() { SymbolSource = coll, HeaderName = "
 {% endhighlight %}
 {% endtabs %}
 This Collection will be the SymbolSource to the Stencil. Based on the SymbolSource, the Stencil will populate the Symbols.
+
 ![](Stencil_images/Stencil_img1.jpeg)
 
 ## Add custom shapes into stencil
 The following example illustrates how to add the custom shapes into a Collection:
 {% tabs %}
 {% highlight c# %}
-              //Custom shapes 
+//Custom shapes 
             Pen pen = new Pen();
             pen.StrokeBrush = new SolidBrush(Color.Red);
             pen.StrokeWidth = 2;
@@ -79,7 +79,6 @@ The following example illustrates how to add the custom shapes into a Collection
             SolidBrush brush1 = new SolidBrush(Color.Blue);
             brush1.FillColor = Color.Blue;
             pen1.Brush = brush1;
-
             Node custom = new Node();
             SfGraphics graphics = new SfGraphics();
             Pen pen2 = new Pen();
@@ -90,7 +89,6 @@ The following example illustrates how to add the custom shapes into a Collection
             pen2.Brush = brush2;
             graphics.DrawRectangle(pen2, new Xamarin.Forms.Rectangle(0, 0, 50, 50));
             custom.UpdateSfGraphics(graphics);
-
             Node custom1 = new Node();
             SfGraphics grap4 = new SfGraphics();
             SfGraphicsPath sfpath4 = new SfGraphicsPath();
@@ -112,7 +110,6 @@ The following example illustrates how to add the custom shapes into a Collection
             sfpath4.CubicTo(12, 6, 38, 20, 12, 36);
             grap4.DrawPath(sfpath4);
             custom1.UpdateSfGraphics(grap4);
-
             Node custom2 = new Node();
             SfGraphics grap5 = new SfGraphics();
             SfGraphicsPath sfpath5 = new SfGraphicsPath();
@@ -126,7 +123,6 @@ The following example illustrates how to add the custom shapes into a Collection
             sfpath5.AddLines(pointscol5.ToArray());
             grap5.DrawPath(sfpath5);
             custom2.UpdateSfGraphics(grap5);
-
             Node custom3 = new Node();
             Pen pen4 = new Pen();
             pen4.StrokeBrush = new SolidBrush(Color.Blue);
@@ -134,7 +130,6 @@ The following example illustrates how to add the custom shapes into a Collection
             SolidBrush brush4 = new SolidBrush(Color.White);
             brush4.FillColor = Color.White;
             pen4.Brush = brush4;
-
             SfGraphics grap6 = new SfGraphics();
             SfGraphicsPath sfpath6 = new SfGraphicsPath();
             List<Point> pointscol6 = new List<Point>();
@@ -148,7 +143,6 @@ The following example illustrates how to add the custom shapes into a Collection
             grap6.DrawPath(sfpath6);
             grap6.DrawEllipse(pen4, new Xamarin.Forms.Rectangle(30, 12, 5, 5));
             custom3.UpdateSfGraphics(grap6);
-
             SymbolCollection CustomShapeCollection = new SymbolCollection();
             col4.Add(custom);
             col4.Add(custom1);
@@ -191,31 +185,24 @@ We can able to add category of symbol group heading in stencil. The following ex
         <control:SymbolGroup SymbolSource="{StaticResource collection3}" HeaderName="Connectors" />
       </control:SymbolGroups>
     </ResourceDictionary>
-
 {% endhighlight %}
 {% highlight c# %}
 //SymbolCollection1 
 SymbolCollection coll = new SymbolCollection();
 coll.Add(new Node() { Width = 50, Height = 50, ShapeType = ShapeType.Rectangle, Style = new Syncfusion.SfDiagram.XForms.Style() { Brush = new SolidBrush(Color.White), StrokeBrush = new SolidBrush(Color.Gray) } });
-
 coll.Add(new Node() { Width = 50, Height = 50, ShapeType = ShapeType.Ellipse, Style = new Syncfusion.SfDiagram.XForms.Style() { Brush = new SolidBrush(Color.White), StrokeBrush = new SolidBrush(Color.Gray) } });
-
 coll.Add(new Node() { Width = 50, Height = 50, ShapeType = ShapeType.Triangle, Style = new Syncfusion.SfDiagram.XForms.Style() { Brush = new SolidBrush(Color.White), StrokeBrush = new SolidBrush(Color.Gray) } });
-
 coll.Add(new Node() { Width = 50, Height = 50, ShapeType = ShapeType.RightAngleTriangle, Style = new Syncfusion.SfDiagram.XForms.Style() { Brush = new SolidBrush(Color.White), StrokeBrush = new SolidBrush(Color.Gray) } });
-
 //SymbolCollection2 
 SymbolCollection coll1 = new SymbolCollection();
 coll1.Add(new Node() { Width = 50, Height = 50, ShapeType = ShapeType.RoundedRectangle, Style = new Syncfusion.SfDiagram.XForms.Style() { Brush = new SolidBrush(Color.White), StrokeBrush = new SolidBrush(Color.Gray) } });
 coll1.Add(new Node() { Width = 50, Height = 50, ShapeType = ShapeType.Rectangle, Style = new Syncfusion.SfDiagram.XForms.Style() { Brush = new SolidBrush(Color.White), StrokeBrush = new SolidBrush(Color.Gray) } });
 coll1.Add(new Node() { Width = 50, Height = 50, ShapeType = ShapeType.Diamond, Style = new Syncfusion.SfDiagram.XForms.Style() { Brush = new SolidBrush(Color.White), StrokeBrush = new SolidBrush(Color.Gray) } });
 coll1.Add(new Node() { Width = 50, Height = 50, ShapeType = ShapeType.Parallelogram, Style = new Syncfusion.SfDiagram.XForms.Style() { Brush = new SolidBrush(Color.White), StrokeBrush = new SolidBrush(Color.Gray) } });
-
 //SymbolCollection3
 SymbolCollection con1 = new SymbolCollection();
 con1.Add(new Connector() { SegmentType = SegmentType.OrthoSegment, SourcePoint = new Point(0, 0), TargetPoint = new Point(50, 50) });
 con1.Add(new Connector() { SegmentType = SegmentType.StraightSegment, SourcePoint = new Point(0, 0), TargetPoint = new Point(50, 50) });
-
 //Add category of symbol group with heading text
 stencil.SymbolGroups.Add(new SymbolGroup() { SymbolSource = coll, HeaderName = "BasicShapes" });
 stencil.SymbolGroups.Add(new SymbolGroup() { SymbolSource = coll1, HeaderName = "Flow Chart" });

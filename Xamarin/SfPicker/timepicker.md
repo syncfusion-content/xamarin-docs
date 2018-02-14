@@ -49,7 +49,7 @@ public class CustomTimePicker: SfPicker
 
     /// <summary>
 
-/// Time is the acutal DataSource for SfPicker control which will holds the collection of Hour ,Minute and Format
+/// Time is the actual DataSource for SfPicker control which will holds the collection of Hour ,Minute and Format
 
     /// </summary>
 

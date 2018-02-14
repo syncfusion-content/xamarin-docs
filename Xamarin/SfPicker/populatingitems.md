@@ -489,17 +489,17 @@ columnHeader.Add("Labels");
             
 picker.ColumnHeaderText = columnHeader;
             
-picker.OnPickerItemLoaded+=HandlePickerViewEventhandler;
+picker.OnPickerItemLoaded+=HandlePickerViewEvent;
             
-column0.Add("india.png");
+column0.Add("India.png");
             
-column0.Add("uae.png");
+column0.Add("UAE.png");
             
-column0.Add("usa.png");
+column0.Add("USA.png");
             
-column0.Add("uk.png");
+column0.Add("UK.png");
             
-column0.Add("germany.png");
+column0.Add("Germany.png");
             
 column1.Add("TestingLabel 1");
             
@@ -521,7 +521,7 @@ picker.Parent = main;
 
 }
 
-void HandlePickerViewEventhandler(object sender, Syncfusion.SfPicker.XForms.PickerViewEventArgs e)
+void HandlePickerViewEvent(object sender, Syncfusion.SfPicker.XForms.PickerViewEventArgs e)
        
 {
            
@@ -606,7 +606,7 @@ countryName = country;
            
 InitializeComponent();
 
-foreach(char charcount in country.Name)
+foreach(char count in country.Name)
             
 {
                
@@ -639,4 +639,3 @@ Screen shot for the above code.
 
 ![](images/CustomPickerDroid.png)    ![](images/CustomPickerIOS.png)
 
-Sample link: [CustomPicker](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomPicker-1215794268.zip)

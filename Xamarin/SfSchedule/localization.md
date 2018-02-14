@@ -90,6 +90,7 @@ The procedure to use Localizable.Strings for multiple language
 *	Create three new .lproj folders under resource en.lproj, fr.lproj, de.lproj.
 * 	Place the Localizable.Strings file in the respective language.lproj folders.
 
+![](Localization_images/Localization_iOS_Img2.png)
 
 >**Note:** The corresponding .lproj folder loads only depends on the device configuration and locale.
 

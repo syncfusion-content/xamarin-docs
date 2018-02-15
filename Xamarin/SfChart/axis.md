@@ -9,7 +9,7 @@ documentation: ug
 
 # Axis
 
-Charts typically have two axes, a vertical (Y) axis, and a horizontal (X) axis, that are used to measure and categorize data.
+Charts typically have two axes, a vertical (Y) axis and a horizontal (X) axis, that are used to measure and categorize data.
 
 A vertical(Y) axis always supports numerical scale, and a horizontal(X) axis supports the following types of scales:
 

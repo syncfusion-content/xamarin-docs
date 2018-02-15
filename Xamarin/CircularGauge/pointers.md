@@ -596,7 +596,7 @@ The image is used to denote the pointer value instead of rendering marker shape.
     Scale scale = new Scale();
     MarkerPointer markerPointer = new MarkerPointer();
     markerPointer.Value = 70;
-	markerPointer.MarkerShape = MarkerShape.Traingle;
+	markerPointer.MarkerShape = MarkerShape.Triangle;
     scale.Pointers.Add(markerPointer);
     scales.Add(scale);
     circularGauge.Scales = scales;  

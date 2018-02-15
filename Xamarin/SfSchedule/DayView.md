@@ -136,6 +136,7 @@ Working hours in `DayView` of Schedule control will be differentiated with non-w
 </schedule:SfSchedule> 
 {% endhighlight %}
 {% endtabs %}
+
 ![](daymodule_images/changeworkinghours_day.png)
 
 >**Note**:
@@ -168,6 +169,7 @@ Change the [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin/sfsched
 </schedule:SfSchedule> 
 {% endhighlight %}
 {% endtabs %}
+
 ![](daymodule_images/changestartendhour_day.png)
 
 >**Note**:

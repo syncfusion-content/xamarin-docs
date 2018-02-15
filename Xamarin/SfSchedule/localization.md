@@ -70,7 +70,7 @@ Android can select and load resources from different directories, based on the c
 The procedure for creating strings.xml files is as follows:
 
 *	Translate the strings.xml file to each language.
-*	Create three new folders under res –values-ar, values-de, values-en and values-fr (The original values folder already exists).
+*	Create new folders under resource as values-`ar`, values-`de`, values-`en` and values-`fr` (The original values folder already exists).
 *	Place the translated strings.xml files in the respective folders.
  
 ![](Localization_images/localization_img2.jpeg)  

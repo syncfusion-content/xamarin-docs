@@ -173,6 +173,7 @@ Change the [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin/sfsched
 ![](daymodule_images/changestartendhour_workweek.png)
 
 >**Note**:
+*   `StartHour` and `EndHour` should be in integer value to represent hours.
 *	`StartHour` must be greater than or equal to 0 and `EndHour` must be lesser than or equal to 24, otherwise `InvalidDataException` will be thrown.
 *	`EndHour` value must be greater than `StartHour`, otherwise `InvalidDataException` will be thrown.
 *	 Schedule UI such as Appointments and NonAccessibleBlocks which does not fall within the `StartHour` and `EndHour` will not be visible and if it falls partially, it will be clipped.

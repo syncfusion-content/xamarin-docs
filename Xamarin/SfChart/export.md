@@ -11,7 +11,7 @@ documentation: ug
 
 **Export as an image**
 
-You can export the Chart as a JPG image using [`SaveAsImage`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~SaveAsImage.html#) method of [`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html#).
+The chart can be exported as an image in JPEG format using the [`SaveAsImage`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~SaveAsImage.html#) method of [`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html#).
 
 {% highlight c# %}
 [C#]
@@ -23,12 +23,10 @@ sfChart.SaveAsImage("ChartSample.jpg");
 
 {% endhighlight %}
 
-The exported image will be saved in the different location across the platforms.
+The exported image will be saved in the following locations depends on the platforms:
 
-**Android** – The image will be saved inside the Pictures directory.
+* **Android**—The image will be saved in the "Pictures" directory.
+* **iOS**—The image will be saved in the “Photos/Album” directory.
+* **Windows**—The image will be saved in the “Pictures/Saved Pictures” directory.
 
-**iOS** – The image will be saved inside the “Photos/Album” directory.
-
-**Windows Phone** – The image will be saved inside the “/Pictures/ Saved Pictures” directory.
-
-N> In order to save the image in Android and Windows Phone, you have to enable the permission to write the file in device storage.
+N> To save the image in Android and Windows platforms, enable the permission to write the file in device storage.

@@ -65,7 +65,7 @@ You can localize custom text available in the control by adding equivalent local
      </resources>
 {% endhighlight %}   
 
-Android can select and load resources from different directories, based on the current device configuration and locale. For an example, if an application requires multiple languages we can follow the below steps.
+Android can select and load resources from different directories, based on the current device configuration and locale, refer [here](https://developer.xamarin.com/guides/android/advanced_topics/localization/). For an example, if an application requires multiple languages we can follow the below steps.
 
 The procedure for creating strings.xml files is as follows:
 
@@ -79,7 +79,7 @@ The procedure for creating strings.xml files is as follows:
 
 ### Localizing custom text in iOS renderer.
 
-You can localize custom text available in the control by adding equivalent localized string in the Localizable.strings file, refer [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization_Forms-583877984.zip).
+You can localize custom text available in the control by adding equivalent localized string in the Localizable.strings file, refer [here](https://developer.xamarin.com/guides/ios/advanced_topics/localization_and_internationalization/).
 
 ![](Localization_images/Localization_IOS.png) 
 
@@ -94,8 +94,9 @@ If an application requires multiple languages we can follow the below steps.
 
  
 ### Localizing custom text in UWP renderer.
-You can localize custom text available in the control by adding equivalent localized string in the fr.resw file.
+You can localize custom text available in the control by adding equivalent localized string in the fr.resw file, refer [here](https://docs.microsoft.com/en-us/windows/uwp/design/globalizing/prepare-your-app-for-localization).
 
 ![](Localization_images/Localization_XFUWP.png) 
  
-
+You can download the entire source code of this demo for Xamarin.Forms from
+here [Localization](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization_Forms-583877984.zip).

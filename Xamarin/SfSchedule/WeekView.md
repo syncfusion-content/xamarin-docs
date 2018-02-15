@@ -120,8 +120,8 @@ Working hours in `WeekView` of Schedule control will be differentiated with non-
             schedule.ScheduleView = ScheduleView.WeekView;
 			//Create new instance of WeekViewSettings
 			WeekViewSettings weekViewSettings = new WeekViewSettings();
-			weekViewSettings.WorkStartHour = 09;
-			weekViewSettings.WorkEndHour = 16;
+			weekViewSettings.WorkStartHour = 10;
+			weekViewSettings.WorkEndHour = 18;
 			schedule.WeekViewSettings = weekViewSettings;
 {% endhighlight %}
 {% highlight XAML %}
@@ -130,8 +130,8 @@ Working hours in `WeekView` of Schedule control will be differentiated with non-
          <schedule:SfSchedule.WeekViewSettings>
                 <!--setting working hours properties -->
                 <schedule:WeekViewSettings 
-                     WorkStartHour="09" 
-                     WorkEndHour="16">
+                     WorkStartHour="10" 
+                     WorkEndHour="18">
                 </schedule:WeekViewSettings>
           </schedule:SfSchedule.WeekViewSettings>
     </schedule:SfSchedule> 
@@ -174,7 +174,7 @@ Change the [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin/sfsched
 
 
 >**Note**:
-*	`StartHour` must be greater than 0 and `EndHour` must be lesser than 24, otherwise `InvalidDataException` will be thrown.
+*	`StartHour` must be greater than or equal to than 0 and `EndHour` must be lesser than or equal to 24, otherwise `InvalidDataException` will be thrown.
 *	`EndHour` value must be greater than `StartHour`, otherwise `InvalidDataException` will be thrown.
 *	 Schedule UI such as Appointments and NonAccessibleBlocks which does not fall within the `StartHour` and `EndHour` will not be visible and if it falls partially, it will be clipped.
 

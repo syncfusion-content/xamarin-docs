@@ -322,6 +322,7 @@ By using [OnMonthCellLoadedEvent](https://help.syncfusion.com/cr/cref_files/xama
 			...
 			void Schedule_OnMonthCellLoadedEvent(object sender, MonthCellLoadedEventArgs args)
 		{
+			args.cellStyle = new CellStyle();
 			if (args.isToday)
 			{
 				args.cellStyle.BackgroundColor = Color.Red;

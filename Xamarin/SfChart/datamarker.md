@@ -39,7 +39,7 @@ lineSeries.DataMarker = new ChartDataMarker();
 
 ## Customizing labels
 
-Data labels are enabled by default. You can also change the visibility of the labels using the [`ShowLabel`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataMarker~ShowLabel.html) property of `ChartDataMarker`. The label appearance can be customized using the following properties:
+Data labels are enabled by default. You can also change the visibility of labels using the [`ShowLabel`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataMarker~ShowLabel.html) property of [`ChartDataMarker`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataMarker.html). The appearance of a label can be customized using the following properties:
 
 * [`TextColor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~TextColor.html)—Used to change the color of the label.
 * [`BackgroundColor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~BackgroundColor.html)—Used to change background color of the label.
@@ -105,7 +105,7 @@ lineSeries.DataMarker.LabelStyle.Font = Font.SystemFontOfSize(18, FontAttributes
 
 ## Formatting label content
 
-The label content can be customized using the `LabelContent` property. The following two options are supported,
+You can customize the content of the label using the [`LabelContent`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataMarker~LabelContent.html) property. The following two options are supported for format the content:
 
 * [`Percentage`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.LabelContent.html)—This option shows the percentage value of corresponding data point's Y value. This is often used in pie, doughnut, funnel, and pyramid series types.
 * [`YValue`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.LabelContent.html)—This options shows the corresponding data point's Y value.
@@ -138,7 +138,7 @@ pieSeries.DataMarker.LabelContent = LabelContent.Percentage;
 
 ## Label position
 
-This feature is used to position the data marker labels at center, inner, and outer positions to the actual data point's position. By default, the labels are positioned based on the series types. You can move the labels horizontally and vertically using the [`OffsetX`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DataMarkerLabelStyle~OffsetX.html) and [`OffsetY`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DataMarkerLabelStyle~OffsetY.html) properties respectively.
+This feature is used to position the data marker labels at the [`Center`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DataMarkerLabelPosition.html), [`Inner`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DataMarkerLabelPosition.html), and [`Outer`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DataMarkerLabelPosition.html) positions to the actual data point position. By default, the labels are positioned based on the series types for better readability. You can move the labels horizontally and vertically using the [`OffsetX`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DataMarkerLabelStyle~OffsetX.html) and [`OffsetY`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DataMarkerLabelStyle~OffsetY.html) properties, respectively.
 
 The following screenshot illustrates the default position of data marker labels,
 
@@ -230,7 +230,7 @@ series.DataMarker.LabelStyle.LabelPosition = DataMarkerLabelPosition.Outer;
 
 ## Smart labels
 
-This feature is used to arrange the data marker labels smartly and avoid the intersection when the labels are overlapped. The `EnableSmartLabels` property in circular series is used to arrange the data marker labels smartly. The default value of this property is false.
+This feature is used to arrange the data marker labels smartly and avoid the intersection when the labels are overlapped. The [`EnableSmartLabels`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CircularSeries~EnableSmartLabels.html) property in [`CircularSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CircularSeries.html) is used to arrange the data marker labels smartly. The default value of this property is false.
 
 You can enable smart labels by using the following code sample,
 

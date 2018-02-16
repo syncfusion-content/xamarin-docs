@@ -9,16 +9,16 @@ documentation: ug
 
 # Chart Title
 
-You can define and customize the title of a chart using the `Title` property of chart. The `Text` property of the `ChartTitle` is used to set the text for title. 
+You can define and customize the title of a chart using the [`Title`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~Title.html) property of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html). The [`Text`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTitle~Text.html) property of [`ChartTitle`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTitle.html) is used to set the text for the title. 
 
 The following properties are used to customize its appearance:
 
-* `TextColor`—Used to change the color of the text.
-* `BackgroundColor`—Used to change the background color.
-* `BorderColor`—Used to change the border color.
-* `BorderWidth`—Used to change the border width.
-* `Font`—Used to change the text size, font family, and font weight.
-* `Margin`—Used to change the margin of title.
+* [`TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTitle~TextColor.html)—Used to change the color of the text.
+* [`BackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTitle~BackgroundColor.html)—Used to change the background color.
+* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTitle~BorderColor.html)—Used to change the border color.
+* [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTitle~BorderWidth.html)—Used to change the border width.
+* [`Font`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTitle~Font.html)—Used to change the text size, font-family, and font-weight.
+* [`Margin`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTitle~Margin.html)—Used to change the margin for title.
 
 {% tabs %} 
 
@@ -52,7 +52,7 @@ sfChart.Title.TextColor = Color.Blue;
 
 ## Text alignment
 
-You can align the text of the title to the start, center, or end of the title area using the `TextAlignment` property of the `ChartTitle`.
+You can align the text of the title to the start, center, or end using the [`TextAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTitle~TextAlignment.html) property of [`ChartTitle`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTitle.html).
 
 {% tabs %} 
 

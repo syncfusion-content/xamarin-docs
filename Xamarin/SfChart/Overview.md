@@ -20,4 +20,4 @@ Essential chart for Xamarin.Forms provides a perfect way to visualize data with 
 * Chart supports more than 25 different types of series, ranging from simple bar series to complex financial charts. Each type of chart represents a unique style of representing data that is user-friendly and has great UI visualization.
 * Data can be plotted against multiple scales to help you to visualize the mixed types of data in a single chart.
 * Render multiple series at the same time with options to compare and visualize two different chart series simultaneously.
-* User-friendly customization support. Chart provides various options to customize its features, such as axis, labels, legends, series, etc., and visualize them accordingly. 
+* User-friendly customization support. [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html) provides various options to customize its features, such as axis, labels, legends, series, etc., and visualize them accordingly. 

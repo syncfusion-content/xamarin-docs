@@ -127,19 +127,19 @@ N> For image and Fonticon we need to add the the respective image and TTF file.
 			incSettings.ButtonHeight = 45;
 			incSettings.ButtonWidth = 45;
 			upDown.IncrementButtonSettings = incSettings;
-			UpDownButtonSettings decSettings = new UpDownButtonSettings();
-			Grid decerementStack = new Grid();
+			UpDownButtonSettings decrementSettings = new UpDownButtonSettings();
+			Grid decrementStack = new Grid();
 			Image decrementImage = new Image();
 			decrementImage.Source = (FileImageSource)ImageSource.FromFile("down.png");
 			decrementImage.Aspect = Aspect.AspectFit;
 			decrementImage.HorizontalOptions = LayoutOptions.Center;
 			decrementImage.VerticalOptions = LayoutOptions.Center;
-			decerementStack.Children.Add(decrementImage);
-			decerementStack.Padding = new Thickness(5,7);
-			decSettings.ButtonView = decerementStack;
-			decSettings.ButtonHeight = 45;
-			decSettings.ButtonWidth = 45;
-			upDown.DecrementButtonSettings = decSettings;
+			decrementStack.Children.Add(decrementImage);
+			decrementStack.Padding = new Thickness(5,7);
+			decrementSettings.ButtonView = decrementStack;
+			decrementSettings.ButtonHeight = 45;
+			decrementSettings.ButtonWidth = 45;
+			upDown.DecrementButtonSettings = decrementSettings;
 
 {% endhighlight %}
 
@@ -167,12 +167,12 @@ N> For image and Fonticon we need to add the the respective image and TTF file.
 			incSettings.ButtonHeight = 45;
 			incSettings.ButtonWidth = 45;
 			upDown.IncrementButtonSettings = incSettings;
-			UpDownButtonSettings decSettings = new UpDownButtonSettings();
+			UpDownButtonSettings decrementSettings = new UpDownButtonSettings();
 			Grid decerementStack = new Grid();
-			decSettings.ButtonImage = "down";
-			decSettings.ButtonHeight = 45;
-			decSettings.ButtonWidth = 45;
-			upDown.DecrementButtonSettings = decSettings;
+			decrementSettings.ButtonImage = "down";
+			decrementSettings.ButtonHeight = 45;
+			decrementSettings.ButtonWidth = 45;
+			upDown.DecrementButtonSettings = decrementSettings;
 
 {% endhighlight %}
 
@@ -199,22 +199,22 @@ N> For image and Fonticon we need to add the the respective image and TTF file.
 {% highlight C# %}
 
 			UpDownButtonSettings incSettings = new UpDownButtonSettings();
-            UpDownButtonSettings decSettings = new UpDownButtonSettings();
+            UpDownButtonSettings decrementSettings = new UpDownButtonSettings();
 			incSettings.ButtonFontIcon = "\xe701";
-            decSettings.ButtonFontIcon = "\xe700";
+            decrementSettings.ButtonFontIcon = "\xe700";
             if (Device.OS == TargetPlatform.Android)
             {
                 incSettings.ButtonFontFamily = "numeric.ttf";
-                decSettings.ButtonFontFamily = "numeric.ttf";
+                decrementSettings.ButtonFontFamily = "numeric.ttf";
             }
 
             else
             {
                 incSettings.ButtonFontFamily = "numeric";
-                decSettings.ButtonFontFamily = "numeric";
+                decrementSettings.ButtonFontFamily = "numeric";
             }
 			upDown.IncrementButtonSettings = incSettings;
-			upDown.DecrementButtonSettings = decSettings;
+			upDown.DecrementButtonSettings = decrementSettings;
 
 {% endhighlight %}
 

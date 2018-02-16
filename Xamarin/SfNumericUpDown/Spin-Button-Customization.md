@@ -92,7 +92,7 @@ We can set the Up Down button of SfNumericUpDown control by using any of the bel
 2. Image
 3. FontIconText
 
-N> For image and Fonticon we need to add the the respective image and TTF file.
+N> For image and Font icon we need to add the the respective image and TTF file.
 		For android: Add image at Resource/Drawable/{Image} and .ttf file at Asserts/{.ttf}
 		For iOS: Add image and .ttf file to Resource/{Image/.ttf} and To use FontIcons, add respective FontFamily name in info.plist file under Fonts provided by application category.
 		For UWP: Add the image and .ttf file directly to the project.
@@ -168,7 +168,7 @@ N> For image and Fonticon we need to add the the respective image and TTF file.
 			incSettings.ButtonWidth = 45;
 			upDown.IncrementButtonSettings = incSettings;
 			UpDownButtonSettings decrementSettings = new UpDownButtonSettings();
-			Grid decerementStack = new Grid();
+			Grid decrementStack = new Grid();
 			decrementSettings.ButtonImage = "down";
 			decrementSettings.ButtonHeight = 45;
 			decrementSettings.ButtonWidth = 45;

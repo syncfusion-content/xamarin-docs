@@ -84,7 +84,7 @@ Spin Buttons will get aligned to the both side of the control.
 
 N> By default the property value is Right.
 
-##UpDownButtonSetting Customization
+## UpDownButtonSetting Customization
 
 We can set the Up Down button of SfNumericUpDown control by using any of the below given ways.
 
@@ -97,7 +97,7 @@ N> For image and Fonticon we need to add the the respective image and TTF file.
 		For iOS: Add image and .ttf file to Resource/{Image/.ttf} and To use FontIcons, add respective FontFamily name in info.plist file under Fonts provided by application category.
 		For UWP: Add the image and .ttf file directly to the project.
 
-#By using View
+### By using View
 
 
 {% tabs %}
@@ -145,7 +145,7 @@ N> For image and Fonticon we need to add the the respective image and TTF file.
 
 {% endtabs %}
 
-#By using Image
+### By using Image
 
 {% tabs %}
 
@@ -182,7 +182,7 @@ N> For image and Fonticon we need to add the the respective image and TTF file.
 
 
 
-#By using FontIconText
+### By using FontIconText
 
 {% tabs %}
 

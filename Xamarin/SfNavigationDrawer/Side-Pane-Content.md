@@ -74,6 +74,8 @@ public MainPage()
 
 Height of the drawer header content can be adjusted using `DrawerHeaderHeight` property.
 
+N> DrawerHeaderView will be disabled by setting DrawerHeaderHeight to zero 
+
 {% tabs %}
 
 {% highlight xaml %}
@@ -173,6 +175,8 @@ public MainPage()
 ## Footer Height
 
 Height of the drawer footer content can be adjusted using `DrawerFooterHeight` property.
+
+N> DrawerFooterView will be disabled by setting DrawerFooterHeight to zero 
 
 {% tabs %}
 

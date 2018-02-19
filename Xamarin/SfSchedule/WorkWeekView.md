@@ -140,7 +140,43 @@ Working hours in `WorkWeekView` of Schedule control will be differentiated with 
 ![](daymodule_images/changeworkinghours_workweek.png)
 
 >**Note**:
-`WorkStartHour` and `WorkEndHour` should be in integer value to represent hours.
+	`WorkStartHour` and `WorkEndHour` should be in integer value to represent hours.
+
+##Changing StartHour and EndHour:
+
+Default value for [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WorkWeekViewSettings~StartHour.html) and [EndHour](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WorkWeekViewSettings~EndHour.html) value is 0 to 24 to show all the time slots in `WorkWeekView`. You need to set [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WorkWeekViewSettings~StartHour.html) and [EndHour](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WorkWeekViewSettings~EndHour.html) property of 'WorkWeekView', to show only the required time duration for end users.
+
+{% tabs %} 
+{% highlight C# %}
+
+    schedule.ScheduleView = ScheduleView.WorkWeekView;
+	//Create new instance of WorkWeekViewSettings
+	WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings();
+	workWeekViewSettings.StartHour = 08;
+    workWeekViewSettings.EndHour = 15;
+	schedule.WorkWeekViewSettings = workWeekViewSettings;
+{% endhighlight %}
+{% highlight XAML %}
+
+    <schedule:SfSchedule x:Name="schedule" ScheduleView="WorkWeekView">
+       <schedule:SfSchedule.WorkWeekViewSettings>
+            <!--setting working hours properties -->
+             <schedule:WorkWeekViewSettings 
+			    StartHour =”08”
+  			    EndHour =”15”>
+             </schedule:WorkWeekViewSettings>
+        </schedule:SfSchedule.WorkWeekViewSettings>
+    </schedule:SfSchedule>
+{% endhighlight %}
+{% endtabs %}
+
+![](daymodule_images/changestartendhour_workweek.png)
+
+>**Note**:
+*   `StartHour` and `EndHour` should be in integer value to represent hours.
+*	`StartHour` must be greater than or equal to 0 and `EndHour` must be lesser than or equal to 24, otherwise `InvalidDataException` will be thrown.
+*	`EndHour` value must be greater than `StartHour`, otherwise `InvalidDataException` will be thrown.
+*	 Schedule UI such as Appointments and NonAccessibleBlocks which does not fall within the `StartHour` and `EndHour` will not be visible and if it falls partially, it will be clipped.
 
 ## Timeslot Appearance:
 You can customize the appearance of timeslots in `WeekView`.

@@ -372,11 +372,11 @@ You can give smooth color transition to range by specifying the different color 
 						  
                      <gauge:Scale.Ranges>
                         <gauge:Range StartValue = "0" EndValue = "100" Thickness = "30" Offset = "0.6">
-						  <gauge:Range.GradientColors>
+						  <gauge:Range.GradientStops>
                                 <gauge:GaugeGradientStop Value="0" Color="#30B32D"/>
                                 <gauge:GaugeGradientStop Value="50" Color="#FFDD00"/>
 								<gauge:GaugeGradientStop Value="80" Color="#F03E3E"/>
-                            </gauge:Range.GradientColors>
+                            </gauge:Range.GradientStops>
                         </gauge:Range>
 						
                     </gauge:Scale.Ranges>
@@ -444,7 +444,7 @@ You can give smooth color transition to range by specifying the different color 
     gaugeGradientStop2.Color = Color.FromHex("#F03E3E");
     gradientColor1.Add(gaugeGradientStop2);
 
-    range.GradientColors = gradientColor1;
+    range.GradientStops = gradientColor1;
 	
     gauge.Scales = scales;
 

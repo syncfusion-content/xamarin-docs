@@ -307,5 +307,3 @@ Similarly, content region for other tabs can be configured in the same way.
 ## Swiping
 
 Both vertical swiping for the list view and horizontal swiping for the tab view will works by default. If it is not required it can be customized by `EnableSwiping` property of `SfTabView`.
-
-## Display Type

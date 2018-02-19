@@ -55,7 +55,7 @@ The Android launches the tab view without any initialization and is enough to on
 
 # iOS
 
-To launch the tab view in iOS, call the SfTabViewRenderer.Init() in the FinishedLaunchingoverridden method of the AppDelegate class after the Xamarin.Forms Framework initialization and before the LoadApplication is called, as demonstrated in the following code example:
+To launch the tab view in iOS, call the SfTabViewRenderer.Init() in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms Framework initialization and before the LoadApplication is called, as demonstrated in the following code example:
 
 {% highlight C# %}
 
@@ -255,7 +255,7 @@ public class ContactsViewModel
 		ContactList.Add(new ContactInfo{Name = "Aaron",Number = 7363750});
 		ContactList.Add(new ContactInfo { Name = "Adam", Number = 7323250 });
 		ContactList.Add(new ContactInfo { Name = "Adrian", Number = 7239121 });
-		ContactList.Add(new ContactInfo { Name = "Aiden", Number = 2329823 });
+		ContactList.Add(new ContactInfo { Name = "Alwin", Number = 2329823 });
 		ContactList.Add(new ContactInfo { Name = "Alex", Number = 8013481 });
 		ContactList.Add(new ContactInfo { Name = "Alexander", Number = 7872329 });
 		ContactList.Add(new ContactInfo { Name = "Barry", Number = 7317750 });

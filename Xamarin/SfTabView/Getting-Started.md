@@ -153,52 +153,52 @@ Tab items can be configured in tab view through the Items property of `SfTabView
 {% highlight xaml %}
 
 <tabView:SfTabView >
-		<tabView:SfTabItem Title="Call">
-			<tabView:SfTabItem.Content>
-				<Grid BackgroundColor="Red" x:Name="AllContactsGrid" />
-			</tabView:SfTabItem.Content>
-		</tabView:SfTabItem>
-		<tabView:SfTabItem Title="Favorites">
-			<tabView:SfTabItem.Content>
-				<Grid BackgroundColor="Green" x:Name="FavoritesGrid" />
-			</tabView:SfTabItem.Content>
-		</tabView:SfTabItem>
-		<tabView:SfTabItem Title="Contacts">
-			<tabView:SfTabItem.Content>
-				<Grid BackgroundColor="Blue" x:Name="ContactsGrid" />
-			</tabView:SfTabItem.Content>
-		</tabView:SfTabItem>
-	</tabView:SfTabView>
+	<tabView:SfTabItem Title="Call">
+	<tabView:SfTabItem.Content>
+		<Grid BackgroundColor="Red" x:Name="AllContactsGrid" />
+	</tabView:SfTabItem.Content>
+	</tabView:SfTabItem>
+	<tabView:SfTabItem Title="Favorites">
+	<tabView:SfTabItem.Content>
+		<Grid BackgroundColor="Green" x:Name="FavoritesGrid" />
+	</tabView:SfTabItem.Content>
+	</tabView:SfTabItem>
+	<tabView:SfTabItem Title="Contacts">
+	<tabView:SfTabItem.Content>
+		<Grid BackgroundColor="Blue" x:Name="ContactsGrid" />
+	</tabView:SfTabItem.Content>
+	</tabView:SfTabItem>
+</tabView:SfTabView>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
 var tabView = new SfTabView();
-		var allContactsGrid = new Grid {BackgroundColor = Color.Red};
-		var favoritesGrid = new Grid {BackgroundColor = Color.Green};
-		var contactsGrid = new Grid {BackgroundColor = Color.Blue};
-		var tabItems = new TabItemCollection
+var allContactsGrid = new Grid {BackgroundColor = Color.Red};
+var favoritesGrid = new Grid {BackgroundColor = Color.Green};
+var contactsGrid = new Grid {BackgroundColor = Color.Blue};
+var tabItems = new TabItemCollection
+    {
+	new SfTabItem()
+	    {
+	    	Title = "Calls",
+		    Content = allContactsGrid
+	    },
+	new SfTabItem()
 		{
-			new SfTabItem()
-			{
-				Title = "Calls",
-				Content = allContactsGrid
-			},
-			new SfTabItem()
-			{
-				Title = "Favorites",
-				Content = favoritesGrid
-			},
-			new SfTabItem()
-			{
-				Title = "Contacts",
-				Content = contactsGrid
-			}
-		};
+			Title = "Favorites",
+			Content = favoritesGrid
+		},
+	new SfTabItem()
+		{
+			Title = "Contacts",
+			Content = contactsGrid
+		}
+	};
 
-		tabView.Items = tabItems;
-		this.Content = tabView;
+tabView.Items = tabItems;
+this.Content = tabView;
 
 {% endhighlight %}
 
@@ -272,32 +272,32 @@ Bind the items source of the `ListView` and set required appearance in its Items
 
 
 <tabView:SfTabItem.Content>
-				<Grid BackgroundColor="Red" x:Name="AllContactsGrid" >
-					<ListView x:Name="ContactListView" 
-								ItemsSource="{Binding ContactList}"
-								BackgroundColor="Beige" RowHeight="100">
-						<ListView.BindingContext>
-							<gettingStarted:ContactsViewModel />
-						</ListView.BindingContext>
-						<ListView.ItemTemplate>
-							<DataTemplate>
-								<ViewCell>
-									<StackLayout Orientation="Vertical">
-										<Label 
-											Text="{Binding Name}"
-											FontSize="24" 
-											TextColor="Blue" />
-										<Label 
-											Text="{Binding Number}" 
-											FontSize="20" 
-											TextColor="LightSlateGray" />
-									</StackLayout>
-								</ViewCell>
-							</DataTemplate>
-						</ListView.ItemTemplate>
-					</ListView>
-				</Grid>
-			</tabView:SfTabItem.Content>
+	<Grid BackgroundColor="Red" x:Name="AllContactsGrid" >
+		<ListView x:Name="ContactListView" 
+				ItemsSource="{Binding ContactList}"
+				BackgroundColor="Beige" RowHeight="100">
+		<ListView.BindingContext>
+			<gettingStarted:ContactsViewModel />
+		</ListView.BindingContext>
+		<ListView.ItemTemplate>
+			<DataTemplate>
+				<ViewCell>
+					<StackLayout Orientation="Vertical">
+						<Label 
+							Text="{Binding Name}"
+							FontSize="24" 
+							TextColor="Blue" />
+						<Label 
+							Text="{Binding Number}" 
+							FontSize="20" 
+							TextColor="LightSlateGray" />
+					</StackLayout>
+				</ViewCell>
+			</DataTemplate>
+		</ListView.ItemTemplate>
+    	</ListView>
+	</Grid>
+</tabView:SfTabItem.Content>
 
 	
 {% endhighlight %}

@@ -142,7 +142,7 @@ Working hours in `DayView` of Schedule control will be differentiated with non-w
 >**Note**:
 	`WorkStartHour` and `WorkEndHour` should be in integer value to represent hours.
 
-## Changing StartHour and EndHour:
+## Changing StartHour and EndHour
 
 Default value for [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DayViewSettings~StartHour.html) and [EndHour](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DayViewSettings~EndHour.html) value is 0 to 24 to show all the time slots in `DayView`. You need to set [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DayViewSettings~StartHour.html) and [EndHour](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DayViewSettings~EndHour.html) property of `DayView`, to show only the required time duration for end users.
 
@@ -152,7 +152,7 @@ Default value for [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin/
             schedule.ScheduleView = ScheduleView.DayView;
 			//Create new instance of DayViewSettings
 			DayViewSettings dayViewSettings = new DayViewSettings();
-		    dayViewSettings.StartHour = 08;
+			dayViewSettings.StartHour = 08;
 			dayViewSettings.EndHour = 15;
 			schedule.DayViewSettings = dayViewSettings;
 {% endhighlight %}
@@ -160,10 +160,10 @@ Default value for [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin/
 
     <schedule:SfSchedule x:Name="schedule" ScheduleView="DayView">
        <schedule:SfSchedule.DayViewSettings>
-                <!--setting working hours properties -->
+	   <!--setting working hours properties -->
            <schedule:DayViewSettings 
-		   		StartHour="08"
-			    EndHour="15">
+		   StartHour="08"
+		   EndHour="15">
            </schedule:DayViewSettings>
        </schedule:SfSchedule.DayViewSettings>
 </schedule:SfSchedule> 
@@ -173,10 +173,10 @@ Default value for [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin/
 ![](daymodule_images/changestartendhour_day.png)
 
 >**Note**:
-*   `StartHour` and `EndHour` should be in integer value to represent hours.
-*	`StartHour` must be greater than or equal to 0 and `EndHour` must be lesser than or equal to 24, otherwise `InvalidDataException` will be thrown.
-*	`EndHour` value must be greater than `StartHour`, otherwise `InvalidDataException` will be thrown.
-*	 Schedule UI such as Appointments and NonAccessibleBlocks which does not fall within the `StartHour` and `EndHour` will not be visible and if it falls partially, it will be clipped.
+* `StartHour` and `EndHour` should be in integer value to represent hours.
+* `StartHour` must be greater than or equal to 0 and `EndHour` must be lesser than or equal to 24, otherwise `InvalidDataException` will be thrown.
+* `EndHour` value must be greater than `StartHour`, otherwise `InvalidDataException` will be thrown.
+* Schedule UI such as Appointments and NonAccessibleBlocks which does not fall within the `StartHour` and `EndHour` will not be visible and if it falls partially, it will be clipped.
 
 ## Timeslot Appearance
 You can customize the appearance of timeslots in `DayView`.

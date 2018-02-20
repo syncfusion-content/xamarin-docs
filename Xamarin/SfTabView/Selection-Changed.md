@@ -23,11 +23,11 @@ When selection changed due to swiping or by dynamically setting the `SelectedInd
 
 tabView.SelectionChanged += SfTabView_SelectionChanged;
 
-		// Raised when selected index changed
-	private void SfTabView_SelectionChanged(object sender, SelectionChangedEventArgs e)
-	{
-		var selectedIndex = e.Index;
-	}
+// Raised when selected index changed
+private void SfTabView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+{
+	var selectedIndex = e.Index;
+}
 
 {% endhighlight %}
 

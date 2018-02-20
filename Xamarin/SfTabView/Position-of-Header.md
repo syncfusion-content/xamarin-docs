@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Position of header 
+title: Positioning of header 
 description: Positioning of header in Syncfusion TabView control for Xamarin.Forms platform
 platform: Xamarin.Forms
 control: TabView

@@ -123,7 +123,7 @@ Add the font file into your application by following the below steps for each pl
 {% highlight xaml %}
 
 <ResourceDictionary>
-	<OnPlatform x:TypeArguments="x:String" x:Key="fontfamily" iOS="TabIcons" Android="TabIcons.ttf" />
+	<OnPlatform x:TypeArguments="x:String" x:Key="fontFamily" iOS="TabIcons" Android="TabIcons.ttf" />
 </ResourceDictionary>
 
 	// . . . //
@@ -132,7 +132,7 @@ Add the font file into your application by following the below steps for each pl
 	IconFont="a"
 	FontIconFontColor="LightBlue"
 	FontIconFontSize="20"
-	FontIconFontFamily="{StaticResource fontfamily}">
+	FontIconFontFamily="{StaticResource fontFamily}">
 			
 {% endhighlight %}
 

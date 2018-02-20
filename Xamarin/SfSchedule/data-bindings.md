@@ -33,6 +33,35 @@ documentation: ug
 
 ![](PopulatingAppointments_images/appointment.png)
 
+## Minimum Appointment Height:
+
+To make the appointments bigger, so that the subject can be readable. Setting Height for a [ScheduleAppointment](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment.html) when it has minimum duration. Using [MinHeight](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MinHeight.html) property to set the height of the appointment.
+
+{% highlight c# %}
+
+		schedule.ScheduleView = ScheduleView.DayView;
+		ScheduleAppointmentCollection scheduleAppointmentCollection= new ScheduleAppointmentCollection();
+		scheduleAppointmentCollection.Add(new ScheduleAppointment()
+			{
+				StartTime = new DateTime(2018,2,13,09,0,0),
+				EndTime = new DateTime(2018,2,13,09,0,0),
+				Subject = "Client Meeting",
+				MinHeight=30,
+				Color = Color.FromHex("#FFD80073")
+			});
+		scheduleAppointmentCollection.Add(new ScheduleAppointment()
+			{
+				StartTime = new DateTime(2018,2,13,11,0,0),
+				EndTime = new DateTime(2018,2,13,12,0,0),
+				Subject = "Anniversary",
+				Color = Color.FromHex("#FFA2C139")
+			});
+		Schedule.DataSource= scheduleAppointmentCollection;
+		this.content=schedule;
+{% endhighlight %}
+
+![](PopulatingAppointments_images/minheight.png)
+
 ## Mapping
 Schedule supports full data binding to any type of IEnumerable source. Specify the [ScheduleAppointmentMapping](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping.html) attributes to map the properties in the underlying data source to the schedule appointments.
 

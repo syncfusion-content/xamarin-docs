@@ -49,20 +49,18 @@ Selected index can be differentiated by setting `SelectionColor` property of `Sf
 
 {% highlight xaml %}
 
-<tabView:SfTabItem 
-			Title="Calls"
-			SelectionColor="Green">
+<tabView:SfTabItem Title="Calls" SelectionColor="Green">
 			
 {% endhighlight %}
 
 {% highlight C# %}
 
 var tabViewItem = new SfTabItem()
-			{
-				Title = "Calls",
-				TitleFontColor = Color.Green,
-			}
-			
+	{
+	Title = "Calls",
+	TitleFontColor = Color.Green,
+	}
+	
 {% endhighlight %}
 
 {% endtabs %}
@@ -79,25 +77,20 @@ Further customizations of header are discussed in the below sections.
 
 {% highlight xaml %}
 
-tabView:SfTabItem 
-			Title="Calls"
-			TitleFontAttributes="Bold"
-			TitleFontColor="Red"
-			TitleFontSize="22">
-
+<tabView:SfTabItem Title="Calls" TitleFontAttributes="Bold" TitleFontColor="Red" TitleFontSize="22">
 			
 {% endhighlight %}
 
 {% highlight C# %}
 
 var tabViewItem = new SfTabItem()
-			{
-				Title = "Calls",
-				Content = allContactsGrid,
-				TitleFontAttributes = FontAttributes.Bold,
-				TitleFontColor = Color.Red,
-				TitleFontSize = 22
-			}
+	{
+		Title = "Calls",
+		Content = allContactsGrid,
+		TitleFontAttributes = FontAttributes.Bold,
+		TitleFontColor = Color.Red,
+		TitleFontSize = 22
+	}
 			
 {% endhighlight %}
 
@@ -123,32 +116,32 @@ Add the font file into your application by following the below steps for each pl
 {% highlight xaml %}
 
 <ResourceDictionary>
-	<OnPlatform x:TypeArguments="x:String" x:Key="fontFamily" iOS="TabIcons" Android="TabIcons.ttf" />
+<OnPlatform x:TypeArguments="x:String" x:Key="fontFamily" iOS="TabIcons" Android="TabIcons.ttf" />
 </ResourceDictionary>
 
 	// . . . //
 
 <tabview:SfTabItem Title="Calls"
-	IconFont="a"
-	FontIconFontColor="LightBlue"
-	FontIconFontSize="20"
-	FontIconFontFamily="{StaticResource fontFamily}">
+IconFont="a"
+FontIconFontColor="LightBlue"
+FontIconFontSize="20"
+FontIconFontFamily="{StaticResource fontFamily}">
 			
 {% endhighlight %}
 
 {% highlight C# %}
 
 var tabViewItem = new SfTabItem
-		{
-			Title = "Calls",
-			Content = allContactsGrid,
-			IconFont = "a", // setting value for font icons as mentioned in *.ttf.
-			FontIconFontFamily = Device.RuntimePlatform == "iOS" ? "TabIcons" : "TabIcons.ttf",
-			FontIconFontColor = Color.LightBlue,
-			FontIconFontSize =  20
-		};
+	{
+	Title = "Calls",
+	Content = allContactsGrid,
+	IconFont = "a", // setting value for font icons as mentioned in *.ttf.
+	FontIconFontFamily = Device.RuntimePlatform == "iOS" ? "TabIcons" : "TabIcons.ttf",
+	FontIconFontColor = Color.LightBlue,
+	FontIconFontSize =  20
+	};
 
-			
+
 {% endhighlight %}
 
 {% endtabs %}

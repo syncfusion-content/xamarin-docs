@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Display Types 
+title: Display Type
 description: Different display types available in Syncfusion TabView control for Xamarin.Forms platform
 platform: Xamarin.Forms
 control: TabView

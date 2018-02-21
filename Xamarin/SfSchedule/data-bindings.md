@@ -39,25 +39,26 @@ documentation: ug
 
 {% highlight c# %}
 
-		schedule.ScheduleView = ScheduleView.DayView;
-		ScheduleAppointmentCollection scheduleAppointmentCollection= new ScheduleAppointmentCollection();
-		scheduleAppointmentCollection.Add(new ScheduleAppointment()
-			{
-				StartTime = new DateTime(2018, 2, 13, 09, 0, 0),
+ 		schedule.ScheduleView = ScheduleView.DayView;
+		ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
+        scheduleAppointmentCollection.Add(new ScheduleAppointment()
+            {
+                StartTime = new DateTime(2018, 2, 13, 09, 0, 0),
 				EndTime = new DateTime(2018, 2, 13, 09, 0, 0),
 				Subject = "Client Meeting",
-				MinHeight=30,
+				MinHeight = 30,
 				Color = Color.FromHex("#FFD80073")
-			});
+            });
 		scheduleAppointmentCollection.Add(new ScheduleAppointment()
-			{
-				StartTime = new DateTime(2018, 2, 13, 11, 0, 0),
+            {
+                StartTime = new DateTime(2018, 2, 13, 11, 0, 0),
 				EndTime = new DateTime(2018, 2, 13, 12, 0, 0),
 				Subject = "Anniversary",
 				Color = Color.FromHex("#FFA2C139")
-			});
-		Schedule.DataSource= scheduleAppointmentCollection;
-		this.content=schedule;
+            });
+		Schedule.DataSource = scheduleAppointmentCollection;
+
+        this.content = schedule;
 {% endhighlight %}
 
 ![](PopulatingAppointments_images/minheight.png)

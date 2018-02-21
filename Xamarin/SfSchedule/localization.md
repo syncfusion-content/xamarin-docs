@@ -24,7 +24,7 @@ By default, schedule control is available with en locale, which is English.
       <schedule:SfSchedule
               x:Name="schedule" 
               ScheduleView="WeekView"
-              Locale="fr">
+              Locale="ja">
      </schedule:SfSchedule>
 
 
@@ -36,14 +36,12 @@ By default, schedule control is available with en locale, which is English.
             //setting schedule view 
             schedule.ScheduleView = ScheduleView.WeekView;
             //setting locale for the control 
-            schedule.Locale = "fr";  
+            schedule.Locale = "ja";  
       
 {% endhighlight %}   
 {% endtabs %}   
 
->**Note:** AM/PM in the timeline will not be localized in the Schedule views
-
-![](Localization_images/Localization.png)   
+![](Localization_images/Localization_XForms.png)   
 
 ## Change custom texts in the control.
 

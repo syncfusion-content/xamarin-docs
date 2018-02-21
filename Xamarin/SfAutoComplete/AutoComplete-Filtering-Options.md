@@ -27,6 +27,8 @@ The phenomenon of string comparison for filtering suggestions can be changed usi
 
 * EndsWithCaseSensitive
 
+* Custom
+
 ## Filtering Words that Starts with Input Text
 
 Displays all the matches that starts with the typed characters in control. This strategy is case in-sensitive.
@@ -211,6 +213,72 @@ autoComplete.SuggestionMode= SuggestionMode.EqualsWithCaseSensitive;
 
 {% endtabs %}
 
+### Custom
+
+Filter items in the suggestion list based on a custom search by the user. This will help to apply our typo toleration functionality to the control.
+
+![](images/AutoComplete-Filtering-Options/custom_filter.png)
+
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+	<autocomplete:SfAutoComplete HeightRequest="40" DropDownTextSize="20" x:Name="autoComplete" AutoCompleteMode="Suggest" MaximumDropDownHeight="200" SuggestionMode="Custom"/>                        
+</StackLayout>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    public AutoCompletePage()
+    {
+        InitializeComponent();
+        List<string> list = new List<string>();
+        list.Add("Albania");
+        list.Add("Algeria");
+        list.Add("American Samoa");
+        list.Add("Andorra");
+        list.Add("Angola");
+        list.Add("Anguilla");
+        autocomplete.AutoCompleteSource = list;
+        autocomplete.Filter = ContainingSpaceFilter;
+    }
+    public bool ContainingSpaceFilter(string search, object item)
+    {
+        string text = item.ToString().ToLower();
+        if (item != null)
+        {
+            try
+            {
+                var split = search.Split(' ');
+                foreach (var searchitem in split)
+                {
+                    if (!text.Contains(searchitem.ToLower()))
+                    {
+                        return true;
+                    }
+                    else
+                        return false;
+                }
+                return true;
+            }
+            catch (Exception)
+            {
+                return (text.Contains(search));
+            }
+        }
+        else
+            return false;
+    }
+
+	{% endhighlight %}
+
+    {% endtabs %}
+
+
+
 ## Filtering Words that Ends with the Input Text
 
 Displays all the matches that ends with the typed characters in control. This strategy is case in-sensitive.
@@ -242,6 +310,7 @@ autoComplete.SuggestionMode= SuggestionMode.EndsWith;
 
 ![](images/AutoComplete-Filtering-Options/ends-with.png)
 
+
 ### Filtering Words that Ends with the Input Text - CaseSensitive 
 
 Displays all the matches that ends with the typed characters in control. This strategy is case sensitive.
@@ -272,3 +341,4 @@ autoComplete.SuggestionMode= SuggestionMode.EndsWithCaseSensitive;
 {% endtabs %}
 
 ![](images/AutoComplete-Filtering-Options/ends-with-case-sensitive.png)
+

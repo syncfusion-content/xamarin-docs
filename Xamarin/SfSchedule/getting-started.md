@@ -56,6 +56,9 @@ The following list of assemblies need to be added as reference from the lib fold
 </table>   
  
 
+>**Note:**
+For compiling the UWP project in Xamarin Forms, referring the Schedule assemblies (XForms, XForms.UWP) in the XForms (UWP) project is sufficient and its files (properties, themes, etc.) needs to be maintained in the UWP assembly folder to render the control.
+
 ### NuGet Configuration  
     
 Alternatively you can refer SfSchedule in your application by configuring nuget packages.    

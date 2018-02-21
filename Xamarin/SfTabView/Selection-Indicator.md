@@ -21,24 +21,24 @@ Selection indicator can be positioned below the title or above the title or else
 {% highlight xaml %}
 
 <tabView:SfTabView.SelectionIndicatorSettings>
-			<tabView:SelectionIndicatorSettings
-				Color="Yellow" 
-				Position="Top" 
-				StrokeThickness="10"/>
-		</tabView:SfTabView.SelectionIndicatorSettings>
+	<tabView:SelectionIndicatorSettings
+	Color="Yellow" 
+	Position="Top" 
+	StrokeThickness="10"
+	/>
+</tabView:SfTabView.SelectionIndicatorSettings>
 			
 {% endhighlight %}
 
 {% highlight C# %}
 
-		var selectionIndicatorSettings = new SelectionIndicatorSettings();
-		selectionIndicatorSettings.Color = Color.Yellow;
-		selectionIndicatorSettings.Position = SelectionIndicatorPosition.Top;
-		selectionIndicatorSettings.StrokeThickness = 10;
+var selectionIndicatorSettings = new SelectionIndicatorSettings();
+selectionIndicatorSettings.Color = Color.Yellow;
+selectionIndicatorSettings.Position = SelectionIndicatorPosition.Top;
+selectionIndicatorSettings.StrokeThickness = 10;
+tabView.SelectionIndicatorSettings = selectionIndicatorSettings;
 
-		tabView.SelectionIndicatorSettings = selectionIndicatorSettings;
 
-			
 {% endhighlight %}
 
 {% endtabs %}

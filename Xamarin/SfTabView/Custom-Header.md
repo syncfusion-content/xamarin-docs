@@ -16,31 +16,32 @@ When built-in view is not needed, it can be overridden by adding custom view for
 {% highlight xaml %}
 
 <tabView:SfTabItem Title="Calls" >
-			<tabView:SfTabItem.HeaderContent>
-				< Button 
-					Text="All Calls" 
-					BackgroundColor="Yellow"
-					Clicked="Button_Clicked" />
-			</tabView:SfTabItem.HeaderContent>
-			<tabView:SfTabItem.Content>
-				<!--Some content -->
-			</tabView:SfTabItem.Content>
-		</tabView:SfTabItem>
+	<tabView:SfTabItem.HeaderContent>
+	< Button 
+		Text="All Calls" 
+		BackgroundColor="Yellow"
+		Clicked="Button_Clicked" 
+	/>
+	</tabView:SfTabItem.HeaderContent>
+	<tabView:SfTabItem.Content>
+		<!--Some content -->
+	</tabView:SfTabItem.Content>
+</tabView:SfTabItem>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
 var allCallsButton = new Button();
-	allCallsButton.Text = "All Calls";
-	allCallsButton.BackgroundColor = Color.Yellow;
-	allCallsButton.Clicked += AllCallsButton_Clicked;
-	var tabViewItem = new SfTabItem()
-	{
-		Title = "Calls",
-		Content = allContactsGrid,
-		HeaderContent = allCallsButton
-	};
+allCallsButton.Text = "All Calls";
+allCallsButton.BackgroundColor = Color.Yellow;
+allCallsButton.Clicked += AllCallsButton_Clicked;
+var tabViewItem = new SfTabItem()
+{
+Title = "Calls",
+Content = allContactsGrid,
+HeaderContent = allCallsButton
+};
 			
 {% endhighlight %}
 
@@ -54,7 +55,7 @@ When using button or similar control with clicked event, it can be handled direc
 
 private void Button_Clicked(object sender, System.EventArgs e)
 {
-	tabView.SelectedIndex = 0;
+tabView.SelectedIndex = 0;
 }
 			
 {% endhighlight %}

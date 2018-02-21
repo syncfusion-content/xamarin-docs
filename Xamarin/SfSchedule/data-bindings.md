@@ -33,6 +33,43 @@ documentation: ug
 
 ![](PopulatingAppointments_images/appointment.png)
 
+## Minimum Appointment Height:
+
+[MinHeight](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MinHeight.html) of an appointment is to set an arbitrary height to appointments when it has minimum duration, so that the subject can be readable.
+
+{% highlight c# %}
+
+ 		schedule.ScheduleView = ScheduleView.DayView;
+		ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
+        scheduleAppointmentCollection.Add(new ScheduleAppointment()
+            {
+                StartTime = new DateTime(2018, 2, 13, 09, 0, 0),
+				EndTime = new DateTime(2018, 2, 13, 09, 0, 0),
+				Subject = "Client Meeting",
+				MinHeight = 30,
+				Color = Color.FromHex("#FFD80073")
+            });
+		scheduleAppointmentCollection.Add(new ScheduleAppointment()
+            {
+                StartTime = new DateTime(2018, 2, 13, 11, 0, 0),
+				EndTime = new DateTime(2018, 2, 13, 12, 0, 0),
+				Subject = "Anniversary",
+				Color = Color.FromHex("#FFA2C139")
+            });
+		Schedule.DataSource = scheduleAppointmentCollection;
+
+        this.content = schedule;
+{% endhighlight %}
+
+![](PopulatingAppointments_images/minheight.png)
+
+>**Note**:
+* `MinHeight` value will be set, when the an appointment height (duration) value lesser than MinHeight. 
+* Appointment height (duration) value will be set, when the appointment height (duration) value greater than `MinHeight`.
+* TimeInterval value will be set, when Minimum Height greater than TimeInterval with lesser appointment height (duration).
+* `MinHeight` has ScheduleAppointmentMapping Support.
+* All day Appointment does not support `MinHeight`.
+
 ## Mapping
 Schedule supports full data binding to any type of IEnumerable source. Specify the [ScheduleAppointmentMapping](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping.html) attributes to map the properties in the underlying data source to the schedule appointments.
 
@@ -47,6 +84,7 @@ Schedule supports full data binding to any type of IEnumerable source. Specify t
 | [NotesMapping](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping~NotesMapping.html) | This property is to map the property name of custom class which is equivalent for Notes of ScheduleAppointment. |
 | [LocationMapping](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping~LocationMapping.html) | This property is to map the property name of custom class which is equivalent for Location of ScheduleAppointment. |
 | [IsRecursiveMapping](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping~IsRecursiveMapping.html) | This property is to map the property name of custom class which is equivalent for IsRecursive of ScheduleAppointment. |
+| [MinHeightMapping](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping~MinHeightMapping.html) | This property is to map the property name of custom class which is equivalent for MinHeight of ScheduleAppointment. |
 
 N> CustomAppointment class should contain two DateTime fields and a string field as mandatory.
 

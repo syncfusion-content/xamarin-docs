@@ -35,7 +35,7 @@ documentation: ug
 
 ## Minimum Appointment Height:
 
-To make the appointments bigger, so that the subject can be readable. Setting Height for a [ScheduleAppointment](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment.html) when it has minimum duration. Using [MinHeight](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MinHeight.html) property to set the height of the appointment.
+[MinHeight](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MinHeight.html) of an appointment is to set an arbitrary height to appointments when it has minimum duration, so that the subject can be readable.
 
 {% highlight c# %}
 
@@ -61,6 +61,11 @@ To make the appointments bigger, so that the subject can be readable. Setting He
 {% endhighlight %}
 
 ![](PopulatingAppointments_images/minheight.png)
+
+>**Note**:
+* `MinHeight` value will be set, when the an appointment duration (height) value lesser than `MinHeight`.
+* Appointment duration value will be set, when the appointment duration (height) value greater than `MinHeight`.
+* TimeInterval value will be set, when Minimum Height greater than TimeInterval lesser than appointment duration.
 
 ## Mapping
 Schedule supports full data binding to any type of IEnumerable source. Specify the [ScheduleAppointmentMapping](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping.html) attributes to map the properties in the underlying data source to the schedule appointments.

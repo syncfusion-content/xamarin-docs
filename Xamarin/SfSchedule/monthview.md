@@ -553,8 +553,9 @@ You can clear the selection by setting [SelectedDate](https://help.syncfusion.co
 
 You can download the entire source code of this demo for Xamarin.Forms from here [Date_Selection](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Date_Selection1072247797.zip)
 
->**Note**: `SfSchedule` does not support multiple selection.
->**Note**: `SfSchedule` supports two-way binding of `SelectedDate` property.
+>**Note**:
+* `SfSchedule` does not support multiple selection.
+* `SfSchedule` supports two-way binding of `SelectedDate` property.
 
 ![](monthview_images/selection_Month.png)
 

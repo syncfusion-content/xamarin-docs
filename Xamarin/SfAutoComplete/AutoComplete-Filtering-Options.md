@@ -253,9 +253,9 @@ Filter items in the suggestion list based on a custom search by the user. This w
             try
             {
                 var split = search.Split(' ');
-                foreach (var searchitem in split)
+                foreach (var results in split)
                 {
-                    if (!text.Contains(searchitem.ToLower()))
+                    if (!text.Contains(results.ToLower()))
                     {
                         return true;
                     }

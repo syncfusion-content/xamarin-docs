@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Multi Selection
 
-Select multiple items from a suggestion list. There are two ways to perform multiselection in autocomplete.
+Select multiple items from a suggestion list. There are two ways to perform multi selection in autocomplete.
 
 * Token Representation
 

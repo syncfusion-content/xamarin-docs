@@ -399,7 +399,7 @@ You can programmatically select the specific timeslot by setting corresponding d
 {% highlight C# %}
 
     // Setting a date and time to select
-    schedule.SelectedDate = new DateTime(2017, 08, 02, 10, 0, 0);
+    schedule.SelectedDate = new DateTime(2017, 10, 04, 10, 0, 0);
 
 {% endhighlight %}
 

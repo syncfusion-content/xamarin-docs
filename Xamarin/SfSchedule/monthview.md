@@ -538,7 +538,7 @@ You can programmatically select the specific cell by setting corresponding date 
 {% highlight C# %}
 
     // Setting a date to select
-    schedule.SelectedDate = new DateTime(2017, 08, 02);
+    schedule.SelectedDate = new DateTime(2017, 10, 04);
 
 {% endhighlight %}
 

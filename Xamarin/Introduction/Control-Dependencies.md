@@ -227,7 +227,7 @@ This page lists the assemblies required for each control to be referred in each 
 </tr>
 <tr>
 <td>UWP</td>
-<td>Syncfusion.SfSchedule.UWP.dll<br/>Syncfusion.SfSchedule.XForms.UWP.dll<br/>Syncfusion.SfSchedule.XForms.dll<br/></td>
+<td>Syncfusion.SfSchedule.XForms.UWP.dll<br/>Syncfusion.SfSchedule.XForms.dll<br/></td>
 </tr>
 </table>
 

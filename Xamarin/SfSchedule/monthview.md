@@ -498,6 +498,8 @@ You can customize the month cell selection by using [SelectionStyle](https://hel
 {% endhighlight %}
 {% endtabs %}
 
+![](monthview_images/SelectionStyle_Month.png)
+
 ### Selection customization using custom View
 You can replace the default selection UI with your custom view by setting [SelectionView](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~SelectionView.html) property of `SfSchedule`.
 
@@ -528,13 +530,15 @@ You can replace the default selection UI with your custom view by setting [Selec
 {% endhighlight %}
 {% endtabs %}
 
+![](monthview_images/SelectionView_Month.png)
+
 ### Programmatic selection
 You can programmatically select the specific cell by setting corresponding date to [SelectedDate](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~SelectedDate.html) property of `SfSchedule`. By default, it is null.
 
 {% highlight C# %}
 
     // Setting a date to select
-    schedule.SelectedDate = new DateTime(2017, 08, 02)
+    schedule.SelectedDate = new DateTime(2017, 08, 02);
 
 {% endhighlight %}
 
@@ -543,7 +547,7 @@ You can clear the selection by setting [SelectedDate](https://help.syncfusion.co
 {% highlight C# %}
 
     // Setting null value to deselect
-    schedule.SelectedDate = null
+    schedule.SelectedDate = null;
 
 {% endhighlight %}
 
@@ -552,5 +556,5 @@ You can download the entire source code of this demo for Xamarin.Forms from here
 >**Note**: `SfSchedule` does not support multiple selection.
 >**Note**: `SfSchedule` supports two-way binding of `SelectedDate` property.
 
-
+![](monthview_images/selection_Month.png)
 

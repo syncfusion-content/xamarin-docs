@@ -371,7 +371,7 @@ You can programmatically select the specific timeslot by setting corresponding d
 {% highlight C# %}
 
     // Setting a date and time to select
-    schedule.SelectedDate = new DateTime(2017, 08, 02, 10, 0, 0)
+    schedule.SelectedDate = new DateTime(2017, 08, 02, 10, 0, 0);
 
 {% endhighlight %}
 
@@ -380,7 +380,7 @@ You can clear the selection by setting [SelectedDate](https://help.syncfusion.co
 {% highlight C# %}
 
     // Setting null value to deselect
-    schedule.SelectedDate = null
+    schedule.SelectedDate = null;
 
 {% endhighlight %}
 
@@ -388,4 +388,6 @@ You can download the entire source code of this demo for Xamarin.Forms from here
 
 >**Note**: `SfSchedule` does not support multiple selection.
 >**Note**: `SfSchedule` supports two-way binding of `SelectedDate` property.
+
+![](daymodule_images/selection_Day.png)
 

@@ -497,7 +497,6 @@ You can customize the month cell selection by using [SelectionStyle](https://hel
 
 {% endhighlight %}
 {% endtabs %}
-![](daymodule_images/selectionstyle_week.png)
 
 ### Selection customization using custom View
 You can replace the default selection UI with your custom view by setting [SelectionView](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~SelectionView.html) property of `SfSchedule`.
@@ -528,7 +527,6 @@ You can replace the default selection UI with your custom view by setting [Selec
 
 {% endhighlight %}
 {% endtabs %}
-![](daymodule_images/selectioncustomview_week.png)
 
 ### Programmatic selection
 You can programmatically select the specific cell by setting corresponding date to [SelectedDate](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~SelectedDate.html) property of `SfSchedule`. By default, it is null.
@@ -552,8 +550,7 @@ You can clear the selection by setting [SelectedDate](https://help.syncfusion.co
 You can download the entire source code of this demo for Xamarin.Forms from here [Date_Selection](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Date_Selection1072247797.zip)
 
 >**Note**: `SfSchedule` does not support multiple selection.
->**Note**: `SelectedDate` is a two way bindable property and MVVM compatibility.
->**Note**: `SelectedDate` value will be updated when `CellTapped` event is triggered.
+>**Note**: `SfSchedule` supports two-way binding of `SelectedDate` property.
 
 
 

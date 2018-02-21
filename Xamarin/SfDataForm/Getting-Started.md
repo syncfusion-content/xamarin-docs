@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Getting started | SfDataForm | Xamarin | Syncfusion
 description: Getting started with SfDataForm.
@@ -102,6 +102,7 @@ The Android launches the data form without any initialization and is enough to o
 
 To launch the data form in iOS, call the `SfDataFormRenderer.Init()` in the `FinishedLaunching` overridden method of the AppDelegate class after the Xamarin.Forms Framework initialization and before the LoadApplication is called, as demonstrated in the following code example:
 
+{% tabs %}
 {% highlight c# %}
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {
@@ -112,11 +113,13 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
     …
 }
 {% endhighlight %} 
+{% endtabs %}
 
 ### Universal Windows Platform (UWP)
 
 To launch the data form in UWP, call the `SfDataFormRenderer.Init()` in the `MainPage` constructor before the LoadApplication is called, as demonstrated in the following code example:
 
+{% tabs %}
 {% highlight c# %}
 public MainPage()
 {
@@ -126,6 +129,7 @@ public MainPage()
     …
 }
 {% endhighlight %}
+{% endtabs %}
 
 ### ReleaseMode issue in UWP platform
 
@@ -133,6 +137,7 @@ The known Framework issue in UWP platform is that the custom controls will not r
 
 The above problem can be resolved by initializing the data form assemblies in `App.xaml.cs` in UWP project as in the following code snippet:
 
+{% tabs %}
 {% highlight c# %}
 // In App.xaml.cs
 
@@ -154,13 +159,14 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
     …     
 }
 {% endhighlight %}
+{% endtabs %}
 
 ## Creating the data form
 
 In this section, you will create Xamarin.Forms application with `SfDataForm`. The control should be configured entirely in C# code.
 
 * Creating the project.
-* Adding data form in Xamarin.Android.
+* Adding data form in Xamarin.Forms.
 * Creating data object.
 * Setting data object.
 
@@ -168,7 +174,7 @@ In this section, you will create Xamarin.Forms application with `SfDataForm`. Th
 
 Create a new BlankApp (Xamarin.Forms.Portable) application in Xamarin Studio or Visual Studio for Xamarin.Forms.
 
-### Adding data form in Xamarin.Android
+### Adding data form in Xamarin.Form
 
 To add the data form to your application, follow the steps:
 
@@ -178,6 +184,7 @@ To add the data form to your application, follow the steps:
 
 {% tabs %}
 {% highlight xaml %}
+
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -188,6 +195,7 @@ To add the data form to your application, follow the steps:
         <dataForm:SfDataForm x:Name="dataForm"/>
     </ContentPage.Content>
 </ContentPage>
+
 {% endhighlight %}
 {% highlight c# %}
 
@@ -316,6 +324,7 @@ Create a model repository class with ContactsInfo property initialized with requ
 
 {% tabs %}
 {% highlight c# %}
+
 public class ViewModel
 {
     private ContactsInfo contactsInfo;
@@ -329,6 +338,7 @@ public class ViewModel
         this.contactsInfo = new ContactsInfo();
     }
 }
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -338,6 +348,7 @@ To populate the labels and editors in the data form, set the [DataObject](https:
 
 {% tabs %}
 {% highlight xaml %}
+
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -352,6 +363,7 @@ To populate the labels and editors in the data form, set the [DataObject](https:
                              DataObject="{Binding ContactsInfo}"/>
     </ContentPage.Content>
 </ContentPage>
+
 {% endhighlight %}
 {% highlight c# %}
 

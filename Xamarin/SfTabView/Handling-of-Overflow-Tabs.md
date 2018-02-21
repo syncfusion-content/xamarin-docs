@@ -40,25 +40,26 @@ Appearance of the text can be customized through the APIs available `OverflowBut
 {% highlight xaml %}
 
 <tabView:SfTabView.OverflowButtonSettings>
-			<tabView:OverflowButtonSettings 
-				BackgroundColor="Red" 
-				DisplayMode="Text"
-				Title="..."
-				TitleFontSize="30"
-				TitleFontColor="Yellow"/>
-		</tabView:SfTabView.OverflowButtonSettings>	
+	<tabView:OverflowButtonSettings 
+	BackgroundColor="Red" 
+	DisplayMode="Text"
+	Title="..."
+	TitleFontSize="30"
+	TitleFontColor="Yellow"
+	/>
+</tabView:SfTabView.OverflowButtonSettings>	
 
 {% endhighlight %}
 
 {% highlight C# %}
 
 var overflowButtonSettings = new OverflowButtonSettings();
-		overflowButtonSettings.BackgroundColor = Color.Red;
-		overflowButtonSettings.DisplayMode = OverflowButtonDisplayMode.Text;
-		overflowButtonSettings.Title = "...";
-		overflowButtonSettings.TitleFontSize = 30;
-		overflowButtonSettings.TitleFontColor = Color.Yellow;
-		tabView.OverflowButtonSettings = overflowButtonSettings;
+overflowButtonSettings.BackgroundColor = Color.Red;
+overflowButtonSettings.DisplayMode = OverflowButtonDisplayMode.Text;
+overflowButtonSettings.Title = "...";
+overflowButtonSettings.TitleFontSize = 30;
+overflowButtonSettings.TitleFontColor = Color.Yellow;
+tabView.OverflowButtonSettings = overflowButtonSettings;
 			
 {% endhighlight %}
 

@@ -423,7 +423,7 @@ sfGrid.TableSummaryRows.Add(summaryRow2);
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/Summary2.png)
+![](SfDataGrid_images/Tablesummaries_2.png)
 
 ### Displaying summary in a row
 

@@ -9,43 +9,43 @@ documentation: ug
 
 ---
 
-# RIM
+# Rim
 
-`Scale` determines the structure of the circular gauge using the circular rim. By setting the `StartAngle` and `SweepAngle` properties, you can shape the circular gauge into a full circular gauge, half circular gauge, or quarter circular gauge.
+Scale determines the structure of the circular gauge by using the circular rim. By setting the [`StartAngle`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~StartAngle.html) and [`SweepAngle`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~SweepAngle.html) properties, you can shape the circular gauge into a full circular gauge, half circular gauge, or quarter circular gauge.
 
-The `StartValue` and `EndValue` properties will determine the overall range of the circular rim. The rim’s color and thickness can be set using the `RimColor` and `RimThickness` properties.
+The [`StartValue`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~StartValue.html) and [`EndValue`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~EndValue.html) properties will determine the overall range of the circular rim.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-    <gauge:SfCircularGauge.Scales>
-        <gauge:Scale StartAngle="135" StartValue="0" EndValue="100" Interval="10" SweepAngle="270" LabelOffset="0.1" 
-                   LabelColor="Gray" LabelFontSize="10" LabelOffset="0.1"
-                   RimThickness="10" RimColor="Gray" MinorTicksPerInterval="0">
-        </gauge:Scale>
-    </gauge:SfCircularGauge.Scales>
+     <gauge:SfCircularGauge>
+     ...
+
+        <gauge:SfCircularGauge.Scales>
+             <gauge:Scale StartAngle="270" SweepAngle="360" StartValue="0" EndValue="360" Interval="20" MinorTicksPerInterval="0" ShowFirstLabel="False"/>
+         </gauge:SfCircularGauge.Scales>	
+            
+     ...
+     </gauge:SfCircularGauge>
+
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfCircularGauge circular = new SfCircularGauge();
+    SfCircularGauge circularGauge = new SfCircularGauge();
     ObservableCollection<Scale> scales = new ObservableCollection<Scale>();
-    Scale scale=new Scale();
+    Scale scale = new Scale();
+    scale.StartAngle = 270;
+    scale.SweepAngle = 360;
     scale.StartValue = 0;
-    scale.EndValue = 100;
-    scale.Interval = 10;
-    scale.StartAngle = 135;
-    scale.SweepAngle = 270;
-    scale.RimThickness = 10;
-    scale.RimColor = Color.Gray;
-    scale.LabelColor = Color.Gray;
-    scale.LabelOffset = 0.1;
+    scale.EndValue = 360;
+    scale.Interval = 20;
     scale.MinorTicksPerInterval = 0;
+    scale.ShowFirstLabel = false;
     scales.Add(scale);
-    circular.Scales = scales;
-    this.content=circular;
+    circularGauge.Scales = scales;  
 
 {% endhighlight %}
 
@@ -53,34 +53,175 @@ The `StartValue` and `EndValue` properties will determine the overall range of t
 
 ![](rim_images/rim.png)
 
-## Show Rim
+## Rim customization
 
-Show Rim property is a Boolean property which is used to enable or disable feature of Rim in CircularGauge
+The Color and thickness of rim can be set by using the [`RimColor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~RimColor.html) and [`RimThickness`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~RimThickness.html) properties. To increase the [`RimThickness`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~RimThickness.html), set [`RadiusFactor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~RadiusFactor.html).
 
 {% tabs %}
 
 {% highlight xaml %}
 
-        <gauge:SfCircularGauge x:Name="circular">
+     <gauge:SfCircularGauge>
+     ...
+
+        <gauge:SfCircularGauge.Scales>
+             <gauge:Scale RadiusFactor="1" RimThickness="40" RimColor="SkyBlue" LabelOffset = "0.6">
+			 
+                 <gauge:Scale.MajorTickSettings>
+                        <gauge:TickSettings Offset = “0.75”/>
+                 </gauge:Scale.MajorTickSettings>
+					
+                 <gauge:Scale.MinorTickSettings>
+                        <gauge:TickSettings Offset = “0.75”/>
+                 </gauge:Scale.MinorTickSettings>
+					
+					</gauge:Scale>
+
+         </gauge:SfCircularGauge.Scales>	
+            
+     ...
+     </gauge:SfCircularGauge>
+
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    SfCircularGauge circularGauge = new SfCircularGauge();
+    ObservableCollection<Scale> scales = new ObservableCollection<Scale>();
+    Scale scale = new Scale();
+    scale.RadiusFactor = 1;
+    scale.RimThickness = 40;
+    scale.LabelOffset = 0.6;
+    scale.MajorTickSettings.Offset = 0.75;
+    scale.MinorTickSettings.Offset = 0.75;
+    scale.RimColor = Color.SkyBlue;
+    scales.Add(scale);
+    circularGauge.Scales = scales;  
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](rim_images/rim-customization.png)
+
+## Setting position for Rim
+
+You can customize the position of the [`Scales`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge~Scales.html) in following two ways:
+1.[`RadiusFactor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~RadiusFactor.html) with  [`RimThickness`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~RimThickness.html) property.
+2.[`ScaleStartOffset`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~ScaleStartOffset.html) and [`ScaleEndOffset`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~ScaleEndOffset.html) properties.
+
+### Setting radius factor for Rim
+
+{% tabs %}
+
+{% highlight xaml %}
+
+     <gauge:SfCircularGauge>
+     ...
+
+        <gauge:SfCircularGauge.Scales>
+		
+             <gauge:Scale RadiusFactor = "0.7" RimThickness = "30">
+					
+			</gauge:Scale>
+
+         </gauge:SfCircularGauge.Scales>	
+            
+     ...
+     </gauge:SfCircularGauge>
+
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    SfCircularGauge circularGauge = new SfCircularGauge();
+    ObservableCollection<Scale> scales = new ObservableCollection<Scale>();
+    Scale scale = new Scale();
+    scale.RadiusFactor = 0.7;
+    scale.RimThickness = 30;
+    scales.Add(scale);
+    circularGauge.Scales = scales;  
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](rim_images/rim-offset.png)
+
+### Setting scale start and end offsets for Rim
+
+{% tabs %}
+
+{% highlight xaml %}
+
+     <gauge:SfCircularGauge>
+     ...
+
+        <gauge:SfCircularGauge.Scales>
+		
+             <gauge:Scale ScaleStartOffset="0.6" ScaleEndOffset = "0.7">
+					
+			</gauge:Scale>
+
+         </gauge:SfCircularGauge.Scales>	
+            
+     ...
+     </gauge:SfCircularGauge>
+
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    SfCircularGauge circularGauge = new SfCircularGauge();
+    ObservableCollection<Scale> scales = new ObservableCollection<Scale>();
+    Scale scale = new Scale();
+    scale.ScaleStartOffset = 0.6;
+    scale.ScaleEndOffset = 0.7;
+    scales.Add(scale);
+    circularGauge.Scales = scales;  
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](rim_images/rim-start-end-offset.png)
+
+## Show Rim
+
+[`ShowRim`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~ShowRim.html) property is a Boolean property, which is used to enable or disable the Rim in Circular Gauge.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+        <gauge:SfCircularGauge>
+		...
+		
           <gauge:SfCircularGauge.Scales>
-	  	    <gauge:Scale x:Name="scale" ShowRim = "False">
+	  	    <gauge:Scale ShowRim = "False">
                     </gauge:Scale>
-	      </gauge:SfCircularGauge.Scales>			
+	      </gauge:SfCircularGauge.Scales>	
+
+		 ... 
 	    </gauge:SfCircularGauge>	 
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-            SfCircularGauge circular = new SfCircularGauge();       
+            SfCircularGauge circularGauge = new SfCircularGauge();       
             ObservableCollection<Scale> scales = new ObservableCollection<Scale>();
             Scale scale = new Scale();                
             scale.ShowRim = false;
             scales.Add(scale);
-            circular.Scales.Add(scale);
-            this.Content = circular;
-   
+            circularGauge.Scales.Add(scale);
     
 {% endhighlight %}
+
 {% endtabs %}
+
+![](rim_images/show-rim.png)
 

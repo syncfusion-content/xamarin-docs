@@ -46,18 +46,18 @@ var tabItems = new TabItemCollection
 {
 	new SfTabItem()
 	{
-		Title = "Calls",
-		Content = allContactsGrid
+    Title = "Calls",
+    Content = allContactsGrid
 	},
 	new SfTabItem()
 	{
-		Title = "Favorites",
-		Content = favoritesGrid
+    Title = "Favorites",
+    Content = favoritesGrid
 	},
 	new SfTabItem()
 	{
-		Title = "Contacts",
-		Content = contactsGrid
+    Title = "Contacts",
+    Content = contactsGrid
 	}
 };
 

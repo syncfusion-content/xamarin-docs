@@ -43,16 +43,16 @@ documentation: ug
 		ScheduleAppointmentCollection scheduleAppointmentCollection= new ScheduleAppointmentCollection();
 		scheduleAppointmentCollection.Add(new ScheduleAppointment()
 			{
-				StartTime = new DateTime(2018,2,13,09,0,0),
-				EndTime = new DateTime(2018,2,13,09,0,0),
+				StartTime = new DateTime(2018, 2, 13, 09, 0, 0),
+				EndTime = new DateTime(2018, 2, 13, 09, 0, 0),
 				Subject = "Client Meeting",
 				MinHeight=30,
 				Color = Color.FromHex("#FFD80073")
 			});
 		scheduleAppointmentCollection.Add(new ScheduleAppointment()
 			{
-				StartTime = new DateTime(2018,2,13,11,0,0),
-				EndTime = new DateTime(2018,2,13,12,0,0),
+				StartTime = new DateTime(2018, 2, 13, 11, 0, 0),
+				EndTime = new DateTime(2018, 2, 13, 12, 0, 0),
 				Subject = "Anniversary",
 				Color = Color.FromHex("#FFA2C139")
 			});

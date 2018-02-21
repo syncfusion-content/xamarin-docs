@@ -51,20 +51,13 @@ The following list of assemblies need to be added as reference from the lib fold
 </tr>   
 <tr>   
 <td>UWP Renderer</td>   
-<td>pcl\Syncfusion.SfSchedule.XForms.dll<br/>uwp\Syncfusion.SfSchedule.UWP.dll<br/>uwp\Syncfusion.SfSchedule.XForms.UWP.dll<br/></td>   
+<td>pcl\Syncfusion.SfSchedule.XForms.dll<br/>uwp\Syncfusion.SfSchedule.XForms.UWP.dll<br/></td>   
 </tr>   
 </table>   
-
-#### Dependencies for UWP project
-
-For compiling the UWP project in Xamarin Forms, referring the Schedule assemblies (XForms, XForms.UWP & UWP) in the UWP project is sufficient but dependency assemblies of Schedule and its files (properties, themes, etc.) needs to be maintained in the UWP assembly folder to render the control.
  
-**Dependencies of SfSchedule**
 
-* Syncfusion.SfInput.UWP
-* Syncfusion.SfRadialMenu.UWP
-* Syncfusion.SfShared.UWP
-* Syncfusion.SfTabControl.UWP
+>**Note:**
+For compiling the UWP project in Xamarin.Forms, referring the Schedule assemblies (XForms, XForms.UWP) in the XForms (UWP) project is sufficient and its files (properties, themes, etc.) needs to be maintained in the UWP assembly folder to render the control.
 
 ### NuGet Configuration  
     

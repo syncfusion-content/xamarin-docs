@@ -459,7 +459,7 @@ You can customize the Month inline view Appointment by using [OnMonthInlineAppoi
 ![](monthview_images/inlinecustomview.png)
 
 ## Selection
-You can customize the default appearance of selection UI in the cells.
+You can customize the default appearance of selection UI in the month cells.
 
 * [Selection customization using style](#selection-customization-using-style)
 * [Selection customization using custom View](#selection-customization-using-custom-view)

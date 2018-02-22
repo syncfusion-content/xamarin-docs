@@ -33,9 +33,9 @@ documentation: ug
 
 ![](PopulatingAppointments_images/appointment.png)
 
-## Minimum Appointment Height:
+## Minimum Appointment Height
 
-[MinHeight](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MinHeight.html) of an appointment is to set an arbitrary height to appointments when it has minimum duration, so that the subject can be readable.
+[MinHeight](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~MinHeight.html) of an appointment is to set an arbitrary height to appointments when it has minimum duration, so that the subject can be readable.
 
 {% highlight c# %}
 
@@ -43,7 +43,7 @@ documentation: ug
 		ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
         scheduleAppointmentCollection.Add(new ScheduleAppointment()
             {
-                StartTime = new DateTime(2018, 2, 13, 09, 0, 0),
+				StartTime = new DateTime(2018, 2, 13, 09, 0, 0),
 				EndTime = new DateTime(2018, 2, 13, 09, 0, 0),
 				Subject = "Client Meeting",
 				MinHeight = 30,
@@ -61,9 +61,10 @@ documentation: ug
         this.content = schedule;
 {% endhighlight %}
 
-![](PopulatingAppointments_images/minheight.png)
+ ![](PopulatingAppointments_images/minheight.png)
 
 >**Note**:
+
 * `MinHeight` value will be set, when the an appointment height (duration) value lesser than MinHeight. 
 * Appointment height (duration) value will be set, when the appointment height (duration) value greater than `MinHeight`.
 * TimeInterval value will be set, when Minimum Height greater than TimeInterval with lesser appointment height (duration).

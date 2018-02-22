@@ -308,4 +308,4 @@ Similarly, content region for other tabs also can be configured.
 
 By default, both the vertical swiping for list view and horizontal swiping for tab view will work. If it is not required, it can be customized by using the `EnableSwiping` property of `SfTabView`.
 
-Note: Getting started sample can be download from [this link](http://files2.syncfusion.com/Installs/v16.1.0.24/Samples/Xamarin/RangeSlider_GettingStarted.zip).
+Note: Getting started sample can be downloaded from [this link](http://files2.syncfusion.com/Installs/v16.1.0.24/Samples/Xamarin/TabView_GettingStarted.zip).

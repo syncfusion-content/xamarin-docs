@@ -149,7 +149,7 @@ You can set First day of week using [FirstDayOfWeek](https://help.syncfusion.com
 
         <schedule:SfSchedule 
 				x:Name="schedule" 
-				FirstDayOfWeek="2"
+				FirstDayOfWeek="3"
 				ScheduleView="MonthView">
 		</schedule:SfSchedule>
 
@@ -157,7 +157,7 @@ You can set First day of week using [FirstDayOfWeek](https://help.syncfusion.com
 {% highlight c# %}
 
 			//setting FirstDayOfWeek
-			schedule.FirstDayOfWeek = 2; // Monday
+			schedule.FirstDayOfWeek = 3; // Tuesday
 
 {% endhighlight %}
 {% endtabs %}
@@ -458,4 +458,104 @@ You can customize the Month inline view Appointment by using [OnMonthInlineAppoi
 
 ![](monthview_images/inlinecustomview.png)
 
+## Selection
+You can customize the default appearance of selection UI in the month cells.
+
+* [Selection customization using style](#selection-customization-using-style)
+* [Selection customization using custom View](#selection-customization-using-custom-view)
+
+### Selection customization using style:
+You can customize the month cell selection by using [SelectionStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~SelectionStyle.html) property of `SfSchedule`.
+
+{% tabs %}
+
+{% highlight C# %}
+
+    schedule.ScheduleView = ScheduleView.MonthView;
+    //Create new instance of SelectionStyle
+    SelectionStyle selectionStyle = new SelectionStyle();
+    selectionStyle.BackgroundColor = Color.Blue;
+    selectionStyle.BorderColor = Color.Black;
+    selectionStyle.BorderThickness = 5;
+    selectionStyle.BorderCornerRadius = 5;
+    schedule.SelectionStyle = selectionStyle;
+
+{% endhighlight %}
+
+{% highlight XAML %}
+
+    <schedule:SfSchedule x:Name="schedule" ScheduleView="MonthView">
+        <schedule:SfSchedule.SelectionStyle>
+            <schedule:SelectionStyle
+                BackgroundColor="Blue"
+                BorderColor="Black"
+                BorderThickness="5"
+                BorderCornerRadius="5">
+            </schedule:SelectionStyle>
+        </schedule:SfSchedule.SelectionStyle>
+    </schedule:SfSchedule>
+
+{% endhighlight %}
+{% endtabs %}
+
+![](monthview_images/SelectionStyle_Month.png)
+
+### Selection customization using custom View
+You can replace the default selection UI with your custom view by setting [SelectionView](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~SelectionView.html) property of `SfSchedule`.
+
+{% tabs %}
+
+{% highlight C# %}
+
+    schedule.ScheduleView = ScheduleView.MonthView;
+    //Add the CustomView
+    Button customView = new Button();
+    customView.Text = "+NewEvent";
+    customView.BackgroundColor = Color.FromHex("#FF9800");
+    customView.TextColor = Color.White;
+    schedule.SelectionView = customView;
+{% endhighlight %}
+
+{% highlight XAML %}
+
+    <schedule:SfSchedule x:Name="schedule" ScheduleView="MonthView">
+        <schedule:SfSchedule.SelectionView>
+            <Button
+                BackgroundColor="#FF9800"
+                Text="+NewEvent"
+                TextColor="White"/>
+        </schedule:SfSchedule.SelectionView>
+    </schedule:SfSchedule>
+
+{% endhighlight %}
+{% endtabs %}
+
+![](monthview_images/SelectionView_Month.png)
+
+### Programmatic selection
+You can programmatically select the specific cell by setting corresponding date to [SelectedDate](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~SelectedDate.html) property of `SfSchedule`. By default, it is null.
+
+{% highlight C# %}
+
+    // Setting a date to select
+    schedule.SelectedDate = new DateTime(2017, 10, 04);
+
+{% endhighlight %}
+
+You can clear the selection by setting [SelectedDate](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~SelectedDate.html) as null.
+
+{% highlight C# %}
+
+    // Setting null value to deselect
+    schedule.SelectedDate = null;
+
+{% endhighlight %}
+
+You can download the entire source code of this demo for Xamarin.Forms from here [Date_Selection](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Date_Selection1072247797.zip)
+
+>**Note**:
+* `SfSchedule` does not support multiple selection.
+* `SfSchedule` supports two-way binding of `SelectedDate` property.
+
+![](monthview_images/selection_Month.png)
 

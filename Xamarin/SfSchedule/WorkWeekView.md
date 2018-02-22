@@ -429,25 +429,29 @@ You can replace the default selection UI with your custom view by setting [Selec
 
 ![](daymodule_images/selectioncustomview_workweek.png)
 
->**Note:**
-Selection customization is applicable for time slots alone.
+### Programmatic selection
+You can programmatically select the specific timeslot by setting corresponding date and time value to [SelectedDate](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~SelectedDate.html) property of `SfSchedule`. By default, it is null.
 
+{% highlight C# %}
 
+    // Setting a date and time to select
+    schedule.SelectedDate = new DateTime(2017, 10, 04, 10, 0, 0);
 
+{% endhighlight %}
 
+You can clear the selection by setting [SelectedDate](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~SelectedDate.html) as null.
 
+{% highlight C# %}
 
+    // Setting null value to deselect
+    schedule.SelectedDate = null;
 
+{% endhighlight %}
 
+You can download the entire source code of this demo for Xamarin.Forms from here [Date_Selection](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Date_Selection1072247797.zip)
 
+>**Note**:
+* `SfSchedule` does not support multiple selection.
+* `SfSchedule` supports two-way binding of `SelectedDate` property.
 
-
-
-
-
-
-
-
-
-
-
+![](daymodule_images/selection_WorkWeek.png)

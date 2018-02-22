@@ -76,6 +76,46 @@ SfChart chart = new SfChart()
 
 ![](appearance_images/appearance_img2.png)
 
+
+Chart uses the gradient colors from the [`CustomGradientColors`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorModel~CustomGradientColors.html) property and needs to set the [`ColorModel.Palette`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorModel~Palette.html) property to [`Custom`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorPalette.html).
+
+The following code illustrates how to set the custom gradient colors. 
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+ <chart:SfChart.ColorModel>
+      <chart:ChartColorModel Palette="Custom">
+        <chart:ChartColorModel.CustomGradientColors>
+          <chart:ChartGradientColor>
+            <chart:ChartGradientColor.GradientStops>
+              <chart:ChartGradientStop Color="#FFE7C7" Offset= "0"/>
+              <chart:ChartGradientStop Color="#FCB69F" Offset= "1"/>
+            </chart:ChartGradientColor.GradientStops>
+          </chart:ChartGradientColor>
+        </chart:ChartColorModel.CustomGradientColors>
+      </chart:ChartColorModel>
+    </chart:SfChart.ColorModel>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    chart.ColorModel.Palette = ChartColorPalette.Custom;
+ 
+    ChartGradientColor gradientColor = new ChartGradientColor() { StartPoint = new Point(0.5, 1), EndPoint = new Point(0.5, 0) };
+    ChartGradientStop stop1 = new ChartGradientStop() { Color = Color.FromHex("#FFE7C7"), Offset = 0 };
+    ChartGradientStop stop2 = new ChartGradientStop() { Color = Color.FromHex("#FCB69F"), Offset = 1 };
+    gradientColor.GradientStops.Add(stop1);
+    gradientColor.GradientStops.Add(stop2);
+
+    chart.ColorModel.CustomGradientColors.Add(gradientColor);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 **None Palette**
 
 [`None`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorPalette.html) palette will not apply any color to the series. So in order to define the color for any series, you can use the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~Color.html) property or the [`ColorModel`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorModel.html) property of [`ChartSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries.html) (The ColorModel of Series will be explained later in this document).
@@ -200,6 +240,90 @@ SfChart chart = new SfChart()
 {% endtabs %}
 
 ![](appearance_images/appearance_img4.png)
+
+Series uses the colors from the  [`CustomGradientColors`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorModel~CustomGradientColors.html) property and needs to set the  [`ColorModel.Palette`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorModel~Palette.html)  property of series to [`Custom`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorPalette.html).
+
+The following code illustrates how to set the custom gradient colors. 
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+ <chart:ColumnSeries.ColorModel>
+          <chart:ChartColorModel Palette="Custom">
+            <chart:ChartColorModel.CustomGradientColors>
+              <chart:ChartGradientColor>
+                <chart:ChartGradientColor.GradientStops>
+                  <chart:ChartGradientStop Color="#FFE7C7" Offset= "0"/>
+                  <chart:ChartGradientStop Color="#FCB69F" Offset= "1"/>
+                </chart:ChartGradientColor.GradientStops>
+              </chart:ChartGradientColor>
+              <chart:ChartGradientColor>
+                <chart:ChartGradientColor.GradientStops>
+                  <chart:ChartGradientStop Color="#DCFA97" Offset= "0"/>
+                  <chart:ChartGradientStop Color="#96E6A1" Offset= "1"/>
+                </chart:ChartGradientColor.GradientStops>
+              </chart:ChartGradientColor>
+              <chart:ChartGradientColor>
+                <chart:ChartGradientColor.GradientStops>
+                  <chart:ChartGradientStop Color="#DDD6F3" Offset= "0"/>
+                  <chart:ChartGradientStop Color="#FAACA8" Offset= "1"/>
+                </chart:ChartGradientColor.GradientStops>
+              </chart:ChartGradientColor>
+              <chart:ChartGradientColor>
+                <chart:ChartGradientColor.GradientStops>
+                  <chart:ChartGradientStop Color="#A8EAEE" Offset= "0"/>
+                  <chart:ChartGradientStop Color="#7BB0F9" Offset= "1"/>
+                </chart:ChartGradientColor.GradientStops>
+              </chart:ChartGradientColor>
+            </chart:ChartColorModel.CustomGradientColors>
+          </chart:ChartColorModel>
+    </chart:ColumnSeries.ColorModel>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+           series.ColorModel.Palette = ChartColorPalette.Custom;
+
+            ChartGradientColor gradientColor1 = new ChartGradientColor() { StartPoint = new Point(0.5, 1), EndPoint = new Point(0.5, 0) };
+            ChartGradientStop stop1 = new ChartGradientStop() { Color = Color.FromHex("#FFE7C7"), Offset = 0 };
+            ChartGradientStop stop2 = new ChartGradientStop() { Color = Color.FromHex("FCB69F"), Offset = 1 };
+            gradientColor1.GradientStops.Add(stop1);
+            gradientColor1.GradientStops.Add(stop2);
+
+            ChartGradientColor gradientColor2 = new ChartGradientColor() { StartPoint = new Point(0.5, 1), EndPoint = new Point(0.5, 0) };
+            ChartGradientStop stop21 = new ChartGradientStop() { Color = Color.FromHex("#DCFA97"), Offset = 0 };
+            ChartGradientStop stop22 = new ChartGradientStop() { Color = Color.FromHex("#96E6A1"), Offset = 1 };
+            gradientColor2.GradientStops.Add(stop21);
+            gradientColor2.GradientStops.Add(stop22);
+
+            ChartGradientColor gradientColor3 = new ChartGradientColor() { StartPoint = new Point(0.5, 1), EndPoint = new Point(0.5, 0) };
+            ChartGradientStop stop31 = new ChartGradientStop() { Color = Color.FromHex("#DDD6F3"), Offset = 0 };
+            ChartGradientStop stop32 = new ChartGradientStop() { Color = Color.FromHex("#FAACA8"), Offset = 1 };
+            gradientColor3.GradientStops.Add(stop31);
+            gradientColor3.GradientStops.Add(stop32);
+
+            ChartGradientColor gradientColor4 = new ChartGradientColor() { StartPoint = new Point(0.5, 1), EndPoint = new Point(0.5, 0) };
+            ChartGradientStop stop41 = new ChartGradientStop() { Color = Color.FromHex("#A8EAEE"), Offset = 0 };
+            ChartGradientStop stop42 = new ChartGradientStop() { Color = Color.FromHex("#7BB0F9"), Offset = 1 };
+            gradientColor3.GradientStops.Add(stop41);
+            gradientColor3.GradientStops.Add(stop42);
+
+            ChartGradientColorCollection gradientColors = new ChartGradientColorCollection()
+            {
+                gradientColor1,
+                gradientColor2,
+                gradientColor3,
+                gradientColor4
+            };
+ 
+            series.ColorModel.CustomGradientColors = gradientColors;
+
+{% endhighlight %}
+
+{% endtabs %}
+
 
 **None Palette**
 

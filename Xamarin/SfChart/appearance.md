@@ -21,6 +21,8 @@ Currently, Chart supports only [`Metro`](https://help.syncfusion.com/cr/cref_fil
 
 **Custom Palette**
 
+###CustomBrushes
+
 Chart will use the colors from [`CustomBrushes`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorModel~CustomBrushes.html) property if [`ColorModel.Palette`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorModel~Palette.html) is set to [`Custom`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorPalette.html).
 
 Following code illustrates how to set the custom colors.
@@ -76,6 +78,7 @@ SfChart chart = new SfChart()
 
 ![](appearance_images/appearance_img2.png)
 
+###CustomGradientColors
 
 Chart uses the gradient colors from the [`CustomGradientColors`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorModel~CustomGradientColors.html) property and needs to set the [`ColorModel.Palette`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorModel~Palette.html) property to [`Custom`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorPalette.html).
 
@@ -88,7 +91,7 @@ The following code illustrates how to set the custom gradient colors.
  <chart:SfChart.ColorModel>
       <chart:ChartColorModel Palette="Custom">
         <chart:ChartColorModel.CustomGradientColors>
-          <chart:ChartGradientColor>
+          <chart:ChartGradientColor StartPoint="0.5,1" EndPoint="0.5,0">
             <chart:ChartGradientColor.GradientStops>
               <chart:ChartGradientStop Color="#FFE7C7" Offset= "0"/>
               <chart:ChartGradientStop Color="#FCB69F" Offset= "1"/>
@@ -176,6 +179,8 @@ chart.Series.Add(columnSeries);
 
 **Custom Palette**
 
+###CustomBrushes
+
 Series will use the colors from [`CustomBrushes`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorModel~CustomBrushes.html) property if the [`ColorModel.Palette`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorModel~Palette.html) property of series is set to [`Custom`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorPalette.html).
 
 Following code illustrates how to set the custom colors.
@@ -243,6 +248,8 @@ SfChart chart = new SfChart()
 
 ![](appearance_images/appearance_img4.png)
 
+###CustomGradientColors
+
 Series uses the colors from the  [`CustomGradientColors`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorModel~CustomGradientColors.html) property and needs to set the  [`ColorModel.Palette`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorModel~Palette.html)  property of series to [`Custom`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorPalette.html).
 
 The following code illustrates how to set the custom gradient colors. 
@@ -254,25 +261,25 @@ The following code illustrates how to set the custom gradient colors.
  <chart:ColumnSeries.ColorModel>
           <chart:ChartColorModel Palette="Custom">
             <chart:ChartColorModel.CustomGradientColors>
-              <chart:ChartGradientColor>
+              <chart:ChartGradientColor StartPoint="0.5,1" EndPoint="0.5, 0">
                 <chart:ChartGradientColor.GradientStops>
                   <chart:ChartGradientStop Color="#FFE7C7" Offset= "0"/>
                   <chart:ChartGradientStop Color="#FCB69F" Offset= "1"/>
                 </chart:ChartGradientColor.GradientStops>
               </chart:ChartGradientColor>
-              <chart:ChartGradientColor>
+              <chart:ChartGradientColor StartPoint="0.5,1" EndPoint="0.5, 0">
                 <chart:ChartGradientColor.GradientStops>
                   <chart:ChartGradientStop Color="#DCFA97" Offset= "0"/>
                   <chart:ChartGradientStop Color="#96E6A1" Offset= "1"/>
                 </chart:ChartGradientColor.GradientStops>
               </chart:ChartGradientColor>
-              <chart:ChartGradientColor>
+              <chart:ChartGradientColor StartPoint="0.5,1" EndPoint="0.5, 0">
                 <chart:ChartGradientColor.GradientStops>
                   <chart:ChartGradientStop Color="#DDD6F3" Offset= "0"/>
                   <chart:ChartGradientStop Color="#FAACA8" Offset= "1"/>
                 </chart:ChartGradientColor.GradientStops>
               </chart:ChartGradientColor>
-              <chart:ChartGradientColor>
+              <chart:ChartGradientColor StartPoint="0.5,1" EndPoint="0.5, 0">
                 <chart:ChartGradientColor.GradientStops>
                   <chart:ChartGradientStop Color="#A8EAEE" Offset= "0"/>
                   <chart:ChartGradientStop Color="#7BB0F9" Offset= "1"/>

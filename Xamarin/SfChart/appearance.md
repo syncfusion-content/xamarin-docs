@@ -116,6 +116,8 @@ The following code illustrates how to set the custom gradient colors.
 
 {% endtabs %}
 
+![](appearance_images/gradientchart.png)
+
 **None Palette**
 
 [`None`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorPalette.html) palette will not apply any color to the series. So in order to define the color for any series, you can use the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~Color.html) property or the [`ColorModel`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorModel.html) property of [`ChartSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries.html) (The ColorModel of Series will be explained later in this document).
@@ -324,6 +326,7 @@ The following code illustrates how to set the custom gradient colors.
 
 {% endtabs %}
 
+![](appearance_images/gradientseries.png)
 
 **None Palette**
 

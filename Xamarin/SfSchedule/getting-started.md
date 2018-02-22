@@ -128,7 +128,7 @@ This section explains how to create a simple application using SfSchedule contro
 ![](GettingStarted_images/GettingStarted.png)   
 
 You can download the entire source code of this demo for Xamarin.Forms from
-here [ScheduleGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ScheduleGettingStarted892423234.zip)
+here [ScheduleGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ScheduleGettingStarted-815086813.zip)
     
 This section provides a walks through to create `MeetingRoomScheduler` using our Schedule control.  
     
@@ -354,7 +354,8 @@ You can create a custom class `Meeting` with mandatory fields "From", "To" and "
         public int Capacity { get; set; }   
         public DateTime From { get; set; }   
         public DateTime To { get; set; }   
-        public Color color { get; set; }   
+        public Color color { get; set; }
+		public bool AllDay { get; set; }   
     }   
     
 {% endhighlight %}   
@@ -408,6 +409,8 @@ You can schedule meetings for a particular day by setting `From` and `To` of `Me
                 meeting.To = (meeting.From.AddHours(1));
                 meeting.EventName = eventNameCollection[randomTime.Next(9)];
                 meeting.color = colorCollection[randomTime.Next(9)];
+				if(AdditionalAppointmentIndex%3==0)
+                  meeting.AllDay = true;
                 Meetings.Add(meeting);
             }
             }
@@ -447,17 +450,17 @@ You can schedule meetings for a particular day by setting `From` and `To` of `Me
     private void CreateColorCollection()
     {
         colorCollection = new List<Color>();
-        colorCollection.Add(Color.FromHex("#117EB4"));
-        colorCollection.Add(Color.FromHex("#B4112E"));
-        colorCollection.Add(Color.FromHex("#C44343"));
-        colorCollection.Add(Color.FromHex("#11B45E"));
-        colorCollection.Add(Color.FromHex("#43BEC4"));
-        colorCollection.Add(Color.FromHex("#B4112E"));
-        colorCollection.Add(Color.FromHex("#C44343"));
-        colorCollection.Add(Color.FromHex("#117EB4"));
-        colorCollection.Add(Color.FromHex("#C4435A"));
-        colorCollection.Add(Color.FromHex("#DF5348"));
-        colorCollection.Add(Color.FromHex("#43c484"));
+        colorCollection.Add(Color.FromHex("#FF339933"));
+        colorCollection.Add(Color.FromHex("#FF00ABA9"));
+	    colorCollection.Add(Color.FromHex("#FFE671B8"));
+        colorCollection.Add(Color.FromHex("#FF1BA1E2"));
+        colorCollection.Add(Color.FromHex("#FFD80073"));
+        colorCollection.Add(Color.FromHex("#FFA2C139"));
+        colorCollection.Add(Color.FromHex("#FFA2C139"));
+        colorCollection.Add(Color.FromHex("#FFD80073"));
+        colorCollection.Add(Color.FromHex("#FF339933"));
+        colorCollection.Add(Color.FromHex("#FFE671B8"));
+        colorCollection.Add(Color.FromHex("#FF00ABA9"));
     }
 
     /// <summary>
@@ -488,7 +491,8 @@ You can map those properties of `Meeting` class with our schedule control by usi
                 ColorMapping="color"
                 EndTimeMapping="To"
                 StartTimeMapping="From"
-                SubjectMapping="EventName" />
+                SubjectMapping="EventName" 
+				IsAllDayMapping="AllDay"/>
         </syncfusion:SfSchedule.AppointmentMapping>
     </syncfusion:SfSchedule>
 
@@ -500,6 +504,7 @@ You can map those properties of `Meeting` class with our schedule control by usi
     dataMapping.EndTimeMapping = "To";
     dataMapping.StartTimeMapping = "From"; 
     dataMapping.SubjectMapping = "EventName";
+	dataMapping.IsAllDayMapping = "AllDay";
     schedule.AppointmentMapping = dataMapping;  
 
 {% endhighlight %}
@@ -532,5 +537,5 @@ Create meetings of type `ObservableCollection <Meeting>`  and assign those appoi
 ![](GettingStarted_images/GettingStarted.png)
 
 You can download the entire source code of this demo for Xamarin.Forms from
-here [ScheduleGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ScheduleGettingStarted892423234.zip)
+here [ScheduleGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ScheduleGettingStarted-815086813.zip)
 

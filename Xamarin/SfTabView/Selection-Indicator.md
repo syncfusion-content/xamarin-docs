@@ -7,14 +7,14 @@ control: TabView
 documentation: ug
 ---
 
-# Selection Indicator strip
+# Selection Indicator Strip
 
-Selection indicator strip can be used to indicate the selected index of the tab view control. It can be customized with the built in APIs available in `SelectionIndicatorSettings` of `SfTabView`.
+The selection indicator strip can be used to indicate the selected index of the tab view control. It can be customized with the built-in APIs that are available in the `SelectionIndicatorSettings` property of `SfTabView`.
 
 ![](images/Selection-Indicator/tabstyle02.png)
 
 
-Selection indicator can be positioned below the title or above the title or else it can be filled in the entire selected header space.
+The selection indicator can be positioned below the title or above the title, or else it can be filled in the entire selected header space.
 
 {% tabs %}
 
@@ -43,5 +43,5 @@ tabView.SelectionIndicatorSettings = selectionIndicatorSettings;
 
 {% endtabs %}
 
-N> Stroke thickness is not applicable when selection indicator’s position is set as Fill.
+N> Stroke thickness will not be applicable when the selection indicator’s position is set to "Fill".
 

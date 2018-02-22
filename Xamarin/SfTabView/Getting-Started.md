@@ -9,18 +9,18 @@ documentation: ug
 
 # Getting Started
 
-This section provides a quick overview for working with the tab view control for Xamarin.Forms. Walk through the entire process of creating a real-world application with tab view.
+This section provides an overview for working with the tab view control for Xamarin.Forms. Walk through the entire process of creating a real-world application with the tab view.
 
 # Assembly deployment
 
-After installing Essential Studio for Xamarin, find all the required assemblies in the installation folders,   
-{Syncfusion Essential Studio Installed location}\Essential Studio\16.1.0.24\Xamarin\lib
-Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\16.1.0.24\Xamarin\lib
+After installing the Essential Studio for Xamarin, find all the required assemblies in installation folders, {Syncfusion Essential Studio Installed location}\Essential Studio\16.1.0.24\Xamarin\lib}.
 
-N> Assemblies can be found in unzipped package location in Mac.
+E.g., C:\Program Files (x86)\Syncfusion\Essential Studio\16.1.0.24\Xamarin\lib
+
+N> In Mac, assemblies can be found in unzipped package location.
 
 
-## Tab View for Xamarin.Forms
+## Tab view for Xamarin.Forms
 
 The following list of assemblies should be added as reference from the lib folder to use the tab view.
 
@@ -43,19 +43,19 @@ The following list of assemblies should be added as reference from the lib folde
 </tr>
 </table>
 
-N> When there is a mismatch of Xamarin NuGet packages between your sample and the tab view assemblies, an error Could not load type Xamarin.Forms.ElementTemplate will occur. Refer to the ReadMe to know the software requirements of the Syncfusion controls.
+N> When there is a mismatch of Xamarin NuGet packages between your sample and the tab view assemblies, an error (Could not load type Xamarin.Forms.ElementTemplate) will occur. Refer to the [System Requirements](https://help.syncfusion.com/xamarin/introduction/system-requirements) section to know the software requirements of Syncfusion controls.
 
 # Launching the tab view on each platform
 
-To use the tab view inside an application, each platform application must initialize the tab view renderer. This initialization step varies from platform to platform and is discussed in the following sections:
+To use the tab view inside an application, each platform application must initialize the tab view renderer. This initialization steps vary from platform to platform, and it is discussed in the following sections:
 
 # Android
 
-The Android launches the tab view without any initialization and is enough to only initialize the Xamarin.Forms Framework to launch the application.
+Android launches the tab view without any initialization, and it is enough to only initialize the Xamarin.Forms Framework to launch the application.
 
 # iOS
 
-To launch the tab view in iOS, call the SfTabViewRenderer.Init() in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms Framework initialization and before the LoadApplication is called, as demonstrated in the following code example:
+To launch the tab view in iOS, call the SfTabViewRenderer.Init() in the `FinishedLaunching` overridden method of the `AppDelegate` class after the Xamarin.Forms Framework has been initialized and before the `LoadApplication` is called, as demonstrated in the following code example.
 
 {% highlight C# %}
 
@@ -73,7 +73,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ### Create a simple tab view
 
-This section explains how to create a tab view and configure it. The control can be configured entirely in C# code or by using XAML markup. This is how the final output will look like on iOS, Android devices.
+This section explains how to create a tab view and configure it. The control can be configured entirely in C# code or by using XAML markup. The following screenshot illustrates the output of tab view on iOS and Android devices.
 
 ![](images/Getting-Started/xamarin_forms_tabview.png)
 
@@ -83,9 +83,9 @@ Create a new BlankApp (Xamarin.Forms.Portable) application in Xamarin Studio or
 
 # Adding SfTabView in Xamarin.Forms
 
-Add the required assembly references to the pcl and renderer projects as discussed in the Assembly deployment section.
+Add the required assembly references to the PCL and renderer projects as discussed in the Assembly deployment section.
 
-Import the control namespace as
+Import the control namespace as shown in the following code.
 
 {% tabs %}
 
@@ -103,7 +103,7 @@ using Syncfusion.XForms.TabView;
 
 {% endtabs %}
 
-Set the control as content to the ContentPage.
+Set the control to content in `ContentPage`.
 
 {% tabs %}
 
@@ -144,9 +144,9 @@ namespace GettingStarted
 
 {% endtabs %}
 
-# Adding Tab items
+# Adding tab items
 
-Tab items can be configured in tab view through the Items property of `SfTabView`, where it holds collection of `SfTabItem` through `TabItemsCollection`
+Tab items can be configured in tab view through the `Items` property of `SfTabView`, which holds the collection of `SfTabItem` through `TabItemsCollection`.
 
 {% tabs %}
 
@@ -206,7 +206,7 @@ this.Content = tabView;
 
 ## Share the header space equally
 
-In order to share the header space equally for the , we can set the number of tabs which can be distributed in the available space though `VisibleHeaderCount` of SfTabView.
+To share the header space to tabs equally, set the number of tabs that can be distributed in the available space though the `VisibleHeaderCount` property of tab view.
 
 {% tabs %}
 
@@ -224,13 +224,13 @@ tabView.VisibleHeaderCount = 3;
 
 {% endtabs %}
 
-That’s it, tab view control is ready. Now we can add the required controls for our application.  Here we are adding a `ListView` in the content region.
+After set the number of tabs, you can add the required controls for your application. Here, a `ListView` has been added in the content region.
 
-## Adding List view in the tab view
+## Adding ListView in tab view
 
 ## Preparing data
 
-Create a view model class with ContactsInfo collection property, initialized with required number of data objects.
+Create a view model class with the `ContactsInfo` collection property, which is initialized with required number of data objects.
 
 {% highlight c# %}
 
@@ -266,7 +266,7 @@ public class ContactsViewModel
 
 ## Binding data to list view
 
-Bind the items source of the `ListView` and set required appearance in its ItemsTemplate property. Where the list view can be hosted within the content region of tab item. 
+Bind the items source of the `ListView`, and set the required appearance in its `ItemsTemplate` property in which the list view can be hosted within the content region of tab item. 
 
 {% highlight xaml %}
 
@@ -302,8 +302,10 @@ Bind the items source of the `ListView` and set required appearance in its Items
 	
 {% endhighlight %}
 
-Similarly, content region for other tabs can be configured in the same way.
+Similarly, content region for other tabs also can be configured.
 
 ## Swiping
 
-Both vertical swiping for the list view and horizontal swiping for the tab view will works by default. If it is not required it can be customized by `EnableSwiping` property of `SfTabView`.
+By default, both the vertical swiping for list view and horizontal swiping for tab view will work. If it is not required, it can be customized by using the `EnableSwiping` property of `SfTabView`.
+
+Note: Getting started sample can be download from [this link](http://files2.syncfusion.com/Installs/v16.1.0.24/Samples/Xamarin/RangeSlider_GettingStarted.zip).

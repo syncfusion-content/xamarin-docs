@@ -9,7 +9,7 @@ documentation: ug
 
 # Selection Changed
 
-When selection changed due to swiping or by dynamically setting the `SelectedIndex` property of `SfTabView`, there is an event available in tab view control to get notified for the change.
+The `SelectionChanged` event is used to notify when the selection is changed by swiping or dynamically setting the `SelectedIndex` property of `SfTabView`.
 
 {% tabs %}
 
@@ -23,7 +23,8 @@ When selection changed due to swiping or by dynamically setting the `SelectedInd
 
 tabView.SelectionChanged += SfTabView_SelectionChanged;
 
-// Raised when selected index changed
+// Occurred when the selected index is changed
+
 private void SfTabView_SelectionChanged(object sender, SelectionChangedEventArgs e)
 {
 	var selectedIndex = e.Index;
@@ -33,6 +34,6 @@ private void SfTabView_SelectionChanged(object sender, SelectionChangedEventArgs
 
 {% endtabs %}
 
-## Enable Swiping
+## Enable swiping
 
-When selection changed is needs to be restricted through user interaction, `EnableSwiping` property of `SfTabView` can be set as `false`.
+When the selection changed event is needs to be restricted through user interaction, the `EnableSwiping` property of `SfTabView` can be set to `false`.

@@ -149,7 +149,7 @@ You can set First day of week using [FirstDayOfWeek](https://help.syncfusion.com
 
         <schedule:SfSchedule 
 				x:Name="schedule" 
-				FirstDayOfWeek="2"
+				FirstDayOfWeek="3"
 				ScheduleView="MonthView">
 		</schedule:SfSchedule>
 
@@ -157,7 +157,7 @@ You can set First day of week using [FirstDayOfWeek](https://help.syncfusion.com
 {% highlight c# %}
 
 			//setting FirstDayOfWeek
-			schedule.FirstDayOfWeek = 2; // Monday
+			schedule.FirstDayOfWeek = 3; // Tuesday
 
 {% endhighlight %}
 {% endtabs %}

@@ -227,7 +227,7 @@ private void ListView_ItemDragging(object sender, ItemDraggingEventArgs e)
 
 ## Reorder the underlying collection 
 
-The underlying collection can be reordered by set the [UpdateSource](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.DragDropController~UpdateSource.html) property. The default value for UpdateSource property is `false`. To update the underlying items in the collection, follow the code example.
+The underlying collection can be reordered directly by setting the [UpdateSource](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.DragDropController~UpdateSource.html) property to `true`. The default value is `false`. Refer the below code example.
 
 {% highlight c# %}
 this.listView.DragDropController.UpdateSource = true;

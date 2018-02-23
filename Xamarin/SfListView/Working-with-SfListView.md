@@ -255,7 +255,7 @@ public class CommandViewModel
 
 ### Hold Command
 
-The `HoldCommand` will be triggered whenever long pressed on the item and pa the [ItemHoldingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemHoldingEventArgs.html) as parameter.
+The `HoldCommand` will be triggered whenever long pressed on the item and passed the [ItemHoldingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemHoldingEventArgs.html) as parameter.
  
 {% highlight c# %}
 listView.HoldCommand = viewModel.HoldCommand;

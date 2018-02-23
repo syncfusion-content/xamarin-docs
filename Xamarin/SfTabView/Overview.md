@@ -9,18 +9,15 @@ documentation : ug
 
 # Overview
 
-The SfTabView control is available in Xamarin.Forms, Xamarin.Android and Xamarin.iOS. It helps you to create entirely customizable features used to explore and switch among different views. The following table lists the key features of SfTabView in Xamarin.Forms, Xamarin.Android and Xamarin.iOS.
+The tab view control is available in Xamarin.Forms, Xamarin.Android, and Xamarin.iOS. It helps you to create the customizable features that are used to explore and switch among the different views. The key features of tab view control in Xamarin.Forms, Xamarin.Android, and Xamarin.iOS are given as follows.
 
-## Key Features
+## Key features
 
 * Tab header type with text, font icons, and no header.  
-
 * Scrollable content and header.
-
 * Top and bottom placements of header.
-
 * Layout option for overflow tabs.
 
-N> SfTabView for Xamarin.Forms(UWP) is currently not available.
+N> Currently, SfTabView for Xamarin.Forms (UWP) is not available.
 
 ![](images/Overview/xamarin_forms_tabview.png)

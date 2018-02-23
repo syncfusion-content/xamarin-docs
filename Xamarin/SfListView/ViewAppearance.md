@@ -153,3 +153,68 @@ N> Due to some restrictions in native ScrollView renderer in Xamarin.Forms, you 
 listView.IsScrollBarVisible = false; 
 {% endhighlight %}
 {% endtabs %}
+
+## Animate the item using OnItemAppearing method 
+
+SfListView provides a support for animate the items by using an [OnItemAppearing](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ListViewItem~OnItemAppearing.html) virtual method. It's raised when the items appears in the view on scrolling, loading and navigating from one page to another page. To apply the animation effect for items, follow the steps,
+
+### Extension class for ItemGenerator
+
+{% highlight c# %}
+public class ItemGeneratorExt : ItemGenerator
+{
+    public SfListView listView;
+	
+    public ItemGeneratorExt(SfListView listView) : base(listView)
+    {
+        this.listView = listView;
+    }
+
+    protected override ListViewItem OnCreateListViewItem(int itemIndex, ItemType type, object data = null)
+    {
+        if (type == ItemType.Record)
+            return new ListViewItemExt(this.listView);
+        return base.OnCreateListViewItem(itemIndex, type, data);
+    }
+}
+{% endhighlight %}
+
+### Initialize and assign ItemGenerator extension to ListView
+
+{% highlight c# %}
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        this.listView.ItemGenerator = new ItemGeneratorExt(this.listView);
+    }
+}
+{% endhighlight %}
+
+### Extension class for ListViewItem
+ 
+To apply the animation for items while appearing, override the OnItemAppearing method.
+
+{% highlight c# %}
+public class ListViewItemExt : ListViewItem
+{
+    private SfListView listView;
+
+    public ListViewItemExt(SfListView listView)
+    {
+        this.listView = listView
+    }
+
+    protected override void OnItemAppearing()
+    {
+        this.Opacity = 0;
+        this.FadeTo(1, 400, Easing.SinInOut);
+        base.OnItemAppearing();
+    }
+}
+{% endhighlight %}
+
+Here `FadeTo` animation is applied for [ListViewItem](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ListViewItem.html), while comes in the view. The screenshot shows the output of the item animation on scrolling. You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ItemAppearing-659512864.zip).
+
+![](SfListView_images/SfListView-ItemAppearingAnimation.gif)

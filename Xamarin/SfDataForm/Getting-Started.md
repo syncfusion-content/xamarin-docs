@@ -17,6 +17,8 @@ The SfDataForm control helps editing the data fields of any data object. It can 
 * Custom editor: Supports loading the custom editors.
 * Validation: Built-in support to validate the data based on the [INotifyDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.aspx) and data annotations. It also programmatically supports validation handling.
 
+![](SfDataForm_images/Overview.png)
+
 # Getting started
 
 This section explains the quick overview to use the [SfDataForm](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm.html) for Xamarin.Forms in your application.
@@ -174,7 +176,7 @@ In this section, you will create Xamarin.Forms application with `SfDataForm`. Th
 
 Create a new BlankApp (Xamarin.Forms.Portable) application in Xamarin Studio or Visual Studio for Xamarin.Forms.
 
-### Adding data form in Xamarin.Form
+### Adding data form in Xamarin.Forms
 
 To add the data form to your application, follow the steps:
 
@@ -191,9 +193,7 @@ To add the data form to your application, follow the steps:
              xmlns:local="clr-namespace:GettingStarted"
              xmlns:dataForm="clr-namespace:Syncfusion.XForms.DataForm;assembly=Syncfusion.SfDataForm.XForms"
              x:Class="GettingStarted.MainPage">
-    <ContentPage.Content>
-        <dataForm:SfDataForm x:Name="dataForm"/>
-    </ContentPage.Content>
+        <dataForm:SfDataForm x:Name="dataForm"/>    
 </ContentPage>
 
 {% endhighlight %}
@@ -357,11 +357,9 @@ To populate the labels and editors in the data form, set the [DataObject](https:
              x:Class="GettingStarted.MainPage">
     <ContentPage.BindingContext>
         <local:ViewModel/>
-    </ContentPage.BindingContext>
-    <ContentPage.Content>
-        <dataForm:SfDataForm x:Name="dataForm" 
-                             DataObject="{Binding ContactsInfo}"/>
-    </ContentPage.Content>
+    </ContentPage.BindingContext>    
+	<dataForm:SfDataForm x:Name="dataForm" 
+						 DataObject="{Binding ContactsInfo}"/>    
 </ContentPage>
 
 {% endhighlight %}
@@ -374,4 +372,4 @@ dataForm.DataObject = new ContactsInfo();
 
 Now, run the application to render the `data form` to edit the data object as in the following screenshot:
 
-![](SfDataForm_images/Overview.png)
+![](SfDataForm_images/GettingStarted.png)

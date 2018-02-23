@@ -183,7 +183,7 @@ private void ListView_ItemHolding(object sender, ItemHoldingEventArgs e)
 
 ### ItemAppearing
 
-The `ItemAppearing` event is raised when the items are appearing in the view on scrolling, loading and navigating from one page to another page. [ItemAppearingEventArgs]((https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemAppearingEventArgs.html)) has the following members which provide the information of appearing Items.
+The `ItemAppearing` event is raised when the items are appearing in the view on scrolling, loading and navigating from one page to another page. The [ItemAppearingEventArgs]((https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemAppearingEventArgs.html)) has the following members which provide the information of appearing Items.
 
 * **ItemData** - The underlying data associated with the appearing item
  
@@ -203,7 +203,7 @@ private void listView_ItemAppearing(object sender, Syncfusion.ListView.XForms.It
 
 ### ItemDisappearing
 
-The `ItemDisappearing` event is raised when the items are disappearing in the view on scrolling, disposing and navigating from one page to another page. [ItemDisappearingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDisappearingEventArgs.html) has the following members which provide the information on disappearing Items.
+The `ItemDisappearing` event is raised when the items are disappearing in the view on scrolling, disposing and navigating from one page to another page. The [ItemDisappearingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDisappearingEventArgs.html) has the following members which provide the information on disappearing Items.
 
 * **ItemData** - The underlying data associated with the disappearing item
 

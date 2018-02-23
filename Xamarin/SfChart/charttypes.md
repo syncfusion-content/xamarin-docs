@@ -300,6 +300,77 @@ chart.Series.Add(rangeAreaSeries);
 
 ![](charttypes_images/RangeArea.png)
 
+## Spline Range Area Chart
+
+To render a spline range area chart, create an instance of the [`SplineRangeAreaSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineRangeAreaSeries.html), and add that instance to the [`series`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~Series.html) collection property of [`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html).
+
+Since the [`SplineRangeAreaSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineRangeAreaSeries.html) requires two Y values for a point, data should contain high and low values. The high and low values specify the maximum and minimum ranges of a point.
+
+The data can be provided to a spline range area chart by using the following two ways:
+
+1.Using the [`ChartDataPoint’s`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataPoint~_ctor%28IComparable,Double,Double%29.html) three parameter constructor to pass x, high, and low values to the [`SplineRangeAreaSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineRangeAreaSeries.html).
+
+{% highlight c# %}
+[C#] 
+
+SfChart chart=new SfChart();
+. . .
+
+ObservableCollection<ChartDataPoint> data = new ObservableCollection<ChartDataPoint>()
+{
+    new ChartDataPoint("Jan/10", 30, 18),
+    new ChartDataPoint("Feb/10", 24, 12),
+    new ChartDataPoint("Mar/10", 29, 15),
+    new ChartDataPoint("Apr/10", 24, 10),
+    new ChartDataPoint("May/10", 30, 18),
+    new ChartDataPoint("Jun/10", 24, 10),
+};
+
+SplineRangeAreaSeries splineRangeAreaSeries = new SplineRangeAreaSeries() 
+{
+	ItemsSource = data 
+};
+
+chart.Series.Add(splineRangeAreaSeries);
+
+{% endhighlight %}
+
+2. Or else, using the [`high`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RangeSeriesBase~High.html) and [`low`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RangeSeriesBase~Low.html) properties of [`SplineRangeAreaSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineRangeAreaSeries.html) to map the high and low values from custom object to chart.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart> 
+... 
+	<chart:SfChart.Series> 
+		<chart:SplineRangeAreaSeries ItemsSource="{Binding SplineRangeAreaData}" XBindingPath="Name" High="High" Low="Low"/> 
+	</chart:SfChart.Series> 
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart(); 
+...
+
+SplineRangeAreaSeries splineRangeAreaSeries = new SplineRangeAreaSeries() 
+{ 
+	ItemsSource = SplineRangeAreaData, 
+	XBindingPath = "Name", 
+	High = "High", 
+	Low = "Low" 
+}; 
+
+chart.Series.Add(splineRangeAreaSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+
 ## Stacked Area Chart
 
 To render a stacked area chart, create an instance of [`StackingAreaSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.StackingAreaSeries.html) and add to the [`Series`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~Series.html) collection property of [`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the stacked area appearance.

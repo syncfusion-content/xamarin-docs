@@ -58,8 +58,8 @@ listView.SelectAll();
 
 ## Get Selected Items
 
-SfListView allows you to get all the selected items through [SelectedItems](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItems.html) property.
-You can set or bind value to the `SelectedItems` property.
+SfListView allows you to get all the selected items through [SelectedItems](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItems.html) property and also able to bind a value.
+
 
 ### CurrentItem vs SelectedItem
 

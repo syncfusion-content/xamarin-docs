@@ -142,13 +142,13 @@ Chart.Series.Add (column);
 
 {% endtabs %}
 
-##Methods
+## Methods
 
-You can [`show`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTooltipBehavior~Show.html) or [`hide`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTooltipBehavior~Hide.html) the chart tooltip programmatically by using the show or hide method. 
+You can show or hide the chart tooltip programmatically by using the show or hide method. 
 
-###Show method
+### Show method
 
-This method is used to [`show`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTooltipBehavior~Show.html) the tooltip programmatically at the mentioned coordinator points of the chart area.
+This method is used to [`Show`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTooltipBehavior~Show.html) the tooltip programmatically at the mentioned coordinator points of the chart area.
 
 {% highlight c# %}
 
@@ -158,9 +158,9 @@ This method is used to [`show`](https://help.syncfusion.com/cr/cref_files/xamari
 
 The tooltip will be shown based on the chart area where the pointX and pointY coordinates are passed. The bool value is used to decide whether the tooltip needs to be animated or not.
 
-###Hide method
+### Hide method
 
-This method is used to [`hide`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTooltipBehavior~Hide.html) the tooltip programmatically in the chart area. The bool value decides whether the tooltip needs to be animated or not.
+This method is used to [`Hide`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTooltipBehavior~Hide.html) the tooltip programmatically in the chart area. The bool value decides whether the tooltip needs to be animated or not.
 
 {% highlight c# %}
 

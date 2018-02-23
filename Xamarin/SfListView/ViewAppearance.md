@@ -194,7 +194,7 @@ public partial class MainPage : ContentPage
 
 ### Extension class for ListViewItem
  
-To apply the animation for items while appearing, override the OnItemAppearing method.
+To apply the animation for items while appearing, override the [OnItemAppearing](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ListViewItem~OnItemAppearing.html) method.
 
 {% highlight c# %}
 public class ListViewItemExt : ListViewItem

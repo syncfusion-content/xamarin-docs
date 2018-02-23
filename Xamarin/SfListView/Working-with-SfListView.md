@@ -183,7 +183,7 @@ private void ListView_ItemHolding(object sender, ItemHoldingEventArgs e)
 
 ### ItemAppearing
 
-The `ItemAppearing` event is raised when the items are appearing in the view on scrolling, loading and navigating from one page to another page. The [ItemAppearingEventArgs]((https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemAppearingEventArgs.html)) has the following members which provide the information of appearing Items.
+The [ItemAppearing](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemAppearing_EV.html) event is raised when the items are appearing in the view on scrolling, loading and navigating from one page to another page. The [ItemAppearingEventArgs]((https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemAppearingEventArgs.html)) has the following members which provide the information of appearing Items.
 
 * **ItemData** - The underlying data associated with the appearing item
  
@@ -203,7 +203,7 @@ private void listView_ItemAppearing(object sender, Syncfusion.ListView.XForms.It
 
 ### ItemDisappearing
 
-The `ItemDisappearing` event is raised when the items are disappearing in the view on scrolling, disposing and navigating from one page to another page. The [ItemDisappearingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDisappearingEventArgs.html) has the following members which provide the information on disappearing Items.
+The [ItemDisappearing](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemDisappearing_EV.html) event is raised when the items are disappearing in the view on scrolling, disposing and navigating from one page to another page. The [ItemDisappearingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDisappearingEventArgs.html) has the following members which provide the information on disappearing Items.
 
 * **ItemData** - The underlying data associated with the disappearing item
 
@@ -225,7 +225,7 @@ private void listView_ItemDisappearing(object sender, Syncfusion.ListView.XForms
 
 ### Tap Command
 
-The `TapCommand` will be triggered whenever tapped on the item and passed the [ItemTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemTappedEventArgs.html) as parameter.
+The [TapCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~TapCommand.html) will be triggered whenever tapped on the item and passed the [ItemTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemTappedEventArgs.html) as parameter.
 
 {% highlight c# %}
 listView.TapCommand = viewModel.TappedCommand;
@@ -255,7 +255,7 @@ public class CommandViewModel
 
 ### Hold Command
 
-The `HoldCommand` will be triggered whenever long pressed on the item and passed the [ItemHoldingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemHoldingEventArgs.html) as parameter.
+The [HoldCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~HoldCommand.html) will be triggered whenever long pressed on the item and passed the [ItemHoldingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemHoldingEventArgs.html) as parameter.
  
 {% highlight c# %}
 listView.HoldCommand = viewModel.HoldCommand;

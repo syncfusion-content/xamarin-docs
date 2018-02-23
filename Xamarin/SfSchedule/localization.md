@@ -69,7 +69,7 @@ The procedure for creating strings.xml files is as follows:
  
 ![](Localization_images/localization_img2.jpeg)  
 
->**Note:** The corresponding values folder loads only depends on the device configuration and locale.
+>**Note:** The corresponding Locale values folder updates only when the device language changes.
 
 ### Localizing custom text in iOS renderer.
 
@@ -85,7 +85,7 @@ If an application requires multiple languages we can follow the below steps:
 
 ![](Localization_images/Localization_iOS_Img2.png)
 
->**Note:** The corresponding `<Language>.lproj` folder loads only depends on the device configuration and locale.
+>**Note:** The corresponding `<Language>.lproj` folder updates only when the device language changes.
 
 ### Localizing custom text in UWP renderer.
 

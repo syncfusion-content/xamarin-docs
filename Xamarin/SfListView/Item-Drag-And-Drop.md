@@ -218,8 +218,8 @@ To cancel dropping for the dragged item, handle the [ItemDragging](https://help.
 private void ListView_ItemDragging(object sender, ItemDraggingEventArgs e)
 {
   // Cancel the dropping if drop the drag item into out of view.
-  var listview = sender as ListView;
-  var totalExtent = listview.GetVisualContainer().Bounds.Bottom;
+  var listView = sender as ListView;
+  var totalExtent = listView.GetVisualContainer().Bounds.Bottom;
   if (e.Action == DragAction.Drop && (e.Bounds.Y < -30 || e.Bounds.Bottom > totalExtent + 40))
     e.Cancel = true;
 }
@@ -227,19 +227,10 @@ private void ListView_ItemDragging(object sender, ItemDraggingEventArgs e)
 
 ## Reorder the underlying collection 
 
-The underlying collection can be reordered directly by handling [ItemDragging](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemDragging_EV.html) event. To make permanent reordering changes, follow the code example:
+The underlying collection can be reordered by set the [UpdateSource](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.DragDropController~UpdateSource.html) property. The default value for UpdateSource property is `false`. To update the underlying items in the collection, follow the code example.
 
 {% highlight c# %}
-private async void ListView_ItemDragging(object sender, ItemDraggingEventArgs e)
-{
-  // Reorder the item in underlying collection.
-  if (e.Action == DragAction.Drop)
-  {
-    await Task.Delay(100);
-    var collection = listView.BindingContext as ViewModel;
-    collection.ToDoList.Move(e.OldIndex, e.NewIndex);
-  }
-}
+this.listView.DragDropController.UpdateSource = true;
 {% endhighlight %}
 
 ## Delete item when dropping in a particular view

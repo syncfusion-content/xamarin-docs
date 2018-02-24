@@ -204,7 +204,7 @@ public class CustomSelectionController : GridSelectionController
 {
     public Color[] SelectionColors { get; set; }
 
-    public CustomSelectionController(SfDataGrid datagrid)
+    public CustomSelectionController(SfDataGrid datagrid) : base(datagrid)
     {
         this.DataGrid = datagrid;
         SelectionColors = new Color[11] 

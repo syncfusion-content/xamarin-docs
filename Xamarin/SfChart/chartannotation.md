@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Annotations
+title: Annotation
 description: Learn how to add annotations to the chart.
 platform: xamarin
 control: Chart
 documentation: ug
 ---
 
-# Annotations
+# Annotation
 
-[`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html) supports annotations which allows you to mark the specific area of interest in the chart area. You can add text, images, and custom views. Drawing custom shapes also can be done by using annotations.
+[`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html) supports annotations which allows you to mark the specific area of interest in the chart area. You can add text, images, and custom views. 
 
 The following annotations are supported in SfChart(https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html):
 
@@ -131,7 +131,7 @@ To position the annotation based on the pixel values, set the [`CoordinateUnit`]
 
     <chart:SfChart.ChartAnnotations>
 
-        <chart:RectangleAnnotation X1="1" Y1="1" X2="300" Y2="300" Text="Pixel Value" CoordinateUnit="Pixels" />
+        <chart:RectangleAnnotation X1="1" Y1="1" X2="150" Y2="150" Text="Pixel Value" CoordinateUnit="Pixels" />
 
     </chart:SfChart.ChartAnnotations>
 
@@ -151,9 +151,9 @@ RectangleAnnotation annotation = new RectangleAnnotation()
 
     Y1 = 1,
 
-    X2 = 300,
+    X2 = 150,
 
-    Y2 = 300,
+    Y2 = 150,
 
     Text = "Pixel Value",
 

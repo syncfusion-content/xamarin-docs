@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overview | SfPopupLayout |Xamarin.Android | Syncfusion
+title: Overview | SfPopupLayout |Xamarin| Syncfusion
 description: Overview of SfPopupLayout
-platform: Xamarin.Android
+platform: Xamarin
 control: SfPopupLayout
 documentation: ug
 --- 

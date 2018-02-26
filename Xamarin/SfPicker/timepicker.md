@@ -10,9 +10,9 @@ documentation: ug
 
 # Time Picker
 
-We have demonstrated how to create CustomTimePicker using Picker control in the following steps.
+This section explains the steps required to create custom TimePicker by using picker control.
 
-**Step** **1** **:** We have created custom class named as “CustomTimePicker”. This class should inherit from SfPicker control.
+**Step** **1** **:** Create a custom class, and name it as “CustomTimePicker”. This class should be inherited from the picker control.
 
 {% highlight c# %}
 public class CustomTimePicker: SfPicker
@@ -27,17 +27,17 @@ public class CustomTimePicker: SfPicker
 
 **Collection** **details** **:**
 
-Time Collection, Minute Collection, Hour Collection and Format Collection.
+Time collection, Minute collection, Hour collection, and Format collection.
 
-Time Collection->We have added all the three collections.
+Time Collection -Add all the three collections.
 
-Minute Collection -> We have added minutes from 0 to 59.
+Minute collection -Added minutes from 0 to 59.
 
-Hour Collection -> We have added hours from 1 to 12.
+Hour collection -Added hours from 1 to 12.
 
-Format Collection -> We have added two format AM and PM.
+Format Collection -Add two formats, namely AM and PM.
 
-The below code demonstrates Time collection creation.
+The following code demonstrates time collection creation.
 
 {% highlight C# %}
 
@@ -146,7 +146,7 @@ Time.Add(Format);
 
 {% endhighlight %}
 
-**Step** **3** **:** We have defined each column headers “Hour”, “Minute” and “Format” using ColumnHeaderText property of SfPicker control. The below code demonstrates how to define header for each column of SfPicker control.
+**Step** **3** **:** Define each column headers “Hour”, “Minute”, and “Format” by using the ColumnHeaderText property of picker control. The following code demonstrates how to define header for each column of picker control.
 
 {% highlight c# %}
 
@@ -212,7 +212,7 @@ this.ColumnHeaderText = Headers;
 
 {% endhighlight %}
 
-**Step** **4** **:** We have enabled SfPicker header, Column header and footer using ShowHeader, ShowFooter and ShowColumnHeader properties.
+**Step** **4** **:** Finally, enable the picker header, column header, and footer by using the ShowHeader,ShowFooter, and ShowColumnHeader properties.
 
 {% highlight c# %}
 
@@ -236,7 +236,7 @@ ShowColumnHeader = true;
 
 {% endhighlight %}
 
-**Step** **5** **:** We have added the CustomTimePicker control in main XAML page. Please refer the below code snippets.
+**Step** **5** **:** Add the CustomTimePicker control in main XAML page. Please refer the following code snippets.
 
 {% tabs %}
 {% highlight xaml %}
@@ -337,10 +337,10 @@ date.IsOpen = !date.IsOpen;
 {% endtabs %}
 
 
-Screen shot for the above codes.
+The following screenshot illustrates the output of the above code snippets.
 
 ![](images/timepicker_img1.jpeg)
 
-We have attached TimePicker sample for reference. Please download the sample from the following link.
+You can download the TimePicker sample for reference from the following link.
 
 Sample link: [TimePicker](http://www.syncfusion.com/downloads/support/directtrac/general/ze/TimePicker717705423.zip)

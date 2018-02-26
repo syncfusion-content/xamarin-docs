@@ -92,6 +92,10 @@ You can customize the interval of timeslots in `DayView` by setting [TimeInterva
 
 ![](daymodule_images/timeinterval_day.png)
 
+>**Note**:
+
+If you modify the `TimeInterval` value (in minutes), you need to change the time labels format by setting the `TimeFormat` value as "hh:mm". By default, TimeFormat value is `"hh a"`. You can refer [here](https://help.syncfusion.com/xamarin/sfschedule/dayview#time-label-formatting) for changing TimeFormat value.
+
 ## Change Time Interval Height
 You can customize the interval height of timeslots in `DayView` by setting [TimeIntervalHeight](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~TimeIntervalHeight.html)  property of `SfSchedule`.
 
@@ -136,10 +140,47 @@ Working hours in `DayView` of Schedule control will be differentiated with non-w
 </schedule:SfSchedule> 
 {% endhighlight %}
 {% endtabs %}
+
 ![](daymodule_images/changeworkinghours_day.png)
 
 >**Note**:
-`WorkStartHour` and `WorkEndHour` should be in integer value to represent hours.
+	`WorkStartHour` and `WorkEndHour` should be in integer value to represent hours.
+
+## Changing StartHour and EndHour
+
+Default value for [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DayViewSettings~StartHour.html) and [EndHour](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DayViewSettings~EndHour.html) value is 0 to 24 to show all the time slots in `DayView`. You need to set [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DayViewSettings~StartHour.html) and [EndHour](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DayViewSettings~EndHour.html) property of `DayView`, to show only the required time duration for end users.
+
+{% tabs %}
+{% highlight C# %}
+
+            schedule.ScheduleView = ScheduleView.DayView;
+			//Create new instance of DayViewSettings
+			DayViewSettings dayViewSettings = new DayViewSettings();
+			dayViewSettings.StartHour = 08;
+			dayViewSettings.EndHour = 15;
+			schedule.DayViewSettings = dayViewSettings;
+{% endhighlight %}
+{% highlight XAML %}
+
+    <schedule:SfSchedule x:Name="schedule" ScheduleView="DayView">
+       <schedule:SfSchedule.DayViewSettings>
+	   <!--setting working hours properties -->
+           <schedule:DayViewSettings 
+		   StartHour="08"
+		   EndHour="15">
+           </schedule:DayViewSettings>
+       </schedule:SfSchedule.DayViewSettings>
+</schedule:SfSchedule> 
+{% endhighlight %}
+{% endtabs %}
+
+![](daymodule_images/changestartendhour_day.png)
+
+>**Note**:
+* `StartHour` and `EndHour` should be in integer value to represent hours.
+* `StartHour` must be greater than or equal to 0 and `EndHour` must be lesser than or equal to 24, otherwise `InvalidDataException` will be thrown.
+* `EndHour` value must be greater than `StartHour`, otherwise `InvalidDataException` will be thrown.
+* Schedule UI such as Appointments and NonAccessibleBlocks which does not fall within the `StartHour` and `EndHour` will not be visible and if it falls partially, it will be clipped.
 
 ## Timeslot Appearance
 You can customize the appearance of timeslots in `DayView`.
@@ -302,6 +343,7 @@ You can customize the default appearance of selection UI in the timeslots.
 
 * [Selection customization using style](#selection-customization-using-style)
 * [Selection customization using custom View](#selection-customization-using-custom-view)
+* [Programmatic selection](#programmatic-selection)
 
 ### Selection customization using style
 You can customize the timeslot selection by using [SelectionStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~SelectionStyle.html) property of `SfSchedule`.
@@ -365,25 +407,30 @@ You can replace the default selection UI with your custom view by setting [Selec
 {% endtabs %}
 ![](daymodule_images/selectioncustomview_day.png)
 
->**Note:**
-Selection customization is applicable for time slots alone.
+### Programmatic selection
+You can programmatically select the specific timeslot by setting corresponding date and time value to [SelectedDate](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~SelectedDate.html) property of `SfSchedule`. By default, it is null.
 
+{% highlight C# %}
 
+    // Setting a date and time to select
+    schedule.SelectedDate = new DateTime(2017, 10, 04, 10, 0, 0);
 
+{% endhighlight %}
 
+You can clear the selection by setting [SelectedDate](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~SelectedDate.html) as null.
 
+{% highlight C# %}
 
+    // Setting null value to deselect
+    schedule.SelectedDate = null;
 
+{% endhighlight %}
 
+You can download the entire source code of this demo for Xamarin.Forms from here [Date_Selection](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Date_Selection1072247797.zip)
 
+>**Note**:
+* `SfSchedule` does not support multiple selection.
+* `SfSchedule` supports two-way binding of `SelectedDate` property.
 
-
-
-
-
-
-
-
-
-
+![](daymodule_images/selection_Day.png)
 

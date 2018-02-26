@@ -14,7 +14,7 @@ documentation: ug
 
 WeekView is to view all days of a particular week. Appointments will be arranged based on the dates on the week in respective timeslots.
 
-## ViewHeader Appearance:
+## ViewHeader Appearance
 You can customize the default appearance of view header in [WeekView](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleView.html) by using [ViewHeaderStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderStyle.html) property of [SfSchedule](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule.html).
 
 {% tabs %}
@@ -92,6 +92,11 @@ You can customize the interval of timeslots in `WeekView` by setting [TimeInterv
 {% endtabs %}
 ![](daymodule_images/timeinterval_week.png)
 
+
+>**Note**:
+
+If you modify the `TimeInterval` value (in minutes), you need to change the time labels format by setting the `TimeFormat` value as "hh:mm". By default, TimeFormat value is `"hh a"`. You can refer [here](https://help.syncfusion.com/xamarin/sfschedule/weekview#time-label-formatting) for changing TimeFormat value.
+
 ## Change Time Interval Height
 You can customize the interval height of timeslots in `WeekView` by setting [TimeIntervalHeight](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~TimeIntervalHeight.html)  property of `SfSchedule`.
 
@@ -137,12 +142,51 @@ Working hours in `WeekView` of Schedule control will be differentiated with non-
     </schedule:SfSchedule> 
 {% endhighlight %}
 {% endtabs %}
+
 ![](daymodule_images/changeworkinghours_week.png)
 
 >**Note**:
-`WorkStartHour` and `WorkEndHour` should be in integer value to represent hours.
+	`WorkStartHour` and `WorkEndHour` should be in integer value to represent hours.
 
-## Timeslot Appearance:
+## Changing StartHour and EndHour
+
+Default value for [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekViewSettings~StartHour.html) and [EndHour](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekViewSettings~EndHour.html) value is 0 to 24 to show all the time slots in `WeekView`. You need to set [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekViewSettings~StartHour.html) and [EndHour](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekViewSettings~EndHour.html) property of `WeekView`, to show only the required time duration for end users.
+
+{% tabs %}
+
+{% highlight C# %}
+
+            schedule.ScheduleView = ScheduleView.WeekView;
+			//Create new instance of WeekViewSettings
+			WeekViewSettings weekViewSettings = new WeekViewSettings();
+			weekViewSettings.StartHour = 08;
+			weekViewSettings.EndHour = 15;
+			schedule.WeekViewSettings = weekViewSettings;
+{% endhighlight %}
+{% highlight XAML %}
+
+    <schedule:SfSchedule x:Name="schedule" ScheduleView="WeekView">
+         <schedule:SfSchedule.WeekViewSettings>
+                <!--setting working hours properties -->
+                <schedule:WeekViewSettings 
+				StartHour="08" 
+				EndHour="15">
+                </schedule:WeekViewSettings>
+          </schedule:SfSchedule.WeekViewSettings>
+    </schedule:SfSchedule> 
+{% endhighlight %}
+{% endtabs %}
+
+![](daymodule_images/changestartendhour_week.png)
+
+
+>**Note**:
+* `StartHour` and `EndHour` should be in integer value to represent hours.
+* `StartHour` must be greater than or equal to 0 and `EndHour` must be lesser than or equal to 24, otherwise `InvalidDataException` will be thrown.
+* `EndHour` value must be greater than `StartHour`, otherwise `InvalidDataException` will be thrown.
+* Schedule UI such as Appointments and NonAccessibleBlocks which does not fall within the `StartHour` and `EndHour` will not be visible and if it falls partially, it will be clipped.
+
+## Timeslot Appearance
 You can customize the appearance of timeslots in `WeekView`.
 
  * [Timeslot customization in Work hours](#timeslot-customization-in-work-hours)
@@ -330,8 +374,9 @@ You can customize the default appearance of selection UI in the timeslots.
 
 * [Selection customization using style](#selection-customization-using-style)
 * [Selection customization using custom View](#selection-customization-using-custom-view)
+* [Programmatic selection](#programmatic-selection)
 
-### Selection customization using style:
+### Selection customization using style
 You can customize the timeslot selection by using [SelectionStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~SelectionStyle.html) property of `SfSchedule`.
 
 {% tabs %}
@@ -394,25 +439,29 @@ You can replace the default selection UI with your custom view by setting [Selec
 {% endtabs %}
 ![](daymodule_images/selectioncustomview_week.png)
 
->**Note:**
-Selection customization is applicable for time slots alone.
+### Programmatic selection
+You can programmatically select the specific timeslot by setting corresponding date and time value to [SelectedDate](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~SelectedDate.html) property of `SfSchedule`. By default, it is null.
 
+{% highlight C# %}
 
+    // Setting a date and time to select
+    schedule.SelectedDate = new DateTime(2017, 10, 04, 10, 0, 0);
 
+{% endhighlight %}
 
+You can clear the selection by setting [SelectedDate](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~SelectedDate.html) as null.
 
+{% highlight C# %}
 
+    // Setting null value to deselect
+    schedule.SelectedDate = null;
 
+{% endhighlight %}
 
+You can download the entire source code of this demo for Xamarin.Forms from here [Date_Selection](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Date_Selection1072247797.zip)
 
+>**Note**:
+* `SfSchedule` does not support multiple selection.
+* `SfSchedule` supports two-way binding of `SelectedDate` property.
 
-
-
-
-
-
-
-
-
-
-
+![](daymodule_images/selection_Week.png)

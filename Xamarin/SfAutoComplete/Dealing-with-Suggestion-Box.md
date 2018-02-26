@@ -138,3 +138,33 @@ autoComplete.PopupDelay = 3000;
 {% endhighlight %}
 
 {% endtabs %}
+
+## Avoid Opening Suggestion Box
+
+APIs are available to avoid pop-ups and retrieve filtered suggestion items that help you arrange lists or items control. 
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Padding="30">
+	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" SuggestionBoxPlacement="None" />                            
+</StackLayout> 
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+List<String> countryNames = new List<String>();
+countryNames.Add("Uganda");
+countryNames.Add("Ukraine");
+countryNames.Add("United Arab Emirates");
+countryNames.Add("United Kingdom");
+countryNames.Add("United States");
+autoComplete.SuggestionBoxPlacement=SuggestionBoxPlacement.None;
+autoComplete.DataSource = countryNames;
+
+
+{% endhighlight %}
+
+{% endtabs %}

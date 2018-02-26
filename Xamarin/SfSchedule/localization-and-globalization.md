@@ -16,15 +16,13 @@ By default schedule control is available with **en**-**US** locale.
 As the subject of the appointments are given in the application level, it can be set as localized strings as per the requirement. To know more about settings the subject refer [Schedule Appointments](/xamarin/sfschedule/populating-appointment "Schedule Appointments").
 
 {% highlight c# %}
-    
-    //creating new instance for schedule
-    SfSchedule schedule = new SfSchedule();
-    //setting schedule view 
-    schedule.ScheduleView=(ScheduleView.WeekView);
-    //setting locale for the control 
-    schedule.Locale=("fr","FR");
-    this.Content= schedule;
-    
+		//creating new instance for schedule
+		SfSchedule schedule = new SfSchedule();
+		//setting schedule view 
+		schedule.ScheduleView=(ScheduleView.WeekView);
+		//setting locale for the control 
+		schedule.Locale=("fr","FR");
+		this.Content= schedule;
 {% endhighlight %}
 
 ![](Localization_images/Locale.png)

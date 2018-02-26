@@ -411,53 +411,62 @@ In SfPicker, the items can be customized with custom view of each item by hookin
 
 {% highlight xaml %}
 
-<?xml version="1.0" encoding="utf-8" ?>
 
-<ContentPage
+    <Grid x:Name="main">
 
-x:Class="CustomViewSample.MainPage"
+<Button 
 
-xmlns="http://xamarin.com/schemas/2014/forms"
+x:Name="button" 
 
-xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+Text="Open Picker" 
 
-xmlns:local="clr-namespace:CustomViewSample"
+Clicked="Handle_Clicked" 
 
-xmlns:syncfusion="clr-namespace:Syncfusion.SfPicker.XForms;assembly=Syncfusion.SfPicker.XForms">
+HeightRequest="100" 
 
-<ContentPage.BindingContext>
+WidthRequest="200" 
 
-<local:UserInfo />
+VerticalOptions="Center" 
 
-</ContentPage.BindingContext>
+HorizontalOptions="Center" />
 
-<Grid HorizontalOptions="Center" VerticalOptions="Center">
-
-<Button Clicked="Button_Clicked" Text="Open Picker" />
-
-<syncfusion:SfPicker
+<picker:SfPicker 
 
 x:Name="picker"
+                    
+HeaderHeight="40"
+                    
+ShowHeader="true"
+                    
+HeaderText="SfPicker Sample"
+                    
+ShowColumnHeader="True"
+                    
+ColumnHeaderHeight="46"
+                    
+PickerMode="Dialog"
+                    
+ItemsHeight="40"
+                    
+PickerHeight="350"
+                    
+PickerWidth="350"
+                    
+ShowFooter="True" 
+                    
+FooterHeight="46"/>
 
-HeaderText="Select a Users"
+    </Grid>
 
-ItemsSource="{Binding Users}"
-
-OnPickerItemLoaded="picker_OnPickerItemLoaded"
-
-PickerMode="Dialog" />
-
-</Grid>
-
-</ContentPage>
 
 {% endhighlight %}
 
 
 {% highlight c# %}
 
-public partial class MainPage : ContentPage
 
+public partial class MainPage : ContentPage
+    
 {
 
 public MainPage()
@@ -466,62 +475,76 @@ public MainPage()
 
 InitializeComponent();
 
+ObservableCollection<object> mainCollection = new ObservableCollection<object>();
+
+ObservableCollection<object> column0 = new ObservableCollection<object>();
+            
+ObservableCollection<object> column1 = new ObservableCollection<object>();
+            
+ObservableCollection<string> columnHeader = new ObservableCollection<string>();
+            
+columnHeader.Add("Custom View");
+            
+columnHeader.Add("Labels");
+            
+picker.ColumnHeaderText = columnHeader;
+            
+picker.OnPickerItemLoaded+=HandlePickerViewEvent;
+            
+column0.Add("India.png");
+            
+column0.Add("UAE.png");
+            
+column0.Add("USA.png");
+            
+column0.Add("UK.png");
+            
+column0.Add("Germany.png");
+            
+column1.Add("TestingLabel 1");
+            
+column1.Add("TestingLabel 2"); 
+            
+column1.Add("TestingLabel 3");
+            
+column1.Add("TestingLabel 4");
+            
+column1.Add("TestingLabel 5");
+            
+mainCollection.Add(column0);
+            
+mainCollection.Add(column1);
+            
+picker.ItemsSource = mainCollection;
+            
+picker.Parent = main;
+
 }
 
-private void picker_OnPickerItemLoaded(object sender, Syncfusion.SfPicker.XForms.PickerViewEventArgs e)
-
+void HandlePickerViewEvent(object sender, Syncfusion.SfPicker.XForms.PickerViewEventArgs e)
+       
+{
+           
+if (e.Column == 0)
+           
 {
 
-e.View = new UserView(e.Item.ToString());
+Country country = new Country() { Name = e.Item.ToString() };
+                
+e.View = new ItemView(country);
+            
+}
 
 }
 
-private void Button_Clicked(object sender, EventArgs e)
-
+void Handle_Clicked(object sender, System.EventArgs e)
+        
 {
 
 picker.IsOpen = true;
-
+        
 }
-
-}
-
-*UserInfo ViewModel:*
-
-public class UserInfo
-
-{
-
-public ObservableCollection<string> Users { get; set; }
-
-public UserInfo()
-
-{
-
-Users = new ObservableCollection<string>();
-
-Users.Add("Maria Anders");
-
-Users.Add("Ana Trujillo");
-
-Users.Add("Ant Fuller");
-
-Users.Add("Martin King");
-
-Users.Add("Lenny Lin");
-
-Users.Add("John Carter");
-
-Users.Add("Laura King");
-
-Users.Add("Anne Wilson");
-
-Users.Add("Martin King");
-
-Users.Add("Gina Irene");
-
-}
-
+    
 }
 
 {% endhighlight %}
@@ -533,65 +556,79 @@ Users.Add("Gina Irene");
 
 {% highlight xaml %}
 
-<Grid
 
-x:Class="CustomViewSample.UserView"
-
-xmlns="http://xamarin.com/schemas/2014/forms"
-
-xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
-
+     <Grid>
+         
 <Grid.ColumnDefinitions>
-
-<ColumnDefinition Width="30" />
-
-<ColumnDefinition Width="*" />
-
+        
+        <ColumnDefinition Width="40" />
+        <ColumnDefinition Width="*" />
+    
 </Grid.ColumnDefinitions>
+    
+<Image 
 
-<Image
+Source="{Binding Name}" 
 
-Margin="8,0,0,0"
+Margin="8,0,0,0"  
 
-Source="user.png"
+VerticalOptions="Center"  />
+    
+<Label 
 
-VerticalOptions="Center" />
+Text="{Binding Text}" 
 
-<Label
+Grid.Column="1" />
 
-Grid.Column="1"
+    </Grid>
 
-HeightRequest="30"
-
-Text="{Binding Name}"
-
-VerticalOptions="Center" />
-
-
-
-</Grid>
 {% endhighlight %}
 
 {% highlight c# %}
 
 
-public partial class UserView : Grid
 
+public partial class ItemView : ContentView
+    
 {
-
-public string Name { get; set; }
-
-public UserView(string name)
-
+       
+Country countryName;
+       
+int i;
+       
+public ItemView(Country country)
+        
 {
-
-Name = name;
-
+           
+i = 0;
+           
+countryName = country;
+           
 InitializeComponent();
 
-this.BindingContext = this;
+foreach(char count in country.Name)
+            
+{
+               
+i++;   
 
 }
+          
+countryName.Text = country.Name.Remove(i - 4);
+           
+this.BindingContext = countryName;
+       
+}
+   
+}
+
+public class Country
+
+{
+        
+public string Name { get; set; }
+        
+public string Text { get; set; }
 
 }
 
@@ -600,6 +637,5 @@ this.BindingContext = this;
 
 Screen shot for the above code.
 
-![](images/populatingitems_img2.jpeg)
-
+![](images/CustomPickerDroid.png)    ![](images/CustomPickerIOS.png)
 

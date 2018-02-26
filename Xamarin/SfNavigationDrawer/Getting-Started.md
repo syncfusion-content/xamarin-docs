@@ -139,9 +139,7 @@ Then initialize an empty navigation drawer as shown below,
 
 {% highlight xaml %}
 
-	<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
 		<navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer"/>
-	</StackLayout>
 	
 {% endhighlight %}
 
@@ -151,9 +149,7 @@ The default position of navigation pane is left so let us change the drawer widt
 
 {% highlight xaml %}
 
-	<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
 		<navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer" DrawerWidth ="200"/>
-	</StackLayout>
 	
 {% endhighlight %}
 

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Model Window Popup | SfPopupLayout |Xamarin.Android | Syncfusion
+title: Model Window Popup | SfPopupLayout |Xamarin| Syncfusion
 description: Model Window Popup with SfPopupLayout
-platform: Xamarin.Android
+platform: Xamarin
 control: SfPopupLayout
 documentation: ug
 --- 

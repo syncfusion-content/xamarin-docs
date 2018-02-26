@@ -241,7 +241,7 @@ This is how the final output will look like on iOS, Android and Windows Phone de
 
 ### Adding a Label as the ContentView of the SfPopupLayout
 
-Any view can be added as the popup content using the [SfPopupLayout.PopupView.ContentTemplate]() property to refresh it. Refer to the following code example in which a textview is added as a popup content:
+Any view can be added as the popup content using the [SfPopupLayout.PopupView.ContentTemplate]() property to refresh it. Refer to the following code example in which a Label is added as a popup content:
 
 #### Type A:
 
@@ -783,7 +783,7 @@ namespace GettingStarted
 
         private void ClickToShowPopup_Clicked(object sender, EventArgs e)
         {
-           // Shows SfPopuplayout at x-position 100 and y position 100.
+           // Shows SfPopupLayout at x-position 100 and y position 100.
            popupLayout.Show(100, 100);
         }
     }
@@ -823,7 +823,7 @@ namespace GettingStarted
 
         private void ClickToShowPopup_Clicked(object sender, EventArgs e)
         {
-           // Shows SfPopuplayout at x-position 100 and y position 100.
+           // Shows SfPopupLayout at x-position 100 and y position 100.
            popupLayout.Show(100, 100, layout);
         }
     }
@@ -873,7 +873,7 @@ namespace GettingStarted
 
         private void ClickToShowPopup_Clicked(object sender, EventArgs e)
         {
-            // Shows SfPopuplayout at the touch point.
+            // Shows SfPopupLayout at the touch point.
             popupLayout.ShowAtTouchPoint();
         }
     }
@@ -926,8 +926,8 @@ namespace GettingStarted
 
         private void ClickToShowPopup_Clicked(object sender, EventArgs e)
         {
-           // Shows SfPopupLayout at the bottom of the textview.
-           popupLayout.ShowRelativeToView(textView, RelativePosition.AlignBottom);
+           // Shows SfPopupLayout at the bottom of the label.
+           popupLayout.ShowRelativeToView(label, RelativePosition.AlignBottom);
         }
     }
 }
@@ -967,8 +967,8 @@ namespace GettingStarted
 
         private void ClickToShowPopup_Clicked(object sender, EventArgs e)
         {
-           //Shows SfPopupLayout at the bottom of the textview.
-           popupLayout.ShowRelativeToView(textView, RelativePosition.AlignBottom, layout);
+           //Shows SfPopupLayout at the bottom of the label.
+           popupLayout.ShowRelativeToView(label, RelativePosition.AlignBottom, layout);
         }
     }
 }

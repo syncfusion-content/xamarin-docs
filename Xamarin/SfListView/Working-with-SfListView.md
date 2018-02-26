@@ -44,7 +44,7 @@ In the following sample, ScrollView height is set into the `HeightRequest` of Sf
 }
 {% endhighlight %}
 
-You can download the entire source code from [here] (http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfListViewSample197024233.zip).
+You can download the entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfListViewSample197024233.zip).
 
 ## Load the SfListView inside a SfPullToRefresh
 SfPullToRefresh is a refresh control that allows you to interact and refresh the view loaded in it. When the SfListView is loaded inside the SfPullToRefresh, it is used to refresh the item while performing the pull to refresh action. The steps to be followed to load the SfListView inside SfPullToRefresh is explained in SfPullToRefresh Property Customization tab.

@@ -18,26 +18,20 @@ Based on the `Locale` specified the strings in the control such as Date, time, d
 By default, schedule control is available with en locale, which is English.
 
 {% tabs %}   
-{% highlight xaml %} 
-
-     
+{% highlight xaml %}
       <schedule:SfSchedule
               x:Name="schedule" 
               ScheduleView="WeekView"
               Locale="ja">
      </schedule:SfSchedule>
-
-
 {% endhighlight %}   
-{% highlight c# %}   
-    
-           //creating new instance for schedule
-            SfSchedule schedule = new SfSchedule();
-            //setting schedule view 
-            schedule.ScheduleView = ScheduleView.WeekView;
-            //setting locale for the control 
-            schedule.Locale = "ja";  
-      
+{% highlight c# %}
+		//creating new instance for schedule
+		SfSchedule schedule = new SfSchedule();
+		//setting schedule view 
+		schedule.ScheduleView = ScheduleView.WeekView;
+		//setting locale for the control 
+		schedule.Locale = "ja";
 {% endhighlight %}   
 {% endtabs %}   
 
@@ -58,8 +52,7 @@ here [Localization](http://www.syncfusion.com/downloads/support/directtrac/gener
 
 You can localize custom text available in the control by adding equivalent localized string in the string.xml file.
 
-{% highlight xml %} 
-       
+{% highlight xml %}
      <resources>
     	<string name="No_Appointments">Aucun événement</string>
      	<string name="all_day">Toute la journée</string>
@@ -76,7 +69,7 @@ The procedure for creating strings.xml files is as follows:
  
 ![](Localization_images/localization_img2.jpeg)  
 
->**Note:** The corresponding values folder loads only depends on the device configuration and locale.
+>**Note:** The corresponding Locale values folder updates only when the device language changes.
 
 ### Localizing custom text in iOS renderer.
 
@@ -92,9 +85,8 @@ If an application requires multiple languages we can follow the below steps:
 
 ![](Localization_images/Localization_iOS_Img2.png)
 
->**Note:** The corresponding `<Language>.lproj` folder loads only depends on the device configuration and locale.
+>**Note:** The corresponding `<Language>.lproj` folder updates only when the device language changes.
 
 ### Localizing custom text in UWP renderer.
-You can localize custom text available in the control by adding equivalent localized string in the fr.resw file.
 
-![](Localization_images/Localization_XFUWP.png) 
+>**Note:** Currently customs strings localization not supported in Xamarin.Forms UWP.

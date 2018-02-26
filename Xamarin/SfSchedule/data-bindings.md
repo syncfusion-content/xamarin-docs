@@ -56,9 +56,9 @@ documentation: ug
 				Subject = "Anniversary",
 				Color = Color.FromHex("#FFA2C139")
             });
-		Schedule.DataSource = scheduleAppointmentCollection;
+		schedule.DataSource = scheduleAppointmentCollection;
 
-        this.content = schedule;
+        this.Content = schedule;
 {% endhighlight %}
 
  ![](PopulatingAppointments_images/minheight.png)

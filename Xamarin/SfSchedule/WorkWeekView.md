@@ -174,7 +174,7 @@ Default value for [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin/
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/changestartendhour_workweek.png)
+![](daymodule_images/changestartandendhour_workweek.png)
 
 >**Note**:
 * `StartHour` and `EndHour` should be in integer value to represent hours.

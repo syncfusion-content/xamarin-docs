@@ -93,7 +93,7 @@ You can customize the interval of timeslots in `WeekView` by setting [TimeInterv
 ![](daymodule_images/timeinterval_week.png)
 
 
->**Note:**
+>**Note**:
 
 If you modify the `TimeInterval` value (in minutes), you need to change the time labels format by setting the `TimeFormat` value as "hh:mm". By default, TimeFormat value is `"hh a"`. You can refer [here](https://help.syncfusion.com/xamarin/sfschedule/weekview#time-label-formatting) for changing TimeFormat value.
 

@@ -92,7 +92,7 @@ You can customize the interval of timeslots in `WorkWeekView` by setting [TimeIn
 
 ![](daymodule_images/timeinterval_workweek.png)
 
->**Note:**
+>**Note**:
 
 If you modify the `TimeInterval` value (in minutes), you need to change the time labels format by setting the `TimeFormat` value as "hh:mm". By default, TimeFormat value is `"hh a"`. You can refer [here](https://help.syncfusion.com/xamarin/sfschedule/workweekview#time-label-formatting) for changing TimeFormat value.
 
@@ -174,7 +174,7 @@ Default value for [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin/
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/changestartendhour_workweek.png)
+![](daymodule_images/changestartandendhour_workweek.png)
 
 >**Note**:
 * `StartHour` and `EndHour` should be in integer value to represent hours.
@@ -369,6 +369,7 @@ You can customize the default appearance of selection UI in the timeslots.
 
 * [Selection customization using style](#selection-customization-using-style)
 * [Selection customization using custom View](#selection-customization-using-custom-view)
+* [Programmatic selection](#programmatic-selection)
 
 ### Selection customization using style
 You can customize the timeslot selection by using [SelectionStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~SelectionStyle.html) property of `SfSchedule`.

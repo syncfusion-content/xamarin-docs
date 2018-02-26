@@ -218,7 +218,7 @@ EllipseAnnotation annotation = new EllipseAnnotation()
 
     Y2 = 35,
 
-    YAxisName = "Yaxis"
+    YAxisName = "YAxis"
 };
 
 chart.ChartAnnotations.Add(annotation);
@@ -236,7 +236,7 @@ SplineSeries series = new SplineSeries()
 
         OpposedPosition = true,
 
-        Name = "Yaxis"
+        Name = "YAxis"
     }
 };
 

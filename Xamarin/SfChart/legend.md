@@ -350,7 +350,7 @@ chart.Legend.OffsetY = 90;
 
 ![](legend_images/legend_img5.png)
 
-##Event
+## Event
 
  **LegendItemClicked**
 

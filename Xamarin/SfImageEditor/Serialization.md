@@ -8,10 +8,10 @@ documentation : ug
 ---
 
 # Serialization And Deserialization
- ImageEditor provides support to serialize and deserialize the shapes(Circle,Arrow,Rectangle), free hand drawing,Text and Toolbarsettings. Save the current state of the Image Editor and Load it back when its needed.
+ ImageEditor provides support to serialize and deserialize the shapes(Circle,Arrow,Rectangle), free hand drawing,Text and Toolbar settings. Save the current state of the Image Editor and Load it back when its needed.
 
 ## Serialization
-  To serialize the shapes like circle,arrow,rectangle,text ,freehand drawing and toolbarsettings by calling SaveEdits() method.Serialized object will be return in the form of Json stream.
+  To serialize the shapes like circle,arrow,rectangle,text ,freehand drawing and toolbar settings by calling SaveEdits() method.Serialized object will be return in the form of JSON stream.
 
 {% tabs %}
 
@@ -32,7 +32,7 @@ documentation : ug
 
 
 ## Deserialization
-   To deserialize serialized objects by calling LoadEdits(stream) method .Deserialize the object by using loaded Json stream.
+   To deserialize serialized objects by calling LoadEdits(stream) method .Deserialize the object by using loaded JSON stream.
 
 {% tabs %}
 

@@ -261,7 +261,7 @@ chart.Series.Add(stackingColumnSeries4);
 
 ## Multiple horizontal axis
 
-You can set an additional horizontal axis for an individual series by using the [`XAxis`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CartesianSeries~XAxis.html) property of cartesian series.
+You can set an additional horizontal axis for an individual series by using the [`XAxis`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CartesianSeries~XAxis.html) property of [`CartesianSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CartesianSeries.html).
 
 {% tabs %} 
 
@@ -317,7 +317,7 @@ chart.Series.Add(series);
 
 ## Multiple vertical axis
 
-You can set an additional vertical axis for an individual series by using the [`YAxis`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CartesianSeries~YAxis.html) property of cartesian series.
+You can set an additional vertical axis for an individual series by using the [`YAxis`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CartesianSeries~YAxis.html) property of [`CartesianSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CartesianSeries.html).
 
 {% tabs %} 
 

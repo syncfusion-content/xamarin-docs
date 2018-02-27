@@ -142,8 +142,6 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 This section explains how to create a SfPopupLayout and configure it. 
  
-You can download the entire source code of this demo for Xamarin.Forms from [here](http://files2.syncfusion.com/Xamarin.Forms/Samples/PullToRefresh_GettingStartedForms.zip).
-
 ## Creating the project
 
 Create a new BlankApp (Xamarin.Forms.Portable) application in Xamarin Studio or Visual Studio for Xamarin.Forms. 

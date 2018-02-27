@@ -477,8 +477,6 @@ chart.ChartAnnotations.Add(annotation);
 
 {% endtabs %}
 
-![](chartannotation_images/image8.png)
-
 N> When `X2` and `Y2` properties of `EllipseAnnotation` are set, the `Height` and `Width` properties do not work.
 
 ### Line annotation

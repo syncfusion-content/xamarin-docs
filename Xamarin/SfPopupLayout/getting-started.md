@@ -2,7 +2,7 @@
 layout: post
 title: Getting started | SfPopupLayout | Xamarin | Syncfusion
 description: Getting started with SfPullToRSfPopupLayoutefresh.
-platform: xamarin
+platform: Xamarin
 control: SfPopupLayout
 documentation: ug
 ---
@@ -157,7 +157,7 @@ Create a new BlankApp (Xamarin.Forms.Portable) application in Xamarin Studio o
     * The SfPopupLayout can be displayed by making it as the base view or content view of the main page. We will refer this approach as Type A throughout this page.
     * You can continue to keep your view as the content view of the main page and still display popup over your view by simply calling the SfPopupLayout.Show() method. We will refer this approach as Type B throughout this page.
  
- 4. For Type A, set the view over which the SfPopupLayout should be displayed as the content of the SfPopupLayout using [SfPopupLayout.Content]() property.
+ 4. For Type A, set the view over which the SfPopupLayout should be displayed as the content of the SfPopupLayout using [SfPopupLayout.Content](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~ContentProperty.html) property.
 
 #### Type A:
 
@@ -241,7 +241,7 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-This is how the final output will look like on iOS, Android and Windows Phone devices.
+This is how the final output will look like on iOS device.
 ![](GettingStarted_images/DefaultAppearance.png)
 
 ### Customizing Positioning
@@ -250,23 +250,23 @@ SfPopupLayout allows you to show the Popup content at various position based on 
 
 Following are the list of options available to position the SfPopupLayout in your desired position
 
-* SfPopupLayout.IsOpen property - Shows SfPopupLayout at the center.
-* SfPopupLayout.Show() - It is similar to SfPopupLayout.IsOpen property.
-* SfPopupLayout.Show(x-position, y-position) - Shows SfPopupLayout at the specified X and y position.
-* SfPopupLayout.ShowAtTouchPoint() - Shows SfPopupLayout at the touch point.
-* SfPopupLayout.ShowRelativeToView(View, RelativePosition) - Choose to show SfPopupLayout at any of the 8 positions relative to the specified view.
+* [SfPopupLayout.IsOpen](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~IsOpen.html) property - Shows SfPopupLayout at the center.
+* [SfPopupLayout.Show()](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Show.html) - It is similar to SfPopupLayout.IsOpen property.
+* [SfPopupLayout.Show(x-position, y-position)](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Show.html) - Shows SfPopupLayout at the specified X and y position.
+* [SfPopupLayout.ShowAtTouchPoint()](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~ShowAtTouchPoint.html) - Shows SfPopupLayout at the touch point.
+* [SfPopupLayout.ShowRelativeToView(View, RelativePosition)](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~ShowRelativeToView.html) - Choose to show SfPopupLayout at any of the 8 positions relative to the specified view.
 
 ### Customizing Layouts
 
-By default, you can choose from the following layouts available in SfPopupLayout using the property `SfPopupLayout.AppearanceMode`.
+By default, you can choose from the following layouts available in SfPopupLayout using the property [SfPopupLayout.AppearanceMode](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AppearanceMode.html).
 
-* OneButton - Shows SfPopupLayout with OneButton in the FooterView. This is the default value.
-* TwoButton - Shows SfPopupLayout with TwoButtons in the FooterView.
+* [OneButton](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AppearanceMode.html) - Shows SfPopupLayout with OneButton in the FooterView. This is the default value.
+* [TwoButton](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AppearanceMode.html) - Shows SfPopupLayout with TwoButtons in the FooterView.
 * You can also customize the entire view of the popup by loading templates or custom views individually for the header, body and footer of the popup.
 
 #### Adding a Label as the ContentView of the SfPopupLayout
 
-Any view can be added as the popup content using the [SfPopupLayout.PopupView.ContentTemplate]() property to refresh it. Refer to the following code example in which a Label is added as a popup content:
+Any view can be added as the popup content using the [SfPopupLayout.PopupView.ContentTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~ContentTemplate.html) property to refresh it. Refer to the following code example in which a Label is added as a popup content:
 
 #### Type A:
 
@@ -324,20 +324,20 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-This is how the final output will look like on iOS, Android and Windows Phone devices.
+This is how the final output will look like on iOS device.
 ![](GettingStarted_images/ContentView.png)
 
 ### Customizing Animations
 
 Built-in animations are available in SfPopupLayout, which is applied when the PopupView opens and closes in the screen.
-By default, you can choose from the following Animations available in SfPopupLayout using the property `SfPopupLayout.AnimationMode`.
+By default, you can choose from the following Animations available in SfPopupLayout using the property [SfPopupLayout.AnimationMode](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AnimationMode.html).
 
-* Zoom - Zoom-out animation will be applied if the PopupView opens and zoom-in animation will be applied if the PopupView closes. This is the default AnimationMode
-* Fade - Fade-out animation will be applied if the PopupView opens and Fade-in animation will be applied if the PopupView closes.
-* SlideOnLeft - PopupView will be animated from left-to-right, when it opens and it will be animated from right-to-left when the PopupView closes.
-* SlideOnTop - PopupView will be animated from top-to-bottom, when it opens and it will be animated from bottom-to-top when the PopupView closes.
-* None - Animation will not be applied.
+* [Zoom](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AnimationMode.html) - Zoom-out animation will be applied if the PopupView opens and zoom-in animation will be applied if the PopupView closes. This is the default AnimationMode
+* [Fade](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AnimationMode.html) - Fade-out animation will be applied if the PopupView opens and Fade-in animation will be applied if the PopupView closes.
+* [SlideOnLeft](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AnimationMode.html) - PopupView will be animated from left-to-right, when it opens and it will be animated from right-to-left when the PopupView closes.
+* [SlideOnTop](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AnimationMode.html) - PopupView will be animated from top-to-bottom, when it opens and it will be animated from bottom-to-top when the PopupView closes.
+* [None](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AnimationMode.html) - Animation will not be applied.
 
 ### Sample link
 
-You can download the source code of this sample [here]().
+You can download the source code of this sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-2069677713).

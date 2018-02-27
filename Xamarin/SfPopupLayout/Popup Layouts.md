@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Popup Layouts | SfPopupLayout |Xamarin.Android | Syncfusion
+title: Popup Layouts | SfPopupLayout |Xamarin | Syncfusion
 description: Layouts in SfPopupLayout
-platform: Xamarin.Android
+platform: Xamarin
 control: SfPopupLayout
 documentation: ug
 --- 
 
 ### AppearanceMode
 
-SfPopupLayout supports two types of [SfPopupLayout.PopupView.AppearanceMode](). By default, "AppearanceMode.OneButton" is set. You can change the appearance of the SfPopupLayout by using `SfPopupLayout.PopupView.AppearanceMode` property.
+SfPopupLayout supports two types of [SfPopupLayout.PopupView.AppearanceMode](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AppearanceMode.html). By default, "AppearanceMode.OneButton" is set. You can change the appearance of the SfPopupLayout by using `SfPopupLayout.PopupView.AppearanceMode` property.
 Two different appearance mode in SfPopupLayout as listed below.
 
 <table>
@@ -18,11 +18,11 @@ Two different appearance mode in SfPopupLayout as listed below.
 <th> Description </th>
 </tr>
 <tr>
-<td> {{'[OneButton]()'| markdownify }} </td>
+<td> {{'[OneButton](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AppearanceMode.html)'| markdownify }} </td>
 <td> Shows SfPopupLayout with OneButton in the FooterView. This is the default value.</td>
 </tr>
 <tr>
-<td> {{'[TwoButton]()'| markdownify }} </td>
+<td> {{'[TwoButton](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AppearanceMode.html)'| markdownify }} </td>
 <td> Shows SfPopupLayout with TwoButtons in the FooterView.</td>
 </tr>
 </table>
@@ -115,7 +115,7 @@ namespace GettingStarted
         {
             InitializeComponent();
           
-            //Setting the AppearanceMode as TwoButton
+            // Setting the AppearanceMode as TwoButton
             popupLayout.PopupView.AppearanceMode = AppearanceMode.TwoButton;        
             clickToShowPopup.Clicked += ClickToShowPopup_Clicked;
         }

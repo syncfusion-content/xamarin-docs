@@ -258,3 +258,115 @@ chart.Series.Add(stackingColumnSeries4);
 {% endtabs %}
 
 ![](chartseries_images/chartseries_img4.png)
+
+## Multiple horizontal axis
+
+You can set an additional horizontal axis for an individual series by using the [`XAxis`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CartesianSeries~XAxis.html) property of cartesian series.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart>
+...
+
+    <chart:SfChart.Series>
+
+        <chart:ColumnSeries ItemsSource="{Binding Data}" XBindingPath="Month" YBindingPath="Value">
+
+            <chart:ColumnSeries.XAxis>
+
+                <chart:CategoryAxis OpposedPosition="true" />
+
+            </chart:ColumnSeries.XAxis>
+
+        </chart:ColumnSeries>
+
+    </chart:SfChart.Series>
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+...
+
+ColumnSeries series = new ColumnSeries();  
+
+series.ItemsSource = Data;
+
+series.XBindingPath = "Month";
+
+series.YBindingPath = "Value";
+
+CategoryAxis seriesAxis = new CategoryAxis();
+
+seriesAxis.OpposedPosition = true;
+
+series.XAxis = seriesAxis;
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](chartseries_images/xAxis_image.png)
+
+## Multiple vertical axis
+
+You can set an additional vertical axis for an individual series by using the [`YAxis`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CartesianSeries~YAxis.html) property of cartesian series.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart>
+...
+
+    <chart:SfChart.Series>
+
+        <chart:ColumnSeries ItemsSource="{Binding Data}" XBindingPath="Month" YBindingPath="Value">
+
+            <chart:ColumnSeries.YAxis>
+
+                <chart:NumericalAxis OpposedPosition="true" />
+
+            </chart:ColumnSeries.YAxis>
+
+        </chart:ColumnSeries>
+
+    </chart:SfChart.Series>
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+...
+
+ColumnSeries series = new ColumnSeries();  
+
+series.ItemsSource = Data;
+
+series.XBindingPath = "Month";
+
+series.YBindingPath = "Value";
+
+NumericalAxis seriesAxis = new NumericalAxis();
+
+seriesAxis.OpposedPosition = true;
+
+series.YAxis = seriesAxis;
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](chartseries_images/yAxis_image.png)

@@ -83,7 +83,7 @@ The Android launches the SfPopupLayout without any initialization and is enough 
 
 ### iOS
 
-To launch the SfPopupLayout in iOS, you need to call the ` SfPopupLayoutRenderer.Init()` in the `FinishedLaunching` overridden method of the AppDelegate class after the Xamarin.Forms Framework initialization and before the LoadApplication is called, as demonstrated in the following code example:
+To launch the SfPopupLayout in iOS, you need to call the `SfPopupLayoutRenderer.Init()` in the `FinishedLaunching` overridden method of the AppDelegate class after the Xamarin.Forms Framework initialization and before the LoadApplication is called, as demonstrated in the following code example:
 
 {% highlight c# %}
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
@@ -149,7 +149,7 @@ Create a new BlankApp (Xamarin.Forms.Portable) application in Xamarin Studio o
 ## Adding SfPopupLayout in Xamarin.Forms 
 
 1. Add the required assembly references to the pcl and renderer projects as discussed in the [Assembly deployment](#assembly-deployment) section.
-2. Import the control namespace as xmlns:syncfusion="clr-namespace:Syncfusion.XForms.SfPopupLayout;assembly=Syncfusion.SfPopupLayout.XForms in XAML Page.
+2. Import the control namespace as xmlns:syncfusion="clr-namespace:Syncfusion.XForms.SfPopupLayout;assembly=Syncfusion.SfPopupLayout.XForms" in XAML Page.
 3. The SfPopupLayout can be displayed by the following methods. 
     
     * The SfPopupLayout can be displayed by making it as the base view or content view of the main page. We will refer this approach as Type A throughout this page.
@@ -179,6 +179,7 @@ Create a new BlankApp (Xamarin.Forms.Portable) application in Xamarin Studio o
 {% endhighlight %}
 
 {% highlight c# %}
+
 using Syncfusion.XForms.PopupLayout;
 
 namespace GettingStarted
@@ -266,7 +267,7 @@ By default, you can choose from the following layouts available in SfPopupLayout
 
 Any view can be added as the popup content using the [SfPopupLayout.PopupView.ContentTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~ContentTemplate.html) property to refresh it. Refer to the following code example in which a Label is added as a popup content:
 
-#### Type A:
+##### Type A:
 
 {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8" ?>
@@ -327,8 +328,7 @@ This is how the final output will look like on iOS device.
 
 ### Customizing Animations
 
-Built-in animations are available in SfPopupLayout, which is applied when the PopupView opens and closes in the screen.
-By default, you can choose from the following Animations available in SfPopupLayout using the property [SfPopupLayout.AnimationMode](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AnimationMode.html).
+Built-in animations are available in SfPopupLayout, which is applied when the PopupView opens and closes in the screen. By default, you can choose from the following Animations available in SfPopupLayout using the property [SfPopupLayout.AnimationMode](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AnimationMode.html).
 
 * [Zoom](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AnimationMode.html) - Zoom-out animation will be applied if the PopupView opens and zoom-in animation will be applied if the PopupView closes. This is the default AnimationMode
 * [Fade](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AnimationMode.html) - Fade-out animation will be applied if the PopupView opens and Fade-in animation will be applied if the PopupView closes.

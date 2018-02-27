@@ -9,7 +9,7 @@ documentation: ug
 
 # Custom Header 
 
-When built-in view is not needed, it can be overridden by adding custom view for the header region for a tab. 
+When the built-in view is not needed, it can be overridden by adding the custom view to the header region in tabs. 
 
 {% tabs %}
 
@@ -47,9 +47,9 @@ HeaderContent = allCallsButton
 
 {% endtabs %}
 
-## How to handle events for custom view with tab view?
+## How to handle the events for custom view with tab view?
 
-When using button or similar control with clicked event, it can be handled directly and set the SelectedIndex property to navigate the clicked view.
+When you use the button or similar control with clicked event, it can be handled directly and set to the `SelectedIndex` property to navigate the clicked view.
 
 {% highlight C# %}
 
@@ -60,6 +60,6 @@ tabView.SelectedIndex = 0;
 			
 {% endhighlight %}
 
-N> If click event is not available, it can be achieved by set TapGestureRecognizer for the custom view.
+N> If the click event is not available, it can be achieved by setting the `TapGestureRecognizer` to the custom view.
 
 

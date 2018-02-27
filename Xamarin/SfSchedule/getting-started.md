@@ -187,7 +187,7 @@ Schedule control will be rendered with `Sunday` as the first day of the week, bu
     
 {% tabs %}  
 {% highlight xaml %}
-		<syncfusion:SfSchedule x:Name="schedule" FirstDayOfWeek="2"/>   
+		<syncfusion:SfSchedule x:Name="schedule" FirstDayOfWeek="3"/>   
 {% endhighlight %}   
 {% highlight c# %}
 		//setting first day of the week    

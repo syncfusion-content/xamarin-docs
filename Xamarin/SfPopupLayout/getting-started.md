@@ -142,11 +142,11 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 This section explains how to create a SfPopupLayout and configure it. 
  
-## Creating the project
+### Creating the project
 
 Create a new BlankApp (Xamarin.Forms.Portable) application in Xamarin Studio or Visual Studio for Xamarin.Forms. 
 
-## Adding SfPopupLayout in Xamarin.Forms 
+### Adding SfPopupLayout in Xamarin.Forms 
 
 1. Add the required assembly references to the pcl and renderer projects as discussed in the [Assembly deployment](#assembly-deployment) section.
 2. Import the control namespace as xmlns:syncfusion="clr-namespace:Syncfusion.XForms.SfPopupLayout;assembly=Syncfusion.SfPopupLayout.XForms" in XAML Page.

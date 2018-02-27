@@ -7,7 +7,7 @@ control: SfPopupLayout
 documentation: ug
 --- 
 
-### Showing SfPopupLayout at various position
+# Showing SfPopupLayout at various position
 
 SfPopupLayout allows you to show the Popup content at various position based on the requirement.
 
@@ -40,11 +40,11 @@ Following are the list of options available to show SfPopupLayout at various pos
 </tr>
 </table>
 
-#### IsOpen Property
+## IsOpen Property
 
 In the below code example we have open the SfPopupLayout by using `SfPopupLayout.IsOpen` property.
 
-##### Type A:
+### Type A:
 
 {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8" ?>
@@ -92,11 +92,11 @@ N > SfPopupLayout.IsOpen property is not applicable for Type B.
 If we run the above sample, the below output will appear on iOS device as shown below.
 ![](GettingStarted_images/IsOpen_Property.png)
 
-#### SfPopupLayout.Show()
+## SfPopupLayout.Show()
 
 In the below code example we have open the SfPopupLayout by using `SfPopupLayout.Show()`.
 
-##### Type A:
+### Type A:
 
 {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8" ?>
@@ -142,11 +142,11 @@ namespace GettingStarted
 If we run the above sample, the below output will appear on iOS device as shown below.
 ![](GettingStarted_images/ShowPopup.png)
 
-#### SfPopupLayout.Show(x-position, y-position)
+## SfPopupLayout.Show(x-position, y-position)
 
 In the below code example we have open the SfPopupLayout by using `SfPopupLayout.Show(x-position, y-position)`.
 
-##### Type A:
+### Type A:
 
 {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8" ?>
@@ -192,11 +192,11 @@ namespace GettingStarted
 If we run the above sample, the below output will appear on iOS device as shown below.
 ![](GettingStarted_images/ShowAtXYPosition.png)
 
-#### SfPopupLayout.ShowAtTouchPoint()
+## SfPopupLayout.ShowAtTouchPoint()
 
 In the below code example we have open the SfPopupLayout by using `SfPopupLayout.ShowAtTouchPoint()`.
 
-##### Type A:
+### Type A:
 
 {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8" ?>
@@ -244,11 +244,11 @@ N > SfPopupLayout.ShowAtTouchPoint() is not applicable for Type B.
 If we run the above sample, the below output will appear on iOS device as shown below.
 ![](GettingStarted_images/ShowAtTouchPoint.png)
 
-#### SfPopupLayout.ShowRelativeToView(View, RelativePosition)
+## SfPopupLayout.ShowRelativeToView(View, RelativePosition)
 
 In the below code example we have open the SfPopupLayout by using `SfPopupLayout.ShowRelativeToView(View, RelativePosition)`.
 
-##### Type A:
+### Type A:
 
 {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8" ?>

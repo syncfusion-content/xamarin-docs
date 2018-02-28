@@ -346,7 +346,7 @@ calendar.HeightRequest = 200;
 </tr>
 <tr>
 <td>None</td>
-<td>This enum value of CellGridOptions is used to diable the vertical and horizontal border lines in SfCalendar</td>
+<td>This enum value of CellGridOptions is used to disable the vertical and horizontal border lines in SfCalendar</td>
 </tr>
 
 </table>

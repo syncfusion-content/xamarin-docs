@@ -569,7 +569,7 @@ This section covers the features of SfCalendar specific to Android,iOS and UWP p
 </tr>
 
 <tr style="background-color: #ffefd5;color: #000000;">
-<td>DataTemplate with Customobject on OnMonthCell</td>
+<td>DataTemplate with Custom Object on OnMonthCell</td>
 <td align="center">
 <p>Yes</p>
 </td>

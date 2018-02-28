@@ -46,6 +46,91 @@ autoComplete.DataSource = countryNames;
 
 {% endtabs %}
 
+### Token Customization
+
+Customization can be done for Token. Following code illustrate the how to customize the token.
+
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+    <autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" DropDownItemHeight="50" DisplayMemberPath="Name" ImageMemberPath="Image" MultiSelectMode="Token" TokensWrapMode="Wrap" DataSource="{Binding EmployeeCollection}">
+    </autocomplete:SfAutoComplete>
+</StackLayout>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+namespace autocomplete
+{
+public partial class autocompletePage : ContentPage
+{
+    EmployeeViewModel view = new EmployeeViewModel();
+    public autocompletePage()
+    {
+        InitializeComponent();
+
+        TokenSettings token = new TokenSettings();
+        token.FontSize = 16;
+        token.BackgroundColor = Color.FromHex("#d3d3d3");
+        token.TextColor = Color.Red;
+        token.SelectedBackgroundColor = Color.FromHex("#ffffe0");
+        token.DeleteButtonColor = Color.Brown;
+        token.IsCloseButtonVisible = true;
+        token.CornerRadius = 3;
+        autoComplete.TokenSettings = token;
+        this.BindingContext = view;
+    }
+}
+
+        public class Employee
+{
+    private string image;
+    public string Image
+    {
+        get { return image; }
+        set { image = value; }
+    }
+    private string name;
+    public string Name
+    {
+        get { return name; }
+        set { name = value; }
+    }
+}
+
+public class EmployeeViewModel
+{
+    private ObservableCollection<Employee> employeeCollection;
+    public ObservableCollection<Employee> EmployeeCollection
+    {
+        get { return employeeCollection; }
+        set { employeeCollection = value; }
+    }
+    public EmployeeViewModel()
+    {
+        employeeCollection = new ObservableCollection<Employee>();
+        employeeCollection.Add(new Employee() { Image = "a0.png", Name = "John" });
+        employeeCollection.Add(new Employee() { Image = "a1.png", Name = "James" });
+        employeeCollection.Add(new Employee() { Image = "a2.png", Name = "Jacob" });
+        employeeCollection.Add(new Employee() { Image = "a3.png", Name = "Joy" });
+        employeeCollection.Add(new Employee() { Image = "a4.png", Name = "Justin" });
+        employeeCollection.Add(new Employee() { Image = "a5.png", Name = "Jerome" });
+        employeeCollection.Add(new Employee() { Image = "b0.png", Name = "Jessica" });
+        employeeCollection.Add(new Employee() { Image = "b1.png", Name = "Victoria" });
+       
+    }
+}
+
+}
+{% endhighlight %}
+
+{% endtabs %}
+
+
 ![](images/MultiSelect/TokenRepresentation.png)
 
 ## Delimiter

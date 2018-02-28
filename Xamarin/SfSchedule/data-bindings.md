@@ -546,6 +546,68 @@ private void Schedule_CellLongPressed(object sender, CellTappedEventArgs e)
 }
 {% endhighlight %}
 
+### Commands
+Schedule commands allow data bindings to make method calls directly to a ViewModel, which supports tapped, double tapped, long pressed touch actions and visible date changed action.
+
+•    [CellTappedCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~CellTappedCommand.html)
+•    [CellDoubleTappedCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~CellDoubleTappedCommand.htmll)
+•    [CellLongPressedCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~CellLongPressedCommand.html)
+•    [VisibleDatesChangedCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~VisibleDatesChangedCommand.html)
+
+{% highlight xaml %}
+
+    <schedule:SfSchedule
+        CellTappedCommand="{Binding ScheduleCellTapped}"
+        CellDoubleTappedCommand="{Binding ScheduleCellDoubleTapped}"
+        CellLongPressedCommand="{Binding ScheduleCellLongPressed}"
+        VisibleDatesChangedCommand="{Binding ScheduleVisibleDatesChanged}">
+        <schedule:SfSchedule.BindingContext>
+            <samplelocal:ScheduleViewModel />
+        </schedule:SfSchedule.BindingContext>
+    </schedule:SfSchedule>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    public class ScheduleViewModel
+    {
+        public ICommand ScheduleCellTapped { get; set; }
+        public ICommand ScheduleCellDoubleTapped { get; set; }
+        public ICommand ScheduleCellLongPressed { get; set; }
+        public ICommand ScheduleVisibleDatesChanged { get; set; }
+
+        public ScheduleViewModel()
+        {
+            ScheduleCellTapped = new Command<CellTappedEventArgs>(CellTapped);
+            ScheduleCellDoubleTapped = new Command<CellTappedEventArgs>(DoubleTapped);
+            ScheduleCellLongPressed = new Command<CellTappedEventArgs>(LongPressed);
+            ScheduleVisibleDatesChanged = new Command<VisibleDatesChangedEventArgs>(VisibleDatesChanged);
+        }
+
+        private void CellTapped(CellTappedEventArgs args)
+        {
+            var selectedDateTime = args.Datetime;
+        }
+
+        private void DoubleTapped(CellTappedEventArgs args)
+        {
+            var selectedDateTime = args.Datetime;
+        }
+
+        private void LongPressed(CellTappedEventArgs args)
+        {
+            var selectedDateTime = args.Datetime;
+        }
+
+        private void VisibleDatesChanged(VisibleDatesChangedEventArgs args)
+        {
+            var visibleDates = args.visibleDates;
+        }
+    }
+
+{% endhighlight %}
+
 ### Selection customization
 The default selection of an appointment can be customized by using [SelectionBorderColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~SelectionBorderColor.html), [SelectionTextColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~SelectionTextColor.html) properties in `AppointmentStyle` property of `SfSchedule`. The property is used to customize or override the default selection of the appointments.
 

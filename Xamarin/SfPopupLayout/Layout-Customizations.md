@@ -7,7 +7,7 @@ control: SfPopupLayout
 documentation: ug
 --- 
 
-# AppearanceMode
+# Layout Customizations
 
 SfPopupLayout supports two types of [SfPopupLayout.PopupView.AppearanceMode](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AppearanceMode.html). By default, "AppearanceMode.OneButton" is set. You can change the appearance of the SfPopupLayout by using `SfPopupLayout.PopupView.AppearanceMode` property.
 Two different appearance mode in SfPopupLayout as listed below.
@@ -27,7 +27,7 @@ Two different appearance mode in SfPopupLayout as listed below.
 </tr>
 </table>
 
-## OneButton
+## Popup with one button in the footer
 
 In the below code example we have set `SfPopupLayout.PopupView.AppearanceMode` property as `OneButton` which displays only AcceptButton in the FooterView.
 
@@ -79,7 +79,7 @@ namespace GettingStarted
 If we run the above sample with `AppearanceMode` as `OneButton`, the output will appear on iOS, Android and Windows Phone devices as shown below.
 ![](GettingStarted_images/AppearanceMode_OneButton.png)
 
-## TwoButton
+## Popup with two buttons in the footer
 
 In the below code example we have set `SfPopupLayout.PopupView.AppearanceMode` property as `TwoButton` which displays only AcceptButton in the FooterView.
 
@@ -131,11 +131,11 @@ namespace GettingStarted
 If we run the above sample with `AppearanceMode` as `TwoButton`, the output will appear on iOS, Android and Windows Phone devices as shown below.
 ![](GettingStarted_images/AppearanceMode_TwoButton.png)
 
-# Customizing Header and Footer template
+## Customizing Popup Layouts
  
 You can also customize the entire view of the popup by loading templates or custom views individually for the header, body and footer of the popup.
 
-## Header customization
+### Header customization
 
 Any view can be added as the header content using the [SfPopupLayout.PopupView.HeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~HeaderTemplate.html) property to refresh it. Refer to the following code example in which a Label is added as a header content:
 
@@ -199,10 +199,10 @@ namespace GettingStarted
 {% endhighlight %}
 
 This is how the final output will look like on iOS device.
-![](GettingStarted_images/ContentView.png)
+![](PopupLayout_images/ContentView.png)
 
 
-## Footer customization
+### Footer customization
 
 Any view can be added as the header content using the [SfPopupLayout.PopupView.FooterTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~ContentTemplate.html) property to refresh it. Refer to the following code example in which a Label is added as a header content:
 
@@ -266,9 +266,9 @@ namespace GettingStarted
 {% endhighlight %}
 
 This is how the final output will look like on iOS device.
-![](GettingStarted_images/ContentView.png)
+![](PopupLayout_images/ContentView.png)
 
-## How to hide Header in SfPopupLayout ?
+### How to hide Header in SfPopupLayout ?
 
 SfPopupLayout allows you to hide the Header by using [SfPopupLayout.PopupView.ShowHeader](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~ShowHeader.html) property. The default value of this property is `true`.
 
@@ -286,7 +286,10 @@ public MainPage()
 }
 {% endhighlight %}
 
-## How to hide Footer in SfPopupLayout ?
+This is how the final output will look like on iOS device.
+![](PopupLayout_images/ContentView.png)
+
+### How to hide Footer in SfPopupLayout ?
 
 SfPopupLayout allows you to hide the Header by using [SfPopupLayout.PopupView.ShowFooter](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~ShowFooter.html) property. The default value of this property is `true`.
 
@@ -304,7 +307,10 @@ public MainPage()
 }
 {% endhighlight %}
 
-## How to hide the close button in SfPopupLayout ?
+This is how the final output will look like on iOS device.
+![](PopupLayout_images/ContentView.png)
+
+### How to hide the close button in SfPopupLayout ?
 
 SfPopupLayout allows you to hide the Close button by using [SfPopupLayout.PopupView.ShowCloseButton](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~ShowCloseButton.html) property. The default value of this property is `true`.
 
@@ -321,6 +327,9 @@ public MainPage()
     ....
 }
 {% endhighlight %}
+
+This is how the final output will look like on iOS device.
+![](PopupLayout_images/ContentView.png)
 
 # Styles
 
@@ -382,7 +391,7 @@ public MainPage()
 {% endhighlight %}
 
 This is how the final output will look like on iOS device.
-![](GettingStarted_images/ContentView.png)
+![](PopupLayout_images/ContentView.png)
 
 ## Customizing Footer elements
 
@@ -440,7 +449,7 @@ public MainPage()
 {% endhighlight %}
 
 This is how the final output will look like on iOS device.
-![](GettingStarted_images/ContentView.png)
+![](PopupLayout_images/ContentView.png)
 
 ## Border Customization
 
@@ -484,4 +493,4 @@ public MainPage()
 {% endhighlight %}
 
 This is how the final output will look like on iOS device.
-![](GettingStarted_images/ContentView.png)
+![](PopupLayout_images/ContentView.png)

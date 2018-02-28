@@ -491,3 +491,6 @@ public MainPage()
 }
 
 {% endhighlight %}
+
+This is how the final output will look like on iOS device.
+![](PopupLayout_images/BorderCustomization.png)

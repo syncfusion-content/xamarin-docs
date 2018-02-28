@@ -599,11 +599,14 @@ The default appearance of the Appointment can be customized by using the [Appoin
 
 {% endhighlight %}
 
-Used button to display day appointment and Label to display all day appointment, also set the image name as appointment subject.
+Used button to display day appointment and Label to display all day appointment.
 
 {% highlight xaml %}
 
-    <Button
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!--<Button as Template for day Appointment>-->
+    <Button xmlns="http://xamarin.com/schemas/2014/forms"
+        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
         x:Class="ScheduleUG.DayAppointmentTemplate"
         BackgroundColor="{Binding Color}"
         HorizontalOptions="FillAndExpand"
@@ -613,11 +616,12 @@ Used button to display day appointment and Label to display all day appointment,
         Image="{Binding Subject}">
     </Button>
 
-{% endhighlight %}
+    .......
 
-{% highlight xaml %}
-
-    <Label
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!--<Label as Template for all day Appointment>-->
+    <Label xmlns="http://xamarin.com/schemas/2014/forms"
+        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
         x:Class="ScheduleUG.AllDayAppointmentTemplate"
         BackgroundColor="{Binding Color}"
         Text="{Binding Subject}"

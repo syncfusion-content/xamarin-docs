@@ -68,21 +68,21 @@ namespace autocomplete
 {
 public partial class autocompletePage : ContentPage
 {
-    EmployeeViewModel vm = new EmployeeViewModel();
+    EmployeeViewModel view = new EmployeeViewModel();
     public autocompletePage()
     {
         InitializeComponent();
 
-        TokenSettings tokensetting = new TokenSettings();
-        tokensetting.FontSize = 16;
-        tokensetting.BackgroundColor = Color.FromHex("#d3d3d3");
-        tokensetting.TextColor = Color.Red;
-        tokensetting.SelectedBackgroundColor = Color.FromHex("#ffffe0");
-        tokensetting.DeleteButtonColor = Color.Brown;
-        tokensetting.IsCloseButtonVisible = true;
-        tokensetting.CornerRadius = 3;
-        autoComplete.TokenSettings = tokensetting;
-        this.BindingContext = vm;
+        TokenSettings token = new TokenSettings();
+        token.FontSize = 16;
+        token.BackgroundColor = Color.FromHex("#d3d3d3");
+        token.TextColor = Color.Red;
+        token.SelectedBackgroundColor = Color.FromHex("#ffffe0");
+        token.DeleteButtonColor = Color.Brown;
+        token.IsCloseButtonVisible = true;
+        token.CornerRadius = 3;
+        autoComplete.TokenSettings = token;
+        this.BindingContext = view;
     }
 }
 

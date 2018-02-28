@@ -202,12 +202,16 @@ void Handle_InlineToggled(object sender, Syncfusion.SfCalendar.XForms.InlineTogg
 
 void Handle_OnMonthCellLoaded(object sender, Syncfusion.SfCalendar.XForms.MonthCell args)
 {
-
-	if ((args.Date.DayOfWeek == DayOfWeek.Sunday || args.Date.DayOfWeek == DayOfWeek.Saturday))
-	{
-		args.BackgroundColor = Color.Gray;
-		args.TextColor = Color.Red;
-	}
+	if (args.IsCurrentMonth)
+    {
+        args.BackgroundColor = Color.Gray;
+        args.TextColor = Color.Red;
+    }
+    else
+    {
+        args.BackgroundColor = Color.LightGray;
+        args.TextColor = Color.Black;
+    }
 }
 
 {% endhighlight %}
@@ -260,3 +264,104 @@ calendar.WidthRequest = 200;
 calendar.HeightRequest = 200;
 	
 {% endhighlight %}
+
+ # How to Customize the SfCalendar Header?
+
+`HeaderView` property of SfCalendar allows us to customize SfCalendar Header. It returns custom view for SfCalendarHeader
+
+<table>
+<tr>
+<th>Members</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>HeaderView</td>
+<td>Carries custom view for Calendar Header</td>
+</tr>
+</table>
+
+{% tabs %}
+
+{% highlight xaml %}
+
+ <syncfusion:SfCalendar  x:Name="calendar"   >
+         <syncfusion:SfCalendar.HeaderView>
+                <Label Text="Custom Header View" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+        </syncfusion:SfCalendar.HeaderView>
+    </syncfusion:SfCalendar>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+# How to enable or disable the YearView in SfCalendar?
+
+`ShowYearView` property of SfCalendar allows us to enable and disable the  YearView of SfCalendar. The default value of ShowYearView is true.
+
+<table>
+<tr>
+<th>Members</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>ShowYearView</td>
+<td>Carries boolean value which is used to enable or disable the YearView in SfCalendar</td>
+</tr>
+</table>
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfCalendar Grid.Row="1" ShowYearView="false" x:Name="calendar"  / >
+
+{% endhighlight %}
+
+{% endtabs %}
+
+# How to enable or disable the Horizontal and Vertical cell grid lines in SfCalendar?
+
+`CellGridOptions` property of MonthViewSettings allows us to enable and disable the horizontal and vertical border lines of SfCalendar. 
+
+<table>
+<tr>
+<th>Members</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>CellGridOptions</td>
+<td>Carries enum value which is used to enable or disable the vertical and horizontal border lines in SfCalendar</td>
+</tr>
+<tr>
+<td>VerticalLines</td>
+<td>This enum value of CellGridOptions is used to enable the vertical border lines in SfCalendar</td>
+</tr>
+<tr>
+<td>HorizontalLines</td>
+<td>This enum value of CellGridOptions is used to enable the horizontal border lines in SfCalendar</td>
+</tr>
+<tr>
+<td>Both</td>
+<td>This enum value of CellGridOptions is used to enable the vertical and horizontal border lines in SfCalendar</td>
+</tr>
+<tr>
+<td>None</td>
+<td>This enum value of CellGridOptions is used to diable the vertical and horizontal border lines in SfCalendar</td>
+</tr>
+
+</table>
+
+{% tabs %}
+
+{% highlight xaml %}
+
+ <syncfusion:SfCalendar  Grid.Row="1" ShowYearView="false" x:Name="calendar"   >
+    <syncfusion:SfCalendar.MonthViewSettings>
+        <syncfusion:MonthViewSettings CellGridOptions="Both" />
+    </syncfusion:SfCalendar.MonthViewSettings>
+</syncfusion:SfCalendar>
+
+{% endhighlight %}
+
+{% endtabs %}
+

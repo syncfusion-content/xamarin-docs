@@ -31,7 +31,8 @@ This section covers the features of SfCalendar specific to Android,iOS and UWP p
 <p>YearView</p><br> 
 </td>
 <td align="center">
-<p>MonthView</p>
+<p>MonthView</p><br>
+<p>YearView</p><br>
 </td>
 <td align="center">
 <p>ViewMode</p>
@@ -44,16 +45,19 @@ This section covers the features of SfCalendar specific to Android,iOS and UWP p
 <p>Single</p><br> 
 <p>Multiple</p><br> 
 <p>Range</p><br> 
+<p>MultiRange</p><br>
+</td>
+<td align="center">
+<p>Single</p><br> 
+<p>Multiple</p><br> 
+<p>Range</p><br>
+<p>MultiRange</p><br> 
 </td>
 <td align="center">
 <p>Single</p><br> 
 <p>Multiple</p><br> 
 <p>Range</p><br> 
-</td>
-<td align="center">
-<p>Single</p><br> 
-<p>Multiple</p><br> 
-<p>Range</p><br> 
+<p>MultiRange</p><br>
 </td>
 <td align="center">
 <p>SelectionMode</p>
@@ -221,7 +225,7 @@ This section covers the features of SfCalendar specific to Android,iOS and UWP p
 </tr>
 
 <tr style="background-color: #ffefd5;color: #000000;">
-<td>Dynamically select the dates</td>
+<td>Dynamically select the dates in MultiSelection</td>
 <td align="center">
 <p>Yes</p>
 </td>
@@ -277,7 +281,7 @@ This section covers the features of SfCalendar specific to Android,iOS and UWP p
 <p>Yes</p>
 </td>
 <td align="center">
-<p>No</p>
+<p>Yes</p>
 </td>
 <td align="center">
 <p>NavigationButtonHeight</p><br> 
@@ -395,8 +399,8 @@ This section covers the features of SfCalendar specific to Android,iOS and UWP p
 <td align="center">
 <p>Yes</p>
 </td>
-<td align="left">
-<p>By default,once we click the next date cell in current month, it automatically move to the particular month</p>
+<td align="center">
+<p>Yes</p>
 </td>
 <td align="center">
 <p>NavigateToMonthOn<p>
@@ -432,8 +436,7 @@ This section covers the features of SfCalendar specific to Android,iOS and UWP p
 <p>Yes</p>
 </td>
 <td align="center">
-<p align="center">No</p>
-<p align="left">With RangeSelection mode , automatically restrict the swiping action</p>
+<p align="center">Yes</p>
 </td>
 <td align="center">
 <p>EnableSwiping</p>
@@ -453,6 +456,131 @@ This section covers the features of SfCalendar specific to Android,iOS and UWP p
 </td>
 <td align="center">
 <p>MaximumEventIndicatorCount</p>
+</td>
+</tr>
+
+<tr style="background-color: #ffefd5;color: #000000;">
+<td><p>Dynamically select the dates in RangeSelection</p>
+<p>By setting the start and end range of date selection, RangeSelection is possible</p>
+
+<td align="center">
+<p>Yes</p>
+</td>
+<td align="center">
+<p>Yes</p>
+</td>
+<td align="center">
+<p>Yes</p>
+</td>
+<td align="center">
+<p>SelectedRange</p>
+</td>
+</tr>
+<tr>
+<td>Customization of Cell Border Lines</td>
+<td align="center">
+<p>Horizontal</p><br> 
+<p>Vertical</p><br> 
+<p>Both</p><br>
+<p>None</p><br> 
+</td>
+<td align="center">
+<p>Horizontal</p><br> 
+<p>Vertical</p><br> 
+<p>Both</p><br>
+<p>None</p><br> 
+</td>
+<td align="center">
+<p>Horizontal</p><br> 
+<p>Vertical</p><br> 
+<p>Both</p><br>
+<p>None</p><br> 
+</td>
+<td align="center">
+<p>CellGridOptions</p>
+</td>
+</tr>
+
+<tr style="background-color: #ffefd5;color: #000000;">
+<td>Scrolling Direction</td>
+<td align="center">
+<p>Horizontal</p><br> 
+<p>Vertical</p><br>
+</td>
+<td align="center">
+<p>Horizontal</p><br> 
+<p>Vertical</p><br>
+</td>
+<td align="center">
+<p>Horizontal</p><br> 
+<p>Vertical</p><br>
+</td>
+<td align="center">
+<p>NavigationDirection</p>
+</td>
+</tr>
+
+<tr>
+<td>Restrict the YearView Option</td>
+<td align="center">
+<p>Yes</p>
+</td>
+<td align="center">
+<p>Yes</p>
+</td>
+<td align="center">
+<p>Yes</p>
+</td>
+<td align="center">
+<p>ShowYearView</p>
+</td>
+</tr>
+
+<tr style="background-color: #ffefd5;color: #000000;">
+<td>Calendar’s Header customization</td>
+<td align="center">
+<p>Yes</p>
+</td>
+<td align="center">
+<p>Yes</p>
+</td>
+<td align="center">
+<p>Yes</p>
+</td>
+<td align="center">
+<p>HeaderView</p>
+</td>
+</tr>
+
+<tr >
+<td>Common DataTemplate</td>
+<td align="center">
+<p>Yes</p>
+</td>
+<td align="center">
+<p>Yes</p>
+</td>
+<td align="center">
+<p>Yes</p>
+</td>
+<td align="center">
+<p>CellTemplate</p>
+</td>
+</tr>
+
+<tr style="background-color: #ffefd5;color: #000000;">
+<td>DataTemplate with Customobject on OnMonthCell</td>
+<td align="center">
+<p>Yes</p>
+</td>
+<td align="center">
+<p>Yes</p>
+</td>
+<td align="center">
+<p>Yes</p>
+</td>
+<td align="center">
+<p>CellTemplate and CellBindingContext in an argument of OnMonthCellLoaded</p>
 </td>
 </tr>
 

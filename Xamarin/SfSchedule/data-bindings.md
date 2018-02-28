@@ -550,45 +550,30 @@ Default appointment UI can be changed using `view` property passed through `A
  
 {% endhighlight %}
 
-## Customize appearance using DataTemplateSelector
-The default appearance of the Appointment can be customized by using the [AppointmentTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~AppointmentTemplate.html) property of the Schedule. We can handle required UI for the specific appointments using `DataTemplateSelector`.
-
-### DayAppointmentTemplate
+## Customize appearance using DataTemplate
+The default appearance of the Appointment can be customized by using the [AppointmentTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~AppointmentTemplate.html) property of the Schedule.  `DataTemplateSelector` can be used to choose a `DataTemplate` at runtime based on the value of a data-bound to Schedule appointment property. it provides multiple DataTemplates to be enabled for ScheduleAppointments, to customize the appearance of particular Appointment.
 
 {% highlight xaml %}
 
-    <Button
-        x:Class="ScheduleUG.DayAppointmentTemplate"
-        BackgroundColor="{Binding Color}"
-        HorizontalOptions="FillAndExpand"
-        VerticalOptions="FillAndExpand"
-        Text="{Binding Subject}"
-        TextColor="White"
-        Image="{Binding Subject}">
-    </Button>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <samplelocal:AppointmentDataTemplateSelector x:Key="appointmentDataTemplateSelector" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <schedule:SfSchedule
+            BindingContext="{Binding}"
+            AppointmentTemplate="{StaticResource appointmentDataTemplateSelector}">
+            <schedule:SfSchedule.BindingContext>
+                <samplelocal:AppointmentDataTemplateSelector />
+            </schedule:SfSchedule.BindingContext>
+        </schedule:SfSchedule>
+    </ContentPage.Content>
 
 {% endhighlight %}
 
-### AllDayAppointmentTemplate
-
-{% highlight xaml %}
-
-    <Label
-        x:Class="ScheduleUG.AllDayAppointmentTemplate"
-        BackgroundColor="{Binding Color}"
-        Text="{Binding Subject}"
-        HorizontalOptions="FillAndExpand"
-        VerticalOptions="CenterAndExpand"
-        TextColor="White" FontSize="15"
-        HorizontalTextAlignment="Center"
-        VerticalTextAlignment="Center">
-    </Label>
-
-{% endhighlight %}
-
->**Note**:  Used button to display day appointment and Label to display all day appointment, also set the image name as appointment subject in the sample.
-
-### DataTemplateSelector
+### Creating a DataTemplateSelector
 
 {% highlight c# %}
 
@@ -614,25 +599,34 @@ The default appearance of the Appointment can be customized by using the [Appoin
 
 {% endhighlight %}
 
-### AppointmentTemplate in Schedule
+Used button to display day appointment and Label to display all day appointment, also set the image name as appointment subject.
 
 {% highlight xaml %}
 
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <samplelocal:AppointmentDataTemplateSelector x:Key="appointmentDataTemplateSelector" />
-        </ResourceDictionary>
-    </ContentPage.Resources>
+    <Button
+        x:Class="ScheduleUG.DayAppointmentTemplate"
+        BackgroundColor="{Binding Color}"
+        HorizontalOptions="FillAndExpand"
+        VerticalOptions="FillAndExpand"
+        Text="{Binding Subject}"
+        TextColor="White"
+        Image="{Binding Subject}">
+    </Button>
 
-    <ContentPage.Content>
-        <schedule:SfSchedule
-            BindingContext="{Binding}"
-            AppointmentTemplate="{StaticResource appointmentDataTemplateSelector}">
-        <schedule:SfSchedule.BindingContext>
-            <samplelocal:AppointmentDataTemplateSelector />
-        </schedule:SfSchedule.BindingContext>
-        </schedule:SfSchedule>
-    </ContentPage.Content>
+{% endhighlight %}
+
+{% highlight xaml %}
+
+    <Label
+        x:Class="ScheduleUG.AllDayAppointmentTesmplate"
+        BackgroundColor="{Binding Color}"
+        Text="{Binding Subject}"
+        HorizontalOptions="FillAndExpand"
+        VerticalOptions="CenterAndExpand"
+        TextColor="White" FontSize="15"
+        HorizontalTextAlignment="Center"
+        VerticalTextAlignment="Center">
+    </Label>
 
 {% endhighlight %}
 

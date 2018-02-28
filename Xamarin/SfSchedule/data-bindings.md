@@ -551,7 +551,7 @@ Default appointment UI can be changed using `view` property passed through `A
 {% endhighlight %}
 
 ## Customize appearance using DataTemplate
-The default appearance of the Appointment can be customized by using the [AppointmentTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~AppointmentTemplate.html) property of the Schedule.  `DataTemplateSelector` can be used to choose a `DataTemplate` at runtime based on the value of a data-bound to Schedule appointment property. it provides multiple DataTemplates to be enabled for ScheduleAppointments, to customize the appearance of particular Appointment.
+The default appearance of the Appointment can be customized by using the [AppointmentTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~AppointmentTemplate.html) property of the Schedule. `DataTemplateSelector` can be used to choose a `DataTemplate` at runtime based on the value of a data-bound to Schedule appointment property. It provides multiple DataTemplates to be enabled for Schedule appointments, to customize the appearance of particular Appointment.
 
 {% highlight xaml %}
 
@@ -618,7 +618,7 @@ Used button to display day appointment and Label to display all day appointment,
 {% highlight xaml %}
 
     <Label
-        x:Class="ScheduleUG.AllDayAppointmentTesmplate"
+        x:Class="ScheduleUG.AllDayAppointmentTemplate"
         BackgroundColor="{Binding Color}"
         Text="{Binding Subject}"
         HorizontalOptions="FillAndExpand"

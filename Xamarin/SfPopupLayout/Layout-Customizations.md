@@ -199,7 +199,7 @@ namespace GettingStarted
 {% endhighlight %}
 
 This is how the final output will look like on iOS device.
-![](PopupLayout_images/ContentView.png)
+![](PopupLayout_images/HeaderTemplate.png)
 
 
 ### Footer customization
@@ -266,7 +266,7 @@ namespace GettingStarted
 {% endhighlight %}
 
 This is how the final output will look like on iOS device.
-![](PopupLayout_images/ContentView.png)
+![](PopupLayout_images/FooterTemplate.png)
 
 ### How to hide Header in SfPopupLayout ?
 
@@ -287,7 +287,7 @@ public MainPage()
 {% endhighlight %}
 
 This is how the final output will look like on iOS device.
-![](PopupLayout_images/ContentView.png)
+![](PopupLayout_images/ShowHeader_False.png)
 
 ### How to hide Footer in SfPopupLayout ?
 
@@ -308,7 +308,7 @@ public MainPage()
 {% endhighlight %}
 
 This is how the final output will look like on iOS device.
-![](PopupLayout_images/ContentView.png)
+![](PopupLayout_images/ShowFooter_False.png)
 
 ### How to hide the close button in SfPopupLayout ?
 
@@ -329,7 +329,7 @@ public MainPage()
 {% endhighlight %}
 
 This is how the final output will look like on iOS device.
-![](PopupLayout_images/ContentView.png)
+![](PopupLayout_images/ShowClosebutton_False.png)
 
 # Styles
 
@@ -391,7 +391,7 @@ public MainPage()
 {% endhighlight %}
 
 This is how the final output will look like on iOS device.
-![](PopupLayout_images/ContentView.png)
+![](PopupLayout_images/HeaderCustomization.png)
 
 ## Customizing Footer elements
 
@@ -449,7 +449,7 @@ public MainPage()
 {% endhighlight %}
 
 This is how the final output will look like on iOS device.
-![](PopupLayout_images/ContentView.png)
+![](PopupLayout_images/FooterCustomization.png)
 
 ## Border Customization
 
@@ -474,7 +474,7 @@ SfPopupLayout allows you to customize border appearance. Refer the below table f
 </tr>
 </table>
 
-Refer the below code example for customizing the header elements.
+Refer the below code example for customizing the border elements.
 
 {% highlight c# %}
 //MainPage.cs
@@ -491,6 +491,3 @@ public MainPage()
 }
 
 {% endhighlight %}
-
-This is how the final output will look like on iOS device.
-![](PopupLayout_images/ContentView.png)

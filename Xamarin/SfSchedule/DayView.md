@@ -75,6 +75,67 @@ You can customize the height of the ViewHeader in `DayView` by setting [ViewHead
 {% endtabs %}
 ![](daymodule_images/viewheaderheight_day.png)
 
+### ViewHeader Date Format
+We can customize the date and day format of `SfSchedule` ViewHeader by using [DateFormat](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DayLabelSettings~DateFormat.html) and [DayFormat](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DayLabelSettings~DayFormat.html) properties of `DayLabelSettings`.
+
+{% tabs %}
+{% highlight xaml %}
+<schedule:SfSchedule>
+    <schedule:SfSchedule.DayViewSettings>
+        <schedule:DayViewSettings>
+            <schedule:DayViewSettings.DayLabelSettings>
+                <schedule:DayLabelSettings DateFormat=“dd”>
+                    <schedule:DayLabelSettings.DayFormat>
+                        <OnPlatform x:TypeArguments="x:String" iOS="EEE d MMMM YY" Android="EEEE" WinPhone="dddd" />
+                        </schedule:DayLabelSettings.DayFormat>
+                </schedule:DayLabelSettings>
+            </schedule:DayViewSettings.DayLabelSettings>
+        </schedule:DayViewSettings>
+    </schedule:SfSchedule.DayViewSettings>
+</schedule:SfSchedule>
+{% endhighlight %}
+{% highlight c# %}
+schedule.ScheduleView = ScheduleView.DayView;
+//Creating new instance of DayViewSettings
+DayViewSettings dayViewSettings = new DayViewSettings();
+//Creating new instance of DayLabelSettings
+DayLabelSettings dayLabelSettings = new DayLabelSettings();
+//Customizing date format
+dayLabelSettings.DateFormat = "dd";
+dayLabelSettings.DayFormat = Device.OnPlatform("EEE d MMMM YY", "EEEE", "dddd");
+dayViewSettings.DayLabelSettings = dayLabelSettings;
+schedule.DayViewSettings = dayViewSettings;
+{% endhighlight %}
+{% endtabs %}
+
+![](daymodule_images/DateFormat_Day.png)
+
+### ViewHeader Tapped Event
+We can handle single tapped action for `ViewHeader` by using [ViewHeaderTapped](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ViewHeaderTapped_EV.html) event of `SfSchedule`. This event will be triggered when ViewHeader is Tapped. This event contains [ViewHeaderTappedEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderTappedEventArgs.html) argument which holds [DateTime](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.CellTappedEventArgs~Datetime.html) details in it.
+
+[DateTime](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.CellTappedEventArgs~Datetime.html) contains date time value of visible date.
+
+{% tabs %}
+{% highlight xaml %}
+<schedule:SfSchedule x:Name="schedule"
+                                     ScheduleView="DayView"
+                                     ViewHeaderTapped="Handle_ViewHeaderTapped" >
+</schedule:SfSchedule>
+{% endhighlight %}
+{% highlight c# %}
+//Creating  new instance of Schedule
+SfSchedule schedule = new SfSchedule();
+schedule.ScheduleView = ScheduleView.DayView;
+schedule.ViewHeaderTapped += Handle_ViewHeaderTapped;
+{% endhighlight %}
+{% endtabs %}
+
+{% highlight c# %}
+void Handle_ViewHeaderTapped(object sender, ViewHeaderTappedEventArgs e)
+{
+}
+{% endhighlight %}
+
 ## Change Time Interval
 You can customize the interval of timeslots in `DayView` by setting [TimeInterval](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~TimeInterval.html)  property of `SfSchedule`.
 

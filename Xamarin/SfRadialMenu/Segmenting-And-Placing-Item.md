@@ -7,9 +7,9 @@ control: SfRadialMenu
 documentation: ug
 ---
 
-# Layout Types
+# Layout types
 
-There are two different layout types available for SfRadialMenu.
+There are two different layout types available for radial menu:
 
 * Default
 * Custom
@@ -18,19 +18,19 @@ Both the layout types divide the available space equally among all the children 
 
 ## Default
 
-Number of segments in the panel is determined by children count in the level. Hence segment count in each hierarchical level differs. RadialMenuItem is arranged in the sequential order as added in the RadialMenu.
+Number of segments in the panel is determined by children count in the level. Hence, segment count in each hierarchical level differs, radial menu items are arranged in the sequential order as added in the radial menu.
 
 ## Custom
 
-Number of segments in the panel is determined by `VisibleSegmentsCount` property. Hence segment count in all the hierarchical levels are same. RadialMenuItem is arranged in any order based on the `SegmentIndex` property.
+Number of segments in the panel is determined by `VisibleSegmentsCount` property. Hence, segment count in all the hierarchical levels are same, radial menu items are arranged in any order based on the `SegmentIndex` property.
 
 ### VisibleSegmentsCount
 
-`VisibleSegmentsCount` property is used to specify the number of segments available in circular panel. When children count is greater than the value given in VisibleSegmentsCount property then overflowing children are not arranged in the panel. When children count is lesser than VisibleSegmentsCount property then remaining segments are left free.
+`VisibleSegmentsCount` property is used to specify the number of segments available in circular panel. When children count is greater than the value given in the VisibleSegmentsCount property, overflowing children are not arranged in the panel. When children count is lesser than the VisibleSegmentsCount property, then remaining segments are left free.
 
 ![](images/beforeVisbleSegment.png)
 
-If Number of item count is higher than VisibleItemCount means excessive items will not be shown.
+If number of item count is higher than VisibleItemCount, excessive items will not be shown.
 
 {% tabs %}
 {% highlight xaml %}
@@ -119,7 +119,7 @@ Public class RadialMenuPage : ContentPage
 
 ### SegmentIndex
 
-`SegmentIndex` property is used to specify the index of the SfRadialMenuItem in circular panel. Based on the index, the RadialMenuItems are inserted in the segment. When SegmentIndex is not specified for a RadialMenuItem then the menu item is arranged in the next available free segment.
+`SegmentIndex` property is used to specify the index of the radial menu item in circular panel. Based on the index, the radial menu items are inserted in the segment. When the SegmentIndex is not specified for a RadialMenuItem the menu item is arranged in the next available free segment.
 
 {% tabs %}
 {% highlight xaml %}

@@ -8,7 +8,7 @@ Refer to this article to know how to obtain and reference Essential Studio com
 
 I>After adding the reference, an additional step is required for iOS and UWP projects. You should create an instance of the progress bar renderer in iOS and UWP projects as shown in this [KB article.]()
 
-I>For UWP alone, one more additional step is required if the project is built-in release mode with .NET Native tool chain enabled. You can refer to the [KB article]() for more details.
+I>For UWP alone, one more additional step is required if the project is built-in release mode with .NET Native tool chain enabled. You can refer to the [KB article](https://www.syncfusion.com/kb/8508/how-to-make-syncfusion-xamarin-forms-progress-bar-to-work-in-uwp-in-release-mode-when-net-native-tool) for more details.
 
 ## Initialize the progress bar
 
@@ -57,7 +57,7 @@ SfCircularProgressBar circularProgressBar = new SfCircularProgressBar { Progress
 
 Run the project, and check if you get following output to make sure that you have configured your project properly to add the progress bar.
 
-![](overview_images/overview_img1.jpeg)
+![](overview_images/progressbar.png)
 
 
 ## Enable indeterminate state
@@ -111,7 +111,7 @@ SfCircularProgressBar circularProgressBar = new SfCircularProgressBar { Progress
 {% endhighlight %}
 
 {% endtabs %} 
-![](overview_images/overview_img2.jpeg)
+![](overview_images/indeterminate.png)
 
 
 ## Apply colors
@@ -143,6 +143,6 @@ SfCircularProgressBar sfCircularProgressBar = new SfCircularProgressBar{Progress
 {% endhighlight %}
 
 {% endtabs %} 
-![](overview_images/overview_img3.jpeg)
+![](overview_images/style.png)
 
 

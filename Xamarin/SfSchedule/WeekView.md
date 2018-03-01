@@ -75,8 +75,6 @@ You can customize the height of the ViewHeader in `WeekView` by setting [ViewHea
 {% endtabs %}
 ![](daymodule_images/viewheaderheight_week.png)
 
-![](daymodule_images/DateFormat_Day.png)
-
 ### ViewHeader Date Format
 We can customize the date and day format of `SfSchedule` ViewHeader by using [DateFormat](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DayLabelSettings~DateFormat.html) and [DayFormat](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DayLabelSettings~DayFormat.html) properties of `WeekLabelSettings`
 

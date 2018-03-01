@@ -201,7 +201,6 @@ namespace GettingStarted
 This is how the final output will look like on iOS device.
 ![](PopupLayout_images/HeaderTemplate.png)
 
-
 ### Footer customization
 
 Any view can be added as the header content using the [SfPopupLayout.PopupView.FooterTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~ContentTemplate.html) property to refresh it. Refer to the following code example in which a Label is added as a header content:

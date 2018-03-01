@@ -6,7 +6,7 @@ This section explains the steps required to work with progress bar in Xamarin.Fo
 
 Refer to this article to know how to obtain and reference Essential Studio components in your solution; then refer to this link to know about the assemblies required for adding progress bar to your project.
 
-I>After adding the reference, an additional step is required for iOS and UWP projects. You should create an instance of the progress bar renderer in iOS and UWP projects as shown in this [KB article.]()
+I>After adding the reference, an additional step is required for iOS and UWP projects. You should create an instance of the progress bar renderer in iOS and UWP projects as shown in this [KB article](https://www.syncfusion.com/kb/8560/how-to-resolve-progress-bar-not-rendering-issue-in-ios-and-uwp).
 
 I>For UWP alone, one more additional step is required if the project is built-in release mode with .NET Native tool chain enabled. You can refer to the [KB article](https://www.syncfusion.com/kb/8508/how-to-make-syncfusion-xamarin-forms-progress-bar-to-work-in-uwp-in-release-mode-when-net-native-tool) for more details.
 
@@ -123,26 +123,27 @@ You can customize the color of the progress indicator and track by defining the 
 {% highlight xaml %} 
 
 <!--Using linear progress bar-->
-<progressBar:SfLinearProgressBar Progress="75" TrackColor="Gray" ProgressColor="#00bdaf"/>
-<progressBar:SfLinearProgressBar Progress="75" ProgressColor="#e9648e"/>
+<progressBar:SfLinearProgressBar Progress="75" TrackColor="#33ffbe06" ProgressColor="#FFffbe06"/>
+<progressBar:SfLinearProgressBar Progress="75"  TrackColor="#3351483a" ProgressColor="#FF51483a"/>
 
 <!--Using circular progress bar-->
-<progressBar:SfCircularProgressBar Progress="75" TrackColor="Gray" ProgressColor="#00bdaf"/>
-<progressBar:SfCircularProgressBar Progress="75" ProgressColor="#e9648e"/>
+ <progressBar:SfCircularProgressBar Progress="75" TrackColor="#33c15244" ProgressColor="#FFc15244"/>
+<progressBar:SfCircularProgressBar Progress="75" TrackColor="#3390a84e" ProgressColor="#FF90a84e"/>
 {% endhighlight %}
 
 {% highlight C# %} 
 
 //// Using linear progress bar.
-SfLinearProgressBar linearProgressBar = new SfLinearProgressBar{Progress = 75,TrackColor = Color.Gray,ProgressColor = Color.FromHex("#00bdaf")};
-SfLinearProgressBar sfLinearProgressBar = new SfLinearProgressBar{Progress = 75,ProgressColor = Color.FromHex("#e9648e")};
+SfLinearProgressBar linearProgressBar = new SfLinearProgressBar{Progress = 75,TrackColor = Color.FromHex("#33ffbe06"),ProgressColor = Color.FromHex("#FFffbe06")};
+SfLinearProgressBar sfLinearProgressBar = new SfLinearProgressBar{Progress = 75,TrackColor = Color.FromHex("#3351483a"),ProgressColor = Color.FromHex("#FF51483a")};
 
 //// Using circular progress bar.
-SfCircularProgressBar circularProgressBar = new SfCircularProgressBar{Progress = 75,TrackColor = Color.Gray,ProgressColor = Color.FromHex("#00bdaf")};
-SfCircularProgressBar sfCircularProgressBar = new SfCircularProgressBar{Progress = 75,ProgressColor = Color.FromHex("#e9648e")};
+SfCircularProgressBar circularProgressBar = new SfCircularProgressBar{Progress = 75,TrackColor = Color.FromHex("#33c15244"),ProgressColor = Color.FromHex("#FFc15244")};
+SfCircularProgressBar sfCircularProgressBar = new SfCircularProgressBar{Progress = 75,TrackColor = Color.FromHex("#3390a84e"),ProgressColor = Color.FromHex("#FF90a84e")};
 {% endhighlight %}
 
 {% endtabs %} 
 ![](overview_images/style.png)
 
 
+You can find the complete Getting Started sample from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ProgressBar-929614915.zip).

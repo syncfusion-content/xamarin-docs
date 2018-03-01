@@ -43,9 +43,9 @@ documentation : ug
 
 {% endtabs %}
 
- you can save stream into .txt format file.if you saved as .txt format file then set as Embedded  resource in project.
+ you can save stream into .txt format file.if you saved as .txt format file to deserialize the shapes then set as Embedded resource in project.
   
-  Sample Text file like this
+   Sample text format file like this
   
   [Chart.txt](http://www.syncfusion.com/downloads/support/directtrac/general/txt/Chart677841499.txt)
        
@@ -76,7 +76,7 @@ documentation : ug
         {
             var assembly = typeof(App).GetTypeInfo().Assembly;
             Stream stream = new MemoryStream();
-            var fileName = "namespacename.Chart.txt";
+            var fileName = "namespace_name.Chart.txt";
             stream = assembly.GetManifestResourceStream(fileName);
             if (stream != null)
                 editor.LoadEdits(stream);

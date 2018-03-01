@@ -9,11 +9,11 @@ documentation: ug
 
 # Dealing with CenterButton
 
-CenterButton/BackButton in RadialMenu is nothing but the view in center of the RadialMenu. It performs the operations like Opening and Closing the rim and Navigation to next level items. SfRadialMenu allows us to customize the CenterButton/BackButton with `FontIcon`, `Custom View` and `Caption`.
+CenterButton/BackButton in radial menu is a view in center of the radial menu. It performs the operations such as opening and closing the rim, and Navigating to next level items. Radial Menu allows you to customize the CenterButton/BackButton with `FontIcon`, `Custom View`, and `Caption`.
 
-## Add Icon through Icon Font
+## Add icon through Icon-Font
 
-We can able to set IconFonts to CenterButton using the `CenterButtonText` property available in SfRadialMenu.And we have to set respective FontFamily for the text in `CenterButtonFontFamily`.
+You can set IconFonts to CenterButton using the `CenterButtonText` property in radial menu, and respective FontFamily for the text in `CenterButtonFontFamily`.
 
 
 {% tabs %}
@@ -68,9 +68,9 @@ Public class RadialMenuPage : ContentPage
 
 ![](images/centerButtonIconFont.png)
 
-## Add Caption
+## Add caption
 
-SfRadialMenu allows us to enter direct caption for its CenterButton. And it can be achieved by using the property `CenterButtonText`.
+Radial Menu allows you to enter direct caption for its CenterButton. It can be achieved by using the property `CenterButtonText`.
 
 {% tabs %}
 
@@ -124,9 +124,9 @@ Public class RadialMenuPage : ContentPage
 
 ![](images/centerButtonCaption.png)
 
-## Add any View
+## Add any view
 
-SfRadialMenu allows us to give customized view to its CenterButton. And we can accomplish this by using the property `CenterButtonView`.
+Radial Menu allows you to give customized view to its CenterButton. You can accomplish this by using the property `CenterButtonView`.
 
 
 {% tabs %}
@@ -216,12 +216,12 @@ Public class RadialMenuPage : ContentPage
 
 ## Change for next level
 
-SfRadialMenu allows us to add items hierarchically.We can navigate to first level to next level by tapping the respective item and can go back to first by tapping the BackButton.The BackButton helps us to know we were navigated to next level of submenu items from first level. We can able customize the RadialMenu's BackButton with FontIcons,CustomView and Caption like CenterButton.     
+Radial Menu allows you to add items hierarchically. You can navigate first level to next level by tapping the respective item, and go back to first by tapping the BackButton. The BackButton helps you to navigate to next level of submenu items from first level. You can customize the RadialMenu's BackButton with FontIcons,CustomView and caption like CenterButton.     
 
 
 ### BackButton with IconFonts
 
-We can able to set IconFonts to BackButton using the `CenterButtonBackText` property available in SfRadialMenu.And we have to set respective FontFamily for the text in `CenterButtonBackFontFamily`.
+You can set IconFonts to BackButton by using the `CenterButtonBackText` property available in the radial menu, and set respective FontFamily for the text in `CenterButtonBackFontFamily`.
 
 
 {% tabs %}
@@ -333,7 +333,7 @@ Public class RadialMenuPage : ContentPage
 
 ### BackButton with CustomView 
 
-SfRadialMenu allows us to give customized view to its BackButton. And we can accomplish this by using the property `CenterButtonBackView`.
+Radial Menu allows you to give customized view to its BackButton. You accomplish this by using the `CenterButtonBackView`  property.
 
 {% tabs %}
 
@@ -504,7 +504,7 @@ Public class RadialMenuPage : ContentPage
 
 ## Performing an action while navigating to next level
 
-In SfRadialMenu we can perform an action while navigating from one level to another level. `Navigating`  event will be fired when navigating from one level to another level and there is a another event called `Navigated` which will be triggered once the navigation is done.
+In radial menu, you can perform an action while navigating from one level to another level. `Navigating` event will be fired when navigating from one level to another level. There is an another event, which is called as `Navigated`; it will be triggered after the navigation has been done.
 
 {% tabs %}
 
@@ -627,4 +627,4 @@ void Handle_Navigating(object sender, Syncfusion.SfRadialMenu.XForms.NavigatingE
 	}
 {% endhighlight %}
 
-N> There is a option to cancel the navigation by using the event argument `Cancel`.
+N> There is an option to cancel the navigation by using the event argument `Cancel`.

@@ -551,7 +551,48 @@ Default appointment UI can be changed using `view` property passed through `A
 {% endhighlight %}
 
 ## Customize appearance using DataTemplate
-The default appearance of the Appointment can be customized by using the [AppointmentTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~AppointmentTemplate.html) property of the Schedule. `DataTemplateSelector` can be used to choose a `DataTemplate` at runtime based on the value of a data-bound to Schedule appointment property. It provides multiple DataTemplates to be enabled for Schedule appointments, to customize the appearance of particular Appointment.
+The default appearance of the Appointment can be customized by using the [AppointmentTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~AppointmentTemplate.html) property of the Schedule.
+
+{% highlight xaml %}
+
+    <schedule:SfSchedule
+        x:Name="schedule"
+        AppointmentTemplate="{Binding AppointmentTemplate}">
+        <schedule:SfSchedule.BindingContext>
+        <samplelocal:DayAppointmentDataTemplate />
+            </schedule:SfSchedule.BindingContext>
+    </schedule:SfSchedule>
+
+{% endhighlight %}
+
+### Creating a DataTemplate
+
+{% highlight c# %}
+
+    public class DayAppointmentDataTemplate : DataTemplate
+    {
+        public DataTemplate AppointmentTemplate { get; set; }
+
+        public DayAppointmentDataTemplate()
+        {
+            AppointmentTemplate = new DataTemplate(() =>
+            {
+                return new Button
+                {
+                    Text = "Template",
+                    TextColor = Color.White,
+                    BackgroundColor = Color.Blue
+                };
+            });
+        }
+    }
+
+{% endhighlight %}
+
+![](PopulatingAppointments_images/dayappointmenttemplate.png)
+
+## Customize appearance using DataTemplateSelector
+`DataTemplateSelector` can be used to choose a `DataTemplate` at runtime based on the value of a data-bound to Schedule appointment property through `AppointmentTemplate`. It provides multiple DataTemplates to be enabled for Schedule appointments, to customize the appearance of particular Appointment.
 
 {% highlight xaml %}
 
@@ -563,7 +604,6 @@ The default appearance of the Appointment can be customized by using the [Appoin
 
     <ContentPage.Content>
         <schedule:SfSchedule
-            BindingContext="{Binding}"
             AppointmentTemplate="{StaticResource appointmentDataTemplateSelector}">
             <schedule:SfSchedule.BindingContext>
                 <samplelocal:AppointmentDataTemplateSelector />

@@ -554,39 +554,35 @@ Default appointment UI can be changed using `view` property passed through `A
 The default appearance of the Appointment can be customized by using the [AppointmentTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~AppointmentTemplate.html) property of the Schedule.
 
 {% highlight xaml %}
-
-    <schedule:SfSchedule
+<schedule:SfSchedule
         x:Name="schedule"
         AppointmentTemplate="{Binding AppointmentTemplate}">
         <schedule:SfSchedule.BindingContext>
-        <samplelocal:DayAppointmentDataTemplate />
-            </schedule:SfSchedule.BindingContext>
-    </schedule:SfSchedule>
-
+            <samplelocal:DayAppointmentDataTemplate />
+        </schedule:SfSchedule.BindingContext>
+</schedule:SfSchedule>
 {% endhighlight %}
 
 ### Creating a DataTemplate
 
 {% highlight c# %}
+public class DayAppointmentDataTemplate : DataTemplate
+{
+    public DataTemplate AppointmentTemplate { get; set; }
 
-    public class DayAppointmentDataTemplate : DataTemplate
+    public DayAppointmentDataTemplate()
     {
-        public DataTemplate AppointmentTemplate { get; set; }
-
-        public DayAppointmentDataTemplate()
+        AppointmentTemplate = new DataTemplate(() =>
         {
-            AppointmentTemplate = new DataTemplate(() =>
+            return new Button
             {
-                return new Button
-                {
-                    Text = "Template",
-                    TextColor = Color.White,
-                    BackgroundColor = Color.Blue
-                };
-            });
-        }
+                Text = "Template",
+                TextColor = Color.White,
+                BackgroundColor = Color.Blue
+            };
+        });
     }
-
+}
 {% endhighlight %}
 
 ![](PopulatingAppointments_images/dayappointmenttemplate.png)
@@ -595,21 +591,20 @@ The default appearance of the Appointment can be customized by using the [Appoin
 `DataTemplateSelector` can be used to choose a `DataTemplate` at runtime based on the value of a data-bound to Schedule appointment property through `AppointmentTemplate`. It provides multiple DataTemplates to be enabled for Schedule appointments, to customize the appearance of particular Appointment.
 
 {% highlight xaml %}
+<ContentPage.Resources>
+    <ResourceDictionary>
+        <samplelocal:AppointmentDataTemplateSelector x:Key="appointmentDataTemplateSelector" />
+    </ResourceDictionary>
+</ContentPage.Resources>
 
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <samplelocal:AppointmentDataTemplateSelector x:Key="appointmentDataTemplateSelector" />
-        </ResourceDictionary>
-    </ContentPage.Resources>
-
-    <ContentPage.Content>
-        <schedule:SfSchedule
+<ContentPage.Content>
+    <schedule:SfSchedule
             AppointmentTemplate="{StaticResource appointmentDataTemplateSelector}">
             <schedule:SfSchedule.BindingContext>
                 <samplelocal:AppointmentDataTemplateSelector />
             </schedule:SfSchedule.BindingContext>
-        </schedule:SfSchedule>
-    </ContentPage.Content>
+    </schedule:SfSchedule>
+</ContentPage.Content>
 
 {% endhighlight %}
 
@@ -617,25 +612,25 @@ The default appearance of the Appointment can be customized by using the [Appoin
 
 {% highlight c# %}
 
-    public class AppointmentDataTemplateSelector : DataTemplateSelector
+public class AppointmentDataTemplateSelector : DataTemplateSelector
+{
+    public DataTemplate DayAppointmentTemplate { get; set; }
+    public DataTemplate AllDayAppointmentTemplate { get; set; }
+
+    public AppointmentDataTemplateSelector()
     {
-        public DataTemplate DayAppointmentTemplate { get; set; }
-        public DataTemplate AllDayAppointmentTemplate { get; set; }
-
-        public AppointmentDataTemplateSelector()
-        {
-            DayAppointmentTemplate = new DataTemplate(typeof(DayAppointmentTemplate));
-            AllDayAppointmentTemplate = new DataTemplate(typeof(AllDayAppointmentTemplate));
-        }
-
-        protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
-        {
-            if ((item as ScheduleAppointment).IsAllDay)
-                return AllDayAppointmentTemplate;
-            else
-                return DayAppointmentTemplate;
-        }
+        DayAppointmentTemplate = new DataTemplate(typeof(DayAppointmentTemplate));
+        AllDayAppointmentTemplate = new DataTemplate(typeof(AllDayAppointmentTemplate));
     }
+
+    protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
+    {
+        if ((item as ScheduleAppointment).IsAllDay)
+            return AllDayAppointmentTemplate;
+        else
+            return DayAppointmentTemplate;
+    }
+}
 
 {% endhighlight %}
 
@@ -643,9 +638,9 @@ Used button to display day appointment and Label to display all day appointment.
 
 {% highlight xaml %}
 
-    <?xml version="1.0" encoding="UTF-8"?>
-    <!--<Button as Template for day Appointment>-->
-    <Button xmlns="http://xamarin.com/schemas/2014/forms"
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<Button as Template for day Appointment>-->
+<Button xmlns="http://xamarin.com/schemas/2014/forms"
         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
         x:Class="ScheduleUG.DayAppointmentTemplate"
         BackgroundColor="{Binding Color}"
@@ -654,13 +649,13 @@ Used button to display day appointment and Label to display all day appointment.
         Text="{Binding Subject}"
         TextColor="White"
         Image="{Binding Subject}">
-    </Button>
+</Button>
 
     .......
 
-    <?xml version="1.0" encoding="UTF-8"?>
-    <!--<Label as Template for all day Appointment>-->
-    <Label xmlns="http://xamarin.com/schemas/2014/forms"
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<Label as Template for all day Appointment>-->
+<Label xmlns="http://xamarin.com/schemas/2014/forms"
         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
         x:Class="ScheduleUG.AllDayAppointmentTemplate"
         BackgroundColor="{Binding Color}"
@@ -670,7 +665,7 @@ Used button to display day appointment and Label to display all day appointment.
         TextColor="White" FontSize="15"
         HorizontalTextAlignment="Center"
         VerticalTextAlignment="Center">
-    </Label>
+</Label>
 
 {% endhighlight %}
 

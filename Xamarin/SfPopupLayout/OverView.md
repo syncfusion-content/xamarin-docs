@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-Pop-up layout provides a layout that allows users to display an alert message with customizable buttons or load any desired view inside a pop-up. It provides options to fully customize the pop-up with custom header, body, and footer capabilities, allowing you to display important information to use precisely how you want to.
+Pop-up layout provides a layout that allows users to display an alert message with customizable buttons or load any desired view inside a pop-up. It provides options to fully customize the pop-up with custom header, body, and footer capabilities, allowing you to display important information to use precisely how user want to.
 
 ## Key features
 

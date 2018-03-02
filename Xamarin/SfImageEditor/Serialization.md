@@ -11,7 +11,7 @@ documentation : ug
  ImageEditor provides support to serialize and deserialize the shapes(Circle, Arrow, Rectangle), free hand drawing, Text and Toolbar settings. Save the current state of the Image Editor and Load it back when its needed.
 
 ## Serialization
-  To serialize the shapes  by calling SaveEdits() method. Serialized object will be return in the form of JSON stream.
+ SaveEdits() method used to serialize the current edits of shapes. Serialized object will be return in the form of JSON stream.
 
 {% tabs %}
 
@@ -45,12 +45,12 @@ documentation : ug
 
  you can save stream into .txt format file.if you saved as .txt format file to deserialize the shapes then set as Embedded resource in project.
   
-   Sample text format file like this
+  Please find sample text file shown below
   
   [Chart.txt](http://www.syncfusion.com/downloads/support/directtrac/general/txt/Chart677841499.txt)
        
 ## Deserialization
-   To deserialize serialized objects by calling LoadEdits(stream) method. 
+   LoadEdits() method used to deserialize the shapes.
 
 {% tabs %}
 

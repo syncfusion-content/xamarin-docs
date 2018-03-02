@@ -6,7 +6,7 @@ platform: xamarin
 control: SfAutoComplete
 documentation: ug
 ---
-# Multi Selection
+# Multiple Selection
 
 Select multiple items from a suggestion list. There are two ways to perform multi selection in autocomplete.
 
@@ -46,9 +46,62 @@ autoComplete.DataSource = countryNames;
 
 {% endtabs %}
 
+### Wrap Mode of Token
+
+The selected item can be displayed as token inside SfAutoComplete in two ways. They are
+
+* `Wrap` - When `TokensWrapMode` is set to `Wrap` the selected items will be wrap to the next line of the SfAutoComplete.
+
+* `None` - When `TokensWrapMode` is set to `None` the selected item will be wrap in horizontal orientation.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" MultiSelectMode="Token" TokensWrapMode="Wrap"/>                    
+</StackLayout> 
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+List<String> countryNames = new List<String>();
+countryNames.Add("Uganda");
+countryNames.Add("Ukraine");
+countryNames.Add("United Arab Emirates");
+countryNames.Add("United Kingdom");
+countryNames.Add("United States");
+autoComplete.MaximumSuggestion=3;
+autoComplete.MultiSelectMode=MultiSelectMode.Token;
+autoComplete.TokensWrapMode=TokensWrapMode.Wrap;
+autoComplete.DataSource = countryNames;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+ 
 ### Token Customization
 
-Customization can be done for Token. Following code illustrate the how to customize the token.
+Customization can be done for Token. There are various ways to customize the tokens. They are as follows.
+
+* `TextColor` - sets the color of the text inside the token.
+
+* `FontSize` - sets the size of the Font inside the token.
+
+* `FontFamily` - sets the Font family for the text inside the token.
+
+* `BackgroundColor` - sets the background color of the token.
+
+* `SelectedBackgroundColor` - sets the background color of the token when it is selected.
+
+* `IsCloseButtonVisible` - Enables and disables the close button inside SfAutoComplete.
+
+* `DeleteButtonColor` - sets the color of the close button inside SfAutoComplete.
+
+* `CornerRadius` - sets the corner radius for the token.
+
 
 
 {% tabs %}
@@ -79,6 +132,7 @@ public partial class autocompletePage : ContentPage
         token.TextColor = Color.Red;
         token.SelectedBackgroundColor = Color.FromHex("#ffffe0");
         token.DeleteButtonColor = Color.Brown;
+         token.FontFamily= "Times New Roman";
         token.IsCloseButtonVisible = true;
         token.CornerRadius = 3;
         autoComplete.TokenSettings = token;
@@ -135,10 +189,9 @@ public class EmployeeViewModel
 
 ## Delimiter
 
-Selected items can be divided with a desired character given for a delimiter.
+When selecting the multiple items, the selected items can be divided with a desired character given for a delimiter. We can set delmiter character with the `Delimiter` property.
 
 {% tabs %}
-
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
@@ -150,11 +203,14 @@ Selected items can be divided with a desired character given for a delimiter.
 {% highlight c# %}
 
 List<String> countryNames = new List<String>();
-countryNames.Add("Uganda");
-countryNames.Add("Ukraine");
-countryNames.Add("United Arab Emirates");
-countryNames.Add("United Kingdom");
-countryNames.Add("United States");
+countryNames.Add("Akrotiri");
+countryNames.Add("Algeria");
+countryNames.Add("Andorra");
+countryNames.Add("Angola");
+countryNames.Add("Antartica");
+countryNames.Add("Argentina");
+countryNames.Add("Armenia");
+countryNames.Add("Aruba");
 autoComplete.MaximumSuggestion=3;
 autoComplete.MultiSelectMode=MultiSelectMode.Delimiter;
 autoComplete.Delimiter="*";

@@ -253,7 +253,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 If you want to remove or add data fields item at runtime, you can use the [RefreshLayout](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~RefreshLayout.html) method which auto-generates the DataFormItem where you can skip certain item from display. By default, it will generate the canceled items initially. If you want to regenerate all the items, you should pass argument as `true`.
 
-In the following code snippet, items are auto gener ated based on `refreshLayout` flag where you can change flag at runtime and call `RefreshLayout` method to add or remove items being displayed in the data form at runtime.
+In the following code snippet, items are auto generated based on `refreshLayout` flag where you can change flag at runtime and call `RefreshLayout` method to add or remove items being displayed in the data form at runtime.
 
 {% tabs %}
 {% highlight xaml %}

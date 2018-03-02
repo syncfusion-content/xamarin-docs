@@ -345,7 +345,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ![](SfDataForm_images/Editors_DropDownItems.png)
 
-N> `DropDownEditor` not supported in `Xamarin.FormsiOS` platform.
+N> `DropDownEditor` not supported in `Xamarin.Forms.iOS`.
 
 ## Picker editor
 
@@ -451,7 +451,7 @@ private void Button_Click(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-N> `PickerEditor` not supported in `Xamarin.FormsUWP`.
+N> `PickerEditor` not supported in `Xamarin.Forms.UWP`.
 
 ## NumericUpDown editor
 

@@ -385,6 +385,107 @@ series.EnableTooltip = true;
 
 Refer this [link](https://help.syncfusion.com/xamarin/sfchart/tooltip) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html) to customize tooltip.
 
+The following code example gives you the complete code of above configurations.
+
+{% tabs %} 
+
+{% highlight xaml %}
+<ContentPage xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:local="clr-namespace: ChartGettingStarted;assembly=ChartGettingStarted"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ChartGettingStarted.ChartSample">
+
+  <chart:SfChart x:Name="Chart" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+    <chart:SfChart.BindingContext>
+      <local:ViewModel/>
+    </chart:SfChart.BindingContext>
+
+    <chart:SfChart.Legend>
+      <chart:ChartLegend />
+    </chart:SfChart.Legend>
+
+    <chart:SfChart.Title>
+      <chart:ChartTitle Text="Chart"/>
+    </chart:SfChart.Title>
+
+    <chart:SfChart.PrimaryAxis>
+      <chart:CategoryAxis>
+        <chart:CategoryAxis.Title>
+          <chart:ChartAxisTitle Text="Name"/>
+        </chart:CategoryAxis.Title>
+      </chart:CategoryAxis>
+    </chart:SfChart.PrimaryAxis>
+
+    <chart:SfChart.SecondaryAxis>
+      <chart:NumericalAxis>
+        <chart:NumericalAxis.Title>
+          <chart:ChartAxisTitle Text="Height (in cm)"/>
+        </chart:NumericalAxis.Title>
+      </chart:NumericalAxis>
+    </chart:SfChart.SecondaryAxis>
+
+    <chart:SfChart.Series>
+      <chart:ColumnSeries ItemsSource="{Binding Data}" Label="Heights" XBindingPath="Name" YBindingPath="Height" EnableTooltip="True">
+        <chart:ColumnSeries.DataMarker>
+          <chart:ChartDataMarker/>
+        </chart:ColumnSeries.DataMarker>
+      </chart:ColumnSeries>
+    </chart:SfChart.Series>
+  </chart:SfChart>
+
+</ContentPage>
+ 
+{% endhighlight %}
+
+{% highlight C# %} 
+
+using Syncfusion.SfChart.XForms;
+
+namespace ChartGettingStarted
+{
+    public partial class ChartSample : ContentPage
+    {
+        public ChartSample()
+        {
+            InitializeComponent();
+            SfChart chart = new SfChart();
+            chart.Title.Text = "Chart";
+
+            //Initializing primary axis
+            CategoryAxis primaryAxis = new CategoryAxis();
+            primaryAxis.Title.Text = "Name";
+            chart.PrimaryAxis = primaryAxis;
+
+            //Initializing secondary Axis
+            NumericalAxis secondaryAxis = new NumericalAxis();
+            secondaryAxis.Title.Text = "Height (in cm)";
+            chart.SecondaryAxis = secondaryAxis;
+
+            //Initializing column series
+            ColumnSeries series = new ColumnSeries();
+            series.ItemsSource = viewModel.Data;
+            series.XBindingPath = "Name";
+            series.YBindingPath = "Height";
+            series.Label = "Heights";
+
+            series.DataMarker = new ChartDataMarker();
+            series.EnableTooltip = true;
+            chart.Legend = new ChartLegend();
+
+            chart.Series.Add(series);
+            this.Content = chart;
+
+        }
+    }
+}
+{% endhighlight %}
+
+{% endtabs %}
+
+The following chart is created as a result of the above codes.
+
 ![](Getting-Started_images/img2.png)
 
 You can find the complete getting started sample from this [link.](http://files2.syncfusion.com/Xamarin.Forms/Samples/Chart_GettingStarted.zip)

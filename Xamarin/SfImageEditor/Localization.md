@@ -69,7 +69,7 @@ In below screenshot we have localized the text to French language.
 
 ![SfImageEditor](ImageEditor_images/uwpresources.png)
 
-Please find the screenshot in which we have localized the text in ImageEditor to french language.
+Please find the screenshot in which we have localized the text in ImageEditor to French language.
 
 ![SfImageEditor](ImageEditor_images/imageframe.png)
 

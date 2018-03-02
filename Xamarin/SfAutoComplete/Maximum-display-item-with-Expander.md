@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Maximum Display Item with Expander
 
-Restrict the number of suggestions displayed and have the remaining items loaded by selecting LoadMore. We can also set the maximum suggestion to be displayed using LoadMore method. We can set the desire text for the displaying the Load more text with the property `LoadMoreText`.
+Restrict the number of suggestions displayed and have the remaining items loaded by selecting LoadMore.We can restrict maximum suggestion to be displayed with the `MaximumSuggestion` property. We can set the desire text for the displaying the Load more text with the property `LoadMoreText`.
 
 {% tabs %}
 
@@ -23,11 +23,14 @@ Restrict the number of suggestions displayed and have the remaining items loaded
 {% highlight c# %}
 
 List<String> countryNames = new List<String>();
-countryNames.Add("Uganda");
-countryNames.Add("Ukraine");
-countryNames.Add("United Arab Emirates");
-countryNames.Add("United Kingdom");
-countryNames.Add("United States");
+countryNames.Add("Akrotiri");
+countryNames.Add("Algeria");
+countryNames.Add("Andorra");
+countryNames.Add("Angola");
+countryNames.Add("Antartica");
+countryNames.Add("Argentina");
+countryNames.Add("Armenia");
+countryNames.Add("Aruba");
 autoComplete.DataSource = countryNames;
 
 {% endhighlight %}

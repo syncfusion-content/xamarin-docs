@@ -40,5 +40,5 @@ The control does not stick with one type of keyboard, so you can populate items 
 
 {% endtabs %}
 
-![](images/Maximum-display-item-with-Expander/LoadMore.png)
+![](images/Diacritic-Sensitivity/Diacritic.png)
 

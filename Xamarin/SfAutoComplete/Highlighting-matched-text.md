@@ -38,11 +38,10 @@ It highlights the first position of the matching characters in the suggestion li
 {% highlight c# %}
 
 List<String> countryNames = new List<String>();
-countryNames.Add("Uganda");
-countryNames.Add("Ukraine");
-countryNames.Add("United Arab Emirates");
-countryNames.Add("United Kingdom");
-countryNames.Add("United States");
+countryNames.Add("Afghanistan");
+countryNames.Add("Akrotiri");
+countryNames.Add("Albania");
+countryNames.Add("Algeria");
 autoComplete.SuggestionMode= SuggestionMode.StartsWith;
 autoComplete.TextHighlightMode=OccurrenceMode.FirstOccurrence;
 autoComplete.HighlightedTextColor= Color.Red;
@@ -72,11 +71,10 @@ It higlights the matching character that are present everywhere in the suggestio
 {% highlight c# %}
 
 List<String> countryNames = new List<String>();
-countryNames.Add("Uganda");
-countryNames.Add("Ukraine");
-countryNames.Add("United Arab Emirates");
-countryNames.Add("United Kingdom");
-countryNames.Add("United States");
+countryNames.Add("Afghanistan");
+countryNames.Add("Akrotiri");
+countryNames.Add("Albania");
+countryNames.Add("Algeria");
 autoComplete.SuggestionMode= SuggestionMode.Contains;
 autoComplete.TextHighlightMode=OccurrenceMode.MultipleOccurrence;
 autoComplete.HighlightedTextColor= Color.Red;

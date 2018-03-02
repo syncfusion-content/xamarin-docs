@@ -385,12 +385,18 @@ series.EnableTooltip = true;
 
 Refer this [link](https://help.syncfusion.com/xamarin/sfchart/tooltip) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html) to customize tooltip.
 
-The following code example gives you the complete code for creating a chart.
+The following code example gives you the complete code of above configurations.
 
 {% tabs %} 
 
 {% highlight xaml %}
- <chart:SfChart x:Name="Chart" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+<ContentPage xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:local="clr-namespace: ChartGettingStarted;assembly=ChartGettingStarted"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ChartGettingStarted.ChartSample">
+
+  <chart:SfChart x:Name="Chart" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
 
     <chart:SfChart.BindingContext>
       <local:ViewModel/>
@@ -428,35 +434,52 @@ The following code example gives you the complete code for creating a chart.
       </chart:ColumnSeries>
     </chart:SfChart.Series>
   </chart:SfChart>
+
+</ContentPage>
+  
  {% endhighlight %}
 
 {% highlight C# %} 
-SfChart chart = new SfChart();
-chart.Title.Text = "Chart";
 
-//Initializing primary axis
-CategoryAxis primaryAxis = new CategoryAxis();
-primaryAxis.Title.Text = "Name";
-chart.PrimaryAxis = primaryAxis;
+using Syncfusion.SfChart.XForms;
 
-//Initializing secondary Axis
-NumericalAxis secondaryAxis = new NumericalAxis();
-secondaryAxis.Title.Text = "Height (in cm)";
-chart.SecondaryAxis = secondaryAxis;
+namespace ChartGettingStarted
+{
+    public partial class ChartSample : ContentPage
+    {
+        public ChartSample()
+        {
+            InitializeComponent();
+            SfChart chart = new SfChart();
+            chart.Title.Text = "Chart";
 
-//Initializing column series
-ColumnSeries series = new ColumnSeries();
-series.ItemsSource = viewModel.Data; 
-series.XBindingPath = "Name"; 
-series.YBindingPath = "Height";
-series.Label = "Heights";
+            //Initializing primary axis
+            CategoryAxis primaryAxis = new CategoryAxis();
+            primaryAxis.Title.Text = "Name";
+            chart.PrimaryAxis = primaryAxis;
 
-series.DataMarker = new ChartDataMarker();
-series.EnableTooltip = true;
-chart.Legend = new ChartLegend();
+            //Initializing secondary Axis
+            NumericalAxis secondaryAxis = new NumericalAxis();
+            secondaryAxis.Title.Text = "Height (in cm)";
+            chart.SecondaryAxis = secondaryAxis;
 
-chart.Series.Add(series);
-this.Content = chart;
+            //Initializing column series
+            ColumnSeries series = new ColumnSeries();
+            series.ItemsSource = viewModel.Data;
+            series.XBindingPath = "Name";
+            series.YBindingPath = "Height";
+            series.Label = "Heights";
+
+            series.DataMarker = new ChartDataMarker();
+            series.EnableTooltip = true;
+            chart.Legend = new ChartLegend();
+
+            chart.Series.Add(series);
+            this.Content = chart;
+
+        }
+    }
+}
 {% endhighlight %}
 
 {% endtabs %}

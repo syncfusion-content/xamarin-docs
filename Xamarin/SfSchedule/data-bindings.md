@@ -15,20 +15,19 @@ documentation: ug
 [SfSchedule](https://help.syncfusion.com/cr/xamarin/sfschedule) control has a built-in capability to handle the appointment arrangement internally based on the [ScheduleAppointmentCollection](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentCollection.html). [ScheduleAppointment](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment.html) is a class, which holds the details about the appointment to be rendered in schedule.
 
 {% highlight c# %}
-
 // Creating an instance for schedule appointment collection
-        ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
-    //Adding schedule appointment in schedule appointment collection 
-        scheduleAppointmentCollection.Add(new ScheduleAppointment()
-            { 
-                StartTime = new DateTime(2017, 05, 08, 10, 0, 0), 
-                EndTime = new DateTime(2017, 05, 08, 12, 0, 0), 
-                Subject = "Meeting", 
-                Location = "Hutchison road", 
-            }); 
-    
-    //Adding schedule appointment collection to DataSource of SfSchedule
-         schedule.DataSource=scheduleAppointmentCollection;
+ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
+//Adding schedule appointment in schedule appointment collection 
+scheduleAppointmentCollection.Add(new ScheduleAppointment()
+{ 
+	StartTime = new DateTime(2017, 05, 08, 10, 0, 0), 
+	EndTime = new DateTime(2017, 05, 08, 12, 0, 0), 
+	Subject = "Meeting", 
+	Location = "Hutchison road", 
+}); 
+
+//Adding schedule appointment collection to DataSource of SfSchedule
+schedule.DataSource=scheduleAppointmentCollection;
 {% endhighlight %}
 
 ![](PopulatingAppointments_images/appointment.png)
@@ -38,27 +37,26 @@ documentation: ug
 [MinHeight](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~MinHeight.html) of an appointment is to set an arbitrary height to appointments when it has minimum duration, so that the subject can be readable.
 
 {% highlight c# %}
+schedule.ScheduleView = ScheduleView.DayView;
+ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
+scheduleAppointmentCollection.Add(new ScheduleAppointment()
+	{
+		StartTime = new DateTime(2018, 2, 13, 09, 0, 0),
+		EndTime = new DateTime(2018, 2, 13, 09, 0, 0),
+		Subject = "Client Meeting",
+		MinHeight = 30,
+		Color = Color.FromHex("#FFD80073")
+	});
+scheduleAppointmentCollection.Add(new ScheduleAppointment()
+	{
+		StartTime = new DateTime(2018, 2, 13, 11, 0, 0),
+		EndTime = new DateTime(2018, 2, 13, 12, 0, 0),
+		Subject = "Anniversary",
+		Color = Color.FromHex("#FFA2C139")
+	});
+schedule.DataSource = scheduleAppointmentCollection;
 
- 		schedule.ScheduleView = ScheduleView.DayView;
-		ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
-        scheduleAppointmentCollection.Add(new ScheduleAppointment()
-            {
-				StartTime = new DateTime(2018, 2, 13, 09, 0, 0),
-				EndTime = new DateTime(2018, 2, 13, 09, 0, 0),
-				Subject = "Client Meeting",
-				MinHeight = 30,
-				Color = Color.FromHex("#FFD80073")
-            });
-		scheduleAppointmentCollection.Add(new ScheduleAppointment()
-            {
-                StartTime = new DateTime(2018, 2, 13, 11, 0, 0),
-				EndTime = new DateTime(2018, 2, 13, 12, 0, 0),
-				Subject = "Anniversary",
-				Color = Color.FromHex("#FFA2C139")
-            });
-		schedule.DataSource = scheduleAppointmentCollection;
-
-        this.Content = schedule;
+this.Content = schedule;
 {% endhighlight %}
 
  ![](PopulatingAppointments_images/minheight.png)
@@ -92,19 +90,16 @@ N> CustomAppointment class should contain two DateTime fields and a string field
 ### Creating custom Appointments
 You can create a custom class `Meeting` with mandatory fields `From`, `To` and `EventName`.
 {% highlight c# %}
-
-        /// <summary>   
-        /// Represents custom data properties.   
-        /// </summary>   
-
-    public class Meeting
-    {
-        public string EventName { get; set; }
-        public DateTime From { get; set; }
-        public DateTime To { get; set; }
-        public Color Color { get; set; }
-    } 
-
+/// <summary>   
+/// Represents custom data properties.   
+/// </summary> 
+public class Meeting
+{
+	public string EventName { get; set; }
+	public DateTime From { get; set; }
+	public DateTime To { get; set; }
+	public Color Color { get; set; }
+} 
 {% endhighlight %}
 
 N> You can inherit this class from `INotifyPropertyChanged` for dynamic changes in custom data.
@@ -112,79 +107,71 @@ N> You can inherit this class from `INotifyPropertyChanged` for dynamic changes 
 You can map those properties of `Meeting` class with our SfSchedule control by using `ScheduleAppointmentMapping`.
 {% tabs %}
 {% highlight c# %}
-
-        //Schedule data mapping for custom appointments
-        ScheduleAppointmentMapping dataMapping = new ScheduleAppointmentMapping();
-        dataMapping.SubjectMapping = "EventName";
-        dataMapping.StartTimeMapping = "From";
-        dataMapping.EndTimeMapping = "To";
-        dataMapping.ColorMapping = "Color";
-        schedule.AppointmentMapping = dataMapping;
-
+//Schedule data mapping for custom appointments
+ScheduleAppointmentMapping dataMapping = new ScheduleAppointmentMapping();
+dataMapping.SubjectMapping = "EventName";
+dataMapping.StartTimeMapping = "From";
+dataMapping.EndTimeMapping = "To";
+dataMapping.ColorMapping = "Color";
+schedule.AppointmentMapping = dataMapping;
 {% endhighlight %}
 {% highlight xaml %} 
- 
-        <syncfusion:SfSchedule x:Name="schedule" ScheduleView="DayView" DataSource="{Binding Meetings}">
-            <syncfusion:SfSchedule.AppointmentMapping>
-                <syncfusion:ScheduleAppointmentMapping
-                    SubjectMapping="EventName" 
-                    ColorMapping="Color"
-                    StartTimeMapping="From"
-                    EndTimeMapping="To">
-                </syncfusion:ScheduleAppointmentMapping>
-            </syncfusion:SfSchedule.AppointmentMapping>
-        </syncfusion:SfSchedule> 
- 
+<syncfusion:SfSchedule x:Name="schedule" ScheduleView="DayView" DataSource="{Binding Meetings}">
+	<syncfusion:SfSchedule.AppointmentMapping>
+		<syncfusion:ScheduleAppointmentMapping
+			SubjectMapping="EventName" 
+			ColorMapping="Color"
+			StartTimeMapping="From"
+			EndTimeMapping="To">
+		</syncfusion:ScheduleAppointmentMapping>
+	</syncfusion:SfSchedule.AppointmentMapping>
+</syncfusion:SfSchedule> 
 {% endhighlight %} 
 {% endtabs %} 
 
 You can schedule meetings for a day by setting `From` and `To` of `Meeting` class. Create meetings of type `ObservableCollection <Meeting>` and assign those appointments collection `Meetings` to the `DataSource` property which is of `IEnumerable` type.
 
 {% highlight c# %}
-
-            // Creating instance for custom appointment class
-        Meeting meeting = new Meeting();
-        // Setting start time of an event
-        meeting.From = new DateTime(2017,05,08, 10, 0, 0);
-        // Setting end time of an event
-        meeting.To = meeting.From.AddHours(1);
-        // Setting start time for an event
-        meeting.EventName = "Anniversary";
-        // Setting color for an event
-        meeting.Color = Color.Green; 
-        // Creating instance for collection of custom appointments
-        var Meetings = new ObservableCollection<Meeting>();
-        // Adding a custom appointment in CustomAppointmentCollection
-        Meetings.Add(meeting);
-        // Adding custom appointments in DataSource of SfSchedule
-        schedule.DataSource = Meetings;
-
+// Creating instance for custom appointment class
+Meeting meeting = new Meeting();
+// Setting start time of an event
+meeting.From = new DateTime(2017,05,08, 10, 0, 0);
+// Setting end time of an event
+meeting.To = meeting.From.AddHours(1);
+// Setting start time for an event
+meeting.EventName = "Anniversary";
+// Setting color for an event
+meeting.Color = Color.Green; 
+// Creating instance for collection of custom appointments
+var Meetings = new ObservableCollection<Meeting>();
+// Adding a custom appointment in CustomAppointmentCollection
+Meetings.Add(meeting);
+// Adding custom appointments in DataSource of SfSchedule
+schedule.DataSource = Meetings;
 {% endhighlight %} 
 
 ## Spanned Appointments
 Spanned Appointment is an appointment which lasts more than 24 hours.
 
 {% highlight c# %}
+public ObservableCollection<Meeting> Meetings { get; set; } 
+// Creating instance for collection of custom appointments
+Meetings = new ObservableCollection<Meeting>();
+// Creating instance for custom appointment class
+Meeting meeting = new Meeting();
+// Setting start time of an event
+meeting.From = new DateTime(2017,05,08, 10, 0, 0);
+// Setting end time of an event
+meeting.To = meeting.From.AddDays(2).AddHours(1);
+// Setting start time for an event
+meeting.EventName = "Anniversary";
+// Setting color for an event
+meeting.Color = Color.Green;
+// Adding a custom appointment in CustomAppointmentCollection
+Meetings.Add(meeting);
 
-            public ObservableCollection<Meeting> Meetings { get; set; } 
-     // Creating instance for collection of custom appointments
-        Meetings = new ObservableCollection<Meeting>();
-     // Creating instance for custom appointment class
-        Meeting meeting = new Meeting();
-     // Setting start time of an event
-        meeting.From = new DateTime(2017,05,08, 10, 0, 0);
-     // Setting end time of an event
-        meeting.To = meeting.From.AddDays(2).AddHours(1);
-     // Setting start time for an event
-        meeting.EventName = "Anniversary";
-     // Setting color for an event
-        meeting.Color = Color.Green;
-     // Adding a custom appointment in CustomAppointmentCollection
-        Meetings.Add(meeting);
-
-     //Adding schedule appointment collection to DataSource of SfSchedule
-        schedule.DataSource= Meetings ; 
-
+//Adding schedule appointment collection to DataSource of SfSchedule
+schedule.DataSource= Meetings ; 
 {% endhighlight %} 
 
 ![](PopulatingAppointments_images/span.png)
@@ -193,42 +180,36 @@ Spanned Appointment is an appointment which lasts more than 24 hours.
 All-Day appointment is an appointment which is scheduled for a whole day. It can be set by using `IsAllDay` property in the `ScheduleAppointment`.
 
 {% highlight c# %}
-
-        // Creating an instance for schedule appointment collection
-        ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
-    //Adding schedule appointment in schedule appointment collection 
-        scheduleAppointmentCollection.Add(new ScheduleAppointment()
-        {
-            StartTime = new DateTime(2017, 05, 08, 10, 0, 0),
-            EndTime = new DateTime(2017, 05, 10, 12, 0, 0),
-            Subject = "Meeting",
-            Location = "Hutchison road",
-            IsAllDay = true
-        }); 
-    //Adding schedule appointment collection to DataSource of SfSchedule
-        schedule.DataSource=scheduleAppointmentCollection;
-
+// Creating an instance for schedule appointment collection
+ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
+//Adding schedule appointment in schedule appointment collection 
+scheduleAppointmentCollection.Add(new ScheduleAppointment()
+{
+	StartTime = new DateTime(2017, 05, 08, 10, 0, 0),
+	EndTime = new DateTime(2017, 05, 10, 12, 0, 0),
+	Subject = "Meeting",
+	Location = "Hutchison road",
+	IsAllDay = true
+}); 
+//Adding schedule appointment collection to DataSource of SfSchedule
+schedule.DataSource=scheduleAppointmentCollection;
 {% endhighlight %} 
 
 ### All-Day Appointment Panel
 All-day appointment doesn't block out entire time slot in SfSchedule, rather it will render in separate layout exclusively for all-day appointment. It can be enabled by setting `ShowAllDay` property of `DayViewSettings`, `WeekViewSettings` and `WorkWeekViewSettings` of `DayView`, `WeekView` and `WorkWeekView` respectively.
 
 {% highlight c# %}
-
-            schedule.ScheduleView = ScheduleView.WeekView;
-        WeekViewSettings weekViewSeetings = new WeekViewSettings();
-        weekViewSeetings.ShowAllDay = true;
-        schedule.WeekViewSettings = weekViewSeetings;
-
+schedule.ScheduleView = ScheduleView.WeekView;
+WeekViewSettings weekViewSeetings = new WeekViewSettings();
+weekViewSeetings.ShowAllDay = true;
+schedule.WeekViewSettings = weekViewSeetings;
 {% endhighlight %} 
 
 All-Day panel background can be customized by setting `AllDayAppointmentLayoutColor` 
 of the respective view settings.
 
 {% highlight c# %}
-
-            weekViewSeetings.AllDayAppointmentLayoutColor = Color.Silver; 
-
+weekViewSeetings.AllDayAppointmentLayoutColor = Color.Silver; 
 {% endhighlight %} 
 
 ![](PopulatingAppointments_images/allday.png)
@@ -322,36 +303,34 @@ N> `SfSchedule` does not support Editing and Deleting of Recurring appointment's
 Schedule appointment [RecurrenceRule](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~RecurrenceRule.html) is used to populate the required recurring appointment collection in a specific pattern. `RRULE` can be easily created through `RecurrenceBuilder` engine by simple APIs available in Schedule control.
 
 {% highlight c# %}
+// Creating an instance for schedule appointment collection
+ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
+//Adding schedule appointment in schedule appointment collection 
+var scheduleAppointment = new ScheduleAppointment()
+{
+	StartTime = new DateTime(2017, 05, 08, 10, 0, 0),
+	EndTime = new DateTime(2017, 05, 08, 12, 0, 0),
+	Subject = "Occurs every alternate day",
+	IsRecursive = true
+};
 
-        // Creating an instance for schedule appointment collection
-        ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
-    //Adding schedule appointment in schedule appointment collection 
-        var scheduleAppointment = new ScheduleAppointment()
-        {
-        	StartTime = new DateTime(2017, 05, 08, 10, 0, 0),
-        	EndTime = new DateTime(2017, 05, 08, 12, 0, 0),
-        	Subject = "Occurs every alternate day",
-        	IsRecursive = true
-        };
+//Adding schedule appointment in schedule appointment collection
+scheduleAppointmentCollection.Add(scheduleAppointment);
 
-    //Adding schedule appointment in schedule appointment collection
-        scheduleAppointmentCollection.Add(scheduleAppointment);
+//Adding schedule appointment collection to DataSource of SfSchedule
+schedule.DataSource=scheduleAppointmentCollection; 
 
-    //Adding schedule appointment collection to DataSource of SfSchedule
-        schedule.DataSource=scheduleAppointmentCollection; 
+// Creating recurrence rule
+RecurrenceProperties recurrenceProperties = new RecurrenceProperties();
+recurrenceProperties.RecurrenceType = RecurrenceType.Daily;
+recurrenceProperties.IsRangeRecurrenceCount = true;
+recurrenceProperties.DailyNDays = 2;
+recurrenceProperties.IsDailyEveryNDays = true;
+recurrenceProperties.RangeRecurrenceCount = 10;
+recurrenceProperties.RecurrenceRule = DependencyService.Get<IRecurrenceBuilder>().RRuleGenerator(recurrenceProperties, scheduleAppointment.StartTime, scheduleAppointment.EndTime);
 
-    // Creating recurrence rule
-        RecurrenceProperties recurrenceProperties = new RecurrenceProperties();
-        recurrenceProperties.RecurrenceType = RecurrenceType.Daily;
-        recurrenceProperties.IsRangeRecurrenceCount = true;
-        recurrenceProperties.DailyNDays = 2;
-        recurrenceProperties.IsDailyEveryNDays = true;
-        recurrenceProperties.RangeRecurrenceCount = 10;
-        recurrenceProperties.RecurrenceRule = DependencyService.Get<IRecurrenceBuilder>().RRuleGenerator(recurrenceProperties, scheduleAppointment.StartTime, scheduleAppointment.EndTime);
-
-    // Setting recurrence rule to schedule appointment
-        scheduleAppointment.RecurrenceRule = recurrenceProperties.RecurrenceRule; 
-
+// Setting recurrence rule to schedule appointment
+scheduleAppointment.RecurrenceRule = recurrenceProperties.RecurrenceRule; 
 {% endhighlight %}
 
 ![](PopulatingAppointments_images/recurrence.png)
@@ -360,20 +339,18 @@ Schedule appointment [RecurrenceRule](https://help.syncfusion.com/cr/cref_files/
 For creating custom recurrence appointment you need to create a custom class `Meeting` with mandatory fields `From`, `To`, `EventName`, `IsRecursive` and `RecurrenceRule`.
 
 {% highlight c# %}
-
-    /// <summary>
-    /// Represents custom data properties.
-    /// </summary>
-    public class Meeting
-    {
-        public string EventName { get; set; }
-        public DateTime From { get; set; }
-        public DateTime To { get; set; }
-        public Color Color { get; set; }
-        public bool IsRecursive { get; set; }
-        public string RecurrenceRule { get; set; }
-    }
-
+/// <summary>
+/// Represents custom data properties.
+/// </summary>
+public class Meeting
+{
+	public string EventName { get; set; }
+	public DateTime From { get; set; }
+	public DateTime To { get; set; }
+	public Color Color { get; set; }
+	public bool IsRecursive { get; set; }
+	public string RecurrenceRule { get; set; }
+}
 {% endhighlight %}
 
 N> You can inherit this class from `INotifyPropertyChanged` for dynamic changes in custom data.
@@ -382,83 +359,80 @@ You can map those properties of `Meeting` class with our SfSchedule control by u
 
 {% tabs %}
 {% highlight c# %}
-
-    // Schedule data mapping for custom appointments
-    ScheduleAppointmentMapping dataMapping = new ScheduleAppointmentMapping();
-    dataMapping.SubjectMapping = "EventName";
-    dataMapping.StartTimeMapping = "From";
-    dataMapping.EndTimeMapping = "To";
-    dataMapping.ColorMapping = "Color";
-    dataMapping.IsRecursiveMapping = "IsRecursive";
-    dataMapping.RecurrenceRuleMapping = "RecurrenceRule";
-    schedule.AppointmentMapping = dataMapping;
-    
+// Schedule data mapping for custom appointments
+ScheduleAppointmentMapping dataMapping = new ScheduleAppointmentMapping();
+dataMapping.SubjectMapping = "EventName";
+dataMapping.StartTimeMapping = "From";
+dataMapping.EndTimeMapping = "To";
+dataMapping.ColorMapping = "Color";
+dataMapping.IsRecursiveMapping = "IsRecursive";
+dataMapping.RecurrenceRuleMapping = "RecurrenceRule";
+schedule.AppointmentMapping = dataMapping;
 {% endhighlight %}
 {% highlight xaml %}
-
-    <syncfusion:SfSchedule x:Name="schedule" ScheduleView="DayView" DataSource="{Binding Meetings}">
-        <syncfusion:SfSchedule.AppointmentMapping>
-            <syncfusion:ScheduleAppointmentMapping
-                SubjectMapping="EventName"
-                ColorMapping="Color"
-                StartTimeMapping="From"
-                EndTimeMapping="To"
-                IsRecursiveMapping="IsRecursive"
-                RecurrenceRuleMapping="RecurrenceRule">
-            </syncfusion:ScheduleAppointmentMapping>
-        </syncfusion:SfSchedule.AppointmentMapping>
-    </syncfusion:SfSchedule>
-
+<syncfusion:SfSchedule x:Name="schedule" ScheduleView="DayView" DataSource="{Binding Meetings}">
+	<syncfusion:SfSchedule.AppointmentMapping>
+		<syncfusion:ScheduleAppointmentMapping
+			SubjectMapping="EventName"
+			ColorMapping="Color"
+			StartTimeMapping="From"
+			EndTimeMapping="To"
+			IsRecursiveMapping="IsRecursive"
+			RecurrenceRuleMapping="RecurrenceRule">
+		</syncfusion:ScheduleAppointmentMapping>
+	</syncfusion:SfSchedule.AppointmentMapping>
+</syncfusion:SfSchedule>
 {% endhighlight %}
 {% endtabs %}
 
 You can schedule recurring meetings for daily, weekly, monthly, or yearly interval by setting `IsRecursive` and `RecurrenceRule` of `Meeting` class. Create meetings of type `ObservableCollection <Meeting>` and assign those appointments collection `Meetings` to the `DataSource` property which is of `IEnumerable` type.
 
 {% highlight c# %}
+// Creating instance for custom appointment class
+Meeting meeting = new Meeting();
+// Setting start time of an event
+meeting.From = new DateTime(2017, 06, 11, 10, 0, 0);
+// Setting end time of an event
+meeting.To = meeting.From.AddHours(2);
+// Setting start time for an event
+meeting.EventName = "Client Meeting";
+// Setting color for an event
+meeting.Color = Color.Green;
+// Setting whether the event is recurring
+meeting.IsRecursive = true;
 
-    // Creating instance for custom appointment class
-    Meeting meeting = new Meeting();
-    // Setting start time of an event
-    meeting.From = new DateTime(2017, 06, 11, 10, 0, 0);
-    // Setting end time of an event
-    meeting.To = meeting.From.AddHours(2);
-    // Setting start time for an event
-    meeting.EventName = "Client Meeting";
-    // Setting color for an event
-    meeting.Color = Color.Green;
-    // Setting whether the event is recurring
-    meeting.IsRecursive = true;
-    
-    // Creating recurrence rule
-    RecurrenceProperties recurrenceProperties = new RecurrenceProperties();
-    recurrenceProperties.RecurrenceType = RecurrenceType.Weekly;
-    recurrenceProperties.WeeklyEveryNWeeks = 1;
-    recurrenceProperties.IsWeeklySunday = false;
-    recurrenceProperties.IsWeeklyMonday = true;
-    recurrenceProperties.IsWeeklyTuesday = false;
-    recurrenceProperties.IsWeeklyWednesday = true;
-    recurrenceProperties.IsWeeklyThursday = false;
-    recurrenceProperties.IsWeeklyFriday = true;
-    recurrenceProperties.IsWeeklySaturday = false;
-    recurrenceProperties.IsRangeRecurrenceCount = true;
-    recurrenceProperties.RangeRecurrenceCount = 10;
-    recurrenceProperties.RecurrenceRule = DependencyService.Get<IRecurrenceBuilder>().RRuleGenerator(recurrenceProperties, meeting.From, meeting.To);
-    
-    // Setting recursive rule for an event
-    meeting.RecurrenceRule = recurrenceProperties.RecurrenceRule;
-    
-    // Creating instance for collection of custom appointments
-    var Meetings = new ObservableCollection<Meeting>();
-    // Adding a custom appointment in CustomAppointmentCollection
-    Meetings.Add(meeting);
-    
-    // Adding custom appointments in DataSource of SfSchedule
-    schedule.DataSource = Meetings;
+// Creating recurrence rule
+RecurrenceProperties recurrenceProperties = new RecurrenceProperties();
+recurrenceProperties.RecurrenceType = RecurrenceType.Weekly;
+recurrenceProperties.WeeklyEveryNWeeks = 1;
+recurrenceProperties.IsWeeklySunday = false;
+recurrenceProperties.IsWeeklyMonday = true;
+recurrenceProperties.IsWeeklyTuesday = false;
+recurrenceProperties.IsWeeklyWednesday = true;
+recurrenceProperties.IsWeeklyThursday = false;
+recurrenceProperties.IsWeeklyFriday = true;
+recurrenceProperties.IsWeeklySaturday = false;
+recurrenceProperties.IsRangeRecurrenceCount = true;
+recurrenceProperties.RangeRecurrenceCount = 10;
+recurrenceProperties.RecurrenceRule = DependencyService.Get<IRecurrenceBuilder>().RRuleGenerator(recurrenceProperties, meeting.From, meeting.To);
 
+// Setting recursive rule for an event
+meeting.RecurrenceRule = recurrenceProperties.RecurrenceRule;
+
+// Creating instance for collection of custom appointments
+var Meetings = new ObservableCollection<Meeting>();
+// Adding a custom appointment in CustomAppointmentCollection
+Meetings.Add(meeting);
+
+// Adding custom appointments in DataSource of SfSchedule
+schedule.DataSource = Meetings;
 {% endhighlight %}
 
 You can download the entire source code of this demo for Xamarin.Forms from
 here [Recurrence_Appointment](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Recurrence_Appointment-1708142299.zip).
+
+>**Note**:  
+In Schedule "Xamarin.Forms UWP", there is no need to set IsRecursive property for recurrence appointments. When a RecurrenceRule is set to schedule appointment, value of IsRecursive property will be set as true automatically for these appointments. So even if IsRecursive is set as false, there will be no effect on recurring appointments.
 
 ![](PopulatingAppointments_images/RecurrenceAppointment.png)
 
@@ -467,38 +441,36 @@ The default appearance of the appointment can be customized by using the [Appoi
 
 * [Customize appearance using Style](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#customize-appearance-using-style) 
 * [Customize appearance using Event](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#customize-appearance-using-event) 
-* [Customize appearance using Custom View](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#customize-appearance-using-custom-view) 
+* [Customize appearance using Custom View](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#customize-appearance-using-custom-view)
+* [Customize appearance using DataTemplate](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#customize-appearance-using-datatemplate)
+* [Customize appearance using DataTemplateSelector](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#customize-appearance-using-datatemplateselector)
 
 ### Customize appearance using Style
 Schedule appointment can be customized by setting appointment style properties such as [TextColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~TextColor.html), [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~TextStyle.html), [BorderColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~BorderColor.html), [BorderCornerRadius](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~BorderCornerRadius.html), [BorderWidth](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~BorderWidth.html) to the [AppointmentStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle.html) property of `SfSchedule`.
 {% tabs %} 
 {% highlight c# %}
+//Creating Appointment style 
+AppointmentStyle appointmentStyle = new AppointmentStyle();
+appointmentStyle.TextColor = Color.Red;
+appointmentStyle.TextStyle = Font.SystemFontOfSize(15, FontAttributes.Bold);
+appointmentStyle.BorderColor = Color.Blue;
+appointmentStyle.BorderCornerRadius = 12;
+appointmentStyle.BorderWidth = 10;
 
-        //Creating Appointment style 
-        AppointmentStyle appointmentStyle = new AppointmentStyle();
-        appointmentStyle.TextColor = Color.Red;
-        appointmentStyle.TextStyle = Font.SystemFontOfSize(15, FontAttributes.Bold);
-        appointmentStyle.BorderColor = Color.Blue;
-        appointmentStyle.BorderCornerRadius = 12;
-        appointmentStyle.BorderWidth = 10;
-
-		//Setting Appointment Style 
-        schedule.AppointmentStyle = appointmentStyle;
-
+//Setting Appointment Style 
+schedule.AppointmentStyle = appointmentStyle;
 {% endhighlight %}
-{% highlight xaml %} 
- 
-     <syncfusion:SfSchedule x:Name="schedule" ScheduleView="DayView" DataSource="{Binding Meetings}">
-        <syncfusion:SfSchedule.AppointmentStyle>
-             <syncfusion:AppointmentStyle BorderWidth="10" 
-                TextColor="Red" 
-                BorderCornerRadius="10" 
-                TextSize="12"
-                BorderColor="Blue">
-        </syncfusion:AppointmentStyle>
-    </syncfusion:SfSchedule.AppointmentStyle>    
-  </syncfusion:SfSchedule>
- 
+{% highlight xaml %}
+<syncfusion:SfSchedule x:Name="schedule" ScheduleView="DayView" DataSource="{Binding Meetings}">
+	<syncfusion:SfSchedule.AppointmentStyle>
+		 <syncfusion:AppointmentStyle BorderWidth="10" 
+			TextColor="Red" 
+			BorderCornerRadius="10" 
+			TextSize="12"
+			BorderColor="Blue">
+	</syncfusion:AppointmentStyle>
+</syncfusion:SfSchedule.AppointmentStyle>    
+</syncfusion:SfSchedule>
 {% endhighlight %}
 {% endtabs %} 
 
@@ -514,20 +486,18 @@ Schedule appointment can be customized during runtime using [OnAppointmentLoaded
 •	[view](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentLoadedEventArgs~view.html) -  Sets the Custom UI for Appointments.
 •	[Bounds](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentLoadedEventArgs~Bounds.html) – Contains the UI bounds of appointment.
 
-{% highlight c# %} 
- 
-     schedule.OnAppointmentLoadedEvent += Schedule_OnAppointmentLoadedEvent;
- 
-    private void Schedule_OnAppointmentLoadedEvent(object sender, AppointmentLoadedEventArgs args)
-    {
-	if (args.appointment != null && (args.appointment as Meeting).EventName == "Meeting")
-        {
-        args.appointmentStyle.BorderColor = Color.Blue;
-        args.appointmentStyle.BorderCornerRadius = 12;
-        args.appointmentStyle.BorderWidth = 10;
-        }
-    }
- 
+{% highlight c# %}
+schedule.OnAppointmentLoadedEvent += Schedule_OnAppointmentLoadedEvent;
+
+private void Schedule_OnAppointmentLoadedEvent(object sender, AppointmentLoadedEventArgs args)
+{
+if (args.appointment != null && (args.appointment as Meeting).EventName == "Meeting")
+	{
+	args.appointmentStyle.BorderColor = Color.Blue;
+	args.appointmentStyle.BorderCornerRadius = 12;
+	args.appointmentStyle.BorderWidth = 10;
+	}
+}
 {% endhighlight %}
 
 >**Note**:  FontAttributes and FontFamily are native to the platform. Custom font and the font which are not available in the specified platform will not be applied.
@@ -536,19 +506,138 @@ Schedule appointment can be customized during runtime using [OnAppointmentLoaded
 Default appointment UI can be changed using `view` property passed through `AppointmentLoadedEventArgs`.
 
 {% highlight c# %} 
- 
-    schedule.OnAppointmentLoadedEvent += Schedule_OnAppointmentLoadedEvent;
+schedule.OnAppointmentLoadedEvent += Schedule_OnAppointmentLoadedEvent;
 
-    private void Schedule_OnAppointmentLoadedEvent(object sender, AppointmentLoadedEventArgs args)
-    {
-        Button button = new Button();
-        button.BackgroundColor = Color.Green;
-        if (args.appointment != null)
-            button.Text = (args.appointment as Meeting).EventName;
-        args.view = button;
-    }
- 
+private void Schedule_OnAppointmentLoadedEvent(object sender, AppointmentLoadedEventArgs args)
+{
+	Button button = new Button();
+	button.BackgroundColor = Color.Green;
+	if (args.appointment != null)
+		button.Text = (args.appointment as Meeting).EventName;
+	args.view = button;
+}
 {% endhighlight %}
+
+## Customize appearance using DataTemplate
+The default appearance of the Appointment can be customized by using the [AppointmentTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~AppointmentTemplate.html) property of the Schedule.
+
+{% highlight xaml %}
+<schedule:SfSchedule
+        x:Name="schedule"
+        AppointmentTemplate="{Binding AppointmentTemplate}">
+        <schedule:SfSchedule.BindingContext>
+            <samplelocal:DayAppointmentDataTemplate />
+        </schedule:SfSchedule.BindingContext>
+</schedule:SfSchedule>
+{% endhighlight %}
+
+### Creating a DataTemplate
+
+{% highlight c# %}
+public class DayAppointmentDataTemplate : DataTemplate
+{
+    public DataTemplate AppointmentTemplate { get; set; }
+
+    public DayAppointmentDataTemplate()
+    {
+        AppointmentTemplate = new DataTemplate(() =>
+        {
+            return new Button
+            {
+                Text = "Template",
+                TextColor = Color.White,
+                BackgroundColor = Color.Blue
+            };
+        });
+    }
+}
+{% endhighlight %}
+
+![](PopulatingAppointments_images/dayappointmenttemplate.png)
+
+## Customize appearance using DataTemplateSelector
+`DataTemplateSelector` can be used to choose a `DataTemplate` at runtime based on the value of a data-bound to Schedule appointment property through `AppointmentTemplate`. It provides multiple DataTemplates to be enabled for Schedule appointments, to customize the appearance of particular Appointment.
+
+{% highlight xaml %}
+<ContentPage.Resources>
+    <ResourceDictionary>
+        <samplelocal:AppointmentDataTemplateSelector x:Key="appointmentDataTemplateSelector" />
+    </ResourceDictionary>
+</ContentPage.Resources>
+
+<ContentPage.Content>
+    <schedule:SfSchedule
+            AppointmentTemplate="{StaticResource appointmentDataTemplateSelector}">
+            <schedule:SfSchedule.BindingContext>
+                <samplelocal:AppointmentDataTemplateSelector />
+            </schedule:SfSchedule.BindingContext>
+    </schedule:SfSchedule>
+</ContentPage.Content>
+
+{% endhighlight %}
+
+### Creating a DataTemplateSelector
+
+{% highlight c# %}
+
+public class AppointmentDataTemplateSelector : DataTemplateSelector
+{
+    public DataTemplate DayAppointmentTemplate { get; set; }
+    public DataTemplate AllDayAppointmentTemplate { get; set; }
+
+    public AppointmentDataTemplateSelector()
+    {
+        DayAppointmentTemplate = new DataTemplate(typeof(DayAppointmentTemplate));
+        AllDayAppointmentTemplate = new DataTemplate(typeof(AllDayAppointmentTemplate));
+    }
+
+    protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
+    {
+        if ((item as ScheduleAppointment).IsAllDay)
+            return AllDayAppointmentTemplate;
+        else
+            return DayAppointmentTemplate;
+    }
+}
+
+{% endhighlight %}
+
+Used button to display day appointment and Label to display all day appointment.
+
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<Button as Template for day Appointment>-->
+<Button xmlns="http://xamarin.com/schemas/2014/forms"
+        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+        x:Class="ScheduleUG.DayAppointmentTemplate"
+        BackgroundColor="{Binding Color}"
+        HorizontalOptions="FillAndExpand"
+        VerticalOptions="FillAndExpand"
+        Text="{Binding Subject}"
+        TextColor="White"
+        Image="{Binding Subject}">
+</Button>
+
+    .......
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<Label as Template for all day Appointment>-->
+<Label xmlns="http://xamarin.com/schemas/2014/forms"
+        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+        x:Class="ScheduleUG.AllDayAppointmentTemplate"
+        BackgroundColor="{Binding Color}"
+        Text="{Binding Subject}"
+        HorizontalOptions="FillAndExpand"
+        VerticalOptions="CenterAndExpand"
+        TextColor="White" FontSize="15"
+        HorizontalTextAlignment="Center"
+        VerticalTextAlignment="Center">
+</Label>
+
+{% endhighlight %}
+
+![](PopulatingAppointments_images/appointmenttemplate.png)
 
 ## Selection
 Schedule control has built-in events to handle tapped, double tapped and long pressed touch actions.
@@ -564,23 +653,82 @@ These events will be triggered while perform respective touch actions in timeslo
 
 >N Occurrences can be handled from tapped event when single occurrence remains unmodified.
 
-{% highlight c# %} 
- 
-        schedule.CellTapped += Schedule_CellTapped;
-	schedule.CellDoubleTapped += Schedule_CellDoubleTapped;
-	schedule.CellLongPressed += Schedule_CellLongPressed;
+{% highlight c# %}
+schedule.CellTapped += Schedule_CellTapped;
+schedule.CellDoubleTapped += Schedule_CellDoubleTapped;
+schedule.CellLongPressed += Schedule_CellLongPressed;
 
+private void Schedule_CellTapped(object sender, CellTappedEventArgs e)
+{
+}
+private void Schedule_CellDoubleTapped(object sender, CellTappedEventArgs e)
+{
+}
+private void Schedule_CellLongPressed(object sender, CellTappedEventArgs e)
+{
+}
+{% endhighlight %}
 
-	private void Schedule_CellTapped(object sender, CellTappedEventArgs e)
-		{
-		}
-	private void Schedule_CellDoubleTapped(object sender, CellTappedEventArgs e)
-		{
-		}
-	private void Schedule_CellLongPressed(object sender, CellTappedEventArgs e)
-		{
-		}
- 
+### Commands
+Schedule commands allow data bindings to make method calls directly to a ViewModel, which supports tapped, double tapped, long pressed touch actions and visible date changed action.
+
+•    [CellTappedCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~CellTappedCommand.html)
+•    [CellDoubleTappedCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~CellDoubleTappedCommand.htmll)
+•    [CellLongPressedCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~CellLongPressedCommand.html)
+•    [VisibleDatesChangedCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~VisibleDatesChangedCommand.html)
+
+{% highlight xaml %}
+
+    <schedule:SfSchedule
+        CellTappedCommand="{Binding ScheduleCellTapped}"
+        CellDoubleTappedCommand="{Binding ScheduleCellDoubleTapped}"
+        CellLongPressedCommand="{Binding ScheduleCellLongPressed}"
+        VisibleDatesChangedCommand="{Binding ScheduleVisibleDatesChanged}">
+        <schedule:SfSchedule.BindingContext>
+            <samplelocal:ScheduleViewModel />
+        </schedule:SfSchedule.BindingContext>
+    </schedule:SfSchedule>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    public class ScheduleViewModel
+    {
+        public ICommand ScheduleCellTapped { get; set; }
+        public ICommand ScheduleCellDoubleTapped { get; set; }
+        public ICommand ScheduleCellLongPressed { get; set; }
+        public ICommand ScheduleVisibleDatesChanged { get; set; }
+
+        public ScheduleViewModel()
+        {
+            ScheduleCellTapped = new Command<CellTappedEventArgs>(CellTapped);
+            ScheduleCellDoubleTapped = new Command<CellTappedEventArgs>(DoubleTapped);
+            ScheduleCellLongPressed = new Command<CellTappedEventArgs>(LongPressed);
+            ScheduleVisibleDatesChanged = new Command<VisibleDatesChangedEventArgs>(VisibleDatesChanged);
+        }
+
+        private void CellTapped(CellTappedEventArgs args)
+        {
+            var selectedDateTime = args.Datetime;
+        }
+
+        private void DoubleTapped(CellTappedEventArgs args)
+        {
+            var selectedDateTime = args.Datetime;
+        }
+
+        private void LongPressed(CellTappedEventArgs args)
+        {
+            var selectedDateTime = args.Datetime;
+        }
+
+        private void VisibleDatesChanged(VisibleDatesChangedEventArgs args)
+        {
+            var visibleDates = args.visibleDates;
+        }
+    }
+
 {% endhighlight %}
 
 ### Selection customization
@@ -589,29 +737,25 @@ The default selection of an appointment can be customized by using [SelectionBor
 N> `BorderWidth` value must be set to highlight `SelectionBorderColor`.
 
 {% tabs %} 
-{% highlight c# %} 
- 
-    //Creating an appointment style 
-        AppointmentStyle appointmentStyle = new AppointmentStyle();
-        appointmentStyle.SelectionBorderColor = Color.Yellow;
-        appointmentStyle.SelectionTextColor = Color.Yellow;
+{% highlight c# %}
+//Creating an appointment style 
+AppointmentStyle appointmentStyle = new AppointmentStyle();
+appointmentStyle.SelectionBorderColor = Color.Yellow;
+appointmentStyle.SelectionTextColor = Color.Yellow;
 
-    //Setting an appointment style 
-        schedule.AppointmentStyle = appointmentStyle;
- 
+//Setting an appointment style 
+schedule.AppointmentStyle = appointmentStyle;
 {% endhighlight %}
   
 {% highlight xaml %} 
- 
-    <syncfusion:SfSchedule x:Name="schedule" ScheduleView="DayView" DataSource="{Binding Meetings}">
-         <syncfusion:SfSchedule.AppointmentStyle>
-            <syncfusion:AppointmentStyle 
-                SelectionTextColor="Yellow" 
-                SelectionBorderColor="Yellow">
-             </syncfusion:AppointmentStyle>
-        </syncfusion:SfSchedule.AppointmentStyle>    
-    </syncfusion:SfSchedule> 
- 
+<syncfusion:SfSchedule x:Name="schedule" ScheduleView="DayView" DataSource="{Binding Meetings}">
+	<syncfusion:SfSchedule.AppointmentStyle>
+		<syncfusion:AppointmentStyle 
+			SelectionTextColor="Yellow" 
+			SelectionBorderColor="Yellow">
+		</syncfusion:AppointmentStyle>
+	</syncfusion:SfSchedule.AppointmentStyle>    
+</syncfusion:SfSchedule> 
 {% endhighlight %} 
 {% endtabs %} 
 

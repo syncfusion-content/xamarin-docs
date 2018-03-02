@@ -27,9 +27,9 @@ countryNames.Add("Akrotiri");
 countryNames.Add("Algeria");
 countryNames.Add("Andorra");
 countryNames.Add("Angola");
-countryNames.Add("Antartica");
+countryNames.Add("Antarctica");
 countryNames.Add("Argentina");
-countryNames.Add("Armerica");
+countryNames.Add("America");
 countryNames.Add("Aruba");
 autoComplete.DataSource = countryNames;
 

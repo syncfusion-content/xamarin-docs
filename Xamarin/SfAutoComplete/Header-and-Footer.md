@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Header and Footer
 
-We can provide Header and Footer content in the SfAutoComplete by enabling `ShowDropDownHeaderView` and `ShowDropDownFooterView`. 
+We can provide Header and Footer view in the suggestion list in SfAutoComplete by enabling `ShowDropDownHeaderView` and `ShowDropDownFooterView`. 
 
 ## Header Content
 

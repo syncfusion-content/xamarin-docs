@@ -151,6 +151,8 @@ public int ID
         RaisePropertyChanged("ID");
     }
 }
+{% endhighlight %}
+{% endtabs %}
 
 ### Using event
 

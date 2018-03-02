@@ -311,7 +311,7 @@ dataForm.RegisterEditor("Salary", "Slider");
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/SliderEditor.png)
+![](SfDataForm_images/Editing_SliderEditor.png)
 
 ## Support for password editor
 
@@ -340,7 +340,7 @@ dataForm.RegisterEditor("Password", "PassWord");
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/PasswordEditor.png)
+![](SfDataForm_images/Editing_PasswordEditor.png)
 
 ## Support for Email editor
 
@@ -357,7 +357,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/EmailEditor.png)
+![](SfDataForm_images/Editing_EmailEditor.png)
 
 ## Commit mode
 

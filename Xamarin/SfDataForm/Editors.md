@@ -253,7 +253,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/DateEditorFormat.png)
+![](SfDataForm_images/Editors_DateFormat.png)
 
 ### Setting MaximumDate and MinimumDate in date editor
 
@@ -275,7 +275,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/DateEditorMax.png)
+![](SfDataForm_images/Editors_DateMaximum.png)
 
 ## Drop down editor
 
@@ -343,7 +343,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/DropDownItems.png)
+![](SfDataForm_images/Editors_DropDownItems.png)
 
 N> `DropDownEditor` not supported in `Xamarin.FormsiOS` platform.
 
@@ -369,7 +369,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/PickerTitle.png)
+![](SfDataForm_images/Editors_PickerTitle.png)
 
 ### Customizing ItemsSource of Picker
 
@@ -564,7 +564,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/NumericCulture.png)
+![](SfDataForm_images/Editors_NumericCulture.png)
 
 #### SfNumericUpDown
 

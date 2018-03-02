@@ -166,7 +166,7 @@ public DateTime JoinDate
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/Validation3.png)
+![](SfDataForm_images/Validation.png)
 
 ## Validation mode
 
@@ -319,7 +319,7 @@ public string Name
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/ValidMessage.png)
+![](SfDataForm_images/Validation_ValidMessage.png)
 
 ## How to validate the property value based on another value
 

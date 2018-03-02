@@ -436,8 +436,8 @@ The following code example gives you the complete code of above configurations.
   </chart:SfChart>
 
 </ContentPage>
-  
- {% endhighlight %}
+ 
+{% endhighlight %}
 
 {% highlight C# %} 
 

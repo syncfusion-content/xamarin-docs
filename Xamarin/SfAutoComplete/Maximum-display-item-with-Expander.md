@@ -23,7 +23,6 @@ Restrict the number of suggestions displayed and have the remaining items loaded
 {% highlight c# %}
 
 List<String> countryNames = new List<String>();
-countryNames.Add("Akrotiri");
 countryNames.Add("Algeria");
 countryNames.Add("Andorra");
 countryNames.Add("Angola");

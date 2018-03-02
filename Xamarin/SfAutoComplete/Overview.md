@@ -25,7 +25,7 @@ Essential AutoComplete for Xamarin.Forms provides a simpler way to complete the 
 
 * Customization support -  AutoComplete provide options to customize both the Entry and Suggestion drop down.
 
-* Multiple Selection - AutoComplete provides 2 different ways to select multiple items from the suggestion list. They are using Token representation and Delimiter.
+* Multiple Selection - AutoComplete provides 2 different ways to select multiple items from the suggestion list. They are using Token representation and Delimiter. In Token mode, the text can be wrapped in two ways. They are Wrap and None. In Wrap mode text will be wrap to next line. When using None, the text will be wrapped horizontally.
 
 * Load More - Restrict the number of suggestions displayed and have the remaining items loaded by selecting LoadMore.
 

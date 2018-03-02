@@ -33,7 +33,7 @@ You can resolve this issue by using anyone of the following steps.
 
    ![](images/img2.png)
 
-3. If the above steps did not resolve the error, move the Xamarin folder to a shorter path, manually. You can find the folder under (if you have not moved the samples folder during installation).
+3. If the above steps did not resolve the error, move the Xamarin folder to a shorter path, manually. You can find the folder under (if you have not moved the samples folder during installation),
    
    {C:\Users\Public\Documents\Syncfusion\{version}\}
 

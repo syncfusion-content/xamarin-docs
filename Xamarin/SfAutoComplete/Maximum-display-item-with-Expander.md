@@ -29,7 +29,7 @@ countryNames.Add("Andorra");
 countryNames.Add("Angola");
 countryNames.Add("Antartica");
 countryNames.Add("Argentina");
-countryNames.Add("Armenia");
+countryNames.Add("Armerica");
 countryNames.Add("Aruba");
 autoComplete.DataSource = countryNames;
 

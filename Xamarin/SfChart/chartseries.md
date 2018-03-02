@@ -272,15 +272,23 @@ You can set an additional horizontal axis for an individual series by using the 
 
     <chart:SfChart.Series>
 
-        <chart:ColumnSeries ItemsSource="{Binding Data}" XBindingPath="Month" YBindingPath="Value">
+        <chart:SplineSeries ItemsSource="{Binding Data}" XBindingPath="Month" YBindingPath="Value">
 
-            <chart:ColumnSeries.XAxis>
+            <chart:SplineSeries.XAxis>
 
-                <chart:CategoryAxis OpposedPosition="true" />
+                 <chart:CategoryAxis OpposedPosition="true" >
 
-            </chart:ColumnSeries.XAxis>
+                    <chart:CategoryAxis.Title>
 
-        </chart:ColumnSeries>
+                        <chart:ChartAxisTitle Text="Year" /> 
+
+                    </chart:CategoryAxis.Title>
+
+                </chart:CategoryAxis>
+
+            </chart:SplineSeries.XAxis>
+
+        </chart:SplineSeries>
 
     </chart:SfChart.Series>
 
@@ -293,7 +301,7 @@ You can set an additional horizontal axis for an individual series by using the 
 SfChart chart = new SfChart();
 ...
 
-ColumnSeries series = new ColumnSeries();  
+SplineSeries series = new SplineSeries();  
 
 series.ItemsSource = Data;
 
@@ -304,6 +312,8 @@ series.YBindingPath = "Value";
 CategoryAxis seriesAxis = new CategoryAxis();
 
 seriesAxis.OpposedPosition = true;
+
+seriesAxis.Title.Text = "Year";
 
 series.XAxis = seriesAxis;
 
@@ -328,15 +338,23 @@ You can set an additional vertical axis for an individual series by using the [`
 
     <chart:SfChart.Series>
 
-        <chart:ColumnSeries ItemsSource="{Binding Data}" XBindingPath="Month" YBindingPath="Value">
+        <chart:SplineSeries ItemsSource="{Binding Data}" XBindingPath="Month" YBindingPath="Value">
 
-            <chart:ColumnSeries.YAxis>
+            <chart:SplineSeries.YAxis>
 
-                <chart:NumericalAxis OpposedPosition="true" />
+                <chart:NumericalAxis OpposedPosition="true" >
 
-            </chart:ColumnSeries.YAxis>
+                    <chart:NumericalAxis.Title>
 
-        </chart:ColumnSeries>
+                        <chart:ChartAxisTitle Text="Profit Percentage" /> 
+
+                    </chart:NumericalAxis.Title>
+
+                </chart:NumericalAxis>
+
+            </chart:SplineSeries.YAxis>
+
+        </chart:SplineSeries>
 
     </chart:SfChart.Series>
 
@@ -349,7 +367,7 @@ You can set an additional vertical axis for an individual series by using the [`
 SfChart chart = new SfChart();
 ...
 
-ColumnSeries series = new ColumnSeries();  
+SplineSeries series = new SplineSeries();  
 
 series.ItemsSource = Data;
 
@@ -360,6 +378,8 @@ series.YBindingPath = "Value";
 NumericalAxis seriesAxis = new NumericalAxis();
 
 seriesAxis.OpposedPosition = true;
+
+seriesAxis.Title.Text = "Profit Percentage";
 
 series.YAxis = seriesAxis;
 

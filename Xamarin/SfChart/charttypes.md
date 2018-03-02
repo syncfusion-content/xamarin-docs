@@ -313,17 +313,17 @@ The data can be provided to a spline range area chart by using the following two
 {% highlight c# %}
 [C#] 
 
-SfChart chart=new SfChart();
-. . .
+SfChart chart = new SfChart();
+...
 
 ObservableCollection<ChartDataPoint> data = new ObservableCollection<ChartDataPoint>()
 {
-    new ChartDataPoint("Jan/10", 30, 18),
-    new ChartDataPoint("Feb/10", 24, 12),
-    new ChartDataPoint("Mar/10", 29, 15),
-    new ChartDataPoint("Apr/10", 24, 10),
-    new ChartDataPoint("May/10", 30, 18),
-    new ChartDataPoint("Jun/10", 24, 10),
+     new ChartDataPoint("Jan", 30, 18),
+     new ChartDataPoint("Feb", 24, 12),
+     new ChartDataPoint("Mar", 29, 15),
+     new ChartDataPoint("Apr", 24, 10),
+     new ChartDataPoint("May", 30, 18),
+     new ChartDataPoint("Jun", 24, 10),
 };
 
 SplineRangeAreaSeries splineRangeAreaSeries = new SplineRangeAreaSeries() 

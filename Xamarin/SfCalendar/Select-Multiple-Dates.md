@@ -15,7 +15,11 @@ Dates can be selected by making a touch on month view cells. The default Selecti
 
 * `MultiSelection` – More than one date can be selected in a random manner. Clicking again on selected dates can do deselection.
 
-The selected dates can be retrieved through `OnCalendarTapped` event which is raised on selecting.
+* `RangeSelection` – It allows us to select a single date range in SfCalendar month view.
+
+* `MultiRangeSelection` – More than one date range can be selected in a month view.
+
+The selected dates can be retrieved through `OnSelectionChanged` event which is raised on selecting.
 
 {% tabs %}
 
@@ -35,10 +39,46 @@ this.Content = calendar;
 
 {% endtabs %}
 
-N> In range selection, navigation through swipe will be restricted and moving between months can be done by clicking on navigation button available at the top corner of SfCalendar control.
-
 ![](images/Selection.png)
 
+N> In range selection, navigation through swipe will be restricted and moving between months can be done by clicking on navigation button available at the top corner of SfCalendar control.
 
+{% tabs %}
 
+{% highlight xaml %}
 
+<syncfusion:SfCalendar  x:Name="calendar" SelectionMode="RangeSelection"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+![](images/RangeSelection.png)
+
+SfCalendar calendar = new SfCalendar();	
+calendar.SelectionMode=SelectionMode.RangeSelection;
+this.Content = calendar;
+	
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfCalendar  x:Name="calendar" SelectionMode="MultiRangeSelection"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+	
+SfCalendar calendar = new SfCalendar();	
+calendar.SelectionMode=SelectionMode.MultiRangeSelection;
+this.Content = calendar;
+	
+{% endhighlight %}
+
+{% endtabs %}
+
+![](images/MultiRangeSelection.png)

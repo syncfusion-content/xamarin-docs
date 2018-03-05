@@ -11,14 +11,14 @@ documentation: ug
 
 # Annotations
 
-`SfCircularGauge` supports `Annotations`, and it allows you to mark the specific area of interest in `SfCircularGauge`. Custom shapes can be drawn, and text and images also can be added by using `Annotations`.
+[`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge.html) supports [`Annotations`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge~Annotations.html), and it allows you to mark the specific area of interest in Circular Gauge. Custom view can be placed, and text and images also can be added by using [`Annotations`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge~Annotations.html).
 
-## Sub Gauge
+##  Setting sub gauge for Annotation
 
 When the annotation allows to place custom elements, a gauge can be initialized to the element, and it can be used to place that in another gauge. The Following properties are used to customize the `Annotations`:-
 
-* `Angle` - Used to place the `View` at the given `Angle`. 
-* `Offset` - Used to move the `View` from center to edge of the `SfCircularGauge`. The value should be range from 0 to 1.
+* [`Angle`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.GaugeAnnotation~Angle.html) - Used to place the `View` at the given `Angle`. 
+* [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.GaugeAnnotation~Offset.html) - Used to move the `View` from center to edge of the `SfCircularGauge`. The value should be range from 0 to 1.
 
 The following code is used to create the `Annotations`.
 
@@ -27,28 +27,380 @@ The following code is used to create the `Annotations`.
 {% highlight xaml %}
   
     
-    <gauge:SfCircularGauge.Annotations>
-        <gauge:GaugeAnnotation Angle="180" Offset="0.5">
-            <gauge:GaugeAnnotation.View>
-                <gauge:SfCircularGauge x:Name="gauge" />
-            </gauge:GaugeAnnotation.View>
-        </gauge:GaugeAnnotation>
-	</gauge:SfCircularGauge.Annotations>
+    <gauge:SfCircularGauge HeightRequest="80" WidthRequest="80">
+	  
+            <gauge:SfCircularGauge.Annotations>		
+                <gauge:GaugeAnnotation Angle="90" Offset="0.5">
+                    <gauge:GaugeAnnotation.View>
+                        <gauge:SfCircularGauge HeightRequest="80" WidthRequest="80">
+                            <gauge:SfCircularGauge.Annotations>
+                                <gauge:GaugeAnnotation Angle="270" Offset="0.5">
+                                    <gauge:GaugeAnnotation.View>
+                                        <Label Text="10s" FontSize="12" HeightRequest="20" WidthRequest="35" TextColor="Black"
+                                                          HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                                    </gauge:GaugeAnnotation.View>
+                                </gauge:GaugeAnnotation>
+                            </gauge:SfCircularGauge.Annotations>
+							
+                            <gauge:SfCircularGauge.Scales>
+                                <gauge:Scale StartAngle="270" SweepAngle="360" ShowLabels="False" StartValue="0" EndValue="60" Interval="5"
+                                             RimColor="#EDEEEF">
+											 
+                                    <gauge:Scale.MajorTickSettings>
+                                        <gauge:TickSettings Color="Black" StartOffset="1" EndOffset="0.85" Thickness="2"/>
+                                    </gauge:Scale.MajorTickSettings>
+									
+                                    <gauge:Scale.MinorTickSettings>
+                                        <gauge:TickSettings Color="Black" StartOffset="1" EndOffset="0.90" Thickness="0.5"/>
+                                    </gauge:Scale.MinorTickSettings>
+									
+                                    <gauge:Scale.Ranges>
+                                        <gauge:Range StartValue="0" EndValue="30" Color="Gray" InnerStartOffset="0.925"
+                                                     OuterStartOffset="1" InnerEndOffset="0.925" OuterEndOffset="1"/>
+                                    </gauge:Scale.Ranges>
+									
+                                    <gauge:Scale.Pointers>
+                                        <gauge:NeedlePointer Type="Triangle" KnobRadius="4" Thickness="3" EnableAnimation="False"
+                                                             Color="Black" KnobColor="Black"/>
+                                    </gauge:Scale.Pointers>
+									
+                                </gauge:Scale>
+                            </gauge:SfCircularGauge.Scales>
+							
+                        </gauge:SfCircularGauge>
+						
+                    </gauge:GaugeAnnotation.View>
+                </gauge:GaugeAnnotation>
+
+               
+                    <gauge:GaugeAnnotation Angle="0" Offset="0.5">
+                        <gauge:GaugeAnnotation.View>
+                            <Label x:Name="LabelAnnotation1" Text="4:55PM" FontSize="14" HeightRequest="25" WidthRequest="75" TextColor="Black"
+                                            HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                        </gauge:GaugeAnnotation.View>
+                    </gauge:GaugeAnnotation>
+               
+                    <gauge:GaugeAnnotation Angle="180" Offset="0.5">
+                        <gauge:GaugeAnnotation.View>
+                            <gauge:SfCircularGauge HeightRequest="80" WidthRequest="80">
+                            <gauge:SfCircularGauge.Annotations>
+                                <gauge:GaugeAnnotation Angle="270" Offset="0.5">
+                                    <gauge:GaugeAnnotation.View>
+                                        <Label x:Name="LabelAnnotation3" Text="55M" FontSize="12" HeightRequest="20" WidthRequest="35" TextColor="Black"
+                                               HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                                    </gauge:GaugeAnnotation.View>
+                                </gauge:GaugeAnnotation>
+
+                            </gauge:SfCircularGauge.Annotations>
+                            <gauge:SfCircularGauge.Scales>
+                                    <gauge:Scale StartAngle="270" SweepAngle="360" ShowLabels="False" StartValue="0" EndValue="60" Interval="5"
+                                             RimColor="#EDEEEF">
+											 
+                                        <gauge:Scale.MajorTickSettings>
+                                            <gauge:TickSettings Color="Black" StartOffset="1" EndOffset="0.85" Thickness="2"/>
+                                        </gauge:Scale.MajorTickSettings>
+										
+                                        <gauge:Scale.MinorTickSettings>
+                                            <gauge:TickSettings Color="Black" StartOffset="1" EndOffset="0.90" Thickness="0.5"/>
+                                        </gauge:Scale.MinorTickSettings>
+										
+                                        <gauge:Scale.Ranges>
+                                            <gauge:Range StartValue="0" EndValue="30" Color="Gray" InnerStartOffset="0.925"
+                                                     OuterStartOffset="1" InnerEndOffset="0.925" OuterEndOffset="1"/>
+                                        </gauge:Scale.Ranges>
+										
+                                        <gauge:Scale.Pointers>
+                                            <gauge:NeedlePointer Type="Triangle" KnobRadius="4" Thickness="3" EnableAnimation="False"
+                                                             Color="Black" KnobColor="Black"/>
+                                        </gauge:Scale.Pointers>
+										
+                                    </gauge:Scale>
+                                </gauge:SfCircularGauge.Scales>
+								
+                            </gauge:SfCircularGauge>
+							
+                        </gauge:GaugeAnnotation.View>
+                    </gauge:GaugeAnnotation>
+             
+            </gauge:SfCircularGauge.Annotations>
+
+            <gauge:SfCircularGauge.Scales>
+                <gauge:Scale StartAngle="270" SweepAngle="360" ShowLabels="False" StartValue="0" EndValue="12" Interval="1"
+                             RimColor="#EDEEEF" MinorTicksPerInterval="4" LabelColor="Gray" LabelOffset="0.8"
+                             ScaleEndOffset="0.925" LabelFontSize="14" ShowFirstLabel="False">
+							 
+                    <gauge:Scale.MajorTickSettings>
+                        <gauge:TickSettings Color="Black" StartOffset="1" EndOffset="0.9" Thickness="3"/>
+                    </gauge:Scale.MajorTickSettings>
+					
+                    <gauge:Scale.MinorTickSettings>
+                        <gauge:TickSettings Color="Black" StartOffset="1" EndOffset="0.95" Thickness="1"/>
+                    </gauge:Scale.MinorTickSettings>
+					
+                    <gauge:Scale.Ranges>
+                        <gauge:Range StartValue="0" EndValue="3" Color="Gray" InnerStartOffset="0.925"
+                                                     OuterStartOffset="1" InnerEndOffset="0.925" OuterEndOffset="1"/>
+                    </gauge:Scale.Ranges>
+					
+                    <gauge:Scale.Pointers>
+                        <gauge:NeedlePointer KnobRadius="6" Thickness="3.5" EnableAnimation="False"
+                                                       KnobStrokeWidth="5" TailLengthFactor="0.20" TailColor="Black" KnobStrokeColor="Black"  Color="Black" KnobColor="White" LengthFactor="0.75"/>
+                        <gauge:NeedlePointer KnobRadius="6" Type="Triangle" Thickness="5" EnableAnimation="False"
+                                                          Color="Black" KnobColor="White" LengthFactor="0.4"/>
+                        <gauge:NeedlePointer KnobRadius="6" Type="Triangle" Thickness="5" EnableAnimation="False"
+                                                          Color="Black" KnobColor="White" LengthFactor="0.65"/>
+
+                    </gauge:Scale.Pointers>
+					
+                </gauge:Scale>
+            </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
 	
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfCircularGauge circular = new SfCircularGauge();
-    SfCircularGauge gauge = new SfCircularGauge();
-    CircularGaugeAnnotationCollection annotations = new CircularGaugeAnnotationCollection();
-    GaugeAnnotation gaugeAnnotation = new GaugeAnnotation();
-    gaugeAnnotation.Angle = 180;
-    gaugeAnnotation.Offset = 0.5;
-    gaugeAnnotation.View = gauge;
+    Label LabelAnnotation1 = new Label();
+    LabelAnnotation1.Text = "4:55PM";
+    LabelAnnotation1.FontSize = 14;
+    LabelAnnotation1.HeightRequest = 25;
+    LabelAnnotation1.WidthRequest = 75;
+    LabelAnnotation1.TextColor = Color.Black;
+    LabelAnnotation1.HorizontalTextAlignment = TextAlignment.Center;
+    LabelAnnotation1.VerticalTextAlignment = TextAlignment.Center;
+	
+	Label LabelAnnotation2 = new Label();
+    LabelAnnotation2.Text = "10s";
+    LabelAnnotation2.FontSize = 12;
+    LabelAnnotation2.HeightRequest = 20;
+    LabelAnnotation2.WidthRequest = 35;
+    LabelAnnotation2.TextColor = Color.Black;
+    LabelAnnotation2.HorizontalTextAlignment = TextAlignment.Center;
+    LabelAnnotation2.VerticalTextAlignment = TextAlignment.Center;
+	
+	Label LabelAnnotation3 = new Label();
+    LabelAnnotation3.Text = "55M";
+    LabelAnnotation3.FontSize = 12;
+    LabelAnnotation3.HeightRequest = 20;
+    LabelAnnotation3.WidthRequest = 35;
+    LabelAnnotation3.TextColor = Color.Black;
+    LabelAnnotation3.HorizontalTextAlignment = TextAlignment.Center;
+    LabelAnnotation3.VerticalTextAlignment = TextAlignment.Center;
+	
+	SfCircularGauge Annotation1 = new SfCircularGauge();
+	
+	Annotation1.HeightRequest = Device.OnPlatform(70, 80, 100);
+    Annotation1.WidthRequest = Device.OnPlatform(70, 80, 100);
+			
+	GaugeAnnotation gaugeAnnotation = new GaugeAnnotation();
+    gaugeAnnotation.View = LabelAnnotation2;
+    gaugeAnnotation.Angle = 270;
+    gaugeAnnotation.Offset = .5;
     annotations.Add(gaugeAnnotation);
-    circularGauge.Annotations = annotations;
-    this.Content = circular;
+    Annotation1.Annotations = annotations;
+			
+	ObservableCollection<Scale> scales = new ObservableCollection<Scale>();
+    Scale scale = new Scale();
+    scale.StartAngle = 270;
+    scale.SweepAngle = 360;
+    scale.ShowLabels = false;
+    scale.StartValue = 0;
+    scale.EndValue = 60;
+    scale.Interval = 5;
+    scale.RimColor = Color.FromRgb(237, 238, 239);
+    scale.MajorTickSettings.Color = Color.Black;
+    scale.MajorTickSettings.StartOffset = 1;
+    scale.MajorTickSettings.EndOffset = .85;
+    scale.MajorTickSettings.Thickness = 2;
+    scale.MinorTickSettings.Color = Color.Black;
+    scale.MinorTickSettings.StartOffset = 1;
+    scale.MinorTickSettings.EndOffset = .90;
+    scale.MinorTickSettings.Thickness = 0.5;
+
+    ObservableCollection<Range> ranges = new ObservableCollection<Range>();
+    Range range = new Range();
+    range.StartValue = 0;
+    range.EndValue = 30;
+    range.Color = Color.Gray;
+    range.InnerStartOffset = 0.925;
+    range.OuterStartOffset = 1;
+    range.InnerEndOffset = 0.925;
+    range.OuterEndOffset = 1;
+    ranges.Add(range);
+    scale.Ranges = ranges;
+
+    ObservableCollection<Pointer> pointers = new ObservableCollection<Pointer>();
+    NeedlePointer needlePointer = new NeedlePointer();
+    needlePointer.Type = PointerType.Triangle;
+    needlePointer.KnobRadius = 4;
+    needlePointer.Thickness = 3;
+    needlePointer.EnableAnimation = false;
+    needlePointer.KnobColor = Color.Black;
+    needlePointer.Color = Color.Black;
+    pointers.Add(needlePointer);
+    scale.Pointers = pointers;
+
+    scales.Add(scale);
+    Annotation1.Scales = scales;
+			
+	Annotation1.Parent = this;
+			 
+	SfCircularGauge Annotation2 = new SfCircularGauge();
+
+    Annotation2.HeightRequest = Device.OnPlatform(70, 80, 100);
+    Annotation2.WidthRequest = Device.OnPlatform(70, 80, 100);
+
+    CircularGaugeAnnotationCollection annotations1 = new CircularGaugeAnnotationCollection();
+    GaugeAnnotation gaugeAnnotation1 = new GaugeAnnotation();
+    gaugeAnnotation1.View = LabelAnnotation3;
+    gaugeAnnotation1.Angle = 270;
+    gaugeAnnotation1.Offset = .5;
+    annotations1.Add(gaugeAnnotation1);
+    Annotation2.Annotations = annotations1;
+
+    ObservableCollection<Scale> scales1 = new ObservableCollection<Scale>();
+    Scale scale1 = new Scale();
+    scale1.StartAngle = 270;
+    scale1.SweepAngle = 360;
+    scale1.StartValue = 0;
+    scale1.EndValue = 60;
+    scale1.Interval = 5;
+    scale1.ShowLabels = false;
+    scale1.RimColor = Color.FromRgb(237, 238, 239);
+    scale1.MajorTickSettings.Color = Color.Black;
+    scale1.MajorTickSettings.StartOffset = 1;
+    scale1.MajorTickSettings.EndOffset = 0.85;
+    scale1.MajorTickSettings.Thickness = 2;
+    scale1.MinorTickSettings.Color = Color.Black;
+    scale1.MinorTickSettings.StartOffset = 1;
+    scale1.MinorTickSettings.EndOffset = 0.90;
+    scale1.MinorTickSettings.Thickness = 0.5;
+
+    ObservableCollection<Range> ranges1 = new ObservableCollection<Range>();
+    Range range1 = new Range();
+    range1.StartValue = 0;
+    range1.EndValue = 30;
+    range1.Color = Color.Gray;
+    range1.InnerStartOffset = 0.925;
+    range1.OuterStartOffset = 1;
+    range1.InnerEndOffset = 0.925;
+    range1.OuterEndOffset = 1;
+    ranges1.Add(range1);
+    scale1.Ranges = ranges1;
+
+    ObservableCollection<Pointer> pointers1 = new ObservableCollection<Pointer>();
+    NeedlePointer needlePointer1 = new NeedlePointer();
+    needlePointer1.Type = PointerType.Triangle;
+    needlePointer1.KnobRadius = 4;
+    needlePointer1.Thickness = 3;
+    needlePointer1.EnableAnimation = false;
+    needlePointer1.KnobColor = Color.Black;
+    needlePointer1.Color = Color.Black;
+    pointers1.Add(needlePointer1);
+    scale1.Pointers = pointers1;
+
+    scales1.Add(scale1);
+    Annotation2.Scales = scales1;
+
+    Annotation2.Parent = this;
+
+    SfCircularGauge gauge = new SfCircularGauge();          
+    CircularGaugeAnnotationCollection annotations3 = new CircularGaugeAnnotationCollection();
+
+    GaugeAnnotation gaugeAnnotation2 = new GaugeAnnotation();
+    gaugeAnnotation2.View = Annotation1;
+    gaugeAnnotation2.Angle = 90;
+    gaugeAnnotation2.Offset = Device.OnPlatform(.5, .5, .6);
+    annotations3.Add(gaugeAnnotation2);
+
+    GaugeAnnotation gaugeAnnotation3 = new GaugeAnnotation();
+    gaugeAnnotation3.View = LabelAnnotation1;
+    gaugeAnnotation3.Angle = 00;
+    gaugeAnnotation3.Offset = .5;
+    annotations3.Add(gaugeAnnotation3);
+
+    GaugeAnnotation gaugeAnnotation4 = new GaugeAnnotation();
+    gaugeAnnotation4.View = Annotation2;
+    gaugeAnnotation4.Angle = 180;
+    gaugeAnnotation4.Offset = Device.OnPlatform(.5, .5, .6);
+    annotations3.Add(gaugeAnnotation4);
+    gauge.Annotations = annotations3;
+
+    ObservableCollection<Scale> scales2 = new ObservableCollection<Scale>();
+    Scale scale2 = new Scale();
+    scale2.StartValue = 0;
+    scale2.EndValue = 12;
+    scale2.Interval = 1;
+    scale2.MinorTicksPerInterval = 4;
+    scale2.RimColor = Color.FromRgb(237, 238, 239);
+    scale2.LabelColor = Color.Gray;
+    scale2.LabelOffset = Device.OnPlatform(.8, .8, .875);
+    scale2.ScaleEndOffset = .925;
+    scale2.StartAngle = 270;
+    scale2.SweepAngle = 360;
+    scale2.LabelFontSize = 14;
+    scale2.ShowFirstLabel = false;
+    scale2.MinorTickSettings.Color = Color.Black;
+    scale2.MinorTickSettings.StartOffset = 1;
+    scale2.MinorTickSettings.EndOffset = 0.95;
+    scale2.MinorTickSettings.Thickness = 1;
+    scale2.MajorTickSettings.Color = Color.Black;
+    scale2.MajorTickSettings.StartOffset = 1;
+    scale2.MajorTickSettings.EndOffset = 0.9;
+    scale2.MajorTickSettings.Thickness = 3;
+
+    ObservableCollection<Range> ranges2 = new ObservableCollection<Range>();
+    Range range2 = new Range();
+    range2.StartValue = 0;
+    range2.EndValue = 3;
+    range2.Color = Color.Gray;
+    range2.InnerStartOffset = 0.925;
+    range2.OuterStartOffset = 1;
+    range2.InnerEndOffset = 0.925;
+    range2.OuterEndOffset = 1;
+    ranges2.Add(range2);
+    scale2.Ranges = ranges2;
+
+    ObservableCollection<Pointer> pointers2 = new ObservableCollection<Pointer>();
+    NeedlePointer needlePointer2 = new NeedlePointer();
+    needlePointer2.EnableAnimation = false;
+    needlePointer2.KnobRadius = 6;
+    needlePointer2.LengthFactor = .75;
+    needlePointer2.KnobColor = Color.White;
+    needlePointer2.Color = Color.Black;
+    needlePointer2.Thickness = 3.5;
+    needlePointer2.KnobStrokeColor = Color.Black;
+    needlePointer2.KnobStrokeWidth = 5;
+    needlePointer2.TailLengthFactor = 0.20;
+    needlePointer2.TailColor = Color.Black;
+    pointers2.Add(needlePointer2);
+
+    NeedlePointer needlePointer3 = new NeedlePointer();
+    needlePointer3.EnableAnimation = false;
+    needlePointer3.KnobRadius = 6;
+    needlePointer3.LengthFactor = .4;
+    needlePointer3.KnobColor = Color.White;
+    needlePointer3.Color = Color.Black;
+    needlePointer3.Thickness = 5;
+    needlePointer3.Type = PointerType.Triangle;
+    pointers2.Add(needlePointer3);
+
+    NeedlePointer needlePointer4 = new NeedlePointer();
+    needlePointer4.EnableAnimation = false;
+    needlePointer4.KnobRadius = 6;
+    needlePointer4.LengthFactor = .65;
+    needlePointer4.KnobColor = Color.White;
+    needlePointer4.Color = Color.Black;
+    needlePointer4.Thickness = 5;
+    needlePointer4.Type = PointerType.Triangle;
+    pointers2.Add(needlePointer4);
+
+    scale2.Pointers = pointers2;
+
+    scales2.Add(scale2);
+    gauge.Scales = scales2;
+    
     
 {% endhighlight %}
 

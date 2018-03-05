@@ -24,12 +24,22 @@ When the SfListView is loaded inside StackLayout, set the `HorizontalOptions` an
 When the SfListView is loaded inside ScrollView or any layout such as Grid, StackLayout etc. into the StackLayout, set the `VerticalOptions` and `HorizontalOptions` of immediate parent as `LayoutOptions.FillAndExpand`.
 
 {% highlight xaml %}
-<StackLayout>
-  <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-    <syncfusion:SfListView x:Name="listView" ItemsSource="{Binding BookInfo}" />
-  </ScrollView>
-</StackLayout>
+<local:ExtScrollView x:Name="scrollView" >
+   <sync:SfListView x:Name="listView" ItemsSource="{Binding BookInfo}"/>
+</local:ExtScrollView>
 {% endhighlight %}
+{% highlight C# %}
+ public class ExtScrollView: ScrollView
+ {    
+     protected override void LayoutChildren(double x, double y, double width, double height)
+     {
+         this.Content.HeightRequest = height;
+         base.LayoutChildren(x, y, width, height);
+     }
+}
+{% endhighlight %}
+
+You can download the entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfListViewSample197024233.zip).
 
 ## Load SfListView inside SfPullToRefresh
 

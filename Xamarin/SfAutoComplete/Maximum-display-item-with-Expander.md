@@ -15,7 +15,7 @@ Restrict the number of suggestions displayed and have the remaining items loaded
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<autocomplete:SfAutoComplete HeightRequest="40" LoadMoreText= "LoadMore" x:Name="autoComplete" MaximumSuggestion="3"  />                    
+	<autocomplete:SfAutoComplete HeightRequest="40" MultiSelectMode="Delimiter" Delimiter="," LoadMoreText= "LOAD MORE" x:Name="autoComplete" MaximumSuggestion="3"  />                    
 </StackLayout> 
 
 {% endhighlight %}

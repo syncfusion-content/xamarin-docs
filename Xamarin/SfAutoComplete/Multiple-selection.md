@@ -59,8 +59,9 @@ The selected item can be displayed as token inside SfAutoComplete in two ways. T
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" MultiSelectMode="Token" TokensWrapMode="Wrap"/>                    
-</StackLayout> 
+    <autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" DropDownItemHeight="50" DisplayMemberPath="Name" ImageMemberPath="Image" MultiSelectMode="Token" TokensWrapMode="Wrap" DataSource="{Binding EmployeeCollection}">
+    </autocomplete:SfAutoComplete>
+</StackLayout>
 
 {% endhighlight %}
 
@@ -72,15 +73,92 @@ countryNames.Add("Ukraine");
 countryNames.Add("United Arab Emirates");
 countryNames.Add("United Kingdom");
 countryNames.Add("United States");
-autoComplete.MaximumSuggestion=3;
-autoComplete.MultiSelectMode=MultiSelectMode.Token;
 autoComplete.TokensWrapMode=TokensWrapMode.Wrap;
-autoComplete.DataSource = countryNames;
 
+
+
+        public class Employee
+{
+    private string image;
+    public string Image
+    {
+        get { return image; }
+        set { image = value; }
+    }
+    private string name;
+    public string Name
+    {
+        get { return name; }
+        set { name = value; }
+    }
+}
+
+public class EmployeeViewModel :INotifyPropertyChanged
+{
+    private ObservableCollection<Employee> employeeCollection;
+    public ObservableCollection<Employee> EmployeeCollection
+    {
+        get { return employeeCollection; }
+        set { employeeCollection = value; }
+    }
+    public EmployeeViewModel()
+    {
+        employeeCollection = new ObservableCollection<Employee>();
+        employeeCollection.Add(new Employee() { Image = "a0.png", Name = "John" });
+        employeeCollection.Add(new Employee() { Image = "a1.png", Name = "James" });
+        employeeCollection.Add(new Employee() { Image = "a2.png", Name = "Jacob" });
+        employeeCollection.Add(new Employee() { Image = "a3.png", Name = "Joy" });
+        employeeCollection.Add(new Employee() { Image = "a4.png", Name = "Justin" });
+        employeeCollection.Add(new Employee() { Image = "a5.png", Name = "Jerome" });
+        employeeCollection.Add(new Employee() { Image = "b0.png", Name = "Jessica" });
+        employeeCollection.Add(new Employee() { Image = "b1.png", Name = "Victoria" });
+       
+    }
+
+    public int GetHeight(bool value)
+        {
+            if (value)
+                return 80;
+            return 80;
+        }
+
+        private int toHeight = 40;
+        public int ToHeight
+        {
+            get { return toHeight; }
+            set
+            {
+                toHeight = value;
+                RaisePropertyChanged("ToHeight");
+            }
+        }
+        private bool isToFocused = false;
+        public bool IsToFocused
+        {
+            get { return isToFocused; }
+            set
+            {
+                isToFocused = value;
+                ToHeight = GetHeight(value);
+                RaisePropertyChanged("IsToFocused");
+            }
+        }
+        public event PropertyChangedEventHandler PropertyChanged;
+        private void RaisePropertyChanged(String name)
+        {
+            if (PropertyChanged != null)
+                this.PropertyChanged(this, new PropertyChangedEventArgs(name));
+        }
+    }
+}
+
+}
 {% endhighlight %}
 
 {% endtabs %}
 
+
+![](images/MultiSelect/TokenRepresentation_Wrap.png)
  
 ### Token Customization
 
@@ -156,7 +234,7 @@ public partial class autocompletePage : ContentPage
     }
 }
 
-public class EmployeeViewModel
+public class EmployeeViewModel :INotifyPropertyChanged
 {
     private ObservableCollection<Employee> employeeCollection;
     public ObservableCollection<Employee> EmployeeCollection
@@ -189,7 +267,7 @@ public class EmployeeViewModel
 
 ## Delimiter
 
-When selecting the multiple items, the selected items can be divided with a desired character given for a delimiter. We can set delmiter character with the `Delimiter` property.
+When selecting the multiple items, the selected items can be divided with a desired character given for a delimiter. We can set delimiter character with the `Delimiter` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -203,11 +281,10 @@ When selecting the multiple items, the selected items can be divided with a desi
 {% highlight c# %}
 
 List<String> countryNames = new List<String>();
-countryNames.Add("Akrotiri");
 countryNames.Add("Algeria");
 countryNames.Add("Andorra");
 countryNames.Add("Angola");
-countryNames.Add("Antartica");
+countryNames.Add("Antarctica");
 countryNames.Add("Argentina");
 countryNames.Add("Armenia");
 countryNames.Add("Aruba");

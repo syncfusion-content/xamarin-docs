@@ -18,7 +18,7 @@ ImageEditor allow us to change the position of shapes/Edits which are arranged o
 
 # BringToFront
 
-You can bring the desired shape into front over the all shapes by calling BringToFront method in SfImageEditor control.
+BringToFront is a method which is used to bring the selected object to the front of a group of elements on image.
 
 {% tabs %}
 
@@ -32,7 +32,7 @@ You can bring the desired shape into front over the all shapes by calling BringT
 
 ## SendToBack
 
-You can send the desired shape into back over the all shapes by calling SendToBack method in SfImageEditor control.
+SendToBack is a method which is used to Send the selected object to the Back of a group of elements on image.
 
 {% tabs %}
 
@@ -46,7 +46,7 @@ You can send the desired shape into back over the all shapes by calling SendToBa
 
 ### BringForward
 
-You can bring the desired shape into forward by one step over the all shapes by calling BringToForward method in SfImageEditor control.
+BringForward is a method which is used to bring the selected object to one step front of a group of elements on image
 
 {% tabs %}
 
@@ -60,7 +60,7 @@ You can bring the desired shape into forward by one step over the all shapes by 
 
 #### SendToBackward
 
-You can send the desired shape into backward by one step over the all shapes by calling SendToBackward method in SfImageEditor control.
+SendToBackward is a method which is used to send the selected object to one step backward of a group of elements on image.
 
 {% tabs %}
 

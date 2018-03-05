@@ -57,7 +57,7 @@ listView.LayoutManager = new GridLayout() { SpanCount = 2 };
 {% endhighlight%}
 {% endtabs %}
 
-The following screenshot shows the output of Grid layout. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewGridLayout1867232074).
+The following screenshot shows the output of Grid layout. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewGridLayout1923264609)
 
 ![](SfListView_images/SfListView-GridLayout.png)
 
@@ -69,10 +69,10 @@ The [SpanCount](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syn
 {% highlight xaml %}
  <syncfusion:SfListView.LayoutManager>
    <syncfusion:GridLayout>
-     <syncfusion:GridLayout.SpanCount>
+      <syncfusion:GridLayout.SpanCount>
        <OnPlatform x:TypeArguments="x:Int32">
          <OnPlatform.WinPhone>
-           <OnIdiom x:TypeArguments="x:Int32" Phone="2" Tablet="4" />
+           <OnIdiom x:TypeArguments="x:Int32" Phone="2" Tablet="4" Desktop="4"/>
          </OnPlatform.WinPhone>
          <OnPlatform.Android>
            <OnIdiom x:TypeArguments="x:Int32" Phone="2" Tablet="4" />
@@ -101,4 +101,3 @@ The following screenshot shows the output for tablet devices:
 
 ![](SfListView_images/SfListView-GridLayoutTablet.png)
 
-N> Xamarin considered the Windows desktop as Phone idiom while setting in XAML. So use C# code if considering Windows desktop also.

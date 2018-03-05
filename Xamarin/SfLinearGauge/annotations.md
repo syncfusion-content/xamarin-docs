@@ -248,7 +248,7 @@ You can adjust the annotation by specifying the [`ViewMargin`](https://help.sync
 
 You can align the annotation using the [`HorizontalAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearGaugeAnnotation~HorizontalAlignment.html) and [`VerticalAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearGaugeAnnotation~VerticalAlignment.html) properties.
 
-### Setting horizontal alingnment
+### Setting horizontal alignment
 
 {% tabs %}
 
@@ -311,7 +311,7 @@ You can align the annotation using the [`HorizontalAlignment`](https://help.sync
 
 ![](annotations_images/annotation5.png)
 
-### Setting vertical alingnment
+### Setting vertical alignment
 
 {% tabs %}
 

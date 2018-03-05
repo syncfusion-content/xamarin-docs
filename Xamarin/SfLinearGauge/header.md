@@ -136,7 +136,7 @@ You can customize the text of [`LinearHeader`](https://help.syncfusion.com/cr/cr
 
      SfLinearGauge linearGauge = new SfLinearGauge();
      LinearHeader linearHeader = new LinearHeader();
-     linearHeader.Text = "Therometer";
+     linearHeader.Text = "Thermometer";
      linearHeader.ForegroundColor = Color.DarkCyan;
      linearHeader.FontFamily = Device.RuntimePlatform == Device.iOS ? "Chalkduster" : Device.RuntimePlatform == Device.Android ? "algerian.ttf" : "Chiller";
      linearHeader.FontAttributes = FontAttributes.Bold;

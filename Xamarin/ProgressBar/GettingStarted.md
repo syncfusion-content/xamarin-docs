@@ -4,7 +4,7 @@ This section explains the steps required to work with progress bar in Xamarin.Fo
 
 ## Add progress bar reference
 
-Refer to this article to know how to obtain and reference Essential Studio components in your solution; then refer to this link to know about the assemblies required for adding progress bar to your project.
+Refer to this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation/) to know how to obtain and reference Essential Studio components in your solution; then refer to this link to know about the assemblies required for adding progress bar to your project.
 
 I>After adding the reference, an additional step is required for iOS and UWP projects. You should create an instance of the progress bar renderer in iOS and UWP projects as shown in this [KB article](https://www.syncfusion.com/kb/8560/how-to-resolve-progress-bar-not-rendering-issue-in-ios-and-uwp).
 
@@ -31,8 +31,6 @@ using Syncfusion.XForms.ProgressBar;
 
 There are two variants of progress bar: SfLinearProgressBar and SfCircularProgressBar. Each render the progress in its own shape such as rectangle and circle respectively. Initialize both the progress bar with a progress value using Progress property as shown in the following code snippet.
 
-N>By default, the value of progress should be specified between 0 and 100. If you need to specify progress value between 0 and 1, you should specify Minimum property to 0 and Maximum property to 1.
-
 {% tabs %} 
 
 {% highlight xaml %} 
@@ -55,6 +53,8 @@ SfCircularProgressBar circularProgressBar = new SfCircularProgressBar { Progress
 
 {% endtabs %} 
 
+N>By default, the value of progress should be specified between 0 and 100. If you need to specify progress value between 0 and 1, you should specify Minimum property to 0 and Maximum property to 1.
+
 Run the project, and check if you get following output to make sure that you have configured your project properly to add the progress bar.
 
 ![](overview_images/progressbar.png)
@@ -62,7 +62,7 @@ Run the project, and check if you get following output to make sure that you hav
 
 ## Enable indeterminate state
 
-When the progress of a task cannot be shown determinately, you can enable indeterminate state using IsIndeterminate property to let user know that some progress is happening in the background.
+When the progress of a task cannot be shown determinately, you can enable indeterminate state using [IsIndeterminate](https://help.syncfusion.com/cr/cref_files/xamarin/sfprogressbar/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.ProgressBarBase~IsIndeterminate.html) property to let user know that some progress is happening in the background.
 
 {% tabs %} 
 
@@ -89,7 +89,7 @@ SfCircularProgressBar circularProgressBar = new SfCircularProgressBar { IsIndete
 
 ## Enable segments
 
-To visualize the progress of a multiple sequential task, split the progress bar into the multiple segments by defining the **SegmentCount** property as shown in the following code.
+To visualize the progress of a multiple sequential task, split the progress bar into the multiple segments by defining the [SegmentCount](https://help.syncfusion.com/cr/cref_files/xamarin/sfprogressbar/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.ProgressBarBase~SegmentCount.html) property as shown in the following code.
 
 {% tabs %} 
 
@@ -116,7 +116,7 @@ SfCircularProgressBar circularProgressBar = new SfCircularProgressBar { Progress
 
 ## Apply colors
 
-You can customize the color of the progress indicator and track by defining the **ProgressColor** and **TrackColor** properties respectively.
+You can customize the color of the progress indicator and track by defining the [ProgressColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfprogressbar/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.ProgressBarBase~ProgressColor.html) and [TrackColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfprogressbar/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.ProgressBarBase~TrackColor.html) properties respectively.
 
 {% tabs %} 
 

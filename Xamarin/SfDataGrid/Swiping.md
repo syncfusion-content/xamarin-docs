@@ -266,7 +266,7 @@ N> Similarly, you can load two views using the `SfDataGrid.RightSwipeTemplate` w
 
 ## Customized swipe delete functionality
 
-Oerations such as deleting a row when swiping a data row from one extent to other in the view can be performed. 
+Operations such as deleting a row when swiping a data row from one extent to other in the view can be performed. 
 
 Refer to the following code example which illustrates how to delete a data row when swiping it from one extreme to other in the view:
 

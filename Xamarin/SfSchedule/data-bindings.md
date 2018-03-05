@@ -441,7 +441,9 @@ The default appearance of the appointment can be customized by using the [Appoi
 
 * [Customize appearance using Style](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#customize-appearance-using-style) 
 * [Customize appearance using Event](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#customize-appearance-using-event) 
-* [Customize appearance using Custom View](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#customize-appearance-using-custom-view) 
+* [Customize appearance using Custom View](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#customize-appearance-using-custom-view)
+* [Customize appearance using DataTemplate](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#customize-appearance-using-datatemplate)
+* [Customize appearance using DataTemplateSelector](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#customize-appearance-using-datatemplateselector)
 
 ### Customize appearance using Style
 Schedule appointment can be customized by setting appointment style properties such as [TextColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~TextColor.html), [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~TextStyle.html), [BorderColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~BorderColor.html), [BorderCornerRadius](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~BorderCornerRadius.html), [BorderWidth](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~BorderWidth.html) to the [AppointmentStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle.html) property of `SfSchedule`.
@@ -516,6 +518,127 @@ private void Schedule_OnAppointmentLoadedEvent(object sender, AppointmentLoadedE
 }
 {% endhighlight %}
 
+## Customize appearance using DataTemplate
+The default appearance of the Appointment can be customized by using the [AppointmentTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~AppointmentTemplate.html) property of the Schedule.
+
+{% highlight xaml %}
+<schedule:SfSchedule
+        x:Name="schedule"
+        AppointmentTemplate="{Binding AppointmentTemplate}">
+        <schedule:SfSchedule.BindingContext>
+            <samplelocal:DayAppointmentDataTemplate />
+        </schedule:SfSchedule.BindingContext>
+</schedule:SfSchedule>
+{% endhighlight %}
+
+### Creating a DataTemplate
+
+{% highlight c# %}
+public class DayAppointmentDataTemplate : DataTemplate
+{
+    public DataTemplate AppointmentTemplate { get; set; }
+
+    public DayAppointmentDataTemplate()
+    {
+        AppointmentTemplate = new DataTemplate(() =>
+        {
+            return new Button
+            {
+                Text = "Template",
+                TextColor = Color.White,
+                BackgroundColor = Color.Blue
+            };
+        });
+    }
+}
+{% endhighlight %}
+
+![](PopulatingAppointments_images/dayappointmenttemplate.png)
+
+## Customize appearance using DataTemplateSelector
+`DataTemplateSelector` can be used to choose a `DataTemplate` at runtime based on the value of a data-bound to Schedule appointment property through `AppointmentTemplate`. It provides multiple DataTemplates to be enabled for Schedule appointments, to customize the appearance of particular Appointment.
+
+{% highlight xaml %}
+<ContentPage.Resources>
+    <ResourceDictionary>
+        <samplelocal:AppointmentDataTemplateSelector x:Key="appointmentDataTemplateSelector" />
+    </ResourceDictionary>
+</ContentPage.Resources>
+
+<ContentPage.Content>
+    <schedule:SfSchedule
+            AppointmentTemplate="{StaticResource appointmentDataTemplateSelector}">
+            <schedule:SfSchedule.BindingContext>
+                <samplelocal:AppointmentDataTemplateSelector />
+            </schedule:SfSchedule.BindingContext>
+    </schedule:SfSchedule>
+</ContentPage.Content>
+
+{% endhighlight %}
+
+### Creating a DataTemplateSelector
+
+{% highlight c# %}
+
+public class AppointmentDataTemplateSelector : DataTemplateSelector
+{
+    public DataTemplate DayAppointmentTemplate { get; set; }
+    public DataTemplate AllDayAppointmentTemplate { get; set; }
+
+    public AppointmentDataTemplateSelector()
+    {
+        DayAppointmentTemplate = new DataTemplate(typeof(DayAppointmentTemplate));
+        AllDayAppointmentTemplate = new DataTemplate(typeof(AllDayAppointmentTemplate));
+    }
+
+    protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
+    {
+        if ((item as ScheduleAppointment).IsAllDay)
+            return AllDayAppointmentTemplate;
+        else
+            return DayAppointmentTemplate;
+    }
+}
+
+{% endhighlight %}
+
+Used button to display day appointment and Label to display all day appointment.
+
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<Button as Template for day Appointment>-->
+<Button xmlns="http://xamarin.com/schemas/2014/forms"
+        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+        x:Class="ScheduleUG.DayAppointmentTemplate"
+        BackgroundColor="{Binding Color}"
+        HorizontalOptions="FillAndExpand"
+        VerticalOptions="FillAndExpand"
+        Text="{Binding Subject}"
+        TextColor="White"
+        Image="{Binding Subject}">
+</Button>
+
+    .......
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<Label as Template for all day Appointment>-->
+<Label xmlns="http://xamarin.com/schemas/2014/forms"
+        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+        x:Class="ScheduleUG.AllDayAppointmentTemplate"
+        BackgroundColor="{Binding Color}"
+        Text="{Binding Subject}"
+        HorizontalOptions="FillAndExpand"
+        VerticalOptions="CenterAndExpand"
+        TextColor="White" FontSize="15"
+        HorizontalTextAlignment="Center"
+        VerticalTextAlignment="Center">
+</Label>
+
+{% endhighlight %}
+
+![](PopulatingAppointments_images/appointmenttemplate.png)
+
 ## Selection
 Schedule control has built-in events to handle tapped, double tapped and long pressed touch actions.
 
@@ -544,6 +667,68 @@ private void Schedule_CellDoubleTapped(object sender, CellTappedEventArgs e)
 private void Schedule_CellLongPressed(object sender, CellTappedEventArgs e)
 {
 }
+{% endhighlight %}
+
+### Commands
+Schedule commands allow data bindings to make method calls directly to a ViewModel, which supports tapped, double tapped, long pressed touch actions and visible date changed action.
+
+•    [CellTappedCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~CellTappedCommand.html)
+•    [CellDoubleTappedCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~CellDoubleTappedCommand.htmll)
+•    [CellLongPressedCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~CellLongPressedCommand.html)
+•    [VisibleDatesChangedCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~VisibleDatesChangedCommand.html)
+
+{% highlight xaml %}
+
+    <schedule:SfSchedule
+        CellTappedCommand="{Binding ScheduleCellTapped}"
+        CellDoubleTappedCommand="{Binding ScheduleCellDoubleTapped}"
+        CellLongPressedCommand="{Binding ScheduleCellLongPressed}"
+        VisibleDatesChangedCommand="{Binding ScheduleVisibleDatesChanged}">
+        <schedule:SfSchedule.BindingContext>
+            <samplelocal:ScheduleViewModel />
+        </schedule:SfSchedule.BindingContext>
+    </schedule:SfSchedule>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    public class ScheduleViewModel
+    {
+        public ICommand ScheduleCellTapped { get; set; }
+        public ICommand ScheduleCellDoubleTapped { get; set; }
+        public ICommand ScheduleCellLongPressed { get; set; }
+        public ICommand ScheduleVisibleDatesChanged { get; set; }
+
+        public ScheduleViewModel()
+        {
+            ScheduleCellTapped = new Command<CellTappedEventArgs>(CellTapped);
+            ScheduleCellDoubleTapped = new Command<CellTappedEventArgs>(DoubleTapped);
+            ScheduleCellLongPressed = new Command<CellTappedEventArgs>(LongPressed);
+            ScheduleVisibleDatesChanged = new Command<VisibleDatesChangedEventArgs>(VisibleDatesChanged);
+        }
+
+        private void CellTapped(CellTappedEventArgs args)
+        {
+            var selectedDateTime = args.Datetime;
+        }
+
+        private void DoubleTapped(CellTappedEventArgs args)
+        {
+            var selectedDateTime = args.Datetime;
+        }
+
+        private void LongPressed(CellTappedEventArgs args)
+        {
+            var selectedDateTime = args.Datetime;
+        }
+
+        private void VisibleDatesChanged(VisibleDatesChangedEventArgs args)
+        {
+            var visibleDates = args.visibleDates;
+        }
+    }
+
 {% endhighlight %}
 
 ### Selection customization

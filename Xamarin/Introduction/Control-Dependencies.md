@@ -650,6 +650,10 @@ This page lists the assemblies required for each control to be referred in each 
 <td>iOS</td>
 <td>Syncfusion.SfRadialMenu.iOS.dll<br/>Syncfusion.SfRadialMenu.XForms.iOS.dll<br/>Syncfusion.SfRadialMenu.XForms.dll<br/></td>
 </tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfRadialMenu.UWP.dll<br/>Syncfusion.SfRadialMenu.XForms.UWP.dll<br/>Syncfusion.SfRadialMenu.XForms.dll<br/>Syncfusion.SfShared.UWP.dll<br/></td>
+</tr>
 </table>
 
 ## SfRangeSlider

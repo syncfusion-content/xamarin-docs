@@ -15,7 +15,7 @@ Highlight matching characters in a suggestion list to pick an item with more cla
 
 * MultipleOccurrence
 
-The text higlight can be indicated with various customising styles by enabling the below properties. They are
+The text highlight can be indicated with various customizing styles by enabling the below properties. They are
 
 * HighlightedTextColor -  sets the color of the highlighted text for differentiating the highlighted characters.
 
@@ -39,7 +39,7 @@ It highlights the first position of the matching characters in the suggestion li
 
 List<String> countryNames = new List<String>();
 countryNames.Add("Afghanistan");
-countryNames.Add("Akrotiri");
+countryNames.Add("Albania");
 countryNames.Add("Albania");
 countryNames.Add("Algeria");
 autoComplete.SuggestionMode= SuggestionMode.StartsWith;
@@ -56,7 +56,7 @@ autoComplete.DataSource = countryNames;
 
 ## MultipleOccurrence
 
-It higlights the matching character that are present everywhere in the suggestionlist for Contains case in SuggestionMode..
+It highlights the matching character that are present everywhere in the suggestion list for Contains case in SuggestionMode.
 
 {% tabs %}
 
@@ -72,7 +72,7 @@ It higlights the matching character that are present everywhere in the suggestio
 
 List<String> countryNames = new List<String>();
 countryNames.Add("Afghanistan");
-countryNames.Add("Akrotiri");
+countryNames.Add("Arabia");
 countryNames.Add("Albania");
 countryNames.Add("Algeria");
 autoComplete.SuggestionMode= SuggestionMode.Contains;

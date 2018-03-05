@@ -56,7 +56,7 @@ autoComplete.DataSource = countryNames;
 
 ## MultipleOccurrence
 
-It higlights the matching character that are present everywhere in the suggestionlist for Contains case in SuggestionMode..
+It highlights the matching character that are present everywhere in the suggestion list for Contains case in SuggestionMode.
 
 {% tabs %}
 

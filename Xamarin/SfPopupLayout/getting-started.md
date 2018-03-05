@@ -238,7 +238,7 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-This is how the final output will look like on iOS device.
+This is how the final output will look like on iOS, Android and Windows Phone devices.
 ![](GettingStarted_images/DefaultAppearance.png)
 
 ## Customizing Positioning

@@ -198,7 +198,7 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-This is how the final output will look like on iOS device.
+This is how the final output will look like on iOS, Android and Windows Phone devices.
 ![](PopupLayout_images/HeaderTemplate.png)
 
 ### Footer customization
@@ -264,7 +264,7 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-This is how the final output will look like on iOS device.
+This is how the final output will look like on iOS, Android and Windows Phone devices.
 ![](PopupLayout_images/FooterTemplate.png)
 
 ### How to hide Header in SfPopupLayout ?
@@ -285,7 +285,7 @@ public MainPage()
 }
 {% endhighlight %}
 
-This is how the final output will look like on iOS device.
+This is how the final output will look like on iOS, Android and Windows Phone devices.
 ![](PopupLayout_images/ShowHeader_False.png)
 
 ### How to hide Footer in SfPopupLayout ?
@@ -306,7 +306,7 @@ public MainPage()
 }
 {% endhighlight %}
 
-This is how the final output will look like on iOS device.
+This is how the final output will look like on iOS, Android and Windows Phone devices.
 ![](PopupLayout_images/ShowFooter_False.png)
 
 ### How to hide the close button in SfPopupLayout ?
@@ -327,7 +327,7 @@ public MainPage()
 }
 {% endhighlight %}
 
-This is how the final output will look like on iOS device.
+This is how the final output will look like on iOS, Android and Windows Phone devices.
 ![](PopupLayout_images/ShowClosebutton_False.png)
 
 # Styles
@@ -389,7 +389,7 @@ public MainPage()
 
 {% endhighlight %}
 
-This is how the final output will look like on iOS device.
+This is how the final output will look like on iOS, Android and Windows Phone devices.
 ![](PopupLayout_images/HeaderCustomization.png)
 
 ## Customizing Footer elements
@@ -447,7 +447,7 @@ public MainPage()
 
 {% endhighlight %}
 
-This is how the final output will look like on iOS device.
+This is how the final output will look like on iOS, Android and Windows Phone devices.
 ![](PopupLayout_images/FooterCustomization.png)
 
 ## Border Customization
@@ -491,5 +491,5 @@ public MainPage()
 
 {% endhighlight %}
 
-This is how the final output will look like on iOS device.
+This is how the final output will look like on iOS, Android and Windows Phone devices.
 ![](PopupLayout_images/BorderCustomization.png)

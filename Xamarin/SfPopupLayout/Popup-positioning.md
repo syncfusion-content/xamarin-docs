@@ -91,7 +91,7 @@ namespace GettingStarted
 
 N> SfPopupLayout.IsOpen property is not applicable for Type B.
 
-If we run the above sample, the below output will appear on iOS device as shown below.
+If we run the above sample, the below output will appear on iOS, Android and Windows Phone devices as shown below.
 ![](GettingStarted_images/IsOpen_Property.png)
 
 ### SfPopupLayout.Show()
@@ -141,7 +141,7 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-If we run the above sample, the below output will appear on iOS device as shown below.
+If we run the above sample, the below output will appear on iOS, Android and Windows Phone devices as shown below.
 ![](GettingStarted_images/ShowPopup.png)
 
 ## Absolute Positioning
@@ -193,7 +193,7 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-If we run the above sample, the below output will appear on iOS device as shown below.
+If we run the above sample, the below output will appear on iOS, Android and Windows Phone devices as shown below.
 ![](GettingStarted_images/ShowAtXYPosition.png)
 
 ### SfPopupLayout.ShowAtTouchPoint()
@@ -245,7 +245,7 @@ namespace GettingStarted
 
 N> SfPopupLayout.ShowAtTouchPoint() is not applicable for Type B.
 
-If we run the above sample, the below output will appear on iOS device as shown below.
+If we run the above sample, the below output will appear on iOS, Android and Windows Phone devices as shown below.
 ![](GettingStarted_images/ShowAtTouchPoint.png)
 
 ## Relative Positioning

@@ -267,7 +267,7 @@ public class EmployeeViewModel :INotifyPropertyChanged
 
 ## Delimiter
 
-When selecting the multiple items, the selected items can be divided with a desired character given for a delimiter. We can set delmiter character with the `Delimiter` property.
+When selecting the multiple items, the selected items can be divided with a desired character given for a delimiter. We can set delimiter character with the `Delimiter` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -281,11 +281,10 @@ When selecting the multiple items, the selected items can be divided with a desi
 {% highlight c# %}
 
 List<String> countryNames = new List<String>();
-countryNames.Add("Akrotiri");
 countryNames.Add("Algeria");
 countryNames.Add("Andorra");
 countryNames.Add("Angola");
-countryNames.Add("Antartica");
+countryNames.Add("Antarctica");
 countryNames.Add("Argentina");
 countryNames.Add("Armenia");
 countryNames.Add("Aruba");

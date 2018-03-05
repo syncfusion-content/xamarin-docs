@@ -172,6 +172,7 @@ return node;
 {% endhighlight %}
 {% endtabs %}
 The flow chart will get displayed in the SfDiagram as follows
+
 ![](Getting-Started_images/Getting-Started_img1.jpeg)
 
 This demo project can be downloaded from the following link [GettingStarted_Demo.](http://files2.syncfusion.com/Xamarin.Forms/Samples/Gettingstarted_SfDiagram.zip)
@@ -229,7 +230,7 @@ employees.Add(new Employee() { Name = "Yang", Employee_Id = "3", ParentId = "1",
 employees.Add(new Employee() { Name = "Yoshi", Employee_Id = "4", ParentId = "2", Designation = "Team Lead" });
 employees.Add(new Employee() { Name = "Philip", Employee_Id = "5", ParentId = "2", Designation = "S/w Developer" });
 employees.Add(new Employee() { Name = "Roland", Employee_Id = "6", ParentId = "3", Designation = "TeamLead" });
-employees.Add(new Employee() { Name = "Yuonne", Employee_Id = "7", ParentId = "3", Designation = "Testing Engineer" });
+employees.Add(new Employee() { Name = "Yvonne", Employee_Id = "7", ParentId = "3", Designation = "Testing Engineer" });
 //Initializes the DataSourceSettings
 diagram.DataSourceSettings = new DataSourceSettings() { DataSource = employees, Id = "Employee_Id", ParentId = "ParentId" };
 //Initializes the Layout

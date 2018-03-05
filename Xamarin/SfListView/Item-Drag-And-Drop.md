@@ -120,7 +120,7 @@ listView.ItemTemplate = new DataTemplate(() =>
 {% endhighlight %}
 {% endtabs %}
 
-The screenshot shows the output of reordering items by drag and drop. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ITEMDR~1-296035285.ZIP).
+The screenshot shows the output of reordering items by drag and drop. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ItemReordering-980925056).
 
 ![](SfListView_images/SfListView-ItemReordering.gif)
 
@@ -218,8 +218,8 @@ To cancel dropping for the dragged item, handle the [ItemDragging](https://help.
 private void ListView_ItemDragging(object sender, ItemDraggingEventArgs e)
 {
   // Cancel the dropping if drop the drag item into out of view.
-  var listview = sender as ListView;
-  var totalExtent = listview.GetVisualContainer().Bounds.Bottom;
+  var listView = sender as ListView;
+  var totalExtent = listView.GetVisualContainer().Bounds.Bottom;
   if (e.Action == DragAction.Drop && (e.Bounds.Y < -30 || e.Bounds.Bottom > totalExtent + 40))
     e.Cancel = true;
 }
@@ -227,19 +227,10 @@ private void ListView_ItemDragging(object sender, ItemDraggingEventArgs e)
 
 ## Reorder the underlying collection 
 
-The underlying collection can be reordered directly by handling [ItemDragging](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemDragging_EV.html) event. To make permanent reordering changes, follow the code example:
+The underlying collection can be reordered directly by setting the [UpdateSource](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.DragDropController~UpdateSource.html) property to `true`. The default value is `false`. Refer the below code example.
 
 {% highlight c# %}
-private async void ListView_ItemDragging(object sender, ItemDraggingEventArgs e)
-{
-  // Reorder the item in underlying collection.
-  if (e.Action == DragAction.Drop)
-  {
-    await Task.Delay(100);
-    var collection = listView.BindingContext as ViewModel;
-    collection.ToDoList.Move(e.OldIndex, e.NewIndex);
-  }
-}
+this.listView.DragDropController.UpdateSource = true;
 {% endhighlight %}
 
 ## Delete item when dropping in a particular view
@@ -306,7 +297,7 @@ private async void ListView_ItemDragging(object sender, ItemDraggingEventArgs e)
 }
 {% endhighlight %}
 
-The screenshot shows the output of delete the dragged item when drop into a particular view. You can download the sample for above source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ITEMDR~1499947492.ZIP).
+The screenshot shows the output of delete the dragged item when drop into particular view. You can download the sample for above source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ItemDragAndDelete1298572945).
 
 ![](SfListView_images/SfListView-ItemReordering1.gif)
 
@@ -360,7 +351,7 @@ private GroupResult GetGroup(object itemData)
 }
 {% endhighlight %}
 
-Download the sample for above source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ITEMDR~1-1162681143.ZIP).
+Download the sample for above source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ItemDragAndDrop625376443).
 
 ## Drag and drop customization
 

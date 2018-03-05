@@ -10,27 +10,27 @@ documentation: ug
 
 # Cascading
 
-We have demonstrated how to create custom Cascading sample using Picker control in the following steps.
+This section explains the steps required to create custom cascading sample by using picker control.
 
-We have created the cascading sample for updating state collection based on selected item of SfPicker.
+The cascading sample has been created for updating the state collection based on selected item picker.
 
-Please refer the below steps to create the cascading sample 
+Please refer the  following steps to create the cascading sample 
 
-**Step** **1** **:** We have created three ObservableCollection with object type in PickerCascading class. 
+**Step** **1** **:** Create three ObservableCollection with object type in PickerCascading class. 
 
 **Collection** **details** **:** 
 
-Area Collection, Country Collection and State Collection.
+Area collection, Country collection, and State collection.
 
-Country Collection -> We have added country names.
+Country collection -Add country names.
 
-State Collection -> We have added state names.
+State collection -Add state names.
 
-Area Collection -> We have added above  2 collections.
+Area collection -Add above  2 collections.
 
-Area Collection is main collection we have assigned this collection to ItemsSource of Picker Control.
+Area collection is the main collection, and this collection has been assigned to ItemsSource of picker Control.
 
-The below code demonstrates Area collection creation.
+The following code demonstrates Area collection creation.
 
 {% highlight c# %}
 
@@ -149,7 +149,7 @@ PropertyChanged(this, new PropertyChangedEventArgs(name));
 
 {% endhighlight %}
 
-**Step** **2** **:** We have updated the state collection  based on selected item of country name using Selection changed event of SfPicker control.
+**Step** **2** **:** Update the state collection  based on selected item of country name by using the Selection changed event of picker control.
 
 {% highlight c# %}
 
@@ -173,7 +173,7 @@ if(picker.ItemsSource!=null && CurrentItem != (e.NewValue as IList)[0].ToString(
 
 {% endhighlight %}
 
-**Step** **3** **:** We have defined column headers as  “Country” and  “State” using ColumnHeaderText property of SfPicker control. The below code demonstrates how to define header for each column of SfPicker control.
+**Step** **3** **:** Define column headers as  “Country” and  “State” by using ColumnHeaderText property of picker control. The following code demonstrates how to define header for each column of picker control.
 
 {% highlight c# %}
 
@@ -207,7 +207,7 @@ Header.Add("State");
 
 {% endhighlight %}
 
-**Step** **4** **:** We have added the cascading picker control in main XAML page. Please refer the below code snippets.
+**Step** **4** **:** Add the cascading picker control in main page of XAML. Please refer the following code snippets.
 
 {% tabs %}
 {% highlight xaml %}
@@ -312,12 +312,12 @@ picker.IsOpen = true;
 {% endhighlight %}
 {% endtabs %}
 
-Screen shot for the above codes.
+The following screenshot illustrates the output of above code snippets.
 
 ![](images/cascading_img1.jpeg)
 
 
-We have attached Cascading sample for reference. Please download the sample from the following link.
+You can download the sample for reference from the following link.
 
 Sample link: [CascadingSample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CascadingPicker-212266727)
 

@@ -9,11 +9,11 @@ documentation: ug
 
 # Placing and Dragging RadialMenu
 
-We can place SfRadialMenu anywhere on its parent layout and  able to drag it with in the parent layout. 
+You can place radial menu anywhere on its parent layout, and drag it with in the parent layout. 
 
 ## Dragging RadialMenu
 
-We can Enable/Disable dragging by using the property `IsDragEnabled`.
+You can enable/disable dragging by using the `IsDragEnabled` property.
 
 {% tabs %}
 
@@ -72,7 +72,7 @@ Public class RadialMenuPage : ContentPage
 
 ## Placing RadialMenu
 
-We can able to place RadialMenu anywhere on its parent layout. RadialMenu's position is calculated based on parent layout's center point.
+You can place radial menu anywhere on its parent layout. Radial Menu's position is calculated based on parent layout's center point.
 
 {% tabs %}
 

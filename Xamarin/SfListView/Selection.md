@@ -16,7 +16,8 @@ This section explains how to perform selection and its related operations in the
 The SfListView allows selecting items either programmatically or by touch interactions. To enable selection, set the [SelectionMode](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionMode.html) property value to other than `None`. The control has different selection modes to perform selection operations as listed as follows:
 
  * None: Allows disabling selection.
- * Single: Allows selecting single item only. When clicking on the selected item, selection gets cleared. This is the default value for `SelectionMode`.
+ * Single: Allows selecting single item only. When clicking on the selected item, selection not cleared. This is the default value for `SelectionMode`.
+ * SingleDeselect: Allows selecting single item only. When clicking on the selected item, selection gets cleared.
  * Multiple: Allows selecting more than one item. Selection is not cleared when selecting more than one items. When you click on the selected item, selection gets cleared.
 
 The SfListView allows selecting items on different gestures such as tap, double tap, and hold. This can be achieved by setting the [SelectionGesture](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionGesture.html). The default value for the `SelectionGesture` is [TouchGesture.Tap](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.TouchGesture.html).
@@ -37,7 +38,6 @@ When the [SelectionMode](https://help.syncfusion.com/cr/cref_files/xamarin/sflis
 When the selection mode is `Single`, programmatically select an item by setting the underlying object to the `SelectedItem` property. 
 
 {% highlight c# %}
-
 //Perform selection using selected item
 listView.SelectedItem = viewModel.Items[5];
 {% endhighlight %}
@@ -58,9 +58,14 @@ listView.SelectAll();
 
 ## Get selected items
 
+<<<<<<< Xamarin/SfListView/Selection.md
 The SfListView gets all selected items through the [SelectedItems](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItems.html) property.
 
 N> You cannot set or bind the value to the `SelectedItems` property, you can only add, remove, or reset the items to the `SelectedItems` property to update selection.
+=======
+SfListView allows you to get all the selected items through [SelectedItems](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItems.html) property and also able to bind a value.
+
+>>>>>>> Xamarin/SfListView/Selection.md
 
 ### CurrentItem vs SelectedItem
 
@@ -108,7 +113,9 @@ public class SelectionControllerExt : SelectionController
 }
 {% endhighlight %}
 
-You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Selection-1915286868).
+The screenshot shows the output of programmatic animation in selection. You can download the sample for above source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Selection-1915286868).
+
+![](SfListView_images/SfListView-SelectionAnimation.gif)
 
 ## Selection events
 
@@ -157,22 +164,40 @@ The SfListView allows customizing appearance of the selected item/items. The fol
 
 {% highlight xaml %}
 <ContentPage>
-  <ContentPage.Resources>
-    <ResourceDictionary>
-      <local:SelectionBoolToImageConverter x:Key="BoolToImageConverter"/>
-    </ResourceDictionary>
-  </ContentPage.Resources>
   <syncfusion:SfListView x:Name="listView">
-    <syncfusion:SfListView.ItemTemplate>
-      <DataTemplate>
-        <Image x:Name="selectionImage" Margin="10,0,10,0"
-               Source="{Binding Path=IsSelected, Converter={StaticResource BoolToImageConverter}}"/>
-      </DataTemplate>
-    </syncfusion:SfListView.ItemTemplate>
+   <syncfusion:SfListView.SelectedItemTemplate>
+    <DataTemplate>
+     <Grid x:Name="grid">
+      <Grid.ColumnDefinitions>
+       <ColumnDefinition Width="40" />
+       <ColumnDefinition Width="*" />    
+       <ColumnDefinition Width="Auto" />
+      </Grid.ColumnDefinitions>
+      <Image Source="{Binding SongThumbnail}"/>
+      <Grid Grid.Column="1">
+       <Grid.RowDefinitions>
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+       </Grid.RowDefinitions>
+       <Label Text="{Binding SongTitle}" />
+       <Grid Grid.Row="1">
+        <Grid.ColumnDefinitions>
+         <ColumnDefinition Width="*" />
+         <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Label Text="{Binding SongAuther}" />
+        <Label Grid.Column="1" Text="{Binding SongSize}"/>
+       </Grid>
+      </Grid>
+      <Image Grid.Column="2" x:Name="selectionImage" IsVisible="True" Source="Selected.png"/>
+     </Grid>
+    </DataTemplate>
+   </syncfusion:SfListView.SelectedItemTemplate>
   </syncfusion:SfListView>
 </ContentPage>
 {% endhighlight %}
 
+<<<<<<< Xamarin/SfListView/Selection.md
 {% highlight c# %}
 
 public class SelectionBoolToImageConverter : IValueConverter
@@ -196,5 +221,8 @@ public class SelectionBoolToImageConverter : IValueConverter
 In the above example, to change appearance of the selected item, the `IsSelected` property is maintained in model class, and binded to an image element in the [ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html). The `IsSelected` property of the data item has been updated based on the selection from `SelectionChanged` event of the SfListView. The source of binded image is changed by using `SelectionBoolToImageConverter` converter. 
 
 Now run the application to render the following output. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Listview_CustomSelection546520441).
+=======
+Now run the application to render the following output. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomSelection-1369390597).
+>>>>>>> Xamarin/SfListView/Selection.md
 
 ![](SfListView_images/SfListView-Selection-2.png)

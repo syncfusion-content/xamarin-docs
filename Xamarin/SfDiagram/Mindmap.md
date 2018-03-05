@@ -6,14 +6,14 @@ control: SfDiagram
 documentation: UG
 keywords: 
 ---
-# Mindmap layout
+# Mind map layout
 
 A mind map is a diagram used to visually organize the information. It is hierarchical and shows relationship of the whole idea. It consists of a central ideas, related ideas, and lines connecting them together.  It is used for brainstorming, planning, and information gathering etc. The following code example illustrates how to create and mind map layout:
 {% tabs %}
 {% highlight c# %}
 List<Color> FColor = new List<Color>();
 List<Color> SColor = new List<Color>();
-Random rnd = new Random();
+Random random = new Random();
 int index;
 int width=150;int height=75;
 //Alternate color selection for child nodes
@@ -38,7 +38,7 @@ diagram.AddNode(node);
 
 //Add child nodes for root node
 var ch1node =AddNode(100, 100, width, height, "Financial");
-index = rnd.Next(5);
+index = random.Next(5);
 AddNodeStyle(ch1node, FColor[index], SColor[index]);
 diagram.AddNode(ch1node);
 
@@ -47,7 +47,7 @@ AddNodeStyle(ch1childnode, (ch1node.Style.Brush as SolidBrush).FillColor, (ch1no
 diagram.AddNode(ch1childnode);
 
 var ch2node = AddNode(100, 600, width, height, "Social");
-index = rnd.Next(5);
+index = random.Next(5);
 AddNodeStyle(ch2node, FColor[index], SColor[index]);
 diagram.AddNode(ch2node);
 
@@ -60,7 +60,7 @@ AddNodeStyle(ch2childnode2, (ch2node.Style.Brush as SolidBrush).FillColor, (ch2n
 diagram.AddNode(ch2childnode2);
 
 var ch3node = AddNode(500, 100, width, height, "Personal");
-index = rnd.Next(5);
+index = random.Next(5);
 AddNodeStyle(ch3node, FColor[index], SColor[index]);
 diagram.AddNode(ch3node);
 
@@ -73,7 +73,7 @@ AddNodeStyle(ch3childnode2, (ch3node.Style.Brush as SolidBrush).FillColor, (ch3n
 diagram.AddNode(ch3childnode2);
 
 var ch4node = AddNode(500, 600, width, height, "Work");
-index = rnd.Next(5);
+index = random.Next(5);
 AddNodeStyle(ch4node, FColor[index], SColor[index]);
 diagram.AddNode(ch4node);
 
@@ -138,8 +138,8 @@ Node AddNode(int x, int y, int w, int h, string text)
 {% endhighlight %}
 {% endtabs %}
 
-## Initializing the mindmap layout
-The following code illustrates how to initialize the mindmap layout in diagram loaded event:
+## Initializing the mind map layout
+The following code illustrates how to initialize the mind map layout in diagram loaded event:
 {% tabs %}
 {% highlight c# %}
 //Diagram loaded event

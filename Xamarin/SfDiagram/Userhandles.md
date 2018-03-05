@@ -6,28 +6,25 @@ control: SfDiagram
 documentation: UG
 keywords: 
 ---
-# Userhandles
+# User handles
 
 User handles are customizable handles which can be used to perform custom actions and also default clipboard actions. You can able to customize the user handles using:
 * SfGraphicPath
 * Template
-The following code illustrates how to add custom userhandle in diagram:
+The following code illustrates how to add custom user handle in diagram:
 {% tabs %}
 {% highlight c# %}
 //Add graphic path into an user handle collection
-SfGraphics grap = new SfGraphics();
+SfGraphics graph = new SfGraphics();
 Pen stroke = new Pen();
 stroke.Brush = new SolidBrush(Color.Transparent);
 stroke.StrokeWidth = 3;
 stroke.StrokeBrush = new SolidBrush(Color.FromRgb(24, 161, 237));
-grap.DrawEllipse(stroke, new Rectangle(10, 0, 20, 20));
-grap.DrawArc(stroke, 0, 20, 40, 40, 180, 180);
+graph.DrawEllipse(stroke, new Rectangle(10, 0, 20, 20));
+graph.DrawArc(stroke, 0, 20, 40, 40, 180, 180);
 
 //Add template into an user handles collection
-var img = new Image();
-img.Source = "delete.png";
-img.BackgroundColor = Color.Transparent;
-var deltemplate = new DataTemplate(() =>
+var deletetemplate = new DataTemplate(() =>
 {
 var root = new StackLayout()
 {
@@ -64,14 +61,14 @@ return root;
 });
 
 //Add user handle into an user handles collection 
-diagram.UserHandles.Add(new Syncfusion.SfDiagram.XForms.UserHandle("delete", UserHandlePosition.Bottom, deltemplate) { });
-diagram.UserHandles.Add(new Syncfusion.SfDiagram.XForms.UserHandle("graphicpath", UserHandlePosition.Left, grap) { });
+diagram.UserHandles.Add(new Syncfusion.SfDiagram.XForms.UserHandle("delete", UserHandlePosition.Bottom, deletetemplate) { });
+diagram.UserHandles.Add(new Syncfusion.SfDiagram.XForms.UserHandle("graphic path", UserHandlePosition.Left, graph) { });
 diagram.UserHandles.Add(new Syncfusion.SfDiagram.XForms.UserHandle("plus", UserHandlePosition.Right, plustemplate) { });
 
 {% endhighlight %}
 {% endtabs %}
 
-## UserhandlesClickedEvent
+## User handles clicked event
 The following code illustrate how to define use handles clicked event and its action.
 {% tabs %}
 {% highlight c# %}

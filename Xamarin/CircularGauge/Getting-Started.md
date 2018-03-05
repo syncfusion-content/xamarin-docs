@@ -12,16 +12,16 @@ documentation: ug
 
 # Getting Started
 
-This section explains the steps required to configure the [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge.html), and also explains the steps required to add basic elements of [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge.html) through various APIs available within it.
+This section explains the steps required to configure the [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge.html), and also explains the steps required to add basic elements to [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge.html) through various APIs available within it.
 
 
-## Adding Circular Gauge Reference
+## Adding circular gauge reference
 
-Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain and reference Essential Studio components in your solution; then refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfcirculargauge) link to know about the assemblies required for adding CircularGauge to your project.
+Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain and reference Essential Studio components in your solution; then refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfcirculargauge) link to know about the assemblies required for adding circular gauge to your project.
 
-I> After adding the reference, currently, an additional step is required for iOS and UWP projects. We need to create an instance of the `SfGaugeRenderer` in iOS and UWP projects as shown in this [KB article.](https://www.syncfusion.com/kb/8271)
+I> After adding the reference, an additional step is required for iOS and UWP projects. You should create an instance of the `SfGaugeRenderer` in iOS and UWP projects as shown in this [KB article.](https://www.syncfusion.com/kb/8271)
 
-I> For UWP alone, one more additional step is required if the project is built in release mode with .NET Native tool chain enabled. You can refer the [KB article](https://www.syncfusion.com/kb/8272) for more details.
+I> For UWP alone, one more additional step is required if the project is built-in release mode with .NET Native tool chain enabled. You can refer to this [KB article](https://www.syncfusion.com/kb/8272) for more details.
  
 ### Adding namespace for the assemblies
 
@@ -42,9 +42,9 @@ I> For UWP alone, one more additional step is required if the project is built i
 {% endtabs %}
 
 
-## Initialize Gauge 
+## Initialize gauge 
 
-You can initialize the the [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge.html) control with a required optimal name by using the included namespace.
+You can initialize the [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge.html) control with a required optimal name by using the included namespace.
 
 {% tabs %}
 
@@ -64,9 +64,9 @@ You can initialize the the [`SfCircularGauge`](https://help.syncfusion.com/cr/cr
 {% endtabs %}
 
 
-## Adding Header
+## Adding header
 
-You can assign a unique header to [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge.html) by making use of [`Header`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge~Headers.html) property, and you can position it wherever you want by using [`Position`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Header~Position.html) property.
+You can assign a unique header to [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge.html) by using the [`Header`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge~Headers.html) property and position it by using the [`Position`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Header~Position.html) property as you want.
 
 {% tabs %}
 
@@ -95,19 +95,17 @@ You can assign a unique header to [`SfCircularGauge`](https://help.syncfusion.co
 
 {% endtabs %}
 
-## Configuring Scales
+## Configuring scales
 
-You can configure the [`Scale`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale.html) elements by making use of following APIs available in [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge.html):
+You can configure the [`Scale`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale.html) elements by using following APIs, which are available in [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge.html):
 
-They are:
-
-* StartAngle
-* SweepAngle
-* StartValue
-* EndValue
-* Interval
-* RimThickness
-* RimColor
+* `StartAngle`
+* `SweepAngle`
+* `StartValue`
+* `EndValue`
+* `Interval`
+* `RimThickness`
+* `RimColor`
 
 {% tabs %}
 
@@ -135,9 +133,9 @@ They are:
 
 {% endtabs %}
 
-## Adding Ranges
+## Adding ranges
 
-You can add ranges to [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge.html) by creating ranges collection by using [`Range`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Range.html) property.
+You can add ranges to [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge.html) by creating ranges collection using the [`Range`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Range.html) property.
 
 {% tabs %}
 
@@ -169,9 +167,9 @@ You can add ranges to [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_fi
 
 {% endtabs %}
 
-## Adding a Needle Pointer
+## Adding a needle pointer
 
-You can create a [`NeedlePointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.NeedlePointer.html), and associate it with a scale to be displayed the current value.
+Create a [`Needle Pointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.NeedlePointer.html), and associate it with a scale that is to be displayed the current value.
 
 {% tabs %}
 
@@ -202,9 +200,9 @@ You can create a [`NeedlePointer`](https://help.syncfusion.com/cr/cref_files/xam
 
 {% endtabs %}
 
-## Adding a Range Pointer
+## Adding a range pointer
 
-A [`RangePointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.RangePointer.html) provides an alternative way of indicating the current value.
+[`Range Pointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.RangePointer.html) provides an alternative way to indicate the current value.
 
 {% tabs %}
 
@@ -236,9 +234,9 @@ A [`RangePointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syn
        
 {% endtabs %}
 
-## Adding a Marker Pointer
+## Adding a marker pointer
 
-A [`MarkerPointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.MarkerPointer.html) points the current value in scale.
+[`Marker Pointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.MarkerPointer.html) points the current value in scale.
 
 {% tabs %}
 

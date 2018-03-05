@@ -58,14 +58,7 @@ listView.SelectAll();
 
 ## Get selected items
 
-<<<<<<< Xamarin/SfListView/Selection.md
 The SfListView gets all selected items through the [SelectedItems](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItems.html) property.
-
-N> You cannot set or bind the value to the `SelectedItems` property, you can only add, remove, or reset the items to the `SelectedItems` property to update selection.
-=======
-SfListView allows you to get all the selected items through [SelectedItems](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItems.html) property and also able to bind a value.
-
->>>>>>> Xamarin/SfListView/Selection.md
 
 ### CurrentItem vs SelectedItem
 
@@ -197,32 +190,6 @@ The SfListView allows customizing appearance of the selected item/items. The fol
 </ContentPage>
 {% endhighlight %}
 
-<<<<<<< Xamarin/SfListView/Selection.md
-{% highlight c# %}
-
-public class SelectionBoolToImageConverter : IValueConverter
-{
-   public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
-   {
-      if ((bool)value)
-         return ImageSource.FromResource("CustomSelection.Images.Selected.png");
-      else
-         return ImageSource.FromResource("CustomSelection.Images.NotSelected.png");
-   }
-
-   public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
-   {
-      throw new NotImplementedException();
-   }
-}
-
-{% endhighlight %}
-
-In the above example, to change appearance of the selected item, the `IsSelected` property is maintained in model class, and binded to an image element in the [ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html). The `IsSelected` property of the data item has been updated based on the selection from `SelectionChanged` event of the SfListView. The source of binded image is changed by using `SelectionBoolToImageConverter` converter. 
-
-Now run the application to render the following output. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Listview_CustomSelection546520441).
-=======
 Now run the application to render the following output. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomSelection-1369390597).
->>>>>>> Xamarin/SfListView/Selection.md
 
 ![](SfListView_images/SfListView-Selection-2.png)

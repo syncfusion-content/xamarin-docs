@@ -11,11 +11,11 @@ documentation: ug
 
 # Tick Setting
 
-TickSetting helps you to identify the gauge’s data value by marking the gauge scale in regular increments.
+The `TickSettings` property helps you to identify the gauge’s data value by marking the gauge scale in regular increments.
 
-## Show ticks for Scale
+## Show ticks for scale
 
-[`ShowTicks`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~ShowTicks.html) property allows you to enable or disable the ticks of the [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge.html).
+The [`ShowTicks`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~ShowTicks.html) property allows you to enable or disable the ticks of circular gauge.
 
 {% tabs %}
 
@@ -50,11 +50,11 @@ TickSetting helps you to identify the gauge’s data value by marking the gauge 
 
 ## Ticks customization 
 
-The [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~Interval.html) property is used to calculate the tick count for a scale. Similar to ticks, minor ticks are calculated by using the [`MinorTicksPerInterval`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~MinorTicksPerInterval.html) property.
+The [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~Interval.html) property is used to calculate the tick counts for a scale. Similar to ticks, minor ticks are calculated by using the [`MinorTicksPerInterval`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~MinorTicksPerInterval.html) property.
 
-1.Color, and thickness of the tick are set by the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.TickSettings~Color.html) and [`Thickness`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.TickSettings~Thickness.html) UI properties. You can also customize the ticks [`Length`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.TickSettings~Length.html) with [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.TickSettings~Offset.html) property. First, you should set the Offset property for ticks, then increase the length of the ticks.
+Color and thickness of the tick are set by using the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.TickSettings~Color.html) and [`Thickness`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.TickSettings~Thickness.html) UI properties. You can also customize the length of the ticks by using the  [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.TickSettings~Offset.html) property. First, you should set the `Offset` property for ticks, then increase the length of the ticks.
 
-## Customize major ticks for Scale
+## Customize major ticks for scale
 
 {% tabs %}
 
@@ -98,7 +98,7 @@ The [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncf
 
 ![](tick-setting_images/majortick-customise.png)
 
-## Customize minor ticks for Scale
+## Customize minor ticks for scale
 
 {% tabs %}
 
@@ -143,14 +143,14 @@ The [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncf
 
 ![](tick-setting_images/minortick-customise.png)
 
-## Setting position for Ticks
+## Setting position for ticks
 
-The Major and Minor ticks can be positioned far away from the rim by using the following two ways:
+The major and minor ticks can be positioned far away from the rim by using the following two ways:
 
-1.Offset property. 
-2.StartOffset and EndOffset properties.
+1.`Offset` property. 
+2.`StartOffset` and `EndOffset` properties.
 
-### Setting offset for Scale
+### Setting offset for scale
 
 {% tabs %}
 

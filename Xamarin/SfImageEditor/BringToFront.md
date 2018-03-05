@@ -7,8 +7,12 @@ control : ImageEditor
 documentation : ug
 ---
 
-We already have support to annotate shapes like rectangle, circle & arrow. These shapes arrange one over the other in chronological order when we add it
-to the image so there will be a need to change this order while customizing the edits you can bring the required shape to front or back as desire.
+ImageEditor allow us to change the position of shapes/Edits which are arranged over the editor. This can be achieved with the help of following methods. 
+
+1)BringToFront
+2)SendToBack
+3)BringForward
+4)SendToBackward
 
 # BringToFront
 

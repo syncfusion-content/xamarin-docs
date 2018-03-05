@@ -10,3 +10,5 @@ Key features
 * Display the custom content at the center of circular progress bar.
 * Visualize the progress in segments.
 * Customize the angle of the circular progress bar.
+
+![](overview_images/overview.png)

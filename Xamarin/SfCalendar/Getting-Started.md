@@ -70,7 +70,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 …     
 }
 {% endhighlight %}
-## Create a Simple SfCalendar
+### Create a Simple SfCalendar
 
 The SfCalendar control is configured entirely in C# code or by using XAML markup. The following steps explain on how to create a SfCalendar and configure its elements,
 

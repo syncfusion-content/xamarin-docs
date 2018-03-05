@@ -9,23 +9,23 @@ documentation: ug
 
 # Getting Started
 
-This section explains you the steps required to launch the SfRadialMenu with hierarchical items that to be used as mobile phone system settings. This section covers only the minimal features that you need to know to get started with the SfRadialMenu.
+This section explains the steps required to launch the radial menu with hierarchical items that can be used as mobile phone system settings. This section covers only the minimal features that needed to get started with the radial menu.
 
-## Adding SfRadialMenu reference 
+## Adding radial menu to reference 
 
-Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain and reference Essential Studio components in your solution; then refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfradialmenu) link to know about the assemblies required for adding RadialMenu to your project.
+Refer to this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain and reference Essential Studio components in your solution, and then refer to [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfradialmenu) link to know about the assemblies required for adding radial menu to your project.
 
-## Initialize SfRadialMenu on each platform
+## Initialize radial menu on each platform
 
-To use SfRadialMenu inside an application, each platform application must initialize the SfRadialMenu renderer. This initialization step varies from platform to platform and is discussed in the following sections.
+To user radial menu inside an application, each platform application must initialize the radial menu renderer. This initialization step varies from platform to platform, and it is discussed in the following sections.
 
-### Android
+### Android and UWP
 
-The Android launches the SfRadialMenu without any initialization and is enough to only initialize the Xamarin.Forms Framework to launch the application.
+The Android launches the radial menu without any initialization, and it is enough to  initialize the Xamarin.Forms Framework to launch the application.
 
 ### iOS
 
-To launch the SfRadialMenu in iOS, you need to call the `SfRadialMenuRenderer.Init()` in the `FinishedLaunching` overridden method of the AppDelegate class after the Xamarin.Forms Framework initialization and before the LoadApplication is called, as demonstrated in the following code example:
+To launch the radial menu in iOS, call the `SfRadialMenuRenderer.Init()` in the `FinishedLaunching` overridden method of the AppDelegate class after the Xamarin.Forms Framework has been initialized and before the LoadApplication is called, as demonstrated in the following code example,
 
 {% highlight c# %}
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
@@ -38,21 +38,45 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 }
 {% endhighlight %} 
 
-## Adding a simple RadialMenu
+## ReleaseMode issue in UWP platform
 
-This section explains how to create a SfRadialMenu and configure it. The SfDataGrid control can be configured entirely in C# code or by using XAML markup.
+{% highlight c# %}
+
+// In App.xaml.cs
+
+protected override void OnLaunched(LaunchActivatedEventArgs e)
+{
+	…
+
+	rootFrame.NavigationFailed += OnNavigationFailed;
+		
+	// you'll need to add `using System.Reflection;`
+	List<Assembly> assembliesToInclude = new List<Assembly>();
+
+	//Now, add all the assemblies your app uses
+	assembliesToInclude.Add(typeof(SfCalendarRenderer).GetTypeInfo().Assembly);
+
+	// replaces Xamarin.Forms.Forms.Init(e);        
+	Xamarin.Forms.Forms.Init(e, assembliesToInclude);
+	…     
+}
+{% endhighlight %} 
+
+## Adding a simple radial menu
+
+This section explains how to create a radial menu and configure it. The d data grid control can be configured entirely in C# code, or by using XAML markup.
 
 ### Creating the project
 
 Create a new BlankApp (Xamarin.Forms.Portable) application in Xamarin Studio or Visual Studio for Xamarin.Forms.
 
-### Adding SfRadialMenu in Xamarin.Forms 
+### Adding radial menu in Xamarin.Forms 
 
 1. Add the required assembly references to the pcl and renderer projects. 
 
-2. Import SfRadialMenu control namespace as `xmlns:syncfusion="clr-namespace:Syncfusion.SfRadialMenu.XForms;assembly=Syncfusion.SfRadialMenu.XForms` in XAML Page.
+2. Import radial menu control namespace as `xmlns:syncfusion="clr-namespace:Syncfusion.SfRadialMenu.XForms;assembly=Syncfusion.SfRadialMenu.XForms` in XAML page.
 
-3. Set the SfRadialMenu control as content to the ContentPage.
+3. Set the radial menu control as content to the ContentPage.
 
 {% tabs %}
 
@@ -97,7 +121,7 @@ Public class RadialMenuPage : ContentPage
 
 ### Configuring CenterButton and BackButton
 
-Creating a RadialMenu's instance shows only round shape view on the application. We have to configure CenterButton and BackButton. 
+Creating a RadialMenu's instance shows only round shape view on the application. You should configure CenterButton and BackButton. 
 
 {% tabs %}
 
@@ -148,9 +172,9 @@ Public class RadialMenuPage : ContentPage
 
 ![](images/gettingStarted1.png)
 
-## Create SfRadialMenu items
+## Create radial menu items
 
-SfRadialMenu is completed, once we add necessary items to it. For adding items to RadialMenu follow the below codes.
+After the radial menu has been created, add necessary items on it. For adding items to radial menu follow the below codes.
 
 {% tabs %}
 
@@ -350,5 +374,5 @@ Public class RadialMenuPage : ContentPage
 
 ![](images/gettingStarted2.png)
 
-N> To use FontIcons, add respective FontFamily name in `info.plist` file under Fonts provided by application category.
+N> To use FontIcons, add respective FontFamily name in `info.plist` file under fonts provided by application category.
 

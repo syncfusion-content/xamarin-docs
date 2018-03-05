@@ -22,7 +22,7 @@ We can provide Header Content at the top of the AutoComplete's Suggestion box. `
     <auto:SfAutoComplete HeightRequest="40" x:Name="autoComplete"> 
              <auto:SfAutoComplete.DropDownHeaderView>
                 <StackLayout BackgroundColor="#f0f0f0" >
-                 <Label  x:Name="label2" FontSize="20" VerticalTextAlignment="Center" HorizontalOptions="Center" VerticalOptions="Center" TextColor="#006bcd" Text="Search"  />
+                 <Label  x:Name="label2" FontSize="20" VerticalTextAlignment="Center" HorizontalOptions="Center" VerticalOptions="Center" TextColor="#006bcd"   />
                 </StackLayout>
                 </auto:SfAutoComplete.DropDownHeaderView>
 				 </auto:SfAutoComplete>
@@ -42,6 +42,10 @@ We can provide Header Content at the top of the AutoComplete's Suggestion box. `
             autoComplete.DataSource = countryNames;
             autoComplete.ShowDropDownHeaderView = true;
 		    autoComplete.DropDownHeaderViewHeight = 50;
+            autoComplete.ValueChanged += (object sender, Syncfusion.SfAutoComplete.XForms.ValueChangedEventArgs e) =>
+            {
+                label2.Text = "Search for " + e.Value;
+            }
 
 {% endhighlight %}
 
@@ -98,7 +102,7 @@ We can provide Footer Content at the bottom of the AutoComplete's Suggestion box
 <auto:SfAutoComplete HeightRequest="40" x:Name="autoComplete"> 
 			<auto:SfAutoComplete.DropDownFooterView>
 			<StackLayout BackgroundColor="#f0f0f0" >
-				<Label Text="Add New Contact" BackgroundColor="#f0f0f0"           TextColor="#006bcd" VerticalTextAlignment="Center" VerticalOptions="Center" HorizontalTextAlignment="Center"
+				<Label Text="Add New" BackgroundColor="#f0f0f0" TextColor="#006bcd" VerticalTextAlignment="Center" VerticalOptions="Center" HorizontalTextAlignment="Center"
 				FontSize="20"/>
 			</StackLayout>
 			</auto:SfAutoComplete.DropDownFooterView>
@@ -137,7 +141,7 @@ The height of the Header in the SfAutoComplete can be adjusted by the property `
     <auto:SfAutoComplete HeightRequest="40" x:Name="autoComplete"  DropDownFooterViewHeight="50"> 
              <auto:SfAutoComplete.DropDownFooterView>
                 <StackLayout BackgroundColor="#f0f0f0" >
-                 <Label  x:Name="label2" FontSize="20" VerticalTextAlignment="Center" HorizontalOptions="Center" VerticalOptions="Center" TextColor="#006bcd" Text="Search"  />
+                 <Label  x:Name="label2" FontSize="20" VerticalTextAlignment="Center" HorizontalOptions="Center" VerticalOptions="Center" TextColor="#006bcd" Text="Add New"  />
                 </StackLayout>
                 </auto:SfAutoComplete.DropDownFooterView>
 				 </auto:SfAutoComplete>

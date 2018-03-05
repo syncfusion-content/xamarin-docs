@@ -15,7 +15,7 @@ The image editor control provides support for localization.You can localize Imag
 
 Based on the resource strings in the project the contents are localized accordingly.
 
-By default, ImageEditor control is available in English.
+By default,ImageEditor control is available in English.
 
 ### Change default texts in the control
 

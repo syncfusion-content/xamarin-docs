@@ -54,7 +54,18 @@ The following list of assemblies need to be added as reference from the lib fold
 <td>pcl\Syncfusion.SfSchedule.XForms.dll<br/>uwp\Syncfusion.SfSchedule.UWP.dll<br/>uwp\Syncfusion.SfSchedule.XForms.UWP.dll<br/></td>   
 </tr>   
 </table>   
-    
+
+#### Dependencies for UWP project
+
+For compiling the UWP project in Xamarin Forms, referring the Schedule assemblies (XForms, XForms.UWP & UWP) in the UWP project is sufficient but dependency assemblies of Schedule and its files (properties, themes, etc.) needs to be maintained in the UWP assembly folder to render the control.
+ 
+**Dependencies of SfSchedule**
+
+* Syncfusion.SfInput.UWP
+* Syncfusion.SfRadialMenu.UWP
+* Syncfusion.SfShared.UWP
+* Syncfusion.SfTabControl.UWP
+
 ### NuGet Configuration  
     
 Alternatively you can refer SfSchedule in your application by configuring nuget packages.    
@@ -122,9 +133,9 @@ The above problem can be resolved by initializing the SfSchedule assemblies in `
 This section explains how to create a simple application using SfSchedule control. SfSchedule control can be configured entirely in C# code or by using XAML markup. This is how the final output will look like on iOS, Android and Windows Phone devices.  
     
 ![](GettingStarted_images/GettingStarted.png)   
-    
-You can download the entire source code of this demo for Xamarin.Forms from   
-here [ScheduleGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ScheduleGettingStarted-209092808.zip)   
+
+You can download the entire source code of this demo for Xamarin.Forms from
+here [ScheduleGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ScheduleGettingStarted892423234.zip)
     
 This section provides a walks through to create `MeetingRoomScheduler` using our Schedule control.  
     
@@ -183,7 +194,10 @@ Set the SfSchedule control as content to the ContentPage.
       
 {% endhighlight %}   
 {% endtabs %}   
-    
+
+You can download the source code for rendering of schedule for Xamarin.Forms from
+here [ScheduleProject](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ScheduleSimpleSample-1966430884.zip)
+
 ## Changing Schedule Views   
     
 SfSchedule control provides four different types of views to display dates and it can be assigned to the control by using [ScheduleView](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleView.html) property. By default the control is assigned with `DayView`. Current date will be displayed initially for all the Schedule views.  
@@ -313,7 +327,10 @@ Schedule control has a built-in capability to handle the appointment arrangement
     schedule.DataSource = appointmentCollection;   
     
 {% endhighlight %}   
-    
+
+You can download the source code for rendering of schedule appointment using `ScheduleAppointmentCollection` for Xamarin.Forms from
+here [ScheduleAppointment](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ScheduleAppointment-62423344.zip)
+
 ### Adding Custom Appointments   
   
 You can also map custom appointments data to our schedule.   
@@ -362,7 +379,7 @@ You can schedule meetings for a particular day by setting `From` and `To` of `Me
     /// </summary> 
     public class ViewModel
     {
-    public ObservableCollection<Meeting> Meetings;
+    public ObservableCollection<Meeting> Meetings { get; set; }
     List<string> eventNameCollection;
     List<Color> colorCollection;
     public ViewModel()
@@ -499,12 +516,28 @@ You can map those properties of `Meeting` class with our schedule control by usi
 
 Create meetings of type `ObservableCollection <Meeting>`  and assign those appointments collection `Meetings` to the `DataSource` property of `SfSchedule`.
 
-{% highlight c# %}  
+{% tabs %}
+{% highlight xaml %}
+
+    <syncfusion:SfSchedule x:Name="schedule"
+        DataSource = "{Binding Meetings}"
+        ScheduleView = "WeekView" >
+        <syncfusion:SfSchedule.BindingContext>
+            <local:ViewModel/>
+        </syncfusion:SfSchedule.BindingContext>
+    </syncfusion:SfSchedule>
+
+{% endhighlight %}
+{% highlight c# %}
 
     ViewModel viewModel = new ViewModel();
     schedule.DataSource = viewModel.Meetings;
 
-{% endhighlight %}  
+{% endhighlight %}
+{% endtabs %}
 
-![](GettingStarted_images/GettingStarted.png)    
+![](GettingStarted_images/GettingStarted.png)
+
+You can download the entire source code of this demo for Xamarin.Forms from
+here [ScheduleGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ScheduleGettingStarted892423234.zip)
 

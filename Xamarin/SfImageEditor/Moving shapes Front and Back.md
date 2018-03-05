@@ -7,6 +7,8 @@ control : ImageEditor
 documentation : ug
 ---
 
+# Moving shapes Front and Back
+
 ImageEditor allow us to change the position of shapes/Edits which are arranged over the editor. This can be achieved with the help of following methods. 
 
 1)BringToFront

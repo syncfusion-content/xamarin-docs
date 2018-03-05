@@ -218,7 +218,7 @@ this.dataGrid.Columns.Add(DiscountColumn);
 
 ### Using format
 
-Value of other columns can be formatted, and the formatted value dispalyed in the unbound column using the `Format` property.
+Value of other columns can be formatted, and the formatted value displayed in the unbound column using the `Format` property.
 
 {% tabs %}
 {% highlight xaml %}

@@ -217,7 +217,7 @@ zoomPan.ZoomOut();
 
 **Zoom(factor)**
 
-This method is used to change the zoom level by using zoom factor.
+[`Zoom(factor)`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~Zoom(Single).html) method is used to change the zoom level by using zoom factor.
 
 {% highlight c# %}
 
@@ -229,7 +229,7 @@ zoomPan.Zoom(0.5f);
 
 **Zoom(Rect)**
 
-This method is used to zoom the chart for a given rectangle value.
+[`Zoom(Rect)`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~Zoom(Rect).html) method is used to zoom the chart for a given rectangle value.
 
 {% highlight c# %}
 
@@ -241,7 +241,7 @@ zoomPan.Zoom(new Rect(10, 10, 200, 350));
 
 **Zoom(chartAxis, cumulativeLevel, origin)**
 
-This method is used to change the zoom level of given axis to the specified level and origin.
+[`Zoom(chartAxis, cumulativeLevel, origin)`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~Zoom(ChartAxis,Single,Single).html) method is used to change the zoom level of given axis to the specified level and origin.
 
 {% highlight c# %}
 
@@ -255,7 +255,7 @@ zoomPan.Zoom(axis, 0.5f, 0.5f);
 
 **ZoomByRange(chartAxis, start, end)**
 
-This method is used to zoom the given axis to the given range.
+[`ZoomByRange(chartAxis, start, end)`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~ZoomByRange(ChartAxis,Double,Double).html) method is used to zoom the given axis to the given range.
 
 {% highlight c# %}
 
@@ -267,7 +267,7 @@ zoomPan.ZoomByRange(axis, 20, 25);
 
 **ZoomByRange(dateTimeAxis, start, end)**
 
-This method is used to zoom the given axis to the given date time range.
+[`ZoomByRange(dateTimeAxis, start, end)`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~ZoomByRange(DateTimeAxis,DateTime,DateTime).html) method is used to zoom the given axis to the given date time range.
 
 {% highlight c# %}
 

@@ -92,7 +92,7 @@ Following screenshot shows the zoomed area,
 
 ## Zoom Mode
 
-The [`ZoomMode`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~ZoomModeProperty.html) property specifies whether chart should be allowed to scale along horizontal axis or vertical axis or along both axis. The default value of [`ZoomMode`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ZoomMode.html) is [`XY`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ZoomMode.html) (both axis).
+The [`ZoomMode`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~ZoomMode.html) property specifies whether chart should be allowed to scale along horizontal axis or vertical axis or along both axis. The default value of [`ZoomMode`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ZoomMode.html) is [`XY`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ZoomMode.html) (both axis).
 
 Following code example illustrates how to restrict the chart to be zoomed only along horizontal axis,
 
@@ -154,20 +154,20 @@ This event is triggered after the zooming is stopped. The argument contains the 
 
 This event is triggered when the user starts the box selection zooming. The argument contains the following information.
 
-* [`ZoomRect`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.Rect.html) – used to get the initial bounds of the box selection.
+* [`ZoomRect`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionZoomEventArgs~ZoomRect.html) – used to get the initial bounds of the box selection.
 
 **SelectionZoomDelta**
 
 This event is triggered while selecting a region to be zoomed, and this is a cancelable event. The argument contains the following information.
 
-* [`ZoomRect`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.Rect.html) – contains the bounds of the currently selected region.
+* [`ZoomRect`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionZoomEventArgs~ZoomRect.html) – contains the bounds of the currently selected region.
 * [`Cancel`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionZoomDeltaEventArgs~Cancel.html) – used to set the value indicating whether the box selection zooming should be canceled.
 
 **SelectionZoomEnd**
 
 This event is triggered after selection zooming ends. The argument contains the following information.
 
-* [`ZoomRect`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.Rect.html) – used to get the final bounds of the zoomed region.
+* [`ZoomRect`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionZoomEventArgs~ZoomRect.html) – used to get the final bounds of the zoomed region.
 
 **Scroll**
 

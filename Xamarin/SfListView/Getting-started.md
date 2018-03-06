@@ -9,13 +9,11 @@ documentation: ug
 
 # Getting Started
 
-This section provides a quick overview for getting started with SfListView for Xamarin.Forms. You will walk through the entire process of creating a real world SfListView.
+This section provides a quick overview for getting started with SfListView for Xamarin.Forms. Walk through the entire process of creating a real world SfListView.
 
 ## Assembly deployment
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders,
-
-{Syncfusion Essential Studio Installed location}\Essential Studio\{{ site.releaseversion }}\Xamarin\lib
+After installing Essential Studio for Xamarin, you can find all the required assemblies in the {Syncfusion Essential Studio Installed location}\Essential Studio\{{ site.releaseversion }}\Xamarin\lib installation folders.
 
 Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Xamarin\lib
 
@@ -117,7 +115,7 @@ The Android launches the SfListView without any initialization and is enough to 
 
 ### iOS
 
-To launch the SfListView in iOS, call the `SfListViewRenderer.Init()` in the `FinishedLaunching` overridden method of the AppDelegate class after the Xamarin.Forms Framework initialization and before the LoadApplication is called, as demonstrated in the following code example
+To launch the SfListView in iOS, call the `SfListViewRenderer.Init()` in the `FinishedLaunching` overridden method of the AppDelegate class after the Xamarin.Forms Framework initialization and before the LoadApplication is called, as demonstrated in the following code example.
 
 {% highlight c# %}
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
@@ -146,9 +144,9 @@ public MainPage()
 
 ### ReleaseMode issue in UWP platform
 
-There is a known Framework issue in UWP platform. The custom controls will not render when deployed the application in `Release Mode`.
+The known Framework issue in UWP platform is the custom controls will not render when deployed the application in `Release Mode`.
 
-The above problem can be resolved by initializing the SfListView assemblies in `App.xaml.cs` in UWP project as like in below code snippet.
+The above problem can be resolved by initializing the SfListView assemblies in `App.xaml.cs` in UWP project as in the following code snippet.
 
 {% highlight c# %}
 // In App.xaml.cs
@@ -174,15 +172,15 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 ## Create a simple SfListView 
 
-This section explains how to create a SfListView and configure it. The SfListView control can be configured entirely in C# code or by using XAML markup. This is how the SfListView will look like on iOS, Android and Windows devices.
+This section explains how to create a SfListView and configure it. The SfListView control can be configured entirely in C# code or by using XAML markup. This is how the SfListView will look like on iOS, Android, and Windows devices.
  
 ![](SfListView_images/SfListView-Xamarin_img1.png)
 
-In this walk through, you will create a new application that contains the SfListView which includes the below topics.
+In this walk through, you will create a new application that contains the SfListView which includes the following topics:
 
 * [Creating the project](#creating-the-project) 
 * [Adding SfListView in Xamarin.Forms](#adding-sflistview-in-xamarin.forms)     
-* [Creating Data Model](#creating-data-model-for-the-sflistview)  
+* [Creating data model](#creating-data-model-for-the-sflistview)  
 * [Binding data](#binding-data-to-sflistview) 
 * [Defining an ItemTemplate](#defining-an-itemtemplate)
 * [Layouts](#layouts)
@@ -199,9 +197,7 @@ Create a new Blank App (Xamarin.Forms.Portable) application in Xamarin Studio 
 ## Adding SfListView in Xamarin.Forms 
 
 1. Add the required assembly references to the PCL and renderer projects as discussed in the [Assembly deployment](#assembly-deployment) section.
-
-2. Import SfListView control namespace Syncfusion.ListView.XForms.
-
+2. Import the SfListView control namespace Syncfusion.ListView.XForms.
 3. Set the SfListView control to the ContentPage.
 
 
@@ -236,11 +232,11 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-## Creating Data Model for the SfListView
+## Creating data model for the SfListView
 
-Create a data model to bind it to the control. 
+Create a data model to bind to the control. 
 
-Create a simple data source as shown in the following code example in a new class file and save it as BookInfo.cs file. 
+Create a simple data source as shown in the following code example in a new class file and save it as **BookInfo.cs** file. 
 
 {% highlight c# %}
 public class BookInfo : INotifyPropertyChanged
@@ -279,9 +275,9 @@ public class BookInfo : INotifyPropertyChanged
  
 {% endhighlight %}
 
-N> If you want your data model to respond to property changes, then implement `INotifyPropertyChanged` interface in your model class
+N> If you want your data model to respond to property changes, implement `INotifyPropertyChanged` interface in your model class.
 
-Create a model repository class with BookInfo collection property initialized with required number of data objects in a new class file as shown in the following code example and save it as BookInfoRepository.cs file.
+Create a model repository class with BookInfo collection property initialized with required number of data objects in a new class file as shown in the following code example and save it as **BookInfoRepository.cs** file.
 
 {% highlight c# %}
 public class BookInfoRepository
@@ -348,7 +344,7 @@ listView.ItemsSource = viewModel.BookInfo;
 
 ## Defining an ItemTemplate
  
- By defining the [SfListView.ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html) of the SfListView, a custom user interface(UI) can be achieved to display the data items. 
+ By defining the [SfListView.ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html) of the SfListView, a custom user interface(UI) can be used to display the data items. 
  
 {% tabs %}
 {% highlight xaml %}
@@ -403,14 +399,15 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-Now run the application to render the following output. You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Listview_GettingStarted1048237669).
+Run the application to render the following output. You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Listview_GettingStarted1048237669).
 
 ![](SfListView_images/SfListView-Xamarin_img2.png)
 
 ## Layouts
 
-SfListView supports different layouts such as linear layout and grid layout. The linear layout arranges the items in a single column, whereas the grid layout arranges the items in a predefined number of columns which is defined by [SpanCount](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GridLayout~SpanCount.html) property of `GridLayout`. 
-[SfListView.LayoutManager](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LayoutManager.html) property is used to define the layout for SfListView. `LinearLayout` is default layout of SfListView.
+The SfListView supports different layouts such as linear layout and grid layout. The linear layout arranges the items in a single column, whereas the grid layout arranges the items in a predefined number of columns which is defined by [SpanCount](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GridLayout~SpanCount.html) property of `GridLayout`. 
+
+The [SfListView.LayoutManager](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LayoutManager.html) property is used to define the layout for SfListView. `LinearLayout` is the default layout.
 
 {% tabs %}
 {% highlight xaml %}
@@ -429,15 +426,16 @@ listView.LayoutManager = new GridLayout() { SpanCount = 3 };
 
 ## Sorting
 
-SfListView allows you to apply sorting on its data by using [SfListView.DataSource.SortDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~SortDescriptors.html) property. You can create a [SortDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.SortDescriptor.html) for the property to be sorted and add it into the `DataSource.SortDescriptors` collection.
-You can refresh the view by calling [SfListView.RefreshView](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~RefreshView.html) method. 
+The SfListView allows sorting its data by using the [SfListView.DataSource.SortDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~SortDescriptors.html) property. You can create a [SortDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.SortDescriptor.html) for the property to be sorted and add it into the `DataSource.SortDescriptors` collection.
+
+You can refresh the view by calling the [SfListView.RefreshView](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~RefreshView.html) method. 
 
 SortDescriptor object holds following three properties:
 
-* PropertyName: Name of the sorted property.
-* Direction: An object of type [ListSortDirection](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.ListSortDirection.html) defines the sorting direction.
-* Comparer: Comparer to be applied in when sorting take place
- 
+* PropertyName: Defines the name of the sorted property.
+* Direction: Defines an object of type [ListSortDirection](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.ListSortDirection.html) that defines the sorting direction.
+* Comparer: Defines comparer to be applied in when sorting take place
+
 {% tabs %}
 {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8" ?>
@@ -471,7 +469,7 @@ SortDescriptor object holds following three properties:
 
 ## Filtering
 
-SfListView provides support to filter the records in view by setting predicate to the [SfListView.DataSource.Filter](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~Filter.html) property. You have to call the [DataSource.RefreshFilter](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~RefreshFilter.html) method after assigning the Filter property for refreshing the view.
+The SfListView supports filtering the records in view by setting predicate to the [SfListView.DataSource.Filter](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~Filter.html) property. You have to call the [DataSource.RefreshFilter](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~RefreshFilter.html) method after assigning the Filter property for refreshing the view.
 
 The following code example illustrates how to filter the items based on the Title property of underlying data by using `FilterContacts` method.
  
@@ -514,14 +512,14 @@ private bool FilterContacts(object obj)
 
 ## Grouping
 
-SfListView allows you to display the items in a group by using the [SfListView.DataSource.GroupDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~GroupDescriptors.html) property. You can create a [GroupDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor.html) for the property to be grouped and add it in the `DataSource.GroupDescriptors` collection. 
+The SfListView allows displaying the items in a group by using the [SfListView.DataSource.GroupDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~GroupDescriptors.html) property. You can create a [GroupDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor.html) for the property to be grouped and add it in the `DataSource.GroupDescriptors` collection. 
 `GroupDescriptor` object holds the following properties:
 
 * PropertyName: Name of the property to be grouped.
 * KeySelector: Selector to return the group key.
 * Comparer: Comparer to be applied in when sorting take place.
 
-It also provides support to stick the group header by enabling the property [SfListView.IsStickyGroupHeader](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsStickyGroupHeader.html).
+It also supports sticking the group header by enabling the property [SfListView.IsStickyGroupHeader](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsStickyGroupHeader.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -545,9 +543,9 @@ It also provides support to stick the group header by enabling the property [SfL
 
 ## Selection
 
-SfListView allows you to select the item by setting the [SfListView.SelectionMode](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionMode.html) property. You can set the `SfListView.SelectionMode` property to single, multiple and none based on your requirements. Information about the selected item can be tracked using [SfListView.SelectedItem](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItem.html) and [SfListView.SelectedItems](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItems.html) properties. It also allows you to change the selection highlight color by using the [SfListView.SelectionBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionBackgroundColor.html).
+The SfListView allows selecting the item by setting the [SfListView.SelectionMode](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionMode.html) property. You can set the `SfListView.SelectionMode` property to single, multiple, and none. Information about the selected item can be tracked using the [SfListView.SelectedItem](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItem.html) and [SfListView.SelectedItems](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItems.html) properties. It also allows changing the selection highlight color by using the [SfListView.SelectionBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionBackgroundColor.html).
 
-You can change the gesture type to select the item by setting the [SfListView.SelectionGesture](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionGesture.html) property. You can set the `SfListView.SelectionGesture` property to Tap, DoubleTap and Hold based on your requirements.
+You can change the gesture type to select the item by setting the [SfListView.SelectionGesture](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionGesture.html) property. You can set the `SfListView.SelectionGesture` property to Tap, DoubleTap, and Hold.
 
 You can handle the selection operations with the help of [SelectionChanging](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionChanging_EV.html) and [SelectionChanged](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionChanged_EV.html) events of the SfListView.
  
@@ -567,7 +565,7 @@ listView.SelectionBackgroundColor = Color.FromHex("#E4E4E4");
 
 ## Header and Footer
 
-SfListView allows you to set the header and footer to your user interface(UI) view by setting the DataTemplate to the [HeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~HeaderTemplate.html) and [FooterTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~FooterTemplate.html).
+The SfListView allows setting the header and footer to your user interface(UI) view by setting the DataTemplate to the [HeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~HeaderTemplate.html) and [FooterTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~FooterTemplate.html).
 You can handle the header and footer either scrollable or sticky to the view by enabling or disabling the [IsStickyHeader](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsStickyHeader.html) and [IsStickyFooter](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsStickyFooter.html) properties.
  
 {% tabs %}

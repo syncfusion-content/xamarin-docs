@@ -11,7 +11,6 @@ documentation: ug
 
 This section provides a quick overview for getting started with SfListView for Xamarin.Forms. You will walk through the entire process of creating a real world SfListView.
 
-
 ## Assembly deployment
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders,
@@ -20,11 +19,11 @@ After installing Essential Studio for Xamarin, you can find all the required ass
 
 Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Xamarin\lib
 
-N> Assemblies can be found in unzipped package location in Mac
+N> Assemblies can be found in unzipped package location in Mac.
 
 ### SfListView for Xamarin.Forms
 
-The following list of assemblies need to be added as reference from the lib folder to use SfListView in your application.
+The following list of assemblies should be added as reference from the lib folder to use the SfListView in your application:
 
 <table>
 <tr>
@@ -53,9 +52,9 @@ N> You can also configure the Syncfusion NuGet packages in Visual Studio, please
 
 ## System requirements
 
-In SfListView, current supported Xamarin.Forms version is `2.4.0.280` and later.
+In the SfListView, current supported Xamarin.Forms version is `2.4.0.280` and later.
 
-The following table lists the platforms supported versions.
+The following table lists the platforms supported versions:
 
 <table>
     <tr>
@@ -110,7 +109,7 @@ The following table lists the platforms supported versions.
 
 ## Launching the SfListView on each platform
 
-To use SfListView inside an application, each platform application must initialize the SfListView renderer. This initialization step varies from platform to platform and is discussed in the following sections.
+To use the SfListView inside an application, each platform application must initialize the SfListView renderer. This initialization step varies from platform to platform and is discussed in the following sections.
 
 ### Android
 
@@ -118,7 +117,7 @@ The Android launches the SfListView without any initialization and is enough to 
 
 ### iOS
 
-To launch the SfListView in iOS, you need to call the `SfListViewRenderer.Init()` in the `FinishedLaunching` overridden method of the AppDelegate class after the Xamarin.Forms Framework initialization and before the LoadApplication is called, as demonstrated in the following code example:
+To launch the SfListView in iOS, call the `SfListViewRenderer.Init()` in the `FinishedLaunching` overridden method of the AppDelegate class after the Xamarin.Forms Framework initialization and before the LoadApplication is called, as demonstrated in the following code example
 
 {% highlight c# %}
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
@@ -133,7 +132,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ### Universal Windows Platform (UWP)
 
-To launch the SfListView in UWP, you need to call the `SfListViewRenderer.Init()` in the `MainPage` constructor before the LoadApplication is called, as demonstrated in the following code example:
+To launch the SfListView in UWP, call the `SfListViewRenderer.Init()` in the `MainPage` constructor before the LoadApplication is called, as demonstrated in the following code example.
 
 {% highlight c# %}
 public MainPage()

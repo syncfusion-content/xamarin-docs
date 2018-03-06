@@ -99,9 +99,8 @@ We can customize the date format of SfSchedule Header by using [ScheduleHeaderDa
 
 {% tabs %}
 {% highlight xaml %}
-<schedule:SfSchedule x:Name="schedule"
-                                     ScheduleHeaderDateFormat = "LLL yy">
-</schedule:SfSchedule>
+
+    <schedule:SfSchedule x:Name="schedule" ScheduleHeaderDateFormat = "LLL yy" />
 {% endhighlight %}
 {% highlight c# %}
 //Creating instance of Schedule
@@ -115,13 +114,12 @@ schedule.ScheduleHeaderDateFormat = "LLL yy";
 
 ## Header Tapped Event
 
-We can handle single tap action of `Header` by using [HeaderTapped](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~HeaderTapped_EV.html) event of `SfSchedule`. This event will be triggered when `Header` is Tapped. This event contains [HeaderTappedEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.HeaderTappedEventArgs.html) argument which holds [DateTime](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.CellTappedEventArgs~Datetime.html) details in it.
+We can handle single tap action of Header by using the [HeaderTapped](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~HeaderTapped_EV.html) event of `SfSchedule`. This event will be triggered when `Header` is Tapped. This event contains [HeaderTappedEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.HeaderTappedEventArgs.html) argument which holds [DateTime](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.CellTappedEventArgs~Datetime.html) details in it.
 
 {% tabs %}
 {% highlight xaml %}
-<schedule:SfSchedule x:Name="schedule"
-                                     HeaderTapped="Handle_HeaderTapped" >
-</schedule:SfSchedule>
+
+    <schedule:SfSchedule x:Name="schedule" HeaderTapped="Handle_HeaderTapped" />
 {% endhighlight %}
 {% highlight c# %}
 //Creating  new instance of Schedule
@@ -133,6 +131,6 @@ schedule.HeaderTapped += Handle_HeaderTapped;
 {% highlight c# %}
 void Handle_HeaderTapped(object sender, HeaderTappedEventArgs e)
 {
-var dateTime = e.DateTime;
+    var dateTime = e.DateTime;
 }
 {% endhighlight %}

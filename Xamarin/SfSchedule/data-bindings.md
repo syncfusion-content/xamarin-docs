@@ -489,9 +489,17 @@ schedule.OnAppointmentLoadedEvent += Schedule_OnAppointmentLoadedEvent;
 
 private void Schedule_OnAppointmentLoadedEvent(object sender, AppointmentLoadedEventArgs args)
 {
-if (args.appointment != null && (args.appointment as Meeting).EventName == "Meeting")
+if (args.appointment != null && (args.appointment as ScheduleAppointment).Subject == "Meeting")
 	{
 	args.appointmentStyle.BorderColor = Color.Blue;
+	args.appointmentStyle.TextColor  = Color.Red
+	args.appointmentStyle.BorderCornerRadius = 12;
+	args.appointmentStyle.BorderWidth = 10;
+	}
+else if (args.appointment != null && (args.appointment as ScheduleAppointment).IsAllDay == true)
+	{
+	args.appointmentStyle.BorderColor = Color.Red;
+	args.apointmentStyle.TextColor = Color.White;
 	args.appointmentStyle.BorderCornerRadius = 12;
 	args.appointmentStyle.BorderWidth = 10;
 	}
@@ -508,12 +516,23 @@ schedule.OnAppointmentLoadedEvent += Schedule_OnAppointmentLoadedEvent;
 
 private void Schedule_OnAppointmentLoadedEvent(object sender, AppointmentLoadedEventArgs args)
 {
-	Button button = new Button();
-	button.BackgroundColor = Color.Green;
+if ((args.Appointment as ScheduleAppointment).IsAllDay == true)
+{
+	Label label = new Label();
+	label.BackgroundColor = (args.appointment as ScheduleAppointment).Color;
 	if (args.appointment != null)
-		button.Text = (args.appointment as Meeting).EventName;
+		label.Text = (args.appointment as ScheduleAppointment).Subject;
+	args.view = label;
+}
+else if ((args.Appointment as ScheduleAppointment).Subject == "Birthday")
+{
+	Button button = new Button();
+	button.Image = "cake.png";
+	button.BackgroundColor = (args.appointment as ScheduleAppointment).Color;
 	args.view = button;
 }
+}
+
 {% endhighlight %}
 
 ## Selection

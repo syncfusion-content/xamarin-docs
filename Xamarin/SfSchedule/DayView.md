@@ -509,7 +509,7 @@ We can change the appearance of Font by setting the FontFamily property of follo
 [ViewHeaderStyle](https://help.syncfusion.com/xamarin/sfschedule/dayview#viewheader-appearance) - Using FontFamily property, customize the view header style of day view, week view, work week view.
 [AppointmentStyle](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#appearance-customization) - Using FontFamily property, customize the appointment style.
 [MonthCellStyle](https://help.syncfusion.com/xamarin/sfschedule/monthview#monthcell-appearance) - Using FontFamily property, customize the month cell style.
-[MonthInlineViewStyle](https://help.syncfusion.com/xamarin/sfschedule/monthview#inlineview-appearance) - Using FontFamily property, customize the month inlinview style.
+[MonthInlineViewStyle](https://help.syncfusion.com/xamarin/sfschedule/monthview#inlineview-appearance) - Using FontFamily property, customize the month inline view style.
 [WeekNumberStyle](https://help.syncfusion.com/xamarin/sfschedule/monthview#week-number-appearance) - Using FontFamily property, customize the week number style.
 
 Following steps explain how to configure custom fonts.

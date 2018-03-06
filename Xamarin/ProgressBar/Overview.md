@@ -1,3 +1,11 @@
+---
+layout: post
+title: Overview
+description: overview
+platform: xamarin
+control: ProgressBar
+documentation: ug
+---
 # Overview
 
 The progress bar provides a customizable visual that indicates the progress of a task.

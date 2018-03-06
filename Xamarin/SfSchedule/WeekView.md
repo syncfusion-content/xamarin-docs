@@ -80,19 +80,20 @@ We can customize the date and day format of `SfSchedule` ViewHeader by using [Da
 
 {% tabs %}
 {% highlight xaml %}
-<schedule:SfSchedule>
-    <schedule:SfSchedule.WeekViewSettings>
-        <schedule:WeekViewSettings>
-            <schedule:WeekViewSettings.WeekLabelSettings>
-                <schedule:WeekLabelSettings DateFormat=“dd”>
-                    <schedule:WeekLabelSettings.DayFormat>
-                        <OnPlatform x:TypeArguments="x:String" iOS="EEEE" Android="EEEE" WinPhone="dddd" />
-                    </schedule:WeekLabelSettings.DayFormat>
-                </schedule:WeekLabelSettings>
-            </schedule:WeekViewSettings.WeekLabelSettings>
-        </schedule:WeekViewSettings>
-    </schedule:SfSchedule.WeekViewSettings>
-</schedule:SfSchedule>
+
+    <schedule:SfSchedule>
+        <schedule:SfSchedule.WeekViewSettings>
+            <schedule:WeekViewSettings>
+                <schedule:WeekViewSettings.WeekLabelSettings>
+                    <schedule:WeekLabelSettings DateFormat=“dd”>
+                        <schedule:WeekLabelSettings.DayFormat>
+                            <OnPlatform x:TypeArguments="x:String" iOS="EEEE" Android="EEEE" WinPhone="dddd" />
+                        </schedule:WeekLabelSettings.DayFormat>
+                    </schedule:WeekLabelSettings>
+                </schedule:WeekViewSettings.WeekLabelSettings>
+            </schedule:WeekViewSettings>
+        </schedule:SfSchedule.WeekViewSettings>
+    </schedule:SfSchedule>
 {% endhighlight %}
 {% highlight c# %}
 schedule.ScheduleView = ScheduleView.WeekView;
@@ -112,14 +113,15 @@ schedule.WeekViewSettings = weekViewSettings;
 
 
 ### ViewHeader Tapped Event
-We can handle single tap action of `ViewHeader` by using [ViewHeaderTapped](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ViewHeaderTapped_EV.html) event of `SfSchedule`. This event will be triggered when ViewHeader is Tapped. This event contains [ViewHeaderTappedEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderTappedEventArgs.html) argument which holds [DateTime](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.CellTappedEventArgs~Datetime.html) details in it.
+We can handle single tap action of ViewHeader by using [ViewHeaderTapped](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ViewHeaderTapped_EV.html) event of `SfSchedule`. This event will be triggered when the ViewHeader is Tapped. This event contains [ViewHeaderTappedEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderTappedEventArgs.html) argument which holds [DateTime](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.CellTappedEventArgs~Datetime.html) details in it.
 
 {% tabs %}
 {% highlight xaml %}
-<schedule:SfSchedule x:Name="schedule"
-                                     ScheduleView="WeekView"
-                                     ViewHeaderTapped="Handle_ViewHeaderTapped" >
-</schedule:SfSchedule>
+
+    <schedule:SfSchedule x:Name="schedule"
+                         ScheduleView="WeekView"
+                         ViewHeaderTapped="Handle_ViewHeaderTapped">
+    </schedule:SfSchedule>
 {% endhighlight %}
 {% highlight c# %}
 //Creating  new instance of Schedule
@@ -132,7 +134,7 @@ schedule.ViewHeaderTapped += Handle_ViewHeaderTapped;
 {% highlight c# %}
 void Handle_ViewHeaderTapped(object sender, ViewHeaderTappedEventArgs e)
 {
-var dateTime = e.DateTime;
+    var dateTime = e.DateTime;
 }
 {% endhighlight %}
 

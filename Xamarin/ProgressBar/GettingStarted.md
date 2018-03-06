@@ -1,3 +1,12 @@
+---
+layout: post
+title: Getting Started
+description: Getting Started.
+platform: xamarin
+control: ProgressBar
+documentation: ug
+---
+
 # Getting Started
 
 This section explains the steps required to work with progress bar in Xamarin.Forms.

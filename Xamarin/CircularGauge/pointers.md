@@ -11,11 +11,11 @@ documentation: ug
 
 # Pointers
 
-You can add multiple pointers to the gauge to point at multiple values on the same scale. It is used for showing a low and high values at the same time. The value of the pointer is set by using the [`Value`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Pointer~Value.html) property.
+You can add multiple pointers to the gauge to point multiple values on the same scale. It is used to show low and high values at the same time. The value of the pointer is set by using the [`Value`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Pointer~Value.html) property.
 
-## Needle Pointer
+## Needle pointer
 
-[`NeedlePointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.NeedlePointer.html) contains three parts, namely needle, knob, and tail and that can be placed on a gauge to mark the values.
+[`Needle Pointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.NeedlePointer.html) contains three parts, namely needle, knob, and tail and that can be placed on a gauge to mark the values.
 
 {% tabs %}
 
@@ -61,12 +61,10 @@ You can add multiple pointers to the gauge to point at multiple values on the sa
 
 ## Setting needle pointer type
 
-The appearance of the [`NeedlePointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.NeedlePointer.html) can be customized by using the [`Type`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.NeedlePointer~Type.html) property .The default value of this property is [`BarPointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.BarPointer.html).
+The appearance of the needle pointer can be customized by using the [`Type`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.NeedlePointer~Type.html) property. The default value of this property is [`BarPointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.BarPointer.html). This is an enum property, and it has the following options:
 
-It is an enum property, and it has the following options.
-
-1.Bar
-2.Triangle
+1. Bar
+2. Triangle
 
 ## Setting bar pointer type
 
@@ -160,7 +158,7 @@ It is an enum property, and it has the following options.
 
 ## Needle pointer customization
 
-The needle length is controlled by using the [`LengthFactor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.NeedlePointer~LengthFactor.html) property. The [`LengthFactor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.NeedlePointer~LengthFactor.html) property’s minimum and maximum bounds are 0 and 1. The needle’s UI is customized by the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Pointer~Color.html) and [`Thickness`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.NeedlePointer~Thickness.html) properties.
+The length of the needle is controlled by using the [`LengthFactor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.NeedlePointer~LengthFactor.html) property. The [`LengthFactor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.NeedlePointer~LengthFactor.html) property’s minimum and maximum bounds are 0 and 1. The needle’s UI is customized by using the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Pointer~Color.html) and [`Thickness`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.NeedlePointer~Thickness.html) properties.
 
 {% tabs %}
 
@@ -209,7 +207,7 @@ The needle length is controlled by using the [`LengthFactor`](https://help.syncf
 
 ## Knob customization
 
-Knob of the [`NeedlePointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.NeedlePointer.html) can be customized by using the [`KnobColor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.NeedlePointer~KnobColor.html), [`KnobRadius`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.NeedlePointer~KnobRadius.html), [`KnobRadiusFactor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.NeedlePointer~KnobRadiusFactor.html), [`KnobStrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.NeedlePointer~KnobStrokeColor.html), and [`KnobStrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.NeedlePointer~KnobStrokeWidth.html) properties. You can set the radius of knob as pixel value by using [`KnobRadius`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.NeedlePointer~KnobRadius.html) property, and as percentage value by using [`KnobRadiusFactor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.NeedlePointer~KnobRadiusFactor.html) property.
+Knob of the needle pointer can be customized by using the [`KnobColor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.NeedlePointer~KnobColor.html), [`KnobRadius`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.NeedlePointer~KnobRadius.html), [`KnobRadiusFactor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.NeedlePointer~KnobRadiusFactor.html), [`KnobStrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.NeedlePointer~KnobStrokeColor.html), and [`KnobStrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.NeedlePointer~KnobStrokeWidth.html) properties. You can set the radius of knob to pixel and percentage values by using the [`KnobRadius`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.NeedlePointer~KnobRadius.html) and [`KnobRadiusFactor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.NeedlePointer~KnobRadiusFactor.html) properties.
 
 {% tabs %}
 
@@ -258,9 +256,9 @@ Knob of the [`NeedlePointer`](https://help.syncfusion.com/cr/cref_files/xamarin/
 
 ![](pointers_images/needle-pointer/knob-customization.png)
 
-## Setting tail for Needle Pointer
+## Setting tail for needle pointer
 
-Tail of [`NeedlePointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.NeedlePointer.html) can be customized by using the [`TailColor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.NeedlePointer~TailColor.html), [`TailLengthFactor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.NeedlePointer~TailLengthFactor.html), [`TailStrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.NeedlePointer~TailStrokeColor.html), and [`TailStrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.NeedlePointer~TailStrokeWidth.html) properties.
+Tail of the needle pointer can be customized by using the [`TailColor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.NeedlePointer~TailColor.html), [`TailLengthFactor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.NeedlePointer~TailLengthFactor.html), [`TailStrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.NeedlePointer~TailStrokeColor.html), and [`TailStrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.NeedlePointer~TailStrokeWidth.html) properties.
 
 {% tabs %}
 
@@ -309,9 +307,9 @@ Tail of [`NeedlePointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sfga
 
 ![](pointers_images/needle-pointer/tail.png)
 
-## Range Pointer
+## Range pointer
 
-A range pointer is an accenting line or shaded background range that can be placed on a gauge to mark the values. [`RangeStart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.RangePointer~RangeStart.html) property allows you to set the starting value of the range pointer.
+A range pointer is an accenting line or shaded background range that can be placed on a gauge to mark the values. The [`RangeStart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.RangePointer~RangeStart.html) property allows you to set the starting value of the range pointer.
 
 {% tabs %}
 
@@ -355,9 +353,9 @@ A range pointer is an accenting line or shaded background range that can be plac
 
 ![](pointers_images/range-pointer/range-pointer.png)
 
-## Range Pointer customization
+## Range pointer customization
 
-The range pointer’s UI is customized by using the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Pointer~Color.html) and [`Thickness`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.RangePointer~Thickness.html) properties. First, you should set the Offset property for range pointer, then increase the thickness of the range pointer.
+The range pointer’s UI is customized by using the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Pointer~Color.html) and [`Thickness`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.RangePointer~Thickness.html) properties. First, you should set the `Offset` property for range pointer, and then increase the thickness of the range pointer.
 
 {% tabs %}
 
@@ -404,14 +402,14 @@ The range pointer’s UI is customized by using the [`Color`](https://help.syncf
 
 ![](pointers_images/range-pointer/rangepointer-customization.png)
 
-## Setting position for Range Pointer
+## Setting position for range pointer
 
-The [`RangePointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.RangePointer.html) in the scale can be placed inside or outside of the scale by two ways:
+The [`RangePointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.RangePointer.html) in the scale can be placed inside or outside of the scale by using the following two ways:
 
-1.[`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.RangePointer~Offset.html) property.
-2.[`StartOffset`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.RangePointer~StartOffset.html) and [`EndOffset`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.RangePointer~EndOffset.html) properties.
+1. The [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.RangePointer~Offset.html) property.
+2. The [`StartOffset`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.RangePointer~StartOffset.html) and [`EndOffset`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.RangePointer~EndOffset.html) properties.
 
-### Setting offset for Range Pointer
+### Setting offset for range pointer
 
 {% tabs %}
 
@@ -457,7 +455,7 @@ The [`RangePointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/S
 
 ![](pointers_images/range-pointer/rangepointer-offset.png)
 
-### Setting start and end offset for Range Pointer
+### Setting start and end offset for range pointer
 
 {% tabs %}
 
@@ -504,9 +502,9 @@ The [`RangePointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/S
 
 ![](pointers_images/range-pointer/rangepointer-start-end-offset.png)
 
-## Setting range cap for Range Pointer
+## Setting range cap for range pointer
 
-[`RangeCap`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.RangePointer~RangeCap.html) is an enum property that provides options to position the range cap of the [`RangePointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.RangePointer.html), which contains Start, End, Both, and None options.
+The [`RangeCap`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.RangePointer~RangeCap.html) property provides options to position the range cap of the [`RangePointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.RangePointer.html), which contains the start, end, both, and none options. The [`RangeCap`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.RangePointer~RangeCap.html) property is an enum property.
 
 {% tabs %}
 
@@ -552,17 +550,18 @@ The [`RangePointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/S
 
 ![](pointers_images/range-pointer/range-cap.png)
 
-## Marker Pointer
+## Marker pointer
 
-Different types of marker shape are used to mark the pointer value in scale. You can change the marker shape by using [`MarkerShape`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.MarkerPointer~MarkerShape.html) property in pointer. Gauge supports the following types of marker shapes:
-1.Circle
-2.Rectangle
-3.Triangle
-4.InvertedTriangle
-5.Diamond
-6.Image
+The different types of marker shapes are used to mark the pointer values in a scale. You can change the marker shape by using the [`MarkerShape`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.MarkerPointer~MarkerShape.html) property. Gauge supports the following types of marker shapes:
 
-The image is used to denote the pointer value instead of rendering marker shape. It can be achieved by setting [`MarkerShape`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.MarkerPointer~MarkerShape.html) to Image, and assigning image path to [`ImageSource`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.MarkerPointer~ImageSource.html) in pointer.
+* Circle
+* Rectangle
+* Triangle
+* Inverted triangle
+* Diamond
+* Image
+
+The image is used to denote the pointer value instead of rendering the marker shape. It can be achieved by setting the [`MarkerShape`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.MarkerPointer~MarkerShape.html) to `Image`, and assigning the image path to [`ImageSource`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.MarkerPointer~ImageSource.html) in pointer.
 
 {% tabs %}
 
@@ -656,9 +655,9 @@ The image is used to denote the pointer value instead of rendering marker shape.
 
 ![](pointers_images/marker-pointer/image.png)
 
-## Marker Pointer customization
+## Marker pointer customization
 
-The marker can be customized in terms of color, width, and, height by using [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Pointer~Color.html), [`MarkerWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.MarkerPointer~MarkerWidth.html), and [`MarkerHeight`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.MarkerPointer~MarkerHeight.html) properties in pointer. First, you should set the Offset property for marker pointer, then increase the height and width of the marker pointer.
+The marker can be customized in terms of color, width, and height by using the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Pointer~Color.html), [`MarkerWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.MarkerPointer~MarkerWidth.html), and [`MarkerHeight`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.MarkerPointer~MarkerHeight.html) properties in pointer. First, you should set the `Offset` property for marker pointer, then increase the height and width of the marker pointer.
 
 {% tabs %}
 
@@ -708,7 +707,7 @@ The marker can be customized in terms of color, width, and, height by using [`Co
 
 ## Setting multiple pointers
 
-In addition to the default pointer, you can add n number of pointers to a scale by using [`Pointers`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Pointer.html) property.
+In addition to the default pointer, you can add n number of pointers to a scale by using the [`Pointers`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Pointer.html) property.
 
 {% tabs %}
 
@@ -788,7 +787,7 @@ In addition to the default pointer, you can add n number of pointers to a scale 
 
 ## Setting animation for pointer
 
-[`EnableAnimation`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Pointer~EnableAnimation.html) property is a Boolean property that enables or disables the animation of the pointers in CircularGauge.
+The [`EnableAnimation`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Pointer~EnableAnimation.html) property is a Boolean property that enables or disables the animation of the pointers in circular gauge.
 
 {% tabs %}
 
@@ -878,7 +877,7 @@ In addition to the default pointer, you can add n number of pointers to a scale 
 
 ## Setting pointer drag
 
-Pointers can be dragged over the scale value. It can be achieved by clicking and dragging the pointer. To enable or disable the pointer drag, use EnableDragging property.
+Pointers can be dragged over the scale value. It can be achieved by clicking and dragging the pointer. To enable or disable the pointer drag, use the `EnableDragging` property.
 
 {% tabs %}
 

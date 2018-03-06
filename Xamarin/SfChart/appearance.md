@@ -21,8 +21,6 @@ Currently, Chart supports only [`Metro`](https://help.syncfusion.com/cr/cref_fil
 
 **Custom Palette**
 
-### CustomBrushes
-
 Chart will use the colors from [`CustomBrushes`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorModel~CustomBrushes.html) property if [`ColorModel.Palette`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorModel~Palette.html) is set to [`Custom`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorPalette.html).
 
 Following code illustrates how to set the custom colors.
@@ -77,51 +75,6 @@ SfChart chart = new SfChart()
 {% endtabs %}
 
 ![](appearance_images/appearance_img2.png)
-
-### CustomGradientColors
-
-Chart uses the gradient colors from the [`CustomGradientColors`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorModel~CustomGradientColors.html) property and needs to set the [`ColorModel.Palette`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorModel~Palette.html) property to [`Custom`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorPalette.html).
-
-The following code illustrates how to set the custom gradient colors by specifying the [`StartPoint`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartGradientColor~StartPoint.html) and [`EndPoint`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartGradientColor~EndPoint.html) of the [`ChartGradientColor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartGradientColor.html). The [`GradientStops`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartGradientColor~GradientStops.html) are collections of [`ChartGradientStop`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartGradientStop.html) which specifies the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartGradientStop~Color.html) and [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartGradientStop~Color.html) of the gradient colors.  
-
-The startpoint and endpoints are varies depends upon the ChartSeries, but by simply changing the startpoints and endpoints, we can change the direction of the gradient. 
-
-{% tabs %} 
-
-{% highlight xaml %}
-
- <chart:SfChart.ColorModel>
-      <chart:ChartColorModel Palette="Custom">
-        <chart:ChartColorModel.CustomGradientColors>
-          <chart:ChartGradientColor StartPoint="0.5,1" EndPoint="0.5,0">
-            <chart:ChartGradientColor.GradientStops>
-              <chart:ChartGradientStop Color="#FFE7C7" Offset= "0"/>
-              <chart:ChartGradientStop Color="#FCB69F" Offset= "1"/>
-            </chart:ChartGradientColor.GradientStops>
-          </chart:ChartGradientColor>
-        </chart:ChartColorModel.CustomGradientColors>
-      </chart:ChartColorModel>
-    </chart:SfChart.ColorModel>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-    chart.ColorModel.Palette = ChartColorPalette.Custom;
- 
-    ChartGradientColor gradientColor = new ChartGradientColor() { StartPoint = new Point(0.5, 1), EndPoint = new Point(0.5, 0) };
-    ChartGradientStop stop1 = new ChartGradientStop() { Color = Color.FromHex("#FFE7C7"), Offset = 0 };
-    ChartGradientStop stop2 = new ChartGradientStop() { Color = Color.FromHex("#FCB69F"), Offset = 1 };
-    gradientColor.GradientStops.Add(stop1);
-    gradientColor.GradientStops.Add(stop2);
-
-    chart.ColorModel.CustomGradientColors.Add(gradientColor);
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![](appearance_images/gradientchart.png)
 
 **None Palette**
 
@@ -250,13 +203,15 @@ SfChart chart = new SfChart()
 
 ![](appearance_images/appearance_img4.png)
 
-### CustomGradientColors
+### Gradient Colors
 
-Series uses the colors from the  [`CustomGradientColors`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorModel~CustomGradientColors.html) property and needs to set the  [`ColorModel.Palette`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorModel~Palette.html)  property of series to [`Custom`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorPalette.html).
+The [`CustomGradientColors`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorModel~CustomGradientColors.html) property of ChartColorModel is used to define the gradient colors, the colors from this property is used for series or chart if the Palette property of ChartColorModel is Custom and the CustomBrushes property is null. The following properties are used to define the gradient color for the chart.
 
-The following code illustrates how to set the custom gradient colors by specifying the [`StartPoint`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartGradientColor~StartPoint.html) and [`EndPoint`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartGradientColor~EndPoint.html) of the [`ChartGradientColor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartGradientColor.html). The [`GradientStops`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartGradientColor~GradientStops.html) are collections of [`ChartGradientStop`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartGradientStop.html) which specifies the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartGradientStop~Color.html) and [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartGradientStop~Color.html) of the gradient colors.  
+The [`StartPoint`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartGradientColor~StartPoint.html) and [`EndPoint`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartGradientColor~EndPoint.html)  properties of [`ChartGradientColor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartGradientColor.html) is used to configure the direction of gradient color, [`GradientStops`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartGradientColor~GradientStops.html)  property is used to set the color based on the offset.
 
-The startpoint and endpoints are varies depends upon the ChartSeries, but by simply changing the startpoints and endpoints, we can change the direction of the gradient. 
+The [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartGradientStop~Color.html) and [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartGradientStop~Color.html)  properties of [`ChartGradientStop`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartGradientStop.html) is used to configure the color and offset position of each color. 
+
+Following code snippets and screenshot illustrates how to apply the gradient color to the chart series.
 
 {% tabs %} 
 
@@ -338,6 +293,46 @@ The startpoint and endpoints are varies depends upon the ChartSeries, but by sim
 {% endtabs %}
 
 ![](appearance_images/gradientseries.png)
+
+
+Following code snippet and screenshot illustrates how to apply the gradient color to the chart area.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+ <chart:SfChart.ColorModel>
+      <chart:ChartColorModel Palette="Custom">
+        <chart:ChartColorModel.CustomGradientColors>
+          <chart:ChartGradientColor StartPoint="0.5,1" EndPoint="0.5,0">
+            <chart:ChartGradientColor.GradientStops>
+              <chart:ChartGradientStop Color="#FFE7C7" Offset= "0"/>
+              <chart:ChartGradientStop Color="#FCB69F" Offset= "1"/>
+            </chart:ChartGradientColor.GradientStops>
+          </chart:ChartGradientColor>
+        </chart:ChartColorModel.CustomGradientColors>
+      </chart:ChartColorModel>
+    </chart:SfChart.ColorModel>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    chart.ColorModel.Palette = ChartColorPalette.Custom;
+ 
+    ChartGradientColor gradientColor = new ChartGradientColor() { StartPoint = new Point(0.5, 1), EndPoint = new Point(0.5, 0) };
+    ChartGradientStop stop1 = new ChartGradientStop() { Color = Color.FromHex("#FFE7C7"), Offset = 0 };
+    ChartGradientStop stop2 = new ChartGradientStop() { Color = Color.FromHex("#FCB69F"), Offset = 1 };
+    gradientColor.GradientStops.Add(stop1);
+    gradientColor.GradientStops.Add(stop2);
+
+    chart.ColorModel.CustomGradientColors.Add(gradientColor);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](appearance_images/gradientchart.png)
 
 **None Palette**
 

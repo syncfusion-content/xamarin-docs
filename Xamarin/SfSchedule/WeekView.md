@@ -75,6 +75,69 @@ You can customize the height of the ViewHeader in `WeekView` by setting [ViewHea
 {% endtabs %}
 ![](daymodule_images/viewheaderheight_week.png)
 
+### ViewHeader Date Format
+We can customize the date and day format of `SfSchedule` ViewHeader by using [DateFormat](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DayLabelSettings~DateFormat.html) and [DayFormat](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DayLabelSettings~DayFormat.html) properties of `WeekLabelSettings`
+
+{% tabs %}
+{% highlight xaml %}
+
+    <schedule:SfSchedule>
+        <schedule:SfSchedule.WeekViewSettings>
+            <schedule:WeekViewSettings>
+                <schedule:WeekViewSettings.WeekLabelSettings>
+                    <schedule:WeekLabelSettings DateFormat=“dd”>
+                        <schedule:WeekLabelSettings.DayFormat>
+                            <OnPlatform x:TypeArguments="x:String" iOS="EEEE" Android="EEEE" WinPhone="dddd" />
+                        </schedule:WeekLabelSettings.DayFormat>
+                    </schedule:WeekLabelSettings>
+                </schedule:WeekViewSettings.WeekLabelSettings>
+            </schedule:WeekViewSettings>
+        </schedule:SfSchedule.WeekViewSettings>
+    </schedule:SfSchedule>
+{% endhighlight %}
+{% highlight c# %}
+schedule.ScheduleView = ScheduleView.WeekView;
+//Creating new instance of WeekViewSettings
+WeekViewSettings weekViewSettings = new WeekViewSettings();
+//Creating new instance of WeekLabelSettings
+WeekLabelSettings weekLabelSettings = new WeekLabelSettings();
+//Customizing date format
+weekLabelSettings.DateFormat = "dd";
+weekLabelSettings.DayFormat = Device.OnPlatform("EEEE", "EEEE", "dddd");
+weekViewSettings.WeekLabelSettings = weekLabelSettings;
+schedule.WeekViewSettings = weekViewSettings;
+{% endhighlight %}
+{% endtabs %}
+
+![](daymodule_images/DateFormat_Week.png)
+
+
+### ViewHeader Tapped Event
+We can handle single tap action of ViewHeader by using the [ViewHeaderTapped](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ViewHeaderTapped_EV.html) event of `SfSchedule`. This event will be triggered when ViewHeader is Tapped. This event contains [ViewHeaderTappedEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderTappedEventArgs.html) argument which holds [DateTime](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.CellTappedEventArgs~Datetime.html) details in it.
+
+{% tabs %}
+{% highlight xaml %}
+
+    <schedule:SfSchedule x:Name="schedule"
+                         ScheduleView="WeekView"
+                         ViewHeaderTapped="Handle_ViewHeaderTapped">
+    </schedule:SfSchedule>
+{% endhighlight %}
+{% highlight c# %}
+//Creating  new instance of Schedule
+SfSchedule schedule = new SfSchedule();
+schedule.ScheduleView = ScheduleView.WeekView;
+schedule.ViewHeaderTapped += Handle_ViewHeaderTapped;
+{% endhighlight %}
+{% endtabs %}
+
+{% highlight c# %}
+void Handle_ViewHeaderTapped(object sender, ViewHeaderTappedEventArgs e)
+{
+    var dateTime = e.DateTime;
+}
+{% endhighlight %}
+
 ## Change Time Interval
 You can customize the interval of timeslots in `WeekView` by setting [TimeInterval](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~TimeInterval.html)  property of `SfSchedule`.
 

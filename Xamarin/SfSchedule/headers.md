@@ -31,9 +31,7 @@ You can customize the height for the Header in Schedule using `HeaderHeight` in 
 ## Appearance
 
 You can change the header format and style using `HeaderStyle` property in schedule.
-
-You can change the background color,text style and text size using properties such as [BackgroundColor](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.HeaderStyle~BackgroundColorProperty.html),[TextStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.HeaderStyle~TextStyleProperty.html),[TextColor](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.HeaderStyle~TextColorProperty.html), of Header using `HeaderStyle` property in schedule.
-
+You can change the background color, font family, font attributes and font size using properties such as [BackgroundColor](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.HeaderStyle~BackgroundColorProperty.html), [FontFamily](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.HeaderStyle~FontFamilyProperty.html), [FontAttributes](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.HeaderStyle~FontAttributesProperty.html), [FontSize](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.HeaderStyle~FontSizeProperty.html), [TextColor](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.HeaderStyle~TextColorProperty.html), of Header using `HeaderStyle` property in schedule.
 {% tabs %} 
 {% highlight xaml %}
 
@@ -42,7 +40,12 @@ You can change the background color,text style and text size using properties su
 			<syncfusion:HeaderStyle
 				BackgroundColor="#FADBD8" 
 				TextColor="Blue" 
-				TextStyle="20" />
+				FontSize="15"
+				FontAttributes="Bold">
+				<schedule:HeaderStyle.FontFamily>
+            <OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
+        </schedule:HeaderStyle.FontFamily>
+		</syncfusion:HeaderStyle>
 		</syncfusion:SfSchedule.HeaderStyle>
 	</syncfusion:SfSchedule>
 
@@ -51,7 +54,9 @@ You can change the background color,text style and text size using properties su
 
 	HeaderStyle headerStyle = new HeaderStyle();
 	headerStyle.BackgroundColor = Color.FromRgb(250, 219, 216);
-	headerStyle.TextStyle = Font.SystemFontOfSize(20);
+	headerStyle.FontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
+	headerStyle.FontSize = 15;
+	headerStyle.FontAttributes=FontAttributes.Bold;
 	headerStyle.TextColor=Color.Blue;
 	schedule.HeaderStyle = headerStyle;
 
@@ -136,3 +141,7 @@ void Handle_HeaderTapped(object sender, HeaderTappedEventArgs e)
 var dateTime = e.DateTime;
 }
 {% endhighlight %}
+
+## Custom Font
+
+For Configuring custom font, please refer [here](https://help.syncfusion.com/xamarin/sfschedule/dayview#custom font)

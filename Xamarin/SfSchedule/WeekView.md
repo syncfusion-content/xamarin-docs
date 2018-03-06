@@ -29,8 +29,12 @@ You can customize the default appearance of view header in [WeekView](https://he
 			viewHeaderStyle.BackgroundColor = Color.FromHex("#009688");
 			viewHeaderStyle.DayTextColor = Color.FromHex("#FFFFFF");
 			viewHeaderStyle.DateTextColor = Color.FromHex("#FFFFFF");
-			viewHeaderStyle.DayTextStyle = Font.OfSize("Arial", 15);
-			viewHeaderStyle.DateTextStyle = Font.OfSize("Arial", 15);
+			viewHeaderStyle.DayFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
+			viewHeaderStyle.DateFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
+			viewHeaderStyle.DayFontSize = 15;
+			viewHeaderStyle.DateFontSize = 15;
+			viewHeaderStyle.DayFontAttributes = DayFontAttributes.Bold;
+			viewHeaderStyle.DateFontAttributes = DayFontAttributes.Bold;
 			schedule.ViewHeaderStyle = viewHeaderStyle;
 			
 {% endhighlight %}
@@ -43,8 +47,16 @@ You can customize the default appearance of view header in [WeekView](https://he
              BackgroundColor="#009688" 
              DayTextColor="#FFFFFF" 
              DateTextColor="#FFFFFF" 
-             DayTextStyle="Arial,15" 
-             DateTextStyle="Arial,15">
+             DayFontSize="15"
+			 DateFontSize="15"
+			 DayFontAttributes="Bold"
+			 DateFontAttributes="Bold">
+	     <schedule:ViewHeaderStyle.DayFontFamily>
+                 <OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
+         </schedule:ViewHeaderStyle.DayFontFamily>
+		 <schedule:ViewHeaderStyle.DateFontFamily>
+                 <OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
+         </schedule:ViewHeaderStyle.DateFontFamily>
         </schedule:ViewHeaderStyle>
     </schedule:SfSchedule.ViewHeaderStyle>
 </schedule:SfSchedule> 
@@ -526,3 +538,7 @@ You can download the entire source code of this demo for Xamarin.Forms from here
 * `SfSchedule` supports two-way binding of `SelectedDate` property.
 
 ![](daymodule_images/selection_Week.png)
+
+## Custom Font
+
+For Configuring custom font, please refer [here](https://help.syncfusion.com/xamarin/sfschedule/dayview#custom font)

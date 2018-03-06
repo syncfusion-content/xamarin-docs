@@ -29,13 +29,15 @@ you can change the header format and style using `HeaderStyle` property in sched
 
 #### Fonts and colors
 
-You can change the background color,text style and text size using properties such as `BackgroundColor`,`TextStyle`, `TextSize` of Header using `HeaderStyle` property in schedule.
+You can change the background color, font family, font attributes and font size using properties such as `BackgroundColor`, `FontFamily`, `FontSize`, `FontAttributes` of Header using `HeaderStyle` property in schedule.
 
 {% highlight c# %}
 
 	HeaderStyle headerStyle = new HeaderStyle();
 	headerStyle.BackgroundColor = Color.FromRgb(251, 211, 201);
-	headerStyle.TextStyle = Font.Default;
+	headerStyle.FontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
+	headerStyle.FontSize = 15;
+	headerStyle.FontAttributes = FontAttributes.Bold;
 	headerStyle.TextSize = 15;
 	headerStyle.TextColor=Color.White;
 	schedule.HeaderStyle = headerStyle;
@@ -50,7 +52,7 @@ You can customize the view header of the Schedule using `ViewHeaderStyle` and `V
 
 #### Fonts and Colors
 
-You can change the background color,text style and text size using properties such as `BackgroundColor`,`DateTextStyle`, `DayTextStyle`, `DayTextColor`, `DateTextColor`,`DateTextSize`, `DayTextSize` of ViewHeader using `ViewHeaderStyle` property in schedule.
+You can change the background color, font family, font attributes and font size using properties such as `BackgroundColor`, `DayFontFamily`, `DateFontFamily`, `DayFontAttributes`, `DateFontAttributes`, `DayTextColor`, `DateTextColor`, `DateFontSize`, `DayFontSize` of ViewHeader using `ViewHeaderStyle` property in schedule.
 
 {% highlight c# %}
 
@@ -58,10 +60,12 @@ You can change the background color,text style and text size using properties su
 	viewHeaderStyle.BackgroundColor = Color.FromRgb(251,211,201);
 	viewHeaderStyle.DayTextColor = Color.White;
 	viewHeaderStyle.DateTextColor = Color.White;
-	viewHeaderStyle.DateTextSize = 15;
-	viewHeaderStyle.DayTextSize = 10;
-	viewHeaderStyle.DateTextStyle = Font.Default;
-	viewHeaderStyle.DayTextStyle = Font.Default;
+	viewHeaderStyle.DayFontFamily = Device.OnPlatform("Lobster-Regular", " Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
+    viewHeaderStyle.DateFontFamily = Device.OnPlatform("Lobster-Regular", " Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
+    viewHeaderStyle.DayFontSize = 15;
+	viewHeaderStyle.DateFontSize = 15;
+	viewHeaderStyle.DayFontAttributes = DayFontAttributes.Bold;
+	viewHeaderStyle.DateFontAttributes = DateFontAttributes.Bold;
 	schedule.ViewHeaderStyle = viewHeaderStyle;
 
 {% endhighlight %}
@@ -550,3 +554,7 @@ You can change the time interval and time interval height using `TimeInterval` a
 >**NOTE** : `TimeInterval` value should be given in minutes.
 
 ![](AppearanceAndStyling_images/TimeInterval.png)
+
+## Custom Font
+
+For Configuring custom font, please refer [here](https://help.syncfusion.com/xamarin/sfschedule/dayview#custom font)

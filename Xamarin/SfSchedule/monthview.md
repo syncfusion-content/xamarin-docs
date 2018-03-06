@@ -165,13 +165,14 @@ You can display the Week Number of the year in `MonthView` by setting [ShowWeekN
 ![](monthview_images/showweeknumber.png)
 
 ## Week Number Appearance
-You can customize the Week Number appearance by using [WeekNumberStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~WeekNumberStyle.html) property of `MonthViewSettings`. Week number [BackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekNumberStyle~BackgroundColor.html), [TextColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekNumberStyle~TextColor.html), [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekNumberStyle~TextStyle.html) can be customized using `WeekNumberStyle` properties.
-
+You can customize the Week Number appearance by using [WeekNumberStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~WeekNumberStyle.html) property of `MonthViewSettings`. Week number [BackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekNumberStyle~BackgroundColor.html), [TextColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekNumberStyle~TextColor.html), [FontFamily](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekNumberStyle~FontFamily.html), [FontSize](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekNumberStyle~FontSize.html), [FontAttributes](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekNumberStyle~FontAttributes.html) can be customized using `WeekNumberStyle` properties.
 {% tabs %}
 {% highlight c# %}
 		//creating new instance for WeekNumberStyle
 		WeekNumberStyle weekNumberStyle = new WeekNumberStyle();
-		weekNumberStyle.TextStyle = Font.OfSize("Arial", 15);
+		weekNumberStyle.FontFamily = Device.OnPlatform("Lobster=Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
+		weekNumberStyle.FontSize = 15;
+		weekNumberStyle.FontAttributes = FontAttributes.Bold;
 		weekNumberStyle.BackgroundColor = Color.Blue;
 		weekNumberStyle.TextColor = Color.White;
 		monthViewSettings.WeekNumberStyle = weekNumberStyle;
@@ -207,7 +208,11 @@ You can customize the View Header appearance by using [ViewHeaderStyle](http://h
             <schedule:ViewHeaderStyle 
 						BackgroundColor="Blue" 
 						DayTextColor="White" 
-						DayTextStyle="Arial,15">
+						DayFontSize="15"
+						DayFontAttributes="Bold">
+			<schedule:ViewHeaderStyle.DayFontFamily>
+                <OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
+            </schedule:ViewHeaderStyle.FontFamily>
             </schedule:ViewHeaderStyle>
         </schedule:SfSchedule.ViewHeaderStyle>
     </schedule:SfSchedule>
@@ -217,7 +222,9 @@ You can customize the View Header appearance by using [ViewHeaderStyle](http://h
 		ViewHeaderStyle viewHeaderStyle = new ViewHeaderStyle();
 		viewHeaderStyle.BackgroundColor = Color.Blue;
 		viewHeaderStyle.DayTextColor = Color.White;
-		viewHeaderStyle.DayTextStyle = Font.OfSize("Arial", 15);
+		viewHeaderStyle.DayFontSize = 15;
+		viewHeaderStyle.DayFontAttributes = FontAttributes.Bold;
+		viewHeaderStyle.DayFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
 		schedule.ViewHeaderStyle = viewHeaderStyle;
 {% endhighlight %}
 {% endtabs %}
@@ -580,3 +587,7 @@ schedule.MonthViewSettings = monthViewSettings;
 {% endtabs %}
 
 ![](monthview_images/TodayBackground.png)
+
+## Custom Font
+
+For Configuring custom font, please refer [here](https://help.syncfusion.com/xamarin/sfschedule/dayview#custom font)

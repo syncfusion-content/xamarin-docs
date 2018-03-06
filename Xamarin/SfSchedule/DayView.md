@@ -28,8 +28,12 @@ You can customize the default appearance of view header in [DayView](https://hel
 			viewHeaderStyle.BackgroundColor = Color.FromHex("#009688");
 			viewHeaderStyle.DayTextColor = Color.FromHex("#FFFFFF");
 			viewHeaderStyle.DateTextColor = Color.FromHex("#FFFFFF");
-			viewHeaderStyle.DayTextStyle = Font.OfSize("Arial", 15);
-			viewHeaderStyle.DateTextStyle = Font.OfSize("Arial", 15);
+			viewHeaderStyle.DayFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
+			viewHeaderStyle.DateFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
+			viewHeaderStyle.DayFontSize = 15;
+			viewHeaderStyle.DateFontSize = 15;
+			viewHeaderStyle.DayFontAttributes = DayFontAttributes.Bold;
+			viewHeaderStyle.DateFontAttributes = DateFontAttributes.Bold;
 			schedule.ViewHeaderStyle = viewHeaderStyle;
 			
 {% endhighlight %}
@@ -42,8 +46,13 @@ You can customize the default appearance of view header in [DayView](https://hel
               BackgroundColor="#009688" 
               DayTextColor="#FFFFFF" 
               DateTextColor="#FFFFFF" 
-              DayTextStyle="Arial,15" 
-              DateTextStyle="Arial,15">
+    		  DayFontAttributes="Bold"
+			  DateFontAttributes="Bold"
+			  DayFontSize="15"
+			  DateFontSize="15">
+	     <schedule:ViewHeaderStyle.FontFamily>
+              <OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
+         </schedule:ViewHeaderStyle.FontFamily>
         </schedule:ViewHeaderStyle>
      </schedule:SfSchedule.ViewHeaderStyle>
     </schedule:SfSchedule>
@@ -493,4 +502,27 @@ You can download the entire source code of this demo for Xamarin.Forms from here
 * `SfSchedule` supports two-way binding of `SelectedDate` property.
 
 ![](daymodule_images/selection_Day.png)
+
+## Custom Font
+We have a FontFamily property for HeaderStyle, ViewHeaderStyle, AppointmentStyle, MonthInlineViewStyle, MonthCellStyle, WeekNumberStyle. Setting the custom font for the above styles, use the following steps.
+
+### Custom Font Setting in Xamarin.Forms (Android) 
+* Download the Custom Font (e.g. Lobster-Regular.ttf) 
+* Add the downloaded Custom Font to the Assets folder of the Xamarin.Forms (Android) project.
+* Then, use the Custom Font name as FontFamily.
+### Custom Font Setting in Xamarin.Forms (ios)
+* Download the Custom Font (e.g. Lobster-Regular.ttf)
+* Add the downloaded Custom Font to the Resources folder of the Xamarin.Forms (iOS) project.
+* Edit info.plist and add a key Fonts provided by application (value type should be Array). In item0 of the array enter the name of the FontFamily you added in the Resource folder. (Such as Lobster-Regular.ttf).
+* Then, directly use Custom Font name as FontFamily.
+
+>**Note**:
+ No need to mention .ttf when set the Custom Font in iOS.
+
+### Custom Font Setting in Xamarin.Forms (UWP)
+* Download the Custom Font (e.g. Lobster-Regular.ttf)
+* Add the downloaded Custom Font to the Assets folder of the Xamarin.Forms (UWP) project.
+* Then, directly use Custom Font name as FontFamily. When Setting custom font in UWP use the format (FontFamily = ” Assets/Lobster-Regular.ttf#Lobster”).
+
+
 

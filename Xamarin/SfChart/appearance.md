@@ -254,7 +254,7 @@ Following code snippets and screenshot illustrates how to apply the gradient col
 
             ChartGradientColor gradientColor1 = new ChartGradientColor() { StartPoint = new Point(0.5, 1), EndPoint = new Point(0.5, 0) };
             ChartGradientStop stop1 = new ChartGradientStop() { Color = Color.FromHex("#FFE7C7"), Offset = 0 };
-            ChartGradientStop stop2 = new ChartGradientStop() { Color = Color.FromHex("FCB69F"), Offset = 1 };
+            ChartGradientStop stop2 = new ChartGradientStop() { Color = Color.FromHex("#FCB69F"), Offset = 1 };
             gradientColor1.GradientStops.Add(stop1);
             gradientColor1.GradientStops.Add(stop2);
 

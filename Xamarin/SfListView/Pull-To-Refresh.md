@@ -9,9 +9,9 @@ documentation: ug
 
 # Pull To Refresh 
 
-SfListView lets you to enable the `PullToRefresh` support by loading it directly into the [PullableContent](https://help.syncfusion.com/cr/cref_files/xamarin/sfpulltorefresh/Syncfusion.SfPullToRefresh.XForms~Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh~PullableContent.html). At runtime, SfListView provides support for refreshing the data in view while performing the `PullToRefresh` action.
+SfListView allows enabling the `PullToRefresh` support by loading it directly into the [PullableContent](https://help.syncfusion.com/cr/cref_files/xamarin/sfpulltorefresh/Syncfusion.SfPullToRefresh.XForms~Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh~PullableContent.html). The control supports refreshing the data in view while performing the `PullToRefresh` action at runtime.
 
-N> You need to load the SfListView as first children of `PullableContent` for the `PullToRefresh`.
+N> Load the SfListView as first children of `PullableContent` for the `PullToRefresh`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -49,7 +49,7 @@ public ListViewPullToRefresh()
 
 ### Load the data into SfListView on pull-to-refresh
 
-SfListView lets you to refresh the data in view at runtime by using [Refreshing](https://help.syncfusion.com/cr/cref_files/xamarin/sfpulltorefresh/Syncfusion.SfPullToRefresh.XForms~Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh~Refreshing_EV.html) event. The `Refreshing` event gets triggered once the progress bar meets 100 %. You can add the data into the underlying collection and the data gets updated in view once the `Refreshing` event gets completed.
+The SfListView allows refreshing the data in view at runtime by using the [Refreshing](https://help.syncfusion.com/cr/cref_files/xamarin/sfpulltorefresh/Syncfusion.SfPullToRefresh.XForms~Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh~Refreshing_EV.html) event. The `Refreshing` event gets triggered once the progress bar meets 100 %. The data can be added into the underlying collection, and the data gets updated in view once the `Refreshing` event gets completed.
 
 {% highlight c# %}
 
@@ -81,6 +81,6 @@ Now run the application to render the following output. You can also download th
 
 ![](SfListView_images/SfListView-PullToRefresh.png)
 
-## Limitations
+## Limitation
 
-SfListView does not support for `PullToRefresh` when [Orientation](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~Orientation.html) is `Horizontal`.
+The SfListView does not supports for `PullToRefresh` when [Orientation](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~Orientation.html) is `Horizontal`.

@@ -33,8 +33,8 @@ You can customize the default appearance of view header in [WorkWeekView](https:
 			viewHeaderStyle.DateFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
 			viewHeaderStyle.DayFontSize = 15;
 			viewHeaderStyle.DateFontSize = 15;
-			viewHeaderStyle.DayFontAttributes = DayFontAttributes.Bold;
-			viewHeaderStyle.DateFontAttributes = DateFontAttributes.Bold;
+			viewHeaderStyle.DayFontAttributes = FontAttributes.Bold;
+			viewHeaderStyle.DateFontAttributes = FontAttributes.Bold;
 			schedule.ViewHeaderStyle = viewHeaderStyle;
 			
 {% endhighlight %}

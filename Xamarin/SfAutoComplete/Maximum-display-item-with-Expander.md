@@ -24,7 +24,6 @@ Restrict the number of suggestions displayed and have the remaining items loaded
 
 List<String> countryNames = new List<String>();
 countryNames.Add("Algeria");
-countryList.Add ("Akrotiri");
 countryNames.Add("Andorra");
 countryNames.Add("Angola");
 countryNames.Add("Antarctica");

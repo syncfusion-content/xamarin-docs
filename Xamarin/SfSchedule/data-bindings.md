@@ -499,7 +499,7 @@ if (args.appointment != null && (args.appointment as ScheduleAppointment).Subjec
 else if (args.appointment != null && (args.appointment as ScheduleAppointment).IsAllDay == true)
 	{
 	args.appointmentStyle.BorderColor = Color.Red;
-	args.apointmentStyle.TextColor = Color.White;
+	args.appointmentStyle.TextColor = Color.White;
 	args.appointmentStyle.BorderCornerRadius = 12;
 	args.appointmentStyle.BorderWidth = 10;
 	}

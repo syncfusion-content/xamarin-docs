@@ -489,17 +489,17 @@ schedule.OnAppointmentLoadedEvent += Schedule_OnAppointmentLoadedEvent;
 
 private void Schedule_OnAppointmentLoadedEvent(object sender, AppointmentLoadedEventArgs args)
 {
-if (args.appointment != null && (args.appointment as ScheduleAppointment).Subject == "Meeting")
+if (args.appointment != null && (args.appointment as Meeting).IsAllDay == true)
 	{
-	args.appointmentStyle.BorderColor = Color.Blue;
-	args.appointmentStyle.TextColor  = Color.Red
+	args.appointmentStyle.BorderColor = Color.Red;
+	args.appointmentStyle.TextColor  = Color.White
 	args.appointmentStyle.BorderCornerRadius = 12;
 	args.appointmentStyle.BorderWidth = 10;
 	}
-else if (args.appointment != null && (args.appointment as ScheduleAppointment).IsAllDay == true)
+else 
 	{
-	args.appointmentStyle.BorderColor = Color.Red;
-	args.appointmentStyle.TextColor = Color.White;
+	args.appointmentStyle.BorderColor = Color.Blue;
+	args.appointmentStyle.TextColor = Color.Red;
 	args.appointmentStyle.BorderCornerRadius = 12;
 	args.appointmentStyle.BorderWidth = 10;
 	}
@@ -519,16 +519,23 @@ private void Schedule_OnAppointmentLoadedEvent(object sender, AppointmentLoadedE
 if ((args.Appointment as ScheduleAppointment).IsAllDay == true)
 {
 	Label label = new Label();
-	label.BackgroundColor = (args.appointment as ScheduleAppointment).Color;
+	label.BackgroundColor = (args.appointment as Meeting).Color;
 	if (args.appointment != null)
-		label.Text = (args.appointment as ScheduleAppointment).Subject;
+		label.Text = (args.appointment as Meeting).EventName;
 	args.view = label;
 }
-else if ((args.Appointment as ScheduleAppointment).Subject == "Birthday")
+else if ((args.Appointment as ScheduleAppointment).EventName == "Retrospective")
 {
 	Button button = new Button();
-	button.Image = "cake.png";
-	button.BackgroundColor = (args.appointment as ScheduleAppointment).Color;
+	button.Image = "Meeting.png";
+	button.BackgroundColor = (args.appointment as Meeting).EventName;
+	args.view = button;
+}
+else 
+{
+	Button button = new Button();
+	button.Image = "Cake.png";
+	button.BackgroundColor = (args.appointment as Meeting).EventName;
 	args.view = button;
 }
 }

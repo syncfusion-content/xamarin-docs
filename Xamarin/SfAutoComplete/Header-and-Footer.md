@@ -41,7 +41,6 @@ We can provide Header Content at the top of the AutoComplete's Suggestion box. `
             countryNames.Add("United States");
             autoComplete.DataSource = countryNames;
             autoComplete.ShowDropDownHeaderView = true;
-		    autoComplete.DropDownHeaderViewHeight = 50;
             autoComplete.ValueChanged += (object sender, Syncfusion.SfAutoComplete.XForms.ValueChangedEventArgs e) =>
             {
                 label2.Text = "Search for " + e.Value;
@@ -61,10 +60,10 @@ The height of the Header in the SfAutoComplete can be adjusted by the property `
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-<auto:SfAutoComplete HeightRequest="40" x:Name="autoComplete"  DropDownHeaderViewHeight="50"> 
+<auto:SfAutoComplete HeightRequest="40" x:Name="autoComplete"> 
 			<auto:SfAutoComplete.DropDownHeaderView>
 			<StackLayout BackgroundColor="#f0f0f0" >
-				<Label  x:Name="label2" FontSize="20" VerticalTextAlignment="Center" HorizontalOptions="Center" VerticalOptions="Center" TextColor="#006bcd" Text="Search"  />
+				<Label  x:Name="label2" FontSize="20" VerticalTextAlignment="Center" HorizontalOptions="Center" VerticalOptions="Center" TextColor="#006bcd"  />
 			</StackLayout>
 			</auto:SfAutoComplete.DropDownHeaderView>
 				</auto:SfAutoComplete>
@@ -83,6 +82,12 @@ The height of the Header in the SfAutoComplete can be adjusted by the property `
             countryNames.Add("United States");
             autoComplete.DataSource = countryNames;
             autoComplete.ShowDropDownHeaderView = true;
+            //Set the height of the Header View
+            autoComplete.DropDownHeaderViewHeight = 50;
+            autoComplete.ValueChanged += (object sender, Syncfusion.SfAutoComplete.XForms.ValueChangedEventArgs e) =>
+            {
+                label2.Text = "Search for " + e.Value;
+            }
 
 {% endhighlight %}
 
@@ -122,7 +127,6 @@ We can provide Footer Content at the bottom of the AutoComplete's Suggestion box
             countryNames.Add("United States");
             autoComplete.DataSource = countryNames;
             autoComplete.ShowDropDownFooterView = true;
-		    autoComplete.DropDownFooterViewHeight = 50;
 
 {% endhighlight %}
 
@@ -160,6 +164,8 @@ The height of the Header in the SfAutoComplete can be adjusted by the property `
             countryNames.Add("United States");
             autoComplete.DataSource = countryNames;
             autoComplete.ShowDropDownFooterView = true;
+            //Set the height of the Footer View
+            autoComplete.DropDownFooterViewHeight = 50;
 
 {% endhighlight %}
 

@@ -59,25 +59,39 @@ The selected item can be displayed as token inside SfAutoComplete in two ways. T
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-    <autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" DropDownItemHeight="50" DisplayMemberPath="Name" ImageMemberPath="Image" MultiSelectMode="Token" TokensWrapMode="Wrap" DataSource="{Binding EmployeeCollection}">
+    <autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" DropDownItemHeight="50" DisplayMemberPath="Name" ImageMemberPath="Image" MultiSelectMode="Token" DataSource="{Binding EmployeeCollection}">
     </autocomplete:SfAutoComplete>
 </StackLayout>
 
 {% endhighlight %}
 
 {% highlight c# %}
+namespace autocomplete
+{
+public partial class autocompletePage : ContentPage
+{
+    EmployeeViewModel view = new EmployeeViewModel();
+    public autocompletePage()
+    {
+        InitializeComponent();
+        TokenSettings token = new TokenSettings();
+        token.FontSize = 16;
+        token.BackgroundColor = Color.FromHex("#d3d3d3");
+        token.TextColor = Color.Red;
+        token.SelectedBackgroundColor = Color.FromHex("#ffffe0");
+        token.DeleteButtonColor = Color.Brown;
+         token.FontFamily= "Times New Roman";
+        token.IsCloseButtonVisible = true;
+        token.CornerRadius = 3;
+        autoComplete.TokenSettings = token;
+        // Set TokensWrapMode to Wrap
+        autoComplete.TokensWrapMode = TokensWrapMode.Wrap;
+        this.BindingContext = view;
+        
+    }
+}
 
-List<String> countryNames = new List<String>();
-countryNames.Add("Uganda");
-countryNames.Add("Ukraine");
-countryNames.Add("United Arab Emirates");
-countryNames.Add("United Kingdom");
-countryNames.Add("United States");
-autoComplete.TokensWrapMode=TokensWrapMode.Wrap;
-
-
-
-        public class Employee
+ public class Employee
 {
     private string image;
     public string Image
@@ -204,6 +218,8 @@ public partial class autocompletePage : ContentPage
     {
         InitializeComponent();
 
+        // Token Customization
+
         TokenSettings token = new TokenSettings();
         token.FontSize = 16;
         token.BackgroundColor = Color.FromHex("#d3d3d3");
@@ -273,7 +289,7 @@ When selecting the multiple items, the selected items can be divided with a desi
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" MultiSelectMode="Delimiter"  Delimiter="*" />                    
+	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" MultiSelectMode="Delimiter"  Delimiter="," />                    
 </StackLayout> 
 
 {% endhighlight %}
@@ -282,6 +298,7 @@ When selecting the multiple items, the selected items can be divided with a desi
 
 List<String> countryNames = new List<String>();
 countryNames.Add("Algeria");
+countryList.Add ("Arabia");
 countryNames.Add("Andorra");
 countryNames.Add("Angola");
 countryNames.Add("Antarctica");
@@ -290,7 +307,7 @@ countryNames.Add("Armenia");
 countryNames.Add("Aruba");
 autoComplete.MaximumSuggestion=3;
 autoComplete.MultiSelectMode=MultiSelectMode.Delimiter;
-autoComplete.Delimiter="*";
+autoComplete.Delimiter=",";
 autoComplete.DataSource = countryNames;
 
 {% endhighlight %}

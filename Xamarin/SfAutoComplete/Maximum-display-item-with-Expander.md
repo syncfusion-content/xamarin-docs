@@ -15,7 +15,7 @@ Restrict the number of suggestions displayed and have the remaining items loaded
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<autocomplete:SfAutoComplete HeightRequest="40" MultiSelectMode="Delimiter" Delimiter="," LoadMoreText= "LOAD MORE" x:Name="autoComplete" MaximumSuggestion="3"  />                    
+	<autocomplete:SfAutoComplete HeightRequest="40" MultiSelectMode="Delimiter" Delimiter="," LoadMoreText= "LOAD MORE" x:Name="autoComplete" MaximumSuggestion="8"  />                    
 </StackLayout> 
 
 {% endhighlight %}
@@ -24,12 +24,15 @@ Restrict the number of suggestions displayed and have the remaining items loaded
 
 List<String> countryNames = new List<String>();
 countryNames.Add("Algeria");
+countryList.Add ("Akrotiri");
 countryNames.Add("Andorra");
 countryNames.Add("Angola");
 countryNames.Add("Antarctica");
 countryNames.Add("Argentina");
 countryNames.Add("America");
 countryNames.Add("Aruba");
+countryNames.Add("Africa");
+countryNames.Add("Arabia");
 autoComplete.DataSource = countryNames;
 
 {% endhighlight %}

@@ -96,49 +96,77 @@ chart.ChartBehaviors.Add(tool);
 
 ## Tooltip Template
 
-You can customize the appearance of the tooltip with your own template by using the [`TooltipTemplate`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~TooltipTemplateProperty.html#) property of [`Series`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries.html#).
+You can customize the appearance of the tooltip with your own template by using the [`TooltipTemplate`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~TooltipTemplateProperty.html#) property of [`Series`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries.html#). The BindingContext in the data template will be the respective underlying object from ItemsSource.
 
 {% tabs %} 
 
 {% highlight xaml %}
 
-<chart:ColumnSeries ItemsSource="{Binding ColumnData}" EnableTooltip="true" 
-XBindingPath="Month" YBindingPath="Value" >
-              <chart:ColumnSeries.TooltipTemplate>
-                  <DataTemplate>
-                      <StackLayout Orientation="Horizontal">
-                              <Label Text="Temperature:" />
-                              <Label Text="{Binding Value}"/>
-                      </StackLayout>
-                  </DataTemplate>
-              </chart:ColumnSeries.TooltipTemplate>
+<chart:ColumnSeries ItemsSource="{Binding Data}" XBindingPath="Month" YBindingPath="Value" EnableTooltip="True">
+                    <chart:ColumnSeries.TooltipTemplate>
+                        <DataTemplate>
+                            <StackLayout Orientation="Vertical">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Month :" />
+                                    <Label Text="{Binding Month}"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Value   :" />
+                                    <Label Text="{Binding Value}"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </DataTemplate>
+                    </chart:ColumnSeries.TooltipTemplate>
 </chart:ColumnSeries>
+<chart:SfChart.ChartBehaviors>
+   <chart:ChartTooltipBehavior BorderWidth="3" BorderColor="Maroon"/>
+</chart:SfChart.ChartBehaviors>
+
 
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-ColumnSeries column = new ColumnSeries (); 
-column.ItemsSource = viewModel.ColumnData;
-column.XBindingPath = "Month";
-column.YBindingPath = "Value";
-column.EnableTooltip = true;
+ColumnSeries column = new ColumnSeries();
+column.ItemsSource = viewModel.Data;
+column.XBindingPath = "Month";
+column.YBindingPath = "Value";
+column.EnableTooltip = true;
 
-DataTemplate template = new DataTemplate (() => {
-StackLayout stack = new StackLayout(){ Orientation = StackOrientation.Horizontal};
-Label label = new Label(){Text="Temperature:"};
-Label yValue = new Label();
-yValue.SetBinding (Label.TextProperty, "Value");
-stack.Children.Add(label);
-stack.Children.Add(yValue);
-return stack;
+ChartTooltipBehavior tooltip = new ChartTooltipBehavior();
+tooltip.BorderColor = Color.Maroon;
+tooltip.BorderWidth = 3 ;
+chart.ChartBehaviors.Add(tooltip);
+
+DataTemplate template = new DataTemplate(() =>
+{
+StackLayout stack = new StackLayout() { Orientation = StackOrientation.Vertical };
+StackLayout first = new StackLayout() { Orientation = StackOrientation.Horizontal };
+Label label = new Label() { Text = "Month:" };
+Label xValue = new Label();
+xValue.SetBinding(Label.TextProperty, new Binding("Month"));
+first.Children.Add(label);
+first.Children.Add(xValue);
+
+StackLayout second = new StackLayout() { Orientation = StackOrientation.Horizontal };
+Label label1 = new Label() { Text = "Value:" };
+Label yValue = new Label();
+yValue.SetBinding(Label.TextProperty, "Value");
+second.Children.Add(label1);
+second.Children.Add(yValue);
+
+stack.Children.Add(first);
+stack.Children.Add(second);
+return stack;
 });
 
-column.TooltipTemplate = template;
-Chart.Series.Add (column);
+column.TooltipTemplate = template;
+chart.Series.Add(column);
+
 
 {% endhighlight %}
 
 {% endtabs %}
 
+![](tooltip_images/TooltipTemplate.png)

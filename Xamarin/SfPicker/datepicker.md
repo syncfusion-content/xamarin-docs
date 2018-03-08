@@ -10,9 +10,9 @@ documentation: ug
 
 # Date Picker
 
-We have demonstrated in the following steps to create custom Date Picker using Picker control.
+This section explains the steps required to create custom Date Picker by using picker control.
 
-**Step** **1** **:** We have created custom class named as “CustomDatePicker”. This class should inherit from SfPicker control.
+**Step** **1** **:** Create a custom class, and named it as “CustomDatePicker”. This class should be inherited from picker control.
 
 {% highlight c# %}
 
@@ -24,23 +24,23 @@ public class CustomDatePicker : SfPicker
 
 {% endhighlight %}
 
-**Step** **2** **:** After that create four ObservableCollection with object type in CustomDatePicker class. 
+**Step** **2** **:** Create four ObservableCollection with object type in CustomDatePicker class. 
 
 **Collection** **details** **:** 
 
-Date Collection, Day Collection, Month Collection and Year Collection.
+Date collection, Day collection, Month collection, and Year collection.
 
-Day Collection -> We have added current month days using DateTime.DaysInMonth.
+Day collection -Add current month's days by using DateTime.DaysInMonth.
 
-Month Collection -> We have added Jan to Dec months
+Month collection -Add months from January to December.
 
-Year Collection -> We have added 1990 to 2050 years.
+Year collection -Add years from  1990 to 2050.
 
-Date Collection -> We have added all the three collections.
+Date collection -Add all the three collections.
 
-Date Collection is main collection we have assigned this collection to ItemsSource of Picker Control.
+Date Collection is the main collection, and this collection has been assigned to ItemsSource of picker control.
 
-The below code demonstrates Date collection creation.
+The following code demonstrates Date collection creation.
 
 {% highlight c# %}
 public class CustomDatePicker : SfPicker
@@ -157,7 +157,7 @@ Date.Add(Year);
 
 {% endhighlight %}
 
-**Step** **3** **:** We have updated the day value based on month and year value using Selection changed event of SfPicker control. Since the days of each month differs we have to handle this collection.
+**Step** **3** **:** Update the day value based on month and year values by using Selection changed event of picker control. Since the days of each month differs, you should handle this collection.
 
 {% highlight c# %}
 public CustomDatePicker()
@@ -272,7 +272,7 @@ catch
 
 {% endhighlight %}
 
-**Step** **4** **:** We have defined each column headers “Day”, “Month” and “Year” using ColumnHeaderText property of SfPicker control. The below code demonstrates how to define header for each column of SfPicker control.
+**Step** **4** **:** Define each column headers “Day”, “Month”, and “Year” by using ColumnHeaderText property of picker control. The following code demonstrates how to define header for each column of picker control.
 
 {% highlight c# %}
 public class CustomDatePicker : SfPicker
@@ -317,7 +317,7 @@ this.ColumnHeaderText = Headers;
 
 {% endhighlight %}
 
-**Step** **5** **:** Finally we have enabled SfPicker header, Column header and footer using ShowHeader,ShowFooter and ShowColumnHeader properties.
+**Step** **5** **:** Finally, enable the picker header, Column header, and footer by using ShowHeader,ShowFooter and ShowColumnHeader properties.
 
 {% highlight c# %}
 public CustomDatePicker()
@@ -342,7 +342,7 @@ ShowColumnHeader = true;
 
 {% endhighlight %}
 
-**Step** **6** **:** We have added the CustomDatePicker control in main XAML page. Please refer the below code snippets.
+**Step** **6** **:** Add the CustomDatePicker control in main XAML page. Please refer the following code snippets.
 
 {% tabs %}
 {% highlight xaml %}
@@ -431,12 +431,12 @@ date.IsOpen = !date.IsOpen;
 {% endhighlight %}
 {% endtabs %}
 
-Screen shot for the above code.
+The following screenshot illustrates the output of above code snippets.
 
 ![](images/datepicker_img1.jpeg)
 
 
-We have attached DatePicker sample for reference. Please download the sample from the following link.
+You can download the DatePicker sample for reference from the following link.
 
 Sample link: [DatePicker](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DatePicker1441640702)
 

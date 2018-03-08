@@ -1,5 +1,5 @@
 ---
-title: Adding Connectors in Diagram control for Xamarin.Forms
+title: Adding connectors in diagram control for Xamarin.Forms
 description: Learn how to add connector in diagram control.
 platform: Xamarin
 control: Diagram
@@ -139,6 +139,20 @@ diagram.AddConnector(connector1);
 {% endtabs %}
 ![](Connector_images/Connector_img4.jpeg)
 
+## Curve
+Curve segments are used to create links between two points, nodes or ports with curve segments. The following code example illustrates how to create a default curve segment.
+{% tabs %}
+{% highlight c# %}
+// creating connector instance with define its segment type
+Connector connector = new Connector(this);
+connector.SourcePoint = new System.Drawing.PointF(100, 100);
+connector.TargetPoint = new System.Drawing.PointF(300, 300);
+connector.SegmentType = SegmentType.CurveSegment;
+diagram.AddConnector(connector);
+{% endhighlight %}
+{% endtabs %}
+![](Connector_images/Connector_img5.jpeg)
+
 ## Decorator
 Start and end points of a Connector can be decorated with some customizable shapes like arrows, circles, diamond and square. You can decorate the connection end points with the SourceDecorator and TargetDecorator properties of Connector.
 The SourceDecoratorStyle and TargetDecoratorStyle properties allows to define the shape of the decorators. The following code example illustrates how to create decorators of various shapes.
@@ -165,7 +179,7 @@ SegmentType= SegmentType.StraightSegment
 diagram.AddConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img5.jpeg)
+![](Connector_images/Connector_img6.jpeg)
 
 ## Remove Connector
 Connector can be removed or detached from connection in two ways.
@@ -239,7 +253,7 @@ StrokeWidth = 4
 diagram.AddConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img6.jpeg)
+![](Connector_images/Connector_img7.jpeg)
 
 ## Decorator Appearance
 The following code example illustrates how to customize the appearance of the decorator.
@@ -290,5 +304,5 @@ Width = 12
 diagram.AddConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img7.jpeg)
+![](Connector_images/Connector_img8.jpeg)
 

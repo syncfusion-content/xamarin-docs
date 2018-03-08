@@ -51,20 +51,13 @@ The following list of assemblies need to be added as reference from the lib fold
 </tr>   
 <tr>   
 <td>UWP Renderer</td>   
-<td>pcl\Syncfusion.SfSchedule.XForms.dll<br/>uwp\Syncfusion.SfSchedule.UWP.dll<br/>uwp\Syncfusion.SfSchedule.XForms.UWP.dll<br/></td>   
+<td>pcl\Syncfusion.SfSchedule.XForms.dll<br/>uwp\Syncfusion.SfSchedule.XForms.UWP.dll<br/></td>   
 </tr>   
 </table>   
-
-#### Dependencies for UWP project
-
-For compiling the UWP project in Xamarin Forms, referring the Schedule assemblies (XForms, XForms.UWP & UWP) in the UWP project is sufficient but dependency assemblies of Schedule and its files (properties, themes, etc.) needs to be maintained in the UWP assembly folder to render the control.
  
-**Dependencies of SfSchedule**
 
-* Syncfusion.SfInput.UWP
-* Syncfusion.SfRadialMenu.UWP
-* Syncfusion.SfShared.UWP
-* Syncfusion.SfTabControl.UWP
+>**Note:**
+For compiling the UWP project in Xamarin.Forms, referring the Schedule assemblies (XForms, XForms.UWP) in the XForms (UWP) project is sufficient and its files (properties, themes, etc.) needs to be maintained in the UWP assembly folder to render the control.
 
 ### NuGet Configuration  
     
@@ -87,16 +80,12 @@ Android application launches SfSchedule without any initialization.
 To launch SfSchedule in iOS, you need to call `SfScheduleRenderer.Init()` in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms Framework initialization.   
     
 {% highlight c# %}   
-    
-    public override bool FinishedLaunching (UIApplication app, NSDictionary options)   
-    {    
-        ...    
-        global::Xamarin.Forms.Forms.Init (); 
-        SfScheduleRenderer.Init();    
-        LoadApplication (new App ());   
-        ...   
-    }   
-    
+        public override bool FinishedLaunching(UIApplication app, NSDictionary options)
+        {
+            global::Xamarin.Forms.Forms.Init();
+            SfScheduleRenderer.Init();
+            LoadApplication(new App());
+        }
 {% endhighlight %}   
     
 #### Universal Windows Platform (UWP)
@@ -110,21 +99,16 @@ There is a known Framework issue in UWP platform. The custom controls will not r
 The above problem can be resolved by initializing the SfSchedule assemblies in `App.xaml.cs` in UWP project as like in below code snippet.
 
 {% highlight c# %}
-
-    // In App.xaml.cs
-
-    protected override void OnLaunched(LaunchActivatedEventArgs e)
-    {
-        ...
-        rootFrame.NavigationFailed += OnNavigationFailed;
-        // you'll need to add `using System.Reflection;`
-        List<Assembly> assembliesToInclude = new List<Assembly>();
-        //Now, add all the assemblies your app uses assembliesToInclude.Add(typeof(SfScheduleRenderer).GetTypeInfo().Assembly);
-        // replaces Xamarin.Forms.Forms.Init(e);        
-        Xamarin.Forms.Forms.Init(e, assembliesToInclude);
-        ...     
-    }
-
+        // In App.xaml.cs
+        protected override void OnLaunched(LaunchActivatedEventArgs e)
+        {
+            rootFrame.NavigationFailed += OnNavigationFailed;
+            // you'll need to add `using System.Reflection;`
+            List<Assembly> assembliesToInclude = new List<Assembly>();
+            //Now, add all the assemblies your app uses assembliesToInclude.Add(typeof(SfScheduleRenderer).GetTypeInfo().Assembly);
+            // replaces Xamarin.Forms.Forms.Init(e);        
+            Xamarin.Forms.Forms.Init(e, assembliesToInclude);
+        }
 {% endhighlight %}
 
     
@@ -135,7 +119,7 @@ This section explains how to create a simple application using SfSchedule contro
 ![](GettingStarted_images/GettingStarted.png)   
 
 You can download the entire source code of this demo for Xamarin.Forms from
-here [ScheduleGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ScheduleGettingStarted892423234.zip)
+here [ScheduleGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ScheduleGettingStarted-815086813.zip)
     
 This section provides a walks through to create `MeetingRoomScheduler` using our Schedule control.  
     
@@ -158,40 +142,37 @@ Set the SfSchedule control as content to the ContentPage.
     
 {% tabs %}   
 {% highlight xaml %}   
-       
-    <?xml version="1.0" encoding="utf-8" ?>
-    <ContentPage
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
         x:Class="GettingStarted.Sample"
         xmlns="http://xamarin.com/schemas/2014/forms"
         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
         xmlns:local="clr-namespace:GettingStarted;assembly=GettingStarted"
         xmlns:syncfusion="clr-namespace:Syncfusion.SfSchedule.XForms;assembly=Syncfusion.SfSchedule.XForms">
-        <ContentPage.Content>
-            <syncfusion:SfSchedule x:Name="schedule" />
-        </ContentPage.Content>
-    </ContentPage>
-    
+
+    <ContentPage.Content>
+        <syncfusion:SfSchedule x:Name="schedule" />
+    </ContentPage.Content>
+</ContentPage>
 {% endhighlight %}   
 {% highlight c# %}   
-    
-    using Syncfusion.SfSchedule.XForms;   
-    using Xamarin.Forms;   
-    
-    namespace GettingStarted   
-    {   
-        public class App:Application   
-        {   
-            SfSchedule schedule; 
-            public App()   
-            {   
-                InitializeComponent();   
-                //Creating new instance for SfSchedule   
-                schedule = new SfSchedule();   
-                MainPage = new ContentPage { Content = schedule };   
-            }   
-        }   
-    }   
-      
+using Syncfusion.SfSchedule.XForms;
+using Xamarin.Forms;
+
+namespace GettingStarted
+{
+    public class App : Application
+    {
+        SfSchedule schedule;
+        public App()
+        {
+            InitializeComponent();
+            //Creating new instance for SfSchedule   
+            schedule = new SfSchedule();
+            MainPage = new ContentPage { Content = schedule };
+        }
+    }
+}
 {% endhighlight %}   
 {% endtabs %}   
 
@@ -205,16 +186,12 @@ SfSchedule control provides four different types of views to display dates and i
 Schedule control will be rendered with `Sunday` as the first day of the week, but you can customize to any day by using [FirstDayOfWeek](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~FirstDayOfWeek.html) property of `SfSchedule`.
     
 {% tabs %}  
-{% highlight xaml %}   
-    
-    <syncfusion:SfSchedule x:Name="schedule" FirstDayOfWeek="2"/>   
-    
+{% highlight xaml %}
+		<syncfusion:SfSchedule x:Name="schedule" FirstDayOfWeek="3"/>   
 {% endhighlight %}   
-{% highlight c# %}  
-    
-    //setting first day of the week    
-    schedule.FirstDayOfWeek = (int)DayOfWeek.Tuesday;   
-    
+{% highlight c# %}
+		//setting first day of the week    
+		schedule.FirstDayOfWeek = (int)DayOfWeek.Tuesday;   
 {% endhighlight %}  
 {% endtabs %}   
     
@@ -225,15 +202,11 @@ Schedule control will be rendered with `Sunday` as the first day of the week, bu
 DayView is used to display a single day, current day will be visible by default. Appointments on a specific day will be arranged in respective timeslots based on its duration.   
     
 {% tabs %}   
-{% highlight xaml %}   
-    
-    <syncfusion:SfSchedule x:Name="schedule" ScheduleView="DayView" />   
-    
+{% highlight xaml %}
+		<syncfusion:SfSchedule x:Name="schedule" ScheduleView="DayView" />   
 {% endhighlight %}   
-{% highlight c# %}   
-    
-    schedule.ScheduleView = ScheduleView.DayView;   
-    
+{% highlight c# %}
+		schedule.ScheduleView = ScheduleView.DayView;   
 {% endhighlight %}   
 {% endtabs %}   
     
@@ -244,15 +217,11 @@ DayView is used to display a single day, current day will be visible by default.
 `WeekView` is to view all days of a particular week. Appointments will be arranged based on the dates on the week in respective timeslots.  
     
 {% tabs %}   
-{% highlight xaml %}   
-    
-    <syncfusion:SfSchedule x:Name="schedule" ScheduleView="WeekView" />   
-            
+{% highlight xaml %}
+		<syncfusion:SfSchedule x:Name="schedule" ScheduleView="WeekView" />   
 {% endhighlight %}   
-{% highlight c# %}   
-    
-    schedule.ScheduleView = ScheduleView.WeekView;   
-    
+{% highlight c# %}
+		schedule.ScheduleView = ScheduleView.WeekView;   
 {% endhighlight %}   
 {% endtabs %}   
     
@@ -263,15 +232,11 @@ DayView is used to display a single day, current day will be visible by default.
 `WorkWeekView` is to view only working days of a particular week. By default, Saturday and Sunday are the non-working days. You can be customize it with any days of a Week. Appointments arranged in timeslots based on its duration with respective day of the week.  
     
 {% tabs %}   
-{% highlight xaml %}   
-    
-    <syncfusion:SfSchedule x:Name="schedule" ScheduleView="WorkWeekView" />   
-    
+{% highlight xaml %}
+		<syncfusion:SfSchedule x:Name="schedule" ScheduleView="WorkWeekView" />   
 {% endhighlight %}   
-{% highlight c# %}   
-    
-    schedule.ScheduleView = ScheduleView.WorkWeekView;   
-    
+{% highlight c# %}
+		schedule.ScheduleView = ScheduleView.WorkWeekView;   
 {% endhighlight %}   
 {% endtabs %}   
     
@@ -284,20 +249,17 @@ DayView is used to display a single day, current day will be visible by default.
 `MonthView` in Schedule control is to view entire dates of a particular month. Appointments can be viewed in inline by setting [ShowAppointmentsInline](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ShowAppointmentsInline.html) property of `SfSchedule` as true.    
     
 {% tabs %}   
-{% highlight xaml %}   
-    
+{% highlight xaml %}
     <syncfusion:SfSchedule
         x:Name="schedule"
         ScheduleView="MonthView"
-        ShowAppointmentsInline="True" />
-    
+        ShowAppointmentsInline="True">
+    </syncfusion:SfSchedule>
 {% endhighlight %}  
-{% highlight c# %}   
-    
-    schedule.ScheduleView = ScheduleView.MonthView;  
-    //view appointments in inline  
-    schedule.ShowAppointmentsInline = true;  
-            
+{% highlight c# %}
+		schedule.ScheduleView = ScheduleView.MonthView;  
+		//view appointments in inline  
+		schedule.ShowAppointmentsInline = true;  
 {% endhighlight %}   
 {% endtabs %}   
     
@@ -311,21 +273,19 @@ Schedule control has a built-in capability to handle the appointment arrangement
   
 [ScheduleAppointment](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment.html) is a class, which holds the details about the appointment to be rendered in schedule. It has some basic properties such as [StartTime](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~StartTime.html), [EndTime](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~EndTime.html), [Subject](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~Subject.html) and some additional information about the appointment can be added using [Color](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~Color.html), [Notes](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~Notes.html), [Location](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~Location.html), [IsAllDay](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~IsAllDay.html), [IsRecursive](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~IsRecursive.html) properties.    
     
-{% highlight c# %}   
-    
-    ScheduleAppointmentCollection appointmentCollection = new ScheduleAppointmentCollection();   
-    //Creating new event   
-    ScheduleAppointment clientMeeting = new ScheduleAppointment();   
-    DateTime currentDate = DateTime.Now;   
-    DateTime startTime = new DateTime (currentDate.Year,currentDate.Month,currentDate.Day, 10, 0, 0);    
-    DateTime endTime = new DateTime (currentDate.Year, currentDate.Month,currentDate.Day, 12, 0, 0);   
-    clientMeeting.StartTime = startTime;   
-    clientMeeting.EndTime = endTime;   
-    clientMeeting.Color = Color.Blue;   
-    clientMeeting.Subject = "ClientMeeting";   
-    appointmentCollection.Add(clientMeeting);   
-    schedule.DataSource = appointmentCollection;   
-    
+{% highlight c# %}
+		ScheduleAppointmentCollection appointmentCollection = new ScheduleAppointmentCollection();   
+		//Creating new event   
+		ScheduleAppointment clientMeeting = new ScheduleAppointment();   
+		DateTime currentDate = DateTime.Now;   
+		DateTime startTime = new DateTime (currentDate.Year,currentDate.Month,currentDate.Day, 10, 0, 0);    
+		DateTime endTime = new DateTime (currentDate.Year, currentDate.Month,currentDate.Day, 12, 0, 0);   
+		clientMeeting.StartTime = startTime;   
+		clientMeeting.EndTime = endTime;   
+		clientMeeting.Color = Color.Blue;   
+		clientMeeting.Subject = "ClientMeeting";   
+		appointmentCollection.Add(clientMeeting);   
+		schedule.DataSource = appointmentCollection;
 {% endhighlight %}   
 
 You can download the source code for rendering of schedule appointment using `ScheduleAppointmentCollection` for Xamarin.Forms from
@@ -348,22 +308,21 @@ Here steps to render `MeetingRoomScheduler` using SfSchedule control with respec
  
 You can create a custom class `Meeting` with mandatory fields "From", "To" and "EventName". 
  
-{% highlight c# %}   
-       
-    /// <summary>   
-    /// Represents custom data properties.   
-    /// </summary>   
-    public class Meeting   
-    {   
-        public string EventName { get; set; }   
-        public string Organizer { get; set; }   
-        public string ContactID { get; set; }   
-        public int Capacity { get; set; }   
-        public DateTime From { get; set; }   
-        public DateTime To { get; set; }   
-        public Color color { get; set; }   
-    }   
-    
+{% highlight c# %}
+		/// <summary>   
+		/// Represents custom data properties.   
+		/// </summary>   
+		public class Meeting
+		{
+			public string EventName { get; set; }
+			public string Organizer { get; set; }
+			public string ContactID { get; set; }
+			public int Capacity { get; set; }
+			public DateTime From { get; set; }
+			public DateTime To { get; set; }
+			public Color color { get; set; }
+			public bool AllDay { get; set; }
+		}
 {% endhighlight %}   
     
 >**Notes**: You can inherit this class from `INotifyPropertyChanged` for dynamic changes in custom data.  
@@ -372,114 +331,114 @@ You can create a custom class `Meeting` with mandatory fields "From", "To" and "
 
 You can schedule meetings for a particular day by setting `From` and `To` of `Meeting` class.Also you can change subject and color of appointment using `EventName` and `color` of Meeting class. In a separate ViewModel class you can describe the collection of custom appointments.  
 
-{% highlight c# %}   
-
+{% highlight c# %}
     /// <summary>   
     /// Represents collection of appointments.   
     /// </summary> 
     public class ViewModel
     {
-    public ObservableCollection<Meeting> Meetings { get; set; }
-    List<string> eventNameCollection;
-    List<Color> colorCollection;
-    public ViewModel()
-    {
-        Meetings = new ObservableCollection<Meeting>();
-        CreateEventNameCollection();
-        CreateColorCollection();
-        CreateAppointments();
-    }
-
-    /// <summary>
-    /// Creates meetings and stores in a collection.  
-    /// </summary>
-    private void CreateAppointments()
-    {
-        Random randomTime = new Random();
-        List<Point> randomTimeCollection = GettingTimeRanges();
-        DateTime date;
-        DateTime DateFrom = DateTime.Now.AddDays(-10);
-        DateTime DateTo = DateTime.Now.AddDays(10);
-        DateTime dataRangeStart = DateTime.Now.AddDays(-3);
-        DateTime dataRangeEnd = DateTime.Now.AddDays(3);
-
-        for (date = DateFrom; date < DateTo; date = date.AddDays(1))
+        public ObservableCollection<Meeting> Meetings { get; set; }
+        List<string> eventNameCollection;
+        List<Color> colorCollection;
+        public ViewModel()
         {
-            if ((DateTime.Compare(date, dataRangeStart) > 0) && (DateTime.Compare(date, dataRangeEnd) < 0))
+            Meetings = new ObservableCollection<Meeting>();
+            CreateEventNameCollection();
+            CreateColorCollection();
+            CreateAppointments();
+        }
+
+        /// <summary>
+        /// Creates meetings and stores in a collection.  
+        /// </summary>
+        private void CreateAppointments()
+        {
+            Random randomTime = new Random();
+            List<Point> randomTimeCollection = GettingTimeRanges();
+            DateTime date;
+            DateTime DateFrom = DateTime.Now.AddDays(-10);
+            DateTime DateTo = DateTime.Now.AddDays(10);
+            DateTime dataRangeStart = DateTime.Now.AddDays(-3);
+            DateTime dataRangeEnd = DateTime.Now.AddDays(3);
+
+            for (date = DateFrom; date < DateTo; date = date.AddDays(1))
             {
-            for (int AdditionalAppointmentIndex = 0; AdditionalAppointmentIndex < 3; AdditionalAppointmentIndex++)
-            {
-                Meeting meeting = new Meeting();
-                int hour = (randomTime.Next((int)randomTimeCollection[AdditionalAppointmentIndex].X, (int)randomTimeCollection[AdditionalAppointmentIndex].Y));
-                meeting.From = new DateTime(date.Year, date.Month, date.Day, hour, 0, 0);
-                meeting.To = (meeting.From.AddHours(1));
-                meeting.EventName = eventNameCollection[randomTime.Next(9)];
-                meeting.color = colorCollection[randomTime.Next(9)];
-                Meetings.Add(meeting);
-            }
-            }
-            else
-            {
-                Meeting meeting = new Meeting();
-                meeting.From = new DateTime(date.Year, date.Month, date.Day, randomTime.Next(9, 11), 0, 0);
-                meeting.To = (meeting.From.AddHours(1));
-                meeting.EventName = eventNameCollection[randomTime.Next(9)];
-                meeting.color = colorCollection[randomTime.Next(9)];
-                Meetings.Add(meeting);
+                if ((DateTime.Compare(date, dataRangeStart) > 0) && (DateTime.Compare(date, dataRangeEnd) < 0))
+                {
+                    for (int AdditionalAppointmentIndex = 0; AdditionalAppointmentIndex < 3; AdditionalAppointmentIndex++)
+                    {
+                        Meeting meeting = new Meeting();
+                        int hour = (randomTime.Next((int)randomTimeCollection[AdditionalAppointmentIndex].X, (int)randomTimeCollection[AdditionalAppointmentIndex].Y));
+                        meeting.From = new DateTime(date.Year, date.Month, date.Day, hour, 0, 0);
+                        meeting.To = (meeting.From.AddHours(1));
+                        meeting.EventName = eventNameCollection[randomTime.Next(9)];
+                        meeting.color = colorCollection[randomTime.Next(9)];
+                        if (AdditionalAppointmentIndex % 3 == 0)
+                            meeting.AllDay = true;
+                        Meetings.Add(meeting);
+                    }
+                }
+                else
+                {
+                    Meeting meeting = new Meeting();
+                    meeting.From = new DateTime(date.Year, date.Month, date.Day, randomTime.Next(9, 11), 0, 0);
+                    meeting.To = (meeting.From.AddHours(1));
+                    meeting.EventName = eventNameCollection[randomTime.Next(9)];
+                    meeting.color = colorCollection[randomTime.Next(9)];
+                    Meetings.Add(meeting);
+                }
             }
         }
-    }
 
-    /// <summary>  
-    /// Creates event names collection.  
-    /// </summary>  
-    private void CreateEventNameCollection()
-    {
-        eventNameCollection = new List<string>();
-        eventNameCollection.Add("General Meeting");
-        eventNameCollection.Add("Plan Execution");
-        eventNameCollection.Add("Project Plan");
-        eventNameCollection.Add("Consulting");
-        eventNameCollection.Add("Performance Check");
-        eventNameCollection.Add("Yoga Therapy");
-        eventNameCollection.Add("Plan Execution");
-        eventNameCollection.Add("Project Plan");
-        eventNameCollection.Add("Consulting");
-        eventNameCollection.Add("Performance Check");
-    }
+        /// <summary>  
+        /// Creates event names collection.  
+        /// </summary>  
+        private void CreateEventNameCollection()
+        {
+            eventNameCollection = new List<string>();
+            eventNameCollection.Add("General Meeting");
+            eventNameCollection.Add("Plan Execution");
+            eventNameCollection.Add("Project Plan");
+            eventNameCollection.Add("Consulting");
+            eventNameCollection.Add("Performance Check");
+            eventNameCollection.Add("Yoga Therapy");
+            eventNameCollection.Add("Plan Execution");
+            eventNameCollection.Add("Project Plan");
+            eventNameCollection.Add("Consulting");
+            eventNameCollection.Add("Performance Check");
+        }
 
-    /// <summary>  
-    /// Creates color collection.  
-    /// </summary>  
-    private void CreateColorCollection()
-    {
-        colorCollection = new List<Color>();
-        colorCollection.Add(Color.FromHex("#117EB4"));
-        colorCollection.Add(Color.FromHex("#B4112E"));
-        colorCollection.Add(Color.FromHex("#C44343"));
-        colorCollection.Add(Color.FromHex("#11B45E"));
-        colorCollection.Add(Color.FromHex("#43BEC4"));
-        colorCollection.Add(Color.FromHex("#B4112E"));
-        colorCollection.Add(Color.FromHex("#C44343"));
-        colorCollection.Add(Color.FromHex("#117EB4"));
-        colorCollection.Add(Color.FromHex("#C4435A"));
-        colorCollection.Add(Color.FromHex("#DF5348"));
-        colorCollection.Add(Color.FromHex("#43c484"));
-    }
+        /// <summary>  
+        /// Creates color collection.  
+        /// </summary>  
+        private void CreateColorCollection()
+        {
+            colorCollection = new List<Color>();
+            colorCollection.Add(Color.FromHex("#FF339933"));
+            colorCollection.Add(Color.FromHex("#FF00ABA9"));
+            colorCollection.Add(Color.FromHex("#FFE671B8"));
+            colorCollection.Add(Color.FromHex("#FF1BA1E2"));
+            colorCollection.Add(Color.FromHex("#FFD80073"));
+            colorCollection.Add(Color.FromHex("#FFA2C139"));
+            colorCollection.Add(Color.FromHex("#FFA2C139"));
+            colorCollection.Add(Color.FromHex("#FFD80073"));
+            colorCollection.Add(Color.FromHex("#FF339933"));
+            colorCollection.Add(Color.FromHex("#FFE671B8"));
+            colorCollection.Add(Color.FromHex("#FF00ABA9"));
+        }
 
-    /// <summary>
-    /// Gets the time ranges.
-    /// </summary>
-    private List<Point> GettingTimeRanges()
-    {
-        List<Point> randomTimeCollection = new List<Point>();
-        randomTimeCollection.Add(new Point(9, 11));
-        randomTimeCollection.Add(new Point(12, 14));
-        randomTimeCollection.Add(new Point(15, 17));
-        return randomTimeCollection;
+        /// <summary>
+        /// Gets the time ranges.
+        /// </summary>
+        private List<Point> GettingTimeRanges()
+        {
+            List<Point> randomTimeCollection = new List<Point>();
+            randomTimeCollection.Add(new Point(9, 11));
+            randomTimeCollection.Add(new Point(12, 14));
+            randomTimeCollection.Add(new Point(15, 17));
+            return randomTimeCollection;
+        }
     }
-    }
-
 {% endhighlight %}
 
 #### Mapping custom class  
@@ -488,27 +447,25 @@ You can map those properties of `Meeting` class with our schedule control by usi
 
 {% tabs %}
 {% highlight xaml %}
-
     <syncfusion:SfSchedule x:Name="schedule">
         <syncfusion:SfSchedule.AppointmentMapping>
             <syncfusion:ScheduleAppointmentMapping
                 ColorMapping="color"
                 EndTimeMapping="To"
                 StartTimeMapping="From"
-                SubjectMapping="EventName" />
+                SubjectMapping="EventName" 
+				IsAllDayMapping="AllDay"/>
         </syncfusion:SfSchedule.AppointmentMapping>
     </syncfusion:SfSchedule>
-
 {% endhighlight %}
-{% highlight c# %}   
-
-    ScheduleAppointmentMapping dataMapping = new ScheduleAppointmentMapping(); 
-    dataMapping.ColorMapping = "color";  
-    dataMapping.EndTimeMapping = "To";
-    dataMapping.StartTimeMapping = "From"; 
-    dataMapping.SubjectMapping = "EventName";
-    schedule.AppointmentMapping = dataMapping;  
-
+{% highlight c# %}  
+		ScheduleAppointmentMapping dataMapping = new ScheduleAppointmentMapping(); 
+		dataMapping.ColorMapping = "color";  
+		dataMapping.EndTimeMapping = "To";
+		dataMapping.StartTimeMapping = "From"; 
+		dataMapping.SubjectMapping = "EventName";
+		dataMapping.IsAllDayMapping = "AllDay";
+		schedule.AppointmentMapping = dataMapping;  
 {% endhighlight %}
 {% endtabs %}
 
@@ -518,7 +475,6 @@ Create meetings of type `ObservableCollection <Meeting>`  and assign those appoi
 
 {% tabs %}
 {% highlight xaml %}
-
     <syncfusion:SfSchedule x:Name="schedule"
         DataSource = "{Binding Meetings}"
         ScheduleView = "WeekView" >
@@ -526,18 +482,15 @@ Create meetings of type `ObservableCollection <Meeting>`  and assign those appoi
             <local:ViewModel/>
         </syncfusion:SfSchedule.BindingContext>
     </syncfusion:SfSchedule>
-
 {% endhighlight %}
 {% highlight c# %}
-
-    ViewModel viewModel = new ViewModel();
-    schedule.DataSource = viewModel.Meetings;
-
+		ViewModel viewModel = new ViewModel();
+		schedule.DataSource = viewModel.Meetings;
 {% endhighlight %}
 {% endtabs %}
 
 ![](GettingStarted_images/GettingStarted.png)
 
 You can download the entire source code of this demo for Xamarin.Forms from
-here [ScheduleGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ScheduleGettingStarted892423234.zip)
+here [ScheduleGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ScheduleGettingStarted-815086813.zip)
 

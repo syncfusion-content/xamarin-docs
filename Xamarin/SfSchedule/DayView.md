@@ -75,6 +75,68 @@ You can customize the height of the ViewHeader in `DayView` by setting [ViewHead
 {% endtabs %}
 ![](daymodule_images/viewheaderheight_day.png)
 
+### ViewHeader Date Format
+We can customize the date and day format of `SfSchedule` ViewHeader by using [DateFormat](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DayLabelSettings~DateFormat.html) and [DayFormat](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DayLabelSettings~DayFormat.html) properties of `DayLabelSettings`.
+
+{% tabs %}
+{% highlight xaml %}
+
+    <schedule:SfSchedule>
+        <schedule:SfSchedule.DayViewSettings>
+            <schedule:DayViewSettings>
+                <schedule:DayViewSettings.DayLabelSettings>
+                    <schedule:DayLabelSettings DateFormat=“dd”>
+                        <schedule:DayLabelSettings.DayFormat>
+                            <OnPlatform x:TypeArguments="x:String" iOS="EEE d MMMM YY" Android="EEEE" WinPhone="dddd" />
+                            </schedule:DayLabelSettings.DayFormat>
+                    </schedule:DayLabelSettings>
+                </schedule:DayViewSettings.DayLabelSettings>
+            </schedule:DayViewSettings>
+        </schedule:SfSchedule.DayViewSettings>
+    </schedule:SfSchedule>
+{% endhighlight %}
+{% highlight c# %}
+schedule.ScheduleView = ScheduleView.DayView;
+//Creating new instance of DayViewSettings
+DayViewSettings dayViewSettings = new DayViewSettings();
+//Creating new instance of DayLabelSettings
+DayLabelSettings dayLabelSettings = new DayLabelSettings();
+//Customizing date format
+dayLabelSettings.DateFormat = "dd";
+dayLabelSettings.DayFormat = Device.OnPlatform("EEE d MMMM YY", "EEEE", "dddd");
+dayViewSettings.DayLabelSettings = dayLabelSettings;
+schedule.DayViewSettings = dayViewSettings;
+{% endhighlight %}
+{% endtabs %}
+
+![](daymodule_images/DateFormat_Day.png)
+
+### ViewHeader Tapped Event
+We can handle single tap action of ViewHeader by using [ViewHeaderTapped](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ViewHeaderTapped_EV.html) event of `SfSchedule`. This event will be triggered when the ViewHeader is Tapped. This event contains [ViewHeaderTappedEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderTappedEventArgs.html) argument which holds [DateTime](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.CellTappedEventArgs~Datetime.html) details in it.
+
+{% tabs %}
+{% highlight xaml %}
+
+    <schedule:SfSchedule x:Name="schedule"
+                         ScheduleView="DayView"
+                         ViewHeaderTapped="Handle_ViewHeaderTapped" >
+    </schedule:SfSchedule>
+{% endhighlight %}
+{% highlight c# %}
+//Creating  new instance of Schedule
+SfSchedule schedule = new SfSchedule();
+schedule.ScheduleView = ScheduleView.DayView;
+schedule.ViewHeaderTapped += Handle_ViewHeaderTapped;
+{% endhighlight %}
+{% endtabs %}
+
+{% highlight c# %}
+void Handle_ViewHeaderTapped(object sender, ViewHeaderTappedEventArgs e)
+{
+    var dateTime = e.DateTime;
+}
+{% endhighlight %}
+
 ## Change Time Interval
 You can customize the interval of timeslots in `DayView` by setting [TimeInterval](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~TimeInterval.html)  property of `SfSchedule`.
 
@@ -91,6 +153,10 @@ You can customize the interval of timeslots in `DayView` by setting [TimeInterva
 {% endtabs %}
 
 ![](daymodule_images/timeinterval_day.png)
+
+>**Note**:
+
+If you modify the `TimeInterval` value (in minutes), you need to change the time labels format by setting the `TimeFormat` value as "hh:mm". By default, TimeFormat value is `"hh a"`. You can refer [here](https://help.syncfusion.com/xamarin/sfschedule/dayview#time-label-formatting) for changing TimeFormat value.
 
 ## Change Time Interval Height
 You can customize the interval height of timeslots in `DayView` by setting [TimeIntervalHeight](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~TimeIntervalHeight.html)  property of `SfSchedule`.
@@ -136,10 +202,47 @@ Working hours in `DayView` of Schedule control will be differentiated with non-w
 </schedule:SfSchedule> 
 {% endhighlight %}
 {% endtabs %}
+
 ![](daymodule_images/changeworkinghours_day.png)
 
 >**Note**:
-`WorkStartHour` and `WorkEndHour` should be in integer value to represent hours.
+	`WorkStartHour` and `WorkEndHour` should be in integer value to represent hours.
+
+## Changing StartHour and EndHour
+
+Default value for [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DayViewSettings~StartHour.html) and [EndHour](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DayViewSettings~EndHour.html) value is 0 to 24 to show all the time slots in `DayView`. You need to set [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DayViewSettings~StartHour.html) and [EndHour](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DayViewSettings~EndHour.html) property of `DayView`, to show only the required time duration for end users.
+
+{% tabs %}
+{% highlight C# %}
+
+            schedule.ScheduleView = ScheduleView.DayView;
+			//Create new instance of DayViewSettings
+			DayViewSettings dayViewSettings = new DayViewSettings();
+			dayViewSettings.StartHour = 08;
+			dayViewSettings.EndHour = 15;
+			schedule.DayViewSettings = dayViewSettings;
+{% endhighlight %}
+{% highlight XAML %}
+
+    <schedule:SfSchedule x:Name="schedule" ScheduleView="DayView">
+       <schedule:SfSchedule.DayViewSettings>
+	   <!--setting working hours properties -->
+           <schedule:DayViewSettings 
+		   StartHour="08"
+		   EndHour="15">
+           </schedule:DayViewSettings>
+       </schedule:SfSchedule.DayViewSettings>
+</schedule:SfSchedule> 
+{% endhighlight %}
+{% endtabs %}
+
+![](daymodule_images/changestartendhour_day.png)
+
+>**Note**:
+* `StartHour` and `EndHour` should be in integer value to represent hours.
+* `StartHour` must be greater than or equal to 0 and `EndHour` must be lesser than or equal to 24, otherwise `InvalidDataException` will be thrown.
+* `EndHour` value must be greater than `StartHour`, otherwise `InvalidDataException` will be thrown.
+* Schedule UI such as Appointments and NonAccessibleBlocks which does not fall within the `StartHour` and `EndHour` will not be visible and if it falls partially, it will be clipped.
 
 ## Timeslot Appearance
 You can customize the appearance of timeslots in `DayView`.
@@ -302,6 +405,7 @@ You can customize the default appearance of selection UI in the timeslots.
 
 * [Selection customization using style](#selection-customization-using-style)
 * [Selection customization using custom View](#selection-customization-using-custom-view)
+* [Programmatic selection](#programmatic-selection)
 
 ### Selection customization using style
 You can customize the timeslot selection by using [SelectionStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~SelectionStyle.html) property of `SfSchedule`.

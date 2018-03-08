@@ -16,9 +16,9 @@ A group represents a collection of items that belong to a category. When groupin
 SfListView allows to perform grouping from the code by defining the [GroupDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor.html) object and adding it into the [DataSource.GroupDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~GroupDescriptors.html) collection. SfListView groups the data based on the `GroupDescriptor` object that is added to this collection. 
 `GroupDescriptor` object holds the following properties:
 
-* PropertyName: Name of the property to be grouped.
-* KeySelector: Selector to return the group key.
-* Comparer: Comparer to be applied in when sorting take place.
+* PropertyName: Describes name of the property to be grouped.
+* KeySelector: Describes selector to return the group key.
+* Comparer: Describes comparer to be applied in when sorting take place.
 
 The following code example illustrates how to apply grouping to the data in SfListView.
 
@@ -736,7 +736,7 @@ N> For Vertical orientation, the group header size is considered as height and f
 
 Sflistview allows to add checkbox in GroupHeader which can be moved to `Selected`state when all items in list selected , `NotSelected` state when all items are deselected and `Intermediate` state when any one or less then total items count gets selected.
 In GroupHeaderTemplate , add converter to image with passing ConverterParameter as listview thus changes state of GroupHeaderTemplate and listview refreshes both RefreshGroupHeader by clearing `BindingContext` of listviewItem and GroupHeaderItem and view .You
-download entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomSelection-710883244)
+download entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomSelection-1488987005)
 
 {% highlight xaml %}
 <sync:SfListView.GroupHeaderTemplate>

@@ -15,9 +15,9 @@ The SfMaskedEdit exposes the following events:
 
 ## ValueChanged event
 
-Occurs when the value of the `Value` property is changed by either entering the valid input character or setting the value to the `Value` property through Xaml or C# code. The event arguments are of type `ValueChangedEventArgs` and expose the following property:
+Occurs when the value of the `Value` property is changed by either entering the valid input character or setting the value to the `Value` property through XAML or C# code. The event arguments are of type `ValueChangedEventArgs` and expose the following property:
 
-* `Value`: The read only property conatins the updated value of the `Value` property of SfMaskedEdit.
+* `Value`: The read only property contains the updated value of the `Value` property of SfMaskedEdit.
 
 > Your valid input character is updated to `Value` property based on the `ValidationMode` property.
 > Refer to this [link](validation.html#validation-mode) to know more about the `ValidationMode` property of `SfMaskedEdit` control.

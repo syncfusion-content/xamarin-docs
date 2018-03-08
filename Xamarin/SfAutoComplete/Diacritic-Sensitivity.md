@@ -23,16 +23,16 @@ The control does not stick with one type of keyboard, so you can populate items 
 
 {% highlight c# %}
 
-        List<String> diacritic = new List<String>();
-		diacritic.Add("Hów tó gâin wéight?");
-		diacritic.Add("Hów tó drâw ân éléphânt?");
-		diacritic.Add("Whéré cân I buy â câmérâ?");
-		diacritic.Add("Guidé mé âll thé wây");
-		diacritic.Add("Hów tó mâké â câké?");
-		diacritic.Add("Sây, Hélló Wórld!");
-		diacritic.Add("Hów tó mâké â róbót?");
-		diacritic.Add("Whât timé nów in Indiâ?");
-		autoComplete.DataSource = diacritic;
+List<String> diacritic = new List<String>();
+diacritic.Add("Hów tó gâin wéight?");
+diacritic.Add("Hów tó drâw ân éléphânt?");
+diacritic.Add("Whéré cân I buy â câmérâ?");
+diacritic.Add("Guidé mé âll thé wây");
+diacritic.Add("Hów tó mâké â câké?");
+diacritic.Add("Sây, Hélló Wórld!");
+diacritic.Add("Hów tó mâké â róbót?");
+diacritic.Add("Whât timé nów in Indiâ?");
+autoComplete.DataSource = diacritic;
 
 {% endhighlight %}
 

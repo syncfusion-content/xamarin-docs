@@ -30,17 +30,9 @@ Selected items will be displayed with a customizable token representation and th
 
 {% highlight c# %}
 
-List<String> countryNames = new List<String>();
-countryNames.Add("Uganda");
-countryNames.Add("Ukraine");
-countryNames.Add("United Arab Emirates");
-countryNames.Add("United Kingdom");
-countryNames.Add("United States");
-autoComplete.MaximumSuggestion=3;
 autoComplete.MultiSelectMode=MultiSelectMode.Token;
 autoComplete.TokensWrapMode=TokensWrapMode.Wrap;
 autoComplete.IsSelectedItemsVisibleInDropDown=false;
-autoComplete.DataSource = countryNames;
 
 {% endhighlight %}
 
@@ -58,6 +50,7 @@ The selected item can be displayed as token inside SfAutoComplete in two ways. T
 
 {% highlight xaml %}
 
+
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
     <autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" DropDownItemHeight="50" DisplayMemberPath="Name" ImageMemberPath="Image" MultiSelectMode="Token" DataSource="{Binding EmployeeCollection}">
     </autocomplete:SfAutoComplete>
@@ -70,100 +63,90 @@ namespace autocomplete
 {
 public partial class autocompletePage : ContentPage
 {
-    EmployeeViewModel view = new EmployeeViewModel();
-    public autocompletePage()
-    {
-        InitializeComponent();
-        TokenSettings token = new TokenSettings();
-        token.FontSize = 16;
-        token.BackgroundColor = Color.FromHex("#d3d3d3");
-        token.TextColor = Color.Red;
-        token.SelectedBackgroundColor = Color.FromHex("#ffffe0");
-        token.DeleteButtonColor = Color.Brown;
-         token.FontFamily= "Times New Roman";
-        token.IsCloseButtonVisible = true;
-        token.CornerRadius = 3;
-        autoComplete.TokenSettings = token;
-        // Set TokensWrapMode to Wrap
-        autoComplete.TokensWrapMode = TokensWrapMode.Wrap;
-        this.BindingContext = view;
-        
-    }
-}
-
- public class Employee
+EmployeeViewModel view = new EmployeeViewModel();
+public autocompletePage()
 {
-    private string image;
-    public string Image
-    {
-        get { return image; }
-        set { image = value; }
-    }
-    private string name;
-    public string Name
-    {
-        get { return name; }
-        set { name = value; }
-    }
+InitializeComponent();
+// Set TokensWrapMode to Wrap
+autoComplete.TokensWrapMode = TokensWrapMode.Wrap;
+this.BindingContext = view;
 }
+}
+// Create a Employee Class which holds the Name and image.
+
+public class Employee
+{
+private string image;
+public string Image
+{
+get { return image; }
+set { image = value; }
+}
+private string name;
+public string Name
+{
+get { return name; }
+set { name = value; }
+}
+}
+// Create EmployeeViewModel class holds the collection of employee data.
 
 public class EmployeeViewModel :INotifyPropertyChanged
 {
-    private ObservableCollection<Employee> employeeCollection;
-    public ObservableCollection<Employee> EmployeeCollection
-    {
-        get { return employeeCollection; }
-        set { employeeCollection = value; }
-    }
-    public EmployeeViewModel()
-    {
-        employeeCollection = new ObservableCollection<Employee>();
-        employeeCollection.Add(new Employee() { Image = "a0.png", Name = "John" });
-        employeeCollection.Add(new Employee() { Image = "a1.png", Name = "James" });
-        employeeCollection.Add(new Employee() { Image = "a2.png", Name = "Jacob" });
-        employeeCollection.Add(new Employee() { Image = "a3.png", Name = "Joy" });
-        employeeCollection.Add(new Employee() { Image = "a4.png", Name = "Justin" });
-        employeeCollection.Add(new Employee() { Image = "a5.png", Name = "Jerome" });
-        employeeCollection.Add(new Employee() { Image = "b0.png", Name = "Jessica" });
-        employeeCollection.Add(new Employee() { Image = "b1.png", Name = "Victoria" });
-       
-    }
+private ObservableCollection<Employee> employeeCollection;
+public ObservableCollection<Employee> EmployeeCollection
+{
+get { return employeeCollection; }
+set { employeeCollection = value; }
+}
+public EmployeeViewModel()
+{
+employeeCollection = new ObservableCollection<Employee>();
+employeeCollection.Add(new Employee() { Image = "a0.png", Name = "John" });
+employeeCollection.Add(new Employee() { Image = "a1.png", Name = "James" });
+employeeCollection.Add(new Employee() { Image = "a2.png", Name = "Jacob" });
+employeeCollection.Add(new Employee() { Image = "a3.png", Name = "Joy" });
+employeeCollection.Add(new Employee() { Image = "a4.png", Name = "Justin" });
+employeeCollection.Add(new Employee() { Image = "a5.png", Name = "Jerome" });
+employeeCollection.Add(new Employee() { Image = "b0.png", Name = "Jessica" });
+employeeCollection.Add(new Employee() { Image = "b1.png", Name = "Victoria" });
 
-    public int GetHeight(bool value)
-        {
-            if (value)
-                return 80;
-            return 80;
-        }
+}
 
-        private int toHeight = 40;
-        public int ToHeight
-        {
-            get { return toHeight; }
-            set
-            {
-                toHeight = value;
-                RaisePropertyChanged("ToHeight");
-            }
-        }
-        private bool isToFocused = false;
-        public bool IsToFocused
-        {
-            get { return isToFocused; }
-            set
-            {
-                isToFocused = value;
-                ToHeight = GetHeight(value);
-                RaisePropertyChanged("IsToFocused");
-            }
-        }
-        public event PropertyChangedEventHandler PropertyChanged;
-        private void RaisePropertyChanged(String name)
-        {
-            if (PropertyChanged != null)
-                this.PropertyChanged(this, new PropertyChangedEventArgs(name));
-        }
-    }
+public int GetHeight(bool value)
+{
+if (value)
+return 80;
+}
+
+private int toHeight = 40;
+public int ToHeight
+{
+get { return toHeight; }
+set
+{
+toHeight = value;
+RaisePropertyChanged("ToHeight");
+}
+}
+private bool isToFocused = false;
+public bool IsToFocused
+{
+get { return isToFocused; }
+set
+{
+isToFocused = value;
+ToHeight = GetHeight(value);
+RaisePropertyChanged("IsToFocused");
+}
+}
+public event PropertyChangedEventHandler PropertyChanged;
+private void RaisePropertyChanged(String name)
+{
+if (PropertyChanged != null)
+this.PropertyChanged(this, new PropertyChangedEventArgs(name));
+}
+}
 }
 
 }
@@ -209,71 +192,20 @@ Customization can be done for Token. There are various ways to customize the tok
 
 {% highlight c# %}
 
-namespace autocomplete
-{
-public partial class autocompletePage : ContentPage
-{
-    EmployeeViewModel view = new EmployeeViewModel();
-    public autocompletePage()
-    {
-        InitializeComponent();
 
-        // Token Customization
+// Token Customization
 
-        TokenSettings token = new TokenSettings();
-        token.FontSize = 16;
-        token.BackgroundColor = Color.FromHex("#d3d3d3");
-        token.TextColor = Color.Red;
-        token.SelectedBackgroundColor = Color.FromHex("#ffffe0");
-        token.DeleteButtonColor = Color.Brown;
-         token.FontFamily= "Times New Roman";
-        token.IsCloseButtonVisible = true;
-        token.CornerRadius = 3;
-        autoComplete.TokenSettings = token;
-        this.BindingContext = view;
-    }
-}
-
-        public class Employee
-{
-    private string image;
-    public string Image
-    {
-        get { return image; }
-        set { image = value; }
-    }
-    private string name;
-    public string Name
-    {
-        get { return name; }
-        set { name = value; }
-    }
-}
-
-public class EmployeeViewModel :INotifyPropertyChanged
-{
-    private ObservableCollection<Employee> employeeCollection;
-    public ObservableCollection<Employee> EmployeeCollection
-    {
-        get { return employeeCollection; }
-        set { employeeCollection = value; }
-    }
-    public EmployeeViewModel()
-    {
-        employeeCollection = new ObservableCollection<Employee>();
-        employeeCollection.Add(new Employee() { Image = "a0.png", Name = "John" });
-        employeeCollection.Add(new Employee() { Image = "a1.png", Name = "James" });
-        employeeCollection.Add(new Employee() { Image = "a2.png", Name = "Jacob" });
-        employeeCollection.Add(new Employee() { Image = "a3.png", Name = "Joy" });
-        employeeCollection.Add(new Employee() { Image = "a4.png", Name = "Justin" });
-        employeeCollection.Add(new Employee() { Image = "a5.png", Name = "Jerome" });
-        employeeCollection.Add(new Employee() { Image = "b0.png", Name = "Jessica" });
-        employeeCollection.Add(new Employee() { Image = "b1.png", Name = "Victoria" });
-       
-    }
-}
-
-}
+TokenSettings token = new TokenSettings();
+token.FontSize = 16;
+token.BackgroundColor = Color.FromHex("#d3d3d3");
+token.TextColor = Color.Red;
+token.SelectedBackgroundColor = Color.FromHex("#ffffe0");
+token.DeleteButtonColor = Color.Brown;
+token.FontFamily= "Times New Roman";
+token.IsCloseButtonVisible = true;
+token.CornerRadius = 3;
+autoComplete.TokenSettings = token;
+ 
 {% endhighlight %}
 
 {% endtabs %}
@@ -296,19 +228,10 @@ When selecting the multiple items, the selected items can be divided with a desi
 
 {% highlight c# %}
 
-List<String> countryNames = new List<String>();
-countryNames.Add("Algeria");
-countryList.Add ("Arabia");
-countryNames.Add("Andorra");
-countryNames.Add("Angola");
-countryNames.Add("Antarctica");
-countryNames.Add("Argentina");
-countryNames.Add("Armenia");
-countryNames.Add("Aruba");
-autoComplete.MaximumSuggestion=3;
+
 autoComplete.MultiSelectMode=MultiSelectMode.Delimiter;
 autoComplete.Delimiter=",";
-autoComplete.DataSource = countryNames;
+
 
 {% endhighlight %}
 

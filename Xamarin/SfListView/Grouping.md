@@ -525,7 +525,7 @@ The following code shows how to change the GroupHeader Key value using `IntToStr
 </DataTemplate> 
 {% endhighlight %}
 
-### Appearence customization
+### Appearance customization
 
 SfListView allows you to customize the `User Interface (UI)` for group header items by using [SfListView.GroupHeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~GroupHeaderTemplate.html) property.
 
@@ -569,7 +569,7 @@ listView.GroupHeaderTemplate = new DataTemplate(() =>
 {% endhighlight %}
 {% endtabs %}
 
-### Expand collpase icon in group header
+### Expand collapse icon in group header
 
 SfListView provides support to `expand` or `collapse` the group when tapped on group header item by setting [AllowGroupExpandCollapse](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AllowGroupExpandCollapse.html) as True.
 
@@ -647,7 +647,7 @@ You can download entire source code from [here](http://www.syncfusion.com/downlo
                                  GroupHeaderSize="60"
                                  ItemTemplate="{StaticResource ItemTemplate}"
                                  GroupHeaderTemplate="{StaticResource GroupHeaderTemplate}"
-                                 ItemsSource="{Binding contactsinfo}"
+                                 ItemsSource="{Binding contactsInfo}"
                                  AllowGroupExpandCollapse="True">
             </syncfusion:SfListView>
         </Grid>
@@ -680,7 +680,7 @@ The below code illustrates to define the `GroupHeaderTemplate` in code behind,
 {% highlight c# %}
 listView = new SfListView();
 viewModel = new ContactsViewModel();
-listView.ItemsSource = viewModel.contactsinfo;
+listView.ItemsSource = viewModel.contactsInfo;
 listView.GroupHeaderTemplate = new DataTemplate(() => 
 {
     var grid = new Grid { BackgroundColor = Color.FromHex("#E4E4E4") };
@@ -777,7 +777,7 @@ public object Convert(object value, Type targetType, object parameter, CultureIn
 
             var items = new List<MusicInfo>(groupResult.Items.ToList<MusicInfo>());
 
-            if ((items.All(listitem => listitem.IsSelected == false)))
+            if ((items.All(item => item.IsSelected == false)))
             {
                 for (int i = 0; i < items.Count(); i++)
                 {
@@ -789,7 +789,7 @@ public object Convert(object value, Type targetType, object parameter, CultureIn
 
             }
 
-            else if ((items.All(listitem => listitem.IsSelected == true)))
+            else if ((items.All(item => item.IsSelected == true)))
             {
                 for (int i = 0; i < items.Count(); i++)
                 {
@@ -851,7 +851,7 @@ public object Convert(object value, Type targetType, object parameter, CultureIn
 {% endhighlight %}
 ### Changing group header appearance when expanding
 
-SfListView allows [Group HeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~GroupHeaderTemplate.html) and by using [IsExpand](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.Extensions.GroupResult~IsExpand.html) property to customize groupheader. Since, the default binding context of each `GroupHeader` item will be its corresponding [GroupResult](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.Extensions.GroupResult.html). So, you can bind any properties in the GroupResult to GroupHeaderTemplate property.  
+SfListView allows [Group HeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~GroupHeaderTemplate.html) and by using [IsExpand](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.Extensions.GroupResult~IsExpand.html) property to customize group header. Since, the default binding context of each `GroupHeader` item will be its corresponding [GroupResult](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.Extensions.GroupResult.html). So, you can bind any properties in the GroupResult to GroupHeaderTemplate property.  
  
 Also, when a group is being expanded or collapsed, the IsExpand property will be changed accordingly. So, to change the background color for the selected/ tapped group, bind the IsExpand property to background color of the parent view in the GroupHeaderTemplate and by using `IValueConverter` cast the value into required `Color` as like below code example.  
 

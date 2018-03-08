@@ -9,20 +9,19 @@ documentation: ug
 
 # Sorting 
 
-SfListView allows you to sort the data either in ascending or descending order by using [DataSource.SortDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~SortDescriptors.html) property. It also provides support to sort the data based on the custom logic.
+The SfListView allows sorting the data either in ascending or descending order by using the [DataSource.SortDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~SortDescriptors.html) property. It also supports to sort the data based on the custom logic.
 
+## Programmatic sorting
 
-## Programmatic Sorting
-
-SfListView allows you to apply sorting on its data by using [DataSource.SortDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~SortDescriptors.html) property. You can create a [SortDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.SortDescriptor.html) for the property to be sorted and add it into the `DataSource.SortDescriptors` collection.
+The SfListView allows sorting on its data by using the [DataSource.SortDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~SortDescriptors.html) property. A [SortDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.SortDescriptor.html) can be created for the property to be sorted, and add it into the `DataSource.SortDescriptors` collection.
 
 N> You can refresh the view by calling [SfListView.RefreshView()](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~RefreshView.html) method.
 
-SortDescriptor object holds following three properties:
+SortDescriptor object holds the following three properties:
 
-* PropertyName: Name of the sorted property.
-* Direction: An object of type [ListSortDirection](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.ListSortDirection.html) defines the sorting direction.
-* Comparer: Comparer to be applied when sorting take place.
+ * PropertyName: Defines name of the sorted property.
+ * Direction: Defines an object of type [ListSortDirection](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.ListSortDirection.html) that defines the sorting direction.
+ * Comparer: Defines comparer to be applied when sorting takes place.
  
 {% tabs %}
 {% highlight xaml %}
@@ -48,15 +47,15 @@ listView.RefreshView();
 
 N> It is mandatory to specify the `PropertyName` of `SortDescriptor`.
 
-The following screenshot shows the output rendered when the sorting is applied.
+The following screenshot shows the output rendered when sorting is applied:
 
 ![](SfListView_images/SfListView-Sorting.png)
 
-## Custom Sorting
+## Custom sorting
 
-SfListView allows you to sort the items based on the custom logic. The custom sorting can be applied to either [SfListView.DataSource.SortComparer](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~SortComparer.html) property or [SortDescriptor.Comparer](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.SortDescriptor~Comparer.html) which is added into the [DataSource.SortDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~SortDescriptors.html) collection.
+The SfListView allows sorting items based on the custom logic. The custom sorting can be applied to either [SfListView.DataSource.SortComparer](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~SortComparer.html) property or [SortDescriptor.Comparer](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.SortDescriptor~Comparer.html) which is added into the [DataSource.SortDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~SortDescriptors.html) collection.
 
-The following code example illustrates how to perform custom sorting for underlying data based on the string length of the `ContactName`.
+To perform custom sorting for the underlying data based on the string length of the `ContactName`, follow the code example:
 
 {% tabs %}
 {% highlight xaml %}
@@ -88,7 +87,7 @@ listView.DataSource.SortDescriptors.Add(new SortDescriptor()
 {% endhighlight %}
 {% endtabs %}
 
-The following code example illustrates how to write a Custom Comparer.
+To write custom comparer, follow the code example:
 
 {% highlight c# %}
 public class CustomComparer : IComparer<object>, ISortDirection
@@ -130,9 +129,9 @@ public class CustomComparer : IComparer<object>, ISortDirection
 }
 {% endhighlight %}
 
-## Sort the items on Header Tapped
+## Sort items on tapped header
 
-SfListView allows you to sort the items on tapping the header by handling [ItemTapped](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTapped_EV.html) event of SfListView.
+The SfListView allows sorting items on tapping the header by handling [ItemTapped](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTapped_EV.html) event.
 
 {% tabs %}
 {% highlight xaml %}
@@ -170,7 +169,7 @@ listView.HeaderTemplate = new DataTemplate(() =>
 {% endhighlight %}
 {% endtabs %}
 
-When `ItemTapped` event is raised for Header, you can add the [SortDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.SortDescriptor.html) and refresh the view like below code example.
+When `ItemTapped` event is raised for the header, add [SortDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.SortDescriptor.html), and refresh the view as in the following code example:
 
 {% highlight c# %}
 private void ListView_ItemTapped(object sender, Syncfusion.ListView.XForms.ItemTappedEventArgs e)

@@ -12,32 +12,24 @@ documentation: ug
 
 # Getting Started
 
-This section explains you the steps required to configure the `SfCircularGauge` and also explains the steps to add basic elements of `SfCircularGauge` through various API’s available within it.
+This section explains the steps required to configure the [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge.html), and also explains the steps required to add basic elements to [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge.html) through various APIs available within it.
 
-## Adding CircularGauge Reference
 
-Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain and reference Essential Studio components in your solution; then refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfcirculargauge) link to know about the assemblies required for adding CircularGauge to your project.
+## Adding circular gauge reference
 
-Currently an additional step is required for iOS projects. We need to create an instance of the gauge custom renderer as shown below.
+Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain and reference Essential Studio components in your solution; then refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfcirculargauge) link to know about the assemblies required for adding circular gauge to your project.
 
-Create an instance of `SfGaugeRenderer` in Finished Launching overridden method of App Delegate class in iOS Project as shown below
+I> After adding the reference, an additional step is required for iOS and UWP projects. You should create an instance of the `SfGaugeRenderer` in iOS and UWP projects as shown in this [KB article.](https://www.syncfusion.com/kb/8271)
 
-{% highlight c# %}
-
-    public override bool FinishedLaunching (UIApplication app, NSDictionary options)
-    {
-    ...
-    new SfGaugeRenderer();
-    ...
-    }
-{% endhighlight %}
-
+I> For UWP alone, one more additional step is required if the project is built-in release mode with .NET Native tool chain enabled. You can refer to this [KB article](https://www.syncfusion.com/kb/8272) for more details.
+ 
 ### Adding namespace for the assemblies
 
 {% tabs %}
+
 {% highlight xaml %}
  
-     <xmlns:gauge="clr-namespace:Syncfusion.SfGauge.XForms;assembly=Syncfusion.SfGauge.XForms"/>
+     xmlns:gauge="clr-namespace:Syncfusion.SfGauge.XForms;assembly=Syncfusion.SfGauge.XForms"
 
 {% endhighlight %}
 
@@ -49,36 +41,47 @@ Create an instance of `SfGaugeRenderer` in Finished Launching overridden method 
 
 {% endtabs %}
 
-## Initializing Gauge 
 
-Initializing the SfCircularGauge control with a required optimal name by using the included namespace.
+## Initialize gauge 
+
+You can initialize the [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge.html) control with a required optimal name by using the included namespace.
 
 {% tabs %}
+
 {% highlight xaml %}
  
-     <gauge:SfCircularGauge x:Name="circulargauge"/> 
+     <gauge:SfCircularGauge/> 
 
 {% endhighlight %}
+
 {% highlight c# %}
 
     SfCircularGauge circular = new SfCircularGauge ();
     this.Content = circular;
 
 {% endhighlight %}
+
 {% endtabs %}
 
-## Adding Header
 
-You can assign a unique header to `SfCircularGauge` by making use of `Header` property and you can positioned it wherever you want using `Position` and `HeaderAlignment` property.
+## Adding header
+
+You can assign a unique header to [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge.html) by using the [`Header`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge~Headers.html) property and position it by using the [`Position`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Header~Position.html) property as you want.
 
 {% tabs %}
 
 {% highlight xaml %}
- 
-    <gauge:SfCircularGauge.Headers>
-      <gauge:Header Text="Speedmeter" Position="0.5,0.5" TextSize="20" ForegroundColor="Gray"/>
-    </gauge:SfCircularGauge.Headers>
 
+    <gauge:SfCircularGauge>
+	...
+
+         <gauge:SfCircularGauge.Headers>
+             <gauge:Header Text="Speedometer" />
+         </gauge:SfCircularGauge.Headers>
+    
+	...
+    </gauge:SfCircularGauge>
+	
 {% endhighlight %}
 
 {% highlight c# %}
@@ -86,146 +89,183 @@ You can assign a unique header to `SfCircularGauge` by making use of `Header` pr
     SfCircularGauge circularGauge = new SfCircularGauge(); 
     Header header = new Header();
     header.Text = "Speedometer";
-    header.TextSize = 20;
-    header.Position = Device.OnPlatform(iOS: new Point(.3, .7), Android:new Point(0.38, 0.7), WinPhone: new Point(0.38, 0.7));
-    header.ForegroundColor = Color.Gray;
-    circularGauge.Headers.Add(header); 
-    this.content = circularGauge;
-    
+    circularGauge.Headers.Add(header);  
+	
 {% endhighlight %}
+
 {% endtabs %}
 
-## Configuring Scales
+## Configuring scales
 
-You can configure the `CircularScale` elements by making use of following API’s available in `SfCircularGage`.
+You can configure the [`Scale`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale.html) elements by using following APIs, which are available in [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge.html):
 
-They are:
-
-* StartAngle
-* SweepAngle
-* StartValue
-* EndValue
-* Interval
-* RimThickness
-* RimColor
+* `StartAngle`
+* `SweepAngle`
+* `StartValue`
+* `EndValue`
+* `Interval`
+* `RimThickness`
+* `RimColor`
 
 {% tabs %}
 
 {% highlight xaml %}
 
-    <gauge:SfCircularGauge.Scales>
-         <gauge:Scale NumberOfDecimalDigits="4" StartAngle="135" StartValue="0" EndValue="100" Interval="10" SweepAngle="270"
-                   RimThickness="20" RimColor="Gray" MinorTicksPerInterval="0">
-         </gauge:Scale>
-    </gauge:SfCircularGauge.Scales>
+    <gauge:SfCircularGauge>
+     ...
 
+        <gauge:SfCircularGauge.Scales>
+           <gauge:Scale />
+        </gauge:SfCircularGauge.Scales>	
+            ...
+    </gauge:SfCircularGauge>
+	
 {% endhighlight %}
 
 {% highlight c# %}
 
     ObservableCollection<Scale> scales = new ObservableCollection<Scale>();
     Scale scale = new Scale();
-    scale.StartValue = 0; 
-    scale.EndValue = 100;
-    scale.Interval = 10;
-    scale.StartAngle = 135;
-    scale.SweepAngle = 270;
-    scale.RimThickness =  20;
-    scale.RimColor = Color.Gray;
-    scale.MinorTicksPerInterval = 0;
     scales.Add(scale);
     circular.Scales = scales;  
-    this.Content= circular;
-
+	
 {% endhighlight %}
 
 {% endtabs %}
 
-## Adding Ranges
+## Adding ranges
 
-You can add ranges to `SfCircularGauge` by creating ranges collection using `Ranges`.
+You can add ranges to [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge.html) by creating ranges collection using the [`Range`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Range.html) property.
 
 {% tabs %}
 
-{% highlight xaml %}
-             
-    <gauge:Scale.Ranges>
-        <gauge:Range StartValue="0" EndValue="80" Thickness="10" Color="#FF777777" />
-    </gauge:Scale.Ranges>
-
+{% highlight xaml %}  
+          
+    <gauge:SfCircularGauge>
+     ...
+	 
+         <gauge:Scale.Ranges>
+             <gauge:Range StartValue="0" EndValue="40"/>
+         </gauge:Scale.Ranges>
+   
+      ...
+    </gauge:SfCircularGauge>
+	
 {% endhighlight %}
 
 {% highlight c# %}
 
-    Range range=new Range();
-    range.StartValue=0;
-    range.EndValue = 80;
-    range.Color = Color.FromHex("#FF777777");
-    range.Thickness = 10;
+    ObservableCollection<Scale> scales = new ObservableCollection<Scale>();
+    Scale scale = new Scale();
+    Range range = new Range();
+    range.StartValue = 0;
+    range.EndValue = 40;
     scale.Ranges.Add(range);
     circularGauge.Scales = scale; 
-    this.Content= circular;
-
+	
 {% endhighlight %}
 
 {% endtabs %}
 
-## Adding a Needle Pointer
+## Adding a needle pointer
 
-You can create a `NeedlePointer` and associate it with a scale to display the current value.
+Create a [`Needle Pointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.NeedlePointer.html), and associate it with a scale that is to be displayed the current value.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-     <gauge:Scale.Pointers>       
-          <gauge:NeedlePointer Value="60" KnobRadius="20" Color="Gray" 
-                 Thickness="5" KnobColor="#2bbfb8"  LengthFactor="0.8"/>         
-     </gauge:Scale.Pointers>
-
+    <gauge:SfCircularGauge>
+     ...
+	 
+        <gauge:Scale.Pointers>      
+            <gauge:NeedlePointer  Value="60" />  
+        </gauge:Scale.Pointers> 
+        
+     ...
+    </gauge:SfCircularGauge>
+	
 {% endhighlight %}
 
 {% highlight c# %}
 
-    NeedlePointer needlePointer = new NeedlePointer(); 
-    needlePointer.Value = 60; 
-    needlePointer.Color = Color.Gray; 
-    needlePointer.KnobColor = Color.FromHex("#2bbfb8");
-    needlePointer.Thickness = 5;
-    needlePointer.KnobRadius = 20;
-    needlePointer.LengthFactor= 0.8;
-    scale.Pointers.Add(needlePointer); 
-    circularGauge.Scales = scale; 
-
+    ObservableCollection<Scale> scales = new ObservableCollection<Scale>();
+    Scale scale = new Scale();
+    NeedlePointer needlePointer = new NeedlePointer();
+    needlePointer.Value = 60;
+    scale.Pointers.Add(needlePointer);
+    circularGauge.Scales = scale;
+	
 {% endhighlight %}
 
 {% endtabs %}
 
+## Adding a range pointer
 
-## Adding a Range Pointer
-
-A `RangePointer` provides an alternative way of indicating the current value.
+[`Range Pointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.RangePointer.html) provides an alternative way to indicate the current value.
 
 {% tabs %}
 
-{% highlight xaml %}
-   
-    <gauge:Scale.Pointers>
-       <gauge:RangePointer  Value="60"  Color="#2bbfb8"  Thickness="20"/>
-    </gauge:Scale.Pointers>
+{% highlight xaml %} 
 
- {% endhighlight %}
+    <gauge:SfCircularGauge>
+     ...
+	 
+         <gauge:Scale.Pointers>
+             <gauge:RangePointer Value="60" />
+         </gauge:Scale.Pointers>
+		 
+     ...
+     </gauge:SfCircularGauge>
+	 
+{% endhighlight %}
 
-{% highlight c# %}
-       
+{% highlight c# %}    
+
+    ObservableCollection<Scale> scales = new ObservableCollection<Scale>();
+    Scale scale = new Scale();
     RangePointer rangePointer = new RangePointer();
-    rangePointer.Value = 60; 
-    rangePointer.Color = Color.FromHex("#2bbfb8");
-    rangePointer.Thickness = 20; 
+    rangePointer.Value = 60;
     scale.Pointers.Add(rangePointer);
-    {% endhighlight %}
+    scales.Add(scale);
+    circularGauge.Scales = scale;
+	
+{% endhighlight %}
        
 {% endtabs %}
 
+## Adding a marker pointer
+
+[`Marker Pointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.MarkerPointer.html) points the current value in scale.
+
+{% tabs %}
+
+{% highlight xaml %} 
+
+    <gauge:SfCircularGauge>
+     ...
+	 
+         <gauge:Scale.Pointers>
+             <gauge:MarkerPointer Value="70" />
+         </gauge:Scale.Pointers>
+		 
+     ...
+     </gauge:SfCircularGauge>
+	 
+{% endhighlight %}
+
+{% highlight c# %}  
+   
+    ObservableCollection<Scale> scales = new ObservableCollection<Scale>();
+    Scale scale=new Scale();
+    MarkerPointer markerPointer = new MarkerPointer();
+    markerPointer.Value = 70;
+    scale.Pointers.Add(markerPointer);
+    scales.Add(scale);
+	circular.Scales = scales;
+	
+{% endhighlight %}
+       
+{% endtabs %}
  
 ![](getting-started_images/default.png)

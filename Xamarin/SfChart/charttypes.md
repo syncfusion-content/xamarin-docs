@@ -300,6 +300,77 @@ chart.Series.Add(rangeAreaSeries);
 
 ![](charttypes_images/RangeArea.png)
 
+## Spline Range Area Chart
+
+To render a spline range area chart, create an instance of the [`SplineRangeAreaSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineRangeAreaSeries.html), and add that instance to the [`Series`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~Series.html) collection property of [`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html).
+
+Since the [`SplineRangeAreaSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineRangeAreaSeries.html) requires two Y values for a point, data should contain high and low values. The high and low values specify the maximum and minimum ranges of a point.
+
+The data can be provided to a spline range area chart by using the following two ways:
+
+1.Using the [`ChartDataPoint’s`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataPoint~_ctor%28IComparable,Double,Double%29.html) three parameter constructor to pass x, high, and low values to the [`SplineRangeAreaSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineRangeAreaSeries.html).
+
+{% highlight c# %}
+[C#] 
+
+SfChart chart = new SfChart();
+...
+
+ObservableCollection<ChartDataPoint> data = new ObservableCollection<ChartDataPoint>()
+{
+     new ChartDataPoint("Jan", 30, 18),
+     new ChartDataPoint("Feb", 24, 12),
+     new ChartDataPoint("Mar", 29, 15),
+     new ChartDataPoint("Apr", 24, 10),
+     new ChartDataPoint("May", 30, 18),
+     new ChartDataPoint("Jun", 24, 10),
+};
+
+SplineRangeAreaSeries splineRangeAreaSeries = new SplineRangeAreaSeries() 
+{
+	ItemsSource = data 
+};
+
+chart.Series.Add(splineRangeAreaSeries);
+
+{% endhighlight %}
+
+2.Or else, using the [`high`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RangeSeriesBase~High.html) and [`low`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RangeSeriesBase~Low.html) properties of [`SplineRangeAreaSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineRangeAreaSeries.html) to map the high and low values from custom object to chart.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart> 
+... 
+	<chart:SfChart.Series> 
+		<chart:SplineRangeAreaSeries ItemsSource="{Binding SplineRangeAreaData}" XBindingPath="Name" High="High" Low="Low"/> 
+	</chart:SfChart.Series> 
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart(); 
+...
+
+SplineRangeAreaSeries splineRangeAreaSeries = new SplineRangeAreaSeries() 
+{ 
+	ItemsSource = SplineRangeAreaData, 
+	XBindingPath = "Name", 
+	High = "High", 
+	Low = "Low" 
+}; 
+
+chart.Series.Add(splineRangeAreaSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](charttypes_images/SplineRangeArea.png)
+
 ## Stacked Area Chart
 
 To render a stacked area chart, create an instance of [`StackingAreaSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.StackingAreaSeries.html) and add to the [`Series`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~Series.html) collection property of [`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the stacked area appearance.
@@ -896,9 +967,9 @@ The following types are used in [`SplineSeries`](http://help.syncfusion.com/cr/c
  * Cardinal
  * Clamped
 
-By default [`SplineType`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineType.html) value is Natural.
+By default [`SplineType`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineType.html) value is [`Natural`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineType.html).
 
-The following code shows how to set the SplineType value as Cardinal
+The following code shows how to set the [`SplineType`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineType.html) value as [`Cardinal`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineType.html)
 
 {% tabs %}
 
@@ -932,15 +1003,15 @@ chart.Series.Add(splineSeries);
 
 {% endtabs %}
 
-Cardinal 
+[`Cardinal`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineType.html) 
 
 ![](charttypes_images/CardinalSplineType.png)
 
-Monotonic
+[`Monotonic`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineType.html)
 
 ![](charttypes_images/MonotonicSplineType.png)
 
-Clamped
+[`Clamped`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineType.html)
 
 ![](charttypes_images/ClampedSplineType.png)
 
@@ -988,11 +1059,11 @@ chart.Series.Add(stepLine);
 
 To render a bubble chart, create an instance of [`BubbleSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.BubbleSeries.html) and add to the [`Series`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~Series.html) collection property of [`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html). 
 
-Bubble chart requires 3 fields (X, Y and Size) to plot a point. Here `[‘Size’](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.BubbleSeries~Size.html) is used to specify the size of each bubble segment. 
+Bubble chart requires 3 fields (X, Y and Size) to plot a point. Here [`Size`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.BubbleSeries~Size.html) is used to specify the size of each bubble segment. 
 
 There are two ways you can provide data to bubble chart,
 
-1.You can use [ChartDataPoint's](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataPoint~_ctor%28IComparable,Double,Double%29.html#) three parameter constructor to pass x, y and size values to  `BubbleSeries`,
+1.You can use [ChartDataPoint's](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataPoint~_ctor%28IComparable,Double,Double%29.html#) three parameter constructor to pass x, y and size values to  [`BubbleSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.BubbleSeries.html),
 
 {% highlight c# %}
 [C#]
@@ -1124,7 +1195,7 @@ OHLC chart requires five values (X, Open, High, Low and Close) to plot a point.
 
 There are two ways you can provide data to an OHLC chart,
 
-1.You can use [`ChartDataPoint's`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataPoint~_ctor(IComparable,Double,Double,Double,Double).html#) five parameter constructor to pass x, open, high, low and close values to  `HiLoOpenCloseSeries`,
+1.You can use [`ChartDataPoint's`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataPoint~_ctor(IComparable,Double,Double,Double,Double).html#) five parameter constructor to pass x, open, high, low and close values to [`HiLoOpenCloseSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.HiLoOpenCloseSeries.html),
 
 {% highlight c# %}
 [C#]
@@ -1187,7 +1258,7 @@ chart.Series.Add(hiLoOpenCloseSeries);
 
 {% endtabs %}
 
-You can use the following properties to customize the HiLoOpenCloseSeries segment appearance.
+You can use the following properties to customize the [`HiLoOpenCloseSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.HiLoOpenCloseSeries.html) segment appearance.
 
 * [`Color`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~Color.html) – used to change the color of the series.
 * [`StrokeWidth`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~StrokeWidth.html) – used to change the stroke width of the series.
@@ -1476,7 +1547,7 @@ radar.IsClosed = false;
 
 ### Radar start angle for primary axis
 
-The start position of the radar series can be set by using [`PolarAngle`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~PolarAngle.html) property of axis. Default value of [`PolarAngle`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~PolarAngle.html) property is `Rotate270`. PolarAngle property can be set for primary axis, secondary axis, or both axes
+The start position of the radar series can be set by using [`PolarAngle`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~PolarAngle.html) property of axis. Default value of [`PolarAngle`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~PolarAngle.html) property is [`Rotate270`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartPolarAngle.html). [`PolarAngle`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~PolarAngle.html) property can be set for primary axis, secondary axis, or both axes
  
 {% tabs %}
 
@@ -1602,7 +1673,7 @@ You can use the following properties to customize the appearance.
 
 * [`Color`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~Color.html) – used to change the color of the series.
 * [`StrokeWidth`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~StrokeWidth.html) – used to change the stroke width of the series.
-* [`StrokeColor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.PolarRadarSeriesBase~StrokeColor.html) – used to change the stroke color of the series when draw types is set to `Area`
+* [`StrokeColor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.PolarRadarSeriesBase~StrokeColor.html) – used to change the stroke color of the series when draw types is set to [`Area`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.PolarRadarSeriesDrawType.html)
 
 {% tabs %}
 {% highlight xaml %}
@@ -1648,7 +1719,7 @@ polar.IsClosed = false;
 
 ### Polar start angle for primary axis
 
-The start position of the polar series can be set by using [`PolarAngle`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~PolarAngle.html) property of axis. Default value of [`PolarAngle`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~PolarAngle.html) property is `Rotate270`. [`PolarAngle`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~PolarAngle.html) property can be set for primary axis, secondary axis, or both axes.
+The start position of the polar series can be set by using [`PolarAngle`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~PolarAngle.html) property of axis. Default value of [`PolarAngle`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~PolarAngle.html) property is [`Rotate270`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartPolarAngle.html). [`PolarAngle`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~PolarAngle.html) property can be set for primary axis, secondary axis, or both axes.
 
 {% tabs %}
 
@@ -2066,7 +2137,7 @@ DoughnutSeries doughnutSeries = new DoughnutSeries()
 
 ### Sector of Doughnut
 
-SfChart allows you to render all the data points/segments in semi-doughnut, quarter- doughnut or in any sector using [`StartAngle`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CircularSeries~StartAngle.html) and [`EndAngle`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CircularSeries~EndAngle.html) properties.
+[`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html) allows you to render all the data points/segments in semi-doughnut, quarter- doughnut or in any sector using [`StartAngle`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CircularSeries~StartAngle.html) and [`EndAngle`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CircularSeries~EndAngle.html) properties.
 
 {% tabs %} 
 

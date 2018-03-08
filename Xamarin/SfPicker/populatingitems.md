@@ -10,13 +10,13 @@ documentation: ug
 
 # Populating Items
 
-This section explains about the ways of populating items for SfPicker control
+This section explains the ways of populating items for picker control.
 
-## Binding Data Source
+## Binding data source
 
-SfPicker is bound the external data source to display the data’s. It supports any collections that’s implements the `IEnumerable` interface.
+picker control is bound to the external data source to display the data. It supports any collections that implements the `IEnumerable` interface.
 
-To bind the data source in SfPicker, set the `SfPicker.ItemsSource` property as show in below code.
+To bind the data source in picker, set the `SfPicker.ItemsSource` property as shown in the following code.
 
 {% tabs %}
 {% highlight xaml %}
@@ -66,13 +66,13 @@ picker.ItemsSource = info.Colors;
 {% endhighlight %}
 {% endtabs %}
 
-## Multi-Column Items
+## Multi-column items
 
-The SfPicker automatically populate the items as Multi-Column based on the Data Source.
+The picker automatically populates the items as Multi-column based on the data source.
 
-Collection of items can be created and assigned to a Collection and each item Collection is a column of SfPicker. 
+Collection of items can be created and assigned to a Collection, and each item Collection is a column of picker. 
 
-The following code example illustrates about to populate Month, Day and Year values in each column of SfPicker.
+The following code example illustrates how to populate Month, Day, and Year values in each column of picker.
 
 {% tabs %}
 {% highlight c# %}
@@ -186,25 +186,24 @@ ItemsSource="{Binding Dates}" />
 {% endhighlight %}
 {% endtabs %}
 
-MultiColumn sample from the following link
+You can download the multi column sample from the following link.
 
 Sample link: [MultiColumn](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MultiColumnSample798010799)
 
-Screen shot for the above code.
+The following screenshot illustrates the output of the above code.
 
 ![](images/multicolumn.png)
 
 
-## Set Items Colors and Font Attributes customization
+## Set items colors and font attributes customization
 
-In SfPicker, items text color and font both selected and unselected item of SfPicker control can be customized as shown below.  
+picker control, both items text color and font can be selected and unselected by customizing as shown in the following code.  
 
-### Selected Item Customization
+### Selected item customization
 
 ##### Text Color 
 
-Selected item text color can be customized by setting `SfPicker.SelectedItemTextColor` property of SfPicker.
-
+Selected item's text color can be customized by setting `SfPicker.SelectedItemTextColor` property.
 {% tabs %}
 {% highlight xaml %}
 
@@ -227,11 +226,11 @@ picker.SelectedItemTextColor = Color.Red;
 
 ##### Font 
 
-This section explains about the customization of Selected Item Font.
+This section explains about the customization of selected item's font.
 
 ###### 	FontFamily
 
-Selected item text FontFamily can be customized by setting `SfPicker.SelectedItemFontFamily` property of SfPicker.
+Selected item's text FontFamily can be customized by setting `SfPicker.SelectedItemFontFamily` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -255,7 +254,7 @@ picker.SelectedItemFontFamily = "Arial";
 
 ###### 	FontSize
 
-Selected item text FontSize can be customized by setting `SfPicker.SelectedItemFontSize` property of SfPicker.
+Selected item's text FontSize can be customized by setting `SfPicker.SelectedItemFontSize` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -279,7 +278,7 @@ picker.SelectedItemFontSize = 12;
 
 ###### 	FontAttribute
 
-Selected item text FontAttribute can be customized by setting `SfPicker.SelectedItemFontAttribute` property of SfPicker.
+Selected item's text FontAttribute can be customized by setting `SfPicker.SelectedItemFontAttribute` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -301,11 +300,11 @@ picker.SelectedItemFontAttribute = FontAttributes.Bold;
 {% endhighlight %}
 {% endtabs %}
 
-### UnSelected Item Customization
+### Unselected item customization
 
 ##### Text Color
 
-Unselected item text color can be customized by setting `SfPicker.UnSelectedItemTextColor` property of SfPicker.
+Unselected item's text color can be customized by setting `SfPicker.UnSelectedItemTextColor` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -329,11 +328,11 @@ picker.UnSelectedItemTextColor = Color.Gray;
 
 ##### Font
 
-This section explains about the customization of unselected items Font.
+This section explains about the customization of unselected item's font.
 
 ###### 	FontFamily
 
-Unselected item text FontFamily can be customized by setting `SfPicker.UnSelectedItemFontFamily` property of SfPicker.
+Unselected item's text FontFamily can be customized by setting `SfPicker.UnSelectedItemFontFamily` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -357,7 +356,7 @@ picker.UnSelectedItemFontFamily = "Calibri";
 
 ###### 	FontSize
 
-Unselected item text FontSize can be customized by setting `SfPicker.UnSelectedItemFontSize` property of SfPicker.
+Unselected item's text FontSize can be customized by setting `SfPicker.UnSelectedItemFontSize` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -381,7 +380,7 @@ picker.UnSelectedItemFontSize = 11;
 
 ###### 	FontAttribute
 
-Unselected item text FontAttribute can be customized by setting `SfPicker.UnSelectedItemFontAttribute` property of SfPicker.
+Unselected item's text FontAttribute can be customized by setting `SfPicker.UnSelectedItemFontAttribute` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -403,61 +402,70 @@ picker.UnSelectedItemFontAttribute = FontAttributes.Italic;
 {% endhighlight %}
 {% endtabs %}
 
-## Adding Custom View Items
+## Adding custom view to items
 
-In SfPicker, the items can be customized with custom view of each item by hooking `SfPicker.OnPickerItemLoaded` event and assign custom view in `PickerViewEventArgs.View` property to added the all the item with custom view.
+In picker control, the items can be customized with custom view of each item by hooking `SfPicker.OnPickerItemLoaded` event, and assign custom view in `PickerViewEventArgs.View` property to add the all the item with custom view.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<?xml version="1.0" encoding="utf-8" ?>
 
-<ContentPage
+    <Grid x:Name="main">
 
-x:Class="CustomViewSample.MainPage"
+<Button 
 
-xmlns="http://xamarin.com/schemas/2014/forms"
+x:Name="button" 
 
-xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+Text="Open Picker" 
 
-xmlns:local="clr-namespace:CustomViewSample"
+Clicked="Handle_Clicked" 
 
-xmlns:syncfusion="clr-namespace:Syncfusion.SfPicker.XForms;assembly=Syncfusion.SfPicker.XForms">
+HeightRequest="100" 
 
-<ContentPage.BindingContext>
+WidthRequest="200" 
 
-<local:UserInfo />
+VerticalOptions="Center" 
 
-</ContentPage.BindingContext>
+HorizontalOptions="Center" />
 
-<Grid HorizontalOptions="Center" VerticalOptions="Center">
-
-<Button Clicked="Button_Clicked" Text="Open Picker" />
-
-<syncfusion:SfPicker
+<picker:SfPicker 
 
 x:Name="picker"
+                    
+HeaderHeight="40"
+                    
+ShowHeader="true"
+                    
+HeaderText="SfPicker Sample"
+                    
+ShowColumnHeader="True"
+                    
+ColumnHeaderHeight="46"
+                    
+PickerMode="Dialog"
+                    
+ItemsHeight="40"
+                    
+PickerHeight="350"
+                    
+PickerWidth="350"
+                    
+ShowFooter="True" 
+                    
+FooterHeight="46"/>
 
-HeaderText="Select a Users"
+    </Grid>
 
-ItemsSource="{Binding Users}"
-
-OnPickerItemLoaded="picker_OnPickerItemLoaded"
-
-PickerMode="Dialog" />
-
-</Grid>
-
-</ContentPage>
 
 {% endhighlight %}
 
 
 {% highlight c# %}
 
-public partial class MainPage : ContentPage
 
+public partial class MainPage : ContentPage
+    
 {
 
 public MainPage()
@@ -466,62 +474,76 @@ public MainPage()
 
 InitializeComponent();
 
+ObservableCollection<object> mainCollection = new ObservableCollection<object>();
+
+ObservableCollection<object> column0 = new ObservableCollection<object>();
+            
+ObservableCollection<object> column1 = new ObservableCollection<object>();
+            
+ObservableCollection<string> columnHeader = new ObservableCollection<string>();
+            
+columnHeader.Add("Custom View");
+            
+columnHeader.Add("Labels");
+            
+picker.ColumnHeaderText = columnHeader;
+            
+picker.OnPickerItemLoaded+=HandlePickerViewEvent;
+            
+column0.Add("India.png");
+            
+column0.Add("UAE.png");
+            
+column0.Add("USA.png");
+            
+column0.Add("UK.png");
+            
+column0.Add("Germany.png");
+            
+column1.Add("TestingLabel 1");
+            
+column1.Add("TestingLabel 2"); 
+            
+column1.Add("TestingLabel 3");
+            
+column1.Add("TestingLabel 4");
+            
+column1.Add("TestingLabel 5");
+            
+mainCollection.Add(column0);
+            
+mainCollection.Add(column1);
+            
+picker.ItemsSource = mainCollection;
+            
+picker.Parent = main;
+
 }
 
-private void picker_OnPickerItemLoaded(object sender, Syncfusion.SfPicker.XForms.PickerViewEventArgs e)
-
+void HandlePickerViewEvent(object sender, Syncfusion.SfPicker.XForms.PickerViewEventArgs e)
+       
+{
+           
+if (e.Column == 0)
+           
 {
 
-e.View = new UserView(e.Item.ToString());
+Country country = new Country() { Name = e.Item.ToString() };
+                
+e.View = new ItemView(country);
+            
+}
 
 }
 
-private void Button_Clicked(object sender, EventArgs e)
-
+void Handle_Clicked(object sender, System.EventArgs e)
+        
 {
 
 picker.IsOpen = true;
-
+        
 }
-
-}
-
-*UserInfo ViewModel:*
-
-public class UserInfo
-
-{
-
-public ObservableCollection<string> Users { get; set; }
-
-public UserInfo()
-
-{
-
-Users = new ObservableCollection<string>();
-
-Users.Add("Maria Anders");
-
-Users.Add("Ana Trujillo");
-
-Users.Add("Ant Fuller");
-
-Users.Add("Martin King");
-
-Users.Add("Lenny Lin");
-
-Users.Add("John Carter");
-
-Users.Add("Laura King");
-
-Users.Add("Anne Wilson");
-
-Users.Add("Martin King");
-
-Users.Add("Gina Irene");
-
-}
-
+    
 }
 
 {% endhighlight %}
@@ -533,65 +555,79 @@ Users.Add("Gina Irene");
 
 {% highlight xaml %}
 
-<Grid
 
-x:Class="CustomViewSample.UserView"
-
-xmlns="http://xamarin.com/schemas/2014/forms"
-
-xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
-
+     <Grid>
+         
 <Grid.ColumnDefinitions>
-
-<ColumnDefinition Width="30" />
-
-<ColumnDefinition Width="*" />
-
+        
+        <ColumnDefinition Width="40" />
+        <ColumnDefinition Width="*" />
+    
 </Grid.ColumnDefinitions>
+    
+<Image 
 
-<Image
+Source="{Binding Name}" 
 
-Margin="8,0,0,0"
+Margin="8,0,0,0"  
 
-Source="user.png"
+VerticalOptions="Center"  />
+    
+<Label 
 
-VerticalOptions="Center" />
+Text="{Binding Text}" 
 
-<Label
+Grid.Column="1" />
 
-Grid.Column="1"
+    </Grid>
 
-HeightRequest="30"
-
-Text="{Binding Name}"
-
-VerticalOptions="Center" />
-
-
-
-</Grid>
 {% endhighlight %}
 
 {% highlight c# %}
 
 
-public partial class UserView : Grid
 
+public partial class ItemView : ContentView
+    
 {
-
-public string Name { get; set; }
-
-public UserView(string name)
-
+       
+Country countryName;
+       
+int i;
+       
+public ItemView(Country country)
+        
 {
-
-Name = name;
-
+           
+i = 0;
+           
+countryName = country;
+           
 InitializeComponent();
 
-this.BindingContext = this;
+foreach(char count in country.Name)
+            
+{
+               
+i++;   
 
 }
+          
+countryName.Text = country.Name.Remove(i - 4);
+           
+this.BindingContext = countryName;
+       
+}
+   
+}
+
+public class Country
+
+{
+        
+public string Name { get; set; }
+        
+public string Text { get; set; }
 
 }
 
@@ -600,6 +636,5 @@ this.BindingContext = this;
 
 Screen shot for the above code.
 
-![](images/populatingitems_img2.jpeg)
-
+![](images/CustomPickerDroid.png)    ![](images/CustomPickerIOS.png)
 

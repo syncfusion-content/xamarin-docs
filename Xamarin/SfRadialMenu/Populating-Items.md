@@ -9,11 +9,11 @@ documentation : ug
 
 # Populating Items
 
-This section explains about the ways of populating items through SfRadialMenuItem and Item source with Item Template.
+This section explains the ways about populating items through radial menu item and item source with item template.
 
-## Through RadialMenuItems
+## Through radial menu items
 
-By passing collection of `SfRadialMenuItem` we can get the view of `SfRadialMenu` control. And SfRadialMenuItem class provides various options to customize the items by giving Custom views, Font Icons and Images. And it is possible to add RadialMenu items hierarchically. Item selection can be identified by using ItemTapped event. The ItemTapped event will be fired whenever we tap an item from RadialMenu.
+By passing collection of `SfRadialMenuItem`, you can get the view of `SfRadialMenu` control. radial menu item class provides various options to customize the items by giving custom views, font icons, and images. It is possible to add radial menu items hierarchically. Item selection can be identified by using ItemTapped event. The ItemTapped event will be fired whenever you tap an item from radial menu.
 
 {% tabs %}
 
@@ -229,4 +229,4 @@ void Handle_ItemTapped(object sender, Syncfusion.SfRadialMenu.XForms.ItemTappedE
 
 ![](images/populatingItems.png)
 
-N> To use FontIcons, add respective FontFamily name in `info.plist` file under Fonts provided by application category.
+N> To use FontIcons, add respective FontFamily name in `info.plist` file under fonts provided by application category.

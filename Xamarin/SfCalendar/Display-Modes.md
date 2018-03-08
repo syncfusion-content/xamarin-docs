@@ -65,8 +65,6 @@ N> Similar way there are many settings available to modify Text and Background c
 
 This displays entire dates/month of a particular year, by default current year will be displayed on loading. The Years can be changed by swiping back and forth or `Forward` and `Backward` methods. The Months can be navigated quickly by selecting on the particular month in year view.
 
-I > In UWP platform ,we don't have YearView option.
-
 {% tabs %}
 
 {% highlight xaml %}

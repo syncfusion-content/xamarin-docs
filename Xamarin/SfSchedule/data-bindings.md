@@ -516,15 +516,14 @@ schedule.OnAppointmentLoadedEvent += Schedule_OnAppointmentLoadedEvent;
 
 private void Schedule_OnAppointmentLoadedEvent(object sender, AppointmentLoadedEventArgs args)
 {
-if ( args.appointment != null && (args.Appointment as Meeting).IsAllDay == true && args.Appointment as Meeting != null )
+if ( args.appointment != null && (args.appointment as Meeting).IsAllDay == true && args.appointment as Meeting != null )
 {
 	Label label = new Label();
 	label.BackgroundColor = (args.appointment as Meeting).Color;
-	if (args.appointment != null)
-		label.Text = (args.appointment as Meeting).EventName;
+	label.Text = (args.appointment as Meeting).EventName;
 	args.view = label;
 }
-else if ( args.appointment != null && (args.Appointment as Meeting).EventName == "Retrospective" && args.Appointment as Meeting != null)
+else if ( args.appointment != null && (args.appointment as Meeting).EventName == "Retrospective" && args.appointment as Meeting != null)
 {
 	Button button = new Button();
 	button.Image = "Meeting.png";

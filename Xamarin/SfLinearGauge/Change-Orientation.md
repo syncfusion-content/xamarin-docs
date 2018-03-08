@@ -44,4 +44,4 @@ documentation: ug
 
 {% endtabs %}
 
-![](change_orientation/orientaion.png)
+![](change-orientation_images/orientaion.png)

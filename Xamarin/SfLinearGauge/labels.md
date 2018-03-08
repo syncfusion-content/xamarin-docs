@@ -22,11 +22,14 @@ The label color can be changed using the [`LabelColor`](https://help.syncfusion.
 {% highlight xaml %}
 
      <gauge:SfLinearGauge>
-            <gauge:SfLinearGauge.Scales>
-                <gauge:LinearScale ScaleBarColor="#e0e9f9" LabelColor="Purple">
+               <gauge:SfLinearGauge.Scales>
+                <gauge:LinearScale ScaleBarColor="#e0e0e0" LabelColor="Purple">
                     <gauge:LinearScale.MajorTickSettings>
-                      <gauge:LinearTickSettings Thickness="1"/>
-                    </gauge:LinearScale.MajorTickSettings>
+                     <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="15"/>
+                      </gauge:LinearScale.MajorTickSettings>
+                      <gauge:LinearScale.MinorTickSettings>
+                      <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="7"/>
+                       </gauge:LinearScale.MinorTickSettings>
                 </gauge:LinearScale>
             </gauge:SfLinearGauge.Scales>
         </gauge:SfLinearGauge>      
@@ -39,6 +42,11 @@ The label color can be changed using the [`LabelColor`](https://help.syncfusion.
             LinearScale linearScale = new LinearScale();
             linearScale.ScaleBarColor = Color.FromHex("#e0e0e0");
             linearScale.MajorTickSettings.Thickness = 1;
+            linearScale.MajorTickSettings.Length = 15;
+            linearScale.MajorTickSettings.Color = Color.Gray;
+            linearScale.MinorTickSettings.Color = Color.Gray;
+            linearScale.MinorTickSettings.Length = 7;
+            linearScale.MinorTickSettings.Thickness = 1;
             linearScale.LabelColor = Color.Purple;
             linearGauge.Scales.Add(linearScale);
 
@@ -58,16 +66,21 @@ The label font can be customized by using the [`LabelFontSize`](https://help.syn
 {% highlight xaml %}
 
     <gauge:SfLinearGauge>
+
             <gauge:SfLinearGauge.Scales>
-                <gauge:LinearScale ScaleBarColor="#e0e9f9" LabelColor="#424242" LabelFontSize ="15" FontAttribute ="Bold">
-                <gauge:LinearScale.FontFamily>
-                    <OnPlatform x:TypeArguments="x:String" iOS="Chalkduster" Android="algerian.ttf" WinPhone="Chiller" />
-                </gauge:LinearScale.FontFamily>
+                <gauge:LinearScale ScaleBarColor="#e0e0e0" LabelColor="#424242" LabelFontSize ="15" FontAttributes="Bold">
+                    <gauge:LinearScale.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String" iOS="Chalkduster" Android="algerian.ttf" WinPhone="Chiller" />
+                    </gauge:LinearScale.FontFamily>
                     <gauge:LinearScale.MajorTickSettings>
-                      <gauge:LinearTickSettings Thickness="1"/>
-                    </gauge:LinearScale.MajorTickSettings>
+                 <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="15"/>
+                   </gauge:LinearScale.MajorTickSettings>
+                   <gauge:LinearScale.MinorTickSettings>
+                    <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="7"/>
+                    </gauge:LinearScale.MinorTickSettings>
                 </gauge:LinearScale>
             </gauge:SfLinearGauge.Scales>
+
         </gauge:SfLinearGauge>           
  
 
@@ -81,6 +94,11 @@ The label font can be customized by using the [`LabelFontSize`](https://help.syn
             linearScale.ScaleBarColor = Color.FromHex("#e0e0e0");
             linearScale.FontAttributes = FontAttributes.Bold;
             linearScale.MajorTickSettings.Thickness = 1;
+            linearScale.MajorTickSettings.Length = 15;
+            linearScale.MajorTickSettings.Color = Color.Gray;
+            linearScale.MinorTickSettings.Color = Color.Gray;
+            linearScale.MinorTickSettings.Length = 7;
+            linearScale.MinorTickSettings.Thickness = 1;
             linearScale.LabelColor = Color.FromHex("#424242");
             linearScale.FontFamily = Device.RuntimePlatform == Device.iOS ? "Chalkduster" : Device.RuntimePlatform == Device.Android ? "algerian.ttf" : "Chiller";
             linearGauge.Scales.Add(linearScale);
@@ -100,11 +118,14 @@ The labels can be positioned far away from the ticks by using the [`LabelOffset`
 {% highlight xaml %}
 
         <gauge:SfLinearGauge>
-            <gauge:SfLinearGauge.Scales>
-                <gauge:LinearScale ScaleBarColor="#e0e9f9" LabelColor="#424242" LabelOffset ="5">
+             <gauge:SfLinearGauge.Scales>
+                <gauge:LinearScale ScaleBarColor="#e0e0e0" LabelColor="#424242" LabelOffset ="5">
                     <gauge:LinearScale.MajorTickSettings>
-                      <gauge:LinearTickSettings Thickness="1"/>
+                          <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="15"/>
                     </gauge:LinearScale.MajorTickSettings>
+                     <gauge:LinearScale.MinorTickSettings>
+                            <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="7"/>
+                      </gauge:LinearScale.MinorTickSettings>
                 </gauge:LinearScale>
             </gauge:SfLinearGauge.Scales>
         </gauge:SfLinearGauge>      
@@ -117,14 +138,16 @@ The labels can be positioned far away from the ticks by using the [`LabelOffset`
             LinearScale linearScale = new LinearScale();
             linearScale.ScaleBarColor = Color.FromHex("#e0e0e0");
             linearScale.MajorTickSettings.Thickness = 1;
+            linearScale.MajorTickSettings.Length = 15;
+            linearScale.MajorTickSettings.Color = Color.Gray;
+            linearScale.MinorTickSettings.Color = Color.Gray;
+            linearScale.MinorTickSettings.Length = 7;
+            linearScale.MinorTickSettings.Thickness = 1;
             linearScale.LabelColor = Color.FromHex("#424242");
             linearScale.LabelOffset = 5;
             linearGauge.Scales.Add(linearScale);
    
-    
 {% endhighlight %}
-
-{% endtabs %}
 
 ![](labels_images/label3.png)
 
@@ -142,10 +165,13 @@ The [`LabelPostfix`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/S
 
        <gauge:SfLinearGauge>
             <gauge:SfLinearGauge.Scales>
-                <gauge:LinearScale MinimumValue = "0" MaximumValue ="1000" Interval ="200" LabelPostfix ="K" ScaleBarColor="#e0e9f9" LabelColor="Purple" LabelOffset ="5">
+                <gauge:LinearScale MinimumValue = "0" MaximumValue ="1000" Interval ="200" LabelPostfix ="K" ScaleBarColor="#e0e0e0" LabelColor="#424242">
                     <gauge:LinearScale.MajorTickSettings>
-                      <gauge:LinearTickSettings Thickness="1"/>
+                        <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="15"/>
                     </gauge:LinearScale.MajorTickSettings>
+                    <gauge:LinearScale.MinorTickSettings>
+                        <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="7"/>
+                    </gauge:LinearScale.MinorTickSettings>
                 </gauge:LinearScale>
             </gauge:SfLinearGauge.Scales>
         </gauge:SfLinearGauge>    
@@ -160,7 +186,12 @@ The [`LabelPostfix`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/S
             linearScale.MaximumValue = 1000;
             linearScale.Interval = 200;
             linearScale.ScaleBarColor = Color.FromHex("#e0e0e0");
-            linearScale.MajorTickSettings.Thickness = 1;
+             linearScale.MajorTickSettings.Thickness = 1;
+            linearScale.MajorTickSettings.Length = 15;
+            linearScale.MajorTickSettings.Color = Color.Gray;
+            linearScale.MinorTickSettings.Color = Color.Gray;
+            linearScale.MinorTickSettings.Length = 7;
+            linearScale.MinorTickSettings.Thickness = 1;
             linearScale.LabelColor = Color.FromHex("#424242");
             linearScale.LabelPostfix = "K";
             linearGauge.Scales.Add(linearScale);
@@ -181,14 +212,16 @@ The [`LabelPrefix`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Sy
 
        <gauge:SfLinearGauge>
             <gauge:SfLinearGauge.Scales>
-                <gauge:LinearScale ScaleBarColor="#e0e9f9" LabelColor="#424242" LabelPrefix ="$">
+                <gauge:LinearScale  ScaleBarColor="#e0e0e0" LabelColor="#424242" LabelPrefix ="$">
                     <gauge:LinearScale.MajorTickSettings>
-                      <gauge:LinearTickSettings Thickness="1"/>
+                        <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="15"/>
                     </gauge:LinearScale.MajorTickSettings>
+                    <gauge:LinearScale.MinorTickSettings>
+                        <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="7"/>
+                    </gauge:LinearScale.MinorTickSettings>
                 </gauge:LinearScale>
             </gauge:SfLinearGauge.Scales>
         </gauge:SfLinearGauge>      
-
 
 {% endhighlight %}
 
@@ -199,6 +232,11 @@ The [`LabelPrefix`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Sy
             linearScale.ScaleBarColor = Color.FromHex("#e0e0e0");
             linearScale.LabelColor = Color.FromHex("#424242");
             linearScale.MajorTickSettings.Thickness = 1;
+            linearScale.MajorTickSettings.Length = 15;
+            linearScale.MajorTickSettings.Color = Color.Gray;
+            linearScale.MinorTickSettings.Color = Color.Gray;
+            linearScale.MinorTickSettings.Length = 7;
+            linearScale.MinorTickSettings.Thickness = 1;
             linearScale.LabelPrefix = "$";
             linearGauge.Scales.Add(linearScale);
    
@@ -220,13 +258,13 @@ Labels visibility can be customized using the [`ShowLabels`](https://help.syncfu
        <gauge:SfLinearGauge>
             <gauge:SfLinearGauge.Scales>
                 <gauge:LinearScale ScaleBarColor="#e0e0e0" ShowLabels = "False" ScaleBarSize ="40">
-				  <gauge:LinearScale.MajorTickSettings>
-                      <gauge:LinearTickSettings Thickness="1" Color ="Black" Length ="40" Offset ="-40" />
-                    </gauge:LinearScale.MajorTickSettings>
-					<gauge:LinearScale.MinorTickSettings>
-                      <gauge:LinearTickSettings Color ="Black" Length = "20" Offset ="-20" />
-                    </gauge:LinearScale.MinorTickSettings>
-                </gauge:LinearScale>
+                <gauge:LinearScale.MajorTickSettings>
+                    <gauge:LinearTickSettings Thickness="1" Color ="Black" Length ="40" Offset ="-40" />
+                </gauge:LinearScale.MajorTickSettings>
+                <gauge:LinearScale.MinorTickSettings>
+                    <gauge:LinearTickSettings Color ="Black" Length = "20" Offset ="-20" />
+                </gauge:LinearScale.MinorTickSettings>
+            </gauge:LinearScale>
             </gauge:SfLinearGauge.Scales>
         </gauge:SfLinearGauge>
 
@@ -244,7 +282,7 @@ Labels visibility can be customized using the [`ShowLabels`](https://help.syncfu
             linearScale.MinorTickSettings.Offset = -20;
             linearScale.MajorTickSettings.Offset = -40;
             linearScale.MajorTickSettings.Thickness = 1;
-            linearScale.MinorTickSettings.Length = 20
+            linearScale.MinorTickSettings.Length = 20;
             linearScale.MinorTicksPerInterval = 4;
             linearScale.ShowLabels = false;
             linearGauge.Scales.Add(linearScale);

@@ -10,7 +10,7 @@ keywords: mask, SfMaskedEdit, maskededit
 
 # Using Mask Characters as Literals
 
-To use mask character as a literal, precede the mask character with a backslash (\). For example, to display the dollar sign ($), then set the mask as follows:
+To use mask character as a literal, precede the mask character with a backslash (\\). For example, to display the dollar sign ($), then set the mask as follows:
 
 {% tabs %}
 {% highlight xaml %}

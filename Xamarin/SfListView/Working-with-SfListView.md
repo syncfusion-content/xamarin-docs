@@ -11,7 +11,8 @@ documentation: ug
 
 ## Launching the SfListView inside StackLayout
 
-When the SfListView is loaded inside StackLayout, set the `HorizontalOptions` and `VerticalOptions` as `LayoutOptions.FillAndExpand`. Because StackLayout positions the child element one after other either horizontally or vertically based on the orientation of StackLayout. The size of StackLayout depends on how the HorizontalOptions and VerticalOptions properties are set. By default, StackLayout use the entire screen. 
+When you load SfListView inside the StackLayout, you should set the `HorizontalOptions` and `VerticalOptions` of the StackLayout as `LayoutOptions.FillAndExpand`.
+Because, the StackLayout positions the child element one after the other, either horizontally or vertically based on the orientation of StackLayout. The size of the StackLayout depends on how the HorizontalOptions and VerticalOptions properties are set, but by default, the StackLayout will try to use the entire screen. 
 
 {% highlight xaml %}
 <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
@@ -21,7 +22,13 @@ When the SfListView is loaded inside StackLayout, set the `HorizontalOptions` an
 
 ### Load SfListView inside ScrollView within StackLayout
 
-When the SfListView is loaded inside ScrollView or any layout such as Grid, StackLayout etc. into the StackLayout, set the `VerticalOptions` and `HorizontalOptions` of immediate parent as `LayoutOptions.FillAndExpand`.
+When the SfListView is loaded inside a ScrollView, `HeightRequest` must be set to the SfListView. If not, the following problems will occur.
+
+* If the position of the SfListView is not in a view while loading inside the StackLayout with more than one children, then SfListView will not be loaded. Because the StackLayout passes the height for the `SfListView` as 1. 
+* Sticky header and sticky group header changed to scrollable and the empty space remains after the `SfListView` items, when the device orientation is changed to horizontal. Because the total extend is set to the ScrollView in horizontal orientation. 
+* When loading SfListView inside the `Grid` with row definition as `Auto` in UWP, Grid passes the height for the SfListView to be `1`.
+
+In the following sample, ScrollView height is set into the `HeightRequest` of SfListView.
 
 {% highlight xaml %}
 <local:ExtScrollView x:Name="scrollView" >
@@ -86,7 +93,7 @@ listView.LayoutManager.ScrollToRowIndex(index, true);
 
 The SfListView will notify the scrolling state changes by using the [ScrollStateChanged](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ScrollStateChanged_EV.html) event.
 
-Following states will be notified via [ScrollState](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ScrollState.html) property in the event argument:
+Following states will be notified via [ScrollState](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ScrollState.html) property in the event argument.
 
  * Dragging: Specifies that `SfListView` is currently being dragged in the view.
  * Fling: Specifies that fling action is performed on `SfListView`.
@@ -110,7 +117,7 @@ private void ListView_ScrollStateChanged(object sender, ScrollStateChangedEventA
 
 ### Loaded event
 
-The [Loaded Event](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~Loaded_EV.html) is raised when the SfListView is loaded in view for the first time.
+The [Loaded Event](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~Loaded_EV.html) event is raised when the SfListView is loaded in view for the first time.
 
 {% highlight c# %}
 listView.Loaded += ListView_Loaded;
@@ -123,7 +130,7 @@ private void ListView_Loaded(object sender, ListViewLoadedEventArgs e)
 
 ### Tapped event
 
-The [ItemTapped](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTapped_EV.html) event will be triggered whenever tapping the item. [ItemTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemTappedEventArgs.html) has the following members which the information for the `ItemTapped` event:
+The [ItemTapped](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTapped_EV.html) event will be triggered whenever you have tapped on the item. [ItemTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemTappedEventArgs.html) has the following members which provides the information for `ItemTapped` event.
 
  * ItemType: It gets the type of the tapped item.
  * ItemData: The underlying data associated with the tapped item as its arguments.
@@ -161,7 +168,7 @@ private void ListView_ItemDoubleTapped(object sender, ItemDoubleTappedEventArgs 
 
 ### ItemHolding event
 
-The [ItemHolding](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemHolding_EV.html) event will be triggered whenever long pressing the item. The [ItemHoldingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemHoldingEventArgs.html) has the following members providing information for the `ItemHolding` event:
+The [ItemHolding](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemHolding_EV.html) event will be triggered whenever you have long pressed on the item. [ItemHoldingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemHoldingEventArgs.html) has the following members which provides the information for `ItemHolding` event.
 
  * ItemType: It gets the type of the long pressed item.
  * ItemData: The underlying data associated with the holding item as its arguments.
@@ -290,3 +297,4 @@ The SfListView has been built from the ground up with an optimized view reuse st
   * The SfListView will not receive any gestures as it will be handled by the parent ScrollView.
   * Should define size to the SfListView if it loads inside ScrollView.
  * Avoid changing the cell layout based on the BindingContext. This incurs large layout and initialization costs.
+

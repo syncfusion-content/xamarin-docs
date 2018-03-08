@@ -7,12 +7,9 @@ control: SfListView
 documentation: ug
 ---
 
-# Working With The SfListView
+## Load the SfListView inside the StackLayout
 
-## Launching the SfListView inside StackLayout
-
-When you load SfListView inside the StackLayout, you should set the `HorizontalOptions` and `VerticalOptions` of the StackLayout as `LayoutOptions.FillAndExpand`.
-Because, the StackLayout positions the child element one after the other, either horizontally or vertically based on the orientation of StackLayout. The size of the StackLayout depends on how the HorizontalOptions and VerticalOptions properties are set, but by default, the StackLayout will try to use the entire screen. 
+When the SfListView is loaded inside StackLayout, set the `HorizontalOptions` and `VerticalOptions` as `LayoutOptions.FillAndExpand`. Because StackLayout positions the child element one after other either horizontally or vertically based on the orientation of StackLayout. The size of StackLayout depends on how the HorizontalOptions and VerticalOptions properties are set. By default, StackLayout use the entire screen.
 
 {% highlight xaml %}
 <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">

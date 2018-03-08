@@ -989,7 +989,7 @@ if (selectedItems.Count > 0)
     } 
   } 
 } 
-{% endhighlight % }
+{% endhighlight %}
 
 ## Add item at specific index in a group
 

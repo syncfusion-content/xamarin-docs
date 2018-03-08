@@ -506,6 +506,8 @@ else
 }
 {% endhighlight %}
 
+![](PopulatingAppointments_images/appointmentstyle_event.png)
+
 >**Note**:  FontAttributes and FontFamily are native to the platform. Custom font and the font which are not available in the specified platform will not be applied.
 
 ## Customize appearance using Custom View
@@ -540,6 +542,8 @@ else
 }
 
 {% endhighlight %}
+
+![](PopulatingAppointments_images/appointmentstyle_customview.png)
 
 ## Selection
 Schedule control has built-in events to handle tapped, double tapped and long pressed touch actions.

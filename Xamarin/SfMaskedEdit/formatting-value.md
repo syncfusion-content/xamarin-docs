@@ -120,6 +120,6 @@ private void MaskedEdit4_ValueChanged(object sender, Syncfusion.XForms.MaskedEdi
 {% endhighlight %}
 {% endtabs %}
 
-Refer this [link](events.html#valuechanged-event) to know more about the ‘ValueChanged’ event of SfMaskedEdit control.
+Refer this [link](events.html#valuechanged-event) to know more about the `ValueChanged` event of SfMaskedEdit control.
 
 This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Forms/Samples/MaskedEdit_FormattingValue.zip).

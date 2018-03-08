@@ -9,9 +9,9 @@ documentation: ug
 
 # Dealing with Header and Footer
 
-This section explains about the header and footer customization of SfPicker.
+This section explains about the header and footer customization of picker control.
 
-## Enable or Disable Header 
+## Enable or disable header 
 
 SfPicker allows enabling or disabling the header section by setting `SfPicker.ShowHeader` property to True or False. Default value of `SfPicker.ShowHeader` property is True.
 
@@ -33,9 +33,9 @@ picker.ShowHeader = false;
 {% endhighlight %}
 {% endtabs %}
 
-## Set Custom Header 
+## Set custom header 
 
-SfPicker allows providing custom text to Header of SfPicker by setting `SfPicker.HeaderText` property. Default value of `SfPicker.HeaderText` property is Null.
+SfPicker allows providing custom text to its header by setting `SfPicker.HeaderText` property. Default value of `SfPicker.HeaderText` property is Null.
 
 {% tabs %}
 {% highlight xaml %}
@@ -55,13 +55,13 @@ picker.HeaderText = "Select a Date";
 {% endhighlight %}
 {% endtabs %}
 
-## Header Customization
+## Header customization
 
-SfPicker allows customizing Background, TextColor and Fonts.
+SfPicker allows customizing background, text color, and fonts.
 
 ### Background
 
-Header background color can be customized  by setting `SfPicker.HeaderBackgroundColor` property of SfPicker.
+Header's background color can be customized  by setting `SfPicker.HeaderBackgroundColor` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -83,9 +83,9 @@ picker.HeaderBackgroundColor = Color.SkyBlue;
 {% endhighlight %}
 {% endtabs %}
 
-### Text Color 
+### Text-Color 
 
-Header text color can be customized by setting `SfPicker.HeaderTextColor` property of SfPicker.
+Header text's color can be customized by setting `SfPicker.HeaderTextColor` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -109,11 +109,11 @@ picker.HeaderTextColor = Color.Red;
 
 ### Font 
 
-This section explains about the customization of Header text of Font.
+This section explains about the customization of header text's of Font.
 
 #### 	FontFamily
 
-Header text FontFamily can be customized by setting `SfPicker.HeaderFontFamily` property of SfPicker.
+Header text's FontFamily can be customized by setting `SfPicker.HeaderFontFamily` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -137,7 +137,7 @@ picker.HeaderFontFamily = "Arial";
 
 #### 	FontSize
 
-Header text FontSize can be customized by setting `SfPicker.HeaderFontSize` property of SfPicker.
+Header text's FontSize can be customized by setting `SfPicker.HeaderFontSize` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -161,7 +161,7 @@ picker.HeaderFontSize = 18;
 
 #### 	FontAttribute
 
-Header text FontAttribute can be customized by setting `SfPicker.HeaderFontAttribute` property of SfPicker.
+Header text's FontAttribute can be customized by setting `SfPicker.HeaderFontAttribute` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -183,9 +183,9 @@ picker.HeaderFontAttribute = FontAttributes.Italic;
 {% endhighlight %}
 {% endtabs %}
 
-## Enable or Disable Footer 
+## Enable or disable footer 
 
-SfPicker allows enabling or disabling the footer section by setting `SfPicker.ShowFooter` property to True or False. Default value of `SfPicker.ShowFooter` property is False.
+Picker allows enabling or disabling the footer section by setting `SfPicker.ShowFooter` property to True or False. Default value of `SfPicker.ShowFooter` property is False.
 
 {% tabs %}
 {% highlight xaml %}
@@ -205,9 +205,9 @@ picker.ShowFooter = true;
 {% endhighlight %}
 {% endtabs %}
 
-## Set Custom Footer
+## Set custom footer
 
-SfPicker allows providing custom view to Footer of SfPicker by setting `SfPicker.FooterView` property. Default value of `SfPicker.FooterView` property is Null.
+picker allows providing custom view to its footer by setting `SfPicker.FooterView` property. Default value of `SfPicker.FooterView` property is Null.
 
 {% tabs %}
 {% highlight xaml %}
@@ -241,9 +241,9 @@ picker.FooterView = layout;
 {% endhighlight %}
 {% endtabs %}
 
-## Perform validation with default validation Button
+## Perform validation with default validation button
 
-SfPicker allows performing validation based on OK or Cancel button by hooking `SfPicker.OkButtonClicked` and `SfPicker.CancelButtonClicked`. In this event from the `SelectionChangedEvent` Argument current selected items can be obtained.
+Picker allows performing validation based on OK or Cancel button by hooking `SfPicker.OkButtonClicked` and `SfPicker.CancelButtonClicked`. In this event, from the `SelectionChangedEvent` argument, current selected items can be obtained.
 
 
 {% tabs %}

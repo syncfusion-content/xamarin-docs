@@ -1,4 +1,4 @@
-                                                                                                                                    ---
+---
 layout: post
 title: Getting started | SfListView | Xamarin | Syncfusion
 description: Getting started with SfListView.

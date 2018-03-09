@@ -15,7 +15,7 @@ You can use pop-up layout as model window by using the built-in Close icon and t
 
 Modal does not require any action to open. It opens in the same window and gives callbacks when closing or opening the window.
 
-Refer to the following code example in which the pop-up will close only if you click Cancel button, Ok button or Close icon.
+Refer to the following code example in which the pop-up will close only if you click Cancel button, OK button or Close icon.
 
 ## Displaying pop-up when the SfPopupLayout is set as root view 
 

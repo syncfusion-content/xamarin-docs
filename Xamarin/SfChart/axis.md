@@ -618,39 +618,25 @@ By default, all the series are plotted based on [`PrimaryAxis`](https://help.syn
 
 <chart:SfChart.Series>
 
-    <chart:ColumnSeries Label="2014" ItemsSource="{Binding Demands}" XBindingPath="Demand" YBindingPath="Year2014" >
+    <chart:ColumnSeries Label="Revenue" ItemsSource="{Binding Demands}" XBindingPath="XValue" YBindingPath="YValue" />
 
-        <chart:ColumnSeries.XAxis>
+    <chart:LineSeries Label="Customers" ItemsSource="{Binding Demands}" XBindingPath="XValue" YBindingPath="YValue" >
 
-            <chart:NumericalAxis>
+        <chart:LineSeries.YAxis>
+
+            <chart:NumericalAxis OpposedPosition="true" >
 
                 <chart:NumericalAxis.Title>
 
-                    <chart:ChartAxisTitle Text = "Additional X Axis" />
+                    <chart:ChartAxisTitle Text = "Number of Customers" />
 
                 </chart:NumericalAxis.Title>
 
             </chart:NumericalAxis>
 
-        </chart:ColumnSeries.XAxis>
+        </chart:LineSeries.YAxis>
 
-        <chart:ColumnSeries.YAxis>
-
-            <chart:NumericalAxis>
-
-                <chart:NumericalAxis.Title>
-
-                    <chart:ChartAxisTitle Text = "Additional Y Axis" />
-
-                </chart:NumericalAxis.Title>
-
-            </chart:NumericalAxis>
-
-        </chart:ColumnSeries.YAxis>
-
-    </chart:ColumnSeries>
-
-    <chart:LineSeries Label="2015" ItemsSource="{Binding Demands}" XBindingPath="Demand" YBindingPath="Year2015" />
+     </chart:LineSeries>
 
 </chart:SfChart.Series>
 
@@ -662,23 +648,11 @@ ColumnSeries series = new ColumnSeries();
 
 series.ItemsSource = model.Demands;
 
-series.XBindingPath = "Demand";
+series.XBindingPath = "XValue";
 
-series.YBindingPath = "Year2014";
+series.YBindingPath = "YValue";
 
-series.Label = "2014";
-
-NumericalAxis xAxis = new NumericalAxis();
-
-xAxis.Title.Text = "Additional X Axis";
-
-series.XAxis = xAxis;
-
-NumericalAxis yAxis = new NumericalAxis();
-
-yAxis.Title.Text = "Additional Y Axis";
-
-series.YAxis = yAxis;
+series.Label = "Revenue";
 
 chart.Series.Add(series);
 
@@ -686,11 +660,19 @@ LineSeries lineSeries = new LineSeries();
 
 lineSeries.ItemsSource = model.Demands;
 
-lineSeries.XBindingPath = "Demand";
+lineSeries.XBindingPath = "XValue";
 
-lineSeries.YBindingPath = "Year2015";
+lineSeries.YBindingPath = "YValue";
 
-lineSeries.Label = "2015";
+lineSeries.Label = "Customers";
+
+NumericalAxis yAxis = new NumericalAxis();
+
+yAxis.OpposedPosition = true;
+
+yAxis.Title.Text = "Number of Customers";
+
+lineSeries.YAxis = yAxis;
 
 chart.Series.Add(lineSeries);
 
@@ -699,8 +681,6 @@ chart.Series.Add(lineSeries);
 {% endtabs %}
 
 ![](axis_images/MultipleAxes.png)
-
-The first series is plotting based on additional X & Y axis and second series (or remaining series) is plotting against the primary and secondary axis.
 
 ## Common axis features
 

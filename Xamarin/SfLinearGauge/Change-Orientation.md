@@ -8,25 +8,40 @@ documentation: ug
 ---
 # Change Orientation
 
-SfLinearGauge provides support for the vertical orientation. By default SfLinearGauge renders with horizontal orientation. You can the change the orientation by using the `Orientation` property. Orientation can be categorized as follows.
-
-* Horizontal
-* Vertical
+[`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfLinearGauge.html) supports horizontal and vertical orientations. By default, [`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfLinearGauge.html) is rendered with horizontal orientation. You can the change the orientation by using the [`Orientation`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfLinearGauge~OrientationProperty.html) property. 
 
 {% tabs %}
 
 {% highlight xaml %}
 
-	<gauge:SfLinearGauge x:Name="linearGauge" Orientation="OrientationVertical" />
+	 <gauge:SfLinearGauge Orientation="OrientationVertical">
+       <gauge:SfLinearGauge.Scales>
+                <gauge:LinearScale Interval="10" ScaleBarLength="350" ScaleBarColor="#e0e0e0" LabelColor="#424242">
+                 <gauge:LinearScale.MajorTickSettings>
+                      <gauge:LinearTickSettings Thickness="1" />
+                    </gauge:LinearScale.MajorTickSettings>
+             </gauge:LinearScale>
+        </gauge:SfLinearGauge.Scales>
+       </gauge:SfLinearGauge>
+
 	
 {% endhighlight %}
 
 {% highlight C# %}
 
-  linearGauge.Orientation = Syncfusion.SfGauge.XForms.Orientation.OrientationVertical;
+            SfLinearGauge linearGauge = new SfLinearGauge();
+            linearGauge.Orientation = Orientation.OrientationVertical;
+            LinearScale linearScale = new LinearScale();
+            linearScale.Interval = 10;
+            linearScale.ScaleBarLength = 350;
+            linearScale.MajorTickSettings.Thickness = 1;
+            linearScale.ScaleBarColor = Color.FromHex("#e0e0e0");
+            linearScale.LabelColor = Color.FromHex("#424242");
+            linearGauge.Scales.Add(linearScale);
+
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/Overview.png)
+![](change-orientation_images/orientaion.png)

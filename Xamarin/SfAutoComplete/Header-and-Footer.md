@@ -12,62 +12,20 @@ We can provide Header and Footer view in the suggestion list in SfAutoComplete b
 
 ## Header Content
 
-We can provide Header Content at the top of the AutoComplete's Suggestion box. `DropDownHeaderView` property is used to set the content of the header. The following code example illustrate how to set Header content in SfAutoComplete.
-
-{% tabs %}
-
-{% highlight xaml %}
-
- <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-    <auto:SfAutoComplete HeightRequest="40" x:Name="autoComplete"> 
-             <auto:SfAutoComplete.DropDownHeaderView>
-                <StackLayout BackgroundColor="#f0f0f0" >
-                 <Label  x:Name="label2" FontSize="20" VerticalTextAlignment="Center" HorizontalOptions="Center" VerticalOptions="Center" TextColor="#006bcd"   />
-                </StackLayout>
-                </auto:SfAutoComplete.DropDownHeaderView>
-				 </auto:SfAutoComplete>
- </StackLayout>                  
-
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-        List<String> countryNames = new List<String>();
-            countryNames.Add("Uganda");
-            countryNames.Add("Ukraine");
-            countryNames.Add("United Arab Emirates");
-            countryNames.Add("United Kingdom");
-            countryNames.Add("United States");
-            autoComplete.DataSource = countryNames;
-            autoComplete.ShowDropDownHeaderView = true;
-		    autoComplete.DropDownHeaderViewHeight = 50;
-            autoComplete.ValueChanged += (object sender, Syncfusion.SfAutoComplete.XForms.ValueChangedEventArgs e) =>
-            {
-                label2.Text = "Search for " + e.Value;
-            }
-
-{% endhighlight %}
-
-{% endtabs %}
-
-
-## Header Height
-
-The height of the Header in the SfAutoComplete can be adjusted by the property `DropDownHeaderViewHeight`.
+We can provide Header Content at the top of the AutoComplete's Suggestion box. `DropDownHeaderView` property is used to set the content of the header. The height of the Header in the SfAutoComplete can be adjusted by the property `DropDownHeaderViewHeight`.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-<auto:SfAutoComplete HeightRequest="40" x:Name="autoComplete"  DropDownHeaderViewHeight="50"> 
-			<auto:SfAutoComplete.DropDownHeaderView>
-			<StackLayout BackgroundColor="#f0f0f0" >
-				<Label  x:Name="label2" FontSize="20" VerticalTextAlignment="Center" HorizontalOptions="Center" VerticalOptions="Center" TextColor="#006bcd" Text="Search"  />
-			</StackLayout>
-			</auto:SfAutoComplete.DropDownHeaderView>
-				</auto:SfAutoComplete>
+<auto:SfAutoComplete HeightRequest="40" x:Name="autoComplete"> 
+<auto:SfAutoComplete.DropDownHeaderView>
+<StackLayout BackgroundColor="#f0f0f0" >
+<Label  x:Name="label2" FontSize="20" VerticalTextAlignment="Center" HorizontalOptions="Center" VerticalOptions="Center" TextColor="#006bcd"   />
+</StackLayout>
+</auto:SfAutoComplete.DropDownHeaderView>
+</auto:SfAutoComplete>
 </StackLayout>                  
 
 
@@ -75,14 +33,20 @@ The height of the Header in the SfAutoComplete can be adjusted by the property `
 
 {% highlight c# %}
 
-        List<String> countryNames = new List<String>();
-            countryNames.Add("Uganda");
-            countryNames.Add("Ukraine");
-            countryNames.Add("United Arab Emirates");
-            countryNames.Add("United Kingdom");
-            countryNames.Add("United States");
-            autoComplete.DataSource = countryNames;
-            autoComplete.ShowDropDownHeaderView = true;
+List<String> countryNames = new List<String>();
+countryNames.Add("Uganda");
+countryNames.Add("Ukraine");
+countryNames.Add("United Arab Emirates");
+countryNames.Add("United Kingdom");
+countryNames.Add("United States");
+autoComplete.DataSource = countryNames;
+autoComplete.ShowDropDownHeaderView = true;
+//Set the height of the Header View
+autoComplete.DropDownHeaderViewHeight = 50;
+autoComplete.ValueChanged += (object sender, Syncfusion.SfAutoComplete.XForms.ValueChangedEventArgs e) =>
+{
+label2.Text = "Search for " + e.Value;
+}
 
 {% endhighlight %}
 
@@ -92,7 +56,9 @@ The height of the Header in the SfAutoComplete can be adjusted by the property `
 
 ## Footer Content
 
-We can provide Footer Content at the bottom of the AutoComplete's Suggestion box. `DropDownFooterView` property is used to set the content of the footer. The following code example illustrate how to set Footer content in SfAutoComplete.
+We can provide Footer Content at the bottom of the AutoComplete's Suggestion box. `DropDownFooterView` property is used to set the content of the footer.The height of the Header in the SfAutoComplete can be adjusted by the property `DropDownFooterViewHeight`.
+
+The following code example illustrate how to set Footer content in SfAutoComplete.
 
 {% tabs %}
 
@@ -100,13 +66,13 @@ We can provide Footer Content at the bottom of the AutoComplete's Suggestion box
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
 <auto:SfAutoComplete HeightRequest="40" x:Name="autoComplete"> 
-			<auto:SfAutoComplete.DropDownFooterView>
-			<StackLayout BackgroundColor="#f0f0f0" >
-				<Label Text="Add New" BackgroundColor="#f0f0f0" TextColor="#006bcd" VerticalTextAlignment="Center" VerticalOptions="Center" HorizontalTextAlignment="Center"
-				FontSize="20"/>
-			</StackLayout>
-			</auto:SfAutoComplete.DropDownFooterView>
-				</auto:SfAutoComplete>
+<auto:SfAutoComplete.DropDownFooterView>
+<StackLayout BackgroundColor="#f0f0f0" >
+<Label Text="Add New" BackgroundColor="#f0f0f0" TextColor="#006bcd" VerticalTextAlignment="Center" VerticalOptions="Center" HorizontalTextAlignment="Center"
+FontSize="20"/>
+</StackLayout>
+</auto:SfAutoComplete.DropDownFooterView>
+</auto:SfAutoComplete>
 </StackLayout>                  
 
 
@@ -114,58 +80,20 @@ We can provide Footer Content at the bottom of the AutoComplete's Suggestion box
 
 {% highlight c# %}
 
-        List<String> countryNames = new List<String>();
-            countryNames.Add("Uganda");
-            countryNames.Add("Ukraine");
-            countryNames.Add("United Arab Emirates");
-            countryNames.Add("United Kingdom");
-            countryNames.Add("United States");
-            autoComplete.DataSource = countryNames;
-            autoComplete.ShowDropDownFooterView = true;
-		    autoComplete.DropDownFooterViewHeight = 50;
+List<String> countryNames = new List<String>();
+countryNames.Add("Uganda");
+countryNames.Add("Ukraine");
+countryNames.Add("United Arab Emirates");
+countryNames.Add("United Kingdom");
+countryNames.Add("United States");
+autoComplete.DataSource = countryNames;
+autoComplete.ShowDropDownFooterView = true;
+//Set the height of the Footer View
+autoComplete.DropDownFooterViewHeight = 50;
 
 {% endhighlight %}
 
 {% endtabs %}
-
-
-## Footer Height
-
-The height of the Header in the SfAutoComplete can be adjusted by the property `DropDownFooterViewHeight`.
-
-{% tabs %}
-
-{% highlight xaml %}
-
- <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-    <auto:SfAutoComplete HeightRequest="40" x:Name="autoComplete"  DropDownFooterViewHeight="50"> 
-             <auto:SfAutoComplete.DropDownFooterView>
-                <StackLayout BackgroundColor="#f0f0f0" >
-                 <Label  x:Name="label2" FontSize="20" VerticalTextAlignment="Center" HorizontalOptions="Center" VerticalOptions="Center" TextColor="#006bcd" Text="Add New"  />
-                </StackLayout>
-                </auto:SfAutoComplete.DropDownFooterView>
-				 </auto:SfAutoComplete>
- </StackLayout>                  
-
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-        List<String> countryNames = new List<String>();
-            countryNames.Add("Uganda");
-            countryNames.Add("Ukraine");
-            countryNames.Add("United Arab Emirates");
-            countryNames.Add("United Kingdom");
-            countryNames.Add("United States");
-            autoComplete.DataSource = countryNames;
-            autoComplete.ShowDropDownFooterView = true;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-
 
 ![](images/Header-and-Footer/Footer.png)
 

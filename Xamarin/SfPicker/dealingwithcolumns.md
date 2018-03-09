@@ -9,17 +9,17 @@ documentation: ug
 
 # Dealing with Columns
 
-This section explains about the customization of SfPicker Columns
+This section explains about the customization of picker columns
 
-## Adjust Column Width
+## Adjust column width
 
-SfPicker allows user to adjust the column width by hooking `SfPicker.OnColumnLoaded` event and then check the column using `ColumnLoadedEventArgs.Column` property and then adjust width of column by setting `ColumnLoadedEventArgs.ColumnWidth` property.
+Picker allows user to adjust the column width by hooking `SfPicker.OnColumnLoaded` event, and check the column by using the `ColumnLoadedEventArgs.Column` property, and then adjust width of column by setting the `ColumnLoadedEventArgs.ColumnWidth` property.
 
-We have prepared below code snippets to demonstrated DateTimePicker sample using `OnColumnLoaded` event.
+The following code snippets demonstrate the DateTimePicker sample by using `OnColumnLoaded` event.
 
 *MainPage*
 
-Column width of the each and every column can be adjusted by the use of OnColumnLoaded event in SfPicker which is implemented in the below code.
+Column width of the each column can be adjusted by using the OnColumnLoaded event in picker. That is implemented in the following code.
 
 {% tabs %}
 {% highlight xaml %}
@@ -183,20 +183,20 @@ e.ColumnWidth = 130;
 
 {% endtabs %}
 
-We have attached sample for reference. Please download the below sample.
+You can download the sample for reference from the following link.
 
 Sample link: [DateTimePicker](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DateTimePicker589676073)
 
-## Add Caption
+## Add caption
 
-SfPicker allows user to add header for each column by setting `SfPicker.ColumnHeaderText` property and enabling `SfPicker.ShowColumnHeader` property to True.
+picker allows users to add header for each column by setting the `SfPicker.ColumnHeaderText` property and enabling the `SfPicker.ShowColumnHeader` property to True.
 
-`ColumnHeaderText` property is of object type and user can assign string or collection. 
-If a string type is assigned in `SfPicker.ColumnHeaderText`, that string will be updated in all the column of SfPicker.
+The `ColumnHeaderText` property is object type and user can assign string or collection. 
+If a string type is assigned in `SfPicker.ColumnHeaderText`, that string will be updated in all the column of picker.
 
-To assign the collection in `SfPicker.ColumnHeaderText`, SfPicker column header update based on index with value on collection.
+To assign the collection in `SfPicker.ColumnHeaderText`, picker column header should be updated based on index with value or collection.
 
-The below code illustrate assign the ColumnHeaderText for SfPicker
+The following code illustrates assigning the ColumnHeaderText for picker
 
 {% tabs %}
 {% highlight c# %}
@@ -324,13 +324,13 @@ ShowColumnHeader="True" />
 {% endhighlight %}
 {% endtabs %}
 
-## Caption Customization
+## Caption customization
 
-This section explains about the column header Background, TextColor and Fonts customization of SfPicker.
+This section explains about the column header's Background, TextColor, and Fonts customization of picker.
 
 ### Background
 
-Column header background color can be customized by setting `SfPicker. ColumnHeaderBackgroundColor` property of SfPicker.
+Column header's background color can be customized by setting the `SfPicker. ColumnHeaderBackgroundColor` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -354,9 +354,9 @@ picker.ColumnHeaderBackgroundColor = Color.SkyBlue;
 {% endhighlight %}
 {% endtabs %}
 
-### Text Color 
+### Text-Color 
 
-Column header text color can be customized by setting `SfPicker.ColumnHeaderTextColor` property of SfPicker.
+Column header's text color can be customized by setting the `SfPicker.ColumnHeaderTextColor` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -382,11 +382,11 @@ picker.ColumnHeaderTextColor = Color.Red;
 
 ### Font 
 
-This section explains about the customization of Column Header text of Font.
+This section explains about the customization of column header's text or Font.
 
 #### 	FontFamily
 
-Column Header text FontFamily can be customized by setting `SfPicker.ColumnHeaderFontFamily` property of SfPicker.
+Column header's text FontFamily can be customized by setting the `SfPicker.ColumnHeaderFontFamily` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -412,7 +412,7 @@ picker.ColumnHeaderFontFamily = "Courier New";
 
 #### 	FontSize
 
-Column header text FontSize can be customized  by setting `SfPicker.ColumnHeaderFontSize` property of SfPicker.
+Column header's text FontSize can be customized  by setting the `SfPicker.ColumnHeaderFontSize` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -438,7 +438,7 @@ picker.ColumnHeaderFontSize = 16;
 
 #### 	FontAttribute
 
- Column header text FontAttribute can be customized by setting `SfPicker.ColumnHeaderFontAttribute` property of SfPicker.
+ Column header's text FontAttribute can be customized by setting the `SfPicker.ColumnHeaderFontAttribute` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -464,9 +464,9 @@ picker.ColumnHeaderFontAttribute = FontAttributes.Bold;
 
 ## Cascading
 
-SfPicker allow user to get selection change intimation by setting `SfPicker.SelectionChanged` event 
+Picker allows users to get selection change intimation by setting the `SfPicker.SelectionChanged` event. 
 
-We have prepared cascading sample for change the SfPicker background color when change the Selection of SfPicker
+Refer the following code example to prepare cascading sample for change the picker's background color when change the selection of picker.
 
 {% tabs %}
 {% highlight xaml %}
@@ -617,10 +617,10 @@ return colors[color.ToString()];
 
 {% endtabs %}
 
-Screen shot for the above code
+The following screenshot illustrates the output of above code example.
 
 ![](images/casecade.png)
 
-We have attached sample for reference. please download the sample from the below link.
+You can download the sample for reference from the following link.
 
 Sample link:[Cascading](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Cascading-527874888)

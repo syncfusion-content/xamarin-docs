@@ -34,6 +34,8 @@ N> Reordering changes are made only in [SfDataGrid.View](http://help.syncfusion.
 
 N> Now, you can drag and drop the grid rows using mouse in UWP (Desktop) platform.
 
+N> Currently, row drag and drop cannot be used if different rows are set with different heights using the [QueryRowHeight](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~QueryRowHeight_EV.html) event. 
+
 ## Row drag and drop template
 
 SfDataGrid allows you to load a desired content when performing row drag and drop operation using the [SfDataGrid.RowDragDropTemplate](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~RowDragDropTemplate.html). The template can be defined either in code or XAML. 
@@ -139,7 +141,6 @@ public class RowTemplate : Grid
 
 ![](SfDataGrid_images/RowDragAndDrop.png)
 
-N> Currently RowDragAndDrop cannot be used if different rows are set with different heights using the [QueryRowHeight](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~QueryRowHeight_EV.html) event. 
 
 ## Row drag and drop event
 

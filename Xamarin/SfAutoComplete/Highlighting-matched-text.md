@@ -11,33 +11,36 @@ documentation: ug
 Highlight matching characters in a suggestion list to pick an item with more clarity. There are two ways to highlight the matching text:
 
 
-* FirstOccurrence
+* First Occurrence
 
-* MultipleOccurrence
+* Multiple Occurrence
 
-## FirstOccurrence
+The text highlight can be indicated with various customizing styles by enabling the below properties. They are
+
+* HighlightedTextColor -  sets the color of the highlighted text for differentiating the highlighted characters.
+
+* HighlightTextFontAttributes - sets the FontAttributes of the highlighted text.
+
+## First Occurrence
+
+It highlights the first position of the matching characters in the suggestion list.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" TextHighlightMode="FirstOccurrence" SuggestionMode="StartsWith"/>                    
+<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" TextHighlightMode="FirstOccurrence" HighlightedTextColor="Red" HighlightTextFontAttributes="Bold" SuggestionMode="StartsWith"/>                    
 </StackLayout> 
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-List<String> countryNames = new List<String>();
-countryNames.Add("Uganda");
-countryNames.Add("Ukraine");
-countryNames.Add("United Arab Emirates");
-countryNames.Add("United Kingdom");
-countryNames.Add("United States");
 autoComplete.SuggestionMode= SuggestionMode.StartsWith;
 autoComplete.TextHighlightMode=OccurrenceMode.FirstOccurrence;
-autoComplete.DataSource = countryNames;
+autoComplete.HighlightedTextColor= Color.Red;
+autoComplete.HighlightedTextFontAttributes = FontAttributes.Bold;
 
 {% endhighlight %}
 
@@ -45,29 +48,26 @@ autoComplete.DataSource = countryNames;
 
 ![](images/Highlighting-matched-text/FirstOccurrance.png)
 
-## MultipleOccurrence
+## Multiple Occurrence
+
+It highlights the matching character that are present everywhere in the suggestion list for Contains case in SuggestionMode.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" TextHighlightMode="MultipleOccurrence" SuggestionMode="Contains"/>                    
+<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" TextHighlightMode="MultipleOccurrence" HighlightedTextColor="Red" HighlightTextFontAttributes="Bold" SuggestionMode="Contains"/>                    
 </StackLayout> 
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-List<String> countryNames = new List<String>();
-countryNames.Add("Uganda");
-countryNames.Add("Ukraine");
-countryNames.Add("United Arab Emirates");
-countryNames.Add("United Kingdom");
-countryNames.Add("United States");
 autoComplete.SuggestionMode= SuggestionMode.Contains;
 autoComplete.TextHighlightMode=OccurrenceMode.MultipleOccurrence;
-autoComplete.DataSource = countryNames;
+autoComplete.HighlightedTextColor= Color.Red;
+autoComplete.HighlightedTextFontAttributes = FontAttributes.Bold;
 
 {% endhighlight %}
 

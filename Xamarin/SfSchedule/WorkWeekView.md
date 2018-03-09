@@ -75,6 +75,68 @@ You can customize the height of the ViewHeader in `WeekView` by setting [ViewHea
 
 ![](daymodule_images/viewheaderheight_workweek.png)
 
+### ViewHeader Date Format
+We can customize the date and day format of `SfSchedule` ViewHeader by using [DateFormat](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DayLabelSettings~DateFormat.html) and [DayFormat](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DayLabelSettings~DayFormat.html) properties of `WorkWeekLabelSettings`.
+
+{% tabs %}
+{% highlight xaml %}
+
+    <schedule:SfSchedule>
+        <schedule:SfSchedule.WorkWeekViewSettings>
+            <schedule:WorkWeekViewSettings>
+                <schedule:WorkWeekViewSettings.WorkWeekLabelSettings>
+                    <schedule:WorkWeekLabelSettings DateFormat=“dd”>
+                        <schedule:WorkWeekLabelSettings.DayFormat>
+                            <OnPlatform x:TypeArguments="x:String" iOS="EEEE" Android="EEEE" WinPhone="dddd" />
+                        </schedule:WorkWeekLabelSettings.DayFormat>
+                    </schedule:WorkWeekLabelSettings>
+                </schedule:WorkWeekViewSettings.WorkWeekLabelSettings>
+            </schedule:WorkWeekViewSettings>
+        </schedule:SfSchedule.WorkWeekViewSettings>
+    </schedule:SfSchedule>
+{% endhighlight %}
+{% highlight c# %}
+schedule.ScheduleView = ScheduleView.WorkWeekView;
+//Creating new instance of WorkWeekViewSettings
+WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings();
+//Creating new instance of WorkWeekLabelSettings
+WorkWeekLabelSettings workWeekLabelSettings = new WorkWeekLabelSettings();
+//Customizing date format
+workWeekLabelSettings.DateFormat = "dd";
+workWeekLabelSettings.DayFormat = Device.OnPlatform("EEEE", "EEEE", "dddd");
+workWeekViewSettings.WorkWeekLabelSettings = workWeekLabelSettings;
+schedule.WorkWeekViewSettings = workWeekViewSettings;
+{% endhighlight %}
+{% endtabs %}
+
+![](daymodule_images/DateFormat_WorkWeek.png)
+
+### ViewHeader Tapped Event
+We can handle single tap action of ViewHeader by using [ViewHeaderTapped](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ViewHeaderTapped_EV.html) event of `SfSchedule`. This event will be triggered when the ViewHeader is Tapped. This event contains [ViewHeaderTappedEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderTappedEventArgs.html) argument which holds [DateTime](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.CellTappedEventArgs~Datetime.html) details in it.
+
+{% tabs %}
+{% highlight xaml %}
+
+    <schedule:SfSchedule x:Name="schedule"
+                         ScheduleView="WorkWeekView"
+                         ViewHeaderTapped="Handle_ViewHeaderTapped" >
+    </schedule:SfSchedule>
+{% endhighlight %}
+{% highlight c# %}
+//Creating  new instance of Schedule
+SfSchedule schedule = new SfSchedule();
+schedule.ScheduleView = ScheduleView.WorkWeekView;
+schedule.ViewHeaderTapped += Handle_ViewHeaderTapped;
+{% endhighlight %}
+{% endtabs %}
+
+{% highlight c# %}
+void Handle_ViewHeaderTapped(object sender, ViewHeaderTappedEventArgs e)
+{
+    var dateTime = e.DateTime;
+}
+{% endhighlight %}
+
 ## Change Time Interval
 You can customize the interval of timeslots in `WorkWeekView` by setting [TimeInterval](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~TimeInterval.html)  property of `SfSchedule`.
 
@@ -460,3 +522,48 @@ You can download the entire source code of this demo for Xamarin.Forms from here
 * `SfSchedule` supports two-way binding of `SelectedDate` property.
 
 ![](daymodule_images/selection_WorkWeek.png)
+
+## Custom Font
+
+We can change the appearance of Font by setting the  [DayFontFamily](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderStyle~DayFontFamilyProperty.html) and [DateFontFamily](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderStyle~DateFontFamilyProperty.html) property of [ViewHeaderStyle](https://help.syncfusion.com/xamarin/sfschedule/dayview#viewheader-appearance) property in Schedule.
+
+{% tabs %}
+{% highlight c# %}
+viewHeaderStyle.DayFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
+viewHeaderStyle.DateFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
+{% endhighlight %}
+
+{% highlight XAML %}
+<schedule:ViewHeaderStyle.DayFontFamily>
+		<OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
+</schedule:HeaderStyle.DayFontFamily>
+<schedule:ViewHeaderStyle.DateFontFamily>
+		<OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
+</schedule:HeaderStyle.DateFontFamily>
+{% endhighlight %}
+{% endtabs %} 
+
+![](daymodule_images/customfontviewheader_workweek.png)
+
+
+Following steps will explain how to configure the custom fonts.
+
+
+### Custom Font Setting in Xamarin.Forms (Android) 
+* Download the Custom Font (e.g. Lobster-Regular.ttf) 
+* Add the downloaded Custom Font to the Assets folder of the Xamarin.Forms (Android) project.
+* Then, use the Custom Font name as FontFamily.
+### Custom Font Setting in Xamarin.Forms (ios)
+* Download the Custom Font (e.g. Lobster-Regular.ttf)
+* Add the downloaded Custom Font to the Resources folder of the Xamarin.Forms (iOS) project.
+* Edit info.plist and add a key Fonts provided by application (value type should be Array). In item0 of the array enter the name of the FontFamily you added in the Resource folder. (Such as Lobster-Regular.ttf).
+* Then, directly use Custom Font name as FontFamily.
+
+>**Note**:
+ No need to mention .ttf when set the Custom Font in iOS.
+
+### Custom Font Setting in Xamarin.Forms (UWP)
+* Download the Custom Font (e.g. Lobster-Regular.ttf).
+* Add the downloaded Custom Font to the Assets folder of the Xamarin.Forms (UWP) project.
+* Then, directly use Custom Font name as FontFamily. When Setting custom font in UWP use the format (FontFamily = ” Assets/Lobster-Regular.ttf#Lobster”).
+

@@ -71,7 +71,7 @@ N> For Accumulation series like pie, doughnut, pyramid and funnel, when you sele
 
 **SelectionChanging**
 
-This event is triggered before the data point is selected. You can restrict a data point from being selected, by canceling this event, by setting [Cancel](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionChangingEventArgs~Cancel.html#) property in the event argument to true. The argument contains the following information,
+The [`SelectionChanging`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~SelectionChanging_EV.html) event is triggered before the data point is selected. You can restrict a data point from being selected, by canceling this event, by setting [Cancel](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionChangingEventArgs~Cancel.html#) property in the event argument to true. The argument contains the following information,
 
 * [`SelectedSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionEventArgs~SelectedSeries.html#) – used to get the series of selected data point.
 * [`SelectedDataPointIndex`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionEventArgs~SelectedDataPointIndex.html#) – used to get the selected data point index.
@@ -80,7 +80,7 @@ This event is triggered before the data point is selected. You can restrict a da
 
 **SelectionChanged**
 
-This event triggered after a data point is selected. The argument contains the following information,
+The [`SelectionChanged`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~SelectionChanged_EV.html) event triggered after a data point is selected. The argument contains the following information,
 
 * [`SelectedSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionEventArgs~SelectedSeries.html#) – used to get the series of selected data point.
 * [`SelectedDataPointIndex`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionEventArgs~SelectedDataPointIndex.html#) – used to get the selected data point index.

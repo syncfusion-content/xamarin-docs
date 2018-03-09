@@ -10,13 +10,13 @@ documentation: ug
 
 # Populating Items
 
-This section explains about the ways of populating items for SfPicker control
+This section explains the ways of populating items for picker control.
 
-## Binding Data Source
+## Binding data source
 
-SfPicker is bound the external data source to display the data’s. It supports any collections that’s implements the `IEnumerable` interface.
+picker control is bound to the external data source to display the data. It supports any collections that implements the `IEnumerable` interface.
 
-To bind the data source in SfPicker, set the `SfPicker.ItemsSource` property as show in below code.
+To bind the data source in picker, set the `SfPicker.ItemsSource` property as shown in the following code.
 
 {% tabs %}
 {% highlight xaml %}
@@ -66,13 +66,13 @@ picker.ItemsSource = info.Colors;
 {% endhighlight %}
 {% endtabs %}
 
-## Multi-Column Items
+## Multi-column items
 
-The SfPicker automatically populate the items as Multi-Column based on the Data Source.
+The picker automatically populates the items as Multi-column based on the data source.
 
-Collection of items can be created and assigned to a Collection and each item Collection is a column of SfPicker. 
+Collection of items can be created and assigned to a Collection, and each item Collection is a column of picker. 
 
-The following code example illustrates about to populate Month, Day and Year values in each column of SfPicker.
+The following code example illustrates how to populate Month, Day, and Year values in each column of picker.
 
 {% tabs %}
 {% highlight c# %}
@@ -186,25 +186,24 @@ ItemsSource="{Binding Dates}" />
 {% endhighlight %}
 {% endtabs %}
 
-MultiColumn sample from the following link
+You can download the multi column sample from the following link.
 
 Sample link: [MultiColumn](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MultiColumnSample798010799)
 
-Screen shot for the above code.
+The following screenshot illustrates the output of the above code.
 
 ![](images/multicolumn.png)
 
 
-## Set Items Colors and Font Attributes customization
+## Set items colors and font attributes customization
 
-In SfPicker, items text color and font both selected and unselected item of SfPicker control can be customized as shown below.  
+picker control, both items text color and font can be selected and unselected by customizing as shown in the following code.  
 
-### Selected Item Customization
+### Selected item customization
 
 ##### Text Color 
 
-Selected item text color can be customized by setting `SfPicker.SelectedItemTextColor` property of SfPicker.
-
+Selected item's text color can be customized by setting `SfPicker.SelectedItemTextColor` property.
 {% tabs %}
 {% highlight xaml %}
 
@@ -227,11 +226,11 @@ picker.SelectedItemTextColor = Color.Red;
 
 ##### Font 
 
-This section explains about the customization of Selected Item Font.
+This section explains about the customization of selected item's font.
 
 ###### 	FontFamily
 
-Selected item text FontFamily can be customized by setting `SfPicker.SelectedItemFontFamily` property of SfPicker.
+Selected item's text FontFamily can be customized by setting `SfPicker.SelectedItemFontFamily` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -255,7 +254,7 @@ picker.SelectedItemFontFamily = "Arial";
 
 ###### 	FontSize
 
-Selected item text FontSize can be customized by setting `SfPicker.SelectedItemFontSize` property of SfPicker.
+Selected item's text FontSize can be customized by setting `SfPicker.SelectedItemFontSize` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -279,7 +278,7 @@ picker.SelectedItemFontSize = 12;
 
 ###### 	FontAttribute
 
-Selected item text FontAttribute can be customized by setting `SfPicker.SelectedItemFontAttribute` property of SfPicker.
+Selected item's text FontAttribute can be customized by setting `SfPicker.SelectedItemFontAttribute` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -301,11 +300,11 @@ picker.SelectedItemFontAttribute = FontAttributes.Bold;
 {% endhighlight %}
 {% endtabs %}
 
-### UnSelected Item Customization
+### Unselected item customization
 
 ##### Text Color
 
-Unselected item text color can be customized by setting `SfPicker.UnSelectedItemTextColor` property of SfPicker.
+Unselected item's text color can be customized by setting `SfPicker.UnSelectedItemTextColor` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -329,11 +328,11 @@ picker.UnSelectedItemTextColor = Color.Gray;
 
 ##### Font
 
-This section explains about the customization of unselected items Font.
+This section explains about the customization of unselected item's font.
 
 ###### 	FontFamily
 
-Unselected item text FontFamily can be customized by setting `SfPicker.UnSelectedItemFontFamily` property of SfPicker.
+Unselected item's text FontFamily can be customized by setting `SfPicker.UnSelectedItemFontFamily` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -357,7 +356,7 @@ picker.UnSelectedItemFontFamily = "Calibri";
 
 ###### 	FontSize
 
-Unselected item text FontSize can be customized by setting `SfPicker.UnSelectedItemFontSize` property of SfPicker.
+Unselected item's text FontSize can be customized by setting `SfPicker.UnSelectedItemFontSize` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -381,7 +380,7 @@ picker.UnSelectedItemFontSize = 11;
 
 ###### 	FontAttribute
 
-Unselected item text FontAttribute can be customized by setting `SfPicker.UnSelectedItemFontAttribute` property of SfPicker.
+Unselected item's text FontAttribute can be customized by setting `SfPicker.UnSelectedItemFontAttribute` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -403,9 +402,9 @@ picker.UnSelectedItemFontAttribute = FontAttributes.Italic;
 {% endhighlight %}
 {% endtabs %}
 
-## Adding Custom View Items
+## Adding custom view to items
 
-In SfPicker, the items can be customized with custom view of each item by hooking `SfPicker.OnPickerItemLoaded` event and assign custom view in `PickerViewEventArgs.View` property to added the all the item with custom view.
+In picker control, the items can be customized with custom view of each item by hooking `SfPicker.OnPickerItemLoaded` event, and assign custom view in `PickerViewEventArgs.View` property to add the all the item with custom view.
 
 {% tabs %}
 

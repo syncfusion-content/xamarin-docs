@@ -92,7 +92,7 @@ Following screenshot shows the zoomed area,
 
 ## Zoom Mode
 
-The [`ZoomMode`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~ZoomModeProperty.html) property specifies whether chart should be allowed to scale along horizontal axis or vertical axis or along both axis. The default value of [`ZoomMode`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ZoomMode.html) is [`XY`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ZoomMode.html) (both axis).
+The [`ZoomMode`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~ZoomMode.html) property specifies whether chart should be allowed to scale along horizontal axis or vertical axis or along both axis. The default value of [`ZoomMode`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ZoomMode.html) is [`XY`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ZoomMode.html) (both axis).
 
 Following code example illustrates how to restrict the chart to be zoomed only along horizontal axis,
 
@@ -124,7 +124,7 @@ zoomPanBehavior.ZoomMode = ZoomMode.X;
 
 **ZoomStart**
 
-This event is triggered when the user starts zooming the chart through pinch gesture, and this is a cancelable event. The argument contains the following information.
+The [`ZoomStart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~ZoomStart_EV.html) event is triggered when the user starts zooming the chart through pinch gesture, and this is a cancelable event. The argument contains the following information.
 
 * [`Axis`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomEventArgs~Axis.html) – the zoom start event will be triggered for all the axis in the Chart.
 * [`CurrentZoomFactor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomEventArgs~CurrentZoomFactor.html) – used to get the new zoom factor of the corresponding axis.
@@ -133,7 +133,7 @@ This event is triggered when the user starts zooming the chart through pinch ges
 
 **ZoomDelta**
 
-This event is triggered while zooming, and this is a cancelable event. The argument contains the following information.
+The [`ZoomDelta`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~ZoomDelta_EV.html) event is triggered while zooming, and this is a cancelable event. The argument contains the following information.
 
 * [`Axis`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomEventArgs~Axis.html) – Instance of the axis whose range is changed because of zooming. This event is triggered for each axis in the chart.
 * [`PreviousZoomFactor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomDeltaEventArgs~PreviousZoomFactor.html) – used to get the previous zoom factor of the axis.
@@ -144,7 +144,7 @@ This event is triggered while zooming, and this is a cancelable event. The argum
 
 **ZoomEnd**
 
-This event is triggered after the zooming is stopped. The argument contains the following information.
+The [`ZoomEnd`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~ZoomEnd_EV.html) event is triggered after the zooming is stopped. The argument contains the following information.
 
 * [`Axis`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomEventArgs~Axis.html) – Instance of the axis whose range is changed because of zooming. This event is triggered for each axis in the chart.
 * [`CurrentZoomFactor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomEventArgs~CurrentZoomFactor.html) – the axis zoom factor after zoom.
@@ -152,26 +152,26 @@ This event is triggered after the zooming is stopped. The argument contains the 
 
 **SelectionZoomStart**
 
-This event is triggered when the user starts the box selection zooming. The argument contains the following information.
+The [`SelectionZoomStart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~SelectionZoomStart_EV.html) event is triggered when the user starts the box selection zooming. The argument contains the following information.
 
-* [`ZoomRect`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.Rect.html) – used to get the initial bounds of the box selection.
+* [`ZoomRect`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionZoomEventArgs~ZoomRect.html) – used to get the initial bounds of the box selection.
 
 **SelectionZoomDelta**
 
-This event is triggered while selecting a region to be zoomed, and this is a cancelable event. The argument contains the following information.
+The [`SelectionZoomDelta`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~SelectionZoomDelta_EV.html) event is triggered while selecting a region to be zoomed, and this is a cancelable event. The argument contains the following information.
 
-* [`ZoomRect`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.Rect.html) – contains the bounds of the currently selected region.
+* [`ZoomRect`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionZoomEventArgs~ZoomRect.html) – contains the bounds of the currently selected region.
 * [`Cancel`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionZoomDeltaEventArgs~Cancel.html) – used to set the value indicating whether the box selection zooming should be canceled.
 
 **SelectionZoomEnd**
 
-This event is triggered after selection zooming ends. The argument contains the following information.
+The [`SelectionZoomEnd`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~SelectionZoomEnd_EV.html) event is triggered after selection zooming ends. The argument contains the following information.
 
-* [`ZoomRect`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.Rect.html) – used to get the final bounds of the zoomed region.
+* [`ZoomRect`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionZoomEventArgs~ZoomRect.html) – used to get the final bounds of the zoomed region.
 
 **Scroll**
 
-This event is triggered while panning, and this is a cancelable event. The argument contains the following information.
+The [`Scroll`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~Scroll_EV.html) event is triggered while panning, and this is a cancelable event. The argument contains the following information.
 
 * [`Axis`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartScrollEventArgs~Axis.html) – Instance of the axis whose range is changed while panning. This event is triggered for each axis in the chart.
 * [`ZoomPosition`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartScrollEventArgs~ZoomPosition.html) – the current zoom position of the axis.
@@ -179,7 +179,7 @@ This event is triggered while panning, and this is a cancelable event. The argum
 
 **ResetZoom**
 
-This event is triggered after the chart is reset on double tap. The argument contains the following information.
+The [`ResetZoom`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~ResetZoom_EV.html) event is triggered after the chart is reset on double tap. The argument contains the following information.
 
 * [`Axis`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartResetZoomEventArgs~Axis.html) – Instance of the axis whose range is changed because of this event. This event is triggered for each axis in the chart.
 * [`PreviousZoomFactor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartResetZoomEventArgs~PreviousZoomFactor.html) – used to get the previous zoom factor.
@@ -217,7 +217,7 @@ zoomPan.ZoomOut();
 
 **Zoom(factor)**
 
-This method is used to change the zoom level by using zoom factor.
+[`Zoom(factor)`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~Zoom(Single).html) method is used to change the zoom level by using zoom factor.
 
 {% highlight c# %}
 
@@ -229,7 +229,7 @@ zoomPan.Zoom(0.5f);
 
 **Zoom(Rect)**
 
-This method is used to zoom the chart for a given rectangle value.
+[`Zoom(Rect)`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~Zoom(Rect).html) method is used to zoom the chart for a given rectangle value.
 
 {% highlight c# %}
 
@@ -241,7 +241,7 @@ zoomPan.Zoom(new Rect(10, 10, 200, 350));
 
 **Zoom(chartAxis, cumulativeLevel, origin)**
 
-This method is used to change the zoom level of given axis to the specified level and origin.
+[`Zoom(chartAxis, cumulativeLevel, origin)`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~Zoom(ChartAxis,Single,Single).html) method is used to change the zoom level of given axis to the specified level and origin.
 
 {% highlight c# %}
 
@@ -255,7 +255,7 @@ zoomPan.Zoom(axis, 0.5f, 0.5f);
 
 **ZoomByRange(chartAxis, start, end)**
 
-This method is used to zoom the given axis to the given range.
+[`ZoomByRange(chartAxis, start, end)`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~ZoomByRange(ChartAxis,Double,Double).html) method is used to zoom the given axis to the given range.
 
 {% highlight c# %}
 
@@ -267,7 +267,7 @@ zoomPan.ZoomByRange(axis, 20, 25);
 
 **ZoomByRange(dateTimeAxis, start, end)**
 
-This method is used to zoom the given axis to the given date time range.
+[`ZoomByRange(dateTimeAxis, start, end)`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~ZoomByRange(DateTimeAxis,DateTime,DateTime).html) method is used to zoom the given axis to the given date time range.
 
 {% highlight c# %}
 

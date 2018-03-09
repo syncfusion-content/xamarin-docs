@@ -518,7 +518,7 @@ schedule.OnAppointmentLoadedEvent += Schedule_OnAppointmentLoadedEvent;
 
 private void Schedule_OnAppointmentLoadedEvent(object sender, AppointmentLoadedEventArgs args)
 {
-	if(args.appointment == null  && (args.appointment as Meeting) == null)
+	if(args.appointment == null  || (args.appointment as Meeting) == null)
 		return;
 	if ((args.appointment as Meeting).IsAllDay)
 	{

@@ -489,19 +489,19 @@ schedule.OnAppointmentLoadedEvent += Schedule_OnAppointmentLoadedEvent;
 
 private void Schedule_OnAppointmentLoadedEvent(object sender, AppointmentLoadedEventArgs args)
 {
-if (args.appointment != null && (args.appointment as Meeting).IsAllDay == true && args.appointment as Meeting != null)
+	if (args.appointment != null && (args.appointment as Meeting) != null && (args.appointment as Meeting).IsAllDay == true )
 	{
-	args.appointmentStyle.BorderColor = Color.Red;
-	args.appointmentStyle.TextColor  = Color.White
-	args.appointmentStyle.BorderCornerRadius = 12;
-	args.appointmentStyle.BorderWidth = 10;
+		args.appointmentStyle.BorderColor = Color.Red;
+		args.appointmentStyle.TextColor  = Color.White
+		args.appointmentStyle.BorderCornerRadius = 12;
+		args.appointmentStyle.BorderWidth = 10;
 	}
-else 
+	else 
 	{
-	args.appointmentStyle.BorderColor = Color.Blue;
-	args.appointmentStyle.TextColor = Color.Red;
-	args.appointmentStyle.BorderCornerRadius = 12;
-	args.appointmentStyle.BorderWidth = 10;
+		args.appointmentStyle.BorderColor = Color.Blue;
+		args.appointmentStyle.TextColor = Color.Red;
+		args.appointmentStyle.BorderCornerRadius = 12;
+		args.appointmentStyle.BorderWidth = 10;
 	}
 }
 {% endhighlight %}
@@ -518,29 +518,30 @@ schedule.OnAppointmentLoadedEvent += Schedule_OnAppointmentLoadedEvent;
 
 private void Schedule_OnAppointmentLoadedEvent(object sender, AppointmentLoadedEventArgs args)
 {
-if ( args.appointment != null && (args.appointment as Meeting).IsAllDay == true && args.appointment as Meeting != null )
-{
-	Label label = new Label();
-	label.BackgroundColor = (args.appointment as Meeting).Color;
-	label.Text = (args.appointment as Meeting).EventName;
-	args.view = label;
+	if(args.appointment != null  && (args.appointment as Meeting) != null)
+		return;
+	if ((args.appointment as Meeting).IsAllDay)
+	{
+		Label label = new Label();
+		label.BackgroundColor = (args.appointment as Meeting).Color;
+		label.Text = (args.appointment as Meeting).EventName;
+		args.view = label;
+	}
+	else if ((args.appointment as Meeting).EventName == "Retrospective" )
+	{
+		Button button = new Button();
+		button.Image = "Meeting.png";
+		button.BackgroundColor = (args.appointment as Meeting).EventName;
+		args.view = button;
+	}
+	else 
+	{
+		Button button = new Button();
+		button.Image = "Cake.png";
+		button.BackgroundColor = (args.appointment as Meeting).EventName;
+		args.view = button;
+	}
 }
-else if ( args.appointment != null && (args.appointment as Meeting).EventName == "Retrospective" && args.appointment as Meeting != null)
-{
-	Button button = new Button();
-	button.Image = "Meeting.png";
-	button.BackgroundColor = (args.appointment as Meeting).EventName;
-	args.view = button;
-}
-else 
-{
-	Button button = new Button();
-	button.Image = "Cake.png";
-	button.BackgroundColor = (args.appointment as Meeting).EventName;
-	args.view = button;
-}
-}
-
 {% endhighlight %}
 
 ![](PopulatingAppointments_images/appointmentstyle_customview.png)

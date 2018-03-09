@@ -102,14 +102,14 @@ set { employeeCollection = value; }
 public EmployeeViewModel()
 {
 employeeCollection = new ObservableCollection<Employee>();
-employeeCollection.Add(new Employee() { Image = "a0.png", Name = "John" });
-employeeCollection.Add(new Employee() { Image = "a1.png", Name = "James" });
-employeeCollection.Add(new Employee() { Image = "a2.png", Name = "Jacob" });
-employeeCollection.Add(new Employee() { Image = "a3.png", Name = "Joy" });
-employeeCollection.Add(new Employee() { Image = "a4.png", Name = "Justin" });
-employeeCollection.Add(new Employee() { Image = "a5.png", Name = "Jerome" });
-employeeCollection.Add(new Employee() { Image = "b0.png", Name = "Jessica" });
-employeeCollection.Add(new Employee() { Image = "b1.png", Name = "Victoria" });
+employeeCollection.Add(new Employee() { Image = "John.png", Name = "John" });
+employeeCollection.Add(new Employee() { Image = "James.png", Name = "James" });
+employeeCollection.Add(new Employee() { Image = "Jacob.png", Name = "Jacob" });
+employeeCollection.Add(new Employee() { Image = "Joy.png", Name = "Joy" });
+employeeCollection.Add(new Employee() { Image = "Justin.png", Name = "Justin" });
+employeeCollection.Add(new Employee() { Image = "Jerome.png", Name = "Jerome" });
+employeeCollection.Add(new Employee() { Image = "Jessica.png", Name = "Jessica" });
+employeeCollection.Add(new Employee() { Image = "Victoria.png", Name = "Victoria" });
 
 }
 
@@ -197,13 +197,13 @@ Customization can be done for Token. There are various ways to customize the tok
 
 TokenSettings token = new TokenSettings();
 token.FontSize = 16;
-token.BackgroundColor = Color.FromHex("#d3d3d3");
+token.BackgroundColor = Color.FromHex("#f5ffbe");
 token.TextColor = Color.Red;
 token.SelectedBackgroundColor = Color.FromHex("#ffffe0");
 token.DeleteButtonColor = Color.Brown;
 token.FontFamily= "Times New Roman";
 token.IsCloseButtonVisible = true;
-token.CornerRadius = 3;
+token.CornerRadius = 15;
 autoComplete.TokenSettings = token;
  
 {% endhighlight %}

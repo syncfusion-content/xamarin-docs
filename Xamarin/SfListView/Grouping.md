@@ -735,8 +735,8 @@ N> For Vertical orientation, the group header size is considered as height and f
 
 ### Checkbox in group header
 
-SfListView allows to add checkbox in GroupHeader which can be moved to `Selected`state when all items in list selected , `NotSelected` state when all items are deselected and `Intermediate` state when any one or less then total items count gets selected.
-In GroupHeaderTemplate , add converter to image with passing ConverterParameter as listview thus changes state of GroupHeaderTemplate and listview refreshes both RefreshGroupHeader by clearing `BindingContext` of listviewItem and GroupHeaderItem and view .You
+SfListView allows to add checkbox in GroupHeader which can be moved to `Selected` state when all items in list selected , `NotSelected` state when all items are deselected and `Intermediate` state when any one or less then total items count gets selected.
+In GroupHeaderTemplate , add converter to image with passing ConverterParameter as `listview` thus changes state of GroupHeaderTemplate and listview refreshes both RefreshGroupHeader by clearing `BindingContext` of listviewItem and GroupHeaderItem and view .You
 download entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomSelection-1488987005)
 
 {% highlight xaml %}
@@ -774,7 +774,7 @@ public object Convert(object value, Type targetType, object parameter, CultureIn
                 return value;
 
             GroupResult groupResult = value as GroupResult;
-            SfListView listview = parameter as SfListView;
+            SfListView list = parameter as SfListView;
 
             var items = new List<MusicInfo>(groupResult.Items.ToList<MusicInfo>());
 
@@ -784,7 +784,7 @@ public object Convert(object value, Type targetType, object parameter, CultureIn
                 {
                     var item = items[i];
                     (item as MusicInfo).IsSelected = false;
-                    listview.SelectedItems.Remove(item);
+                    list.SelectedItems.Remove(item);
                 }
                 return ImageSource.FromResource("CustomSelection.Images.NotSelected.png");
 
@@ -796,7 +796,7 @@ public object Convert(object value, Type targetType, object parameter, CultureIn
                 {
                     var item = items[i];
                     (item as MusicInfo).IsSelected = true;
-                    listview.SelectedItems.Add(item);
+                    list.SelectedItems.Add(item);
                 }
 
                 return ImageSource.FromResource("CustomSelection.Images.Selected.png");

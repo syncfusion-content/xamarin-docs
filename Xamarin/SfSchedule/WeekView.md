@@ -29,12 +29,8 @@ You can customize the default appearance of view header in [WeekView](https://he
 			viewHeaderStyle.BackgroundColor = Color.FromHex("#009688");
 			viewHeaderStyle.DayTextColor = Color.FromHex("#FFFFFF");
 			viewHeaderStyle.DateTextColor = Color.FromHex("#FFFFFF");
-			viewHeaderStyle.DayFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
-			viewHeaderStyle.DateFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
-			viewHeaderStyle.DayFontSize = 15;
-			viewHeaderStyle.DateFontSize = 15;
-			viewHeaderStyle.DayFontAttributes = FontAttributes.Bold;
-			viewHeaderStyle.DateFontAttributes = FontAttributes.Bold;
+			viewHeaderStyle.DayTextStyle = Font.OfSize("Arial", 15);
+			viewHeaderStyle.DateTextStyle = Font.OfSize("Arial", 15);
 			schedule.ViewHeaderStyle = viewHeaderStyle;
 			
 {% endhighlight %}
@@ -47,16 +43,8 @@ You can customize the default appearance of view header in [WeekView](https://he
              BackgroundColor="#009688" 
              DayTextColor="#FFFFFF" 
              DateTextColor="#FFFFFF" 
-             DayFontSize="15"
-			 DateFontSize="15"
-			 DayFontAttributes="Bold"
-			 DateFontAttributes="Bold">
-	     <schedule:ViewHeaderStyle.DayFontFamily>
-                 <OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
-         </schedule:ViewHeaderStyle.DayFontFamily>
-		 <schedule:ViewHeaderStyle.DateFontFamily>
-                 <OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
-         </schedule:ViewHeaderStyle.DateFontFamily>
+	         DayTextStyle="Arial,15" 
+             DateTextStyle="Arial,15">
         </schedule:ViewHeaderStyle>
     </schedule:SfSchedule.ViewHeaderStyle>
 </schedule:SfSchedule> 
@@ -541,4 +529,49 @@ You can download the entire source code of this demo for Xamarin.Forms from here
 
 ## Custom Font
 
-For Configuring custom font, please refer [here](https://help.syncfusion.com/xamarin/sfschedule/dayview#custom font)
+We can change the appearance of Font by setting the  [DayFontFamily](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderStyle~DayFontFamilyProperty.html) and [DateFontFamily](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderStyle~DateFontFamilyProperty.html) property of [ViewHeaderStyle](https://help.syncfusion.com/xamarin/sfschedule/dayview#viewheader-appearance) property in Schedule.
+
+{% tabs %}
+
+{% highlight c# %}
+
+			viewHeaderStyle.DayFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
+			viewHeaderStyle.DateFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
+			
+{% endhighlight %}
+
+{% highlight XAML %}
+
+	     <schedule:ViewHeaderStyle.DayFontFamily>
+                 <OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
+         </schedule:ViewHeaderStyle.DayFontFamily>
+		 <schedule:ViewHeaderStyle.DateFontFamily>
+                 <OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
+         </schedule:ViewHeaderStyle.DateFontFamily>
+
+{% endhighlight %}
+{% endtabs %}
+
+![](daymodule_images/customfontviewheader_week.png)
+
+
+Following steps will explain how to configure the custom fonts.
+
+### Custom Font Setting in Xamarin.Forms (Android) 
+* Download the Custom Font (e.g. Lobster-Regular.ttf) 
+* Add the downloaded Custom Font to the Assets folder of the Xamarin.Forms (Android) project.
+* Then, use the Custom Font name as FontFamily.
+### Custom Font Setting in Xamarin.Forms (ios)
+* Download the Custom Font (e.g. Lobster-Regular.ttf)
+* Add the downloaded Custom Font to the Resources folder of the Xamarin.Forms (iOS) project.
+* Edit info.plist and add a key Fonts provided by application (value type should be Array). In item0 of the array enter the name of the FontFamily you added in the Resource folder. (Such as Lobster-Regular.ttf).
+* Then, directly use Custom Font name as FontFamily.
+
+>**Note**:
+ No need to mention .ttf when set the Custom Font in iOS.
+
+### Custom Font Setting in Xamarin.Forms (UWP)
+* Download the Custom Font (e.g. Lobster-Regular.ttf)
+* Add the downloaded Custom Font to the Assets folder of the Xamarin.Forms (UWP) project.
+* Then, directly use Custom Font name as FontFamily. When Setting custom font in UWP use the format (FontFamily = ” Assets/Lobster-Regular.ttf#Lobster”).
+

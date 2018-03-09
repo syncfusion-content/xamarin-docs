@@ -28,12 +28,8 @@ You can customize the default appearance of view header in [DayView](https://hel
 			viewHeaderStyle.BackgroundColor = Color.FromHex("#009688");
 			viewHeaderStyle.DayTextColor = Color.FromHex("#FFFFFF");
 			viewHeaderStyle.DateTextColor = Color.FromHex("#FFFFFF");
-			viewHeaderStyle.DayFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
-			viewHeaderStyle.DateFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
-			viewHeaderStyle.DayFontSize = 15;
-			viewHeaderStyle.DateFontSize = 15;
-			viewHeaderStyle.DayFontAttributes = FontAttributes.Bold;
-			viewHeaderStyle.DateFontAttributes = FontAttributes.Bold;
+			viewHeaderStyle.DayTextStyle = Font.OfSize("Arial", 15);
+			viewHeaderStyle.DateTextStyle = Font.OfSize("Arial", 15);
 			schedule.ViewHeaderStyle = viewHeaderStyle;
 			
 {% endhighlight %}
@@ -46,13 +42,8 @@ You can customize the default appearance of view header in [DayView](https://hel
               BackgroundColor="#009688" 
               DayTextColor="#FFFFFF" 
               DateTextColor="#FFFFFF" 
-    		  DayFontAttributes="Bold"
-			  DateFontAttributes="Bold"
-			  DayFontSize="15"
-			  DateFontSize="15">
-	     <schedule:ViewHeaderStyle.FontFamily>
-              <OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
-         </schedule:ViewHeaderStyle.FontFamily>
+			  DayTextStyle="Arial,15" 
+              DateTextStyle="Arial,15">
         </schedule:ViewHeaderStyle>
      </schedule:SfSchedule.ViewHeaderStyle>
     </schedule:SfSchedule>
@@ -504,13 +495,29 @@ You can download the entire source code of this demo for Xamarin.Forms from here
 ![](daymodule_images/selection_Day.png)
 
 ## Custom Font
-We can change the appearance of Font by setting the FontFamily property of following classes.
-* [HeaderStyle](https://help.syncfusion.com/xamarin/sfschedule/headers#appearance) - We can change the appearance of [HeaderStyle](https://help.syncfusion.com/xamarin/sfschedule/headers#appearance) by setting the [FontFamily](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.HeaderStyle~FontFamilyProperty.html) property of Schedule `HeaderStyle`.
-* [ViewHeaderStyle](https://help.syncfusion.com/xamarin/sfschedule/dayview#viewheader-appearance) - We can change the appearance of [ViewHeaderStyle](https://help.syncfusion.com/xamarin/sfschedule/dayview#viewheader-appearance) by setting the [DayFontFamily](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderStyle~DayFontFamilyProperty.html) and [DateFontFamily](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderStyle~DateFontFamilyProperty.html) properties of Schedule `ViewHeaderStyle`.
-* [AppointmentStyle](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#appearance-customization) - We can change the appearance of [AppointmentStyle](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#appearance-customization) by setting the [FontFamily](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~FontFamily.html) property of Schedule `AppointmentStyle`.
-* [MonthCellStyle](https://help.syncfusion.com/xamarin/sfschedule/monthview#monthcell-appearance) - We can change the appearance of [MonthCellStyle](https://help.syncfusion.com/xamarin/sfschedule/monthview#monthcell-appearance) by setting the [FontFamily](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewCellStyle~FontFamily.html) property of Schedule `MonthCellStyle`.
-* [MonthInlineViewStyle](https://help.syncfusion.com/xamarin/sfschedule/monthview#inlineview-appearance) - We can change the appearance of [MonthInlineViewStyle](https://help.syncfusion.com/xamarin/sfschedule/monthview#inlineview-appearance) by setting the [FontFamily](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineViewStyle~FontFamily.html) property of Schedule `MonthInlineViewStyle`.
-* [WeekNumberStyle](https://help.syncfusion.com/xamarin/sfschedule/monthview#week-number-appearance) - We can change the appearance of [WeekNumber](https://help.syncfusion.com/xamarin/sfschedule/monthview#week-number-appearance) by setting the [FontFamily](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekNumberStyle~FontFamily.html) property of Schedule `WeekNumberStyle`.
+We can change the appearance of Font by setting the  [DayFontFamily](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderStyle~DayFontFamilyProperty.html) and [DateFontFamily](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderStyle~DateFontFamilyProperty.html) property of [ViewHeaderStyle](https://help.syncfusion.com/xamarin/sfschedule/dayview#viewheader-appearance) property in Schedule.
+
+{% tabs %}
+{% highlight c# %}
+
+			viewHeaderStyle.DayFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
+			viewHeaderStyle.DateFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
+			
+{% endhighlight %}
+{% highlight XAML %}
+
+	     <schedule:ViewHeaderStyle.DayFontFamily>
+              <OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
+         </schedule:ViewHeaderStyle.DayFontFamily>
+		 <schedule:ViewHeaderStyle.DateFontFamily>
+              <OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
+         </schedule:ViewHeaderStyle.DateFontFamily>
+
+
+{% endhighlight %}
+{% endtabs %}
+
+![](daymodule_images/customfontviewheader_day.png)
 
 Following steps will explain how to configure the custom fonts.
 

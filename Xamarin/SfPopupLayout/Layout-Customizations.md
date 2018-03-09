@@ -303,11 +303,11 @@ public MainPage()
 This is how the final output will look like on iOS, Android, and Windows Phone devices.
 ![](PopupLayout_images/ShowFooter_False.png)
 
-### Hide the Close button in the SfPopupLayout ?
+### Hide the Close icon in the SfPopupLayout 
 
-SfPopupLayout allows you to hide the Close button by using the [SfPopupLayout.PopupView.ShowCloseButton](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~ShowCloseButton.html) property. The default value of this property is `true`.
+The SfPopupLayout allows hiding the Close icon by using the [SfPopupLayout.PopupView.ShowCloseButton](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~ShowCloseButton.html) property. The default value of this property is `true`.
 
-To hide the Close button in SfPopupLayout, follow the code example.
+To hide the Close icon in the SfPopupLayout, follow the code example.
 
 {% highlight c# %}
 //MainPage.cs
@@ -388,7 +388,7 @@ This is how the final output will look like on iOS, Android and Windows Phone de
 
 ### Customizing footer elements
 
-SfPopupLayout allows customizing the footer elements with various footer customizations as follows:
+The SfPopupLayout allows customizing the footer elements with various footer customizations as follows:
 
 <table>
 <tr>

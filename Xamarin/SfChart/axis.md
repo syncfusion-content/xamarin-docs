@@ -606,6 +606,102 @@ chart.SecondaryAxis = new LogarithmicAxis() { LogarithmicBase = 2 };
 
 ![](axis_images/logaxis_img3.png)
 
+## Multiple Axes
+
+[`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html) provides a way to arrange multiple series inside the same chart area, giving the chart more space than x-axis and y-axis.These axes can be arranged in a stack or in a side by side pattern.
+
+By default, all the series are plotted based on [`PrimaryAxis`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~PrimaryAxis.html) and [`SecondaryAxis`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~SecondaryAxis.html). You can add more axes by adding additional axis to the series. There are two properties [`XAxis`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CartesianSeries~XAxis.html) and [`YAxis`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CartesianSeries~XAxis.html) in all the series, except [`Accumulation Series`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.AccumulationSeries.html), [`PolarSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.PolarSeries.html) and [`RadarSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RadarSeries.html).
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.Series>
+
+    <chart:ColumnSeries Label="2014" ItemsSource="{Binding Demands}" XBindingPath="Demand" YBindingPath="Year2014" >
+
+        <chart:ColumnSeries.XAxis>
+
+            <chart:NumericalAxis>
+
+                <chart:NumericalAxis.Title>
+
+                    <chart:ChartAxisTitle Text = "Additional X Axis" />
+
+                </chart:NumericalAxis.Title>
+
+            </chart:NumericalAxis>
+
+        </chart:ColumnSeries.XAxis>
+
+        <chart:ColumnSeries.YAxis>
+
+            <chart:NumericalAxis>
+
+                <chart:NumericalAxis.Title>
+
+                    <chart:ChartAxisTitle Text = "Additional Y Axis" />
+
+                </chart:NumericalAxis.Title>
+
+            </chart:NumericalAxis>
+
+        </chart:ColumnSeries.YAxis>
+
+    </chart:ColumnSeries>
+
+    <chart:LineSeries Label="2015" ItemsSource="{Binding Demands}" XBindingPath="Demand" YBindingPath="Year2015" />
+
+</chart:SfChart.Series>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ColumnSeries series = new ColumnSeries();
+
+series.ItemsSource = model.Demands;
+
+series.XBindingPath = "Demand";
+
+series.YBindingPath = "Year2014";
+
+series.Label = "2014";
+
+NumericalAxis xAxis = new NumericalAxis();
+
+xAxis.Title.Text = "Additional X Axis";
+
+series.XAxis = xAxis;
+
+NumericalAxis yAxis = new NumericalAxis();
+
+yAxis.Title.Text = "Additional Y Axis";
+
+series.YAxis = yAxis;
+
+chart.Series.Add(series);
+
+LineSeries lineSeries = new LineSeries();
+
+lineSeries.ItemsSource = model.Demands;
+
+lineSeries.XBindingPath = "Demand";
+
+lineSeries.YBindingPath = "Year2015";
+
+lineSeries.Label = "2015";
+
+chart.Series.Add(lineSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](axis_images/MultipleAxes.png)
+
+The first series is plotting based on additional X & Y axis and second series (or remaining series) is plotting against the primary and secondary axis.
+
 ## Common axis features
 
 Customization of features such as axis title, labels, grid lines and tick lines are common to all the axes. Each of these features are explained in this section.

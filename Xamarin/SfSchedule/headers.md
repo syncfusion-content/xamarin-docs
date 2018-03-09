@@ -91,4 +91,46 @@ You can collapse the default header of schedule by setting `HeaderHeight` proper
 
 {% endhighlight %}
 
-You can get the complete sample for customizing the Header of Schedule [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Header_Sample-1251673941.zip) 
+You can get the complete sample for customizing the Header of Schedule [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Header_Sample-1251673941.zip)
+
+## Header Date Format
+
+We can customize the date format of SfSchedule Header by using [ScheduleHeaderDateFormat](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ScheduleHeaderDateFormat.html) property of `SfSchedule`.
+
+{% tabs %}
+{% highlight xaml %}
+
+    <schedule:SfSchedule x:Name="schedule" ScheduleHeaderDateFormat = "LLL yy" />
+{% endhighlight %}
+{% highlight c# %}
+//Creating instance of Schedule
+SfSchedule schedule = new SfSchedule();
+//Customizing date format
+schedule.ScheduleHeaderDateFormat = "LLL yy";
+{% endhighlight %}
+{% endtabs %}
+
+![](Header_images/HeaderDateFormat.png)
+
+## Header Tapped Event
+
+We can handle single tap action of Header by using [HeaderTapped](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~HeaderTapped_EV.html) event of `SfSchedule`. This event will be triggered when the Header is Tapped. This event contains [HeaderTappedEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.HeaderTappedEventArgs.html) argument which holds [DateTime](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.CellTappedEventArgs~Datetime.html) details in it.
+
+{% tabs %}
+{% highlight xaml %}
+
+    <schedule:SfSchedule x:Name="schedule" HeaderTapped="Handle_HeaderTapped" />
+{% endhighlight %}
+{% highlight c# %}
+//Creating  new instance of Schedule
+SfSchedule schedule = new SfSchedule();
+schedule.HeaderTapped += Handle_HeaderTapped;
+{% endhighlight %}
+{% endtabs %}
+
+{% highlight c# %}
+void Handle_HeaderTapped(object sender, HeaderTappedEventArgs e)
+{
+    var dateTime = e.DateTime;
+}
+{% endhighlight %}

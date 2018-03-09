@@ -213,7 +213,7 @@ You can customize the View Header appearance by using [ViewHeaderStyle](http://h
     </schedule:SfSchedule>
 {% endhighlight %}
 {% highlight c# %}
-		//creating new instance for viewHeaderStyle 
+		//creating new instance for viewHeaderStyle
 		ViewHeaderStyle viewHeaderStyle = new ViewHeaderStyle();
 		viewHeaderStyle.BackgroundColor = Color.Blue;
 		viewHeaderStyle.DayTextColor = Color.White;
@@ -225,6 +225,68 @@ You can customize the View Header appearance by using [ViewHeaderStyle](http://h
 ![](monthview_images/viewheaderstyle.png)
 
 >**Note**:  FontAttributes and FontFamily are native to the platform. Custom font and the font which are not available in the specified platform will not be applied.
+
+### ViewHeader Date Format
+We can customize the date and day format of `SfSchedule` ViewHeader by using [DateFormat](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DayLabelSettings~DateFormat.html) and [DayFormat](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DayLabelSettings~DayFormat.html) properties of `MonthLabelSettings`.
+
+{% tabs %}
+{% highlight xaml %}
+
+    <schedule:SfSchedule>
+        <schedule:SfSchedule.MonthViewSettings>
+            <schedule:MonthViewSettings>
+                <schedule:MonthViewSettings.MonthLabelSettings>
+                    <schedule:MonthLabelSettings DateFormat=“dd”>
+                        <schedule:MonthLabelSettings.DayFormat>
+                            <OnPlatform x:TypeArguments="x:String" iOS="EEEE" Android="EEEE" WinPhone="dddd" />
+                        </schedule:MonthLabelSettings.DayFormat>
+                    </schedule:MonthLabelSettings>
+                </schedule:MonthViewSettings.MonthLabelSettings>
+            </schedule:MonthViewSettings>
+        </schedule:SfSchedule.MonthViewSettings>
+    </schedule:SfSchedule>
+{% endhighlight %}
+{% highlight c# %}
+schedule.ScheduleView = ScheduleView.MonthView;
+//Creating new instance of MonthViewSettings
+MonthViewSettings monthViewSettings = new MonthViewSettings();
+//Creating new instance of MonthLabelSettings
+MonthLabelSettings monthLabelSettings = new MonthLabelSettings();
+//Customizing date format
+monthLabelSettings.DateFormat = "dd";
+monthLabelSettings.DayFormat = Device.OnPlatform("EEEE", "EEEE", "dddd");
+monthViewSettings.MonthLabelSettings = monthLabelSettings;
+schedule.MonthViewSettings = monthViewSettings;
+{% endhighlight %}
+{% endtabs %}
+
+![](monthview_images/DateFormat_Month.png)
+
+### ViewHeader Tapped Event
+We can handle single tap action of ViewHeader by using [ViewHeaderTapped](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ViewHeaderTapped_EV.html) event of `SfSchedule`. This event will be triggered when the ViewHeader is Tapped. This event contains [ViewHeaderTappedEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderTappedEventArgs.html) argument which holds [DateTime](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.CellTappedEventArgs~Datetime.html) details in it.
+
+{% tabs %}
+{% highlight xaml %}
+
+    <schedule:SfSchedule x:Name="schedule"
+                         ScheduleView="MonthView"
+                         ViewHeaderTapped="Handle_ViewHeaderTapped" >
+    </schedule:SfSchedule>
+{% endhighlight %}
+{% highlight c# %}
+//Creating  new instance of Schedule
+SfSchedule schedule = new SfSchedule();
+schedule.ScheduleView = ScheduleView.MonthView;
+schedule.ViewHeaderTapped += Handle_ViewHeaderTapped;
+{% endhighlight %}
+{% endtabs %}
+
+{% highlight c# %}
+void Handle_ViewHeaderTapped(object sender, ViewHeaderTappedEventArgs e)
+{
+    var dateTime = e.DateTime;
+}
+{% endhighlight %}
 
 ## MonthCell Appearance 
 You can customize the Month view cell in three ways,
@@ -416,7 +478,7 @@ You can customize the default appearance of selection UI in the month cells.
 * [Selection customization using custom View](#selection-customization-using-custom-view)
 * [Programmatic selection](#programmatic-selection)
 
-### Selection customization using style:
+### Selection customization using style
 You can customize the month cell selection by using [SelectionStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~SelectionStyle.html) property of `SfSchedule`.
 
 {% tabs %}
@@ -496,3 +558,26 @@ You can download the entire source code of this demo for Xamarin.Forms from here
 
 ![](monthview_images/selection_Month.png)
 
+## Today Background Color
+We can customize the current date background of  `SfSchedule`  by using [TodayBackground](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~TodayBackground.html) property of `MonthViewSettings`.
+
+{% tabs %}
+{% highlight xaml %}
+
+    <schedule:SfSchedule ScheduleView=“MonthView”>
+        </schedule:SfSchedule.MonthViewSettings>
+            <schedule:MonthViewSettings TodayBackground="Red" />
+        </schedule:SfSchedule.MonthViewSettings>
+    </schedule:SfSchedule>
+{% endhighlight %}
+{% highlight c# %}
+schedule.ScheduleView = ScheduleView.MonthView;
+//Creating new instance of MonthViewSettings
+MonthViewSettings monthViewSettings = new MonthViewSettings();
+//Customizing background color
+monthViewSettings.TodayBackground = Color.Red;
+schedule.MonthViewSettings = monthViewSettings;
+{% endhighlight %}
+{% endtabs %}
+
+![](monthview_images/TodayBackground.png)

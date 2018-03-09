@@ -490,7 +490,7 @@ listView.IsStickyGroupHeader = true;
 Customizing the [GroupHeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~GroupHeaderTemplate.html) based on the value obtained from the `Checked` property by using Converter. 
 In the Converter, you need to check whether the value obtained is `1` or `0` and convert into required string value[`Passed` or `Failed`]. 
 
-{% highlight c#}
+{% highlight c# %}
 public class IntToStringConverter : IValueConverter 
 { 
   public object Convert(object value, Type targetType, object parameter, CultureInfo culture) 

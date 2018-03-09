@@ -591,12 +591,12 @@ We can change the appearance of Font by setting the FontFamily property to the f
 
 {% tabs %}
 {% highlight xaml %}
-			<schedule:ViewHeaderStyle.DayFontFamily>
-                <OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
-            </schedule:ViewHeaderStyle.DayFontFamily>
+<schedule:ViewHeaderStyle.DayFontFamily>
+	<OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
+</schedule:ViewHeaderStyle.DayFontFamily>
 {% endhighlight %}
 {% highlight c# %}
-		viewHeaderStyle.DayFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
+viewHeaderStyle.DayFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
 {% endhighlight %}
 {% endtabs %}
 
@@ -604,12 +604,12 @@ We can change the appearance of Font by setting the FontFamily property to the f
 
 {% tabs %}
 {% highlight xaml %}
-			<schedule:MonthCellStyle.FontFamily>
-                <OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
-            </schedule:ViewHeaderStyle.FontFamily>
+<schedule:MonthCellStyle.FontFamily>
+	<OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
+</schedule:ViewHeaderStyle.FontFamily>
 {% endhighlight %}
 {% highlight c# %}
-		monthCellStyle.FontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
+monthCellStyle.FontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
 {% endhighlight %}
 {% endtabs %}
 
@@ -618,14 +618,14 @@ We can change the appearance of Font by setting the FontFamily property to the f
 
 {% tabs %}
 {% highlight c# %}
-		schedule.OnMonthInlineLoadedEvent += Schedule_OnMonthInlineLoadedEvent;
-			...
-        private void Schedule_OnMonthInlineLoadedEvent(object sender, MonthInlineLoadedEventArgs args)
-        {
-            MonthInlineViewStyle monthInlineViewStyle = new MonthInlineViewStyle();
-            monthInlineViewStyle.FontFamily = Device.OnPlatform("Lobster=Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
-            args.monthInlineViewStyle = monthInlineViewStyle;
-        }
+schedule.OnMonthInlineLoadedEvent += Schedule_OnMonthInlineLoadedEvent;
+	...
+private void Schedule_OnMonthInlineLoadedEvent(object sender, MonthInlineLoadedEventArgs args)
+{
+	MonthInlineViewStyle monthInlineViewStyle = new MonthInlineViewStyle();
+	monthInlineViewStyle.FontFamily = Device.OnPlatform("Lobster=Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
+	args.monthInlineViewStyle = monthInlineViewStyle;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -656,6 +656,6 @@ Following steps will explain how to configure the custom fonts.
  No need to mention .ttf when set the Custom Font in iOS.
 
 ### Custom Font Setting in Xamarin.Forms (UWP)
-* Download the Custom Font (e.g. Lobster-Regular.ttf)
+* Download the Custom Font (e.g. Lobster-Regular.ttf).
 * Add the downloaded Custom Font to the Assets folder of the Xamarin.Forms (UWP) project.
 * Then, directly use Custom Font name as FontFamily. When Setting custom font in UWP use the format (FontFamily = ” Assets/Lobster-Regular.ttf#Lobster”).

@@ -18,9 +18,7 @@ You can customize the header of the Schedule using `HeaderStyle` and `HeaderHeig
 You can customize the height for the Header in Schedule using `HeaderHeight` in schedule.
 
 {% highlight c# %}
-
-	schedule.HeaderHeight = 50;
-
+schedule.HeaderHeight = 50;
 {% endhighlight %}
 
 ### Labels
@@ -32,16 +30,12 @@ you can change the header format and style using `HeaderStyle` property in sched
 You can change the background color, font family, font attributes and font size using properties such as `BackgroundColor`, `FontFamily`, `FontSize`, `FontAttributes` of Header using `HeaderStyle` property in schedule.
 
 {% highlight c# %}
-
-	HeaderStyle headerStyle = new HeaderStyle();
-	headerStyle.BackgroundColor = Color.FromRgb(251, 211, 201);
-	headerStyle.FontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
-	headerStyle.FontSize = 15;
-	headerStyle.FontAttributes = FontAttributes.Bold;
-	headerStyle.TextSize = 15;
-	headerStyle.TextColor=Color.White;
-	schedule.HeaderStyle = headerStyle;
-
+HeaderStyle headerStyle = new HeaderStyle();
+headerStyle.BackgroundColor = Color.FromRgb(251, 211, 201);
+headerStyle.TextStyle = Font.SystemFontOfSize(20);
+headerStyle.TextSize = 15;
+headerStyle.TextColor=Color.White;
+schedule.HeaderStyle = headerStyle;
 {% endhighlight %}
 
 ## View Header Customization
@@ -55,19 +49,17 @@ You can customize the view header of the Schedule using `ViewHeaderStyle` and `V
 You can change the background color, font family, font attributes and font size using properties such as `BackgroundColor`, `DayFontFamily`, `DateFontFamily`, `DayFontAttributes`, `DateFontAttributes`, `DayTextColor`, `DateTextColor`, `DateFontSize`, `DayFontSize` of ViewHeader using `ViewHeaderStyle` property in schedule.
 
 {% highlight c# %}
-
-	ViewHeaderStyle viewHeaderStyle = new ViewHeaderStyle();
-	viewHeaderStyle.BackgroundColor = Color.FromRgb(251,211,201);
-	viewHeaderStyle.DayTextColor = Color.White;
-	viewHeaderStyle.DateTextColor = Color.White;
-	viewHeaderStyle.DayFontFamily = Device.OnPlatform("Lobster-Regular", " Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
-    viewHeaderStyle.DateFontFamily = Device.OnPlatform("Lobster-Regular", " Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
-    viewHeaderStyle.DayFontSize = 15;
-	viewHeaderStyle.DateFontSize = 15;
-	viewHeaderStyle.DayFontAttributes = DayFontAttributes.Bold;
-	viewHeaderStyle.DateFontAttributes = DateFontAttributes.Bold;
-	schedule.ViewHeaderStyle = viewHeaderStyle;
-
+ViewHeaderStyle viewHeaderStyle = new ViewHeaderStyle();
+viewHeaderStyle.BackgroundColor = Color.FromRgb(251,211,201);
+viewHeaderStyle.DayTextColor = Color.White;
+viewHeaderStyle.DateTextColor = Color.White;
+viewHeaderStyle.DayTextStyle = Font.SystemFontOfSize(20);
+viewHeaderStyle.DateTextStyle = Font.SystemFontOfSize(20);
+viewHeaderStyle.DayFontSize = 15;
+viewHeaderStyle.DateFontSize = 15;
+viewHeaderStyle.DayFontAttributes = DayFontAttributes.Bold;
+viewHeaderStyle.DateFontAttributes = DateFontAttributes.Bold;
+schedule.ViewHeaderStyle = viewHeaderStyle;
 {% endhighlight %}
 
 ### ViewHeader Height
@@ -75,9 +67,7 @@ You can change the background color, font family, font attributes and font size 
 You can customize the height for the view header in Schedule using `HeaderHeight` in schedule.
 
 {% highlight c# %}
-
-	schedule.ViewHeaderHeight = 50;
-
+schedule.ViewHeaderHeight = 50;
 {% endhighlight %}
 
 ![](AppearanceAndStyling_images/HeaderCustomization.png)
@@ -93,27 +83,23 @@ You can differentiate working hours with non-working hour timeslots by its color
 {% tabs %}
 
 {% highlight xaml %}
-
-	<schedule:SfSchedule>
-	<schedule:SfSchedule.DayViewSettings>
-	<!--setting working hours properties -->
-	<schedule:DayViewSettings
-	NonWorkingHoursTimeSlotColor="Gray"
-	NonWorkingHoursTimeSlotBorderColor="Gray">
-	</schedule:DayViewSettings>
-	</schedule:SfSchedule.DayViewSettings>
-	</schedule:SfSchedule>
-
+<schedule:SfSchedule>
+<schedule:SfSchedule.DayViewSettings>
+<!--setting working hours properties -->
+<schedule:DayViewSettings
+NonWorkingHoursTimeSlotColor="Gray"
+NonWorkingHoursTimeSlotBorderColor="Gray">
+</schedule:DayViewSettings>
+</schedule:SfSchedule.DayViewSettings>
+</schedule:SfSchedule>
 {% endhighlight %}
 
 {% highlight C# %}
-
-	//setting working hours properties 
-	DayViewSettings dayViewSettings = new DayViewSettings ();
-	dayViewSettings.NonWorkingHoursTimeSlotBorderColor = Color.Gray;
-	dayViewSettings.NonWorkingHoursTimeSlotColor = Color.Gray;
-	schedule.DayViewSettings = dayViewSettings;
-
+//setting working hours properties 
+DayViewSettings dayViewSettings = new DayViewSettings ();
+dayViewSettings.NonWorkingHoursTimeSlotBorderColor = Color.Gray;
+dayViewSettings.NonWorkingHoursTimeSlotColor = Color.Gray;
+schedule.DayViewSettings = dayViewSettings;
 {% endhighlight %}
 
 {% endtabs %}
@@ -125,29 +111,25 @@ You can differentiate working hours with non-working hour timeslots by its color
 {% tabs %}
 
 {% highlight xaml %}
-
-	<schedule:SfSchedule>
-	<schedule:SfSchedule.DayViewSettings>
-	<!--setting working hours properties -->
-	<schedule:DayViewSettings
-	TimeSlotColor="White"
-	TimeSlotBorderColor="Blue"
-	TimeSlotBorderStrokeWidth="2">
-	</schedule:DayViewSettings>
-	</schedule:SfSchedule.DayViewSettings>
-	</schedule:SfSchedule>
-
+<schedule:SfSchedule>
+<schedule:SfSchedule.DayViewSettings>
+<!--setting working hours properties -->
+<schedule:DayViewSettings
+TimeSlotColor="White"
+TimeSlotBorderColor="Blue"
+TimeSlotBorderStrokeWidth="2">
+</schedule:DayViewSettings>
+</schedule:SfSchedule.DayViewSettings>
+</schedule:SfSchedule>
 {% endhighlight %}
 
 {% highlight C# %}
-
-	//setting working hours properties 
-	DayViewSettings dayViewSettings = new DayViewSettings ();
-	dayViewSettings.TimeSlotColor = Color.White;
-	dayViewSettings.TimeSlotBorderColor = Color.Blue;
-	dayViewSettings.TimeSlotBorderStrokeWidth = 2;
-	schedule.DayViewSettings = dayViewSettings;
-
+//setting working hours properties 
+DayViewSettings dayViewSettings = new DayViewSettings ();
+dayViewSettings.TimeSlotColor = Color.White;
+dayViewSettings.TimeSlotBorderColor = Color.Blue;
+dayViewSettings.TimeSlotBorderStrokeWidth = 2;
+schedule.DayViewSettings = dayViewSettings;
 {% endhighlight %}
 
 {% endtabs %}
@@ -159,26 +141,22 @@ You can differentiate the timeslot panel using `VerticalLineColor` and `Vertical
 {% tabs %}
 
 {% highlight xaml %}
-
-	<schedule:SfSchedule>
-	<schedule:SfSchedule.DayViewSettings>
-	<schedule:DayViewSettings VerticalLineColor="Green"
-	VerticalLineStrokeWidth="5">
-	</schedule:DayViewSettings>
-	</schedule:SfSchedule.DayViewSettings>
-	</schedule:SfSchedule>
-
+<schedule:SfSchedule>
+<schedule:SfSchedule.DayViewSettings>
+<schedule:DayViewSettings VerticalLineColor="Green"
+VerticalLineStrokeWidth="5">
+</schedule:DayViewSettings>
+</schedule:SfSchedule.DayViewSettings>
+</schedule:SfSchedule>
 {% endhighlight %}
 
 {% highlight c# %}
+DayViewSettings dayViewSettings = new DayViewSettings();
+dayViewSettings.VerticalLineColor = Color.Green;
+dayViewSettings.VerticalLineStrokeWidth = 5;
 
-	DayViewSettings dayViewSettings = new DayViewSettings();
-	dayViewSettings.VerticalLineColor = Color.Green;
-	dayViewSettings.VerticalLineStrokeWidth = 5;
-
-	schedule.DayViewSettings = dayViewSettings;
-	this.Content = schedule;
-
+schedule.DayViewSettings = dayViewSettings;
+this.Content = schedule;
 {% endhighlight %} 
 
 {% endtabs %}
@@ -188,15 +166,13 @@ You can differentiate the timeslot panel using `VerticalLineColor` and `Vertical
 You can change the format,colors,size of text using `TimeFormat`, `TimeLabelColor`,`TimeLabelSize` properties of `DayLabelSettings` in `DayViewSettings`.
 
 {% highlight c# %}
-
-	DayViewSettings dayViewSettings = new DayViewSettings();
-	DayLabelSettings dayLabelSettings = new DayLabelSettings();
-	dayLabelSettings.TimeFormat = "hh mm";
-	dayLabelSettings.TimeLabelColor = Color.Blue;
-	dayLabelSettings.TimeLabelSize = 10;
-	dayViewSettings.DayLabelSettings = dayLabelSettings;
-	schedule.DayViewSettings = dayViewSettings;
-
+DayViewSettings dayViewSettings = new DayViewSettings();
+DayLabelSettings dayLabelSettings = new DayLabelSettings();
+dayLabelSettings.TimeFormat = "hh mm";
+dayLabelSettings.TimeLabelColor = Color.Blue;
+dayLabelSettings.TimeLabelSize = 10;
+dayViewSettings.DayLabelSettings = dayLabelSettings;
+schedule.DayViewSettings = dayViewSettings;
 {% endhighlight %}
 
 #### All Day Appointments Color
@@ -206,13 +182,11 @@ You can change the all day appointment panel color using the property `AllDayApp
 {% tabs %}
 
 {% highlight xaml %}
-
-	<schedule:SfSchedule.DayViewSettings>
-	<schedule:DayViewSettings
-	AllDayAppointmentLayoutColor="Fuchsia">
-	</schedule:DayViewSettings>
-	</schedule:SfSchedule.DayViewSettings>
-
+<schedule:SfSchedule.DayViewSettings>
+<schedule:DayViewSettings
+AllDayAppointmentLayoutColor="Fuchsia">
+</schedule:DayViewSettings>
+</schedule:SfSchedule.DayViewSettings>
 {% endhighlight %}
 
 {% highlight c# %}
@@ -234,28 +208,24 @@ You can differentiate working hours with non-working hour timeslots by its color
 {% tabs %}
 
 {% highlight xaml %}
-
-	<schedule:SfSchedule ScheduleView="WeekView">
-	<schedule:SfSchedule.WeekViewSettings>
-	<!--setting week view settings properties -->
-	<schedule:WeekViewSettings
-	NonWorkingHoursTimeSlotColor="Gray"
-	NonWorkingHoursTimeSlotBorderColor="Gray">
-	</schedule:WeekViewSettings>
-	</schedule:SfSchedule.WeekViewSettings>
-	</schedule:SfSchedule>
-
+<schedule:SfSchedule ScheduleView="WeekView">
+<schedule:SfSchedule.WeekViewSettings>
+<!--setting week view settings properties -->
+<schedule:WeekViewSettings
+NonWorkingHoursTimeSlotColor="Gray"
+NonWorkingHoursTimeSlotBorderColor="Gray">
+</schedule:WeekViewSettings>
+</schedule:SfSchedule.WeekViewSettings>
+</schedule:SfSchedule>
 {% endhighlight %}
 
 {% highlight c# %}
-
-	//setting week view settings properties
-	WeekViewSettings weekViewSettings = new WeekViewSettings ();
-	weekViewSettings.NonWorkingHoursTimeSlotBorderColor = Color.Gray;
-	weekViewSettings.NonWorkingHoursTimeSlotColor = Color.Gray;
-	schedule.WeekViewSettings = weekViewSettings;
-	this.Content= schedule;
-
+//setting week view settings properties
+WeekViewSettings weekViewSettings = new WeekViewSettings ();
+weekViewSettings.NonWorkingHoursTimeSlotBorderColor = Color.Gray;
+weekViewSettings.NonWorkingHoursTimeSlotColor = Color.Gray;
+schedule.WeekViewSettings = weekViewSettings;
+this.Content= schedule;
 {% endhighlight %}
 
 {% endtabs %}
@@ -267,18 +237,16 @@ You can differentiate working hours with non-working hour timeslots by its color
 {% tabs %}
 
 {% highlight xaml %}
-
-	<schedule:SfSchedule ScheduleView="WeekView">
-	<schedule:SfSchedule.WeekViewSettings>
-	<!--setting week view settings properties -->
-	<schedule:WeekViewSettings
-	TimeSlotColor="White"
-	TimeSlotBorderColor="Green" 
-	TimeSlotBorderStrokeWidth="2">
-	</schedule:WeekViewSettings>
-	</schedule:SfSchedule.WeekViewSettings>
-	</schedule:SfSchedule>
-
+<schedule:SfSchedule ScheduleView="WeekView">
+<schedule:SfSchedule.WeekViewSettings>
+<!--setting week view settings properties -->
+<schedule:WeekViewSettings
+TimeSlotColor="White"
+TimeSlotBorderColor="Green" 
+TimeSlotBorderStrokeWidth="2">
+</schedule:WeekViewSettings>
+</schedule:SfSchedule.WeekViewSettings>
+</schedule:SfSchedule>
 {% endhighlight %}
 
 {% highlight c# %}
@@ -555,6 +523,3 @@ You can change the time interval and time interval height using `TimeInterval` a
 
 ![](AppearanceAndStyling_images/TimeInterval.png)
 
-## Custom Font
-
-For Configuring custom font, please refer [here](https://help.syncfusion.com/xamarin/sfschedule/dayview#custom font)

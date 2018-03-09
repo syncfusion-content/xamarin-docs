@@ -141,16 +141,12 @@ We can change the appearance of Font by setting the  [FontFamily](http://help.sy
 
 {% tabs %} 
 {% highlight xaml %}
-
-    	<schedule:HeaderStyle.FontFamily>
-            <OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
-        </schedule:HeaderStyle.FontFamily>
-
+<schedule:HeaderStyle.FontFamily>
+	<OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
+</schedule:HeaderStyle.FontFamily>
 {% endhighlight %}
 {% highlight c# %}
-
-	headerStyle.FontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
-
+headerStyle.FontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
 {% endhighlight %}
 {% endtabs %} 
 
@@ -172,6 +168,6 @@ Following steps will explain how to configure the custom fonts.
  No need to mention .ttf when set the Custom Font in iOS.
 
 ### Custom Font Setting in Xamarin.Forms (UWP)
-* Download the Custom Font (e.g. Lobster-Regular.ttf)
+* Download the Custom Font (e.g. Lobster-Regular.ttf).
 * Add the downloaded Custom Font to the Assets folder of the Xamarin.Forms (UWP) project.
 * Then, directly use Custom Font name as FontFamily. When Setting custom font in UWP use the format (FontFamily = ” Assets/Lobster-Regular.ttf#Lobster”).

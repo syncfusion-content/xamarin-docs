@@ -7,21 +7,17 @@ control: SfPopupLayout
 documentation: ug
 --- 
 
-# Model Window Popup
+# Model Window Pop-up
 
-You can use pop-up layout as model window by using the built-in close icon and [SfPopupLayout.StaysOpen](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~StaysOpenProperty.html) property to prevent the user from interacting with your application until they close the window.
+You can use pop-up layout as model window by using the built-in Close icon and the [SfPopupLayout.StaysOpen](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~StaysOpenProperty.html) property prevents interaction with your application until you close the window.
 
-Model Window will loads under the parent window surrounded by the overlay which prevents users to click anywhere else on screen other then the content of the modal.
+`Modal`: Model Window will load under the parent window surrounded by the overlay which prevents you to click anywhere else on screen apart from the content of the modal.
 
-Modal also doesn't require any user action to open.
+Modal does not require any action to open. It opens in the same window and gives callbacks when closing or opening the window.
 
-Modal opens in the same window.
+Refer to the following code example in which the pop-up will close only if you click Cancel button, Ok button or Close icon.
 
-Modal gives callbacks when you close or open the modal.
-
-Refer the below code example in which popup will close only if you click cancel button, ok button or close icon.
-
-## Displaying Popup when SfPopupLayout is set as root view :
+## Displaying pop-up when the SfPopupLayout is set as root view 
 
 {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8" ?>
@@ -150,5 +146,5 @@ public class DeclineButtonCustomCommand : ContentPage, ICommand
 
 {% endhighlight %}
 
-This is how the final output will look like on iOS, Android and Windows Phone devices.
+This is how the final output will look like on iOS, Android, and Windows Phone devices.
 ![](GettingStarted_images/ModelView_iOS.png)

@@ -546,6 +546,8 @@ private void Schedule_OnAppointmentLoadedEvent(object sender, AppointmentLoadedE
 }
 {% endhighlight %}
 
+![](PopulatingAppointments_images/appointmentstyle_customview.png)
+
 ## Customize appearance using DataTemplate
 The default appearance of the Appointment can be customized by using the [AppointmentTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~AppointmentTemplate.html) property of the Schedule.
 

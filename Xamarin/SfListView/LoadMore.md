@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Load More
 
-The SfListView enables `Load More` view by setting the [SfListView.LoadMoreOption](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreOption.html) and the [SfListView.LoadMoreCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommand.html) properties. When end of the list is reached, displayed `Load More View` provides an option to add the items at runtime.
+The SfListView enables `Load More` view by setting the [SfListView.LoadMoreOption](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreOption.html), [SfListView.LoadMoreCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommand.html) and the [IsBusy](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsBusy.html) properties. When end of the list is reached, displayed `Load More` View provides an option to add the items at runtime.
 
 The `LoadMoreOption` property has three different modes of operation listed as follows:
 
@@ -18,7 +18,7 @@ The `LoadMoreOption` property has three different modes of operation listed as f
 
 ## Load more automatically
 
-To automatically load more items using the [SfListView.LoadMoreCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommand.html) while reaching end of the list, set the [SfListView.LoadMoreOption](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreOption.html) property as `Auto`.
+To automatically load more items using the [SfListView.LoadMoreCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommand.html) and [LoadMoreCommandParameter](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommandParameter.html) while reaching end of the list, set the [SfListView.LoadMoreOption](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreOption.html) property as `Auto`.
 
 To load more items automatically, follow the code example:
 
@@ -89,7 +89,7 @@ private void AddProducts(int index, int count)
 
 ## Load more manually
 
-To load more items manually using the [SfListView.LoadMoreCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommand.html) while tapping on the load more button at end of the list, set the [SfListView.LoadMoreOption](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreOption.html) property as `Manual`.
+To load more items manually using the [SfListView.LoadMoreCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommand.html) and [LoadMoreCommandParameter](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommandParameter.html) while tapping on the load more button at end of the list, set the [SfListView.LoadMoreOption](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreOption.html) property as `Manual`.
 
 To load more items manually, follow the code example:
 
@@ -341,3 +341,48 @@ private bool CanLoadMoreItems(object obj)
 
 The SfListView does not support the [LoadMoreOption](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreOption.html) in `Manual` mode when the [Orientation](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.Orientation.html) is `Horizontal`.
 
+## How to
+
+### Load more on Infinite scroll 
+
+SfListView allows the load more to add more items by scrolling infinite times. To make infinite scroll, follow the code example.
+
+{% highlight c# %}
+public class LoadMoreViewModel:INotifyPropertyChanged
+{
+  public ObservableCollection<Product> Products { get; set; }
+  public Command<object> LoadMoreItemsCommand { get; set; }
+
+  public LoadMoreViewModel()
+  {
+     Products = new ObservableCollection<Product>();
+     AddProducts(0, 10);
+     LoadMoreItemsCommand = new Command<object>(LoadMoreItems);
+  }
+  private async void LoadMoreItems(object obj)
+  {
+     IsBusy = true;
+     await Task.Delay(2500);
+     AddProducts(11, 21);
+     IsBusy = false;
+  }
+  private void AddProducts(int value, int count)
+  {
+     Random rand= new Random();
+     for (int i = value; i < count; i++)
+     {
+        var name = Names[rand.Next(1,22)];
+        var p = new Product()
+        {
+           Name = name,
+           Weight = Weights[i],
+           Price = Prices[i],
+           Image = ImageSource.FromResource("LoadMoreUG.LoadMore." + name.Replace(" ", string.Empty) + ".jpg")
+        };
+        Products.Add(p);
+     }
+  }
+}
+{% endhighlight %}
+
+You can download the entire sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LoadMore-1970518154).

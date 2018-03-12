@@ -56,17 +56,13 @@ All items of the SfListView can be selected using [SelectAll](https://help.syncf
 listView.SelectAll();
 {% endhighlight %}
 
-## Get selected items
+## Selected items
 
-The SfListView gets all selected items through the [SelectedItems](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItems.html) property.
+### Get selected items
 
-### CurrentItem vs SelectedItem
+The SfListView gets all selected items through the [SelectedItems](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItems.html) property. Also gets the single item by using [SelectedItem](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItem.html) property.
 
-The SfListView gets the selected item by using the [SelectedItem](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItem.html) and [CurrentItem](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~CurrentItem.html) properties. Both `SelectedItem` and `CurrentItem` returns the same data object when single item is selected. When more than one items are selected, then the `SelectedItem` property returns the first selected item, and the `CurrentItem` property returns the last selected item.
-
-W> If you set any item which is not available in `ItemsSource` to `SelectedItem` or `CurrentItem` property, exception will be thrown.
-
-## Clear selected items
+### Clear selected items
 
 The selected items can be cleared by calling the [SelectedItems.Clear()](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItems.html) method.
 
@@ -74,15 +70,89 @@ The selected items can be cleared by calling the [SelectedItems.Clear()](https:/
 listView.SelectedItems.Clear();
 {% endhighlight %}
 
-## Selection background color
+### CurrentItem vs SelectedItem
 
-The SfListView allows changing the selection background color for the selected items by using the [SelectionBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionBackgroundColor.html) property. You can also able to change the selection background color at runtime.
+The SfListView gets the selected item by using the [SelectedItem](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItem.html) and [CurrentItem](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~CurrentItem.html) properties. Both `SelectedItem` and `CurrentItem` returns the same data object when single item is selected. When more than one items are selected, then the `SelectedItem` property returns the first selected item, and the `CurrentItem` property returns the last selected item.
 
-{% highlight c# %}
-listView.SelectionBackgroundColor = Color.Blue;
+W> If you set any item which is not available in `ItemsSource` to `SelectedItem` or `CurrentItem` property, exception will be thrown.
+
+## Selected item customization 
+
+### Show checked circle on selected items 
+
+The SfListView allows customizing appearance of the selected item/items by using the appearance of [SelectedItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItemTemplate.html). The following customizations should gives an idea to customize the appearance of selected items in the control: 
+
+{% highlight xaml %}
+<ContentPage>
+  <syncfusion:SfListView x:Name="listView">
+   <syncfusion:SfListView.SelectedItemTemplate>
+    <DataTemplate>
+     <Grid x:Name="grid">
+      <Grid.ColumnDefinitions>
+       <ColumnDefinition Width="40" />
+       <ColumnDefinition Width="*" />    
+       <ColumnDefinition Width="Auto" />
+      </Grid.ColumnDefinitions>
+      <Image Source="{Binding SongThumbnail}"/>
+      <Grid Grid.Column="1">
+       <Grid.RowDefinitions>
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+       </Grid.RowDefinitions>
+       <Label Text="{Binding SongTitle}" />
+       <Grid Grid.Row="1">
+        <Grid.ColumnDefinitions>
+         <ColumnDefinition Width="*" />
+         <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Label Text="{Binding SongAuther}" />
+        <Label Grid.Column="1" Text="{Binding SongSize}"/>
+       </Grid>
+      </Grid>
+      <Image Grid.Column="2" x:Name="selectionImage" IsVisible="True" Source="Selected.png"/>
+     </Grid>
+    </DataTemplate>
+   </syncfusion:SfListView.SelectedItemTemplate>
+  </syncfusion:SfListView>
+</ContentPage>
 {% endhighlight %}
 
-## Programmatic animation in selection
+Now run the application to render the following output. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomSelection-1369390597).
+
+![](SfListView_images/SfListView-Selection-2.png)
+
+## Selected item style
+
+### Selection background
+
+The SfListView allows changing the selection background color for the selected items by using BackgroundColor property in `SelectionItemTemplate`.
+
+{% highlight xaml %}
+<ContentPage>
+  <syncfusion:SfListView x:Name="listView">
+   <syncfusion:SfListView.SelectedItemTemplate>
+    <DataTemplate>
+     <Grid x:Name="grid" BackgroundColor="RoyalBlue">
+      <Grid.RowDefinitions>
+         <RowDefinition Height="*" />
+         <RowDefinition Height="*" />
+         <RowDefinition Height="1" />
+       </Grid.RowDefinitions>
+      <Label Text="{Binding SongTitle}" />
+      <Label Text="{Binding SongAuther}" Grid.Row="1"/>
+      <Frame Grid.Row="2" HasShadow="True" HeightRequest="1"/>
+     </Grid>
+    </DataTemplate>
+   </syncfusion:SfListView.SelectedItemTemplate>
+  </syncfusion:SfListView>
+</ContentPage>
+{% endhighlight %}
+
+The following output rendered when the background color is set to the selected item:
+
+![](SfListView_images/SfListView-Selection-3.png)
+
+### Programmatic animation
 
 The SfListView allows programmatic animation in selection at runtime by using the virtual method [AnimateSelectedItem](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SelectionController~AnimateSelectedItem.html) of `SelectionController` class.
 
@@ -110,7 +180,7 @@ The screenshot shows the output of programmatic animation in selection. You can 
 
 ![](SfListView_images/SfListView-SelectionAnimation.gif)
 
-## Selection events
+## Events
 
 ### SelectionChanging event
 
@@ -151,45 +221,57 @@ private void ListView_OnSelectionChanged(object sender, ItemSelectionChangedEven
 
 N> [SelectionChanging](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionChanging_EV.html) and [SelectionChanged](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionChanged_EV.html) events will be triggered only on UI interactions.
 
-## Customize the selected items
 
-The SfListView allows customizing appearance of the selected item/items. The following customizations should gives an idea to customize the appearance of selected items in the control: 
+## How to
 
-{% highlight xaml %}
-<ContentPage>
-  <syncfusion:SfListView x:Name="listView">
-   <syncfusion:SfListView.SelectedItemTemplate>
-    <DataTemplate>
-     <Grid x:Name="grid">
-      <Grid.ColumnDefinitions>
-       <ColumnDefinition Width="40" />
-       <ColumnDefinition Width="*" />    
-       <ColumnDefinition Width="Auto" />
-      </Grid.ColumnDefinitions>
-      <Image Source="{Binding SongThumbnail}"/>
-      <Grid Grid.Column="1">
-       <Grid.RowDefinitions>
-        <RowDefinition Height="*" />
-        <RowDefinition Height="*" />
-       </Grid.RowDefinitions>
-       <Label Text="{Binding SongTitle}" />
-       <Grid Grid.Row="1">
-        <Grid.ColumnDefinitions>
-         <ColumnDefinition Width="*" />
-         <ColumnDefinition Width="*" />
-        </Grid.ColumnDefinitions>
-        <Label Text="{Binding SongAuther}" />
-        <Label Grid.Column="1" Text="{Binding SongSize}"/>
-       </Grid>
-      </Grid>
-      <Image Grid.Column="2" x:Name="selectionImage" IsVisible="True" Source="Selected.png"/>
-     </Grid>
-    </DataTemplate>
-   </syncfusion:SfListView.SelectedItemTemplate>
-  </syncfusion:SfListView>
-</ContentPage>
+### Disable selection on particular item 
+
+SfListView allows you to disable selection for a particular set of items based on the provided conditions in SelectionChanging event of SfListView. Get the tapped item data from the IList AddedItem of ItemSelectionChangingEventArgs using which you can check whether it satisfies the condition and disable the selection through Cancel property as like below code example.
+
+{% highlight c# %}
+public partial class MainPage : ContentPage
+{
+  public MainPage()
+  {
+    InitializeComponent();
+  }
+
+  private void listView_SelectionChanging(object sender, Syncfusion.ListView.XForms.ItemSelectionChangingEventArgs e)
+  {
+  if (e.AddedItems.Count > 0 && (e.AddedItems[0] as Contacts).Category == "Non-Selectable items")
+      e.Cancel = true;
+  }
+}
 {% endhighlight %}
 
-Now run the application to render the following output. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomSelection-1369390597).
+You can download the entire sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfListViewSample-694232902).
 
-![](SfListView_images/SfListView-Selection-2.png)
+### Automatically scroll to bring a selected item into the view
+
+SfListView allows you to automatically bring the selected item into the view when it changed at runtime by calling the ScrollToRowIndex method.  
+
+In linear layout, you can get the row index of SelectedItem using the DisplayItems.IndexOf method and adjust the index based on header and group header like below code snippets.
+
+{% highlight c# %}
+public partial class MainPage : ContentPage
+{
+  public MainPage()
+  {
+    InitializeComponent();
+    listView.PropertyChanged += listView_PropertyChanged;
+  }
+
+  private void listView_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+  {
+    if (e.PropertyName == "SelectedItem")
+    {
+       var selectedItemIndex = listView.DataSource.DisplayItems.IndexOf(listView.SelectedItem);
+       selectedItemIndex += (listView.HeaderTemplate != null && !listView.IsStickyHeader || !listView.IsStickyGroupHeader) ? 1 : 0;
+       selectedItemIndex -= (listView.GroupHeaderTemplate != null && listView.IsStickyGroupHeader) ? 1 : 0;
+       (listView.LayoutManager as LinearLayout).ScrollToRowIndex(selectedItemIndex);
+    }
+  }
+}
+{% endhighlight %}
+
+You can download the entire sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfListViewSample-1434197887).

@@ -30,21 +30,25 @@ You can change the header format and style using `HeaderStyle` property in sched
 You can change the background color, font family, font attributes and font size using properties such as [BackgroundColor](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.HeaderStyle~BackgroundColorProperty.html), [FontFamily](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.HeaderStyle~FontFamilyProperty.html), [FontAttributes](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.HeaderStyle~FontAttributesProperty.html), [FontSize](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.HeaderStyle~FontSizeProperty.html), [TextColor](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.HeaderStyle~TextColorProperty.html), of Header using `HeaderStyle` property in schedule.
 {% tabs %} 
 {% highlight xaml %}
-<syncfusion:SfSchedule x:Name="schedule" >
-	<syncfusion:SfSchedule.HeaderStyle>
-		<syncfusion:HeaderStyle
-			BackgroundColor="#FADBD8" 
-			TextColor="Blue" 
-			TextStyle="20"/>
-	</syncfusion:SfSchedule.HeaderStyle>
-</syncfusion:SfSchedule>
+
+    <syncfusion:SfSchedule x:Name="schedule" >
+		<syncfusion:SfSchedule.HeaderStyle>
+			<syncfusion:HeaderStyle
+				BackgroundColor="#FADBD8" 
+				TextColor="Blue" 
+				FontFamily="Arial"/>
+		</syncfusion:SfSchedule.HeaderStyle>
+	</syncfusion:SfSchedule>
+
 {% endhighlight %}
 {% highlight c# %}
-HeaderStyle headerStyle = new HeaderStyle();
-headerStyle.BackgroundColor = Color.FromRgb(250, 219, 216);
-headerStyle.TextStyle = Font.SystemFontOfSize(20);
-headerStyle.TextColor=Color.Blue;
-schedule.HeaderStyle = headerStyle;
+
+	HeaderStyle headerStyle = new HeaderStyle();
+	headerStyle.BackgroundColor = Color.FromRgb(250, 219, 216);
+	headerStyle.FontFamily = "Arial";
+	headerStyle.TextColor=Color.Blue;
+	schedule.HeaderStyle = headerStyle;
+
 {% endhighlight %}
 {% endtabs %} 
 

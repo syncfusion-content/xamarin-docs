@@ -29,8 +29,8 @@ You can customize the default appearance of view header in [WorkWeekView](https:
 			viewHeaderStyle.BackgroundColor = Color.FromHex("#009688");
 			viewHeaderStyle.DayTextColor = Color.FromHex("#FFFFFF");
 			viewHeaderStyle.DateTextColor = Color.FromHex("#FFFFFF");
-			viewHeaderStyle.DayTextStyle = Font.OfSize("Arial", 15);
-			viewHeaderStyle.DateTextStyle = Font.OfSize("Arial", 15);
+			viewHeaderStyle.DayFontFamily = "Arial";
+			viewHeaderStyle.DateFontFamily = "Arial";
 			schedule.ViewHeaderStyle = viewHeaderStyle;
 			
 {% endhighlight %}
@@ -43,8 +43,8 @@ You can customize the default appearance of view header in [WorkWeekView](https:
             BackgroundColor="#009688" 
             DayTextColor="#FFFFFF" 
             DateTextColor="#FFFFFF" 
-            DayTextStyle="Arial,15" 
-            DateTextStyle="Arial,15">
+            DayFontFamily="Arial" 
+            DateFontFamily="Arial">
          </schedule:ViewHeaderStyle>
       </schedule:SfSchedule.ViewHeaderStyle>
     </schedule:SfSchedule>

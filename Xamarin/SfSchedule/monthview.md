@@ -199,25 +199,25 @@ You can customize the View Header appearance by using [ViewHeaderStyle](http://h
 
 {% tabs %}
 {% highlight xaml %}
-<schedule:SfSchedule 
-			x:Name="schedule" 
-			ScheduleView="MonthView">
-	<schedule:SfSchedule.ViewHeaderStyle>
-		<schedule:ViewHeaderStyle 
-					BackgroundColor="Blue" 
-					DayTextColor="White"
-					DayTextStyle="Arial,15">
-		</schedule:ViewHeaderStyle>
-	</schedule:SfSchedule.ViewHeaderStyle>
-</schedule:SfSchedule>
+    <schedule:SfSchedule 
+				x:Name="schedule" 
+				ScheduleView="MonthView">
+        <schedule:SfSchedule.ViewHeaderStyle>
+            <schedule:ViewHeaderStyle 
+						BackgroundColor="Blue" 
+						DayTextColor="White"
+						DayFontFamily="Arial">
+            </schedule:ViewHeaderStyle>
+        </schedule:SfSchedule.ViewHeaderStyle>
+    </schedule:SfSchedule>
 {% endhighlight %}
 {% highlight c# %}
-//creating new instance for viewHeaderStyle
-ViewHeaderStyle viewHeaderStyle = new ViewHeaderStyle();
-viewHeaderStyle.BackgroundColor = Color.Blue;
-viewHeaderStyle.DayTextColor = Color.White;
-viewHeaderStyle.DayTextStyle = Font.OfSize("Arial", 15);
-schedule.ViewHeaderStyle = viewHeaderStyle;
+		//creating new instance for viewHeaderStyle
+		ViewHeaderStyle viewHeaderStyle = new ViewHeaderStyle();
+		viewHeaderStyle.BackgroundColor = Color.Blue;
+		viewHeaderStyle.DayTextColor = Color.White;
+		viewHeaderStyle.DayFontFamily = "Arial";
+		schedule.ViewHeaderStyle = viewHeaderStyle;
 {% endhighlight %}
 {% endtabs %}
 

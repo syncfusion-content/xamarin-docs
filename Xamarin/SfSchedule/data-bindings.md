@@ -669,6 +669,29 @@ Used button to display day appointment and Label to display all day appointment.
 
 ![](PopulatingAppointments_images/appointmenttemplate.png)
 
+### Customize Font Appearance
+
+We can change the appearance of Font by setting the  [FontFamily](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~FontFamily.html) property of [AppointmentStyle]([FontFamily](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~FontFamily.html)) property in Schedule.
+
+{% tabs %} 
+{% highlight c# %}
+
+appointmentStyle.FontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
+
+{% endhighlight %}
+{% highlight xaml %}
+
+		 <schedule:AppointmentStyle.FontFamily>
+             <OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
+         </schedule:AppointmentStyle.FontFamily>
+
+{% endhighlight %}
+{% endtabs %} 
+
+![](PopulatingAppointments_images/customfontappointment.png)
+
+Refer [this](https://help.syncfusion.com/xamarin/sfschedule/monthview#custom-font-setting-in-xamarinforms-android) to configure the custom fonts in Xamarin.Forms.
+
 ## Selection
 Schedule control has built-in events to handle tapped, double tapped and long pressed touch actions.
 
@@ -790,46 +813,3 @@ schedule.AppointmentStyle = appointmentStyle;
 {% endtabs %} 
 
 ![](PopulatingAppointments_images/selection.png)
-
-## Custom Font
-
-We can change the appearance of Font by setting the  [FontFamily](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~FontFamily.html) property of [AppointmentStyle]([FontFamily](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~FontFamily.html)) property in Schedule.
-
-{% tabs %} 
-{% highlight c# %}
-
-appointmentStyle.FontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
-
-{% endhighlight %}
-{% highlight xaml %}
-
-		 <schedule:AppointmentStyle.FontFamily>
-             <OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
-         </schedule:AppointmentStyle.FontFamily>
-
-{% endhighlight %}
-{% endtabs %} 
-
-![](PopulatingAppointments_images/customfontappointment.png)
-
-
-Following steps will explain how to configure the custom fonts.
-
-### Custom Font Setting in Xamarin.Forms (Android) 
-* Download the Custom Font (e.g. Lobster-Regular.ttf) 
-* Add the downloaded Custom Font to the Assets folder of the Xamarin.Forms (Android) project.
-* Then, use the Custom Font name as FontFamily.
-
-### Custom Font Setting in Xamarin.Forms (ios)
-* Download the Custom Font (e.g. Lobster-Regular.ttf)
-* Add the downloaded Custom Font to the Resources folder of the Xamarin.Forms (iOS) project.
-* Edit info.plist and add a key Fonts provided by application (value type should be Array). In item0 of the array enter the name of the FontFamily you added in the Resource folder. (Such as Lobster-Regular.ttf).
-* Then, directly use Custom Font name as FontFamily.
-
->**Note**:
- No need to mention .ttf when set the Custom Font in iOS.
-
-### Custom Font Setting in Xamarin.Forms (UWP)
-* Download the Custom Font (e.g. Lobster-Regular.ttf)
-* Add the downloaded Custom Font to the Assets folder of the Xamarin.Forms (UWP) project.
-* Then, directly use Custom Font name as FontFamily. When Setting custom font in UWP use the format (FontFamily = ” Assets/Lobster-Regular.ttf#Lobster”).

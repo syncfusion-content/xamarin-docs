@@ -491,7 +491,7 @@ schedule.OnAppointmentLoadedEvent += Schedule_OnAppointmentLoadedEvent;
 
 private void Schedule_OnAppointmentLoadedEvent(object sender, AppointmentLoadedEventArgs args)
 {
-	if (args.appointment != null && (args.appointment as Meeting) != null && (args.appointment as Meeting).IsAllDay == true )
+	if (args.appointment != null && (args.appointment as Meeting) != null && (args.appointment as Meeting).IsAllDay)
 	{
 		args.appointmentStyle.BorderColor = Color.Red;
 		args.appointmentStyle.TextColor  = Color.White

@@ -150,4 +150,4 @@ headerStyle.FontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.t
 
 ![](Header_images/customfontheader.png) 
 
-Refer [this](https://help.syncfusion.com/xamarin/sfschedule/monthview#custom-font-setting-in-xamarinforms-android) for how to configure the custom fonts in Xamarin forms.
+Refer [this](https://help.syncfusion.com/xamarin/sfschedule/monthview#custom-font-setting-in-xamarinforms-android) for how to configure the custom fonts in Xamarin.Forms.

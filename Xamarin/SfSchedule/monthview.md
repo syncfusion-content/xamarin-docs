@@ -466,8 +466,7 @@ You can customize the Month inline view Appointment by using [OnMonthInlineAppoi
 {% endhighlight %}
 {% endtabs %}
 
->**Note**:  Inline view customization - No support for inline view appointments customization using custom view, TimeTextSize, TimeTextFormat and TimeTextColor in XForms UWP.
-
+>**Note**:  Inline view customization - There is no support for inline view appointments customization using custom view, TimeTextSize, TimeTextFormat and TimeTextColor properties in XForms UWP.
 ![](monthview_images/inlinecustomview.png)
 
 ## Selection

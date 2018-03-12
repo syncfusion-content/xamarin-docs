@@ -466,7 +466,7 @@ You can customize the Month inline view Appointment by using [OnMonthInlineAppoi
 {% endhighlight %}
 {% endtabs %}
 
->**Note**:  Inline view customization - No support for inline view appointments customization using custom view in XForms UWP.
+>**Note**:  Inline view customization - No support for inline view appointments customization using custom view, TimeTextSize, TimeTextFormat and TimeTextColor in XForms UWP.
 
 ![](monthview_images/inlinecustomview.png)
 
@@ -647,6 +647,7 @@ Following steps will explain how to configure the custom fonts.
 * Download the Custom Font (e.g. Lobster-Regular.ttf) 
 * Add the downloaded Custom Font to the Assets folder of the Xamarin.Forms (Android) project.
 * Then, use the Custom Font name as FontFamily.
+
 ### Custom Font Setting in Xamarin.Forms (ios)
 * Download the Custom Font (e.g. Lobster-Regular.ttf)
 * Add the downloaded Custom Font to the Resources folder of the Xamarin.Forms (iOS) project.

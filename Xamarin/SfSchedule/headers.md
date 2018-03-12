@@ -40,7 +40,7 @@ You can change the background color, font family, font attributes and font size 
 			<syncfusion:HeaderStyle
 				BackgroundColor="#FADBD8" 
 				TextColor="Blue" 
-				TextStyle="20"/>
+				FontFamily="Arial"/>
 		</syncfusion:SfSchedule.HeaderStyle>
 	</syncfusion:SfSchedule>
 
@@ -49,7 +49,7 @@ You can change the background color, font family, font attributes and font size 
 
 	HeaderStyle headerStyle = new HeaderStyle();
 	headerStyle.BackgroundColor = Color.FromRgb(250, 219, 216);
-	headerStyle.TextStyle = Font.SystemFontOfSize(20);
+	headerStyle.FontFamily = "Arial";
 	headerStyle.TextColor=Color.Blue;
 	schedule.HeaderStyle = headerStyle;
 

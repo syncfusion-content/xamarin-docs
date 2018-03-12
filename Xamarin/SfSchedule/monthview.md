@@ -206,7 +206,7 @@ You can customize the View Header appearance by using [ViewHeaderStyle](http://h
             <schedule:ViewHeaderStyle 
 						BackgroundColor="Blue" 
 						DayTextColor="White"
-						DayTextStyle="Arial,15">
+						DayFontFamily="Arial">
             </schedule:ViewHeaderStyle>
         </schedule:SfSchedule.ViewHeaderStyle>
     </schedule:SfSchedule>
@@ -216,7 +216,7 @@ You can customize the View Header appearance by using [ViewHeaderStyle](http://h
 		ViewHeaderStyle viewHeaderStyle = new ViewHeaderStyle();
 		viewHeaderStyle.BackgroundColor = Color.Blue;
 		viewHeaderStyle.DayTextColor = Color.White;
-		viewHeaderStyle.DayTextStyle = Font.OfSize("Arial", 15);
+		viewHeaderStyle.DayFontFamily = "Arial";
 		schedule.ViewHeaderStyle = viewHeaderStyle;
 {% endhighlight %}
 {% endtabs %}

@@ -28,8 +28,8 @@ You can customize the default appearance of view header in [DayView](https://hel
 			viewHeaderStyle.BackgroundColor = Color.FromHex("#009688");
 			viewHeaderStyle.DayTextColor = Color.FromHex("#FFFFFF");
 			viewHeaderStyle.DateTextColor = Color.FromHex("#FFFFFF");
-			viewHeaderStyle.DayTextStyle = Font.OfSize("Arial", 15);
-			viewHeaderStyle.DateTextStyle = Font.OfSize("Arial", 15);
+			viewHeaderStyle.DayFontFamily = "Arial";
+			viewHeaderStyle.DateFontFamily = "Arial";	
 			schedule.ViewHeaderStyle = viewHeaderStyle;
 			
 {% endhighlight %}
@@ -42,8 +42,8 @@ You can customize the default appearance of view header in [DayView](https://hel
               BackgroundColor="#009688" 
               DayTextColor="#FFFFFF" 
               DateTextColor="#FFFFFF" 
-			  DayTextStyle="Arial,15" 
-              DateTextStyle="Arial,15">
+			  DayFontFamily="Arial"
+			  DateFontFamily="Arial">
         </schedule:ViewHeaderStyle>
      </schedule:SfSchedule.ViewHeaderStyle>
     </schedule:SfSchedule>
@@ -76,6 +76,7 @@ You can customize the height of the ViewHeader in `DayView` by setting [ViewHead
 ![](daymodule_images/viewheaderheight_day.png)
 
 ### Customize Font Appearance
+
 you can change the appearance of Font by setting the  [DayFontFamily](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderStyle~DayFontFamilyProperty.html) and [DateFontFamily](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderStyle~DateFontFamilyProperty.html) property of [ViewHeaderStyle](https://help.syncfusion.com/xamarin/sfschedule/dayview#viewheader-appearance) property in Schedule.
 
 {% tabs %}
@@ -84,12 +85,12 @@ viewHeaderStyle.DayFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Re
 viewHeaderStyle.DateFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");		
 {% endhighlight %}
 {% highlight XAML %}
- <schedule:ViewHeaderStyle.DayFontFamily>
-	  <OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
- </schedule:ViewHeaderStyle.DayFontFamily>
- <schedule:ViewHeaderStyle.DateFontFamily>
-	  <OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
- </schedule:ViewHeaderStyle.DateFontFamily>
+<schedule:ViewHeaderStyle.DayFontFamily>
+  <OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
+</schedule:ViewHeaderStyle.DayFontFamily>
+<schedule:ViewHeaderStyle.DateFontFamily>
+  <OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
+</schedule:ViewHeaderStyle.DateFontFamily>
 {% endhighlight %}
 {% endtabs %}
 

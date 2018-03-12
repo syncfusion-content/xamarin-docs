@@ -40,6 +40,8 @@ The SfPopupLayout allows showing the pop-up content at various available positio
 
 ## Center positioning
 
+SfPopupLayout can be shown at the center by using the following options.
+
 ### IsOpen property
 
 To open the SfPopupLayout, use the `SfPopupLayout.IsOpen` property as in the following code sample.
@@ -85,16 +87,15 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-N> SfPopupLayout.IsOpen property is not applicable for Type B.
-
 Run the previous sample to get the following output on iOS, Android, and Windows Phone devices.
+
 ![](GettingStarted_images/IsOpen_Property.png)
+
+N> SfPopupLayout.IsOpen property is not applicable for Type B.
 
 ### SfPopupLayout.Show()
 
 To open the SfPopupLayout, use the `SfPopupLayout.Show()` as in the following code sample.
-
-#### Type A:
 
 {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8" ?>
@@ -138,9 +139,12 @@ namespace GettingStarted
 {% endhighlight %}
 
 Run the previous sample to get the following output on iOS, Android, and Windows Phone devices.
+
 ![](GettingStarted_images/ShowPopup.png)
 
 ## Absolute positioning
+
+SfPopupLayout can be shown at the specified position by using the following method.
 
 ### SfPopupLayout.Show(x-position, y-position)
 
@@ -181,13 +185,14 @@ namespace GettingStarted
         private void ClickToShowPopup_Clicked(object sender, EventArgs e)
         {
            // Shows SfPopupLayout at x-position 100 and y position 100.
-           popupLayout.Show(100, 100);
+           popupLayout.Show(100, 700);
         }
     }
 }
 {% endhighlight %}
 
 Run the previous sample to get the following output on iOS, Android, and Windows Phone devices.
+
 ![](GettingStarted_images/ShowAtXYPosition.png)
 
 ### SfPopupLayout.ShowAtTouchPoint()
@@ -235,12 +240,15 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-N> SfPopupLayout.ShowAtTouchPoint() is not applicable for Type B.
-
 Run the previous sample to get the following output on iOS, Android, and Windows Phone devices.
+
 ![](GettingStarted_images/ShowAtTouchPoint.png)
 
+N> SfPopupLayout.ShowAtTouchPoint() is not applicable for Type B.
+
 ## Relative positioning
+
+SfPopupLayout can be shown at the relative position by using the following method.
 
 ### SfPopupLayout.ShowRelativeToView(View, RelativePosition)
 
@@ -256,9 +264,11 @@ To open the SfPopupLayout, use the `SfPopupLayout.ShowRelativeToView(View, Relat
              xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms">
 <sfPopup:SfPopupLayout x:Name="popUpLayout">
    <sfPopup:SfPopupLayout.Content>
-     <StackLayout x:Name="layout">
-       <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" VerticalOptions="Start" HorizontalOptions="FillAndExpand" />
-       <Label x:Name="label" IsVisible="true" Text="This is SfPopupLayout"/>
+    <StackLayout x:Name="mainLayout" VerticalOptions="Center" HorizontalOptions="Center">
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand">
+          <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" TextColor="White" HeightRequest="60" VerticalOptions="Center" Margin="100,0,0,0"
+            HorizontalOptions="Center" BackgroundColor="Blue" />
+        </StackLayout>
      </StackLayout>
     </sfPopup:SfPopupLayout.Content>
   </sfPopup:SfPopupLayout>
@@ -289,4 +299,5 @@ namespace GettingStarted
 {% endhighlight %}
 
 This is how the final output will look like on iOS, Android, and Windows Phone devices.
+
 ![](GettingStarted_images/RelativeToBottom.png)

@@ -13,7 +13,9 @@ This section provides a quick overview for working with the SfPopupLayout for Xa
 
 ## Assembly deployment
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the {Syncfusion Essential Studio Installed location}\Essential Studio\16.1.0.24\Xamarin\lib installation folders. E.g.  C:\Program Files (x86)\Syncfusion\Essential Studio\16.1.0.24\Xamarin\lib
+After installing Essential Studio for Xamarin, you can find all the required assemblies in the {Syncfusion Essential Studio Installed location}\Essential Studio\16.1.0.24\Xamarin\lib installation folders. 
+
+E.g.  C:\Program Files (x86)\Syncfusion\Essential Studio\16.1.0.24\Xamarin\lib
 
 N> Assemblies can be found in an unzipped package location in Mac.
 
@@ -145,8 +147,15 @@ Create a new BlankApp (Xamarin.Forms.Portable) application in Xamarin Studio o
 3. The SfPopupLayout can be displayed by the following cases. 
     
     * The SfPopupLayout can be displayed by making it as the base view or content view of the main page. 
+    * You can continue to keep your view as the content view of the main page and still display pop-up over your view by simply calling the SfPopupLayout.Show() method.
+
+4. For the first case, set the view over which the SfPopupLayout should be displayed as the content of the SfPopupLayout using the [SfPopupLayout.Content](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~ContentProperty.html) property.
 
 ### Displaying pop-up when the SfPopupLayout is set as root view
+
+The SfPopupLayout can be displayed by making it as the base view or content view of the main page. 
+
+Refer to the following code example for displaying popup.
 
 {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8" ?>
@@ -188,10 +197,12 @@ namespace GettingStarted
     }
 }
 {% endhighlight %}
-
-    * You can continue to keep your view as the content view of the main page and still display pop-up over your view by simply calling the SfPopupLayout.Show() method.
  
 ### Displaying pop-up when the SfPopupLayout is not set as root view 
+
+You can continue to keep your view as the content view of the main page and still display pop-up over your view by simply calling the SfPopupLayout.Show() method.
+
+Refer to the following code example for displaying popup.
 
 {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8" ?>
@@ -231,9 +242,8 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
- 4. For the first case, set the view over which the SfPopupLayout should be displayed as the content of the SfPopupLayout using the [SfPopupLayout.Content](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~ContentProperty.html) property.
-
 This is how the final output will look like on iOS, Android, and Windows Phone devices.
+
 ![](GettingStarted_images/DefaultAppearance.png)
 
 ## Customize positioning

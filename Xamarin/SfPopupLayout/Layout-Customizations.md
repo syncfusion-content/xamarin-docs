@@ -76,6 +76,7 @@ namespace GettingStarted
 {% endhighlight %}
 
 If the previous sample runs with the `AppearanceMode` as `OneButton`, the output will appear on iOS, Android, and Windows Phone devices as follows:
+
 ![](GettingStarted_images/AppearanceMode_OneButton.png)
 
 ## Pop-up with two buttons in the footer
@@ -126,6 +127,7 @@ namespace GettingStarted
 {% endhighlight %}
 
 If the previous sample runs with the `AppearanceMode` as `TwoButton`, the output will appear on iOS, Android, and Windows Phone devices as follows:
+
 ![](GettingStarted_images/AppearanceMode_TwoButton.png)
 
 ## Customizing pop-up layouts
@@ -174,13 +176,14 @@ namespace GettingStarted
                 headerContent = new Label();
                 headerContent.Text = "Customized Header";
                 headerContent.FontAttributes = FontAttributes.Bold;
-                headerContent.BackgroundColor = Color.LightSkyBlue;
+                headerContent.BackgroundColor = Color.FromRgb(0, 0, 225);
                 headerContent.FontSize = 16;
                 headerContent.HorizontalTextAlignment = TextAlignment.Center;
                 headerContent.VerticalTextAlignment = TextAlignment.Center;
                 return headerContent;
             });
 
+            popupLayout.PopupView.ShowCloseButton = false;
             // Adding HeaderTemplate of the SfPopupLayout
             popupLayout.PopupView.HeaderTemplate = headerTemplateView;
         }
@@ -194,6 +197,7 @@ namespace GettingStarted
 {% endhighlight %}
 
 This is how the final output will look like on iOS, Android, and Windows Phone devices.
+
 ![](PopupLayout_images/HeaderTemplate.png)
 
 ### Footer customization
@@ -238,11 +242,11 @@ namespace GettingStarted
                 footerContent = new Label();
                 footerContent.Text = "Customized Footer";
                 footerContent.FontAttributes = FontAttributes.Bold;
-                footerContent.BackgroundColor = Color.LightSkyBlue;
+                footerContent.BackgroundColor = Color.FromRgb(0, 0, 225);
                 footerContent.FontSize = 16;
                 footerContent.HorizontalTextAlignment = TextAlignment.Center;
                 footerContent.VerticalTextAlignment = TextAlignment.Center;
-                return headerContent;
+                return footerContent;
             });
 
             // Adding FooterTemplate of the SfPopupLayout
@@ -258,9 +262,11 @@ namespace GettingStarted
 {% endhighlight %}
 
 This is how the final output will look like on iOS, Android, and Windows Phone devices.
+
 ![](PopupLayout_images/FooterTemplate.png)
 
 ## How to 
+
 ### Hide the header in the SfPopupLayout
 
 The SfPopupLayout allows hiding the header by using the [SfPopupLayout.PopupView.ShowHeader](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~ShowHeader.html) property. The default value of this property is `true`.
@@ -280,6 +286,7 @@ public MainPage()
 {% endhighlight %}
 
 This is how the final output will look like on iOS, Android, and Windows Phone devices.
+
 ![](PopupLayout_images/ShowHeader_False.png)
 
 ### Hide the footer in SfPopupLayout
@@ -301,6 +308,7 @@ public MainPage()
 {% endhighlight %}
 
 This is how the final output will look like on iOS, Android, and Windows Phone devices.
+
 ![](PopupLayout_images/ShowFooter_False.png)
 
 ### Hide the Close icon in the SfPopupLayout 
@@ -322,6 +330,7 @@ public MainPage()
 {% endhighlight %}
 
 This is how the final output will look like on iOS, Android and Windows Phone devices.
+
 ![](PopupLayout_images/ShowClosebutton_False.png)
 
 ## Styles
@@ -372,18 +381,19 @@ public MainPage()
 {
     ....
     InitializeComponent();
-    popupLayout.PopupView.PopupStyle.HeaderBackgroundColor = Color.LightSkyBlue;
-    popupLayout.PopupView.PopupStyle.HeaderFontAttribute = FontAttributes.Italic;
+    popupLayout.PopupView.PopupStyle.HeaderBackgroundColor = Color.FromRgb(105,105,105);
+    popupLayout.PopupView.PopupStyle.HeaderFontAttribute = FontAttributes.Bold;
     popupLayout.PopupView.PopupStyle.HeaderFontFamily = "Helvetica-Bold";
     popupLayout.PopupView.PopupStyle.HeaderFontSize = 25;
     popupLayout.PopupView.PopupStyle.HeaderTextAlignment = TextAlignment.Center;
-    popupLayout.PopupView.PopupStyle.HeaderTextColor = Color.Black;
+    popupLayout.PopupView.PopupStyle.HeaderTextColor = Color.White;
     ....
 }
 
 {% endhighlight %}
 
 This is how the final output will look like on iOS, Android and Windows Phone devices.
+
 ![](PopupLayout_images/HeaderCustomization.png)
 
 ### Customizing footer elements
@@ -431,17 +441,18 @@ public MainPage()
     popupLayout.PopupView.AppearanceMode = Syncfusion.XForms.PopupLayout.AppearanceMode.TwoButton;
 
     // Footer customization
-    popupLayout.PopupView.PopupStyle.FooterBackgroundColor = Color.LightSkyBlue;
-    popupLayout.PopupView.PopupStyle.AcceptButtonBackgroundColor = Color.HotPink;
-    popupLayout.PopupView.PopupStyle.AcceptButtonTextColor = Color.Blue;
-    popupLayout.PopupView.PopupStyle.DeclineButtonBackgroundColor = Color.GreenYellow;
-    popupLayout.PopupView.PopupStyle.DeclineButtonTextColor = Color.Red;
+    popupLayout.PopupView.PopupStyle.FooterBackgroundColor = Color.LightGray;
+    popupLayout.PopupView.PopupStyle.AcceptButtonBackgroundColor = Color.FromRgb(105, 105, 105);
+    popupLayout.PopupView.PopupStyle.AcceptButtonTextColor = Color.White;
+    popupLayout.PopupView.PopupStyle.DeclineButtonBackgroundColor = Color.FromRgb(105, 105, 105);
+    popupLayout.PopupView.PopupStyle.DeclineButtonTextColor = Color.White;
     ....
 }
 
 {% endhighlight %}
 
 This is how the final output will look like on iOS, Android, and Windows Phone devices.
+
 ![](PopupLayout_images/FooterCustomization.png)
 
 ## Border customization
@@ -476,8 +487,7 @@ public MainPage()
 {
     ....
     InitializeComponent();
-
-    popupLayout.PopupView.PopupStyle.BorderColor = Color.Brown;
+    popupLayout.PopupView.PopupStyle.BorderColor = Color.LightBlue;
     popupLayout.PopupView.PopupStyle.BorderThickness = 3;
     popupLayout.PopupView.PopupStyle.CornerRadius = 5;
     ....
@@ -486,4 +496,5 @@ public MainPage()
 {% endhighlight %}
 
 This is how the final output will look like on iOS, Android, and Windows Phone devices.
+
 ![](PopupLayout_images/BorderCustomization.png)

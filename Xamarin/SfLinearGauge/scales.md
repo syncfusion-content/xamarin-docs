@@ -127,11 +127,14 @@ The [`MaximumLabels`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/
 
     <gauge:SfLinearGauge>
 
-            <gauge:SfLinearGauge.Scales>
+           <gauge:SfLinearGauge.Scales>
                 <gauge:LinearScale MaximumLabels="4" ScaleBarColor="#e0e0e0" LabelColor="#424242" MinorTicksPerInterval ="1">
-				<gauge:LinearScale.MajorTickSettings>
-                        <gauge:LinearTickSettings Thickness = "1"/>
+				 <gauge:LinearScale.MajorTickSettings>
+                        <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="15"/>
                     </gauge:LinearScale.MajorTickSettings>
+                    <gauge:LinearScale.MinorTickSettings>
+                        <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="7"/>
+                    </gauge:LinearScale.MinorTickSettings>
                 </gauge:LinearScale>
             </gauge:SfLinearGauge.Scales>
 
@@ -146,6 +149,11 @@ The [`MaximumLabels`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/
      linearScale.ScaleBarColor = Color.FromHex("#e0e0e0");
      linearScale.LabelColor = Color.FromHex("#424242");
      linearScale.MajorTickSettings.Thickness = 1;
+       linearScale.MajorTickSettings.Length = 15;
+       linearScale.MajorTickSettings.Color = Color.Gray;
+       linearScale.MinorTickSettings.Color = Color.Gray;
+       linearScale.MinorTickSettings.Length = 7;
+       linearScale.MinorTickSettings.Thickness = 1;
      linearScale.MinorTicksPerInterval = 1;
      linearScale.MaximumLabels = 4;
      linearGauge.Scales.Add(linearScale);
@@ -158,7 +166,7 @@ The [`MaximumLabels`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/
 
 ## Scale customization
 
-You can customize the color, length, size, and position of the [`LinearScale`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale.html) by using the [`ScaleBarColor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~ScaleBarColor.html), [`ScaleBarLength`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~ScaleBarLength.html), [`ScaleBarSize`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~ScaleBarSize.html), and [`Offset`]( https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~Offset.html) properties, respectively.
+You can customize the color, length, size, and position of the [`LinearScale`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale.html) by using the [`ScaleBarColor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~ScaleBarColor.html), [`ScaleBarLength`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~ScaleBarLength.html), [`ScaleBarSize`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~ScaleBarSize.html), and [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~Offset.html) properties, respectively.
 
 {% tabs %}
 
@@ -166,13 +174,13 @@ You can customize the color, length, size, and position of the [`LinearScale`](h
 
      <gauge:SfLinearGauge Orientation="OrientationVertical">
 
-            <gauge:SfLinearGauge.Scales>
-                <gauge:LinearScale ScaleBarColor="#4c88dc" LabelOffset="-5" MinorTicksPerInterval="1" Offset = "10" ScaleBarLength="300" ScaleBarSize="5" LabelColor="#424242">
+         <gauge:SfLinearGauge.Scales>
+                <gauge:LinearScale ScaleBarColor="#4c88dc" LabelOffset="-5" MinorTicksPerInterval="1" Offset="10" ScaleBarLength="300" ScaleBarSize="5" LabelColor="#424242">
                     <gauge:LinearScale.MajorTickSettings>
-                        <gauge:LinearTickSettings Length=" = 25" Color="Gray"/>
+                        <gauge:LinearTickSettings Length= "25" Color="Gray"/>
                     </gauge:LinearScale.MajorTickSettings>
                     <gauge:LinearScale.MinorTickSettings>
-                        <gauge:LinearTickSettings Length=" = 10" Color="Gray"/>
+                        <gauge:LinearTickSettings Length="10" Color="Gray"/>
                     </gauge:LinearScale.MinorTickSettings>
                 </gauge:LinearScale>
             </gauge:SfLinearGauge.Scales>
@@ -215,11 +223,14 @@ To place the scale at opposite to its original position, set the [`OpposedPositi
 
      <gauge:SfLinearGauge>
 
-            <gauge:SfLinearGauge.Scales>
+             <gauge:SfLinearGauge.Scales>
                 <gauge:LinearScale OpposedPosition="True" ScaleBarColor="#e0e0e0" LabelColor="#424242" MinorTicksPerInterval="1">
-                 <gauge:LinearScale.MajorTickSettings>
-                        <gauge:LinearTickSettings Thickness="1"/>
+                    <gauge:LinearScale.MajorTickSettings>
+                        <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="15"/>
                     </gauge:LinearScale.MajorTickSettings>
+                    <gauge:LinearScale.MinorTickSettings>
+                        <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="7"/>
+                    </gauge:LinearScale.MinorTickSettings>
                 </gauge:LinearScale>
             </gauge:SfLinearGauge.Scales>
 
@@ -234,6 +245,11 @@ To place the scale at opposite to its original position, set the [`OpposedPositi
        linearScale.ScaleBarColor = Color.FromHex("#e0e0e0");
        linearScale.LabelColor = Color.FromHex("#424242");
        linearScale.MajorTickSettings.Thickness = 1;
+       linearScale.MajorTickSettings.Length = 15;
+       linearScale.MajorTickSettings.Color = Color.Gray;
+       linearScale.MinorTickSettings.Color = Color.Gray;
+       linearScale.MinorTickSettings.Length = 7;
+       linearScale.MinorTickSettings.Thickness = 1;
        linearScale.MinorTicksPerInterval = 1;
        linearScale.OpposedPosition = true;
        linearGauge.Scales.Add(linearScale); 
@@ -257,8 +273,11 @@ You can set the scale position to its forward and backward using the [`ScalePosi
             <gauge:SfLinearGauge.Scales>
                 <gauge:LinearScale ScaleBarColor="#e0e0e0" LabelColor="#424242" MinorTicksPerInterval="1" ScalePosition="BackWard">
                  <gauge:LinearScale.MajorTickSettings>
-                        <gauge:LinearTickSettings Thickness="1"/>
+                        <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="15"/>
                     </gauge:LinearScale.MajorTickSettings>
+                    <gauge:LinearScale.MinorTickSettings>
+                        <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="7"/>
+                    </gauge:LinearScale.MinorTickSettings>
                 </gauge:LinearScale>
             </gauge:SfLinearGauge.Scales>
 
@@ -273,6 +292,11 @@ You can set the scale position to its forward and backward using the [`ScalePosi
         linearScale.ScaleBarColor = Color.FromHex("#e0e0e0");
         linearScale.LabelColor = Color.FromHex("#424242");
         linearScale.MajorTickSettings.Thickness = 1;
+        linearScale.MajorTickSettings.Length = 15;
+        linearScale.MajorTickSettings.Color = Color.Gray;
+        linearScale.MinorTickSettings.Color = Color.Gray;
+        linearScale.MinorTickSettings.Length = 7;
+        linearScale.MinorTickSettings.Thickness = 1;
         linearScale.MinorTicksPerInterval = 1;
         linearScale.ScalePosition = ScalePosition.BackWard;
         linearGauge.Scales.Add(linearScale);
@@ -295,10 +319,13 @@ Corners of the [`LinearScale`](https://help.syncfusion.com/cr/cref_files/xamarin
         <gauge:SfLinearGauge>
 
             <gauge:SfLinearGauge.Scales>
-                <gauge:LinearScale ScaleBarSize="20" CornerRadiusType="Both"  CornerRadius="10" ScaleBarColor="#e0e0e0" LabelColor="#424242">
+                <gauge:LinearScale ScaleBarSize="20" CornerRadiusType="Start"  CornerRadius="10" ScaleBarColor="#e0e0e0" LabelColor="#424242">
                     <gauge:LinearScale.MajorTickSettings>
-                        <gauge:LinearTickSettings Thickness="1"/>
+                        <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="15"/>
                     </gauge:LinearScale.MajorTickSettings>
+                    <gauge:LinearScale.MinorTickSettings>
+                        <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="7"/>
+                    </gauge:LinearScale.MinorTickSettings>
                 </gauge:LinearScale>
             </gauge:SfLinearGauge.Scales>
 
@@ -313,9 +340,14 @@ Corners of the [`LinearScale`](https://help.syncfusion.com/cr/cref_files/xamarin
          LinearScale linearScale = new LinearScale();
          linearScale.ScaleBarSize = 20;
          linearScale.ScaleBarColor = Color.FromHex("#e0e0e0");
-         linearScale.CornerRadiusType = CornerRadiusType.Both;
+         linearScale.CornerRadiusType = CornerRadiusType.Start;
          linearScale.CornerRadius = 10;
          linearScale.MajorTickSettings.Thickness = 1;
+         linearScale.MajorTickSettings.Length = 15;
+         linearScale.MajorTickSettings.Color = Color.Gray;
+         linearScale.MinorTickSettings.Color = Color.Gray;
+         linearScale.MinorTickSettings.Length = 7;
+         linearScale.MinorTickSettings.Thickness = 1;
          linearScale.LabelColor = Color.FromHex("#424242");
          linearGauge.Scales.Add(linearScale);
 	
@@ -450,7 +482,7 @@ It helps you to add multiple scales to the same linear gauge and customize all t
 
 ## Setting gradient color for scale
 
-You can give smooth color transition to scale to specifying the different colors based on scale value by using [`GradientStops`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~GradientStops.html).
+You can give smooth color transition to scale to specifying the different colors based on scale value by using [`GradientStops`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~GradientStops.html) property.
 
 {% tabs %}
 
@@ -460,12 +492,14 @@ You can give smooth color transition to scale to specifying the different colors
 
             <gauge:SfLinearGauge.Scales>
                 <gauge:LinearScale ScaleBarSize="15" MinorTicksPerInterval="1" LabelColor="Black">
+
                     <gauge:LinearScale.MajorTickSettings>
-                        <gauge:LinearTickSettings Color="Black" Thickness="1"/>
+                        <gauge:LinearTickSettings Thickness="1"  Color="Black" Length="15"/>
                     </gauge:LinearScale.MajorTickSettings>
                     <gauge:LinearScale.MinorTickSettings>
-                        <gauge:LinearTickSettings Color="Black"/>
+                        <gauge:LinearTickSettings Thickness="1"  Color="Black" Length="7"/>
                     </gauge:LinearScale.MinorTickSettings>
+                    
                     <gauge:LinearScale.GradientStops>
                         <gauge:GaugeGradientStop Value="10" Color="#51c9e1"/>
                         <gauge:GaugeGradientStop Value="40" Color="#93e9e1"/>
@@ -515,10 +549,11 @@ You can give smooth color transition to scale to specifying the different colors
       linearScale.MajorTickSettings.Color = Color.Black;
       linearScale.MinorTickSettings.Color = Color.Black;
       linearScale.MajorTickSettings.Thickness = 1;
+      linearScale.MajorTickSettings.Length = 15;
+      linearScale.MinorTickSettings.Length = 7;
+      linearScale.MinorTickSettings.Thickness = 1;
       linearScale.MinorTicksPerInterval = 1;
       linearScale.LabelColor = Color.Black;
-      linearGauge.Scales.Add(linearScale);
-
       linearGauge.Scales.Add(linearScale);
 	
 {% endhighlight %}

@@ -10,11 +10,11 @@ documentation: ug
 
 # Date Time Picker
 
-In our Xamarin.Forms, SfPicker control has multi column support. Using this we can populate day, month, year, hour and minute values of collection in SfPicker control. 
+In our Xamarin.Forms, picker control has multi column support. By using this, you we can populate day, month, year, hour, and minute values of collection in picker control. 
 
-We have demonstrated how to create custom DateTimePicker using Picker control in the following steps.
+This section explains create custom DateTimePicker by using picker control.
 
-**Step** **1** **:** We have created custom class named as “DateTimePicker”. This class should inherit from SfPicker control.
+**Step** **1** **:** Create a custom class, and name it as “DateTimePicker”. This class should be inherited from picker control.
 {% highlight c# %}
 public class DateTimePicker : SfPicker
 
@@ -24,27 +24,27 @@ public class DateTimePicker : SfPicker
 
 {% endhighlight %}
 
-**Step** **2** **:** After that create six ObservableCollection with object type in DateTimePicker class. 
+**Step** **2** **:** Create six ObservableCollection with object type in DateTimePicker class. 
 
 **Collection** **details** **:** 
 
-Day Collection, Month Collection, Year Collection, Hour Collection and Minute Collection.
+Day collection, Month collection, Year collection, Hour collection, and Minute collection.
 
-Day Collection -> We have added current month days using DateTime.DaysInMonth.
+Day collection Add current month's days by using DateTime.DaysInMonth.
 
-Month Collection -> We have added Jan to Dec months
+Month collection -Add months from January to December.
 
-Year Collection -> We have added 1990 to 2050 years.
+Year collection -Add years from 1990 to 2050.
 
-Hour Collection -> We have added 0 to 24 hours.
+Hour collection -Add hours from 0 to 24.
 
-Minute Collection -> We have added 00 to 59 minutes.
+Minute collection -Add minutes from  00 to 59.
 
-Date Collection -> We have added all the five collections.
+Date collection -Add all the five collections.
 
-Date Collection is main collection we have assigned this collection to ItemsSource of Picker Control.
+Date collection is the main collection, and this collection has been assigned to ItemsSource of picker control.
 
-The below code demonstrates Date collection creation.
+The following code demonstrates date collection creation.
 
 {% highlight c# %}
 
@@ -222,7 +222,7 @@ Date.Add(Minute);
 
 {% endhighlight %}
 
-**Step** **3** **:** We have updated the day value based on month and year value using Selection changed event of SfPicker control. Since the days of each month differs we have to handle this collection.
+**Step** **3** **:** Update the day value based on month and year values by using Selection changed event of picker control. Since the days of each month differs, you should handle this collection.
 
 {% highlight c# %}
 
@@ -338,7 +338,7 @@ catch
 
 {% endhighlight %}
 
-**Step** **4** **:** We have defined each column headers “Day”, “Month” , “Year” , “Hour” , “Minute”  using ColumnHeaderText property of SfPicker control. The below code demonstrates how to define header for each column of SfPicker control.
+**Step** **4** **:** Define each column headers “Day”, “Month” , “Year” , “Hour” , and “Minute”  by using the ColumnHeaderText property. The following code demonstrates how to define header for each column of picker control.
 
 {% highlight c# %}
 public class DateTimePicker : SfPicker
@@ -387,7 +387,7 @@ this.ColumnHeaderText = Headers;
 
 {% endhighlight %}
 
-**Step** **5** **:** Finally we have enabled SfPicker header, Column header and footer using ShowHeader,ShowFooter and ShowColumnHeader properties.
+**Step** **5** **:** Finally enable the picker header, Column header and footer by using the ShowHeader,ShowFooter and ShowColumnHeader properties.
 
 {% highlight c# %}
 public DateTimePicker()
@@ -412,7 +412,7 @@ ShowColumnHeader = true;
 
 {% endhighlight %}
 
-**Step** **6** **:** We have added the DateTimePicker control in main XAML page. Please refer the below code snippets.
+**Step** **6** **:** Add the DateTimePicker control in main XAML page. Please refer the following code snippets.
 
 {% tabs %}
 {% highlight xaml %}
@@ -500,12 +500,12 @@ date.IsOpen = !date.IsOpen;
 {% endhighlight %}
 {% endtabs %}
 
-Screen shot for the above codes.
+The following screenshot illustrates the output of the above codes.
 
 ![](images/datetimepicker_img1.jpeg)
 
 
-We have attached DateTimePicker sample for reference. Please download the sample from the following link.
+You can download the DateTimePicker sample for reference from the following link.
 
 Sample link: [DateTimePicker](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DatePicker1441640702)
 

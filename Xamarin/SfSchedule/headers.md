@@ -31,9 +31,7 @@ You can customize the height for the Header in Schedule using `HeaderHeight` in 
 ## Appearance
 
 You can change the header format and style using `HeaderStyle` property in schedule.
-
-You can change the background color,text style and text size using properties such as [BackgroundColor](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.HeaderStyle~BackgroundColorProperty.html),[TextStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.HeaderStyle~TextStyleProperty.html),[TextColor](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.HeaderStyle~TextColorProperty.html), of Header using `HeaderStyle` property in schedule.
-
+You can change the background color, font family, font attributes and font size using properties such as [BackgroundColor](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.HeaderStyle~BackgroundColorProperty.html), [FontFamily](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.HeaderStyle~FontFamilyProperty.html), [FontAttributes](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.HeaderStyle~FontAttributesProperty.html), [FontSize](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.HeaderStyle~FontSizeProperty.html), [TextColor](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.HeaderStyle~TextColorProperty.html), of Header using `HeaderStyle` property in schedule.
 {% tabs %} 
 {% highlight xaml %}
 
@@ -42,7 +40,7 @@ You can change the background color,text style and text size using properties su
 			<syncfusion:HeaderStyle
 				BackgroundColor="#FADBD8" 
 				TextColor="Blue" 
-				TextStyle="20" />
+				TextStyle="20"/>
 		</syncfusion:SfSchedule.HeaderStyle>
 	</syncfusion:SfSchedule>
 
@@ -134,3 +132,41 @@ void Handle_HeaderTapped(object sender, HeaderTappedEventArgs e)
     var dateTime = e.DateTime;
 }
 {% endhighlight %}
+
+## Custom Font
+
+We can change the appearance of Font by setting the  [FontFamily](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderStyle~FontFamilyProperty.html) property of [HeaderStyle](https://help.syncfusion.com/xamarin/sfschedule/headers#appearance) property in Schedule.
+
+{% tabs %} 
+{% highlight xaml %}
+<schedule:HeaderStyle.FontFamily>
+	<OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
+</schedule:HeaderStyle.FontFamily>
+{% endhighlight %}
+{% highlight c# %}
+headerStyle.FontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
+{% endhighlight %}
+{% endtabs %} 
+
+![](Header_images/customfontheader.png) 
+
+Following steps will explain how to configure the custom fonts.
+
+### Custom Font Setting in Xamarin.Forms (Android) 
+* Download the Custom Font (e.g. Lobster-Regular.ttf) 
+* Add the downloaded Custom Font to the Assets folder of the Xamarin.Forms (Android) project.
+* Then, use the Custom Font name as FontFamily.
+
+### Custom Font Setting in Xamarin.Forms (ios)
+* Download the Custom Font (e.g. Lobster-Regular.ttf)
+* Add the downloaded Custom Font to the Resources folder of the Xamarin.Forms (iOS) project.
+* Edit info.plist and add a key Fonts provided by application (value type should be Array). In item0 of the array enter the name of the FontFamily you added in the Resource folder. (Such as Lobster-Regular.ttf).
+* Then, directly use Custom Font name as FontFamily.
+
+>**Note**:
+ No need to mention .ttf when set the Custom Font in iOS.
+
+### Custom Font Setting in Xamarin.Forms (UWP)
+* Download the Custom Font (e.g. Lobster-Regular.ttf).
+* Add the downloaded Custom Font to the Assets folder of the Xamarin.Forms (UWP) project.
+* Then, directly use Custom Font name as FontFamily. When Setting custom font in UWP use the format (FontFamily = ” Assets/Lobster-Regular.ttf#Lobster”).

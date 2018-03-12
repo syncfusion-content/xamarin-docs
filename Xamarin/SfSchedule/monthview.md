@@ -165,8 +165,7 @@ You can display the Week Number of the year in `MonthView` by setting [ShowWeekN
 ![](monthview_images/showweeknumber.png)
 
 ## Week Number Appearance
-You can customize the Week Number appearance by using [WeekNumberStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~WeekNumberStyle.html) property of `MonthViewSettings`. Week number [BackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekNumberStyle~BackgroundColor.html), [TextColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekNumberStyle~TextColor.html), [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekNumberStyle~TextStyle.html) can be customized using `WeekNumberStyle` properties.
-
+You can customize the Week Number appearance by using [WeekNumberStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~WeekNumberStyle.html) property of `MonthViewSettings`. Week number [BackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekNumberStyle~BackgroundColor.html), [TextColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekNumberStyle~TextColor.html), [FontFamily](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekNumberStyle~FontFamily.html), [FontSize](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekNumberStyle~FontSize.html), [FontAttributes](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekNumberStyle~FontAttributes.html) can be customized using `WeekNumberStyle` properties.
 {% tabs %}
 {% highlight c# %}
 		//creating new instance for WeekNumberStyle
@@ -206,7 +205,7 @@ You can customize the View Header appearance by using [ViewHeaderStyle](http://h
         <schedule:SfSchedule.ViewHeaderStyle>
             <schedule:ViewHeaderStyle 
 						BackgroundColor="Blue" 
-						DayTextColor="White" 
+						DayTextColor="White"
 						DayTextStyle="Arial,15">
             </schedule:ViewHeaderStyle>
         </schedule:SfSchedule.ViewHeaderStyle>
@@ -467,8 +466,7 @@ You can customize the Month inline view Appointment by using [OnMonthInlineAppoi
 {% endhighlight %}
 {% endtabs %}
 
->**Note**:  Inline view customization - No support for inline view appointments customization using custom view in XForms UWP.
-
+>**Note**:  Inline view customization - There is no support for inline view appointments customization using custom view, TimeTextSize, TimeTextFormat and TimeTextColor properties in XForms UWP.
 ![](monthview_images/inlinecustomview.png)
 
 ## Selection
@@ -581,3 +579,84 @@ schedule.MonthViewSettings = monthViewSettings;
 {% endtabs %}
 
 ![](monthview_images/TodayBackground.png)
+
+## Custom Font
+
+We can change the appearance of Font by setting the FontFamily property to the following classes.
+
+* [ViewHeaderStyle](https://help.syncfusion.com/xamarin/sfschedule/dayview#viewheader-appearance) - We can change the appearance of [ViewHeaderStyle](https://help.syncfusion.com/xamarin/sfschedule/dayview#viewheader-appearance) by setting the [DayFontFamily](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderStyle~DayFontFamilyProperty.html) and [DateFontFamily](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderStyle~DateFontFamilyProperty.html) properties of Schedule `ViewHeaderStyle`.
+* [MonthCellStyle](https://help.syncfusion.com/xamarin/sfschedule/monthview#monthcell-appearance) - We can change the appearance of [MonthCellStyle](https://help.syncfusion.com/xamarin/sfschedule/monthview#monthcell-appearance) by setting the [FontFamily](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewCellStyle~FontFamily.html) property of Schedule `MonthCellStyle`.
+* [MonthInlineViewStyle](https://help.syncfusion.com/xamarin/sfschedule/monthview#inlineview-appearance) - We can change the appearance of [MonthInlineViewStyle](https://help.syncfusion.com/xamarin/sfschedule/monthview#inlineview-appearance) by setting the [FontFamily](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineViewStyle~FontFamily.html) property of Schedule `MonthInlineViewStyle`.
+* [WeekNumberStyle](https://help.syncfusion.com/xamarin/sfschedule/monthview#week-number-appearance) - We can change the appearance of [WeekNumber](https://help.syncfusion.com/xamarin/sfschedule/monthview#week-number-appearance) by setting the [FontFamily](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekNumberStyle~FontFamily.html) property of Schedule `WeekNumberStyle`.
+
+{% tabs %}
+{% highlight xaml %}
+<schedule:ViewHeaderStyle.DayFontFamily>
+	<OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
+</schedule:ViewHeaderStyle.DayFontFamily>
+{% endhighlight %}
+{% highlight c# %}
+viewHeaderStyle.DayFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
+{% endhighlight %}
+{% endtabs %}
+
+![](monthview_images/customfontviewheader_month.png)
+
+{% tabs %}
+{% highlight xaml %}
+<schedule:MonthCellStyle.FontFamily>
+	<OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
+</schedule:ViewHeaderStyle.FontFamily>
+{% endhighlight %}
+{% highlight c# %}
+monthCellStyle.FontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
+{% endhighlight %}
+{% endtabs %}
+
+![](monthview_images/customfontmonthcell.png)
+
+
+{% tabs %}
+{% highlight c# %}
+schedule.OnMonthInlineLoadedEvent += Schedule_OnMonthInlineLoadedEvent;
+	...
+private void Schedule_OnMonthInlineLoadedEvent(object sender, MonthInlineLoadedEventArgs args)
+{
+	MonthInlineViewStyle monthInlineViewStyle = new MonthInlineViewStyle();
+	monthInlineViewStyle.FontFamily = Device.OnPlatform("Lobster=Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
+	args.monthInlineViewStyle = monthInlineViewStyle;
+}
+{% endhighlight %}
+{% endtabs %}
+
+![](monthview_images/customfontinline.png)
+
+
+{% tabs %}
+{% highlight c# %}
+		weekNumberStyle.FontFamily = Device.OnPlatform("Lobster=Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
+{% endhighlight %}
+{% endtabs %}
+
+![](monthview_images/customfontweeknumber.png)
+
+Following steps will explain how to configure the custom fonts.
+
+### Custom Font Setting in Xamarin.Forms (Android) 
+* Download the Custom Font (e.g. Lobster-Regular.ttf) 
+* Add the downloaded Custom Font to the Assets folder of the Xamarin.Forms (Android) project.
+* Then, use the Custom Font name as FontFamily.
+
+### Custom Font Setting in Xamarin.Forms (ios)
+* Download the Custom Font (e.g. Lobster-Regular.ttf)
+* Add the downloaded Custom Font to the Resources folder of the Xamarin.Forms (iOS) project.
+* Edit info.plist and add a key Fonts provided by application (value type should be Array). In item0 of the array enter the name of the FontFamily you added in the Resource folder. (Such as Lobster-Regular.ttf).
+* Then, directly use Custom Font name as FontFamily.
+
+>**Note**:
+ No need to mention .ttf when set the Custom Font in iOS.
+
+### Custom Font Setting in Xamarin.Forms (UWP)
+* Download the Custom Font (e.g. Lobster-Regular.ttf).
+* Add the downloaded Custom Font to the Assets folder of the Xamarin.Forms (UWP) project.
+* Then, directly use Custom Font name as FontFamily. When Setting custom font in UWP use the format (FontFamily = ” Assets/Lobster-Regular.ttf#Lobster”).

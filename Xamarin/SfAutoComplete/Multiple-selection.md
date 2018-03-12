@@ -197,8 +197,8 @@ Customization can be done for Token. There are various ways to customize the tok
 
 TokenSettings token = new TokenSettings();
 token.FontSize = 16;
-token.BackgroundColor = Color.FromHex("#f5ffbe");
-token.TextColor = Color.Red;
+token.BackgroundColor = Color.FromHex("#66ccff");
+token.TextColor = Color.White;
 token.SelectedBackgroundColor = Color.FromHex("#ffffe0");
 token.DeleteButtonColor = Color.Brown;
 token.FontFamily= "Times New Roman";

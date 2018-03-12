@@ -148,7 +148,7 @@ The SfListView allows changing the selection background color for the selected i
 </ContentPage>
 {% endhighlight %}
 
-The following output rendered when the background color is set to the selected item:
+You can download the entire sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomSelection-SelectionBackground518926149). The following output rendered when the background color is set to the selected item:
 
 ![](SfListView_images/SfListView-Selection-3.png)
 

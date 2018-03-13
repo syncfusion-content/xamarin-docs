@@ -515,10 +515,18 @@ The [`RangeCap`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncf
 
          <gauge:SfCircularGauge.Scales>
 
-             <gauge:Scale>
+             <gauge:Scale LabelOffset ="0.75" ScaleStartOffset = "0.9" ScaleEndOffset ="1">
+
+              <gauge:Scale.MajorTickSettings>
+                        <gauge:TickSetting Offset = "0.9"/>
+                    </gauge:Scale.MajorTickSettings>
+                    
+                    <gauge:Scale.MinorTickSettings>
+                        <gauge:TickSetting Offset = "0.9"/>
+                    </gauge:Scale.MinorTickSettings>
 
                  <gauge:Scale.Pointers>
-                      <gauge:RangePointer RangeStart="20" Value="80"  RangeCap="End"/>                  
+                      <gauge:RangePointer RangeStart="20" Value="80"  RangeCap="End" StartOffset="0.9" EndOffset ="1" />                  
                  </gauge:Scale.Pointers>
 		 
 		     </gauge:Scale>
@@ -536,8 +544,15 @@ The [`RangeCap`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncf
     SfCircularGauge circularGauge = new SfCircularGauge();
     ObservableCollection<Scale> scales = new ObservableCollection<Scale>();
     Scale scale = new Scale();
+    scale.MajorTickSettings.Offset = 0.9;
+    scale.MinorTickSettings.Offset = 0.9;
+    scale.LabelOffset = 0.75;
+    scale.ScaleStartOffset = 0.9;
+    scale.ScaleEndOffset = 1;
     RangePointer rangePointer = new RangePointer();
     rangePointer.RangeStart = 20;
+    rangePointer.StartOffset = 0.9;
+    rangePointer.EndOffset = 1;
     rangePointer.Value = 80;
     rangePointer.RangeCap = RangeCap.End;
     scale.Pointers.Add(rangePointer);
@@ -726,15 +741,7 @@ In addition to the default pointer, you can add n number of pointers to a scale 
 				
 		     </gauge:Scale>
 		 
-		     <gauge:Scale LabelOffset = "0.4" ScaleStartOffset ="0.5" ScaleEndOffset = "0.55">
-               
-                    <gauge:Scale.MajorTickSettings>
-                        <gauge:TickSettings Offset = "0.5"/>
-                    </gauge:Scale.MajorTickSettings>
-                    
-                    <gauge:Scale.MinorTickSettings>
-                        <gauge:TickSettings Offset = "0.5"/>
-                    </gauge:Scale.MinorTickSettings>
+		     <gauge:Scale ShowTicks ="False" ShowLabels ="False" ScaleStartOffset ="0.5" ScaleEndOffset = "0.6">
 
                  <gauge:Scale.Pointers>           
                     <gauge:NeedlePointer Value="40" LengthFactor = "0.3"/>                  
@@ -761,11 +768,10 @@ In addition to the default pointer, you can add n number of pointers to a scale 
     pointers.Add(markerPointer);
 	
 	Scale scale1 = new Scale();
-    scale1.MinorTickSettings.Offset = 0.5;
-    scale1.MajorTickSettings.Offset = 0.5;
-    scale1.LabelOffset = 0.4;
+    scale1.ShowLabels = false;
+    scale1.ShowTicks = false;
     scale1.ScaleStartOffset = 0.5;
-    scale1.ScaleEndOffset = 0.55;
+    scale1.ScaleEndOffset = 0.6;
 			
     NeedlePointer needlePointer = new NeedlePointer();
     needlePointer.Value = 60;
@@ -909,34 +915,32 @@ Pointers can be dragged over the scale value. It can be achieved by clicking and
 
 {% highlight c# %}
 
-    SfCircularGauge circularGauge = new SfCircularGauge();
-    ObservableCollection<Scale> scales = new ObservableCollection<Syncfusion.SfGauge.XForms.Scale>();
-    Scale scale = new Syncfusion.SfGauge.XForms.Scale();
-    scale.RimColor = Color.DeepSkyBlue;
-    scale.RimThickness = 20;
-    scale.RadiusFactor = 1;
-    scale.ShowTicks = false;
-    scale.StartValue = 0;
-    scale.EndValue = 100;
-    scale.Interval = 10;
-    scale.LabelOffset = 0.75;
-    scale.LabelColor = Color.FromHex("#424242");
-    scale.LabelFontSize = 15;
+           SfCircularGauge circularGauge = new SfCircularGauge(this);
+            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            CircularScale scale = new CircularScale();
+            scale.RimColor = Color.DeepSkyBlue;
+            scale.RimWidth = 20;
+            scale.RadiusFactor = 1;
+            scale.ShowTicks = false;
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            scale.Interval = 10;
+            scale.LabelOffset = 0.75;
+            scale.LabelColor = Color.ParseColor("#424242");
+            scale.LabelTextSize = 15;
 
-    MarkerPointer pointer1 = new MarkerPointer();
-    pointer1.MarkerShape = MarkerShape.InvertedTriangle;
-    pointer1.Color = Color.DarkBlue;
-    pointer1.MarkerHeight = 18;
-    pointer1.MarkerWidth = 18;
-    pointer1.Value = 30;
-    pointer1.EnableAnimation = false;           
-    pointer1.EnableDragging = true;
-	scale.Pointers.Add(pointer1);
-	
-	circularGauge.Scales.Add(scale);
+            MarkerPointer pointer1 = new MarkerPointer();
+            pointer1.MarkerShape = Com.Syncfusion.Gauges.SfCircularGauge.Enums.MarkerShape.InvertedTriangle;
+            pointer1.Color = Color.DarkBlue;
+            pointer1.MarkerHeight = 18;
+            pointer1.MarkerWidth = 18;
+            pointer1.Value = 30;
+            pointer1.EnableAnimation = false;
+            pointer1.EnableDragging = true;
+            scale.CircularPointers.Add(pointer1);
+
+            circularGauge.CircularScales.Add(scale);
 
 {% endhighlight %}
-
-{% endtabs %}
 
 ![](pointers_images/marker-pointer/pointer-interaction.gif)

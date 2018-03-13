@@ -171,7 +171,7 @@ Corners of the [`BarPointer`](https://help.syncfusion.com/cr/cref_files/xamarin/
 
 ## Setting gradient color for bar pointer
 
-You can give smooth color transition to bar pointer to specifying the different colors based on bar pointer’s value by using [`GradientStops`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearPointer~GradientStops.html) property.
+You can give smooth color transition to bar pointer to specifying the different colors based on bar pointer’s value by using [`GradientStops`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.BarPointer~GradientStops.html) property.
 
 {% tabs %}
 

@@ -29,8 +29,8 @@ You can customize the default appearance of view header in [WorkWeekView](https:
 			viewHeaderStyle.BackgroundColor = Color.FromHex("#009688");
 			viewHeaderStyle.DayTextColor = Color.FromHex("#FFFFFF");
 			viewHeaderStyle.DateTextColor = Color.FromHex("#FFFFFF");
-			viewHeaderStyle.DayTextStyle = Font.OfSize("Arial", 15);
-			viewHeaderStyle.DateTextStyle = Font.OfSize("Arial", 15);
+			viewHeaderStyle.DayFontFamily = "Arial";
+			viewHeaderStyle.DateFontFamily = "Arial";
 			schedule.ViewHeaderStyle = viewHeaderStyle;
 			
 {% endhighlight %}
@@ -43,8 +43,8 @@ You can customize the default appearance of view header in [WorkWeekView](https:
             BackgroundColor="#009688" 
             DayTextColor="#FFFFFF" 
             DateTextColor="#FFFFFF" 
-            DayTextStyle="Arial,15" 
-            DateTextStyle="Arial,15">
+            DayFontFamily="Arial" 
+            DateFontFamily="Arial">
          </schedule:ViewHeaderStyle>
       </schedule:SfSchedule.ViewHeaderStyle>
     </schedule:SfSchedule>
@@ -74,6 +74,30 @@ You can customize the height of the ViewHeader in `WeekView` by setting [ViewHea
 {% endtabs %}
 
 ![](daymodule_images/viewheaderheight_workweek.png)
+
+### Customize Font Appearance
+
+you can change the appearance of Font by setting the  [DayFontFamily](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderStyle~DayFontFamilyProperty.html) and [DateFontFamily](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderStyle~DateFontFamilyProperty.html) property of [ViewHeaderStyle](https://help.syncfusion.com/xamarin/sfschedule/dayview#viewheader-appearance) property in Schedule.
+
+{% tabs %}
+{% highlight c# %}
+viewHeaderStyle.DayFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
+viewHeaderStyle.DateFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
+{% endhighlight %}
+
+{% highlight XAML %}
+<schedule:ViewHeaderStyle.DayFontFamily>
+		<OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
+</schedule:HeaderStyle.DayFontFamily>
+<schedule:ViewHeaderStyle.DateFontFamily>
+		<OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
+</schedule:HeaderStyle.DateFontFamily>
+{% endhighlight %}
+{% endtabs %} 
+
+![](daymodule_images/customfontviewheader_workweek.png)
+
+Refer [this](https://help.syncfusion.com/xamarin/sfschedule/monthview#custom-font-setting-in-xamarinforms-android) to configure the custom fonts in Xamarin.Forms.
 
 ### ViewHeader Date Format
 We can customize the date and day format of `SfSchedule` ViewHeader by using [DateFormat](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DayLabelSettings~DateFormat.html) and [DayFormat](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DayLabelSettings~DayFormat.html) properties of `WorkWeekLabelSettings`.
@@ -522,3 +546,4 @@ You can download the entire source code of this demo for Xamarin.Forms from here
 * `SfSchedule` supports two-way binding of `SelectedDate` property.
 
 ![](daymodule_images/selection_WorkWeek.png)
+

@@ -54,7 +54,7 @@ You can customize the tooltip label. For customizing, you need to add an instanc
 * [`TextColor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTooltipBehavior~TextColorProperty.html#) – used to change the text color
 * [`Font`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTooltipBehavior~FontProperty.html#) – used to change label font size, family and weight
 * [`LabelFormat`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTooltipBehavior~LabelFormatProperty.html#) – used to format the label
-* [`Duration`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTooltipBehavior~DurationProperty.html#) – used to set the visible duration of label
+* [`Duration`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTooltipBehavior~Duration.html) – used to set the visible duration of label
 * [`OffsetX`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTooltipBehavior~OffsetXProperty.html#) – used to move the label horizontally
 * [`OffsetY`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTooltipBehavior~OffsetYProperty.html#) – used to move the label vertically
 
@@ -96,7 +96,7 @@ chart.ChartBehaviors.Add(tool);
 
 ## Tooltip Template
 
-You can customize the appearance of the tooltip with your own template by using the [`TooltipTemplate`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~TooltipTemplateProperty.html#) property of [`Series`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries.html#). The BindingContext in the data template will be the respective underlying object from ItemsSource.
+You can customize the appearance of the tooltip with your own template by using the [`TooltipTemplate`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~TooltipTemplate.html) property of [`Series`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries.html#). The BindingContext in the data template will be the respective underlying object from ItemsSource.
 
 {% tabs %} 
 
@@ -170,3 +170,34 @@ chart.Series.Add(column);
 {% endtabs %}
 
 ![](tooltip_images/TooltipTemplate.png)
+
+## Methods
+
+You can show or hide the chart tooltip programmatically by using the show or hide method. 
+
+### Show method
+
+The [`Show`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTooltipBehavior~Show.html) method is used to activate the tooltip at the specified location.
+
+{% highlight c# %}
+
+    //Arguments are x position, y position and bool value determines whether the tooltip should be animated while displaying.
+	
+    tooltip.Show(pointX, pointY, true);
+
+{% endhighlight %}
+
+N>The tooltip will be activated at the specified location only if there is any data point under the specified location.
+
+### Hide method
+
+The [`Hide`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTooltipBehavior~Hide.html) method is used to hide the tooltip programmatically.
+
+{% highlight c# %}
+
+    //The argument determines whether the tooltip should be animated while hiding.
+
+ 	tooltip.Hide(true);
+
+{% endhighlight %}
+

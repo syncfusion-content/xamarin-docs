@@ -66,11 +66,11 @@ chart.ChartAnnotations.Add(annotation);
 
 ## Positioning the annotation
 
-Annotations can be positioned in plot area based on `X1` and `Y1` properties. For shape annotations, specify `X2` and `Y2` properties, if needed. The `X` and `Y` values can be specified with axis units or pixel units, and these can be identified by using [`CoordinateUnit`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAnnotation~CoordinateUnit.html) property.
+Annotations can be positioned in plot area based on [`X1`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAnnotation~X1.html) and [`Y1`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAnnotation~Y1.html) properties. For shape annotations, specify `X2` and `Y2` properties, if needed. The `X` and `Y` values can be specified with axis units or pixel units, and these can be identified by using [`CoordinateUnit`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAnnotation~CoordinateUnit.html) property.
  
 ### Positioning based on CoordinateUnit as axis
 
-To position the annotation based on axis, set the `X1` and `Y1`, `X2` and `Y2` properties based on axis range values, if needed, set the [`CoordinateUnit`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAnnotation~CoordinateUnit.html) value as `Axis`.
+To position the annotation based on axis, set the [`X1`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAnnotation~X1.html) and [`Y1`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAnnotation~Y1.html), `X2` and `Y2` properties based on axis range values, if needed, set the [`CoordinateUnit`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAnnotation~CoordinateUnit.html) value as `Axis`.
 
 {% tabs %} 
 
@@ -120,7 +120,7 @@ chart.ChartAnnotations.Add(annotation);
 
 ### Positioning based on CoordinateUnit as pixels
 
-To position the annotation based on the pixel values, set the [`CoordinateUnit`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAnnotation~CoordinateUnit.html) value as `Pixels`, and the pixel values in `X1` and `Y1`, `X2` and `Y2` properties of annotation are shown in the following code snippet,
+To position the annotation based on the pixel values, set the [`CoordinateUnit`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAnnotation~CoordinateUnit.html) value as `Pixels`, and the pixel values in [`X1`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAnnotation~X1.html) and [`Y1`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAnnotation~Y1.html), `X2` and `Y2` properties of annotation are shown in the following code snippet,
 
 {% tabs %} 
 

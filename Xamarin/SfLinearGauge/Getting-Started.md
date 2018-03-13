@@ -74,7 +74,6 @@ You can assign a unique header to [`SfLinearGauge`](https://help.syncfusion.com/
 			 
          </gauge:SfLinearGauge>
 
-
 {% endhighlight %}
 
 {% highlight c# %}
@@ -103,12 +102,15 @@ The [`MinimumValue`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/S
 
 	    <gauge:SfLinearGauge>
             <gauge:SfLinearGauge.Scales>
-                <gauge:LinearScale ScaleBarColor="#e0e0e0" LabelColor="#424242">
+            <gauge:LinearScale ScaleBarColor="#e0e0e0" LabelColor="#424242">
                     <gauge:LinearScale.MajorTickSettings>
-                      <gauge:LinearTickSettings Thickness="1"/>
+                        <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="15"/>
                     </gauge:LinearScale.MajorTickSettings>
+                    <gauge:LinearScale.MinorTickSettings>
+                        <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="7"/>
+                    </gauge:LinearScale.MinorTickSettings>
                 </gauge:LinearScale>
-            </gauge:SfLinearGauge.Scales>
+        </gauge:SfLinearGauge.Scales>
         </gauge:SfLinearGauge>
 
 {% endhighlight %}
@@ -119,6 +121,11 @@ The [`MinimumValue`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/S
         linearScale.ScaleBarColor = Color.FromHex("#e0e0e0");
         linearScale.LabelColor = Color.FromHex("#424242");
         linearScale.MajorTickSettings.Thickness = 1;
+        linearScale.MajorTickSettings.Length = 15;
+        linearScale.MajorTickSettings.Color = Color.Gray;
+        linearScale.MinorTickSettings.Color = Color.Gray;
+        linearScale.MinorTickSettings.Length = 7;
+        linearScale.MinorTickSettings.Thickness = 1;
         linearGauge.Scales.Add(linearScale);
 	    this.Content = linearGauge;
 	
@@ -134,14 +141,9 @@ The [`MinimumValue`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/S
 
 {% highlight xaml %}
 
-	<gauge:SfLinearGauge.Scales>
-        <gauge:LinearScale>
             <gauge:LinearScale.Pointers>
                 <gauge:SymbolPointer Value="60" Offset="45" Color="#757575"/>
             </gauge:LinearScale.Pointers>
-        </gauge:LinearScale>
-    </gauge:SfLinearGauge.Scales>
-
 
 {% endhighlight %}
 
@@ -165,13 +167,9 @@ The [`MinimumValue`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/S
 
 {% highlight xaml %}
 
-	<gauge:SfLinearGauge.Scales>
-                <gauge:LinearScale>
                     <gauge:LinearScale.Pointers>
                         <gauge:BarPointer Value="50" Color="#757575" />
                     </gauge:LinearScale.Pointers>
-                </gauge:LinearScale>
-    </gauge:SfLinearGauge.Scales>
 
 {% endhighlight %}
 
@@ -194,14 +192,10 @@ You can categorize the scale values using the start and end values properties in
 
 {% highlight xaml %}
 		
-		  <gauge:SfLinearGauge.Scales>
-                <gauge:LinearScale>
                     <gauge:LinearScale.Ranges>
                         <gauge:LinearRange StartValue="0" EndValue="40" Color="#27beb7" Offset="-20"/>
                         <gauge:LinearRange StartValue="40" EndValue="100" Color="LightCyan" Offset="-20"/>
                     </gauge:LinearScale.Ranges>
-                </gauge:LinearScale>
-         </gauge:SfLinearGauge.Scales>
 
 {% endhighlight %}
 

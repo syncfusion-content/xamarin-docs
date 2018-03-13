@@ -218,7 +218,7 @@ void Handle_OnMonthCellLoaded(object sender, Syncfusion.SfCalendar.XForms.MonthC
 
 {% endtabs %}
 
-# How to Perform the Operation while long pressing the dateCell
+# How to Perform the Operation while long pressing the dateCell?
 
 `OnDateCellHolding` event returns the long pressed date along with the SfCalendar it carries. Using this event user can perform operation while long pressing the date.
 
@@ -253,7 +253,7 @@ calendar.OnDateCellHolding += (object sender, DayCellHoldingEventArgs args) =>
 
 {% endtabs %}
 
-# How to Resize the SfCalendar Control
+# How to Resize the SfCalendar Control?
 
 SfCalendar control can be resized using `WidthRequest` and `HeightRequest` properties in SfCalendar control.
 
@@ -265,7 +265,7 @@ calendar.HeightRequest = 200;
 	
 {% endhighlight %}
 
- # How to Customize the SfCalendar Header?
+# How to Customize the SfCalendar Header?
 
 `HeaderView` property of SfCalendar allows us to customize SfCalendar Header. It returns custom view for SfCalendarHeader
 

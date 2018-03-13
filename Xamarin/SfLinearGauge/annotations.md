@@ -11,7 +11,7 @@ documentation: ug
 
 # Annotations
 
-[`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfLinearGauge.html) supports [`Annotation`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfLinearGauge~Annotations.html), which is used to mark the specific area of interest in the gauge area with texts, shapes, or images. You can add any number of annotations to the gauge.
+[`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfLinearGauge.html) supports [`Annotations`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfLinearGauge~Annotations.html), which is used to mark the specific area of interest in the gauge area with texts, shapes, or images. You can add any number of annotations to the gauge.
 
 ##  Annotation
 
@@ -23,7 +23,7 @@ By using the [`View`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/
 
           <gauge:SfLinearGauge>
 
-          <gauge:SfLinearGauge.Annotations>
+         <gauge:SfLinearGauge.Annotations>
                 <gauge:LinearGaugeAnnotation OffsetX = "0.5" OffsetY ="0.45">
                     <gauge:LinearGaugeAnnotation.View>
                         <Label Text="CPU Utilization" TextColor="Black" FontSize ="20"/>
@@ -31,13 +31,17 @@ By using the [`View`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/
                 </gauge:LinearGaugeAnnotation>
             </gauge:SfLinearGauge.Annotations>
 
-              <gauge:SfLinearGauge.Scales>
-                <gauge:LinearScale ScaleBarColor="#e0e9f9" LabelColor="#424242" MinorTicksPerInterval ="1">
+            <gauge:SfLinearGauge.Scales>
+                <gauge:LinearScale ScaleBarColor="#e0e0e0" LabelColor="#424242" MinorTicksPerInterval ="1">
                     <gauge:LinearScale.MajorTickSettings>
-                      <gauge:LinearTickSettings Thickness="1"/>
+                        <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="15"/>
                     </gauge:LinearScale.MajorTickSettings>
+                    <gauge:LinearScale.MinorTickSettings>
+                        <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="7"/>
+                    </gauge:LinearScale.MinorTickSettings>
                 </gauge:LinearScale>
             </gauge:SfLinearGauge.Scales>
+
         </gauge:SfLinearGauge>
 	
 {% endhighlight %}
@@ -53,7 +57,12 @@ By using the [`View`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/
             LinearScale linearScale = new LinearScale();
             linearScale.ScaleBarColor = Color.FromHex("#e0e0e0");
             linearScale.LabelColor = Color.FromHex("#424242");
-            linearScale.MajorTickSettings.Thickness = 1;
+             linearScale.MajorTickSettings.Thickness = 1;
+             linearScale.MajorTickSettings.Length = 15;
+             linearScale.MajorTickSettings.Color = Color.Gray;
+             linearScale.MinorTickSettings.Color = Color.Gray;
+             linearScale.MinorTickSettings.Length = 7;
+            linearScale.MinorTickSettings.Thickness = 1;
             linearScale.MinorTicksPerInterval = 1;
             linearGauge.Scales.Add(linearScale);
     
@@ -86,10 +95,13 @@ You can position the annotation anywhere in the linear gauge by using the [`Offs
             </gauge:SfLinearGauge.Annotations>
 
               <gauge:SfLinearGauge.Scales>
-                <gauge:LinearScale ScaleBarColor="#e0e9f9" LabelColor="#424242" MinorTicksPerInterval ="1">
-                    <gauge:LinearScale.MajorTickSettings>
-                      <gauge:LinearTickSettings Thickness="1"/>
+                <gauge:LinearScale ScaleBarColor="#e0e0e0" LabelColor="#424242" MinorTicksPerInterval ="1">
+                   <gauge:LinearScale.MajorTickSettings>
+                        <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="15"/>
                     </gauge:LinearScale.MajorTickSettings>
+                    <gauge:LinearScale.MinorTickSettings>
+                        <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="7"/>
+                    </gauge:LinearScale.MinorTickSettings>
                 </gauge:LinearScale>
             </gauge:SfLinearGauge.Scales>
         </gauge:SfLinearGauge>
@@ -108,7 +120,12 @@ You can position the annotation anywhere in the linear gauge by using the [`Offs
             LinearScale linearScale = new LinearScale();
             linearScale.ScaleBarColor = Color.FromHex("#e0e0e0");
             linearScale.LabelColor = Color.FromHex("#424242");
-            linearScale.MajorTickSettings.Thickness = 1;
+             linearScale.MajorTickSettings.Thickness = 1;
+             linearScale.MajorTickSettings.Length = 15;
+             linearScale.MajorTickSettings.Color = Color.Gray;
+             linearScale.MinorTickSettings.Color = Color.Gray;
+             linearScale.MinorTickSettings.Length = 7;
+            linearScale.MinorTickSettings.Thickness = 1;
             linearScale.MinorTicksPerInterval = 1;
             linearGauge.Scales.Add(linearScale);    
     
@@ -131,16 +148,19 @@ You can also place the annotation by specifying the [`ScaleValue`](https://help.
         <gauge:SfLinearGauge.Annotations>
                 <gauge:LinearGaugeAnnotation ScaleValue ="60">
                     <gauge:LinearGaugeAnnotation.View>
-                        <Label Text="CPU Utilization" TextColor="60%" FontAttributes = "Bold" TextColor="Black" FontSize ="15"/>
+                        <Label Text="60%" FontAttributes = "Bold" TextColor="Black" FontSize ="15"/>
                     </gauge:LinearGaugeAnnotation.View>
                 </gauge:LinearGaugeAnnotation>
             </gauge:SfLinearGauge.Annotations>
 
               <gauge:SfLinearGauge.Scales>
-                <gauge:LinearScale ScaleBarColor="#e0e9f9" LabelColor="#424242" MinorTicksPerInterval ="1" ScaleBarSize ="40">
-                    <gauge:LinearScale.MajorTickSettings>
-                      <gauge:LinearTickSettings Thickness="1"/>
+                <gauge:LinearScale ScaleBarColor="#e0e0e0" LabelColor="#424242" MinorTicksPerInterval ="1" ScaleBarSize ="40">
+                     <gauge:LinearScale.MajorTickSettings>
+                        <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="15"/>
                     </gauge:LinearScale.MajorTickSettings>
+                    <gauge:LinearScale.MinorTickSettings>
+                        <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="7"/>
+                    </gauge:LinearScale.MinorTickSettings>
                     <gauge:LinearScale.Pointers>
 					<gauge:BarPointer  Value="60" Color = "#f95c85" Thickness = "20" CornerRadius ="10" CornerRadiusType ="End"/>
 				</gauge:LinearScale.Pointers>
@@ -148,7 +168,6 @@ You can also place the annotation by specifying the [`ScaleValue`](https://help.
             </gauge:SfLinearGauge.Scales>
         </gauge:SfLinearGauge>
   
-	
 {% endhighlight %}
 
 {% highlight c# %}
@@ -162,7 +181,12 @@ You can also place the annotation by specifying the [`ScaleValue`](https://help.
             LinearScale linearScale = new LinearScale();
             linearScale.ScaleBarColor = Color.FromHex("#e0e0e0");
             linearScale.LabelColor = Color.FromHex("#424242");
-            linearScale.MajorTickSettings.Thickness = 1;
+             linearScale.MajorTickSettings.Thickness = 1;
+             linearScale.MajorTickSettings.Length = 15;
+             linearScale.MajorTickSettings.Color = Color.Gray;
+             linearScale.MinorTickSettings.Color = Color.Gray;
+             linearScale.MinorTickSettings.Length = 7;
+            linearScale.MinorTickSettings.Thickness = 1;
             linearScale.ScaleBarSize = 40;
             linearScale.MinorTicksPerInterval = 1;
             linearGauge.Scales.Add(linearScale);
@@ -194,18 +218,21 @@ You can adjust the annotation by specifying the [`ViewMargin`](https://help.sync
      <gauge:SfLinearGauge.Annotations>
                 <gauge:LinearGaugeAnnotation ScaleValue ="60" ViewMargin ="10,60">
                     <gauge:LinearGaugeAnnotation.View>
-                        <Label Text="60%" FontAttributes = "Bold" TextColor= "#f95c85" FontSize ="15"/>
+                        <Label Text="60%" FontAttributes = "Bold" TextColor= "#F95C85" FontSize ="15"/>
                     </gauge:LinearGaugeAnnotation.View>
                 </gauge:LinearGaugeAnnotation>
             </gauge:SfLinearGauge.Annotations>
 
               <gauge:SfLinearGauge.Scales>
-                <gauge:LinearScale ScaleBarColor="#e0e9f9" LabelColor="#424242" MinorTicksPerInterval ="1" ScaleBarSize ="40">
+                <gauge:LinearScale ScaleBarColor="#e0e0e0" LabelColor="#424242" MinorTicksPerInterval ="1" ScaleBarSize ="40">
                     <gauge:LinearScale.MajorTickSettings>
-                      <gauge:LinearTickSettings Thickness="1"/>
+                        <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="15"/>
                     </gauge:LinearScale.MajorTickSettings>
+                    <gauge:LinearScale.MinorTickSettings>
+                        <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="7"/>
+                    </gauge:LinearScale.MinorTickSettings>
                     <gauge:LinearScale.Pointers>
-					<gauge:BarPointer  Value="60" Color = "#f95c85" Thickness = "20" CornerRadius ="10" CornerRadiusType ="End"/>
+					<gauge:BarPointer  Value="60" Color = "#F95C85" Thickness = "20" CornerRadius ="10" CornerRadiusType ="End"/>
 				</gauge:LinearScale.Pointers>
                 </gauge:LinearScale>
             </gauge:SfLinearGauge.Scales>
@@ -219,13 +246,18 @@ You can adjust the annotation by specifying the [`ViewMargin`](https://help.sync
             LinearGaugeAnnotation linearGaugeAnnotation = new LinearGaugeAnnotation();
             linearGaugeAnnotation.ScaleValue = 60;
             linearGaugeAnnotation.ViewMargin = new Point(10, 60);
-            linearGaugeAnnotation.View = new Label() { Text = "60%", FontAttributes = FontAttributes.Bold, TextColor = Color.FromRgb(249, 92, 133), FontSize = 15 };
+            linearGaugeAnnotation.View = new Label() { Text = "60%", FontAttributes = FontAttributes.Bold, TextColor = Color.FromHex("#F95C85"), FontSize = 15 };
             linearGauge.Annotations.Add(linearGaugeAnnotation);
 
             LinearScale linearScale = new LinearScale();
             linearScale.ScaleBarColor = Color.FromHex("#e0e0e0");
             linearScale.LabelColor = Color.FromHex("#424242");
-            linearScale.MajorTickSettings.Thickness = 1;
+             linearScale.MajorTickSettings.Thickness = 1;
+             linearScale.MajorTickSettings.Length = 15;
+             linearScale.MajorTickSettings.Color = Color.Gray;
+             linearScale.MinorTickSettings.Color = Color.Gray;
+             linearScale.MinorTickSettings.Length = 7;
+            linearScale.MinorTickSettings.Thickness = 1;
             linearScale.ScaleBarSize = 40;
             linearScale.MinorTicksPerInterval = 1;
             linearGauge.Scales.Add(linearScale);
@@ -246,9 +278,9 @@ You can adjust the annotation by specifying the [`ViewMargin`](https://help.sync
 
 ## Alignment of annotation
 
-You can align the annotation using the [`HorizontalAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearGaugeAnnotation~HorizontalAlignment.html) and [`VerticalAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearGaugeAnnotation~VerticalAlignment.html) properties.
+You can align the annotation using the [`HorizontalViewAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearGaugeAnnotation~HorizontalViewAlignment.html) and [`VerticalViewAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearGaugeAnnotation~VerticalViewAlignment.html) properties.
 
-### Setting horizontal alignment
+### Setting horizontal view alignment
 
 {% tabs %}
 
@@ -257,7 +289,7 @@ You can align the annotation using the [`HorizontalAlignment`](https://help.sync
     <gauge:SfLinearGauge>
   
      <gauge:SfLinearGauge.Annotations>
-                <gauge:LinearGaugeAnnotation ScaleValue ="60" HorizontalAlignment ="Start">
+                <gauge:LinearGaugeAnnotation ScaleValue ="60" HorizontalViewAlignment ="Start">
                     <gauge:LinearGaugeAnnotation.View>
                         <Label Text="60%" FontAttributes = "Bold" TextColor= "Black" FontSize ="15"/>
                     </gauge:LinearGaugeAnnotation.View>
@@ -265,10 +297,13 @@ You can align the annotation using the [`HorizontalAlignment`](https://help.sync
             </gauge:SfLinearGauge.Annotations>
 
               <gauge:SfLinearGauge.Scales>
-                <gauge:LinearScale ScaleBarColor="#e0e9f9" LabelColor="#424242" MinorTicksPerInterval ="1" ScaleBarSize ="40">
-                    <gauge:LinearScale.MajorTickSettings>
-                      <gauge:LinearTickSettings Thickness="1"/>
+                <gauge:LinearScale ScaleBarColor="#e0e0e0" LabelColor="#424242" MinorTicksPerInterval ="1" ScaleBarSize ="40">
+                     <gauge:LinearScale.MajorTickSettings>
+                        <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="15"/>
                     </gauge:LinearScale.MajorTickSettings>
+                    <gauge:LinearScale.MinorTickSettings>
+                        <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="7"/>
+                    </gauge:LinearScale.MinorTickSettings>
                     <gauge:LinearScale.Pointers>
 					<gauge:BarPointer  Value="60" Color = "#f95c85" Thickness = "20" CornerRadius ="10" CornerRadiusType ="End"/>
 				</gauge:LinearScale.Pointers>
@@ -292,7 +327,12 @@ You can align the annotation using the [`HorizontalAlignment`](https://help.sync
             LinearScale linearScale = new LinearScale();
             linearScale.ScaleBarColor = Color.FromHex("#e0e0e0");
             linearScale.LabelColor = Color.FromHex("#424242");
-            linearScale.MajorTickSettings.Thickness = 1;
+             linearScale.MajorTickSettings.Thickness = 1;
+             linearScale.MajorTickSettings.Length = 15;
+             linearScale.MajorTickSettings.Color = Color.Gray;
+             linearScale.MinorTickSettings.Color = Color.Gray;
+             linearScale.MinorTickSettings.Length = 7;
+            linearScale.MinorTickSettings.Thickness = 1;
             linearScale.ScaleBarSize = 40;
             linearScale.MinorTicksPerInterval = 1;
             linearGauge.Scales.Add(linearScale);
@@ -311,7 +351,7 @@ You can align the annotation using the [`HorizontalAlignment`](https://help.sync
 
 ![](annotations_images/annotation5.png)
 
-### Setting vertical alignment
+### Setting vertical view alignment
 
 {% tabs %}
 
@@ -319,24 +359,27 @@ You can align the annotation using the [`HorizontalAlignment`](https://help.sync
   
     <gauge:SfLinearGauge>
   
-     <gauge:SfLinearGauge.Annotations>
-                <gauge:LinearGaugeAnnotation ScaleValue ="60" VerticalAlignment ="Start">
-                    <gauge:LinearGaugeAnnotation.View>
-                        <Label Text="60%" FontAttributes = "Bold" TextColor= "Black" FontSize ="15"/>
-                    </gauge:LinearGaugeAnnotation.View>
-                </gauge:LinearGaugeAnnotation>
-            </gauge:SfLinearGauge.Annotations>
+        <gauge:SfLinearGauge.Annotations>
+                    <gauge:LinearGaugeAnnotation ScaleValue ="60" VerticalViewAlignment ="Start">
+                        <gauge:LinearGaugeAnnotation.View>
+                            <Label Text="60%" FontAttributes = "Bold" TextColor= "Black" FontSize ="15"/>
+                        </gauge:LinearGaugeAnnotation.View>
+                    </gauge:LinearGaugeAnnotation>
+                </gauge:SfLinearGauge.Annotations>
 
-              <gauge:SfLinearGauge.Scales>
-                <gauge:LinearScale ScaleBarColor="#e0e9f9" LabelColor="#424242" MinorTicksPerInterval ="1" ScaleBarSize ="40">
-                    <gauge:LinearScale.MajorTickSettings>
-                      <gauge:LinearTickSettings Thickness="1"/>
-                    </gauge:LinearScale.MajorTickSettings>
-                    <gauge:LinearScale.Pointers>
-					<gauge:BarPointer  Value="60" Color = "#f95c85" Thickness = "20" CornerRadius ="10" CornerRadiusType ="End"/>
-				</gauge:LinearScale.Pointers>
-                </gauge:LinearScale>
-            </gauge:SfLinearGauge.Scales>
+                <gauge:SfLinearGauge.Scales>
+                    <gauge:LinearScale ScaleBarColor="#e0e0e0" LabelColor="#424242" MinorTicksPerInterval ="1" ScaleBarSize ="40">
+                        <gauge:LinearScale.MajorTickSettings>
+                            <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="15"/>
+                        </gauge:LinearScale.MajorTickSettings>
+                        <gauge:LinearScale.MinorTickSettings>
+                            <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="7"/>
+                        </gauge:LinearScale.MinorTickSettings>
+                        <gauge:LinearScale.Pointers>
+                        <gauge:BarPointer  Value="60" Color = "#f95c85" Thickness = "20" CornerRadius ="10" CornerRadiusType ="End"/>
+                    </gauge:LinearScale.Pointers>
+                    </gauge:LinearScale>
+                </gauge:SfLinearGauge.Scales>
 
         </gauge:SfLinearGauge>
 	
@@ -356,6 +399,11 @@ You can align the annotation using the [`HorizontalAlignment`](https://help.sync
             linearScale.ScaleBarColor = Color.FromHex("#e0e0e0");
             linearScale.LabelColor = Color.FromHex("#424242");
             linearScale.MajorTickSettings.Thickness = 1;
+             linearScale.MajorTickSettings.Length = 15;
+             linearScale.MajorTickSettings.Color = Color.Gray;
+             linearScale.MinorTickSettings.Color = Color.Gray;
+             linearScale.MinorTickSettings.Length = 7;
+            linearScale.MinorTickSettings.Thickness = 1;
             linearScale.ScaleBarSize = 40;
             linearScale.MinorTicksPerInterval = 1;
             linearGauge.Scales.Add(linearScale);
@@ -390,27 +438,34 @@ You can set the index for the scale by using [`ScaleIndex`](https://help.syncfus
                         <Label Text="CPU Utilization" TextColor="Black" FontSize ="20"/>
                     </gauge:LinearGaugeAnnotation.View>
                 </gauge:LinearGaugeAnnotation>
-                 <gauge:LinearGaugeAnnotation OffsetX = "0.5" OffsetY ="0.6" ScaleIndex ="1">
+                <gauge:LinearGaugeAnnotation OffsetX = "0.5" OffsetY ="0.6" ScaleIndex ="1">
                     <gauge:LinearGaugeAnnotation.View>
                         <Label Text="Thermometer" TextColor="Black" FontSize ="20"/>
                     </gauge:LinearGaugeAnnotation.View>
                 </gauge:LinearGaugeAnnotation>
             </gauge:SfLinearGauge.Annotations>
 
-              <gauge:SfLinearGauge.Scales>
-                <gauge:LinearScale ScaleBarColor="#e0e9f9" LabelColor="#424242" MinorTicksPerInterval ="1">
+            <gauge:SfLinearGauge.Scales>
+                <gauge:LinearScale ScaleBarColor="#e0e0e0" LabelColor="#424242" MinorTicksPerInterval ="1">
                     <gauge:LinearScale.MajorTickSettings>
-                      <gauge:LinearTickSettings Thickness="1"/>
+                        <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="15"/>
                     </gauge:LinearScale.MajorTickSettings>
+                    <gauge:LinearScale.MinorTickSettings>
+                        <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="7"/>
+                    </gauge:LinearScale.MinorTickSettings>
                 </gauge:LinearScale>
 
-                <gauge:LinearScale ScaleBarColor="#e0e9f9" LabelColor="#424242" MinorTicksPerInterval ="1" Offset ="100">
+                <gauge:LinearScale ScaleBarColor="#e0e0e0" LabelColor="#424242" MinorTicksPerInterval ="1" Offset ="100">
                     <gauge:LinearScale.MajorTickSettings>
-                      <gauge:LinearTickSettings Thickness="1"/>
+                        <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="15"/>
                     </gauge:LinearScale.MajorTickSettings>
+                    <gauge:LinearScale.MinorTickSettings>
+                        <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="7"/>
+                    </gauge:LinearScale.MinorTickSettings>
                 </gauge:LinearScale>
 
             </gauge:SfLinearGauge.Scales>
+
         </gauge:SfLinearGauge>
 	
 {% endhighlight %}
@@ -439,6 +494,11 @@ You can set the index for the scale by using [`ScaleIndex`](https://help.syncfus
             linearScale.ScaleBarColor = Color.FromHex("#e0e0e0");
             linearScale.LabelColor = Color.FromHex("#424242");
             linearScale.MajorTickSettings.Thickness = 1;
+             linearScale.MajorTickSettings.Length = 15;
+             linearScale.MajorTickSettings.Color = Color.Gray;
+             linearScale.MinorTickSettings.Color = Color.Gray;
+             linearScale.MinorTickSettings.Length = 7;
+            linearScale.MinorTickSettings.Thickness = 1;
             linearScale.MinorTicksPerInterval = 1;
             linearGauge.Scales.Add(linearScale);
 
@@ -448,6 +508,11 @@ You can set the index for the scale by using [`ScaleIndex`](https://help.syncfus
             linearScale1.ScaleBarColor = Color.FromHex("#e0e0e0");
             linearScale1.LabelColor = Color.FromHex("#424242");
             linearScale1.MajorTickSettings.Thickness = 1;
+             linearScale1.MajorTickSettings.Length = 15;
+             linearScale1.MajorTickSettings.Color = Color.Gray;
+             linearScale1.MinorTickSettings.Color = Color.Gray;
+             linearScale1.MinorTickSettings.Length = 7;
+            linearScale1.MinorTickSettings.Thickness = 1;
             linearScale1.Offset = 100;
             linearScale1.MinorTicksPerInterval = 1;
             linearGauge.Scales.Add(linearScale1);

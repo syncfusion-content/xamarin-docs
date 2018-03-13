@@ -149,6 +149,8 @@ The labels can be positioned far away from the ticks by using the [`LabelOffset`
    
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](labels_images/label3.png)
 
 ### Setting postfix and prefix for labels

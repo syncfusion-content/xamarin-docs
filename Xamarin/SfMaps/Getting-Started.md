@@ -227,7 +227,7 @@ layer.LegendSettings = setting;
 
 {% endtabs %}
 
-Below is the complete code for map with marker and legend.
+The following code example gives you the complete code for map with marker and legend.
 
 {% tabs %}
 
@@ -332,4 +332,8 @@ SfMaps map = new SfMaps();
 
 {% endtabs %}
 
+The following output is reproduced as a result of above codes.
+
 ![](Images/GettingStartedimg2.PNG) 
+
+You can download the complete getting started sample from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MapsSample-1975206216.zip).

@@ -278,8 +278,8 @@ The following code example gives you the complete code of above configurations.
     <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
               xmlns:gauge="clr-namespace:Syncfusion.SfGauge.XForms;assembly=Syncfusion.SfGauge.XForms"      
-             xmlns:local="clr-namespace:CircularGuage;assembly=CircularGuage"
-             x:Class="CircularGuage.UGSample">
+             xmlns:local="clr-namespace:CircularGauge;assembly=CircularGauge"
+             x:Class="CircularGauge.UGSample">
 
     <StackLayout  x:Name="main_layout"  VerticalOptions="FillAndExpand" Orientation="Vertical" Padding="20,0,20,0">
         <gauge:SfCircularGauge x:Name="circularGauge" WidthRequest ="200" HeightRequest="500" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
@@ -318,7 +318,7 @@ The following code example gives you the complete code of above configurations.
    
 using Syncfusion.SfGauge.XForms;
 
-namespace CircularGuage
+namespace CircularGauge
 {
     public partial class UGSample : ContentPage
     {

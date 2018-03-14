@@ -13,7 +13,7 @@ This section explains the steps required to work with progress bar in Xamarin.Fo
 
 ## Add progress bar reference
 
-Refer to this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation/) to know how to obtain and reference Essential Studio components in your solution; then refer to this link to know about the assemblies required for adding progress bar to your project.
+Refer to this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation/) to know how to obtain and reference Essential Studio components in your solution; then refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#progress-bar) to know about the assemblies required for adding progress bar to your project.
 
 I>After adding the reference, an additional step is required for iOS and UWP projects. You should create an instance of the progress bar renderer in iOS and UWP projects as shown in this [KB article](https://www.syncfusion.com/kb/8560/how-to-resolve-progress-bar-not-rendering-issue-in-ios-and-uwp).
 
@@ -52,10 +52,10 @@ There are two variants of progress bar: SfLinearProgressBar and SfCircularProgre
 
 {% highlight C# %} 
 
-//// Using linear progress bar. 
+// Using linear progress bar. 
 SfLinearProgressBar linearProgressBar = new SfLinearProgressBar { Progress = 75 };
 
-//// Using circular progress bar.
+// Using circular progress bar.
 SfCircularProgressBar circularProgressBar = new SfCircularProgressBar { Progress = 75 };
 
 {% endhighlight %}
@@ -87,10 +87,10 @@ When the progress of a task cannot be shown determinately, you can enable indete
 
 {% highlight C# %} 
 
-//// Using linear progress bar.
+// Using linear progress bar.
 SfLinearProgressBar linearProgressBar = new SfLinearProgressBar { IsIndeterminate = true };
 
-//// Using circular progress bar.
+// Using circular progress bar.
 SfCircularProgressBar circularProgressBar = new SfCircularProgressBar { IsIndeterminate = true };
 {% endhighlight %}
 
@@ -112,10 +112,10 @@ To visualize the progress of a multiple sequential task, split the progress bar 
 
 {% highlight C# %} 
 
-//// Using linear progress bar.
+// Using linear progress bar.
 SfLinearProgressBar linearProgressBar = new SfLinearProgressBar { Progress = 75, SegmentCount = 4 };
 
-//// Using circular progress bar.
+// Using circular progress bar.
 SfCircularProgressBar circularProgressBar = new SfCircularProgressBar { Progress = 75, SegmentCount = 4 };
 {% endhighlight %}
 
@@ -142,11 +142,11 @@ You can customize the color of the progress indicator and track by defining the 
 
 {% highlight C# %} 
 
-//// Using linear progress bar.
+// Using linear progress bar.
 SfLinearProgressBar linearProgressBar = new SfLinearProgressBar{Progress = 75,TrackColor = Color.FromHex("#33ffbe06"),ProgressColor = Color.FromHex("#FFffbe06")};
 SfLinearProgressBar sfLinearProgressBar = new SfLinearProgressBar{Progress = 75,TrackColor = Color.FromHex("#3351483a"),ProgressColor = Color.FromHex("#FF51483a")};
 
-//// Using circular progress bar.
+// Using circular progress bar.
 SfCircularProgressBar circularProgressBar = new SfCircularProgressBar{Progress = 75,TrackColor = Color.FromHex("#33c15244"),ProgressColor = Color.FromHex("#FFc15244")};
 SfCircularProgressBar sfCircularProgressBar = new SfCircularProgressBar{Progress = 75,TrackColor = Color.FromHex("#3390a84e"),ProgressColor = Color.FromHex("#FF90a84e")};
 {% endhighlight %}
@@ -155,4 +155,4 @@ SfCircularProgressBar sfCircularProgressBar = new SfCircularProgressBar{Progress
 ![](overview_images/style.png)
 
 
-You can find the complete Getting Started sample from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ProgressBar-929614915.zip).
+You can find the complete getting started sample from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ProgressBar-929614915.zip).

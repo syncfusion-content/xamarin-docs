@@ -20,35 +20,31 @@ You can customize the default appearance of view header in [WorkWeekView](https:
 
 {% tabs %}
 {% highlight c# %}
-
-            //Create new instance of Schedule
-			SfSchedule schedule = new SfSchedule();
-			schedule.ScheduleView = ScheduleView.WorkWeekView;
-			//Customize the schedule view header
-			ViewHeaderStyle viewHeaderStyle = new ViewHeaderStyle();
-			viewHeaderStyle.BackgroundColor = Color.FromHex("#009688");
-			viewHeaderStyle.DayTextColor = Color.FromHex("#FFFFFF");
-			viewHeaderStyle.DateTextColor = Color.FromHex("#FFFFFF");
-			viewHeaderStyle.DayFontFamily = "Arial";
-			viewHeaderStyle.DateFontFamily = "Arial";
-			schedule.ViewHeaderStyle = viewHeaderStyle;
-			
+//Create new instance of Schedule
+SfSchedule schedule = new SfSchedule();
+schedule.ScheduleView = ScheduleView.WorkWeekView;
+//Customize the schedule view header
+ViewHeaderStyle viewHeaderStyle = new ViewHeaderStyle();
+viewHeaderStyle.BackgroundColor = Color.FromHex("#009688");
+viewHeaderStyle.DayTextColor = Color.FromHex("#FFFFFF");
+viewHeaderStyle.DateTextColor = Color.FromHex("#FFFFFF");
+viewHeaderStyle.DayFontFamily = "Arial";
+viewHeaderStyle.DateFontFamily = "Arial";
+schedule.ViewHeaderStyle = viewHeaderStyle;
 {% endhighlight %}
 
 {% highlight XAML %}
-
-    <schedule:SfSchedule x:Name="schedule" ScheduleView ="WorkWeekView">
-     <schedule:SfSchedule.ViewHeaderStyle>
-         <schedule:ViewHeaderStyle
-            BackgroundColor="#009688" 
-            DayTextColor="#FFFFFF" 
-            DateTextColor="#FFFFFF" 
-            DayFontFamily="Arial" 
-            DateFontFamily="Arial">
-         </schedule:ViewHeaderStyle>
-      </schedule:SfSchedule.ViewHeaderStyle>
-    </schedule:SfSchedule>
-
+<schedule:SfSchedule x:Name="schedule" ScheduleView ="WorkWeekView">
+ <schedule:SfSchedule.ViewHeaderStyle>
+	 <schedule:ViewHeaderStyle
+		BackgroundColor="#009688" 
+		DayTextColor="#FFFFFF" 
+		DateTextColor="#FFFFFF" 
+		DayFontFamily="Arial" 
+		DateFontFamily="Arial">
+	 </schedule:ViewHeaderStyle>
+  </schedule:SfSchedule.ViewHeaderStyle>
+</schedule:SfSchedule>
 {% endhighlight %}
 {% endtabs %} 
 
@@ -60,16 +56,12 @@ You can customize the height of the ViewHeader in `WeekView` by setting [ViewHea
 
 {% tabs %} 
 {% highlight C# %}
-
-        schedule.ScheduleView = ScheduleView.WorkWeekView;
-		schedule.ViewHeaderHeight = 50;
-			
+schedule.ScheduleView = ScheduleView.WorkWeekView;
+schedule.ViewHeaderHeight = 50;		
 {% endhighlight %}
 
 {% highlight XAML %}
-
-    <schedule:SfSchedule x:Name="schedule" ScheduleView ="WorkWeekView" ViewHeaderHeight="50" />
-           
+<schedule:SfSchedule x:Name="schedule" ScheduleView ="WorkWeekView" ViewHeaderHeight="50" />     
 {% endhighlight %}
 {% endtabs %}
 
@@ -104,20 +96,19 @@ We can customize the date and day format of `SfSchedule` ViewHeader by using [Da
 
 {% tabs %}
 {% highlight xaml %}
-
-    <schedule:SfSchedule>
-        <schedule:SfSchedule.WorkWeekViewSettings>
-            <schedule:WorkWeekViewSettings>
-                <schedule:WorkWeekViewSettings.WorkWeekLabelSettings>
-                    <schedule:WorkWeekLabelSettings DateFormat=“dd”>
-                        <schedule:WorkWeekLabelSettings.DayFormat>
-                            <OnPlatform x:TypeArguments="x:String" iOS="EEEE" Android="EEEE" WinPhone="dddd" />
-                        </schedule:WorkWeekLabelSettings.DayFormat>
-                    </schedule:WorkWeekLabelSettings>
-                </schedule:WorkWeekViewSettings.WorkWeekLabelSettings>
-            </schedule:WorkWeekViewSettings>
-        </schedule:SfSchedule.WorkWeekViewSettings>
-    </schedule:SfSchedule>
+<schedule:SfSchedule>
+	<schedule:SfSchedule.WorkWeekViewSettings>
+		<schedule:WorkWeekViewSettings>
+			<schedule:WorkWeekViewSettings.WorkWeekLabelSettings>
+				<schedule:WorkWeekLabelSettings DateFormat=“dd”>
+					<schedule:WorkWeekLabelSettings.DayFormat>
+						<OnPlatform x:TypeArguments="x:String" iOS="EEEE" Android="EEEE" WinPhone="dddd" />
+					</schedule:WorkWeekLabelSettings.DayFormat>
+				</schedule:WorkWeekLabelSettings>
+			</schedule:WorkWeekViewSettings.WorkWeekLabelSettings>
+		</schedule:WorkWeekViewSettings>
+	</schedule:SfSchedule.WorkWeekViewSettings>
+</schedule:SfSchedule>
 {% endhighlight %}
 {% highlight c# %}
 schedule.ScheduleView = ScheduleView.WorkWeekView;
@@ -140,11 +131,10 @@ We can handle single tap action of ViewHeader by using [ViewHeaderTapped](http:/
 
 {% tabs %}
 {% highlight xaml %}
-
-    <schedule:SfSchedule x:Name="schedule"
-                         ScheduleView="WorkWeekView"
-                         ViewHeaderTapped="Handle_ViewHeaderTapped" >
-    </schedule:SfSchedule>
+<schedule:SfSchedule x:Name="schedule"
+					 ScheduleView="WorkWeekView"
+					 ViewHeaderTapped="Handle_ViewHeaderTapped" >
+</schedule:SfSchedule>
 {% endhighlight %}
 {% highlight c# %}
 //Creating  new instance of Schedule
@@ -154,25 +144,25 @@ schedule.ViewHeaderTapped += Handle_ViewHeaderTapped;
 {% endhighlight %}
 {% endtabs %}
 
+{% tabs %}
 {% highlight c# %}
-void Handle_ViewHeaderTapped(object sender, ViewHeaderTappedEventArgs e)
+private void Handle_ViewHeaderTapped(object sender, ViewHeaderTappedEventArgs e)
 {
     var dateTime = e.DateTime;
 }
 {% endhighlight %}
+{% endtabs %}
 
 ## Change Time Interval
 You can customize the interval of timeslots in `WorkWeekView` by setting [TimeInterval](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~TimeInterval.html)  property of `SfSchedule`.
 
 {% tabs %}
 {% highlight C# %}
-
-    schedule.ScheduleView = ScheduleView.WorkWeekView;
-	schedule.TimeInterval = 120;
+schedule.ScheduleView = ScheduleView.WorkWeekView;
+schedule.TimeInterval = 120;
 {% endhighlight %}
 {% highlight XAML %}
-
-    <schedule:SfSchedule x:Name="schedule" ScheduleView="WorkWeekView" TimeInterval="120"/>  
+<schedule:SfSchedule x:Name="schedule" ScheduleView="WorkWeekView" TimeInterval="120"/>  
 {% endhighlight %}
 {% endtabs %} 
 
@@ -187,12 +177,10 @@ You can customize the interval height of timeslots in `WorkWeekView` by setting 
 
 {% tabs %}
 {% highlight C# %}
-
 schedule.ScheduleView = ScheduleView.WorkWeekView;
 schedule.TimeIntervalHeight = 180;
 {% endhighlight %}
 {% highlight XAML %}
-
 <schedule:SfSchedule  x:Name="schedule"  ScheduleView="WorkWeekView" TimeIntervalHeight="180"/>
 {% endhighlight %}
 {% endtabs %}
@@ -205,25 +193,23 @@ Working hours in `WorkWeekView` of Schedule control will be differentiated with 
 
 {% tabs %} 
 {% highlight C# %}
-
-    schedule.ScheduleView = ScheduleView.WorkWeekView;
-	//Create new instance of WorkWeekViewSettings
-	WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings();
-	workWeekViewSettings.WorkStartHour = 10;
-	workWeekViewSettings.WorkEndHour = 18;
-	schedule.WorkWeekViewSettings = workWeekViewSettings;
+schedule.ScheduleView = ScheduleView.WorkWeekView;
+//Create new instance of WorkWeekViewSettings
+WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings();
+workWeekViewSettings.WorkStartHour = 10;
+workWeekViewSettings.WorkEndHour = 18;
+schedule.WorkWeekViewSettings = workWeekViewSettings;
 {% endhighlight %}
 {% highlight XAML %}
-
-    <schedule:SfSchedule x:Name="schedule" ScheduleView="WorkWeekView">
-       <schedule:SfSchedule.WorkWeekViewSettings>
-            <!--setting working hours properties -->
-             <schedule:WorkWeekViewSettings 
-                WorkStartHour="10"
-				WorkEndHour="18">
-             </schedule:WorkWeekViewSettings>
-        </schedule:SfSchedule.WorkWeekViewSettings>
-    </schedule:SfSchedule>
+<schedule:SfSchedule x:Name="schedule" ScheduleView="WorkWeekView">
+   <schedule:SfSchedule.WorkWeekViewSettings>
+		<!--setting working hours properties -->
+		 <schedule:WorkWeekViewSettings 
+			WorkStartHour="10"
+			WorkEndHour="18">
+		 </schedule:WorkWeekViewSettings>
+	</schedule:SfSchedule.WorkWeekViewSettings>
+</schedule:SfSchedule>
 {% endhighlight %}
 {% endtabs %}
 
@@ -238,25 +224,23 @@ Default value for [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin/
 
 {% tabs %} 
 {% highlight C# %}
-
-    schedule.ScheduleView = ScheduleView.WorkWeekView;
-	//Create new instance of WorkWeekViewSettings
-	WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings();
-	workWeekViewSettings.StartHour = 08;
-	workWeekViewSettings.EndHour = 15;
-	schedule.WorkWeekViewSettings = workWeekViewSettings;
+schedule.ScheduleView = ScheduleView.WorkWeekView;
+//Create new instance of WorkWeekViewSettings
+WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings();
+workWeekViewSettings.StartHour = 08;
+workWeekViewSettings.EndHour = 15;
+schedule.WorkWeekViewSettings = workWeekViewSettings;
 {% endhighlight %}
 {% highlight XAML %}
-
-    <schedule:SfSchedule x:Name="schedule" ScheduleView="WorkWeekView">
-       <schedule:SfSchedule.WorkWeekViewSettings>
-            <!--setting working hours properties -->
-             <schedule:WorkWeekViewSettings 
-			 StartHour =”08” 
-			 EndHour =”15”>
-             </schedule:WorkWeekViewSettings>
-        </schedule:SfSchedule.WorkWeekViewSettings>
-    </schedule:SfSchedule>
+<schedule:SfSchedule x:Name="schedule" ScheduleView="WorkWeekView">
+   <schedule:SfSchedule.WorkWeekViewSettings>
+		<!--setting working hours properties -->
+		 <schedule:WorkWeekViewSettings 
+		 StartHour =”08” 
+		 EndHour =”15”>
+		 </schedule:WorkWeekViewSettings>
+	</schedule:SfSchedule.WorkWeekViewSettings>
+</schedule:SfSchedule>
 {% endhighlight %}
 {% endtabs %}
 
@@ -280,31 +264,30 @@ You can customize the appearance of the working hour timeslots by its color usin
 
 {% tabs %}
 {% highlight C# %}
-
-            schedule.ScheduleView = ScheduleView.WorkWeekView;
-			//Create new instance of WorkWeekViewSettings
-			WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings();
-			workWeekViewSettings.TimeSlotBorderColor = Color.Aqua;
-			workWeekViewSettings.VerticalLineColor = Color.Blue;
-			workWeekViewSettings.TimeSlotColor = Color.Yellow;
-			workWeekViewSettings.TimeSlotBorderStrokeWidth = 5;
-			workWeekViewSettings.VerticalLineStrokeWidth = 5;
-			schedule.WorkWeekViewSettings = workWeekViewSettings;
+schedule.ScheduleView = ScheduleView.WorkWeekView;
+//Create new instance of WorkWeekViewSettings
+WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings();
+workWeekViewSettings.TimeSlotBorderColor = Color.Aqua;
+workWeekViewSettings.VerticalLineColor = Color.Blue;
+workWeekViewSettings.TimeSlotColor = Color.Yellow;
+workWeekViewSettings.TimeSlotBorderStrokeWidth = 5;
+workWeekViewSettings.VerticalLineStrokeWidth = 5;
+schedule.WorkWeekViewSettings = workWeekViewSettings;
 {% endhighlight %}
 {% highlight XAML %}
 
-     <schedule:SfSchedule x:Name="schedule" ScheduleView="WorkWeekView">
-     <schedule:SfSchedule.WorkWeekViewSettings>
-      <!--setting work week view settings properties -->
-        <schedule:WorkWeekViewSettings
-          TimeSlotColor="Yellow"
-          TimeSlotBorderColor="Aqua" 
-          TimeSlotBorderStrokeWidth="5"
-          VerticalLineStrokeWidth="5" 
-          VerticalLineColor="Blue">
-       </schedule:WorkWeekViewSettings>
-     </schedule:SfSchedule.WorkWeekViewSettings>
-    </schedule:SfSchedule>
+<schedule:SfSchedule x:Name="schedule" ScheduleView="WorkWeekView">
+	<schedule:SfSchedule.WorkWeekViewSettings>
+	<!--setting work week view settings properties -->
+		<schedule:WorkWeekViewSettings
+			TimeSlotColor="Yellow"
+			TimeSlotBorderColor="Aqua" 
+			TimeSlotBorderStrokeWidth="5"
+			VerticalLineStrokeWidth="5" 
+			VerticalLineColor="Blue">
+		</schedule:WorkWeekViewSettings>
+	</schedule:SfSchedule.WorkWeekViewSettings>
+</schedule:SfSchedule>
 {% endhighlight %}
 {% endtabs %} 
 
@@ -316,32 +299,30 @@ You can customize the appearance of the non-working hour timeslots by its color 
 
 {% tabs %}
 {% highlight C# %}
-
-            schedule.ScheduleView = ScheduleView.WorkWeekView;
-			//Create new instance of WorkWeekViewSettings
-			WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings();
-			workWeekViewSettings.NonWorkingHoursTimeSlotBorderColor = Color.Aqua;
-			workWeekViewSettings.VerticalLineColor = Color.Blue;
-			workWeekViewSettings.NonWorkingHoursTimeSlotColor = Color.Yellow;
-			workWeekViewSettings.TimeSlotBorderStrokeWidth = 5;
-			workWeekViewSettings.VerticalLineStrokeWidth = 5;
-			schedule.WorkWeekViewSettings = workWeekViewSettings;
+schedule.ScheduleView = ScheduleView.WorkWeekView;
+//Create new instance of WorkWeekViewSettings
+WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings();
+workWeekViewSettings.NonWorkingHoursTimeSlotBorderColor = Color.Aqua;
+workWeekViewSettings.VerticalLineColor = Color.Blue;
+workWeekViewSettings.NonWorkingHoursTimeSlotColor = Color.Yellow;
+workWeekViewSettings.TimeSlotBorderStrokeWidth = 5;
+workWeekViewSettings.VerticalLineStrokeWidth = 5;
+schedule.WorkWeekViewSettings = workWeekViewSettings;
 {% endhighlight %}
 
 {% highlight XAML %}
-
-    <schedule:SfSchedule x:Name="schedule" ScheduleView="WorkWeekView">
-     <schedule:SfSchedule.WorkWeekViewSettings>
-      <!--setting work week view settings properties -->
-        <schedule:WorkWeekViewSettings
-           NonWorkingHoursTimeSlotColor="Yellow"
-           NonWorkingHoursTimeSlotBorderColor="Aqua" 
-           TimeSlotBorderStrokeWidth="5"
-           VerticalLineStrokeWidth="5" 
-           VerticalLineColor="Blue">
-        </schedule:WorkWeekViewSettings>
-     </schedule:SfSchedule.WorkWeekViewSettings>
-    </schedule:SfSchedule> 
+<schedule:SfSchedule x:Name="schedule" ScheduleView="WorkWeekView">
+	<schedule:SfSchedule.WorkWeekViewSettings>
+	<!--setting work week view settings properties -->
+		<schedule:WorkWeekViewSettings
+			NonWorkingHoursTimeSlotColor="Yellow"
+			NonWorkingHoursTimeSlotBorderColor="Aqua" 
+			TimeSlotBorderStrokeWidth="5"
+			VerticalLineStrokeWidth="5" 
+			VerticalLineColor="Blue">
+		</schedule:WorkWeekViewSettings>
+	</schedule:SfSchedule.WorkWeekViewSettings>
+</schedule:SfSchedule> 
 {% endhighlight %}
 {% endtabs %} 
 
@@ -356,38 +337,36 @@ You can restrict or allocate certain timeslot as Non-accessible blocks by using 
 
 {% tabs %}
 {% highlight C# %}
-
-            schedule.ScheduleView = ScheduleView.WorkWeekView;
-			//Create new instance of NonAccessibleBlock
-			NonAccessibleBlock nonAccessibleBlock = new NonAccessibleBlock();
-			//Create new instance of NonAccessibleBlocksCollection
-			NonAccessibleBlocksCollection nonAccessibleBlocksCollection = new NonAccessibleBlocksCollection();
-			WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings();
-			nonAccessibleBlock.StartTime = 13;
-			nonAccessibleBlock.EndTime = 14;
-			nonAccessibleBlock.Text = "LUNCH";
-			nonAccessibleBlock.Color = Color.Black;
-			nonAccessibleBlocksCollection.Add(nonAccessibleBlock);
-			workWeekViewSettings.NonAccessibleBlocks = nonAccessibleBlocksCollection;
-			schedule.WorkWeekViewSettings = workWeekViewSettings;
+schedule.ScheduleView = ScheduleView.WorkWeekView;
+//Create new instance of NonAccessibleBlock
+NonAccessibleBlock nonAccessibleBlock = new NonAccessibleBlock();
+//Create new instance of NonAccessibleBlocksCollection
+NonAccessibleBlocksCollection nonAccessibleBlocksCollection = new NonAccessibleBlocksCollection();
+WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings();
+nonAccessibleBlock.StartTime = 13;
+nonAccessibleBlock.EndTime = 14;
+nonAccessibleBlock.Text = "LUNCH";
+nonAccessibleBlock.Color = Color.Black;
+nonAccessibleBlocksCollection.Add(nonAccessibleBlock);
+workWeekViewSettings.NonAccessibleBlocks = nonAccessibleBlocksCollection;
+schedule.WorkWeekViewSettings = workWeekViewSettings;
 {% endhighlight %}
 
 {% highlight XAML %}
-
-        <schedule:SfSchedule x:Name="schedule" ScheduleView="WorkWeekView">
-            <!--setting non-accessing blocks-->
-            <schedule:SfSchedule.WorkWeekViewSettings>
-                <schedule:WorkWeekViewSettings>
-                    <schedule:WorkWeekViewSettings.NonAccessibleBlocks>
-                        <schedule:NonAccessibleBlock 
-                            StartTime="13" 
-			        EndTime="14" 
-				 Text="LUNCH" 
-				 Color="Black" />
-                    </schedule:WorkWeekViewSettings.NonAccessibleBlocks>
-                </schedule:WorkWeekViewSettings>
-            </schedule:SfSchedule.WorkWeekViewSettings>
-        </schedule:SfSchedule> 
+<schedule:SfSchedule x:Name="schedule" ScheduleView="WorkWeekView">
+	<!--setting non-accessing blocks-->
+	<schedule:SfSchedule.WorkWeekViewSettings>
+		<schedule:WorkWeekViewSettings>
+			<schedule:WorkWeekViewSettings.NonAccessibleBlocks>
+				<schedule:NonAccessibleBlock 
+					StartTime="13" 
+			EndTime="14" 
+		 Text="LUNCH" 
+		 Color="Black" />
+			</schedule:WorkWeekViewSettings.NonAccessibleBlocks>
+		</schedule:WorkWeekViewSettings>
+	</schedule:SfSchedule.WorkWeekViewSettings>
+</schedule:SfSchedule> 
 {% endhighlight %}
 {% endtabs %} 
 
@@ -401,14 +380,12 @@ By default, schedule control will be rendered with Sunday as the first day of th
 
 {% tabs %}
 {% highlight C# %}
-
-    schedule.ScheduleView = ScheduleView.WorkWeekView;
-	schedule.FirstDayOfWeek = 3;
+schedule.ScheduleView = ScheduleView.WorkWeekView;
+schedule.FirstDayOfWeek = 3;
 {% endhighlight %}
 
 {% highlight XAML %}
-
-    <schedule:SfSchedule x:Name="schedule" ScheduleView="WorkWeekView" FirstDayOfWeek="3"/>
+<schedule:SfSchedule x:Name="schedule" ScheduleView="WorkWeekView" FirstDayOfWeek="3"/>
 {% endhighlight %}
 {% endtabs %} 
 
@@ -420,13 +397,12 @@ You can customize the format for the labels which are mentioning the time, by se
 
 
 {% highlight C# %}
-
-            schedule.ScheduleView = ScheduleView.WorkWeekView;
-			WorkWeekViewSettings workweekViewSettings = new WorkWeekViewSettings();
-			WorkWeekLabelSettings workWeekLabelSettings = new WorkWeekLabelSettings();
-			workWeekLabelSettings.TimeFormat = "hh mm";
-			workweekViewSettings.WorkWeekLabelSettings = workWeekLabelSettings;
-			schedule.WorkWeekViewSettings = workweekViewSettings;
+schedule.ScheduleView = ScheduleView.WorkWeekView;
+WorkWeekViewSettings workweekViewSettings = new WorkWeekViewSettings();
+WorkWeekLabelSettings workWeekLabelSettings = new WorkWeekLabelSettings();
+workWeekLabelSettings.TimeFormat = "hh mm";
+workweekViewSettings.WorkWeekLabelSettings = workWeekLabelSettings;
+schedule.WorkWeekViewSettings = workweekViewSettings;
 {% endhighlight %}
 
 ![](daymodule_images/timelabelformat_workweek.png)
@@ -437,15 +413,14 @@ You can customize the color for the labels which are mentioning the time, by set
 
 
 {% highlight C# %}
-
-            schedule.ScheduleView = ScheduleView.WorkWeekView;
-			//Create new instance of WorkWeekViewSettings
-			WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings();
-			//Create new instance of WorkWeekLabelSettings
-			WorkWeekLabelSettings workWeekLabelSettings = new WorkWeekLabelSettings();
-			workWeekLabelSettings.TimeLabelColor = Color.Blue;
-			workWeekViewSettings.WorkWeekLabelSettings = workWeekLabelSettings;
-			schedule.WorkWeekViewSettings = workWeekViewSettings;
+schedule.ScheduleView = ScheduleView.WorkWeekView;
+//Create new instance of WorkWeekViewSettings
+WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings();
+//Create new instance of WorkWeekLabelSettings
+WorkWeekLabelSettings workWeekLabelSettings = new WorkWeekLabelSettings();
+workWeekLabelSettings.TimeLabelColor = Color.Blue;
+workWeekViewSettings.WorkWeekLabelSettings = workWeekLabelSettings;
+schedule.WorkWeekViewSettings = workWeekViewSettings;
 {% endhighlight %}
 
 ![](daymodule_images/timelabelappearance_workweek.png)
@@ -462,29 +437,27 @@ You can customize the timeslot selection by using [SelectionStyle](https://help.
 
 {% tabs %}
 {% highlight C# %}
-
-            schedule.ScheduleView = ScheduleView.WorkWeekView;
-			//Create new instance of SelectionStyle 
-			SelectionStyle selectionStyle = new SelectionStyle();
-			selectionStyle.BackgroundColor = Color.Blue;
-			selectionStyle.BorderColor = Color.Black;
-			selectionStyle.BorderThickness = 5;
-			selectionStyle.BorderCornerRadius = 5;
-			schedule.SelectionStyle = selectionStyle;
+schedule.ScheduleView = ScheduleView.WorkWeekView;
+//Create new instance of SelectionStyle 
+SelectionStyle selectionStyle = new SelectionStyle();
+selectionStyle.BackgroundColor = Color.Blue;
+selectionStyle.BorderColor = Color.Black;
+selectionStyle.BorderThickness = 5;
+selectionStyle.BorderCornerRadius = 5;
+schedule.SelectionStyle = selectionStyle;
 {% endhighlight %}
 
 {% highlight XAML %}
-
-    <schedule:SfSchedule x:Name="schedule" ScheduleView="WorkWeekView">
-            <schedule:SfSchedule.SelectionStyle>
-                <schedule:SelectionStyle 
-                   BackgroundColor="Blue" 
-                   BorderColor="Black" 
-                   BorderThickness="5" 
-                   BorderCornerRadius="5">
-                </schedule:SelectionStyle>
-            </schedule:SfSchedule.SelectionStyle>
-    </schedule:SfSchedule>
+<schedule:SfSchedule x:Name="schedule" ScheduleView="WorkWeekView">
+		<schedule:SfSchedule.SelectionStyle>
+			<schedule:SelectionStyle 
+			   BackgroundColor="Blue" 
+			   BorderColor="Black" 
+			   BorderThickness="5" 
+			   BorderCornerRadius="5">
+			</schedule:SelectionStyle>
+		</schedule:SfSchedule.SelectionStyle>
+</schedule:SfSchedule>
 {% endhighlight %}
 {% endtabs %} 
 
@@ -495,26 +468,25 @@ You can replace the default selection UI with your custom view by setting [Selec
 
 {% tabs %}
 {% highlight C# %}
-
-            schedule.ScheduleView = ScheduleView.WorkWeekView;
-			//Add the CustomView 
-			Button customView = new Button();
-			customView.Text = "+NewEvent";
-			customView.BackgroundColor = Color.FromHex("#FF9800");
-			customView.TextColor = Color.White;
-			schedule.SelectionView = customView;
+schedule.ScheduleView = ScheduleView.WorkWeekView;
+//Add the CustomView 
+Button customView = new Button();
+customView.Text = "+NewEvent";
+customView.BackgroundColor = Color.FromHex("#FF9800");
+customView.TextColor = Color.White;
+schedule.SelectionView = customView;
 {% endhighlight %}
 
 {% highlight XAML %}
 
-    <schedule:SfSchedule x:Name="schedule" ScheduleView="WorkWeekView">
-     <schedule:SfSchedule.SelectionView>
-          <Button
-              BackgroundColor="#FF9800" 
-		 Text="+NewEvent" 
-		 TextColor="White"/>
-      </schedule:SfSchedule.SelectionView>
-    </schedule:SfSchedule>
+<schedule:SfSchedule x:Name="schedule" ScheduleView="WorkWeekView">
+	<schedule:SfSchedule.SelectionView>
+	  <Button
+		  BackgroundColor="#FF9800" 
+		  Text="+NewEvent" 
+		  TextColor="White"/>
+	</schedule:SfSchedule.SelectionView>
+</schedule:SfSchedule>
 {% endhighlight %}
 {% endtabs %} 
 
@@ -523,21 +495,21 @@ You can replace the default selection UI with your custom view by setting [Selec
 ### Programmatic selection
 You can programmatically select the specific timeslot by setting corresponding date and time value to [SelectedDate](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~SelectedDate.html) property of `SfSchedule`. By default, it is null.
 
+{% tabs %} 
 {% highlight C# %}
-
-    // Setting a date and time to select
-    schedule.SelectedDate = new DateTime(2017, 10, 04, 10, 0, 0);
-
+// Setting a date and time to select
+schedule.SelectedDate = new DateTime(2017, 10, 04, 10, 0, 0);
 {% endhighlight %}
+{% endtabs %} 
 
 You can clear the selection by setting [SelectedDate](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~SelectedDate.html) as null.
 
+{% tabs %} 
 {% highlight C# %}
-
-    // Setting null value to deselect
-    schedule.SelectedDate = null;
-
+// Setting null value to deselect
+schedule.SelectedDate = null;
 {% endhighlight %}
+{% endtabs %} 
 
 You can download the entire source code of this demo for Xamarin.Forms from here [Date_Selection](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Date_Selection1072247797.zip)
 

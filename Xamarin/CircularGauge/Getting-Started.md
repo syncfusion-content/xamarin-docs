@@ -267,5 +267,108 @@ Create a [`Needle Pointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sf
 {% endhighlight %}
        
 {% endtabs %}
+
+The following code example gives you the complete code of above configurations.
+
+{% tabs %}
+
+{% highlight xaml %} 
+
+    <?xml version="1.0" encoding="utf-8" ?>
+    <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:gauge="clr-namespace:Syncfusion.SfGauge.XForms;assembly=Syncfusion.SfGauge.XForms"      
+             xmlns:local="clr-namespace:CircularGuage;assembly=CircularGuage"
+             x:Class="CircularGuage.UGSample">
+
+    <StackLayout  x:Name="main_layout"  VerticalOptions="FillAndExpand" Orientation="Vertical" Padding="20,0,20,0">
+        <gauge:SfCircularGauge x:Name="circularGauge" WidthRequest ="200" HeightRequest="500" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+
+            <gauge:SfCircularGauge.Headers>
+                <gauge:Header Text="Speedometer" />
+            </gauge:SfCircularGauge.Headers>
+            
+            <gauge:SfCircularGauge.Scales>
+                
+                  <gauge:Scale>
+                    
+                    <gauge:Scale.Ranges>
+                        <gauge:Range StartValue="0" EndValue="40"/>
+                    </gauge:Scale.Ranges>
+                    
+                    <gauge:Scale.Pointers>
+                        <gauge:NeedlePointer  Value="60" />
+                        <gauge:RangePointer Value="60" />
+                        <gauge:MarkerPointer Value="70" />
+                    </gauge:Scale.Pointers>
+                    
+                   </gauge:Scale>
+                
+                  </gauge:SfCircularGauge.Scales>
+
+              </gauge:SfCircularGauge>
+        
+          </StackLayout>
+
+     </ContentPage>
+	 
+{% endhighlight %}
+
+{% highlight c# %}  
+   
+using Syncfusion.SfGauge.XForms;
+
+namespace CircularGuage
+{
+    public partial class UGSample : ContentPage
+    {
+
+        public UGSample()
+        {
+            InitializeComponent();
+
+            SfCircularGauge circular = new SfCircularGauge();
+            circular.HeightRequest = 500;
+            circular.WidthRequest = 500;
+            circular.Margin = 10;
+
+            Header header = new Header();
+            header.Text = "Speedometer";
+            circularGauge.Headers.Add(header);
+
+            ObservableCollection<Scale> scales = new ObservableCollection<Scale>();
+            Scale scale = new Scale();
+            scales.Add(scale);
+            Range range = new Range();
+            range.StartValue = 0;
+            range.EndValue = 40;
+            scale.Ranges.Add(range);
+
+            NeedlePointer needlePointer = new NeedlePointer();
+            needlePointer.Value = 60;
+            scale.Pointers.Add(needlePointer);
+
+            RangePointer rangePointer = new RangePointer();
+            rangePointer.Value = 60;
+            scale.Pointers.Add(rangePointer);
+
+            MarkerPointer markerPointer = new MarkerPointer();
+            markerPointer.Value = 70;
+            scale.Pointers.Add(markerPointer);
+            circular.Scales = scales;
+
+            scales.Add(scale);
+            circular.Scales = scales;
+
+            this.Content = circular;
+        }
+    }
+}
+	
+{% endhighlight %}
+       
+{% endtabs %}
+
+The following circular gauge is created as a result of the above codes.
  
 ![](getting-started_images/default.png)

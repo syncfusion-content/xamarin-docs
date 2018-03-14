@@ -26,9 +26,12 @@ You can add a title to gauge using the [`LinearHeader`](https://help.syncfusion.
 
             <gauge:SfLinearGauge.Scales>
                 <gauge:LinearScale ScaleBarColor="#e0e0e0" LabelColor="#424242" ScaleBarLength ="350">
-				    <gauge:LinearScale.MajorTickSettings>
-                        <gauge:LinearTickSettings Thickness = "1"/>
+                    <gauge:LinearScale.MajorTickSettings>
+                        <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="15"/>
                     </gauge:LinearScale.MajorTickSettings>
+                    <gauge:LinearScale.MinorTickSettings>
+                        <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="7"/>
+                    </gauge:LinearScale.MinorTickSettings>
                 </gauge:LinearScale>
             </gauge:SfLinearGauge.Scales>
 
@@ -49,10 +52,14 @@ You can add a title to gauge using the [`LinearHeader`](https://help.syncfusion.
     linearScale.Interval = 10;
     linearScale.ScaleBarColor = Color.FromHex("#e0e0e0");
     linearScale.MajorTickSettings.Thickness = 1;
+    linearScale.MajorTickSettings.Length = 15;
+    linearScale.MajorTickSettings.Color = Color.Gray;
+    linearScale.MinorTickSettings.Color = Color.Gray;
+    linearScale.MinorTickSettings.Length = 7;
+    linearScale.MinorTickSettings.Thickness = 1;
     linearScale.ScaleBarLength = 350;
     linearScale.LabelColor = Color.FromHex("#424242");
     linearGauge.Scales.Add(linearScale);
-
 
 {% endhighlight %}
 
@@ -69,15 +76,18 @@ To change the position of header, use the [`Offset`](https://help.syncfusion.com
 {% highlight xaml %}
  
        <gauge:SfLinearGauge>
-            <gauge:SfLinearGauge.Header >
+             <gauge:SfLinearGauge.Header >
                 <gauge:LinearHeader Text="Thermometer" Offset="0.4,0.4"/>
             </gauge:SfLinearGauge.Header>
 
             <gauge:SfLinearGauge.Scales>
-                <gauge:LinearScale ScaleBarColor="#e0e0e0" LabelColor="#424242">
-				    <gauge:LinearScale.MajorTickSettings>
-                        <gauge:LinearTickSettings Thickness = "1"/>
+                <gauge:LinearScale ScaleBarColor="#e0e0e0" LabelColor="#424242" ScaleBarLength ="350">
+                    <gauge:LinearScale.MajorTickSettings>
+                        <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="15"/>
                     </gauge:LinearScale.MajorTickSettings>
+                    <gauge:LinearScale.MinorTickSettings>
+                        <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="7"/>
+                    </gauge:LinearScale.MinorTickSettings>
                 </gauge:LinearScale>
             </gauge:SfLinearGauge.Scales>
 
@@ -95,10 +105,14 @@ To change the position of header, use the [`Offset`](https://help.syncfusion.com
        linearGauge.Header = linearHeader;
        LinearScale linearScale = new LinearScale();
 	   linearScale.MajorTickSettings.Thickness = 1;
+       linearScale.MajorTickSettings.Length = 15;
+       linearScale.MajorTickSettings.Color = Color.Gray;
+       linearScale.MinorTickSettings.Color = Color.Gray;
+       linearScale.MinorTickSettings.Length = 7;
+       linearScale.MinorTickSettings.Thickness = 1;
        linearScale.ScaleBarColor = Color.FromHex("#e0e0e0");
        linearScale.LabelColor = Color.FromHex("#424242");
        linearGauge.Scales.Add(linearScale);
-
     
 {% endhighlight %}
 
@@ -115,11 +129,12 @@ You can customize the text of [`LinearHeader`](https://help.syncfusion.com/cr/cr
 {% highlight xaml %}
  
       <gauge:SfLinearGauge>
-            <gauge:SfLinearGauge.Header >
+              <gauge:SfLinearGauge.Header >
                 <gauge:LinearHeader Text="Thermometer" TextSize="18" ForegroundColor="DarkCyan" FontAttributes="Bold" Offset="0.35,0.4">
-                <gauge:LinearHeader.FontFamily>
-                    <OnPlatform x:TypeArguments="x:String" iOS="Chalkduster" Android="algerian.ttf" WinPhone="Chiller" />
-                </gauge:LinearHeader.FontFamily>
+                    <gauge:LinearHeader.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String" iOS="Chalkduster" Android="algerian.ttf" WinPhone="Chiller" />
+                    </gauge:LinearHeader.FontFamily>
+                </gauge:LinearHeader>
             </gauge:SfLinearGauge.Header>
 
             <gauge:SfLinearGauge.Scales>

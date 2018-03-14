@@ -192,6 +192,8 @@ The following code is used to create the `Annotations`.
 	
 	Annotation1.HeightRequest = Device.OnPlatform(70, 80, 100);
     Annotation1.WidthRequest = Device.OnPlatform(70, 80, 100);
+
+    CircularGaugeAnnotationCollection annotations = new CircularGaugeAnnotationCollection();
 			
 	GaugeAnnotation gaugeAnnotation = new GaugeAnnotation();
     gaugeAnnotation.View = LabelAnnotation2;

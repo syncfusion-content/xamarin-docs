@@ -11,7 +11,7 @@ documentation: ug
 
 [`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfLinearGauge.html) displays a range of values graphically along the linear scale, which is considered as the linear form of the linear gauge. It measures the values of the scale and it is present in the horizontal, vertical sliding, or meter. 
 
-[`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfLinearGauge.html) is used to visualize the numerical values of a scale in linear manner. It is rendered as a canvas image. By using the [`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfLinearGauge.html) control, it is possible to render the thermometer.
+[`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfLinearGauge.html) is used to visualize the numerical values of a scale in linear manner. By using the [`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfLinearGauge.html) control, it is possible to render the thermometer.
 
 
 ## Key Features

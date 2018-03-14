@@ -23,7 +23,7 @@ Show map items should be enabled to display the label on bubble marker.
 {% highlight xml %}
 
 <maps:ShapeFileLayer  Uri="usa_state.shp"  ShapeIDPath="State"  ShapeIDTableField="STATE_NAME" 
-ItemsSource="{Binding Data}  ShowMapItems="True"  />
+ItemsSource="{Binding Data}"  ShowMapItems="True"  />
 
 {% endhighlight %}
 

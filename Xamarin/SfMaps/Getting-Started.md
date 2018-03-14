@@ -24,12 +24,11 @@ Create an instance of maps custom renderer in the MainPage constructor of the UW
 {% highlight C# %}
 
 public MainPage()
-        {
-…
-           new  Syncfusion.SfMaps.XForms.UWP.SfMapsRenderer();
-…  
-           
-        }
+{
+	…
+	new  Syncfusion.SfMaps.XForms.UWP.SfMapsRenderer();
+	…             
+}
 
 {% endhighlight %}
 
@@ -76,7 +75,7 @@ Create an instance for maps control, and add it as content.
 
 {% highlight xaml %}
 
-  <maps:SfMaps >
+ <maps:SfMaps >
   
  </maps:SfMaps>
 
@@ -130,7 +129,7 @@ Shape file can be a set of files or a single file. Generally, a shape file conta
                     <maps:ShapeFileLayer Uri="usa_state.shp"  >                        
                     </maps:ShapeFileLayer>
                 </maps:SfMaps.Layers>
-            </maps:SfMaps>     
+    </maps:SfMaps>     
 
 {% endhighlight %}
 
@@ -138,10 +137,10 @@ Shape file can be a set of files or a single file. Generally, a shape file conta
 	
 SfMaps map = new SfMaps();
 map.BackgroundColor = Color.White;
-            ShapeFileLayer layer = new ShapeFileLayer();
-            layer.Uri = "usa_state.shp";
-            map.Layers.Add(layer);
-            this.Content = map;
+ShapeFileLayer layer = new ShapeFileLayer();
+layer.Uri = "usa_state.shp";
+map.Layers.Add(layer);
+this.Content = map;
 
 {% endhighlight %}
  
@@ -158,14 +157,14 @@ map.BackgroundColor = Color.White;
 {% highlight xaml %}
         
  <maps:ShapeFileLayer Uri="world.json">                        
-                    </maps:ShapeFileLayer>
+ </maps:ShapeFileLayer>
 					
 {% endhighlight %}
 
- {% highlight c# %}
+{% highlight c# %}
      
-   ShapeFileLayer layer = new ShapeFileLayer();
-    layer.Uri = "world.json";
+ ShapeFileLayer layer = new ShapeFileLayer();
+ layer.Uri = "world.json";
 			
 {% endhighlight %}
 
@@ -178,7 +177,7 @@ After loading the shapes file, the following output will be reproduced.
 ## Adding marker 
 
 Markers are used to identify the shapes. This can be added to the shape file layers as shown in the following code sample.
-Markers can be customized using the [`MarkerSettings`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~MarkerSettings.html] property in shape file layer.
+Markers can be customized using the [`MarkerSettings`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~MarkerSettings.html) property in shape file layer.
 
 {% tabs %}
 
@@ -187,17 +186,17 @@ Markers can be customized using the [`MarkerSettings`](https://help.syncfusion.c
  <maps:ShapeFileLayer.Markers>
               <maps:MapMarker Label = "California" Latitude = "37" Longitude = "-120">                
               </maps:MapMarker>
-            </maps:ShapeFileLayer.Markers>           
+ </maps:ShapeFileLayer.Markers>           
 
 {% endhighlight %}
 
 {% highlight c# %}
 	
 MapMarker marker = new MapMarker();
-            marker.Label = "California";
-            marker.Latitude = "37";
-            marker.Longitude = "-120";
-            layer.Markers.Add(marker);   
+marker.Label = "California";
+marker.Latitude = "37";
+marker.Longitude = "-120";
+layer.Markers.Add(marker);   
 
 {% endhighlight %}
 
@@ -217,16 +216,16 @@ Detailed explanation is provided in the legend topic.
 
 <maps:ShapeFileLayer.LegendSettings>
                             <maps:MapLegendSetting ShowLegend="true" LegendPosition="75,90"/>
-                        </maps:ShapeFileLayer.LegendSettings>
+</maps:ShapeFileLayer.LegendSettings>
 
 {% endhighlight %}
 
 {% highlight c# %}
 	
 MapLegendSetting setting = new MapLegendSetting();
-            setting.ShowLegend = true;
-            setting.LegendPosition = new Point(75, 90);
-            layer.LegendSettings = setting;  
+setting.ShowLegend = true;
+setting.LegendPosition = new Point(75, 90);
+layer.LegendSettings = setting;  
 
 {% endhighlight %}
 

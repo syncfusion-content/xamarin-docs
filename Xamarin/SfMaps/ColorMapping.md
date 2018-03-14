@@ -19,9 +19,8 @@ It is used to differentiate the shape’s fill based on its underlying value an
 {% highlight xml %}
 
 <maps:ShapeFileLayer Uri="usa_state.shp" ShapeIDPath="State" ShapeIDTableField="STATE_NAME"
-ItemsSource="{Binding Data}
 
-/>
+ItemsSource="{Binding Data}"/>
 
 <maps:ShapeFileLayer.ShapeSettings>
 

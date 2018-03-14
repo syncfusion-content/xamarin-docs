@@ -19,19 +19,19 @@ By default, schedule control is available with en locale, which is English.
 
 {% tabs %}   
 {% highlight xaml %}
-      <schedule:SfSchedule
-              x:Name="schedule" 
-              ScheduleView="WeekView"
-              Locale="ja">
-     </schedule:SfSchedule>
+<schedule:SfSchedule
+	  x:Name="schedule" 
+	  ScheduleView="WeekView"
+	  Locale="ja">
+</schedule:SfSchedule>
 {% endhighlight %}   
 {% highlight c# %}
-		//creating new instance for schedule
-		SfSchedule schedule = new SfSchedule();
-		//setting schedule view 
-		schedule.ScheduleView = ScheduleView.WeekView;
-		//setting locale for the control 
-		schedule.Locale = "ja";
+//creating new instance for schedule
+SfSchedule schedule = new SfSchedule();
+//setting schedule view 
+schedule.ScheduleView = ScheduleView.WeekView;
+//setting locale for the control 
+schedule.Locale = "ja";
 {% endhighlight %}   
 {% endtabs %}   
 
@@ -52,12 +52,14 @@ here [Localization](http://www.syncfusion.com/downloads/support/directtrac/gener
 
 You can localize custom text available in the control by adding equivalent localized string in the string.xml file.
 
+{% tabs %}
 {% highlight xml %}
-     <resources>
-    	<string name="No_Appointments">Aucun événement</string>
-     	<string name="all_day">Toute la journée</string>
-     </resources>
-{% endhighlight %}   
+<resources>
+	<string name="No_Appointments">Aucun événement</string>
+	<string name="all_day">Toute la journée</string>
+</resources>
+{% endhighlight %}  
+{% endtabs %} 
 
 Android can select and load resources from different directories, based on the current device configuration and locale, refer [here](https://developer.xamarin.com/guides/android/advanced_topics/localization/). For an example, if an application requires multiple languages we can follow the below steps.
 

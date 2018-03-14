@@ -943,6 +943,4 @@ Pointers can be dragged over the scale value. It can be achieved by clicking and
 
 {% endhighlight %}
 
-{% endtabs %}
-
 ![](pointers_images/marker-pointer/pointer-interaction.gif)

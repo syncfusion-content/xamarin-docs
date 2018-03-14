@@ -178,7 +178,7 @@ private async void LoadMoreItems(object obj)
 }
 {% endhighlight %}
 
-Download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LoadMore-1858684303.zip).
+Download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LoadMoreUG978011112).
 
 Refer to the following output to load more items:
 
@@ -385,4 +385,4 @@ public class LoadMoreViewModel:INotifyPropertyChanged
 }
 {% endhighlight %}
 
-You can download the entire sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LoadMore-1970518154).
+You can download the entire sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LoadMore_Infinitescroll423993966).

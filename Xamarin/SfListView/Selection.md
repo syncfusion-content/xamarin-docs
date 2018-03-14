@@ -117,7 +117,7 @@ The SfListView allows customizing appearance of the selected item/items by using
 </ContentPage>
 {% endhighlight %}
 
-Now run the application to render the following output. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomSelection-1369390597).
+Now run the application to render the following output. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomSelection-New-172474858).
 
 ![](SfListView_images/SfListView-Selection-2.png)
 
@@ -148,7 +148,7 @@ The SfListView allows changing the selection background color for the selected i
 </ContentPage>
 {% endhighlight %}
 
-You can download the entire sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomSelection-SelectionBackground518926149). The following output rendered when the background color is set to the selected item:
+You can download the entire sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomSelection-SelectionBackground715901267). The following output rendered when the background color is set to the selected item:
 
 ![](SfListView_images/SfListView-Selection-3.png)
 
@@ -176,7 +176,7 @@ public class SelectionControllerExt : SelectionController
 }
 {% endhighlight %}
 
-The screenshot shows the output of programmatic animation in selection. You can download the sample for above source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Selection-1915286868).
+The screenshot shows the output of programmatic animation in selection. You can download the sample for above source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Programatic_Animation1251260296).
 
 ![](SfListView_images/SfListView-SelectionAnimation.gif)
 
@@ -244,7 +244,7 @@ public partial class MainPage : ContentPage
 }
 {% endhighlight %}
 
-You can download the entire sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfListViewSample-694232902).
+You can download the entire sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfListViewSample1729548537).
 
 ### Automatically scroll to bring a selected item into the view
 
@@ -274,4 +274,4 @@ public partial class MainPage : ContentPage
 }
 {% endhighlight %}
 
-You can download the entire sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfListViewSample-1434197887).
+You can download the entire sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfListViewSample-1451946805).

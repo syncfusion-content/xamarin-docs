@@ -11,7 +11,7 @@ documentation: ug
 
 The Essential Maps for Xamarin.Forms control provides a graphical representation of geographical data. This is used to represent the statistical data of a particular geographical area on earth. You can navigate a map by panning and zooming. Maps support enhanced data visualization with bubbles and labels using data that bounded to map.
 
-![](Images/Legends.png)
+![](Images/Overview.png)
 
 ## Key Features
 

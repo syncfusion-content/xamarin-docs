@@ -110,7 +110,7 @@ Shape file can be a set of files or a single file. Generally, a shape file conta
 
 ### iOS
 
-*	Add the necessary shape files to the Assets folder of ProjectFileName.iOS.
+*	Add the necessary shape files to the Resources folder of ProjectFileName.iOS.
 *	Right-click the added shape file, and navigate to properties.
 *	Choose the `BundleResource` option under BuildAction of respective shape file.
 
@@ -145,8 +145,6 @@ this.Content = map;
 {% endhighlight %}
  
 {% endtabs %}
-
-![](Images/Maps.png)
 
 ## GeoJSON support
 
@@ -201,9 +199,7 @@ layer.Markers.Add(marker);
 {% endhighlight %}
 
 {% endtabs %}
-
-![](Images/GettingStartedimg2.jpeg) 
-
+ 
 ## Adding legend
 
 The legends interpret what the map displays. It can be added to the shape file layer as in below code snippet. Legends will be displayed based on the data bound to the layer and color mapping plays a major role in that. 
@@ -215,7 +211,7 @@ Detailed explanation is provided in the legend topic.
 {% highlight xaml %}
 
 <maps:ShapeFileLayer.LegendSettings>
-                            <maps:MapLegendSetting ShowLegend="true" LegendPosition="75,90"/>
+   <maps:MapLegendSetting ShowLegend="true" LegendPosition="75,90"/>
 </maps:ShapeFileLayer.LegendSettings>
 
 {% endhighlight %}
@@ -231,4 +227,109 @@ layer.LegendSettings = setting;
 
 {% endtabs %}
 
-![](Images/GettingStartedimg3.jpeg) 
+Below is the complete code for map with marker and legend.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<maps:SfMaps x:Name="sfmap"  BackgroundColor="White"  >
+                <maps:SfMaps.Layers >
+                    <maps:ShapeFileLayer Uri="usa_state.shp" ShapeIDPath="State" 
+                                         ShapeIDTableField="STATE_NAME" 
+                                       ItemsSource="{Binding Data}"
+                                         >
+                        <maps:ShapeFileLayer.Markers>
+                            <maps:MapMarker Label = "California" Latitude = "37" Longitude = "-120">
+                            </maps:MapMarker>
+                        </maps:ShapeFileLayer.Markers>
+                        
+                        <maps:ShapeFileLayer.MarkerSettings>
+                            
+                            <maps:MapMarkerSetting IconColor="LimeGreen" IconSize="25" 
+                                                   LabelColor="White" LabelSize="20">
+                            </maps:MapMarkerSetting>
+
+                        </maps:ShapeFileLayer.MarkerSettings>
+
+
+                        <maps:ShapeFileLayer.ShapeSettings>
+                            <maps:ShapeSetting ShapeColorValuePath="Candidate" ShapeValuePath="Candidate"   >
+                                <maps:ShapeSetting.ColorMappings>
+
+                                    <maps:EqualColorMapping Color="#D84444" LegendLabel="Romney" Value = "Romney"></maps:EqualColorMapping>
+                                    <maps:EqualColorMapping Color="#316DB5" LegendLabel="Obama" Value="Obama"></maps:EqualColorMapping>
+                                </maps:ShapeSetting.ColorMappings>
+                            </maps:ShapeSetting>
+                        </maps:ShapeFileLayer.ShapeSettings>
+
+                        <maps:ShapeFileLayer.LegendSettings>
+                            <maps:MapLegendSetting ShowLegend="True"  
+                                                   LegendPosition="30,70">
+                                <maps:MapLegendSetting.IconSize>
+                                    <Size Width="20" Height="20"></Size>
+                                </maps:MapLegendSetting.IconSize>
+                            </maps:MapLegendSetting>
+                        </maps:ShapeFileLayer.LegendSettings>
+                        
+                    </maps:ShapeFileLayer>
+                </maps:SfMaps.Layers>
+            </maps:SfMaps>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfMaps map = new SfMaps();
+
+            map.BackgroundColor = Color.White;
+            ShapeFileLayer layer = new ShapeFileLayer();
+            layer.Uri = "usa_state.shp";
+            layer.ItemsSource = viewModel.Data;
+            layer.ShapeIDTableField = "STATE_NAME";
+            layer.ShapeIDPath = "State";
+            map.Layers.Add(layer);
+
+            MapLegendSetting legendSetting = new MapLegendSetting();
+            legendSetting.ShowLegend = true;
+            legendSetting.LegendPosition = new Point(30, 70);
+            legendSetting.IconSize = new Size(20, 20);
+            layer.LegendSettings = legendSetting;
+
+            MapMarker marker = new MapMarker();
+            marker.Label = "California";
+            marker.Latitude = "37";
+            marker.Longitude = "-120";
+            layer.Markers.Add(marker);
+
+            MapMarkerSetting markerSetting = new MapMarkerSetting();
+            markerSetting.IconColor = Color. LimeGreen;
+            markerSetting.IconSize = 25;
+            markerSetting.LabelColor = Color.White;
+            markerSetting.LabelSize = 20;
+            layer.MarkerSettings = markerSetting;
+
+            EqualColorMapping colorMapping = new EqualColorMapping();
+            colorMapping.Color = Color.FromHex("#D84444");
+            colorMapping.LegendLabel = "Romney";
+            colorMapping.Value = "Romney";
+
+            EqualColorMapping colorMapping1 = new EqualColorMapping();
+            colorMapping1.Color = Color.FromHex("#316DB5");
+            colorMapping1.LegendLabel = "Obama";
+            colorMapping1.Value = "Obama";
+
+            ShapeSetting shapeSetting = new ShapeSetting();
+            shapeSetting.ShapeValuePath = "Candidate";
+            shapeSetting.ShapeColorValuePath = "Candidate";
+            shapeSetting.ColorMappings.Add(colorMapping);
+            shapeSetting.ColorMappings.Add(colorMapping1);
+            layer.ShapeSettings = shapeSetting;
+
+            this.Content = map;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Images/GettingStartedimg2.PNG) 

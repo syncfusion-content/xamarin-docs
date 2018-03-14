@@ -277,12 +277,11 @@ The following code example gives you the complete code of above configurations.
     <?xml version="1.0" encoding="utf-8" ?>
     <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-              xmlns:gauge="clr-namespace:Syncfusion.SfGauge.XForms;assembly=Syncfusion.SfGauge.XForms"      
+             xmlns:gauge="clr-namespace:Syncfusion.SfGauge.XForms;assembly=Syncfusion.SfGauge.XForms"      
              xmlns:local="clr-namespace:CircularGauge;assembly=CircularGauge"
              x:Class="CircularGauge.UGSample">
 
-    <StackLayout  x:Name="main_layout"  VerticalOptions="FillAndExpand" Orientation="Vertical" Padding="20,0,20,0">
-        <gauge:SfCircularGauge x:Name="circularGauge" WidthRequest ="200" HeightRequest="500" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <gauge:SfCircularGauge VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="10">
 
             <gauge:SfCircularGauge.Headers>
                 <gauge:Header Text="Speedometer" />
@@ -307,8 +306,6 @@ The following code example gives you the complete code of above configurations.
                   </gauge:SfCircularGauge.Scales>
 
               </gauge:SfCircularGauge>
-        
-          </StackLayout>
 
      </ContentPage>
 	 
@@ -327,31 +324,37 @@ namespace CircularGauge
         {
             InitializeComponent();
 
+            //Initializing circular gauge 
             SfCircularGauge circular = new SfCircularGauge();
-            circular.HeightRequest = 500;
-            circular.WidthRequest = 500;
             circular.Margin = 10;
-
+            
+            //Adding header 
             Header header = new Header();
             header.Text = "Speedometer";
             circularGauge.Headers.Add(header);
 
+             //Initializing scales for circular gauge
             ObservableCollection<Scale> scales = new ObservableCollection<Scale>();
             Scale scale = new Scale();
             scales.Add(scale);
+
+             //Adding range
             Range range = new Range();
             range.StartValue = 0;
             range.EndValue = 40;
             scale.Ranges.Add(range);
 
+           //Adding needle pointer
             NeedlePointer needlePointer = new NeedlePointer();
             needlePointer.Value = 60;
             scale.Pointers.Add(needlePointer);
 
+           //Adding range pointer
             RangePointer rangePointer = new RangePointer();
             rangePointer.Value = 60;
             scale.Pointers.Add(rangePointer);
-
+            
+             //Adding marker pointer
             MarkerPointer markerPointer = new MarkerPointer();
             markerPointer.Value = 70;
             scale.Pointers.Add(markerPointer);
@@ -373,4 +376,4 @@ The following circular gauge is created as a result of the above codes.
  
 ![](getting-started_images/default.png)
 
-You can find the complete getting started sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Gauge_GettingStarted1796536681).
+You can find the complete getting started sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Gauge_GettingStarted-145122730.zip).

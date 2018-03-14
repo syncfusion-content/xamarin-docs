@@ -30,14 +30,14 @@ In `MonthView`, appointments are not viewed in the month cell instead appointmen
 
 {% tabs %}
 {% highlight xaml %}
-<schedule:SfSchedule 
-		x:Name="schedule"
-		ScheduleView="MonthView">
-<schedule:SfSchedule.MonthViewSettings>
-	<schedule:MonthViewSettings 
-			AppointmentIndicatorCount = "2" >
-	</schedule:MonthViewSettings>
-</schedule:SfSchedule.MonthViewSettings>
+<schedule:SfSchedule
+	  x:Name="schedule"
+	  ScheduleView="MonthView">
+	<schedule:SfSchedule.MonthViewSettings>
+		<schedule:MonthViewSettings
+				AppointmentIndicatorCount = "2" >
+		</schedule:MonthViewSettings>
+	</schedule:SfSchedule.MonthViewSettings>
 </schedule:SfSchedule>
 {% endhighlight %}
 {% highlight c# %}
@@ -78,11 +78,11 @@ MonthView of Schedule can be navigated in both horizontal and vertical direction
 {% tabs %}
 {% highlight xaml %}
 <schedule:SfSchedule 
-			x:Name="schedule"
-			ScheduleView="MonthView">
+	x:Name="schedule"
+	ScheduleView="MonthView">
 	<schedule:SfSchedule.MonthViewSettings>
 		<schedule:MonthViewSettings 
-					MonthNavigationDirection="Vertical">
+				MonthNavigationDirection="Vertical">
 		</schedule:MonthViewSettings>
 	</schedule:SfSchedule.MonthViewSettings>
 </schedule:SfSchedule>
@@ -199,25 +199,25 @@ You can customize the View Header appearance by using [ViewHeaderStyle](http://h
 
 {% tabs %}
 {% highlight xaml %}
-    <schedule:SfSchedule 
-				x:Name="schedule" 
-				ScheduleView="MonthView">
-        <schedule:SfSchedule.ViewHeaderStyle>
-            <schedule:ViewHeaderStyle 
-						BackgroundColor="Blue" 
-						DayTextColor="White"
-						DayFontFamily="Arial">
-            </schedule:ViewHeaderStyle>
-        </schedule:SfSchedule.ViewHeaderStyle>
-    </schedule:SfSchedule>
+<schedule:SfSchedule 
+			x:Name="schedule" 
+			ScheduleView="MonthView">
+	<schedule:SfSchedule.ViewHeaderStyle>
+		<schedule:ViewHeaderStyle 
+					BackgroundColor="Blue" 
+					DayTextColor="White"
+					DayFontFamily="Arial">
+		</schedule:ViewHeaderStyle>
+	</schedule:SfSchedule.ViewHeaderStyle>
+</schedule:SfSchedule>
 {% endhighlight %}
 {% highlight c# %}
-		//creating new instance for viewHeaderStyle
-		ViewHeaderStyle viewHeaderStyle = new ViewHeaderStyle();
-		viewHeaderStyle.BackgroundColor = Color.Blue;
-		viewHeaderStyle.DayTextColor = Color.White;
-		viewHeaderStyle.DayFontFamily = "Arial";
-		schedule.ViewHeaderStyle = viewHeaderStyle;
+//creating new instance for viewHeaderStyle
+ViewHeaderStyle viewHeaderStyle = new ViewHeaderStyle();
+viewHeaderStyle.BackgroundColor = Color.Blue;
+viewHeaderStyle.DayTextColor = Color.White;
+viewHeaderStyle.DayFontFamily = "Arial";
+schedule.ViewHeaderStyle = viewHeaderStyle;
 {% endhighlight %}
 {% endtabs %}
 
@@ -266,8 +266,8 @@ We can handle single tap action of ViewHeader by using [ViewHeaderTapped](http:/
 {% tabs %}
 {% highlight xaml %}
 <schedule:SfSchedule x:Name="schedule"
-					 ScheduleView="MonthView"
-					 ViewHeaderTapped="Handle_ViewHeaderTapped" >
+				 ScheduleView="MonthView"
+				 ViewHeaderTapped="Handle_ViewHeaderTapped" >
 </schedule:SfSchedule>
 {% endhighlight %}
 {% highlight c# %}

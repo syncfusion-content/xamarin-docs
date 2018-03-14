@@ -372,3 +372,5 @@ namespace CircularGuage
 The following circular gauge is created as a result of the above codes.
  
 ![](getting-started_images/default.png)
+
+You can find the complete getting started sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Gauge_GettingStarted1796536681).

@@ -46,7 +46,7 @@ You can localize the custom strings used in the schedule control. For that you n
 *	Localizing custom text in UWP renderer.
 
 You can download the entire source code of this demo for Xamarin.Forms from
-here [Localization](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization_Forms-583877984.zip).
+here [Localization](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization_Forms-1564080177.zip).
 
 ### Localizing custom text in Android renderer.
 

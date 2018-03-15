@@ -140,6 +140,9 @@ You can also move to specific time of the day or current time of day when view i
 {% tabs %}
 {% highlight c# %}
 schedule.VisibleDatesChangedEvent += Schedule_VisibleDatesChangedEvent;
+
+...
+
 private void Schedule_VisibleDatesChangedEvent(object sender, VisibleDatesChangedEventArgs e)
 {
 	var date = DateTime.Now;

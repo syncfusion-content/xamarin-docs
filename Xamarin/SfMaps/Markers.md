@@ -29,27 +29,43 @@ Any number of markers can be added to the shape file layers using the [`Markers`
 
 {% highlight xml %}
 
-<maps:ShapeFileLayer.Markers>
+<maps:SfMaps x:Name="sfmap"  BackgroundColor="White">
+                <maps:SfMaps.Layers>
+                    <maps:ShapeFileLayer Uri="usa_state.shp">
+                        <maps:ShapeFileLayer.Markers>
 
-<maps:MapMarker Label = "California" Latitude = "37" Longitude = "-120">                
+                            <maps:MapMarker Label = "California" Latitude = "37" Longitude = "-120"/>
+                        </maps:ShapeFileLayer.Markers>
 
-</maps:MapMarker>
-
-</maps:ShapeFileLayer.Markers>
+                    </maps:ShapeFileLayer>
+                </maps:SfMaps.Layers>
+            </maps:SfMaps>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-MapMarker marker = new MapMarker();
+ SfMaps map = new SfMaps();
 
-marker.Label = "California";
+            map.BackgroundColor = Color.White;
 
-marker.Latitude = "37";
+            ShapeFileLayer layer = new ShapeFileLayer();
 
-marker.Longitude = "-120";            
+            layer.Uri = "usa_state.shp";
 
-layer.Markers.Add(marker);
+            map.Layers.Add(layer);
+
+            MapMarker marker = new MapMarker();
+
+            marker.Label = "California";
+
+            marker.Latitude = "37";
+
+            marker.Longitude = "-120";
+
+            layer.Markers.Add(marker);
+
+            this.Content = map;
 
 {% endhighlight %}
 
@@ -76,33 +92,63 @@ The following code explains the marker customization.
 
 {% highlight xml %}
 
-<maps:ShapeFileLayer.MarkerSettings>
+<maps:SfMaps x:Name="sfmap"  BackgroundColor="White">
+                <maps:SfMaps.Layers>
+                    <maps:ShapeFileLayer Uri="usa_state.shp">
+                        <maps:ShapeFileLayer.Markers>
 
-<maps:MapMarkerSetting IconColor="Red" IconSize="25" MarkerIcon="Diamond"
+                            <maps:MapMarker Label = "California" Latitude = "37" Longitude = "-120"/>
+                        </maps:ShapeFileLayer.Markers>
 
-LabelColor="White" LabelSize="20">
+                        <maps:ShapeFileLayer.MarkerSettings>
 
-</maps:MapMarkerSetting>
+                            <maps:MapMarkerSetting IconColor="Red" IconSize="25" MarkerIcon="Diamond"
+                                            LabelColor="White" LabelSize="20"/>
 
-</maps:ShapeFileLayer.MarkerSettings>
+                        </maps:ShapeFileLayer.MarkerSettings>
+                    </maps:ShapeFileLayer>
+                </maps:SfMaps.Layers>
+            </maps:SfMaps>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-MapMarkerSetting markerSetting = new MapMarkerSetting();
+SfMaps map = new SfMaps();
 
-markerSetting.IconColor = Color.Red;
+            map.BackgroundColor = Color.White;
 
-markerSetting.IconSize = 25;
+            ShapeFileLayer layer = new ShapeFileLayer();
 
-markerSetting.MarkerIcon = MapMarkerIcon.Diamond;
+            layer.Uri = "usa_state.shp";
 
-markerSetting.LabelColor = Color.White;
+            map.Layers.Add(layer);
 
-markerSetting.LabelSize = 20;
+            MapMarker marker = new MapMarker();
 
-layer.MarkerSettings = markerSetting;
+            marker.Label = "California";
+
+            marker.Latitude = "37";
+
+            marker.Longitude = "-120";
+
+            layer.Markers.Add(marker);
+
+            MapMarkerSetting markerSetting = new MapMarkerSetting();
+
+            markerSetting.IconColor = Color.Red;
+
+            markerSetting.IconSize = 25;
+
+            markerSetting.MarkerIcon = MapMarkerIcon.Diamond;
+
+            markerSetting.LabelColor = Color.White;
+
+            markerSetting.LabelSize = 20;
+
+            layer.MarkerSettings = markerSetting;
+
+            this.Content = map;
 
 {% endhighlight %}
 
@@ -118,6 +164,8 @@ Maps provide support for defining the custom marker using the [`MarkerTemplate`]
 {% tabs %}
 
 {% highlight xml %}
+
+<maps:SfMaps x:Name="sfmap"  BackgroundColor="White">
 
 <maps:SfMaps.Layers >
 
@@ -161,6 +209,8 @@ Maps provide support for defining the custom marker using the [`MarkerTemplate`]
 
 </maps:SfMaps.Layers>
 
+</maps:SfMaps>
+
 {% endhighlight %}
 
 {% highlight c# %}
@@ -188,3 +238,9 @@ ImageName = ImageSource.FromResource("MapsSample.pin.png");
 {% endtabs %}
 
 ![](Images/Markers_img3.jpeg)
+
+## Events
+
+[`MarkerSelected`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~MarkerSelected_EV.html) event is triggered when the marker is selected.
+Argument contains the [`MapMarker`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarker.html) which is used to get the information about the marker.
+

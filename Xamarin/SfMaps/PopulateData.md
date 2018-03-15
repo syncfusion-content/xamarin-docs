@@ -37,18 +37,18 @@ The `ShapeIDTableField` property is similar to the ShapeIdPath that refers to th
 
 {% highlight xaml %}
 
-       <maps:SfMaps x:Name="sfmap"    BackgroundColor="White" >
+<maps:SfMaps x:Name="sfmap"    BackgroundColor="White" >
 
 <maps:SfMaps.BindingContext>
-                    <local:ViewModel></local:ViewModel>
-                </maps:SfMaps.BindingContext>
+<local:ViewModel></local:ViewModel>
+</maps:SfMaps.BindingContext>
 
-                <maps:SfMaps.Layers >
-<maps:ShapeFileLayer Uri="usa_state.shp" ItemsSource="{Binding Data}
-                                          ShapeIDPath="State" ShapeIDTableField="STATE_NAME" >
+<maps:SfMaps.Layers >
+<maps:ShapeFileLayer Uri="usa_state.shp" ItemsSource="{Binding Data}"
+                  ShapeIDPath="State" ShapeIDTableField="STATE_NAME" >
 </maps:ShapeFileLayer>
-                </maps:SfMaps.Layers>
-            </maps:SfMaps>
+</maps:SfMaps.Layers>
+</maps:SfMaps>
 
 {% endhighlight %}
 

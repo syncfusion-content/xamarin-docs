@@ -66,95 +66,100 @@ legendSetting.LegendPosition = new Point(75, 90);
 
 The icon size of a legend can be customized using the [`IconSize`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLegendSetting~IconSize.html#) property.
 
-The following code explains the legend customization.
+The following code snippet explains the complete code for adding legend along with its customization.
 
 {% tabs %}
 
 {% highlight xml %}
 
-<maps:ShapeFileLayer Uri="usa_state.shp" ItemsSource="{Binding Data}
+<maps:SfMaps x:Name="sfmap"  BackgroundColor="White">
+                <maps:SfMaps.Layers>
+                    
+                    <maps:ShapeFileLayer Uri="usa_state.shp" ItemsSource="{Binding Data}"
+                                         ShapeIDPath="State" ShapeIDTableField="STATE_NAME" >
 
-ShapeIDPath="State" ShapeIDTableField="STATE_NAME" >
+                        <maps:ShapeFileLayer.LegendSettings>
+                            <maps:MapLegendSetting ShowLegend="True"  LegendPosition="75,90">
+                                <maps:MapLegendSetting.IconSize>
+                                    <Size Width="20" Height="20"/>
+                                </maps:MapLegendSetting.IconSize>
+                            </maps:MapLegendSetting>
+                        </maps:ShapeFileLayer.LegendSettings>
 
-<maps:ShapeFileLayer.LegendSettings>
+                        <maps:ShapeFileLayer.ShapeSettings>
+                            <maps:ShapeSetting ShapeColorValuePath="Candidate" ShapeValuePath="Candidate">
+                                <maps:ShapeSetting.ColorMappings>
+                                    <maps:EqualColorMapping Color="#D84444" Value="Romney"
+                                                            LegendLabel="Romney"/>
+                                    <maps:EqualColorMapping Color="#316DB5" Value="Obama" 
+                                                            LegendLabel="Obama"/>
+                                </maps:ShapeSetting.ColorMappings>
+                            </maps:ShapeSetting>
+                        </maps:ShapeFileLayer.ShapeSettings>
 
-<maps:MapLegendSetting ShowLegend="True"  LegendPosition="75,90">
-<maps:MapLegendSetting.IconSize>
-                                <Size Width="20" Height="20"/>
-                            </maps:MapLegendSetting.IconSize>
-</maps:MapLegendSetting>
-
-</maps:ShapeFileLayer.LegendSettings>
-
-<maps:ShapeFileLayer.ShapeSettings>
-
-<maps:ShapeSetting ShapeColorValuePath="Candidate" ShapeValuePath="Candidate">
-
-<maps:ShapeSetting.ColorMappings>
-
-<maps:EqualColorMapping Color="#D84444" Value="Romney" LegendLabel="Romney"></maps:EqualColorMapping>
-
-<maps:EqualColorMapping Color="#316DB5" Value="Obama" LegendLabel="Obama"></maps:EqualColorMapping>
-
-</maps:ShapeSetting.ColorMappings>
-
-</maps:ShapeSetting>
-
-</maps:ShapeFileLayer.ShapeSettings>
+                    </maps:ShapeFileLayer>
+                </maps:SfMaps.Layers>
+            </maps:SfMaps>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-ShapeFileLayer layer = new ShapeFileLayer();
+SfMaps map = new SfMaps();
 
-layer.Uri = "usa_state.shp";
+            map.BackgroundColor = Color.White;
 
-layer.ItemsSource = viewModel.Data;
+            ShapeFileLayer layer = new ShapeFileLayer();
 
-layer.ShapeIDTableField = "STATE_NAME";
+            layer.Uri = "usa_state.shp";
 
-layer.ShapeIDPath = "State";           
+            layer.ItemsSource = viewModel.Data;
 
-map.Layers.Add(layer);
+            layer.ShapeIDTableField = "STATE_NAME";
 
-MapLegendSetting legendSetting = new MapLegendSetting();
+            layer.ShapeIDPath = "State";
 
-legendSetting.ShowLegend = true;
+            map.Layers.Add(layer);
 
-legendSetting.LegendPosition = new Point(75, 90);
+            MapLegendSetting legendSetting = new MapLegendSetting();
 
-legendSetting.IconSize = new Size(20, 20);
+            legendSetting.ShowLegend = true;
 
-layer.LegendSettings = legendSetting;
+            legendSetting.LegendPosition = new Point(75, 90);
 
-EqualColorMapping colorMapping = new EqualColorMapping();
+            legendSetting.IconSize = new Size(20, 20);
 
-colorMapping.Color = Color.FromHex("#D84444");
+            layer.LegendSettings = legendSetting;
 
-colorMapping.LegendLabel = "Romney";
+            EqualColorMapping colorMapping = new EqualColorMapping();
 
-colorMapping.Value = "Romney";
+            colorMapping.Color = Color.FromHex("#D84444");
 
-EqualColorMapping colorMapping1 = new EqualColorMapping();
+            colorMapping.LegendLabel = "Romney";
 
-colorMapping1.Color = Color.FromHex("#316DB5");
+            colorMapping.Value = "Romney";
 
-colorMapping1.LegendLabel = "Obama";
+            EqualColorMapping colorMapping1 = new EqualColorMapping();
 
-colorMapping1.Value = "Obama";
+            colorMapping1.Color = Color.FromHex("#316DB5");
 
-ShapeSetting shapeSetting = new ShapeSetting();
+            colorMapping1.LegendLabel = "Obama";
 
-shapeSetting.ShapeValuePath = "Candidate";
+            colorMapping1.Value = "Obama";
 
-shapeSetting.ShapeColorValuePath = "Candidate";
+            ShapeSetting shapeSetting = new ShapeSetting();
 
-shapeSetting.ColorMappings.Add(colorMapping);
+            shapeSetting.ShapeValuePath = "Candidate";
 
-shapeSetting.ColorMappings.Add(colorMapping1);           
+            shapeSetting.ShapeColorValuePath = "Candidate";
 
-layer.ShapeSettings = shapeSetting;
+            shapeSetting.ColorMappings.Add(colorMapping);
+
+            shapeSetting.ColorMappings.Add(colorMapping1);
+
+            layer.ShapeSettings = shapeSetting;
+
+            this.Content = map;
 
 {% endhighlight %}
 

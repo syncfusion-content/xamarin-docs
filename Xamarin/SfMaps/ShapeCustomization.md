@@ -138,6 +138,8 @@ layer.ShapeSettings = shapeSetting;
 
 ![](Images/ShapeCustomization_img2.jpeg)
 
+## Selected shapes settings
+
 To customize the selected shapes alone, use the following properties:
 
 [`SelectedShapeColor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeSetting~SelectedShapeColor.html#): Sets the color for selected shapes in the map.
@@ -178,4 +180,24 @@ layer.ShapeSettings = shapeSetting;
 
 ![](Images/ShapeCustomization_img3.jpeg)
 
+## Events
 
+[`ShapeSelected`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShapeSelected_EV.html) event gets triggered when the map shapes are selected.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<maps:ShapeFileLayer ShapeSelected="ShapeFileLayer_ShapeSelected" />
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ private void ShapeFileLayer_ShapeSelected(object data)
+        {
+
+        }
+{% endhighlight %}
+
+{% endtabs %}

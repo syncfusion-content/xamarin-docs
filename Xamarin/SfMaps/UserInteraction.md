@@ -177,13 +177,34 @@ layer.SelectedItems.Remove(model[4]);
 
 The zooming feature enables you to zoom in and zoom out the map to show the in-depth information. The following properties are related to the zooming feature of maps control:
 
-[`EnableZooming`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.SfMaps~EnableZooming.html#): Enables zooming.
+[`EnableZooming`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.SfMaps~EnableZooming.html#) property is used to control whether to perform zooming or not.
 
-[`MinZoom`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.SfMaps~MinZoom.html#): Sets the minimum zoom level for map.
+[`MinZoom`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.SfMaps~MinZoom.html#) property sets the minimum level of zooming.
 
-[`MaxZoom`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.SfMaps~MaxZoom.html#): Sets the maximum zoom level for map.
+[`MaxZoom`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.SfMaps~MaxZoom.html#) property sets the maximum level of zooming.
 
-[`EnablePanning`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.SfMaps~EnablePanning.html#): Enables or disables the pan behavior.
+{% tabs %}
+
+{% highlight xml %}
+
+ <maps:SfMaps x:Name="sfmap"  EnableZooming="True" MinZoom="1" 
+                       MaxZoom="10"   BackgroundColor="White" />
+{% endhighlight %}
+
+{% highlight c# %}
+
+ SfMaps map = new SfMaps(); 
+            map.EnableZooming = true;
+            map.MinZoom = 1;
+            map.MaxZoom = 10;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Panning
+
+Panning feature allows moving the visible area of the map when it is zoomed in. To enable panning, you have to set [`EnablePanning`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.SfMaps~EnablePanning.html#) property to true.
 
 {% tabs %}
 
@@ -204,4 +225,7 @@ The zooming feature enables you to zoom in and zoom out the map to show the in-d
 {% endhighlight %}
 
 {% endtabs %}
+
+
+
 

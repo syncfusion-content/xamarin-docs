@@ -10,6 +10,11 @@ documentation: ug
 
 The color mapping support enables the customization of shape colors based on the underlying value of shape received from the bounded data.
 
+Maps provide two types of color mapping
+
+* Equal color mapping
+* Range Color mapping
+
 ## Equal color mapping
 
 It is used to differentiate the shape’s fill based on its underlying value and color using the [`Value`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.EqualColorMapping~Value.html#) and [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ColorMapping~Color.html#) properties.
@@ -18,72 +23,74 @@ It is used to differentiate the shape’s fill based on its underlying value an
 
 {% highlight xml %}
 
-<maps:ShapeFileLayer Uri="usa_state.shp" ShapeIDPath="State" ShapeIDTableField="STATE_NAME"
+ <maps:SfMaps x:Name="sfmap"  BackgroundColor="White">
+                <maps:SfMaps.Layers>
+                    <maps:ShapeFileLayer Uri="usa_state.shp" ShapeIDPath="State"
+                                         ShapeIDTableField="STATE_NAME" ItemsSource="{Binding Data}">
 
-ItemsSource="{Binding Data}"/>
-
-<maps:ShapeFileLayer.ShapeSettings>
-
-<maps:ShapeSetting ShapeValuePath="Candidate" ShapeColorValuePath="Candidate" >
-
-<maps:ShapeSetting.ColorMappings>
-
-<maps:EqualColorMapping Color="#D84444" Value = "Romney"></maps:EqualColorMapping>
-
-<maps:EqualColorMapping Color="#316DB5" Value="Obama"></maps:EqualColorMapping>
-
-</maps:ShapeSetting.ColorMappings>
-
-</maps:ShapeSetting>
-
-</maps:ShapeFileLayer.ShapeSettings>
+                        <maps:ShapeFileLayer.ShapeSettings>
+                            <maps:ShapeSetting ShapeValuePath="Candidate" ShapeColorValuePath="Candidate" >
+                                <maps:ShapeSetting.ColorMappings>
+                                    <maps:EqualColorMapping Color="#D84444" Value = "Romney"/>
+                                    <maps:EqualColorMapping Color="#316DB5" Value="Obama"/>
+                                </maps:ShapeSetting.ColorMappings>
+                            </maps:ShapeSetting>
+                        </maps:ShapeFileLayer.ShapeSettings>
+                    </maps:ShapeFileLayer>
+                </maps:SfMaps.Layers>
+            </maps:SfMaps>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-ShapeFileLayer layer = new ShapeFileLayer();
+SfMaps map = new SfMaps();
 
-layer.Uri = "usa_state.shp";
+            map.BackgroundColor = Color.White;
 
-layer.ItemsSource = viewModel.Data;
+            ShapeFileLayer layer = new ShapeFileLayer();
 
-layer.ShapeIDTableField = "STATE_NAME"; 
+            layer.Uri = "usa_state.shp";
 
-layer.ShapeIDPath = "State";           
+            layer.ItemsSource = viewModel.Data;
 
-map.Layers.Add(layer);
+            layer.ShapeIDTableField = "STATE_NAME";
 
-EqualColorMapping colorMapping = new EqualColorMapping();
+            layer.ShapeIDPath = "State";
 
-colorMapping.Color = Color.FromHex("#D84444");
+            map.Layers.Add(layer);           
 
-colorMapping.Value = "Romney";
+            EqualColorMapping colorMapping = new EqualColorMapping();
 
-EqualColorMapping colorMapping1 = new EqualColorMapping();
+            colorMapping.Color = Color.FromHex("#D84444");
 
-colorMapping1.Color = Color.FromHex("#316DB5");
+            colorMapping.Value = "Romney";
 
-colorMapping1.Value = "Obama";
+            EqualColorMapping colorMapping1 = new EqualColorMapping();
 
-ShapeSetting shapeSetting = new ShapeSetting();
+            colorMapping1.Color = Color.FromHex("#316DB5");
 
-shapeSetting.ShapeValuePath = "Candidate";
+            colorMapping1.Value = "Obama";
 
-shapeSetting.ShapeColorValuePath = "Candidate";
+            ShapeSetting shapeSetting = new ShapeSetting();
 
-shapeSetting.ColorMappings.Add(colorMapping);
+            shapeSetting.ShapeValuePath = "Candidate";
 
-shapeSetting.ColorMappings.Add(colorMapping1);           
+            shapeSetting.ShapeColorValuePath = "Candidate";
 
-layer.ShapeSettings = shapeSetting;
+            shapeSetting.ColorMappings.Add(colorMapping);
+
+            shapeSetting.ColorMappings.Add(colorMapping1);
+
+            layer.ShapeSettings = shapeSetting;
+
+            this.Content = map;     
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Color mapping image](Images/ColorMapping_img1.jpeg)
-
+![Equal color mapping image](Images/ColorMapping_img1.jpeg)
 
 ## Range color mapping
 
@@ -95,74 +102,87 @@ The [`From`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion
 
 {% highlight xml %}
 
-<maps:ShapeFileLayer.ShapeSettings>
+ <maps:SfMaps x:Name="sfmap"  BackgroundColor="White">
+                <maps:SfMaps.Layers>
+                    <maps:ShapeFileLayer Uri="usa_state.shp" ShapeIDPath="State"
+                                         ShapeIDTableField="STATE_NAME" ItemsSource="{Binding Data}">
 
-<maps:ShapeSetting  ShapeColorValuePath="Electors" >
+                        <maps:ShapeFileLayer.ShapeSettings>
+                            <maps:ShapeSetting  ShapeColorValuePath="Electors" >
+                                <maps:ShapeSetting.ColorMappings>
+                                    <maps:RangeColorMapping From="30" To="70" Color="#397D02"/>
+                                    <maps:RangeColorMapping From="15" To="30" Color="#316DB5"/>
+                                    <maps:RangeColorMapping From="0" To="15" Color="#D84444"/>
+                                </maps:ShapeSetting.ColorMappings>
+                            </maps:ShapeSetting>
 
-<maps:ShapeSetting.ColorMappings>
-
-<maps:RangeColorMapping From="30" To="70" Color="#397D02">                                        
-
-</maps:RangeColorMapping>
-
-<maps:RangeColorMapping From="15" To="30" Color="#316DB5">
-
-</maps:RangeColorMapping>
-
-<maps:RangeColorMapping From="0" To="15" Color="#D84444">
-
-</maps:RangeColorMapping>
-
-</maps:ShapeSetting.ColorMappings>
-
-</maps:ShapeSetting>
-
-</maps:ShapeFileLayer.ShapeSettings>
+                        </maps:ShapeFileLayer.ShapeSettings>
+                    </maps:ShapeFileLayer>
+                </maps:SfMaps.Layers>
+            </maps:SfMaps>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-RangeColorMapping rangeColorMapping = new RangeColorMapping();
+ SfMaps map = new SfMaps();
 
-rangeColorMapping.From = 30;
+            map.BackgroundColor = Color.White;
 
-rangeColorMapping.To = 70;
+            ShapeFileLayer layer = new ShapeFileLayer();
 
-rangeColorMapping.Color = Color.FromHex("#397D02");
+            layer.Uri = "usa_state.shp";
 
-RangeColorMapping rangeColorMapping1 = new RangeColorMapping();
+            layer.ItemsSource = viewModel.Data;
 
-rangeColorMapping1.From = 15;
+            layer.ShapeIDTableField = "STATE_NAME";
 
-rangeColorMapping1.To = 30;
+            layer.ShapeIDPath = "State";
 
-rangeColorMapping1.Color = Color.FromHex("#316DB5");
+            map.Layers.Add(layer);
 
-RangeColorMapping rangeColorMapping2 = new RangeColorMapping();
+            RangeColorMapping rangeColorMapping = new RangeColorMapping();
 
-rangeColorMapping2.From = 0;
+            rangeColorMapping.From = 30;
 
-rangeColorMapping2.To = 15;
+            rangeColorMapping.To = 70;
 
-rangeColorMapping2.Color = Color.FromHex("#D84444");
+            rangeColorMapping.Color = Color.FromHex("#397D02");
 
-ShapeSetting shapeSetting = new ShapeSetting();
+            RangeColorMapping rangeColorMapping1 = new RangeColorMapping();
 
-shapeSetting.ShapeColorValuePath = "Electors";
+            rangeColorMapping1.From = 15;
 
-shapeSetting.ColorMappings.Add(rangeColorMapping);
+            rangeColorMapping1.To = 30;
 
-shapeSetting.ColorMappings.Add(rangeColorMapping1);
+            rangeColorMapping1.Color = Color.FromHex("#316DB5");
 
-shapeSetting.ColorMappings.Add(rangeColorMapping2);
+            RangeColorMapping rangeColorMapping2 = new RangeColorMapping();
 
-layer.ShapeSettings = shapeSetting;
+            rangeColorMapping2.From = 0;
+
+            rangeColorMapping2.To = 15;
+
+            rangeColorMapping2.Color = Color.FromHex("#D84444");
+
+            ShapeSetting shapeSetting = new ShapeSetting();
+
+            shapeSetting.ShapeColorValuePath = "Electors";
+
+            shapeSetting.ColorMappings.Add(rangeColorMapping);
+
+            shapeSetting.ColorMappings.Add(rangeColorMapping1);
+
+            shapeSetting.ColorMappings.Add(rangeColorMapping2);
+
+            layer.ShapeSettings = shapeSetting;
+
+            this.Content = map;     
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Color mapping image](Images/ColorMapping_img2.jpeg)
+![Range color mapping image](Images/ColorMapping_img2.jpeg)
 
 

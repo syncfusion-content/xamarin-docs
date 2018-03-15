@@ -91,6 +91,36 @@ this.Content = map;
 
 {% endtabs %}
 
+## Adding Layers
+
+Map is maintained through layers. It can accommodate one or more shape file layers.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<maps:SfMaps>
+<maps:SfMaps.Layers>
+<maps:ShapeFileLayer/>   
+</maps:SfMaps.Layers>  
+</maps:SfMaps>  
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfMaps map = new SfMaps();
+
+ShapeFileLayer layer = new ShapeFileLayer();
+
+map.Layers.Add(layer);
+	
+this.Content = map;
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Adding shape files
 
 Shape file is a set of files that are stored in a non-topological geometry with the attribute information for the spatial features and records in a data set.
@@ -120,6 +150,8 @@ Shape file can be a set of files or a single file. Generally, a shape file conta
 *	Right-click the added shape file, and navigate to properties.
 *	Choose the `EmbeddedResource` option under BuildAction of respective shape file.
 
+[`Uri`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~Uri.html) property in shape file layer is used to retrieve the location of the shape file that is added.
+
 {% tabs %}
 
 {% highlight xaml %}
@@ -148,7 +180,7 @@ this.Content = map;
 
 ## GeoJSON support
 
- Maps control supports reading and loading the GeoJSON files. GeoJSON file contains attribute information for the spatial features and coordinates in a dataset.
+Maps control supports reading and loading the GeoJSON files. GeoJSON file contains attribute information for the spatial features and coordinates in a dataset.
  
 {% tabs %}
 
@@ -172,10 +204,43 @@ After loading the shapes file, the following output will be reproduced.
 
 ![](Images/GettingStartedimg1.jpeg)
 
+## Data binding
+
+Data can be binded to the shape file layer using the [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ItemsSource.html), [`ShapeIDPath`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShapeIDPath.html), [`ShapeIdTableField`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShapeIDTableField.html) properties.
+ [`Populate data`](https://help.syncfusion.com/xamarin/SfMaps/PopulateData) topic gives the detailed explanation of data binding.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<maps:SfMaps.Layers >
+<maps:ShapeFileLayer Uri="usa_state.shp" ItemsSource="{Binding Data}"
+                                          ShapeIDPath="State" ShapeIDTableField="STATE_NAME" >
+</maps:ShapeFileLayer>
+                </maps:SfMaps.Layers>        
+
+{% endhighlight %}
+
+{% highlight c# %}
+	
+ShapeFileLayer layer = new ShapeFileLayer();
+            layer.Uri = "usa_state.shp";
+            layer.ItemsSource =viewModel.Data;
+            layer.ShapeIDTableField = "STATE_NAME";
+            layer.ShapeIDPath = "State";			
+            map.Layers.Add(layer);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
 ## Adding marker 
 
 Markers are used to identify the shapes. This can be added to the shape file layers as shown in the following code sample.
 Markers can be customized using the [`MarkerSettings`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~MarkerSettings.html) property in shape file layer.
+
+Detailed explanation of marker and its customization is provided under [`Markers`](https://help.syncfusion.com/xamarin/SfMaps/Markers) topic.
 
 {% tabs %}
 
@@ -199,12 +264,50 @@ layer.Markers.Add(marker);
 {% endhighlight %}
 
 {% endtabs %}
+
+## Color mapping
+
+The color mapping support enables the customization of shape colors based on the underlying value of shape received from the bounded data.
+Both range and equal color mapping is supported in maps.
+
+Detailed explanation of color mapping is provided in  [`colorMapping`](https://help.syncfusion.com/xamarin/SfMaps/ColorMapping) topic.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<maps:ShapeSetting.ColorMappings>
+<maps:EqualColorMapping Color="#D84444" LegendLabel="Romney" Value = "Romney"></maps:EqualColorMapping>
+<maps:EqualColorMapping Color="#316DB5" LegendLabel="Obama" Value="Obama"></maps:EqualColorMapping>
+</maps:ShapeSetting.ColorMappings>         
+
+{% endhighlight %}
+
+{% highlight c# %}
+	
+ EqualColorMapping colorMapping = new EqualColorMapping();
+            colorMapping.Color = Color.FromHex("#D84444");
+            colorMapping.LegendLabel = "Romney";
+            colorMapping.Value = "Romney";
+
+            EqualColorMapping colorMapping1 = new EqualColorMapping();
+            colorMapping1.Color = Color.FromHex("#316DB5");
+            colorMapping1.LegendLabel = "Obama";
+            colorMapping1.Value = "Obama";
+
+            ShapeSetting shapeSetting = new ShapeSetting();           
+            shapeSetting.ColorMappings.Add(colorMapping);
+            shapeSetting.ColorMappings.Add(colorMapping1);
+
+{% endhighlight %}
+
+{% endtabs %}
  
 ## Adding legend
 
 The legends interpret what the map displays. It can be added to the shape file layer as in below code snippet. Legends will be displayed based on the data bound to the layer and color mapping plays a major role in that. 
 
-Detailed explanation is provided in the legend topic.
+Detailed explanation of legend is provided under [`Legend`](https://help.syncfusion.com/xamarin/SfMaps/Legend) topic.
 
 {% tabs %}
 
@@ -251,7 +354,6 @@ The following code example gives you the complete code for map with marker and l
                             </maps:MapMarkerSetting>
 
                         </maps:ShapeFileLayer.MarkerSettings>
-
 
                         <maps:ShapeFileLayer.ShapeSettings>
                             <maps:ShapeSetting ShapeColorValuePath="Candidate" ShapeValuePath="Candidate"   >

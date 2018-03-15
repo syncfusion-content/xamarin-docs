@@ -43,20 +43,20 @@ schedule.DataSource=scheduleAppointmentCollection;
 schedule.ScheduleView = ScheduleView.DayView;
 ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
 scheduleAppointmentCollection.Add(new ScheduleAppointment()
-	{
-		StartTime = new DateTime(2018, 2, 13, 09, 0, 0),
-		EndTime = new DateTime(2018, 2, 13, 09, 0, 0),
-		Subject = "Client Meeting",
-		MinHeight = 30,
-		Color = Color.FromHex("#FFD80073")
-	});
+{
+    StartTime = new DateTime(2018, 2, 13, 09, 0, 0),
+    EndTime = new DateTime(2018, 2, 13, 09, 0, 0),
+    Subject = "Client Meeting",
+    MinHeight = 30,
+    Color = Color.FromHex("#FFD80073")
+});
 scheduleAppointmentCollection.Add(new ScheduleAppointment()
-	{
-		StartTime = new DateTime(2018, 2, 13, 11, 0, 0),
-		EndTime = new DateTime(2018, 2, 13, 12, 0, 0),
-		Subject = "Anniversary",
-		Color = Color.FromHex("#FFA2C139")
-	});
+{
+    StartTime = new DateTime(2018, 2, 13, 11, 0, 0),
+    EndTime = new DateTime(2018, 2, 13, 12, 0, 0),
+    Subject = "Anniversary",
+    Color = Color.FromHex("#FFA2C139")
+});
 schedule.DataSource = scheduleAppointmentCollection;
 
 this.Content = schedule;
@@ -113,15 +113,6 @@ N> You can inherit this class from `INotifyPropertyChanged` for dynamic changes 
 
 You can map those properties of `Meeting` class with our SfSchedule control by using `ScheduleAppointmentMapping`.
 {% tabs %}
-{% highlight c# %}
-//Schedule data mapping for custom appointments
-ScheduleAppointmentMapping dataMapping = new ScheduleAppointmentMapping();
-dataMapping.SubjectMapping = "EventName";
-dataMapping.StartTimeMapping = "From";
-dataMapping.EndTimeMapping = "To";
-dataMapping.ColorMapping = "Color";
-schedule.AppointmentMapping = dataMapping;
-{% endhighlight %}
 {% highlight xaml %} 
 <syncfusion:SfSchedule x:Name="schedule" ScheduleView="DayView" DataSource="{Binding Meetings}">
 	<syncfusion:SfSchedule.AppointmentMapping>
@@ -133,7 +124,16 @@ schedule.AppointmentMapping = dataMapping;
 		</syncfusion:ScheduleAppointmentMapping>
 	</syncfusion:SfSchedule.AppointmentMapping>
 </syncfusion:SfSchedule> 
-{% endhighlight %} 
+{% endhighlight %}
+{% highlight c# %}
+//Schedule data mapping for custom appointments
+ScheduleAppointmentMapping dataMapping = new ScheduleAppointmentMapping();
+dataMapping.SubjectMapping = "EventName";
+dataMapping.StartTimeMapping = "From";
+dataMapping.EndTimeMapping = "To";
+dataMapping.ColorMapping = "Color";
+schedule.AppointmentMapping = dataMapping;
+{% endhighlight %}
 {% endtabs %} 
 
 You can schedule meetings for a day by setting `From` and `To` of `Meeting` class. Create meetings of type `ObservableCollection <Meeting>` and assign those appointments collection `Meetings` to the `DataSource` property which is of `IEnumerable` type.
@@ -379,17 +379,6 @@ N> You can inherit this class from `INotifyPropertyChanged` for dynamic changes 
 You can map those properties of `Meeting` class with our SfSchedule control by using `ScheduleAppointmentMapping`.
 
 {% tabs %}
-{% highlight c# %}
-// Schedule data mapping for custom appointments
-ScheduleAppointmentMapping dataMapping = new ScheduleAppointmentMapping();
-dataMapping.SubjectMapping = "EventName";
-dataMapping.StartTimeMapping = "From";
-dataMapping.EndTimeMapping = "To";
-dataMapping.ColorMapping = "Color";
-dataMapping.IsRecursiveMapping = "IsRecursive";
-dataMapping.RecurrenceRuleMapping = "RecurrenceRule";
-schedule.AppointmentMapping = dataMapping;
-{% endhighlight %}
 {% highlight xaml %}
 <syncfusion:SfSchedule x:Name="schedule" ScheduleView="DayView" DataSource="{Binding Meetings}">
 	<syncfusion:SfSchedule.AppointmentMapping>
@@ -403,6 +392,17 @@ schedule.AppointmentMapping = dataMapping;
 		</syncfusion:ScheduleAppointmentMapping>
 	</syncfusion:SfSchedule.AppointmentMapping>
 </syncfusion:SfSchedule>
+{% endhighlight %}
+{% highlight c# %}
+// Schedule data mapping for custom appointments
+ScheduleAppointmentMapping dataMapping = new ScheduleAppointmentMapping();
+dataMapping.SubjectMapping = "EventName";
+dataMapping.StartTimeMapping = "From";
+dataMapping.EndTimeMapping = "To";
+dataMapping.ColorMapping = "Color";
+dataMapping.IsRecursiveMapping = "IsRecursive";
+dataMapping.RecurrenceRuleMapping = "RecurrenceRule";
+schedule.AppointmentMapping = dataMapping;
 {% endhighlight %}
 {% endtabs %}
 
@@ -470,19 +470,8 @@ The default appearance of the appointment can be customized by using the [Appoi
 
 ### Customize appearance using Style
 Schedule appointment can be customized by setting appointment style properties such as [TextColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~TextColor.html), [FontFamily](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~FontFamily.html), [FontSize](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~FontSize.html), [FontAttributes](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~FontAttributes.html), [BorderColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~BorderColor.html), [BorderCornerRadius](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~BorderCornerRadius.html), [BorderWidth](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~BorderWidth.html) to the [AppointmentStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle.html) property of `SfSchedule`.
-{% tabs %} 
-{% highlight c# %}
-//Creating Appointment style 
-AppointmentStyle appointmentStyle = new AppointmentStyle();
-appointmentStyle.TextColor = Color.Red;
-appointmentStyle.TextStyle = Font.SystemFontOfSize(15, FontAttributes.Bold);
-appointmentStyle.BorderColor = Color.Blue;
-appointmentStyle.BorderCornerRadius = 12;
-appointmentStyle.BorderWidth = 10;
 
-//Setting Appointment Style 
-schedule.AppointmentStyle = appointmentStyle;
-{% endhighlight %}
+{% tabs %}
 {% highlight xaml %}
 <syncfusion:SfSchedule x:Name="schedule" ScheduleView="DayView" DataSource="{Binding Meetings}">
 	<syncfusion:SfSchedule.AppointmentStyle>
@@ -494,6 +483,18 @@ schedule.AppointmentStyle = appointmentStyle;
 	</syncfusion:AppointmentStyle>
 </syncfusion:SfSchedule.AppointmentStyle>    
 </syncfusion:SfSchedule>
+{% endhighlight %}
+{% highlight c# %}
+//Creating Appointment style
+AppointmentStyle appointmentStyle = new AppointmentStyle();
+appointmentStyle.TextColor = Color.Red;
+appointmentStyle.TextStyle = Font.SystemFontOfSize(15, FontAttributes.Bold);
+appointmentStyle.BorderColor = Color.Blue;
+appointmentStyle.BorderCornerRadius = 12;
+appointmentStyle.BorderWidth = 10;
+
+//Setting Appointment Style
+schedule.AppointmentStyle = appointmentStyle;
 {% endhighlight %}
 {% endtabs %} 
 
@@ -592,7 +593,6 @@ The default appearance of the Appointment can be customized by using the [Appoin
 {% endtabs %}
 
 ### Creating a DataTemplate
-
 
 {% tabs %}
 {% highlight c# %}
@@ -712,14 +712,14 @@ Used button to display day appointment and Label to display all day appointment.
 
 you can change the appearance of Font by setting the  [FontFamily](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~FontFamily.html) property of [AppointmentStyle]([FontFamily](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~FontFamily.html)) property in Schedule.
 
-{% tabs %} 
-{% highlight c# %}
-appointmentStyle.FontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
-{% endhighlight %}
+{% tabs %}
 {% highlight xaml %}
 <schedule:AppointmentStyle.FontFamily>
 	 <OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
 </schedule:AppointmentStyle.FontFamily>
+{% endhighlight %}
+{% highlight c# %}
+appointmentStyle.FontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
 {% endhighlight %}
 {% endtabs %} 
 
@@ -746,6 +746,8 @@ These events will be triggered while perform respective touch actions in timeslo
 schedule.CellTapped += Schedule_CellTapped;
 schedule.CellDoubleTapped += Schedule_CellDoubleTapped;
 schedule.CellLongPressed += Schedule_CellLongPressed;
+
+...
 
 private void Schedule_CellTapped(object sender, CellTappedEventArgs e)
 {
@@ -829,17 +831,7 @@ The default selection of an appointment can be customized by using [SelectionBor
 
 N> `BorderWidth` value must be set to highlight `SelectionBorderColor`.
 
-{% tabs %} 
-{% highlight c# %}
-//Creating an appointment style 
-AppointmentStyle appointmentStyle = new AppointmentStyle();
-appointmentStyle.SelectionBorderColor = Color.Yellow;
-appointmentStyle.SelectionTextColor = Color.Yellow;
-
-//Setting an appointment style 
-schedule.AppointmentStyle = appointmentStyle;
-{% endhighlight %}
-  
+{% tabs %}
 {% highlight xaml %} 
 <syncfusion:SfSchedule x:Name="schedule" ScheduleView="DayView" DataSource="{Binding Meetings}">
 	<syncfusion:SfSchedule.AppointmentStyle>
@@ -849,7 +841,16 @@ schedule.AppointmentStyle = appointmentStyle;
 		</syncfusion:AppointmentStyle>
 	</syncfusion:SfSchedule.AppointmentStyle>    
 </syncfusion:SfSchedule> 
-{% endhighlight %} 
+{% endhighlight %}
+{% highlight c# %}
+//Creating an appointment style
+AppointmentStyle appointmentStyle = new AppointmentStyle();
+appointmentStyle.SelectionBorderColor = Color.Yellow;
+appointmentStyle.SelectionTextColor = Color.Yellow;
+
+//Setting an appointment style
+schedule.AppointmentStyle = appointmentStyle;
+{% endhighlight %}
 {% endtabs %} 
 
 ![](PopulatingAppointments_images/selection.png)

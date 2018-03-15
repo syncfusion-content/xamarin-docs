@@ -438,7 +438,6 @@ schedule.SelectionStyle = selectionStyle;
 You can replace the default selection UI with your custom view by setting [SelectionView](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~SelectionView.html) property of `SfSchedule`.
 
 {% tabs %}
-
 {% highlight XAML %}
 <schedule:SfSchedule x:Name="schedule" ScheduleView="DayView">
 	<schedule:SfSchedule.SelectionView>

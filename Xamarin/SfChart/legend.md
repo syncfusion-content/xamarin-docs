@@ -44,26 +44,33 @@ chart.Legend = new ChartLegend();
 [`Label`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~Label.html) property of [`ChartSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries.html) is used to define the label for the corresponding series legend item. The following properties are used to customize the legend items label appearance.
 
 * [`TextColor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegendLabelStyle~TextColor.html) – used to change the color of the label.
-* [`Font`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegendLabelStyle~Font.html) – used to change the text size, font family and font weight.
+* [`FontSize`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegendLabelStyle~FontSize.html) – used to change the text size of label.
+* [`FontFamily`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegendLabelStyle~FontFamily.html) - used to change respective  font family.
+* [`FontAttributes`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegendLabelStyle~FontAttributes.html) - used to change the text  style for  label.
 * [`Margin`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegendLabelStyle~Margin.html) - used to change the margin size for labels.
 
 {% tabs %} 
 
 {% highlight xaml %}
 
-<chart:SfChart.Legend>
+ <chart:SfChart x:Name="chart">
 
-	<chart:ChartLegend>
 
-		<chart:ChartLegend.LabelStyle>
+        <chart:SfChart.Legend>
 
-			<chart:ChartLegendLabelStyle TextColor="Blue" Margin="5" Font="Bold,18"/>
+            <chart:ChartLegend>
 
-		</chart:ChartLegend.LabelStyle>
+                <chart:ChartLegend.LabelStyle>
 
-	</chart:ChartLegend>
+                    <chart:ChartLegendLabelStyle TextColor="Blue" FontAttributes="Bold" FontSize="20">
+                        
+                    </chart:ChartLegendLabelStyle>
+                    
+                </chart:ChartLegend.LabelStyle>
 
-</chart:SfChart.Legend>
+            </chart:ChartLegend>
+
+        </chart:SfChart.Legend>
 
 {% endhighlight %}
 
@@ -73,7 +80,9 @@ chart.Legend = new ChartLegend();
 
 chart.Legend.LabelStyle.TextColor = Color.Blue;
 
-chart.Legend.LabelStyle.Font = Font.SystemFontOfSize(18, FontAttributes.Bold);
+chart.Legend.LabelStyle.FontSize = 20;
+
+chart.Legend.LabelStyle.FontAttributes = FontAttributes.Bold;
 
 chart.Legend.LabelStyle.Margin = 5;
 
@@ -129,7 +138,9 @@ Following properties are used to define and customize the legend title.
 
 * [`Text`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTitle~Text.html) – used to change the title text.
 * [`TextColor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTitle~TextColor.html) – used to change the color of the title text.
-* [`Font`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTitle~Font.html) – used to change the text size, font family and font weight of the title.
+* [`FontSize`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegendLabelStyle~FontSize.html) – used to change the text font size.
+* [`FontFamily`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegendLabelStyle~FontFamily.html) - used to change respective  font family.
+* [`FontAttributes`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegendLabelStyle~FontAttributes.html) - used to change the  style for title.
 * [`Margin`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTitle~Margin.html) – used to change the margin size for title.
 * [`TextAlignment`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTitle~TextAlignment.html) – used to change the alignment of the title text, it can be start, end and center.
 * [`BackgroundColor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTitle~BackgroundColor.html) – used to change the title background color.
@@ -140,22 +151,22 @@ Following properties are used to define and customize the legend title.
 
 {% highlight xaml %}
 
-<chart:SfChart.Legend>
+  <chart:SfChart.Legend>
 
-	<chart:ChartLegend>
+            <chart:ChartLegend>
 
-		<chart:ChartLegend.Title >
+                <chart:ChartLegend.Title >
 
-			<chart:ChartTitle Text="Years" TextColor="Maroon" TextAlignment="Center" 
-							  BackgroundColor="Silver" BorderWidth="3" BorderColor="Blue" Font="Bold,20"/>
+                    <chart:ChartTitle Text="Years" TextColor="Maroon" TextAlignment="Center" 
+							  BackgroundColor="Silver" BorderWidth="3" BorderColor="Blue" FontAttributes="Bold" FontSize="20">
 
-			</chart:ChartTitle>
+                    </chart:ChartTitle>
 
-		</chart:ChartLegend.Title>
+                </chart:ChartLegend.Title>
 
-	</chart:ChartLegend>
+            </chart:ChartLegend>
 
-</chart:SfChart.Legend>
+        </chart:SfChart.Legend>
 
 {% endhighlight %}
 
@@ -167,7 +178,9 @@ chart.Legend.Title.Text = "Year";
 
 chart.Legend.Title.TextColor = Color.Maroon;
 
-chart.Legend.Title.Font = Font.SystemFontOfSize(20, FontAttributes.Bold);
+chart.Legend.Title.FontSize = 20;
+
+chart.Legend.Title.FontAttributes = FontAttributes.Bold;
 
 chart.Legend.Title.TextAlignment = TextAlignment.Center;
 

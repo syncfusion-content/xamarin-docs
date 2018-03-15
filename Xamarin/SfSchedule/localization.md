@@ -91,4 +91,8 @@ If an application requires multiple languages we can follow the below steps:
 
 ### Localizing custom text in UWP renderer.
 
->**Note:** Currently customs strings localization not supported in Xamarin.Forms UWP.
+You can localize custom text available in the control by adding equivalent localized string in the Resources(.resw) file. 
+
+>**Note:** Here Resources(.resw) file name should be match with the given locale language code.
+
+![](Localization_images/Localization_XFUWP.png)

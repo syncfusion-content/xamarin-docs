@@ -50,7 +50,7 @@ private void PopupLayout_Opening(object sender, System.ComponentModel.CancelEven
 [SfPopupLayout.Opened](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Opened_EV.html) event will be fired whenever the PopupView is displayed in the application.
 You can write your set of codes that needs to be executed once the popup is opened and visible in the application, in the respective event handler.
 
-Refer to the following code example in which the "Popup Opened" message is shown in output window in `SfPopupLayout.Opened` event.
+Refer to the following code example for using `SfPopupLayout.Opened` event.
 
 {% tabs %}
 {%highlight Xaml%}
@@ -107,7 +107,7 @@ private void PopupLayout_Closing(object sender, System.ComponentModel.CancelEven
 [SfPopupLayout.Closed](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Closed_EV.html) event will be fired whenever the PopupView is dismissed from the view.
 You can write your set of codes that needs to be executed once the popup is completely closed, in the respective event handler.
 
-Refer to the following code example in which the "Popup closed" message is shown in output window in `SfPopupLayout.Closed` event.
+Refer to the following code example for using `SfPopupLayout.Closed` event.
 
 {% tabs %}
 {%highlight Xaml%}

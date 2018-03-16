@@ -2,7 +2,7 @@
 layout: post
 title: TreeMapLevels
 description: treemaplevels
-platform: Xamarin.Forms
+platform: xamarin
 control: TreeMap
 documentation: ug
 ---

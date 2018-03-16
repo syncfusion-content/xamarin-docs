@@ -56,15 +56,15 @@ Whenever there is a new data point is added to the [`ItemsSource`](https://help.
 
 {% highlight c# %}
 
- 	Chart.SuspendSeriesNotification();
+Chart.SuspendSeriesNotification();
 
-		// ...
+	// ...
 
-		// Add the data points to ItemsSource property.
+	// Add the data points to ItemsSource property.
 
-		// ...
+	// ...
 
-	Chart.ResumeSeriesNotification();
+Chart.ResumeSeriesNotification();
 
 {% endhighlight %}
 
@@ -73,14 +73,14 @@ Similarly, you can use [`SuspendNotification`](https://help.syncfusion.com/cr/cr
 
 {% highlight c# %}
 
- 	series.SuspendNotification();
+series.SuspendNotification();
 
-		// ...
+	// ...
 
-		// Add the data points to ItemsSource property.
+	// Add the data points to ItemsSource property.
 
-		// ...
+	// ...
 
-	series.ResumeNotification();
+series.ResumeNotification();
 
 {% endhighlight %}

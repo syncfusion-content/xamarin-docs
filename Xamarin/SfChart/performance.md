@@ -20,6 +20,45 @@ Following are the key points that can be used to boost the performance of the ch
 <chart:SfChart>
 ...
 
+<chart:FastLineSeries ItemsSource ="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue"/>
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+...
+
+FastLineSeries fastLineSeries = new FastLineSeries() 
+{ 
+	
+	ItemsSource = Data, 
+	XBindingPath = "XValue", 
+	YBindingPath = "YValue"
+	
+};
+
+chart.Series.Add(fastLineSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N>If you have minimal set of data points, the recommended approach is to use normal line series to visualize those data using line chart. Because the normal line series has provisions to customize the color and shape of individual line.
+
+* Instead of enabling data markers and labels when there are large number of data points, you can use [`Trackball`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballBehavior.html#) to view the point information.
+
+* The default stroke width of the [`FastLineSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FastLineSeries.html) is 2, reducing this to 1 will improve the performance. Refer the following code snippet to configure the stroke width of FastLineSeries.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart>
+...
+
 <chart:FastLineSeries ItemsSource ="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue" StrokeWidth="1"/>
 
 </chart:SfChart>
@@ -46,12 +85,6 @@ chart.Series.Add(fastLineSeries);
 {% endhighlight %}
 
 {% endtabs %}
-
-N>If you have minimal set of data points, the recommended approach is to use normal line series to visualize those data using line chart. Because the normal line series has provisions to customize the color and shape of individual line.
-
-* Instead of enabling data markers and labels when there are large number of data points, you can use [`Trackball`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballBehavior.html#) to view the point information.
-
-* The default stroke width of the [`FastLineSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FastLineSeries.html) is 2, reducing this to 1 will improve the performance. Refer [`this`](https://help.syncfusion.com/xamarin/sfchart/charttypes?#fast-line-chart) page to configure the stroke width of fast line chart.
 
 * When your underlying data object implements INotifyPropertyChanged, you need to enable the ListenPropertyChange property of the series, to make the chart listen to the property changes of your data object. However enabling this property registers PropertyChanged event of every object in the data source. Due to this, chart’s loading time is affected when there are a large number of points. By default, ListenPropertyChange is set to false in order to avoid the event registration unnecessarily.
 

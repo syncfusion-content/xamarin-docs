@@ -2,7 +2,7 @@
 layout: post
 title: TreeMap-Elements
 description: treemap elements
-platform: Xamarin.Forms
+platform: xamarin
 control: TreeMap
 documentation: ug
 ---

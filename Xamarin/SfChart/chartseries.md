@@ -267,12 +267,18 @@ chart.Series.Add(stackingColumnSeries4);
 
 {% highlight xaml %}
 
-<chart:ColumnSeries 
-    ItemsSource="{Binding ColumnData}" 
-    EnableAnimation = "true" 
-    AnimationDuration="0.8" 
-    XBindingPath="Name" 
-    YBindingPath="Value"  />
+<chart:SfChart>
+...
+
+	<chart:ColumnSeries 
+    	ItemsSource="{Binding ColumnData}" 
+    	EnableAnimation = "true" 
+    	AnimationDuration="0.8" 
+   		XBindingPath="Name" 
+    	YBindingPath="Value"  />
+
+</chart:SfChart>
+
 {% endhighlight %}
 
 {% highlight c# %}

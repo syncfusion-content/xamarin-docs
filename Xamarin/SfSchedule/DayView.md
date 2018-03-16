@@ -3,7 +3,7 @@
 layout: post
 title: Customize the Schedule DayView at SfSchedule control for Xamarin.Forms
 description: Learn how to Customize the schedule DayView in SfSchedule control
-platform: xamarin.Forms
+platform: xamarin
 control: SfSchedule
 documentation: ug
 

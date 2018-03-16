@@ -343,6 +343,72 @@ Built-in animations are available in the SfPopupLayout applied when the PopupVie
 
 More information for pop-up animations is in this [link](https://help.syncfusion.com/xamarin/sfpopuplayout/popup-animations).
 
+## How to 
+
+### Loading SfPopupLayout in GridTappedEvent of SfDataGrid
+
+SfPopupLayout allows you to open it in the GridTapped event of SfDataGrid.
+
+Refer the below code example to show the popup in Grid tapped event.
+
+{% tabs %}
+{% highlight xaml %}
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PopupSample"
+             x:Class="PopupSample.MainPage"
+              Padding="0,40,0,0"
+             xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms"
+             xmlns:sfDataGrid="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms" >
+    <ContentPage.BindingContext>
+        <local:ViewModel x:Name="viewModel" />
+    </ContentPage.BindingContext>
+    
+    <sfPopup:SfPopupLayout x:Name="popupLayout" >
+        <sfPopup:SfPopupLayout.Content>
+            <sfDataGrid:SfDataGrid x:Name="dataGrid"
+                               ItemsSource="{Binding OrdersInfo}">
+            </sfDataGrid:SfDataGrid>
+       </sfPopup:SfPopupLayout.Content>
+    </sfPopup:SfPopupLayout>
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+using Syncfusion.XForms.PopupLayout;
+
+namespace GettingStarted
+{
+    public partial class MainPage : ContentPage
+    {
+
+        SfDataGrid dataGrid;
+        ViewModel viewModel;
+        SfPopupLayout popupLayout;
+        public MainPage()
+        {
+            InitializeComponent();
+            dataGrid = new SfDataGrid();
+            viewModel = new ViewModel();
+            dataGrid.ItemsSource = viewModel.OrdersInfo;
+            popupLayout = new SfPopupLayout();
+            popupLayout.Content = dataGrid;
+            dataGrid.GridTapped += DataGrid_GridTapped;
+            this.Content = popupLayout;
+        }
+
+        private void DataGrid_GridTapped(object sender, Syncfusion.SfDataGrid.XForms.GridTappedEventArgs e)
+        {
+            // Popup is opened at the Grid tapped event
+            popupLayout.Show();
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
 ## Sample link
 
 You can download the source code of this sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-2069677713).

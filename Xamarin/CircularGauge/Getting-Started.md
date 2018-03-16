@@ -267,5 +267,113 @@ Create a [`Needle Pointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sf
 {% endhighlight %}
        
 {% endtabs %}
+
+The following code example gives you the complete code of above configurations.
+
+{% tabs %}
+
+{% highlight xaml %} 
+
+    <?xml version="1.0" encoding="utf-8" ?>
+    <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:gauge="clr-namespace:Syncfusion.SfGauge.XForms;assembly=Syncfusion.SfGauge.XForms"      
+             xmlns:local="clr-namespace:CircularGauge;assembly=CircularGauge"
+             x:Class="CircularGauge.UGSample">
+
+        <gauge:SfCircularGauge VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="10">
+
+            <gauge:SfCircularGauge.Headers>
+                <gauge:Header Text="Speedometer" />
+            </gauge:SfCircularGauge.Headers>
+            
+            <gauge:SfCircularGauge.Scales>
+                
+                  <gauge:Scale>
+                    
+                    <gauge:Scale.Ranges>
+                        <gauge:Range StartValue="0" EndValue="40"/>
+                    </gauge:Scale.Ranges>
+                    
+                    <gauge:Scale.Pointers>
+                        <gauge:NeedlePointer  Value="60" />
+                        <gauge:RangePointer Value="60" />
+                        <gauge:MarkerPointer Value="70" />
+                    </gauge:Scale.Pointers>
+                    
+                   </gauge:Scale>
+                
+                  </gauge:SfCircularGauge.Scales>
+
+              </gauge:SfCircularGauge>
+
+     </ContentPage>
+	 
+{% endhighlight %}
+
+{% highlight c# %}  
+   
+using Syncfusion.SfGauge.XForms;
+
+namespace CircularGauge
+{
+    public partial class UGSample : ContentPage
+    {
+
+        public UGSample()
+        {
+            InitializeComponent();
+
+            //Initializing circular gauge 
+            SfCircularGauge circular = new SfCircularGauge();
+            circular.Margin = 10;
+            
+            //Adding header 
+            Header header = new Header();
+            header.Text = "Speedometer";
+            circularGauge.Headers.Add(header);
+
+             //Initializing scales for circular gauge
+            ObservableCollection<Scale> scales = new ObservableCollection<Scale>();
+            Scale scale = new Scale();
+            scales.Add(scale);
+
+             //Adding range
+            Range range = new Range();
+            range.StartValue = 0;
+            range.EndValue = 40;
+            scale.Ranges.Add(range);
+
+           //Adding needle pointer
+            NeedlePointer needlePointer = new NeedlePointer();
+            needlePointer.Value = 60;
+            scale.Pointers.Add(needlePointer);
+
+           //Adding range pointer
+            RangePointer rangePointer = new RangePointer();
+            rangePointer.Value = 60;
+            scale.Pointers.Add(rangePointer);
+            
+             //Adding marker pointer
+            MarkerPointer markerPointer = new MarkerPointer();
+            markerPointer.Value = 70;
+            scale.Pointers.Add(markerPointer);
+            circular.Scales = scales;
+
+            scales.Add(scale);
+            circular.Scales = scales;
+
+            this.Content = circular;
+        }
+    }
+}
+	
+{% endhighlight %}
+       
+{% endtabs %}
+
+The following circular gauge is created as a result of the above codes.
  
 ![](getting-started_images/default.png)
+
+You can find the complete getting started sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Gauge_GettingStarted-145122730.zip).

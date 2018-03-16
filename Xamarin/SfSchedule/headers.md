@@ -28,27 +28,24 @@ schedule.HeaderHeight = 50;
 
 You can change the header format and style using `HeaderStyle` property in schedule.
 You can change the background color, font family, font attributes and font size using properties such as [BackgroundColor](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.HeaderStyle~BackgroundColorProperty.html), [FontFamily](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.HeaderStyle~FontFamilyProperty.html), [FontAttributes](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.HeaderStyle~FontAttributesProperty.html), [FontSize](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.HeaderStyle~FontSizeProperty.html), [TextColor](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.HeaderStyle~TextColorProperty.html), of Header using `HeaderStyle` property in schedule.
+
 {% tabs %} 
 {% highlight xaml %}
-
-    <syncfusion:SfSchedule x:Name="schedule" >
-		<syncfusion:SfSchedule.HeaderStyle>
-			<syncfusion:HeaderStyle
-				BackgroundColor="#FADBD8" 
-				TextColor="Blue" 
-				FontFamily="Arial"/>
-		</syncfusion:SfSchedule.HeaderStyle>
-	</syncfusion:SfSchedule>
-
+<syncfusion:SfSchedule x:Name="schedule" >
+	<syncfusion:SfSchedule.HeaderStyle>
+		<syncfusion:HeaderStyle
+			BackgroundColor="#FADBD8" 
+			TextColor="Blue" 
+			FontFamily="Arial"/>
+	</syncfusion:SfSchedule.HeaderStyle>
+</syncfusion:SfSchedule>
 {% endhighlight %}
 {% highlight c# %}
-
-	HeaderStyle headerStyle = new HeaderStyle();
-	headerStyle.BackgroundColor = Color.FromRgb(250, 219, 216);
-	headerStyle.FontFamily = "Arial";
-	headerStyle.TextColor=Color.Blue;
-	schedule.HeaderStyle = headerStyle;
-
+HeaderStyle headerStyle = new HeaderStyle();
+headerStyle.BackgroundColor = Color.FromRgb(250, 219, 216);
+headerStyle.FontFamily = "Arial";
+headerStyle.TextColor=Color.Blue;
+schedule.HeaderStyle = headerStyle;
 {% endhighlight %}
 {% endtabs %} 
 
@@ -79,9 +76,12 @@ Refer [this](https://help.syncfusion.com/xamarin/sfschedule/monthview#custom-fon
 
 You can collapse the default header of schedule by setting `HeaderHeight` property of `SfSchedule` as 0. Instead you can use your own custom header for it. While navigating views in schedule, text labels available in the header will be changed based on it visible dates, so while using custom header , respective text value can be obtained from the `VisibleDatesChanged` event of `SfSchedule`.
 
+{% tabs %}   
 {% highlight c# %}
 //triggering the visible dates changed event.
 schedule.VisibleDatesChangedEvent += Schedule_VisibleDatesChangedEvent;
+
+... 
 
 private void Schedule_VisibleDatesChangedEvent(object sender, VisibleDatesChangedEventArgs args)
 {
@@ -101,12 +101,13 @@ private void Schedule_VisibleDatesChangedEvent(object sender, VisibleDatesChange
 	}
 }
 {% endhighlight %}
+{% endtabs %}   
 
 You can get the complete sample for customizing the Header of Schedule [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Header_Sample-1251673941.zip)
 
 ## Header Date Format
 
-We can customize the date format of SfSchedule Header by using [ScheduleHeaderDateFormat](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ScheduleHeaderDateFormat.html) property of `SfSchedule`.
+You can customize the date format of SfSchedule Header by using [ScheduleHeaderDateFormat](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ScheduleHeaderDateFormat.html) property of `SfSchedule`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -137,9 +138,11 @@ schedule.HeaderTapped += Handle_HeaderTapped;
 {% endhighlight %}
 {% endtabs %}
 
+{% tabs %}   
 {% highlight c# %}
 private void Handle_HeaderTapped(object sender, HeaderTappedEventArgs e)
 {
     var dateTime = e.DateTime;
 }
 {% endhighlight %}
+{% endtabs %}   

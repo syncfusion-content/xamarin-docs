@@ -141,7 +141,9 @@ Following are the two commands available in the Footer.
 
 [SfPopupLayout.PopupView.AcceptCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~AcceptCommand.html) will be fired when the accept button in the footer is clicked. 
 
-Derive a class from `ICommand` and implement the neccessary interface. Return true in the `CanExecute()` method to close the popup and return false to prevent popup from closing.
+Derive a class from `ICommand` and implement the necessary interface.
+Return true in the `CanExecute()` method to close the popup and fire the `Execute()` method.
+Return false to prevent popup from closing and `Execute()` method is not fired.
 
 Refer to the following code example in which the pop-up closing will be canceled based on the return value of `CanExecute()` method.
 
@@ -165,12 +167,12 @@ public class AcceptButtonCustomCommand : ICommand
 
     public bool CanExecute(object parameter)
     {
-        return true;
+        return false;
     }
 
     public void Execute(object parameter)
     {
-       
+      // You can write your set of codes that needs to be executed
     }
 }
 {% endhighlight %}
@@ -179,7 +181,9 @@ public class AcceptButtonCustomCommand : ICommand
 
 [SfPopupLayout.PopupView.DeclineCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~DeclineCommand.html) will be fired when the decline button in the footer is clicked.  
 
-Derive a class from `ICommand` and implement the neccessary interface. Return true in the `CanExecute()` method to close the popup and return false to prevent popup from closing.
+Derive a class from `ICommand` and implement the necessary interface. 
+Return true in the `CanExecute()` method to close the popup and fire the `Execute()` method. 
+Return false to prevent popup from closing and `Execute()` method is not fired.
 
 Refer to the following code example in which the pop-up closing will be canceled based on the return value of `CanExecute()` method.
 
@@ -203,12 +207,12 @@ public class DeclineButtonCustomCommand : ICommand
 
     public bool CanExecute(object parameter)
     {
-        return true;
+        return false;
     }
 
     public void Execute(object parameter)
     {
-       
+       // You can write your set of codes that needs to be executed
     }
 }
 {% endhighlight %}

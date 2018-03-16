@@ -18,20 +18,6 @@ WeekView is to view all days of a particular week. Appointments will be arranged
 You can customize the default appearance of view header in [WeekView](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleView.html) by using [ViewHeaderStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderStyle.html) property of [SfSchedule](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule.html).
 
 {% tabs %}
-{% highlight c# %}
-//Create new instance of Schedule
-SfSchedule schedule = new SfSchedule();
-schedule.ScheduleView = ScheduleView.WeekView;
-//Customize the schedule view header
-ViewHeaderStyle viewHeaderStyle = new ViewHeaderStyle();
-viewHeaderStyle.BackgroundColor = Color.FromHex("#009688");
-viewHeaderStyle.DayTextColor = Color.FromHex("#FFFFFF");
-viewHeaderStyle.DateTextColor = Color.FromHex("#FFFFFF");
-viewHeaderStyle.DayTextStyle = "Arial";
-viewHeaderStyle.DateTextStyle = "Arial";
-schedule.ViewHeaderStyle = viewHeaderStyle;
-{% endhighlight %}
-
 {% highlight XAML %}
 <schedule:SfSchedule x:Name="schedule" ScheduleView ="WeekView">
 	<schedule:SfSchedule.ViewHeaderStyle>
@@ -45,6 +31,19 @@ schedule.ViewHeaderStyle = viewHeaderStyle;
 	</schedule:SfSchedule.ViewHeaderStyle>
 </schedule:SfSchedule> 
 {% endhighlight %}
+{% highlight c# %}
+//Create new instance of Schedule
+SfSchedule schedule = new SfSchedule();
+schedule.ScheduleView = ScheduleView.WeekView;
+//Customize the schedule view header
+ViewHeaderStyle viewHeaderStyle = new ViewHeaderStyle();
+viewHeaderStyle.BackgroundColor = Color.FromHex("#009688");
+viewHeaderStyle.DayTextColor = Color.FromHex("#FFFFFF");
+viewHeaderStyle.DateTextColor = Color.FromHex("#FFFFFF");
+viewHeaderStyle.DayTextStyle = "Arial";
+viewHeaderStyle.DateTextStyle = "Arial";
+schedule.ViewHeaderStyle = viewHeaderStyle;
+{% endhighlight %}
 {% endtabs %}
 
 ![](daymodule_images/viewheader_appearance_week.png)
@@ -54,13 +53,12 @@ schedule.ViewHeaderStyle = viewHeaderStyle;
 You can customize the height of the ViewHeader in `WeekView` by setting [ViewHeaderHeight](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ViewHeaderHeight.html) property of `SfSchedule`.
 
 {% tabs %}
+{% highlight XAML %}
+<schedule:SfSchedule x:Name="schedule" ScheduleView ="WeekView" ViewHeaderHeight="50" />
+{% endhighlight %}
 {% highlight C# %}
 schedule.ScheduleView = ScheduleView.WeekView;
-schedule.ViewHeaderHeight = 50;	
-{% endhighlight %}
-
-{% highlight XAML %}
-<schedule:SfSchedule x:Name="schedule" ScheduleView ="WeekView"           ViewHeaderHeight="50" />     
+schedule.ViewHeaderHeight = 50;
 {% endhighlight %}
 {% endtabs %}
 
@@ -71,12 +69,6 @@ schedule.ViewHeaderHeight = 50;
 you can change the appearance of Font by setting the  [DayFontFamily](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderStyle~DayFontFamilyProperty.html) and [DateFontFamily](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderStyle~DateFontFamilyProperty.html) property of [ViewHeaderStyle](https://help.syncfusion.com/xamarin/sfschedule/dayview#viewheader-appearance) property in Schedule.
 
 {% tabs %}
-
-{% highlight c# %}
-viewHeaderStyle.DayFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
-viewHeaderStyle.DateFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");		
-{% endhighlight %}
-
 {% highlight XAML %}
 <schedule:ViewHeaderStyle.DayFontFamily>
 	 <OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
@@ -84,6 +76,10 @@ viewHeaderStyle.DateFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-R
 <schedule:ViewHeaderStyle.DateFontFamily>
 	 <OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
 </schedule:ViewHeaderStyle.DateFontFamily>
+{% endhighlight %}
+{% highlight c# %}
+viewHeaderStyle.DayFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
+viewHeaderStyle.DateFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
 {% endhighlight %}
 {% endtabs %}
 
@@ -93,7 +89,7 @@ Refer [this](https://help.syncfusion.com/xamarin/sfschedule/monthview#custom-fon
 
 
 ### ViewHeader Date Format
-We can customize the date and day format of `SfSchedule` ViewHeader by using [DateFormat](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DayLabelSettings~DateFormat.html) and [DayFormat](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DayLabelSettings~DayFormat.html) properties of `WeekLabelSettings`
+You can customize the date and day format of `SfSchedule` ViewHeader by using [DateFormat](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DayLabelSettings~DateFormat.html) and [DayFormat](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DayLabelSettings~DayFormat.html) properties of `WeekLabelSettings`
 
 {% tabs %}
 {% highlight xaml %}
@@ -129,7 +125,7 @@ schedule.WeekViewSettings = weekViewSettings;
 
 
 ### ViewHeader Tapped Event
-We can handle single tap action of ViewHeader by using [ViewHeaderTapped](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ViewHeaderTapped_EV.html) event of `SfSchedule`. This event will be triggered when the ViewHeader is Tapped. This event contains [ViewHeaderTappedEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderTappedEventArgs.html) argument which holds [DateTime](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.CellTappedEventArgs~Datetime.html) details in it.
+You can handle single tap action of ViewHeader by using [ViewHeaderTapped](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ViewHeaderTapped_EV.html) event of `SfSchedule`. This event will be triggered when the ViewHeader is Tapped. This event contains [ViewHeaderTappedEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderTappedEventArgs.html) argument which holds [DateTime](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.CellTappedEventArgs~Datetime.html) details in it.
 
 {% tabs %}
 {% highlight xaml %}
@@ -159,17 +155,16 @@ private void Handle_ViewHeaderTapped(object sender, ViewHeaderTappedEventArgs e)
 You can customize the interval of timeslots in `WeekView` by setting [TimeInterval](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~TimeInterval.html)  property of `SfSchedule`.
 
 {% tabs %}
-
+{% highlight XAML %}
+<schedule:SfSchedule x:Name="schedule" ScheduleView="WeekView" TimeInterval="120"/> 
+{% endhighlight %}
 {% highlight C# %}
 schedule.ScheduleView = ScheduleView.WeekView;
 schedule.TimeInterval = 120;
 {% endhighlight %}
-{% highlight XAML %}
-<schedule:SfSchedule x:Name="schedule" ScheduleView="WeekView" TimeInterval="120"/> 
-{% endhighlight %}
 {% endtabs %}
-![](daymodule_images/timeinterval_week.png)
 
+![](daymodule_images/timeinterval_week.png)
 
 >**Note**:
 
@@ -179,12 +174,12 @@ If you modify the `TimeInterval` value (in minutes), you need to change the time
 You can customize the interval height of timeslots in `WeekView` by setting [TimeIntervalHeight](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~TimeIntervalHeight.html)  property of `SfSchedule`.
 
 {% tabs %}
+{% highlight XAML %}
+<schedule:SfSchedule  x:Name="schedule"  ScheduleView="WeekView" TimeIntervalHeight="180"/>
+{% endhighlight %}
 {% highlight C# %}
 schedule.ScheduleView = ScheduleView.WeekView;
 schedule.TimeIntervalHeight = 180;
-{% endhighlight %}
-{% highlight XAML %}
-<schedule:SfSchedule  x:Name="schedule"  ScheduleView="WeekView" TimeIntervalHeight="180"/>
 {% endhighlight %}
 {% endtabs %}
 
@@ -195,15 +190,6 @@ schedule.TimeIntervalHeight = 180;
 Working hours in `WeekView` of Schedule control will be differentiated with non-working hours by separate color. By default, working hours will be between 09 to 18. You can customize the working hours by setting [WorkStartHour](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekViewSettings~WorkStartHour.html) and [WorkEndHour](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekViewSettings~WorkEndHour.html) properties of   [WeekViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~WeekViewSettings.html).
 
 {% tabs %}
-
-{% highlight C# %}
-schedule.ScheduleView = ScheduleView.WeekView;
-//Create new instance of WeekViewSettings
-WeekViewSettings weekViewSettings = new WeekViewSettings();
-weekViewSettings.WorkStartHour = 10;
-weekViewSettings.WorkEndHour = 18;
-schedule.WeekViewSettings = weekViewSettings;
-{% endhighlight %}
 {% highlight XAML %}
 <schedule:SfSchedule x:Name="schedule" ScheduleView="WeekView">
 	 <schedule:SfSchedule.WeekViewSettings>
@@ -214,6 +200,14 @@ schedule.WeekViewSettings = weekViewSettings;
 			</schedule:WeekViewSettings>
 	  </schedule:SfSchedule.WeekViewSettings>
 </schedule:SfSchedule> 
+{% endhighlight %}
+{% highlight C# %}
+schedule.ScheduleView = ScheduleView.WeekView;
+//Create new instance of WeekViewSettings
+WeekViewSettings weekViewSettings = new WeekViewSettings();
+weekViewSettings.WorkStartHour = 10;
+weekViewSettings.WorkEndHour = 18;
+schedule.WeekViewSettings = weekViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
@@ -227,14 +221,6 @@ schedule.WeekViewSettings = weekViewSettings;
 Default value for [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekViewSettings~StartHour.html) and [EndHour](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekViewSettings~EndHour.html) value is 0 to 24 to show all the time slots in `WeekView`. You need to set [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekViewSettings~StartHour.html) and [EndHour](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekViewSettings~EndHour.html) property of `WeekView`, to show only the required time duration for end users.
 
 {% tabs %}
-{% highlight C# %}
-schedule.ScheduleView = ScheduleView.WeekView;
-//Create new instance of WeekViewSettings
-WeekViewSettings weekViewSettings = new WeekViewSettings();
-weekViewSettings.StartHour = 08;
-weekViewSettings.EndHour = 15;
-schedule.WeekViewSettings = weekViewSettings;
-{% endhighlight %}
 {% highlight XAML %}
 <schedule:SfSchedule x:Name="schedule" ScheduleView="WeekView">
 	 <schedule:SfSchedule.WeekViewSettings>
@@ -245,6 +231,14 @@ schedule.WeekViewSettings = weekViewSettings;
 			</schedule:WeekViewSettings>
 	  </schedule:SfSchedule.WeekViewSettings>
 </schedule:SfSchedule> 
+{% endhighlight %}
+{% highlight C# %}
+schedule.ScheduleView = ScheduleView.WeekView;
+//Create new instance of WeekViewSettings
+WeekViewSettings weekViewSettings = new WeekViewSettings();
+weekViewSettings.StartHour = 08;
+weekViewSettings.EndHour = 15;
+schedule.WeekViewSettings = weekViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
@@ -268,18 +262,6 @@ You can customize the appearance of timeslots in `WeekView`.
 You can customize the appearance of the working hour timeslots by its color using[TimeSlotColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekViewSettings~TimeSlotColor.html) ,[TimeSlotBorderColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekViewSettings~TimeSlotBorderColor.html), [VerticalLineStrokeWidth](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekViewSettings~VerticalLineStrokeWidth.html), [VerticalLineColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekViewSettings~VerticalLineColor.html) and [TimeSlotBorderStrokeWidth](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekViewSettings~TimeSlotBorderStrokeWidth.html) properties of`WeekViewSettings`.
 
 {% tabs %}
-
-{% highlight C# %}
-schedule.ScheduleView = ScheduleView.WeekView;
-//Create new instance of WeekViewSettings
-WeekViewSettings weekViewSettings = new WeekViewSettings();
-weekViewSettings.TimeSlotBorderColor = Color.Aqua;
-weekViewSettings.VerticalLineColor = Color.Blue;
-weekViewSettings.TimeSlotColor = Color.Yellow;
-weekViewSettings.TimeSlotBorderStrokeWidth = 5;
-weekViewSettings.VerticalLineStrokeWidth = 5;
-schedule.WeekViewSettings = weekViewSettings;
-{% endhighlight %}
 {% highlight XAML %}
 <schedule:SfSchedule x:Name="schedule" ScheduleView="WeekView">
 	<schedule:SfSchedule.WeekViewSettings>
@@ -294,7 +276,19 @@ schedule.WeekViewSettings = weekViewSettings;
 	</schedule:SfSchedule.WeekViewSettings>
 </schedule:SfSchedule> 
 {% endhighlight %}
+{% highlight C# %}
+schedule.ScheduleView = ScheduleView.WeekView;
+//Create new instance of WeekViewSettings
+WeekViewSettings weekViewSettings = new WeekViewSettings();
+weekViewSettings.TimeSlotBorderColor = Color.Aqua;
+weekViewSettings.VerticalLineColor = Color.Blue;
+weekViewSettings.TimeSlotColor = Color.Yellow;
+weekViewSettings.TimeSlotBorderStrokeWidth = 5;
+weekViewSettings.VerticalLineStrokeWidth = 5;
+schedule.WeekViewSettings = weekViewSettings;
+{% endhighlight %}
 {% endtabs %}
+
 ![](daymodule_images/timeslotappearance_week.png)
 
 ### Timeslot customization in Non Working hours
@@ -302,19 +296,6 @@ schedule.WeekViewSettings = weekViewSettings;
 You can customize the appearance of the non-working hour timeslots by its color using [NonWorkingHoursTimeSlotBorderColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekViewSettings~NonWorkingHoursTimeSlotBorderColor.html), [NonWorkingHoursTimeSlotColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekViewSettings~NonWorkingHoursTimeSlotColor.html), `VerticalLineStrokeWidth`, `VerticalLineColor` and `TimeSlotBorderStrokeWidth` properties of `WeekViewSettings`.
 
 {% tabs %}
-
-{% highlight C# %}
-schedule.ScheduleView = ScheduleView.WeekView;
-//Create new instance of WeekViewSettings
-WeekViewSettings weekViewSettings = new WeekViewSettings();
-weekViewSettings.NonWorkingHoursTimeSlotBorderColor = Color.Aqua;
-weekViewSettings.VerticalLineColor = Color.Blue;
-weekViewSettings.NonWorkingHoursTimeSlotColor = Color.Yellow;
-weekViewSettings.TimeSlotBorderStrokeWidth = 5;
-weekViewSettings.VerticalLineStrokeWidth = 5;
-schedule.WeekViewSettings = weekViewSettings;
-{% endhighlight %}
-
 {% highlight XAML %}
 <schedule:SfSchedule x:Name="schedule" ScheduleView="WeekView">
 	<schedule:SfSchedule.WeekViewSettings>
@@ -329,8 +310,20 @@ schedule.WeekViewSettings = weekViewSettings;
 	</schedule:SfSchedule.WeekViewSettings>
 </schedule:SfSchedule> 
 {% endhighlight %}
+{% highlight C# %}
+schedule.ScheduleView = ScheduleView.WeekView;
+//Create new instance of WeekViewSettings
+WeekViewSettings weekViewSettings = new WeekViewSettings();
+weekViewSettings.NonWorkingHoursTimeSlotBorderColor = Color.Aqua;
+weekViewSettings.VerticalLineColor = Color.Blue;
+weekViewSettings.NonWorkingHoursTimeSlotColor = Color.Yellow;
+weekViewSettings.TimeSlotBorderStrokeWidth = 5;
+weekViewSettings.VerticalLineStrokeWidth = 5;
+schedule.WeekViewSettings = weekViewSettings;
+{% endhighlight %}
 {% endtabs %}
-![](daymodule_images/non-working hours_week.png)
+
+![](daymodule_images/non-workinghours_week.png)
 
 >**Note**:
 ` TimeSlotBorderStrokeWidth`and ` VerticalLineStrokeWidth` properties are common to both Working hours and Non-Working hour time slot customization.
@@ -340,23 +333,6 @@ schedule.WeekViewSettings = weekViewSettings;
 You can restrict or allocate certain timeslot as Non-accessible blocks by using[NonAccessibleBlocks](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekViewSettings~NonAccessibleBlocks.html) of `WeekViewSettings` so that you can allocate those timeslots for predefined events/activities like Lunch hour.
 
 {% tabs %}
-
-{% highlight C# %}
-schedule.ScheduleView = ScheduleView.WeekView;
-//Create new instance of NonAccessibleBlock
-NonAccessibleBlock nonAccessibleBlock = new NonAccessibleBlock();
-//Create new instance of NonAccessibleBlocksCollection
-NonAccessibleBlocksCollection nonAccessibleBlocksCollection = new NonAccessibleBlocksCollection();
-WeekViewSettings weekViewSettings = new WeekViewSettings();
-nonAccessibleBlock.StartTime = 13;
-nonAccessibleBlock.EndTime = 14;
-nonAccessibleBlock.Text = "LUNCH";
-nonAccessibleBlock.Color = Color.Black;
-nonAccessibleBlocksCollection.Add(nonAccessibleBlock);
-weekViewSettings.NonAccessibleBlocks = nonAccessibleBlocksCollection;
-schedule.WeekViewSettings = weekViewSettings;
-{% endhighlight %}
-
 {% highlight XAML %}
 <schedule:SfSchedule x:Name="schedule" ScheduleView="WeekView">
 	<!--setting non-accessing blocks-->
@@ -373,7 +349,23 @@ schedule.WeekViewSettings = weekViewSettings;
 	</schedule:SfSchedule.WeekViewSettings>
 </schedule:SfSchedule>  
 {% endhighlight %}
+{% highlight C# %}
+schedule.ScheduleView = ScheduleView.WeekView;
+//Create new instance of NonAccessibleBlock
+NonAccessibleBlock nonAccessibleBlock = new NonAccessibleBlock();
+//Create new instance of NonAccessibleBlocksCollection
+NonAccessibleBlocksCollection nonAccessibleBlocksCollection = new NonAccessibleBlocksCollection();
+WeekViewSettings weekViewSettings = new WeekViewSettings();
+nonAccessibleBlock.StartTime = 13;
+nonAccessibleBlock.EndTime = 14;
+nonAccessibleBlock.Text = "LUNCH";
+nonAccessibleBlock.Color = Color.Black;
+nonAccessibleBlocksCollection.Add(nonAccessibleBlock);
+weekViewSettings.NonAccessibleBlocks = nonAccessibleBlocksCollection;
+schedule.WeekViewSettings = weekViewSettings;
+{% endhighlight %}
 {% endtabs %}
+
 ![](daymodule_images/non-accessibleblock_week.png)
 
 >**Note**:
@@ -383,16 +375,15 @@ Selection and related events will not be working in this blocks.
 By default, schedule control will be rendered with Sunday as the first day of the week, it can be customized to any day of the week by using[FirstDayOfWeek](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~FirstDayOfWeek.html) property of `SfSchedule`.
 
 {% tabs %}
-
+{% highlight XAML %}
+<schedule:SfSchedule x:Name="schedule" ScheduleView="WeekView"        FirstDayOfWeek="3"/>
+{% endhighlight %}
 {% highlight C# %}
 schedule.ScheduleView = ScheduleView.WeekView;
 schedule.FirstDayOfWeek = 3;
 {% endhighlight %}
-
-{% highlight XAML %}
-<schedule:SfSchedule x:Name="schedule" ScheduleView="WeekView"        FirstDayOfWeek="3"/>
-{% endhighlight %}
 {% endtabs %}
+
 ![](daymodule_images/firstdayofweek_week.png)
 
 ## Time Label Formatting
@@ -409,6 +400,7 @@ weekViewSettings.WeekLabelSettings = weekLabelSettings;
 schedule.WeekViewSettings = weekViewSettings;
 {% endhighlight %}
 {% endtabs %}
+
 ![](daymodule_images/timelabelformat_week.png)
 
 ## Time Label Appearance
@@ -416,7 +408,6 @@ schedule.WeekViewSettings = weekViewSettings;
 You can customize the color for the labels which are mentioning the time, by setting [TimeLabelColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekLabelSettings~TimeLabelColor.html) property of `WeekLabelSettings` in `WeekViewSettings`.
 
 {% tabs %}
-
 {% highlight C# %}
 schedule.ScheduleView = ScheduleView.WeekView;
 //Create new instance of WeekViewSettings
@@ -428,6 +419,7 @@ weekViewSettings.WeekLabelSettings = weekLabelSettings;
 schedule.WeekViewSettings = weekViewSettings;
 {% endhighlight %}
 {% endtabs %}
+
 ![](daymodule_images/timelabelappearance_week.png)
 
 ## Selection
@@ -441,18 +433,6 @@ You can customize the default appearance of selection UI in the timeslots.
 You can customize the timeslot selection by using [SelectionStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~SelectionStyle.html) property of `SfSchedule`.
 
 {% tabs %}
-
-{% highlight C# %}
-schedule.ScheduleView = ScheduleView.WeekView;
-//Create new instance of SelectionStyle 
-SelectionStyle selectionStyle = new SelectionStyle();
-selectionStyle.BackgroundColor = Color.Blue;
-selectionStyle.BorderColor = Color.Black;
-selectionStyle.BorderThickness = 5;
-selectionStyle.BorderCornerRadius = 5;
-schedule.SelectionStyle = selectionStyle;
-{% endhighlight %}
-
 {% highlight XAML %}
 <schedule:SfSchedule x:Name="schedule" ScheduleView="WeekView">
 	<schedule:SfSchedule.SelectionStyle>
@@ -465,26 +445,25 @@ schedule.SelectionStyle = selectionStyle;
 	</schedule:SfSchedule.SelectionStyle>
 </schedule:SfSchedule> 
 {% endhighlight %}
+{% highlight C# %}
+schedule.ScheduleView = ScheduleView.WeekView;
+//Create new instance of SelectionStyle
+SelectionStyle selectionStyle = new SelectionStyle();
+selectionStyle.BackgroundColor = Color.Blue;
+selectionStyle.BorderColor = Color.Black;
+selectionStyle.BorderThickness = 5;
+selectionStyle.BorderCornerRadius = 5;
+schedule.SelectionStyle = selectionStyle;
+{% endhighlight %}
 {% endtabs %}
+
 ![](daymodule_images/selectionstyle_week.png)
 
 ### Selection customization using custom View
 You can replace the default selection UI with your custom view by setting [SelectionView](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~SelectionView.html) property of `SfSchedule`.
 
 {% tabs %}
-
-{% highlight C# %}
-schedule.ScheduleView = ScheduleView.WeekView;
-//Add the CustomView 
-Button customView = new Button();
-customView.Text = "+NewEvent";
-customView.BackgroundColor = Color.FromHex("#FF9800");
-customView.TextColor = Color.White;
-schedule.SelectionView = customView;
-{% endhighlight %}
-
 {% highlight XAML %}
-
 <schedule:SfSchedule x:Name="schedule" ScheduleView="WeekView">
   <schedule:SfSchedule.SelectionView>
 	   <Button 
@@ -494,7 +473,17 @@ schedule.SelectionView = customView;
   </schedule:SfSchedule.SelectionView>
 </schedule:SfSchedule>
 {% endhighlight %}
+{% highlight C# %}
+schedule.ScheduleView = ScheduleView.WeekView;
+//Add the CustomView
+Button customView = new Button();
+customView.Text = "+NewEvent";
+customView.BackgroundColor = Color.FromHex("#FF9800");
+customView.TextColor = Color.White;
+schedule.SelectionView = customView;
+{% endhighlight %}
 {% endtabs %}
+
 ![](daymodule_images/selectioncustomview_week.png)
 
 ### Programmatic selection

@@ -50,6 +50,12 @@ SelectionMode="Single"  >
 
 {% highlight c# %}
 
+SfMaps map = new SfMaps();
+
+map.BackgroundColor = Color.White;
+
+ShapeFileLayer layer = new ShapeFileLayer();
+
 layer.EnableSelection = true;
 
 layer.SelectionMode = SelectionMode.Single;
@@ -63,6 +69,10 @@ shapeSetting.SelectedShapeStroke = Color.Black;
 shapeSetting.SelectedShapeStrokeThickness = 1;      
 
 layer.ShapeSettings = shapeSetting;
+
+map.Layers.Add(layer);
+
+this.Content = map;
 
 {% endhighlight %}
 
@@ -81,7 +91,7 @@ I> Shapes cannot be selected when the [`EnableSelection`](https://help.syncfusio
 
 {% highlight xml %}
 
-<maps:SfMaps x:Name="sfmap"    BackgsroundColor="White" >
+<maps:SfMaps x:Name="sfmap"    BackgroundColor="White" >
 
 <maps:SfMaps.Layers >
 
@@ -128,6 +138,8 @@ shapeSetting.SelectedShapeStrokeThickness = 1;
 layer.ShapeSettings = shapeSetting;
 
 map.Layers.Add(layer);
+
+this.Content = map;
 
 {% endhighlight %}
 

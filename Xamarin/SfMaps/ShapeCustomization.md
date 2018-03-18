@@ -183,6 +183,7 @@ layer.ShapeSettings = shapeSetting;
 ## Events
 
 [`ShapeSelected`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShapeSelected_EV.html) event gets triggered when the map shapes are selected.
+Corresponding model data is passed as an argument.
 
 {% tabs %}
 
@@ -195,9 +196,42 @@ layer.ShapeSettings = shapeSetting;
 {% highlight c# %}
 
  private void ShapeFileLayer_ShapeSelected(object data)
-        {
+ {
+    ElectionData electionData = data as ElectionData;
+    if (electionData != null)
+    {
+         Toast.IsVisible = true;
+         stateLabel.Text = electionData.State;
+         candidateLabel.Text = electionData.Candidate;
 
-        }
+         Device.StartTimer(new TimeSpan(0, 0, 3), () =>
+         {
+             Toast.IsVisible = false;
+             return false;
+         });        
+    }
+ }
 {% endhighlight %}
 
 {% endtabs %}
+
+Template for showing popup message when a shape is selected is given below.
+
+{% highlight xml %}
+
+ <StackLayout   x:Name="Toast" IsVisible="false" Orientation="Vertical" Spacing="0"  
+                           WidthRequest="100"  HorizontalOptions="End" VerticalOptions="End" >
+                <Label x:Name="stateLabel" Text="Country" HorizontalOptions="Center" 
+                       VerticalOptions="Center" XAlign="Center" YAlign="Center" FontSize="10" 
+                       WidthRequest="100"  HeightRequest= "20"  Opacity="0.5" BackgroundColor="Green" 
+                       TextColor="White" />
+                <Label x:Name="candidateLabel" Text="Population" HorizontalOptions="Center" 
+                       VerticalOptions="Center" XAlign="Center" YAlign="Center" FontSize="8" Grid.Row="1"  
+                       HeightRequest= "20"  WidthRequest="100"  Opacity="0.5" BackgroundColor="Green" 
+                       TextColor="White"/>
+
+</StackLayout>
+
+{% endhighlight %}
+
+![](Images/ShapeCustomization_img4.jpeg)

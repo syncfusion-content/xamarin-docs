@@ -82,6 +82,8 @@ bubbleSetting.ShowBubbles = true;
 
 bubbleSetting.ValuePath = "Electors";
 
+layer.BubbleMarkerSettings = bubbleSetting;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -92,11 +94,80 @@ bubbleSetting.ValuePath = "Electors";
 
 The fill color and opacity of the bubbles can be customized using the [`Fill`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.BubbleMarkerSetting~Fill.html#) and [`Opacity`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.BubbleMarkerSetting~Opacity.html#)  properties.
 
+{% tabs %}
+
+{% highlight xml %}
+
+<maps:ShapeFileLayer.BubbleMarkerSettings>
+
+<maps:BubbleMarkerSetting ShowBubbles="True"  ValuePath="Electors"  Fill="Orange" Opacity="0.8" />
+
+</maps:ShapeFileLayer.BubbleMarkerSettings>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+BubbleMarkerSetting bubbleSetting = new BubbleMarkerSetting();
+
+bubbleSetting.ShowBubbles = true;
+
+bubbleSetting.ValuePath = "Electors";
+
+bubbleSetting.Fill = Color.Orange;
+
+bubbleSetting.Opacity = 0.8;
+
+layer.BubbleMarkerSettings = bubbleSetting;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Bubble marker color customization](Images/BubbleMarker_img2.jpeg)
+
+
 ### Size customization
 
 Size of the bubbles depends on the data that is bound to the [`ValuePath`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.BubbleMarkerSetting~ValuePath.html#) but the maximum and minimum size of the bubble can be customized using [`MaxSize`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.BubbleMarkerSetting~MaxSize.html#) and [`MinSize`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.BubbleMarkerSetting~MinSize.html#) properties.
 
 I> [`ShowMapItems`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShowMapItems.html) should be enabled to display label on bubble marker.
+
+
+{% tabs %}
+
+{% highlight xml %}
+
+<maps:ShapeFileLayer.BubbleMarkerSettings>
+
+<maps:BubbleMarkerSetting ShowBubbles="True"  ValuePath="Electors"  Fill="Orange"
+                         MaxSize="25" MinSize="20" Opacity="0.8" />
+
+</maps:ShapeFileLayer.BubbleMarkerSettings>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+BubbleMarkerSetting bubbleSetting = new BubbleMarkerSetting();
+
+bubbleSetting.ShowBubbles = true;
+
+bubbleSetting.ValuePath = "Electors";
+
+bubbleSetting.Fill = Color.Orange;
+
+bubbleSetting.Opacity = 0.8;
+
+bubbleSetting.MinSize = 20;
+
+bubbleSetting.MaxSize = 25;
+
+ layer.BubbleMarkerSettings = bubbleSetting;
+
+{% endhighlight %}
+
+{% endtabs %}
 
 Following snippet explains the complete code for adding bubbles along with its customization.
 
@@ -184,6 +255,6 @@ public class ViewModel
 
 {% endtabs %}
 
-![](Images/BubbleMarker_img1.jpeg)
+![Bubble marker customization](Images/BubbleMarker_img1.jpeg)
 
 

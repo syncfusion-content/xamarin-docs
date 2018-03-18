@@ -9,6 +9,7 @@ documentation: ug
 # Legend
 
 A legend is a key used on a map that contains swatches of symbols with descriptions. A legend interprets what the map displays; it can be represented in various colors, shapes, or other identifiers based on the data. It gives a breakdown of what each symbol represents throughout the map.
+Legends can be added with the help of [`LegendSettings`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~LegendSettings.html) in the shape file layer.
 
 ## Visibility
 
@@ -32,6 +33,8 @@ MapLegendSetting legendSetting = new MapLegendSetting();
 
 legendSetting.ShowLegend = true;
 
+layer.LegendSettings = legendSetting;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -54,9 +57,13 @@ Based on the margin values of x and y-axes, the legends can be positioned using 
 
 {% highlight c# %}
 
+MapLegendSetting legendSetting = new MapLegendSetting();
+
 legendSetting.ShowLegend = true;
 
 legendSetting.LegendPosition = new Point(75, 90);
+
+layer.LegendSettings = legendSetting;
 
 {% endhighlight %}
 
@@ -66,11 +73,80 @@ legendSetting.LegendPosition = new Point(75, 90);
 
 The icon size of a legend can be customized using the [`IconSize`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLegendSetting~IconSize.html#) property.
 
-The following code snippet explains the complete code for adding legend along with its customization.
+{% tabs %}
+
+{% highlight xml %}
+
+<maps:ShapeFileLayer.LegendSettings>
+
+<maps:MapLegendSetting ShowLegend="True" LegendPosition="75,90">
+
+<maps:MapLegendSetting.IconSize>
+
+<Size Width="20" Height="20"/>
+
+</maps:MapLegendSetting.IconSize>
+
+</maps:MapLegendSetting>
+
+</maps:ShapeFileLayer.LegendSettings>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+MapLegendSetting legendSetting = new MapLegendSetting();
+
+legendSetting.ShowLegend = true;
+
+legendSetting.LegendPosition = new Point(75, 90);
+
+legendSetting.IconSize = new Size(20, 0);
+
+layer.LegendSettings = legendSetting;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Legend label
+
+[`LegendLabel`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ColorMapping~LegendLabel.html) provides an information about the map content. It is specified under color mapping.
 
 {% tabs %}
 
 {% highlight xml %}
+
+<maps:ShapeSetting.ColorMappings>
+<maps:EqualColorMapping Color="#D84444" Value="Romney" LegendLabel="Romney"/>
+<maps:EqualColorMapping Color="#316DB5" Value="Obama" LegendLabel="Obama"/>
+</maps:ShapeSetting.ColorMappings>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+EqualColorMapping colorMapping = new EqualColorMapping();
+
+colorMapping.Color = Color.FromHex("#D84444");
+
+colorMapping.LegendLabel = "Romney";
+
+colorMapping.Value = "Romney";
+
+EqualColorMapping colorMapping1 = new EqualColorMapping();
+
+colorMapping1.Color = Color.FromHex("#316DB5");
+
+colorMapping1.LegendLabel = "Obama";
+
+colorMapping1.Value = "Obama";
+
+{% endhighlight %}
+
+{% endtabs %}
+
+The following code snippet explains the complete code for adding legend along with its customization.
 
 <maps:SfMaps x:Name="sfmap"  BackgroundColor="White">
                 <maps:SfMaps.Layers>

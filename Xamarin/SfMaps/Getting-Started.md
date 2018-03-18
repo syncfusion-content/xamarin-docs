@@ -11,41 +11,13 @@ documentation: ug
 
 This section explains the steps required to configure the SfMaps control and provides information to its basic customization.
 
-## Adding SfMaps Reference
+## Adding SfMaps reference
 
 Refer to this [`article`](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to reference Essential Studio components in your solution. Also, refer to [`this`](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfmaps) to know about the assemblies required for adding maps control to your project.
 
-Note: After adding the reference, an additional step is required for UWP and iOS projects.
+I> After adding the reference, an additional step is required for iOS and UWP projects. You should create an instance of the `SfMapsRenderer` in iOS and UWP projects as shown in this [KB article.](https://www.syncfusion.com/kb/8603)
 
-### UWP
-
-Create an instance of maps custom renderer in the MainPage constructor of the UWP project as shown in the following code sample.
-
-{% highlight C# %}
-
-public MainPage()
-{
-	…
-	new  Syncfusion.SfMaps.XForms.UWP.SfMapsRenderer();
-	…             
-}
-
-{% endhighlight %}
-
-### iOS
-
-Create an instance of maps renderer in FinishedLaunching overridden method of AppDelegate class in iOS project.
-
-{% highlight C# %}
-
-public override bool FinishedLaunching(UIApplication app, NSDictionary options)
-{
-    ...
-    new Syncfusion.SfMaps.XForms.iOS.SfMapsRenderer();
-    ...
-}
-
-{% endhighlight %}
+I> For UWP alone, one more additional step is required if the project is built-in release mode with .NET Native tool chain enabled. You can refer to this [KB article](https://www.syncfusion.com/kb/8604) for more details.
 
 ## Adding namespace
 
@@ -75,15 +47,15 @@ Create an instance for maps control, and add it as content.
 
 {% highlight xaml %}
 
- <maps:SfMaps >
+<maps:SfMaps >
   
- </maps:SfMaps>
+</maps:SfMaps>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
- SfMaps map = new SfMaps();
+SfMaps map = new SfMaps();
 	
 this.Content = map;
 
@@ -91,18 +63,22 @@ this.Content = map;
 
 {% endtabs %}
 
-## Adding Layers
+## Adding layers
 
-Map is maintained through layers. It can accommodate one or more shape file layers.
+Map is maintained through [`Layers`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.SfMaps~Layers.html). It can accommodate one or more shape file layers.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <maps:SfMaps>
+
 <maps:SfMaps.Layers>
-<maps:ShapeFileLayer/>   
+
+<maps:ShapeFileLayer/>
+
 </maps:SfMaps.Layers>  
+
 </maps:SfMaps>  
 
 {% endhighlight %}
@@ -178,6 +154,10 @@ this.Content = map;
  
 {% endtabs %}
 
+After loading the shapes file, the following output will be reproduced.
+
+![](Images/GettingStartedimg1.jpeg)
+
 ## GeoJSON support
 
 Maps control supports reading and loading the GeoJSON files. GeoJSON file contains attribute information for the spatial features and coordinates in a dataset.
@@ -186,7 +166,7 @@ Maps control supports reading and loading the GeoJSON files. GeoJSON file contai
 
 {% highlight xaml %}
         
- <maps:ShapeFileLayer Uri="world.json">                        
+ <maps:ShapeFileLayer Uri="usa_state.json">                        
  </maps:ShapeFileLayer>
 					
 {% endhighlight %}
@@ -194,15 +174,11 @@ Maps control supports reading and loading the GeoJSON files. GeoJSON file contai
 {% highlight c# %}
      
  ShapeFileLayer layer = new ShapeFileLayer();
- layer.Uri = "world.json";
+ layer.Uri = "usa_state.json";
 			
 {% endhighlight %}
 
 {% endtabs %}
-
-After loading the shapes file, the following output will be reproduced.
-
-![](Images/GettingStartedimg1.jpeg)
 
 ## Data binding
 

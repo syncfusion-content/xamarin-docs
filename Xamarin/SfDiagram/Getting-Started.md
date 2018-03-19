@@ -13,60 +13,8 @@ This section provides a quick overview for working with Diagram for Xamarin.Form
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders.
 {Syncfusion Essential Studio Installed location}\Essential Studio{Essential Studio version}\Xamarin\lib
 Example: C:\Program Files (x86)\Syncfusion\Essential Studio\15.4.0.17\Xamarin\lib
-<table>
-<tr>
-<td>
-{{'**Project**'| markdownify }}
-</td>
-<td>
-{{'**Required assemblies**'| markdownify }}
-</td>
-</tr>
-<tr>
-<td>
-PCL Project
-</td>
-<td>
-pcl\Syncfusion.SfDiagram.XForms.dll
-</td>
-</tr>
-<tr>
-<td>
-Android Project
-</td>
-<td>
-android\Syncfusion.SfDiagram.XForms.Android.dll
-android\Syncfusion.SfDiagram.XForms.dll
-</td>
-</tr>
-<tr>
-<td>
-iOS Project
-</td>
-<td>
-iOS-unified\Syncfusion.SfDiagram.XForms.iOS.dll
-iOS-unified\Syncfusion.SfDiagram.XForms.dll
-</td>
-</tr>
-<tr>
-<td>
-UWP Project
-</td>
-<td>
-UWP\Syncfusion.SfDiagram.XForms.UWP.dll
-UWP\Syncfusion.SfDiagram.XForms.dll
-</td>
-</tr>
-</table>
-**Installing assemblies through Package Manager Console**
-Open Package Manager console by clicking Tools >> NuGet Package Manager >> Package Manager Console options in Visual Studio.
-<table>
-<tr>
-<td>
-PM> Get-Project -All | Install-Package Syncfusion.Xamarin.SfDiagram -source{{'[http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin](http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin#"")'| markdownify }}
-</td>
-</tr>
-</table>
+
+Refer [this link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfdiagram) to know about the assemblies required for adding SfDiagram control in a Xamarin project.
 
 ## Basic building blocks of Diagram
 * **Diagram**- It represents the drawing surface where all the graphical elements like nodes and connectors resides, can be used to display various types of diagrams and it is the root instance of the diagram control. A Diagram instance contains a collection of nodes and  connectors to represent the  graphical diagram.

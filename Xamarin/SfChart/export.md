@@ -20,7 +20,7 @@ You can export the Chart as a JPG image using [`SaveAsImage`](http://help.syncfu
 SfChart chart = new SfChart();
 ...
 
-sfChart.SaveAsImage("ChartSample.jpg");
+chart.SaveAsImage("ChartSample.jpg");
 
 {% endhighlight %}
 
@@ -47,7 +47,7 @@ The GetStream method of SfChart is used to get the chart as stream. The output s
 SfChart chart = new SfChart();
 ...
 
-sfChart.GetStream();
+chart.GetStream();
 
 {% endhighlight %}
 

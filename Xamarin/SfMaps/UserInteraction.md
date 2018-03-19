@@ -156,6 +156,8 @@ To select a shape and deselect it from the same collection without tapping or to
 
 The following code sample explains the selection and deselection.
 
+{% tabs %}
+
 {% highlight c# %}
 
 var model = GetDataSource();
@@ -181,6 +183,8 @@ layer.SelectedItems.Remove(model[4]);
 };
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Images/UserInteraction_img3.jpeg)
 

@@ -122,7 +122,7 @@ Shape file can be a set of files or a single file. Generally, a shape file conta
 
 ### UWP
 
-*	Add the necessary shapes file to the Assets folder of ProjectFileName.UWP.
+*	Add the necessary shapes file in a folder and name it as `ShapeFiles`. Add this `ShapeFiles` folder into the `Assets` folder of ProjectFileName.UWP.
 *	Right-click the added shape file, and navigate to properties.
 *	Choose the `EmbeddedResource` option under BuildAction of respective shape file.
 

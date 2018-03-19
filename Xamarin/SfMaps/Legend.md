@@ -148,6 +148,10 @@ colorMapping1.Value = "Obama";
 
 The following code snippet explains the complete code for adding legend along with its customization.
 
+{% tabs %}
+
+{% highlight xml %}
+
 <maps:SfMaps x:Name="sfmap"  BackgroundColor="White">
                 <maps:SfMaps.Layers>
                     

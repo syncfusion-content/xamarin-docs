@@ -178,15 +178,15 @@ Maps provide support for defining the custom marker using the [`MarkerTemplate`]
 
 <maps:ShapeFileLayer.Markers>
 
-<local:CustomMarker Label="United States" Latitude="38.8833" Longitude= "-77.0167" Population="321,174,000" />
+<local:CustomMarker  Latitude="38.8833" Longitude= "-77.0167"  />
 
-<local:CustomMarker Label="Brazil" Latitude="-15.7833" Longitude= "-47.8667" Population="204,436,000" />
+<local:CustomMarker  Latitude="-15.7833" Longitude= "-47.8667"  />
 
-<local:CustomMarker Label="India" Latitude="21.0000" Longitude= "78.0000" Population="1,272,470,000"/>
+<local:CustomMarker  Latitude="21.0000" Longitude= "78.0000" />
 
-<local:CustomMarker Label="China" Latitude="35.0000" Longitude= "103.0000" Population="1,370,320,000" />
+<local:CustomMarker  Latitude="35.0000" Longitude= "103.0000"  />
 
-<local:CustomMarker Label="Indonesia" Latitude="-6.1750" Longitude= "106.8283" Population="255,461,700" />
+<local:CustomMarker  Latitude="-6.1750" Longitude= "106.8283"  />
 
 </maps:ShapeFileLayer.Markers>
 
@@ -223,35 +223,25 @@ Maps provide support for defining the custom marker using the [`MarkerTemplate`]
             layer.ShapeSettings = shapeSetting;
             map.Layers.Add(layer);
 
-            CustomMarker marker1 = new CustomMarker();
-            marker1.Label = "United States";
+            CustomMarker marker1 = new CustomMarker();           
             marker1.Latitude = "38.8833";
-            marker1.Longitude = "-77.0167";
-            marker1.Population = "321,174,000";
+            marker1.Longitude = "-77.0167";            
 
-            CustomMarker marker2 = new CustomMarker();
-            marker2.Label = "Brazil";
+            CustomMarker marker2 = new CustomMarker();           
             marker2.Latitude = "-15.7833";
-            marker2.Longitude = "-47.866";
-            marker2.Population = "204,436,000";
+            marker2.Longitude = "-47.866";           
 
-            CustomMarker marker3 = new CustomMarker();
-            marker3.Label = "India";
+            CustomMarker marker3 = new CustomMarker();           
             marker3.Latitude = "21.0000";
-            marker3.Longitude = "78.0000";
-            marker3.Population = "1,272,470,000";
+            marker3.Longitude = "78.0000";            
 
-            CustomMarker marker4 = new CustomMarker();
-            marker4.Label = "China";
+            CustomMarker marker4 = new CustomMarker();           
             marker4.Latitude = "35.0000";
-            marker4.Longitude = "103.0000";
-            marker4.Population = "1,370,320,000";
+            marker4.Longitude = "103.0000";           
 
-            CustomMarker marker5 = new CustomMarker();
-            marker5.Label = "Indonesia";
+            CustomMarker marker5 = new CustomMarker();            
             marker5.Latitude = "-6.1750";
-            marker5.Longitude = "106.8283";
-            marker5.Population = "255,461,700rv";
+            marker5.Longitude = "106.8283";          
 
             layer.Markers.Add(marker1);
             layer.Markers.Add(marker2);
@@ -293,6 +283,8 @@ Maps provide support for defining the custom marker using the [`MarkerTemplate`]
 
 Below snippet explains on how to define custom marker with image support. 
 
+{% tabs %}
+
 {% highlight c# %}
 
 public class CustomMarker : MapMarker
@@ -300,8 +292,6 @@ public class CustomMarker : MapMarker
 {
 
 public ImageSource ImageName { get; set; }
-
-public String Population { get; set; }
 
 public CustomMarker()
 
@@ -314,6 +304,8 @@ ImageName = ImageSource.FromResource("MapsSample.pin.png");
 }
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Images/Markers_img3.jpeg)
 
@@ -353,6 +345,8 @@ private void ShapeFileLayer_MarkerSelected(MapMarker marker)
 
 Below code snippet explains the template used for Popup message.
 
+{% tabs %}
+
 {% highlight xml %}
 
 <StackLayout   x:Name="Toast" IsVisible="false" Orientation="Vertical" Spacing="0"  
@@ -365,6 +359,8 @@ Below code snippet explains the template used for Popup message.
  </StackLayout>
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Images/Markers_img4.jpeg)
 

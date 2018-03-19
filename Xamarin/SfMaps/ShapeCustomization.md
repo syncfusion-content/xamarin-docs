@@ -217,6 +217,8 @@ Corresponding model data is passed as an argument.
 
 Template for showing popup message when a shape is selected is given below.
 
+{% tabs %}
+
 {% highlight xml %}
 
  <StackLayout   x:Name="Toast" IsVisible="false" Orientation="Vertical" Spacing="0"  
@@ -233,5 +235,7 @@ Template for showing popup message when a shape is selected is given below.
 </StackLayout>
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Images/ShapeCustomization_img4.jpeg)

@@ -2,7 +2,7 @@
 layout : post
 title : Shapes in Syncfusion SfImageEditor control in Xamarin.Forms
 description : Learn how to add text in ImageEditor for Xamarin.Forms
-platform : Xamarin.Forms
+platform : xamarin.forms
 control : ImageEditor
 documentation : ug
 ---

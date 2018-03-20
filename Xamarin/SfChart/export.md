@@ -13,15 +13,18 @@ documentation: ug
 
 You can export the Chart as a JPG image using [`SaveAsImage`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~SaveAsImage.html#) method of [`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html#).
 
+{% tabs %} 
+
 {% highlight c# %}
-[C#]
 
 SfChart chart = new SfChart();
 ...
 
-sfChart.SaveAsImage("ChartSample.jpg");
+chart.SaveAsImage("ChartSample.jpg");
 
 {% endhighlight %}
+
+{% endtabs %}
 
 The exported image will be saved in the different location across the platforms.
 
@@ -37,12 +40,15 @@ N> In order to save the image in Android and Windows Phone, you have to enable t
 
 The GetStream method of SfChart is used to get the chart as stream. The output stream can be passed as an input of any other components which accept the stream such as pdf, excel, word etc.
 
+{% tabs %} 
+
 {% highlight c# %}
-[C#]
 
 SfChart chart = new SfChart();
 ...
 
-sfChart.GetStream();
+chart.GetStream();
 
 {% endhighlight %}
+
+{% endtabs %}

@@ -399,8 +399,10 @@ namespace GettingStarted
             this.Content = popupLayout;
         }
 
-        private void DataGrid_GridTapped(object sender, Syncfusion.SfDataGrid.XForms.GridTappedEventArgs e)
+        private async void DataGrid_GridTapped(object sender, Syncfusion.SfDataGrid.XForms.GridTappedEventArgs e)
         {
+            await Task.Delay(100);
+
             // Popup is opened at the Grid tapped event
             popupLayout.Show();
         }

@@ -13,39 +13,11 @@ documentation: ug
 
 ### Configuring and Installing Syncfusion NuGet Packages in Visual Studio
 
-The Syncfusion Xamarin NuGet packages are published in public [NuGet.org](https://www.nuget.org/) from v15.4.0.17. So, no need any additional configurations required to utilize the Syncfusion Xamarin NuGet packages from v15.4.0.17. If you required to utilize the Syncfusion Xamarin NuGet packages from Syncfusion private NuGet server instead of NuGet.org, follow the below topics to configure and install the Syncfusion Xamarin NuGet packages.
+Syncfusion Xamarin components are available in [NuGet.org](https://www.nuget.org/). To add our NuGet package, open the NuGet package manager in Visual Studio and search for “syncfusion.xamarin”. This will result in listing of all our Xamarin components.
 
+![](images/img14.png)
 
-N> If you wish to use Syncfusion Xamarin NuGet packages, then it is not needed to install [Essential Studio for Xamarin installer](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows#download-directly-from-website) to work with Syncfusion Xamarin controls.
-
-**NuGet Configuration**
-
-The steps to install the Syncfusion Xamarin NuGet Packages in Visual Studio are as follows,
-
-1. In Visual Studio, navigate to `Tools | NuGet Package Manager | Package Manager Settings`, the options dialog will appear on the screen as shows below,
-
-    ![](images/img8.png)
-
-2. Select `NuGet Package Manager | Package Sources` and click `Add` button to add the `Package Name` and `Package Source` of Syncfusion NuGet Packages.
-   
-    *   **Source** – Name of the package that listed in available package sources 
-    *	**Source** – Syncfusion Xamarin NuGet Package feed URL - http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin/ 
-   
-    N> If you have already downloaded the NuGet package from Syncfusion website, enter the local path in the **Source** field.
-
-    ![](images/img9.png)
-
-**NuGet Installation**
-
-Syncfusion Xamarin NuGet can install once configured the package source. The NuGet installation steps as below,
-
-1. Once configured the Package source with Syncfusion NuGet Packages, right click on project and choose Manage NuGet Packages and select Syncfusion Xamarin Packages from Package source.
-
-    ![](images/img10.png)
-
-2. The NuGet Packages are listed which are available in package source location. Install the required packages to your application by clicking Install button.
-
-3. Repeat the above steps in PCL, XForms.Droid, XForms.iOS, XForms.UWP projects.  
+![](images/img15.png)
 
 ### Updating a NuGet Package
 
@@ -53,13 +25,13 @@ Using the Manage NuGet Packages in Visual Studio, NuGet packages can be updated.
 
 1. Right click on Project and Navigate to the Manage NuGet Packages and click on the Updates tab to check for updates.
 
-2. Select the Updates -> < Syncfusion Xamarin Packages >. Refer to the following screenshot for more information.
+    ![](images/img18.png)
 
-    ![](images/img11.png)
+2. If there is a new version of NuGet you will see it in the list of available updates.
 
-3. If there is a new version of NuGet you will see it in the list of available updates.
+3. Select NuGet Package in the list and click Update. 
 
-4. Select NuGet Package in the list and click Update. 
+N> If you wish to use Syncfusion Xamarin NuGet packages, then it is not needed to install [Essential Studio for Xamarin installer](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows#download-directly-from-website) to work with Syncfusion Xamarin controls.
 
 ## Download directly from website
 

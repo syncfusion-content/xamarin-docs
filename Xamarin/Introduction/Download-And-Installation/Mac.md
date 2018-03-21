@@ -13,11 +13,9 @@ documentation: ug
 
 ### Configuring and Installing Syncfusion NuGet Packages in Visual Studio
 
-Syncfusion Xamarin components are available in [NuGet.org](https://www.nuget.org/). To add our NuGet package, open the NuGet package manager in Visual Studio and search for “syncfusion.xamarin”. This will result in listing of all our Xamarin components.
+Syncfusion Xamarin components are available in [NuGet.org](https://www.nuget.org/). To add our NuGet package, open the NuGet package manager in Visual Studio and search for “syncfusion.xamarin”. This will result in listing of all our Xamarin components. You can now select from the list of Syncfusion’s components displayed in the window. You need to do this in all the projects such as PCL, XForms.Droid, XForms.iOS.
 
 ![](images/img16.png)
-
-![](images/img17.png)
 
 ### Updating a NuGet Package
 

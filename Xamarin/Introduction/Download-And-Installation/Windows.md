@@ -13,11 +13,9 @@ documentation: ug
 
 ### Configuring and Installing Syncfusion NuGet Packages in Visual Studio
 
-Syncfusion Xamarin components are available in [NuGet.org](https://www.nuget.org/). To add our NuGet package, open the NuGet package manager in Visual Studio and search for “syncfusion.xamarin”. This will result in listing of all our Xamarin components.
+Syncfusion Xamarin components are available in [NuGet.org](https://www.nuget.org/). To add our NuGet package, open the NuGet package manager in Visual Studio and search for “syncfusion.xamarin”. This will result in listing of all our Xamarin components. You can now select from the list of Syncfusion’s components displayed in the window. You need to do this in all the projects such as PCL, XForms.Droid, XForms.iOS.
 
 ![](images/img14.png)
-
-![](images/img15.png)
 
 ### Updating a NuGet Package
 
@@ -86,20 +84,6 @@ I> After adding the reference, currently, an additional step is required for iOS
 I> For UWP alone, one more additional step is required if the project is built in release mode with .NET Native tool chain enabled. For example, if we are using SfKanban, you can refer the [KB article](https://www.syncfusion.com/kb/7170) for more details.
 
 ## Install NuGet from command line
-
-### NuGet Configuration
-
-1. Download the latest NuGet executable from [here](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
-
-2. Open the downloaded executable location in command window and run the following command,
-
-    nuget.exe Sources Add –Name [Source name] –Source [source location]
-
-    For Ex: nuget.exe Sources Add –Name “Syncfusion Source” –Source “http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin/”
-
-3. Once the Source gets added successfully the confirmation message will be shown like below.
-
-    ![](images/img12.png)
 
 ### NuGet Installation
 

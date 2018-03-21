@@ -77,20 +77,6 @@ I> After adding the reference, currently, an additional step is required for iOS
 
 ## Install NuGet from command line
 
-### NuGet Configuration
-
-1. Download the latest NuGet executable from [here](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
-
-2. Open the downloaded executable location in command window and run the following command,
-
-   mono nuget.exe Sources Add –Name [Source name] –Source [source location]
-
-   Ex: mono nuget.exe Sources Add –Name “Syncfusion Xamarin Packages” -Source “http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin/”
-
-3. Once the Source gets added successfully the confirmation message will be shown like below.
-
-    ![](images/img6.jpg)
-
 ### NuGet Installation
 
 Once the NuGet source has been added, then install the NuGet package which is available in that source by using following command.

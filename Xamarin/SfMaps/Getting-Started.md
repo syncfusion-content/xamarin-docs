@@ -13,7 +13,11 @@ This section explains the steps required to configure the SfMaps control and pro
 
 ## Adding SfMaps reference
 
-Refer to this [`article`](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to reference Essential Studio components in your solution. Also, refer to [`this`](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfmaps) to know about the assemblies required for adding maps control to your project.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add maps to your project, open the NuGet package manager in Visual Studio, and search for [syncfusion.xamarin.sfmaps](https://www.nuget.org/packages/Syncfusion.Xamarin.SfMaps), and then install it. 
+
+![](Images/maps.png) 
+
+To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfmaps) to know about the dependent assemblies for maps.
 
 I> After adding the reference, an additional step is required for iOS and UWP projects. You should create an instance of the `SfMapsRenderer` in iOS and UWP projects as shown in this [KB article.](https://www.syncfusion.com/kb/8603)
 

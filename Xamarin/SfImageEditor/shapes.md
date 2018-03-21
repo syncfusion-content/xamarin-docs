@@ -2,7 +2,7 @@
 layout : post
 title : Shapes in Syncfusion SfImageEditor control in Xamarin.Forms
 description : Learn how to add shapes, text, and draw over an Image in ImageEditor for Xamarin.Forms
-platform : Xamarin.Forms
+platform : xamarin.forms
 control : ImageEditor
 documentation : ug
 ---

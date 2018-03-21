@@ -9,12 +9,11 @@ documentation: ug
 
 # Grouping 
 
-A group represents a collection of items that belong to a category. When grouping is applied, the data is organized into different groups based on key values. Each group is identified by its [Key](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.Extensions.GroupResult~Key.html) by which you can get the underlying data in the group.
+A group represents a collection of items that belongs to a category. When grouping is applied, the data is organized into different groups based on key values. Each group is identified by its [Key](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.Extensions.GroupResult~Key.html), by which you can get the underlying data in the group.
 
-## Programmatic Grouping
+## Programmatic grouping
 
-SfListView allows to perform grouping from the code by defining the [GroupDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor.html) object and adding it into the [DataSource.GroupDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~GroupDescriptors.html) collection. SfListView groups the data based on the `GroupDescriptor` object that is added to this collection. 
-`GroupDescriptor` object holds the following properties:
+Grouping from the code can be done by defining [GroupDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor.html) object, and adding it into the [DataSource.GroupDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~GroupDescriptors.html) collection. This control groups the data based on the `GroupDescriptor` object added to this collection.`GroupDescriptor` object holds the following properties:
 
 * PropertyName: Describes name of the property to be grouped.
 * KeySelector: Describes selector to return the group key.
@@ -24,7 +23,8 @@ The following code example illustrates how to apply grouping to the data in SfLi
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfListView x:Name="listView">
+<ContentPage>
+ <syncfusion:SfListView x:Name="listView">
   <syncfusion:SfListView.DataSource>
     <data:DataSource>
       <data:DataSource.GroupDescriptors>
@@ -32,7 +32,8 @@ The following code example illustrates how to apply grouping to the data in SfLi
       </data:DataSource.GroupDescriptors>
     </data:DataSource>
   </syncfusion:SfListView.DataSource>
-</syncfusion:SfListView>
+ </syncfusion:SfListView>
+</ContentPage>
 {% endhighlight %}
 {% highlight c# %}
 listView.DataSource.GroupDescriptors.Add(new GroupDescriptor()
@@ -42,13 +43,11 @@ listView.DataSource.GroupDescriptors.Add(new GroupDescriptor()
 {% endhighlight %}
 {% endtabs %}
 
-## Custom Grouping
+## Custom grouping
 
-SfListView allows you to group the items based on custom logic. The custom grouping can be applied to either [SfListView.DataSource.GroupComparer](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~GroupComparer.html) property or [GroupDescriptor.Comparer](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~Comparer.html) which is added into the [DataSource.GroupDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~GroupDescriptors.html) collection. GroupDescriptor's Comparer sorts and compares each group either in ascending or in descending order.
-
-In Custom Group comparer group gets compared to each other in `Compare()` method ,this class is derived from IComparer<GroupResult>, [ISortDirection](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.DataSource.Portable~Syncfusion.DataSource.ISortDirection.html). Properties like Count, IsExpand, Items, Key, Level and SubGroups can be used from [GroupResult](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.DataSource.Portable~Syncfusion.DataSource.Extensions.GroupResult_members.html). Here we compares each group based on the its Count. Object gets compared and returns the SortDirection.
-
-The following code example illustrates how to apply the custom grouping logic.
+Grouping the items can be done based on custom logic. The custom grouping can be applied to either [SfListView.DataSource.GroupComparer](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~GroupComparer.html) property or [GroupDescriptor.Comparer](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~Comparer.html) which is added into the `DataSource.GroupDescriptors` collection.
+In custom group comparer all items present in a group compares each other based on the items count each group sorted accordingly.
+The following code example illustrates how to perform custom grouping for underlying data based on the group item count.
 
 {% highlight c# %}
 public class CustomGroupComparer : IComparer<GroupResult>, ISortDirection
@@ -57,11 +56,13 @@ public class CustomGroupComparer : IComparer<GroupResult>, ISortDirection
   {
     this.SortDirection = ListSortDirection.Ascending;
   }
+  
   public ListSortDirection SortDirection
   {
     get;
     set;
   }
+  
   public int Compare(GroupResult x, GroupResult y)
   {
     int groupX;
@@ -83,12 +84,12 @@ public class CustomGroupComparer : IComparer<GroupResult>, ISortDirection
 
 ### Group based on first character
 
-SfListView groups the items based on first character of the `Customer Names` in below. Here, [GroupDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor.html) groups the object based on `KeySelector`.    
-
-The following code example illustrates how to perform custom grouping for underlying data based on the group item count.
+Grouping the listview items occurs based on value assigned to property name in [GroupDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor.html). Here, items grouped based on first character of the value by using [KeySelector](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~KeySelector.html).  
+In below example based on the first character of contact name property assigned to `GroupDescriptor`, each items gets grouped.
+The following code example illustrates how to perform custom grouping for underlying data based on the property value.
 
 {% highlight c# %}
-listView.DataSource.GroupDescriptors.Add(new GroupDescriptor()
+listView.DataSource.GroupDescriptitesmors.Add(new GroupDescriptor()
 {
   PropertyName = "ContactName",
   KeySelector = (object obj1) =>
@@ -102,7 +103,9 @@ listView.DataSource.GroupDescriptors.Add(new GroupDescriptor()
 
 ### Group based on more than one property in the data object
 
-SfListView provides supports to bind the multiple properties to [GroupDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor.html) object by using `KeySelector`. By returning multiple properties, KeySelector used to display the `Group Header` items with multiple data model objects.
+Multiple properties can be binded to [GroupDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor.html) object by using [KeySelector](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~KeySelector.html), in which the group header items can be created with multiple data model object effectively.
+In below code example grouping happens  based on designation and level property by using `KeySelector`.
+The following code example illustrates how to perform custom grouping for underlying data based on the multiple property.
 
 {% highlight c# %}
 listView.DataSource.GroupDescriptors.Add(new GroupDescriptor()
@@ -118,7 +121,9 @@ listView.DataSource.GroupDescriptors.Add(new GroupDescriptor()
 
 ### Group by ignoring case sensitivity
 
-SfListView lets you to group the items by based on case sensitivity by using `KeySelector` property in the [GroupDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor.html). While returning the `KeySelector`, convert the required property name in the data model which needed to be group either as `Upper` or `Lower` case as per the requirement and the items are grouped based on the `KeySelector` which will be returned.
+Grouping items by ignoring the case sensitive is done by using [KeySelector](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~KeySelector.html) property in the [GroupDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor.html). While returning the `KeySelector`, convert the required property name in the data model which is to group either as Upper or Lower case as per the requirement. The items will be grouped based on the `KeySelector` with the case sensitive which has been returned in it.
+In below code example grouping happens based on case sensitivity (i.e) value of the property name can be grouped in uppercase or lowercase.
+The following code example illustrates how to perform custom grouping for underlying data based on case sensitivity of the property value.
 
 {% highlight c# %}
 listView.DataSource.GroupDescriptors.Add(new GroupDescriptor() 
@@ -135,19 +140,13 @@ listView.DataSource.GroupDescriptors.Add(new GroupDescriptor()
 
 ### Aggregate summary
 
-SfListView allows to achieve the sum of the property value in GroupHeader with the help of `IValueConverter`. You can get the grouped `items` from the Items of [GroupResult](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.DataSource.Portable~Syncfusion.DataSource.Extensions.GroupResult.html) which is the BindingContext for every `GroupHeader` item. You can iterate the number of items inside a group and get the value of that particular property which is to be summed. Then calculated resultant value to GroupHeader item is returned as like below code example.  
+Aggregate summary displays the sum of values of the property from model object in [GroupHeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~GroupHeaderTemplate.html) with the help of Converter for each group. 
+The following code example illustrates how to perform custom grouping for underlying data.
 
-You can download the entire sample code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Aggregate_summary361190372)
- 
 {% highlight xaml %}
- <ContentPage.Resources>
-    <ResourceDictionary>
-            <local:Converter x:Key="Converter"/>
-            <DataTemplate x:Name="ItemTemplate"  x:Key="ItemTemplate">
-            </DataTemplate>
-     </ResourceDictionary>
-  </ContentPage.Resources>
- <listView:SfListView.GroupHeaderTemplate>
+<ContentPage>
+   <syncfusion:SfListView>
+      <syncfusion:SfListView.GroupHeaderTemplate>
                     <DataTemplate x:Name="GroupHeaderTemplate"  x:Key="GroupHeaderTemplate">
                         <ViewCell>
                             <ViewCell.View>
@@ -161,51 +160,46 @@ You can download the entire sample code from [here](http://www.syncfusion.com/do
                             </ViewCell.View>
                         </ViewCell>
                     </DataTemplate>
-  </listView:SfListView.GroupHeaderTemplate>
+      </syncfusion:SfListView.GroupHeaderTemplate>
+   </syncfusion:SfListView>
+</ContentPage>
 {% endhighlight %}
 
 The following code example illustrates how to apply the custom grouping logic.
 
 {% highlight c# %}
- public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+{
+    int result = 0;
+    var items = value as IEnumerable;
+    if(items != null)
+    {
+    var items = items.ToList<object>().ToList<object>();
+        if (items != null)
         {
-            int result = 0;
-            var items = value as IEnumerable;
-            if(items != null)
+        for (int i = 0; i < items.Count; i++)
             {
-                var items = items.ToList<object>().ToList<object>();
-
-                if (items != null)
-                {
-                    for (int i = 0; i < items.Count; i++)
-                    {
-                        var contact = items[i] as Contacts;
-                        result += contact.ContactNumber;
-                    }
-                }
+            var contact = items[i] as Contacts;
+            result += contact.ContactNumber;
             }
-            return result;
         }
+    }
+    return result
+}
 {% endhighlight %}
+
+You can download the entire sample code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Aggregate_summary361190372)
 
 ### Displaying items count
 
-SfListView can display the items count for each group in the group header item by customizing the [GroupHeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~GroupHeaderTemplate.html) property and to expand/collapse the groups at runtime you need to define the [AllowGroupExpandCollapse](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AllowGroupExpandCollapse.html) as `true` like following code example. So, when you tap on the group header, then the tapped group gets `collapse` if the group is in expand state and vice-versa.
-
-You can download entire sample code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Items_Count1523989044)
+The total number of items in each group will display in group header item by binding the [Count](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.Extensions.GroupResult~Count.html) property in the [GroupHeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.Extensions.GroupResult~Count.html) as like following code example.
 
 {% highlight xaml %}
-<listView:SfListView x:Name="listView" ItemSize="70"
-                     GroupHeaderSize="60"  AllowGroupExpandCollapse="True"
-                     ItemsSource="{Binding Items}"/>
-{% endhighlight %}
-
-The total number of items in each group will display in group header item, you need to bind the [Count](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.Extensions.GroupResult~Count.html) property in the [GroupHeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.Extensions.GroupResult~Count.html) as like following code example.
-
-{% highlight xaml %}
-<listView:SfListView.GroupHeaderTemplate>
-  <DataTemplate>
-    <Grid BackgroundColor="#E4E4E4">
+<ContentPage>
+ <syncfusion:SfListView>
+  <syncfusion:SfListView.GroupHeaderTemplate>
+    <DataTemplate>
+     <Grid BackgroundColor="#E4E4E4">
       <Grid.ColumnDefinitions>
         <ColumnDefinition Width="*"/>
         <ColumnDefinition Width="*"/>
@@ -220,20 +214,21 @@ The total number of items in each group will display in group header item, you n
         <Label Text="{Binding Count}" TextColor="Black" />
         <Label Text="Item(s)" TextColor="Black" />
       </StackLayout>
-    </Grid>
-  </DataTemplate>
-</listView:SfListView.GroupHeaderTemplate>
+     </Grid>
+    </DataTemplate>
+  </syncfusion:SfListView.GroupHeaderTemplate>
+ </syncfusion:SfListView>
+</ContentPage>
 {% endhighlight %}
 
-The following screenshots shows output when displaying items count at group header
+The following screenshots shows output when displaying items count at group header. You can download entire sample code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Items_Count1523989044)
 
 ![](SfListView_images/SfListView-ItemsCount.png)
 
 ## Multi-level grouping
 
-SfListView lets you to arrange the grouped items in hierarchical structure by customizing the [GroupHeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~GroupHeaderTemplate.html) property and by adding the multiple [GroupDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor.html) objects into the [GroupDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~GroupDescriptors.html) collection. 
-
-In the `GroupHeaderTemplate`, you need to set the `Padding` property to the custom view based on the requirement in order to arrange the group header items and sub group header items in the hierarchical structure. You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Multilevel_Grouping1401226920).
+Arranging the grouped items in hierarchical structure can be done by customizing the [GroupHeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~GroupHeaderTemplate.html) property, and by adding multiple [GroupDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor.html) objects into the [GroupDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~GroupDescriptors.html) collection. 
+In the `GroupHeaderTemplate`, you need to set the Padding property to the custom view based on the requirement in order to arrange the group header items and sub group header items in the hierarchical structure. 
 
 N> Multi-level grouping is only applicable for Linear Layout in SfListView
 
@@ -241,12 +236,13 @@ N> Multi-level grouping is only applicable for Linear Layout in SfListView
 xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
 xmlns:dataSource="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable"
 ...
-<ContentPage.Resources>
+<ContentPage>
+ <ContentPage.Resources>
   <ResourceDictionary>
     <local:GroupHeaderConverter x:Key="TemplateConverter"/>
   </ResourceDictionary>
-</ContentPage.Resources>
-<syncfusion:SfListView ItemsSource="{Binding EmployeeInfo}" ItemSize="60">
+ </ContentPage.Resources>
+ <syncfusion:SfListView ItemsSource="{Binding EmployeeInfo}" ItemSize="60">
   <syncfusion:SfListView.DataSource>
     <dataSource:DataSource>
        <dataSource:DataSource.GroupDescriptors>
@@ -269,7 +265,8 @@ xmlns:dataSource="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSo
      </DataTemplate>
   </syncfusion:SfListView.GroupHeaderTemplate>
 ...
-</syncfusion:SfListView>
+ </syncfusion:SfListView>
+</ContentPage>
 {% endhighlight %}
 
 {% highlight c# %}
@@ -300,9 +297,11 @@ public class GroupHeaderConverter : IValueConverter
 }
 {% endhighlight %}
 
-## Group Header expand and collapse
+You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Multilevel_Grouping1401226920).
 
-By default, the groups will be in expanded state in SfListView. You can expand or collapse the group in runtime by setting [SfListView.AllowGroupExpandCollapse](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AllowGroupExpandCollapse.html) to `true`. So, when user tap on group header, then the tapped group gets collapse if the group is in expand state and vice-versa. 
+## Group expand and collapse
+
+By default, the groups will be in expanded state in SfListView. You can expand or collapse the group in runtime by setting [SfListView.AllowGroupExpandCollapse](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AllowGroupExpandCollapse.html) to true. So, when user tap on group header, then the tapped group gets collapse if the group is in expand state and vice-versa. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -318,13 +317,13 @@ The following screenshot shows the output rendered when the groups are collapsed
 
 ![](SfListView_images/SfListView-Grouping.png)
 
-### Programmatic expand and collapse
+### Programmatic expand collapse
 
-You can allow end-user to expand or collapse the groups programmatically at runtime.
+Expand or collapse the groups from end-user can be done programmatically at runtime.
 
-#### Expand or collapse all groups
+#### Expand or collapse all the groups
 
-You can expand or collapse all the groups programmatically at runtime by using [SfListView.ExpandAll()](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ExpandAll.html) method and [SfListView.CollapseAll()](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~CollapseAll.html) method.
+Expand or collapse all the groups can be done programmatically at runtime by using [SfListView.ExpandAll()](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ExpandAll.html) method and [SfListView.CollapseAll()](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~CollapseAll.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -335,7 +334,7 @@ listView.CollapseAll();
 
 #### Expand or collapse the specific group
 
-You can expand or collapse specific group by using [SfListView.ExpandGroup(GroupResult group)](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ExpandGroup.html) method and [SfListView.CollapseGroup(GroupResult group)](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~CollapseGroup.html) method.
+Expand or collapse specific group can be done by using [SfListView.ExpandGroup(GroupResult group)](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ExpandGroup.html) method and [SfListView.CollapseGroup(GroupResult group)](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~CollapseGroup.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -347,23 +346,21 @@ listView.CollapseGroup(group);
 
 #### Expand or collapse all group by default
 
-SfListView allows you to collapse all group by default which can be achieved by using `listView.Loaded` event. You can either [SfListView.CollapseAll](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~CollapseAll.html) by or [SfListView.ExpandAll](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ExpandAll.html) by Loaded event.
+Collapse all or Expand all group can be done by default which can be achieved by using [ListViewLoadedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ListViewLoadedEventArgs.html) event. You can either [SfListView.CollapseAll](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~CollapseAll.html) by or [SfListView.ExpandAll](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ExpandAll.html) by Loaded event.
 
 {% highlight c# %}
-    listView.Loaded += ListView_Loaded;
+listView.Loaded += ListView_Loaded;
   
-     private void ListView_Loaded(object sender, ListViewLoadedEventArgs e)
-        {
-            listView.CollapseAll();
-         		listView.ExpandAll();
-        }
+private void ListView_Loaded(object sender, ListViewLoadedEventArgs e)
+{
+    listView.CollapseAll();
+    listView.ExpandAll();
+}
 {% endhighlight %}
 
-### Keep only one group in expanded state
+### Keeping only one group in expanded state
 
-SfListView allows you to `Expand` or `Collapse` any specific group which can be achieved by using [GroupExpanding](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~GroupExpanding_EV.html) event which will be triggered whenever a particular group is being expanded and the particular selected group can be get from [GroupExpandCollapseChangingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GroupExpandCollapseChangingEventHandler.html) by which you can `compare` and `collapse` all other groups and `expand` the particular selected group as in the below code snippets. 
-
-You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/One_group_expanded1663737587)
+Expand any one specific group alone in a view can be achieved by using [GroupExpanding](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~GroupExpanding_EV.html) event and the particular selected group can be get from [GroupExpandCollapseChangingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GroupExpandCollapseChangingEventHandler.html) by which you can compare and collapse all other groups and expand the particular selected group like below code snippets. 
 
 {% highlight c# %}
 private void ListView_GroupExpanding(object sender, GroupExpandCollapseChangingEventArgs e) 
@@ -387,6 +384,8 @@ private void ListView_GroupExpanding(object sender, GroupExpandCollapseChangingE
 }
 {% endhighlight %}
 
+You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/One_group_expanded1663737587)
+
 ### Events
 
 ### GroupExpanding event
@@ -395,16 +394,16 @@ The [SfListView.GroupExpanding](https://help.syncfusion.com/cr/cref_files/xamari
  
 The [GroupExpandCollapseChangingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GroupExpandCollapseChangingEventHandler.html) of the `GroupExpanding` event provides the information about the expanding group and it has the following members.
 
-`Groups` - Gets a list of groups which are being expanded.
+Groups - Gets a list of groups which are being expanded.
 
-`Cancel` – Decides whether to cancel the group expansion.
+Cancel – Decides whether to cancel the group expansion.
  
-You can cancel the group expansion by setting `GroupExpandCollapseChangingEventArgs.Cancel` to `true`.
+You can cancel the group expansion by setting `GroupExpandCollapseChangingEventArgs.Cancel` to true.
 
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfListView x:Name="listView" ItemsSource="{Binding contactsInfo}" 
-                     GroupExpanding="ListView_GroupExpanding" />
+                       GroupExpanding="ListView_GroupExpanding" />
 {% endhighlight %}
 {% highlight c# %}
 listView.GroupExpanding += ListView_GroupExpanding;
@@ -427,7 +426,7 @@ The [SfListView.GroupExpanded](https://help.syncfusion.com/cr/cref_files/xamarin
 
 The [GroupExpandCollapseChangedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GroupExpandCollapseChangedEventHandler.html) of the `GroupExpanded` event provides the information about the expanded group and it has the following member.
 
-`Groups` - Gets a list of groups which are expanded.
+Groups - Gets a list of groups which are expanded.
 
 ### GroupCollapsing event 
 
@@ -435,16 +434,16 @@ The [SfListView.GroupCollapsing](https://help.syncfusion.com/cr/cref_files/xamar
 
 The [GroupExpandCollapseChangingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GroupExpandCollapseChangingEventHandler.html) of the `GroupCollapsing` event provides the information about the collapsing group and it contains the following member.
 
-`Groups` - Gets a list of groups which are being collapsed.
+Groups - Gets a list of groups which are being collapsed.
 
-`Cancel` – Decides whether to cancel the group collapsing.
+Cancel – Decides whether to cancel the group collapsing.
 
 You can cancel the group is being collapsed by using `GroupExpandCollapseChangingEventArgs.Cancel` of `GroupCollapsing` event.
 
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfListView x:Name="listView" ItemsSource="{Binding contactsInfo}" 
-                     GroupCollapsing="ListView_GroupCollapsing" />
+                       GroupCollapsing="ListView_GroupCollapsing" />
 {% endhighlight %}
 {% highlight c# %}
 listView.GroupCollapsing += ListView_GroupCollapsing;
@@ -467,13 +466,13 @@ The [SfListView.GroupCollapsed](https://help.syncfusion.com/cr/cref_files/xamari
  
 The [GroupExpandCollapseChangedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GroupExpandCollapseChangedEventHandler.html) of the `GroupCollapsed` event provides the information about collapsed group and it contains the following member.
 
-`Groups` - Gets a list of groups which are collapsed.
+Groups - Gets a list of groups which are collapsed.
 
 ## Stick group header
 
-SfListView allows you to stick the group header to view by enabling the property [SfListView.IsStickyGroupHeader](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsStickyGroupHeader.html). If `IsStickyGroupHeader` is `true`, the corresponding group header is in view until the last item of the group goes out of view on scrolling.
+SfListView allows you to stick the group header to view by enabling the property [SfListView.IsStickyGroupHeader](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsStickyGroupHeader.html). If `IsStickyGroupHeader` is true, the corresponding group header is in view until the last item of the group goes out of view on scrolling.
 
-N> When the `IsStickyGroupHeader` is set as `true`, [IsStickyHeader](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsStickyHeader.html) property will be changed to `true` because the header item can't be scrollable when the `IsStickyGroupHeader` is `true`. When the `IsStickyHeader` is set as `false`, if `IsStickyGroupHeader` is `true` then it will be changed to `false` because the group header item can't be sticky when the `IsStickyHeader` is `true`.
+N> When the `IsStickyGroupHeader` is set as true, [IsStickyHeader](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsStickyHeader.html) property will be changed to true because the header item can't be scrollable when the `IsStickyGroupHeader` is true. When the `IsStickyHeader` is set as false, if `IsStickyGroupHeader` is true then it will be changed to false because the group header item can't be sticky when the `IsStickyHeader` is true.
 
 {% tabs %}
 {% highlight xaml %}
@@ -485,56 +484,17 @@ listView.IsStickyGroupHeader = true;
 {% endhighlight %}
 {% endtabs %}
 
-## Group Header Customization
-
-Customizing the [GroupHeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~GroupHeaderTemplate.html) based on the value obtained from the `Checked` property by using Converter. 
-In the Converter, you need to check whether the value obtained is `1` or `0` and convert into required string value[`Passed` or `Failed`]. 
-
-{% highlight c# %}
-public class IntToStringConverter : IValueConverter 
-{ 
-  public object Convert(object value, Type targetType, object parameter, CultureInfo culture) 
-  { 
-    if (value.ToString() == "1") 
-      return "Passed"; 
-    return "Failed"; 
-  } 
- 
-  public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture) 
-  { 
-    throw new NotImplementedException(); 
-  } 
-} 
-{% endhighlight %}
-
-The following code shows how to change the GroupHeader Key value using `IntToStringConverter`.
-
-{% highlight xaml %}
-<DataTemplate x:Name="GroupHeaderTemplate"  x:Key="GroupHeaderTemplate"> 
-  <ViewCell> 
-    <ViewCell.View> 
-      <Grid BackgroundColor="#E4E4E4"> 
-        <Grid.ColumnDefinitions> 
-          <ColumnDefinition Width="*" /> 
-        </Grid.ColumnDefinitions> 
-          <Label Text="{Binding Key,Converter={StaticResource IntToStringConverter}}" 
-                 VerticalOptions="Center" 
-                 HorizontalOptions="Start" /> 
-      </Grid> 
-    </ViewCell.View> 
-  </ViewCell> 
-</DataTemplate> 
-{% endhighlight %}
+## Group header customization
 
 ### Appearance customization
 
-SfListView allows you to customize the `User Interface (UI)` for group header items by using [SfListView.GroupHeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~GroupHeaderTemplate.html) property.
-
+The User Interface (UI) for group header items can be customized by using [SfListView.GroupHeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~GroupHeaderTemplate.html) property.
 The following code illustrates how to create the custom view for group header items and binding the [Key](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.Extensions.GroupResult~Key.html) to it.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfListView x:Name="listView">
+<ContentPage>
+ <syncfusion:SfListView x:Name="listView">
   <syncfusion:SfListView.GroupHeaderTemplate>
     <DataTemplate>
       <ViewCell>
@@ -551,7 +511,8 @@ The following code illustrates how to create the custom view for group header it
       </ViewCell>
     </DataTemplate>
   </syncfusion:SfListView.GroupHeaderTemplate>
-</syncfusion:SfListView>
+ </syncfusion:SfListView>
+</ContentPage>
 {% endhighlight %}
 {% highlight c# %}
 listView.GroupHeaderTemplate = new DataTemplate(() =>
@@ -572,12 +533,10 @@ listView.GroupHeaderTemplate = new DataTemplate(() =>
 
 ### Expand collapse icon in group header
 
-SfListView provides support to `expand` or `collapse` the group when tapped on group header item by setting [AllowGroupExpandCollapse](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AllowGroupExpandCollapse.html) as True.
+Expand and collapse the group when tapping icon on group header item can be done by customizing the [GroupHeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~GroupHeaderTemplate.html) with the help of converter.
+The following code example illustrates how to perform custom grouping with expand collpase icon in group header .
 
-And also allows to show the expand and collapse state of the group with icon in the group header by customizing the [GroupHeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~GroupHeaderTemplate.html) and using the [IsExpand](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.Extensions.GroupResult~IsExpand.html) property, which determines whether the group is expanded or collapsed.
-
-You can download entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Expand_Collapse_icon944838753)
-
+{% tabs %}
 {% highlight xaml %}
 <ContentPage>
     <ContentPage.Resources>
@@ -655,29 +614,6 @@ You can download entire source code from [here](http://www.syncfusion.com/downlo
     </ContentPage.Content>
 </ContentPage>
 {% highlight %}
-
-You can switch the expand or collapse group icon based on `IsExpand` property using the `BoolToImageConverter` converter.
-
-{% highlight c# %}
-public class BoolToImageConverter : IValueConverter
-{
-        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
-        {
-            if ((bool)value) 
-                return ImageSource.FromResource("ListViewSample.Images. GroupExpand.png");
-            else
-                return ImageSource.FromResource("ListViewSample.Images. GroupCollapse.png");
-        }
-  
-        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
-        {
-            throw new NotImplementedException();
-        }
-}
-{% highlight %}
-
-The below code illustrates to define the `GroupHeaderTemplate` in code behind,
-
 {% highlight c# %}
 listView = new SfListView();
 viewModel = new ContactsViewModel();
@@ -715,11 +651,33 @@ listView.GroupHeaderTemplate = new DataTemplate(() =>
     return grid;
 });
 {% highlight %}
+{% endtabs %}
 
-### Height Customizing 
+You can switch the expand or collapse group icon based on IsExpand property using the converter.
 
-SfListView allows you to customize the size of the group header items by setting the [SfListView.GroupHeaderSize](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~GroupHeaderSize.html) property. The default value of this property is 40. This property responds to runtime changes and hence you can customize it based on your requirement.
+{% highlight c# %}
+public class BoolToImageConverter : IValueConverter
+{
+    public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        if ((bool)value) 
+            return ImageSource.FromResource("ListViewSample.Images. GroupExpand.png");
+        else
+            return ImageSource.FromResource("ListViewSample.Images. GroupCollapse.png");
+    }
+  
+    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        throw new NotImplementedException();
+    }
+}
+{% highlight %}
 
+You can download entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Expand_Collapse_icon944838753)
+
+### Height customization
+
+The size of the group header items can be customized by setting the [SfListView.GroupHeaderSize](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~GroupHeaderSize.html) property. The default value of this property is 40. This property responds to runtime changes and hence you can customize it based on your requirement.
 The following code example illustrates how to customize the group header size in SfListView.
 
 {% tabs %}
@@ -735,154 +693,150 @@ N> For Vertical orientation, the group header size is considered as height and f
 
 ### Checkbox in group header
 
-SfListView allows to add checkbox in GroupHeader which can be moved to `Selected` state when all items in list selected , `NotSelected` state when all items are deselected and `Intermediate` state when any one or less then total items count gets selected.
-In GroupHeaderTemplate , add converter to image with passing ConverterParameter as `listview` thus changes state of GroupHeaderTemplate and listview refreshes both RefreshGroupHeader by clearing `BindingContext` of listviewItem and GroupHeaderItem and view .You
-download entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomSelection-1488987005)
+Checked state is maintained for each group header item and also for items inside the group. [GroupHeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~GroupHeaderTemplate.html) checked state can be determined by the checked state of each item in group and updated in `GroupHeaderTemplate` with the help of converter.
 
 {% highlight xaml %}
-<sync:SfListView.GroupHeaderTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <ViewCell.View>
-                            <Grid BackgroundColor="#d3d3d3">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="30" />
-                                    <ColumnDefinition Width="*" />
-                                    <ColumnDefinition Width="Auto" />
-                                </Grid.ColumnDefinitions>
-                                <Label Text="{Binding Key}" Grid.Column="1" VerticalTextAlignment="Center"/>
-                                <Image  Grid.Column="2" IsVisible="{Binding SelectionMode, Source={x:Reference listView}}" 
-                                        HorizontalOptions="Center" VerticalOptions="Center"
-                                       Source="{Binding ., Converter={StaticResource GroupingSelectionConverter}, ConverterParameter={x:Reference listView}}">
-                                    <Image.GestureRecognizers>
-                                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
-                                    </Image.GestureRecognizers>
-                                </Image>
-                            </Grid>
-                        </ViewCell.View>
-                    </ViewCell>
-                </DataTemplate>
-            </sync:SfListView.GroupHeaderTemplate>
+<ContentPage>
+  <syncfusion:SfListView>
+    <syncfusion:SfListView.GroupHeaderTemplate>
+        <DataTemplate>
+            <ViewCell>
+              <ViewCell.View>
+                <Grid BackgroundColor="#d3d3d3">
+                   <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                   </Grid.ColumnDefinitions>
+                   <Label Text="{Binding Key}" Grid.Column="1" VerticalTextAlignment="Center"/>
+                   <Image  Grid.Column="2" IsVisible="{Binding SelectionMode, Source={x:Reference listView}}" 
+                           HorizontalOptions="Center" VerticalOptions="Center"
+                           Source="{Binding ., Converter={StaticResource GroupingSelectionConverter}, ConverterParameter={x:Reference listView}}">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                        </Image.GestureRecognizers>
+                   </Image>
+                </Grid>
+              </ViewCell.View>
+            </ViewCell>
+        </DataTemplate>
+    </syncfusion:SfListView.GroupHeaderTemplate>
+  </syncfusion:SfListView>
+</ContentPage>
 {% endhighlight %} 
 
-You can change GroupHeader Checked state by using `items` with help of converter.
+You can change `GroupHeaderTemplate` checked state with help of converter like below code snippet.
 
 {% highlight c# %}
 public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+{
+    if (value == null)
+        return value;
+
+    GroupResult groupResult = value as GroupResult;
+    SfListView list = parameter as SfListView;
+
+    var items = new List<MusicInfo>(groupResult.Items.ToList<MusicInfo>());
+
+    if ((items.All(item => item.IsSelected == false)))
+    {
+        for (int i = 0; i < items.Count(); i++)
         {
-            if (value == null)
-                return value;
-
-            GroupResult groupResult = value as GroupResult;
-            SfListView list = parameter as SfListView;
-
-            var items = new List<MusicInfo>(groupResult.Items.ToList<MusicInfo>());
-
-            if ((items.All(item => item.IsSelected == false)))
-            {
-                for (int i = 0; i < items.Count(); i++)
-                {
-                    var item = items[i];
-                    (item as MusicInfo).IsSelected = false;
-                    list.SelectedItems.Remove(item);
-                }
-                return ImageSource.FromResource("CustomSelection.Images.NotSelected.png");
-
-            }
-
-            else if ((items.All(item => item.IsSelected == true)))
-            {
-                for (int i = 0; i < items.Count(); i++)
-                {
-                    var item = items[i];
-                    (item as MusicInfo).IsSelected = true;
-                    list.SelectedItems.Add(item);
-                }
-
-                return ImageSource.FromResource("CustomSelection.Images.Selected.png");
-            }
-
-            else
-            return ImageSource.FromResource("CustomSelection.Images.Intermediate.png");
-            
+            var item = items[i];
+            (item as MusicInfo).IsSelected = false;
+            list.SelectedItems.Remove(item);
         }
+        return ImageSource.FromResource("CustomSelection.Images.NotSelected.png");
+    }
+
+    else if ((items.All(item => item.IsSelected == true)))
+    {
+        for (int i = 0; i < items.Count(); i++)
+        {
+            var item = items[i];
+            (item as MusicInfo).IsSelected = true;
+            list.SelectedItems.Add(item);
+        }
+        return ImageSource.FromResource("CustomSelection.Images.Selected.png");
+    }
+
+    else
+        return ImageSource.FromResource("CustomSelection.Images.Intermediate.png");
+}
 {% endhighlight %}
    
 {% highlight c# %}
- private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
-        {
-            var image = (sender as Image);
-            var groupResult = image.BindingContext as GroupResult;
+private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+{
+    var image = (sender as Image);
+    var groupResult = image.BindingContext as GroupResult;
 
-            if (groupResult == null)
-                return;
-            var items = groupResult.Items.ToList<MusicInfo>().ToList();
+    if (groupResult == null)
+        return;
+    var items = groupResult.Items.ToList<MusicInfo>().ToList();
 
-            if ((items.All(listItem => listItem.IsSelected == true)))
-            {
-                for (int i = 0; i < items.Count(); i++)
-                {
-                    var item = items[i];
-                    (item as MusicInfo).IsSelected = false;
-                }
+    if ((items.All(listItem => listItem.IsSelected == true)))
+    {
+        for (int i = 0; i < items.Count(); i++)
+           {
+                var item = items[i];
+                (item as MusicInfo).IsSelected = false;
             }
-            else if ((items.All(listItem => listItem.IsSelected == false)))
+    }
+    else if ((items.All(listItem => listItem.IsSelected == false)))
+    {
+        for (int i = 0; i < items.Count(); i++)
             {
-                for (int i = 0; i < items.Count(); i++)
-                {
-                    var item = items[i];
-                    (item as MusicInfo).IsSelected = true;
-                }
+                var item = items[i];
+                (item as MusicInfo).IsSelected = true;
             }
-            this.RefreshGroupHeader(groupResult);
-            listView.RefreshView();
+    }
+    this.RefreshGroupHeader(groupResult);
+    listView.RefreshView();
+}
+
+private void RefreshGroupHeader(GroupResult group)
+{
+    foreach (var item in this.listView.GetVisualContainer().Children)
+    {
+      if (item.BindingContext == group)
+       {
+         item.BindingContext = null;
+         (item as GroupHeaderItem).Content.BindingContext = null;
         }
-
-        private void RefreshGroupHeader(GroupResult group)
-        {
-            foreach (var item in this.listView.GetVisualContainer().Children)
-            {
-                if (item.BindingContext == group)
-                {
-                    item.BindingContext = null;
-                    (item as GroupHeaderItem).Content.BindingContext = null;
-                }
-            }
-        }
+    }
+}        
 {% endhighlight %}
 
-The following screenshot shows the output when checking items in group header
+The following screenshot shows the output when checking items in group header. You download entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomSelection-1488987005)
 
 ![](SfListView_images/SfListView-CheckBoxInGroupHeader.png)
 
 ### Changing group header appearance when expanding
 
-SfListView allows [Group Header Template](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~GroupHeaderTemplate.html) and by using [IsExpand](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.Extensions.GroupResult~IsExpand.html) property to customize group header. Since, the default binding context of each `GroupHeader` item will be its corresponding [GroupResult](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.Extensions.GroupResult.html). So, you can bind any properties in the GroupResult to GroupHeaderTemplate property.  
- 
-Also, when a group is being expanded or collapsed, the IsExpand property will be changed accordingly. So, to change the background color for the selected/ tapped group, bind the IsExpand property to background color of the parent view in the GroupHeaderTemplate and by using `IValueConverter` cast the value into required `Color` as like below code example.  
-
-You can download entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Groupheader_appearance826922341)
+Background color of the [GroupHeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~GroupHeaderTemplate.html) is changed while expanding the particular group with the help of Converter as like below code example.  
 
 {% tabs %}
 {% highlight xaml %}
-<ContentPage.Resources> 
+<ContentPage>
+ <ContentPage.Resources> 
   <ResourceDictionary> 
     <local:SelectionBoolToBackgroundColorConverter x:Key="BoolToColorConverter"/> 
   </ResourceDictionary> 
-</ContentPage.Resources> 
+ </ContentPage.Resources> 
      
-<listView:SfListView x:Name="listView" ItemSize="90" AllowGroupExpandCollapse="True" 
+ <syncfusion:SfListView x:Name="listView" ItemSize="90" AllowGroupExpandCollapse="True" 
                      ItemSpacing="2" ItemsSource="{Binding Items}"> 
  
-  <listView:SfListView.DataSource> 
+   <syncfusion:SfListView.DataSource> 
     <dataSource:DataSource> 
       <dataSource:DataSource.GroupDescriptors> 
          <dataSource:GroupDescriptor PropertyName="DisplayString"/> 
       </dataSource:DataSource.GroupDescriptors> 
     </dataSource:DataSource> 
-  </listView:SfListView.DataSource> 
+   </syncfusion:SfListView.DataSource> 
  
-  <listView:SfListView.GroupHeaderTemplate> 
+   <syncfusion:SfListView.GroupHeaderTemplate> 
     <DataTemplate> 
       <StackLayout BackgroundColor="{Binding Path=IsExpand,   
                                     Converter={StaticResource BoolToColorConverter}}"> 
@@ -890,8 +844,9 @@ You can download entire source code from [here](http://www.syncfusion.com/downlo
                 VerticalOptions="Center" HorizontalOptions="Start" /> 
       </StackLayout> 
     </DataTemplate> 
-  </listView:SfListView.GroupHeaderTemplate> 
-</listView:SfListView> 
+   </syncfusion:SfListView.GroupHeaderTemplate> 
+ </syncfusion:SfListView> 
+</ContentPage>
 {% endhighlight %}
 {% highlight c# %}
 namespace Grouping 
@@ -912,36 +867,38 @@ namespace Grouping
 {% endhighlight %}
 {% endtabs %}
 
-## How To 
+You can download entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Groupheader_appearance826922341)
 
-## Grouping along with Sorting
+## How to 
 
-SfListView allows you to sort the data either in `ascending` or `descending` order by using [DataSource.SortDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~SortDescriptors.html) based on `PropertyName` and `Direction`. While adding DataSource.SortDescriptors along with [DataSource.GroupDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~GroupDescriptors.html) items binded under each group header arranges based on the property given to [ListSortDirection](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.ListSortDirection.html). After sorting all the groups with items inside the group header arranged based on `KeySelector` which returns the group key.
+## Grouping along with sorting
+
+Sort the data can be done either in ascending or descending order by using [DataSource.SortDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~SortDescriptors.html) based on PropertyName and Direction. While adding DataSource.SortDescriptors along with [DataSource.GroupDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~GroupDescriptors.html) items binded under each group header arranges based on the property given to [ListSortDirection](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.ListSortDirection.html). After sorting all the groups with items inside the group header arranged based on [KeySelector](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~KeySelector.html) which returns the group key.
 
 {% highlight c# %}
 public GroupingPage()
-        {
-            InitializeComponent();
-            listView.DataSource.SortDescriptors.Add(new SortDescriptor { PropertyName = "ContactName", Direction = ListSortDirection.Ascending });
-            //Applying custom grouping
-            listView.DataSource.GroupDescriptors.Add(new GroupDescriptor()
+{
+    InitializeComponent();
+    listView.DataSource.SortDescriptors.Add(new SortDescriptor { PropertyName = "ContactName", Direction = ListSortDirection.Ascending });
+    //Applying custom grouping
+    listView.DataSource.GroupDescriptors.Add(new GroupDescriptor()
+       {
+           PropertyName = "ContactName",
+           KeySelector = (object obj1) =>
             {
-                PropertyName = "ContactName",
-                KeySelector = (object obj1) =>
-                {
-                    var item = (obj1 as Contacts);
-                    return item.ContactName[0].ToString();
-                },
-            });
-        }
+                var item = (obj1 as Contacts);
+                return item.ContactName[0].ToString();
+            },
+        });
+}
 {% endhighlight %}
 
-## Allow to select only one item in a group at a runtime
+## Allow to select only one item in a group at a time
 
-SfListView allows to select only one item in a group by [ItemSelectionChangingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemSelectionChangingEventArgs.html) event of ListView’s as like in the below code example. In this sample, we have took the current SelectedItem from `e.AddedItems` and obtained the Group in which it is placed. Whenever you click on the same group items, already selected item will be removed from ListView’s SelectedItems. You can download entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/One_item_in_group-1968064931)
+Selecting only one item in a group can be done by [ItemSelectionChangingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemSelectionChangingEventArgs.html) event. If more than one item in the same group gets selected then already selected item will be removed from ListView’s SelectedItems. 
 
 {% highlight c# %}
- private void ListView_SelectionChanging(object sender, ItemSelectionChangingEventArgs e) 
+private void ListView_SelectionChanging(object sender, ItemSelectionChangingEventArgs e) 
 { 
   GroupResult actualGroup = null; 
   object key = null; 
@@ -996,13 +953,12 @@ if (selectedItems.Count > 0)
 } 
 {% endhighlight %}
 
+You can download entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/One_item_in_group-1968064931)
+
 ## Add item at specific index in a group
 
-In SfListView, you can add an item at specific index in a specific group by using [KeySelector](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~KeySelector.html) property and [Key](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.Extensions.GroupResult~Key.html) value of each group. Since, each group is identified by its [Key](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.Extensions.GroupResult~Key.html) which holds the underlying data related to the group. When a new item is added at runtime, you need to find that which group does the item belongs to by using [PropertyInfoCollection](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.PropertyInfoCollection.html), [PropertyName](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~PropertyName.html) and [KeySelector](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~KeySelector.html) and after getting the desired group’s [GroupResult](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.Extensions.GroupResult.html) value, insert the particular item into a specified index and please follow the below steps to achieve this.
-
-You can determine that which group does the newly added item belongs to by using `KeySelector` property and `Key` value of the group by passing the underlying data into the parameter in the below method
-
-You can download entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Item_at_specific_index1273262202)
+Adding an item at specific index in a specific group can be done by using [KeySelector](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~KeySelector.html) property and [Key](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.Extensions.GroupResult~Key.html) value of the group by passing the underlying data into the parameter.
+The following code explains how items gets added in a group
 
 {% highlight c# %}
 internal void GetGroupResult(object ItemData)
@@ -1027,7 +983,7 @@ internal void GetGroupResult(object ItemData)
                 }
                 group = null;
             }
-    itemGroup = this.listView.DataSource.Groups.FirstOrDefault(x => x.Key == key);         
+        itemGroup = this.listView.DataSource.Groups.FirstOrDefault(x => x.Key == key);         
         descriptor = null;
         key = null;
 }
@@ -1046,6 +1002,8 @@ internal void InsertItemInGroup(List<object> items, object Item, int InsertAt)
 }
 {% endhighlight %}
 
-The following screenshot shows output when adding item at specific index
+The following screenshot shows output when adding item at specific index. You can download entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Item_at_specific_index1273262202)
 
 ![](SfListView_images/SfListView-ItemAtSpecificIndex.png)
+
+

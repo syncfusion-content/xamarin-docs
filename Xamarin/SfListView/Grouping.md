@@ -400,6 +400,8 @@ Cancel – Decides whether to cancel the group expansion.
  
 You can cancel the group expansion by setting `GroupExpandCollapseChangingEventArgs.Cancel` to true.
 
+* `GroupExpanding` event can be used in a case to maintain only one group in expanded state by using `GroupExpandCollapseChangingEventArgs`. 
+
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfListView x:Name="listView" ItemsSource="{Binding contactsInfo}" 

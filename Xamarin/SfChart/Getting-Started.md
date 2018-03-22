@@ -19,9 +19,9 @@ Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.o
 
 To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfchart) to know about the dependent assemblies for chart. 
 
-I> After adding the reference, currently, an additional step is required for iOS and UWP projects. We need to initialize the renderer as explained in this [KB article](https://www.syncfusion.com/kb/7171/how-to-resolve-sfkanban-not-rendering-issue-in-ios-and-uwp).
+I> After adding the reference, currently, an additional step is required for iOS and UWP projects. We need to initialize the renderer as explained in this [KB article](https://www.syncfusion.com/kb/7144/).
 
-I> For UWP alone, one more additional step is required if the project is built in release mode with .NET Native tool chain enabled. You can refer to the [KB article](https://www.syncfusion.com/kb/7170) for more details.
+I> For UWP alone, one more additional step is required if the project is built in release mode with .NET Native tool chain enabled. You can refer to the [KB article](https://www.syncfusion.com/kb/7149) for more details.
  
 ## Initialize Chart
 

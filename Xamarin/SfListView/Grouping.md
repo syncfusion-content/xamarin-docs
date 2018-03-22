@@ -899,7 +899,7 @@ public GroupingPage()
 
 ## Allow to select only one item in a group at a time
 
-Selecting only one item in a group can be done by [ItemSelectionChangingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemSelectionChangingEventArgs.html) event. If more than one item in the same group gets selected then already selected item will be removed from ListView’s SelectedItems. 
+To select only one item in a group at a time can be achieved by using [ItemSelectionChangingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemSelectionChangingEventArgs.html) event. If more than one item in the same group gets selected then already selected item will be removed from ListView’s SelectedItems. 
 
 {% highlight c# %}
 private void ListView_SelectionChanging(object sender, ItemSelectionChangingEventArgs e) 

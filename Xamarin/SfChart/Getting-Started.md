@@ -13,7 +13,7 @@ This section explains you the steps required to populate the Chart with data, ti
 
 ## Adding Chart Reference
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add chart to your project, open the NuGet package manager in Visual Studio, and search for [“syncfusion.xamarin.sfchart”](https://www.nuget.org/packages/Syncfusion.Xamarin.SfChart/), and then install it. 
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add chart to your project, open the NuGet package manager in Visual Studio, and search for [“Syncfusion.Xamarin.SfChart”](https://www.nuget.org/packages/Syncfusion.Xamarin.SfChart/), and then install it. 
 
 ![](Getting-Started_images/addref.png)
 

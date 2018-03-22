@@ -13,7 +13,7 @@ The SfListView enables `Load More` view by setting the [SfListView.LoadMoreOptio
 The `LoadMoreOption` property has three different modes of operation listed as follows:
 
  * None: Disables the load more button. This is the default value.
- * Manual: Displays the load more button when end of the list is reached, and execute `LoadMoreCommand` when button is tapped.
+ * Manual: Displays the load more button when end of the list is reached and execute `LoadMoreCommand` when button is tapped.
  * Auto: Automatically execute the `LoadMoreCommand` when end of the list is reached.
 
 ## Load more automatically
@@ -345,7 +345,7 @@ The SfListView does not support the [LoadMoreOption](https://help.syncfusion.com
 
 ### Load more on Infinite scroll 
 
-SfListView allows the load more to add more items by scrolling infinite times. To make infinite scroll, follow the code example.
+You can add more items by scrolling infinite times. To make infinite scroll, follow the code example.
 
 {% highlight c# %}
 public class LoadMoreViewModel:INotifyPropertyChanged

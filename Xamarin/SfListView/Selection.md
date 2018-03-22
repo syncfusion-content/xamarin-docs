@@ -80,7 +80,7 @@ W> If you set any item which is not available in `ItemsSource` to `SelectedItem`
 
 ### Show checked circle on selected items 
 
-The SfListView allows customizing appearance of the selected item/items by using the appearance of [SelectedItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItemTemplate.html). The following customizations should gives an idea to customize the appearance of selected items in the control: 
+To customize the appearance of the selected item/items by using the appearance of [SelectedItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItemTemplate.html). The following customizations should give an idea to customize the appearance of selected items in the control: 
 
 {% highlight xaml %}
 <ContentPage>
@@ -125,7 +125,7 @@ Now run the application to render the following output. You can download the ent
 
 ### Selection background
 
-The SfListView allows changing the selection background color for the selected items by using BackgroundColor property in `SelectionItemTemplate`.
+To change the selection background color for the selected items by using BackgroundColor property in `SelectionItemTemplate`.
 
 {% highlight xaml %}
 <ContentPage>
@@ -226,7 +226,7 @@ N> [SelectionChanging](https://help.syncfusion.com/cr/cref_files/xamarin/sflistv
 
 ### Disable selection on particular item 
 
-SfListView allows you to disable selection for a particular set of items based on the provided conditions in SelectionChanging event of SfListView. Get the tapped item data from the IList AddedItem of ItemSelectionChangingEventArgs using which you can check whether it satisfies the condition and disable the selection through Cancel property as like below code example.
+To disable selection for a particular set of items based on the provided conditions in SelectionChanging event of SfListView. Get the tapped item data from the IList AddedItem of ItemSelectionChangingEventArgs using which you can check whether it satisfies the condition and disable the selection through Cancel property as like below code example.
 
 {% highlight c# %}
 public partial class MainPage : ContentPage
@@ -248,7 +248,7 @@ You can download the entire sample from [here](http://www.syncfusion.com/downloa
 
 ### Automatically scroll to bring a selected item into the view
 
-SfListView allows you to automatically bring the selected item into the view when it changed at runtime by calling the ScrollToRowIndex method.  
+To bring the selected item automatically into the view when it changed at runtime by calling the ScrollToRowIndex method.  
 
 In linear layout, you can get the row index of SelectedItem using the DisplayItems.IndexOf method and adjust the index based on header and group header like below code snippets.
 

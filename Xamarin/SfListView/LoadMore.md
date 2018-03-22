@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Load More
 
-The SfListView enables `Load More` view by setting the [SfListView.LoadMoreOption](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreOption.html), [SfListView.LoadMoreCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommand.html) and the [IsBusy](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsBusy.html) properties. When end of the list is reached, displayed `Load More` View provides an option to add the items at runtime.
+The SfListView enables `Load More` view by setting the [SfListView.LoadMoreOption](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreOption.html), [SfListView.LoadMoreCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommand.html) and the [IsBusy](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsBusy.html) properties. The `Load More` view will be display when end of the list is reached and provides option to add the items at runtime.
 
 The `LoadMoreOption` property has three different modes of operation listed as follows:
 
@@ -184,9 +184,9 @@ Refer to the following output to load more items:
 
 ![](SfListView_images/SfListView-LoadMore.gif)
 
-## Customize load more view
+## Load more view customization
 
-The SfListView allows customizing user interface(UI) of `Load More view`.
+The SfListView allows customizing user interface(UI) of `Load More` view.
 
 ### Load more button
 
@@ -311,9 +311,9 @@ listView.LoadMoreTemplate = new DataTemplate(() =>
 
 ## Disable load more at runtime
 
-To disable the `Load More View`, return 'CanExecute' method of the [LoadMoreCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommand.html) to `false`.
+To disable the `Load More` view, return 'CanExecute' method of the [LoadMoreCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommand.html) to `false`.
 
-If you reach maximum count (for example, totalItems = 22) in the list, follow the code example to disable the `Load More View`:
+If you reach maximum count (for example, totalItems = 22) in the list, follow the code example to disable the `Load More` view:
 
 {% highlight c# %}
 LoadMoreItemsCommand = new Command<object>(LoadMoreItems, CanLoadMoreItems);
@@ -345,7 +345,9 @@ The SfListView does not support the [LoadMoreOption](https://help.syncfusion.com
 
 ### Load more on Infinite scroll 
 
-You can add more items by scrolling infinite times. To make infinite scroll, follow the code example.
+SfListView allow you to add more items infinite times either manually or automatically. 
+
+To make infinite scroll, follow the code example.
 
 {% highlight c# %}
 public class LoadMoreViewModel:INotifyPropertyChanged

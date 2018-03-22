@@ -192,7 +192,7 @@ public object Convert(object value, Type targetType, object parameter, CultureIn
 
 You can download the entire sample code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Aggregate_summary361190372)
 
-### Displaying items count
+### Displaying Items count
 
 The total number of items in each group will be display in group header by binding the [Count](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.Extensions.GroupResult~Count.html) property in the [GroupHeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.Extensions.GroupResult~Count.html) as like following code example.
 
@@ -394,7 +394,7 @@ The [GroupExpandCollapseChangingEventArgs](https://help.syncfusion.com/cr/cref_f
 
 `Groups` - Gets a list of groups which are being expanded.
 
-`Cancel` – Decides whether to cancel the group expansion.
+`Cancel` - Decides whether to cancel the group expansion.
 
 The `GroupExpanding` event used for the following usecases,
 
@@ -428,7 +428,7 @@ The [SfListView.GroupExpanded](https://help.syncfusion.com/cr/cref_files/xamarin
 
 The [GroupExpandCollapseChangedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GroupExpandCollapseChangedEventHandler.html) of the `GroupExpanded` event provides the information about the expanded group and it has the following member.
 
-Groups - Gets a list of groups which are expanded.
+`Groups` - Gets a list of groups which are expanded.
 
 ### GroupCollapsing event 
 
@@ -436,9 +436,9 @@ The [SfListView.GroupCollapsing](https://help.syncfusion.com/cr/cref_files/xamar
 
 The [GroupExpandCollapseChangingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GroupExpandCollapseChangingEventHandler.html) of the `GroupCollapsing` event provides the information about the collapsing group and it contains the following member.
 
-Groups - Gets a list of groups which are being collapsed.
+`Groups` - Gets a list of groups which are being collapsed.
 
-Cancel – Decides whether to cancel the group collapsing.
+`Cancel` - Decides whether to cancel the group collapsing.
 
 You can cancel the group is being collapsed by using `GroupExpandCollapseChangingEventArgs.Cancel` of `GroupCollapsing` event.
 
@@ -468,11 +468,11 @@ The [SfListView.GroupCollapsed](https://help.syncfusion.com/cr/cref_files/xamari
  
 The [GroupExpandCollapseChangedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GroupExpandCollapseChangedEventHandler.html) of the `GroupCollapsed` event provides the information about collapsed group and it contains the following member.
 
-Groups - Gets a list of groups which are collapsed.
+`Groups` - Gets a list of groups which are collapsed.
 
 ## Stick group header
 
-SfListView allows you to stick the group header to view by enabling the property [SfListView.IsStickyGroupHeader](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsStickyGroupHeader.html). If `IsStickyGroupHeader` is true, the corresponding group header is in view until the last item of the group goes out of view on scrolling.
+To stick the group header to view can be achieved by enabling the property [SfListView.IsStickyGroupHeader](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsStickyGroupHeader.html). If `IsStickyGroupHeader` is true, the corresponding group header is in view until the last item of the group goes out of view on scrolling.
 
 N> When the `IsStickyGroupHeader` is set as true, [IsStickyHeader](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsStickyHeader.html) property will be changed to true because the header item can't be scrollable when the `IsStickyGroupHeader` is true. When the `IsStickyHeader` is set as false, if `IsStickyGroupHeader` is true then it will be changed to false because the group header item can't be sticky when the `IsStickyHeader` is true.
 
@@ -491,7 +491,7 @@ listView.IsStickyGroupHeader = true;
 ### Appearance customization
 
 The User Interface (UI) for group header items can be customized by using [SfListView.GroupHeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~GroupHeaderTemplate.html) property.
-The following code illustrates how to create the custom view for group header items and binding the [Key](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.Extensions.GroupResult~Key.html) to it.
+The following code illustrates how to customize the view for group header items and binding the [Key](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.Extensions.GroupResult~Key.html) to it.
 
 {% tabs %}
 {% highlight xaml %}
@@ -536,7 +536,7 @@ listView.GroupHeaderTemplate = new DataTemplate(() =>
 ### Expand collapse icon in group header
 
 Expand and collapse the group when tapping icon on group header item can be done by customizing the [GroupHeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~GroupHeaderTemplate.html) with the help of converter.
-The following code example illustrates how to perform custom grouping with expand collpase icon in group header .
+The following code example illustrates how to perform grouping with expand collpase icon in group header .
 
 {% tabs %}
 {% highlight xaml %}
@@ -655,7 +655,7 @@ listView.GroupHeaderTemplate = new DataTemplate(() =>
 {% highlight %}
 {% endtabs %}
 
-You can switch the expand or collapse group icon based on IsExpand property using the converter.
+You can switch the expand or collapse group icon based on `IsExpand` property using the converter.
 
 {% highlight c# %}
 public class BoolToImageConverter : IValueConverter
@@ -816,7 +816,7 @@ The following screenshot shows the output when checking items in group header. Y
 
 ### Changing group header appearance when expanding
 
-Background color of the [GroupHeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~GroupHeaderTemplate.html) is changed while expanding the particular group with the help of Converter as like below code example.  
+Background color of the [GroupHeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~GroupHeaderTemplate.html) can be changed while expanding the particular group with the help of Converter as like below code example.  
 
 {% tabs %}
 {% highlight xaml %}
@@ -875,7 +875,9 @@ You can download entire source code from [here](http://www.syncfusion.com/downlo
 
 ## Grouping along with sorting
 
-Sort the data can be done either in ascending or descending order by using [DataSource.SortDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~SortDescriptors.html) based on PropertyName and Direction. While adding DataSource.SortDescriptors along with [DataSource.GroupDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~GroupDescriptors.html) items binded under each group header arranges based on the property given to [ListSortDirection](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.ListSortDirection.html). After sorting all the groups with items inside the group header arranged based on [KeySelector](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~KeySelector.html) which returns the group key.
+To sort the data in ascending or descending order can be done by using [DataSource.SortDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~SortDescriptors.html) based on `PropertyName` and `Direction`. While adding DataSource.SortDescriptors along with [DataSource.GroupDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~GroupDescriptors.html) items binded under each group header arranges based on the property given to [ListSortDirection](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.ListSortDirection.html). After sorting all the groups with items inside the group header arranged based on [KeySelector](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~KeySelector.html) which returns the group key.
+
+The following code illustrates how to combine grouping along with sorting based on `PropertyName` and `Direction`
 
 {% highlight c# %}
 public GroupingPage()
@@ -959,8 +961,9 @@ You can download entire source code from [here](http://www.syncfusion.com/downlo
 
 ## Add item at specific index in a group
 
-Adding an item at specific index in a specific group can be done by using [KeySelector](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~KeySelector.html) property and [Key](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.Extensions.GroupResult~Key.html) value of the group by passing the underlying data into the parameter.
-The following code explains how items gets added in a group
+To add an item at specific index in a specific group by using [KeySelector](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~KeySelector.html) property and [Key](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.Extensions.GroupResult~Key.html) value of the group by passing the underlying data into the parameter.
+
+The following code illustrates how items gets added at specific index in a group
 
 {% highlight c# %}
 internal void GetGroupResult(object ItemData)

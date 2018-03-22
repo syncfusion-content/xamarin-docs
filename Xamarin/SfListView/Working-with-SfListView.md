@@ -183,7 +183,7 @@ private void ListView_ItemHolding(object sender, ItemHoldingEventArgs e)
 
 ### ItemAppearing
 
-The [ItemAppearing](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemAppearing_EV.html) event is raised when the items are appearing in the view on scrolling, loading and navigating from one page to another page. The [ItemAppearingEventArgs]((https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemAppearingEventArgs.html)) has the following members which provide the information of appearing Items.
+The [ItemAppearing](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemAppearing_EV.html) event is raised when the items are appearing in the view on scrolling, loading and navigating from one page to another page. The [ItemAppearingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemAppearingEventArgs.html) has the following members which provide the information of appearing Items.
 
 * **ItemData** - The underlying data associated with the appearing item
  

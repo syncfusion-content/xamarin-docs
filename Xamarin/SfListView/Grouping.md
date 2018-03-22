@@ -396,7 +396,7 @@ The [GroupExpandCollapseChangingEventArgs](https://help.syncfusion.com/cr/cref_f
 
 `Cancel` - Decides whether to cancel the group expansion.
 
-The `GroupExpanding` event used for the following usecases,
+The `GroupExpanding` event used for the following use cases,
 
 * To keep any one specific group alone in expand state by compare and collapse all other groups and expand the particular group.
 
@@ -536,7 +536,7 @@ listView.GroupHeaderTemplate = new DataTemplate(() =>
 ### Expand collapse icon in group header
 
 Expand and collapse the group when tapping icon on group header item can be done by customizing the [GroupHeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~GroupHeaderTemplate.html) with the help of converter.
-The following code example illustrates how to perform grouping with expand collpase icon in group header .
+The following code example illustrates how to perform grouping with expand collapse icon in group header .
 
 {% tabs %}
 {% highlight xaml %}

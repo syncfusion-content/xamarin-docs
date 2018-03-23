@@ -9,9 +9,9 @@ documentation: ug
 
 # Exporting
 
-SfDataGrid provides support for exporting the data to Excel with several customization options like custom appearance, excluding specific columns, excluding headers, setting custom row height, setting custom column width, etc. It also provides support for [Grouping](https://help.syncfusion.com/xamarin/sfdatagrid/getting-started#grouping), `Filtering` and [Sorting](https://help.syncfusion.com/xamarin/sfdatagrid/getting-started#sorting) when exporting.
+SfDataGrid provides support for exporting the data to Excel with several customization options like custom appearance, excluding specific columns, excluding headers, setting custom row height, setting custom column width, etc. It also provides support for [Grouping](https://help.syncfusion.com/xamarin/sfdatagrid/grouping), [Filtering](https://help.syncfusion.com/xamarin/sfdatagrid/filtering) and [Sorting](https://help.syncfusion.com/xamarin/sfdatagrid/sorting) when exporting.
 
-The following assemblies needs to be added for exporting to Excel file.
+The following assemblies needs to be added for exporting SfDataGrid to Excel file.
 
 <table>
 <tr>
@@ -35,7 +35,7 @@ The below code illustrates how to create and display a SfDataGrid in view.
     </Grid.RowDefinitions>
 
     <StackLayout Grid.Row="0" Orientation="Vertical">
-        <Button x:Name="Excel" Text="ExportExcel" Clicked ="Excel_Clicked" HeightRequest="50" />
+        <Button x:Name="Excel" Text="ExportExcel" Clicked ="ExportToExcel_Clicked" HeightRequest="50" />
     </StackLayout>
 
     <sfgrid:SfDataGrid x:Name="dataGrid"  
@@ -49,12 +49,12 @@ The below code illustrates how to create and display a SfDataGrid in view.
 
         <sfgrid:SfDataGrid.Columns>
             <sfgrid:GridTextColumn HeaderText="Order ID"  MappingName="OrderID"/>
-            <sfgrid:GridTextColumn HeaderText="FirstName" MappingName="FirstName"/>
+            <sfgrid:GridTextColumn HeaderText="First Name" MappingName="FirstName"/>
             <sfgrid:GridTextColumn HeaderText="Employee ID" MappingName="EmployeeID"/>
             <sfgrid:GridNumericColumn HeaderText="Freight" MappingName="Freight"/>
-            <sfgrid:GridTextColumn HeaderText="IsClosed" MappingName="IsClosed"/>
-            <sfgrid:GridTextColumn HeaderText="ShipCity" MappingName="ShipCity"/>
-            <sfgrid:GridDateTimeColumn HeaderText="ShippingDate" MappingName="ShippingDate" />
+            <sfgrid:GridTextColumn HeaderText="Is Closed" MappingName="IsClosed"/>
+            <sfgrid:GridTextColumn HeaderText="Ship City" MappingName="ShipCity"/>
+            <sfgrid:GridDateTimeColumn HeaderText="Shipping Date" MappingName="ShippingDate" />
         </sfgrid:SfDataGrid.Columns>
     </sfgrid:SfDataGrid>
 </Grid>
@@ -67,10 +67,10 @@ private void ExportToExcel_Clicked(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-You can export data to excel by using the [ExportToExcel](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingController~ExportToExcel.html) method by passing the SfDataGrid as an argument. The following code example illustrates exporting data to excel using the `ExportToExcel` method.
+You can export data to excel by using the [DataGridExcelExportingController.ExportToExcel](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingController~ExportToExcel.html) method by passing the SfDataGrid as an argument. The following code example illustrates exporting data to excel using the `ExportToExcel` method.
 
 {% highlight c# %}
-private void ExportToExcel(object sender, EventArgs e)
+private void ExportToExcel_Clicked(object sender, EventArgs e)
 {
     DataGridExcelExportingController excelExport = new DataGridExcelExportingController();
     var excelEngine = excelExport.ExportToExcel(this.dataGrid);
@@ -88,21 +88,21 @@ private void ExportToExcel(object sender, EventArgs e)
 
 ### Exporting Options
 
-You can also export data to excel with various customizing options while exporting the SfDataGrid by passing the grid and [DataGridExcelExportingOption](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption.html) as arguments to the `ExportToExcel` method. The following code example illustrates this.
+You can also export data to excel with various customizing options by passing the grid and [DataGridExcelExportingOption](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption.html) as arguments to the `ExportToExcel` method. The following code example illustrates this.
 
 {% highlight c# %}
-DataGridExcelExportingController excelExport = new DataGridExcelExportingController ();
-DataGridExcelExportingOption exportOption = new DataGridExcelExportingOption ();
-exportOption.ExportColumnWidth = false;
-exportOption.DefaultColumnWidth = 150;
-var excelEngine = excelExport.ExportToExcel (this.dataGrid, exportOption);
+DataGridExcelExportingController excelExport = new DataGridExcelExportingController ();
+DataGridExcelExportingOption exportOption = new DataGridExcelExportingOption ();
+exportOption.ExportColumnWidth = false;
+exportOption.DefaultColumnWidth = 150;
+var excelEngine = excelExport.ExportToExcel (this.dataGrid, exportOption);
 {% endhighlight %}
 
 SfDataGrid provides you with several properties in `DataGridExcelExportingOption` class to customize the grid while exporting it to excel.
 
 #### AllowOutlining
 
-SfDataGrid allows to export the data to excel with enable the option for group expand and collapse in excel sheet, if you export the data grid with grouping. This has been achieve by setting `AllowOutlining` as `true`. This property default value is false so you cannot able to expand and collapse the group in excel sheet.
+If you export the data grid with grouping applied, you can enable the group expand/collapse option in excel sheet, by setting [DataGridExcelExportingOption.AllowOutlining](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption~AllowOutlining.html) as `true`. This property's default value is false and hence you cannot expand/collapse the group in excel sheet by default.
 
 {% highlight c# %}
 DataGridExcelExportingOption option = new DataGridExcelExportingOption();
@@ -111,7 +111,7 @@ option.AllowOutlining = true;
 
 #### AllowSortingAndFiltering
 
-SfDataGrid allow you to export the data grid to excel with sorting and filter option enabled on column header in excel sheet by setting `DataGridExcelExportingOption.AllowSortingAndFiltering` as `true`. This property default value is false. 
+SfDataGrid allow you to export the data grid to excel with sorting and filter option enabled on column header in excel sheet by setting [DataGridExcelExportingOption.AllowSortingAndFiltering](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption~AllowSortingAndFiltering.html) as `true`. This property's default value is false.
 
 {% highlight c# %}
 DataGridExcelExportingOption option = new DataGridExcelExportingOption();
@@ -122,7 +122,7 @@ option.AllowSortingAndFiltering = true;
 
 #### ApplyGridStyle
 
-SfDataGrid allows to export the data with GridStyle by setting `ApplyGridStyle` as `true`. By default data has been export without the GridStyle. 
+SfDataGrid allows to export the data with the applied GridStyle by setting [DataGridExcelExportingOption.ApplyGridStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption~ApplyGridStyle.html) as `true`. By default data will be exported without the GridStyle.
 
 {% highlight c# %}
 DataGridExcelExportingOption option = new DataGridExcelExportingOption();
@@ -133,7 +133,7 @@ option.ApplyGridStyle = true;
 
 #### DefaultColumnWidth
 
-SfDataGrid allow you to customize the column width in excel file based on our requirement by using `DefaultColumnWidth` property. 
+SfDataGrid allow you to customize the column width in excel file based on your requirement by using [DataGridExcelExportingOption.DefaultColumnWidth](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption~DefaultColumnWidth.html) property. The `DefaultColumnWidth` value will be applied to all the columns in the excel sheet.
 
 {% highlight c# %}
 DataGridExcelExportingOption option = new DataGridExcelExportingOption();
@@ -142,7 +142,7 @@ option.DefaultColumnWidth = 100;
 
 #### DefaultRowHeight
 
-SfDataGrid allow you to customize the row height in excel file based on our requirement by using `DefaultRowHeight` property. 
+SfDataGrid allow you to customize the row height in excel file based on your requirement by using [DataGridExcelExportingOption.DefaultRowHeight](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption~DefaultRowHeight.html) property. The `DefaultRowHeight` value will be applied to all the rows in the excel sheet.
 
 {% highlight c# %}
 DataGridExcelExportingOption option = new DataGridExcelExportingOption();
@@ -153,7 +153,7 @@ option.DefaultRowHeight = 50;
 
 #### ExcludedColumns
 
-By default, all the columns (including hidden columns) in SfDataGrid will be exported to Excel. If you want to exclude some columns while exporting to excel, you can use `ExcludeColumns` property in [DataGridExcelExportingOption](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption.html).
+By default, all the columns (including hidden columns) in SfDataGrid will be exported to Excel. If you want to exclude particular columns while exporting to excel, you can add those columns to the [DataGridExcelExportingOption.ExcludeColumns](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption~ExcludedColumns.html) property in [DataGridExcelExportingOption](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption.html) list.
 
 {% highlight c# %}
 DataGridExcelExportingOption option = new DataGridExcelExportingOption();
@@ -167,7 +167,7 @@ option.ExcludedColumns = list;
 
 ### ExportColumnWidth
 
-By default data grid will be export to excel with excel sheet default column width. But you can also export the data grid to excel with same SfDataGrid column width value in excel file column width also by setting `ExportColumnWidth` as `true`. ExportColumnWidth property default value is false.
+By default data grid columns will be exported to excel with the value of the `DataGridExcelExportingOption.DefaultColumnWidth`. But you can also export the data grid to excel with the exact column widths from the SfDataGrid by setting [DataGridExcelExportingOption.ExportColumnWidth](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption~ExportColumnWidth.html) as `true`. `ExportColumnWidth` property's default value is false.
 
 {% highlight c# %}
 DataGridExcelExportingOption option = new DataGridExcelExportingOption();
@@ -176,7 +176,7 @@ option.ExportColumnWidth = true;
 
 ### ExportRowHeight
 
-By default data grid will be export to excel with excel sheet default row height. But you can also export the data grid to excel with same SfDataGrid RowHeight value in excel sheet row height also by setting `ExportRowHeight` as `true`. ExportRowHeight property default value is false.
+By default data grid rows will be exported to excel with the value of the `DataGridExcelExportingOption.DefaultRowHeight`. But you can also export the data grid to excel with the exact row heights from the SfDataGrid by setting [DataGridExcelExportingOption.ExportRowHeight](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption~ExportRowHeight.html) as `true`. `ExportRowHeight` property's default value is false.
 
 {% highlight c# %}
 DataGridExcelExportingOption option = new DataGridExcelExportingOption();
@@ -187,7 +187,7 @@ option.ExportRowHeight = true;
 
 #### ExcelVersion
 
-SfDataGrid allow to export the data to excel with different version based on our requirement by using `ExcelVersion` property.
+SfDataGrid allows you to export the data to excel in specific versions based on your requirement by using [DataGridExcelExportingOption.ExcelVersion](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption~ExcelVersion.html) property.
 
 {% highlight c# %}
 DataGridExcelExportingOption option = new DataGridExcelExportingOption();
@@ -196,7 +196,7 @@ option.ExcelVersion = Syncfusion.XlsIO.ExcelVersion.Excel2013;
 
 #### ExportGroups
 
-By default, all the groups in data grid will be exported to Excel sheet. If you want to export the data grid without Groups, you need to set `ExportGroups` as `false`.
+By default, all the groups in data grid will be exported to Excel sheet. If you want to export the data grid without Groups, set the [DataGridExcelExportingOption.ExportGroups](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption~ExportGroups.html) property as `false`.
 
 {% highlight c# %}
 DataGridExcelExportingOption option = new DataGridExcelExportingOption();
@@ -211,7 +211,7 @@ option.ExportGroups = true;
 
 #### ExportHeader
 
-By default, column header will be exported to Excel sheet. If you want to export without column header, you need to set `ExportHeader` as `false`.
+By default, column headers will be exported to Excel sheet. If you want to export the SfDataGrid without the column headers, set the [DataGridExcelExportingOption.ExportHeader](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption~ExportHeader.html) as `false`.
 
 {% highlight c# %}
 DataGridExcelExportingOption option = new DataGridExcelExportingOption();
@@ -222,7 +222,7 @@ option.ExportHeader = false;
 
 #### ExportTableSummary
 
-By default, table summaries in data grid will be exported to excel. If you want to export without table summaries, you need to set `ExportTableSummary` property as `false`.
+By default, the table summaries in data grid will be exported to excel. If you want to export SfDataGrid without the table summaries, set the [DataGridExcelExportingOption.ExportTableSummary](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption~ExportTableSummary.html) property as `false`.
 
 {% highlight c# %}
 DataGridExcelExportingOption option = new DataGridExcelExportingOption();
@@ -237,7 +237,7 @@ option.ExportTableSummary = true;
 
 #### BottomTableSummaryStyle
 
-SfDataGrid provides support to export the bottom TableSummary with custom style by using `BottomTableSummaryStyle` property.
+SfDataGrid provides support to export the bottom TableSummary with custom style by using [DataGridExcelExportingOption.BottomTableSummaryStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption~BottomTableSummaryStyle.html) property.
 
 {% highlight c# %}
 DataGridExcelExportingOption option = new DataGridExcelExportingOption();
@@ -253,7 +253,7 @@ option.BottomTableSummaryStyle = new ExportCellStyle()
 
 #### GroupCaptionStyle
 
-SfDataGrid provides support to export the group caption text with custom style by using `GroupCaptionStyle` property.
+SfDataGrid provides support to export the GroupCaptionSummaries with custom style by using [DataGridExcelExportingOption.GroupCaptionStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption~GroupCaptionStyle.html) property.
 
 {% highlight c# %}
 DataGridExcelExportingOption option = new DataGridExcelExportingOption();
@@ -269,7 +269,7 @@ option.GroupCaptionStyle = new ExportCellStyle()
 
 #### HeaderStyle
 
-SfDataGrid allow to export the column header with custom style by using `HeaderStyle` property.
+SfDataGrid allow to export the column headers with custom style by using [DataGridExcelExportingOption.HeaderStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption~HeaderStyle.html) property.
 
 {% highlight c# %}
 DataGridExcelExportingOption option = new DataGridExcelExportingOption();
@@ -285,7 +285,7 @@ option.HeaderStyle = new ExportCellStyle()
 
 #### RecordStyle
 
-SfDataGrid allow to export the records with custom style by using `RecordStyle` property.
+SfDataGrid allow to export the records with custom style by using [DataGridExcelExportingOption.RecordStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption~RecordStyle.html) property.
 
 {% highlight c# %}
 DataGridExcelExportingOption option = new DataGridExcelExportingOption();
@@ -301,7 +301,7 @@ option.RecordStyle = new ExportCellStyle()
 
 #### TopTableSummaryStyle
 
-SfDataGrid provides support to export the top TableSummary with custom style by using `TopTableSummaryStyle` property.
+SfDataGrid provides support to export the top TableSummary with custom style by using [DataGridExcelExportingOption.TopTableSummaryStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption~TopTableSummaryStyle.html) property.
 
 {% highlight c# %}
 DataGridExcelExportingOption option = new DataGridExcelExportingOption();
@@ -317,7 +317,7 @@ option.TopTableSummaryStyle = new ExportCellStyle()
 
 #### StartColumnIndex
 
-By default SfDataGrid will be export to excel from the column index value 0. But it allow the user to export the data grid start column index in excel sheet based on our requirement by using `StartColumnIndex` property.
+By default the exported SfDataGrid will start from the 0th column in the Excel sheet. But you can specify the start column in the excel sheet based on your requirement by using [DataGridExcelExportingOption.StartColumnIndex](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption~StartColumnIndex.html) property.
 
 {% highlight c# %}
 DataGridExcelExportingOption option = new DataGridExcelExportingOption();
@@ -328,7 +328,7 @@ option.StartColumnIndex = 4;
 
 #### StartRowIndex
 
-By default SfDataGrid will be export to excel from the row index value 0. But it allow the user to export the data grid start row index in excel sheet based on our requirement by using `StartRowIndex` property.
+By default the exported SfDataGrid will start from the 0th row in the Excel sheet. But you can specify the start row in the excel sheet based on your requirement by using [DataGridExcelExportingOption.StartRowIndex](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption~StartRowIndex.html) property.
 
 {% highlight c# %}
 DataGridExcelExportingOption option = new DataGridExcelExportingOption();
@@ -339,7 +339,7 @@ option.StartRowIndex = 10;
 
 #### ExportAllPages
 
-When you are using SfDataPager inside the SfDataGrid and while exporting to excel, it will be export only the current page. Also you can export all the pages by setting the `ExportAllPages` to `true`. The default value for this property is false.
+While exporting to excel, when you are using SfDataPager inside the SfDataGrid, by default it will be export only the current page. However you can export all the pages by setting the [DataGridExcelExportingOption.ExportAllPages](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption~ExportAllPages.html) to `true`. The default value for this property is false.
 
 {% highlight c# %}
 DataGridExcelExportingOption option = new DataGridExcelExportingOption();
@@ -354,7 +354,7 @@ option.ExportAllPages = true;
 
 ### Events
 
-The SfDataGrid provides you the following events for exporting to excel:
+The SfDataGrid provides you the following events when exporting to excel:
 
 * [RowExporting](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingController~RowExporting_EV.html) – This event is raised while exporting a row at the execution time before the row is exported.
 * [CellExporting](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingController~CellExporting_EV.html) – This event is raised while exporting a cell at the execution time before the cell is exported.
@@ -372,20 +372,20 @@ You can use this event to customize the properties of the grid rows that are exp
 
 {% highlight c# %}
 //HandlingRowExportingEvent for exporting to excel
-DataGridExcelExportingController excelExport = new DataGridExcelExportingController ();
-excelExport.RowExporting += excelExport_RowExporting; 
+DataGridExcelExportingController excelExport = new DataGridExcelExportingController ();
+excelExport.RowExporting += excelExport_RowExporting; 
 
-void excelExport_RowExporting (object sender, DataGridRowExcelExportingEventArgs e)
+void excelExport_RowExporting (object sender, DataGridRowExcelExportingEventArgs e)
 {
-    if (e.RowType == ExportRowType.Record) {
-        if ((e.Record.Data as OrderInfo).IsClosed)
-            e.Range.CellStyle.ColorIndex = Syncfusion.XlsIO.ExcelKnownColors.Yellow;
+    if (e.RowType == ExportRowType.Record) {
+        if ((e.Record.Data as OrderInfo).IsClosed)
+            e.Range.CellStyle.ColorIndex = Syncfusion.XlsIO.ExcelKnownColors.Yellow;
         else
-            e.Range.CellStyle.ColorIndex = Syncfusion.XlsIO.ExcelKnownColors.LightGreen;
+            e.Range.CellStyle.ColorIndex = Syncfusion.XlsIO.ExcelKnownColors.LightGreen;
     }
 
-    if (e.RowType == ExportRowType.CaptionSummary) {
-        e.Range.CellStyle.ColorIndex = Syncfusion.XlsIO.ExcelKnownColors.Grey_25_percent;
+    if (e.RowType == ExportRowType.CaptionSummary) {
+        e.Range.CellStyle.ColorIndex = Syncfusion.XlsIO.ExcelKnownColors.Grey_25_percent;
     }
 }
 {% endhighlight %}
@@ -407,14 +407,14 @@ You can use this event to customize the properties of the grid cells that are ex
 
 {% highlight c# %}
 //HandlingCellExportingEvent for exporting to Excel
-DataGridExcelExportingController excelExport = new DataGridExcelExportingController ();
-excelExport.CellExporting += excelExport_CellExporting;  
+DataGridExcelExportingController excelExport = new DataGridExcelExportingController ();
+excelExport.CellExporting += excelExport_CellExporting;  
 
-void excelExport_CellExporting(object sender, DataGridCellExcelExportingEventArgs e)
+void excelExport_CellExporting(object sender, DataGridCellExcelExportingEventArgs e)
 {
-    if (e.CellType == ExportCellType.HeaderCell) {
-        e.Range.CellStyle.ColorIndex = Syncfusion.XlsIO.ExcelKnownColors.Blue;
-        e.Range.CellStyle.PatternColorIndex = Syncfusion.XlsIO.ExcelKnownColors.White;
+    if (e.CellType == ExportCellType.HeaderCell) {
+        e.Range.CellStyle.ColorIndex = Syncfusion.XlsIO.ExcelKnownColors.Blue;
+        e.Range.CellStyle.PatternColorIndex = Syncfusion.XlsIO.ExcelKnownColors.White;
         e.Range.CellStyle.BeginUpdate();
         e.Range.CellStyle.Borders.LineStyle = Syncfusion.XlsIO.ExcelLineStyle.Dash_dot;
         e.Range.CellStyle.Borders[ExcelBordersIndex.DiagonalDown].LineStyle = ExcelLineStyle.Dash_dot;
@@ -423,9 +423,9 @@ void excelExport_CellExporting(object sender, DataGridCellExcelExportingEvent
         e.Range.CellStyle.EndUpdate();
     }
 
-    if (e.CellType == ExportCellType.RecordCell) {
-        e.Range.CellStyle.ColorIndex = Syncfusion.XlsIO.ExcelKnownColors.Yellow;
-        e.Range.CellStyle.PatternColorIndex = Syncfusion.XlsIO.ExcelKnownColors.Black;
+    if (e.CellType == ExportCellType.RecordCell) {
+        e.Range.CellStyle.ColorIndex = Syncfusion.XlsIO.ExcelKnownColors.Yellow;
+        e.Range.CellStyle.PatternColorIndex = Syncfusion.XlsIO.ExcelKnownColors.Black;
         e.Range.CellStyle.BeginUpdate();
         e.Range.CellStyle.Borders.LineStyle = Syncfusion.XlsIO.ExcelLineStyle.Dash_dot;
         e.Range.CellStyle.Borders[ExcelBordersIndex.DiagonalDown].LineStyle = ExcelLineStyle.Dash_dot;
@@ -434,9 +434,9 @@ void excelExport_CellExporting(object sender, DataGridCellExcelExportingEvent
         e.Range.CellStyle.EndUpdate();
     }
 
-    if (e.CellType == ExportCellType.GroupCaptionCell) {
-        e.Range.CellStyle.ColorIndex = Syncfusion.XlsIO.ExcelKnownColors.Grey_25_percent;
-        e.Range.CellStyle.PatternColorIndex = Syncfusion.XlsIO.ExcelKnownColors.Blue;
+    if (e.CellType == ExportCellType.GroupCaptionCell) {
+        e.Range.CellStyle.ColorIndex = Syncfusion.XlsIO.ExcelKnownColors.Grey_25_percent;
+        e.Range.CellStyle.PatternColorIndex = Syncfusion.XlsIO.ExcelKnownColors.Blue;
         e.Range.CellStyle.BeginUpdate();
         e.Range.CellStyle.Borders.LineStyle = Syncfusion.XlsIO.ExcelLineStyle.Dash_dot;
         e.Range.CellStyle.Borders[ExcelBordersIndex.DiagonalDown].LineStyle = ExcelLineStyle.Dash_dot;
@@ -451,7 +451,7 @@ void excelExport_CellExporting(object sender, DataGridCellExcelExportingEvent
 
 #### Custom Borders
 
-SfDataGrid allow to export the data to excel with custom borders style in excel sheet. This has been achieve by handling `CellExporting` event. 
+SfDataGrid allow to export the data to excel with custom borders style in excel sheet. This can be achieved by handling `CellExporting` event. Refer the below code snippet to customize the border style.
 
 {% highlight c# %}
 private void ExcelExport_CellExporting(object sender, DataGridCellExcelExportingEventArgs e)

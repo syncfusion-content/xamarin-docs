@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Download and Installation in Windows | Xamarin Forms | Syncfusion
-description: Download and Installation in Windows
+title: NuGet Packages | Xamarin Forms | Syncfusion
+description: NuGet Packages
 platform: xamarin
-control: Download and Installation
+control: NuGet Packages
 documentation: ug
 ---
 
@@ -14,6 +14,12 @@ NuGet is a package manager for the .NET framework. The NuGet client tools simpli
 The Syncfusion Xamarin components NuGet packages are available in both [NuGet gallery site](https://www.nuget.org/profiles/SyncfusionInc) and [Syncfusion private NuGet site](http://nuget.syncfusion.com/package/xamarin).
 > Note: From version 15.4.0.17 or later, the Syncfusion Xamarin NuGet packages are published in [NuGet gallery site](https://www.nuget.org/profiles/SyncfusionInc).
 
+
+### Xamarin.Forms
+
+### Xamarin.Android
+
+### Xamarin.IOS
 
 ## Get the Syncfusion NuGet feed URL
 

@@ -841,9 +841,9 @@ namespace Grouping
 
 You can download entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Groupheader_appearance826922341)
 
-## How to 
+## How To 
 
-### Group an item along with sorting
+### Group an Item Along with Sorting
 
 Group the items of underlying collection along with sorting by adding the [DataSource.GroupDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~GroupDescriptors.html) and the [DataSource.SortDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~SortDescriptors.html) with required properties.
 
@@ -867,7 +867,7 @@ public GroupingPage()
 {% endhighlight %}
 {% endtabs %}
 
-### Allow to select only one item in a group at a time
+### Allow to Select Only One Item in a Group at a Time
 
 To select only one item in a group at a time, use the [ItemSelectionChangingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemSelectionChangingEventArgs.html) event. If more than one item in the same group gets selected, already selected item will be removed from ListView’s SelectedItems. 
 
@@ -931,7 +931,7 @@ if (selectedItems.Count > 0)
 
 You can download entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/One_item_in_group-1968064931).
 
-### Add an item at the specific index in a group
+### Add an Item at the Specific Index in a Group
 
 The SfListView allows adding an item at the specific index in a group by finding the group with the help of [Key](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.Extensions.GroupResult~Key.html) value of the group.
 

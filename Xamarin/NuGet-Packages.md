@@ -15,12 +15,6 @@ The Syncfusion Xamarin components NuGet packages are available in both [NuGet ga
 > Note: From version 15.4.0.17 or later, the Syncfusion Xamarin NuGet packages are published in [NuGet gallery site](https://www.nuget.org/profiles/SyncfusionInc).
 
 
-### Xamarin.Forms
-
-### Xamarin.Android
-
-### Xamarin.IOS
-
 ## Get the Syncfusion NuGet feed URL
 
 ### NuGet Gallery site feed URL

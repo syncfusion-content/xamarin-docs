@@ -2,18 +2,22 @@ node('content')
 { 
 timestamps
   {
+  
+  def Content="";
+		env.PATH = "${ProgramFiles}"+"\\Git\\mingw64\\bin;${env.PATH}"
+
      timeout(time: 7200000, unit: 'MILLISECONDS') {
-String platform='Xamarin';
+    String platform='Xamarin';
    try
 	{   
- 	//Clone scm repository in Workspace source directory
+		//Clone scm repository in Workspace source directory
 		stage ('Checkout')   
 	    { 
 	    dir('Spell-Checker') 
            {
 		     checkout scm
-		     
-		      //get the changelog by using git difference command
+			 
+			 //get the changelog by using git difference command
 			 
 			 String ChangeDetails = bat returnStdout: true, script: 'git diff --name-only '+env.gitlabSourceBranch+'..origin/'+env.gitlabTargetBranch
 			 
@@ -37,7 +41,9 @@ String platform='Xamarin';
 	  checkout([$class: 'GitSCM', branches: [[name: '*/development']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'ug_spellchecker']], submoduleCfg: [], userRemoteConfigs: [[credentialsId: env.gitlabCredentialId, url: 'https://gitlab.syncfusion.com/content/ug_spellchecker.git']]])
 		 
 	  }
+	  
 	 
+	
 	
     catch(Exception e)
     {
@@ -51,7 +57,7 @@ if(currentBuild.result != 'FAILURE')
 	{
 	    gitlabCommitStatus("Build")
 		{
-		bat 'powershell.exe -ExecutionPolicy ByPass -File '+env.WORKSPACE+"/ug_spellchecker/build.ps1 -Script "+env.WORKSPACE+"/ug_spellchecker/build.cake -Target build -Platform \""+platform+"\" -Branch "+env.gitlabSourceBranch
+		bat 'powershell.exe -ExecutionPolicy ByPass -File '+env.WORKSPACE+"/ug_spellchecker/build.ps1 -Script "+env.WORKSPACE+"/ug_spellchecker/build.cake -Target build -Platform \""+platform+"\" -Branch "+'"'+env.gitlabSourceBranch+'"'
 	 	}
     }
 	 catch(Exception e) 
@@ -68,7 +74,6 @@ if(currentBuild.result != 'FAILURE')
     { 		
          archiveArtifacts artifacts: 'cireports/', excludes: null 	 
     }
-	    step([$class: 'WsCleanup'])	
+	    step([$class: 'WsCleanup'])	}
 	    }
-	}
 }

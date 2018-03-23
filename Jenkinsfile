@@ -38,7 +38,6 @@ String platform='Xamarin';
 		 
 	  }
 	 
-	}
 	
     catch(Exception e)
     {

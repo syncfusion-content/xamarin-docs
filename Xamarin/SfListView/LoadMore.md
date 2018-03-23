@@ -452,7 +452,7 @@ public partial class MainPage : ContentPage
       var collection = new Message();
       collection.Text = ViewModel.MessageText[r.Next(0, ViewModel.MessageText.Count() - 1)];
       collection.IsIncoming = i % 2 == 0 ? true : false;
-      collection.MessagDateTime = DateTime.Now.ToString();
+      collection.MessageDateTime = DateTime.Now.ToString();
       ViewModel.Messages.Insert(0, collection);
     }
     ListView.DataSource.EndInit();
@@ -549,7 +549,7 @@ public partial class MainPage : ContentPage
       var collection = new Message();
       collection.Text = ViewModel.MessageText[r.Next(0, ViewModel.MessageText.Count() - 1)];
       collection.IsIncoming = i % 2 == 0 ? true : false;
-      collection.MessagDateTime = DateTime.Now.ToString();
+      collection.MessageDateTime = DateTime.Now.ToString();
       ViewModel.Messages.Insert(0, collection);
     }
     ListView.DataSource.EndInit();

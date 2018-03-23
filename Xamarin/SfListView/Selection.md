@@ -90,7 +90,7 @@ W> If you set any item which is not available in `SfListView.ItemsSource` to `Sf
 
 To customize the selection background color for the selected items by using [SfListView.SelectedItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItemTemplate.html) even when the color is set to the [SfListView.ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html).
 
-To differentiate the customization of the selected item, `Gray` color is set to the `SfListView.ItemTemplate` and the `RoaylBlue` color is set to the `SfListView.SelectedItemTemplate`in the below code.
+To differentiate the customization of the selected item, `Gray` color is set to the `SfListView.ItemTemplate` and the `RoyalBlue` color is set to the `SfListView.SelectedItemTemplate`in the below code.
 
 {% tabs %}
 {% highlight xaml %}

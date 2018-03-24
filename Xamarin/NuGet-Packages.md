@@ -12,7 +12,8 @@ documentation: ug
 NuGet is a package manager for the .NET framework. The NuGet client tools simplify the process of installing and upgrading packages. This can be used to automatically add files and references to your Visual Studio projects.
 
 The Syncfusion Xamarin components NuGet packages are available in both [NuGet gallery site](https://www.nuget.org/profiles/SyncfusionInc) and [Syncfusion private NuGet site](http://nuget.syncfusion.com/package/xamarin).
-> Note: From version 15.4.0.17 or later, the Syncfusion Xamarin NuGet packages are published in [NuGet gallery site](https://www.nuget.org/profiles/SyncfusionInc).
+
+N> From version 15.4.0.17 or later, the Syncfusion Xamarin NuGet packages are published in [NuGet gallery site](https://www.nuget.org/profiles/SyncfusionInc).You can use the Syncfusion Xamarin NuGet packages without installing the Essential Studio or Xamarin platform installation to implement the Syncfusion Xamarin controls.
 
 
 ## Get the Syncfusion NuGet feed URL
@@ -83,10 +84,8 @@ You should get the private Syncfusion Xamarin NuGet feed URL to install or upgra
 ### Using NuGet Package Manager
 
 The NuGet Package Manager can be used to search and install NuGet packages in the Visual Studio solution or project:
-1.	On the **Tools**, menu, NuGet **Package Manager | Manage NuGet Packages for Solution...**
-
+1.	On the **Tools**, menu, NuGet `Package Manager | Manage NuGet Packages for Solution...`
     ![](NuGet_Packages_Images/img6.png)
-
     Alternatively, right-click on the project/solution in Solution Explorer tab, and choose **Manage NuGet Packages…**
 
 2.	By default, the NuGet.org package is selected in the **Package source** drop-down. Select your appropriate feed name that you configured. 
@@ -117,7 +116,7 @@ To reference the Syncfusion Xamarin component using the Package Manager Console 
     **For example:**
 
     ~~~
-    # install specified package in default project
+    #install specified package in default project
     Install-Package Syncfusion.Xamarin.SfChart
 
     #install specified package in default project with specified package source
@@ -148,7 +147,7 @@ The NuGet Command Line Interface (CLI), nuget.exe, provides the full extent of N
 ### Configure NuGet feed URL 
 
 1.	Download the latest NuGet CLI from [here](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
-    > Note: To update the existing nuget.exe to latest version use the following command:
+    N> To update the existing nuget.exe to latest version use the following command:
 
     ~~~
     nuget update -self
@@ -165,6 +164,7 @@ The NuGet Command Line Interface (CLI), nuget.exe, provides the full extent of N
     ~~~
 
     **For example:**
+
     ~~~
     #For Windows platform
     nuget.exe Sources Add –Name “Syncfusion Source” –Source “http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin”
@@ -176,6 +176,7 @@ The NuGet Command Line Interface (CLI), nuget.exe, provides the full extent of N
 ### NuGet installation
 
 Download and install the required NuGet packages to a project specified in the package.config. 
+
 ~~~
 #install specified package in default project from specified package source for Windows Platform 
 nuget.exe install <Package name | ConfigFilePath > <Options>
@@ -184,9 +185,10 @@ nuget.exe install <Package name | ConfigFilePath > <Options>
 mono nuget.exe install <Package name | ConfigFilePath > <Options>
 ~~~
 
-> Note: <configFilePath> is optional. This identifies the packages.config or solutions file that lists the packages utilized in the project. 
+N> configPath is optional. This identifies the packages.config or solutions file that lists the packages utilized in the project. 
 
 **For example:**
+
 ~~~
 #install specific package for windows 
 nuget.exe install “Syncfusion.Xamarin.Calculate”
@@ -194,16 +196,16 @@ nuget.exe install “Syncfusion.Xamarin.Calculate”
 #install all package which mention in package.config path for windows 
 nuget.exe install “C:\Users\SyncfusionApplication\package.config”
 
-# install specific Syncfusion NuGet package with Syncfusion Xamarin NuGet feed for windows 
+#install specific Syncfusion NuGet package with Syncfusion Xamarin NuGet feed for windows 
 nuget.exe install “Syncfusion.Xamarin.Calculate ”  –Source “http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin”
 
-# install specific package for Mac and Linux 
+#install specific package for Mac and Linux 
 mono nuget.exe install “Syncfusion.Xamarin.Calculate”
 
 #install all package which mention in package.config path for Mac and Linux 
 mono nuget.exe install “C:\Users\SyncfusionApplication\package.config”
 
-# install specific Syncfusion NuGet package with Syncfusion Xamarin NuGet feed for Mac and Linux 
+#install specific Syncfusion NuGet package with Syncfusion Xamarin NuGet feed for Mac and Linux 
 mono nuget.exe install “Syncfusion.Xamarin.Calculate ”  –Source “http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin”
 ~~~
 
@@ -213,7 +215,7 @@ mono nuget.exe install “Syncfusion.Xamarin.Calculate ”  –Source “http://
 
 NuGet packages can be updated to their specific version or latest version available in the Visual Studio solution or project:
 
-1. On the **Tools** menu, **NuGet Package Manager | Manage NuGet Packages for Solution...**
+1. On the **Tools** menu, `NuGet Package Manager | Manage NuGet Packages for Solution...`
 Alternatively, right-click on project/solution in the Solution Explorer tab, and choose **Manage NuGet Packages…**
 
 2. Select the **Updates** tab to see the packages available for update from the desired package sources. Select the required packages and the specific version from the dropdown, and click the **Update** button.
@@ -228,7 +230,7 @@ Using **Update** context menu from Visual Studio for Mac application, NuGet pack
 
 2.	This will update the NuGet package to the latest version. You can double-click Add packages and choose the specific version. You have do this all the projects such as PCL, XForms.Droid, and XForms.iOS.
 
-> Note: To update all the projects from solution, use update option in the solution level. 
+N> To update all the projects from solution, use update option in the solution level. 
 
 ### Using Package Manger Console
 
@@ -270,7 +272,8 @@ To update the installed Syncfusion Xamarin NuGet packages using the Package Mana
 Using the NuGet CLI, all the NuGet packages in the project can be updated to the available latest version: 
 
 1.	Download the latest NuGet CLI from [here](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
-    > Note: To update the existing nuget.exe to latest version use the following command: 
+    N> To update the existing nuget.exe to latest version use the following command: 
+
     ~~~
     nuget update -self
     ~~~
@@ -285,9 +288,10 @@ Using the NuGet CLI, all the NuGet packages in the project can be updated to the
     nuget update -Source <Source Location> [optional]
     ~~~      
 
-    > Note: <configFilePath> is optional. This identifies the packages.config or solutions file lists the packages utilized in the project. 
+    N> configPath is optional. This identifies the packages.config or solutions file lists the packages utilized in the project. 
 	
     **For example:**
+
     ~~~          
     #update all NuGet packages from config file
     nuget update “C:\Users\SyncfusionApplication\package.config”
@@ -296,7 +300,7 @@ Using the NuGet CLI, all the NuGet packages in the project can be updated to the
     nuget update -Source “http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin”
     ~~~
 
-    > Note: Update command is not working as expected in Mono (Mac and Linux) and projects using PackageReference format.
+    N> Update command is not working as expected in Mono (Mac and Linux) and projects using PackageReference format.
    
 
 

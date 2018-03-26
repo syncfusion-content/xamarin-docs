@@ -53,8 +53,7 @@ chart.Legend = new ChartLegend();
 
 {% highlight xaml %}
 
- <chart:SfChart x:Name="chart">
-
+<chart:SfChart x:Name="chart">
 
         <chart:SfChart.Legend>
 
@@ -66,11 +65,11 @@ chart.Legend = new ChartLegend();
                         
                     </chart:ChartLegendLabelStyle>
                     
-                </chart:ChartLegend.LabelStyle>
+             </chart:ChartLegend.LabelStyle>
 
-            </chart:ChartLegend>
+          </chart:ChartLegend>
 
-        </chart:SfChart.Legend>
+</chart:SfChart.Legend>
 
 {% endhighlight %}
 
@@ -151,7 +150,7 @@ Following properties are used to define and customize the legend title.
 
 {% highlight xaml %}
 
-  <chart:SfChart.Legend>
+<chart:SfChart.Legend>
 
             <chart:ChartLegend>
 
@@ -166,7 +165,7 @@ Following properties are used to define and customize the legend title.
 
             </chart:ChartLegend>
 
-        </chart:SfChart.Legend>
+</chart:SfChart.Legend>
 
 {% endhighlight %}
 

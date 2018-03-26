@@ -32,26 +32,26 @@ and this can be categorized into the following types,
 
 {% highlight C# %}
 
-            editor.ToolbarSettings.ToolbarItems.Add(new HeaderToolbarItem() { Icon = ImageSource.FromResource("ImgeditForms.share.png"), Text="Share" });
+            editor.ToolbarSettings.ToolbarItems.Add(new HeaderToolbarItem() { Icon = ImageSource.FromResource("imageeditor.share.png"), Text="Share" });
 
 {% endhighlight %}
 
-### Adding FootertoolbarItem   
+### Adding FooterToolbarItem   
 
- `FooterToolbarItem` will be arranged on bottom of the image editor and you can customize footertoolbarItem with the help of Icon and Text along with subitems.
+ `FooterToolbarItem` will be arranged on bottom of the image editor and you can customize footertoolbarItem with the help of Icon and Text along with sub items.
 
-Refer to the below code snippet to customize FootertoolbarItem,
+Refer to the below code snippet to customize footer toolbar item,
 
 {% highlight C# %}
 
-            editor.ToolbarSettings.ToolbarItems.Add(new FooterToolbarItem() { Icon = ImageSource.FromResource("ImgeditForms.delete.png"), Text="Delete" });
-            editor.ToolbarSettings.ToolbarItems.Add(new FooterToolbarItem() { Icon = ImageSource.FromResource("ImgeditForms.more.png"), Text="More" });
+            editor.ToolbarSettings.ToolbarItems.Add(new FooterToolbarItem() { Icon = ImageSource.FromResource("imageeditor.delete.png"), Text="Delete" });
+            editor.ToolbarSettings.ToolbarItems.Add(new FooterToolbarItem() { Icon = ImageSource.FromResource("imageeditor.more.png"), Text="More" });
 
 {% endhighlight %}
 
 ### Adding SubItems to the FooterToolbarItem
 
-`SubItems` only applicable for `FooterToolbarItem` and it represents grouped action of respective footer toolbar item. SubItems will be arranged above the footer toolbar item layout and you can also customize subitems appearance as like main toolbar items. 
+`SubItems` only applicable for `FooterToolbarItem` and it represents grouped action of respective footer toolbar item. SubItems will be arranged above the footer toolbar item layout and you can also customize sub items appearance as like main toolbar items. 
 
 Refer to the below code snippet to customize sub items of footer toolbar item,
 
@@ -60,14 +60,14 @@ Refer to the below code snippet to customize sub items of footer toolbar item,
  	editor.ToolbarSettings.ToolbarItems.Add(new FooterToolbarItem()
             {
                 Text = "More",
-                Icon = ImageSource.FromResource("ImgeditForms.Image.more.png"),
+                Icon = ImageSource.FromResource("imageeditor.Image.more.png"),
                 SubItems = new ObservableCollection<Syncfusion.SfImageEditor.XForms.ToolbarItem>()
                 {
                    new ToolbarItem() {
-                Icon = ImageSource.FromResource("ImgeditForms.Image.download.png")
+                Icon = ImageSource.FromResource("imageeditor.Image.download.png")
                 },
                    new ToolbarItem() {
-                Icon = ImageSource.FromResource("ImgeditForms.Image.share.png")
+                Icon = ImageSource.FromResource("imageeditor.Image.share.png")
                 } }
             });
 
@@ -80,7 +80,7 @@ You can change icon and text value dynamically for any of already added toolbar 
 {% highlight C# %}
 
 editor.ToolbarSettings.ToolbarItems[5].Text = "new item";
-editor.ToolbarSettings.ToolbarItems[3].Icon = ImageSource.FromResource("ImgeditForms.Image.jpg");
+editor.ToolbarSettings.ToolbarItems[3].Icon = ImageSource.FromResource("imageeditor.Image.jpg");
 
 {% endhighlight %}
 

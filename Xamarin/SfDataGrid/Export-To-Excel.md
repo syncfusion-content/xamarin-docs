@@ -194,7 +194,7 @@ option.ExportColumnWidth = true;
 
 ### ExportRowHeight
 
-By default, the data grid rows will be exported to Excel with the value of the `DataGridExcelExportingOption.DefaultRowHeight` but, you can also export the data grid to excel with the exact row heights by setting the [DataGridExcelExportingOption.ExportRowHeight](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption~ExportRowHeight.html) to `true`. The defualt value of `ExportRowHeight` property is false.
+By default, the data grid rows will be exported to Excel with the value of the `DataGridExcelExportingOption.DefaultRowHeight` but, you can also export the data grid to excel with the exact row heights by setting the [DataGridExcelExportingOption.ExportRowHeight](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption~ExportRowHeight.html) to `true`. The default value of `ExportRowHeight` property is false.
 
 {% tabs %}
 {% highlight c# %}

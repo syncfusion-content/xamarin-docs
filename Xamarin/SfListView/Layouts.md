@@ -57,13 +57,15 @@ listView.LayoutManager = new GridLayout() { SpanCount = 2 };
 {% endhighlight%}
 {% endtabs %}
 
-The following screenshot shows the output of Grid layout. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewGridLayout1923264609)
+The following screenshot shows the output of Grid layout. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/2.ListViewGridLayout2009216455)
 
 ![](SfListView_images/SfListView-GridLayout.png)
 
-### Customize SpanCount based on devices
+### Customize SpanCount Based on Devices
 
-The [SpanCount](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GridLayout~SpanCount.html) property of GridLayout can be customized based on platform specific to avoid squeezed problem of listview item in tablet devices or windows desktop. To customize the `SpanCount` specific to platform and devices, follow the code example:
+The [SpanCount](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GridLayout~SpanCount.html) property of [GridLayout](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GridLayout.html) can be customized based on platform specific to avoid squeezed problem of listview item in tablet devices or windows desktop. 
+
+To customize the `SpanCount` specific to platform and devices, follow the code example:
 
 {% tabs %}
 {% highlight xaml %}
@@ -101,3 +103,32 @@ The following screenshot shows the output for tablet devices:
 
 ![](SfListView_images/SfListView-GridLayoutTablet.png)
 
+## How To
+
+### Change SpanCount Based on Screen Size
+
+In SfListView, [GridLayout](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GridLayout.html) arranges the item in a row based on the [SpanCount](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GridLayout~SpanCount.html) property. The `SpanCount` can be adjust based on the view size of application with orientation in either portrait or landscape mode.
+For example, the screen width is 300 and `ItemSize` is 150 in portrait mode, then SpanCount value would be 2.
+
+To calculated the `SpanCount` by using screen width and `ItemSize` property to layout the items, follow the code example.
+
+{% tabs %}
+{% highlight c# %}
+public partial class GridLayoutPage : ContentPage
+{
+  protected override void OnSizeAllocated(double width, double height) 
+  { 
+    base.OnSizeAllocated(width, height); 
+ 
+    if (width > 0 && pageWidth != width) 
+    {       
+        var size = Application.Current.MainPage.Width / listView.ItemSize; 
+        gridLayout.SpanCount = (int)size; 
+        listView.LayoutManager = gridLayout; 
+     } 
+  }
+}
+{% endhighlight %}
+{% endtabs %}
+
+You can download the entire sample code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/1.ListViewGridLayout2126595573)

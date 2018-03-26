@@ -9,16 +9,16 @@ documentation : ug
 
 # ToolbarCustomization
 
-You can customize color palette, toolbar visibility and appearance of each toolbaritem.
+You can customize color palette, toolbar visibility and appearance of each toolbar item.
 
 
-## Customize toolbaritems
+## Customize toolbar items
 
-SfImageEditor control supports to customize and configure the apperance of toolbar menu. You can customize image editor toolbar by adding respective FootertoolbarItem and HeadertoolbarItem 
+SfImageEditor control supports to customize and configure the appearance of toolbar menu. You can customize image editor toolbar by adding respective FooterToolbarItem and HeaderToolbarItem 
 
 #### ToolbarItem
 
-You can customize each toolbaritem with the help of `Text` and `Icon` properties. ImageEdior Toolbar menu contains set of header and footer menu items which helps to perform image editor actions
+You can customize each toolbar item with the help of `Text` and `Icon` properties. ImageEditor Toolbar menu contains set of header and footer menu items which helps to perform image editor actions
 and this can be categorized into the following types,
 
 1.HeaderToolbarItem
@@ -26,13 +26,13 @@ and this can be categorized into the following types,
 3.SubItems
 
  
-### Adding HeadertoolbarItem
+### Adding HeaderToolbarItem
 
-`HeadertoolbarItem` will be arranged on top of the image editor and you can customize headertoolbaritem with the help of Icon and Text as like below,
+`HeaderToolbarItem` will be arranged on top of the image editor and you can customize header toolbar item with the help of Icon and Text as like below,
 
 {% highlight C# %}
 
-            editor.ToolbarSettings.ToolbarItems.Add(new HeaderToolbarItem() { Icon = ImageSource.FromResource("IMgeditForms.share.png"), Text="Share" });
+            editor.ToolbarSettings.ToolbarItems.Add(new HeaderToolbarItem() { Icon = ImageSource.FromResource("ImgeditForms.share.png"), Text="Share" });
 
 {% endhighlight %}
 
@@ -44,50 +44,50 @@ Refer to the below code snippet to customize FootertoolbarItem,
 
 {% highlight C# %}
 
-            editor.ToolbarSettings.ToolbarItems.Add(new FooterToolbarItem() { Icon = ImageSource.FromResource("IMgeditForms.delete.png"), Text="Delete" });
-            editor.ToolbarSettings.ToolbarItems.Add(new FooterToolbarItem() { Icon = ImageSource.FromResource("IMgeditForms.more.png"), Text="More" });
+            editor.ToolbarSettings.ToolbarItems.Add(new FooterToolbarItem() { Icon = ImageSource.FromResource("ImgeditForms.delete.png"), Text="Delete" });
+            editor.ToolbarSettings.ToolbarItems.Add(new FooterToolbarItem() { Icon = ImageSource.FromResource("ImgeditForms.more.png"), Text="More" });
 
 {% endhighlight %}
 
-### Adding SubItems to the FootertoolbarItem
+### Adding SubItems to the FooterToolbarItem
 
-`SubItems` only applicable for `FooterToolbarItem` and it represents grouped action of respective footertoolbarItem. SubItems will be arranged above the footertoolbarItem layout and you can also customize subitems appearence as like main toolbar items. 
+`SubItems` only applicable for `FooterToolbarItem` and it represents grouped action of respective footer toolbar item. SubItems will be arranged above the footer toolbar item layout and you can also customize subitems appearance as like main toolbar items. 
 
-Refer to the below code snippet to customize subitems of FootertoolbarItem,
+Refer to the below code snippet to customize sub items of footer toolbar item,
 
 {% highlight C# %}
 
  	editor.ToolbarSettings.ToolbarItems.Add(new FooterToolbarItem()
             {
                 Text = "More",
-                Icon = ImageSource.FromResource("IMgeditForms.Image.more.png"),
+                Icon = ImageSource.FromResource("ImgeditForms.Image.more.png"),
                 SubItems = new ObservableCollection<Syncfusion.SfImageEditor.XForms.ToolbarItem>()
                 {
                    new ToolbarItem() {
-                Icon = ImageSource.FromResource("IMgeditForms.Image.download.png")
+                Icon = ImageSource.FromResource("ImgeditForms.Image.download.png")
                 },
                    new ToolbarItem() {
-                Icon = ImageSource.FromResource("IMgeditForms.Image.share.png")
+                Icon = ImageSource.FromResource("ImgeditForms.Image.share.png")
                 } }
             });
 
 {% endhighlight %}
 
-N> You can remove existing toolbaritems(Text,Path,Shape,Transform,Reset,Undo,Redo and Save) from the image editor toolbarItems collection based on the index value. 
+N> You can remove existing toolbar items(Text,Path,Shape,Transform,Reset,Undo,Redo and Save) from the image editor toolbarItems collection based on the index value. 
 
-You can change icon and text value dynamically for any of already added toolbaritem based on the index as like below,
+You can change icon and text value dynamically for any of already added toolbar item based on the index as like below,
 
 {% highlight C# %}
 
 editor.ToolbarSettings.ToolbarItems[5].Text = "new item";
-editor.ToolbarSettings.ToolbarItems[3].Icon = ImageSource.FromResource("ImgPanning.Image.jpg");
+editor.ToolbarSettings.ToolbarItems[3].Icon = ImageSource.FromResource("ImgeditForms.Image.jpg");
 
 {% endhighlight %}
 
 
 ### ToolbarItemSelected event 
 
-Whenever you tap the toolbar menu item, the `ToolbarItemSelected` event will be triggered and you can get the respective tapped toolbaritem as an argument as shown below,
+Whenever you tap the toolbar menu item, the `ToolbarItemSelected` event will be triggered and you can get the respective tapped toolbar item as an argument as shown below,
 
 {% highlight C# %}
 

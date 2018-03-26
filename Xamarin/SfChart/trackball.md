@@ -88,7 +88,7 @@ In the following screenshot, trackball label is shown for only single data point
 
 **Customize Trackball Labels**
 
-Following properties are used to customize the trackball labels.
+The [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~TrackballLabelStyle.html) property provides options to  customize the trackball labels.
 
 * [`BorderColor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~BorderColor.html#) – used to change the label border color.
 * [`BackgroundColor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~BackgroundColor.html#) – used to change the label background color.
@@ -145,6 +145,8 @@ chart.ChartBehaviors.Add(trackballBehavior);
 {% endtabs %}
 
 **Customize Trackball Marker**
+
+The [`MarkerStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballBehavior~MarkerStyle.html) property provides options to  customize the trackball markers.
 
 Following properties are used to customize the trackball marker.
 

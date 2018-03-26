@@ -32,20 +32,20 @@ and this can be categorized into the following types,
 
 {% highlight C# %}
 
-            editor.ToolbarSettings.ToolbarItems.Add(new HeaderToolbarItem() { Icon = ImageSource.FromResource("imageeditor.share.png"), Text="Share" });
+            editor.ToolbarSettings.ToolbarItems.Add(new HeaderToolbarItem() { Icon = ImageSource.FromResource("ImageEditor.share.png"), Text="Share" });
 
 {% endhighlight %}
 
 ### Adding FooterToolbarItem   
 
- `FooterToolbarItem` will be arranged on bottom of the image editor and you can customize footertoolbarItem with the help of Icon and Text along with sub items.
+ `FooterToolbarItem` will be arranged on bottom of the image editor and you can customize footer toolbar item with the help of Icon and Text along with sub items.
 
 Refer to the below code snippet to customize footer toolbar item,
 
 {% highlight C# %}
 
-            editor.ToolbarSettings.ToolbarItems.Add(new FooterToolbarItem() { Icon = ImageSource.FromResource("imageeditor.delete.png"), Text="Delete" });
-            editor.ToolbarSettings.ToolbarItems.Add(new FooterToolbarItem() { Icon = ImageSource.FromResource("imageeditor.more.png"), Text="More" });
+            editor.ToolbarSettings.ToolbarItems.Add(new FooterToolbarItem() { Icon = ImageSource.FromResource("ImageEditor.delete.png"), Text="Delete" });
+            editor.ToolbarSettings.ToolbarItems.Add(new FooterToolbarItem() { Icon = ImageSource.FromResource("ImageEditor.more.png"), Text="More" });
 
 {% endhighlight %}
 
@@ -60,14 +60,14 @@ Refer to the below code snippet to customize sub items of footer toolbar item,
  	editor.ToolbarSettings.ToolbarItems.Add(new FooterToolbarItem()
             {
                 Text = "More",
-                Icon = ImageSource.FromResource("imageeditor.Image.more.png"),
+                Icon = ImageSource.FromResource("ImageEditor.Image.more.png"),
                 SubItems = new ObservableCollection<Syncfusion.SfImageEditor.XForms.ToolbarItem>()
                 {
                    new ToolbarItem() {
-                Icon = ImageSource.FromResource("imageeditor.Image.download.png")
+                Icon = ImageSource.FromResource("ImageEditor.Image.download.png")
                 },
                    new ToolbarItem() {
-                Icon = ImageSource.FromResource("imageeditor.Image.share.png")
+                Icon = ImageSource.FromResource("ImageEditor.Image.share.png")
                 } }
             });
 
@@ -80,7 +80,7 @@ You can change icon and text value dynamically for any of already added toolbar 
 {% highlight C# %}
 
 editor.ToolbarSettings.ToolbarItems[5].Text = "new item";
-editor.ToolbarSettings.ToolbarItems[3].Icon = ImageSource.FromResource("imageeditor.Image.jpg");
+editor.ToolbarSettings.ToolbarItems[3].Icon = ImageSource.FromResource("ImageEditor.Image.jpg");
 
 {% endhighlight %}
 

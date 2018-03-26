@@ -43,7 +43,7 @@ using Syncfusion.SfChart.XForms;
 
 {% endtabs %} 
 
-Then initialize an empty chart with two axes as shown below,
+Then initialize an empty chart with [`PrimaryAxis`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~PrimaryAxis.html) and [`SecondaryAxis`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~SecondaryAxis.html) as shown below,
 
 {% tabs %} 
 

@@ -20,11 +20,13 @@ Strip line is classified into **NumericalStripLine** and **DateTimeStripLine** b
 Following properties are used to configure the strip line.
 
 * [`Start`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.NumericalStripLine~Start.html) – used to change the start position of the strip line.
-* [`Width`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartStripLine~WidthProperty.html#) – used to change how long strip line should expand.
+* [`Width`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartStripLine~Width.html) – used to change how long strip line should expand.
+* [`WidthType`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeStripLine~WidthType.html) - used to change the date time unit of the value specified in the width property.
 * [`Text`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartStripLine~Text.html) – used to change the text of the strip line.
 * [`FillColor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartStripLine~FillColor.html) – used to change the fill color of the strip line.
 * [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartStripLine~StrokeWidth.html) – used to change the stroke width of the strip line.
 * [`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartStripLine~StrokeColor.html) – used to change the stroke color of the strip line.
+* [`IsVisible`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartStripLine~IsVisible.html) - used to change the visibility of the strip line in chart axis.
 
 **NumericalStripLine**
 

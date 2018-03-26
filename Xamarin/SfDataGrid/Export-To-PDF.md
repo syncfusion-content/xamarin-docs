@@ -996,7 +996,7 @@ private void PdfExport_CellExporting(object sender, DataGridCellPdfExportingEven
 {% endhighlight %}
 {% endtabs %}
 
-In the follwing screenshot IsClosed column value has been changed based on the condition.
+In the following screenshot IsClosed column value has been changed based on the condition.
 
 ![](SfDataGrid_images/PDF/Landscape.png)
 

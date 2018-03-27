@@ -387,7 +387,7 @@ You can download the entire sample from [here](http://www.syncfusion.com/downloa
 
 ### Load More Items Automatically from Up Direction
 
-SfListView allows you to load more items at the top of the list automatically when reaching the Header item by using the HeaderItem.Visibility property. Show the busy indicator until the items are added into the collection as like below code example.
+SfListView allows you to load more items automatically when reaching start of the list by show the busy indicator by loading in the HeaderTemplate.
 
 {% tabs %}
 {% highlight xaml %}
@@ -433,7 +433,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-Insert each new item in the zeroth position of the underlying collection which is bound to the SfListView.ItemsSource property. When the collection gets modified, the ScrollViewer scrolls to the top of the list. Using ScrollToRowIndex method scroll back to the previous item index as like below.
+Insert each new item in the 0th position of the underlying collection which is bound to the SfListView.ItemsSource property.
 
 {% tabs %}
 {% highlight c# %}
@@ -511,7 +511,7 @@ You can download the entire source code of this demo from [here](http://www.sync
 
 ### Load More Items Manually from Up Direction
 
-SfListView allows you to load more items in upward direction manually using a button clicked event. Show the busy indicator until the items are added into the collection as like below code example.
+SfListView allows you to load more items when tapping button loaded in the HeaderTemplate when reaching reaching top of the list and show the busy indicator until the items are added into the collection.
 
 {% tabs %}
 {% highlight xaml %}
@@ -573,7 +573,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-Insert each new item in the zeroth position of the underlying collection which is bound to the SfListView.ItemsSource property. When the collection gets modified, the ScrollViewer scrolls to the top of the list. Using ScrollToRowIndex method scroll back to the previous item index as like below.
+Insert each new item in the 0th position of the underlying collection which is bound to the SfListView.ItemsSource property.
 
 {% tabs %}
 {% highlight c# %}

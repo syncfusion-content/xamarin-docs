@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Xamarin Forms | NuGet Packages | Syncfusion
+title: Xamarin Forms NuGet Packages | Syncfusion
 description: NuGet Packages
 platform: xamarin
 control: NuGet Packages

@@ -23,6 +23,11 @@ The SfListView allows selecting items either programmatically or by touch intera
 The SfListView allows selecting items on different gestures such as tap, double tap, and hold. This can be achieved by setting the [SfListView.SelectionGesture](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionGesture.html). The default value for the `SfListView.SelectionGesture` is [TouchGesture.Tap](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.TouchGesture.html).
 
 {% tabs %}
+{% highlight xaml %}
+ <syncfusion:SfListView x:Name="listView"
+                        SelectionMode="Multiple"
+                        SelectionGesture="Hold"/>
+{% endhighlight %}                     
 {% highlight c# %}
 listView.SelectionMode = SelectionMode.Multiple;
 listView.SelectionGesture = TouchGesture.Hold;
@@ -111,6 +116,29 @@ The SfListView supports to customize the selection background color for the sele
   </syncfusion:SfListView>
 </ContentPage>
 {% endhighlight %}
+{% highlight c# %}
+ listView.SelectedItemTemplate = new DataTemplate(() =>
+{
+  var grid = new Grid();
+  grid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
+  grid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
+  grid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1) });
+  grid.BackgroundColor = Color.RoyalBlue;
+  var songTitle = new Label();
+  songTitle.SetBinding(Label.TextProperty, new Binding("SongTitle"));
+  var songAuther = new Label();
+  songAuther.SetBinding(Label.TextProperty, new Binding("SongAuther"));
+  var frame = new Frame()
+  {
+    HeightRequest = 1,
+    HasShadow = true,
+  };
+  grid.Children.Add(songTitle);
+  grid.Children.Add(songAuther, 0, 1);
+  grid.Children.Add(frame, 0, 2);
+  return grid;
+});
+{% endhighlight %}
 {% endtabs %}
 
 You can download the entire sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomSelection-SelectionBackground715901267). The following output rendered when the background color is set to the selected item:
@@ -156,6 +184,43 @@ To customize the appearance of the selected item/items by using the appearance o
   </syncfusion:SfListView>
 </ContentPage>
 {% endhighlight %}
+{% highlight c# %}
+listView.SelectedItemTemplate = new DataTemplate(() =>
+{
+  var grid1 = new Grid();
+  grid1.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(40) });
+  grid1.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+  grid1.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Auto) });
+  var songThumbnail = new Image();
+  songThumbnail.SetBinding(Image.SourceProperty, new Binding("SongThumbnail"));
+  var grid2 = new Grid();
+  grid2.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
+  grid2.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
+  grid2.Padding = new Thickness(15, 0, 0, 0);
+  var songTitle = new Label();
+  songTitle.SetBinding(Label.TextProperty, new Binding("SongTitle"));
+  var grid3 = new Grid();
+  grid3.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+  grid3.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+  var songAuther = new Label();
+  songAuther.SetBinding(Label.TextProperty, new Binding("SongAuther"));
+  var songSize = new Label();
+  songSize.SetBinding(Label.TextProperty, new Binding("SongSize"));
+  grid3.Children.Add(songAuther);
+  grid3.Children.Add(songSize, 1, 0);
+  grid2.Children.Add(songTitle);
+  grid2.Children.Add(grid3, 0, 1);
+  var selectionImage = new Image()
+  {
+    IsVisible = true,
+    Source = "Selected.png"
+  };
+  grid1.Children.Add(songThumbnail);
+  grid1.Children.Add(grid2, 1, 0);
+  grid1.Children.Add(selectionImage, 2, 0);
+  return grid1;
+});
+{% endhighlight %}
 {% endtabs %}
 
 Now run the application to render the following output. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomSelection-New-172474858).
@@ -169,6 +234,10 @@ Now run the application to render the following output. You can download the ent
 SfListView allows you change the selection background color for the selected items by using [SfListView.SelectionBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionBackgroundColor.html) property. You can also able to change the selection background color at run time.
 
 {% tabs %}
+{% highlight c# %}
+ <syncfusion:SfListView x:Name="listView"
+                        SelectionBackgroundColor="Blue"/>
+{% endhighlight %}
 {% highlight c# %}
 listView.SelectionBackgroundColor = Color.Blue;
 {% endhighlight %}

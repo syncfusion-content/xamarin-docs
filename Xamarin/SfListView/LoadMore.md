@@ -16,7 +16,7 @@ The `SfListView.LoadMoreOption` property has three different modes of operation 
  * Manual: Displays the load more button when end of the list is reached and execute `SfListView.LoadMoreCommand` when button is tapped.
  * Auto: Automatically execute the `SfListView.LoadMoreCommand` when end of the list is reached.
 
-## Load more automatically
+## Load More Automatically
 
 To automatically load more items using the [SfListView.LoadMoreCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommand.html) and [SfListView.LoadMoreCommandParameter](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommandParameter.html) while reaching end of the list, set the [SfListView.LoadMoreOption](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreOption.html) property as `Auto`.
 
@@ -85,7 +85,7 @@ private void AddProducts(int index, int count)
 {% endhighlight %}
 {% endtabs %}
 
-## Load more manually
+## Load More Manually
 
 To load more items manually using the [SfListView.LoadMoreCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommand.html) and [SfListView.LoadMoreCommandParameter](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommandParameter.html) while tapping on the load more button at end of the list, set the [SfListView.LoadMoreOption](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreOption.html) property as `Manual`.
 
@@ -155,7 +155,7 @@ private void AddProducts(int index, int count)
 {% endhighlight %}
 {% endtabs %}
 
-## Show loading indicator
+## Show Loading Indicator
 
 The [SfListView.LoadMoreIndicator](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LoadMoreIndicator.html) will be displayed when loading more items into the list. Before loading more items, change the visibility of `LoadMoreIndicator` by setting the [SfListView.IsBusy](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsBusy.html) property to `true`. After loading more items, reset to `false`. 
 
@@ -182,11 +182,11 @@ Refer to the following output to load more items:
 
 ![](SfListView_images/SfListView-LoadMore.gif)
 
-## Load more view customization
+## Load More View Customization
 
 The SfListView allows customizing user interface(UI) of `Load More` view.
 
-### Load more button
+### Load More Button
 
 To customize the load more button, add the custom user interface(UI) in the [SfListView.LoadMoreTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreTemplate.html) property. 
 
@@ -241,7 +241,7 @@ listView.LoadMoreTemplate = new DataTemplate(() =>
 {% endhighlight %}
 {% endtabs %}
 
-### Loading indicator
+### Loading Indicator
 
 To customize the loading indicator, add the custom user interface(UI) in the [SfListView.LoadMoreTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreTemplate.html) property.
 
@@ -303,7 +303,7 @@ listView.LoadMoreTemplate = new DataTemplate(() =>
 {% endhighlight %}
 {% endtabs %}
 
-## Disable load more at runtime
+## Disable Load More at Runtime
 
 To disable the `Load More` view, return 'CanExecute' method of the [SfListView.LoadMoreCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommand.html) to `false`.
 
@@ -337,9 +337,9 @@ private bool CanLoadMoreItems(object obj)
 
 The SfListView does not support the [SfListView.LoadMoreOption](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreOption.html) in `Manual` mode when the [SfListView.Orientation](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.Orientation.html) is `Horizontal`.
 
-## How to
+## How To
 
-### Load more on Infinite scroll 
+### Load More on Infinite Scroll 
 
 SfListView allow you to add more items infinite times either manually or automatically. 
 
@@ -385,7 +385,7 @@ public class LoadMoreViewModel:INotifyPropertyChanged
 
 You can download the entire sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LoadMore_Infinitescroll423993966).
 
-### Load more items automatically from up direction
+### Load More Items Automatically from Up Direction
 
 SfListView allows you to load more items at the top of the list automatically when reaching the Header item by using the HeaderItem.Visibility property. Show the busy indicator until the items are added into the collection as like below code example.
 
@@ -398,12 +398,38 @@ SfListView allows you to load more items at the top of the list automatically wh
     <DataTemplate>
       <ViewCell>
         <Grid>
-          <sync:LoadMoreIndicator Color="Red" IsRunning="True" IsVisible="{Binding IndicatorIsVisible}"/>
+          <syncfusion:LoadMoreIndicator Color="Red" IsRunning="True" IsVisible="{Binding IndicatorIsVisible}"/>
         </Grid>
       </ViewCell>
     </DataTemplate>
   </syncfusion:SfListView.HeaderTemplate>
 </syncfusion:SfListView>
+{% endhighlight %}
+{% highlight c# %}
+public partial class MainPage : ContentPage
+{
+  MainPageViewModel ViewModel;
+  public MainPage()
+  {
+    InitializeComponent();
+    ViewModel = new MainPageViewModel();
+    ListView.IsBusy = true;
+    ListView.ItemsSource = ViewModel.Messages;
+    ListView.AutoFitMode = AutoFitMode.Height;
+    ListView.HeaderTemplate = new DataTemplate(() =>
+    {
+      var grid = new Grid();
+      var loadMoreIndicator = new LoadMoreIndicator()
+      {
+        Color = Color.Red,
+        IsRunning = true
+      };
+      loadMoreIndicator.SetBinding(LoadMoreIndicator.IsVisibleProperty, new Binding("IndicatorIsVisible"));
+      grid.Children.Add(loadMoreIndicator);
+      return grid;
+    });
+  }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -483,7 +509,7 @@ You can download the entire source code of this demo from [here](http://www.sync
 
 ![](SfListView_images/SfListView-LoadMoreAutomaticallyUpDirection.png)
 
-### Load more items manually from up direction
+### Load More Items Manually from Up Direction
 
 SfListView allows you to load more items in upward direction manually using a button clicked event. Show the busy indicator until the items are added into the collection as like below code example.
 
@@ -500,12 +526,50 @@ SfListView allows you to load more items in upward direction manually using a bu
           <Grid BackgroundColor="#d3d3d3" IsVisible="{Binding GridIsVisible}">
             <Button Text="Load More" Clicked="Button_Clicked" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
           </Grid>
-          <sync:LoadMoreIndicator Color="Red" IsRunning="True" IsVisible="{Binding IndicatorIsVisible}"/>
+          <syncfusion:LoadMoreIndicator Color="Red" IsRunning="True" IsVisible="{Binding IndicatorIsVisible}"/>
         </Grid>
       </ViewCell>
     </DataTemplate>
   </syncfusion:SfListView.HeaderTemplate>
 </syncfusion:SfListView>
+{% endhighlight %}
+{% highlight c# %}
+public partial class MainPage : ContentPage
+{
+  MainPageViewModel ViewModel;
+  public MainPage()
+  {
+    InitializeComponent();
+    ViewModel = new MainPageViewModel();
+    ListView.IsBusy = true;
+    ListView.ItemsSource = ViewModel.Messages;
+    ListView.AutoFitMode = AutoFitMode.Height;
+    ListView.HeaderTemplate = new DataTemplate(() =>
+    {
+      var grid = new Grid();
+      grid.BackgroundColor = Color.FromHex("#d3d3d3");
+      grid.SetBinding(Grid.IsVisibleProperty, new Binding("GridIsVisible"));
+      var loadMore = new Button()
+      {
+        HorizontalOptions = LayoutOptions.CenterAndExpand,
+        VerticalOptions = LayoutOptions.CenterAndExpand,
+        Text = "LoadMore",
+      };
+      loadMore.Clicked += Button_Clicked;
+      grid.Children.Add(loadMore);
+      var grid1 = new Grid();
+      var loadMoreIndicator = new LoadMoreIndicator()
+      {
+        Color = Color.Red,
+        IsRunning = true
+      };
+      loadMoreIndicator.SetBinding(LoadMoreIndicator.IsVisibleProperty, new Binding("IndicatorIsVisible"));
+      grid1.Children.Add(loadMoreIndicator);
+      grid1.Children.Add(grid);
+      return grid1;
+    });
+  }
+}
 {% endhighlight %}
 {% endtabs %}
 

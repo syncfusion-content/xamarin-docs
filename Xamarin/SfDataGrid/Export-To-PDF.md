@@ -201,7 +201,6 @@ private void PDFExport_Clicked(object sender, EventArgs e)
 
 ![](SfDataGrid_images/PDF/GroupingPDF.png)
 
-
 ### Exclude Column Header while Exporting
 
 By default, the column headers will be exported to PDF document. To export the SfDataGrid without the column headers, set the [DataGridPdfExportOption.ExportHeader](https://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridPdfExportOption~ExportHeader.html) to `false`.
@@ -999,7 +998,6 @@ private void PdfExport_CellExporting(object sender, DataGridCellPdfExportingEven
 In the following screenshot IsClosed column value has been changed based on the condition.
 
 ![](SfDataGrid_images/PDF/Landscape.png)
-
 
 ## Changing Row Style in PDF Based on Data
 

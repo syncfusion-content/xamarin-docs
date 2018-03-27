@@ -228,9 +228,11 @@ option.ExportGroups = true;
 {% endtabs %}
 
 * ExportGroups = true; 
+
 ![](SfDataGrid_images/Excel/GroupSumExcel.png)
 
 * ExportGroups = false;
+
 ![](SfDataGrid_images/Excel/ExcludeGroupSummary.png) 
 
 ### ExportHeader
@@ -258,9 +260,11 @@ option.ExportTableSummary = true;
 {% endtabs %}
 
 * ExportTableSummary = true;
+
 ![](SfDataGrid_images/Excel/GroupSumExcel.png)
 
 * ExportTableSummary = false;
+
 ![](SfDataGrid_images/Excel/ExcludeGroupSummary.png) 
 
 ### BottomTableSummaryStyle
@@ -391,9 +395,11 @@ option.ExportAllPages = true;
 {% endtabs %}
 
 * ExportAllPages = true;
+
 ![](SfDataGrid_images/Excel/ExportAll.png) 
 
 * ExportAllPages = false;
+
 ![](SfDataGrid_images/Excel/Excel.png) 
 
 ## Events

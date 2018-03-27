@@ -13,7 +13,7 @@ documentation: ug
 
 ### Configuring and Installing Syncfusion NuGet Packages in Visual Studio
 
-Syncfusion Xamarin components are available in [NuGet.org](https://www.nuget.org/). To add our NuGet package, open the NuGet package manager in Visual Studio and search for “syncfusion.xamarin”. This will result in listing of all our Xamarin components. You can now select from the list of Syncfusion’s components displayed in the window. You need to do this in all the projects such as PCL, XForms.Droid, XForms.iOS.
+Syncfusion Xamarin components are available in [NuGet.org](https://www.nuget.org/). To add our NuGet package, open the NuGet package manager in Visual Studio and search for “syncfusion.xamarin”. This will result in listing of all our Xamarin components. You can now select from the list of Syncfusion’s components displayed in the window and then install it. You need to do this in all the projects such as PCL, Android, iOS in the Xamarin.Forms application.
 
 ![](images/img16.png)
 
@@ -77,12 +77,10 @@ I> After adding the reference, currently, an additional step is required for iOS
 
 ## Install NuGet from command line
 
-### NuGet Installation
-
-Once the NuGet source has been added, then install the NuGet package which is available in that source by using following command.
+You can use the below command to install the specific NuGet. You can get the nuget.exe from [here](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
 
 mono nuget.exe install [Package name]
 
 For Ex: mono nuget.exe install “Syncfusion.Xamarin.Calculate” 
 
-![](images/img7.jpg)
+![](images/img7.png)

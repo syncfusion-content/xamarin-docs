@@ -126,15 +126,15 @@ The SfListView supports to customize the selection background color for the sele
   grid.BackgroundColor = Color.RoyalBlue;
   var songTitle = new Label();
   songTitle.SetBinding(Label.TextProperty, new Binding("SongTitle"));
-  var songAuther = new Label();
-  songAuther.SetBinding(Label.TextProperty, new Binding("SongAuther"));
+  var songAuthor = new Label();
+  songAuthor.SetBinding(Label.TextProperty, new Binding("songAuthor"));
   var frame = new Frame()
   {
     HeightRequest = 1,
     HasShadow = true,
   };
   grid.Children.Add(songTitle);
-  grid.Children.Add(songAuther, 0, 1);
+  grid.Children.Add(songAuthor, 0, 1);
   grid.Children.Add(frame, 0, 2);
   return grid;
 });
@@ -202,11 +202,11 @@ listView.SelectedItemTemplate = new DataTemplate(() =>
   var grid3 = new Grid();
   grid3.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
   grid3.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
-  var songAuther = new Label();
-  songAuther.SetBinding(Label.TextProperty, new Binding("SongAuther"));
+  var songAuthor = new Label();
+  songAuthor.SetBinding(Label.TextProperty, new Binding("songAuthor"));
   var songSize = new Label();
   songSize.SetBinding(Label.TextProperty, new Binding("SongSize"));
-  grid3.Children.Add(songAuther);
+  grid3.Children.Add(songAuthor);
   grid3.Children.Add(songSize, 1, 0);
   grid2.Children.Add(songTitle);
   grid2.Children.Add(grid3, 0, 1);

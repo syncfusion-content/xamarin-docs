@@ -121,7 +121,7 @@ The SfRating control is configured entirely in C# code or by using XAML markup. 
 {% highlight C# %}
 
 	SfRating rating = new SfRating();
-	this.content = rating; 
+	this.Content = rating; 
 
 {% endhighlight %}
 

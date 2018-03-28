@@ -94,9 +94,6 @@ You can customize the color and thickness of ticks by using the [`Color`](https:
 	<gauge:SfLinearGauge>
             <gauge:SfLinearGauge.Scales>
                 <gauge:LinearScale ScaleBarColor="#e0e0e0" LabelColor="#424242" MinorTicksPerInterval ="3">
-				  <gauge:LinearScale.MajorTickSettings>
-                      <gauge:LinearTickSettings Thickness="1"/>
-                    </gauge:LinearScale.MajorTickSettings>
                     <gauge:LinearScale.MinorTickSettings>
                       <gauge:LinearTickSettings Thickness="2" Length ="7" Color = "RosyBrown"/>
                     </gauge:LinearScale.MinorTickSettings>
@@ -139,9 +136,6 @@ The [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncf
 	<gauge:SfLinearGauge>
             <gauge:SfLinearGauge.Scales>
                 <gauge:LinearScale ScaleBarColor="#e0e0e0" LabelColor="#424242" MinorTicksPerInterval ="4">
-				  <gauge:LinearScale.MajorTickSettings>
-                      <gauge:LinearTickSettings Thickness="1"/>
-                    </gauge:LinearScale.MajorTickSettings>
                 </gauge:LinearScale>
             </gauge:SfLinearGauge.Scales>
         </gauge:SfLinearGauge>
@@ -152,7 +146,6 @@ The [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncf
 
       SfLinearGauge linearGauge = new SfLinearGauge();
       LinearScale linearScale = new LinearScale();
-      linearScale.MajorTickSettings.Thickness = 1;
       linearScale.ScaleBarColor = Color.FromHex("#e0e0e0");
       linearScale.LabelColor = Color.FromHex("#424242");
       linearScale.MinorTicksPerInterval = 4;

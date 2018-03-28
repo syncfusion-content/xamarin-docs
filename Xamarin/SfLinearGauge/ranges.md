@@ -25,11 +25,14 @@ Start and end values of ranges are set by using the [`StartValue`](https://help.
 
             <gauge:SfLinearGauge.Scales>
                 <gauge:LinearScale ScaleBarColor="#e0e0e0" LabelColor="#424242">
-                 <gauge:LinearScale.MajorTickSettings>
-                      <gauge:LinearTickSettings Thickness="1" />
+                    <gauge:LinearScale.MajorTickSettings>
+                        <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="15"/>
                     </gauge:LinearScale.MajorTickSettings>
+                    <gauge:LinearScale.MinorTickSettings>
+                        <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="7"/>
+                    </gauge:LinearScale.MinorTickSettings>
                     <gauge:LinearScale.Ranges>
-                        <gauge:LinearRange StartValue="0" EndValue="60" Color="#27beb7" Offset = -20/>
+                        <gauge:LinearRange StartValue="0" EndValue="60" Color="#27beb7" Offset = "-20"/>
                     </gauge:LinearScale.Ranges>
                 </gauge:LinearScale>
             </gauge:SfLinearGauge.Scales>
@@ -45,6 +48,11 @@ Start and end values of ranges are set by using the [`StartValue`](https://help.
             linearScale.ScaleBarColor = Color.FromHex("#e0e0e0");
             linearScale.LabelColor = Color.FromHex("#424242");
             linearScale.MajorTickSettings.Thickness = 1;
+            linearScale.MajorTickSettings.Length = 15;
+            linearScale.MajorTickSettings.Color = Color.Gray;
+            linearScale.MinorTickSettings.Color = Color.Gray;
+            linearScale.MinorTickSettings.Length = 7;
+            linearScale.MinorTickSettings.Thickness = 1;
             LinearRange linearRange = new LinearRange();
             linearRange.StartValue = 0;
             linearRange.EndValue = 60;
@@ -69,13 +77,16 @@ To change the range’s background color, use the [`Color`](https://help.syncfus
   
     <gauge:SfLinearGauge>
 
-            <gauge:SfLinearGauge.Scales>
+             <gauge:SfLinearGauge.Scales>
                 <gauge:LinearScale ScaleBarColor="#e0e0e0" LabelColor="#424242">
-                 <gauge:LinearScale.MajorTickSettings>
-                      <gauge:LinearTickSettings Thickness="1" />
+                    <gauge:LinearScale.MajorTickSettings>
+                        <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="15"/>
                     </gauge:LinearScale.MajorTickSettings>
+                    <gauge:LinearScale.MinorTickSettings>
+                        <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="7"/>
+                    </gauge:LinearScale.MinorTickSettings>
                     <gauge:LinearScale.Ranges>
-                        <gauge:LinearRange StartValue="0" EndValue="50" Color="#f95c85" Offset = -30 StartWidth ="-5" EndWidth ="-20"/>
+                        <gauge:LinearRange StartValue="0" EndValue="50" Color="#f95c85" Offset = "-30" StartWidth ="-5" EndWidth ="-20"/>
                     </gauge:LinearScale.Ranges>
                 </gauge:LinearScale>
             </gauge:SfLinearGauge.Scales>
@@ -91,6 +102,11 @@ To change the range’s background color, use the [`Color`](https://help.syncfus
             linearScale.ScaleBarColor = Color.FromHex("#e0e0e0");
             linearScale.LabelColor = Color.FromHex("#424242");
             linearScale.MajorTickSettings.Thickness = 1;
+            linearScale.MajorTickSettings.Length = 15;
+            linearScale.MajorTickSettings.Color = Color.Gray;
+            linearScale.MinorTickSettings.Color = Color.Gray;
+            linearScale.MinorTickSettings.Length = 7;
+            linearScale.MinorTickSettings.Thickness = 1;
             linearGauge.Scales.Add(linearScale);
             LinearRange linearRange = new LinearRange();
             linearRange.StartValue = 0;
@@ -121,10 +137,13 @@ The range can be adjusted above or below the scale by using the [`Offset`](https
             <gauge:SfLinearGauge.Scales>
                 <gauge:LinearScale ScaleBarColor="#e0e0e0" LabelColor="#424242" OpposedPosition ="True" Interval ="10" ScaleBarLength="350" MinorTicksPerInterval ="1">
                  <gauge:LinearScale.MajorTickSettings>
-                      <gauge:LinearTickSettings Thickness="1" />
+                        <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="15"/>
                     </gauge:LinearScale.MajorTickSettings>
+                    <gauge:LinearScale.MinorTickSettings>
+                        <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="7"/>
+                    </gauge:LinearScale.MinorTickSettings>
                     <gauge:LinearScale.Ranges>
-                        <gauge:LinearRange StartValue="0" EndValue="50" Color="#27beb7" Offset = 30/>
+                        <gauge:LinearRange StartValue="0" EndValue="50" Color="#27beb7" Offset = "30"/>
                     </gauge:LinearScale.Ranges>
                 </gauge:LinearScale>
             </gauge:SfLinearGauge.Scales>
@@ -140,7 +159,12 @@ The range can be adjusted above or below the scale by using the [`Offset`](https
             linearGauge.Orientation = Orientation.OrientationVertical;
             LinearScale linearScale = new LinearScale();
             linearScale.ScaleBarColor = Color.FromHex("#e0e0e0");
-            linearScale.MajorTickSettings.Thickness = 1;
+             linearScale.MajorTickSettings.Thickness = 1;
+            linearScale.MajorTickSettings.Length = 15;
+            linearScale.MajorTickSettings.Color = Color.Gray;
+            linearScale.MinorTickSettings.Color = Color.Gray;
+            linearScale.MinorTickSettings.Length = 7;
+            linearScale.MinorTickSettings.Thickness = 1;
             linearScale.MinorTicksPerInterval = 1;   
             linearScale.OpposedPosition = true;
             linearScale.Interval = 10;
@@ -169,23 +193,19 @@ You can add n number of ranges to a scale by using the [`LinearRange`](https://h
 {% highlight xaml %}
   
     <gauge:SfLinearGauge>
-
+      
             <gauge:SfLinearGauge.Scales>
                 <gauge:LinearScale ScaleBarColor="Transparent" ShowTicks="False" LabelColor="#424242" Interval="25" LabelFontSize ="14" LabelOffset="-10" MinorTicksPerInterval ="0">
-                 <gauge:LinearScale.MajorTickSettings>
-                      <gauge:LinearTickSettings Thickness="1" />
-                    </gauge:LinearScale.MajorTickSettings>
                     <gauge:LinearScale.Ranges>
                         <gauge:LinearRange StartValue="0" EndValue="25" Color="#6de500" StartWidth ="-10" EndWidth="-15"/>
-                         <gauge:LinearRange StartValue="25" EndValue="50" Color="#53ad00" StartWidth ="-15" EndWidth="-20"/>
-                         <gauge:LinearRange StartValue="50" EndValue="75" Color="#009148" StartWidth ="-20" EndWidth="-25"/>
-                          <gauge:LinearRange StartValue="75" EndValue="100" Color="#026623" StartWidth ="-25" EndWidth="-30"/>
+                        <gauge:LinearRange StartValue="25" EndValue="50" Color="#53ad00" StartWidth ="-15" EndWidth="-20"/>
+                        <gauge:LinearRange StartValue="50" EndValue="75" Color="#009148" StartWidth ="-20" EndWidth="-25"/>
+                        <gauge:LinearRange StartValue="75" EndValue="100" Color="#026623" StartWidth ="-25" EndWidth="-30"/>
                     </gauge:LinearScale.Ranges>
                 </gauge:LinearScale>
             </gauge:SfLinearGauge.Scales>
 
       </gauge:SfLinearGauge>
-
 
 {% endhighlight %}
 
@@ -253,16 +273,14 @@ You can give smooth color transition to range to specifying the different colors
 
             <gauge:SfLinearGauge.Scales>
                 <gauge:LinearScale ScaleBarColor="Transparent" ScaleBarSize ="20" ShowTicks="False" LabelColor="#424242" Interval="25" LabelFontSize ="14" LabelOffset="10" MinorTicksPerInterval ="0">
-                 <gauge:LinearScale.MajorTickSettings>
-                      <gauge:LinearTickSettings Thickness="1" />
-                    </gauge:LinearScale.MajorTickSettings>
-                     <gauge:LinearScale.Ranges>
+                    <gauge:LinearScale.Ranges>
                         <gauge:LinearRange StartWidth="20" EndWidth="20" StartValue="0" EndValue="100">
                             <gauge:LinearRange.GradientStops>
                                 <gauge:GaugeGradientStop Value="0" Color="#FFF9C2C3"/>
                                 <gauge:GaugeGradientStop Value="100" Color="#FFD91D71"/>
                             </gauge:LinearRange.GradientStops>
                         </gauge:LinearRange>
+                        </gauge:LinearScale.Ranges>
                 </gauge:LinearScale>
             </gauge:SfLinearGauge.Scales>
 
@@ -296,7 +314,6 @@ You can give smooth color transition to range to specifying the different colors
             linearRange.GradientStops = gradientColor;
             linearScale.Ranges.Add(linearRange);
             linearGauge.Scales.Add(linearScale);
-            this.Content = linearGauge;
 
 {% endhighlight %}
 

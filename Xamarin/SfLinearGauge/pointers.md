@@ -9,7 +9,7 @@ documentation: ug
 
 # Pointers
 
-[`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfLinearGauge.html) provides support to mark the values using `BarPointer` and `SymbolPointer`.
+[`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfLinearGauge.html) provides support to mark the values using [`BarPointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.BarPointer.html) and [`SymbolPointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SymbolPointer.html).
 
 ## Adding bar pointer to scale
 
@@ -20,16 +20,18 @@ documentation: ug
 {% highlight xaml %}
 
         <gauge:SfLinearGauge>
-            <gauge:SfLinearGauge.Scales>
+
+             <gauge:SfLinearGauge.Scales>
                 <gauge:LinearScale ScaleBarColor="#e0e9f9" LabelColor="#424242" ScaleBarSize = "20" LabelFontSize ="14" MinorTicksPerInterval ="0">
                     <gauge:LinearScale.MajorTickSettings>
-                      <gauge:LinearTickSettings Thickness="1" Color ="#9E9E9E" Length = "10"/>
+                        <gauge:LinearTickSettings Thickness="1" Color ="#9E9E9E" Length = "10"/>
                     </gauge:LinearScale.MajorTickSettings>
-					<gauge:LinearScale.Pointers>
-					<gauge:BarPointer  Value="75" EnableAnimation = "false" Color = "#36d1dc" />
-				</gauge:LinearScale.Pointers>
+                    <gauge:LinearScale.Pointers>
+                        <gauge:BarPointer  Value="75" EnableAnimation = "false" Color = "#36d1dc" />
+                    </gauge:LinearScale.Pointers>
                 </gauge:LinearScale>
             </gauge:SfLinearGauge.Scales>
+
         </gauge:SfLinearGauge>
 	
 {% endhighlight %}
@@ -69,16 +71,18 @@ The bar pointer’s UI is customized by using the [`Color`](https://help.syncfus
 {% highlight xaml %}
 
         <gauge:SfLinearGauge>
-            <gauge:SfLinearGauge.Scales>
+
+           <gauge:SfLinearGauge.Scales>
                 <gauge:LinearScale ScaleBarColor="#e0e9f9" LabelColor="#424242" ScaleBarSize = "40" LabelFontSize ="14" MinorTicksPerInterval ="0">
                     <gauge:LinearScale.MajorTickSettings>
-                      <gauge:LinearTickSettings Thickness="1" Color ="#9E9E9E" Length = "10"/>
+                        <gauge:LinearTickSettings Thickness="1" Color ="#9E9E9E" Length = "10"/>
                     </gauge:LinearScale.MajorTickSettings>
-					<gauge:LinearScale.Pointers>
-					<gauge:BarPointer  Value="75" EnableAnimation = "false" Color = "#36d1dc" Thickness = "20"/>
-				</gauge:LinearScale.Pointers>
+                    <gauge:LinearScale.Pointers>
+                        <gauge:BarPointer  Value="75" EnableAnimation = "false" Color = "#36d1dc" Thickness = "20"/>
+                    </gauge:LinearScale.Pointers>
                 </gauge:LinearScale>
             </gauge:SfLinearGauge.Scales>
+
         </gauge:SfLinearGauge>
 	
 {% endhighlight %}
@@ -98,7 +102,7 @@ The bar pointer’s UI is customized by using the [`Color`](https://help.syncfus
 
             BarPointer barPointer = new BarPointer();
             barPointer.Value = 75;
-			barpointer.Thickness = 20;
+			barPointer.Thickness = 20;
             barPointer.EnableAnimation = false;
             barPointer.Color = Color.FromHex("#36d1dc");
             linearScale.Pointers.Add(barPointer);
@@ -112,28 +116,22 @@ The bar pointer’s UI is customized by using the [`Color`](https://help.syncfus
 
 ## Setting corner radius type for bar pointer
 
-Corners of the [`BarPointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.BarPointer.html) can be customized by setting the value to the `CornerRadiusType` property. All corners of bar pointer can be customized using the `Start`, `End`, `Both`, and `None` options.
+Corners of the [`BarPointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.BarPointer.html) can be customized by setting the value to the [`CornerRadiusType`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.BarPointer~CornerRadiusType.html) property. All corners of bar pointer can be customized using the `Start`, `End`, `Both`, and `None` options.
+[`CornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.BarPointer~CornerRadius.html) property used to reduce the radius of the corners.
 
 {% tabs %}
 
 {% highlight xaml %}
 
      <gauge:SfLinearGauge>
-	         <gauge:SfLinearGauge.Annotations>
-                <gauge:LinearGaugeAnnotation ScaleValue="50" ViewMargin="0,-55">
-                    <gauge:LinearGaugeAnnotation.View>
-                        <Label Text="Start" TextColor="Black"/>
-                    </gauge:LinearGaugeAnnotation.View>
-                </gauge:LinearGaugeAnnotation>
-            </gauge:SfLinearGauge.Annotations>
-            <gauge:SfLinearGauge.Scales>
+	         <gauge:SfLinearGauge.Scales>
                 <gauge:LinearScale ScaleBarColor="#e0e9f9" LabelColor="#424242" ScaleBarSize = "40" LabelFontSize ="14" MinorTicksPerInterval ="0">
                     <gauge:LinearScale.MajorTickSettings>
-                      <gauge:LinearTickSettings Thickness="1" Color ="#9E9E9E" Length = "10"/>
+                        <gauge:LinearTickSettings Thickness="1" Color ="#9E9E9E" Length = "10"/>
                     </gauge:LinearScale.MajorTickSettings>
-					<gauge:LinearScale.Pointers>
-					<gauge:BarPointer  Value="75" EnableAnimation = "false" Color = "#36d1dc" Thickness = "20" CornerRadiusType = "Start" CornerRadius = "10"/>
-				</gauge:LinearScale.Pointers>
+                    <gauge:LinearScale.Pointers>
+                        <gauge:BarPointer  Value="75" EnableAnimation = "false" Color = "#36d1dc" Thickness = "20" CornerRadiusType = "Start" CornerRadius = "10"/>
+                    </gauge:LinearScale.Pointers>
                 </gauge:LinearScale>
             </gauge:SfLinearGauge.Scales>
         </gauge:SfLinearGauge>
@@ -173,28 +171,30 @@ Corners of the [`BarPointer`](https://help.syncfusion.com/cr/cref_files/xamarin/
 
 ## Setting gradient color for bar pointer
 
-You can give smooth color transition to bar pointer to specifying the different colors based on bar pointer’s value by using [`GradientStops`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearPointer~GradientStops.html) property.
+You can give smooth color transition to bar pointer to specifying the different colors based on bar pointer’s value by using [`GradientStops`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.BarPointer~GradientStops.html) property.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-     <gauge:SfLinearGauge  >
-        <gauge:SfLinearGauge.Scales>
-            <gauge:LinearScale ScaleBarColor="#f7eded"  LabelColor="Black" ScaleBarSize="40" CornerRadius="20" CornerRadiusType="Both"
+     <gauge:SfLinearGauge>
+
+         <gauge:SfLinearGauge.Scales>
+                <gauge:LinearScale ScaleBarColor="#F7EDED"  LabelColor="Black" ScaleBarSize="40" CornerRadius="20" CornerRadiusType="Both"
                                LabelFontSize="14" MinimumValue="0" MaximumValue="100" Interval="25" LabelOffset="-10" ShowTicks="False">
-                <gauge:LinearScale.Pointers>
-                    <gauge:BarPointer Value="75" CornerRadiusType="Both" CornerRadius="15" Thickness="30" EnableAnimation="False">
-                        <gauge:BarPointer.GradientStops>
-                            <gauge:GaugeGradientStop Value="10" Color="#f8babf"/>
-                            <gauge:GaugeGradientStop Value="40" Color="#ee89a7"/>
-                            <gauge:GaugeGradientStop Value="50" Color="#e4548c"/>
-                            <gauge:GaugeGradientStop Value="60" Color="#db2575"/>
-                        </gauge:BarPointer.GradientStops>
-                    </gauge:BarPointer>
-                  </gauge:LinearScale.Pointers>
-              </gauge:LinearScale>
-          </gauge:SfLinearGauge.Scales>
+                    <gauge:LinearScale.Pointers>
+                        <gauge:BarPointer Value="75" CornerRadiusType="Both" CornerRadius="15" Thickness="30" EnableAnimation="False">
+                            <gauge:BarPointer.GradientStops>
+                                <gauge:GaugeGradientStop Value="10" Color="#f8babf"/>
+                                <gauge:GaugeGradientStop Value="40" Color="#ee89a7"/>
+                                <gauge:GaugeGradientStop Value="50" Color="#e4548c"/>
+                                <gauge:GaugeGradientStop Value="60" Color="#db2575"/>
+                            </gauge:BarPointer.GradientStops>
+                        </gauge:BarPointer>
+                    </gauge:LinearScale.Pointers>
+                </gauge:LinearScale>
+            </gauge:SfLinearGauge.Scales>
+
       </gauge:SfLinearGauge>
 
 {% endhighlight %}
@@ -244,8 +244,6 @@ You can give smooth color transition to bar pointer to specifying the different 
 
             linearScale.Pointers.Add(barPointer);
             linearGauge.Scales.Add(linearScale);
-        }
-    }
 
 {% endhighlight  %}
 
@@ -262,20 +260,21 @@ In [`SymbolPointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/S
 {% highlight xaml %}
 
        <gauge:SfLinearGauge>
+
             <gauge:SfLinearGauge.Scales>
                 <gauge:LinearScale ScaleBarColor="#e0e9f9" LabelColor="#424242" ScaleBarSize = "40" LabelFontSize ="14" MinorTicksPerInterval ="0">
                     <gauge:LinearScale.MajorTickSettings>
-                      <gauge:LinearTickSettings Thickness="1" Color ="#9E9E9E" Length = "10"/>
+                        <gauge:LinearTickSettings Thickness="1" Color ="#9E9E9E" Length = "10"/>
                     </gauge:LinearScale.MajorTickSettings>
-					<gauge:LinearScale.Pointers>
-					<gauge:BarPointer  Value="75" CornerRadiusType="End" CornerRadius = "10" EnableAnimation = "false" Color = "#36d1dc" Thickness = "20"/>
-					<gauge:SymbolPointer Value ="30" EnableAnimation ="False" Color= "#5b86e5"/>
-				</gauge:LinearScale.Pointers>
+                    <gauge:LinearScale.Pointers>
+                        <gauge:BarPointer  Value="75" CornerRadiusType="End" CornerRadius = "10" EnableAnimation = "false" Color = "#36d1dc" Thickness = "20"/>
+                        <gauge:SymbolPointer Value ="30" EnableAnimation ="False" Color= "#5b86e5"/>
+                    </gauge:LinearScale.Pointers>
                 </gauge:LinearScale>
             </gauge:SfLinearGauge.Scales>
+
         </gauge:SfLinearGauge>
 	
-
 {% endhighlight %}
 
 {% highlight c# %}
@@ -327,11 +326,14 @@ You can modify the symbol pointer’s size using the [`Thickness`](https://help.
 
       <gauge:SfLinearGauge>
 
-            <gauge:SfLinearGauge.Scales>
+              <gauge:SfLinearGauge.Scales>
                 <gauge:LinearScale ScaleBarColor="#e0e0e0" LabelColor="#424242">
-				 <gauge:LinearScale.MajorTickSettings>
-                      <gauge:LinearTickSettings Thickness="1" />
+                    <gauge:LinearScale.MajorTickSettings>
+                           <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="15"/>
                     </gauge:LinearScale.MajorTickSettings>
+                   <gauge:LinearScale.MinorTickSettings>
+                           <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="7"/>
+                   </gauge:LinearScale.MinorTickSettings>
                     <gauge:LinearScale.Pointers>
                         <gauge:SymbolPointer Value="70" Color="DeepSkyBlue" Thickness="15"/>
                     </gauge:LinearScale.Pointers>
@@ -349,6 +351,11 @@ You can modify the symbol pointer’s size using the [`Thickness`](https://help.
             linearScale.ScaleBarColor = Color.FromHex("#e0e0e0");
             linearScale.LabelColor = Color.FromHex("#424242");
             linearScale.MajorTickSettings.Thickness = 1;
+            linearScale.MajorTickSettings.Length = 15;
+            linearScale.MajorTickSettings.Color = Color.Gray;
+            linearScale.MinorTickSettings.Color = Color.Gray;
+            linearScale.MinorTickSettings.Length = 7;
+            linearScale.MinorTickSettings.Thickness = 1;
             SymbolPointer symbolPointer = new SymbolPointer();
             symbolPointer.Value = 70;
             symbolPointer.Color = Color.DeepSkyBlue;
@@ -375,17 +382,19 @@ You can customize the position of the [`SymbolPointer`](https://help.syncfusion.
 {% highlight xaml %}
 
      <gauge:SfLinearGauge>
-            <gauge:SfLinearGauge.Scales>
+
+           <gauge:SfLinearGauge.Scales>
                 <gauge:LinearScale ScaleBarColor="#e0e9f9" LabelColor="#424242" ScaleBarSize = "40" LabelFontSize ="14" MinorTicksPerInterval ="0">
                     <gauge:LinearScale.MajorTickSettings>
-                      <gauge:LinearTickSettings Thickness="1" Color ="#9E9E9E" Length = "10"/>
+                        <gauge:LinearTickSettings Thickness="1" Color ="#9E9E9E" Length = "10"/>
                     </gauge:LinearScale.MajorTickSettings>
-					<gauge:LinearScale.Pointers>
-					<gauge:BarPointer  Value="75" CornerRadiusType="End" CornerRadius = "10" EnableAnimation = "false" Color = "#36d1dc" Thickness = "20"/>
-					<gauge:SymbolPointer Value ="30" EnableAnimation ="False" Color= "#5b86e5" SymbolPointerPosition = "Away"/>
-				</gauge:LinearScale.Pointers>
+                    <gauge:LinearScale.Pointers>
+                        <gauge:BarPointer  Value="75" CornerRadiusType="End" CornerRadius = "10" EnableAnimation = "false" Color = "#36d1dc" Thickness = "20"/>
+                        <gauge:SymbolPointer Value ="30" EnableAnimation ="False" Color= "#5b86e5" SymbolPointerPosition = "Away"/>
+                    </gauge:LinearScale.Pointers>
                 </gauge:LinearScale>
             </gauge:SfLinearGauge.Scales>
+
         </gauge:SfLinearGauge>
 
 {% endhighlight %}
@@ -393,8 +402,6 @@ You can customize the position of the [`SymbolPointer`](https://help.syncfusion.
 {% highlight c# %}
 
             SfLinearGauge linearGauge = new SfLinearGauge();
-            linearGauge.BackgroundColor = Color.White;
-            linearGauge.Margin = 10;
             LinearScale linearScale = new LinearScale();
             linearScale.ScaleBarColor = Color.FromHex("#e0e9f9");
             linearScale.LabelColor = Color.FromHex("#424242");
@@ -456,8 +463,6 @@ You can move  the [`SymbolPointer`](https://help.syncfusion.com/cr/cref_files/xa
 {% highlight c# %}
 
             SfLinearGauge linearGauge = new SfLinearGauge();
-            linearGauge.BackgroundColor = Color.White;
-            linearGauge.Margin = 10;
             LinearScale linearScale = new LinearScale();
             linearScale.ScaleBarColor = Color.FromHex("#e0e9f9");
             linearScale.LabelColor = Color.FromHex("#424242");
@@ -501,17 +506,19 @@ Different types of shapes are used in [`SymbolPointer`](https://help.syncfusion.
 {% highlight xaml %}
 
      <gauge:SfLinearGauge>
+
             <gauge:SfLinearGauge.Scales>
                 <gauge:LinearScale ScaleBarColor="#e0e9f9" LabelColor="#424242" ScaleBarSize = "40" LabelFontSize ="14" MinorTicksPerInterval ="0">
                     <gauge:LinearScale.MajorTickSettings>
-                      <gauge:LinearTickSettings Thickness="1" Color ="#9E9E9E" Length = "10"/>
+                        <gauge:LinearTickSettings Thickness="1" Color ="#9E9E9E" Length = "10"/>
                     </gauge:LinearScale.MajorTickSettings>
-					<gauge:LinearScale.Pointers>
-					<gauge:BarPointer  Value="75" CornerRadiusType="End" CornerRadius = "10" EnableAnimation = "false" Color = "#36d1dc" Thickness = "20"/>
-					<gauge:SymbolPointer Value ="30" EnableAnimation ="False" Color= "#5b86e5" SymbolPointerPosition="Away" MarkerShape = "Circle"/>
-				</gauge:LinearScale.Pointers>
+                    <gauge:LinearScale.Pointers>
+                        <gauge:BarPointer  Value="75" CornerRadiusType="End" CornerRadius = "10" EnableAnimation = "false" Color = "#36d1dc" Thickness = "20"/>
+                        <gauge:SymbolPointer Value ="30" EnableAnimation ="False" Color= "#5b86e5" SymbolPointerPosition="Away" MarkerShape = "Circle"/>
+                    </gauge:LinearScale.Pointers>
                 </gauge:LinearScale>
             </gauge:SfLinearGauge.Scales>
+
         </gauge:SfLinearGauge>
 
 {% endhighlight %}
@@ -519,8 +526,6 @@ Different types of shapes are used in [`SymbolPointer`](https://help.syncfusion.
 {% highlight c# %}
 
             SfLinearGauge linearGauge = new SfLinearGauge();
-            linearGauge.BackgroundColor = Color.White;
-            linearGauge.Margin = 10;
             LinearScale linearScale = new LinearScale();
             linearScale.ScaleBarColor = Color.FromHex("#e0e9f9");
             linearScale.LabelColor = Color.FromHex("#424242");
@@ -586,8 +591,6 @@ You can achieve the image shape  by setting the [`MarkerShape`](https://help.syn
 {% highlight c# %}
 
             SfLinearGauge linearGauge = new SfLinearGauge();
-            linearGauge.BackgroundColor = Color.White;
-            linearGauge.Margin = 10;
             LinearScale linearScale = new LinearScale();
             linearScale.ScaleBarColor = Color.FromHex("#e0e9f9");
             linearScale.LabelColor = Color.FromHex("#424242");
@@ -634,17 +637,19 @@ In addition to the default pointer, you can add n number of pointers to a linear
 {% highlight xaml %}
 
      <gauge:SfLinearGauge>
+     
             <gauge:SfLinearGauge.Scales>
                 <gauge:LinearScale ScaleBarColor="#e0e9f9" LabelColor="#424242" CornerRadiusType="End" CornerRadius="20" ScaleBarSize = "40" LabelFontSize ="14" MinorTicksPerInterval ="0">
                     <gauge:LinearScale.MajorTickSettings>
-                      <gauge:LinearTickSettings Thickness="1" Color ="#9E9E9E" Length = "10"/>
+                        <gauge:LinearTickSettings Thickness="1" Color ="#9E9E9E" Length = "10"/>
                     </gauge:LinearScale.MajorTickSettings>
-					<gauge:LinearScale.Pointers>
-					<gauge:BarPointer  Value="75" CornerRadiusType="End" EnableAnimation = "false" Color = "#36d1dc" Thickness = "30"/>
-					<gauge:SymbolPointer Value ="30" EnableAnimation ="False" Color= "#5b86e5" SymbolPointerPosition="Away" MarkerShape ="Triangle`````````````````````````````````````````````````````````````````````````````````"/>
-				</gauge:LinearScale.Pointers>
+                    <gauge:LinearScale.Pointers>
+                        <gauge:BarPointer  Value="75" CornerRadiusType="End" EnableAnimation = "false" Color = "#36d1dc" Thickness = "30"/>
+                        <gauge:SymbolPointer Value ="30" EnableAnimation ="False" Color= "#5b86e5" SymbolPointerPosition="Away" MarkerShape="Triangle"/>
+                    </gauge:LinearScale.Pointers>
                 </gauge:LinearScale>
             </gauge:SfLinearGauge.Scales>
+
         </gauge:SfLinearGauge>
 
 {% endhighlight %}

@@ -12,42 +12,18 @@ documentation: ug
 ## Install NuGet from NuGet Package Manager
 
 ### Configuring and Installing Syncfusion NuGet Packages in Visual Studio
-The Syncfusion Xamarin NuGet packages are published in public [NuGet.org](https://www.nuget.org/) from v15.4.0.17. So, no need any additional configurations required to utilize the Syncfusion Xamarin NuGet packages from v15.4.0.17. If you required to utilize the Syncfusion Xamarin NuGet packages from Syncfusion private NuGet server instead of NuGet.org, follow the below topics to configure and install the Syncfusion Xamarin NuGet packages.
 
-N> If you wish to use Syncfusion Xamarin NuGet packages, then it is not needed to install [Essential Studio for Xamarin installer](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac#download-directly-from-website) to work with Syncfusion Xamarin controls.
+Syncfusion Xamarin components are available in [NuGet.org](https://www.nuget.org/). To add our NuGet package, open the NuGet package manager in Visual Studio and search for “syncfusion.xamarin”. This will result in listing of all our Xamarin components. You can now select from the list of Syncfusion’s components displayed in the window and then install it. You need to do this in all the projects such as PCL, Android, iOS in the Xamarin.Forms application.
 
-Following are the step by step instructions for configuring Syncfusion NuGet packages within Visual Studio,
-
-1. Right click on the Packages folder in the project and then select Add Packages…
-
-   ![](images/img1.png)
-
-2. Next, in the drop-down that appears in the left corner of Add Packages window, select Configure Sources.
-
-   ![](images/img2.png)
-
-3. Next, click on the Add button in the window that appears now. Enter the following details in the Add Package Source dialog.
-
-    *	**Name** – enter the name (For Ex., Syncfusion Xamarin Packages)
-    *	**Location** – enter the following URL - http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin/
-
-    Now click Add Source and then click OK.
-
-    N> If you have already downloaded the NuGet package from Syncfusion website, enter the local path in the **Location** field.
-
-    ![](images/img3.png)
-
-4. Next, open Add Packages window by following step 1, then select Syncfusion Xamarin Packages (The package name specified in Step 3) as the source from the drop-down that appears at the top-left corner of the window.  You can now select from the list of Syncfusion’s components displayed in the window.
-
-5. You need to do this in all the projects such as PCL, XForms.Droid, XForms.iOS.
-
-    ![](images/img4.png)
+![](images/img16.png)
 
 ### Updating a NuGet Package
 
 Right click on the Packages folder in the individual projects, then select Update. This will update the NuGet package to the available latest version. You can double click Add Packages and choose the specific version for the package for which you want to update. You need to do this in all the projects such as PCL, XForms.Droid, XForms.iOS.
 
 ![](images/img5.png)
+
+N> If you wish to use Syncfusion Xamarin NuGet packages, then it is not needed to install [Essential Studio for Xamarin installer](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac#download-directly-from-website) to work with Syncfusion Xamarin controls.
 
 ## Download directly from website
 
@@ -101,26 +77,10 @@ I> After adding the reference, currently, an additional step is required for iOS
 
 ## Install NuGet from command line
 
-### NuGet Configuration
-
-1. Download the latest NuGet executable from [here](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
-
-2. Open the downloaded executable location in command window and run the following command,
-
-   mono nuget.exe Sources Add –Name [Source name] –Source [source location]
-
-   Ex: mono nuget.exe Sources Add –Name “Syncfusion Xamarin Packages” -Source “http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin/”
-
-3. Once the Source gets added successfully the confirmation message will be shown like below.
-
-    ![](images/img6.jpg)
-
-### NuGet Installation
-
-Once the NuGet source has been added, then install the NuGet package which is available in that source by using following command.
+You can use the below command to install the specific NuGet. You can get the nuget.exe from [here](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
 
 mono nuget.exe install [Package name]
 
 For Ex: mono nuget.exe install “Syncfusion.Xamarin.Calculate” 
 
-![](images/img7.jpg)
+![](images/img7.png)

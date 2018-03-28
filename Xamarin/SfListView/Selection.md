@@ -141,7 +141,7 @@ The SfListView supports to customize the selection background color for the sele
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomSelection-SelectionBackground715901267). The following output rendered when the background color is set to the selected item:
+You can download the entire sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomSelection-SelectionBackground-1263708841). The following output rendered when the background color is set to the selected item:
 
 ![](SfListView_images/SfListView-Selection-3.png)
 
@@ -223,7 +223,7 @@ listView.SelectedItemTemplate = new DataTemplate(() =>
 {% endhighlight %}
 {% endtabs %}
 
-Now run the application to render the following output. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomSelection-New-172474858).
+Now run the application to render the following output. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomSelection-New2007563607).
 
 ![](SfListView_images/SfListView-Selection-2.png)
 
@@ -236,12 +236,14 @@ SfListView allows you change the selection background color for the selected ite
 {% tabs %}
 {% highlight c# %}
  <syncfusion:SfListView x:Name="listView"
-                        SelectionBackgroundColor="Blue"/>
+                        SelectionBackgroundColor="Khaki"/>
 {% endhighlight %}
 {% highlight c# %}
-listView.SelectionBackgroundColor = Color.Blue;
+listView.SelectionBackgroundColor = Color.Khaki;
 {% endhighlight %}
 {% endtabs %}
+
+![](SfListView_images/SfListView-SelectionBackground.png)
 
 ### Programmatic Animation
 

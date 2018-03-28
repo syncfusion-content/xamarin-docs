@@ -387,7 +387,7 @@ You can download the entire sample from [here](http://www.syncfusion.com/downloa
 
 ### Load More Items Automatically from Up Direction
 
-SfListView allows you to load more items automatically when reaching start of the list by show the busy indicator by loading in the HeaderTemplate.
+SfListView allows you to load more items automatically when reaching start of the list by show the busy indicator by loading in the [HeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~HeaderTemplate.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -433,7 +433,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-Insert each new item in the 0th position of the underlying collection which is bound to the SfListView.ItemsSource property.
+Insert each new item in the 0th position of the underlying collection which is bound to the `SfListView.ItemsSource` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -451,7 +451,6 @@ public partial class MainPage : ContentPage
     BindingContext = ViewModel;
     ViewModel.ListView = this.ListView;
     ListView.Loaded += ListView_Loaded;
-    visualContainer = ListView.GetVisualContainer();
   }
 
   private void HeaderItem_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
@@ -505,13 +504,13 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LoadMoreAutomaticUpDirection-1018089288).
+You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DataTemplateSelector1009153684).
 
 ![](SfListView_images/SfListView-LoadMoreAutomaticallyUpDirection.png)
 
 ### Load More Items Manually from Up Direction
 
-SfListView allows you to load more items when tapping button loaded in the HeaderTemplate when reaching reaching top of the list and show the busy indicator until the items are added into the collection.
+SfListView allows you to load more items when tapping button loaded in the [HeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~HeaderTemplate.html) when reaching reaching top of the list and show the busy indicator until the items are added into the collection.
 
 {% tabs %}
 {% highlight xaml %}
@@ -573,7 +572,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-Insert each new item in the 0th position of the underlying collection which is bound to the SfListView.ItemsSource property.
+Insert each new item in the 0th position of the underlying collection which is bound to the `SfListView.ItemsSource` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -589,7 +588,6 @@ public partial class MainPage : ContentPage
     BindingContext = ViewModel;
     ViewModel.ListView = this.ListView;
     ListView.Loaded += ListView_Loaded;
-    visualContainer = ListView.GetVisualContainer();
   }
 
   private void ListView_Loaded(object sender, Syncfusion.ListView.XForms.ListViewLoadedEventArgs e)
@@ -630,6 +628,6 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LoadMoreManualUpDirection-634253652).
+You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DataTemplateSelector_Manual1650405033).
 
 ![](SfListView_images/SfListView-LoadMoreManuallyUpDirection.png)

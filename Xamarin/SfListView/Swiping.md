@@ -275,7 +275,8 @@ The `Swiping` event provides the following properties in their arguments:
 
 The `Swiping` event used for the following use cases,
 
-* To maintain current offset value for the swiped item until `SwipeEnded` event gets called. 
+* To maintain current offset value for the swiped item until `SwipeEnded` event gets called.
+* To hold the swipe view being swiping by setting `Handled` property if swipe offset meet certain position.
 
 {% tabs %}
 {% highlight xaml %}

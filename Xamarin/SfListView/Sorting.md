@@ -17,7 +17,7 @@ Sorting the data by creating the [SortDescriptor](https://help.syncfusion.com/cr
 
 `SortDescriptor` object holds the following three properties:
 
-* PropertyName: Descibes the name of the sorted property.
+* PropertyName: Describes the name of the sorted property.
 * Direction: Describes an object of type [ListSortDirection](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.ListSortDirection.html) that defines the sorting direction.
 * Comparer: Describes the comparer to be applied when sorting take place.
 

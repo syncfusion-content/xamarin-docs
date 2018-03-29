@@ -234,7 +234,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot shows when items are sorted by month and year.
+The following screenshot shows the output when items are sorted by month and year.
 
 ![](SfListView_images/SfListView-Sorting1.png)
 
@@ -269,7 +269,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot shows when items are sorted by month and year.
+The following screenshot shows the output when items are sorted by month and year.
 
 ![](SfListView_images/SfListView-Sorting2.png)
 

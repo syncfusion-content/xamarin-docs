@@ -11,9 +11,9 @@ documentation: ug
 
 PDF Viewer has a built-in toolbar that can be disabled or enabled. 
 
-## How to disable built-in toolbar?
+## How to disable/enable built-in toolbar?
 
-By default, the toolbar is enabled. It can be disabled by setting the Toolbar.Enabled property of PDF Viewer to false. 
+By default, the toolbar is enabled. It can be disabled by setting the Toolbar.Enabled property of PDF Viewer to false.
 
 {% tabs %}
 {% highlight c# %}
@@ -23,9 +23,7 @@ pdfViewerControl.Toolbar.Enabled = false;
 {% endhighlight %}
 {% endtabs %}
 
-## How to enable built-in toolbar?
-
-The toolbar can be enabled again by setting the same Toolbar.Enabled property to true. 
+The toolbar can be enabled by setting the same property to true.
 
 {% tabs %}
 {% highlight c# %}

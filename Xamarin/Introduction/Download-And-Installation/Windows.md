@@ -9,25 +9,6 @@ documentation: ug
 
 # Windows
 
-## Install NuGet from NuGet Package Manager
-
-### Configuring and Installing Syncfusion NuGet Packages in Visual Studio
-
-Syncfusion Xamarin components are available in [NuGet.org](https://www.nuget.org/). To add our NuGet package, open the NuGet package manager in Visual Studio and search for “syncfusion.xamarin”. This will result in listing of all our Xamarin components. You can now select from the list of Syncfusion’s components displayed in the window and then install it. You need to do this in all the projects such as PCL, Android, iOS and UWP in the Xamarin.Forms application.
-
-![](images/img14.png)
-
-### Updating a NuGet Package
-
-1. Right click on the project and click "Manage NuGet Packages" and go to the "Updates" tab to check for updates.
-
-    ![](images/img18.png)
-
-2. If there is a new version of NuGet, you will see it in the list of available updates.
-
-3. Select the NuGet Package in the list and then click "Update".
-
-N> If you wish to use Syncfusion Xamarin NuGet packages, then it is not needed to install [Essential Studio for Xamarin installer](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows#download-directly-from-website) to work with Syncfusion Xamarin controls.
 
 ## Download directly from website
 
@@ -80,14 +61,3 @@ You can then add the assembly references to the respective projects such as PCL,
 I> After adding the reference, currently, an additional step is required for iOS and UWP projects. For example, if we are using SfKanban, we need to call the Init method of SfKanbanRenderer as shown in this [KB article](https://www.syncfusion.com/kb/7171).
 
 I> For UWP alone, one more additional step is required if the project is built in release mode with .NET Native tool chain enabled. For example, if we are using SfKanban, you can refer the [KB article](https://www.syncfusion.com/kb/7170) for more details.
-
-## Install NuGet from command line
-
-You can use the below command to install the specific NuGet. You can get the nuget.exe from [here](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
-
-nuget.exe install [Package name]
-
-For Ex: nuget.exe install “Syncfusion.Xamarin.Calculate” 
-
-![](images/img13.png)
-

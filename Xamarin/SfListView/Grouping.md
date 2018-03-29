@@ -138,13 +138,13 @@ listView.DataSource.GroupDescriptors.Add(new GroupDescriptor()
   PropertyName = "ContactName", 
   KeySelector = (object obj) => 
   { 
-    return (obj as Contacts).ContactName.ToUpper()[0]; 
+    return (obj as Contacts).ContactName.ToUpper(); 
   } 
 }); 
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot shows grouping by ignoring case sensitivity.
+The following screenshot shows grouping by ignoring case sensitivity. You can download the entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Case_sensitivity1125043077).
 
 ![](SfListView_images/SfListView-CaseSensitivity.png)
 
@@ -199,7 +199,7 @@ public object Convert(object value, Type targetType, object parameter, CultureIn
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot shows grouping by sum of property value. You can download the entire sample code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Aggregate_summary361190372).
+The following screenshot shows grouping by sum of property value. You can download the entire sample code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Aggregate_summary-1932023167).
 
 ![](SfListView_images/SfListView-Aggregate.png)
 

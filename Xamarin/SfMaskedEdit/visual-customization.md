@@ -27,6 +27,8 @@ maskedEdit.BorderColor = Color.Green;
 {% endhighlight %}
 {% endtabs %}
 
+![](SfMaskedEditImages/Visual_BorderColor.png)
+
 ## ErrorBorderColor
 
 Sets the custom error border color to SfMaskedEdit. Error border color indicates the color to be used when the validation fails for your input with respect to the mask used. 
@@ -46,6 +48,9 @@ maskedEdit.ErrorBorderColor = Color.Yellow;
 {% endhighlight %}
 {% endtabs %}
 
+![](SfMaskedEditImages/Visual_ErrorBorderColor.png)
+
+ 
 ## Setting Appearance of Text
 
 You can customize the display text appearance of SfMaskedEdit control using the following properties:
@@ -71,5 +76,7 @@ maskedEdit.FontAttributes = FontAttributes.Bold;
 maskedEdit.FontSize = 20;
 {% endhighlight %}
 {% endtabs %}
+
+![](SfMaskedEditImages/Visual_TextColor.png)
 
 This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Forms/Samples/MaskedEdit_VisualCustomize.zip).

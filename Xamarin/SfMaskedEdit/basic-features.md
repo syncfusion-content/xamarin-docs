@@ -25,6 +25,9 @@ maskedEdit.Value =@"14/11/2014";
 {% endhighlight %}
 {% endtabs %}
 
+![](SfMaskedEditImages/BF_SetValue.png)
+
+
 ## Setting Prompt Character
 
 Displays prompt character for the absence of your input in Mask and its default value is ‘_’. You can set the custom prompt character using `PromptChar` property.
@@ -39,6 +42,8 @@ maskedEdit.Mask = "00/00/0000";
 maskedEdit.PromptChar = '*';
 {% endhighlight %}
 {% endtabs %}
+
+![](SfMaskedEditImages/BF_Prompt.png)
 
 ## Setting Watermark
 
@@ -65,5 +70,7 @@ maskedEdit.WatermarkFontAttributes = FontAttributes.Bold;
 maskedEdit.WatermarkFontSize = 20;
 {% endhighlight %}
 {% endtabs %}
+
+![](SfMaskedEditImages/BF_Hint.png)
 
 You can find the complete basic features sample from this [link](http://files2.syncfusion.com/Xamarin.Forms/Samples/MaskedEdit_BasicFeatures.zip).

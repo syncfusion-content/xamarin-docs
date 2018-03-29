@@ -72,4 +72,6 @@ maskedEdit.Culture = new CultureInfo("fr-FR");
 
 Now the ‘$’ will be localized to ‘€’;‘.’ will be localized to ‘,’ and ‘,’ will be localized to ‘ ‘(single white space).
 
+![](SfMaskedEditImages/Localization.png)
+
 You can find the runnable localization sample from this [link](http://files2.syncfusion.com/Xamarin.Forms/Samples/MaskedEdit_Localization.zip).

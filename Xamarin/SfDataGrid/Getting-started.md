@@ -80,7 +80,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {
     …
     global::Xamarin.Forms.Forms.Init ();
-    SfDataGridRenderer.Init();
+    Syncfusion.SfDataGrid.XForms.iOS.SfDataGridRenderer.Init();
     LoadApplication (new App ());
     …
 }
@@ -94,7 +94,7 @@ To launch the SfDataGrid in UWP, call the `SfDataGridRenderer.Init()` in the `Ma
 public MainPage()
 {
     …
-    SfDataGridRenderer.Init();
+    Syncfusion.SfDataGrid.XForms.UWP.SfDataGridRenderer.Init();
     LoadApplication (new App ());
     …
 }

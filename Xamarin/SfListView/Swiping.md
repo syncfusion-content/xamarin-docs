@@ -178,7 +178,7 @@ private void rightImage_BindingContextChanged(object sender, EventArgs e)
    }
 }
 {% endhighlight %}
-{% tabs %}
+{% endtabs %}
 
 ### Swipe delete
 

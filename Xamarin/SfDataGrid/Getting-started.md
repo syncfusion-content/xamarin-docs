@@ -76,13 +76,11 @@ The Android launches the SfDataGrid without any initialization and is enough to 
 To launch the SfDataGrid in iOS, call the `SfDataGridRenderer.Init()` in the `FinishedLaunching` overridden method of the AppDelegate class after the Xamarin.Forms Framework initialization and before the LoadApplication is called as demonstrated in the following code example:
 
 {% highlight c# %}
-using Syncfusion.SfDataGrid.XForms.iOS;
-
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {
     …
     global::Xamarin.Forms.Forms.Init ();
-    SfDataGridRenderer.Init();
+    Syncfusion.SfDataGrid.XForms.iOS.SfDataGridRenderer.Init();
     LoadApplication (new App ());
     …
 }
@@ -96,7 +94,7 @@ To launch the SfDataGrid in UWP, call the `SfDataGridRenderer.Init()` in the `Ma
 public MainPage()
 {
     …
-    SfDataGridRenderer.Init();
+    Syncfusion.SfDataGrid.XForms.UWP.SfDataGridRenderer.Init();
     LoadApplication (new App ());
     …
 }

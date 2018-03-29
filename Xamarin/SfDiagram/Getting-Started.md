@@ -15,9 +15,52 @@ Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org
 
 To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfdiagram) to know about the dependent assemblies for diagram. 
 
-I> After adding the reference, currently, an additional step is required for iOS and UWP projects. We need to create an instance of the `SfDiagramRenderer` in iOS and UWP projects as shown in this [KB article](https://www.syncfusion.com/kb/8618).
+After adding the assembly reference, an additional step is required for iOS and UWP projects.
 
-I> For UWP alone, one more additional step is required if the project is built in release mode with .NET Native tool chain enabled. You can refer to the [KB article](https://www.syncfusion.com/kb/8617) for more details.
+### Additional step for iOS
+
+To launch SfDiagram in iOS, call the `SfDiagramRenderer.Init()` in `FinishedLaunching` overridden method of `AppDelegate` class in iOS Project, as demonstrated in the following code example.
+
+{% tabs %}
+{% highlight c# %}
+public override bool FinishedLaunching(UIApplication app, NSDictionary options)
+{
+    global::Xamarin.Forms.Forms.Init();
+    LoadApplication(new App());
+    SfDiagramRenderer.Init();
+    return base.FinishedLaunching(app, options);
+}
+{% endhighlight %}
+{% endtabs %}
+
+I>We need to create an instance of the `SfDiagramRenderer` in iOS and UWP projects as shown in this [KB article](https://www.syncfusion.com/kb/8618).
+
+### Additional step for UWP
+
+This step is required only if the application is deployed in Release mode with .NET native tool chain enabled and it is for resolving the known Framework issue “Custom controls not rendering in Release mode” in UWP platform. Initializing the SfDiagram assembly at `OnLaunched` overridden method of the `App` class in UWP project is the suggested work around, as demonstrated in the following code example.
+
+{% tabs %}
+{% highlight c# %}
+protected override void OnLaunched(LaunchActivatedEventArgs e)
+{
+
+    ..... 
+
+    rootFrame.NavigationFailed += OnNavigationFailed;
+    // you'll need to add `using System.Reflection;` 
+    List<Assembly> assembliesToInclude = new List<Assembly>();
+    //Now, add all the assemblies your app uses 
+    assembliesToInclude.Add(typeof(SfDiagramRenderer).GetTypeInfo().Assembly);
+    // replaces Xamarin.Forms.Forms.Init(e);
+    Xamarin.Forms.Forms.Init(e, assembliesToInclude);
+
+    ..... 
+
+}
+{% endhighlight %}
+{% endtabs %}
+
+I> You can refer to the [KB article](https://www.syncfusion.com/kb/8617) for more details.
 
 ## Basic building blocks of Diagram
 * **Diagram**- It represents the drawing surface where all the graphical elements like nodes and connectors resides, can be used to display various types of diagrams and it is the root instance of the diagram control. A Diagram instance contains a collection of nodes and  connectors to represent the  graphical diagram.

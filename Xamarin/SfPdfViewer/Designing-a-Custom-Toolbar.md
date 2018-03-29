@@ -7,9 +7,9 @@ control: SfPdfViewer
 documentation: ug
 ---
 
-# Designing a toolbar
+# Designing a custom toolbar
 
-The below code snippet demonstrates how to create a simple toolbar for PDF Viewer with the options such as current page number, total page count in the PDF document, go to previous page and go to next page.
+The built-in toolbar of the PDF Viewer can be disabled and a custom toolbar can be used at the sample. The below code snippet demonstrates how to create a simple toolbar for PDF Viewer with the options such as current page number, total page count in the PDF document, go to previous page and go to next page.
 
 In this project, two images have been used with the names - “PageDown.png” and “PageUp.png”, place the images in the below mentioned location within the respective projects.
 
@@ -88,4 +88,4 @@ The final output will look like the below on iOS, Android and Windows (UWP) devi
 
 This demo can be downloaded from the below link.
 
-http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted1213946423.zip
+http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-663393738

@@ -25,10 +25,10 @@ You can enable/disable dragging by using the `IsDragEnabled` property.
  xmlns:radialMenu="clr-namespace:Syncfusion.SfRadialMenu.XForms;assembly=Syncfusion.SfRadialMenu.XForms">
     
 <ContentPage.Content>
-		<radialMenu:SfRadialMenu x:Name="radialMenu" IsDragEnabled="true" CenterButtonText=""  CenterButtonBackText="" CenterButtonFontFamily="Segoe MDL2 Assets.ttf" CenterButtonBackFontFamily="Segoe MDL2 Assets.ttf" CenterButtonRadius="30" RimColor="#FFCDCBCE" RimRadius="100" CenterButtonFontSize="26" CenterButtonTextColor="White"
-			CenterButtonBackgroundColor="#FF898889" CenterButtonBorderColor="White" CenterButtonBorderThickness="3">
-		</radialMenu:SfRadialMenu>
-	</ContentPage.Content>
+<radialMenu:SfRadialMenu x:Name="radialMenu" IsDragEnabled="true" CenterButtonText=""  CenterButtonBackText="" CenterButtonFontFamily="Segoe MDL2 Assets.ttf" CenterButtonBackFontFamily="Segoe MDL2 Assets.ttf" CenterButtonRadius="30" RimColor="#FFCDCBCE" RimRadius="100" CenterButtonFontSize="26" CenterButtonTextColor="White"
+CenterButtonBackgroundColor="#FF898889" CenterButtonBorderColor="White" CenterButtonBorderThickness="3">
+</radialMenu:SfRadialMenu>
+</ContentPage.Content>
 </ContentPage> 
 
 {% endhighlight %}
@@ -37,34 +37,30 @@ You can enable/disable dragging by using the `IsDragEnabled` property.
 
 using Syncfusion.XForms.SfRadialMenu;
 using Xamarin.Forms;
-
 public class App : Application
     {
         public App()
         {
             MainPage = new RadialMenuPage ();
         }
-
     }
 Public class RadialMenuPage : ContentPage
 {
-   
-	public RadialMenuPage ()
-	{
-		InitializeComponent();
-		//Creating instance for RadialMenu
-		SfRadialMenu radialMenu = new SfRadialMenu();
+public RadialMenuPage ()
+{
+InitializeComponent();
+//Creating instance for RadialMenu
+SfRadialMenu radialMenu = new SfRadialMenu();
 
-		//Initializing RadialMenu's properties
-		radialMenu.CenterButtonText = "\uE713";
-		radialMenu.CenterButtonFontFamily = "Segoe MDL2 Assets.ttf";
-		radialMenu.CenterButtonBackFontFamily = "Segoe MDL2 Assets.ttf";
-		radialMenu.CenterButtonRadius = 32;
-		radialMenu.CenterButtonBorderColor = Color.White;
-		radialMenu.IsDragEnabled = true;
-
-		this.Content = radialMenu;
-	}
+//Initializing RadialMenu's properties
+radialMenu.CenterButtonText = "\uE713";
+radialMenu.CenterButtonFontFamily = "Segoe MDL2 Assets.ttf";
+radialMenu.CenterButtonBackFontFamily = "Segoe MDL2 Assets.ttf";
+radialMenu.CenterButtonRadius = 32;
+radialMenu.CenterButtonBorderColor = Color.White;
+radialMenu.IsDragEnabled = true;
+this.Content = radialMenu;
+}
 }
 {% endhighlight %}
 {% endtabs %}
@@ -94,10 +90,10 @@ To hook the `DragBegin` event, and to get the start position and restricts the d
  xmlns:radialMenu="clr-namespace:Syncfusion.SfRadialMenu.XForms;assembly=Syncfusion.SfRadialMenu.XForms">
     
 <ContentPage.Content>
-		<radialMenu:SfRadialMenu x:Name="radialMenu" CenterButtonText=""  CenterButtonBackText="" CenterButtonFontFamily="Segoe MDL2 Assets.ttf" CenterButtonBackFontFamily="Segoe MDL2 Assets.ttf" CenterButtonRadius="30" RimColor="#FFCDCBCE" DragBegin="Handle_DragBegin" RimRadius="100" CenterButtonFontSize="26" CenterButtonTextColor="White"
-			CenterButtonBackgroundColor="#FF898889" CenterButtonBorderColor="White" CenterButtonBorderThickness="3">
-		</radialMenu:SfRadialMenu>
-	</ContentPage.Content>
+<radialMenu:SfRadialMenu x:Name="radialMenu" CenterButtonText=""  CenterButtonBackText="" CenterButtonFontFamily="Segoe MDL2 Assets.ttf" CenterButtonBackFontFamily="Segoe MDL2 Assets.ttf" CenterButtonRadius="30" RimColor="#FFCDCBCE" DragBegin="Handle_DragBegin" RimRadius="100" CenterButtonFontSize="26" CenterButtonTextColor="White"
+CenterButtonBackgroundColor="#FF898889" CenterButtonBorderColor="White" CenterButtonBorderThickness="3">
+</radialMenu:SfRadialMenu>
+</ContentPage.Content>
 </ContentPage> 
 
 {% endhighlight %}
@@ -113,30 +109,27 @@ public class App : Application
         {
             MainPage = new RadialMenuPage ();
         }
-
     }
 Public class RadialMenuPage : ContentPage
+{  
+public RadialMenuPage ()
 {
-   
-	public RadialMenuPage ()
-	{
-		InitializeComponent();
-		//Creating instance for RadialMenu
-		SfRadialMenu radialMenu = new SfRadialMenu();
+InitializeComponent();
+//Creating instance for RadialMenu
+SfRadialMenu radialMenu = new SfRadialMenu();
 
-		//Initializing RadialMenu's properties
-		radialMenu.CenterButtonText = "\uE713";
-		radialMenu.CenterButtonFontFamily = "Segoe MDL2 Assets.ttf";
-		radialMenu.CenterButtonBackFontFamily = "Segoe MDL2 Assets.ttf";
-		radialMenu.CenterButtonRadius = 32;
-		radialMenu.CenterButtonBorderColor = Color.White;
-		
-        void Handle_DragBegin(object sender, Syncfusion.SfRadialMenu.XForms.DragBeginEventArgs e)
-        {
-            e.Handled = true;
-        }
-		this.Content = radialMenu;
-	}
+//Initializing RadialMenu's properties
+radialMenu.CenterButtonText = "\uE713";
+radialMenu.CenterButtonFontFamily = "Segoe MDL2 Assets.ttf";
+radialMenu.CenterButtonBackFontFamily = "Segoe MDL2 Assets.ttf";
+radialMenu.CenterButtonRadius = 32;
+radialMenu.CenterButtonBorderColor = Color.White;
+void Handle_DragBegin(object sender, Syncfusion.SfRadialMenu.XForms.DragBeginEventArgs e)
+{
+    e.Handled = true;
+}
+this.Content = radialMenu;
+}
 }
 {% endhighlight %}
 {% endtabs %}
@@ -164,10 +157,10 @@ To hook the `DragEnd` event, and to get the start position, end position and res
  xmlns:radialMenu="clr-namespace:Syncfusion.SfRadialMenu.XForms;assembly=Syncfusion.SfRadialMenu.XForms">
     
 <ContentPage.Content>
-		<radialMenu:SfRadialMenu x:Name="radialMenu" CenterButtonText=""  CenterButtonBackText="" CenterButtonFontFamily="Segoe MDL2 Assets.ttf" CenterButtonBackFontFamily="Segoe MDL2 Assets.ttf" CenterButtonRadius="30" RimColor="#FFCDCBCE"  DragEnd="Handle_DragEnd" RimRadius="100" CenterButtonFontSize="26" CenterButtonTextColor="White"
-			CenterButtonBackgroundColor="#FF898889" CenterButtonBorderColor="White" CenterButtonBorderThickness="3">
-		</radialMenu:SfRadialMenu>
-	</ContentPage.Content>
+<radialMenu:SfRadialMenu x:Name="radialMenu" CenterButtonText=""  CenterButtonBackText="" CenterButtonFontFamily="Segoe MDL2 Assets.ttf" CenterButtonBackFontFamily="Segoe MDL2 Assets.ttf" CenterButtonRadius="30" RimColor="#FFCDCBCE"  DragEnd="Handle_DragEnd" RimRadius="100" CenterButtonFontSize="26" CenterButtonTextColor="White"
+CenterButtonBackgroundColor="#FF898889" CenterButtonBorderColor="White" CenterButtonBorderThickness="3">
+</radialMenu:SfRadialMenu>
+</ContentPage.Content>
 </ContentPage> 
 
 {% endhighlight %}
@@ -183,30 +176,28 @@ public class App : Application
         {
             MainPage = new RadialMenuPage ();
         }
-
     }
 Public class RadialMenuPage : ContentPage
+{  
+public RadialMenuPage ()
 {
-   
-	public RadialMenuPage ()
-	{
-		InitializeComponent();
-		//Creating instance for RadialMenu
-		SfRadialMenu radialMenu = new SfRadialMenu();
+InitializeComponent();
+//Creating instance for RadialMenu
+SfRadialMenu radialMenu = new SfRadialMenu();
 
-		//Initializing RadialMenu's properties
-		radialMenu.CenterButtonText = "\uE713";
-		radialMenu.CenterButtonFontFamily = "Segoe MDL2 Assets.ttf";
-		radialMenu.CenterButtonBackFontFamily = "Segoe MDL2 Assets.ttf";
-		radialMenu.CenterButtonRadius = 32;
-		radialMenu.CenterButtonBorderColor = Color.White;
+//Initializing RadialMenu's properties
+radialMenu.CenterButtonText = "\uE713";
+radialMenu.CenterButtonFontFamily = "Segoe MDL2 Assets.ttf";
+radialMenu.CenterButtonBackFontFamily = "Segoe MDL2 Assets.ttf";
+radialMenu.CenterButtonRadius = 32;
+radialMenu.CenterButtonBorderColor = Color.White;
 
-        void Handle_DragEnd(object sender, Syncfusion.SfRadialMenu.XForms.DragEndEventArgs e)
-        {
-            e.Handled = true;
-        }
-		this.Content = radialMenu;
-	}
+void Handle_DragEnd(object sender, Syncfusion.SfRadialMenu.XForms.DragEndEventArgs e)
+{
+    e.Handled = true;
+}
+this.Content = radialMenu;
+}
 }
 {% endhighlight %}
 {% endtabs %}
@@ -231,10 +222,10 @@ N> Default `CenterButtonPlacement` property value is Center.
  xmlns:radialMenu="clr-namespace:Syncfusion.SfRadialMenu.XForms;assembly=Syncfusion.SfRadialMenu.XForms">
     
 <ContentPage.Content>
-		<radialMenu:SfRadialMenu x:Name="radialMenu" CenterButtonPlacement="TopLeft" CenterButtonText=""  CenterButtonBackText="" CenterButtonFontFamily="Segoe MDL2 Assets.ttf" CenterButtonBackFontFamily="Segoe MDL2 Assets.ttf" CenterButtonRadius="30" RimColor="#FFCDCBCE" RimRadius="100" CenterButtonFontSize="26" CenterButtonTextColor="White"
-			CenterButtonBackgroundColor="#FF898889" CenterButtonBorderColor="White" CenterButtonBorderThickness="3">
-		</radialMenu:SfRadialMenu>
-	</ContentPage.Content>
+<radialMenu:SfRadialMenu x:Name="radialMenu" CenterButtonPlacement="TopLeft" CenterButtonText=""  CenterButtonBackText="" CenterButtonFontFamily="Segoe MDL2 Assets.ttf" CenterButtonBackFontFamily="Segoe MDL2 Assets.ttf" CenterButtonRadius="30" RimColor="#FFCDCBCE" RimRadius="100" CenterButtonFontSize="26" CenterButtonTextColor="White"
+CenterButtonBackgroundColor="#FF898889" CenterButtonBorderColor="White" CenterButtonBorderThickness="3">
+</radialMenu:SfRadialMenu>
+</ContentPage.Content>
 </ContentPage> 
 
 {% endhighlight %}
@@ -250,27 +241,25 @@ public class App : Application
         {
             MainPage = new RadialMenuPage ();
         }
-
     }
 Public class RadialMenuPage : ContentPage
 {
-   
-	public RadialMenuPage ()
-	{
-		InitializeComponent();
-		//Creating instance for RadialMenu
-		SfRadialMenu radialMenu = new SfRadialMenu();
 
-		//Initializing RadialMenu's properties
-		radialMenu.CenterButtonText = "\uE713";
-		radialMenu.CenterButtonFontFamily = "Segoe MDL2 Assets.ttf";
-		radialMenu.CenterButtonBackFontFamily = "Segoe MDL2 Assets.ttf";
-		radialMenu.CenterButtonRadius = 32;
-		radialMenu.CenterButtonBorderColor = Color.White;
-		radialMenu.CenterButtonPlacement = SfRadialMenuCenterButtonPlacement.TopLeft;
+public RadialMenuPage ()
+{
+InitializeComponent();
+//Creating instance for RadialMenu
+SfRadialMenu radialMenu = new SfRadialMenu();
 
-		this.Content = radialMenu;
-	}
+//Initializing RadialMenu's properties
+radialMenu.CenterButtonText = "\uE713";
+radialMenu.CenterButtonFontFamily = "Segoe MDL2 Assets.ttf";
+radialMenu.CenterButtonBackFontFamily = "Segoe MDL2 Assets.ttf";
+radialMenu.CenterButtonRadius = 32;
+radialMenu.CenterButtonBorderColor = Color.White;
+radialMenu.CenterButtonPlacement = SfRadialMenuCenterButtonPlacement.TopLeft;
+this.Content = radialMenu;
+}
 }
 {% endhighlight %}
 {% endtabs %}

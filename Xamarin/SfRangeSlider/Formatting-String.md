@@ -19,37 +19,37 @@ We have different formatting types such as currency format, exponential format, 
 
 {% highlight xaml %}
 
-  <StackLayout Margin="3">
-  
-   <range:SfRangeSlider x:Name="rangeSlider1" FormatString="Value: {0:c}" HeightRequest="90" WidthRequest="200" Minimum="0" Maximum="12" RangeStart="0" RangeEnd="12" TickFrequency="2"/>
-            
-   <range:SfRangeSlider x:Name="rangeslider2" FormatString="Value: {0:n}" Minimum="0" TickFrequency="2" Maximum="10"/>
-              
-   </StackLayout>
+<StackLayout Margin="3">
+
+<range:SfRangeSlider x:Name="rangeSlider1" FormatString="Value: {0:c}" HeightRequest="90" WidthRequest="200" Minimum="0" Maximum="12" RangeStart="0" RangeEnd="12" TickFrequency="2"/>
+        
+<range:SfRangeSlider x:Name="rangeslider2" FormatString="Value: {0:n}" Minimum="0" TickFrequency="2" Maximum="10"/>
+          
+</StackLayout>
  {% endhighlight %}
 
 {% highlight c# %}
 
-    StackLayout stack = new StackLayout();
-    SfRangeSlider rangeSlider1=new SfRangeSlider();
-	rangeSlider1.RangeEnd=12; 
-	rangeSlider1.RangeStart=0;
-	rangeSlider1.TickFrequency = 2;
-	rangeSlider1.HeightRequest="90";
-	rangeSlider1.WidthRequest=200;
-	rangeSlider1.FormatString = "Value: {0:c}"
-	rangeSlider1.ShowRange=true; 
-	rangeSlider1.TrackHeight="4";
-	rangeSlider1.Minimum=0; 
-	rangeSlider1.Maximum=12; 
-	SfRangeSlider rangeSlider2=new SfRangeSlider();
-	rangeSlider2.TickFrequency = 2;
-	rangeSlider2.FormatString = "Value: {0:c}"
-	rangeSlider2.Minimum=0; 
-	rangeSlider2.Maximum=10; 
-	this.stack.Children.Add(rangeSlider1);
-	this.stack.Children.Add(rangeSlider2);
-	this.Content = stack;
+StackLayout stack = new StackLayout();
+SfRangeSlider rangeSlider1=new SfRangeSlider();
+rangeSlider1.RangeEnd=12; 
+rangeSlider1.RangeStart=0;
+rangeSlider1.TickFrequency = 2;
+rangeSlider1.HeightRequest="90";
+rangeSlider1.WidthRequest=200;
+rangeSlider1.FormatString = "Value: {0:c}"
+rangeSlider1.ShowRange=true; 
+rangeSlider1.TrackHeight="4";
+rangeSlider1.Minimum=0; 
+rangeSlider1.Maximum=12; 
+SfRangeSlider rangeSlider2=new SfRangeSlider();
+rangeSlider2.TickFrequency = 2;
+rangeSlider2.FormatString = "Value: {0:c}"
+rangeSlider2.Minimum=0; 
+rangeSlider2.Maximum=10; 
+this.stack.Children.Add(rangeSlider1);
+this.stack.Children.Add(rangeSlider2);
+this.Content = stack;
 
 {% endhighlight %}
 {% endtabs %}
@@ -71,19 +71,19 @@ We have provided the support for changing the Culture when using Currency notati
 
 {% highlight c# %}
 
-    SfRangeSlider rangeSlider=new SfRangeSlider();
-	rangeSlider.RangeEnd=12; 
-	rangeSlider.RangeStart=0;
-	rangeSlider.TickFrequency = 2;
-	rangeSlider.HeightRequest="90";
-	rangeSlider.WidthRequest=200;
-	rangeSlider.FormatString = "Value: {0:c}"
-	rangeSlider.Culture = new System.Globalization.CultureInfo("fr-FR");
-	rangeSlider.ShowRange=true; 
-	rangeSlider.TrackHeight="4";
-	rangeSlider.Minimum=0; 
-	rangeSlider.Maximum=12; 
-	this.Content = rangeSlider;
+SfRangeSlider rangeSlider=new SfRangeSlider();
+rangeSlider.RangeEnd=12; 
+rangeSlider.RangeStart=0;
+rangeSlider.TickFrequency = 2;
+rangeSlider.HeightRequest="90";
+rangeSlider.WidthRequest=200;
+rangeSlider.FormatString = "Value: {0:c}"
+rangeSlider.Culture = new System.Globalization.CultureInfo("fr-FR");
+rangeSlider.ShowRange=true; 
+rangeSlider.TrackHeight="4";
+rangeSlider.Minimum=0; 
+rangeSlider.Maximum=12; 
+this.Content = rangeSlider;
 
 {% endhighlight %}
 {% endtabs %}

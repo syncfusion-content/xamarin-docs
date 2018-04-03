@@ -217,11 +217,6 @@ public partial class Swiping : SamplePage
         dataGrid.IsEnabled = true;
     }
 
-    private void dataGrid_GridViewCreated(object sender, GridViewCreatedEventArgs e)
-    {
-        dataGrid.GridStyle = new SwipeStyle();
-    }
-
     //Gesture listener to perform edit
     private void leftImage_BindingContextChanged(object sender, EventArgs e)
     {
@@ -365,7 +360,6 @@ private async void doDeleting()
 
 {
 
-    isSuspend = true;
 
     await Task.Delay(2000);
 
@@ -400,7 +394,6 @@ private async void doDeleting()
         IsUndoClicked = false;
 
     }
-    isSuspend = false;
 
 }
 
@@ -530,4 +523,4 @@ private void Datagrid_SwipeEnded(object sender, SwipeEndedEventArgs e)
 
 {% endhighlight %}
 
-You can download the source code of swiping sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Swiping-1219392351)
+You can download the source code of swiping sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Swiping-661295078)

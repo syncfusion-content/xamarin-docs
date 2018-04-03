@@ -2,7 +2,7 @@
 layout: post
 title: Overview of Essential Xamarin.Forms SfImageEditor
 description: What are the key features available in SfImageEditor.
-platform: Xamarin.Forms
+platform: xamarin.forms
 control: SfImageEditor
 documentation: ug
 ---

@@ -9,7 +9,7 @@ documentation: ug
 
 # Exporting
 
-**Export as an image**
+## Export as an image
 
 You can export the Chart as a JPG image using [`SaveAsImage`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~SaveAsImage.html#) method of [`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html#).
 
@@ -36,7 +36,7 @@ The exported image will be saved in the different location across the platforms.
 
 N> In order to save the image in Android and Windows Phone, you have to enable the permission to write the file in device storage.
 
-**Get the stream of Chart**
+## Get the stream of Chart
 
 The GetStream method of SfChart is used to get the chart as stream. The output stream can be passed as an input of any other components which accept the stream such as pdf, excel, word etc.
 

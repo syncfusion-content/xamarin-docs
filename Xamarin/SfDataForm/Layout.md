@@ -41,7 +41,7 @@ When the label position is Left, the grid layout is shown as follows:
 
 When the label position is Top, the grid layout is shown as follows:
 
-![](SfDataForm_images/LabelTop.png)
+![](SfDataForm_images/Layout_LabelTop.png)
 
 ## Label visibility
 

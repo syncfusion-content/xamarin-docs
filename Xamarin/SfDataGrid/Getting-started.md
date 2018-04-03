@@ -11,53 +11,18 @@ documentation: ug
 
 This section provides a quick overview for working with the SfDataGrid for Xamarin.Forms. Walk through the entire process of creating a real world of this control.
 
-## Assembly deployment
+## Adding SfDataGrid Reference
 
-After installing Essential Studio for Xamarin, find all the required assemblies in the installation folders {Syncfusion Essential Studio Installed location}\Essential Studio\{{ site.releaseversion }}\Xamarin\lib.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfDataGrid to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfDataGrid](https://www.nuget.org/packages/Syncfusion.Xamarin.SfDataGrid/), and then install it.
 
-Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Xamarin\lib.
+![](SfDataGrid_images/SfDataGrid_Nuget.png)
 
-N> Assemblies can be found in an unzipped package location in Mac.
-
-### The SfDataGrid for Xamarin.Forms
-
-The following list of assemblies should be added as reference from the lib folder to use the SfDataGrid in the application:
-
-<table>
-<tr>
-<th>Project</th>
-<th>Required assemblies</th>
-</tr>
-<tr>
-<td>PCL</td>
-<td>pcl\Syncfusion.Core.XForms.dll<br/>pcl\Syncfusion.Data.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfDataGrid.XForms.dll<br/>pcl\Syncfusion.SfNumericTextBox.XForms.dll<br/></td>
-</tr>
-<tr>
-<td>Android renderer</td>
-<td>android\Syncfusion.Core.XForms.dll<br/>android\Syncfusion.Data.Portable.dll<br/>android\Syncfusion.GridCommon.Portable.dll<br/>android\Syncfusion.SfDataGrid.XForms.dll<br/>android\Syncfusion.SfDataGrid.XForms.Android.dll<br/>android\Syncfusion.SfNumericTextBox.Android.dll<br/>android\Syncfusion.SfNumericTextBox.XForms.Android.dll<br/>android\Syncfusion.SfNumericTextBox.XForms.dll<br/></td>
-</tr>
-<tr>
-<td>iOS renderer</td>
-<td>ios-unified\Syncfusion.Core.XForms.dll<br/>ios-unified\Syncfusion.Data.Portable.dll<br/>ios-unified\Syncfusion.GridCommon.Portable.dll<br/>ios-unified\Syncfusion.SfDataGrid.XForms.dll<br/>ios-unified\Syncfusion.SfDataGrid.XForms.iOS.dll<br/>ios-unified\Syncfusion.SfNumericTextBox.iOS.dll<br/>ios-unified\Syncfusion.SfNumericTextBox.XForms.dll<br/>ios-unified\Syncfusion.SfNumericTextBox.XForms.iOS.dll<br/></td>
-</tr>
-<tr>
-<td>UWP renderer</td>
-<td>uwp\Syncfusion.Core.XForms.dll<br/>uwp\Syncfusion.Data.Portable.dll<br/>uwp\Syncfusion.GridCommon.Portable.dll<br/>uwp\Syncfusion.SfDataGrid.XForms.dll<br/>uwp\Syncfusion.SfDataGrid.XForms.UWP.dll<br/>uwp\Syncfusion.SfInput.UWP.dll<br/>uwp\Syncfusion.SfShared.UWP.dll<br/>uwp\Syncfusion.SfNumericTextBox.XForms.dll<br/>uwp\Syncfusion.SfNumericTextBox.XForms.UWP.dll<br/></td>
-</tr>
-</table>
+To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfdatagrid) to know about the dependent assemblies for SfDataGrid.
 
 To export to excel and PDF functionalities of the SfDataGrid, add the following assembly to the pcl project:
 
-<table>
-<tr>
-<th>Project</th>
-<th>Required assemblies</th>
-</tr>
-<tr>
-<td>PCL</td>
-<td>pcl\Syncfusion.SfGridConverter.XForms.dll<br/>pcl\Syncfusion.Compression.Portable.dll<br/>pcl\Syncfusion.Pdf.Portable.dll<br/>pcl\Syncfusion.XlsIO.Portable.dll<br/></td>
-</tr>
-</table>
+![](SfDataGrid_images/SfGridConverter_Nuget.png)
+
 
 N> When there is a mismatch of Xamarin NuGet packages between the sample and the SfDataGrid assemblies, an error `Could not load type Xamarin.Forms.ElementTemplate` will occur. Refer to the `ReadMe` to know the software requirements of the Syncfusion controls.
 

@@ -84,7 +84,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
     List<Assembly> assembliesToInclude = new List<Assembly>();
 
     //Now, add all the assemblies your app uses
-    assembliesToInclude.Add(typeof(SfDataGridRenderer).GetTypeInfo().Assembly);
+    assembliesToInclude.Add(typeof(Syncfusion.SfDataGrid.XForms.UWP.SfDataGridRenderer).GetTypeInfo().Assembly);
 
     // replaces Xamarin.Forms.Forms.Init(e);        
     Xamarin.Forms.Forms.Init(e, assembliesToInclude);

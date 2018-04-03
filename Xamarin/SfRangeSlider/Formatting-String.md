@@ -7,7 +7,7 @@ control: RangeSlider
 documentation: ug
 ---
 
-# Formatting string
+# Formatting String
 
 The Value label of the SfRangeSlider can be configured to display different formats like currency format, percent format etc. We can also customize the Value label with string formatting. We can customize using `FormatString` property which determines the format specifier by which the display Value has to be formatted.
 

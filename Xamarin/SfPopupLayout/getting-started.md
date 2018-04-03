@@ -237,7 +237,7 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-Executing the above codes renders the following output in iOS, Android and Windows phone devices respectively.
+Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
 ![](GettingStarted_images/DefaultAppearance.png)
 
@@ -325,7 +325,7 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-Executing the above codes renders the following output in iOS, Android and Windows phone devices respectively.
+Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
 ![](GettingStarted_images/ContentView.png)
 

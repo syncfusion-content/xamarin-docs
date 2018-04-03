@@ -89,11 +89,11 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-Executing the above codes renders the following output in iOS, Android and Windows phone devices respectively.
+Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
 ![](GettingStarted_images/IsOpen_Property.png)
 
-N> SfPopupLayout.IsOpen property is not applicable for displaying pop-up when the SfPopupLayout is not set as root view.
+N> SfPopupLayout.IsOpen property is not applicable for `Displaying pop-up when the SfPopupLayout is not set as root view`.
 
 ### SfPopupLayout.Show()
 
@@ -140,7 +140,7 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-Executing the above codes renders the following output in iOS, Android and Windows phone devices respectively.
+Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
 ![](GettingStarted_images/ShowPopup.png)
 
@@ -193,7 +193,7 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-Executing the above codes renders the following output in iOS, Android and Windows phone devices respectively.
+Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
 ![](GettingStarted_images/ShowAtXYPosition.png)
 
@@ -242,11 +242,11 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-Executing the above codes renders the following output in iOS, Android and Windows phone devices respectively.
+Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
 ![](GettingStarted_images/ShowAtTouchPoint.png)
 
-N> SfPopupLayout.ShowAtTouchPoint() is not applicable for displaying pop-up when the SfPopupLayout is not set as root view .
+N> SfPopupLayout.ShowAtTouchPoint() is not applicable for `Displaying pop-up when the SfPopupLayout is not set as root view`.
 
 ## Relative positioning
 
@@ -300,6 +300,6 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-Executing the above codes renders the following output in iOS, Android and Windows phone devices respectively.
+Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
 ![](GettingStarted_images/RelativeToBottom.png)

@@ -26,7 +26,7 @@ public MainPage()
 }
 {% endhighlight %}
 
-Executing the above codes renders the following output in iOS, Android and Windows phone devices respectively.
+Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
 ![](PopupLayout_images/ShowHeader_False.png)
 
@@ -48,7 +48,7 @@ public MainPage()
 }
 {% endhighlight %}
 
-Executing the above codes renders the following output in iOS, Android and Windows phone devices respectively.
+Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
 ![](PopupLayout_images/ShowFooter_False.png)
 
@@ -70,7 +70,7 @@ public MainPage()
 }
 {% endhighlight %}
 
-Executing the above codes renders the following output in iOS, Android and Windows phone devices respectively.
+Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
 ![](PopupLayout_images/ShowClosebutton_False.png)
 
@@ -354,8 +354,8 @@ Refer the below code example to show the popup in Item tapped event.
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ListViewWithPopup"
-               x:Class="ListViewWithPopup.MainPage"
-               xmlns:listView="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"     
+             x:Class="ListViewWithPopup.MainPage"
+             xmlns:listView="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"     
              xmlns:popuplayout="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms">
 
     <ContentPage.BindingContext>
@@ -367,7 +367,7 @@ Refer the below code example to show the popup in Item tapped event.
         <popuplayout:SfPopupLayout.Content>-->
           <listView:SfListView  x:Name="listView" 
                                 ItemSize="70"
-                                ItemsSource="{Binding contactsinfo}" 
+                                ItemsSource="{Binding contactsInfo}" 
                                 ItemSpacing="0,0,5,0" >
             <listView:SfListView.ItemTemplate>
                 <DataTemplate>

@@ -75,7 +75,7 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-Executing the above codes renders the following output in iOS, Android and Windows phone devices respectively.
+Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
 ![](GettingStarted_images/AppearanceMode_OneButton.png)
 
@@ -126,7 +126,7 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-Executing the above codes renders the following output in iOS, Android and Windows phone devices respectively.
+Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
 ![](GettingStarted_images/AppearanceMode_TwoButton.png)
 
@@ -196,7 +196,7 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-Executing the above codes renders the following output in iOS, Android and Windows phone devices respectively.
+Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
 ![](PopupLayout_images/HeaderTemplate.png)
 
@@ -261,7 +261,7 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-Executing the above codes renders the following output in iOS, Android and Windows phone devices respectively.
+Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
 ![](PopupLayout_images/FooterTemplate.png)
 
@@ -324,7 +324,7 @@ public MainPage()
 
 {% endhighlight %}
 
-Executing the above codes renders the following output in iOS, Android and Windows phone devices respectively.
+Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
 ![](PopupLayout_images/HeaderCustomization.png)
 
@@ -383,7 +383,7 @@ public MainPage()
 
 {% endhighlight %}
 
-Executing the above codes renders the following output in iOS, Android and Windows phone devices respectively.
+Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
 ![](PopupLayout_images/FooterCustomization.png)
 
@@ -427,6 +427,6 @@ public MainPage()
 
 {% endhighlight %}
 
-Executing the above codes renders the following output in iOS, Android and Windows phone devices respectively.
+Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
 ![](PopupLayout_images/BorderCustomization.png)

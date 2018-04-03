@@ -265,6 +265,8 @@ By default, you can choose a layout from the following available layouts in the 
 
 You can also customize the entire view of the popup by loading the templates or custom views for the header, body, and footer.
 
+More information for pop-up positioning is in this [link](https://help.syncfusion.com/xamarin-ios/sfpopuplayout/layout-customizations).
+
 ###  Load your template view in the popup body
 
 Any view can be added as the pop-up content using the [SfPopupLayout.PopupView.ContentTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~ContentTemplate.html) property to refresh it. Refer to the following code example in which a label is added as a popup content and displaying popup when the SfPopupLayout is set as root view

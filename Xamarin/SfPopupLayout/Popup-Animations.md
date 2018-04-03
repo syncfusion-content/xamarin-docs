@@ -57,7 +57,7 @@ public MainPage()
 }
 {% endhighlight %}
 
-Executing the above codes renders the following output in iOS, Android and Windows phone devices respectively.
+Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
 ![](GettingStarted_images/ZoomAnimation.gif)
 
@@ -77,7 +77,7 @@ public MainPage()
 }
 {% endhighlight %}
 
-Executing the above codes renders the following output in iOS, Android and Windows phone devices respectively.
+Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
 ![](GettingStarted_images/FadeAnimation.gif)
 
@@ -97,7 +97,7 @@ public MainPage()
 }
 {% endhighlight %}
 
-Executing the above codes renders the following output in iOS, Android and Windows phone devices respectively.
+Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
 ![](GettingStarted_images/SlideOnLeftAnimation.gif)
 
@@ -117,7 +117,7 @@ public MainPage()
 }
 {% endhighlight %}
 
-Executing the above codes renders the following output in iOS, Android and Windows phone devices respectively.
+Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
 ![](GettingStarted_images/SlideOnTopAnimation.gif)
 
@@ -137,6 +137,6 @@ public MainPage()
 }
 {% endhighlight %}
 
-Executing the above codes renders the following output in iOS, Android and Windows phone devices respectively.
+Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
 ![](GettingStarted_images/AnimationMode_None.gif)

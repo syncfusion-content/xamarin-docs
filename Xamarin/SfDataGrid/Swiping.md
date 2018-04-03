@@ -530,4 +530,4 @@ private void Datagrid_SwipeEnded(object sender, SwipeEndedEventArgs e)
 
 {% endhighlight %}
 
-You can download the source code of swiping sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Swiping-1730389270)
+You can download the source code of swiping sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Swiping-1219392351)

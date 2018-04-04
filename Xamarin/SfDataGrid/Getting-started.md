@@ -11,7 +11,15 @@ documentation: ug
 
 This section provides a quick overview for working with the SfDataGrid for Xamarin.Forms. Walk through the entire process of creating a real world of this control.
 
-## Adding SfDataGrid Reference
+## Assembly deployment
+
+After installing Essential Studio for Xamarin, find all the required assemblies in the installation folders {Syncfusion Essential Studio Installed location}\Essential Studio\{{ site.releaseversion }}\Xamarin\lib.
+
+Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Xamarin\lib.
+
+N> Assemblies can be found in an unzipped package location in Mac.
+
+### Adding SfDataGrid Reference
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfDataGrid to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfDataGrid](https://www.nuget.org/packages/Syncfusion.Xamarin.SfDataGrid/), and then install it.
 
@@ -19,9 +27,11 @@ Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.o
 
 To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfdatagrid) to know about the dependent assemblies for SfDataGrid.
 
-To export to excel and PDF functionalities of the SfDataGrid, add the following assembly to the pcl project:
+To export the SfDataGrid to Excel and PDF formats, search for [Syncfusion.Xamarin.SfGridConverter](https://www.nuget.org/packages/Syncfusion.Xamarin.SfGridConverter/) in the NuGet package manager, and then install it.
 
 ![](SfDataGrid_images/SfGridConverter_Nuget.png)
+
+ If you prefer to manually refer the assemblies instead of NuGet for the using the exporting functionalities of SfDataGrid, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfgridconverter) to know about the dependent assemblies for exporting SfDataGrid.
 
 
 N> When there is a mismatch of Xamarin NuGet packages between the sample and the SfDataGrid assemblies, an error `Could not load type Xamarin.Forms.ElementTemplate` will occur. Refer to the `ReadMe` to know the software requirements of the Syncfusion controls.
@@ -82,7 +92,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
     List<Assembly> assembliesToInclude = new List<Assembly>();
 
     //Now, add all the assemblies your app uses
-    assembliesToInclude.Add(typeof(SfDataGridRenderer).GetTypeInfo().Assembly);
+    assembliesToInclude.Add(typeof(Syncfusion.SfDataGrid.XForms.UWP.SfDataGridRenderer).GetTypeInfo().Assembly);
 
     // replaces Xamarin.Forms.Forms.Init(e);        
     Xamarin.Forms.Forms.Init(e, assembliesToInclude);
@@ -517,11 +527,3 @@ The above exceptions can be resolved in two ways.
 
 
 ![](SfDataGrid_images/GettingStarted_img1.png)
-
-## Loading the SfDataGrid inside a SfPullToRefresh
-
-The SfPullToRefresh is a refresh control. That allows to interact and refresh the view loaded in it. When the SfDataGrid is hosted inside the SfPullToRefresh, it is used to refresh the item while performing the pull to refresh action. The steps to be followed to host the SfDataGrid inside SfPullToRefresh is explained in SfPullToRefresh Property Customization tab.
-
-The final output will look like on iOS, Android, and Windows Phone devices as follows.
-
-![](SfDataGrid_images/SfDataGrid_SlideOnTop_XForms.gif)

@@ -15,9 +15,9 @@ A group represents a collection of items belongs to a category. When grouping is
 
 The SfListView allows programmatic grouping by defining the [GroupDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor.html) object, and adding it into the [DataSource.GroupDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~GroupDescriptors.html) collection. The `GroupDescriptor` object holds the following properties:
 
-* PropertyName: Describes the name of the property to be grouped.
-* KeySelector: Describes selector to return the group key.
-* Comparer: Describes comparer to be applied in when sorting take place.
+* [PropertyName](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~PropertyName.html: Describes the name of the property to be grouped.
+* [KeySelector](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~KeySelector.html): Describes selector to return the group key.
+* [Comparer](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~Comparer.html): Describes comparer to be applied in when sorting take place.
 
 {% tabs %}
 {% highlight xaml %}
@@ -413,8 +413,8 @@ The [SfListView.GroupExpanding](https://help.syncfusion.com/cr/cref_files/xamari
  
 The [GroupExpandCollapseChangingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GroupExpandCollapseChangingEventHandler.html) of the `GroupExpanding` event provides the information about the expanding group and it has the following members:
 
-`Groups`: Gets a list of groups being expanded.
-`Cancel`: Decides whether to cancel the group expansion or not.
+[Groups](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GroupExpandCollapseChangingEventArgs~Groups.html): Gets a list of groups being expanded.
+[Cancel](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel&rd=true): Decides whether to cancel the group expansion or not.
 
 The `GroupExpanding` event used for the following use case.
 
@@ -448,7 +448,7 @@ The [SfListView.GroupExpanded](https://help.syncfusion.com/cr/cref_files/xamarin
 
 The [GroupExpandCollapseChangedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GroupExpandCollapseChangedEventHandler.html) of the `GroupExpanded` event provides the information about the expanded group and it has the following member:
 
-`Groups`: Gets a list of expanded groups.
+[Groups](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GroupExpandCollapseChangedEventArgs~Groups.html): Gets a list of expanded groups.
 
 ### GroupCollapsing Event 
 
@@ -456,8 +456,8 @@ The [SfListView.GroupCollapsing](https://help.syncfusion.com/cr/cref_files/xamar
 
 The [GroupExpandCollapseChangingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GroupExpandCollapseChangingEventHandler.html) of the `GroupCollapsing` event provides the information about the collapsing group and it contains the following members:
 
-`Groups`: Gets a list of groups being collapsed.
-`Cancel`: Decides whether to cancel the group collapsing or not.
+[Groups](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GroupExpandCollapseChangingEventArgs~Groups.html): Gets a list of groups being collapsed.
+[Cancel](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel&rd=true): Decides whether to cancel the group collapsing or not.
 
 You can cancel the group is being collapsed by using the `GroupExpandCollapseChangingEventArgs.Cancel` of `GroupCollapsing` event.
 
@@ -487,7 +487,7 @@ The [SfListView.GroupCollapsed](https://help.syncfusion.com/cr/cref_files/xamari
  
 The [GroupExpandCollapseChangedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GroupExpandCollapseChangedEventHandler.html) of the `GroupCollapsed` event provides the information about collapsed group and it contains the following member.
 
-`Groups`: Gets a list of collapsed groups.
+[Groups](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GroupExpandCollapseChangedEventArgs~Groups.html): Gets a list of collapsed groups.
 
 ## Stick Group Header
 

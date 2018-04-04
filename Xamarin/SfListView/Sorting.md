@@ -17,9 +17,9 @@ Sorting the data by creating the [SortDescriptor](https://help.syncfusion.com/cr
 
 `SortDescriptor` object holds the following three properties:
 
-* PropertyName: Describes the name of the sorted property.
-* Direction: Describes an object of type [ListSortDirection](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.ListSortDirection.html) that defines the sorting direction.
-* Comparer: Describes the comparer to be applied when sorting take place.
+* [PropertyName](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.DataSource.Portable~Syncfusion.DataSource.SortDescriptor~PropertyName.html): Describes the name of the sorted property.
+* [Direction](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.DataSource.Portable~Syncfusion.DataSource.SortDescriptor~Direction.html): Describes an object of type [ListSortDirection](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.ListSortDirection.html) that defines the sorting direction.
+* [Comparer](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.DataSource.Portable~Syncfusion.DataSource.SortDescriptor~Comparer.html): Describes the comparer to be applied when sorting take place.
 
 {% tabs %}
 {% highlight xaml %}
@@ -234,7 +234,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot shows the output when items are sorted by month and year.
+The following screenshot shows the output when items are sorted by year. You can download the entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewSample1205954757)
 
 ![](SfListView_images/SfListView-Sorting1.png)
 

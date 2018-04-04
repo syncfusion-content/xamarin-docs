@@ -133,9 +133,9 @@ private void ListView_Loaded(object sender, ListViewLoadedEventArgs e)
 
 The [ItemTapped](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTapped_EV.html) event will be triggered whenever you have tapped on the item. [ItemTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemTappedEventArgs.html) has the following members which provides the information for `ItemTapped` event.
 
- * ItemType: It gets the type of the tapped item.
- * ItemData: The underlying data associated with the tapped item as its arguments.
- * Position: Gets the touch position in the tapped item.
+ * [ItemType](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemTappedEventArgs~ItemType.html): It gets the type of the tapped item.
+ * [ItemData](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemTappedEventArgs~ItemData.html): The underlying data associated with the tapped item as its arguments.
+ * [Position](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemTappedEventArgs~Position.html): Gets the touch position in the tapped item.
 
 {% highlight c# %}
 listView.ItemTapped += ListView_ItemTapped;
@@ -151,9 +151,9 @@ private void ListView_ItemTapped(object sender, Syncfusion.ListView.XForms.ItemT
 
 The [ItemDoubleTapped](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemDoubleTapped_EV.html) event will be triggered whenever double tapping the item. The [ItemDoubleTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDoubleTappedEventArgs.html) has the following members providing information for the `ItemDoubleTapped` event:
 
- * ItemType: It gets the type of double tapped item.
- * ItemData: The underlying data associated with the double tapped item as its arguments.
- * Position: Gets the touch position in the double tapped item.
+ * [ItemType](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDoubleTappedEventArgs~ItemType.html): It gets the type of double tapped item.
+ * [ItemData](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDoubleTappedEventArgs~ItemData.html): The underlying data associated with the double tapped item as its arguments.
+ * [Position](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDoubleTappedEventArgs~Position.html): Gets the touch position in the double tapped item.
 
 {% highlight c# %}
 listView.ItemDoubleTapped += ListView_ItemDoubleTapped;
@@ -171,9 +171,9 @@ private void ListView_ItemDoubleTapped(object sender, ItemDoubleTappedEventArgs 
 
 The [ItemHolding](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemHolding_EV.html) event will be triggered whenever you have long pressed on the item. [ItemHoldingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemHoldingEventArgs.html) has the following members which provides the information for `ItemHolding` event.
 
- * ItemType: It gets the type of the long pressed item.
- * ItemData: The underlying data associated with the holding item as its arguments.
- * Position: Gets the touch position in the holding item.
+ * [ItemType](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemHoldingEventArgs~ItemType.html): It gets the type of the long pressed item.
+ * [ItemData](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemHoldingEventArgs~ItemData.html): The underlying data associated with the holding item as its arguments.
+ * [Position](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemHoldingEventArgs~Position.html): Gets the touch position in the holding item.
  
 {% highlight c# %}
 listView.ItemHolding += ListView_ItemHolding;
@@ -189,7 +189,7 @@ private void ListView_ItemHolding(object sender, ItemHoldingEventArgs e)
 
 The [ItemAppearing](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemAppearing_EV.html) event is raised when the items are appearing in the view on scrolling, loading and navigating from one page to another page. The [ItemAppearingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemAppearingEventArgs.html) has the following members which provide the information of appearing Items.
 
-* **ItemData** - The underlying data associated with the appearing item
+* [ItemData](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemAppearingEventArgs~ItemData.html) - The underlying data associated with the appearing item
  
 {% highlight c# %}
 listView.ItemAppearing += listView_ItemAppearing;
@@ -209,7 +209,7 @@ private void listView_ItemAppearing(object sender, Syncfusion.ListView.XForms.It
 
 The [ItemDisappearing](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemDisappearing_EV.html) event is raised when the items are disappearing in the view on scrolling, disposing and navigating from one page to another page. The [ItemDisappearingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDisappearingEventArgs.html) has the following members which provide the information on disappearing Items.
 
-* **ItemData** - The underlying data associated with the disappearing item
+* [ItemData](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDisappearingEventArgs~ItemData.html) - The underlying data associated with the disappearing item
 
 {% highlight c# %}
 listView.ItemDisappearing += listView_ItemDisappearing;

@@ -46,7 +46,7 @@ The [`OverlayColor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/S
 
 `RangeChanged` event will be fired whenever you drag the thumbs. If you are doing some long running tasks in this event handler, then dragging the thumbs will not be smooth. You can delay this event by enabling [`EnableDeferredUpdate`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator~EnableDeferredUpdate.html) property. If this property is set to true, the `RangeChanged` event will get fired only when you stop dragging or if the thumb is held for more than 500 milliseconds. If it is false, the range will be updated for every movement of the thumb. However, It is true by default.
 
-The delay of update is 500 milliseconds by default. However, it can be changed using [`DeferredUpdateDelay`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator~DeferredUpdateDelay.html) property of SfDateTimeRangeNavigator.
+The delay of update is 500 milliseconds by default. However, it can be changed using [`DeferredUpdateDelay`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator~DeferredUpdateDelay.html) property of `SfDateTimeRangeNavigator`.
 
 {% tabs %}
 {% highlight xaml %}

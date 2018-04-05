@@ -344,6 +344,35 @@ lineSeries.DataMarker.MarkerBorderWidth = 2;
 
 ![](datamarker_images/datamarker_img8.png)
 
+## Applying Series Brush
+
+The [`UseSeriesPalette`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataMarker~UseSeriesPalette.html) property sets the interior of the series to the data marker's background. The default value of this property is true. If you don't need to set series interior to data marker, set the [`UseSeriesPalette`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataMarker~UseSeriesPalette.html) property to false.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:ColumnSeries>
+
+	<chart:ColumnSeries.DataMarker>
+
+		<chart:ChartDataMarker UseSeriesPalette="True"/>
+
+	</chart:ColumnSeries.DataMarker>
+
+</chart:ColumnSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+columnSeries.DataMarker = new ChartDataMarker();
+columnSeries.DataMarker.UseSeriesPalette = true;
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Connector Line
 
 This feature is used to connect label and data point using a line. It can be enabled for any chart types but this is often used with Pie and Doughnut chart types. The [`ConnectorLineStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataMarker~ConnectorLineStyle.html) property used to customize the connector line.

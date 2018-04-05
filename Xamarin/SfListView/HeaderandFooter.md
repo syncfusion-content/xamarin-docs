@@ -338,18 +338,16 @@ The screenshot shows the output of tabbed page show when tap the header item. Yo
             <RowDefinition Height="*"/>
             <RowDefinition Height="70"/>
   </Grid.RowDefinitions>
-  <StackLayout BackgroundColor="Teal"> 
-    <Label Text="ListView AutoFit" FontSize="18" HorizontalTextAlignment="Center" 
-           VerticalTextAlignment="Center" TextColor="White"/> 
-  </StackLayout> 
+  <Grid BackgroundColor="Teal"> 
+    <Label Text="ListView AutoFit" FontSize="18" VerticalOptions="Center" HorizontalOptions="Center" TextColor="White"/> 
+  </Grid> 
   <sync:SfListView x:Name="listView" ItemSize="80" GroupHeaderSize="80" 
                    ItemSpacing="2" Grid.Row="1" 
                    AutoFitMode="Height" 
                    ItemsSource="{Binding BookInfo}"/> 
-  <StackLayout BackgroundColor="Teal" Grid.Row="2"> 
-    <Label Text="ListView Footer Item" FontSize="18" HorizontalTextAlignment="Center" 
-           VerticalTextAlignment="Center" TextColor="White"/> 
-  </StackLayout> 
+  <Grid BackgroundColor="Teal" Grid.Row="2"> 
+    <Label Text="ListView Footer Item" FontSize="18" VerticalOptions="Center" HorizontalOptions="Center" TextColor="White"/> 
+  </Grid> 
 </Grid> 
 {% endhighlight %}
 

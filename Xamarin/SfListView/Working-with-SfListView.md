@@ -45,6 +45,10 @@ In the following sample, ScrollView height is set into the `HeightRequest` of Sf
 
 You can download the entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfListViewSample197024233.zip).
 
+### Limitation
+
+When SfListView is loaded inside the ScrollView with the height of total items, scrolling will not occur in `SfListView` only when [AllowSwiping](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AllowSwiping.html) is set to be `true`. SfListView doesn't pass touch to the parent ScrollView in UWP, because swiping is handled in it.
+
 ## Load SfListView inside SfPullToRefresh
 
 The SfPullToRefresh is a refresh control allows you to interact and refresh the view loaded in it. When the SfListView is loaded inside the SfPullToRefresh, it refreshes the item while performing the pull to refresh action. The steps to be followed to load the SfListView inside SfPullToRefresh is explained in SfPullToRefresh property Customization tab.
@@ -183,7 +187,7 @@ private void ListView_ItemHolding(object sender, ItemHoldingEventArgs e)
 
 ### ItemAppearing
 
-The [ItemAppearing](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemAppearing_EV.html) event is raised when the items are appearing in the view on scrolling, loading and navigating from one page to another page. The [ItemAppearingEventArgs]((https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemAppearingEventArgs.html)) has the following members which provide the information of appearing Items.
+The [ItemAppearing](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemAppearing_EV.html) event is raised when the items are appearing in the view on scrolling, loading and navigating from one page to another page. The [ItemAppearingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemAppearingEventArgs.html) has the following members which provide the information of appearing Items.
 
 * **ItemData** - The underlying data associated with the appearing item
  

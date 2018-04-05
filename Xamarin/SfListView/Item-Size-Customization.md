@@ -34,13 +34,17 @@ this.listView.QueryItemSize += ListView_QueryItemSize;
 
 private void ListView_QueryItemSize(object sender, Syncfusion.ListView.XForms.QueryItemSizeEventArgs e)
 {
-    if(e.ItemIndex == 5)
+    if(e.ItemIndex == 1)
     {
-        e.ItemSize = 100;
+        e.ItemSize = 300;
         e.Handled = true;
     }
 }
 {% endhighlight %}
+
+The following screenshot shows the output of QueryItemSize. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AutoFit-1318092121).
+
+![](SfListView_images/QueryItemSize.jpg)
 
 ## AutoFit the items based on the content
 
@@ -65,9 +69,9 @@ listView.AutoFitMode = AutoFitMode.Height;
 
 N> If you define any size manually to view which loaded in [SfListView.ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html), the SfListView will returns that size as item size of each item. 
 
-The following screenshot shows the output of AutoFit items. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Listview_AutoFit336794972).
+The following screenshot shows the output of AutoFit items. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AutoFit2085660985).
 
-![](SfListView_images/AutofitItems.png)
+![](SfListView_images/AutoFit.jpg)
 
 ## Limitations
 

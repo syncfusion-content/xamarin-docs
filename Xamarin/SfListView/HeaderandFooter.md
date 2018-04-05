@@ -188,7 +188,7 @@ The [SfListView](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Sy
 
 **C#**
 
-{% highlight C# %}
+{% highlight c# %}
 public partial class MainPage : ContentPage
 {
     BookInfoRepository viewModel = new BookInfoRepository();

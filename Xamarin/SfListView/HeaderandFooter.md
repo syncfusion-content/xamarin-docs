@@ -327,30 +327,100 @@ The screenshot shows the output of tabbed page show when tap the header item. Yo
 
 ### Display the Header/Footer in vertical mode when listview is in horizontal mode
 
-[SfListView](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView.html) layout the header and footer item based on the [Orientation](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~Orientation.html). You can load the header and footer element with stick to the view, by customizing the **Grid** as like below code example which creates the header element at the top of the view, footer at bottom of the view and loads the items at the center. 
+[SfListView](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView.html) layout the header and footer item based on the [Orientation](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~Orientation.html). You can load the header and footer element with stick to the view, by customizing the **SfListView** as like below code example which creates the header element at the top of the view, footer at bottom of the view and loads the items at the center based on the layout method. 
 
 **XAML**
 
 {% highlight xaml %}
-<Grid> 
-  <Grid.RowDefinitions>
-            <RowDefinition Height="70"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="70"/>
-  </Grid.RowDefinitions>
-  <Grid BackgroundColor="Teal"> 
-    <Label Text="ListView AutoFit" FontSize="18" VerticalOptions="Center" HorizontalOptions="Center" TextColor="White"/> 
-  </Grid> 
-  <sync:SfListView x:Name="listView" ItemSize="80" GroupHeaderSize="80" 
-                   ItemSpacing="2" Grid.Row="1" 
-                   AutoFitMode="Height" 
-                   ItemsSource="{Binding BookInfo}"/> 
-  <Grid BackgroundColor="Teal" Grid.Row="2"> 
-    <Label Text="ListView Footer Item" FontSize="18" VerticalOptions="Center" HorizontalOptions="Center" TextColor="White"/> 
-  </Grid> 
-</Grid> 
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AutoFitSample.MainPage"
+             xmlns:local="clr-namespace:AutoFitSample;assembly=AutoFitSample">
+    <ContentPage.BindingContext>
+        <local:ListViewAutoFitContentViewModel x:Name="ViewModel"/>
+    </ContentPage.BindingContext>
+   
+    <local:SfListViewExt x:Name="listView" ItemSize="180" GroupHeaderSize="80"
+                         ItemSpacing="2" Orientation="Horizontal"
+                         ItemsSource="{Binding BookInfo}"
+                         SelectionMode="None"
+                         IsStickyGroupHeader="False"
+                         SelectionBackgroundColor="#d3d3d3">
+        <local:SfListViewExt.ItemTemplate>
+                <DataTemplate>
+                    <Grid RowSpacing="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="1" />
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0" RowSpacing="0" Padding="5,10,5,5">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <StackLayout Padding="10,0,0,0" Orientation="Vertical" Grid.Column="1">
+                                <Label Text="{Binding BookName}" FontAttributes="Bold" FontSize="18" TextColor="#474747" VerticalTextAlignment="Center"/>
+                                <Label Text="By Syncfusion Software" FontSize="12" TextColor="#474747" VerticalTextAlignment="Center"/>
+                                <Label Text="Published on: March 22, 2017" FontSize="12" TextColor="#474747" VerticalTextAlignment="Center"/>
+                            </StackLayout>
+                        </Grid>
+                        <StackLayout Padding="5,10,0,5" Grid.Row="1" Orientation="Vertical">
+                            <Label Text="Description" FontSize="15" FontAttributes="Bold"  TextColor="#474747" VerticalTextAlignment="Center"/>
+                            <Label Text="{Binding BookDescription}" TextColor="#474747" FontSize="14" VerticalTextAlignment="Center"/>
+                        </StackLayout>
+                        <BoxView Grid.Row="2" HeightRequest="1" BackgroundColor="#474747" />
+                    </Grid>
+                </DataTemplate>
+            </local:SfListViewExt.ItemTemplate>
+        </local:SfListViewExt>
+</ContentPage> 
 {% endhighlight %}
 
-The screenshot shows the output of header/footer in vertical mode when listview is in horizontal mode. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Header_Footer_Vertical-1553621205).
+**C#**
+
+{% highlight c# %}
+public class SfListViewExt : SfListView
+{
+    Grid headerGrid;
+    Grid footerGrid;
+
+    public SfListViewExt()
+    {
+        headerGrid = new Grid();
+        headerGrid.BackgroundColor = Color.Teal;
+        Label headerLabel = new Label();
+        headerLabel.Text = "Header Item";
+        headerLabel.FontSize = 18;
+        headerLabel.TextColor = Color.White;
+        headerLabel.HorizontalOptions = LayoutOptions.Center;
+        headerLabel.VerticalOptions = LayoutOptions.Center;
+        headerGrid.Children.Add(headerLabel);
+
+        footerGrid = new Grid();
+        footerGrid.BackgroundColor = Color.Teal;
+        Label footerLabel = new Label();
+        footerLabel.Text = "Footer Item";
+        footerLabel.FontSize = 18;
+        footerLabel.TextColor = Color.White;
+        footerLabel.HorizontalOptions = LayoutOptions.Center;
+        footerLabel.VerticalOptions = LayoutOptions.Center;
+        footerGrid.Children.Add(footerLabel);
+
+        this.Children.Add(headerGrid);
+        this.Children.Add(footerGrid);
+    }
+
+    protected override void LayoutChildren(double x, double y, double width, double height)
+    {
+        headerGrid.Layout(new Rectangle(0, 0, width, 70));
+        footerGrid.Layout(new Rectangle(0, height - 70, width, 70));
+        base.LayoutChildren(0, 70, width, height);
+    }
+}
+{% endhighlight %}
+
+The screenshot shows the output of header/footer in vertical mode when listview is in horizontal mode. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Header_Footer_Vertical-69423607).
 
 ![](SfListView_images/Vertical_Header_Horizontal_ListView.jpg)

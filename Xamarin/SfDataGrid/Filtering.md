@@ -9,17 +9,17 @@ documentation: UG
 
 # Filtering
 
-SfDataGrid provides support for view filtering.
+The SfDataGrid supports to view filtering.
 
 ## View Filtering
 
-SfDataGrid provides support to filter the records in view by setting `SfDataGrid.View.Filter` property where `Filter` is a `predicate`.
+The SfDataGrid supports to filter the records in view by setting `SfDataGrid.View.Filter` property where `Filter` is a `predicate`.
 
-In order to filter the records in SfDataGrid, you have to assign the filtered strings to the `ViewModel.FilterText` property which will be later applied in `FilterPredicate` that is assigned to `SfDataGrid.View.Filter` in OnFilterChanged() method.
+In order to filter the records, assign the filtered strings to the `ViewModel.FilterText` property which will be later applied in `FilterPredicate` that is assigned to `SfDataGrid.View.Filter` in OnFilterChanged() method.
 
-N> To update the filtering for the newly added row or column, set the `SfDataGrid.View.LiveDataUpdateMode` to `LiveDataUpdateMode.AllowDataShaping`.
+N> To update filtering for newly added row or column, set the `SfDataGrid.View.LiveDataUpdateMode` to `LiveDataUpdateMode.AllowDataShaping`.
 
-The following code example illustrates the delegate, properties, and methods used in the `ViewModel` class in order to perform the filtering operation.
+The following code example illustrates the delegate, properties, and methods used in the `ViewModel` class in order to perform filtering operation:
 
 {% highlight c# %}
 // ViewModel.cs
@@ -190,7 +190,7 @@ public bool FilerRecords(object o)
 #endregion
 {% endhighlight %}
 
-The following code example illustrates how to create a `SearchBar` and apply the filtered records to `ViewModel.FilterText` property in `SearchBar.TextChanged` event.
+To create a `SearchBar` and apply the filtered records to `ViewModel.FilterText` property in `SearchBar.TextChanged` event, follow the code example:
 
 {% tabs %}
 {% highlight xaml %}
@@ -218,7 +218,7 @@ private void OnFilterTextChanged(object sender, TextChangedEventArgs e)
 
 ![](SfDataGrid_images/Filtering_Img1.png)
 
-Once you create a `SearchBar` and a view model, you can perform filtering by setting `SfDataGrid.View.Filter` property. You have to call the `SfDataGrid.View.RefreshFilter()` method after you set the filtered records to the `SfDataGrid.View.Filter` property as like in below code example.
+Once you create a `SearchBar` and a view model, filtering can be performed by setting `SfDataGrid.View.Filter` property. Call the `SfDataGrid.View.RefreshFilter()` method after setting the filtered records to the `SfDataGrid.View.Filter` property as in the following code example:
 
 {% highlight c# %}
 // Code-Behind
@@ -237,9 +237,9 @@ private void OnFilterChanged()
 
 ### Column based filtering
 
-You can filter the records in all the columns or in particular column using the codes in OnColumnSelected() method. 
+To filter records in all the columns or in a particular column, use codes in OnColumnSelected() method. 
 
-For example, you can filter the records in `OrderID` or any other particular column alone.The following code example illustrates how to create a `Picker` for columns. Also, it illustrates how the records will be filtered based on the column selected.
+For example, the records can be filtered in `OrderID` or any other particular column alone. The following code example illustrates how to create a `Picker` for columns and how the records will be filtered based on the column selected:
 
 {% tabs %}
 {% highlight xaml %}
@@ -310,15 +310,15 @@ private void OnColumnsSelectionChanged(object sender, EventArgs e)
 
 ### Condition based filtering
 
-In addition to the column based filtering, you can filter the records based on some conditions. For example, you can filter the records based on the input you given or you can filter the records contrast to your input. You can achieve the condition based filtering for all the columns or any particular column.
+In addition to column based filtering, the records can be filtered based on some conditions. For example, the records can be filtered based on the given input or the records can be filtered contrast to the input. The condition based filtering can be achieved for all the columns or any particular column.
 
-You can filter the records in the view based on any of the below conditions,
+The records can be filtered in view based on any of the following conditions:
 
-* Equals
-* NotEquals
-* Contains
+ * Equals
+ * NotEquals
+ * Contains
 
-The above conditions are the mostly used conditions. However, you can add any other conditions based on your requirement and alter the below code example based on your condition.
+The above conditions are the mostly used conditions. However any other conditions can be added based on the requirement and alter the following code example based on the condition.
 
 {% highlight c# %}
 // ViewModel.cs
@@ -435,7 +435,7 @@ private bool MakeNumericFilter(OrderInfo o, string option, string condition)
 }
 {% endhighlight %}
 
-The following code example illustrates how to create a `Picker` for conditions and add appropriate strings to that `Picker`. Also, it illustrates how the records will be filtered based on the condition selected.
+The following code example illustrates how to create a `Picker` for conditions and add appropriate strings to that `Picker` and how the records will be filtered based on selected conditions:
 
 {% tabs %}
 {% highlight xaml %}
@@ -467,7 +467,7 @@ private void OnFilterOptionsChanged(object sender, EventArgs e)
 
 Screenshot//
 
-The following code example illustrates the complete `FilteringUI` and its operations.
+The following code example illustrates the complete `FilteringUI` and its operations:
 
 {% tabs %}
 {% highlight xaml %}
@@ -649,9 +649,9 @@ private void OnFilterChanged()
 
 ## Clear filtering
 
-SfDataGrid allows you to clear the applied filtering by setting the `SfDataGrid.View.Filter` property to `null`.
+The SfDataGrid allows to clear the applied filtering by setting the `SfDataGrid.View.Filter` property to `null`.
 
-The below code example illustrates how to clear the applied filtering in SfDataGrid.
+To clear the applied filtering, follow the code example:
 
 {% highlight c# %}
 // Code-Behind

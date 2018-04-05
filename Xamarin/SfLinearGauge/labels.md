@@ -9,142 +9,290 @@ documentation: ug
 
 ---
 
-# LABELS
+# Labels 
 
-Labels associate a numeric value with major scale tick marks.
+[`LinearScale`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale.html) labels associate a numeric value with major scale tick marks.
 
-## Label Customization
+## Label color customization
 
-The label color can be changed using the `LabelColor` property. The labels can be positioned far away from the ticks by using the `LabelOffset` property.The size of the Labels can be changed by using the `LabelFontSize` property.
+The label color can be changed using the [`LabelColor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~LabelColor.html) property.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-    <linear:SfLinearGauge x:Name="linearGauge">
-          <linear:SfLinearGauge.Scales>
-	  				<linear:LinearScale x:Name="scale"  LabelOffset="0.3" LabelColor="Red" LabelFontSize="10">
-                    </linear:LinearScale>
-	      </linear:SfLinearGauge.Scales>			
-	</linear:SfLinearGauge>	            
+     <gauge:SfLinearGauge>
+               <gauge:SfLinearGauge.Scales>
+                <gauge:LinearScale ScaleBarColor="#e0e0e0" LabelColor="Purple">
+                    <gauge:LinearScale.MajorTickSettings>
+                     <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="15"/>
+                      </gauge:LinearScale.MajorTickSettings>
+                      <gauge:LinearScale.MinorTickSettings>
+                      <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="7"/>
+                       </gauge:LinearScale.MinorTickSettings>
+                </gauge:LinearScale>
+            </gauge:SfLinearGauge.Scales>
+        </gauge:SfLinearGauge>      
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-            SfLinearGauge linearGauge = new SfLinearGauge();         
-            LinearScale scale = new LinearScale();           
-            ObservableCollection<LinearScale> scales = new ObservableCollection<LinearScale>();                 
-            scale.LabelOffset = 0.3;
-            scale.LabelFontSize = 10;
-            scale.LabelColor = Color.FromRgb(84, 84, 84);
-            scales.Add(scale);
-            linearGauge.Scales.Add(scale);
-            this.Content = linearGauge;
+            SfLinearGauge linearGauge = new SfLinearGauge();
+            LinearScale linearScale = new LinearScale();
+            linearScale.ScaleBarColor = Color.FromHex("#e0e0e0");
+            linearScale.MajorTickSettings.Thickness = 1;
+            linearScale.MajorTickSettings.Length = 15;
+            linearScale.MajorTickSettings.Color = Color.Gray;
+            linearScale.MinorTickSettings.Color = Color.Gray;
+            linearScale.MinorTickSettings.Length = 7;
+            linearScale.MinorTickSettings.Thickness = 1;
+            linearScale.LabelColor = Color.Purple;
+            linearGauge.Scales.Add(linearScale);
 
     
 {% endhighlight %}
 
 {% endtabs %}
 
-## Label Postfix and Prefix
+![](labels_images/label1.png)
 
-You can set the postfix/Prefix values to the scale labels using `LabelPostfix` and `LabelPrefix` Properties respectively.
+## Label font customization
 
-### LabelPostfix
-
-This property allows you to set the postfix values to the scale labels.
+The label font can be customized by using the [`LabelFontSize`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~LabelFontSize.html), [`FontAttribute`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~FontAttributes.html), and [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~FontFamily.html) properties.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-    <linear:SfLinearGauge x:Name="linearGauge">
-          <linear:SfLinearGauge.Scales>
-	  				<linear:LinearScale x:Name="scale" LabelPostfix ="%">
-                    </linear:LinearScale>
-	      </linear:SfLinearGauge.Scales>			
-	</linear:SfLinearGauge>	            
+    <gauge:SfLinearGauge>
+
+            <gauge:SfLinearGauge.Scales>
+                <gauge:LinearScale ScaleBarColor="#e0e0e0" LabelColor="#424242" LabelFontSize ="15" FontAttributes="Bold">
+                    <gauge:LinearScale.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String" iOS="Chalkduster" Android="algerian.ttf" WinPhone="Chiller" />
+                    </gauge:LinearScale.FontFamily>
+                    <gauge:LinearScale.MajorTickSettings>
+                 <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="15"/>
+                   </gauge:LinearScale.MajorTickSettings>
+                   <gauge:LinearScale.MinorTickSettings>
+                    <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="7"/>
+                    </gauge:LinearScale.MinorTickSettings>
+                </gauge:LinearScale>
+            </gauge:SfLinearGauge.Scales>
+
+        </gauge:SfLinearGauge>           
  
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-            SfLinearGauge linearGauge = new SfLinearGauge();         
-            LinearScale scale = new LinearScale();           
-            ObservableCollection<LinearScale> scales = new ObservableCollection<LinearScale>();                 
-            scale.LabelPostfix = "%";
-            scales.Add(scale);
-            linearGauge.Scales.Add(scale);
-            this.Content = linearGauge;
+            SfLinearGauge linearGauge = new SfLinearGauge();
+            LinearScale linearScale = new LinearScale();
+            linearScale.LabelFontSize = 15;
+            linearScale.ScaleBarColor = Color.FromHex("#e0e0e0");
+            linearScale.FontAttributes = FontAttributes.Bold;
+            linearScale.MajorTickSettings.Thickness = 1;
+            linearScale.MajorTickSettings.Length = 15;
+            linearScale.MajorTickSettings.Color = Color.Gray;
+            linearScale.MinorTickSettings.Color = Color.Gray;
+            linearScale.MinorTickSettings.Length = 7;
+            linearScale.MinorTickSettings.Thickness = 1;
+            linearScale.LabelColor = Color.FromHex("#424242");
+            linearScale.FontFamily = Device.RuntimePlatform == Device.iOS ? "Chalkduster" : Device.RuntimePlatform == Device.Android ? "algerian.ttf" : "Chiller";
+            linearGauge.Scales.Add(linearScale);
     
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/postfix.PNG)
+![](labels_images/label2.png)
 
-### LabelPrefix
-This property allows you to set the Prefix values to the scale labels.
+## Setting position for labels
+
+The labels can be positioned far away from the ticks by using the [`LabelOffset`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~LabelOffset.html) property in pixel.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-        <linear:SfLinearGauge x:Name="linearGauge">
-          <linear:SfLinearGauge.Scales>
-	  				<linear:LinearScale x:Name="scale" LabelPrefix ="$">
-                    </linear:LinearScale>
-	      </linear:SfLinearGauge.Scales>			
-	    </linear:SfLinearGauge>	 
+        <gauge:SfLinearGauge>
+             <gauge:SfLinearGauge.Scales>
+                <gauge:LinearScale ScaleBarColor="#e0e0e0" LabelColor="#424242" LabelOffset ="5">
+                    <gauge:LinearScale.MajorTickSettings>
+                          <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="15"/>
+                    </gauge:LinearScale.MajorTickSettings>
+                     <gauge:LinearScale.MinorTickSettings>
+                            <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="7"/>
+                      </gauge:LinearScale.MinorTickSettings>
+                </gauge:LinearScale>
+            </gauge:SfLinearGauge.Scales>
+        </gauge:SfLinearGauge>      
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-            SfLinearGauge linearGauge = new SfLinearGauge();         
-            LinearScale scale = new LinearScale();           
-            ObservableCollection<LinearScale> scales = new ObservableCollection<LinearScale>();                 
-            scale.LabelPrefix ="$";
-            scales.Add(scale);
-            linearGauge.Scales.Add(scale);
-            this.Content = linearGauge;
+            SfLinearGauge linearGauge = new SfLinearGauge();
+            LinearScale linearScale = new LinearScale();
+            linearScale.ScaleBarColor = Color.FromHex("#e0e0e0");
+            linearScale.MajorTickSettings.Thickness = 1;
+            linearScale.MajorTickSettings.Length = 15;
+            linearScale.MajorTickSettings.Color = Color.Gray;
+            linearScale.MinorTickSettings.Color = Color.Gray;
+            linearScale.MinorTickSettings.Length = 7;
+            linearScale.MinorTickSettings.Thickness = 1;
+            linearScale.LabelColor = Color.FromHex("#424242");
+            linearScale.LabelOffset = 5;
+            linearGauge.Scales.Add(linearScale);
    
-    
 {% endhighlight %}
+
 {% endtabs %}
 
-![](images/prefix.PNG)
+![](labels_images/label3.png)
 
-### ShowLabels
+### Setting postfix and prefix for labels
 
-ShowLabels property is a Boolean property which is used to enable or disable Label feature in linearGauge
+You can  postfix/prefix values to the scale labels using the [`LabelPostfix`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~LabelPostfix.html) and [`LabelPrefix`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~LabelPrefix.html) properties, respectively.
+
+### Setting label postfix
+
+The [`LabelPostfix`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~LabelPostfix.html) property allows you to postfix the values to scale labels.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-        <linear:SfLinearGauge x:Name="linearGauge">
-          <linear:SfLinearGauge.Scales>
-	  				<linear:LinearScale x:Name="scale" ShowLabels = "False">
-                    </linear:LinearScale>
-	      </linear:SfLinearGauge.Scales>			
-	    </linear:SfLinearGauge>	 
+       <gauge:SfLinearGauge>
+            <gauge:SfLinearGauge.Scales>
+                <gauge:LinearScale MinimumValue = "0" MaximumValue ="1000" Interval ="200" LabelPostfix ="K" ScaleBarColor="#e0e0e0" LabelColor="#424242">
+                    <gauge:LinearScale.MajorTickSettings>
+                        <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="15"/>
+                    </gauge:LinearScale.MajorTickSettings>
+                    <gauge:LinearScale.MinorTickSettings>
+                        <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="7"/>
+                    </gauge:LinearScale.MinorTickSettings>
+                </gauge:LinearScale>
+            </gauge:SfLinearGauge.Scales>
+        </gauge:SfLinearGauge>    
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-            SfLinearGauge linearGauge = new SfLinearGauge();         
-            LinearScale scale = new LinearScale();           
-            ObservableCollection<LinearScale> scales = new ObservableCollection<LinearScale>();                 
-            scale.ShowLabels = false;
-            scales.Add(scale);
-            linearGauge.Scales.Add(scale);
-            this.Content = linearGauge;
+            SfLinearGauge linearGauge = new SfLinearGauge();
+            LinearScale linearScale = new LinearScale();
+            linearScale.MinimumValue = 0;
+            linearScale.MaximumValue = 1000;
+            linearScale.Interval = 200;
+            linearScale.ScaleBarColor = Color.FromHex("#e0e0e0");
+             linearScale.MajorTickSettings.Thickness = 1;
+            linearScale.MajorTickSettings.Length = 15;
+            linearScale.MajorTickSettings.Color = Color.Gray;
+            linearScale.MinorTickSettings.Color = Color.Gray;
+            linearScale.MinorTickSettings.Length = 7;
+            linearScale.MinorTickSettings.Thickness = 1;
+            linearScale.LabelColor = Color.FromHex("#424242");
+            linearScale.LabelPostfix = "K";
+            linearGauge.Scales.Add(linearScale);
+    
+{% endhighlight %}
+
+{% endtabs %}
+
+![](labels_images/label4.png)
+
+### Setting label prefix
+
+The [`LabelPrefix`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~LabelPrefix.html) property allows you to prefix the values to scale labels.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+       <gauge:SfLinearGauge>
+            <gauge:SfLinearGauge.Scales>
+                <gauge:LinearScale  ScaleBarColor="#e0e0e0" LabelColor="#424242" LabelPrefix ="$">
+                    <gauge:LinearScale.MajorTickSettings>
+                        <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="15"/>
+                    </gauge:LinearScale.MajorTickSettings>
+                    <gauge:LinearScale.MinorTickSettings>
+                        <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="7"/>
+                    </gauge:LinearScale.MinorTickSettings>
+                </gauge:LinearScale>
+            </gauge:SfLinearGauge.Scales>
+        </gauge:SfLinearGauge>      
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+             SfLinearGauge linearGauge = new SfLinearGauge();
+            LinearScale linearScale = new LinearScale();
+            linearScale.ScaleBarColor = Color.FromHex("#e0e0e0");
+            linearScale.LabelColor = Color.FromHex("#424242");
+            linearScale.MajorTickSettings.Thickness = 1;
+            linearScale.MajorTickSettings.Length = 15;
+            linearScale.MajorTickSettings.Color = Color.Gray;
+            linearScale.MinorTickSettings.Color = Color.Gray;
+            linearScale.MinorTickSettings.Length = 7;
+            linearScale.MinorTickSettings.Thickness = 1;
+            linearScale.LabelPrefix = "$";
+            linearGauge.Scales.Add(linearScale);
    
     
 {% endhighlight %}
+
 {% endtabs %}
+
+![](labels_images/label5.png)
+
+## Labels visibility
+
+Labels visibility can be customized using the [`ShowLabels`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~ShowLabels.html) property of linear scale.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+       <gauge:SfLinearGauge>
+            <gauge:SfLinearGauge.Scales>
+                <gauge:LinearScale ScaleBarColor="#e0e0e0" ShowLabels = "False" ScaleBarSize ="40">
+                <gauge:LinearScale.MajorTickSettings>
+                    <gauge:LinearTickSettings Thickness="1" Color ="Black" Length ="40" Offset ="-40" />
+                </gauge:LinearScale.MajorTickSettings>
+                <gauge:LinearScale.MinorTickSettings>
+                    <gauge:LinearTickSettings Color ="Black" Length = "20" Offset ="-20" />
+                </gauge:LinearScale.MinorTickSettings>
+            </gauge:LinearScale>
+            </gauge:SfLinearGauge.Scales>
+        </gauge:SfLinearGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfLinearGauge linearGauge = new SfLinearGauge();
+            LinearScale linearScale = new LinearScale();
+            linearScale.ScaleBarSize = 40;
+            linearScale.ScaleBarColor= Color.FromHex("#e0e0e0");
+            linearScale.MajorTickSettings.Color = Color.Black;
+            linearScale.MinorTickSettings.Color = Color.Black;
+            linearScale.MajorTickSettings.Length = 40;
+            linearScale.MinorTickSettings.Offset = -20;
+            linearScale.MajorTickSettings.Offset = -40;
+            linearScale.MajorTickSettings.Thickness = 1;
+            linearScale.MinorTickSettings.Length = 20;
+            linearScale.MinorTicksPerInterval = 4;
+            linearScale.ShowLabels = false;
+            linearGauge.Scales.Add(linearScale);
+   
+    
+{% endhighlight %}
+
+{% endtabs %}
+
+![](labels_images/label6.png)
 

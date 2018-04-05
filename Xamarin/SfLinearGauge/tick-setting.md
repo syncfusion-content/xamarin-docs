@@ -1,0 +1,205 @@
+---
+layout: post
+title: Linear Tick Settings in LinearGauge
+description: Learn how to define settings of linear ticks in LinearGauge
+platform: Xamarin
+control: LinearGauge
+documentation: ug
+---
+
+# Tick Setting 
+
+The [`TickSetting`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.TickSettings.html) property is used to identify the gauge’s data value by marking the gauge scale in regular increments.
+
+## Ticks visibility
+
+Ticks visibility can be customized using the [`ShowTicks`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~ShowTicks.html) property of linear scale.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+	 <gauge:SfLinearGauge>
+            <gauge:SfLinearGauge.Scales>
+                <gauge:LinearScale ScaleBarColor="#e0e0e0" LabelColor="#424242" LabelOffset ="-10" ShowTicks ="False">
+                </gauge:LinearScale>
+            </gauge:SfLinearGauge.Scales>
+        </gauge:SfLinearGauge>
+	
+{% endhighlight %}
+
+{% highlight C# %}
+
+		    SfLinearGauge linearGauge = new SfLinearGauge();
+            LinearScale linearScale = new LinearScale();
+            linearScale.ScaleBarColor = Color.FromHex("#e0e0e0");
+            linearScale.LabelColor = Color.FromHex("#424242");
+            linearScale.LabelOffset = -10;
+            linearScale.ShowTicks = false;
+            linearGauge.Scales.Add(linearScale);
+			
+{% endhighlight %}
+
+{% endtabs %}
+
+![](tick-setting_images/tick-setting1.png)
+
+## Tick customization
+
+You can customize the color and thickness of ticks by using the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearTickSettings~Color.html) and [`Thickness`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearTickSettings~Thickness.html) properties. The ticks length also can be customized using the [`Length`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearTickSettings~Length.html) property as demonstrated below.
+
+### Major tick customization
+
+{% tabs %}
+
+{% highlight xaml %}
+
+	<gauge:SfLinearGauge>
+            <gauge:SfLinearGauge.Scales>
+                <gauge:LinearScale ScaleBarColor="#e0e0e0" LabelColor="#424242">
+                    <gauge:LinearScale.MajorTickSettings>
+                      <gauge:LinearTickSettings Thickness="1" Length ="25" Color = "DeepSkyBlue"/>
+                    </gauge:LinearScale.MajorTickSettings>
+                </gauge:LinearScale>
+            </gauge:SfLinearGauge.Scales>
+        </gauge:SfLinearGauge>
+	
+{% endhighlight %}
+
+{% highlight C# %}
+
+		    SfLinearGauge linearGauge = new SfLinearGauge();
+            LinearScale linearScale = new LinearScale();
+            linearScale.ScaleBarColor = Color.FromHex("#e0e0e0");
+            linearScale.LabelColor = Color.FromHex("#424242");
+            LinearTickSettings majorTickSettings = new LinearTickSettings();
+            majorTickSettings.Thickness = 1;
+            majorTickSettings.Length = 25;
+            majorTickSettings.Color = Color.DeepSkyBlue;
+            linearScale.MajorTickSettings = majorTickSettings;
+            linearGauge.Scales.Add(linearScale);
+			
+{% endhighlight %}
+
+{% endtabs %}
+
+![](tick-setting_images/tick-setting2.png)
+
+### Minor tick customization
+
+{% tabs %}
+
+{% highlight xaml %}
+
+	<gauge:SfLinearGauge>
+            <gauge:SfLinearGauge.Scales>
+                <gauge:LinearScale ScaleBarColor="#e0e0e0" LabelColor="#424242" MinorTicksPerInterval ="3">
+                    <gauge:LinearScale.MinorTickSettings>
+                      <gauge:LinearTickSettings Thickness="2" Length ="7" Color = "RosyBrown"/>
+                    </gauge:LinearScale.MinorTickSettings>
+                </gauge:LinearScale>
+            </gauge:SfLinearGauge.Scales>
+        </gauge:SfLinearGauge>
+	
+{% endhighlight %}
+
+{% highlight C# %}
+
+     SfLinearGauge linearGauge = new SfLinearGauge();
+     LinearScale linearScale = new LinearScale();
+     linearScale.ScaleBarColor = Color.FromHex("#e0e0e0");
+     linearScale.LabelColor = Color.FromHex("#424242");
+     linearScale.MajorTickSettings.Thickness = 1;
+     linearScale.MinorTicksPerInterval = 3;
+     LinearTickSettings minorTickSettings = new LinearTickSettings();
+     minorTickSettings.Thickness = 2;
+     minorTickSettings.Length = 7;
+     minorTickSettings.Color = Color.RosyBrown;
+     linearScale.MinorTickSettings = minorTickSettings;
+     linearGauge.Scales.Add(linearScale);
+
+			
+{% endhighlight %}
+
+{% endtabs %}
+
+![](tick-setting_images/tick-setting3.png)
+
+## Setting minor ticks per interval
+
+The [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~Interval.html) property is used to calculate the tick counts for a scale. Similar to ticks, minor ticks are also calculated by using the [`MinorTicksPerInterval`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~MinorTicksPerInterval.html) property.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+	<gauge:SfLinearGauge>
+            <gauge:SfLinearGauge.Scales>
+                <gauge:LinearScale ScaleBarColor="#e0e0e0" LabelColor="#424242" MinorTicksPerInterval ="4">
+                </gauge:LinearScale>
+            </gauge:SfLinearGauge.Scales>
+        </gauge:SfLinearGauge>
+	
+{% endhighlight %}
+
+{% highlight C# %}
+
+      SfLinearGauge linearGauge = new SfLinearGauge();
+      LinearScale linearScale = new LinearScale();
+      linearScale.ScaleBarColor = Color.FromHex("#e0e0e0");
+      linearScale.LabelColor = Color.FromHex("#424242");
+      linearScale.MinorTicksPerInterval = 4;
+      linearGauge.Scales.Add(linearScale);
+			
+{% endhighlight %}
+
+{% endtabs %}
+
+![](tick-setting_images/tick-setting4.png)
+
+## Setting position for ticks
+
+The major and minor ticks can be positioned far away from the scale by using the [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearTickSettings~Offset.html) property.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+	<gauge:SfLinearGauge>
+            <gauge:SfLinearGauge.Scales>
+                <gauge:LinearScale ScaleBarColor="#e0e0e0" LabelColor="Black" ScaleBarSize ="40" LabelOffset = "-9">
+				  <gauge:LinearScale.MajorTickSettings>
+                      <gauge:LinearTickSettings Thickness="1" Color ="Black" Length ="40" Offset ="-40" />
+                    </gauge:LinearScale.MajorTickSettings>
+					<gauge:LinearScale.MinorTickSettings>
+                      <gauge:LinearTickSettings Color ="Black" Length = "20" Offset ="-20" />
+                    </gauge:LinearScale.MinorTickSettings>
+                </gauge:LinearScale>
+            </gauge:SfLinearGauge.Scales>
+        </gauge:SfLinearGauge>
+	
+{% endhighlight %}
+
+{% highlight C# %}
+
+            SfLinearGauge linearGauge = new SfLinearGauge();
+            LinearScale linearScale = new LinearScale();
+            linearScale.ScaleBarSize = 40;
+            linearScale.ScaleBarColor= Color.FromHex("#e0e0e0");
+            linearScale.MajorTickSettings.Color = Color.Black;
+            linearScale.MinorTickSettings.Color = Color.Black;
+            linearScale.MajorTickSettings.Length = 40;
+            linearScale.MinorTickSettings.Offset = -20;
+            linearScale.MajorTickSettings.Offset = -40;
+            linearScale.MajorTickSettings.Thickness = 1;
+            linearScale.MinorTickSettings.Length = 20;
+            linearScale.LabelOffset = -9;
+            linearScale.MinorTicksPerInterval = 4;
+            linearScale.LabelColor = Color.Black;
+            linearGauge.Scales.Add(linearScale);
+			
+{% endhighlight %}
+
+{% endtabs %}
+
+![](tick-setting_images/tick-setting5.png)

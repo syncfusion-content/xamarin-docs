@@ -13,15 +13,19 @@ This section walks you through the steps required to add `SfDateTimeRangeNavigat
 
 ## Adding RangeNavigator Reference
 
-Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain and reference Essential Studio components in your solution; then refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfdatetimerangenavigator) link to know about the assemblies required for adding range navigator to your project.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add range navigator to your project, open the NuGet package manager in Visual Studio, and search for [“syncfusion.xamarin.sfchart”](https://www.nuget.org/packages/Syncfusion.Xamarin.SfChart/), and then install it. 
 
-I> After adding the reference, currently, an additional step is required for iOS and UWP projects. We need to call Init method in the `SfRangeNavigatorRenderer` as shown in this [KB article.](https://www.syncfusion.com/kb/7977)
+![](gettingstarted_images/addref.png)
 
-I> For UWP alone, one more additional step is required if the project is built in release mode with .NET Native tool chain enabled. You can refer the [KB article](https://www.syncfusion.com/kb/7944) for more details.
+To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfdatetimerangenavigator) to know about the dependent assemblies for range navigator. 
+
+I> After adding the reference, currently, an additional step is required for iOS and UWP projects. We need to initialize the renderer as explained in this [KB article](https://www.syncfusion.com/kb/7977/how-to-resolve-sfdatetimerangenavigator-not-rendering-issue-in-ios-and-uwp).
+
+I> For UWP alone, one more additional step is required if the project is built in release mode with .NET Native tool chain enabled. You can refer to the [KB article](https://www.syncfusion.com/kb/7944/how-to-make-syncfusion-xamarin-forms-range-navigator-to-work-in-uwp-in-release-mode-when-net-native) for more details.
  
 ## Adding and configuring SfDateTimeRangeNavigator 
 
-First, let us initialize the control with major and minor date time scales by specifying the minimum and maximum date to be visualized in the control using `Minimum` and `Maximum` properties.
+First, let us initialize the control with major and minor date time scales by specifying the minimum and maximum date to be visualized in the control using [`Minimum`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator~Minimum.html) and [`Maximum`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator~Maximum.html) properties.
 
 Following code example illustrates this,
 
@@ -38,7 +42,7 @@ rangeNavigator.Maximum = new DateTime(2016, 01, 01);
 
 ![](gettingstarted_images/gettingstarted_img1.jpeg)
 
-N> If you don’t specify `Minimum` and `Maximum` properties, minimum and maximum dates will be chosen automatically based on the provided data using `ItemsSource` property, which is explained in the next step in this section.
+N> If you don’t specify [`Minimum`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator~Minimum.html) and [`Maximum`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator~Maximum.html) properties, minimum and maximum dates will be chosen automatically based on the provided data using [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator~ItemsSource.html) property, which is explained in the next step in this section.
 
 Next, create a data model representing the list of sample data.
 
@@ -87,9 +91,9 @@ public class Model
 
 {% endhighlight %}
 
-Then, let us populate the chart, which is displayed inside the `SfDateTimeRangeNavigator`, by setting the above data using `ItemsSource` property. And then specify the property names which contain the x and y values in the model using `XBindingPath` and `YBindingPath` properties.
+Then, let us populate the chart, which is displayed inside the `SfDateTimeRangeNavigator`, by setting the above data using [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator~ItemsSource.html) property. And then specify the property names which contain the x and y values in the model using [`XBindingPath`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator~XBindingPath.html) and [`YBindingPath`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator~YBindingPath.html) properties.
 
-N> By default, data is visualized using line series. You can change the chart type or add more series by accessing the SfChart instance using `SfDateTimeRangeNavigator.Content` property. 
+N> By default, data is visualized using line series. You can change the chart type or add more series by accessing the SfChart instance using [`SfDateTimeRangeNavigator.Content`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator~Content.html) property. 
 
 {% highlight c# %}
 [C#]
@@ -107,9 +111,9 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 
 ## Handle range selection
 
-In real time, other controls like chart, grid etc., are updated in response to the range selection performed in SfDateTimeRangeNavigator. You can handle the selection using RangeChanged event and update other controls based on the selected date time or perform some other tasks using the selected data.
+In real time, other controls like chart, grid etc., are updated in response to the range selection performed in SfDateTimeRangeNavigator. You can handle the selection using [`RangeChanged`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator~RangeChanged_EV.html) event and update other controls based on the selected date time or perform some other tasks using the selected data.
 
-N> You can get the selected date time using `ViewRangeStart` and `ViewRangeEnd` properties or you can get selected data using `SelectedData` property.
+N> You can get the selected date time using [`ViewRangeStart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.RangeChangedEventArgs~ViewRangeStartDate.html) and [`ViewRangeEnd`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.RangeChangedEventArgs~ViewRangeEndDate.html) properties or you can get selected data using [`SelectedData`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator~SelectedData.html) property.
 
 Following code example illustrates how to handle range selection and update chart's date time axis range,
 

@@ -9,14 +9,14 @@ documentation: ug
 
 # Overview
 
-The Essential Xamarin SfRadialMenu displays a hierarchical menu in a circular layout optimized for touch devices. Typically used as a context menu, it can expose more menu items in the same space than traditional menus.
+The Essential Xamarin SfRadialMenu displays a hierarchical menu in a circular layout, which is optimized for touch enabled devices. Typically, it is used as a context menu, and it can expose more menu items in the same space than traditional menus.
 
-The following table lists the key features of the SfRadialMenu in Xamarin.Forms Android and iOS.
+The following table lists the key features of the radial menu in Xamarin.Forms Android, iOS, and UWP.
 
 <table>
 <tr>
 <th>Features</th>
-<th>Xamarin.Forms<br/>(Android and iOS)</th>
+<th>Xamarin.Forms<br/>(Android, iOS, and UWP)</th>
 <th>Xamarin.Android</th>
 <th>Xamarin.iOS</th>
 </tr>

@@ -11,9 +11,9 @@ documentation: ug
 
 # Ranges
 
-A range is a visual element, which begins and ends at specified values within a scale.
+Range is a visual element, which begins and ends at specified values within a scale.
 
-## Setting start and end values for Range
+## Setting start and end values for range
 
 Start and end values of ranges are set by using the [`StartValue`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Range~StartValue.html) and [`EndValue`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Range~EndValue.html) properties. 
 
@@ -60,7 +60,7 @@ Start and end values of ranges are set by using the [`StartValue`](https://help.
 
 ## Range customization
 
-An UI of range is customized by using the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Range~Color.html) and [`Thickness`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Range~Thickness.html) properties. First, you should set the Offset property for range, then increase the thickness of the range.
+An UI of a range is customized by using the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Range~Color.html) and [`Thickness`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Range~Thickness.html) properties. First, you should set the `Offset` property for range, then increase the thickness of the range.
 
 {% tabs %}
 
@@ -127,11 +127,11 @@ An UI of range is customized by using the [`Color`](https://help.syncfusion.com/
 
 ![](ranges_images/range-customization.png)
 
-## Setting position for Range
+## Setting position for range
 
 The range can be placed inside the scale, outside the scale, or on the scale by using the following two ways:
 
-1.[`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Range~Offset.html) property with [`Thickness`]( https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Range~Thickness.html) property.
+1.The [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Range~Offset.html) property with the [`Thickness`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Range~Thickness.html) property.
 
 {% tabs %}
 
@@ -163,7 +163,7 @@ The range can be placed inside the scale, outside the scale, or on the scale by 
     Scale scale = new Scale();
     Range range = new Range();
     range.StartValue = 0;
-    range.EndValue = 50;
+    range.EndValue = 100;
     range.Offset = 0.3; 
 	range.Thickness = 20;
     scale.Ranges.Add(range);
@@ -176,7 +176,7 @@ The range can be placed inside the scale, outside the scale, or on the scale by 
 
 ![](ranges_images/range-offset.png)
 
-2.[`InnerStartOffset`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Range~InnerStartOffset.html), [`InnerEndOffset`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Range~InnerEndOffset.html), [`OuterStartOffset`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Range~OuterStartOffset.html), and [`OuterEndOffset`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Range~OuterEndOffset.html) properties.
+2.The [`InnerStartOffset`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Range~InnerStartOffset.html), [`InnerEndOffset`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Range~InnerEndOffset.html), [`OuterStartOffset`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Range~OuterStartOffset.html), and [`OuterEndOffset`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Range~OuterEndOffset.html) properties.
 
 {% tabs %}
 
@@ -225,7 +225,7 @@ The range can be placed inside the scale, outside the scale, or on the scale by 
 
 ## Setting multiple ranges
 
-In addition to the default range, you can add n number of ranges to a scale by using [`Ranges`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~Ranges.html) property.
+In addition to the default range, you can add n number of ranges to a scale by using the [`Ranges`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~Ranges.html) property.
 
 {% tabs %}
 
@@ -346,9 +346,9 @@ In addition to the default range, you can add n number of ranges to a scale by u
 
 ![](ranges_images/multiple-range.png)
 
-## Setting gradient color for Range
+## Setting gradient color for range
 
-You can give smooth color transition to range by specifying the different color based on range value.   
+You can give smooth color transition to range by specifying the different colors based on range value.
 
 {% tabs %}
 

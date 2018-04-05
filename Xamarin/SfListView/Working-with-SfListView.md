@@ -9,8 +9,7 @@ documentation: ug
 
 ## Load the SfListView inside the StackLayout
 
-When you load SfListView inside the StackLayout, you should set the `HorizontalOptions` and `VerticalOptions` of the StackLayout as `LayoutOptions.FillAndExpand`.
-Because, the StackLayout positions the child element one after the other, either horizontally or vertically based on the orientation of StackLayout. The size of the StackLayout depends on how the HorizontalOptions and VerticalOptions properties are set, but by default, the StackLayout will try to use the entire screen. 
+When the SfListView is loaded inside StackLayout, set the `HorizontalOptions` and `VerticalOptions` as `LayoutOptions.FillAndExpand`. Because StackLayout positions the child element one after other either horizontally or vertically based on the orientation of StackLayout. The size of StackLayout depends on how the HorizontalOptions and VerticalOptions properties are set. By default, StackLayout use the entire screen.
 
 {% highlight xaml %}
 <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
@@ -18,7 +17,7 @@ Because, the StackLayout positions the child element one after the other, either
 </StackLayout>
 {% endhighlight %}
 
-## Load the SfListView inside the ScrollView
+### Load SfListView inside ScrollView within StackLayout
 
 When the SfListView is loaded inside a ScrollView, `HeightRequest` must be set to the SfListView. If not, the following problems will occur.
 
@@ -46,33 +45,38 @@ In the following sample, ScrollView height is set into the `HeightRequest` of Sf
 
 You can download the entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfListViewSample197024233.zip).
 
-## Load the SfListView inside a SfPullToRefresh
-SfPullToRefresh is a refresh control that allows you to interact and refresh the view loaded in it. When the SfListView is loaded inside the SfPullToRefresh, it is used to refresh the item while performing the pull to refresh action. The steps to be followed to load the SfListView inside SfPullToRefresh is explained in SfPullToRefresh Property Customization tab.
+### Limitation
 
-The final output will look like on iOS, Android and Windows Phone devices as shown below.
+When SfListView is loaded inside the ScrollView with the height of total items, scrolling will not occur in `SfListView` only when [AllowSwiping](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AllowSwiping.html) is set to be `true`. SfListView doesn't pass touch to the parent ScrollView in UWP, because swiping is handled in it.
+
+## Load SfListView inside SfPullToRefresh
+
+The SfPullToRefresh is a refresh control allows you to interact and refresh the view loaded in it. When the SfListView is loaded inside the SfPullToRefresh, it refreshes the item while performing the pull to refresh action. The steps to be followed to load the SfListView inside SfPullToRefresh is explained in SfPullToRefresh property Customization tab.
+
+The final output of iOS, Android, and Windows Phone devices look likes as follows:
 
 ![](SfListView_images/SfListView_SlideOnTop-Xamarin.forms.gif)
 
 ## Load the SfListView in CarouselView
 
-When the SfListView is loaded in CarouselView with [SfListView.AllowSwiping](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AllowSwiping.html) as false, SfListView will behave like below in UWP platform. 
+When the SfListView is loaded in CarouselView with [SfListView.AllowSwiping](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AllowSwiping.html) as false, it behaves in UWP platform as follows:
  
-* While performing first swipe on the view, it will handled by SfListView’s ScrollView itself to ensure whether scrolling is happened or not. If not, we are unable to pass manipulation to parent immediately due to UWP platform behavior and on second swipe will be listened by CarouselView and the view gets swiped. This is the behavior of SfListView. 
-  
-When SfListView is loaded in CarouselView with `SfListView.AllowSwiping` as true, SfListView will behave like below.  
+ * While performing first swipe on the view, it will be handled by ScrollView to ensure whether scrolling is happened or not. If not means the manipulation to parent cannot be passed immediately due to UWP platform behavior. The second swipe will be listened by CarouselView, and the view gets swiped. This is the behavior of the SfListView. 
+
+When SfListView is loaded in CarouselView with `SfListView.AllowSwiping` as true, it behaves as follows:  
  
-* In iOS, when swipe suddenly carousel swipe is happened. If want to swipe ListViewItem, touch and hold on a item for some fraction of second (0.25 - 0.5 seconds) and then swipe. 
-* When swipe on any Item, SfListView handles the touch and swipe the ListViewItem.  
-* After swiped on ListViewItem, SwipeView is loaded along with ListViewItem. Then, if swipe on SwipeView element, Carousel view is swiped. Else, swipe on ListViewItem, SfListView handles touch and swipe the item as usual. 
-* If swipe on Header, Footer or Group Header elements, Carousel view is swiped in Android platform. But in UWP, first swipe on those elements will handled by SfListView itself, since unable to pass Manipulation to parent immediately and then second swipe will be listened by CarouselView.
+ * When swiping in iOS, suddenly carousel swipe happened. To swipe ListViewItem, touch and hold the item for some fraction of seconds (0.25 - 0.5 seconds) and then swipe. 
+ * When swiping any Item, the SfListView handles the touch and swipe the ListViewItem.  
+ * After swiping on ListViewItem, SwipeView will load along with it. If you swipe SwipeView element, Carousel view is swiped. Or else swipe on ListViewItem, control handles touching and swiping the item as usual. 
+ * If you swipe header, footer or group header elements, Carousel view will swipe in Android platform. But in UWP, first swipe on those elements will be handled by SfListView itself, because manipulation to parent cannot be passed immediately. The second swipe will be listened by CarouselView.
 
-## Programmatic Scrolling
+## Programmatic scrolling
 
-### Scroll to Row Index
+### Scroll to row index
 
-SfListView allows you to scroll programmatically to a row based on index by using [ScrollToRowIndex](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LayoutBase~ScrollToRowIndex.html) method for both linear and grid layouts. Also, provided support to enable and disable the scrolling animation while changing the view. By default, the scrolling will be animated.
+The SfListView allows programmatically scrolling a row, based on the index by using the [ScrollToRowIndex](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LayoutBase~ScrollToRowIndex.html) method for both linear and grid layouts. It also supports to enable and disable the scrolling animation while changing the view. By default, the scrolling will be animated.
 
-N> If grouping is enabled, you can get the desired row index by passing the underlying data in [DisplayItems.IndexOf](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DisplayItems~IndexOf.html) method.
+N> If grouping is enabled, get the desired row index by passing the underlying data in the [DisplayItems.IndexOf](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DisplayItems~IndexOf.html) method.
 
 {% highlight c# %}
 
@@ -81,21 +85,21 @@ listView.LayoutManager.ScrollToRowIndex(index, true);
 
 {% endhighlight %}
 
-#### Limitation in Scroll to Row Index
+#### Limitations in scrolling to row index
 
-* When [AutoFitMode](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AutoFitMode.html) is `Height` or grouping is enabled, scroll animation will be disabled by default in android and iOS platforms. 
-* If [ScrollToRowIndex](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LayoutBase~ScrollToRowIndex.html) method is called while loading the `SfListView`, then set `disableAnimation` as `true` to scroll to appropriate row index, else view doesn't scrolled in android.
+ * When [AutoFitMode](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AutoFitMode.html) is `Height` or grouping is enabled, scroll animation will be disabled by default in Android and iOS platforms. 
+ * If [ScrollToRowIndex](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LayoutBase~ScrollToRowIndex.html) method is called while loading the `SfListView`, set `disableAnimation` to `true` to scroll to appropriate row index or else view does not scrolled in Android.
 
-## Identifying the Scroll state changes
+## Identifying scroll state changes
 
-SfListView will notify the scrolling state changes by using [ScrollStateChanged](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ScrollStateChanged_EV.html) event.
+The SfListView will notify the scrolling state changes by using the [ScrollStateChanged](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ScrollStateChanged_EV.html) event.
 
 Following states will be notified via [ScrollState](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ScrollState.html) property in the event argument.
 
-* **Dragging** - Specifies that `SfListView` is currently being dragged in the view.
-* **Fling** - Specifies that fling action is performed on `SfListView`.
-* **Idle** - Specifies that `SfListView` is not currently scrolling.
-* **Programmatic** - Specifies that scrolling is performed by using [ScrollTo](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ScrollTo.html) or [ScrollToRowIndex](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LayoutBase~ScrollToRowIndex.html) method.
+ * Dragging: Specifies that `SfListView` is currently being dragged in the view.
+ * Fling: Specifies that fling action is performed on `SfListView`.
+ * Idle: Specifies that `SfListView` is not currently scrolling.
+ * Programmatic: Specifies that scrolling is performed by using [ScrollTo](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ScrollTo.html) or [ScrollToRowIndex](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LayoutBase~ScrollToRowIndex.html) method.
 
 {% highlight c# %}
 
@@ -112,7 +116,7 @@ private void ListView_ScrollStateChanged(object sender, ScrollStateChangedEventA
 
 ## Events
 
-### Loaded Event
+### Loaded event
 
 The [Loaded Event](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~Loaded_EV.html) event is raised when the SfListView is loaded in view for the first time.
 
@@ -125,14 +129,14 @@ private void ListView_Loaded(object sender, ListViewLoadedEventArgs e)
 }
 {% endhighlight %}
 
-### Tapped Event
+### Tapped event
 
 The [ItemTapped](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTapped_EV.html) event will be triggered whenever you have tapped on the item. [ItemTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemTappedEventArgs.html) has the following members which provides the information for `ItemTapped` event.
 
-* **ItemType** - Gets the type of the item on which you have tapped
-* **ItemData** - The underlying data associated with the tapped item as its arguments
-* **Position** - Gets the touch position in the tapped item
- 
+ * ItemType: It gets the type of the tapped item.
+ * ItemData: The underlying data associated with the tapped item as its arguments.
+ * Position: Gets the touch position in the tapped item.
+
 {% highlight c# %}
 listView.ItemTapped += ListView_ItemTapped;
 
@@ -143,13 +147,13 @@ private void ListView_ItemTapped(object sender, Syncfusion.ListView.XForms.ItemT
 }
 {% endhighlight %}
 
-### ItemDoubleTapped Event
+### ItemDoubleTapped event
 
-TThe [ItemDoubleTapped](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemDoubleTapped_EV.html) event will be triggered whenever you have double tapped on the item. [ItemDoubleTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDoubleTappedEventArgs.html) has the following members which provides the information for `ItemDoubleTapped` event.
+The [ItemDoubleTapped](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemDoubleTapped_EV.html) event will be triggered whenever double tapping the item. The [ItemDoubleTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDoubleTappedEventArgs.html) has the following members providing information for the `ItemDoubleTapped` event:
 
-* **ItemType** - Gets the type of the item on which you have double tapped
-* **ItemData** - The underlying data associated with the double tapped item as its arguments
-* **Position** - Gets the touch position in the double tapped item
+ * ItemType: It gets the type of double tapped item.
+ * ItemData: The underlying data associated with the double tapped item as its arguments.
+ * Position: Gets the touch position in the double tapped item.
 
 {% highlight c# %}
 listView.ItemDoubleTapped += ListView_ItemDoubleTapped;
@@ -163,13 +167,13 @@ private void ListView_ItemDoubleTapped(object sender, ItemDoubleTappedEventArgs 
 }
 {% endhighlight %}
 
-### ItemHolding Event
+### ItemHolding event
 
 The [ItemHolding](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemHolding_EV.html) event will be triggered whenever you have long pressed on the item. [ItemHoldingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemHoldingEventArgs.html) has the following members which provides the information for `ItemHolding` event.
 
-* **ItemType** - Gets the type of the item on which you have long pressed
-* **ItemData** - The underlying data associated with the holding item as its arguments
-* **Position** - Gets the touch position in the holding item
+ * ItemType: It gets the type of the long pressed item.
+ * ItemData: The underlying data associated with the holding item as its arguments.
+ * Position: Gets the touch position in the holding item.
  
 {% highlight c# %}
 listView.ItemHolding += ListView_ItemHolding;
@@ -183,7 +187,7 @@ private void ListView_ItemHolding(object sender, ItemHoldingEventArgs e)
 
 ### ItemAppearing
 
-The [ItemAppearing](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemAppearing_EV.html) event is raised when the items are appearing in the view on scrolling, loading and navigating from one page to another page. The [ItemAppearingEventArgs]((https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemAppearingEventArgs.html)) has the following members which provide the information of appearing Items.
+The [ItemAppearing](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemAppearing_EV.html) event is raised when the items are appearing in the view on scrolling, loading and navigating from one page to another page. The [ItemAppearingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemAppearingEventArgs.html) has the following members which provide the information of appearing Items.
 
 * **ItemData** - The underlying data associated with the appearing item
  
@@ -283,14 +287,15 @@ public class CommandViewModel
 }
 {% endhighlight %}
 
-## Improving ListView Performance
+## Improving ListView performance
 
-SfListView has been built from the ground up with an optimized view reuse strategy to achieve the best possible performance on the Xamarin platform, even when loading large data sets. Below some techniques to Improving performance of a SfListView,
+The SfListView has been built from the ground up with an optimized view reuse strategy, to achieve the best possible performance on the Xamarin platform even when loading large data sets. Following techniques are used to improve performance of the SfListView:
 
-* Bind the ItemsSource property to an IList<T> collection instead of an IEnumerable<T> collection, because IEnumerable<T> collections don't support random access.
-* Avoid loading complex layout in the template that contains large size of images or nested containers which cause some performance degradation on scrolling. So, recommended to use fewer elements and images with less size and resolution to achieve the maximum performance.
-* Avoid placing a SfListView inside a ScrollView for the following reasons:
+ * Bind the ItemsSource property to an IList<T> collection instead of an IEnumerable<T> collection because IEnumerable<T> collection do not support random access.
+ * Avoid loading complex layout in the template contains large size of images or nested containers, which cause some performance degradation on scrolling. So recommended to use fewer elements and images with less size and resolution to achieve the maximum performance.
+ * Avoid placing the SfListView inside ScrollView for the following reasons:
   * The SfListView implements its own scrolling.
-  * The SfListView will not receive any gestures, as they will be handled by the parent ScrollView.
-  * Should define the size to SfListView if load it inside ScrollView.
-* Avoid changing the cell layout based on the BindingContext. This incurs large layout and initialization costs.
+  * The SfListView will not receive any gestures as it will be handled by the parent ScrollView.
+  * Should define size to the SfListView if it loads inside ScrollView.
+ * Avoid changing the cell layout based on the BindingContext. This incurs large layout and initialization costs.
+

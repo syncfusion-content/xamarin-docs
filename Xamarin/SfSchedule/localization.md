@@ -100,7 +100,7 @@ Here Resources(.resw) file name should be match with the given locale language c
 
 The procedure for creating Resources(.resw) file is as follows:
 
-*	Create Resources(.resw) file in sample with C Sharp culture standard name for example fr , de-DE and so.
+*	Create Resources(.resw) file in sample with C# culture standard name for example fr , de-DE and so.
 
 ![](Localization_images/Localization_XFUWP_Resw.png)
 

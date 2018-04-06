@@ -87,7 +87,6 @@ Refer the below code example to show the popup in Grid tapped event.
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:PopupSample"
              x:Class="PopupSample.MainPage"
-              Padding="0,40,0,0"
              xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms"
              xmlns:sfDataGrid="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms" >
     <ContentPage.BindingContext>
@@ -355,118 +354,57 @@ Refer the below code example to show the popup in Item tapped event.
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ListViewWithPopup"
              x:Class="ListViewWithPopup.MainPage"
-             xmlns:listView="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"     
-             xmlns:popuplayout="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms">
+             xmlns:sfListview="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"     
+             xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms">
 
-    <ContentPage.BindingContext>
-        <local:ContactsViewModel />
+     <ContentPage.BindingContext>
+        <local:ContactsViewModel x:Name="viewModel"/>
     </ContentPage.BindingContext>
     
-    <ContentPage.Content>
-      <popuplayout:SfPopupLayout x:Name="popupLayout">
-        <popuplayout:SfPopupLayout.Content>-->
-          <listView:SfListView  x:Name="listView" 
-                                ItemSize="70"
-                                ItemsSource="{Binding contactsInfo}" 
-                                ItemSpacing="0,0,5,0" >
-            <listView:SfListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <ViewCell.View>
-                            <Grid x:Name="grid" RowSpacing="1">
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="*" />
-                                    <RowDefinition Height="1" />
-                                </Grid.RowDefinitions>
-                                   <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="100" />
+    <sfPopup:SfPopupLayout x:Name="popupLayout">
+        <sfPopup:SfPopupLayout.Content>
+            <sfListview:SfListView  x:Name="listView"  ItemSpacing="5" 
+                          ItemsSource="{Binding contactsinfo}" >
+                <sfListview:SfListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <Grid x:Name="grid" RowSpacing="1">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50" />
                                         <ColumnDefinition Width="200" />
-                                        <ColumnDefinition Width="70" />
+                                        <ColumnDefinition Width="50" />
                                     </Grid.ColumnDefinitions>
 
                                     <Image Source="{Binding ContactImage}"
-                                           VerticalOptions="Center"
-                                           HorizontalOptions="Center"
-                                           HeightRequest="50"/>
+                                       VerticalOptions="Center"
+                                       HorizontalOptions="Center"
+                                       HeightRequest="50"/>
 
-                                    <Grid Grid.Column="1"
-                                          RowSpacing="1"
-                                          Padding="10,0,0,0"
-                                          VerticalOptions="Center">
-                                        <Grid.RowDefinitions>
-                                            <RowDefinition Height="*" />
-                                            <RowDefinition Height="*" />
-                                        </Grid.RowDefinitions>
+                                    <Label Grid.Column="1"
+                                        HorizontalTextAlignment="Center"
+                                        LineBreakMode="NoWrap"
+                                        Text="{Binding ContactName}" 
+                                        FontSize="Medium" />
 
-                                        <Label LineBreakMode="NoWrap"
-                                               TextColor="#474747"
-                                               Text="{Binding ContactName}">
-                                            <Label.FontSize>
-                                                <OnPlatform x:TypeArguments="x:Double">
-                                                    <OnPlatform.WinPhone>
-                                                        <OnIdiom x:TypeArguments="x:Double" Phone="18" Tablet="20" />
-                                                    </OnPlatform.WinPhone>
-                                                    <OnPlatform.Android>
-                                                        <OnIdiom x:TypeArguments="x:Double"
-                                                                 Phone="16"
-                                                                 Tablet="18" />
-                                                    </OnPlatform.Android>
-                                                    <OnPlatform.iOS>
-                                                        <OnIdiom x:TypeArguments="x:Double"
-                                                                 Phone="16"
-                                                                 Tablet="18" />
-                                                    </OnPlatform.iOS>
-                                                </OnPlatform>
-                                            </Label.FontSize>
-                                        </Label>
-                                        <Label Grid.Row="1"
-                                               Grid.Column="0"
-                                               TextColor="#474747"
-                                               LineBreakMode="NoWrap"
-                                               Text="{Binding ContactNumber}">
-                                            <Label.FontSize>
-                                                <OnPlatform x:TypeArguments="x:Double">
-                                                    <OnPlatform.WinPhone>
-                                                        <OnIdiom x:TypeArguments="x:Double" Phone="12" Tablet="12" />
-                                                    </OnPlatform.WinPhone>
-                                                    <OnPlatform.Android>
-                                                        <OnIdiom x:TypeArguments="x:Double"
-                                                                         Phone="12"
-                                                                         Tablet="14" />
-                                                    </OnPlatform.Android>
-                                                    <OnPlatform.iOS>
-                                                        <OnIdiom x:TypeArguments="x:Double"
-                                                                         Phone="12"
-                                                                         Tablet="14" />
-                                                    </OnPlatform.iOS>
-                                                </OnPlatform>
-                                            </Label.FontSize>
-                                        </Label>
-                                    </Grid>
+                                    <Image Grid.Column="2" 
+                                       Source="{Binding ContactType}"
+                                       VerticalOptions="End"
+                                       HorizontalOptions="End"
+                                       HeightRequest="50"/>
                                     
-                                    <Grid Grid.Row="0"
-                                          Grid.Column="2"
-                                          RowSpacing="0"
-                                          HorizontalOptions="End"
-                                          Padding="0,10,10,0">
-                                        <Image
-                                             VerticalOptions="Center"
-                                             HorizontalOptions="Center"
-                                             HeightRequest="50"
-                                             Source="{Binding ContactType}">
-                                           
-                                        </Image>
-                                    </Grid>
-                               </Grid>
-                        </ViewCell.View>
-                    </ViewCell>
-                </DataTemplate>
-            </listView:SfListView.ItemTemplate>
-        </listView:SfListView>
-     </popuplayout:SfPopupLayout.Content>
-  </popuplayout:SfPopupLayout>-->
- </ContentPage.Content>
-</ContentPage>
+                                </Grid>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </sfListview:SfListView.ItemTemplate>
+            </sfListview:SfListView>
+        </sfPopup:SfPopupLayout.Content>
+    </sfPopup:SfPopupLayout> 
+ </ContentPage>
 {% endhighlight %}
 
 {% highlight c# %}
@@ -478,6 +416,12 @@ namespace ListViewWithPopup
         public MainPage()
         {
             InitializeComponent();
+            popupLayout.PopupView.ContentTemplate = new DataTemplate(() =>
+            {
+                Label popupContent = new Label();
+                popupContent.Text = "A pop-up is a graphical user interface display area that suddenly appears in the foreground of the visual interface. Pop-up can be initiated by single or double tap or can simply be timed to occur. A pop-up window should be smaller than the background window or interface; otherwise, its a replacement interface.";
+                return popupContent;
+            });
             listView.ItemTapped += ListView_ItemTapped;
         }
 
@@ -489,3 +433,222 @@ namespace ListViewWithPopup
 }
 {% endhighlight %}
 {% endtabs %}
+
+{% highlight c# %}
+
+// Contacts.cs
+
+public class Contacts : INotifyPropertyChanged
+{
+    private string contactName;
+    private string contactNumber;
+    private ImageSource contactImage;
+    private ImageSource phoneImage;
+
+    public Contacts(string name, string number)
+    {
+        contactName = name;
+        contactNumber = number;
+        
+    }
+
+    public Contacts()
+    {
+    }
+
+    public string ContactName
+    {
+        get { return contactName; }
+        set
+        {
+            if (contactName != value)
+            {
+                contactName = value;
+                this.RaisedOnPropertyChanged("ContactName");
+            }
+        }
+    }
+
+    public string ContactNumber
+    {
+        get { return contactNumber; }
+        set
+        {
+            if (contactNumber != value)
+            {
+                contactNumber = value;
+                this.RaisedOnPropertyChanged("ContactNumber");
+            }
+        }
+    }
+
+    public ImageSource ContactImage
+    {
+        get { return this.contactImage; }
+        set
+        {
+            this.contactImage = value;
+            this.RaisedOnPropertyChanged("ContactImage");
+        }
+    }
+    
+    public ImageSource ContactType
+    {
+        get { return this.phoneImage; }
+        set
+        {
+            this.phoneImage = value;
+            this.RaisedOnPropertyChanged("ContactType");
+        }
+    }
+
+    public event PropertyChangedEventHandler PropertyChanged;
+    public void RaisedOnPropertyChanged(string _PropertyName)
+    {
+        if (PropertyChanged != null)
+        {
+            PropertyChanged(this, new PropertyChangedEventArgs(_PropertyName));
+        }
+    }
+}
+{% endhighlight %}
+
+{% highlight c# %}
+
+// ContactsViewModel.cs
+
+public class ContactsViewModel
+{
+    #region Properties
+    public ObservableCollection<Contacts> contactsinfo { get; set; }
+    #endregion
+
+    #region Constructor
+    public ContactsViewModel()
+    {
+        contactsinfo = new ObservableCollection<Contacts>();
+        Random r = new Random();
+        foreach (var cusName in CustomerNames)
+        {
+            var contact = new Contacts(cusName, r.Next(720, 799).ToString() + " - " + r.Next(3010, 3999).ToString());
+            contact.ContactImage = ImageSource.FromResource("ListViewWithPopup.Images.Image" + r.Next(0, 28) + ".png");
+            contact.ContactType = ImageSource.FromResource("ListViewWithPopup.Images.PhoneImage.png");
+            contactsinfo.Add(contact);
+        }
+    }
+    #endregion
+
+    #region Fields
+    string[] CustomerNames = new string[] {
+        "Kyle",
+        "Gina",
+        "Irene",
+        "Katie",
+        "Michael",
+        "Oscar",
+        "Ralph",   
+    };
+    #endregion
+}
+{% endhighlight %}
+
+
+## Loading SfListView as a content template of SfPopupLayout
+
+SfPopupLayout allows you to load the SfListView as a [SfPopupLayout.PopupView.ContentTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~ContentTemplate.html).You have to set `WidthRequest` and `HeightRequest` property for loading SfListiew in SfPopupLayout. 
+
+Refer the below code example to load the SfListView in SfPopupLayout.
+
+{% tabs %}
+{% highlight xaml %}
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ListViewWithPopup.MainPage"           
+             xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms">
+    <sfPopup:SfPopupLayout x:Name="popupLayout">
+        <sfPopup:SfPopupLayout.Content>
+            <StackLayout x:Name="mainLayout">
+                <Button x:Name="clickToShowPopup" Text="CLICK TO SHOW POPUP" VerticalOptions="Start" HorizontalOptions="FillAndExpand"    />
+            </StackLayout>
+        </sfPopup:SfPopupLayout.Content>
+    </sfPopup:SfPopupLayout> 
+</ContentPage>
+{% endhighlight %}
+
+{% highlight c# %}
+
+namespace ListViewWithPopup
+{
+    public partial class MainPage : ContentPage
+    {
+       private ListViewPage listView;
+       public MainPage()
+        {
+            InitializeComponent();
+            listView = new ListViewPage();
+            popupLayout.PopupView.ContentTemplate = new DataTemplate(() =>
+            {
+                return listView.Content;
+            });
+            clickToShowPopup.Clicked += ClickToShowPopup_Clicked;
+         }
+
+        private void ClickToShowPopup_Clicked(object sender, EventArgs e)
+        {
+            popupLayout.Show();
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+{% highlight c# %}  
+
+// ListViewPage
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ListViewWithPopup.ListViewPage"
+             xmlns:local="clr-namespace:ListViewWithPopup"
+             xmlns:sfListview="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+
+    <ContentPage.BindingContext>
+        <local:ContactsViewModel x:Name="viewModel"/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+
+        <sfListview:SfListView  x:Name="listView" WidthRequest="250" HeightRequest="200"
+                          ItemsSource="{Binding contactsinfo}" >
+            <sfListview:SfListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <Grid x:Name="grid" RowSpacing="1">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="50" />
+                                    <ColumnDefinition Width="100" />
+                                </Grid.ColumnDefinitions>
+
+                                <Image Source="{Binding ContactImage}"
+                                       VerticalOptions="Center"
+                                       HorizontalOptions="Center"
+                                       HeightRequest="50"/>
+
+                                <Label Grid.Column="1"
+                                        HorizontalTextAlignment="Center"
+                                        LineBreakMode="NoWrap"
+                                        Text="{Binding ContactName}" 
+                                        FontSize="Medium" />
+                            </Grid>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+            </sfListview:SfListView.ItemTemplate>
+        </sfListview:SfListView>
+    </ContentPage.Content>
+</ContentPage>
+{% endhighlight %}

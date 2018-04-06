@@ -39,7 +39,7 @@ SfPopupLayout has different animation modes as listed below.
 </tr>
 </table>
 
-N> Setting of AnimationMode is same for both `Displaying pop-up when the SfPopupLayout is set as root view`and `Displaying pop-up when the SfPopupLayout is not set as root view` 
+N> Setting of AnimationMode is same for both `Displaying pop-up when the SfPopupLayout is set as root view` and `Displaying pop-up when the SfPopupLayout is not set as root view` 
 
 ## Zoom 
 

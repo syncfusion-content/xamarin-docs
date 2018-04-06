@@ -9,7 +9,7 @@ documentation: ug
 
 # Layout Customizations
 
-The SfPopupLayout supports two types of [SfPopupLayout.PopupView.AppearanceMode](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AppearanceMode.html). By default, the "AppearanceMode.OneButton" is set. You can change the appearance by using the `SfPopupLayout.PopupView.AppearanceMode` property.
+The SfPopupLayout supports two types of [SfPopupLayout.PopupView.AppearanceMode](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AppearanceMode.html). By default, the `AppearanceMode.OneButton` is set. You can change the appearance by using the `SfPopupLayout.PopupView.AppearanceMode` property.
 
 The two different appearance modes in the SfPopupLayout are as follows:
 
@@ -132,7 +132,7 @@ Executing the above codes renders the following output in iOS, Android and Windo
 
 ## Customizing pop-up layouts
  
-You can customize the entire view of the pop-up by loading the templates or custom views for the header, body, and footer.
+You can customize the entire view of the pop-up by loading the templates or custom views for the header, body and footer.
 
 ### Header customization
 

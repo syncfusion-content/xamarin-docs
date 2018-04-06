@@ -11,7 +11,7 @@ documentation: ug
 
 You can use pop-up layout as modal window by using the built-in Close icon and the [SfPopupLayout.StaysOpen](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~StaysOpenProperty.html) property prevents interaction with your application until you close the window.
 
-`Modal`: Modal Window will load under the parent window surrounded by the overlay which prevents you to click anywhere else on screen apart from the content of the modal.
+`Modal`: Window loads under the parent window surrounded by an overlay which prevents clicking anywhere else on the screen apart from the control of the modal.
 
 Modal does not require any action to open. It opens in the same window and gives callbacks when closing or opening the window.
 
@@ -53,7 +53,7 @@ namespace GettingStarted
             contentTemplateView = new DataTemplate(() =>
             {
                 popupContent = new Label();
-                popupContent.Text = "Window which loads under the parent window surrounded by an overlay which prevents users to click anywhere else on screen other then the content of the modal.Modal also doesn't require any user action to open.Modal opens in the same window.Modal gives callbacks when you close or open the modal.";
+                popupContent.Text = "Window loads under the parent window surrounded by an overlay which prevents clicking anywhere else on the screen apart from the control of the modal. Modal opens in the same window. It also does not require any user action to open, and give callbacks when closing or opening the modal.";
                 popupContent.WidthRequest = 260;
                 popupContent.BackgroundColor = Color.White;
                 popupContent.HorizontalOptions = LayoutOptions.FillAndExpand;

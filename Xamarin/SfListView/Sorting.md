@@ -216,7 +216,7 @@ listView.ItemSize = 50;
 listView.ItemsSource = viewModel.Items;
 listView.GroupHeaderTemplate = new DataTemplate(() => 
 {
-   var headergrid = new Grid();
+   var grid = new Grid();
    var headerLabel = new Label
    {
    TextColor = Color.White,
@@ -224,8 +224,8 @@ listView.GroupHeaderTemplate = new DataTemplate(() =>
    BackgroundColor=Color.Teal
    };
    headerLabel.SetBinding(Label.TextProperty, new Binding("key"));
-   headergrid.Children.Add(headerLabel);
-   return headergrid;
+   grid.Children.Add(headerLabel);
+   return grid;
 });
 listView.DataSource.GroupDescriptors.Add(new GroupDescriptor()
 {

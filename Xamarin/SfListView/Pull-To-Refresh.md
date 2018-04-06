@@ -275,16 +275,16 @@ public ListViewPullToRefresh()
    listView.SelectionMode = SelectionMode.None;
    listView.GroupHeaderTemplate = new DataTemplate(() => 
    {
-      var headergrid = new Grid();
-      headergrid.HeightRequest = 150;
+      var grid = new Grid();
+      grid.HeightRequest = 150;
       var headerLabel = new Label
       {
       TextColor = Color.Red,
       BackgroundColor=Color.White
       };
       headerLabel.SetBinding(Label.TextProperty, new Binding("key"));
-      headergrid.Children.Add(headerLabel);
-      return headergrid;
+      grid.Children.Add(headerLabel);
+      return grid;
    });
 
       //loading listview into pulltorefresh

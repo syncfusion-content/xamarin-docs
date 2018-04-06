@@ -180,7 +180,7 @@ For each group, display the sum of values of the property from model object in t
 {% highlight c# %}
 listView.GroupHeaderTemplate = new DataTemplate(() =>
 {
-   var headergrid = new Grid();
+   var grid = new Grid();
 
    var label1 = new Label();
    label1.SetBinding(Label.TextProperty, new Binding("Key"));
@@ -190,10 +190,10 @@ listView.GroupHeaderTemplate = new DataTemplate(() =>
    binding.Converter = new Converter();
    label2.SetBinding(Label.TextProperty,binding);
 
-   headergrid.Children.Add(label1);
-   headergrid.Children.Add(label2, 1, 0);
+   grid.Children.Add(label1);
+   grid.Children.Add(label2, 1, 0);
 
-   return headergrid;
+   return grid;
  });
 
  public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
@@ -337,7 +337,7 @@ N> Multi-level grouping is only applicable for `LinearLayout` in the SfListView.
 
 {% highlight c# %}
 
-listView.ItemsSource = viewmodel.EmployeeInfo;
+listView.ItemsSource = viewModel.EmployeeInfo;
 listView.ItemSize = 60;
 listView.DataSource.GroupDescriptors.Add(new GroupDescriptor()
 {
@@ -797,7 +797,7 @@ The SfListView supports selecting each group and items in the group like a check
 {% highlight c# %}
 listView.GroupHeaderTemplate = new DataTemplate(() => 
 {
-  var headergrid = new Grid();
+  var grid = new Grid();
 
   var label = new Label() { VerticalTextAlignment=TextAlignment.Center};
   label.SetBinding(Label.TextProperty, new Binding("Key"));
@@ -808,18 +808,18 @@ listView.GroupHeaderTemplate = new DataTemplate(() =>
   binding.ConverterParameter = listView;
   image.SetBinding(Image.SourceProperty, binding);
 
-  Binding selectionbinding = new Binding("SelectionMode");
-  selectionbinding.Source = listView;
-  image.SetBinding(Image.IsVisibleProperty, selectionbinding);
+  Binding bind = new Binding("SelectionMode");
+  bind.Source = listView;
+  image.SetBinding(Image.IsVisibleProperty, bind);
 
-  var imagetapped = new TapGestureRecognizer();
-  imagetapped.Tapped += Imagetapped_Tapped;
-  image.GestureRecognizers.Add(imagetapped);
+  var tapped = new TapGestureRecognizer();
+  tapped.Tapped += Imagetapped_Tapped;
+  image.GestureRecognizers.Add(tapped);
                
-  headergrid.Children.Add(label);
-  headergrid.Children.Add(image, 2, 0);
+  grid.Children.Add(label);
+  grid.Children.Add(image, 2, 0);
                 
-  return headergrid;
+  return grid;
 });
 {% endhighlight %} 
 {% endtabs %}
@@ -961,7 +961,7 @@ listView.DataSource.GroupDescriptors.Add(new GroupDescriptor()
  });
 listView.GroupHeaderTemplate = new DataTemplate(() =>
  {
-   var headergrid = new Grid();
+   var grid = new Grid();
 
    var stack=new StackLayout();
    Binding binding = new Binding("IsExpand");
@@ -972,8 +972,8 @@ listView.GroupHeaderTemplate = new DataTemplate(() =>
    label.SetBinding(Label.TextProperty, new Binding("Key"));
 
    stack.Children.Add(label);
-   headergrid.Children.Add(stack);
-   return headergrid;
+   grid.Children.Add(stack);
+   return grid;
  });
 
  public class SelectionBoolToBackgroundColorConverter : IValueConverter 

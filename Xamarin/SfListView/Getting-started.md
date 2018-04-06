@@ -508,7 +508,7 @@ To filter the items based on the Title property of the underlying data by using 
       <SearchBar x:Name="filterText" HeightRequest="40"
            Placeholder="Search here to filter"
            TextChanged="OnFilterTextChanged" Grid.Row="0"/>
-      <listView:SfListView x:Name="listView" Grid.Row="1" ItemsSource="{Binding BookInfo}"/>
+      <syncfusion:SfListView x:Name="listView" Grid.Row="1" ItemsSource="{Binding BookInfo}"/>
     </Grid>
   </ContentPage>
 {% endhighlight %}

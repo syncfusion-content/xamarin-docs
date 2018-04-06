@@ -521,10 +521,10 @@ listView.RightSwipeTemplate = new DataTemplate(() =>
   };
 
   var grid1 = new Grid();
-  TapGestureRecognizer gridtapped = new TapGestureRecognizer();
-  grid1.GestureRecognizers.Add(gridtapped);
-  gridtapped.Tapped += Gridtapped_Tapped;
-  var editlabel = new Label()
+  TapGestureRecognizer tapped = new TapGestureRecognizer();
+  grid1.GestureRecognizers.Add(tapped);
+  tapped.Tapped += Gridtapped_Tapped;
+  var label = new Label()
   {
     HeightRequest =50,
     WidthRequest = 50,
@@ -532,7 +532,7 @@ listView.RightSwipeTemplate = new DataTemplate(() =>
     Text ="EditItem"
   };
 
-  grid1.Children.Add(editlabel);
+  grid1.Children.Add(label);
   grid.Children.Add(grid1);
   return grid;
 });

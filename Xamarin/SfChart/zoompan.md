@@ -126,6 +126,35 @@ zoomPanBehavior.ZoomMode = ZoomMode.X;
 
 ![](zoompan_images/zoompan_img3.png)
 
+## Auto Interval On Zooming
+
+[`EnableAutoIntervalOnZooming`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~EnableAutoIntervalOnZooming.html) property is used to calculate interval automatically while on zooming and it will not take into account the interval that is specified in axis. Default value of this property is true. 
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+      <chart:NumericalAxis EnableAutoIntervalOnZooming="True"  >
+      
+      </chart:NumericalAxis>
+ </chart:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new NumericalAxis()
+{             
+       EnableAutoIntervalOnZooming = true,
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Even in zooming state, to maintain the interval that is specified in the axis set the [`EnableAutoIntervalOnZooming`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~EnableAutoIntervalOnZooming.html) to false.
+
 ## Events
 
 **ZoomStart**

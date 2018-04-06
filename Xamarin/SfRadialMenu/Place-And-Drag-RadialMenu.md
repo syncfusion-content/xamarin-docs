@@ -138,7 +138,7 @@ This event get triggered when dragging is ended in RadialMenu with `DragEndEvent
 
 * `OldValue` - Gets the Start position of the RadialMenu
 
-* `OldValue` - Gets the ens position of the RadialMenu
+* `NewValue` - Gets the ens position of the RadialMenu
 
 * `Handled` - Gets and Sets the boolean value for restricting the RadialMenu to move another position.
 
@@ -184,7 +184,7 @@ SfRadialMenu radialMenu = new SfRadialMenu();
 //Initializing RadialMenu's properties
 radialMenu.CenterButtonText = "\uE713";
 radialMenu.CenterButtonFontFamily = "Segoe MDL2 Assets.ttf";
-radialMenu.CenterButtonRadius = 32;
+radialMenu.CenterButtonRadius = 30;
 void Handle_DragEnd(object sender, Syncfusion.SfRadialMenu.XForms.DragEndEventArgs e)
 {
     e.Handled = true;
@@ -215,8 +215,12 @@ N> Default `CenterButtonPlacement` property value is Center.
  xmlns:radialMenu="clr-namespace:Syncfusion.SfRadialMenu.XForms;assembly=Syncfusion.SfRadialMenu.XForms">
     
 <ContentPage.Content>
-<radialMenu:SfRadialMenu x:Name="radialMenu" CenterButtonPlacement="TopLeft" CenterButtonText=""  CenterButtonBackText="" CenterButtonFontFamily="Segoe MDL2 Assets.ttf" CenterButtonBackFontFamily="Segoe MDL2 Assets.ttf" CenterButtonRadius="30" CenterButtonTextColor="White"
-CenterButtonBorderColor="White">
+<radialMenu:SfRadialMenu x:Name="radial_Menu" CenterButtonText="\uE713" SfRadialMenuCenterButtonPlacement="TopLeft" CenterButtonFontFamily="Segoe MDL2 Assets.ttf" CenterButtonRadius="26">
+<radialMenu:SfRadialMenuItem  FontIconText="\uEC3B" IconFontFamily="Segoe MDL2 Assets.ttf">
+<radialMenu:SfRadialMenuItem.Items>
+<radialMenu:SfRadialMenuItem  FontIconText="\uEBB8" IconFontFamily="Segoe MDL2 Assets.ttf" />
+<radialMenu:SfRadialMenuItem  FontIconText="\uE7ED" IconFontFamily="Segoe MDL2 Assets.ttf" />
+</radialMenu:SfRadialMenuItem.Items> 
 </radialMenu:SfRadialMenu>
 </ContentPage.Content>
 </ContentPage> 
@@ -242,18 +246,48 @@ public RadialMenuPage ()
 {
 InitializeComponent();
 //Creating instance for RadialMenu
-SfRadialMenu radialMenu = new SfRadialMenu();
+using Syncfusion.XForms.SfRadialMenu;
+using Xamarin.Forms;
 
-//Initializing RadialMenu's properties
-radialMenu.CenterButtonText = "\uE713";
-radialMenu.CenterButtonFontFamily = "Segoe MDL2 Assets.ttf";
-radialMenu.CenterButtonBackFontFamily = "Segoe MDL2 Assets.ttf";
-radialMenu.CenterButtonRadius = 32;
-radialMenu.CenterButtonBorderColor = Color.White;
-radialMenu.CenterButtonPlacement = SfRadialMenuCenterButtonPlacement.TopLeft;
-this.Content = radialMenu;
+public class App : Application
+{
+    public App()
+    {
+        MainPage = new RadialMenuPage();
+    }
+
+}
+Public class RadialMenuPage : ContentPage
+{
+
+    public RadialMenuPage()
+    {
+            InitializeComponent();
+
+            //Creating instance for RadialMenu
+            SfRadialMenu radialMenu = new SfRadialMenu();
+            SfRadialMenuItem WiFiSubMenuItems = new SfRadialMenuItem();
+            SfRadialMenuItem bluetoothSubMenuItems = new SfRadialMenuItem();
+            SfRadialMenuItem profileSubMenuItems = new SfRadialMenuItem();
+            WiFiSubMenuItems.IconFontFamily = "Segoe MDL2 Assets.ttf";
+            WiFiSubMenuItems.FontIconText = "\uEC3B";
+            bluetoothSubMenuItems.IconFontFamily = "Segoe MDL2 Assets.ttf";
+            bluetoothSubMenuItems.FontIconText = "\uEBB8";
+            profileSubMenuItems.IconFontFamily = "Segoe MDL2 Assets.ttf";
+            profileSubMenuItems.FontIconText = "\uE7ED";
+            radialMenu.CenterButtonPlacement = SfRadialMenuCenterButtonPlacement.Center;
+            radialMenu.Items.Add(bluetoothSubMenuItems);
+            radialMenu.Items.Add(profileSubMenuItems);
+            radialMenu.Items.Add(WiFiSubMenuItems);
+
+            //Initializing RadialMenu's properties
+            radialMenu.CenterButtonText = "\uE713";
+            radialMenu.CenterButtonFontFamily = "Segoe MDL2 Assets"; 
+            radialMenu.CenterButtonRadius = 26;
+            this.Content = radialMenu;
 }
 }
+
 {% endhighlight %}
 {% endtabs %}
 

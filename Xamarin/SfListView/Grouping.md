@@ -813,7 +813,7 @@ listView.GroupHeaderTemplate = new DataTemplate(() =>
   image.SetBinding(Image.IsVisibleProperty, bind);
 
   var tapped = new TapGestureRecognizer();
-  tapped.Tapped += Imagetapped_Tapped;
+  tapped.Tapped += Image_Tapped;
   image.GestureRecognizers.Add(tapped);
                
   grid.Children.Add(label);

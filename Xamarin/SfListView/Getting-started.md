@@ -50,7 +50,7 @@ N> To configure the Syncfusion NuGet packages in Visual Studio for mac, refer to
 
 ### Adding ListView Reference
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfListView to your project, open the NuGet package manager in Visual Studio, and search for [syncfusion.xamarin.sflistview](https://www.nuget.org/packages/Syncfusion.Xamarin.SfListView/), and then install it. 
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfListView to your project, open the NuGet package manager in Visual Studio, and search for [syncfusion.xamarin.SfListView](https://www.nuget.org/packages/Syncfusion.Xamarin.SfListView/), and then install it. 
 
 ![](SfListView_images/SfListView_AddListView.png)
 

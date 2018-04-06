@@ -523,7 +523,7 @@ listView.RightSwipeTemplate = new DataTemplate(() =>
   var grid1 = new Grid();
   TapGestureRecognizer tapped = new TapGestureRecognizer();
   grid1.GestureRecognizers.Add(tapped);
-  tapped.Tapped += Gridtapped_Tapped;
+  tapped.Tapped += Grid_Tapped;
   var label = new Label()
   {
     HeightRequest =50,

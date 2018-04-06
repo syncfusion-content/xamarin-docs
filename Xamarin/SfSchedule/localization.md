@@ -71,7 +71,7 @@ The procedure for creating strings.xml files is as follows:
  
 ![](Localization_images/localization_img2.jpeg)  
 
->**Note:** 
+>**NOTE** 
 The corresponding Locale values folder updates only when the device language changes.
 
 ### Localizing custom text in iOS renderer.
@@ -88,14 +88,14 @@ If an application requires multiple languages you can follow the below steps:
 
 ![](Localization_images/Localization_iOS_Img2.png)
 
->**Note:** 
+>**NOTE** 
 The corresponding `<Language>.lproj` folder updates only when the device language changes.
 
 ### Localizing custom text in UWP renderer.
 
 You can localize custom text available in the control by adding equivalent localized string in the Resources(.resw) file. 
 
->**Note:** 
+>**NOTE** 
 Here Resources(.resw) file name should be match with the given locale language code.
 
 ![](Localization_images/Localization_XFUWP.png)

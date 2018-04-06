@@ -98,4 +98,12 @@ You can localize custom text available in the control by adding equivalent local
 >**NOTE** 
 Here Resources(.resw) file name should be match with the given locale language code.
 
+The procedure for creating Resources(.resw) file is as follows:
+
+*	Create Resources(.resw) file in sample with c sharp culture standard name for example fr , de-DE and so.
+
+![](Localization_images/Localization_XFUWP_Resw.png)
+
+*	Translate the custom string used in schedule to respective localized culture.
+
 ![](Localization_images/Localization_XFUWP.png)

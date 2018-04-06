@@ -130,30 +130,6 @@ zoomPanBehavior.ZoomMode = ZoomMode.X;
 
 [`EnableAutoIntervalOnZooming`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~EnableAutoIntervalOnZooming.html) property determines the update of axis internal based on the current visible range while zooming the chart. Default value of this property is true. If this property is false, the nice internal will not be calculated for new range after zoom in and actual interval will be sustained.
 
-{% tabs %} 
-
-{% highlight xaml %}
-
-<chart:SfChart.PrimaryAxis>
-      <chart:NumericalAxis EnableAutoIntervalOnZooming="True"  >
-      
-      </chart:NumericalAxis>
- </chart:SfChart.PrimaryAxis>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-chart.PrimaryAxis = new NumericalAxis()
-{             
-       EnableAutoIntervalOnZooming = true,
-};
-
-{% endhighlight %}
-
-{% endtabs %}
-
-
 ## Events
 
 **ZoomStart**

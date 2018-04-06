@@ -19,45 +19,20 @@ Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}
 
 N> Assemblies can be found in an unzipped package location in Mac.
 
-### The SfDataGrid for Xamarin.Forms
+### Adding SfDataGrid Reference
 
-The following list of assemblies should be added as reference from the lib folder to use the SfDataGrid in the application:
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfDataGrid to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfDataGrid](https://www.nuget.org/packages/Syncfusion.Xamarin.SfDataGrid/), and then install it.
 
-<table>
-<tr>
-<th>Project</th>
-<th>Required assemblies</th>
-</tr>
-<tr>
-<td>PCL</td>
-<td>pcl\Syncfusion.Core.XForms.dll<br/>pcl\Syncfusion.Data.Portable.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfDataGrid.XForms.dll<br/>pcl\Syncfusion.SfNumericTextBox.XForms.dll<br/></td>
-</tr>
-<tr>
-<td>Android renderer</td>
-<td>android\Syncfusion.Core.XForms.dll<br/>android\Syncfusion.Data.Portable.dll<br/>android\Syncfusion.GridCommon.Portable.dll<br/>android\Syncfusion.SfDataGrid.XForms.dll<br/>android\Syncfusion.SfDataGrid.XForms.Android.dll<br/>android\Syncfusion.SfNumericTextBox.Android.dll<br/>android\Syncfusion.SfNumericTextBox.XForms.Android.dll<br/>android\Syncfusion.SfNumericTextBox.XForms.dll<br/></td>
-</tr>
-<tr>
-<td>iOS renderer</td>
-<td>ios-unified\Syncfusion.Core.XForms.dll<br/>ios-unified\Syncfusion.Data.Portable.dll<br/>ios-unified\Syncfusion.GridCommon.Portable.dll<br/>ios-unified\Syncfusion.SfDataGrid.XForms.dll<br/>ios-unified\Syncfusion.SfDataGrid.XForms.iOS.dll<br/>ios-unified\Syncfusion.SfNumericTextBox.iOS.dll<br/>ios-unified\Syncfusion.SfNumericTextBox.XForms.dll<br/>ios-unified\Syncfusion.SfNumericTextBox.XForms.iOS.dll<br/></td>
-</tr>
-<tr>
-<td>UWP renderer</td>
-<td>uwp\Syncfusion.Core.XForms.dll<br/>uwp\Syncfusion.Data.Portable.dll<br/>uwp\Syncfusion.GridCommon.Portable.dll<br/>uwp\Syncfusion.SfDataGrid.XForms.dll<br/>uwp\Syncfusion.SfDataGrid.XForms.UWP.dll<br/>uwp\Syncfusion.SfInput.UWP.dll<br/>uwp\Syncfusion.SfShared.UWP.dll<br/>uwp\Syncfusion.SfNumericTextBox.XForms.dll<br/>uwp\Syncfusion.SfNumericTextBox.XForms.UWP.dll<br/></td>
-</tr>
-</table>
+![](SfDataGrid_images/SfDataGrid_Nuget.png)
 
-To export to excel and PDF functionalities of the SfDataGrid, add the following assembly to the pcl project:
+To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfdatagrid) to know about the dependent assemblies for SfDataGrid.
 
-<table>
-<tr>
-<th>Project</th>
-<th>Required assemblies</th>
-</tr>
-<tr>
-<td>PCL</td>
-<td>pcl\Syncfusion.SfGridConverter.XForms.dll<br/>pcl\Syncfusion.Compression.Portable.dll<br/>pcl\Syncfusion.Pdf.Portable.dll<br/>pcl\Syncfusion.XlsIO.Portable.dll<br/></td>
-</tr>
-</table>
+To export the SfDataGrid to Excel and PDF formats, search for [Syncfusion.Xamarin.SfGridConverter](https://www.nuget.org/packages/Syncfusion.Xamarin.SfGridConverter/) in the NuGet package manager, and then install it.
+
+![](SfDataGrid_images/SfGridConverter_Nuget.png)
+
+ If you prefer to manually refer the assemblies instead of NuGet for the using the exporting functionalities of SfDataGrid, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfgridconverter) to know about the dependent assemblies for exporting SfDataGrid.
+
 
 N> When there is a mismatch of Xamarin NuGet packages between the sample and the SfDataGrid assemblies, an error `Could not load type Xamarin.Forms.ElementTemplate` will occur. Refer to the `ReadMe` to know the software requirements of the Syncfusion controls.
 
@@ -80,7 +55,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {
     …
     global::Xamarin.Forms.Forms.Init ();
-    SfDataGridRenderer.Init();
+    Syncfusion.SfDataGrid.XForms.iOS.SfDataGridRenderer.Init();
     LoadApplication (new App ());
     …
 }
@@ -94,7 +69,7 @@ To launch the SfDataGrid in UWP, call the `SfDataGridRenderer.Init()` in the `Ma
 public MainPage()
 {
     …
-    SfDataGridRenderer.Init();
+    Syncfusion.SfDataGrid.XForms.UWP.SfDataGridRenderer.Init();
     LoadApplication (new App ());
     …
 }
@@ -117,7 +92,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
     List<Assembly> assembliesToInclude = new List<Assembly>();
 
     //Now, add all the assemblies your app uses
-    assembliesToInclude.Add(typeof(SfDataGridRenderer).GetTypeInfo().Assembly);
+    assembliesToInclude.Add(typeof(Syncfusion.SfDataGrid.XForms.UWP.SfDataGridRenderer).GetTypeInfo().Assembly);
 
     // replaces Xamarin.Forms.Forms.Init(e);        
     Xamarin.Forms.Forms.Init(e, assembliesToInclude);
@@ -552,11 +527,3 @@ The above exceptions can be resolved in two ways.
 
 
 ![](SfDataGrid_images/GettingStarted_img1.png)
-
-## Loading the SfDataGrid inside a SfPullToRefresh
-
-The SfPullToRefresh is a refresh control. That allows to interact and refresh the view loaded in it. When the SfDataGrid is hosted inside the SfPullToRefresh, it is used to refresh the item while performing the pull to refresh action. The steps to be followed to host the SfDataGrid inside SfPullToRefresh is explained in SfPullToRefresh Property Customization tab.
-
-The final output will look like on iOS, Android, and Windows Phone devices as follows.
-
-![](SfDataGrid_images/SfDataGrid_SlideOnTop_XForms.gif)

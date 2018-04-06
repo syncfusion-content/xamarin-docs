@@ -71,7 +71,8 @@ The procedure for creating strings.xml files is as follows:
  
 ![](Localization_images/localization_img2.jpeg)  
 
->**Note:** The corresponding Locale values folder updates only when the device language changes.
+>**NOTE**
+The corresponding Locale values folder updates only when the device language changes.
 
 ### Localizing custom text in iOS renderer.
 
@@ -87,8 +88,10 @@ If an application requires multiple languages you can follow the below steps:
 
 ![](Localization_images/Localization_iOS_Img2.png)
 
->**Note:** The corresponding `<Language>.lproj` folder updates only when the device language changes.
+>**NOTE**
+The corresponding `<Language>.lproj` folder updates only when the device language changes.
 
 ### Localizing custom text in UWP renderer.
 
->**Note:** Currently customs strings localization not supported in Xamarin.Forms UWP.
+>**NOTE**
+Currently customs strings localization not supported in Xamarin.Forms UWP.

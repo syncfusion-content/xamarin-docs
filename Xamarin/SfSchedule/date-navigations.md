@@ -40,7 +40,8 @@ Schedule.MoveToDate = SpecificDate;
 {% endhighlight %} 
 {% endtabs %}  
 
->**Note:** The specified date should lies between MinDisplayDate and MaxDisplayDate, if the specified date is greater than *MaxDisplayDate* then the view moved to MaxDisplayDate similarly if the specified date is lesser than the *MinDisplayDate* then the view moved to MinDisplayDate.
+>**NOTE**
+The specified date should lies between MinDisplayDate and MaxDisplayDate, if the specified date is greater than *MaxDisplayDate* then the view moved to MaxDisplayDate similarly if the specified date is lesser than the *MinDisplayDate* then the view moved to MinDisplayDate.
 
 
 ## Programmatically change to adjacent dates.
@@ -59,7 +60,8 @@ schedule.Forward();
 {% endhighlight %}  
 {% endtabs %} 
 
->**Note:** - Date can be navigated until it reaches the Min Max date.**
+>**NOTE**
+Date can be navigated until it reaches the Min Max date.**
 
 
 ### Backward
@@ -72,7 +74,8 @@ schedule.Backward();
 {% endhighlight %}   
 {% endtabs %}
 
->**Note:** - Date can be navigated until it reaches the Min Max date.**
+>**NOTE**
+Date can be navigated until it reaches the Min Max date.**
 
 
 ## Range for visible dates

@@ -364,7 +364,7 @@ Refer the below code example to show the popup in Item tapped event.
     <sfPopup:SfPopupLayout x:Name="popupLayout">
         <sfPopup:SfPopupLayout.Content>
             <sfListview:SfListView  x:Name="listView"  ItemSpacing="5" 
-                          ItemsSource="{Binding contactsinfo}" >
+                          ItemsSource="{Binding contactsInfo}" >
                 <sfListview:SfListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -520,20 +520,20 @@ public class Contacts : INotifyPropertyChanged
 public class ContactsViewModel
 {
     #region Properties
-    public ObservableCollection<Contacts> contactsinfo { get; set; }
+    public ObservableCollection<Contacts> contactsInfo { get; set; }
     #endregion
 
     #region Constructor
     public ContactsViewModel()
     {
-        contactsinfo = new ObservableCollection<Contacts>();
+        contactsInfo = new ObservableCollection<Contacts>();
         Random r = new Random();
-        foreach (var cusName in CustomerNames)
+        foreach (var CustomerName in CustomerNames)
         {
-            var contact = new Contacts(cusName, r.Next(720, 799).ToString() + " - " + r.Next(3010, 3999).ToString());
+            var contact = new Contacts(CustomerName, r.Next(720, 799).ToString() + " - " + r.Next(3010, 3999).ToString());
             contact.ContactImage = ImageSource.FromResource("ListViewWithPopup.Images.Image" + r.Next(0, 28) + ".png");
             contact.ContactType = ImageSource.FromResource("ListViewWithPopup.Images.PhoneImage.png");
-            contactsinfo.Add(contact);
+            contactsInfo.Add(contact);
         }
     }
     #endregion
@@ -555,7 +555,7 @@ public class ContactsViewModel
 
 ## Loading SfListView as a content template of SfPopupLayout
 
-SfPopupLayout allows you to load the SfListView as a [SfPopupLayout.PopupView.ContentTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~ContentTemplate.html).You have to set `WidthRequest` and `HeightRequest` property for loading SfListiew in SfPopupLayout. 
+SfPopupLayout allows you to load the SfListView as a [SfPopupLayout.PopupView.ContentTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~ContentTemplate.html).You have to set `WidthRequest` and `HeightRequest` property for loading SfListView in SfPopupLayout. 
 
 Refer the below code example to load the SfListView in SfPopupLayout.
 
@@ -619,7 +619,7 @@ namespace ListViewWithPopup
     <ContentPage.Content>
 
         <sfListview:SfListView  x:Name="listView" WidthRequest="250" HeightRequest="200"
-                          ItemsSource="{Binding contactsinfo}" >
+                          ItemsSource="{Binding contactsInfo}" >
             <sfListview:SfListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>

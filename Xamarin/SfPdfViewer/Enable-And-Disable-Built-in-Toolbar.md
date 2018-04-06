@@ -13,7 +13,7 @@ PDF Viewer has a built-in toolbar that can be disabled or enabled.
 
 ## How to disable/enable built-in toolbar?
 
-By default, the toolbar is enabled. It can be disabled by setting the Toolbar.Enabled property of PDF Viewer to false.
+By default, the built-in toolbar will be enabled. It can be disabled by setting the Toolbar.Enabled property of PDF Viewer to false.
 
 {% tabs %}
 {% highlight c# %}

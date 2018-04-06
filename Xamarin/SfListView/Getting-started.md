@@ -46,19 +46,19 @@ The following list of assemblies should be added as reference from the lib folde
 </tr>
 </table>
 
-N> To configure the Syncfusion NuGet packages in Visual Studio, refer to [here]( https://help.syncfusion.com/xamarin/introduction/download-and-installation#configuring-syncfusion-nuget-packages-in-visual-studio) for more information.
+N> To configure the Syncfusion NuGet packages in Visual Studio for mac, refer to [here]( https://help.syncfusion.com/xamarin/introduction/download-and-installation#configuring-syncfusion-nuget-packages-in-visual-studio) for more information.
 
-### Adding Chart Reference
+### Adding ListView Reference
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add chart to your project, open the NuGet package manager in Visual Studio, and search for [syncfusion.xamarin.sfchart](https://www.nuget.org/packages/Syncfusion.Xamarin.SfChart/), and then install it. 
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfListView to your project, open the NuGet package manager in Visual Studio, and search for [syncfusion.xamarin.sflistview](https://www.nuget.org/packages/Syncfusion.Xamarin.SfListView/), and then install it. 
 
-![](SfListView_images/SfListView_AddChart.png)
+![](SfListView_images/SfListView_AddListView.png)
 
-To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfchart) to know about the dependent assemblies for chart. 
+To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sflistview) to know about the dependent assemblies for SfListView. 
 
-I> After adding the reference, currently, an additional step is required for iOS and UWP projects. We need to initialize the renderer as explained in this [KB article](https://www.syncfusion.com/kb/7171/how-to-resolve-sfkanban-not-rendering-issue-in-ios-and-uwp).
+N> When there is a mismatch between the Syncfusion NuGet packages among the projects, `System.IO.FileLoadException` will occur. To overcome this exception, install the same version of the SfListView assemblies in all the projects.
 
-I> For UWP alone, one more additional step is required if the project is built in release mode with .NET Native tool chain enabled. You can refer to the [KB article](https://www.syncfusion.com/kb/7170) for more details.
+I> After adding the reference, currently, an additional step is required for iOS and UWP projects. We need to initialize the renderer as explained [here](https://help.syncfusion.com/xamarin/sfdatagrid/getting-started#ios).
 
 ## System Requirements
 
@@ -498,6 +498,20 @@ The SfListView supports to filter the records in view by setting predicate to th
 To filter the items based on the Title property of the underlying data by using `FilterContacts` method, follow the code example:
  
 {% tabs %}
+{% highlight xaml %}
+<ContentPage>
+    <Grid>
+	 <Grid.RowDefinitions>
+           <RowDefinition Height="Auto"/>
+           <RowDefinition Height="Auto"/>
+     </Grid.RowDefinitions>
+      <SearchBar x:Name="filterText" HeightRequest="40"
+           Placeholder="Search here to filter"
+           TextChanged="OnFilterTextChanged" Grid.Row="0"/>
+      <listView:SfListView x:Name="listView" Grid.Row="1" ItemsSource="{Binding BookInfo}"/>
+    </Grid>
+  </ContentPage>
+{% endhighlight %}
 {% highlight c# %}
 var grid = new Grid();
 var viewModel = new BookInfoRepository ();

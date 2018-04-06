@@ -201,36 +201,46 @@ Sorting the items along with grouping by using [KeySelector](https://help.syncfu
     <syncfusion:SfListView x:Name="listView" ItemsSource="{Binding Items}" ItemSize="50">
       <syncfusion:SfListView.GroupHeaderTemplate>
         <DataTemplate>
+		  <Grid>
           <Label Text= "{Binding Key}" BackgroundColor="Teal" FontAttributes="Bold" TextColor="White"/>
+		  </Grid>
         </DataTemplate>
       </syncfusion:SfListView.GroupHeaderTemplate>
     </syncfusion:SfListView>
   </ContentPage.Content>
 </ContentPage>
 {% endhighlight %}
-
 {% highlight c# %}
-public partial class MainPage : ContentPage
+var listView = new SfListView();
+listView.ItemSize = 50;
+listView.ItemsSource = viewModel.Items;
+listView.GroupHeaderTemplate = new DataTemplate(() => 
 {
-   public MainPage()
+   var headergrid = new Grid();
+   var headerLabel = new Label
    {
-       InitializeComponent();   
-       listView.DataSource.GroupDescriptors.Add(new GroupDescriptor()
-       {
-           PropertyName = "DateOfBirth",
-           KeySelector = (object obj1) =>
-           {
-               var item = (obj1 as Contacts);
-               return item.DateOfBirth.Year;
-           },
-       });
-       this.listView.DataSource.SortDescriptors.Add(new SortDescriptor()
-       {
-           PropertyName = "DateOfBirth",
-           Direction = ListSortDirection.Ascending
-       });
-   }
-}
+   TextColor = Color.White,
+   FontAttributes = FontAttributes.Bold,
+   BackgroundColor=Color.Teal
+   };
+   headerLabel.SetBinding(Label.TextProperty, new Binding("key"));
+   headergrid.Children.Add(headerLabel);
+   return headergrid;
+});
+listView.DataSource.GroupDescriptors.Add(new GroupDescriptor()
+{
+  PropertyName = "DateOfBirth",
+  KeySelector = (object obj1) =>
+  {
+   var item = (obj1 as Contacts);
+   return item.DateOfBirth.Year;
+  },
+});
+this.listView.DataSource.SortDescriptors.Add(new SortDescriptor()
+{
+  PropertyName = "DateOfBirth",
+  Direction = ListSortDirection.Ascending
+});
 {% endhighlight %}
 {% endtabs %}
 
@@ -243,6 +253,20 @@ The following screenshot shows the output when items are sorted by year. You can
 Sorting the items along with grouping by using `KeySelector` based on retuning the month and year value of the data-time property.
 
 {% tabs %}
+{% highlight xaml %}
+<syncfusion:SfListView x:Name="listView">
+  <syncfusion:SfListView.DataSource>
+    <data:DataSource>
+	  <data:DataSource.GroupDescriptors>
+        <data:GroupDescriptor PropertyName="ContactName" />
+      </data:DataSource.GroupDescriptors>
+      <data:DataSource.SortDescriptors>
+        <data:SortDescriptor PropertyName="ContactName" Direction="Ascending"/>
+      </data:DataSource.SortDescriptors>
+    </dataSource:DataSource>
+  </syncfusion:SfListView.DataSource>
+</syncfusion:SfListView>
+{% endhighlight %}
 {% highlight c# %}
 public partial class MainPage : ContentPage
 {

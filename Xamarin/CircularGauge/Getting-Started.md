@@ -165,7 +165,8 @@ You can add ranges to [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_fi
     range.StartValue = 0;
     range.EndValue = 40;
     scale.Ranges.Add(range);
-    circularGauge.Scales = scale; 
+    scales.Add(scale);
+    circular.Scales = scales;  
 	
 {% endhighlight %}
 
@@ -198,7 +199,8 @@ Create a [`Needle Pointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sf
     NeedlePointer needlePointer = new NeedlePointer();
     needlePointer.Value = 60;
     scale.Pointers.Add(needlePointer);
-    circularGauge.Scales = scale;
+    scales.Add(scale);
+    circular.Scales = scales;  
 	
 {% endhighlight %}
 
@@ -232,7 +234,7 @@ Create a [`Needle Pointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sf
     rangePointer.Value = 60;
     scale.Pointers.Add(rangePointer);
     scales.Add(scale);
-    circularGauge.Scales = scale;
+    circular.Scales = scale;
 	
 {% endhighlight %}
        

@@ -60,7 +60,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ### Universal Windows Platform (UWP)
 
-To launch the SfProgressBar in UWP, intialize the `SfLinearProgressRenderer()` or `SfCircularProgressBarRenderer()` in the `MainPage` constructor before the LoadApplication is called as demonstrated in the following code example.
+To launch the SfProgressBar in UWP, initialize the `SfLinearProgressRenderer()` or `SfCircularProgressBarRenderer()` in the `MainPage` constructor before the LoadApplication is called as demonstrated in the following code example.
 
 {% highlight c# %}
 public MainPage()

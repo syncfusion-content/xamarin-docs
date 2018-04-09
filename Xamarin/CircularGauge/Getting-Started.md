@@ -60,8 +60,8 @@ You can initialize the [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_f
 
 {% highlight c# %}
 
-    SfCircularGauge circular = new SfCircularGauge ();
-    this.Content = circular;
+    SfCircularGauge circularGauge = new SfCircularGauge ();
+    this.Content = circularGauge;
 
 {% endhighlight %}
 
@@ -131,7 +131,7 @@ You can configure the [`Scale`](https://help.syncfusion.com/cr/cref_files/xamari
     ObservableCollection<Scale> scales = new ObservableCollection<Scale>();
     Scale scale = new Scale();
     scales.Add(scale);
-    circular.Scales = scales;  
+    circularGauge.Scales = scales;  
 	
 {% endhighlight %}
 
@@ -166,7 +166,7 @@ You can add ranges to [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_fi
     range.EndValue = 40;
     scale.Ranges.Add(range);
     scales.Add(scale);
-    circular.Scales = scales;  
+    circularGauge.Scales = scales;  
 	
 {% endhighlight %}
 
@@ -200,7 +200,7 @@ Create a [`Needle Pointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sf
     needlePointer.Value = 60;
     scale.Pointers.Add(needlePointer);
     scales.Add(scale);
-    circular.Scales = scales;  
+    circularGauge.Scales = scales;  
 	
 {% endhighlight %}
 
@@ -234,7 +234,7 @@ Create a [`Needle Pointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sf
     rangePointer.Value = 60;
     scale.Pointers.Add(rangePointer);
     scales.Add(scale);
-    circular.Scales = scales;
+    circularGauge.Scales = scales;
 	
 {% endhighlight %}
        
@@ -268,7 +268,7 @@ Create a [`Needle Pointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sf
     markerPointer.Value = 70;
     scale.Pointers.Add(markerPointer);
     scales.Add(scale);
-	circular.Scales = scales;
+	circularGauge.Scales = scales;
 	
 {% endhighlight %}
        
@@ -331,8 +331,8 @@ namespace CircularGauge
             InitializeComponent();
 
             //Initializing circular gauge 
-            SfCircularGauge circular = new SfCircularGauge();
-            circular.Margin = 10;
+            SfCircularGauge circularGauge = new SfCircularGauge();
+            circularGauge.Margin = 10;
             
             //Adding header 
             Header header = new Header();
@@ -364,12 +364,12 @@ namespace CircularGauge
             MarkerPointer markerPointer = new MarkerPointer();
             markerPointer.Value = 70;
             scale.Pointers.Add(markerPointer);
-            circular.Scales = scales;
+           
 
             scales.Add(scale);
-            circular.Scales = scales;
+            circularGauge.Scales = scales;
 
-            this.Content = circular;
+            this.Content = circularGauge;
         }
     }
 }

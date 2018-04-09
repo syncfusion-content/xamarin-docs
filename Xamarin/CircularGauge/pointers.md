@@ -661,7 +661,7 @@ The image is used to denote the pointer value instead of rendering the marker sh
     pointers.Add(markerPointer);
     scale.Pointers = pointers; 
     scales.Add(scale);
-	scales.Add(scale1);
+
     circularGauge.Scales = scales;  
 
 {% endhighlight %}
@@ -833,7 +833,7 @@ The [`EnableAnimation`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgaug
 
 {% highlight c# %}
 
-    SfCircularGauge gauge = new SfCircularGauge();
+    SfCircularGauge circularGauge = new SfCircularGauge();
     ObservableCollection<Scale> scales = new ObservableCollection<Syncfusion.SfGauge.XForms.Scale>();
     Scale scale = new Syncfusion.SfGauge.XForms.Scale();
     scale.RimColor = Color.LightGray;
@@ -873,7 +873,7 @@ The [`EnableAnimation`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgaug
     pointer2.KnobStrokeColor = Color.LightGray;
     pointer2.KnobStrokeWidth = 8;
     scale.Pointers.Add(pointer2);
-    gauge.Scales.Add(scale);
+    circularGauge.Scales.Add(scale);
 
 {% endhighlight %}
 
@@ -916,7 +916,7 @@ Pointers can be dragged over the scale value. It can be achieved by clicking and
 {% highlight c# %}
 
            SfCircularGauge circularGauge = new SfCircularGauge(this);
-            ObservableCollection<CircularScale> scales = new ObservableCollection<CircularScale>();
+            
             CircularScale scale = new CircularScale();
             scale.RimColor = Color.DeepSkyBlue;
             scale.RimWidth = 20;

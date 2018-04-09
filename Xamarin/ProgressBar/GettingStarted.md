@@ -67,10 +67,11 @@ public MainPage()
 {
     …
     // Add the below line if you are using SfLinearProgressBar. 
-       new Syncfusion.XForms.UWP.ProgressBar.SfLinearProgressRenderer();
+    new Syncfusion.XForms.UWP.ProgressBar.SfLinearProgressRenderer();
   
     // Add the below line if you are using SfCircularProgressBar.                
     new Syncfusion.XForms.UWP.ProgressBar.SfCircularProgressBarRenderer();
+    
     LoadApplication (new App ());
     …
 }

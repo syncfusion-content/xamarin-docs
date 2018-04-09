@@ -17,7 +17,7 @@ This section explains the steps required to configure the [`SfCircularGauge`](ht
 
 ## Adding circular gauge reference
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfCircularGauge to your project, open the NuGet package manager in Visual Studio, and search for [syncfusion.xamarin.SfGauge](https://www.nuget.org/packages/Syncfusion.Xamarin.SfGauge), and then install it. 
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfCircularGauge to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfGauge](https://www.nuget.org/packages/Syncfusion.Xamarin.SfGauge), and then install it. 
 
 ![](getting-started_images/cg_nuget.png)
 

@@ -234,7 +234,7 @@ Create a [`Needle Pointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sf
     rangePointer.Value = 60;
     scale.Pointers.Add(rangePointer);
     scales.Add(scale);
-    circular.Scales = scale;
+    circular.Scales = scales;
 	
 {% endhighlight %}
        

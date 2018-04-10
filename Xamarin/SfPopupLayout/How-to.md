@@ -76,7 +76,7 @@ Executing the above codes renders the following output in iOS, Android and Windo
 
 ## Loading SfPopupLayout in GridTappedEvent of SfDataGrid
 
-SfPopupLayout allows you to open it in the GridTapped event of SfDataGrid.
+Sfpopuplayout allows you to open popup in the grid tapped event of SfDataGrid.
 
 Refer the below code example to show the popup in Grid tapped event.
 
@@ -138,6 +138,10 @@ namespace GettingStarted
 }
 {% endhighlight %}
 {% endtabs %}
+
+Executing the above codes renders the following output in an android device.
+
+![](PopupLayout_images/DataGridWithPopup.png)
 
 ## Loading SfPopupLayout in Prism
 
@@ -434,128 +438,13 @@ namespace ListViewWithPopup
 {% endhighlight %}
 {% endtabs %}
 
-{% highlight c# %}
+Executing the above codes renders the following output in an android device.
 
-// Contacts.cs
-
-public class Contacts : INotifyPropertyChanged
-{
-    private string contactName;
-    private string contactNumber;
-    private ImageSource contactImage;
-    private ImageSource phoneImage;
-
-    public Contacts(string name, string number)
-    {
-        contactName = name;
-        contactNumber = number;
-        
-    }
-
-    public Contacts()
-    {
-    }
-
-    public string ContactName
-    {
-        get { return contactName; }
-        set
-        {
-            if (contactName != value)
-            {
-                contactName = value;
-                this.RaisedOnPropertyChanged("ContactName");
-            }
-        }
-    }
-
-    public string ContactNumber
-    {
-        get { return contactNumber; }
-        set
-        {
-            if (contactNumber != value)
-            {
-                contactNumber = value;
-                this.RaisedOnPropertyChanged("ContactNumber");
-            }
-        }
-    }
-
-    public ImageSource ContactImage
-    {
-        get { return this.contactImage; }
-        set
-        {
-            this.contactImage = value;
-            this.RaisedOnPropertyChanged("ContactImage");
-        }
-    }
-    
-    public ImageSource ContactType
-    {
-        get { return this.phoneImage; }
-        set
-        {
-            this.phoneImage = value;
-            this.RaisedOnPropertyChanged("ContactType");
-        }
-    }
-
-    public event PropertyChangedEventHandler PropertyChanged;
-    public void RaisedOnPropertyChanged(string _PropertyName)
-    {
-        if (PropertyChanged != null)
-        {
-            PropertyChanged(this, new PropertyChangedEventArgs(_PropertyName));
-        }
-    }
-}
-{% endhighlight %}
-
-{% highlight c# %}
-
-// ContactsViewModel.cs
-
-public class ContactsViewModel
-{
-    #region Properties
-    public ObservableCollection<Contacts> contactsInfo { get; set; }
-    #endregion
-
-    #region Constructor
-    public ContactsViewModel()
-    {
-        contactsInfo = new ObservableCollection<Contacts>();
-        Random r = new Random();
-        foreach (var CustomerName in CustomerNames)
-        {
-            var contact = new Contacts(CustomerName, r.Next(720, 799).ToString() + " - " + r.Next(3010, 3999).ToString());
-            contact.ContactImage = ImageSource.FromResource("ListViewWithPopup.Images.Image" + r.Next(0, 28) + ".png");
-            contact.ContactType = ImageSource.FromResource("ListViewWithPopup.Images.PhoneImage.png");
-            contactsInfo.Add(contact);
-        }
-    }
-    #endregion
-
-    #region Fields
-    string[] CustomerNames = new string[] {
-        "Kyle",
-        "Gina",
-        "Irene",
-        "Katie",
-        "Michael",
-        "Oscar",
-        "Ralph",   
-    };
-    #endregion
-}
-{% endhighlight %}
-
+![](PopupLayout_images/PopupInListView.png)
 
 ## Loading SfListView as a content template of SfPopupLayout
 
-SfPopupLayout allows you to load the SfListView as a [SfPopupLayout.PopupView.ContentTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~ContentTemplate.html).You have to set `WidthRequest` and `HeightRequest` property for loading SfListView in SfPopupLayout. 
+SfPopupLayout allows you to load SfListView as a content of the popup. You have to set `WidthRequest` and `HeightRequest` property for loading SfListView in SfPopupLayout. 
 
 Refer the below code example to load the SfListView in SfPopupLayout.
 
@@ -602,53 +491,6 @@ namespace ListViewWithPopup
 {% endhighlight %}
 {% endtabs %}
 
-{% highlight c# %}  
+Executing the above codes renders the following output in an android device.
 
-// ListViewPage
-
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ListViewWithPopup.ListViewPage"
-             xmlns:local="clr-namespace:ListViewWithPopup"
-             xmlns:sfListview="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
-
-    <ContentPage.BindingContext>
-        <local:ContactsViewModel x:Name="viewModel"/>
-    </ContentPage.BindingContext>
-
-    <ContentPage.Content>
-
-        <sfListview:SfListView  x:Name="listView" WidthRequest="250" HeightRequest="200"
-                          ItemsSource="{Binding contactsInfo}" >
-            <sfListview:SfListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <ViewCell.View>
-                            <Grid x:Name="grid" RowSpacing="1">
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="*" />
-                                </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="50" />
-                                    <ColumnDefinition Width="100" />
-                                </Grid.ColumnDefinitions>
-
-                                <Image Source="{Binding ContactImage}"
-                                       VerticalOptions="Center"
-                                       HorizontalOptions="Center"
-                                       HeightRequest="50"/>
-
-                                <Label Grid.Column="1"
-                                        HorizontalTextAlignment="Center"
-                                        LineBreakMode="NoWrap"
-                                        Text="{Binding ContactName}" 
-                                        FontSize="Medium" />
-                            </Grid>
-                        </ViewCell.View>
-                    </ViewCell>
-                </DataTemplate>
-            </sfListview:SfListView.ItemTemplate>
-        </sfListview:SfListView>
-    </ContentPage.Content>
-</ContentPage>
-{% endhighlight %}
+![](PopupLayout_images/ListViewInPopup.png)

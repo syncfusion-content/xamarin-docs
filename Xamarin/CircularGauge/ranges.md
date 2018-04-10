@@ -268,7 +268,7 @@ In addition to the default range, you can add n number of ranges to a scale by u
 
 {% highlight c# %}
 
-    SfCircularGauge gauge = new SfCircularGauge();
+    SfCircularGauge circularGauge = new SfCircularGauge();
     ObservableCollection<Scale> scales = new ObservableCollection<Syncfusion.SfGauge.XForms.Scale>();
     Scale scale = new Syncfusion.SfGauge.XForms.Scale();
     scale.StartValue = 0;
@@ -289,7 +289,7 @@ In addition to the default range, you can add n number of ranges to a scale by u
     header1.Position = new Point(0.1, 0.55);
     header1.ForegroundColor = Color.FromHex("#F03E3E");
     header1.FontAttributes = FontAttributes.Bold;
-    gauge.Headers.Add(header1);
+    circularGauge.Headers.Add(header1);
 
     Header header2 = new Header();
     header2.Text = "Good";
@@ -297,7 +297,7 @@ In addition to the default range, you can add n number of ranges to a scale by u
     header2.Position = new Point(0.87, 0.55);
     header2.ForegroundColor = Color.FromHex("#27beb7");
     header2.FontAttributes = FontAttributes.Bold;
-    gauge.Headers.Add(header2);
+    circularGauge.Headers.Add(header2);
 
      //Poor
     Range range = new Range();
@@ -338,7 +338,7 @@ In addition to the default range, you can add n number of ranges to a scale by u
     pointer.KnobStrokeWidth = 6;
     scale.Pointers.Add(pointer); 
     scales.Add(scale);
-    gauge.Scales = scales;			
+    circularGauge.Scales = scales;			
 
 {% endhighlight %}
 
@@ -393,7 +393,7 @@ You can give smooth color transition to range by specifying the different colors
 
 {% highlight c# %}
 
-    SfCircularGauge gauge = new SfCircularGauge();
+    SfCircularGauge circularGauge = new SfCircularGauge();
     ObservableCollection<Scale> scales = new ObservableCollection<Syncfusion.SfGauge.XForms.Scale>();
     Scale scale = new Syncfusion.SfGauge.XForms.Scale();          
     scale.StartValue = 0;
@@ -418,7 +418,7 @@ You can give smooth color transition to range by specifying the different colors
     minor.StartOffset = 0.75;
     scale.MinorTickSettings = minor;
     scales.Add(scale);
-    gauge.Scales = scales;
+    circularGauge.Scales = scales;
 
     Range range = new Range();
     range.Offset = 0.6;
@@ -446,7 +446,7 @@ You can give smooth color transition to range by specifying the different colors
 
     range.GradientStops = gradientColor1;
 	
-    gauge.Scales = scales;
+    circularGauge.Scales = scales;
 
 {% endhighlight %}
 

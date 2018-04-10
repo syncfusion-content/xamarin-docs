@@ -76,7 +76,7 @@ Executing the above codes renders the following output in iOS, Android and Windo
 
 ## Loading SfPopupLayout in GridTappedEvent of SfDataGrid
 
-Sfpopuplayout allows you to open popup in the grid tapped event of SfDataGrid.
+SfPopupLayout allows you to open popup in the grid tapped event of SfDataGrid.
 
 Refer the below code example to show the popup in Grid tapped event.
 

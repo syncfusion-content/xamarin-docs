@@ -56,9 +56,9 @@ Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org
 
 To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sflistview) to know about the dependent assemblies for SfListView. 
 
-N> When there is a mismatch between the Syncfusion NuGet packages among the projects, `System.IO.FileLoadException` will occur. To overcome this exception, install the same version of the SfListView assemblies in all the projects.
+I> After adding the reference, an additionally need to initialize the renderer for [iOS](https://help.syncfusion.com/xamarin/sflistview/getting-started#ios) and [UWP](https://help.syncfusion.com/xamarin/sflistview/getting-started#universal-windows-platform-uwp) projects.  
 
-I> After adding the reference, currently, an additional step is required for iOS and UWP projects. We need to initialize the renderer as explained [here](https://help.syncfusion.com/xamarin/sfdatagrid/getting-started#ios).
+I> For UWP alone, one more additional step is required if the project is built in release mode with .NET Native tool chain enabled. You can refer to the [KB article](https://www.syncfusion.com/kb/8476/how-to-overcome-the-crash-system-reflection-missingmetadataexception-when-usedotnetnativetoolchain-is) for more details.
 
 ## System Requirements
 

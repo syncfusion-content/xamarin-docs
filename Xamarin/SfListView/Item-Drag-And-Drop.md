@@ -23,6 +23,8 @@ The drag and drop scenarios are as follows:
  * Items can be reordered in same group or in other groups but, no groups can be added to other groups.
  * Groups, header, and footer cannot be reordered.
 
+To enable drag and drop using 'OnHold', follow the code example:
+
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfListView x:Name="listView" 
@@ -35,6 +37,8 @@ The drag and drop scenarios are as follows:
 listView.DragStartMode = DragStartMode.OnHold; 
 {% endhighlight %}
 {% endtabs %}
+
+To enable drag and drop using both 'OnHold' and 'OnDragIndicator', follow the code example:
 
 {% tabs %}
 {% highlight xaml %}
@@ -61,7 +65,7 @@ N> You must set the SfListView instance as reference to the [ListView](https://h
 {% highlight xaml %}
 <syncfusion:SfListView x:Name="listView" 
                    ItemsSource="{Binding ToDoList}"
-                   DragStartMode="OnHold,OnDragIndicator"
+                   DragStartMode="OnDragIndicator"
                    BackgroundColor="#FFE8E8EC"
                    ItemSize="60">
   <syncfusion:SfListView.DragItemTemplate>
@@ -142,7 +146,7 @@ N> If `BackgroundColor` is set to `DragItemTemplate` or [DragIndicatorView](http
 {% highlight xaml %}
 <syncfusion:SfListView x:Name="listView" 
                    ItemsSource="{Binding ToDoList}"
-                   DragStartMode="OnHold,OnDragIndicator"
+                   DragStartMode="OnHold"
                    BackgroundColor="#FFE8E8EC"
                    ItemSize="60">
   <syncfusion:SfListView.DragItemTemplate>

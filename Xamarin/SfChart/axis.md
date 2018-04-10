@@ -1099,7 +1099,7 @@ Chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![](axis_images/plotoffset.png)
+![](axis_images/PlotOffset.png)
 
 ### Maximum number of labels per 100 pixels
 

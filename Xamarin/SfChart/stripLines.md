@@ -319,8 +319,8 @@ Suppose, you want to draw a strip line that should not stretch along its associa
 * [`IsSegmented`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartStripLine~IsSegmented.html#) – Used to enable / disable the segmented strip line.
 * [`SegmentStart`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartStripLine~SegmentStart.html#) – Used to change the segment start value. Value correspond to associated axis.
 * [`SegmentEnd`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartStripLine~SegmentEnd.html#) – Used to change the segment end value. Value correspond to associated axis.
-* [`SegmentAxisName`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartStripLine~SegmentAxisName.html#) – Specify the name of the associated axis name.
-* [`Name`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~Name.html) - Specify the unique name of the axis.
+* [`SegmentAxisName`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartStripLine~SegmentAxisName.html#) – Used to specify the name of the associated axis name.
+* [`Name`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~Name.html) - Used to specify the unique name for the axis.
 
 N> You can set the double or DateTime value for SegmentStart and SegmentEnd properties based on the associated axis type.
 

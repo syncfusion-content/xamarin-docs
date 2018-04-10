@@ -11,7 +11,7 @@ documentation: ug
 
 The SfPopupLayout allows showing the pop-up content at various available positions.
 
-Following are the list of options available to show SfPopupLayout at various position.
+Following are the list of options available to show SfPopupLayout at various positions.
 
 <table>
 <tr>

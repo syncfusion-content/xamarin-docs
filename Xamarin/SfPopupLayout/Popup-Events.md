@@ -142,7 +142,7 @@ Following are the two commands available in the Footer.
 [SfPopupLayout.PopupView.AcceptCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~AcceptCommand.html) will be fired when the accept button in the footer is clicked. 
 
 Derive a class from `ICommand` and implement the necessary interface.
-Return true in the `CanExecute()` method to close the popup and fire the `Execute()` method.
+Return true in the `CanExecute()` override method to close the popup and fire the `Execute()` method.
 Return false to prevent popup from closing and `Execute()` method is not fired.
 
 Refer to the following code example in which the pop-up closing will be canceled based on the return value of `CanExecute()` method.
@@ -182,7 +182,7 @@ public class AcceptButtonCustomCommand : ICommand
 [SfPopupLayout.PopupView.DeclineCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~DeclineCommand.html) will be fired when the decline button in the footer is clicked.  
 
 Derive a class from `ICommand` and implement the necessary interface. 
-Return true in the `CanExecute()` method to close the popup and fire the `Execute()` method. 
+Return true in the `CanExecute()` override method to close the popup and fire the `Execute()` method. 
 Return false to prevent popup from closing and `Execute()` method is not fired.
 
 Refer to the following code example in which the pop-up closing will be canceled based on the return value of `CanExecute()` method.

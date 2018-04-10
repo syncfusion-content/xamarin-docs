@@ -11,9 +11,9 @@ documentation: ug
 
 NuGet is a package manager for the .NET framework. The NuGet client tools simplify the process of installing and upgrading packages. This can be used to automatically add files and references to your Visual Studio projects.
 
-The Syncfusion Xamarin components NuGet packages are available in both [NuGet gallery site](https://www.nuget.org/profiles/SyncfusionInc) and [Syncfusion private NuGet site](http://nuget.syncfusion.com/package/xamarin).
+The Syncfusion Xamarin.Forms components NuGet packages are available in both [NuGet gallery site](https://www.nuget.org/profiles/SyncfusionInc) and [Syncfusion private NuGet site](http://nuget.syncfusion.com/package/xamarin).
 
-N> From version 15.4.0.17 or later, the Syncfusion Xamarin NuGet packages are published in [NuGet gallery site](https://www.nuget.org/profiles/SyncfusionInc).You can use the Syncfusion Xamarin NuGet packages without installing the Essential Studio or Xamarin platform installation to implement the Syncfusion Xamarin controls.
+N> From version 15.4.0.17 or later, the Syncfusion Xamarin.Forms NuGet packages are published in [NuGet gallery site](https://www.nuget.org/profiles/SyncfusionInc).You can use the Syncfusion Xamarin.Forms NuGet packages without installing the Essential Studio or Xamarin platform installation to implement the Syncfusion Xamarin.Forms controls.
 
 
 ## Get the Syncfusion NuGet feed URL
@@ -24,7 +24,7 @@ NuGet Gallery site feed link is configured, by default in your Visual Studio pac
 
 ### Syncfusion private site NuGet feed URL 
 
-You should get the private Syncfusion Xamarin NuGet feed URL to install or upgrade the Syncfusion Xamarin NuGet packages. To get the URL from Syncfusion website use the following steps:
+You should get the private Syncfusion Xamarin NuGet feed URL to install or upgrade the Syncfusion Xamarin.Forms NuGet packages. To get the URL from Syncfusion website use the following steps:
 
 1. Navigate to [nuget.syncfusion.com](https://nuget.syncfusion.com/), and select **MOBILE** tab.     
 
@@ -46,7 +46,7 @@ You should get the private Syncfusion Xamarin NuGet feed URL to install or upgra
 
 3.	Expand the **NuGet Package Manager** and select **Package Sources**.
 
-4.	Click the **Add** button (green plus), and enter the ‘Package Name’ and ‘Package Source URL’ of the Syncfusion Xamarin NuGet packages.
+4.	Click the **Add** button (green plus), and enter the ‘Package Name’ and ‘Package Source URL’ of the Syncfusion Xamarin.Forms NuGet packages.
     
     **Name:** Name of the package listed in the available package sources.
     
@@ -92,11 +92,11 @@ The NuGet Package Manager can be used to search and install NuGet packages in th
 
      ![](NuGet_Packages_Images/img7.png)             
 
-3.	The Syncfusion Xamarin NuGet Packages are listed and available in the package source feed URL. Search and install the required packages in your application, by clicking **Install** button.
+3.	The Syncfusion Xamarin.Forms NuGet Packages are listed and available in the package source feed URL. Search and install the required packages in your application, by clicking **Install** button.
 
 ### Using Package Manager Console
 
-To reference the Syncfusion Xamarin component using the Package Manager Console as NuGet packages, 
+To reference the Syncfusion Xamarin.Forms component using the Package Manager Console as NuGet packages, 
 
 1.	On the **Tools** menu, select **NuGet Package Manager** and then **Package Manager Console**. 
 
@@ -154,7 +154,7 @@ The NuGet Command Line Interface (CLI), nuget.exe, provides the full extent of N
     nuget update -self
     ~~~
 
-2.	Open the downloaded executable location in the command window, and run the following commands to configure the Syncfusion Xamarin NuGet packages: 
+2.	Open the downloaded executable location in the command window, and run the following commands to configure the Syncfusion Xamarin.Forms NuGet packages: 
 
     ~~~
     #Add specified package source in NuGet.config file for Windows platform
@@ -235,7 +235,7 @@ N> To update all the projects from solution, use update option in the solution l
 
 ### Using Package Manger Console
 
-To update the installed Syncfusion Xamarin NuGet packages using the Package Manager Console: 
+To update the installed Syncfusion Xamarin.Forms NuGet packages using the Package Manager Console: 
 
 1.	On the **Tools** menu, select **NuGet Package Manager**, and then **Package Manager Console.** 
 
@@ -258,7 +258,7 @@ To update the installed Syncfusion Xamarin NuGet packages using the Package Mana
     **For example:**
 
     ~~~
-    #Update specified Syncfusion Xamarin NuGet package 
+    #Update specified Syncfusion Xamarin.Forms NuGet package 
     Update-Package Syncfusion.Xamarin.Calculate
 
     #Update specified package in default project with specified package source
@@ -280,7 +280,7 @@ Using the NuGet CLI, all the NuGet packages in the project can be updated to the
     nuget update -self
     ~~~
 
-2.	Open the downloaded executable location in the command window. Run the following “update commands” to update the Syncfusion Xamarin NuGet packages.
+2.	Open the downloaded executable location in the command window. Run the following “update commands” to update the Syncfusion Xamarin.Forms NuGet packages.
 
     ~~~ 
     #update all NuGet packages from config file

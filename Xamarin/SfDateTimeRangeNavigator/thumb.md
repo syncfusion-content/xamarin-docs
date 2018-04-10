@@ -14,7 +14,7 @@ The [`LeftThumbStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart
 * [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.ThumbStyle~BorderColor.html) – used to change the stroke color of the thumb.
 * [`BackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.ThumbStyle~BackgroundColor.html) – used to change the background color of the thumb.
 * [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.ThumbStyle~BorderWidth.html) – used to change the stroke width of the thumb.
-* `Width` – used to change the width of the thumb.
+* [`Width`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.ThumbStyle~Width.html) – used to change the width of the thumb.
 * [`Height`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.ThumbStyle~Height.html) – used to change the height of the thumb.
 * [`LineColor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.ThumbStyle~LineColor.html) – used to change the line color of the thumb.
 * [`LineWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.ThumbStyle~LineWidth.html) – used to change the line width of the thumb.

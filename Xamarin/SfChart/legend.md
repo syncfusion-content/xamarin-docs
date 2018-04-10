@@ -213,6 +213,36 @@ chart.Legend.ToggleSeriesVisibility = true;
 
 {% endtabs %}
 
+## Legend visibility
+
+Legend visibility can be controlled using the [`IsVisible`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~IsVisible.html) property of legend. Default value of [`IsVisible`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~IsVisible.html) property is True. You can collapse the legend visibility by setting this property to false.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart>
+
+	<chart:SfChart.Legend>
+
+		<chart:ChartLegend IsVisible="False"/>
+
+	</chart:SfChart.Legend>
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.Legend = new ChartLegend();
+
+chart.Legend.IsVisible = false;
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Legend item visibility
 
 You can control the visibility of particular series legend item by using the [`IsVisibleOnLegend`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~IsVisibleOnLegend.html) property of series. Default value of [`IsVisibleOnLegend`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~IsVisibleOnLegend.html) property is True.

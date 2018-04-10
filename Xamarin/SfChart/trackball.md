@@ -292,6 +292,41 @@ chart.PrimaryAxis.ShowTrackballInfo = true;
 
 ![](trackball_images/trackball_img5.png)
 
+## AxisLabelAlignment
+
+We can align the position of trackball label of axis using [`AxisLabelAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballAxisLabelStyle~AxisLabelAlignment.html) property of [`ChartTrackballAxisLabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballAxisLabelStyle.html). Following are the options available for positioning the trackball label of the axis.
+
+*	[`Far`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisLabelAlignment.html) - Trackball axis label will be positioned far away from the ticks.
+*	[`Near`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisLabelAlignment.html) - Trackball axis label will be positioned near to the ticks.
+*   [`Center`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisLabelAlignment.html) - Trackball axis label will be placed at center position.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart>
+ ...
+<chart:CategoryAxis.TrackballLabelStyle>
+
+    <chart:ChartTrackballAxisLabelStyle AxisLabelAlignment="Center"/>
+
+</chart:CategoryAxis.TrackballLabelStyle>
+ ...
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+primaryAxis.TrackballLabelStyle.AxisLabelAlignment = ChartLabelAlignment.Center;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](trackball_images/AxislabelAlignment.png)
+
+
 ## Show/hide the series label
 
 This feature is used to show/hide the trackball label of the series by using [`CartesianSeries.ShowTrackballInfo`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CartesianSeries~ShowTrackballInfo.html) property. Default value of [`CartesianSeries.ShowTrackballInfo`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CartesianSeries~ShowTrackballInfo.html) property is `True`.

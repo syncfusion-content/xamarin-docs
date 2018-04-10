@@ -217,7 +217,7 @@ The [`ShowRim`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfu
             Scale scale = new Scale();                
             scale.ShowRim = false;
             scales.Add(scale);
-            circularGauge.Scales.Add(scale);
+            circularGauge.Scales = scales;
     
 {% endhighlight %}
 

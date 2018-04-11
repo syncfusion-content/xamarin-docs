@@ -292,13 +292,71 @@ chart.PrimaryAxis.ShowTrackballInfo = true;
 
 ![](trackball_images/trackball_img5.png)
 
-## AxisLabelAlignment
+## Alignment of Axis Label
 
 We can align the position of trackball label of axis using [`AxisLabelAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballAxisLabelStyle~AxisLabelAlignment.html) property of [`ChartTrackballAxisLabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballAxisLabelStyle.html). Following are the options available for positioning the trackball label of the axis.
 
-*	[`Far`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisLabelAlignment.html) - Trackball axis label will be positioned far away from the ticks.
+*	[`Far`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisLabelAlignment.html) - Trackball axis label will be positioned far from the ticks.
 *	[`Near`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisLabelAlignment.html) - Trackball axis label will be positioned near to the ticks.
-*   [`Center`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisLabelAlignment.html) - Trackball axis label will be placed at center position.
+*   [`Center`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisLabelAlignment.html) - Trackball axis label will be placed at center position.By default the axis label will be positioned in center.
+
+**Far**
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart>
+ ...
+<chart:CategoryAxis.TrackballLabelStyle>
+
+    <chart:ChartTrackballAxisLabelStyle AxisLabelAlignment="Far"/>
+
+</chart:CategoryAxis.TrackballLabelStyle>
+ ...
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+primaryAxis.TrackballLabelStyle.AxisLabelAlignment = ChartLabelAlignment.Far;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](trackball_images/AxisLabelAlignment-Far.png)
+
+**Near**
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart>
+ ...
+<chart:CategoryAxis.TrackballLabelStyle>
+
+    <chart:ChartTrackballAxisLabelStyle AxisLabelAlignment="Near"/>
+
+</chart:CategoryAxis.TrackballLabelStyle>
+ ...
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+primaryAxis.TrackballLabelStyle.AxisLabelAlignment = ChartLabelAlignment.Near;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](trackball_images/AxisLabelAlignment-Near.png)
+
+**Center**
 
 {% tabs %} 
 
@@ -324,7 +382,7 @@ primaryAxis.TrackballLabelStyle.AxisLabelAlignment = ChartLabelAlignment.Center;
 
 {% endtabs %}
 
-![](trackball_images/AxislabelAlignment.png)
+![](trackball_images/AxisLabelAlignment-Center.png)
 
 
 ## Show/hide the series label

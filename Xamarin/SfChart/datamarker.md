@@ -356,7 +356,7 @@ The [`UseSeriesPalette`](https://help.syncfusion.com/cr/cref_files/xamarin/sfcha
 
 	<chart:ColumnSeries.DataMarker>
 
-		<chart:ChartDataMarker UseSeriesPalette="True"/>
+		<chart:ChartDataMarker UseSeriesPalette="False"/>
 
 	</chart:ColumnSeries.DataMarker>
 
@@ -367,7 +367,7 @@ The [`UseSeriesPalette`](https://help.syncfusion.com/cr/cref_files/xamarin/sfcha
 {% highlight c# %}
 
 columnSeries.DataMarker = new ChartDataMarker();
-columnSeries.DataMarker.UseSeriesPalette = true;
+columnSeries.DataMarker.UseSeriesPalette = false;
 
 {% endhighlight %}
 

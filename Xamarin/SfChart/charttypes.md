@@ -1969,7 +1969,7 @@ PieSeries pieSeries = new PieSeries()
 
 {% endtabs %}
 
-Also, you can explode pie segment using Touch by enabling [`ExplodeOnTouch`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.AccumulationSeries~ExplodeOnTouch.html) to true. By default, this propery value is false.
+Also, you can explode pie segment using Touch by enabling [`ExplodeOnTouch`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.AccumulationSeries~ExplodeOnTouch.html) to true. By default, this property value is false.
 
 ![](charttypes_images/charttypes_img24.png)
 
@@ -2168,7 +2168,7 @@ DoughnutSeries doughnutSeries = new DoughnutSeries()
 
 {% endtabs %}
 
-Also, you can explode doughnut segment using Touch by enabling [`ExplodeOnTouch`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.AccumulationSeries~ExplodeOnTouch.html) to true. By default, this propery value is false.
+Also, you can explode doughnut segment using Touch by enabling [`ExplodeOnTouch`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.AccumulationSeries~ExplodeOnTouch.html) to true. By default, this property value is false.
 
 ![](charttypes_images/charttypes_img30.png)
 
@@ -2358,7 +2358,7 @@ PyramidSeries pyramidSeries = new PyramidSeries()
 
 {% endhighlight %}
 
-Also, you can explode pyramid segment using Touch by enabling [`ExplodeOnTouch`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.AccumulationSeries~ExplodeOnTouch.html) to true. By default, this propery value is false.
+Also, you can explode pyramid segment using Touch by enabling [`ExplodeOnTouch`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.AccumulationSeries~ExplodeOnTouch.html) to true. By default, this property value is false.
 
 {% endtabs %}
 
@@ -2464,7 +2464,7 @@ FunnelSeries funnelSeries = new FunnelSeries()
 
 {% endtabs %}
 
-Also, you can explode funnel segment using Touch by enabling [`ExplodeOnTouch`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.AccumulationSeries~ExplodeOnTouch.html) to true. By default, this propery value is false.
+Also, you can explode funnel segment using Touch by enabling [`ExplodeOnTouch`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.AccumulationSeries~ExplodeOnTouch.html) to true. By default, this property value is false.
 
 ![](charttypes_images/charttypes_img39.png)
 

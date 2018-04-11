@@ -263,21 +263,21 @@ public partial class MainPage : ContentPage
         grid.ColumnDefinitions.Add(column1);
         grid.ColumnDefinitions.Add(column2);
 
-        var contactimage = new Image();
-        contactimage.SetBinding(Image.SourceProperty, new Binding("EmployeeImage"));
-        contactimage.HeightRequest = 50;
-        contactimage.VerticalOptions = LayoutOptions.Center;
-        contactimage.HorizontalOptions = LayoutOptions.Center;
+        var contactImage = new Image();
+        contactImage.SetBinding(Image.SourceProperty, new Binding("EmployeeImage"));
+        contactImage.HeightRequest = 50;
+        contactImage.VerticalOptions = LayoutOptions.Center;
+        contactImage.HorizontalOptions = LayoutOptions.Center;
 
-        var gridview = new Grid();
+        var gridView = new Grid();
 
-        gridview.RowSpacing = 1;
-        gridview.Padding = new Thickness(10, 0, 0, 0);
-        gridview.VerticalOptions = LayoutOptions.Center;
+        gridView.RowSpacing = 1;
+        gridView.Padding = new Thickness(10, 0, 0, 0);
+        gridView.VerticalOptions = LayoutOptions.Center;
         var rowdefinition0 = new RowDefinition { Height = new GridLength(1, GridUnitType.Star) };
         var rowdefinition1 = new RowDefinition { Height = new GridLength(1, GridUnitType.Star) };
-        gridview.RowDefinitions.Add(rowdefinition0);
-        gridview.RowDefinitions.Add(rowdefinition1);
+        gridView.RowDefinitions.Add(rowdefinition0);
+        gridView.RowDefinitions.Add(rowdefinition1);
 
         var contactName = new Label();
         contactName.SetBinding(Label.TextProperty, new Binding("EmployeeName"));
@@ -307,11 +307,11 @@ public partial class MainPage : ContentPage
         stackLayout.HeightRequest = 1;
         stackLayout.BackgroundColor = Color.Gray;
 
-        gridview.Children.Add(contactName, 0, 0);
-        gridview.Children.Add(contactNumber, 0, 1);
+        gridView.Children.Add(contactName, 0, 0);
+        gridView.Children.Add(contactNumber, 0, 1);
 
-        grid.Children.Add(contactimage);
-        grid.Children.Add(gridview, 1, 0);
+        grid.Children.Add(contactImage);
+        grid.Children.Add(gridView, 1, 0);
 
         gridView.Children.Add(grid);
         gridView.Children.Add(stackLayout, 0, 1);

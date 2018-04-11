@@ -42,7 +42,7 @@ private void ListView_QueryItemSize(object sender, Syncfusion.ListView.XForms.Qu
 }
 {% endhighlight %}
 
-The following screenshot shows the output of QueryItemSize. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AutoFit-1318092121).
+You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AutoFit-1318092121).
 
 ![](SfListView_images/QueryItemSize.jpg)
 

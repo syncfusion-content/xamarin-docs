@@ -98,7 +98,7 @@ The following screenshot shows the output rendered when the header and footer is
 
 ### Achieve the tabbed page using header
 
-The [SfListView](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView.html) allows you to achieve the tabbed page like structure by customizing the [HeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~HeaderTemplate.html). Here we have set the three buttons in the `HeaderTemplate` to change the [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemsSource.html) at runtime, refer the following code example.
+The [SfListView](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView.html) allows to achieve the tabbed page like structure by customizing the [HeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~HeaderTemplate.html). Here we have set the three buttons in the `HeaderTemplate` to change the [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemsSource.html) at runtime.
 
 **XAML**
 
@@ -321,13 +321,15 @@ public partial class MainPage : ContentPage
 }
 {% endhighlight %}
 
-The screenshot shows the output of tabbed page show when tap the header item. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Header_Footer1375601372).
+You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Header_Footer1375601372).
 
 ![](SfListView_images/Informations.jpg) ![](SfListView_images/Status.jpg) ![](SfListView_images/Contacts.jpg)
 
 ### Display the Header/Footer in vertical mode when listview is in horizontal mode
 
-[SfListView](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView.html) layout the header and footer item based on the [Orientation](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~Orientation.html). You can load the header and footer element with stick to the view, by customizing the **SfListView** as like below code example which creates the header element at the top of the view, footer at bottom of the view and loads the items at the center based on the layout method. 
+[SfListView](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView.html) allows to layout the header and footer item in `Vertical` mode with list view items in `Horizontal` mode based on the [Orientation](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~Orientation.html). You can load the header and footer element with stick to the view, by customizing the `SfListView`.
+
+The following code example illustrates, how to creates the header element at the top of the view, footer at bottom of the view and loads the items at the center based on the layout method. 
 
 **XAML**
 
@@ -421,6 +423,6 @@ public class SfListViewExt : SfListView
 }
 {% endhighlight %}
 
-The screenshot shows the output of header/footer in vertical mode when listview is in horizontal mode. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Header_Footer_Vertical-69423607).
+You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Header_Footer_Vertical-69423607).
 
 ![](SfListView_images/Vertical_Header_Horizontal_ListView.jpg)

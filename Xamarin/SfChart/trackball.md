@@ -292,13 +292,15 @@ chart.PrimaryAxis.ShowTrackballInfo = true;
 
 ![](trackball_images/trackball_img5.png)
 
-## Alignment of Axis Label
+## Axis label aligment
 
-We can align the position of trackball label of axis using [`AxisLabelAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballAxisLabelStyle~AxisLabelAlignment.html) property of [`ChartTrackballAxisLabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballAxisLabelStyle.html). Following are the options available for positioning the trackball label of the axis.
+The position of trackball axis label can be changed using axis using [`AxisLabelAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballAxisLabelStyle~AxisLabelAlignment.html) property of [`ChartTrackballAxisLabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballAxisLabelStyle.html). Following are the options available in `AxisLabelAlignment`.
 
-*	[`Far`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisLabelAlignment.html) - Trackball axis label will be positioned far from the ticks.
-*	[`Near`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisLabelAlignment.html) - Trackball axis label will be positioned near to the ticks.
-*   [`Center`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisLabelAlignment.html) - Trackball axis label will be placed at center position.By default the axis label will be positioned in center.
+*	[`Far`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisLabelAlignment.html) - The label will be positioned above the tick in vertical axis and right side of tick in horizontal axis.
+*	[`Near`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisLabelAlignment.html) - The label will be positioned below the tick in vertical axis and left side of tick in horizontal axis.
+*   [`Center`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisLabelAlignment.html) - The label will be positioned at center of the tick. This is the default value.
+
+Following code snippet and screenshot demostrate the label placement at left side of tick line.
 
 **Far**
 
@@ -327,62 +329,6 @@ primaryAxis.TrackballLabelStyle.AxisLabelAlignment = ChartLabelAlignment.Far;
 {% endtabs %}
 
 ![](trackball_images/AxisLabelAlignment-Far.png)
-
-**Near**
-
-{% tabs %} 
-
-{% highlight xaml %}
-
-<chart:SfChart>
- ...
-<chart:CategoryAxis.TrackballLabelStyle>
-
-    <chart:ChartTrackballAxisLabelStyle AxisLabelAlignment="Near"/>
-
-</chart:CategoryAxis.TrackballLabelStyle>
- ...
-</chart:SfChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-primaryAxis.TrackballLabelStyle.AxisLabelAlignment = ChartLabelAlignment.Near;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![](trackball_images/AxisLabelAlignment-Near.png)
-
-**Center**
-
-{% tabs %} 
-
-{% highlight xaml %}
-
-<chart:SfChart>
- ...
-<chart:CategoryAxis.TrackballLabelStyle>
-
-    <chart:ChartTrackballAxisLabelStyle AxisLabelAlignment="Center"/>
-
-</chart:CategoryAxis.TrackballLabelStyle>
- ...
-</chart:SfChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-primaryAxis.TrackballLabelStyle.AxisLabelAlignment = ChartLabelAlignment.Center;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![](trackball_images/AxisLabelAlignment-Center.png)
 
 
 ## Show/hide the series label

@@ -1061,7 +1061,7 @@ chart.SecondaryAxis.OpposedPosition = true;
 ![](axis_images/axis_img25.png)
 
 ### Offset the rendering
-The [`PlotOffset`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~PlotOffset.html) property is used to offset the rendering of the axis at start and end. The following code snippet demonstrates to apply the plot offset to both x and y axes.
+The [`PlotOffset`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~PlotOffset.html) property is used to offset the rendering of the axis at start and end position. The following code snippet demonstrates to apply the plot offset to both x and y axes.
 {% tabs %} 
 
 {% highlight xaml %}

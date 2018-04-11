@@ -19,19 +19,19 @@ By default, schedule control is available with en locale, which is English.
 
 {% tabs %}   
 {% highlight xaml %}
-      <schedule:SfSchedule
-              x:Name="schedule" 
-              ScheduleView="WeekView"
-              Locale="ja">
-     </schedule:SfSchedule>
+<schedule:SfSchedule
+	  x:Name="schedule" 
+	  ScheduleView="WeekView"
+	  Locale="ja">
+</schedule:SfSchedule>
 {% endhighlight %}   
 {% highlight c# %}
-		//creating new instance for schedule
-		SfSchedule schedule = new SfSchedule();
-		//setting schedule view 
-		schedule.ScheduleView = ScheduleView.WeekView;
-		//setting locale for the control 
-		schedule.Locale = "ja";
+//creating new instance for schedule
+SfSchedule schedule = new SfSchedule();
+//setting schedule view 
+schedule.ScheduleView = ScheduleView.WeekView;
+//setting locale for the control 
+schedule.Locale = "ja";
 {% endhighlight %}   
 {% endtabs %}   
 
@@ -46,20 +46,22 @@ You can localize the custom strings used in the schedule control. For that you n
 *	Localizing custom text in UWP renderer.
 
 You can download the entire source code of this demo for Xamarin.Forms from
-here [Localization](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization_Forms-583877984.zip).
+here [Localization](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization_Forms-1564080177.zip).
 
 ### Localizing custom text in Android renderer.
 
 You can localize custom text available in the control by adding equivalent localized string in the string.xml file.
 
+{% tabs %}
 {% highlight xml %}
-     <resources>
-    	<string name="No_Appointments">Aucun événement</string>
-     	<string name="all_day">Toute la journée</string>
-     </resources>
-{% endhighlight %}   
+<resources>
+	<string name="No_Appointments">Aucun événement</string>
+	<string name="all_day">Toute la journée</string>
+</resources>
+{% endhighlight %}  
+{% endtabs %} 
 
-Android can select and load resources from different directories, based on the current device configuration and locale, refer [here](https://developer.xamarin.com/guides/android/advanced_topics/localization/). For an example, if an application requires multiple languages we can follow the below steps.
+Android can select and load resources from different directories, based on the current device configuration and locale, refer [here](https://developer.xamarin.com/guides/android/advanced_topics/localization/). For an example, if an application requires multiple languages you can follow the below steps.
 
 The procedure for creating strings.xml files is as follows:
 
@@ -69,7 +71,8 @@ The procedure for creating strings.xml files is as follows:
  
 ![](Localization_images/localization_img2.jpeg)  
 
->**Note:** The corresponding Locale values folder updates only when the device language changes.
+>**NOTE** 
+The corresponding Locale values folder updates only when the device language changes.
 
 ### Localizing custom text in iOS renderer.
 
@@ -77,7 +80,7 @@ You can localize custom text available in the control by adding equivalent local
 
 ![](Localization_images/Localization_IOS.png) 
 
-If an application requires multiple languages we can follow the below steps:
+If an application requires multiple languages you can follow the below steps:
 
 *	Translate the Localizable.Strings file to each language. 
 *	Create new `<Language>.lproj` folders under resource as `en.lproj`, `fr.lproj`, `de.lproj`.
@@ -85,8 +88,22 @@ If an application requires multiple languages we can follow the below steps:
 
 ![](Localization_images/Localization_iOS_Img2.png)
 
->**Note:** The corresponding `<Language>.lproj` folder updates only when the device language changes.
+>**NOTE** 
+The corresponding `<Language>.lproj` folder updates only when the device language changes.
 
 ### Localizing custom text in UWP renderer.
 
->**Note:** Currently customs strings localization not supported in Xamarin.Forms UWP.
+You can localize custom text available in the control by adding equivalent localized string in the Resources(.resw) file. 
+
+>**NOTE** 
+Here Resources(.resw) file name should be match with the given locale language code.
+
+The procedure for creating Resources(.resw) file is as follows:
+
+*	Create Resources(.resw) file in sample with C# culture standard name for example fr , de-DE and so.
+
+![](Localization_images/Localization_XFUWP_Resw.png)
+
+*	Translate the custom string used in schedule to respective localized culture.
+
+![](Localization_images/Localization_XFUWP.png)

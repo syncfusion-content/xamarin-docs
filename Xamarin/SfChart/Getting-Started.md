@@ -13,11 +13,15 @@ This section explains you the steps required to populate the Chart with data, ti
 
 ## Adding Chart Reference
 
-Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain and reference Essential Studio components in your solution; then refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfchart) link to know about the assemblies required for adding Chart to your project.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add chart to your project, open the NuGet package manager in Visual Studio, and search for [“Syncfusion.Xamarin.SfChart”](https://www.nuget.org/packages/Syncfusion.Xamarin.SfChart/), and then install it. 
 
-I> After adding the reference, currently, an additional step is required for iOS and UWP projects. We need to create an instance of the `SfChartRenderer` in iOS and UWP projects as shown in this [KB article.](https://www.syncfusion.com/kb/7144)
+![](Getting-Started_images/addref.png)
 
-I> For UWP alone, one more additional step is required if the project is built in release mode with .NET Native tool chain enabled. You can refer the [KB article](https://www.syncfusion.com/kb/7149) for more details.
+To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfchart) to know about the dependent assemblies for chart. 
+
+I> After adding the reference, currently, an additional step is required for iOS and UWP projects. We need to initialize the renderer as explained in this [KB article](https://www.syncfusion.com/kb/7144/).
+
+I> For UWP alone, one more additional step is required if the project is built in release mode with .NET Native tool chain enabled. You can refer to the [KB article](https://www.syncfusion.com/kb/7149) for more details.
  
 ## Initialize Chart
 
@@ -39,7 +43,7 @@ using Syncfusion.SfChart.XForms;
 
 {% endtabs %} 
 
-Then initialize an empty chart with two axes as shown below,
+Then initialize an empty chart with [`PrimaryAxis`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~PrimaryAxis.html) and [`SecondaryAxis`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~SecondaryAxis.html) as shown below,
 
 {% tabs %} 
 
@@ -384,6 +388,107 @@ series.EnableTooltip = true;
 {% endtabs %}
 
 Refer this [link](https://help.syncfusion.com/xamarin/sfchart/tooltip) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html) to customize tooltip.
+
+The following code example gives you the complete code of above configurations.
+
+{% tabs %} 
+
+{% highlight xaml %}
+<ContentPage xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:local="clr-namespace: ChartGettingStarted;assembly=ChartGettingStarted"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ChartGettingStarted.ChartSample">
+
+  <chart:SfChart x:Name="Chart" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+    <chart:SfChart.BindingContext>
+      <local:ViewModel/>
+    </chart:SfChart.BindingContext>
+
+    <chart:SfChart.Legend>
+      <chart:ChartLegend />
+    </chart:SfChart.Legend>
+
+    <chart:SfChart.Title>
+      <chart:ChartTitle Text="Chart"/>
+    </chart:SfChart.Title>
+
+    <chart:SfChart.PrimaryAxis>
+      <chart:CategoryAxis>
+        <chart:CategoryAxis.Title>
+          <chart:ChartAxisTitle Text="Name"/>
+        </chart:CategoryAxis.Title>
+      </chart:CategoryAxis>
+    </chart:SfChart.PrimaryAxis>
+
+    <chart:SfChart.SecondaryAxis>
+      <chart:NumericalAxis>
+        <chart:NumericalAxis.Title>
+          <chart:ChartAxisTitle Text="Height (in cm)"/>
+        </chart:NumericalAxis.Title>
+      </chart:NumericalAxis>
+    </chart:SfChart.SecondaryAxis>
+
+    <chart:SfChart.Series>
+      <chart:ColumnSeries ItemsSource="{Binding Data}" Label="Heights" XBindingPath="Name" YBindingPath="Height" EnableTooltip="True">
+        <chart:ColumnSeries.DataMarker>
+          <chart:ChartDataMarker/>
+        </chart:ColumnSeries.DataMarker>
+      </chart:ColumnSeries>
+    </chart:SfChart.Series>
+  </chart:SfChart>
+
+</ContentPage>
+ 
+{% endhighlight %}
+
+{% highlight C# %} 
+
+using Syncfusion.SfChart.XForms;
+
+namespace ChartGettingStarted
+{
+    public partial class ChartSample : ContentPage
+    {
+        public ChartSample()
+        {
+            InitializeComponent();
+            SfChart chart = new SfChart();
+            chart.Title.Text = "Chart";
+
+            //Initializing primary axis
+            CategoryAxis primaryAxis = new CategoryAxis();
+            primaryAxis.Title.Text = "Name";
+            chart.PrimaryAxis = primaryAxis;
+
+            //Initializing secondary Axis
+            NumericalAxis secondaryAxis = new NumericalAxis();
+            secondaryAxis.Title.Text = "Height (in cm)";
+            chart.SecondaryAxis = secondaryAxis;
+
+            //Initializing column series
+            ColumnSeries series = new ColumnSeries();
+            series.ItemsSource = viewModel.Data;
+            series.XBindingPath = "Name";
+            series.YBindingPath = "Height";
+            series.Label = "Heights";
+
+            series.DataMarker = new ChartDataMarker();
+            series.EnableTooltip = true;
+            chart.Legend = new ChartLegend();
+
+            chart.Series.Add(series);
+            this.Content = chart;
+
+        }
+    }
+}
+{% endhighlight %}
+
+{% endtabs %}
+
+The following chart is created as a result of the above codes.
 
 ![](Getting-Started_images/img2.png)
 

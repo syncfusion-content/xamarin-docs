@@ -11,14 +11,14 @@ documentation: ug
 
 # Annotations
 
-[`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge.html) supports [`Annotations`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge~Annotations.html), and it allows you to mark the specific area of interest in Circular Gauge. Custom view can be placed, and text and images also can be added by using [`Annotations`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge~Annotations.html).
+[`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge.html) supports [`Annotations`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge~Annotations.html), which allows you to mark the specific area of interest in circular gauge. You can place custom views as annotations. The text and images also can be added by using [`Annotations`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge~Annotations.html) property.
 
-##  Setting sub gauge for Annotation
+##  Setting sub gauge for annotation
 
-When the annotation allows to place custom elements, a gauge can be initialized to the element, and it can be used to place that in another gauge. The Following properties are used to customize the `Annotations`:-
+When the annotation allows you to place custom elements, a gauge can be initialized to the element, and this can be used to place the annotation in another gauge. The Following properties are used to customize the `Annotations`:
 
-* [`Angle`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.GaugeAnnotation~Angle.html) - Used to place the `View` at the given `Angle`. 
-* [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.GaugeAnnotation~Offset.html) - Used to move the `View` from center to edge of the `SfCircularGauge`. The value should be range from 0 to 1.
+* [`Angle`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.GaugeAnnotation~Angle.html): Used to place the `View` at the given `Angle`. 
+* [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.GaugeAnnotation~Offset.html): Used to move the `View` from the center to edge of the circular gauge. The value should be range from 0 to 1.
 
 The following code is used to create the `Annotations`.
 
@@ -192,6 +192,8 @@ The following code is used to create the `Annotations`.
 	
 	Annotation1.HeightRequest = Device.OnPlatform(70, 80, 100);
     Annotation1.WidthRequest = Device.OnPlatform(70, 80, 100);
+
+    CircularGaugeAnnotationCollection annotations = new CircularGaugeAnnotationCollection();
 			
 	GaugeAnnotation gaugeAnnotation = new GaugeAnnotation();
     gaugeAnnotation.View = LabelAnnotation2;

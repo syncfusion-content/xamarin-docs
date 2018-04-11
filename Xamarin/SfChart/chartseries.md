@@ -74,6 +74,83 @@ chart.Series.Add(columnSeries2);
 
 ![](chartseries_images/chartseries_img1.png)
 
+### Multiple Axes
+
+[`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html) provides a way to arrange multiple series inside the same chart area, giving the chart more space than x-axis and y-axis.These axes can be arranged in a stack or in a side by side pattern.
+
+By default, all the series are plotted based on [`PrimaryAxis`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~PrimaryAxis.html) and [`SecondaryAxis`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~SecondaryAxis.html). You can add more axes by adding additional axis to the series. There are two properties [`XAxis`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CartesianSeries~XAxis.html) and [`YAxis`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CartesianSeries~YAxis.html) in all the series, except [`Accumulation Series`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.AccumulationSeries.html), [`PolarSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.PolarSeries.html) and [`RadarSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RadarSeries.html).
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.Series>
+
+    <chart:ColumnSeries Label="Revenue" ItemsSource="{Binding Demands}" XBindingPath="XValue" YBindingPath="YValue" />
+
+    <chart:LineSeries Label="Customers" ItemsSource="{Binding Demands}" XBindingPath="XValue" YBindingPath="YValue" >
+
+        <chart:LineSeries.YAxis>
+
+            <chart:NumericalAxis OpposedPosition="true" >
+
+                <chart:NumericalAxis.Title>
+
+                    <chart:ChartAxisTitle Text = "Number of Customers" />
+
+                </chart:NumericalAxis.Title>
+
+            </chart:NumericalAxis>
+
+        </chart:LineSeries.YAxis>
+
+     </chart:LineSeries>
+
+</chart:SfChart.Series>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ColumnSeries series = new ColumnSeries();
+
+series.ItemsSource = model.Demands;
+
+series.XBindingPath = "XValue";
+
+series.YBindingPath = "YValue";
+
+series.Label = "Revenue";
+
+chart.Series.Add(series);
+
+LineSeries lineSeries = new LineSeries();
+
+lineSeries.ItemsSource = model.Demands;
+
+lineSeries.XBindingPath = "XValue";
+
+lineSeries.YBindingPath = "YValue";
+
+lineSeries.Label = "Customers";
+
+NumericalAxis yAxis = new NumericalAxis();
+
+yAxis.OpposedPosition = true;
+
+yAxis.Title.Text = "Number of Customers";
+
+lineSeries.YAxis = yAxis;
+
+chart.Series.Add(lineSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](chartseries_images/MultipleAxes.png)
+
+
 ## Combination Series
 
 [`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html) allows you to render the combination of different types of series.
@@ -258,3 +335,75 @@ chart.Series.Add(stackingColumnSeries4);
 {% endtabs %}
 
 ![](chartseries_images/chartseries_img4.png)
+
+## Animation
+
+[`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html) provides animation support for data series. [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~Series.html) will be animated whenever the items source changes. Animation can be enabled by setting the [`EnableAnimation`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~EnableAnimation.html) property to `true`. You can also control the duration of the animation using [`AnimationDuration`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~AnimationDuration.html) property.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart>
+...
+
+	<chart:ColumnSeries 
+    	ItemsSource="{Binding ColumnData}" 
+    	EnableAnimation = "true" 
+    	AnimationDuration="0.8" 
+   		XBindingPath="Name" 
+    	YBindingPath="Value"  />
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ColumnSeries column = new ColumnSeries ();
+column.ItemsSource = viewModel.ColumnData;
+column.XBindingPath = "Name";
+column.YBindingPath = "Value";
+column.EnableAnimation = true;
+column.AnimationDuration = 0.8;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Transpose the Series
+
+The [`IsTransposed`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CartesianSeries~IsTransposed.html) property of [`CartesianSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CartesianSeries.html) is used to plot the chart in the vertical direction and this helps to view the data in different perspective.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.Series>
+
+	<chart:LineSeries ItemsSource="{Binding Data}" XBindingPath="Month"
+					  YBindingPath="Value" IsTransposed="True"/>
+
+</chart:SfChart.Series>
+
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+...	
+
+LineSeries lineSeries = new LineSeries();
+lineSeries.XBindingPath = "Month";
+lineSeries.YBindingPath = "Value";
+]lineSeries.ItemsSource = Data;
+lineSeries.IsTransposed = true;
+chart.Series.Add(lineSeries);
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](chartseries_images/verticalchart.png)

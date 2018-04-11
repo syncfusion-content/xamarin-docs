@@ -94,7 +94,8 @@ The SfListView allows loading as a [SfPullToRefresh.PullableContent](https://hel
 
 {% tabs %}
 {% highlight xaml %}
-<ContentPage>
+<ContentPage xmlns:pulltoRefresh="clr-namespace:Syncfusion.SfPullToRefresh.XForms;assembly=Syncfusion.SfPullToRefresh.XForms"
+             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms" >
  <ScrollView>
    <pulltoRefresh:SfPullToRefresh x:Name="pullToRefresh" 
                                ProgressBackgroundColor="#428BCA" 
@@ -110,6 +111,35 @@ The SfListView allows loading as a [SfPullToRefresh.PullableContent](https://hel
   </pulltoRefresh:SfPullToRefresh>
  </ScrollView>
 </ContentPage>
+{% endhighlight %}
+{% highlight c# %}
+
+public ListViewPullToRefresh()
+{
+  InitializeComponent();
+  //Initializing the PullToRefresh control.
+  SfPullToRefresh pullToRefresh = new SfPullToRefresh();
+  pullToRefresh.RefreshContentHeight = 50;
+  pullToRefresh.RefreshContentWidth = 50;
+  pullToRefresh.TransitionMode = TransitionType.Push;
+  pullToRefresh.IsRefreshing = false;
+
+  //Initializing the SfListView control.
+  var listView = new SfListView();
+  listView.ItemSize = 120;
+  listView.SelectionMode = SelectionMode.None;
+
+  //loading listview into pulltorefresh
+  pullToRefresh.PullableContent = listView;
+}
+		
+public App()
+{
+  InitializeComponent();
+  SfPullToRefresh pullToRefresh = new SfPullToRefresh();
+  MainPage = new ContentPage { Content = new ScrollView { Content = pullToRefresh.PullableContent } };
+}
+		
 {% endhighlight %}
 {% endtabs %}
 
@@ -151,6 +181,32 @@ When the SearchBar or any view placed above the [SfPullToRefresh](https://help.s
         </Grid>
     </ContentPage.Content>
 </ContentPage>
+{% endhighlight %}
+{% highlight c# %}
+public ListViewPullToRefresh()
+{
+   InitializeComponent();
+   //Initializing the PullToRefresh control.
+   SfPullToRefresh pullToRefresh = new SfPullToRefresh();
+   pullToRefresh.RefreshContentHeight = 50;
+   pullToRefresh.RefreshContentWidth = 50;
+   pullToRefresh.TransitionMode = TransitionType.Push;
+   pullToRefresh.IsRefreshing = false;
+   
+   //Initializing the SfListView control.
+   var listView = new SfListView();
+   listView.ItemSize = 120;
+   listView.SelectionMode = SelectionMode.None;
+   
+   //loading listview into pulltorefresh
+   pullToRefresh.PullableContent = listView;
+
+   var grid = new Grid();
+   var searchBar = new SearchBar() { Placeholder = "Search here to filter" };
+
+   grid.Children.Add(searchBar);
+   grid.Children.Add(pullToRefresh, 0, 1);
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -201,5 +257,44 @@ The [SfPullToRefresh](https://help.syncfusion.com/cr/cref_files/xamarin/sfpullto
     </Grid>
   </ContentPage.Content>
 </ContentPage>
+{% endhighlight %}
+{% highlight c# %}
+public ListViewPullToRefresh()
+{
+   InitializeComponent();
+   //Initializing the PullToRefresh control.
+   SfPullToRefresh pullToRefresh = new SfPullToRefresh();
+   pullToRefresh.RefreshContentHeight = 50;
+   pullToRefresh.RefreshContentWidth = 50;
+   pullToRefresh.TransitionMode = TransitionType.Push;
+   pullToRefresh.IsRefreshing = false;
+
+   //Initializing the SfListView control.
+   var listView = new SfListView();
+   listView.ItemSize = 120;
+   listView.SelectionMode = SelectionMode.None;
+   listView.GroupHeaderTemplate = new DataTemplate(() => 
+   {
+      var grid = new Grid();
+      grid.HeightRequest = 150;
+      var headerLabel = new Label
+      {
+      TextColor = Color.Red,
+      BackgroundColor=Color.White
+      };
+      headerLabel.SetBinding(Label.TextProperty, new Binding("key"));
+      grid.Children.Add(headerLabel);
+      return grid;
+   });
+
+      //loading listview into pulltorefresh
+      pullToRefresh.PullableContent = listView;
+
+      var grid = new Grid();
+      var searchBar = new SearchBar() { Placeholder = "Search here to filter" };
+
+      grid.Children.Add(searchBar);
+      grid.Children.Add(pullToRefresh, 0, 1);
+}
 {% endhighlight %}
 {% endtabs %}

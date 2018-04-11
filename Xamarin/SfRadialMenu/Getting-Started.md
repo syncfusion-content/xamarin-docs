@@ -133,7 +133,8 @@ Creating a RadialMenu's instance shows only round shape view on the application.
  xmlns:radialMenu="clr-namespace:Syncfusion.SfRadialMenu.XForms;assembly=Syncfusion.SfRadialMenu.XForms">
     
 <ContentPage.Content>
-            <radialMenu:SfRadialMenu x:Name="radialMenu" CenterButtonText="\uE713" CenterButtonBackText="\uE72B" CenterButtonFontFamily="Segoe MDL2 Assets.ttf" CenterButtonRadius="32"  CenterButtonBackFontFamily="Segoe MDL2 Assets.ttf" CenterButtonBorderColor="White" />
+            <radialMenu:SfRadialMenu x:Name="radialMenu" CenterButtonText="&#xe700;"
+CenterButtonBackText="&#xe72b;" CenterButtonFontFamily="Segoe MDL2 Assets.ttf" CenterButtonRadius="32"  CenterButtonBackFontFamily="Segoe MDL2 Assets.ttf" CenterButtonBorderColor="White" />
     </ContentPage.Content>
 </ContentPage> 
 
@@ -186,50 +187,71 @@ After the radial menu has been created, add necessary items on it. For adding it
  xmlns:radialMenu="clr-namespace:Syncfusion.SfRadialMenu.XForms;assembly=Syncfusion.SfRadialMenu.XForms">
     
 <ContentPage.Content>
-           <radialMenu:SfRadialMenu x:Name="radial_Menu" CenterButtonText="\uE713" CenterButtonBackText="\uE72B" CenterButtonFontFamily="Segoe MDL2 Assets.ttf" CenterButtonRadius="32">
+           <radialMenu:SfRadialMenu x:Name="radial_Menu" CenterButtonText="&#xe72b;" CenterButtonBackText="&#xe72b;" CenterButtonFontFamily="Segoe MDL2 Assets.ttf" CenterButtonRadius="32">
 				<radialMenu:SfRadialMenu.Items>
-					<radialMenu:SfRadialMenuItem FontIconText="\uE701" IconFontFamily="Segoe MDL2 Assets.ttf">
+					<radialMenu:SfRadialMenuItem FontIconText="&#xe72e;" 
+					IconFontFamily="Segoe MDL2 Assets.ttf">
 						<radialMenu:SfRadialMenuItem.Items>
-							<radialMenu:SfRadialMenuItem  FontIconText="\uEC3B" IconFontFamily="Segoe MDL2 Assets.ttf" />
-							<radialMenu:SfRadialMenuItem  FontIconText="\uEC3A" IconFontFamily="Segoe MDL2 Assets.ttf" />
-							<radialMenu:SfRadialMenuItem  FontIconText="\uEC39" IconFontFamily="Segoe MDL2 Assets.ttf" />
-							<radialMenu:SfRadialMenuItem  FontIconText="\uEC38" IconFontFamily="Segoe MDL2 Assets.ttf" />
+							<radialMenu:SfRadialMenuItem  FontIconText="&#xe72e;" 
+							IconFontFamily="Segoe MDL2 Assets.ttf" />
+							<radialMenu:SfRadialMenuItem  FontIconText="&#xe72c;" 
+							IconFontFamily="Segoe MDL2 Assets.ttf" />
+							<radialMenu:SfRadialMenuItem  FontIconText="&#xe72e;" 
+							IconFontFamily="Segoe MDL2 Assets.ttf" />
+							<radialMenu:SfRadialMenuItem  FontIconText="&#xe734;" 
+							IconFontFamily="Segoe MDL2 Assets.ttf" />
 						</radialMenu:SfRadialMenuItem.Items>
 					</radialMenu:SfRadialMenuItem>
-					<radialMenu:SfRadialMenuItem  FontIconText="\uE702" IconFontFamily="Segoe MDL2 Assets.ttf">
+					<radialMenu:SfRadialMenuItem  FontIconText="&#xe72d;" 
+					IconFontFamily="Segoe MDL2 Assets.ttf">
 						<radialMenu:SfRadialMenuItem.Items>
-							<radialMenu:SfRadialMenuItem  FontIconText="\uEC3B" IconFontFamily="Segoe MDL2 Assets.ttf" />
-							<radialMenu:SfRadialMenuItem  FontIconText="\uEC3A" IconFontFamily="Segoe MDL2 Assets.ttf" />
-							<radialMenu:SfRadialMenuItem  FontIconText="\uEC39" IconFontFamily="Segoe MDL2 Assets.ttf" />
-							<radialMenu:SfRadialMenuItem  FontIconText="\uEC38" IconFontFamily="Segoe MDL2 Assets.ttf" />
+							<radialMenu:SfRadialMenuItem  FontIconText="&#xe72c;" 
+							IconFontFamily="Segoe MDL2 Assets.ttf" />
+							<radialMenu:SfRadialMenuItem  FontIconText="&#xe72d;"
+							 IconFontFamily="Segoe MDL2 Assets.ttf" />
+							<radialMenu:SfRadialMenuItem  FontIconText="&#xe734;"
+							IconFontFamily="Segoe MDL2 Assets.ttf" />
+							<radialMenu:SfRadialMenuItem  FontIconText="&#xe72e;" 
+							IconFontFamily="Segoe MDL2 Assets.ttf" />
 						</radialMenu:SfRadialMenuItem.Items>
 					</radialMenu:SfRadialMenuItem>
-					<radialMenu:SfRadialMenuItem  FontIconText="\uEA8F" IconFontFamily="Segoe MDL2 Assets.ttf">
+					<radialMenu:SfRadialMenuItem  FontIconText="&#xe72d;" IconFontFamily="Segoe MDL2 Assets.ttf">
 						<radialMenu:SfRadialMenuItem.Items>
-							<radialMenu:SfRadialMenuItem  FontIconText="\uE7ED" IconFontFamily="Segoe MDL2 Assets.ttf" />
-							<radialMenu:SfRadialMenuItem  FontIconText="\uE877" IconFontFamily="Segoe MDL2 Assets.ttf" />
-							<radialMenu:SfRadialMenuItem  FontIconText="\uEA8F" IconFontFamily="Segoe MDL2 Assets.ttf" />
+							<radialMenu:SfRadialMenuItem  FontIconText="&#xe730;" 
+							IconFontFamily="Segoe MDL2 Assets.ttf" />
+							<radialMenu:SfRadialMenuItem  FontIconText="&#xe72e;" 
+							 IconFontFamily="Segoe MDL2 Assets.ttf" />
+							<radialMenu:SfRadialMenuItem  FontIconText="&#xe730;" 
+							IconFontFamily="Segoe MDL2 Assets.ttf" />
 						</radialMenu:SfRadialMenuItem.Items>
 					</radialMenu:SfRadialMenuItem>
-					<radialMenu:SfRadialMenuItem  FontIconText="\uE706" IconFontFamily="Segoe MDL2 Assets.ttf">
+					<radialMenu:SfRadialMenuItem  FontIconText="&#xe730;" IconFontFamily="Segoe MDL2 Assets.ttf">
 						<radialMenu:SfRadialMenuItem.Items>
-							<radialMenu:SfRadialMenuItem  IconFontSize="16" FontIconText="\uEC8A" IconFontFamily="Segoe MDL2 Assets.ttf" />
-							<radialMenu:SfRadialMenuItem  IconFontSize="18" FontIconText="\uEC8A" IconFontFamily="Segoe MDL2 Assets.ttf" />
-							<radialMenu:SfRadialMenuItem  IconFontSize="20" FontIconText="\uE706" IconFontFamily="Segoe MDL2 Assets.ttf" />
+							<radialMenu:SfRadialMenuItem  IconFontSize="16" FontIconText="&#xe72c;" IconFontFamily="Segoe MDL2 Assets.ttf" />
+							<radialMenu:SfRadialMenuItem  IconFontSize="18" FontIconText="&#xe730;" IconFontFamily="Segoe MDL2 Assets.ttf" />
+							<radialMenu:SfRadialMenuItem  IconFontSize="20" FontIconText="&#xe72d;" IconFontFamily="Segoe MDL2 Assets.ttf" />
 						</radialMenu:SfRadialMenuItem.Items>
 					</radialMenu:SfRadialMenuItem>
-					<radialMenu:SfRadialMenuItem  FontIconText="\uEBAA" IconFontFamily="Segoe MDL2 Assets.ttf">
+					<radialMenu:SfRadialMenuItem  FontIconText="&#xe738;" 
+					   IconFontFamily="Segoe MDL2 Assets.ttf">
 						<radialMenu:SfRadialMenuItem.Items>
-							<radialMenu:SfRadialMenuItem  FontIconText="\uEBB8" IconFontFamily="Segoe MDL2 Assets.ttf" />
-							<radialMenu:SfRadialMenuItem  FontIconText="\uEBBC" IconFontFamily="Segoe MDL2 Assets.ttf" />
-							<radialMenu:SfRadialMenuItem  FontIconText="\uEBC0" IconFontFamily="Segoe MDL2 Assets.ttf" />
+							<radialMenu:SfRadialMenuItem  FontIconText="&#xe72c;" 
+							IconFontFamily="Segoe MDL2 Assets.ttf" />
+							<radialMenu:SfRadialMenuItem  FontIconText="&#xe72e;" 
+							IconFontFamily="Segoe MDL2 Assets.ttf" />
+							<radialMenu:SfRadialMenuItem  FontIconText="&#xe72d;" 
+							IconFontFamily="Segoe MDL2 Assets.ttf" />
 						</radialMenu:SfRadialMenuItem.Items>
 					</radialMenu:SfRadialMenuItem>
-					<radialMenu:SfRadialMenuItem FontIconText="\uE7E8"  IconFontFamily="Segoe MDL2 Assets.ttf">
+					<radialMenu:SfRadialMenuItem FontIconText="&#xe72c;"  
+					IconFontFamily="Segoe MDL2 Assets.ttf">
 						<radialMenu:SfRadialMenuItem.Items>
-							<radialMenu:SfRadialMenuItem  FontIconText="\uE708" IconFontFamily="Segoe MDL2 Assets.ttf" />
-							<radialMenu:SfRadialMenuItem  FontIconText="\uE777" IconFontFamily="Segoe MDL2 Assets.ttf" />
-							<radialMenu:SfRadialMenuItem  FontIconText="\uE7E8" IconFontFamily="Segoe MDL2 Assets.ttf" />
+							<radialMenu:SfRadialMenuItem  FontIconText="&#xe734;" 
+							IconFontFamily="Segoe MDL2 Assets.ttf" />
+							<radialMenu:SfRadialMenuItem  FontIconText="&#xe739;" 
+							IconFontFamily="Segoe MDL2 Assets.ttf" />
+							<radialMenu:SfRadialMenuItem  FontIconText="&#xe734;" 
+							IconFontFamily="Segoe MDL2 Assets.ttf" />
 						</radialMenu:SfRadialMenuItem.Items>
 					</radialMenu:SfRadialMenuItem>
 				</radialMenu:SfRadialMenu.Items>

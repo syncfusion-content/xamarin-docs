@@ -15,9 +15,9 @@ A group represents a collection of items belongs to a category. When grouping is
 
 The SfListView allows programmatic grouping by defining the [GroupDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor.html) object, and adding it into the [DataSource.GroupDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~GroupDescriptors.html) collection. The `GroupDescriptor` object holds the following properties:
 
-* PropertyName: Describes the name of the property to be grouped.
-* KeySelector: Describes selector to return the group key.
-* Comparer: Describes comparer to be applied in when sorting take place.
+* [PropertyName](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~PropertyName.html: Describes the name of the property to be grouped.
+* [KeySelector](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~KeySelector.html): Describes selector to return the group key.
+* [Comparer](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~Comparer.html): Describes comparer to be applied in when sorting take place.
 
 {% tabs %}
 {% highlight xaml %}
@@ -178,8 +178,26 @@ For each group, display the sum of values of the property from model object in t
 {% endhighlight %}
 
 {% highlight c# %}
-public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+listView.GroupHeaderTemplate = new DataTemplate(() =>
 {
+   var grid = new Grid();
+
+   var label1 = new Label();
+   label1.SetBinding(Label.TextProperty, new Binding("Key"));
+
+   var label2 = new Label();
+   Binding binding = new Binding("Items");
+   binding.Converter = new Converter();
+   label2.SetBinding(Label.TextProperty,binding);
+
+   grid.Children.Add(label1);
+   grid.Children.Add(label2, 1, 0);
+
+   return grid;
+ });
+
+ public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+ {
     int result = 0;
     var items = value as IEnumerable;
     if(items != null)
@@ -234,6 +252,42 @@ The total number of items in each group will be displayed in the group header by
  </syncfusion:SfListView>
 </ContentPage>
 {% endhighlight %}
+{% highlight c# %}
+listView.GroupHeaderTemplate = new DataTemplate(() => 
+{
+  var grid = new Grid();
+
+  var stack1 = new StackLayout()
+  {
+    VerticalOptions = LayoutOptions.Center,
+    HorizontalOptions = LayoutOptions.Start,
+    Orientation = StackOrientation.Horizontal
+  };
+  var yearLabel = new Label
+  {
+    TextColor = Color.Black,
+  };
+  var yearlabel2 = new Label() { Text="Year", TextColor=Color.Black};
+  yearLabel.SetBinding(Label.TextProperty, new Binding("key"));
+
+  var stack2 = new StackLayout()
+  {
+    VerticalOptions = LayoutOptions.Center,
+    HorizontalOptions = LayoutOptions.EndAndExpand,
+    Orientation = StackOrientation.Horizontal
+  };
+  var countLabel = new Label
+  {
+    TextColor = Color.Black,
+  };
+  countLabel.SetBinding(Label.TextProperty, new Binding("Count"));
+  var countlabel2 = new Label() { Text="Item's" , TextColor=Color.Black};
+
+  grid.Children.Add(stack1);
+  grid.Children.Add(stack2, 1, 0);
+  return grid;
+});
+{% endhighlight %}
 {% endtabs %}
 
 The following screenshot shows the output when displaying items count at group header. You can download entire sample code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Items_Count1523989044).
@@ -282,6 +336,31 @@ N> Multi-level grouping is only applicable for `LinearLayout` in the SfListView.
 {% endhighlight %}
 
 {% highlight c# %}
+
+listView.ItemsSource = viewModel.EmployeeInfo;
+listView.ItemSize = 60;
+listView.DataSource.GroupDescriptors.Add(new GroupDescriptor()
+{
+  PropertyName = "Designation",
+});
+listView.DataSource.GroupDescriptors.Add(new GroupDescriptor()
+{
+  PropertyName = "Designation",
+});
+listView.GroupHeaderTemplate = new DataTemplate(() =>
+{
+  var stack = new StackLayout();
+  Binding binding = new Binding("Level");
+  binding.Converter = new TemplateConverter();
+  stack.SetBinding(StackLayout.BackgroundColorProperty, binding);
+  stack.SetBinding(StackLayout.PaddingProperty, binding);
+
+  var label = new Label() { VerticalOptions=LayoutOptions.Center,HorizontalOptions=LayoutOptions.Start};
+  label.SetBinding(Label.TextProperty, new Binding("Key"));
+
+  return stack;
+});
+
 public class GroupHeaderConverter : IValueConverter
 {
   public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
@@ -302,10 +381,10 @@ public class GroupHeaderConverter : IValueConverter
      }
   }
 
-  public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
-  {
+   public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+   {
      throw new NotImplementedException();
-  }
+   }
 }
 {% endhighlight %}
 {% endtabs %}
@@ -413,8 +492,8 @@ The [SfListView.GroupExpanding](https://help.syncfusion.com/cr/cref_files/xamari
  
 The [GroupExpandCollapseChangingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GroupExpandCollapseChangingEventHandler.html) of the `GroupExpanding` event provides the information about the expanding group and it has the following members:
 
-`Groups`: Gets a list of groups being expanded.
-`Cancel`: Decides whether to cancel the group expansion or not.
+[Groups](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GroupExpandCollapseChangingEventArgs~Groups.html): Gets a list of groups being expanded.
+[Cancel](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel&rd=true): Decides whether to cancel the group expansion or not.
 
 The `GroupExpanding` event used for the following use case.
 
@@ -448,7 +527,7 @@ The [SfListView.GroupExpanded](https://help.syncfusion.com/cr/cref_files/xamarin
 
 The [GroupExpandCollapseChangedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GroupExpandCollapseChangedEventHandler.html) of the `GroupExpanded` event provides the information about the expanded group and it has the following member:
 
-`Groups`: Gets a list of expanded groups.
+[Groups](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GroupExpandCollapseChangedEventArgs~Groups.html): Gets a list of expanded groups.
 
 ### GroupCollapsing Event 
 
@@ -456,8 +535,8 @@ The [SfListView.GroupCollapsing](https://help.syncfusion.com/cr/cref_files/xamar
 
 The [GroupExpandCollapseChangingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GroupExpandCollapseChangingEventHandler.html) of the `GroupCollapsing` event provides the information about the collapsing group and it contains the following members:
 
-`Groups`: Gets a list of groups being collapsed.
-`Cancel`: Decides whether to cancel the group collapsing or not.
+[Groups](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GroupExpandCollapseChangingEventArgs~Groups.html): Gets a list of groups being collapsed.
+[Cancel](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel&rd=true): Decides whether to cancel the group collapsing or not.
 
 You can cancel the group is being collapsed by using the `GroupExpandCollapseChangingEventArgs.Cancel` of `GroupCollapsing` event.
 
@@ -487,7 +566,7 @@ The [SfListView.GroupCollapsed](https://help.syncfusion.com/cr/cref_files/xamari
  
 The [GroupExpandCollapseChangedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GroupExpandCollapseChangedEventHandler.html) of the `GroupCollapsed` event provides the information about collapsed group and it contains the following member.
 
-`Groups`: Gets a list of collapsed groups.
+[Groups](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GroupExpandCollapseChangedEventArgs~Groups.html): Gets a list of collapsed groups.
 
 ## Stick Group Header
 
@@ -498,7 +577,7 @@ N> When the `IsStickyGroupHeader` is set to true, the [IsStickyHeader](https://h
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfListView x:Name="listView" ItemSize="70" IsStickyGroupHeader="True" 
-                     ItemsSource="{Binding contactsInfo}" />          
+                       ItemsSource="{Binding contactsInfo}" />          
 {% endhighlight %}
 {% highlight c# %}  
 listView.IsStickyGroupHeader = true;
@@ -700,7 +779,7 @@ The SfListView supports selecting each group and items in the group like a check
                         <ColumnDefinition Width="Auto" />
                    </Grid.ColumnDefinitions>
                    <Label Text="{Binding Key}" Grid.Column="1" VerticalTextAlignment="Center"/>
-                   <Image  Grid.Column="2" IsVisible="{Binding SelectionMode, Source={x:Reference listView}}" 
+                   <Image Grid.Column="2" IsVisible="{Binding SelectionMode, Source={x:Reference listView}}" 
                            HorizontalOptions="Center" VerticalOptions="Center"
                            Source="{Binding ., Converter={StaticResource GroupingSelectionConverter}, ConverterParameter={x:Reference listView}}">
                         <Image.GestureRecognizers>
@@ -714,6 +793,34 @@ The SfListView supports selecting each group and items in the group like a check
     </syncfusion:SfListView.GroupHeaderTemplate>
   </syncfusion:SfListView>
 </ContentPage>
+{% endhighlight %}
+{% highlight c# %}
+listView.GroupHeaderTemplate = new DataTemplate(() => 
+{
+  var grid = new Grid();
+
+  var label = new Label() { VerticalTextAlignment=TextAlignment.Center};
+  label.SetBinding(Label.TextProperty, new Binding("Key"));
+
+  var image = new Image() { VerticalOptions=LayoutOptions.Center, HorizontalOptions=LayoutOptions.Center};
+  Binding binding = new Binding(".");
+  binding.Converter = new GroupingSelectionConverter();
+  binding.ConverterParameter = listView;
+  image.SetBinding(Image.SourceProperty, binding);
+
+  Binding bind = new Binding("SelectionMode");
+  bind.Source = listView;
+  image.SetBinding(Image.IsVisibleProperty, bind);
+
+  var tapped = new TapGestureRecognizer();
+  tapped.Tapped += Image_Tapped;
+  image.GestureRecognizers.Add(tapped);
+               
+  grid.Children.Add(label);
+  grid.Children.Add(image, 2, 0);
+                
+  return grid;
+});
 {% endhighlight %} 
 {% endtabs %}
 
@@ -847,21 +954,40 @@ Change the [SfListView.GroupHeaderTemplate](https://help.syncfusion.com/cr/cref_
 </ContentPage>
 {% endhighlight %}
 {% highlight c# %}
-namespace Grouping 
-{ 
-    public class SelectionBoolToBackgroundColorConverter : IValueConverter 
+
+listView.DataSource.GroupDescriptors.Add(new GroupDescriptor()
+ {
+   PropertyName = "BookName",
+ });
+listView.GroupHeaderTemplate = new DataTemplate(() =>
+ {
+   var grid = new Grid();
+
+   var stack=new StackLayout();
+   Binding binding = new Binding("IsExpand");
+   binding.Converter = new BoolToColorConverter();
+   stack.SetBinding(StackLayout.BackgroundColorProperty, binding);
+
+   var label = new Label() { VerticalOptions=LayoutOptions.Center,HorizontalOptions=LayoutOptions.Start};
+   label.SetBinding(Label.TextProperty, new Binding("Key"));
+
+   stack.Children.Add(label);
+   grid.Children.Add(stack);
+   return grid;
+ });
+
+ public class SelectionBoolToBackgroundColorConverter : IValueConverter 
+ { 
+    public object Convert(object value, Type targetType, object parameter, CultureInfo culture) 
     { 
-        public object Convert(object value, Type targetType, object parameter, CultureInfo culture) 
-        { 
-            return (bool)value == true ? Color.FromHex("#E4E4E4") : Color.FromHex("#ADD8E6"); 
-        } 
- 
-        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture) 
-        { 
-            throw new NotImplementedException(); 
-        } 
+      return (bool)value == true ? Color.FromHex("#E4E4E4") : Color.FromHex("#ADD8E6"); 
     } 
-} 
+ 
+    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture) 
+    { 
+      throw new NotImplementedException(); 
+    } 
+ } 
 {% endhighlight %}
 {% endtabs %}
 

@@ -302,8 +302,6 @@ The position of trackball axis label can be changed using [`AxisLabelAlignment`]
 
 Following code snippet and screenshot demostrate the label placement at left side of tick line.
 
-**Far**
-
 {% tabs %} 
 
 {% highlight xaml %}

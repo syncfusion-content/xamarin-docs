@@ -13,15 +13,15 @@ This section explains the steps required to work with progress bar in Xamarin.Fo
 
 ## Add progress bar reference
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add progress bar to your project, open the NuGet package manager in Visual Studio, and search for Syncfusion.Xamarin.SfProgressBar, and then install it.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add progress bar to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfProgressBar](https://www.nuget.org/packages/Syncfusion.Xamarin.SfProgressBar/), and then install it.
 
 ![](overview_images/nuget.jpeg)
 
 To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac#) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows#). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#progress-bar) to know about the dependent assemblies for progress bar.
 
-N>Install the same version of the progress bar assemblies in all the projects.
+N>Install the same version of the progress bar NUGET in all the projects.
 
-## Launching the progress bar on each platform
+## Launching the application on each platform with progress bar 
 
 To use the progress bar inside an application, each platform application requires some additional configurations. The configurations vary from platform to platform and is discussed in the following sections:
 
@@ -70,7 +70,7 @@ public MainPage()
 
 {% endhighlight %}
 
-Additional configuration required deploy the UWP application in Release mode, you need to initialize the progress bar assemblies in App.xaml.cs in UWP project as in the following code sample.
+In addition to the above configurations, you need to initialize the progress bar assemblies in App.xaml.cs in UWP project as shown in the below code snippets. This is required to deploy application with progress bar in `Release` mode in UWP platform.
 
 {% highlight C# %} 
 
@@ -98,7 +98,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 ### Android
 
-The Android launches the linear and circular progress bar without any additional configuration.
+The Android platform does not require any additional configuration to render the progress bar.
 
 
 ## Initialize the progress bar

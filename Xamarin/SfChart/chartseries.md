@@ -253,64 +253,6 @@ chart.Series.Add(pieSeries);
 
 ![](chartseries_images/chartseries_img3.png)
 
-## Placing Series Side-By-Side
-
-It defines the placement pattern for Side-By-Side type series like [`Column`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ColumnSeries.html), [`Bar`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.BarSeries.html), [`RangeColumn`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RangeColumnSeries.html), etc.,
-[`SideBySideSeriesPlacement`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~SideBySideSeriesPlacement.html) is a Boolean property and its default value is true so the segment will be placed adjacent to each other.
-
-![](chartseries_images/SideBySide-true.png)
-
-The following code example and image illustrates the placement of series while setting [`SideBySideSeriesPlacement`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~SideBySideSeriesPlacement.html) as false.
-
-{% tabs %} 
-
-{% highlight xaml %}
-
-<chart:SfChart x:Name="Chart" SideBySideSeriesPlacement="False" >
-      . . .
-    <chart:SfChart.Series>
-      <chart:ColumnSeries ItemsSource="{Binding Data1}" Label="2014" XBindingPath="Month" YBindingPath="Year2014">
-       
-      </chart:ColumnSeries>
-     <chart:ColumnSeries  Width="0.5" ItemsSource="{Binding Data2}" Label="2015" XBindingPath="Month" YBindingPath="Year2015" >
-       
-      </chart:ColumnSeries>
-    </chart:SfChart.Series>
-    . . .
-</chart:SfChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfChart chart = new SfChart()
-  {
-      SideBySideSeriesPlacement = false
-  };
- chart.PrimaryAxis = new CategoryAxis();
- chart.SecondaryAxis = new NumericalAxis();
- ColumnSeries series1 = new ColumnSeries()
- {
-                ItemsSource = view.Data1,
-                XBindingPath = "Month",
-                YBindingPath = "Year2014"
- };
- ColumnSeries series2 = new ColumnSeries()
- {
-                ItemsSource = view.Data2,
-                XBindingPath = "Month",
-                YBindingPath = "Year2015",
-                 Width="0.5"
- };
-
-chart.Series.Add(series1);
-chart.Series.Add(series2);
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![](chartseries_images/SideBySide-false.png)
 
 ## Grouping Stacked Series
 

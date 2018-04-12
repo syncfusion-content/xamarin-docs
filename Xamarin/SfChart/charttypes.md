@@ -559,6 +559,60 @@ chart.Series.Add(columnSeries);
 
 ![](charttypes_images/charttypes_img6.png)
 
+## Placing Series Side-By-Side
+
+By default, all the column series which has the same x and y axis are placed side by side in a chart. If you want place the series one over the other (overlapped), set the [`SideBySideSeriesPlacement`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~SideBySideSeriesPlacement.html) property of [`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html#) to false and configure the [`Width`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ColumnSeries~Width.html) property to differentiate the series. The following code snippet and screenshot illustrate the overlapped placement of column series.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart x:Name="Chart" SideBySideSeriesPlacement="False" >
+      . . .
+    <chart:SfChart.Series>
+      <chart:ColumnSeries ItemsSource="{Binding Data1}" Label="2014" XBindingPath="Month" YBindingPath="Year2014">
+       
+      </chart:ColumnSeries>
+     <chart:ColumnSeries  Width="0.5" ItemsSource="{Binding Data2}" Label="2015" XBindingPath="Month" YBindingPath="Year2015" >
+       
+      </chart:ColumnSeries>
+    </chart:SfChart.Series>
+    . . .
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart()
+  {
+      SideBySideSeriesPlacement = false
+  };
+ chart.PrimaryAxis = new CategoryAxis();
+ chart.SecondaryAxis = new NumericalAxis();
+ ColumnSeries series1 = new ColumnSeries()
+ {
+                ItemsSource = view.Data1,
+                XBindingPath = "Month",
+                YBindingPath = "Year2014"
+ };
+ ColumnSeries series2 = new ColumnSeries()
+ {
+                ItemsSource = view.Data2,
+                XBindingPath = "Month",
+                YBindingPath = "Year2015",
+                 Width="0.5"
+ };
+
+chart.Series.Add(series1);
+chart.Series.Add(series2);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](charttypes_images/SideBySide-false.png)
+
 ## Range Column Chart
 
 To render a range column chart, create an instance of [`RangeColumnSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RangeColumnSeries.html) and add to the [`Series`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~Series.html) collection property of [`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html). 

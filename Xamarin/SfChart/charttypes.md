@@ -193,15 +193,15 @@ chart.Series.Add(splineAreaSeries);
 
 ![](charttypes_images/charttypes_img3.png)
 
-### SplineAreaSeries Types
+### Spline Area Series Types
 
 [`SplineType`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineAreaSeries~SplineType.html) allows you to change the spline area curve in series. 
 The following types are used in [`SplineAreaSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineAreaSeries.html) as 
 
- * Natural
- * Monotonic
- * Cardinal
- * Clamped
+ * [`Natural`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineType.html)
+ * [`Monotonic`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineType.html)
+ * [`Cardinal`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineType.html)
+ * [`Clamped`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineType.html)
 
 By default [`SplineType`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineAreaSeries~SplineType.html) value is [`Natural`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineType.html).
 
@@ -238,18 +238,6 @@ chart.Series.Add(splineAreaSeries);
 {% endhighlight %}
 
 {% endtabs %}
-
-[`Cardinal`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineType.html) 
-
-![](charttypes_images/CardinalSplineArea.png)
-
-[`Monotonic`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineType.html)
-
-![](charttypes_images/MonotonicSplineArea.png)
-
-[`Clamped`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineType.html)
-
-![](charttypes_images/ClampedSplineArea.png)
 
 
 ## Step Area Chart
@@ -1123,7 +1111,7 @@ chart.Series.Add(splineSeries);
 
 ![](charttypes_images/ClampedSplineType.png)
 
-## StepLine Chart
+## Step Line Chart
 
 To render a step line chart, create an instance of [`StepLineSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.StepLineSeries.html) and add to the [`Series`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~Series.html) collection property of
 [`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the spline segment appearance.

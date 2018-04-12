@@ -11,97 +11,95 @@ documentation: ug
 
 This section explains the steps required to work with progress bar in Xamarin.Forms.
 
-## Assembly deployment
+## Add progress bar reference
 
-After installing Essential Studio for Xamarin, find all the required assemblies in the installation folders {Syncfusion Essential Studio Installed location}\Essential Studio\{{ site.releaseversion }}\Xamarin\lib.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add progress bar to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfProgressBar](https://www.nuget.org/packages/Syncfusion.Xamarin.SfProgressBar/), and then install it.
 
-Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Xamarin\lib.
+![](overview_images/nuget.jpeg)
 
-N> Assemblies can be found in an unzipped package location in Mac.
+To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac#) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows#). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#progress-bar) to know about the dependent assemblies for progress bar.
 
-### Adding SfProgressBar Reference
+N>Install the same version of the progress bar NUGET in all the projects.
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfProgressBar to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfProgressBar](https://www.nuget.org/packages/Syncfusion.Xamarin.SfProgressBar/), and then install it.
+## Launching the application on each platform with progress bar 
 
-![](overview_images/nuget.png)
-
-To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#progress-bar) to know about the dependent assemblies for SfProgressBar.
-
-N> When there is a mismatch between the Syncfusion NuGet packages among the projects, `System.IO.FileLoadException` will occur. To overcome this exception, install the same version of the SfProgressBar assemblies in all the projects. 
-
-## Launching the SfProgressBar on each platform
-
-To use the SfProgressBar inside an application, each platform application must initialize the SfLinearProgressBarRenderer or SfCircularProgressBarRenderer renderer. This initialization step varies from platform to platform and is discussed in the following sections:
-
-### Android
-
-The Android launches the SfProgressBar without any initialization and is enough to only initialize the Xamarin.Forms Framework to launch the application.
+To use the progress bar inside an application, each platform application requires some additional configurations. The configurations vary from platform to platform and is discussed in the following sections:
 
 ### iOS
 
-To launch the SfProgressBar in iOS, call the `SfLinearProgressBarRenderer.Init()` or`SfCircularProgressBarRenderer.Init()` in the `FinishedLaunching` overridden method of the AppDelegate class after the Xamarin.Forms Framework initialization and before the LoadApplication is called as demonstrated in the following code example:
+To launch the progress bar in iOS, call the SfLinearProgressBarRenderer.Init() or SfCircularProgressBarRenderer.Init() in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework initialization and before the LoadApplication is called as demonstrated in the following code sample.
 
-{% highlight c# %}
-public override bool FinishedLaunching(UIApplication app, NSDictionary options)
-{
-    …
-  global::Xamarin.Forms.Forms.Init();
-  
-  //Using linear progress bar.           
-  SfLinearProgressBarRenderer.Init();
+{% highlight C# %} 
 
-  //Using circular progress bar.
-  SfCircularProgressBarRenderer.Init();
+public override bool FinishedLaunching(UIApplication app, NSDictionary options) 
+{ 
+    … 
+    global::Xamarin.Forms.Forms.Init();
 
-  LoadApplication(new App());
+    // Add the below line if you are using SfLinearProgressBar.
+    Syncfusion.XForms.iOS.ProgressBar.SfLinearProgressBarRenderer.Init();
+
+    // Add the below line if you are using SfCircularProgressBar.  
+    Syncfusion.XForms.iOS.ProgressBar.SfCircularProgressBarRenderer.Init();
+
+    LoadApplication(new App()); 
     …
 }
-{% endhighlight %} 
+
+{% endhighlight %}
 
 ### Universal Windows Platform (UWP)
 
-To launch the SfProgressBar in UWP, initialize the `SfLinearProgressRenderer()` or `SfCircularProgressBarRenderer()` in the `MainPage` constructor before the LoadApplication is called as demonstrated in the following code example.
+To launch the progress bar in UWP, initialize the SfLinearProgressRenderer() or SfCircularProgressBarRenderer()  based on your requirement in the MainPage constructor before the LoadApplication is called as demonstrated in the following code sample.
 
-{% highlight c# %}
-public MainPage()
-{
-    …
-    // Add the below line if you are using SfLinearProgressBar. 
-    new Syncfusion.XForms.UWP.ProgressBar.SfLinearProgressRenderer();
-  
-    // Add the below line if you are using SfCircularProgressBar.                
-    new Syncfusion.XForms.UWP.ProgressBar.SfCircularProgressBarRenderer();
-    
-    LoadApplication (new App ());
-    …
+{% highlight C# %} 
+
+public MainPage() 
+{ 
+    … 
+
+  // Add the below line if you are using SfLinearProgressBar. 
+  new Syncfusion.XForms.UWP.ProgressBar.SfLinearProgressRenderer(); 
+
+  // Add the below line if you are using SfCircularProgressBar. 
+  new Syncfusion.XForms.UWP.ProgressBar.SfCircularProgressBarRenderer();
+
+  LoadApplication (new App ()); 
+  … 
 }
 
 {% endhighlight %}
 
-### Release mode issue in UWP platform
+In addition to the above configurations, you need to initialize the progress bar assemblies in App.xaml.cs in UWP project as shown in the below code snippets. This is required to deploy application with progress bar in `Release` mode in UWP platform.
 
-The known Framework issue in UWP platform is the custom controls will not render when deployed the application in `Release Mode`. It can be resolved by initializing the SfProgressBar assemblies in `App.xaml.cs` in UWP project as in the following code snippet.
+{% highlight C# %} 
 
-{% highlight c# %}
-// In App.xaml.cs
-
+// In App.xaml.cs 
 protected override void OnLaunched(LaunchActivatedEventArgs e)
-{
-    …
-           if (rootFrame == null)
-            {
-                List<Assembly> assembliesToInclude = new List<Assembly>();
-  
-                // Add the below line if you are using SfLinearProgressBar. 
-                assembliesToInclude.Add(typeof(Syncfusion.XForms.UWP.ProgressBar.SfLinearProgressRenderer).GetTypeInfo().Assembly);
-  
-                // Add the below line if you are using SfCircularProgressBar.               
-                assembliesToInclude.Add(typeof(Syncfusion.XForms.UWP.ProgressBar.SfCircularProgressBarRenderer).GetTypeInfo().Assembly);
-                Xamarin.Forms.Forms.Init(e, assembliesToInclude);
-            }        
-    …     
+{ 
+   … 
+   if (rootFrame == null) 
+   { 
+      List<Assembly> assembliesToInclude = new List<Assembly>();
+
+      // Add the below line if you are using SfLinearProgressBar.
+      assembliesToInclude.Add(typeof(Syncfusion.XForms.UWP.ProgressBar.SfLinearProgressRenderer).GetTypeInfo().Assembly);
+
+      // Add the below line if you are using SfCircularProgressBar. 
+      assembliesToInclude.Add(typeof(Syncfusion.XForms.UWP.ProgressBar.SfCircularProgressBarRenderer).GetTypeInfo().Assembly);
+
+      Xamarin.Forms.Forms.Init(e, assembliesToInclude); 
+   } 
+… 
 }
+
+
 {% endhighlight %}
+
+### Android
+
+The Android platform does not require any additional configuration to render the progress bar.
+
 
 ## Initialize the progress bar
 

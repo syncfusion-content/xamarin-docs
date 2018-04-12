@@ -18,7 +18,7 @@ There are four built-in events in the SfPopupLayout control namely:
 
 ## Opening event
 
-The [SfPopupLayout.Opening](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Opening_EV.html) event will be fired whenever opening the Pop-upView in the application. It cancels pop-up opening with `CancelEventArgs` that contains the following property:
+The [SfPopupLayout.Opening](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Opening_EV.html) event will be fired whenever opening the Pop-upView in the application. It can cancel pop-up opening with `CancelEventArgs` that contains the following property:
 
 * [Cancel](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true): Pop-up opening is based on this value.
 
@@ -72,7 +72,7 @@ private void PopupLayout_Opened(object sender, EventArgs e)
 
 ## Closing event
 
-The [SfPopupLayout.Closing](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Opening_EV.html) event will be fired whenever closing the Pop-upView in the application. It cancels pop-up closing with `CancelEventArgs` that contains the following property:
+The [SfPopupLayout.Closing](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Opening_EV.html) event will be fired whenever closing the Pop-upView in the application. It can cancel pop-up closing with `CancelEventArgs` that contains the following property:
 
 * [Cancel](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true): Pop-up opening is based on this value.
 

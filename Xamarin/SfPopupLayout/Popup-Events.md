@@ -9,20 +9,18 @@ documentation: ug
 
 # Events
 
-There are four built-in events in the SfPopupLayout control namely,
+There are four built-in events in the SfPopupLayout control namely:
 
 * Opening
 * Opened
 * Closing
 * Closed
 
-## Opening Event
+## Opening event
 
-[SfPopupLayout.Opening](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Opening_EV.html) event will be fired whenever the PopupView is opening in the application. It provides support to cancel the opening of the popup with `CancelEventArgs` that contains the following property.
+The [SfPopupLayout.Opening](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Opening_EV.html) event will be fired whenever opening the Pop-upView in the application. It cancels pop-up opening with `CancelEventArgs` that contains the following property:
 
-* [Cancel](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) - Based on this value, you can cancel the popup opening.
-
-Refer to the following code example in which the pop-up will be canceled in `SfPopupLayout.Opening` event.
+* [Cancel](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true): Pop-up opening is based on this value.
 
 {% tabs %}
 {%highlight Xaml%}
@@ -45,12 +43,11 @@ private void PopupLayout_Opening(object sender, System.ComponentModel.CancelEven
 {% endhighlight %}
 {% endtabs %}
 
-## Opened Event
+## Opened event
 
-[SfPopupLayout.Opened](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Opened_EV.html) event will be fired whenever the PopupView is displayed in the application.
-You can write your set of codes that needs to be executed once the popup is opened and visible in the application, in its respective event handler.
+The [SfPopupLayout.Opened](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Opened_EV.html) event will be fired whenever displaying the Pop-upView in the application.
 
-Refer to the following code example for using `SfPopupLayout.Opened` event.
+You can execute your own set of codes once the pop-up is opened, and visible in the application in its respective event handler.
 
 {% tabs %}
 {%highlight Xaml%}
@@ -73,13 +70,11 @@ private void PopupLayout_Opened(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-## Closing Event
+## Closing event
 
-[SfPopupLayout.Closing](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Opening_EV.html) event will be fired whenever the PopupView is about to be closed in the application. It provides support to cancel closing of the popup with `CancelEventArgs` that contains the following property.
+The [SfPopupLayout.Closing](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Opening_EV.html) event will be fired whenever closing the Pop-upView in the application. It cancels pop-up closing with `CancelEventArgs` that contains the following property:
 
-* [Cancel](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) - Based on this value, you can cancel the popup closing.
-
-Refer to the following code example in which the closing of the pop-up will be canceled in `SfPopupLayout.Closing` event.
+* [Cancel](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true): Pop-up opening is based on this value.
 
 {% tabs %}
 {%highlight Xaml%}
@@ -102,12 +97,11 @@ private void PopupLayout_Closing(object sender, System.ComponentModel.CancelEven
 {% endhighlight %}
 {% endtabs %}
 
-## Closed Event
+## Closed event
 
-[SfPopupLayout.Closed](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Closed_EV.html) event will be fired whenever the PopupView is dismissed from the view.
-You can write your set of codes that needs to be executed once the popup is completely closed, in its respective event handler.
+The [SfPopupLayout.Closed](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Closed_EV.html) event will be fired whenever dismissing the Pop-upView from the view.
 
-Refer to the following code example for using `SfPopupLayout.Closed` event.
+You can execute your own set of codes once the pop-up is completely closed in its respective event handler.
 
 {% tabs %}
 {%highlight Xaml%}
@@ -130,23 +124,24 @@ private void PopupLayout_Closed(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-## Footer Button Commands
+## Footer button commands
 
-Following are the two commands available in the Footer.
+Following two commands are available in the footer:
 
 * AcceptCommand
 * DeclineCommand
 
-### Accept Command
+### Accept command
 
-[SfPopupLayout.PopupView.AcceptCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~AcceptCommand.html) will be fired when the accept button in the footer of the popup is clicked.
+The [SfPopupLayout.PopupView.AcceptCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~AcceptCommand.html) will be fired when clicking the Accept button in the pop-up footer.
 
-Derive a class from `ICommand` and implement the necessary interface.
-Return true in the `CanExecute()` override method to close the popup and fire the `Execute()` method.
-Return false to prevent popup from closing and `Execute()` method is not fired.
+To handle the Accept button, follow the procedure:
 
-Refer to the following code example in which the pop-up closing will be canceled based on the return value of `CanExecute()` method.
+* Derive a class from `ICommand`, and implement the necessary interface.
+* Return true in the `CanExecute()` override method to close the pop-up, and fire the `Execute()` method.
+* Return false to prevent pop-up from closing, and `Execute()` method is not fired.
 
+{% tabs %}
 {% highlight c# %}
 public MainPage()
 {
@@ -157,7 +152,9 @@ public MainPage()
     ....
 }
 {% endhighlight %}
+{% endtabs %}
 
+{% tabs %}
 {% highlight c# %}
 //Accept Button Event handler
 
@@ -176,17 +173,19 @@ public class AcceptButtonCustomCommand : ICommand
     }
 }
 {% endhighlight %}
+{% endtabs %}
 
-### Decline Command
+### Decline command
 
-[SfPopupLayout.PopupView.DeclineCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~DeclineCommand.html) will be fired when the decline button in the footer of the popup is clicked. 
+The [SfPopupLayout.PopupView.DeclineCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~DeclineCommand.html) will be fired when clicking the Decline button in the pop-up footer. 
 
-Derive a class from `ICommand` and implement the necessary interface. 
-Return true in the `CanExecute()` override method to close the popup and fire the `Execute()` method. 
-Return false to prevent popup from closing and `Execute()` method is not fired.
+To handle the Decline button, follow the procedure:
 
-Refer to the following code example in which the pop-up closing will be canceled based on the return value of `CanExecute()` method.
+* Derive a class from `ICommand`, and implement the necessary interface. 
+* Return true in the `CanExecute()` override method to close the pop-up, and fire the `Execute()` method. 
+* Return false to prevent pop-up from closing, and `Execute()` method is not fired.
 
+{% tabs %}
 {% highlight c# %}
 public MainPage()
 {
@@ -216,3 +215,4 @@ public class DeclineButtonCustomCommand : ICommand
     }
 }
 {% endhighlight %}
+{% endtabs %}

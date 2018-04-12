@@ -8,12 +8,11 @@ documentation: ug
 --- 
 # How to 
 
-## Hide the header in the SfPopupLayout
+## hide the header in the SfPopupLayout
 
 The SfPopupLayout allows hiding the header by using the [SfPopupLayout.PopupView.ShowHeader](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~ShowHeader.html) property. The default value of this property is `true`.
 
-To hide the header in the SfPopupLayout, follow the code example.
-
+{% tabs %}
 {% highlight c# %}
 //MainPage.cs
 
@@ -25,17 +24,15 @@ public MainPage()
     ....
 }
 {% endhighlight %}
-
-Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
+{% endtabs %}
 
 ![](PopupLayout_images/ShowHeader_False.png)
 
-## Hide the footer in SfPopupLayout
+## hide the footer in SfPopupLayout
 
 The SfPopupLayout allows hiding the footer by using the [SfPopupLayout.PopupView.ShowFooter](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~ShowFooter.html) property. The default value of this property is `true`.
 
-To hide the footer in the SfPopupLayout, follow the code example.
-
+{% tabs %}
 {% highlight c# %}
 //MainPage.cs
 
@@ -47,17 +44,15 @@ public MainPage()
     ....
 }
 {% endhighlight %}
-
-Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
+{% endtabs %}
 
 ![](PopupLayout_images/ShowFooter_False.png)
 
-## Hide the Close icon in the SfPopupLayout 
+## hide the Close icon in the SfPopupLayout 
 
 The SfPopupLayout allows hiding the Close icon by using the [SfPopupLayout.PopupView.ShowCloseButton](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~ShowCloseButton.html) property. The default value of this property is `true`.
 
-To hide the Close icon in the SfPopupLayout, follow the code example.
-
+{% tabs %}
 {% highlight c# %}
 //MainPage.cs
 
@@ -69,16 +64,13 @@ public MainPage()
     ....
 }
 {% endhighlight %}
-
-Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
+{% endtabs %}
 
 ![](PopupLayout_images/ShowClosebutton_False.png)
 
-## Load SfPopupLayout in GridTappedEvent of SfDataGrid
+## load the SfPopupLayout in GridTappedEvent of the SfDataGrid
 
-SfPopupLayout allows you to open popup in the grid tapped event of SfDataGrid.
-
-Refer the below code example to show the popup in Grid tapped event.
+The SfPopupLayout allows pop-up in the grid tapped event of the SfDataGrid.
 
 {% tabs %}
 {% highlight xaml %}
@@ -139,14 +131,13 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-Executing the above codes renders the following output in an android device.
-
 ![](PopupLayout_images/DataGridWithPopup.png)
 
-## Load SfPopupLayout in Prism
+## load SfPopupLayout in Prism
 
-Refer the below code in which SfPopupLayout is shown if we navigate to next and previous pages using button click.
+Refer to the following code in which the SfPopupLayout is shown, if you navigate to the next and previous pages using button click.
 
+{% tabs %}
 {% highlight xaml %}
 
 // MainPage.xaml
@@ -186,7 +177,9 @@ public partial class MainPage : ContentPage
     }
 }
 {% endhighlight %}
+{% endtabs %}
 
+{% tabs %}
 {% highlight xaml %}
 
 // SecondPage
@@ -225,7 +218,9 @@ public partial class SecondPage : ContentPage
     }
 }
 {% endhighlight %}
+{% endtabs %}
 
+{% tabs %}
 {% highlight c# %}
 
 // App.cs
@@ -248,7 +243,9 @@ public partial class App : PrismApplication
     }
 }
 {% endhighlight %}
+{% endtabs %}
 
+{% tabs %}
 {% highlight c# %}
 
 // MainPageViewModel.cs
@@ -296,7 +293,9 @@ public class MainPageViewModel : INavigationAware
     }
 }
 {% endhighlight %}
+{% endtabs %}
 
+{% tabs %}
 {% highlight c# %}
 
 // SecondPageViewModel.cs
@@ -344,12 +343,11 @@ public class SecondPageViewModel : INavigationAware
     }
 }
 {% endhighlight %}
+{% endtabs %}
 
-## Load SfPopupLayout in ItemTapped event of SfListView
+## open SfPopupLayout in ItemTapped event of SfListView
 
-SfPopupLayout allows you to open it in the ItemTapped event of SfListView.
-
-Refer the below code example to show the popup in Item tapped event.
+The SfPopupLayout allows opening it in the ItemTapped event of the SfListView.
 
 {% tabs %}
 {% highlight xaml %}
@@ -438,15 +436,11 @@ namespace ListViewWithPopup
 {% endhighlight %}
 {% endtabs %}
 
-Executing the above codes renders the following output in an android device.
-
 ![](PopupLayout_images/PopupInListView.png)
 
-## Show ListView as a popup
+## show ListView as a pop-up
 
-SfPopupLayout allows you to load SfListView as a content of the popup. You have to set `WidthRequest` and `HeightRequest` property for loading SfListView in SfPopupLayout. 
-
-Refer the below code example to load the SfListView in SfPopupLayout.
+The SfPopupLayout allows loading the SfListView as a content of the pop-up. You have to set `WidthRequest` and `HeightRequest` properties for loading SfListView in the SfPopupLayout. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -490,7 +484,5 @@ namespace ListViewWithPopup
 }
 {% endhighlight %}
 {% endtabs %}
-
-Executing the above codes renders the following output in an android device.
 
 ![](PopupLayout_images/ListViewInPopup.png)

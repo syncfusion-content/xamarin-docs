@@ -882,6 +882,37 @@ chart.PrimaryAxis.EdgeLabelsDrawingMode = EdgeLabelsDrawingMode.Shift;
 
 ![](axis_images/axis_img21.png)
 
+### Label extent
+
+The [`LabelExtent`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~LabelExtent.html) property allows to set the gap between axis labels and title. This is typically used to maintain the fixed gap between axis labels and title when the digits of the axis value changed in live update.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+      <chart:CategoryAxis LabelExtent="60" >
+        <chart:CategoryAxis.Title>
+          <chart:ChartAxisTitle Text="Month"/>
+        </chart:CategoryAxis.Title>
+      </chart:CategoryAxis>
+ </chart:SfChart.PrimaryAxis>
+
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+Chart.PrimaryAxis = new CategoryAxis();
+Chart.PrimaryAxis.LabelExtent = 60;
+Chart.PrimaryAxis.Title.Text = "Month";
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](axis_images/labelExtent.png)
+
 ### Grid lines customization
 
 The [`ShowMajorGridLines`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~ShowMajorGridLines.html) and [`ShowMinorGridLines`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RangeAxisBase~ShowMinorGridLines.html) properties are used to control the visibility of grid lines. [`MajorGridLineStyle`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~MajorGridLineStyle.html) and [`MinorGridLineStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RangeAxisBase~MinorGridLineStyle.html) properties in axis are used to customize the major grid lines and minor grid lines of an axis respectively. They provide options to change the width, dashes, color of grid lines. By default minor grid lines will not be visible. 
@@ -1028,6 +1059,47 @@ chart.SecondaryAxis.OpposedPosition = true;
 {% endtabs %}
 
 ![](axis_images/axis_img25.png)
+
+### Offset the rendering
+The [`PlotOffset`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~PlotOffset.html) property is used to offset the rendering of the axis at start and end position. The following code snippet demonstrates to apply the plot offset to both x and y axes.
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+
+      <chart:CategoryAxis PlotOffset="30" />
+
+</chart:SfChart.PrimaryAxis>
+
+<chart:SfChart.SecondaryAxis>
+
+      <chart:NumericalAxis PlotOffset="30"/>
+
+</chart:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+Chart.PrimaryAxis = new CategoryAxis()
+{
+
+     PlotOffset = 30
+};
+
+Chart.SecondaryAxis = new NumericalAxis()
+{
+
+     PlotOffset = 30
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](axis_images/PlotOffset.png)
 
 ### Maximum number of labels per 100 pixels
 

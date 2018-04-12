@@ -11,7 +11,7 @@ documentation: ug
 
 This section provides a quick overview for getting started with the SfListView for Xamarin.Forms. Walk through the entire process of creating the real world SfListView.
 
-## Assembly deployment
+## Assembly Deployment
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the {Syncfusion Essential Studio Installed location}\Essential Studio\{{ site.releaseversion }}\Xamarin\lib installation folder.
 
@@ -46,9 +46,21 @@ The following list of assemblies should be added as reference from the lib folde
 </tr>
 </table>
 
-N> To configure the Syncfusion NuGet packages in Visual Studio, refer to [here]( https://help.syncfusion.com/xamarin/introduction/download-and-installation#configuring-syncfusion-nuget-packages-in-visual-studio) for more information.
+N> To configure the Syncfusion NuGet packages in Visual Studio for mac, refer to [here]( https://help.syncfusion.com/xamarin/introduction/download-and-installation#configuring-syncfusion-nuget-packages-in-visual-studio) for more information.
 
-## System requirements
+### Adding ListView Reference
+
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfListView to your project, open the NuGet package manager in Visual Studio, and search for [syncfusion.xamarin.SfListView](https://www.nuget.org/packages/Syncfusion.Xamarin.SfListView/), and then install it. 
+
+![](SfListView_images/SfListView_AddListView.png)
+
+To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sflistview) to know about the dependent assemblies for SfListView. 
+
+I> After adding the reference, an additionally need to initialize the renderer for [iOS](https://help.syncfusion.com/xamarin/sflistview/getting-started#ios) and [UWP](https://help.syncfusion.com/xamarin/sflistview/getting-started#universal-windows-platform-uwp) projects.  
+
+I> For UWP alone, one more additional step is required if the project is built in release mode with .NET Native tool chain enabled. You can refer to the [KB article](https://www.syncfusion.com/kb/8476/how-to-overcome-the-crash-system-reflection-missingmetadataexception-when-usedotnetnativetoolchain-is) for more details.
+
+## System Requirements
 
 In the SfListView, current supported Xamarin.Forms version is `2.4.0.280` and later.
 
@@ -105,7 +117,7 @@ The following table lists the platforms supported versions:
     </tr>    
 </table>
 
-## Launching the SfListView on each platform
+## Launching the SfListView on Each Platform
 
 To use this control inside an application, each platform application must initialize the SfListView renderer. This initialization step varies from platform to platform, and is discussed in the following sections:
 
@@ -117,6 +129,7 @@ The Android launches the SfListView without any initialization, and is enough to
 
 To launch the SfListView in iOS, call the `SfListViewRenderer.Init()` in the `FinishedLaunching` overridden method of the AppDelegate class after the Xamarin.Forms Framework initialization, and before the LoadApplication is called as demonstrated in the following code example:
 
+{% tabs %}
 {% highlight c# %}
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {
@@ -127,11 +140,13 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
     …
 }
 {% endhighlight %} 
+{% endtabs %}
 
 ### Universal Windows Platform (UWP)
 
 To launch the SfListView in UWP, call the `SfListViewRenderer.Init()` in the `MainPage` constructor before the LoadApplication is called as demonstrated in the following code example:
 
+{% tabs %}
 {% highlight c# %}
 public MainPage()
 {
@@ -141,13 +156,15 @@ public MainPage()
     …
 }
 {% endhighlight %} 
+{% endtabs %}
 
-### ReleaseMode issue in UWP platform
+### ReleaseMode Issue in UWP Platform
 
 The known Framework issue in UWP platform is the custom controls will not render when deployed the application in `Release Mode`.
 
 The above problem can be resolved by initializing the SfListView assemblies in `App.xaml.cs` in UWP project as in the following code snippet:
 
+{% tabs %}
 {% highlight c# %}
 // In App.xaml.cs
 
@@ -169,8 +186,9 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
     …     
 }
 {% endhighlight %}
+{% endtabs %}
 
-## Create a simple SfListView 
+## Create a Simple SfListView 
 
 This section explains how to create a SfListView, and configure it. The SfListView control can be configured entirely in C# code, or by using XAML markup. This is how the control will look like on iOS, Android, and Windows devices.
  
@@ -190,7 +208,7 @@ In this walk through, you will create a new application with the SfListView that
 * [Selection](#selection)
 * [Header and Footer](#header-and-footer)
 
-## Creating the project
+## Creating the Project
 
 Create a new blank (Xamarin.Forms.Portable) application in Xamarin Studio or Visual Studio for Xamarin.Forms.
 
@@ -232,12 +250,13 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-## Creating data model for the SfListView
+## Creating Data Model for the SfListView
 
 Create a data model to bind it to the control. 
 
 Create a simple data source as shown in the following code example in a new class file, and save it as BookInfo.cs file: 
 
+{% tabs %}
 {% highlight c# %}
 public class BookInfo : INotifyPropertyChanged
 {
@@ -274,11 +293,13 @@ public class BookInfo : INotifyPropertyChanged
 }
  
 {% endhighlight %}
+{% endtabs %}
 
 N> If you want your data model to respond to property changes, then implement `INotifyPropertyChanged` interface in your model class.
 
 Create a model repository class with BookInfo collection property initialized with required number of data objects in a new class file as shown in the following code example, and save it as BookInfoRepository.cs file:
 
+{% tabs %}
 {% highlight c# %}
 public class BookInfoRepository
 {
@@ -312,8 +333,9 @@ public class BookInfoRepository
 }
 
 {% endhighlight %}
+{% endtabs %}
 
-## Binding data to the SfListView
+## Binding Data to the SfListView
 
 To bind the data source of the SfListView, set the [SfListView.ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemsSource.html) property as shown as follows. You can bind the data source of the SfListView either from XAML or in code. 
 
@@ -401,7 +423,7 @@ namespace GettingStarted
 
 Now, run the application to render the below output:
 
-You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Listview_GettingStarted1048237669).
+You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-1541629422).
 
 ![](SfListView_images/SfListView-Xamarin_img2.png)
 
@@ -434,9 +456,9 @@ Refresh the view by calling [SfListView.RefreshView](https://help.syncfusion.com
 
 SortDescriptor object holds the following three properties:
 
- * PropertyName: Describes name of the sorted property.
- * Direction: Describes an object of type [ListSortDirection](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.ListSortDirection.html) defines the sorting direction.
- * Comparer: Describes a comparer to be applied when sorting takes place.
+ * [PropertyName](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.DataSource.Portable~Syncfusion.DataSource.SortDescriptor~PropertyName.html): Describes name of the sorted property.
+ * [Direction](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.DataSource.Portable~Syncfusion.DataSource.SortDescriptor~Direction.html): Describes an object of type [ListSortDirection](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.ListSortDirection.html) defines the sorting direction.
+ * [Comparer](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.DataSource.Portable~Syncfusion.DataSource.SortDescriptor~Comparer.html): Describes a comparer to be applied when sorting takes place.
  
 {% tabs %}
 {% highlight xaml %}
@@ -475,6 +497,21 @@ The SfListView supports to filter the records in view by setting predicate to th
 
 To filter the items based on the Title property of the underlying data by using `FilterContacts` method, follow the code example:
  
+{% tabs %}
+{% highlight xaml %}
+<ContentPage>
+    <Grid>
+	 <Grid.RowDefinitions>
+           <RowDefinition Height="Auto"/>
+           <RowDefinition Height="Auto"/>
+     </Grid.RowDefinitions>
+      <SearchBar x:Name="filterText" HeightRequest="40"
+           Placeholder="Search here to filter"
+           TextChanged="OnFilterTextChanged" Grid.Row="0"/>
+      <syncfusion:SfListView x:Name="listView" Grid.Row="1" ItemsSource="{Binding BookInfo}"/>
+    </Grid>
+  </ContentPage>
+{% endhighlight %}
 {% highlight c# %}
 var grid = new Grid();
 var viewModel = new BookInfoRepository ();
@@ -511,6 +548,7 @@ private bool FilterContacts(object obj)
       return false;
 }
 {% endhighlight %}
+{% endtabs %}
 
 ## Grouping
 
@@ -518,9 +556,9 @@ The SfListView allows displaying the items in a group using the [SfListView.Data
 
 `GroupDescriptor` object holds the following properties:
 
- * PropertyName: Describes name of the property to be grouped.
- * KeySelector: Describes selector to return the group key.
- * Comparer: Describes comparer to be applied when sorting takes place.
+ * [PropertyName](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~PropertyName.html): Describes name of the property to be grouped.
+ * [KeySelector](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~KeySelector.html): Describes selector to return the group key.
+ * [Comparer](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~Comparer.html): Describes comparer to be applied when sorting takes place.
 
 It also supports to stick the group header by enabling the [SfListView.IsStickyGroupHeader](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsStickyGroupHeader.html) property.
 
@@ -566,7 +604,7 @@ listView.SelectionBackgroundColor = Color.FromHex("#E4E4E4");
 {% endhighlight %}
 {% endtabs %}
 
-## Header and footer
+## Header and Footer
 
 The SfListView allows setting the header and footer to the user interface(UI) view by setting the DataTemplate to the [HeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~HeaderTemplate.html) and [FooterTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~FooterTemplate.html).
 

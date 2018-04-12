@@ -273,9 +273,9 @@ column.IsVisibleOnLegend = true;
 
 {% endtabs %}
 
-### Item Margin
+### Item margin
 
-The [`ItemMargin`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~ItemMargin.html) property is used to set the margin between the legend items. By using this property, you can customize the distance between the legend items as you desired.
+The [`ItemMargin`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~ItemMargin.html) property is used to set the spacing between the legend items.
 
 {% tabs %} 
 

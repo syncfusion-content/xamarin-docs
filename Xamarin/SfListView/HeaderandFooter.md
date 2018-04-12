@@ -90,19 +90,15 @@ listView.IsStickyFooter = true;
 
 ## How to
 
-### achive TabView using header
+### achieve TabView using header
 
-The [SfListView](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView.html) allows to achieve tabview structure by customizing the [HeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~HeaderTemplate.html) to load any view.
+The [SfListView](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView.html) allows to achieve tab view structure by customizing the [HeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~HeaderTemplate.html) to load any view.
 
 **XAML**
 
 {% highlight xaml %}
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:Header_Footer"
-             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
-             x:Class="Header_Footer.MainPage">
+
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
 
     <ContentPage.BindingContext>
         <local:BookInfoRepository />
@@ -178,6 +174,7 @@ The [SfListView](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Sy
         </syncfusion:SfListView.HeaderTemplate>
     </syncfusion:SfListView>
 </ContentPage>
+
 {% endhighlight %}
 
 **C#**
@@ -313,11 +310,12 @@ public partial class MainPage : ContentPage
         return gridView;
     }
 }
+
 {% endhighlight %}
 
 You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Header_Footer1375601372).
 
-![](SfListView_images/Informations.jpg) ![](SfListView_images/Status.jpg) ![](SfListView_images/Contacts.jpg)
+![](SfListView_images/Informations.jpg)
 
 ### header and footer in vertical mode when listview in horizontal mode
 
@@ -328,11 +326,9 @@ The following code example illustrates, how to creates the header element at the
 **XAML**
 
 {% highlight xaml %}
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AutoFitSample.MainPage"
-             xmlns:local="clr-namespace:AutoFitSample;assembly=AutoFitSample">
+
+<ContentPage >
+
     <ContentPage.BindingContext>
         <local:ListViewAutoFitContentViewModel x:Name="ViewModel"/>
     </ContentPage.BindingContext>
@@ -372,11 +368,13 @@ The following code example illustrates, how to creates the header element at the
             </local:SfListViewExt.ItemTemplate>
         </local:SfListViewExt>
 </ContentPage> 
+
 {% endhighlight %}
 
 **C#**
 
 {% highlight c# %}
+
 public class SfListViewExt : SfListView
 {
     Grid headerGrid;
@@ -415,6 +413,7 @@ public class SfListViewExt : SfListView
         base.LayoutChildren(0, 70, width, height);
     }
 }
+
 {% endhighlight %}
 
 You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Header_Footer_Vertical-69423607).

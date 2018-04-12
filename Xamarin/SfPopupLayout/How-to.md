@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to | SfPopupLayout |Xamarin | Syncfusion
-description: How to topics in SfPopupLayout
+description: Explains how to achieve various requirements with SfPopupLayout
 platform: Xamarin
 control: SfPopupLayout
 documentation: ug
@@ -74,7 +74,7 @@ Executing the above codes renders the following output in iOS, Android and Windo
 
 ![](PopupLayout_images/ShowClosebutton_False.png)
 
-## Loading SfPopupLayout in GridTappedEvent of SfDataGrid
+## Load SfPopupLayout in GridTappedEvent of SfDataGrid
 
 SfPopupLayout allows you to open popup in the grid tapped event of SfDataGrid.
 
@@ -143,7 +143,7 @@ Executing the above codes renders the following output in an android device.
 
 ![](PopupLayout_images/DataGridWithPopup.png)
 
-## Loading SfPopupLayout in Prism
+## Load SfPopupLayout in Prism
 
 Refer the below code in which SfPopupLayout is shown if we navigate to next and previous pages using button click.
 
@@ -345,7 +345,7 @@ public class SecondPageViewModel : INavigationAware
 }
 {% endhighlight %}
 
-## Loading SfPopupLayout in ItemTapped event of SfListView
+## Load SfPopupLayout in ItemTapped event of SfListView
 
 SfPopupLayout allows you to open it in the ItemTapped event of SfListView.
 
@@ -442,7 +442,7 @@ Executing the above codes renders the following output in an android device.
 
 ![](PopupLayout_images/PopupInListView.png)
 
-## Loading SfListView as a content template of SfPopupLayout
+## Show ListView as a popup
 
 SfPopupLayout allows you to load SfListView as a content of the popup. You have to set `WidthRequest` and `HeightRequest` property for loading SfListView in SfPopupLayout. 
 

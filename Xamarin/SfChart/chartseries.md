@@ -403,3 +403,30 @@ chart.Series.Add(lineSeries);
 {% endtabs %}
 
 ![](chartseries_images/verticalchart.png)
+
+
+## Series Visibility
+
+The [`IsVisible`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~IsVisible.html) property of [`ChartSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries.html) is used to control the visibility of the series. The default value of [`IsVisible`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~IsVisible.html) property is true. You can collapse the series visibility by setting this property to false.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.Series>
+
+     <chart:ColumnSeries IsVisible="False"/>
+     
+ </chart:SfChart.Series>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+series. IsVisible = false
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](chartseries_images/IsVisible.png)

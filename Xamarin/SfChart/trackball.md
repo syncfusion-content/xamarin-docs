@@ -445,7 +445,7 @@ chart.ChartBehaviors.Add(new ChartTrackballBehavior());
 
 ![](trackball_images/trackball_img4.png)
 
-**customization of Axis Label**
+**Customization of Axis Label**
 
 You can change the default appearance of the axis label in trackball using [`TrackballLabelTemplate`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~TrackballLabelTemplate.html) property in [`ChartAxis`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis.html).
 

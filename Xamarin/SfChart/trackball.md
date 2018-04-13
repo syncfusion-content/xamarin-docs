@@ -445,3 +445,57 @@ chart.ChartBehaviors.Add(new ChartTrackballBehavior());
 
 ![](trackball_images/trackball_img4.png)
 
+**customization of Axis Label**
+
+You can change the default appearance of the axis label in trackball using [`TrackballLabelTemplate`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~TrackballLabelTemplate.html) property in [`ChartAxis`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis.html).
+
+{% tabs %} 
+
+{% highlight xaml %}
+<ContentPage.Resources>
+    <ResourceDictionary>
+      <DataTemplate x:Key="axisLabelTemplate">
+        <Label WidthRequest="50" HeightRequest="20" HorizontalTextAlignment="Center" BackgroundColor="Blue" Text="{Binding }" TextColor="White" FontSize ="15" />
+      </DataTemplate>
+    </ResourceDictionary>
+</ContentPage.Resources>
+
+ <chart:SfChart.PrimaryAxis>
+       <chart:CategoryAxis  ShowTrackballInfo="True" TrackballLabelTemplate="{StaticResource axisLabelTemplate}">
+        <chart:CategoryAxis.TrackballLabelStyle>
+          <chart:ChartTrackballAxisLabelStyle   BackgroundColor="Transparent"/>
+        </chart:CategoryAxis.TrackballLabelStyle>  
+      </chart:CategoryAxis>  
+</chart:SfChart.PrimaryAxis>
+
+<chart:SfChart.ChartBehaviors>
+     <chart:ChartTrackballBehavior />
+</chart:SfChart.ChartBehaviors>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+Chart.PrimaryAxis = new CategoryAxis(); 
+Chart.PrimaryAxis.ShowTrackballInfo = true;
+Chart.PrimaryAxis.TrackballLabelStyle.BackgroundColor = Color.Transparent;
+DataTemplate axisLabelTemplate = new DataTemplate(() =>
+{              
+     Label label = new Label();
+     label.SetBinding(Label.TextProperty, ".");
+     label.FontSize = 15;
+     label.HorizontalTextAlignment = TextAlignment.Center;
+     label.TextColor = Color.White;
+     label.BackgroundColor = Color.Blue;                       
+     label.WidthRequest = 50;
+     label.HeightRequest = 20;           
+     return label;
+});
+Chart.PrimaryAxis.TrackballLabelTemplate = axisLabelTemplate;
+Chart.ChartBehaviors.Add(new ChartTrackballBehavior());
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](trackball_images/axislabelTemplate.png)

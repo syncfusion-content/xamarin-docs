@@ -882,6 +882,39 @@ chart.PrimaryAxis.EdgeLabelsDrawingMode = EdgeLabelsDrawingMode.Shift;
 
 ![](axis_images/axis_img21.png)
 
+### Edge labels visibility
+
+The visibility of the edge labels in an axis can be controlled using [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RangeAxisBase~EdgeLabelsVisibilityMode.html) property.
+The followind  options are available in EdgeLabelsVisibilityMode,
+
+* Default - used to display the edge label based on auto interval calculations
+* Visible - used to display the edge labels (first and last label) irrespective of the auto interval calculation until zooming (i.e., in normal state).
+* AlwaysVisible - used to view the edge labels even while performing zooming.
+
+The following code example and image demonstrates the AlwaysVisible option while zooming.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+      <chart:NumericalAxis  EdgeLabelsVisibilityMode="AlwaysVisible">     
+      </chart:NumericalAxis>
+ </chart:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+Chart.PrimaryAxis = new NumericalAxis();
+chart.SecondaryAxis.EdgeLabelsVisibilityMode = EdgeLabelsVisibilityMode.AlwaysVisible;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](axis_images/EdgeLabels-AlwaysVisible.png)
+
 ### Label extent
 
 The [`LabelExtent`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~LabelExtent.html) property allows to set the gap between axis labels and title. This is typically used to maintain the fixed gap between axis labels and title when the digits of the axis value changed in live update.
@@ -912,6 +945,7 @@ Chart.PrimaryAxis.Title.Text = "Month";
 {% endtabs %}
 
 ![](axis_images/labelExtent.png)
+
 
 ### Grid lines customization
 

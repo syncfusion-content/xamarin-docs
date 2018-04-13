@@ -889,7 +889,7 @@ The following  options are available in [`EdgeLabelsVisibilityMode`](https://hel
 
 * Default- used to display the edge label based on auto interval calculations
 * Visible - used to display the edge labels (first and last label) irrespective of the auto interval calculation until zooming (i.e., in normal state).
-* AlwaysVisible - used to view the edge labels even while performing zooming.
+* AlwaysVisible - used to always display the edge labels even while zooming the chart.
 
 The following code example and image demonstrates the AlwaysVisible option while zooming.
 

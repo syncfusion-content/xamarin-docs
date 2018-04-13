@@ -885,7 +885,7 @@ chart.PrimaryAxis.EdgeLabelsDrawingMode = EdgeLabelsDrawingMode.Shift;
 ### Edge labels visibility
 
 The visibility of the edge labels in an axis can be controlled using [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RangeAxisBase~EdgeLabelsVisibilityMode.html) property.
-The followind  options are available in EdgeLabelsVisibilityMode,
+The followind  options are available in [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RangeAxisBase~EdgeLabelsVisibilityMode.html),
 
 * Default - used to display the edge label based on auto interval calculations
 * Visible - used to display the edge labels (first and last label) irrespective of the auto interval calculation until zooming (i.e., in normal state).

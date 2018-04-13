@@ -23,8 +23,6 @@ The drag and drop scenarios are as follows:
  * Items can be reordered in same group or in other groups but, no groups can be added to other groups.
  * Groups, header, and footer cannot be reordered.
 
-To enable drag and drop using 'OnHold', follow the code example:
-
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfListView x:Name="listView" 
@@ -37,8 +35,6 @@ To enable drag and drop using 'OnHold', follow the code example:
 listView.DragStartMode = DragStartMode.OnHold; 
 {% endhighlight %}
 {% endtabs %}
-
-To enable drag and drop using both 'OnHold' and 'OnDragIndicator', follow the code example:
 
 {% tabs %}
 {% highlight xaml %}
@@ -59,13 +55,13 @@ N> Reordering changes are made only in view, and not in the underlying data. Thu
 
 To drag and drop the items by [DragIndicatorView](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.DragIndicatorView.html), set the [SfListView.DragStartMode](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~DragStartMode.html) property to `OnDragIndicator`. To display the dragging item, define any custom user interface(UI) in `DragIndicatorView`.
 
-N> You must set the SfListView instance as reference to the [ListView](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.DragIndicatorView~ListView.html) property in `DragIndicatorView`.
+N> You must set the SfListView instance as reference to the `ListView` property in `DragIndicatorView`.
 
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfListView x:Name="listView" 
                    ItemsSource="{Binding ToDoList}"
-                   DragStartMode="OnDragIndicator"
+                   DragStartMode="OnHold,OnDragIndicator"
                    BackgroundColor="#FFE8E8EC"
                    ItemSize="60">
   <syncfusion:SfListView.DragItemTemplate>
@@ -128,13 +124,13 @@ The screenshot shows the output of the reordering items by drag and drop. You ca
 
 The [ItemDragging](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemDragging_EV.html) event is raised while dragging and dropping the item in the [SfListView](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView.html). [ItemDraggingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs.html) has the following members which provides the information for the `ItemDragging` event:
 
- * [Action](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs~Action.html): Returns the drag `Action` such as start, dragging, and drop.
- * [Bounds](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs~Bounds.html): Return bounds of drag item when dragging and dropping.
- * [Handled](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs~Handled.html): If this member is set to true, dragging can be handled while dragging the item. It is applicable only if `Action` is `Dragging`.
- * [ItemData](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs~ItemData.html): Returns the underlying data of dragging item. 
- * [NewIndex](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs~NewIndex.html): Returns the item index of the underlying collection where dragging item is going to be dropped.
- * [OldIndex](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs~OldIndex.html): Returns the item index of the underlying collection where dragging item started. The OldIndex and NewIndex will be same if `Action` is `Start`.
- * [Position](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs~Position.html): Returns the touch position of drag item from screen coordinates.
+ * Action: Returns the drag [Action](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs~Action.html) such as start, dragging, and drop.
+ * Bounds: Return bounds of drag item when dragging and dropping.
+ * Handled: If this member is set to true, dragging can be handled while dragging the item. It is applicable only if `Action` is `Dragging`.
+ * ItemData: Returns the underlying data of dragging item. 
+ * NewIndex: Returns the item index of the underlying collection where dragging item is going to be dropped.
+ * OldIndex: Returns the item index of the underlying collection where dragging item started. The OldIndex and NewIndex will be same if `Action` is `Start`.
+ * Position: Returns the touch position of drag item from screen coordinates.
 
 ## Drag item customization
 
@@ -146,7 +142,7 @@ N> If `BackgroundColor` is set to `DragItemTemplate` or [DragIndicatorView](http
 {% highlight xaml %}
 <syncfusion:SfListView x:Name="listView" 
                    ItemsSource="{Binding ToDoList}"
-                   DragStartMode="OnHold"
+                   DragStartMode="OnHold,OnDragIndicator"
                    BackgroundColor="#FFE8E8EC"
                    ItemSize="60">
   <syncfusion:SfListView.DragItemTemplate>

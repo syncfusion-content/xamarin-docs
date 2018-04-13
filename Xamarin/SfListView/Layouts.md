@@ -11,7 +11,7 @@ documentation: ug
 
 The SfListView supports different layouts such as linear layout and grid layout. The [SfListView.LayoutManager](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LayoutManager.html) property is used to define the layout.
 
-## Linear Layout
+## Linear layout
 
 Linear layout arrange items in a single column. Initialize the [LinearLayout](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LinearLayout.html), and assign it to the [SfListView.LayoutManager](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LayoutManager.html) property to load the SfListView in linear layout. It is the default layout.
 
@@ -32,7 +32,7 @@ listView.LayoutManager = new LinearLayout();
 
 ![](SfListView_images/SfListView-Xamarin_img1.png)
 
-## Grid Layout
+## Grid layout
 
 Grid layout arrange items in a predefined number of columns. Initialize the [GridLayout](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GridLayout.html), and assign it to the [SfListView.LayoutManager](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LayoutManager.html) property to load the SfListView in grid layout. 
 
@@ -59,7 +59,7 @@ You can download the entire source code of this demo from [here](http://www.sync
 
 ![](SfListView_images/SfListView-GridLayout.png)
 
-### Customize SpanCount Based on Platform
+### Customize SpanCount based on platform
 
 The [SpanCount](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GridLayout~SpanCount.html) property of the [GridLayout](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GridLayout.html) can be customized based on the specified platform to avoid squeezed problem of listview item in phone and tablet devices or windows desktop.
 
@@ -97,9 +97,9 @@ listView.LayoutManager = gridLayout;
 
 ![](SfListView_images/SfListView-GridLayoutTablet.png)
 
-## How To
+## How to
 
-### Change SpanCount Based on Screen Size
+### Change SpanCount based on screen size
 
 In the SfListView, the [GridLayout](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GridLayout.html) allows changing the span count based on the view size of application with orientation in either portrait or landscape mode.
 

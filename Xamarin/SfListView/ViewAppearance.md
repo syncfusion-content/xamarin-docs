@@ -259,9 +259,8 @@ public partial class MainPage : ContentPage
                 image.SetBinding(Image.SourceProperty, new Binding("Image"));
                 grid1.Children.Add(image);
             }
-
-
-                return InnerListView;
+            
+            return InnerListView;
         });
 
         grid.Children.Add(label1);

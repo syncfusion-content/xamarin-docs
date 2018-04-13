@@ -49,7 +49,8 @@ schedule.ViewHeaderStyle = viewHeaderStyle;
 
 ![](daymodule_images/viewheaderappearance_workweek.png)
 
->**Note**:  FontAttributes and FontFamily are native to the platform. Custom font and the font which are not available in the specified platform will not be applied.
+>**NOTE**
+FontAttributes and FontFamily are native to the platform. Custom font and the font which are not available in the specified platform will not be applied.
 
 You can customize the height of the ViewHeader in `WeekView` by setting [ViewHeaderHeight](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ViewHeaderHeight.html) property of `SfSchedule`.
 
@@ -130,8 +131,8 @@ You can handle single tap action of ViewHeader by using [ViewHeaderTapped](http:
 {% tabs %}
 {% highlight xaml %}
 <schedule:SfSchedule x:Name="schedule"
-					 ScheduleView="WorkWeekView"
-					 ViewHeaderTapped="Handle_ViewHeaderTapped" >
+                     ScheduleView="WorkWeekView"
+                     ViewHeaderTapped="Handle_ViewHeaderTapped" >
 </schedule:SfSchedule>
 {% endhighlight %}
 {% highlight c# %}
@@ -166,8 +167,7 @@ schedule.TimeInterval = 120;
 
 ![](daymodule_images/timeinterval_workweek.png)
 
->**Note**:
-
+>**NOTE**
 If you modify the `TimeInterval` value (in minutes), you need to change the time labels format by setting the `TimeFormat` value as "hh:mm". By default, TimeFormat value is `"hh a"`. You can refer [here](https://help.syncfusion.com/xamarin/sfschedule/workweekview#time-label-formatting) for changing TimeFormat value.
 
 ## Change Time Interval Height
@@ -213,8 +213,8 @@ schedule.WorkWeekViewSettings = workWeekViewSettings;
 
 ![](daymodule_images/changeworkinghours_workweek.png)
 
->**Note**:
-	`WorkStartHour` and `WorkEndHour` should be in integer value to represent hours.
+>**NOTE**
+`WorkStartHour` and `WorkEndHour` should be in integer value to represent hours.
 
 ## Changing StartHour and EndHour
 
@@ -244,7 +244,7 @@ schedule.WorkWeekViewSettings = workWeekViewSettings;
 
 ![](daymodule_images/changestartandendhour_workweek.png)
 
->**Note**:
+>**NOTE**
 * `StartHour` and `EndHour` should be in integer value to represent hours.
 * `StartHour` must be greater than or equal to 0 and `EndHour` must be lesser than or equal to 24, otherwise `InvalidDataException` will be thrown.
 * `EndHour` value must be greater than `StartHour`, otherwise `InvalidDataException` will be thrown.
@@ -324,8 +324,8 @@ schedule.WorkWeekViewSettings = workWeekViewSettings;
 
 ![](daymodule_images/nonworkinghours_workweek.png)
 
->**Note**:
-` TimeSlotBorderStrokeWidth`and ` VerticalLineStrokeWidth` properties are common to both Working hours and Non-Working hour time slot customization.
+>**NOTE**
+`TimeSlotBorderStrokeWidth`and ` VerticalLineStrokeWidth` properties are common to both Working hours and Non-Working hour time slot customization.
 
 ## Non-Accessible timeslots
 
@@ -334,19 +334,19 @@ You can restrict or allocate certain timeslot as Non-accessible blocks by using 
 {% tabs %}
 {% highlight XAML %}
 <schedule:SfSchedule x:Name="schedule" ScheduleView="WorkWeekView">
-	<!--setting non-accessing blocks-->
-	<schedule:SfSchedule.WorkWeekViewSettings>
-		<schedule:WorkWeekViewSettings>
-			<schedule:WorkWeekViewSettings.NonAccessibleBlocks>
-				<schedule:NonAccessibleBlock 
-					StartTime="13" 
-			EndTime="14" 
-		 Text="LUNCH" 
-		 Color="Black" />
-			</schedule:WorkWeekViewSettings.NonAccessibleBlocks>
-		</schedule:WorkWeekViewSettings>
-	</schedule:SfSchedule.WorkWeekViewSettings>
-</schedule:SfSchedule> 
+    <!--setting non-accessing blocks-->
+    <schedule:SfSchedule.WorkWeekViewSettings>
+        <schedule:WorkWeekViewSettings>
+            <schedule:WorkWeekViewSettings.NonAccessibleBlocks>
+                <schedule:NonAccessibleBlock
+                    StartTime="13"
+                    EndTime="14"
+                    Text="LUNCH"
+                    Color="Black" />
+            </schedule:WorkWeekViewSettings.NonAccessibleBlocks>
+        </schedule:WorkWeekViewSettings>
+    </schedule:SfSchedule.WorkWeekViewSettings>
+</schedule:SfSchedule>
 {% endhighlight %}
 {% highlight C# %}
 schedule.ScheduleView = ScheduleView.WorkWeekView;
@@ -367,7 +367,7 @@ schedule.WorkWeekViewSettings = workWeekViewSettings;
 
 ![](daymodule_images/nonaccessibleblock_workweek.png)
 
->**Note**:
+>**NOTE**
 Selection and related events will not be working in this blocks.
 
 ## Change first day of week
@@ -506,7 +506,7 @@ schedule.SelectedDate = null;
 
 You can download the entire source code of this demo for Xamarin.Forms from here [Date_Selection](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Date_Selection1072247797.zip)
 
->**Note**:
+>**NOTE**
 * `SfSchedule` does not support multiple selection.
 * `SfSchedule` supports two-way binding of `SelectedDate` property.
 

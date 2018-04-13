@@ -51,7 +51,8 @@ schedule.HeaderStyle = headerStyle;
 
 ![](Header_images/HeaderStyle.png) 
 
->**Note**:  FontAttributes and FontFamily are native to the  platform. Custom font and the font which are not available in the specified platform will not be applied.
+>**NOTE**
+FontAttributes and FontFamily are native to the  platform. Custom font and the font which are not available in the specified platform will not be applied.
 
 ### Customize Font Appearance
 

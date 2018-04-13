@@ -48,7 +48,8 @@ schedule.ViewHeaderStyle = viewHeaderStyle;
 
 ![](daymodule_images/viewheaderappearance_day.png)
 
->**Note**:  FontAttributes and FontFamily are native to the platform. Custom font and the font which are not available in the specified platform will not be applied.
+>**NOTE**
+FontAttributes and FontFamily are native to the platform. Custom font and the font which are not available in the specified platform will not be applied.
 
 You can customize the height of the ViewHeader in `DayView` by setting [ViewHeaderHeight](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ViewHeaderHeight.html) property of `SfSchedule`.
 
@@ -129,8 +130,8 @@ You can handle single tap action of ViewHeader by using [ViewHeaderTapped](http:
 {% tabs %}
 {% highlight xaml %}
 <schedule:SfSchedule x:Name="schedule"
-					 ScheduleView="DayView"
-					 ViewHeaderTapped="Handle_ViewHeaderTapped" >
+                     ScheduleView="DayView"
+                     ViewHeaderTapped="Handle_ViewHeaderTapped" >
 </schedule:SfSchedule>
 {% endhighlight %}
 {% highlight c# %}
@@ -165,8 +166,7 @@ schedule.TimeInterval = 120;
 
 ![](daymodule_images/timeinterval_day.png)
 
->**Note**:
-
+>**NOTE**
 If you modify the `TimeInterval` value (in minutes), you need to change the time labels format by setting the `TimeFormat` value as "hh:mm". By default, TimeFormat value is `"hh a"`. You can refer [here](https://help.syncfusion.com/xamarin/sfschedule/dayview#time-label-formatting) for changing TimeFormat value.
 
 ## Change Time Interval Height
@@ -212,8 +212,8 @@ schedule.DayViewSettings = dayViewSettings;
 
 ![](daymodule_images/changeworkinghours_day.png)
 
->**Note**:
-	`WorkStartHour` and `WorkEndHour` should be in integer value to represent hours.
+>**NOTE**
+`WorkStartHour` and `WorkEndHour` should be in integer value to represent hours.
 
 ## Changing StartHour and EndHour
 
@@ -243,7 +243,7 @@ schedule.DayViewSettings = dayViewSettings;
 
 ![](daymodule_images/changestartendhour_day.png)
 
->**Note**:
+>**NOTE**
 * `StartHour` and `EndHour` should be in integer value to represent hours.
 * `StartHour` must be greater than or equal to 0 and `EndHour` must be lesser than or equal to 24, otherwise `InvalidDataException` will be thrown.
 * `EndHour` value must be greater than `StartHour`, otherwise `InvalidDataException` will be thrown.
@@ -312,7 +312,7 @@ schedule.DayViewSettings = dayViewSettings;
 {% endtabs %}
 ![](daymodule_images/nonworkinghours_day.png)
 
->**Note**:
+>**NOTE**
 `TimeSlotBorderStrokeWidth` property common for both Working hours and Non-Working hour time slot customization.
 
 ## Non-Accessible timeslots
@@ -355,7 +355,7 @@ schedule.DayViewSettings = dayViewSettings;
 
 ![](daymodule_images/non-accessibleblock_day.png)
 
->**Note**:
+>**NOTE**
 Selection and related events will not be working in this blocks.
 
 ## Change first day of week
@@ -482,7 +482,7 @@ schedule.SelectedDate = null;
 
 You can download the entire source code of this demo for Xamarin.Forms from here [Date_Selection](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Date_Selection1072247797.zip)
 
->**Note**:
+>**NOTE**
 * `SfSchedule` does not support multiple selection.
 * `SfSchedule` supports two-way binding of `SelectedDate` property.
 

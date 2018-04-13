@@ -28,7 +28,8 @@ Once the assemblies has been downloaded and explored, you can find all the requi
     
 Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\15.1.0.41\Xamarin\lib  
     
->**Notes**: Assemblies can be found in unzipped package location in Mac   
+>**NOTE**
+Assemblies can be found in unzipped package location in Mac
     
 The following list of assemblies need to be added as reference from the lib folder to use SfSchedule in your application.   
     
@@ -56,7 +57,7 @@ The following list of assemblies need to be added as reference from the lib fold
 </table>   
  
 
->**Note:**
+>**NOTE**
 For compiling the UWP project in Xamarin.Forms, referring the Schedule assemblies (XForms, XForms.UWP) in the XForms (UWP) project is sufficient and its files (properties, themes, etc.) needs to be maintained in the UWP assembly folder to render the control.
 
 ### NuGet Configuration  
@@ -244,7 +245,8 @@ schedule.ScheduleView = ScheduleView.WorkWeekView;
     
 ![](GettingStarted_images/WorkWeek.png)   
 
->**Notes**: Appointments in non-working days will not be displayed.  
+>**NOTE**
+Appointments in non-working days will not be displayed.
 
 ### Month View   
     
@@ -299,7 +301,8 @@ here [ScheduleAppointment](http://www.syncfusion.com/downloads/support/directtra
   
 You can also map custom appointments data to our schedule.   
   
->**Notes**: CustomAppointment class should contain two DateTime fields and a string field as mandatory.  
+>**NOTE**
+CustomAppointment class should contain two DateTime fields and a string field as mandatory.
  
 Here steps to render `MeetingRoomScheduler` using SfSchedule control with respective custom data properties created in a class Meeting.  
   
@@ -331,7 +334,8 @@ public class Meeting
 {% endhighlight %}   
 {% endtabs %}   
     
->**Notes**: You can inherit this class from `INotifyPropertyChanged` for dynamic changes in custom data.  
+>**NOTE**
+You can inherit this class from `INotifyPropertyChanged` for dynamic changes in custom data.
 
 #### Creating view model 
 

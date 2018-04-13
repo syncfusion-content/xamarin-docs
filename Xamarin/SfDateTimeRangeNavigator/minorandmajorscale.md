@@ -45,6 +45,8 @@ The [`MajorScaleStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchar
 * [`LabelMargin`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.ScaleStyle~LabelMargin.html) – used to change the margin size of the labels.
 * [`SelectedLabelTextColor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.ScaleStyle~SelectedLabelTextColor.html) – used to change the text color of the selected labels.
 * [`SelectedLabelMargin`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.ScaleStyle~SelectedLabelMargin.html) – used to change the margin of the selected labels.
+* [`TickLineWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.ScaleStyle~TickLineWidth.html) - used to change the thickness of the tick line.
+* [`TickLineColor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.ScaleStyle~TickLineColor.html) - used to change the color of the tick line.
 
 {% tabs %}
 {% highlight xaml %}

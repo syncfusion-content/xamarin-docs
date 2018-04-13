@@ -277,6 +277,7 @@ It helps you to add multiple scales to the same circular gauge. You can customiz
 
 {% highlight c# %}
 
+    SfCircularGauge circularGauge = new SfCircularGauge();
     ObservableCollection<Scale> scales = new ObservableCollection<Scale>();
     Scale scale = new Scale();
     scale.StartValue = 0;
@@ -330,7 +331,7 @@ It helps you to add multiple scales to the same circular gauge. You can customiz
     circularScale.MinorTickSettings = minorTick;
 	
     scales.Add(circularScale);
-    circular.Scales = scales;
+    circularGauge.Scales = scales;
 
 	
 {% endhighlight %}

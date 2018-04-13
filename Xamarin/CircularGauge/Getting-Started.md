@@ -17,7 +17,7 @@ This section explains the steps required to configure the [`SfCircularGauge`](ht
 
 ## Adding circular gauge reference
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add circular gauge to your project, open the NuGet package manager in Visual Studio, and search for [syncfusion.xamarin.sfgauge](https://www.nuget.org/packages/Syncfusion.Xamarin.SfGauge), and then install it. 
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfCircularGauge to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfGauge](https://www.nuget.org/packages/Syncfusion.Xamarin.SfGauge), and then install it. 
 
 ![](getting-started_images/cg_nuget.png)
 
@@ -60,8 +60,8 @@ You can initialize the [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_f
 
 {% highlight c# %}
 
-    SfCircularGauge circular = new SfCircularGauge ();
-    this.Content = circular;
+    SfCircularGauge circularGauge = new SfCircularGauge ();
+    this.Content = circularGauge;
 
 {% endhighlight %}
 
@@ -131,7 +131,7 @@ You can configure the [`Scale`](https://help.syncfusion.com/cr/cref_files/xamari
     ObservableCollection<Scale> scales = new ObservableCollection<Scale>();
     Scale scale = new Scale();
     scales.Add(scale);
-    circular.Scales = scales;  
+    circularGauge.Scales = scales;  
 	
 {% endhighlight %}
 
@@ -165,7 +165,8 @@ You can add ranges to [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_fi
     range.StartValue = 0;
     range.EndValue = 40;
     scale.Ranges.Add(range);
-    circularGauge.Scales = scale; 
+    scales.Add(scale);
+    circularGauge.Scales = scales;  
 	
 {% endhighlight %}
 
@@ -198,7 +199,8 @@ Create a [`Needle Pointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sf
     NeedlePointer needlePointer = new NeedlePointer();
     needlePointer.Value = 60;
     scale.Pointers.Add(needlePointer);
-    circularGauge.Scales = scale;
+    scales.Add(scale);
+    circularGauge.Scales = scales;  
 	
 {% endhighlight %}
 
@@ -232,7 +234,7 @@ Create a [`Needle Pointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sf
     rangePointer.Value = 60;
     scale.Pointers.Add(rangePointer);
     scales.Add(scale);
-    circularGauge.Scales = scale;
+    circularGauge.Scales = scales;
 	
 {% endhighlight %}
        
@@ -266,7 +268,7 @@ Create a [`Needle Pointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sf
     markerPointer.Value = 70;
     scale.Pointers.Add(markerPointer);
     scales.Add(scale);
-	circular.Scales = scales;
+	circularGauge.Scales = scales;
 	
 {% endhighlight %}
        
@@ -329,8 +331,8 @@ namespace CircularGauge
             InitializeComponent();
 
             //Initializing circular gauge 
-            SfCircularGauge circular = new SfCircularGauge();
-            circular.Margin = 10;
+            SfCircularGauge circularGauge = new SfCircularGauge();
+            circularGauge.Margin = 10;
             
             //Adding header 
             Header header = new Header();
@@ -362,12 +364,12 @@ namespace CircularGauge
             MarkerPointer markerPointer = new MarkerPointer();
             markerPointer.Value = 70;
             scale.Pointers.Add(markerPointer);
-            circular.Scales = scales;
+           
 
             scales.Add(scale);
-            circular.Scales = scales;
+            circularGauge.Scales = scales;
 
-            this.Content = circular;
+            this.Content = circularGauge;
         }
     }
 }

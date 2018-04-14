@@ -17,12 +17,15 @@ SfDataGrid enables you to load a desired content using the [SfDataGrid.LeftSwipe
 Refer the following code example that shows how to load a template when swiping towards right.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 //Defining left swipe template
+
 <sfgrid:SfDataGrid.LeftSwipeTemplate>
+
   <DataTemplate>
-      <Grid  BackgroundColor="#009EDA">
+      <Grid  BackgroundColor="#009EDA" Padding="9">
         <Grid.ColumnDefinitions>
           <ColumnDefinition/>
           <ColumnDefinition/>
@@ -45,13 +48,21 @@ Refer the following code example that shows how to load a template when swiping 
   </DataTemplate>
 </sfgrid:SfDataGrid.LeftSwipeTemplate>
 {% endhighlight %}
+
 {% highlight c# %}
 
+
 //Defining left swipe template
+
 dataGrid.LeftSwipeTemplate = new DataTemplate(() =>
 {
     Grid myGrid = new Grid();
+
     myGrid.HorizontalOptions = LayoutOptions.FillAndExpand;
+
+    myGrid.BackgroundColor = Color.FromHex("#009EDA");
+
+    myGrid.Padding = 9;
 
     myGrid.ColumnDefinitions = new ColumnDefinitionCollection
     {
@@ -59,26 +70,25 @@ dataGrid.LeftSwipeTemplate = new DataTemplate(() =>
       new ColumnDefinition {}           
     };
 
-    myGrid.Children.Add(new Image()
-    {
-      BackgroundColor="Transparent",
-      HorizontalOptions=LayoutOptions. CenterAndExpand,
-      Source="EditIcon.png",
-      BindingContextChanged+= MainPage_BindingContextChanged
-    },0,0);
+    var image = new Image();
+    image.BackgroundColor = Color.Transparent;
+    image.BindingContextChanged += MainPage_BindingContextChanged;
+    image.HorizontalOptions = LayoutOptions.FillAndExpand;
+    image.Source = "EditIcon.png";
 
-    myGrid.Children.Add(new Label()
-    {
-      Text = "EDIT",
-      HorizontalTextAlignment = TextAlignment.Start,
-      VerticalTextAlignment = TextAlignment.Center,
-      LineBreakMode = LineBreakMode.NoWrap,
-      BackgroundColor = Color.Transparent,
-      TextColor = Color.White,
-    }, 0, 1);
+    var label = new Label();
+    label.Text = "EDIT";
+    label.HorizontalTextAlignment = TextAlignment.Start;
+    label.VerticalTextAlignment = TextAlignment.Center;
+    label.LineBreakMode = LineBreakMode.NoWrap;
+    label.BackgroundColor = Color.Transparent;
+    label.TextColor = Color.White;
 
+    myGrid.Children.Add(image, 0, 0);
+    myGrid.Children.Add(label, 1, 0);
     return myGrid;
 });
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -113,13 +123,17 @@ Refer the following code example that shows how to load multiple views in templa
 {% highlight xaml %}
 
 //Defining left swipe template
+
 <sfgrid:SfDataGrid.LeftSwipeTemplate>
+
    <DataTemplate>
+
        <Grid BackgroundColor="#009EDA">
+
            <Grid.ColumnDefinitions>
                <ColumnDefinition Width="50"/>                              
                <ColumnDefinition Width="100"/>                                                     
-               <ColumnDefinition Width="150"/>                                                     
+               <ColumnDefinition Width="130"/>                                                     
            </Grid.ColumnDefinitions>
 
            <Image Grid.Column="0"
@@ -139,14 +153,14 @@ Refer the following code example that shows how to load multiple views in templa
            <Grid Grid.Column="2" BackgroundColor="#DC595F"> 
                <Grid.ColumnDefinitions>
                    <ColumnDefinition Width="50" />                              
-                   <ColumnDefinition Width="100" />                                                     
+                   <ColumnDefinition Width="80" />                                                     
                </Grid.ColumnDefinitions>
 
                <Image Grid.Column="0"
                       BackgroundColor="Transparent"
                       BindingContextChanged="rightImage_BindingContextChanged"
                       HorizontalOptions="CenterAndExpand"
-                      Source="TrashImage.png" />
+                      Source="TrashImage.png"  Margin="9"/>
 
                <Label Grid.Column="1"
                       BackgroundColor="Transparent"
@@ -167,19 +181,24 @@ Refer the following code example that shows how to load multiple views in templa
 {% highlight c# %}
 
 public partial class Swiping : SamplePage
+
 {
+
     private Image leftImage;
+
     private Image rightImage;
+
     private int swipedRowIndex;
-    private SubView subView;
+
+    private FormsView formView;
 
     public Swiping()
+
     {
         InitializeComponent();
-        this.dataGrid.ItemsSource = viewModel.OrdersInfo;
         this.PropertyChanged += Swiping_PropertyChanged;
-        subView = new SubView(dataGrid);
-        MainView.Children.Add(subView);
+        formView = new FormsView(dataGrid);
+        customLayout.Children.Add(formView);
     }
 
     private void Swiping_PropertyChanged(object sender, PropertyChangedEventArgs e)
@@ -198,11 +217,6 @@ public partial class Swiping : SamplePage
         dataGrid.IsEnabled = true;
     }
 
-    private void dataGrid_GridViewCreated(object sender, GridViewCreatedEventArgs e)
-    {
-        dataGrid.GridStyle = new SwipeStyle();
-    }
-
     //Gesture listener to perform edit
     private void leftImage_BindingContextChanged(object sender, EventArgs e)
     {
@@ -210,19 +224,18 @@ public partial class Swiping : SamplePage
         {
             leftImage = sender as Image;
             (leftImage.Parent as View).GestureRecognizers.Add(new TapGestureRecognizer() { Command = new Command (Edit)});
-            leftImage.Source = ImageSource.FromResource("SampleBrowser.Icons.DataGrid.Edit.png");
+            leftImage.Source = ImageSource.FromResource("SfDataGridSample.EditIcon.png");
         }
     }
 
     //Code to edit row
     private void Edit()
     {
-        this.dataGrid.Opacity = 0.25;
-        this.dataGrid.IsEnabled = false;
-        if (Device.OS != TargetPlatform.Windows)
-            formView.LayoutTo(new Rectangle(10, (this.Height / 2) - (350 / 2), this.dataGrid.Width - 20, 350), 250, null);
+        if (Device.RuntimePlatform != Device.UWP || Device.Idiom == TargetIdiom.Phone)
+           formView.LayoutTo(new Rectangle(10, (this.Height / 2) - (350 / 2), this.dataGrid.Width - 20, 370), 250, null);
+
         else
-            formView.LayoutTo(new Rectangle(10, (this.dataGrid.Height / 2) - (350 / 2), this.dataGrid.Width - 20, 350), 250, null);
+           formView.LayoutTo(new Rectangle(10, (this.dataGrid.Height / 2) - (350 / 2), this.dataGrid.Width - 20, 350), 450, null);
         formView.IsVisible = true;
     }
 
@@ -230,7 +243,6 @@ public partial class Swiping : SamplePage
     private void Delete()
     {
         this.viewModel.OrdersInfo.RemoveAt(swipedRowIndex - 1);
-        (MainView.Children[1] as View).IsVisible = false;
     }
 
     //Gesture listener to perform delete
@@ -240,7 +252,7 @@ public partial class Swiping : SamplePage
         {
             rightImage = sender as Image;
             (rightImage.Parent as View).GestureRecognizers.Add(new TapGestureRecognizer() { Command = new Command(Delete) });
-            rightImage.Source = ImageSource.FromResource("SampleBrowser.Icons.DataGrid.Delete.png");
+            rightImage.Source = ImageSource.FromResource("SfDataGridSample.TrashImage.png");
         }
     }
 
@@ -250,7 +262,7 @@ public partial class Swiping : SamplePage
         swipedRowIndex = e.RowIndex;
     }
 
-}
+}       
 
 {% endhighlight %}
 
@@ -273,8 +285,11 @@ Refer the below code example which illustrates how to delete a data row when swi
 {% highlight xaml %}
 
 //Creating view for left swipe
+
 <sfgrid:SfDataGrid.LeftSwipeTemplate>
+
   <DataTemplate>
+
     <ContentView BindingContextChanged="leftTemplate_BindingContextChanged"
                  BackgroundColor="#1AAA87">
 
@@ -289,8 +304,11 @@ Refer the below code example which illustrates how to delete a data row when swi
 </sfgrid:SfDataGrid.LeftSwipeTemplate>
 
 //Creating view for right swipe
+
 <sfgrid:SfDataGrid.RightSwipeTemplate>
+
   <DataTemplate>
+
     <ContentView BindingContextChanged="rightTemplate_BindingContextChanged" 
                  BackgroundColor="#1AAA87">
 
@@ -310,43 +328,77 @@ Swiping.Xaml.cs
 {% highlight c# %}
 
 //Call to delete() when swipe is ended
+
 private void dataGrid_SwipeEnded(object sender, SwipeEndedEventArgs e)
+
 {
+
     swipedRowIndex = e.RowIndex;
+
     if (Math.Abs(e.SwipeOffset) >= dataGrid.Width)
+
     {
+
         if (e.SwipeOffset > 0)
+
             leftTemplateView.Content.IsVisible = true;
+
         else
+
             rightTemplateView.Content.IsVisible = true;
+
         doDeleting();
+
     }
+
 }
 
+
 //Code to delete row
+
 private async void doDeleting()
+
 {
-    isSuspend = true;
+
+
     await Task.Delay(2000);
+
     if (leftTemplateView.Content.IsVisible)
+
         leftTemplateView.Content.IsVisible = false;
+
     else if (rightTemplateView.Content.IsVisible)
+
         rightTemplateView.Content.IsVisible = false;
+
     if (!IsUndoClicked)
+
         viewModel.OrdersInfo.RemoveAt(swipedRowIndex - 1);
+
     else
+
     {
+
         var removedData = viewModel.OrdersInfo[swipedRowIndex - 1];
+
         var isSelected = dataGrid.SelectedItems.Contains(removedData);
+
         viewModel.OrdersInfo.Remove(removedData);
+
         viewModel.OrdersInfo.Insert(swipedRowIndex - 1, removedData);
+
         if (isSelected)
+
             dataGrid.SelectedItems.Add(removedData);
+
         IsUndoClicked = false;
+
     }
-    isSuspend = false;
+
 }
+
 {% endhighlight %}
+
 The following screenshot shows the final outcome upon execution of the above code.
 
 ![](SfDataGrid_images/Swiping_img4.jpeg)
@@ -359,9 +411,12 @@ Refer the below code example in which the `InputTransparent` property of the vie
 
 {% highlight xaml %}
 
-<sfgrid:GridTemplateColumn MappingName="" HeaderText="Customer Details" Width="200">
+<sfgrid:GridTemplateColumn MappingName="CustomerID" HeaderText="Customer Details" Width="200">
+
     <sfgrid:GridTemplateColumn.CellTemplate>
+
         <DataTemplate>
+
            <Grid InputTransparent="True" 
                   ColumnSpacing="0" 
                   RowSpacing="0" 
@@ -385,15 +440,15 @@ Refer the below code example in which the `InputTransparent` property of the vie
                            VerticalOptions="FillAndExpand"
                            Grid.Column="0"
                            Grid.ColumnSpan="3"
-                           Grid.Row="1"
-                           >
+                           Grid.Row="1">
+                           
                 <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" >
-                    <Label Text="Customer ID: " />
-                    <Label Text="{Binding CustomerID}"  TextColor="Black" />
+                    <Label Text="Customer ID: " HorizontalTextAlignment="Start"/>
+                    <Label Text="{Binding CustomerID}"  TextColor="Black" HorizontalTextAlignment="Start"/>
                 </StackLayout>
                 <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-                    <Label Text="Country:" />
-                    <Label Text="{Binding ShipCountry}" TextColor="Black" />
+                    <Label Text="Country:" HorizontalTextAlignment="Start"/>
+                    <Label Text="{Binding ShipCountry}" TextColor="Black" HorizontalTextAlignment="Start"/>
                 </StackLayout>
               </StackLayout>
            </Grid>
@@ -416,35 +471,39 @@ The below code example illustrates how to cancel the swiping programmatically by
 {% highlight xaml %}
 
 <syncfusion:SfDataGrid x:Name="datagrid"
-                        ColumnSizer="Star"
-                        AutoGenerateColumns="True"
-                        AllowSwiping="True"
-                        ItemsSource="{Binding OrdersInfo}"
-                        SwipeEnded="Datagrid_SwipeEnded">
+
+                       ColumnSizer="Star"
+                       AutoGenerateColumns="True"
+                       AllowSwiping="True"
+                       ItemsSource="{Binding OrdersInfo}"
+                       SwipeEnded="Datagrid_SwipeEnded">
 
   <syncfusion:SfDataGrid.LeftSwipeTemplate>
+
     <DataTemplate>
-      <Grid BackgroundColor="Blue">
+
+      <Grid BackgroundColor="Blue" Padding="9">
         <Label Text ="EDIT"
-                HorizontalTextAlignment="Start"
-                VerticalTextAlignment="Center"
-                LineBreakMode ="NoWrap"
-                BackgroundColor="Transparent"
-                TextColor ="White" />
+               HorizontalTextAlignment="Start"
+               VerticalTextAlignment="Center"
+               LineBreakMode ="NoWrap"
+               BackgroundColor="Transparent"
+               TextColor ="White" />
       </Grid>
     </DataTemplate>
   </syncfusion:SfDataGrid.LeftSwipeTemplate>
 
   <syncfusion:SfDataGrid.RightSwipeTemplate>
-    <DataTemplate>
-      <Grid BackgroundColor="Red">
 
+    <DataTemplate>
+
+      <Grid BackgroundColor="Red" Padding="9">
         <Label FontSize="15"
-                HorizontalTextAlignment ="Center"
-                Text ="Deleted"
-                TextColor ="White"
-                VerticalTextAlignment ="Center"
-                LineBreakMode ="NoWrap" />
+               HorizontalTextAlignment ="Center"
+               Text ="Deleted"
+               TextColor ="White"
+               VerticalTextAlignment ="Center"
+               LineBreakMode ="NoWrap" />
       </Grid>
       </DataTemplate>
   </syncfusion:SfDataGrid.RightSwipeTemplate>
@@ -455,8 +514,13 @@ The below code example illustrates how to cancel the swiping programmatically by
 {% highlight c# %}
 
 private void Datagrid_SwipeEnded(object sender, SwipeEndedEventArgs e)
+
 {
+
     datagrid.ResetSwipeOffset();
+
 }
 
 {% endhighlight %}
+
+You can download the source code of swiping sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Swiping-661295078)

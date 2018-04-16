@@ -537,6 +537,8 @@ SfChart chart = new SfChart()
 
 {% endtabs %}
 
+![](technicalindicators_images/momentum.png)
+
 ## Stochastic indicator
 
 This indicator is used to measure the range and momentum of price movements. It contains [`KPeriod`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.StochasticIndicator~KPeriod.html) and [`DPeriod`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.StochasticIndicator~DPeriod.html) property defining the ‘K’ percentage and ‘D’ percentage respectively. No signal line in this indicator.
@@ -586,6 +588,8 @@ SfChart chart = new SfChart()
 
 {% endtabs %}
 
+![](technicalindicators_images/stochastic.png)
+
 ## Exponential Moving AverageIndicator (EMA) indicator
 
 The [`ExponentialMovingAverageIndicator`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ExponentialMovingAverageIndicator.html) is similar to [`SimpleMovingAverageIndicator`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SimpleMovingAverageIndicator.html) and this can be defined using the following code examples.
@@ -628,6 +632,8 @@ SfChart chart = new SfChart()
 {% endhighlight %}
 
 {% endtabs %}
+
+![](technicalindicators_images/exponentialmovingavg.png)
 
 ## Triangular Moving Average (TMA) indicator
 
@@ -673,6 +679,8 @@ SfChart chart = new SfChart()
 {% endhighlight %}
 
 {% endtabs %}
+
+![](technicalindicators_images/triangularmovingavg.png)
 
 ## BollingerBand indicator
 

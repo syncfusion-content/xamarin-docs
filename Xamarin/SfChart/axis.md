@@ -778,6 +778,49 @@ chart.PrimaryAxis = primaryAxis;
 
 ![](axis_images/axis_img29.png)
 
+### Axis Line Offset
+
+The [`AxisLineOffset`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~AxisLineOffset.html) property is used to set the start position of an axis line.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+
+            <chart:CategoryAxis AxisLineOffset="20" PlotOffset="20">  
+			             
+                <chart:CategoryAxis.AxisLineStyle>
+
+                    <chart:ChartLineStyle StrokeWidth="5"/>
+
+                </chart:CategoryAxis.AxisLineStyle>
+
+            </chart:CategoryAxis>
+			
+ </chart:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+CategoryAxis primaryAxis = new CategoryAxis();
+
+primaryAxis.PlotOffset = 20;
+
+primaryAxis.AxisLineOffset = 20;
+
+primaryAxis.AxisLineStyle.StrokeWidth = 5;
+
+chart.PrimaryAxis = primaryAxis;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](axis_images/AxisLineOffset.png)
+
+
 ### Label customization
 
 The [`LabelStyle`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~LabelStyle.html) property of axis provides options to customize the font-family, color, size and font-weight of axis labels. The axis labels can be customized using following properties:

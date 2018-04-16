@@ -723,6 +723,8 @@ SfChart chart = new SfChart()
 
 {% endtabs %}
 
+![](technicalindicators_images/bollingerband.png)
+
 ## MACD indicator
 
 This is mostly using indicator having [`ShortPeriod`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.MACDIndicator~ShortPeriod.html) and [`LongPeriod`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.MACDIndicator~LongPeriod.html) for defining the motion of the indicator.
@@ -772,3 +774,5 @@ SfChart chart = new SfChart()
 {% endhighlight %}
 
 {% endtabs %}
+
+![](technicalindicators_images/macd.png)

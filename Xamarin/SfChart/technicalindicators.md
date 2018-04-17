@@ -432,7 +432,7 @@ The following screenshot illustrates an RSI technical indicator.
 
 ## Accumulation distribution indicator
 
-Accumulation Distribution Indicator is a volume-based indicator designed to measure the accumulative flow of money into and out of a security. It requires [`Volume`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.AccumulationDistributionIndicator~Volume.html) property additionally with the dataSource to calculate the signal line. 
+Accumulation Distribution Indicator is a volume-based indicator designed to measure the accumulative flow of money into and out of a security. It requires [`Volume`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.AccumulationDistributionIndicator~Volume.html) property additionally with the data source to calculate the signal line. 
 
 The following code example helps you to add [`AccumulationDistributionIndicator`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.AccumulationDistributionIndicator.html).
 

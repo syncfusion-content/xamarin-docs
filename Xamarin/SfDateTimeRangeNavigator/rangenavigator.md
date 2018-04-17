@@ -11,7 +11,7 @@ documentation: ug
 
 This section walks you through the steps required to add `SfDateTimeRangeNavigator` and populate it with data, and also explains how to respond to range selection performed in the control. 
 
-## Add RangeNavigator Reference
+## Adding RangeNavigator Reference
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add range navigator to your project, open the NuGet package manager in Visual Studio, and search for [syncfusion.xamarin.sfchart](https://www.nuget.org/packages/Syncfusion.Xamarin.SfChart/), and then install it. 
 
@@ -27,7 +27,7 @@ To use the range navigator inside an application, each platform application requ
 
 ### iOS
 
-To launch the range navigator in iOS, call the SfRangeNavigatorRenderer.Init() in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework initialization and before the LoadApplication is called as demonstrated in the following code sample:
+To launch the range navigator in iOS, call the SfRangeNavigatorRenderer.Init() method in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework initialization and before the LoadApplication method is called as demonstrated in the following code sample:
 
 {% highlight C# %} 
 
@@ -46,7 +46,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ### Universal Windows Platform (UWP)
 
-To launch the range navigator  in UWP, call the  SfRangeNavigatorRenderer.Init()  in the MainPage constructor before the LoadApplication is called as demonstrated in the following code sample.
+To launch the range navigator in UWP, call the SfRangeNavigatorRenderer.Init() metho in the constructor of MainPage before the LoadApplication method is called as demonstrated in the following code sample.
 
 {% highlight C# %} 
 

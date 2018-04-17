@@ -778,9 +778,9 @@ chart.PrimaryAxis = primaryAxis;
 
 ![](axis_images/axis_img29.png)
 
-### Axis Line Offset
+### Axis line offset
 
-The [`AxisLineOffset`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~AxisLineOffset.html) property is used to set the start position of an axis line.
+The [`AxisLineOffset`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~AxisLineOffset.html) property is used to offset the rendering of axis line.
 
 {% tabs %} 
 

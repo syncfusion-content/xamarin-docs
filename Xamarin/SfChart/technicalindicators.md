@@ -287,7 +287,7 @@ You can define the [`AverageTrueIndicator`](http://help.syncfusion.com/cr/cref_f
 <chart:SfChart>
 ...	
         <chart:SfChart.TechnicalIndicators>
-            <chart:AverageTrueIndicator ItemsSource="{Binding TechnicalIndicatorData}" Period="3" XBindingPath="Date" SignalLineColor="Purple" High="High" Low="Low" Open="Open" Close="Close"/>
+            <chart:AverageTrueIndicator ItemsSource="{Binding TechnicalIndicatorData}" Period="14" SignalLineColor="Blue" XBindingPath="XValue" High="High" Low="Low" Open="Open" Close="Close"/>
          </chart:SfChart.TechnicalIndicators>
 
 </chart:SfChart>
@@ -304,10 +304,10 @@ SfChart chart = new SfChart()
       {
           new AverageTrueIndicator()
           {
-              Period = 3,
-              SignalLineColor = Color.Purple,
+              Period = 14,
+              SignalLineColor = Color.Blue,
               ItemsSource = viewModel.TechnicalIndicatorData,
-              XBindingPath = "Date",
+              XBindingPath = "XValue",
               Open = "Open",
               High = "High",
               Low = "Low",
@@ -322,7 +322,7 @@ SfChart chart = new SfChart()
 
 The following screenshot illustrates an ATR indicator.
 
-![](technicalindicators_images/averagetrue.png)
+![](technicalindicators_images/averagetruerange.png)
 
 ## Simple moving average (SMA) indicator
 
@@ -337,7 +337,7 @@ The following code example demonstrates the usage of [`SimpleMovingAverageIndica
 <chart:SfChart>
 ...	
        <chart:SfChart.TechnicalIndicators>
-           <chart:SimpleMovingAverageIndicator ItemsSource="{Binding TechnicalIndicatorData}" Period="14" SignalLineColor="Purple" XBindingPath="XValue" High="High" Low="Low" Open="Open" Close="Close"/> 
+           <chart:SimpleMovingAverageIndicator ItemsSource="{Binding TechnicalIndicatorData}" Period="14" SignalLineColor="Blue" XBindingPath="XValue" High="High" Low="Low" Open="Open" Close="Close"/> 
         </chart:SfChart.TechnicalIndicators>
 
 </chart:SfChart>
@@ -354,7 +354,7 @@ SfChart chart = new SfChart()
           new SimpleMovingAverageIndicator()
           {
               Period = 14,
-              SignalLineColor = Color.Purple,
+              SignalLineColor = Color.Blue,
               ItemsSource = viewModel.TechnicalIndicatorData,
               XBindingPath = "XValue",
               Open = "Open",
@@ -388,7 +388,7 @@ To define the [`RSITechnicalIndicator`](http://help.syncfusion.com/cr/cref_files
 <chart:SfChart>
 ...	
         <chart:SfChart.TechnicalIndicators>
-            <chart:RSIIndicator ItemsSource="{Binding TechnicalIndicatorData}" Period="14" SignalLineColor="Purple" UpperLineColor="Blue" LowerLineColor="Red" XBindingPath="XValue" High="High" Low="Low" Open="Open" Close="Close"/>
+            <chart:RSIIndicator ItemsSource="{Binding TechnicalIndicatorData}" Period="14" SignalLineColor="Blue" UpperLineColor="Teal" LowerLineColor="Red" XBindingPath="XValue" High="High" Low="Low" Open="Open" Close="Close"/>
         </chart:SfChart.TechnicalIndicators>
 
 </chart:SfChart>
@@ -405,8 +405,8 @@ SfChart chart = new SfChart()
           new RSIIndicator()
           {
               Period = 14,
-              SignalLineColor = Color.Purple,
-              UpperLineColor = Color.Blue,
+              SignalLineColor = Color.Blue,
+              UpperLineColor = Color.Teal,
               LowerLineColor = Color.Red,
               ItemsSource = viewModel.TechnicalIndicatorData,
               XBindingPath = "XValue",
@@ -439,7 +439,7 @@ The following code example helps you to add [`AccumulationDistributionIndicator`
 <chart:SfChart>
 ...	
           <chart:SfChart.TechnicalIndicators>
-            <chart:AccumulationDistributionIndicator ItemsSource="{Binding TechnicalIndicatorData}" SignalLineColor="Purple" XBindingPath="XValue" Open="Open" High="High" Low="Low" Close="Close" Volume="Volume"/>
+            <chart:AccumulationDistributionIndicator ItemsSource="{Binding TechnicalIndicatorData}" SignalLineColor="Blue" XBindingPath="XValue" Open="Open" High="High" Low="Low" Close="Close" Volume="Volume"/>
         </chart:SfChart.TechnicalIndicators>
 
 </chart:SfChart>
@@ -455,7 +455,7 @@ SfChart chart = new SfChart()
       {
           new AccumulationDistributionIndicator()
           {
-              SignalLineColor = Color.Purple,
+              SignalLineColor = Color.Blue,
               ItemsSource = viewModel.TechnicalIndicatorData,
               XBindingPath = "XValue",
               Open = "Open",
@@ -475,19 +475,6 @@ The following screenshot illustrates an accumulation distribution technical indi
 
 ![](technicalindicators_images/accumulationdistribution.png)
 
-{% tabs %} 
-
-{% highlight xaml %}
-
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-
-{% endhighlight %}
-
-{% endtabs %}
 
 ## Momentum indicator
 
@@ -501,7 +488,7 @@ You can define [`MomentumIndicator`](http://help.syncfusion.com/cr/cref_files/xa
 <chart:SfChart>
    ...	
         <chart:SfChart.TechnicalIndicators>
-            <chart:MomentumIndicator ItemsSource="{Binding TechnicalIndicatorData}" Period="14" SignalLineColor="Purple" UpperLineColor="Red" XBindingPath="XValue" High="High" Low="Low" Open="Open" Close="Close">
+            <chart:MomentumIndicator ItemsSource="{Binding TechnicalIndicatorData}" Period="14" SignalLineColor="Blue" UpperLineColor="Red" XBindingPath="XValue" High="High" Low="Low" Open="Open" Close="Close">
             </chart:MomentumIndicator>
         </chart:SfChart.TechnicalIndicators>
    ...
@@ -520,8 +507,8 @@ SfChart chart = new SfChart()
           new MomentumIndicator()
           {
               Period = 14,
-              SignalLineColor = Color.Purple,
-              UpperLineColor = Color.Blue,
+              SignalLineColor = Color.Blue,
+              UpperLineColor = Color.Red,
               ItemsSource = viewModel.TechnicalIndicatorData,
               XBindingPath = "XValue",
               Open = "Open",
@@ -569,7 +556,7 @@ SfChart chart = new SfChart()
           new StochasticIndicator()
           {
               Period = 14,
-              SignalLineColor = Color.Purple,
+              SignalLineColor = Color.Yellow,
               UpperLineColor = Color.Red,
               LowerLineColor = Color.Teal,
               PeriodLineColor = Color.DarkBlue,
@@ -601,7 +588,7 @@ The [`ExponentialMovingAverageIndicator`](https://help.syncfusion.com/cr/cref_fi
 <chart:SfChart>
 ...	
         <chart:SfChart.TechnicalIndicators>
-            <chart:ExponentialMovingAverageIndicator ItemsSource="{Binding TechnicalIndicatorData}" Period="14" SignalLineColor="Purple" XBindingPath="XValue" High="High" Low="Low" Open="Open" Close="Close"/>     
+            <chart:ExponentialMovingAverageIndicator ItemsSource="{Binding TechnicalIndicatorData}" Period="14" SignalLineColor="Blue" XBindingPath="XValue" High="High" Low="Low" Open="Open" Close="Close"/>     
         </chart:SfChart.TechnicalIndicators>
 </chart:SfChart>
 
@@ -618,7 +605,7 @@ SfChart chart = new SfChart()
           new ExponentialMovingAverageIndicator()
           {
               Period = 14,
-              SignalLineColor = Color.Purple,
+              SignalLineColor = Color.Blue,
               ItemsSource = viewModel.TechnicalIndicatorData,
               XBindingPath = "XValue",
               Open = "Open",
@@ -647,7 +634,7 @@ The [`TriangularMovingAverageIndicator`](http://help.syncfusion.com/cr/cref_file
 <chart:SfChart>
 ...	
         <chart:SfChart.TechnicalIndicators>
-            <chart:TriangularMovingAverageIndicator ItemsSource="{Binding TechnicalIndicatorData}" Period="14" SignalLineColor="Purple" XBindingPath="XValue" High="High" Low="Low" Open="Open" Close="Close"/>      
+            <chart:TriangularMovingAverageIndicator ItemsSource="{Binding TechnicalIndicatorData}" Period="14" SignalLineColor="Blue" XBindingPath="XValue" High="High" Low="Low" Open="Open" Close="Close"/>      
         </chart:SfChart.TechnicalIndicators>
 </chart:SfChart>
 
@@ -664,7 +651,7 @@ SfChart chart = new SfChart()
           new TriangularMovingAverageIndicator()
           {
               Period = 14,
-              SignalLineColor = Color.Purple,
+              SignalLineColor = Color.Blue,
               ItemsSource = viewModel.TechnicalIndicatorData,
               XBindingPath = "XValue",
               Open = "Open",
@@ -696,7 +683,7 @@ You can define the [`BollingerBandIndicator`](http://help.syncfusion.com/cr/cref
 <chart:SfChart>
 ...	
         <chart:SfChart.TechnicalIndicators>
-            <chart:BollingerBandIndicator ItemsSource="{Binding TechnicalIndicatorData}" Period="14" SignalLineColor="Purple" UpperLineColor="Red" LowerLineColor="Blue" XBindingPath="XValue" High="High" Low="Low" Open="Open" Close="Close"/>
+            <chart:BollingerBandIndicator ItemsSource="{Binding TechnicalIndicatorData}" Period="14" SignalLineColor="Blue" UpperLineColor="Red" LowerLineColor="Teal" XBindingPath="XValue" High="High" Low="Low" Open="Open" Close="Close"/>
         </chart:SfChart.TechnicalIndicators>
 </chart:SfChart>
 
@@ -713,9 +700,9 @@ SfChart chart = new SfChart()
           new BollingerBandIndicator()
           {
               Period = 14,
-              SignalLineColor = Color.Purple,
+              SignalLineColor = Color.Blue,
               UpperLineColor = Color.Red,
-              LowerLineColor = Color.Blue,
+              LowerLineColor = Color.Teal,
               ItemsSource = viewModel.TechnicalIndicatorData,
               XBindingPath = "XValue",
               Open = "Open",
@@ -748,7 +735,7 @@ You can specify the MACDTechnicalIndicator using the following code example.
 <chart:SfChart>
 ...	
         <chart:SfChart.TechnicalIndicators>
-            <chart:MACDIndicator ItemsSource="{Binding TechnicalIndicatorData}" MACDType="Both" ShortPeriod="2" LongPeriod="10" Trigger="14" SignalLineColor="Purple" XBindingPath="XValue" High="High" Low="Low" Open="Open" Close="Close"/> 
+            <chart:MACDIndicator ItemsSource="{Binding TechnicalIndicatorData}" MACDType="Both" ShortPeriod="2" LongPeriod="10" Trigger="14" SignalLineColor="Blue" HistogramColor="LightSkyBlue" MACDLineColor="Orange" XBindingPath="XValue" High="High" Low="Low" Open="Open" Close="Close"/>
         </chart:SfChart.TechnicalIndicators>
 </chart:SfChart>
 
@@ -768,7 +755,9 @@ SfChart chart = new SfChart()
               ShortPeriod = 2,
               LongPeriod = 10,
               Trigger = 14,
-              SignalLineColor = Color.Purple,
+              indicator.SignalLineColor = Color.Blue,
+              indicator.HistogramColor = Color.LightSkyBlue,
+              indicator.MACDLineColor = Color.Orange,
               ItemsSource = viewModel.TechnicalIndicatorData,
               XBindingPath = "XValue",
               Open = "Open",

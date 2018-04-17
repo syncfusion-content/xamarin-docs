@@ -31,7 +31,7 @@ You can acquire the details of the hyperlink that is tapped in the PDF viewer co
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfPdfViewer x:Name="pdfViewerControl" HyperlinkClicked="pdfViewerContol_HyperlinkClicked"  InputFileStream="{Binding PdfDocumentStream}" />
+<syncfusion:SfPdfViewer x:Name="pdfViewerControl" HyperlinkClicked="pdfViewerControl_HyperlinkClicked"  InputFileStream="{Binding PdfDocumentStream}" />
 
 {% endhighlight %}
 {% endtabs %}
@@ -39,7 +39,7 @@ You can acquire the details of the hyperlink that is tapped in the PDF viewer co
 {% tabs %}
 {% highlight c# %}
 
-        public void pdfViewerContol_HyperlinkClicked(object sender,HyperlinkClickedEventArgs args)
+        public void pdfViewerControl_HyperlinkClicked(object sender,HyperlinkClickedEventArgs args)
         {
 			// Gets or sets a value indicating whether the hyperlink navigation was handled.
             args.Handled = false;

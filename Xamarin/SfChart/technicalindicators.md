@@ -153,7 +153,11 @@ SfChart chart = new SfChart()
 
 {% endtabs %}
 
-[`AverageTrueIndicator`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.AverageTrueIndicator.html), [`SimpleMovingAverageIndicator`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SimpleMovingAverageIndicator.html), and [`RSITechnicalIndicator`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RSIIndicator.html) have the `Period` and `SignalLineColor` properties as common; the `Period` property indicates the moving average period and the `SignalLineColor` property defines the color for the respective indicator line.
+Technical indicators have the below  properties as common; 
+
+ * [`Period`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.BollingerBandIndicator~Period.html) - used to indicates the moving average period.
+ * [`SignalLineColor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.TriangularMovingAverageIndicator~SignalLineColor.html) - used to defines the color for the respective indicator line.
+ * [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FinancialTechnicalIndicator~StrokeWidth.html) - used to change the stroke width of the indicator.
 
 **Adding axis**
 

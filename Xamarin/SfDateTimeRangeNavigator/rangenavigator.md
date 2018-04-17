@@ -13,7 +13,7 @@ This section walks you through the steps required to add `SfDateTimeRangeNavigat
 
 ## Adding RangeNavigator Reference
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add range navigator to your project, open the NuGet package manager in Visual Studio, and search for [syncfusion.xamarin.sfchart](https://www.nuget.org/packages/Syncfusion.Xamarin.SfChart/), and then install it. 
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add range navigator to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfChart](https://www.nuget.org/packages/Syncfusion.Xamarin.SfChart/), and then install it. 
 
 ![](gettingstarted_images/addref.png)
 

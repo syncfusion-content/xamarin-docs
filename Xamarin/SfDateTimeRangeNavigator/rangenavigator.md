@@ -46,7 +46,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ### Universal Windows Platform (UWP)
 
-To launch the range navigator in UWP, call the SfRangeNavigatorRenderer.Init() metho in the constructor of MainPage before the LoadApplication method is called as demonstrated in the following code sample.
+To launch the range navigator in UWP, call the SfRangeNavigatorRenderer.Init() method in the constructor of MainPage before the LoadApplication method is called as demonstrated in the following code sample.
 
 {% highlight C# %} 
 

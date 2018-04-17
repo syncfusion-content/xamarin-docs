@@ -27,7 +27,7 @@ To use the chart inside an application, each platform application requires some 
 
 ### iOS
 
-To launch the chart in iOS, call the SfChartRenderer.Init() in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework initialization and before the LoadApplication is called as demonstrated in the following code sample:
+To launch the chart in iOS, call the SfChartRenderer.Init() method in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework initialization and before the LoadApplication is called as demonstrated in the following code sample:
 
 {% highlight C# %} 
 
@@ -46,7 +46,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ### Universal Windows Platform (UWP)
 
-To launch the chart in UWP, call the  SfChartRenderer.Init()  in the MainPage constructor before the LoadApplication is called as demonstrated in the following code sample.
+To launch the chart in UWP, call the  SfChartRenderer.Init() method in the MainPage constructor before the LoadApplication is called as demonstrated in the following code sample.
 
 {% highlight C# %} 
 

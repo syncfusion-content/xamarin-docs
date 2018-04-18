@@ -138,7 +138,7 @@ Deploying this project to various devices (Android, iOS and Windows) would displ
 
 ### Loading a PDF in code behind
 
-In code behind a PDF can be loaded to PdfViewer just by using the [LoadDocument](https://help.syncfusion.com/cr/cref_files/xamarin/sfpdfviewer/Syncfusion.SfPdfViewer.XForms~Syncfusion.SfPdfViewer.XForms.SfPdfViewer~LoadDocument.html) method without the need of the "PdfViewerViewModel" class described in the previous section.  Use the following code snippet in the code behind of the XAML page. 
+In code-behind a PDF can be loaded to PdfViewer just by using the [LoadDocument](https://help.syncfusion.com/cr/cref_files/xamarin/sfpdfviewer/Syncfusion.SfPdfViewer.XForms~Syncfusion.SfPdfViewer.XForms.SfPdfViewer~LoadDocument.html) method without the need of the "PdfViewerViewModel" class described in the previous section.  Use the following code snippet in the code-behind of the XAML page. 
 
 {% tabs %}
 {% highlight c# %}

@@ -309,6 +309,7 @@ The [SelectionChanged](https://help.syncfusion.com/cr/cref_files/xamarin/sflistv
  
   * Clear all the selected item.
   * Remove the particular selected item.
+  * Get the index of the selected item.
 
 {% tabs %}
 {% highlight c# %}
@@ -380,3 +381,38 @@ public partial class MainPage : ContentPage
 {% endtabs %}
 
 You can download the entire sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfListViewSample-1451946805).
+
+### Get the index of the selected items
+
+While performing selection, you can get the collection of items which are selected in the  [SfListView.SelectedItems](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItems.html) property. Then you can get the selected item index by passing the underlying data in DisplayItems.IndexOf method as like below code example. 
+
+{% tabs %}
+{% highlight c# %}
+public partial class MainPage : ContentPage
+{
+  public MainPage()
+  {
+    InitializeComponent();
+    listView.SelectionChanged += ListView_SelectionChanged;
+  }
+
+  private void ListView_SelectionChanged(object sender, ItemSelectionChangedEventArgs e)
+  {
+    var items = listView.SelectedItems;
+    for (int i = 0; items.Count > i; i++)
+    {
+      var item = items[i] as Model;
+      var index = listView.DataSource.DisplayItems.IndexOf(item);
+      item.IsDone = true;
+      if (i == items.Count - 1)
+        entry.Text = entry.Text + index + " . ";
+      else
+        entry.Text = entry.Text + index + " , ";
+    }
+  }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+You can download the entire sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SelectedItemIndex-1334129467).

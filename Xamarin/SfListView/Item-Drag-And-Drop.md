@@ -68,7 +68,7 @@ N> You must set the SfListView instance as reference to the [ListView](https://h
                    DragStartMode="OnDragIndicator"
                    BackgroundColor="#FFE8E8EC"
                    ItemSize="60">
-  <syncfusion:SfListView.DragItemTemplate>
+  <syncfusion:SfListView.ItemTemplate>
     <DataTemplate>
       <Grid Padding="10">
           <Grid.ColumnDefinitions>
@@ -87,7 +87,7 @@ N> You must set the SfListView instance as reference to the [ListView](https://h
         </Grid>
       </Grid>
     </DataTemplate>
-  </syncfusion:SfListView.DragItemTemplate>
+  </syncfusion:SfListView.ItemTemplate>
 </syncfusion:SfListView>
 {% endhighlight %}
 {% highlight c# %}
@@ -124,18 +124,6 @@ The screenshot shows the output of the reordering items by drag and drop. You ca
 
 ![](SfListView_images/SfListView-ItemReordering.gif)
 
-## Drag and drop event
-
-The [ItemDragging](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemDragging_EV.html) event is raised while dragging and dropping the item in the [SfListView](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView.html). [ItemDraggingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs.html) has the following members which provides the information for the `ItemDragging` event:
-
- * [Action](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs~Action.html): Returns the drag `Action` such as start, dragging, and drop.
- * [Bounds](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs~Bounds.html): Return bounds of drag item when dragging and dropping.
- * [Handled](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs~Handled.html): If this member is set to true, dragging can be handled while dragging the item. It is applicable only if `Action` is `Dragging`.
- * [ItemData](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs~ItemData.html): Returns the underlying data of dragging item. 
- * [NewIndex](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs~NewIndex.html): Returns the item index of the underlying collection where dragging item is going to be dropped.
- * [OldIndex](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs~OldIndex.html): Returns the item index of the underlying collection where dragging item started. The OldIndex and NewIndex will be same if `Action` is `Start`.
- * [Position](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs~Position.html): Returns the touch position of drag item from screen coordinates.
-
 ## Drag item customization
 
 By defining the [SfListView.DragItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~DragItemTemplate.html) of the SfListView, displays the custom User Interface(UI) when performing drag and drop operations. The template can be defined either in code or XAML.
@@ -168,6 +156,18 @@ listView.ItemTemplate = new DataTemplate(() => {
 });
 {% endhighlight %}
 {% endtabs %}
+
+## Event
+
+The [ItemDragging](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemDragging_EV.html) event is raised while dragging and dropping the item in the [SfListView](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView.html). [ItemDraggingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs.html) has the following members which provides the information for the `ItemDragging` event:
+
+ * [Action](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs~Action.html): Returns the drag `Action` such as start, dragging, and drop.
+ * [Bounds](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs~Bounds.html): Return bounds of drag item when dragging and dropping.
+ * [Handled](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs~Handled.html): If this member is set to true, dragging can be handled while dragging the item. It is applicable only if `Action` is `Dragging`.
+ * [ItemData](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs~ItemData.html): Returns the underlying data of dragging item. 
+ * [NewIndex](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs~NewIndex.html): Returns the item index of the underlying collection where dragging item is going to be dropped.
+ * [OldIndex](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs~OldIndex.html): Returns the item index of the underlying collection where dragging item started. The OldIndex and NewIndex will be same if `Action` is `Start`.
+ * [Position](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs~Position.html): Returns the touch position of drag item from screen coordinates.
 
 ## Auto scroll options
 

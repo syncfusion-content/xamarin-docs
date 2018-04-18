@@ -21,7 +21,7 @@ Example: C:\Program Files (x86)\Syncfusion\Essential Studio\15.3.0.28\Xamarin\li
 
 Refer [this link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfpdfviewer) to know about the assemblies required for adding SfPdfViewer control in a Xamarin project.
 
-## Create a simple PDF Viewer
+## Creating a simple PDF Viewer application
 
 Create a new cross platform application for Xamarin.Forms.Portable in the Visual Studio with the project name "GettingStarted" and refer the above mentioned assemblies to the respective projects.
 
@@ -41,7 +41,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {% endhighlight %}
 {% endtabs %}
 
-### Working with files
+### Loading a PDF using MVVM binding
 
 File handling with Xamarin.Forms can be done using embedded resources or writing against the native filesystem APIs. Please find more details in the below link:
 
@@ -135,6 +135,55 @@ Add the following XAML code in the MainPage.xaml in the portable project.
 {% endtabs %}
 
 Deploying this project to various devices (Android, iOS and Windows) would display the PDF document and allow you to scroll and zoom the pages.
+
+### Loading a PDF in code-behind
+
+In code-behind a PDF can be loaded to PdfViewer just by using the [LoadDocument](https://help.syncfusion.com/cr/cref_files/xamarin/sfpdfviewer/Syncfusion.SfPdfViewer.XForms~Syncfusion.SfPdfViewer.XForms.SfPdfViewer~LoadDocument.html) method without the need of the "PdfViewerViewModel" class described in the previous section.  Use the following code snippet in the code-behind of the XAML page. 
+
+{% tabs %}
+{% highlight c# %}
+
+namespace GettingStarted
+{
+    public partial class MainPage : ContentPage
+    {
+        Stream fileStream; 
+        public MainPage()
+        {
+            InitializeComponent();
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            fileStream = typeof(App).GetTypeInfo().Assembly.GetManifestResourceStream("GettingStarted.Assets.GIS Succinctly.pdf");
+			//Load the PDF
+            pdfViewerControl.LoadDocument(fileStream);
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+In the XAML code described in the previous section, remove the binding of InputFileStream property of SfPdfViewer and the BindingContext of the page. 
+
+{% tabs %}
+{% highlight xaml %}
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GettingStarted"
+             x:Class="GettingStarted.MainPage"
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms"
+             >
+    <Grid x:Name="pdfViewGrid">
+        <syncfusion:SfPdfViewer x:Name="pdfViewerControl" />
+    </Grid> 
+</ContentPage>
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Unloading PDF document from the Viewer
 

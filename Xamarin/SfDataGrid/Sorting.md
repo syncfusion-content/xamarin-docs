@@ -147,7 +147,7 @@ The data grid sort columns based on custom logic, when the standard sorting tech
 
 A `SortComparer` object has the following properties:
 
- * PropertyName: [MappingName()] of the column that applies custom sorting.
+ * PropertyName: [MappingName](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~MappingName.html) of the column that applies custom sorting.
  * Comparer: Gets or sets the custom comparer that implements the `IComparer` and `ISortDirection` interfaces.
 
 To perform custom sorting for the FirstName column based on the string length of the names, follow the code example:

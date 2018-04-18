@@ -88,7 +88,7 @@ In the following screenshot, trackball label is shown for only single data point
 
 **Customize Trackball Labels**
 
-Following properties are used to customize the trackball labels.
+The [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballBehavior~LabelStyle.html) property provides options to  customize the trackball labels.
 
 * [`BorderColor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~BorderColor.html#) – used to change the label border color.
 * [`BackgroundColor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~BackgroundColor.html#) – used to change the label background color.
@@ -145,6 +145,8 @@ chart.ChartBehaviors.Add(trackballBehavior);
 {% endtabs %}
 
 **Customize Trackball Marker**
+
+The [`MarkerStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballBehavior~MarkerStyle.html) property provides options to  customize the trackball markers.
 
 Following properties are used to customize the trackball marker.
 
@@ -207,7 +209,7 @@ chart.ChartBehaviors.Add(trackballBehavior);
 
 **Customize Trackball Line**
 
-Following properties are used to customize the trackball line.
+The [`LineStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballBehavior~LineStyle.html) property provides options to  customize the trackball line.
 
 * [`ShowLine`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballBehavior~ShowLine.html#) – used to enable / disable the line. Default value is true.
 * [`StrokeWidth`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLineStyle~StrokeWidth.html#) – used to change the stroke width of the line.
@@ -289,6 +291,42 @@ chart.PrimaryAxis.ShowTrackballInfo = true;
 {% endtabs %}
 
 ![](trackball_images/trackball_img5.png)
+
+## Axis label alignment
+
+The position of trackball's axis label can be changed using the [`AxisLabelAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballAxisLabelStyle~AxisLabelAlignment.html) property of [`ChartTrackballAxisLabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballAxisLabelStyle.html). The following options are available in [`AxisLabelAlignment`]().
+
+*	[`Far`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisLabelAlignment.html) -  The label will be positioned below the tick in vertical axis and right of the tick in horizontal axis.
+*	[`Near`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisLabelAlignment.html) -  The label will be positioned above the tick in vertical axis and left of the tick in horizontal axis.
+*   [`Center`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisLabelAlignment.html) - The label will be positioned at the center of tick. This is the default value.
+
+The following code snippet and screenshot demonstrate the placement of label at the left to tick line.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart>
+ ...
+<chart:CategoryAxis.TrackballLabelStyle>
+
+    <chart:ChartTrackballAxisLabelStyle AxisLabelAlignment="Near"/>
+
+</chart:CategoryAxis.TrackballLabelStyle>
+ ...
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+primaryAxis.TrackballLabelStyle.AxisLabelAlignment = ChartLabelAlignment.Near;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](trackball_images/AxisLabelAlignment-Near.png)
 
 ## Show/hide the series label
 
@@ -407,3 +445,57 @@ chart.ChartBehaviors.Add(new ChartTrackballBehavior());
 
 ![](trackball_images/trackball_img4.png)
 
+**Customize the Axis Label with DataTemplate**
+
+Customize the appearance of axis label of trackball using [`TrackballLabelTemplate`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~TrackballLabelTemplate.html) property of [`ChartAxis`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis.html).
+
+{% tabs %} 
+
+{% highlight xaml %}
+<ContentPage.Resources>
+    <ResourceDictionary>
+      <DataTemplate x:Key="axisLabelTemplate">
+        <Label WidthRequest="50" HeightRequest="20" HorizontalTextAlignment="Center" BackgroundColor="Blue" Text="{Binding }" TextColor="White" FontSize ="15" />
+      </DataTemplate>
+    </ResourceDictionary>
+</ContentPage.Resources>
+
+ <chart:SfChart.PrimaryAxis>
+       <chart:CategoryAxis  ShowTrackballInfo="True" TrackballLabelTemplate="{StaticResource axisLabelTemplate}">
+        <chart:CategoryAxis.TrackballLabelStyle>
+          <chart:ChartTrackballAxisLabelStyle   BackgroundColor="Transparent"/>
+        </chart:CategoryAxis.TrackballLabelStyle>  
+      </chart:CategoryAxis>  
+</chart:SfChart.PrimaryAxis>
+
+<chart:SfChart.ChartBehaviors>
+     <chart:ChartTrackballBehavior />
+</chart:SfChart.ChartBehaviors>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+Chart.PrimaryAxis = new CategoryAxis(); 
+Chart.PrimaryAxis.ShowTrackballInfo = true;
+Chart.PrimaryAxis.TrackballLabelStyle.BackgroundColor = Color.Transparent;
+DataTemplate axisLabelTemplate = new DataTemplate(() =>
+{              
+     Label label = new Label();
+     label.SetBinding(Label.TextProperty, ".");
+     label.FontSize = 15;
+     label.HorizontalTextAlignment = TextAlignment.Center;
+     label.TextColor = Color.White;
+     label.BackgroundColor = Color.Blue;                       
+     label.WidthRequest = 50;
+     label.HeightRequest = 20;           
+     return label;
+});
+Chart.PrimaryAxis.TrackballLabelTemplate = axisLabelTemplate;
+Chart.ChartBehaviors.Add(new ChartTrackballBehavior());
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](trackball_images/axislabelTemplate.png)

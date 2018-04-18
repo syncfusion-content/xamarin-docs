@@ -2,7 +2,7 @@
 layout : post
 title : Localization of ImageEditor
 description : How to Localize the contents of SfImageEditor control.
-platform : Xamarin.Forms
+platform : xamarin.forms
 control : ImageEditor
 documentation : ug
 ---

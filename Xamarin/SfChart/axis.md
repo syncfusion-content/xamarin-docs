@@ -541,7 +541,7 @@ chart.SecondaryAxis = new LogarithmicAxis ();
 
 ### Customizing the logarithmic range
 
-To customize the range of log axis, you can use the [`Minimum`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.LogarithmicAxis~MinimumProperty.html) and [`Maximum`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.LogarithmicAxis~MaximumProperty.html) properties of [`LogarithmicAxis`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.LogarithmicAxis.html). By default, nice range will be calculated automatically based on the provided data.
+To customize the range of log axis, you can use the [`Minimum`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.LogarithmicAxis~Minimum.html), [`Maximum`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.LogarithmicAxis~Maximum.html) and [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.LogarithmicAxis~Interval.html) properties of [`LogarithmicAxis`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.LogarithmicAxis.html). By default, nice range will be calculated automatically based on the provided data.
 
 {% tabs %} 
 
@@ -778,6 +778,49 @@ chart.PrimaryAxis = primaryAxis;
 
 ![](axis_images/axis_img29.png)
 
+### Axis line offset
+
+The [`AxisLineOffset`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~AxisLineOffset.html) property is used to offset the rendering of axis line.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+
+            <chart:CategoryAxis AxisLineOffset="20" PlotOffset="20">  
+			             
+                <chart:CategoryAxis.AxisLineStyle>
+
+                    <chart:ChartLineStyle StrokeWidth="5"/>
+
+                </chart:CategoryAxis.AxisLineStyle>
+
+            </chart:CategoryAxis>
+			
+ </chart:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+CategoryAxis primaryAxis = new CategoryAxis();
+
+primaryAxis.PlotOffset = 20;
+
+primaryAxis.AxisLineOffset = 20;
+
+primaryAxis.AxisLineStyle.StrokeWidth = 5;
+
+chart.PrimaryAxis = primaryAxis;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](axis_images/AxisLineOffset.png)
+
+
 ### Label customization
 
 The [`LabelStyle`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~LabelStyle.html) property of axis provides options to customize the font-family, color, size and font-weight of axis labels. The axis labels can be customized using following properties:
@@ -790,6 +833,7 @@ The [`LabelStyle`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Sync
 * [`Margin`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~Margin.html) - used to change the margin size for labels.
 * [`CornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisLabelStyle~CornerRadius.html) - Used to change the corner radius of the background of labels.
 * [`LabelAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisLabelStyle~LabelAlignment.html) - Used to align the label at the start, center, or end.
+* [`LabelFormat`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~LabelFormat.html) -  used to set numeric or date time format to the chart axis label.
 
 {% tabs %} 
 
@@ -881,6 +925,70 @@ chart.PrimaryAxis.EdgeLabelsDrawingMode = EdgeLabelsDrawingMode.Shift;
 
 ![](axis_images/axis_img21.png)
 
+### Edge labels visibility
+
+The visibility of the edge labels in an axis can be controlled using [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RangeAxisBase~EdgeLabelsVisibilityMode.html) property.
+The following  options are available in [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RangeAxisBase~EdgeLabelsVisibilityMode.html),
+
+* Default- used to display the edge label based on auto interval calculations
+* Visible - used to display the edge labels (first and last label) irrespective of the auto interval calculation until zooming (i.e., in normal state).
+* AlwaysVisible - used to always display the edge labels even while zooming the chart.
+
+The following code example demonstrates the AlwaysVisible option while zooming.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+      <chart:NumericalAxis  EdgeLabelsVisibilityMode="AlwaysVisible">     
+      </chart:NumericalAxis>
+ </chart:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+Chart.PrimaryAxis = new NumericalAxis();
+chart.SecondaryAxis.EdgeLabelsVisibilityMode = EdgeLabelsVisibilityMode.AlwaysVisible;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+### Label extent
+
+The [`LabelExtent`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~LabelExtent.html) property allows to set the gap between axis labels and title. This is typically used to maintain the fixed gap between axis labels and title when the digits of the axis value changed in live update.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+      <chart:CategoryAxis LabelExtent="60" >
+        <chart:CategoryAxis.Title>
+          <chart:ChartAxisTitle Text="Month"/>
+        </chart:CategoryAxis.Title>
+      </chart:CategoryAxis>
+ </chart:SfChart.PrimaryAxis>
+
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+Chart.PrimaryAxis = new CategoryAxis();
+Chart.PrimaryAxis.LabelExtent = 60;
+Chart.PrimaryAxis.Title.Text = "Month";
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](axis_images/labelExtent.png)
+
+
 ### Grid lines customization
 
 The [`ShowMajorGridLines`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~ShowMajorGridLines.html) and [`ShowMinorGridLines`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RangeAxisBase~ShowMinorGridLines.html) properties are used to control the visibility of grid lines. [`MajorGridLineStyle`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~MajorGridLineStyle.html) and [`MinorGridLineStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RangeAxisBase~MinorGridLineStyle.html) properties in axis are used to customize the major grid lines and minor grid lines of an axis respectively. They provide options to change the width, dashes, color of grid lines. By default minor grid lines will not be visible. 
@@ -920,7 +1028,7 @@ chart. SecondaryAxis = new NumericalAxis ()
 
 ### Tick lines customization
 
-The [`MajorTickStyle`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~MajorTickStyle.html) and [`MinorTickStyle`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RangeAxisBase~MinorTickStyle.html) properties in axis are used to customize the major tick lines of an axis and minor tick lines of an axis respectively. They provide options to change the width, size, color and visibility of tick lines. By default minor tick lines will not be visible.
+The [`MajorTickStyle`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~MajorTickStyle.html) and [`MinorTickStyle`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RangeAxisBase~MinorTickStyle.html) properties in axis are used to customize the major tick lines of an axis and minor tick lines of an axis respectively. They provide options to change the [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisTickStyle~StrokeWidth.html), [`TickSize`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisTickStyle~TickSize.html), [`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisTickStyle~StrokeColor.html) and [`MinorTicksPerInterval`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RangeAxisBase~MinorTicksPerInterval.html) of tick lines. By default minor tick lines will not be visible.
 
 {% tabs %} 
 
@@ -1027,6 +1135,47 @@ chart.SecondaryAxis.OpposedPosition = true;
 {% endtabs %}
 
 ![](axis_images/axis_img25.png)
+
+### Offset the rendering
+The [`PlotOffset`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~PlotOffset.html) property is used to offset the rendering of the axis at start and end position. The following code snippet demonstrates to apply the plot offset to both x and y axes.
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+
+      <chart:CategoryAxis PlotOffset="30" />
+
+</chart:SfChart.PrimaryAxis>
+
+<chart:SfChart.SecondaryAxis>
+
+      <chart:NumericalAxis PlotOffset="30"/>
+
+</chart:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+Chart.PrimaryAxis = new CategoryAxis()
+{
+
+     PlotOffset = 30
+};
+
+Chart.SecondaryAxis = new NumericalAxis()
+{
+
+     PlotOffset = 30
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](axis_images/PlotOffset.png)
 
 ### Maximum number of labels per 100 pixels
 

@@ -1,7 +1,7 @@
 ---
 title: Getting Started for Essential Xamarin.Forms Diagram.
 description: getting started
-platform:  Xamarin
+platform: Xamarin
 control: SfDiagram
 documentation: UG
 keywords: 
@@ -9,75 +9,69 @@ keywords:
 # Getting Started
 This section provides a quick overview for working with Diagram for Xamarin.Forms. This walkthrough demonstrates that, how to create a simple flow chart and an organization chart.
 
-## Assemblies Required
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders.
-{Syncfusion Essential Studio Installed location}\Essential Studio{Essential Studio version}\Xamarin\lib
-Example: C:\Program Files (x86)\Syncfusion\Essential Studio\15.4.0.17\Xamarin\lib
-<table>
-<tr>
-<td>
-{{'**Project**'| markdownify }}
-</td>
-<td>
-{{'**Required assemblies**'| markdownify }}
-</td>
-</tr>
-<tr>
-<td>
-PCL Project
-</td>
-<td>
-pcl\Syncfusion.SfDiagram.XForms.dll
-</td>
-</tr>
-<tr>
-<td>
-Android Project
-</td>
-<td>
-android\Syncfusion.SfDiagram.XForms.Android.dll
-android\Syncfusion.SfDiagram.XForms.dll
-</td>
-</tr>
-<tr>
-<td>
-iOS Project
-</td>
-<td>
-iOS-unified\Syncfusion.SfDiagram.XForms.iOS.dll
-iOS-unified\Syncfusion.SfDiagram.XForms.dll
-</td>
-</tr>
-<tr>
-<td>
-UWP Project
-</td>
-<td>
-UWP\Syncfusion.SfDiagram.XForms.UWP.dll
-UWP\Syncfusion.SfDiagram.XForms.dll
-</td>
-</tr>
-</table>
-**Installing assemblies through Package Manager Console**
-Open Package Manager console by clicking Tools >> NuGet Package Manager >> Package Manager Console options in Visual Studio.
-<table>
-<tr>
-<td>
-PM> Get-Project -All | Install-Package Syncfusion.Xamarin.SfDiagram -source{{'[http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin](http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin#"")'| markdownify }}
-</td>
-</tr>
-</table>
+## Adding diagram reference
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add diagram to your project, open the NuGet package manager in Visual Studio, and search for [“Syncfusion.Xamarin.SfDiagram”](https://www.nuget.org/packages/Syncfusion.Xamarin.SfDiagram), and then install it.
+![](Getting-Started_images/Getting-Started_img1.jpeg)
+
+To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfdiagram) to know about the dependent assemblies for diagram. 
+
+After adding the assembly reference, an additional step is required for iOS and UWP projects.
+
+### Additional step for iOS
+
+To launch SfDiagram in iOS, call the `SfDiagramRenderer.Init()` in `FinishedLaunching` overridden method of `AppDelegate` class in iOS Project, as demonstrated in the following code example.
+
+{% tabs %}
+{% highlight c# %}
+public override bool FinishedLaunching(UIApplication app, NSDictionary options)
+{
+    global::Xamarin.Forms.Forms.Init();
+    LoadApplication(new App());
+    SfDiagramRenderer.Init();
+    return base.FinishedLaunching(app, options);
+}
+{% endhighlight %}
+{% endtabs %}
+
+I>We need to create an instance of the `SfDiagramRenderer` in iOS and UWP projects as shown in this [KB article](https://www.syncfusion.com/kb/8618).
+
+### Additional step for UWP
+
+This step is required only if the application is deployed in Release mode with .NET native tool chain enabled and it is for resolving the known Framework issue “Custom controls not rendering in Release mode” in UWP platform. Initializing the SfDiagram assembly at `OnLaunched` overridden method of the `App` class in UWP project is the suggested work around, as demonstrated in the following code example.
+
+{% tabs %}
+{% highlight c# %}
+protected override void OnLaunched(LaunchActivatedEventArgs e)
+{
+
+    ..... 
+
+    rootFrame.NavigationFailed += OnNavigationFailed;
+    // you'll need to add `using System.Reflection;` 
+    List<Assembly> assembliesToInclude = new List<Assembly>();
+    //Now, add all the assemblies your app uses 
+    assembliesToInclude.Add(typeof(SfDiagramRenderer).GetTypeInfo().Assembly);
+    // replaces Xamarin.Forms.Forms.Init(e);
+    Xamarin.Forms.Forms.Init(e, assembliesToInclude);
+
+    ..... 
+
+}
+{% endhighlight %}
+{% endtabs %}
+
+I> You can refer to the [KB article](https://www.syncfusion.com/kb/8617) for more details.
 
 ## Basic building blocks of Diagram
 * **Diagram**- It represents the drawing surface where all the graphical elements like nodes and connectors resides, can be used to display various types of diagrams and it is the root instance of the diagram control. A Diagram instance contains a collection of nodes and  connectors to represent the  graphical diagram.
-* **Nodes**- This represents the geometric shapes such as flowchart elements, network diagram elements, use case elements, etc. 
-* **Connectors-**These are the objects used to create link between two nodes, to represent the relationships between them in the diagram. 
+* **Nodes**- This represents the geometric shapes such as flowchart elements, network diagram elements, use case elements, etc.
+* **Connectors-**These are the objects used to create link between two nodes, to represent the relationships between them in the diagram.
 * **Ports-**It represents a point in the node, where the connectors can be connected. A Node can contain any number of ports.
 * **Annotation-**It is a block of the text that can be displayed over a Node or Connector. Annotation is used to textually represent an object with a string that can be edited at run time.
 
 ## Creating a Simple Flow Chart
 Create a new cross platform app (Xamarin.Forms) with portable class library in the Visual Studio and name the project as “GettingStarted” and refer to the above mentioned assemblies to the respective projects.
-An additional step is required to render the SfDiagram control in iOS project. You need to create an instance of the SfDiagramRenderer class within FinishedLaunching method of AppDelegate class in iOS project as shown as follows 
+An additional step is required to render the SfDiagram control in iOS project. You need to create an instance of the SfDiagramRenderer class within FinishedLaunching method of AppDelegate class in iOS project as shown as follows
 {% tabs %}
 {% highlight c# %}
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
@@ -89,6 +83,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 }
 {% endhighlight %}
 {% endtabs %}
+
 **Adding SfDiagram in Xamarin.Forms**
 1. Import SfDiagram control namespace as xmlns:syncfusion="clr-namespace:Syncfusion.SfDiagram.XForms;assembly=Syncfusion.SfDiagram.XForms in XAML Page.
 2. Set the SfDiagram control as content to the ContentPage.
@@ -173,7 +168,7 @@ return node;
 {% endtabs %}
 The flow chart will get displayed in the SfDiagram as follows
 
-![](Getting-Started_images/Getting-Started_img1.jpeg)
+![](Getting-Started_images/Getting-Started_img2.jpeg)
 
 This demo project can be downloaded from the following link [GettingStarted_Demo.](http://files2.syncfusion.com/Xamarin.Forms/Samples/Gettingstarted_SfDiagram.zip)
 
@@ -193,10 +188,10 @@ public class Employee
 //Employee Collection
 public class Employees : ObservableCollection<Employee>  
 {
-
 }
 {% endhighlight %}
 {% endtabs %}
+
 **Initialize Employee data**
 Define Employee Information as a Collection. The below code example shows an employee array whose,
 * Name is used as a unique identifier and
@@ -235,11 +230,10 @@ employees.Add(new Employee() { Name = "Yvonne", Employee_Id = "7", ParentId = "3
 diagram.DataSourceSettings = new DataSourceSettings() { DataSource = employees, Id = "Employee_Id", ParentId = "ParentId" };
 //Initializes the Layout
 DirectedTreeLayout treeLayout = new DirectedTreeLayout() { HorizontalSpacing = 80, VerticalSpacing = 50, TreeOrientation = TreeOrientation.TopToBottom };
-
 diagram.LayoutManager = new LayoutManager() { Layout = treeLayout };
 {% endhighlight %}
 {% endtabs %}
 The Employee data is displayed in the SfDiagram as follows
-![](Getting-Started_images/Getting-Started_img2.jpeg)
+![](Getting-Started_images/Getting-Started_img3.jpeg)
 
 This demo project can be downloaded from the following link [OrganizationalChart_Demo.](http://files2.syncfusion.com/Xamarin.Forms/Samples/OrganizationalChart_SfDiagram.zip)

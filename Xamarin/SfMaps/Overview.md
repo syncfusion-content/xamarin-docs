@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion Maps control for Xamarin.Forms 
-description: Overview and Key features of Maps control
+title: Overview 
+description: Overview and Key features of Maps control in Xamarin.Forms
 platform: xamarin
 control: SfMaps
 documentation: ug
@@ -9,15 +9,15 @@ documentation: ug
 
 # Overview
 
-The Essential Xamarin Maps control provides a graphical representation of geographical data. It is used to represent the statistical data of a particular geographical area on Earth. Using pan and zoom, the maps can be navigated. Maps supports enhanced data visualization with bubbles and labels using data bounded to map.
+The Essential Maps for Xamarin.Forms control provides a graphical representation of geographical data. This is used to represent the statistical data of a particular geographical area on earth. You can navigate a map by panning and zooming. Maps support enhanced data visualization with bubbles and labels using data that bounded to map.
 
-![](Images/Legends.png)
+![](Images/Overview.png)
 
 ## Key Features
 
-* `Layers` - Maps are visualized through layers. It can accommodate one or more layers.
+* `Layers` - Maps are visualized through layers. A map can accommodate one or more layers.
  
-* `Map Elements Customization` - Additional information on map can be visualized with customized appearance using various set of elements, including shapes, bubbles, markers, legend, labels and data items.
+* `Map Elements Customization` - Additional information on map can be visualized with customized appearance using various set of elements, including shapes, bubbles, markers, legend, labels, and data items.
  
-* `User Interaction` - Options like zooming, panning and map selection enables the effective interaction on map elements.
+* `User Interaction` - Options such as zooming, panning, and map selection enable the effective interaction on map elements.
 

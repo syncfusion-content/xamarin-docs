@@ -9,38 +9,99 @@ documentation : ug
 
 # ToolbarCustomization
 
-You can customize the color palette and visibility of the toolbar.
+You can customize color palette, toolbar visibility and appearance of each toolbar item.
 
-## To customize the ColorPalette
 
-You can change the default colors of the ColorPalette in toolbar.
+## Customize toolbar items
 
-{% tabs %}
+SfImageEditor control supports to customize and configure the appearance of toolbar menu. You can customize image editor toolbar by adding respective FooterToolbarItem and HeaderToolbarItem 
 
-{% highlight XAML %}
-  
-    <imageeditor:SfImageEditor.ColorPalette>
-			<Color>Yellow</Color>
-			<Color>Pink</Color>
-			<Color>Violet</Color>
-		</imageeditor:SfImageEditor.ColorPalette>  
-      
-{% endhighlight %}
+#### ToolbarItem
+
+You can customize each toolbar item with the help of `Text` and `Icon` properties. ImageEditor Toolbar menu contains set of header and footer menu items which helps to perform image editor actions
+and this can be categorized into the following types,
+
+1.HeaderToolbarItem
+2.FooterToolbarItem
+3.SubItems
+
+ 
+### Adding HeaderToolbarItem
+
+`HeaderToolbarItem` will be arranged on top of the image editor and you can customize header toolbar item with the help of Icon and Text as like below,
 
 {% highlight C# %}
 
-    ObservableCollection<Color> CustomColorPalette = new ObservableCollection<Color>()
-	{
-				Color.Yellow,
-				Color.Pink,
-				Color.Violet
-	};
-
-			editor.ColorPalette = CustomColorPalette;
+            editor.ToolbarSettings.ToolbarItems.Add(new HeaderToolbarItem() { Icon = ImageSource.FromResource("ImageEditor.share.png"), Text="Share" });
 
 {% endhighlight %}
 
-{% endtabs %}
+### Adding FooterToolbarItem   
+
+ `FooterToolbarItem` will be arranged on bottom of the image editor and you can customize footer toolbar item with the help of Icon and Text along with sub items.
+
+Refer to the below code snippet to customize footer toolbar item,
+
+{% highlight C# %}
+
+            editor.ToolbarSettings.ToolbarItems.Add(new FooterToolbarItem() { Icon = ImageSource.FromResource("ImageEditor.delete.png"), Text="Delete" });
+            editor.ToolbarSettings.ToolbarItems.Add(new FooterToolbarItem() { Icon = ImageSource.FromResource("ImageEditor.more.png"), Text="More" });
+
+{% endhighlight %}
+
+### Adding SubItems to the FooterToolbarItem
+
+`SubItems` only applicable for `FooterToolbarItem` and it represents grouped action of respective footer toolbar item. SubItems will be arranged above the footer toolbar item layout and you can also customize sub items appearance as like main toolbar items. 
+
+Refer to the below code snippet to customize sub items of footer toolbar item,
+
+{% highlight C# %}
+
+ 	editor.ToolbarSettings.ToolbarItems.Add(new FooterToolbarItem()
+            {
+                Text = "More",
+                Icon = ImageSource.FromResource("ImageEditor.Image.more.png"),
+                SubItems = new ObservableCollection<Syncfusion.SfImageEditor.XForms.ToolbarItem>()
+                {
+                   new ToolbarItem() {
+                Icon = ImageSource.FromResource("ImageEditor.Image.download.png")
+                },
+                   new ToolbarItem() {
+                Icon = ImageSource.FromResource("ImageEditor.Image.share.png")
+                } }
+            });
+
+{% endhighlight %}
+
+N> You can remove existing toolbar items(Text,Path,Shape,Transform,Reset,Undo,Redo and Save) from the image editor toolbarItems collection based on the index value. 
+
+You can change icon and text value dynamically for any of already added toolbar item based on the index as like below,
+
+{% highlight C# %}
+
+editor.ToolbarSettings.ToolbarItems[5].Text = "new item";
+editor.ToolbarSettings.ToolbarItems[3].Icon = ImageSource.FromResource("ImageEditor.Image.jpg");
+
+{% endhighlight %}
+
+
+### ToolbarItemSelected event 
+
+Whenever you tap the toolbar menu item, the `ToolbarItemSelected` event will be triggered and you can get the respective tapped toolbar item as an argument as shown below,
+
+{% highlight C# %}
+
+        public MainPage()
+        {
+            editor.ToolbarSettings.ToolbarItemSelected += ToolbarSettings_ToolbarItemSelected;
+        }
+
+        private void ToolbarSettings_ToolbarItemSelected(object sender, ToolbarItemSelectedEventArgs e)
+        {
+           DisplayAlert("Selected ToolbarItem is  " + e.ToolbarItem.Text, "Ok", "Cancel");
+        }
+
+{% endhighlight %}
 
 
 ## To hide/show toolbar
@@ -89,4 +150,33 @@ N> You can customize the icon by specifying its names namely, text, path, shapes
 ![SfImageEditor](ImageEditor_images/Toolbaritemvisibiliy.png)
 
 
+## To customize the ColorPalette
 
+You can change the default colors of the ColorPalette in toolbar.
+
+{% tabs %}
+
+{% highlight XAML %}
+  
+    <imageeditor:SfImageEditor.ColorPalette>
+			<Color>Yellow</Color>
+			<Color>Pink</Color>
+			<Color>Violet</Color>
+		</imageeditor:SfImageEditor.ColorPalette>  
+      
+{% endhighlight %}
+
+{% highlight C# %}
+
+    ObservableCollection<Color> CustomColorPalette = new ObservableCollection<Color>()
+	{
+				Color.Yellow,
+				Color.Pink,
+				Color.Violet
+	};
+
+			editor.ColorPalette = CustomColorPalette;
+
+{% endhighlight %}
+
+{% endtabs %}

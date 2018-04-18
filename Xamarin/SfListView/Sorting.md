@@ -9,20 +9,18 @@ documentation: ug
 
 # Sorting 
 
-The SfListView allows sorting the data either in ascending or descending order by using the [DataSource.SortDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~SortDescriptors.html) property. It also supports to sort the data based on the custom logic.
+The SfListView supports sorting the data either in ascending or descending order by using [DataSource.SortDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~SortDescriptors.html) property and by using the custom logic.
 
-## Programmatic sorting
+## Programmatic Sorting
 
-The SfListView allows sorting on its data by using the [DataSource.SortDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~SortDescriptors.html) property. A [SortDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.SortDescriptor.html) can be created for the property to be sorted, and add it into the `DataSource.SortDescriptors` collection.
+Sorting the data by creating the [SortDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.SortDescriptor.html) with required property name and direction and adding it into the [DataSource.SortDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~SortDescriptors.html) property.
 
-N> You can refresh the view by calling [SfListView.RefreshView()](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~RefreshView.html) method.
+`SortDescriptor` object holds the following three properties:
 
-SortDescriptor object holds the following three properties:
+* [PropertyName](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.DataSource.Portable~Syncfusion.DataSource.SortDescriptor~PropertyName.html): Describes the name of the sorted property.
+* [Direction](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.DataSource.Portable~Syncfusion.DataSource.SortDescriptor~Direction.html): Describes an object of type [ListSortDirection](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.ListSortDirection.html) that defines the sorting direction.
+* [Comparer](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.DataSource.Portable~Syncfusion.DataSource.SortDescriptor~Comparer.html): Describes the comparer to be applied when sorting take place.
 
- * PropertyName: Defines name of the sorted property.
- * Direction: Defines an object of type [ListSortDirection](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.ListSortDirection.html) that defines the sorting direction.
- * Comparer: Defines comparer to be applied when sorting takes place.
- 
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfListView x:Name="listView">
@@ -47,15 +45,11 @@ listView.RefreshView();
 
 N> It is mandatory to specify the `PropertyName` of `SortDescriptor`.
 
-The following screenshot shows the output rendered when sorting is applied:
-
 ![](SfListView_images/SfListView-Sorting.png)
 
-## Custom sorting
+## Custom Sorting
 
-The SfListView allows sorting items based on the custom logic. The custom sorting can be applied to either [SfListView.DataSource.SortComparer](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~SortComparer.html) property or [SortDescriptor.Comparer](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.SortDescriptor~Comparer.html) which is added into the [DataSource.SortDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~SortDescriptors.html) collection.
-
-To perform custom sorting for the underlying data based on the string length of the `ContactName`, follow the code example:
+Sort the items based on the custom logic and it can be applied to either [SfListView.DataSource.SortComparer](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~SortComparer.html) property or [SortDescriptor.Comparer](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.SortDescriptor~Comparer.html) which is added into the [DataSource.SortDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~SortDescriptors.html) collection.
 
 {% tabs %}
 {% highlight xaml %}
@@ -87,8 +81,7 @@ listView.DataSource.SortDescriptors.Add(new SortDescriptor()
 {% endhighlight %}
 {% endtabs %}
 
-To write custom comparer, follow the code example:
-
+{% tabs %}
 {% highlight c# %}
 public class CustomComparer : IComparer<object>, ISortDirection
 {
@@ -128,10 +121,11 @@ public class CustomComparer : IComparer<object>, ISortDirection
    }
 }
 {% endhighlight %}
+{% endtabs %}
 
-## Sort items on tapped header
+## Sort the Items on Header Tapped
 
-The SfListView allows sorting items on tapping the header by handling [ItemTapped](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTapped_EV.html) event.
+To apply the sorting when tapping the header, handle the [ItemTapped](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTapped_EV.html) event of the SfListView.
 
 {% tabs %}
 {% highlight xaml %}
@@ -169,8 +163,9 @@ listView.HeaderTemplate = new DataTemplate(() =>
 {% endhighlight %}
 {% endtabs %}
 
-When `ItemTapped` event is raised for the header, add [SortDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.SortDescriptor.html), and refresh the view as in the following code example:
+When the `ItemTapped` event is raised for the Header, add the [SortDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.SortDescriptor.html) and refresh the view.
 
+{% tabs %}
 {% highlight c# %}
 private void ListView_ItemTapped(object sender, Syncfusion.ListView.XForms.ItemTappedEventArgs e)
 {
@@ -183,7 +178,122 @@ private void ListView_ItemTapped(object sender, Syncfusion.ListView.XForms.ItemT
       PropertyName = "ContactName",
       Direction = ListSortDirection.Ascending
     });
-    listView.RefreshView();
   }
 }
 {% endhighlight %}
+{% endtabs %}
+
+## How To
+
+### Sort the Items along with Grouping
+ 
+The SfListView allows sorting the items along with grouping by adding the [DataSource.GroupDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~GroupDescriptors.html) and the [DataSource.SortDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~SortDescriptors.html) with required property name. 
+
+#### Sorting with Grouping Year
+
+Sorting the items along with grouping by using [KeySelector](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~KeySelector.html) based on retuning the year value of the data-time property.
+
+{% tabs %}
+{% highlight xaml %}
+<ContentPage xmlns:listView="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:dataSource="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable">
+  <ContentPage.Content>
+    <syncfusion:SfListView x:Name="listView" ItemsSource="{Binding Items}" ItemSize="50">
+      <syncfusion:SfListView.GroupHeaderTemplate>
+        <DataTemplate>
+		  <Grid>
+          <Label Text= "{Binding Key}" BackgroundColor="Teal" FontAttributes="Bold" TextColor="White"/>
+		  </Grid>
+        </DataTemplate>
+      </syncfusion:SfListView.GroupHeaderTemplate>
+    </syncfusion:SfListView>
+  </ContentPage.Content>
+</ContentPage>
+{% endhighlight %}
+{% highlight c# %}
+var listView = new SfListView();
+listView.ItemSize = 50;
+listView.ItemsSource = viewModel.Items;
+listView.GroupHeaderTemplate = new DataTemplate(() => 
+{
+   var grid = new Grid();
+   var headerLabel = new Label
+   {
+   TextColor = Color.White,
+   FontAttributes = FontAttributes.Bold,
+   BackgroundColor=Color.Teal
+   };
+   headerLabel.SetBinding(Label.TextProperty, new Binding("key"));
+   grid.Children.Add(headerLabel);
+   return grid;
+});
+listView.DataSource.GroupDescriptors.Add(new GroupDescriptor()
+{
+  PropertyName = "DateOfBirth",
+  KeySelector = (object obj1) =>
+  {
+   var item = (obj1 as Contacts);
+   return item.DateOfBirth.Year;
+  },
+});
+this.listView.DataSource.SortDescriptors.Add(new SortDescriptor()
+{
+  PropertyName = "DateOfBirth",
+  Direction = ListSortDirection.Ascending
+});
+{% endhighlight %}
+{% endtabs %}
+
+The following screenshot shows the output when items are sorted by year. You can download the entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewSample1205954757)
+
+![](SfListView_images/SfListView-Sorting1.png)
+
+#### Sorting with Grouping Month and Year
+
+Sorting the items along with grouping by using `KeySelector` based on retuning the month and year value of the data-time property.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfListView x:Name="listView">
+  <syncfusion:SfListView.DataSource>
+    <data:DataSource>
+	  <data:DataSource.GroupDescriptors>
+        <data:GroupDescriptor PropertyName="ContactName" />
+      </data:DataSource.GroupDescriptors>
+      <data:DataSource.SortDescriptors>
+        <data:SortDescriptor PropertyName="ContactName" Direction="Ascending"/>
+      </data:DataSource.SortDescriptors>
+    </dataSource:DataSource>
+  </syncfusion:SfListView.DataSource>
+</syncfusion:SfListView>
+{% endhighlight %}
+{% highlight c# %}
+public partial class MainPage : ContentPage
+{
+   public MainPage()
+   {
+       InitializeComponent();
+       listView.DataSource.GroupDescriptors.Add(new GroupDescriptor()
+       {
+           PropertyName = "DateOfBirth",
+           KeySelector = (object obj1) =>
+           {
+               var item = (obj1 as Contacts);
+               return item.DateOfBirth.Month + "/" + item.DateOfBirth.Year;
+           },
+           Comparer = new CustomGroupComparer()
+       });
+       this.listView.DataSource.SortDescriptors.Add(new SortDescriptor()
+       {
+           PropertyName = "DateOfBirth",
+           Direction = ListSortDirection.Ascending
+       });
+   }
+}
+{% endhighlight %}
+{% endtabs %}
+
+The following screenshot shows the output when items are sorted by month and year.
+
+![](SfListView_images/SfListView-Sorting2.png)
+

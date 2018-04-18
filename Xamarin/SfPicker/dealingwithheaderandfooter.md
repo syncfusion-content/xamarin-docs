@@ -42,10 +42,20 @@ SfPicker allows providing custom text to its header by setting `SfPicker.HeaderT
 
 <syncfusion:SfPicker
 
-x:Name="picker"
+x:Name="picker">
 
-HeaderText="Select a Date" />
+  <syncfusion:SfPicker.HeaderView>
 
+<Grid>
+
+<Button Text="Select a Color" TextColor="Red" />
+
+</Grid>
+
+</syncfusion:SfPicker.HeaderView>
+
+  </syncfusion:SfPicker>
+ 
 {% endhighlight %}
 
 {% highlight c# %}

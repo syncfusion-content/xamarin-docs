@@ -91,31 +91,6 @@ This page lists the assemblies required for each control to be referred in each 
 </tr>
 </table>
 
-## Progress Bar
-
-<dl>
-  <dt>NuGet</dt>
-  <dd>Syncfusion.Xamarin.SfProgressBar</dd>
-</dl>
-
-**Assemblies**
-
-<table>
-<tr>
-<td>PCL</td>
-<td>Syncfusion.SfProgressBar.XForms.dll<br/></td>
-</tr>
-<tr>
-<td>Android</td>
-<td>Syncfusion.SfProgressBar.XForms.Android.dll<br/>Syncfusion.SfProgressBar.XForms.dll<br/></td>
-</tr>
-<tr>
-<td>iOS</td>
-<td>Syncfusion.SfProgressBar.XForms.iOS.dll<br/>Syncfusion.SfProgressBar.XForms.dll<br/></td>
-</tr>
-</table>
-
-
 ## SfDataGrid
 
 <dl>
@@ -212,15 +187,15 @@ This page lists the assemblies required for each control to be referred in each 
 <table>
 <tr>
 <td>PCL</td>
-<td>Syncfusion.Compression.Portable.dll<br/>Syncfusion.Pdf.Portable.dll<br/>Syncfusion.SfPdfViewer.XForms.dll<br/></td>
+<td>Syncfusion.Compression.Portable.dll<br/>Syncfusion.Pdf.Portable.dll<br/>Syncfusion.SfPdfViewer.XForms.dll<br/>Syncfusion.SfBusyIndicator.XForms.dll<br/></td>
 </tr>
 <tr>
 <td>Android</td>
-<td>Syncfusion.Compression.Portable.dll<br/>Syncfusion.Pdf.Portable.dll<br/>Syncfusion.SfPdfViewer.XForms.dll<br/>Syncfusion.SfPdfViewer.XForms.Android.dll<br/></td>
+<td>Syncfusion.Compression.Portable.dll<br/>Syncfusion.Pdf.Portable.dll<br/>Syncfusion.SfPdfViewer.XForms.dll<br/>Syncfusion.SfPdfViewer.XForms.Android.dll<br/>Syncfusion.SfBusyIndicator.XForms.dll<br/>Syncfusion.SfBusyIndicator.XForms.Android.dll<br/>Syncfusion.SfBusyIndicator.Android.dll<br/></td>
 </tr>
 <tr>
 <td>iOS</td>
-<td>Syncfusion.Compression.Portable.dll<br/>Syncfusion.Pdf.Portable.dll<br/>Syncfusion.SfPdfViewer.XForms.dll<br/>Syncfusion.SfPdfViewer.XForms.iOS.dll<br/></td>
+<td>Syncfusion.Compression.Portable.dll<br/>Syncfusion.Pdf.Portable.dll<br/>Syncfusion.SfPdfViewer.XForms.dll<br/>Syncfusion.SfPdfViewer.XForms.iOS.dll<br/>Syncfusion.SfBusyIndicator.XForms.dll<br/>Syncfusion.SfBusyIndicator.XForms.iOS.dll<br/>Syncfusion.SfBusyIndicator.iOS.dll<br/></td>
 </tr>
 <tr>
 <td>UWP</td>
@@ -331,6 +306,32 @@ This page lists the assemblies required for each control to be referred in each 
 <td>Syncfusion.Presentation.Portable.dll<br/>Syncfusion.Compression.Portable.dll<br/>Syncfusion.OfficeChart.Portable.dll<br/></td>
 </tr>
 </table>
+
+## Progress Bar
+
+<dl>
+  <dt>NuGet</dt>
+  <dd>Syncfusion.Xamarin.SfProgressBar</dd>
+</dl>
+
+**Assemblies**
+
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfProgressBar.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfProgressBar.XForms.Android.dll<br/>Syncfusion.SfProgressBar.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfProgressBar.XForms.iOS.dll<br/>Syncfusion.SfProgressBar.XForms.dll<br/></td>
+</tr>
+</table>
+
+
 
 ## XlsIO
 

@@ -13,11 +13,93 @@ This section explains the steps required to work with progress bar in Xamarin.Fo
 
 ## Add progress bar reference
 
-Refer to this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation/) to know how to obtain and reference Essential Studio components in your solution; then refer to this link to know about the assemblies required for adding progress bar to your project.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add progress bar to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfProgressBar](https://www.nuget.org/packages/Syncfusion.Xamarin.SfProgressBar/), and then install it.
 
-I>After adding the reference, an additional step is required for iOS and UWP projects. You should create an instance of the progress bar renderer in iOS and UWP projects as shown in this [KB article](https://www.syncfusion.com/kb/8560/how-to-resolve-progress-bar-not-rendering-issue-in-ios-and-uwp).
+![](overview_images/nuget.jpeg)
 
-I>For UWP alone, one more additional step is required if the project is built-in release mode with .NET Native tool chain enabled. You can refer to the [KB article](https://www.syncfusion.com/kb/8508/how-to-make-syncfusion-xamarin-forms-progress-bar-to-work-in-uwp-in-release-mode-when-net-native-tool) for more details.
+To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac#) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows#). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#progress-bar) to know about the dependent assemblies for progress bar.
+
+N>Install the same version of the progress bar NUGET in all the projects.
+
+## Launching the application on each platform with progress bar 
+
+To use the progress bar inside an application, each platform application requires some additional configurations. The configurations vary from platform to platform and is discussed in the following sections:
+
+### iOS
+
+To launch the progress bar in iOS, call the SfLinearProgressBarRenderer.Init() or SfCircularProgressBarRenderer.Init() in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework initialization and before the LoadApplication is called as demonstrated in the following code sample.
+
+{% highlight C# %} 
+
+public override bool FinishedLaunching(UIApplication app, NSDictionary options) 
+{ 
+    … 
+    global::Xamarin.Forms.Forms.Init();
+
+    // Add the below line if you are using SfLinearProgressBar.
+    Syncfusion.XForms.iOS.ProgressBar.SfLinearProgressBarRenderer.Init();
+
+    // Add the below line if you are using SfCircularProgressBar.  
+    Syncfusion.XForms.iOS.ProgressBar.SfCircularProgressBarRenderer.Init();
+
+    LoadApplication(new App()); 
+    …
+}
+
+{% endhighlight %}
+
+### Universal Windows Platform (UWP)
+
+To launch the progress bar in UWP, initialize the SfLinearProgressRenderer() or SfCircularProgressBarRenderer()  based on your requirement in the MainPage constructor before the LoadApplication is called as demonstrated in the following code sample.
+
+{% highlight C# %} 
+
+public MainPage() 
+{ 
+    … 
+
+  // Add the below line if you are using SfLinearProgressBar. 
+  new Syncfusion.XForms.UWP.ProgressBar.SfLinearProgressRenderer(); 
+
+  // Add the below line if you are using SfCircularProgressBar. 
+  new Syncfusion.XForms.UWP.ProgressBar.SfCircularProgressBarRenderer();
+
+  LoadApplication (new App ()); 
+  … 
+}
+
+{% endhighlight %}
+
+In addition to the above configurations, you need to initialize the progress bar assemblies in App.xaml.cs in UWP project as shown in the below code snippets. This is required to deploy application with progress bar in `Release` mode in UWP platform.
+
+{% highlight C# %} 
+
+// In App.xaml.cs 
+protected override void OnLaunched(LaunchActivatedEventArgs e)
+{ 
+   … 
+   if (rootFrame == null) 
+   { 
+      List<Assembly> assembliesToInclude = new List<Assembly>();
+
+      // Add the below line if you are using SfLinearProgressBar.
+      assembliesToInclude.Add(typeof(Syncfusion.XForms.UWP.ProgressBar.SfLinearProgressRenderer).GetTypeInfo().Assembly);
+
+      // Add the below line if you are using SfCircularProgressBar. 
+      assembliesToInclude.Add(typeof(Syncfusion.XForms.UWP.ProgressBar.SfCircularProgressBarRenderer).GetTypeInfo().Assembly);
+
+      Xamarin.Forms.Forms.Init(e, assembliesToInclude); 
+   } 
+… 
+}
+
+
+{% endhighlight %}
+
+### Android
+
+The Android platform does not require any additional configuration to render the progress bar.
+
 
 ## Initialize the progress bar
 
@@ -52,10 +134,10 @@ There are two variants of progress bar: SfLinearProgressBar and SfCircularProgre
 
 {% highlight C# %} 
 
-//// Using linear progress bar. 
+// Using linear progress bar. 
 SfLinearProgressBar linearProgressBar = new SfLinearProgressBar { Progress = 75 };
 
-//// Using circular progress bar.
+// Using circular progress bar.
 SfCircularProgressBar circularProgressBar = new SfCircularProgressBar { Progress = 75 };
 
 {% endhighlight %}
@@ -87,10 +169,10 @@ When the progress of a task cannot be shown determinately, you can enable indete
 
 {% highlight C# %} 
 
-//// Using linear progress bar.
+// Using linear progress bar.
 SfLinearProgressBar linearProgressBar = new SfLinearProgressBar { IsIndeterminate = true };
 
-//// Using circular progress bar.
+// Using circular progress bar.
 SfCircularProgressBar circularProgressBar = new SfCircularProgressBar { IsIndeterminate = true };
 {% endhighlight %}
 
@@ -112,10 +194,10 @@ To visualize the progress of a multiple sequential task, split the progress bar 
 
 {% highlight C# %} 
 
-//// Using linear progress bar.
+// Using linear progress bar.
 SfLinearProgressBar linearProgressBar = new SfLinearProgressBar { Progress = 75, SegmentCount = 4 };
 
-//// Using circular progress bar.
+// Using circular progress bar.
 SfCircularProgressBar circularProgressBar = new SfCircularProgressBar { Progress = 75, SegmentCount = 4 };
 {% endhighlight %}
 
@@ -142,11 +224,11 @@ You can customize the color of the progress indicator and track by defining the 
 
 {% highlight C# %} 
 
-//// Using linear progress bar.
+// Using linear progress bar.
 SfLinearProgressBar linearProgressBar = new SfLinearProgressBar{Progress = 75,TrackColor = Color.FromHex("#33ffbe06"),ProgressColor = Color.FromHex("#FFffbe06")};
 SfLinearProgressBar sfLinearProgressBar = new SfLinearProgressBar{Progress = 75,TrackColor = Color.FromHex("#3351483a"),ProgressColor = Color.FromHex("#FF51483a")};
 
-//// Using circular progress bar.
+// Using circular progress bar.
 SfCircularProgressBar circularProgressBar = new SfCircularProgressBar{Progress = 75,TrackColor = Color.FromHex("#33c15244"),ProgressColor = Color.FromHex("#FFc15244")};
 SfCircularProgressBar sfCircularProgressBar = new SfCircularProgressBar{Progress = 75,TrackColor = Color.FromHex("#3390a84e"),ProgressColor = Color.FromHex("#FF90a84e")};
 {% endhighlight %}
@@ -155,4 +237,4 @@ SfCircularProgressBar sfCircularProgressBar = new SfCircularProgressBar{Progress
 ![](overview_images/style.png)
 
 
-You can find the complete Getting Started sample from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ProgressBar-929614915.zip).
+You can find the complete getting started sample from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ProgressBar-929614915.zip).

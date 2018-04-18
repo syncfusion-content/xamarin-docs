@@ -104,25 +104,31 @@ The ItemTemplate provides common template with different data, whereas if differ
 
 {% highlight C# %}
 
-SfRotator rotator = new SfRotator();	
-SfRotatorItem rotatorItem = new SfRotatorItem ();
-Label label = new Label ();
-label.Text ="  Item No: 1 ";
+SfRotator rotator = new SfRotator();
+SfRotatorItem item = new SfRotatorItem();
+List<SfRotatorItem> rotatorItem = new List<SfRotatorItem>();
+Label label = new Label();
+label.Text = "Item no 1";
 label.BackgroundColor = Color.Gray;
-label.FontSize = 20;
+label.FontSize = 50;
 label.VerticalTextAlignment = TextAlignment.Center;
-rotatorItem.ItemContent =label;
-rotator.DataSource.Add (rotatorItem);	
+item.ItemContent = label;
+rotatorItem.Add((item));
+rotator.ItemsSource = rotatorItem;
 
-SfRotatorItem rotatorItem1 = new SfRotatorItem ();
-Image image = new Image ();
-image.Source = ImageSource.FromFile("image2.png");
+
+SfRotatorItem item = new SfRotatorItem();
+List<SfRotatorItem> rotatorItem1 = new List<SfRotatorItem>();
+Image image = new Image();
+image.Source = ImageSource.FromFile("movies.png");
 image.Aspect = Aspect.AspectFit;
 image.VerticalOptions = LayoutOptions.Center;
 image.HeightRequest = 400;
 image.WidthRequest = 400;
-rotatorItem1.ItemContent =image;
-rotator.DataSource.Add (rotatorItem1);
+item.ItemContent = image;
+rotatorItem1.Add(item);
+rotator.ItemsSource = rotatorItem1;         
+ 
 
 this.Content=rotator;		
 	  
@@ -151,7 +157,7 @@ public partial class RotatorControlPage : ContentPage
 		collectionOfItems.Add(new SfRotatorItem() { Image = "movie4.png" });
 		collectionOfItems.Add(new SfRotatorItem() { Image = "movie5.png" });
 
-		rotator.DataSource = collectionOfItems;
+		rotator.ItemsSource = collectionOfItems;
 		this.Content = rotator;
 
 	}

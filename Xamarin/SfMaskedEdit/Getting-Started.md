@@ -14,51 +14,10 @@ This section explains you the steps required to configure a `SfMaskedEdit` contr
 
 ## Add SfMaskedEdit reference
 
-After installing the Essential Studio for Xamarin, you can find all the required assemblies in the installation folders,
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add maskededit to your project, open the NuGet package manager in Visual Studio, and search for "[syncfusion.xamarin.sfmaskededit](https://www.nuget.org/packages/Syncfusion.Xamarin.SfMaskedEdit)", and then install it. 
 
-**{Syncfusion Essential Studio Installed location}\Essential Studio{Essential Studio version}\Xamarin\lib**
+![](SfMaskedEditImages/nuget.png) 
 
-Example: C:\Program Files (x86)\Syncfusion\Essential Studio\16.1.0.24\Xamarin\lib
-
-To know about the assemblies required for adding ‘SfMaskedEdit’ to your project, refer to the following table: 
-
-
-### Assemblies
-<table>
-<tr>
-<td>
-PCL/.NET Standard
-</td>
-<td>
-Syncfusion.SfMaskedEdit.XForms.dll
-</td>
-</tr>
-<tr>
-<td>
-Android
-</td>
-<td>
-Syncfusion.SfMaskedEdit.XForms.dll
-Syncfusion.SfMaskedEdit.XForms.Android.dll
-</td>
-</tr>
-<tr>
-<td>
-iOS
-</td>
-<td>
-Syncfusion.SfMaskedEdit.XForms.dll
-Syncfusion.SfMaskedEdit.XForms.iOS.dll
-</td>
-</tr>
-<tr>
-<td>
-UWP
-</td>
-<td>
-Syncfusion.SfInput.UWP.dll<br/>Syncfusion.SfShared.UWP.dll<br/>Syncfusion.SfMaskedEdit.XForms.dll<br/>Syncfusion.SfMaskedEdit.XForms.UWP.dll<br/></td>
-</tr>
-</table>
 After adding the assembly reference, an additional step is required for iOS and UWP projects.
 
 ### Additional step for iOS
@@ -175,5 +134,9 @@ maskedEdit.Mask = "00/00/0000";
 This mask expression allows only numeric inputs in the places of 0.
 
 Refer to this [link](masktype.html) to know more about the Mask characters and Mask Types available in SfMaskedEdit control.
+
+Run the project and check if you get the following output to make sure that you have configured your project properly to add `SfMaskedEdit`.
+
+![](SfMaskedEditImages/GettingStarted.png)
 
 You can find the complete getting started sample from this [link](http://files2.syncfusion.com/Xamarin.Forms/Samples/MaskedEdit_GettingStarted.zip).

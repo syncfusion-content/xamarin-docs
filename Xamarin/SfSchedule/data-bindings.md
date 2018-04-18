@@ -65,8 +65,7 @@ this.Content = schedule;
 
  ![](PopulatingAppointments_images/minheight.png)
 
->**Note**:
-
+>**NOTE**
 * `MinHeight` value will be set, when the an appointment height (duration) value lesser than MinHeight. 
 * Appointment height (duration) value will be set, when the appointment height (duration) value greater than `MinHeight`.
 * TimeInterval value will be set, when Minimum Height greater than TimeInterval with lesser appointment height (duration).
@@ -454,7 +453,7 @@ schedule.DataSource = Meetings;
 You can download the entire source code of this demo for Xamarin.Forms from
 here [Recurrence_Appointment](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Recurrence_Appointment-1708142299.zip).
 
->**Note**:  
+>**NOTE**
 In Schedule "Xamarin.Forms UWP", there is no need to set IsRecursive property for recurrence appointments. When a RecurrenceRule is set to schedule appointment, value of IsRecursive property will be set as true automatically for these appointments. So even if IsRecursive is set as false, there will be no effect on recurring appointments.
 
 ![](PopulatingAppointments_images/RecurrenceAppointment.png)
@@ -538,7 +537,8 @@ private void Schedule_OnAppointmentLoadedEvent(object sender, AppointmentLoadedE
 
 ![](PopulatingAppointments_images/appointmentstyle_event.png)
 
->**Note**:  FontAttributes and FontFamily are native to the platform. Custom font and the font which are not available in the specified platform will not be applied.
+>**NOTE**
+FontAttributes and FontFamily are native to the platform. Custom font and the font which are not available in the specified platform will not be applied.
 
 ## Customize appearance using Custom View
 Default appointment UI can be changed using `view` property passed through `AppointmentLoadedEventArgs`.
@@ -712,7 +712,7 @@ Used button to display day appointment and Label to display all day appointment.
 
 ### Customize Font Appearance
 
-you can change the appearance of Font by setting the  [FontFamily](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~FontFamily.html) property of [AppointmentStyle]([FontFamily](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~FontFamily.html)) property in Schedule.
+you can change the appearance of Font by setting the  [FontFamily](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~FontFamily.html) property of [AppointmentStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle.html) property in Schedule.
 
 {% tabs %}
 {% highlight xaml %}
@@ -767,7 +767,7 @@ private void Schedule_CellLongPressed(object sender, CellTappedEventArgs e)
 Schedule commands allow data bindings to make method calls directly to a ViewModel, which supports tapped, double tapped, long pressed touch actions and visible date changed action.
 
 •    [CellTappedCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~CellTappedCommand.html)
-•    [CellDoubleTappedCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~CellDoubleTappedCommand.htmll)
+•    [CellDoubleTappedCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~CellDoubleTappedCommand.html)
 •    [CellLongPressedCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~CellLongPressedCommand.html)
 •    [VisibleDatesChangedCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~VisibleDatesChangedCommand.html)
 

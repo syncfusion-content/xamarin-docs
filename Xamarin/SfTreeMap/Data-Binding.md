@@ -2,7 +2,7 @@
 layout: post
 title: DataBinding
 description: databinding
-platform:  Xamarin.Forms
+platform:  xamarin
 control: TreeMap
 documentation: ug
 ---

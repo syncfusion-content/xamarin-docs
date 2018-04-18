@@ -9,10 +9,9 @@ documentation: ug
 
 # SfDataGrid
 
-The SfDataGrid control is available in Xamarin.Forms, Xamarin.Android and Xamarin.iOS. It helps you to create entirely customizable features used to display and manipulate a large amount of data in a tabular view. The following table lists the key features of the SfDataGrid in Xamarin.Forms, Xamarin.Android and Xamarin.iOS.
+The data grid control is available in Xamarin.Forms, Xamarin.Android, and Xamarin.iOS. This helps to create entirely customizable features and is used to display and manipulate large amounts of data in a tabular view. The following table lists the key features of this control in Xamarin.Forms, Xamarin.Android, and Xamarin.iOS.
 
-I> Xamarin.Forms is unique by offering a single language(C#) and runtime that works across all three mobile platforms of iOS, Android, and UWP. So SfDataGrid for Xamarin.Forms works in all three platforms.
-
+I> Xamarin.Forms is unique and offers a single language(C#) and runtime that works across all the three mobile platforms of iOS, Android, and UWP. So, the data grid for Xamarin.Forms works in all the three platforms.
 
 <table>
 <tr>
@@ -22,7 +21,7 @@ I> Xamarin.Forms is unique by offering a single language(C#) and runtime that wo
 <th>Xamarin.iOS</th>
 </tr>
 <tr>
-<td>Diagonal Scrolling</td>
+<td>Diagonal scrolling</td>
 <td><i class="fa fa-check"></i></td>
 <td><i class="fa fa-check"></i></td>
 <td><i class="fa fa-check"></i></td>
@@ -34,7 +33,7 @@ I> Xamarin.Forms is unique by offering a single language(C#) and runtime that wo
 <td><i class="fa fa-check"></i></td>
 </tr>
 <tr>
-<td>Custom Sorting</td>
+<td>Custom sorting</td>
 <td><i class="fa fa-check"></i></td>
 <td><i class="fa fa-check"></i></td>
 <td><i class="fa fa-check"></i></td>
@@ -46,7 +45,7 @@ I> Xamarin.Forms is unique by offering a single language(C#) and runtime that wo
 <td><i class="fa fa-check"></i></td>
 </tr>
 <tr>
-<td>Custom Grouping</td>
+<td>Custom grouping</td>
 <td><i class="fa fa-check"></i></td>
 <td><i class="fa fa-check"></i></td>
 <td><i class="fa fa-check"></i></td>
@@ -70,7 +69,7 @@ I> Xamarin.Forms is unique by offering a single language(C#) and runtime that wo
 <td><i class="fa fa-check"></i></td>
 </tr>
 <tr>
-<td>Resizing Columns</td>
+<td>Resizing columns</td>
 <td><i class="fa fa-check"></i></td>
 <td><i class="fa fa-check"></i></td>
 <td><i class="fa fa-check"></i></td>
@@ -82,13 +81,13 @@ I> Xamarin.Forms is unique by offering a single language(C#) and runtime that wo
 <td><i class="fa fa-check"></i></td>
 </tr>
 <tr>
-<td>Load More</td>
+<td>Load more</td>
 <td><i class="fa fa-check"></i></td>
 <td><i class="fa fa-check"></i></td>
 <td><i class="fa fa-check"></i></td>
 </tr>
 <tr>
-<td>Pull To Refresh</td>
+<td>Pull to refresh</td>
 <td><i class="fa fa-check"></i></td>
 <td><i class="fa fa-check"></i></td>
 <td><i class="fa fa-check"></i></td>
@@ -100,25 +99,25 @@ I> Xamarin.Forms is unique by offering a single language(C#) and runtime that wo
 <td><i class="fa fa-check"></i></td>
 </tr>
 <tr>
-<td>Column Drag and Drop</td>
+<td>Column drag and drop</td>
 <td><i class="fa fa-check"></i></td>
 <td><i class="fa fa-check"></i></td>
 <td><i class="fa fa-check"></i></td>
 </tr>
 <tr>
-<td>Row Drag and Drop</td>
+<td>Row drag and drop</td>
 <td><i class="fa fa-check"></i></td>
 <td><i class="fa fa-check"></i></td>
 <td><i class="fa fa-check"></i></td>
 </tr>
 <tr>
-<td>Template Column</td>
+<td>Template column</td>
 <td><i class="fa fa-check"></i></td>
 <td><i class="fa fa-times"></i></td>
 <td><i class="fa fa-times"></i></td>
 </tr>
 <tr>
-<td>Custom Cell</td>
+<td>Custom cell</td>
 <td><i class="fa fa-times"></i></td>
 <td><i class="fa fa-check"></i></td>
 <td><i class="fa fa-check"></i></td>
@@ -130,7 +129,7 @@ I> Xamarin.Forms is unique by offering a single language(C#) and runtime that wo
 <td><i class="fa fa-check"></i></td>
 </tr>
 <tr>
-<td>Conditional Styles</td>
+<td>Conditional styles</td>
 <td><i class="fa fa-check"></i></td>
 <td><i class="fa fa-times"></i></td>
 <td><i class="fa fa-times"></i></td>
@@ -148,13 +147,13 @@ I> Xamarin.Forms is unique by offering a single language(C#) and runtime that wo
 <td><i class="fa fa-check"></i></td>
 </tr>
 <tr>
-<td>Column Freezing</td>
+<td>Column freezing</td>
 <td><i class="fa fa-check"></i></td>
 <td><i class="fa fa-check"></i></td>
 <td><i class="fa fa-check"></i></td>
 </tr>
 <tr>
-<td>Row Height Customization</td>
+<td>Row height customization</td>
 <td><i class="fa fa-check"></i></td>
 <td><i class="fa fa-check"></i></td>
 <td><i class="fa fa-check"></i></td>

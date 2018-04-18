@@ -2,7 +2,7 @@
 layout: post
 title: Character Dimensions of DigitalGauge
 description: Learn how set the Character Dimensions in DigitalGauge
-platform: Xamarin.Forms
+platform: xamarin 
 control: DigitalGauge
 documentation: ug
 ---

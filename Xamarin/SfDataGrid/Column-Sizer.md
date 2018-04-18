@@ -290,10 +290,10 @@ public class CustomColumnSizer : GridColumnSizer
         var column = columns.ToList();
         var totalRemainingStarValue = columnsWidth;
         double removedWidth = 0;
-        bool isremoved;
+        bool isRemoved;
         while (column.Count > 0)
         {
-            isremoved = false;
+            isRemoved = false;
             removedWidth = 0;
             var columnsCount = 0;
             foreach (var data in column)
@@ -312,7 +312,7 @@ public class CustomColumnSizer : GridColumnSizer
 
             if (starWidth != computeWidth && starWidth > 0)
             {
-                isremoved = true;
+                isRemoved = true;
                 column.Remove(getColumn);
                 foreach (var remColumn in removedColumn)
                 {
@@ -326,7 +326,7 @@ public class CustomColumnSizer : GridColumnSizer
                 totalRemainingStarValue += removedWidth;
             }
             totalRemainingStarValue = totalRemainingStarValue - computeWidth;
-            if (!isremoved)
+            if (!isRemoved)
             {
                 column.Remove(getColumn);
                 if (!removedColumn.Contains(getColumn))

@@ -2,7 +2,7 @@
 layout: post
 title: Layout
 description: layout
-platform: Xamarin.Forms
+platform: xamarin
 control: TreeMap
 documentation: ug
 ---

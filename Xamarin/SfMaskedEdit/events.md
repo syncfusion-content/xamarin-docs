@@ -70,6 +70,8 @@ private void MaskedEdit_OnValueChanged(object sender, Syncfusion.XForms.MaskedEd
 {% endhighlight %}
 {% endtabs %}
 
+![](SfMaskedEditImages/ValueChangedevent.png)
+
 ## MaskInputRejected event
 
 Occurs when your input or assigned character does not match the corresponding format element of the input mask. The event arguments are type of `MaskInputRejectedEventArgs` and expose the following properties:
@@ -110,5 +112,7 @@ private void MaskedEdit_OnMaskInputRejected(object sender, MaskInputRejectedEven
 
 {% endhighlight %}
 {% endtabs %}
+
+![](SfMaskedEditImages/MaskInputRejectedevent.png)
 
 This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Forms/Samples/MaskedEdit_Events.zip).

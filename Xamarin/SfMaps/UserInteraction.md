@@ -1,172 +1,242 @@
 ---
 layout: post
-title: Interactive features of Maps control for Xamarin.Forms
-description: How to interact with Map elements effectively
+title: User Interaction
+description: This section describes the user interaction on maps control.
 platform: xamarin
 control: SfMaps
 documentation: ug
 ---
+# User interaction
 
-# User Interaction
+Options such as zooming, panning, and selection enable the effective interaction on map elements.
 
-Options like zooming, panning, and map selection enables the effective interaction on Map elements.
+## Selection
 
-## Map selection
-  
-  Each shape in the map can be selected and unselected when interacted with shapes. There are two ways to select the map shapes.
+Each shape in a map can be selected or deselected when interacted with shapes. Map shapes can be selected using the following two ways:
 
-  * Single Selection
+* Single Selection
+* Multi Selection
 
-  * Multi Selection
+The selected map shapes are differentiated by their fill. The [`SelectedShapeColor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeSetting~SelectedShapeColor.html#) of [`ShapeSettings`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShapeSettings.html#) property gets or sets the selected shape color. The [`SelectedShapeStroke`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeSetting~SelectedShapeStroke.html#) property is used to customize the selected shape border.
 
-  The selected map shapes is differentiate by its fill. `SelectedShapeColor` of ShapeSetting is the API that is used to get or set the selected shape color. `SelectionStrokeWidth` property is used to customize the selected shape border.
-  
+### Single selection
 
-### Single Selection
-     
- Single selection allows only one map shape to be selected at a time. You can select the shape by tapping on the shape.By default single selection is enabled when EnableSelection is set to true. Single selection is enabled by "SelectionMode.Single ” property of ShapeFileLayer. When EnableSelection is set to true, then the mapshape can be selected. When it is set to false, the shapes cannot be selected. When any other shape or the map area is selected, then the shape that is already selected is unselected.
+Single selection allows you to select only one shape at a time. You can select the shape by tapping it. By default, the single selection is enabled when the [`EnableSelection`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~EnableSelection.html#) is set to true. You can also enable the single selection by  setting the [`SelectionMode`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~SelectionMode.html#) property of ShapeFileLayer to “Single”. When selecting or tapping the rest of the area, the selected shape will be deselected.
 
 {% tabs %}
 
-{% highlight xaml %}
-        
-       <SfMaps:ShapeFileLayer EnableSelection="true" SelectionMode="Single">
-       <SfMaps:ShapeFileLayer:ShapeSetting>
-       <SfMaps:ShapeSetting SelectedShapeColor="#BC5353" >                                
-       </SfMaps:ShapeFileLayer:ShapeSetting>
-       </SfMaps:ShapeFileLayer>               	  
+{% highlight xml %}
+<maps:SfMaps x:Name="sfmap"    BackgroundColor="White" >
 
+<maps:SfMaps.Layers >
+
+<maps:ShapeFileLayer Uri="usa_state.shp" EnableSelection="True" 
+
+SelectionMode="Single"  >
+
+<maps:ShapeFileLayer.ShapeSettings>
+
+<maps:ShapeSetting SelectedShapeColor="Green" SelectedShapeStroke="Black" SelectedShapeStrokeThickness="1" />
+
+</maps:ShapeFileLayer.ShapeSettings>
+
+</maps:ShapeFileLayer>
+
+</maps:SfMaps.Layers>
+
+</maps:SfMaps>
 
 {% endhighlight %}
 
+{% highlight c# %}
 
- {% highlight c# %}
-     
-      ShapeFileLayer layer = new ShapeFileLayer();
-      layer.SelectionMode = SelectionMode.Single;
-      layer.EnableSelection = true;
-      ShapeSetting setting = new ShapeSetting ();
-      setting.SelectedShapeColor = Color.FromHex("#BC5353");
-      layer.ShapeSettings = setting;
+SfMaps map = new SfMaps();
+
+map.BackgroundColor = Color.White;
+
+ShapeFileLayer layer = new ShapeFileLayer();
+
+layer.EnableSelection = true;
+
+layer.SelectionMode = SelectionMode.Single;
+
+ShapeSetting shapeSetting = new ShapeSetting();
+
+shapeSetting.SelectedShapeColor = Color.Green;
+
+shapeSetting.SelectedShapeStroke = Color.Black;
+
+shapeSetting.SelectedShapeStrokeThickness = 1;      
+
+layer.ShapeSettings = shapeSetting;
+
+map.Layers.Add(layer);
+
+this.Content = map;
 
 {% endhighlight %}
 
 {% endtabs %}
 
+![](Images/UserInteraction_img1.jpeg)
 
-![](Images/Selection.png)
 
+### Multi selection
 
-### Multi Selection
-     
-   Multi selection allows to select multiple mapshapes at a time. You can select the many mapshape by tapping on the shape. To enable this feature, set the selectionMode property as “multiple” along with the enableSelection property is true. When EnableSelection is set to false, the shapes cannot be selected. 
+Multi selection allows you to select the multiple shapes at a time. You can select many shapes by tapping them. To enable this feature, set the [`SelectionMode`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~SelectionMode.html#) property to “Multiple” along with the [`EnableSelection`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~EnableSelection.html#) property. 
+
+I> Shapes cannot be selected when the [`EnableSelection`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~EnableSelection.html#) property is set to false.
 
 {% tabs %}
 
-{% highlight xaml %}
-        
-       <SfMaps:ShapeFileLayer EnableSelection="true" SelectionMode="Multiple">
-       <SfMaps:ShapeFileLayer:ShapeSetting>
-       <SfMaps:ShapeSetting SelectedShapeColor="#BC5353" >                                
-       </SfMaps:ShapeFileLayer:ShapeSetting>
-       </SfMaps:ShapeFileLayer>               	  
+{% highlight xml %}
 
+<maps:SfMaps x:Name="sfmap"    BackgroundColor="White" >
+
+<maps:SfMaps.Layers >
+
+<maps:ShapeFileLayer Uri="usa_state.shp" EnableSelection="True" 
+
+SelectionMode="Multiple"  >
+
+<maps:ShapeFileLayer.ShapeSettings>
+
+<maps:ShapeSetting SelectedShapeColor="Green" SelectedShapeStroke="Black" SelectedShapeStrokeThickness="1" />
+
+</maps:ShapeFileLayer.ShapeSettings>
+
+</maps:ShapeFileLayer>
+
+</maps:SfMaps.Layers>
+
+</maps:SfMaps>
 
 {% endhighlight %}
 
+{% highlight c# %}
 
- {% highlight c# %}
-     
-      ShapeFileLayer layer=new ShapeFileLayer();
-      layer.SelectionMode = SelectionMode.Multiple;
-      layer.EnableSelection = true;
-      ShapeSetting setting = new ShapeSetting ();
-      setting.SelectedShapeColor = Color.FromHex("#BC5353");
-      layer.ShapeSettings = setting;
+SfMaps map = new SfMaps();
+
+map.BackgroundColor = Color.White;
+
+ShapeFileLayer layer = new ShapeFileLayer();
+
+layer.Uri = "usa_state.shp";
+
+layer.EnableSelection = true;
+
+layer.SelectionMode = SelectionMode.Multiple;
+
+ShapeSetting shapeSetting = new ShapeSetting();
+
+shapeSetting.SelectedShapeColor = Color.Green;
+
+shapeSetting.SelectedShapeStroke = Color.Black;
+
+shapeSetting.SelectedShapeStrokeThickness = 1;
+
+layer.ShapeSettings = shapeSetting;
+
+map.Layers.Add(layer);
+
+this.Content = map;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-### Selected Items
-    
- SelectedItems property allows to select shapes without tapping or touching shapes by calling SelectedItems.Add(Object)  and also remove the SelectedItems by calling  SelectedItems.Remove(object).
-    
+![](Images/UserInteraction_img2.jpeg)
+
+
+### Selected items
+
+The SelectedItems property allows you to select the shapes without tapping or touching them.
+
+To select a shape and deselect it from the same collection without tapping or touching, just add the shape that is to be selected to the selected items collection.
+
+The following code sample explains the selection and deselection.
+
 {% tabs %}
 
 {% highlight c# %}
-     
-      var model = GetDataSource();
-      ShapeFileLayer layer=new ShapeFileLayer();
-      layer.ItemsSource=model;
-      SelectedItemButton.Clicked += (sender, e) =>
-       {
-        layer.SelectedItems.Add(model[0]);
-       };
-      RemoveItemButton.Clicked += (sender, e) =>
-       {
-        layer.SelectedItems.Remove(model[0]);
-       };
 
+var model = GetDataSource();
 
- {% endhighlight %}
+ShapeFileLayer layer=new ShapeFileLayer();
+
+layer.ItemsSource=model;
+
+SelectedItemButton.Clicked += (sender, e) =>
+
+{
+
+layer.SelectedItems.Add(model[4]);
+
+};
+
+RemoveItemButton.Clicked += (sender, e) =>
+
+{
+
+layer.SelectedItems.Remove(model[4]);
+
+};
+
+{% endhighlight %}
 
 {% endtabs %}
+
+![](Images/UserInteraction_img3.jpeg)
 
 
 ## Zooming
 
-The zooming feature enables you to zoom in and out the Map to show in-depth information. It is controlled by the `level` property of the Map. When the zoom level of the Map control is increased, the Map is zoomed in. When the zoom level is decreased, then the Map is zoomed out.
+The zooming feature enables you to zoom in and zoom out the map to show the in-depth information. The following properties are related to the zooming feature of maps control:
 
-The following properties are related to the zooming feature of the Maps control:
+[`EnableZooming`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.SfMaps~EnableZooming.html#) property is used to control whether to perform zooming or not.
 
-1. ZoomLevel
+[`MinZoom`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.SfMaps~MinZoom.html#) property sets the minimum level of zooming.
 
-2. EnableZooming
-
-3. MinZoom
-
-4. MaxZoom
-
-### Level
-
-The `ZoomLevel` property determines the Map’s scale size when zooming. The default value of `ZoomLevel` is 1. 
-
-N>level cannot be less than 1
-
-### EnableZoom
-
-The `EnableZooming` property enables or disables the zooming feature. 
-
-### MinZoom
-
-The `MinZoom` property is used to set the minimum zoom level of the Map. 
-
-### MaxZoom
-
-The `MaxZoom` property is used to set the maximum zoom level of the Map.
-
-### EnablePanning
-
-The panning feature enables the Map navigation. The `EnablePanning` property is used to enable or disable the panning support.
+[`MaxZoom`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.SfMaps~MaxZoom.html#) property sets the maximum level of zooming.
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight xml %}
 
-        <syncfusion:SfMap ZoomLevel="2" MinZoom="1" MaxZoom="10" EnablePanning="true" EnableZooming="true">                
-
-        </syncfusion:SfMap >       
-
+ <maps:SfMaps x:Name="sfmap"  EnableZooming="True" MinZoom="1" 
+                       MaxZoom="10"   BackgroundColor="White" />
 {% endhighlight %}
 
 {% highlight c# %}
 
-    maps.MinZoom = 1;  
-    maps.MaxZoom = 10;
-    maps.ZoomLevel = 2;
-    maps.EnableZooming = true;
-    maps.EnablePanning=true;
+ SfMaps map = new SfMaps(); 
+            map.EnableZooming = true;
+            map.MinZoom = 1;
+            map.MaxZoom = 10;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Panning
+
+Panning feature allows moving the visible area of the map when it is zoomed in. To enable panning, you have to set [`EnablePanning`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.SfMaps~EnablePanning.html#) property to true.
+
+{% tabs %}
+
+{% highlight xml %}
+
+ <maps:SfMaps x:Name="sfmap"  EnablePanning="True" EnableZooming="True" MinZoom="1" 
+                       MaxZoom="10"   BackgroundColor="White" />
+{% endhighlight %}
+
+{% highlight c# %}
+
+ SfMaps map = new SfMaps();
+ map.EnablePanning = true;
+            map.EnableZooming = true;
+            map.MinZoom = 1;
+            map.MaxZoom = 10;
 
 {% endhighlight %}
 

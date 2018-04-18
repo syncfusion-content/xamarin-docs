@@ -12,9 +12,8 @@ documentation: ug
 
 {% tabs %}
 {% highlight xaml %}
-<schedule:SfSchedule 
-		x:Name="schedule" 
-		ScheduleView="MonthView">
+<schedule:SfSchedule x:Name="schedule"
+                     ScheduleView="MonthView">
 </schedule:SfSchedule>
 {% endhighlight %}
 {% highlight c# %}
@@ -30,14 +29,12 @@ In `MonthView`, appointments are not viewed in the month cell instead appointmen
 
 {% tabs %}
 {% highlight xaml %}
-<schedule:SfSchedule
-	  x:Name="schedule"
-	  ScheduleView="MonthView">
-	<schedule:SfSchedule.MonthViewSettings>
-		<schedule:MonthViewSettings
-				AppointmentIndicatorCount = "2" >
-		</schedule:MonthViewSettings>
-	</schedule:SfSchedule.MonthViewSettings>
+<schedule:SfSchedule x:Name="schedule" ScheduleView="MonthView">
+    <schedule:SfSchedule.MonthViewSettings>
+        <schedule:MonthViewSettings
+                AppointmentIndicatorCount = "2" >
+        </schedule:MonthViewSettings>
+    </schedule:SfSchedule.MonthViewSettings>
 </schedule:SfSchedule>
 {% endhighlight %}
 {% highlight c# %}
@@ -48,7 +45,8 @@ schedule.MonthViewSettings = monthViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
->**Notes**: If appointments count are lesser than the AppointmentIndicatorCount value in the particular day, then according to number of appointments available, indicator will be displayed in the month cell.Maximum number of appointment indicators drawn in the month cell is 6 in android and ios platforms. 
+>**NOTE**
+If appointments count are lesser than the AppointmentIndicatorCount value in the particular day, then according to number of appointments available, indicator will be displayed in the month cell.Maximum number of appointment indicators drawn in the month cell is 6 in android and ios platforms.
 
 ![](monthview_images/appointmentindicator.png)
 
@@ -70,21 +68,20 @@ schedule.ShowAppointmentsInline = true;
 
 ![](monthview_images/appointmentindicator.png)
 
->**Notes**: If appointments not there in the selected day, Inline view displays the text as "No Events"      
+>**NOTE**
+If appointments not there in the selected day, Inline view displays the text as "No Events"
 
 ## Month Navigation direction
 MonthView of Schedule can be navigated in both horizontal and vertical direction. You can change the direction of navigation through [MonthNavigationDirection](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~MonthNavigationDirection.html) property of [MonthViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings.html) in `SfSchedule`, by default Month navigation direction is `Horizontal`.
 
 {% tabs %}
 {% highlight xaml %}
-<schedule:SfSchedule 
-	x:Name="schedule"
-	ScheduleView="MonthView">
-	<schedule:SfSchedule.MonthViewSettings>
-		<schedule:MonthViewSettings 
-				MonthNavigationDirection="Vertical">
-		</schedule:MonthViewSettings>
-	</schedule:SfSchedule.MonthViewSettings>
+<schedule:SfSchedule x:Name="schedule" ScheduleView="MonthView">
+    <schedule:SfSchedule.MonthViewSettings>
+        <schedule:MonthViewSettings
+                MonthNavigationDirection="Vertical">
+        </schedule:MonthViewSettings>
+    </schedule:SfSchedule.MonthViewSettings>
 </schedule:SfSchedule>
 {% endhighlight %}
 {% highlight c# %}
@@ -147,14 +144,12 @@ You can display the Week Number of the year in `MonthView` by setting [ShowWeekN
 
 {% tabs %}
 {% highlight xaml %}
-<schedule:SfSchedule 
-			x:Name="schedule"
-			ScheduleView="MonthView">
-	<schedule:SfSchedule.MonthViewSettings>
-		<schedule:MonthViewSettings 
-					ShowWeekNumber="true">
-		</schedule:MonthViewSettings>
-	</schedule:SfSchedule.MonthViewSettings>
+<schedule:SfSchedule x:Name="schedule" ScheduleView="MonthView">
+    <schedule:SfSchedule.MonthViewSettings>
+        <schedule:MonthViewSettings
+                    ShowWeekNumber="true">
+        </schedule:MonthViewSettings>
+    </schedule:SfSchedule.MonthViewSettings>
 </schedule:SfSchedule>
 {% endhighlight %}
 {% highlight c# %}
@@ -200,16 +195,15 @@ You can customize the View Header appearance by using [ViewHeaderStyle](http://h
 
 {% tabs %}
 {% highlight xaml %}
-<schedule:SfSchedule 
-			x:Name="schedule" 
-			ScheduleView="MonthView">
-	<schedule:SfSchedule.ViewHeaderStyle>
-		<schedule:ViewHeaderStyle 
-					BackgroundColor="Blue" 
-					DayTextColor="White"
-					DayFontFamily="Arial">
-		</schedule:ViewHeaderStyle>
-	</schedule:SfSchedule.ViewHeaderStyle>
+
+<schedule:SfSchedule x:Name="schedule" ScheduleView="MonthView">
+    <schedule:SfSchedule.ViewHeaderStyle>
+        <schedule:ViewHeaderStyle
+                    BackgroundColor="Blue"
+                    DayTextColor="White"
+                    DayFontFamily="Arial">
+        </schedule:ViewHeaderStyle>
+    </schedule:SfSchedule.ViewHeaderStyle>
 </schedule:SfSchedule>
 {% endhighlight %}
 {% highlight c# %}
@@ -224,7 +218,8 @@ schedule.ViewHeaderStyle = viewHeaderStyle;
 
 ![](monthview_images/viewheaderstyle.png)
 
->**Note**:  FontAttributes and FontFamily are native to the platform. Custom font and the font which are not available in the specified platform will not be applied.
+>**NOTE**
+FontAttributes and FontFamily are native to the platform. Custom font and the font which are not available in the specified platform will not be applied.
 
 ### ViewHeader Date Format
 You can customize the date and day format of `SfSchedule` ViewHeader by using [DateFormat](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DayLabelSettings~DateFormat.html) and [DayFormat](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DayLabelSettings~DayFormat.html) properties of `MonthLabelSettings`.
@@ -232,17 +227,20 @@ You can customize the date and day format of `SfSchedule` ViewHeader by using [D
 {% tabs %}
 {% highlight xaml %}
 <schedule:SfSchedule>
-	<schedule:SfSchedule.MonthViewSettings>
-		<schedule:MonthViewSettings>
-			<schedule:MonthViewSettings.MonthLabelSettings>
-				<schedule:MonthLabelSettings DateFormat=“dd”>
-					<schedule:MonthLabelSettings.DayFormat>
-						<OnPlatform x:TypeArguments="x:String" iOS="EEEE" Android="EEEE" WinPhone="dddd" />
-					</schedule:MonthLabelSettings.DayFormat>
-				</schedule:MonthLabelSettings>
-			</schedule:MonthViewSettings.MonthLabelSettings>
-		</schedule:MonthViewSettings>
-	</schedule:SfSchedule.MonthViewSettings>
+    <schedule:SfSchedule.MonthViewSettings>
+        <schedule:MonthViewSettings>
+            <schedule:MonthViewSettings.MonthLabelSettings>
+                <schedule:MonthLabelSettings DateFormat=“dd”>
+                    <schedule:MonthLabelSettings.DayFormat>
+                        <OnPlatform x:TypeArguments="x:String"
+                                    iOS="EEEE"
+                                    Android="EEEE"
+                                    WinPhone="dddd" />
+                    </schedule:MonthLabelSettings.DayFormat>
+                </schedule:MonthLabelSettings>
+            </schedule:MonthViewSettings.MonthLabelSettings>
+        </schedule:MonthViewSettings>
+    </schedule:SfSchedule.MonthViewSettings>
 </schedule:SfSchedule>
 {% endhighlight %}
 {% highlight c# %}
@@ -378,7 +376,8 @@ private void Schedule_OnMonthCellLoadedEvent(object sender, MonthCellLoadedEvent
 
 ![](monthview_images/monthcellstyle_event.png)
 
->**Note**:  FontAttributes and FontFamily are native to the  platform. Custom font and the font which are not available in the specified platform will not be applied.
+>**NOTE**
+FontAttributes and FontFamily are native to the  platform. Custom font and the font which are not available in the specified platform will not be applied.
 
 #### Customize month cell with custom UI 
 You can set the Custom UI for the month cell using [view](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthCellLoadedEventArgs~view.html) property of `MonthCellLoadedEventArgs` in the `OnMonthCellLoadedEvent`.
@@ -451,7 +450,8 @@ private void Schedule_OnMonthInlineLoadedEvent(object sender, MonthInlineLoadedE
 
 ![](monthview_images/inlineviewstyle.png)
 
->**Note**:  FontAttributes and FontFamily are native to the  platform. Custom font and the font which are not available in the specified platform will not be applied.
+>**NOTE**
+FontAttributes and FontFamily are native to the  platform. Custom font and the font which are not available in the specified platform will not be applied.
 
 ## InlineAppointment Appearance 
 You can customize the Month inline view Appointment by using [OnMonthInlineAppointmentLoadedEvent](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~OnMonthInlineAppointmentLoadedEvent_EV.html) in `SfSchedule`, using [view](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineAppointmentLoadedEventArgs~view.html) of [MonthInlineAppointmentLoadedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineAppointmentLoadedEventArgs.html) argument. You can get the details of Appointment in the [appointment](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineAppointmentLoadedEventArgs~appointment.html) argument.
@@ -474,7 +474,8 @@ private void Schedule_OnMonthInlineAppointmentLoadedEvent(object sender, MonthIn
 {% endhighlight %}
 {% endtabs %}
 
->**Note**:  Inline view customization - There is no support for inline view appointments customization using custom view, TimeTextSize, TimeTextFormat and TimeTextColor properties in XForms UWP.
+>**NOTE**
+Inline view customization - There is no support for inline view appointments customization using custom view, TimeTextSize, TimeTextFormat and TimeTextColor properties in XForms UWP.
 ![](monthview_images/inlinecustomview.png)
 
 ## Selection
@@ -562,7 +563,7 @@ schedule.SelectedDate = null;
 
 You can download the entire source code of this demo for Xamarin.Forms from here [Date_Selection](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Date_Selection1072247797.zip)
 
->**Note**:
+>**NOTE**
 * `SfSchedule` does not support multiple selection.
 * `SfSchedule` supports two-way binding of `SelectedDate` property.
 
@@ -663,7 +664,7 @@ Following steps will explain how to configure the custom fonts.
 * Edit info.plist and add a key Fonts provided by application (value type should be Array). In item0 of the array enter the name of the FontFamily you added in the Resource folder. (Such as Lobster-Regular.ttf).
 * Then, use the Custom Font name as FontFamily.
 
->**Note**:
+>**NOTE**
  No need to mention .ttf when set the Custom Font in iOS.
 
 ### Custom Font Setting in Xamarin.Forms (UWP)

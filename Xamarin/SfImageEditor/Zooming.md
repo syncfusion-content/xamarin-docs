@@ -2,7 +2,7 @@
 layout : post
 title : Zooming and Panning operations in Syncfusion SfImageEditor control in Xamarin.Forms
 description : Learn how to Zoom and pan the image in ImageEditor for Xamarin.Forms
-platform : Xamarin.Forms
+platform : xamarin.forms
 control : ImageEditor
 documentation : ug
 ---
@@ -61,7 +61,6 @@ You can customize the zoom level to maximum by setting the value to Maximum Zoom
 
 Image editor control provides support for panning. Image editor allows you to pan the image with only two fingers to identify the touch interaction between panning and Resizing, or shifting shapes.
 
- N> Currently we have zooming and panning support only for Android and iOS not for UWP.
 
 ![SfImageEditor](ImageEditor_images/zoom.gif)
 

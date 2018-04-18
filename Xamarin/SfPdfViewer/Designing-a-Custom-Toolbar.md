@@ -88,4 +88,4 @@ The final output will look like the below on iOS, Android and Windows (UWP) devi
 
 This demo can be downloaded from the below link.
 
-http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-663393738
+<http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-1533352385>

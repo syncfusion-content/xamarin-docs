@@ -108,7 +108,7 @@ The `SfDataGrid.VerticalOverScrollMode` is of [VerticalScrollMode](http://help.s
 
 ### Bounce
  
-Bounce allows the data grid to have bouncing effect. Default value of `SfDataGrid.VerticalOverScrollMode` is `Bounce` .
+The `Bounce` mode allows the data grid to have bouncing effect. Default value of `SfDataGrid.VerticalOverScrollMode` is `Bounce` .
 
 To customize the bouncing effect in the data grid, follow the code example:
 
@@ -133,7 +133,7 @@ dataGrid.VerticalOverScrollMode = VerticalOverScrollMode.Bounce;
 
 ### None
 
-None disables the bouncing effect in the data grid.
+The `None` mode disables the bouncing effect in the data grid.
 
 To customize the bouncing effect in the data grid, follow the code example:
 

@@ -398,21 +398,12 @@ public partial class MainPage : ContentPage
 
   private void ListView_SelectionChanged(object sender, ItemSelectionChangedEventArgs e)
   {
-    var items = listView.SelectedItems;
-    for (int i = 0; items.Count > i; i++)
-    {
-      var item = items[i] as Model;
-      var index = listView.DataSource.DisplayItems.IndexOf(item);
-      item.IsDone = true;
-      if (i == items.Count - 1)
-        entry.Text = entry.Text + index + " . ";
-      else
-        entry.Text = entry.Text + index + " , ";
-    }
+    entry.Text = null;
+    var items = listView.SelectedItem;
+    entry.Text= listView.DataSource.DisplayItems.IndexOf(items).ToString();
   }
 }
-
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SelectedItemIndex-1334129467).
+You can download the entire sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SelectionItemIndex764176208).

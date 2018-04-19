@@ -354,14 +354,10 @@ When the SfListView is loaded in CarouselView with [SfListView.AllowSwiping](htt
 
 When the SfListView is loaded in CarouselView with `SfListView.AllowSwiping` as true, it behaves as follows:  
  
- * When swiping in iOS, suddenly carousel swipe happened. To swipe ListViewItem, touch and hold the item for some fraction of seconds (0.25 - 0.5 seconds) and then swipe. 
+ * When swiping in iOS, suddenly carousel swipe happened or handled by PanGesture when SfListView is loaded with it. To swipe ListViewItem, touch and hold the item for some fraction of seconds (0.25 - 0.5 seconds) and then swipe. 
  * When swiping any Item, the SfListView handles the touch and swipe the ListViewItem.  
  * After swiping on ListViewItem, SwipeView will load along with it. If you swipe SwipeView element, Carousel view is swiped. Or else swipe on ListViewItem, control handles touching and swiping the item as usual. 
  * If you swipe header, footer or group header elements, Carousel view will swipe in Android platform. But in UWP, first swipe on those elements will be handled by SfListView itself, because manipulation to parent cannot be passed immediately. The second swipe will be listened by CarouselView.
-
-When the SfListView is loaded inside the PanGesture, it behaves as follows in iOS platform. 
-
- * When Swiping any item, it will be handled by PanGesture. Need to touch and hold the ListViewItem for some fraction of seconds (0.25 - 0.5 seconds) and then swipe.
 
 ## Context menu on items
 

@@ -312,3 +312,59 @@ zoomPan.Reset();
 
 {% endhighlight %}
 
+### OnScaleStart(float manipulationX, float manipulationY, float scaleFactor)
+
+[`OnScaleStart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~OnScaleStart.html) method is called when the user started scaling the chart through pinch zooming. The argument contains the information about Manipulation and  scale factor.
+
+{% highlight c# %}
+
+
+{% endhighlight %}
+
+### OnScaleDelta(float manipulationX, float manipulationY, float scaleFactor)
+
+[`OnScaleDelta`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~OnScaleDelta.html) method is calling when the user scaling the chart through pinch zooming. The argument contains the information about Manipulation points and scale factor.
+
+{% highlight c# %}
+
+public class ChartZoomExt:ChartZoomPanBehavior
+{
+
+        protected override void OnScaleDelta(float manipulationX, float manipulationY, float scaleFactor)
+        {
+            base.OnScaleDelta(manipulationX, manipulationY, scaleFactor);
+        }
+
+}
+
+{% endhighlight %}
+
+### OnScaleEnd(float manipulationX, float manipulationY,float scaleFactor)
+
+[`OnScaleEnd`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~OnScaleEnd.html) method is called after the  scaling ends. The argument contains the information about Manipulation points and scale factor.
+
+{% highlight c# %}
+
+public class ChartZoomExt:ChartZoomPanBehavior
+{
+        protected override void OnScaleEnd(float manipulationX, float manipulationY, float scaleFactor)
+        {
+            base.OnScaleEnd(manipulationX, manipulationY, scaleFactor);
+        }
+}
+
+{% endhighlight %}
+
+### OnScroll( float pointX, float pointY, float distanceX, float distanceY)
+
+[`OnScroll`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~OnScroll.html) method is called when while panning and the arguments contains the following properties.
+
+{% highlight c# %}
+
+  protected override void OnScroll(float pointX, float pointY, float distanceX, float distanceY)
+  {
+            base.OnScroll(pointX, pointY, distanceX, distanceY);
+  }
+
+{% endhighlight %}
+

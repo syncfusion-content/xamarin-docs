@@ -416,3 +416,17 @@ chart.Series.Add(lineSeries);
 {% endtabs %}
 
 ![](chartseries_images/verticalchart.png)
+
+## Methods
+
+### GetDataPointIndex(float pointX, float pointY)
+
+[`GetDataPointIndex`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~GetDataPointIndex.html) method is used to get the actual data point index for corresponding screen point.
+
+{% highlight c# %}
+
+ColumnSeries series = new ColumnSeries();
+Series.GetDataPointIndex(400, 400); // you can get the data point index by passing current pointer position
+
+{% endhighlight %}
+

@@ -174,6 +174,17 @@ chart.SecondaryAxis = new NumericalAxis() { Interval = 10 };
 
 ![](axis_images/axis_img6.png)
 
+### How to get actual interval types
+
+[`GetActualIntervalType`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeAxis~GetActualIntervalType.html) method is used to get the actual interval type of [`DataTimeAxis`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeAxis.html).
+
+{% highlight c# %}
+
+DateTimeAxis dateAxis = new DateTimeAxis();
+dateAxis.GetActualIntervalType();
+
+{% endhighlight %}
+
 ### Apply padding to the range
 
 Padding can be applied to the minimum and maximum extremes of the axis range by using [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.NumericalAxis~RangePadding.html) property. Numeric axis supports the following types of padding.

@@ -241,7 +241,7 @@ SfChart chart = new SfChart()
 
 {% endtabs %}
 
-## Indicator Visibility
+## Indicator visibility
 
 The [`IsVisible`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FinancialTechnicalIndicator~IsVisible.html) property of [`FinancialTechnicalIndicator`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FinancialTechnicalIndicator.html) is used to controls the visibility of the indicator.
 
@@ -278,7 +278,7 @@ SfChart chart = new SfChart()
 
 {% endtabs %}
 
-## Average true range (ATR) indicator 
+## Average true range indicator 
 
 ATR indicator is a technical analysis volatility indicator. This indicator does not provide an indication of price trend; simply the degree of price volatility. The average true range is an N-day smoothed moving average (SMMA) of the true range values.
 
@@ -328,7 +328,7 @@ The following screenshot illustrates an ATR indicator.
 
 ![](technicalindicators_images/averagetruerange.png)
 
-## Simple moving average (SMA) indicator
+## Simple moving average indicator
 
 A SMA indicator is a simple, arithmetic moving average that is calculated by adding the closing price for number of time periods and dividing the total value by the number of time periods.
 
@@ -377,7 +377,7 @@ The following screenshot illustrates an SMA indicator.
 
 ![](technicalindicators_images/simplemovingaverage.png)
 
-## Relative strength index (RSI) indicator
+## Relative strength index indicator
 
 The RSI indicator has additional two lines other than signal line; they indicate the overbought and oversold region.
 
@@ -581,7 +581,7 @@ SfChart chart = new SfChart()
 
 ![](technicalindicators_images/stochastic.png)
 
-## Exponential moving average (EMA) indicator
+## Exponential moving average indicator
 
 The [`ExponentialMovingAverageIndicator`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ExponentialMovingAverageIndicator.html) is similar to [`SimpleMovingAverageIndicator`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SimpleMovingAverageIndicator.html) and this can be defined using the following code examples.
 
@@ -626,7 +626,7 @@ SfChart chart = new SfChart()
 
 ![](technicalindicators_images/exponentialmovingavg.png)
 
-## Triangular moving average (TMA) indicator
+## Triangular moving average indicator
 
 A Triangular moving average is simply a double-smoothed simple moving average of data calculated over a period of time where the middle portion of the data has more weight. 
 The [`TriangularMovingAverageIndicator`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.TriangularMovingAverageIndicator.html) can be defined as in the following code example.

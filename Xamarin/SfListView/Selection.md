@@ -382,9 +382,9 @@ public partial class MainPage : ContentPage
 
 You can download the entire sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfListViewSample-1451946805).
 
-### Get the index of the selected items
+### Get the index of selected item
 
-While performing selection, you can get the collection of items which are selected in the  [SfListView.SelectedItems](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItems.html) property. Then you can get the selected item index by passing the underlying data in DisplayItems.IndexOf method as like below code example. 
+While performing selection, you can get the index of selected item by using [SelectionChanged](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionChanged_EV.html) from the [DataSource.DisplayItems](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DisplayItems.html). 
 
 {% tabs %}
 {% highlight c# %}
@@ -398,12 +398,12 @@ public partial class MainPage : ContentPage
 
   private void ListView_SelectionChanged(object sender, ItemSelectionChangedEventArgs e)
   {
-    entry.Text = null;
-    var items = listView.SelectedItem;
-    entry.Text= listView.DataSource.DisplayItems.IndexOf(items).ToString();
+    var items = e.AddedItems;
+    var index = listView.DataSource.DisplayItems.IndexOf(items[0]);
+    entry.Text = index.ToString();
   }
 }
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SelectionItemIndex764176208).
+You can download the entire sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SelectionItemIndex1430542696).

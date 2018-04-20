@@ -307,9 +307,9 @@ The [SelectionChanged](https://help.syncfusion.com/cr/cref_files/xamarin/sflistv
 
  The `SelectionChanged` event used for the following use cases:
  
-  * Clear all the selected item.
-  * Remove the particular selected item.
-  * Get the index of the selected item.
+  * Clears all the selected item.
+  * Removes the particular selected item.
+  * Gets the index of the selected item.
 
 {% tabs %}
 {% highlight c# %}
@@ -380,11 +380,11 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfListViewSample-1451946805).
+You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfListViewSample-1451946805).
 
-### Get the index of selected item
+### Gets the index of selected item
 
-While performing selection, you can get the index of selected item by using [SelectionChanged](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionChanged_EV.html) from the [DataSource.DisplayItems](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DisplayItems.html). 
+When performing selection, you can get the index of the selected item by using the [SelectionChanged](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionChanged_EV.html) event from the [DataSource.DisplayItems](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DisplayItems.html). 
 
 {% tabs %}
 {% highlight c# %}
@@ -406,4 +406,4 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SelectionItemIndex1430542696).
+You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SelectionItemIndex1430542696).

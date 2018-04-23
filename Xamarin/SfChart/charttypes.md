@@ -193,6 +193,53 @@ chart.Series.Add(splineAreaSeries);
 
 ![](charttypes_images/charttypes_img3.png)
 
+### Spline Area Series Types
+
+[`SplineType`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineAreaSeries~SplineType.html) allows you to change the spline area curve in series. 
+The following types are used in [`SplineAreaSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineAreaSeries.html) as 
+
+ * [`Natural`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineType.html)
+ * [`Monotonic`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineType.html)
+ * [`Cardinal`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineType.html)
+ * [`Clamped`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineType.html)
+
+By default [`SplineType`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineAreaSeries~SplineType.html) value is [`Natural`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineType.html).
+
+The following code shows how to set the [`SplineType`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineAreaSeries~SplineType.html) value as [`Cardinal`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineType.html)
+
+{% tabs %}
+
+{% highlight xaml%}
+
+<chart:SfChart>
+...
+
+	<chart:SplineAreaSeries ItemsSource ="{Binding Data}" XBindingPath="Month"
+	  					YBindingPath="Value" SplineType="Cardinal" />
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+...
+
+SplineAreaSeries splineAreaSeries = new SplineAreaSeries() 
+{ 
+	ItemsSource = Data, 
+	XBindingPath = "Month", 
+	YBindingPath = "Value",
+	SplineType = SplineType.Cardinal
+};
+chart.Series.Add(splineAreaSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
 ## Step Area Chart
 
 To render a step area chart, create an instance of [`StepAreaSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.StepAreaSeries.html) and add to the [`Series`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~Series.html) collection property of [`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the appearance.
@@ -558,6 +605,60 @@ chart.Series.Add(columnSeries);
 {% endtabs %}
 
 ![](charttypes_images/charttypes_img6.png)
+
+## Overlapped placement
+
+By default, all the column series which has the same x and y axes are placed side by side in a chart. If you want place the series one over the other (overlapped), set the [`SideBySideSeriesPlacement`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~SideBySideSeriesPlacement.html) property of [`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html#) to false and configure the [`Width`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ColumnSeries~Width.html) property to differentiate the series. The following code snippet and screenshot illustrate the overlapped placement of column series.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart x:Name="Chart" SideBySideSeriesPlacement="False" >
+      . . .
+    <chart:SfChart.Series>
+      <chart:ColumnSeries ItemsSource="{Binding Data1}" Label="2014" XBindingPath="Month" YBindingPath="Year2014">
+       
+      </chart:ColumnSeries>
+     <chart:ColumnSeries  Width="0.5" ItemsSource="{Binding Data2}" Label="2015" XBindingPath="Month" YBindingPath="Year2015" >
+       
+      </chart:ColumnSeries>
+    </chart:SfChart.Series>
+    . . .
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart()
+  {
+      SideBySideSeriesPlacement = false
+  };
+ chart.PrimaryAxis = new CategoryAxis();
+ chart.SecondaryAxis = new NumericalAxis();
+ ColumnSeries series1 = new ColumnSeries()
+ {
+                ItemsSource = view.Data1,
+                XBindingPath = "Month",
+                YBindingPath = "Year2014"
+ };
+ ColumnSeries series2 = new ColumnSeries()
+ {
+                ItemsSource = view.Data2,
+                XBindingPath = "Month",
+                YBindingPath = "Year2015",
+                 Width="0.5"
+ };
+
+chart.Series.Add(series1);
+chart.Series.Add(series2);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](charttypes_images/SideBySide-false.png)
 
 ## Range Column Chart
 
@@ -1064,7 +1165,7 @@ chart.Series.Add(splineSeries);
 
 ![](charttypes_images/ClampedSplineType.png)
 
-## StepLine Chart
+## Step Line Chart
 
 To render a step line chart, create an instance of [`StepLineSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.StepLineSeries.html) and add to the [`Series`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~Series.html) collection property of
 [`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the spline segment appearance.
@@ -1969,6 +2070,8 @@ PieSeries pieSeries = new PieSeries()
 
 {% endtabs %}
 
+Also, the segments can be exploded by touch using [`ExplodeOnTouch`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.AccumulationSeries~ExplodeOnTouch.html) property of [`PieSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.PieSeries.html). Default value of this property is false.
+
 ![](charttypes_images/charttypes_img24.png)
 
 ### Exploding all the segments
@@ -2166,6 +2269,8 @@ DoughnutSeries doughnutSeries = new DoughnutSeries()
 
 {% endtabs %}
 
+Also, the segments can be exploded by touch using [`ExplodeOnTouch`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.AccumulationSeries~ExplodeOnTouch.html) property of [`DoughnutSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DoughnutSeries.html). Default value of this property is false.
+
 ![](charttypes_images/charttypes_img30.png)
 
 ### Exploding all the segments
@@ -2354,6 +2459,8 @@ PyramidSeries pyramidSeries = new PyramidSeries()
 
 {% endhighlight %}
 
+Also, the segments can be exploded by touch using [`ExplodeOnTouch`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.AccumulationSeries~ExplodeOnTouch.html) property of [`PyramidSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.PyramidSeries.html). Default value of this property is false.
+
 {% endtabs %}
 
 ![](charttypes_images/charttypes_img36.png)
@@ -2457,6 +2564,8 @@ FunnelSeries funnelSeries = new FunnelSeries()
 {% endhighlight %}
 
 {% endtabs %}
+
+Also, the segments can be exploded by touch using [`ExplodeOnTouch`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.AccumulationSeries~ExplodeOnTouch.html) property of [`FunnelSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FunnelSeries.html). Default value of this property is false.
 
 ![](charttypes_images/charttypes_img39.png)
 

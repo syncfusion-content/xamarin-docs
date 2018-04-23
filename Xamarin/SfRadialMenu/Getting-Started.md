@@ -133,8 +133,7 @@ Creating a RadialMenu's instance shows only round shape view on the application.
  xmlns:radialMenu="clr-namespace:Syncfusion.SfRadialMenu.XForms;assembly=Syncfusion.SfRadialMenu.XForms">
     
 <ContentPage.Content>
-            <radialMenu:SfRadialMenu x:Name="radialMenu" CenterButtonText="&#xe700;"
-CenterButtonBackText="&#xe72b;" CenterButtonFontFamily="Segoe MDL2 Assets.ttf" CenterButtonRadius="32"  CenterButtonBackFontFamily="Segoe MDL2 Assets.ttf" CenterButtonBorderColor="White" />
+            <radialMenu:SfRadialMenu x:Name="radialMenu" CenterButtonText="&#xe700;" CenterButtonBackText="&#xe72b;" CenterButtonFontFamily="Segoe MDL2 Assets.ttf" CenterButtonRadius="32"  CenterButtonBackFontFamily="Segoe MDL2 Assets.ttf" CenterButtonBorderColor="White" />
     </ContentPage.Content>
 </ContentPage> 
 
@@ -189,8 +188,7 @@ After the radial menu has been created, add necessary items on it. For adding it
 <ContentPage.Content>
            <radialMenu:SfRadialMenu x:Name="radial_Menu" CenterButtonText="&#xe72b;" CenterButtonBackText="&#xe72b;" CenterButtonFontFamily="Segoe MDL2 Assets.ttf" CenterButtonRadius="32">
 				<radialMenu:SfRadialMenu.Items>
-					<radialMenu:SfRadialMenuItem FontIconText="&#xe72e;" 
-					IconFontFamily="Segoe MDL2 Assets.ttf">
+					<radialMenu:SfRadialMenuItem FontIconText="&#xe72e;" IconFontFamily="Segoe MDL2 Assets.ttf">
 						<radialMenu:SfRadialMenuItem.Items>
 							<radialMenu:SfRadialMenuItem  FontIconText="&#xe72e;" 
 							IconFontFamily="Segoe MDL2 Assets.ttf" />
@@ -202,25 +200,26 @@ After the radial menu has been created, add necessary items on it. For adding it
 							IconFontFamily="Segoe MDL2 Assets.ttf" />
 						</radialMenu:SfRadialMenuItem.Items>
 					</radialMenu:SfRadialMenuItem>
-					<radialMenu:SfRadialMenuItem  FontIconText="&#xe72d;" 
+					<radialMenu:SfRadialMenuItem FontIconText="&#xe734;" 
 					IconFontFamily="Segoe MDL2 Assets.ttf">
 						<radialMenu:SfRadialMenuItem.Items>
 							<radialMenu:SfRadialMenuItem  FontIconText="&#xe72c;" 
 							IconFontFamily="Segoe MDL2 Assets.ttf" />
-							<radialMenu:SfRadialMenuItem  FontIconText="&#xe72d;"
-							 IconFontFamily="Segoe MDL2 Assets.ttf" />
-							<radialMenu:SfRadialMenuItem  FontIconText="&#xe734;"
+							<radialMenu:SfRadialMenuItem  FontIconText="&#xe72d;" 
+							IconFontFamily="Segoe MDL2 Assets.ttf" />
+							<radialMenu:SfRadialMenuItem  FontIconText="&#xe734;" 
 							IconFontFamily="Segoe MDL2 Assets.ttf" />
 							<radialMenu:SfRadialMenuItem  FontIconText="&#xe72e;" 
 							IconFontFamily="Segoe MDL2 Assets.ttf" />
 						</radialMenu:SfRadialMenuItem.Items>
 					</radialMenu:SfRadialMenuItem>
-					<radialMenu:SfRadialMenuItem  FontIconText="&#xe72d;" IconFontFamily="Segoe MDL2 Assets.ttf">
+					<radialMenu:SfRadialMenuItem  FontIconText="&#xe72e;" 
+					IconFontFamily="Segoe MDL2 Assets.ttf">
 						<radialMenu:SfRadialMenuItem.Items>
 							<radialMenu:SfRadialMenuItem  FontIconText="&#xe730;" 
 							IconFontFamily="Segoe MDL2 Assets.ttf" />
 							<radialMenu:SfRadialMenuItem  FontIconText="&#xe72e;" 
-							 IconFontFamily="Segoe MDL2 Assets.ttf" />
+							IconFontFamily="Segoe MDL2 Assets.ttf" />
 							<radialMenu:SfRadialMenuItem  FontIconText="&#xe730;" 
 							IconFontFamily="Segoe MDL2 Assets.ttf" />
 						</radialMenu:SfRadialMenuItem.Items>
@@ -229,11 +228,11 @@ After the radial menu has been created, add necessary items on it. For adding it
 						<radialMenu:SfRadialMenuItem.Items>
 							<radialMenu:SfRadialMenuItem  IconFontSize="16" FontIconText="&#xe72c;" IconFontFamily="Segoe MDL2 Assets.ttf" />
 							<radialMenu:SfRadialMenuItem  IconFontSize="18" FontIconText="&#xe730;" IconFontFamily="Segoe MDL2 Assets.ttf" />
-							<radialMenu:SfRadialMenuItem  IconFontSize="20" FontIconText="&#xe72d;" IconFontFamily="Segoe MDL2 Assets.ttf" />
+							<radialMenu:SfRadialMenuItem  IconFontSize="20" FontIconText="&#xe72e;" IconFontFamily="Segoe MDL2 Assets.ttf" />
 						</radialMenu:SfRadialMenuItem.Items>
 					</radialMenu:SfRadialMenuItem>
 					<radialMenu:SfRadialMenuItem  FontIconText="&#xe738;" 
-					   IconFontFamily="Segoe MDL2 Assets.ttf">
+					IconFontFamily="Segoe MDL2 Assets.ttf">
 						<radialMenu:SfRadialMenuItem.Items>
 							<radialMenu:SfRadialMenuItem  FontIconText="&#xe72c;" 
 							IconFontFamily="Segoe MDL2 Assets.ttf" />
@@ -243,15 +242,11 @@ After the radial menu has been created, add necessary items on it. For adding it
 							IconFontFamily="Segoe MDL2 Assets.ttf" />
 						</radialMenu:SfRadialMenuItem.Items>
 					</radialMenu:SfRadialMenuItem>
-					<radialMenu:SfRadialMenuItem FontIconText="&#xe72c;"  
-					IconFontFamily="Segoe MDL2 Assets.ttf">
+					<radialMenu:SfRadialMenuItem FontIconText="&#xe72c;" IconFontFamily="Segoe MDL2 Assets.ttf">
 						<radialMenu:SfRadialMenuItem.Items>
-							<radialMenu:SfRadialMenuItem  FontIconText="&#xe734;" 
-							IconFontFamily="Segoe MDL2 Assets.ttf" />
-							<radialMenu:SfRadialMenuItem  FontIconText="&#xe739;" 
-							IconFontFamily="Segoe MDL2 Assets.ttf" />
-							<radialMenu:SfRadialMenuItem  FontIconText="&#xe734;" 
-							IconFontFamily="Segoe MDL2 Assets.ttf" />
+							<radialMenu:SfRadialMenuItem  FontIconText="&#xe734;" IconFontFamily="Segoe MDL2 Assets.ttf" />
+							<radialMenu:SfRadialMenuItem  FontIconText="&#xe739;" IconFontFamily="Segoe MDL2 Assets.ttf" />
+							<radialMenu:SfRadialMenuItem  FontIconText="&#xe734;" IconFontFamily="Segoe MDL2 Assets.ttf" />
 						</radialMenu:SfRadialMenuItem.Items>
 					</radialMenu:SfRadialMenuItem>
 				</radialMenu:SfRadialMenu.Items>

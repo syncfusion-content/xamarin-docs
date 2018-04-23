@@ -778,6 +778,49 @@ chart.PrimaryAxis = primaryAxis;
 
 ![](axis_images/axis_img29.png)
 
+### Axis line offset
+
+The [`AxisLineOffset`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~AxisLineOffset.html) property is used to offset the rendering of axis line.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+
+            <chart:CategoryAxis AxisLineOffset="20" PlotOffset="20">  
+			             
+                <chart:CategoryAxis.AxisLineStyle>
+
+                    <chart:ChartLineStyle StrokeWidth="5"/>
+
+                </chart:CategoryAxis.AxisLineStyle>
+
+            </chart:CategoryAxis>
+			
+ </chart:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+CategoryAxis primaryAxis = new CategoryAxis();
+
+primaryAxis.PlotOffset = 20;
+
+primaryAxis.AxisLineOffset = 20;
+
+primaryAxis.AxisLineStyle.StrokeWidth = 5;
+
+chart.PrimaryAxis = primaryAxis;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](axis_images/AxisLineOffset.png)
+
+
 ### Label customization
 
 The [`LabelStyle`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~LabelStyle.html) property of axis provides options to customize the font-family, color, size and font-weight of axis labels. The axis labels can be customized using following properties:
@@ -882,6 +925,38 @@ chart.PrimaryAxis.EdgeLabelsDrawingMode = EdgeLabelsDrawingMode.Shift;
 
 ![](axis_images/axis_img21.png)
 
+### Edge labels visibility
+
+The visibility of the edge labels in an axis can be controlled using [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RangeAxisBase~EdgeLabelsVisibilityMode.html) property.
+The following  options are available in [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RangeAxisBase~EdgeLabelsVisibilityMode.html),
+
+* Default- used to display the edge label based on auto interval calculations
+* Visible - used to display the edge labels (first and last label) irrespective of the auto interval calculation until zooming (i.e., in normal state).
+* AlwaysVisible - used to always display the edge labels even while zooming the chart.
+
+The following code example demonstrates the AlwaysVisible option while zooming.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+      <chart:NumericalAxis  EdgeLabelsVisibilityMode="AlwaysVisible">     
+      </chart:NumericalAxis>
+ </chart:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+Chart.PrimaryAxis = new NumericalAxis();
+chart.SecondaryAxis.EdgeLabelsVisibilityMode = EdgeLabelsVisibilityMode.AlwaysVisible;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
 ### Label extent
 
 The [`LabelExtent`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~LabelExtent.html) property allows to set the gap between axis labels and title. This is typically used to maintain the fixed gap between axis labels and title when the digits of the axis value changed in live update.
@@ -912,6 +987,7 @@ Chart.PrimaryAxis.Title.Text = "Month";
 {% endtabs %}
 
 ![](axis_images/labelExtent.png)
+
 
 ### Grid lines customization
 

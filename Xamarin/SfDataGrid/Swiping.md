@@ -9,20 +9,22 @@ documentation: ug
 
 # Swiping
 
-[SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html# “”) lets you enable the Swiping option by setting the [SfDataGrid.AllowSwiping](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowSwiping.html# “”) property to `true`. Swipe views are displayed when swiping from ‘left to right’ or ‘right to left’ on a data row. SfDataGrid provides customizable swipe templates for swiping on the left and right side. The swipe gesture can be restricted up to a certain point on the row by setting the [SfDataGrid.MaxSwipeOffset](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~MaxSwipeOffset.html# “”) property.
+The [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html# “”) allows enabling the swiping option by setting the [SfDataGrid.AllowSwiping](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowSwiping.html# “”) property to `true`. Swipe views are displayed when swiping from ‘left to right’ or ‘right to left’ on a data row. The control provides customizable swipe templates for swiping on the left and right side. The swipe gesture can be restricted to a certain point on the row by setting the [SfDataGrid.MaxSwipeOffset](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~MaxSwipeOffset.html# “”) property.
 
-## SwipeTemplate
+## Swipe template
 
-SfDataGrid enables you to load a desired content using the [SfDataGrid.LeftSwipeTemplate](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~LeftSwipeTemplate.html# “”) when swiping towards right. The template can be defined either in code or XAML. The contents inside the swipe template are arranged based on the offset values when you swipe a data row. 
-Refer the following code example that shows how to load a template when swiping towards right.
+The data grid enables loading a desired content using the [SfDataGrid.LeftSwipeTemplate](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~LeftSwipeTemplate.html# “”) when swiping towards right. The template can be defined either in code or XAML. The content inside the swipe template is arranged based on the offset values when swiping a data row. 
 
 {% tabs %}
+
 {% highlight xaml %}
 
 //Defining left swipe template
+
 <sfgrid:SfDataGrid.LeftSwipeTemplate>
+
   <DataTemplate>
-      <Grid  BackgroundColor="#009EDA">
+      <Grid  BackgroundColor="#009EDA" Padding="9">
         <Grid.ColumnDefinitions>
           <ColumnDefinition/>
           <ColumnDefinition/>
@@ -32,7 +34,7 @@ Refer the following code example that shows how to load a template when swiping 
                BackgroundColor="Transparent" 
                HorizontalOptions="CenterAndExpand" 
                Source="EditIcon.png"         
-               BindingContextChanged=”rightImage_BindingContextChanged"  />
+               BindingContextChanged="rightImage_BindingContextChanged" />
         
         <Label Grid.Column="1" 
                Text ="EDIT" 
@@ -45,13 +47,21 @@ Refer the following code example that shows how to load a template when swiping 
   </DataTemplate>
 </sfgrid:SfDataGrid.LeftSwipeTemplate>
 {% endhighlight %}
+
 {% highlight c# %}
 
+
 //Defining left swipe template
+
 dataGrid.LeftSwipeTemplate = new DataTemplate(() =>
 {
     Grid myGrid = new Grid();
+
     myGrid.HorizontalOptions = LayoutOptions.FillAndExpand;
+
+    myGrid.BackgroundColor = Color.FromHex("#009EDA");
+
+    myGrid.Padding = 9;
 
     myGrid.ColumnDefinitions = new ColumnDefinitionCollection
     {
@@ -59,67 +69,67 @@ dataGrid.LeftSwipeTemplate = new DataTemplate(() =>
       new ColumnDefinition {}           
     };
 
-    myGrid.Children.Add(new Image()
-    {
-      BackgroundColor="Transparent",
-      HorizontalOptions=LayoutOptions. CenterAndExpand,
-      Source="EditIcon.png",
-      BindingContextChanged+= MainPage_BindingContextChanged
-    },0,0);
+    var image = new Image();
+    image.BackgroundColor = Color.Transparent;
+    image.BindingContextChanged += MainPage_BindingContextChanged;
+    image.HorizontalOptions = LayoutOptions.FillAndExpand;
+    image.Source = "EditIcon.png";
 
-    myGrid.Children.Add(new Label()
-    {
-      Text = "EDIT",
-      HorizontalTextAlignment = TextAlignment.Start,
-      VerticalTextAlignment = TextAlignment.Center,
-      LineBreakMode = LineBreakMode.NoWrap,
-      BackgroundColor = Color.Transparent,
-      TextColor = Color.White,
-    }, 0, 1);
+    var label = new Label();
+    label.Text = "EDIT";
+    label.HorizontalTextAlignment = TextAlignment.Start;
+    label.VerticalTextAlignment = TextAlignment.Center;
+    label.LineBreakMode = LineBreakMode.NoWrap;
+    label.BackgroundColor = Color.Transparent;
+    label.TextColor = Color.White;
 
+    myGrid.Children.Add(image, 0, 0);
+    myGrid.Children.Add(label, 1, 0);
     return myGrid;
 });
+
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot shows the final outcome upon execution of the above code where swiping towards right loads an image and a label in the template.
-
 ![](SfDataGrid_images/Swiping_img1.jpeg)
 
-N> Similarly you can load a desired content using the [SfDataGrid.RightSwipeTemplate](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~RightSwipeTemplate.html# “”) when swiping towards left.
+N> Similarly, desired content can be loaded using the [SfDataGrid.RightSwipeTemplate](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~RightSwipeTemplate.html# “”) when swiping towards left.
 
-## Swipe Events
+## Swipe events
 
-[SwipeStarted](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SwipeStarted_EV.html# “”) - This event is fired when the swipe offset changes from its initial value. You can cancel the swipe action by setting the [Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true# “”) property of the [SwipeStartedEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SwipeStartedEventArgs.html# “”) to `true`. 
-[SwipeEnded](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SwipeEnded_EV.html# “”) - This event is fired when the swipe offset value reaches the `SfDataGrid.MaxSwipeOffset` indicating that the swipe action is completed. This event is triggered with [SwipeEndedEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SwipeEndedEventArgs.html# “”).
-[Swiping](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~Swiping_EV.html# “”) - This event is raised while swiping a row is in progress. This event is triggered with [SwipingEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SwipingEventArgs.html# “”) . 
+[SwipeStarted](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SwipeStarted_EV.html# “”): Fired when the swipe offset changes from its initial value. The swipe action can be canceled by setting the [Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true# “”) property of the [SwipeStartedEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SwipeStartedEventArgs.html# “”) to `true`. 
+[SwipeEnded](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SwipeEnded_EV.html# “”): Fired when the swipe offset value reaches the `SfDataGrid.MaxSwipeOffset` indicating that the swipe action is completed. This event is triggered with [SwipeEndedEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SwipeEndedEventArgs.html# “”).
+[Swiping](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~Swiping_EV.html# “”): Raised while swiping a row is in progress. This event is triggered with [SwipingEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SwipingEventArgs.html# “”). 
 
-All the swipe events provides the following properties in their arguments: 
+The swipe events provides the following properties in their arguments: 
 
-* [RowIndex](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SwipingEventArgs~RowIndex.html# “”) - the swiping row index 
-* [RowData](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SwipingEventArgs~RowData.html# “”) - the underlying data associated with the swiped row as its arguments. 
-* [SwipeDirection](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SwipingEventArgs~SwipeDirection.html# “”)- the swipe direction of the swiped row
-* [SwipeOffset](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SwipingEventArgs~SwipeOffSet.html# “”)- the current swipe offset of the row being swiped
+* [RowIndex](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SwipingEventArgs~RowIndex.html# “”): Defines the swiping row index. 
+* [RowData](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SwipingEventArgs~RowData.html# “”): Defines the underlying data associated with the swiped row as its arguments. 
+* [SwipeDirection](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SwipingEventArgs~SwipeDirection.html# “”): Defines the swipe direction of the swiped row.
+* [SwipeOffset](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SwipingEventArgs~SwipeOffSet.html# “”): Defines the current swipe offset of the row being swiped.
 
-By handling the swipe events, you can make use of these property values from the arguments to perform any desired action such as deleting the row, editing the data, etc. 
+By handling the swipe events, you can use these properties value from the arguments to perform any desired action such as deleting the row, editing the data, etc. 
 
-## Loading Multiple Views as Swipe Template
+## Loading multiple views as swipe template
 
-You can use the swipe templates to customize your application by loading any view in the templates and assigning custom actions to them such as deleting a row, adding a row, editing the underlying data associated, etc. You can also display multiple views in a template like in the following example where two views are loaded for editing the cell values in the row and deleting the row respectively.
-Refer the following code example that shows how to load multiple views in template when swiping towards right.
+The swipe templates can be customized by loading any view in the templates, and assigning custom actions to them such as deleting a row, adding a row, editing the underlying data associated, etc. Multiple views can also be displayed in a template like in the following example, where two views are loaded for editing the cell values in the row and deleting the row respectively.
 
 **Swiping.xaml**
 
 {% highlight xaml %}
 
 //Defining left swipe template
+
 <sfgrid:SfDataGrid.LeftSwipeTemplate>
+
    <DataTemplate>
+
        <Grid BackgroundColor="#009EDA">
+
            <Grid.ColumnDefinitions>
                <ColumnDefinition Width="50"/>                              
                <ColumnDefinition Width="100"/>                                                     
-               <ColumnDefinition Width="150"/>                                                     
+               <ColumnDefinition Width="130"/>                                                     
            </Grid.ColumnDefinitions>
 
            <Image Grid.Column="0"
@@ -139,14 +149,14 @@ Refer the following code example that shows how to load multiple views in templa
            <Grid Grid.Column="2" BackgroundColor="#DC595F"> 
                <Grid.ColumnDefinitions>
                    <ColumnDefinition Width="50" />                              
-                   <ColumnDefinition Width="100" />                                                     
+                   <ColumnDefinition Width="80" />                                                     
                </Grid.ColumnDefinitions>
 
                <Image Grid.Column="0"
                       BackgroundColor="Transparent"
                       BindingContextChanged="rightImage_BindingContextChanged"
                       HorizontalOptions="CenterAndExpand"
-                      Source="TrashImage.png" />
+                      Source="TrashImage.png"  Margin="9"/>
 
                <Label Grid.Column="1"
                       BackgroundColor="Transparent"
@@ -167,19 +177,24 @@ Refer the following code example that shows how to load multiple views in templa
 {% highlight c# %}
 
 public partial class Swiping : SamplePage
+
 {
+
     private Image leftImage;
+
     private Image rightImage;
+
     private int swipedRowIndex;
-    private SubView subView;
+
+    private FormsView formView;
 
     public Swiping()
+
     {
         InitializeComponent();
-        this.dataGrid.ItemsSource = viewModel.OrdersInfo;
         this.PropertyChanged += Swiping_PropertyChanged;
-        subView = new SubView(dataGrid);
-        MainView.Children.Add(subView);
+        formView = new FormsView(dataGrid);
+        customLayout.Children.Add(formView);
     }
 
     private void Swiping_PropertyChanged(object sender, PropertyChangedEventArgs e)
@@ -198,11 +213,6 @@ public partial class Swiping : SamplePage
         dataGrid.IsEnabled = true;
     }
 
-    private void dataGrid_GridViewCreated(object sender, GridViewCreatedEventArgs e)
-    {
-        dataGrid.GridStyle = new SwipeStyle();
-    }
-
     //Gesture listener to perform edit
     private void leftImage_BindingContextChanged(object sender, EventArgs e)
     {
@@ -210,19 +220,18 @@ public partial class Swiping : SamplePage
         {
             leftImage = sender as Image;
             (leftImage.Parent as View).GestureRecognizers.Add(new TapGestureRecognizer() { Command = new Command (Edit)});
-            leftImage.Source = ImageSource.FromResource("SampleBrowser.Icons.DataGrid.Edit.png");
+            leftImage.Source = ImageSource.FromResource("SfDataGridSample.EditIcon.png");
         }
     }
 
     //Code to edit row
     private void Edit()
     {
-        this.dataGrid.Opacity = 0.25;
-        this.dataGrid.IsEnabled = false;
-        if (Device.OS != TargetPlatform.Windows)
-            formView.LayoutTo(new Rectangle(10, (this.Height / 2) - (350 / 2), this.dataGrid.Width - 20, 350), 250, null);
+        if (Device.RuntimePlatform != Device.UWP || Device.Idiom == TargetIdiom.Phone)
+           formView.LayoutTo(new Rectangle(10, (this.Height / 2) - (350 / 2), this.dataGrid.Width - 20, 370), 250, null);
+
         else
-            formView.LayoutTo(new Rectangle(10, (this.dataGrid.Height / 2) - (350 / 2), this.dataGrid.Width - 20, 350), 250, null);
+           formView.LayoutTo(new Rectangle(10, (this.dataGrid.Height / 2) - (350 / 2), this.dataGrid.Width - 20, 350), 450, null);
         formView.IsVisible = true;
     }
 
@@ -230,7 +239,6 @@ public partial class Swiping : SamplePage
     private void Delete()
     {
         this.viewModel.OrdersInfo.RemoveAt(swipedRowIndex - 1);
-        (MainView.Children[1] as View).IsVisible = false;
     }
 
     //Gesture listener to perform delete
@@ -240,7 +248,7 @@ public partial class Swiping : SamplePage
         {
             rightImage = sender as Image;
             (rightImage.Parent as View).GestureRecognizers.Add(new TapGestureRecognizer() { Command = new Command(Delete) });
-            rightImage.Source = ImageSource.FromResource("SampleBrowser.Icons.DataGrid.Delete.png");
+            rightImage.Source = ImageSource.FromResource("SfDataGridSample.TrashImage.png");
         }
     }
 
@@ -250,31 +258,30 @@ public partial class Swiping : SamplePage
         swipedRowIndex = e.RowIndex;
     }
 
-}
+}       
 
 {% endhighlight %}
 
-The following screenshot shows the final outcome upon execution of the above code where swiping towards right loads two views in the template to edit and delete a row respectively.
-
 ![](SfDataGrid_images/Swiping_img2.jpeg)
 
-N> Similarly you can load the two views using the `SfDataGrid.RightSwipeTemplate` which when swiping towards left will result in the below outcome.
+N> Similarly, you can load two views using the `SfDataGrid.RightSwipeTemplate` when swiping towards left will result in the following outcome:
 
 ![](SfDataGrid_images/Swiping_img3.jpeg)
 
-## Customized Swipe Delete Functionality
+## Customized swipe delete functionality
 
-You can perform operations such as deleting a row when swiping a data row from one extent to other in the view. 
-Refer the below code example which illustrates how to delete a data row when swiping it from one extreme to other in the view. 
+Operations such as deleting a row when swiping a data row from one extent to other in the view can be performed. 
 
 **Swiping.Xaml**
-
 
 {% highlight xaml %}
 
 //Creating view for left swipe
+
 <sfgrid:SfDataGrid.LeftSwipeTemplate>
+
   <DataTemplate>
+
     <ContentView BindingContextChanged="leftTemplate_BindingContextChanged"
                  BackgroundColor="#1AAA87">
 
@@ -289,8 +296,11 @@ Refer the below code example which illustrates how to delete a data row when swi
 </sfgrid:SfDataGrid.LeftSwipeTemplate>
 
 //Creating view for right swipe
+
 <sfgrid:SfDataGrid.RightSwipeTemplate>
+
   <DataTemplate>
+
     <ContentView BindingContextChanged="rightTemplate_BindingContextChanged" 
                  BackgroundColor="#1AAA87">
 
@@ -310,58 +320,92 @@ Swiping.Xaml.cs
 {% highlight c# %}
 
 //Call to delete() when swipe is ended
+
 private void dataGrid_SwipeEnded(object sender, SwipeEndedEventArgs e)
+
 {
+
     swipedRowIndex = e.RowIndex;
+
     if (Math.Abs(e.SwipeOffset) >= dataGrid.Width)
+
     {
+
         if (e.SwipeOffset > 0)
+
             leftTemplateView.Content.IsVisible = true;
+
         else
+
             rightTemplateView.Content.IsVisible = true;
+
         doDeleting();
+
     }
+
 }
 
+
 //Code to delete row
+
 private async void doDeleting()
+
 {
-    isSuspend = true;
+
+
     await Task.Delay(2000);
+
     if (leftTemplateView.Content.IsVisible)
+
         leftTemplateView.Content.IsVisible = false;
+
     else if (rightTemplateView.Content.IsVisible)
+
         rightTemplateView.Content.IsVisible = false;
+
     if (!IsUndoClicked)
+
         viewModel.OrdersInfo.RemoveAt(swipedRowIndex - 1);
+
     else
+
     {
+
         var removedData = viewModel.OrdersInfo[swipedRowIndex - 1];
+
         var isSelected = dataGrid.SelectedItems.Contains(removedData);
+
         viewModel.OrdersInfo.Remove(removedData);
+
         viewModel.OrdersInfo.Insert(swipedRowIndex - 1, removedData);
+
         if (isSelected)
+
             dataGrid.SelectedItems.Add(removedData);
+
         IsUndoClicked = false;
+
     }
-    isSuspend = false;
+
 }
+
 {% endhighlight %}
-The following screenshot shows the final outcome upon execution of the above code.
 
 ![](SfDataGrid_images/Swiping_img4.jpeg)
 
 ## Loading complex template for swiping
 
-When a complex layout is loaded in the GridTemplateColumn, swiping may not occur or may not be smooth at times since the touches will be intercepted by the views loaded in the template. As a result the SfDataGrid may not recognize the touches which might restrict swiping operation. In-order to resolve this issue, we need to set the `InputTransparent` property of the views loaded in the `DataTemplate` of the `GridTemplateColumn` as `True`.
+When a complex layout is loaded in the GridTemplateColumn, swiping may not occur or may not be smooth at times, since the touches will be intercepted by the views loaded in the template. As a result, the data grid may not recognize the touches that might restrict the swiping operation. To resolve this issue, set the `InputTransparent` property of the views loaded in the `DataTemplate` of the `GridTemplateColumn` to `True`.
 
-Refer the below code example in which the `InputTransparent` property of the views loaded in the `GridTemplateColumn.CellTemplate` is set as `True` to resolve the swiping not working issue when a complex layout is loaded in the GridTemplateColumn.
 
 {% highlight xaml %}
 
-<sfgrid:GridTemplateColumn MappingName="" HeaderText="Customer Details" Width="200">
+<sfgrid:GridTemplateColumn MappingName="CustomerID" HeaderText="Customer Details" Width="200">
+
     <sfgrid:GridTemplateColumn.CellTemplate>
+
         <DataTemplate>
+
            <Grid InputTransparent="True" 
                   ColumnSpacing="0" 
                   RowSpacing="0" 
@@ -385,15 +429,15 @@ Refer the below code example in which the `InputTransparent` property of the vie
                            VerticalOptions="FillAndExpand"
                            Grid.Column="0"
                            Grid.ColumnSpan="3"
-                           Grid.Row="1"
-                           >
+                           Grid.Row="1">
+                           
                 <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" >
-                    <Label Text="Customer ID: " />
-                    <Label Text="{Binding CustomerID}"  TextColor="Black" />
+                    <Label Text="Customer ID: " HorizontalTextAlignment="Start"/>
+                    <Label Text="{Binding CustomerID}"  TextColor="Black" HorizontalTextAlignment="Start"/>
                 </StackLayout>
                 <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-                    <Label Text="Country:" />
-                    <Label Text="{Binding ShipCountry}" TextColor="Black" />
+                    <Label Text="Country:" HorizontalTextAlignment="Start"/>
+                    <Label Text="{Binding ShipCountry}" TextColor="Black" HorizontalTextAlignment="Start"/>
                 </StackLayout>
               </StackLayout>
            </Grid>
@@ -405,46 +449,46 @@ Refer the below code example in which the `InputTransparent` property of the vie
 
 ![](SfDataGrid_images/SwipingInTemplateColumn.png)
 
-## How to
+## How to cancel the swipe programmatically
 
-### How to cancel the swipe programmatically? 
-
-SfDataGrid allows you to cancel the swipe programmatically by calling the [SfDataGrid.ResetSwipeOffset](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ResetswipeOffset.html) method in [SfDataGrid.SwipeEnded](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SwipeEnded_EV.html#%20%E2%80%9C%E2%80%9D) event.
-
-The below code example illustrates how to cancel the swiping programmatically by calling the `ResetSwipeOffset` method.
+The data grid allows canceling the swipe programmatically by calling the [SfDataGrid.ResetSwipeOffset](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ResetswipeOffset.html) method in [SfDataGrid.SwipeEnded](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SwipeEnded_EV.html#%20%E2%80%9C%E2%80%9D) event.
 
 {% highlight xaml %}
 
 <syncfusion:SfDataGrid x:Name="datagrid"
-                        ColumnSizer="Star"
-                        AutoGenerateColumns="True"
-                        AllowSwiping="True"
-                        ItemsSource="{Binding OrdersInfo}"
-                        SwipeEnded="Datagrid_SwipeEnded">
+
+                       ColumnSizer="Star"
+                       AutoGenerateColumns="True"
+                       AllowSwiping="True"
+                       ItemsSource="{Binding OrdersInfo}"
+                       SwipeEnded="Datagrid_SwipeEnded">
 
   <syncfusion:SfDataGrid.LeftSwipeTemplate>
+
     <DataTemplate>
-      <Grid BackgroundColor="Blue">
+
+      <Grid BackgroundColor="Blue" Padding="9">
         <Label Text ="EDIT"
-                HorizontalTextAlignment="Start"
-                VerticalTextAlignment="Center"
-                LineBreakMode ="NoWrap"
-                BackgroundColor="Transparent"
-                TextColor ="White" />
+               HorizontalTextAlignment="Start"
+               VerticalTextAlignment="Center"
+               LineBreakMode ="NoWrap"
+               BackgroundColor="Transparent"
+               TextColor ="White" />
       </Grid>
     </DataTemplate>
   </syncfusion:SfDataGrid.LeftSwipeTemplate>
 
   <syncfusion:SfDataGrid.RightSwipeTemplate>
-    <DataTemplate>
-      <Grid BackgroundColor="Red">
 
+    <DataTemplate>
+
+      <Grid BackgroundColor="Red" Padding="9">
         <Label FontSize="15"
-                HorizontalTextAlignment ="Center"
-                Text ="Deleted"
-                TextColor ="White"
-                VerticalTextAlignment ="Center"
-                LineBreakMode ="NoWrap" />
+               HorizontalTextAlignment ="Center"
+               Text ="Deleted"
+               TextColor ="White"
+               VerticalTextAlignment ="Center"
+               LineBreakMode ="NoWrap" />
       </Grid>
       </DataTemplate>
   </syncfusion:SfDataGrid.RightSwipeTemplate>
@@ -455,8 +499,13 @@ The below code example illustrates how to cancel the swiping programmatically by
 {% highlight c# %}
 
 private void Datagrid_SwipeEnded(object sender, SwipeEndedEventArgs e)
+
 {
+
     datagrid.ResetSwipeOffset();
+
 }
 
 {% endhighlight %}
+
+You can download the source code of swiping sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Swiping-661295078).

@@ -35,26 +35,26 @@ By passing collection of `SfRadialMenuItem`, you can get the view of `SfRadialMe
 							FontIconText="&#xe738;" IconFontFamily="Segoe MDL2 Assets.ttf" />
 							<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" 
 							FontIconText="&#xe72b;" IconFontFamily="Segoe MDL2 Assets.ttf" />
-							<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" 
-							FontIconText="&#xe700;" IconFontFamily="Segoe MDL2 Assets.ttf" />
+							<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped"
+							 FontIconText="&#xe700;" IconFontFamily="Segoe MDL2 Assets.ttf" />
 						</radialMenu:SfRadialMenuItem.Items>
 					</radialMenu:SfRadialMenuItem>
 					<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" FontIconText="&#xe700;" IconFontFamily="Segoe MDL2 Assets.ttf">
 						<radialMenu:SfRadialMenuItem.Items>
 							<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" 
 							FontIconText="&#xe734;" IconFontFamily="Segoe MDL2 Assets.ttf" />
-							<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped"
-							 FontIconText="&#xe738;" IconFontFamily="Segoe MDL2 Assets.ttf" />
 							<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" 
-							FontIconText="&#xe700;"IconFontFamily="Segoe MDL2 Assets.ttf" />
+							FontIconText="&#xe738;" IconFontFamily="Segoe MDL2 Assets.ttf" />
 							<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" 
-							FontIconText="&#xe72b;" IconFontFamily="Segoe MDL2 Assets.ttf" />
+							FontIconText="&#xe700;" IconFontFamily="Segoe MDL2 Assets.ttf" />
+							<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" 
+							FontIconText="&#xe72b;"" IconFontFamily="Segoe MDL2 Assets.ttf" />
 						</radialMenu:SfRadialMenuItem.Items>
 					</radialMenu:SfRadialMenuItem>
 					<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" FontIconText="&#xe72d;" IconFontFamily="Segoe MDL2 Assets.ttf">
 						<radialMenu:SfRadialMenuItem.Items>
-							<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" 
-							FontIconText="&#xe734;" IconFontFamily="Segoe MDL2 Assets.ttf" />
+							<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped"
+							 FontIconText="&#xe734;" IconFontFamily="Segoe MDL2 Assets.ttf" />
 							<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" 
 							FontIconText="&#xe72e;" IconFontFamily="Segoe MDL2 Assets.ttf" />
 							<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" 
@@ -73,17 +73,17 @@ By passing collection of `SfRadialMenuItem`, you can get the view of `SfRadialMe
 							<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" 
 							FontIconText="&#xe73b;" IconFontFamily="Segoe MDL2 Assets.ttf" />
 							<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" 
-							FontIconText="&#xe73a;" IconFontFamily="Segoe MDL2 Assets.ttf" />
+							FontIconText="&#xe73a;"" IconFontFamily="Segoe MDL2 Assets.ttf" />
 							<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" 
 							FontIconText="&#xe739;" IconFontFamily="Segoe MDL2 Assets.ttf" />
 						</radialMenu:SfRadialMenuItem.Items>
 					</radialMenu:SfRadialMenuItem>
 					<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" FontIconText="&#xe73a;" IconFontFamily="Segoe MDL2 Assets.ttf">
 						<radialMenu:SfRadialMenuItem.Items>
-							<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped"
-							 FontIconText="&#xe73d;" IconFontFamily="Segoe MDL2 Assets.ttf" />
-							<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped"
-							 FontIconText="&#xe73c;" IconFontFamily="Segoe MDL2 Assets.ttf" />
+							<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" 
+							FontIconText="&#xe73d;" IconFontFamily="Segoe MDL2 Assets.ttf" />
+							<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" 
+							FontIconText="&#xe73c;" IconFontFamily="Segoe MDL2 Assets.ttf" />
 							<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" 
 							FontIconText="&#xe734;" IconFontFamily="Segoe MDL2 Assets.ttf" />
 						</radialMenu:SfRadialMenuItem.Items>

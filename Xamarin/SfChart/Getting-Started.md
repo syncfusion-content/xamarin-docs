@@ -13,16 +13,81 @@ This section explains you the steps required to populate the Chart with data, ti
 
 ## Adding Chart Reference
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add chart to your project, open the NuGet package manager in Visual Studio, and search for [“Syncfusion.Xamarin.SfChart”](https://www.nuget.org/packages/Syncfusion.Xamarin.SfChart/), and then install it. 
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add chart to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfChart](https://www.nuget.org/packages/Syncfusion.Xamarin.SfChart/), and then install it. 
 
 ![](Getting-Started_images/addref.png)
 
 To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfchart) to know about the dependent assemblies for chart. 
 
-I> After adding the reference, currently, an additional step is required for iOS and UWP projects. We need to initialize the renderer as explained in this [KB article](https://www.syncfusion.com/kb/7144/).
+N>Install the same version of the chart NUGET in all the projects.
 
-I> For UWP alone, one more additional step is required if the project is built in release mode with .NET Native tool chain enabled. You can refer to the [KB article](https://www.syncfusion.com/kb/7149) for more details.
- 
+## Launching the application on each platform with chart
+
+To use the chart inside an application, each platform application requires some additional configurations. The configurations vary from platform to platform and is discussed in the following sections:
+
+### iOS
+
+To launch the chart in iOS, call the SfChartRenderer.Init() method in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework initialization and before the LoadApplication method is called as demonstrated in the following code sample:
+
+{% highlight C# %} 
+
+public override bool FinishedLaunching(UIApplication app, NSDictionary options) 
+{ 
+    … 
+    global::Xamarin.Forms.Forms.Init();
+
+    Syncfusion.SfChart.XForms.iOS.Renderers.SfChartRenderer.Init();
+
+    LoadApplication(new App()); 
+    …
+}
+
+{% endhighlight %}
+
+### Universal Windows Platform (UWP)
+
+To launch the chart in UWP, call the SfChartRenderer.Init() method in the constructor of MainPage before the LoadApplication method is called as demonstrated in the following code sample.
+
+{% highlight C# %} 
+
+public MainPage() 
+{ 
+    … 
+
+  Syncfusion.SfChart.XForms.UWP.SfChartRenderer.Init();
+
+  LoadApplication (new App ()); 
+  … 
+}
+
+{% endhighlight %}
+
+In addition to the above configurations, you need to initialize the chart assemblies in App.xaml.cs in UWP project as shown in the below code snippets. This is required to deploy application with chart in `Release` mode in UWP platform.
+
+{% highlight C# %} 
+
+// In App.xaml.cs 
+protected override void OnLaunched(LaunchActivatedEventArgs e)
+{ 
+   … 
+   if (rootFrame == null) 
+   { 
+      List<Assembly> assembliesToInclude = new List<Assembly>();
+
+      assembliesToInclude.Add(typeof(Syncfusion.SfChart.XForms.UWP.SfChartRenderer).GetTypeInfo().Assembly);
+
+      Xamarin.Forms.Forms.Init(e, assembliesToInclude); 
+   } 
+… 
+}
+
+{% endhighlight %}
+
+### Android
+
+The Android platform does not require any additional configuration to render the chart.
+
+
 ## Initialize Chart
 
 Import the [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html) namespace as shown below in your respective Page,

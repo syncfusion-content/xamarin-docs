@@ -426,7 +426,7 @@ chart.Series.Add(lineSeries);
 {% highlight c# %}
 
 ColumnSeries series = new ColumnSeries();
-Series.GetDataPointIndex(400, 400); // you can get the data point index by passing current pointer position
+series.GetDataPointIndex(400, 400); // you can get the data point index by passing current touch point
 
 {% endhighlight %}
 

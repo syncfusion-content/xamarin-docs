@@ -7,10 +7,44 @@ control: Chart
 documentation: ug
 ---
 
-## OnTouchUp
+ChartBehavior provides the below override methods to get the corresponding touch point while on touch actions and it can be possible by extenting any of the Chart behavior class.
 
-## OnTouchMove
+* [`OnTouchUp`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartBehavior~OnTouchUp.html)
 
-## OnTouchDown
+* [`OnTouchMove`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartBehavior~OnTouchMove.html)
 
-## DouleTap
+* [`OnTouchDown`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartBehavior~OnTouchDown.html)
+
+* [`DouleTap`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartBehavior~DoubleTap.html)
+
+Here, for example, you can get the user touch points using above methods by extending ChartTooltipBehavior. 
+
+{% highlight c# %}
+
+public class ChartTooltipBehaviorExt : ChartTooltipBehavior
+{
+        
+        protected override void OnTouchUp(float pointX, float pointY)
+        {
+            //you can perform any operations 
+        }
+
+        protected override void OnTouchMove(float pointX, float pointY)
+        {
+            //you can perform any operations 
+        }
+
+        protected override void OnTouchDown(float pointX, float pointY)
+        {
+            //you can perform any operations 
+        }
+
+        protected override void DoubleTap(float pointX, float pointY)
+        {
+           //you can perform any operations 
+        }
+      
+}
+
+{% endhighlight  %}
+

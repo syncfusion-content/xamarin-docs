@@ -18,10 +18,10 @@ documentation: ug
 {% highlight c# %}
 
 //Converts value of passed point co-ordinate to control related co-ordinate.
-var valToCoeff = Chart.SecondaryAxis.ValueToCoefficient(400);
+var valToCoefficient = Chart.SecondaryAxis.ValueToCoefficient(400);
 
 //Converts co-ordinate of point related to chart control to axis units.
-var CoeffToVal = Chart.SecondaryAxis.CoefficientToValue(valToCoeff);
+var CoeffToVal = Chart.SecondaryAxis.CoefficientToValue(valToCoefficient);
 
 {% endhighlight  %}
  

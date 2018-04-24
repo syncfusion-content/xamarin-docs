@@ -100,12 +100,12 @@ The [`SelectionChanged`](https://help.syncfusion.com/cr/cref_files/xamarin/sfcha
 
 public class ChartSelectionBehaviorExt : ChartSelectionBehavior
 {
-   protected override void OnSelectionChanging(ChartSelectionChangingEventArgs arg)
+   protected override void OnSelectionChanging(ChartSelectionChangingEventArgs args)
    {
-            var selectedSeres = arg.SelectedSeries;
-            var dataPointIndex = arg.SelectedDataPointIndex;
-            var previousSelectedIndex = arg.PreviousSelectedIndex;
-            var cancel = arg.Cancel;
+            var selectedSeres = args.SelectedSeries;
+            var dataPointIndex = args.SelectedDataPointIndex;
+            var previousSelectedIndex = args.PreviousSelectedIndex;
+            var cancel = args.Cancel;
    }
 }
 
@@ -123,11 +123,11 @@ public class ChartSelectionBehaviorExt : ChartSelectionBehavior
 public class ChartSelectionBehaviorExt : ChartSelectionBehavior
 {
         
-        protected override void OnSelectionChanged(ChartSelectionEventArgs arg)
+        protected override void OnSelectionChanged(ChartSelectionEventArgs args)
         {
-            var selectedSeries = arg.SelectedSeries;
-            var dataPointIndex = arg.SelectedDataPointIndex;
-            var previousSelectedIndex = arg.PreviousSelectedIndex;
+            var selectedSeries = args.SelectedSeries;
+            var dataPointIndex = args.SelectedDataPointIndex;
+            var previousSelectedIndex = args.PreviousSelectedIndex;
         }
 }
 

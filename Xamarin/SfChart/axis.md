@@ -429,7 +429,7 @@ chart.PrimaryAxis = new DateTimeAxis() {
 
 ### Getting actual interval type
 
-[`GetActualIntervalType`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeAxis~GetActualIntervalType.html) method is used to get the actual interval type of [`DataTimeAxis`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeAxis.html) for the given data.
+[`GetActualIntervalType`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeAxis~GetActualIntervalType.html) method is used to get the interval that is calculated from actual data in [`DataTimeAxis`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeAxis.html).
 
 {% highlight c# %}
 

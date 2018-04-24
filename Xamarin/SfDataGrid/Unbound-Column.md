@@ -9,7 +9,7 @@ documentation: ug
 
 # Unbound Column
 
-SfDataGrid allows you to add **additional columns** which are **not bound with data object** from underlying data source. You can add unbound column using [SfDataGrid.GridUnboundColumn](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridUnboundColumn.html) class.
+The data grid allows adding additional columns which are not bound with data object from the underlying data source. The unbound column can be added using the [SfDataGrid.GridUnboundColumn](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridUnboundColumn.html) class.
 
 {% tabs %}
 {% highlight xaml %}
@@ -42,16 +42,17 @@ this.dataGrid.Columns.Add(DiscountColumn);
 
 ![](SfDataGrid_images/UnboundColumn.png)
 
-N> It is mandatory to specify the [GridColumn.MappingName](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~MappingName.html) for `SfDataGrid.GridUnboundColumn` with some name to identify the column. It is not necessary to define name of field in the data object.
+N> It is mandatory to specify the [GridColumn.MappingName](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~MappingName.html) for `SfDataGrid.GridUnboundColumn` with some name to identify the column. It is not necessary to define name of the field in the data object.
 
-## Populating data for unbound column
+## Populating data for the unbound column
 
-You can populate the data for unbound column by setting [Expression](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridUnboundColumn~Expression.html) or [Format](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~Format.html) property.
+Data for the unbound column can be populated by setting the [Expression](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridUnboundColumn~Expression.html) or [Format](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~Format.html) property.
 
-### Using Expression
+### Using expression
 
-You can specify the arithmetic or logic expression using `Expression` property to compute the display value. By default `GridUnboundColumn` evaluates the expression with casing. You can disable the casing while evaluate the expression by setting [CaseSensitive](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridUnboundColumn~CaseSensitive.html) property to `false`.
-Below are the list of Arithmetic and logical operations supported.
+The arithmetic or logic expression can be specified by using the `Expression` property to compute the display value. By default, `GridUnboundColumn` evaluates the expression with casing. The casing will be disabled while evaluating the expression by setting the [CaseSensitive](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridUnboundColumn~CaseSensitive.html) property to `false`.
+
+List of supported arithmetic and logical operations are as follows:
 
 <table>
 <tr>
@@ -152,7 +153,7 @@ LessThanOrEqual
 </tr>
 </table>
 
-*Logical Operations*
+Logical Operations
 
 <table>
 <tr>
@@ -215,9 +216,9 @@ this.dataGrid.Columns.Add(DiscountColumn);
 {% endhighlight %}
 {% endtabs %}
 
-### Using Format
+### Using format
 
-You can format the values of other columns and display the formatted value in unbound column using `Format` property.
+Value of other columns can be formatted, and the formatted value displayed in the unbound column using the `Format` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -247,21 +248,21 @@ this.dataGrid.Columns.Add(DiscountColumn);
 
 ### Using QueryUnboundColumnValue event
 
-[QueryUnboundColumnValue](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~QueryUnboundColumnValue_EV.html) event is fired when value for the unbound column is queried. It provides the information about the cell that triggered this event and hence you can set the desired value for the grid cells of the unbound column. This event is triggered with [GridUnboundColumnEventsArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridUnboundColumnEventsArgs.html).
+The [QueryUnboundColumnValue](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~QueryUnboundColumnValue_EV.html) event is fired when value for the unbound column is queried. It provides the information about the cell that triggered this event. So, you can set the desired value for the grid cells of the unbound column. This event is triggered with the [GridUnboundColumnEventsArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridUnboundColumnEventsArgs.html).
 
-`GridUnboundColumnEventsArgs` provides the following properties:
+The `GridUnboundColumnEventsArgs` provides the following properties:
 
-* [Column](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridUnboundColumnEventsArgs~Column.html) - Gets the GridColumn of the cell that triggers this event.  
-* [OriginalSender](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridEventArgs~OriginalSender.html) - Gets the dataGrid raising this event.
-* [Record](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridUnboundColumnEventsArgs~Record.html) - Gets the underlying row data. 
-* [UnboundAction](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridUnboundColumnEventsArgs~UnboundAction.html) - Defines the action for triggering this event.
-* [Value](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridUnboundColumnEventsArgs~Value.html) - Gets or sets the value for GridUnboundColumn cell based on UnboundAction.
+ * [Column](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridUnboundColumnEventsArgs~Column.html): Gets GridColumn of the cell that triggers this event.  
+ * [OriginalSender](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridEventArgs~OriginalSender.html): Gets the data grid raising this event.
+ * [Record](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridUnboundColumnEventsArgs~Record.html): Gets the underlying row data.  
+ * [UnboundAction](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridUnboundColumnEventsArgs~UnboundAction.html): Defines the action for triggering this event.
+ * [Value](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridUnboundColumnEventsArgs~Value.html): Gets or sets the value for GridUnboundColumn cell based on UnboundAction.
 
-N> `UnboundActions.CommitData` and `UnboundActions.PasteData` are currently not supported and likely to be supported in future.    
+N> `UnboundActions.CommitData` and `UnboundActions.PasteData` are currently not supported, and likely to be supported in future.    
 
-You can populate data for the Unbound column by handling `QueryUnboundColumnValue` event, which allows you to customize the value of the `GridUnboundColumn`. `GridUnboundColumnEventsArgs` exposes `Value` property by which you can set the value for the grid cells of the unbound column based on the `UnboundAction`.
+Populate the data for the unbound column by handling `QueryUnboundColumnValue` event which allows customizing the value of the `GridUnboundColumn`. `GridUnboundColumnEventsArgs` exposes `Value` property, by which you can set the value for the grid cells of the unbound column based on the `UnboundAction`.
 
-Refer the below code example in which data for the unbound column is populated by handling the `QueryUnboundColumnValue` event.
+Refer to the following code example in which data for the unbound column is populated by handling the `QueryUnboundColumnValue` event:
 
 {% highlight c# %}
 dataGrid.QueryUnboundColumnValue += DataGrid_QueryUnboundColumnValue;

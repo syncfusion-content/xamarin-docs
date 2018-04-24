@@ -273,6 +273,35 @@ column.IsVisibleOnLegend = true;
 
 {% endtabs %}
 
+### Item margin
+
+The [`ItemMargin`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~ItemMargin.html) property is used to set the spacing between the legend items.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.Legend>
+
+    <chart:ChartLegend ItemMargin="20"/>
+
+</chart:SfChart.Legend>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.Legend = new ChartLegend();
+
+chart.Legend.ItemMargin = 20;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](legend_images/ItemMargin.png)
+
+
 ## Legend wrap
 
 The legend items can be placed in multiple rows using the [`OverflowMode`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~OverflowMode.html) property if size of the total legend exceeds the available size. The default value of the [`OverflowMode`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~OverflowMode.html) property is [`Scroll`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegendOverflowMode.html).

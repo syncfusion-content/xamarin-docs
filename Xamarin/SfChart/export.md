@@ -38,7 +38,7 @@ N> In order to save the image in Android and Windows Phone, you have to enable t
 
 ## Get the stream of Chart
 
-The GetStream method of SfChart is used to get the chart as stream. The output stream can be passed as an input of any other components which accept the stream such as pdf, excel, word etc.
+The [`GetStream`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~GetStream.html) method of SfChart is used to get the chart as stream. The output stream can be passed as an input of any other components which accept the stream such as pdf, excel, word etc.
 
 {% tabs %} 
 

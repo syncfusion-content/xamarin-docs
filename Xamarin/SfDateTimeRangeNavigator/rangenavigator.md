@@ -13,16 +13,81 @@ This section walks you through the steps required to add `SfDateTimeRangeNavigat
 
 ## Adding RangeNavigator Reference
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add range navigator to your project, open the NuGet package manager in Visual Studio, and search for [“syncfusion.xamarin.sfchart”](https://www.nuget.org/packages/Syncfusion.Xamarin.SfChart/), and then install it. 
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add range navigator to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfChart](https://www.nuget.org/packages/Syncfusion.Xamarin.SfChart/), and then install it. 
 
 ![](gettingstarted_images/addref.png)
 
 To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfdatetimerangenavigator) to know about the dependent assemblies for range navigator. 
 
-I> After adding the reference, currently, an additional step is required for iOS and UWP projects. We need to initialize the renderer as explained in this [KB article](https://www.syncfusion.com/kb/7977/how-to-resolve-sfdatetimerangenavigator-not-rendering-issue-in-ios-and-uwp).
+N>Install the same version of the chart NUGET in all the projects.
 
-I> For UWP alone, one more additional step is required if the project is built in release mode with .NET Native tool chain enabled. You can refer to the [KB article](https://www.syncfusion.com/kb/7944/how-to-make-syncfusion-xamarin-forms-range-navigator-to-work-in-uwp-in-release-mode-when-net-native) for more details.
- 
+## Launching the application on each platform with range navigator 
+
+To use the range navigator inside an application, each platform application requires some additional configurations. The configurations vary from platform to platform and is discussed in the following sections:
+
+### iOS
+
+To launch the range navigator in iOS, call the SfRangeNavigatorRenderer.Init() method in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework initialization and before the LoadApplication method is called as demonstrated in the following code sample:
+
+{% highlight C# %} 
+
+public override bool FinishedLaunching(UIApplication app, NSDictionary options) 
+{ 
+    … 
+    global::Xamarin.Forms.Forms.Init();
+
+    Syncfusion.RangeNavigator.XForms.iOS.SfRangeNavigatorRenderer.Init();     
+
+    LoadApplication(new App()); 
+    …
+}
+
+{% endhighlight %}
+
+### Universal Windows Platform (UWP)
+
+To launch the range navigator in UWP, call the SfRangeNavigatorRenderer.Init() method in the constructor of MainPage before the LoadApplication method is called as demonstrated in the following code sample.
+
+{% highlight C# %} 
+
+public MainPage() 
+{ 
+    … 
+
+  Syncfusion.RangeNavigator.XForms.UWP.SfRangeNavigatorRenderer.Init(); 
+
+  LoadApplication (new App ()); 
+  … 
+}
+
+{% endhighlight %}
+
+In addition to the above configurations, you need to initialize the control assemblies in App.xaml.cs in UWP project as shown in the below code snippets. This is required to deploy application with range navigator in `Release` mode in UWP platform.
+
+{% highlight C# %} 
+
+// In App.xaml.cs 
+protected override void OnLaunched(LaunchActivatedEventArgs e)
+{ 
+   … 
+   if (rootFrame == null) 
+   { 
+      List<Assembly> assembliesToInclude = new List<Assembly>();
+
+      assembliesToInclude.Add(typeof(Syncfusion.RangeNavigator.XForms.UWP. SfRangeNavigatorRenderer).GetTypeInfo().Assembly);
+
+      Xamarin.Forms.Forms.Init(e, assembliesToInclude); 
+   } 
+… 
+}
+
+
+{% endhighlight %}
+
+### Android
+
+The Android platform does not require any additional configuration to render the range navigator.
+
 ## Adding and configuring SfDateTimeRangeNavigator 
 
 First, let us initialize the control with major and minor date time scales by specifying the minimum and maximum date to be visualized in the control using [`Minimum`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator~Minimum.html) and [`Maximum`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator~Maximum.html) properties.

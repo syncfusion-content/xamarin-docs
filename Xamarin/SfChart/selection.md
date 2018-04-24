@@ -104,11 +104,10 @@ public class ChartSelectionBehaviorExt : ChartSelectionBehavior
    {
             var selectedSeres = arg.SelectedSeries;
             var dataPointIndex = arg.SelectedDataPointIndex;
-            var previousSelectedindex = arg.PreviousSelectedIndex;
+            var previousSelectedIndex = arg.PreviousSelectedIndex;
             var cancel = arg.Cancel;
    }
 }
-
 
 {% endhighlight %}
 

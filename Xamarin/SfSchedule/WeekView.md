@@ -422,6 +422,26 @@ schedule.WeekViewSettings = weekViewSettings;
 
 ![](daymodule_images/timelabelappearance_week.png)
 
+## Time Label Size
+
+You can customize the size of the labels which are mentioning the time, by setting [TimeLabelSize](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.WeekLabelSettings~TimeLabelSize.html) property of `WeekLabelSettings` in `WeekViewSettings`.
+
+{% tabs %}
+{% highlight C# %}
+schedule.ScheduleView = ScheduleView.WeekView;
+//Create new instance of WeekViewSettings
+WeekViewSettings weekViewSettings = new WeekViewSettings();
+//Create new instance of WeekLabelSettings
+WeekLabelSettings weekLabelSettings = new WeekLabelSettings();
+//Customizing the size of the time label
+weekLabelSettings.TimeLabelSize = 15;
+weekViewSettings.WeekLabelSettings = weekLabelSettings;
+schedule.WeekViewSettings = weekViewSettings;
+{% endhighlight %}
+{% endtabs %}
+
+![](daymodule_images/TimeLabelSize_Week.png)
+
 ## Selection
 You can customize the default appearance of selection UI in the timeslots.
 

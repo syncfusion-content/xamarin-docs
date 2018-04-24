@@ -13,7 +13,6 @@ documentation: ug
 
 By using the following IDEs, you can develop Android and UWP applications:
 
-* Visual Studio 2013
 * Visual Studio 2015
 * Visual Studio 2017
 

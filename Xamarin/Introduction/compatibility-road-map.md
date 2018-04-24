@@ -20,4 +20,4 @@ To know about Syncfusion Xamarin.Forms component vs Xamarin.Forms version compat
 http://files2.syncfusion.com/Installs/{essential_studio_version_number}/ReadMe/Xamarin_Forms.html
 
 Example,
-[http://files2.syncfusion.com/Installs/v16.1.0.24/ReadMe/Xamarin_Forms.html](http://files2.syncfusion.com/Installs/v16.1.0.24/ReadMe/Xamarin_Forms.html)
+[http://files2.syncfusion.com/Installs/v{{ site.releaseversion }}/ReadMe/Xamarin_Forms.html](http://files2.syncfusion.com/Installs/v{{ site.releaseversion }}/ReadMe/Xamarin_Forms.html)

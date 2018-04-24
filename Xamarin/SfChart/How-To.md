@@ -49,7 +49,7 @@ N> The [`ValueToPoint`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchar
 var valToCoefficient = Chart.SecondaryAxis.ValueToCoefficient(400);
 
 //Converts co-ordinate of point related to chart control to axis units.
-var CoeffToVal = Chart.SecondaryAxis.CoefficientToValue(valToCoefficient);
+var coefficientToVal = Chart.SecondaryAxis.CoefficientToValue(valToCoefficient);
 
 {% endhighlight  %}
 

@@ -110,7 +110,7 @@ public class Meeting
 
 N> You can inherit this class from `INotifyPropertyChanged` for dynamic changes in custom data.
 
-You can map those properties of `Meeting` class with our SfSchedule control by using `ScheduleAppointmentMapping`.
+You can map those properties of `Meeting` class with our SfSchedule control by using [AppointmentMapping](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~AppointmentMapping.html).
 {% tabs %}
 {% highlight xaml %} 
 <syncfusion:SfSchedule x:Name="schedule" ScheduleView="DayView" DataSource="{Binding Meetings}">
@@ -208,7 +208,7 @@ schedule.DataSource=scheduleAppointmentCollection;
 {% endtabs %}
 
 ### All-Day Appointment Panel
-All-day appointment doesn't block out entire time slot in SfSchedule, rather it will render in separate layout exclusively for all-day appointment. It can be enabled by setting `ShowAllDay` property of `DayViewSettings`, `WeekViewSettings` and `WorkWeekViewSettings` of `DayView`, `WeekView` and `WorkWeekView` respectively.
+All-day appointment doesn't block out entire time slot in SfSchedule, rather it will render in separate layout exclusively for all-day appointment. It can be enabled by setting [ShowAllDay](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DayViewSettings~ShowAllDay.html) property of `DayViewSettings`, `WeekViewSettings` and `WorkWeekViewSettings` of `DayView`, `WeekView` and `WorkWeekView` respectively.
 
 {% tabs %}
 {% highlight c# %}
@@ -219,8 +219,7 @@ schedule.WeekViewSettings = weekViewSeetings;
 {% endhighlight %} 
 {% endtabs %}
 
-All-Day panel background can be customized by setting `AllDayAppointmentLayoutColor` 
-of the respective view settings.
+All-Day panel background can be customized by setting [AllDayAppointmentLayoutColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekViewSettings~AllDayAppointmentLayoutColor.html) of the respective view settings.
 
 {% tabs %}
 {% highlight c# %}
@@ -253,40 +252,40 @@ Recurrence pattern used in the control are in iCal standard. Schedule control su
 
 | RecurrenceType | RecurrenceProperties | Description |
 |----------------|-------------------------|---------------------------------------------------------------|
-| Daily | DailyNDays | Gets or sets the event to recur on a daily N intervals basis. |
-|  | IsDailyEveryNDays | Checks whether the event occurs Daily Every N days. |
-| Weekly | IsWeeklySunday | Checks whether the event occurs every Sunday of week |
-|  | IsWeeklyMonday | Checks whether the event occurs every Monday of week |
-|  | IsWeeklyTuesday | Checks whether the event occurs every Tuesday of week |
-|  | IsWeeklyWednesday | Checks whether the event occurs every Wednesday of week |
-|  | IsWeeklyThursday | Checks whether the event occurs every Thursday of week |
-|  | IIsWeeklyFriday | Checks whether the event occurs every Friday of week |
-|  | IsWeeklySaturday | Checks whether the event occurs every Saturday of week |
-|  | NthWeek | Gets or sets the event only nth week of the year. |
-|  | WeekDay | Gets or sets the event every week day. |
-|  | WeeklyEveryNWeeks | Gets or sets the event every N Weeks. |
-| Monthly | SpecificMonth | Gets or sets the event in a specific month. |
-|  | SpecificMonthDay | Gets or sets the event in a specific month day. |
-|  | IsMonthlySpecific | Checks whether the event is Monthly specific event |
-|  | MonthlyEveryNMonths | Gets or sets the event every N Months. |
-|  | MonthlyNthWeek | Gets or sets the event nth week of every month. |
-|  | MonthlySpecificMonthDay | Gets or sets the event specific month day of Month. |
-|  | MonthlyWeekDay | Gets or sets the event every week day of month. |
-| Yearly | IsYearlySpecific | Checks whether the event is Yearly Specific. |
-|  | YearlyEveryNYears | Gets or sets the event occurs every N Years. |
-|  | YearlyGenericMonth | Gets or sets the event occurs in generic month. |
-|  | YearlyNthWeek | Gets or sets the event occurs yearly nth week. |
-|  | YearlySpecificMonth | Gets or sets the event occurs yearly specific month. |
-|  | YearlySpecificMonthDay | Gets or sets the event occurs yearly specific month day. |
-|  | YearlyWeekDay | Gets or sets the event occurs yearly week day. |
-|  | EveryNYears | Gets or sets the event every N Years. |
-| Common | IsRangeEndDate | Checks whether the event has Range end date |
-|  | IsRangeNoEndDate | Checks whether the event has No Range end date |
-|  | IsRangeRecurrenceCount | Checks whether the event has recurrence count. |
-|  | RangeEndDate | Gets or sets the event range end date. |
-|  | RangeStartDate | Gets or sets the event range start date. |
-|  | RangeRecurrenceCount | Gets or sets the event range recurrence count. |
-|  | IsSpecific | Checks whether the event occurs in Specific recurrence type. |
+| Daily | [DailyNDays](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~DailyNDays.html) | Gets or sets the event to recur on a daily N intervals basis. |
+|  | [IsDailyEveryNDays](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~IsDailyEveryNDays.html) | Checks whether the event occurs Daily Every N days. |
+| Weekly | [IsWeeklySunday ](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~IsWeeklySunday.html)| Checks whether the event occurs every Sunday of week |
+|  | [IsWeeklyMonday](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~IsWeeklyMonday.html) | Checks whether the event occurs every Monday of week |
+|  | [IsWeeklyTuesday](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~IsWeeklyTuesday.html) | Checks whether the event occurs every Tuesday of week |
+|  | [IsWeeklyWednesday](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~IsWeeklyWednesday.html) | Checks whether the event occurs every Wednesday of week |
+|  | [IsWeeklyThursday](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~IsWeeklyThursday.html) | Checks whether the event occurs every Thursday of week |
+|  | [IsWeeklyFriday](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~IsWeeklyFriday.html) | Checks whether the event occurs every Friday of week |
+|  | [IsWeeklySaturday](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~IsWeeklySaturday.html) | Checks whether the event occurs every Saturday of week |
+|  | [NthWeek](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~NthWeek.html) | Gets or sets the event only nth week of the year. |
+|  | [WeekDay](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~WeekDay.html) | Gets or sets the event every week day. |
+|  | [WeeklyEveryNWeeks](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~WeeklyEveryNWeeks.html) | Gets or sets the event every N Weeks. |
+| Monthly | [SpecificMonth](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~SpecificMonth.html) | Gets or sets the event in a specific month. |
+|  | [SpecificMonthDay](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~SpecificMonthDay.html) | Gets or sets the event in a specific month day. |
+|  | [IsMonthlySpecific](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~IsMonthlySpecific.html) | Checks whether the event is Monthly specific event |
+|  | [MonthlyEveryNMonths](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~MonthlyEveryNMonths.html) | Gets or sets the event every N Months. |
+|  | [MonthlyNthWeek](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~MonthlyNthWeek.html) | Gets or sets the event nth week of every month. |
+|  | [MonthlySpecificMonthDay](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~MonthlySpecificMonthDay.html) | Gets or sets the event specific month day of Month. |
+|  | [MonthlyWeekDay](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~MonthlyWeekDay.html) | Gets or sets the event every week day of month. |
+| Yearly | [IsYearlySpecific](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~IsYearlySpecific.html) | Checks whether the event is Yearly Specific. |
+|  | [YearlyEveryNYears](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~YearlyEveryNYears.html) | Gets or sets the event occurs every N Years. |
+|  | [YearlyGenericMonth](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~YearlyGenericMonth.html) | Gets or sets the event occurs in generic month. |
+|  | [YearlyNthWeek](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~YearlyNthWeek.html) | Gets or sets the event occurs yearly nth week. |
+|  | [YearlySpecificMonth](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~YearlySpecificMonth.html) | Gets or sets the event occurs yearly specific month. |
+|  | [YearlySpecificMonthDay](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~YearlySpecificMonthDay.html) | Gets or sets the event occurs yearly specific month day. |
+|  | [YearlyWeekDay](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~YearlyWeekDay.html) | Gets or sets the event occurs yearly week day. |
+|  | [EveryNYears](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~EveryNYears.html) | Gets or sets the event every N Years. |
+| Common | [IsRangeEndDate](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~IsRangeEndDate.html) | Checks whether the event has Range end date |
+|  | [IsRangeNoEndDate](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~IsRangeNoEndDate.html) | Checks whether the event has No Range end date |
+|  | [IsRangeRecurrenceCount](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~IsRangeRecurrenceCount.html) | Checks whether the event has recurrence count. |
+|  | [RangeEndDate](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~RangeEndDate.html) | Gets or sets the event range end date. |
+|  | [RangeStartDate](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~RangeStartDate.html) | Gets or sets the event range start date. |
+|  | [RangeRecurrenceCount](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~RangeRecurrenceCount.html) | Gets or sets the event range recurrence count. |
+|  | [IsSpecific](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~IsSpecific.html) | Checks whether the event occurs in Specific recurrence type. |
 
 Find the following `RecurrenceRule` possibilities available in the Schedule control while creating the recurrence appointment.
 
@@ -473,21 +472,26 @@ Schedule appointment can be customized by setting appointment style properties s
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfSchedule x:Name="schedule" ScheduleView="DayView" DataSource="{Binding Meetings}">
-	<syncfusion:SfSchedule.AppointmentStyle>
-		 <syncfusion:AppointmentStyle BorderWidth="10" 
-			TextColor="Red" 
-			BorderCornerRadius="10" 
-			TextSize="12"
-			BorderColor="Blue">
-	</syncfusion:AppointmentStyle>
-</syncfusion:SfSchedule.AppointmentStyle>    
+    <syncfusion:SfSchedule.AppointmentStyle>
+         <syncfusion:AppointmentStyle
+                       BorderWidth="10"
+                       TextColor="Red"
+                       BorderCornerRadius="10"
+                       FontSize = "25"
+                       FontAttributes = "Bold"
+                       FontFamily = "Arial"
+                       BorderColor="Blue">
+    </syncfusion:AppointmentStyle>
+</syncfusion:SfSchedule.AppointmentStyle>
 </syncfusion:SfSchedule>
 {% endhighlight %}
 {% highlight c# %}
 //Creating Appointment style
 AppointmentStyle appointmentStyle = new AppointmentStyle();
 appointmentStyle.TextColor = Color.Red;
-appointmentStyle.TextStyle = Font.SystemFontOfSize(15, FontAttributes.Bold);
+appointmentStyle.FontSize = 25;
+appointmentStyle.FontAttributes = FontAttributes.Bold;
+appointmentStyle.FontFamily = "Arial";
 appointmentStyle.BorderColor = Color.Blue;
 appointmentStyle.BorderCornerRadius = 12;
 appointmentStyle.BorderWidth = 10;
@@ -610,7 +614,7 @@ public class DayAppointmentDataTemplate : DataTemplate
             {
                 Text = "Template",
                 TextColor = Color.White,
-                BackgroundColor = Color.Blue
+                BackgroundColor = Color.LightGreen
             };
         });
     }

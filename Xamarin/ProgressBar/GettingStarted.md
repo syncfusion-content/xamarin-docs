@@ -15,7 +15,7 @@ This section explains the steps required to work with progress bar in Xamarin.Fo
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add progress bar to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfProgressBar](https://www.nuget.org/packages/Syncfusion.Xamarin.SfProgressBar/), and then install it.
 
-![](overview_images/nuget.jpeg)
+![](overview_images/nuget.png)
 
 To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac#) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows#). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#progress-bar) to know about the dependent assemblies for progress bar.
 

@@ -18,13 +18,9 @@ documentation: ug
 
 {% highlight c# %}
 
-// Converts the screen points into a value related to ChartAxis.
-
 double xValue = Chart.PointToValue(Chart.PrimaryAxis, screenPoint);
 
 double yValue = Chart.PointToValue(Chart.SecondaryAxis, screenPoint);
-
-// Converts the data point value of the chart to chart coordinate.
 
 double chartPointX = Chart.ValueToPoint(Chart.PrimaryAxis, xValue);
 

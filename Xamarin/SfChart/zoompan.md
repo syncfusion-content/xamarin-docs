@@ -314,7 +314,7 @@ zoomPan.Reset();
 
 ### OnScaleStart(float manipulationX, float manipulationY, float scaleFactor)
 
-[`OnScaleStart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~OnScaleStart.html) method is called when the user started scaling a chart through pinch zooming. The argument contains the information about manipulation and  scale factor.
+The [`OnScaleStart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~OnScaleStart.html) method is called when the user starts scaling a chart through pinch zooming. This argument contains the information about manipulation and scale factor.
 
 {% highlight c# %}
 
@@ -331,7 +331,7 @@ public class ChartZoomExt:ChartZoomPanBehavior
 
 ### OnScaleDelta(float manipulationX, float manipulationY, float scaleFactor)
 
-[`OnScaleDelta`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~OnScaleDelta.html) method is calling when the user scaling the chart through pinch zooming and it contains the information about manipulation points and scale factor.
+The [`OnScaleDelta`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~OnScaleDelta.html) method is called when the user scales the chart through pinch zooming. This argument contains the information about manipulation points and scale factor.
 
 {% highlight c# %}
 
@@ -347,7 +347,7 @@ public class ChartZoomExt:ChartZoomPanBehavior
 
 ### OnScaleEnd(float manipulationX, float manipulationY,float scaleFactor)
 
-[`OnScaleEnd`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~OnScaleEnd.html) method is called after the scaling ends. The argument contains the information about Manipulation points and scale factor.
+The [`OnScaleEnd`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~OnScaleEnd.html) method is called after scaling ends. This argument contains the information about manipulation points and scale factor.
 
 {% highlight c# %}
 
@@ -363,7 +363,7 @@ public class ChartZoomExt:ChartZoomPanBehavior
 
 ### OnScroll( float pointX, float pointY, float distanceX, float distanceY)
 
-[`OnScroll`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~OnScroll.html) method of [`ChartZoomPanBehavior`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior.html) is called when panning the chart and you can perform any operation during scrolling using this method.
+The [`OnScroll`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~OnScroll.html) method of [`ChartZoomPanBehavior`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior.html) is called when the chart is being panned. You can perform any operation while scrolling using this method.
 
 {% highlight c# %}
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How to
-description: how to
+title: Customizations in SfChart
+description: Customizations in SfChart
 platform: xamarin
 control: Chart
 documentation: ug
@@ -32,7 +32,7 @@ Also, use the [`ValueToPoint`](https://help.syncfusion.com/cr/cref_files/xamarin
 
 N> You can convert the actual axis value to  0 to 1 coefficient using [`ValueToCoefficient(double value)`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~ValueToCoefficient.html) and [`CoefficientToValue(double value)`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~CoefficientToValue.html) methods of [`ChartAxis`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis.html).
 
-## Get the touch interactions in chart
+## Get the touch position in chart
 
 ChartBehavior provides the below override methods to get the x and y position when touch on the chart.
 
@@ -52,22 +52,22 @@ public class ChartTooltipBehaviorExt : ChartTooltipBehavior
         
         protected override void OnTouchUp(float pointX, float pointY)
         {
-            
+               base.OnTouchUp(pointX, pointY);
         }
 
         protected override void OnTouchMove(float pointX, float pointY)
         {
-            
+               base.OnTouchMove(pointX, pointY);
         }
 
         protected override void OnTouchDown(float pointX, float pointY)
         {
-            
+               base.OnTouchDown(pointX, pointY);
         }
 
         protected override void DoubleTap(float pointX, float pointY)
         {
-           
+               base.DoubleTap(pointX, pointY);
         }
       
 }

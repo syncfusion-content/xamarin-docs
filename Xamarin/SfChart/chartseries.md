@@ -426,7 +426,8 @@ chart.Series.Add(lineSeries);
 {% highlight c# %}
 
 ColumnSeries series = new ColumnSeries();
-series.GetDataPointIndex(400, 400); // you can get the data point index by passing current touch point
+int index = series.GetDataPointIndex(400, 400);
 
 {% endhighlight %}
 
+>N The ouput of this method will be -1 if there is no data point under the given x and y position.

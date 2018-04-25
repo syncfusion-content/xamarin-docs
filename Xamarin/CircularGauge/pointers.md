@@ -22,8 +22,7 @@ You can add multiple pointers to the gauge to point multiple values on the same 
 {% highlight xaml %}
 
      <gauge:SfCircularGauge>
-     ...
-
+   
          <gauge:SfCircularGauge.Scales>
 
              <gauge:Scale>
@@ -35,8 +34,7 @@ You can add multiple pointers to the gauge to point multiple values on the same 
 		     </gauge:Scale>
 
          </gauge:SfCircularGauge.Scales>	
-           
-     ...
+   
      </gauge:SfCircularGauge>
 
 
@@ -73,8 +71,7 @@ The appearance of the needle pointer can be customized by using the [`Type`](htt
 {% highlight xaml %}
 
      <gauge:SfCircularGauge>
-     ...
-
+  
          <gauge:SfCircularGauge.Scales>
 
              <gauge:Scale>
@@ -86,8 +83,7 @@ The appearance of the needle pointer can be customized by using the [`Type`](htt
 		     </gauge:Scale>
 
          </gauge:SfCircularGauge.Scales>	
-           
-     ...
+  
      </gauge:SfCircularGauge>
 
 
@@ -118,8 +114,7 @@ The appearance of the needle pointer can be customized by using the [`Type`](htt
 {% highlight xaml %}
 
      <gauge:SfCircularGauge>
-     ...
-
+  
          <gauge:SfCircularGauge.Scales>
 
              <gauge:Scale>
@@ -131,8 +126,7 @@ The appearance of the needle pointer can be customized by using the [`Type`](htt
 		     </gauge:Scale>
 
          </gauge:SfCircularGauge.Scales>	
-           
-     ...
+  
      </gauge:SfCircularGauge>
 
 
@@ -165,8 +159,7 @@ The length of the needle is controlled by using the [`LengthFactor`](https://hel
 {% highlight xaml %}
 
      <gauge:SfCircularGauge>
-     ...
-
+   
          <gauge:SfCircularGauge.Scales>
 
              <gauge:Scale>
@@ -178,8 +171,7 @@ The length of the needle is controlled by using the [`LengthFactor`](https://hel
 		  </gauge:Scale>
 
          </gauge:SfCircularGauge.Scales>	
-           
-     ...
+  
      </gauge:SfCircularGauge>
 
 
@@ -214,8 +206,7 @@ Knob of the needle pointer can be customized by using the [`KnobColor`](https://
 {% highlight xaml %}
 
      <gauge:SfCircularGauge>
-     ...
-
+    
          <gauge:SfCircularGauge.Scales>
 
              <gauge:Scale>
@@ -229,7 +220,7 @@ Knob of the needle pointer can be customized by using the [`KnobColor`](https://
 
          </gauge:SfCircularGauge.Scales>	
            
-     ...
+  
      </gauge:SfCircularGauge>
 
 
@@ -265,8 +256,6 @@ Tail of the needle pointer can be customized by using the [`TailColor`](https://
 {% highlight xaml %}
 
      <gauge:SfCircularGauge>
-     ...
-
          <gauge:SfCircularGauge.Scales>
 
              <gauge:Scale>
@@ -278,8 +267,7 @@ Tail of the needle pointer can be customized by using the [`TailColor`](https://
 		     </gauge:Scale>
 
          </gauge:SfCircularGauge.Scales>	
-           
-     ...
+ 
      </gauge:SfCircularGauge>
 
 
@@ -316,8 +304,6 @@ A range pointer is an accenting line or shaded background range that can be plac
 {% highlight xaml %}
 
      <gauge:SfCircularGauge>
-     ...
-
          <gauge:SfCircularGauge.Scales>
 
              <gauge:Scale>
@@ -329,8 +315,7 @@ A range pointer is an accenting line or shaded background range that can be plac
 		      </gauge:Scale>
 
          </gauge:SfCircularGauge.Scales>	
-           
-     ...
+  
      </gauge:SfCircularGauge>
 
 {% endhighlight %}
@@ -362,8 +347,7 @@ The range pointer’s UI is customized by using the [`Color`](https://help.syncf
 {% highlight xaml %}
 
      <gauge:SfCircularGauge>
-     ...
-
+    
          <gauge:SfCircularGauge.Scales>
 
              <gauge:Scale>
@@ -375,8 +359,7 @@ The range pointer’s UI is customized by using the [`Color`](https://help.syncf
 		  </gauge:Scale>
 
          </gauge:SfCircularGauge.Scales>	
-           
-     ...
+  
      </gauge:SfCircularGauge>
 
 
@@ -416,8 +399,7 @@ The [`RangePointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/S
 {% highlight xaml %}
 
      <gauge:SfCircularGauge>
-     ...
-
+    
          <gauge:SfCircularGauge.Scales>
 
              <gauge:Scale>
@@ -429,8 +411,7 @@ The [`RangePointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/S
 		     </gauge:Scale>
 
          </gauge:SfCircularGauge.Scales>	
-           
-     ...
+   
      </gauge:SfCircularGauge>
 
 
@@ -462,8 +443,7 @@ The [`RangePointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/S
 {% highlight xaml %}
 
      <gauge:SfCircularGauge>
-     ...
-
+    
          <gauge:SfCircularGauge.Scales>
 
              <gauge:Scale>
@@ -476,7 +456,6 @@ The [`RangePointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/S
 
          </gauge:SfCircularGauge.Scales>	
            
-     ...
      </gauge:SfCircularGauge>
 
 
@@ -511,8 +490,7 @@ The [`RangeCap`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncf
 {% highlight xaml %}
 
      <gauge:SfCircularGauge>
-     ...
-
+   
          <gauge:SfCircularGauge.Scales>
 
              <gauge:Scale LabelOffset ="0.75" ScaleStartOffset = "0.9" ScaleEndOffset ="1">
@@ -533,7 +511,6 @@ The [`RangeCap`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncf
 
          </gauge:SfCircularGauge.Scales>	
            
-     ...
      </gauge:SfCircularGauge>
 
 
@@ -583,8 +560,7 @@ The image is used to denote the pointer value instead of rendering the marker sh
 {% highlight xaml %}
 
      <gauge:SfCircularGauge>
-     ...
-
+    
          <gauge:SfCircularGauge.Scales>
 
              <gauge:Scale>
@@ -596,8 +572,7 @@ The image is used to denote the pointer value instead of rendering the marker sh
 		  </gauge:Scale>
 
          </gauge:SfCircularGauge.Scales>	
-           
-     ...
+    
      </gauge:SfCircularGauge>
 
 
@@ -628,8 +603,7 @@ The image is used to denote the pointer value instead of rendering the marker sh
 {% highlight xaml %}
 
      <gauge:SfCircularGauge>
-     ...
-
+    
          <gauge:SfCircularGauge.Scales>
 
              <gauge:Scale>
@@ -642,7 +616,6 @@ The image is used to denote the pointer value instead of rendering the marker sh
 
          </gauge:SfCircularGauge.Scales>	
            
-     ...
      </gauge:SfCircularGauge>
 
 
@@ -679,8 +652,7 @@ The marker can be customized in terms of color, width, and height by using the [
 {% highlight xaml %}
 
      <gauge:SfCircularGauge>
-     ...
-
+    
          <gauge:SfCircularGauge.Scales>
 
              <gauge:Scale>
@@ -692,8 +664,7 @@ The marker can be customized in terms of color, width, and height by using the [
 		    </gauge:Scale>
 
          </gauge:SfCircularGauge.Scales>	
-           
-     ...
+
      </gauge:SfCircularGauge>
 
 
@@ -729,8 +700,7 @@ In addition to the default pointer, you can add n number of pointers to a scale 
 {% highlight xaml %}
 
      <gauge:SfCircularGauge>
-     ...
-
+    
          <gauge:SfCircularGauge.Scales>
 
              <gauge:Scale>
@@ -750,8 +720,7 @@ In addition to the default pointer, you can add n number of pointers to a scale 
 		    </gauge:Scale>
 
          </gauge:SfCircularGauge.Scales>	
-           
-     ...
+  
      </gauge:SfCircularGauge>
 
 
@@ -800,8 +769,7 @@ The [`EnableAnimation`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgaug
 {% highlight xaml %}
 
      <gauge:SfCircularGauge>
-     ...
-
+     
          <gauge:SfCircularGauge.Scales>
 
                 <gauge:Scale   RimColor="LightGray" RimThickness="30" RadiusFactor="1" ShowTicks="False"
@@ -824,8 +792,7 @@ The [`EnableAnimation`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgaug
 		    </gauge:Scale>
 
          </gauge:SfCircularGauge.Scales>	
-           
-     ...
+   
      </gauge:SfCircularGauge>
 
 
@@ -890,8 +857,7 @@ Pointers can be dragged over the scale value. It can be achieved by clicking and
 {% highlight xaml %}
 
      <gauge:SfCircularGauge>
-     ...
-
+    
          <gauge:SfCircularGauge.Scales>
 
               <gauge:Scale   RimColor="DeepSkyBlue" RimThickness="20" RadiusFactor="1" ShowTicks="False"
@@ -906,8 +872,7 @@ Pointers can be dragged over the scale value. It can be achieved by clicking and
 		    </gauge:Scale>
 
          </gauge:SfCircularGauge.Scales>	
-           
-     ...
+  
      </gauge:SfCircularGauge>
 
 

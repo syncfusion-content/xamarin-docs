@@ -66,7 +66,7 @@ schedule.ShowAppointmentsInline = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](monthview_images/appointmentindicator.png)
+![](monthview_images/monthinlineview.png)
 
 >**NOTE**
 If appointments not there in the selected day, Inline view displays the text as "No Events"

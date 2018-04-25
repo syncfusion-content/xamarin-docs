@@ -28,13 +28,13 @@ double chartPointY = Chart.ValueToPoint(Chart.SecondaryAxis, yValue);
 
 {% endhighlight  %}
 
-Also,  The [`ValueToPoint`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~ValueToPoint.html) and [`PointToValue`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~PointToValue.html) methods are also available in [`ChartAxis`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis.html) but it is calculate values only from exact chart area region by excluding its axis part region.
+Also, use the [`ValueToPoint`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~ValueToPoint.html) and [`PointToValue`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~PointToValue.html) methods which are also available in [`ChartAxis`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis.html) to convert the screen point within the rendered area of the series.
 
-N> You can covert data point value into coordinate unites and vice versa using  [`ValueToCoefficient(double value)`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~ValueToCoefficient.html) and [`CoefficientToValue(double value)`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~CoefficientToValue.html) methods of [`ChartAxis`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis.html).
+N> You can convert the actual axis value to  0 to 1 coefficient using [`ValueToCoefficient(double value)`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~ValueToCoefficient.html) and [`CoefficientToValue(double value)`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~CoefficientToValue.html) methods of [`ChartAxis`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis.html).
 
-## Get the touch actions in chart 
+## Get the touch interactions in chart
 
-ChartBehavior provides the below override methods to get the corresponding screen point while on touch actions and it can be possible by extending any of the Chart behavior class.
+ChartBehavior provides the below override methods to get the x and y position when touch on the chart.
 
 * [`OnTouchUp`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartBehavior~OnTouchUp.html) - Occurs when the finger is raised off the screen while the finger is over the Chart. 
 
@@ -44,7 +44,6 @@ ChartBehavior provides the below override methods to get the corresponding scree
 
 * [`DoubleTap`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartBehavior~DoubleTap.html) - Occurs when touch the chart area twice in rapid succession.
 
-Here, for example, you can get the user touch points using above methods by extending ChartTooltipBehavior. 
 
 {% highlight c# %}
 
@@ -53,22 +52,22 @@ public class ChartTooltipBehaviorExt : ChartTooltipBehavior
         
         protected override void OnTouchUp(float pointX, float pointY)
         {
-            //you can perform any operations 
+            
         }
 
         protected override void OnTouchMove(float pointX, float pointY)
         {
-            //you can perform any operations 
+            
         }
 
         protected override void OnTouchDown(float pointX, float pointY)
         {
-            //you can perform any operations 
+            
         }
 
         protected override void DoubleTap(float pointX, float pointY)
         {
-           //you can perform any operations 
+           
         }
       
 }

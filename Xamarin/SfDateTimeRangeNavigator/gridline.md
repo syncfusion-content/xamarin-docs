@@ -9,7 +9,7 @@ documentation: ug
 
 # Grid Lines
 
-The `MinorScaleStyle` and `MajorScaleStyle` properties of `SfDateTimeRangeNavigator` used to customize the minor and major grid lines. Following properties are available in each scale style to configure the grid lines.
+The [`MinorScaleStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator~MinorScaleStyle.html) and [`MajorScaleStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator~MajorScaleStyle.html) properties of [`SfDateTimeRangeNavigator`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator.html) used to customize the minor and major grid lines. Following properties are available in each scale style to configure the grid lines.
 
 * [`ShowGridLines`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.ScaleStyle~ShowGridLines.html) – used to set the visibility of grid lines.
 * [`GridLineWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.ScaleStyle~GridLineWidth.html) – used to set the width for grid lines.

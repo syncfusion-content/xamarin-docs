@@ -421,7 +421,7 @@ chart.Series.Add(lineSeries);
 
 ### GetDataPointIndex(float pointX, float pointY)
 
-[`GetDataPointIndex`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~GetDataPointIndex.html) method is used to get the actual data point index for corresponding screen point.
+The [`GetDataPointIndex`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~GetDataPointIndex.html) method gets the actual data point index for corresponding screen point.
 
 {% highlight c# %}
 
@@ -430,4 +430,4 @@ int index = series.GetDataPointIndex(400, 400);
 
 {% endhighlight %}
 
->N The ouput of this method will be -1 if there is no data point under the given x and y position.
+>N The ouput of this method will be -1 if there is no data point under the given x and y positions.

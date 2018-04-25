@@ -31,7 +31,7 @@ dateTime.Intervals = DateTimeIntervalType.Year | DateTimeIntervalType. Month;
 
 ## Appearance Customization
 
-The [`MajorScaleStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator~MajorScaleStyle.html) and [`MinorScaleStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator~MinorScaleStyle.html) properties of `SfDateTimeRangeNavigator` are used to customize the appearance of ticks and labels.
+The [`MajorScaleStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator~MajorScaleStyle.html) and [`MinorScaleStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator~MinorScaleStyle.html) properties of [`SfDateTimeRangeNavigator`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator.html) are used to customize the appearance of ticks and labels.
 
 * [`Position`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.ScaleStyle~Position.html) – used to position the labels and ticks inside or outside of the range navigator.
 * [`LabelAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.ScaleStyle~LabelAlignment.html) – used to set the alignment of the labels. 

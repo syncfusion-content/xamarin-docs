@@ -11,6 +11,8 @@ documentation: ug
 
 The SfPopupLayout allows showing the pop-up content at various available positions.
 
+Following are the list of options available to show SfPopupLayout at various positions.
+
 <table>
 <tr>
 <th> Methods / Properties </th>
@@ -22,7 +24,7 @@ The SfPopupLayout allows showing the pop-up content at various available positio
 </tr>
 <tr>
 <td> {{'[SfPopupLayout.Show()](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Show.html)'| markdownify }} </td>
-<td> Similar as SfPopupLayout.IsOpen property.</td>
+<td> Similar as <code>SfPopupLayout.IsOpen</code> property.</td>
 </tr>
 <tr>
 <td> {{'[SfPopupLayout.Show(x-position, y-position)](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Show.html)'| markdownify }} </td>
@@ -87,11 +89,11 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-Run the previous sample to get the following output on iOS, Android, and Windows Phone devices.
+Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
 ![](GettingStarted_images/IsOpen_Property.png)
 
-N> SfPopupLayout.IsOpen property is not applicable for Type B.
+N> SfPopupLayout.IsOpen property is not applicable for `Displaying pop-up when the SfPopupLayout is not set as root view`.
 
 ### SfPopupLayout.Show()
 
@@ -138,7 +140,7 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-Run the previous sample to get the following output on iOS, Android, and Windows Phone devices.
+Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
 ![](GettingStarted_images/ShowPopup.png)
 
@@ -148,7 +150,7 @@ SfPopupLayout can be shown at the specified position by using the following meth
 
 ### SfPopupLayout.Show(x-position, y-position)
 
-To open the SfPopupLayout, use the `SfPopupLayout.Show(x-position, y-position)` property as in the following code sample.
+To open the SfPopupLayout in specific X,Y coordinates, use the `SfPopupLayout.Show(x-position, y-position)` property as in the following code sample.
 
 {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8" ?>
@@ -191,13 +193,13 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-Run the previous sample to get the following output on iOS, Android, and Windows Phone devices.
+Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
 ![](GettingStarted_images/ShowAtXYPosition.png)
 
 ### SfPopupLayout.ShowAtTouchPoint()
 
-To open the SfPopupLayout, use the `SfPopupLayout.ShowAtTouchPoint()` property as in the following code sample.
+To open the SfPopupLayout from the touch point in the screen, use the `SfPopupLayout.ShowAtTouchPoint()` property as in the following code sample.
 
 {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8" ?>
@@ -240,11 +242,11 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-Run the previous sample to get the following output on iOS, Android, and Windows Phone devices.
+Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
 ![](GettingStarted_images/ShowAtTouchPoint.png)
 
-N> SfPopupLayout.ShowAtTouchPoint() is not applicable for Type B.
+N> SfPopupLayout.ShowAtTouchPoint() is not applicable for `Displaying pop-up when the SfPopupLayout is not set as root view`.
 
 ## Relative positioning
 
@@ -252,7 +254,7 @@ SfPopupLayout can be shown at the relative position by using the following metho
 
 ### SfPopupLayout.ShowRelativeToView(View, RelativePosition)
 
-To open the SfPopupLayout, use the `SfPopupLayout.ShowRelativeToView(View, RelativePosition)` property as in the following code sample.
+To open the SfPopupLayout relative to a view, use the `SfPopupLayout.ShowRelativeToView(View, RelativePosition)` property as in the following code sample.
 
 {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8" ?>
@@ -298,6 +300,6 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-This is how the final output will look like on iOS, Android, and Windows Phone devices.
+Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
 ![](GettingStarted_images/RelativeToBottom.png)

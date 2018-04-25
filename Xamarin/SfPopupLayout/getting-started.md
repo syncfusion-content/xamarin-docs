@@ -146,14 +146,9 @@ Create a new BlankApp (Xamarin.Forms.Portable) application in Xamarin Studio o
 2. Import the control namespace as xmlns:syncfusion="clr-namespace:Syncfusion.XForms.SfPopupLayout;assembly=Syncfusion.SfPopupLayout.XForms" in XAML Page.
 3. The SfPopupLayout can be displayed by the following cases. 
     
-    * The SfPopupLayout can be displayed by making it as the base view or content view of the main page. 
-    * You can continue to keep your view as the content view of the main page and still display pop-up over your view by simply calling the SfPopupLayout.Show() method.
-
-4. For the first case, set the view over which the SfPopupLayout should be displayed as the content of the SfPopupLayout using the [SfPopupLayout.Content](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~ContentProperty.html) property.
-
 ### Displaying pop-up when the SfPopupLayout is set as root view
 
-The SfPopupLayout can be displayed by making it as the base view or content view of the main page. 
+The SfPopupLayout can be displayed by making it as the base view or content view of the main page. For the first case, set the view over which the SfPopupLayout should be displayed as the content of the SfPopupLayout using the [SfPopupLayout.Content](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~ContentProperty.html) property.
 
 Refer to the following code example for displaying popup.
 
@@ -242,9 +237,11 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-This is how the final output will look like on iOS, Android, and Windows Phone devices.
+Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
 ![](GettingStarted_images/DefaultAppearance.png)
+
+You can download the source code of this sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-2069677713).
 
 ## Customize positioning
 
@@ -252,10 +249,10 @@ The SfPopupLayout allows showing the pop-up content at various positions.
 
 The following list of options are available to position the SfPopupLayout in the desired position:
 
-* Center Positioning: Use the [SfPopupLayout.IsOpen](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~IsOpen.html) property or [SfPopupLayout.Show()](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Show.html) to display the SfPopupLayout at the center.
-* Absolute Positioning: Use the [SfPopupLayout.Show(x-position, y-position)](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Show.html) to display the SfPopupLayout at the specified X and y position.
-* OnTouch: Use the [SfPopupLayout.ShowAtTouchPoint()](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~ShowAtTouchPoint.html) to display the SfPopupLayout at the touch point.
-* Relative Positioning: Use the [SfPopupLayout.ShowRelativeToView(View, RelativePosition)](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~ShowRelativeToView.html) to display the SfPopupLayout at any of the 8 positions relative to the specified view.
+* `Center Positioning`: Use the [SfPopupLayout.IsOpen](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~IsOpen.html) property or [SfPopupLayout.Show()](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Show.html) to display the SfPopupLayout at the center.
+* `Absolute Positioning`: Use the [SfPopupLayout.Show(x-position, y-position)](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Show.html) to display the SfPopupLayout at the specified X and y position.
+* `OnTouch`: Use the [SfPopupLayout.ShowAtTouchPoint()](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~ShowAtTouchPoint.html) to display the SfPopupLayout at the touch point.
+* `Relative Positioning`: Use the [SfPopupLayout.ShowRelativeToView(View, RelativePosition)](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~ShowRelativeToView.html) to display the SfPopupLayout at any of the 8 positions relative to the specified view.
 
 More information for pop-up positioning is in this [link](https://help.syncfusion.com/xamarin/sfpopuplayout/popup-positioning).
  
@@ -268,11 +265,11 @@ By default, you can choose a layout from the following available layouts in the 
 
 You can also customize the entire view of the popup by loading the templates or custom views for the header, body, and footer.
 
-### Load a template as ContentTemplate of the SfPopupLayout
+More information for pop-up positioning is in this [link](https://help.syncfusion.com/xamarin-ios/sfpopuplayout/layout-customizations).
 
-Any view can be added as the pop-up content using the [SfPopupLayout.PopupView.ContentTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~ContentTemplate.html) property to refresh it. Refer to the following code example in which a label is added as a popup content.
+###  Load your template view in the popup body
 
-#### Displaying pop-up when the SfPopupLayout is set as root view
+Any view can be added as the pop-up content using the [SfPopupLayout.PopupView.ContentTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~ContentTemplate.html) property to refresh it. Refer to the following code example in which a label is added as a popup content and displaying popup when the SfPopupLayout is set as root view
 
 {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8" ?>
@@ -328,8 +325,11 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-This is how the final output will look like on iOS device.
+Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
+
 ![](GettingStarted_images/ContentView.png)
+
+N> Setting the content view is same for both cases i.e. displaying the pop-up when the SfPopupLayout is set as root view and vice versa.
 
 ## Customizing animations
 
@@ -342,7 +342,3 @@ Built-in animations are available in the SfPopupLayout applied when the PopupVie
 * [None](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AnimationMode.html): Animations will not be applied.
 
 More information for pop-up animations is in this [link](https://help.syncfusion.com/xamarin/sfpopuplayout/popup-animations).
-
-## Sample link
-
-You can download the source code of this sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-2069677713).

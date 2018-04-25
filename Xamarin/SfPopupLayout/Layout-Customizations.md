@@ -9,7 +9,7 @@ documentation: ug
 
 # Layout Customizations
 
-The SfPopupLayout supports two types of [SfPopupLayout.PopupView.AppearanceMode](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AppearanceMode.html). By default, the "AppearanceMode.OneButton" is set. You can change the appearance by using the `SfPopupLayout.PopupView.AppearanceMode` property.
+The SfPopupLayout supports two types of [SfPopupLayout.PopupView.AppearanceMode](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AppearanceMode.html). By default, the `AppearanceMode.OneButton` is set. You can change the appearance by using the `SfPopupLayout.PopupView.AppearanceMode` property.
 
 The two different appearance modes in the SfPopupLayout are as follows:
 
@@ -75,7 +75,7 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-If the previous sample runs with the `AppearanceMode` as `OneButton`, the output will appear on iOS, Android, and Windows Phone devices as follows:
+Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
 ![](GettingStarted_images/AppearanceMode_OneButton.png)
 
@@ -126,13 +126,13 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-If the previous sample runs with the `AppearanceMode` as `TwoButton`, the output will appear on iOS, Android, and Windows Phone devices as follows:
+Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
 ![](GettingStarted_images/AppearanceMode_TwoButton.png)
 
 ## Customizing pop-up layouts
  
-You can customize the entire view of the pop-up by loading the templates or custom views for the header, body, and footer.
+You can customize the entire view of the pop-up by loading the templates or custom views for the header, body and footer.
 
 ### Header customization
 
@@ -196,7 +196,7 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-This is how the final output will look like on iOS, Android, and Windows Phone devices.
+Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
 ![](PopupLayout_images/HeaderTemplate.png)
 
@@ -261,77 +261,9 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-This is how the final output will look like on iOS, Android, and Windows Phone devices.
+Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
 ![](PopupLayout_images/FooterTemplate.png)
-
-## How to 
-
-### Hide the header in the SfPopupLayout
-
-The SfPopupLayout allows hiding the header by using the [SfPopupLayout.PopupView.ShowHeader](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~ShowHeader.html) property. The default value of this property is `true`.
-
-To hide the header in the SfPopupLayout, follow the code example.
-
-{% highlight c# %}
-//MainPage.cs
-
-public MainPage()
-{
-    ....
-    InitializeComponent();
-    popupLayout.PopupView.ShowHeader = false;
-    ....
-}
-{% endhighlight %}
-
-This is how the final output will look like on iOS, Android, and Windows Phone devices.
-
-![](PopupLayout_images/ShowHeader_False.png)
-
-### Hide the footer in SfPopupLayout
-
-The SfPopupLayout allows hiding the footer by using the [SfPopupLayout.PopupView.ShowFooter](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~ShowFooter.html) property. The default value of this property is `true`.
-
-To hide the footer in the SfPopupLayout, follow the code example.
-
-{% highlight c# %}
-//MainPage.cs
-
-public MainPage()
-{
-    ....
-    InitializeComponent();
-    popupLayout.PopupView.ShowFooter = false;
-    ....
-}
-{% endhighlight %}
-
-This is how the final output will look like on iOS, Android, and Windows Phone devices.
-
-![](PopupLayout_images/ShowFooter_False.png)
-
-### Hide the Close icon in the SfPopupLayout 
-
-The SfPopupLayout allows hiding the Close icon by using the [SfPopupLayout.PopupView.ShowCloseButton](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~ShowCloseButton.html) property. The default value of this property is `true`.
-
-To hide the Close icon in the SfPopupLayout, follow the code example.
-
-{% highlight c# %}
-//MainPage.cs
-
-public MainPage()
-{
-    ....
-    InitializeComponent();
-    popupLayout.PopupView.ShowCloseButton = false;
-    ....
-}
-{% endhighlight %}
-
-This is how the final output will look like on iOS, Android and Windows Phone devices.
-
-![](PopupLayout_images/ShowClosebutton_False.png)
 
 ## Styles
 
@@ -392,7 +324,7 @@ public MainPage()
 
 {% endhighlight %}
 
-This is how the final output will look like on iOS, Android and Windows Phone devices.
+Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
 ![](PopupLayout_images/HeaderCustomization.png)
 
@@ -451,7 +383,7 @@ public MainPage()
 
 {% endhighlight %}
 
-This is how the final output will look like on iOS, Android, and Windows Phone devices.
+Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
 ![](PopupLayout_images/FooterCustomization.png)
 
@@ -495,6 +427,6 @@ public MainPage()
 
 {% endhighlight %}
 
-This is how the final output will look like on iOS, Android, and Windows Phone devices.
+Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
 ![](PopupLayout_images/BorderCustomization.png)

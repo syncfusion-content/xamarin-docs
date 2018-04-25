@@ -9,11 +9,11 @@ documentation: ug
 
 # Tooltip
 
-The tooltip is used to show the selected range start and end value of the `SfDateTimeRangeNavigator`.
+The tooltip is used to show the selected range start and end value of the [`SfDateTimeRangeNavigator`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator.html).
 
 ## Tooltip Visibility
 
-The [`EnableTooltip`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator~EnableTooltip.html) property of `SfDateTimeRangeNavigator` is used to control the visibility of the left and right tooltip. It is true by default.
+The [`EnableTooltip`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator~EnableTooltip.html) property of [`SfDateTimeRangeNavigator`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator.html) is used to control the visibility of the left and right tooltip. It is true by default.
 
 {% tabs %}
 {% highlight xaml %}
@@ -48,7 +48,7 @@ dateTimeRangeNavigator.TooltipFormat = "yyyy/MM";
 
 ## Appearance Customization
 
-The [`LeftTooltipStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator~LeftTooltipStyle.html) and [`RightTooltipStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator~RightTooltipStyle.html) properties of `SfDateTimeRangeNavigator` are used to customize the left and right tooltip. Following properties are available in each tooltip style to customize the appearance of the tooltip.
+The [`LeftTooltipStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator~LeftTooltipStyle.html) and [`RightTooltipStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator~RightTooltipStyle.html) properties of [`SfDateTimeRangeNavigator`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator.html) are used to customize the left and right tooltip. Following properties are available in each tooltip style to customize the appearance of the tooltip.
 
 * [`TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.TooltipStyle~TextColor.html) – used to change the color of the tooltip text.
 * [`BackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.TooltipStyle~BackgroundColor.html) – used to change the background color of the tooltip.

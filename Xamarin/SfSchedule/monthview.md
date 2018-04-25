@@ -290,6 +290,8 @@ You can customize the Month view cell in three ways,
 * [Customize month cell using style](#customize-month-cell-using-style)
 * [Customize month cell using event](#customize-month-cell-using-event)
 * [Customize month cell with custom UI](#customize-month-cell-with-custom-ui)
+* [Customize month cell using DataTemplate](#customize-month-cell-using-datatemplate)
+* [Customize month cell using DataTemplateSelector](#customize-month-cell-using-datatemplateselector)
 
 ### Customize month cell using style
 By using [MonthViewCellStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewCellStyle.html) of `SfSchedule` you can customize the month cell properties such as [BackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewCellStyle~BackgroundColor.html), [NextMonthBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewCellStyle~NextMonthBackgroundColor.html), [NextMonthTextColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewCellStyle~NextMonthTextColor.html), [PreviousMonthBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewCellStyle~PreviousMonthBackgroundColor.html), [PreviousMonthTextColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewCellStyle~PreviousMonthTextColor.html), [TextColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewCellStyle~TextColor.html), [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewCellStyle~TextStyle.html), [TodayBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewCellStyle~TodayBackgroundColor.html), [TodayTextColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewCellStyle~TodayTextColor.html).
@@ -405,6 +407,134 @@ private void Schedule_OnMonthCellLoadedEvent(object sender, MonthCellLoadedEvent
 {% endtabs %}
 
 ![](monthview_images/monthcellcustomview.png)
+
+### Customize month cell using DataTemplate
+You can customize the default appearance of the month cell by using the [MonthCellTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~MonthCellTemplate.html) property of `MonthViewSettings`.
+
+{% highlight xaml %}
+	
+	<schedule:SfSchedule
+        x:Name="schedule" ScheduleView="MonthView">
+		<schedule:SfSchedule.MonthViewSettings>
+				<schedule:MonthViewSettings>
+					<schedule:MonthViewSettings.MonthCellTemplate>
+						<DataTemplate>
+							<Label BackgroundColor = "Purple" TextColor="White" Text="{Binding Date, StringFormat='{0:dd}'}"/>
+						</DataTemplate>
+					</schedule:MonthViewSettings.MonthCellTemplate>
+				</schedule:MonthViewSettings>
+			</schedule:SfSchedule.MonthViewSettings>
+	</schedule:SfSchedule>
+{% endhighlight %}
+
+### Customize month cell using DataTemplateSelector
+
+You can use `DataTemplateSelector` to choose a `DataTemplate` at runtime based on the value of a data-bound to Schedule month cell through `MonthCellTemplate`. It provides multiple DataTemplates to be enabled for Schedule month cell, to customize the appearance of particular month cell. DataTemplateSelector for month cell includes [MonthCellItem](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthCellItem.html) as object item and `Schedule` as bindable object. `MonthCellItem` consists of following properties, [Date](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthCellItem~Date.html), [Appointments](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthCellItem~Appointments.html), [IsLeadingDay](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthCellItem~IsLeadingDay.html), [IsTrailingDay](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthCellItem~IsTrailingDay.html), [IsBlockOutDay](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthCellItem~IsBlockOutDay.html).
+
+{% highlight xaml %}
+<ContentPage.Resources>
+        <ResourceDictionary>
+			 <samplelocal:MonthCellDataTemplateSelector x:Key="monthCellDataTemplateSelector" />
+        </ResourceDictionary>
+</ContentPage.Resources>
+
+<ContentPage.Content>
+    <schedule:SfSchedule
+            AppointmentTemplate="{StaticResource appointmentDataTemplateSelector}">
+            <schedule:SfSchedule.BindingContext>
+                <samplelocal:AppointmentDataTemplateSelector />
+            </schedule:SfSchedule.BindingContext>
+    </schedule:SfSchedule>
+</ContentPage.Content>
+
+{% endhighlight %}
+
+#### Creating a DataTemplateSelector
+
+{% highlight c# %}
+
+	public class MonthCellDataTemplateSelector : DataTemplateSelector
+	{
+		public DataTemplate MonthDatesTemplate { get; set; }
+		public DataTemplate CurrentViewDatesTemplate { get; set; }
+		public DataTemplate CheckUpDateTemplate { get; set; }
+		public DataTemplate ConferenceDateTemplate { get; set; }
+
+		public MonthCellDataTemplateSelector()
+		{
+			MonthDatesTemplate = new DataTemplate(typeof(MonthDatesTemplate));
+			CurrentViewDatesTemplate = new DataTemplate(typeof(CurrentViewDatesTemplate));
+			CheckUpDateTemplate = new DataTemplate(typeof(CheckUpDateTemplate));
+			ConferenceDateTemplate = new DataTemplate(typeof(ConferenceDateTemplate));
+		}
+		protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
+		{
+			var sfSchedule = (container as Syncfusion.SfSchedule.XForms.SfSchedule);
+			if (sfSchedule == null) return null;
+			if (sfSchedule != null)
+			{
+				var appointments = (IList)(item as MonthCellItem).Appointments;
+
+				foreach (var appointment in appointments)
+				{
+					if ((appointment as ScheduleAppointment).Subject == "Conference")
+						return ConferenceDateTemplate;
+					else if ((appointment as ScheduleAppointment).Subject == "Checkup")
+						return CheckUpDateTemplate;
+				}
+
+				if ((item as MonthCellItem).IsLeadingDay || (item as MonthCellItem).IsTrailingDay)
+					return MonthDatesTemplate;
+				else
+					return CurrentViewDatesTemplate;
+			}
+			else
+				return null;
+		}
+	}		
+
+Used Label to display current ,next and previous month cell dates and StackLayout with label and image to denote the month cell with appointments.
+
+{% highlight xaml %}
+
+	<?xml version="1.0" encoding="UTF-8"?>
+	<!--Label as template to display current month view dates-->
+	<Label xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		x:Class="MonthCellTemplate_Forms.CurrentViewDatesTemplate"
+		BackgroundColor ="Transparent" FontSize="13" TextColor="Black"
+		Text = "{Binding Date, StringFormat='{0:dd}'}">
+	</Label>
+
+	...
+
+	<?xml version="1.0" encoding="UTF-8"?>
+	<!--Label as Template to display next/previous month dates-->
+	<Label xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		x:Class="MonthCellTemplate_Forms.MonthDatesTemplate"
+		BackgroundColor ="Transparent"
+		Text="{Binding Date, StringFormat='{0:dd}'}" 
+    	FontSize="13" TextColor="Gray">
+	</Label>
+
+	...
+
+	<?xml version="1.0" encoding="UTF-8"?>
+	<!--StackLayout with Label and Image as Template to display month cell with appointment-->
+	<StackLayout xmlns="http://xamarin.com/schemas/2014/forms"
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		x:Class="MonthCellTemplate_Forms.CheckUpDateTemplate"
+		BackgroundColor ="Transparent" Orientation="Vertical"
+		HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+	<Label Text = "{Binding Date, StringFormat='{0:dd}'}"  FontSize="13" TextColor="Black" 
+		VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+	<Button  x:Name = "button" Image="stethoscope.png" TextColor="Transparent" BackgroundColor ="Transparent" 
+		VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+	</StackLayout>
+
+
+{% endhighlight %}
 
 ## Getting Inline Appointment details
 Using [Appointment](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineAppointmentTappedEventArgs~Appointment.html) argument in the [MonthInlineAppointmentTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineAppointmentTappedEventArgs.html) of [MonthInlineAppointmentTapped](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~MonthInlineAppointmentTapped_EV.html) event, you can get the details Month Inline Appointments details while tapping the specific appointment. You can do the required functions while tapping the inline appointment using this event. 

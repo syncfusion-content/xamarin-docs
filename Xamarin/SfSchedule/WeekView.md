@@ -157,11 +157,11 @@ You can customize the interval of timeslots in `WeekView` by setting [TimeInterv
 
 {% tabs %}
 {% highlight XAML %}
-<schedule:SfSchedule x:Name="schedule" ScheduleView="WeekView" TimeInterval="120"/> 
+<schedule:SfSchedule x:Name="schedule" ScheduleView="WeekView" TimeInterval="180"/>
 {% endhighlight %}
 {% highlight C# %}
 schedule.ScheduleView = ScheduleView.WeekView;
-schedule.TimeInterval = 120;
+schedule.TimeInterval = 180;
 {% endhighlight %}
 {% endtabs %}
 
@@ -267,11 +267,11 @@ You can customize the appearance of the working hour timeslots by its color usin
 	<schedule:SfSchedule.WeekViewSettings>
 	  <!--setting week view settings properties -->
 	  <schedule:WeekViewSettings
-		  TimeSlotColor="Yellow"
-		  TimeSlotBorderColor="Aqua"
+		  TimeSlotColor="#fcf3c9"
+		  TimeSlotBorderColor="#fceb9f"
 		  TimeSlotBorderStrokeWidth="5"
 		  VerticalLineStrokeWidth="5"
-		  VerticalLineColor="Blue">
+		  VerticalLineColor="LightGray">
 	  </schedule:WeekViewSettings>
 	</schedule:SfSchedule.WeekViewSettings>
 </schedule:SfSchedule> 
@@ -280,9 +280,9 @@ You can customize the appearance of the working hour timeslots by its color usin
 schedule.ScheduleView = ScheduleView.WeekView;
 //Create new instance of WeekViewSettings
 WeekViewSettings weekViewSettings = new WeekViewSettings();
-weekViewSettings.TimeSlotBorderColor = Color.Aqua;
-weekViewSettings.VerticalLineColor = Color.Blue;
-weekViewSettings.TimeSlotColor = Color.Yellow;
+weekViewSettings.TimeSlotBorderColor = Color.FromHex("#fceb9f") ;
+weekViewSettings.VerticalLineColor = Color.LightGray;
+weekViewSettings.TimeSlotColor = Color.FromHex("#fcf3c9");
 weekViewSettings.TimeSlotBorderStrokeWidth = 5;
 weekViewSettings.VerticalLineStrokeWidth = 5;
 schedule.WeekViewSettings = weekViewSettings;
@@ -301,11 +301,11 @@ You can customize the appearance of the non-working hour timeslots by its color 
 	<schedule:SfSchedule.WeekViewSettings>
 	  <!--setting week view settings properties -->
 		<schedule:WeekViewSettings
-			NonWorkingHoursTimeSlotColor="Yellow"
-			NonWorkingHoursTimeSlotBorderColor="Aqua" 
+			NonWorkingHoursTimeSlotColor="#fcf3c9"
+			NonWorkingHoursTimeSlotBorderColor="#fceb9f"
 			TimeSlotBorderStrokeWidth="5"
 			VerticalLineStrokeWidth="5" 
-			VerticalLineColor="Blue">
+			VerticalLineColor="LightGray">
 		</schedule:WeekViewSettings>
 	</schedule:SfSchedule.WeekViewSettings>
 </schedule:SfSchedule> 
@@ -314,9 +314,9 @@ You can customize the appearance of the non-working hour timeslots by its color 
 schedule.ScheduleView = ScheduleView.WeekView;
 //Create new instance of WeekViewSettings
 WeekViewSettings weekViewSettings = new WeekViewSettings();
-weekViewSettings.NonWorkingHoursTimeSlotBorderColor = Color.Aqua;
-weekViewSettings.VerticalLineColor = Color.Blue;
-weekViewSettings.NonWorkingHoursTimeSlotColor = Color.Yellow;
+weekViewSettings.NonWorkingHoursTimeSlotBorderColor = Color.FromHex("#fceb9f");
+weekViewSettings.VerticalLineColor = Color.LightGray;
+weekViewSettings.NonWorkingHoursTimeSlotColor = Color.FromHex("#fcf3c9");
 weekViewSettings.TimeSlotBorderStrokeWidth = 5;
 weekViewSettings.VerticalLineStrokeWidth = 5;
 schedule.WeekViewSettings = weekViewSettings;
@@ -414,7 +414,7 @@ schedule.ScheduleView = ScheduleView.WeekView;
 WeekViewSettings weekViewSettings = new WeekViewSettings();
 //Create new instance of WeekLabelSettings
 WeekLabelSettings weekLabelSettings = new WeekLabelSettings();
-weekLabelSettings.TimeLabelColor = Color.Blue;
+weekLabelSettings.TimeLabelColor = Color.FromHex("#8282ff");
 weekViewSettings.WeekLabelSettings = weekLabelSettings;
 schedule.WeekViewSettings = weekViewSettings;
 {% endhighlight %}

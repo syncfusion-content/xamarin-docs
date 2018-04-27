@@ -156,11 +156,11 @@ You can customize the interval of timeslots in `DayView` by setting [TimeInterva
 
 {% tabs %}
 {% highlight XAML %}
-<schedule:SfSchedule  x:Name="schedule"  ScheduleView="DayView" TimeInterval="120"/> 
+<schedule:SfSchedule  x:Name="schedule"  ScheduleView="DayView" TimeInterval="180"/>
 {% endhighlight %}
 {% highlight C# %}
 schedule.ScheduleView = ScheduleView.DayView;
-schedule.TimeInterval = 120;
+schedule.TimeInterval = 180;
 {% endhighlight %}
 {% endtabs %}
 
@@ -265,8 +265,8 @@ You can customize the appearance of the WorkingHourTimeslot by its color using [
 	<schedule:SfSchedule.DayViewSettings>
 	 <!--setting DayView settings properties -->
 	   <schedule:DayViewSettings
-		  TimeSlotColor="Yellow"
-		  TimeSlotBorderColor="Aqua" 
+		  TimeSlotColor="#fcf3c9"
+		  TimeSlotBorderColor="#fceb9f"
 		  TimeSlotBorderStrokeWidth="5">
 		</schedule:DayViewSettings>
 	 </schedule:SfSchedule.DayViewSettings>
@@ -276,8 +276,8 @@ You can customize the appearance of the WorkingHourTimeslot by its color using [
 schedule.ScheduleView = ScheduleView.DayView;
 //Create new instance of DayViewSettings
 DayViewSettings dayViewSettings = new DayViewSettings();
-dayViewSettings.TimeSlotBorderColor = Color.Aqua;
-dayViewSettings.TimeSlotColor = Color.Yellow;
+dayViewSettings.TimeSlotBorderColor = Color.FromHex("#fceb9f");
+dayViewSettings.TimeSlotColor = Color.FromHex("#fcf3c9");
 dayViewSettings.TimeSlotBorderStrokeWidth = 5;
 schedule.DayViewSettings = dayViewSettings;
 {% endhighlight %}
@@ -294,8 +294,8 @@ You can customize the appearance of the Non-workingHourTimeslots by its color us
  <schedule:SfSchedule.DayViewSettings>
    <!--setting Day view settings properties -->
 	 <schedule:DayViewSettings
-		NonWorkingHoursTimeSlotColor="Yellow"
-		NonWorkingHoursTimeSlotBorderColor="Aqua" 
+		NonWorkingHoursTimeSlotColor="#fcf3c9"
+		NonWorkingHoursTimeSlotBorderColor="#fceb9f"
 		TimeSlotBorderStrokeWidth="5">
 	 </schedule:DayViewSettings>
  </schedule:SfSchedule.DayViewSettings>
@@ -305,8 +305,8 @@ You can customize the appearance of the Non-workingHourTimeslots by its color us
 schedule.ScheduleView = ScheduleView.DayView;
 //Create new instance of DayViewSettings
 DayViewSettings dayViewSettings = new DayViewSettings();
-dayViewSettings.NonWorkingHoursTimeSlotBorderColor = Color.Aqua;
-dayViewSettings.NonWorkingHoursTimeSlotColor = Color.Yellow;
+dayViewSettings.NonWorkingHoursTimeSlotBorderColor = Color.FromHex("#fceb9f");
+dayViewSettings.NonWorkingHoursTimeSlotColor = Color.FromHex("#fcf3c9");
 schedule.DayViewSettings = dayViewSettings;
 {% endhighlight %}
 {% endtabs %}
@@ -389,7 +389,7 @@ schedule.ScheduleView = ScheduleView.DayView;
 DayViewSettings dayViewSettings = new DayViewSettings();
 //Create new instance of DayLabelSettings
 DayLabelSettings dayLabelSettings = new DayLabelSettings();
-dayLabelSettings.TimeLabelColor = Color.Blue;
+dayLabelSettings.TimeLabelColor = Color.FromHex("#8282ff");
 dayViewSettings.DayLabelSettings = dayLabelSettings;
 schedule.DayViewSettings = dayViewSettings;
 {% endhighlight %}
@@ -425,7 +425,7 @@ You can customize the default appearance of selection UI in the timeslots.
 * [Programmatic selection](#programmatic-selection)
 
 ### Selection customization using style
-You can customize the timeslot selection by using [SelectionStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~SelectionStyle.html) property of `SfSchedule`.
+You can customize the timeslot selection by by setting the [BackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SelectionStyle~BackgroundColor.html), [BorderColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SelectionStyle~BorderColor.html), [BorderThickness](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SelectionStyle~BorderThickness.html), [BorderCornerRadius](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SelectionStyle~BorderCornerRadius.html) properties to the [SelectionStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~SelectionStyle.html) property of `SfSchedule`.
 
 {% tabs %}
 {% highlight XAML %}

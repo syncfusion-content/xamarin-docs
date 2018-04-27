@@ -24,13 +24,10 @@ The [`Header`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfus
 {% highlight xaml %}
 
      <gauge:SfCircularGauge>
-	  ...
 	  
          <gauge:SfCircularGauge.Headers>
             <gauge:Header Text="Speedometer"/>
         </gauge:SfCircularGauge.Headers>
-		
-	 ...
      </gauge:SfCircularGauge>
 
 {% endhighlight %}
@@ -57,13 +54,9 @@ The [`Position`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncf
 {% highlight xaml %}
  
      <gauge:SfCircularGauge>
-	 ...
-	 
         <gauge:SfCircularGauge.Headers>
             <gauge:Header Text="Speedometer" Position="0.5,0.5" />
         </gauge:SfCircularGauge.Headers>
-		
-	 ...
      </gauge:SfCircularGauge>
 
 {% endhighlight %}
@@ -91,8 +84,6 @@ You can customize the header's text by using the [`FontFamily`](https://help.syn
 {% highlight xaml %}
  
     <gauge:SfCircularGauge>
-	...
-	
          <gauge:SfCircularGauge.Headers>
              <gauge:Header Text="Speedometer" TextSize="20" ForegroundColor="Blue" FontAttributes="Bold">
 			        <gauge:Header.FontFamily>
@@ -100,8 +91,6 @@ You can customize the header's text by using the [`FontFamily`](https://help.syn
                     </gauge:Header.FontFamily>
 		     </gauge:Header>
         </gauge:SfCircularGauge.Headers>
-
-	...
     </gauge:SfCircularGauge>
 
 {% endhighlight %}

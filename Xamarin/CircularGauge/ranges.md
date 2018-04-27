@@ -22,8 +22,7 @@ Start and end values of ranges are set by using the [`StartValue`](https://help.
 {% highlight xaml %}
   
     <gauge:SfCircularGauge>
-     ...
-
+    
          <gauge:SfCircularGauge.Scales>
 
             <gauge:Scale />
@@ -33,8 +32,7 @@ Start and end values of ranges are set by using the [`StartValue`](https://help.
         </gauge:Scale.Ranges>
 
          </gauge:SfCircularGauge.Scales>	
-		 
-     ...
+	
      </gauge:SfCircularGauge>
 
 
@@ -67,8 +65,7 @@ An UI of a range is customized by using the [`Color`](https://help.syncfusion.co
 {% highlight xaml %}
   
     <gauge:SfCircularGauge>
-     ...
-
+   
          <gauge:SfCircularGauge.Scales>
 
              <gauge:Scale   RimThickness="10" RimColor="#E0E0E0" LabelColor="#424242" 
@@ -89,8 +86,7 @@ An UI of a range is customized by using the [`Color`](https://help.syncfusion.co
         </gauge:Scale.Ranges>
 
          </gauge:SfCircularGauge.Scales>	
-		 
-     ...
+
      </gauge:SfCircularGauge>
 
 
@@ -138,8 +134,7 @@ The range can be placed inside the scale, outside the scale, or on the scale by 
 {% highlight xaml %}
   
     <gauge:SfCircularGauge>
-     ...
-
+    
          <gauge:SfCircularGauge.Scales>
 
             <gauge:Scale />
@@ -149,8 +144,7 @@ The range can be placed inside the scale, outside the scale, or on the scale by 
         </gauge:Scale.Ranges>
 
          </gauge:SfCircularGauge.Scales>	
-		 
-     ...
+	
      </gauge:SfCircularGauge>
 
 
@@ -183,8 +177,7 @@ The range can be placed inside the scale, outside the scale, or on the scale by 
 {% highlight xaml %}
   
     <gauge:SfCircularGauge>
-     ...
-
+    
          <gauge:SfCircularGauge.Scales>
 
             <gauge:Scale />
@@ -194,8 +187,7 @@ The range can be placed inside the scale, outside the scale, or on the scale by 
         </gauge:Scale.Ranges>
 
          </gauge:SfCircularGauge.Scales>	
-		 
-     ...
+
      </gauge:SfCircularGauge>
 
 
@@ -232,8 +224,7 @@ In addition to the default range, you can add n number of ranges to a scale by u
 {% highlight xaml %}
   
     <gauge:SfCircularGauge>
-     ...
-
+   
 	    <gauge:SfCircularGauge.Headers>
                 <gauge:Header Text="Poor" Position="0.1,0.55" TextSize="20" ForegroundColor="#F03E3E" FontAttributes = "Bold"/>
 				<gauge:Header Text="Good" Position="0.87,0.55" TextSize="20" ForegroundColor="#27beb7" FontAttributes = "Bold"/>
@@ -260,7 +251,7 @@ In addition to the default range, you can add n number of ranges to a scale by u
 
          </gauge:SfCircularGauge.Scales>	
 		 
-     ...
+   
      </gauge:SfCircularGauge>
 
 
@@ -355,8 +346,7 @@ You can give smooth color transition to range by specifying the different colors
 {% highlight xaml %}
   
     <gauge:SfCircularGauge>
-     ...
-
+     
          <gauge:SfCircularGauge.Scales>
 
              <gauge:Scale  LabelFontSize = "16" ShowRim = "False" 
@@ -384,8 +374,7 @@ You can give smooth color transition to range by specifying the different colors
 	          </gauge:Scale>
 
          </gauge:SfCircularGauge.Scales>	
-		 
-     ...
+	
      </gauge:SfCircularGauge>
 
 

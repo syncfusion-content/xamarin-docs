@@ -512,7 +512,6 @@ trackball.Show(pointX, pointY);
 
 {% endhighlight %}
 
-N>The trackball will be activated at the specified location only if there is any data point under the specified location.
 
 ### Hide method
 

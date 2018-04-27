@@ -509,6 +509,166 @@ You can download the entire source code of this demo from [here](http://www.sync
 
 ![](SfListView_images/FrameShadow.jpg)
 
+## ListViewItem Customization
+
+The SfListView allows customizing the [ListViewItem](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ListViewItem.html) based on the [ItemType](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemType.html). To customize the Header, Footer, GroupHeader, LoadMore and ListViewItem follow the code example.
+
+### Initialize and assign ItemGenerator
+
+{% tabs %}
+{% highlight c# %}
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        this.listView.ItemGenerator = new ItemGeneratorExt(this.listView);
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Extension class for ItemGenerator
+
+{% tabs %}
+{% highlight c# %}
+public class ItemGeneratorExt : ItemGenerator
+{
+    public SfListView listView;
+	
+    public ItemGeneratorExt(SfListView listView) : base(listView)
+    {
+        this.listView = listView;
+    }
+
+    protected override ListViewItem OnCreateListViewItem(int itemIndex, ItemType type, object data = null)
+    {
+        if (type == ItemType.Header)
+            return new HeaderItemExt(this.listView);
+        else if (type == ItemType.Footer)
+            return new FooterItemExt(this.listView);
+        else if (type == ItemType.GroupHeader)
+            return new GroupHeaderItemExt(this.listView);
+        else if (type == ItemType.LoadMore)
+            return new LoadMoreItemExt(this.listView);
+        else if (type == ItemType.Record)
+            return new ListViewItemExt(this.listView);
+        return base.OnCreateListViewItem(itemIndex, type, data);
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Extension class for HeaderItem
+
+{% tabs %}
+{% highlight c# %}
+public class HeaderItemExt : HeaderItem
+{
+    private SfListView listView;
+
+    public HeaderItemExt(SfListView listView)
+    {
+        this.listView = listView
+    }
+
+    protected override void OnItemAppearing()
+    {
+        base.OnItemAppearing();
+        this.BackgroundColor = Color.Yellow;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Extension class for FooterItem
+
+{% tabs %}
+{% highlight c# %}
+public class FooterItemExt : FooterItem
+{
+    private SfListView listView;
+
+    public FooterItemExt(SfListView listView)
+    {
+        this.listView = listView
+    }
+
+    protected override void OnItemAppearing()
+    {
+        base.OnItemAppearing();
+        this.BackgroundColor = Color.Yellow;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Extension class for GroupHeaderItem
+
+{% tabs %}
+{% highlight c# %}
+public class GroupHeaderItemExt : GroupHeaderItem
+{
+    private SfListView listView;
+
+    public GroupHeaderItemExt(SfListView listView)
+    {
+        this.listView = listView
+    }
+
+    protected override void OnItemAppearing()
+    {
+        base.OnItemAppearing();
+        this.BackgroundColor = Color.Yellow;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Extension class for LoadMoreItem
+
+{% tabs %}
+{% highlight c# %}
+public class LoadMoreItemExt : LoadMoreItem
+{
+    private SfListView listView;
+
+    public LoadMoreItemExt(SfListView listView)
+    {
+        this.listView = listView
+    }
+
+    protected override void OnItemAppearing()
+    {
+        base.OnItemAppearing();
+        this.BackgroundColor = Color.Yellow;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Extension class for ListViewItem
+
+{% tabs %}
+{% highlight c# %}
+public class ListViewItemExt : ListViewItem
+{
+    private SfListView listView;
+
+    public ListViewItemExt(SfListView listView)
+    {
+        this.listView = listView
+    }
+
+    protected override void OnItemAppearing()
+    {
+        base.OnItemAppearing();
+        this.BackgroundColor = Color.Yellow;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
 ## Scrollbar visibility
 
 The SfListView provides an option to enable or disable the `Scrollbar` visibility by using the [IsScrollBarVisible](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsScrollBarVisible.html) property. By default, the value will be `true`.  

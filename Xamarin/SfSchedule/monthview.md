@@ -66,7 +66,7 @@ schedule.ShowAppointmentsInline = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](monthview_images/appointmentindicator.png)
+![](monthview_images/monthinlineview.png)
 
 >**NOTE**
 If appointments not there in the selected day, Inline view displays the text as "No Events"
@@ -166,7 +166,9 @@ You can customize the Week Number appearance by using [WeekNumberStyle](https://
 {% highlight c# %}
 //creating new instance for WeekNumberStyle
 WeekNumberStyle weekNumberStyle = new WeekNumberStyle();
-weekNumberStyle.TextStyle = Font.OfSize("Arial", 15);
+weekNumberStyle.FontFamily = "Arial";
+weekNumberStyle.FontSize = 15;
+weekNumberStyle.FontAttributes = FontAttributes.None;
 weekNumberStyle.BackgroundColor = Color.Blue;
 weekNumberStyle.TextColor = Color.White;
 monthViewSettings.WeekNumberStyle = weekNumberStyle;
@@ -174,21 +176,6 @@ monthViewSettings.WeekNumberStyle = weekNumberStyle;
 {% endtabs %}
 
 ![](monthview_images/weeknumberstyle.png)
-
-## Month Label Formatting 
-You can change the Format of the Month date and day labels string in the Schedule using [DateFormat](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthLabelSettings~DateFormat.html) and [DayFormat](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthLabelSettings~DayFormat.html) properties of [MonthLabelSettings](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~MonthLabelSettings.html) in `MonthViewSettings`. 
-
-{% tabs %}
-{% highlight c# %}
-//creating new instance for MonthLabelSettings
-MonthLabelSettings monthLabelSettings = new MonthLabelSettings();
-monthLabelSettings.DayFormat = "EEEE";
-monthLabelSettings.DateFormat = "dd";
-monthViewSettings.MonthLabelSettings = monthLabelSettings;
-{% endhighlight %}
-{% endtabs %}
-
-![](monthview_images/monthlabelformat.png)
 
 ## View Header Appearance  
 You can customize the View Header appearance by using [ViewHeaderStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ViewHeaderStyle.html) property in SfSchedule. View Header [BackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderStyle~BackgroundColor.html), [DayTextColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderStyle~DayTextColor.html) and [DayTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderStyle~DayTextStyle.html) can be customized using `ViewHeaderStyle` properties.
@@ -294,35 +281,39 @@ You can customize the Month view cell in three ways,
 * [Customize month cell using DataTemplateSelector](#customize-month-cell-using-datatemplateselector)
 
 ### Customize month cell using style
-By using [MonthViewCellStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewCellStyle.html) of `SfSchedule` you can customize the month cell properties such as [BackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewCellStyle~BackgroundColor.html), [NextMonthBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewCellStyle~NextMonthBackgroundColor.html), [NextMonthTextColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewCellStyle~NextMonthTextColor.html), [PreviousMonthBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewCellStyle~PreviousMonthBackgroundColor.html), [PreviousMonthTextColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewCellStyle~PreviousMonthTextColor.html), [TextColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewCellStyle~TextColor.html), [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewCellStyle~TextStyle.html), [TodayBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewCellStyle~TodayBackgroundColor.html), [TodayTextColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewCellStyle~TodayTextColor.html).
+By using [MonthViewCellStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewCellStyle.html) of `SfSchedule` you can customize the month cell properties such as [BackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewCellStyle~BackgroundColor.html), [NextMonthBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewCellStyle~NextMonthBackgroundColor.html), [NextMonthTextColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewCellStyle~NextMonthTextColor.html), [PreviousMonthBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewCellStyle~PreviousMonthBackgroundColor.html), [PreviousMonthTextColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewCellStyle~PreviousMonthTextColor.html), [TextColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewCellStyle~TextColor.html), [FontSize](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewCellStyle~FontSize.html), [FontAttributes](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewCellStyle~FontAttributes.html), [FontFamily](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewCellStyle~FontFamily.html), [TodayBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewCellStyle~TodayBackgroundColor.html), [TodayTextColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewCellStyle~TodayTextColor.html).
    
 {% tabs %}
 {% highlight xaml %}
 <schedule:SfSchedule.MonthCellStyle>
-	<schedule:MonthViewCellStyle 
-				BackgroundColor="Blue" 
-				TextColor="Red" 
-				TextStyle="Arial,20" 
-				NextMonthBackgroundColor="Gray" 
-				NextMonthTextColor="Gray" 
-				PreviousMonthBackgroundColor="White" 
-				PreviousMonthTextColor="Gray" 
-				TodayBackgroundColor="Red" 
-				TodayTextColor="White">
-	</schedule:MonthViewCellStyle>
+    <schedule:MonthViewCellStyle
+                BackgroundColor="#8282ff"
+                TextColor="Orange"
+                FontSize="20"
+                FontFamily = "Arial"
+                FontAttributes = "None"
+                NextMonthBackgroundColor="Gray"
+                NextMonthTextColor="Gray"
+                PreviousMonthBackgroundColor="White"
+                PreviousMonthTextColor="Gray"
+                TodayBackgroundColor="#f97272"
+                TodayTextColor="White">
+    </schedule:MonthViewCellStyle>
 </schedule:SfSchedule.MonthCellStyle>
 {% endhighlight %}
 {% highlight c# %}
 //MonthCell Appearance
 MonthViewCellStyle monthCellStyle = new MonthViewCellStyle();
-monthCellStyle.BackgroundColor = Color.Blue;
+monthCellStyle.BackgroundColor = Color.FromHex("#8282ff");
 monthCellStyle.NextMonthBackgroundColor = Color.White;
 monthCellStyle.NextMonthTextColor = Color.Gray;
 monthCellStyle.PreviousMonthBackgroundColor = Color.White;
 monthCellStyle.PreviousMonthTextColor = Color.Gray;
-monthCellStyle.TextColor = Color.Red;
-monthCellStyle.TextStyle = Font.OfSize("Arial", 20);
-monthCellStyle.TodayBackgroundColor = Color.Red;
+monthCellStyle.TextColor = Color.Orange;
+monthCellStyle.FontFamily = "Arial";
+monthCellStyle.FontSize = 20;
+monthCellStyle.FontAttributes = FontAttributes.None;
+monthCellStyle.TodayBackgroundColor = Color.FromHex("#f97272");
 monthCellStyle.TodayTextColor = Color.White;
 schedule.MonthCellStyle = monthCellStyle;
 {% endhighlight %}
@@ -344,7 +335,7 @@ private void Schedule_OnMonthCellLoadedEvent(object sender, MonthCellLoadedEvent
 	args.cellStyle = new CellStyle();
 	if (args.isToday)
 	{
-		args.cellStyle.BackgroundColor = Color.Red;
+		args.cellStyle.BackgroundColor = Color.FromHex("#f97272");
 		args.cellStyle.TextColor = Color.White;
 		args.cellStyle.TextStyle = Font.OfSize("Arial", 25);
 	}
@@ -360,15 +351,9 @@ private void Schedule_OnMonthCellLoadedEvent(object sender, MonthCellLoadedEvent
 		args.cellStyle.TextColor = Color.Gray;
 		args.cellStyle.TextStyle = Font.OfSize("Arial", 10);
 	}
-	else if (args.isBlackOutDate)
-	{
-		args.cellStyle.BackgroundColor = Color.Black;
-		args.cellStyle.TextColor = Color.White;
-		args.cellStyle.TextStyle = Font.OfSize("Arial", 20);
-	}
 	else
 	{
-		args.cellStyle.BackgroundColor = Color.Blue;
+		args.cellStyle.BackgroundColor = Color.FromHex("#8282ff");
 		args.cellStyle.TextColor = Color.White;
 		args.cellStyle.TextStyle = Font.OfSize("Arial", 20);
 	}
@@ -556,7 +541,7 @@ private void Schedule_MonthInlineAppointmentTapped(object sender, MonthInlineApp
 ![](monthview_images/inlineappointmentdetails.png)
 
 ## InlineView Appearance  
-By using [OnMonthInlineLoadedEvent](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~OnMonthInlineLoadedEvent_EV.html) in `SfSchedule`, you can customize the month inline view properties in the run time. In `OnMonthInlineLoadedEvent`, arguments such as [monthInlineViewStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineLoadedEventArgs~monthInlineViewStyle.html), [appointments](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineLoadedEventArgs~appointments.html), [selectedDate](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineLoadedEventArgs~selectedDate.html) are in the MonthInlineLoadedEventArgs.
+By using [OnMonthInlineLoadedEvent](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~OnMonthInlineLoadedEvent_EV.html) in `SfSchedule`, you can customize the month inline view by setting [MonthInlineViewStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineViewStyle.html) properties such as [Background](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineViewStyle~BackgroundColor.html), [TextColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineViewStyle~TextColor.html), [FontSize](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineViewStyle~FontSize.html), [FontAttributes](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineViewStyle~FontAttributes.html), [FontFamily](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineViewStyle~FontFamily.html), [TimeTextColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineViewStyle~TimeTextColor.html), [TimeTextSize](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineViewStyle~TimeTextSize.html), [TimeTextFormat](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineViewStyle~TimeTextFormat.html) in the run time. In `OnMonthInlineLoadedEvent`, arguments such as [monthInlineViewStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineLoadedEventArgs~monthInlineViewStyle.html), [appointments](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineLoadedEventArgs~appointments.html), [selectedDate](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineLoadedEventArgs~selectedDate.html) are in the MonthInlineLoadedEventArgs.
 
 {% tabs %}
 {% highlight c# %}
@@ -566,14 +551,16 @@ schedule.OnMonthInlineLoadedEvent += Schedule_OnMonthInlineLoadedEvent;
 
 private void Schedule_OnMonthInlineLoadedEvent(object sender, MonthInlineLoadedEventArgs args)
 {
-	MonthInlineViewStyle monthInlineViewStyle = new MonthInlineViewStyle();
-	monthInlineViewStyle.BackgroundColor = Color.Blue;
-	monthInlineViewStyle.TextColor = Color.Green;
-	monthInlineViewStyle.TextStyle = Font.OfSize("Times New Roman", 20);
-	monthInlineViewStyle.TimeTextColor = Color.Red;
-	monthInlineViewStyle.TimeTextSize = 15;
-	monthInlineViewStyle.TimeTextFormat = "hh a";
-	args.monthInlineViewStyle = monthInlineViewStyle;
+    MonthInlineViewStyle monthInlineViewStyle = new MonthInlineViewStyle();
+    monthInlineViewStyle.BackgroundColor = Color.Blue;
+    monthInlineViewStyle.TextColor = Color.Green;
+    monthInlineViewStyle.FontSize = 20;
+    monthInlineViewStyle.FontAttributes = FontAttributes.None;
+    monthInlineViewStyle.FontFamily = "Times New Roman";
+    monthInlineViewStyle.TimeTextColor = Color.Red;
+    monthInlineViewStyle.TimeTextSize = 15;
+    monthInlineViewStyle.TimeTextFormat = "hh a";
+    args.monthInlineViewStyle = monthInlineViewStyle;
 }
 {% endhighlight %}
 {% endtabs %}
@@ -604,9 +591,10 @@ private void Schedule_OnMonthInlineAppointmentLoadedEvent(object sender, MonthIn
 {% endhighlight %}
 {% endtabs %}
 
+![](monthview_images/inlinecustomview.png)
+
 >**NOTE**
 Inline view customization - There is no support for inline view appointments customization using custom view, TimeTextSize, TimeTextFormat and TimeTextColor properties in XForms UWP.
-![](monthview_images/inlinecustomview.png)
 
 ## Selection
 You can customize the default appearance of selection UI in the month cells.

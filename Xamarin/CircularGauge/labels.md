@@ -22,7 +22,6 @@ The label color can be changed using the [`LabelColor`](https://help.syncfusion.
 {% highlight xaml %}
 
      <gauge:SfCircularGauge>
-     ...
 
          <gauge:SfCircularGauge.Scales>
 
@@ -30,7 +29,6 @@ The label color can be changed using the [`LabelColor`](https://help.syncfusion.
 
          </gauge:SfCircularGauge.Scales>	
      
-	 ...
      </gauge:SfCircularGauge>
               
 
@@ -60,7 +58,6 @@ The label font can be customized by using the [`LabelFontSize`](https://help.syn
 {% highlight xaml %}
 
      <gauge:SfCircularGauge>
-     ...
 
          <gauge:SfCircularGauge.Scales>
 
@@ -72,7 +69,6 @@ The label font can be customized by using the [`LabelFontSize`](https://help.syn
 
          </gauge:SfCircularGauge.Scales>	
      
-	 ...
      </gauge:SfCircularGauge>
               
 
@@ -104,15 +100,11 @@ The labels can be positioned far away from the ticks by using the [`LabelOffset`
 {% highlight xaml %}
 
      <gauge:SfCircularGauge>
-     ...
-
          <gauge:SfCircularGauge.Scales>
 
             <gauge:Scale LabelOffset = "0.4"/>
 
          </gauge:SfCircularGauge.Scales>	
-     
-	 ...
      </gauge:SfCircularGauge>
               
 
@@ -142,15 +134,12 @@ The [`NumberOfDecimalDigits`](https://help.syncfusion.com/cr/cref_files/xamarin/
 {% highlight xaml %}
 
      <gauge:SfCircularGauge>
-     ...
-
          <gauge:SfCircularGauge.Scales>
 
             <gauge:Scale NumberOfDecimalDigits = "3"/>
 
          </gauge:SfCircularGauge.Scales>	
      
-	 ...
      </gauge:SfCircularGauge>
               
 
@@ -184,15 +173,11 @@ You can postfix/prefix values to the scale labels by using the [`LabelPostfix`](
 {% highlight xaml %}
 
      <gauge:SfCircularGauge>
-     ...
-
          <gauge:SfCircularGauge.Scales>
 
             <gauge:Scale LabelPostfix = "$" />
 
          </gauge:SfCircularGauge.Scales>	
-     
-	 ...
      </gauge:SfCircularGauge>
               
 
@@ -222,15 +207,11 @@ You can postfix/prefix values to the scale labels by using the [`LabelPostfix`](
 {% highlight xaml %}
 
      <gauge:SfCircularGauge>
-     ...
-
          <gauge:SfCircularGauge.Scales>
 
             <gauge:Scale LabelPrefix = "$" />
 
          </gauge:SfCircularGauge.Scales>	
-     
-	 ...
      </gauge:SfCircularGauge>
               
 
@@ -260,15 +241,11 @@ You can customize the edge label by using the [`ShowFirstLabel`](https://help.sy
 {% highlight xaml %}
 
      <gauge:SfCircularGauge>
-     ...
-
          <gauge:SfCircularGauge.Scales>
 
            <gauge:Scale ShowFirstLabel = "False" StartValue = "0" EndValue = "12" Interval ="1" MinorTicksPerInterval = "5" StartAngle = "270" SweepAngle = "360" />
 		   
          </gauge:SfCircularGauge.Scales>	
-     
-	 ...
      </gauge:SfCircularGauge>
               
 
@@ -304,15 +281,11 @@ The [`ShowLabels`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syn
 {% highlight xaml %}
 
      <gauge:SfCircularGauge>
-     ...
-
          <gauge:SfCircularGauge.Scales>
 
           <gauge:Scale ShowLabels = "False"/>
 		   
          </gauge:SfCircularGauge.Scales>	
-     
-	 ...
      </gauge:SfCircularGauge>
               
 
@@ -342,15 +315,12 @@ Scale labels can be rotated automatically based on the current angle. To enable 
 {% highlight xaml %}
 
      <gauge:SfCircularGauge>
-     ...
 
          <gauge:SfCircularGauge.Scales>
 
           <gauge:Scale EnableAutoAngle = "True"/>
 		   
          </gauge:SfCircularGauge.Scales>	
-     
-	 ...
      </gauge:SfCircularGauge>
               
 

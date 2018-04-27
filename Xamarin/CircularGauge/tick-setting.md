@@ -22,13 +22,11 @@ The [`ShowTicks`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Sync
 {% highlight xaml %}
 
     <gauge:SfCircularGauge>
-     ...
-
+  
     <gauge:SfCircularGauge.Scales>
          <gauge:Scale  ShowTicks=”False”/>
     </gauge:SfCircularGauge.Scales>
-	
-	...
+
 	</gauge:SfCircularGauge>
 
 {% endhighlight %}
@@ -61,8 +59,7 @@ Color and thickness of the tick are set by using the [`Color`](https://help.sync
 {% highlight xaml %}
 
      <gauge:SfCircularGauge>
-     ...
-
+    
         <gauge:SfCircularGauge.Scales>
 		
              <gauge:Scale/>
@@ -73,7 +70,6 @@ Color and thickness of the tick are set by using the [`Color`](https://help.sync
 
         </gauge:SfCircularGauge.Scales>
 	
-	 ...
 	 </gauge:SfCircularGauge>
 
 {% endhighlight %}
@@ -105,8 +101,7 @@ Color and thickness of the tick are set by using the [`Color`](https://help.sync
 {% highlight xaml %}
 
      <gauge:SfCircularGauge>
-     ...
-
+     
         <gauge:SfCircularGauge.Scales>
 		
              <gauge:Scale/>
@@ -117,7 +112,6 @@ Color and thickness of the tick are set by using the [`Color`](https://help.sync
 
         </gauge:SfCircularGauge.Scales>
 	
-	 ...
 	 </gauge:SfCircularGauge>
 
 {% endhighlight %}
@@ -157,8 +151,7 @@ The major and minor ticks can be positioned far away from the rim by using the f
 {% highlight xaml %}
 
      <gauge:SfCircularGauge>
-      ...
-
+      
         <gauge:SfCircularGauge.Scales>
 		
              <gauge:Scale/>
@@ -172,8 +165,7 @@ The major and minor ticks can be positioned far away from the rim by using the f
              </gauge:Scale.MinorTickSettings>
 
         </gauge:SfCircularGauge.Scales>
-	
-	  ...
+
 	 </gauge:SfCircularGauge>
 
 {% endhighlight %}
@@ -206,7 +198,7 @@ The major and minor ticks can be positioned far away from the rim by using the f
 {% highlight xaml %}
 
      <gauge:SfCircularGauge>
-      ...
+    
 
         <gauge:SfCircularGauge.Scales>
 		
@@ -222,7 +214,6 @@ The major and minor ticks can be positioned far away from the rim by using the f
 
         </gauge:SfCircularGauge.Scales>
 	
-	 ...
 	 </gauge:SfCircularGauge>
 
 {% endhighlight %}

@@ -20,13 +20,11 @@ The [`StartValue`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syn
 {% highlight xaml %}
 
      <gauge:SfCircularGauge>
-     ...
-
+    
         <gauge:SfCircularGauge.Scales>
              <gauge:Scale StartAngle="270" SweepAngle="360" StartValue="0" EndValue="360" Interval="20" MinorTicksPerInterval="0" ShowFirstLabel="False"/>
          </gauge:SfCircularGauge.Scales>	
-            
-     ...
+   
      </gauge:SfCircularGauge>
 
 
@@ -62,8 +60,7 @@ The color and thickness of rim can be set by using the [`RimColor`](https://help
 {% highlight xaml %}
 
      <gauge:SfCircularGauge>
-     ...
-
+     
         <gauge:SfCircularGauge.Scales>
              <gauge:Scale RadiusFactor="1" RimThickness="40" RimColor="SkyBlue" LabelOffset = "0.6">
 			 
@@ -78,8 +75,7 @@ The color and thickness of rim can be set by using the [`RimColor`](https://help
 					</gauge:Scale>
 
          </gauge:SfCircularGauge.Scales>	
-            
-     ...
+    
      </gauge:SfCircularGauge>
 
 
@@ -118,8 +114,7 @@ You can customize the position of [`Scales`](https://help.syncfusion.com/cr/cref
 {% highlight xaml %}
 
      <gauge:SfCircularGauge>
-     ...
-
+    
         <gauge:SfCircularGauge.Scales>
 		
              <gauge:Scale RadiusFactor = "0.7" RimThickness = "30">
@@ -127,8 +122,7 @@ You can customize the position of [`Scales`](https://help.syncfusion.com/cr/cref
 			</gauge:Scale>
 
          </gauge:SfCircularGauge.Scales>	
-            
-     ...
+    
      </gauge:SfCircularGauge>
 
 
@@ -157,8 +151,7 @@ You can customize the position of [`Scales`](https://help.syncfusion.com/cr/cref
 {% highlight xaml %}
 
      <gauge:SfCircularGauge>
-     ...
-
+    
         <gauge:SfCircularGauge.Scales>
 		
              <gauge:Scale ScaleStartOffset="0.6" ScaleEndOffset = "0.7">
@@ -166,8 +159,7 @@ You can customize the position of [`Scales`](https://help.syncfusion.com/cr/cref
 			</gauge:Scale>
 
          </gauge:SfCircularGauge.Scales>	
-            
-     ...
+    
      </gauge:SfCircularGauge>
 
 
@@ -198,14 +190,12 @@ The [`ShowRim`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfu
 {% highlight xaml %}
 
         <gauge:SfCircularGauge>
-		...
 		
           <gauge:SfCircularGauge.Scales>
 	  	    <gauge:Scale ShowRim = "False">
                     </gauge:Scale>
 	      </gauge:SfCircularGauge.Scales>	
 
-		 ... 
 	    </gauge:SfCircularGauge>	 
 
 {% endhighlight %}

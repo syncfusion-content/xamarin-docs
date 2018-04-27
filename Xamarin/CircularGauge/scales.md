@@ -24,13 +24,11 @@ A range is a visual element, which begins and ends at specified values within a 
 {% highlight xaml %}
 
     <gauge:SfCircularGauge>
-     ...
-
+   
     <gauge:SfCircularGauge.Scales>
          <gauge:Scale/>
     </gauge:SfCircularGauge.Scales>
 	
-	...
 	</gauge:SfCircularGauge>
 
 {% endhighlight %}
@@ -58,13 +56,12 @@ The [`StartValue`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syn
 {% highlight xaml %}
 
     <gauge:SfCircularGauge>
-     ...
-
+    
     <gauge:SfCircularGauge.Scales>
          <gauge:Scale StartValue="-30" EndValue="50"/>
     </gauge:SfCircularGauge.Scales>
 	
-	...
+	
 	</gauge:SfCircularGauge>
 
 {% endhighlight %}
@@ -94,13 +91,11 @@ The [`StartAngle`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syn
 {% highlight xaml %}
 
     <gauge:SfCircularGauge>
-     ...
-
+   
     <gauge:SfCircularGauge.Scales>
          <gauge:Scale StartAngle="185" SweepAngle="270"/>
     </gauge:SfCircularGauge.Scales>
 	
-	...
 	</gauge:SfCircularGauge>
 
 {% endhighlight %}
@@ -130,13 +125,12 @@ The [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncf
 {% highlight xaml %}
 
     <gauge:SfCircularGauge>
-     ...
-
+     
     <gauge:SfCircularGauge.Scales>
          <gauge:Scale StartValue = "0" EndValue = "500" Interval ="100" />
     </gauge:SfCircularGauge.Scales>
 	
-	...
+	
 	</gauge:SfCircularGauge>
 
 {% endhighlight %}
@@ -167,13 +161,12 @@ By default, the interval value is calculated by 10. By using the [`EnableAutoInt
 {% highlight xaml %}
 
     <gauge:SfCircularGauge>
-     ...
-
+   
     <gauge:SfCircularGauge.Scales>
          <gauge:Scale StartValue="0" EndValue="500"  EnableAutoInterval = "True"/>
     </gauge:SfCircularGauge.Scales>
 	
-	...
+	
 	</gauge:SfCircularGauge>
 
 {% endhighlight %}
@@ -204,13 +197,12 @@ The [`Direction`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Sync
 {% highlight xaml %}
 
     <gauge:SfCircularGauge>
-     ...
-
+    
     <gauge:SfCircularGauge.Scales>
         <gauge:Scale Direction="AntiClockwise"/>
     </gauge:SfCircularGauge.Scales>
 	
-	...
+	
 	</gauge:SfCircularGauge>
 
 {% endhighlight %}

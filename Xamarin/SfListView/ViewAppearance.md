@@ -513,8 +513,6 @@ You can download the entire source code of this demo from [here](http://www.sync
 
 The SfListView allows customizing the [ListViewItem](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ListViewItem.html) based on the [ItemType](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemType.html). To customize the Header, Footer, GroupHeader, LoadMore and ListViewItem follow the code example.
 
-### Initialize and assign ItemGenerator
-
 {% tabs %}
 {% highlight c# %}
 public partial class MainPage : ContentPage

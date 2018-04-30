@@ -421,7 +421,7 @@ chart.Series.Add(lineSeries);
 
 ### GetDataPointIndex(float pointX, float pointY)
 
-The [`GetDataPointIndex`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~GetDataPointIndex.html) method gets the actual data point index for corresponding screen point.
+The [`GetDataPointIndex`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~GetDataPointIndex.html) method is used to get the actual data point index for corresponding screen point.
 
 {% highlight c# %}
 

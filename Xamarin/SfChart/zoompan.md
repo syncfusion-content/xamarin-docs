@@ -312,3 +312,45 @@ zoomPan.Reset();
 
 {% endhighlight %}
 
+### Override Methods
+
+The following override methods are available in ChartZoomPanBehavior to customize zooming actions.
+
+ * [`OnScaleStart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~OnScaleStart.html) - It is called when the user starts scaling a chart through pinch zooming. 
+ * [`OnScaleDelta`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~OnScaleDelta.html) - It is called when the user scales the chart through pinch zooming.
+ * [`OnScaleEnd`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~OnScaleEnd.html) - It is called after scaling ends.
+ * [`OnScroll`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~OnScroll.html) - It is called when the chart is being panned.
+
+{% highlight c# %}
+
+ public class ChartZoomPanBehaviorExt : ChartZoomPanBehavior
+ {
+        //Here, you can get the Manipulation points and scale factor.
+        protected override void OnScaleStart(float manipulationX, float manipulationY, float scaleFactor)
+        {
+            base.OnScaleStart(manipulationX, manipulationY, scaleFactor);
+        }
+
+        //Here, you can get the Manipulation points and scale factor.
+        protected override void OnScaleDelta(float manipulationX, float manipulationY, float scaleFactor)
+        {
+            base.OnScaleDelta(manipulationX, manipulationY, scaleFactor);
+        }
+
+        //Here, you can get the Manipulation points and scale factor.
+        protected override void OnScaleEnd(float manipulationX, float manipulationY, float scaleFactor)
+        {
+            base.OnScaleEnd(manipulationX, manipulationY, scaleFactor);
+        }
+
+        //Here, you can get the corresponding points and its  distance.
+        protected override void OnScroll(float pointX, float pointY, float distanceX, float distanceY)
+        {
+            base.OnScroll(pointX, pointY, distanceX, distanceY);
+        }
+ }
+
+{% endhighlight %}
+
+
+

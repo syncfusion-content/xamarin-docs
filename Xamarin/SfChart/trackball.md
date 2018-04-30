@@ -499,3 +499,25 @@ Chart.ChartBehaviors.Add(new ChartTrackballBehavior());
 {% endtabs %}
 
 ![](trackball_images/axislabelTemplate.png)
+
+## Methods
+
+### Show method
+
+The [`Show`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballBehavior~Show.html) method is used to activate the trackball at the specified location.
+
+{% highlight c# %}
+	
+trackball.Show(pointX, pointY);
+
+{% endhighlight %}
+
+### Hide method
+
+The [`Hide`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballBehavior~Hide.html) method is used to hide the trackball programmatically.
+
+{% highlight c# %}
+
+tooltip.Hide();
+
+{% endhighlight %}

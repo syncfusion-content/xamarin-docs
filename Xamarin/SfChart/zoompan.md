@@ -311,3 +311,4 @@ ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior();
 zoomPan.Reset();
 
 {% endhighlight %}
+

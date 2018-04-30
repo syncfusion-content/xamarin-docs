@@ -433,8 +433,7 @@ The [`GetActualIntervalType`](https://help.syncfusion.com/cr/cref_files/xamarin/
 
 {% highlight c# %}
 
-DateTimeAxis dateAxis = new DateTimeAxis();
-var intervalType = dateAxis.GetActualIntervalType();
+var intervalType = dateTimeAxis.GetActualIntervalType();
 
 {% endhighlight %}
 

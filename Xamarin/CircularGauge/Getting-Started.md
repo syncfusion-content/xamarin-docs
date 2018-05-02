@@ -77,13 +77,11 @@ You can assign a unique header to [`SfCircularGauge`](https://help.syncfusion.co
 {% highlight xaml %}
 
     <gauge:SfCircularGauge>
-	...
 
          <gauge:SfCircularGauge.Headers>
              <gauge:Header Text="Speedometer" />
          </gauge:SfCircularGauge.Headers>
     
-	...
     </gauge:SfCircularGauge>
 	
 {% endhighlight %}
@@ -116,12 +114,11 @@ You can configure the [`Scale`](https://help.syncfusion.com/cr/cref_files/xamari
 {% highlight xaml %}
 
     <gauge:SfCircularGauge>
-     ...
-
+    
         <gauge:SfCircularGauge.Scales>
            <gauge:Scale />
         </gauge:SfCircularGauge.Scales>	
-            ...
+          
     </gauge:SfCircularGauge>
 	
 {% endhighlight %}
@@ -146,13 +143,14 @@ You can add ranges to [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_fi
 {% highlight xaml %}  
           
     <gauge:SfCircularGauge>
-     ...
-	 
+     <gauge:SfCircularGauge.Scales>
+      <gauge:Scale>
          <gauge:Scale.Ranges>
              <gauge:Range StartValue="0" EndValue="40"/>
          </gauge:Scale.Ranges>
-   
-      ...
+          </gauge:Scale>
+     </gauge:SfCircularGauge.Scales>
+     
     </gauge:SfCircularGauge>
 	
 {% endhighlight %}
@@ -181,13 +179,13 @@ Create a [`Needle Pointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sf
 {% highlight xaml %}
 
     <gauge:SfCircularGauge>
-     ...
-	 
+     <gauge:SfCircularGauge.Scales>
+      <gauge:Scale>
         <gauge:Scale.Pointers>      
             <gauge:NeedlePointer  Value="60" />  
         </gauge:Scale.Pointers> 
-        
-     ...
+      </gauge:Scale>
+    </gauge:SfCircularGauge.Scales>
     </gauge:SfCircularGauge>
 	
 {% endhighlight %}
@@ -215,13 +213,13 @@ Create a [`Needle Pointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sf
 {% highlight xaml %} 
 
     <gauge:SfCircularGauge>
-     ...
-	 
+    <gauge:SfCircularGauge.Scales>
+      <gauge:Scale>
          <gauge:Scale.Pointers>
              <gauge:RangePointer Value="60" />
          </gauge:Scale.Pointers>
-		 
-     ...
+      </gauge:Scale>
+      </gauge:SfCircularGauge.Scales>
      </gauge:SfCircularGauge>
 	 
 {% endhighlight %}
@@ -249,13 +247,13 @@ Create a [`Needle Pointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sf
 {% highlight xaml %} 
 
     <gauge:SfCircularGauge>
-     ...
-	 
+      <gauge:SfCircularGauge.Scales>
+       <gauge:Scale>
          <gauge:Scale.Pointers>
              <gauge:MarkerPointer Value="70" />
          </gauge:Scale.Pointers>
-		 
-     ...
+	   </gauge:Scale>
+      </gauge:SfCircularGauge.Scales>
      </gauge:SfCircularGauge>
 	 
 {% endhighlight %}

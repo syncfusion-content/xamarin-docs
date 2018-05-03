@@ -82,6 +82,54 @@ The [`SelectionChanging`](https://help.syncfusion.com/cr/cref_files/xamarin/sfch
 
 The [`SelectionChanged`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~SelectionChanged_EV.html) event triggered after a data point is selected. The argument contains the following information,
 
-* [`SelectedSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionEventArgs~SelectedSeries.html#) – used to get the series of selected data point.
-* [`SelectedDataPointIndex`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionEventArgs~SelectedDataPointIndex.html#) – used to get the selected data point index.
-* [`PreviousSelectedIndex`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionEventArgs~PreviousSelectedIndex.html#) – used to get the previous selected data point index.
+* [`SelectedSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionEventArgs~SelectedSeries.html#) - Gets the series of selected data point.
+* [`SelectedDataPointIndex`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionEventArgs~SelectedDataPointIndex.html#) - Gets the selected data point index.
+* [`PreviousSelectedIndex`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionEventArgs~PreviousSelectedIndex.html#) - Gets the previous selected data point index.
+
+## Methods
+
+**OnSelectionChanging**
+
+The [`OnSelectionChanging`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionBehavior~OnSelectionChanging.html) method of chart selection behavior is used to perform the operations, before the data point is selected, by extending the [`ChartSelectionBehavior`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionBehavior.html) class. This method argument contains the following information:
+
+* [`SelectedSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionEventArgs~SelectedSeries.html#) - Gets the series of selected data point.
+* [`SelectedDataPointIndex`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionEventArgs~SelectedDataPointIndex.html#) - Gets the selected data point index.
+* [`PreviousSelectedIndex`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionEventArgs~PreviousSelectedIndex.html#) - Gets the previous selected data point index.
+* [`Cancel`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionChangingEventArgs~Cancel.html#) -Sets the value that indicates whether the selection should be canceled.
+
+{% highlight c# %}
+
+public class ChartSelectionBehaviorExt : ChartSelectionBehavior
+{
+   protected override void OnSelectionChanging(ChartSelectionChangingEventArgs args)
+   {
+            var selectedSeres = args.SelectedSeries;
+            var dataPointIndex = args.SelectedDataPointIndex;
+            var previousSelectedIndex = args.PreviousSelectedIndex;
+   }
+}
+
+{% endhighlight %}
+
+**OnSelectionChanged**
+
+The [`OnSelectionChanged`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionBehavior~OnSelectionChanged.html) method of the[`ChartSelectionBehavior`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionBehavior.html) is used to perform the operations after a data point is selected. This method argument contains the following information:
+
+* [`SelectedSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionEventArgs~SelectedSeries.html#) - Gets the series of selected data point.
+* [`SelectedDataPointIndex`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionEventArgs~SelectedDataPointIndex.html#) - Gets the selected data point index.
+* [`PreviousSelectedIndex`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionEventArgs~PreviousSelectedIndex.html#) - Gets the previous selected data point index.
+
+{% highlight c# %}
+
+public class ChartSelectionBehaviorExt : ChartSelectionBehavior
+{
+        
+        protected override void OnSelectionChanged(ChartSelectionEventArgs args)
+        {
+            var selectedSeries = args.SelectedSeries;
+            var dataPointIndex = args.SelectedDataPointIndex;
+            var previousSelectedIndex = args.PreviousSelectedIndex;
+        }
+}
+
+{% endhighlight %}

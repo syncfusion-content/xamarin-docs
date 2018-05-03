@@ -21,7 +21,7 @@ The SfDatagrid allows to create and add columns in the following two ways:
 Automatic columns can be generated depends on the type of underlying model object.
 
 #GridImageColumn: 
-If underlying collection type as ImageSource, GridImageCoumn has been generated.
+If underlying collection type as ImageSource, GridImageColumn has been generated.
 
 {% highlight c# %}
 public ImageSource DealerImage;
@@ -84,7 +84,7 @@ public DateTime ShippingDate;
 {% endhighlight %}
 
 #GridTextColumn
-Otherthan above all those type(example string) of underlying model obeject, GridTextColumn has been generated.
+Other than above all those type(example string) of underlying model object, GridTextColumn has been generated.
 
 {% highlight c# %}
 public string FirstName;
@@ -164,7 +164,7 @@ void GridAutoGeneratingColumns(object sender, AutoGeneratingColumnEventArgs 
 } 
 {% endhighlight %}
 
-You can get the propertytype of underlying model object as follows:
+You can get the property type of underlying model object as follows:
 
 {% highlight c# %}
 void GridAutoGeneratingColumns(object sender,AutoGeneratingColumnEventArgs e)

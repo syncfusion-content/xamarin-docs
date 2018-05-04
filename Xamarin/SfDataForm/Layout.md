@@ -2,7 +2,7 @@
 layout: post
 title: Layout | SfDataForm | Xamarin.Forms | Syncfusion
 description: Different layouts and its customization  in SfDataForm.
-platform: Xamarin.Forms
+platform: xamarin
 control: SfDataForm
 documentation: UG
 ---

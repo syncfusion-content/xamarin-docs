@@ -736,6 +736,10 @@ chart.PrimaryAxis = categoryAxis;
 
 {% highlight xaml %}
 
+Namespace:
+
+xmlns:sys="clr-namespace:System;assembly=mscorlib"
+...
 <chart:SfChart.PrimaryAxis>
 
     <chart:DateTimeAxis>
@@ -1319,6 +1323,10 @@ For crossing in date time horizontal axis, date object should be provided as val
 
 {% highlight xaml %}
 
+Namespace:
+
+xmlns:sys="clr-namespace:System;assembly=mscorlib"
+...
 <chart:SfChart.PrimaryAxis>
 
     <chart:DateTimeAxis CrossesAt="0" />

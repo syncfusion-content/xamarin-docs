@@ -91,6 +91,10 @@ As the name indicates, [`DateTimeStripLine`](http://help.syncfusion.com/cr/cref_
 
 {% highlight xaml %}
 
+Namespace:
+
+xmlns:sys="clr-namespace:System;assembly=mscorlib"
+...
 <chart:SfChart.PrimaryAxis  >
 
 	<chart:DateTimeAxis>

@@ -474,6 +474,8 @@ You can use `DataTemplateSelector` to choose a `DataTemplate` at runtime based o
 		}
 	}		
 
+{% endhighlight %}
+
 Used Label to display current ,next and previous month cell dates and StackLayout with label and image to denote the month cell with appointments.
 
 {% highlight xaml %}

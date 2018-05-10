@@ -170,7 +170,7 @@ public partial class CarouselControlPage : ContentPage
             collectionOfItems.Add(new SfCarouselItem() { ImageName = "images5.png" });
             collectionOfItems.Add(new SfCarouselItem() { ImageName = "images6.png" });
 
-            carousel.DataSource = collectionOfItems;
+            carousel.ItemsSource = collectionOfItems;
 
             this.Content =carousel;
         }
@@ -197,7 +197,7 @@ public partial class CarouselControlPage : ContentPage
 			collectionOfItems.Add(new SfCarouselItem() { ItemContent = new Label() { Text = "ItemContent2", BackgroundColor = Color.FromHex("#7E6E6B"), FontSize = 12 } });
 			collectionOfItems.Add(new SfCarouselItem() { ItemContent = new Image() { Source = "image1.png", Aspect = Aspect.AspectFit } });
 
-			carousel.DataSource = collectionOfItems;
+			carousel.ItemsSource = collectionOfItems;
 
             this.Content =carousel;
         }
@@ -268,7 +268,7 @@ The following code illustrates the way to use `ItemTemplate` in both XAML as wel
  	 </ContentPage.Resources>
 
 	<ContentPage.Content>
-		<syncfusion:SfCarousel x:Name="carousel"  ItemTemplate="{StaticResource itemTemplate}" DataSource="{Binding ImageCollection}"  HeightRequest="400" WidthRequest="800" />	
+		<syncfusion:SfCarousel x:Name="carousel"  ItemTemplate="{StaticResource itemTemplate}" ItemsSource="{Binding ImageCollection}"  HeightRequest="400" WidthRequest="800" />	
 	</ContentPage.Content>
 
 {% endhighlight %}
@@ -300,7 +300,7 @@ public partial class CarouselControlPage : ContentPage
 			});
 
 			carousel.ItemTemplate = itemTemplate;
-			carousel.DataSource = ImageCollection;
+			carousel.ItemsSource = ImageCollection;
 
             this.Content = carousel;
         }
@@ -413,4 +413,4 @@ N> The `SelectedIndex` property will be 0 by default.
 
 ![](images/gettingstarted.png)
 
-You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted89724085)
+You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted1031921227.zip)

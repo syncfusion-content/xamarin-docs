@@ -24,7 +24,7 @@ The `FilterContacts` method filters the data contains the filter text value. Ass
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
              
     <Grid>
-	 <Grid.RowDefinitions>
+	  <Grid.RowDefinitions>
            <RowDefinition Height="Auto"/>
            <RowDefinition Height="Auto"/>
      </Grid.RowDefinitions>

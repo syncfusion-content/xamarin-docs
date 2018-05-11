@@ -39,7 +39,7 @@ Sorting the data by creating the [SortDescriptor](https://help.syncfusion.com/cr
       <data:DataSource.SortDescriptors>
         <data:SortDescriptor PropertyName="ContactName" Direction="Ascending"/>
       </data:DataSource.SortDescriptors>
-    </dataSource:DataSource>
+    </data:DataSource>
   </syncfusion:SfListView.DataSource>
 </syncfusion:SfListView>
 </ContentPage>
@@ -217,7 +217,7 @@ Sorting the items along with grouping by using [KeySelector](https://help.syncfu
 {% tabs %}
 {% highlight xaml %}
 <ContentPage xmlns:listView="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
-             xmlns:dataSource="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable">
+             xmlns:data="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable">
   <ContentPage.Content>
     <syncfusion:SfListView x:Name="listView" ItemsSource="{Binding Items}" ItemSize="50">
       <syncfusion:SfListView.GroupHeaderTemplate>
@@ -284,7 +284,7 @@ Sorting the items along with grouping by using `KeySelector` based on retuning t
       <data:DataSource.SortDescriptors>
         <data:SortDescriptor PropertyName="ContactName" Direction="Ascending"/>
       </data:DataSource.SortDescriptors>
-    </dataSource:DataSource>
+    </data:DataSource>
   </syncfusion:SfListView.DataSource>
 </syncfusion:SfListView>
 {% endhighlight %}

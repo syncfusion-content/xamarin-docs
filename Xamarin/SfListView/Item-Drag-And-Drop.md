@@ -149,7 +149,7 @@ N> If `BackgroundColor` is set to `DragItemTemplate` or [DragIndicatorView](http
 
   <syncfusion:SfListView x:Name="listView" 
                    ItemsSource="{Binding ToDoList}"
-                   DragStartMode="OnDragIndicator"
+                   DragStartMode="OnHold"
                    BackgroundColor="#FFE8E8EC"
                    ItemSize="60">
   <syncfusion:SfListView.DragItemTemplate>

@@ -640,6 +640,10 @@ The header and footer can be handled either by scrollable, or sticky to the view
 {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+<syncfusion:SfListView x:Name="listView"
+                 ItemsSource="{Binding InboxInfo}"
+                 IsStickyHeader="true"
+                 IsStickyFooter="true">
 
   <syncfusion:SfListView.HeaderTemplate>
     <DataTemplate>
@@ -660,6 +664,7 @@ The header and footer can be handled either by scrollable, or sticky to the view
       </Grid>
     </DataTemplate>
   </syncfusion:SfListView.FooterTemplate>
+  </syncfusion:SfListView>
 </ContentPage>
 {% endhighlight %}
 {% highlight c# %}

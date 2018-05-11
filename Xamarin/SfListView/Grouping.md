@@ -318,7 +318,7 @@ N> Multi-level grouping is only applicable for `LinearLayout` in the SfListView.
 {% tabs %}
 {% highlight xaml %}
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
-             xmlns:dataSource="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable">
+             xmlns:data="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable">
  <ContentPage.Resources>
   <ResourceDictionary>
     <local:GroupHeaderConverter x:Key="TemplateConverter"/>
@@ -326,12 +326,12 @@ N> Multi-level grouping is only applicable for `LinearLayout` in the SfListView.
  </ContentPage.Resources>
  <syncfusion:SfListView ItemsSource="{Binding EmployeeInfo}" ItemSize="60">
   <syncfusion:SfListView.DataSource>
-    <dataSource:DataSource>
-       <dataSource:DataSource.GroupDescriptors>
-          <dataSource:GroupDescriptor PropertyName="Designation" />
-          <dataSource:GroupDescriptor PropertyName="Level" />
-       </dataSource:DataSource.GroupDescriptors>
-    </dataSource:DataSource>
+    <data:DataSource>
+       <data:DataSource.GroupDescriptors>
+          <data:GroupDescriptor PropertyName="Designation" />
+          <data:GroupDescriptor PropertyName="Level" />
+       </data:DataSource.GroupDescriptors>
+    </data:DataSource>
   </syncfusion:SfListView.DataSource>
   <syncfusion:SfListView.GroupHeaderTemplate>
      <DataTemplate>

@@ -128,8 +128,8 @@ The SfListView allows you to layout the items like `TabView` in the horizontal d
                 <Label Text="{Binding ContactName}" />
                 <Label Text="{Binding ContactNumber}" />
             </Grid>
-            <listView:SfListView x:Name="listView" ItemTapped="list_ItemTapped" ItemSize="70" ItemsSource="{Binding ContactsInfo}">
-                <listView:SfListView.ItemTemplate>
+            <syncfusion:SfListView x:Name="listView" ItemTapped="list_ItemTapped" ItemSize="70" ItemsSource="{Binding ContactsInfo}">
+                <syncfusion:SfListView.ItemTemplate>
                     <DataTemplate x:Name="ItemTemplate"  x:Key="ItemTemplate" >
                         <ViewCell>
                             <ViewCell.View>
@@ -137,8 +137,8 @@ The SfListView allows you to layout the items like `TabView` in the horizontal d
                             </ViewCell.View>
                         </ViewCell>
                     </DataTemplate>
-                </listView:SfListView.ItemTemplate>
-            </listView:SfListView>
+                </syncfusion:SfListView.ItemTemplate>
+            </syncfusion:SfListView>
         </Grid>
     </ContentPage.Content>
 </ContentPage>
@@ -321,16 +321,16 @@ The SfListView allows applying alternate row styling for items by finding the in
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
-        <listView:SfListView x:Name="listView" ItemsSource="{Binding Items}" ItemSize="50">
-            <listView:SfListView.ItemTemplate>
+        <syncfusion:SfListView x:Name="listView" ItemsSource="{Binding Items}" ItemSize="50">
+            <syncfusion:SfListView.ItemTemplate>
                 <DataTemplate>
                     <Grid BackgroundColor="{Binding .,Converter={StaticResource IndexToColorConverter},ConverterParameter={x:Reference Name=listView}}">
                         <Label Text="{Binding ContactName}" />
                         <Label Text="{Binding ContactNumber}" />
                     </Grid>
                 </DataTemplate>
-            </listView:SfListView.ItemTemplate>
-        </listView:SfListView>
+            </syncfusion:SfListView.ItemTemplate>
+        </syncfusion:SfListView>
     </ContentPage.Content>
 </ContentPage>
 
@@ -398,8 +398,8 @@ The SfListView allows customizing the item appearance like rounded corner by usi
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
-        <listView:SfListView x:Name="listView" ItemSize="60" ItemsSource="{Binding customerDetails}">
-            <listView:SfListView.ItemTemplate>
+        <syncfusion:SfListView x:Name="listView" ItemSize="60" ItemsSource="{Binding customerDetails}">
+            <syncfusion:SfListView.ItemTemplate>
                 <DataTemplate>
                     <Frame x:Name="frame" CornerRadius="10" >
                         <StackLayout>
@@ -409,8 +409,8 @@ The SfListView allows customizing the item appearance like rounded corner by usi
                         </StackLayout>
                     </Frame>
                 </DataTemplate>
-            </listView:SfListView.ItemTemplate>
-        </listView:SfListView>
+            </syncfusion:SfListView.ItemTemplate>
+        </syncfusion:SfListView>
     </ContentPage.Content>
 </ContentPage>
 {% endhighlight %}
@@ -466,8 +466,8 @@ N> Define the frame within any view inside `ItemTemplate` with around some margi
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
-        <listView:SfListView x:Name="listView" ItemSize="60" ItemsSource="{Binding customerDetails}">
-            <listView:SfListView.ItemTemplate>
+        <syncfusion:SfListView x:Name="listView" ItemSize="60" ItemsSource="{Binding customerDetails}">
+            <syncfusion:SfListView.ItemTemplate>
                 <DataTemplate>
                     <Grid Padding="2" Margin="2" >
                         <Frame x:Name="frame" HasShadow="True" Padding="2" Margin="2">
@@ -479,8 +479,8 @@ N> Define the frame within any view inside `ItemTemplate` with around some margi
                         </Frame>
                     </Grid>
                 </DataTemplate>
-            </listView:SfListView.ItemTemplate>
-        </listView:SfListView>
+            </syncfusion:SfListView.ItemTemplate>
+        </syncfusion:SfListView>
     </ContentPage.Content>
 </ContentPage>
 {% endhighlight %}
@@ -713,10 +713,10 @@ Create a IsLoading boolean property in view model and bind it to the IsBusy prop
 <ContentPage xmlns:listview="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
              xmlns:busyIndicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms">
     <Grid>
-        <listview:SfListView x:Name="listView" 
+        <syncfusion:SfListView x:Name="listView" 
                              ItemsSource="{Binding ContactInfo}" 
                              ItemSize="110">
-        </listview:SfListView>
+        </syncfusion:SfListView>
         <busyIndicator:SfBusyIndicator x:Name="busyIndicator" 
                                        AnimationType="SingleCircle" 
                                        IsBusy="{Binding IsLoading, Mode=TwoWay}" 

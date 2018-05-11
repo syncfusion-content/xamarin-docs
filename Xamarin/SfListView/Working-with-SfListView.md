@@ -502,7 +502,9 @@ Defining the SfListView
 {% tabs %}
 {% highlight xaml %}
 
-<ContentPage>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
   <ContentPage.BindingContext>
     <local:ContactsViewModel x:Name="viewModel"/>
   </ContentPage.BindingContext>
@@ -845,7 +847,9 @@ public partial class ToDoListPage : ContentPage
 {% endhighlight %}
 
 {% highlight xaml %}
-<ContentPage>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
 
     <ContentPage.Content>
         <StackLayout>
@@ -963,7 +967,9 @@ Refer to the following code which illustrates, how to bind the data from the SQL
 {% tabs %}
 {% highlight xaml %}
 
-<ContentPage>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
     <ContentPage.BindingContext>
         <local:ViewModel/>
     </ContentPage.BindingContext>

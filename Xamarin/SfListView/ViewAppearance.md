@@ -119,7 +119,9 @@ The SfListView allows you to layout the items like `TabView` in the horizontal d
 
 {% tabs %}
 {% highlight xaml %}
-<ContentPage>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
     <ContentPage.Content>
         <Grid x:Name="GridView">
             <Label Text="Tap image to expand"/>
@@ -206,7 +208,9 @@ You should define the size for each inner SfListView or set the [AutoFitMode](ht
 {% tabs %}
 {% highlight xaml %}
 
-<ContentPage >
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
   <ContentPage.BindingContext>
     <local:ListViewModel x:Name="viewModel"/>
   </ContentPage.BindingContext>
@@ -314,7 +318,9 @@ The SfListView allows applying alternate row styling for items by finding the in
 {% tabs %}
 {% highlight xaml %}
 
-<ContentPage >
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
     <ContentPage.Resources>
         <ResourceDictionary>
             <local:IndexToColorConverter x:Key="IndexToColorConverter"/>
@@ -391,19 +397,30 @@ The SfListView allows customizing the item appearance like rounded corner by usi
 
 {% tabs %}
 {% highlight xaml %}
-<listView:SfListView x:Name="listView" ItemSize="60" ItemsSource="{Binding customerDetails}">
-    <listView:SfListView.ItemTemplate>
-        <DataTemplate>
-            <Frame x:Name="frame" CornerRadius="10" >
-                <StackLayout>
-                        <Label Text="{Binding ContactName}" />
-                        <Label Text="{Binding ContactNumber}" />
-                        <Label Text="{Binding ContactType}" />
-                </StackLayout>
-            </Frame>
-        </DataTemplate>
-    </listView:SfListView.ItemTemplate>
-</listView:SfListView>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:IndexToColorConverter x:Key="IndexToColorConverter"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <listView:SfListView x:Name="listView" ItemSize="60" ItemsSource="{Binding customerDetails}">
+            <listView:SfListView.ItemTemplate>
+                <DataTemplate>
+                    <Frame x:Name="frame" CornerRadius="10" >
+                        <StackLayout>
+                                <Label Text="{Binding ContactName}" />
+                                <Label Text="{Binding ContactNumber}" />
+                                <Label Text="{Binding ContactType}" />
+                        </StackLayout>
+                    </Frame>
+                </DataTemplate>
+            </listView:SfListView.ItemTemplate>
+        </listView:SfListView>
+    </ContentPage.Content>
+</ContentPage>
 {% endhighlight %}
 {% highlight c# %}
 public partial class MainPage : ContentPage
@@ -450,21 +467,32 @@ N> Define the frame within any view inside `ItemTemplate` with around some margi
 
 {% tabs %}
 {% highlight xaml %}
-<listView:SfListView x:Name="listView" ItemSize="60" ItemsSource="{Binding customerDetails}">
-    <listView:SfListView.ItemTemplate>
-        <DataTemplate>
-            <Grid Padding="2" Margin="2" >
-                <Frame x:Name="frame" HasShadow="True" Padding="2" Margin="2">
-                    <StackLayout>
-                        <Label Text="{Binding ContactName}" /> 
-                        <Label Text="{Binding ContactNumber}" />
-                        <Label Text="{Binding ContactType}" />
-                    </StackLayout>
-                </Frame>
-            </Grid>
-        </DataTemplate>
-    </listView:SfListView.ItemTemplate>
-</listView:SfListView>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:IndexToColorConverter x:Key="IndexToColorConverter"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <listView:SfListView x:Name="listView" ItemSize="60" ItemsSource="{Binding customerDetails}">
+            <listView:SfListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Padding="2" Margin="2" >
+                        <Frame x:Name="frame" HasShadow="True" Padding="2" Margin="2">
+                            <StackLayout>
+                                <Label Text="{Binding ContactName}" /> 
+                                <Label Text="{Binding ContactNumber}" />
+                                <Label Text="{Binding ContactType}" />
+                            </StackLayout>
+                        </Frame>
+                    </Grid>
+                </DataTemplate>
+            </listView:SfListView.ItemTemplate>
+        </listView:SfListView>
+    </ContentPage.Content>
+</ContentPage>
 {% endhighlight %}
 {% highlight c# %}
 public partial class MainPage : ContentPage

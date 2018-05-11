@@ -95,7 +95,9 @@ The SfListView supports customizing the selection background color for the selec
 
 {% tabs %}
 {% highlight xaml %}
-<ContentPage>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
   <syncfusion:SfListView x:Name="listView">
    <syncfusion:SfListView.SelectedItemTemplate>
     <DataTemplate>
@@ -149,7 +151,9 @@ To customize the appearance of the selected item or items by using the appearanc
 
 {% tabs %}
 {% highlight xaml %}
-<ContentPage>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
   <syncfusion:SfListView x:Name="listView">
    <syncfusion:SfListView.SelectedItemTemplate>
     <DataTemplate>

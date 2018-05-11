@@ -17,6 +17,13 @@ Linear layout arrange items in a single column. Initialize the [LinearLayout](ht
 
 {% tabs %}
 {% highlight xaml %}
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:local="clr-namespace:GettingStarted;assembly=GettingStarted"
+             x:Class="GettingStarted.MainPage">
+             
 <syncfusion:SfListView x:Name="listView" 
                    ItemsSource="{Binding GalleryInfo}"
                    ItemSize="100">
@@ -24,6 +31,7 @@ Linear layout arrange items in a single column. Initialize the [LinearLayout](ht
       <syncfusion:LinearLayout />
     </syncfusion:SfListView.LayoutManager>
 </syncfusion:SfListView>
+</ContentPage>
 {% endhighlight%}
 {% highlight c# %}
 listView.LayoutManager = new LinearLayout();
@@ -42,6 +50,13 @@ In horizontal orientation, `SpanCount` defines the number of rows.
 
 {% tabs %}
 {% highlight xaml %}
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:local="clr-namespace:GettingStarted;assembly=GettingStarted"
+             x:Class="GettingStarted.MainPage">
+             
 <syncfusion:SfListView x:Name="listView" 
                    ItemsSource="{Binding GalleryInfo}"
                    ItemSize="100">
@@ -49,6 +64,7 @@ In horizontal orientation, `SpanCount` defines the number of rows.
       <syncfusion:GridLayout SpanCount="2" />
     </syncfusion:SfListView.LayoutManager>
 </syncfusion:SfListView>
+</ContentPage>
 {% endhighlight%}
 {% highlight c# %}
 listView.LayoutManager = new GridLayout() { SpanCount = 2 };
@@ -65,6 +81,15 @@ The [SpanCount](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syn
 
 {% tabs %}
 {% highlight xaml %}
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:local="clr-namespace:GettingStarted;assembly=GettingStarted"
+             x:Class="GettingStarted.MainPage">
+             
+<syncfusion:SfListView x:Name="listView" 
+                   ItemsSource="{Binding GalleryInfo}"
+                   ItemSize="100">
  <syncfusion:SfListView.LayoutManager>
    <syncfusion:GridLayout>
       <syncfusion:GridLayout.SpanCount>
@@ -82,6 +107,8 @@ The [SpanCount](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syn
      </syncfusion:GridLayout.SpanCount>
    </syncfusion:GridLayout>
  </syncfusion:SfListView.LayoutManager>
+</syncfusion:SfListView>
+</ContentPage>
 {% endhighlight%}
 {% highlight c# %}
 GridLayout gridLayout = new GridLayout();

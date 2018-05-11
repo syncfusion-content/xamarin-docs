@@ -19,7 +19,9 @@ The User Interface (UI) for swiping can be customized by using the [SfListView.L
 
 {% tabs %}
 {% highlight xaml %}
-<ContentPage>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
  <syncfusion:SfListView x:Name="listView" AllowSwiping="True">
   <syncfusion:SfListView.LeftSwipeTemplate>
     <DataTemplate x:Name="LeftSwipeTemplate">
@@ -82,7 +84,9 @@ The swipe templates allows customizing with custom actions such as deleting the 
 
 {% tabs %}
 {% highlight xaml %}
-<ContentPage>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
  <syncfusion:SfListView x:Name="listView">
   <syncfusion:SfListView.LeftSwipeTemplate>
     <DataTemplate x:Name="LeftSwipeTemplate">
@@ -223,7 +227,9 @@ To delete an item in view while swiping the item from one extent to other by usi
 
 {% tabs %}
 {% highlight xaml %}
-<ContentPage>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
  <syncfusion:SfListView x:Name="listView" 
                  AllowSwiping="True" SelectionMode="None" 
                  SwipeOffset="360" SwipeThreshold="30"
@@ -488,7 +494,9 @@ The SfListView allows editing the item data using either [SfListView.RightSwipeT
 
 {% tabs %}
 {% highlight xaml %}
-<ContentPage>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
  <syncfusion:SfListView > 
   <syncfusion:SfListView.RightSwipeTemplate> 
       <DataTemplate x:Name="RightSwipeTemplate"> 

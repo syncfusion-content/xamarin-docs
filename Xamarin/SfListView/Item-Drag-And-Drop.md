@@ -27,11 +27,23 @@ To enable drag and drop using 'OnHold', follow the code example:
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfListView x:Name="listView" 
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:local="clr-namespace:GettingStarted;assembly=GettingStarted"
+             x:Class="GettingStarted.MainPage">
+             
+  <ContentPage.BindingContext>
+    <local:BookInfoRepository />
+  </ContentPage.BindingContext>
+
+  <syncfusion:SfListView x:Name="listView" 
                    ItemsSource="{Binding ToDoList}"
                    DragStartMode="OnHold"
                    BackgroundColor="#FFE8E8EC"
                    ItemSize="60" />
+</ContentPage>
 {% endhighlight %}
 {% highlight c# %}
 listView.DragStartMode = DragStartMode.OnHold; 
@@ -42,11 +54,23 @@ To enable drag and drop using both 'OnHold' and 'OnDragIndicator', follow the co
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfListView x:Name="listView" 
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:local="clr-namespace:GettingStarted;assembly=GettingStarted"
+             x:Class="GettingStarted.MainPage">
+             
+  <ContentPage.BindingContext>
+    <local:BookInfoRepository />
+  </ContentPage.BindingContext>
+
+  <syncfusion:SfListView x:Name="listView" 
                    ItemsSource="{Binding ToDoList}"
                    DragStartMode="OnHold, OnDragIndicator"
                    BackgroundColor="#FFE8E8EC"
                    ItemSize="60" />
+</ContentPage>
 {% endhighlight %}
 {% highlight c# %}
 listView.DragStartMode = DragStartMode.OnHold | DragStartMode.OnDragIndicator; 
@@ -63,11 +87,22 @@ N> You must set the SfListView instance as reference to the [ListView](https://h
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfListView x:Name="listView" 
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:local="clr-namespace:GettingStarted;assembly=GettingStarted"
+             x:Class="GettingStarted.MainPage">
+             
+  <ContentPage.BindingContext>
+    <local:BookInfoRepository />
+  </ContentPage.BindingContext>
+
+  <syncfusion:SfListView x:Name="listView" 
                    ItemsSource="{Binding ToDoList}"
                    DragStartMode="OnDragIndicator"
                    BackgroundColor="#FFE8E8EC"
-                   ItemSize="60">
+                   ItemSize="60" />
   <syncfusion:SfListView.ItemTemplate>
     <DataTemplate>
       <Grid Padding="10">
@@ -88,7 +123,8 @@ N> You must set the SfListView instance as reference to the [ListView](https://h
       </Grid>
     </DataTemplate>
   </syncfusion:SfListView.ItemTemplate>
-</syncfusion:SfListView>
+</syncfusion:SfListView>                
+</ContentPage>
 {% endhighlight %}
 {% highlight c# %}
 listView.ItemTemplate = new DataTemplate(() =>
@@ -132,11 +168,22 @@ N> If `BackgroundColor` is set to `DragItemTemplate` or [DragIndicatorView](http
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfListView x:Name="listView" 
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:local="clr-namespace:GettingStarted;assembly=GettingStarted"
+             x:Class="GettingStarted.MainPage">
+             
+  <ContentPage.BindingContext>
+    <local:BookInfoRepository />
+  </ContentPage.BindingContext>
+
+  <syncfusion:SfListView x:Name="listView" 
                    ItemsSource="{Binding ToDoList}"
-                   DragStartMode="OnHold"
+                   DragStartMode="OnDragIndicator"
                    BackgroundColor="#FFE8E8EC"
-                   ItemSize="60">
+                   ItemSize="60" />
   <syncfusion:SfListView.DragItemTemplate>
     <DataTemplate>
       <Grid Padding="10">
@@ -144,7 +191,8 @@ N> If `BackgroundColor` is set to `DragItemTemplate` or [DragIndicatorView](http
       </Grid>
     </DataTemplate>
   </syncfusion:SfListView.DragItemTemplate>
-</syncfusion:SfListView>
+</syncfusion:SfListView>                
+</ContentPage>
 {% endhighlight %}
 {% highlight c# %}
 listView.ItemTemplate = new DataTemplate(() => {
@@ -253,6 +301,13 @@ To delete the dragged item from the underlying collection when dropping into del
 
 {% tabs %}
 {% highlight xaml %}
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:local="clr-namespace:GettingStarted;assembly=GettingStarted"
+             x:Class="GettingStarted.MainPage">
+             
 <Grid>
   <Grid.RowDefinitions>
     <RowDefinition Height="Auto" />
@@ -272,6 +327,8 @@ To delete the dragged item from the underlying collection when dropping into del
                    BackgroundColor="#FFE8E8EC"
                    ItemSize="60" />
 </Grid>
+</syncfusion:SfListView>                
+</ContentPage>
 {% endhighlight %}
 {% highlight c# %}
 public partial class MainPage : ContentPage

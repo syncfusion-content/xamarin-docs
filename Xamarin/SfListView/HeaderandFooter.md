@@ -18,11 +18,7 @@ The [SfListView](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Sy
 {% tabs %}
 {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
-             xmlns:local="clr-namespace:GettingStarted;assembly=GettingStarted"
-             x:Class="GettingStarted.MainPage">
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
              
   <ContentPage.BindingContext>
     <local:BookInfoRepository />

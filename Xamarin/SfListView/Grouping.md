@@ -162,12 +162,8 @@ For each group, display the sum of values of the property from model object in t
 
 {% tabs %}
 {% highlight xaml %}
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
-             xmlns:data="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable"
-             xmlns:local="clr-namespace:GettingStarted;assembly=GettingStarted"
-             x:Class="GettingStarted.MainPage">
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:data="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable">
              
   <syncfusion:SfListView x:Name="listView">
       <syncfusion:SfListView.GroupHeaderTemplate>
@@ -239,9 +235,7 @@ The total number of items in each group will be displayed in the group header by
 
 {% tabs %}
 {% highlight xaml %}
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
              xmlns:data="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable">
  <syncfusion:SfListView>
   <syncfusion:SfListView.GroupHeaderTemplate>
@@ -613,9 +607,7 @@ To customize the view for group header items and binding the [Key](https://help.
 
 {% tabs %}
 {% highlight xaml %}
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
  <syncfusion:SfListView x:Name="listView">
   <syncfusion:SfListView.GroupHeaderTemplate>
     <DataTemplate>
@@ -663,9 +655,7 @@ Expand and collapse the group when tapping icon in the group header item by cust
 
 {% tabs %}
 {% highlight xaml %}
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
     <ContentPage.Resources>
         <ResourceDictionary>
             <local:BoolToImageConverter x:Key="BoolToImageConverter"/>
@@ -785,9 +775,7 @@ The SfListView supports selecting each group and items in the group like a check
 
 {% tabs %}
 {% highlight xaml %}
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
   <syncfusion:SfListView>
     <syncfusion:SfListView.GroupHeaderTemplate>
         <DataTemplate>
@@ -944,9 +932,7 @@ Change the [SfListView.GroupHeaderTemplate](https://help.syncfusion.com/cr/cref_
 
 {% tabs %}
 {% highlight xaml %}
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
              xmlns:data="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable">
  <ContentPage.Resources> 
   <ResourceDictionary> 

@@ -119,9 +119,7 @@ The SfListView allows you to layout the items like `TabView` in the horizontal d
 
 {% tabs %}
 {% highlight xaml %}
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
     <ContentPage.Content>
         <Grid x:Name="GridView">
             <Label Text="Tap image to expand"/>
@@ -208,9 +206,7 @@ You should define the size for each inner SfListView or set the [AutoFitMode](ht
 {% tabs %}
 {% highlight xaml %}
 
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
   <ContentPage.BindingContext>
     <local:ListViewModel x:Name="viewModel"/>
   </ContentPage.BindingContext>
@@ -318,9 +314,7 @@ The SfListView allows applying alternate row styling for items by finding the in
 {% tabs %}
 {% highlight xaml %}
 
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
     <ContentPage.Resources>
         <ResourceDictionary>
             <local:IndexToColorConverter x:Key="IndexToColorConverter"/>
@@ -397,9 +391,7 @@ The SfListView allows customizing the item appearance like rounded corner by usi
 
 {% tabs %}
 {% highlight xaml %}
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
     <ContentPage.Resources>
         <ResourceDictionary>
             <local:IndexToColorConverter x:Key="IndexToColorConverter"/>
@@ -467,9 +459,7 @@ N> Define the frame within any view inside `ItemTemplate` with around some margi
 
 {% tabs %}
 {% highlight xaml %}
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+<ContentPage  xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
     <ContentPage.Resources>
         <ResourceDictionary>
             <local:IndexToColorConverter x:Key="IndexToColorConverter"/>
@@ -892,7 +882,7 @@ Bind the bool values for the IsVisible properties to switch between indicator an
 {% tabs %}
 {% highlight xaml %}
 
-<ContentPage>  
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">  
 
     <ContentPage.BindingContext>
         <local:BookInfoRepository x:Name="ViewModel" />

@@ -24,9 +24,7 @@ Sorting the data by creating the [SortDescriptor](https://help.syncfusion.com/cr
 {% tabs %}
 {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
              xmlns:data="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable">
              
   <ContentPage.BindingContext>
@@ -64,9 +62,7 @@ Sort the items based on the custom logic and it can be applied to either [SfList
 
 {% tabs %}
 {% highlight xaml %}
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
              xmlns:data="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable">
   <ContentPage.Resources>
     <ResourceDictionary>
@@ -144,9 +140,7 @@ To apply the sorting when tapping the header, handle the [ItemTapped](https://he
 {% tabs %}
 {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
              xmlns:data="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable">
              
 <syncfusion:SfListView x:Name="listView" ItemSize="60"
@@ -275,18 +269,23 @@ Sorting the items along with grouping by using `KeySelector` based on retuning t
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfListView x:Name="listView">
-  <syncfusion:SfListView.DataSource>
-    <data:DataSource>
-	  <data:DataSource.GroupDescriptors>
-        <data:GroupDescriptor PropertyName="ContactName" />
-      </data:DataSource.GroupDescriptors>
-      <data:DataSource.SortDescriptors>
-        <data:SortDescriptor PropertyName="ContactName" Direction="Ascending"/>
-      </data:DataSource.SortDescriptors>
-    </data:DataSource>
-  </syncfusion:SfListView.DataSource>
-</syncfusion:SfListView>
+<ContentPage xmlns:listView="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:data="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable">
+  <ContentPage.Content>
+    <syncfusion:SfListView x:Name="listView">
+      <syncfusion:SfListView.DataSource>
+        <data:DataSource>
+        <data:DataSource.GroupDescriptors>
+            <data:GroupDescriptor PropertyName="ContactName" />
+          </data:DataSource.GroupDescriptors>
+          <data:DataSource.SortDescriptors>
+            <data:SortDescriptor PropertyName="ContactName" Direction="Ascending"/>
+          </data:DataSource.SortDescriptors>
+        </data:DataSource>
+      </syncfusion:SfListView.DataSource>
+    </syncfusion:SfListView>
+  </ContentPage.Content>
+</ContentPage>
 {% endhighlight %}
 {% highlight c# %}
 public partial class MainPage : ContentPage

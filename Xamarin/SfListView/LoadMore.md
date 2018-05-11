@@ -399,9 +399,7 @@ The SfListView allows loading more items automatically when reaching top of the 
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
 
-<syncfusion:SfListView x:Name="listView" 
-                   ItemsSource="{Binding BookInfo}" />
-                   <syncfusion:SfListView x:Name="ListView" IsBusy="True" 
+ <syncfusion:SfListView x:Name="ListView" IsBusy="True" 
                        ItemsSource="{Binding Messages}" 
                        AutoFitMode="Height">
   <syncfusion:SfListView.HeaderTemplate>

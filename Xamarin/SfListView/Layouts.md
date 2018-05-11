@@ -75,9 +75,6 @@ The [SpanCount](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syn
 {% highlight xaml %}
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
              
-<syncfusion:SfListView x:Name="listView" 
-                   ItemsSource="{Binding GalleryInfo}"
-                   ItemSize="100">
  <syncfusion:SfListView.LayoutManager>
    <syncfusion:GridLayout>
       <syncfusion:GridLayout.SpanCount>

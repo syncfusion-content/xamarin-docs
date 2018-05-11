@@ -51,7 +51,6 @@ The SfListView allows dynamically adjusting size of items based on the content l
 
 {% tabs %}
 {% highlight xaml %}
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
              
   <syncfusion:SfListView x:Name="listView" 

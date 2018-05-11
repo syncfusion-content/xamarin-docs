@@ -46,7 +46,6 @@ To enable drag and drop using both 'OnHold' and 'OnDragIndicator', follow the co
 
 {% tabs %}
 {% highlight xaml %}
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
 
   <syncfusion:SfListView x:Name="listView" 
@@ -79,7 +78,7 @@ N> You must set the SfListView instance as reference to the [ListView](https://h
                    ItemsSource="{Binding ToDoList}"
                    DragStartMode="OnDragIndicator"
                    BackgroundColor="#FFE8E8EC"
-                   ItemSize="60" />
+                   ItemSize="60">
   <syncfusion:SfListView.ItemTemplate>
     <DataTemplate>
       <Grid Padding="10">
@@ -152,7 +151,7 @@ N> If `BackgroundColor` is set to `DragItemTemplate` or [DragIndicatorView](http
                    ItemsSource="{Binding ToDoList}"
                    DragStartMode="OnDragIndicator"
                    BackgroundColor="#FFE8E8EC"
-                   ItemSize="60" />
+                   ItemSize="60">
   <syncfusion:SfListView.DragItemTemplate>
     <DataTemplate>
       <Grid Padding="10">
@@ -291,8 +290,7 @@ To delete the dragged item from the underlying collection when dropping into del
                    DragStartMode="OnHold"
                    BackgroundColor="#FFE8E8EC"
                    ItemSize="60" />
-</Grid>
-</syncfusion:SfListView>                
+</Grid>            
 </ContentPage>
 {% endhighlight %}
 {% highlight c# %}

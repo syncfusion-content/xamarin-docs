@@ -27,10 +27,6 @@ Sorting the data by creating the [SortDescriptor](https://help.syncfusion.com/cr
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
              xmlns:data="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable">
              
-  <ContentPage.BindingContext>
-    <local:BookInfoRepository />
-  </ContentPage.BindingContext>
-
 <syncfusion:SfListView x:Name="listView">
   <syncfusion:SfListView.DataSource>
     <data:DataSource>

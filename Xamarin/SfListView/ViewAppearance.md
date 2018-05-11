@@ -456,11 +456,7 @@ N> Define the frame within any view inside `ItemTemplate` with around some margi
 {% tabs %}
 {% highlight xaml %}
 <ContentPage  xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <local:IndexToColorConverter x:Key="IndexToColorConverter"/>
-        </ResourceDictionary>
-    </ContentPage.Resources>
+
     <ContentPage.Content>
         <syncfusion:SfListView x:Name="listView" ItemSize="60" ItemsSource="{Binding customerDetails}">
             <syncfusion:SfListView.ItemTemplate>

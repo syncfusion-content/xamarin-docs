@@ -97,10 +97,7 @@ To load more items manually using the [SfListView.LoadMoreCommand](https://help.
 {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
-             
-  <ContentPage.BindingContext>
-    <local:BookInfoRepository />
-  </ContentPage.BindingContext>
+
 
   <syncfusion:SfListView x:Name="listView"
                  ItemSize="120"

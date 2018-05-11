@@ -399,19 +399,18 @@ private void Schedule_OnMonthCellLoadedEvent(object sender, MonthCellLoadedEvent
 You can customize the default appearance of the month cell by using the [MonthCellTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~MonthCellTemplate.html) property of `MonthViewSettings`.
 
 {% highlight xaml %}
-	
-	<schedule:SfSchedule
-        x:Name="schedule" ScheduleView="MonthView">
-		<schedule:SfSchedule.MonthViewSettings>
-				<schedule:MonthViewSettings>
-					<schedule:MonthViewSettings.MonthCellTemplate>
-						<DataTemplate>
-							<Label BackgroundColor = "Purple" TextColor="White" Text="{Binding Date, StringFormat='{0:dd}'}"/>
-						</DataTemplate>
-					</schedule:MonthViewSettings.MonthCellTemplate>
-				</schedule:MonthViewSettings>
-			</schedule:SfSchedule.MonthViewSettings>
-	</schedule:SfSchedule>
+<schedule:SfSchedule
+x:Name="schedule" ScheduleView="MonthView">
+	<schedule:SfSchedule.MonthViewSettings>
+		<schedule:MonthViewSettings>
+			<schedule:MonthViewSettings.MonthCellTemplate>
+				<DataTemplate>
+					<Label BackgroundColor = "Purple" TextColor="White" Text="{Binding Date, StringFormat='{0:dd}'}"/>
+				</DataTemplate>
+			</schedule:MonthViewSettings.MonthCellTemplate>
+		</schedule:MonthViewSettings>
+	</schedule:SfSchedule.MonthViewSettings>
+</schedule:SfSchedule>
 {% endhighlight %}
 
 ![](monthview_images/monthdatatemplate.png)
@@ -421,20 +420,19 @@ You can customize the default appearance of the month cell by using the [MonthCe
 You can use `DataTemplateSelector` to choose a `DataTemplate` at runtime based on the value of a data-bound to Schedule month cell through `MonthCellTemplate`. It provides multiple DataTemplates to be enabled for Schedule month cell, to customize the appearance of particular month cell. DataTemplateSelector for month cell includes [MonthCellItem](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthCellItem.html) as object item and `Schedule` as bindable object. `MonthCellItem` consists of following properties, [Date](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthCellItem~Date.html), [Appointments](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthCellItem~Appointments.html), [IsLeadingDay](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthCellItem~IsLeadingDay.html), [IsTrailingDay](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthCellItem~IsTrailingDay.html), [IsBlockOutDay](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthCellItem~IsBlockOutDay.html).
 
 {% highlight xaml %}
-    
-    <ContentPage.Resources>
-        <ResourceDictionary>
-			 <samplelocal:MonthCellDataTemplateSelector x:Key="monthCellDataTemplateSelector" />
-        </ResourceDictionary>
-    </ContentPage.Resources>
+<ContentPage.Resources>
+	<ResourceDictionary>
+		 <samplelocal:MonthCellDataTemplateSelector x:Key="monthCellDataTemplateSelector" />
+	</ResourceDictionary>
+</ContentPage.Resources>
 
-    <ContentPage.Content>
-    <schedule:SfSchedule ScheduleView="MonthView" >
-           <schedule:SfSchedule.MonthViewSettings>
-					<schedule:MonthViewSettings x:Name="monthViewSettings"
-					MonthCellTemplate="{StaticResource monthCellDataTemplateSelector}" />
-				</schedule:SfSchedule.MonthViewSettings>
-    </schedule:SfSchedule>
+<ContentPage.Content>
+	<schedule:SfSchedule ScheduleView="MonthView" >
+	<schedule:SfSchedule.MonthViewSettings>
+		<schedule:MonthViewSettings x:Name="monthViewSettings"
+			MonthCellTemplate="{StaticResource monthCellDataTemplateSelector}" />
+		</schedule:SfSchedule.MonthViewSettings>
+	</schedule:SfSchedule>
 </ContentPage.Content>
 
 {% endhighlight %}
@@ -442,102 +440,100 @@ You can use `DataTemplateSelector` to choose a `DataTemplate` at runtime based o
 #### Creating a DataTemplateSelector
 
 {% highlight c# %}
+public class MonthCellDataTemplateSelector : DataTemplateSelector
+{
+	public DataTemplate MonthAppointmentTemplate { get; set; }
+	public DataTemplate MonthCellDatesTemplate { get; set; }
 
-	public class MonthCellDataTemplateSelector : DataTemplateSelector
+	public MonthCellDataTemplateSelector()
 	{
-		public DataTemplate MonthAppointmentTemplate { get; set; }
-        public DataTemplate MonthCellDatesTemplate { get; set; }
-
-		public MonthCellDataTemplateSelector()
+		MonthAppointmentTemplate = new DataTemplate(typeof(MonthAppointmentTemplate));
+		MonthCellDatesTemplate = new DataTemplate(typeof(MonthCellDatesTemplate));
+	}
+	protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
+	{
+		var sfSchedule = (container as Syncfusion.SfSchedule.XForms.SfSchedule);
+		if (sfSchedule == null) return null;
+		if (sfSchedule != null)
 		{
-			MonthAppointmentTemplate = new DataTemplate(typeof(MonthAppointmentTemplate));
-            MonthCellDatesTemplate = new DataTemplate(typeof(MonthCellDatesTemplate));
-		}
-		protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
-		{
-			var sfSchedule = (container as Syncfusion.SfSchedule.XForms.SfSchedule);
-            if (sfSchedule == null) return null;
-            if (sfSchedule != null)
-            {
-                var appointments = (IList)(item as MonthCellItem).Appointments;
+		var appointments = (IList)(item as MonthCellItem).Appointments;
 
-                foreach (var appointment in appointments)
-                {
-                    CustomizationViewModel.ScheduleAppointment = appointment as ScheduleAppointment;
-                    return MonthAppointmentTemplate;
-                }
-                CustomizationViewModel.MonthCellItem = item as MonthCellItem;
-                return MonthCellDatesTemplate;
-            }
-            else
-                return null;
+		foreach (var appointment in appointments)
+		{
+			CustomizationViewModel.ScheduleAppointment = appointment as ScheduleAppointment;
+			return MonthAppointmentTemplate;
 		}
-	}		
+			CustomizationViewModel.MonthCellItem = item as MonthCellItem;
+			return MonthCellDatesTemplate;
+		}
+		else
+			return null;
+	}
+}		
 
 {% endhighlight %}
 
 Used Label to display current ,next and previous month cell dates and StackLayout with label and image to denote the month cell with appointments.
 
 {% highlight xaml %}
-
-	<?xml version="1.0" encoding="UTF-8"?>
-	<!--Label as Template to display month dates-->
-	<Label xmlns="http://xamarin.com/schemas/2014/forms" 
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Label as Template to display month dates-->
+<Label xmlns="http://xamarin.com/schemas/2014/forms" 
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 	x:Class="MonthCellTemplate_Forms.CurrentViewDatesTemplate"
 	xmlns:samplelocal="clr-namespace:MonthCellTemplate_Forms;assembly=MonthCellTemplate_Forms"
 	BackgroundColor ="Transparent" FontSize="13" TextColor="Black"
 	Text = "{Binding Date, StringFormat='{0:dd}'}">
 	<Label.Behaviors>
-        <samplelocal:MonthCellDateBehavior />
-    </Label.Behaviors>
-	</Label>
+		<samplelocal:MonthCellDateBehavior />
+	</Label.Behaviors>
+</Label>
 
-	...
+	.....
 
-	<?xml version="1.0" encoding="UTF-8"?>
-	<!--StackLayout with Label and Image as Template to display month cell with appointment-->
-	<StackLayout xmlns="http://xamarin.com/schemas/2014/forms"
+<?xml version="1.0" encoding="UTF-8"?>
+<!--StackLayout with Label and Image as Template to display month cell with appointment-->
+<StackLayout xmlns="http://xamarin.com/schemas/2014/forms"
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 	x:Class="MonthCellTemplate_Forms.MonthAppointmentTemplate" 
 	BackgroundColor="Transparent" Orientation="Vertical"
 	xmlns:samplelocal="clr-namespace:MonthCellTemplate_Forms;assembly=MonthCellTemplate_Forms"
-    VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-    
+	VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+
 	<Label x:Name="label" Text="{Binding Date, StringFormat='{0:dd}'}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-        <Label.FontSize>
-            <OnPlatform x:TypeArguments="x:Double" iOS="15" Android="13" WinPhone="13" />
-        </Label.FontSize>
-    </Label>
-    
-    <Image x:Name="Image" BackgroundColor="Transparent" Margin="15,0,0,0" HorizontalOptions="Start" VerticalOptions="Start" HeightRequest="40" WidthRequest="20" >
-    </Image>
-    <StackLayout.Behaviors>
-        <samplelocal:MonthCellCustomViewBehavior />
-    </StackLayout.Behaviors>
-	</StackLayout>
+		<Label.FontSize>
+		<OnPlatform x:TypeArguments="x:Double" iOS="15" Android="13" WinPhone="13" />
+		</Label.FontSize>
+	</Label>
+
+	<Image x:Name="Image" BackgroundColor="Transparent" Margin="15,0,0,0" HorizontalOptions="Start" VerticalOptions="Start" HeightRequest="40" WidthRequest="20" >
+	</Image>
+	
+	<StackLayout.Behaviors>
+	<samplelocal:MonthCellCustomViewBehavior />
+	</StackLayout.Behaviors>
+</StackLayout>
 
 {% endhighlight %}
 
 {% highlight c# %}
-	
-	public class MonthCellDateBehavior : Behavior<Label>
+public class MonthCellDateBehavior : Behavior<Label>
+{
+	protected override void OnAttachedTo(Label bindable)
 	{
-		protected override void OnAttachedTo(Label bindable)
+		base.OnAttachedTo(bindable);
+		if (CustomizationViewModel.MonthCellItem == null)
+			return;
+		if (CustomizationViewModel.MonthCellItem.IsLeadingDay || CustomizationViewModel.MonthCellItem.IsTrailingDay)
 		{
-			base.OnAttachedTo(bindable);
-			if (CustomizationViewModel.MonthCellItem == null)
-				return;
-			if (CustomizationViewModel.MonthCellItem.IsLeadingDay || CustomizationViewModel.MonthCellItem.IsTrailingDay)
-			{
-				bindable.TextColor = Color.Gray;
-			}
-			else
-			{
-				bindable.TextColor = Color.Black;
-			}
+			bindable.TextColor = Color.Gray;
+		}
+		else
+		{
+			bindable.TextColor = Color.Black;
 		}
 	}
+}
 	
 {% endhighlight %}
 

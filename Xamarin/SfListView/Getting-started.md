@@ -483,6 +483,7 @@ SortDescriptor object holds the following three properties:
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
              xmlns:local="clr-namespace:GettingStarted;assembly=GettingStarted"
+             xmlns:data="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable"
              x:Class="GettingStarted.MainPage">             
              
   <syncfusion:SfListView x:Name="listView">
@@ -639,15 +640,7 @@ The header and footer can be handled either by scrollable, or sticky to the view
 {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
-             
-  <ContentPage.BindingContext>
-    <local:BookInfoRepository />
-  </ContentPage.BindingContext>
 
-  <syncfusion:SfListView x:Name="listView"
-                 ItemsSource="{Binding BookInfo}"
-                 IsStickyHeader="true"
-                 IsStickyFooter="true">
   <syncfusion:SfListView.HeaderTemplate>
     <DataTemplate>
       <Grid BackgroundColor="#4CA1FE" HeightRequest="45">

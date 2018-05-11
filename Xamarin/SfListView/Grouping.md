@@ -21,12 +21,8 @@ The SfListView allows programmatic grouping by defining the [GroupDescriptor](ht
 
 {% tabs %}
 {% highlight xaml %}
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
-             xmlns:data="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable"
-             xmlns:local="clr-namespace:GettingStarted;assembly=GettingStarted"
-             x:Class="GettingStarted.MainPage">
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:data="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable">
              
   <syncfusion:SfListView x:Name="listView">
     <syncfusion:SfListView.DataSource>

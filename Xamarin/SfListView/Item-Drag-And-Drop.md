@@ -29,10 +29,6 @@ To enable drag and drop using 'OnHold', follow the code example:
 {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage  xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
-             
-  <ContentPage.BindingContext>
-    <local:BookInfoRepository />
-  </ContentPage.BindingContext>
 
   <syncfusion:SfListView x:Name="listView" 
                    ItemsSource="{Binding ToDoList}"
@@ -52,10 +48,6 @@ To enable drag and drop using both 'OnHold' and 'OnDragIndicator', follow the co
 {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
-             
-  <ContentPage.BindingContext>
-    <local:BookInfoRepository />
-  </ContentPage.BindingContext>
 
   <syncfusion:SfListView x:Name="listView" 
                    ItemsSource="{Binding ToDoList}"
@@ -81,10 +73,7 @@ N> You must set the SfListView instance as reference to the [ListView](https://h
 {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
-             
-  <ContentPage.BindingContext>
-    <local:BookInfoRepository />
-  </ContentPage.BindingContext>
+
 
   <syncfusion:SfListView x:Name="listView" 
                    ItemsSource="{Binding ToDoList}"
@@ -158,10 +147,6 @@ N> If `BackgroundColor` is set to `DragItemTemplate` or [DragIndicatorView](http
 {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
-             
-  <ContentPage.BindingContext>
-    <local:BookInfoRepository />
-  </ContentPage.BindingContext>
 
   <syncfusion:SfListView x:Name="listView" 
                    ItemsSource="{Binding ToDoList}"

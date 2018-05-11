@@ -24,10 +24,6 @@ To automatically load more items using the [SfListView.LoadMoreCommand](https://
 {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
-             
-  <ContentPage.BindingContext>
-    <local:BookInfoRepository />
-  </ContentPage.BindingContext>
 
   <syncfusion:SfListView x:Name="listView"
                  ItemSize="120"
@@ -405,10 +401,6 @@ The SfListView allows loading more items automatically when reaching top of the 
 {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
-             
-  <ContentPage.BindingContext>
-    <local:BookInfoRepository />
-  </ContentPage.BindingContext>
 
 <syncfusion:SfListView x:Name="listView" 
                    ItemsSource="{Binding BookInfo}" />

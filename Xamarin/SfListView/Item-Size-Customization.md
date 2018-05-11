@@ -54,10 +54,6 @@ The SfListView allows dynamically adjusting size of items based on the content l
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
              
-  <ContentPage.BindingContext>
-    <local:BookInfoRepository />
-  </ContentPage.BindingContext>
-
   <syncfusion:SfListView x:Name="listView" 
                      ItemSize="200"
                      AutoFitMode="Height"

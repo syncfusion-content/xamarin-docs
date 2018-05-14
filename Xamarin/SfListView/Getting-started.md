@@ -450,7 +450,7 @@ The [SfListView.LayoutManager](https://help.syncfusion.com/cr/cref_files/xamarin
     <local:BookInfoRepository />
   </ContentPage.BindingContext>
 
-  <syncfusion:SfListView <syncfusion:SfListView x:Name="listView" 
+ <syncfusion:SfListView x:Name="listView" 
                    ItemsSource="{Binding BookInfo}"
                    ItemSize="100">
     <syncfusion:SfListView.LayoutManager>

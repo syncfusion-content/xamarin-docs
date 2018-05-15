@@ -49,7 +49,7 @@ The SfDataGrid creates columns automatically based on the bindable property [SfD
 </tr>
 </table>
 
-You can refer the sample from here to get to know the codes for defining properties in the Model class and popuplating data for generating different types of column automatically.  
+You can refer the sample from here to get to know the codes for defining properties in the Model class and populating data for generating different types of column automatically.  
 
 ### AutoGenerateColumns with different modes
 

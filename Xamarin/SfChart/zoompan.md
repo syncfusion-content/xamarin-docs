@@ -312,3 +312,41 @@ zoomPan.Reset();
 
 {% endhighlight %}
 
+### Override Methods
+
+The following override methods are available in ChartZoomPanBehavior to customize zooming actions.
+
+ * [`OnScaleStart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~OnScaleStart.html) - It gets called when the user start to zoom on the chart. 
+ * [`OnScaleDelta`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~OnScaleDelta.html) - It gets called while performing the zoom action.
+ * [`OnScaleEnd`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~OnScaleEnd.html) - It gets called after end the zoom action.
+ * [`OnScroll`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~OnScroll.html) - It gets called while scrolling the chart.
+
+{% highlight c# %}
+
+ public class ChartZoomPanBehaviorExt : ChartZoomPanBehavior
+ {
+        protected override void OnScaleStart(float manipulationX, float manipulationY, float scaleFactor)
+        {
+            base.OnScaleStart(manipulationX, manipulationY, scaleFactor);
+        }
+
+        protected override void OnScaleDelta(float manipulationX, float manipulationY, float scaleFactor)
+        {
+            base.OnScaleDelta(manipulationX, manipulationY, scaleFactor);
+        }
+
+        protected override void OnScaleEnd(float manipulationX, float manipulationY, float scaleFactor)
+        {
+            base.OnScaleEnd(manipulationX, manipulationY, scaleFactor);
+        }
+
+        protected override void OnScroll(float pointX, float pointY, float distanceX, float distanceY)
+        {
+            base.OnScroll(pointX, pointY, distanceX, distanceY);
+        }
+ }
+
+{% endhighlight %}
+
+
+

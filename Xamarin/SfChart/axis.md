@@ -427,9 +427,19 @@ chart.PrimaryAxis = new DateTimeAxis() {
 
 ![](axis_images/axis_img13.png)
 
-### Apply padding to the range
+### Get actual interval type
 
-Padding can be applied to the minimum and maximum extremes of the range by using [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeAxis~RangePadding.html) property. Date time axis supports the following types of padding:
+The [`GetActualIntervalType`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeAxis~GetActualIntervalType.html) method is used to get the interval that is calculated from actual data in [`DataTimeAxis`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeAxis.html).
+
+{% highlight c# %}
+
+var intervalType = dateTimeAxis.GetActualIntervalType();
+
+{% endhighlight %}
+
+### Apply padding to range
+
+Padding can be applied to the minimum and maximum extremes of range by using the [`RangePadding`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeAxis~RangePadding.html) property. Date-time axis supports the following types of padding:
 
 * None
 * Round
@@ -726,6 +736,10 @@ chart.PrimaryAxis = categoryAxis;
 
 {% highlight xaml %}
 
+Namespace:
+
+xmlns:sys="clr-namespace:System;assembly=mscorlib"
+...
 <chart:SfChart.PrimaryAxis>
 
     <chart:DateTimeAxis>
@@ -1309,6 +1323,10 @@ For crossing in date time horizontal axis, date object should be provided as val
 
 {% highlight xaml %}
 
+Namespace:
+
+xmlns:sys="clr-namespace:System;assembly=mscorlib"
+...
 <chart:SfChart.PrimaryAxis>
 
     <chart:DateTimeAxis CrossesAt="0" />

@@ -16,81 +16,44 @@ The SfDatagrid allows to create and add columns in the following two ways:
 
 ## Automatic columns generation
 
-#Columns types
+The SfDataGrid creates columns automatically based on the bindable property [SfDataGrid.AutoGenerateColumns](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoGenerateColumns.html).Columns are generated based on type of individual properties in the underlying collection which is set as ItemsSource. For example, [GridNumericColumn](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridNumericColumn.html) is added for int type property. Below table shows the column type created for the respective data type. For remaining types, [GridTextColumn](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridTextColumn.html) will be created. 
 
-Automatic columns can be generated depends on the type of underlying model object.
+<table>
+<tr>
+<th> Data Tye </th>
+<th> Column </th>
+</tr>
+<tr>
+<td> string, object </td>
+<td> GridTextColumn </td>
+</tr>
+<tr>
+<td> int, float, double, decimal and it’s respective nullable types </td>
+<td> GridNumericColumn </td>
+</tr>
+<tr>
+<td> DateTime </td>
+<td> GridDateTimeColumn </td>
+</tr>
+<tr>
+<td> bool </td>
+<td> GridSwitchColumn </td>
+</tr>
+<tr>
+<td> enum </td>
+<td> GridPickerColumn </td>
+</tr>
+<tr>
+<td> ImageSource </td>
+<td> GridImageColumn </td>
+</tr>
+</table>
 
-#GridImageColumn: 
-If underlying collection type as ImageSource, GridImageColumn has been generated.
+You can refer the sample from here to get to know the codes for defining properties in the Model class and popuplating data for generating different types of column automatically.  
 
-{% highlight c# %}
-public ImageSource DealerImage;
-{% endhighlight %}
+### AutoGenerateColumns with different modes
 
-#GridSwitchColumn:
-If underlying collection type as bool, GridSwitchColumn has been generated.
-
-{% highlight c# %}
-public bool IsOnline;
-{% endhighlight %}
-
-#GridPickerColumn
-If underlying collection type as IsEnum, GridPickerColumn has been generated.
-
-To generate a GridPickerColumn add an enum.Generate a property for that created enum type.
-
-{% highlight c# %}
-// In OrderInfo.cs
-
-public enum enumType
-{
-    Adams,
-    Crowley,
-    Ellis,
-    Gable,
-    Irvine
-}
-
-private enumType name;
-
-public enumType Name
-{
-    get {return name;}
-    set
-    {
-        name=value;
-        RaisePropertyChanged("Name");
-    }
-}
-
-// In OrderInfoRepository.cs
-
-Name = OrderInfo.enumType.Adams,
-{% endhighlight %}
-
-#GridNumericColumn
-If underlying collection type as int or Nullable<int>,double or Nullable<double>,float or Nullable<float> and decimal or Nullable<decimal>, GridNumericColumn has been generated.
-
-{% highlight c# %}
-public int EmployeeID;
-public Nullable<int> CustomerID;
-{% endhighlight %}
-
-#GridDateTimeColumn
-If underlying collection type as DateTime, GridDateTimeColumn has been generated.
-
-{% highlight c# %}
-public DateTime ShippingDate;
-{% endhighlight %}
-
-#GridTextColumn
-Other than above all those type(example string) of underlying model object, GridTextColumn has been generated.
-
-{% highlight c# %}
-public string FirstName;
-{% endhighlight %}
-
-The SfDataGrid creates columns automatically based on the bindable property [SfDataGrid.AutoGenerateColumns](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoGenerateColumns.html). It decides column generation based on the [SfDataGrid.AutoGenerateColumnsMode](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoGenerateColumnsMode.html) property. 
+The auto generation of the columns in SfDataGrid is based on the [SfDataGrid.AutoGenerateColumnsMode](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoGenerateColumnsMode.html) property. 
 
 `SfDataGrid.AutoGenerateColumnsMode` decides a way to create columns when `SfDataGrid.AutoGenerateColumns` is set to `true`. It also decides to retain grouping and sorting when the [ItemsSource](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ItemsSource.html) changed. 
 
@@ -135,9 +98,9 @@ When `SfDatagrid.AutoGenerateColumns` is `true`, the [SfDataGrid.AutoGeneratingC
 
 The `AutoGeneratingColumnEventArgs` object contains the following properties:
 
- * Column:       This property returns the created column which can be customized.
- * Cancel:       This property cancels the column creation.
- * PropertyType: This property provides the type of underlying model object which has introduced newly.
+ * Column: This property returns the created column which can be customized.
+ * Cancel: This property cancels the column creation.
+ * PropertyType: This property provides the type of underlying model property for which the column is created.
 
 You can skip generating a column by handling the `SfDataGrid.AutoGeneratingColumn` event as shown as follows:
 
@@ -164,15 +127,15 @@ void GridAutoGeneratingColumns(object sender, AutoGeneratingColumnEventArgs 
 } 
 {% endhighlight %}
 
-You can get the property type of underlying model object as follows:
+You can perform any desired operation based on the property type of the underlying model object as follows.
 
 {% highlight c# %}
 void GridAutoGeneratingColumns(object sender,AutoGeneratingColumnEventArgs e)
 {
     if(e.PropertyType == typeof(string))
     {
-        // your logic
-        bool FirstColumn = true;
+        // Here we have hidden the columns if the underlying property type is string.
+        e.Column.IsHidden = true;
     }
 }
 {% endhighlight c# %}

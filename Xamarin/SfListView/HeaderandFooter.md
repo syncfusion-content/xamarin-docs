@@ -19,10 +19,6 @@ The [SfListView](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Sy
 {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
-             
-  <ContentPage.BindingContext>
-    <local:BookInfoRepository />
-  </ContentPage.BindingContext>
 
 <syncfusion:SfListView x:Name="listView"
                  ItemsSource="{Binding InboxInfo}"

@@ -144,7 +144,6 @@ N> If `BackgroundColor` is set to `DragItemTemplate` or [DragIndicatorView](http
 
 {% tabs %}
 {% highlight xaml %}
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
 
   <syncfusion:SfListView x:Name="listView" 
@@ -269,7 +268,6 @@ To delete the dragged item from the underlying collection when dropping into del
 
 {% tabs %}
 {% highlight xaml %}
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
              
 <Grid>

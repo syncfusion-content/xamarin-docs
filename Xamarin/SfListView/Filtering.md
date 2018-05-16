@@ -31,7 +31,7 @@ The `FilterContacts` method filters the data contains the filter text value. Ass
       <SearchBar x:Name="filterText" HeightRequest="40"
            Placeholder="Search here to filter"
            TextChanged="OnFilterTextChanged" Grid.Row="0"/>
-      <syncfusion:SfListView x:Name="listView" Grid.Row="1" ItemsSource="{Binding BookInfo}"/>
+      <syncfusion:SfListView x:Name="listView" Grid.Row="1" ItemSize="60" ItemsSource="{Binding customerDetails}"/>
     </Grid>
   </ContentPage>
 {% endhighlight %}

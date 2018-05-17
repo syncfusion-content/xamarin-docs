@@ -20,24 +20,24 @@ The User Interface (UI) for swiping can be customized by using the [SfListView.L
 {% tabs %}
 {% highlight xaml %}
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
- <syncfusion:SfListView x:Name="listView" AllowSwiping="True">
-  <syncfusion:SfListView.LeftSwipeTemplate>
-    <DataTemplate x:Name="LeftSwipeTemplate">
-      <Grid>
-        <Grid BackgroundColor="#009EDA" HorizontalOptions="Fill" VerticalOptions="Fill" Grid.Column="0">
-          <Grid VerticalOptions="Center" HorizontalOptions="Center">
-            <Image Grid.Column="0"
-                   Grid.Row="0"
-                   BackgroundColor="Transparent"
-                   HeightRequest="35"
-                   WidthRequest="35"
-                   Source="Favorites.png" />
+  <syncfusion:SfListView x:Name="listView" AllowSwiping="True">
+    <syncfusion:SfListView.LeftSwipeTemplate>
+      <DataTemplate x:Name="LeftSwipeTemplate">
+        <Grid>
+          <Grid BackgroundColor="#009EDA" HorizontalOptions="Fill" VerticalOptions="Fill" Grid.Column="0">
+            <Grid VerticalOptions="Center" HorizontalOptions="Center">
+              <Image Grid.Column="0"
+                    Grid.Row="0"
+                    BackgroundColor="Transparent"
+                    HeightRequest="35"
+                    WidthRequest="35"
+                    Source="Favorites.png" />
+            </Grid>
           </Grid>
         </Grid>
-      </Grid>
-    </DataTemplate>
-  </syncfusion:SfListView.LeftSwipeTemplate>
- </syncfusion:SfListView>
+      </DataTemplate>
+    </syncfusion:SfListView.LeftSwipeTemplate>
+  </syncfusion:SfListView>
 </ContentPage>
 {% endhighlight %}
 {% highlight c# %}

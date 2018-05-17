@@ -15,7 +15,7 @@ A group represents a collection of items belongs to a category. When grouping is
 
 The SfListView allows programmatic grouping by defining the [GroupDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor.html) object, and adding it into the [DataSource.GroupDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~GroupDescriptors.html) collection. The `GroupDescriptor` object holds the following properties:
 
-* [PropertyName](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~PropertyName.html: Describes the name of the property to be grouped.
+* [PropertyName](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor_members.html): Describes the name of the property to be grouped.
 * [KeySelector](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~KeySelector.html): Describes selector to return the group key.
 * [Comparer](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~Comparer.html): Describes comparer to be applied in when sorting take place.
 
@@ -307,34 +307,34 @@ N> Multi-level grouping is only applicable for `LinearLayout` in the SfListView.
 {% highlight xaml %}
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
              xmlns:data="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable">
- <ContentPage.Resources>
-  <ResourceDictionary>
-    <local:GroupHeaderConverter x:Key="TemplateConverter"/>
-  </ResourceDictionary>
- </ContentPage.Resources>
- <syncfusion:SfListView ItemsSource="{Binding EmployeeInfo}" ItemSize="60">
-  <syncfusion:SfListView.DataSource>
-    <data:DataSource>
-       <data:DataSource.GroupDescriptors>
-          <data:GroupDescriptor PropertyName="Designation" />
-          <data:GroupDescriptor PropertyName="Level" />
-       </data:DataSource.GroupDescriptors>
-    </data:DataSource>
-  </syncfusion:SfListView.DataSource>
-  <syncfusion:SfListView.GroupHeaderTemplate>
-     <DataTemplate>
-        <ViewCell>
-          <ViewCell.View>
-             <StackLayout BackgroundColor="{Binding Level,Converter={StaticResource TemplateConverter}}"
-                          Padding="{Binding Level,Converter={StaticResource TemplateConverter}}">
-                <Label Text="{Binding Key}" 
-                       VerticalOptions="Center" HorizontalOptions="Start"/>
-             </StackLayout>
-          </ViewCell.View>
-        </ViewCell>
-     </DataTemplate>
-  </syncfusion:SfListView.GroupHeaderTemplate>
- </syncfusion:SfListView>
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <local:GroupHeaderConverter x:Key="TemplateConverter"/>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  <syncfusion:SfListView ItemsSource="{Binding EmployeeInfo}" ItemSize="60">
+    <syncfusion:SfListView.DataSource>
+      <data:DataSource>
+        <data:DataSource.GroupDescriptors>
+            <data:GroupDescriptor PropertyName="Designation" />
+            <data:GroupDescriptor PropertyName="Level" />
+        </data:DataSource.GroupDescriptors>
+      </data:DataSource>
+    </syncfusion:SfListView.DataSource>
+    <syncfusion:SfListView.GroupHeaderTemplate>
+      <DataTemplate>
+          <ViewCell>
+            <ViewCell.View>
+              <StackLayout BackgroundColor="{Binding Level,Converter={StaticResource TemplateConverter}}"
+                            Padding="{Binding Level,Converter={StaticResource TemplateConverter}}">
+                  <Label Text="{Binding Key}" 
+                        VerticalOptions="Center" HorizontalOptions="Start"/>
+              </StackLayout>
+            </ViewCell.View>
+          </ViewCell>
+      </DataTemplate>
+    </syncfusion:SfListView.GroupHeaderTemplate>
+  </syncfusion:SfListView>
 </ContentPage>
 {% endhighlight %}
 

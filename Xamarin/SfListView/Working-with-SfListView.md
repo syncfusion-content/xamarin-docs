@@ -1143,7 +1143,7 @@ Refer the below code snippet which illustrated how to insert the SfListView and 
     <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
         <listView:SfListView x:Name="listView" ItemSize="70" ItemSpacing="0,0,5,0"
                              AutoFitMode="Height"
-                             ItemsSource="{Binding contactsinfo}" IsStickyHeader="True" 
+                             ItemsSource="{Binding ContactsInfo,}" IsStickyHeader="True" 
                              AllowSwiping="True" IsStickyGroupHeader="True" GroupHeaderSize="50">
         </listView:SfListView>
     </StackLayout>
@@ -1152,4 +1152,4 @@ Refer the below code snippet which illustrated how to insert the SfListView and 
 {% endtabs %}
 
 Note: https://xamgirl.com/prism-in-xamarin-forms-step-by-step-part-1
-You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewPrism893958547).
+You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewPrism116483729).

@@ -392,19 +392,19 @@ The SfListView allows loading more items automatically when reaching top of the 
 {% tabs %}
 {% highlight xaml %}
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
- <syncfusion:SfListView x:Name="ListView" IsBusy="True" 
-                       ItemsSource="{Binding Messages}" 
-                       AutoFitMode="Height">
-  <syncfusion:SfListView.HeaderTemplate>
-    <DataTemplate>
-      <ViewCell>
-        <Grid>
-          <syncfusion:LoadMoreIndicator Color="Red" IsRunning="True" IsVisible="{Binding IndicatorIsVisible}"/>
-        </Grid>
-      </ViewCell>
-    </DataTemplate>
-  </syncfusion:SfListView.HeaderTemplate>
-</syncfusion:SfListView>
+   <syncfusion:SfListView x:Name="ListView" IsBusy="True" 
+                        ItemsSource="{Binding Messages}" 
+                        AutoFitMode="Height">
+        <syncfusion:SfListView.HeaderTemplate>
+            <DataTemplate>
+            <ViewCell>
+                <Grid>
+                <syncfusion:LoadMoreIndicator Color="Red" IsRunning="True" IsVisible="{Binding IndicatorIsVisible}"/>
+                </Grid>
+            </ViewCell>
+            </DataTemplate>
+        </syncfusion:SfListView.HeaderTemplate>
+    </syncfusion:SfListView>
 </ContentPage
 {% endhighlight %}
 {% highlight c# %}

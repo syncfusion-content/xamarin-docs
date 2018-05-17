@@ -351,7 +351,7 @@ The following code example binds the collection created in previous step to the 
   <ContentPage.BindingContext>
     <local:BookInfoRepository />
   </ContentPage.BindingContext>
-  <syncfusion:SfListView x:Name="listView" 
+   <syncfusion:SfListView x:Name="listView" 
                    ItemsSource="{Binding BookInfo}" />
 </ContentPage>
 {% endhighlight %}
@@ -371,19 +371,19 @@ listView.ItemsSource = viewModel.BookInfo;
   <syncfusion:SfListView x:Name="listView" 
                    ItemsSource="{Binding BookInfo}"
                    ItemSize="100">
-  <syncfusion:SfListView.ItemTemplate>
-    <DataTemplate>
-      <Grid Padding="10">
-        <Grid.RowDefinitions>
-          <RowDefinition Height="0.4*" />
-          <RowDefinition Height="0.6*" />
-        </Grid.RowDefinitions>
-        <Label Text="{Binding BookName}" FontAttributes="Bold" TextColor="Teal" FontSize="21" />
-        <Label Grid.Row="1" Text="{Binding BookDescription}" TextColor="Teal" FontSize="15"/>
-      </Grid>
-    </DataTemplate>
- </syncfusion:SfListView.ItemTemplate>
-</syncfusion:SfListView>
+    <syncfusion:SfListView.ItemTemplate>
+        <DataTemplate>
+        <Grid Padding="10">
+            <Grid.RowDefinitions>
+            <RowDefinition Height="0.4*" />
+            <RowDefinition Height="0.6*" />
+            </Grid.RowDefinitions>
+            <Label Text="{Binding BookName}" FontAttributes="Bold" TextColor="Teal" FontSize="21" />
+            <Label Grid.Row="1" Text="{Binding BookDescription}" TextColor="Teal" FontSize="15"/>
+        </Grid>
+        </DataTemplate>
+    </syncfusion:SfListView.ItemTemplate>
+  </syncfusion:SfListView>
 </ContentPage>
 {% endhighlight %}
 {% highlight c# %}

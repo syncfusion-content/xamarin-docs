@@ -25,15 +25,15 @@ Sorting the data by creating the [SortDescriptor](https://help.syncfusion.com/cr
 {% highlight xaml %}
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
              xmlns:data="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable">
-<syncfusion:SfListView x:Name="listView">
-  <syncfusion:SfListView.DataSource>
-    <data:DataSource>
-      <data:DataSource.SortDescriptors>
-        <data:SortDescriptor PropertyName="ContactName" Direction="Ascending"/>
-      </data:DataSource.SortDescriptors>
-    </data:DataSource>
-  </syncfusion:SfListView.DataSource>
-</syncfusion:SfListView>
+  <syncfusion:SfListView x:Name="listView">
+    <syncfusion:SfListView.DataSource>
+      <data:DataSource>
+        <data:DataSource.SortDescriptors>
+          <data:SortDescriptor PropertyName="ContactName" Direction="Ascending"/>
+        </data:DataSource.SortDescriptors>
+      </data:DataSource>
+    </syncfusion:SfListView.DataSource>
+  </syncfusion:SfListView>
 </ContentPage>
 {% endhighlight %}
 {% highlight c# %}
@@ -135,22 +135,22 @@ To apply the sorting when tapping the header, handle the [ItemTapped](https://he
 {% highlight xaml %}
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
              xmlns:data="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable">
-<syncfusion:SfListView x:Name="listView" ItemSize="60"
-                       ItemsSource="{Binding customerDetails}" 
-                       ItemTapped="ListView_ItemTapped" 
-                       IsStickyHeader="True">
-  <syncfusion:SfListView.HeaderTemplate>
-    <DataTemplate>
-      <ViewCell>
-        <ViewCell.View>
-          <StackLayout BackgroundColor="Teal">
-            <Label TextColor="White" FontSize="20" FontAttributes="Bold" Text="CustomerDetails" />
-          </StackLayout>
-        </ViewCell.View>
-      </ViewCell>
-    </DataTemplate>
-  </syncfusion:SfListView.HeaderTemplate>
-</syncfusion:SfListView>
+  <syncfusion:SfListView x:Name="listView" ItemSize="60"
+                        ItemsSource="{Binding customerDetails}" 
+                        ItemTapped="ListView_ItemTapped" 
+                        IsStickyHeader="True">
+    <syncfusion:SfListView.HeaderTemplate>
+      <DataTemplate>
+        <ViewCell>
+          <ViewCell.View>
+            <StackLayout BackgroundColor="Teal">
+              <Label TextColor="White" FontSize="20" FontAttributes="Bold" Text="CustomerDetails" />
+            </StackLayout>
+          </ViewCell.View>
+        </ViewCell>
+      </DataTemplate>
+    </syncfusion:SfListView.HeaderTemplate>
+  </syncfusion:SfListView>
 </ContentPage>
 {% endhighlight %}
 {% highlight c# %}

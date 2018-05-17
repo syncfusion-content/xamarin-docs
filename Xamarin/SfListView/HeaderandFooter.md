@@ -18,20 +18,20 @@ The [SfListView](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Sy
 {% tabs %}
 {% highlight xaml %}
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
-<syncfusion:SfListView x:Name="listView"
-                 ItemsSource="{Binding InboxInfo}"
-                 ItemSize="100">
-  <syncfusion:SfListView.HeaderTemplate>
-    <DataTemplate>
-      <Grid BackgroundColor="#4CA1FE" HeightRequest="45">
-        <Label LineBreakMode="NoWrap"
-               Margin="10,0,0,0" Text="Inbox" FontAttributes="Bold"
-               FontSize="18" TextColor="White" HorizontalOptions="Center"
-               VerticalOptions="Center"/>
-      </Grid>
-    </DataTemplate>
-  </syncfusion:SfListView.HeaderTemplate>
-</syncfusion:SfListView>
+    <syncfusion:SfListView x:Name="listView"
+                    ItemsSource="{Binding InboxInfo}"
+                    ItemSize="100">
+        <syncfusion:SfListView.HeaderTemplate>
+            <DataTemplate>
+            <Grid BackgroundColor="#4CA1FE" HeightRequest="45">
+                <Label LineBreakMode="NoWrap"
+                    Margin="10,0,0,0" Text="Inbox" FontAttributes="Bold"
+                    FontSize="18" TextColor="White" HorizontalOptions="Center"
+                    VerticalOptions="Center"/>
+            </Grid>
+            </DataTemplate>
+        </syncfusion:SfListView.HeaderTemplate>
+    </syncfusion:SfListView>
 </ContentPage>
 {% endhighlight %}
 {% highlight c# %}

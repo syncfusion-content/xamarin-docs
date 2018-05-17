@@ -22,7 +22,7 @@ The `FilterContacts` method filters the data contains the filter text value. Ass
 {% tabs %}
 {% highlight xaml %}
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
-    <Grid>
+ <Grid>
 	 <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
@@ -31,8 +31,8 @@ The `FilterContacts` method filters the data contains the filter text value. Ass
            Placeholder="Search here to filter"
            TextChanged="OnFilterTextChanged" Grid.Row="0"/>
       <syncfusion:SfListView x:Name="listView" Grid.Row="1" ItemSize="60" ItemsSource="{Binding customerDetails}"/>
-    </Grid>
-  </ContentPage>
+  </Grid>
+</ContentPage>
 {% endhighlight %}
 {% highlight c# %}
 var grid = new Grid();

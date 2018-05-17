@@ -185,6 +185,10 @@ In the XAML code described in the previous section, remove the binding of InputF
 {% endhighlight %}
 {% endtabs %}
 
+The sample which illustrates loading a PDF in code-behind using LoadDocument method can be downloaded from the link below.
+
+http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-81946798 
+
 ## Unloading PDF document from the Viewer
 
 The SfPdfViewer control allows you to unload the PDF document from the viewer, when the PDF document is not in use anymore. This releases the PDF document and all its associated resources of the application.

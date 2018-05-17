@@ -134,7 +134,9 @@ Add the following XAML code in the MainPage.xaml in the portable project.
 {% endhighlight %}
 {% endtabs %}
 
-Deploying this project to various devices (Android, iOS and Windows) would display the PDF document and allow you to scroll and zoom the pages.
+The sample that illustrates loading a PDF in MVVM binding can be downloaded from the link below. 
+
+http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted643780204 
 
 ### Loading a PDF in code-behind
 

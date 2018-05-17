@@ -23,7 +23,6 @@ To automatically load more items using the [SfListView.LoadMoreCommand](https://
 {% tabs %}
 {% highlight xaml %}
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
-
   <syncfusion:SfListView x:Name="listView"
                  ItemSize="120"
                  LoadMoreOption="Auto"
@@ -95,8 +94,6 @@ To load more items manually using the [SfListView.LoadMoreCommand](https://help.
 {% tabs %}
 {% highlight xaml %}
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
-
-
   <syncfusion:SfListView x:Name="listView"
                  ItemSize="120"
                  LoadMoreOption="Manual"
@@ -395,7 +392,6 @@ The SfListView allows loading more items automatically when reaching top of the 
 {% tabs %}
 {% highlight xaml %}
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
-
  <syncfusion:SfListView x:Name="ListView" IsBusy="True" 
                        ItemsSource="{Binding Messages}" 
                        AutoFitMode="Height">
@@ -521,7 +517,6 @@ The SfListView allows loading more items when tapping the button loaded in the [
 {% tabs %}
 {% highlight xaml %}
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
-             
 <syncfusion:SfListView x:Name="ListView"  IsBusy="True"
                        ItemTemplate="{StaticResource MessageTemplateSelector}" 
                        ItemsSource="{Binding Messages}"

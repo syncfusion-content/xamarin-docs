@@ -18,7 +18,6 @@ Linear layout arrange items in a single column. Initialize the [LinearLayout](ht
 {% tabs %}
 {% highlight xaml %}
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
-             
 <syncfusion:SfListView x:Name="listView" 
                    ItemsSource="{Binding GalleryInfo}"
                    ItemSize="100">
@@ -46,7 +45,6 @@ In horizontal orientation, `SpanCount` defines the number of rows.
 {% tabs %}
 {% highlight xaml %}
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
-             
 <syncfusion:SfListView x:Name="listView" 
                    ItemsSource="{Binding GalleryInfo}"
                    ItemSize="100">
@@ -72,7 +70,6 @@ The [SpanCount](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syn
 {% tabs %}
 {% highlight xaml %}
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
-             
  <syncfusion:SfListView.LayoutManager>
    <syncfusion:GridLayout>
       <syncfusion:GridLayout.SpanCount>

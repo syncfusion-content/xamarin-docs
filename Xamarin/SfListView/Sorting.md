@@ -25,7 +25,6 @@ Sorting the data by creating the [SortDescriptor](https://help.syncfusion.com/cr
 {% highlight xaml %}
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
              xmlns:data="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable">
-             
 <syncfusion:SfListView x:Name="listView">
   <syncfusion:SfListView.DataSource>
     <data:DataSource>
@@ -136,7 +135,6 @@ To apply the sorting when tapping the header, handle the [ItemTapped](https://he
 {% highlight xaml %}
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
              xmlns:data="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable">
-             
 <syncfusion:SfListView x:Name="listView" ItemSize="60"
                        ItemsSource="{Binding customerDetails}" 
                        ItemTapped="ListView_ItemTapped" 

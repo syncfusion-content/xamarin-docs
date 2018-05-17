@@ -205,7 +205,6 @@ You should define the size for each inner SfListView or set the [AutoFitMode](ht
 
 {% tabs %}
 {% highlight xaml %}
-
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
   <ContentPage.BindingContext>
     <local:ListViewModel x:Name="viewModel"/>
@@ -231,7 +230,6 @@ You should define the size for each inner SfListView or set the [AutoFitMode](ht
         </syncfusion:SfListView>
     </Grid>
 </ContentPage>
-
 {% endhighlight %}
 {% highlight c# %}
 public partial class MainPage : ContentPage
@@ -313,7 +311,6 @@ The SfListView allows applying alternate row styling for items by finding the in
 
 {% tabs %}
 {% highlight xaml %}
-
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
     <ContentPage.Resources>
         <ResourceDictionary>
@@ -333,7 +330,6 @@ The SfListView allows applying alternate row styling for items by finding the in
         </syncfusion:SfListView>
     </ContentPage.Content>
 </ContentPage>
-
 {% endhighlight %}
 {% highlight c# %}
 public partial class MainPage : ContentPage
@@ -392,7 +388,6 @@ The SfListView allows customizing the item appearance like rounded corner by usi
 {% tabs %}
 {% highlight xaml %}
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
-
     <ContentPage.Content>
         <syncfusion:SfListView x:Name="listView" ItemSize="60" ItemsSource="{Binding customerDetails}">
             <syncfusion:SfListView.ItemTemplate>
@@ -456,7 +451,6 @@ N> Define the frame within any view inside `ItemTemplate` with around some margi
 {% tabs %}
 {% highlight xaml %}
 <ContentPage  xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
-
     <ContentPage.Content>
         <syncfusion:SfListView x:Name="listView" ItemSize="60" ItemsSource="{Binding customerDetails}">
             <syncfusion:SfListView.ItemTemplate>
@@ -875,7 +869,6 @@ Bind the bool values for the IsVisible properties to switch between indicator an
 {% highlight xaml %}
 
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">  
-
     <ContentPage.BindingContext>
         <local:BookInfoRepository x:Name="ViewModel" />
     </ContentPage.BindingContext>
@@ -897,9 +890,7 @@ Bind the bool values for the IsVisible properties to switch between indicator an
             </DataTemplate>
         </sync:SfListView.ItemTemplate>
     </sync:SfListView>
-
 </ContentPage>
-
 {% endhighlight %}
 {% endtabs %}
 

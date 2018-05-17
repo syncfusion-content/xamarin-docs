@@ -27,9 +27,7 @@ To enable drag and drop using 'OnHold', follow the code example:
 
 {% tabs %}
 {% highlight xaml %}
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage  xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
-
   <syncfusion:SfListView x:Name="listView" 
                    ItemsSource="{Binding ToDoList}"
                    DragStartMode="OnHold"
@@ -47,7 +45,6 @@ To enable drag and drop using both 'OnHold' and 'OnDragIndicator', follow the co
 {% tabs %}
 {% highlight xaml %}
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
-
   <syncfusion:SfListView x:Name="listView" 
                    ItemsSource="{Binding ToDoList}"
                    DragStartMode="OnHold, OnDragIndicator"
@@ -70,10 +67,7 @@ N> You must set the SfListView instance as reference to the [ListView](https://h
 
 {% tabs %}
 {% highlight xaml %}
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
-
-
   <syncfusion:SfListView x:Name="listView" 
                    ItemsSource="{Binding ToDoList}"
                    DragStartMode="OnDragIndicator"
@@ -87,7 +81,6 @@ N> You must set the SfListView instance as reference to the [ListView](https://h
             <ColumnDefinition Width="60" />
           </Grid.ColumnDefinitions>
           <Label x:Name="textLabel" Text="{Binding Name}" Grid.Column="1" FontSize="15" TextColor="#333333" />
-
           <syncfusion:DragIndicatorView Grid.Column="2" ListView="{x:Reference listView}" 
                     HorizontalOptions="Center" 
                     VerticalOptions="Center">
@@ -145,7 +138,6 @@ N> If `BackgroundColor` is set to `DragItemTemplate` or [DragIndicatorView](http
 {% tabs %}
 {% highlight xaml %}
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
-
   <syncfusion:SfListView x:Name="listView" 
                    ItemsSource="{Binding ToDoList}"
                    DragStartMode="OnHold"
@@ -269,7 +261,6 @@ To delete the dragged item from the underlying collection when dropping into del
 {% tabs %}
 {% highlight xaml %}
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
-             
 <Grid>
   <Grid.RowDefinitions>
     <RowDefinition Height="Auto" />

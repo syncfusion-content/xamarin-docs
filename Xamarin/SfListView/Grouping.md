@@ -23,7 +23,6 @@ The SfListView allows programmatic grouping by defining the [GroupDescriptor](ht
 {% highlight xaml %}
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
              xmlns:data="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable">
-             
   <syncfusion:SfListView x:Name="listView">
     <syncfusion:SfListView.DataSource>
       <data:DataSource>
@@ -160,7 +159,6 @@ For each group, display the sum of values of the property from model object in t
 {% highlight xaml %}
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
              xmlns:data="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable">
-             
   <syncfusion:SfListView x:Name="listView">
       <syncfusion:SfListView.GroupHeaderTemplate>
                     <DataTemplate x:Name="GroupHeaderTemplate"  x:Key="GroupHeaderTemplate">
@@ -935,10 +933,8 @@ Change the [SfListView.GroupHeaderTemplate](https://help.syncfusion.com/cr/cref_
     <local:SelectionBoolToBackgroundColorConverter x:Key="BoolToColorConverter"/> 
   </ResourceDictionary> 
  </ContentPage.Resources> 
-     
  <syncfusion:SfListView x:Name="listView" ItemSize="90" AllowGroupExpandCollapse="True" 
                      ItemSpacing="2" ItemsSource="{Binding Items}"> 
- 
    <syncfusion:SfListView.DataSource> 
     <data:DataSource> 
       <data:DataSource.GroupDescriptors> 
@@ -946,7 +942,6 @@ Change the [SfListView.GroupHeaderTemplate](https://help.syncfusion.com/cr/cref_
       </data:DataSource.GroupDescriptors> 
     </data:DataSource> 
    </syncfusion:SfListView.DataSource> 
- 
    <syncfusion:SfListView.GroupHeaderTemplate> 
     <DataTemplate> 
       <StackLayout BackgroundColor="{Binding Path=IsExpand,   

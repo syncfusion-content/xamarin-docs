@@ -1088,9 +1088,9 @@ public partial class MainPage : ContentPage
 
 You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ItemsourceScrolling-865979633).
 
-### SfListView in Prism Framework
+### SfListView with Prism Framework
 
-SfListView allows the user working it with Prism Tool for MVVM Framework. It can be done by following the below steps
+SfListView allows the user working it with Prism  for MVVM Framework. It can be done by following the below steps
     *Replace the Application to PrismApplication in App.xaml file
     *Inherited App.xaml.cs from PrismApplication instead of Application.
     *Create prism namespace library reference in xaml file of ContentPage.
@@ -1151,5 +1151,6 @@ Refer the below code snippet which illustrated how to insert the SfListView and 
 {% endhighlight %}
 {% endtabs %}
 
-Note: https://xamgirl.com/prism-in-xamarin-forms-step-by-step-part-1
+For more details refer the below link:
+Note: [https://xamgirl.com/prism-in-xamarin-forms-step-by-step-part-1](https://xamgirl.com/prism-in-xamarin-forms-step-by-step-part-1)
 You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewPrism116483729).

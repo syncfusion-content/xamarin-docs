@@ -696,7 +696,7 @@ Create a IsLoading boolean property in view model and bind it to the IsBusy prop
 
 {% tabs %}
 {% highlight xaml %}
-<ContentPage xmlns:listview="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
              xmlns:busyIndicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms">
     <Grid>
         <syncfusion:SfListView x:Name="listView" 

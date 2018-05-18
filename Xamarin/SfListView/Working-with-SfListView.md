@@ -1137,15 +1137,15 @@ Refer the below code snippet which illustrated how to insert the SfListView and 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              xmlns:local="clr-namespace:ListViewPrism;assembly=ListViewPrism"
-             xmlns:listView="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
              x:Class="ListViewPrism.Views.MainPage"
              Title="MainPage">
     <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-        <listView:SfListView x:Name="listView" ItemSize="70" ItemSpacing="0,0,5,0"
+        <syncfusion:SfListView x:Name="listView" ItemSize="70" ItemSpacing="0,0,5,0"
                              AutoFitMode="Height"
                              ItemsSource="{Binding ContactsInfo,}" IsStickyHeader="True" 
                              AllowSwiping="True" IsStickyGroupHeader="True" GroupHeaderSize="50">
-        </listView:SfListView>
+        </syncfusion:SfListView>
     </StackLayout>
 </ContentPage>    
 {% endhighlight %}

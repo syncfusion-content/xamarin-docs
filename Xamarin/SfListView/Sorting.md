@@ -202,7 +202,7 @@ Sorting the items along with grouping by using [KeySelector](https://help.syncfu
 
 {% tabs %}
 {% highlight xaml %}
-<ContentPage xmlns:listView="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
              xmlns:data="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable">
   <ContentPage.Content>
     <syncfusion:SfListView x:Name="listView" ItemsSource="{Binding Items}" ItemSize="50">
@@ -261,7 +261,7 @@ Sorting the items along with grouping by using `KeySelector` based on retuning t
 
 {% tabs %}
 {% highlight xaml %}
-<ContentPage xmlns:listView="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
              xmlns:data="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable">
   <ContentPage.Content>
     <syncfusion:SfListView x:Name="listView">

@@ -11,7 +11,7 @@ documentation: ug
 
 # Header
 
-The [`Header`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Header.html) support allows you to show text, image, or any UI content inside the gauge control. A circular gauge can be made self-descriptive about the data. It can be  measured with use of the header.
+The [`Header`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Header.html) support allows you to show text inside the gauge control. A circular gauge can be made self-descriptive about the data. It can be  measured with use of the header.
 
 ## Adding header in circular gauge
 

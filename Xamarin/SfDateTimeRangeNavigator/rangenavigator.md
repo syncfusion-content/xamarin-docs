@@ -168,10 +168,10 @@ Then, let us populate the chart, which is displayed inside the [`SfDateTimeRange
 
 N> By default, data is visualized using line series. You can change the chart type or add more series by accessing the SfChart instance using [`SfDateTimeRangeNavigator.Content`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator~Content.html) property. 
 
-{{% tabs %}}
+{% tabs %}
 
 {% highlight xaml %}
- <rangenavigator:SfDateTimeRangeNavigator  Minimum="2015,01,01" Maximum="2016,01,01"/>
+ <rangenavigator:SfDateTimeRangeNavigator ItemsSource="{Binding DateTimeData}" XBindingPath="Date" YBindingPath="Value"/>
 {% endhighlight %}
 
 {% highlight c# %}

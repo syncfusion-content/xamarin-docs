@@ -15,22 +15,23 @@ A group represents a collection of items belongs to a category. When grouping is
 
 The SfListView allows programmatic grouping by defining the [GroupDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor.html) object, and adding it into the [DataSource.GroupDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/datasource/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~GroupDescriptors.html) collection. The `GroupDescriptor` object holds the following properties:
 
-* [PropertyName](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~PropertyName.html: Describes the name of the property to be grouped.
+* [PropertyName](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~PropertyName.html): Describes the name of the property to be grouped.
 * [KeySelector](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~KeySelector.html): Describes selector to return the group key.
 * [Comparer](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~Comparer.html): Describes comparer to be applied in when sorting take place.
 
 {% tabs %}
 {% highlight xaml %}
-<ContentPage>
- <syncfusion:SfListView x:Name="listView">
-  <syncfusion:SfListView.DataSource>
-    <data:DataSource>
-      <data:DataSource.GroupDescriptors>
-        <data:GroupDescriptor PropertyName="ContactName" />
-      </data:DataSource.GroupDescriptors>
-    </data:DataSource>
-  </syncfusion:SfListView.DataSource>
- </syncfusion:SfListView>
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:data="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable">
+  <syncfusion:SfListView x:Name="listView">
+    <syncfusion:SfListView.DataSource>
+      <data:DataSource>
+        <data:DataSource.GroupDescriptors>
+          <data:SortDescriptor PropertyName="BookName"/>
+        </data:DataSource.GroupDescriptors>
+      </data:DataSource>
+    </syncfusion:SfListView.DataSource>
+  </syncfusion:SfListView>
 </ContentPage>
 {% endhighlight %}
 {% highlight c# %}
@@ -156,8 +157,9 @@ For each group, display the sum of values of the property from model object in t
 
 {% tabs %}
 {% highlight xaml %}
-<ContentPage>
-   <syncfusion:SfListView>
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:data="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable">
+  <syncfusion:SfListView x:Name="listView">
       <syncfusion:SfListView.GroupHeaderTemplate>
                     <DataTemplate x:Name="GroupHeaderTemplate"  x:Key="GroupHeaderTemplate">
                         <ViewCell>
@@ -173,7 +175,7 @@ For each group, display the sum of values of the property from model object in t
                         </ViewCell>
                     </DataTemplate>
       </syncfusion:SfListView.GroupHeaderTemplate>
-   </syncfusion:SfListView>
+  </syncfusion:SfListView>
 </ContentPage>
 {% endhighlight %}
 
@@ -227,7 +229,8 @@ The total number of items in each group will be displayed in the group header by
 
 {% tabs %}
 {% highlight xaml %}
-<ContentPage>
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:data="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable">
  <syncfusion:SfListView>
   <syncfusion:SfListView.GroupHeaderTemplate>
     <DataTemplate>
@@ -303,35 +306,35 @@ N> Multi-level grouping is only applicable for `LinearLayout` in the SfListView.
 {% tabs %}
 {% highlight xaml %}
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
-             xmlns:dataSource="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable">
- <ContentPage.Resources>
-  <ResourceDictionary>
-    <local:GroupHeaderConverter x:Key="TemplateConverter"/>
-  </ResourceDictionary>
- </ContentPage.Resources>
- <syncfusion:SfListView ItemsSource="{Binding EmployeeInfo}" ItemSize="60">
-  <syncfusion:SfListView.DataSource>
-    <dataSource:DataSource>
-       <dataSource:DataSource.GroupDescriptors>
-          <dataSource:GroupDescriptor PropertyName="Designation" />
-          <dataSource:GroupDescriptor PropertyName="Level" />
-       </dataSource:DataSource.GroupDescriptors>
-    </dataSource:DataSource>
-  </syncfusion:SfListView.DataSource>
-  <syncfusion:SfListView.GroupHeaderTemplate>
-     <DataTemplate>
-        <ViewCell>
-          <ViewCell.View>
-             <StackLayout BackgroundColor="{Binding Level,Converter={StaticResource TemplateConverter}}"
-                          Padding="{Binding Level,Converter={StaticResource TemplateConverter}}">
-                <Label Text="{Binding Key}" 
-                       VerticalOptions="Center" HorizontalOptions="Start"/>
-             </StackLayout>
-          </ViewCell.View>
-        </ViewCell>
-     </DataTemplate>
-  </syncfusion:SfListView.GroupHeaderTemplate>
- </syncfusion:SfListView>
+             xmlns:data="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable">
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <local:GroupHeaderConverter x:Key="TemplateConverter"/>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  <syncfusion:SfListView ItemsSource="{Binding EmployeeInfo}" ItemSize="60">
+    <syncfusion:SfListView.DataSource>
+      <data:DataSource>
+        <data:DataSource.GroupDescriptors>
+            <data:GroupDescriptor PropertyName="Designation" />
+            <data:GroupDescriptor PropertyName="Level" />
+        </data:DataSource.GroupDescriptors>
+      </data:DataSource>
+    </syncfusion:SfListView.DataSource>
+    <syncfusion:SfListView.GroupHeaderTemplate>
+      <DataTemplate>
+          <ViewCell>
+            <ViewCell.View>
+              <StackLayout BackgroundColor="{Binding Level,Converter={StaticResource TemplateConverter}}"
+                            Padding="{Binding Level,Converter={StaticResource TemplateConverter}}">
+                  <Label Text="{Binding Key}" 
+                        VerticalOptions="Center" HorizontalOptions="Start"/>
+              </StackLayout>
+            </ViewCell.View>
+          </ViewCell>
+      </DataTemplate>
+    </syncfusion:SfListView.GroupHeaderTemplate>
+  </syncfusion:SfListView>
 </ContentPage>
 {% endhighlight %}
 
@@ -598,7 +601,7 @@ To customize the view for group header items and binding the [Key](https://help.
 
 {% tabs %}
 {% highlight xaml %}
-<ContentPage>
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
  <syncfusion:SfListView x:Name="listView">
   <syncfusion:SfListView.GroupHeaderTemplate>
     <DataTemplate>
@@ -646,7 +649,7 @@ Expand and collapse the group when tapping icon in the group header item by cust
 
 {% tabs %}
 {% highlight xaml %}
-<ContentPage>
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
     <ContentPage.Resources>
         <ResourceDictionary>
             <local:BoolToImageConverter x:Key="BoolToImageConverter"/>
@@ -766,7 +769,7 @@ The SfListView supports selecting each group and items in the group like a check
 
 {% tabs %}
 {% highlight xaml %}
-<ContentPage>
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
   <syncfusion:SfListView>
     <syncfusion:SfListView.GroupHeaderTemplate>
         <DataTemplate>
@@ -923,24 +926,22 @@ Change the [SfListView.GroupHeaderTemplate](https://help.syncfusion.com/cr/cref_
 
 {% tabs %}
 {% highlight xaml %}
-<ContentPage>
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:data="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable">
  <ContentPage.Resources> 
   <ResourceDictionary> 
     <local:SelectionBoolToBackgroundColorConverter x:Key="BoolToColorConverter"/> 
   </ResourceDictionary> 
  </ContentPage.Resources> 
-     
  <syncfusion:SfListView x:Name="listView" ItemSize="90" AllowGroupExpandCollapse="True" 
                      ItemSpacing="2" ItemsSource="{Binding Items}"> 
- 
    <syncfusion:SfListView.DataSource> 
-    <dataSource:DataSource> 
-      <dataSource:DataSource.GroupDescriptors> 
-         <dataSource:GroupDescriptor PropertyName="DisplayString"/> 
-      </dataSource:DataSource.GroupDescriptors> 
-    </dataSource:DataSource> 
+    <data:DataSource> 
+      <data:DataSource.GroupDescriptors> 
+         <data:GroupDescriptor PropertyName="DisplayString"/> 
+      </data:DataSource.GroupDescriptors> 
+    </data:DataSource> 
    </syncfusion:SfListView.DataSource> 
- 
    <syncfusion:SfListView.GroupHeaderTemplate> 
     <DataTemplate> 
       <StackLayout BackgroundColor="{Binding Path=IsExpand,   

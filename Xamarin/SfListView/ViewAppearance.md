@@ -119,7 +119,7 @@ The SfListView allows you to layout the items like `TabView` in the horizontal d
 
 {% tabs %}
 {% highlight xaml %}
-<ContentPage>
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
     <ContentPage.Content>
         <Grid x:Name="GridView">
             <Label Text="Tap image to expand"/>
@@ -128,8 +128,8 @@ The SfListView allows you to layout the items like `TabView` in the horizontal d
                 <Label Text="{Binding ContactName}" />
                 <Label Text="{Binding ContactNumber}" />
             </Grid>
-            <listView:SfListView x:Name="listView" ItemTapped="list_ItemTapped" ItemSize="70" ItemsSource="{Binding ContactsInfo}">
-                <listView:SfListView.ItemTemplate>
+            <syncfusion:SfListView x:Name="listView" ItemTapped="list_ItemTapped" ItemSize="70" ItemsSource="{Binding ContactsInfo}">
+                <syncfusion:SfListView.ItemTemplate>
                     <DataTemplate x:Name="ItemTemplate"  x:Key="ItemTemplate" >
                         <ViewCell>
                             <ViewCell.View>
@@ -137,8 +137,8 @@ The SfListView allows you to layout the items like `TabView` in the horizontal d
                             </ViewCell.View>
                         </ViewCell>
                     </DataTemplate>
-                </listView:SfListView.ItemTemplate>
-            </listView:SfListView>
+                </syncfusion:SfListView.ItemTemplate>
+            </syncfusion:SfListView>
         </Grid>
     </ContentPage.Content>
 </ContentPage>
@@ -205,8 +205,7 @@ You should define the size for each inner SfListView or set the [AutoFitMode](ht
 
 {% tabs %}
 {% highlight xaml %}
-
-<ContentPage >
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
   <ContentPage.BindingContext>
     <local:ListViewModel x:Name="viewModel"/>
   </ContentPage.BindingContext>
@@ -231,7 +230,6 @@ You should define the size for each inner SfListView or set the [AutoFitMode](ht
         </syncfusion:SfListView>
     </Grid>
 </ContentPage>
-
 {% endhighlight %}
 {% highlight c# %}
 public partial class MainPage : ContentPage
@@ -313,27 +311,25 @@ The SfListView allows applying alternate row styling for items by finding the in
 
 {% tabs %}
 {% highlight xaml %}
-
-<ContentPage >
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
     <ContentPage.Resources>
         <ResourceDictionary>
             <local:IndexToColorConverter x:Key="IndexToColorConverter"/>
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
-        <listView:SfListView x:Name="listView" ItemsSource="{Binding Items}" ItemSize="50">
-            <listView:SfListView.ItemTemplate>
+        <syncfusion:SfListView x:Name="listView" ItemsSource="{Binding Items}" ItemSize="50">
+            <syncfusion:SfListView.ItemTemplate>
                 <DataTemplate>
                     <Grid BackgroundColor="{Binding .,Converter={StaticResource IndexToColorConverter},ConverterParameter={x:Reference Name=listView}}">
                         <Label Text="{Binding ContactName}" />
                         <Label Text="{Binding ContactNumber}" />
                     </Grid>
                 </DataTemplate>
-            </listView:SfListView.ItemTemplate>
-        </listView:SfListView>
+            </syncfusion:SfListView.ItemTemplate>
+        </syncfusion:SfListView>
     </ContentPage.Content>
 </ContentPage>
-
 {% endhighlight %}
 {% highlight c# %}
 public partial class MainPage : ContentPage
@@ -391,19 +387,23 @@ The SfListView allows customizing the item appearance like rounded corner by usi
 
 {% tabs %}
 {% highlight xaml %}
-<listView:SfListView x:Name="listView" ItemSize="60" ItemsSource="{Binding customerDetails}">
-    <listView:SfListView.ItemTemplate>
-        <DataTemplate>
-            <Frame x:Name="frame" CornerRadius="10" >
-                <StackLayout>
-                        <Label Text="{Binding ContactName}" />
-                        <Label Text="{Binding ContactNumber}" />
-                        <Label Text="{Binding ContactType}" />
-                </StackLayout>
-            </Frame>
-        </DataTemplate>
-    </listView:SfListView.ItemTemplate>
-</listView:SfListView>
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+    <ContentPage.Content>
+        <syncfusion:SfListView x:Name="listView" ItemSize="60" ItemsSource="{Binding customerDetails}">
+            <syncfusion:SfListView.ItemTemplate>
+                <DataTemplate>
+                    <Frame x:Name="frame" CornerRadius="10" >
+                        <StackLayout>
+                                <Label Text="{Binding ContactName}" />
+                                <Label Text="{Binding ContactNumber}" />
+                                <Label Text="{Binding ContactType}" />
+                        </StackLayout>
+                    </Frame>
+                </DataTemplate>
+            </syncfusion:SfListView.ItemTemplate>
+        </syncfusion:SfListView>
+    </ContentPage.Content>
+</ContentPage>
 {% endhighlight %}
 {% highlight c# %}
 public partial class MainPage : ContentPage
@@ -450,21 +450,25 @@ N> Define the frame within any view inside `ItemTemplate` with around some margi
 
 {% tabs %}
 {% highlight xaml %}
-<listView:SfListView x:Name="listView" ItemSize="60" ItemsSource="{Binding customerDetails}">
-    <listView:SfListView.ItemTemplate>
-        <DataTemplate>
-            <Grid Padding="2" Margin="2" >
-                <Frame x:Name="frame" HasShadow="True" Padding="2" Margin="2">
-                    <StackLayout>
-                        <Label Text="{Binding ContactName}" /> 
-                        <Label Text="{Binding ContactNumber}" />
-                        <Label Text="{Binding ContactType}" />
-                    </StackLayout>
-                </Frame>
-            </Grid>
-        </DataTemplate>
-    </listView:SfListView.ItemTemplate>
-</listView:SfListView>
+<ContentPage  xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+    <ContentPage.Content>
+        <syncfusion:SfListView x:Name="listView" ItemSize="60" ItemsSource="{Binding customerDetails}">
+            <syncfusion:SfListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Padding="2" Margin="2" >
+                        <Frame x:Name="frame" HasShadow="True" Padding="2" Margin="2">
+                            <StackLayout>
+                                <Label Text="{Binding ContactName}" /> 
+                                <Label Text="{Binding ContactNumber}" />
+                                <Label Text="{Binding ContactType}" />
+                            </StackLayout>
+                        </Frame>
+                    </Grid>
+                </DataTemplate>
+            </syncfusion:SfListView.ItemTemplate>
+        </syncfusion:SfListView>
+    </ContentPage.Content>
+</ContentPage>
 {% endhighlight %}
 {% highlight c# %}
 public partial class MainPage : ContentPage
@@ -692,13 +696,13 @@ Create a IsLoading boolean property in view model and bind it to the IsBusy prop
 
 {% tabs %}
 {% highlight xaml %}
-<ContentPage xmlns:listview="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
              xmlns:busyIndicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms">
     <Grid>
-        <listview:SfListView x:Name="listView" 
+        <syncfusion:SfListView x:Name="listView" 
                              ItemsSource="{Binding ContactInfo}" 
                              ItemSize="110">
-        </listview:SfListView>
+        </syncfusion:SfListView>
         <busyIndicator:SfBusyIndicator x:Name="busyIndicator" 
                                        AnimationType="SingleCircle" 
                                        IsBusy="{Binding IsLoading, Mode=TwoWay}" 
@@ -864,8 +868,7 @@ Bind the bool values for the IsVisible properties to switch between indicator an
 {% tabs %}
 {% highlight xaml %}
 
-<ContentPage>  
-
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">  
     <ContentPage.BindingContext>
         <local:BookInfoRepository x:Name="ViewModel" />
     </ContentPage.BindingContext>
@@ -887,9 +890,7 @@ Bind the bool values for the IsVisible properties to switch between indicator an
             </DataTemplate>
         </sync:SfListView.ItemTemplate>
     </sync:SfListView>
-
 </ContentPage>
-
 {% endhighlight %}
 {% endtabs %}
 

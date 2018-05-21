@@ -21,18 +21,18 @@ The `FilterContacts` method filters the data contains the filter text value. Ass
 
 {% tabs %}
 {% highlight xaml %}
- <ContentPage>
-    <Grid>
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+ <Grid>
 	 <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
-     </Grid.RowDefinitions>
+   </Grid.RowDefinitions>
       <SearchBar x:Name="filterText" HeightRequest="40"
            Placeholder="Search here to filter"
            TextChanged="OnFilterTextChanged" Grid.Row="0"/>
-      <listView:SfListView x:Name="listView" Grid.Row="1" ItemSize="60" ItemsSource="{Binding customerDetails}"/>
-    </Grid>
-  </ContentPage>
+      <syncfusion:SfListView x:Name="listView" Grid.Row="1" ItemSize="60" ItemsSource="{Binding customerDetails}"/>
+  </Grid>
+</ContentPage>
 {% endhighlight %}
 {% highlight c# %}
 var grid = new Grid();

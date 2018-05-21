@@ -94,11 +94,6 @@ First, let us initialize the control with major and minor date time scales by sp
 
 Following code example illustrates this,
 
-{% tabs %}
-{% highlight xaml %}
- <rangenavigator:SfDateTimeRangeNavigator  Minimum="2015,01,01" Maximum="2016,01,01"/>
-{% endhighlight %}
-
 {% highlight c# %}
 [C#]
 
@@ -109,7 +104,6 @@ rangeNavigator.Minimum = new DateTime(2015, 01, 01);
 rangeNavigator.Maximum = new DateTime(2016, 01, 01);
 
 {% endhighlight %}
-{% endtabs %}
 
 ![](gettingstarted_images/gettingstarted_img1.jpeg)
 
@@ -166,11 +160,6 @@ Then, let us populate the chart, which is displayed inside the [`SfDateTimeRange
 
 N> By default, data is visualized using line series. You can change the chart type or add more series by accessing the SfChart instance using [`SfDateTimeRangeNavigator.Content`](https://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator~Content.html) property. 
 
-{% tabs %}
-{% highlight xaml %}
-  <rangenavigator:SfDateTimeRangeNavigator ItemsSource="{Binding DateTimeData}" XBindingPath="Date" YBindingPath="Value">
-{% endhighlight %}
-
 {% highlight c# %}
 [C#]
 
@@ -182,7 +171,6 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 };  
 
 {% endhighlight %}
-{% endtabs %}
 
 ![](gettingstarted_images/gettingstarted_img2.jpeg)
 

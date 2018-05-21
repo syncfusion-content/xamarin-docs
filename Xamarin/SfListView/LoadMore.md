@@ -22,13 +22,15 @@ To automatically load more items using the [SfListView.LoadMoreCommand](https://
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfListView x:Name="listView"
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+  <syncfusion:SfListView x:Name="listView"
                  ItemSize="120"
                  LoadMoreOption="Auto"
                  LoadMoreCommand="{Binding LoadMoreItemsCommand}"
                  LoadMoreCommandParameter="{Binding Source={x:Reference listView}}"
                  IsBusy="{Binding IsBusy}"
                  ItemsSource="{Binding Products}"/>
+</ContentPage>
 {% endhighlight %}
 {% highlight c# %}
 listView.LoadMoreOption = LoadMoreOption.Auto;
@@ -91,13 +93,15 @@ To load more items manually using the [SfListView.LoadMoreCommand](https://help.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfListView x:Name="listView"
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+  <syncfusion:SfListView x:Name="listView"
                  ItemSize="120"
                  LoadMoreOption="Manual"
                  LoadMoreCommand="{Binding LoadMoreItemsCommand}"
                  LoadMoreCommandParameter="{Binding Source={x:Reference listView}}"
                  IsBusy="{Binding IsBusy}"
                  ItemsSource="{Binding Products}"/>
+</ContentPage>
 {% endhighlight %}
 {% highlight c# %}
 listView.LoadMoreOption = LoadMoreOption.Manual;
@@ -387,19 +391,21 @@ The SfListView allows loading more items automatically when reaching top of the 
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfListView x:Name="ListView" IsBusy="True" 
-                       ItemsSource="{Binding Messages}" 
-                       AutoFitMode="Height">
-  <syncfusion:SfListView.HeaderTemplate>
-    <DataTemplate>
-      <ViewCell>
-        <Grid>
-          <syncfusion:LoadMoreIndicator Color="Red" IsRunning="True" IsVisible="{Binding IndicatorIsVisible}"/>
-        </Grid>
-      </ViewCell>
-    </DataTemplate>
-  </syncfusion:SfListView.HeaderTemplate>
-</syncfusion:SfListView>
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+   <syncfusion:SfListView x:Name="ListView" IsBusy="True" 
+                        ItemsSource="{Binding Messages}" 
+                        AutoFitMode="Height">
+        <syncfusion:SfListView.HeaderTemplate>
+            <DataTemplate>
+            <ViewCell>
+                <Grid>
+                <syncfusion:LoadMoreIndicator Color="Red" IsRunning="True" IsVisible="{Binding IndicatorIsVisible}"/>
+                </Grid>
+            </ViewCell>
+            </DataTemplate>
+        </syncfusion:SfListView.HeaderTemplate>
+    </syncfusion:SfListView>
+</ContentPage
 {% endhighlight %}
 {% highlight c# %}
 public partial class MainPage : ContentPage
@@ -510,6 +516,7 @@ The SfListView allows loading more items when tapping the button loaded in the [
 
 {% tabs %}
 {% highlight xaml %}
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
 <syncfusion:SfListView x:Name="ListView"  IsBusy="True"
                        ItemTemplate="{StaticResource MessageTemplateSelector}" 
                        ItemsSource="{Binding Messages}"
@@ -527,6 +534,7 @@ The SfListView allows loading more items when tapping the button loaded in the [
     </DataTemplate>
   </syncfusion:SfListView.HeaderTemplate>
 </syncfusion:SfListView>
+</ContentPage>
 {% endhighlight %}
 {% highlight c# %}
 public partial class MainPage : ContentPage

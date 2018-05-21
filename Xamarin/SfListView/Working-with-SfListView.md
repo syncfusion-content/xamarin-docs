@@ -501,8 +501,7 @@ Defining the SfListView
 
 {% tabs %}
 {% highlight xaml %}
-
-<ContentPage>
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
   <ContentPage.BindingContext>
     <local:ContactsViewModel x:Name="viewModel"/>
   </ContentPage.BindingContext>
@@ -845,8 +844,7 @@ public partial class ToDoListPage : ContentPage
 {% endhighlight %}
 
 {% highlight xaml %}
-<ContentPage>
-
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
     <ContentPage.Content>
         <StackLayout>
             <syncfusion:SfListView x:Name="listView" SelectedItem="{Binding SelectedToDoItem, Mode=TwoWay}" ItemSize="50">
@@ -962,8 +960,7 @@ Refer to the following code which illustrates, how to bind the data from the SQL
 
 {% tabs %}
 {% highlight xaml %}
-
-<ContentPage>
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
     <ContentPage.BindingContext>
         <local:ViewModel/>
     </ContentPage.BindingContext>
@@ -1090,3 +1087,69 @@ public partial class MainPage : ContentPage
 {% endtabs %}
 
 You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ItemsourceScrolling-865979633).
+
+### SfListView with prism Framework
+
+The SfListView allows the user to work with prism for MVVM Framework. Steps to be followed:
+
+1. Replace your application to prism application in App.xaml file.
+2. Inherit App.xaml.cs from prism application instead of your application.
+3. Create a prism namespace library reference in xaml file of the ContentPage.
+4. Connect view and view model instead of binding context by registering them.
+
+{% tabs %}
+{% highlight c# %}
+public partial class App : PrismApplication
+{
+    public App(IPlatformInitializer initializer = null) : base(initializer) { }
+
+    protected override void OnInitialized()
+    {
+        InitializeComponent();
+
+    }
+
+    protected override void RegisterTypes()
+    {
+        Container.RegisterTypeForNavigation<MainPage, MainPageViewModel>();
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight xaml %}
+<?xml version="1.0" encoding="utf-8" ?>
+<prism:PrismApplication xmlns="http://xamarin.com/schemas/2014/forms"
+                        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                        xmlns:prism="clr-namespace:Prism.Unity;assembly=Prism.Unity.Forms"
+                        x:Class="ListViewPrism.App">
+</prism:PrismApplication>
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight xaml %}
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:local="clr-namespace:ListViewPrism;assembly=ListViewPrism"
+             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             x:Class="ListViewPrism.Views.MainPage"
+             Title="MainPage">
+    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <syncfusion:SfListView x:Name="listView" ItemSize="70" ItemSpacing="0,0,5,0"
+                             AutoFitMode="Height"
+                             ItemsSource="{Binding ContactsInfo,}" IsStickyHeader="True" 
+                             AllowSwiping="True" IsStickyGroupHeader="True" GroupHeaderSize="50">
+        </syncfusion:SfListView>
+    </StackLayout>
+</ContentPage>    
+{% endhighlight %}
+{% endtabs %}
+
+For more details, refer to [https://xamgirl.com/prism-in-xamarin-forms-step-by-step-part-1](https://xamgirl.com/prism-in-xamarin-forms-step-by-step-part-1).
+
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewPrism116483729).

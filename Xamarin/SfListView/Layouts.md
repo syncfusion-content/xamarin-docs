@@ -17,13 +17,15 @@ Linear layout arrange items in a single column. Initialize the [LinearLayout](ht
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfListView x:Name="listView" 
-                   ItemsSource="{Binding GalleryInfo}"
-                   ItemSize="100">
-    <syncfusion:SfListView.LayoutManager>
-      <syncfusion:LinearLayout />
-    </syncfusion:SfListView.LayoutManager>
-</syncfusion:SfListView>
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+  <syncfusion:SfListView x:Name="listView" 
+                    ItemsSource="{Binding GalleryInfo}"
+                    ItemSize="100">
+      <syncfusion:SfListView.LayoutManager>
+        <syncfusion:LinearLayout />
+      </syncfusion:SfListView.LayoutManager>
+  </syncfusion:SfListView>
+</ContentPage>
 {% endhighlight%}
 {% highlight c# %}
 listView.LayoutManager = new LinearLayout();
@@ -42,13 +44,15 @@ In horizontal orientation, `SpanCount` defines the number of rows.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfListView x:Name="listView" 
-                   ItemsSource="{Binding GalleryInfo}"
-                   ItemSize="100">
-    <syncfusion:SfListView.LayoutManager>
-      <syncfusion:GridLayout SpanCount="2" />
-    </syncfusion:SfListView.LayoutManager>
-</syncfusion:SfListView>
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+  <syncfusion:SfListView x:Name="listView" 
+                    ItemsSource="{Binding GalleryInfo}"
+                    ItemSize="100">
+      <syncfusion:SfListView.LayoutManager>
+        <syncfusion:GridLayout SpanCount="2" />
+      </syncfusion:SfListView.LayoutManager>
+  </syncfusion:SfListView>
+</ContentPage>
 {% endhighlight%}
 {% highlight c# %}
 listView.LayoutManager = new GridLayout() { SpanCount = 2 };
@@ -65,23 +69,26 @@ The [SpanCount](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syn
 
 {% tabs %}
 {% highlight xaml %}
- <syncfusion:SfListView.LayoutManager>
-   <syncfusion:GridLayout>
-      <syncfusion:GridLayout.SpanCount>
-       <OnPlatform x:TypeArguments="x:Int32">
-         <OnPlatform.WinPhone>
-           <OnIdiom x:TypeArguments="x:Int32" Phone="2" Tablet="4" Desktop="4"/>
-         </OnPlatform.WinPhone>
-         <OnPlatform.Android>
-           <OnIdiom x:TypeArguments="x:Int32" Phone="2" Tablet="4" />
-         </OnPlatform.Android>
-         <OnPlatform.iOS>
-           <OnIdiom x:TypeArguments="x:Int32" Phone="2" Tablet="4" />
-         </OnPlatform.iOS>
-       </OnPlatform>
-     </syncfusion:GridLayout.SpanCount>
-   </syncfusion:GridLayout>
- </syncfusion:SfListView.LayoutManager>
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+  <syncfusion:SfListView.LayoutManager>
+    <syncfusion:GridLayout>
+        <syncfusion:GridLayout.SpanCount>
+        <OnPlatform x:TypeArguments="x:Int32">
+          <OnPlatform.WinPhone>
+            <OnIdiom x:TypeArguments="x:Int32" Phone="2" Tablet="4" Desktop="4"/>
+          </OnPlatform.WinPhone>
+          <OnPlatform.Android>
+            <OnIdiom x:TypeArguments="x:Int32" Phone="2" Tablet="4" />
+          </OnPlatform.Android>
+          <OnPlatform.iOS>
+            <OnIdiom x:TypeArguments="x:Int32" Phone="2" Tablet="4" />
+          </OnPlatform.iOS>
+        </OnPlatform>
+      </syncfusion:GridLayout.SpanCount>
+    </syncfusion:GridLayout>
+  </syncfusion:SfListView.LayoutManager>
+  </syncfusion:SfListView>
+</ContentPage>
 {% endhighlight%}
 {% highlight c# %}
 GridLayout gridLayout = new GridLayout();

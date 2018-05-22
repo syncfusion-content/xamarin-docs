@@ -252,7 +252,7 @@ this.listView.DragDropController.UpdateSource = true;
 {% endhighlight %}
 {% endtabs %}
 
-N> `UpdateSource` property cannot be used to reorder when items are already grouped.
+N> Unable to update the items order in the underlying collection if grouping is enabled. Because, order of the `DisplayItems` of DataSource and underlying collection will be different.
 
 ## Delete item when dropping in particular view
 

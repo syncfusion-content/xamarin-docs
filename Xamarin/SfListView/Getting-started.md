@@ -227,7 +227,6 @@ Create a new blank (Xamarin.Forms.Portable) application in Xamarin Studio or Vis
              xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
              xmlns:local="clr-namespace:GettingStarted;assembly=GettingStarted"
              x:Class="GettingStarted.MainPage">
-             
   <syncfusion:SfListView x:Name="listView" />
 </ContentPage>
 {% endhighlight %}
@@ -349,12 +348,10 @@ The following code example binds the collection created in previous step to the 
              xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
              xmlns:local="clr-namespace:GettingStarted;assembly=GettingStarted"
              x:Class="GettingStarted.MainPage">
-             
   <ContentPage.BindingContext>
     <local:BookInfoRepository />
   </ContentPage.BindingContext>
-
-  <syncfusion:SfListView x:Name="listView" 
+   <syncfusion:SfListView x:Name="listView" 
                    ItemsSource="{Binding BookInfo}" />
 </ContentPage>
 {% endhighlight %}
@@ -370,22 +367,24 @@ listView.ItemsSource = viewModel.BookInfo;
  
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfListView x:Name="listView" 
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+  <syncfusion:SfListView x:Name="listView" 
                    ItemsSource="{Binding BookInfo}"
                    ItemSize="100">
-  <syncfusion:SfListView.ItemTemplate>
-    <DataTemplate>
-      <Grid Padding="10">
-        <Grid.RowDefinitions>
-          <RowDefinition Height="0.4*" />
-          <RowDefinition Height="0.6*" />
-        </Grid.RowDefinitions>
-        <Label Text="{Binding BookName}" FontAttributes="Bold" TextColor="Teal" FontSize="21" />
-        <Label Grid.Row="1" Text="{Binding BookDescription}" TextColor="Teal" FontSize="15"/>
-      </Grid>
-    </DataTemplate>
-  </syncfusion:SfListView.ItemTemplate>
-</syncfusion:SfListView>
+    <syncfusion:SfListView.ItemTemplate>
+        <DataTemplate>
+        <Grid Padding="10">
+            <Grid.RowDefinitions>
+            <RowDefinition Height="0.4*" />
+            <RowDefinition Height="0.6*" />
+            </Grid.RowDefinitions>
+            <Label Text="{Binding BookName}" FontAttributes="Bold" TextColor="Teal" FontSize="21" />
+            <Label Grid.Row="1" Text="{Binding BookDescription}" TextColor="Teal" FontSize="15"/>
+        </Grid>
+        </DataTemplate>
+    </syncfusion:SfListView.ItemTemplate>
+  </syncfusion:SfListView>
+</ContentPage>
 {% endhighlight %}
 {% highlight c# %}
 using Syncfusion.ListView.XForms;
@@ -435,13 +434,15 @@ The [SfListView.LayoutManager](https://help.syncfusion.com/cr/cref_files/xamarin
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfListView x:Name="listView" 
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+ <syncfusion:SfListView x:Name="listView" 
                    ItemsSource="{Binding BookInfo}"
                    ItemSize="100">
     <syncfusion:SfListView.LayoutManager>
       <syncfusion:GridLayout SpanCount="3" />
     </syncfusion:SfListView.LayoutManager>
-</syncfusion:SfListView>
+  </syncfusion:SfListView>
+</ContentPage>
 {% endhighlight%}
 {% highlight c# %}
 listView.LayoutManager = new GridLayout() { SpanCount = 3 };
@@ -466,9 +467,9 @@ SortDescriptor object holds the following three properties:
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
-             xmlns:data="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable"
+             xmlns:data="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable"             
              xmlns:local="clr-namespace:GettingStarted;assembly=GettingStarted"
-             x:Class="GettingStarted.MainPage">
+             x:Class="GettingStarted.MainPage">             
              
   <syncfusion:SfListView x:Name="listView">
     <syncfusion:SfListView.DataSource>
@@ -499,7 +500,7 @@ To filter the items based on the Title property of the underlying data by using 
  
 {% tabs %}
 {% highlight xaml %}
-<ContentPage>
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
     <Grid>
 	 <Grid.RowDefinitions>
            <RowDefinition Height="Auto"/>
@@ -564,15 +565,18 @@ It also supports to stick the group header by enabling the [SfListView.IsStickyG
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfListView x:Name="listView">
-  <syncfusion:SfListView.DataSource>
-    <data:DataSource>
-      <data:DataSource.GroupDescriptors>
-        <data:GroupDescriptor PropertyName="BookName"/>
-      </data:DataSource.GroupDescriptors>
-    </data:DataSource>
-  </syncfusion:SfListView.DataSource>
-</syncfusion:SfListView>
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:data="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable"">
+  <syncfusion:SfListView x:Name="listView">
+    <syncfusion:SfListView.DataSource>
+      <data:DataSource>
+        <data:DataSource.GroupDescriptors>
+          <data:SortDescriptor PropertyName="BookName"/>
+        </data:DataSource.GroupDescriptors>
+      </data:DataSource>
+    </syncfusion:SfListView.DataSource>
+  </syncfusion:SfListView>
+</ContentPage>
 {% endhighlight %}
 {% highlight c# %}
  listView.DataSource.GroupDescriptors.Add(new GroupDescriptor()
@@ -592,10 +596,12 @@ The selection operations can be handled with the help of [SelectionChanging](htt
  
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfListView x:Name="listView" 
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+  <syncfusion:SfListView x:Name="listView" 
                  SelectionMode="Single"
                  SelectionGesture="Tap"
-                 SelectionBackgroundColor="#E4E4E4"/>
+                 SelectionBackgroundColor="#E4E4E4"/>}
+</ContentPage>
 {% endhighlight %}
 {% highlight c# %}
 listView.SelectionMode = SelectionMode.Single;
@@ -612,6 +618,7 @@ The header and footer can be handled either by scrollable, or sticky to the view
  
 {% tabs %}
 {% highlight xaml %}
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
 <syncfusion:SfListView x:Name="listView"
                  ItemsSource="{Binding InboxInfo}"
                  IsStickyHeader="true"
@@ -635,7 +642,8 @@ The header and footer can be handled either by scrollable, or sticky to the view
       </Grid>
     </DataTemplate>
   </syncfusion:SfListView.FooterTemplate>
-</syncfusion:SfListView>
+  </syncfusion:SfListView>
+</ContentPage>
 {% endhighlight %}
 {% highlight c# %}
 ViewModel viewModel = new ViewModel ();

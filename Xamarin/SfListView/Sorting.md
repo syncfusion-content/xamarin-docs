@@ -23,15 +23,18 @@ Sorting the data by creating the [SortDescriptor](https://help.syncfusion.com/cr
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfListView x:Name="listView">
-  <syncfusion:SfListView.DataSource>
-    <data:DataSource>
-      <data:DataSource.SortDescriptors>
-        <data:SortDescriptor PropertyName="ContactName" Direction="Ascending"/>
-      </data:DataSource.SortDescriptors>
-    </dataSource:DataSource>
-  </syncfusion:SfListView.DataSource>
-</syncfusion:SfListView>
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:data="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable">
+  <syncfusion:SfListView x:Name="listView">
+    <syncfusion:SfListView.DataSource>
+      <data:DataSource>
+        <data:DataSource.SortDescriptors>
+          <data:SortDescriptor PropertyName="ContactName" Direction="Ascending"/>
+        </data:DataSource.SortDescriptors>
+      </data:DataSource>
+    </syncfusion:SfListView.DataSource>
+  </syncfusion:SfListView>
+</ContentPage>
 {% endhighlight %}
 {% highlight c# %}
 listView.DataSource.SortDescriptors.Add(new SortDescriptor()
@@ -53,7 +56,8 @@ Sort the items based on the custom logic and it can be applied to either [SfList
 
 {% tabs %}
 {% highlight xaml %}
-<ContentPage>
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:data="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable">
   <ContentPage.Resources>
     <ResourceDictionary>
       <local:CustomComparer x:Key="Comparer" />
@@ -129,22 +133,25 @@ To apply the sorting when tapping the header, handle the [ItemTapped](https://he
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfListView x:Name="listView" ItemSize="60"
-                       ItemsSource="{Binding customerDetails}" 
-                       ItemTapped="ListView_ItemTapped" 
-                       IsStickyHeader="True">
-  <syncfusion:SfListView.HeaderTemplate>
-    <DataTemplate>
-      <ViewCell>
-        <ViewCell.View>
-          <StackLayout BackgroundColor="Teal">
-            <Label TextColor="White" FontSize="20" FontAttributes="Bold" Text="CustomerDetails" />
-          </StackLayout>
-        </ViewCell.View>
-      </ViewCell>
-    </DataTemplate>
-  </syncfusion:SfListView.HeaderTemplate>
-</syncfusion:SfListView>
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:data="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable">
+  <syncfusion:SfListView x:Name="listView" ItemSize="60"
+                        ItemsSource="{Binding customerDetails}" 
+                        ItemTapped="ListView_ItemTapped" 
+                        IsStickyHeader="True">
+    <syncfusion:SfListView.HeaderTemplate>
+      <DataTemplate>
+        <ViewCell>
+          <ViewCell.View>
+            <StackLayout BackgroundColor="Teal">
+              <Label TextColor="White" FontSize="20" FontAttributes="Bold" Text="CustomerDetails" />
+            </StackLayout>
+          </ViewCell.View>
+        </ViewCell>
+      </DataTemplate>
+    </syncfusion:SfListView.HeaderTemplate>
+  </syncfusion:SfListView>
+</ContentPage>
 {% endhighlight %}
 {% highlight c# %}
 listView = new SfListView();
@@ -195,8 +202,8 @@ Sorting the items along with grouping by using [KeySelector](https://help.syncfu
 
 {% tabs %}
 {% highlight xaml %}
-<ContentPage xmlns:listView="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
-             xmlns:dataSource="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable">
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:data="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable">
   <ContentPage.Content>
     <syncfusion:SfListView x:Name="listView" ItemsSource="{Binding Items}" ItemSize="50">
       <syncfusion:SfListView.GroupHeaderTemplate>
@@ -254,18 +261,23 @@ Sorting the items along with grouping by using `KeySelector` based on retuning t
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfListView x:Name="listView">
-  <syncfusion:SfListView.DataSource>
-    <data:DataSource>
-	  <data:DataSource.GroupDescriptors>
-        <data:GroupDescriptor PropertyName="ContactName" />
-      </data:DataSource.GroupDescriptors>
-      <data:DataSource.SortDescriptors>
-        <data:SortDescriptor PropertyName="ContactName" Direction="Ascending"/>
-      </data:DataSource.SortDescriptors>
-    </dataSource:DataSource>
-  </syncfusion:SfListView.DataSource>
-</syncfusion:SfListView>
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:data="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable">
+  <ContentPage.Content>
+    <syncfusion:SfListView x:Name="listView">
+      <syncfusion:SfListView.DataSource>
+        <data:DataSource>
+        <data:DataSource.GroupDescriptors>
+            <data:GroupDescriptor PropertyName="ContactName" />
+          </data:DataSource.GroupDescriptors>
+          <data:DataSource.SortDescriptors>
+            <data:SortDescriptor PropertyName="ContactName" Direction="Ascending"/>
+          </data:DataSource.SortDescriptors>
+        </data:DataSource>
+      </syncfusion:SfListView.DataSource>
+    </syncfusion:SfListView>
+  </ContentPage.Content>
+</ContentPage>
 {% endhighlight %}
 {% highlight c# %}
 public partial class MainPage : ContentPage

@@ -19,25 +19,25 @@ The User Interface (UI) for swiping can be customized by using the [SfListView.L
 
 {% tabs %}
 {% highlight xaml %}
-<ContentPage>
- <syncfusion:SfListView x:Name="listView" AllowSwiping="True">
-  <syncfusion:SfListView.LeftSwipeTemplate>
-    <DataTemplate x:Name="LeftSwipeTemplate">
-      <Grid>
-        <Grid BackgroundColor="#009EDA" HorizontalOptions="Fill" VerticalOptions="Fill" Grid.Column="0">
-          <Grid VerticalOptions="Center" HorizontalOptions="Center">
-            <Image Grid.Column="0"
-                   Grid.Row="0"
-                   BackgroundColor="Transparent"
-                   HeightRequest="35"
-                   WidthRequest="35"
-                   Source="Favorites.png" />
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+  <syncfusion:SfListView x:Name="listView" AllowSwiping="True">
+    <syncfusion:SfListView.LeftSwipeTemplate>
+      <DataTemplate x:Name="LeftSwipeTemplate">
+        <Grid>
+          <Grid BackgroundColor="#009EDA" HorizontalOptions="Fill" VerticalOptions="Fill" Grid.Column="0">
+            <Grid VerticalOptions="Center" HorizontalOptions="Center">
+              <Image Grid.Column="0"
+                    Grid.Row="0"
+                    BackgroundColor="Transparent"
+                    HeightRequest="35"
+                    WidthRequest="35"
+                    Source="Favorites.png" />
+            </Grid>
           </Grid>
         </Grid>
-      </Grid>
-    </DataTemplate>
-  </syncfusion:SfListView.LeftSwipeTemplate>
- </syncfusion:SfListView>
+      </DataTemplate>
+    </syncfusion:SfListView.LeftSwipeTemplate>
+  </syncfusion:SfListView>
 </ContentPage>
 {% endhighlight %}
 {% highlight c# %}
@@ -82,7 +82,7 @@ The swipe templates allows customizing with custom actions such as deleting the 
 
 {% tabs %}
 {% highlight xaml %}
-<ContentPage>
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
  <syncfusion:SfListView x:Name="listView">
   <syncfusion:SfListView.LeftSwipeTemplate>
     <DataTemplate x:Name="LeftSwipeTemplate">
@@ -223,7 +223,7 @@ To delete an item in view while swiping the item from one extent to other by usi
 
 {% tabs %}
 {% highlight xaml %}
-<ContentPage>
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
  <syncfusion:SfListView x:Name="listView" 
                  AllowSwiping="True" SelectionMode="None" 
                  SwipeOffset="360" SwipeThreshold="30"
@@ -488,7 +488,7 @@ The SfListView allows editing the item data using either [SfListView.RightSwipeT
 
 {% tabs %}
 {% highlight xaml %}
-<ContentPage>
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
  <syncfusion:SfListView > 
   <syncfusion:SfListView.RightSwipeTemplate> 
       <DataTemplate x:Name="RightSwipeTemplate"> 

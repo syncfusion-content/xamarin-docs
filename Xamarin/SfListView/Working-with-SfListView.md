@@ -1088,17 +1088,17 @@ public partial class MainPage : ContentPage
 
 You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ItemsourceScrolling-865979633).
 
-### SfListView with Prism Framework
+### SfListView with prism Framework
 
-SfListView allows the user working it with Prism  for MVVM Framework. It can be done by following the below steps
-    *Replace the Application to PrismApplication in App.xaml file
-    *Inherited App.xaml.cs from PrismApplication instead of Application.
-    *Create prism namespace library reference in xaml file of ContentPage.
-    *Connect view and view model instead of binding context by registering.
-Refer the below code snippet which illustrates, how to initialize prism and to register the view with view model.
+The SfListView allows the user to work with prism for MVVM Framework. Steps to be followed:
+
+1. Replace your application to prism application in App.xaml file.
+2. Inherit App.xaml.cs from prism application instead of your application.
+3. Create a prism namespace library reference in xaml file of the ContentPage.
+4. Connect view and view model instead of binding context by registering them.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight c# %}
 public partial class App : PrismApplication
 {
     public App(IPlatformInitializer initializer = null) : base(initializer) { }
@@ -1130,7 +1130,6 @@ public partial class App : PrismApplication
 {% endhighlight %}
 {% endtabs %}
 
-Refer the below code snippet which illustrated how to insert the SfListView and to provide prism namespace library reference in ContentPage.
 {% tabs %}
 {% highlight xaml %}
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -1151,6 +1150,6 @@ Refer the below code snippet which illustrated how to insert the SfListView and 
 {% endhighlight %}
 {% endtabs %}
 
-For more details refer the below link:
-Note: [https://xamgirl.com/prism-in-xamarin-forms-step-by-step-part-1](https://xamgirl.com/prism-in-xamarin-forms-step-by-step-part-1)
-You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewPrism116483729).
+For more details, refer to [https://xamgirl.com/prism-in-xamarin-forms-step-by-step-part-1](https://xamgirl.com/prism-in-xamarin-forms-step-by-step-part-1).
+
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewPrism116483729).

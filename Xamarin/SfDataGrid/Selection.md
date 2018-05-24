@@ -208,7 +208,7 @@ Key Combinations
 <kbd>Shift</kbd> + <kbd>DownArrow</kbd>
 </td>
 <td>
-If Selection Mode is multiple, selects the multiple cells continously towards downward from the current selected cell,If the Selection Mode is Single or SingleDeselect moves the selection to next row.
+If Selection Mode is multiple, selects the multiple cells continuously towards downward from the current selected cell,If the Selection Mode is Single or SingleDeselect moves the selection to next row.
 </td>
 </tr>
 <tr>
@@ -216,7 +216,7 @@ If Selection Mode is multiple, selects the multiple cells continously towards do
 <kbd>Shift</kbd> + <kbd>UpArrow</kbd> 
 </td>
 <td>
-If Selection Mode is multiple, selects the multiple cells continously towards upward from the current selected cell.If the Selection Mode is Single or SingleDeselect moves the selection to previous row.
+If Selection Mode is multiple, selects the multiple cells continuously towards upward from the current selected cell.If the Selection Mode is Single or SingleDeselect moves the selection to previous row.
 </td>
 </tr>
 <tr>

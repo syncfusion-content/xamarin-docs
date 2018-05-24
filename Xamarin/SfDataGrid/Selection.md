@@ -106,6 +106,129 @@ void DataGrid_SelectionChanged (object sender, GridSelectionChangedEventArgs e)
 }   
 {% endhighlight %}
  
+
+## Keyboard Behavior
+
+N> Keyboard behavior Combinations is applicable for Xamarin.Forms.macOS and Xamarin.Forms.UWP only.Keyboard Combinations works only when Selection Mode is applied.
+
+<table>
+<tr>
+<th>
+Key or KeyCombinations
+</th>
+<th>
+Description
+</th>
+</tr>
+<tr>
+<td>
+<kbd>DownArrow</kbd>
+</td>
+<td>
+Move the selection to next row from current selected row when having SelectionMode is Single or SingleDeselect. If the selected row is in last row, pressing Down arrow does nothing.If rows is not selected scrolling to next row occurs.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>UpArrow</kbd>
+</td>
+<td>
+Moves the selection to previous row from current selected row when having SelectionMode is Single or SingleDeselect. If the selected row is in first row, pressing Up arrow does nothing.If rows is not selected scrolling to previous row occurs.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>PageDown</kbd>
+</td>
+<td>
+The SfDataGrid will be scrolled to next set of rows that are not displayed in view, including the row that are partially displayed and if the selection is applied to the any row, selection is moved to last row of the next set of rows when having SelectionMode is Single or SingleDeselect.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>PageUp</kbd>
+</td>
+<td>
+The SfDataGrid will be scrolled to previous set of rows that are not displayed in view, including the row that are partially displayed and if the selection is applied to the any row, selection is moved to first row of the next set of rows when having SelectionMode is Single or SingleDeselect.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>Tab</kbd>
+</td>
+<td>
+Moves the selection to next row from current selected row when having SelectionMode is Single or SingleDeselect.If the selected row is in last row, pressing Tab does nothing.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>Ctrl</kbd> + <kbd>Home</kbd> or <kbd>Ctrl</kbd> + <kbd>UpArrow</kbd> or <kbd>Home</kbd>
+</td>
+<td>
+Scrolling to first row occurs.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>Ctrl</kbd> + <kbd>End</kbd> or <kbd>Ctrl</kbd> + <kbd>DownArrow</kbd> or <kbd>End</kbd>
+</td>
+<td>
+Scrolling to last row occurs.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>Enter</kbd> or <kbd>Ctrl</kbd> + <kbd>Enter</kbd>
+</td>
+<td>
+If the active current cell is in edit mode, the changes will committed and moves the current cell to below the active current cell. If the active current cell is in last row, commits changes only and retains in the same cell.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>Esc</kbd>
+</td>
+<td>
+If the current cell is in edit mode, reverts the changes that had been done in the current cell. If the underlying source implements the {{'[IEditableObject](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject#"")'| markdownify }}, on pressing of Esc key for the second time will cancel the edit mode for entire row.
+</td>
+</tr>
+</table>
+
+
+### Shift Key Combinations
+
+<table>
+<tr>
+<th>
+Key Combinations
+</th>
+</tr>
+<tr>
+<td>
+<kbd>Shift</kbd> + <kbd>DownArrow</kbd>
+</td>
+<td>
+If Selection Mode is multiple, selects the multiple cells continously towards downward from the current selected cell,If the Selection Mode is Single or SingleDeselect moves the selection to next row.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>Shift</kbd> + <kbd>UpArrow</kbd> 
+</td>
+<td>
+If Selection Mode is multiple, selects the multiple cells continously towards upward from the current selected cell.If the Selection Mode is Single or SingleDeselect moves the selection to previous row.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>Shift</kbd> + <kbd>Tab</kbd>
+</td>
+<td>
+Moves the selection to previous row from current selected row when having SelectionMode is Single or SingleDeselect. If the selected row is in first row, pressing Shift +Tab does nothing.
+</td>   
+</tr>
+</table>
+
 ## Selection events
 
 The data grid provides the following events for selection:

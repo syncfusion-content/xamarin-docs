@@ -868,7 +868,7 @@ Schedule allows you to create appointments in various time zones, and the appoin
 * Set Schedule to the specific Time zone using 'TimeZone' property of schedule
 * Set Appointment to the specific timezone using 'StartTimeZone' and 'EndTimeZone' property of ScheduleAppointment
 * Use 'InternalStartTime' and 'InternalEndTime' property of ScheduleAppointment to get the exact appointment start time and end time
-* If scheudle Time zone and Appointment's start time zone and end time zone are not set then the appointment to be render based on the device local time zone
+* If schedule Time zone and Appointment's start time zone and end time zone are not set then the appointment to be render based on the device local time zone
 * If schedule Time zone was set and Appointment's start time zone and end time zone are not set then appointment's start time and end time value to be converted into schedule time zone for specified time zone
 * If schedule Time zone was not set and Appointment's start time zone and end time zone are set the appointment's start time and end time value to be converted into device local time zone for specified time zone
 * If the recurring appointment is converted to another time zone then the whole sequence is recalculated according to the new time zone information

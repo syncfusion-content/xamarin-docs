@@ -207,7 +207,7 @@ The Conditional style can be applied for an entire row based on any condition us
  * [Style](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryRowStyleEventArgs~Style.html): Sets style to the current row in iteration.
 
 {% highlight c# %}
-this.dataGrid.QueryCellStyle += DataGrid_QueryCellStyle;
+this.dataGrid.QueryRowStyle += DataGrid_QueryRowStyle;
 private void DataGrid_QueryRowStyle(object sender, QueryRowStyleEventArgs e)
 {
     if (e.RowIndex == 3)

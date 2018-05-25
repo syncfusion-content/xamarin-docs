@@ -7,7 +7,7 @@ control: SfPdfViewer
 documentation: ug
 ---
 
-# Select and copy the text
+# Select and copy text
 
 The PDF viewer supports text selection and copy feature, which allows user to select the text in the PDF document and copy it to the clipboard. This section illustrates about how to use this feature.
 
@@ -41,6 +41,12 @@ pdfViewerControl.IsTextSelectionEnabled = false;
 
 {% endhighlight %}
 {% endtabs %}
+
+## How to select text?
+
+To select text the first word of the text to be selected has to be long-pressed until bubbles appear on the top-left and bottom-right corners of its bounds. Then the bottom-right bubble has to be dragged to select the remaining text. 
+
+![](pdfviewer_images/textselection.png)
 
 ## How to enable or disable the context menu?
 

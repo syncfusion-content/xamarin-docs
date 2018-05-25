@@ -7,13 +7,13 @@ control: Kanban
 documentation: ug
 ---
 
-#Placeholder
+# Placeholder
 
 Place holder is used to visualize the multiple categories in the Kanban column. It will appear while dragging the card over the column with multiple categories.
 
 ### Placeholder Style
 
-[`SfKanban.PlaceholderStyle`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.html) property is used to customize the placeholder. Following properties are used to customize its appearance.
+[`PlaceholderStyle`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.html) property is used to customize the placeholder. Following properties are used to customize its appearance.
 
 * [`BackgroundColor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle~BackgroundColor.html)  	 - This property is used to change the background color of the placeholder.
 * [`BorderColor`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle~BorderColor.html) 	 	 - This property is used to change the border color of the placeholder.

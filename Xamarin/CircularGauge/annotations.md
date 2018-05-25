@@ -503,15 +503,15 @@ Annotations provide options to add any image over the gauge control with respect
             header2.TextSize = 20;
             gauge.Headers.Add(header2);
 
-            GaugeAnnotation annottaion = new GaugeAnnotation();
+            GaugeAnnotation annotation = new GaugeAnnotation();
             Image image = new Image();
             image.Source = "weather.jpg";
             image.HeightRequest = 100;
             image.WidthRequest = 100;
-            annottaion.View = image;
-            annottaion.Angle = 270;
-            annottaion.Offset = 0.2;
-            gauge.Annotations.Add(annottaion);
+            annotation.View = image;
+            annotation.Angle = 270;
+            annotation.Offset = 0.2;
+            gauge.Annotations.Add(annotation);
             gauge.Scales = scales;
 
 {% endhighlight %}

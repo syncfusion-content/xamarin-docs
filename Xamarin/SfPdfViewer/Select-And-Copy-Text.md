@@ -44,7 +44,7 @@ pdfViewerControl.IsTextSelectionEnabled = false;
 
 ## How to select text?
 
-To select text the first word of the text to be selected has to be long-pressed until bubbles appear on the top-left and bottom-right corners of its bounds. Then the bottom-right bubble has to be dragged to select the remaining text. 
+To select a text in the PDF page, press and hold any word of the text until selection bubbles appear at the top-left and bottom-right corners of its bounds. Then, use the left bubble to select the text at the left and top, and the right bubble to select the text at the right and bottom directions. 
 
 ![](pdfviewer_images/textselection.png)
 

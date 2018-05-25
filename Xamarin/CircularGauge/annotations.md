@@ -528,9 +528,8 @@ You can add any text over the gauge control to enhance the readability. You can 
 
 {% highlight xaml %}
 
-  <gauge:SfCircularGauge HeightRequest="500" WidthRequest="500" BackgroundColor="White" Margin="20">
+    <gauge:SfCircularGauge HeightRequest="500" WidthRequest="500" BackgroundColor="White" Margin="20">
       
-
         <gauge:SfCircularGauge.Headers>
             <gauge:Header Text="13M" Position="0.5, 0.5" ForegroundColor="#0682F6" FontAttributes="Bold" TextSize="20"/>
         </gauge:SfCircularGauge.Headers>
@@ -562,7 +561,7 @@ You can add any text over the gauge control to enhance the readability. You can 
 
 {% highlight c# %}
 
-            SfCircularGauge gauge; gauge = new SfCircularGauge();
+            SfCircularGauge gauge = new SfCircularGauge();
             this.BackgroundColor = Color.White;
 
             gauge.HeightRequest = 500;
@@ -612,14 +611,12 @@ You can add any text over the gauge control to enhance the readability. You can 
             pointer1.ImageSource = "shot.jpg";
             pointer1.MarkerWidth = 60;
             pointer1.MarkerHeight = 60;
-            pointer1.Color = Color.FromHex("#9e9e9e");
             pointer1.Value = 0;
             pointer1.Offset = 0.8;
             scale.Pointers.Add(pointer1);
 
             MarkerPointer pointer2 = new MarkerPointer();
             pointer2.MarkerShape = MarkerShape.Circle;
-            pointer2.ImageSource = "shot.jpg";
             pointer2.MarkerWidth = 40;
             pointer2.MarkerHeight = 40;
             pointer2.Color = Color.FromHex("#9e9e9e");

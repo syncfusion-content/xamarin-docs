@@ -26,7 +26,7 @@ Namespace:
 {% endhighlight %}
 
 {% highlight c# %}
-NameSpace:
+Namespace:
 
 using Syncfusion.RangeNavigator.XForms;
 ...

@@ -252,7 +252,7 @@ this.listView.DragDropController.UpdateSource = true;
 {% endhighlight %}
 {% endtabs %}
 
-N> Unable to update the items order in the underlying collection if grouping is enabled. Because, order of the `DisplayItems` of DataSource and underlying collection will be different.
+N> You cannot update items order in the underlying collection if grouping is enabled. Because, order of the `DisplayItems` of the DataSource and underlying collection is different.
 
 ## Delete item when dropping in particular view
 

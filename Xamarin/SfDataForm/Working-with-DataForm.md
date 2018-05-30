@@ -251,6 +251,25 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
+## Changing DataFormItem
+
+You can change the created [DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem.html) and assign new `DataFormItem`.
+
+Here, [DataFormNumericUpDownItem](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormNumericUpDownItem.html) with ParsingMode as Decimal is loaded for text value instead of `DataFormTextItem`.
+
+{% highlight c# %}
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null)
+    {
+       if (e.DataFormItem.Name == "ItemName")
+                    e.DataFormItem = new DataFormNumericUpDownItem() { Name = "ItemName", Editor = "NumericUpDown" , ParsingMode = ParsingMode.Decimal};
+    }
+}
+{% endhighlight %}
+
 ## Adding or removing the data field displayed in the dataForm at runtime
 
 If you want to remove or add data fields item at runtime, you can use the [RefreshLayout](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~RefreshLayout.html) method which auto-generates the DataFormItem where you can skip certain item from display. By default, it will generate the canceled items initially. If you want to regenerate all the items, you should pass argument as `true`.

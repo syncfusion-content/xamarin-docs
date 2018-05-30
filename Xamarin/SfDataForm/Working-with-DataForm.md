@@ -357,3 +357,120 @@ Here, the GroupName field is removed at runtime.
 ![](SfDataForm_images/MoreFieldsRemove.png)
 
 You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MoreFields1624183179.zip).
+
+## DataFormItemManager
+
+The [DataFormItemManager](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemManager.html) creates [DataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItems.html) collection and handles value reflection and validation. It also overrides to handle the get and set property values from and to the data object.
+
+### Manually defining DataFormItem
+
+By default, [DataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItems.html) will be generated based on data object. If you want to generate `DataFormItems` manually, you should override the [DataFormItemManager](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemManager.html) class and set it to [SfDataForm.ItemManager](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~ItemManager.html).
+
+To create `DataFormItems`, you should override the [GenerateDataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemManager~GenerateDataFormItems.html) method.
+
+{% highlight c# %}
+public class DataFormItemManagerExt : DataFormItemManager
+{       
+    public DataFormItemManagerExt(SfDataForm dataForm) : base(dataForm)
+    {
+
+    }
+    protected override List<DataFormItemBase> GenerateDataFormItems(PropertyInfoCollection itemProperties, List<DataFormItemBase> dataFormItems)
+    {
+        var items = new List<DataFormItemBase>();
+        foreach (var propertyInfo in itemProperties)
+        {
+           DataFormItem dataFormItem;
+				if (propertyInfo.Key == "ItemName")
+					dataFormItem = new DataFormTextItem() { Name = propertyInfo.Key, Editor = "Text" };
+				else if (propertyInfo.Key == "FirstName")
+					dataFormItem = new DataFormTextItem() { Name = propertyInfo.Key, Editor = "Text" };
+				else
+                    dataFormItem = new DataFormTextItem() { Name = propertyInfo.Key, Editor = "Text" };
+
+				items.Add(dataFormItem);
+			}
+
+        return items;
+    }
+}
+
+dataForm.DataObject = new ContactsInfo();
+dataForm.ItemManager = new DataFormItemManagerExt(dataForm);
+{% endhighlight %}
+
+### Loading data form with dictionary
+
+You can load the data form with custom dictionary by manually generating items and handling read and write values.
+
+#### Manually defining DataFormItem
+
+To create `DataFormItems` from dictionary , you should override the [GenerateDataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemManager~GenerateDataFormItems.html) method.
+
+{% highlight c# %}
+public class DataFormItemManagerExt : DataFormItemManager
+{
+    Dictionary<string, object> dataFormDictionary;
+    public DataFormItemManagerExt(SfDataForm dataForm, Dictionary<string, object> dictionary) : base(dataForm)
+    {
+        dataFormDictionary = dictionary;
+    }
+
+    protected override List<DataFormItemBase> GenerateDataFormItems(PropertyInfoCollection itemProperties, List<DataFormItemBase> dataFormItems)
+    {
+        var items = new List<DataFormItemBase>();
+        foreach (var key in dataFormDictionary.Keys)
+        {
+            DataFormItem dataFormItem;
+            if (key == "ID")
+                dataFormItem = new DataFormNumericItem() { Name = key, Editor = "Numeric", MaximumNumberDecimalDigits = 0 };
+            else if (key == "Name")
+                dataFormItem = new DataFormTextItem() { Name = key, Editor = "Text" };
+            else
+                dataFormItem = new DataFormTextItem() { Name = key, Editor = "Text" };
+
+            items.Add(dataFormItem);
+        }
+         
+        return items;
+    }
+}
+
+dataForm.DataObject = new object();
+var dictionary = new Dictionary<string, object>();
+dictionary.Add("ID", 1);
+dictionary.Add("Name", "John");
+dataForm.ItemManager = new DataFormItemManagerExt(dataForm, dictionary);
+
+{% endhighlight %}
+
+#### Handling reading and writing values to and from the data object
+
+By default, the value will be shown in editor by getting it from the data object and after editing, the data object will be committed with the new value. If you want to customize the value, you should override [GetValue](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemManager~GetValue.html) and [SetValue](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemManager~SetValue.html) methods in [DataFormItemManager](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemManager.html).
+
+Here, the value is reading and writing from/to dictionary instead of the data object.
+
+{% highlight c# %}
+public class DataFormItemManagerExt : DataFormItemManager
+{
+    Dictionary<string, object> dataFormDictionary;
+    public DataFormItemManagerExt(SfDataForm dataForm, Dictionary<string, object> dictionary) : base(dataForm)
+    {
+        dataFormDictionary = dictionary;
+    }
+
+    public override object GetValue(DataFormItem dataFormItem)
+    {
+        var value = dataFormDictionary[dataFormItem.Name];
+        return value;
+    }
+
+    public override void SetValue(DataFormItem dataFormItem, object value)
+    {
+        dataFormDictionary[dataFormItem.Name] = value;
+    }
+
+}
+{% endhighlight %}
+
+Here, the data form is loaded with field from dictionary.

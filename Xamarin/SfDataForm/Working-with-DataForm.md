@@ -253,9 +253,9 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ## Changing DataFormItem
 
-You can change the created [DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem.html) and assign new `DataFormItem`.
+You can change the created [DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem.html) and assign new `DataFormItem` in the [AutoGeneratingDataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~AutoGeneratingDataFormItem_EV.html) event.
 
-Here, [DataFormNumericUpDownItem](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormNumericUpDownItem.html) with ParsingMode as Decimal is loaded for text value instead of `DataFormTextItem`.
+Here, [DataFormTextItem](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormTextItem.html) with number keyboard is loaded for numeric value instead of `DataFormNumericItem`.
 
 {% highlight c# %}
 dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
@@ -264,8 +264,8 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {
     if (e.DataFormItem != null)
     {
-       if (e.DataFormItem.Name == "ItemName")
-                    e.DataFormItem = new DataFormNumericUpDownItem() { Name = "ItemName", Editor = "NumericUpDown" , ParsingMode = ParsingMode.Decimal};
+       if (e.DataFormItem.Name == "ID")
+          e.DataFormItem = new DataFormTextItem() { Name = "ID", Editor = "Text", KeyBoard = Keyboard.Numeric };
     }
 }
 {% endhighlight %}

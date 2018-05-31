@@ -588,6 +588,17 @@ Enum and List type property.
 DropDownControl
 </td>
 </tr>
+<tr>
+<td>
+Password
+</td>
+<td>
+The String type property with [DataType(DataType.Password)] attribute.
+</td>
+<td>
+Entry
+</td>
+</tr>
 </table>
 
 ## Layout options

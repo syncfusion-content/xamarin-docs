@@ -353,7 +353,7 @@ This page lists the assemblies required for each control to be referred in each 
 
 <dl>
   <dt>NuGet</dt>
-  <dd>Syncfusion.Xamarin.Calendar</dd>
+  <dd>Syncfusion.Xamarin.SfCalendar</dd>
 </dl>
 
 **Assemblies**

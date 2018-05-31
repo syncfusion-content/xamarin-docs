@@ -79,7 +79,7 @@ You can assign a unique header to [`SfCircularGauge`](https://help.syncfusion.co
     <gauge:SfCircularGauge>
 
          <gauge:SfCircularGauge.Headers>
-             <gauge:Header Text="Speedometer" />
+             <gauge:Header Text="Speedometer" ForegroundColor="Black" TextSize="20" />
          </gauge:SfCircularGauge.Headers>
     
     </gauge:SfCircularGauge>
@@ -91,6 +91,8 @@ You can assign a unique header to [`SfCircularGauge`](https://help.syncfusion.co
     SfCircularGauge circularGauge = new SfCircularGauge(); 
     Header header = new Header();
     header.Text = "Speedometer";
+    header.ForegroundColor = Color.Black;
+    header.TextSize = 20;
     circularGauge.Headers.Add(header);  
 	
 {% endhighlight %}
@@ -288,7 +290,7 @@ The following code example gives you the complete code of above configurations.
         <gauge:SfCircularGauge VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="10">
 
             <gauge:SfCircularGauge.Headers>
-                <gauge:Header Text="Speedometer" />
+                <gauge:Header Text="Speedometer" ForegroundColor="Black" TextSize="20" />
             </gauge:SfCircularGauge.Headers>
             
             <gauge:SfCircularGauge.Scales>
@@ -335,6 +337,8 @@ namespace CircularGauge
             //Adding header 
             Header header = new Header();
             header.Text = "Speedometer";
+            header.ForegroundColor = Color.Black;
+            header.TextSize = 20;
             circularGauge.Headers.Add(header);
 
              //Initializing scales for circular gauge
@@ -380,4 +384,4 @@ The following circular gauge is created as a result of the above codes.
  
 ![](getting-started_images/default.png)
 
-You can find the complete getting started sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Gauge_GettingStarted-145122730.zip).
+You can find the complete getting started sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Gauge_GettingStarted1295095043).

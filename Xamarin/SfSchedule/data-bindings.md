@@ -599,9 +599,9 @@ schedule.AllowAppointmentDrag = true;
 
 By long-pressing the appointment you can hold and start dragging to next time slots and it can be handled by below ways.
 
-* [Appointment Drag Starting](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#appointment-drag-starting)
-* [Appointment Drag Over](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#appointment-drag-over)
-* [Appointment Drop](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#appointment-drop)
+* [Handle dragging based on the appointment](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#handle-dragging-based-on-the-appointment)
+* [Get the dragging appointment position](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#get-the-dragging-appointment-position)
+* [Handle Appointment Dropping](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#handle-dppointment-dropping)
 
 ### Handle dragging based on the appointment
 Using [AppointmentDragStarting](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~AppointmentDragStarting_EV.html) event you can get the appointment details and can handle whether the appointment can drag or not. This event will trigger when the appointment is started  dragging. The [AppointmentDragStartingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentDragStartingEventArgs.html) argument contains the following properties.

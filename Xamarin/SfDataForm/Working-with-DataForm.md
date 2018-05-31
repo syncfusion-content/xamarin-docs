@@ -369,6 +369,10 @@ By default, [DataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin/sf
 To create `DataFormItems`, you should override the [GenerateDataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemManager~GenerateDataFormItems.html) method.
 
 {% highlight c# %}
+
+dataForm.DataObject = new ContactsInfo();
+dataForm.ItemManager = new DataFormItemManagerExt(dataForm);
+
 public class DataFormItemManagerExt : DataFormItemManager
 {       
     public DataFormItemManagerExt(SfDataForm dataForm) : base(dataForm)
@@ -381,9 +385,9 @@ public class DataFormItemManagerExt : DataFormItemManager
         foreach (var propertyInfo in itemProperties)
         {
            DataFormItem dataFormItem;
-				if (propertyInfo.Key == "ItemName")
+				if (propertyInfo.Key == "ID")
 					dataFormItem = new DataFormTextItem() { Name = propertyInfo.Key, Editor = "Text" };
-				else if (propertyInfo.Key == "FirstName")
+				else if (propertyInfo.Key == "Name")
 					dataFormItem = new DataFormTextItem() { Name = propertyInfo.Key, Editor = "Text" };
 				else
                     dataFormItem = new DataFormTextItem() { Name = propertyInfo.Key, Editor = "Text" };
@@ -395,8 +399,6 @@ public class DataFormItemManagerExt : DataFormItemManager
     }
 }
 
-dataForm.DataObject = new ContactsInfo();
-dataForm.ItemManager = new DataFormItemManagerExt(dataForm);
 {% endhighlight %}
 
 ### Loading data form with dictionary
@@ -408,6 +410,13 @@ You can load the data form with custom dictionary by manually generating items a
 To create `DataFormItems` from dictionary , you should override the [GenerateDataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemManager~GenerateDataFormItems.html) method.
 
 {% highlight c# %}
+
+dataForm.DataObject = new object();
+var dictionary = new Dictionary<string, object>();
+dictionary.Add("ID", 1);
+dictionary.Add("Name", "John");
+dataForm.ItemManager = new DataFormItemManagerExt(dataForm, dictionary);
+
 public class DataFormItemManagerExt : DataFormItemManager
 {
     Dictionary<string, object> dataFormDictionary;
@@ -435,12 +444,6 @@ public class DataFormItemManagerExt : DataFormItemManager
         return items;
     }
 }
-
-dataForm.DataObject = new object();
-var dictionary = new Dictionary<string, object>();
-dictionary.Add("ID", 1);
-dictionary.Add("Name", "John");
-dataForm.ItemManager = new DataFormItemManagerExt(dataForm, dictionary);
 
 {% endhighlight %}
 

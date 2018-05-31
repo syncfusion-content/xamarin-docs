@@ -370,7 +370,7 @@ To create `DataFormItems`, you should override the [GenerateDataFormItems](https
 
 {% highlight c# %}
 
-// dataform item creating by setting DataObject.
+// data form item creating by setting DataObject.
 dataForm.DataObject = new ContactsInfo();
 dataForm.ItemManager = new DataFormItemManagerExt(dataForm);
 
@@ -412,7 +412,7 @@ To create `DataFormItems` from dictionary , you should override the [GenerateDat
 
 {% highlight c# %}
 
-// dataform item creating using dictionary.
+// data form item creating using dictionary.
 dataForm.DataObject = new object();
 var dictionary = new Dictionary<string, object>();
 dictionary.Add("ID", 1);

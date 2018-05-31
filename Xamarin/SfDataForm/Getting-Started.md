@@ -389,7 +389,7 @@ The type of input editor generated for the data field depends on the type and at
 {{'[DataFormTextItem](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormTextItem.html)'| markdownify }}
 </td>
 <td>
-Generated for the String type property and any other type apart from the following specified cases.
+Default DataFormItem generated for the String type and the properties with [DataType(DataType.Text)], [DataType(DataType.MultilineText)] and [DataType(DataType.Password)] attributes.
 </td>
 </tr>
 <tr>
@@ -586,6 +586,17 @@ Enum and List type property.
 </td>
 <td>
 DropDownControl
+</td>
+</tr>
+<tr>
+<td>
+Password
+</td>
+<td>
+The String type property with [DataType(DataType.Password)] attribute.
+</td>
+<td>
+Entry
 </td>
 </tr>
 </table>

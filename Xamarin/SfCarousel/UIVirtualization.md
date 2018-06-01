@@ -17,7 +17,7 @@ The following property has been used in UIVirtualization support:
 
 ## EnableVirtualization
 
-UIvirtualization concept is achieved by enabling the EnableVirtualization property.
+UI Virtualization concept is achieved by enabling the EnableVirtualization property.
 
 N> The default value of the EnableVirtualization property is false.
 
@@ -33,7 +33,7 @@ N> The default value of the EnableVirtualization property is false.
     xmlns:carousel="clr-namespace:Syncfusion.SfCarousel.XForms;assembly=Syncfusion.SfCarousel.XForms">
 
 <ContentPage.BindingContext>
-  <local:CarouselViewModel/>
+  <local:CarouselViewModel />
 </ContentPage.BindingContext>
 
 	<ContentPage.Resources>
@@ -80,8 +80,6 @@ carousel.ItemHeight = 100;
 carousel.ItemWidth = 100;
 
 carousel.ItemSpacing = 2;
-            
-carousel.MaximumItemsCount = 5;
             
 //Enable Virtualization in SfCarousel
            

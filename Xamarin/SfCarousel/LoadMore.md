@@ -37,7 +37,7 @@ N>The default value of the `AllowLoadMore` property is false.
     xmlns:carousel="clr-namespace:Syncfusion.SfCarousel.XForms;assembly=Syncfusion.SfCarousel.XForms">
 
 <ContentPage.BindingContext>
-  <local:CarouselViewModel/>
+  <local:CarouselViewModel />
 </ContentPage.BindingContext>
 
 	<ContentPage.Resources>

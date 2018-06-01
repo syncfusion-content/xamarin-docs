@@ -67,7 +67,7 @@ Add the custom fonts into Assets folder in sample.Droid project. Refer the below
 
 6![SfImageEditor](ImageEditor_images/AndroidCustomFonts1.png)
    
-Right click the font file and open proprties, in that Change the "Build Action" property of every font file as "AndroidAsset" and "Copy to output directory" to "Copy Always".
+Right click the font file and open properties, in that Change the "Build Action" property of every font file as "AndroidAsset" and "Copy to output directory" to "Copy Always".
     
 ![SfImageEditor](ImageEditor_images/AndroisCustomFont2.png)
     
@@ -83,9 +83,9 @@ Finally use the below code snippet to apply custom fontfamily for forms Android.
 
 {% endtabs %}
 
-#### Changes in Forms Universal Windows Project
+#### Changes in Forms Universal Windows Platform Project
 
-Add the custom fonts into Assets folder in sample.UWP projrct.
+Add the custom fonts into Assets folder in sample.UWP project.
     
 ![SfImageEditor](ImageEditor_images/UWPCsutomFont1.png)
 
@@ -93,7 +93,7 @@ Right click the font file and open properties, in that change the  "Build Action
     
 ![SfImageEditor](ImageEditor_images/UWPCustomFont2.png)
 
-Finally use the below code snippet to apply custom fontfamily in forms UWP. Whilw you give the path, You should mention font file name with .ttf extension and "#" symbol
+Finally use the below code snippet to apply custom fontfamily in forms UWP. While you give the path, You should mention font file name with .ttf extension and "#" symbol
 with fontfamily name.
 
 {% tabs %}
@@ -117,7 +117,7 @@ Change the "Build Action" property of every font file as "BundleResource" and "C
 ![SfImageEditor](ImageEditor_images/iOSCustomFont2.png)
     
 Open the "info.plist" file and select "Source" at the bottom of the file.
-After open the source file you should need to add "Fonts provided by application" into tha source file and add the dowloaded custom fonts name with .ttf extension.
+After open the source file you should need to add "Fonts provided by application" into the source file and add the downloaded custom fonts name with .ttf extension.
 
 ![SfImageEditor](ImageEditor_images/iOSCustomFont3.png)
 

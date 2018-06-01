@@ -27,11 +27,13 @@ To enable drag and drop using 'OnHold', follow the code example:
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfListView x:Name="listView" 
+<ContentPage  xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+  <syncfusion:SfListView x:Name="listView" 
                    ItemsSource="{Binding ToDoList}"
                    DragStartMode="OnHold"
                    BackgroundColor="#FFE8E8EC"
                    ItemSize="60" />
+</ContentPage>
 {% endhighlight %}
 {% highlight c# %}
 listView.DragStartMode = DragStartMode.OnHold; 
@@ -42,11 +44,13 @@ To enable drag and drop using both 'OnHold' and 'OnDragIndicator', follow the co
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfListView x:Name="listView" 
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+  <syncfusion:SfListView x:Name="listView" 
                    ItemsSource="{Binding ToDoList}"
                    DragStartMode="OnHold, OnDragIndicator"
                    BackgroundColor="#FFE8E8EC"
                    ItemSize="60" />
+</ContentPage>
 {% endhighlight %}
 {% highlight c# %}
 listView.DragStartMode = DragStartMode.OnHold | DragStartMode.OnDragIndicator; 
@@ -63,7 +67,8 @@ N> You must set the SfListView instance as reference to the [ListView](https://h
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfListView x:Name="listView" 
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+  <syncfusion:SfListView x:Name="listView" 
                    ItemsSource="{Binding ToDoList}"
                    DragStartMode="OnDragIndicator"
                    BackgroundColor="#FFE8E8EC"
@@ -76,7 +81,6 @@ N> You must set the SfListView instance as reference to the [ListView](https://h
             <ColumnDefinition Width="60" />
           </Grid.ColumnDefinitions>
           <Label x:Name="textLabel" Text="{Binding Name}" Grid.Column="1" FontSize="15" TextColor="#333333" />
-
           <syncfusion:DragIndicatorView Grid.Column="2" ListView="{x:Reference listView}" 
                     HorizontalOptions="Center" 
                     VerticalOptions="Center">
@@ -88,7 +92,8 @@ N> You must set the SfListView instance as reference to the [ListView](https://h
       </Grid>
     </DataTemplate>
   </syncfusion:SfListView.ItemTemplate>
-</syncfusion:SfListView>
+</syncfusion:SfListView>                
+</ContentPage>
 {% endhighlight %}
 {% highlight c# %}
 listView.ItemTemplate = new DataTemplate(() =>
@@ -132,7 +137,8 @@ N> If `BackgroundColor` is set to `DragItemTemplate` or [DragIndicatorView](http
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfListView x:Name="listView" 
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+  <syncfusion:SfListView x:Name="listView" 
                    ItemsSource="{Binding ToDoList}"
                    DragStartMode="OnHold"
                    BackgroundColor="#FFE8E8EC"
@@ -144,7 +150,8 @@ N> If `BackgroundColor` is set to `DragItemTemplate` or [DragIndicatorView](http
       </Grid>
     </DataTemplate>
   </syncfusion:SfListView.DragItemTemplate>
-</syncfusion:SfListView>
+</syncfusion:SfListView>                
+</ContentPage>
 {% endhighlight %}
 {% highlight c# %}
 listView.ItemTemplate = new DataTemplate(() => {
@@ -165,8 +172,8 @@ The [ItemDragging](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/
  * [Bounds](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs~Bounds.html): Return bounds of drag item when dragging and dropping.
  * [Handled](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs~Handled.html): If this member is set to true, dragging can be handled. It is applicable only if `Action` is `Dragging`.
  * [ItemData](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs~ItemData.html): Returns the underlying data of the dragging item. 
- * [NewIndex](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs~NewIndex.html): Returns the item index of the underlying collection where dragging item is going to be dropped.
- * [OldIndex](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs~OldIndex.html): Returns the item index of the underlying collection where dragging item started. The OldIndex and NewIndex will be same if `Action` is `Start`.
+ * [NewIndex](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs~NewIndex.html): Returns the item index of the [DataSource.DisplayItems] (https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DisplayItems.html) where dragging item is going to be dropped.
+ * [OldIndex](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs~OldIndex.html): Returns the item index of the [DataSource.DisplayItems] (https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DisplayItems.html) where dragging item started. The OldIndex and NewIndex will be same if `Action` is `Start`.
  * [Position](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs~Position.html): Returns the touch position of the drag item from screen coordinates.
 
 ## Auto scroll options
@@ -245,6 +252,8 @@ this.listView.DragDropController.UpdateSource = true;
 {% endhighlight %}
 {% endtabs %}
 
+N> Updating items order is not applicable in the underlying collection if grouping is enabled. Because, order of the `DisplayItems` of the DataSource and underlying collection is different.
+
 ## Delete item when dropping in particular view
 
 To delete the dragged item when dropping into a particular view, handle the [ItemDragging](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemDragging_EV.html) event based on the conditions of [Action](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs~Action.html) and `Bounds` event arguments. 
@@ -253,6 +262,7 @@ To delete the dragged item from the underlying collection when dropping into del
 
 {% tabs %}
 {% highlight xaml %}
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
 <Grid>
   <Grid.RowDefinitions>
     <RowDefinition Height="Auto" />
@@ -271,7 +281,8 @@ To delete the dragged item from the underlying collection when dropping into del
                    DragStartMode="OnHold"
                    BackgroundColor="#FFE8E8EC"
                    ItemSize="60" />
-</Grid>
+</Grid>            
+</ContentPage>
 {% endhighlight %}
 {% highlight c# %}
 public partial class MainPage : ContentPage

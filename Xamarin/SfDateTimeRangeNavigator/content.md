@@ -17,10 +17,20 @@ The following code snippet shows how to configure the range navigator using [`It
 
 {% tabs %}
 {% highlight xaml %}
+Namespace:
+
+ xmlns:rangenavigator="clr-namespace:Syncfusion.RangeNavigator.XForms;assembly=Syncfusion.SfChart.XForms"
+ 
+ ...
 <rangenavigator:SfDateTimeRangeNavigator ItemsSource="{Binding DateTimeRangeData}" XBindingPath="XValue" YBindingPath="YValue"/>
 {% endhighlight %}
 
 {% highlight c# %}
+Namespace:
+
+using Syncfusion.RangeNavigator.XForms;
+...
+
 SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator(); 
 
 ViewModel viewModel = new ViewModel(); 
@@ -91,6 +101,13 @@ The following code snippet shows how to configure the range navigator using [`Mi
 
 {% tabs %}
 {% highlight xaml %}
+Namespace:
+
+ xmlns:rangenavigator="clr-namespace:Syncfusion.RangeNavigator.XForms;assembly=Syncfusion.SfChart.XForms"
+ xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms" 
+
+ ...
+
 <rangenavigator:SfDateTimeRangeNavigator ViewRangeStart="5/1/2015" 
 
 	ViewRangeEnd="5/30/2015" Minimum="4/1/2015" Maximum="6/30/2015">
@@ -107,6 +124,12 @@ The following code snippet shows how to configure the range navigator using [`Mi
 {% endhighlight %}
 
 {% highlight c# %}
+Namespace:
+using Syncfusion.RangeNavigator.XForms;
+using Syncfusion.SfChart.XForms;
+
+...
+
 SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator();
 
 rangeNavigator.Minimum = new DateTime(2015, 4, 1);

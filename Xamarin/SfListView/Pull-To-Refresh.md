@@ -155,7 +155,8 @@ When the SearchBar or any view placed above the [SfPullToRefresh](https://help.s
 
 {% tabs %}
 {% highlight xaml %}
-<ContentPage>
+<ContentPage xmlns:pulltoRefresh="clr-namespace:Syncfusion.SfPullToRefresh.XForms;assembly=Syncfusion.SfPullToRefresh.XForms"
+             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms" >
   <ContentPage.Content>
         <Grid RowSpacing="0" ColumnSpacing="0" Padding="0" Margin="0">
             <Grid.RowDefinitions>
@@ -218,7 +219,8 @@ The [SfPullToRefresh](https://help.syncfusion.com/cr/cref_files/xamarin/sfpullto
 
 {% tabs %}
 {% highlight xaml %}
-<ContentPage>
+<ContentPage xmlns:pulltoRefresh="clr-namespace:Syncfusion.SfPullToRefresh.XForms;assembly=Syncfusion.SfPullToRefresh.XForms"
+             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms" >
  <ContentPage.Content>
     <Grid RowSpacing="0" ColumnSpacing="0" Padding="0" Margin="0">
        <Grid.Behaviors>

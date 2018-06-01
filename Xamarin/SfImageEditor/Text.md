@@ -46,7 +46,7 @@ TextSettings is defined to set the values for `Color` and `FontSize`.
 
 # Custom Font Family
 
-We can able to change the fontfamily of selected text from default fontfamily into custom fontfamily.
+We can able to change the font family of selected text from default font family into custom font family.
 
    * From Toolbar
    * Using Code
@@ -71,7 +71,7 @@ Right click the font file and open properties, in that Change the "Build Action"
     
 ![SfImageEditor](ImageEditor_images/AndroisCustomFont2.png)
     
-Finally use the below code snippet to apply custom fontfamily for forms Android. In Android you just give the font file name.
+Finally use the below code snippet to apply custom font family for forms Android. In Android you just give the font file name.
 
 {% tabs %}
 
@@ -93,8 +93,8 @@ Right click the font file and open properties, in that change the  "Build Action
     
 ![SfImageEditor](ImageEditor_images/UWPCustomFont2.png)
 
-Finally use the below code snippet to apply custom fontfamily in forms UWP. While you give the path, You should mention font file name with .ttf extension and "#" symbol
-with fontfamily name.
+Finally use the below code snippet to apply custom font family in forms UWP. While you give the path, You should mention font file name with .ttf extension and "#" symbol
+with font family name.
 
 {% tabs %}
 
@@ -121,7 +121,7 @@ After open the source file you should need to add "Fonts provided by application
 
 ![SfImageEditor](ImageEditor_images/iOSCustomFont3.png)
 
-Finally follow the below code snippet to apply custom fontfamily in Forms iOS.
+Finally follow the below code snippet to apply custom font family in Forms iOS.
 
 {% tabs %}
 

@@ -19,21 +19,48 @@ The looping support is achieved by setting the `EnableLooping` property to true.
 
 {% highlight xaml %}
 
-<syncfusion:SfPicker 
-    x:Name="picker" 
-    EnableLooping="True"/>
+<ContentPage.BindingContext>
+
+<local:ColorInfo />
+
+</ContentPage.BindingContext>
+
+<ContentPage.Content>
+
+<syncfusion:SfPicker
+
+x:Name="picker"
+
+HeaderText="Select a Color"
+
+EnableLooping="True"
+
+ItemsSource="{Binding Colors}" />
+
+</ContentPage.Content>
+
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 SfPicker picker = new SfPicker();
+
+ColorInfo info = new ColorInfo();
+
+picker.ItemsSource = info.Colors;
+
 // Enable Looping in carousel control
 picker.EnableLooping = true;
 
 {% endhighlight %}
 
 {% endtabs %}
+
+![](images/Looping.png)
+
+You can find the complete Looping sample from this [link.](http://www.syncfusion.com/downloads/support/forum/137855/ze/Looping752628297)
 
 # How to restrict Looping in a particular column of the picker
 
@@ -63,3 +90,7 @@ private void Picker_OnColumnLoaded(object sender, Syncfusion.SfPicker.XForms.Col
 {% endhighlight %}
 
 {% endtabs %}
+
+![](images/ColumnEnableLooping.png)
+
+You can find the sample from this [link.](http://www.syncfusion.com/downloads/support/forum/137855/ze/ColumnAutoReverse185183685)

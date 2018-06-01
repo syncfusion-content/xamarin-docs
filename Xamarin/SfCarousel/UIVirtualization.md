@@ -13,21 +13,50 @@ In UI virtualization concept, only the number of items that can be adaptable to 
 
 The following property has been used in UIVirtualization support:
 
-* IsVirtualizing  
+* EnableVirtualization  
 
-## IsVirtualizing
+## EnableVirtualization
 
-UIvirtualization concept is achieved by enabling the IsVirtualizing property.
+UIvirtualization concept is achieved by enabling the EnableVirtualization property.
 
-N> The default value of the IsVirtualizing property is false.
+N> The default value of the EnableVirtualization property is false.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<syncfusion:SfCarousel 
-      x:Name="carousel"
-      IsVirtualizing="True" />
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:LoadMore"
+    x:Class="LoadMore.MainPage"
+    xmlns:carousel="clr-namespace:Syncfusion.SfCarousel.XForms;assembly=Syncfusion.SfCarousel.XForms">
+
+<ContentPage.BindingContext>
+  <local:CarouselViewModel/>
+</ContentPage.BindingContext>
+
+	<ContentPage.Resources>
+		<ResourceDictionary>
+			<DataTemplate x:Key="itemTemplate">
+				<Image Source="{Binding Image}"
+				Aspect="AspectFit"/>
+			</DataTemplate>
+		</ResourceDictionary>
+	</ContentPage.Resources>
+
+	<ContentPage.Content>
+		<carousel:SfCarousel x:Name="carousel"
+						ItemTemplate="{StaticResource itemTemplate}"
+						ItemsSource="{Binding ImageCollection}"
+						ItemHeight="200"
+						ItemWidth="200"
+						ItemSpacing="2"
+                        EnableVirtualization="True"
+						ViewMode="Linear">
+		</carousel:SfCarousel>
+	</ContentPage.Content>
+</ContentPage>
 
 {% endhighlight %}
 
@@ -35,10 +64,33 @@ N> The default value of the IsVirtualizing property is false.
 
 SfCarousel carousel = new SfCarousel();
 
-//Enable virtualization in SfCarousel
+this.BindingContext = new CarouselViewModel();
 
-carousel.IsVirtualizing = true;
+carousel.ItemTemplate = new DataTemplate(() => {
+                Image image = new Image();
+                image.SetBinding(Image.SourceProperty, "Image");
+                image.Aspect = Aspect.AspectFit;
+                return image;
+            });
+
+carousel.SetBinding(SfCarousel.ItemsSourceProperty, "ImageCollection");
+
+carousel.ItemHeight = 100;
+
+carousel.ItemWidth = 100;
+
+carousel.ItemSpacing = 2;
+            
+carousel.MaximumItemsCount = 5;
+            
+//Enable Virtualization in SfCarousel
+           
+ carousel.EnableVirtualization = true;
 
 {% endhighlight %}
 
 {% endtabs %}
+
+![](images/UIVirtualization.png)
+
+You can find the complete UIVirtualization sample from this [link.](http://www.syncfusion.com/downloads/support/forum/137855/ze/UIVirtualization618680329)

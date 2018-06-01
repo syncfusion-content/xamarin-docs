@@ -77,7 +77,7 @@ Finally use the below code snippet to apply custom font family for forms Android
 
 {% highlight C# %}
 
-    editor.AddText("New Text", new TextSettings(){FontFamily="Xefus"});
+    editor.AddText("New Text", new TextSettings(){FontFamily="Pacifico"});
 
 {% endhighlight %}
 
@@ -100,7 +100,7 @@ with font family name.
 
 {% highlight C# %}
 
-    editor.AddText("New Text", new TextSettings(){FontFamily="Assets/Xefus.ttf#Xefus"});
+    editor.AddText("New Text", new TextSettings(){FontFamily="Assets/Pacifico.ttf#Pacifico"});
 
 {% endhighlight %}
 
@@ -127,7 +127,7 @@ Finally follow the below code snippet to apply custom font family in Forms iOS.
 
 {% highlight C# %}
 
-    editor.AddText("New Text", new TextSettings(){FontFamily="Xefus"});
+    editor.AddText("New Text", new TextSettings(){FontFamily="Pacifico"});
 
 {% endhighlight %}
 

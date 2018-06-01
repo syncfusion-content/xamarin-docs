@@ -85,7 +85,6 @@ Schedule supports full data binding to any type of IEnumerable source. Specify t
 | [RecurrenceRuleMapping](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping~RecurrenceRuleMapping.html) | This property is to map the property name of custom class which is equivalent for RecurrenceRule of ScheduleAppointment. |
 | [NotesMapping](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping~NotesMapping.html) | This property is to map the property name of custom class which is equivalent for Notes of ScheduleAppointment. |
 | [LocationMapping](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping~LocationMapping.html) | This property is to map the property name of custom class which is equivalent for Location of ScheduleAppointment. |
-| [IsRecursiveMapping](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping~IsRecursiveMapping.html) | This property is to map the property name of custom class which is equivalent for IsRecursive of ScheduleAppointment. |
 | [MinHeightMapping](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping~MinHeightMapping.html) | This property is to map the property name of custom class which is equivalent for MinHeight of ScheduleAppointment. |
 
 N> CustomAppointment class should contain two DateTime fields and a string field as mandatory.
@@ -230,7 +229,7 @@ weekViewSeetings.AllDayAppointmentLayoutColor = Color.Silver;
 ![](PopulatingAppointments_images/allday.png)
 
 ## Recurrence Appointment
-Recurring appointment on a daily, weekly, monthly, or yearly interval. Recurring appointments can be created by enabling `IsRecursive` property in Schedule appointments.
+Recurring appointment on a daily, weekly, monthly, or yearly interval. Recurring appointments can be created by enabling `RecurrenceCount` property in Schedule appointments.
 
 ### Recurrence Rule
 The `RecurrenceRule` is a string value, that contains the details of the recurrence appointments like repeat type - daily/weekly/monthly/yearly, how many times it needs to be repeated, the interval duration and also the time period to render the appointment, etc.
@@ -250,42 +249,21 @@ The `RecurrenceRule` is a string value, that contains the details of the recurre
 ### Recurrence Pattern
 Recurrence pattern used in the control are in iCal standard. Schedule control supports all four types of [recurrence patterns](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceType.html).
 
-| RecurrenceType | RecurrenceProperties | Description |
-|----------------|-------------------------|---------------------------------------------------------------|
-| Daily | [DailyNDays](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~DailyNDays.html) | Gets or sets the event to recur on a daily N intervals basis. |
-|  | [IsDailyEveryNDays](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~IsDailyEveryNDays.html) | Checks whether the event occurs Daily Every N days. |
-| Weekly | [IsWeeklySunday ](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~IsWeeklySunday.html)| Checks whether the event occurs every Sunday of week |
-|  | [IsWeeklyMonday](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~IsWeeklyMonday.html) | Checks whether the event occurs every Monday of week |
-|  | [IsWeeklyTuesday](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~IsWeeklyTuesday.html) | Checks whether the event occurs every Tuesday of week |
-|  | [IsWeeklyWednesday](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~IsWeeklyWednesday.html) | Checks whether the event occurs every Wednesday of week |
-|  | [IsWeeklyThursday](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~IsWeeklyThursday.html) | Checks whether the event occurs every Thursday of week |
-|  | [IsWeeklyFriday](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~IsWeeklyFriday.html) | Checks whether the event occurs every Friday of week |
-|  | [IsWeeklySaturday](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~IsWeeklySaturday.html) | Checks whether the event occurs every Saturday of week |
-|  | [NthWeek](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~NthWeek.html) | Gets or sets the event only nth week of the year. |
-|  | [WeekDay](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~WeekDay.html) | Gets or sets the event every week day. |
-|  | [WeeklyEveryNWeeks](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~WeeklyEveryNWeeks.html) | Gets or sets the event every N Weeks. |
-| Monthly | [SpecificMonth](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~SpecificMonth.html) | Gets or sets the event in a specific month. |
-|  | [SpecificMonthDay](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~SpecificMonthDay.html) | Gets or sets the event in a specific month day. |
-|  | [IsMonthlySpecific](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~IsMonthlySpecific.html) | Checks whether the event is Monthly specific event |
-|  | [MonthlyEveryNMonths](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~MonthlyEveryNMonths.html) | Gets or sets the event every N Months. |
-|  | [MonthlyNthWeek](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~MonthlyNthWeek.html) | Gets or sets the event nth week of every month. |
-|  | [MonthlySpecificMonthDay](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~MonthlySpecificMonthDay.html) | Gets or sets the event specific month day of Month. |
-|  | [MonthlyWeekDay](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~MonthlyWeekDay.html) | Gets or sets the event every week day of month. |
-| Yearly | [IsYearlySpecific](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~IsYearlySpecific.html) | Checks whether the event is Yearly Specific. |
-|  | [YearlyEveryNYears](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~YearlyEveryNYears.html) | Gets or sets the event occurs every N Years. |
-|  | [YearlyGenericMonth](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~YearlyGenericMonth.html) | Gets or sets the event occurs in generic month. |
-|  | [YearlyNthWeek](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~YearlyNthWeek.html) | Gets or sets the event occurs yearly nth week. |
-|  | [YearlySpecificMonth](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~YearlySpecificMonth.html) | Gets or sets the event occurs yearly specific month. |
-|  | [YearlySpecificMonthDay](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~YearlySpecificMonthDay.html) | Gets or sets the event occurs yearly specific month day. |
-|  | [YearlyWeekDay](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~YearlyWeekDay.html) | Gets or sets the event occurs yearly week day. |
-|  | [EveryNYears](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~EveryNYears.html) | Gets or sets the event every N Years. |
-| Common | [IsRangeEndDate](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~IsRangeEndDate.html) | Checks whether the event has Range end date |
-|  | [IsRangeNoEndDate](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~IsRangeNoEndDate.html) | Checks whether the event has No Range end date |
-|  | [IsRangeRecurrenceCount](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~IsRangeRecurrenceCount.html) | Checks whether the event has recurrence count. |
-|  | [RangeEndDate](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~RangeEndDate.html) | Gets or sets the event range end date. |
-|  | [RangeStartDate](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~RangeStartDate.html) | Gets or sets the event range start date. |
-|  | [RangeRecurrenceCount](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~RangeRecurrenceCount.html) | Gets or sets the event range recurrence count. |
-|  | [IsSpecific](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~IsSpecific.html) | Checks whether the event occurs in Specific recurrence type. |
+| RecurrenceType | RecurrenceProperties | Description                                                                                 |
+|----------------|----------------------|---------------------------------------------------------------------------------------------|
+| Daily          | Interval             | Gets or sets the day interval on which recurrence has to be set.                            |
+| Weekly         | Interval             | Gets or sets the day interval on which recurrence has to be set.                            |
+|                | DayOfWeek            | Gets or sets the day of week on which recurrence has to be set.                             |
+|                | WeekDays             | Gets or sets the day/days in a week on which recurrence has to be set.                      |
+| Monthly        | Interval             | Gets or sets the day interval on which  recurrence has to be set.                           |
+|                | DayOfWeek            | Gets or sets the day of week on which  recurrence has to be set.                            |
+| Yearly         | Interval             | Gets or sets the day interval on which recurrence has to be set.                            |
+|                | DayOfMonth           | Gets or sets the day on which recurrence has to be set for every month.                     |
+|                | DayOfWeek            | Gets or sets the day of week on which  recurrence has to be set.                            |
+| Common         | RecurrenceRange      | Gets or sets the type of the recurrence range for the time limit of recurrence appointment. |
+|                | RecurrenceCount      | Gets or sets the count for recurring appointment.                                           |
+|                | StartDate            | Gets or sets the date to start the recurrence appointment.                                  |
+|                | EndDate              | Gets or sets the date to end the recurrence appointment.                                    |
 
 Find the following `RecurrenceRule` possibilities available in the Schedule control while creating the recurrence appointment.
 
@@ -327,7 +305,6 @@ var scheduleAppointment = new ScheduleAppointment()
 	StartTime = new DateTime(2017, 05, 08, 10, 0, 0),
 	EndTime = new DateTime(2017, 05, 08, 12, 0, 0),
 	Subject = "Occurs every alternate day",
-	IsRecursive = true
 };
 
 //Adding schedule appointment in schedule appointment collection
@@ -339,10 +316,10 @@ schedule.DataSource=scheduleAppointmentCollection;
 // Creating recurrence rule
 RecurrenceProperties recurrenceProperties = new RecurrenceProperties();
 recurrenceProperties.RecurrenceType = RecurrenceType.Daily;
-recurrenceProperties.IsRangeRecurrenceCount = true;
-recurrenceProperties.DailyNDays = 2;
+recurrenceProperties.RecurrenceRange = RecurrenceRange.Count;
+recurrenceProperties.Interval = 2;
 recurrenceProperties.IsDailyEveryNDays = true;
-recurrenceProperties.RangeRecurrenceCount = 10;
+recurrenceProperties.RecurrenceCount = 10;
 recurrenceProperties.RecurrenceRule = DependencyService.Get<IRecurrenceBuilder>().RRuleGenerator(recurrenceProperties, scheduleAppointment.StartTime, scheduleAppointment.EndTime);
 
 // Setting recurrence rule to schedule appointment
@@ -353,7 +330,7 @@ scheduleAppointment.RecurrenceRule = recurrenceProperties.RecurrenceRule;
 ![](PopulatingAppointments_images/recurrence.png)
 
 ### Creating Custom Recurrence Appointment using Recurrence Builder
-For creating custom recurrence appointment you need to create a custom class `Meeting` with mandatory fields `From`, `To`, `EventName`, `IsRecursive` and `RecurrenceRule`.
+For creating custom recurrence appointment you need to create a custom class `Meeting` with mandatory fields `From`, `To`, `EventName` and `RecurrenceRule`.
 
 {% tabs %}
 {% highlight c# %}
@@ -366,7 +343,6 @@ public class Meeting
 	public DateTime From { get; set; }
 	public DateTime To { get; set; }
 	public Color Color { get; set; }
-	public bool IsRecursive { get; set; }
 	public string RecurrenceRule { get; set; }
 }
 {% endhighlight %}
@@ -385,7 +361,6 @@ You can map those properties of `Meeting` class with our SfSchedule control by u
 			ColorMapping="Color"
 			StartTimeMapping="From"
 			EndTimeMapping="To"
-			IsRecursiveMapping="IsRecursive"
 			RecurrenceRuleMapping="RecurrenceRule">
 		</syncfusion:ScheduleAppointmentMapping>
 	</syncfusion:SfSchedule.AppointmentMapping>
@@ -398,13 +373,12 @@ dataMapping.SubjectMapping = "EventName";
 dataMapping.StartTimeMapping = "From";
 dataMapping.EndTimeMapping = "To";
 dataMapping.ColorMapping = "Color";
-dataMapping.IsRecursiveMapping = "IsRecursive";
 dataMapping.RecurrenceRuleMapping = "RecurrenceRule";
 schedule.AppointmentMapping = dataMapping;
 {% endhighlight %}
 {% endtabs %}
 
-You can schedule recurring meetings for daily, weekly, monthly, or yearly interval by setting `IsRecursive` and `RecurrenceRule` of `Meeting` class. Create meetings of type `ObservableCollection <Meeting>` and assign those appointments collection `Meetings` to the `DataSource` property which is of `IEnumerable` type.
+You can schedule recurring meetings for daily, weekly, monthly, or yearly interval by setting  `RecurrenceRule` of `Meeting` class. Create meetings of type `ObservableCollection <Meeting>` and assign those appointments collection `Meetings` to the `DataSource` property which is of `IEnumerable` type.
 
 {% tabs %}
 {% highlight c# %}
@@ -418,23 +392,15 @@ meeting.To = meeting.From.AddHours(2);
 meeting.EventName = "Client Meeting";
 // Setting color for an event
 meeting.Color = Color.Green;
-// Setting whether the event is recurring
-meeting.IsRecursive = true;
+
 
 // Creating recurrence rule
 RecurrenceProperties recurrenceProperties = new RecurrenceProperties();
-recurrenceProperties.RecurrenceType = RecurrenceType.Weekly;
-recurrenceProperties.WeeklyEveryNWeeks = 1;
-recurrenceProperties.IsWeeklySunday = false;
-recurrenceProperties.IsWeeklyMonday = true;
-recurrenceProperties.IsWeeklyTuesday = false;
-recurrenceProperties.IsWeeklyWednesday = true;
-recurrenceProperties.IsWeeklyThursday = false;
-recurrenceProperties.IsWeeklyFriday = true;
-recurrenceProperties.IsWeeklySaturday = false;
-recurrenceProperties.IsRangeRecurrenceCount = true;
-recurrenceProperties.RangeRecurrenceCount = 10;
-recurrenceProperties.RecurrenceRule = DependencyService.Get<IRecurrenceBuilder>().RRuleGenerator(recurrenceProperties, meeting.From, meeting.To);
+recurrenceProperties.RecurrenceType = RecurrenceType.Weekly;
+recurrenceProperties.RecurrenceRange = RecurrenceRange.Count;
+recurrenceProperties.Interval = 2;
+recurrenceProperties.RecurrenceCount = 10;
+recurrenceProperties.RecurrenceRule = DependencyService.Get<IRecurrenceBuilder>().RRuleGenerator(recurrenceProperties, meeting.From, Meeting.To);
 
 // Setting recursive rule for an event
 meeting.RecurrenceRule = recurrenceProperties.RecurrenceRule;

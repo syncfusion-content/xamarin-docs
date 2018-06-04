@@ -36,7 +36,7 @@ TextSettings is defined to set the values for `Color`, `FontSize` and `FontFamil
 
 {% highlight C# %}
 
-    editor.AddText("New Text", new TextSettings(){Color = Color.Green, FontSize = 16d, FontFamily="Noteworthy"});
+    editor.AddText("New Text", new TextSettings(){Color = Color.Black, FontSize = 16d, FontFamily="Arial"});
 
 {% endhighlight %}
 

@@ -187,7 +187,7 @@ You can customize `height of the toolbar` and also toolbar items `icon` and `tex
 
 ### Customize Toolbar Height 
 
-SfImageEditor control supports to customize the default height of `Header`, `Footer` and `Subitem` Toolbar by using following properties,
+SfImageEditor control supports to customize the default height of `Header`, `Footer` and `Sub item` Toolbar by using following properties,
 1.	HeaderToolbarHeight
 2.	FooterToolbarHeight 
 3.	SubItemToolbarHeight

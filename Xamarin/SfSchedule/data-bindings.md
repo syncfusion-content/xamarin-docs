@@ -252,18 +252,25 @@ Recurrence pattern used in the control are in iCal standard. Schedule control su
 | RecurrenceType | RecurrenceProperties | Description                                                                                 |
 |----------------|----------------------|---------------------------------------------------------------------------------------------|
 | Daily          | Interval             | Gets or sets the day interval on which recurrence has to be set.                            |
+| 				 | IsDailyEveryNDays    | Checks whether the event occurs Daily Every N days.                                         |
 | Weekly         | Interval             | Gets or sets the day interval on which recurrence has to be set.                            |
 |                | DayOfWeek            | Gets or sets the day of week on which recurrence has to be set.                             |
 |                | WeekDays             | Gets or sets the day/days in a week on which recurrence has to be set.                      |
+|				 | Week					| Gets or sets the week of month on which recurrence has to be set.							  |
 | Monthly        | Interval             | Gets or sets the day interval on which  recurrence has to be set.                           |
 |                | DayOfWeek            | Gets or sets the day of week on which  recurrence has to be set.                            |
+|				 | Week					| Gets or sets the week of month on which recurrence has to be set.							  |
+|                | DayOfMonth           | Gets or sets the day on which recurrence has to be set for every month.                     |
 | Yearly         | Interval             | Gets or sets the day interval on which recurrence has to be set.                            |
 |                | DayOfMonth           | Gets or sets the day on which recurrence has to be set for every month.                     |
 |                | DayOfWeek            | Gets or sets the day of week on which  recurrence has to be set.                            |
+|				 | Month				| Gets or sets the specific month of year on which recurrence has to be set.				  |
+|				 | Week					| Gets or sets the week of month on which recurrence has to be set.							  |
 | Common         | RecurrenceRange      | Gets or sets the type of the recurrence range for the time limit of recurrence appointment. |
 |                | RecurrenceCount      | Gets or sets the count for recurring appointment.                                           |
 |                | StartDate            | Gets or sets the date to start the recurrence appointment.                                  |
 |                | EndDate              | Gets or sets the date to end the recurrence appointment.                                    |
+| 				 | IsSpecific			| Checks whether the event occurs in specific recurrence type.								  |
 
 Find the following `RecurrenceRule` possibilities available in the Schedule control while creating the recurrence appointment.
 

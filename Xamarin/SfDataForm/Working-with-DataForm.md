@@ -30,7 +30,7 @@ The following tables lists the several types of `DataFormItem` and its constrain
 Text
 </td>
 <td>
-Default DataFormItem generated for the String type and the properties with [DataType(DataType.Text)] and [DataType(DataType.MultilineText)] attributes. 
+Default DataFormItem generated for the String type and the properties with [DataType(DataType.Text)], [DataType(DataType.MultilineText)] and [DataType(DataType.Password)] attributes. 
 
 </td>
 </tr>
@@ -250,6 +250,55 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 }
 {% endhighlight %}
 {% endtabs %}
+
+## Localization
+ 
+You can localize the DataFormItem [Display](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DisplayAttribute.html
+) attribute values by using ResourceType display
+attribute or using the `AutoGeneratingDataFormItem` event.
+ 
+Please refer the [Localization]( https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/localization/text?tabs=vswin) document  to localize the application.
+ 
+Based on the culture specifies the corresponding culture string value of display attribute in Resource (.Resx) file as mentioned in document.
+ 
+### Using attribute.
+ 
+ResourceType [Display](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DisplayAttribute.html
+) attribute specifies the Resources File (.Resx) which is used to localize the Display attribute of Name, ShortName, GroupName and Prompt values.
+ 
+Here, Display attribute value get localized based on culture from Localization Resource File (.Resx).
+ 
+{% highlight c# %}
+ 
+   [Display(Name = "ContactName", Prompt ="FirstName", ResourceType = typeof(Localization))]
+        public string ContactName
+        {
+            get { return this.contactName; }
+            set
+            {
+                this.contactName = value;
+            }
+        }
+{% endhighlight %}
+ 
+### Using event.
+ 
+You can localize the Name, GroupName and Prompt display attribute in the editor by using the Resources (.Resx) file in the `AutoGeneratingDataFormItem` event.
+ 
+Here, Localization Resource File (.Resx) and accessed the localized string directly from it.
+ 
+{% highlight c# %}
+ 
+  dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+        {
+            if (e.DataFormItem.Name.Equals("ContactName"))
+            {
+                e.DataFormItem.PlaceHolderText = Localization.FirstName;
+                e.DataFormItem.Name = Localization.ContactName;
+            }
+        }
+{% endhighlight %}
 
 ## Changing DataFormItem
 

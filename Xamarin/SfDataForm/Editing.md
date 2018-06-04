@@ -205,6 +205,21 @@ Enum and List type property.
 DropDownControl
 </td>
 </tr>
+<tr>
+<td>
+Password
+</td>
+<td>
+{{'[DataFormPasswordEditor](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormPasswordEditor.html)'| markdownify }}
+</td>
+<td>
+The String type property and property with 
+[DataType(DataType.Password)] attribute.
+</td>
+<td>
+Entry
+</td>
+</tr>
 </table>
 
 ## Changing editor for type
@@ -312,35 +327,6 @@ dataForm.RegisterEditor("Salary", "Slider");
 {% endtabs %}
 
 ![](SfDataForm_images/Editing_SliderEditor.png)
-
-## Support for password editor
-
-You can load the password editor by overriding the [DataFormEditor](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormEditor%601.html) class and set IsPassword property as true in OnInitializeView method.
-
-{% tabs %}
-{% highlight c# %}
-public class CustomSliderEditor : DataFormEditor<Entry>
-{
-    public CustomSliderEditor(SfDataForm dataForm) : base(dataForm)
-    {
-    }
-
-    protected override Entry OnCreateEditorView()
-    {
-        return new Entry();
-    }
-    protected override void OnInitializeView(DataFormItem dataFormItem, Entry view)
-    {
-        view.IsPassword = true;
-    }
-}
-
-dataForm.RegisterEditor("PassWord", new CustomSliderEditor(dataForm));                        
-dataForm.RegisterEditor("Password", "PassWord");
-{% endhighlight %}
-{% endtabs %}
-
-![](SfDataForm_images/Editing_PasswordEditor.png)
 
 ## Support for Email editor
 

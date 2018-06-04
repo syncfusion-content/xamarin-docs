@@ -584,11 +584,12 @@ private void Schedule_OnAppointmentLoadedEvent(object sender, AppointmentLoadedE
 ![](PopulatingAppointments_images/appointmentstyle_customview.png)
 
 ## Drag and Drop Appointments
-Schedule Appointment can be drag and drop from one timeslot to another timeslot by enabling the [AllowAppointmentDrag](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AllowAppointmentDrag.html) property of `SfSchedule`.
+Appointments can be rescheduled using the drag and drop operation. To perform drag-and-drop operations within the schedule, enable the [AllowAppointmentDrag](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AllowAppointmentDrag.html) property of `SfSchedule`.
 
 {% tabs %}
 {% highlight xaml %}
 <schedule:SfSchedule x:Name=“schedule”
+ScheduleView="WeekView"
 AllowAppointmentDrag="true">
 </schedule:SfSchedule>
 {% endhighlight %}
@@ -667,7 +668,7 @@ var dropTime = e.DropTime;
 {% endhighlight %}
 {% endtabs %}
 
-### DragAndDrop Settings
+### Drag and Drop Settings
 Using [DragDropSettings](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~DragDropSettings.html) property of schedule can handle the behavior of drag and drop in Schedule. The `DragDropSettings` contains the following properties,
 
 [AllowNavigate](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DragDropSettings~AllowNavigate.html) - Using this boolean property can handle the Appointment dragging, whether navigate to next/previous view or not while dragging the appointment to the endpoint of the current view in Schedule.
@@ -698,11 +699,10 @@ timeIndicatorStyle.TextFormat = "hh : mm";
 {% endhighlight %}
 {% endtabs %}
 
->**Limitations**
+>**Notes**
 * While dropping appointment to `AllDay` panel from time slots, appointment start and end time will change to 12.00 AM.
-* While dropping appointment to time slots from `AllDay` panel, appointment duration will change as one (1) hour.
+* While dropping appointment to time slots from `AllDay` panel, appointment duration will change as one (1) hour from the dropped time.
 * Doesn't support control to control drag and drop.
-* Need to handle drag and drop manually when using custom Header/ViewHeader in Schedule.
 
 ## Customize appearance using DataTemplate
 The default appearance of the Appointment can be customized by using the [AppointmentTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~AppointmentTemplate.html) property of the Schedule.

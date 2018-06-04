@@ -598,6 +598,8 @@ schedule.AllowAppointmentDrag = true;
 {% endhighlight %}
 {% endtabs %}
 
+![](PopulatingAppointments_images/draganddrop.gif)
+
 By long-pressing the appointment you can hold and start dragging to next time slots and it can be handled by below ways.
 
 * [Handle dragging based on the appointment](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#handle-dragging-based-on-the-appointment)

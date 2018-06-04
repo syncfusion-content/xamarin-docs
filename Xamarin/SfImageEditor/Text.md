@@ -28,7 +28,7 @@ You can also add the desired text elements over the image programmatically. The 
 
 #### TextSettings
 
-TextSettings is defined to set the values for `Color`, `FontSize` and `FontFamily`. By default there are six types of font familiy has been given in toolbar that are 
+TextSettings is defined to set the values for `Color`, `FontSize` and `FontFamily`. By default there are six types of font family has been given in toolbar that are 
 `Arial`, `Noteworthy`, `Marker Felt`, `SignPainter`,`Bradley Hand`, `Snell Roundhand`.
 
 
@@ -46,6 +46,7 @@ TextSettings is defined to set the values for `Color`, `FontSize` and `FontFamil
 
 # Custom Font Family
 
+Using a font other than the built-in typefaces requires some platform-specific coding. The steps required for each platform are outlined below.
 Download the custom fonts file in ttf file format and add these fonts into required folder in particular project file.
 
 #### Android

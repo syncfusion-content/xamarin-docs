@@ -42,6 +42,10 @@ Following states will be notified via [ScrollState](https://help.syncfusion.com/
  * Idle: Specifies that `SfListView` is not currently scrolling.
  * Programmatic: Specifies that scrolling is performed by using [ScrollTo](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ScrollTo.html) or [ScrollToRowIndex](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LayoutBase~ScrollToRowIndex.html) method.
 
+The `ScrollView.Scrolled` event can be used for the following use case:
+
+* To change the size of the particular item in view when window is scrolled. 
+
 {% tabs %}
 {% highlight c# %}
 
@@ -84,7 +88,7 @@ The `Loaded` event used for the following use cases:
 
 ### Tapped event
 
-The [ItemTapped](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTapped_EV.html) event will be triggered whenever tapping the item. [ItemTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemTappedEventArgs.html) has the following members which provides the information for `ItemTapped` event:
+The [ItemTapped](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTapped_EV.html) event will be triggered whenever tapping the item. Here, `TapCommandParameter` property is maintain to set the parameter for [SfListView.TapCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~TapCommand.html) which will set the `ICommand` value to execute when tap on the `ListViewItem` and its default value is [ItemTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemTappedEventArgs.html). `ItemTappedEventArgs` has the following members which provides the information for `ItemTapped` event:
 
  * [ItemType](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemTappedEventArgs~ItemType.html): It gets the type of the tapped item.
  * [ItemData](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemTappedEventArgs~ItemData.html): The underlying data associated with the tapped item as its arguments.
@@ -146,7 +150,7 @@ The [ItemDoubleTapped](https://help.syncfusion.com/cr/cref_files/xamarin/sflistv
 
 ### ItemHolding event
 
-The [ItemHolding](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemHolding_EV.html) event will be triggered whenever long pressing the item. [ItemHoldingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemHoldingEventArgs.html) has the following members which provides the information for `ItemHolding` event:
+The [ItemHolding](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemHolding_EV.html) event will be triggered whenever long pressing the item. Here, `HoldCommandParameter` property is maintain to set the parameter for [SfListView.HoldCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~HoldCommand.html) which will set the `ICommand` value to exceute when tap on the `ListViewItem` and its default value is [ItemTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemTappedEventArgs.html). [ItemHoldingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemHoldingEventArgs.html) has the following members which provides the information for `ItemHolding` event:
 
  * [ItemType](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemHoldingEventArgs~ItemType.html): It gets the type of the long pressed item.
  * [ItemData](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemHoldingEventArgs~ItemData.html): The underlying data associated with the holding item as its arguments.
@@ -1153,3 +1157,49 @@ public partial class App : PrismApplication
 For more details, refer to [https://xamgirl.com/prism-in-xamarin-forms-step-by-step-part-1](https://xamgirl.com/prism-in-xamarin-forms-step-by-step-part-1).
 
 You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewPrism116483729).
+
+### Reset Itemsize while Scrolling
+
+The SfListView allows to reset the size of item which is loaded in the view while scrolling using `ScrollView.Scrolled` event.
+To change the itemsize while scrolling, follow the code.
+
+{% tabs %}
+{% highlight c# %}
+public partial class GroupingPage : ContentPage 
+{ 
+    bool min = true; 
+    bool max = true; 
+    public GroupingPage() 
+    { 
+        InitializeComponent(); 
+        var scrollview = listView.GetScrollView(); 
+        scrollview.Scrolled += Scrollview_Scrolled; 
+    } 
+ 
+    private void Scrollview_Scrolled(object sender, ScrolledEventArgs e) 
+    { 
+        if (e.ScrollY > 10) 
+        { 
+          if (min) 
+           { 
+             min = false; 
+             max = true; 
+            } 
+           Stack.HeightRequest = 40; 
+        } 
+        else if (e.ScrollY < 10 && max) 
+           { 
+             if (max) 
+             { 
+                max = false; 
+                min = true; 
+             } 
+             Stack.HeightRequest = 100; 
+           } 
+    } 
+} 
+{% endhighlight %}
+{% endtabs %}
+
+
+[here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Grouping-resize-1524811398)

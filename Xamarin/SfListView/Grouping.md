@@ -1162,3 +1162,100 @@ internal void InsertItemInGroup(List<object> items, object Item, int InsertAt)
 The following screenshot shows the output when item added at specified index. You can download entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AddItemAtIndex-1107798295).
 
 ![](SfListView_images/SfListView-AddItem.png)
+
+### GroupHeader with Single Converter for more than One Label
+
+The SfListView allows to use single converter instead of using separate converter for each label. This can be done by using specify the name for the label element and accessing it in the converter using `FindByName` and add another condition check whether the label is equal to the group label which you find by name like below code snippet. 
+
+{% tabs %}
+{% highlight xaml %}
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:dataSource="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable">
+  
+  <ContentPage.BindingContext>
+    <local:EmployeeViewModel />
+  </ContentPage.BindingContext>
+
+  <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:GroupHeaderConverter x:Key="TemplateConverter"/>
+            <local:BoolToImageConverter x:Key="BoolToImageConverter"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+  <ContentPage.Content>
+        <Grid>
+            <syncfusion:SfListView x:Name="listView" ItemSize="80" 
+                                   SelectionMode="Single"
+                                   AllowGroupExpandCollapse="True"
+                                   GroupHeaderSize="80"
+                                   ItemsSource="{Binding EmployeeInfo}" ItemSpacing="2">
+                <syncfusion:SfListView.GroupHeaderTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="30"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image x:Name="groupimage" Grid.Column="0" Source="{Binding .,Converter={StaticResource TemplateConverter}, ConverterParameter={x:Reference Name=groupimage}}"
+										    VerticalOptions="Center"
+                                            HorizontalOptions="StartAndExpand" HeightRequest="50"/>
+                                    <Grid Grid.Column="1">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="40"/>
+                                            <RowDefinition Height="40"/>
+                                        </Grid.RowDefinitions>
+                                        <Label x:Name="grouplabel" Grid.Row="0"
+										   Text="{Binding .,Converter={StaticResource TemplateConverter}, ConverterParameter={x:Reference Name=grouplabel}}" />
+                                        <Label x:Name="grouplabel1" Grid.Row="1"
+										   Text="{Binding .,Converter={StaticResource TemplateConverter}, ConverterParameter={x:Reference Name=grouplabel1}}" />
+                                    </Grid>
+                                    <Image x:Name="NormalImage" Grid.Column="2" 
+                                           Source="{Binding IsExpand, Converter={StaticResource BoolToImageConverter}}"/>
+                                </Grid>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </syncfusion:SfListView.GroupHeaderTemplate>
+  </ContentPage.Content>
+</ContentPage>
+
+{% endhighlight %}
+{% endtabs %}
+
+Here, single converter is used to convert for group labels as follows. 
+
+{% tabs %}
+{% highlight c# %}
+public object Convert(object value, Type targetType, object parameter, CultureInfo culture)  
+{  
+    if (value == null) 
+      return null; 
+ 
+    groupdataitems = (value as GroupResult).Items.ToList<Employee>().ToList(); 
+    var data = groupdataitems[0]; 
+    var label = parameter as Label; 
+             
+    if (parameter is Label) 
+    { 
+      var grouplabel = label.FindByName<Label>("grouplabel"); 
+      var grouplabel1 = label.FindByName<Label>("grouplabel1"); 
+ 
+      if (grouplabel != null && label == grouplabel) 
+        return data.GroupingData.Designation; 
+      else if (grouplabel1 != null && label == grouplabel1) 
+        return data.GroupingData.Level; 
+                 
+      return null; 
+    } 
+    else 
+      return data.GroupingData.EmployeeImage;
+}   
+{% endhighlight %}
+{% endtabs %}
+
+You can download entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GroupingConverter-1784343703).

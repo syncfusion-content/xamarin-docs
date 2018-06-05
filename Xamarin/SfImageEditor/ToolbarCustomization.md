@@ -192,11 +192,17 @@ SfImageEditor control supports to customize the default height of `Header`, `Foo
 2.	FooterToolbarHeight 
 3.	SubItemToolbarHeight
 
-#### To Customize the HeaderToolbarHeight
-
 Header toolbar items will be resize based on the header toolbar height. To change Height of the Header Toolbar by using property HeaderToolbarHeight as like below,
 
 {% tabs %}
+
+{% highlight C# %}
+
+        <imageeditor:SfImageEditor.ToolbarSettings>
+                    <imageeditor:ToolbarSettings HeaderToolbarHeight="70"/>
+                </imageeditor:SfImageEditor.ToolbarSettings>
+
+{% endhighlight %}
 
 {% highlight C# %}
 
@@ -206,11 +212,18 @@ Header toolbar items will be resize based on the header toolbar height. To chang
 
 {% endtabs %}
 
-#### To Customize the FooterToolbarHeight
 
 Footer toolbar items will be resized based on the footer toolbar height. To change Height of the Footer Toolbar by using property FooterToolbarHeight as like below,
 
 {% tabs %}
+
+{% highlight C# %}
+
+        <imageeditor:SfImageEditor.ToolbarSettings>
+                    <imageeditor:ToolbarSettings FooterToolbarHeight="70"/>
+                </imageeditor:SfImageEditor.ToolbarSettings>
+
+{% endhighlight %}
 
 {% highlight C# %}
 
@@ -220,11 +233,17 @@ Footer toolbar items will be resized based on the footer toolbar height. To chan
 
 {% endtabs %}
 
-#### To Customize the SubItemToolbarHeight
-
 Sub toolbar items will be resized based on the SubItem toolbar height. To change Height of the sub toolbar by using property SubItemToolbarHeight as like below,
 
 {% tabs %}
+
+{% highlight C# %}
+
+        <imageeditor:SfImageEditor.ToolbarSettings>
+                    <imageeditor:ToolbarSettings SubItemToolbarHeight="70"/>
+                </imageeditor:SfImageEditor.ToolbarSettings>
+
+{% endhighlight %}
 
 {% highlight C# %}
 
@@ -236,41 +255,23 @@ Sub toolbar items will be resized based on the SubItem toolbar height. To change
 
 ![SfImageEditor](ImageEditor_images/ToolbarHeightCustomization.png)
 
-## Toolbar Items Height Customization
+### Individual Toolbar Item Height Customization
 
 To arrange toolbar items aspect fit based on the toolbar height by using following properties  
 
 1.  TextHeight
 2.  IconHeight
 
-{% tabs %}
-
-{% highlight C# %}
-
-     editor.ToolbarSettings.ToolbarItems.Add(new FooterToolbarItem() {Icon= ImageSource.FromResource("ImageEditor.share.png"),Text="Share"});
-
-{% endhighlight %}
-
-•	To change the toolbar item text height as like below,
+To change the toolbar item Text and Icon height as like below,
 
 {% tabs %}
 
 {% highlight C# %}
 
-    editor.ToolbarSettings.ToolbarItems[8].IconHeight = 40;
-
+    editor.ToolbarSettings.ToolbarItems.Add(new FooterToolbarItem() {Icon= ImageSource.FromResource("ImageEditor.share.png"),Text="Share",IconHeight=40,TextHeight=20 });
+    
 {% endhighlight %}
 
 {% endtabs %}
 
-•	To change the toolbar item icon height as like below,
 
-{% tabs %}
-
-{% highlight C# %}
-
-    editor.ToolbarSettings.ToolbarItems[8].TextHeight = 20;
-
-{% endhighlight %}
-
-{% endtabs %}

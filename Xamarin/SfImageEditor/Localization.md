@@ -37,7 +37,9 @@ CurrentCulture must be set in the platform projects.
 
 Converting  the platform specific format to a .NET format and set it to Thread.CurrentThread.CurrentUICulture. We will use the value set to this static property from our source to read the values in PCL project’s Syncfusion.SfImageEditor.XForms.ja-JP.resx files.
 
-{% highlight C# %}
+{% tabs %}
+
+{% highlight c# %}
 
     public void SetLocale(CultureInfo ci)
     {
@@ -69,11 +71,15 @@ Converting  the platform specific format to a .NET format and set it to Thread.C
                     ci = new CultureInfo("en");
                 }
             }
-              return ci;
+        return ci;
     }
 {% endhighlight %} 
 
+{% endtabs %}
+
 here japanese language is converted to CultureInfo equivalent
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -84,6 +90,8 @@ here japanese language is converted to CultureInfo equivalent
                 break;
 
 {% endhighlight %} 
+
+{% endtabs %}
 
 Change the language preference in device.
 

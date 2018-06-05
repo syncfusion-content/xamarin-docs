@@ -56,7 +56,7 @@ with font family name.
 
 {% highlight C# %}
 
-    if((Plaftorm=="Android")||(Platform=="iOS"))
+    if((Device.OS == TargetPlatform.Android)||(Device.OS == TargetPlatform.iOS))
         editor.AddText("New Text", new TextSettings(){FontFamily="Pacifico"});
     else
         editor.AddText("New Text", new TextSettings(){FontFamily="Assets/Pacifico.ttf#Pacifico"});

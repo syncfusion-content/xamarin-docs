@@ -196,7 +196,7 @@ Header toolbar items will be resize based on the header toolbar height. To chang
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight XAML %}
 
         <imageeditor:SfImageEditor.ToolbarSettings>
                     <imageeditor:ToolbarSettings HeaderToolbarHeight="70"/>
@@ -217,7 +217,7 @@ Footer toolbar items will be resized based on the footer toolbar height. To chan
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight XAML %}
 
         <imageeditor:SfImageEditor.ToolbarSettings>
                     <imageeditor:ToolbarSettings FooterToolbarHeight="70"/>
@@ -237,7 +237,7 @@ Sub toolbar items will be resized based on the SubItem toolbar height. To change
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight XAML %}
 
         <imageeditor:SfImageEditor.ToolbarSettings>
                     <imageeditor:ToolbarSettings SubItemToolbarHeight="70"/>

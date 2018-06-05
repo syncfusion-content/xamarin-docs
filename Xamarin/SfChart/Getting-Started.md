@@ -46,23 +46,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ### Universal Windows Platform (UWP)
 
-To launch the chart in UWP, call the SfChartRenderer.Init() method in the constructor of MainPage before the LoadApplication method is called as demonstrated in the following code sample.
-
-{% highlight C# %} 
-
-public MainPage() 
-{ 
-    … 
-
-  Syncfusion.SfChart.XForms.UWP.SfChartRenderer.Init();
-
-  LoadApplication (new App ()); 
-  … 
-}
-
-{% endhighlight %}
-
-In addition to the above configurations, you need to initialize the chart assemblies in App.xaml.cs in UWP project as shown in the below code snippets. This is required to deploy application with chart in `Release` mode in UWP platform.
+To deploy the chart in `Release` mode, you need to initialize the chart assemblies in App.xaml.cs in UWP project as shown in the below code snippets.
 
 {% highlight C# %} 
 

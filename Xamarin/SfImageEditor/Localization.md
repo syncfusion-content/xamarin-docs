@@ -11,23 +11,99 @@ documentation : ug
 
 The image editor control provides support for localization.You can localize ImageEditor contents by adding equivalent localized string.
 
-## Change default control language
+### Change default control language
 
 Based on the resource strings in the project the contents are localized accordingly.
 
 By default,ImageEditor control is available in English.
 
-### Change default texts in the control
+We can Localize ImageEditor contents in two ways,
 
-You can localize the custom strings used in the ImageEditor control. For that you need to configure it for each platform separately.
+* UsingResxfile from PCL
 
-Localizing the text in Android renderer.
+* From Platform Specific Projects
 
-Localizing the text in iOS renderer.
+### UsingResxfile from PCL
 
-Localizing the text in UWP renderer.
+You can localize the text from PCL by adding equivalent localized string in the resource file.
 
-### Localizing the text in Android renderer
+Add the required resx files under the Resources folder. 
+
+For Japanese, filename should be Syncfusion.SfImageEditor.XForms.ja-JP.resx
+
+Now set Build Action -> EmbeddedResource.
+
+CurrentCulture must be set in the platform projects.
+
+Converting  the platform specific format to a .NET format and set it to Thread.CurrentThread.CurrentUICulture. We will use the value set to this static property from our source to read the values in PCL project’s Syncfusion.SfImageEditor.XForms.ja-JP.resx files.
+
+{% highlight C# %}
+
+    public void SetLocale(CultureInfo ci)
+    {
+        Thread.CurrentThread.CurrentCulture = ci;
+        Thread.CurrentThread.CurrentUICulture = ci;
+    }
+    
+    public CultureInfo GetCurrentCultureInfo()
+    {
+        var netLanguage = "en";
+        var androidLocale = Java.Util.Locale.Default;
+        netLanguage =                                     
+        AndroidToDotnetLanguage(androidLocale.ToString().Replace("_", "-"));
+            CultureInfo ci = null;
+            try
+            {
+                ci = new CultureInfo(netLanguage);
+            }
+            catch
+            {
+                try
+                {
+                    var fallback = ToDotnetFallbackLanguage(new                
+                                   PlatformCulture(netLanguage));
+                    ci = new CultureInfo(fallback); 
+                }
+                catch
+                {
+                    ci = new CultureInfo("en");
+                }
+            }
+              return ci;
+    }
+{% endhighlight %} 
+
+here japanese language is converted to CultureInfo equivalent
+
+{% highlight C# %}
+
+          var netLanguage = platCulture.LanguageCode; 
+
+          case "ja":
+                netLanguage = "ja-JP"; //equivalent to Japanese for this app
+                break;
+
+{% endhighlight %} 
+
+Change the language preference in device.
+
+![SfImageEditor](ImageEditor_images/FormsResources.png)
+
+In below screenshot we have localized the text to Japanese language.
+
+![SfImageEditor](ImageEditor_images/ResourcesFileForms.png)
+
+#### From Platform Specific Projects
+
+You can localize the text from different platforms by adding equivalent localized string in the resource file.For that you need to configure it for each platform separately.
+
+* Localizing the text in Android renderer.
+
+* Localizing the text in iOS renderer.
+
+* Localizing the text in UWP renderer.
+
+### Android
 
 You can localize the text available in the control by adding equivalent localized string in the resource file.
 
@@ -41,7 +117,7 @@ In below screenshot we have localized the text  to French language.
 
 ![SfImageEditor](ImageEditor_images/androidresources.png)
 
-### Localizing the text in iOS renderer
+### iOS 
 
 You can localize custom text available in the control by adding equivalent localized string in the resource file.
 
@@ -55,7 +131,7 @@ In below screenshot we have localized the text to French language.
 
 ![SfImageEditor](ImageEditor_images/ioslocalizable.png)
 
-### Localizing the text in UWP renderer
+### UWP 
 
 You can localize custom text available in the control by adding equivalent localized string in the resource file.
 

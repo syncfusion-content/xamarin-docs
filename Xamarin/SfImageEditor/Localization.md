@@ -19,11 +19,11 @@ By default,ImageEditor control is available in English.
 
 We can Localize ImageEditor contents in two ways,
 
-* UsingResxfile from PCL
+* Using Resx file from PCL
 
 * From Platform Specific Projects
 
-### UsingResxfile from PCL
+### Using Resx file from PCL
 
 You can localize the text from PCL by adding equivalent localized string in the resource file.
 
@@ -35,16 +35,18 @@ Now set Build Action -> EmbeddedResource.
 
 CurrentCulture must be set in the platform projects.
 
-Converting  the platform specific format to a .NET format and set it to Thread.CurrentThread.CurrentUICulture. We will use the value set to this static property from our source to read the values in PCL project’s Syncfusion.SfImageEditor.XForms.ja-JP.resx files.
+Converting  the platform specific format to a .NET format and set it to Thread.CurrentThread.CurrentUICulture.
+
+We will use the value set to this static property from our source to read the values in PCL project’s Syncfusion.SfImageEditor.XForms.ja-JP.resx files.
 
 {% tabs %}
 
 {% highlight c# %}
 
-    public void SetLocale(CultureInfo ci)
+    public void SetLocale(CultureInfo culture)
     {
-        Thread.CurrentThread.CurrentCulture = ci;
-        Thread.CurrentThread.CurrentUICulture = ci;
+        Thread.CurrentThread.CurrentCulture = culture;
+        Thread.CurrentThread.CurrentUICulture = culture;
     }
     
     public CultureInfo GetCurrentCultureInfo()
@@ -52,32 +54,32 @@ Converting  the platform specific format to a .NET format and set it to Thread.C
         var netLanguage = "en";
         var androidLocale = Java.Util.Locale.Default;
         netLanguage =                                     
-        AndroidToDotnetLanguage(androidLocale.ToString().Replace("_", "-"));
-            CultureInfo ci = null;
+        AndroidToLanguage(androidLocale.ToString().Replace("_", "-"));
+            CultureInfo culture = null;
             try
             {
-                ci = new CultureInfo(netLanguage);
+                culture = new CultureInfo(netLanguage);
             }
             catch
             {
                 try
                 {
-                    var fallback = ToDotnetFallbackLanguage(new                
+                    var fallback = ToFallbackLanguage(new                
                                    PlatformCulture(netLanguage));
-                    ci = new CultureInfo(fallback); 
+                    culture = new CultureInfo(fallback); 
                 }
                 catch
                 {
-                    ci = new CultureInfo("en");
+                    culture = new CultureInfo("en");
                 }
             }
-        return ci;
+        return culture;
     }
 {% endhighlight %} 
 
 {% endtabs %}
 
-here japanese language is converted to CultureInfo equivalent
+here Japanese language is converted to CultureInfo equivalent
 
 {% tabs %}
 

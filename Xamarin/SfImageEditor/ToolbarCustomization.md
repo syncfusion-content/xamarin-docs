@@ -192,14 +192,17 @@ SfImageEditor control supports to customize the default height of `Header`, `Foo
 2.	FooterToolbarHeight 
 3.	SubItemToolbarHeight
 
-Header toolbar items will be resize based on the header toolbar height. To change Height of the Header Toolbar by using property HeaderToolbarHeight as like below,
+Toolbar items will be resize based on the toolbar height. To change Height of the Toolbar as like below,
 
 {% tabs %}
 
 {% highlight XAML %}
 
-        <imageeditor:SfImageEditor.ToolbarSettings>
-                    <imageeditor:ToolbarSettings HeaderToolbarHeight="70"/>
+         <imageeditor:SfImageEditor.ToolbarSettings>
+                    <imageeditor:ToolbarSettings 
+                        HeaderToolbarHeight="70"
+                        FooterToolbarHeight="70"                          
+                        SubItemToolbarHeight="70"/>
                 </imageeditor:SfImageEditor.ToolbarSettings>
 
 {% endhighlight %}
@@ -207,51 +210,13 @@ Header toolbar items will be resize based on the header toolbar height. To chang
 {% highlight C# %}
 
     editor.ToolbarSettings.HeaderToolbarHeight = 70;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-
-Footer toolbar items will be resized based on the footer toolbar height. To change Height of the Footer Toolbar by using property FooterToolbarHeight as like below,
-
-{% tabs %}
-
-{% highlight XAML %}
-
-        <imageeditor:SfImageEditor.ToolbarSettings>
-                    <imageeditor:ToolbarSettings FooterToolbarHeight="70"/>
-                </imageeditor:SfImageEditor.ToolbarSettings>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
     editor.ToolbarSettings.FooterToolbarHeight = 70;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-Sub toolbar items will be resized based on the SubItem toolbar height. To change Height of the sub toolbar by using property SubItemToolbarHeight as like below,
-
-{% tabs %}
-
-{% highlight XAML %}
-
-        <imageeditor:SfImageEditor.ToolbarSettings>
-                    <imageeditor:ToolbarSettings SubItemToolbarHeight="70"/>
-                </imageeditor:SfImageEditor.ToolbarSettings>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
     editor.ToolbarSettings.SubItemToolbarHeight = 70;
 
 {% endhighlight %}
 
 {% endtabs %}
+
 
 ![SfImageEditor](ImageEditor_images/ToolbarHeightCustomization.png)
 
@@ -268,7 +233,15 @@ To change the toolbar item Text and Icon height as like below,
 
 {% highlight C# %}
 
-    editor.ToolbarSettings.ToolbarItems.Add(new FooterToolbarItem() {Icon= ImageSource.FromResource("ImageEditor.share.png"),Text="Share",IconHeight=40,TextHeight=20 });
+     FooterToolbarItem footerItem = new FooterToolbarItem()
+            {
+                IconHeight=40,
+                TextHeight=20,
+                Icon = ImageSource.FromResource("ImageEditor.share.png"),
+                Text = "Share"
+            };
+
+            editor.ToolbarSettings.ToolbarItems.Add(footerItem);
     
 {% endhighlight %}
 

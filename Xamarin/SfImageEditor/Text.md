@@ -49,6 +49,23 @@ TextSettings is defined to set the values for `Color`, `FontSize` and `FontFamil
 Using a font other than the built-in typefaces requires some platform-specific coding. The steps required for each platform are outlined below.
 Download the custom fonts file in ttf file format and add these fonts into required folder in particular project file.
 
+Use the below code snippet to apply custom font family. In forms Android and iOS you just give the font family name, But in UWP You should mention font file name with .ttf extension and "#" symbol
+with font family name.
+
+{% tabs %}
+
+{% highlight C# %}
+
+    if((Plaftorm=="Android")||(Platform=="iOS"))
+        editor.AddText("New Text", new TextSettings(){FontFamily="Pacifico"});
+    else
+        editor.AddText("New Text", new TextSettings(){FontFamily="Assets/Pacifico.ttf#Pacifico"});
+{% endhighlight %}
+
+{% endtabs %}
+
+![SfImageEditor](ImageEditor_images/FontFamily.png)
+
 #### Android
 
 Add the custom fonts into Assets folder in sample.Droid project.
@@ -57,18 +74,6 @@ Right click the font file and open properties, in that Change the "Build Action"
     
 ![SfImageEditor](ImageEditor_images/AndroidCustomFont.png)
     
-Finally use the below code snippet to apply custom font family for forms Android. In forms Android you just give the font family name.
-
-{% tabs %}
-
-{% highlight C# %}
-
-    editor.AddText("New Text", new TextSettings(){FontFamily="Pacifico"});
-
-{% endhighlight %}
-
-{% endtabs %}
-
 #### iOS
 
 Add the custom fonts into Resource file in sample.iOS project.
@@ -82,18 +87,6 @@ After open the source file you should need to add "Fonts provided by application
 
 ![SfImageEditor](ImageEditor_images/iOSCustomFont2.png)
 
-Finally follow the below code snippet to apply custom font family in Forms iOS.
-
-{% tabs %}
-
-{% highlight C# %}
-
-    editor.AddText("New Text", new TextSettings(){FontFamily="Pacifico"});
-
-{% endhighlight %}
-
-{% endtabs %}
-
 #### UWP
 
 Add the custom fonts into Assets folder in sample.UWP project.
@@ -101,18 +94,3 @@ Add the custom fonts into Assets folder in sample.UWP project.
 Right click the font file and open properties, in that change the  "Build Action" property of every font file as "Content" and "Copy to output directory" to "Copy Always".
     
 ![SfImageEditor](ImageEditor_images/UWPCustomFont.png)
-
-Finally use the below code snippet to apply custom font family in forms UWP. While you give the path, You should mention font file name with .ttf extension and "#" symbol
-with font family name.
-
-{% tabs %}
-
-{% highlight C# %}
-
-    editor.AddText("New Text", new TextSettings(){FontFamily="Assets/Pacifico.ttf#Pacifico"});
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![SfImageEditor](ImageEditor_images/FontFamily.png)

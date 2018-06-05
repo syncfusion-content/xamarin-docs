@@ -269,16 +269,16 @@ ResourceType [Display](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataf
 Here, Display attribute value get localized based on culture from Localization Resource File (.Resx).
  
 {% highlight c# %}
- 
-   [Display(Name = "ContactName", Prompt ="FirstName", ResourceType = typeof(Localization))]
-        public string ContactName
-        {
-            get { return this.contactName; }
-            set
-            {
-                this.contactName = value;
-            }
-        }
+
+[Display(Name = "ContactName", Prompt ="FirstName", ResourceType = typeof(Localization))]
+public string ContactName
+{
+    get { return this.contactName; }
+    set
+    {
+        this.contactName = value;
+    }
+}
 {% endhighlight %}
  
 ### Using event.
@@ -289,15 +289,15 @@ Here, Localization Resource File (.Resx) and accessed the localized string direc
  
 {% highlight c# %}
  
-  dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
 private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+    {
+        if (e.DataFormItem.Name.Equals("ContactName"))
         {
-            if (e.DataFormItem.Name.Equals("ContactName"))
-            {
-                e.DataFormItem.PlaceHolderText = Localization.FirstName;
-                e.DataFormItem.Name = Localization.ContactName;
-            }
+            e.DataFormItem.PlaceHolderText = Localization.FirstName;
+            e.DataFormItem.Name = Localization.ContactName;
         }
+    }
 {% endhighlight %}
 
 ## Changing DataFormItem

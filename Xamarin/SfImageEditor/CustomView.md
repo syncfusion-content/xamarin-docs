@@ -13,7 +13,7 @@ You can add any custom shapes or views on the image by using the `AddCustomView`
 
 {% highlight C# %}
 
-Image customImage = new Image() { Height = 200, Width = 200 };
+Image customImage = new Image() { HeightRequest = 200, WidthRequest = 200  };
 BitmapImage bitmapImage = new BitmapImage()
 {
   UriSource = new Uri(BaseUri, "Images/SampleImage.png")

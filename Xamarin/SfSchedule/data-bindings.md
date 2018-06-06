@@ -901,3 +901,4 @@ If you set an appointment as all day appointment then it's start time and end ti
 * No need to handle time zone for All day appointments
 * Dynamic changes of Schedule time zone and Appointment's start time zone and end time zone supported 
 * Custom Appointment supported for ScheduleAppointment's StartTimeZone and EndTimeZone properties
+* After rescheduling an appointment using drag and drop, its start and end times will be updated based on the start time zone and end time zone. 

@@ -30,91 +30,15 @@ N>The default value of the `AllowLoadMore` property is false.
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:LoadMore"
-    x:Class="LoadMore.MainPage"
-    xmlns:carousel="clr-namespace:Syncfusion.SfCarousel.XForms;assembly=Syncfusion.SfCarousel.XForms">
+	<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:local="clr-namespace:LoadMore"
+	x:Class="LoadMore.MainPage"
+	xmlns:carousel="clr-namespace:Syncfusion.SfCarousel.XForms;assembly=Syncfusion.SfCarousel.XForms">
 
-<ContentPage.BindingContext>
-  <local:CarouselViewModel />
-</ContentPage.BindingContext>
-
-	<ContentPage.Resources>
-		<ResourceDictionary>
-			<DataTemplate x:Key="itemTemplate">
-				<Image Source="{Binding Image}"
-				Aspect="AspectFit"/>
-			</DataTemplate>
-		</ResourceDictionary>
-	</ContentPage.Resources>
-
-	<ContentPage.Content>
-		<carousel:SfCarousel x:Name="carousel"
-						ItemTemplate="{StaticResource itemTemplate}"
-						ItemsSource="{Binding ImageCollection}"
-						ItemHeight="200"
-						ItemWidth="200"
-						ItemSpacing="2"
-                        AllowLoadMore="True"
-						ViewMode="Linear">
-		</carousel:SfCarousel>
-	</ContentPage.Content>
-</ContentPage>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfCarousel carousel = new SfCarousel();
-
-this.BindingContext = new CarouselViewModel();
-
-carousel.ItemTemplate = new DataTemplate(() => {
-                Image image = new Image();
-                image.SetBinding(Image.SourceProperty, "Image");
-                image.Aspect = Aspect.AspectFit;
-                return image;
-            });
-
-carousel.SetBinding(SfCarousel.ItemsSourceProperty, "ImageCollection");
-
-carousel.ItemHeight = 100;
-
-carousel.ItemWidth = 100;
-
- carousel.ItemSpacing = 2;
-
- //Enable load more in SfCarousel
-
-carousel.AllowLoadMore = true;
-
-carousel.ViewMode = ViewMode.Linear;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-## LoadMoreItemsCount
-
-Number of items can be maintained in the carousel control by using the `LoadMoreItemsCount` property. By using the `LoadMoreItemsCount` property, numerous items can be separated. 
-
-N>The default value of the `LoadMoreItemsCount` property is 3.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:LoadMore"
-    x:Class="LoadMore.MainPage"
-    xmlns:carousel="clr-namespace:Syncfusion.SfCarousel.XForms;assembly=Syncfusion.SfCarousel.XForms">
-
-<ContentPage.BindingContext>
-  <local:CarouselViewModel/>
-</ContentPage.BindingContext>
+	<ContentPage.BindingContext>
+	<local:CarouselViewModel/>
+	</ContentPage.BindingContext>
 
 	<ContentPage.Resources>
 		<ResourceDictionary>
@@ -125,19 +49,19 @@ N>The default value of the `LoadMoreItemsCount` property is 3.
 		</ResourceDictionary>
 	</ContentPage.Resources>
 
-	<ContentPage.Content>
-		<carousel:SfCarousel x:Name="carousel"
-						ItemTemplate="{StaticResource itemTemplate}"
-						ItemsSource="{Binding ImageCollection}"
-						ItemHeight="200"
-						ItemWidth="200"
-						ItemSpacing="2"
-						LoadMoreItemsCount="5"
-                        AllowLoadMore="True"
-						ViewMode="Linear">
-		</carousel:SfCarousel>
-	</ContentPage.Content>
-</ContentPage>
+		<ContentPage.Content>
+			<carousel:SfCarousel x:Name="carousel"
+				ItemTemplate="{StaticResource itemTemplate}"
+				ItemsSource="{Binding ImageCollection}"
+				ItemHeight="200"
+				ItemWidth="200"
+				ItemSpacing="2"
+				LoadMoreItemsCount="5"
+				AllowLoadMore="True"
+				ViewMode="Linear">
+			</carousel:SfCarousel>
+		</ContentPage.Content>
+	</ContentPage>
 
 {% endhighlight %}
 

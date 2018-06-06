@@ -311,56 +311,58 @@ ImageName = ImageSource.FromResource("MapsSample.pin.png");
 
 ## Events
 
-[`MarkerSelected`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~MarkerSelected_EV.html) event is triggered when the marker is selected.
-Argument contains the [`MapMarker`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarker.html) which gives the information about the marker.
+The `MarkerSelected` event is fired when the marker is selected. The `CustomView` and `MapMarker` have been passed to MarkerSelectedEventArgs.
+
+If you set any view for the CustomView property of MarkerSelectedEventArgs, then the corresponding view will be applied to the selected marker.
 
 {% tabs %}
 
 {% highlight xml %}
+      <ContentPage.Resources>
+        <ResourceDictionary>
+            <DataTemplate x:Key="selectedMarker">
+                <StackLayout >
+                    <Image Source="pin.png" Scale="1" Aspect="AspectFit "  
+                           HorizontalOptions="StartAndExpand" VerticalOptions="Center"   
+                           HeightRequest="15" WidthRequest="23"   />
+                 </StackLayout>
+            </DataTemplate>
+        </ResourceDictionary>
+    </ContentPage.Resources>
 
-  <maps:ShapeFileLayer Uri="usa_state.shp"  ShapeIDPath="State"   ItemsSource="{Binding Data}"                                       
-                                         ShapeIDTableField="STATE_NAME"  ShapeSelected="ShapeFileLayer_ShapeSelected"
-                                         ShowMapItems="True"/>                                     
+     <maps:ImageryLayer MarkerSelected="Layer_MarkerSelected" >
+                <maps:ImageryLayer.MarkerSettings>
+                    <maps:MapMarkerSetting IconColor="Red" 
+                                 IconSize="13" MarkerIcon="Diamond"/>
+                </maps:ImageryLayer.MarkerSettings>
+                <maps:ImageryLayer.Markers>
+                    <maps:MapMarker  Label="United States" 
+                                   Latitude="40" Longitude= "-101"/>
+                    <maps:MapMarker Label="Brazil"
+                                    Latitude="-15.7833" Longitude= "-52" />
+                    <maps:MapMarker Label="Congo" 
+                                    Latitude="-1.6" Longitude= "24.4" />
+                    <maps:MapMarker Label="Kazakhstan"
+                                    Latitude="49.9" Longitude= "72.23" />
+                    <maps:MapMarker Label="Australia" 
+                                    Latitude="-20.54" Longitude= "134.10" />
+                </maps:ImageryLayer.Markers>
+            </maps:ImageryLayer>
+        </maps:SfMaps.Layers>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-private void ShapeFileLayer_MarkerSelected(MapMarker marker)
+private void Layer_MarkerSelected(object sender, MarkerSelectedEventArgs e)
         {
-            Toast.IsVisible = true;
-
-            markerLabel.Text = marker.Label;           
-
-            Device.StartTimer(new TimeSpan(0, 0, 3), () =>
-            {
-                Toast.IsVisible = false;
-                return false;
-            });
+            e.CustomView = this.Resources["selectedMarker"] as DataTemplate;
         }
 
-{% endhighlight %}
-
-{% endtabs %}
-
-Below code snippet explains the template used for Popup message.
-
-{% tabs %}
-
-{% highlight xml %}
-
-<StackLayout   x:Name="Toast" IsVisible="false" Orientation="Vertical" Spacing="0"  
-                           WidthRequest="100"  HorizontalOptions="Center" VerticalOptions="End" >
-                <Label x:Name="markerLabel" Text="State" HorizontalOptions="Center" 
-                       VerticalOptions="Center" XAlign="Center" YAlign="Center" FontSize="10" 
-                       WidthRequest="100"  HeightRequest= "20"   BackgroundColor="Green" 
-                       TextColor="White" />              
-
- </StackLayout>
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](Images/Markers_img4.jpeg)
+![](Images/MarkerSelected.png)
 

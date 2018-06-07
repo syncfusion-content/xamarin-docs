@@ -30,15 +30,15 @@ To localize the SfKanban based on `DefaultThreadCurrentCulture` and `DefaultThre
 
 2. Right-click the **Resources** folder, click **Add** and then click **NewItem**.
 
-3. In Add New Item  dialog, click the Resource File and name the filename as **Syncfusion.Sfkanban.Forms.[culture name].resw**. The culture name indicates name of language.
+3. In Add New Item  dialog, click the Resource File and name the filename as **Syncfusion.SfKanban.Forms.[culture name].resx**. The culture name indicates name of language.
 
-For example, you will have to give name as **Syncfusion.Sfkanban.Forms.fr.resw** for French culture.
+For example, you will have to give name as **Syncfusion.SfKanban.Forms.fr.resx** for French culture.
 
 ![](SfKanban_images\LocalizationAddResource.png)
 
-4. Add the Name/Value pair in Resource Designer of **Syncfusion.Sfkanban.Forms.[culture name].resw** file and change its corresponding value to corresponding culture.
+4. Add the Name/Value pair in Resource Designer of **Syncfusion.SfKanban.Forms.[culture name].resx** file and change its corresponding value to corresponding culture.
 
-You can get the SfKanban’s key from default resource [Syncfusion.Sfkanban.Forms.en.resw](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Sfkanban.Forms.en917192508.zip).
+You can get the SfKanban’s key from default resource [Syncfusion.SfKanban.Forms.en.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Sfkanban.Forms.en917192508.zip).
 
 ![](SfKanban_images\LocalizationOutput.png)
 

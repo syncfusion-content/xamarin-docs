@@ -323,6 +323,13 @@ You can resolve this error, by running the threading operation in a main UI thre
 
 {% tabs %}
 {% highlight xaml %}
+
+Task.Factory.StartNew(() =>
+{
+    var selectedCarouselItem = CarouselItems.ElementAt(Position);
+    selectedCarouselItem.CarouselItem.Day.RefreshItems();
+});
+
 public void RefreshItems()
 {
     Device.BeginInvokeOnMainThread(() =>

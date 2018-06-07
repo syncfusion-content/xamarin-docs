@@ -14,11 +14,8 @@ You can add any custom shapes or views on the image by using the `AddCustomView`
 {% highlight C# %}
 
 Image customImage = new Image() { HeightRequest = 200, WidthRequest = 200  };
-BitmapImage bitmapImage = new BitmapImage()
-{
-  UriSource = new Uri(BaseUri, "Images/SampleImage.png")
-};
-customImage.Source = bitmapImage;
+Assembly assembly = Assembly.GetAssembly(typeof(Sample));
+customImage.Source = ImageSource.FromResource("samplenamespace.CustomImage.png", assembly);
 imageEditor.AddCustomView(customImage, new CustomViewSettings());
   
 {% endhighlight %}

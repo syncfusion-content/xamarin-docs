@@ -316,6 +316,32 @@ The SfListView has been built from the ground up with an optimized view reuse st
 
 ### Limitation
 
+#### Changing the List on Background Thread.
+
+When the UI thread operations are done in the application parallelly which is bind to SfListView for example, modifying the underlying collection in a new UI thread, the marshall threading exception will be thrown in UWP platform due to two or more different UI main threads won’t be handled by .Net framework and the exception will be thrown. 
+You can resolve this error, by running the threading operation in a main UI thread in the PCL view as like below code example.
+
+{% tabs %}
+{% highlight xaml %}
+public void RefreshItems()
+{
+    Device.BeginInvokeOnMainThread(() =>
+    {
+      contactsinfo = new ObservableCollection<Contacts>();
+      contactsinfo.Clear();
+      for (int i=0;i<5;i++)
+        {
+           var contact = new Contacts();
+           contact.Name =Names[i] ;
+           contact.Number = Number[i];
+           contactsinfo.Add(contact);
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 #### Load SfListView inside ScrollView
 
 When the `SfListView` is loaded inside the `ScrollView` with the height of total items, scrolling will not occur in the SfListView only when [AllowSwiping](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AllowSwiping.html) is set to `true`. The SfListView does not pass touch to the parent ScrollView in UWP, because swiping is handled in it. 

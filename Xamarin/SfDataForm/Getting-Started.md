@@ -136,7 +136,7 @@ public MainPage()
 
 The known Framework issue in UWP platform is that the custom controls will not render when deployed the application in `Release Mode`.
 
-The above problem can be resolved by initializing the data form assemblies in `App.xaml.cs` in UWP project as in the following code snippet:
+The above problem can be resolved by initializing the data form assemblies in `App.xaml.cs` file in UWP project as in the following code snippet:
 
 {% tabs %}
 {% highlight c# %}
@@ -180,7 +180,7 @@ Create a new BlankApp (Xamarin.Forms.Portable) application in Xamarin Studio or 
 To add the data form to your application, follow the steps:
 
 1. Add required assemblies as discussed in assembly deployment section.
-2. Import the control namespace as `xmlns:syncfusion="clr-namespace:Syncfusion.XForms.DataForm;assembly=Syncfusion.SfDataForm.XForms` in XAML Page.
+2. Import the control namespace as `xmlns:dataForm="clr-namespace:Syncfusion.XForms.DataForm;assembly=Syncfusion.SfDataForm.XForms` in XAML Page.
 3. Create an instance of data form control and add as a view to the linear layout.
 
 {% tabs %}

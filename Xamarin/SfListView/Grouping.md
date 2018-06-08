@@ -1236,18 +1236,18 @@ public object Convert(object value, Type targetType, object parameter, CultureIn
     if (value == null) 
       return null; 
  
-    groupdataitems = (value as GroupResult).Items.ToList<Employee>().ToList(); 
-    var data = groupdataitems[0]; 
+    Items = (value as GroupResult).Items.ToList<Employee>().ToList(); 
+    var data = Items[0]; 
     var label = parameter as Label; 
              
     if (parameter is Label) 
     { 
-      var grouplabel = label.FindByName<Label>("grouplabel"); 
-      var grouplabel1 = label.FindByName<Label>("grouplabel1"); 
+      var groupLabel = label.FindByName<Label>("groupLabel"); 
+      var groupLabel1 = label.FindByName<Label>("groupLabel1"); 
  
-      if (grouplabel != null && label == grouplabel) 
+      if (groupLabel != null && label == groupLabel) 
         return data.GroupingData.Designation; 
-      else if (grouplabel1 != null && label == grouplabel1) 
+      else if (groupLabel1 != null && label == groupLabel1) 
         return data.GroupingData.Level; 
                  
       return null; 

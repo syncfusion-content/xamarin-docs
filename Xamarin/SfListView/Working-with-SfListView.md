@@ -150,7 +150,7 @@ The [ItemDoubleTapped](https://help.syncfusion.com/cr/cref_files/xamarin/sflistv
 
 ### ItemHolding event
 
-The [ItemHolding](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemHolding_EV.html) event will be triggered whenever long pressing the item. Here, `HoldCommandParameter` property is maintain to set the parameter for [SfListView.HoldCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~HoldCommand.html) which will set the `ICommand` value to exceute when tap on the `ListViewItem` and its default value is [ItemTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemTappedEventArgs.html). [ItemHoldingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemHoldingEventArgs.html) has the following members which provides the information for `ItemHolding` event:
+The [ItemHolding](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemHolding_EV.html) event will be triggered whenever long pressing the item. Here, `HoldCommandParameter` property is maintain to set the parameter for [SfListView.HoldCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~HoldCommand.html) which will set the `ICommand` value to execute when tap on the `ListViewItem` and its default value is [ItemTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemTappedEventArgs.html). [ItemHoldingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemHoldingEventArgs.html) has the following members which provides the information for `ItemHolding` event:
 
  * [ItemType](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemHoldingEventArgs~ItemType.html): It gets the type of the long pressed item.
  * [ItemData](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemHoldingEventArgs~ItemData.html): The underlying data associated with the holding item as its arguments.
@@ -318,7 +318,7 @@ The SfListView has been built from the ground up with an optimized view reuse st
 
 #### Changing the List on Background Thread.
 
-When the UI thread operations are done in the application parallelly which is bind to SfListView for example, modifying the underlying collection in a new UI thread, the marshall threading exception will be thrown in UWP platform due to two or more different UI main threads won’t be handled by .Net framework and the exception will be thrown. 
+When the UI thread operations are done in the application parallel which is bind to SfListView for example, modifying the underlying collection in a new UI thread, the marshal threading exception will be thrown in UWP platform due to two or more different UI main threads won’t be handled by .NET framework and the exception will be thrown. 
 You can resolve this error, by running the threading operation in a main UI thread in the PCL view as like below code example.
 
 {% tabs %}
@@ -334,14 +334,14 @@ public void RefreshItems()
 {
     Device.BeginInvokeOnMainThread(() =>
     {
-      contactsinfo = new ObservableCollection<Contacts>();
-      contactsinfo.Clear();
+      contactsInfo = new ObservableCollection<Contacts>();
+      contactsInfo.Clear();
       for (int i=0;i<5;i++)
         {
            var contact = new Contacts();
            contact.Name =Names[i] ;
            contact.Number = Number[i];
-           contactsinfo.Add(contact);
+           contactsInfo.Add(contact);
         }
     }
 }
@@ -1191,10 +1191,10 @@ For more details, refer to [https://xamgirl.com/prism-in-xamarin-forms-step-by-s
 
 You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewPrism116483729).
 
-### Reset Itemsize while Scrolling
+### Reset ItemSize while Scrolling
 
 The SfListView allows to reset the size of item which is loaded in the view while scrolling using `ScrollView.Scrolled` event.
-To change the itemsize while scrolling, follow the code.
+To change the size of an item while scrolling, follow the code.
 
 {% tabs %}
 {% highlight c# %}
@@ -1205,11 +1205,11 @@ public partial class GroupingPage : ContentPage
     public GroupingPage() 
     { 
         InitializeComponent(); 
-        var scrollview = listView.GetScrollView(); 
-        scrollview.Scrolled += Scrollview_Scrolled; 
+        var scrollView = listView.GetScrollView(); 
+        scrollView.Scrolled += ScrollView_Scrolled; 
     } 
  
-    private void Scrollview_Scrolled(object sender, ScrolledEventArgs e) 
+    private void ScrollView_Scrolled(object sender, ScrolledEventArgs e) 
     { 
         if (e.ScrollY > 10) 
         { 

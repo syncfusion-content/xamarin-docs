@@ -1209,10 +1209,10 @@ The SfListView allows to use single converter instead of using separate converte
                                             <RowDefinition Height="40"/>
                                             <RowDefinition Height="40"/>
                                         </Grid.RowDefinitions>
-                                        <Label x:Name="grouplabel" Grid.Row="0"
-										   Text="{Binding .,Converter={StaticResource TemplateConverter}, ConverterParameter={x:Reference Name=grouplabel}}" />
-                                        <Label x:Name="grouplabel1" Grid.Row="1"
-										   Text="{Binding .,Converter={StaticResource TemplateConverter}, ConverterParameter={x:Reference Name=grouplabel1}}" />
+                                        <Label x:Name="label" Grid.Row="0"
+										   Text="{Binding .,Converter={StaticResource TemplateConverter}, ConverterParameter={x:Reference Name=label}}" />
+                                        <Label x:Name="label1" Grid.Row="1"
+										   Text="{Binding .,Converter={StaticResource TemplateConverter}, ConverterParameter={x:Reference Name=label1}}" />
                                     </Grid>
                                     <Image x:Name="NormalImage" Grid.Column="2" 
                                            Source="{Binding IsExpand, Converter={StaticResource BoolToImageConverter}}"/>

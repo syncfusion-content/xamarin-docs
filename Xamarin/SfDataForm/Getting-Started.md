@@ -136,7 +136,7 @@ public MainPage()
 
 The known Framework issue in UWP platform is that the custom controls will not render when deployed the application in `Release Mode`.
 
-The above problem can be resolved by initializing the data form assemblies in `App.xaml.cs` page in UWP project as in the following code snippet:
+The above problem can be resolved by initializing the data form assemblies in `App.xaml.cs` file in UWP project as in the following code snippet:
 
 {% tabs %}
 {% highlight c# %}

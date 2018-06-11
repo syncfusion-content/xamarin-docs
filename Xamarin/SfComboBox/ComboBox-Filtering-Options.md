@@ -406,7 +406,7 @@ ComboBox provides three different ways to display the filtered suggestions. They
 
 * SuggestAppend - Both of these
 
-`ComboBoxeMode` property is used to choose the suggestion display mode in SfComboBox control. The default value is Suggest.
+`ComboBoxMode` property is used to choose the suggestion display mode in SfComboBox control. The default value is Suggest.
 
 ## Suggesting Choices in List
 

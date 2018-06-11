@@ -21,7 +21,7 @@ The Combo Box is a textbox component that allows the user to type a value or cho
 
 * Suggestion modes – Suggestions can be filtered in different modes, like StartsWith, EndWith, Contains, Equals, Custom etc. ComboBox provides both case sensitive and insensitive modes. The items only filter the Allow Filtering property has enabled.
 
-* MultiSelection – ComboBox provides 2 different ways to select multiple items from the suggestion list. They are using Token representation and Delimiter. In Token mode, the text can be wrapped in two ways. They are Wrap and None. In Warp mode text will be wrap to next line. When using None, the text will ne wrapped horizontally. 
+* MultiSelection – ComboBox provides 2 different ways to select multiple items from the suggestion list. They are using Token representation and Delimiter. In Token mode, the text can be wrapped in two ways. They are Wrap and None. In Warp mode text will be wrap to next line. When using None, the text will be wrapped horizontally. 
 
 * Customization Support – ComboBox provide options to customize both the Entry and Suggestion drop down.
 

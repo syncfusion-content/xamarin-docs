@@ -736,24 +736,55 @@ e.Cancel = true;
 {% endtabs %}
 
 ### Customizing the Drag and Drop environment
-Using [DragDropSettings](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~DragDropSettings.html) property of schedule can handle the behavior of drag and drop in Schedule. The `DragDropSettings` contains the following properties,
-
-[AllowNavigate](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DragDropSettings~AllowNavigate.html) - Using this boolean property can handle the Appointment dragging, whether navigate to next/previous view or not while dragging the appointment to the endpoint of the current view in Schedule. Default value of the `AllowNavigate` property is true and  Schedule will navigate to next/previous view when dragging the appointment the endpoint of the current view.
-[AutoNavigationDelay](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DragDropSettings~AutoNavigationDelay.html) - Using this `TimeSpan` property can handle the navigation time when navigating to next/previous view while holding the dragged appointment.
-[AllowScroll](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DragDropSettings~AllowScroll.html) - Using this boolean property can handle the Appointment dragging, whether scroll (below/above) the Schedule or not while dragging the appointment to the endpoint of the current view in Schedule. Default value of the `AllowScroll` property is true.
-[ShowTimeIndicator](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DragDropSettings~ShowTimeIndicator.html) - Using this boolean property can handle the time indicator whether it should visible or not, which shows the dragged appointment current position time in time text slots. Default value of the `ShowTimeIndicator` property is true.
-[TimeIndicatorStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DragDropSettings~TimeIndicatorStyle.html) - Using this property can handle the time indicator style which contains [TextColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.TimeIndicatorStyle~TextColor.html), [TextSize](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.TimeIndicatorStyle~TextSize.html) and [TextFormat](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.TimeIndicatorStyle~TextFormat.html).
+Using [DragDropSettings](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~DragDropSettings.html) property of schedule can handle the behavior of drag and drop in Schedule.
 
 {% tabs %}
 {% highlight c# %}
 DragDropSettings dragDropSettings = new DragDropSettings();
 dragDropSettings.AllowNavigate = true;
-dragDropSettings.AllowScroll = false;
+dragDropSettings.AllowScroll = true;
 var timeSpan = new TimeSpan(0, 0, 0, 1, 0);
 dragDropSettings.AutoNavigationDelay = timeSpan;
 dragDropSettings.ShowTimeIndicator = true;
 dragDropSettings.TimeIndicatorStyle = timeIndicatorStyle;
 schedule.DragDropSettings = dragDropSettings;
+{% endhighlight %}
+{% endtabs %}
+
+#### Disabling navigation when dragging appointment
+Using [AllowNavigate](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DragDropSettings~AllowNavigate.html) boolean property can handle the Appointment dragging, whether navigate to next/previous view or not while dragging the appointment to the endpoint of the current view in Schedule. Default value of the `AllowNavigate` property is true and  Schedule will navigate to next/previous view when dragging the appointment the endpoint of the current view.
+
+{% tabs %}
+{% highlight c# %}
+dragDropSettings.AllowNavigate = false;
+{% endhighlight %}
+{% endtabs %}
+
+#### Handling navigation delay while holding dragged appointment
+Using [AutoNavigationDelay](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DragDropSettings~AutoNavigationDelay.html)  `TimeSpan` property can handle the navigation time when navigating to next/previous view while holding the dragged appointment.
+
+{% tabs %}
+{% highlight c# %}
+var timeSpan = new TimeSpan(0, 0, 0, 1, 0);
+dragDropSettings.AutoNavigationDelay = timeSpan;
+{% endhighlight %}
+{% endtabs %}
+
+#### Disabling scroll when dragging appointment
+Using [AllowScroll](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DragDropSettings~AllowScroll.html) boolean property can handle the Appointment dragging, whether scroll (below/above) the Schedule or not while dragging the appointment to the endpoint of the current view in Schedule. Default value of the `AllowScroll` property is true.
+
+{% tabs %}
+{% highlight c# %}
+dragDropSettings.AllowScroll = false;
+{% endhighlight %}
+{% endtabs %}
+
+#### Disabling dragging time indicator
+[ShowTimeIndicator](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DragDropSettings~ShowTimeIndicator.html) - Using this boolean property can handle the time indicator whether it should visible or not, which shows the dragged appointment current position time in time text slots. Default value of the `ShowTimeIndicator` property is true.
+
+{% tabs %}
+{% highlight c# %}
+dragDropSettings.ShowTimeIndicator = false;
 {% endhighlight %}
 {% endtabs %}
 

@@ -42,10 +42,6 @@ Following states will be notified via [ScrollState](https://help.syncfusion.com/
  * Idle: Specifies that `SfListView` is not currently scrolling.
  * Programmatic: Specifies that scrolling is performed by using [ScrollTo](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ScrollTo.html) or [ScrollToRowIndex](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LayoutBase~ScrollToRowIndex.html) method.
 
-The `ScrollView.Scrolled` event can be used for the following use case:
-
-* To change the size of the particular item in view when window is scrolled. 
-
 {% tabs %}
 {% highlight c# %}
 
@@ -315,39 +311,6 @@ The SfListView has been built from the ground up with an optimized view reuse st
  * Avoid changing the cell layout based on the BindingContext. This incurs large layout and initialization costs.
 
 ### Limitation
-
-#### Changing the List on Background Thread.
-
-When the UI thread operations are done in the application parallel which is bind to SfListView for example, modifying the underlying collection in a new UI thread, the marshal threading exception will be thrown in UWP platform due to two or more different UI main threads won’t be handled by .NET framework and the exception will be thrown. 
-You can resolve this error, by running the threading operation in a main UI thread in the PCL view as like below code example.
-
-{% tabs %}
-{% highlight xaml %}
-
-Task.Factory.StartNew(() =>
-{
-    var selectedCarouselItem = CarouselItems.ElementAt(Position);
-    selectedCarouselItem.CarouselItem.Day.RefreshItems();
-});
-
-public void RefreshItems()
-{
-    Device.BeginInvokeOnMainThread(() =>
-    {
-      contactsInfo = new ObservableCollection<Contacts>();
-      contactsInfo.Clear();
-      for (int i=0;i<5;i++)
-        {
-           var contact = new Contacts();
-           contact.Name =Names[i] ;
-           contact.Number = Number[i];
-           contactsInfo.Add(contact);
-        }
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
 
 #### Load SfListView inside ScrollView
 
@@ -1190,49 +1153,3 @@ public partial class App : PrismApplication
 For more details, refer to [https://xamgirl.com/prism-in-xamarin-forms-step-by-step-part-1](https://xamgirl.com/prism-in-xamarin-forms-step-by-step-part-1).
 
 You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewPrism116483729).
-
-### Reset ItemSize while Scrolling
-
-The SfListView allows to reset the size of item which is loaded in the view while scrolling using `ScrollView.Scrolled` event.
-To change the size of an item while scrolling, follow the code.
-
-{% tabs %}
-{% highlight c# %}
-public partial class GroupingPage : ContentPage 
-{ 
-    bool min = true; 
-    bool max = true; 
-    public GroupingPage() 
-    { 
-        InitializeComponent(); 
-        var scrollView = listView.GetScrollView(); 
-        scrollView.Scrolled += ScrollView_Scrolled; 
-    } 
- 
-    private void ScrollView_Scrolled(object sender, ScrolledEventArgs e) 
-    { 
-        if (e.ScrollY > 10) 
-        { 
-          if (min) 
-           { 
-             min = false; 
-             max = true; 
-            } 
-           Stack.HeightRequest = 40; 
-        } 
-        else if (e.ScrollY < 10 && max) 
-           { 
-             if (max) 
-             { 
-                max = false; 
-                min = true; 
-             } 
-             Stack.HeightRequest = 100; 
-           } 
-    } 
-} 
-{% endhighlight %}
-{% endtabs %}
-
-
-[here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Grouping-resize-1524811398)

@@ -149,7 +149,6 @@ Now, let us create a simple list of country names and set it as the `DataSource`
 
 List<String> countryNames = new List<String>();
 countryNames.Add("Afghanistan"); 
-countryNames.Add("Akrotiri"); 
 countryNames.Add("Mexico"); 
 countryNames.Add("Norway"); 
 countryNames.Add("Singapore"); 

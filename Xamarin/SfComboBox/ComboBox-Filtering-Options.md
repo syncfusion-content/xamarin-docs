@@ -24,7 +24,6 @@ ComboBox provides enable the filer option for filtering the suggestions in drop 
 	
 List<String> countryNames = new List<String>();
 countryNames.Add("Afghanistan"); 
-countryNames.Add("Akrotiri"); 
 countryNames.Add("Albania");
 countryNames.Add("Algeria");
 countryNames.Add("American Samoa");

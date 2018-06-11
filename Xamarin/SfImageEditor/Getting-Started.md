@@ -111,7 +111,7 @@ Follow the following steps to add a image to pcl project
 
 1. Right click on your pcl project. 
 2. Select Add Files submenu from Add menu 
-3. Dailog box will appear then choose and import the desired image to the pcl project.
+3. Dialog box will appear then choose and import the desired image to the pcl project.
 4. Once the image is imported please ensure whether you have set EmbeddedResource as Build Action 
 
 To load an image to SfImageEditor follow the below codes.We have loaded a image of type jpg and name as "image".

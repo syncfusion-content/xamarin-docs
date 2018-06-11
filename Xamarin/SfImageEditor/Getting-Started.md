@@ -10,17 +10,41 @@ documentation: ug
 
 This section explains the steps required to load an image to the image editor. Image editor has a built-in toolbar, which has options to edit the image with shapes, path, text, crop, and flip.
 
-## Reference Essential Studio components in your solution
+## Adding Image Editor Reference
 
-After the Essential Studio for Xamarin has been installed, you can find all the required assemblies in the installation folders.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add image editor to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfImageEditor](https://www.nuget.org/packages/Syncfusion.Xamarin.SfImageEditor/), and then install it. 
 
-{Syncfusion Installed location}\Essential Studio\15.2.0.40\lib
+![SfImageEditor](ImageEditor_images/Nugetref.png)
 
-N> Assemblies are available in unzipped package location in Mac.
+To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfimageeditor) to know about the dependent assemblies for image editor. 
 
-Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain, and reference Essential Studio components in your solution. Then refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfimageeditor) link to know about the assemblies required for adding SfImageEditor to your project.
+N>Install the same version of the image editor NUGET in all the projects.
 
-I> After the reference has been added, an additional step is required for iOS projects. You should call Init method in the `SfImageEditorRenderer` as shown in this [KB article](http://www.syncfusion.com/support/kb/7772).
+## Launching the application in iOS with image editor
+
+To use the image editor inside iOS application, it requires some additional configurations as like below,
+
+### iOS
+
+To launch the image editor in iOS, call the SfImageEditorRenderer() method in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework initialization and before the LoadApplication method is called as demonstrated in the following code sample:
+
+{% highlight C# %} 
+
+ public override bool FinishedLaunching(UIApplication app, NSDictionary options) 
+
+ { 
+     … 
+
+     global::Xamarin.Forms.Forms.Init();
+
+     Syncfusion.SfImageEditor.XForms.iOS.SfImageEditorRenderer();
+
+     LoadApplication(new App()); 
+     …
+ }
+
+{% endhighlight %}
+
 
 # Initialize the image editor
 

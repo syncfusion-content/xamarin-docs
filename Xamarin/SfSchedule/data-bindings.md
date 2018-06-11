@@ -229,7 +229,7 @@ weekViewSeetings.AllDayAppointmentLayoutColor = Color.Silver;
 ![](PopulatingAppointments_images/allday.png)
 
 ## Recurrence Appointment
-Recurring appointment on a daily, weekly, monthly, or yearly interval. Recurring appointments can be created by enabling `RecurrenceCount` property in Schedule appointments.
+Recurring appointment on a daily, weekly, monthly, or yearly interval. Recurring appointments can be created by setting`RecurrenceRule` property in Schedule appointments.
 
 ### Recurrence Rule
 The `RecurrenceRule` is a string value, that contains the details of the recurrence appointments like repeat type - daily/weekly/monthly/yearly, how many times it needs to be repeated, the interval duration and also the time period to render the appointment, etc.

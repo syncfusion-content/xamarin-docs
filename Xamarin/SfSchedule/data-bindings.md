@@ -673,6 +673,26 @@ var draggingTime = e.DraggingTime;
 {% endhighlight %}
 {% endtabs %}
 
+### Displaying alert when dragging appointment over the blocked time slots
+Using `draggingPoint` and `draggingTime` properties in the `AppointmentDragEventArgs` of Schedule `AppointmentDragOver` event you can get the current position and time of dragging appointment. In the below, we have indicated the message while dragging over the Schedule `NonAccessibleBlock`.
+
+{% tabs %}
+{% highlight c# %}
+schedule.AppointmentDragOver += Schedule_AppointmentDragOver;
+
+...
+
+private void Schedule_AppointmentDragOver(object sender, AppointmentDragEventArgs e)
+{
+//// Comparing the NonAccessibleBlock Start hour with the dragging time
+if (schedule.WeekViewSettings.NonAccessibleBlocks[0].StartTime == e.DraggingTime.Hour)
+{
+label.Text = "Cannot be moved to blocked time slots";
+}
+}
+{% endhighlight %}
+{% endtabs %}
+
 ### Handle appointment dropping
 Using [AppointmentDrop](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~AppointmentDrop_EV.html) event you can get the dropping appointment details, position, time and you can handle whether the appointment can be dropped to the specific position or not. This event will trigger after dropping the appointment. The [AppointmentDropEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentDropEventArgs.html) argument contains the following properties.
 
@@ -706,6 +726,7 @@ schedule.AppointmentDrop += Schedule_AppointmentDrop;
 
 private void Schedule_AppointmentDrop(object sender, AppointmentDropEventArgs e)
 {
+//// Comparing the NonAccessibleBlock Start hour with the dragging time
 if (schedule.WeekViewSettings.NonAccessibleBlocks[0].StartTime == e.DropTime.Hour)
 {
 e.Cancel = true;

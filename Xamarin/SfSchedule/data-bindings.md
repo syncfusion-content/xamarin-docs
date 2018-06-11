@@ -604,10 +604,10 @@ By long-pressing the appointment you can hold and start dragging to next time sl
 
 * [Handle dragging based on the appointment](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#handle-dragging-based-on-the-appointment)
 * [Get the dragging appointment position](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#get-the-dragging-appointment-position)
-* [Handle Appointment Dropping](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#handle-dppointment-dropping)
+* [Handle appointment dropping](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#handle-appointment-dropping)
 
 ### Handle dragging based on the appointment
-Using [AppointmentDragStarting](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~AppointmentDragStarting_EV.html) event you can get the appointment details and can handle whether the appointment can drag or not. This event will trigger when the appointment is started  dragging. The [AppointmentDragStartingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentDragStartingEventArgs.html) argument contains the following properties.
+Using [AppointmentDragStarting](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~AppointmentDragStarting_EV.html) event, you can get the appointment details and handle whether the appointment can be draggable or not. This event will be triggered when the appointment is started dragging. The [AppointmentDragStartingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentDragStartingEventArgs.html) argument contains the following properties.
 
 [Appointment](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentDragStartingEventArgs~Appointment.html) - Gets the dragged appointment details.
 [Cancel](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentDragStartingEventArgs~Cancel.html)- Appointment dragging can be handled (enable/disable) using this boolean property.
@@ -621,6 +621,8 @@ schedule.AppointmentDragStarting += Schedule_AppointmentDragStarting;
 private void Schedule_AppointmentDragStarting(object sender, AppointmentDragStartingEventArgs e)
 {
 var appointment = e.Appointment;
+if (appointment.Subject == "Meeting")
+{
 e.Cancel = false;
 }
 {% endhighlight %}
@@ -648,8 +650,8 @@ var draggingTime = e.DraggingTime;
 {% endhighlight %}
 {% endtabs %}
 
-### Handle Appointment Dropping
-Using [AppointmentDrop](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~AppointmentDrop_EV.html) event you can get the dropped appointment details, position, time and you can handle whether the appointment can be dropped to the specific position or not. This event will trigger after dropping the appointment. The [AppointmentDropEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentDropEventArgs.html) argument contains the following properties.
+### Handle appointment dropping
+Using [AppointmentDrop](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~AppointmentDrop_EV.html) event you can get the dropping appointment details, position, time and you can handle whether the appointment can be dropped to the specific position or not. This event will trigger after dropping the appointment. The [AppointmentDropEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentDropEventArgs.html) argument contains the following properties.
 
 [Appointment](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentDropEventArgs~Appointment.html) - Gets the dropped appointment details.
 [Cancel](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentDropEventArgs~Cancel.html)- Appointment dropping can be handled (enable / disable) using this Boolean property.

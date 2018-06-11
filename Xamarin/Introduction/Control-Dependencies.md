@@ -67,6 +67,34 @@ This page lists the assemblies required for each control to be referred in each 
 </tr>
 </table>
 
+## SfComboBox 
+
+<dl>
+  <dt>NuGet</dt>
+  <dd>Syncfusion.Xamarin.SfComboBox</dd>
+</dl>
+
+**Assemblies**
+
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfComboBox.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfComboBox.XForms.Android.dll<br/>Syncfusion.SfComboBox.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfComboBox.XForms.iOS.dll<br/>Syncfusion.SfComboBox.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfComboBox.XForms.UWP.dll<br/>Syncfusion.SfComboBox.XForms.dll<br/></td>
+</tr>
+</table>
+
 ## SfImageEditor
 
 <dl>

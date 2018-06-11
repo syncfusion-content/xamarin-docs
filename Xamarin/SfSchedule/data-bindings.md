@@ -606,12 +606,6 @@ schedule.AllowAppointmentDrag = true;
 
 ![](PopulatingAppointments_images/draganddrop.gif)
 
-By long-pressing the appointment you can hold and start dragging to next time slots and it can be handled by below ways.
-
-* [Handle dragging based on the appointment](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#handle-dragging-based-on-the-appointment)
-* [Get the dragging appointment position](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#get-the-dragging-appointment-position)
-* [Handle appointment dropping](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#handle-appointment-dropping)
-
 ### Handle dragging based on the appointment
 Using [AppointmentDragStarting](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~AppointmentDragStarting_EV.html) event, you can get the appointment details and handle whether the appointment can be draggable or not. This event will be triggered when the appointment is started dragging. The [AppointmentDragStartingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentDragStartingEventArgs.html) argument contains the following properties.
 
@@ -741,13 +735,13 @@ e.Cancel = true;
 {% endhighlight %}
 {% endtabs %}
 
-### Drag and Drop Settings
+### Customizing the Drag and Drop environment
 Using [DragDropSettings](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~DragDropSettings.html) property of schedule can handle the behavior of drag and drop in Schedule. The `DragDropSettings` contains the following properties,
 
-[AllowNavigate](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DragDropSettings~AllowNavigate.html) - Using this boolean property can handle the Appointment dragging, whether navigate to next/previous view or not while dragging the appointment to the endpoint of the current view in Schedule.
-[AutoNavigationDelay](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DragDropSettings~AutoNavigationDelay.html) - Using this `TimeSpan` property can handle the navigation time to switch to next/previous view when navigating to next/previous view while holding the dragged appointment.
-[AllowScroll](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DragDropSettings~AllowScroll.html) - Using this boolean property can handle the Appointment dragging, whether scroll (below/above) the Schedule or not while dragging the appointment to the endpoint of the current view in Schedule.
-[ShowTimeIndicator](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DragDropSettings~ShowTimeIndicator.html) - Using this boolean property can handle the time indicator whether it should visible or not, which shows the dragged appointment current position time in time text slots.
+[AllowNavigate](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DragDropSettings~AllowNavigate.html) - Using this boolean property can handle the Appointment dragging, whether navigate to next/previous view or not while dragging the appointment to the endpoint of the current view in Schedule. Default value of the `AllowNavigate` property is true and  Schedule will navigate to next/previous view when dragging the appointment the endpoint of the current view.
+[AutoNavigationDelay](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DragDropSettings~AutoNavigationDelay.html) - Using this `TimeSpan` property can handle the navigation time when navigating to next/previous view while holding the dragged appointment.
+[AllowScroll](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DragDropSettings~AllowScroll.html) - Using this boolean property can handle the Appointment dragging, whether scroll (below/above) the Schedule or not while dragging the appointment to the endpoint of the current view in Schedule. Default value of the `AllowScroll` property is true.
+[ShowTimeIndicator](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DragDropSettings~ShowTimeIndicator.html) - Using this boolean property can handle the time indicator whether it should visible or not, which shows the dragged appointment current position time in time text slots. Default value of the `ShowTimeIndicator` property is true.
 [TimeIndicatorStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DragDropSettings~TimeIndicatorStyle.html) - Using this property can handle the time indicator style which contains [TextColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.TimeIndicatorStyle~TextColor.html), [TextSize](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.TimeIndicatorStyle~TextSize.html) and [TextFormat](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.TimeIndicatorStyle~TextFormat.html).
 
 {% tabs %}
@@ -763,12 +757,16 @@ schedule.DragDropSettings = dragDropSettings;
 {% endhighlight %}
 {% endtabs %}
 
+### Customize appearance of dragging Time Indicator
+Using [TimeIndicatorStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DragDropSettings~TimeIndicatorStyle.html) property can handle the time indicator style which contains [TextColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.TimeIndicatorStyle~TextColor.html), [TextSize](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.TimeIndicatorStyle~TextSize.html) and [TextFormat](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.TimeIndicatorStyle~TextFormat.html).
+
 {% tabs %}
 {% highlight c# %}
 TimeIndicatorStyle timeIndicatorStyle = new TimeIndicatorStyle();
 timeIndicatorStyle.TextColor = Color.Blue;
 timeIndicatorStyle.TextSize = 13;
 timeIndicatorStyle.TextFormat = "hh : mm";
+dragDropSettings.TimeIndicatorStyle = timeIndicatorStyle;
 {% endhighlight %}
 {% endtabs %}
 

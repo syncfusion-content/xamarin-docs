@@ -46,69 +46,130 @@ To launch the image editor in iOS, call the SfImageEditorRenderer() method in th
 {% endhighlight %}
 
 
-# Initialize the image editor
+## Creating a simple ImageEditor sample
 
-Import the SfImageEditor namespace as shown below in your respective page.
+This section explains how to create a SfImageEditor and configure it. The SfImageEditor control can be configured entirely in C# code or by using XAML markup.
+
+### Creating the project
+
+Create a new [BlankApp application](https://developer.xamarin.com/guides/xamarin-forms/xaml/xaml-basics/getting_started_with_xaml/) (Xamarin.Forms.Portable) in Xamarin Studio or Visual Studio for Xamarin.Forms.
+
+### Adding SfImageEditor in Xamarin.Forms 
+
+1. Add the [required assembly](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfimageeditor) references to the pcl and renderer projects. 
+
+2. Import SfImageEditor control namespace as `xmlns:syncfusion="clr-namespace:Syncfusion.SfImageEditor.XForms;assembly=Syncfusion.SfImageEditor.XForms` in XAML Page.
+
+3. Set the SfImageEditor control as content to the ContentPage.
 
 {% tabs %}
 
-{% highlight XAML %}
+{% highlight xaml %}
 
-    xmlns:imageeditor="clr-namespace:Syncfusion.SfImageEditor.XForms;assembly=Syncfusion.SfImageEditor.XForms"
+            <?xml version="1.0" encoding="UTF-8"?>
+            <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+                xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ImageEditor_GettingStarted.ImageEditor_GettingStartedPage"
+                xmlns:imageeditor="clr-namespace:Syncfusion.SfImageEditor.XForms;assembly=Syncfusion.SfImageEditor.XForms">
+                <ContentPage.Content>
+                    <imageeditor:SfImageEditor />
+                 </ContentPage.Content>
+            </ContentPage> 
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
     using Syncfusion.SfImageEditor.XForms;
+    using Xamarin.Forms;
 
+    public class App : Application
+        {
+            public App()
+            {
+                MainPage = new ImageEditor_GettingStartedPage();
+            }
+
+        }
+    Public class ImageEditor_GettingStartedPage : ContentPage
+    {
+        public ImageEditor_GettingStartedPage()
+        {
+            InitializeComponent();
+            SfImageEditor editor = new SfImageEditor();
+            this.Content = editor;
+        }
+    }
 {% endhighlight %}
-
 {% endtabs %}
 
-* Initialize the image editor as shown below.
+
+## Load image to ImageEditor
+
+SfImageEditor will get completed,once we load image to it.Add a image file to pcl project.The image file type can be jpeg or png.
+
+Follow the following steps to add a image to pcl project
+
+1. Right click on your pcl project. 
+2. Select Add Files submenu from Add menu 
+3. Dailog box will appear then choose and import the desired image to the pcl project.
+4. Once the image is imported please ensure whether you have set EmbeddedResource as Build Action 
+
+To load an image to SfImageEditor follow the below codes.We have loaded a image of type jpg and name as "image".
 
 {% tabs %}
 
-{% highlight XAML %}
+{% highlight xaml %}
 
-     <imageeditor:SfImageEditor>
-
-      </imageeditor:SfImageEditor>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-     SfImageEditor editor = new SfImageEditor();
-     this.Content = editor;
+    <?xml version="1.0" encoding="UTF-8"?>
+      <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ImageEditor_GettingStarted.ImageEditor_GettingStartedPage"
+            xmlns:imageeditor="clr-namespace:Syncfusion.SfImageEditor.XForms;assembly=Syncfusion.SfImageEditor.XForms">
+            <ContentPage.Content>
+                <imageeditor:SfImageEditor Source="{Binding Image}" />
+             </ContentPage.Content>
+      </ContentPage> 
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+    using Syncfusion.SfImageEditor.XForms;
+    using Xamarin.Forms;
+
+    public class App : Application
+        {
+            public App()
+            {
+                MainPage = new ImageEditor_GettingStartedPage();
+            }
+
+        }
+    Public class ImageEditor_GettingStartedPage : ContentPage
+    {
+        public ImageEditor_GettingStartedPage()
+        {
+            InitializeComponent();
+            BindingContext = new ImageModel();
+            SfImageEditor editor = new SfImageEditor();
+            this.Content = editor;
+        }
+    }
+
+    class ImageModel
+    {
+        public ImageSource Image { get; set; }
+
+        public ImageModel()
+        {
+            Image = ImageSource.FromResource("ImageEditor_GettingStarted.Image.jpg");
+        }
+    }
+
+{% endhighlight %}
 {% endtabs %}
 
-* Load an image to the image editor as bitmap object for Android. Because, SfImageEditor supports bitmap images in Android. You can load the image to the control as a bitmap object only in Android.
-In iOS and UWP, you can load the image to the image editor as image.
-  
-  * Android
-        
-           SfImageEditor editor = new SfImageEditor();
-           editor.Source = */Your Bitmap */;
-           Content = editor;
-  * iOS
-  
-           SfImageEditor editor = new SfImageEditor();
-           editor.Source = */Your Image */;
-           Content = editor;
-
-  * UWP
-
-           SfImageEditor editor = new SfImageEditor();
-           editor.Source = */Your Image */;
-           Content = editor;
 
 * The following screenshot illustrates loading the image to the SfImageEditor, you can start to edit the image by using the built-in Toolbars.
-
 
 
 ![SfImageEditor](ImageEditor_images/Gettingstarted.png)

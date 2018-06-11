@@ -259,9 +259,9 @@ attribute or using the `AutoGeneratingDataFormItem` event.
  
 Please refer the [Localization]( https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/localization/text?tabs=vswin) document  to localize the application.
  
-Based on the culture specifies the corresponding culture string value of display attribute in Resource (.Resx) file as mentioned in document.
+Based on the culture, specify the corresponding culture string value of display attribute in Resource (.Resx) file.
  
-### Using attribute.
+### Using attribute
  
 ResourceType [Display](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DisplayAttribute.html
 ) attribute specifies the Resources File (.Resx) which is used to localize the Display attribute of Name, ShortName, GroupName and Prompt values.
@@ -281,7 +281,7 @@ public string ContactName
 }
 {% endhighlight %}
  
-### Using event.
+### Using event
  
 You can localize the Name, GroupName and Prompt display attribute in the editor by using the Resources (.Resx) file in the `AutoGeneratingDataFormItem` event.
  
@@ -434,16 +434,16 @@ public class DataFormItemManagerExt : DataFormItemManager
         var items = new List<DataFormItemBase>();
         foreach (var propertyInfo in itemProperties)
         {
-           DataFormItem dataFormItem;
-				if (propertyInfo.Key == "ID")
-					dataFormItem = new DataFormTextItem() { Name = propertyInfo.Key, Editor = "Text" };
-				else if (propertyInfo.Key == "Name")
-					dataFormItem = new DataFormTextItem() { Name = propertyInfo.Key, Editor = "Text" };
-				else
-                    dataFormItem = new DataFormTextItem() { Name = propertyInfo.Key, Editor = "Text" };
+            DataFormItem dataFormItem;
+		    if (propertyInfo.Key == "ID")
+				dataFormItem = new DataFormTextItem() { Name = propertyInfo.Key, Editor = "Text" };
+			else if (propertyInfo.Key == "Name")
+				dataFormItem = new DataFormTextItem() { Name = propertyInfo.Key, Editor = "Text" };
+			else
+                dataFormItem = new DataFormTextItem() { Name = propertyInfo.Key, Editor = "Text" };
 
-				items.Add(dataFormItem);
-			}
+			items.Add(dataFormItem);
+		}
 
         return items;
     }

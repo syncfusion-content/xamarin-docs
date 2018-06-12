@@ -643,10 +643,6 @@ if (appointment.IsAllDay)
 {
 e.Cancel = true;
 }
-else
-{
-e.Cancel = false;
-}
 }
 {% endhighlight %}
 {% endtabs %}

@@ -130,7 +130,7 @@ SfSchedule schedule = new SfSchedule();
 {% endhighlight %}
 {% endtabs %}
 >**NOTE**
-Agenda View Appearance not applicable for UWP platform.
+Agenda View Appearance customization is not applicable for UWP platform.
 
 ## Agenda Item Template:
 The default appearance of the Appointment can be customized by using the [AgendaItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~AgendaItemTemplate.html) property of the `MonthViewSettings`.

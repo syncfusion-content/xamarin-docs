@@ -72,7 +72,7 @@ schedule.ShowAppointmentsInline = true;
 If appointments not there in the selected day, Inline view displays the text as "No Events"
 
 ## Agenda View:
-An agenda view displays selected appointments in a list below the month view. To enable agenda view in the schedule month view, set [ShowAgendaView](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~ShowAgendaView.html) to true as shown in the following code.
+The Schedule month view displays a divided agenda view which is used to show the selected date’s appointments below the month. You can show agenda view by setting [ShowAgendaView](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~ShowAgendaView.html) property as true.
 
 {% tabs %}
 {% highlight xaml %}

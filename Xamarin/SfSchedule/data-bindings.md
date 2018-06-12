@@ -790,8 +790,8 @@ Using [TimeIndicatorStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfs
 {% tabs %}
 {% highlight c# %}
 TimeIndicatorStyle timeIndicatorStyle = new TimeIndicatorStyle();
-timeIndicatorStyle.TextColor = Color.Blue;
-timeIndicatorStyle.TextSize = 13;
+timeIndicatorStyle.TextColor = Color.Red;
+timeIndicatorStyle.TextSize = 15;
 timeIndicatorStyle.TextFormat = "hh : mm";
 dragDropSettings.TimeIndicatorStyle = timeIndicatorStyle;
 {% endhighlight %}

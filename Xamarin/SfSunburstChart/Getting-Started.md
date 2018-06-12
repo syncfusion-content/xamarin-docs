@@ -622,13 +622,13 @@ Then, add the [`SunburstHierarchicalLevel`](https://help.syncfusion.com/cr/cref_
 
 {% highlight C# %}
 
-SfSunburstChart sunburst = new SfSunburstChart();           
-            sunburst.SetBinding(SfSunburstChart.ItemsSourceProperty, "DataSource");
-            sunburst.ValueMemberPath = "EmployeesCount";
-            sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country" });
-            sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription" });
-            sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup" });
-            sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole" });
+SfSunburstChart sunburstChart = new SfSunburstChart();           
+            sunburstChart.SetBinding(SfSunburstChart.ItemsSourceProperty, "DataSource");
+            sunburstChart.ValueMemberPath = "EmployeesCount";
+            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country" });
+            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription" });
+            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup" });
+            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole" });
  this.Content = sunburstChart;
 {% endhighlight %}
 
@@ -714,6 +714,66 @@ You can add data labels to improve the readability of the sunburst chart. Data l
             SfSunburstChart sunburstChart = new SfSunburstChart();  
             sunburstChart.DataLabel = new SunburstChartDataLabel();
             sunburstChart.DataLabel.ShowLabel = true;
+            this.Content = sunburstChart;
+
+{% endhighlight %}
+
+{% endtabs %} 
+
+Below snippet is the complete code for generating the final output.
+
+{% highlight xaml %}
+      
+          <sunburst:SfSunburstChart x:Name="sunburstChart" ItemsSource="{Binding DataSource}"
+                                  ValueMemberPath="EmployeesCount">
+
+                <sunburst:SfSunburstChart.Levels>
+                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="Country"/>
+                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobDescription"/>
+                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobGroup"/>
+                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobRole"/>
+                </sunburst:SfSunburstChart.Levels>
+
+                <sunburst:SfSunburstChart.Title>
+                    <sunburst:SunburstChartTitle x:Name="title" Text="Employees Count" ></sunburst:SunburstChartTitle>
+                </sunburst:SfSunburstChart.Title>
+
+                <sunburst:SfSunburstChart.Legend>
+                    <sunburst:SunburstChartLegend x:Name="legend" IsVisible="True" >
+                    </sunburst:SunburstChartLegend>
+                </sunburst:SfSunburstChart.Legend>
+
+                <sunburst:SfSunburstChart.DataLabel>
+                    <sunburst:SunburstChartDataLabel x:Name="dataLabel" ShowLabel="True"></sunburst:SunburstChartDataLabel>
+                </sunburst:SfSunburstChart.DataLabel>
+
+
+            </sunburst:SfSunburstChart>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+            this.BindingContext = new SunburstViewModel();
+
+            SfSunburstChart sunburstChart = new SfSunburstChart();
+
+            sunburstChart.SetBinding(SfSunburstChart.ItemsSourceProperty, "DataSource");
+            sunburstChart.ValueMemberPath = "EmployeesCount";
+            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country" });
+            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription" });
+            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup" });
+            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole" });
+                       
+            sunburstChart.Title = new SunburstChartTitle();
+            sunburstChart.Title.Text = "Employees Count";
+
+            sunburstChart.Legend = new SunburstChartLegend();
+            sunburstChart.Legend.IsVisible = true;
+
+            sunburstChart.DataLabel = new SunburstChartDataLabel();
+            sunburstChart.DataLabel.ShowLabel = true;
+
             this.Content = sunburstChart;
 
 {% endhighlight %}

@@ -235,4 +235,4 @@ carousel.LoadMoreView = grid;
 
 ![](images/LoadMore.png)
 
-You can find the complete Load More sample from this [link.](http://www.syncfusion.com/downloads/support/forum/137855/ze/LoadMore434862846)
+You can find the complete Load More sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LoadMore1567166256.zip)

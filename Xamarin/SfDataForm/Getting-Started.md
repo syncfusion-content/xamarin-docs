@@ -136,7 +136,7 @@ public MainPage()
 
 The known Framework issue in UWP platform is that the custom controls will not render when deployed the application in `Release Mode`.
 
-The above problem can be resolved by initializing the data form assemblies in `App.xaml.cs` in UWP project as in the following code snippet:
+The above problem can be resolved by initializing the data form assemblies in `App.xaml.cs` file in UWP project as in the following code snippet:
 
 {% tabs %}
 {% highlight c# %}
@@ -180,7 +180,7 @@ Create a new BlankApp (Xamarin.Forms.Portable) application in Xamarin Studio or 
 To add the data form to your application, follow the steps:
 
 1. Add required assemblies as discussed in assembly deployment section.
-2. Import the control namespace as `xmlns:syncfusion="clr-namespace:Syncfusion.XForms.DataForm;assembly=Syncfusion.SfDataForm.XForms` in XAML Page.
+2. Import the control namespace as `xmlns:dataForm="clr-namespace:Syncfusion.XForms.DataForm;assembly=Syncfusion.SfDataForm.XForms` in XAML Page.
 3. Create an instance of data form control and add as a view to the linear layout.
 
 {% tabs %}
@@ -389,7 +389,7 @@ The type of input editor generated for the data field depends on the type and at
 {{'[DataFormTextItem](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormTextItem.html)'| markdownify }}
 </td>
 <td>
-Generated for the String type property and any other type apart from the following specified cases.
+Default DataFormItem generated for the String type and the properties with [DataType(DataType.Text)], [DataType(DataType.MultilineText)] and [DataType(DataType.Password)] attributes.
 </td>
 </tr>
 <tr>
@@ -586,6 +586,17 @@ Enum and List type property.
 </td>
 <td>
 DropDownControl
+</td>
+</tr>
+<tr>
+<td>
+Password
+</td>
+<td>
+The String type property with [DataType(DataType.Password)] attribute.
+</td>
+<td>
+Entry
 </td>
 </tr>
 </table>

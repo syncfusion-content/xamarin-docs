@@ -27,7 +27,7 @@ The SfListView allows programmatic grouping by defining the [GroupDescriptor](ht
     <syncfusion:SfListView.DataSource>
       <data:DataSource>
         <data:DataSource.GroupDescriptors>
-          <data:SortDescriptor PropertyName="BookName"/>
+          <data:GroupDescriptor PropertyName="BookName"/>
         </data:DataSource.GroupDescriptors>
       </data:DataSource>
     </syncfusion:SfListView.DataSource>

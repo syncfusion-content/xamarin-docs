@@ -423,7 +423,7 @@ schedule.WorkWeekViewSettings = workWeekViewSettings;
 
 ## Time Label Size
 
-You can customize the size of the labels which are mentioning the time, by setting [TimeLabelSize](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfschedule/Syncfusion.SfSchedule.Android~Com.Syncfusion.Schedule.WorkWeekLabelSettings~TimeLabelSize.html) property of `WorkWeekLabelSettings` in `WorkWeekViewSettings`.
+You can customize the size of the labels which are mentioning the time, by setting [TimeLabelSize](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WorkWeekLabelSettings~TimeLabelSize.html) property of `WorkWeekLabelSettings` in `WorkWeekViewSettings`.
 
 {% tabs %}
 {% highlight C# %}

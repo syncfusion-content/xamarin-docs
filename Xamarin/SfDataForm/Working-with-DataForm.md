@@ -30,7 +30,7 @@ The following tables lists the several types of `DataFormItem` and its constrain
 Text
 </td>
 <td>
-Default DataFormItem generated for the String type and the properties with [DataType(DataType.Text)] and [DataType(DataType.MultilineText)] attributes. 
+Default DataFormItem generated for the String type and the properties with [DataType(DataType.Text)], [DataType(DataType.MultilineText)] and [DataType(DataType.Password)] attributes. 
 
 </td>
 </tr>
@@ -251,6 +251,74 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
+## Localization
+ 
+You can localize the DataFormItem [Display](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DisplayAttribute.html
+) attribute values by using ResourceType display
+attribute or using the `AutoGeneratingDataFormItem` event.
+ 
+Please refer the [Localization]( https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/localization/text?tabs=vswin) document  to localize the application.
+ 
+Based on the culture, specify the corresponding culture string value of display attribute in Resource (.Resx) file.
+ 
+### Using attribute
+ 
+ResourceType [Display](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DisplayAttribute.html
+) attribute specifies the Resources File (.Resx) which is used to localize the Display attribute of Name, ShortName, GroupName and Prompt values.
+ 
+Here, Display attribute value get localized based on culture from Localization Resource File (.Resx).
+ 
+{% highlight c# %}
+
+[Display(Name = "ContactName", Prompt ="FirstName", ResourceType = typeof(Localization))]
+public string ContactName
+{
+    get { return this.contactName; }
+    set
+    {
+        this.contactName = value;
+    }
+}
+{% endhighlight %}
+ 
+### Using event
+ 
+You can localize the Name, GroupName and Prompt display attribute in the editor by using the Resources (.Resx) file in the `AutoGeneratingDataFormItem` event.
+ 
+Here, Localization Resource File (.Resx) and accessed the localized string directly from it.
+ 
+{% highlight c# %}
+ 
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+    {
+        if (e.DataFormItem.Name.Equals("ContactName"))
+        {
+            e.DataFormItem.PlaceHolderText = Localization.FirstName;
+            e.DataFormItem.Name = Localization.ContactName;
+        }
+    }
+{% endhighlight %}
+
+## Changing DataFormItem
+
+You can change the created [DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem.html) and assign new `DataFormItem` in the [AutoGeneratingDataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~AutoGeneratingDataFormItem_EV.html) event.
+
+Here, [DataFormTextItem](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormTextItem.html) with number keyboard is loaded for numeric value instead of `DataFormNumericItem`.
+
+{% highlight c# %}
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null)
+    {
+       if (e.DataFormItem.Name == "ID")
+          e.DataFormItem = new DataFormTextItem() { Name = "ID", Editor = "Text", KeyBoard = Keyboard.Numeric };
+    }
+}
+{% endhighlight %}
+
 ## Adding or removing the data field displayed in the dataForm at runtime
 
 If you want to remove or add data fields item at runtime, you can use the [RefreshLayout](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~RefreshLayout.html) method which auto-generates the DataFormItem where you can skip certain item from display. By default, it will generate the canceled items initially. If you want to regenerate all the items, you should pass argument as `true`.
@@ -338,3 +406,125 @@ Here, the GroupName field is removed at runtime.
 ![](SfDataForm_images/MoreFieldsRemove.png)
 
 You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MoreFields1624183179.zip).
+
+## DataFormItemManager
+
+The [DataFormItemManager](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemManager.html) creates [DataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItems.html) collection and handles value reflection and validation. It also overrides to handle the get and set property values from and to the data object.
+
+### Manually defining DataFormItem
+
+By default, [DataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItems.html) will be generated based on data object. If you want to generate `DataFormItems` manually, you should override the [DataFormItemManager](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemManager.html) class and set it to [SfDataForm.ItemManager](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~ItemManager.html).
+
+To create `DataFormItems`, you should override the [GenerateDataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemManager~GenerateDataFormItems.html) method.
+
+{% highlight c# %}
+
+// data form item creating by setting DataObject.
+dataForm.DataObject = new ContactsInfo();
+dataForm.ItemManager = new DataFormItemManagerExt(dataForm);
+
+public class DataFormItemManagerExt : DataFormItemManager
+{       
+    public DataFormItemManagerExt(SfDataForm dataForm) : base(dataForm)
+    {
+
+    }
+    protected override List<DataFormItemBase> GenerateDataFormItems(PropertyInfoCollection itemProperties, List<DataFormItemBase> dataFormItems)
+    {
+        var items = new List<DataFormItemBase>();
+        foreach (var propertyInfo in itemProperties)
+        {
+            DataFormItem dataFormItem;
+		    if (propertyInfo.Key == "ID")
+				dataFormItem = new DataFormTextItem() { Name = propertyInfo.Key, Editor = "Text" };
+			else if (propertyInfo.Key == "Name")
+				dataFormItem = new DataFormTextItem() { Name = propertyInfo.Key, Editor = "Text" };
+			else
+                dataFormItem = new DataFormTextItem() { Name = propertyInfo.Key, Editor = "Text" };
+
+			items.Add(dataFormItem);
+		}
+
+        return items;
+    }
+}
+
+{% endhighlight %}
+
+### Loading data form with dictionary
+
+You can load the data form with custom dictionary by manually generating items and handling read and write values.
+
+#### Manually defining DataFormItem
+
+To create `DataFormItems` from dictionary , you should override the [GenerateDataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemManager~GenerateDataFormItems.html) method.
+
+{% highlight c# %}
+
+// data form item creating using dictionary.
+dataForm.DataObject = new object();
+var dictionary = new Dictionary<string, object>();
+dictionary.Add("ID", 1);
+dictionary.Add("Name", "John");
+dataForm.ItemManager = new DataFormItemManagerExt(dataForm, dictionary);
+
+public class DataFormItemManagerExt : DataFormItemManager
+{
+    Dictionary<string, object> dataFormDictionary;
+    public DataFormItemManagerExt(SfDataForm dataForm, Dictionary<string, object> dictionary) : base(dataForm)
+    {
+        dataFormDictionary = dictionary;
+    }
+
+    protected override List<DataFormItemBase> GenerateDataFormItems(PropertyInfoCollection itemProperties, List<DataFormItemBase> dataFormItems)
+    {
+        var items = new List<DataFormItemBase>();
+        foreach (var key in dataFormDictionary.Keys)
+        {
+            DataFormItem dataFormItem;
+            if (key == "ID")
+                dataFormItem = new DataFormNumericItem() { Name = key, Editor = "Numeric", MaximumNumberDecimalDigits = 0 };
+            else if (key == "Name")
+                dataFormItem = new DataFormTextItem() { Name = key, Editor = "Text" };
+            else
+                dataFormItem = new DataFormTextItem() { Name = key, Editor = "Text" };
+
+            items.Add(dataFormItem);
+        }
+         
+        return items;
+    }
+}
+
+{% endhighlight %}
+
+#### Handling reading and writing values to and from the data object
+
+By default, the value will be shown in editor by getting it from the data object and after editing, the data object will be committed with the new value. If you want to customize the value, you should override [GetValue](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemManager~GetValue.html) and [SetValue](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemManager~SetValue.html) methods in [DataFormItemManager](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemManager.html).
+
+Here, the value is reading and writing from/to dictionary instead of the data object.
+
+{% highlight c# %}
+public class DataFormItemManagerExt : DataFormItemManager
+{
+    Dictionary<string, object> dataFormDictionary;
+    public DataFormItemManagerExt(SfDataForm dataForm, Dictionary<string, object> dictionary) : base(dataForm)
+    {
+        dataFormDictionary = dictionary;
+    }
+
+    public override object GetValue(DataFormItem dataFormItem)
+    {
+        var value = dataFormDictionary[dataFormItem.Name];
+        return value;
+    }
+
+    public override void SetValue(DataFormItem dataFormItem, object value)
+    {
+        dataFormDictionary[dataFormItem.Name] = value;
+    }
+
+}
+{% endhighlight %}
+
+Here, the data form is loaded with field from dictionary.

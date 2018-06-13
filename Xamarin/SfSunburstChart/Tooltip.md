@@ -113,14 +113,14 @@ The sunburst chart provides options to design your own template for tooltip usin
             {
                 StackLayout stack = new StackLayout() { Orientation = StackOrientation.Vertical };
 
-                StackLayout categryLayout = new StackLayout() { Orientation = StackOrientation.Horizontal };
+                StackLayout categoryLayout = new StackLayout() { Orientation = StackOrientation.Horizontal };
                 Label label = new Label() { Text = "Country :" };
                 label.TextColor = Color.White;
                 Label category = new Label();
                 category.TextColor = Color.White;
                 category.SetBinding(Label.TextProperty, "Category");
-                categryLayout.Children.Add(label);
-                categryLayout.Children.Add(category);
+                categoryLayout.Children.Add(label);
+                categoryLayout.Children.Add(category);
 
                 StackLayout valueLayout = new StackLayout() { Orientation = StackOrientation.Horizontal };
                 Label label1 = new Label() { Text = "Count :" };
@@ -131,7 +131,7 @@ The sunburst chart provides options to design your own template for tooltip usin
                 valueLayout.Children.Add(label1);
                 valueLayout.Children.Add(value);
 
-                stack.Children.Add(categryLayout);
+                stack.Children.Add(categoryLayout);
                 stack.Children.Add(valueLayout);
                 return stack;
             });

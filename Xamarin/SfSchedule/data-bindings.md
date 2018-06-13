@@ -439,132 +439,6 @@ In Schedule "Xamarin.Forms UWP", there is no need to set IsRecursive property fo
 
 ![](PopulatingAppointments_images/RecurrenceAppointment.png)
 
-## Appearance Customization
-The default appearance of the appointment can be customized by using the [AppointmentStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle.html) property and [AppointmentLoadedEvent](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentLoadedEventArgs.html). The event and property is used to customize or override the default template of the Appointments.
-
-* [Customize appearance using Style](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#customize-appearance-using-style) 
-* [Customize appearance using Event](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#customize-appearance-using-event) 
-* [Customize appearance using Custom View](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#customize-appearance-using-custom-view)
-* [Customize appearance using DataTemplate](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#customize-appearance-using-datatemplate)
-* [Customize appearance using DataTemplateSelector](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#customize-appearance-using-datatemplateselector)
-
-### Customize appearance using Style
-Schedule appointment can be customized by setting appointment style properties such as [TextColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~TextColor.html), [FontFamily](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~FontFamily.html), [FontSize](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~FontSize.html), [FontAttributes](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~FontAttributes.html), [BorderColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~BorderColor.html), [BorderCornerRadius](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~BorderCornerRadius.html), [BorderWidth](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~BorderWidth.html) to the [AppointmentStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle.html) property of `SfSchedule`.
-
-{% tabs %}
-{% highlight xaml %}
-<syncfusion:SfSchedule x:Name="schedule" ScheduleView="DayView" DataSource="{Binding Meetings}">
-    <syncfusion:SfSchedule.AppointmentStyle>
-         <syncfusion:AppointmentStyle
-                       BorderWidth="10"
-                       TextColor="Red"
-                       BorderCornerRadius="10"
-                       FontSize = "25"
-                       FontAttributes = "Bold"
-                       FontFamily = "Arial"
-                       BorderColor="Blue">
-    </syncfusion:AppointmentStyle>
-</syncfusion:SfSchedule.AppointmentStyle>
-</syncfusion:SfSchedule>
-{% endhighlight %}
-{% highlight c# %}
-//Creating Appointment style
-AppointmentStyle appointmentStyle = new AppointmentStyle();
-appointmentStyle.TextColor = Color.Red;
-appointmentStyle.FontSize = 25;
-appointmentStyle.FontAttributes = FontAttributes.Bold;
-appointmentStyle.FontFamily = "Arial";
-appointmentStyle.BorderColor = Color.Blue;
-appointmentStyle.BorderCornerRadius = 12;
-appointmentStyle.BorderWidth = 10;
-
-//Setting Appointment Style
-schedule.AppointmentStyle = appointmentStyle;
-{% endhighlight %}
-{% endtabs %} 
-
-![](PopulatingAppointments_images/style.png)
-
-### Customize appearance using Event
-Schedule appointment can be customized during runtime using [OnAppointmentLoadedEvent](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~OnAppointmentLoadedEvent_EV.html). `ScheduleAppointment` style can be customized using the `appointmentStyle` property.
-
-[AppointmentLoadedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentLoadedEventArgs.html) has below properties,
-
-•	[appointment](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentLoadedEventArgs~appointment.html) – Contains the appointments values.
-•	[appointmentStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentLoadedEventArgs~appointmentStyle.html) – Gets and sets the appointments style.
-•	[view](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentLoadedEventArgs~view.html) -  Sets the Custom UI for Appointments.
-•	[Bounds](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentLoadedEventArgs~Bounds.html) – Contains the UI bounds of appointment.
-
-{% tabs %}
-{% highlight c# %}
-schedule.OnAppointmentLoadedEvent += Schedule_OnAppointmentLoadedEvent;
-
-...
-
-private void Schedule_OnAppointmentLoadedEvent(object sender, AppointmentLoadedEventArgs args)
-{
-	if (args.appointment != null && (args.appointment as Meeting) != null && (args.appointment as Meeting).IsAllDay)
-	{
-		args.appointmentStyle.BorderColor = Color.Red;
-		args.appointmentStyle.TextColor  = Color.White
-		args.appointmentStyle.BorderCornerRadius = 12;
-		args.appointmentStyle.BorderWidth = 10;
-	}
-	else 
-	{
-		args.appointmentStyle.BorderColor = Color.Blue;
-		args.appointmentStyle.TextColor = Color.Red;
-		args.appointmentStyle.BorderCornerRadius = 12;
-		args.appointmentStyle.BorderWidth = 10;
-	}
-}
-{% endhighlight %}
-{% endtabs %}
-
-![](PopulatingAppointments_images/appointmentstyle_event.png)
-
->**NOTE**
-FontAttributes and FontFamily are native to the platform. Custom font and the font which are not available in the specified platform will not be applied.
-
-## Customize appearance using Custom View
-Default appointment UI can be changed using `view` property passed through `AppointmentLoadedEventArgs`.
-
-
-{% tabs %}
-{% highlight c# %} 
-schedule.OnAppointmentLoadedEvent += Schedule_OnAppointmentLoadedEvent;
-
-private void Schedule_OnAppointmentLoadedEvent(object sender, AppointmentLoadedEventArgs args)
-{
-	if(args.appointment == null  || (args.appointment as Meeting) == null)
-		return;
-	if ((args.appointment as Meeting).IsAllDay)
-	{
-		Label label = new Label();
-		label.BackgroundColor = (args.appointment as Meeting).Color;
-		label.Text = (args.appointment as Meeting).EventName;
-		args.view = label;
-	}
-	else if ((args.appointment as Meeting).EventName == "Retrospective" )
-	{
-		Button button = new Button();
-		button.Image = "Meeting.png";
-		button.BackgroundColor = (args.appointment as Meeting).EventName;
-		args.view = button;
-	}
-	else 
-	{
-		Button button = new Button();
-		button.Image = "Cake.png";
-		button.BackgroundColor = (args.appointment as Meeting).EventName;
-		args.view = button;
-	}
-}
-{% endhighlight %}
-{% endtabs %}
-
-![](PopulatingAppointments_images/appointmentstyle_customview.png)
-
 ## Drag and Drop Appointments
 Appointments can be rescheduled using the drag and drop operation. To perform drag-and-drop operations within the schedule, enable the [AllowAppointmentDrag](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AllowAppointmentDrag.html) property of `SfSchedule`.
 
@@ -777,6 +651,132 @@ dragDropSettings.TimeIndicatorStyle = timeIndicatorStyle;
 * While dropping appointment to `AllDay` panel from time slots, appointment start and end time will change to 12.00 AM.
 * While dropping appointment to time slots from `AllDay` panel, appointment duration will change as one (1) hour from the dropped time.
 * Doesn't support control to control drag and drop.
+
+## Appearance Customization
+The default appearance of the appointment can be customized by using the [AppointmentStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle.html) property and [AppointmentLoadedEvent](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentLoadedEventArgs.html). The event and property is used to customize or override the default template of the Appointments.
+
+* [Customize appearance using Style](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#customize-appearance-using-style) 
+* [Customize appearance using Event](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#customize-appearance-using-event) 
+* [Customize appearance using Custom View](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#customize-appearance-using-custom-view)
+* [Customize appearance using DataTemplate](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#customize-appearance-using-datatemplate)
+* [Customize appearance using DataTemplateSelector](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#customize-appearance-using-datatemplateselector)
+
+### Customize appearance using Style
+Schedule appointment can be customized by setting appointment style properties such as [TextColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~TextColor.html), [FontFamily](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~FontFamily.html), [FontSize](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~FontSize.html), [FontAttributes](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~FontAttributes.html), [BorderColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~BorderColor.html), [BorderCornerRadius](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~BorderCornerRadius.html), [BorderWidth](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle~BorderWidth.html) to the [AppointmentStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle.html) property of `SfSchedule`.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfSchedule x:Name="schedule" ScheduleView="DayView" DataSource="{Binding Meetings}">
+    <syncfusion:SfSchedule.AppointmentStyle>
+         <syncfusion:AppointmentStyle
+                       BorderWidth="10"
+                       TextColor="Red"
+                       BorderCornerRadius="10"
+                       FontSize = "25"
+                       FontAttributes = "Bold"
+                       FontFamily = "Arial"
+                       BorderColor="Blue">
+    </syncfusion:AppointmentStyle>
+</syncfusion:SfSchedule.AppointmentStyle>
+</syncfusion:SfSchedule>
+{% endhighlight %}
+{% highlight c# %}
+//Creating Appointment style
+AppointmentStyle appointmentStyle = new AppointmentStyle();
+appointmentStyle.TextColor = Color.Red;
+appointmentStyle.FontSize = 25;
+appointmentStyle.FontAttributes = FontAttributes.Bold;
+appointmentStyle.FontFamily = "Arial";
+appointmentStyle.BorderColor = Color.Blue;
+appointmentStyle.BorderCornerRadius = 12;
+appointmentStyle.BorderWidth = 10;
+
+//Setting Appointment Style
+schedule.AppointmentStyle = appointmentStyle;
+{% endhighlight %}
+{% endtabs %} 
+
+![](PopulatingAppointments_images/style.png)
+
+### Customize appearance using Event
+Schedule appointment can be customized during runtime using [OnAppointmentLoadedEvent](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~OnAppointmentLoadedEvent_EV.html). `ScheduleAppointment` style can be customized using the `appointmentStyle` property.
+
+[AppointmentLoadedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentLoadedEventArgs.html) has below properties,
+
+•	[appointment](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentLoadedEventArgs~appointment.html) – Contains the appointments values.
+•	[appointmentStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentLoadedEventArgs~appointmentStyle.html) – Gets and sets the appointments style.
+•	[view](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentLoadedEventArgs~view.html) -  Sets the Custom UI for Appointments.
+•	[Bounds](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentLoadedEventArgs~Bounds.html) – Contains the UI bounds of appointment.
+
+{% tabs %}
+{% highlight c# %}
+schedule.OnAppointmentLoadedEvent += Schedule_OnAppointmentLoadedEvent;
+
+...
+
+private void Schedule_OnAppointmentLoadedEvent(object sender, AppointmentLoadedEventArgs args)
+{
+	if (args.appointment != null && (args.appointment as Meeting) != null && (args.appointment as Meeting).IsAllDay)
+	{
+		args.appointmentStyle.BorderColor = Color.Red;
+		args.appointmentStyle.TextColor  = Color.White
+		args.appointmentStyle.BorderCornerRadius = 12;
+		args.appointmentStyle.BorderWidth = 10;
+	}
+	else 
+	{
+		args.appointmentStyle.BorderColor = Color.Blue;
+		args.appointmentStyle.TextColor = Color.Red;
+		args.appointmentStyle.BorderCornerRadius = 12;
+		args.appointmentStyle.BorderWidth = 10;
+	}
+}
+{% endhighlight %}
+{% endtabs %}
+
+![](PopulatingAppointments_images/appointmentstyle_event.png)
+
+>**NOTE**
+FontAttributes and FontFamily are native to the platform. Custom font and the font which are not available in the specified platform will not be applied.
+
+## Customize appearance using Custom View
+Default appointment UI can be changed using `view` property passed through `AppointmentLoadedEventArgs`.
+
+
+{% tabs %}
+{% highlight c# %} 
+schedule.OnAppointmentLoadedEvent += Schedule_OnAppointmentLoadedEvent;
+
+private void Schedule_OnAppointmentLoadedEvent(object sender, AppointmentLoadedEventArgs args)
+{
+	if(args.appointment == null  || (args.appointment as Meeting) == null)
+		return;
+	if ((args.appointment as Meeting).IsAllDay)
+	{
+		Label label = new Label();
+		label.BackgroundColor = (args.appointment as Meeting).Color;
+		label.Text = (args.appointment as Meeting).EventName;
+		args.view = label;
+	}
+	else if ((args.appointment as Meeting).EventName == "Retrospective" )
+	{
+		Button button = new Button();
+		button.Image = "Meeting.png";
+		button.BackgroundColor = (args.appointment as Meeting).EventName;
+		args.view = button;
+	}
+	else 
+	{
+		Button button = new Button();
+		button.Image = "Cake.png";
+		button.BackgroundColor = (args.appointment as Meeting).EventName;
+		args.view = button;
+	}
+}
+{% endhighlight %}
+{% endtabs %}
+
+![](PopulatingAppointments_images/appointmentstyle_customview.png)
 
 ## Customize appearance using DataTemplate
 The default appearance of the Appointment can be customized by using the [AppointmentTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~AppointmentTemplate.html) property of the Schedule.

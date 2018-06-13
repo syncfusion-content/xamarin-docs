@@ -649,6 +649,8 @@ dragDropSettings.TimeIndicatorStyle = timeIndicatorStyle;
 {% endhighlight %}
 {% endtabs %}
 
+![](PopulatingAppointments_images/timeindicator.png)
+
 >**Notes**
 * While dropping appointment to `AllDay` panel from time slots, appointment start and end time will change to 12.00 AM.
 * While dropping appointment to time slots from `AllDay` panel, appointment duration will change as one (1) hour from the dropped time.

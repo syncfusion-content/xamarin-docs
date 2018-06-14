@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Drill down feature of Essential Xamarin.Forms SfSunburstChart
 description: This section describes the drill down feature of sunburst chart.
@@ -9,7 +9,7 @@ documentation: ug
 
 # Drill-down
 
-The drill-down provides better visualization of hierarchy. Each level of the segments can be drilled down to virtualize a large set of data into the minimal views. The sunburst chart provides animation along with the drill-down support. Toolbar can be enabled on drill-down that helps in performing zoom back and reset operations. The drill-down can be enabled or disabled using the `Enable` property in the drill-down settings.
+The drill-down provides better visualization of hierarchy. Large set of data can be virtualized into minimal views. Each level of the segments can be drilled down. The sunburst chart provides animation along with the drill-down support. Toolbar will be enabled on drill-down that helps in performing zoom back and reset operations. The drill-down can be enabled or disabled using the `Enable` property in the drill-down settings.
 
 I>  Double tapping the segment performs the drill-down operation.
 

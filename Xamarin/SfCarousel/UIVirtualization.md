@@ -47,13 +47,13 @@ N> The default value of the EnableVirtualization property is false.
 
 	<ContentPage.Content>
 		<carousel:SfCarousel x:Name="carousel"
-						ItemTemplate="{StaticResource itemTemplate}"
-						ItemsSource="{Binding ImageCollection}"
-						ItemHeight="200"
-						ItemWidth="200"
-						ItemSpacing="2"
-                        EnableVirtualization="True"
-						ViewMode="Linear">
+			ItemTemplate="{StaticResource itemTemplate}"
+			ItemsSource="{Binding ImageCollection}"
+			ItemHeight="200"
+			ItemWidth="200"
+			ItemSpacing="2"
+			EnableVirtualization="True"
+			ViewMode="Linear">
 		</carousel:SfCarousel>
 	</ContentPage.Content>
 </ContentPage>

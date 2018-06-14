@@ -48,6 +48,13 @@ The SfListView allows dynamically adjusting size of items based on the content l
 
 In SfListView, `ForceUpdateItemSize` is maintained to force update the [ListViewItem](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ListViewItem.html) size if it is changed at runtime when `SfListView.AutoFitMode` is `AutoFitMode.Height`. This method can be used only for iOS platform. For Android and UWP, item's size will automatically updated on runtime changes. This operation is expensive. so need to avoid repeated/unwanted usage. Here, `ItemIndex` is used as optional parameter. If needs to update particular item, then pass that item's index. If needs to update more than one item, then parameter is not needed to pass.
 
+{% tabs %}
+{% highlight c# %}
+
+listview.ForceUpdateItemSize();
+
+{% endhighlight %}
+{% endtabs %}
 The control has two types of AutoFitMode as listed as follows:
 
  * Height: AutoFit the items based on the content. It considers height of the item when the orientation is vertical [SfListView.Orientation](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~Orientation.html). When the orientation is horizontal, considers width of the item. The [SfListView.GridLayout](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GridLayout.html) AutoFit all the items in a row and takes the maximum item height of the row and applies to all other items in that row.

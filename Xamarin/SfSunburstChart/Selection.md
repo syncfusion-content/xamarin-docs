@@ -236,6 +236,16 @@ This event occurs whenever you select the segment. You can get the selected segm
 
 {% highlight xaml %}
 
+           <sunburst:SfSunburstChart x:Name="sunburstChart" ItemsSource="{Binding DataSource}"
+                                  ValueMemberPath="EmployeesCount" SelectionChanged="SunburstChart_SelectionChanged">
+
+                <sunburst:SfSunburstChart.SelectionSettings>
+                    <sunburst:SelectionSettings  EnableSelection="True" SelectionDisplayMode="HighlightByStrokeColor"                                                 
+                                                 SelectionType="Single"></sunburst:SelectionSettings>
+                </sunburst:SfSunburstChart.SelectionSettings>
+
+         </sunburst:SfSunburstChart>
+
             <StackLayout  x:Name="stackLayout" IsVisible="false" Orientation="Vertical" Spacing="0" Opacity="0.5" BackgroundColor="Black" 
                           Grid.Row="1" Padding="10" HorizontalOptions="Center" VerticalOptions="End" >
                 <Label  x:Name="countryLabel"  FontSize="12"  TextColor="White"/>
@@ -245,6 +255,7 @@ This event occurs whenever you select the segment. You can get the selected segm
 {% endhighlight %}
 
 {% highlight C# %} 
+       
 
         private void SunburstChart_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -259,27 +270,26 @@ This event occurs whenever you select the segment. You can get the selected segm
 
                 if (e.SelectedSegment.CurrentLevel == 0)
                 {
-                    countryLabel.Text = "Country: " + e.SelectedSegment.Category;
-                    populationLabel.Text = "Employees Count: " + e.SelectedSegment.Value;
+                    countryLabel.Text = "Country : " + e.SelectedSegment.Category;
+                    populationLabel.Text = "Employees Count : " + e.SelectedSegment.Value;
                 }
                 else if (e.SelectedSegment.CurrentLevel == 1)
                 {
-                    countryLabel.Text = "JobDescription: " + e.SelectedSegment.Category;
-                    populationLabel.Text = "Employees Count: " + e.SelectedSegment.Value;
+                    countryLabel.Text = "JobDescription : " + e.SelectedSegment.Category;
+                    populationLabel.Text = "Employees Count : " + e.SelectedSegment.Value;
                 }
                 else if (e.SelectedSegment.CurrentLevel == 2)
                 {
-                    countryLabel.Text = "JobGroup: " + e.SelectedSegment.Category;
-                    populationLabel.Text = "Employees Count: " + e.SelectedSegment.Value;
+                    countryLabel.Text = "JobGroup : " + e.SelectedSegment.Category;
+                    populationLabel.Text = "Employees Count : " + e.SelectedSegment.Value;
                 }
                 else
                 {
-                    countryLabel.Text = "JobRole: " + e.SelectedSegment.Category;
-                    populationLabel.Text = "Employees Count: " + e.SelectedSegment.Value;
+                    countryLabel.Text = "JobRole : " + e.SelectedSegment.Category;
+                    populationLabel.Text = "Employees Count : " + e.SelectedSegment.Value;
                 }
             }
         }
-
 
 {% endhighlight %}
 

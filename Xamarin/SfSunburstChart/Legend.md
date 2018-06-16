@@ -144,7 +144,7 @@ The size of the legend icon can be customized using the [`IconHeight`](https://h
 
                  <sunburst:SfSunburstChart.Legend>
                     <sunburst:SunburstChartLegend x:Name="legend" IsVisible="True" IconHeight="15" IconWidth="15"
-                                                  >
+                                                  IconType="Diamond">
                     </sunburst:SunburstChartLegend>
                 </sunburst:SfSunburstChart.Legend>
 

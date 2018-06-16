@@ -17,7 +17,9 @@ A template can be used to present the data in a way that makes sense for the app
 
 ## Data template selector
 
-The SfListView allows customizing appearance of each item with different templates based on specific constraints using the [DataTemplateSelector](https://developer.xamarin.com/api/type/Xamarin.Forms.DataTemplateSelector/). You can choose a `DataTemplate` for each item at runtime based on the value of data-bound property using `DataTemplateSelector`.
+The SfListView allows customizing appearance of each item with different templates based on specific constraints by using the [DataTemplateSelector](https://developer.xamarin.com/api/type/Xamarin.Forms.DataTemplateSelector/). You can choose a `DataTemplate` for each item at runtime based on the value of data-bound property using `DataTemplateSelector`.
+
+Here, an `ItemsCacheLimit` property maintains number of items reusing in the view. This cache limit is used to create and reuse the `ListViewItem` if different templates are used in `DataTemplateSelector` for better scrolling performance. Based on this value, `SfListView` creates number of `ListViewItem` for different templates in the view if new template is created while scrolling, and reuses it if same template is used for improving the scrolling performance.
 
 ### Create a data template selector
 

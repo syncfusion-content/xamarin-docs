@@ -166,6 +166,8 @@ SfSchedule schedule = new SfSchedule();
             schedule.MonthViewSettings = monthViewSettings;
 {% endhighlight %}
 {% endtabs %}
+>**NOTE**
+Agenda item template support is not applicable for UWP platform.
 
 ## Agenda View Using Template Selector:
 AgendaTemplateSelector can be used to choose a DataTemplate at runtime based on the value of a data-bound to agenda appointment property through `AgendaItemTemplate`. It lets you choose a different data template for each appointment, customizing the appearance of a particular inline appointment based on certain conditions. DataTemplateSelector for inline appointment includes `ScheduleAppointment` or custom appointment as `object` and `Schedule` as bindable object.
@@ -227,6 +229,8 @@ Used button to display day appointment and all day appointment.
 </Button>
 {% endhighlight %}
 {% endtabs %}
+>**NOTE**
+Agenda item template selector support is not applicable for UWP platform.
 
 ## Month Navigation direction
 MonthView of Schedule can be navigated in both horizontal and vertical direction. You can change the direction of navigation through [MonthNavigationDirection](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~MonthNavigationDirection.html) property of [MonthViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings.html) in `SfSchedule`, by default Month navigation direction is `Horizontal`.

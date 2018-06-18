@@ -109,7 +109,7 @@ void DataGrid_SelectionChanged (object sender, GridSelectionChangedEventArgs e)
 
 ## Keyboard Behavior
 
-N> Keyboard behavior Combinations is applicable for Xamarin.Forms.macOS and Xamarin.Forms.UWP only.Keyboard Combinations works only when Selection Mode is applied.
+`SfDataGrid` supports selection via keyboard interaction for the Xamarin.Forms.macOS and Xamarin.Forms.UWP platforms. Keyboard interaction will not have any effect when `SfDataGrid.SelectionMode` is set as `SelectionMode.None`.
 
 <table>
 <tr>
@@ -125,7 +125,7 @@ Description
 <kbd>DownArrow</kbd>
 </td>
 <td>
-Move the selection to next row from current selected row when having SelectionMode is Single or SingleDeselect. If the selected row is in last row, pressing Down arrow does nothing.If rows is not selected scrolling to next row occurs.
+Moves the selection to next row directly below the current selected row when having SelectionMode is Single. Upon reaching the bottom of the screen, pressing down arrow scrolls and applies selection to the next row if the grid has scrollable content. If the selected row is the last row of the grid, pressing down arrow does nothing. In `Multiple` and `SingleDeselect` selection modes, if the next row has already been selected, then pressing down key will deselect the row.
 </td>
 </tr>
 <tr>
@@ -133,7 +133,7 @@ Move the selection to next row from current selected row when having SelectionMo
 <kbd>UpArrow</kbd>
 </td>
 <td>
-Moves the selection to previous row from current selected row when having SelectionMode is Single or SingleDeselect. If the selected row is in first row, pressing Up arrow does nothing.If rows is not selected scrolling to previous row occurs.
+Moves the selection to previous row directly above the current selected row when having SelectionMode is Single. Upon reaching the top of the screen, pressing up arrow scrolls and applies selection to the previous row if the grid has scrollable content. If the selected row is the first row of the grid, pressing up arrow does nothing. In `Multiple` and `SingleDeselect` selection modes, if the previous row has already been selected, then pressing up key will deselect the row.
 </td>
 </tr>
 <tr>
@@ -141,7 +141,7 @@ Moves the selection to previous row from current selected row when having Select
 <kbd>PageDown</kbd>
 </td>
 <td>
-The SfDataGrid will be scrolled to next set of rows that are not displayed in view, including the row that are partially displayed and if the selection is applied to the any row, selection is moved to last row of the next set of rows when having SelectionMode is Single or SingleDeselect.
+The SfDataGrid will be scrolled to next set of rows that are not displayed in view, including the row that is partially displayed. If selection is applied to any row, pressing PageDown moves the selection to the last row of the next set of rows when having SelectionMode is Single.
 </td>
 </tr>
 <tr>
@@ -149,7 +149,7 @@ The SfDataGrid will be scrolled to next set of rows that are not displayed in vi
 <kbd>PageUp</kbd>
 </td>
 <td>
-The SfDataGrid will be scrolled to previous set of rows that are not displayed in view, including the row that are partially displayed and if the selection is applied to the any row, selection is moved to first row of the next set of rows when having SelectionMode is Single or SingleDeselect.
+The SfDataGrid will be scrolled to previous set of rows that are not displayed in view, including the row that is partially displayed. If selection is applied to any row, pressing PageUp moves the selection to the first row of the next set of rows when having SelectionMode is Single.
 </td>
 </tr>
 <tr>
@@ -157,7 +157,7 @@ The SfDataGrid will be scrolled to previous set of rows that are not displayed i
 <kbd>Tab</kbd>
 </td>
 <td>
-Moves the selection to next row from current selected row when having SelectionMode is Single or SingleDeselect.If the selected row is in last row, pressing Tab does nothing.
+Moves the selection to next row directly below the current selected row when having SelectionMode is Single. Upon reaching the bottom of the screen, pressing tab scrolls and applies selection to the next row if the grid has scrollable content. If the selected row is the last row of the grid, pressing tab does nothing. In `Multiple` and `SingleDeselect` selection modes, if the next row has already been selected, then pressing tab key will deselect the row.
 </td>
 </tr>
 <tr>
@@ -165,7 +165,7 @@ Moves the selection to next row from current selected row when having SelectionM
 <kbd>Ctrl</kbd> + <kbd>Home</kbd> or <kbd>Ctrl</kbd> + <kbd>UpArrow</kbd> or <kbd>Home</kbd>
 </td>
 <td>
-Scrolling to first row occurs.
+Scrolls the grid to the first row of the collection.
 </td>
 </tr>
 <tr>
@@ -173,7 +173,7 @@ Scrolling to first row occurs.
 <kbd>Ctrl</kbd> + <kbd>End</kbd> or <kbd>Ctrl</kbd> + <kbd>DownArrow</kbd> or <kbd>End</kbd>
 </td>
 <td>
-Scrolling to last row occurs.
+Scrolls the grid to the last row of the collection.
 </td>
 </tr>
 <tr>
@@ -181,7 +181,7 @@ Scrolling to last row occurs.
 <kbd>Enter</kbd> or <kbd>Ctrl</kbd> + <kbd>Enter</kbd>
 </td>
 <td>
-If the active current cell is in edit mode, the changes will committed and moves the current cell to below the active current cell. If the active current cell is in last row, commits changes only and retains in the same cell.
+If the active current cell is in edit mode, the changes will be committed and moves the selection to the row below the active current cell. If the active current cell is in last row, commits changes and only editing is ended.
 </td>
 </tr>
 <tr>

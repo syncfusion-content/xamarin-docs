@@ -44,6 +44,10 @@ The following list of assemblies should be added as reference from the lib folde
 <td>UWP renderer</td>
 <td>pcl\Syncfusion.DataSource.Portable.dll<br/>pcl\Syncfusion.Core.XForms.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfListView.XForms.dll<br/>uwp\Syncfusion.SfListView.XForms.UWP.dll<br/></td>
 </tr>
+<tr>
+<td>macOS renderer</td>
+<td>pcl\Syncfusion.DataSource.Portable.dll<br/>pcl\Syncfusion.Core.XForms.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfListView.XForms.dll<br/>macOS\Syncfusion.Core.XForms.macOS.dll<br/>macOS\Syncfusion.SfListView.XForms.macOS<br/></td>
+</tr>
 </table>
 
 N> To configure the Syncfusion NuGet packages in Visual Studio for mac, refer to [here]( https://help.syncfusion.com/xamarin/introduction/download-and-installation#configuring-syncfusion-nuget-packages-in-visual-studio) for more information.
@@ -114,7 +118,19 @@ The following table lists the platforms supported versions:
             <br/>
             <br/>
         </td>
-    </tr>    
+    </tr>   
+    <tr>
+        <td>
+            macOS
+            <br/>
+            <br/>
+        </td>
+        <td>
+            10.11
+            <br/>
+            <br/>
+        </td>
+    </tr>
 </table>
 
 ## Launching the SfListView on Each Platform
@@ -153,6 +169,22 @@ public MainPage()
     …
     SfListViewRenderer.Init();
     LoadApplication (new App ());
+    …
+}
+{% endhighlight %} 
+{% endtabs %}
+
+### macOS
+
+To launch SfListView in macOS, call the `SfListViewRenderer.Init()` in the `DidFinishLaunching` override method of AppDelegate class, after calling the Xamarin.Forms Framework and LoadApplication initialization.
+
+{% tabs %}
+{% highlight c# %}
+public override void DidFinishLaunching(NSNotification notification)
+{
+    Forms.Init();
+    LoadApplication(new App());
+    SfListViewRenderer.Init();
     …
 }
 {% endhighlight %} 

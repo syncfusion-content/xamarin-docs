@@ -91,7 +91,7 @@ SfSchedule schedule = new SfSchedule();
 {% endhighlight %}
 {% endtabs %}
 
-![](monthview_images/monthinlineview.png)
+![](monthview_images/AgendaView.png)
 
 >**NOTE**
 - An agenda view displays text as “No Selected Date” until no date is selected.
@@ -129,6 +129,9 @@ SfSchedule schedule = new SfSchedule();
             schedule.MonthViewSettings.AgendaViewStyle = agendaViewStyle; 
 {% endhighlight %}
 {% endtabs %}
+
+![](monthview_images/AgendaViewStyle.png)
+
 >**NOTE**
 Agenda View Appearance customization is not applicable for UWP platform.
 
@@ -166,6 +169,9 @@ SfSchedule schedule = new SfSchedule();
             schedule.MonthViewSettings = monthViewSettings;
 {% endhighlight %}
 {% endtabs %}
+
+![](monthview_images/AgendaTemplate.png)
+
 >**NOTE**
 Agenda item template support is not applicable for UWP platform.
 
@@ -229,6 +235,9 @@ Used button to display day appointment and all day appointment.
 </Button>
 {% endhighlight %}
 {% endtabs %}
+
+![](monthview_images/AgendaTemplateselector.png)
+
 >**NOTE**
 Agenda item template selector support is not applicable for UWP platform.
 

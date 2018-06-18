@@ -168,7 +168,7 @@ SfSchedule schedule = new SfSchedule();
 {% endtabs %}
 
 ## Agenda View Using Template Selector:
-AgendaTemplateSelector can be used to choose a DataTemplate at runtime based on the value of a data-bound to agenda appointment property through `AgendaItemTemplate`. It provides let you choose a different data template for each appointment, customizing the appearance of a particular inline appointment based on certain conditions.DataTemplateSelector for inline appointment includes `ScheduleAppointment` or custom appointment as `object` and `Schedule` as bindable object.
+AgendaTemplateSelector can be used to choose a DataTemplate at runtime based on the value of a data-bound to agenda appointment property through `AgendaItemTemplate`. It lets you choose a different data template for each appointment, customizing the appearance of a particular inline appointment based on certain conditions. DataTemplateSelector for inline appointment includes `ScheduleAppointment` or custom appointment as `object` and `Schedule` as bindable object.
 
 {% tabs %}
 {% highlight xaml %}

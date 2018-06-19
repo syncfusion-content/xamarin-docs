@@ -9,25 +9,29 @@ documentation: ug
 
 # Getting Started
 
-This section explains you the steps required to populate the sunburst chart with data, data labels, legends and title. This section covers only the minimal features that you need to know to get started with the sunburst chart. 
+This section explains the steps required to configure the `SfSunburstChart` and populate it with data, data labels, legends, and title. This section covers only the minimal features that needed to get started with the sunburst chart. 
 
-## Adding SunburstChart Reference
+## Add sunburst chart references
 
-Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain and reference Essential Studio components in your solution; then refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfsunburstchart) link to know about the assemblies required for adding SfSunburstChart to your project.
+The Syncfusion components for Xamarin.Forms are available in nuget.org. To add `SfSunburstChart` to your project, open the NuGet package manager in Visual Studio, search for Syncfusion.Xamarin.SfSunburstChart, and then install it.
 
-I> After adding the reference, currently, an additional step is required for iOS and UWP projects. We need to call Init method in the `SfSunburstChartRenderer` as shown in this [KB article.](http://www.syncfusion.com/support/kb/7714)
+![SfSunburstChart Reference](Getting-Started_images/Reference.png)
 
-I> For UWP alone, one more additional step is required if the project is built in release mode with .NET Native tool chain enabled. You can refer the [KB article](http://www.syncfusion.com/support/kb/7715) for more details.
+Refer to this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain and reference Essential Studio components in your solution; then refer to [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfsunburstchart) link to know about the assemblies required for adding SfSunburstChart to your project.
 
-## Initialize SunburstChart
+I> After adding the reference, an additional step is required for iOS and UWP projects. You should call Init method in the `SfSunburstChartRenderer` as shown in this [KB article](http://www.syncfusion.com/support/kb/7714).
 
-Import the [`SfSunburstChart`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart.html) namespace as shown below in your respective page,
+I> For UWP alone, an additional step is required if the project is still in built-in release mode with .NET Native tool chain enabled. You can refer to the [KB article](http://www.syncfusion.com/support/kb/7715) for more details.
+
+## Initialize sunburst chart
+
+Import the [`SfSunburstChart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart.html) namespace as shown as follows.
 
 {% tabs %} 
 
 {% highlight xaml %} 
 
-xmlns:sunburst="clr-namespace:Syncfusion.SfSunburstChart.XForms;assembly=Syncfusion.SfSunburstChart.XForms" 
+xmlns:sunburst="clr-namespace:Syncfusion.SfSunburstChart.XForms;assembly=Syncfusion.SfSunburstChart.XForms"
 
 {% endhighlight %}
 
@@ -39,7 +43,7 @@ using Syncfusion.SfSunburstChart.XForms;
 
 {% endtabs %} 
 
-Then initialize an empty sunburst chart as shown below,
+Then, initialize an empty sunburst chart as shown as follows.
 
 {% tabs %} 
 
@@ -59,7 +63,7 @@ this.Content = sunburst;
 
 ## Initialize view model
 
-In this section, the data in the following table is used for demonstration,
+In this section, data in the following table is used for demonstration.
 
 <table>
 <tr>
@@ -67,36 +71,68 @@ In this section, the data in the following table is used for demonstration,
 Country
 </th>
 <th>
-Job Description
+Job description
 </th>
 <th>
-Job Group
+Job group
 </th>
 <th>
-Job Role
+Job role
 </th>
 <th>
-Employees Count
+Employees count
 </th>
 </tr>
 <tr>
 <td>
-America
+United States
 </td>
 <td>
 Sales
 </td>
 <td>
+Executive
 </td>
 <td>
 </td>
 <td>
-70
+50
 </td>
 </tr>
 <tr>
 <td>
-America
+United States
+</td>
+<td>
+Sales
+</td>
+<td>
+Analyst
+</td>
+<td>
+</td>
+<td>
+40
+</td>
+</tr>
+<tr>
+<td>
+United States
+</td>
+<td>
+Marketing
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+40
+</td>
+</tr>
+<tr>
+<td>
+United States
 </td>
 <td>
 Technical
@@ -112,7 +148,7 @@ Testers
 </tr>
 <tr>
 <td>
-America
+United States
 </td>
 <td>
 Technical
@@ -124,12 +160,12 @@ Developers
 Windows
 </td>
 <td>
-105
+175
 </td>
 </tr>
 <tr>
 <td>
-America
+United States
 </td>
 <td>
 Technical
@@ -141,12 +177,12 @@ Developers
 Web
 </td>
 <td>
-40
+70
 </td>
 </tr>
 <tr>
 <td>
-America
+United States
 </td>
 <td>
 Management
@@ -161,7 +197,7 @@ Management
 </tr>
 <tr>
 <td>
-America
+United States
 </td>
 <td>
 Accounts
@@ -187,7 +223,7 @@ Testers
 <td>
 </td>
 <td>
-25
+33
 </td>
 </tr>
 <tr>
@@ -204,7 +240,7 @@ Developers
 Windows
 </td>
 <td>
-155
+125
 </td>
 </tr>
 <tr>
@@ -222,6 +258,36 @@ Web
 </td>
 <td>
 60
+</td>
+</tr>
+<tr>
+<td>
+India
+</td>
+<td>
+HR Executives
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+70
+</td>
+</tr>
+<tr>
+<td>
+India
+</td>
+<td>
+Accounts
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+45
 </td>
 </tr>
 <tr>
@@ -258,6 +324,117 @@ Analyst
 </tr>
 <tr>
 <td>
+Germany
+</td>
+<td>
+Marketing
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+50
+</td>
+</tr>
+<tr>
+<td>
+Germany
+</td>
+<td>
+Technical
+</td>
+<td>
+Testers
+</td>
+<td>
+</td>
+<td>
+40
+</td>
+</tr>
+<tr>
+<td>
+Germany
+</td>
+<td>
+Technical
+</td>
+<td>
+Developers
+</td>
+<td>
+Windows
+</td>
+<td>
+65
+</td>
+</tr>
+<tr>
+<td>
+Germany
+</td>
+<td>
+Technical
+</td>
+<td>
+Developers
+</td>
+<td>
+Web
+</td>
+<td>
+27
+</td>
+</tr>
+<tr>
+<td>
+Germany
+</td>
+<td>
+Management
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+33
+</td>
+</tr>
+<tr>
+<td>
+Germany
+</td>
+<td>
+Accounts
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+55
+</td>
+</tr>
+<tr>
+<td>
+UK
+</td>
+<td>
+Technical
+</td>
+<td>
+Testers
+</td>
+<td>
+</td>
+<td>
+25
+</td>
+</tr>
+<tr>
+<td>
 UK
 </td>
 <td>
@@ -270,7 +447,7 @@ Developers
 Windows
 </td>
 <td>
-100
+96
 </td>
 </tr>
 <tr>
@@ -287,7 +464,7 @@ Developers
 Web
 </td>
 <td>
-30
+55
 </td>
 </tr>
 <tr>
@@ -295,7 +472,7 @@ Web
 UK
 </td>
 <td>
-HR Executives
+HR executives
 </td>
 <td>
 </td>
@@ -310,264 +487,300 @@ HR Executives
 UK
 </td>
 <td>
-Marketing
+Accounts
 </td>
 <td>
 </td>
 <td>
 </td>
 <td>
-40
+30
 </td>
 </tr>
 </table>
 
-Now, let us define a data model that represents the above data in [`SfSunburstChart`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart.html).
+Define a data model that represents the above data in [`SfSunburstChart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart.html).
+
+{% tabs %} 
 
 {% highlight c# %}
-public class Model   
-{   
-    public string Category { get; set; }
-    public string Country { get; set; }
-    public string JobDescription { get; set; }
-    public string JobGroup { get; set; }
-    public string JobRole { get; set; }
-    public double EmployeesCount { get; set; }
-}
-{% endhighlight %} 
 
-Next, create a view model class and initialize a list of `Model` objects as shown below,
-
-{% highlight c# %}
-public class ViewModel
-{
-    public ObservableCollection<Model> Data { get; set; }
-    public ViewModel()
+ public class SunburstModel
     {
-        Data = new ObservableCollection<Model>
-        {
-            new Model
-            {
-                Country = "America", JobDescription = "Sales",
-                EmployeesCount = 70
-            },
-            new Model
-            {
-                Country = "America", JobDescription = "Technical",
-                JobGroup = "Testers", EmployeesCount = 35
-            },
-            new Model
-            {
-                Country = "America", JobDescription = "Technical",
-                JobGroup = "Developers", JobRole = "Windows", EmployeesCount = 105
-            },
-            new Model
-            {
-                Country = "America", JobDescription = "Technical",
-                JobGroup = "Developers", JobRole = "Web", EmployeesCount = 40
-            },
-            new Model
-            {
-                Country = "America", JobDescription = "Management",
-                EmployeesCount = 40
-            },
-            new Model
-            {
-                Country = "America", JobDescription = "Accounts",
-                EmployeesCount = 60
-            },
-            new Model
-            {
-                Country = "India", JobDescription = "Technical",
-                JobGroup = "Testers", EmployeesCount = 25
-            },
-            new Model
-            {
-                Country = "India", JobDescription = "Technical", JobGroup = "Developers",
-            JobRole = "Windows", EmployeesCount = 155
-            },
-            new Model
-            {
-                Country = "India", JobDescription = "Technical", JobGroup = "Developers",
-                JobRole = "Web", EmployeesCount = 60
-            },
-            new Model
-            {
-                Country = "Germany", JobDescription = "Sales", JobGroup = "Executive",
-                EmployeesCount = 30
-            },
-            new Model
-            {
-                Country = "Germany", JobDescription = "Sales", JobGroup = "Analyst",
-                EmployeesCount = 40
-            },
-            new Model
-            {
-                Country = "UK", JobDescription = "Technical", JobGroup = "Developers",
-                JobRole = "Windows", EmployeesCount = 100
-            },
-            new Model
-            {
-                Country = "UK", JobDescription = "Technical", JobGroup = "Developers",
-                JobRole = "Web", EmployeesCount = 30
-            },
-            new Model
-            {
-                Country = "UK", JobDescription = "HR Executives", EmployeesCount = 60
-            },
-            new Model
-            {
-                Country = "UK", JobDescription = "Marketing", EmployeesCount = 40
-            }
-        };
+        public string JobDescription { get; set; }
+        public string JobGroup { get; set; }
+        public string JobRole { get; set; }
+        public double EmployeesCount { get; set; }
+        public string Country { get; set; }
+
     }
-}
+    
+{% endhighlight %} 
+
+{% endtabs %} 
+
+Then, create a view model class, and initialize a list of SunburstModel objects as follows.
+
+{% tabs %} 
+
+{% highlight c# %}
+
+ public class SunburstViewModel
+    {
+        public ObservableCollection<SunburstModel> DataSource { get; set; }
+        public SunburstViewModel()
+        {
+            this.DataSource = new ObservableCollection<SunburstModel>
+            {
+                new SunburstModel { Country = "USA", JobDescription = "Sales", JobGroup="Executive", EmployeesCount = 50 },
+                new SunburstModel { Country = "USA", JobDescription = "Sales", JobGroup = "Analyst", EmployeesCount = 40 },
+                new SunburstModel { Country = "USA", JobDescription = "Marketing", EmployeesCount = 40 },
+                new SunburstModel { Country = "USA", JobDescription = "Technical", JobGroup = "Testers", EmployeesCount = 35 },
+                new SunburstModel { Country = "USA", JobDescription = "Technical", JobGroup = "Developers", JobRole = "Windows", EmployeesCount = 175 },
+                new SunburstModel { Country = "USA", JobDescription = "Technical", JobGroup = "Developers", JobRole = "Web", EmployeesCount = 70 },
+                new SunburstModel { Country = "USA", JobDescription = "Management", EmployeesCount = 40 },
+                new SunburstModel { Country = "USA", JobDescription = "Accounts", EmployeesCount = 60 },
+
+                new SunburstModel { Country = "India", JobDescription = "Technical", JobGroup = "Testers", EmployeesCount = 33 },
+                new SunburstModel { Country = "India", JobDescription = "Technical", JobGroup = "Developers", JobRole = "Windows", EmployeesCount = 125 },
+                new SunburstModel { Country = "India", JobDescription = "Technical", JobGroup = "Developers", JobRole = "Web", EmployeesCount = 60 },
+                new SunburstModel { Country = "India", JobDescription = "HR Executives", EmployeesCount = 70 },
+                new SunburstModel { Country = "India", JobDescription = "Accounts", EmployeesCount = 45 },
+
+                new SunburstModel { Country = "Germany", JobDescription = "Sales", JobGroup = "Executive", EmployeesCount = 30 },
+                new SunburstModel { Country = "Germany", JobDescription = "Sales", JobGroup = "Analyst", EmployeesCount = 40 },
+                new SunburstModel { Country = "Germany", JobDescription = "Marketing", EmployeesCount = 50 },
+                new SunburstModel { Country = "Germany", JobDescription = "Technical", JobGroup = "Testers", EmployeesCount = 40 },
+                new SunburstModel { Country = "Germany", JobDescription = "Technical", JobGroup = "Developers", JobRole = "Windows", EmployeesCount = 65 },
+                new SunburstModel { Country = "Germany", JobDescription = "Technical", JobGroup = "Developers", JobRole = "Web", EmployeesCount = 27 },
+                new SunburstModel { Country = "Germany", JobDescription = "Management", EmployeesCount = 33 },
+                new SunburstModel { Country = "Germany", JobDescription = "Accounts", EmployeesCount = 55 },
+
+                new SunburstModel { Country = "UK", JobDescription = "Technical", JobGroup = "Testers", EmployeesCount = 25 },
+                new SunburstModel { Country = "UK", JobDescription = "Technical", JobGroup = "Developers", JobRole = "Windows", EmployeesCount = 96 },
+                new SunburstModel { Country = "UK", JobDescription = "Technical", JobGroup = "Developers", JobRole = "Web", EmployeesCount = 55 },
+                new SunburstModel { Country = "UK", JobDescription = "HR Executives", EmployeesCount = 60 },
+                new SunburstModel { Country = "UK", JobDescription = "Accounts", EmployeesCount = 30 }
+            };
+        }
+    }
 
 {% endhighlight %} 
 
-Set the `ViewModel` instance as the `BindingContext` of your Page; this is done to bind properties of `ViewModel` to [`SfSunburstChart`.](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart.html)
+{% endtabs %} 
+
+Set the `SunburstViewModel` instance as the `BindingContext` of your page to bind the properties of `SunburstViewModel` to [`SfSunburstChart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart.html).
  
-N> Add namespace of `ViewModel` class in your XAML page if you prefer to set `BindingContext` in XAML.
+N> Add the namespace of `SunburstViewModel` class in your XAML page if you set the `BindingContext` in XAML.
 
 {% tabs %} 
 
 {% highlight xaml %} 
+
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SunburstDemo"
+             xmlns:sunburst="clr-namespace:Syncfusion.SfSunburstChart.XForms;assembly=Syncfusion.SfSunburstChart.XForms"
+             x:Class="SunburstDemo.MainPage">
 
-            x:Class="Sunburst.SunburstPage"
-
-            xmlns:sunburst="clr-namespace:Syncfusion.SfSunburstChart.XForms;assembly=Syncfusion.SfSunburstChart.XForms"
-
-            xmlns:local="clr-namespace:Sunburst">    
-
-	<ContentPage.BindingContext>       
-
-		<local:ViewModel></local:ViewModel>  
-
-	</ContentPage.BindingContext>
+	<ContentPage.BindingContext>
+        <local:SunburstViewModel></local:SunburstViewModel>
+    </ContentPage.BindingContext>
  
 </ContentPage>
 {% endhighlight %}
 
 {% highlight C# %} 
-this.BindingContext = new ViewModel();
+
+this.BindingContext = new SunburstViewModel();
+
 {% endhighlight %}
 
 {% endtabs %} 
 
-## Populate SunburstChart with data
+## Populate sunburst chart with data
 
-Now, bind the Data property of the above ViewModel to the [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~ItemsSource.html) property. 
-Add [`SunburstHierarchicalLevel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstHierarchicalLevel.html) to [`Levels`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~Levels.html) property. Each hierarchy level is formed based on the property specified in [`GroupMemberPath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstHierarchicalLevel~GroupMemberPath.html) property, and each arc segment size is calculated using [`ValueMemberPath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~ValueMemberPath.html).
+Bind the DataSource property of the above SunburstViewModel to the [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~ItemsSource.html) property. 
+Then, add the [`SunburstHierarchicalLevel`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstHierarchicalLevel.html) to [`Levels`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~Levels.html) collection. Each hierarchy level is formed based on the property specified in [`GroupMemberPath`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstHierarchicalLevel~GroupMemberPath.html) property, and each arc segment size is calculated using the [`ValueMemberPath`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~ValueMemberPath.html) property.
 
 {% tabs %}   
 
 {% highlight xaml %}
-<sunburst:SfSunburstChart ItemsSource="{Binding Data}" ValueMemberPath="EmployeesCount">
-    <sunburst:SfSunburstChart.Levels>
-        <sunburst:SunburstHierarchicalLevel GroupMemberPath="Country"/>
-        <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobDescription"/>
-        <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobGroup"/>
-        <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobRole"/>
-    </sunburst:SfSunburstChart.Levels>
+
+<sunburst:SfSunburstChart x:Name="sunburstChart" ItemsSource="{Binding DataSource}"
+                                  ValueMemberPath="EmployeesCount">
+
+ <sunburst:SfSunburstChart.Levels>
+                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="Country"/>
+                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobDescription"/>
+                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobGroup"/>
+                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobRole"/>
+</sunburst:SfSunburstChart.Levels>
+
 </sunburst:SfSunburstChart>
 {% endhighlight %}
 
 {% highlight C# %}
-SfSunburstChart sunburst = new SfSunburstChart();
-sunburst.ValueMemberPath = "EmployeesCount";
-sunburst.SetBinding(SfSunburstChart.ItemsSourceProperty, "Data");
-sunburst.Levels.Add(new SunburstHierarchicalLevel() {GroupMemberPath = "Country"});
-sunburst.Levels.Add(new SunburstHierarchicalLevel() {GroupMemberPath = "JobDescription"});
-sunburst.Levels.Add(new SunburstHierarchicalLevel() {GroupMemberPath = "JobGroup"});
-sunburst.Levels.Add(new SunburstHierarchicalLevel() {GroupMemberPath = "JobRole"});
+
+SfSunburstChart sunburstChart = new SfSunburstChart();           
+            sunburstChart.SetBinding(SfSunburstChart.ItemsSourceProperty, "DataSource");
+            sunburstChart.ValueMemberPath = "EmployeesCount";
+            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country" });
+            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription" });
+            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup" });
+            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole" });
+ this.Content = sunburstChart;
 {% endhighlight %}
 
 {% endtabs %}
 
-## Add Title
+## Add title
 
-You can add title to sunburst chart to provide quick information to the user about the data being plotted in the chart. You can set title using [`SfSunburstChart.Title`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~Title.html) property as shown below.
+You can add title to the sunburst chart to provide information to users about the data being plotted in the chart. You can set title using the [`SfSunburstChart.Title`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~Title.html) property.
 
 {% tabs %} 
 
 {% highlight xaml %}
-<sunburst:SfSunburstChart>
 
-    ...
+    <sunburst:SfSunburstChart>    
 
     <sunburst:SfSunburstChart.Title>
-        <sunburst:SunburstChartTitle Text="Employees Count"/>
-    </sunburst:SfSunburstChart.Title>
+    <sunburst:SunburstChartTitle x:Name="title" Text="Employees Count"></sunburst:SunburstChartTitle>
+    </sunburst:SfSunburstChart.Title> 
 
-    ...
+    </sunburst:SfSunburstChart>
 
-</sunburst:SfSunburstChart >
 {% endhighlight %}
 
 {% highlight C# %} 
-sunburst.Title=new SunburstChartTitle();
-sunburst.Title.Text = "Employees Count";
+
+            SfSunburstChart sunburstChart = new SfSunburstChart();
+            sunburstChart.Title = new SunburstChartTitle();
+            sunburstChart.Title.Text = "Employees Count";
+            this.Content = sunburstChart;            
 {% endhighlight %}
 
 {% endtabs %}
 
 ## Add legend
 
-You can enable legend using [`SfSunburstChart.Legend`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~Legend.html) property as shown below,
+You can enable legend using the [`SfSunburstChart.Legend`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~Legend.html) property.
 
 {% tabs %} 
 
 {% highlight xaml %}
-<sunburst:SfSunburstChart>
 
-    ...
-    
-    <sunburst:SfSunburstChart.Legend>
-        <sunburst:SunburstChartLegend/>
-    </sunburst:SfSunburstChart.Legend>
+             <sunburst:SfSunburstChart>
 
-    ...
+                <sunburst:SfSunburstChart.Legend>
+                    <sunburst:SunburstChartLegend x:Name="legend" IsVisible="True" >                      
+                    </sunburst:SunburstChartLegend>
+                </sunburst:SfSunburstChart.Legend>
 
-</sunburst:SfSunburstChart>
+           </sunburst:SfSunburstChart>
 {% endhighlight %}
 
 {% highlight C# %} 
-sunburst.Legend = new SunburstChartLegend (); 
+
+            SfSunburstChart sunburstChart = new SfSunburstChart();
+            sunburstChart.Legend = new SunburstChartLegend();
+            sunburstChart.Legend.IsVisible = true;
+            this.Content = sunburstChart;
+
 {% endhighlight %}
 
 {% endtabs %} 
 
 ## Add data labels
 
-You can add data labels to improve the readability of the sunburst chart. This can be achieved using [`SfSunburstChart.DataLabel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~DataLabel.html) property as shown below.
+You can add data labels to improve the readability of the sunburst chart. Data labels can be added using the [`SfSunburstChart.DataLabel`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~DataLabel.html) property.
 
 {% tabs %} 
 
 {% highlight xaml %}
-<sunburst:SfSunburstChart>
+      
+       <sunburst:SfSunburstChart>
 
-    ...
+            <sunburst:SfSunburstChart.DataLabel>
+                    <sunburst:SunburstChartDataLabel x:Name="dataLabel" ShowLabel="True"></sunburst:SunburstChartDataLabel>
+            </sunburst:SfSunburstChart.DataLabel>
 
-    <sunburst:SfSunburstChart.DataLabel>
-        <sunburst:SunburstChartDataLabel/>
-	</sunburst:SfSunburstChart.DataLabel>
+       </sunburst:SfSunburstChart>
 
-    ...
-
-</sunburst:SfSunburstChart>
 {% endhighlight %}
 
 {% highlight C# %} 
-sunburst.DataLabel = new SunburstChartDataLabel();
+
+            SfSunburstChart sunburstChart = new SfSunburstChart();  
+            sunburstChart.DataLabel = new SunburstChartDataLabel();
+            sunburstChart.DataLabel.ShowLabel = true;
+            this.Content = sunburstChart;
+
 {% endhighlight %}
 
 {% endtabs %} 
 
+Below snippet is the complete code for generating the final output.
 
-Following is the final output screenshot,
+{% highlight xaml %}
+      
+          <sunburst:SfSunburstChart x:Name="sunburstChart" ItemsSource="{Binding DataSource}"
+                                  ValueMemberPath="EmployeesCount">
+
+                <sunburst:SfSunburstChart.Levels>
+                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="Country"/>
+                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobDescription"/>
+                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobGroup"/>
+                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobRole"/>
+                </sunburst:SfSunburstChart.Levels>
+
+                <sunburst:SfSunburstChart.Title>
+                    <sunburst:SunburstChartTitle x:Name="title" Text="Employees Count" ></sunburst:SunburstChartTitle>
+                </sunburst:SfSunburstChart.Title>
+
+                <sunburst:SfSunburstChart.Legend>
+                    <sunburst:SunburstChartLegend x:Name="legend" IsVisible="True" >
+                    </sunburst:SunburstChartLegend>
+                </sunburst:SfSunburstChart.Legend>
+
+                <sunburst:SfSunburstChart.DataLabel>
+                    <sunburst:SunburstChartDataLabel x:Name="dataLabel" ShowLabel="True"></sunburst:SunburstChartDataLabel>
+                </sunburst:SfSunburstChart.DataLabel>
+
+
+            </sunburst:SfSunburstChart>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+            this.BindingContext = new SunburstViewModel();
+
+            SfSunburstChart sunburstChart = new SfSunburstChart();
+
+            sunburstChart.SetBinding(SfSunburstChart.ItemsSourceProperty, "DataSource");
+            sunburstChart.ValueMemberPath = "EmployeesCount";
+            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country" });
+            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription" });
+            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup" });
+            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole" });
+                       
+            sunburstChart.Title = new SunburstChartTitle();
+            sunburstChart.Title.Text = "Employees Count";
+
+            sunburstChart.Legend = new SunburstChartLegend();
+            sunburstChart.Legend.IsVisible = true;
+
+            sunburstChart.DataLabel = new SunburstChartDataLabel();
+            sunburstChart.DataLabel.ShowLabel = true;
+
+            this.Content = sunburstChart;
+
+{% endhighlight %}
+
+{% endtabs %} 
+
+The following screenshot depicts the final output.
 
 ![SfSunburstChart with data label and legend](Getting-Started_images/gettingstarted.png)
 

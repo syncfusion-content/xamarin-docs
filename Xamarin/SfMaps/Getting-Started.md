@@ -69,7 +69,7 @@ this.Content = map;
 
 ## Adding layers
 
-Map is maintained through [`Layers`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.SfMaps~Layers.html). It can accommodate one or more shape file layers.
+Map is maintained through [`Layers`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.SfMaps~Layers.html). It can accommodate one or more shape file layers.
 
 {% tabs %}
 
@@ -130,7 +130,7 @@ Shape file can be a set of files or a single file. Generally, a shape file conta
 *	Right-click the added shape file, and navigate to properties.
 *	Choose the `EmbeddedResource` option under BuildAction of respective shape file.
 
-[`Uri`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~Uri.html) property in shape file layer is used to retrieve the location of the shape file that is added.
+[`Uri`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~Uri.html) property in shape file layer is used to retrieve the location of the shape file that is added.
 
 {% tabs %}
 
@@ -186,7 +186,7 @@ Maps control supports reading and loading the GeoJSON files. GeoJSON file contai
 
 ## Data binding
 
-Data can be binded to the shape file layer using the [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ItemsSource.html), [`ShapeIDPath`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShapeIDPath.html), [`ShapeIdTableField`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShapeIDTableField.html) properties.
+Data can be binded to the shape file layer using the [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ItemsSource.html), [`ShapeIDPath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShapeIDPath.html), [`ShapeIdTableField`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShapeIDTableField.html) properties.
  [`Populate data`](https://help.syncfusion.com/xamarin/SfMaps/PopulateData) topic gives the detailed explanation of data binding.
 
 {% tabs %}
@@ -218,7 +218,7 @@ ShapeFileLayer layer = new ShapeFileLayer();
 ## Adding marker 
 
 Markers are used to identify the shapes. This can be added to the shape file layers as shown in the following code sample.
-Markers can be customized using the [`MarkerSettings`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~MarkerSettings.html) property in shape file layer.
+Markers can be customized using the [`MarkerSettings`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~MarkerSettings.html) property in shape file layer.
 
 Detailed explanation of marker and its customization is provided under [`Markers`](https://help.syncfusion.com/xamarin/SfMaps/Markers) topic.
 

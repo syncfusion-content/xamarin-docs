@@ -9,10 +9,10 @@ documentation: ug
 
 # Workflows
 
-This feature is used to define the flow of the card transitions from one state to another state. You need to create an instance of [`KanbanWorkflow`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanWorkflow.html) class and add it to [`SfKanban.Workflows`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~Workflows.html) property to define the workflow for each column.  The [`KanbanWorkflow`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanWorkflow.html) contains the following properties to define the source category and target categories.
+This feature is used to define the flow of the card transitions from one state to another state. You need to create an instance of [`KanbanWorkflow`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanWorkflow.html) class and add it to [`SfKanban.Workflows`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~Workflows.html) property to define the workflow for each column.  The [`KanbanWorkflow`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanWorkflow.html) contains the following properties to define the source category and target categories.
 
-* [`Category`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanWorkflow~Category.html)            - Used to define the source category/state.
-* [`AllowedTransitions`](http://help.syncfusion.com/cr/cref_files/xamarin/sfkanban/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanWorkflow~AllowedTransitions.html)  - Used to define the list of categories/states, the card with the state specified in KanbanWorkflow.Category is allowed to transit.
+* [`Category`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanWorkflow~Category.html)            - Used to define the source category/state.
+* [`AllowedTransitions`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanWorkflow~AllowedTransitions.html)  - Used to define the list of categories/states, the card with the state specified in KanbanWorkflow.Category is allowed to transit.
 
 The following code example describes the workflow functionality.
 

@@ -9,11 +9,11 @@ documentation: ug
 
 # Tick Setting 
 
-The [`TickSetting`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.TickSettings.html) property is used to identify the gauge’s data value by marking the gauge scale in regular increments.
+The [`TickSetting`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.TickSettings.html) property is used to identify the gauge’s data value by marking the gauge scale in regular increments.
 
 ## Ticks visibility
 
-Ticks visibility can be customized using the [`ShowTicks`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~ShowTicks.html) property of linear scale.
+Ticks visibility can be customized using the [`ShowTicks`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~ShowTicks.html) property of linear scale.
 
 {% tabs %}
 
@@ -46,7 +46,7 @@ Ticks visibility can be customized using the [`ShowTicks`](https://help.syncfusi
 
 ## Tick customization
 
-You can customize the color and thickness of ticks by using the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearTickSettings~Color.html) and [`Thickness`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearTickSettings~Thickness.html) properties. The ticks length also can be customized using the [`Length`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearTickSettings~Length.html) property as demonstrated below.
+You can customize the color and thickness of ticks by using the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearTickSettings~Color.html) and [`Thickness`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearTickSettings~Thickness.html) properties. The ticks length also can be customized using the [`Length`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearTickSettings~Length.html) property as demonstrated below.
 
 ### Major tick customization
 
@@ -127,7 +127,7 @@ You can customize the color and thickness of ticks by using the [`Color`](https:
 
 ## Setting minor ticks per interval
 
-The [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~Interval.html) property is used to calculate the tick counts for a scale. Similar to ticks, minor ticks are also calculated by using the [`MinorTicksPerInterval`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~MinorTicksPerInterval.html) property.
+The [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~Interval.html) property is used to calculate the tick counts for a scale. Similar to ticks, minor ticks are also calculated by using the [`MinorTicksPerInterval`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~MinorTicksPerInterval.html) property.
 
 {% tabs %}
 
@@ -159,7 +159,7 @@ The [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncf
 
 ## Setting position for ticks
 
-The major and minor ticks can be positioned far away from the scale by using the [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearTickSettings~Offset.html) property.
+The major and minor ticks can be positioned far away from the scale by using the [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearTickSettings~Offset.html) property.
 
 {% tabs %}
 

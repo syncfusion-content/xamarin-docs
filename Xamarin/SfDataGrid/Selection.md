@@ -107,14 +107,14 @@ void DataGrid_SelectionChanged (object sender, GridSelectionChangedEventArgs e)
 {% endhighlight %}
  
 
-## Keyboard Behavior
+## Keyboard behavior
 
-`SfDataGrid` supports selection via keyboard interaction for the Xamarin.Forms.macOS and Xamarin.Forms.UWP platforms. Keyboard interaction will not have any effect when `SfDataGrid.SelectionMode` is set as `SelectionMode.None`.
+`SfDataGrid` supports selection via keyboard interaction for the Xamarin.Forms.macOS and Xamarin.Forms.UWP platforms. Keyboard interaction will not have any effect when the `SfDataGrid.SelectionMode` is set as `SelectionMode.None`.
 
 <table>
 <tr>
 <th>
-Key or KeyCombinations
+Key or key combinations
 </th>
 <th>
 Description
@@ -125,7 +125,7 @@ Description
 <kbd>DownArrow</kbd>
 </td>
 <td>
-Moves the selection to next row directly below the current selected row when having SelectionMode is Single. Upon reaching the bottom of the screen, pressing down arrow scrolls and applies selection to the next row if the grid has scrollable content. If the selected row is the last row of the grid, pressing down arrow does nothing. In `Multiple` and `SingleDeselect` selection modes, if the next row has already been selected, then pressing down key will deselect the row.
+Moves selection to the next row directly below the currently selected row when the SelectionMode is Single. Upon reaching the bottom of screen, pressing down arrow scrolls and applies selection to the next row if grid has scrollable content. If the selected row is the last row of grid, pressing down arrow does nothing. In `Multiple` and `SingleDeselect` selection modes, if the next row has already been selected, pressing down arrow key will deselect the row.
 </td>
 </tr>
 <tr>
@@ -133,7 +133,7 @@ Moves the selection to next row directly below the current selected row when hav
 <kbd>UpArrow</kbd>
 </td>
 <td>
-Moves the selection to previous row directly above the current selected row when having SelectionMode is Single. Upon reaching the top of the screen, pressing up arrow scrolls and applies selection to the previous row if the grid has scrollable content. If the selected row is the first row of the grid, pressing up arrow does nothing. In `Multiple` and `SingleDeselect` selection modes, if the previous row has already been selected, then pressing up key will deselect the row.
+Moves selection to the previous row directly above the currently selected row when the SelectionMode is Single. Upon reaching the top of screen, pressing up arrow scrolls and applies selection to the previous row if grid has scrollable content. If the selected row is the first row of grid, pressing up arrow does nothing. In `Multiple` and `SingleDeselect` selection modes, if the previous row has already been selected, pressing up arrow key will deselect the row.
 </td>
 </tr>
 <tr>
@@ -141,7 +141,7 @@ Moves the selection to previous row directly above the current selected row when
 <kbd>PageDown</kbd>
 </td>
 <td>
-The SfDataGrid will be scrolled to next set of rows that are not displayed in view, including the row that is partially displayed. If selection is applied to any row, pressing PageDown moves the selection to the last row of the next set of rows when having SelectionMode is Single.
+SfDataGrid will be scrolled to the next set of rows that are not displayed in view including the partially displayed row. If selection is applied to any row, pressing PageDown arrow will move selection to the last row of the next set of rows when the SelectionMode is Single.
 </td>
 </tr>
 <tr>
@@ -149,7 +149,7 @@ The SfDataGrid will be scrolled to next set of rows that are not displayed in vi
 <kbd>PageUp</kbd>
 </td>
 <td>
-The SfDataGrid will be scrolled to previous set of rows that are not displayed in view, including the row that is partially displayed. If selection is applied to any row, pressing PageUp moves the selection to the first row of the next set of rows when having SelectionMode is Single.
+SfDataGrid will be scrolled to the previous set of rows that are not displayed in view including the partially displayed row. If the selection is applied to any row, pressing PageUp will move selection to the first row of the next set of rows when the SelectionMode is Single.
 </td>
 </tr>
 <tr>
@@ -157,7 +157,7 @@ The SfDataGrid will be scrolled to previous set of rows that are not displayed i
 <kbd>Tab</kbd>
 </td>
 <td>
-Moves the selection to next row directly below the current selected row when having SelectionMode is Single. Upon reaching the bottom of the screen, pressing tab scrolls and applies selection to the next row if the grid has scrollable content. If the selected row is the last row of the grid, pressing tab does nothing. In `Multiple` and `SingleDeselect` selection modes, if the next row has already been selected, then pressing tab key will deselect the row.
+Moves selection to the next row directly below the currently selected row when the SelectionMode is Single. Upon reaching the bottom of screen, pressing Tab key scrolls and applies selection to the next row if grid has scrollable content. If the selected row is the last row of grid, pressing Tab key does nothing. In `Multiple` and `SingleDeselect` selection modes, if the next row has already been selected, pressing Tab key will deselect the row.
 </td>
 </tr>
 <tr>
@@ -165,7 +165,7 @@ Moves the selection to next row directly below the current selected row when hav
 <kbd>Ctrl</kbd> + <kbd>Home</kbd> or <kbd>Ctrl</kbd> + <kbd>UpArrow</kbd> or <kbd>Home</kbd>
 </td>
 <td>
-Scrolls the grid to the first row of the collection.
+Scrolls grid to the first row of the collection.
 </td>
 </tr>
 <tr>
@@ -173,7 +173,7 @@ Scrolls the grid to the first row of the collection.
 <kbd>Ctrl</kbd> + <kbd>End</kbd> or <kbd>Ctrl</kbd> + <kbd>DownArrow</kbd> or <kbd>End</kbd>
 </td>
 <td>
-Scrolls the grid to the last row of the collection.
+Scrolls grid to the last row of the collection.
 </td>
 </tr>
 <tr>
@@ -181,7 +181,7 @@ Scrolls the grid to the last row of the collection.
 <kbd>Enter</kbd> or <kbd>Ctrl</kbd> + <kbd>Enter</kbd>
 </td>
 <td>
-If the active current cell is in edit mode, the changes will be committed and moves the selection to the row below the active current cell. If the active current cell is in last row, commits changes and only editing is ended.
+If the active current cell is in edit mode, changes will be committed and selection will be moved to the row below the active current cell. If the active current cell is in last row, commits changes and only editing is ended.
 </td>
 </tr>
 <tr>
@@ -189,18 +189,18 @@ If the active current cell is in edit mode, the changes will be committed and mo
 <kbd>Esc</kbd>
 </td>
 <td>
-If the current cell is in edit mode, reverts the changes that had been done in the current cell. If the underlying source implements the {{'[IEditableObject](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject#"")'| markdownify }}, on pressing of Esc key for the second time will cancel the edit mode for entire row.
+If the current cell is in edit mode, reverts the changes done in the current cell. If the underlying source implements the {{'[IEditableObject](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject#"")'| markdownify }}, pressing Esc key for the second time will cancel the edit mode for the entire row.
 </td>
 </tr>
 </table>
 
 
-### Shift Key Combinations
+### Shift key combinations
 
 <table>
 <tr>
 <th>
-Key Combinations
+Key combinations
 </th>
 </tr>
 <tr>
@@ -208,7 +208,7 @@ Key Combinations
 <kbd>Shift</kbd> + <kbd>DownArrow</kbd>
 </td>
 <td>
-If Selection Mode is multiple, selects the next multiple rows continuously below the current selected row,If the Selection Mode is Single or SingleDeselect moves the selection to next row.
+If the Selection Mode is multiple, the next multiple rows will be continuously selected below the currently selected row. If the Selection Mode is Single or SingleDeselect, selection will be moved to the next row.
 </td>
 </tr>
 <tr>
@@ -216,7 +216,7 @@ If Selection Mode is multiple, selects the next multiple rows continuously below
 <kbd>Shift</kbd> + <kbd>UpArrow</kbd> 
 </td>
 <td>
-If Selection Mode is multiple, selects the previous multiple rows continuously above the current selected row.If the Selection Mode is Single or SingleDeselect moves the selection to previous row.
+If the Selection Mode is multiple, the previous multiple rows will be continuously selected above the currently selected row. If the Selection Mode is Single or SingleDeselect, selection will be moved to the previous row.
 </td>
 </tr>
 <tr>
@@ -224,7 +224,7 @@ If Selection Mode is multiple, selects the previous multiple rows continuously a
 <kbd>Shift</kbd> + <kbd>Tab</kbd>
 </td>
 <td>
-Moves the selection to previous row from current selected row when having SelectionMode is Single or SingleDeselect. If the selected row is in first row, pressing Shift +Tab does nothing.
+Moves selection to the previous row from the currently selected row when the SelectionMode is Single or SingleDeselect. If the selected row is in first row, pressing Shift +Tab does nothing.
 </td>   
 </tr>
 </table>

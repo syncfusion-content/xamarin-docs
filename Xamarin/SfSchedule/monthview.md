@@ -71,23 +71,23 @@ schedule.ShowAppointmentsInline = true;
 >**NOTE**
 If appointments not there in the selected day, Inline view displays the text as "No Events"
 
-## Agenda View:
-The Schedule month view displays a divided agenda view which is used to show the selected date’s appointments below the month. You can show agenda view by setting [ShowAgendaView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~ShowAgendaView.html) property as true.
+## Agenda View
+The Schedule month view displays a divided agenda view which is used to show the selected date’s appointments below the month. You can show agenda view by setting [ShowAgendaView](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~ShowAgendaView.html) property as true.
 
 {% tabs %}
 {% highlight xaml %}
 <schedule:SfSchedule ScheduleView="MonthView">
-                <schedule:SfSchedule.MonthViewSettings>
-                    <schedule:MonthViewSettings ShowAgendaView="true" />
-                </schedule:SfSchedule.MonthViewSettings>
-            </schedule:SfSchedule>
+	<schedule:SfSchedule.MonthViewSettings>
+		<schedule:MonthViewSettings ShowAgendaView="true" />
+	</schedule:SfSchedule.MonthViewSettings>
+</schedule:SfSchedule>
 {% endhighlight %}
 {% highlight c# %}
 SfSchedule schedule = new SfSchedule();
-            schedule.ScheduleView = ScheduleView.MonthView;
-            MonthViewSettings monthViewSettings = new MonthViewSettings();
-            monthViewSettings.ShowAgendaView = true;
-            schedule.MonthViewSettings = monthViewSettings;
+schedule.ScheduleView = ScheduleView.MonthView;
+MonthViewSettings monthViewSettings = new MonthViewSettings();
+monthViewSettings.ShowAgendaView = true;
+schedule.MonthViewSettings = monthViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
@@ -98,35 +98,35 @@ SfSchedule schedule = new SfSchedule();
 - If there is no appointment in a selected day, agenda view displays the text as “No Events”.
 - If you enable ShowAgendaView and ShowAppointmentsInline properties together, both of the views (Agenda View and Appointment Inline View) will be displayed in schedule month view.
 
-## Agenda View Appearance:
-You can customize the Agenda view appointment and Selected Date Text by setting [AgendaViewStyle](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~AgendaViewStyle.html) property of `MonthViewSettings`. Agenda view [DateFontColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~DateFontColor.html) ,[HeaderHeight](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~HeaderHeight.html), [DateFontFormat](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~DateFontFormat.html) , [DateFontAttributes](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~DateFontAttributes.html) , [DateFontSize](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~DateFontSize.html) , [DateFontFamily](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~DateFontFamily.html) , [TimeFontColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~TimeFontColor.html) , [TimeFontSize](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~TimeFontSize.html) , [TimeFontAttributes](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~TimeFontAttributes.html) , [TimeFontFamily](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~TimeFontFamily.html) , [TimeFontFormat](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~TimeFontFormat.html) , [SubjectFontColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~SubjectFontColor.html) , [SubjectFontSize](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~SubjectFontSize.html) , [SubjectFontFamily](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~SubjectFontFamily.html) , [SubjectFontAttributes](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~SubjectFontAttributes.html) , [BackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~BackgroundColor.html) can be customized using AgendaViewStyle properties.
+### Agenda View Appearance
+You can customize the Agenda view appointment and Selected Date Text by setting [AgendaViewStyle](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~AgendaViewStyle.html) property of `MonthViewSettings`. Agenda view [DateFontColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~DateFontColor.html) ,[HeaderHeight](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~HeaderHeight.html), [DateFontFormat](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~DateFontFormat.html) , [DateFontAttributes](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~DateFontAttributes.html) , [DateFontSize](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~DateFontSize.html) , [DateFontFamily](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~DateFontFamily.html) , [TimeFontColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~TimeFontColor.html) , [TimeFontSize](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~TimeFontSize.html) , [TimeFontAttributes](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~TimeFontAttributes.html) , [TimeFontFamily](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~TimeFontFamily.html) , [TimeFontFormat](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~TimeFontFormat.html) , [SubjectFontColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~SubjectFontColor.html) , [SubjectFontSize](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~SubjectFontSize.html) , [SubjectFontFamily](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~SubjectFontFamily.html) , [SubjectFontAttributes](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~SubjectFontAttributes.html) , [BackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~BackgroundColor.html) can be customized using AgendaViewStyle properties.
 {% tabs %}
 {% highlight c# %}
 SfSchedule schedule = new SfSchedule();
-            schedule.ScheduleView = ScheduleView.MonthView;
-            MonthViewSettings monthViewSettings = new MonthViewSettings();
-            monthViewSettings.ShowAgendaView = true;
-            schedule.MonthViewSettings = monthViewSettings;
-            AgendaViewStyle agendaViewStyle = new AgendaViewStyle();
-            // Customize selected Date Text
-            agendaViewStyle.DateFontColor = Color.Purple;
-            agendaViewStyle.HeaderHeight = 40;
-            agendaViewStyle.DateFontFormat = "dd MMMM, yyyy";
-            agendaViewStyle.DateFontAttributes = FontAttributes.Bold;
-            agendaViewStyle.DateFontSize = 15;
-            agendaViewStyle.DateFontFamily = "Arial";
-            // Customize appointment
-            agendaViewStyle.TimeFontColor = Color.Red;
-            agendaViewStyle.TimeFontSize = 13;
-            agendaViewStyle.TimeFontAttributes = FontAttributes.None;
-            agendaViewStyle.TimeFontFamily = "Arial";
-            agendaViewStyle.TimeFontFormat = "hh a";
-            agendaViewStyle.SubjectFontColor = Color.Blue;
-            agendaViewStyle.SubjectFontSize = 13;
-            agendaViewStyle.SubjectFontFamily = "Arial";
-            agendaViewStyle.SubjectFontAttributes = FontAttributes.None;
-            agendaViewStyle.BackgroundColor = Color.FromRgb(222, 240, 222);
-            schedule.MonthViewSettings.AgendaViewStyle = agendaViewStyle; 
+schedule.ScheduleView = ScheduleView.MonthView;
+MonthViewSettings monthViewSettings = new MonthViewSettings();
+monthViewSettings.ShowAgendaView = true;
+schedule.MonthViewSettings = monthViewSettings;
+AgendaViewStyle agendaViewStyle = new AgendaViewStyle();
+// Customize selected Date Text
+agendaViewStyle.DateFontColor = Color.Purple;
+agendaViewStyle.HeaderHeight = 40;
+agendaViewStyle.DateFontFormat = "dd MMMM, yyyy";
+agendaViewStyle.DateFontAttributes = FontAttributes.Bold;
+agendaViewStyle.DateFontSize = 15;
+agendaViewStyle.DateFontFamily = "Arial";
+// Customize appointment
+agendaViewStyle.TimeFontColor = Color.Red;
+agendaViewStyle.TimeFontSize = 13;
+agendaViewStyle.TimeFontAttributes = FontAttributes.None;
+agendaViewStyle.TimeFontFamily = "Arial";
+agendaViewStyle.TimeFontFormat = "hh a";
+agendaViewStyle.SubjectFontColor = Color.Blue;
+agendaViewStyle.SubjectFontSize = 13;
+agendaViewStyle.SubjectFontFamily = "Arial";
+agendaViewStyle.SubjectFontAttributes = FontAttributes.None;
+agendaViewStyle.BackgroundColor = Color.FromRgb(222, 240, 222);
+schedule.MonthViewSettings.AgendaViewStyle = agendaViewStyle; 
 {% endhighlight %}
 {% endtabs %}
 
@@ -135,38 +135,38 @@ SfSchedule schedule = new SfSchedule();
 >**NOTE**
 Agenda View Appearance customization is not applicable for UWP platform.
 
-## Agenda Item Template:
-The default appearance of the Appointment can be customized by using the [AgendaItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~AgendaItemTemplate.html) property of the `MonthViewSettings`.
+### Agenda Item Template
+The default appearance of the Appointment can be customized by using the [AgendaItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~AgendaItemTemplate.html) property of the `MonthViewSettings`.
 
 {% tabs %}
 {% highlight xaml %}
 <schedule:SfSchedule x:Name="schedule" ScheduleView="MonthView">
-            <schedule:SfSchedule.MonthViewSettings>
-                <schedule:MonthViewSettings ShowAgendaView="True">
-                    <schedule:MonthViewSettings.AgendaItemTemplate>
-                        <DataTemplate>
-                            <Button BackgroundColor="Purple" Text="Template" TextColor="White" />
-                        </DataTemplate>
-                    </schedule:MonthViewSettings.AgendaItemTemplate>
-                </schedule:MonthViewSettings>
-            </schedule:SfSchedule.MonthViewSettings>
-        </schedule:SfSchedule>
+	<schedule:SfSchedule.MonthViewSettings>
+		<schedule:MonthViewSettings ShowAgendaView="True">
+			<schedule:MonthViewSettings.AgendaItemTemplate>
+				<DataTemplate>
+					<Button BackgroundColor="Purple" Text="Template" TextColor="White" />
+				</DataTemplate>
+			</schedule:MonthViewSettings.AgendaItemTemplate>
+		</schedule:MonthViewSettings>
+	</schedule:SfSchedule.MonthViewSettings>
+</schedule:SfSchedule>
 {% endhighlight %}
 {% highlight c# %}
 SfSchedule schedule = new SfSchedule();
-            schedule.ScheduleView = ScheduleView.MonthView;
-            MonthViewSettings monthViewSettings = new MonthViewSettings();
-            monthViewSettings.ShowAgendaView = true;
-            monthViewSettings.AgendaItemTemplate = new DataTemplate(() =>
-            {
-                return new Button
-                {
-                    Text = "Template",
-                    TextColor = Color.White,
-                    BackgroundColor = Color.Purple
-                };
-            });
-            schedule.MonthViewSettings = monthViewSettings;
+schedule.ScheduleView = ScheduleView.MonthView;
+MonthViewSettings monthViewSettings = new MonthViewSettings();
+monthViewSettings.ShowAgendaView = true;
+monthViewSettings.AgendaItemTemplate = new DataTemplate(() =>
+{
+	return new Button
+	{
+		Text = "Template",
+		TextColor = Color.White,
+		BackgroundColor = Color.Purple
+	};
+});
+schedule.MonthViewSettings = monthViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
@@ -175,46 +175,46 @@ SfSchedule schedule = new SfSchedule();
 >**NOTE**
 Agenda item template support is not applicable for UWP platform.
 
-## Agenda View Using Template Selector:
+### Agenda View Using Template Selector
 AgendaTemplateSelector can be used to choose a DataTemplate at runtime based on the value of a data-bound to agenda appointment property through `AgendaItemTemplate`. It lets you choose a different data template for each appointment, customizing the appearance of a particular inline appointment based on certain conditions. DataTemplateSelector for inline appointment includes `ScheduleAppointment` or custom appointment as `object` and `Schedule` as bindable object.
 
 {% tabs %}
 {% highlight xaml %}
 <ContentPage.Resources>
-        <ResourceDictionary>
-            <local:AgendaTemplateSelector x:Key="AgendaTemplateSelector" />
-        </ResourceDictionary>
-    </ContentPage.Resources>
-        <schedule:SfSchedule x:Name="schedule" ScheduleView="MonthView">
-            <schedule:SfSchedule.MonthViewSettings>
-                <schedule:MonthViewSettings ShowAgendaView="True" AgendaItemTemplate="{StaticResource AgendaTemplateSelector}">
-                </schedule:MonthViewSettings>
-            </schedule:SfSchedule.MonthViewSettings>
-        </schedule:SfSchedule>
+	<ResourceDictionary>
+		<local:AgendaTemplateSelector x:Key="AgendaTemplateSelector" />
+	</ResourceDictionary>
+</ContentPage.Resources>
+<schedule:SfSchedule x:Name="schedule" ScheduleView="MonthView">
+	<schedule:SfSchedule.MonthViewSettings>
+		<schedule:MonthViewSettings ShowAgendaView="True" AgendaItemTemplate="{StaticResource AgendaTemplateSelector}">
+		</schedule:MonthViewSettings>
+	</schedule:SfSchedule.MonthViewSettings>
+</schedule:SfSchedule>
 {% endhighlight %}
 {% endtabs %}
 
 {% tabs %}
 {% highlight c# %}
- public class AgendaTemplateSelector : DataTemplateSelector
-    {
-        public DataTemplate DayAppointmentTemplate { get; set; }
-        public DataTemplate AllDayAppointmentTemplate { get; set; }
-        public AgendaTemplateSelector()
-        {
-            DayAppointmentTemplate = new DataTemplate(typeof(DayTemplate));
-            AllDayAppointmentTemplate = new DataTemplate(typeof(AllDayTemplate));
-        }
-        protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
-        {
-            var schedule = (container as SfSchedule);
-            if (schedule == null) return null;
-            if ((item as ScheduleAppointment).IsAllDay)
-                return AllDayAppointmentTemplate;
-            else
-                return DayAppointmentTemplate;
-        }
-    }
+public class AgendaTemplateSelector : DataTemplateSelector
+{
+	public DataTemplate DayAppointmentTemplate { get; set; }
+	public DataTemplate AllDayAppointmentTemplate { get; set; }
+	public AgendaTemplateSelector()
+	{
+		DayAppointmentTemplate = new DataTemplate(typeof(DayTemplate));
+		AllDayAppointmentTemplate = new DataTemplate(typeof(AllDayTemplate));
+	}
+	protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
+	{
+		var schedule = (container as SfSchedule);
+		if (schedule == null) return null;
+		if ((item as ScheduleAppointment).IsAllDay)
+			return AllDayAppointmentTemplate;
+		else
+			return DayAppointmentTemplate;
+	}
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -223,7 +223,17 @@ Used button to display day appointment and all day appointment.
 {% tabs %}
 {% highlight xaml %}
 <?xml version="1.0" encoding="UTF-8"?>
-<Button xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SchPreview.DayTemplate" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="{Binding Color}" Text="{Binding Subject}" FontAttributes="Bold" FontSize="15" TextColor="White">
+<Button 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="SchPreview.DayTemplate" 
+	HorizontalOptions="FillAndExpand" 
+	VerticalOptions="FillAndExpand" 
+	BackgroundColor="{Binding Color}" 
+	Text="{Binding Subject}" 
+	FontAttributes="Bold" 
+	FontSize="15" 
+	TextColor="White">
 </Button>
 {% endhighlight %}
 {% endtabs %}
@@ -231,7 +241,17 @@ Used button to display day appointment and all day appointment.
 {% tabs %}
 {% highlight xaml %}
 <?xml version="1.0" encoding="UTF-8"?>
-<Button xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SchPreview.AllDayTemplate" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="{Binding Color}" Text="{Binding Subject}" FontAttributes="Bold" FontSize="15" TextColor="Black">
+<Button
+	 xmlns="http://xamarin.com/schemas/2014/forms"
+	 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	 x:Class="SchPreview.AllDayTemplate"
+	 HorizontalOptions="FillAndExpand"
+	 VerticalOptions="FillAndExpand"
+	 BackgroundColor="{Binding Color}"
+	 Text="{Binding Subject}" 
+	 FontAttributes="Bold"
+	 FontSize="15"
+	 TextColor="Black">
 </Button>
 {% endhighlight %}
 {% endtabs %}

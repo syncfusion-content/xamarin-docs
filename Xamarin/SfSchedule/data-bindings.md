@@ -880,8 +880,8 @@ Set schedule to a specific time zone by using "TimeZone" Property of schedule by
     {% endtabs %}
 
 ### Creating Appointment's in different TimeZone
-	Set Appointment to specific time zone using StartTimeZone and EndTimeZone property of the Appointment the appointment's start time and end time calculated based the given time zone information for start time and end time, you can give different time zone's for start time and end time property.
-	Use ActualStartTime and ActualEndTime Property to get the exact Local Start Time and End Time of the appointment
+Set Appointment to specific time zone using StartTimeZone and EndTimeZone property of the Appointment the appointment's start time and end time calculated based the given time zone information for start time and end time, you can give different time zone's for start time and end time property.
+Use ActualStartTime and ActualEndTime Property to get the exact Local Start Time and End Time of the appointment
 
     {%tabs%}
     {% highlight c# %}
@@ -895,5 +895,8 @@ Set schedule to a specific time zone by using "TimeZone" Property of schedule by
 
 >**NOTE**
 * If the recurring appointment is converted to another time zone then the whole sequence is recalculated according to the new time zone information
-* Dynamic changes of Schedule time zone and Appointment's start time zone and end time zone supported 
-* After rescheduling an appointment using drag and drop, if ScheduleTimeZone has set then the appointment's start time and end time recalculated based on Schedule Time Zone. Otherwise, it can be recalculated based on Local Time Zone.
+* After rescheduling an appointment using drag and drop, if ScheduleTimeZone has set then the appointment's start time and end time recalculated based on Schedule Time Zone. Otherwise, the appointment's start time and end time recalculated based on Local Time Zone.
+Schedule's ActualStartTime and ActualEndTime properties has the local start time and local end time of the appointment.
+
+For an example,consider, your local time zone is IndianStandardTime and appointment's start time zone and end time zone has set as default, if you drag an appointment from 9 AM and drop this on 1 PM and you set the schedule Time zone as AUS Central Time Zone (Darwin) then the appointment's start time and end time will be calculated from the schedule time zone and the appointment will be rendered on 5 PM on your schedule,
+if you don't set the schedule Time Zone and it was set as default then the appointment rendered based on the device local time zone.

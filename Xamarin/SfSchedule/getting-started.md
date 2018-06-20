@@ -16,7 +16,7 @@ Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org
 
 ![](GettingStarted_images/installation_image.png)  
 
-To know more about obtaining our components, refer to this links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfschedule) to know about dependent assemblies for schedule. 
+To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfschedule) to know about dependent assemblies for schedule. 
 
 >** NOTE**
 Install the same version of schedule NuGet in all the projects. 

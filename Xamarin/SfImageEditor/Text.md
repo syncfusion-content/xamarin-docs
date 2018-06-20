@@ -44,6 +44,16 @@ TextSettings is defined to set the values for `Color`, `FontSize` and `FontFamil
 
 ![SfImageEditor](ImageEditor_images/text.png)
 
+#### Bounds
+
+`Bounds` property allows you to set frame for the newly added `Text` and you can position the text wherever you want on the image. The value of the text frame should be in percentage(maximum - 100 & minimum - 0).
+
+{% highlight C# %}
+
+  edit.AddText("New Text", new TextSettings() { Bounds = new Rectangle(20, 20, 35, 35) });
+
+{% endhighlight %}
+
 # Custom Font Family
 
 Using a font other than the built-in typefaces requires some platform-specific coding. The steps required for each platform are outlined below.

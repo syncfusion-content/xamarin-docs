@@ -22,11 +22,11 @@ N>Install the same version of the image editor NUGET in all the projects.
 
 ## Launching the application in iOS with image editor
 
-To use the image editor inside iOS application, it requires some additional configurations as like below,
+To use the image editor inside iOS application, it requires some additional configurations such as,
 
 ### iOS
 
-To launch the image editor in iOS, call the SfImageEditorRenderer.Init() method in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework initialization and before the LoadApplication method is called as demonstrated in the following code sample:
+To launch the image editor in iOS, call the `SfImageEditorRenderer.Init()` method in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework initialization and before the LoadApplication method is called as demonstrated in the following code sample:
 
 {% highlight C# %} 
 
@@ -48,7 +48,7 @@ To launch the image editor in iOS, call the SfImageEditorRenderer.Init() method 
 
 ## Creating a simple ImageEditor sample
 
-This section explains how to create a SfImageEditor and configure it. The SfImageEditor control can be configured entirely in C# code or by using XAML markup.
+This section explains how to create a simple SfImageEditor sample along with the ways to configure it. The SfImageEditor control can be configured entirely in C# code or by using XAML markup.
 
 ### Creating the project
 
@@ -102,19 +102,24 @@ Create a new [BlankApp application](https://developer.xamarin.com/guides/xamari
 {% endhighlight %}
 {% endtabs %}
 
+* We can load image editor without an image, like white canvas and can perform editing action with the help of built-in toolbar menu option.
 
-## Load image to ImageEditor
+![SfImageEditor](ImageEditor_images/GettingstartedDefault.png)
 
-SfImageEditor will get completed, once we load an image to it. Add a image file to pcl project. The image file type can be jpeg or png.
+N> Refer to this [link](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/images?tabs=vswin#displaying-images) to know more about how to load an image to image editor source property in different format.
 
-Follow the following steps to add a image to pcl project
+## Load an image to ImageEditor
+
+Refer to the following steps to add an image to the pcl project,
 
 1. Right click on your pcl project. 
 2. Select Add Files submenu from Add menu 
 3. Dialog box will appear then choose and import the desired image to the pcl project.
-4. Once the image is imported please ensure whether you have set EmbeddedResource as Build Action 
+4. Once the image is imported please ensure whether you have set image Build Action as `EmbeddedResource`.
 
-To load an image to SfImageEditor follow the below codes. We have loaded a image of type jpg and name as "image".
+>N The loaded image can be of any type like jpeg, png, etc..
+
+To load an image to SfImageEditor follow the below code snippet. We have loaded an image of type jpg and name as "image".
 
 {% tabs %}
 
@@ -168,9 +173,6 @@ To load an image to SfImageEditor follow the below codes. We have loaded a image
 {% endhighlight %}
 {% endtabs %}
 
-
-* The following screenshot illustrates loading the image to the SfImageEditor, you can start to edit the image by using the built-in Toolbars.
-
+* The following screenshot illustrates loaded image of SfImageEditor and you can start to edit the image by using built-in Toolbar menu items.
 
 ![SfImageEditor](ImageEditor_images/Gettingstarted.png)
-

@@ -11,6 +11,16 @@ documentation: ug
     
 This section provides you an overview for working with SfSchedule for Xamarin.Forms and also provides a walk through to configure SfSchedule control in real time scenario.   
 
+## Adding Schedule Reference
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add schedule in your project, open the NugetPackage manager in Visual Studio, and search for [Syncfusion.Xamarin.SfSchedule](https://www.nuget.org/packages/Syncfusion.Xamarin.SfSchedule/) and then install it.
+
+![](GettingStarted_images/installation_image.png)  
+
+To know more about obtaining our components, refer to this links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfschedule) to know about dependent assemblies for schedule. 
+
+>** NOTE**
+Install the same version of schedule NuGet in all the projects. 
+
 ## Assembly Configuration   
     
 SfSchedule can be included in your Xamarin.Forms project in two ways,  

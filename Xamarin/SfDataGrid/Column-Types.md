@@ -20,43 +20,43 @@ The following table describes the types of columns and its usage:
 <th>Description</th>
 </tr>
 <tr>
-<td>{{'[GridTextColumn](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridTextColumn.html)'| markdownify }}</td>
-<td>{{'[GridCellTextViewRenderer](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridCellTextViewRenderer.html)'| markdownify }}</td>
+<td>{{'[GridTextColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridTextColumn.html)'| markdownify }}</td>
+<td>{{'[GridCellTextViewRenderer](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridCellTextViewRenderer.html)'| markdownify }}</td>
 <td>To display string or numbers in each row.</td>
 </tr>
 <tr>
-<td>{{'[GridSwitchColumn](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSwitchColumn.html)'| markdownify }}</td>
-<td>{{'[GridCellSwitchRenderer](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridCellSwitchRenderer.html)'| markdownify }}</td>
+<td>{{'[GridSwitchColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSwitchColumn.html)'| markdownify }}</td>
+<td>{{'[GridCellSwitchRenderer](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridCellSwitchRenderer.html)'| markdownify }}</td>
 <td>To display switch in each row.</td>
 </tr>
 <tr>
-<td>{{'[GridImageColumn](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridImageColumn.html)'| markdownify }}</td>
-<td>{{'[GridImageCellRenderer](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridImageCellRenderer.html)'| markdownify }}</td>
+<td>{{'[GridImageColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridImageColumn.html)'| markdownify }}</td>
+<td>{{'[GridImageCellRenderer](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridImageCellRenderer.html)'| markdownify }}</td>
 <td>To display an image in each row.</td>
 </tr>
 <tr>
-<td>{{'[GridTemplateColumn](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridTemplateColumn.html)'| markdownify }}</td>
-<td>{{'[GridCellTemplateRenderer](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridCellTemplateRenderer.html)'| markdownify }}</td>
+<td>{{'[GridTemplateColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridTemplateColumn.html)'| markdownify }}</td>
+<td>{{'[GridCellTemplateRenderer](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridCellTemplateRenderer.html)'| markdownify }}</td>
 <td>To customize the column based on the requirements.</td>
 </tr>
 <tr>
-<td>{{'[GridNumericColumn](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridNumericColumn.html)'| markdownify }}</td>
-<td>{{'[GridCellNumericRenderer](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.Renderers.GridCellNumericRenderer.html)'| markdownify }}</td>
+<td>{{'[GridNumericColumn](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridNumericColumn.html)'| markdownify }}</td>
+<td>{{'[GridCellNumericRenderer](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.Renderers.GridCellNumericRenderer.html)'| markdownify }}</td>
 <td>To display a numeric data.</td>
 </tr>
 <tr>
-<td>{{'[GridPickerColumn](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridPickerColumn.html)'| markdownify }}</td>
-<td>{{'[GridCellPickerRenderer](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.Renderers.GridCellPickerRenderer.html)'| markdownify }}</td>
+<td>{{'[GridPickerColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridPickerColumn.html)'| markdownify }}</td>
+<td>{{'[GridCellPickerRenderer](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.Renderers.GridCellPickerRenderer.html)'| markdownify }}</td>
 <td>To display the IEnumerable data using Picker.</td>
 </tr>
 <tr>
-<td>{{'[GridDateTimeColumn](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridDateTimeColumn.html)'| markdownify }}</td>
-<td>{{'[GridDateTimeColumn](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.Renderers.GridCellDateTimeRenderer.html)'| markdownify }}</td>
+<td>{{'[GridDateTimeColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridDateTimeColumn.html)'| markdownify }}</td>
+<td>{{'[GridDateTimeColumn](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.Renderers.GridCellDateTimeRenderer.html)'| markdownify }}</td>
 <td>To display the date and time value.</td>
 </tr>
 <tr>
-<td>{{'[GridUnboundColumn](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridUnboundColumn.html)'| markdownify }}</td>
-<td>{{'[GridUnboundCellTextBoxRenderer](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridUnboundCellTextBoxRenderer.html)'| markdownify }}</td>
+<td>{{'[GridUnboundColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridUnboundColumn.html)'| markdownify }}</td>
+<td>{{'[GridUnboundCellTextBoxRenderer](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridUnboundCellTextBoxRenderer.html)'| markdownify }}</td>
 <td>To add additional columns that are not bound with data object from the underlying data source.</td>
 </tr>
 </table>
@@ -64,17 +64,17 @@ The following table describes the types of columns and its usage:
 
 ## GridColumn
 
-The [GridColumn](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn.html) is the base column types of all columns. Hence its properties are used by all the columns. The following sub-sections explain the properties and customizations of GridColumn:
+The [GridColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn.html) is the base column types of all columns. Hence its properties are used by all the columns. The following sub-sections explain the properties and customizations of GridColumn:
 
 ### Binding options
 
-Display content of the GridColumn is determined from the [GridColumn.DisplayBinding](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~DisplayBinding.html) property. It gets or sets display binding that associates the GridColumn with a property in the data source. 
+Display content of the GridColumn is determined from the [GridColumn.DisplayBinding](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~DisplayBinding.html) property. It gets or sets display binding that associates the GridColumn with a property in the data source. 
 
-The actual bound value of the GridColumn is determined from [GridColumn.ValueBinding](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~ValueBinding.html) property. It gets or sets value binding that associates the GridColumn with a property in the data source.  
+The actual bound value of the GridColumn is determined from [GridColumn.ValueBinding](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~ValueBinding.html) property. It gets or sets value binding that associates the GridColumn with a property in the data source.  
 
 #### Mapping column to particular property
 
-The [GridColumn.MappingName](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~MappingName.html) associates the GridColumn with a property available in the underlying data source. While setting MappingName alone to the SfDataGrid, the `GridColumn.DisplayBinding` will be automatically generated based on the MappingName. Data manipulation operations like sorting, filtering, and grouping will be done based on the MappingName property.
+The [GridColumn.MappingName](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~MappingName.html) associates the GridColumn with a property available in the underlying data source. While setting MappingName alone to the SfDataGrid, the `GridColumn.DisplayBinding` will be automatically generated based on the MappingName. Data manipulation operations like sorting, filtering, and grouping will be done based on the MappingName property.
 
 To format cell content, use the converter of the `GridColumn.DisplayBinding` to customize the cell content. The following code example appends the text “Customer” along with the Customer ID:
 
@@ -117,27 +117,27 @@ public class DisplayBindingConverter : IValueConverter
 
 #### HeaderCellTextSize
 
-The FontSize can be customized using the [GridColumn.HeaderCellTextSize](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderCellTextSize.html) property. The default font size is 14.
+The FontSize can be customized using the [GridColumn.HeaderCellTextSize](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderCellTextSize.html) property. The default font size is 14.
 
 #### HeaderFont
 
-The FontFamily can be customized using the [GridColumn.HeaderFont](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderFont.html) property. The default font value is `HelveticaNeue LT 55 Roman`.
+The FontFamily can be customized using the [GridColumn.HeaderFont](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderFont.html) property. The default font value is `HelveticaNeue LT 55 Roman`.
 
 #### HeaderFontAttribute
 
-The FontAttribute can be customized using the [GridColumn.HeaderFontAttribute](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderFontAttribute.html) property. The default value of this property is `None`. It can be customized as `Bold` or `Italic`.
+The FontAttribute can be customized using the [GridColumn.HeaderFontAttribute](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderFontAttribute.html) property. The default value of this property is `None`. It can be customized as `Bold` or `Italic`.
 
 #### HeaderText
 
-To customize the display content of the header cell, use the [GridColumn.HeaderText](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderText.html) property. It specifies the text displayed in the column header. If header text is not defined, then `GridColumn.MappingName` will be assigned to the header text and will be displayed as column header.
+To customize the display content of the header cell, use the [GridColumn.HeaderText](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderText.html) property. It specifies the text displayed in the column header. If header text is not defined, then `GridColumn.MappingName` will be assigned to the header text and will be displayed as column header.
 
 #### HeaderTextAlignment
 
-To get or set the TextAlignment of the header cell, use the [GridColumn.HeaderTextAlignment](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderTextAlignment.html) property. The default alignment is `Center`. It can be customized as `Start` or `End`.
+To get or set the TextAlignment of the header cell, use the [GridColumn.HeaderTextAlignment](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderTextAlignment.html) property. The default alignment is `Center`. It can be customized as `Start` or `End`.
 
 #### HeaderTemplate
 
-Based on the requirement, the header cell can be customized using the [GridColumn.HeaderTemplate](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderTemplate.html) property. To customize header cell by loading a template in the header cell, follow the code example:
+Based on the requirement, the header cell can be customized using the [GridColumn.HeaderTemplate](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderTemplate.html) property. To customize header cell by loading a template in the header cell, follow the code example:
 
 {% highlight xaml %}
 <syncfusion:SfDataGrid.Columns>
@@ -154,7 +154,7 @@ Based on the requirement, the header cell can be customized using the [GridColum
 
 ### Setting manual column width
 
-SfDataGrid allows you to customize the width of each GridColumn in the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~Columns.html) collection. To customize column width, use the [GridColumn.Width](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~Width.html) property. By default, this property will not be assigned any value. The GridColumn renders in view based on the value of the [DefaultColumnWidth](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~DefaultColumnWidth.html) property.
+SfDataGrid allows you to customize the width of each GridColumn in the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~Columns.html) collection. To customize column width, use the [GridColumn.Width](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~Width.html) property. By default, this property will not be assigned any value. The GridColumn renders in view based on the value of the [DefaultColumnWidth](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~DefaultColumnWidth.html) property.
 
 N> Set the `IsHidden` property to `True` instead of setting column width as `0` to hide a column.
 
@@ -191,7 +191,7 @@ dataGrid.Columns.Add(new GridTextColumn() { MappingName = "OrderID" ,Width = 100
 
 ### Hiding a column 
 
-To hide a particular column, use the [GridColumn.IsHidden](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~IsHidden.html) property. The default value of the `IsHidden` property is `False`. 
+To hide a particular column, use the [GridColumn.IsHidden](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~IsHidden.html) property. The default value of the `IsHidden` property is `False`. 
 
 N> Set the `IsHidden` property to `True` instead of setting column width as `0` to hide a column.
 
@@ -220,10 +220,10 @@ dataGrid.Columns.Add(new GridTextColumn() { MappingName = "OrderID", IsHidden = 
 
 ### LoadUIView
 
-The [GridColumn.LoadUIView](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~LoadUIView.html) property indicates whether to load `UIElement` inside the `GridCell` or to draw cell value directly in the `canvas` of the `GridCell` in Android platform. 
+The [GridColumn.LoadUIView](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~LoadUIView.html) property indicates whether to load `UIElement` inside the `GridCell` or to draw cell value directly in the `canvas` of the `GridCell` in Android platform. 
 
  * When `LoadUIView` is set to `false`, cell value of the column is directly drawn in the `canvas` of the grid cells to improve performance. 
- * While setting the `LoadUIView` to `true`, a `UIElement` ([SfLabel](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfLabel.html)) is loaded in the `GridCells`.  
+ * While setting the `LoadUIView` to `true`, a `UIElement` ([SfLabel](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfLabel.html)) is loaded in the `GridCells`.  
 
 The default value of the `LoadUIView` is `false` for Xamarin.Forms.Android, and `true` for other platforms in Xamarin.Forms. 
 
@@ -254,7 +254,7 @@ The following topics explain the customizations done in the GridTextColumn:
 
 ### Formatting
 
-To format values displayed in the GridColumn, use the [GridColumn.Format](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~Format.html) property.
+To format values displayed in the GridColumn, use the [GridColumn.Format](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~Format.html) property.
 
 #### Format column using StringFormat
 
@@ -304,11 +304,11 @@ public object Convert(object value, Type targetType, object parameter, CultureIn
 
  {% endhighlight%}
 
-N> For AutoGenerated columns formatting can be applied by handling the [SfDataGrid.AutoGeneratingColumn](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoGeneratingColumn_EV.html) event.
+N> For AutoGenerated columns formatting can be applied by handling the [SfDataGrid.AutoGeneratingColumn](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoGeneratingColumn_EV.html) event.
 
 #### Formatting GridTextColumn with different culture
 
-To apply different [CultureInfo](https://developer.xamarin.com/api/type/System.Globalization.CultureInfo/) for GridColumns, use the [GridColumn.CultureInfo](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~CultureInfo.html) property. Assign format of the string to this property. Based on the type of the property the column is associated to format the value. You can use different `StringFormats` to customize values displayed in the record cells.
+To apply different [CultureInfo](https://developer.xamarin.com/api/type/System.Globalization.CultureInfo/) for GridColumns, use the [GridColumn.CultureInfo](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~CultureInfo.html) property. Assign format of the string to this property. Based on the type of the property the column is associated to format the value. You can use different `StringFormats` to customize values displayed in the record cells.
 
 To apply different cultures for the GridColumns, follow the code example:
 
@@ -326,7 +326,7 @@ dataGrid.Columns.Add (new GridTextColumn () { 
 }); 
 {% endhighlight %}
 
-For auto generated columns, this is achievable by handling the [SfDataGrid.AutoGeneratingColumn](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoGeneratingColumn_EV.html) event. To apply different cultures for auto generated GridColumns, follow the code example:
+For auto generated columns, this is achievable by handling the [SfDataGrid.AutoGeneratingColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoGeneratingColumn_EV.html) event. To apply different cultures for auto generated GridColumns, follow the code example:
 
 {% highlight c# %}
 void GridAutoGeneratingColumns(object sender, AutoGeneratingColumnArgs e)
@@ -345,11 +345,11 @@ void GridAutoGeneratingColumns(object sender, AutoGeneratingColumnArgs e)
 
 #### CellTextSize
 
-The FontSize for the content of record cells can be customized using the [GridColumn.CellTextSize](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~CellTextSize.html) property. The default font size of the record cells is 14.
+The FontSize for the content of record cells can be customized using the [GridColumn.CellTextSize](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~CellTextSize.html) property. The default font size of the record cells is 14.
 
 #### RecordFont
 
-The FontFamily for the content of record cell can be customized using the [GridColumn.RecordFont](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~RecordFont.html) property. The default font value is `Helvetica Neue`.
+The FontFamily for the content of record cell can be customized using the [GridColumn.RecordFont](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~RecordFont.html) property. The default font value is `Helvetica Neue`.
 
 #### FontAttribute
 
@@ -384,11 +384,11 @@ Run the application to render the following output:
 
 #### TextAlignment
 
-To get or set TextAlignment of the header cell, use the [GridColumn.TextAlignment](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~TextAlignment.html) property. The default alignment of the record cell is `Center`. It can be customized as `Start` or `End`.
+To get or set TextAlignment of the header cell, use the [GridColumn.TextAlignment](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~TextAlignment.html) property. The default alignment of the record cell is `Center`. It can be customized as `Start` or `End`.
 
 #### LineBreakMode
 
-When the text for the record cells exceeds the content area, wrap the record cell by setting the [GridColumn.LineBreakMode](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~LineBreakMode.html) as `LineBreakMode.WordWrap`. 
+When the text for the record cells exceeds the content area, wrap the record cell by setting the [GridColumn.LineBreakMode](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~LineBreakMode.html) as `LineBreakMode.WordWrap`. 
 
 To use LineBreakMode, follow the code example:
  
@@ -476,7 +476,7 @@ public class ViewModel
 
 ### Editing for switch column
 
-To edit the switch column, set the [AllowEditing](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowEditingProperty.html) property to `true`. By default, `AllowEditing` is `true`. If `AllowEditing` is set to `false`, you cannot check or uncheck the Switch column.
+To edit the switch column, set the [AllowEditing](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowEditingProperty.html) property to `true`. By default, `AllowEditing` is `true`. If `AllowEditing` is set to `false`, you cannot check or uncheck the Switch column.
 
 To set the `AllowEditing` property, follow the code example:
 
@@ -678,7 +678,7 @@ The following code example illustrates how template column can be used to load a
 </ContentPage.ContentView>
 {% endhighlight %}
 
-In order to get the above code example working, write a converter to load images inside the [GridCell](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridCell.html) based on the CellValue. The images that have to be loaded in the `GridCell` must be added as EmbeddedResource.
+In order to get the above code example working, write a converter to load images inside the [GridCell](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridCell.html) based on the CellValue. The images that have to be loaded in the `GridCell` must be added as EmbeddedResource.
 
 The converter code for loading images in a template column is shown in the following code:
 
@@ -805,7 +805,7 @@ public partial class MainPage : ContentPage
 }
 {% endhighlight %}
 
-N> The row index of the row can also be retrieved by using the [GridTapped](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridTapped_EV.html), [GridDoubleTapped](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridDoubleTapped_EV.html), and [GridLongPressed events](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridLongPressed_EV.html). When using complex layout in a `DataTemplate`, set the `InputTransparent` property of the views loaded in the `DataTemplate` of the GridTemplateColumn to `True`.
+N> The row index of the row can also be retrieved by using the [GridTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridTapped_EV.html), [GridDoubleTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridDoubleTapped_EV.html), and [GridLongPressed events](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridLongPressed_EV.html). When using complex layout in a `DataTemplate`, set the `InputTransparent` property of the views loaded in the `DataTemplate` of the GridTemplateColumn to `True`.
 
 ### Loading DatePicker and TimePicker together
 
@@ -834,7 +834,7 @@ The following screenshot shows that how `DatePicker` and `TimePicker` are viewed
 
 ## GridDateTimeColumn
 
-The [SfDataGrid.GridDateTimeColumn](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridDateTimeColumn.html) inherits all the properties of the [SfDataGrid.GridColumn](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn.html). It displays the date information as the content of a column. To create the `SfDataGrid.GridDateTimeColumn`, the property corresponding to the column in the underlying collection must be of type DateTime. To enable or disable editing for the particular column, set the [GridColumn.AllowEditing](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~AllowEditing.html) property to true or false. In the editing mode it displays a customized `DatePicker` element which is derived from the [Xamarin.Forms.DatePicker](https://developer.xamarin.com/api/type/Xamarin.Forms.DatePicker/). The `SfDatePicker` enables to scroll through a list of dates between the [GridDateTimeColumn.MinimumDate](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridDateTimeColumn~MinimumDate.html) and [GridDateTimeColumn.MaximumDate](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridDateTimeColumn~MaximumDate.html) and selects one from it.
+The [SfDataGrid.GridDateTimeColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridDateTimeColumn.html) inherits all the properties of the [SfDataGrid.GridColumn](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn.html). It displays the date information as the content of a column. To create the `SfDataGrid.GridDateTimeColumn`, the property corresponding to the column in the underlying collection must be of type DateTime. To enable or disable editing for the particular column, set the [GridColumn.AllowEditing](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~AllowEditing.html) property to true or false. In the editing mode it displays a customized `DatePicker` element which is derived from the [Xamarin.Forms.DatePicker](https://developer.xamarin.com/api/type/Xamarin.Forms.DatePicker/). The `SfDatePicker` enables to scroll through a list of dates between the [GridDateTimeColumn.MinimumDate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridDateTimeColumn~MinimumDate.html) and [GridDateTimeColumn.MaximumDate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridDateTimeColumn~MaximumDate.html) and selects one from it.
 
 {% tabs %}
 {% highlight xaml %}
@@ -945,7 +945,7 @@ public class ViewModel
 
 ## GridPickerColumn
 
-The [GridPickerColumn](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridPickerColumn.html) inherits all the properties of the `SfDataGrid.GridColumn`. It displays a list of items in the form of a picker as the content of a column. To enable or disable editing for the particular column, set the GridColumn.AllowEditing property to true or false. In the editing mode it displays a customized `Picker` element which is derived from the [Xamarin.Forms.Picker](https://developer.xamarin.com/api/type/Xamarin.Forms.Picker/). The data source to `Picker` can be set by using the [GridPickerColumn.ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridPickerColumn~ItemsSource.html) property. The picker column can be populated with data by the following ways:
+The [GridPickerColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridPickerColumn.html) inherits all the properties of the `SfDataGrid.GridColumn`. It displays a list of items in the form of a picker as the content of a column. To enable or disable editing for the particular column, set the GridColumn.AllowEditing property to true or false. In the editing mode it displays a customized `Picker` element which is derived from the [Xamarin.Forms.Picker](https://developer.xamarin.com/api/type/Xamarin.Forms.Picker/). The data source to `Picker` can be set by using the [GridPickerColumn.ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridPickerColumn~ItemsSource.html) property. The picker column can be populated with data by the following ways:
 
  * Collection of primitive types
  * Collection of user-defined types (Custom objects)
@@ -1007,7 +1007,7 @@ public class ViewModel
 
 ### Collection of user-defined types
 
-To display a list of user-defined items in the picker drop down, create a `SfDataGrid.GridPickerColumn` and set its `ItemsSource` property to a user-defined collection. Initially, the picker column will be displayed with the values from the [GridColumn.MappingName](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~MappingName.html) property of the column if the [DisplayMemberPath](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridPickerColumn~DisplayMemberPath.html) and [ValueMemberPath](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridPickerColumn~ValueMemberPath.html) are not set.
+To display a list of user-defined items in the picker drop down, create a `SfDataGrid.GridPickerColumn` and set its `ItemsSource` property to a user-defined collection. Initially, the picker column will be displayed with the values from the [GridColumn.MappingName](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~MappingName.html) property of the column if the [DisplayMemberPath](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridPickerColumn~DisplayMemberPath.html) and [ValueMemberPath](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridPickerColumn~ValueMemberPath.html) are not set.
 
 #### DisplayMemberPath
  
@@ -1153,7 +1153,7 @@ When edit mode is exited by selecting a value(9) from the Picker pop up, the `Gr
 
 ## GridNumericColumn
 
-The [GridNumericColumn](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridNumericColumn.html) inherits all the properties of `GridColumn`. It is used to display numeric data. To create `GridNumericColumn`, the property corresponding to the column in the underlying collection must be a numeric type(int, double, float, etc.). To enable or disable editing a particular column, set the [GridColumn.AllowEditing](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowEditingProperty.html) property to true or false. In the editing mode it displays the [SfNumericTextBox](https://help.syncfusion.com/cr/xamarin/sfnumerictextbox) element from the [View](https://developer.xamarin.com/api/type/Xamarin.Forms.View/). To create a `GridNumericColumn`, follow the code example:
+The [GridNumericColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridNumericColumn.html) inherits all the properties of `GridColumn`. It is used to display numeric data. To create `GridNumericColumn`, the property corresponding to the column in the underlying collection must be a numeric type(int, double, float, etc.). To enable or disable editing a particular column, set the [GridColumn.AllowEditing](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowEditingProperty.html) property to true or false. In the editing mode it displays the [SfNumericTextBox](https://help.syncfusion.com/cr/xamarin/sfnumerictextbox) element from the [View](https://developer.xamarin.com/api/type/Xamarin.Forms.View/). To create a `GridNumericColumn`, follow the code example:
 
 {% tabs %}
 {% highlight xaml %}
@@ -1188,22 +1188,22 @@ dataGrid.Columns.Add(numericColumn);
 
 The`GridNumericColumn` allows formatting the numeric data with culture-specific information.
 
-* [NumberDecimalDigits](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridNumericColumn~NumberDecimalDigits.html): To change the number of decimal digits to be displayed after the decimal point, use the `GridNumericColumn.NumberDecimalDigits` property.
-* [NumberDecimalSeparator](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridNumericColumn~NumberDecimalSeparator.html): By default, the dot(.) operator separates the decimal part of numeric value. Any operator can be used as decimal separator using the `GridNumericColumn.NumberDecimalSeparator` property.
-* [NumberGroupSeparator](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridNumericColumn~NumberGroupSeparator.html): By default, the comma(,) separates group of digits before the decimal point. Any operator can be used as group separator using the `GridNumericColumn.NumberGroupSeparator` property.
-* [NumberGroupSizes](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridNumericColumn~NumberGroupSizes.html): To change the number of digits in each group before the decimal point on numeric values, use the `GridNumericColumn.NumberGroupSizes` property.
-* [NumberNegativePattern](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridNumericColumn~NumberNegativePattern.html): To format the pattern of negative numeric values, use `GridNumericColumn.NumberNegativePattern`.
-* [MinValue](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridEditorColumn~MinValue.html): To set the minimum value for the numeric column, use the `GridNumericColumn.MinValue` property.
-* [MaxValue](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridEditorColumn~MaxValue.html): To set the maximum value for the numeric column, use the `GridNumericColumn.MaxValue` property.
+* [NumberDecimalDigits](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridNumericColumn~NumberDecimalDigits.html): To change the number of decimal digits to be displayed after the decimal point, use the `GridNumericColumn.NumberDecimalDigits` property.
+* [NumberDecimalSeparator](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridNumericColumn~NumberDecimalSeparator.html): By default, the dot(.) operator separates the decimal part of numeric value. Any operator can be used as decimal separator using the `GridNumericColumn.NumberDecimalSeparator` property.
+* [NumberGroupSeparator](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridNumericColumn~NumberGroupSeparator.html): By default, the comma(,) separates group of digits before the decimal point. Any operator can be used as group separator using the `GridNumericColumn.NumberGroupSeparator` property.
+* [NumberGroupSizes](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridNumericColumn~NumberGroupSizes.html): To change the number of digits in each group before the decimal point on numeric values, use the `GridNumericColumn.NumberGroupSizes` property.
+* [NumberNegativePattern](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridNumericColumn~NumberNegativePattern.html): To format the pattern of negative numeric values, use `GridNumericColumn.NumberNegativePattern`.
+* [MinValue](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridEditorColumn~MinValue.html): To set the minimum value for the numeric column, use the `GridNumericColumn.MinValue` property.
+* [MaxValue](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridEditorColumn~MaxValue.html): To set the maximum value for the numeric column, use the `GridNumericColumn.MaxValue` property.
 
 
 ![](SfDataGrid_images/Editing_NumericColumn_Forms.png)
 
 ## Row header 
 
-Row header is a special column placed as first cell of each row, and it will be always frozen. To enable the row header, set the [SfDataGrid.ShowRowHeader](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ShowRowHeader.html) to `true`.
+Row header is a special column placed as first cell of each row, and it will be always frozen. To enable the row header, set the [SfDataGrid.ShowRowHeader](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ShowRowHeader.html) to `true`.
 
-Further, the SfDataGrid allows customizing the row header width using the [SfDataGrid.RowHeaderWidthProperty](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~RowHeaderWidthProperty.html). The default value of `SfDataGrid.RowHeaderWidth` is 20.
+Further, the SfDataGrid allows customizing the row header width using the [SfDataGrid.RowHeaderWidthProperty](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~RowHeaderWidthProperty.html). The default value of `SfDataGrid.RowHeaderWidth` is 20.
 
 To enable and customize the row header, follow the code example:
 
@@ -1228,7 +1228,7 @@ dataGrid.RowHeaderWidth = 50;
 
 ## Bind a view model property inside header template?
 
-The SfDataGrid allows binding the view model property to the [HeaderTemplate](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderTemplateProperty.html) by setting the BindingContext of the the [GridColumn](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn.html) as `ViewModel`.
+The SfDataGrid allows binding the view model property to the [HeaderTemplate](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderTemplateProperty.html) by setting the BindingContext of the the [GridColumn](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn.html) as `ViewModel`.
 
 To bind a view model property inside `HeaderTemplate`, follow the code example:
 

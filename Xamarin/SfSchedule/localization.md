@@ -123,13 +123,12 @@ Now set Build Action as EmbeddedResource for Syncfusion.SfSchedule.Forms.fr.resx
 
 {% tabs %}
 {% highlight xaml %}
-<!--</CustomStrings>-->
-    <data name="NoEvents" xml:space="preserve">
-        <value>Pas d'événements</value>
-    </data>
-    <data name="AllDay" xml:space="preserve">
-        <value>Toute la journéer</value>
-    </data>
+<data name="NoEvents" xml:space="preserve">
+    <value>Pas d'événements</value>
+</data>
+<data name="AllDay" xml:space="preserve">
+    <value>Toute la journéer</value>
+</data>
 {% endhighlight %}
 {% endtabs %}
 
@@ -138,7 +137,6 @@ In PCL, you need to add the ILocalize interface to convert the platform-specific
 
 {% tabs %}
 {% highlight c# %}
-
     namespace ScheduleLocale
     {
         public interface ILocalize
@@ -146,14 +144,12 @@ In PCL, you need to add the ILocalize interface to convert the platform-specific
                 CultureInfo GetCurrentCultureInfo();
                 void SetLocale(CultureInfo ci);
         }
-
         public class PlatformCulture
         {
             public PlatformCulture(string platformCultureString)
             {
                 if (String.IsNullOrEmpty(platformCultureString))
                 throw new ArgumentException("Expected culture identifier", "platformCultureString");
-
                 PlatformString = platformCultureString.Replace("_", "-");
                 var dashIndex = PlatformString.IndexOf("-", StringComparison.Ordinal);
                 if (dashIndex > 0)
@@ -168,13 +164,9 @@ In PCL, you need to add the ILocalize interface to convert the platform-specific
                     LocaleCode = "";
                 }
             }
-
             public string PlatformString { get; private set; }
-
             public string LanguageCode { get; private set; }
-
             public string LocaleCode { get; private set; }
-
             public override string ToString()
             {
                 return PlatformString;
@@ -192,10 +184,8 @@ Localize class for Android project,
 
 {% tabs %}
 {% highlight c# %}
-
     using System.Globalization;
     using System.Threading;
-
     [assembly: Xamarin.Forms.Dependency(typeof(ScheduleLocale.Droid.Localize))]
     namespace ScheduleLocale.Droid
     {
@@ -206,7 +196,6 @@ Localize class for Android project,
                 Thread.CurrentThread.CurrentCulture = ci;
                 Thread.CurrentThread.CurrentUICulture = ci;
             }
-
             public CultureInfo GetCurrentCultureInfo()
             {
                 var netLanguage = "en";
@@ -231,11 +220,9 @@ Localize class for Android project,
                 }
                 return ci;
             }
-
         private string AndroidToDotnetLanguage(string androidLanguage)
         {
             var netLanguage = androidLanguage;
-
             switch (androidLanguage)
             {
                 case "ms-BN":   // "Malaysian (Brunei)" not supported .NET culture
@@ -250,21 +237,17 @@ Localize class for Android project,
                 netLanguage = "de-CH"; // closest supported
                 break;
             }
-
             return netLanguage;
         }
-
         private string ToDotnetFallbackLanguage(PlatformCulture platformCulture)
         {
             var netLanguage = platformCulture.LanguageCode; // use the first part of the identifier (two chars, usually);
-
             switch (platformCulture.LanguageCode)
             {
                 case "gsw":
                 netLanguage = "de-CH"; // equivalent to German (Switzerland) for this app
                 break;
             }
-
             return netLanguage;
         }
         }
@@ -277,11 +260,9 @@ Localize class for iOS project,
 
 {% tabs %}
 {% highlight c# %}
-
     using System.Globalization;
     using System.Threading;
     using Foundation;
-
     [assembly: Xamarin.Forms.Dependency(typeof(ScheduleLocale.iOS.Localize))]
     namespace ScheduleLocale.iOS
     {
@@ -292,7 +273,6 @@ Localize class for iOS project,
                 Thread.CurrentThread.CurrentCulture = ci;
                 Thread.CurrentThread.CurrentUICulture = ci;
             }
-
             public CultureInfo GetCurrentCultureInfo()
             {
                 var netLanguage = "en";
@@ -318,10 +298,8 @@ Localize class for iOS project,
                         ci = new CultureInfo("en");
                     }
                 }
-
                 return ci;
             }
-
             private string iOSToDotnetLanguage(string iOSLanguage)
             {
                 var netLanguage = iOSLanguage;
@@ -335,14 +313,11 @@ Localize class for iOS project,
                     netLanguage = "de-CH"; // closest supported
                     break;
                 }
-
                 return netLanguage;
             }
-
             private string ToDotnetFallbackLanguage(PlatformCulture platCulture)
             {
                 var netLanguage = platCulture.LanguageCode; // use the first part of the identifier (two chars, usually);
-
                 switch (platCulture.LanguageCode)
                 {
                     case "pt":

@@ -51,11 +51,7 @@ If appointments count are lesser than the AppointmentIndicatorCount value in the
 ![](monthview_images/appointmentindicator.png)
 
 ## Month Appointment display mode
-In `MonthView`, appointment display mode can be handled using [AppointmentDisplayMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~AppointmentDisplayMode.html) property of `MonthViewSettings` in Schedule. Using this `enum` you can set display mode as `Indicator`, `Appointment` and `None`, by default `AppointmentDisplayMode` is set as type `Indicator`.
-
-`Indicator` - appointment will be displayed as the circle.
-`Appointment`  - appointment will be displayed with the subject.
-`None`  - appointment will not be displayed.
+Schedule appointment display type in `MonthView` can be handled using [AppointmentDisplayMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~AppointmentDisplayMode.html) property of `MonthViewSettings`. Using this `enum` you can set display mode as `Indicator` (circle), `Appointment` (with subject) and `None`, by default `AppointmentDisplayMode` is set as type `Indicator`.
 
 {% tabs %}
 {% highlight xaml %}

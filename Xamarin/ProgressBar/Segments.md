@@ -37,7 +37,7 @@ this.CircularProgressBar.SegmentCount = 7;
 
 {% endtabs %} 
 
-![](Progress_images/Segment.png)
+![](overview_images/Segment.png)
 
 **Gap** **Customization**
 
@@ -68,4 +68,4 @@ this.CircularProgressBar.GapWidth = 10;
 
 {% endtabs %} 
 
-![](Progress_images/Gap.png)
+![](overview_images/Gap.png)

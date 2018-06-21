@@ -48,4 +48,4 @@ this.CircularProgressBar.Progress = 0.5;
 
 {% endtabs %} 
 
-![](progress_images/range.png)
+![](overview_images/range.png)

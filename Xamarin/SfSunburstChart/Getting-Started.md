@@ -722,6 +722,8 @@ You can add data labels to improve the readability of the sunburst chart. Data l
 
 Below snippet is the complete code for generating the final output.
 
+{% tabs %} 
+
 {% highlight xaml %}
       
           <sunburst:SfSunburstChart x:Name="sunburstChart" ItemsSource="{Binding DataSource}"

@@ -23,7 +23,7 @@ The following code shows enabling the tooltip.
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
             SunburstTooltipSettings tooltipSettings = new SunburstTooltipSettings();
             tooltipSettings.ShowTooltip = true;
@@ -58,7 +58,7 @@ The following code shows all the above customizations.
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
            SunburstTooltipSettings tooltipSettings = new SunburstTooltipSettings();
             tooltipSettings.ShowTooltip = true;
@@ -104,7 +104,7 @@ The sunburst chart provides options to design your own template for tooltip usin
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
            SunburstTooltipSettings tooltipSettings = new SunburstTooltipSettings();
            tooltipSettings.ShowTooltip = true;

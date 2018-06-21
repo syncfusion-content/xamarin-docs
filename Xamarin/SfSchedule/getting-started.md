@@ -79,7 +79,7 @@ This section explains how to create a simple application using SfSchedule contro
 ![](GettingStarted_images/GettingStarted.png)   
 
 You can download the entire source code of this demo for Xamarin.Forms from
-here [ScheduleGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ScheduleGettingStarted-815086813.zip)
+here [ScheduleGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ScheduleGettingStarted285067184.zip)
     
 This section provides a walks through to create `MeetingRoomScheduler` using our Schedule control.  
     

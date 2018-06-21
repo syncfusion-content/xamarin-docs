@@ -12,7 +12,7 @@ In the circular progress bar, you can add any view to the center using the [`Con
 
 For example, you can include add, start, or pause button to control the progress; add an image that indicates the actual task in progress or add custom text that conveys how far the task is completed. 
 
-The following code example shows how to the add custom text content.
+The following code example shows how to add custom text content.
 
 {% tabs %} 
 

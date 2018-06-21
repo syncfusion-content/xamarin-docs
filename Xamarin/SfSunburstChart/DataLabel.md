@@ -23,7 +23,7 @@ The following code explains how to initialize data labels.
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
             SunburstChartDataLabel label = new SunburstChartDataLabel();
             label.ShowLabel = true;
@@ -54,7 +54,7 @@ The following code shows trimming the data labels.
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
             SunburstChartDataLabel label = new SunburstChartDataLabel();
             label.ShowLabel = true;
@@ -82,7 +82,7 @@ The following code shows hiding the data labels.
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
             SunburstChartDataLabel label = new SunburstChartDataLabel();
             label.ShowLabel = true;
@@ -115,7 +115,7 @@ The following code shows rotating a data label to an angle.
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
             SunburstChartDataLabel label = new SunburstChartDataLabel();
             label.ShowLabel = true;
@@ -145,7 +145,7 @@ The following code shows normal mode of data labels.
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
   SunburstChartDataLabel label = new SunburstChartDataLabel();
             label.ShowLabel = true;
@@ -180,7 +180,7 @@ Data labels can be customized using the following properties.
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
             SunburstChartDataLabel label = new SunburstChartDataLabel();
             label.ShowLabel = true;
@@ -217,7 +217,7 @@ In the following code `Pineapple` palette is applied, hence data label takes the
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
             SunburstChartDataLabel label = new SunburstChartDataLabel();
             label.ShowLabel = true;           

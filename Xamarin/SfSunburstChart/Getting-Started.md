@@ -652,7 +652,7 @@ You can add title to the sunburst chart to provide information to users about th
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
             SfSunburstChart sunburstChart = new SfSunburstChart();
             sunburstChart.Title = new SunburstChartTitle();

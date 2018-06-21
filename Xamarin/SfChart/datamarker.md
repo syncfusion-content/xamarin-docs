@@ -433,6 +433,8 @@ N> For Pie and Doughnut series, you can set the [`Bezier`](https://help.syncfusi
 
 You can customize the appearance of the data marker label with your own template by using [`LabelTemplate`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataMarker~LabelTemplate.html) property of [`ChartDataMarker`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataMarker.html).
 
+N> The BindingContext of template is the corresponding underlying model that is provided in the items source of chart series.
+
 {% tabs %} 
 
 {% highlight xaml %}

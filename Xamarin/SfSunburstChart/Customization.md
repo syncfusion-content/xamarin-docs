@@ -52,7 +52,7 @@ The following code shows applying the TomatoSpectrum [`Palette`](https://help.sy
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
             SfSunburstChart sunburstChart = new SfSunburstChart();
             sunburstChart.SetBinding(SfSunburstChart.ItemsSourceProperty, "DataSource");
@@ -106,7 +106,7 @@ The start angle and end angle of the sunburst chart can be adjusted by using the
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
             SfSunburstChart sunburstChart = new SfSunburstChart();
             sunburstChart.SetBinding(SfSunburstChart.ItemsSourceProperty, "DataSource");
@@ -158,7 +158,7 @@ The sunburst chart allows you to customize the radius by using the [`Radius`](ht
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
             SfSunburstChart sunburstChart = new SfSunburstChart();
             sunburstChart.SetBinding(SfSunburstChart.ItemsSourceProperty, "DataSource");
@@ -209,7 +209,7 @@ The sunburst chart allows you to customize the inner radius using the [`InnerRad
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
             SfSunburstChart sunburstChart = new SfSunburstChart();
             sunburstChart.SetBinding(SfSunburstChart.ItemsSourceProperty, "DataSource");
@@ -260,7 +260,7 @@ Stroke color and stroke width of the sunburst chart can be customized using [`St
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
             SfSunburstChart sunburstChart = new SfSunburstChart();
             sunburstChart.SetBinding(SfSunburstChart.ItemsSourceProperty, "DataSource");

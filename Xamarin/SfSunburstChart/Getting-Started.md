@@ -652,7 +652,7 @@ You can add title to the sunburst chart to provide information to users about th
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
             SfSunburstChart sunburstChart = new SfSunburstChart();
             sunburstChart.Title = new SunburstChartTitle();
@@ -680,7 +680,7 @@ You can enable legend using the [`SfSunburstChart.Legend`](https://help.syncfusi
            </sunburst:SfSunburstChart>
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
             SfSunburstChart sunburstChart = new SfSunburstChart();
             sunburstChart.Legend = new SunburstChartLegend();
@@ -709,7 +709,7 @@ You can add data labels to improve the readability of the sunburst chart. Data l
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
             SfSunburstChart sunburstChart = new SfSunburstChart();  
             sunburstChart.DataLabel = new SunburstChartDataLabel();
@@ -754,7 +754,7 @@ Below snippet is the complete code for generating the final output.
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
             this.BindingContext = new SunburstViewModel();
 

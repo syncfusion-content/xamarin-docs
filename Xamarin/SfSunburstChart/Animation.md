@@ -24,7 +24,7 @@ The following code shows enabling animation.
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
             SfSunburstChart sunburstChart = new SfSunburstChart();
             sunburstChart.SetBinding(SfSunburstChart.ItemsSourceProperty, "DataSource");
@@ -52,7 +52,7 @@ Animation duration can be controlled using the `AnimationDuration` property.
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
             SfSunburstChart sunburstChart = new SfSunburstChart();
             sunburstChart.SetBinding(SfSunburstChart.ItemsSourceProperty, "DataSource");
@@ -91,7 +91,7 @@ Below snippet is the complete code for generating the following output.
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
             SfSunburstChart sunburstChart = new SfSunburstChart();
             sunburstChart.SetBinding(SfSunburstChart.ItemsSourceProperty, "DataSource");

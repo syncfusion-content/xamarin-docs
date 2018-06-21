@@ -73,6 +73,8 @@ schedule.MonthViewSettings = monthViewSettings;
 >**NOTE**
 This `AppointmentDisplayMode` support applicable only for UWP platform Desktop mode alone.
 
+![](monthview_images/appointmentdisplay.png)
+
 ## Month InlineView
 You can use [ShowAppointmentsInline](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ShowAppointmentsInline.html) bool property in `SfSchedule` to enable / disable the month inline view, by setting `ShowAppointmentsInline` property as `true` you can view the Appointments in the specific date. 
 

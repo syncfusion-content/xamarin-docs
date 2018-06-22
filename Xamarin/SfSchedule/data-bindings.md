@@ -588,6 +588,14 @@ if (schedule.WorkWeekViewSettings.NonAccessibleBlocks[0].StartTime == e.DropTime
 Using [DragDropSettings](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~DragDropSettings.html) property of schedule, you can handle the behavior of drag and drop in Schedule.
 
 {% tabs %}
+{% highlight xaml %}
+<schedule:SfSchedule x:Name="schedule" ScheduleView="WeekView">
+    <schedule:SfSchedule.DragDropSettings>
+        <schedule:DragDropSettings AllowNavigate="true" AllowScroll="true" ShowTimeIndicator="true">
+    </schedule:DragDropSettings>
+</schedule:SfSchedule.DragDropSettings>
+</schedule:SfSchedule>
+{% endhighlight %}
 {% highlight c# %}
 DragDropSettings dragDropSettings = new DragDropSettings();
 dragDropSettings.AllowNavigate = true;
@@ -641,6 +649,18 @@ dragDropSettings.ShowTimeIndicator = false;
 Using [TimeIndicatorStyle](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DragDropSettings~TimeIndicatorStyle.html) property can handle the time indicator style which contains [TextColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.TimeIndicatorStyle~TextColor.html), [TextSize](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.TimeIndicatorStyle~TextSize.html) and [TextFormat](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.TimeIndicatorStyle~TextFormat.html).
 
 {% tabs %}
+{% highlight xaml %}
+<schedule:SfSchedule x:Name="schedule" ScheduleView="WeekView">
+    <schedule:SfSchedule.DragDropSettings>
+        <schedule:DragDropSettings>
+            <schedule:DragDropSettings.TimeIndicatorStyle>
+                <schedule:TimeIndicatorStyle TextColor="Red" TextSize="13" TextFormat="hh:mm">
+                </schedule:TimeIndicatorStyle>
+            </schedule:DragDropSettings.TimeIndicatorStyle>
+        </schedule:DragDropSettings>
+    </schedule:SfSchedule.DragDropSettings>
+</schedule:SfSchedule>
+{% endhighlight %}
 {% highlight c# %}
 TimeIndicatorStyle timeIndicatorStyle = new TimeIndicatorStyle();
 timeIndicatorStyle.TextColor = Color.Red;

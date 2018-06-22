@@ -67,4 +67,6 @@ this.LinearProgressBar.SecondaryProgress = 25;
 
 {% endhighlight %}
 
+{% endtabs %} 
+
 ![](overview_images/Buffer.png)

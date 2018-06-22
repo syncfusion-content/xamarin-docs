@@ -11,62 +11,15 @@ documentation: ug
     
 This section provides you an overview for working with SfSchedule for Xamarin.Forms and also provides a walk through to configure SfSchedule control in real time scenario.   
 
-## Assembly Configuration   
-    
-SfSchedule can be included in your Xamarin.Forms project in two ways,  
- 
-* [Assembly Reference](#assembly-reference)  
-* [NuGet Configuration](#nuget-configuration)  
+## Adding Schedule Reference
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add schedule in your project, open the NugetPackage manager in Visual Studio, and search for [Syncfusion.Xamarin.SfSchedule](https://www.nuget.org/packages/Syncfusion.Xamarin.SfSchedule/) and then install it.
 
-### Assembly Reference  
- 
-You can download our Xamarin.Forms components directly from our website, refer [here](https://help.syncfusion.com/xamarin/introduction/download-and-installation#download-directly-from-website) for assistance.   
- 
-Once the assemblies has been downloaded and explored, you can find all the required assemblies in the installation folders.   
-   
-{Syncfusion Essential Studio Installed location}\Essential Studio\syncfusionessentialstudio-releaseversion\Xamarin\lib   
-    
-Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\15.1.0.41\Xamarin\lib  
-    
->**NOTE**
-Assemblies can be found in unzipped package location in Mac
-    
-The following list of assemblies need to be added as reference from the lib folder to use SfSchedule in your application.   
-    
-<table>   
-<tr>   
-<th>Project</th>   
-<th>Required assemblies</th>   
-</tr>   
-<tr>   
-<td>PCL</td>   
-<td>pcl\Syncfusion.SfSchedule.XForms.dll<br/></td>   
-</tr>   
-<tr>   
-<td>Android Renderer</td>   
-<td>pcl\Syncfusion.SfSchedule.XForms.dll<br/>android\Syncfusion.SfSchedule.Android.dll<br/>android\Syncfusion.SfSchedule.XForms.Android.dll<br/></td>   
-</tr>   
-<tr>   
-<td>iOS Renderer</td>   
-<td>pcl\Syncfusion.SfSchedule.XForms.dll<br/>ios-unified\Syncfusion.SfSchedule.iOS.dll<br/>ios-unified\Syncfusion.SfSchedule.XForms.iOS.dll<br/></td>   
-</tr>   
-<tr>   
-<td>UWP Renderer</td>   
-<td>pcl\Syncfusion.SfSchedule.XForms.dll<br/>uwp\Syncfusion.SfSchedule.XForms.UWP.dll<br/></td>   
-</tr>   
-</table>   
- 
+![](GettingStarted_images/installation_image.png)  
+
+To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfschedule) to know about dependent assemblies for schedule. 
 
 >**NOTE**
-For compiling the UWP project in Xamarin.Forms, referring the Schedule assemblies (XForms, XForms.UWP) in the XForms (UWP) project is sufficient and its files (properties, themes, etc.) needs to be maintained in the UWP assembly folder to render the control.
-
-### NuGet Configuration  
-    
-Alternatively you can refer SfSchedule in your application by configuring nuget packages.    
-  
-* [Configuration in Xamarin Studio](https://help.syncfusion.com/xamarin/introduction/download-and-installation#install-syncfusions-nuget-package-in-xamarin-studio)  
-* [Configuration in Visual Studio](https://help.syncfusion.com/xamarin/introduction/download-and-installation#configuring-syncfusion-nuget-packages-in-visual-studio)  
-* [Configuration from command line in Linux/MAC](https://help.syncfusion.com/xamarin/introduction/download-and-installation#configuring-syncfusion-nuget-packages-from-command-line-in-linuxmac)  
+When there is a mismatch between the Syncfusion NuGet packages among the projects, `System.IO.FileLoadException` will occur. To overcome this exception, install the same version of the SfSchedule assemblies in all the projects.
 
 ### Launching SfSchedule on each platform 
  
@@ -109,7 +62,8 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 	rootFrame.NavigationFailed += OnNavigationFailed;
 	// you'll need to add `using System.Reflection;`
 	List<Assembly> assembliesToInclude = new List<Assembly>();
-	//Now, add all the assemblies your app uses assembliesToInclude.Add(typeof(SfScheduleRenderer).GetTypeInfo().Assembly);
+	//Now, add all the assemblies your app uses 
+	assembliesToInclude.Add(typeof(SfScheduleRenderer).GetTypeInfo().Assembly);
 	// replaces Xamarin.Forms.Forms.Init(e);        
 	Xamarin.Forms.Forms.Init(e, assembliesToInclude);
 }
@@ -123,7 +77,7 @@ This section explains how to create a simple application using SfSchedule contro
 ![](GettingStarted_images/GettingStarted.png)   
 
 You can download the entire source code of this demo for Xamarin.Forms from
-here [ScheduleGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ScheduleGettingStarted-815086813.zip)
+here [ScheduleGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ScheduleGettingStarted285067184.zip)
     
 This section provides a walks through to create `MeetingRoomScheduler` using our Schedule control.  
     

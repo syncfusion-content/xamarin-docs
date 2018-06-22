@@ -1301,6 +1301,7 @@ To render a scatter chart, create an instance of [`ScatterSeries`](http://help.s
 * [`StrokeColor`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ScatterSeries~StrokeColor.html) – used to change the stroke color of the series.
 * [`ScatterWidth`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ScatterSeries~ScatterWidth.html) – used to change the width of the series.
 * [`ScatterHeight`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ScatterSeries~ScatterHeight.html) – used to change the height of the series.
+* [`ShapeType`]() - used to change the rendering shape of scatter series. The available shapes are cross, diamond, ellipse, hexagon, inverted triangle, pentagon, plus, rectangle, triangle.
 
 {% tabs %} 
 
@@ -1311,6 +1312,7 @@ To render a scatter chart, create an instance of [`ScatterSeries`](http://help.s
 
 	<chart:ScatterSeries ScatterHeight="15"
 	ScatterWidth="15"
+	ShapeType="Ellipse"
 	ItemsSource ="{Binding Data}" 
 	XBindingPath="Year"
 	YBindingPath="Value"/>
@@ -1329,6 +1331,7 @@ ScatterSeries scatterSeries = new ScatterSeries ()
 	ItemsSource = Data, 	
 	ScatterHeight = 15, 
 	ScatterWidth = 15, 
+	ShapeType=ChartScatterShapeType.Ellipse,
 	XBindingPath = "Year", 
 	YBindingPath = "Value" 
 };

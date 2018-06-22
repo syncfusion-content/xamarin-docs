@@ -19,9 +19,6 @@ Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org
 To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfschedule) to know about dependent assemblies for schedule. 
 
 >**NOTE**
-When there is a mismatch of Xamarin NuGet packages between the sample and the SfSchedule assemblies, an error `Could not load type Xamarin.Forms.ElementTemplate` will occur. Refer to the `ReadMe` to know the software requirements of the Syncfusion controls.
-
->**NOTE**
 When there is a mismatch between the Syncfusion NuGet packages among the projects, `System.IO.FileLoadException` will occur. To overcome this exception, install the same version of the SfSchedule assemblies in all the projects.
 
 ### Launching SfSchedule on each platform 
@@ -65,7 +62,8 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 	rootFrame.NavigationFailed += OnNavigationFailed;
 	// you'll need to add `using System.Reflection;`
 	List<Assembly> assembliesToInclude = new List<Assembly>();
-	//Now, add all the assemblies your app uses assembliesToInclude.Add(typeof(SfScheduleRenderer).GetTypeInfo().Assembly);
+	//Now, add all the assemblies your app uses 
+	assembliesToInclude.Add(typeof(SfScheduleRenderer).GetTypeInfo().Assembly);
 	// replaces Xamarin.Forms.Forms.Init(e);        
 	Xamarin.Forms.Forms.Init(e, assembliesToInclude);
 }

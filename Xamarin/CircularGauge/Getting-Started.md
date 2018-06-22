@@ -12,7 +12,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains the steps required to configure the [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge.html), and also explains the steps required to add basic elements to [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge.html) through various APIs available within it.
+This section explains the steps required to configure the [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge.html), and also explains the steps required to add basic elements to [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge.html) through various APIs available within it.
 
 
 ## Adding circular gauge reference
@@ -48,7 +48,7 @@ I> For UWP alone, one more additional step is required if the project is built-i
 
 ## Initialize gauge 
 
-You can initialize the [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge.html) control with a required optimal name by using the included namespace.
+You can initialize the [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge.html) control with a required optimal name by using the included namespace.
 
 {% tabs %}
 
@@ -70,7 +70,7 @@ You can initialize the [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_f
 
 ## Adding header
 
-You can assign a unique header to [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge.html) by using the [`Header`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge~Headers.html) property and position it by using the [`Position`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Header~Position.html) property as you want.
+You can assign a unique header to [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge.html) by using the [`Header`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge~Headers.html) property and position it by using the [`Position`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Header~Position.html) property as you want.
 
 {% tabs %}
 
@@ -79,7 +79,7 @@ You can assign a unique header to [`SfCircularGauge`](https://help.syncfusion.co
     <gauge:SfCircularGauge>
 
          <gauge:SfCircularGauge.Headers>
-             <gauge:Header Text="Speedometer" />
+             <gauge:Header Text="Speedometer" ForegroundColor="Black" TextSize="20" />
          </gauge:SfCircularGauge.Headers>
     
     </gauge:SfCircularGauge>
@@ -91,6 +91,8 @@ You can assign a unique header to [`SfCircularGauge`](https://help.syncfusion.co
     SfCircularGauge circularGauge = new SfCircularGauge(); 
     Header header = new Header();
     header.Text = "Speedometer";
+    header.ForegroundColor = Color.Black;
+    header.TextSize = 20;
     circularGauge.Headers.Add(header);  
 	
 {% endhighlight %}
@@ -99,7 +101,7 @@ You can assign a unique header to [`SfCircularGauge`](https://help.syncfusion.co
 
 ## Configuring scales
 
-You can configure the [`Scale`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale.html) elements by using following APIs, which are available in [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge.html):
+You can configure the [`Scale`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale.html) elements by using following APIs, which are available in [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge.html):
 
 * `StartAngle`
 * `SweepAngle`
@@ -136,7 +138,7 @@ You can configure the [`Scale`](https://help.syncfusion.com/cr/cref_files/xamari
 
 ## Adding ranges
 
-You can add ranges to [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge.html) by creating ranges collection using the [`Range`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Range.html) property.
+You can add ranges to [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge.html) by creating ranges collection using the [`Range`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Range.html) property.
 
 {% tabs %}
 
@@ -172,7 +174,7 @@ You can add ranges to [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_fi
 
 ## Adding a needle pointer
 
-Create a [`Needle Pointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.NeedlePointer.html), and associate it with a scale that is to be displayed the current value.
+Create a [`Needle Pointer`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.NeedlePointer.html), and associate it with a scale that is to be displayed the current value.
 
 {% tabs %}
 
@@ -206,7 +208,7 @@ Create a [`Needle Pointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sf
 
 ## Adding a range pointer
 
-[`Range Pointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.RangePointer.html) provides an alternative way to indicate the current value.
+[`Range Pointer`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.RangePointer.html) provides an alternative way to indicate the current value.
 
 {% tabs %}
 
@@ -240,7 +242,7 @@ Create a [`Needle Pointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sf
 
 ## Adding a marker pointer
 
-[`Marker Pointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.MarkerPointer.html) points the current value in scale.
+[`Marker Pointer`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.MarkerPointer.html) points the current value in scale.
 
 {% tabs %}
 
@@ -288,7 +290,7 @@ The following code example gives you the complete code of above configurations.
         <gauge:SfCircularGauge VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="10">
 
             <gauge:SfCircularGauge.Headers>
-                <gauge:Header Text="Speedometer" />
+                <gauge:Header Text="Speedometer" ForegroundColor="Black" TextSize="20" />
             </gauge:SfCircularGauge.Headers>
             
             <gauge:SfCircularGauge.Scales>
@@ -335,6 +337,8 @@ namespace CircularGauge
             //Adding header 
             Header header = new Header();
             header.Text = "Speedometer";
+            header.ForegroundColor = Color.Black;
+            header.TextSize = 20;
             circularGauge.Headers.Add(header);
 
              //Initializing scales for circular gauge
@@ -380,4 +384,4 @@ The following circular gauge is created as a result of the above codes.
  
 ![](getting-started_images/default.png)
 
-You can find the complete getting started sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Gauge_GettingStarted-145122730.zip).
+You can find the complete getting started sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Gauge_GettingStarted1295095043).

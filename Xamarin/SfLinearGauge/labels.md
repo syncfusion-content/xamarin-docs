@@ -11,11 +11,11 @@ documentation: ug
 
 # Labels 
 
-[`LinearScale`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale.html) labels associate a numeric value with major scale tick marks.
+[`LinearScale`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale.html) labels associate a numeric value with major scale tick marks.
 
 ## Label color customization
 
-The label color can be changed using the [`LabelColor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~LabelColor.html) property.
+The label color can be changed using the [`LabelColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~LabelColor.html) property.
 
 {% tabs %}
 
@@ -59,7 +59,7 @@ The label color can be changed using the [`LabelColor`](https://help.syncfusion.
 
 ## Label font customization
 
-The label font can be customized by using the [`LabelFontSize`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~LabelFontSize.html), [`FontAttribute`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~FontAttributes.html), and [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~FontFamily.html) properties.
+The label font can be customized by using the [`LabelFontSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~LabelFontSize.html), [`FontAttribute`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~FontAttributes.html), and [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~FontFamily.html) properties.
 
 {% tabs %}
 
@@ -111,7 +111,7 @@ The label font can be customized by using the [`LabelFontSize`](https://help.syn
 
 ## Setting position for labels
 
-The labels can be positioned far away from the ticks by using the [`LabelOffset`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~LabelOffset.html) property in pixel.
+The labels can be positioned far away from the ticks by using the [`LabelOffset`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~LabelOffset.html) property in pixel.
 
 {% tabs %}
 
@@ -155,11 +155,11 @@ The labels can be positioned far away from the ticks by using the [`LabelOffset`
 
 ### Setting postfix and prefix for labels
 
-You can  postfix/prefix values to the scale labels using the [`LabelPostfix`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~LabelPostfix.html) and [`LabelPrefix`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~LabelPrefix.html) properties, respectively.
+You can  postfix/prefix values to the scale labels using the [`LabelPostfix`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~LabelPostfix.html) and [`LabelPrefix`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~LabelPrefix.html) properties, respectively.
 
 ### Setting label postfix
 
-The [`LabelPostfix`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~LabelPostfix.html) property allows you to postfix the values to scale labels.
+The [`LabelPostfix`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~LabelPostfix.html) property allows you to postfix the values to scale labels.
 
 {% tabs %}
 
@@ -206,7 +206,7 @@ The [`LabelPostfix`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/S
 
 ### Setting label prefix
 
-The [`LabelPrefix`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~LabelPrefix.html) property allows you to prefix the values to scale labels.
+The [`LabelPrefix`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~LabelPrefix.html) property allows you to prefix the values to scale labels.
 
 {% tabs %}
 
@@ -251,7 +251,7 @@ The [`LabelPrefix`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Sy
 
 ## Labels visibility
 
-Labels visibility can be customized using the [`ShowLabels`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~ShowLabels.html) property of linear scale.
+Labels visibility can be customized using the [`ShowLabels`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~ShowLabels.html) property of linear scale.
 
 {% tabs %}
 

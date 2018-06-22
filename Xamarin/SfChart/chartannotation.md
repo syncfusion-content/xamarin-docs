@@ -981,3 +981,45 @@ chart.ChartAnnotations.Add(annotation);
 {% endtabs %}
 
 ![](chartannotation_images/image16.png)
+
+## Event
+
+**AnnotationClicked**
+
+The [`AnnotationClicked`]() event is triggered when the user has clicked the annotation. The argument contains the following information.
+
+* [`Annotation`]() – used to get the instance of annotation which is clicked.
+* [`X`]() – used to get the x position of touch point on annotation.
+* [`Y`]() – used to get the y position of touch point on annotation..
+
+## Get the touch position in annotation
+
+Following are the overridable methods that are available in annotation to send the information about touch interactions.
+
+* [`OnTouchDown`]() – occurs when touch down inside the annotation.
+* [`OnTouchMove`]() - occurs while moving the finger or mouse inside the annotation.
+* [`OnTouchUp`]() – occurs when touch up inside the annotation.
+
+
+{% highlight c# %}
+
+public class TextAnnotationExt : TextAnnotation
+{
+    protected override void OnTouchDown(float pointX, float pointY)
+    {
+       base.OnTouchDown(pointX, pointY);
+    }
+
+    protected override void OnTouchMove(float pointX, float pointY)
+    {
+       base.OnTouchMove(pointX, pointY);
+    }
+
+    protected override void OnTouchUp(float pointX, float pointY)
+    {
+       base.OnTouchUp(pointX, pointY);
+    }
+}
+
+
+{% endhighlight  %}

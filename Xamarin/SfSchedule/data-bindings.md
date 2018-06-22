@@ -444,9 +444,7 @@ Appointments can be rescheduled using the drag and drop operation. To perform dr
 
 {% tabs %}
 {% highlight xaml %}
-<schedule:SfSchedule x:Name=“schedule”
-ScheduleView="WeekView"
-AllowAppointmentDrag="true">
+<schedule:SfSchedule x:Name=“schedule” ScheduleView="WeekView" AllowAppointmentDrag="true">
 </schedule:SfSchedule>
 {% endhighlight %}
 {% highlight c# %}
@@ -470,8 +468,8 @@ schedule.AppointmentDragStarting += Schedule_AppointmentDragStarting;
 
 private void Schedule_AppointmentDragStarting(object sender, AppointmentDragStartingEventArgs e)
 {
-var appointment = e.Appointment;
-e.Cancel = false;
+        var appointment = e.Appointment;
+        e.Cancel = false;
 }
 {% endhighlight %}
 {% endtabs %}
@@ -487,12 +485,12 @@ schedule.AppointmentDragStarting += Schedule_AppointmentDragStarting;
 
 private void Schedule_AppointmentDragStarting(object sender, AppointmentDragStartingEventArgs e)
 {
-var appointment = e.Appointment as ScheduleAppointment;
+        var appointment = e.Appointment as ScheduleAppointment;
 
-if (appointment.IsAllDay)
-{
-e.Cancel = true;
-}
+      if (appointment.IsAllDay)
+      {
+            e.Cancel = true;
+      }
 }
 {% endhighlight %}
 {% endtabs %}
@@ -512,9 +510,9 @@ schedule.AppointmentDragOver += Schedule_AppointmentDragOver;
 
 private void Schedule_AppointmentDragOver(object sender, AppointmentDragEventArgs e)
 {
-var appointment = e.Appointment;
-var draggingPoint = e.DraggingPoint;
-var draggingTime = e.DraggingTime;
+        var appointment = e.Appointment;
+        var draggingPoint = e.DraggingPoint;
+        var draggingTime = e.DraggingTime;
 }
 {% endhighlight %}
 {% endtabs %}
@@ -530,12 +528,12 @@ schedule.AppointmentDragOver += Schedule_AppointmentDragOver;
 
 private void Schedule_AppointmentDragOver(object sender, AppointmentDragEventArgs e)
 {
-//// checking whether dragging appointment time within NonAccessibleBlock
-if (schedule.WorkWeekViewSettings.NonAccessibleBlocks[0].StartTime == e.DraggingTime.Hour ||
-(schedule.WorkWeekViewSettings.NonAccessibleBlocks[0].StartTime - 1 == e.DraggingTime.Hour && e.DraggingTime.Minute > 0))
-{
-label.Text = "Cannot be moved to blocked time slots";
-}
+        //// checking whether dragging appointment time within NonAccessibleBlock
+        if (schedule.WorkWeekViewSettings.NonAccessibleBlocks[0].StartTime == e.DraggingTime.Hour ||
+        (schedule.WorkWeekViewSettings.NonAccessibleBlocks[0].StartTime - 1 == e.DraggingTime.Hour && e.DraggingTime.Minute > 0))
+        {
+                label.Text = "Cannot be moved to blocked time slots";
+        }
 }
 {% endhighlight %}
 {% endtabs %}
@@ -555,9 +553,9 @@ schedule.AppointmentDrop += Schedule_AppointmentDrop;
 
 private void Schedule_AppointmentDrop(object sender, AppointmentDropEventArgs e)
 {
-var appointment = e.Appointment;
-e.Cancel = false;
-var dropTime = e.DropTime;
+        var appointment = e.Appointment;
+        e.Cancel = false;
+        var dropTime = e.DropTime;
 }
 {% endhighlight %}
 {% endtabs %}
@@ -577,7 +575,7 @@ private void Schedule_AppointmentDrop(object sender, AppointmentDropEventArgs e)
 if (schedule.WorkWeekViewSettings.NonAccessibleBlocks[0].StartTime == e.DropTime.Hour ||
 (schedule.WorkWeekViewSettings.NonAccessibleBlocks[0].StartTime - 1 == e.DropTime.Hour && e.DropTime.Minute > 0))
 {
-e.Cancel = true;
+        e.Cancel = true;
 }
 }
 {% endhighlight %}

@@ -11,13 +11,13 @@ documentation: ug
 
 # Header
 
-The [`Header`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Header.html) support allows you to show text inside the gauge control. A circular gauge can be made self-descriptive about the data. It can be  measured with use of the header.
+The [`Header`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Header.html) support allows you to show text inside the gauge control. A circular gauge can be made self-descriptive about the data. It can be  measured with use of the header.
 
 ## Adding header in circular gauge
 
 ###  Header
 
-The [`Header`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Header.html) can be used to set a unique header for the circular gauge. You can add text as headers in a circular gauge. Multiple headers also can be added in a circular gauge.
+The [`Header`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Header.html) can be used to set a unique header for the circular gauge. You can add text as headers in a circular gauge. Multiple headers also can be added in a circular gauge.
 
 {% tabs %}
 
@@ -26,7 +26,7 @@ The [`Header`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfus
      <gauge:SfCircularGauge>
 	  
          <gauge:SfCircularGauge.Headers>
-            <gauge:Header Text="Speedometer"/>
+            <gauge:Header Text="Speedometer" ForegroundColor="Black" />
         </gauge:SfCircularGauge.Headers>
      </gauge:SfCircularGauge>
 
@@ -37,6 +37,7 @@ The [`Header`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfus
     SfCircularGauge circularGauge = new SfCircularGauge(); 
     Header header = new Header();
     header.Text = "Speedometer";
+    header.ForegroundColor = Color.Black;
     circularGauge.Headers.Add(header); 
 
 {% endhighlight %}
@@ -47,7 +48,7 @@ The [`Header`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfus
 
 ##  Setting position for header
 
-The [`Position`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Header~Position.html) property is used to place the header in a circular gauge. The value for [`Position`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Header~Position.html) should be specified in offset value. In the Point value, which has been given for the `Position`, first value represent x-coordinate and second value represents y-coordinate. By default, it is placed at (0.5, 0.7).
+The [`Position`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Header~Position.html) property is used to place the header in a circular gauge. The value for [`Position`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Header~Position.html) should be specified in offset value. In the Point value, which has been given for the `Position`, first value represent x-coordinate and second value represents y-coordinate. By default, it is placed at (0.5, 0.7).
 
 {% tabs %}
 
@@ -55,7 +56,7 @@ The [`Position`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncf
  
      <gauge:SfCircularGauge>
         <gauge:SfCircularGauge.Headers>
-            <gauge:Header Text="Speedometer" Position="0.5,0.5" />
+            <gauge:Header Text="Speedometer" Position="0.5,0.5" ForegroundColor="Black" />
         </gauge:SfCircularGauge.Headers>
      </gauge:SfCircularGauge>
 
@@ -66,6 +67,7 @@ The [`Position`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncf
     SfCircularGauge circularGauge = new SfCircularGauge(); 
     Header header = new Header();
     header.Text = "Speedometer";
+    header.ForegroundColor = Color.Black;
     header.Position = new Point(0.5, 0.5);
     circularGauge.Headers.Add(header); 
     
@@ -77,7 +79,7 @@ The [`Position`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncf
 
 ##  Customization of header
 
-You can customize the header's text by using the [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Header~FontFamily.html), [`FontAttribute`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Header~FontAttributes.html) and [`TextSize`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Header~TextSize.html) properties.
+You can customize the header's text by using the [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Header~FontFamily.html), [`FontAttribute`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Header~FontAttributes.html) and [`TextSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Header~TextSize.html) properties.
 
 {% tabs %}
 

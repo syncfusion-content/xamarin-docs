@@ -897,7 +897,7 @@ You can use 'StartTime' and 'EndTime' property to get the exact Start Time and E
 * If the recurring appointment is converted to another time zone then the whole sequence will be recalculated according to the new time zone information.
 If you create all day appointment, then it's start time and end times are set default as 12 am to 12 am so time zone is not applicable for all day appointments.
 
-## Updating StartTime and EndTime after drag and drop appointment based on Time Zone.
+### Updating StartTime and EndTime after drag and drop appointment based on Time Zone.
 After rescheduling an appointment using 'drag and drop', appointment’s start and end time value will be updated based on schedule time zone and appointment’s time zone. 
 
 For an example, consider, your local time zone is India Standard Time, if you drag an appointment from 9 AM and drop this on 1 PM and the schedule's "TimeZone' is not set and the appointment's 'StartTimeZone' and 'EndTimeZone' has set as 'AUS Central Standard Time (Darwin)' then appointment's start time and end time value will be converted from Local time zone to appointment time zone and the appointment’s start time will be saved at 9 AM,

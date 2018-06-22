@@ -478,7 +478,7 @@ private void Schedule_AppointmentDragStarting(object sender, AppointmentDragStar
 {% endtabs %}
 
 #### Disabling dragging when the appointment is AllDay appointment
-Using `Cancel` property in the `AppointmentDragStartingEventArgs` argument of Schedule `AppointmentDragStarting` event, you can enable/disable the appointment dragging based on the requirement. In the below, we have disabled the appointment dragging when the appointment is AllDay appointment.
+Using `Cancel` property in the `AppointmentDragStartingEventArgs` argument of Schedule `AppointmentDragStarting` event, you can enable/disable the appointment dragging based on the requirement. In the below code, appointment dragging is disabled when the appointment is AllDay appointment.
 
 {% tabs %}
 {% highlight c# %}
@@ -521,7 +521,7 @@ private void Schedule_AppointmentDragOver(object sender, AppointmentDragEventArg
 {% endtabs %}
 
 #### Displaying alert while dragging appointment over the blocked time slots
-Using `draggingPoint` and `draggingTime` properties in the `AppointmentDragEventArgs` of Schedule `AppointmentDragOver` event you can get the current position and time of dragging appointment. In the below, we have indicated the message while dragging over the Schedule `NonAccessibleBlock`.
+Using `draggingPoint` and `draggingTime` properties in the `AppointmentDragEventArgs` of Schedule `AppointmentDragOver` event you can get the current position and time of dragging appointment. In the below code, Indicating the message while dragging over the Schedule `NonAccessibleBlock`.
 
 {% tabs %}
 {% highlight c# %}
@@ -564,7 +564,7 @@ private void Schedule_AppointmentDrop(object sender, AppointmentDropEventArgs e)
 {% endtabs %}
 
 #### Disabling dropping when dropping appointment within the Non-Accessible region
-Using `Cancel` property in the `AppointmentDropEventArgs` argument of Schedule `AppointmentDrop` event, you can enable/disable the appointment dropping based on the requirement. In the below, we have disabled the appointment dropping while dropping in the Non-Accessible block region.
+Using `Cancel` property in the `AppointmentDropEventArgs` argument of Schedule `AppointmentDrop` event, you can enable/disable the appointment dropping based on the requirement. In the below code, appointment dropping is disabled while dropping in the Non-Accessible block region.
 
 {% tabs %}
 {% highlight c# %}

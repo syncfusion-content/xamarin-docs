@@ -25,7 +25,7 @@ The data form supports several built-in editors.
 Text
 </td>
 <td>
-{{'[DataFormTextEditor](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormTextEditor.html)'| markdownify }}
+{{'[DataFormTextEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormTextEditor.html)'| markdownify }}
 </td>
 <td>
 The String type property and any other type apart from the following specified cases.
@@ -39,7 +39,7 @@ Entry
 MultilineText
 </td>
 <td>
-{{'[DataFormMultiLineTextEditor](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormMultiLineTextEditor.html)'| markdownify }}
+{{'[DataFormMultiLineTextEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormMultiLineTextEditor.html)'| markdownify }}
 </td>
 <td>
 The String type property with multi line text.
@@ -54,7 +54,7 @@ Editor
 Numeric
 </td>
 <td>
-{{'[DataFormNumericEditor](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormNumericEditor.html)'| markdownify }}
+{{'[DataFormNumericEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormNumericEditor.html)'| markdownify }}
 </td>
 <td>
 The property of Int, Double, Float, Decimal, Long types and also its nullable property.
@@ -68,7 +68,7 @@ SfNumericTextBox
 Percent
 </td>
 <td>
-{{'[DataFormNumericEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormNumericEditor.html)'| markdownify }}
+{{'[DataFormNumericEditor](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.Editors.DataFormNumericEditor.html)'| markdownify }}
 </td>
 <td>
 The property of Int, Double, Float, Decimal, Long types and also its nullable property with [DataType(“Percent”)] attribute.
@@ -82,7 +82,7 @@ SfNumericTextBox
 Currency
 </td>
 <td>
-{{'[DataFormNumericEditor](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormNumericEditor.html)'| markdownify }}
+{{'[DataFormNumericEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormNumericEditor.html)'| markdownify }}
 </td>
 <td>
 The property of Int, Double, Float, Decimal, Long types and also its nullable property with [DataType(DataType.Currency)] attribute.
@@ -96,7 +96,7 @@ SfNumericTextBox
 Date
 </td>
 <td>
-{{'[DataFormDateEditor](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormDateEditor.html)'| markdownify }}
+{{'[DataFormDateEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormDateEditor.html)'| markdownify }}
 </td>
 <td>
 The DateTime type property and the property with [DataType(DataType.Date)] and [DataType(DataType.DateTime)] attributes.
@@ -110,7 +110,7 @@ DatePicker
 Time
 </td>
 <td>
-{{'[DataFormTimeEditor](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormTimeEditor.html)'| markdownify }}
+{{'[DataFormTimeEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormTimeEditor.html)'| markdownify }}
 </td>
 <td>
 The property with [DataType(DataType.Time)] attribute.
@@ -124,7 +124,7 @@ TimePicker
 NumericUpDown
 </td>
 <td>
-{{'[DataFormNumericUpDownEditor](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormNumericUpDownEditor.html)'| markdownify }}
+{{'[DataFormNumericUpDownEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormNumericUpDownEditor.html)'| markdownify }}
 </td>
 <td>
 Int or Double type property.
@@ -138,7 +138,7 @@ SfNumericUpDown
 SegmentControl
 </td>
 <td>
-{{'[DataFormSegmentedEditor](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormSegmentedEditor.html)'| markdownify }}
+{{'[DataFormSegmentedEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormSegmentedEditor.html)'| markdownify }}
 </td>
 <td>
 Enum type property.
@@ -152,7 +152,7 @@ SegmentControl
 Bool
 </td>
 <td>
-{{'[DataFormCheckBoxEditor](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormCheckBoxEditor.html)'| markdownify }}
+{{'[DataFormCheckBoxEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormCheckBoxEditor.html)'| markdownify }}
 </td>
 <td>
 Bool type property.
@@ -166,7 +166,7 @@ CheckBox
 Switch
 </td>
 <td>
-{{'[DataFormSwitchEditor](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormSwitchEditor.html)'| markdownify }}
+{{'[DataFormSwitchEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormSwitchEditor.html)'| markdownify }}
 </td>
 <td>
 Bool type property.
@@ -180,7 +180,7 @@ Switch
 Picker
 </td>
 <td>
-{{'[DataFormPickerEditor](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormPickerEditor.html)'| markdownify }}
+{{'[DataFormPickerEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormPickerEditor.html)'| markdownify }}
 </td>
 <td>
 Enum and List type property. 
@@ -195,7 +195,7 @@ Picker
 DropDown
 </td>
 <td>
-{{'[DataFormDropDownEditor](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormDropDownEditor.html)'| markdownify }}
+{{'[DataFormDropDownEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormDropDownEditor.html)'| markdownify }}
 </td>
 <td>
 Enum and List type property.
@@ -210,7 +210,7 @@ DropDownControl
 Password
 </td>
 <td>
-{{'[DataFormPasswordEditor](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormPasswordEditor.html)'| markdownify }}
+{{'[DataFormPasswordEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormPasswordEditor.html)'| markdownify }}
 </td>
 <td>
 The String type property and property with 
@@ -224,7 +224,7 @@ Entry
 
 ## Changing editor for type
 
-By default, the editors will be loaded based on the previous table. To change the editor for any type, use the [RegisterEditor](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~RegisterEditor(Type,String).html) method and specify the type and editor.
+By default, the editors will be loaded based on the previous table. To change the editor for any type, use the [RegisterEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~RegisterEditor(Type,String).html) method and specify the type and editor.
 
 {% tabs %}
 {% highlight c# %}
@@ -238,7 +238,7 @@ Here, the `NumericUpDown` editor will be loaded for the integer type instead of 
 
 ## Changing editor for property
 
-To change the editor for any property, use the [RegisterEditor](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~RegisterEditor(String,String).html) method and specify the property name and editor.
+To change the editor for any property, use the [RegisterEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~RegisterEditor(String,String).html) method and specify the property name and editor.
 
 {% tabs %}
 {% highlight c# %}
@@ -254,7 +254,7 @@ Here, the Switch editor will be loaded for the `IsAvailable` property (bool type
 
 The existing editors defined in the previous table can be customized by overriding the default editors. 
 
-Here, the [DataFormTextEditor](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormTextEditor.html) is customized to set different foreground for the FirstName property text editor.
+Here, the [DataFormTextEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormTextEditor.html) is customized to set different foreground for the FirstName property text editor.
 
 {% tabs %}
 {% highlight c# %}
@@ -280,7 +280,7 @@ dataForm.RegisterEditor("Text", new CustomTextEditor(dataForm));
 
 ## Creating new custom editor
 
-Create the custom editor by overriding the [DataFormEditor](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormEditor%601.html) class.
+Create the custom editor by overriding the [DataFormEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormEditor%601.html) class.
 
 Property settings, commit, data validation can be handled by overriding the required methods. Here, the `Slider` is loaded for `Salary` editor.
 
@@ -330,7 +330,7 @@ dataForm.RegisterEditor("Salary", "Slider");
 
 ## Support for Email editor
 
-You can load the Email editor by changing `KeyBoard` type in the [AutoGeneratingDataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~AutoGeneratingDataFormItem_EV.html) event.
+You can load the Email editor by changing `KeyBoard` type in the [AutoGeneratingDataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~AutoGeneratingDataFormItem_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -347,7 +347,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ## Commit mode
 
-The [CommitMode](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Commit.html) determines when the value should be committed to the data object.
+The [CommitMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Commit.html) determines when the value should be committed to the data object.
 
 The supported commit modes are as follows:
 
@@ -384,7 +384,7 @@ The value will be committed immediately when it is changed.
 
 ### Explicit
 
-The value should be committed manually by calling the [SfDataForm.Commit](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Commit().html) or [SfDataForm.Commit(propertyName)](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Commit(String).html) method.
+The value should be committed manually by calling the [SfDataForm.Commit](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Commit().html) or [SfDataForm.Commit(propertyName)](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Commit(String).html) method.
 
 The following code commits the value of all the properties in the data object:
 
@@ -404,7 +404,7 @@ dataForm.Commit("Name");
 
 ## Update editor value based on another editor
 
-You can the update the editor value by using the [SfDataForm.UpdateEditor](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~UpdateEditor.html) method at runtime.
+You can the update the editor value by using the [SfDataForm.UpdateEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~UpdateEditor.html) method at runtime.
 
 {% tabs %}
 {% highlight xaml %}
@@ -445,7 +445,7 @@ You can download the sample from [here](http://www.syncfusion.com/downloads/supp
 
 ## Converter
 
-To show the original value in different format or as different value, use the [Converter](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.ConverterAttribute.html) attribute.
+To show the original value in different format or as different value, use the [Converter](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.ConverterAttribute.html) attribute.
 
 Here, the original value is multiplied by 10 and shown in editor. While committing, it is divided by 10 and stored in the data object.
 
@@ -485,7 +485,7 @@ public double? Amount
 {% endtabs %}
 
 ## Disable editing
-You can disable editing by setting the [IsReadOnly](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~IsReadOnly.html) property of the data form.
+You can disable editing by setting the [IsReadOnly](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~IsReadOnly.html) property of the data form.
 
 {% tabs %}
 {% highlight xaml %}
@@ -506,7 +506,7 @@ dataForm.IsReadOnly = true;
 {% endhighlight %}
 {% endtabs %}
 
-You can also change the editing behavior by setting the [IsReadOnly](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~IsReadOnly.html) property of the [DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem.html).
+You can also change the editing behavior by setting the [IsReadOnly](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~IsReadOnly.html) property of the [DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -535,4 +535,4 @@ private void Button_Click(object sender, System.EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-N> [DataFormItem.IsReadOnly](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem~IsReadOnly.html) takes higher priority than [SfDataForm.IsReadOnly](https://help.syncfusion.com/cr/cref_files/xamarin/sfdataform/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~IsReadOnly.html).
+N> [DataFormItem.IsReadOnly](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem~IsReadOnly.html) takes higher priority than [SfDataForm.IsReadOnly](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~IsReadOnly.html).

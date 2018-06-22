@@ -30,15 +30,15 @@ N>The default value of the `AllowLoadMore` property is false.
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:LoadMore"
-    x:Class="LoadMore.MainPage"
-    xmlns:carousel="clr-namespace:Syncfusion.SfCarousel.XForms;assembly=Syncfusion.SfCarousel.XForms">
+	<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:local="clr-namespace:LoadMore"
+	x:Class="LoadMore.MainPage"
+	xmlns:carousel="clr-namespace:Syncfusion.SfCarousel.XForms;assembly=Syncfusion.SfCarousel.XForms">
 
-<ContentPage.BindingContext>
-  <local:CarouselViewModel />
-</ContentPage.BindingContext>
+	<ContentPage.BindingContext>
+	<local:CarouselViewModel />
+	</ContentPage.BindingContext>
 
 	<ContentPage.Resources>
 		<ResourceDictionary>
@@ -49,19 +49,19 @@ N>The default value of the `AllowLoadMore` property is false.
 		</ResourceDictionary>
 	</ContentPage.Resources>
 
-	<ContentPage.Content>
-		<carousel:SfCarousel x:Name="carousel"
-						ItemTemplate="{StaticResource itemTemplate}"
-						ItemsSource="{Binding ImageCollection}"
-						ItemHeight="200"
-						ItemWidth="200"
-						ItemSpacing="2"
-                        AllowLoadMore="True"
-						ViewMode="Linear">
-		</carousel:SfCarousel>
-	</ContentPage.Content>
-</ContentPage>
-
+		<ContentPage.Content>
+			<carousel:SfCarousel x:Name="carousel"
+			ItemTemplate="{StaticResource itemTemplate}"
+			ItemsSource="{Binding ImageCollection}"
+			ItemHeight="200"
+			ItemWidth="200"
+			ItemSpacing="2"
+			AllowLoadMore="True"
+			ViewMode="Linear">
+			</carousel:SfCarousel>
+		</ContentPage.Content>
+	</ContentPage>
+	
 {% endhighlight %}
 
 {% highlight c# %}
@@ -106,15 +106,15 @@ N>The default value of the `LoadMoreItemsCount` property is 3.
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:LoadMore"
-    x:Class="LoadMore.MainPage"
-    xmlns:carousel="clr-namespace:Syncfusion.SfCarousel.XForms;assembly=Syncfusion.SfCarousel.XForms">
+	<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:local="clr-namespace:LoadMore"
+	x:Class="LoadMore.MainPage"
+	xmlns:carousel="clr-namespace:Syncfusion.SfCarousel.XForms;assembly=Syncfusion.SfCarousel.XForms">
 
-<ContentPage.BindingContext>
-  <local:CarouselViewModel/>
-</ContentPage.BindingContext>
+	<ContentPage.BindingContext>
+	<local:CarouselViewModel/>
+	</ContentPage.BindingContext>
 
 	<ContentPage.Resources>
 		<ResourceDictionary>
@@ -125,19 +125,19 @@ N>The default value of the `LoadMoreItemsCount` property is 3.
 		</ResourceDictionary>
 	</ContentPage.Resources>
 
-	<ContentPage.Content>
-		<carousel:SfCarousel x:Name="carousel"
-						ItemTemplate="{StaticResource itemTemplate}"
-						ItemsSource="{Binding ImageCollection}"
-						ItemHeight="200"
-						ItemWidth="200"
-						ItemSpacing="2"
-						LoadMoreItemsCount="5"
-                        AllowLoadMore="True"
-						ViewMode="Linear">
-		</carousel:SfCarousel>
-	</ContentPage.Content>
-</ContentPage>
+		<ContentPage.Content>
+			<carousel:SfCarousel x:Name="carousel"
+			ItemTemplate="{StaticResource itemTemplate}"
+			ItemsSource="{Binding ImageCollection}"
+			ItemHeight="200"
+			ItemWidth="200"
+			ItemSpacing="2"
+			LoadMoreItemsCount="5"
+			AllowLoadMore="True"
+			ViewMode="Linear">
+			</carousel:SfCarousel>
+		</ContentPage.Content>
+	</ContentPage>
 
 {% endhighlight %}
 
@@ -235,4 +235,4 @@ carousel.LoadMoreView = grid;
 
 ![](images/LoadMore.png)
 
-You can find the complete Load More sample from this [link.](http://www.syncfusion.com/downloads/support/forum/137855/ze/LoadMore434862846)
+You can find the complete Load More sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LoadMore1567166256.zip)

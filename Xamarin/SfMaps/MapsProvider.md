@@ -21,7 +21,7 @@ The maps control uses `imagery layer` to display the tile images from the OSM se
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <maps:SfMaps.Layers>
     <maps:ImageryLayer/>

@@ -49,7 +49,7 @@ The Bing maps is a world map owned by Microsoft. As OSM, Bing maps also provides
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight xml %}
 
   <maps:SfMaps.Layers>
       <maps:ImageryLayer LayerType="Bing" BingMapKey="Your bing map key"/>
@@ -93,7 +93,7 @@ Aerial view displays the satellite images to highlight roads and major landmarks
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <maps:SfMaps.Layers>
     <maps:ImageryLayer LayerType="Bing" 
@@ -124,7 +124,7 @@ AerialWithLabel view displays the Aerial map with labels for continent, country,
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <maps:SfMaps.Layers>
     <maps:ImageryLayer LayerType="Bing" 
@@ -163,7 +163,7 @@ The ImageryLayer provides support to reset to the default view when you double t
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <maps:SfMaps>
    <maps:SfMaps.Layers>
@@ -190,7 +190,7 @@ The `GeoCoordinates` property allows to view the desired area at the center on l
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <maps:SfMaps ZoomLevel="2">
         <maps:SfMaps.Layers>
@@ -217,7 +217,7 @@ The `GeoCoordinates` property allows to view the desired area at the center on l
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <maps:SfMaps ZoomLevel="2">
     <maps:SfMaps.Layers>
@@ -248,7 +248,7 @@ The detailed explanation of marker and its customization has been provided in Ma
 
 % tabs %}
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <maps:ImageryLayer  >
     <maps:ImageryLayer.MarkerSettings>

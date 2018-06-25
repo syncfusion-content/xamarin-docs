@@ -109,7 +109,7 @@ The procedure for creating Resources(.resw) file is as follows:
 ![](Localization_images/Localization_XFUWP.png)
 
 ## Localizing custom strings from pcl
-You can localize the custom strings (All Day, No Events) used in the schedule control from PCL. By providing the custom strings to the specific language resx file and handling the required culture with the locale using DependencyService instead of device language. In the below code we have set French as Schedule locale as well as custom strings.
+You can localize the custom strings (All Day, No Events) used in the schedule control from PCL. It can be achieved by providing the custom strings to the specific language resx file and handling the required culture with the locale using DependencyService instead of device language. In the below code, we have set French as Schedule locale as well as custom strings.
 
 {% tabs %}
 {% highlight c# %}
@@ -137,7 +137,7 @@ You need to add the required resx files under the Resources folder in the PCL pr
 
 Example: For French, `Syncfusion.SfSchedule.Forms.fr.resx`
 
-Now set the Build Action as EmbeddedResource for `Syncfusion.SfSchedule.Forms.fr.resx` file and Build Action as Compile for `Syncfusion.SfSchedule.Forms.fr.Designer.cs` file.
+Now, set the Build Action as EmbeddedResource for `Syncfusion.SfSchedule.Forms.fr.resx` file and Build Action as Compile for `Syncfusion.SfSchedule.Forms.fr.Designer.cs` file.
 
 {% tabs %}
 {% highlight xaml %}
@@ -196,7 +196,7 @@ You need to add the ILocalize interface to convert the platform-specific locales
 {% endtabs %}
 
 ### Adding Localize class in Android and iOS project inheriting from ILocalize
-You need to add the Localize class in Android and iOS project inheriting from ILocalize. We got the CultureInfo and set the same to Schedule Locale by using `GetCurrentCultureInfo` and `SetLocale`. For UWP, no sample level changes required.
+You need to add the Localize class in Android and iOS project by inheriting from ILocalize. You can get the CultureInfo and set the same to Schedule Locale by using `GetCurrentCultureInfo` and `SetLocale`.
 
 Localize class for Android project,
 
@@ -353,4 +353,5 @@ Localize class for iOS project,
 {% endhighlight %}
 {% endtabs %}
 
-
+>**NOTE**
+For UWP project, no sample level changes required.

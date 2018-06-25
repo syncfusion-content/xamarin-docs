@@ -115,7 +115,7 @@ You can download the entire source code of this demo for Xamarin.Forms from
 here [Localization](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization_Forms-1564080177.zip).
 
 ### Add resx file in the Resources folder in pcl
-In PCL, you need to add the required resx files under the Resources folder and the filename should be Syncfusion.SfSchedule.Forms.LanguageCode.resx.
+You need to add the required resx files under the Resources folder in the PCL project and the filename should be Syncfusion.SfSchedule.Forms.LanguageCode.resx.
 
 Example: For French, Syncfusion.SfSchedule.Forms.fr.resx
 
@@ -133,7 +133,7 @@ Now set Build Action as EmbeddedResource for Syncfusion.SfSchedule.Forms.fr.resx
 {% endtabs %}
 
 ### Add ILocalize interface in pcl
-In PCL, you need to add the ILocalize interface to convert the platform-specific locales to a value supported in .NET cultures.
+You need to add the ILocalize interface to convert the platform-specific locales to a value supported in .NET cultures in the PCL project.
 
 {% tabs %}
 {% highlight c# %}
@@ -178,7 +178,7 @@ In PCL, you need to add the ILocalize interface to convert the platform-specific
 {% endtabs %}
 
 ### Add Localize class in Android and iOS project inheriting from ILocalize
-In this class, we got the CultureInfo and set the same to Schedule Locale by using `GetCurrentCultureInfo` and `SetLocale`. For UWP, no sample level changes required.
+You need to add the Localize class in Android and iOS project inheriting from ILocalize. We got the CultureInfo and set the same to Schedule Locale by using `GetCurrentCultureInfo` and `SetLocale` in this. For UWP, no sample level changes required.
 
 Localize class for Android project,
 
@@ -336,7 +336,7 @@ Localize class for iOS project,
 {% endtabs %}
 
 ### Setting locale to the custom strings in sample level
-You can set the required locale from the Resources folder in sample level as below, In the example we have set for French.
+You can set the required locale in the sample by accessing from the Resources folder of PCL, In the below code we have set French as Schedule locale as well custom strings.
 
 {% tabs %}
 {% highlight c# %}

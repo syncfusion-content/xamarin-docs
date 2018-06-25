@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Drill down feature of Essential Xamarin.Forms SfSunburstChart
 description: This section describes the drill down feature of sunburst chart.
@@ -26,7 +26,7 @@ The following code shows enabling the drill-down settings.
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
             DrilldownSettings drilldownSettings = new DrilldownSettings();
             drilldownSettings.Enable = true;
@@ -54,7 +54,7 @@ Toolbar can be positioned anywhere on the chart by specifying the `OffsetX` and 
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
             DrilldownSettings drilldownSettings = new DrilldownSettings();
             drilldownSettings.Enable = true;
@@ -92,7 +92,7 @@ The following code shows the toolbar alignment.
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
             DrilldownSettings drilldownSettings = new DrilldownSettings();
             drilldownSettings.Enable = true;

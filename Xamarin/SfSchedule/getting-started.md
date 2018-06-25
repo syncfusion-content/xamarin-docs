@@ -11,62 +11,18 @@ documentation: ug
     
 This section provides you an overview for working with SfSchedule for Xamarin.Forms and also provides a walk through to configure SfSchedule control in real time scenario.   
 
-## Assembly Configuration   
-    
-SfSchedule can be included in your Xamarin.Forms project in two ways,  
- 
-* [Assembly Reference](#assembly-reference)  
-* [NuGet Configuration](#nuget-configuration)  
+## Adding Schedule Reference
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add schedule in your project, open the NugetPackage manager in Visual Studio, and search for [Syncfusion.Xamarin.SfSchedule](https://www.nuget.org/packages/Syncfusion.Xamarin.SfSchedule/) and then install it.
 
-### Assembly Reference  
- 
-You can download our Xamarin.Forms components directly from our website, refer [here](https://help.syncfusion.com/xamarin/introduction/download-and-installation#download-directly-from-website) for assistance.   
- 
-Once the assemblies has been downloaded and explored, you can find all the required assemblies in the installation folders.   
-   
-{Syncfusion Essential Studio Installed location}\Essential Studio\syncfusionessentialstudio-releaseversion\Xamarin\lib   
-    
-Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\15.1.0.41\Xamarin\lib  
-    
->**NOTE**
-Assemblies can be found in unzipped package location in Mac
-    
-The following list of assemblies need to be added as reference from the lib folder to use SfSchedule in your application.   
-    
-<table>   
-<tr>   
-<th>Project</th>   
-<th>Required assemblies</th>   
-</tr>   
-<tr>   
-<td>PCL</td>   
-<td>pcl\Syncfusion.SfSchedule.XForms.dll<br/></td>   
-</tr>   
-<tr>   
-<td>Android Renderer</td>   
-<td>pcl\Syncfusion.SfSchedule.XForms.dll<br/>android\Syncfusion.SfSchedule.Android.dll<br/>android\Syncfusion.SfSchedule.XForms.Android.dll<br/></td>   
-</tr>   
-<tr>   
-<td>iOS Renderer</td>   
-<td>pcl\Syncfusion.SfSchedule.XForms.dll<br/>ios-unified\Syncfusion.SfSchedule.iOS.dll<br/>ios-unified\Syncfusion.SfSchedule.XForms.iOS.dll<br/></td>   
-</tr>   
-<tr>   
-<td>UWP Renderer</td>   
-<td>pcl\Syncfusion.SfSchedule.XForms.dll<br/>uwp\Syncfusion.SfSchedule.XForms.UWP.dll<br/></td>   
-</tr>   
-</table>   
- 
+![](GettingStarted_images/installation_image.png)  
+
+To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfschedule) to know about dependent assemblies for schedule. 
 
 >**NOTE**
-For compiling the UWP project in Xamarin.Forms, referring the Schedule assemblies (XForms, XForms.UWP) in the XForms (UWP) project is sufficient and its files (properties, themes, etc.) needs to be maintained in the UWP assembly folder to render the control.
+When there is a mismatch between the Syncfusion NuGet packages among the projects, `System.IO.FileLoadException` will occur. To overcome this exception, install the same version of the SfSchedule assemblies in all the projects.
 
-### NuGet Configuration  
-    
-Alternatively you can refer SfSchedule in your application by configuring nuget packages.    
-  
-* [Configuration in Xamarin Studio](https://help.syncfusion.com/xamarin/introduction/download-and-installation#install-syncfusions-nuget-package-in-xamarin-studio)  
-* [Configuration in Visual Studio](https://help.syncfusion.com/xamarin/introduction/download-and-installation#configuring-syncfusion-nuget-packages-in-visual-studio)  
-* [Configuration from command line in Linux/MAC](https://help.syncfusion.com/xamarin/introduction/download-and-installation#configuring-syncfusion-nuget-packages-from-command-line-in-linuxmac)  
+>**Important**
+Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components. 
 
 ### Launching SfSchedule on each platform 
  
@@ -109,7 +65,8 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 	rootFrame.NavigationFailed += OnNavigationFailed;
 	// you'll need to add `using System.Reflection;`
 	List<Assembly> assembliesToInclude = new List<Assembly>();
-	//Now, add all the assemblies your app uses assembliesToInclude.Add(typeof(SfScheduleRenderer).GetTypeInfo().Assembly);
+	//Now, add all the assemblies your app uses 
+	assembliesToInclude.Add(typeof(SfScheduleRenderer).GetTypeInfo().Assembly);
 	// replaces Xamarin.Forms.Forms.Init(e);        
 	Xamarin.Forms.Forms.Init(e, assembliesToInclude);
 }
@@ -123,7 +80,7 @@ This section explains how to create a simple application using SfSchedule contro
 ![](GettingStarted_images/GettingStarted.png)   
 
 You can download the entire source code of this demo for Xamarin.Forms from
-here [ScheduleGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ScheduleGettingStarted-815086813.zip)
+here [ScheduleGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ScheduleGettingStarted285067184.zip)
     
 This section provides a walks through to create `MeetingRoomScheduler` using our Schedule control.  
     
@@ -184,9 +141,9 @@ here [ScheduleProject](http://www.syncfusion.com/downloads/support/directtrac/ge
 
 ## Changing Schedule Views   
     
-SfSchedule control provides four different types of views to display dates and it can be assigned to the control by using [ScheduleView](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleView.html) property. By default the control is assigned with `DayView`. Current date will be displayed initially for all the Schedule views.  
+SfSchedule control provides four different types of views to display dates and it can be assigned to the control by using [ScheduleView](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleView.html) property. By default the control is assigned with `DayView`. Current date will be displayed initially for all the Schedule views.  
 
-Schedule control will be rendered with `Sunday` as the first day of the week, but you can customize to any day by using [FirstDayOfWeek](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~FirstDayOfWeek.html) property of `SfSchedule`.
+Schedule control will be rendered with `Sunday` as the first day of the week, but you can customize to any day by using [FirstDayOfWeek](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~FirstDayOfWeek.html) property of `SfSchedule`.
     
 {% tabs %}  
 {% highlight xaml %}
@@ -250,7 +207,7 @@ Appointments in non-working days will not be displayed.
 
 ### Month View   
     
-`MonthView` in Schedule control is to view entire dates of a particular month. Appointments can be viewed in inline by setting [ShowAppointmentsInline](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ShowAppointmentsInline.html) property of `SfSchedule` as true.    
+`MonthView` in Schedule control is to view entire dates of a particular month. Appointments can be viewed in inline by setting [ShowAppointmentsInline](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ShowAppointmentsInline.html) property of `SfSchedule` as true.    
     
 {% tabs %}   
 {% highlight xaml %}
@@ -271,11 +228,11 @@ schedule.ShowAppointmentsInline = true;
 
 ## Binding data to SfSchedule control   
   
-Schedule control has a built-in capability to handle the appointment arrangement internally based on the ScheduleAppointment collections. You need to assign the created collection to the [DataSource](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~DataSource.html) property of `SfSchedule`.  
+Schedule control has a built-in capability to handle the appointment arrangement internally based on the ScheduleAppointment collections. You need to assign the created collection to the [DataSource](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~DataSource.html) property of `SfSchedule`.  
   
 ### Adding Appointments   
   
-[ScheduleAppointment](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment.html) is a class, which holds the details about the appointment to be rendered in schedule. It has some basic properties such as [StartTime](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~StartTime.html), [EndTime](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~EndTime.html), [Subject](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~Subject.html) and some additional information about the appointment can be added using [Color](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~Color.html), [Notes](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~Notes.html), [Location](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~Location.html), [IsAllDay](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~IsAllDay.html), [IsRecursive](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~IsRecursive.html) properties.    
+[ScheduleAppointment](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment.html) is a class, which holds the details about the appointment to be rendered in schedule. It has some basic properties such as [StartTime](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~StartTime.html), [EndTime](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~EndTime.html), [Subject](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~Subject.html) and some additional information about the appointment can be added using [Color](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~Color.html), [Notes](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~Notes.html), [Location](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~Location.html), [IsAllDay](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~IsAllDay.html), [IsRecursive](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~IsRecursive.html) properties.    
   
 {% tabs %}     
 {% highlight c# %}
@@ -455,7 +412,7 @@ public class ViewModel
 
 #### Mapping custom class  
 
-You can map those properties of `Meeting` class with our schedule control by using [ScheduleAppointmentMapping](http://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping.html).   
+You can map those properties of `Meeting` class with our schedule control by using [ScheduleAppointmentMapping](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping.html).   
 
 {% tabs %}
 {% highlight xaml %}

@@ -2357,15 +2357,22 @@ Any view can be added to the center of doughnut chart using the [`CenterView`]()
 	<chart:DoughnutSeries.CenterView>
 		<StackLayout HorizontalOptions = "FillAndExpand" 
 		             VerticalOptions = "FillAndExpand">
-		....
-		....
-		....
-		....
+		...
 		</StackLayout>
 	</chart:DoughnutSeries.CenterView>
 ...
 </chart:DoughnutSeries>
 	
+{% endhighlight %}
+
+{% highlight C# %}
+
+DoughnutSeries doughnutSeries = new DoughnutSeries()
+{
+	...
+}
+doughnutSeries.CenterView = new Label() { Text = "CenterView" };
+
 {% endhighlight %}
 
 {% endtabs %}

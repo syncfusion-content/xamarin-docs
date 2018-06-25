@@ -16,8 +16,15 @@ You can save the image along with the changes to the device. Saving the image ca
 
 ## From Toolbar
 
-You can save the image from the toolbar by clicking the `Save` button in the top toolbar. The saved image will be added in default pictures folder of the device. In UWP , saved image will be added in default pictures library “C:\Users\your name\Pictures\Saved Pictures” .
+You can save the image from the toolbar by clicking the `Save` button in the top toolbar. The saved image will be added in default pictures folder of the device. 
 
+Saved image location:
+
+UWP :
+Saved image will be added in default pictures library “C:\Users\your name\Pictures\Saved Pictures” .
+
+Android:
+Saved image will be added in default pictures library “Internal storage/Pictures/” .
 
 ## Using Code
 
@@ -110,4 +117,63 @@ This event occurs before resetting the changes made in an image. You can control
 
 This event occurs when reset has been completed.
 
+### ImageLoaded Event
 
+This event will be triggered once the image is loaded. By using this event we can add any shapes, text or crop over an image while initially loading the image. 
+
+{% highlight C# %}
+
+        public MainPage()
+            {               
+                            . . .
+
+                editor.ImageLoaded += Editor_ImageLoaded;
+
+                            . . .
+            }
+
+        private void Editor_ImageLoaded(object sender, ImageLoadedEventArgs args)
+            {
+                editor.AddShape(ShapeType.Circle, new PenSettings() {Color = Color.Green,Mode = Mode.Stroke });
+            }
+
+{% endhighlight %}
+
+
+### ItemSelected Event
+
+This event will be triggered whenever you tap the image editor selected shapes (Rectangle, Circle and Arrow) and Text. You can get the settings of each selected shapes and text with the help of ItemSelected argument. Also we can change the settings which will affect the selected shape.
+
+{% highlight C# %}
+
+        public MainPage()
+            {               
+                            . . .
+
+                editor.ImageLoaded += Editor_ImageLoaded;
+                editor.ItemSelected += Editor_ItemSelected;
+
+                            . . .
+            }
+
+        private void Editor_ImageLoaded(object sender, ImageLoadedEventArgs args)
+            {
+                editor.AddShape(ShapeType.Circle, new PenSettings() {Color = Color.Green,Mode = Mode.Stroke });
+            }
+
+        private void Editor_ItemSelected(object sender, ItemSelectedEventArgs args)
+            {
+                var Settings = args.Settings;   
+
+                if (Settings is PenSettings)
+                {
+                    (Settings as PenSettings).Color = color;
+                }
+                else
+                {
+                    (Settings as TextSettings).Color = color;
+                }
+     
+            }
+
+{% endhighlight %}

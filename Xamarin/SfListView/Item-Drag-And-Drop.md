@@ -252,6 +252,20 @@ this.listView.DragDropController.UpdateSource = true;
 {% endhighlight %}
 {% endtabs %}
 
+We can able to update collection even when `UpdateSource` is `false`.Like, User can decide where dragged item should be dropped actually by handling the ItemDragging event with `DragAction.Drop`.
+
+{% tabs %}
+{% highlight c# %}
+private void ListView_ItemDragging(object sender, ItemDraggingEventArgs e)
+{
+   if (e.Action == DragAction.Drop)
+      {
+        ViewModel.ToDoList.MoveTo(1, 5);
+      }
+}
+{% endhighlight %}
+{% endtabs %}
+
 N> Updating items order is not applicable in the underlying collection if grouping is enabled. Because, order of the `DisplayItems` of the DataSource and underlying collection is different.
 
 ## Delete item when dropping in particular view

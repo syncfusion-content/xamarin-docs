@@ -160,7 +160,7 @@ You need to add the ILocalize interface to convert the platform-specific locales
         public interface ILocalize
         {
                 CultureInfo GetCurrentCultureInfo();
-                void SetLocale(CultureInfo ci);
+                void SetLocale(CultureInfo cultureInfo);
         }
         public class PlatformCulture
         {
@@ -209,34 +209,34 @@ Localize class for Android project,
     {
         public class Localize : ILocalize
         {
-            public void SetLocale(CultureInfo ci)
+            public void SetLocale(CultureInfo cultureInfo)
             {
-                Thread.CurrentThread.CurrentCulture = ci;
-                Thread.CurrentThread.CurrentUICulture = ci;
+                Thread.CurrentThread.CurrentCulture = cultureInfo;
+                Thread.CurrentThread.CurrentUICulture = cultureInfo;
             }
             public CultureInfo GetCurrentCultureInfo()
             {
                 var netLanguage = "en";
                 var androidLocale = Java.Util.Locale.Default;
                 netLanguage = AndroidToDotnetLanguage(androidLocale.ToString().Replace("_", "-"));
-                CultureInfo ci = null;
+                CultureInfo cultureInfo = null;
                 try
                 {
-                    ci = new CultureInfo(netLanguage);
+                    cultureInfo = new CultureInfo(netLanguage);
                 }
                 catch
                 {
                     try
                     {
                         var fallback = ToDotnetFallbackLanguage(new PlatformCulture(netLanguage));
-                        ci = new CultureInfo(fallback);
+                        cultureInfo = new CultureInfo(fallback);
                     }
                     catch
                     {
-                        ci = new CultureInfo("en");
+                        cultureInfo = new CultureInfo("en");
                     }
                 }
-                return ci;
+                return cultureInfo;
             }
         private string AndroidToDotnetLanguage(string androidLanguage)
         {
@@ -286,10 +286,10 @@ Localize class for iOS project,
     {
         public class Localize : ILocalize
         {
-            public void SetLocale(CultureInfo ci)
+            public void SetLocale(CultureInfo cultureInfo)
             {
-                Thread.CurrentThread.CurrentCulture = ci;
-                Thread.CurrentThread.CurrentUICulture = ci;
+                Thread.CurrentThread.CurrentCulture = cultureInfo;
+                Thread.CurrentThread.CurrentUICulture = cultureInfo;
             }
             public CultureInfo GetCurrentCultureInfo()
             {
@@ -299,24 +299,24 @@ Localize class for iOS project,
                     var pref = NSLocale.PreferredLanguages[0];
                     netLanguage = iOSToDotnetLanguage(pref);
                 }
-                CultureInfo ci = null;
+                CultureInfo cultureInfo = null;
                 try
                 {
-                    ci = new CultureInfo(netLanguage);
+                    cultureInfo = new CultureInfo(netLanguage);
                 }
                 catch
                 {
                     try
                     {
                         var fallback = ToDotnetFallbackLanguage(new PlatformCulture(netLanguage));
-                        ci = new CultureInfo(fallback);
+                        cultureInfo = new CultureInfo(fallback);
                     }
                     catch
                     {
-                        ci = new CultureInfo("en");
+                        cultureInfo = new CultureInfo("en");
                     }
                 }
-                return ci;
+                return cultureInfo;
             }
             private string iOSToDotnetLanguage(string iOSLanguage)
             {

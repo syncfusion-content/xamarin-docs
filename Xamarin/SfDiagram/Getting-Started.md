@@ -17,6 +17,8 @@ To know more about obtaining our components, refer to these links: [Mac](https:/
 
 After adding the assembly reference, an additional step is required for iOS and UWP projects.
 
+I>Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
+
 ### Additional step for iOS
 
 To launch SfDiagram in iOS, call the `SfDiagramRenderer.Init()` in `FinishedLaunching` overridden method of `AppDelegate` class in iOS Project, as demonstrated in the following code example.

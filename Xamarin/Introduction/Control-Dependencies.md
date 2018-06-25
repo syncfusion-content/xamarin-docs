@@ -840,15 +840,15 @@ This page lists the assemblies required for each control to be referred in each 
 </tr>
 <tr>
 <td>Android</td>
-<td>Syncfusion.SfPullToRefresh.XForms.Android.dll<br/>Syncfusion.SfPullToRefresh.XForms.dll<br/></td>
+<td>Syncfusion.SfPullToRefresh.XForms.dll<br/>Syncfusion.SfPullToRefresh.XForms.Android.dll<br/></td>
 </tr>
 <tr>
 <td>iOS</td>
-<td>Syncfusion.SfPullToRefresh.XForms.iOS.dll<br/>Syncfusion.SfPullToRefresh.XForms.dll<br/></td>
+<td>Syncfusion.SfPullToRefresh.XForms.dll<br/>Syncfusion.SfPullToRefresh.XForms.iOS.dll<br/></td>
 </tr>
 <tr>
 <td>UWP</td>
-<td>Syncfusion.SfPullToRefresh.XForms.UWP.dll<br/>Syncfusion.SfPullToRefresh.XForms.dll<br/></td>
+<td>Syncfusion.SfPullToRefresh.XForms.dll<br/>Syncfusion.SfPullToRefresh.XForms.UWP.dll<br/></td>
 </tr>
 </table>
 

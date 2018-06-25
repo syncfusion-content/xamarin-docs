@@ -40,7 +40,7 @@ circularProgressBar.EndAngle = 360;
 
 ## Range colors
 
-You can also visualize multiple ranges with different colors that are mapped to each range to enhance readability of progress.This visual customization can be applied only for linear progress bar.
+You can also visualize multiple ranges with different colors that are mapped to each range to enhance readability of progress.Currently, it is applicable only for linear progress bar.
 
 The colors can be mapped to the specific ranges using the [`RangeColors`](https://help.syncfusion.com/cr/cref_files/xamarin/sfprogressbar/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.SfLinearProgressBar~RangeColors.html) property in the linear progress bar. It holds a collection of  [`RangeColor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfprogressbar/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.RangeColor.html) in linear progress bar. 
 

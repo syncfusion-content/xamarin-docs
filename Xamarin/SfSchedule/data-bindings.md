@@ -77,15 +77,18 @@ Schedule supports full data binding to any type of IEnumerable source. Specify t
 
 | Property Name | Description |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| [StartTimeMapping](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping~StartTimeMapping.html) | This property is to map the property name of custom class which is equivalent for StartTime of ScheduleAppointment. |
-| [EndTimeMapping](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping~EndTimeMapping.html) | This property is to map the property name of custom class which is equivalent for EndTime of ScheduleAppointment. |
-| [SubjectMapping](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping~SubjectMapping.html) | This property is to map the property name of custom class which is equivalent for Subject of ScheduleAppointment. |
-| [ColorMapping](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping~ColorMapping.html) | This property is to map the property name of custom class which is equivalent for Color of ScheduleAppointment. |
-| [IsAllDayMapping](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping~IsAllDayMapping.html) | This property is to map the property name of custom class which is equivalent for IsAllDay of ScheduleAppointment. |
-| [RecurrenceRuleMapping](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping~RecurrenceRuleMapping.html) | This property is to map the property name of custom class which is equivalent for RecurrenceRule of ScheduleAppointment. |
-| [NotesMapping](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping~NotesMapping.html) | This property is to map the property name of custom class which is equivalent for Notes of ScheduleAppointment. |
-| [LocationMapping](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping~LocationMapping.html) | This property is to map the property name of custom class which is equivalent for Location of ScheduleAppointment. |
-| [MinHeightMapping](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping~MinHeightMapping.html) | This property is to map the property name of custom class which is equivalent for MinHeight of ScheduleAppointment. |
+| [StartTimeMapping](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping~StartTimeMapping.html) | This property is to map the property name of custom class which is equivalent for StartTime of ScheduleAppointment. |
+| [StartTimeZoneMapping] (https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping~StartTimeZoneMapping.html) | This property is to map the property name of custom class which is equivalent for Start time zone of ScheduleAppointment. |
+| [EndTimeMapping](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping~EndTimeMapping.html) | This property is to map the property name of custom class which is equivalent for EndTime of ScheduleAppointment. |
+| [EndTimeZoneMapping] (https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping~EndTimeZoneMapping.html) | This property is to map the property name of custom class which is equivalent for End time zone of ScheduleAppointment. |
+| [SubjectMapping](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping~SubjectMapping.html) | This property is to map the property name of custom class which is equivalent for Subject of ScheduleAppointment. |
+| [ColorMapping](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping~ColorMapping.html) | This property is to map the property name of custom class which is equivalent for Color of ScheduleAppointment. |
+| [IsAllDayMapping](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping~IsAllDayMapping.html) | This property is to map the property name of custom class which is equivalent for IsAllDay of ScheduleAppointment. |
+| [RecurrenceRuleMapping](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping~RecurrenceRuleMapping.html) | This property is to map the property name of custom class which is equivalent for RecurrenceRule of ScheduleAppointment. |
+| [NotesMapping](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping~NotesMapping.html) | This property is to map the property name of custom class which is equivalent for Notes of ScheduleAppointment. |
+| [LocationMapping](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping~LocationMapping.html) | This property is to map the property name of custom class which is equivalent for Location of ScheduleAppointment. |
+| [IsRecursiveMapping](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping~IsRecursiveMapping.html) | This property is to map the property name of custom class which is equivalent for IsRecursive of ScheduleAppointment. |
+| [MinHeightMapping](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping~MinHeightMapping.html) | This property is to map the property name of custom class which is equivalent for MinHeight of ScheduleAppointment. |
 
 N> CustomAppointment class should contain two DateTime fields and a string field as mandatory.
 
@@ -444,9 +447,7 @@ Appointments can be rescheduled using the drag and drop operation. To perform dr
 
 {% tabs %}
 {% highlight xaml %}
-<schedule:SfSchedule x:Name=“schedule”
-ScheduleView="WeekView"
-AllowAppointmentDrag="true">
+<schedule:SfSchedule x:Name=“schedule” ScheduleView="WeekView" AllowAppointmentDrag="true">
 </schedule:SfSchedule>
 {% endhighlight %}
 {% highlight c# %}
@@ -470,14 +471,14 @@ schedule.AppointmentDragStarting += Schedule_AppointmentDragStarting;
 
 private void Schedule_AppointmentDragStarting(object sender, AppointmentDragStartingEventArgs e)
 {
-var appointment = e.Appointment;
-e.Cancel = false;
+        var appointment = e.Appointment;
+        e.Cancel = false;
 }
 {% endhighlight %}
 {% endtabs %}
 
 #### Disabling dragging when the appointment is AllDay appointment
-Using `Cancel` property in the `AppointmentDragStartingEventArgs` argument of Schedule `AppointmentDragStarting` event, you can enable/disable the appointment dragging based on the requirement. In the below, we have disabled the appointment dragging when the appointment is AllDay appointment.
+Using `Cancel` property in the `AppointmentDragStartingEventArgs` argument of Schedule `AppointmentDragStarting` event, you can enable/disable the appointment dragging based on the requirement. In the below code, appointment dragging is disabled when the appointment is AllDay appointment.
 
 {% tabs %}
 {% highlight c# %}
@@ -487,12 +488,12 @@ schedule.AppointmentDragStarting += Schedule_AppointmentDragStarting;
 
 private void Schedule_AppointmentDragStarting(object sender, AppointmentDragStartingEventArgs e)
 {
-var appointment = e.Appointment as ScheduleAppointment;
+        var appointment = e.Appointment as ScheduleAppointment;
 
-if (appointment.IsAllDay)
-{
-e.Cancel = true;
-}
+      if (appointment.IsAllDay)
+      {
+            e.Cancel = true;
+      }
 }
 {% endhighlight %}
 {% endtabs %}
@@ -512,15 +513,15 @@ schedule.AppointmentDragOver += Schedule_AppointmentDragOver;
 
 private void Schedule_AppointmentDragOver(object sender, AppointmentDragEventArgs e)
 {
-var appointment = e.Appointment;
-var draggingPoint = e.DraggingPoint;
-var draggingTime = e.DraggingTime;
+        var appointment = e.Appointment;
+        var draggingPoint = e.DraggingPoint;
+        var draggingTime = e.DraggingTime;
 }
 {% endhighlight %}
 {% endtabs %}
 
 #### Displaying alert while dragging appointment over the blocked time slots
-Using `draggingPoint` and `draggingTime` properties in the `AppointmentDragEventArgs` of Schedule `AppointmentDragOver` event you can get the current position and time of dragging appointment. In the below, we have indicated the message while dragging over the Schedule `NonAccessibleBlock`.
+Using `draggingPoint` and `draggingTime` properties in the `AppointmentDragEventArgs` of Schedule `AppointmentDragOver` event you can get the current position and time of dragging appointment. In the below code, Indicating the message while dragging over the Schedule `NonAccessibleBlock`.
 
 {% tabs %}
 {% highlight c# %}
@@ -530,12 +531,12 @@ schedule.AppointmentDragOver += Schedule_AppointmentDragOver;
 
 private void Schedule_AppointmentDragOver(object sender, AppointmentDragEventArgs e)
 {
-//// checking whether dragging appointment time within NonAccessibleBlock
-if (schedule.WorkWeekViewSettings.NonAccessibleBlocks[0].StartTime == e.DraggingTime.Hour ||
-(schedule.WorkWeekViewSettings.NonAccessibleBlocks[0].StartTime - 1 == e.DraggingTime.Hour && e.DraggingTime.Minute > 0))
-{
-label.Text = "Cannot be moved to blocked time slots";
-}
+        //// checking whether dragging appointment time within NonAccessibleBlock
+        if (schedule.WorkWeekViewSettings.NonAccessibleBlocks[0].StartTime == e.DraggingTime.Hour ||
+        (schedule.WorkWeekViewSettings.NonAccessibleBlocks[0].StartTime - 1 == e.DraggingTime.Hour && e.DraggingTime.Minute > 0))
+        {
+                label.Text = "Cannot be moved to blocked time slots";
+        }
 }
 {% endhighlight %}
 {% endtabs %}
@@ -555,15 +556,15 @@ schedule.AppointmentDrop += Schedule_AppointmentDrop;
 
 private void Schedule_AppointmentDrop(object sender, AppointmentDropEventArgs e)
 {
-var appointment = e.Appointment;
-e.Cancel = false;
-var dropTime = e.DropTime;
+        var appointment = e.Appointment;
+        e.Cancel = false;
+        var dropTime = e.DropTime;
 }
 {% endhighlight %}
 {% endtabs %}
 
 #### Disabling dropping when dropping appointment within the Non-Accessible region
-Using `Cancel` property in the `AppointmentDropEventArgs` argument of Schedule `AppointmentDrop` event, you can enable/disable the appointment dropping based on the requirement. In the below, we have disabled the appointment dropping while dropping in the Non-Accessible block region.
+Using `Cancel` property in the `AppointmentDropEventArgs` argument of Schedule `AppointmentDrop` event, you can enable/disable the appointment dropping based on the requirement. In the below code, appointment dropping is disabled while dropping in the Non-Accessible block region.
 
 {% tabs %}
 {% highlight c# %}
@@ -577,7 +578,7 @@ private void Schedule_AppointmentDrop(object sender, AppointmentDropEventArgs e)
 if (schedule.WorkWeekViewSettings.NonAccessibleBlocks[0].StartTime == e.DropTime.Hour ||
 (schedule.WorkWeekViewSettings.NonAccessibleBlocks[0].StartTime - 1 == e.DropTime.Hour && e.DropTime.Minute > 0))
 {
-e.Cancel = true;
+        e.Cancel = true;
 }
 }
 {% endhighlight %}
@@ -587,6 +588,14 @@ e.Cancel = true;
 Using [DragDropSettings](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~DragDropSettings.html) property of schedule, you can handle the behavior of drag and drop in Schedule.
 
 {% tabs %}
+{% highlight xaml %}
+<schedule:SfSchedule x:Name="schedule" ScheduleView="WeekView">
+    <schedule:SfSchedule.DragDropSettings>
+        <schedule:DragDropSettings AllowNavigate="true" AllowScroll="true" ShowTimeIndicator="true">
+    </schedule:DragDropSettings>
+</schedule:SfSchedule.DragDropSettings>
+</schedule:SfSchedule>
+{% endhighlight %}
 {% highlight c# %}
 DragDropSettings dragDropSettings = new DragDropSettings();
 dragDropSettings.AllowNavigate = true;
@@ -640,6 +649,18 @@ dragDropSettings.ShowTimeIndicator = false;
 Using [TimeIndicatorStyle](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DragDropSettings~TimeIndicatorStyle.html) property can handle the time indicator style which contains [TextColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.TimeIndicatorStyle~TextColor.html), [TextSize](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.TimeIndicatorStyle~TextSize.html) and [TextFormat](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.TimeIndicatorStyle~TextFormat.html).
 
 {% tabs %}
+{% highlight xaml %}
+<schedule:SfSchedule x:Name="schedule" ScheduleView="WeekView">
+    <schedule:SfSchedule.DragDropSettings>
+        <schedule:DragDropSettings>
+            <schedule:DragDropSettings.TimeIndicatorStyle>
+                <schedule:TimeIndicatorStyle TextColor="Red" TextSize="13" TextFormat="hh:mm">
+                </schedule:TimeIndicatorStyle>
+            </schedule:DragDropSettings.TimeIndicatorStyle>
+        </schedule:DragDropSettings>
+    </schedule:SfSchedule.DragDropSettings>
+</schedule:SfSchedule>
+{% endhighlight %}
 {% highlight c# %}
 TimeIndicatorStyle timeIndicatorStyle = new TimeIndicatorStyle();
 timeIndicatorStyle.TextColor = Color.Red;

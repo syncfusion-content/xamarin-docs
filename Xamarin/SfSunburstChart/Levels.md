@@ -24,7 +24,7 @@ The following code shows how to add hierarchical levels in the `Levels` collecti
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
        SunburstHierarchicalLevel level = new SunburstHierarchicalLevel();
        sunburstChart.Levels.Add(level);
@@ -51,7 +51,7 @@ The following code shows how to map the group member path.
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 SunburstHierarchicalLevel level1 = new SunburstHierarchicalLevel();
 level1.GroupMemberPath = "Level1";
@@ -90,7 +90,7 @@ The following code specifies the levels for data model specified in the getting 
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
             SfSunburstChart sunburst = new SfSunburstChart();           
             sunburst.SetBinding(SfSunburstChart.ItemsSourceProperty, "DataSource");

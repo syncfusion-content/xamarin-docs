@@ -246,7 +246,7 @@ The `GeoCoordinates` property allows to view the desired area at the center on l
 As [`ShapeFileLayer`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer.html), markers also can be added to imagery layer. Markers can be customized using the MarkerSettings property in imagery layer.
 The detailed explanation of marker and its customization has been provided in Markers section.
 
-% tabs %}
+{% tabs %}
 
 {% highlight xml %}
 

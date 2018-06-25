@@ -2343,6 +2343,42 @@ DoughnutSeries doughnutSeries = new DoughnutSeries()
 
 The small segments in the doughnut chart can be grouped into “others” category using the [`GroupTo`]() and [`GroupMode`]() properties of DoughnutSeries. The [`GroupMode`]() property is used to specify the grouping type based on slice angle, actual data point value, or percentage, and the [`GroupTo`]() property is used to set the limit to group data points into a single slice. The grouped segment is labeled as “Others” in legend and toggled as any other segment. The default value of the [`GroupTo`]() property is [`double.NAN`], and [`GroupMode']() property is Value.
 
+## Add view to the center of doughnut chart
+
+Any view can be added to the center of doughnut chart using the [`CenterView`]() property of [`DoughnutSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DoughnutSeries.html). The binding context of the [`CenterView`]() will be the respective [`DoughnutSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DoughnutSeries.html).
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:DoughnutSeries>
+...
+
+	<chart:DoughnutSeries.CenterView>
+		<StackLayout HorizontalOptions = "FillAndExpand" 
+		             VerticalOptions = "FillAndExpand">
+		...
+		</StackLayout>
+	</chart:DoughnutSeries.CenterView>
+...
+</chart:DoughnutSeries>
+	
+{% endhighlight %}
+
+{% highlight C# %}
+
+DoughnutSeries doughnutSeries = new DoughnutSeries()
+{
+	...
+}
+doughnutSeries.CenterView = new Label() { Text = "CenterView" };
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](charttypes_images/charttypes_img41.png)
+
 ## Pyramid Chart
 
 To render a pyramid chart, create an instance of [`PyramidSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.PyramidSeries.html) and add to the [`Series`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~Series.html) collection property of [`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the pyramid segment appearance.

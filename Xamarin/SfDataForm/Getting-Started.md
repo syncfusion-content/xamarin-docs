@@ -17,7 +17,6 @@ The SfDataForm control helps editing the data fields of any data object. It can 
 * Custom editor: Supports loading the custom editors.
 * Validation: Built-in support to validate the data based on the [INotifyDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.aspx) and data annotations. It also programmatically supports validation handling.
 
-
 # Getting started
 
 This section explains the quick overview to use the [SfDataForm](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm.html) for Xamarin.Forms in your application.
@@ -30,66 +29,13 @@ Eg: C:\Program Files (x86) \Syncfusion\Essential Studio\16.1.0.24\Xamarin\lib
 
 N> Assemblies can be found in unzipped package location in Mac.
 
-The following list of assemblies should be added as reference from the lib folder to use the `SfDataForm` in your application:
+### Adding SfDataForm Reference
 
-<table>
-<tr>
-<th>Project</th>
-<th>Required assemblies</th>
-</tr>
-<tr>
-<td>
-PCL
-</td>
-<td>
-Syncfusion.SfDataForm.XForms.dll<br/>Syncfusion.SfNumericTextBox.XForms.dll<br/>Syncfusion.SfNumericUpDown.XForms.dll<br/></td>
-</tr>
-<tr>
-<td>
-Android Renderer
-</td>
-<td>
-Syncfusion.SfDataForm.XForms.dll<br/>
-Syncfusion.SfDataForm.XForms.Android.dll<br/>
-Syncfusion.SfNumericTextBox.XForms.dll<br/>
-Syncfusion.SfNumericTextBox.XForms.Android.dll<br/>
-Syncfusion.SfNumericTextBox.Android.dll<br/>
-Syncfusion.SfNumericUpDown.XForms.dll<br/>
-Syncfusion.SfNumericUpDown.XForms.Android.dll<br/>
-Syncfusion.SfNumericUpDown.Android.dll<br/>
-</td>
-</tr>
-<tr>
-<td>
-iOS Renderer
-</td>
-<td>
-Syncfusion.SfDataForm.XForms.dll<br/>
-Syncfusion.SfDataForm.XForms.iOS.dll<br/>
-Syncfusion.SfNumericTextBox.XForms.dll<br/>
-Syncfusion.SfNumericTextBox.XForms.iOS.dll<br/>
-Syncfusion.SfNumericTextBox.iOS.dll<br/>
-Syncfusion.SfNumericUpDown.XForms.dll<br/>
-Syncfusion.SfNumericUpDown.XForms.iOS.dll<br/>
-Syncfusion.SfNumericUpDown.iOS.dll<br/>
-</td>
-</tr>
-<tr>
-<td>
-UWP Renderer
-</td>
-<td>
-Syncfusion.SfDataForm.XForms.dll<br/>
-Syncfusion.SfDataForm.XForms.UWP.dll<br/>
-Syncfusion.SfNumericTextBox.XForms.dll<br/>
-Syncfusion.SfNumericTextBox.XForms.UWP.dll<br/>
-Syncfusion.SfInput.UWP.dll<br/>
-Syncfusion.SfNumericUpDown.XForms.dll<br/>
-Syncfusion.SfNumericUpDown.XForms.UWP.dll<br/>
-Syncfusion.SfShared.UWP.dll<br/>
-</td>
-</tr>
-</table>
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfDataForm to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfDataForm](https://www.nuget.org/packages/Syncfusion.Xamarin.SfDataForm/), and then install it.
+
+![](SfDataForm_images/DataForm_NuGet.png)
+
+To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfdataform) to know about the dependent assemblies for SfDataForm.
 
 ## Launching the data form on each platform
 
@@ -118,19 +64,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ### Universal Windows Platform (UWP)
 
-To launch the data form in UWP, call the `SfDataFormRenderer.Init()` in the `MainPage` constructor before the LoadApplication is called, as demonstrated in the following code example:
-
-{% tabs %}
-{% highlight c# %}
-public MainPage()
-{
-    …
-    SfDataFormRenderer.Init();
-    LoadApplication (new App ());
-    …
-}
-{% endhighlight %}
-{% endtabs %}
+The UWP launches the data form without any initialization and is enough to only initialize the Xamarin.Forms Framework to launch the application.
 
 ### ReleaseMode issue in UWP platform
 
@@ -372,6 +306,8 @@ dataForm.DataObject = new ContactsInfo();
 Now, run the application to render the `data form` to edit the data object as in the following screenshot:
 
 ![](SfDataForm_images/Overview.png)
+
+You can download the entire source code of this demo for Xamarin.Forms from here [DataFormGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DataFormGettingStarted-125084677.zip).
 
 ## Defining editors
 

@@ -33,6 +33,17 @@ listView.LayoutManager.ScrollToRowIndex(index, true);
 {% endhighlight %}
 {% endtabs %}
 
+To display the `ScrollToRowIndex` method with position, follow the code.
+
+{% tabs %}
+{% highlight c# %}
+
+int index = listView.DataSource.DisplayItems.IndexOf(viewModel.Customers[2]); 
+listView.LayoutManager.ScrollToRowIndex(index, Syncfusion.ListView.XForms.ScrollToPosition.Center, true); 
+
+{% endhighlight %}
+{% endtabs %}
+
 ### Limitations
 
  * When [AutoFitMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AutoFitMode.html) is `Height` or grouping is enabled, the scroll animation will be disabled by default in Android and iOS platforms. 

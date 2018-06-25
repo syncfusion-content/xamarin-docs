@@ -2367,11 +2367,11 @@ Any view can be added to the center of doughnut chart using the [`CenterView`]()
 
 {% highlight C# %}
 
-DoughnutSereies doughnutSeries = new DoughnutSeries()
+DoughnutSeries doughnutSeries = new DoughnutSeries()
 {
 	...
 }
-doughnutSeries.Centerview = new Label() { Text = "CenterView" };
+doughnutSeries.CenterView = new Label() { Text = "CenterView" };
 
 {% endhighlight %}
 

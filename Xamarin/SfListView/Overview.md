@@ -37,11 +37,10 @@ The SfListView for Xamarin.Forms renders set of data items with Xamarin.Forms vi
 
  * Header and footer with sticky options.
 
- * Supports load more data automatically or manually at runtime when end of the list is reached.
+ * Supports to load more data either automatically or manually at bottom when end of the list is reached and manually at top.
 
  * Supports for macOS with existing features along with key navigation. 
 
- * Supports to load more data either automatically or manually at bottom when end of the list is reached and manually at top.
 
 ## Advantages of the SfListView over Xamarin.Forms ListView
  

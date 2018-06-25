@@ -8,13 +8,18 @@ documentation: ug
 ---
 # Load More
 
-The SfListView enables `Load More` view by setting the [SfListView.LoadMoreOption](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreOption.html), [SfListView.LoadMoreCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommand.html), and [IsBusy](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsBusy.html) properties. The `Load More` view will be displayed when reaching the end of the list and provides option to add the items at runtime.
+The SfListView enables `Load More` view by setting the [SfListView.LoadMoreOption](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreOption.html), [SfListView.LoadMoreCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommand.html), and [IsBusy](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsBusy.html) properties. This can be displayed either on the top or bottom of the view by setting the `SfListView.LoadMorePosition` property. This view will be displayed when reaching the end of the list when the `LoadMorePosition` is bottom. This provides an option to add the items at runtime. If the `SfListView.LoadMorePosition` property is set as top, the items will be loaded only by using the `LoadMoreOption.Manual` mode.
 
 The `SfListView.LoadMoreOption` property has three different modes of operation listed as follows:
 
  * None: Disables the load more button. This is the default value.
  * Manual: Displays the load more button when reaching the end of the list and execute `SfListView.LoadMoreCommand` when tapping the button.
  * Auto: Automatically execute the `SfListView.LoadMoreCommand` when reaching end of the list.
+
+The `SfListView.LoadMorePosition` property has two positions:
+
+* Top: Positioned on the top of list.
+* Bottom: Positioned on the bottom of list when reaching the end of the list. This is the default value.
 
 ## Load more automatically
 
@@ -161,7 +166,9 @@ private void AddProducts(int index, int count)
 
 ## Show loading indicator
 
-The [SfListView.LoadMoreIndicator](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LoadMoreIndicator.html) will be displayed when loading more items into the list. Before loading more items, change the visibility of `LoadMoreIndicator` by setting the [SfListView.IsBusy](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsBusy.html) property to `true`. After loading more items, reset to `false`. 
+The [SfListView.LoadMoreIndicator](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LoadMoreIndicator.html) will be displayed when loading more items in the list.
+
+Binding the [SfListView.IsBusy](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsBusy.html) property is mandatory, because converter is used for this property to interchange the visibility of the button and busy indicator while creating default load more view. While binding the property for `SfListView.IsBusy`, the name of the ViewModel property should be `IsBusy`. You can either change the ViewModel property or `SfListView.IsBusy` property while adding items. It is mandatory to change the `IsBusy` value before and after adding items to the list.
 
 {% tabs %}
 {% highlight c# %}
@@ -180,7 +187,11 @@ private async void LoadMoreItems(object obj)
 
 Download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LoadMoreUG978011112).
 
+Items can be loaded either on the top or bottom of the view.
+
 ![](SfListView_images/SfListView-LoadMore.gif)
+
+![](SfListView_images/SfListView-TopLoadMore.gif)
 
 ## Load more view customization
 

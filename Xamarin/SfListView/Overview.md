@@ -41,6 +41,8 @@ The SfListView for Xamarin.Forms renders set of data items with Xamarin.Forms vi
 
  * Supports for macOS with existing features along with key navigation. 
 
+ * Supports to load more data either automatically or manually at bottom when end of the list is reached and manually at top.
+
 ## Advantages of the SfListView over Xamarin.Forms ListView
  
  * Horizontal orientation support.

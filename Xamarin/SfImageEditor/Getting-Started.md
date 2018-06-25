@@ -20,6 +20,8 @@ To know more about obtaining our components, refer to these links: [Mac](https:/
 
 N>Install the same version of the image editor NUGET in all the projects.
 
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
+
 ## Launching the application in iOS with image editor
 
 To use the image editor inside iOS application, it requires some additional configurations such as,

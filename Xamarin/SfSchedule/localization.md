@@ -109,17 +109,35 @@ The procedure for creating Resources(.resw) file is as follows:
 ![](Localization_images/Localization_XFUWP.png)
 
 ## Localizing custom strings from pcl
-You can localize the custom strings (All Day, No Events) used in the schedule control from pcl. By providing custom strings to the specific language resx file in the Resources folder of pcl and handling the current required culture with the locale instead of device language using DependencyService in sample level.
+You can localize the custom strings (All Day, No Events) used in the schedule control from PCL. By providing the custom strings to the specific language resx file and handling the required culture with the locale using DependencyService instead of device language. In the below code we have set French as Schedule locale as well as custom strings.
+
+{% tabs %}
+{% highlight c# %}
+
+if (schedule.Locale == "fr")
+{
+    if (Device.RuntimePlatform == Device.iOS || Device.RuntimePlatform == Device.Android)
+    {
+        DependencyService.Get<ILocalize>().SetLocale(new CultureInfo("fr"));
+    }
+    else
+    {
+        CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("fr");
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 You can download the entire source code of this demo for Xamarin.Forms from
 here [Localization](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization_Forms-1564080177.zip).
 
-### Add resx file in the Resources folder in pcl
-You need to add the required resx files under the Resources folder in the PCL project and the filename should be Syncfusion.SfSchedule.Forms.LanguageCode.resx.
+### Adding resx file
+You need to add the required resx files under the Resources folder in the PCL project and the filename should be `Syncfusion.SfSchedule.Forms.LanguageCode.resx`.
 
-Example: For French, Syncfusion.SfSchedule.Forms.fr.resx
+Example: For French, `Syncfusion.SfSchedule.Forms.fr.resx`
 
-Now set Build Action as EmbeddedResource for Syncfusion.SfSchedule.Forms.fr.resx and Build Action as Compile for Syncfusion.SfSchedule.Forms.fr.Designer.cs.
+Now set the Build Action as EmbeddedResource for `Syncfusion.SfSchedule.Forms.fr.resx` file and Build Action as Compile for `Syncfusion.SfSchedule.Forms.fr.Designer.cs` file.
 
 {% tabs %}
 {% highlight xaml %}
@@ -132,7 +150,7 @@ Now set Build Action as EmbeddedResource for Syncfusion.SfSchedule.Forms.fr.resx
 {% endhighlight %}
 {% endtabs %}
 
-### Add ILocalize interface in pcl
+### Adding ILocalize interface in PCL
 You need to add the ILocalize interface to convert the platform-specific locales to a value supported in .NET cultures in the PCL project.
 
 {% tabs %}
@@ -177,8 +195,8 @@ You need to add the ILocalize interface to convert the platform-specific locales
 {% endhighlight %}
 {% endtabs %}
 
-### Add Localize class in Android and iOS project inheriting from ILocalize
-You need to add the Localize class in Android and iOS project inheriting from ILocalize. We got the CultureInfo and set the same to Schedule Locale by using `GetCurrentCultureInfo` and `SetLocale` in this. For UWP, no sample level changes required.
+### Adding Localize class in Android and iOS project inheriting from ILocalize
+You need to add the Localize class in Android and iOS project inheriting from ILocalize. We got the CultureInfo and set the same to Schedule Locale by using `GetCurrentCultureInfo` and `SetLocale`. For UWP, no sample level changes required.
 
 Localize class for Android project,
 
@@ -335,24 +353,4 @@ Localize class for iOS project,
 {% endhighlight %}
 {% endtabs %}
 
-### Setting locale to the custom strings in sample level
-You can set the required locale in the sample by accessing from the Resources folder of PCL, In the below code we have set French as Schedule locale as well custom strings.
-
-{% tabs %}
-{% highlight c# %}
-
-    if (schedule.Locale == "fr")
-    {
-        if (Device.RuntimePlatform == Device.iOS || Device.RuntimePlatform == Device.Android)
-        {
-            DependencyService.Get<ILocalize>().SetLocale(new CultureInfo("fr"));
-        }
-        else
-        {
-            CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("fr");
-        }
-    }
-
-{% endhighlight %}
-{% endtabs %}
 

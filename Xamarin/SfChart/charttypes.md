@@ -2351,19 +2351,21 @@ Any view can be added to the center of doughnut chart using the [`CenterView`]()
 
 {% highlight xaml %}
 
-<chart:DoughnutSeries >
-…
-   <chart:DoughnutSeries.CenterView>
-       <StackLayout HorizontalOptions = "FillAndExpand"  VerticalOptions = "FillAndExpand"> 
-            …….
-            …….
-            …….
-            …….
-          </StackLayout>
-   </chart:DoughnutSeries.CenterView>
-…
-</chart:DoughnutSeries>
+<chart:DoughnutSeries>
+...
 
+	<chart:DoughnutSeries.CenterView>
+		<StackLayout HorizontalOptions = "FillAndExpand" 
+		             VerticalOptions = "FillAndExpand">
+		....
+		....
+		....
+		....
+		</StackLayout>
+	</chart:DoughnutSeries.CenterView>
+...
+</chart:DoughnutSeries>
+	
 {% endhighlight %}
 
 {% endtabs %}

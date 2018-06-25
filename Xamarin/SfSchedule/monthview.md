@@ -24,6 +24,7 @@ schedule.ScheduleView = ScheduleView.MonthView;
 
 ![](monthview_images/monthview.png)
 
+
 ## Month Appointment indicator
 In `MonthView`, appointments are not viewed in the month cell instead appointment indicators are drawn. You can customize the number of appointment indicators displayed in month cell using  [AppointmentIndicatorCount](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~AppointmentIndicatorCount.html) property of [MonthViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~MonthViewSettings.html) in `SfSchedule`, by default Appointment indicator count is 3.
 
@@ -78,6 +79,22 @@ schedule.MonthViewSettings = monthViewSettings;
 `AppointmentDisplayMode` support applicable only for XForms UWP(Desktop) platform.
 
 ![](monthview_images/appointmentdisplay.png)
+
+### Month Appointment display count
+AppointmentDisplayCount value used to define the maximum number of the appointment to be displayed in a month cell in month view. If AppointmentDisplayCount value is 1 and the month cell have more than 1 appointments, single appointment will be displayed and remaining appointments in month cell will be displayed as more appointments. By clicking more option schedule navigate to day view by default. 
+
+#### Disable navigation to DayView
+You can disable the navigation to dayview by triggering the CellTappedEvent and set the argument CancelNavigation value as true. For, ensuring whether you was tapped month cell or more appointments  using IsMoreAppointments argument.
+
+monthViewSettings.AppointmentDisplayCount = 1;
+monthViewSettings.AppointmentDisplayMode = AppointmentDisplayMode.Appointment; 
+schedule.CellTapped += Schedule_CellTapped;
+private void Schedule_CellTapped(object sender, CellTappedEventArgs e)
+{
+	var appointments = e.IsMoreAppointments;
+	e.CancelNavigation = true;   
+} 
+
 
 ## Month InlineView
 You can use [ShowAppointmentsInline](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ShowAppointmentsInline.html) bool property in `SfSchedule` to enable / disable the month inline view, by setting `ShowAppointmentsInline` property as `true` you can view the Appointments in the specific date. 

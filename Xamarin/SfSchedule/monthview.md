@@ -85,6 +85,8 @@ schedule.MonthViewSettings = monthViewSettings;
 #### Disable navigation to DayView
 You can disable the navigation to day view by triggering the CellTappedEvent and set the argument `CancelNavigation` value as true. `IsMoreAppointments` argument is used to determine whether the month cell more appointments count element has been tapped or not while the appointment display mode as Appointment.
 
+{% tabs %}
+{% highlight c# %}
 monthViewSettings.AppointmentDisplayCount = 1;
 monthViewSettings.AppointmentDisplayMode = AppointmentDisplayMode.Appointment; 
 schedule.CellTapped += Schedule_CellTapped;
@@ -93,7 +95,8 @@ private void Schedule_CellTapped(object sender, CellTappedEventArgs e)
 	IsMoreElementTapped = e.IsMoreAppointments;
 	e.CancelNavigation = true;
 } 
-
+{% endhighlight %}
+{% endtabs %}
 
 ## Month InlineView
 You can use [ShowAppointmentsInline](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ShowAppointmentsInline.html) bool property in `SfSchedule` to enable / disable the month inline view, by setting `ShowAppointmentsInline` property as `true` you can view the Appointments in the specific date. 

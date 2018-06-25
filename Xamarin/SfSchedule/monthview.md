@@ -50,6 +50,35 @@ If appointments count are lesser than the AppointmentIndicatorCount value in the
 
 ![](monthview_images/appointmentindicator.png)
 
+## Month Appointment display mode
+You can handle the schedule month view appointment display by using [AppointmentDisplayMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~AppointmentDisplayMode.html) property of `MonthViewSettings`. By default `AppointmentDisplayMode` is set as `Indicator`, using the `AppointmentDisplayMode` you can set the month view appointments display as follows.
+
+`Indicator` - appointment will be denoted as the circle.
+`Appointment`  - appointment subject will be displayed in month cell.
+`None`  - appointment will not be displayed.
+
+{% tabs %}
+{% highlight xaml %}
+<schedule:SfSchedule x:Name="schedule" ScheduleView="MonthView">
+    <schedule:SfSchedule.MonthViewSettings>
+        <schedule:MonthViewSettings
+            AppointmentDisplayMode="Appointment" >
+        </schedule:MonthViewSettings>
+    </schedule:SfSchedule.MonthViewSettings>
+</schedule:SfSchedule>
+{% endhighlight %}
+{% highlight c# %}
+MonthViewSettings monthViewSettings = new MonthViewSettings();
+monthViewSettings.AppointmentDisplayMode = AppointmentDisplayMode.Appointment;
+schedule.MonthViewSettings = monthViewSettings;
+{% endhighlight %}
+{% endtabs %}
+
+>**NOTE**
+`AppointmentDisplayMode` support applicable only for XForms UWP(Desktop) platform.
+
+![](monthview_images/appointmentdisplay.png)
+
 ## Month InlineView
 You can use [ShowAppointmentsInline](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ShowAppointmentsInline.html) bool property in `SfSchedule` to enable / disable the month inline view, by setting `ShowAppointmentsInline` property as `true` you can view the Appointments in the specific date. 
 

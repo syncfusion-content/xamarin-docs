@@ -9,7 +9,7 @@ documentation: ug
 
 ---
 
-## TimeZone
+# TimeZone
 
 Schedule allows you to create appointments in various time zones and display them in the user's time zone or any other time zone. Appointments are rendered by recalculating Start and End time based on given time zone.
 

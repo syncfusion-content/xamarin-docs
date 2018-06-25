@@ -40,11 +40,11 @@ circularProgressBar.EndAngle = 360;
 
 ## Range colors
 
-You can also visualize multiple ranges with different colors that are mapped to each range to enhance readability of progress.
+You can also visualize multiple ranges with different colors that are mapped to each range to enhance readability of progress.This visual customization can be applied only for linear progress bar.
 
 The colors can be mapped to the specific ranges using the [`RangeColors`](https://help.syncfusion.com/cr/cref_files/xamarin/sfprogressbar/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.SfLinearProgressBar~RangeColors.html) property in the linear progress bar. It holds a collection of  [`RangeColor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfprogressbar/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.RangeColor.html) in linear progress bar. 
 
-The following properties in RangeColor[link] are used to map the colors to range:
+The following properties in [`RangeColor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfprogressbar/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.RangeColor.html) are used to map the colors to range:
 
 * [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/sfprogressbar/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.RangeColor~Color.html): Represents the color to the specified range.
 * [`Start`](https://help.syncfusion.com/cr/cref_files/xamarin/sfprogressbar/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.RangeColor~Start.html): Represents the start range of the color.
@@ -59,21 +59,21 @@ The following code example shows mapping the solid color range in the linear pro
 
 <progressBar:SfLinearProgressBar Progress="100">
 
-<progressBar:SfLinearProgressBar.RangeColors>
+ <progressBar:SfLinearProgressBar.RangeColors>
 
-<progressBar:RangeColorCollection>
+   <progressBar:RangeColorCollection>
 
-<progressBar:RangeColor Color="#00bdaf" Start="0" End="25"/>
+      <progressBar:RangeColor Color="#00bdaf" Start="0" End="25"/>
 
-<progressBar:RangeColor Color="#2f7ecc" Start="25" End="50"/>
+      <progressBar:RangeColor Color="#2f7ecc" Start="25" End="50"/>
 
-<progressBar:RangeColor Color="#e9648e" Start="50" End="75"/>
+      <progressBar:RangeColor Color="#e9648e" Start="50" End="75"/>
 
-<progressBar:RangeColor Color="#fbb78a" Start="75" End="100"/>
+      <progressBar:RangeColor Color="#fbb78a" Start="75" End="100"/>
 
-</progressBar:RangeColorCollection>
+    </progressBar:RangeColorCollection>
 
-</progressBar:SfLinearProgressBar.RangeColors>
+   </progressBar:SfLinearProgressBar.RangeColors>
 
 </progressBar:SfLinearProgressBar>
 
@@ -106,19 +106,19 @@ The following code example shows how to apply gradient transition effect to the 
 {% highlight xaml %}
 <progressBar:SfLinearProgressBar Progress="100" >
 
-<progressBar:SfLinearProgressBar.RangeColors>
+   <progressBar:SfLinearProgressBar.RangeColors>
 
-<progressBar:RangeColorCollection>
+     <progressBar:RangeColorCollection>
 
-<progressBar:RangeColor IsGradient="True" Color="#88A0D9EF" Start="0" End="25"/>
+        <progressBar:RangeColor IsGradient="True" Color="#88A0D9EF" Start="0" End="25"/>
 
-<progressBar:RangeColor IsGradient="True" Color="#AA62C1E5" Start="25" End="50"/>
+        <progressBar:RangeColor IsGradient="True" Color="#AA62C1E5" Start="25" End="50"/>
 
-<progressBar:RangeColor IsGradient="True" Color="#DD20A7DB" Start="50" End="75"/>
+        <progressBar:RangeColor IsGradient="True" Color="#DD20A7DB" Start="50" End="75"/>
 
-<progressBar:RangeColor IsGradient="True" Color="#FF1C96C5" Start="75" End="100"/>
+        <progressBar:RangeColor IsGradient="True" Color="#FF1C96C5" Start="75" End="100"/>
 
-</progressBar:RangeColorCollection>
+   </progressBar:RangeColorCollection>
 
 </progressBar:SfLinearProgressBar.RangeColors>
 
@@ -199,22 +199,9 @@ The following code example shows how to customize the appearance of circular pro
 
 <!--Circular progress bar with radius customization -->
 
-<progressBar:SfCircularProgressBar x:Name="TrackOutsideProgressBar"
-
-Grid.Column="0"
-
-Grid.Row="0"
-
-Progress="75"
-
-Margin="0,10,0,0"
-
-IndicatorOuterRadius="0.7"
-
-IndicatorInnerRadius="0.65"
-
-ShowProgressValue="False">
-
+<progressBar:SfCircularProgressBar x:Name="TrackOutsideProgressBar" Grid.Column="0" Grid.Row="0"
+                                   Progress="75" Margin="0,10,0,0" IndicatorOuterRadius="0.7" 
+                                   IndicatorInnerRadius="0.65" ShowProgressValue="False">
 </progressBar:SfCircularProgressBar>       
 
 {% endhighlight %}

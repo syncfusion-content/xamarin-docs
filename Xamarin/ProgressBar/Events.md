@@ -28,15 +28,15 @@ The following code example shows how to customize the color of a progress indica
 
 {% highlight c# %}
 private void ProgressBarBase_OnValueChanged(object sender, ProgressValueEventArgs e)
-{
-if (e.Progress < 50)
-{
-this.LinearProgressBar.ProgressColor = Color.Red;
-}
-else if (e.Progress >= 50)
-{
-this.LinearProgressBar.ProgressColor = Color.Green;
-}
+{   
+    if (e.Progress < 50)
+    {
+        this.LinearProgressBar.ProgressColor = Color.Red;
+    }
+    else if (e.Progress >= 50)
+    {
+        this.LinearProgressBar.ProgressColor = Color.Green; 
+    }
 }
 
 {% endhighlight %}
@@ -57,11 +57,11 @@ The following code example shows how to customize the progress bar when progress
 
 <progressBar:SfCircularProgressBar x:Name="CircularProgressBar" Minimum="100" Maximum="500" Progress="500" ProgressCompleted="ProgressBarBase_OnProgressCompleted" >
 
-<progressBar:SfCircularProgressBar.Content>
+    <progressBar:SfCircularProgressBar.Content>
 
-<Label Text="Start" FontSize="15" x:Name="Label"></Label>
+        <Label Text="Start" FontSize="15" x:Name="Label"></Label>
 
-</progressBar:SfCircularProgressBar.Content>
+    </progressBar:SfCircularProgressBar.Content>
 
 </progressBar:SfCircularProgressBar>
 
@@ -71,11 +71,11 @@ The following code example shows how to customize the progress bar when progress
 
 private void ProgressBarBase_OnProgressCompleted(object sender, ProgressValueEventArgs e)
 {
-if (e.Progress.Equals(this.CircularProgressBar.Maximum))
-{
-// Changed the label text when progress reaches maximum value.
-this.Label.Text = "Completed";
-}
+    if (e.Progress.Equals(this.CircularProgressBar.Maximum))
+    {
+        // Changed the label text when progress reaches maximum value.
+        this.Label.Text = "Completed";  
+    }
 }
 {% endhighlight %}
 

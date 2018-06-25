@@ -83,7 +83,7 @@ schedule.MonthViewSettings = monthViewSettings;
 [AppointmentDisplayCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~AppointmentDisplayCount.html) used to define the maximum number of the appointment to be displayed in a month cell in month view. If `AppointmentDisplayCount` value is 1 and the month cell have more than 1 appointments, single appointment will be displayed and remaining appointments in month cell will be displayed as more appointments. By clicking more option schedule navigate to day view by default.
 
 #### Disable navigation to DayView
-You can disable the navigation to day view by triggering the CellTappedEvent and set the argument `CancelNavigation` value as true. For, ensuring whether you was tapped month cell or more appointments  using `IsMoreAppointments` argument.
+You can disable the navigation to day view by triggering the CellTappedEvent and set the argument `CancelNavigation` value as true. `IsMoreAppointments` argument is used to determine whether the month cell more appointments count element has been tapped or not while the appointment display mode as Appointment.
 
 monthViewSettings.AppointmentDisplayCount = 1;
 monthViewSettings.AppointmentDisplayMode = AppointmentDisplayMode.Appointment; 

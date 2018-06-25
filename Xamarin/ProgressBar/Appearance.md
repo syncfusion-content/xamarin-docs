@@ -120,7 +120,9 @@ The following code example shows how to apply gradient transition effect to the 
 
    </progressBar:RangeColorCollection>
 
-</progressBar:SfLinearProgressBar.RangeColors>
+  </progressBar:SfLinearProgressBar.RangeColors>
+
+</progressBar:SfLinearProgressBar>
 
 {% endhighlight %}
 

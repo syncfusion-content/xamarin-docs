@@ -19,24 +19,28 @@ Following are the list of options available to show SfPopupLayout at various pos
 <th> Description </th>
 </tr>
 <tr>
-<td> {{'[SfPopupLayout.IsOpen](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~IsOpen.html)'| markdownify }} </td>
+<td> {{'[SfPopupLayout.IsOpen](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~IsOpen.html)'| markdownify }} </td>
 <td> Shows the SfPopupLayout at center.</td>
 </tr>
 <tr>
-<td> {{'[SfPopupLayout.Show()](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Show.html)'| markdownify }} </td>
+<td> {{'[SfPopupLayout.Show()](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Show.html)'| markdownify }} </td>
 <td> Similar as <code>SfPopupLayout.IsOpen</code> property.</td>
 </tr>
 <tr>
-<td> {{'[SfPopupLayout.Show(x-position, y-position)](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Show.html)'| markdownify }} </td>
+<td> {{'[SfPopupLayout.Show(x-position, y-position)](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Show.html)'| markdownify }} </td>
 <td> Shows the SfPopupLayout at the specified X and y positions.</td>
 </tr>
 <tr>
-<td> {{'[SfPopupLayout.ShowAtTouchPoint()](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~ShowAtTouchPoint.html)'| markdownify }} </td>
+<td> {{'[SfPopupLayout.ShowAtTouchPoint()](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~ShowAtTouchPoint.html)'| markdownify }} </td>
 <td> Shows the SfPopupLayout at the touch point.</td>
 </tr>
 <tr>
-<td> {{'[SfPopupLayout.ShowRelativeToView(View, RelativePosition)](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~ShowRelativeToView.html)'| markdownify }} </td>
+<td> {{'[SfPopupLayout.ShowRelativeToView(View, RelativePosition)](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~ShowRelativeToView.html)'| markdownify }} </td>
 <td> Shows the SfPopupLayout at the position relative to the specified view.</td>
+</tr>
+<tr>
+<td> {{'[SfPopupLayout.ShowRelativeToView(View, RelativePosition,x-position,y-position)](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~ShowRelativeToView(View,RelativePosition,Double,Double).html)'| markdownify }} </td>
+<td> Shows the SfPopupLayout at an absolute x,y coordinate, from the relative position of the specified view.</td>
 </tr>
 </table>
 
@@ -92,8 +96,6 @@ namespace GettingStarted
 Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
 ![](GettingStarted_images/IsOpen_Property.png)
-
-N> SfPopupLayout.IsOpen property is not applicable for `Displaying pop-up when the SfPopupLayout is not set as root view`.
 
 ### SfPopupLayout.Show()
 
@@ -246,8 +248,6 @@ Executing the above codes renders the following output in iOS, Android and Windo
 
 ![](GettingStarted_images/ShowAtTouchPoint.png)
 
-N> SfPopupLayout.ShowAtTouchPoint() is not applicable for `Displaying pop-up when the SfPopupLayout is not set as root view`.
-
 ## Relative positioning
 
 SfPopupLayout can be shown at the relative position by using the following method.
@@ -303,3 +303,63 @@ namespace GettingStarted
 Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
 ![](GettingStarted_images/RelativeToBottom.png)
+
+### Absolute relative positioning
+
+Along with the relative positioning SfPopupLayout can be displayed at an absolute x,y coordinate, from the relative position of the specified view by using the following method.
+
+#### SfPopupLayout.ShowRelativeToView(View, RelativePosition,x-position,y-position)
+
+To open the SfPopupLayout in specific X,Y coordinates relative to a view, use the `SfPopupLayout.ShowRelativeToView(View, RelativePosition,x-position,y-position)` property as shown in the following code snipppet.
+
+ {% highlight xaml %}
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GettingStarted"
+             x:Class="GettingStarted.MainPage" 
+             Padding="0,200,0,0"
+             xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms">
+<sfPopup:SfPopupLayout x:Name="popUpLayout">
+   <sfPopup:SfPopupLayout.Content>
+    <StackLayout x:Name="mainLayout" VerticalOptions="StartAndExpand" HorizontalOptions="Start">
+        <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand">
+          <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" TextColor="White" HeightRequest="60" VerticalOptions="Start" Margin="50,0,0,0"
+            HorizontalOptions="StartAndExpand" BackgroundColor="Blue" />
+        </StackLayout>
+     </StackLayout>
+    </sfPopup:SfPopupLayout.Content>
+  </sfPopup:SfPopupLayout>
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+using Syncfusion.XForms.PopupLayout;
+
+namespace GettingStarted
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            clickToShowPopup.Clicked += ClickToShowPopup_Clicked;
+        }
+
+        private void ClickToShowPopup_Clicked(object sender, EventArgs e)
+        {
+            // Shows SfPopupLayout at the bottom of the label and with absolute relative position.
+              popupLayout.ShowRelativeToView(label, RelativePosition.AlignBottom,50,50);
+        }
+    }
+}
+{% endhighlight %}
+
+Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively
+
+![](GettingStarted_images/AbsoluteRelativePosition.png)
+
+You can pass both negative and positive value as parameters to the `SfPopupLayout.ShowRelativeToView(View, RelativePosition,x-position,y-position)`.The popup will be positioned cosidering the relative poistion as as the (0,0) center point. For example if we have set the `RelativePosition` as `RelativePosition.BottomRight` and `RelativeView` as a Button, the button's bottom right corner will be considered as the 0,0 point and a negative x-poisiton value will place the popup to the left of that point and a positive x-poistion value will place the popup to the right of that point. The same applies for y-position also.
+
+N> To open the SfPopupLayout relative to a view without absolute position, you have to pass the x-postion and y-position parameters as 0 in the `SfPopupLayout.ShowRelativeToView(View, RelativePosition,x-position,y-position)`.

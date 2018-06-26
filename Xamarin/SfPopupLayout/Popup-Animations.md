@@ -18,23 +18,31 @@ SfPopupLayout has different animation modes as listed below.
 <th> Description </th>
 </tr>
 <tr>
-<td> {{'[Zoom](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AnimationMode.html)'| markdownify }} </td>
-<td>  Zoom-out animation will be applied if the PopupView opens and zoom-in animation will be applied if the PopupView closes. This is the default AnimationMode</td>
+<td> {{'[Zoom](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AnimationMode.html)'| markdownify }} </td>
+<td>  Zoom-out animation will be applied when the PopupView opens and zoom-in animation will be applied when the PopupView closes. This is the default AnimationMode</td>
 </tr>
 <tr>
-<td> {{'[Fade](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AnimationMode.html)'| markdownify }} </td>
-<td>  Fade-out animation will be applied if the PopupView opens and Fade-in animation will be applied if the PopupView closes</td>
+<td> {{'[Fade](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AnimationMode.html)'| markdownify }} </td>
+<td>  Fade-out animation will be applied when the PopupView opens and Fade-in animation will be applied when the PopupView closes</td>
 </tr>
 <tr>
-<td> {{'[SlideOnLeft](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AnimationMode.html)'| markdownify }} </td>
-<td>  PopupView will be animated from left-to-right, when it opens and it will be animated from right-to-left when the PopupView closes.</td>
+<td> {{'[SlideOnLeft](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AnimationMode.html)'| markdownify }} </td>
+<td>  PopupView will be animated from left-to-right, when it opens and from right-to-left when the PopupView closes.</td>
 </tr>
 <tr>
-<td> {{'[SlideOnTop](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AnimationMode.html)'| markdownify }} </td>
-<td>  PopupView will be animated from top-to-bottom, when it opens and it will be animated from bottom-to-top when the PopupView closes.</td>
+<td> `SlideOnRight` </td>
+<td>  PopupView will be animated from right-to-left, when it opens and from left-to-right when the PopupView closes.</td>
 </tr>
 <tr>
-<td> {{'[None](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AnimationMode.html)'| markdownify }} </td>
+<td> {{'[SlideOnTop](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AnimationMode.html)'| markdownify }} </td>
+<td>  PopupView will be animated from top-to-bottom, when it opens and from bottom-to-top when the PopupView closes.</td>
+</tr>
+<tr>
+<td> `SlideOnBottom` </td>
+<td>  PopupView will be animated from bottom-to-top, when it opens and from top-to-bottom when the PopupView closes.</td>
+</tr>
+<tr>
+<td> {{'[None](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AnimationMode.html)'| markdownify }} </td>
 <td>  Animation will not be applied.</td>
 </tr>
 </table>
@@ -43,7 +51,7 @@ N> Setting of AnimationMode is same for both `Displaying pop-up when the SfPopup
 
 ## Zoom 
 
-Zoom-out animation will be applied if the PopupView opens and Zoom-in animation will be applied if the PopupView closes.
+Zoom-out animation will be applied when the PopupView opens and Zoom-in animation will be applied when the PopupView closes.
 
 {% highlight c# %}
 //MainPage.cs
@@ -63,7 +71,7 @@ Executing the above codes renders the following output in iOS, Android and Windo
 
 ## Fade 
 
-Fade-out animation will be applied if the PopupView opens and Fade-in animation will be applied if the PopupView closes
+Fade-out animation will be applied when the PopupView opens and Fade-in animation will be applied when the PopupView closes
 
 {% highlight c# %}
 //MainPage.cs
@@ -83,7 +91,7 @@ Executing the above codes renders the following output in iOS, Android and Windo
 
 ## SlideOnLeft 
 
-PopupView will be animated from left-to-right, when it opens and it will be animated from right-to-left when the PopupView closes.
+PopupView will be animated from left-to-right, when it opens and from right-to-left when the PopupView closes.
 
 {% highlight c# %}
 //MainPage.cs
@@ -101,9 +109,29 @@ Executing the above codes renders the following output in iOS, Android and Windo
 
 ![](GettingStarted_images/SlideOnLeftAnimation.gif)
 
+## SlideOnRight
+
+PopupView will be animated from right-to-left, when it opens and from left-to-right when the PopupView closes.
+
+{% highlight c# %}
+//MainPage.cs
+
+public MainPage()
+{
+    ....
+    InitializeComponent();
+    popupLayout.PopupView.AnimationMode = AnimationMode.SlideOnRight;
+    ....
+}
+{% endhighlight %}
+
+Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
+
+![](GettingStarted_images/SlideOnRightAnimation.gif)
+
 ## SlideOnTop 
 
-PopupView will be animated from top-to-bottom, when it opens and it will be animated from bottom-to-top when the PopupView closes.
+PopupView will be animated from top-to-bottom, when it opens and from bottom-to-top when the PopupView closes.
 
 {% highlight c# %}
 //MainPage.cs
@@ -120,6 +148,26 @@ public MainPage()
 Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
 ![](GettingStarted_images/SlideOnTopAnimation.gif)
+
+## SlideOnBottom
+
+PopupView will be animated from bottom-to-top, when it opens and from top-to-bottom when the PopupView closes.
+
+{% highlight c# %}
+//MainPage.cs
+
+public MainPage()
+{
+    ....
+    InitializeComponent();
+    popupLayout.PopupView.AnimationMode = AnimationMode.SlideOnBottom;
+    ....
+}
+{% endhighlight %}
+
+Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
+
+![](GettingStarted_images/SlideOnBottomAnimation.gif)
 
 ## None
 

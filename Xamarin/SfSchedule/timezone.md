@@ -18,7 +18,10 @@ Consider the following scenario you are in North Carolina and you want to set up
 You can set specific time zone to schedule by using [TimeZone](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~TimeZone.html) Property of schedule. 
 {% tabs %}
 {% highlight XAML %}
-<syncfusion:SfSchedule x:Name="schedule"  TimeZone="GMT Standard Time"></schedule:SfSchedule>
+<syncfusion:SfSchedule 
+	x:Name="schedule"  
+	TimeZone="GMT Standard Time">
+</schedule:SfSchedule>
 {% endhighlight %}
 {% highlight c# %}
 schedule.TimeZone = "GMT Standard Time";

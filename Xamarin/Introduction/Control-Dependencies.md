@@ -118,7 +118,7 @@ This page lists the assemblies required for each control to be referred in each 
 <td>Syncfusion.Data.Portable.dll<br/>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.SfDataGrid.XForms.dll<br/>Syncfusion.SfDataGrid.XForms.UWP.dll<br/>Syncfusion.SfInput.UWP.dll<br/>Syncfusion.SfShared.UWP.dll<br/>Syncfusion.SfNumericTextBox.XForms.UWP.dll<br/>Syncfusion.SfNumericTextBox.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 <td>macOS</td>
-<td>Syncfusion.Data.Portable.dll<br/>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.SfDataGrid.XForms.dll<br/>Syncfusion.SfDataGrid.XForms.120.dll<br/>Syncfusion.Licensing.dll<br/></td>
+<td>Syncfusion.Data.Portable.dll<br/>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.SfDataGrid.XForms.dll<br/>Syncfusion.SfDataGrid.XForms.macOS.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 </table>
 

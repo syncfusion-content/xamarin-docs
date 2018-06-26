@@ -10,7 +10,7 @@ documentation: ug
 # Popup Animations
 
 Built-in animations are available in SfPopupLayout, which is applied when the PopupView opens and closes in the screen.
-The SfPopupLayout has different animation modes as listed as follows:
+The SfPopupLayout has different animation modes as listed below:
 
 * [Zoom](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AnimationMode.html)
 * [Fade](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AnimationMode.html)

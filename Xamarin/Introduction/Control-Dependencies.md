@@ -220,19 +220,19 @@ This page lists the assemblies required for each control to be referred in each 
 <table>
 <tr>
 <td>PCL</td>
-<td>Syncfusion.Compression.Portable.dll<br/>Syncfusion.Pdf.Portable.dll<br/>Syncfusion.SfPdfViewer.XForms.dll<br/>Syncfusion.SfBusyIndicator.XForms.dll<br/></td>
+<td>Syncfusion.Compression.Portable.dll<br/>Syncfusion.Pdf.Portable.dll<br/>Syncfusion.SfPdfViewer.XForms.dll<br/>Syncfusion.SfBusyIndicator.XForms.dll<br/>Syncfusion.SfRangeSlider.XForms.dll<br/></td>
 </tr>
 <tr>
 <td>Android</td>
-<td>Syncfusion.Compression.Portable.dll<br/>Syncfusion.Pdf.Portable.dll<br/>Syncfusion.SfPdfViewer.XForms.dll<br/>Syncfusion.SfPdfViewer.XForms.Android.dll<br/>Syncfusion.SfBusyIndicator.XForms.dll<br/>Syncfusion.SfBusyIndicator.XForms.Android.dll<br/>Syncfusion.SfBusyIndicator.Android.dll<br/></td>
+<td>Syncfusion.Compression.Portable.dll<br/>Syncfusion.Pdf.Portable.dll<br/>Syncfusion.SfPdfViewer.XForms.dll<br/>Syncfusion.SfPdfViewer.XForms.Android.dll<br/>Syncfusion.SfBusyIndicator.XForms.dll<br/>Syncfusion.SfBusyIndicator.XForms.Android.dll<br/>Syncfusion.SfBusyIndicator.Android.dll<br/>Syncfusion.SfRangeSlider.XForms.dll<br/> Syncfusion.SfRangeSlider.XForms.Android.dll<br/></td>
 </tr>
 <tr>
 <td>iOS</td>
-<td>Syncfusion.Compression.Portable.dll<br/>Syncfusion.Pdf.Portable.dll<br/>Syncfusion.SfPdfViewer.XForms.dll<br/>Syncfusion.SfPdfViewer.XForms.iOS.dll<br/>Syncfusion.SfBusyIndicator.XForms.dll<br/>Syncfusion.SfBusyIndicator.XForms.iOS.dll<br/>Syncfusion.SfBusyIndicator.iOS.dll<br/></td>
+<td>Syncfusion.Compression.Portable.dll<br/>Syncfusion.Pdf.Portable.dll<br/>Syncfusion.SfPdfViewer.XForms.dll<br/>Syncfusion.SfPdfViewer.XForms.iOS.dll<br/>Syncfusion.SfBusyIndicator.XForms.dll<br/>Syncfusion.SfBusyIndicator.XForms.iOS.dll<br/>Syncfusion.SfBusyIndicator.iOS.dll<br/>Syncfusion.SfRangeSlider.XForms.dll<br/>Syncfusion.SfRangeSlider.XForms.iOS.dll<br/></td>
 </tr>
 <tr>
 <td>UWP</td>
-<td>Syncfusion.Compression.Portable.dll<br/>Syncfusion.Pdf.Portable.dll<br/>Syncfusion.SfPdfViewer.XForms.dll<br/>Syncfusion.SfPdfViewer.XForms.UWP.dll<br/></td>
+<td>Syncfusion.Compression.Portable.dll<br/>Syncfusion.Pdf.Portable.dll<br/>Syncfusion.SfPdfViewer.XForms.dll<br/>Syncfusion.SfPdfViewer.XForms.UWP.dll<br/>Syncfusion.SfRangeSlider.XForms.dll<br/>Syncfusion.SfRangeSlider.XForms.UWP.dll<br/>Syncfusion.SfShared.UWP.dll<br/>Syncfusion.SfInput.UWP.dll<br/></td>
 </tr>
 </table>
 

@@ -523,6 +523,34 @@ chart.PrimaryAxis = new DateTimeAxis() { RangePadding = DateTimeRangePadding.Add
 
 ![](axis_images/axis_img16.png)
 
+## DateTimeCategoryAxis
+
+[`DateTimeCategoryAxis`]() is a unique type of axis used mainly with financial series. All the data points are plotted with equal spaces, similar to CategoryAxis, thereby removing space for missing dates. Intervals and range for the axis calculated to similar of DateTimeAxis. There are no visual gaps between points, even when the difference between two points is more than a year. The following APIs are used for customizing DateTimeCategoryAxis.
+
+•	[`Interval`]() - Used to get or set the double value that represents the interval between the labels.
+•	[`IntervalType`]() - Used to get or set the DateTimeIntervalType that represents the type of the interval to be displayed and considered for plotting the series.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+    <chart:DateTimeCategoryAxis Interval="1" IntervalType="Months" />
+</chart:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+DateTimeCategoryAxis xAxis = new DateTimeCategoryAxis();
+xAxis.Interval = 1;
+xAxis.IntervalType = DateTimeIntervalType.Months;
+chart.PrimaryAxis = xAxis;
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Logarithmic Axis
 
 Logarithmic axis uses logarithmic scale and displays numbers as axis labels.

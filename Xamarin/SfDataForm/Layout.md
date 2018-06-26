@@ -608,7 +608,7 @@ public class ContactsInfo
 
     }
 
-    private string firstName = "Irin";
+    private string firstName = "Iris";
     public string FirstName
     {
         get { return this.firstName; }

@@ -32,35 +32,35 @@ The following steps direct you to create the **Syncfusion** **Xamarin** **Applic
    
 3. Choose the options to configure the Syncfusion Xamarin Application by using the following Project Configuration dialog.
 
-     ### Project Configuration:
+### Project Configuration:
 
-     Choose the Project, Android, iOS, and UWP by on/off 
+Choose the Project, Android, iOS, and UWP by on/off 
 
-     ![](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates_img2.jpeg)
+![](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates_img2.jpeg)
 
-     **Assemblies From:** Load the Syncfusion Xamarin reference to Xamarin Application, either NuGet or Installed Location.
+**Assemblies From:** Load the Syncfusion Xamarin reference to Xamarin Application, either NuGet or Installed Location.
 
-     N> *Installed location option will be available only when installed the Syncfusion Xamarin setup has been installed*.
+N> *Installed location option will be available only when installed the Syncfusion Xamarin setup has been installed*.
 
-     **Android:**
+**Android:**
 
-      1.	**Minimum Android Version:** Select the oldest Android version that you want to support your application. 
-      2.	**Target Android Version:** Select the version of Android to run your application. 
+1.	**Minimum Android Version:** Select the oldest Android version that you want to support your application. 
+2.	**Target Android Version:** Select the version of Android to run your application. 
 
-      **iOS:**
+**iOS:**
 
-      1.	**Target Device:**  Select the device of Xamarin.iOS Project, either Unified, iPhone/iPod, or iPad.
-      2.	**Target Version:** Choose the version of Xamarin.iOS Project.
+1.	**Target Device:**  Select the device of Xamarin.iOS Project, either Unified, iPhone/iPod, or iPad.
+2.	**Target Version:** Choose the version of Xamarin.iOS Project.
 
-      **Choose controls**
+**Choose controls**
 
-      Choose the Xamarin application needs to create with the Syncfusion controls. 
+Choose the Xamarin application needs to create with the Syncfusion controls. 
 
-4. Click **Create**, the Syncfusion Xamarin Application has been created.
+4.Click **Create**, the Syncfusion Xamarin Application has been created.
 
    N> *Choose any one of the project type and controls from Project Configuration Wizard.*
 
-5. Required Syncfusion NuGet/Assemblies and configuration have been added to the project based on the control chosen.
+5.Required Syncfusion NuGet/Assemblies and configuration have been added to the project based on the control chosen.
 
    **Net Standard /PCL:**
 

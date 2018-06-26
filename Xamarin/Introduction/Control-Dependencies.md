@@ -1169,3 +1169,31 @@ This page lists the assemblies required for each control to be referred in each 
 <td>Syncfusion.SfDiagram.UWP.dll<br/>Syncfusion.SfDiagram.XForms.UWP.dll<br/>Syncfusion.SfDiagram.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 </table>
+
+## SfMaskedEdit
+
+<dl>
+  <dt>NuGet</dt>
+  <dd>Syncfusion.Xamarin.SfMaskedEdit</dd>
+</dl>
+
+**Assemblies**
+
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfMaskedEdit.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfMaskedEdit.XForms.Android.dll<br/>Syncfusion.SfMaskedEdit.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfMaskedEdit.XForms.iOS.dll<br/>Syncfusion.SfMaskedEdit.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfMaskedEdit.XForms.UWP.dll<br/>Syncfusion.SfMaskedEdit.XForms.dll<br/></td>
+</tr>
+</table>

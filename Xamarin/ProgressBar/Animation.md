@@ -6,7 +6,7 @@ control: ProgressBar
 documentation: ug
 ---
 
-## Animation
+# Animation
 
 The progress bar provides animation support to visualize the progress value changes in an interactive way. 
 

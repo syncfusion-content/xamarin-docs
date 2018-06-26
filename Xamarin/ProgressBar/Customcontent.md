@@ -18,35 +18,33 @@ The following code example shows how to add custom text content.
 
 {% highlight xaml %}
 
-<progressBar:SfCircularProgressBar x:Name="CustomContentCircularProgressBar"
+<progressBar:SfCircularProgressBar x:Name="CustomContentCircularProgressBar" Progress="23" HorizontalOptions="Center" >
 
-Progress="23" HorizontalOptions="Center" >
+ <progressBar:SfCircularProgressBar.Content>
 
-<progressBar:SfCircularProgressBar.Content>
+   <Grid>
 
-<Grid>
+        <Grid.RowDefinitions>
 
-<Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
 
-<RowDefinition Height="3*"/>
+            <RowDefinition Height="*"/>
 
-<RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
 
-</Grid.RowDefinitions>
+        <Label x:Name="CustomContentProgressBarLabel" Grid.Row="0"
 
-<Label x:Name="CustomContentProgressBarLabel" Grid.Row="0"
+                TextColor="#007cee" Text="{Binding Progress,StringFormat='{0}%'} HorizontalTextAlignment="Center" VerticalTextAlignment="End">                        
 
-TextColor="#007cee" Text="{Binding Progress,StringFormat='{0}%'} HorizontalTextAlignment="Center" VerticalTextAlignment="End">                        
+        </Label>
 
-</Label>
+        <Label Grid.Row="1" TextColor="#007cee" Text="used" VerticalOptions="Start" Margin="0,-5,0,0" HorizontalTextAlignment="Center" VerticalTextAlignment="Start">
 
-<Label Grid.Row="1" TextColor="#007cee" Text="used" VerticalOptions="Start" Margin="0,-5,0,0" HorizontalTextAlignment="Center" VerticalTextAlignment="Start">
+        </Label>
 
-</Label>
+    </Grid>
 
-</Grid>
-
-</progressBar:SfCircularProgressBar.Content>
+ </progressBar:SfCircularProgressBar.Content>
 
 </progressBar:SfCircularProgressBar>
 

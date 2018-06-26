@@ -107,3 +107,251 @@ The procedure for creating Resources(.resw) file is as follows:
 *	Translate the custom string used in schedule to respective localized culture.
 
 ![](Localization_images/Localization_XFUWP.png)
+
+## Localizing custom strings from pcl
+You can localize the custom strings (All Day, No Events) used in the schedule control from PCL. It can be achieved by providing the custom strings to the specific language resx file and handling the required culture with the locale using DependencyService instead of device language. In the below code, we have set French as Schedule locale as well as custom strings.
+
+{% tabs %}
+{% highlight c# %}
+
+if (schedule.Locale == "fr")
+{
+    if (Device.RuntimePlatform == Device.iOS || Device.RuntimePlatform == Device.Android)
+    {
+        DependencyService.Get<ILocalize>().SetLocale(new CultureInfo("fr"));
+    }
+    else
+    {
+        CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("fr");
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+You can download the entire source code of this demo for Xamarin.Forms from
+here [LocaleFromPCL](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LocaleFromPCL635946080.zip).
+
+### Adding resx file
+You need to add the required resx files under the Resources folder in the PCL project and the filename should be `Syncfusion.SfSchedule.Forms.LanguageCode.resx`.
+
+Example: For French, `Syncfusion.SfSchedule.Forms.fr.resx`
+
+Now, set the Build Action as EmbeddedResource for `Syncfusion.SfSchedule.Forms.fr.resx` file and Build Action as Compile for `Syncfusion.SfSchedule.Forms.fr.Designer.cs` file.
+
+{% tabs %}
+{% highlight xaml %}
+<data name="NoEvents" xml:space="preserve">
+    <value>Pas d'événements</value>
+</data>
+<data name="AllDay" xml:space="preserve">
+    <value>Toute la journéer</value>
+</data>
+{% endhighlight %}
+{% endtabs %}
+
+### Adding ILocalize interface in PCL
+You need to add the ILocalize interface to convert the platform-specific locales to a value supported in .NET cultures in the PCL project.
+
+{% tabs %}
+{% highlight c# %}
+    namespace ScheduleLocale
+    {
+        public interface ILocalize
+        {
+                CultureInfo GetCurrentCultureInfo();
+                void SetLocale(CultureInfo cultureInfo);
+        }
+        public class PlatformCulture
+        {
+            public PlatformCulture(string platformCultureString)
+            {
+                if (String.IsNullOrEmpty(platformCultureString))
+                throw new ArgumentException("Expected culture identifier", "platformCultureString");
+                PlatformString = platformCultureString.Replace("_", "-");
+                var dashIndex = PlatformString.IndexOf("-", StringComparison.Ordinal);
+                if (dashIndex > 0)
+                {
+                    var parts = PlatformString.Split('-');
+                    LanguageCode = parts[0];
+                    LocaleCode = parts[1];
+                }
+                else
+                {
+                    LanguageCode = PlatformString;
+                    LocaleCode = "";
+                }
+            }
+            public string PlatformString { get; private set; }
+            public string LanguageCode { get; private set; }
+            public string LocaleCode { get; private set; }
+            public override string ToString()
+            {
+                return PlatformString;
+            }
+        }
+    }
+
+{% endhighlight %}
+{% endtabs %}
+
+### Adding Localize class in Android and iOS project inheriting from ILocalize
+You need to add the Localize class in Android and iOS project by inheriting from ILocalize. You can get the CultureInfo and set the same to Schedule Locale by using `GetCurrentCultureInfo` and `SetLocale`.
+
+Localize class for Android project,
+
+{% tabs %}
+{% highlight c# %}
+    using System.Globalization;
+    using System.Threading;
+    [assembly: Xamarin.Forms.Dependency(typeof(ScheduleLocale.Droid.Localize))]
+    namespace ScheduleLocale.Droid
+    {
+        public class Localize : ILocalize
+        {
+            public void SetLocale(CultureInfo cultureInfo)
+            {
+                Thread.CurrentThread.CurrentCulture = cultureInfo;
+                Thread.CurrentThread.CurrentUICulture = cultureInfo;
+            }
+            public CultureInfo GetCurrentCultureInfo()
+            {
+                var netLanguage = "en";
+                var androidLocale = Java.Util.Locale.Default;
+                netLanguage = AndroidToDotnetLanguage(androidLocale.ToString().Replace("_", "-"));
+                CultureInfo cultureInfo = null;
+                try
+                {
+                    cultureInfo = new CultureInfo(netLanguage);
+                }
+                catch
+                {
+                    try
+                    {
+                        var fallback = ToDotnetFallbackLanguage(new PlatformCulture(netLanguage));
+                        cultureInfo = new CultureInfo(fallback);
+                    }
+                    catch
+                    {
+                        cultureInfo = new CultureInfo("en");
+                    }
+                }
+                return cultureInfo;
+            }
+        private string AndroidToDotnetLanguage(string androidLanguage)
+        {
+            var netLanguage = androidLanguage;
+            switch (androidLanguage)
+            {
+                case "ms-BN":   // "Malaysian (Brunei)" not supported .NET culture
+                case "ms-MY":   // "Malaysian (Malaysia)" not supported .NET culture
+                case "ms-SG":   // "Malaysian (Singapore)" not supported .NET culture
+                netLanguage = "ms"; // closest supported
+                break;
+                case "in-ID":  // "Indonesian (Indonesia)" has different code in  .NET
+                netLanguage = "id-ID"; // correct code for .NET
+                break;
+                case "gsw-CH":  // "Schwiizertüütsch (Swiss German)" not supported .NET culture
+                netLanguage = "de-CH"; // closest supported
+                break;
+            }
+            return netLanguage;
+        }
+        private string ToDotnetFallbackLanguage(PlatformCulture platformCulture)
+        {
+            var netLanguage = platformCulture.LanguageCode; // use the first part of the identifier (two chars, usually);
+            switch (platformCulture.LanguageCode)
+            {
+                case "gsw":
+                netLanguage = "de-CH"; // equivalent to German (Switzerland) for this app
+                break;
+            }
+            return netLanguage;
+        }
+        }
+    }
+
+{% endhighlight %}
+{% endtabs %}
+
+Localize class for iOS project,
+
+{% tabs %}
+{% highlight c# %}
+    using System.Globalization;
+    using System.Threading;
+    using Foundation;
+    [assembly: Xamarin.Forms.Dependency(typeof(ScheduleLocale.iOS.Localize))]
+    namespace ScheduleLocale.iOS
+    {
+        public class Localize : ILocalize
+        {
+            public void SetLocale(CultureInfo cultureInfo)
+            {
+                Thread.CurrentThread.CurrentCulture = cultureInfo;
+                Thread.CurrentThread.CurrentUICulture = cultureInfo;
+            }
+            public CultureInfo GetCurrentCultureInfo()
+            {
+                var netLanguage = "en";
+                if (NSLocale.PreferredLanguages.Length > 0)
+                {
+                    var pref = NSLocale.PreferredLanguages[0];
+                    netLanguage = iOSToDotnetLanguage(pref);
+                }
+                CultureInfo cultureInfo = null;
+                try
+                {
+                    cultureInfo = new CultureInfo(netLanguage);
+                }
+                catch
+                {
+                    try
+                    {
+                        var fallback = ToDotnetFallbackLanguage(new PlatformCulture(netLanguage));
+                        cultureInfo = new CultureInfo(fallback);
+                    }
+                    catch
+                    {
+                        cultureInfo = new CultureInfo("en");
+                    }
+                }
+                return cultureInfo;
+            }
+            private string iOSToDotnetLanguage(string iOSLanguage)
+            {
+                var netLanguage = iOSLanguage;
+                switch (iOSLanguage)
+                {
+                    case "ms-MY":   // "Malaysian (Malaysia)" not supported .NET culture
+                    case "ms-SG":   // "Malaysian (Singapore)" not supported .NET culture
+                    netLanguage = "ms"; // closest supported
+                    break;
+                    case "gsw-CH":  // "Schwiizertüütsch (Swiss German)" not supported .NET culture
+                    netLanguage = "de-CH"; // closest supported
+                    break;
+                }
+                return netLanguage;
+            }
+            private string ToDotnetFallbackLanguage(PlatformCulture platCulture)
+            {
+                var netLanguage = platCulture.LanguageCode; // use the first part of the identifier (two chars, usually);
+                switch (platCulture.LanguageCode)
+                {
+                    case "pt":
+                    netLanguage = "pt-PT"; // fallback to Portuguese (Portugal)
+                    break;
+                    case "gsw":
+                    netLanguage = "de-CH"; // equivalent to German (Switzerland) for this app
+                    break;
+                }
+                return netLanguage;
+            }
+        }
+    }
+
+{% endhighlight %}
+{% endtabs %}
+
+>**NOTE**
+For UWP project, no sample level changes required.

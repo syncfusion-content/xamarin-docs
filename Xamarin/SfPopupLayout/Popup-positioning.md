@@ -310,8 +310,9 @@ Along with the relative positioning SfPopupLayout can be displayed at an absolut
 
 #### SfPopupLayout.ShowRelativeToView(View, RelativePosition,x-position,y-position)
 
-To open the SfPopupLayout in specific X,Y coordinates relative to a view, use the `SfPopupLayout.ShowRelativeToView(View, RelativePosition,x-position,y-position)` property as shown in the following code snipppet.
+To open the SfPopupLayout in specific X,Y coordinates relative to a view, use the `SfPopupLayout.ShowRelativeToView(View, RelativePosition,x-position,y-position)` property as shown in the following code snippet.
 
+ % tabs %}
  {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -333,7 +334,9 @@ To open the SfPopupLayout in specific X,Y coordinates relative to a view, use th
 </ContentPage>
 
 {% endhighlight %}
+{% endtabs %}
 
+% tabs %}
 {% highlight c# %}
 using Syncfusion.XForms.PopupLayout;
 
@@ -355,11 +358,12 @@ namespace GettingStarted
     }
 }
 {% endhighlight %}
+{% endtabs %}
 
 Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively
 
 ![](GettingStarted_images/AbsoluteRelativePosition.png)
 
-You can pass both negative and positive value as parameters to the `SfPopupLayout.ShowRelativeToView(View, RelativePosition,x-position,y-position)`.The popup will be positioned cosidering the relative poistion as as the (0,0) center point. For example if we have set the `RelativePosition` as `RelativePosition.BottomRight` and `RelativeView` as a Button, the button's bottom right corner will be considered as the 0,0 point and a negative x-poisiton value will place the popup to the left of that point and a positive x-poistion value will place the popup to the right of that point. The same applies for y-position also.
+You can pass both negative and positive value as parameters to the `SfPopupLayout.ShowRelativeToView(View, RelativePosition,x-position,y-position)`.The popup will be positioned considering the relative position as as the (0,0) center point. For example if we have set the `RelativePosition` as `RelativePosition.BottomRight` and `RelativeView` as a Button, the button's bottom right corner will be considered as the 0,0 point and a negative x-position value will place the popup to the left of that point and a positive x-position value will place the popup to the right of that point. The same applies for y-position also.
 
-N> To open the SfPopupLayout relative to a view without absolute position, you have to pass the x-postion and y-position parameters as 0 in the `SfPopupLayout.ShowRelativeToView(View, RelativePosition,x-position,y-position)`.
+N> To open the SfPopupLayout relative to a view without absolute position, you have to pass the x-position and y-position parameters as 0 in the `SfPopupLayout.ShowRelativeToView(View, RelativePosition,x-position,y-position)`.

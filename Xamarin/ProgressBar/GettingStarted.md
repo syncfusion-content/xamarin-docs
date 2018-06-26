@@ -19,7 +19,7 @@ Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.o
 
 To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac#) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows#). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#progress-bar) to know about the dependent assemblies for progress bar.
 
-N>Install the same version of the progress bar NUGET in all the projects.
+N>Install the same version of the progress bar NuGet in all the projects.
 
 ## Launching the application on each platform with progress bar 
 

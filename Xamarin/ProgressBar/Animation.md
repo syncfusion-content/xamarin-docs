@@ -1,0 +1,54 @@
+---
+layout: post
+title: Animation
+platform: xamarin
+control: ProgressBar
+documentation: ug
+---
+
+# Animation
+
+The progress bar provides animation support to visualize the progress value changes in an interactive way. 
+
+The following properties are used to define the duration for animation for the specific states:
+
+* [`AnimationDuration`](https://help.syncfusion.com/cr/cref_files/xamarin/sfprogressbar/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.ProgressBarBase~AnimationDuration.html): Represents animation duration of the determinate state’s progress indicator.
+* [`SecondaryAnimationDuration`](https://help.syncfusion.com/cr/cref_files/xamarin/sfprogressbar/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.SfLinearProgressBar~SecondaryAnimationDuration.html): Represents animation duration of the determinate state’s secondary progress indicator.
+* [`IndeterminateAnimationDuration`](https://help.syncfusion.com/cr/cref_files/xamarin/sfprogressbar/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.ProgressBarBase~IndeterminateAnimationDuration.html): Represents animation duration of the indeterminate state’s indicator.
+
+**Easing** **Effects**
+
+The [`EasingEffect`](https://help.syncfusion.com/cr/cref_files/xamarin/sfprogressbar/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.ProgressBarBase~EasingEffect.html) property allows you specify the transfer function that controls animation speed while they are running. 
+
+The following code example shows the [`CubicInOut`](https://help.syncfusion.com/cr/cref_files/xamarin/sfprogressbar/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.EasingEffects.html) easing function in the circular progress bar.
+
+{% tabs %} 
+
+{% highlight xaml %}
+<progressBar:SfLinearProgressBar Progress="75" EasingEffect="CubicInOut">
+
+</progressBar:SfLinearProgressBar>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfLinearProgressBar linearProgressBar = new SfLinearProgressBar();
+
+linearProgressBar.Progress = 75;
+
+linearProgressBar.EasingEffect = EasingEffects.CubicInOut;
+
+{% endhighlight %}
+
+{% endtabs %} 
+
+The [`SetProgress()`](https://help.syncfusion.com/cr/cref_files/xamarin/sfprogressbar/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.ProgressBarBase~SetProgress.html) method in the progress bar is used to set progress value along with animation duration and easing effect applicable for the specific method call. 
+
+{% highlight c# %}
+
+void SetProgress(double progress, int animationDuration, Easing easingEffect)
+
+{% endhighlight %}
+
+N> The animationDuration and easingEffect parameters will not affect the configuration of the [`AnimationDuration`](https://help.syncfusion.com/cr/cref_files/xamarin/sfprogressbar/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.ProgressBarBase~AnimationDuration.html) and [`EasingEffect`](https://help.syncfusion.com/cr/cref_files/xamarin/sfprogressbar/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.ProgressBarBase~EasingEffect.html) properties.

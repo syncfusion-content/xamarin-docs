@@ -118,7 +118,7 @@ This page lists the assemblies required for each control to be referred in each 
 <td>Syncfusion.Data.Portable.dll<br/>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.SfDataGrid.XForms.dll<br/>Syncfusion.SfDataGrid.XForms.UWP.dll<br/>Syncfusion.SfInput.UWP.dll<br/>Syncfusion.SfShared.UWP.dll<br/>Syncfusion.SfNumericTextBox.XForms.UWP.dll<br/>Syncfusion.SfNumericTextBox.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 <td>macOS</td>
-<td>Syncfusion.Data.Portable.dll<br/>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.SfDataGrid.XForms.dll<br/>Syncfusion.SfDataGrid.XForms.macOS.dll<br/></td>
+<td>Syncfusion.Data.Portable.dll<br/>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.SfDataGrid.XForms.dll<br/>Syncfusion.SfDataGrid.XForms.120.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 </table>
 
@@ -808,19 +808,19 @@ This page lists the assemblies required for each control to be referred in each 
 <table>
 <tr>
 <td>PCL</td>
-<td>Syncfusion.SfPopupLayout.XForms.dll<br/></td>
+<td>Syncfusion.SfPopupLayout.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 <tr>
 <td>Android</td>
-<td>Syncfusion.SfPopupLayout.XForms.dll<br/>Syncfusion.SfPopupLayout.XForms.Android.dll<br/></td>
+<td>Syncfusion.SfPopupLayout.XForms.dll<br/>Syncfusion.SfPopupLayout.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 <tr>
 <td>iOS</td>
-<td>Syncfusion.SfPopupLayout.XForms.dll<br/>Syncfusion.SfPopupLayout.XForms.iOS.dll<br/></td>
+<td>Syncfusion.SfPopupLayout.XForms.dll<br/>Syncfusion.SfPopupLayout.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 <tr>
 <td>UWP</td>
-<td>Syncfusion.SfPopupLayout.XForms.dll<br/>Syncfusion.SfPopupLayout.XForms.UWP.dll<br/></td>
+<td>Syncfusion.SfPopupLayout.XForms.dll<br/>Syncfusion.SfPopupLayout.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 </table>
 
@@ -840,24 +840,15 @@ This page lists the assemblies required for each control to be referred in each 
 </tr>
 <tr>
 <td>Android</td>
-<td>Syncfusion.SfPullToRefresh.Android.dll<br/>Syncfusion.SfPullToRefresh.XForms.Android.dll<br/>Syncfusion.SfPullToRefresh.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+<td>Syncfusion.SfPullToRefresh.XForms.dll<br/>Syncfusion.SfPullToRefresh.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 <tr>
 <td>iOS</td>
-<td>Syncfusion.SfPullToRefresh.iOS.dll<br/>Syncfusion.SfPullToRefresh.XForms.iOS.dll<br/>Syncfusion.SfPullToRefresh.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+<td>Syncfusion.SfPullToRefresh.XForms.dll<br/>Syncfusion.SfPullToRefresh.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 <tr>
 <td>UWP</td>
-<td>Syncfusion.SfPullToRefresh.UWP.dll<br/>Syncfusion.SfPullToRefresh.XForms.UWP.dll<br/>Syncfusion.SfPullToRefresh.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
-<td>Syncfusion.SfPullToRefresh.XForms.dll<br/>Syncfusion.SfPullToRefresh.XForms.Android.dll<br/></td>
-</tr>
-<tr>
-<td>iOS</td>
-<td>Syncfusion.SfPullToRefresh.XForms.dll<br/>Syncfusion.SfPullToRefresh.XForms.iOS.dll<br/></td>
-</tr>
-<tr>
-<td>UWP</td>
-<td>Syncfusion.SfPullToRefresh.XForms.dll<br/>Syncfusion.SfPullToRefresh.XForms.UWP.dll<br/></td>
+<td>Syncfusion.SfPullToRefresh.XForms.dll<br/>Syncfusion.SfPullToRefresh.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 </table>
 
@@ -886,6 +877,10 @@ This page lists the assemblies required for each control to be referred in each 
 <tr>
 <td>UWP</td>
 <td>Syncfusion.DataSource.Portable.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.SfListView.XForms.UWP.dll<br/>Syncfusion.SfListView.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>macOS renderer</td>
+<td>pcl\Syncfusion.DataSource.Portable.dll<br/>pcl\Syncfusion.Core.XForms.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfListView.XForms.dll<br/>macOS\Syncfusion.Core.XForms.macOS.dll<br/>macOS\Syncfusion.SfListView.XForms.macOS<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 </table>
 

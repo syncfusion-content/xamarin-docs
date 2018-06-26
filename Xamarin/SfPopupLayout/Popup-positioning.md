@@ -248,6 +248,8 @@ Executing the above codes renders the following output in iOS, Android and Windo
 
 ![](GettingStarted_images/ShowAtTouchPoint.png)
 
+N> SfPopupLayout.ShowAtTouchPoint() is not applicable for `Displaying pop-up when the SfPopupLayout is not set as root view`.
+
 ## Relative positioning
 
 SfPopupLayout can be shown at the relative position by using the following method.

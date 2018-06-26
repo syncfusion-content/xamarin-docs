@@ -26,7 +26,7 @@ The following steps direct you to create the **Syncfusion** **Xamarin** **Applic
 
 1. To create a **Syncfusion Xamarin project**, choose **New** **Project****->****Syncfusion****->** **Cross-Platform****->****Syncfusion** **Xamarin** **Application** from **Visual** **Studio** **2017**.
 
-   ![](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates_img1.jpeg)
+     ![](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates_img1.jpeg)
 
 2. Name the **Project**, choose the destination location, and set the Framework of the project, and then click **OK**. The Project Configuration Wizard appears.
    

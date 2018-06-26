@@ -166,9 +166,9 @@ private void AddProducts(int index, int count)
 
 ## Show loading indicator
 
-The [SfListView.LoadMoreIndicator](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LoadMoreIndicator.html) will be displayed when loading more items in the list.
+The [SfListView.LoadMoreIndicator](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LoadMoreIndicator.html) will be displayed when loading more items in the list.
 
-Binding the [SfListView.IsBusy](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsBusy.html) property is mandatory, because converter is used for this property to interchange the visibility of the button and busy indicator while creating default load more view. While binding the property for `SfListView.IsBusy`, the name of the ViewModel property should be `IsBusy`. You can either change the ViewModel property or `SfListView.IsBusy` property while adding items. It is mandatory to change the `IsBusy` value before and after adding items to the list.
+Binding the [SfListView.IsBusy](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsBusy.html) property is mandatory, because converter is used for this property to interchange the visibility of the button and busy indicator while creating default load more view. While binding the property for `SfListView.IsBusy`, the name of the ViewModel property should be `IsBusy`. You can either change the ViewModel property or `SfListView.IsBusy` property while adding items. It is mandatory to change the `IsBusy` value before and after adding items to the list.
 
 {% tabs %}
 {% highlight c# %}

@@ -8,7 +8,7 @@ documentation: ug
 
 # Custom Content
 
-In the circular progress bar, you can add any view to the center using the [`Content`](https://help.syncfusion.com/cr/cref_files/xamarin/sfprogressbar/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.SfCircularProgressBar~Content.html) property. 
+In the circular progress bar, you can add any view to the center using the [`Content`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.SfCircularProgressBar~Content.html) property. 
 
 For example, you can include add, start, or pause button to control the progress; add an image that indicates the actual task in progress or add custom text that conveys how far the task is completed. 
 
@@ -110,4 +110,4 @@ circularProgressBar.Content = grid;
 
 ![](overview_images/customcontent.png)
 
-By default, the progress value will be displayed at the center. You can hide the label in the circular progress bar by setting the [`ShowProgressValue`](https://help.syncfusion.com/cr/cref_files/xamarin/sfprogressbar/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.SfCircularProgressBar~ShowProgressValue.html) property to false. 
+By default, the progress value will be displayed at the center. You can hide the label in the circular progress bar by setting the [`ShowProgressValue`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.SfCircularProgressBar~ShowProgressValue.html) property to false. 

@@ -117,6 +117,9 @@ This page lists the assemblies required for each control to be referred in each 
 <td>UWP</td>
 <td>Syncfusion.Data.Portable.dll<br/>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.SfDataGrid.XForms.dll<br/>Syncfusion.SfDataGrid.XForms.UWP.dll<br/>Syncfusion.SfInput.UWP.dll<br/>Syncfusion.SfShared.UWP.dll<br/>Syncfusion.SfNumericTextBox.XForms.UWP.dll<br/>Syncfusion.SfNumericTextBox.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
+<td>macOS</td>
+<td>Syncfusion.Data.Portable.dll<br/>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.SfDataGrid.XForms.dll<br/>Syncfusion.SfDataGrid.XForms.macOS.dll<br/></td>
+</tr>
 </table>
 
 ## SfGridConverter
@@ -793,6 +796,34 @@ This page lists the assemblies required for each control to be referred in each 
 </tr>
 </table>
 
+## SfPopupLayout
+
+<dl>
+  <dt>NuGet</dt>
+  <dd>Syncfusion.Xamarin.SfPopupLayout</dd>
+</dl>
+
+**Assemblies**
+
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfPopupLayout.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfPopupLayout.XForms.dll<br/>Syncfusion.SfPopupLayout.XForms.Android.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfPopupLayout.XForms.dll<br/>Syncfusion.SfPopupLayout.XForms.iOS.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfPopupLayout.XForms.dll<br/>Syncfusion.SfPopupLayout.XForms.UWP.dll<br/></td>
+</tr>
+</table>
+
 ## SfPullToRefresh
 
 <dl>
@@ -818,6 +849,15 @@ This page lists the assemblies required for each control to be referred in each 
 <tr>
 <td>UWP</td>
 <td>Syncfusion.SfPullToRefresh.UWP.dll<br/>Syncfusion.SfPullToRefresh.XForms.UWP.dll<br/>Syncfusion.SfPullToRefresh.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+<td>Syncfusion.SfPullToRefresh.XForms.dll<br/>Syncfusion.SfPullToRefresh.XForms.Android.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfPullToRefresh.XForms.dll<br/>Syncfusion.SfPullToRefresh.XForms.iOS.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfPullToRefresh.XForms.dll<br/>Syncfusion.SfPullToRefresh.XForms.UWP.dll<br/></td>
 </tr>
 </table>
 

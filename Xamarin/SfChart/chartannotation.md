@@ -994,12 +994,11 @@ The [`AnnotationClicked`]() event is triggered when the user has clicked the ann
 
 ## Get the touch position in annotation
 
-Following are the overridable methods that are available in annotation to send the information about touch interactions.
+Following are the override methods that are available in annotation to send the information about touch interactions.
 
 * [`OnTouchDown`]() – occurs when touch down inside the annotation.
-* [`OnTouchMove`]() - occurs while moving the finger or mouse inside the annotation.
+* [`OnTouchMove`]() – occurs while moving the finger or mouse inside the annotation.
 * [`OnTouchUp`]() – occurs when touch up inside the annotation.
-
 
 {% highlight c# %}
 
@@ -1020,6 +1019,5 @@ public class TextAnnotationExt : TextAnnotation
        base.OnTouchUp(pointX, pointY);
     }
 }
-
 
 {% endhighlight  %}

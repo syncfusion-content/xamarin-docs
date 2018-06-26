@@ -130,7 +130,7 @@ if (schedule.Locale == "fr")
 {% endtabs %}
 
 You can download the entire source code of this demo for Xamarin.Forms from
-here [Localization](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization_Forms-1564080177.zip).
+here [LocaleFromPCL](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LocaleFromPCL635946080.zip).
 
 ### Adding resx file
 You need to add the required resx files under the Resources folder in the PCL project and the filename should be `Syncfusion.SfSchedule.Forms.LanguageCode.resx`.

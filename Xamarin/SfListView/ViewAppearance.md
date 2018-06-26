@@ -778,7 +778,7 @@ The SfListView supports accordion view to display a list of items. Each item can
 {% endhighlight %}
 {% endtabs %}
 
-Accordion view can be displayed by using the [ItemTapped](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTapped_EV.html) event.
+Accordion view can be displayed by using the [ItemTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTapped_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}

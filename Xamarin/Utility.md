@@ -11,8 +11,8 @@ documentation: ug
 
 The Syncfusion Xamarin Extension provides you quick access, so that you can create or configure the Syncfusion Xamarin projects. The Syncfusion Xamarin Extensions has the following features.
 
-* Syncfusion Project Template for Xamarin Forms
-* Syncfusion Toolbox for Xamarin Forms
+* Syncfusion Project Template for Xamarin.Forms
+* Syncfusion Toolbox for Xamarin.Forms
 
 ## Project Template
 

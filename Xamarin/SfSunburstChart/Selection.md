@@ -33,7 +33,7 @@ The following code shows the `Child` selection type.
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
             SelectionSettings selection = new SelectionSettings();
             selection.Opacity = 0.5;
@@ -59,7 +59,7 @@ The following code shows the `Group` selection type.
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
             SelectionSettings selection = new SelectionSettings();
             selection.Opacity = 0.5;
@@ -86,7 +86,7 @@ The following code shows the `Parent` selection type.
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
             SelectionSettings selection = new SelectionSettings();
             selection.Opacity = 0.5;
@@ -113,7 +113,7 @@ The following code shows the `Single` selection type.
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
             SelectionSettings selection = new SelectionSettings();
             selection.Opacity = 0.5;
@@ -151,7 +151,7 @@ This mode highlights the selected segment with the opacity specified in the [`Op
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
             SelectionSettings selection = new SelectionSettings();
             selection.EnableSelection = true;
@@ -181,7 +181,7 @@ This mode highlights the selected segment using the brush specified in the [`Sel
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
             SelectionSettings selection = new SelectionSettings();
             selection.EnableSelection = true;
@@ -211,7 +211,7 @@ This mode highlights the selected segment by applying stroke to it. The color an
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
             SelectionSettings selection = new SelectionSettings();
             selection.EnableSelection = true;
@@ -255,7 +255,7 @@ This event occurs whenever you select the segment. You can get the [`SelectedSeg
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
        
 
         private void SunburstChart_SelectionChanged(object sender, SelectionChangedEventArgs e)

@@ -108,7 +108,6 @@ Create a new [BlankApp application](https://developer.xamarin.com/guides/xamari
 
 ![SfImageEditor](ImageEditor_images/GettingstartedDefault.png)
 
-N> Refer to this [link](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/images?tabs=vswin#displaying-images) to know more about how to load an image to image editor source property in different format.
 
 ## Load an image to ImageEditor
 
@@ -174,6 +173,9 @@ To load an image to SfImageEditor follow the below code snippet. We have loaded 
 
 {% endhighlight %}
 {% endtabs %}
+
+N> Refer to this [link](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/images?tabs=vswin#displaying-images) to know more about how to load an image to image editor source property in different format.
+
 
 * The following screenshot illustrates loaded image of SfImageEditor and you can start to edit the image by using built-in Toolbar menu items.
 

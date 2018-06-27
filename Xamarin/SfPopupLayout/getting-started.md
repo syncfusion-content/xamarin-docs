@@ -79,13 +79,38 @@ To use the SfPopupLayout inside an application, each platform application must i
 
 ### Android
 
-The Android launches the SfPopupLayout without any initialization and is enough to only initialize the Xamarin.Forms Framework to launch the application.
+If you are using SfPopupLayout by [Displaying pop-up when the SfPopupLayout is set as root view](https://help.syncfusion.com/xamarin/sfpopuplayout/getting-started#displaying-pop-up-when-the-sfpopuplayout-is-set-as-root-view), the Android launches the SfPopupLayout without any initialization and is enough to only initialize the Xamarin.Forms Framework to launch the application.
+
+If you are using SfPopupLayout by [Displaying pop-up when the SfPopupLayout is not set as root view](https://help.syncfusion.com/xamarin/sfpopuplayout/getting-started#displaying-pop-up-when-the-sfpopuplayout-is-not-set-as-root-view), call the `SfPopupLayoutRenderer.Init()` in the `OnCreate` overridden method of the MainActivity.cs class after the Xamarin.Forms Framework initialization and before the LoadApplication is called as demonstrated in the following code example.
+
+{% tabs %}
+
+{% highlight c# %}
+
+using Syncfusion.XForms.Android.PopupLayout;
+
+protected override void OnCreate(Bundle bundle)
+{
+    ...
+    global::Xamarin.Forms.Forms.Init(this, bundle);
+    SfPopupLayoutRenderer.Init();
+    LoadApplication(new App());
+}
+
+{% endhighlight %} 
+
+{% endtabs %}
 
 ### iOS
 
 To launch the SfPopupLayout in iOS, call the `SfPopupLayoutRenderer.Init()` in the `FinishedLaunching` overridden method of the AppDelegate class after the Xamarin.Forms Framework initialization and before the LoadApplication is called as demonstrated in the following code example.
 
+{% tabs %}
+
 {% highlight c# %}
+
+using Syncfusion.XForms.iOS.PopupLayout;
+
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {
     …
@@ -94,13 +119,21 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
     LoadApplication (new App ());
     …
 }
+
 {% endhighlight %} 
+
+{% endtabs %}
 
 ### Universal Windows Platform (UWP)
 
 To launch the SfPopupLayout in UWP, call the `SfPopupLayoutRenderer.Init()` in the `MainPage` constructor before the LoadApplication is called as demonstrated in the following code example.
 
+{% tabs %}
+
 {% highlight c# %}
+
+using Syncfusion.XForms.UWP.PopupLayout;
+
 public MainPage()
 {
     …
@@ -108,13 +141,19 @@ public MainPage()
     LoadApplication (new App ());
     …
 }
+
 {% endhighlight %}
+
+{% endtabs %}
 
 ### ReleaseMode issue in UWP platform
 
 The known Framework issue in UWP platform is the custom controls will not render when deployed the application in `Release Mode`. It can be resolved by initializing the SfPopupLayout assemblies in `App.xaml.cs` in UWP project as in the following code snippet.
 
+{% tabs %}
+
 {% highlight c# %}
+
 // In App.xaml.cs
 
 protected override void OnLaunched(LaunchActivatedEventArgs e)
@@ -134,7 +173,10 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
         
     …     
 }
+
 {% endhighlight %}
+
+{% endtabs %}
 
 ## Create a simple pop-up
 
@@ -154,7 +196,10 @@ The SfPopupLayout can be displayed by making it as base view or content view of 
 
 Refer to the following code example for displaying popup.
 
+{% tabs %}
+
 {% highlight xaml %}
+
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -193,7 +238,10 @@ namespace GettingStarted
         }
     }
 }
+
 {% endhighlight %}
+
+{% endtabs %}
  
 ### Displaying pop-up when the SfPopupLayout is not set as root view 
 
@@ -201,7 +249,10 @@ You can continue to keep your view as the content view of the main page and stil
 
 Refer to the following code example for displaying popup.
 
+{% tabs %}
+
 {% highlight xaml %}
+
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -216,6 +267,7 @@ Refer to the following code example for displaying popup.
 {% endhighlight %}
 
 {% highlight c# %}
+
 using Syncfusion.XForms.PopupLayout;
 
 namespace GettingStarted
@@ -237,7 +289,10 @@ namespace GettingStarted
         }
     }
 }
+
 {% endhighlight %}
+
+{% endtabs %}
 
 Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
@@ -274,7 +329,10 @@ More information for pop-up positioning is in this [link](https://help.syncfusio
 
 Any view can be added as pop-up content by using the [SfPopupLayout.PopupView.ContentTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~ContentTemplate.html) property to refresh it. Refer to the following code example in which a label is added as a pop-up content and displaying the pop-up when the SfPopupLayout is set as root view.
 
+{% tabs %}
+
 {% highlight xaml %}
+
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -292,6 +350,8 @@ Any view can be added as pop-up content by using the [SfPopupLayout.PopupView.Co
 </ContentPage>
 
 {% endhighlight %}
+
+{% endtabs %}
 
 {% tabs %}
 
@@ -313,6 +373,7 @@ Any view can be added as pop-up content by using the [SfPopupLayout.PopupView.Co
 {% endhighlight %}
 
 {% highlight c# %}
+
 using Syncfusion.XForms.PopupLayout;
 
 namespace GettingStarted

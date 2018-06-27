@@ -365,6 +365,10 @@ This page lists the assemblies required for each control to be referred in each 
 <td>iOS</td>
 <td>Syncfusion.SfProgressBar.XForms.iOS.dll<br/>Syncfusion.SfProgressBar.XForms.dll<br/></td>
 </tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfProgressBar.XForms.UWP.dll<br/>Syncfusion.SfProgressBar.XForms.dll<br/></td>
+</tr>
 </table>
 
 

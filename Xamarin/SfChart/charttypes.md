@@ -2139,9 +2139,9 @@ PieSeries pieSeries = new PieSeries()
 
 ![](charttypes_images/charttypes_img26.png)
 
-## Group small data points into “others”
+### Group small data points into “others”
 
-The small segments in the pie chart can be grouped into “others” category using the [`GroupTo`]() and [`GroupMode`]() properties of PieSeries. The [`GroupMode`]() property is used to specify the grouping type based on slice angle, actual data point value, or percentage, and the [`GroupTo`]() property is used to set the limit to group data points into a single slice. The grouped segment is labeled as “Others” in legend and toggled as any other segment. The default value of the [`GroupTo`]() property is [`double.NAN`], and [`GroupMode']() property is Value.
+The small segments in the pie chart can be grouped into “others” category using the [`GroupTo`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CircularSeries~GroupTo.html) and [`GroupMode`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CircularSeries~GroupMode.html) properties of PieSeries. The [`GroupMode`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CircularSeries~GroupMode.html) property is used to specify the grouping type based on slice angle, actual data point value, or percentage, and the [`GroupTo`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CircularSeries~GroupTo.html) property is used to set the limit to group data points into a single slice. The grouped segment is labeled as “Others” in legend and toggled as any other segment. The default value of the [`GroupTo`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CircularSeries~GroupTo.html) property is [`double.NAN`], and [`GroupMode'](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CircularSeries~GroupMode.html) property is Value.
 
 ## Doughnut Chart
 
@@ -2339,13 +2339,13 @@ DoughnutSeries doughnutSeries = new DoughnutSeries()
 
 ![](charttypes_images/charttypes_img32.png)
 
-## Group small data points into “others”
+### Group small data points into “others”
 
-The small segments in the doughnut chart can be grouped into “others” category using the [`GroupTo`]() and [`GroupMode`]() properties of DoughnutSeries. The [`GroupMode`]() property is used to specify the grouping type based on slice angle, actual data point value, or percentage, and the [`GroupTo`]() property is used to set the limit to group data points into a single slice. The grouped segment is labeled as “Others” in legend and toggled as any other segment. The default value of the [`GroupTo`]() property is [`double.NAN`], and [`GroupMode']() property is Value.
+The small segments in the doughnut chart can be grouped into “others” category using the [`GroupTo`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CircularSeries~GroupTo.html) and [`GroupMode`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CircularSeries~GroupMode.html) properties of DoughnutSeries. The [`GroupMode`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CircularSeries~GroupMode.html) property is used to specify the grouping type based on slice angle, actual data point value, or percentage, and the [`GroupTo`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CircularSeries~GroupTo.html) property is used to set the limit to group data points into a single slice. The grouped segment is labeled as “Others” in legend and toggled as any other segment. The default value of the [`GroupTo`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CircularSeries~GroupTo.html) property is [`double.NAN`], and [`GroupMode'](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CircularSeries~GroupMode.html) property is Value.
 
-## Add view to the center of doughnut chart
+### Add view to the center of doughnut chart
 
-Any view can be added to the center of doughnut chart using the [`CenterView`]() property of [`DoughnutSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DoughnutSeries.html). The binding context of the [`CenterView`]() will be the respective [`DoughnutSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DoughnutSeries.html).
+Any view can be added to the center of doughnut chart using the [`CenterView`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DoughnutSeries~CenterView.html) property of [`DoughnutSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DoughnutSeries.html). The binding context of the [`CenterView`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DoughnutSeries~CenterView.html) will be the respective [`DoughnutSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DoughnutSeries.html).
 
 {% tabs %} 
 

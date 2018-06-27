@@ -89,6 +89,10 @@ This page lists the assemblies required for each control to be referred in each 
 <td>iOS</td>
 <td>Syncfusion.SfImageEditor.XForms.iOS.dll<br/>Syncfusion.SfImageEditor.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfImageEditor.UWP.dll<br/>Syncfusion.SfImageEditor.XForms.UWP.dll<br/>Syncfusion.SfImageEditor.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
 </table>
 
 ## SfDataGrid

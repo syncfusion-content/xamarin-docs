@@ -326,7 +326,7 @@ Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.macOS.dll<br/></td>
 
 <dl>
   <dt>NuGet</dt>
-  <dd>Syncfusion.Xamarin.PDF</dd>
+  <dd>Syncfusion.Xamarin.Pdf</dd>
 </dl>
 
 **Assemblies**
@@ -1011,7 +1011,7 @@ Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.macOS.dll<br/></td>
 <td>Syncfusion.DataSource.Portable.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.SfListView.XForms.UWP.dll<br/>Syncfusion.SfListView.XForms.dll<br/></td>
 </tr>
 <tr>
-<td>macOS renderer</td>
+<td>macOS</td>
 <td>pcl\Syncfusion.DataSource.Portable.dll<br/>pcl\Syncfusion.Core.XForms.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfListView.XForms.dll<br/>macOS\Syncfusion.Core.XForms.macOS.dll<br/>macOS\Syncfusion.SfListView.XForms.macOS<br/></td>
 </tr>
 </table>
@@ -1201,18 +1201,74 @@ Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.macOS.dll<br/></td>
 <table>
 <tr>
 <td>PCL</td>
-<td>Syncfusion.SfMaskedEdit.XForms.dll<br/></td>
+<td>Syncfusion.SfMaskedEdit.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 <tr>
 <td>Android</td>
-<td>Syncfusion.SfMaskedEdit.XForms.Android.dll<br/>Syncfusion.SfMaskedEdit.XForms.dll<br/></td>
+<td>Syncfusion.SfMaskedEdit.XForms.Android.dll<br/>Syncfusion.SfMaskedEdit.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 <tr>
 <td>iOS</td>
-<td>Syncfusion.SfMaskedEdit.XForms.iOS.dll<br/>Syncfusion.SfMaskedEdit.XForms.dll<br/></td>
+<td>Syncfusion.SfMaskedEdit.XForms.iOS.dll<br/>Syncfusion.SfMaskedEdit.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 <tr>
 <td>UWP</td>
-<td>Syncfusion.SfMaskedEdit.XForms.UWP.dll<br/>Syncfusion.SfMaskedEdit.XForms.dll<br/></td>
+<td>Syncfusion.SfMaskedEdit.XForms.UWP.dll<br/>Syncfusion.SfMaskedEdit.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+</table>
+
+## SfCheckBox
+
+<dl>
+  <dt>NuGet</dt>
+  <dd>Syncfusion.Xamarin.Buttons</dd>
+</dl>
+
+**Assemblies**
+
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Buttons.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Buttons.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Buttons.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+</table>
+
+## SfRadioButton
+
+<dl>
+  <dt>NuGet</dt>
+  <dd>Syncfusion.Xamarin.Buttons</dd>
+</dl>
+
+**Assemblies**
+
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Buttons.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Buttons.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Buttons.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 </table>

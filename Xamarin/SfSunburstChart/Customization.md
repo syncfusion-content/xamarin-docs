@@ -30,48 +30,48 @@ The following code shows applying the TomatoSpectrum [`Palette`](https://help.sy
 
 {% highlight xaml %}
 
-    <sunburst:SfSunburstChart x:Name="sunburstChart" ItemsSource="{Binding DataSource}" 
+  <sunburst:SfSunburstChart x:Name="sunburstChart" ItemsSource="{Binding DataSource}" 
                                   ValueMemberPath="EmployeesCount" >
 
-               <sunburst:SfSunburstChart.Levels>
-                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="Country"/>
-                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobDescription"/>
-                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobGroup"/>
-                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobRole"/>
-                </sunburst:SfSunburstChart.Levels>
+      <sunburst:SfSunburstChart.Levels>
+          <sunburst:SunburstHierarchicalLevel GroupMemberPath="Country"/>
+          <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobDescription"/>
+          <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobGroup"/>
+          <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobRole"/>
+      </sunburst:SfSunburstChart.Levels>
 
-                 <sunburst:SfSunburstChart.DataLabel>
-                    <sunburst:SunburstChartDataLabel x:Name="dataLabel" ShowLabel="True"></sunburst:SunburstChartDataLabel>
-                </sunburst:SfSunburstChart.DataLabel>
+      <sunburst:SfSunburstChart.DataLabel>
+          <sunburst:SunburstChartDataLabel x:Name="dataLabel" ShowLabel="True"></sunburst:SunburstChartDataLabel>
+      </sunburst:SfSunburstChart.DataLabel>
 
-                 <sunburst:SfSunburstChart.ColorModel>
-                    <sunburst:SunburstChartColorModel Palette="TomatoSpectrum"></sunburst:SunburstChartColorModel>
-                </sunburst:SfSunburstChart.ColorModel>
-               
-    </sunburst:SfSunburstChart>
+      <sunburst:SfSunburstChart.ColorModel>
+          <sunburst:SunburstChartColorModel Palette="TomatoSpectrum"></sunburst:SunburstChartColorModel>
+      </sunburst:SfSunburstChart.ColorModel>
+
+  </sunburst:SfSunburstChart>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-            SfSunburstChart sunburstChart = new SfSunburstChart();
-            sunburstChart.SetBinding(SfSunburstChart.ItemsSourceProperty, "DataSource");
-            sunburstChart.ValueMemberPath = "EmployeesCount";
+   SfSunburstChart sunburstChart = new SfSunburstChart();
+   sunburstChart.SetBinding(SfSunburstChart.ItemsSourceProperty, "DataSource");
+   sunburstChart.ValueMemberPath = "EmployeesCount";
             
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country" });
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription" });
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup" });
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole" });           
+   sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country" });
+   sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription" });
+   sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup" });
+   sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole" });           
 
-            SunburstChartColorModel colorModel = new SunburstChartColorModel();
-            colorModel.Palette = SunburstColorPalette.TomatoSpectrum;
-            sunburstChart.ColorModel = colorModel;
+   SunburstChartColorModel colorModel = new SunburstChartColorModel();
+   colorModel.Palette = SunburstColorPalette.TomatoSpectrum;
+   sunburstChart.ColorModel = colorModel;
 
-            SunburstChartDataLabel label = new SunburstChartDataLabel();
-            label.ShowLabel = true;
-            sunburstChart.DataLabel = label;
+   SunburstChartDataLabel label = new SunburstChartDataLabel();
+   label.ShowLabel = true;
+   sunburstChart.DataLabel = label;
 
-            this.Content = sunburstChart;
+   this.Content = sunburstChart;
 
 {% endhighlight %}
 
@@ -90,17 +90,16 @@ The start angle and end angle of the sunburst chart can be adjusted by using the
   <sunburst:SfSunburstChart x:Name="sunburstChart" ItemsSource="{Binding DataSource}" 
                                   ValueMemberPath="EmployeesCount" StartAngle="180" EndAngle="360">
 
-                <sunburst:SfSunburstChart.Levels>
-                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="Country"/>
-                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobDescription"/>
-                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobGroup"/>
-                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobRole"/>
-                </sunburst:SfSunburstChart.Levels>
+     <sunburst:SfSunburstChart.Levels>
+         <sunburst:SunburstHierarchicalLevel GroupMemberPath="Country"/>
+         <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobDescription"/>
+         <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobGroup"/>
+         <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobRole"/>
+     </sunburst:SfSunburstChart.Levels>
 
-                <sunburst:SfSunburstChart.DataLabel>
-                    <sunburst:SunburstChartDataLabel x:Name="dataLabel" ShowLabel="True"></sunburst:SunburstChartDataLabel>
-                </sunburst:SfSunburstChart.DataLabel>
-
+     <sunburst:SfSunburstChart.DataLabel>
+         <sunburst:SunburstChartDataLabel x:Name="dataLabel" ShowLabel="True"></sunburst:SunburstChartDataLabel>
+     </sunburst:SfSunburstChart.DataLabel>
 
   </sunburst:SfSunburstChart>
 
@@ -108,23 +107,23 @@ The start angle and end angle of the sunburst chart can be adjusted by using the
 
 {% highlight C# %}
 
-            SfSunburstChart sunburstChart = new SfSunburstChart();
-            sunburstChart.SetBinding(SfSunburstChart.ItemsSourceProperty, "DataSource");
-            sunburstChart.ValueMemberPath = "EmployeesCount";
+  SfSunburstChart sunburstChart = new SfSunburstChart();
+  sunburstChart.SetBinding(SfSunburstChart.ItemsSourceProperty, "DataSource");
+  sunburstChart.ValueMemberPath = "EmployeesCount";
 
-            sunburstChart.StartAngle = 180;
-            sunburstChart.EndAngle = 360;
+  sunburstChart.StartAngle = 180;
+  sunburstChart.EndAngle = 360;
 
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country" });
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription" });
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup" });
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole" });
 
-            SunburstChartDataLabel label = new SunburstChartDataLabel();
-            label.ShowLabel = true;
-            sunburstChart.DataLabel = label;
+  SunburstChartDataLabel label = new SunburstChartDataLabel();
+  label.ShowLabel = true;
+  sunburstChart.DataLabel = label;
 
-            this.Content = sunburstChart;
+  this.Content = sunburstChart;
 
 {% endhighlight %}
 
@@ -140,42 +139,42 @@ The sunburst chart allows you to customize the radius by using the [`Radius`](ht
 
 {% highlight xaml %}
 
-      <sunburst:SfSunburstChart x:Name="sunburstChart" ItemsSource="{Binding DataSource}" 
+  <sunburst:SfSunburstChart x:Name="sunburstChart" ItemsSource="{Binding DataSource}" 
                                   ValueMemberPath="EmployeesCount"  Radius="0.6">
 
-                <sunburst:SfSunburstChart.Levels>
-                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="Country"/>
-                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobDescription"/>
-                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobGroup"/>
-                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobRole"/>
-                </sunburst:SfSunburstChart.Levels>
+       <sunburst:SfSunburstChart.Levels>
+            <sunburst:SunburstHierarchicalLevel GroupMemberPath="Country"/>
+            <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobDescription"/>
+            <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobGroup"/>
+            <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobRole"/>
+       </sunburst:SfSunburstChart.Levels>
 
-                <sunburst:SfSunburstChart.DataLabel>
-                    <sunburst:SunburstChartDataLabel x:Name="dataLabel" ShowLabel="True"></sunburst:SunburstChartDataLabel>
-                </sunburst:SfSunburstChart.DataLabel>
+       <sunburst:SfSunburstChart.DataLabel>
+            <sunburst:SunburstChartDataLabel x:Name="dataLabel" ShowLabel="True"></sunburst:SunburstChartDataLabel>
+       </sunburst:SfSunburstChart.DataLabel>
 
-      </sunburst:SfSunburstChart>
+  </sunburst:SfSunburstChart>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-            SfSunburstChart sunburstChart = new SfSunburstChart();
-            sunburstChart.SetBinding(SfSunburstChart.ItemsSourceProperty, "DataSource");
-            sunburstChart.ValueMemberPath = "EmployeesCount";
+  SfSunburstChart sunburstChart = new SfSunburstChart();
+  sunburstChart.SetBinding(SfSunburstChart.ItemsSourceProperty, "DataSource");
+  sunburstChart.ValueMemberPath = "EmployeesCount";
 
-            sunburstChart.Radius = 0.6;
+  sunburstChart.Radius = 0.6;
           
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country" });
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription" });
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup" });
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole" });
 
-            SunburstChartDataLabel label = new SunburstChartDataLabel();
-            label.ShowLabel = true;
-            sunburstChart.DataLabel = label;
+  SunburstChartDataLabel label = new SunburstChartDataLabel();
+  label.ShowLabel = true;
+  sunburstChart.DataLabel = label;
 
-            this.Content = sunburstChart;
+  this.Content = sunburstChart;
 
 {% endhighlight %}
 
@@ -191,42 +190,42 @@ The sunburst chart allows you to customize the inner radius using the [`InnerRad
 
 {% highlight xaml %}
 
-     <sunburst:SfSunburstChart x:Name="sunburstChart" ItemsSource="{Binding DataSource}" 
+  <sunburst:SfSunburstChart x:Name="sunburstChart" ItemsSource="{Binding DataSource}" 
                                   ValueMemberPath="EmployeesCount"  InnerRadius="0.5">
 
-                <sunburst:SfSunburstChart.Levels>
-                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="Country"/>
-                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobDescription"/>
-                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobGroup"/>
-                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobRole"/>
-                </sunburst:SfSunburstChart.Levels>
+     <sunburst:SfSunburstChart.Levels>
+         <sunburst:SunburstHierarchicalLevel GroupMemberPath="Country"/>
+         <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobDescription"/>
+         <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobGroup"/>
+         <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobRole"/>
+     </sunburst:SfSunburstChart.Levels>
 
-                <sunburst:SfSunburstChart.DataLabel>
-                    <sunburst:SunburstChartDataLabel x:Name="dataLabel" ShowLabel="True"></sunburst:SunburstChartDataLabel>
-                </sunburst:SfSunburstChart.DataLabel>
+    <sunburst:SfSunburstChart.DataLabel>
+         <sunburst:SunburstChartDataLabel x:Name="dataLabel" ShowLabel="True"></sunburst:SunburstChartDataLabel>
+    </sunburst:SfSunburstChart.DataLabel>
 
-     </sunburst:SfSunburstChart>
+  </sunburst:SfSunburstChart>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-            SfSunburstChart sunburstChart = new SfSunburstChart();
-            sunburstChart.SetBinding(SfSunburstChart.ItemsSourceProperty, "DataSource");
-            sunburstChart.ValueMemberPath = "EmployeesCount";
+  SfSunburstChart sunburstChart = new SfSunburstChart();
+  sunburstChart.SetBinding(SfSunburstChart.ItemsSourceProperty, "DataSource");
+  sunburstChart.ValueMemberPath = "EmployeesCount";
 
-            sunburstChart.InnerRadius = 0.5;
+  sunburstChart.InnerRadius = 0.5;
           
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country" });
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription" });
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup" });
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole" });
 
-            SunburstChartDataLabel label = new SunburstChartDataLabel();
-            label.ShowLabel = true;
-            sunburstChart.DataLabel = label;
+  SunburstChartDataLabel label = new SunburstChartDataLabel();
+  label.ShowLabel = true;
+  sunburstChart.DataLabel = label;
 
-            this.Content = sunburstChart;
+  this.Content = sunburstChart;
 
 {% endhighlight %}
 
@@ -242,43 +241,43 @@ Stroke color and stroke width of the sunburst chart can be customized using [`St
 
 {% highlight xaml %}
 
-      <sunburst:SfSunburstChart x:Name="sunburstChart" ItemsSource="{Binding DataSource}" 
+  <sunburst:SfSunburstChart x:Name="sunburstChart" ItemsSource="{Binding DataSource}" 
                                   ValueMemberPath="EmployeesCount"  StrokeColor="Black" StrokeWidth="2">
 
-                <sunburst:SfSunburstChart.Levels>
-                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="Country"/>
-                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobDescription"/>
-                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobGroup"/>
-                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobRole"/>
-                </sunburst:SfSunburstChart.Levels>
+     <sunburst:SfSunburstChart.Levels>
+         <sunburst:SunburstHierarchicalLevel GroupMemberPath="Country"/>
+         <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobDescription"/>
+         <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobGroup"/>
+         <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobRole"/>
+     </sunburst:SfSunburstChart.Levels>
 
-                <sunburst:SfSunburstChart.DataLabel>
-                    <sunburst:SunburstChartDataLabel x:Name="dataLabel" ShowLabel="True"></sunburst:SunburstChartDataLabel>
-                </sunburst:SfSunburstChart.DataLabel>
+     <sunburst:SfSunburstChart.DataLabel>
+         <sunburst:SunburstChartDataLabel x:Name="dataLabel" ShowLabel="True"></sunburst:SunburstChartDataLabel>
+     </sunburst:SfSunburstChart.DataLabel>
 
-        </sunburst:SfSunburstChart>
+  </sunburst:SfSunburstChart>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-            SfSunburstChart sunburstChart = new SfSunburstChart();
-            sunburstChart.SetBinding(SfSunburstChart.ItemsSourceProperty, "DataSource");
-            sunburstChart.ValueMemberPath = "EmployeesCount";
+  SfSunburstChart sunburstChart = new SfSunburstChart();
+  sunburstChart.SetBinding(SfSunburstChart.ItemsSourceProperty, "DataSource");
+  sunburstChart.ValueMemberPath = "EmployeesCount";
 
-            sunburstChart.StrokeColor = Color.Black;
-            sunburstChart.StrokeWidth = 2;                       
+  sunburstChart.StrokeColor = Color.Black;
+  sunburstChart.StrokeWidth = 2;                       
           
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country" });
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription" });
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup" });
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole" });
 
-            SunburstChartDataLabel label = new SunburstChartDataLabel();
-            label.ShowLabel = true;
-            sunburstChart.DataLabel = label;
+  SunburstChartDataLabel label = new SunburstChartDataLabel();
+  label.ShowLabel = true;
+  sunburstChart.DataLabel = label;
 
-            this.Content = sunburstChart;
+  this.Content = sunburstChart;
 
 {% endhighlight %}
 

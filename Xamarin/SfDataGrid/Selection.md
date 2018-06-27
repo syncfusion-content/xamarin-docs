@@ -53,8 +53,6 @@ dataGrid.SelectionMode = SelectionMode.Multiple;
 {% endhighlight %}
 {% endtabs %}
 
-The following image shows selection functionality in the data grid:
-
 ![](SfDataGrid_images/MultipleSelection.png)
 
 ## Getting selected rows 

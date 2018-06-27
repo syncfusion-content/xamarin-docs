@@ -23,7 +23,7 @@ This page lists the assemblies required for each control to be referred in each 
 <table>
 <tr>
 <td>PCL</td>
-<td>Syncfusion.SfChart.XForms.dll<br/></td>
+<td>Syncfusion.SfChart.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/></td>
 </tr>
 <tr>
 <td>Android</td>
@@ -32,6 +32,12 @@ This page lists the assemblies required for each control to be referred in each 
 <tr>
 <td>iOS</td>
 <td>Syncfusion.SfChart.XForms.iOS.dll<br/>Syncfusion.SfChart.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>macOS</td>
+<td>Syncfusion.SfChart.XForms.macOS.dll<br/>
+Syncfusion.SfChart.XForms.dll<br/>
+Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.macOS.dll<br/></td>
 </tr>
 <tr>
 <td>UWP</td>
@@ -1066,7 +1072,7 @@ This page lists the assemblies required for each control to be referred in each 
 <table>
 <tr>
 <td>PCL</td>
-<td>Syncfusion.SfChart.XForms.dll<br/></td>
+<td>Syncfusion.SfChart.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/></td>
 </tr>
 <tr>
 <td>Android</td>

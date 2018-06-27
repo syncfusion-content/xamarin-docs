@@ -142,7 +142,19 @@ To handle the Accept button, follow the procedure:
 * Return false to prevent pop-up from closing, and `Execute()` method is not fired.
 
 {% tabs %}
+
+{% highlight xaml %}
+
+<sfPopup:SfPopupLayout x:Name="popUpLayout">
+    <sfPopup:SfPopupLayout.PopupView>
+        <sfPopup:PopupView AppearanceMode="TwoButton" />
+    </sfPopup:SfPopupLayout.PopupView>
+</sfPopup:SfPopupLayout>
+
+{% endhighlight %}
+
 {% highlight c# %}
+
 public MainPage()
 {
     ....
@@ -151,11 +163,15 @@ public MainPage()
     popupLayout.PopupView.AcceptCommand = new AcceptButtonCustomCommand();
     ....
 }
+
 {% endhighlight %}
+
 {% endtabs %}
 
 {% tabs %}
+
 {% highlight c# %}
+
 //Accept Button Event handler
 
 public class AcceptButtonCustomCommand : ICommand
@@ -172,7 +188,9 @@ public class AcceptButtonCustomCommand : ICommand
       // You can write your set of codes that needs to be executed
     }
 }
+
 {% endhighlight %}
+
 {% endtabs %}
 
 ### Decline command
@@ -186,7 +204,19 @@ To handle the Decline button, follow the procedure:
 * Return false to prevent pop-up from closing, and `Execute()` method is not fired.
 
 {% tabs %}
+
+{% highlight xaml %}
+
+<sfPopup:SfPopupLayout x:Name="popUpLayout">
+    <sfPopup:SfPopupLayout.PopupView>
+        <sfPopup:PopupView AppearanceMode="TwoButton" />
+    </sfPopup:SfPopupLayout.PopupView>
+</sfPopup:SfPopupLayout>
+
+{% endhighlight %}
+
 {% highlight c# %}
+
 public MainPage()
 {
     ....
@@ -195,9 +225,15 @@ public MainPage()
     popupLayout.PopupView.DeclineCommand = new DeclineButtonCustomCommand();
     ....
 }
+
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight c# %}
+
 //Decline Button Event handler
 
 public class DeclineButtonCustomCommand : ICommand
@@ -215,4 +251,5 @@ public class DeclineButtonCustomCommand : ICommand
     }
 }
 {% endhighlight %}
+
 {% endtabs %}

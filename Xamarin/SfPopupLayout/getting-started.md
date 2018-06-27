@@ -293,6 +293,25 @@ Any view can be added as pop-up content by using the [SfPopupLayout.PopupView.Co
 
 {% endhighlight %}
 
+{% tabs %}
+
+{% highlight xaml %}
+
+<sfPopup:SfPopupLayout x:Name="popUpLayout">
+    <sfPopup:SfPopupLayout.PopupView>
+        <sfPopup:PopupView>
+            <sfPopup:PopupView.ContentTemplate>
+                <DataTemplate>
+                    <Label Text="This is SfPopupLayout" BackgroundColor="SkyBlue"
+                           HorizontalTextAlignment="Center"/>
+                </DataTemplate>
+            </sfPopup:PopupView.ContentTemplate>
+        </sfPopup:PopupView>
+    </sfPopup:SfPopupLayout.PopupView>
+  </sfPopup:SfPopupLayout>
+
+{% endhighlight %}
+
 {% highlight c# %}
 using Syncfusion.XForms.PopupLayout;
 
@@ -326,7 +345,10 @@ namespace GettingStarted
         }
     }
 }
+
 {% endhighlight %}
+
+{% endtabs %}
 
 Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
@@ -347,3 +369,29 @@ Available built-in animations will be applied to the SfPopupLayout when the Popu
 * [None](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AnimationMode.html): Animations will not be applied.
 
 More information for pop-up animations is in this [link](https://help.syncfusion.com/xamarin/sfpopuplayout/popup-animations).
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<sfPopup:SfPopupLayout x:Name="popUpLayout">
+    <sfPopup:SfPopupLayout.PopupView>
+        <sfPopup:PopupView AnimationMode="Fade" />
+    </sfPopup:SfPopupLayout.PopupView>
+</sfPopup:SfPopupLayout>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+//MainPage.cs
+
+public MainPage()
+{
+    InitializeComponent();
+    popupLayout.PopupView.AnimationMode = AnimationMode.Fade;
+}
+
+{% endhighlight %}
+
+{% endtabs %}

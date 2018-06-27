@@ -1165,6 +1165,7 @@ Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.macOS.dll<br/></td>
 <dl>
   <dt>NuGet</dt>
   <dd>Syncfusion.Xamarin.SfDiagram</dd>
+  <dd>Newtonsoft.Json</dd>
 </dl>
 
 **Assemblies**

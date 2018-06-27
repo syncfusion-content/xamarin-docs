@@ -193,3 +193,40 @@ To set the EnableDataVirtualization property, follow the code example:
 datagrid.EnableDataVirtualization = true;
 {% endhighlight %}
 {% endtabs %}
+
+### NotificationSubscriptionMode
+
+The data grid allows you to enable or disable the INotifyPropertyChanged in the collection by using the [SfDataGrid.NotificationSubscriptionMode](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Data.Portable~Syncfusion.Data.NotificationSubscriptionMode.html) property.
+
+<table>
+<tr>
+<th>NotificationSubscriptionMode</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>CollectionChange</td>
+<td>Denotes view listens the System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged event of SoureCollection. </td>
+</tr>
+<tr>
+<td>None</td>
+<td>Denotes System.ComponentModel.INotifyPropertyChanging.PropertyChanging, System.ComponentModel.INotifyPropertyChanged.PropertyChanged and System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged events will not be listened.</td>
+</tr>
+<tr>
+<td>PropertyChange</td>
+<td>Denotes view listens the System.ComponentModel.INotifyPropertyChanging.PropertyChanging and System.ComponentModel.INotifyPropertyChanged.PropertyChanged events of data object.</td>
+</tr>
+</table>
+
+To set the NotificationSubscriptionMode property, follow the code example:
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AutoGenerateColumns="True"
+                       ItemsSource="{Binding EmployeeDetails}"
+                       NotificationSubscriptionMode="CollectionChange">
+{% endhighlight %} 
+{% highlight c# %}
+dataGrid.NotificationSubscriptionMode = NotificationSubscriptionMode.CollectionChange;
+{% endhighlight %}
+{% endtabs %}

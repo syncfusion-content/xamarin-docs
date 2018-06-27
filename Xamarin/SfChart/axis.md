@@ -525,10 +525,10 @@ chart.PrimaryAxis = new DateTimeAxis() { RangePadding = DateTimeRangePadding.Add
 
 ## Date-time category axis
 
-[`DateTimeCategoryAxis`]() is a unique type of axis used mainly with financial series. All the data points are plotted with equal spaces, similar to CategoryAxis, thereby removing space for missing dates. Intervals and range for the axis calculated to similar of DateTimeAxis. There are no visual gaps between points, even when the difference between two points is more than a year. The following APIs are used for customize the interval of DateTimeCategoryAxis.
+The [`DateTimeCategoryAxis`]() is a unique type of axis used mainly with financial series. Like CategoryAxis, all the data points are plotted with equal spaces by removing space for missing dates. Intervals and ranges for the axis are calculated similar to DateTimeAxis. There will be no visual gaps between points even when the difference between two points is more than a year. The following APIs are used to customize the interval of DateTimeCategoryAxis.
 
-•	[`Interval`]() - used to get or set the double value that represents the interval between the labels.
-•	[`IntervalType`]() - used to get or set the DateTimeIntervalType that represents the type of the interval to be displayed.
+• [`Interval`]() - Gets or sets the double value that represents the interval between the labels.
+• [`IntervalType`]() - Gets or sets the DateTimeIntervalType that represents the type of the interval to be displayed.
 
 {% tabs %} 
 
@@ -551,9 +551,9 @@ chart.PrimaryAxis = xAxis;
 
 {% endtabs %}
 
-## Logarithmic Axis
+## Logarithmic axis
 
-Logarithmic axis uses logarithmic scale and displays numbers as axis labels.
+Logarithmic axis uses logarithmic scale and displays numbers as axis labels.
 
 {% tabs %} 
 

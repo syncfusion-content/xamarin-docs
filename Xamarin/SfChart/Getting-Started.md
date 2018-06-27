@@ -46,6 +46,25 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% endhighlight %}
 
+### macOS
+
+To launch the chart in macOS, call the SfChartRenderer.Init() method in the DidFinishLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework initialization and before the LoadApplication method is called as demonstrated in the following code sample:
+
+{% highlight C# %} 
+
+public override void DidFinishLaunching(NSNotification notification)
+{ 
+    … 
+    Forms.Init();
+
+    Syncfusion.SfChart.XForms.MacOS.SfChartRenderer.Init();
+
+    LoadApplication(new App());          
+    …
+}
+
+{% endhighlight %}
+
 ### Universal Windows Platform (UWP)
 
 To deploy the chart in `Release` mode, you need to initialize the chart assemblies in App.xaml.cs in UWP project as shown in the below code snippets.

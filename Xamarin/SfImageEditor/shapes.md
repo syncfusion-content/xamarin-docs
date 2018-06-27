@@ -14,7 +14,7 @@ You can annotate any path on an image by using free hand drawing, and adding sha
 * From Toolbar
 * Using Code
 
-## How to add a shape (Rectangle, Circle, Arrow, etc.) over an image
+## Adding shapes (Rectangle, Circle, Arrow, etc.) over an image
 
 ### From Toolbar
 
@@ -82,7 +82,7 @@ N> `FillColor` property is applicable only if the ShapeType is `Rectangle` or `C
 
 ![SfImageEditor](ImageEditor_images/path.gif)
 
-## How to delete a shape or text from the view
+## Deleting the shape or text from the view
 
 You can delete a selected shape or text from the view in the following two ways:
 

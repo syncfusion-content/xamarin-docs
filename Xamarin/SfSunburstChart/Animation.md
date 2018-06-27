@@ -17,22 +17,22 @@ The following code shows enabling animation.
 
 {% highlight xaml %}
 
-    <sunburst:SfSunburstChart x:Name="sunburstChart" ItemsSource="{Binding DataSource}" 
+  <sunburst:SfSunburstChart x:Name="sunburstChart" ItemsSource="{Binding DataSource}" 
                                   ValueMemberPath="EmployeesCount"  EnableAnimation="True">              
                
-    </sunburst:SfSunburstChart>
+  </sunburst:SfSunburstChart>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-            SfSunburstChart sunburstChart = new SfSunburstChart();
-            sunburstChart.SetBinding(SfSunburstChart.ItemsSourceProperty, "DataSource");
-            sunburstChart.ValueMemberPath = "EmployeesCount";
+  SfSunburstChart sunburstChart = new SfSunburstChart();
+  sunburstChart.SetBinding(SfSunburstChart.ItemsSourceProperty, "DataSource");
+  sunburstChart.ValueMemberPath = "EmployeesCount";
 
-            sunburstChart.EnableAnimation = true;
+  sunburstChart.EnableAnimation = true;
                        
-            this.Content = sunburstChart;
+  this.Content = sunburstChart;
 
 {% endhighlight %}
 
@@ -48,20 +48,20 @@ Animation duration can be controlled using the [`AnimationDuration`](https://hel
 
   <sunburst:SfSunburstChart x:Name="sunburstChart" ItemsSource="{Binding DataSource}" AnimationDuration="2"
                                   ValueMemberPath="EmployeesCount"  EnableAnimation="True">
-    </sunburst:SfSunburstChart>
+  </sunburst:SfSunburstChart>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-            SfSunburstChart sunburstChart = new SfSunburstChart();
-            sunburstChart.SetBinding(SfSunburstChart.ItemsSourceProperty, "DataSource");
-            sunburstChart.ValueMemberPath = "EmployeesCount";
+  SfSunburstChart sunburstChart = new SfSunburstChart();
+  sunburstChart.SetBinding(SfSunburstChart.ItemsSourceProperty, "DataSource");
+  sunburstChart.ValueMemberPath = "EmployeesCount";
 
-            sunburstChart.EnableAnimation = true;
-            sunburstChart.AnimationDuration = 2;           
+  sunburstChart.EnableAnimation = true;
+  sunburstChart.AnimationDuration = 2;           
 
-            this.Content = sunburstChart;
+  this.Content = sunburstChart;
 
 {% endhighlight %}
 
@@ -73,43 +73,43 @@ Below snippet is the complete code for generating the following output.
 
 {% highlight xaml %}
 
-    <sunburst:SfSunburstChart x:Name="sunburstChart" ItemsSource="{Binding DataSource}" AnimationDuration="2"
+  <sunburst:SfSunburstChart x:Name="sunburstChart" ItemsSource="{Binding DataSource}" AnimationDuration="2"
                                   ValueMemberPath="EmployeesCount"  EnableAnimation="True">
 
-                 <sunburst:SfSunburstChart.Levels>
-                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="Country"/>
-                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobDescription"/>
-                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobGroup"/>
-                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobRole"/>
-                </sunburst:SfSunburstChart.Levels>
+         <sunburst:SfSunburstChart.Levels>
+            <sunburst:SunburstHierarchicalLevel GroupMemberPath="Country"/>
+            <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobDescription"/>
+            <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobGroup"/>
+            <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobRole"/>
+        </sunburst:SfSunburstChart.Levels>
 
-                <sunburst:SfSunburstChart.DataLabel>
-                    <sunburst:SunburstChartDataLabel x:Name="dataLabel" ShowLabel="True"></sunburst:SunburstChartDataLabel>
-                </sunburst:SfSunburstChart.DataLabel>
-
-    </sunburst:SfSunburstChart>
+        <sunburst:SfSunburstChart.DataLabel>
+            <sunburst:SunburstChartDataLabel x:Name="dataLabel" ShowLabel="True"></sunburst:SunburstChartDataLabel>
+        </sunburst:SfSunburstChart.DataLabel>
+                
+  </sunburst:SfSunburstChart>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-            SfSunburstChart sunburstChart = new SfSunburstChart();
-            sunburstChart.SetBinding(SfSunburstChart.ItemsSourceProperty, "DataSource");
-            sunburstChart.ValueMemberPath = "EmployeesCount";
+  SfSunburstChart sunburstChart = new SfSunburstChart();
+  sunburstChart.SetBinding(SfSunburstChart.ItemsSourceProperty, "DataSource");
+  sunburstChart.ValueMemberPath = "EmployeesCount";
 
-            sunburstChart.EnableAnimation = true;
-            sunburstChart.AnimationDuration = 2;
+  sunburstChart.EnableAnimation = true;
+  sunburstChart.AnimationDuration = 2;
 
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country" });
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription" });
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup" });
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole" });
 
-            SunburstChartDataLabel label = new SunburstChartDataLabel();
-            label.ShowLabel = true;
-            sunburstChart.DataLabel = label;
+  SunburstChartDataLabel label = new SunburstChartDataLabel();
+  label.ShowLabel = true;
+  sunburstChart.DataLabel = label;
 
-            this.Content = sunburstChart;
+  this.Content = sunburstChart;
 
 {% endhighlight %}
 

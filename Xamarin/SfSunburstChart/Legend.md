@@ -17,17 +17,17 @@ The following code explains how to initialize the legends.
 
 {% highlight xaml %}
 
-      <sunburst:SfSunburstChart.Legend>
-      <sunburst:SunburstChartLegend >
+  <sunburst:SfSunburstChart.Legend>
+      <sunburst:SunburstChartLegend>
       </sunburst:SunburstChartLegend>
-      </sunburst:SfSunburstChart.Legend>
+  </sunburst:SfSunburstChart.Legend>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-SunburstChartLegend legend = new SunburstChartLegend();
-sunburstChart.Legend = legend;
+  SunburstChartLegend legend = new SunburstChartLegend();
+  sunburstChart.Legend = legend;
 
 {% endhighlight %}
 
@@ -43,18 +43,18 @@ The following code shows how to control the visibility of legend.
 
 {% highlight xaml %}
 
-      <sunburst:SfSunburstChart.Legend>
-                    <sunburst:SunburstChartLegend IsVisible="True" >
-                    </sunburst:SunburstChartLegend>
-      </sunburst:SfSunburstChart.Legend>
+  <sunburst:SfSunburstChart.Legend>
+       <sunburst:SunburstChartLegend IsVisible="True" >
+       </sunburst:SunburstChartLegend>
+  </sunburst:SfSunburstChart.Legend>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-SunburstChartLegend legend = new SunburstChartLegend();
-legend.IsVisible = true;
-sunburstChart.Legend = legend;
+  SunburstChartLegend legend = new SunburstChartLegend();
+  legend.IsVisible = true;
+  sunburstChart.Legend = legend;
 
 {% endhighlight %}
 
@@ -73,20 +73,20 @@ The following code shows customizing the legend position.
 
 {% highlight xaml %}
 
-     <sunburst:SfSunburstChart.Legend>
-                    <sunburst:SunburstChartLegend x:Name="legend" IsVisible="True"  
-                                                 LegendPosition="Left" >
-                    </sunburst:SunburstChartLegend>
-    </sunburst:SfSunburstChart.Legend>
+  <sunburst:SfSunburstChart.Legend>
+       <sunburst:SunburstChartLegend x:Name="legend" IsVisible="True"  
+                      LegendPosition="Left" >
+       </sunburst:SunburstChartLegend>
+  </sunburst:SfSunburstChart.Legend>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-            SunburstChartLegend legend = new SunburstChartLegend();
-            legend.IsVisible = true;
-            legend.LegendPosition = SunburstDockPosition.Left;
-            sunburstChart.Legend = legend;
+  SunburstChartLegend legend = new SunburstChartLegend();
+  legend.IsVisible = true;
+  legend.LegendPosition = SunburstDockPosition.Left;
+  sunburstChart.Legend = legend;
 
 {% endhighlight %}
 
@@ -112,22 +112,21 @@ The following predefined shapes are available in the IconType property:
 
 {% highlight xaml %}
 
-    <sunburst:SfSunburstChart.Legend>
-                    <sunburst:SunburstChartLegend x:Name="legend" IsVisible="True"  
-                                                 IconType="Diamond" >
-                    </sunburst:SunburstChartLegend>
-                </sunburst:SfSunburstChart.Legend>
+  <sunburst:SfSunburstChart.Legend>
+    <sunburst:SunburstChartLegend x:Name="legend" IsVisible="True"  
+                         IconType="Diamond" >
+    </sunburst:SunburstChartLegend>
+  </sunburst:SfSunburstChart.Legend>
 
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-            SunburstChartLegend legend = new SunburstChartLegend();
-            legend.IsVisible = true;
-            legend.IconType = SunburstLegendIcon.Diamond;
-            sunburstChart.Legend = legend;
-
+  SunburstChartLegend legend = new SunburstChartLegend();
+  legend.IsVisible = true;
+  legend.IconType = SunburstLegendIcon.Diamond;
+  sunburstChart.Legend = legend;
 
 {% endhighlight %}
 
@@ -143,22 +142,22 @@ The size of the legend icon can be customized using the [`IconHeight`](https://h
 
 {% highlight xaml %}
 
-                 <sunburst:SfSunburstChart.Legend>
-                    <sunburst:SunburstChartLegend x:Name="legend" IsVisible="True" IconHeight="15" IconWidth="15"
-                                                  IconType="Diamond">
-                    </sunburst:SunburstChartLegend>
-                </sunburst:SfSunburstChart.Legend>
+  <sunburst:SfSunburstChart.Legend>
+     <sunburst:SunburstChartLegend x:Name="legend" IsVisible="True" IconHeight="15" 
+                   IconWidth="15" IconType="Diamond">
+     </sunburst:SunburstChartLegend>
+  </sunburst:SfSunburstChart.Legend>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-            SunburstChartLegend legend = new SunburstChartLegend();
-            legend.IsVisible = true;
-            legend.IconType = SunburstLegendIcon.Diamond;
-            legend.IconHeight = 15;
-            legend.IconWidth = 15;
-            sunburstChart.Legend = legend;
+  SunburstChartLegend legend = new SunburstChartLegend();
+  legend.IsVisible = true;
+  legend.IconType = SunburstLegendIcon.Diamond;
+  legend.IconHeight = 15;
+  legend.IconWidth = 15;
+  sunburstChart.Legend = legend;
 
 {% endhighlight %}
 
@@ -181,31 +180,32 @@ Legend label can be customized using the following properties available in [`Lab
 
 {% highlight xaml %}
 
-     <sunburst:SfSunburstChart.Legend>
-                    <sunburst:SunburstChartLegend x:Name="legend" IsVisible="True" > 
+  <sunburst:SfSunburstChart.Legend>
+     <sunburst:SunburstChartLegend x:Name="legend" IsVisible="True" > 
                                                   
-                        <sunburst:SunburstChartLegend.LabelStyle>
-                            <sunburst:SunburstLegendLabelStyle x:Name="legendStyle" FontAttributes="Italic" FontSize="14" Margin="5"
-                                                               TextColor="Red" ></sunburst:SunburstLegendLabelStyle>
-                        </sunburst:SunburstChartLegend.LabelStyle>
-                    </sunburst:SunburstChartLegend>
-                </sunburst:SfSunburstChart.Legend>
+       <sunburst:SunburstChartLegend.LabelStyle>
+            <sunburst:SunburstLegendLabelStyle x:Name="legendStyle" 
+                         FontAttributes="Italic" FontSize="14" Margin="5"
+                         TextColor="Red" ></sunburst:SunburstLegendLabelStyle>
+       </sunburst:SunburstChartLegend.LabelStyle>
 
+   </sunburst:SunburstChartLegend>
+  </sunburst:SfSunburstChart.Legend>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-            sunburstChart.Legend = new SunburstChartLegend();
-            sunburstChart.Legend.IsVisible = true;
+  sunburstChart.Legend = new SunburstChartLegend();
+  sunburstChart.Legend.IsVisible = true;
 
-            SunburstLegendLabelStyle labelStyle = new SunburstLegendLabelStyle();
-            labelStyle.FontAttributes = FontAttributes.Italic;
-            labelStyle.FontSize = 14;
-            labelStyle.TextColor = Color.Red;
-            labelStyle.Margin = new Thickness(5);
+  SunburstLegendLabelStyle labelStyle = new SunburstLegendLabelStyle();
+  labelStyle.FontAttributes = FontAttributes.Italic;
+  labelStyle.FontSize = 14;
+  labelStyle.TextColor = Color.Red;
+  labelStyle.Margin = new Thickness(5);
 
-            sunburstChart.Legend.LabelStyle = labelStyle;
+  sunburstChart.Legend.LabelStyle = labelStyle;
 
 {% endhighlight %}
 
@@ -222,10 +222,10 @@ Margin can be set to individual legend items using the [`ItemMargin`](https://he
 
 {% highlight xaml %}
 
-      <sunburst:SfSunburstChart.Legend>
-                <sunburst:SunburstChartLegend x:Name="legend" IsVisible="True" ItemMargin="3" >                    
-                </sunburst:SunburstChartLegend>
-            </sunburst:SfSunburstChart.Legend>
+  <sunburst:SfSunburstChart.Legend>
+         <sunburst:SunburstChartLegend x:Name="legend" IsVisible="True" ItemMargin="3" >                    
+         </sunburst:SunburstChartLegend>
+  </sunburst:SfSunburstChart.Legend>
 
 
 
@@ -233,10 +233,10 @@ Margin can be set to individual legend items using the [`ItemMargin`](https://he
 
 {% highlight C# %}
 
-            SunburstChartLegend legend = new SunburstChartLegend();
-            legend.IsVisible = true;
-            legend.ItemMargin = new Thickness(3, 3, 3, 3);                    
-            sunburstChart.Legend = legend;
+  SunburstChartLegend legend = new SunburstChartLegend();
+  legend.IsVisible = true;
+  legend.ItemMargin = new Thickness(3, 3, 3, 3);                    
+  sunburstChart.Legend = legend;
 
 {% endhighlight %}
 
@@ -252,28 +252,29 @@ Sunburst segments can also be selected via legends.
 
 {% highlight xaml %}
 
-                <sunburst:SfSunburstChart.Legend>
-                    <sunburst:SunburstChartLegend x:Name="legend" IsVisible="True"  >                    
-                    </sunburst:SunburstChartLegend>
-                </sunburst:SfSunburstChart.Legend>
+  <sunburst:SfSunburstChart.Legend>
+       <sunburst:SunburstChartLegend x:Name="legend" IsVisible="True"  >                    
+       </sunburst:SunburstChartLegend>
+  </sunburst:SfSunburstChart.Legend>
 
-                <sunburst:SfSunburstChart.SelectionSettings>
-                    <sunburst:SelectionSettings   EnableSelection="True" SelectionDisplayMode="HighlightByStrokeColor"></sunburst:SelectionSettings>
-                </sunburst:SfSunburstChart.SelectionSettings>
+  <sunburst:SfSunburstChart.SelectionSettings>
+       <sunburst:SelectionSettings   EnableSelection="True" SelectionDisplayMode="HighlightByStrokeColor">
+       </sunburst:SelectionSettings>
+  </sunburst:SfSunburstChart.SelectionSettings>
 
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-            SunburstChartLegend legend = new SunburstChartLegend();
-            legend.IsVisible = true;                           
-            sunburstChart.Legend = legend;
+  SunburstChartLegend legend = new SunburstChartLegend();
+  legend.IsVisible = true;                           
+  sunburstChart.Legend = legend;
 
-            SelectionSettings selection = new SelectionSettings();
-            selection.EnableSelection = true;
-            selection.SelectionDisplayMode = SelectionDisplayMode.HighlightByStrokeColor;           
-            sunburstChart.SelectionSettings = selection;
+  SelectionSettings selection = new SelectionSettings();
+  selection.EnableSelection = true;
+  selection.SelectionDisplayMode = SelectionDisplayMode.HighlightByStrokeColor;           
+  sunburstChart.SelectionSettings = selection;
 
 {% endhighlight %}
 

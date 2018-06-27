@@ -17,17 +17,17 @@ The following code shows how to add hierarchical levels in the `Levels` collecti
 
 {% highlight xaml %}
 
-          <sunburst:SfSunburstChart.Levels>
-                    <sunburst:SunburstHierarchicalLevel />
-          </sunburst:SfSunburstChart.Levels>
+  <sunburst:SfSunburstChart.Levels>
+     <sunburst:SunburstHierarchicalLevel />
+  </sunburst:SfSunburstChart.Levels>
 
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-       SunburstHierarchicalLevel level = new SunburstHierarchicalLevel();
-       sunburstChart.Levels.Add(level);
+  SunburstHierarchicalLevel level = new SunburstHierarchicalLevel();
+  sunburstChart.Levels.Add(level);
 
 {% endhighlight %}
 
@@ -43,28 +43,28 @@ The following code shows how to map the group member path.
 
 {% highlight xaml %}
 
-          <sunburst:SfSunburstChart.Levels>
-                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="Level1"/>
-                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="Level2"/>
-                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="Level3"/>
-          </sunburst:SfSunburstChart.Levels>
+  <sunburst:SfSunburstChart.Levels>
+      <sunburst:SunburstHierarchicalLevel GroupMemberPath="Level1"/>
+      <sunburst:SunburstHierarchicalLevel GroupMemberPath="Level2"/>
+      <sunburst:SunburstHierarchicalLevel GroupMemberPath="Level3"/>
+  </sunburst:SfSunburstChart.Levels>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-SunburstHierarchicalLevel level1 = new SunburstHierarchicalLevel();
-level1.GroupMemberPath = "Level1";
+  SunburstHierarchicalLevel level1 = new SunburstHierarchicalLevel();
+  level1.GroupMemberPath = "Level1";
 
-SunburstHierarchicalLevel level2 = new SunburstHierarchicalLevel();
-level2.GroupMemberPath = "Level2";
+  SunburstHierarchicalLevel level2 = new SunburstHierarchicalLevel();
+  level2.GroupMemberPath = "Level2";
 
-SunburstHierarchicalLevel level3 = new SunburstHierarchicalLevel();
-level3.GroupMemberPath = "Level3";
+  SunburstHierarchicalLevel level3 = new SunburstHierarchicalLevel();
+  level3.GroupMemberPath = "Level3";
 
-sunburstChart.Levels.Add(level1);
-sunburstChart.Levels.Add(level2);
-sunburstChart.Levels.Add(level3);
+  sunburstChart.Levels.Add(level1);
+  sunburstChart.Levels.Add(level2);
+  sunburstChart.Levels.Add(level3);
 
 {% endhighlight %}
 
@@ -76,30 +76,30 @@ The following code specifies the levels for data model specified in the getting 
 
 {% highlight xaml %}
 
-       <sunburst:SfSunburstChart x:Name="sunburstChart" ItemsSource="{Binding DataSource}"  
-                                 ValueMemberPath="EmployeesCount">
+  <sunburst:SfSunburstChart x:Name="sunburstChart" ItemsSource="{Binding DataSource}"  
+                ValueMemberPath="EmployeesCount">
 
-                <sunburst:SfSunburstChart.Levels>
-                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="Country"/>
-                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobDescription"/>
-                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobGroup"/>
-                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobRole"/>
-                </sunburst:SfSunburstChart.Levels>
+     <sunburst:SfSunburstChart.Levels>
+         <sunburst:SunburstHierarchicalLevel GroupMemberPath="Country"/>
+         <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobDescription"/>
+         <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobGroup"/>
+         <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobRole"/>
+    </sunburst:SfSunburstChart.Levels>
 
-       </sunburst:SfSunburstChart>
+  </sunburst:SfSunburstChart>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-            SfSunburstChart sunburst = new SfSunburstChart();           
-            sunburst.SetBinding(SfSunburstChart.ItemsSourceProperty, "DataSource");
-            sunburst.ValueMemberPath = "EmployeesCount";
-            sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country" });
-            sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription" });
-            sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup" });
-            sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole" });
-            this.Content = sunburstChart;
+  SfSunburstChart sunburst = new SfSunburstChart();           
+  sunburst.SetBinding(SfSunburstChart.ItemsSourceProperty, "DataSource");
+  sunburst.ValueMemberPath = "EmployeesCount";
+  sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country" });
+  sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription" });
+  sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup" });
+  sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole" });
+  this.Content = sunburstChart;
 
 {% endhighlight %}
 

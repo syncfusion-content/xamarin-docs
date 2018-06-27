@@ -19,18 +19,18 @@ The following code shows enabling the [`DrilldownSettings`](https://help.syncfus
 
 {% highlight xaml %}
 
-                <sunburst:SfSunburstChart.DrilldownSettings>
-                    <sunburst:DrilldownSettings Enable="True"></sunburst:DrilldownSettings>
-                </sunburst:SfSunburstChart.DrilldownSettings>   
+  <sunburst:SfSunburstChart.DrilldownSettings>
+      <sunburst:DrilldownSettings Enable="True"></sunburst:DrilldownSettings>
+  </sunburst:SfSunburstChart.DrilldownSettings>   
 
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-            DrilldownSettings drilldownSettings = new DrilldownSettings();
-            drilldownSettings.Enable = true;
-            sunburstChart.DrilldownSettings = drilldownSettings;
+  DrilldownSettings drilldownSettings = new DrilldownSettings();
+  drilldownSettings.Enable = true;
+  sunburstChart.DrilldownSettings = drilldownSettings;
 
 {% endhighlight %}
 
@@ -46,21 +46,21 @@ Toolbar can be positioned anywhere on the chart by specifying the [`OffsetX`](ht
 
 {% highlight xaml %}
 
-                <sunburst:SfSunburstChart.DrilldownSettings>
-                    <sunburst:DrilldownSettings OffsetX="0.5" OffsetY="0" Enable="True"
-                                                ></sunburst:DrilldownSettings>
-                </sunburst:SfSunburstChart.DrilldownSettings>  
+  <sunburst:SfSunburstChart.DrilldownSettings>
+         <sunburst:DrilldownSettings OffsetX="0.5" OffsetY="0" 
+                 Enable="True"></sunburst:DrilldownSettings>
+  </sunburst:SfSunburstChart.DrilldownSettings>  
 
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-            DrilldownSettings drilldownSettings = new DrilldownSettings();
-            drilldownSettings.Enable = true;
-            drilldownSettings.OffsetX = 0.5;
-            drilldownSettings.OffsetY = 0;
-            sunburstChart.DrilldownSettings = drilldownSettings;
+  DrilldownSettings drilldownSettings = new DrilldownSettings();
+  drilldownSettings.Enable = true;
+  drilldownSettings.OffsetX = 0.5;
+  drilldownSettings.OffsetY = 0;
+  sunburstChart.DrilldownSettings = drilldownSettings;
 
 {% endhighlight %}
 
@@ -84,23 +84,24 @@ The following code shows the toolbar alignment.
 
 {% highlight xaml %}
 
-                <sunburst:SfSunburstChart.DrilldownSettings>
-                    <sunburst:DrilldownSettings OffsetX="0.5" OffsetY="0.5" Enable="True" ToolbarHorizontalAlignment="Center"
-                                                ToolbarVerticalAlignment="Center"
-                                                ></sunburst:DrilldownSettings>
-                </sunburst:SfSunburstChart.DrilldownSettings>
+  <sunburst:SfSunburstChart.DrilldownSettings>
+         <sunburst:DrilldownSettings OffsetX="0.5" OffsetY="0.5" Enable="True" 
+                    ToolbarHorizontalAlignment="Center"
+                    ToolbarVerticalAlignment="Center">
+         </sunburst:DrilldownSettings>
+  </sunburst:SfSunburstChart.DrilldownSettings>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-            DrilldownSettings drilldownSettings = new DrilldownSettings();
-            drilldownSettings.Enable = true;
-            drilldownSettings.OffsetX = 0.5;
-            drilldownSettings.OffsetY = 0.5;
-            drilldownSettings.ToolbarHorizontalAlignment = ToolbarAlignment.Center;
-            drilldownSettings.ToolbarVerticalAlignment = ToolbarAlignment.Center;
-            sunburstChart.DrilldownSettings = drilldownSettings;
+  DrilldownSettings drilldownSettings = new DrilldownSettings();
+  drilldownSettings.Enable = true;
+  drilldownSettings.OffsetX = 0.5;
+  drilldownSettings.OffsetY = 0.5;
+  drilldownSettings.ToolbarHorizontalAlignment = ToolbarAlignment.Center;
+  drilldownSettings.ToolbarVerticalAlignment = ToolbarAlignment.Center;
+  sunburstChart.DrilldownSettings = drilldownSettings;
 
 
 {% endhighlight %}

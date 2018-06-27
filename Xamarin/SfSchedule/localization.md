@@ -129,6 +129,8 @@ if (schedule.Locale == "fr")
 {% endhighlight %}
 {% endtabs %}
 
+![](Localization_images/localeallday.png)
+
 You can download the entire source code of this demo for Xamarin.Forms from
 here [LocaleFromPCL](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LocaleFromPCL635946080.zip).
 
@@ -352,6 +354,8 @@ Localize class for iOS project,
 
 {% endhighlight %}
 {% endtabs %}
+
+![](Localization_images/localenoevents.png)
 
 >**NOTE**
 For UWP project, no sample level changes required.

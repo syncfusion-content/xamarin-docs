@@ -53,7 +53,7 @@ dataGrid.SelectionMode = SelectionMode.Multiple;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/MultipleSelection.png)
+![](SfDataGrid_images/MultipleSelection.PNG)
 
 ## Getting selected rows 
 
@@ -99,16 +99,16 @@ To programmatically select more than one row from the code, follow the code exam
 {% tabs %}
 {% highlight c# %} 
 //Perform multiple selection using selected item
-dataGrid.SelectedItems.Add (viewModel.OrdersInfo [2]);
-dataGrid.SelectedItems.Add (viewModel.OrdersInfo [4]);
-dataGrid.SelectedItems.Add (viewModel.OrdersInfo [7]);
+dataGrid.SelectedItems.Add (viewModel.OrdersInfo [4]);
+dataGrid.SelectedItems.Add (viewModel.OrdersInfo [6]);
 dataGrid.SelectedItems.Add (viewModel.OrdersInfo [9]);
+dataGrid.SelectedItems.Add (viewModel.OrdersInfo [11]);
 {% endhighlight %}
 {% endtabs %}
 
 The following screenshot shows the selection functionality in the data grid:
 
-![](SfDataGrid_images/MultipleSelection.png)
+![](SfDataGrid_images/MultipleSelection.PNG)
 
 ### Scroll to selected item
 
@@ -282,7 +282,7 @@ void DataGrid_SelectionChanged (object sender, GridSelectionChangedEventArgs e)
 
 ## Customizing Selection Appearance
 
-### Multiple selection colors
+### Adding multiple selection color
 
 The data grid supports selecting one or more rows either programmatically or by touch interactions. By default, the control applies a common background color for the selected rows based on the current theme. However, it also provides extensibility to have multiple selection colors when touching the rows by writing a custom SelectionController derived from [GridSelectionController](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSelectionController.html# ""), and assigning it to the [SfDataGrid.SelectionController](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectionController.html# "") property. Override the GetSelectionColor() method to apply different colors for selection at runtime.
 
@@ -333,7 +333,7 @@ public class CustomSelectionController : GridSelectionController
 
 The following screenshot shows the final outcome upon execution of the above code:
 
-![](SfDataGrid_images/AddingColor.png)
+![](SfDataGrid_images/AddingColors.PNG)
 
 ### Changing selection background and foreground color
 
@@ -387,7 +387,7 @@ public class SelectionStyle : DataGridStyle
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/SelectionColor.png)
+![](SfDataGrid_images/SelectionColor.PNG)
 
 ### Changing current cell border color
 
@@ -436,7 +436,7 @@ public class SelectionStyle : DataGridStyle
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/CurrentCellBorder.png)
+![](SfDataGrid_images/CurrentCellBorder.PNG)
 
 ## Binding selection properties
 

@@ -465,6 +465,7 @@ public partial class MainPage : ContentPage
     BindingContext = ViewModel;
     ViewModel.ListView = this.ListView;
     ListView.Loaded += ListView_Loaded;
+    visualContainer = ListView.GetVisualContainer();
   }
 
   private void HeaderItem_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
@@ -518,7 +519,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DataTemplateSelector1009153684).
+You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DataTemplateSelector_Automatic-115808424).
 
 ![](SfListView_images/SfListView-LoadMoreAutomaticallyUpDirection.png)
 

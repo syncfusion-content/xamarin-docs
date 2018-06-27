@@ -196,7 +196,7 @@ private void ListView_ItemTapped(object sender, Syncfusion.ListView.XForms.ItemT
  
 The SfListView allows sorting the items along with grouping by adding the [DataSource.GroupDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~GroupDescriptors.html) and the [DataSource.SortDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~SortDescriptors.html) with required property name. 
 
-#### Sorting with Grouping Year
+#### Sorting with Grouping by Year
 
 Sorting the items along with grouping by using [KeySelector](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~KeySelector.html) based on retuning the year value of the data-time property.
 
@@ -255,7 +255,7 @@ The following screenshot shows the output when items are sorted by year. You can
 
 ![](SfListView_images/SfListView-Sorting1.png)
 
-#### Sorting with Grouping Month and Year
+#### Sorting with Grouping by Month and Year
 
 Sorting the items along with grouping by using `KeySelector` based on retuning the month and year value of the data-time property.
 

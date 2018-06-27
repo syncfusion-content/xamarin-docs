@@ -1011,7 +1011,7 @@ Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.macOS.dll<br/></td>
 <td>Syncfusion.DataSource.Portable.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.SfListView.XForms.UWP.dll<br/>Syncfusion.SfListView.XForms.dll<br/></td>
 </tr>
 <tr>
-<td>macOS renderer</td>
+<td>macOS</td>
 <td>pcl\Syncfusion.DataSource.Portable.dll<br/>pcl\Syncfusion.Core.XForms.dll<br/>pcl\Syncfusion.GridCommon.Portable.dll<br/>pcl\Syncfusion.SfListView.XForms.dll<br/>macOS\Syncfusion.Core.XForms.macOS.dll<br/>macOS\Syncfusion.SfListView.XForms.macOS<br/></td>
 </tr>
 </table>

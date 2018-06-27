@@ -121,7 +121,7 @@ The following predefined shapes are available in the IconType property:
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
             SunburstChartLegend legend = new SunburstChartLegend();
             legend.IsVisible = true;
@@ -137,7 +137,7 @@ The following predefined shapes are available in the IconType property:
 
 ## Icon size customization
 
-The size of the legend icon can be customized using the [`IconHeight`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstChartLegend~IconHeight.html) and [`IconWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstChartLegend~IconWidth.html) properties.
+The size of the legend icon can be customized using the [`IconHeight`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstChartLegend~IconHeight.html) and [`IconWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstChartLegend~IconWidth.html) properties.
 
 {% tabs %} 
 

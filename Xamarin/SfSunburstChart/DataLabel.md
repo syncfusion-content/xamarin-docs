@@ -9,7 +9,7 @@ documentation: ug
 
 # Data label
 
-Data labels are used to display information about segments. Data labels are enabled and disabled using the [`ShowLabel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstChartDataLabel~ShowLabel.html) property. The default value of the ShowLabel property is true.
+Data labels are used to display information about segments. Data labels are enabled and disabled using the [`ShowLabel`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstChartDataLabel~ShowLabel.html) property. The default value of the ShowLabel property is true.
 
 The following code explains how to initialize data labels.
 
@@ -23,7 +23,7 @@ The following code explains how to initialize data labels.
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight C# %} 
 
             SunburstChartDataLabel label = new SunburstChartDataLabel();
             label.ShowLabel = true;
@@ -37,7 +37,7 @@ The following code explains how to initialize data labels.
 
 ## Overflow Mode
 
-When the data labels are large in size, they will overlap each other. To avoid overlapping, trim or hide the data labels using the [`OverflowMode`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstChartDataLabel~OverflowMode.html) property.
+When the data labels are large in size, they will overlap each other. To avoid overlapping, trim or hide the data labels using the [`OverflowMode`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstChartDataLabel~OverflowMode.html) property.
 
 ### Trim
 
@@ -54,7 +54,7 @@ The following code shows trimming the data labels.
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight C# %} 
 
             SunburstChartDataLabel label = new SunburstChartDataLabel();
             label.ShowLabel = true;
@@ -82,7 +82,7 @@ The following code shows hiding the data labels.
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight C# %} 
 
             SunburstChartDataLabel label = new SunburstChartDataLabel();
             label.ShowLabel = true;
@@ -97,7 +97,7 @@ The following code shows hiding the data labels.
 
 ## Rotation Mode
 
-The view of data labels can be customized using the [`RotationMode`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstChartDataLabel~RotationMode.html) property. Data labels can be rotated to a angle for better readability. By default, the rotation mode is angle.
+The view of data labels can be customized using the [`RotationMode`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstChartDataLabel~RotationMode.html) property. Data labels can be rotated to a angle for better readability. By default, the rotation mode is angle.
 
 ### Angle
 
@@ -115,7 +115,7 @@ The following code shows rotating a data label to an angle.
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight C# %} 
 
             SunburstChartDataLabel label = new SunburstChartDataLabel();
             label.ShowLabel = true;
@@ -145,7 +145,7 @@ The following code shows normal mode of data labels.
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight C# %} 
 
   SunburstChartDataLabel label = new SunburstChartDataLabel();
             label.ShowLabel = true;
@@ -162,10 +162,10 @@ The following code shows normal mode of data labels.
 
 Data labels can be customized using the following properties.
 
-* [`TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstChartDataLabel~TextColor.html) : Text color of the label can be changed.
-* [`FontSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstChartDataLabel~FontSize.html) : Data label font size can be modified.
-* [`FontAttributes`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstChartDataLabel~FontAttributes.html) : Font attributes such as bold or italic can be used.
-* [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstChartDataLabel~FontFamily.html) : This modifies the font family of the labels.
+* [`TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstChartDataLabel~TextColor.html) : Text color of the label can be changed.
+* [`FontSize`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstChartDataLabel~FontSize.html) : Data label font size can be modified.
+* [`FontAttributes`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstChartDataLabel~FontAttributes.html) : Font attributes such as bold or italic can be used.
+* [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstChartDataLabel~FontFamily.html) : This modifies the font family of the labels.
 
 {% tabs %} 
 
@@ -180,7 +180,7 @@ Data labels can be customized using the following properties.
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight C# %} 
 
             SunburstChartDataLabel label = new SunburstChartDataLabel();
             label.ShowLabel = true;
@@ -217,7 +217,7 @@ In the following code `Pineapple` palette is applied, hence data label takes the
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight C# %} 
 
             SunburstChartDataLabel label = new SunburstChartDataLabel();
             label.ShowLabel = true;           

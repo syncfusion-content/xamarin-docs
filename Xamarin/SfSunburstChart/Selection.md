@@ -9,11 +9,12 @@ documentation: ug
 
 # Selection
 
-The sunburst chart provides support to select or highlight the segments.
+The sunburst chart provides support to select or highlight the segments. Selection can be enabled with the help of [`EnableSelection`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SelectionSettings~EnableSelection.html) property.
+
 
 ## Selection type
 
-The `SelectionType` property allows you to select a segment based on the following categories:
+The [`SelectionType`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SelectionSettings~SelectionType.html) property allows you to select a segment based on the following categories:
 
 * Child: Highlights the selected segment along with its children in all levels.
 * Group: Highlights the entire group of the selected segment in a hierarchy.
@@ -32,7 +33,7 @@ The following code shows the `Child` selection type.
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight C# %} 
 
             SelectionSettings selection = new SelectionSettings();
             selection.Opacity = 0.5;
@@ -58,7 +59,7 @@ The following code shows the `Group` selection type.
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight C# %} 
 
             SelectionSettings selection = new SelectionSettings();
             selection.Opacity = 0.5;
@@ -85,7 +86,7 @@ The following code shows the `Parent` selection type.
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight C# %} 
 
             SelectionSettings selection = new SelectionSettings();
             selection.Opacity = 0.5;
@@ -112,7 +113,7 @@ The following code shows the `Single` selection type.
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight C# %} 
 
             SelectionSettings selection = new SelectionSettings();
             selection.Opacity = 0.5;
@@ -129,7 +130,7 @@ The following code shows the `Single` selection type.
 
 ## Selection display mode
 
-The selection display mode provides the following selection options to highlight the segments:
+The [`SelectionDisplayMode`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SelectionSettings~SelectionDisplayMode.html) property provides the following selection options to highlight the segments:
 
 * By stroke
 * By Color
@@ -137,7 +138,7 @@ The selection display mode provides the following selection options to highlight
 
 ### Opacity
 
-This mode highlights the selected segment with the opacity specified in the `Opacity` property.
+This mode highlights the selected segment with the opacity specified in the [`Opacity`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SelectionSettings~Opacity.html) property.
 
 {% tabs %} 
 
@@ -150,7 +151,7 @@ This mode highlights the selected segment with the opacity specified in the `Opa
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight C# %} 
 
             SelectionSettings selection = new SelectionSettings();
             selection.EnableSelection = true;
@@ -167,7 +168,7 @@ This mode highlights the selected segment with the opacity specified in the `Opa
 
 ### Color
 
-This mode highlights the selected segment using the brush specified in the `SelectionBrush` property.
+This mode highlights the selected segment using the brush specified in the [`SelectionBrush`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SelectionSettings~SelectionBrush.html) property.
 
 {% tabs %} 
 
@@ -180,7 +181,7 @@ This mode highlights the selected segment using the brush specified in the `Sele
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight C# %} 
 
             SelectionSettings selection = new SelectionSettings();
             selection.EnableSelection = true;
@@ -197,7 +198,7 @@ This mode highlights the selected segment using the brush specified in the `Sele
 
 ### Stroke
 
-This mode highlights the selected segment by applying stroke to it. The color and thickness of the stroke can be customized using the `SelectionStrokeBrush` and `SelectionStrokeWidth` properties.
+This mode highlights the selected segment by applying stroke to it. The color and thickness of the stroke can be customized using the [`SelectionStrokeBrush`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SelectionSettings~SelectionStrokeBrush.html) and [`SelectionStrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SelectionSettings~SelectionStrokeWidth.html) properties.
 
 {% tabs %} 
 
@@ -210,7 +211,7 @@ This mode highlights the selected segment by applying stroke to it. The color an
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight C# %} 
 
             SelectionSettings selection = new SelectionSettings();
             selection.EnableSelection = true;
@@ -230,7 +231,7 @@ This mode highlights the selected segment by applying stroke to it. The color an
 
 ### Selection Changed
 
-This event occurs whenever you select the segment. You can get the selected segment details as argument from SelectionChangedEventArgs handler.
+This event occurs whenever you select the segment. You can get the [`SelectedSegment`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SelectionChangedEventArgs~SelectedSegment.html) and [`IsSelected`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SelectionChangedEventArgs~IsSelected.html) properties details as argument from [`SelectionChangedEventArgs`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SelectionChangedEventArgs.html) handler.
 
 {% tabs %} 
 
@@ -254,7 +255,7 @@ This event occurs whenever you select the segment. You can get the selected segm
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight C# %} 
        
 
         private void SunburstChart_SelectionChanged(object sender, SelectionChangedEventArgs e)

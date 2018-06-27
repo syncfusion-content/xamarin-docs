@@ -9,7 +9,7 @@ documentation: ug
 
 # Animation
 
-The sunburst chart provides animation on loading and whenever the item source changes. Animation can be enabled by setting the `EnableAnimation` property to true.
+The sunburst chart provides animation on loading and whenever the item source changes. Animation can be enabled by setting the [`EnableAnimation`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~EnableAnimation.html) property to true.
 
 The following code shows enabling animation.
 
@@ -24,7 +24,7 @@ The following code shows enabling animation.
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight C# %} 
 
             SfSunburstChart sunburstChart = new SfSunburstChart();
             sunburstChart.SetBinding(SfSunburstChart.ItemsSourceProperty, "DataSource");
@@ -40,7 +40,7 @@ The following code shows enabling animation.
 
 ## Duration
 
-Animation duration can be controlled using the `AnimationDuration` property.
+Animation duration can be controlled using the [`AnimationDuration`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~AnimationDuration.html) property.
 
 {% tabs %} 
 
@@ -52,7 +52,7 @@ Animation duration can be controlled using the `AnimationDuration` property.
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight C# %} 
 
             SfSunburstChart sunburstChart = new SfSunburstChart();
             sunburstChart.SetBinding(SfSunburstChart.ItemsSourceProperty, "DataSource");
@@ -91,7 +91,7 @@ Below snippet is the complete code for generating the following output.
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight C# %} 
 
             SfSunburstChart sunburstChart = new SfSunburstChart();
             sunburstChart.SetBinding(SfSunburstChart.ItemsSourceProperty, "DataSource");

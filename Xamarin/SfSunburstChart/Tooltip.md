@@ -9,7 +9,7 @@ documentation: ug
 
 # Tooltip
 
-Tooltip provides additional information about the segments in the sunburst chart. Tooltip is displayed by tapping the segment. By default, tooltip displays the corresponding segment’s category and value. To enable the tooltip, set the `ShowTooltip` property to true.
+Tooltip provides additional information about the segments in the sunburst chart. Tooltip is displayed by tapping the segment. By default, tooltip displays the corresponding segment’s category and value. To enable the tooltip, set the [`ShowTooltip`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstTooltipSettings~ShowTooltip.html) property to true.
 
 The following code shows enabling the tooltip.
 
@@ -23,7 +23,7 @@ The following code shows enabling the tooltip.
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight C# %} 
 
             SunburstTooltipSettings tooltipSettings = new SunburstTooltipSettings();
             tooltipSettings.ShowTooltip = true;
@@ -39,11 +39,11 @@ The following code shows enabling the tooltip.
 
 The appearance of the tooltip can be customized using the following properties:
 
-* TextColor: Customizes the text color of the tooltip.
-* BackgroundColor: Customizes the background color of the tooltip.
-* BorderColor: Customizes the border color of the tooltip.
-* BorderWidth: Customizes the border width of the tooltip.
-* Duration: Specifies the duration of the tooltip to be displayed.
+* [`TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstTooltipSettings~TextColor.html): Customizes the text color of the tooltip.
+* [`BackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstTooltipSettings~BackgroundColor.html): Customizes the background color of the tooltip.
+* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstTooltipSettings~BorderColor.html): Customizes the border color of the tooltip.
+* [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstTooltipSettings~BorderWidth.html): Customizes the border width of the tooltip.
+* [`Duration`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstTooltipSettings~Duration.html): Specifies the duration of the tooltip to be displayed.
 
 The following code shows all the above customizations.
 
@@ -58,7 +58,7 @@ The following code shows all the above customizations.
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight C# %} 
 
            SunburstTooltipSettings tooltipSettings = new SunburstTooltipSettings();
             tooltipSettings.ShowTooltip = true;
@@ -77,7 +77,7 @@ The following code shows all the above customizations.
 
 ## Custom template
 
-The sunburst chart provides options to design your own template for tooltip using the `TooltipTemplate` property.
+The sunburst chart provides options to design your own template for tooltip using the [`TooltipTemplate`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstTooltipSettings~TooltipTemplate.html) property.
 
 {% tabs %} 
 
@@ -104,7 +104,7 @@ The sunburst chart provides options to design your own template for tooltip usin
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight C# %} 
 
            SunburstTooltipSettings tooltipSettings = new SunburstTooltipSettings();
            tooltipSettings.ShowTooltip = true;

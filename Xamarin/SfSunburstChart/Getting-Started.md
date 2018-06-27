@@ -25,7 +25,7 @@ I> For UWP alone, an additional step is required if the project is still in buil
 
 ## Initialize sunburst chart
 
-Import the [`SfSunburstChart`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart.html) namespace as shown as follows.
+Import the [`SfSunburstChart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart.html) namespace as shown as follows.
 
 {% tabs %} 
 
@@ -499,7 +499,7 @@ Accounts
 </tr>
 </table>
 
-Define a data model that represents the above data in [`SfSunburstChart`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart.html).
+Define a data model that represents the above data in [`SfSunburstChart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart.html).
 
 {% tabs %} 
 
@@ -569,7 +569,7 @@ Then, create a view model class, and initialize a list of SunburstModel objects 
 
 {% endtabs %} 
 
-Set the `SunburstViewModel` instance as the `BindingContext` of your page to bind the properties of `SunburstViewModel` to [`SfSunburstChart`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart.html).
+Set the `SunburstViewModel` instance as the `BindingContext` of your page to bind the properties of `SunburstViewModel` to [`SfSunburstChart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart.html).
  
 N> Add the namespace of `SunburstViewModel` class in your XAML page if you set the `BindingContext` in XAML.
 
@@ -600,8 +600,8 @@ this.BindingContext = new SunburstViewModel();
 
 ## Populate sunburst chart with data
 
-Bind the DataSource property of the above SunburstViewModel to the [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~ItemsSource.html) property. 
-Then, add the [`SunburstHierarchicalLevel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstHierarchicalLevel.html) to [`Levels`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~Levels.html) collection. Each hierarchy level is formed based on the property specified in [`GroupMemberPath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstHierarchicalLevel~GroupMemberPath.html) property, and each arc segment size is calculated using the [`ValueMemberPath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~ValueMemberPath.html) property.
+Bind the DataSource property of the above SunburstViewModel to the [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~ItemsSource.html) property. 
+Then, add the [`SunburstHierarchicalLevel`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstHierarchicalLevel.html) to [`Levels`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~Levels.html) collection. Each hierarchy level is formed based on the property specified in [`GroupMemberPath`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstHierarchicalLevel~GroupMemberPath.html) property, and each arc segment size is calculated using the [`ValueMemberPath`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~ValueMemberPath.html) property.
 
 {% tabs %}   
 
@@ -634,9 +634,11 @@ SfSunburstChart sunburstChart = new SfSunburstChart();
 
 {% endtabs %}
 
+![SfSunburstChart](Getting-Started_images/DataSource.png)
+
 ## Add title
 
-You can add title to the sunburst chart to provide information to users about the data being plotted in the chart. You can set title using the [`SfSunburstChart.Title`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~Title.html) property.
+You can add title to the sunburst chart to provide information to users about the data being plotted in the chart. You can set title using the [`SfSunburstChart.Title`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~Title.html) property.
 
 {% tabs %} 
 
@@ -652,7 +654,7 @@ You can add title to the sunburst chart to provide information to users about th
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight C# %} 
 
             SfSunburstChart sunburstChart = new SfSunburstChart();
             sunburstChart.Title = new SunburstChartTitle();
@@ -662,9 +664,11 @@ You can add title to the sunburst chart to provide information to users about th
 
 {% endtabs %}
 
+![SfSunburstChart](Getting-Started_images/Title.png)
+
 ## Add legend
 
-You can enable legend using the [`SfSunburstChart.Legend`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~Legend.html) property.
+You can enable legend using the [`SfSunburstChart.Legend`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~Legend.html) property.
 
 {% tabs %} 
 
@@ -680,7 +684,7 @@ You can enable legend using the [`SfSunburstChart.Legend`](https://help.syncfusi
            </sunburst:SfSunburstChart>
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight C# %} 
 
             SfSunburstChart sunburstChart = new SfSunburstChart();
             sunburstChart.Legend = new SunburstChartLegend();
@@ -691,9 +695,11 @@ You can enable legend using the [`SfSunburstChart.Legend`](https://help.syncfusi
 
 {% endtabs %} 
 
+![SfSunburstChart](Getting-Started_images/Legend.png)
+
 ## Add data labels
 
-You can add data labels to improve the readability of the sunburst chart. Data labels can be added using the [`SfSunburstChart.DataLabel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~DataLabel.html) property.
+You can add data labels to improve the readability of the sunburst chart. Data labels can be added using the [`SfSunburstChart.DataLabel`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~DataLabel.html) property.
 
 {% tabs %} 
 
@@ -709,7 +715,7 @@ You can add data labels to improve the readability of the sunburst chart. Data l
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight C# %} 
 
             SfSunburstChart sunburstChart = new SfSunburstChart();  
             sunburstChart.DataLabel = new SunburstChartDataLabel();
@@ -719,6 +725,8 @@ You can add data labels to improve the readability of the sunburst chart. Data l
 {% endhighlight %}
 
 {% endtabs %} 
+
+![SfSunburstChart](Getting-Started_images/DataLabel.png)
 
 Below snippet is the complete code for generating the final output.
 
@@ -754,7 +762,7 @@ Below snippet is the complete code for generating the final output.
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight C# %} 
 
             this.BindingContext = new SunburstViewModel();
 
@@ -786,5 +794,5 @@ The following screenshot depicts the final output.
 
 ![SfSunburstChart with data label and legend](Getting-Started_images/gettingstarted.png)
 
-You can find the complete getting started sample from this [`link`](http://files2.syncfusion.com/Xamarin.Forms/Samples/SunburstChart_GettingStarted.zip).
+You can find the complete getting started sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SunburstDemo691514630).
 

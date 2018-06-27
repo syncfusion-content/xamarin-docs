@@ -13,7 +13,7 @@ This section explains the steps required to configure the `SfSunburstChart` and 
 
 ## Add sunburst chart references
 
-The Syncfusion components for Xamarin.Forms are available in nuget.org. To add `SfSunburstChart` to your project, open the NuGet package manager in Visual Studio, search for Syncfusion.Xamarin.SfSunburstChart, and then install it.
+The Syncfusion components for Xamarin.Forms are available in [`nuget.org`](https://www.nuget.org/). To add SfSunburstChart to your project, open the NuGet package manager in Visual Studio, search for [`Syncfusion.Xamarin.SfSunburstChart`](https://www.nuget.org/packages/Syncfusion.Xamarin.SfSunburstChart), and then install it.
 
 ![SfSunburstChart Reference](Getting-Started_images/Reference.png)
 

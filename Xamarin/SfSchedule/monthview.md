@@ -87,7 +87,7 @@ You can disable the navigation to day view by triggering the CellTappedEvent and
 
 {% tabs %}
 {% highlight c# %}
-monthViewSettings.AppointmentDisplayCount = 1;
+monthViewSettings.AppointmentDisplayCount = 4;
 monthViewSettings.AppointmentDisplayMode = AppointmentDisplayMode.Appointment; 
 schedule.CellTapped += Schedule_CellTapped;
 private void Schedule_CellTapped(object sender, CellTappedEventArgs e)

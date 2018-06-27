@@ -67,14 +67,14 @@ The following screenshot shows the outcome of the previous code:
 
 ### Displaying summary for a row
 
-Display summary information in a row by setting the [GridSummaryRow.ShowSummaryInRow](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSummaryRow~ShowSummaryInRow.html) to `true` and define summary columns. You have to define [GridSummaryRow.Title](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSummaryRow~Title.html) based on [GridSummaryColumn.Name](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSummaryRow~Name.html) property to format summary columns values in a row.
+Display summary information in a row by setting the [GridGroupSummaryRow.ShowSummaryInRow](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSummaryRow~ShowSummaryInRow.html) to `true` and define summary columns. You have to define [GridGroupSummaryRow.Title](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSummaryRow~Title.html) based on [GridSummaryColumn.Name](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSummaryRow~Name.html) property to format summary columns values in a row.
 
 {% tabs %}
 {% highlight xaml%}
 <sfGrid:SfDataGrid.CaptionSummaryRow>
-    <sfGrid:GridSummaryRow Title="Total Salary :{TotalSalary} for {ProductCount} members"
+    <sfGrid:GridGroupSummaryRow Title="Total Salary :{TotalSalary} for {ProductCount} members"
                            ShowSummaryInRow="True">
-        <sfGrid:GridSummaryRow.SummaryColumns>
+        <sfGrid:GridGroupSummaryRow.SummaryColumns>
             <sfGrid:GridSummaryColumn Name="TotalSalary"
                                       Format="{}{Sum:c}"
                                       MappingName="Salary"
@@ -83,13 +83,13 @@ Display summary information in a row by setting the [GridSummaryRow.ShowSummaryI
                                       Format="{}{Count}"
                                       MappingName="Salary"
                                       SummaryType="CountAggregate" />
-            </sfGrid:GridSummaryRow.SummaryColumns>
-        </sfGrid:GridSummaryRow>
+            </sfGrid:GridGroupSummaryRow.SummaryColumns>
+        </sfGrid:GridGroupSummaryRow>
 </sfGrid:SfDataGrid.CaptionSummaryRow>
 {% endhighlight %}
 
 {% highlight c#%}
-GridSummaryRow summaryRow = new GridSummaryRow();
+GridGroupSummaryRow summaryRow = new GridGroupSummaryRow();
 summaryRow.Title = "Total Salary:{TotalSalary} for {ProductCount} members";
 summaryRow.ShowSummaryInRow = true;
 summaryRow.SummaryColumns.Add(new GridSummaryColumn()

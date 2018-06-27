@@ -21,6 +21,30 @@ Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}
 
 N> Assemblies can be found in unzipped package location in Mac
 
+## NuGet configuration
+
+To install the SfPullToRefresh control in the application, configure the NuGet package of the Syncfusion components.
+
+Refer to the following KB to configure the NuGet package of the Syncfusion components:
+
+[How to configure package source and install Syncfusion NuGet packages in an existing project?](https://www.syncfusion.com/kb/7441/how-to-configure-package-source-and-install-syncfusion-nuget-packages-in-an-existing-project)
+
+The following NuGet package should be added to use the SfDataGrid control in the application:
+
+<table>
+<tr>
+<th> Project </th>
+<th> Required package </th>
+</tr>
+<tr>
+<td> Xamarin.Forms </td>
+<td> Syncfusion.Xamarin.SfPullToRefresh</td>
+</tr>
+</table>
+
+Refer to the following screenshot in which the Syncfusion.Xamarin.SfPullToRefresh is highlighted.
+![](SfDataGrid_images/PullToRefresh_Forms_NugetInstall.png)
+
 ### SfPullToRefresh for Xamarin.Forms
 
 The following list of assemblies need to be added as reference from the lib folder to use SfPullToRefresh in your application.

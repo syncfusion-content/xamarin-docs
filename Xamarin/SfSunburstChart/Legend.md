@@ -24,7 +24,7 @@ The following code explains how to initialize the legends.
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 SunburstChartLegend legend = new SunburstChartLegend();
 sunburstChart.Legend = legend;
@@ -50,7 +50,7 @@ The following code shows how to control the visibility of legend.
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 SunburstChartLegend legend = new SunburstChartLegend();
 legend.IsVisible = true;
@@ -81,7 +81,7 @@ The following code shows customizing the legend position.
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
             SunburstChartLegend legend = new SunburstChartLegend();
             legend.IsVisible = true;
@@ -151,7 +151,7 @@ The size of the legend icon can be customized using the [`IconHeight`](https://h
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
             SunburstChartLegend legend = new SunburstChartLegend();
             legend.IsVisible = true;
@@ -194,7 +194,7 @@ Legend label can be customized using the following properties available in [`Lab
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
             sunburstChart.Legend = new SunburstChartLegend();
             sunburstChart.Legend.IsVisible = true;
@@ -231,7 +231,7 @@ Margin can be set to individual legend items using the [`ItemMargin`](https://he
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
             SunburstChartLegend legend = new SunburstChartLegend();
             legend.IsVisible = true;
@@ -264,7 +264,7 @@ Sunburst segments can also be selected via legends.
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
             SunburstChartLegend legend = new SunburstChartLegend();
             legend.IsVisible = true;                           

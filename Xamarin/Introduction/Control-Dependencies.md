@@ -319,7 +319,7 @@ This page lists the assemblies required for each control to be referred in each 
 
 <dl>
   <dt>NuGet</dt>
-  <dd>Syncfusion.Xamarin.PDF</dd>
+  <dd>Syncfusion.Xamarin.Pdf</dd>
 </dl>
 
 **Assemblies**

@@ -126,7 +126,7 @@ dataGrid.ScrollToRowIndex((int)dataGrid.SelectedIndex);
 
 The data grid allows you to clear the selection applied in the grid rows by either setting the `SfDataGrid.SelectionMode` to `None`, or by calling the [SfDataGrid.SelectionController.ClearSelection ()](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSelectionController~ClearSelection.html) method.
 
-Refer the below code snipet to clear the selection in the data grid.
+Refer the below code snippet to clear the selection in the data grid.
 
 {% tabs %}
 {% highlight c# %}

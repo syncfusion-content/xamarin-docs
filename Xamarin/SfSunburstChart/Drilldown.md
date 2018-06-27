@@ -26,7 +26,7 @@ The following code shows enabling the [`DrilldownSettings`](https://help.syncfus
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
             DrilldownSettings drilldownSettings = new DrilldownSettings();
             drilldownSettings.Enable = true;
@@ -54,7 +54,7 @@ Toolbar can be positioned anywhere on the chart by specifying the [`OffsetX`](ht
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
             DrilldownSettings drilldownSettings = new DrilldownSettings();
             drilldownSettings.Enable = true;
@@ -92,7 +92,7 @@ The following code shows the toolbar alignment.
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
             DrilldownSettings drilldownSettings = new DrilldownSettings();
             drilldownSettings.Enable = true;

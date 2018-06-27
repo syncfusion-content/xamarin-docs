@@ -35,7 +35,7 @@ The following code shows how to add hierarchical levels in the `Levels` collecti
 
 ## Group member path
 
-The [`GroupMemberPath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstHierarchicalLevel~GroupMemberPath.html) is a string property that is used to map the group category value in the sunburst [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~ItemsSource.html).
+The [`GroupMemberPath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstHierarchicalLevel~GroupMemberPath.html) is a string property that is used to map the group category value in the sunburst [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~ItemsSource.html).
 
 The following code shows how to map the group member path.
 

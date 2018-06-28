@@ -9,7 +9,7 @@ documentation: ug
 
 # States
 
-Based on the progress estimation, you can configure the states of the progress bar.
+You can configure the states of the progress bar, based on the usage.
 
 ## Determinate
 

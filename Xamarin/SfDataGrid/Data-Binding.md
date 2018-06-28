@@ -196,7 +196,7 @@ datagrid.EnableDataVirtualization = true;
 
 ### NotificationSubscriptionMode
 
-The data grid allows you to enable or disable the INotifyPropertyChanged in the collection by using the [SfDataGrid.NotificationSubscriptionMode](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Data.Portable~Syncfusion.Data.NotificationSubscriptionMode.html) property.
+The data grid allows you to enable or disable the INotifyPropertyChanged in the underlying source collection that is bound to the `SfDataGrid.ItemsSource`by using the [SfDataGrid.NotificationSubscriptionMode](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Data.Portable~Syncfusion.Data.NotificationSubscriptionMode.html) property.
 
 <table>
 <tr>

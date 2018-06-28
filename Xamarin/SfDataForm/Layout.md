@@ -594,7 +594,7 @@ Here, the LastName padding is customized.
 
 ![](SfDataForm_images/Layout_LeftPadding.png)
 
-### Customizing view for label
+### Customizing data form item view
 
 You can customize the generated label by overriding the `GenerateViewForLabel` method. Here, BackgroundColor and TextColor of label is customized. You can also customize the entry by overriding the `OnEditorCreated` method.
 

@@ -45,6 +45,6 @@ dataGrid.FrozenColumnsCount = 2; 
 
 N> RowHeader is frozen by default and works regardless of the `FrozenColumnsCount` property.
 
-The following Gif illustrates FrozenRows and FrozenColumns.
+The following GIF illustrates FrozenRows and FrozenColumns.
 
 ![](SfDataGrid_images/FreezePanes.Gif)

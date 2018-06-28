@@ -110,6 +110,128 @@ The following screenshot shows the selection functionality in the data grid:
 
 ![](SfDataGrid_images/MultipleSelection.PNG)
 
+## Keyboard behavior
+
+`SfDataGrid` supports selection via keyboard interaction for the Xamarin.Forms.macOS and Xamarin.Forms.UWP platforms. Keyboard interaction will not have any effect when the `SfDataGrid.SelectionMode` is set as `SelectionMode.None`.
+
+<table>
+<tr>
+<th>
+Key or key combinations
+</th>
+<th>
+Description
+</th>
+</tr>
+<tr>
+<td>
+<kbd>DownArrow</kbd>
+</td>
+<td>
+Moves selection to the next row directly below the currently selected row when the SelectionMode is Single. Upon reaching the bottom of screen, pressing down arrow scrolls and applies selection to the next row if grid has scrollable content. If the selected row is the last row of grid, pressing down arrow does nothing. In `Multiple` and `SingleDeselect` selection modes, if the next row has already been selected, pressing down arrow key will deselect the row.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>UpArrow</kbd>
+</td>
+<td>
+Moves selection to the previous row directly above the currently selected row when the SelectionMode is Single. Upon reaching the top of screen, pressing up arrow scrolls and applies selection to the previous row if grid has scrollable content. If the selected row is the first row of grid, pressing up arrow does nothing. In `Multiple` and `SingleDeselect` selection modes, if the previous row has already been selected, pressing up arrow key will deselect the row.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>PageDown</kbd>
+</td>
+<td>
+SfDataGrid will be scrolled to the next set of rows that are not displayed in view including the partially displayed row. If selection is applied to any row, pressing PageDown arrow will move selection to the last row of the next set of rows when the SelectionMode is Single.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>PageUp</kbd>
+</td>
+<td>
+SfDataGrid will be scrolled to the previous set of rows that are not displayed in view including the partially displayed row. If the selection is applied to any row, pressing PageUp will move selection to the first row of the next set of rows when the SelectionMode is Single.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>Tab</kbd>
+</td>
+<td>
+Moves selection to the next row directly below the currently selected row when the SelectionMode is Single. Upon reaching the bottom of screen, pressing Tab key scrolls and applies selection to the next row if grid has scrollable content. If the selected row is the last row of grid, pressing Tab key does nothing. In `Multiple` and `SingleDeselect` selection modes, if the next row has already been selected, pressing Tab key will deselect the row.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>Ctrl</kbd> + <kbd>Home</kbd> or <kbd>Ctrl</kbd> + <kbd>UpArrow</kbd> or <kbd>Home</kbd>
+</td>
+<td>
+Scrolls grid to the first row of the collection.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>Ctrl</kbd> + <kbd>End</kbd> or <kbd>Ctrl</kbd> + <kbd>DownArrow</kbd> or <kbd>End</kbd>
+</td>
+<td>
+Scrolls grid to the last row of the collection.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>Enter</kbd> or <kbd>Ctrl</kbd> + <kbd>Enter</kbd>
+</td>
+<td>
+If the active current cell is in edit mode, changes will be committed and selection will be moved to the row below the active current cell. If the active current cell is in last row, commits changes and only editing is ended.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>Esc</kbd>
+</td>
+<td>
+If the current cell is in edit mode, reverts the changes done in the current cell. If the underlying source implements the {{'[IEditableObject](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject#"")'| markdownify }}, pressing Esc key for the second time will cancel the edit mode for the entire row.
+</td>
+</tr>
+</table>
+
+
+### Shift key combinations
+
+<table>
+<tr>
+<th>
+Key combinations
+</th>
+</tr>
+<tr>
+<td>
+<kbd>Shift</kbd> + <kbd>DownArrow</kbd>
+</td>
+<td>
+If the Selection Mode is multiple, the next multiple rows will be continuously selected below the currently selected row. If the Selection Mode is Single or SingleDeselect, selection will be moved to the next row.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>Shift</kbd> + <kbd>UpArrow</kbd> 
+</td>
+<td>
+If the Selection Mode is multiple, the previous multiple rows will be continuously selected above the currently selected row. If the Selection Mode is Single or SingleDeselect, selection will be moved to the previous row.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>Shift</kbd> + <kbd>Tab</kbd>
+</td>
+<td>
+Moves selection to the previous row from the currently selected row when the SelectionMode is Single or SingleDeselect. If the selected row is in first row, pressing Shift +Tab does nothing.
+</td>   
+</tr>
+</table>
+
 ### Scroll to selected item
 
 You can scroll programmatically to the selected item by passing the `SelectedIndex` to the [SfDataGrid.ScrollToRowIndex](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ScrollToRowIndex.html) method.

@@ -205,7 +205,7 @@ The data grid allows you to enable or disable the INotifyPropertyChanged in the 
 </tr>
 <tr>
 <td>CollectionChange</td>
-<td>Denotes view listens the System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged event of SoureCollection. </td>
+<td>Denotes view listens the System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged event of SourceCollection. </td>
 </tr>
 <tr>
 <td>None</td>

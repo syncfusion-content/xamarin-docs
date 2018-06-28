@@ -314,7 +314,7 @@ The SfPopupLayout can be displayed at an absolute x, y coordinate from the relat
 
 To open the SfPopupLayout in the specific x, y coordinate relative to a view, use the `SfPopupLayout.ShowRelativeToView(View, RelativePosition,x-position,y-position)` method.
 
- % tabs %}
+ {% tabs %}
  {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -338,7 +338,7 @@ To open the SfPopupLayout in the specific x, y coordinate relative to a view, us
 {% endhighlight %}
 {% endtabs %}
 
-% tabs %}
+{% tabs %}
 {% highlight c# %}
 using Syncfusion.XForms.PopupLayout;
 

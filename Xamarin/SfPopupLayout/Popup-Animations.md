@@ -27,7 +27,19 @@ N> Setting of AnimationMode is same for both `Displaying pop-up when the SfPopup
 Zoom-out animation will be applied when the PopupView opens and Zoom-in animation will be applied when the PopupView closes.
 
 {% tabs %}
+
+{% highlight xaml %}
+
+<sfPopup:SfPopupLayout x:Name="popUpLayout">
+    <sfPopup:SfPopupLayout.PopupView>
+        <sfPopup:PopupView AnimationMode="Zoom" />
+    </sfPopup:SfPopupLayout.PopupView>
+</sfPopup:SfPopupLayout>
+
+{% endhighlight %}
+
 {% highlight c# %}
+
 //MainPage.cs
 
 public MainPage()
@@ -37,7 +49,9 @@ public MainPage()
     popupLayout.PopupView.AnimationMode = AnimationMode.Zoom;
     ....
 }
+
 {% endhighlight %}
+
 {% endtabs %}
 
 ![](GettingStarted_images/ZoomAnimation.gif)
@@ -47,7 +61,19 @@ public MainPage()
 Fade-out animation will be applied when the PopupView opens and Fade-in animation will be applied when the PopupView closes.
 
 {% tabs %}
+
+{% highlight xaml %}
+
+<sfPopup:SfPopupLayout x:Name="popUpLayout">
+    <sfPopup:SfPopupLayout.PopupView>
+        <sfPopup:PopupView AnimationMode="Fade" />
+    </sfPopup:SfPopupLayout.PopupView>
+</sfPopup:SfPopupLayout>
+
+{% endhighlight %}
+
 {% highlight c# %}
+
 //MainPage.cs
 
 public MainPage()
@@ -57,7 +83,9 @@ public MainPage()
     popupLayout.PopupView.AnimationMode = AnimationMode.Fade;
     ....
 }
+
 {% endhighlight %}
+
 {% endtabs %}
 
 ![](GettingStarted_images/FadeAnimation.gif)
@@ -67,7 +95,19 @@ public MainPage()
 PopupView will be animated from left-to-right when it opens and from right-to-left when it closes.
 
 {% tabs %}
+
+{% highlight xaml %}
+
+<sfPopup:SfPopupLayout x:Name="popUpLayout">
+    <sfPopup:SfPopupLayout.PopupView>
+        <sfPopup:PopupView AnimationMode="SlideOnLeft" />
+    </sfPopup:SfPopupLayout.PopupView>
+</sfPopup:SfPopupLayout>
+
+{% endhighlight %}
+
 {% highlight c# %}
+
 //MainPage.cs
 
 public MainPage()
@@ -77,7 +117,9 @@ public MainPage()
     popupLayout.PopupView.AnimationMode = AnimationMode.SlideOnLeft;
     ....
 }
+
 {% endhighlight %}
+
 {% endtabs %}
 
 ![](GettingStarted_images/SlideOnLeftAnimation.gif)
@@ -87,7 +129,19 @@ public MainPage()
 PopupView will be animated from right-to-left when it opens and from left-to-right when it closes.
 
 {% tabs %}
+
+{% highlight xaml %}
+
+<sfPopup:SfPopupLayout x:Name="popUpLayout">
+    <sfPopup:SfPopupLayout.PopupView>
+        <sfPopup:PopupView AnimationMode="SlideOnRight" />
+    </sfPopup:SfPopupLayout.PopupView>
+</sfPopup:SfPopupLayout>
+
+{% endhighlight %}
+
 {% highlight c# %}
+
 //MainPage.cs
 
 public MainPage()
@@ -97,7 +151,9 @@ public MainPage()
     popupLayout.PopupView.AnimationMode = AnimationMode.SlideOnRight;
     ....
 }
+
 {% endhighlight %}
+
 {% endtabs %}
 
 ![](GettingStarted_images/SlideOnRightAnimation.gif)
@@ -107,7 +163,19 @@ public MainPage()
 PopupView will be animated from top-to-bottom when it opens and from bottom-to-top when it closes.
 
 {% tabs %}
+
+{% highlight xaml %}
+
+<sfPopup:SfPopupLayout x:Name="popUpLayout">
+    <sfPopup:SfPopupLayout.PopupView>
+        <sfPopup:PopupView AnimationMode="SlideOnTop" />
+    </sfPopup:SfPopupLayout.PopupView>
+</sfPopup:SfPopupLayout>
+
+{% endhighlight %}
+
 {% highlight c# %}
+
 //MainPage.cs
 
 public MainPage()
@@ -117,8 +185,11 @@ public MainPage()
     popupLayout.PopupView.AnimationMode = AnimationMode.SlideOnTop;
     ....
 }
+
 {% endhighlight %}
+
 {% endtabs %}
+
 
 ![](GettingStarted_images/SlideOnTopAnimation.gif)
 
@@ -127,7 +198,19 @@ public MainPage()
 PopupView will be animated from bottom-to-top when it opens and from top-to-bottom when it closes.
 
 {% tabs %}
+
+{% highlight xaml %}
+
+<sfPopup:SfPopupLayout x:Name="popUpLayout">
+    <sfPopup:SfPopupLayout.PopupView>
+        <sfPopup:PopupView AnimationMode="SlideOnBottom" />
+    </sfPopup:SfPopupLayout.PopupView>
+</sfPopup:SfPopupLayout>
+
+{% endhighlight %}
+
 {% highlight c# %}
+
 //MainPage.cs
 
 public MainPage()
@@ -137,7 +220,9 @@ public MainPage()
     popupLayout.PopupView.AnimationMode = AnimationMode.SlideOnBottom;
     ....
 }
+
 {% endhighlight %}
+
 {% endtabs %}
 
 ![](GettingStarted_images/SlideOnBottomAnimation.gif)
@@ -147,7 +232,19 @@ public MainPage()
 Animation will not be applied.
 
 {% tabs %}
+
+{% highlight xaml %}
+
+<sfPopup:SfPopupLayout x:Name="popUpLayout">
+    <sfPopup:SfPopupLayout.PopupView>
+        <sfPopup:PopupView AnimationMode="None" />
+    </sfPopup:SfPopupLayout.PopupView>
+</sfPopup:SfPopupLayout>
+
+{% endhighlight %}
+
 {% highlight c# %}
+
 //MainPage.cs
 
 public MainPage()
@@ -157,7 +254,9 @@ public MainPage()
     popupLayout.PopupView.AnimationMode = AnimationMode.None;
     ....
 }
+
 {% endhighlight %}
+
 {% endtabs %}
 
 ![](GettingStarted_images/AnimationMode_None.gif)

@@ -556,7 +556,7 @@ namespace ListViewWithPopup
 
 ![](PopupLayout_images/ListViewInPopup.png)
 
-## Display popup by binding to a property
+## Display popup when interacting with a switch
 
 [SfPopupLayout.IsOpen](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~IsOpen.html) is a bindable property and hence can be binded to any property and based on its value the popup will open or close. In the below code example, we have binded the `IsOpen` property with the `IsToggled` property of the the switch and the popup will be opened or closed as the switch toggles.
 

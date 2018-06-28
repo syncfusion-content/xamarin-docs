@@ -596,7 +596,7 @@ Here, the LastName padding is customized.
 
 ### Customizing data form item view
 
-You can customize the generated label by overriding the `GenerateViewForLabel` method. Here, BackgroundColor and TextColor of label is customized. You can also customize the entry by overriding the `OnEditorCreated` method.
+By using dataformmangar class , you can customize the generated label by overriding the `GenerateViewForLabel` method and also you can customize the editor by overriding the `OnEditorCreated` method.Here, BackgroundColor and TextColor of label and editor is customized.
 
 {% tabs %}
 {% highlight c# %}

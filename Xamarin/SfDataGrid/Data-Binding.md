@@ -196,7 +196,7 @@ datagrid.EnableDataVirtualization = true;
 
 ### NotificationSubscriptionMode
 
-The data grid allows you to enable or disable the INotifyPropertyChanged in the underlying source collection that is bound to the `SfDataGrid.ItemsSource`by using the [SfDataGrid.NotificationSubscriptionMode](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Data.Portable~Syncfusion.Data.NotificationSubscriptionMode.html) property.
+Data grid allows you to enable or disable INotifyPropertyChanged in the underlying source collection bound to the `SfDataGrid.ItemsSource` by using the [SfDataGrid.NotificationSubscriptionMode](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Data.Portable~Syncfusion.Data.NotificationSubscriptionMode.html) property.
 
 <table>
 <tr>
@@ -205,19 +205,19 @@ The data grid allows you to enable or disable the INotifyPropertyChanged in the 
 </tr>
 <tr>
 <td>CollectionChange</td>
-<td>Denotes view listens the System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged event of SourceCollection. </td>
+<td>Denotes a view that listens System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged event of the SourceCollection. </td>
 </tr>
 <tr>
 <td>None</td>
-<td>Denotes System.ComponentModel.INotifyPropertyChanging.PropertyChanging, System.ComponentModel.INotifyPropertyChanged.PropertyChanged and System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged events will not be listened.</td>
+<td>Denotes System.ComponentModel.INotifyPropertyChanging.PropertyChanging, System.ComponentModel.INotifyPropertyChanged.PropertyChanged, and System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged events will not be listened.</td>
 </tr>
 <tr>
 <td>PropertyChange</td>
-<td>Denotes view listens the System.ComponentModel.INotifyPropertyChanging.PropertyChanging and System.ComponentModel.INotifyPropertyChanged.PropertyChanged events of data object.</td>
+<td>Denotes a view that listens the System.ComponentModel.INotifyPropertyChanging.PropertyChanging and System.ComponentModel.INotifyPropertyChanged.PropertyChanged events of the data object.</td>
 </tr>
 </table>
 
-To set the NotificationSubscriptionMode property, follow the code example:
+To set the NotificationSubscriptionMode property, follow the code example.
 
 {% tabs %}
 {% highlight xaml %}

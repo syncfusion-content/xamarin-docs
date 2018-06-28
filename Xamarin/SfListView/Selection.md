@@ -326,21 +326,21 @@ N> [SelectionChanging](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfus
 
 ## Key navigation
 
-The `AllowKeyNavigation` property enables navigation through keyboard buttons. When the `AllowKeyNavigation` property is `true`, navigation gets enabled. Otherwise, set to `false`. Behavior of key navigation in UWP and macOS are explained as follows :
+The [AllowKeyNavigation](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AllowKeyboardNavigation.html) property enables navigation through keyboard buttons. When the `AllowKeyNavigation` property is `true`, navigation gets enabled. Otherwise, set to `false`. Behavior of key navigation in UWP and macOS are explained as follows :
 
 * When the [SfListView.SelectionMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SelectionMode.html) is `Single`, the selected item is highlighted with `FocusBorderColor` around the item while key navigation.
-* When the `SelectionMode` is `SingleDeSelect` or `Multiple`, the `FocusBorderColor` will set to the `CurrentItem` only on key navigation. 
-* If focusable elements i.e. `Entry`, `SearchBar`, etc. are loaded in the page, the `Focus` will not be changed either to other elements in the view or to the next `ListViewItem` when `Tab` or `Shift+Tab` key is pressed in the [LinearLayout](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LinearLayout.html).
+* When the `SelectionMode` is `SingleDeSelect` or `Multiple`, the [FocusBorderColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~FocusBorderColor.html) will set to the `CurrentItem` only on key navigation. 
+* If focusable elements i.e. `Entry`, `SearchBar`, etc. are loaded in the page, the `Focus` will not be changed either to other elements in the view or to the next [ListViewItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ListViewItem.html) when `Tab` or `Shift+Tab` key is pressed in the [LinearLayout](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LinearLayout.html).
 * In the [GridLayout](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GridLayout.html) with span count greater than 1, the `FocusBorderColor` will navigate to the next or previous `ListViewItem` when pressing `Tab` or `Shift+Tab` key.
 * In macOS, need to move the focus manually to perform key navigation.
 
 ### FocusBorderColor
 
-`FocusBorderColor` used to set the border color for the current focused item. For Android and iOS platform, the default color is `Color.Transparent` and for macOS and UWP platform, the default color is `Color.FromRgb(76, 161, 254)`.
+[FocusBorderColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~FocusBorderColor.html) used to set the border color for the current focused item. For Android and iOS platform, the default color is `Color.Transparent` and for macOS and UWP platform, the default color is `Color.FromRgb(76, 161, 254)`.
 
 ### FocusBorderThickness
 
-`FocusBorderThickness` used to set the border thickness for the current focused item. For Android and iOS platform, the default thickness is 0 and for macOS and UWP platform, the default thickness is 1.
+[FocusBorderThickness](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~FocusBorderThickness.html) used to set the border thickness for the current focused item. For Android and iOS platform, the default thickness is 0 and for macOS and UWP platform, the default thickness is 1.
 
 ## MacOS support
 

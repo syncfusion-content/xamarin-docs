@@ -252,7 +252,7 @@ this.listView.DragDropController.UpdateSource = true;
 {% endhighlight %}
 {% endtabs %}
 
-We can able to update collection even when `UpdateSource` is `false`.Like, User can decide where dragged item should be dropped actually by handling the ItemDragging event with `DragAction.Drop`.
+We can able to update collection even when `UpdateSource` is `false`. Like, user can decide where dragged item should be dropped actually by handling the ItemDragging event with [DragAction.Drop](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.DragAction.html).
 
 {% tabs %}
 {% highlight c# %}

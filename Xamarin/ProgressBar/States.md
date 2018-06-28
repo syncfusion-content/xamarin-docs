@@ -9,7 +9,7 @@ documentation: ug
 
 # States
 
-You can configure the states of the progress bar, based on the usage.
+You can configure the states of the progress bar according to the usage.
 
 ## Determinate
 

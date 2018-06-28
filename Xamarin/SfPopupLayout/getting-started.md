@@ -87,13 +87,11 @@ If you are using SfPopupLayout by [Displaying pop-up when the SfPopupLayout is n
 
 {% highlight c# %}
 
-using Syncfusion.XForms.Android.PopupLayout;
-
 protected override void OnCreate(Bundle bundle)
 {
     ...
     global::Xamarin.Forms.Forms.Init(this, bundle);
-    SfPopupLayoutRenderer.Init();
+    Syncfusion.XForms.Android.PopupLayout.SfPopupLayoutRenderer.Init();
     LoadApplication(new App());
 }
 
@@ -109,13 +107,11 @@ To launch the SfPopupLayout in iOS, call the `SfPopupLayoutRenderer.Init()` in 
 
 {% highlight c# %}
 
-using Syncfusion.XForms.iOS.PopupLayout;
-
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {
     …
     global::Xamarin.Forms.Forms.Init ();
-    SfPopupLayoutRenderer.Init();
+    using Syncfusion.XForms.iOS.PopupLayout.SfPopupLayoutRenderer.Init();
     LoadApplication (new App ());
     …
 }
@@ -132,12 +128,10 @@ To launch the SfPopupLayout in UWP, call the `SfPopupLayoutRenderer.Init()` in 
 
 {% highlight c# %}
 
-using Syncfusion.XForms.UWP.PopupLayout;
-
 public MainPage()
 {
     …
-    SfPopupLayoutRenderer.Init();
+    using Syncfusion.XForms.UWP.PopupLayout.SfPopupLayoutRenderer.Init();
     LoadApplication (new App ());
     …
 }

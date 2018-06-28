@@ -111,7 +111,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {
     …
     global::Xamarin.Forms.Forms.Init ();
-    using Syncfusion.XForms.iOS.PopupLayout.SfPopupLayoutRenderer.Init();
+    Syncfusion.XForms.iOS.PopupLayout.SfPopupLayoutRenderer.Init();
     LoadApplication (new App ());
     …
 }
@@ -131,7 +131,7 @@ To launch the SfPopupLayout in UWP, call the `SfPopupLayoutRenderer.Init()` in 
 public MainPage()
 {
     …
-    using Syncfusion.XForms.UWP.PopupLayout.SfPopupLayoutRenderer.Init();
+    Syncfusion.XForms.UWP.PopupLayout.SfPopupLayoutRenderer.Init();
     LoadApplication (new App ());
     …
 }

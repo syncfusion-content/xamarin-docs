@@ -661,6 +661,8 @@ public class DataFormLayoutManagerExt : DataFormLayoutManager
 {% endhighlight %}
 {% endtabs %}
 
+![](SfDataForm_images/Layout_ItemView.png)
+
 ## Label width customization
 
 You can set label and editor width proportionally by using [LabelWidth](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~LabelWidth.html) and [EditorWidth](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~EditorWidth.html) properties.

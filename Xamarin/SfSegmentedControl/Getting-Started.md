@@ -97,7 +97,7 @@ Create a new BlankApp (Xamarin.Forms.Portable) application in Visual Studio for
 
 ## Adding SfSegmentedControl in Xamarin.Forms
 
-Add the required assembly references to the PCL and renderer projects as discussed in the Assembly deployment section.
+Add the required assembly references to the PCL and renderer projects as discussed in the Assembly deployment  [section](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfsegmentedcontrol).
 
 Import the control namespace as shown in the following code.
 
@@ -326,7 +326,7 @@ Items inside the segmented control can be added through the `ItemsSource` proper
 
 ## Adding data as a String
 
-With the help of  Xamarin forms `System.Collections.Generic` we can add string data as `ItemsSource` to SfSegmentedControl.
+With the help of  Xamarin.Forms `System.Collections.Generic` we can add string data as `ItemsSource` to SfSegmentedControl.
 
 {% highlight c# %}
 
@@ -1077,7 +1077,7 @@ We can change the appearance of the segmented control by using the `DisplayMode`
 
 ## Customizing selection indicator appearance
 
-The Selection indicator can be used to indicate the selected index of the segmented control. It can be customized with the build-in APIs that are available in the `SelectionIndicatorSettings` property of SfSegmentedControl.
+The Selection indicator can be used to indicate the selected index of the segmented control. It can be customized with the built-in APIs that are available in the `SelectionIndicatorSettings` property of SfSegmentedControl.
 
 To know more about customizing selection indicator refer this [feature link](https://help.syncfusion.com/xamarin/sfsegmentedcontrol/indicating-the-selected-item)
 

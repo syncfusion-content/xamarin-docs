@@ -16,7 +16,7 @@ Syncfusion components for Xamarin.Forms are available in nuget.org. To add [`S
 
 To learn more about obtaining our components, refer to these links: Mac and Windows. Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this link to learn about the dependent assemblies for digital gauge.
 
-I> After adding the reference, an additional step is required for iOS and UWP projects. You should create an instance of the SfGaugeRendererin iOS and UWP projects as shown in this KB article.
+I> After adding the reference, an additional step is required for iOS and UWP projects. You should create an instance of the SfGaugeRenderer in iOS and UWP projects as shown in this KB article.
 
 I> For UWP alone, one more additional step is required if the project is built-in release mode with .NET Native tool chain enabled. You can refer to this KB article for more details.
 
@@ -184,7 +184,7 @@ namespace GaugeGettingStarted
         {
             InitializeComponent();
 
-            //Initialise digital gauge
+            //Initialize digital gauge
 
             SfDigitalGauge digital = new SfDigitalGauge();
 

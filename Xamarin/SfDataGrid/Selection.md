@@ -53,7 +53,7 @@ dataGrid.SelectionMode = SelectionMode.Multiple;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/MultipleSelection.PNG)
+![](SfDataGrid_images/MultipleSelection.jpg)
 
 ## Getting selected rows 
 
@@ -108,7 +108,7 @@ dataGrid.SelectedItems.Add (viewModel.OrdersInfo [11]);
 
 The following screenshot shows the selection functionality in the data grid:
 
-![](SfDataGrid_images/MultipleSelection.PNG)
+![](SfDataGrid_images/MultipleSelection.jpg)
 
 ## Keyboard behavior
 
@@ -509,7 +509,7 @@ public class SelectionStyle : DataGridStyle
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/SelectionColor.PNG)
+![](SfDataGrid_images/SelectionBackground.jpg)
 
 ### Changing current cell border color
 
@@ -558,7 +558,7 @@ public class SelectionStyle : DataGridStyle
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/CurrentCellBorder.PNG)
+![](SfDataGrid_images/CurrentCellBorder.jpg)
 
 ## Binding selection properties
 

@@ -11,7 +11,7 @@ keywords: button, SfRadioButton, RadioButton
 
 # Overview
 
-The radio button is a selection control that allows users to select one option from a set. It has two states: checked and unchecked.
+The radio button is a selection control that allows users to select one option from a set.The two states of radio button are checked and unchecked.
 
 ##  Key features
 

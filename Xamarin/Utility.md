@@ -20,7 +20,7 @@ Syncfusion provides the **Visual** **Studio** **Project** **Templates** for the 
 
 I> The Syncfusion Xamarin Project Templates are available from v16.2.0.41.
 
-## Create Syncfusion Xamarin Application
+### Create Syncfusion Xamarin Application
 
 The following steps direct you to create the **Syncfusion** **Xamarin** **Application** through the **Visual** **Studio** **2017:**
 
@@ -64,7 +64,7 @@ Choose the Xamarin application needs to create with the Syncfusion controls.
 
    **Net Standard /PCL:**
 
-   ![] (Syncfusion-Project-Templates_images/Syncfusion-Project-Templates_img3.jpeg)
+   ![](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates_img3.jpeg)
 
    ![](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates_img4.jpeg)
 
@@ -92,7 +92,7 @@ Syncfusion provides the **Visual** **Studio** **Toolbox** for the Syncfusion Xam
 
 I> The Syncfusion Toolbox are available from v16.2.0.41.
 
-## Add Syncfusion Xamarin (Xamarin.Forms) Controls in your Project
+### Add Syncfusion Xamarin (Xamarin.Forms) Controls in your Project
 
 Create the Xamarin or Syncfusion Xamarin project. The following steps direct you to add the Syncfusion controls through the Visual Studio Toolbox:
 

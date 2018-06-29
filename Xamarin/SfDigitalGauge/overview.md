@@ -6,25 +6,35 @@ platform: Xamarin
 control: DigitalGauge
 documentation: ug
 ---
-
 # Overview
 
-SfDigitalGauge control is used to display alphanumeric characters in digital (LED Display) mode. SfDigitalGauge is used to display a range of values that uses characters in combination with numbers. The SfDigitalGauge control lets you visualize alpha and numeric values over a Digital Gauge frame.
+The digital gauge control is used to display alphanumeric characters in digital (LED display) mode. This control displays a range of values that uses character in combination with numbers.
 
-![](Getting-Started_images/overview.png)
+## Key features
 
-## Key Features
+The digital gauge is composed of several segments which are major UI components. [`SfDigitalGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfDigitalGauge.html) comprises the following segments to display digital characters:
 
-* Supports four predefined CharacterTypes
+•	7-segment display
+•	14-segment display
+•	16-segment display
+•	8*8 dot matrix display
 
-* Full Character Customization support has been provided
+### 7-segment display
 
-* Segments can be customized.
+This type of digital gauge displays digital characters in 7 segments. It is mainly used to display numbers.
 
-* Special characters support has been provided
+### 14-segment display
 
+This type of digital gauge displays digital characters in 14 segments. It is mainly used to display both the numbers and alphabet.
 
+### 16-segment display
 
+This type of digital gauge displays digital characters in 16 segments. It is also mainly used to display both the numbers and alphabet.
 
+### 8 * 8 dot matrix display
+
+This type of digital gauge displays digital characters in 8*8 dot matrix segments, in which the characters are spotted by the regular brush and the remaining dots are spotted by the dimmed brush. It is mainly used to display numbers, characters, and special characters.
+
+![](Overview_images/Overview_img1.jpeg)
 
 

@@ -44,3 +44,7 @@ dataGrid.FrozenColumnsCount = 2; 
 * `FrozenColumnsCount` should be lesser than number of columns displayed in view. For example, If you have 5 columns in view, then you can set `FrozenColumnsCount` to a maximum value of 4.
 
 N> RowHeader is frozen by default and works regardless of the `FrozenColumnsCount` property.
+
+The following GIF illustrates FrozenRows and FrozenColumns.
+
+![](SfDataGrid_images/FreezePanes.Gif)

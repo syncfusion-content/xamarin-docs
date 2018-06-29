@@ -8,12 +8,24 @@ documentation: ug
 --- 
 # How to 
 
-## hide the header in the SfPopupLayout
+## Hide the header in the SfPopupLayout
 
 The SfPopupLayout allows hiding the header by using the [SfPopupLayout.PopupView.ShowHeader](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~ShowHeader.html) property. The default value of this property is `true`.
 
 {% tabs %}
+
+{% highlight xaml %}
+
+<sfPopup:SfPopupLayout x:Name="popUpLayout">
+    <sfPopup:SfPopupLayout.PopupView>
+        <sfPopup:PopupView ShowHeader="False"/>
+    </sfPopup:SfPopupLayout.PopupView>
+<sfPopup:SfPopupLayout>
+
+{% endhighlight %}
+
 {% highlight c# %}
+
 //MainPage.cs
 
 public MainPage()
@@ -23,17 +35,31 @@ public MainPage()
     popupLayout.PopupView.ShowHeader = false;
     ....
 }
+
 {% endhighlight %}
+
 {% endtabs %}
 
 ![](PopupLayout_images/ShowHeader_False.png)
 
-## hide the footer in SfPopupLayout
+## Hide the footer in SfPopupLayout
 
 The SfPopupLayout allows hiding the footer by using the [SfPopupLayout.PopupView.ShowFooter](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~ShowFooter.html) property. The default value of this property is `true`.
 
 {% tabs %}
+
+{% highlight xaml %}
+
+<sfPopup:SfPopupLayout x:Name="popUpLayout">
+    <sfPopup:SfPopupLayout.PopupView>
+        <sfPopup:PopupView ShowFooter="False"/>
+    </sfPopup:SfPopupLayout.PopupView>
+<sfPopup:SfPopupLayout>
+
+{% endhighlight %}
+
 {% highlight c# %}
+
 //MainPage.cs
 
 public MainPage()
@@ -43,17 +69,31 @@ public MainPage()
     popupLayout.PopupView.ShowFooter = false;
     ....
 }
+
 {% endhighlight %}
+
 {% endtabs %}
 
 ![](PopupLayout_images/ShowFooter_False.png)
 
-## hide the Close icon in the SfPopupLayout 
+## Hide the Close icon in the SfPopupLayout 
 
 The SfPopupLayout allows hiding the Close icon by using the [SfPopupLayout.PopupView.ShowCloseButton](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~ShowCloseButton.html) property. The default value of this property is `true`.
 
 {% tabs %}
+
+{% highlight xaml %}
+
+<sfPopup:SfPopupLayout x:Name="popUpLayout">
+    <sfPopup:SfPopupLayout.PopupView>
+        <sfPopup:PopupView ShowCloseButton="False"/>
+    </sfPopup:SfPopupLayout.PopupView>
+<sfPopup:SfPopupLayout>
+
+{% endhighlight %}
+
 {% highlight c# %}
+
 //MainPage.cs
 
 public MainPage()
@@ -63,17 +103,21 @@ public MainPage()
     popupLayout.PopupView.ShowCloseButton = false;
     ....
 }
+
 {% endhighlight %}
+
 {% endtabs %}
 
 ![](PopupLayout_images/ShowClosebutton_False.png)
 
-## load the SfPopupLayout in GridTappedEvent of the SfDataGrid
+## Load the SfPopupLayout in GridTappedEvent of the SfDataGrid
 
 The SfPopupLayout allows pop-up in the grid tapped event of the SfDataGrid.
 
 {% tabs %}
+
 {% highlight xaml %}
+
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -88,7 +132,7 @@ The SfPopupLayout allows pop-up in the grid tapped event of the SfDataGrid.
     <sfPopup:SfPopupLayout x:Name="popupLayout" >
         <sfPopup:SfPopupLayout.Content>
             <sfDataGrid:SfDataGrid x:Name="dataGrid"
-                               ItemsSource="{Binding OrdersInfo}">
+                                   ItemsSource="{Binding OrdersInfo}">
             </sfDataGrid:SfDataGrid>
        </sfPopup:SfPopupLayout.Content>
     </sfPopup:SfPopupLayout>
@@ -97,6 +141,7 @@ The SfPopupLayout allows pop-up in the grid tapped event of the SfDataGrid.
 {% endhighlight %}
 
 {% highlight c# %}
+
 using Syncfusion.XForms.PopupLayout;
 
 namespace GettingStarted
@@ -128,12 +173,14 @@ namespace GettingStarted
         }
     }
 }
+
 {% endhighlight %}
+
 {% endtabs %}
 
 ![](PopupLayout_images/DataGridWithPopup.png)
 
-## load SfPopupLayout in Prism
+## Load SfPopupLayout in Prism
 
 Refer to the following code in which the SfPopupLayout is shown, if you navigate to the next and previous pages using button click.
 
@@ -345,12 +392,14 @@ public class SecondPageViewModel : INavigationAware
 {% endhighlight %}
 {% endtabs %}
 
-## open SfPopupLayout in ItemTapped event of SfListView
+## Open SfPopupLayout in ItemTapped event of SfListView
 
 The SfPopupLayout allows opening it in the ItemTapped event of the SfListView.
 
 {% tabs %}
+
 {% highlight xaml %}
+
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -364,6 +413,23 @@ The SfPopupLayout allows opening it in the ItemTapped event of the SfListView.
     </ContentPage.BindingContext>
     
     <sfPopup:SfPopupLayout x:Name="popupLayout">
+        <sfPopup:SfPopupLayout.PopupView>
+            <sfPopup:PopupView>
+                <sfPopup:PopupView.ContentTemplate>
+                    <DataTemplate>
+                        <Label Text="A pop-up is a graphical user interface display area that 
+                               suddenly appears in the foreground of the visual interface. 
+                               Pop-up can be initiated by single or double tap or can simply 
+                               be timed to occur. A pop-up window should be smaller than the 
+                               background window or interface; otherwise, its a replacement 
+                               interface."
+                               BackgroundColor="White"
+                               TextColor="Black"
+                               />
+                    </DataTemplate>
+                </sfPopup:PopupView.ContentTemplate>
+            </sfPopup:PopupView>
+        </sfPopup:SfPopupLayout.PopupView>
         <sfPopup:SfPopupLayout.Content>
             <sfListview:SfListView  x:Name="listView"  ItemSpacing="5" 
                           ItemsSource="{Binding contactsInfo}" >
@@ -407,6 +473,7 @@ The SfPopupLayout allows opening it in the ItemTapped event of the SfListView.
         </sfPopup:SfPopupLayout.Content>
     </sfPopup:SfPopupLayout> 
  </ContentPage>
+
 {% endhighlight %}
 
 {% highlight c# %}
@@ -433,12 +500,14 @@ namespace ListViewWithPopup
         }
     }
 }
+
 {% endhighlight %}
+
 {% endtabs %}
 
 ![](PopupLayout_images/PopupInListView.png)
 
-## show ListView as a pop-up
+## Show ListView as a pop-up
 
 The SfPopupLayout allows loading the SfListView as a content of the pop-up. You have to set `WidthRequest` and `HeightRequest` properties for loading SfListView in the SfPopupLayout. 
 
@@ -486,3 +555,105 @@ namespace ListViewWithPopup
 {% endtabs %}
 
 ![](PopupLayout_images/ListViewInPopup.png)
+
+## Display popup when interacting with a switch
+
+[SfPopupLayout.IsOpen](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~IsOpen.html) is a bindable property and hence can be binded to any property and based on its value the popup will open or close. In the below code example, we have binded the `IsOpen` property with the `IsToggled` property of the the switch and the popup will be opened or closed as the switch toggles.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+//MainPage.xaml
+
+<sfpopup:SfPopupLayout IsOpen="{Binding Source={x:Reference popupSwitch}, Path=IsToggled}">
+    <sfpopup:SfPopupLayout.Content>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="On the switch to show popup" />
+            <Switch x:Name="popupSwitch" IsToggled="False" VerticalOptions="Start" />
+        </StackLayout>
+    </sfpopup:SfPopupLayout.Content>
+</sfpopup:SfPopupLayout>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Display popup in MVVM
+
+SfPopup can be used in MVVM architecture applications easily. In the below example [SfPopupLayout.IsOpen](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~IsOpen.html) property is binded to a property in the ViewModel based on which the popup is opened or closed. Refer the below code example to display popup in MVVM.
+
+In the below code snippet, note that the Binding context is set for the page and the property (DisplayPopup) of the ViewModel is binded to the [SfPopupLayout.IsOpen](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~IsOpen.html).
+
+{% tabs %}
+
+{% highlight xaml %}
+
+//MainPage.xaml
+
+<ContentPage.BindingContext>
+    <local:ViewModel />
+</ContentPage.BindingContext>
+
+<sfpopup:SfPopupLayout x:Name="popup" IsOpen="{Binding DisplayPopup}">
+    <sfpopup:SfPopupLayout.Content>
+        <StackLayout x:Name="rootView">
+            <Button x:Name="isOpenButton" Text="Click to open popup" Command="{Binding OpenPopupCommand}"/>
+        </StackLayout>
+    </sfpopup:SfPopupLayout.Content>
+</sfpopup:SfPopupLayout>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+// ViewModel.cs
+
+public class ViewModel : INotifyPropertyChanged
+{
+    private bool displayPopup;
+
+    public ICommand OpenPopupCommand { get; set; }
+
+    public bool DisplayPopup
+    {
+        get
+        {
+            return displayPopup;
+        }
+        set
+        {
+            displayPopup = value;
+            RaisePropertyChanged("DisplayPopup");
+        }
+    }
+
+    public ViewModel()
+    {
+        OpenPopupCommand = new Command(OpenPopup);
+    }
+
+    private void OpenPopup()
+    {
+        DisplayPopup = true;
+    }
+
+    #region INotifyPropertyChanged
+
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    private void RaisePropertyChanged(string propertyName)
+    {
+        if(this.PropertyChanged != null)
+        {
+            this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+        }
+    }
+
+    #endregion
+
+}
+
+{% endhighlight %}
+
+{% endtabs %}

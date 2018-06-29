@@ -9,11 +9,11 @@ documentation: ug
 
 ---
 
-# TimeZone
+# Time Zone
 
 Schedule allows you to create appointments in various time zones and display them in the user's time zone or any other time zone. Appointments are rendered by recalculating Start and End time based on given time zone.
 
-Consider the following scenario you are in North Carolina and you want to set up a meeting at 10 AM on North Carolina time. You have colleagues in London and Chennai and they also need to participate. The time for this meeting will be 3 PM (15:00) in London and 5.30 AM in Chennai. When you each view your calendar, you need to see the appointment displayed relative to your local time zone 5.30 am, 10 am, 3 pm respectively and it can be achieved by setting schedule time zone to default and Appointments time zone to `Eastern Standard Time (North Carolina)` [as you are in North Carolina and its time zone is Eastern Standard Time)
+Consider the following scenario you are in North Carolina and you want to set up a meeting at 10 AM on North Carolina time. You have colleagues in London and Chennai and they also need to participate. The time for this meeting will be 3 PM (15:00) in London and 5.30 AM in Chennai. When you each view your calendar, you need to see the appointment displayed relative to your local time zone 5.30 am, 10 am, 3 pm respectively and it can be achieved by setting schedule time zone to default and Appointments time zone to `Eastern Standard Time (North Carolina)` [as you are in North Carolina and its time zone is Eastern Standard Time]
 
 You can set specific time zone to schedule by using [TimeZone](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~TimeZone.html) Property of schedule. 
 {% tabs %}
@@ -28,7 +28,7 @@ schedule.TimeZone = "GMT Standard Time";
 {% endhighlight %}
 {% endtabs %}
 
-### Creating Appointment's in different TimeZone
+### Creating Appointment's in different Time Zone
 You can create appointments at different time zone using [StartTimeZone](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~StartTimeZone.html) and [EndTimeZone](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~EndTimeZone.html) property of the `Appointment`. The appointment's start time and end time calculated based on the given time zone information for start time and end time. You can set different time zones for `StartTimeZone` and `EndTimeZone` property.
 You can use `StartTime` and `EndTime` property to get the exact Start Time and End Time of the appointment. By using [ActualStartTime](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~ActualStartTime.html) and [ActualEndTime](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~ActualEndTime.html) properties, you can get the exact appointment rendering time.
 

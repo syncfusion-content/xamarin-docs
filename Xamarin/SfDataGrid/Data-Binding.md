@@ -178,9 +178,9 @@ When BeginInit method is called it suspends all the updates until EndInit method
 </table>
 
 ### Data Virtualization
-Data grid provides support to handle the large amount of data through built-in virtualization feature. With Data virtualization, [SfDataGrid.View](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~View.html) enabled , SfDataGrid processes the data in on-demand for better performance while loading large amount of data. 
+Data grid provides support to handle the large amount of data through built-in virtualization feature. With Data virtualization, the record entries will be created in the runtime only upon scrolling to the vertical end which increases the  performance of grid loading time.
 
-You can load large amount of data in less time by setting SfDataGrid.EnableDataVirtualization property to true, follow the code example:
+To set SfDataGrid.EnableDataVirtualization property to true, follow the code example:
 
 {% tabs %}
 {% highlight xaml %}
@@ -196,7 +196,7 @@ datagrid.EnableDataVirtualization = true;
 
 ### NotificationSubscriptionMode
 
-Data grid exposed NotificationSubscriptionMode property that allows you to set whether the underlying source collection items can listen to the INotifyCollectionChanged or INotifyPropertyChanging events. You can handle the property change or collection change by setting the [SfDataGrid.NotificationSubscriptionMode](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Data.Portable~Syncfusion.Data.NotificationSubscriptionMode.html) property.
+Data grid exposed [SfDataGrid.NotificationSubscriptionMode](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Data.Portable~Syncfusion.Data.NotificationSubscriptionMode.html) property that allows you to set whether the underlying source collection items can listen to the INotifyCollectionChanged or INotifyPropertyChanging events. You can handle the property change or collection change by setting the NotificationSubscriptionMode property.
 
 <table>
 <tr>

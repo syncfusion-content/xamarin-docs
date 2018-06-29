@@ -10,7 +10,7 @@ keywords: button, SfRadioButton, RadioButton
 ---
 
 # Getting Started
-This section explains you the steps required to configure a `SfRadioButton` control in a real-time scenario and provides a walk-through on some of the customization features available in `SfRadioButton` control.
+This section explains the steps required to configure the `SfRadioButton` control in a real-time scenario and provides a walk-through on some of the customization features available in `SfRadioButton` control.
 
 ## Add SfRadioButton reference
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add maskededit to your project, open the NuGet package manager in Visual Studio, and search for "[syncfusion.xamarin.buttons](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons)", and then install it. 
@@ -37,7 +37,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {% endtabs %}
 
 ### Additional step for UWP
-This step is required only if the application is deployed in Release mode with .NET native tool chain enabled and it is for resolving the known Framework issue “Custom controls not rendering in Release mode” in UWP platform. Initializing the `SfRadioButton` assembly at `OnLaunched` overridden method of the `App` class in UWP project is the suggested work around, as demonstrated in the following code example.
+This step is required only if the application is deployed in Release mode with .NET native tool chain enabled.It is for resolving the known Framework issue “Custom controls not rendering in Release mode” in UWP platform. Initializing the `SfRadioButton` assembly at `OnLaunched` overridden method of the `App` class in UWP project is the suggested work around, as demonstrated in the following code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -45,9 +45,9 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 {
     ..... 
     rootFrame.NavigationFailed += OnNavigationFailed;
-    // you'll need to add `using System.Reflection;` 
+    // Add `using System.Reflection;` 
     List<Assembly> assembliesToInclude = new List<Assembly>();
-    //Now, add all the assemblies your app uses 
+    //Now, add all the assemblies that your app uses 
     assembliesToInclude.Add(typeof(SfRadioButtonRenderer).GetTypeInfo().Assembly);
     // replaces Xamarin.Forms.Forms.Init(e);
     Xamarin.Forms.Forms.Init(e, assembliesToInclude);
@@ -110,7 +110,7 @@ namespace GettingStarted
 
 ##Setting caption
 
-The radio button caption can be defined using `Text` property of `SfRadioButton`. This caption normally describes the meaning of the radio button and it displays next to radio button.
+The radio button caption can be defined using the `Text` property of `SfRadioButton`. This caption normally describes the meaning of the radio button and it displays next to radio button.
  
 {% tabs %}
 {% highlight xaml %}
@@ -124,16 +124,16 @@ radioButton.Text = "RadioButton";
 
 ![](Images/Caption.png)
 
-This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Android/Samples/MaskedEdit_VisualCustomize.zip).
+This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Forms/Samples/RadioButton_GettingStarted.zip).
 
 ## Change the radio button state
 
-The `SfRadioButton` contains two different states visually, they are:
+The two different visual states of the `SfRadioButton` are:
 
 * Checked
 * Unchecked
 
-You can change the state of the radio button using `IsChecked` property of `SfRadioButton`. In the checked state an inner circle will be added to the visualization of radio button.
+You can change the state of the radio button using the `IsChecked` property of `SfRadioButton`. In the checked state, an inner circle is added to the visualization of radio button.
 The radio buttons are used when there is a list of two or more options or group that are mutually exclusive and the user must select exactly one choice, such as “Select Gender” or “Choose the best option!”.
 
 {% tabs %}
@@ -159,4 +159,4 @@ N>`SfRadioButtons` are mutually exclusive among them when they are defined withi
 
 ![](Images/StateChage.png)
 
-This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Android/Samples/MaskedEdit_VisualCustomize.zip).
+This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Forms/Samples/RadioButton_StateChanging.zip).

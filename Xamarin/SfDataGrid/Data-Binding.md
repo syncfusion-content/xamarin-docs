@@ -178,9 +178,9 @@ When BeginInit method is called it suspends all the updates until EndInit method
 </table>
 
 ### Data Virtualization
-SfDataGrid allows you to load large amount of data in less time by setting SfDataGrid.EnableDataVirtualization property to true.
+Data grid provides support to handle the large amount of data through built-in virtualization features. With Data virtualization, [SfDataGrid.View](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~View.html) process the data in on-demand for better performance while loading large amount of data. 
 
-To set the EnableDataVirtualization property, follow the code example:
+You can load large amount of data in less time by setting SfDataGrid.EnableDataVirtualization property to true, follow the code example:
 
 {% tabs %}
 {% highlight xaml %}
@@ -196,7 +196,7 @@ datagrid.EnableDataVirtualization = true;
 
 ### NotificationSubscriptionMode
 
-Data grid allows you to enable or disable INotifyPropertyChanged in the underlying source collection bound to the `SfDataGrid.ItemsSource` by using the [SfDataGrid.NotificationSubscriptionMode](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Data.Portable~Syncfusion.Data.NotificationSubscriptionMode.html) property.
+Data grid exposed NotificationSubscriptionMode property that allows you whether source collection items can listen the INotifyCollectionChanged or INotifyPropertyChanging events. You can handle the property change or collection change by setting the below options in the [SfDataGrid.NotificationSubscriptionMode](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Data.Portable~Syncfusion.Data.NotificationSubscriptionMode.html) property.
 
 <table>
 <tr>

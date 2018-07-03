@@ -14,7 +14,7 @@ You can customize color palette, toolbar visibility and appearance of each toolb
 
 ## Customize toolbar items
 
-SfImageEditor control supports to customize and configure the appearance of toolbar menu. You can customize image editor toolbar by adding respective FooterToolbarItem and HeaderToolbarItem 
+SfImageEditor control provides support to customize and configure the appearance of toolbar menu. You can customize image editor toolbar by adding respective FooterToolbarItem and HeaderToolbarItem 
 
 #### ToolbarItem
 
@@ -80,7 +80,7 @@ Refer to the below code snippet to customize sub items of footer toolbar item,
             {
                 Text = "More",
                 Icon = ImageSource.FromResource("ImageEditor.Image.more.png"),
-                SubItems = new ObservableCollection<Syncfusion.SfImageEditor.XForms.ToolbarItem>()
+                SubItems = new ObservableCollection<ToolbarItem>()
                 {
                    new ToolbarItem() {
                 Icon = ImageSource.FromResource("ImageEditor.Image.download.png")
@@ -249,7 +249,7 @@ You can customize `height of the toolbar` and also toolbar items `icon` and `tex
 
 ### Customize Toolbar Height 
 
-SfImageEditor control supports to customize the default height of `Header`, `Footer` and `Sub item` Toolbar by using following properties,
+SfImageEditor control supports to customize the default height of `Header`, `Footer` and `Sub item` by using following properties,
 1.	HeaderToolbarHeight
 2.	FooterToolbarHeight 
 3.	SubItemToolbarHeight

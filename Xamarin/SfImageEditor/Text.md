@@ -16,7 +16,7 @@ To add the desired text elements over the image, use the following two ways:
 
 ### From Toolbar
 
-To add text from the toolbar, click the Text icon in the toolbar. When the Text is tapped, a pop-up window will appear. To add the text over the image, type the desired text, and click OK. To close the pop-up window, click CANCEL button. By dragging, the text can be moved to the desired place, and Text can be resized with the help of handle.
+To add text from the toolbar, click toolbar Text icon. If you tap the already added text over an image then a pop-up window will appear. You can modify the existing text by typing the desired text to the popup text field and click OK button to reflect the changes. To close the pop-up window, click CANCEL button. By dragging, the text can be moved to the desired place, and Text can be resized with the help of resizing handle.
 
 #### Change Color of the selected Text
 
@@ -28,7 +28,7 @@ You can also add the desired text elements over the image programmatically. The 
 
 #### TextSettings
 
-TextSettings is defined to set the values for `Color`, `FontSize` and `FontFamily`. By default there are six types of font family has been given in toolbar that are 
+TextSettings is defined to set the values for `Color`, `FontSize` and `FontFamily`. By default there are six types of font family given in toolbar that are 
 `Arial`, `Noteworthy`, `Marker Felt`, `SignPainter`,`Bradley Hand`, `Snell Round hand`.
 
 
@@ -63,7 +63,7 @@ Download the custom fonts file in ttf file format and add these fonts into requi
 
 Add the custom fonts into Assets folder in sample.Droid project.
    
-Right click the font file and open properties, in that Change the "Build Action" property of every font file as "AndroidAsset" and "Copy to output directory" to "Copy Always".
+Right click the font file and open properties, in that Change the "Build Action" property of every font file as `AndroidAsset` and "Copy to output directory" to `Copy Always`.
     
 ![SfImageEditor](ImageEditor_images/AndroidCustomFont.png)
     
@@ -71,11 +71,11 @@ Right click the font file and open properties, in that Change the "Build Action"
 
 Add the custom fonts into Resource file in sample.iOS project.
     
-Change the "Build Action" property of every font file as "BundleResource" and "Copy to output directory" to "Copy Always".
+Change the "Build Action" property of every font file as `BundleResource` and "Copy to output directory" to `Copy Always`.
 
 ![SfImageEditor](ImageEditor_images/iOSCustomFont1.png)
     
-Open the "info.plist" file and select "Source" at the bottom of the file.
+Open the `info.plist` file and select "Source" at the bottom of the file.
 After open the source file you should need to add "Fonts provided by application" into the source file and add the downloaded custom fonts name with .ttf extension.
 
 ![SfImageEditor](ImageEditor_images/iOSCustomFont2.png)
@@ -84,7 +84,7 @@ After open the source file you should need to add "Fonts provided by application
 
 Add the custom fonts into Assets folder in sample.UWP project.
 
-Right click the font file and open properties, in that change the  "Build Action" property of every font file as "Content" and "Copy to output directory" to "Copy Always".
+Right click the font file and open properties, in that change the  "Build Action" property of every font file as `Content` and "Copy to output directory" to `Copy Always`.
     
 ![SfImageEditor](ImageEditor_images/UWPCustomFont.png)
 

@@ -28,7 +28,7 @@ schedule.TimeZone = "GMT Standard Time";
 {% endhighlight %}
 {% endtabs %}
 
-### Creating Appointment's in different Time Zone
+## Creating Appointment's in different Time Zone
 You can create appointments at different time zone using [StartTimeZone](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~StartTimeZone.html) and [EndTimeZone](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~EndTimeZone.html) property of the `Appointment`. The appointment's start time and end time calculated based on the given time zone information for start time and end time. You can set different time zones for `StartTimeZone` and `EndTimeZone` property.
 You can use `StartTime` and `EndTime` property to get the exact Start Time and End Time of the appointment. By using [ActualStartTime](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~ActualStartTime.html) and [ActualEndTime](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~ActualEndTime.html) properties, you can get the exact appointment rendering time.
 
@@ -44,9 +44,10 @@ DateTime exactEndTime = appointment.EndTime;
 
 >**NOTE**
 * If the recurring appointment is converted to another time zone then the whole sequence will be recalculated according to the new time zone information.
-If you create all day appointment, then it's start time and end times are set default as 12 am to 12 am so time zone is not applicable for all day appointments.
+* If you create all day appointment, then it's start time and end times are set default as 12 am to 12 am so time zone is not applicable for all day appointments.
+* Scheule TimeZone supports the day light savings
 
-### Updating StartTime and EndTime after drag and drop appointment based on Time Zone.
+## Updating StartTime and EndTime after drag and drop appointment based on Time Zone.
 After rescheduling an appointment using `drag and drop`, appointment’s start and end time value will be updated based on schedule time zone and appointment’s time zone. 
 
 For an example, consider, your local time zone is `India Standard Time`, if you drag an appointment from 9 AM and drop this on 1 PM and the schedule's `TimeZone` is not set and the appointment's `StartTimeZone` and `EndTimeZone` has set as `AUS Central Standard Time (Darwin)` then appointment's start time and end time value will be converted from Local time zone to appointment time zone and the appointment’s start time will be saved at 9 AM,

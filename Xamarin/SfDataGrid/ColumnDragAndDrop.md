@@ -22,6 +22,8 @@ dataGrid.AllowDraggingColumn = true;
 {% endhighlight %}
 {% endtabs %}
 
+![](SfDataGrid_images/ColumnDragandDrop_Forms.gif)
+
 ## Column drag and drop events
 
 The `QueryColumnDragging` event is fired while dragging a column. It will be continuously fired till the dragging ends. By handling the `SfDataGrid.QueryColumnDragging ` event, dragging of a particular column header can be canceled.
@@ -34,20 +36,131 @@ The `QueryColumnDragging` event is fired while dragging a column. It will be con
  * [DraggingPosition](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryColumnDraggingEventArgs~DraggingPosition.html): Returns positions of the drag view during column drag and drop operations.
  * [Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs_properties(v=vs.110).aspx): Returns the boolean property to cancel the event.
 
-![](SfDataGrid_images/ColumnDragAndDrop.png)
+## Cancel dragging of a particular column
+
+Dragging can be canceled for a particular column by handling `QueryColumnDragging` event, and conditions based on `QueryColumnDraggingReason`. Refer to the following code sample to cancel dragging for a particular column:
+
+{% tabs %}
+{% highlight c# %}
+
+private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventArgs e)
+{
+    //e.From returns the index of the dragged column.
+    //e.Reason returns the dragging status of the column.
+    if (e.From == 1 && e.Reason == QueryColumnDraggingReason.DragStarted)
+        e.Cancel = true;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## Cancel dropping when dragging for a particular column
+
+Dropping can be canceled for a particular column while dragging a column. Refer to the following code sample to cancel dropping for a particular column:
+
+{% tabs %}
+{% highlight c# %}
+
+private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventArgs e)
+{
+    //e.To returns the index of the current column.
+    //e.Reason returns the dragging status of the column.
+    if ((e.To > 5 || e.To < 10) &&
+    (e.Reason == QueryColumnDraggingReason.DragEnded || e.Reason == QueryColumnDraggingReason.Dragging))
+        e.Cancel = true;
+} 
+
+{% endhighlight %}
+{% endtabs %}
+
+## Cancel dropping for a particular column
+
+Dropping can be canceled for a particular column by handling the `QueryColumnDragging` event, and conditions based on `QueryColumnDraggingReason`. Refer to the following code sample to cancel dropping for a particular column:
+
+{% tabs %}
+{% highlight c# %}
+
+private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventArgs e)
+{
+    //e.From returns the index of the dragged column.
+    //e.Reason returns the dragging status of the column.
+    if (e.From == 1 && e.Reason == QueryColumnDraggingReason.DragEnded)
+        e.Cancel = true;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## Cancel dropping at a particular position 
+
+Dropping at a particular position can be canceled by handling the `QueryColumnDragging` event, and conditions based on `QueryColumnDraggingReason`. Refer to the following code sample to cancel dropping at a particular position:
+
+{% tabs %}
+{% highlight c# %}
+
+private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventArgs e)
+{
+    //e.To returns the index of the current column.
+    //e.Reason returns the dragging status of the column.
+    if ((e.To == 5 || e.To == 7) && e.Reason == QueryColumnDraggingReason.DragEnded)
+        e.Cancel = true;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## Cancel dropping of a particular row in a position
+
+Dropping of a particular column in a position can be canceled by handling `QueryRowDragging` event using conditions based on `QueryRowDraggingReason` and `Position`. Refer the following code sample to cancel dropping of a particular column in a position:
+
+private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventArgs e)
+{
+    //e.To returns the index of the current column.
+    //e.DraggingPosition returns the x and y position of the current column
+     if ((e.To == 5) && e.DraggingPosition == new Point(100,100) && e.Reason == QueryColumnDraggingReason.DragEnded)
+                e.Cancel = true;
+}
+
+## Cancel drag and drop between frozen and non-frozen rows
+
+### Cancel dragging between frozen and non-frozen rows
+
+Dragging between frozen and non-frozen columns can be canceled by handling the `QueryRowDragging` event using conditions based on `QueryRowDraggingReason` and e.From index will be one of the frozen column index. Refer to the following code sample to cancel dragging between frozen and non-frozen columns:
+private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventArgs e)
+{
+    //e.From returns the index of the dragged column.
+    //e.To returns the index of the current column.
+      if ((e.From > 0 && e.To < 2) && e.Reason == QueryRowDraggingReason.DragStarted)
+        e.Cancel = true;
+}
+
+### Cancel dropping between frozen and non-frozen rows
+
+Dropping between frozen and non-frozen columns can be canceled by handling `QueryRowDragging` event using conditions based on `QueryRowDraggingReason` and e.From index will be one of the frozen column index. Refer to the following code sample to cancel dropping between frozen and non-frozen columns:
+
+private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventArgs e)
+{
+    //e.From returns the index of the dragged column.
+    //e.To returns the index of the current column.
+      if ((e.From > 0 && e.To < 2) && e.Reason == QueryRowDraggingReason.DragEnded)
+        e.Cancel = true;
+}
 
 ## Customize column drag and drop indicators
 
-The SfDataGrid allows customizing the column drag and drop indicators by writing the custom grid style, deriving from the [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle.html), and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridStyle.html) property.
+The SfDataGrid allows customizing the column drag and drop indicators by writing the custom grid style, deriving from the [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle.html), and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridStyle.html) property.
 
 To customize the column drag and drop indicators, follow the code example:
 
+{% tabs %}
 {% highlight c#%}
 
 dataGrid.GridStyle = new CustomGridStyle();
 
 {% endhighlight %}
+{% endtabs %}
 
+{% tabs %}
 {% highlight c#%}
 // Custom style class
 public class CustomGridStyle : DataGridStyle
@@ -67,70 +180,6 @@ public class CustomGridStyle : DataGridStyle
     }
 }
 {% endhighlight %}
+{% endtabs %}
 
-![](SfDataGrid_images/CustomizeColumnDragAndDrop.png)
-
-## How to cancel dragging for a particular column
-
-Dragging can be canceled for a particular column by handling `QueryColumnDragging` event, and conditions based on `QueryColumnDraggingReason`. Refer to the following code sample to cancel dragging for a particular column:
-
-{% highlight c# %}
-
-private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventArgs e)
-{
-    //e.From returns the index of the dragged column.
-    //e.Reason returns the dragging status of the column.
-    if (e.From == 1 && e.Reason == QueryColumnDraggingReason.DragStarted)
-        e.Cancel = true;
-}
-
-{% endhighlight %}
-
-## How to cancel dropping when dragging for a particular column
-
-Dropping can be canceled for a particular column while dragging a column. Refer to the following code sample to cancel dropping for a particular column:
-
-{% highlight c# %}
-
-private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventArgs e)
-{
-    //e.To returns the index of the current column.
-    //e.Reason returns the dragging status of the column.
-    if ((e.To > 5 || e.To < 10) &&
-    (e.Reason == QueryColumnDraggingReason.DragEnded || e.Reason == QueryColumnDraggingReason.Dragging))
-        e.Cancel = true;
-} 
-
-{% endhighlight %}
-
-## How to cancel dropping for a particular column
-
-Dropping can be canceled for a particular column by handling the `QueryColumnDragging` event, and conditions based on `QueryColumnDraggingReason`. Refer to the following code sample to cancel dropping for a particular column:
-
-{% highlight c# %}
-
-private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventArgs e)
-{
-    //e.From returns the index of the dragged column.
-    //e.Reason returns the dragging status of the column.
-    if (e.From == 1 && e.Reason == QueryColumnDraggingReason.DragEnded)
-        e.Cancel = true;
-}
-
-{% endhighlight %}
-
-## How to cancel dropping at a particular position 
-
-Dropping at a particular position can be canceled by handling the `QueryColumnDragging` event, and conditions based on `QueryColumnDraggingReason`. Refer to the following code sample to cancel dropping at a particular position:
-
-{% highlight c# %}
-
-private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventArgs e)
-{
-    //e.To returns the index of the current column.
-    //e.Reason returns the dragging status of the column.
-    if ((e.To == 5 || e.To == 7) && e.Reason == QueryColumnDraggingReason.DragEnded)
-        e.Cancel = true;
-}
-
-{% endhighlight %}
+![](SfDataGrid_images/.png)

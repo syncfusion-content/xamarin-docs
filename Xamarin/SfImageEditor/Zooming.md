@@ -17,7 +17,7 @@ The following properties are used for zooming feature of the image editor contro
 * Maximum ZoomLevel
 * PanningMode
 
-### EnableZooming
+## EnableZooming
 
 You can enable or disable image zooming functionality by setting `EnableZooming` value to true or false. By default, Enable Zooming value is set to true.
 
@@ -37,7 +37,7 @@ You can enable or disable image zooming functionality by setting `EnableZooming`
 
 {% endtabs %}
 
-### Maximum ZoomLevel
+## Maximum ZoomLevel
 
 You can set the image maximum zoom level with the help of `MaximumZoomLevel` property.
 
@@ -74,7 +74,7 @@ By default, PanningMode value set to `TwoFinger`.
 
 {% highlight XAML %}
 
-<imageeditor:SfImageEditor  EnableZooming="true" PanningMode="TwoFinger"/>
+    <imageeditor:SfImageEditor  EnableZooming="true" PanningMode="TwoFinger"/>
 
 {% endhighlight %}
 

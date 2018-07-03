@@ -16,7 +16,7 @@ ImageEditor allows us to change the position of shapes/Edits which are arranged 
 3)BringForward
 4)SendToBackward
 
-# BringToFront
+## BringToFront
 
 BringToFront is a method which is used to bring the selected shapes/text to the front of a group of elements over an image.
 
@@ -44,7 +44,7 @@ SendToBack is a method which is used to Send the selected shapes/text to the bac
 
 {% endtabs %}
 
-### BringForward
+## BringForward
 
 BringForward is a method which is used to bring the selected shapes/text to one step front of a group of elements over an image
 
@@ -58,7 +58,7 @@ BringForward is a method which is used to bring the selected shapes/text to one 
 
 {% endtabs %}
 
-#### SendToBackward
+## SendToBackward
 
 SendToBackward is a method which is used to send the selected shapes/text to one step backward of a group of elements over an image.
 

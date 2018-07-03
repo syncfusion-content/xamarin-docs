@@ -45,7 +45,7 @@ To launch the image editor in iOS, call the `SfImageEditorRenderer.Init()` metho
 
 {% endhighlight %}
 
-Initialize the ImageEditor
+## Initialize the ImageEditor
 
 1. Import SfImageEditor control namespace as `xmlns:syncfusion="clr-namespace:Syncfusion.SfImageEditor.XForms;assembly=Syncfusion.SfImageEditor.XForms` in XAML Page.
 

@@ -20,7 +20,7 @@ To enable cropping, in the `Transforms` submenu, click the `Crop` icon. When the
 * `Free`- crop the image to any desired size.
 * `Original`-crop the image based on image width and height. 
 * `Square`-crop the image based on equal width and height.
-* Crop the image to specific aspect ratio such as `3:1, 1:3, 3:2, 2:3, 4:3, 3:4, 5:4, 4:5, 16:9, 9:16`. On double tapping the aspect ratio icon reversed ratio will shown. 
+* Crop the image to specific aspect ratio such as `3:1, 1:3, 3:2, 2:3, 4:3, 3:4, 5:4, 4:5, 16:9, 9:16`. On double tapping each aspect ratio icon, the respective reversed ratio will be shown. 
 
 To disable cropping,click the `Cancel` button. To save the cropped area, after selected the desired area, Click the `OK` button, the toolbars will reappear after the cropping operation is completed.
 

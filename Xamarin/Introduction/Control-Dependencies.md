@@ -89,6 +89,10 @@ This page lists the assemblies required for each control to be referred in each 
 <td>iOS</td>
 <td>Syncfusion.SfImageEditor.XForms.iOS.dll<br/>Syncfusion.SfImageEditor.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfImageEditor.UWP.dll<br/>Syncfusion.SfImageEditor.XForms.UWP.dll<br/>Syncfusion.SfImageEditor.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
 </table>
 
 ## SfDataGrid
@@ -176,6 +180,9 @@ This page lists the assemblies required for each control to be referred in each 
 <tr>
 <td>UWP</td>
 <td>Syncfusion.Data.Portable.dll<br/>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.SfDataGrid.XForms.dll<br/>Syncfusion.SfDataGrid.XForms.UWP.dll<br/>Syncfusion.SfInput.UWP.dll<br/>Syncfusion.SfShared.UWP.dll<br/>Syncfusion.SfNumericTextBox.XForms.UWP.dll<br/>Syncfusion.SfNumericTextBox.XForms.dll<br/>Syncfusion.Xamarin.SfGridConverter.dll<br/>Syncfusion.Compression.Portable.dll<br/>Syncfusion.Pdf.Portable.dll<br/>Syncfusion.XlsIO.Portable.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<td>macOS</td>
+<td>Syncfusion.Data.Portable.dll<br/>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.SfDataGrid.XForms.dll<br/>Syncfusion.SfDataGrid.XForms.macOS.dll<br/>Syncfusion.Xamarin.SfGridConverter.dll<br/>Syncfusion.Compression.Portable.dll<br/>Syncfusion.Pdf.Portable.dll<br/>Syncfusion.XlsIO.Portable.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 </table>
 
@@ -312,7 +319,7 @@ This page lists the assemblies required for each control to be referred in each 
 
 <dl>
   <dt>NuGet</dt>
-  <dd>Syncfusion.Xamarin.PDF</dd>
+  <dd>Syncfusion.Xamarin.Pdf</dd>
 </dl>
 
 **Assemblies**
@@ -854,6 +861,90 @@ This page lists the assemblies required for each control to be referred in each 
 </tr>
 </table>
 
+## SfTabView
+
+<dl>
+  <dt>NuGet</dt>
+  <dd>Syncfusion.Xamarin.SfTabView</dd>
+</dl>
+
+**Assemblies**
+
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfTabView.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfTabView.XForms.dll<br/>Syncfusion.SfTabView.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfTabView.XForms.dll<br/>Syncfusion.SfTabView.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfTabView.XForms.dll<br/>Syncfusion.SfTabView.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+</table>
+
+## SfComboBox
+
+<dl>
+  <dt>NuGet</dt>
+  <dd>Syncfusion.Xamarin.SfComboBox</dd>
+</dl>
+
+**Assemblies**
+
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfComboBox.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfComboBox.XForms.dll<br/>Syncfusion.SfComboBox.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfComboBox.XForms.dll<br/>Syncfusion.SfComboBox.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfComboBox.XForms.dll<br/>Syncfusion.SfComboBox.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+</table>
+
+## SfSegmentedControl
+
+<dl>
+  <dt>NuGet</dt>
+  <dd>Syncfusion.Xamarin.Buttons</dd>
+</dl>
+
+**Assemblies**
+
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Buttons.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Buttons.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Buttons.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+</table>
+
 ## SfPullToRefresh
 
 <dl>
@@ -1083,5 +1174,89 @@ This page lists the assemblies required for each control to be referred in each 
 <tr>
 <td>UWP</td>
 <td>Syncfusion.SfDiagram.UWP.dll<br/>Syncfusion.SfDiagram.XForms.UWP.dll<br/>Syncfusion.SfDiagram.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+</table>
+
+## SfMaskedEdit
+
+<dl>
+  <dt>NuGet</dt>
+  <dd>Syncfusion.Xamarin.SfMaskedEdit</dd>
+</dl>
+
+**Assemblies**
+
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfMaskedEdit.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfMaskedEdit.XForms.Android.dll<br/>Syncfusion.SfMaskedEdit.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfMaskedEdit.XForms.iOS.dll<br/>Syncfusion.SfMaskedEdit.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfMaskedEdit.XForms.UWP.dll<br/>Syncfusion.SfMaskedEdit.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+</table>
+
+## SfCheckBox
+
+<dl>
+  <dt>NuGet</dt>
+  <dd>Syncfusion.Xamarin.Buttons</dd>
+</dl>
+
+**Assemblies**
+
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Buttons.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Buttons.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Buttons.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+</table>
+
+## SfRadioButton
+
+<dl>
+  <dt>NuGet</dt>
+  <dd>Syncfusion.Xamarin.Buttons</dd>
+</dl>
+
+**Assemblies**
+
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Buttons.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Buttons.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Buttons.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 </table>

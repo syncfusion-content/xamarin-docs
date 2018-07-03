@@ -17,7 +17,7 @@ This is the default state. You can use it when the progress estimation is known.
 
 ## Indeterminate
 
-By enabling the [`IsIndeterminate`](https://help.syncfusion.com/cr/cref_files/xamarin/sfprogressbar/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.ProgressBarBase~IsIndeterminate.html) property, the state of the progress bar can be changed to indeterminate when progress cannot be estimated or is not being calculated. It can be combined with determinate mode to let users know that the app is estimating progress before actual progress starts.
+By enabling the [`IsIndeterminate`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.ProgressBarBase~IsIndeterminate.html) property, the state of the progress bar can be changed to indeterminate when progress cannot be estimated or is not being calculated. It can be combined with determinate mode to let users know that the app is estimating progress before actual progress starts.
 
 {% tabs %} 
 
@@ -49,7 +49,7 @@ SfCircularProgressBar circularProgressBar = new SfCircularProgressBar { IsIndete
 
 ## Buffer
 
-The secondary task’s progress can be defined by using the [`SecondaryProgress`](https://help.syncfusion.com/cr/cref_files/xamarin/sfprogressbar/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.SfLinearProgressBar~SecondaryProgress.html) property as shown in the following code example.
+The secondary task’s progress can be defined by using the [`SecondaryProgress`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.SfLinearProgressBar~SecondaryProgress.html) property as shown in the following code example.
 
 {% tabs %} 
 

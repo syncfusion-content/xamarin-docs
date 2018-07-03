@@ -594,6 +594,74 @@ Here, the LastName padding is customized.
 
 ![](SfDataForm_images/Layout_LeftPadding.png)
 
+### Customizing label and editor
+
+By using DataFormLayoutManager class , you can customize the generated label by overriding the `GenerateViewForLabel` method and also you can customize the editor by overriding the `OnEditorCreated` method.Here, BackgroundColor and TextColor of label and editor is customized.
+
+{% tabs %}
+{% highlight c# %}
+
+public class ContactsInfo
+{
+    public ContactsInfo()
+    {
+
+    }
+
+    private string firstName = "Iris";
+    public string FirstName
+    {
+        get { return this.firstName; }
+        set
+        {
+            this.firstName = value;
+        }
+    }
+
+    private string lastName;
+    public string LastName
+    {
+        get { return this.lastName; }
+        set
+        {
+            this.lastName = value;
+        }
+    }
+}
+{% endhighlight %}
+{% highlight c# %}
+
+dataForm.LayoutManager = new DataFormLayoutManagerExt(dataForm);
+
+public class DataFormLayoutManagerExt : DataFormLayoutManager
+{
+    public DataFormLayoutManagerExt(SfDataForm dataForm) : base(dataForm)
+    {
+
+    }
+
+    protected override View GenerateViewForLabel(DataFormItem dataFormItem)
+    {
+        var label = base.GenerateViewForLabel(dataFormItem);
+        if (label is Label)
+        { 
+            (label as Label).BackgroundColor = Color.Red; 
+            (label as Label).TextColor = Color.Blue;
+        }
+        return label;
+    }
+    
+    protected override void OnEditorCreated(DataFormItem dataFormItem, View editor)
+    { 
+        if (editor is Entry)
+            (editor as Entry).TextColor = Color.Orange;
+        editor.BackgroundColor = Color.Blue; 
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+
 ## Label width customization
 
 You can set label and editor width proportionally by using [LabelWidth](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~LabelWidth.html) and [EditorWidth](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~EditorWidth.html) properties.

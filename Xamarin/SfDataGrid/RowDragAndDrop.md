@@ -261,7 +261,7 @@ dataGrid.FrozenRowsCount = 4;
 
 private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 {
-     //e.From returns the index of the dragged row.
+     //e.From returns the index of the dragged frozen row.
      //e.To returns the index of the current row.
       if ((e.From > 2 && e.To < 6) && e.Reason == QueryRowDraggingReason.DragStarted)
         e.Cancel = true;
@@ -281,7 +281,7 @@ dataGrid.FrozenRowsCount = 4;
 
 private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 {
-      //e.From returns the index of the dragged row.
+      //e.From returns the index of the dragged frozen row.
       //e.To returns the index of the current row.
       if ((e.From > 2 || e.To < 7) && e.Reason == QueryRowDraggingReason.DragEnded)
         e.Cancel = true;

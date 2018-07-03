@@ -109,9 +109,12 @@ private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventA
 {% endhighlight %}
 {% endtabs %}
 
-## Cancel dropping of a particular row in a position
+## Cancel dropping of a particular column in a position
 
 Dropping of a particular column in a position can be canceled by handling `QueryRowDragging` event using conditions based on `QueryRowDraggingReason` and `Position`. Refer the following code sample to cancel dropping of a particular column in a position:
+
+{% tabs %}
+{% highlight c# %}
 
 private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventArgs e)
 {
@@ -121,11 +124,20 @@ private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventA
                 e.Cancel = true;
 }
 
-## Cancel drag and drop between frozen and non-frozen rows
+{% endhighlight %}
+{% endtabs %}
 
-### Cancel dragging between frozen and non-frozen rows
+## Cancel drag and drop between frozen and non-frozen columns
+
+### Cancel dragging between frozen and non-frozen columns
 
 Dragging between frozen and non-frozen columns can be canceled by handling the `QueryRowDragging` event using conditions based on `QueryRowDraggingReason` and e.From index will be one of the frozen column index. Refer to the following code sample to cancel dragging between frozen and non-frozen columns:
+
+{% tabs %}
+{% highlight c# %}
+
+dataGrid.FrozenColumnsCount = 2;
+
 private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventArgs e)
 {
     //e.From returns the index of the dragged column.
@@ -134,9 +146,17 @@ private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventA
         e.Cancel = true;
 }
 
-### Cancel dropping between frozen and non-frozen rows
+{% endhighlight %}
+{% endtabs %}
+
+### Cancel dropping between frozen and non-frozen columns
 
 Dropping between frozen and non-frozen columns can be canceled by handling `QueryRowDragging` event using conditions based on `QueryRowDraggingReason` and e.From index will be one of the frozen column index. Refer to the following code sample to cancel dropping between frozen and non-frozen columns:
+
+{% tabs %}
+{% highlight c# %}
+
+dataGrid.FrozenColumnsCount = 2;
 
 private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventArgs e)
 {
@@ -145,6 +165,9 @@ private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventA
       if ((e.From > 0 && e.To < 2) && e.Reason == QueryRowDraggingReason.DragEnded)
         e.Cancel = true;
 }
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Customize column drag and drop indicators
 

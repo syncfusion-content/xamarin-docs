@@ -28,7 +28,7 @@ Saved image will be added in default pictures library “Internal storage/Pictur
 
 ## Using Code
 
-Programmatically, you can make use of the `Save` method in the SfImageEditor control to save the image.
+Programmatically, you can make use of the `Save` method to save the image.
 
 {% tabs %}
 
@@ -78,11 +78,11 @@ You can reset the changes and load the initial loaded image.
 
 ### From Toolbar
 
-To reset the changes from the toolbar, click the `Reset` button in the top toolbar. The changes will be reset, and the initial loaded image will appear.
+To reset the changes on image using toolbar option, click the toolbar `Reset` button. The current changes done over an image will be reset, and the initial loaded image will appear.
 
 ### Using Code
 
-The `Reset` method resets the complete set of changes made in the image, and resets the original loaded image to the Image Editor control.
+The `Reset` method resets the complete set of changes made in the image, and resets the image to original loaded image.
 
 
 {% tabs %}

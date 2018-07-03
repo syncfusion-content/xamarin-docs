@@ -18,7 +18,7 @@ You can annotate any path on an image by using free hand drawing, and adding sha
 
 ### From Toolbar
 
-You can add the shapes from the toolbar by clicking the `Shapes` icon in the toolbar below the image. When the `Shapes` icon is tapped, a sub toolbar will appear on top of that toolbar. From that sub toolbar, you can choose the shape(`Rectangle`, `Circle`, and `Arrow`). Click the desired shape, and the shape will be added on the center of the image. The shapes has the handles on each edges, which helps you to resize it to the desired size, and  move it to the desired position by dragging the shape.
+You can add the shapes from the toolbar over an image by clicking the toolbar `Shapes` icon. When tapping the `Shapes` icon, a sub toolbar will appear on top of that toolbar. From that sub toolbar, you can choose the desired shape(`Rectangle`, `Circle`, and `Arrow`). Click the desired shape, and the shape will be added on the center of the image. Added shape will contains the handle on each edges, which helps you to resize it to the desired size, and  move it to the desired position by dragging the shape.
 
 #### Change Color and Fill options of the shape
 

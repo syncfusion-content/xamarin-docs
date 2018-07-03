@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Getting Started
 
-This section explains the steps required to load an image to the image editor. Image editor has a built-in toolbar, which has options to edit the image with shapes, path, text, crop, and flip.
+This section explains the steps required to load an image to the image editor.
 
 ## Adding Image Editor Reference
 
@@ -25,8 +25,6 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial se
 ## Launching the application in iOS with image editor
 
 To use the image editor inside iOS application, it requires some additional configurations such as,
-
-### iOS
 
 To launch the image editor in iOS, call the `SfImageEditorRenderer.Init()` method in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework initialization and before the LoadApplication method is called as demonstrated in the following code sample:
 
@@ -47,22 +45,11 @@ To launch the image editor in iOS, call the `SfImageEditorRenderer.Init()` metho
 
 {% endhighlight %}
 
+Initialize the ImageEditor
 
-## Creating a simple ImageEditor sample
+1. Import SfImageEditor control namespace as `xmlns:syncfusion="clr-namespace:Syncfusion.SfImageEditor.XForms;assembly=Syncfusion.SfImageEditor.XForms` in XAML Page.
 
-This section explains how to create a simple SfImageEditor sample along with the ways to configure it. The SfImageEditor control can be configured entirely in C# code or by using XAML markup.
-
-### Creating the project
-
-Create a new [BlankApp application](https://developer.xamarin.com/guides/xamarin-forms/xaml/xaml-basics/getting_started_with_xaml/) (Xamarin.Forms.Portable) in Xamarin Studio or Visual Studio for Xamarin.Forms.
-
-### Adding SfImageEditor in Xamarin.Forms 
-
-1. Add the [required assembly](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfimageeditor) references to the pcl and renderer projects. 
-
-2. Import SfImageEditor control namespace as `xmlns:syncfusion="clr-namespace:Syncfusion.SfImageEditor.XForms;assembly=Syncfusion.SfImageEditor.XForms` in XAML Page.
-
-3. Set the SfImageEditor control as content to the ContentPage.
+2. Set the SfImageEditor control as content to the ContentPage.
 
 {% tabs %}
 
@@ -104,9 +91,7 @@ Create a new [BlankApp application](https://developer.xamarin.com/guides/xamari
 {% endhighlight %}
 {% endtabs %}
 
-* We can load image editor without an image, like white canvas and can perform editing action with the help of built-in toolbar menu option.
-
-![SfImageEditor](ImageEditor_images/GettingstartedDefault.png)
+* If image is not set to `Source` property, then the image appearance will be like white canvas and still you can perform editing action with the help of built-in toolbar menu option.
 
 
 ## Load an image to ImageEditor

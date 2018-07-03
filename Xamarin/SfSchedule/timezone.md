@@ -45,7 +45,7 @@ DateTime exactEndTime = appointment.EndTime;
 >**NOTE**
 * If the recurring appointment is converted to another time zone then the whole sequence will be recalculated according to the new time zone information.
 * If you create all day appointment, then it's start time and end times are set default as 12 am to 12 am so time zone is not applicable for all day appointments.
-* Scheule TimeZone supports the day light savings
+* Schedule supports day light saving
 
 ## Updating StartTime and EndTime after drag and drop appointment based on Time Zone.
 After rescheduling an appointment using `drag and drop`, appointment’s start and end time value will be updated based on schedule time zone and appointment’s time zone. 

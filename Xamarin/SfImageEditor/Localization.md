@@ -11,7 +11,7 @@ documentation : ug
 
 The image editor control provides support for localization.You can localize ImageEditor contents by adding equivalent localized string.
 
-### Change default control language
+## Change default control language
 
 Based on the resource strings in the project the contents are localized accordingly.
 
@@ -23,7 +23,7 @@ We can Localize ImageEditor contents in two ways,
 
 * From Platform Specific Projects
 
-### Using Resx file from PCL
+## Using Resx file from PCL
 
 You can localize the text from PCL by adding equivalent localized string in the resource file.
 
@@ -103,7 +103,7 @@ In below screenshot we have localized the text to Japanese language.
 
 ![SfImageEditor](ImageEditor_images/ResourcesFileForms.png)
 
-#### From Platform Specific Projects
+## From Platform Specific Projects
 
 You can localize the text from different platforms by adding equivalent localized string in the resource file.For that you need to configure it for each platform separately.
 
@@ -113,7 +113,7 @@ You can localize the text from different platforms by adding equivalent localize
 
 * Localizing the text in UWP renderer.
 
-### Android
+## Android
 
 You can localize the text available in the control by adding equivalent localized string in the resource file.
 
@@ -127,7 +127,7 @@ In below screenshot we have localized the text  to French language.
 
 ![SfImageEditor](ImageEditor_images/androidresources.png)
 
-### iOS 
+## iOS 
 
 You can localize custom text available in the control by adding equivalent localized string in the resource file.
 
@@ -141,7 +141,7 @@ In below screenshot we have localized the text to French language.
 
 ![SfImageEditor](ImageEditor_images/ioslocalizable.png)
 
-### UWP 
+## UWP 
 
 You can localize custom text available in the control by adding equivalent localized string in the resource file.
 

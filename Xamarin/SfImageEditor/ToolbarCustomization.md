@@ -16,11 +16,11 @@ You can customize color palette, toolbar visibility and appearance of each toolb
 
 SfImageEditor control provides support to customize and configure the appearance of toolbar menu. You can customize image editor toolbar by adding respective FooterToolbarItem and HeaderToolbarItem 
 
-#### ToolbarItem
+### ToolbarItem
 
 You can customize each toolbar item with the help of `Text` and `Icon` properties.
 
-##### Name
+### Name
  
  You can get or set the name of individual built-in and dynamically added toolbar item with the help of `Name` property. 
 
@@ -45,7 +45,7 @@ ImageEditor Toolbar menu contains set of header and footer menu items which help
 2.FooterToolbarItem
 3.SubItems
 
-### Adding HeaderToolbarItem
+## Adding HeaderToolbarItem
 
 `HeaderToolbarItem` will be arranged on top of the image editor and you can customize header toolbar item with the help of Icon and Text as like below,
 
@@ -55,7 +55,7 @@ ImageEditor Toolbar menu contains set of header and footer menu items which help
 
 {% endhighlight %}
 
-### Adding FooterToolbarItem   
+## Adding FooterToolbarItem   
 
  `FooterToolbarItem` will be arranged on bottom of the image editor and you can customize footer toolbar item with the help of Icon and Text along with sub items.
 
@@ -68,7 +68,7 @@ Refer to the below code snippet to customize footer toolbar item,
 
 {% endhighlight %}
 
-### Adding SubItems to the FooterToolbarItem
+## Adding SubItems to the FooterToolbarItem
 
 `SubItems` only applicable for `FooterToolbarItem` and it represents grouped action of respective footer toolbar item. SubItems will be arranged above the footer toolbar item layout and you can also customize sub items appearance as like main toolbar items. 
 
@@ -104,7 +104,7 @@ editor.ToolbarSettings.ToolbarItems[3].Icon = ImageSource.FromResource("ImageEdi
 {% endhighlight %}
 
 
-### ToolbarItemSelected event 
+## ToolbarItemSelected event 
 
 Whenever you tap the toolbar menu item, the `ToolbarItemSelected` event will be triggered and you can get the respective tapped toolbar item as an argument as shown below, 
 
@@ -122,7 +122,7 @@ Whenever you tap the toolbar menu item, the `ToolbarItemSelected` event will be 
 
 {% endhighlight %}
 
-#### MoveSubItemsToFooterToolbar 
+### MoveSubItemsToFooterToolbar 
 
 `MoveSubItemsToFooterToolbar` boolean property of ToolbarItemSelected event argument decides the placement of each sub items of respective footer toolbar item. 
 

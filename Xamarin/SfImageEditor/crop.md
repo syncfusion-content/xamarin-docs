@@ -14,7 +14,7 @@ The image editor control gives you the options to crop the image as desired. Cro
 * From Toolbar
 * Cropping programmatically
 
-### From Toolbar
+## From Toolbar
 To enable cropping, in the `Transforms` submenu, click the `Crop` icon. When the `Crop` icon is tapped, a sub toolbar will appear on top of that toolbar. While the cropping is enabled, the crop sub toolbar, `Cancel` and `OK` buttons will be available. From that sub toolbar, you can able to crop the image with the following aspect ratios.
 
 * `Free`- crop the image to any desired size.
@@ -24,14 +24,14 @@ To enable cropping, in the `Transforms` submenu, click the `Crop` icon. When the
 
 To disable cropping,click the `Cancel` button. To save the cropped area, after selected the desired area, Click the `OK` button, the toolbars will reappear after the cropping operation is completed.
 
-### Cropping programmatically
+## Cropping programmatically
 
 Cropping operation can be done programmatically in the following two ways:
 
 * Enable Cropping, and Selecting the Crop region visually
 * Manually enter the cropping area
 
-#### Handling the cropping tool
+## Handling the cropping tool
 
 The `ToggleCropping` method in the SfImageEditor control allows user to enable or disable the cropping region programmatically, placed over the image to visually choose the area for cropping. 
 

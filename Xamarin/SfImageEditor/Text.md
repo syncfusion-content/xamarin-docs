@@ -9,50 +9,42 @@ documentation : ug
 
 ## Text
 
-To add the desired text elements over the image, use the following two ways:
+You can annotate desired text elements over an image by using `AddText` method with customization options. 
 
-* From Toolbar
-* Using Code
+{% highlight C# %}
 
-### From Toolbar
+    editor.AddText("New Text");
 
-To add text from the toolbar, click toolbar Text icon. If you tap the already added text over an image then a pop-up window will appear. You can modify the existing text by typing the desired text to the popup text field and click OK button to reflect the changes. To close the pop-up window, click CANCEL button. By dragging, the text can be moved to the desired place, and Text can be resized with the help of resizing handle.
+{% endhighlight %}
 
-### Change Color of the selected Text
+## Customize text with TextSettings
 
-To change the color of the selected text, select the desired text, and click the color buttons available in the sub menu.
+You can customize the text appearance with the help of `TextSettings` properties.
 
-### Using Code
+TextSettings consist of the following properties,
 
-You can also add the desired text elements over the image programmatically. The `AddText` method in the SfImageEditor control is used to add the text based on the string value and `TextSettings`.
+ [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.TextSettings~Color.html) - It helps to define the color of the desired text.
+ 
+ [`FontSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.TextSettings~FontSize.html) - You can specify the desired font size of the text under text settings.
 
-## TextSettings
-
-TextSettings is defined to set the values for `Color`, `FontSize` and `FontFamily`. By default there are six types of font family given in toolbar that are 
-`Arial`, `Noteworthy`, `Marker Felt`, `SignPainter`,`Bradley Hand`, `Snell Round hand`.
-
+ [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.TextSettings~FontFamily.html) - By default there are six types of font family available in toolbar such as,
+                   `Arial`, `Noteworthy`, `Marker Felt`, `SignPainter`,`Bradley Hand`, `Snell Round hand`.
+ 
+ [`Bounds`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.TextSettings~Bounds.html) - This property allows you to set frame for the newly added `Text` and you can position the text wherever you want on the image. The value of the text frame should be in percentage(maximum - 100 & minimum - 0).
+ 
+ [`Opacity`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.TextSettings~Opacity.html) - You can change the opacity of text.
 
 {% tabs %}
 
 {% highlight C# %}
 
-    editor.AddText("New Text", new TextSettings(){Color = Color.Black, FontSize = 16d, FontFamily="Arial"});
+    editor.AddText("New Text", new TextSettings(){Color = Color.Black, FontSize = 16d, FontFamily="Arial", Bounds = new Rectangle(20, 20, 35, 35), Opacity=0.5f});
 
 {% endhighlight %}
 
 {% endtabs %}
 
 ![SfImageEditor](ImageEditor_images/text.png)
-
-## Bounds
-
-`Bounds` property allows you to set frame for the newly added `Text` and you can position the text wherever you want on the image. The value of the text frame should be in percentage(maximum - 100 & minimum - 0).
-
-{% highlight C# %}
-
-  edit.AddText("New Text", new TextSettings() { Bounds = new Rectangle(20, 20, 35, 35) });
-
-{% endhighlight %}
 
 ## Custom Font Family
 

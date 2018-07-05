@@ -35,6 +35,6 @@ This type of digital gauge displays digital characters in 16 segments. It is als
 
 This type of digital gauge displays digital characters in 8*8 dot matrix segments, in which the characters are spotted by the regular brush and the remaining dots are spotted by the dimmed brush. It is mainly used to display numbers, characters, and special characters.
 
-![](Overview_images/Overview_img1.jpeg)
+![](Overview_images/Overview_img1.png)
 
 

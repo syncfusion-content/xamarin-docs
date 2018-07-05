@@ -7,7 +7,7 @@ control : ImageEditor
 documentation : ug
 ---
 
-# CustomView
+## CustomView
 
 You can add any custom shapes or views on the image by using the `AddCustomView` method in the SfImageEditor control. To add the custom view, specify any view and its desired `CustomViewSettings` as shown in the following code snippet.
 

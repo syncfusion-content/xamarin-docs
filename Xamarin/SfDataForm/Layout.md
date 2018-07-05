@@ -661,6 +661,7 @@ public class DataFormLayoutManagerExt : DataFormLayoutManager
 {% endhighlight %}
 {% endtabs %}
 
+![](SfDataForm_images/Layout_LabelCustomization.jpg)
 
 ## Label width customization
 

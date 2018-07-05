@@ -455,7 +455,7 @@ public class CustomSelectionController : GridSelectionController
 
 The following screenshot shows the final outcome upon execution of the above code:
 
-![](SfDataGrid_images/AddingColors.PNG)
+![](SfDataGrid_images/AddingColors.jpg)
 
 ### Changing selection background and foreground color
 

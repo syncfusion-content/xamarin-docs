@@ -14,7 +14,7 @@ ImageEditor allows us to change the position of shapes/Edits which are arranged 
 1)BringToFront
 2)SendToBack
 3)BringForward
-4)SendToBackward
+4)SendBackward
 
 ## BringToFront
 
@@ -58,15 +58,15 @@ BringForward is a method which is used to bring the selected shapes/text to one 
 
 {% endtabs %}
 
-## SendToBackward
+## SendBackward
 
-SendToBackward is a method which is used to send the selected shapes/text to one step backward of a group of elements over an image.
+SendBackward is a method which is used to send the selected shapes/text to one step backward of a group of elements over an image.
 
 {% tabs %}
 
 {% highlight C# %}
 
-   editor.SendToBackward();
+   editor.SendBackward();
 
 {% endhighlight %}
 

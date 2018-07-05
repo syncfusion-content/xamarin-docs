@@ -35,7 +35,8 @@ You can customize each toolbar item with the help of `Text` and `Icon` propertie
 
 {% endhighlight %}
 
-N> The list of available built-in toolbar item names are "back,Text,Add,TextColor,FontFamily,Arial,Noteworthy,Marker Felt,Bradley Hand,SignPainter,Opacity,Path,StrokeThickness,Colors,Opacity,Shape,Rectangle,StrokeThickness,Circle,Arrow,Transform,Crop,free,original,square,3:1,3:2,4:3,5:4,16:9,Rotate,Flip,Reset,Undo,Redo,Save"
+N> The list of available built-in toolbar item names are "back, Text, Add, TextColor, FontFamily, Arial, Noteworthy, Marker Felt,
+Bradley Hand, SignPainter, Opacity, Path, StrokeThickness, Colors, Opacity, Shape, Rectangle, StrokeThickness, Circle, Arrow, Transform, Crop, free, original, square, 3:1, 3:2, 4:3, 5:4, 16:9, Rotate, Flip, Reset, Undo, Redo, Save"
 
 N> We can't modify the name of existing built-in toolbar item and also can't create toolbar item with these list
 
@@ -92,7 +93,7 @@ Refer to the below code snippet to customize sub items of footer toolbar item,
 
 {% endhighlight %}
 
-N> You can remove existing toolbar items(Text,Path,Shape,Transform,Reset,Undo,Redo and Save) from the image editor toolbarItems collection based on the index value. 
+N> You can remove existing toolbar items [names](/xamarin/sfimageeditor/toolbarcustomization#name) from the image editor toolbarItems collection based on the index value. 
 
 You can change icon and text value dynamically for any of already added toolbar item based on the index as like below,
 
@@ -196,7 +197,7 @@ To show or hide the toolbar, set `IsVisible` property of toolbar to either true 
 
 You can hide or show the toolbar items by specifying its icon name and setting the boolean value to true or false. 
 
-N> You can customize the icon by specifying its names namely, text, path, shapes, transform, rectangle, circle, arrow, flip, crop, rotate, reset, undo, Redo and save.
+N> You can customize the icon by specifying its [names](/xamarin/sfimageeditor/toolbarcustomization#name)
 
 {% tabs %}
 

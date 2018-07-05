@@ -22,7 +22,7 @@ dataGrid.AllowDraggingColumn = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/ColumnDragandDrop_Forms.gif)
+![](SfDataGrid_images/ColumnDragandDrop.gif)
 
 ## Column drag and drop events
 
@@ -205,4 +205,4 @@ public class CustomGridStyle : DataGridStyle
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/.png)
+![](SfDataGrid_images/CustomizedIndicators_Column.jpg)

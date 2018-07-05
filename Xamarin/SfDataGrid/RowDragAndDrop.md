@@ -44,7 +44,7 @@ The data grid allows you to load desired content when performing row drag-and-dr
 
 The default template will be loaded if another template is not explicitly assigned for row drag-and-drop operations. 
 
-![](SfDataGrid_images/.jpg)
+![](SfDataGrid_images/DefaultTemplate.jpg)
 
 ## Customizing row drag-and-drop template
 
@@ -137,7 +137,7 @@ public class RowTemplate : Grid
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/.png)
+![](SfDataGrid_images/CustomizedTemplate.jpg)
 
 N> Currently, the row drag-and-drop feature cannot be used if different rows are set with different heights using the [QueryRowHeight](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~QueryRowHeight_EV.html) event. 
 
@@ -378,7 +378,7 @@ public class CustomGridStyle : DataGridStyle
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/.png)
+![](SfDataGrid_images/CustomizedIndicators_Row.jpg)
 
 ## Updating summaries when dragging and dropping a row between groups
 
@@ -417,4 +417,4 @@ public partial class MainPage : ContentPage
 
 The following screenshot shows the output rendered when executing the above code example:
 
-![](SfDataGrid_images/.png)
+![](SfDataGrid_images/UpdatedSummary.png)

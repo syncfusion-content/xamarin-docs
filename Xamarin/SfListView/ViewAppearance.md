@@ -19,7 +19,7 @@ A template can be used to present the data in a way that makes sense for the app
 
 The SfListView allows customizing appearance of each item with different templates based on specific constraints by using the [DataTemplateSelector](https://developer.xamarin.com/api/type/Xamarin.Forms.DataTemplateSelector/). You can choose a `DataTemplate` for each item at runtime based on the value of data-bound property using `DataTemplateSelector`.
 
-Here, an `ItemsCacheLimit` property maintains number of items reusing in the view. This cache limit is used to create and reuse the `ListViewItem` if different templates are used in `DataTemplateSelector` for better scrolling performance. Based on this value, `SfListView` creates number of `ListViewItem` for different templates in the view if new template is created while scrolling, and reuses it if same template is used for improving the scrolling performance.
+Here, an [ItemsCacheLimit](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LayoutBase~ItemsCacheLimit.html) property maintains number of items reusing in the view. This cache limit is used to create and reuse the [ListViewItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ListViewItem.html) if different templates are used in `DataTemplateSelector` for better scrolling performance. Based on this value, `SfListView` creates number of `ListViewItem` for different templates in the view if new template is created while scrolling, and reuses it if same template is used for improving the scrolling performance.
 
 ### Create a data template selector
 
@@ -688,6 +688,133 @@ listView.IsScrollBarVisible = false;
 {% endhighlight %}
 {% endtabs %}
 
+## Accordion view
+
+The SfListView supports accordion view to display a list of items. Each item can be expanded or stretched to reveal the content associated with that item. There can be zero expanded items, exactly one item, or more than one item can be expanded at a time depending on the configuration.
+
+{% tabs %}
+{% highlight xaml %}
+
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+  <ContentPage.Behaviors>
+    <local:SfListViewAccordionBehavior />
+  </ContentPage.Behaviors>
+  <ContentPage.Content>
+    <Grid x:Name="mainGrid" BackgroundColor="#F0F0F0" Padding="4">
+      <syncfusion:SfListView x:Name="listView" AutoFitMode="Height" SelectionMode ="None" IsScrollBarVisible="False" ItemSpacing="0">
+        <syncfusion:SfListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <ViewCell.View>
+                <Grid Padding="2" Margin="1" BackgroundColor="#F0F0F0" >
+                  <Frame x:Name="frame" CornerRadius="2" Padding="1" Margin="1" OutlineColor="White">
+                    <Grid VerticalOptions="FillAndExpand" BackgroundColor="White" HorizontalOptions="FillAndExpand">
+                      <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                      </Grid.RowDefinitions>
+                      <Grid x:Name="grid" >
+                        <Grid.RowDefinitions>
+                          <RowDefinition Height="60" />
+                        </Grid.RowDefinitions>
+                        <Grid RowSpacing="0">
+                          <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="60" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="50" />
+                          </Grid.ColumnDefinitions>
+                          <Image Grid.Row="0" Grid.Column="0" Source="{Binding ContactImage}" VerticalOptions="Center"/>
+                          <Grid Grid.Row="0" Grid.Column="1" VerticalOptions="CenterAndExpand">
+                            <Grid.RowDefinitions>
+                              <RowDefinition Height="*" />
+                              <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Label Grid.Row="0" LineBreakMode="NoWrap" TextColor="#474747" Text="{Binding ContactName}" />
+                            <Label Grid.Row="1" TextColor="#474747" LineBreakMode="NoWrap" Text="{Binding CallTime}" />
+                          </Grid>
+                          <Grid Grid.Row="0" Grid.Column="2" HorizontalOptions="Center" VerticalOptions="Center">
+                            <Image Source="{Binding PhoneImage}" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" VerticalOptions="Center" />
+                          </Grid>
+                        </Grid>
+                      </Grid>
+                      <Grid IsVisible="{Binding IsVisible, Mode=TwoWay}" ColumnSpacing="0" RowSpacing="0" Grid.Row="1" BackgroundColor="White"
+                            HorizontalOptions="FillAndExpand" Padding="5" VerticalOptions="FillAndExpand">
+                        <Grid.RowDefinitions>
+                          <RowDefinition Height="1" />
+                          <RowDefinition Height="40" />
+                          <RowDefinition Height="40" />
+                          <RowDefinition Height="40" />
+                          <RowDefinition Height="40" />
+                          <RowDefinition Height="40" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions >
+                          <ColumnDefinition Width="50" />
+                          <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <BoxView Grid.Row="0" Grid.Column="0" BackgroundColor="LightGray" />
+                        <Image Grid.Row="1" Grid.Column="0" Source="{Binding NewContact}"  />
+                        <Image Grid.Row="2" Grid.Column="0" Source="{Binding AddContact}" />
+                        <Image Grid.Row="3" Grid.Column="0" Source="{Binding SendMessage}"  />
+                        <Image Grid.Row="4" Grid.Column="0" Source="{Binding BlockSpan}"  />
+                        <Image Grid.Row="5" Grid.Column="0" Source="{Binding CallDetails}" />
+                        <BoxView Grid.Row="0" Grid.Column="1" BackgroundColor="LightGray" />
+                        <Label Grid.Row="1" Grid.Column="1" Text="Create new contact" TextColor="#000000" />
+                        <Label Grid.Row="2" Grid.Column="1" Text="Add to a contact" TextColor="#000000"/>
+                        <Label Grid.Row="3" Grid.Column="1" Text="Send a message" TextColor="#000000" />
+                        <Label Grid.Row="4" Grid.Column="1" Text="Block/report Spam" TextColor="#000000" />
+                        <Label Grid.Row="5" Grid.Column="1" Text="Call details" TextColor="#000000" />
+                      </Grid>
+                    </Grid>
+                  </Frame>
+                </Grid>
+              </ViewCell.View>
+            </ViewCell>
+          </DataTemplate>
+        </syncfusion:SfListView.ItemTemplate>
+      </syncfusion:SfListView>
+    </Grid>
+  </ContentPage.Content>
+</ContentPage>
+
+{% endhighlight %}
+{% endtabs %}
+
+Accordion view can be displayed by using the [ItemTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTapped_EV.html) event.
+
+{% tabs %}
+{% highlight c# %}
+private void ListView_ItemTapped(object sender, Syncfusion.ListView.XForms.ItemTappedEventArgs e)
+ {
+    if (tappedItem == null)
+    {
+    	(e.ItemData as Contact).IsVisible = true;
+    	tappedItem = e.ItemData as Contact;
+    }
+    else
+    {
+    	if (AccordionViewModel.ContactsInfo.Contains(tappedItem) && tappedItem.IsVisible)
+    	{
+    		AccordionViewModel.ContactsInfo.FirstOrDefault(x => x.ContactName == tappedItem.ContactName).IsVisible = false;
+    	}
+    	if (e.ItemData as Contact != tappedItem)
+    	{
+    		tappedItem = e.ItemData as Contact;
+    		AccordionViewModel.ContactsInfo.FirstOrDefault(x => x.ContactName == tappedItem.ContactName).IsVisible = true;
+    		tappedItem = e.ItemData as Contact;
+    	}
+    	else
+    		tappedItem = null;
+    }	
+
+    listview.ForceUpdateItemSize();
+ }
+
+{% endhighlight %}
+{% endtabs %}
+
+You can also download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AccordionSample-312865635).
+
+![](SfListView_images/SfListView-AccordionImage.png)
+
 ## How to
 
 ### show busy indicator on list view
@@ -925,6 +1052,77 @@ public partial class MainPage : ContentPage
 You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewSample327630756).
 
 ![](SfListView_images/ListViewItemBusyIndicator.jpg)    ![](SfListView_images/ListViewItem.jpg)
+
+### Show busy indicator on list view items using toggle switch
+
+The SfListView allows to display `ActivityIndicator` for an item when loading its data in the background. To do this, load both `ActivityIndicator` and a toggle switch in the same row of a `Grid` element inside the `ItemTemplate` of SfListView. The busy indicator and toggle switch can be enabled and disabled by using the IsButtonVisible and IsIndicatorVisible properties respectively in the model class. The `ActivityIndicator` remains visible when the toggle switch is enabled. 
+
+{% tabs %}
+{% highlight xaml %}
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+    <ContentPage.BindingContext>
+        <local:ContactInfoRepository x:Name="ViewModel" />
+    </ContentPage.BindingContext>
+    <syncfusion:SfListView x:Name="listView" AutoFitMode="Height" BackgroundColor="#d3d3d3" SelectionMode="None" ItemsSource="{Binding NewContactInfo}">
+        <syncfusion:SfListView.ItemTemplate>
+            <DataTemplate>
+                <Frame HasShadow="True" Margin="5,5,5,0">
+                <Grid Padding="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Label Text="{Binding ContactName}" FontAttributes="Bold" FontSize="19" />
+                  <Switch Grid.Row="1" Grid.Column="1" IsVisible="{Binding IsButtonVisible}" IsToggled="{Binding IsChecked}" Toggled="Switch_Toggled"/>
+
+                  <Label Grid.Row="1" Text="{Binding ContactNo}" FontSize="15" IsVisible="{Binding IsDescriptionVisible}" />
+                    <ActivityIndicator Grid.Row="1" IsEnabled="True" IsRunning="True" IsVisible="{Binding IsIndicatorVisible}" />
+                </Grid>
+                </Frame>
+            </DataTemplate>
+        </syncfusion:SfListView.ItemTemplate>
+    </syncfusion:SfListView>
+</ContentPage>
+{% endhighlight %}
+{% endtabs %}
+
+In the Toggled event of the switch, get the row data from its BindingContext and alter the Bool values accordingly. 
+
+{% tabs %}
+{% highlight c# %}
+public partial class MainPage : ContentPage
+{
+  private Random random = new Random();
+  public MainPage()
+  {
+     InitializeComponent();
+  }
+
+  private async void Switch_Toggled(object sender, ToggledEventArgs e)
+  {
+    var model = ((sender as Switch).BindingContext as ContactInfo);
+    if (model.IsChecked == true)
+    {
+        model.ContactNo = random.Next(100, 400).ToString() + "-" + random.Next(500, 800).ToString() + "-" + random.Next(1000, 2000).ToString();
+        model.IsDescriptionVisible = false;
+        model.IsIndicatorVisible = true;
+        await Task.Delay(2000);
+        model.IsDescriptionVisible = true;
+        model.IsIndicatorVisible = false;
+        model.IsChecked = false;
+    }
+    else
+    {
+        model.IsIndicatorVisible = false;
+    }
+  }
+}
+{% endhighlight %}
+{% endtabs %}
+
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SwitchSample-287720926).
+
+![](SfListView_images/SfListView-SwitchOn.png)    ![](SfListView_images/SfListView-SwitchOff.png)
 
 ### Item animation on appearing
 

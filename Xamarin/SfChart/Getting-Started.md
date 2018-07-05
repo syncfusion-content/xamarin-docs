@@ -21,6 +21,8 @@ To know more about obtaining our components, refer to these links: [Mac](https:/
 
 N>Install the same version of the chart NUGET in all the projects.
 
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [`link`](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
+
 ## Launching the application on each platform with chart
 
 To use the chart inside an application, each platform application requires some additional configurations. The configurations vary from platform to platform and is discussed in the following sections:
@@ -39,6 +41,25 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
     Syncfusion.SfChart.XForms.iOS.Renderers.SfChartRenderer.Init();
 
     LoadApplication(new App()); 
+    …
+}
+
+{% endhighlight %}
+
+### macOS
+
+To launch the chart in macOS, call the SfChartRenderer.Init() method in the DidFinishLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework initialization and before the LoadApplication method is called as demonstrated in the following code sample:
+
+{% highlight C# %} 
+
+public override void DidFinishLaunching(NSNotification notification)
+{ 
+    … 
+    Forms.Init();
+
+    Syncfusion.SfChart.XForms.MacOS.SfChartRenderer.Init();
+
+    LoadApplication(new App());          
     …
 }
 

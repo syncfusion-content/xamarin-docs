@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting Started
 
-This section explains the steps required to configure the `SfSunburstChart` and populate it with data, data labels, legends, and title. This section covers only the minimal features that needed to get started with the sunburst chart. 
+This section explains the steps required to configure the [`SfSunburstChart`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart.html) and populate it with data, data labels, legends, and title. This section covers only the minimal features that needed to get started with the sunburst chart. 
 
 ## Add sunburst chart references
 
-The Syncfusion components for Xamarin.Forms are available in nuget.org. To add `SfSunburstChart` to your project, open the NuGet package manager in Visual Studio, search for Syncfusion.Xamarin.SfSunburstChart, and then install it.
+The Syncfusion components for Xamarin.Forms are available in [`nuget.org`](https://www.nuget.org/). To add SfSunburstChart to your project, open the NuGet package manager in Visual Studio, search for [`Syncfusion.Xamarin.SfSunburstChart`](https://www.nuget.org/packages/Syncfusion.Xamarin.SfSunburstChart), and then install it.
 
 ![SfSunburstChart Reference](Getting-Started_images/Reference.png)
 
@@ -25,19 +25,19 @@ I> For UWP alone, an additional step is required if the project is still in buil
 
 ## Initialize sunburst chart
 
-Import the [`SfSunburstChart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart.html) namespace as shown as follows.
+Import the [`SfSunburstChart`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart.html) namespace as shown as follows.
 
 {% tabs %} 
 
 {% highlight xaml %} 
 
-xmlns:sunburst="clr-namespace:Syncfusion.SfSunburstChart.XForms;assembly=Syncfusion.SfSunburstChart.XForms"
+  xmlns:sunburst="clr-namespace:Syncfusion.SfSunburstChart.XForms;assembly=Syncfusion.SfSunburstChart.XForms"
 
 {% endhighlight %}
 
 {% highlight C# %} 
 
-using Syncfusion.SfSunburstChart.XForms;
+  using Syncfusion.SfSunburstChart.XForms;
 
 {% endhighlight %}
 
@@ -48,15 +48,19 @@ Then, initialize an empty sunburst chart as shown as follows.
 {% tabs %} 
 
 {% highlight xaml %} 
-<sunburst:SfSunburstChart>
+
+  <sunburst:SfSunburstChart>
     
-</sunburst:SfSunburstChart>
+  </sunburst:SfSunburstChart>
+
 {% endhighlight %}
 
 {% highlight C# %} 
-SfSunburstChart sunburst = new SfSunburstChart();
 
-this.Content = sunburst;
+  SfSunburstChart sunburst = new SfSunburstChart();
+
+  this.Content = sunburst;
+  
 {% endhighlight %}
 
 {% endtabs %} 
@@ -499,21 +503,20 @@ Accounts
 </tr>
 </table>
 
-Define a data model that represents the above data in [`SfSunburstChart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart.html).
+Define a data model that represents the above data in [`SfSunburstChart`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart.html).
 
 {% tabs %} 
 
 {% highlight c# %}
 
  public class SunburstModel
-    {
-        public string JobDescription { get; set; }
-        public string JobGroup { get; set; }
-        public string JobRole { get; set; }
-        public double EmployeesCount { get; set; }
-        public string Country { get; set; }
-
-    }
+ {
+    public string JobDescription { get; set; }
+    public string JobGroup { get; set; }
+    public string JobRole { get; set; }
+    public double EmployeesCount { get; set; }
+    public string Country { get; set; }
+ }
     
 {% endhighlight %} 
 
@@ -526,7 +529,7 @@ Then, create a view model class, and initialize a list of SunburstModel objects 
 {% highlight c# %}
 
  public class SunburstViewModel
-    {
+ {
         public ObservableCollection<SunburstModel> DataSource { get; set; }
         public SunburstViewModel()
         {
@@ -563,13 +566,13 @@ Then, create a view model class, and initialize a list of SunburstModel objects 
                 new SunburstModel { Country = "UK", JobDescription = "Accounts", EmployeesCount = 30 }
             };
         }
-    }
+ }
 
 {% endhighlight %} 
 
 {% endtabs %} 
 
-Set the `SunburstViewModel` instance as the `BindingContext` of your page to bind the properties of `SunburstViewModel` to [`SfSunburstChart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart.html).
+Set the `SunburstViewModel` instance as the `BindingContext` of your page to bind the properties of `SunburstViewModel` to [`SfSunburstChart`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart.html).
  
 N> Add the namespace of `SunburstViewModel` class in your XAML page if you set the `BindingContext` in XAML.
 
@@ -577,22 +580,22 @@ N> Add the namespace of `SunburstViewModel` class in your XAML page if you set t
 
 {% highlight xaml %} 
 
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+  <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:SunburstDemo"
              xmlns:sunburst="clr-namespace:Syncfusion.SfSunburstChart.XForms;assembly=Syncfusion.SfSunburstChart.XForms"
              x:Class="SunburstDemo.MainPage">
 
-	<ContentPage.BindingContext>
-        <local:SunburstViewModel></local:SunburstViewModel>
-    </ContentPage.BindingContext>
+	  <ContentPage.BindingContext>
+          <local:SunburstViewModel></local:SunburstViewModel>
+      </ContentPage.BindingContext>
  
-</ContentPage>
+  </ContentPage>
 {% endhighlight %}
 
 {% highlight C# %} 
 
-this.BindingContext = new SunburstViewModel();
+  this.BindingContext = new SunburstViewModel();
 
 {% endhighlight %}
 
@@ -600,125 +603,137 @@ this.BindingContext = new SunburstViewModel();
 
 ## Populate sunburst chart with data
 
-Bind the DataSource property of the above SunburstViewModel to the [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~ItemsSource.html) property. 
-Then, add the [`SunburstHierarchicalLevel`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstHierarchicalLevel.html) to [`Levels`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~Levels.html) collection. Each hierarchy level is formed based on the property specified in [`GroupMemberPath`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstHierarchicalLevel~GroupMemberPath.html) property, and each arc segment size is calculated using the [`ValueMemberPath`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~ValueMemberPath.html) property.
+Bind the DataSource property of the above SunburstViewModel to the [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~ItemsSource.html) property. 
+Then, add the [`SunburstHierarchicalLevel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstHierarchicalLevel.html) to [`Levels`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~Levels.html) collection. Each hierarchy level is formed based on the property specified in [`GroupMemberPath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstHierarchicalLevel~GroupMemberPath.html) property, and each arc segment size is calculated using the [`ValueMemberPath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~ValueMemberPath.html) property.
 
 {% tabs %}   
 
 {% highlight xaml %}
 
-<sunburst:SfSunburstChart x:Name="sunburstChart" ItemsSource="{Binding DataSource}"
+  <sunburst:SfSunburstChart x:Name="sunburstChart" ItemsSource="{Binding DataSource}"
                                   ValueMemberPath="EmployeesCount">
 
- <sunburst:SfSunburstChart.Levels>
-                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="Country"/>
-                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobDescription"/>
-                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobGroup"/>
-                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobRole"/>
-</sunburst:SfSunburstChart.Levels>
+     <sunburst:SfSunburstChart.Levels>
+         <sunburst:SunburstHierarchicalLevel GroupMemberPath="Country"/>
+         <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobDescription"/>
+         <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobGroup"/>
+         <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobRole"/>
+    </sunburst:SfSunburstChart.Levels>
 
-</sunburst:SfSunburstChart>
+  </sunburst:SfSunburstChart>
+
 {% endhighlight %}
 
 {% highlight C# %}
 
-SfSunburstChart sunburstChart = new SfSunburstChart();           
-            sunburstChart.SetBinding(SfSunburstChart.ItemsSourceProperty, "DataSource");
-            sunburstChart.ValueMemberPath = "EmployeesCount";
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country" });
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription" });
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup" });
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole" });
- this.Content = sunburstChart;
+  SfSunburstChart sunburstChart = new SfSunburstChart();           
+  sunburstChart.SetBinding(SfSunburstChart.ItemsSourceProperty, "DataSource");
+  sunburstChart.ValueMemberPath = "EmployeesCount";
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole" });
+  this.Content = sunburstChart;
+
 {% endhighlight %}
 
 {% endtabs %}
+
+![SfSunburstChart](Getting-Started_images/DataSource.png)
 
 ## Add title
 
-You can add title to the sunburst chart to provide information to users about the data being plotted in the chart. You can set title using the [`SfSunburstChart.Title`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~Title.html) property.
+You can add title to the sunburst chart to provide information to users about the data being plotted in the chart. You can set title using the [`SfSunburstChart.Title`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~Title.html) property.
 
 {% tabs %} 
 
 {% highlight xaml %}
 
-    <sunburst:SfSunburstChart>    
+  <sunburst:SfSunburstChart>    
 
-    <sunburst:SfSunburstChart.Title>
-    <sunburst:SunburstChartTitle x:Name="title" Text="Employees Count"></sunburst:SunburstChartTitle>
-    </sunburst:SfSunburstChart.Title> 
+      <sunburst:SfSunburstChart.Title>
+         <sunburst:SunburstChartTitle x:Name="title" Text="Employees Count"></sunburst:SunburstChartTitle>
+      </sunburst:SfSunburstChart.Title> 
 
-    </sunburst:SfSunburstChart>
+  </sunburst:SfSunburstChart>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-            SfSunburstChart sunburstChart = new SfSunburstChart();
-            sunburstChart.Title = new SunburstChartTitle();
-            sunburstChart.Title.Text = "Employees Count";
-            this.Content = sunburstChart;            
+  SfSunburstChart sunburstChart = new SfSunburstChart();
+  sunburstChart.Title = new SunburstChartTitle();
+  sunburstChart.Title.Text = "Employees Count";
+  this.Content = sunburstChart;  
+
 {% endhighlight %}
 
 {% endtabs %}
 
+![SfSunburstChart](Getting-Started_images/Title.png)
+
 ## Add legend
 
-You can enable legend using the [`SfSunburstChart.Legend`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~Legend.html) property.
+You can enable legend using the [`SfSunburstChart.Legend`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~Legend.html) property.
 
 {% tabs %} 
 
 {% highlight xaml %}
 
-             <sunburst:SfSunburstChart>
+  <sunburst:SfSunburstChart>
 
-                <sunburst:SfSunburstChart.Legend>
-                    <sunburst:SunburstChartLegend x:Name="legend" IsVisible="True" >                      
-                    </sunburst:SunburstChartLegend>
-                </sunburst:SfSunburstChart.Legend>
+      <sunburst:SfSunburstChart.Legend>
+            <sunburst:SunburstChartLegend x:Name="legend" IsVisible="True" >                      
+            </sunburst:SunburstChartLegend>
+      </sunburst:SfSunburstChart.Legend>
 
-           </sunburst:SfSunburstChart>
+  </sunburst:SfSunburstChart>
 {% endhighlight %}
 
 {% highlight C# %}
 
-            SfSunburstChart sunburstChart = new SfSunburstChart();
-            sunburstChart.Legend = new SunburstChartLegend();
-            sunburstChart.Legend.IsVisible = true;
-            this.Content = sunburstChart;
+  SfSunburstChart sunburstChart = new SfSunburstChart();
+  sunburstChart.Legend = new SunburstChartLegend();
+  sunburstChart.Legend.IsVisible = true;
+  this.Content = sunburstChart;
 
 {% endhighlight %}
 
 {% endtabs %} 
 
+![SfSunburstChart](Getting-Started_images/Legend.png)
+
 ## Add data labels
 
-You can add data labels to improve the readability of the sunburst chart. Data labels can be added using the [`SfSunburstChart.DataLabel`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsunburstchart/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~DataLabel.html) property.
+You can add data labels to improve the readability of the sunburst chart. Data labels can be added using the [`SfSunburstChart.DataLabel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~DataLabel.html) property.
 
 {% tabs %} 
 
 {% highlight xaml %}
       
-       <sunburst:SfSunburstChart>
+  <sunburst:SfSunburstChart>
 
-            <sunburst:SfSunburstChart.DataLabel>
-                    <sunburst:SunburstChartDataLabel x:Name="dataLabel" ShowLabel="True"></sunburst:SunburstChartDataLabel>
-            </sunburst:SfSunburstChart.DataLabel>
+       <sunburst:SfSunburstChart.DataLabel>
+           <sunburst:SunburstChartDataLabel x:Name="dataLabel" ShowLabel="True">
+           </sunburst:SunburstChartDataLabel>
+       </sunburst:SfSunburstChart.DataLabel>
 
-       </sunburst:SfSunburstChart>
+  </sunburst:SfSunburstChart>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-            SfSunburstChart sunburstChart = new SfSunburstChart();  
-            sunburstChart.DataLabel = new SunburstChartDataLabel();
-            sunburstChart.DataLabel.ShowLabel = true;
-            this.Content = sunburstChart;
+  SfSunburstChart sunburstChart = new SfSunburstChart();  
+  sunburstChart.DataLabel = new SunburstChartDataLabel();
+  sunburstChart.DataLabel.ShowLabel = true;
+  this.Content = sunburstChart;
 
 {% endhighlight %}
 
 {% endtabs %} 
+
+![SfSunburstChart](Getting-Started_images/DataLabel.png)
 
 Below snippet is the complete code for generating the final output.
 
@@ -726,57 +741,56 @@ Below snippet is the complete code for generating the final output.
 
 {% highlight xaml %}
       
-          <sunburst:SfSunburstChart x:Name="sunburstChart" ItemsSource="{Binding DataSource}"
-                                  ValueMemberPath="EmployeesCount">
+  <sunburst:SfSunburstChart x:Name="sunburstChart" ItemsSource="{Binding DataSource}"
+            ValueMemberPath="EmployeesCount">
 
-                <sunburst:SfSunburstChart.Levels>
-                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="Country"/>
-                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobDescription"/>
-                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobGroup"/>
-                    <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobRole"/>
-                </sunburst:SfSunburstChart.Levels>
+      <sunburst:SfSunburstChart.Levels>
+          <sunburst:SunburstHierarchicalLevel GroupMemberPath="Country"/>
+          <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobDescription"/>
+          <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobGroup"/>
+          <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobRole"/>
+      </sunburst:SfSunburstChart.Levels>
 
-                <sunburst:SfSunburstChart.Title>
-                    <sunburst:SunburstChartTitle x:Name="title" Text="Employees Count" ></sunburst:SunburstChartTitle>
-                </sunburst:SfSunburstChart.Title>
+      <sunburst:SfSunburstChart.Title>
+          <sunburst:SunburstChartTitle x:Name="title" Text="Employees Count" ></sunburst:SunburstChartTitle>
+      </sunburst:SfSunburstChart.Title>
 
-                <sunburst:SfSunburstChart.Legend>
-                    <sunburst:SunburstChartLegend x:Name="legend" IsVisible="True" >
-                    </sunburst:SunburstChartLegend>
-                </sunburst:SfSunburstChart.Legend>
+      <sunburst:SfSunburstChart.Legend>
+          <sunburst:SunburstChartLegend x:Name="legend" IsVisible="True" >
+          </sunburst:SunburstChartLegend>
+      </sunburst:SfSunburstChart.Legend>
 
-                <sunburst:SfSunburstChart.DataLabel>
-                    <sunburst:SunburstChartDataLabel x:Name="dataLabel" ShowLabel="True"></sunburst:SunburstChartDataLabel>
-                </sunburst:SfSunburstChart.DataLabel>
+      <sunburst:SfSunburstChart.DataLabel>
+          <sunburst:SunburstChartDataLabel x:Name="dataLabel" ShowLabel="True"></sunburst:SunburstChartDataLabel>
+      </sunburst:SfSunburstChart.DataLabel>
 
-
-            </sunburst:SfSunburstChart>
+  </sunburst:SfSunburstChart>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-            this.BindingContext = new SunburstViewModel();
+  this.BindingContext = new SunburstViewModel();
 
-            SfSunburstChart sunburstChart = new SfSunburstChart();
+  SfSunburstChart sunburstChart = new SfSunburstChart();
 
-            sunburstChart.SetBinding(SfSunburstChart.ItemsSourceProperty, "DataSource");
-            sunburstChart.ValueMemberPath = "EmployeesCount";
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country" });
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription" });
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup" });
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole" });
+  sunburstChart.SetBinding(SfSunburstChart.ItemsSourceProperty, "DataSource");
+  sunburstChart.ValueMemberPath = "EmployeesCount";
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole" });
                        
-            sunburstChart.Title = new SunburstChartTitle();
-            sunburstChart.Title.Text = "Employees Count";
+  sunburstChart.Title = new SunburstChartTitle();
+  sunburstChart.Title.Text = "Employees Count";
 
-            sunburstChart.Legend = new SunburstChartLegend();
-            sunburstChart.Legend.IsVisible = true;
+  sunburstChart.Legend = new SunburstChartLegend();
+  sunburstChart.Legend.IsVisible = true;
 
-            sunburstChart.DataLabel = new SunburstChartDataLabel();
-            sunburstChart.DataLabel.ShowLabel = true;
+  sunburstChart.DataLabel = new SunburstChartDataLabel();
+  sunburstChart.DataLabel.ShowLabel = true;
 
-            this.Content = sunburstChart;
+  this.Content = sunburstChart;
 
 {% endhighlight %}
 
@@ -786,5 +800,5 @@ The following screenshot depicts the final output.
 
 ![SfSunburstChart with data label and legend](Getting-Started_images/gettingstarted.png)
 
-You can find the complete getting started sample from this [`link`](http://files2.syncfusion.com/Xamarin.Forms/Samples/SunburstChart_GettingStarted.zip).
+You can find the complete getting started sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SunburstDemo691514630).
 

@@ -21,6 +21,9 @@ To know more about obtaining our components, refer to these links: [Mac](https:/
 >**NOTE**
 When there is a mismatch between the Syncfusion NuGet packages among the projects, `System.IO.FileLoadException` will occur. To overcome this exception, install the same version of the SfSchedule assemblies in all the projects.
 
+>**Important**
+Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components. 
+
 ### Launching SfSchedule on each platform 
  
 To use SfSchedule inside an application, each platform application must initialize the SfScheduleRenderer. This initialization step varies from platform to platform and it is discussed in the following sections.   
@@ -35,6 +38,9 @@ To launch SfSchedule in iOS, you need to call `SfScheduleRenderer.Init()` in the
 
 {% tabs %}       
 {% highlight c# %}   
+using Syncfusion.SfSchedule.XForms.iOS;
+
+
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {
 	global::Xamarin.Forms.Forms.Init();
@@ -56,6 +62,9 @@ The above problem can be resolved by initializing the SfSchedule assemblies in `
 
 {% tabs %}   
 {% highlight c# %}
+using Syncfusion.SfSchedule.XForms.UWP;
+
+
 // In App.xaml.cs
 protected override void OnLaunched(LaunchActivatedEventArgs e)
 {

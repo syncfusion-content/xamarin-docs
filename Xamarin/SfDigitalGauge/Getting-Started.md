@@ -155,7 +155,7 @@ The following code example is the complete code of the previous configurations.
              x:Class="GaugeGettingStarted.MainPage"
              xmlns:gauge="clr-namespace:Syncfusion.SfGauge.XForms;assembly=Syncfusion.SfGauge.XForms">
 
-         <gauge:SfDigitalGauge Value="11:59:50 PM" SegmentStrokeWidth="5" 
+         <gauge:SfDigitalGauge Value="11:59:50 PM" SegmentStrokeWidth="5" BackgroundColor="White"
                                HeightRequest="100"  WidthRequest="375"
                                DisabledSegmentAlpha="25" DisabledSegmentColor="Gray"
                                CharacterHeight="90" CharacterWidth="25" 
@@ -187,6 +187,8 @@ namespace GaugeGettingStarted
             //Initialize digital gauge
 
             SfDigitalGauge digital = new SfDigitalGauge();
+            
+            digital.BackgroundColor = Color.White;
 
             digital.HeightRequest = 100;
 
@@ -224,8 +226,8 @@ namespace GaugeGettingStarted
 
 The following screenshot illustrates the result of the previous codes.
 
-![](Getting_Started_images/Getting_Started_img1.jpeg)
+![](Getting_Started_images/Getting_Started_img1.png)
 
 
-You can find the complete getting started sample from this [`link`]().
+You can find the complete getting started sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GaugeGettingStarted77259742).
 

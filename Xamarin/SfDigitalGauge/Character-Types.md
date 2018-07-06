@@ -69,22 +69,22 @@ The seven-segment type is capable of displaying numbers and a few uppercase lett
 
 {% endtabs %}
 
-![](Character Types/Character Types_img1.png)
+![](Character Types_images/Character Types_img1.png)
 
 ## Fourteen segment
 
 The fourteen-segment type is capable of displaying numbers and alphabet efficiently.
 
-![](Character Types/Character Types_img2.png)
+![](Character Types_images/Character Types_img2.png)
 
 ## Sixteen segment
 
 The sixteen-segment type is capable of displaying numbers and alphabet clearly.
 
-![](Character Types/Character Types_img3.png)
+![](Character Types_images/Character Types_img3.png)
 
 ## EightCrossEightDotMatrix segment
 
 The dot matrix segment type is capable of displaying numbers, alphabet, and special characters efficiently.
 
-![](Character Types/Character Types_img4.png)
+![](Character Types_images/Character Types_img4.png)

@@ -154,7 +154,7 @@ diagram.AddConnector(connector);
 ![](Connector_images/Connector_img5.jpeg)
 
 ## Bezier
-Bezier curve are cubic curve segments, which are configurable with the control points. The “SourceControlPoint” and “TargetControlPoint” of bezier segment, which allows to modify the control points. The following code example illustrates how to create and modify a bezier curve segment via control points.
+Bezier curve has cubic curve segments that are configurable with the control points. The “SourceControlPoint” and “TargetControlPoint” of bezier segment allow you to modify the control points. The following code example illustrates how to create and modify a bezier curve segment via control points.
 {% tabs %}
 {% highlight c# %}
 // creating connector instance with define its segment type

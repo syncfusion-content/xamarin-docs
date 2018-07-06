@@ -163,10 +163,10 @@ private void Diagram_Loaded(object sender)
 ![](Mindmap_images/Mindmap_img1.jpeg)
 
 ## Mind map layout style
-Mind map styles are defined as collection of node style with a single connector style. Collection of node style will apply from root node to leaf node either through branch wise or level wise.
+Mind map styles are defined as a collection of node style with a single connector style. Collection of node style is applied from root node to leaf node either through branch wise or level wise.
 
 ## Branch wise node style
-Defined node style collection will be applied from branch wise by setting “ApplyNodeStyleBy” property as Branch. The following code example illustrates how to apply style for mind map level wise.
+Defined node style collection is applied from branch wise by setting the “ApplyNodeStyleBy” property to branch. The following code example illustrates how to apply style for mind map branch wise.
 {% tabs %}
 {% highlight c# %}
 //Update mind map layout style 
@@ -194,7 +194,7 @@ private void UpdateTheme()
 ![](Mindmap_images/Mindmap_img2.jpeg)
 
 ## Level wise node style
-Defined node style collection will be applied from level wise by setting “ApplyNodeStyleBy” property as Level. The following code example illustrates how to apply style for mind map level wise.
+Defined node style collection is applied from level wise by setting the “ApplyNodeStyleBy” property to level. The following code example illustrates how to apply style for mind map level wise.
 {% tabs %}
 {% highlight c# %}
 //Update mind map layout style 
@@ -222,5 +222,5 @@ private void Diagram_Loaded(object sender)
 ![](Mindmap_images/Mindmap_img3.jpeg)
 
 ## Repeat mode
-When style collection ends, still next level/ branch can have styles. To be cyclic, enable repeat mode. Else to continue with last style disable it.  
+When style collection ends, the next level or branch can have styles. To be cyclic, enable repeat mode or disable it to continue with last style.  
 

@@ -7,10 +7,10 @@ documentation: ug
 keywords: 
 ---
 # DrawingMode
-Drawing mode are used to draw continuously for selected mode on the diagram area, dynamically.
+Drawing mode is used to draw continuously on the diagram area for selected mode dynamically.
 
 ## Text node
-Text node is a node, which has default annotation. This mode will add continuous text node. The following code example illustrates how to enable TextNode mode.
+This node has default annotation. TextNode mode will add continuous text node. The following code example illustrates how to enable TextNode mode.
 {% tabs %}
 {% highlight xml %}
 <diagram:SfDiagram x:Name="diagram" DrawingMode="TextNode">
@@ -25,7 +25,7 @@ diagram.DrawingMode = DrawingMode.TextNode;
 {% endtabs %}
 
 ## Connector
-Connector mode will add continuous orthogonal connector in diagram area. In this mode we can connect connectors in between Points, Nodes or Ports. The following code example illustrates how to enable Connector mode.
+Connector mode add continuous orthogonal connectors on the diagram area. In this mode, you can connect connectors in between Points, Nodes, or Ports. The following code example illustrates how to enable Connector mode.
 {% tabs %}
 {% highlight xml %}
 <diagram:SfDiagram x:Name="diagram" DrawingMode="Connector">

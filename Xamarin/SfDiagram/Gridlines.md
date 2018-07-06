@@ -7,10 +7,10 @@ documentation: ug
 keywords: 
 ---
 # Gridlines
-Gridlines are the pattern of lines drawn behind the diagram elements. It provides a visual guidance while dragging or arranging the node on the diagram surface.
+Gridlines are the pattern of lines drawn behind the diagram elements. It provides a visual guidance when dragging or arranging the node on the diagram surface.
 
 ## Gridlines visibility
-The “ShowGrid” property in PageSettings enable you to show/hide the gridlines. The following code example illustrates how to enable grid visibility.
+The “ShowGrid” property in PageSettings will show or hide the gridlines. The following code example illustrates how to enable grid visibility.
 {% tabs %}
 {% highlight xml %}
 
@@ -32,7 +32,7 @@ diagram.PageSettings.ShowGrid = true;
 {% endtabs %}
 
 ## Customizing gridlines
-Grid cell size and grid line color can modified using “GridSize” and “GridColor” property respectively. The following code example illustrates how to customize the grid.
+Grid cell size and gridline color can be modified using the “GridSize” and “GridColor” properties respectively. The following code example illustrates how to customize the grid.
 {% tabs %}
 {% highlight xml %}
 <diagram:SfDiagram x:Name="diagram" > 
@@ -52,7 +52,7 @@ diagram.PageSettings.GridSize = 14;
 {% endtabs %}
 
 ## Snapping Gridlines
-Nodes can be aligned and resize easily using grid lines by enabling snap to grid. The following code example illustrates how to enable the snap to grid.
+Nodes can be aligned and resized easily using gridlines by enabling the snap to grid. The following code example illustrates how to enable the snap to grid.
 {% tabs %}
 {% highlight xml %}
 <diagram:SfDiagram x:Name="diagram" > 

@@ -143,7 +143,7 @@ namespace GettingStarted
 {% endtabs %}   
 
 You can download the source code for rendering of schedule for Xamarin.Forms from
-here [ScheduleProject](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ScheduleSimpleSample-1966430884.zip)
+here [ScheduleProject](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ScheduleGettingStarted1396972789.zip)
 
 ## Changing Schedule Views   
     

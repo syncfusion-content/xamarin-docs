@@ -1,0 +1,73 @@
+---
+title: Adding Gridlines in Diagram control for Xamarin.Forms
+description: Learn how to add gridline in diagram control.
+platform: Xamarin
+control: Diagram
+documentation: ug
+keywords: 
+---
+# Gridlines
+Gridlines are the pattern of lines drawn behind the diagram elements. It provides a visual guidance while dragging or arranging the node on the diagram surface.
+
+## Gridlines visibility
+The “ShowGrid” property in PageSettings enable you to show/hide the gridlines. The following code example illustrates how to enable grid visibility.
+{% tabs %}
+{% highlight xml %}
+
+<diagram:SfDiagram x:Name="diagram" > 
+<diagram:SfDiagram.PageSettings> 
+<diagram:PageSettings ShowGrid =“true”/> 
+</diagram:SfDiagram.PageSettings> 
+</diagram:SfDiagram>
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+
+diagram.PageSettings.ShowGrid = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+## Customizing gridlines
+Grid cell size and grid line color can modified using “GridSize” and “GridColor” property respectively. The following code example illustrates how to customize the grid.
+{% tabs %}
+{% highlight xml %}
+<diagram:SfDiagram x:Name="diagram" > 
+<diagram:SfDiagram.PageSettings> 
+<diagram:PageSettings GridColor ="Pink” GridSize =“14”/> 
+</diagram:SfDiagram.PageSettings> 
+</diagram:SfDiagram>
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+diagram.PageSettings.GridColor = Color.Pink;
+diagram.PageSettings.GridSize = 14;
+{% endhighlight %}
+{% endtabs %}
+
+## Snapping Gridlines
+Nodes can be aligned and resize easily using grid lines by enabling snap to grid. The following code example illustrates how to enable the snap to grid.
+{% tabs %}
+{% highlight xml %}
+<diagram:SfDiagram x:Name="diagram" > 
+<diagram:SfDiagram.PageSettings> 
+<diagram:PageSettings SnapToGrid=”true”/> 
+</diagram:SfDiagram.PageSettings> 
+</diagram:SfDiagram>
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+diagram.PageSettings.SnapToGrid = true;
+{% endhighlight %}
+{% endtabs %}
+![](Gridlines_images/Gridlines.gif)
+

@@ -645,8 +645,8 @@ public class DataFormLayoutManagerExt : DataFormLayoutManager
         var label = base.GenerateViewForLabel(dataFormItem);
         if (label is Label)
         { 
-            (label as Label).BackgroundColor = Color.Red; 
-            (label as Label).TextColor = Color.Blue;
+            (label as Label).BackgroundColor = Color.FromHex("#ff9522");
+            (label as Label).TextColor = Color.White;
         }
         return label;
     }
@@ -654,8 +654,8 @@ public class DataFormLayoutManagerExt : DataFormLayoutManager
     protected override void OnEditorCreated(DataFormItem dataFormItem, View editor)
     { 
         if (editor is Entry)
-            (editor as Entry).TextColor = Color.Orange;
-        editor.BackgroundColor = Color.Blue; 
+            (editor as Entry).TextColor = Color.White;
+        editor.BackgroundColor = Color.FromHex("#0073dc"); 
     }
 }
 {% endhighlight %}

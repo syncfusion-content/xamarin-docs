@@ -172,7 +172,7 @@ Defined node style collection is applied from branch wise by setting the “Appl
 //Update mind map layout style 
 private void UpdateTheme()
 {
-            bool m_repeatmode = true;
+            bool repeat_mode = true;
             nodeStyleCollection.Clear();
             nodeStyleCollection.Add(new NodeStyle(new SolidBrush(Color.FromHex("#d7ebfb")), Color.FromHex("#d7ebfb"), objShape1, StrokeStyle.Default,
             new Syncfusion.SfDiagram.XForms.TextStyle((int)(14), Color.Black, ".SF UI Text", HorizontalAlignment.Center, VerticalAlignment.Center)));
@@ -181,7 +181,7 @@ private void UpdateTheme()
             nodeStyleCollection.Add(new NodeStyle(new SolidBrush(Color.FromHex("#ffcdcd")), Color.FromHex("#ffcdcd"), objShape4, StrokeStyle.Default,
             new Syncfusion.SfDiagram.XForms.TextStyle((int)(14), Color.Black, ".SF UI Text", HorizontalAlignment.Center, VerticalAlignment.Center)));
             lineStyle = new LineStyle(SegmentType.CurveSegment, StrokeStyle.Default, 3, ApplyColorFrom.TargetFill, DecoratorType.None, ApplyColorFrom.None, ApplyColorFrom.None);
-            (diagram.LayoutManager.Layout as MindMapLayout).UpdateLayoutStyle(new LayoutStyle(nodeStyleCollection, lineStyle, ApplyNodeStyleBy.Branch, m_repeatmode));
+            (diagram.LayoutManager.Layout as MindMapLayout).UpdateLayoutStyle(new LayoutStyle(nodeStyleCollection, lineStyle, ApplyNodeStyleBy.Branch, repeat_mode));
  }
 
  private void Diagram_Loaded(object sender)
@@ -200,7 +200,7 @@ Defined node style collection is applied from level wise by setting the “Apply
 //Update mind map layout style 
 private void UpdateTheme()
 {
-            bool m_repeatmode = true;
+            bool repeat_mode = true;
             nodeStyleCollection.Clear();
             nodeStyleCollection.Add(new NodeStyle(new SolidBrush(Color.FromHex("#d7ebfb")), Color.FromHex("#d7ebfb"), objShape1, StrokeStyle.Default,
             new Syncfusion.SfDiagram.XForms.TextStyle((int)(14), Color.Black, ".SF UI Text", HorizontalAlignment.Center, VerticalAlignment.Center)));
@@ -209,7 +209,7 @@ private void UpdateTheme()
             nodeStyleCollection.Add(new NodeStyle(new SolidBrush(Color.FromHex("#ffcdcd")), Color.FromHex("#ffcdcd"), objShape4, StrokeStyle.Default,
             new Syncfusion.SfDiagram.XForms.TextStyle((int)(14), Color.Black, ".SF UI Text", HorizontalAlignment.Center, VerticalAlignment.Center)));
             lineStyle = new LineStyle(SegmentType.CurveSegment, StrokeStyle.Default, 3, ApplyColorFrom.TargetFill, DecoratorType.None, ApplyColorFrom.None, ApplyColorFrom.None);
-            (diagram.LayoutManager.Layout as MindMapLayout).UpdateLayoutStyle(new LayoutStyle(nodeStyleCollection, lineStyle, ApplyNodeStyleBy.Level, m_repeatmode));
+            (diagram.LayoutManager.Layout as MindMapLayout).UpdateLayoutStyle(new LayoutStyle(nodeStyleCollection, lineStyle, ApplyNodeStyleBy.Level, repeat_mode));
  }
 
 private void Diagram_Loaded(object sender)

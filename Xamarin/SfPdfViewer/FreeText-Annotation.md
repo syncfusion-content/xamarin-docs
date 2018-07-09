@@ -167,8 +167,8 @@ You can change the properties of the selected annotation by casting the sender o
 
 {% tabs %}
 {% highlight c# %}
-Button changeFreetextPropertiesButton = new Button();
-changeFreetextPropertiesButton.Clicked += changeFreetextPropertiesButton_Clicked;
+Button changeFreeTextPropertiesButton = new Button();
+changeFreeTextPropertiesButton.Clicked += changeFreeTextPropertiesButton_Clicked;
 
 FreeTextAnnotation selectedFreeTextAnnotation;
 
@@ -178,7 +178,7 @@ private void PdfViewer_FreeTextAnnotationSelected(object sender, FreeTextAnnotat
     selectedFreeTextAnnotation = sender as FreeTextAnnotation;
 }
 
-private void changeFreetextPropertiesButton_Clicked(object sender, EventArgs e)
+private void changeFreeTextPropertiesButton_Clicked(object sender, EventArgs e)
 {
 	//Change the color of the text
     selectedFreeTextAnnotation.Settings.TextColor = Color.Blue;

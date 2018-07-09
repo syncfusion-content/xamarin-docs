@@ -163,7 +163,7 @@ pdfViewer.AnnotationSettings.FreeTextAnnotationSettings.TextSize = 4;
 
 ### Changing the properties of a selected free text
 
-You can change the properties of the selected annotation by casting the sender object parameter of the `FreeTextAnnotationSelected` event handler to FreeTextAnnotation and modify its properties. The following code shows how to change the properties.
+You can change the properties of the selected annotation by casting the `sender` parameter of the `FreeTextAnnotationSelected` event handler to FreeTextAnnotation and modify its properties. The following code shows how to change the properties.
 
 {% tabs %}
 {% highlight c# %}

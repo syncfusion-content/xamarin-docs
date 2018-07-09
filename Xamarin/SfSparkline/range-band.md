@@ -11,9 +11,9 @@ documentation: ug
 
 This feature is used to highlight a particular region in the sparkline along Y axis.
 
-* [`RangeBandStart`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsparkline/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~RangeBandStart.html) - used to configure the start range band value in Y axis.
-* [`RangeBandEnd`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsparkline/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~RangeBandEnd.html) - used to configure the end range band values in Y axis.
-* [`RangeBandColor`](https://help.syncfusion.com/cr/cref_files/xamarin/sfsparkline/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~RangeBandColor.html) - used to change the color for range band.
+* [`RangeBandStart`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~RangeBandStart.html) - used to configure the start range band value in Y axis.
+* [`RangeBandEnd`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~RangeBandEnd.html) - used to configure the end range band values in Y axis.
+* [`RangeBandColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~RangeBandColor.html) - used to change the color for range band.
 
 {% tabs %} 
 

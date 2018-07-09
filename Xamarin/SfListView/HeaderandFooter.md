@@ -13,24 +13,26 @@ This section explains how to define and customize the header and footer in the S
 
 ## Header and footer customization
 
-The [SfListView](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView.html) allows adding and customizing appearance of the header and footer by setting the [SfListView.HeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~HeaderTemplate.html) and [SfListView.FooterTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~FooterTemplate.html) properties.
+The [SfListView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView.html) allows adding and customizing appearance of the header and footer by setting the [SfListView.HeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~HeaderTemplate.html) and [SfListView.FooterTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~FooterTemplate.html) properties.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfListView x:Name="listView"
-                 ItemsSource="{Binding InboxInfo}"
-                 ItemSize="100">
-  <syncfusion:SfListView.HeaderTemplate>
-    <DataTemplate>
-      <Grid BackgroundColor="#4CA1FE" HeightRequest="45">
-        <Label LineBreakMode="NoWrap"
-               Margin="10,0,0,0" Text="Inbox" FontAttributes="Bold"
-               FontSize="18" TextColor="White" HorizontalOptions="Center"
-               VerticalOptions="Center"/>
-      </Grid>
-    </DataTemplate>
-  </syncfusion:SfListView.HeaderTemplate>
-</syncfusion:SfListView>
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+    <syncfusion:SfListView x:Name="listView"
+                    ItemsSource="{Binding InboxInfo}"
+                    ItemSize="100">
+        <syncfusion:SfListView.HeaderTemplate>
+            <DataTemplate>
+            <Grid BackgroundColor="#4CA1FE" HeightRequest="45">
+                <Label LineBreakMode="NoWrap"
+                    Margin="10,0,0,0" Text="Inbox" FontAttributes="Bold"
+                    FontSize="18" TextColor="White" HorizontalOptions="Center"
+                    VerticalOptions="Center"/>
+            </Grid>
+            </DataTemplate>
+        </syncfusion:SfListView.HeaderTemplate>
+    </syncfusion:SfListView>
+</ContentPage>
 {% endhighlight %}
 {% highlight c# %}
 viewModel = new ViewModel ();
@@ -57,7 +59,7 @@ listView.HeaderTemplate = new DataTemplate(() =>
 
 ## Header and footer items appearance
 
-The [SfListView](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView.html) allows customizing size of the header and footer items by setting the [SfListView.HeaderSize](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~HeaderSize.html) and [SfListView.FooterSize](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~FooterSize.html) properties. The default value is 40. These properties can be customized at runtime.
+The [SfListView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView.html) allows customizing size of the header and footer items by setting the [SfListView.HeaderSize](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~HeaderSize.html) and [SfListView.FooterSize](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~FooterSize.html) properties. The default value is 40. These properties can be customized at runtime.
 
 {% tabs %}
 {% highlight xaml %}
@@ -73,7 +75,7 @@ N> For vertical orientation, the header and footer size are considered as height
 
 ## Stick header and footer
 
-The [SfListView](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView.html) allows sticking the header and footer items to view by enabling the [SfListView.IsStickyHeader](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsStickyHeader.html) and [SfListView.IsStickyFooter](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsStickyFooter.html) properties. If the `SfListView.IsStickyHeader` is `true`, the header item will stick to the top of the view. If the `SfListView.IsStickyFooter` is `true`, the footer item will stick to the bottom of the view.
+The [SfListView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView.html) allows sticking the header and footer items to view by enabling the [SfListView.IsStickyHeader](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsStickyHeader.html) and [SfListView.IsStickyFooter](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsStickyFooter.html) properties. If the `SfListView.IsStickyHeader` is `true`, the header item will stick to the top of the view. If the `SfListView.IsStickyFooter` is `true`, the footer item will stick to the bottom of the view.
 
 {% tabs %}
 {% highlight xaml %}
@@ -92,17 +94,14 @@ listView.IsStickyFooter = true;
 
 ### perform TabView using header
 
-The [SfListView](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView.html) allows performing tab view structure by customizing the [HeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~HeaderTemplate.html) to load any view.
+The [SfListView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView.html) allows performing tab view structure by customizing the [HeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~HeaderTemplate.html) to load any view.
 
 {% tabs %}
 {% highlight xaml %}
-
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
-
     <ContentPage.BindingContext>
         <local:BookInfoRepository />
     </ContentPage.BindingContext>
-
     <ContentPage.Resources>
         <ResourceDictionary>
             <DataTemplate x:Key="template">
@@ -173,7 +172,6 @@ The [SfListView](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Sy
         </syncfusion:SfListView.HeaderTemplate>
     </syncfusion:SfListView>
 </ContentPage>
-
 {% endhighlight %}
 
 {% highlight c# %}
@@ -317,7 +315,7 @@ You can download the entire source code of this demo [here](http://www.syncfusio
 
 ### header and footer in vertical mode when listview in horizontal mode
 
-By customizing the [SfListView](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView.html), layout the header and footer items in `Vertical` mode with listview items in `Horizontal` mode.
+By customizing the [SfListView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView.html), layout the header and footer items in `Vertical` mode with listview items in `Horizontal` mode.
 
 {% tabs %}
 {% highlight xaml %}

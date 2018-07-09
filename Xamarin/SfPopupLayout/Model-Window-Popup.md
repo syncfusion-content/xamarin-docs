@@ -9,7 +9,7 @@ documentation: ug
 
 # Modal Window Pop-up
 
-You can use pop-up layout as modal window by using the built-in Close icon and the [SfPopupLayout.StaysOpen](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~StaysOpenProperty.html) property prevents interaction with your application until you close the window.
+You can use pop-up layout as modal window by using the built-in Close icon and the [SfPopupLayout.StaysOpen](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~StaysOpenProperty.html) property prevents interaction with your application until you close the window.
 
 `Modal`: Window loads under the parent window surrounded by an overlay which prevents clicking anywhere else on the screen apart from the control of the modal.
 
@@ -17,7 +17,10 @@ Modal does not require any action to open. It opens in the same window and gives
 
 Refer to the following code example in which the pop-up will close only if you click on Close icon.
 
+{% tabs %}
+
 {% highlight xaml %}
+
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -26,10 +29,29 @@ Refer to the following code example in which the pop-up will close only if you c
              Padding="0,40,0,0"
              xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms">
  <sfPopup:SfPopupLayout x:Name="popUpLayout">
-   <sfPopup:SfPopupLayout.Content>
-     <StackLayout x:Name="mainLayout">
-       <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" VerticalOptions="Start" HorizontalOptions="FillAndExpand" />
-     </StackLayout>
+    <sfPopup:SfPopupLayout.PopupView>
+        <sfPopup:PopupView HeightRequest="230"
+                           HeaderTitle="Modal Window"
+                           ShowFooter="False">
+            <sfPopup:PopupView.ContentTemplate>
+                <DataTemplate>
+                    <Label Text="Window loads under the parent window surrounded by an 
+                           overlay which prevents clicking anywhere else on the screen 
+                           apart from the control of the modal. Modal opens in the same 
+                           window. It also does not require any user action to open, and 
+                           give callbacks when closing or opening the modal."
+                           WidthRequest="260"
+                           BackgroundColor="White"
+                           HorizontalOptions="FillAndExpand"
+                           />
+                </DataTemplate>
+            </sfPopup:PopupView.ContentTemplate>
+        </sfPopup:PopupView>
+    </sfPopup:SfPopupLayout.PopupView>
+    <sfPopup:SfPopupLayout.Content>
+        <StackLayout x:Name="mainLayout">
+            <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" VerticalOptions="Start" HorizontalOptions="FillAndExpand" />
+        </StackLayout>
     </sfPopup:SfPopupLayout.Content>
   </sfPopup:SfPopupLayout>
 </ContentPage>
@@ -77,7 +99,10 @@ namespace GettingStarted
         }
     }
 }
+
 {% endhighlight %}
+
+{% endtabs %}
 
 Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 

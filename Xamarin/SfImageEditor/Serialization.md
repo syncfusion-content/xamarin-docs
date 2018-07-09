@@ -43,14 +43,14 @@ documentation : ug
 
 {% endtabs %}
 
- you can save stream into .txt format file.if you saved as .txt format file to deserialize the shapes then set as Embedded resource in project.
+ You can save stream into .txt format file. If you saved stream as .txt format file to deserialize the shapes then set the Build action to `Embedded resource` in project.
   
   Please find sample text file shown below
   
-  [Chart.txt](http://www.syncfusion.com/downloads/support/directtrac/general/txt/Chart677841499.txt)
+  [ImageEditor.txt](http://www.syncfusion.com/downloads/support/directtrac/general/txt/Chart677841499.txt)
        
 ## Deserialization
-   LoadEdits() method used to deserialize the shapes.
+   LoadEdits() method used to deserialize the edits over an image.
 
 {% tabs %}
 

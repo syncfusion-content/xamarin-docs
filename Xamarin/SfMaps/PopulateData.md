@@ -23,15 +23,15 @@ The following properties in shape layers are used for binding data in Maps contr
 
 ### ItemsSource
 
-The [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ItemsSource.html) property accepts the collection values as input. 
+The [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ItemsSource.html) property accepts the collection values as input. 
 
 ### ShapeIDPath
 
-The [`ShapeIDPath`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShapeIDPath.html) property refers the data ID in ItemsSource.
+The [`ShapeIDPath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShapeIDPath.html) property refers the data ID in ItemsSource.
 
 ### ShapeIDTableField
 
-The [`ShapeIDTableField`](https://help.syncfusion.com/cr/cref_files/xamarin/sfmaps/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShapeIDTableField.html) property is similar to the ShapeIdPath that refers to the column name in the data property of shape layers to identify the shape. When the values of the ShapeIdPath property in the ItemsSource property and the values of ShapeIdTableField in the data property match, the associated object from the ItemsSource is bound to the corresponding shape.
+The [`ShapeIDTableField`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShapeIDTableField.html) property is similar to the ShapeIdPath that refers to the column name in the data property of shape layers to identify the shape. When the values of the ShapeIdPath property in the ItemsSource property and the values of ShapeIdTableField in the data property match, the associated object from the ItemsSource is bound to the corresponding shape.
 
 {% tabs %}
 

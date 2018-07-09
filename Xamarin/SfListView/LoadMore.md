@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Load More
 
-The SfListView enables `Load More` view by setting the [SfListView.LoadMoreOption](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreOption.html), [SfListView.LoadMoreCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommand.html), and [IsBusy](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsBusy.html) properties. The `Load More` view will be displayed when reaching the end of the list and provides option to add the items at runtime.
+The SfListView enables `Load More` view by setting the [SfListView.LoadMoreOption](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreOption.html), [SfListView.LoadMoreCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommand.html), and [IsBusy](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsBusy.html) properties. This can be displayed either on the top or bottom of the view by setting the [SfListView.LoadMorePosition](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LoadMorePosition.html) property. This view will be displayed when reaching the end of the list when the `LoadMorePosition` is bottom. This provides an option to add the items at runtime. If the `SfListView.LoadMorePosition` property is set as top, the items will be loaded only by using the `LoadMoreOption.Manual` mode.
 
 The `SfListView.LoadMoreOption` property has three different modes of operation listed as follows:
 
@@ -16,19 +16,26 @@ The `SfListView.LoadMoreOption` property has three different modes of operation 
  * Manual: Displays the load more button when reaching the end of the list and execute `SfListView.LoadMoreCommand` when tapping the button.
  * Auto: Automatically execute the `SfListView.LoadMoreCommand` when reaching end of the list.
 
+The `SfListView.LoadMorePosition` property has two positions:
+
+* Top: Positioned on the top of list.
+* Bottom: Positioned on the bottom of list when reaching the end of the list. This is the default value.
+
 ## Load more automatically
 
-To automatically load more items using the [SfListView.LoadMoreCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommand.html) and [SfListView.LoadMoreCommandParameter](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommandParameter.html) when reaching end of the list, set the [SfListView.LoadMoreOption](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreOption.html) property as `Auto`.
+To automatically load more items using the [SfListView.LoadMoreCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommand.html) and [SfListView.LoadMoreCommandParameter](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommandParameter.html) when reaching end of the list, set the [SfListView.LoadMoreOption](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreOption.html) property as `Auto`.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfListView x:Name="listView"
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+  <syncfusion:SfListView x:Name="listView"
                  ItemSize="120"
                  LoadMoreOption="Auto"
                  LoadMoreCommand="{Binding LoadMoreItemsCommand}"
                  LoadMoreCommandParameter="{Binding Source={x:Reference listView}}"
                  IsBusy="{Binding IsBusy}"
                  ItemsSource="{Binding Products}"/>
+</ContentPage>
 {% endhighlight %}
 {% highlight c# %}
 listView.LoadMoreOption = LoadMoreOption.Auto;
@@ -87,17 +94,19 @@ private void AddProducts(int index, int count)
 
 ## Load more manually
 
-To load more items manually using the [SfListView.LoadMoreCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommand.html) and [SfListView.LoadMoreCommandParameter](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommandParameter.html) when tapping the load more button at end of the list, set the [SfListView.LoadMoreOption](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreOption.html) property as `Manual`.
+To load more items manually using the [SfListView.LoadMoreCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommand.html) and [SfListView.LoadMoreCommandParameter](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommandParameter.html) when tapping the load more button at end of the list, set the [SfListView.LoadMoreOption](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreOption.html) property as `Manual`.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfListView x:Name="listView"
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+  <syncfusion:SfListView x:Name="listView"
                  ItemSize="120"
                  LoadMoreOption="Manual"
                  LoadMoreCommand="{Binding LoadMoreItemsCommand}"
                  LoadMoreCommandParameter="{Binding Source={x:Reference listView}}"
                  IsBusy="{Binding IsBusy}"
                  ItemsSource="{Binding Products}"/>
+</ContentPage>
 {% endhighlight %}
 {% highlight c# %}
 listView.LoadMoreOption = LoadMoreOption.Manual;
@@ -157,7 +166,9 @@ private void AddProducts(int index, int count)
 
 ## Show loading indicator
 
-The [SfListView.LoadMoreIndicator](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LoadMoreIndicator.html) will be displayed when loading more items into the list. Before loading more items, change the visibility of `LoadMoreIndicator` by setting the [SfListView.IsBusy](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsBusy.html) property to `true`. After loading more items, reset to `false`. 
+The [SfListView.LoadMoreIndicator](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LoadMoreIndicator.html) will be displayed when loading more items in the list.
+
+Binding the [SfListView.IsBusy](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsBusy.html) property is mandatory, because converter is used for this property to interchange the visibility of the button and busy indicator while creating default load more view. While binding the property for `SfListView.IsBusy`, the name of the ViewModel property should be `IsBusy`. You can either change the ViewModel property or `SfListView.IsBusy` property while adding items. It is mandatory to change the `IsBusy` value before and after adding items to the list.
 
 {% tabs %}
 {% highlight c# %}
@@ -176,7 +187,11 @@ private async void LoadMoreItems(object obj)
 
 Download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LoadMoreUG978011112).
 
+Items can be loaded either on the top or bottom of the view.
+
 ![](SfListView_images/SfListView-LoadMore.gif)
+
+![](SfListView_images/SfListView-TopLoadMore.gif)
 
 ## Load more view customization
 
@@ -184,7 +199,7 @@ The SfListView allows customizing User Interface(UI) of `Load More` view.
 
 ### Load more button
 
-To customize the load more button, add the custom UI in the [SfListView.LoadMoreTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreTemplate.html) property. 
+To customize the load more button, add the custom UI in the [SfListView.LoadMoreTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreTemplate.html) property. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -239,7 +254,7 @@ listView.LoadMoreTemplate = new DataTemplate(() =>
 
 ### Loading Indicator
 
-To customize the loading indicator, add the custom UI in the [SfListView.LoadMoreTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreTemplate.html) property.
+To customize the loading indicator, add the custom UI in the [SfListView.LoadMoreTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreTemplate.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -301,7 +316,7 @@ listView.LoadMoreTemplate = new DataTemplate(() =>
 
 ## Disable load more at runtime
 
-To disable the `Load More` view, return the 'CanExecute' method of the [SfListView.LoadMoreCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommand.html) to `false`.
+To disable the `Load More` view, return the 'CanExecute' method of the [SfListView.LoadMoreCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommand.html) to `false`.
 
 If you reach maximum count (for example, totalItems = 22) in the list, follow the code example to disable the `Load More` view.
 
@@ -329,9 +344,10 @@ private bool CanLoadMoreItems(object obj)
 {% endtabs %}
 
 
-## Limitation
+## Limitations
 
-The SfListView does not support the [SfListView.LoadMoreOption](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreOption.html) in `Manual` mode when the [SfListView.Orientation](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.Orientation.html) is `Horizontal`.
+* The SfListView does not support the [SfListView.LoadMoreOption](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreOption.html) in `Manual` mode when the [SfListView.Orientation](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.Orientation.html) is `Horizontal`.
+* It does not support for `LoadMoreOption` in `Auto` when the [SfListView.LoadMorePosition](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LoadMorePosition.html) is `Top`.
 
 ## How to
 
@@ -383,23 +399,25 @@ You can download the entire sample from [here](http://www.syncfusion.com/downloa
 
 ### Load more items automatically from up direction
 
-The SfListView allows loading more items automatically when reaching top of the list by showing the busy indicator by loading in the [HeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~HeaderTemplate.html).
+The SfListView allows loading more items automatically when reaching top of the list by showing the busy indicator by loading in the [HeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~HeaderTemplate.html).
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfListView x:Name="ListView" IsBusy="True" 
-                       ItemsSource="{Binding Messages}" 
-                       AutoFitMode="Height">
-  <syncfusion:SfListView.HeaderTemplate>
-    <DataTemplate>
-      <ViewCell>
-        <Grid>
-          <syncfusion:LoadMoreIndicator Color="Red" IsRunning="True" IsVisible="{Binding IndicatorIsVisible}"/>
-        </Grid>
-      </ViewCell>
-    </DataTemplate>
-  </syncfusion:SfListView.HeaderTemplate>
-</syncfusion:SfListView>
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+   <syncfusion:SfListView x:Name="ListView" IsBusy="True" 
+                        ItemsSource="{Binding Messages}" 
+                        AutoFitMode="Height">
+        <syncfusion:SfListView.HeaderTemplate>
+            <DataTemplate>
+            <ViewCell>
+                <Grid>
+                <syncfusion:LoadMoreIndicator Color="Red" IsRunning="True" IsVisible="{Binding IndicatorIsVisible}"/>
+                </Grid>
+            </ViewCell>
+            </DataTemplate>
+        </syncfusion:SfListView.HeaderTemplate>
+    </syncfusion:SfListView>
+</ContentPage
 {% endhighlight %}
 {% highlight c# %}
 public partial class MainPage : ContentPage
@@ -447,6 +465,7 @@ public partial class MainPage : ContentPage
     BindingContext = ViewModel;
     ViewModel.ListView = this.ListView;
     ListView.Loaded += ListView_Loaded;
+    visualContainer = ListView.GetVisualContainer();
   }
 
   private void HeaderItem_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
@@ -500,16 +519,17 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DataTemplateSelector1009153684).
+You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DataTemplateSelector_Automatic-115808424).
 
 ![](SfListView_images/SfListView-LoadMoreAutomaticallyUpDirection.png)
 
 ### Load more items manually from up direction
 
-The SfListView allows loading more items when tapping the button loaded in the [HeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/sflistview/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~HeaderTemplate.html) when reaching top of the list and shows the busy indicator till the items are added into the collection.
+The SfListView allows loading more items when tapping the button loaded in the [HeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~HeaderTemplate.html) when reaching top of the list and shows the busy indicator till the items are added into the collection.
 
 {% tabs %}
 {% highlight xaml %}
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
 <syncfusion:SfListView x:Name="ListView"  IsBusy="True"
                        ItemTemplate="{StaticResource MessageTemplateSelector}" 
                        ItemsSource="{Binding Messages}"
@@ -527,6 +547,7 @@ The SfListView allows loading more items when tapping the button loaded in the [
     </DataTemplate>
   </syncfusion:SfListView.HeaderTemplate>
 </syncfusion:SfListView>
+</ContentPage>
 {% endhighlight %}
 {% highlight c# %}
 public partial class MainPage : ContentPage

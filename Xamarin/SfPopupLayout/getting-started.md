@@ -48,13 +48,13 @@ The following assemblies should be added as reference from the "lib" folder to u
 
 ## NuGet configuration
 
-To install the SfPopupLayout control in the application, configure the NuGet package of the Syncfusion components.
+To install the required nugets for the SfPopupLayout control in the application, first you have to configure the NuGet packages of the Syncfusion components.
 
 Refer to the following KB to configure the NuGet package of the Syncfusion components:
 
 [How to configure package source and install Syncfusion NuGet packages in an existing project?](https://www.syncfusion.com/kb/7441/how-to-configure-package-source-and-install-syncfusion-nuget-packages-in-an-existing-project)
 
-The following NuGet package should be added to use the SfPopupLayout control in the application:
+The following NuGet package should be installed to use the SfPopupLayout control in the application:
 
 <table>
 <tr>

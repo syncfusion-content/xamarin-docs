@@ -38,6 +38,9 @@ To launch SfSchedule in iOS, you need to call `SfScheduleRenderer.Init()` in the
 
 {% tabs %}       
 {% highlight c# %}   
+using Syncfusion.SfSchedule.XForms.iOS;
+
+
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {
 	global::Xamarin.Forms.Forms.Init();
@@ -59,6 +62,9 @@ The above problem can be resolved by initializing the SfSchedule assemblies in `
 
 {% tabs %}   
 {% highlight c# %}
+using Syncfusion.SfSchedule.XForms.UWP;
+
+
 // In App.xaml.cs
 protected override void OnLaunched(LaunchActivatedEventArgs e)
 {
@@ -461,5 +467,5 @@ schedule.DataSource = viewModel.Meetings;
 ![](GettingStarted_images/GettingStarted.png)
 
 You can download the entire source code of this demo for Xamarin.Forms from
-here [ScheduleGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ScheduleGettingStarted-815086813.zip)
+here [ScheduleGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ScheduleGettingStarted1396972789.zip)
 

@@ -87,7 +87,7 @@ You can disable the navigation to day view by triggering the CellTappedEvent and
 
 {% tabs %}
 {% highlight c# %}
-monthViewSettings.AppointmentDisplayCount = 1;
+monthViewSettings.AppointmentDisplayCount = 4;
 monthViewSettings.AppointmentDisplayMode = AppointmentDisplayMode.Appointment; 
 schedule.CellTapped += Schedule_CellTapped;
 private void Schedule_CellTapped(object sender, CellTappedEventArgs e)
@@ -97,6 +97,8 @@ private void Schedule_CellTapped(object sender, CellTappedEventArgs e)
 } 
 {% endhighlight %}
 {% endtabs %}
+
+![](monthview_images/appointmentdisplay_count.png)
 
 ## Month InlineView
 You can use [ShowAppointmentsInline](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ShowAppointmentsInline.html) bool property in `SfSchedule` to enable / disable the month inline view, by setting `ShowAppointmentsInline` property as `true` you can view the Appointments in the specific date. 
@@ -648,6 +650,7 @@ private void Schedule_OnMonthCellLoadedEvent(object sender, MonthCellLoadedEvent
 ### Customize month cell using DataTemplate
 You can customize the default appearance of the month cell by using the [MonthCellTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~MonthCellTemplate.html) property of `MonthViewSettings`.
 
+{% tabs %}
 {% highlight xaml %}
 <schedule:SfSchedule
 x:Name="schedule" ScheduleView="MonthView">
@@ -662,6 +665,7 @@ x:Name="schedule" ScheduleView="MonthView">
 	</schedule:SfSchedule.MonthViewSettings>
 </schedule:SfSchedule>
 {% endhighlight %}
+{% endtabs %}
 
 ![](monthview_images/monthdatatemplate.png)
 
@@ -669,6 +673,7 @@ x:Name="schedule" ScheduleView="MonthView">
 
 You can use `DataTemplateSelector` to choose a `DataTemplate` at runtime based on the value of a data-bound to Schedule month cell through `MonthCellTemplate`. It lets you choose a different data template for each month cell, customizing the appearance of a particular month cell based on certain conditions. DataTemplateSelector for month cell includes [MonthCellItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthCellItem.html) as object item and `Schedule` as bindable object. `MonthCellItem` consists of following properties, [Date](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthCellItem~Date.html), [Appointments](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthCellItem~Appointments.html), [IsLeadingDay](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthCellItem~IsLeadingDay.html), [IsTrailingDay](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthCellItem~IsTrailingDay.html), [IsBlockOutDay](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthCellItem~IsBlockOutDay.html).
 
+{% tabs %}
 {% highlight xaml %}
 <ContentPage.Resources>
 	<ResourceDictionary>
@@ -686,9 +691,11 @@ You can use `DataTemplateSelector` to choose a `DataTemplate` at runtime based o
 </ContentPage.Content>
 
 {% endhighlight %}
+{% endtabs %}
 
 #### Creating a DataTemplateSelector
 
+{% tabs %}
 {% highlight c# %}
 public class MonthCellDataTemplateSelector : DataTemplateSelector
 {
@@ -722,9 +729,11 @@ public class MonthCellDataTemplateSelector : DataTemplateSelector
 }		
 
 {% endhighlight %}
+{% endtabs %}
 
 Used Label to display current ,next and previous month cell dates and StackLayout with label and image to denote the month cell with appointments.
 
+{% tabs %}
 {% highlight xaml %}
 <?xml version="1.0" encoding="UTF-8"?>
 <!--Label as Template to display month dates-->
@@ -765,7 +774,9 @@ Used Label to display current ,next and previous month cell dates and StackLayou
 </StackLayout>
 
 {% endhighlight %}
+{% endtabs %}
 
+{% tabs %}
 {% highlight c# %}
 public class MonthCellDateBehavior : Behavior<Label>
 {
@@ -786,6 +797,7 @@ public class MonthCellDateBehavior : Behavior<Label>
 }
 	
 {% endhighlight %}
+{% endtabs %}
 
 ![](monthview_images/datatemplateselector_month.png)
 

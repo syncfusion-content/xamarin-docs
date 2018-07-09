@@ -55,6 +55,7 @@ To export the SfDataGrid to Excel and PDF formats, search for [Syncfusion.Xamari
 
  If you prefer to manually refer the assemblies instead of NuGet for the using the exporting functionalities of SfDataGrid, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfgridconverter) to know about the dependent assemblies for exporting SfDataGrid.
 
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 N> When there is a mismatch of Xamarin NuGet packages between the sample and the SfDataGrid assemblies, an error `Could not load type Xamarin.Forms.ElementTemplate` will occur. Refer to the `ReadMe` to know the software requirements of the Syncfusion controls.
 

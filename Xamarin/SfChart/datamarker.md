@@ -505,3 +505,23 @@ chart.Series.Add(barSeries);
 
 ![](datamarker_images/datamarker_img10.png)
 
+## Event
+
+### DataMarkerLabelCreated
+
+The [`DataMarkerLabelCreated`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~DataMarkerLabelCreated_EV.html) event occurs when the data marker label is created. This argument contains object of the [`ChartDataMarkerLabel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataMarkerLabel.html). The following properties are available in [`DataMarkerLabel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataMarkerLabelCreatedEventArgs~DataMarkerLabel.html) to customize the appearance of data markers based on condition.
+
+* [`Label`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataMarkerLabel~Label.html) – Gets or sets the text of data marker.
+* [`BackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataMarkerLabel~BackgroundColor.html) – Gets the background color of data marker label.
+* [`Index`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataMarkerLabel~Index.html) – Gets the data point index of data marker label.
+* [`XPosition`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataMarkerLabel~XPosition.html) – Gets the x-position of data marker label.
+* [`YPosition`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataMarkerLabel~YPosition.html) – Gets the y-position of data marker label.
+* [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataMarkerLabel~LabelStyle.html) – Gets or sets the label style to customize the appearance of individual data marker label.
+* [`MarkerWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataMarkerLabel~MarkerWidth.html) – Gets or sets the marker width.
+*  [`MarkerHeight`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataMarkerLabel~MarkerHeight.html) – Gets or sets the marker height.
+* [`MarkerBorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataMarkerLabel~MarkerBorderWidth.html) – Gets or sets the border width of marker symbol.
+* [`MarkerBorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataMarkerLabel~MarkerBorderColor.html) – Gets or sets the border color of marker symbol.
+* [`MarkerColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataMarkerLabel~MarkerColor.html) – Gets or sets the marker color.
+* [`MarkerType`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataMarkerLabel~MarkerType.html) – Gets or sets the shape type of marker. The available shapes are ellipse, diamond, hexagon, cross, HorizontalLine, VerticalLine, InvertedTriangle, triangle, pentagon, plus, and square.
+
+N> Currently, the [`DataMarkerLabelCreated`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~DataMarkerLabelCreated_EV.html) event occurs only in `Android`, `iOS`, and `macOS` platforms. To customize individual data marker in `UWP` platform, use the [`DataTemplate`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataMarker~LabelTemplate.html) feature.

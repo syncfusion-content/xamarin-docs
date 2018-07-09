@@ -14,13 +14,13 @@ You can annotate any path on an image by using free hand drawing, and adding sha
 * From Toolbar
 * Using Code
 
-## How to add a shape (Rectangle, Circle, Arrow, etc.) over an image
+## Adding shapes (Rectangle, Circle, Arrow, etc.) over an image
 
 ### From Toolbar
 
-You can add the shapes from the toolbar by clicking the `Shapes` icon in the toolbar below the image. When the `Shapes` icon is tapped, a sub toolbar will appear on top of that toolbar. From that sub toolbar, you can choose the shape(`Rectangle`, `Circle`, and `Arrow`). Click the desired shape, and the shape will be added on the center of the image. The shapes has the handles on each edges, which helps you to resize it to the desired size, and  move it to the desired position by dragging the shape.
+You can add the shapes from the toolbar over an image by clicking the toolbar `Shapes` icon. When tapping the `Shapes` icon, a sub toolbar will appear on top of that toolbar. From that sub toolbar, you can choose the desired shape(`Rectangle`, `Circle`, and `Arrow`). Click the desired shape, and the shape will be added on the center of the image. Added shape will contains the handle on each edges, which helps you to resize it to the desired size, and  move it to the desired position by dragging the shape.
 
-#### Change Color and Fill options of the shape
+### Change Color and Fill options of the shape
 
 When the shape is clicked, the current toolbar menu with the shapes list will be hidden, and new menu with the options such as `Stroke`, `Fill`, and `Colors` will appear. 
 
@@ -34,11 +34,11 @@ I> By default, the shapes has `Red` stroke with `Transparent` fill.
 
 The `AddShape` method in the SfImageEditor control is used to add the shapes based on the `ShapeType` and `PenSettings`.
 
-#### ShapeType
+### ShapeType
 
 ShapeType is an enum type with values `Rectangle`, `Circle`, `Arrow`, and `Path`.
 
-#### PenSettings
+### PenSettings
 
 PenSettings is defined to set the values for `StrokeColor`, `FillColor`, and `StrokeWidth`.
 
@@ -70,7 +70,7 @@ N> `FillColor` property is applicable only if the ShapeType is `Rectangle` or `C
 
 {% endtabs %}
 
-#### Bounds
+### Bounds
 
 `Bounds` property allows you to set frame for the newly added shapes(rectangle and circle) and you can position the shapes wherever you want on the image. The value of the shapes frame should be in percentage(maximum - 100 & minimum - 0).
 
@@ -82,7 +82,7 @@ N> `FillColor` property is applicable only if the ShapeType is `Rectangle` or `C
 
 ![SfImageEditor](ImageEditor_images/path.gif)
 
-## How to delete a shape or text from the view
+## Deleting the shape or text from the view
 
 You can delete a selected shape or text from the view in the following two ways:
 

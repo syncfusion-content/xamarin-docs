@@ -7,36 +7,38 @@ control : ImageEditor
 documentation : ug
 ---
 
-# Text
+## Text
 
-To add the desired text elements over the image, use the following two ways:
+You can annotate desired text elements over an image by using `AddText` method with customization options. 
 
-* From Toolbar
-* Using Code
+{% highlight C# %}
 
-### From Toolbar
+    editor.AddText("New Text");
 
-To add text from the toolbar, click the Text icon in the toolbar. When the Text is tapped, a pop-up window will appear. To add the text over the image, type the desired text, and click OK. To close the pop-up window, click CANCEL button. By dragging, the text can be moved to the desired place, and Text can be resized with the help of handle.
+{% endhighlight %}
 
-#### Change Color of the selected Text
+## Customize text with TextSettings
 
-To change the color of the selected text, select the desired text, and click the color buttons available in the sub menu.
+You can customize the text appearance with the help of `TextSettings` properties.
 
-### Using Code
+TextSettings consist of the following properties,
 
-You can also add the desired text elements over the image programmatically. The `AddText` method in the SfImageEditor control is used to add the text based on the string value and `TextSettings`.
+ [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.TextSettings~Color.html) - It helps to define the color of the desired text.
+ 
+ [`FontSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.TextSettings~FontSize.html) - You can specify the desired font size of the text under text settings.
 
-#### TextSettings
-
-TextSettings is defined to set the values for `Color`, `FontSize` and `FontFamily`. By default there are six types of font family has been given in toolbar that are 
-`Arial`, `Noteworthy`, `Marker Felt`, `SignPainter`,`Bradley Hand`, `Snell Round hand`.
-
+ [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.TextSettings~FontFamily.html) - By default there are six types of font family available in toolbar such as,
+                   `Arial`, `Noteworthy`, `Marker Felt`, `SignPainter`,`Bradley Hand`, `Snell Round hand`.
+ 
+ [`Bounds`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.TextSettings~Bounds.html) - This property allows you to set frame for the newly added `Text` and you can position the text wherever you want on the image. The value of the text frame should be in percentage(maximum - 100 & minimum - 0).
+ 
+ [`Opacity`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.TextSettings~Opacity.html) - You can change the opacity of text.
 
 {% tabs %}
 
 {% highlight C# %}
 
-    editor.AddText("New Text", new TextSettings(){Color = Color.Black, FontSize = 16d, FontFamily="Arial"});
+    editor.AddText("New Text", new TextSettings(){Color = Color.Black, FontSize = 16d, FontFamily="Arial", Bounds = new Rectangle(20, 20, 35, 35), Opacity=0.5f});
 
 {% endhighlight %}
 
@@ -44,47 +46,37 @@ TextSettings is defined to set the values for `Color`, `FontSize` and `FontFamil
 
 ![SfImageEditor](ImageEditor_images/text.png)
 
-#### Bounds
-
-`Bounds` property allows you to set frame for the newly added `Text` and you can position the text wherever you want on the image. The value of the text frame should be in percentage(maximum - 100 & minimum - 0).
-
-{% highlight C# %}
-
-  edit.AddText("New Text", new TextSettings() { Bounds = new Rectangle(20, 20, 35, 35) });
-
-{% endhighlight %}
-
-# Custom Font Family
+## Custom Font Family
 
 Using a font other than the built-in typefaces requires some platform-specific coding. The steps required for each platform are outlined below.
 Download the custom fonts file in ttf file format and add these fonts into required folder in particular project file.
 
-#### Android
+### Android
 
 Add the custom fonts into Assets folder in sample.Droid project.
    
-Right click the font file and open properties, in that Change the "Build Action" property of every font file as "AndroidAsset" and "Copy to output directory" to "Copy Always".
+Right click the font file and open properties, in that Change the "Build Action" property of every font file as `AndroidAsset` and "Copy to output directory" to `Copy Always`.
     
 ![SfImageEditor](ImageEditor_images/AndroidCustomFont.png)
     
-#### iOS
+### iOS
 
 Add the custom fonts into Resource file in sample.iOS project.
     
-Change the "Build Action" property of every font file as "BundleResource" and "Copy to output directory" to "Copy Always".
+Change the "Build Action" property of every font file as `BundleResource` and "Copy to output directory" to `Copy Always`.
 
 ![SfImageEditor](ImageEditor_images/iOSCustomFont1.png)
     
-Open the "info.plist" file and select "Source" at the bottom of the file.
+Open the `info.plist` file and select "Source" at the bottom of the file.
 After open the source file you should need to add "Fonts provided by application" into the source file and add the downloaded custom fonts name with .ttf extension.
 
 ![SfImageEditor](ImageEditor_images/iOSCustomFont2.png)
 
-#### UWP
+### UWP
 
 Add the custom fonts into Assets folder in sample.UWP project.
 
-Right click the font file and open properties, in that change the  "Build Action" property of every font file as "Content" and "Copy to output directory" to "Copy Always".
+Right click the font file and open properties, in that change the  "Build Action" property of every font file as `Content` and "Copy to output directory" to `Copy Always`.
     
 ![SfImageEditor](ImageEditor_images/UWPCustomFont.png)
 

@@ -178,9 +178,9 @@ When BeginInit method is called it suspends all the updates until EndInit method
 </table>
 
 ### Data Virtualization
-SfDataGrid allows you to load large amount of data in less time by setting SfDataGrid.EnableDataVirtualization property to true.
+Data grid provides support to handle the large amount of data through built-in virtualization feature. With Data virtualization, the record entries will be created in the runtime only upon scrolling to the vertical end which increases the  performance of grid loading time.
 
-To set the EnableDataVirtualization property, follow the code example:
+To set SfDataGrid.EnableDataVirtualization property to true, follow the code example:
 
 {% tabs %}
 {% highlight xaml %}
@@ -191,5 +191,42 @@ To set the EnableDataVirtualization property, follow the code example:
 {% endhighlight %} 
 {% highlight c# %}
 datagrid.EnableDataVirtualization = true;
+{% endhighlight %}
+{% endtabs %}
+
+### NotificationSubscriptionMode
+
+Data grid exposed [SfDataGrid.NotificationSubscriptionMode](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Data.Portable~Syncfusion.Data.NotificationSubscriptionMode.html) property that allows you to set whether the underlying source collection items can listen to the INotifyCollectionChanged or INotifyPropertyChanging events. You can handle the property change or collection change by setting the NotificationSubscriptionMode property.
+
+<table>
+<tr>
+<th>NotificationSubscriptionMode</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>CollectionChange</td>
+<td>Denotes a view that listens System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged event of the SourceCollection. </td>
+</tr>
+<tr>
+<td>None</td>
+<td>Denotes System.ComponentModel.INotifyPropertyChanging.PropertyChanging, System.ComponentModel.INotifyPropertyChanged.PropertyChanged, and System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged events will not be listened.</td>
+</tr>
+<tr>
+<td>PropertyChange</td>
+<td>Denotes a view that listens the System.ComponentModel.INotifyPropertyChanging.PropertyChanging and System.ComponentModel.INotifyPropertyChanged.PropertyChanged events of the data object.</td>
+</tr>
+</table>
+
+To set the NotificationSubscriptionMode property, follow the code example.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AutoGenerateColumns="True"
+                       ItemsSource="{Binding EmployeeDetails}"
+                       NotificationSubscriptionMode="CollectionChange">
+{% endhighlight %} 
+{% highlight c# %}
+dataGrid.NotificationSubscriptionMode = NotificationSubscriptionMode.CollectionChange;
 {% endhighlight %}
 {% endtabs %}

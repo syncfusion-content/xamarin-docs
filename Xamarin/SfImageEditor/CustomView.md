@@ -7,7 +7,7 @@ control : ImageEditor
 documentation : ug
 ---
 
-# CustomView
+## CustomView
 
 You can add any custom shapes or views on the image by using the `AddCustomView` method in the SfImageEditor control. To add the custom view, specify any view and its desired `CustomViewSettings` as shown in the following code snippet.
 
@@ -24,7 +24,7 @@ imageEditor.AddCustomView(customImage, new CustomViewSettings());
 
 CustomViewSettings is defined to set the values for `CanMaintainAspectRatio` and `Bounds`.
 •	CanMaintainAspectRatio property is used to set the Boolean value to maintain the aspect ratio value or not when resizing the custom view.
-•	Bounds property is used to set the bounds of the custom view. Using this property to position the custom view wherever you want on the image.
+•	Bounds property is used to set the bounds of the custom view. Using this property you can position the custom view wherever you want on the image. The value should be in percentage(Minimum -0 & maximum-100)
 
 {% highlight C# %}
 

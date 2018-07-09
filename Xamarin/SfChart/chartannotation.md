@@ -981,3 +981,43 @@ chart.ChartAnnotations.Add(annotation);
 {% endtabs %}
 
 ![](chartannotation_images/image16.png)
+
+## Event
+
+**AnnotationClicked**
+
+The [`AnnotationClicked`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~AnnotationClicked_EV.html) event is triggered when the user has clicked the annotation. The argument contains the following information.
+
+* [`Annotation`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAnnotationClickedEventArgs~Annotation.html) – used to get the instance of annotation which is clicked.
+* [`X`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAnnotationClickedEventArgs~X.html) – used to get the x position of touch point on annotation.
+* [`Y`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAnnotationClickedEventArgs~Y.html) – used to get the y position of touch point on annotation..
+
+## Get the touch position in annotation
+
+Following are the override methods that are available in annotation to send the information about touch interactions.
+
+* [`OnTouchDown`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAnnotation~OnTouchDown.html) – occurs when touch down inside the annotation.
+* [`OnTouchMove`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAnnotation~OnTouchMove.html) – occurs while moving the finger or mouse inside the annotation.
+* [`OnTouchUp`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAnnotation~OnTouchUp.html) – occurs when touch up inside the annotation.
+
+{% highlight c# %}
+
+public class TextAnnotationExt : TextAnnotation
+{
+    protected override void OnTouchDown(float pointX, float pointY)
+    {
+       base.OnTouchDown(pointX, pointY);
+    }
+
+    protected override void OnTouchMove(float pointX, float pointY)
+    {
+       base.OnTouchMove(pointX, pointY);
+    }
+
+    protected override void OnTouchUp(float pointX, float pointY)
+    {
+       base.OnTouchUp(pointX, pointY);
+    }
+}
+
+{% endhighlight  %}

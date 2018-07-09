@@ -20,6 +20,9 @@ Image Editor is a very handy tool that is used to edit an image by annotating wi
 * Support to add shapes such as Rectangle, Circle, Arrow, Text, Path, etc.
 * Undo and Redo operations
 * Zoom and Pan
-* Signature control
+* Localization
+* Custom view annotation
+* Toolbar customization
+* Z-Ordering
 * Save the image to device
 * Built-in Toolbar

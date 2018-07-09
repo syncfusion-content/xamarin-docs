@@ -15,6 +15,13 @@ documentation: ug
 
 The SfListView allows programmatically scrolling a row based on the index by using the [ScrollToRowIndex](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LayoutBase~ScrollToRowIndex.html) method for both linear and grid layouts. It also enables and disables the scrolling animation when changing the view. By default, the scrolling will be animated.
 
+To set an item to a specific position while scrolling the `ScrollToRowIndex` method can be used with four different types of position:
+
+* MakeVisible: Scrolls a specific item to make visible in the view. If the item is already in view, scrolling will not occur.
+* Start: Scrolls a specific item to be positioned at the begin of the view.
+* End: Scrolls a specific item to be positioned at the end of the view.
+* Center: Scrolls a specific item to be positioned at the center of the view.
+
 N> If grouping is enabled, get the desired row index by passing the underlying data in the [DisplayItems.IndexOf](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DisplayItems~IndexOf.html) method.
 
 {% tabs %}
@@ -22,6 +29,17 @@ N> If grouping is enabled, get the desired row index by passing the underlying d
 
 int index = listView.DataSource.DisplayItems.IndexOf(viewModel.Customers[2]); 
 listView.LayoutManager.ScrollToRowIndex(index, true); 
+
+{% endhighlight %}
+{% endtabs %}
+
+To display the `ScrollToRowIndex` method with position, follow the code.
+
+{% tabs %}
+{% highlight c# %}
+
+int index = listView.DataSource.DisplayItems.IndexOf(viewModel.Customers[2]); 
+listView.LayoutManager.ScrollToRowIndex(index, Syncfusion.ListView.XForms.ScrollToPosition.Center, true); 
 
 {% endhighlight %}
 {% endtabs %}
@@ -84,7 +102,7 @@ The `Loaded` event used for the following use cases:
 
 ### Tapped event
 
-The [ItemTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTapped_EV.html) event will be triggered whenever tapping the item. Here, `TapCommandParameter` property sets the parameter for [SfListView.TapCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~TapCommand.html) and its default value is [ItemTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemTappedEventArgs.html). `ItemTappedEventArgs` has the following members which provides the information for `ItemTapped` event:
+The [ItemTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTapped_EV.html) event will be triggered whenever tapping the item. Here, [TapCommandParameter](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~TapCommandParameter.html) property sets the parameter for [SfListView.TapCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~TapCommand.html) and its default value is [ItemTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemTappedEventArgs.html). `ItemTappedEventArgs` has the following members which provides the information for `ItemTapped` event:
 
  * [ItemType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemTappedEventArgs~ItemType.html): It gets the type of the tapped item.
  * [ItemData](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemTappedEventArgs~ItemData.html): The underlying data associated with the tapped item as its arguments.
@@ -146,7 +164,7 @@ The [ItemDoubleTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfus
 
 ### ItemHolding event
 
-The [ItemHolding](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemHolding_EV.html) event will be triggered whenever long pressing the item. Here, `HoldCommandParameter` sets the parameter for [SfListView.HoldCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~HoldCommand.html) and its default value is [ItemHoldingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemHoldingEventArgs.html). `ItemHoldingEventArgs` has the following members which provides the information for `ItemHolding` event:
+The [ItemHolding](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemHolding_EV.html) event will be triggered whenever long pressing the item. Here, [HoldCommandParameter](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~HoldCommandParameter.html) sets the parameter for [SfListView.HoldCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~HoldCommand.html) and its default value is [ItemHoldingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemHoldingEventArgs.html). `ItemHoldingEventArgs` has the following members which provides the information for `ItemHolding` event:
 
  * [ItemType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemHoldingEventArgs~ItemType.html): It gets the type of the long pressed item.
  * [ItemData](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemHoldingEventArgs~ItemData.html): The underlying data associated with the holding item as its arguments.

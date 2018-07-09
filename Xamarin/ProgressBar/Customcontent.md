@@ -8,7 +8,7 @@ documentation: ug
 
 # Custom Content
 
-In the circular progress bar, you can add any view to the center using the [`Content`](https://help.syncfusion.com/cr/cref_files/xamarin/sfprogressbar/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.SfCircularProgressBar~Content.html) property. 
+In the circular progress bar, you can add any view to the center using the [`Content`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.SfCircularProgressBar~Content.html) property. 
 
 For example, you can include add, start, or pause button to control the progress; add an image that indicates the actual task in progress or add custom text that conveys how far the task is completed. 
 
@@ -18,35 +18,33 @@ The following code example shows how to add custom text content.
 
 {% highlight xaml %}
 
-<progressBar:SfCircularProgressBar x:Name="CustomContentCircularProgressBar"
+<progressBar:SfCircularProgressBar x:Name="CustomContentCircularProgressBar" Progress="23" HorizontalOptions="Center" >
 
-Progress="23" HorizontalOptions="Center" >
+ <progressBar:SfCircularProgressBar.Content>
 
-<progressBar:SfCircularProgressBar.Content>
+   <Grid>
 
-<Grid>
+        <Grid.RowDefinitions>
 
-<Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
 
-<RowDefinition Height="3*"/>
+            <RowDefinition Height="*"/>
 
-<RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
 
-</Grid.RowDefinitions>
+        <Label x:Name="CustomContentProgressBarLabel" Grid.Row="0"
 
-<Label x:Name="CustomContentProgressBarLabel" Grid.Row="0"
+                TextColor="#007cee" Text="{Binding Progress,StringFormat='{0}%'} HorizontalTextAlignment="Center" VerticalTextAlignment="End">                        
 
-TextColor="#007cee" Text="{Binding Progress,StringFormat='{0}%'} HorizontalTextAlignment="Center" VerticalTextAlignment="End">                        
+        </Label>
 
-</Label>
+        <Label Grid.Row="1" TextColor="#007cee" Text="used" VerticalOptions="Start" Margin="0,-5,0,0" HorizontalTextAlignment="Center" VerticalTextAlignment="Start">
 
-<Label Grid.Row="1" TextColor="#007cee" Text="used" VerticalOptions="Start" Margin="0,-5,0,0" HorizontalTextAlignment="Center" VerticalTextAlignment="Start">
+        </Label>
 
-</Label>
+    </Grid>
 
-</Grid>
-
-</progressBar:SfCircularProgressBar.Content>
+ </progressBar:SfCircularProgressBar.Content>
 
 </progressBar:SfCircularProgressBar>
 
@@ -112,4 +110,4 @@ circularProgressBar.Content = grid;
 
 ![](overview_images/customcontent.png)
 
-By default, the progress value will be displayed at the center. You can hide the label in the circular progress bar by setting the [`ShowProgressValue`](https://help.syncfusion.com/cr/cref_files/xamarin/sfprogressbar/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.SfCircularProgressBar~ShowProgressValue.html) property to false. 
+By default, the progress value will be displayed at the center. You can hide the label in the circular progress bar by setting the [`ShowProgressValue`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.SfCircularProgressBar~ShowProgressValue.html) property to false. 

@@ -15,7 +15,7 @@ PDF viewer allows you to include free text annotations in a PDF document and pro
 
 ### Enabling free text annotation mode
 
-Set the `AnnotationMode` property of the PDF viewer to `FreeText`. After setting the annotation mode, the zooming, panning, and scrolling will be disabled. Tap anywhere on the displayed PDF page, a popup will appear. Type the text in the popup and click “Ok” to add text to the page. Once the free text annotation is added, the zooming, panning, and scrolling will be enabled again.
+Set the `AnnotationMode` property of the PDF viewer to `FreeText`. After setting the annotation mode, the zooming, panning, and scrolling will be disabled. Tap anywhere on the displayed PDF page, a popup will appear. Type the text in the popup and click &#34;Ok&#34; to add text to the page. Once the free text annotation is added, the zooming, panning, and scrolling will be enabled again.
 
 {% tabs %}
 {% highlight xaml %}
@@ -89,7 +89,7 @@ pdfViewer.FreeTextAnnotationTapped += PdfViewer_FreeTextAnnotationTapped;
 
 ## Selecting free text annotations
 
-You can select a free text annotation by tapping on it. When a free text is selected, the `FreeTextAnnotationSelected` event will be raised. The properties of the selected free text can be retrieved using the `args` parameter of the event’s handler.
+You can select a free text annotation by tapping on it. When a free text is selected, the `FreeTextAnnotationSelected` event will be raised. The properties of the selected free text can be retrieved using the `args` parameter of the event handler.
 
 {% tabs %}
 {% highlight c# %}
@@ -163,7 +163,7 @@ pdfViewer.AnnotationSettings.FreeTextAnnotationSettings.TextSize = 4;
 
 ### Changing the properties of a selected free text
 
-You can change the properties of the selected annotation by casting the sender object parameter of the `FreeTextAnnotationSelected` event’s handler to FreeTextAnnotation and modify its properties. The following code shows how to change the properties.
+You can change the properties of the selected annotation by casting the sender object parameter of the `FreeTextAnnotationSelected` event handler to FreeTextAnnotation and modify its properties. The following code shows how to change the properties.
 
 {% tabs %}
 {% highlight c# %}
@@ -307,6 +307,7 @@ pdfViewer.FreeTextAnnotationRemoved += PdfViewer_FreeTextAnnotationRemoved;
 
 The properties of the removed free text can be obtained from the `args` parameter of the event handler. 
 
+{% tabs %}
 {% highlight c# %}
 private void PdfViewer_FreeTextAnnotationRemoved(object sender, FreeTextAnnotationRemovedEventArgs args)
 {
@@ -322,3 +323,4 @@ private void PdfViewer_FreeTextAnnotationRemoved(object sender, FreeTextAnnotati
 	float textSize = args.TextSize;
 }
 {% endhighlight %}
+{% endtabs %}

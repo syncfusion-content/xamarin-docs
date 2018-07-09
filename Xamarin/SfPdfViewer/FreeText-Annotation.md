@@ -99,10 +99,10 @@ private void PdfViewer_FreeTextAnnotationSelected(object sender, FreeTextAnnotat
 	//Get the bounds
 	Rectangle bounds = args.Bounds;
 
-	//Get the page number on which the deselected freetext is
+	//Get the page number on which the deselected free text is
 	int pageNumber = args.PageNumber;
 
-	//Get the text of the freetext annotation
+	//Get the text of the free text annotation
 	string text = args.Text;
 
 	//Get the text color
@@ -253,13 +253,13 @@ FreeTextAnnotation selectedFreeTextAnnotation;
 
 private void PdfViewer_FreeTextAnnotationSelected(object sender, FreeTextAnnotationSelectedEventArgs args)
 {
-	//Cast the sender object to freetext annotation.
+	//Cast the sender object to free text annotation.
 	selectedFreeTextAnnotation = sender as FreeTextAnnotation;
 }
 
 private void deleteFreeTextAnnotationButton_Clicked(object sender, EventArgs e)
 {
-	//Delete the selected freetext annotation
+	//Delete the selected free text annotation
 	pdfViewer.RemoveAnnotation(selectedFreeTextAnnotation);
 }
 
@@ -287,9 +287,9 @@ private void DeleteAllAnnotationsButton_Clicked(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-### Detecting the removal of a freetext
+### Detecting the removal of a free text
 
-The event `FreeTextAnnotationRemoved` will be raised when a freetext annotation is removed from the PDF.
+The event `FreeTextAnnotationRemoved` will be raised when a free text annotation is removed from the PDF.
 
 {% tabs %}
 {% highlight xaml %}
@@ -313,7 +313,7 @@ private void PdfViewer_FreeTextAnnotationRemoved(object sender, FreeTextAnnotati
 {
 	//Get the bounds 
 	Rectangle bounds = args.Bounds;
-	//Get the page number on which the deselected freetext is 
+	//Get the page number on which the deselected free text is 
 	int pageNumber = args.PageNumber;
 	//Get the text of the free text annotation 
 	string text = args.Text;

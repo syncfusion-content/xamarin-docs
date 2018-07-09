@@ -621,4 +621,4 @@ public string Password
 }
 {% endhighlight %}
 
-![](SfDataForm_images/PasswordEditor.png)
+![](SfDataForm_images/PasswordEditor.jpg)

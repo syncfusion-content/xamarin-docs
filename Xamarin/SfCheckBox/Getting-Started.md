@@ -323,6 +323,6 @@ private void CheckBox_StateChanged(object sender, StateChangedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](Images/Inter1.png) ![](Images/Inter2.png)
+![](Images/Inter1.jpg) ![](Images/Inter2.jpg)
 
 This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Forms/Samples/CheckBox_IndeterminateState.zip ).

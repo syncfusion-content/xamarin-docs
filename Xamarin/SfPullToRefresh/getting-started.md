@@ -23,7 +23,7 @@ N> Assemblies can be found in unzipped package location in Mac
 
 ## NuGet configuration
 
-To install the required nugets for the SfPullToRefresh control in the application, first you have to configure the NuGet packages of the Syncfusion components.
+To install the required NuGet for the SfPullToRefresh control in the application, first you have to configure the NuGet packages of the Syncfusion components.
 
 Refer to the following KB to configure the NuGet package of the Syncfusion components:
 

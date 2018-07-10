@@ -24,7 +24,7 @@ graph.DrawEllipse(stroke, new Rectangle(10, 0, 20, 20));
 graph.DrawArc(stroke, 0, 20, 40, 40, 180, 180);
 
 //Add template into an user handles collection
-var deletetemplate = new DataTemplate(() =>
+var deleteTemplate = new DataTemplate(() =>
 {
   var root = new StackLayout()
   {
@@ -42,7 +42,7 @@ root.Children.Add(image);
 return root;
 });
 
-var plustemplate = new DataTemplate(() =>
+var plusTemplate = new DataTemplate(() =>
 {
   var root = new StackLayout()
   {
@@ -61,9 +61,9 @@ return root;
 });
 
 //Add user handle into an user handles collection 
-diagram.UserHandles.Add(new Syncfusion.SfDiagram.XForms.UserHandle("delete", UserHandlePosition.Bottom, deletetemplate) { });
+diagram.UserHandles.Add(new Syncfusion.SfDiagram.XForms.UserHandle("delete", UserHandlePosition.Bottom, deleteTemplate) { });
 diagram.UserHandles.Add(new Syncfusion.SfDiagram.XForms.UserHandle("graphic path", UserHandlePosition.Left, graph) { });
-diagram.UserHandles.Add(new Syncfusion.SfDiagram.XForms.UserHandle("plus", UserHandlePosition.Right, plustemplate) { });
+diagram.UserHandles.Add(new Syncfusion.SfDiagram.XForms.UserHandle("plus", UserHandlePosition.Right, plusTemplate) { });
 
 {% endhighlight %}
 {% endtabs %}

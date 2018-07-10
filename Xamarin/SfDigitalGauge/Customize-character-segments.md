@@ -13,7 +13,7 @@ The characters of a digital gauge can be customized in terms of [`CharacterWidth
 
 ## customize character size
 
-The values of digital characters are scaled by altering the height and width of digital characters. It is achieved by setting the [`CharacterHeight`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfDigitalGauge~CharacterHeight.html) and [`CharacterWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfDigitalGauge~CharacterWidth.html) properties in the digital gauge.
+The values of digital characters are scaled by altering the height and width of digital characters. It is achieved by setting the [`CharacterHeight`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfDigitalGauge~CharacterHeight.html) and [`CharacterWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfDigitalGauge~CharacterWidth.html) properties in the digital gauge. Default value of `CharacterHeight` and `CharacterWidth` is 25.
 
 {% tabs %}
 
@@ -62,7 +62,7 @@ The values of digital characters are scaled by altering the height and width of 
 
 {% endtabs %}
 
-![](Customize character segments_images/Customize character segments_img1.png)
+![](Customize-character-segments_images/Customize-character-segments_img1.png)
 
 ## Setting character spacing
 
@@ -115,7 +115,7 @@ The values of digital characters are spaced by altering the space of digital cha
 
 {% endtabs %}
 
-![](Customize character segments_images/Customize character segments_img2.png)
+![](Customize-character-segments_images/Customize-character-segments_img2.png)
 
 ## Customize character segment stroke
 
@@ -166,7 +166,7 @@ The values of digital characters color can be customized using the [`CharacterSt
 
 {% endtabs %}
 
-![](Customize character segments_images/Customize character segments_img3.png)
+![](Customize-character-segments_images/Customize-character-segments_img3.png)
 
 ## Customize disabled segment
 
@@ -219,7 +219,7 @@ You can customize the color and opacity of disabled segments using the [`Disable
 
 {% endtabs %}
 
-![](Customize character segments_images/Customize character segments_img4.png)
+![](Customize-character-segments_images/Customize-character-segments_img4.png)
 
 ## Customize background color of digital gauge
 
@@ -274,4 +274,4 @@ You can customize the background color of the digital gauge using the [`Backgrou
 
 {% endtabs %}
 
-![](Customize character segments_images/Customize character segments_img5.png)
+![](Customize-character-segments_images/Customize-character-segments_img5.png)

@@ -26,11 +26,11 @@ graph.DrawArc(stroke, 0, 20, 40, 40, 180, 180);
 //Add template into an user handles collection
 var deletetemplate = new DataTemplate(() =>
 {
-var root = new StackLayout()
-{
+  var root = new StackLayout()
+  {
    Orientation = StackOrientation.Horizontal,
-BackgroundColor = Color.Transparent
-};
+   BackgroundColor = Color.Transparent
+  };
 Image image = new Image();
 image.WidthRequest = 25;
 image.HeightRequest = 25;
@@ -44,11 +44,11 @@ return root;
 
 var plustemplate = new DataTemplate(() =>
 {
-var root = new StackLayout()
-{
-Orientation = StackOrientation.Horizontal,
-BackgroundColor = Color.Transparent
-};
+  var root = new StackLayout()
+  {
+   Orientation = StackOrientation.Horizontal,
+   BackgroundColor = Color.Transparent
+  };
 Image image = new Image();
 image.WidthRequest = 25;
 image.HeightRequest = 25;

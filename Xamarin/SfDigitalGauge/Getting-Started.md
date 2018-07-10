@@ -226,7 +226,7 @@ namespace GaugeGettingStarted
 
 The following screenshot illustrates the result of the previous codes.
 
-![](Getting_Started_images/Getting_Started_img1.png)
+![](Getting-Started_images/Getting_Started_img1.png)
 
 
 You can find the complete getting started sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GaugeGettingStarted77259742).

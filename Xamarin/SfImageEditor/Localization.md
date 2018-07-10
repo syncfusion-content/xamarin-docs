@@ -113,7 +113,7 @@ You can localize the text from different platforms by adding equivalent localize
 
 * Localizing the text in UWP renderer.
 
-## Android
+### Android
 
 You can localize the text available in the control by adding equivalent localized string in the resource file.
 
@@ -127,7 +127,7 @@ In below screenshot we have localized the text  to French language.
 
 ![SfImageEditor](ImageEditor_images/androidresources.png)
 
-## iOS 
+### iOS 
 
 You can localize custom text available in the control by adding equivalent localized string in the resource file.
 
@@ -141,7 +141,7 @@ In below screenshot we have localized the text to French language.
 
 ![SfImageEditor](ImageEditor_images/ioslocalizable.png)
 
-## UWP 
+### UWP 
 
 You can localize custom text available in the control by adding equivalent localized string in the resource file.
 

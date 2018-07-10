@@ -603,3 +603,22 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 ## Password editor
 
 In the password editor, the [Entry](https://developer.xamarin.com/guides/xamarin-forms/user-interface/text/entry/) is loaded.
+
+{% highlight c# %}
+private string password;
+
+[Display(ShortName = "Transaction password", Prompt = "Enter password")]
+[DataType(DataType.Password)]
+public string Password
+{
+    get { return this.password; }
+    set
+    {
+        this.password = value;
+        RaisePropertyChanged("Password");
+        this.RaiseErrorChanged("Password");
+    }
+}
+{% endhighlight %}
+
+![](SfDataForm_images/PasswordEditor.jpg)

@@ -16,9 +16,6 @@ This node has default annotation. TextNode mode will add continuous text node. T
 <diagram:SfDiagram x:Name="diagram" DrawingMode="TextNode">
  </diagram:SfDiagram> 
 {% endhighlight %}
-{% endtabs %}
-
-{% tabs %}
 {% highlight c# %}
 diagram.DrawingMode = DrawingMode.TextNode;
 {% endhighlight %}
@@ -31,9 +28,6 @@ Connector mode add continuous orthogonal connectors on the diagram area. In this
 <diagram:SfDiagram x:Name="diagram" DrawingMode="Connector">
  </diagram:SfDiagram>
 {% endhighlight %}
-{% endtabs %}
-
-{% tabs %}
 {% highlight c# %}
 diagram.DrawingMode = DrawingMode.Connector;
 {% endhighlight %}

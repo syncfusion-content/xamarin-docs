@@ -21,9 +21,6 @@ The “ShowGrid” property in PageSettings will show or hide the gridlines. The
 </diagram:SfDiagram>
 
 {% endhighlight %}
-{% endtabs %}
-
-{% tabs %}
 {% highlight c# %}
 
 diagram.PageSettings.ShowGrid = true;
@@ -42,16 +39,13 @@ Grid cell size and gridline color can be modified using the “GridSize” and �
 </diagram:SfDiagram>
 
 {% endhighlight %}
-{% endtabs %}
-
-{% tabs %}
 {% highlight c# %}
 diagram.PageSettings.GridColor = Color.Pink;
 diagram.PageSettings.GridSize = 14;
 {% endhighlight %}
 {% endtabs %}
 
-## Snapping Gridlines
+## Snapping gridlines
 Nodes can be aligned and resized easily using gridlines by enabling the snap to grid. The following code example illustrates how to enable the snap to grid.
 {% tabs %}
 {% highlight xml %}
@@ -60,11 +54,7 @@ Nodes can be aligned and resized easily using gridlines by enabling the snap to 
 <diagram:PageSettings SnapToGrid=”true”/> 
 </diagram:SfDiagram.PageSettings> 
 </diagram:SfDiagram>
-
 {% endhighlight %}
-{% endtabs %}
-
-{% tabs %}
 {% highlight c# %}
 diagram.PageSettings.SnapToGrid = true;
 {% endhighlight %}

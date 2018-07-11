@@ -37,82 +37,82 @@ RootNode = node;
 diagram.AddNode(node);
 
 //Add child nodes for root node
-var ch1node =AddNode(100, 100, width, height, "Financial");
+var branch1 =AddNode(100, 100, width, height, "Financial");
 index = random.Next(5);
-AddNodeStyle(ch1node, FColor[index], SColor[index]);
-diagram.AddNode(ch1node);
+AddNodeStyle(branch1, FColor[index], SColor[index]);
+diagram.AddNode(branch1);
 
-var ch1childnode = AddNode(100, 100, width, height, "Investment");
-AddNodeStyle(ch1childnode, (ch1node.Style.Brush as SolidBrush).FillColor, (ch1node.Style.StrokeBrush as SolidBrush).FillColor);
-diagram.AddNode(ch1childnode);
+var branch1Child1 = AddNode(100, 100, width, height, "Investment");
+AddNodeStyle(branch1Child1, (branch1.Style.Brush as SolidBrush).FillColor, (branch1.Style.StrokeBrush as SolidBrush).FillColor);
+diagram.AddNode(branch1Child1);
 
-var ch2node = AddNode(100, 600, width, height, "Social");
+var branch2 = AddNode(100, 600, width, height, "Social");
 index = random.Next(5);
-AddNodeStyle(ch2node, FColor[index], SColor[index]);
-diagram.AddNode(ch2node);
+AddNodeStyle(branch2, FColor[index], SColor[index]);
+diagram.AddNode(branch2);
 
-var ch2childnode1 = AddNode(100, 100, width, height, "Friends");
-AddNodeStyle(ch2childnode1, (ch2node.Style.Brush as SolidBrush).FillColor, (ch2node.Style.StrokeBrush as SolidBrush).FillColor);
-diagram.AddNode(ch2childnode1);
+var branch2Child1 = AddNode(100, 100, width, height, "Friends");
+AddNodeStyle(branch2Child1, (branch2.Style.Brush as SolidBrush).FillColor, (branch2.Style.StrokeBrush as SolidBrush).FillColor);
+diagram.AddNode(branch2Child1);
 
-var ch2childnode2 = AddNode(100, 100, width, height, "Family");
-AddNodeStyle(ch2childnode2, (ch2node.Style.Brush as SolidBrush).FillColor, (ch2node.Style.StrokeBrush as SolidBrush).FillColor);
-diagram.AddNode(ch2childnode2);
+var branch2Child2 = AddNode(100, 100, width, height, "Family");
+AddNodeStyle(branch2Child2, (branch2.Style.Brush as SolidBrush).FillColor, (branch2.Style.StrokeBrush as SolidBrush).FillColor);
+diagram.AddNode(branch2Child2);
 
-var ch3node = AddNode(500, 100, width, height, "Personal");
+var branch3 = AddNode(500, 100, width, height, "Personal");
 index = random.Next(5);
-AddNodeStyle(ch3node, FColor[index], SColor[index]);
-diagram.AddNode(ch3node);
+AddNodeStyle(branch3, FColor[index], SColor[index]);
+diagram.AddNode(branch3);
 
-var ch3childnode1 = AddNode(500, 100, width, height, "Sports");
-AddNodeStyle(ch3childnode1, (ch3node.Style.Brush as SolidBrush).FillColor, (ch3node.Style.StrokeBrush as SolidBrush).FillColor);
-diagram.AddNode(ch3childnode1);
+var branch3Child1 = AddNode(500, 100, width, height, "Sports");
+AddNodeStyle(branch3Child1, (branch3.Style.Brush as SolidBrush).FillColor, (branch3.Style.StrokeBrush as SolidBrush).FillColor);
+diagram.AddNode(branch3Child1);
 
-var ch3childnode2 = AddNode(500, 100, width, height, "Food");
-AddNodeStyle(ch3childnode2, (ch3node.Style.Brush as SolidBrush).FillColor, (ch3node.Style.StrokeBrush as SolidBrush).FillColor);
-diagram.AddNode(ch3childnode2);
+var branch3Child2 = AddNode(500, 100, width, height, "Food");
+AddNodeStyle(branch3Child2, (branch3.Style.Brush as SolidBrush).FillColor, (branch3.Style.StrokeBrush as SolidBrush).FillColor);
+diagram.AddNode(branch3Child2);
 
-var ch4node = AddNode(500, 600, width, height, "Work");
+var branch4 = AddNode(500, 600, width, height, "Work");
 index = random.Next(5);
-AddNodeStyle(ch4node, FColor[index], SColor[index]);
-diagram.AddNode(ch4node);
+AddNodeStyle(branch4, FColor[index], SColor[index]);
+diagram.AddNode(branch4);
 
-var ch4childnode1 = AddNode(500, 100, width, height, "Project");
-AddNodeStyle(ch4childnode1, (ch4node.Style.Brush as SolidBrush).FillColor, (ch4node.Style.StrokeBrush as SolidBrush).FillColor);
-diagram.AddNode(ch4childnode1);
+var branch4Child1 = AddNode(500, 100, width, height, "Project");
+AddNodeStyle(branch4Child1, (branch4.Style.Brush as SolidBrush).FillColor, (branch4.Style.StrokeBrush as SolidBrush).FillColor);
+diagram.AddNode(branch4Child1);
 
-var ch4childnode2 = AddNode(500, 100, width, height, "Career");
-AddNodeStyle(ch4childnode2, (ch4node.Style.Brush as SolidBrush).FillColor, (ch4node.Style.StrokeBrush as SolidBrush).FillColor);
-diagram.AddNode(ch4childnode2);
+var branch4Child2 = AddNode(500, 100, width, height, "Career");
+AddNodeStyle(branch4Child2, (branch4.Style.Brush as SolidBrush).FillColor, (branch4.Style.StrokeBrush as SolidBrush).FillColor);
+diagram.AddNode(branch4Child2);
 
 //Add connector 
-diagram.AddConnector(AddConnector(node, ch1node));
-diagram.AddConnector(AddConnector(node, ch2node));
-diagram.AddConnector(AddConnector(node, ch3node));
-diagram.AddConnector(AddConnector(node, ch4node));
-diagram.AddConnector(AddConnector(ch1node, ch1childnode));
-diagram.AddConnector(AddConnector(ch2node, ch2childnode1));
-diagram.AddConnector(AddConnector(ch2node, ch2childnode2));
-diagram.AddConnector(AddConnector(ch3node, ch3childnode1));
-diagram.AddConnector(AddConnector(ch3node, ch3childnode2));
-diagram.AddConnector(AddConnector(ch4node, ch4childnode1));
-diagram.AddConnector(AddConnector(ch4node, ch4childnode2));
+diagram.AddConnector(AddConnector(node, branch1));
+diagram.AddConnector(AddConnector(node, branch2));
+diagram.AddConnector(AddConnector(node, branch3));
+diagram.AddConnector(AddConnector(node, branch4));
+diagram.AddConnector(AddConnector(branch1, branch1Child1));
+diagram.AddConnector(AddConnector(branch2, branch2Child1));
+diagram.AddConnector(AddConnector(branch2, branch2Child2));
+diagram.AddConnector(AddConnector(branch3, branch3Child1));
+diagram.AddConnector(AddConnector(branch3, branch3Child2));
+diagram.AddConnector(AddConnector(branch4, branch4Child1));
+diagram.AddConnector(AddConnector(branch4, branch4Child2));
 
 //Add connector method 
-private Connector AddConnector(Node node, Node ch1node)
+private Connector AddConnector(Node node, Node BranchNode)
 {
-    var c1 = new Connector();
-    c1.SourceNode = node;
-    c1.TargetNode = ch1node;
-    c1.Style.StrokeBrush = new SolidBrush((c1.TargetNode.Style.StrokeBrush as SolidBrush).FillColor);
-    c1.Style.StrokeStyle = StrokeStyle.Dashed;
-    c1.Style.StrokeWidth = 3;
+    var connector = new Connector();
+    connector.SourceNode = node;
+    connector.TargetNode = BranchNode;
+    connector.Style.StrokeBrush = new SolidBrush((connector.TargetNode.Style.StrokeBrush as SolidBrush).FillColor);
+    connector.Style.StrokeStyle = StrokeStyle.Dashed;
+    connector.Style.StrokeWidth = 3;
 if (Device.RuntimePlatform == Device.Android)
-    c1.TargetDecoratorStyle.Width = c1.TargetDecoratorStyle.Width * App.factor;
-    c1.TargetDecoratorStyle.Fill = (c1.TargetNode.Style.StrokeBrush as SolidBrush).FillColor;
-    c1.TargetDecoratorStyle.Stroke = (c1.TargetNode.Style.StrokeBrush as SolidBrush).FillColor;
-    c1.SegmentType = SegmentType.CurveSegment;
-     return c1;
+    connector.TargetDecoratorStyle.Width = connector.TargetDecoratorStyle.Width * App.factor;
+    connector.TargetDecoratorStyle.Fill = (connector.TargetNode.Style.StrokeBrush as SolidBrush).FillColor;
+    connector.TargetDecoratorStyle.Stroke = (connector.TargetNode.Style.StrokeBrush as SolidBrush).FillColor;
+    connector.SegmentType = SegmentType.CurveSegment;
+     return connector;
 }
 
 //Add node style method

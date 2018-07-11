@@ -37,7 +37,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {% endtabs %}
 
 ### Additional step for UWP
-This step is required only if the application is deployed in Release mode with .NET native tool chain enabled.It is for resolving the known Framework issue “Custom controls not rendering in Release mode” in UWP platform. Initializing the `SfCheckBox` assembly at `OnLaunched` overridden method of the `App` class in UWP project is the suggested work around, as demonstrated in the following code example.
+This step is required only if the application is deployed in Release mode with .NET native tool chain enabled. It is for resolving the known Framework issue “Custom controls not rendering in Release mode” in UWP platform. Initializing the `SfCheckBox` assembly at `OnLaunched` overridden method of the `App` class in UWP project is the suggested work around, as demonstrated in the following code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -184,7 +184,7 @@ null
 </tr>
 </table>
 
-N>For the check box, to report the indeterminate state,set the `IsThreeState` property to true.
+N>For the check box, to report the indeterminate state, set the `IsThreeState` property to true.
 
 Check box can be used as a single or as a group. A single check box mostly used for a binary yes/no choice, such as "Remember me?", login scenario, or a terms of service agreement.
 
@@ -323,7 +323,6 @@ private void CheckBox_StateChanged(object sender, StateChangedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](Images/Inter1.png)
-![](Images/Inter2.png)
+![](Images/Inter1.jpg) ![](Images/Inter2.jpg)
 
 This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Forms/Samples/CheckBox_IndeterminateState.zip ).

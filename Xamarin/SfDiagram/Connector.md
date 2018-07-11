@@ -25,8 +25,8 @@ Connector can be created by defining the start and end points.
 // creating connector instance
 var connector1 = new Connector() 
 { 
-SourcePoint=new Point(100,100),
-TargetPoint=new Point(300,300) 
+  SourcePoint = new Point(100,100),
+  TargetPoint = new Point(300,300) 
 };
 diagram.AddConnector(connector1);
 {% endhighlight %}
@@ -44,8 +44,8 @@ diagram.AddNode(node2);
 // creating connector instance and connecting nodes with it
 var connector1 = new Connector()
 { 
-SourceNode = node1,
-TargetNode = node2
+  SourceNode = node1,
+  TargetNode = node2
 };
 diagram.AddConnector(connector1);
 {% endhighlight %}
@@ -74,11 +74,11 @@ diagram.AddNode(node2);
 //creating and connecting the ports with connector
 var connector1 = new Connector() 
 { 
-SourceNode = node1, 
-TargetNode = node2,
-SourcePort=node1.Ports[0], 
-TargetPort=node2.Ports[0],
-SegmentType = SegmentType.OrthoSegment
+  SourceNode = node1, 
+  TargetNode = node2,
+  SourcePort=node1.Ports[0], 
+  TargetPort=node2.Ports[0],
+  SegmentType = SegmentType.OrthoSegment
 };
 diagram.AddConnector(connector1);
 {% endhighlight %}
@@ -104,9 +104,9 @@ Straight segment allows to create a straight line. To create a straight line, yo
 // creating connector instance with define its segment type
 var connector1 = new Connector() 
 { 
-SourcePoint=new Point(100,100),
-TargetPoint=new Point(300,300), 
-SegmentType= SegmentType.StraightSegment
+  SourcePoint = new Point(100,100), 
+  TargetPoint = new Point(300,300), 
+  SegmentType = SegmentType.StraightSegment
 };
 diagram.AddConnector(connector1);
 {% endhighlight %}
@@ -130,9 +130,9 @@ Set the segment as OrthogonalSegment to create the default orthogonal segment. T
 // creating connector instance with define its segment type
 var connector1 = new Connector() 
 { 
-SourcePoint=new Point(100,100),
-TargetPoint=new Point(300,300), 
-SegmentType= SegmentType.OrthoSegment
+  SourcePoint = new Point(100,100),
+  TargetPoint = new Point(300,300), 
+  SegmentType = SegmentType.OrthoSegment
 };
 diagram.AddConnector(connector1);
 {% endhighlight %}
@@ -145,27 +145,13 @@ Curve segments are used to create links between two points, nodes or ports with 
 {% highlight c# %}
 // creating connector instance with define its segment type
 Connector connector = new Connector(this);
-connector.SourcePoint = new System.Drawing.PointF(100, 100);
-connector.TargetPoint = new System.Drawing.PointF(300, 300);
+connector.SourcePoint = new Point(100, 100);
+connector.TargetPoint = new Point(300, 300);
 connector.SegmentType = SegmentType.CurveSegment;
 diagram.AddConnector(connector);
 {% endhighlight %}
 {% endtabs %}
 ![](Connector_images/Connector_img5.jpeg)
-
-## Bezier
-Bezier curve has cubic curve segments that are configurable with the control points. The “SourceControlPoint” and “TargetControlPoint” of bezier segment allow you to modify the control points. The following code example illustrates how to create and modify a bezier curve segment via control points.
-{% tabs %}
-{% highlight c# %}
-// creating connector instance with define its segment type
-Connector connector = new Connector(this);
-connector.SourcePoint = new System.Drawing.PointF(100, 100);
-connector.TargetPoint = new System.Drawing.PointF(300, 300);
-connector.SegmentType = SegmentType.BezierSegment;
-diagram.AddConnector(connector);
-{% endhighlight %}
-{% endtabs %}
-![](Connector_images/Connector_img6.jpeg)
 
 ## Decorator
 Start and end points of a Connector can be decorated with some customizable shapes like arrows, circles, diamond and square. You can decorate the connection end points with the SourceDecorator and TargetDecorator properties of Connector.
@@ -184,11 +170,11 @@ The SourceDecoratorStyle and TargetDecoratorStyle properties allows to define t
 //creating connector instance with decorator-->
 var connector1 = new Connector()
 { 
-SourcePoint = new Point(100,100),
-TargetPoint = new Point(300,300),
-SourceDecoratorType = DecoratorType.Circle,
-TargetDecoratorType = DecoratorType.Diamond,
-SegmentType= SegmentType.StraightSegment
+  SourcePoint = new Point(100,100),
+  TargetPoint = new Point(300,300),
+  SourceDecoratorType = DecoratorType.Circle,
+  TargetDecoratorType = DecoratorType.Diamond,
+  SegmentType= SegmentType.StraightSegment
 };
 diagram.AddConnector(connector1);
 {% endhighlight %}
@@ -204,8 +190,8 @@ The following code example illustrates how to remove a connector from connection
 //creating connector instance
 var connector1 = new Connector()
 { 
-SourcePoint=new Point(100,100),
-TargetPoint=new Point(300,300)
+  SourcePoint = new Point(100,100),
+  TargetPoint = new Point(300,300)
 };
 //adding connector to the diagram
 diagram.AddConnector(connector1);
@@ -220,8 +206,8 @@ The following code example illustrates how to remove a connector from connection
 //creating connector instance
 var connector1 = new Connector()
 {
-SourcePoint=new Point(100,100),
-TargetPoint=new Point(300,300)
+  SourcePoint = new Point(100,100),
+  TargetPoint = new Point(300,300)
 };
 //adding connector to the diagram
 diagram.AddConnector(connector1);
@@ -253,16 +239,16 @@ The following code example illustrates how to customize the Connector appearance
 // creating connector instance
 var connector1 = new Connector()
 {
-SourcePoint=new Point(100,100),
-TargetPoint= new Point(300,300),
-SegmentType= SegmentType.StraightSegment
+  SourcePoint = new Point(100,100),
+  TargetPoint = new Point(300,300),
+  SegmentType = SegmentType.StraightSegment
 };
 //defining connector styles
 connector1.Style = new Syncfusion.SfDiagram.XForms.Style()
 { 
-StrokeBrush = new SolidBrush(Color.Gray),
-StrokeStyle = StrokeStyle.Dashed,
-StrokeWidth = 4
+  StrokeBrush = new SolidBrush(Color.Gray),
+  StrokeStyle = StrokeStyle.Dashed,
+  StrokeWidth = 4
 };
 diagram.AddConnector(connector1);
 {% endhighlight %}
@@ -293,11 +279,11 @@ The following code example illustrates how to customize the appearance of the de
 // creating connector instance with decorator
 var connector1 = new Connector()
 {
-SourcePoint=new Point(100,100),
-TargetPoint= new Point(300,300),
-SegmentType= SegmentType.StraightSegment,
-SourceDecoratorType = DecoratorType.Circle,
-TargetDecoratorType = DecoratorType.Diamond
+  SourcePoint=new Point(100,100),
+  TargetPoint= new Point(300,300),
+  SegmentType= SegmentType.StraightSegment,
+  SourceDecoratorType = DecoratorType.Circle,
+  TargetDecoratorType = DecoratorType.Diamond
 };
 //defining decorator style for a connector
 connector1.TargetDecoratorStyle = new DecoratorStyle()
@@ -310,10 +296,10 @@ Width = 12
 // defining decorator style for a connector
 connector1.SourceDecoratorStyle = new DecoratorStyle()
 {
-Fill = Color.Green,
-Stroke = Color.Gray,
-StrokeThickness = 5,
-Width = 12
+  Fill = Color.Green,
+  Stroke = Color.Gray,
+  StrokeThickness = 5,
+  Width = 12
 };
 diagram.AddConnector(connector1);
 {% endhighlight %}

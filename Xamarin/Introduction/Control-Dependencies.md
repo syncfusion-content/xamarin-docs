@@ -909,15 +909,15 @@ Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.macOS.dll<br/>Syncfusion.L
 </tr>
 <tr>
 <td>Android</td>
-<td>Syncfusion.SfPullToRefresh.XForms.dll<br/>Syncfusion.SfPullToRefresh.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/></td>
+<td>Syncfusion.Core.XForms.dll<br/>Syncfusion.SfPullToRefresh.XForms.Android.dll<br/>Syncfusion.SfPullToRefresh.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 <tr>
 <td>iOS</td>
-<td>Syncfusion.SfPullToRefresh.XForms.dll<br/>Syncfusion.SfPullToRefresh.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/></td>
+<td>Syncfusion.Core.XForms.dll<br/>Syncfusion.SfPullToRefresh.XForms.dll<br/>Syncfusion.SfPullToRefresh.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 <tr>
 <td>UWP</td>
-<td>Syncfusion.SfPullToRefresh.XForms.dll<br/>Syncfusion.SfPullToRefresh.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/></td>
+<td>Syncfusion.Core.XForms.dll<br/>Syncfusion.SfPullToRefresh.XForms.dll<br/>Syncfusion.SfPullToRefresh.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 </table>
 

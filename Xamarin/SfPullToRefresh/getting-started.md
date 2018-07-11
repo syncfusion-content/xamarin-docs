@@ -43,7 +43,7 @@ The following NuGet package should be installed to use the SfDataGrid control in
 </table>
 
 Refer to the following screenshot in which the Syncfusion.Xamarin.SfPullToRefresh is highlighted.
-![](SfDataGrid_images/PullToRefresh_Forms_NugetInstall.png)
+![](SfPullToRefresh_images/PullToRefresh_Forms_NugetInstall.png)
 
 ### SfPullToRefresh for Xamarin.Forms
 

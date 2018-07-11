@@ -205,6 +205,9 @@ If the current cell is in edit mode, reverts the changes done in the current cel
 <th>
 Key combinations
 </th>
+<th>
+Description
+</th>
 </tr>
 <tr>
 <td>

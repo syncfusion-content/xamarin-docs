@@ -55,7 +55,7 @@ The following table lists the platforms supported by our Xamarin.Forms controls.
             <br/>
         </td>
         <td>
-            SfPdfViewer,SfCheckBox
+            SfPdfViewer, SfCheckBox
             <br/>
             <br/>
         </td>

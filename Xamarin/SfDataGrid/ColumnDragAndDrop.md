@@ -142,7 +142,7 @@ private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventA
 {
     //e.From returns the index of the dragged column.
     //e.To returns the index of the current column.
-      if ((e.From > 0 && e.To < 2) && e.Reason == QueryRowDraggingReason.DragStarted)
+      if ((e.From >= 0 && e.From < 2) && e.Reason == QueryRowDraggingReason.DragStarted)
         e.Cancel = true;
 }
 
@@ -162,7 +162,7 @@ private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventA
 {
     //e.From returns the index of the dragged column.
     //e.To returns the index of the current column.
-      if ((e.From > 0 && e.To < 2) && e.Reason == QueryRowDraggingReason.DragEnded)
+      if ((e.From >= 0 && e.From < 2) && e.Reason == QueryRowDraggingReason.DragEnded)
         e.Cancel = true;
 }
 

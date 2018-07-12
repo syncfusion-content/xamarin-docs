@@ -263,7 +263,7 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 {
      //e.From returns the index of the dragged frozen row.
      //e.To returns the index of the current row.
-      if    (e.From > sfgrid.GetHeaderIndex() && e.From <= sfgrid.FrozenRowsCount && e.Reason == QueryRowDraggingReason.DragStarted)
+      if    (e.From > sfGrid.GetHeaderIndex() && e.From <= sfGrid.FrozenRowsCount && e.Reason == QueryRowDraggingReason.DragStarted)
         e.Cancel = true;
 }
 
@@ -283,7 +283,7 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 {
       //e.From returns the index of the dragged frozen row.
       //e.To returns the index of the current row.
-      if (e.From > sfgrid.GetHeaderIndex() && e.From <= sfgrid.FrozenRowsCount && e.Reason == QueryRowDraggingReason.DragEnded)
+      if (e.From > sfGrid.GetHeaderIndex() && e.From <= sfGrid.FrozenRowsCount && e.Reason == QueryRowDraggingReason.DragEnded)
         e.Cancel = true;
 }
 

@@ -10,7 +10,7 @@ keywords: button, SfCheckBox, CheckBox
 ---
 
 # Overview
-The check box is a selection control that allows users to select one or more options from a set. The three states of check box are checked, unchecked, and indeterminate.
+The check box is a selection control that allows users to select one or more options from a set. The three states of check box are checked, unchecked and indeterminate.
 
 ##  Key features
 

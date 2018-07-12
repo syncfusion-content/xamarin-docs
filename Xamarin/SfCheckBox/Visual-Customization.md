@@ -29,7 +29,7 @@ checkBox.CornerRadius = 5.0f;
 ![](Images/Radius.png)
 
 ## Customizing state color
-The default state colors can be customized using the `CheckedColor` and `UncheckedColor `properties. The checked/indeterminate state color is updated to the `CheckedColor` property value when the state is changed to the checked/indeterminate.The unchecked state color is updated to `UncheckedColor` property value when the state is changed to unchecked. 
+The default state colors can be customized using the `CheckedColor` and `UncheckedColor` properties. The checked/indeterminate state color is updated to the `CheckedColor` property value when the state is changed to the checked/indeterminate.The unchecked state color is updated to `UncheckedColor` property value when the state is changed to unchecked. 
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfCheckBox x:Name="check" Text="CheckBox" IsChecked="True" CheckedColor="Green"/>

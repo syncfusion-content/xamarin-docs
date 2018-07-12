@@ -78,8 +78,6 @@ Display summary information in a row by setting the [GridGroupSummaryRow.ShowSum
             <sfGrid:GridSummaryColumn Name="TotalSalary"
                                       Format="{}{Sum:c}"
                                       MappingName="Salary"
-                                      SummaryType="DoubleAggregate" />
-            <sfGrid:GridSummaryColumn Name="ProductCount"
                                       Format="{}{Count}"
                                       MappingName="Salary"
                                       SummaryType="CountAggregate" />

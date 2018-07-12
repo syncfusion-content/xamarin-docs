@@ -40,7 +40,6 @@ The following NuGet package should be installed to use the SfDataGrid control in
 </tr>
 </table>
 
-
 ### Adding SfDataGrid Reference
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfDataGrid to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfDataGrid](https://www.nuget.org/packages/Syncfusion.Xamarin.SfDataGrid/), and then install it.

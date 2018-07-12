@@ -523,9 +523,39 @@ chart.PrimaryAxis = new DateTimeAxis() { RangePadding = DateTimeRangePadding.Add
 
 ![](axis_images/axis_img16.png)
 
-## Logarithmic Axis
+## Date-time category axis
 
-Logarithmic axis uses logarithmic scale and displays numbers as axis labels.
+The [`DateTimeCategoryAxis`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeCategoryAxis.html) is a unique type of axis used mainly with financial series. Like CategoryAxis, all the data points are plotted with equal spaces by removing space for missing dates. Intervals and ranges for the axis are calculated similar to DateTimeAxis. There will be no visual gaps between points even when the difference between two points is more than a year. The following APIs are used to customize the interval of DateTimeCategoryAxis.
+
+• [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeCategoryAxis~Interval.html) - Gets or sets the double value that represents the interval between the labels.
+• [`IntervalType`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeCategoryAxis~IntervalType.html) - Gets or sets the DateTimeIntervalType that represents the type of the interval to be displayed.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+    <chart:DateTimeCategoryAxis Interval="1" IntervalType="Months" />
+</chart:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+DateTimeCategoryAxis xAxis = new DateTimeCategoryAxis();
+xAxis.Interval = 1;
+xAxis.IntervalType = DateTimeIntervalType.Months;
+chart.PrimaryAxis = xAxis;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](axis_images/DateTimeCategoryAxis.png)
+
+## Logarithmic axis
+
+Logarithmic axis uses logarithmic scale and displays numbers as axis labels.
 
 {% tabs %} 
 

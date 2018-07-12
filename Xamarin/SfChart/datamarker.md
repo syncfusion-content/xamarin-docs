@@ -518,7 +518,7 @@ The [`DataMarkerLabelCreated`](https://help.syncfusion.com/cr/cref_files/xamarin
 * [`YPosition`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataMarkerLabel~YPosition.html) – Gets the y-position of data marker label.
 * [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataMarkerLabel~LabelStyle.html) – Gets or sets the label style to customize the appearance of individual data marker label.
 * [`MarkerWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataMarkerLabel~MarkerWidth.html) – Gets or sets the marker width.
-*  [`MarkerHeight`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataMarkerLabel~MarkerHeight.html) – Gets or sets the marker height.
+* [`MarkerHeight`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataMarkerLabel~MarkerHeight.html) – Gets or sets the marker height.
 * [`MarkerBorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataMarkerLabel~MarkerBorderWidth.html) – Gets or sets the border width of marker symbol.
 * [`MarkerBorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataMarkerLabel~MarkerBorderColor.html) – Gets or sets the border color of marker symbol.
 * [`MarkerColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataMarkerLabel~MarkerColor.html) – Gets or sets the marker color.

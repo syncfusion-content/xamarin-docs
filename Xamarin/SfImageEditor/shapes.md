@@ -7,50 +7,54 @@ control : ImageEditor
 documentation : ug
 ---
 
-# Shapes
+## Shapes
 
-You can annotate any path on an image by using free hand drawing, and adding shapes such as rectangle, circle, etc., over the image. The shapes can be added in following two ways:
+You can annotate any shapes over an image with the help of `AddShape` method. The list of available shapes are,
 
-* From Toolbar
-* Using Code
+* Circle
+* Rectangle
+* Arrow
+* Path
 
-## How to add a shape (Rectangle, Circle, Arrow, etc.) over an image
+### Selecting shape type
 
-### From Toolbar
+`ShapeType` is an enum type with values `Rectangle`, `Circle`, `Arrow`, and `Path`. You can give the desired shape type as an argument to the AddShape method.
 
-You can add the shapes from the toolbar by clicking the `Shapes` icon in the toolbar below the image. When the `Shapes` icon is tapped, a sub toolbar will appear on top of that toolbar. From that sub toolbar, you can choose the shape(`Rectangle`, `Circle`, and `Arrow`). Click the desired shape, and the shape will be added on the center of the image. The shapes has the handles on each edges, which helps you to resize it to the desired size, and  move it to the desired position by dragging the shape.
+{% highlight C# %}
 
-#### Change Color and Fill options of the shape
+      editor.AddShape(ShapeType.Circle);
 
-When the shape is clicked, the current toolbar menu with the shapes list will be hidden, and new menu with the options such as `Stroke`, `Fill`, and `Colors` will appear. 
+{% endhighlight %}
 
-If the selected shape is in `Stroke` mode, then the menu will appear with `StrokeThickness`, `Color` and `Opacity` options so that you can customize the selected shape appearance with these options. 
+## Customize shapes with pen settings
 
-If the selected shape is in `Fill` mode, then the menu will appear with `FillColor` and `Opacity` options. So, you can customize the selected shape appearance with these options. 
+You can customize the appearance of each shape with the help of `PenSettings` properties.
 
-I> By default, the shapes has `Red` stroke with `Transparent` fill.
+## PenSettings
 
-### Using Code
+PenSettings consist of the following properties,
 
-The `AddShape` method in the SfImageEditor control is used to add the shapes based on the `ShapeType` and `PenSettings`.
+[`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.PenSettings~Color.html) - You can specify desired stroke color to the shape.
 
-#### ShapeType
+[`FillColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.PenSettings~FillColor.html) - You can specify desired fill color to the shape.
 
-ShapeType is an enum type with values `Rectangle`, `Circle`, `Arrow`, and `Path`.
+[`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.PenSettings~StrokeWidth.html) - This allows to denote the stroke width for the desired shape.
 
-#### PenSettings
+[`Mode`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.PenSettings~Mode.html) - Enum value which decides whether the shape color mode is `Fill` or `Stroke`
 
-PenSettings is defined to set the values for `StrokeColor`, `FillColor`, and `StrokeWidth`.
+[`Opacity`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.PenSettings~Opacity.html) - Denotes the opacity for the desired shapes.
 
-N> `FillColor` property is applicable only if the ShapeType is `Rectangle` or `Circle`, and `StrokeWidth` is used only for `Path`.
+[`Bounds`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.PenSettings~Bounds.html) - This property allows you to set frame for the newly added shapes(rectangle and circle) and you can position the shapes wherever you want on the image. The value of the shape frame should be ranges from 0 to 100.
 
-   * To add a rectangle, circle, or arrow over the image, specify the ShapeType as well as the desired PenSettings as shown in the following code snippet.
+N> `FillColor` property is applicable only if the ShapeType is `Rectangle` or `Circle`.
+
+   * To add a rectangle, circle, or arrow over an image, specify the ShapeType as well as the desired PenSettings as shown in the following code snippet.
 
 {% tabs %}
 
 {% highlight C# %}
 
-      editor.AddShape(ShapeType.Circle, new PenSettings() {Color = Color.Red});
+      editor.AddShape(ShapeType.Circle, new PenSettings() {Color = Color.Red, Mode= Mode.Stroke, Opacity=1f, Bounds = new Rectangle(20,20,35,35)});
 
 {% endhighlight %}
 
@@ -70,34 +74,11 @@ N> `FillColor` property is applicable only if the ShapeType is `Rectangle` or `C
 
 {% endtabs %}
 
-#### Bounds
-
-`Bounds` property allows you to set frame for the newly added shapes(rectangle and circle) and you can position the shapes wherever you want on the image. The value of the shapes frame should be in percentage(maximum - 100 & minimum - 0).
-
-{% highlight C# %}
-
-  edit.AddShape(ShapeType.Circle, new PenSettings() { Bounds = new Rectangle(20,20,35,35) });
-
-{% endhighlight %}
-
 ![SfImageEditor](ImageEditor_images/path.gif)
 
-## How to delete a shape or text from the view
+## Deleting the shape or text from the view
 
-You can delete a selected shape or text from the view in the following two ways:
-
-* From Toolbar
-* Using Code
-
-N> You cannot delete Path.
-
-### From Toolbar
-
-When a shape is selected, a circular floating button with `Delete` icon will appear above the bottom toolbar. Clicking the button will delete the selected shape from the view.
-
-### Using Code
-
-You can delete the selected shape programmatically by using the `Delete` method as shown in the following code snippet.
+You can delete the selected shape by using the `Delete` method as shown in the following code snippet.
 
 
 {% tabs %}
@@ -109,3 +90,7 @@ You can delete the selected shape programmatically by using the `Delete` method 
 {% endhighlight %}
 
 {% endtabs %}
+
+N>You cannot delete Path.
+
+

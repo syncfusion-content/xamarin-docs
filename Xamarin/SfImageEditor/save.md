@@ -7,28 +7,17 @@ control : ImageEditor
 documentation : ug
 ---
 
-# Save
+## Save
 
-You can save the image along with the changes to the device. Saving the image can be done in following two ways:
+You can save the image along with the current edits to the device with the help of `Save` method.
 
-* From Toolbar
-* Using Code
-
-## From Toolbar
-
-You can save the image from the toolbar by clicking the `Save` button in the top toolbar. The saved image will be added in default pictures folder of the device. 
-
-Saved image location:
+The default image saved location in each platform shown below,
 
 UWP :
 Saved image will be added in default pictures library “C:\Users\your name\Pictures\Saved Pictures” .
 
 Android:
 Saved image will be added in default pictures library “Internal storage/Pictures/” .
-
-## Using Code
-
-Programmatically, you can make use of the `Save` method in the SfImageEditor control to save the image.
 
 {% tabs %}
 
@@ -40,50 +29,76 @@ Programmatically, you can make use of the `Save` method in the SfImageEditor con
 
 {% endtabs %}
 
-## Events
+## Save Events
 
-The SfImageEditor has events when performing Save operation namely, ImageSaving and ImageSaved events.
+The SfImageEditor has events when performing save operation namely `ImageSaving` and `ImageSaved` events.
 
 ### ImageSaving
 
-This event occurs before saving the image. You can control the save functionality by using the Cancel argument.
+This event occurs before saving the image. You can control the save functionality by using the `Cancel` argument.
 
-{% tabs %}
+* Cancel
+It restricts saving image to default location, when set `Cancel` value to `true` 
 
 {% highlight C# %}
 
-    args.Cancel = true;
+          public MainPage()
+            {               
+                            . . .
+
+                  editor.ImageSaving += editor_ImageSaving;
+
+                            . . .
+            }
+
+        private void editor_ImageSaving(object sender, ImageSavingEventArgs args)
+            {
+                args.Cancel = true;  
+            }
+
 
 {% endhighlight %}
 
-{% endtabs %}
+* Stream
+You can get current image edits as stream with the help of this argument.
+
+{% highlight C# %}
+         
+        private void editor_ImageSaving(object sender, ImageSavingEventArgs args)
+            {
+                var stream = args.Stream;
+            }
+
+
+{% endhighlight %}
 
 ### ImageSaved
 
 This event occurs after the image has been saved. To get the location of the saved image, use the Location argument as shown below.
 
-{% tabs %}
-
 {% highlight C# %}
 
-    string savedLocation = args.Location;
+          public MainPage()
+            {               
+                            . . .
+
+                 editor.ImageSaved += editor_ImageSaved;
+
+                            . . .
+            }
+
+         private void editor_ImageSaved(object sender, ImageSavedEventArgs args)
+            {
+                 string savedLocation = args.Location; // You can get the saved image location with the help of this argument
+            }
+
 
 {% endhighlight %}
 
-{% endtabs %}
 
-# Reset
+## Reset
 
-You can reset the changes and load the initial loaded image.
-
-### From Toolbar
-
-To reset the changes from the toolbar, click the `Reset` button in the top toolbar. The changes will be reset, and the initial loaded image will appear.
-
-### Using Code
-
-The `Reset` method resets the complete set of changes made in the image, and resets the original loaded image to the Image Editor control.
-
+The `Reset` method resets the complete set of changes made in the image and resets the image to original loaded image.
 
 {% tabs %}
 
@@ -95,29 +110,56 @@ The `Reset` method resets the complete set of changes made in the image, and res
 
 {% endtabs %}
 
-## Events
+## Reset Events
 
-The SfImageEditor has events when performing Reset operation namely, BeginReset and EndReset.
+The SfImageEditor has events when performing reset operation namely `BeginReset` and `EndReset`.
 
 ### BeginReset
 
 This event occurs before resetting the changes made in an image. You can control the reset functionality by using the Cancel argument.
 
-{% tabs %}
 
 {% highlight C# %}
 
-     args.Cancel = true;
+        public MainPage()
+            {               
+                            . . .
+
+                         editor.BeginReset += editor_BeginReset;
+
+                            . . .
+            }
+
+        private void editor_BeginReset(object sender, BeginResetEventArgs args)
+            {
+                args.Cancel = true; //It restricts resetting image to initial loaded image.
+            }
 
 {% endhighlight %}
-
-{% endtabs %}
 
 ### EndReset
 
 This event occurs when reset has been completed.
 
-### ImageLoaded Event
+{% highlight C# %}
+
+        public MainPage()
+            {               
+                            . . .
+
+                             editor.EndReset += editor_EndReset;
+
+                            . . .
+            }
+
+       private void editor_EndReset(object sender, EndResetEventArgs args)
+        {
+             Navigation.PushModalAsync(new NewImageEditorPage()); //Navigates to new page after completing the reset action.
+        }
+
+{% endhighlight %}
+
+## ImageLoaded Event
 
 This event will be triggered once the image is loaded. By using this event we can add any shapes, text or crop over an image while initially loading the image. 
 
@@ -140,7 +182,7 @@ This event will be triggered once the image is loaded. By using this event we ca
 {% endhighlight %}
 
 
-### ItemSelected Event
+## ItemSelected Event
 
 This event will be triggered whenever you tap the image editor selected shapes (Rectangle, Circle and Arrow) and Text. You can get the settings of each selected shapes and text with the help of ItemSelected argument. Also we can change the settings which will affect the selected shape.
 

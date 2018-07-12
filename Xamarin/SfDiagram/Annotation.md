@@ -115,17 +115,15 @@ User can able to customize the annotation using properties. The following code i
         </control:SfDiagram.Connectors>
 
 {% endhighlight %}
-{% endtabs %}
-{% tabs %}
 {% highlight c# %}
 // Annotation customization for node 
 Node node1 = new Node(100,300,100,100);
 var label = new Annotation()
 {
-Content = "Label",
-FontFamily = "Arial",
-FontSize = 14,
-TextBrush = new SolidBrush(Color.Red)
+  Content = "Label",
+  FontFamily = "Arial",
+  FontSize = 14,
+  TextBrush = new SolidBrush(Color.Red)
 } ;
 node1.Annotations.Add(label);
 diagram.AddNode(node1);
@@ -136,10 +134,10 @@ Connector1.SourcePoint = new Point(100, 100);
 Connector1.TargetPoint = new Point(200, 200);
 var label = new Annotation()	
 {
-Content = "Label",
-FontFamily = "Arial",
-FontSize = 14,
-TextBrush = new SolidBrush(Color.Red)
+  Content = "Label",
+  FontFamily = "Arial",
+  FontSize = 14,
+  TextBrush = new SolidBrush(Color.Red)
 } ;
 Connector1.Annotations.Add(label);
 diagram.AddConnector(Connector1);

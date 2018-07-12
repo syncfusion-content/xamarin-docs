@@ -111,7 +111,7 @@ private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventA
 
 ## Cancel dropping of a particular column in a position
 
-Dropping of a particular column in a position can be canceled by handling `QueryRowDragging` event using conditions based on `QueryRowDraggingReason` and `Position`. Refer the following code sample to cancel dropping of a particular column in a position:
+Dropping of a particular column in a position can be canceled using the `QueryRowDraggingReason` and `Position` arguments in the `QueryRowDragging` event handler. Refer the following code sample to cancel dropping of a particular column in a position:
 
 {% tabs %}
 {% highlight c# %}
@@ -131,7 +131,7 @@ private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventA
 
 ### Cancel dragging between frozen and non-frozen columns
 
-Dragging between frozen and non-frozen columns can be canceled by handling the `QueryRowDragging` event using conditions based on `QueryRowDraggingReason` and e.From index will be one of the frozen column index. Refer to the following code sample to cancel dragging between frozen and non-frozen columns:
+Dragging between frozen and non-frozen columns can be canceled using the `QueryRowDraggingReason` and `From` arguments of the `QueryRowDragging` event handler by checking whether the value of `From` argument is a frozen column index. Refer to the following code sample to cancel dragging between frozen and non-frozen columns:
 
 {% tabs %}
 {% highlight c# %}
@@ -151,7 +151,7 @@ private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventA
 
 ### Cancel dropping between frozen and non-frozen columns
 
-Dropping between frozen and non-frozen columns can be canceled by handling `QueryRowDragging` event using conditions based on `QueryRowDraggingReason` and e.From index will be one of the frozen column index. Refer to the following code sample to cancel dropping between frozen and non-frozen columns:
+Dropping between frozen and non-frozen columns can be canceled using the `QueryRowDraggingReason` and `From`argument of the `QueryRowDragging` event handler by checking whether the `e.From` value is a frozen column index. Refer to the following code sample to cancel dropping between frozen and non-frozen columns:
 
 {% tabs %}
 {% highlight c# %}

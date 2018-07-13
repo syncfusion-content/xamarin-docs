@@ -119,7 +119,7 @@ private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventA
 
 ## Cancel dropping of a particular column in a position
 
-Dropping of a particular column in a position can be canceled using the `QueryColumnDraggingReason` and `Position` arguments in the `QueryColumnDragging` event handler. Refer the following code sample to cancel dropping of a particular column in a position:
+Dropping of a particular column in a position can be canceled using `QueryColumnDraggingReason` and `Position` arguments in the `QueryColumnDragging` event handler. 
 
 {% tabs %}
 {% highlight c# %}
@@ -141,7 +141,7 @@ private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventA
 
 ### Cancel dragging between frozen and non-frozen columns
 
-Dragging between frozen and non-frozen columns can be canceled using the `QueryColumnDraggingReason` and `From` arguments of the `QueryColumnDragging` event handler by checking whether the value of `From` argument is a frozen column index. Refer to the following code sample to cancel dragging between frozen and non-frozen columns:
+Dragging between frozen and non-frozen columns can be canceled using `QueryColumnDraggingReason` and `From` arguments of the `QueryColumnDragging` event handler by checking whether the value of `From` argument is a frozen column index. 
 
 {% tabs %}
 {% highlight c# %}
@@ -163,7 +163,7 @@ private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventA
 
 ### Cancel dropping between frozen and non-frozen columns
 
-Dropping between frozen and non-frozen columns can be canceled using the `QueryColumnDraggingReason` and `From`argument of the `QueryColumnDragging` event handler by checking whether the `e.From` value is a frozen column index. Refer to the following code sample to cancel dropping between frozen and non-frozen columns:
+Dropping between frozen and non-frozen columns can be canceled using `QueryColumnDraggingReason` and `From`argument of the `QueryColumnDragging` event handler by checking whether the `e.From` value is a frozen column index. 
 
 {% tabs %}
 {% highlight c# %}
@@ -185,9 +185,7 @@ private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventA
 
 ## Customize column drag and drop indicators
 
-The SfDataGrid allows customizing the column drag and drop indicators by writing the custom grid style, deriving from the [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle.html), and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridStyle.html) property.
-
-To customize the column drag and drop indicators, follow the code example:
+The SfDataGrid allows customizing the column drag and drop indicators by writing the custom grid style, deriving from the [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle.html) and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridStyle.html) property.
 
 {% tabs %}
 {% highlight c#%}

@@ -240,7 +240,7 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 
 ## Cancel dropping of a particular row in a position
 
-Dropping of a particular row in a position can be canceled by handling `QueryRowDragging` event using conditions based on `QueryRowDraggingReason` and `Position`. Refer the following code sample to cancel dropping of a particular row in a position:
+Dropping of a particular row in a position can be canceled using the `QueryRowDraggingReason` and `Position` arguments of the `QueryRowDragging` event handler. Refer the following code sample to cancel dropping of a particular row in a position:
 
 {% tabs %}
 {% highlight c# %}

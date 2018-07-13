@@ -43,6 +43,8 @@ Dragging can be canceled for a particular column by handling `QueryColumnDraggin
 {% tabs %}
 {% highlight c# %}
 
+this.SfGrid.QueryColumnDragging += SfGrid_QueryColumnDragging;
+
 private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventArgs e)
 {
     //e.From returns the index of the dragged column.
@@ -60,6 +62,8 @@ Dropping can be canceled for a particular column while dragging a column. Refer 
 
 {% tabs %}
 {% highlight c# %}
+
+this.SfGrid.QueryColumnDragging += SfGrid_QueryColumnDragging;
 
 private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventArgs e)
 {
@@ -80,6 +84,8 @@ Dropping can be canceled for a particular column by handling the `QueryColumnDra
 {% tabs %}
 {% highlight c# %}
 
+this.SfGrid.QueryColumnDragging += SfGrid_QueryColumnDragging;
+
 private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventArgs e)
 {
     //e.From returns the index of the dragged column.
@@ -97,6 +103,8 @@ Dropping at a particular position can be canceled by handling the `QueryColumnDr
 
 {% tabs %}
 {% highlight c# %}
+
+this.SfGrid.QueryColumnDragging += SfGrid_QueryColumnDragging;
 
 private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventArgs e)
 {
@@ -116,11 +124,13 @@ Dropping of a particular column in a position can be canceled using the `QueryRo
 {% tabs %}
 {% highlight c# %}
 
+this.SfGrid.QueryColumnDragging += SfGrid_QueryColumnDragging;
+
 private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventArgs e)
 {
     //e.To returns the index of the current column.
     //e.DraggingPosition returns the x and y position of the current column
-     if ((e.To == 5) && e.DraggingPosition == new Point(100,100) && e.Reason == QueryColumnDraggingReason.DragEnded)
+     if (e.DraggingPosition == new Point(100,100) && e.Reason == QueryColumnDraggingReason.DragEnded)
                 e.Cancel = true;
 }
 
@@ -136,13 +146,15 @@ Dragging between frozen and non-frozen columns can be canceled using the `QueryR
 {% tabs %}
 {% highlight c# %}
 
-dataGrid.FrozenColumnsCount = 2;
+SfGrid.FrozenColumnsCount = 2;
+
+this.SfGrid.QueryColumnDragging += SfGrid_QueryColumnDragging;
 
 private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventArgs e)
 {
     //e.From returns the index of the dragged column.
     //e.To returns the index of the current column.
-      if ((e.From >= 0 && e.From < 2) && e.Reason == QueryRowDraggingReason.DragStarted)
+      if (e.From < 2 && e.Reason == QueryRowDraggingReason.DragStarted)
         e.Cancel = true;
 }
 
@@ -156,13 +168,15 @@ Dropping between frozen and non-frozen columns can be canceled using the `QueryR
 {% tabs %}
 {% highlight c# %}
 
-dataGrid.FrozenColumnsCount = 2;
+SfGrid.FrozenColumnsCount = 2;
+
+this.SfGrid.QueryColumnDragging += SfGrid_QueryColumnDragging;
 
 private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventArgs e)
 {
     //e.From returns the index of the dragged column.
     //e.To returns the index of the current column.
-      if ((e.From >= 0 && e.From < 2) && e.Reason == QueryRowDraggingReason.DragEnded)
+      if (e.From < 2 && e.Reason == QueryRowDraggingReason.DragEnded)
         e.Cancel = true;
 }
 

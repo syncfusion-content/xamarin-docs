@@ -164,6 +164,8 @@ Dragging can be canceled for a particular row by handling the `QueryRowDragging`
 {% tabs %}
 {% highlight c# %}
 
+this.SfGrid.QueryRowDragging += SfGrid_QueryRowDragging;
+
 private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 {
     //e.From returns the index of the dragged row.
@@ -181,6 +183,8 @@ Dropping can be canceled over particular rows while dragging a row. Refer to the
 
 {% tabs %}
 {% highlight c# %}
+
+this.SfGrid.QueryRowDragging += SfGrid_QueryRowDragging;
 
 private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 {
@@ -201,6 +205,8 @@ Dropping can be canceled for a particular row by handling `QueryRowDragging` eve
 {% tabs %}
 {% highlight c# %}
 
+this.SfGrid.QueryRowDragging += SfGrid_QueryRowDragging;
+
 private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 {
     //e.From returns the index of the dragged row.
@@ -219,6 +225,8 @@ Dropping at a particular position can be canceled by handling `QueryRowDragging`
 {% tabs %}
 {% highlight c# %}
 
+this.SfGrid.QueryRowDragging += SfGrid_QueryRowDragging;
+
 private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 {
     //e.To returns the index of the current row.
@@ -236,6 +244,8 @@ Dropping of a particular row in a position can be canceled by handling `QueryRow
 
 {% tabs %}
 {% highlight c# %}
+
+this.SfGrid.QueryRowDragging += SfGrid_QueryRowDragging;
 
 private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 {
@@ -257,7 +267,9 @@ Dragging between frozen and non-frozen rows can be canceled using the `QueryRowD
 {% tabs %}
 {% highlight c# %}
 
-dataGrid.FrozenRowsCount = 4;
+SfGrid.FrozenRowsCount = 4;
+
+this.SfGrid.QueryRowDragging += SfGrid_QueryRowDragging;
 
 private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 {
@@ -277,7 +289,9 @@ Dropping between frozen and non-frozen rows can be canceled using the `QueryRowD
 {% tabs %}
 {% highlight c# %}
 
-dataGrid.FrozenRowsCount = 4;
+SfGrid.FrozenRowsCount = 4;
+
+this.SfGrid.QueryRowDragging += SfGrid_QueryRowDragging;
 
 private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 {
@@ -298,6 +312,8 @@ Reordering changes directly on the underlying data can be done by handling `Quer
 
 {% tabs %}
 {% highlight c# %}
+
+this.SfGrid.QueryRowDragging += SfGrid_QueryRowDragging;
 
 private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 {
@@ -322,6 +338,8 @@ Refer to the following code example in which the `Position` property is used to 
 
 {% tabs %}
 {% highlight c# %}
+
+this.SfGrid.QueryRowDragging += SfGrid_QueryRowDragging;
 
 private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 {

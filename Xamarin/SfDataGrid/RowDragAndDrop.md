@@ -139,9 +139,9 @@ public class RowTemplate : Grid
 
 ![](SfDataGrid_images/CustomizedTemplate.jpg)
 
-N> Currently, the row drag-and-drop feature cannot be used if different rows are set with different heights using the [QueryRowHeight](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~QueryRowHeight_EV.html) event. 
+N> Currently, the row drag-and-drop features cannot be used if different rows sets with different heights using the [QueryRowHeight](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~QueryRowHeight_EV.html) event. 
 
-You can download the customizing row drag-and-drop template sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/RowDragandDrop865318434)
+You can download the customizing row drag-and-drop template sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/RowDragandDrop865318434).
 
 ## Events in row drag-and-drop
 
@@ -240,7 +240,7 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 
 ## Cancel dropping of a particular row in a position
 
-Dropping of a particular row in a position can be canceled using the `QueryRowDraggingReason` and `Position` arguments of the `QueryRowDragging` event handler. Refer the following code sample to cancel dropping of a particular row in a position:
+Dropping of a particular row in a position can be canceled using `QueryRowDraggingReason` and `Position` arguments of the `QueryRowDragging` event handler. 
 
 {% tabs %}
 {% highlight c# %}
@@ -262,7 +262,7 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 
 ### Cancel dragging between frozen and non-frozen rows
 
-Dragging between frozen and non-frozen rows can be canceled using the `QueryRowDraggingReason` and `From` arguments of the `QueryRowDragging` event handler by checking whether the value of `From` argument is a frozen row index. Refer to the following code sample to cancel dragging between frozen and non-frozen rows:
+Dragging between frozen and non-frozen rows can be canceled using `QueryRowDraggingReason` and `From` arguments of the `QueryRowDragging` event handler by checking whether the value of `From` argument is a frozen row index. 
 
 {% tabs %}
 {% highlight c# %}
@@ -284,7 +284,7 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 
 ### Cancel dropping between frozen and non-frozen rows
 
-Dropping between frozen and non-frozen rows can be canceled using the `QueryRowDraggingReason` and `From` arguments of the `QueryRowDragging` event handler by checking whether the value of `From` argument is a frozen row index. Refer to the following code sample to cancel dropping between frozen and non-frozen rows:
+Dropping between frozen and non-frozen rows can be canceled using `QueryRowDraggingReason` and `From` arguments of the `QueryRowDragging` event handler by checking whether the value of `From` argument is a frozen row index. 
 
 {% tabs %}
 {% highlight c# %}
@@ -359,9 +359,7 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 
 ## Customizing row drag-and-drop indicators
 
-The data grid allows you to customize the row drag-and-drop indicators by writing a custom grid style deriving from the [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle.html), and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridStyle.html) property.
-
-To customize the row drag-and-drop indicators, follow the code example:
+Data grid allows you to customize the row drag-and-drop indicators by writing a custom grid style, deriving from the [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle.html) and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridStyle.html) property.
 
 {% tabs %}
 {% highlight c#%}
@@ -433,6 +431,6 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot shows the output rendered when executing the above code example:
+The following screenshot shows the output rendered when executing the above code example.
 
 ![](SfDataGrid_images/UpdatedSummary.png)

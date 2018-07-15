@@ -159,7 +159,7 @@ The `QueryRowDragging` event provides the following properties in [QueryRowDragg
 
 ## Cancel dragging of a particular row
 
-Dragging of a particular row can be canceled using `QueryRowDraggingReason` argument of the `QueryRowDragging` event handler. Refer to the following code sample to cancel dragging for a particular row:
+Dragging of a particular row can be canceled using `QueryRowDraggingReason` argument of the `QueryRowDragging` event handler.
 
 {% tabs %}
 {% highlight c# %}
@@ -179,7 +179,7 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 
 ## Cancel dropping when dragging over particular rows
 
-Dropping when dragging over particular rows can be canceled using `QueryRowDraggingReason` argument of the `QueryRowDragging` event handler. Refer to the following code sample to cancel the dropping of a particular row:
+Dropping when dragging over particular rows can be canceled using `QueryRowDraggingReason` argument of the `QueryRowDragging` event handler.
 
 {% tabs %}
 {% highlight c# %}
@@ -200,7 +200,7 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 
 ## Cancel dropping of a particular row
 
-Dropping of a particular row can be canceled using `QueryRowDraggingReason` argument of the `QueryRowDragging` event handler. Refer to the following code sample to cancel the dropping of a particular row:
+Dropping of a particular row can be canceled using `QueryRowDraggingReason` argument of the `QueryRowDragging` event handler.
 
 {% tabs %}
 {% highlight c# %}
@@ -220,7 +220,7 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 
 ## Cancel dropping at a particular position
 
-Dropping at a particular position can be canceled using `QueryRowDraggingReason` argument of the `QueryRowDragging` event handler. Refer to the following code sample to cancel dropping at a particular position:
+Dropping at a particular position can be canceled using `QueryRowDraggingReason` argument of the `QueryRowDragging` event handler.
 
 {% tabs %}
 {% highlight c# %}

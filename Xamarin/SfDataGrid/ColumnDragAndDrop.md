@@ -38,7 +38,7 @@ The `QueryColumnDragging` event is fired while dragging a column. It will be con
 
 ## Cancel dragging of a particular column
 
-Dragging of a particular column can be canceled using `QueryColumnDraggingReason` argument in the `QueryColumnDragging` event handler. Refer to the following code sample to cancel dragging for a particular column:
+Dragging of a particular column can be canceled using `QueryColumnDraggingReason` argument in the `QueryColumnDragging` event handler.
 
 {% tabs %}
 {% highlight c# %}
@@ -58,7 +58,7 @@ private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventA
 
 ## Cancel dropping when dragging for a particular column
 
-Dropping when dragging of a particular column can be canceled using `QueryColumnDraggingReason` argument in the `QueryColumnDragging` event handler. Refer to the following code sample to cancel dropping for a particular column.
+Dropping when dragging of a particular column can be canceled using `QueryColumnDraggingReason` argument in the `QueryColumnDragging` event handler.
 
 {% tabs %}
 {% highlight c# %}
@@ -79,7 +79,7 @@ private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventA
 
 ## Cancel dropping for a particular column
 
-Dropping of a particular column can be canceled using `QueryColumnDraggingReason` argument in the `QueryColumnDragging` event handler. Refer to the following code sample to cancel dropping for a particular column:
+Dropping of a particular column can be canceled using `QueryColumnDraggingReason` argument in the `QueryColumnDragging` event handler.
 
 {% tabs %}
 {% highlight c# %}
@@ -99,7 +99,7 @@ private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventA
 
 ## Cancel dropping at a particular position 
 
-Dropping at a particular position can be canceled using `QueryColumnDraggingReason` argument in the `QueryColumnDragging` event handler. Refer to the following code sample to cancel dropping at a particular position:
+Dropping at a particular position can be canceled using `QueryColumnDraggingReason` argument in the `QueryColumnDragging` event handler.
 
 {% tabs %}
 {% highlight c# %}

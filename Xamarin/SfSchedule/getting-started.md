@@ -467,5 +467,5 @@ schedule.DataSource = viewModel.Meetings;
 ![](GettingStarted_images/GettingStarted.png)
 
 You can download the entire source code of this demo for Xamarin.Forms from
-here [ScheduleGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ScheduleGettingStarted1396972789.zip)
+here [ScheduleGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartedSample746964196.zip)
 

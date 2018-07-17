@@ -1409,4 +1409,92 @@ public class GridCaptionSummaryCellRendererExt : GridCaptionSummaryCellRenderer
 
 ![](SfDataGrid_images/Customizingcaptionsummary.png)
 
+## Customizing Group summary
+
+The data grid customizes the group summary by overriding the [GridGroupSummaryCellRenderer](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridGroupSummaryCellRenderer.html).
+
+N> By default, `LoadUIView` property of `GridColumn` is `false` for android. Hence, `OnInitializeDisplayView()` will not be called.
+
+{% tabs %}
+{% highlight xaml %}
+
+<sfgrid:SfDataGrid x:Name="dataGrid"      
+                   AutoGenerateColumns="False" 
+                   ItemsSource="{Binding OrdersInfo}">
+
+    <sfgrid:SfDataGrid.Columns>
+        <sfgrid:GridTextColumn MappingName="OrderID" LoadUIView="True" Width="85" />
+        <sfgrid:GridTextColumn MappingName="Salary" LoadUIView="True" Width="90"/>
+        <sfgrid:GridTextColumn MappingName="CustomerID" LoadUIView="True" Width="150"/>
+        <sfgrid:GridTextColumn MappingName="Country" LoadUIView="True" Width="90"/>
+    </sfgrid:SfDataGrid.Columns>
+
+    <sfgrid:SfDataGrid.GroupColumnDescriptions>
+        <sfgrid:GroupColumnDescription ColumnName="Salary"  />
+    </sfgrid:SfDataGrid.GroupColumnDescriptions>
+</sfgrid:SfDataGrid>
+
+{% endhighlight %}
+
+{% highlight c#%}
+
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+
+        // To remove default summary and Add custom summary.
+        dataGrid.CellRenderers.Remove("GroupSummary");
+        dataGrid.CellRenderers.Add("GroupSummary", new GridGroupSummaryCellRendererExt());
+
+        dataGrid.GroupSummaryRows.Add(new GridGroupSummaryRow()
+        {
+            ShowSummaryInRow = true,
+            Title = "Total Salary: {Salary} for {customerID} members",
+            SummaryColumns = new ObservableCollection<ISummaryColumn>()
+            {
+                new GridSummaryColumn()
+                {
+                    Name="Salary",
+                    MappingName="Salary",
+                    SummaryType=SummaryType.DoubleAggregate,
+                    Format="{Sum}"
+                },
+                new GridSummaryColumn()
+                {
+                    Name="customerID",
+                    MappingName="customerID",
+                    Format="{Count}",
+                    SummaryType=SummaryType.CountAggregate
+                }
+            }
+        });
+    }
+}
+
+// Custom CellRenderer
+public class GridGroupSummaryCellRendererExt : GridGroupSummaryCellRenderer
+{
+    public GridGroupSummaryCellRendererExt()
+    {
+    }
+
+    public override void OnInitializeDisplayView(DataColumnBase dataColumn, SfLabel view)
+    {
+        base.OnInitializeDisplayView(dataColumn, view);
+        base.OnInitializeDisplayView(dataColumn, view);
+        view.HorizontalTextAlignment = TextAlignment.Center;
+        view.BackgroundColor = Color.Gray;
+        view.FontAttributes = FontAttributes.Italic;
+        view.FontSize = 20;
+        view.TextColor = Color.White;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![](SfDataGrid_images/Customizinggroupsummary.jpg)
+
 You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SummaryDemo-142807621) .

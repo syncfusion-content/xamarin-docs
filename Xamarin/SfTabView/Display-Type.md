@@ -110,7 +110,7 @@ Add the font file to the `Assets` folder in the application project, and set t
 
 Add the font family inside the application project of UWP.
 
-N> For iOS alone, FontFamily property is desclared without succeeding with .ttf and for android and UWP platform font family name is defined followed by .ttf.
+N> For iOS alone, FontFamily property is declared without succeeding with .ttf and for android and UWP platform font family name is defined followed by .ttf.
 
 **Setting font file for font icons**
 

@@ -224,6 +224,8 @@ When selecting the multiple items, the selected items can be divided with a desi
 	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" MultiSelectMode="Delimiter"  Delimiter="," />                    
 </StackLayout> 
 
+N> The optimal value for Delimiter property is any single character.
+
 {% endhighlight %}
 
 {% highlight c# %}

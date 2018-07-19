@@ -29,7 +29,7 @@ Refer to the following KB to configure the NuGet package of the Syncfusion compo
 
 [How to configure package source and install Syncfusion NuGet packages in an existing project?](https://www.syncfusion.com/kb/7441/how-to-configure-package-source-and-install-syncfusion-nuget-packages-in-an-existing-project)
 
-The following NuGet package should be installed to use the SfDataGrid control in the application.
+The following NuGet package should be installed to use the SfPullToRefresh control in the application.
 
 <table>
 <tr>
@@ -42,35 +42,13 @@ The following NuGet package should be installed to use the SfDataGrid control in
 </tr>
 </table>
 
-Refer to the following screenshot in which the Syncfusion.Xamarin.SfPullToRefresh is highlighted.
-![](SfPullToRefresh_images/PullToRefresh_Forms_NugetInstall.png)
+### Adding SfPullToRefresh Reference
 
-### SfPullToRefresh for Xamarin.Forms
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfPullToRefresh to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfPullToRefresh](https://www.nuget.org/packages/Syncfusion.Xamarin.SfDataGrid/), and then install it.
 
-The following list of assemblies need to be added as reference from the lib folder to use SfPullToRefresh in your application.
+![](SfDataGrid_images/PullToRefresh_Forms_NugetInstall.png)
 
-<table>
-<tr>
-<th>Project</th>
-<th>Required assemblies</th>
-</tr>
-<tr>
-<td>PCL</td>
-<td>pcl\Syncfusion.Core.XForms.dll<br/>pcl\Syncfusion.SfPullToRefresh.XForms.dll<br/></td>
-</tr>
-<tr>
-<td>Android Renderer</td>
-<td>android\Syncfusion.Core.XForms.dll<br/>android\Syncfusion.SfPullToRefresh.XForms.dll<br/>android\Syncfusion.SfPullToRefresh.XForms.Android.dll<br/></td>
-</tr>
-<tr>
-<td>iOS Renderer</td>
-<td>ios-unified\Syncfusion.Core.XForms.dll<br/>ios-unified\Syncfusion.SfPullToRefresh.XForms.dll<br/>ios-unified\Syncfusion.SfPullToRefresh.XForms.iOS.dll<br/></td>
-</tr>
-<tr>
-<td>UWP Renderer</td>
-<td>uwp\Syncfusion.Core.XForms.dll<br/>uwp\Syncfusion.SfPullToRefresh.XForms.dll<br/>uwp\Syncfusion.SfPullToRefresh.XForms.UWP.dll<br/></td>
-</tr>
-</table>
+To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfpulltorefresh) to know about the dependent assemblies for SfPullToRefresh.
 
 I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
 

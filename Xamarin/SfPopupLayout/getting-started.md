@@ -42,7 +42,7 @@ The following NuGet package should be installed to use the SfPopupLayout control
 
 ### Adding SfPopupLayout Reference
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfDataGrid to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfPopupLayout](https://www.nuget.org/packages/Syncfusion.Xamarin.SfPopUpLayout/), and then install it.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfPopupLayout to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfPopupLayout](https://www.nuget.org/packages/Syncfusion.Xamarin.SfPopUpLayout/), and then install it.
 
 ![](GettingStarted_images/NuGetInstall.png)
 

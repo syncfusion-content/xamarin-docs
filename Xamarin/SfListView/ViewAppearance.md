@@ -100,7 +100,7 @@ You can also download the entire source code of this demo from [here](http://www
 
 ![](SfListView_images/DataTemplateSelector.jpg)
 
-## Orientation
+## Horizontal ListView
 
 The SfListView allows you to layout every item in the [SfListView.ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemsSource.html) property either in vertical or horizontal orientation by setting the [SfListView.Orientation](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~Orientation.html). The default orientation is `Vertical`.
 
@@ -670,21 +670,6 @@ public class ListViewItemExt : ListViewItem
         this.BackgroundColor = Color.Yellow;
     }
 }
-{% endhighlight %}
-{% endtabs %}
-
-## Scrollbar visibility
-
-The SfListView provides an option to enable or disable the `Scrollbar` visibility by using the [IsScrollBarVisible](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsScrollBarVisible.html) property. By default, the value will be `true`.  
-
-N> Due to some restrictions in native ScrollView renderer in Xamarin.Forms, you cannot change the `IsScrollBarVisible` value at runtime. It can be defined only when initializing the SfListView. 
-
-{% tabs %}
-{% highlight xaml %}
-<syncfusion:SfListView x:Name="listView" IsScrollBarVisible="False" />
-{% endhighlight %}
-{% highlight c# %}
-listView.IsScrollBarVisible = false; 
 {% endhighlight %}
 {% endtabs %}
 

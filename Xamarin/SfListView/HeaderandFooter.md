@@ -92,7 +92,7 @@ listView.IsStickyFooter = true;
 
 ## How to
 
-### perform TabView using header
+### TabView appearence using listview header
 
 The [SfListView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView.html) allows performing tab view structure by customizing the [HeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~HeaderTemplate.html) to load any view.
 
@@ -313,7 +313,7 @@ You can download the entire source code of this demo [here](http://www.syncfusio
 
 ![](SfListView_images/Informations.jpg)
 
-### header and footer in vertical mode when listview in horizontal mode
+### Header and footer in vertical mode when listview in horizontal mode
 
 By customizing the [SfListView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView.html), layout the header and footer items in `Vertical` mode with listview items in `Horizontal` mode.
 

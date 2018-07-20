@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains how to filter the data and its related operations in the SfListView.
 
-## Programmatic Filtering
+## Programmatic filtering
 
 The [SfListView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView.html) supports to filter the data by setting the [SfListView.DataSource.Filter](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~Filter.html) property. You have to call the [SfListView.DataSource.RefreshFilter()](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~RefreshFilter.html) method after assigning the `Filter` property for refreshing the view.
 
@@ -84,7 +84,7 @@ The following screenshot shows the output rendered when the items are filtered:
 
 ![](SfListView_images/SfListView-Filtering.png)
 
-### Filter Based on Multiple Criteria
+### Filter based on multiple criteria
 
 The [SfListView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView.html) allows filtering the items based on multiple criteria. To filter the data using multiple properties, follow the code example:
 
@@ -105,7 +105,7 @@ private bool FilterContacts(object obj)
 {% endhighlight %}
 {% endtabs %}
 
-## Getting the Filtered Data
+## Getting the filtered data
 
 You can get filtered items from the view and modify it in the [SfListView.DataSource.FilterChanged](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~FilterChanged_EV.html) event. When filter is applied, the filtered items are available in the [SfListView.DataSource.DisplayItems](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~DisplayItems.html).
 
@@ -125,7 +125,7 @@ private void DataSource_FilterChanged(object sender, NotifyCollectionChangedEven
 {% endhighlight %}
 {% endtabs %}
 
-## Clear Filtering
+## Clear filtering
 
 The SfListView allows clearing the filters by setting the [DataSource.Filter](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~Filter.html) to null, and call the [DataSource.RefreshFilter](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~RefreshFilter.html) method.
 
@@ -136,7 +136,7 @@ listView.DataSource.RefreshFilter();
 {% endhighlight %}
 {% endtabs %}
 
-## Sort the Filtered Items
+## Sort the filtered items
 
 The order of the filtered items can be rearranged in the [FilterChanged](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~FilterChanged_EV.html) event by adding [SortDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.SortDescriptor.html). To sort the filtered items, follow the code example:
 

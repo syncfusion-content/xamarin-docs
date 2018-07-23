@@ -149,7 +149,6 @@ Now, a list of string with resolution list is created and added to the SfComboBo
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
-			 ListCollection="clr-namespace:System.Collections.Generic;assembly=mscorlib"
              xmlns:local="clr-namespace:NamespaceName"            
              x:Class="NamespaceName.ClassName">
 	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">

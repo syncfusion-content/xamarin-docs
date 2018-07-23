@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains how to perform selection and its related operations in the SfListView.
 
-## UI Selection
+## UI selection
 
 The SfListView allows selecting items either programmatically or touch interactions by setting the [SfListView.SelectionMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionMode.html) property value to other than `None`. The control has different selection modes to perform selection operations as listed as follows:
 

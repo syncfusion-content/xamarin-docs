@@ -11,7 +11,7 @@ documentation: ug
 
 The SfListView supports sorting the data either in ascending or descending order by using [DataSource.SortDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~SortDescriptors.html) property and by using the custom logic.
 
-## Programmatic Sorting
+## Programmatic sorting
 
 Sorting the data by creating the [SortDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.SortDescriptor.html) with required property name and direction and adding it into the [DataSource.SortDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~SortDescriptors.html) property.
 
@@ -50,7 +50,7 @@ N> It is mandatory to specify the `PropertyName` of `SortDescriptor`.
 
 ![](SfListView_images/SfListView-Sorting.png)
 
-## Custom Sorting
+## Custom sorting
 
 Sort the items based on the custom logic and it can be applied to either [SfListView.DataSource.SortComparer](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~SortComparer.html) property or [SortDescriptor.Comparer](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.SortDescriptor~Comparer.html) which is added into the [DataSource.SortDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~SortDescriptors.html) collection.
 
@@ -127,7 +127,7 @@ public class CustomComparer : IComparer<object>, ISortDirection
 {% endhighlight %}
 {% endtabs %}
 
-## Sort the Items on Header Tapped
+## Sort the items on header tapped
 
 To apply the sorting when tapping the header, handle the [ItemTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTapped_EV.html) event of the SfListView.
 
@@ -190,13 +190,11 @@ private void ListView_ItemTapped(object sender, Syncfusion.ListView.XForms.ItemT
 {% endhighlight %}
 {% endtabs %}
 
-## How To
-
-### Sort the Items along with Grouping
+## Sort the items along with grouping
  
 The SfListView allows sorting the items along with grouping by adding the [DataSource.GroupDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~GroupDescriptors.html) and the [DataSource.SortDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~SortDescriptors.html) with required property name. 
 
-#### Sorting with Grouping by Year
+## Sorting with grouping by year
 
 Sorting the items along with grouping by using [KeySelector](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~KeySelector.html) based on retuning the year value of the data-time property.
 
@@ -255,7 +253,7 @@ The following screenshot shows the output when items are sorted by year. You can
 
 ![](SfListView_images/SfListView-Sorting1.png)
 
-#### Sorting with Grouping by Month and Year
+## Sorting with grouping by month and year
 
 Sorting the items along with grouping by using `KeySelector` based on retuning the month and year value of the data-time property.
 

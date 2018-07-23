@@ -63,7 +63,7 @@ You can download the entire source code of this demo from [here](http://www.sync
 
 ![](SfListView_images/SfListView-GridLayout.png)
 
-### Customize SpanCount Based on Platform
+## Customize span count based on platform
 
 The [SpanCount](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GridLayout~SpanCount.html) property of the [GridLayout](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GridLayout.html) can be customized based on the specified platform to avoid squeezed problem of listview item in phone and tablet devices or windows desktop.
 
@@ -104,9 +104,7 @@ listView.LayoutManager = gridLayout;
 
 ![](SfListView_images/SfListView-GridLayoutTablet.png)
 
-## How To
-
-### Change SpanCount Based on Screen Size
+## Change span count based on screen size
 
 In the SfListView, the [GridLayout](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GridLayout.html) allows changing the span count based on the view size of application with orientation in either portrait or landscape mode.
 

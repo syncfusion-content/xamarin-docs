@@ -13,6 +13,8 @@ The [SfPullToRefresh](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusi
 
 Refer [control dependencies](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfpulltorefresh) section to get the list of assemblies or NuGet package needs to be added as reference to use the SfPullToRefresh control.
 
+Refer [initializing pull-to-refresh](https://help.syncfusion.com/xamarin/sfpulltorefresh/getting-started#launching-the-sfpulltorefresh-on-each-platform) to launch pull-to-refresh on each platform.
+
 ## SfListView inside the SfPullToRefresh 
 
 The SfListView supports refreshing the data in view when performing the pull-to-refresh action at runtime by loading it directly into the [SfPullToRefresh.PullableContent](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPullToRefresh.XForms~Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh~PullableContent.html) of the [SfPullToRefresh](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPullToRefresh.XForms~Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh.html).

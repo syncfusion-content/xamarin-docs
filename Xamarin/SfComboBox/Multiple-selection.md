@@ -6,17 +6,17 @@ platform: xamarin
 control: SfComboBox
 documentation: ug
 ---
-# Multiple Selection
+# Multiple selection
 
-Select multiple items from a suggestion list. There are two ways to perform multi selection in combobox.
+Select multiple items from a suggestion list. There are two ways to perform multi selection in the combo box control.
 
 * Token Representation
 
 * Delimiter
 
-## Token Representation
+## Token representation
 
-Selected items will be displayed with a customizable token representation and the users can remove each tokenized item with the close button.
+Selected items will be displayed with a customizable token representation. Users can remove each tokenized item with the close button. And IsSelectedItemsVisibleInDropDown property is used to restrict the selected items as visible or not in dropDown. 
 
 {% tabs %}
 
@@ -30,49 +30,41 @@ Selected items will be displayed with a customizable token representation and th
 
 {% highlight c# %}
 
-comboBox.MultiSelectMode = MultiSelectMode.Token;
-comboBox.TokensWrapMode = TokensWrapMode.Wrap;
-comboBox.IsSelectedItemsVisibleInDropDown = false;
+   StackLayout layout = new StackLayout() 
+   { 
+	     VerticalOptions = LayoutOptions.Start, 
+	     HorizontalOptions = LayoutOptions.Start, 
+	     Padding = new Thickness(30) 
+    }; 
+
+    SfComboBox comboBox = new SfComboBox();
+    comboBox.DropDownItemHeight = 50;
+    comboBox.MultiSelectMode = MultiSelectMode.Token;
+    comboBox.TokensWrapMode = TokensWrapMode.Wrap;
+    comboBox.IsSelectedItemsVisibleInDropDown = false;
+
+    layout.Children.Add(comboBox); 
+    Content = layout;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-### Wrap Mode of Token
+### Wrap mode of token
 
-The selected item can be displayed as token inside SfComboBox in two ways. They are
+The selected item can be displayed as token inside the SfComboBox in two ways. They are
 
-* `Wrap` - When `TokensWrapMode` is set to `Wrap` the selected items will be wrap to the next line of the SfComboBox.
+* `Wrap` - When the `TokensWrapMode` is set to `Wrap` the selected items will be wrapped to the next line of the SfComboBox.
 
-* `None` - When `TokensWrapMode` is set to `None` the selected item will be wrap in horizontal orientation.
+* `None` - When the `TokensWrapMode` is set to `None` the selected item will be wrapped in horizontal orientation.
+
+Define a simple model class Employee with fields ID, Name and populate employee data in ViewModel.
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight C# %}
 
-
-<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-    <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DropDownItemHeight="50" DisplayMemberPath="Name" ImageMemberPath="Image" MultiSelectMode="Token" DataSource="{Binding EmployeeCollection}"/>
-</StackLayout>
-
-{% endhighlight %}
-
-{% highlight c# %}
-namespace combobox
-{
-    public partial class ComboBoxPage : ContentPage 
-    { 
-        EmployeeViewModel view = new EmployeeViewModel(); 
-        public ComboBoxPage() 
-        { 
-            InitializeComponent(); 
-            // Set TokensWrapMode to Wrap 
-            comboBox.TokensWrapMode = TokensWrapMode.Wrap;  
-            this.BindingContext = view; 
-        } 
-    } 
-
-    // Create a Employee Class which holds the Name and image. 
+ // Create a Employee Class which holds the Name and image. 
     public class Employee 
     { 
         private string image; 
@@ -116,7 +108,58 @@ namespace combobox
             this.PropertyChanged(this, new PropertyChangedEventArgs(name)); 
         } 
     }
-} 
+
+    {% endhighlight %}
+
+{% endtabs %}
+
+Now populate this EmployeeViewModel data in SfComboBox control by binding with [`DataSource`] property. 
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+             xmlns:local="clr-namespace:NamespaceName"            
+             x:Class="NamespaceName.ClassName">
+<ContentPage.BindingContext>
+    <local:EmployeeViewModel/>
+ </ContentPage.BindingContext>
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DropDownItemHeight="50" DisplayMemberPath="Name" ImageMemberPath="Image" MultiSelectMode="Token" DataSource="{Binding EmployeeCollection}"/>
+</StackLayout> 
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+       
+   StackLayout layout = new StackLayout() 
+   { 
+	     VerticalOptions = LayoutOptions.Start, 
+	     HorizontalOptions = LayoutOptions.Start, 
+	     Padding = new Thickness(30) 
+    }; 
+
+    SfComboBox comboBox = new SfComboBox();
+    comboBox.DropDownItemHeight = 50;
+    comboBox.DisplayMemberName = "Name";
+    comboBox.ImageMemberPath = "Image";
+    comboBox.MultiSelectMode = MultiSelectMode.Token;
+    this.BindingContext = new EmployeeViewModel(); 
+
+    // Set TokensWrapMode to Wrap 
+    comboBox.TokensWrapMode = TokensWrapMode.Wrap;  
+
+    Binding binding = new Binding("EmployeeCollection");
+    binding.Source = this;
+    binding.Mode = BindingMode.TwoWay;
+    comboBox.SetBinding(Label.DataSourceProperty,binding);
+
+    layout.Children.Add(comboBox); 
+    Content = layout;
 
 {% endhighlight %}
 
@@ -125,25 +168,25 @@ namespace combobox
 
 ![](images/MultiSelect/TokenRepresentation_Wrap.png)
  
-### Token Customization
+### Token customization
 
-Customization can be done for Token. There are various ways to customize the tokens. They are as follows.
+Token can be customized in the following ways: 
 
-* `TextColor` - sets the color of the text inside the token.
+* `TextColor` - Sets the color of the text inside the token.
 
-* `FontSize` - sets the size of the Font inside the token.
+* `FontSize` - Sets the size of the font inside the token.
 
-* `FontFamily` - sets the Font family for the text inside the token.
+* `FontFamily` - Sets the font family for the text inside the token.
 
-* `BackgroundColor` - sets the background color of the token.
+* `BackgroundColor` - Sets the background color for token.
 
-* `SelectedBackgroundColor` - sets the background color of the token when it is selected.
+* `SelectedBackgroundColor` - Sets the background color of the token when it is selected.
 
-* `IsCloseButtonVisible` - Enables and disables the close button inside SfComboBox.
+* `IsCloseButtonVisible` - Enables and disables the close button inside the SfComboBox.
 
-* `DeleteButtonColor` - sets the color of the close button inside SfComboBox.
+* `DeleteButtonColor` - Sets the color of the close button inside the SfComboBox.
 
-* `CornerRadius` - sets the corner radius for the token.
+* `CornerRadius` - Sets the corner radius for the token.
 
 
 
@@ -151,26 +194,64 @@ Customization can be done for Token. There are various ways to customize the tok
 
 {% highlight xaml %}
 
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+             xmlns:local="clr-namespace:NamespaceName"            
+             x:Class="NamespaceName.ClassName">
+<ContentPage.BindingContext>
+    <local:EmployeeViewModel/>
+ </ContentPage.BindingContext>
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-    <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DropDownItemHeight="50" DisplayMemberPath="Name" ImageMemberPath="Image" MultiSelectMode="Token" TokensWrapMode="Wrap" DataSource="{Binding EmployeeCollection}"/>
+    <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DropDownItemHeight="50" DisplayMemberPath="Name" ImageMemberPath="Image"                             MultiSelectMode="Token" TokensWrapMode="Wrap" DataSource="{Binding EmployeeCollection}">
+        <combobox:SfComboBox.TokenSettings>
+                <combobox:TokenSettings FontSize="16" BackgroundColor="#66ccff" 
+                                        TextColor="White" SelectedBackgroundColor="#ffffe0" 
+                                        DeleteButtonColor="Color.Brown" IsCloseButtonVisible="true" 
+                                        CornerRadius="15">                   
+                </combobox:TokenSettings>
+            </combobox:SfComboBox.TokenSettings>
+      </combobox:SfComboBox>      
 </StackLayout>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-// Token Customization
+   StackLayout layout = new StackLayout() 
+   { 
+	     VerticalOptions = LayoutOptions.Start, 
+	     HorizontalOptions = LayoutOptions.Start, 
+	     Padding = new Thickness(30) 
+    }; 
 
-TokenSettings token = new TokenSettings();
-token.FontSize = 16;
-token.BackgroundColor = Color.FromHex("#66ccff");
-token.TextColor = Color.White;
-token.SelectedBackgroundColor = Color.FromHex("#ffffe0");
-token.DeleteButtonColor = Color.Brown;
-token.FontFamily= "Times New Roman";
-token.IsCloseButtonVisible = true;
-token.CornerRadius = 15;
-comboBox.TokenSettings = token;
+    SfComboBox comboBox = new SfComboBox();
+    comboBox.DropDownItemHeight = 50;
+    comboBox.DisplayMemberName = "Name";
+    comboBox.ImageMemberPath = "Image";
+    comboBox.MultiSelectMode = MultiSelectMode.Token;
+    this.BindingContext = new EmployeeViewModel(); 
+
+    // Token Customization
+    TokenSettings token = new TokenSettings();
+    token.FontSize = 16;
+    token.BackgroundColor = Color.FromHex("#66ccff");
+    token.TextColor = Color.White;
+    token.SelectedBackgroundColor = Color.FromHex("#ffffe0");
+    token.DeleteButtonColor = Color.Brown;
+    token.IsCloseButtonVisible = true;
+    token.CornerRadius = 15;
+    comboBox.TokenSettings = token;
+    comboBox.TokensWrapMode = TokensWrapMode.Wrap;  
+
+    Binding binding = new Binding("EmployeeCollection");
+    binding.Source = this;
+    binding.Mode = BindingMode.TwoWay;
+    comboBox.SetBinding(Label.DataSourceProperty,binding);
+
+    layout.Children.Add(comboBox); 
+    Content = layout;
  
 {% endhighlight %}
 
@@ -181,22 +262,58 @@ comboBox.TokenSettings = token;
 
 ## Delimiter
 
-When selecting the multiple items, the selected items can be divided with a desired character given for a delimiter. We can set delimiter character with the `Delimiter` property.
+When selecting multiple items, the selected items can be divided with a desired character given for a delimiter. You can set delimiter character using the `Delimiter` property.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" MultiSelectMode="Delimiter"  Delimiter="," /> 
+	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" MultiSelectMode="Delimiter"  Delimiter=","> 
+        <combobox:SfComboBox.DataSource>
+			<ListCollection:List x:TypeArguments="x:String">
+                <x:String> Afghanistan </x:String>
+                <x:String> Albania </x:String>
+                <x:String> Mexico </x:String>
+                <x:String> Norway </x:String>
+                <x:String> Singapore </x:String>
+                <x:String> Thailand </x:String>
+                <x:String> China </x:String>
+                <x:String> United States </x:String>
+                <x:String> Zimbabwe </x:String>
+            </ListCollection:List>
+        </combobox:SfComboBox.DataSource>
+    </combobox:SfComboBox>
 </StackLayout> 
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-combobox.MultiSelectMode = MultiSelectMode.Delimiter;
-combobox.Delimiter = ",";
+    StackLayout layout = new StackLayout() 
+    { 
+	     VerticalOptions = LayoutOptions.Start, 
+	     HorizontalOptions = LayoutOptions.Start, 
+	     Padding = new Thickness(30) 
+    }; 
+    List<String> countryNames = new List<String>();
+    countryNames.Add("Afghanistan");
+    countryNames.Add("Albania");
+    countryNames.Add("Mexico");
+    countryNames.Add("Norway");
+    countryNames.Add("Singapore");
+    countryNames.Add("Thailand");
+    countryNames.Add("China");
+    countryNames.Add("United States");
+    countryNames.Add("Zimbabwe");
+
+    SfComboBox comboBox = new SfComboBox();
+    comboBox.HeightRequest = 40;
+    combobox.MultiSelectMode = MultiSelectMode.Delimiter;
+    combobox.Delimiter = ",";
+
+    layout.Children.Add(comboBox); 
+    Content = layout;
 
 {% endhighlight %}
 

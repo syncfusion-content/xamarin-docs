@@ -151,6 +151,7 @@ public class PersonViewModel
 
 Now populate this PersonViewModel data in SfComboBox control by binding with [`DataSource`] property. 
 
+{% tabs %}
 {% highlight xaml %}
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 

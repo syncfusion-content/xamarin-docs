@@ -132,9 +132,7 @@ If the DataSource is bound to business object data, there is an additional step 
 
 Define a simple model class Employee with fields ID, Name and populate employee data in ViewModel.
 
-{% tabs %}
-
-{% highlight xaml %}
+{% highlight c# %}
 
 // Create a Employee Class which holds the Name and id.
 public class Employee
@@ -174,8 +172,6 @@ public EmployeeViewModel()
 }
 
 {% endhighlight %}
-
-{% highlight c# %}
 
 Now populate this EmployeeViewModel data in SfComboBox control by binding with [`DataSource`] property. 
 

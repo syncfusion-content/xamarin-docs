@@ -20,7 +20,7 @@ After adding the assembly reference, an additional step is required for iOS and 
 
 Create an instance of the `SfComboBoxRenderer` in FinishedLaunching overridden method of an AppDelegate class in iOS project as shown in the following codes:
 
-{% highlight C# %}
+{% highlight c# %}
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {
@@ -39,7 +39,7 @@ return base.FinishedLaunching(app, options);
 
 This step is required only if the application is deployed in release mode with .NET native tool chain enabled. This is for resolving the known Framework issue “Custom controls not rendering in Release mode” in UWP platform. Initializing the SfComboBox assembly at OnLaunched overridden method of the App class in UWP project is the suggested workaround. The following code example show to resolve this issue.
 
-{% highlight C# %}
+{% highlight c# %}
 
 protected override void OnLaunched(LaunchActivatedEventArgs e)
 {

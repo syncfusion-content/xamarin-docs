@@ -10,9 +10,9 @@ documentation: ug
 
 # Mac Installation
 
-The following procedure illustrates how to install Essential Studio Mac installer. 
+The following procedure illustrates how to install Xamarin Mac installer. 
 
-1. Double-click the Syncfusion Essential Studio Mac Setup(.pkg) file. The Setup Wizard opens. Click Continue.
+1. Double-click the Syncfusion Xamarin Mac Setup(.pkg) file. The Setup Wizard opens. Click Continue.
 
    ![](Mac-Installer_images/Mac_Installer1.png)
    

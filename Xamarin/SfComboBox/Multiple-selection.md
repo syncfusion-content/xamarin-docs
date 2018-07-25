@@ -60,9 +60,7 @@ The selected item can be displayed as token inside the SfComboBox in two ways. T
 
 Define a simple model class Employee with fields ID, Name and populate employee data in ViewModel.
 
-{% tabs %}
-
-{% highlight C# %}
+{% highlight c# %}
 
  // Create a Employee Class which holds the Name and image. 
     public class Employee 
@@ -110,8 +108,6 @@ Define a simple model class Employee with fields ID, Name and populate employee 
     }
 
     {% endhighlight %}
-
-{% endtabs %}
 
 Now populate this EmployeeViewModel data in SfComboBox control by binding with [`DataSource`] property. 
 

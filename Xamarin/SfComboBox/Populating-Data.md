@@ -83,9 +83,7 @@ Apart from string data, SfComboBox can deal business object data also. Now creat
 
 Define a simple model class employee with fields ID and name, and then populate employee data in ViewModel. 
 
-{% tabs %}
-
-{% highlight C# %}
+{% highlight c# %}
 
 public class Employee
 {
@@ -128,8 +126,6 @@ public EmployeeViewModel()
 
 {% endhighlight %}
 
-{% endtabs %}
-
 ### Populate data in ComboBox
 
 Now populate this EmployeeViewModel data in SfComboBox control by binding with [`DataSource`] property. 
@@ -153,7 +149,7 @@ Now populate this EmployeeViewModel data in SfComboBox control by binding with [
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 StackLayout layout = new StackLayout() 
 { 
@@ -197,6 +193,7 @@ comboBox.DisplayMemberPath = "Name";
 
 The [`ItemTemplate`] property helps to decorate suggestion items with custom templates. The following code explains the steps to add an image to the suggestion list item.
 
+{% tabs %}
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
@@ -254,6 +251,7 @@ layout.Children.Add(comboBox);
 Content = layout;
 
 {% endhighlight %}
+{% endtabs %}
 
 Refer to [this](https://help.syncfusion.com/xamarin/sfcombobox/customizing-combobox) link to learn more about the customizing options available in the combo box control.
 

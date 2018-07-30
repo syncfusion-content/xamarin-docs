@@ -1411,7 +1411,7 @@ public class GridCaptionSummaryCellRendererExt : GridCaptionSummaryCellRenderer
 
 ![](SfDataGrid_images/Customizingcaptionsummary.png)
 
-## Customizing Group summary
+### Customizing group summary
 
 The data grid customizes the group summary by overriding the [GridGroupSummaryCellRenderer](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridGroupSummaryCellRenderer.html).
 

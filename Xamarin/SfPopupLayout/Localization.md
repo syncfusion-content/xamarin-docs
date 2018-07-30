@@ -61,12 +61,12 @@ For Android and iOS, It is mandatory to implement the above steps. For UWP, It i
   // In PCL project of MainPage.xaml.cs file
  if (Device.RuntimePlatform == Device.iOS || Device.RuntimePlatform == Device.Android)
             {
-                var v = new CultureInfo("fr");
+                var v = new CultureInfo("fr-FR");
                 DependencyService.Get<ILocalize>().SetLocale(v);
             }
 
   // In UWP project project of MainPage.xaml.cs file
-        CultureInfo.CurrentUICulture = new CultureInfo("fr");
+        CultureInfo.CurrentUICulture = new CultureInfo("fr-FR");
 
 {% endhighlight %}
 {% endtabs %}
@@ -315,4 +315,4 @@ public class Localize : ILocalize
 
 For UWP project need not to be implement the interface, Since the resources automatically recognises the selected language on UWP.
 
-You can download the sample from Here.
+You can download the sample from [here]().

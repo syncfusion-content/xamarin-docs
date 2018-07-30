@@ -22,15 +22,15 @@ The following steps explains how to apply the localization for the above texts i
 * Querying the language which is set in the device
 * Implement the interface
 
-## Add a resex file
+## Add a resx file
 
-In PCL application, Needs to add a required `resex` files in the Resources folder with Build Action should be as EmbeddedResource. Also, File name should contains culture code.    
+In PCL application, Needs to add a required `resx` files in the Resources folder with Build Action should be as EmbeddedResource. Also, File name should contains culture code.    
 
 Example:
 Culture   = French
-File Name = fr-Fr.resex
+File Name = fr-Fr.resx
 
-N> `resex` file should contain control full name like below image. Ex: Syncfusion.SfDataGrid.XForms.fr.resex
+N> `resx` file should contain control full name like below image. Ex: Syncfusion.SfDataGrid.XForms.fr.resx
 
 ![](SfDataGrid_images/DataGridResx.png)
 
@@ -61,19 +61,19 @@ For Android and iOS, It is mandatory to implement the above steps. For UWP, It i
   // In PCL project of MainPage.xaml.cs file
  if (Device.RuntimePlatform == Device.iOS || Device.RuntimePlatform == Device.Android)
             {
-                var v = new CultureInfo("fr");
+                var v = new CultureInfo("fr-Fr");
                 DependencyService.Get<ILocalize>().SetLocale(v);
             }
 
   // In UWP project project of MainPage.xaml.cs file
-        CultureInfo.CurrentUICulture = new CultureInfo("fr");
+        CultureInfo.CurrentUICulture = new CultureInfo("fr-Fr");
 
 {% endhighlight %}
 {% endtabs %}
 
 ## Implement the interface
 
-To get the localized text from added `resex` file needs to implement the interface from PCL to Android and IOS renderer project like below code example.
+To get the localized text from added `resx` file needs to implement the interface from PCL to Android and IOS renderer project like below code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -317,4 +317,4 @@ public class Localize : ILocalize
 
 For UWP project need not to be implement the interface, Since the resources automatically recognises the selected language on UWP.
 
-You can download the sample from Here.
+You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfGrid_Sample1621493322).

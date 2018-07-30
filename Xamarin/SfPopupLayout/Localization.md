@@ -314,4 +314,4 @@ public class Localize : ILocalize
 
 For UWP project need not to be implement the interface, Since the resources automatically recognises the selected language on UWP.
 
-You can download the sample from [here]().
+You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Popup_Localization1318624790).

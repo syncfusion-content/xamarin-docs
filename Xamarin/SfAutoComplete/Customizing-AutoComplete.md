@@ -193,3 +193,47 @@ autoComplete.DropDownTextSize = 16;
 {% endtabs %}
 
 ![](images/Customizing-AutoComplete/customizing-dropdown.png)
+
+### Show clear button
+
+The autocomplete provided the user to show or hide the clear button using `ShowClearButton` property.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+	<autocomplete:SfAutoComplete  x:Name="autoComplete" ShowClearButton="true"/>
+
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+autoComplete.ShowClearButton = true;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Customizing clear button
+
+The user can customize the clear button color in the autocomplete using `ClearButtonColor` Property.
+
+N> `ClearButtonColor` property is available only on iOS and Android platform.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+	<autocomplete:SfAutoComplete  x:Name="autoComplete" ClearButtonColor="Red"/>
+
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+autoComplete.ClearButtonColor = Color.Red;
+
+{% endhighlight %}
+
+{% endtabs %}

@@ -60,12 +60,147 @@ Main content of NavigationDrawer is always visible and it can be set using `Cont
 
 {% highlight c# %}
 
+ public partial class MainPage : ContentPage
+    {
+        SfNavigationDrawer navigationDrawer = new SfNavigationDrawer() { DrawerHeaderHeight = 160 };
+        Label label1;
+        public MainPage()
+        {
+            InitializeComponent();
+            Grid grid = new Grid();
+            grid.BackgroundColor = Color.White;
+            RowDefinition rowDef1 = new RowDefinition() { Height = GridLength.Auto };
+            RowDefinition rowDef2 = new RowDefinition() { Height = GridLength.Star };
+            grid.RowDefinitions.Add(rowDef1);
+            grid.RowDefinitions.Add(rowDef2);
+
+            StackLayout layout = new StackLayout() { BackgroundColor = Color.FromHex("#1aa1d6"), Orientation = StackOrientation.Horizontal };
+            var hamburgerButton = new Button
+            {
+                Text = "StackLayout",
+                HeightRequest = 50,
+                WidthRequest = 50,
+                HorizontalOptions = LayoutOptions.Start,
+                FontSize = 20,
+                BackgroundColor = Color.FromHex("#1aa1d6")
+            };
+            hamburgerButton.Clicked += hamburgerButton_Clicked;
+
+            var label = new Label
+            {
+                HeightRequest = 50,
+                HorizontalTextAlignment = TextAlignment.Center,
+                VerticalTextAlignment = TextAlignment.Center,
+                Text = "Home",
+                FontSize = 16,
+                TextColor = Color.White,
+                BackgroundColor = Color.FromHex("#1aa1d6")
+            };
+            layout.Children.Add(hamburgerButton);
+            layout.Children.Add(label);
+
+            label1 = new Label
+            {
+                HorizontalOptions = LayoutOptions.Center,
+                VerticalOptions = LayoutOptions.Center,
+                Text = "Content View",
+                FontSize = 14,
+                TextColor = Color.Black
+            };
+            grid.Children.Add(layout, 0, 0);
+            grid.Children.Add(label1, 0, 1);
+            navigationDrawer.ContentView = grid;
+
+            Grid grid1 = new Grid();
+            grid1.BackgroundColor = Color.FromHex("#1aa1d6");
+            RowDefinition rowDef3 = new RowDefinition() { Height = 120 };
+            RowDefinition rowDef4 = new RowDefinition() { Height = 40 };
+            grid1.RowDefinitions.Add(rowDef3);
+            grid1.RowDefinitions.Add(rowDef4);
+
+            var image = new Image
+            {
+                Source = (FileImageSource)ImageSource.FromFile("user.png"),
+                HeightRequest = 110,
+                Margin = new Thickness(0, 10, 0, 0),
+                BackgroundColor = Color.FromHex("#1aa1d6"),
+                HorizontalOptions = LayoutOptions.Center,
+                VerticalOptions = LayoutOptions.Center
+            };
+
+            var label2 = new Label
+            {
+                Text = "James Pollock",
+                HorizontalTextAlignment = TextAlignment.Center,
+                HorizontalOptions = LayoutOptions.Center,
+                FontSize = 20,
+                TextColor = Color.White
+            };
+            grid1.Children.Add(image, 0, 0);
+            grid1.Children.Add(label2, 0, 1);
+            navigationDrawer.DrawerHeaderView = grid1;
+
+            ListView listView = new ListView();
+            listView.ItemSelected += listView_ItemSelected;
+            StackLayout layout1 = new StackLayout() { HeightRequest = 40 };
+            var label3 = new Label
+            {
+                Margin = new Thickness(10, 7, 0, 0),
+                TextColor = Color.Black,
+                FontSize = 16,
+            };
+            label3.SetBinding(Label.TextProperty, "Text");
+            navigationDrawer.DrawerContentView = listView;
+            this.Content = navigationDrawer;
+
+            navigationDrawer.DrawerWidth = 200;
+            hamburgerButton.Image = (FileImageSource)ImageSource.FromFile("hamburger_icon.png");
+            List<string> list = new List<string>();
+            list.Add("Home");
+            list.Add("Profile");
+            list.Add("Inbox");
+            list.Add("Out box");
+            list.Add("Sent");
+            list.Add("Draft");
+            listView.ItemsSource = list;
+        }
+
+        void hamburgerButton_Clicked(object sender, EventArgs e)
+        {
+            navigationDrawer.ToggleDrawer();
+        }
+
+        private void listView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            if (e.SelectedItem.ToString() == "Home")
+                label1.Text = "Home";
+            else if (e.SelectedItem.ToString() == "Profile")
+                label1.Text = "Profile";
+            else if (e.SelectedItem.ToString() == "Inbox")
+                label1.Text = "Inbox";
+            else if (e.SelectedItem.ToString() == "Out box")
+                label1.Text = "Out box";
+            else if (e.SelectedItem.ToString() == "Sent")
+                label1.Text = "Sent";
+            else if (e.SelectedItem.ToString() == "Draft")
+                label1.Text = "The folder is empty";
+            navigationDrawer.ToggleDrawer();
+        }
+    }
+
+  
+{% endhighlight %}
+
+{% endtabs %}
+
+The code behind code which is common for xaml and c# code are given below
+
+{% highlight c# %}
+
 public MainPage()
 
         {
             InitializeComponent();
-            navigationDrawer.DrawerWidth = 200;
-            hamburgerButton.Image = (FileImageSource)ImageSource.FromFile("hamburger_icon.png");
             List<string> list = new List<string>();
             list.Add("Home");
             list.Add("Profile");
@@ -98,9 +233,6 @@ public MainPage()
             navigationDrawer.ToggleDrawer();
         }
 
-  
-{% endhighlight %}
-
-{% endtabs %}
+        {% endhighlight %}
 
 ![](Images/MainContent.png)

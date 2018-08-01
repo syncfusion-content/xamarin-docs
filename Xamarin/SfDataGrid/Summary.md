@@ -353,11 +353,11 @@ public class GroupCaptionConverter : IValueConverter
 
 Group summary values are calculated based on records in the group. The summary information will be displayed at the bottom of each group. You can view the group summary row by expanding the corresponding group header. The data grid adds any number of group summary row.
 
-Add group summary rows in the data grid by adding the [GridSummaryRow](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSummaryRow.html) to [SfDataGrid.GroupSummaryRows](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupSummaryRows.html) collection.
+Add group summary rows in the data grid by adding the [GridGroupSummaryRow](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridGroupSummaryRow.html) to [SfDataGrid.GroupSummaryRows](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupSummaryRows.html) collection.
 
 ### Displaying summary in the row
 
-The summary information can be displayed in the row by setting the [GridSummaryRow.ShowSummaryInRow](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSummaryRow~ShowSummaryInRow.html) to `true` and by defining summary columns. You have to define the [GridSummaryRow.Title](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSummaryRow~Title.html) based on the [GridSummaryColumn.Name](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSummaryRow~Name.html) property to format summary columns value in a row.
+The summary information can be displayed in the row by setting the [GridGroupSummaryRow.ShowSummaryInRow](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSummaryRow~ShowSummaryInRow.html) to `true` and by defining summary columns. You have to define the [GridGroupSummaryRow.Title](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSummaryRow~Title.html) based on the [GridGroupSummaryRow.Name](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSummaryRow~Name.html) property to format summary columns value in a row.
  
 Refer to [Formatting Summary](#formatting-summary) section to know more about how to format summary. 
 
@@ -378,9 +378,9 @@ Refer to [Formatting Summary](#formatting-summary) section to know more about ho
         </sfgrid:SfDataGrid.GroupColumnDescriptions>
 
         <sfgrid:SfDataGrid.GroupSummaryRows>
-            <sfgrid:GridSummaryRow ShowSummaryInRow="True" Title="Total Salary: {Salary} for {customerID} members">
+            <sfgrid:GridGroupSummaryRow ShowSummaryInRow="True" Title="Total Salary: {Salary} for {customerID} members">
                 
-                <sfgrid:GridSummaryRow.SummaryColumns>
+                <sfgrid:GridGroupSummaryRow.SummaryColumns>
 
                     <sfgrid:GridSummaryColumn Name="Salary" 
                                                   MappingName="Salary" 
@@ -394,16 +394,16 @@ Refer to [Formatting Summary](#formatting-summary) section to know more about ho
                                                   SummaryType="CountAggregate">
                     </sfgrid:GridSummaryColumn>
 
-                </sfgrid:GridSummaryRow.SummaryColumns>
+                </sfgrid:GridGroupSummaryRow.SummaryColumns>
                 
-            </sfgrid:GridSummaryRow>
+            </sfgrid:GridGroupSummaryRow>
         </sfgrid:SfDataGrid.GroupSummaryRows>
 
   </sfgrid:SfDataGrid>
 </ContentPage>
 {% endhighlight %}
 {% highlight c# %}
-            this.dataGrid.GroupSummaryRows.Add(new GridSummaryRow()
+            this.dataGrid.GroupSummaryRows.Add(new GridGroupSummaryRow()
             {
                 ShowSummaryInRow = true,
                 Title = "Total Salary: {Salary} for {customerID} members",
@@ -434,7 +434,7 @@ Refer to [Formatting Summary](#formatting-summary) section to know more about ho
 
 ### Displaying summary in the column
 
-The summary information can be displayed in the column by setting the [GridSummaryRow.ShowSummaryInRow](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSummaryRow~ShowSummaryInRow.html) to `false` and by defining summary columns. To calculate summary based on the column, specify the following properties:
+The summary information can be displayed in the column by setting the [GridGroupSummaryRow.ShowSummaryInRow](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSummaryRow~ShowSummaryInRow.html) to `false` and by defining summary columns. To calculate summary based on the column, specify the following properties:
 
 1. [GridSummaryColumn.MappingName](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSummaryColumn~MappingName.html): Provides MappingName of the column (Property name of data object) that you want to calculate summary.
 2. [GridSummaryColumn.SummaryType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSummaryColumn~SummaryType.html): Provides different built-in summary calculation functions for various types.
@@ -457,9 +457,9 @@ In the following code snippet, summary is defined for `Salary` and `CustomerID` 
                        ColumnSizer="Star">
 
        <sfgrid:SfDataGrid.GroupSummaryRows>
-            <sfgrid:GridSummaryRow ShowSummaryInRow="False" >
+            <sfgrid:GridGroupSummaryRow ShowSummaryInRow="False" >
                 
-                <sfgrid:GridSummaryRow.SummaryColumns>
+                <sfgrid:GridGroupSummaryRow.SummaryColumns>
 
                     <sfgrid:GridSummaryColumn Name="Salary" 
                                                   MappingName="Salary" 
@@ -473,9 +473,9 @@ In the following code snippet, summary is defined for `Salary` and `CustomerID` 
                                                   SummaryType="CountAggregate">
                     </sfgrid:GridSummaryColumn>
 
-                </sfgrid:GridSummaryRow.SummaryColumns>
+                </sfgrid:GridGroupSummaryRow.SummaryColumns>
                 
-            </sfgrid:GridSummaryRow>
+            </sfgrid:GridGroupSummaryRow>
         </sfgrid:SfDataGrid.GroupSummaryRows>
 
 
@@ -485,7 +485,7 @@ In the following code snippet, summary is defined for `Salary` and `CustomerID` 
 {% endhighlight %}
 
 {% highlight c# %}
-            this.dataGrid.GroupSummaryRows.Add(new GridSummaryRow()
+            this.dataGrid.GroupSummaryRows.Add(new GridGroupSummaryRow()
             {
                 ShowSummaryInRow = false,
                 SummaryColumns = new ObservableCollection<ISummaryColumn>()
@@ -555,9 +555,9 @@ Refer the below code example in which a label is loaded in the group summary tem
        </sfgrid:SfDataGrid.GroupSummaryTemplate>
 
    <sfgrid:SfDataGrid.GroupSummaryRows>
-            <sfgrid:GridSummaryRow ShowSummaryInRow="True">
+            <sfgrid:GridGroupSummaryRow ShowSummaryInRow="True">
                 
-                <sfgrid:GridSummaryRow.SummaryColumns>
+                <sfgrid:GridGroupSummaryRow.SummaryColumns>
 
                     <sfgrid:GridSummaryColumn Name="Salary" 
                                                   MappingName="Salary" 
@@ -571,9 +571,9 @@ Refer the below code example in which a label is loaded in the group summary tem
                                                   SummaryType="CountAggregate">
                     </sfgrid:GridSummaryColumn>
 
-                </sfgrid:GridSummaryRow.SummaryColumns>
+                </sfgrid:GridGroupSummaryRow.SummaryColumns>
                 
-            </sfgrid:GridSummaryRow>
+            </sfgrid:GridGroupSummaryRow>
         </sfgrid:SfDataGrid.GroupSummaryRows>
 </sfgrid:SfDataGrid>
 
@@ -638,9 +638,9 @@ Refer the below code example in which a label is loaded in the template of group
     </sfgrid:SfDataGrid.Columns>
    
      <sfgrid:SfDataGrid.GroupSummaryRows>
-            <sfgrid:GridSummaryRow ShowSummaryInRow="False" >
+            <sfgrid:GridGroupSummaryRow ShowSummaryInRow="False" >
                 
-                <sfgrid:GridSummaryRow.SummaryColumns>
+                <sfgrid:GridGroupSummaryRow.SummaryColumns>
 
                     <sfgrid:GridSummaryColumn Name="Salary"
                                                   MappingName="Salary" 
@@ -668,9 +668,9 @@ Refer the below code example in which a label is loaded in the template of group
                         </sfgrid:GridSummaryColumn.Template>
                         
                     </sfgrid:GridSummaryColumn>
-                    </sfgrid:GridSummaryRow.SummaryColumns>
+                    </sfgrid:GridGroupSummaryRow.SummaryColumns>
                 
-            </sfgrid:GridSummaryRow>
+            </sfgrid:GridGroupSummaryRow>
         </sfgrid:SfDataGrid.GroupSummaryRows>
 
     </sfgrid:SfDataGrid>
@@ -1306,6 +1306,8 @@ Each summary has a specific key using which the custom summary renderer can be r
 
 The data grid allows customizing the table summary by extending the [GridTableSummaryCellRenderer](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridTableSummaryCellRenderer.html) class.
 
+N> By default, `LoadUIView` property of `GridColumn` is `false` for android. Hence, `OnInitializeDisplayView()` will not be called.
+
 To customize the table summary, follow the code example:
 
 {% highlight c#%}
@@ -1408,5 +1410,93 @@ public class GridCaptionSummaryCellRendererExt : GridCaptionSummaryCellRenderer
 {% endtabs %}
 
 ![](SfDataGrid_images/Customizingcaptionsummary.png)
+
+### Customizing group summary
+
+The data grid customizes the group summary by overriding the [GridGroupSummaryCellRenderer](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridGroupSummaryCellRenderer.html).
+
+N> By default, `LoadUIView` property of `GridColumn` is `false` for android. Hence, `OnInitializeDisplayView()` will not be called.
+
+{% tabs %}
+{% highlight xaml %}
+
+<sfgrid:SfDataGrid x:Name="dataGrid"      
+                   AutoGenerateColumns="False" 
+                   ItemsSource="{Binding OrdersInfo}">
+
+    <sfgrid:SfDataGrid.Columns>
+        <sfgrid:GridTextColumn MappingName="OrderID" LoadUIView="True" Width="85" />
+        <sfgrid:GridTextColumn MappingName="Salary" LoadUIView="True" Width="90"/>
+        <sfgrid:GridTextColumn MappingName="CustomerID" LoadUIView="True" Width="150"/>
+        <sfgrid:GridTextColumn MappingName="Country" LoadUIView="True" Width="90"/>
+    </sfgrid:SfDataGrid.Columns>
+
+    <sfgrid:SfDataGrid.GroupColumnDescriptions>
+        <sfgrid:GroupColumnDescription ColumnName="Salary"  />
+    </sfgrid:SfDataGrid.GroupColumnDescriptions>
+</sfgrid:SfDataGrid>
+
+{% endhighlight %}
+
+{% highlight c#%}
+
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+
+        // To remove default summary and Add custom summary.
+        dataGrid.CellRenderers.Remove("GroupSummary");
+        dataGrid.CellRenderers.Add("GroupSummary", new GridGroupSummaryCellRendererExt());
+
+        dataGrid.GroupSummaryRows.Add(new GridGroupSummaryRow()
+        {
+            ShowSummaryInRow = true,
+            Title = "Total Salary: {Salary} for {customerID} members",
+            SummaryColumns = new ObservableCollection<ISummaryColumn>()
+            {
+                new GridSummaryColumn()
+                {
+                    Name="Salary",
+                    MappingName="Salary",
+                    SummaryType=SummaryType.DoubleAggregate,
+                    Format="{Sum}"
+                },
+                new GridSummaryColumn()
+                {
+                    Name="customerID",
+                    MappingName="customerID",
+                    Format="{Count}",
+                    SummaryType=SummaryType.CountAggregate
+                }
+            }
+        });
+    }
+}
+
+// Custom CellRenderer
+public class GridGroupSummaryCellRendererExt : GridGroupSummaryCellRenderer
+{
+    public GridGroupSummaryCellRendererExt()
+    {
+    }
+
+    public override void OnInitializeDisplayView(DataColumnBase dataColumn, SfLabel view)
+    {
+        base.OnInitializeDisplayView(dataColumn, view);
+        base.OnInitializeDisplayView(dataColumn, view);
+        view.HorizontalTextAlignment = TextAlignment.Center;
+        view.BackgroundColor = Color.Gray;
+        view.FontAttributes = FontAttributes.Italic;
+        view.FontSize = 20;
+        view.TextColor = Color.White;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![](SfDataGrid_images/Customizinggroupsummary.jpg)
 
 You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SummaryDemo-142807621) .

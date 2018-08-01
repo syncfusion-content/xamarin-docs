@@ -7,21 +7,43 @@ control : SfComboBox
 documentation : ug
 ---
 
-# Filtering
-ComboBox provides enable the filer option for filtering the suggestions in drop down. 
+# Filtering 
+The combo box enables the filer option for filtering the suggestions in the drop-down. 
 
 {% tabs %}	
 
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30"> 
-<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true" MaximumDropDownHeight="150" /> 
+    <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true" MaximumDropDownHeight="150">
+        <combobox:SfComboBox.DataSource>
+			<ListCollection:List x:TypeArguments="x:String">
+                <x:String> Afghanistan </x:String>
+                <x:String> Albania </x:String>
+                <x:String> Algeria</x:String>
+                <x:String> American Samoa </x:String>
+                <x:String> Andorra </x:String>
+                <x:String> Angola </x:String>
+                <x:String> Anguilla</x:String>
+                <x:String> Antarctica </x:String>
+                <x:String> Antigua and Barbuda </x:String>
+                <x:String> Argentina </x:String>
+            </ListCollection:List>
+        </combobox:SfComboBox.DataSource>
+	 </combobox:SfComboBox>               
 </StackLayout>
 
 {% endhighlight %}
 	
 {% highlight c# %}
 	
+StackLayout layout = new StackLayout() 
+{ 
+	VerticalOptions = LayoutOptions.Start, 
+	HorizontalOptions = LayoutOptions.Start, 
+	Padding = new Thickness(30) 
+};	
+
 List<String> countryNames = new List<String>();
 countryNames.Add("Afghanistan"); 
 countryNames.Add("Albania");
@@ -33,9 +55,15 @@ countryNames.Add("Anguilla");
 countryNames.Add("Antarctica");
 countryNames.Add("Antigua and Barbuda");
 countryNames.Add("Argentina");
+
+SfComboBox comboBox = new SfComboBox();
+comboBox.HeightRequest = 40;
 comboBox.DataSource = countryNames; 
 comboBox.IsEditableMode = true;
 comboBox.AllowFiltering = true;
+
+layout.Children.Add(comboBox); 
+Content = layout;
 	 
 {% endhighlight %}
 
@@ -43,9 +71,9 @@ comboBox.AllowFiltering = true;
 
 ![](images/ComboBox-Filtering-Options/allowfiltering.png)
 
-## Types of Filtering Options
+## Filtering types
 
-The phenomenon of string comparison for filtering suggestions can be changed using the `SuggestionMode` property. The default filtering strategy is “StartsWith” and it is case insensitive. The available filtering modes are
+The string comparison for filtering suggestions can be changed using the `SuggestionMode` property. The default filtering type is “StartsWith”, and it is case insensitive. The available filtering modes are,
 
 * StartsWith
 
@@ -65,32 +93,54 @@ The phenomenon of string comparison for filtering suggestions can be changed usi
 
 * Custom
 
-### Filtering Words that Starts with Input Text
+### Filtering words that starts with input text
 
-Displays all the matches that starts with the typed characters in control. This strategy is case in-sensitive.
+Displays all the matches that start with the typed characters in control. This strategy is case in-sensitive.
 	
 {% tabs %}	
 
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true" SuggestionMode="StartsWith"/>
+	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true" SuggestionMode="StartsWith">
+        <combobox:SfComboBox.DataSource>
+			<ListCollection:List x:TypeArguments="x:String">
+                <x:String> Uganda </x:String>
+                <x:String> Ukraine </x:String>
+                <x:String> UUnited Arab Emirates</x:String>
+                <x:String> United Kingdom</x:String>
+                <x:String> United States </x:String>
+            </ListCollection:List>
+        </combobox:SfComboBox.DataSource>
+	 </combobox:SfComboBox>              
 </StackLayout>
 
 {% endhighlight %}
 	
 {% highlight c# %}
 	
+StackLayout layout = new StackLayout() 
+{ 
+	VerticalOptions = LayoutOptions.Start, 
+	HorizontalOptions = LayoutOptions.Start, 
+	Padding = new Thickness(30) 
+};	    
 List<String> countryNames = new List<String>();
 countryNames.Add("Uganda");
 countryNames.Add("Ukraine");
 countryNames.Add("United Arab Emirates");
 countryNames.Add("United Kingdom");
 countryNames.Add("United States");
+
+SfComboBox comboBox = new SfComboBox();
+comboBox.HeightRequest = 40;
 comboBox.DataSource = countryNames;
 comboBox.IsEditableMode = true;
 comboBox.AllowFiltering = true;
 comboBox.SuggestionMode = SuggestionMode.StartsWith;
+
+layout.Children.Add(comboBox); 
+Content = layout;
 	 
 {% endhighlight %}
 
@@ -98,32 +148,54 @@ comboBox.SuggestionMode = SuggestionMode.StartsWith;
 
 ![](images/ComboBox-Filtering-Options/starts-with.png)
 
-#### Filtering Words that Starts with Input Text - CaseSensitive
+#### Filtering words that starts with input text - case sensitive
 
-Displays all the matches that starts with the typed characters in control. This strategy is case sensitive.
+Displays all the matches that start with the typed characters in control. This strategy is case sensitive.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<comboBox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true" SuggestionMode="StartsWithCaseSensitive"/> 
+	<comboBox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true" SuggestionMode="StartsWithCaseSensitive">
+        <combobox:SfComboBox.DataSource>
+			<ListCollection:List x:TypeArguments="x:String">
+                <x:String> Uganda </x:String>
+                <x:String> Ukraine </x:String>
+                <x:String> United Arab Emirates</x:String>
+                <x:String> United Kingdom</x:String>
+                <x:String> United States </x:String>
+            </ListCollection:List>
+        </combobox:SfComboBox.DataSource>
+	 </combobox:SfComboBox>           
 </StackLayout>
 
 {% endhighlight %}
 
 {% highlight c# %}
-	
+
+StackLayout layout = new StackLayout() 
+{ 
+	VerticalOptions = LayoutOptions.Start, 
+	HorizontalOptions = LayoutOptions.Start, 
+	Padding = new Thickness(30) 
+};	    
 List<String> countryNames = new List<String>();
 countryNames.Add("Uganda");
 countryNames.Add("Ukraine");
 countryNames.Add("United Arab Emirates");
 countryNames.Add("United Kingdom");
 countryNames.Add("United States");
+
+SfComboBox comboBox = new SfComboBox();
+comboBox.HeightRequest = 40;
 comboBox.DataSource = countryNames;
 comboBox.IsEditableMode = true;
 comboBox.AllowFiltering = true;
-comboBox.SuggestionMode= SuggestionMode.StartsWithCaseSensitive;
+comboBox.SuggestionMode = SuggestionMode.StartsWithCaseSensitive;
+
+layout.Children.Add(comboBox); 
+Content = layout;
 
 {% endhighlight %}
 
@@ -131,22 +203,39 @@ comboBox.SuggestionMode= SuggestionMode.StartsWithCaseSensitive;
 
 ![](images/ComboBox-Filtering-Options/starts-with-case-sensitive.png)
 
-### Filtering Words that Contains the Input Text
+### Filtering words that contain input text
 
-Displays all the matches that contains the typed characters in control. This strategy is case in-sensitive.
+Displays all the matches that contain the typed characters in control. This strategy is case in-sensitive.
 	
 {% tabs %}
 
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true" SuggestionMode="Contains"/>                            
+	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true" SuggestionMode="Contains">
+        <combobox:SfComboBox.DataSource>
+			<ListCollection:List x:TypeArguments="x:String">
+                <x:String> Uganda </x:String>
+                <x:String> Ukraine </x:String>
+                <x:String> United Arab Emirates</x:String>
+                <x:String> United Kingdom</x:String>
+                <x:String> United States </x:String>
+                <x:String> Italy </x:String>
+            </ListCollection:List>
+        </combobox:SfComboBox.DataSource>
+	 </combobox:SfComboBox>                            
 </StackLayout>
 
 {% endhighlight %}
 
 {% highlight c# %}
-	
+
+StackLayout layout = new StackLayout() 
+{ 
+	VerticalOptions = LayoutOptions.Start, 
+	HorizontalOptions = LayoutOptions.Start, 
+	Padding = new Thickness(30) 
+};	    
 List<String> countryNames = new List<String>();
 countryNames.Add("Uganda");
 countryNames.Add("Ukraine");
@@ -154,10 +243,16 @@ countryNames.Add("United Arab Emirates");
 countryNames.Add("United Kingdom");
 countryNames.Add("United States");
 countryNames.Add("Italy");
+
+SfComboBox comboBox = new SfComboBox();
+comboBox.HeightRequest = 40;
 comboBox.DataSource = countryNames;
 comboBox.IsEditableMode = true;
 comboBox.AllowFiltering = true;
-comboBox.SuggestionMode= SuggestionMode.Contains;
+comboBox.SuggestionMode = SuggestionMode.Contains;
+
+layout.Children.Add(comboBox); 
+Content = layout;
 	 
 {% endhighlight %}
 
@@ -165,7 +260,7 @@ comboBox.SuggestionMode= SuggestionMode.Contains;
 
 ![](images/ComboBox-Filtering-Options/contains.png)
 
-#### Filtering Words that Contains the Input Text - CaseSensitive
+#### Filtering words that contain input text - case sensitive
 
 Displays all the matches that contains the typed characters in control. This strategy is case sensitive.
 
@@ -174,13 +269,30 @@ Displays all the matches that contains the typed characters in control. This str
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true" SuggestionMode="ContainsWithCaseSensitive"/>                            
+	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true" SuggestionMode="ContainsWithCaseSensitive">
+        <combobox:SfComboBox.DataSource>
+			<ListCollection:List x:TypeArguments="x:String">
+                <x:String> Uganda </x:String>
+                <x:String> Ukraine </x:String>
+                <x:String> United Arab Emirates </x:String>
+                <x:String> United Kingdom </x:String>
+                <x:String> United States </x:String>
+                <x:String> Italy </x:String>
+            </ListCollection:List>
+        </combobox:SfComboBox.DataSource>
+	 </combobox:SfComboBox>                            
 </StackLayout>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+StackLayout layout = new StackLayout() 
+{ 
+	VerticalOptions = LayoutOptions.Start, 
+	HorizontalOptions = LayoutOptions.Start, 
+	Padding = new Thickness(30) 
+};	    
 List<String> countryNames = new List<String>();
 countryNames.Add("Uganda");
 countryNames.Add("Ukraine");
@@ -188,10 +300,16 @@ countryNames.Add("United Arab Emirates");
 countryNames.Add("United Kingdom");
 countryNames.Add("United States");
 countryNames.Add("Italy");
+
+SfComboBox comboBox = new SfComboBox();
+comboBox.HeightRequest = 40;
 comboBox.DataSource = countryNames;
 comboBox.IsEditableMode = true;
 comboBox.AllowFiltering = true;
-comboBox.SuggestionMode= SuggestionMode.ContainsWithCaseSensitive;
+comboBox.SuggestionMode = SuggestionMode.ContainsWithCaseSensitive;
+
+layout.Children.Add(comboBox); 
+Content = layout;
 
 {% endhighlight %}
 
@@ -199,63 +317,108 @@ comboBox.SuggestionMode= SuggestionMode.ContainsWithCaseSensitive;
 
 ![](images/ComboBox-Filtering-Options/contains-casesensitive.png)
 
-### Filtering Words that Equals the Input Text
+### Filtering words that equals the input text
 
-Displays all the words that completely matches with the typed characters in control. This strategy is case in-sensitive.
+Displays all the words that completely match with the typed characters in control. This strategy is case in-sensitive.
 	
 {% tabs %}
 
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfCpomboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true" SuggestionMode="Equals"/>        
+	<combobox:SfCpomboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true" SuggestionMode="Equals">
+        <combobox:SfComboBox.DataSource>
+			<ListCollection:List x:TypeArguments="x:String">
+                <x:String> Uganda </x:String>
+                <x:String> Ukraine </x:String>
+                <x:String> United Arab Emirates </x:String>
+                <x:String> United Kingdom </x:String>
+                <x:String> United States </x:String>
+            </ListCollection:List>
+        </combobox:SfComboBox.DataSource>
+	 </combobox:SfComboBox>        
 </StackLayout>
 
 {% endhighlight %}
 
 {% highlight c# %}
 	
+StackLayout layout = new StackLayout() 
+{ 
+	VerticalOptions = LayoutOptions.Start, 
+	HorizontalOptions = LayoutOptions.Start, 
+	Padding = new Thickness(30) 
+};	    
 List<String> countryNames = new List<String>();
 countryNames.Add("Uganda");
 countryNames.Add("Ukraine");
 countryNames.Add("United Arab Emirates");
 countryNames.Add("United Kingdom");
 countryNames.Add("United States");
+countryNames.Add("Italy");
+
+SfComboBox comboBox = new SfComboBox();
+comboBox.HeightRequest = 40;
 comboBox.DataSource = countryNames;
 comboBox.IsEditableMode = true;
 comboBox.AllowFiltering = true;
-comboBox.SuggestionMode= SuggestionMode.Equals;
+comboBox.SuggestionMode = SuggestionMode.Equals;
+
+layout.Children.Add(comboBox); 
+Content = layout;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-#### Filtering Words that Equals the Input Text - CaseSensitive
+#### Filtering words that equals input text - case sensitive
 
-Displays all the words that completely matches with the typed characters in control. This strategy is case sensitive.
+Displays all the words that completely match with the typed characters in control. This strategy is case sensitive.
 	
 {% tabs %}
 
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true" SuggestionMode="EqualsWithCaseSensitive"/>             
+	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true" SuggestionMode="EqualsWithCaseSensitive">
+        <combobox:SfComboBox.DataSource>
+			<ListCollection:List x:TypeArguments="x:String">
+                <x:String> Uganda </x:String>
+                <x:String> Ukraine </x:String>
+                <x:String> United Arab Emirates </x:String>
+                <x:String> United Kingdom </x:String>
+                <x:String> United States </x:String>
+            </ListCollection:List>
+        </combobox:SfComboBox.DataSource>
+	 </combobox:SfComboBox>             
 </StackLayout>
 
 {% endhighlight %}
 
 {% highlight c# %}
-	
+
+StackLayout layout = new StackLayout() 
+{ 
+	VerticalOptions = LayoutOptions.Start, 
+	HorizontalOptions = LayoutOptions.Start, 
+	Padding = new Thickness(30) 
+};	    
 List<String> countryNames = new List<String>();
 countryNames.Add("Uganda");
 countryNames.Add("Ukraine");
 countryNames.Add("United Arab Emirates");
 countryNames.Add("United Kingdom");
 countryNames.Add("United States");
+
+SfComboBox comboBox = new SfComboBox();
+comboBox.HeightRequest = 40;
 comboBox.DataSource = countryNames;
 comboBox.IsEditableMode = true;
 comboBox.AllowFiltering = true;
-comboBox.SuggestionMode= SuggestionMode.EqualsWithCaseSensitive;
+comboBox.SuggestionMode = SuggestionMode.EqualsWithCaseSensitive;
+
+layout.Children.Add(comboBox); 
+Content = layout;
 
 {% endhighlight %}
 
@@ -263,7 +426,7 @@ comboBox.SuggestionMode= SuggestionMode.EqualsWithCaseSensitive;
 
 ### Custom
 
-Filter items in the suggestion list based on a custom search by the user. This will help to apply our typo toleration functionality to the control.
+Filters items in the suggestion list based on a custom search by user. This helps to apply our typo toleration functionality to the control.
 
 ![](images/ComboBox-Filtering-Options/custom_filter.png)
 
@@ -273,7 +436,17 @@ Filter items in the suggestion list based on a custom search by the user. This w
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" DropDownTextSize="20" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true" ComboBoxMode="Suggest" MaximumDropDownHeight="200" SuggestionMode="Custom"/>
+	<combobox:SfComboBox HeightRequest="40" DropDownTextSize="20" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true" ComboBoxMode="Suggest" MaximumDropDownHeight="200" SuggestionMode="Custom">
+        <combobox:SfComboBox.DataSource>
+			<ListCollection:List x:TypeArguments="x:String">
+                <x:String> Albania </x:String>
+                <x:String> Algeria </x:String>
+                <x:String> American Samoa </x:String>
+                <x:String> Andorra </x:String>
+                <x:String> Anguilla </x:String>
+            </ListCollection:List>
+        </combobox:SfComboBox.DataSource>
+	 </combobox:SfComboBox>
 </StackLayout>
 
 {% endhighlight %}
@@ -283,6 +456,12 @@ Filter items in the suggestion list based on a custom search by the user. This w
     public ComboBoxPage()
     {
         InitializeComponent();
+        StackLayout layout = new StackLayout() 
+        { 
+	        VerticalOptions = LayoutOptions.Start, 
+	        HorizontalOptions = LayoutOptions.Start, 
+	        Padding = new Thickness(30) 
+        };	
         List<string> list = new List<string>();
         list.Add("Albania");
         list.Add("Algeria");
@@ -294,6 +473,9 @@ Filter items in the suggestion list based on a custom search by the user. This w
         comboBox.IsEditableMode = true;
         comboBox.AllowFiltering = true;
         comboBox.Filter = ContainingSpaceFilter;
+
+        layout.Children.Add(comboBox); 
+        Content = layout;
     }
     public bool ContainingSpaceFilter(string search, object item)
     {
@@ -327,33 +509,55 @@ Filter items in the suggestion list based on a custom search by the user. This w
 
     {% endtabs %}
 
-### Filtering Words that Ends with the Input Text
+### Filtering words that end with input text
 
-Displays all the matches that ends with the typed characters in control. This strategy is case in-sensitive.
+Displays all the matches that end with the typed characters in control. This strategy is case in-sensitive.
 
 {% tabs %}
 	
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" WidthRequest="180" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true" SuggestionMode="EndsWith"/>                            
+	<combobox:SfComboBox HeightRequest="40" WidthRequest="180" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true" SuggestionMode="EndsWith">
+        <combobox:SfComboBox.DataSource>
+			<ListCollection:List x:TypeArguments="x:String">
+                <x:String> Uganda </x:String>
+                <x:String> Ukraine </x:String>
+                <x:String> United Arab Emirates </x:String>
+                <x:String> United Kingdom </x:String>
+                <x:String> United States </x:String>
+            </ListCollection:List>
+        </combobox:SfComboBox.DataSource>
+	 </combobox:SfComboBox>                            
 </StackLayout>
 
 {% endhighlight %}
 
 {% highlight c# %}
-	
+
+StackLayout layout = new StackLayout() 
+{ 
+	VerticalOptions = LayoutOptions.Start, 
+	HorizontalOptions = LayoutOptions.Start, 
+	Padding = new Thickness(30) 
+};	    
 List<String> countryNames = new List<String>();
 countryNames.Add("Uganda");
 countryNames.Add("Ukraine");
 countryNames.Add("United Arab Emirates");
 countryNames.Add("United Kingdom");
 countryNames.Add("United States");
+
+SfComboBox comboBox = new SfComboBox();
+comboBox.HeightRequest = 40;
 comboBox.DataSource = countryNames;
 comboBox.IsEditableMode = true;
 comboBox.AllowFiltering = true;
-comboBox.SuggestionMode= SuggestionMode.EndsWith;
- 
+comboBox.SuggestionMode = SuggestionMode.EndsWith;
+
+layout.Children.Add(comboBox); 
+Content = layout;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -361,7 +565,7 @@ comboBox.SuggestionMode= SuggestionMode.EndsWith;
 ![](images/ComboBox-Filtering-Options/ends-with.png)
 
 
-#### Filtering Words that Ends with the Input Text - CaseSensitive 
+#### Filtering words that end with input text - case sensitive 
 
 Displays all the matches that ends with the typed characters in control. This strategy is case sensitive.
 	
@@ -370,23 +574,45 @@ Displays all the matches that ends with the typed characters in control. This st
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true"  SuggestionMode="EndsWithCaseSensitive"/>           
+	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true"  SuggestionMode="EndsWithCaseSensitive">
+        <combobox:SfComboBox.DataSource>
+			<ListCollection:List x:TypeArguments="x:String">
+                <x:String> Uganda </x:String>
+                <x:String> Ukraine </x:String>
+                <x:String> United Arab Emirates </x:String>
+                <x:String> United Kingdom </x:String>
+                <x:String> United States </x:String>
+            </ListCollection:List>
+        </combobox:SfComboBox.DataSource>
+	 </combobox:SfComboBox>           
 </StackLayout>
 
 {% endhighlight %}
 
 {% highlight c# %}
-	
+
+StackLayout layout = new StackLayout() 
+{ 
+	VerticalOptions = LayoutOptions.Start, 
+	HorizontalOptions = LayoutOptions.Start, 
+	Padding = new Thickness(30) 
+};	    
 List<String> countryNames = new List<String>();
 countryNames.Add("Uganda");
 countryNames.Add("Ukraine");
 countryNames.Add("United Arab Emirates");
 countryNames.Add("United Kingdom");
 countryNames.Add("United States");
+
+SfComboBox comboBox = new SfComboBox();
+comboBox.HeightRequest = 40;
 comboBox.DataSource = countryNames;
 comboBox.IsEditableMode = true;
 comboBox.AllowFiltering = true;
-comboBox.SuggestionMode= SuggestionMode.EndsWithCaseSensitive;
+comboBox.SuggestionMode = SuggestionMode.EndsWithCaseSensitive;
+
+layout.Children.Add(comboBox); 
+Content = layout;
 
 {% endhighlight %}
 
@@ -395,44 +621,66 @@ comboBox.SuggestionMode= SuggestionMode.EndsWithCaseSensitive;
 ![](images/ComboBox-Filtering-Options/ends-with-case-sensitive.png)
 
 
-## ComboBox Modes
+## ComboBox modes
 
-ComboBox provides three different ways to display the filtered suggestions. They are 
+The combo box provides three different ways to display the filtered suggestions. They are 
 
-* Suggest - displaying suggestion in drop down list
+* Suggest - Displays suggestions in drop-down list
 
-* Append - appending the first suggestion to text
+* Append - Appends the first suggestion to text
 
-* SuggestAppend - Both of these
+* SuggestAppend - Both suggests and appends.
 
-`ComboBoxMode` property is used to choose the suggestion display mode in SfComboBox control. The default value is Suggest.
+The `ComboBoxMode` property is used to choose the suggestion display mode in SfComboBox control. The default value is Suggest.
 
-## Suggesting Choices in List
+## Suggesting choices in List
 
-The filtered suggestions are displayed in a drop down list. User can pick an item from the list.
+The filtered suggestions are displayed in a drop-down list. User can pick an item from the list.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true"  ComboBoxMode="Suggest"/>                      
+	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true"  ComboBoxMode="Suggest">
+        <combobox:SfComboBox.DataSource>
+			<ListCollection:List x:TypeArguments="x:String">
+                <x:String> Uganda </x:String>
+                <x:String> Ukraine </x:String>
+                <x:String> United Arab Emirates </x:String>
+                <x:String> United Kingdom </x:String>
+                <x:String> United States </x:String>
+            </ListCollection:List>
+        </combobox:SfComboBox.DataSource>
+	 </combobox:SfComboBox>                      
 </StackLayout> 
 		  
 {% endhighlight %}
 
 {% highlight c# %}
-	
+
+StackLayout layout = new StackLayout() 
+{ 
+	VerticalOptions = LayoutOptions.Start, 
+	HorizontalOptions = LayoutOptions.Start, 
+	Padding = new Thickness(30) 
+};	    
 List<String> countryNames = new List<String>();
 countryNames.Add("Uganda");
 countryNames.Add("Ukraine");
 countryNames.Add("United Arab Emirates");
 countryNames.Add("United Kingdom");
 countryNames.Add("United States");
+
+SfComboBox comboBox = new SfComboBox();
+comboBox.HeightRequest = 40;
 comboBox.DataSource = countryNames;
 comboBox.IsEditableMode = true;
 comboBox.AllowFiltering = true;
 comboBox.ComboBoxMode = ComboBoxMode.Suggest;
+
+layout.Children.Add(comboBox); 
+Content = layout;
 	 
 {% endhighlight %}
 
@@ -440,7 +688,7 @@ comboBox.ComboBoxMode = ComboBoxMode.Suggest;
 
 ![](images/ComboBox-Filtering-Options/suggest.png)
 
-## Appending Suggestion to Text
+## Appending suggestions to text
 
 The first item in filtered suggestions is appended to SfComboBox text. In this mode, drop down remains closed.
 
@@ -449,23 +697,45 @@ The first item in filtered suggestions is appended to SfComboBox text. In this m
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true"  ComboBoxMode="Append"/>                       
+	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true"  ComboBoxMode="Append">
+        <combobox:SfComboBox.DataSource>
+			<ListCollection:List x:TypeArguments="x:String">
+                <x:String> Uganda </x:String>
+                <x:String> Ukraine </x:String>
+                <x:String> United Arab Emirates </x:String>
+                <x:String> United Kingdom </x:String>
+                <x:String> United States </x:String>
+            </ListCollection:List>
+        </combobox:SfComboBox.DataSource>
+	 </combobox:SfComboBox>                       
 </StackLayout> 
 		  
 {% endhighlight %}
 
 {% highlight c# %}
-	
+
+StackLayout layout = new StackLayout() 
+{ 
+	VerticalOptions = LayoutOptions.Start, 
+	HorizontalOptions = LayoutOptions.Start, 
+	Padding = new Thickness(30) 
+};	    
 List<String> countryNames = new List<String>();
 countryNames.Add("Uganda");
 countryNames.Add("Ukraine");
 countryNames.Add("United Arab Emirates");
 countryNames.Add("United Kingdom");
 countryNames.Add("United States");
+
+SfComboBox comboBox = new SfComboBox();
+comboBox.HeightRequest = 40;
 comboBox.DataSource = countryNames;
 comboBox.IsEditableMode = true;
 comboBox.AllowFiltering = true;
 comboBox.ComboBoxMode = ComboBoxMode.Append;
+
+layout.Children.Add(comboBox); 
+Content = layout;
 	 
 {% endhighlight %}
 
@@ -473,32 +743,54 @@ comboBox.ComboBoxMode = ComboBoxMode.Append;
 
 ![](images/ComboBox-Filtering-Options/append.png)
 
-## Suggesting Choices and Appending Suggestions to Text
+## Suggesting choices and appending suggestions to text
 
-The text is appended to the first matched item in the suggestions collection and filtered suggestions are displayed in a drop down list. The user can pick from a list directly or use up and down keys for browsing the list.
+The text is appended to the first matched item in the suggestions collection, and filtered suggestions are displayed in a drop-down list. Users can pick an item from a list directly or use up and down keys for browsing the list.
 	
 {% tabs %}	
 
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true"  ComboBoxMode="SuggestAppend"/>                
+	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true"  ComboBoxMode="SuggestAppend">
+        <combobox:SfComboBox.DataSource>
+			<ListCollection:List x:TypeArguments="x:String">
+                <x:String> Uganda </x:String>
+                <x:String> Ukraine </x:String>
+                <x:String> United Arab Emirates </x:String>
+                <x:String> United Kingdom </x:String>
+                <x:String> United States </x:String>
+            </ListCollection:List>
+        </combobox:SfComboBox.DataSource>
+	 </combobox:SfComboBox>                
 </StackLayout> 
 		  
 {% endhighlight %}
 	
 {% highlight c# %}
-	
+
+StackLayout layout = new StackLayout() 
+{ 
+	VerticalOptions = LayoutOptions.Start, 
+	HorizontalOptions = LayoutOptions.Start, 
+	Padding = new Thickness(30) 
+};	    
 List<String> countryNames = new List<String>();
 countryNames.Add("Uganda");
 countryNames.Add("Ukraine");
 countryNames.Add("United Arab Emirates");
 countryNames.Add("United Kingdom");
 countryNames.Add("United States");
+
+SfComboBox comboBox = new SfComboBox();
+comboBox.HeightRequest = 40;
 comboBox.DataSource = countryNames;
 comboBox.IsEditableMode = true;
 comboBox.AllowFiltering = true;
 comboBox.ComboBoxMode = ComboBoxMode.SuggestAppend;
+
+layout.Children.Add(comboBox); 
+Content = layout;
 
 {% endhighlight %}
 

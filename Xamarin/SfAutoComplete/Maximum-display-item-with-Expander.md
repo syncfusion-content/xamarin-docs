@@ -35,6 +35,8 @@ autoComplete.LoadMoreText =  "LOAD MORE";
 
 We can restrict the maximum display of items dynamically by calling `LoadMore` method. The user can dynamically change the maximum suggestion count by calling LoadMore method by giving the maximum suggestion as the argument inside.
 
+N> LoadMore method has enhanced only on iOS and Android platform.
+
 {% tabs %}
 {% highlight c# %}
 

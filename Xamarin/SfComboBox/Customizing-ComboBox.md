@@ -9,11 +9,11 @@ documentation : ug
 
 # Customizing ComboBox
 
-ComboBox provides user friendly customizing options for both entry part and drop down part. In this section, customizing entire ComboBox control is explained.
+The combo box control  provides user friendly customizing options for both entry part and drop-down part. In this section, customizing the entire ComboBox control is explained.
 
-## Customizing the Entry
+## Customizing the entry
 
-`TextColor`, `TextSize`, `FontAttributes`, `FontFamily` and `BorderColor` are the properties used to customize the foreground color, font size, font attribute, font family and border color of the entry part.
+The `TextColor`, `TextSize`, `FontAttributes`, `FontFamily` and `BorderColor` properties are used to customize the foreground color, font size, font attribute, font family and border color of the entry part.
 
 {% tabs %}
 
@@ -29,18 +29,20 @@ ComboBox provides user friendly customizing options for both entry part and drop
 
 StackLayout stackLayout = new StackLayout() 
 { 
-VerticalOptions = LayoutOptions.Start, 
-HorizontalOptions = LayoutOptions.Start,
-Padding = new Thickness(30) 
+	VerticalOptions = LayoutOptions.Start, 
+	HorizontalOptions = LayoutOptions.Start,
+	Padding = new Thickness(30) 
 };
+
 SfComboBox comboBox = new SfComboBox() 
 { 
-HeightRequest = 45,  
-Text = "Sample text", 
-TextColor = Color.FromHex("1976d2"), 
-TextSize = 20, 
-BorderColor = Color.FromHex("1976d2")
+	HeightRequest = 45,  
+	Text = "Sample text", 
+	TextColor = Color.FromHex("1976d2"), 
+	TextSize = 20, 
+	BorderColor = Color.FromHex("1976d2")
 };
+
 stackLayout.Children.Add(comboBox);
 this.Content = stackLayout;
 
@@ -59,22 +61,37 @@ CustomView property has used to provide the custom view instead of entry in Comb
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-<combobox:SfComboBox HeightRequest="40" x:Name="comboBox">
-<combobox:SfComboBox.CustomView>
-	<Label x:Name="customLabel" HeightRequest="40" Text="ComboBox"  VerticalTextAlignment="Center"/>
-</combobox:SfComboBox.CustomView>
-</combobox:SfComboBox>
+	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox">
+		<combobox:SfComboBox.CustomView>
+			<Label x:Name="customLabel" HeightRequest="40" Text="ComboBox"  VerticalTextAlignment="Center"/>
+		</combobox:SfComboBox.CustomView>
+	</combobox:SfComboBox>
 </StackLayout>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+StackLayout layout = new StackLayout() 
+{ 
+	VerticalOptions = LayoutOptions.Start, 
+	HorizontalOptions = LayoutOptions.Start, 
+	Padding = new Thickness(30) 
+};	
+
 Label customLabel = new Label();
 customLabel.HeightRequest = 40;
 customLabel.VerticalTextAlignment = TextAlignment.Center;
 customLabel.Text = "ComboBox";
+
+SfComboBox comboBox = new SfComboBox();
+comboBox.HeightRequest = 40;
+comboBox.DataSource = countryNames;
+comboBox.SuggestionBoxPlacement = SuggestionBoxPlacement.Top;
 comboBox.CustomView = customLabel; 
+
+layout.Children.Add(comboBox); 
+Content = layout;
 
 {% endhighlight %}
 
@@ -82,79 +99,121 @@ comboBox.CustomView = customLabel;
 
 ![](images/Customizing-ComboBox/customview.png)
 
-## Custom template for Suggestion items
+## Custom template for suggestion items
 
-`ItemTemplate` property helps to decorate suggestion items with custom templates. The following code explains the steps to add an image to the suggestion list item.
+The `ItemTemplate` property helps to decorate suggestion items with custom templates. The following code explains the steps to add an image to the suggestion list item.
 
 {% tabs %}
 
+{% highlight c# %}
+public class Person
+{
+	private int age;
+	public int Age
+	{
+		get { return age; }
+		set { age = value; }
+	}
+
+	private string name;
+	public string Name
+	{
+		get { return name; }
+		set { name = value; }
+	}
+}
+
+public class PersonViewModel
+{
+	private ObservableCollection<Person> personCollection;
+	public ObservableCollection<Person> PersonCollection
+	{
+		get { return personCollection; }
+		set { personCollection = value; }
+	}
+
+	public PersonViewModel()
+	{
+		personCollection = new ObservableCollection<Person>();
+		personCollection.Add(new Person() { Age = 21, Name = "Aldan" });
+		personCollection.Add(new Person() { Age = 25, Name = "Clara" });
+		personCollection.Add(new Person() { Age = 23, Name = "Aldrin" });            
+		personCollection.Add(new Person() { Age = 25, Name = "Mark" });
+		personCollection.Add(new Person() { Age = 25, Name = "Lucas" });
+		personCollection.Add(new Person() { Age = 24, Name = "Alan" });
+		personCollection.Add(new Person() { Age = 25, Name = "James" });
+		personCollection.Add(new Person() { Age = 22, Name = "Aaron" });
+	}
+}
+{% endhighlight %}
+
+{% endtabs %}
+
+Now populate this PersonViewModel data in SfComboBox control by binding with [`DataSource`] property. 
+
+{% tabs %}
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DisplayMemberPath="Name" DataSource="{Binding PersonCollection}">
-	<combobox:SfComboBox.ItemTemplate>
-	<DataTemplate>
-		<StackLayout Orientation="Horizontal">
-		<Image Source="User.png" WidthRequest="12"/>
-		<Label Text="{Binding Name}" />
-		</StackLayout>
-	</DataTemplate>
-	</combobox:SfComboBox.ItemTemplate>
-</combobox:SfComboBox>
-</StackLayout>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+             xmlns:local="clr-namespace:NamespaceName"            
+             x:Class="NamespaceName.ClassName">
+	<ContentPage.BindingContext>
+    	<local:PersonViewModel/>
+ 	</ContentPage.BindingContext>
+	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+		<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DisplayMemberPath="Name" DataSource="{Binding PersonCollection}">
+			<combobox:SfComboBox.ItemTemplate>
+				<DataTemplate>
+					<StackLayout Orientation="Horizontal">
+						<Image Source="User.png" WidthRequest="12"/>
+						<Label Text="{Binding Name}" />
+					</StackLayout>
+				</DataTemplate>
+			</combobox:SfComboBox.ItemTemplate>
+		</combobox:SfComboBox>
+	</StackLayout> 
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-public class Person
+DataTemplate itemTemplate = new DataTemplate(() =>
 {
-private int age;
-public int Age
-{
-	get { return age; }
-	set { age = value; }
-}
+	StackLayout stack;
+	Image image;
+	Label label;
+	stack = new StackLayout();
+	stack.Orientation = StackOrientation.Horizontal;
+	image = new Image();
+	image.Source = (FileImageSource)ImageSource.FromFile("User.png");
+	label = new Label();
+	label.SetBinding(Label.TextProperty, "Name");
+	stack.Children.Add(image);
+	stack.Children.Add(label);
+	return new ViewCell { View = stack };
+});
 
-private string name;
-public string Name
-{
-	get { return name; }
-	set { name = value; }
-}
-}
+StackLayout layout = new StackLayout() 
+{ 
+	VerticalOptions = LayoutOptions.Start, 
+	HorizontalOptions = LayoutOptions.Start, 
+	Padding = new Thickness(30) 
+}; 
 
-public class PersonViewModel
-{
-private ObservableCollection<Person> personCollection;
-public ObservableCollection<Person> PersonCollection
-{
-	get { return personCollection; }
-	set { personCollection = value; }
-}
+SfComboBox comboBox = new ComboBox();
+comboBox.HeightRequest = 40;
+comboBox.BindingContext = new PersonViewModel();
+Binding binding = new Binding("PersonCollection");
+binding.Source = this;
+binding.Mode = BindingMode.TwoWay;
+comboBox.SetBinding(Label.DataSourceProperty,binding);
+comboBox.ItemTemplate = itemTemplate;
 
-public PersonViewModel()
-{
-	personCollection = new ObservableCollection<Person>();
-	personCollection.Add(new Person() { Age = 21, Name = "Aldan" });
-	personCollection.Add(new Person() { Age = 25, Name = "Clara" });
-	personCollection.Add(new Person() { Age = 23, Name = "Aldrin" });            
-	personCollection.Add(new Person() { Age = 25, Name = "Mark" });
-	personCollection.Add(new Person() { Age = 25, Name = "Lucas" });
-	personCollection.Add(new Person() { Age = 24, Name = "Alan" });
-	personCollection.Add(new Person() { Age = 25, Name = "James" });
-	personCollection.Add(new Person() { Age = 22, Name = "Aaron" });
-}
-}
-
-public partial class SamplePage : ContentPage
-{
-public SamplePage()
-{
-	InitializeComponent();       
-	comboBox.BindingContext = new PersonViewModel();
-}
-}
+layout.Children.Add(comboBox); 
+Content = layout;
 
 {% endhighlight %}
 
@@ -162,31 +221,52 @@ public SamplePage()
 
 ![](images/Customizing-ComboBox/item-template.png)
 
-## Customizing the Suggestion Box
+## Customizing the suggestion box
 
-### Changing Suggestion Item Height
+### Changing suggestion item height
 
-`DropDownItemHeight` property is used to modify the height of suggestion items in drop down list. The code example is given below:
+The `DropDownItemHeight` property is used to modify the height of suggestion items in drop-down list. The following code example shows changing suggestion item height.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DropDownItemHeight="50"/>
+	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DropDownItemHeight="50">
+		<combobox:SfComboBox.DataSource>
+			<ListCollection:List x:TypeArguments="x:String">
+                <x:String> Uganda </x:String>
+                <x:String> Ukraine </x:String>
+                <x:String> United Arab Emirates </x:String>
+                <x:String> United Kingdom </x:String>
+            </ListCollection:List>
+        </combobox:SfComboBox.DataSource>
+	 </combobox:SfComboBox>                
 </StackLayout>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-List<String> countryNames = new List<String>();
-countryNames.Add("Uganda");
-countryNames.Add("Ukraine");
-countryNames.Add("United Arab Emirates");
-countryNames.Add("United Kingdom");
-comboBox.DataSource = countryNames;
-comboBox.DropDownItemHeight = 50;
+ 	StackLayout layout = new StackLayout() 
+    { 
+	     VerticalOptions = LayoutOptions.Start, 
+	     HorizontalOptions = LayoutOptions.Start, 
+	     Padding = new Thickness(30) 
+    }; 
+
+	List<String> countryNames = new List<String>();
+	countryNames.Add("Uganda");
+	countryNames.Add("Ukraine");
+	countryNames.Add("United Arab Emirates");
+	countryNames.Add("United Kingdom");
+
+	SfComboBox comboBox = new SfComboBox();
+	comboBox.DataSource = countryNames;
+	comboBox.DropDownItemHeight = 50;
+
+    layout.Children.Add(comboBox); 
+    Content = layout;
 
 {% endhighlight %}
 
@@ -194,31 +274,53 @@ comboBox.DropDownItemHeight = 50;
 
 ![](images/Customizing-ComboBox/dropdown-item-height.png)
 
-### Customizing Suggestion Items
+### Customizing suggestion items
 
-Suggestion box items can be customized using `DropDownItemFontAttributes`, `DropDownItemFontFamily`, `DropDownTextSize` and `DropDownTextColor` properties.
+Suggestion box items can be customized using the `DropDownItemFontAttributes`, `DropDownItemFontFamily`, `DropDownTextSize` and `DropDownTextColor` properties.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DropDownTextSize="16" DropDownTextColor="#1976d2"/>
+	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DropDownTextSize="16" DropDownTextColor="#1976d2">
+		<combobox:SfComboBox.DataSource>
+			<ListCollection:List x:TypeArguments="x:String">
+                <x:String> Uganda </x:String>
+                <x:String> Ukraine </x:String>
+                <x:String> United Arab Emirates </x:String>
+                <x:String> United Kingdom </x:String>
+                <x:String> United States </x:String>
+            </ListCollection:List>
+        </combobox:SfComboBox.DataSource>
+	 </combobox:SfComboBox>                
 </StackLayout>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-List<String> countryNames = new List<String>();
-countryNames.Add("Uganda");
-countryNames.Add("Ukraine");
-countryNames.Add("United Arab Emirates");
-countryNames.Add("United Kingdom");
-countryNames.Add("United States");
-comboBox.DataSource = countryNames;
-comboBox.DropDownTextColor = Color.FromHex("#1976d2");
-comboBox.DropDownTextSize = 16;
+	StackLayout layout = new StackLayout() 
+    { 
+	     VerticalOptions = LayoutOptions.Start, 
+	     HorizontalOptions = LayoutOptions.Start, 
+	     Padding = new Thickness(30) 
+    }; 
+
+	List<String> countryNames = new List<String>();
+	countryNames.Add("Uganda");
+	countryNames.Add("Ukraine");
+	countryNames.Add("United Arab Emirates");
+	countryNames.Add("United Kingdom");
+	countryNames.Add("United States");
+
+	SfComboBox comboBox = new SfComboBox();
+	comboBox.DataSource = countryNames;
+	comboBox.DropDownTextColor = Color.FromHex("#1976d2");
+	comboBox.DropDownTextSize = 16;
+
+    layout.Children.Add(comboBox); 
+    Content = layout;
 
 {% endhighlight %}
 
@@ -226,7 +328,7 @@ comboBox.DropDownTextSize = 16;
 
 ![](images/Customizing-ComboBox/customizing-dropdown.png)
 
-## DropDown Button Customization
+## DropDown button customization
 
 This section explains various DropDown button settings available in SfComboBox control.
 {% tabs %}
@@ -234,28 +336,56 @@ This section explains various DropDown button settings available in SfComboBox c
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-<combobox:SfComboBox HeightRequest="40" x:Name="comboBox">
-<combobox:SfComboBox.DropDownButtonSettings>
-     <combobox:DropDownButtonSettings Width="40" Height="40" FontIcon="" FontSize="16" FontColor="Blue" HighlightedBackgroundColor="Green" BackgroundColor="Red" HighlightFontColor="Red"/>
-     </combobox:SfComboBox.DropDownButtonSettings>
-</combobox:SfComboBox>
+	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox">
+		<combobox:SfComboBox.DataSource>
+			<ListCollection:List x:TypeArguments="x:String">
+                <x:String> Uganda </x:String>
+                <x:String> Ukraine </x:String>
+                <x:String> United Arab Emirates </x:String>
+                <x:String> United Kingdom </x:String>
+                <x:String> United States </x:String>
+            </ListCollection:List>
+        </combobox:SfComboBox.DataSource>
+		<combobox:SfComboBox.DropDownButtonSettings>
+     		<combobox:DropDownButtonSettings Width="40" Height="40" FontIcon="" FontSize="16" FontColor="Blue" HighlightedBackgroundColor="Green" BackgroundColor="Red" HighlightFontColor="Red"/>
+     	</combobox:SfComboBox.DropDownButtonSettings>
+	</combobox:SfComboBox>
 </StackLayout>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-DropDownButtonSettings dropDownButtonSettings = new DropDownButtonSettings();
-dropDownButtonSettings.Height = 40;
-dropDownButtonSettings.Width = 40;
-dropDownButtonSettings.FontIcon = "";
-dropDownButtonSettings.FontSize = 16;
-dropDownButtonSettings.FontColor = Color.Blue;
-dropDownButtonSettings.HighlightedBackgroundColor = Color.Green;
-dropDownButtonSettings.BackgroundColor = Color.Red;
-dropDownButtonSettings.HighlightFontColor = Color.Red;
+	StackLayout layout = new StackLayout() 
+    { 
+	     VerticalOptions = LayoutOptions.Start, 
+	     HorizontalOptions = LayoutOptions.Start, 
+	     Padding = new Thickness(30) 
+    }; 
 
-comboBox.DropDownButtonSettings = dropDownButtonSettings;
+	List<String> countryNames = new List<String>();
+	countryNames.Add("Uganda");
+	countryNames.Add("Ukraine");
+	countryNames.Add("United Arab Emirates");
+	countryNames.Add("United Kingdom");
+	countryNames.Add("United States");
+
+	SfComboBox comboBox = new SfComboBox();
+	comboBox.DataSource = countryNames;
+	DropDownButtonSettings dropDownButtonSettings = new DropDownButtonSettings();
+	dropDownButtonSettings.Height = 40;
+	dropDownButtonSettings.Width = 40;
+	dropDownButtonSettings.FontIcon = "";
+	dropDownButtonSettings.FontSize = 16;
+	dropDownButtonSettings.FontColor = Color.Blue;
+	dropDownButtonSettings.HighlightedBackgroundColor = Color.Green;
+	dropDownButtonSettings.BackgroundColor = Color.Red;
+	dropDownButtonSettings.HighlightFontColor = Color.Red;
+
+	comboBox.DropDownButtonSettings = dropDownButtonSettings;
+
+    layout.Children.Add(comboBox); 
+    Content = layout;
 
 {% endhighlight %}
 
@@ -265,22 +395,32 @@ comboBox.DropDownButtonSettings = dropDownButtonSettings;
 
 ## Watermark
 
-Watermark provides a short note about the type of input to enter in the editor control. Watermarks are visible only if the text is empty. Also it will reappear if the text is cleared.
-The following example, explains the usability of watermark which hints user to start with the character “U”.
+Watermark provides a short note about the type of input to enter in the editor control. Watermarks are visible only if the text is empty. It will reappear if the text is cleared. The following example, explains the usability of watermark that hints users to start with the character “U”.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-<combobox:SfComboBox HeightRequest="40" Watermark="Enter 'U' to filter suggestions" x:Name="comboBox" />
+	<combobox:SfComboBox HeightRequest="40" Watermark="Enter 'U' to filter suggestions" x:Name="comboBox" />
 </StackLayout>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-comboBox.Watermark = "Enter 'U' to filter suggestions"; 
+	StackLayout layout = new StackLayout() 
+    { 
+	     VerticalOptions = LayoutOptions.Start, 
+	     HorizontalOptions = LayoutOptions.Start, 
+	     Padding = new Thickness(30) 
+    }; 
+
+	SfComboBox comboBox = new SfComboBox();
+	comboBox.Watermark = "Enter 'U' to filter suggestions"; 
+
+	layout.Children.Add(comboBox); 
+    Content = layout;
 
 {% endhighlight %}
 
@@ -297,14 +437,26 @@ Text color of watermark can be customized using [`WatermarkColor`] property.
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-<combobox:SfComboBox HeightRequest="40" Watermark="Enter some text" WatermarkColor="#1976d2" x:Name="comboBox" />
+	<combobox:SfComboBox HeightRequest="40" Watermark="Enter some text" WatermarkColor="#1976d2" x:Name="comboBox" />
 </StackLayout>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-comboBox.WatermarkColor = Color.FromHex("1976d2");
+	StackLayout layout = new StackLayout() 
+    { 
+	     VerticalOptions = LayoutOptions.Start, 
+	     HorizontalOptions = LayoutOptions.Start, 
+	     Padding = new Thickness(30) 
+    }; 
+
+	SfComboBox comboBox = new SfComboBox();
+	comboBox.Watermark = "Enter some text"; 
+	comboBox.WatermarkColor = Color.FromHex("1976d2");
+
+	layout.Children.Add(comboBox); 
+    Content = layout;
 
 {% endhighlight %}
 

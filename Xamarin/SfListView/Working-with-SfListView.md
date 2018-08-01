@@ -9,73 +9,7 @@ documentation: ug
 
 # Working with SfListView
 
-## Programmatic scrolling
-
-### Scrolling to row index
-
-The SfListView allows programmatically scrolling a row based on the index by using the [ScrollToRowIndex](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LayoutBase~ScrollToRowIndex.html) method for both linear and grid layouts. It also enables and disables the scrolling animation when changing the view. By default, the scrolling will be animated.
-
-To set an item to a specific position while scrolling the `ScrollToRowIndex` method can be used with four different types of position:
-
-* MakeVisible: Scrolls a specific item to make visible in the view. If the item is already in view, scrolling will not occur.
-* Start: Scrolls a specific item to be positioned at the begin of the view.
-* End: Scrolls a specific item to be positioned at the end of the view.
-* Center: Scrolls a specific item to be positioned at the center of the view.
-
-N> If grouping is enabled, get the desired row index by passing the underlying data in the [DisplayItems.IndexOf](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DisplayItems~IndexOf.html) method.
-
-{% tabs %}
-{% highlight c# %}
-
-int index = listView.DataSource.DisplayItems.IndexOf(viewModel.Customers[2]); 
-listView.LayoutManager.ScrollToRowIndex(index, true); 
-
-{% endhighlight %}
-{% endtabs %}
-
-To display the `ScrollToRowIndex` method with position, follow the code.
-
-{% tabs %}
-{% highlight c# %}
-
-int index = listView.DataSource.DisplayItems.IndexOf(viewModel.Customers[2]); 
-listView.LayoutManager.ScrollToRowIndex(index, Syncfusion.ListView.XForms.ScrollToPosition.Center, true); 
-
-{% endhighlight %}
-{% endtabs %}
-
-### Limitations
-
- * When [AutoFitMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AutoFitMode.html) is `Height` or grouping is enabled, the scroll animation will be disabled by default in Android and iOS platforms. 
- * If [ScrollToRowIndex](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LayoutBase~ScrollToRowIndex.html) method is called when loading the `SfListView`, set `disableAnimation` to `true` to scroll to the appropriate row index, or else view does not scrolled in Android.
-
-## Identifying scroll state changes
-
-The SfListView will notify the scrolling state changes by using the [ScrollStateChanged](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ScrollStateChanged_EV.html) event.
-
-Following states will be notified via [ScrollState](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ScrollState.html) property in the event argument.
-
- * Dragging: Specifies that `SfListView` is currently being dragged in the view.
- * Fling: Specifies that fling action is performed on the `SfListView`.
- * Idle: Specifies that `SfListView` is not currently scrolling.
- * Programmatic: Specifies that scrolling is performed by using [ScrollTo](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ScrollTo.html) or [ScrollToRowIndex](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LayoutBase~ScrollToRowIndex.html) method.
-
-{% tabs %}
-{% highlight c# %}
-
-listView.ScrollStateChanged += ListView_ScrollStateChanged;
-private void ListView_ScrollStateChanged(object sender, ScrollStateChangedEventArgs e)
-{
-   if (e.ScrollState == ScrollState.Idle)
-   {
-      DisplayAlert("ScrollState", "Scrolling has stopped", "OK");
-   }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-## Events
+## Interacting with ListView Items
 
 ### Loaded event
 
@@ -245,76 +179,6 @@ The [ItemDisappearing](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfus
 
 * To find the item disappears in the view.
 
-## Commands
-
-### Tap command
-
-The [TapCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~TapCommand.html) will be triggered whenever tapping the item and passing the [ItemTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemTappedEventArgs.html) as parameter.
-
-{% tabs %}
-{% highlight c# %}
-
-listView.TapCommand = viewModel.TappedCommand;
-
-public class CommandViewModel
-{
-    private Command<Object> tappedCommand;
-
-    public Command<object> TappedCommand
-    {
-        get { return tappedCommand; }
-        set { tappedCommand = value; }
-    }
-
-    public CommandViewModel()
-    {            
-        TappedCommand = new Command<object>(TappedCommandMethod);
-    }
-
-    private void TappedCommandMethod(object obj)
-    {
-        if ((obj as Syncfusion.ListView.XForms.ItemTappedEventArgs).ItemData == viewModel.InboxInfo[0])
-            viewModel.InboxInfo.Remove(e.ItemData as ListViewInboxInfo)
-    }   
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-### Hold command
-
-The [HoldCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~HoldCommand.html) will be triggered whenever long pressing the item and passing the [ItemHoldingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemHoldingEventArgs.html) as parameter.
- 
-{% tabs %}
-{% highlight c# %}
-
-listView.HoldCommand = viewModel.HoldCommand;
-
-public class CommandViewModel
-{
-    private Command<Object> holdingCommand;
-
-    public Command<object> HoldingCommand
-    {
-        get { return holdingCommand; }
-        set { holdingCommand = value; }
-    }
-
-    public CommandViewModel()
-    {
-        HoldingCommand = new Command<object>(HoldingCommandMethod);
-    }
-
-    private void HoldingCommandMethod(object obj)
-    {
-        if ((obj as Syncfusion.ListView.XForms.ItemHoldingEventArgs).ItemData == viewModel.InboxInfo[3])
-            viewModel.InboxInfo.Remove(e.ItemData as ListViewInboxInfo);
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
 ## Improving ListView performance
 
 The SfListView has been built from the ground up with an optimized view reuse strategy for the best possible performance on the Xamarin platform even when loading large data sets. Following techniques are used to improve performance of the SfListView:
@@ -328,9 +192,7 @@ The SfListView has been built from the ground up with an optimized view reuse st
     * Should define size to the SfListView if it loads inside ScrollView.
  * Avoid changing the cell layout based on the BindingContext. This incurs large layout and initialization costs.
 
-### Limitation
-
-#### Load SfListView inside ScrollView
+## Loading ListView inside ScrollView
 
 When the `SfListView` is loaded inside the `ScrollView` with the height of total items, scrolling will not occur in the SfListView only when [AllowSwiping](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AllowSwiping.html) is set to `true`. The SfListView does not pass touch to the parent ScrollView in UWP, because swiping is handled in it. 
 
@@ -364,7 +226,7 @@ When the SfListView is loaded inside the ScrollView with sticky header and stick
 
 You can download the entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfListViewSample197024233.zip).
 
-#### Load SfListView inside CarouselPage/Master detail page
+## Loading ListView inside CarouselPage/Master detail page
 
 When the SfListView is loaded in CarouselView with [SfListView.AllowSwiping](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AllowSwiping.html) as false, it behaves in UWP platform as follows:
  
@@ -714,9 +576,7 @@ You can download the entire source code of this demo from [here](http://www.sync
 
 ![](SfListView_images/Paging.png)
  
-## How to
-
-### load data from SQLite online database
+## Loading data from SQLite online database
 
 The SfListView allows binding the data from online database with the help of `Azure App Service`. To perform this, follow the steps:
 
@@ -888,7 +748,7 @@ public partial class ToDoListPage : ContentPage
 
 You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AzureSampleApp-1350807709).
 
-### Load data from SQLite offline database
+## Loading data from SQLite offline database
 
 The SfListView allows binding the data from local database by using SQLite. To perform this, follow the steps: SQLiteConnection
 
@@ -1020,93 +880,7 @@ Refer to the following code which illustrates, how to bind the data from the SQL
 
 You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfListViewSample405826458).
 
-### Identify when end of the list is reached on scrolling
-
-The SfListView allows notifying when scrolling using [Changed](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.GridCommon.Portable~Syncfusion.GridCommon.ScrollAxis.ScrollAxisBase~Changed_EV.html) event of [ScrollAxisBase](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.ScrollAxis.ScrollAxisBase.html) in [VisualContainer](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.VisualContainer.html) of the SfListView. By using this event, you can find whether reached the last item in the list in the SfListView based on [LastBodyVisibleLineIndex](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.GridCommon.Portable~Syncfusion.GridCommon.ScrollAxis.ScrollAxisBase~LastBodyVisibleLineIndex.html) property and underlying collection count.
-
-{% tabs %}
-{% highlight c# %}
-
-public partial class MainPage : ContentPage
-{
-    VisualContainer visualContainer;
-    bool isAlertShown = false;
-
-    public MainPage()
-    {
-        InitializeComponent();
-        visualContainer = listView.GetVisualContainer();
-        visualContainer.ScrollRows.Changed += ScrollRows_Changed;
-    }
-
-    ///<summary>
-    ///To notify when end reached
-    ///</summary>
-    private void ScrollRows_Changed(object sender, ScrollChangedEventArgs e)
-    {
-        var lastIndex = visualContainer.ScrollRows.LastBodyVisibleLineIndex;
-
-        //To include header if used
-        var header = (listView.HeaderTemplate != null && !listView.IsStickyHeader) ? 1 : 0;
-
-        //To include footer if used
-        var footer = (listView.FooterTemplate != null && !listView.IsStickyFooter) ? 1 : 0;
-        var totalItems = listView.DataSource.DisplayItems.Count + header + footer;
-
-        if ((lastIndex == totalItems - 1))
-        {
-            if (!isAlertShown)
-            {
-                DisplayAlert("Alert", "End of list reached...", "Ok");
-                isAlertShown = true;
-            }
-        }
-        else
-            isAlertShown = false;
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/EndReachedOnScrolling1293175475).
-
-### Maintain the scroll position while updating ItemsSource at runtime
-
-The SfListView have scrolled to top automatically when changing the ItemsSource at runtime. However, you can maintain the same scrolled position by using the `ScrollY` value of ExtendedScrollView from the [VisualContainer](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.VisualContainer.html). After changing the ItemsSource, you can pass the ScrollY value to [ScrollTo](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ScrollTo.html) method of SfListView and scroll back to the same position.
-
-For horizontal orientation, use the `ScrollX` value of ExtendedScrollView.
-
- By using [Reflection](https://msdn.microsoft.com/en-us/library/system.reflection(v=vs.110).aspx), get the value of `ScrollOwner` from `VisualContainer` and use it.
-
-{% tabs %}
-{% highlight c# %}
-
-public partial class MainPage : ContentPage
-{
-    ExtendedScrollView scrollView;
-
-    public MainPage()
-    {
-        InitializeComponent();
-        VisualContainer visualContainer = listView.GetVisualContainer();
-        scrollView = visualContainer.GetType().GetRuntimeProperties().First(x => x.Name == "ScrollOwner").GetValue(visualContainer) as ExtendedScrollView;
-    }
-
-    private void ChangeItemsSource_Clicked(object sender, EventArgs e)
-    {
-        var viewModel = new ContactsViewModel();
-        listView.ItemsSource = viewModel.EmployeeInfo;
-        listView.ScrollTo(scrollView.ScrollY);
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ItemsourceScrolling-865979633).
-
-### SfListView with prism Framework
+## ListView with Prism Framework
 
 The SfListView allows the user to work with prism for MVVM Framework. Steps to be followed:
 

@@ -10,17 +10,9 @@ documentation: ug
 
 # System Requirements
 
-The following topic describes the system requirements for Syncfusion Xamarin platform.
+System requirement for Xamarin platform are provided in the following link. 
 
-### Operating Systems
-
-* Windows XP
-* Windows Vista SP2
-* Windows 7 SP1
-* Windows 8, 8.1
-* Windows 10
-* Android 4.1 & later
-* iOS 9 & later
+[https://docs.microsoft.com/en-us/xamarin/cross-platform/get-started/requirements](https://docs.microsoft.com/en-us/xamarin/cross-platform/get-started/requirements)
 
 ### Hardware Environment
 
@@ -28,24 +20,7 @@ The following topic describes the system requirements for Syncfusion Xamarin pla
 * RAM : 512 MB (minimum), 1 GB (recommended)
 * Hard disk: up to 1.5 GB of available space may be required. However, 250 MB free space is required in boot drive even if you are installing the setup in other drive.
 
-### Development Environment
-
-By using the following IDEs, you can develop Android and UWP applications:
-
-* Visual Studio 2015
-* Visual Studio 2017
-
-N> For installing and configuring Xamarin in Visual Studio, please refer this [`link`](https://developer.xamarin.com/guides/android/getting_started/installation/windows/).
-
-N> You can use Xamarin build host feature to deploy Xamarin.iOS and Xamarin.Forms for iOS apps from Visual Studio, read the [`Xamarin documentation`](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/introduction_to_xamarin_ios_for_visual_studio/) for more information about build host feature.
-
-**Integrated** **Development** **Environment** **for** **Mac**
-
-By using Visual Studio for Mac, you can develop iOS and Android applications.
-
-N> For installing and configuring Xamarin in Visual Studio for Mac, please refer this [`link`](https://docs.microsoft.com/en-us/visualstudio/mac/installation).
-
-**Supported Platforms**
+### Supported Platforms
 
 The following table lists the platforms supported by our Xamarin.Forms controls.
 
@@ -53,6 +28,11 @@ The following table lists the platforms supported by our Xamarin.Forms controls.
     <tr>
         <td>
             Platform
+            <br/>
+            <br/>
+        </td>
+        <td>
+          Device Types
             <br/>
             <br/>
         </td>
@@ -74,6 +54,11 @@ The following table lists the platforms supported by our Xamarin.Forms controls.
             <br/>
         </td>
         <td>
+        Mobile, Tab
+        <br/>
+        <br/>
+        </td>
+        <td>
             SfPdfViewer, SfCheckBox
             <br/>
             <br/>
@@ -85,6 +70,10 @@ The following table lists the platforms supported by our Xamarin.Forms controls.
         </td>
     </tr>
     <tr>
+        <td>          
+            <br/>
+            <br/>
+        </td>
         <td>
             SfListView
             <br/>
@@ -97,6 +86,10 @@ The following table lists the platforms supported by our Xamarin.Forms controls.
         </td>
     </tr>
      <tr>
+        <td>
+           <br/>
+           <br/>
+        </td>
         <td>
             All other controls 
             <br/>
@@ -111,6 +104,11 @@ The following table lists the platforms supported by our Xamarin.Forms controls.
     <tr>
         <td>
             iOS
+            <br/>
+            <br/>
+        </td>
+        <td>
+            iPhone,iPod and iPad
             <br/>
             <br/>
         </td>
@@ -131,6 +129,11 @@ The following table lists the platforms supported by our Xamarin.Forms controls.
             <br/>
             <br/>
         </td>
+        <td>
+           Desktop and Tablet
+            <br/>
+            <br/>
+        </td>
           <td>
             All controls 
             <br/>
@@ -141,5 +144,26 @@ The following table lists the platforms supported by our Xamarin.Forms controls.
             <br/>
             <br/>
         </td>
-    </tr>    
+    </tr>
+<td>
+            macOS
+            <br/>
+            <br/>
+        </td>
+        <td>
+            iPad, MacBook and mac mini
+             <br/>
+             <br/>
+        </td>
+        <td>
+            SfChart,SfDataGrid and SfListView
+            <br/>
+            <br/>
+        </td>
+         <td>
+            iOS 10.2 and later versions
+            <br/>
+            <br/>
+        </td>
+    
 </table>

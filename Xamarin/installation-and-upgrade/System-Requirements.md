@@ -10,7 +10,7 @@ documentation: ug
 
 # System Requirements
 
-System requirement for Xamarin platform are provided in the following link. 
+Please find the system requirements for Xamarin platform in the following link. 
 
 [https://docs.microsoft.com/en-us/xamarin/cross-platform/get-started/requirements](https://docs.microsoft.com/en-us/xamarin/cross-platform/get-started/requirements)
 
@@ -54,7 +54,7 @@ The following table lists the platforms supported by our Xamarin.Forms controls.
             <br/>
         </td>
         <td>
-        Mobile, Tab
+        Phone, Tablet
         <br/>
         <br/>
         </td>
@@ -151,17 +151,17 @@ The following table lists the platforms supported by our Xamarin.Forms controls.
             <br/>
         </td>
         <td>
-            iPad, MacBook and mac mini
+            iMac, Mac book, Mac mini
              <br/>
              <br/>
         </td>
         <td>
-            SfChart,SfDataGrid and SfListView
+            SfChart, SfDataGrid and SfListView
             <br/>
             <br/>
         </td>
          <td>
-            iOS 10.2 and later versions
+            macOS 10.11 and later versions
             <br/>
             <br/>
         </td>

@@ -53,7 +53,7 @@ The following table lists the platforms supported by our Xamarin.Forms controls.
             <br/>
             <br/>
         </td>
-        <td rowspan="3">
+        <td>
         Phone, Tablet
         <br/>
         <br/>

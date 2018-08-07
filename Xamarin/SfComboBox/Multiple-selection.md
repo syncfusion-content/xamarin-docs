@@ -316,3 +316,53 @@ When selecting multiple items, the selected items can be divided with a desired 
 {% endtabs %}
 
 ![](images/MultiSelect/Delimiter.png)
+
+### Selection indicator
+
+The combobox enables the user to indicate the selected item from the datasource when selecting multiple items from the dropdown. It can be performed by enabling `EnableSelectionIndicator` property.
+
+N> Selection Indicator support has enhanced only on iOS and Android platform.
+
+{% tabs %}
+{% highlight xaml %}
+
+<combobox:SfComboBox HeightRequest="40" ShowSuggestionsOnFocus="true" IsSelectedItemsVisibleInDropDown="true" IndicatorText="A" IndicatorTextSize="sample.ttf" IndicatorTextColor="Red" EnableSelectionIndicator="true" MultiSelectMode="Token"  x:Name="comboBox" DataSource="{Binding EmployeeCollection}"/>
+       
+{% endhighlight %}
+
+{% highlight c# %}
+
+comboBox.MultiSelectMode=MultiSelectMode.Token;
+comboBox.ShowSuggestionsOnFocus=true;
+comboBox.IsSelectedItemsVisibleInDropDown=true;
+comboBox.IndicatorText= "A";
+comboBox.IndicatorTextSize= "sample.ttf";
+comboBox.IndicatorTextColor = Color.Red;
+comboBox.EnableSelectionIndicator= true;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Item padding
+
+The autocomplete enables the user to provide padding for the items inside dropdown using `ItemPadding` property.
+
+N> `ItemPadding` property is available only on iOS and Android platform.
+
+{% tabs %}
+{% highlight xaml %}
+
+ <combobox:SfComboBox ShowSuggestionsOnFocus="true" ItemPadding="20,10,0,0" MultiSelectMode="Token"  x:Name="comboBox" DataSource="{Binding EmployeeCollection}"/>
+       
+{% endhighlight %}
+
+{% highlight c# %}
+
+comboBox.MultiSelectMode=MultiSelectMode.Token;
+comboBox.ShowSuggestionsOnFocus=true;
+comboBox.ItemPadding= new Thickness(20,10,0,0);;
+
+{% endhighlight %}
+
+{% endtabs %}

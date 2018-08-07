@@ -15,12 +15,32 @@ The combo box control  provides user friendly customizing options for both entry
 
 The `TextColor`, `TextSize`, `FontAttributes`, `FontFamily` and `BorderColor` properties are used to customize the foreground color, font size, font attribute, font family and border color of the entry part.
 
+### Text color
+
+The combo box control provides the user to customize the foreground color of the text inside the entry part.
+
+## Text size
+
+The combo box control provides the user to customize the text size of the text inside the entry part using `TextSize` property.
+
+## Font attributes
+
+The combo box control provides the user to customize the font attribute of the text inside the entry part using `FontAttributes` property.
+
+## Font family
+
+The combo box control provides the user to customize the font family of the text inside the entry part using `FontFamily` property.
+
+## Border color
+
+The combo box control provides the user to customize the border color of the entry box using `BorderColor` property.
+
 {% tabs %}
 
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="45" x:Name="comboBox" Text="Sample text" TextColor="#1976d2" TextSize="20" BorderColor="#1976d2"/>
+	<combobox:SfComboBox HeightRequest="45" x:Name="comboBox" Text="Sample text" FontAttributes="Bold" TextColor="#1976d2" TextSize="20" BorderColor="#1976d2"/>
 </StackLayout>
 
 {% endhighlight %}
@@ -41,6 +61,7 @@ SfComboBox comboBox = new SfComboBox()
 	TextColor = Color.FromHex("1976d2"), 
 	TextSize = 20, 
 	BorderColor = Color.FromHex("1976d2")
+	FontAttributes = FontAttributes.Bold
 };
 
 stackLayout.Children.Add(comboBox);

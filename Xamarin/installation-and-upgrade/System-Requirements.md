@@ -70,10 +70,6 @@ The following table lists the platforms supported by our Xamarin.Forms controls.
         </td>
     </tr>
     <tr>
-        <td>          
-            <br/>
-            <br/>
-        </td>
         <td>
             SfListView
             <br/>
@@ -86,10 +82,6 @@ The following table lists the platforms supported by our Xamarin.Forms controls.
         </td>
     </tr>
      <tr>
-        <td>
-           <br/>
-           <br/>
-        </td>
         <td>
             All other controls 
             <br/>

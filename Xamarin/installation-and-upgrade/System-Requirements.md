@@ -8,20 +8,20 @@ documentation: ug
 
 ---
 
-# System Requirements
+# **System Requirements**
 
-### Hardware Environment
+### **Hardware Environment**
 
 * Processor: x86 or x64
 * RAM : 512 MB (minimum), 1 GB (recommended)
 * Hard disk: up to 1.5 GB of available space may be required. However, 250 MB free space is required in boot drive even if you are installing the setup in other drive.
 
-### Development Environment
+### **Development Environment**
 Please find the recommended development environment for Xamarin platform in the following link. 
 
 [https://docs.microsoft.com/en-us/xamarin/cross-platform/get-started/requirements](https://docs.microsoft.com/en-us/xamarin/cross-platform/get-started/requirements)
 
-### Supported Platforms
+### **Supported Platforms**
 
 The following table lists the platforms supported by our Xamarin.Forms controls.
 

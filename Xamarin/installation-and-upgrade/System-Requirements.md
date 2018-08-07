@@ -17,7 +17,7 @@ documentation: ug
 * Hard disk: up to 1.5 GB of available space may be required. However, 250 MB free space is required in boot drive even if you are installing the setup in other drive.
 
 ### Development Environment
-Please find the system requirements for Xamarin platform in the following link. 
+Please find the recommended development environment for Xamarin platform in the following link. 
 
 [https://docs.microsoft.com/en-us/xamarin/cross-platform/get-started/requirements](https://docs.microsoft.com/en-us/xamarin/cross-platform/get-started/requirements)
 

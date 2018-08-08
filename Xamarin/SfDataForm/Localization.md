@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization | SfDataForm | Xamarin.Forms | Syncfusion
-description: How to localize the value in SfDataForm.
+description: How to localize the text in SfDataForm.
 platform: xamarin
 control: SfDataForm
 documentation: ug

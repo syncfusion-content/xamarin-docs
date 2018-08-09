@@ -10,18 +10,6 @@ documentation: ug
 
 # System Requirements
 
-The following topic describes the system requirements for Syncfusion Xamarin platform.
-
-### Operating Systems
-
-* Windows XP
-* Windows Vista SP2
-* Windows 7 SP1
-* Windows 8, 8.1
-* Windows 10
-* Android 4.1 & later
-* iOS 9 & later
-
 ### Hardware Environment
 
 * Processor: x86 or x64
@@ -29,40 +17,33 @@ The following topic describes the system requirements for Syncfusion Xamarin pla
 * Hard disk: up to 1.5 GB of available space may be required. However, 250 MB free space is required in boot drive even if you are installing the setup in other drive.
 
 ### Development Environment
+Please find the recommended development environment for Xamarin platform in the following link. 
 
-By using the following IDEs, you can develop Android and UWP applications:
+[https://docs.microsoft.com/en-us/xamarin/cross-platform/get-started/requirements](https://docs.microsoft.com/en-us/xamarin/cross-platform/get-started/requirements)
 
-* Visual Studio 2015
-* Visual Studio 2017
-
-N> For installing and configuring Xamarin in Visual Studio, please refer this [`link`](https://developer.xamarin.com/guides/android/getting_started/installation/windows/).
-
-N> You can use Xamarin build host feature to deploy Xamarin.iOS and Xamarin.Forms for iOS apps from Visual Studio, read the [`Xamarin documentation`](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/introduction_to_xamarin_ios_for_visual_studio/) for more information about build host feature.
-
-**Integrated** **Development** **Environment** **for** **Mac**
-
-By using Visual Studio for Mac, you can develop iOS and Android applications.
-
-N> For installing and configuring Xamarin in Visual Studio for Mac, please refer this [`link`](https://docs.microsoft.com/en-us/visualstudio/mac/installation).
-
-**Supported Platforms**
+### Supported Platforms
 
 The following table lists the platforms supported by our Xamarin.Forms controls.
 
 <table>
     <tr>
         <td>
-            Platform
-            <br/>
-            <br/>
-        </td>
-          <td>
-            Controls
+            <b>Platform<b/>
             <br/>
             <br/>
         </td>
         <td>
-            Supported versions
+          <b>Device Types<b/>
+            <br/>
+            <br/>
+        </td>
+          <td>
+            <b>Controls<b/>
+            <br/>
+            <br/>
+        </td>
+        <td>
+            <b>Supported versions<b/>
             <br/>
             <br/>
         </td>
@@ -72,6 +53,11 @@ The following table lists the platforms supported by our Xamarin.Forms controls.
             Android
             <br/>
             <br/>
+        </td>
+        <td rowspan="3">
+        Phone, Tablet
+        <br/>
+        <br/>
         </td>
         <td>
             SfPdfViewer, SfCheckBox
@@ -114,6 +100,11 @@ The following table lists the platforms supported by our Xamarin.Forms controls.
             <br/>
             <br/>
         </td>
+        <td>
+            iPhone, iPod, iPad
+            <br/>
+            <br/>
+        </td>
           <td>
             All controls 
             <br/>
@@ -131,6 +122,11 @@ The following table lists the platforms supported by our Xamarin.Forms controls.
             <br/>
             <br/>
         </td>
+        <td>
+           Desktop, Tablet
+            <br/>
+            <br/>
+        </td>
           <td>
             All controls 
             <br/>
@@ -141,5 +137,26 @@ The following table lists the platforms supported by our Xamarin.Forms controls.
             <br/>
             <br/>
         </td>
-    </tr>    
+    </tr>
+<td>
+            macOS
+            <br/>
+            <br/>
+        </td>
+        <td>
+            iMac, Mac book, Mac mini
+             <br/>
+             <br/>
+        </td>
+        <td>
+            SfChart, SfDataGrid and SfListView
+            <br/>
+            <br/>
+        </td>
+         <td>
+            macOS 10.11 and later versions
+            <br/>
+            <br/>
+        </td>
+    
 </table>

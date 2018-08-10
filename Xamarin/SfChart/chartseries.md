@@ -429,4 +429,4 @@ int index = series.GetDataPointIndex(400, 400);
 
 {% endhighlight %}
 
->N The output of this method will be -1 if there is no data point under the given x and y positions.
+N> The output of this method will be -1 if there is no data point under the given x and y positions.

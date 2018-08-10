@@ -276,3 +276,17 @@ private void pdfViewerControl_PageChanged(object sender, Syncfusion.SfPdfViewer.
 {% endtabs %}
 
 The arguments of the PageChanged event contains details about to which page the document is navigated to.
+
+## How to get and set the zoom for SfPdfViewer?
+
+PDF viewer has the BindableProperty ZoomPercentage that is used to retrieve and set the current zoom factor.
+
+{% tabs %}
+{% highlight %}
+
+<Entry Keyboard="Numeric" FontSize="18" x:Name="zoomPercentage" HorizontalTextAlignment="Center" VerticalOptions="Center" Text="{Binding ZoomPercentage, Source={x:Reference Name=pdfViewerControl}}"/>
+
+{% endhighlight %}
+{% endtabs %}
+
+On binding the entry control to ZoomPercentage property of the PDF viewer instance, the current zoom percentage being displayed in the PDF viewer is displayed in the entry control, and the PDF viewer would be zoomed based on the value entered.

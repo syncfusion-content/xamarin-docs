@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization | SfDataForm | Xamarin.Forms | Syncfusion
-description: How to localize the text in SfDataForm.
+title: SfDataForm Localization
+description: Describes how to localize the SfDataForm display attribute values and validation attribute error messages based on culture.
 platform: xamarin
 control: SfDataForm
 documentation: ug

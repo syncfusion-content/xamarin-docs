@@ -472,7 +472,7 @@ private void Button_Click(object sender, EventArgs e)
 
 ### Loading complex type properties as Picker
 
-You can display the complex type property values in picker by overriding the SourceProvider class and set it to `SourceProvider` property of SfDataForm and you need to use `AutoGeneratingDataFormItem `event to set [DisplayMemberPath](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormPickerItem~DisplayMemberPath.html) and [ValueMemberPath](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormPickerItem~ValueMemberPath.html) property value DataFormPickerItem for complex type property.
+You can display the complex type property values in picker editor by using the GetSource override method of SourceProvider class, which is used to get source list as complex property values for picker editor and set it to `SourceProvider` property of SfDataForm. You need to use `AutoGeneratingDataFormItem `event to set [DisplayMemberPath](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormPickerItem~DisplayMemberPath.html) and [ValueMemberPath](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormPickerItem~ValueMemberPath.html) property value DataFormPickerItem for complex type property.
 
 {% tabs %}
 {% highlight c# %}

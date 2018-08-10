@@ -16,7 +16,7 @@ Please refer the [Localization]( https://docs.microsoft.com/en-us/xamarin/xamari
  
 Based on the culture specifies the corresponding culture string value of display attribute in Resource (.Resx) file as mentioned in document.
 
-## Localizing Display attributes
+## Localizing data form item display values
 
 Here, the display attributes or data form item display values get localized based on culture from Localization Resource File (.Resx).
 
@@ -59,7 +59,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-## Localizing validation attributes
+## Localizing validation error messages
 
 Here, the validation (Required,StringLength)  attributes or data form error messages get localized based on culture from Localization Resource File (.Resx).
 

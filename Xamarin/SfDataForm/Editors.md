@@ -448,7 +448,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-### Changing ItemsSource of picker editor at run time
+### Changing ItemsSource of picker at run time
 
 You can also change the `ItemsSource` at runtime.
 
@@ -470,7 +470,7 @@ private void Button_Click(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-### Loading complex type property values in picker editor
+### Loading complex type property values in picker
 
 You can display the complex type property values in picker editor by using the GetSource override method of SourceProvider class, which is used to get source list as complex property values for picker editor and set it to `SourceProvider` property of SfDataForm. You need to use `AutoGeneratingDataFormItem `event to set [DisplayMemberPath](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormPickerItem~DisplayMemberPath.html) and [ValueMemberPath](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormPickerItem~ValueMemberPath.html) property value DataFormPickerItem for complex type property.
 

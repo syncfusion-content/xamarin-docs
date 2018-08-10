@@ -528,3 +528,146 @@ public class DataFormItemManagerExt : DataFormItemManager
 {% endhighlight %}
 
 Here, the data form is loaded with field from dictionary.
+
+## DynamicObject
+
+### Binding using dynamic object
+
+#### Limitations
+
+DynamicObject supports only in Xamarin Android and data form item will be created. Currently Dynamic object is not supported in UWP and iOS platform and you can find more details about this for iOS platform under the following links.
+
+https://forums.xamarin.com/discussion/53941/expandoobject-crashing-ios 
+https://developer.xamarin.com/guides/ios/advanced_topics/limitations/
+
+{% tabs %}
+{% highlight c# %}
+
+dataForm.DataObject =new DynamicDataModel().DynamicDataModel1;
+
+public class DynamicDataModel
+{
+    public dynamic DynamicDataModel1;
+
+    public dynamic DynamicDataModel2;
+    public DynamicDataModel()
+    {
+        DynamicDataModel1 = new ExpandoObject();
+        DynamicDataModel1.FirstName = "John";
+        DynamicDataModel1.LastName = "";
+        DynamicDataModel1.Address = "";
+        DynamicDataModel1.Email = "";
+
+        DynamicDataModel2 = new Data();
+        DynamicDataModel2.FirstName = "John";
+        DynamicDataModel2.LastName = "";
+        DynamicDataModel2.Address = "";
+        DynamicDataModel2.Email = "";
+    }
+}
+
+public class Data : DynamicObject, IDictionary<string, object>
+{
+    Dictionary<string, object> list = new Dictionary<string, object>();
+
+    public override bool TrySetMember(SetMemberBinder binder, object value)
+    {
+        list[binder.Name] = value;
+        return true;
+    }
+
+    public override bool TryGetMember(GetMemberBinder binder, out object result)
+    {
+        return list.TryGetValue(binder.Name, out result);
+    }
+
+    public override IEnumerable<string> GetDynamicMemberNames()
+    {
+        return list.Keys;
+    }
+
+    public void Add(string key, object value)
+    {
+        this.list.Add(key, value);
+    }
+
+    public bool ContainsKey(string key)
+    {
+        return this.list.ContainsKey(key);
+    }
+
+    public ICollection<string> Keys
+    {
+        get { return this.list.Keys; }
+    }
+
+    public bool Remove(string key)
+    {
+        return this.list.Remove(key);
+    }
+
+    public bool TryGetValue(string key, out object value)
+    {
+        return this.list.TryGetValue(key, out value);
+    }
+
+    public ICollection<object> Values
+    {
+        get { return this.list.Values; }
+    }
+
+    object IDictionary<string, object>.this[string key]
+    {
+        get { return this.list[key]; }
+        set { this.list[key] = value; }
+    }
+
+    public void Add(KeyValuePair<string, object> item)
+    {
+        this.list.Add(item.Key, item.Value);
+    }
+
+    public void Clear()
+    {
+        this.list.Clear();
+    }
+
+    public bool Contains(KeyValuePair<string, object> item)
+    {
+        return this.list.Contains(item);
+    }
+
+    public void CopyTo(KeyValuePair<string, object>[] array, int arrayIndex)
+    {
+
+    }
+
+    public int Count
+    {
+        get { return this.list.Count; }
+    }
+
+    public bool IsReadOnly
+    {
+        get { return false; }
+    }
+
+    public bool Remove(KeyValuePair<string, object> item)
+    {
+        return this.list.Remove(item.Key);
+    }
+
+    public IEnumerator<KeyValuePair<string, object>> GetEnumerator()
+    {
+        return this.list.GetEnumerator();
+    }
+
+    System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
+    {
+        return this.list.GetEnumerator();
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ComplexProperty852207509.zip)

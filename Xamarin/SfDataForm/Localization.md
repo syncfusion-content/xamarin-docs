@@ -27,7 +27,7 @@ ResourceType [Display](https://apisof.net/catalog/System.ComponentModel.DataAnno
 {% tabs %}
 {% highlight c# %}
 
-[Display(Name ="FirstName", Prompt = "EnterFirstName", ResourceType = typeof(Localization))]
+[Display(Name ="FirstName", Prompt = "EnterFirstName", GroupName ="Name", ResourceType = typeof(Localization))]
 public String FirstName { get; set; } 
 
 {% endhighlight %}
@@ -35,13 +35,15 @@ public String FirstName { get; set; }
 
 ### Using event
 
-You can also localize the DataFormItem LabelText, PlaceHolderText in the `AutoGeneratingDataFormItem` event of SfDataForm by using the Resources (.Resx) file.
+You can also localize the DataFormItem LabelText, PlaceHolderText, GroupName in the `AutoGeneratingDataFormItem` event of SfDataForm by using the Resources (.Resx) file.
 
-Here, Localization Resource File (.Resx) and accessed the localized string directly from it.
-
+Here, string member of .resx file will be accessed through the class (in resxFilename.Designer.cs) which was auto-generated when .resx file created and static string members get localized using [ResourceManager]https://msdn.microsoft.com/en-us/library/d17ax2xk(v=vs.110).aspx based on culture.
 
 {% tabs %}
 {% highlight c# %}
+
+[Display(GroupName ="Name")]
+public String FirstName { get; set; }
 
 dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
 private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
@@ -53,6 +55,10 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
             e.DataFormItem.LabelText = Localization.FirstName;
             e.DataFormItem.PlaceHolderText = Localization.EnterFirstName;
         }
+        if (e.DataFormItem.GroupName == "Name")
+        {
+            e.DataFormItem.GroupName = Localization.Name;
+        }
     }
 }
 
@@ -61,7 +67,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ## Localizing validation error messages
 
-Here, the validation (Required,StringLength)  attributes or data form error messages get localized based on culture from Localization Resource File (.Resx).
+Here, the validation (Required,StringLength) attributes or data form error messages get localized based on culture from Localization Resource File (.Resx).
 
 ### Using attribute
 
@@ -81,7 +87,7 @@ public String FirstName { get; set; }
 
 You can also localize the data form error message in the ` Validating` event of SfDataForm by using the Resources (.Resx) file.
 
-Here, Localization Resource File (.Resx) and accessed the localized string directly from it.
+Here, string member of .resx file will be accessed through the class (in resxFilename.Designer.cs) which was auto-generated when .resx file created and static string members get localized using [ResourceManager]https://msdn.microsoft.com/en-us/library/d17ax2xk(v=vs.110).aspx based on culture.
 
 {% tabs %}
 {% highlight c# %}

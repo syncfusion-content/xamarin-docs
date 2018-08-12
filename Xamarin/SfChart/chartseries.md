@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Multiple chart series
 description: Learn how to render different types of series in a chart.
@@ -380,7 +380,7 @@ column.AnimationDuration = 0.8;
 
 {% endtabs %}
 
-## Transpose the Series
+## Vertical chart
 The [`IsTransposed`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CartesianSeries~IsTransposed.html) property of [`CartesianSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CartesianSeries.html) is used to plot the chart vertically and view the data in a different perspective.
 
 {% tabs %} 
@@ -429,4 +429,4 @@ int index = series.GetDataPointIndex(400, 400);
 
 {% endhighlight %}
 
->N The output of this method will be -1 if there is no data point under the given x and y positions.
+N> The output of this method will be -1 if there is no data point under the given x and y positions.

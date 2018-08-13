@@ -1,7 +1,7 @@
 ---
 layout: post
-title: SfDataForm Localization
-description: Describes how to localize the SfDataForm display attribute values and validation attribute error messages based on culture.
+title: Localization in SfDataForm
+description: Describes how to localize the SfDataForm display text and error messages based on culture.
 platform: xamarin
 control: SfDataForm
 documentation: ug

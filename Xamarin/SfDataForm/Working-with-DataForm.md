@@ -531,12 +531,11 @@ Here, the data form is loaded with field from dictionary.
 
 ## Binding using dynamic object
 
-You can also load the dynamic object in SfDataForm DataObject and by default DataFormTextItem will be generated based on data object property.
-You can change the editor of the DataFormItem in the AutoGeneratingDataFormItem event. You can find details about this [here](https://help.syncfusion.com/xamarin/sfdataform/working-with-dataform#changing-editor-type)
+You can also load the dynamic object in SfDataForm DataObject and by default text editor will be generated for dynamic object property. You can change the editor of DataFormItem for dynamic object property data type (default string) by using the AutoGeneratingDataFormItem event. You can find details about this [here](https://help.syncfusion.com/xamarin/sfdataform/working-with-dataform#changing-editor-type)
 
 ### Limitations
 
-DynamicObject supports only in Xamarin.Forms Android and data form item will be created. Currently Dynamic object is not supported in UWP and iOS platform and you can find more details about this for iOS platform under the following links.
+DynamicObject supports only in Xamarin.Forms Android and data form item will be created from dynamic object. Currently Dynamic object is not supported in UWP and iOS platform and you can find more details about this for iOS platform under the following links.
 
 https://forums.xamarin.com/discussion/53941/expandoobject-crashing-ios 
 https://developer.xamarin.com/guides/ios/advanced_topics/limitations/

@@ -251,55 +251,6 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-## Localization
- 
-You can localize the DataFormItem [Display](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DisplayAttribute.html
-) attribute values by using ResourceType display
-attribute or using the `AutoGeneratingDataFormItem` event.
- 
-Please refer the [Localization]( https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/localization/text?tabs=vswin) document  to localize the application.
- 
-Based on the culture, specify the corresponding culture string value of display attribute in Resource (.Resx) file.
- 
-### Using attribute
- 
-ResourceType [Display](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DisplayAttribute.html
-) attribute specifies the Resources File (.Resx) which is used to localize the Display attribute of Name, ShortName, GroupName and Prompt values.
- 
-Here, Display attribute value get localized based on culture from Localization Resource File (.Resx).
- 
-{% highlight c# %}
-
-[Display(Name = "ContactName", Prompt ="FirstName", ResourceType = typeof(Localization))]
-public string ContactName
-{
-    get { return this.contactName; }
-    set
-    {
-        this.contactName = value;
-    }
-}
-{% endhighlight %}
- 
-### Using event
- 
-You can localize the Name, GroupName and Prompt display attribute in the editor by using the Resources (.Resx) file in the `AutoGeneratingDataFormItem` event.
- 
-Here, Localization Resource File (.Resx) and accessed the localized string directly from it.
- 
-{% highlight c# %}
- 
-dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
-private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
-    {
-        if (e.DataFormItem.Name.Equals("ContactName"))
-        {
-            e.DataFormItem.PlaceHolderText = Localization.FirstName;
-            e.DataFormItem.Name = Localization.ContactName;
-        }
-    }
-{% endhighlight %}
-
 ## Changing DataFormItem
 
 You can change the created [DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem.html) and assign new `DataFormItem` in the [AutoGeneratingDataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~AutoGeneratingDataFormItem_EV.html) event.
@@ -528,3 +479,155 @@ public class DataFormItemManagerExt : DataFormItemManager
 {% endhighlight %}
 
 Here, the data form is loaded with field from dictionary.
+
+## Binding with dynamic data object
+
+You can also load the dynamic object in SfDataForm `DataObject` and by default text editor will be generated for each dynamic object property. You can change the editor of DataFormItem for dynamic object property data type (default string) by using the AutoGeneratingDataFormItem event. You can find details about this [here](https://help.syncfusion.com/xamarin/sfdataform/working-with-dataform#changing-editor-type)
+
+### Limitations
+
+DynamicObject supports only in Xamarin.Forms Android and data form item will be created for each dynamic object property. Currently Dynamic object is not supported in UWP and iOS platform and you can find more details about this for iOS platform under the following links.
+
+https://forums.xamarin.com/discussion/53941/expandoobject-crashing-ios 
+https://developer.xamarin.com/guides/ios/advanced_topics/limitations/
+
+{% tabs %}
+{% highlight c# %}
+
+dataForm.DataObject =new DynamicDataModel().ExpandoObject;
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null && e.DataFormItem.Name == "DateOfBirth")
+        e.DataFormItem.Editor = "Date";
+}
+
+public class DynamicDataModel
+{
+    public dynamic ExpandoObject;
+
+    public dynamic DynamicObject;
+    public DynamicDataModel()
+    {
+        ExpandoObject = new ExpandoObject();
+		ExpandoObject.FirstName = "John";
+		ExpandoObject.LastName = "";
+        ExpandoObject.DateOfBirth = DateTime.Now.Date;
+        ExpandoObject.Email = "";
+
+        DynamicObject = new Data();
+        DynamicObject.FirstName = "John";
+        DynamicObject.LastName = "";
+        DynamicObject.DateOfBirth = DateTime.Now.Date;
+        DynamicObject.Email = "";
+    }
+}
+
+public class Data : DynamicObject, IDictionary<string, object>
+{
+    Dictionary<string, object> list = new Dictionary<string, object>();
+
+    public override bool TrySetMember(SetMemberBinder binder, object value)
+    {
+        list[binder.Name] = value;
+        return true;
+    }
+
+    public override bool TryGetMember(GetMemberBinder binder, out object result)
+    {
+        return list.TryGetValue(binder.Name, out result);
+    }
+
+    public override IEnumerable<string> GetDynamicMemberNames()
+    {
+        return list.Keys;
+    }
+
+    public void Add(string key, object value)
+    {
+        this.list.Add(key, value);
+    }
+
+    public bool ContainsKey(string key)
+    {
+        return this.list.ContainsKey(key);
+    }
+
+    public ICollection<string> Keys
+    {
+        get { return this.list.Keys; }
+    }
+
+    public bool Remove(string key)
+    {
+        return this.list.Remove(key);
+    }
+
+    public bool TryGetValue(string key, out object value)
+    {
+        return this.list.TryGetValue(key, out value);
+    }
+
+    public ICollection<object> Values
+    {
+        get { return this.list.Values; }
+    }
+
+    object IDictionary<string, object>.this[string key]
+    {
+        get { return this.list[key]; }
+        set { this.list[key] = value; }
+    }
+
+    public void Add(KeyValuePair<string, object> item)
+    {
+        this.list.Add(item.Key, item.Value);
+    }
+
+    public void Clear()
+    {
+        this.list.Clear();
+    }
+
+    public bool Contains(KeyValuePair<string, object> item)
+    {
+        return this.list.Contains(item);
+    }
+
+    public void CopyTo(KeyValuePair<string, object>[] array, int arrayIndex)
+    {
+
+    }
+
+    public int Count
+    {
+        get { return this.list.Count; }
+    }
+
+    public bool IsReadOnly
+    {
+        get { return false; }
+    }
+
+    public bool Remove(KeyValuePair<string, object> item)
+    {
+        return this.list.Remove(item.Key);
+    }
+
+    public IEnumerator<KeyValuePair<string, object>> GetEnumerator()
+    {
+        return this.list.GetEnumerator();
+    }
+
+    System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
+    {
+        return this.list.GetEnumerator();
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+![](SfDataForm_images/DynamicObject.png)
+
+You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ComplexProperty-1726015503.zip)

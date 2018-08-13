@@ -9,8 +9,7 @@ documentation: ug
 
 # Localization 
 
-You can localize the DataFormItem [Display](https://apisof.net/catalog/System.ComponentModel.DataAnnotations.DisplayAttribute) attribute values and validation ([Required](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.RequiredAttribute.html),[StringLength](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.StringLengthAttribute.html) ) attributes values by using ResourceType display
-attribute or using the `AutoGeneratingDataFormItem` event.
+You can localize the DataFormItem [Display](https://apisof.net/catalog/System.ComponentModel.DataAnnotations.DisplayAttribute) attribute values and validation ([Required](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.RequiredAttribute.html) ,[StringLength](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.StringLengthAttribute.html) ) attributes values by using ResourceType display attribute or using the `AutoGeneratingDataFormItem` event.
  
 Please refer the [Localization]( https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/localization/text?tabs=vswin) document  to localize the application.
  
@@ -37,7 +36,7 @@ public String FirstName { get; set; }
 
 You can also localize the DataFormItem LabelText, PlaceHolderText, GroupName in the `AutoGeneratingDataFormItem` event of SfDataForm by using the Resources (.Resx) file.
 
-Here, string member of .resx file will be accessed through the class (in resxFilename.Designer.cs) which was auto-generated when .resx file created and static string members get localized using [ResourceManager]https://msdn.microsoft.com/en-us/library/d17ax2xk(v=vs.110).aspx based on culture.
+Here, string member of .resx file will be accessed through the class (in resxFilename.Designer.cs) which was auto-generated when .resx file created and static string members get localized using [ResourceManager](https://msdn.microsoft.com/en-us/library/d17ax2xk(v=vs.110).aspx based on culture.
 
 {% tabs %}
 {% highlight c# %}
@@ -87,7 +86,7 @@ public String FirstName { get; set; }
 
 You can also localize the data form error message in the ` Validating` event of SfDataForm by using the Resources (.Resx) file.
 
-Here, string member of .resx file will be accessed through the class (in resxFilename.Designer.cs) which was auto-generated when .resx file created and static string members get localized using [ResourceManager]https://msdn.microsoft.com/en-us/library/d17ax2xk(v=vs.110).aspx based on culture.
+Here, string member of .resx file will be accessed through the class (in resxFilename.Designer.cs) which was auto-generated when .resx file created and static string members get localized using [ResourceManager](https://msdn.microsoft.com/en-us/library/d17ax2xk(v=vs.110).aspx) based on culture.
 
 {% tabs %}
 {% highlight c# %}

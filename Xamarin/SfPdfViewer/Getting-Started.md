@@ -282,7 +282,7 @@ The arguments of the PageChanged event contains details about to which page the 
 PDF viewer has the BindableProperty ZoomPercentage that is used to retrieve and set the current zoom factor.
 
 {% tabs %}
-{% highlight %}
+{% highlight xaml %}
 
 <Entry Keyboard="Numeric" FontSize="18" x:Name="zoomPercentage" HorizontalTextAlignment="Center" VerticalOptions="Center" Text="{Binding ZoomPercentage, Source={x:Reference Name=pdfViewerControl}}"/>
 

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Multiple chart series
 description: Learn how to render different types of series in a chart.

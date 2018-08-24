@@ -41,6 +41,10 @@ The following list of assemblies should be added as reference from the lib folde
 <td>iOS renderer</td>
 <td>ios-unified\Syncfusion.SfTabView.XForms.dll<br/>ios-unified\Syncfusion. SfTabView.XForms.iOS.dll</td>
 </tr>
+<tr>
+<td>UWP renderer</td>
+<td>uwp\Syncfusion.SfTabView.XForms.dll<br/>uwp\Syncfusion.SfTabView.XForms.UWP.dll</td>
+</tr>
 </table>
 
 N> When there is a mismatch of Xamarin NuGet packages between your sample and the tab view assemblies, an error (Could not load type Xamarin.Forms.ElementTemplate) will occur. Refer to the [System Requirements](https://help.syncfusion.com/xamarin/introduction/system-requirements) section to know the software requirements of Syncfusion controls.
@@ -49,7 +53,7 @@ N> When there is a mismatch of Xamarin NuGet packages between your sample and th
 
 To use the tab view inside an application, each platform application must initialize the tab view renderer. This initialization steps vary from platform to platform, and it is discussed in the following sections:
 
-# Android
+# Android and UWP
 
 Android launches the tab view without any initialization, and it is enough to only initialize the Xamarin.Forms Framework to launch the application.
 
@@ -71,9 +75,38 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% endhighlight %}
 
+### ReleaseMode issue in UWP platform
+
+There is a known Framework issue in UWP platform. The custom controls will not render when deployed the application in `Release Mode`.
+
+The above problem can be resolved by initializing the SfTabView assemblies in `App.xaml.cs` in UWP project as like in below code snippet.
+
+{% highlight C# %}
+
+// In App.xaml.cs
+
+protected override void OnLaunched(LaunchActivatedEventArgs e)
+{
+…
+
+	rootFrame.NavigationFailed += OnNavigationFailed;
+		
+	// you'll need to add `using System.Reflection;`
+	List<Assembly> assembliesToInclude = new List<Assembly>();
+
+	//Now, add all the assemblies your app uses
+	assembliesToInclude.Add(typeof(SfTabViewRenderer).GetTypeInfo().Assembly);
+
+	// replaces Xamarin.Forms.Forms.Init(e);        
+	Xamarin.Forms.Forms.Init(e, assembliesToInclude);
+		
+…     
+}
+{% endhighlight %}
+
 ### Create a simple tab view
 
-This section explains how to create a tab view and configure it. The control can be configured entirely in C# code or by using XAML markup. The following screenshot illustrates the output of tab view on iOS and Android devices.
+This section explains how to create a tab view and configure it. The control can be configured entirely in C# code or by using XAML markup. The following screenshot illustrates the output of tab view on iOS, Android and UWP devices.
 
 ![](images/Getting-Started/xamarin_forms_tabview.png)
 
@@ -308,4 +341,4 @@ Similarly, content region for other tabs also can be configured.
 
 By default, both the vertical swiping for list view and horizontal swiping for tab view will work. If it is not required, it can be customized by using the `EnableSwiping` property of `SfTabView`.
 
-Note: Getting started sample can be downloaded from [this link](http://files2.syncfusion.com/Installs/v16.1.0.24/Samples/Xamarin/TabView_GettingStarted.zip).
+Note: Getting started sample can be downloaded from [this link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/TabViewGettingStarted-1537758695).

@@ -119,7 +119,7 @@ N> For iOS alone, FontFamily property is declared without succeeding with .ttf a
 {% highlight xaml %}
 
 <ResourceDictionary>
-<OnPlatform x:TypeArguments="x:String" x:Key="fontFamily" iOS="TabIcons" Android="TabIcons.ttf" />
+<OnPlatform x:TypeArguments="x:String" x:Key="fontFamily" iOS="TabIcons" Android="TabIcons.ttf" UWP="TabIcons.ttf#TabIcons" />
 </ResourceDictionary>
 
 	// . . . //

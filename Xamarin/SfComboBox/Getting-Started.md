@@ -24,7 +24,7 @@ Create an instance of the `SfComboBoxRenderer` in FinishedLaunching overridden m
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {
-new Syncfusion.XForms.ComboBox.iOS.SfComboBoxRenderer();
+new Syncfusion.XForms.iOS.ComboBox.SfComboBoxRenderer();
 
 global::Xamarin.Forms.Forms.Init();
 

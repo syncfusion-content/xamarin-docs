@@ -367,7 +367,7 @@ N> To open the SfPopupLayout relative to a view without absolute position, pass 
 
 ### Show relative to view in MVVM
 
-To open the SfPopupLayout relative to a view in MVVM assign values to the `SfPopupLayout.RelativeView` and `SfPopup.RelativePostition` properties and use the `SfPopupLayout.IsOpen` property to open or close the popup using binding.
+To open the SfPopupLayout relative to a view in MVVM assign values to the `SfPopupLayout.RelativeView` and `SfPopup.RelativePosition` properties and use the `SfPopupLayout.IsOpen` property to open or close the popup using binding.
 
 {% tabs %}
 {% highlight xaml %}

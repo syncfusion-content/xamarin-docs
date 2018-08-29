@@ -380,7 +380,7 @@ To open the SfPopupLayout relative to a view in MVVM, use the `RelativeView` and
              xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms">
 
 <ContentPage.BindingContext>
-    <local:Viewmodel x:Name="viewModel" />
+    <local:ViewModel x:Name="viewModel" />
 </ContentPage.BindingContext>
     
 <ContentPage.Content>
@@ -422,7 +422,7 @@ namespace GettingStarted
 {% endtabs %}
 
 // ViewModel
-public class Viewmodel: INotifyPropertyChanged
+public class ViewModel: INotifyPropertyChanged
 {
     private bool displayPopup;
 
@@ -432,7 +432,7 @@ public class Viewmodel: INotifyPropertyChanged
         set { displayPopup = value; RaisePropertyChanged("DisplayPopup"); }
     }
 
-    public Viewmodel()
+    public ViewModel()
     {
         this.displayPopup = false;
     }

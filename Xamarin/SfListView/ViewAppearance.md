@@ -835,7 +835,7 @@ internal class SfListViewAccordionBehavior : Behavior<ContentPage>
 {% endhighlight %}
 {% endtabs %}
 
-Model property `IsVisible` which bound to second template that enables when tap on the item and disables when tap agaian on the same item.
+Model property `IsVisible` which bound to second template that enables when tap on the item and disables when tap again on the same item.
 
 You can also download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AccordionSample986355053).
 

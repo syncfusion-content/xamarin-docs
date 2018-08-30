@@ -761,40 +761,83 @@ The SfListView supports accordion view to display a list of items. Each item can
 {% endhighlight %}
 {% endtabs %}
 
-Accordion view can be displayed by using the [ItemTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTapped_EV.html) event.
+Accordion view can be displayed by defining two different ItemTemplate and enable/disable them in the [ItemTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTapped_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
-private void ListView_ItemTapped(object sender, Syncfusion.ListView.XForms.ItemTappedEventArgs e)
- {
-    if (tappedItem == null)
-    {
-    	(e.ItemData as Contact).IsVisible = true;
-    	tappedItem = e.ItemData as Contact;
-    }
-    else
-    {
-    	if (AccordionViewModel.ContactsInfo.Contains(tappedItem) && tappedItem.IsVisible)
-    	{
-    		AccordionViewModel.ContactsInfo.FirstOrDefault(x => x.ContactName == tappedItem.ContactName).IsVisible = false;
-    	}
-    	if (e.ItemData as Contact != tappedItem)
-    	{
-    		tappedItem = e.ItemData as Contact;
-    		AccordionViewModel.ContactsInfo.FirstOrDefault(x => x.ContactName == tappedItem.ContactName).IsVisible = true;
-    		tappedItem = e.ItemData as Contact;
-    	}
-    	else
-    		tappedItem = null;
-    }	
+internal class SfListViewAccordionBehavior : Behavior<ContentPage>
+{
+    #region Fields
 
-    listview.ForceUpdateItemSize();
- }
+    private Contact tappedItem;
+    private Syncfusion.ListView.XForms.SfListView listview;
+    private AccordionViewModel AccordionViewModel;
+
+    #endregion
+
+    #region Properties
+    public SfListViewAccordionBehavior()
+    {
+        AccordionViewModel = new AccordionViewModel();
+    }
+
+    #endregion
+
+    #region Override Methods
+
+    protected override void OnAttachedTo(ContentPage bindable)
+    {
+        listview = bindable.FindByName<Syncfusion.ListView.XForms.SfListView>("listView");
+        listview.ItemsSource = AccordionViewModel.ContactsInfo;
+        listview.ItemTapped += ListView_ItemTapped;
+    }
+
+    #endregion
+
+    #region Private Methods
+
+    private void ListView_ItemTapped(object sender, Syncfusion.ListView.XForms.ItemTappedEventArgs e)
+    {
+        if (tappedItem == null)
+        {
+            // Expands when tap on the item at first.
+            (e.ItemData as Contact).IsVisible = true;
+            tappedItem = e.ItemData as Contact;
+        }
+        else
+        {
+            if (AccordionViewModel.ContactsInfo.Contains(tappedItem) && tappedItem.IsVisible)
+            {
+                // Collapse when tap on the expanded item.
+                AccordionViewModel.ContactsInfo.FirstOrDefault(x => x.ContactName == tappedItem.ContactName).IsVisible = false;
+            }
+            if (e.ItemData as Contact != tappedItem)
+            {
+                // Expands when tap on the another item.
+                tappedItem = e.ItemData as Contact;
+                AccordionViewModel.ContactsInfo.FirstOrDefault(x => x.ContactName == tappedItem.ContactName).IsVisible = true;
+            }
+            else
+                tappedItem = null;
+        }
+
+        listview.ForceUpdateItemSize();
+    }
+
+    #endregion
+
+    protected override void OnDetachingFrom(ContentPage bindable)
+    {
+        listview.ItemTapped -= ListView_ItemTapped;           
+    }
+}
 
 {% endhighlight %}
 {% endtabs %}
 
-You can also download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AccordionSample-312865635).
+Model property `IsVisible` which bound to second template that enables when tap on the item and disables when tap agaian on the same item.
+
+You can also download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AccordionSample986355053).
 
 ![](SfListView_images/SfListView-AccordionImage.png)
 

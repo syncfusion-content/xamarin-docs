@@ -384,10 +384,10 @@ To open the SfPopupLayout relative to a view in MVVM assign values to the `SfPop
 </ContentPage.BindingContext>
     
 <ContentPage.Content>
-    <sfPopup:SfPopupLayout x:Name="popupLayout" IsOpen="{Binding DisplayPopup}" RelativePosition="AlignBottom" AbsoluteX="0" AbsoluteY="20">
+    <sfPopup:SfPopupLayout x:Name="popupLayout" IsOpen="{Binding DisplayPopup}" RelativePosition="AlignBottom" AbsoluteX="0" AbsoluteY="0">
         <sfPopup:SfPopupLayout.Content>
-            <StackLayout>
-                <Label x:Name="relativeView" Text="Showing Popup using MVVM" VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand" HeightRequest="30" FontSize="Medium" />
+            <StackLayout >
+                <Label x:Name="relativeView" Text="Showing Popup at relative position in MVVM" VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" HeightRequest="60" LineBreakMode="WordWrap" FontSize="Medium" BackgroundColor="Blue" TextColor="White"/>
             </StackLayout>
         </sfPopup:SfPopupLayout.Content>
         <sfPopup:SfPopupLayout.RelativeView>
@@ -445,3 +445,7 @@ public class ViewModel: INotifyPropertyChanged
 
     public event PropertyChangedEventHandler PropertyChanged;
 }
+
+Executing the above codes renders the following output in Android device respectively.
+
+![](PopupLayout_images/ShowingPopupAtRelativePositionInMVVM.jpg)

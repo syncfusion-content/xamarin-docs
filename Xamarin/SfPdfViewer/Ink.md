@@ -2,7 +2,7 @@
 layout: post
 title:  Working with ink annotation
 description: Working with ink annotation
-platform: Xamarin.Forms
+platform: Xamarin
 control: SfPdfViewer
 documentation: ug
 ---

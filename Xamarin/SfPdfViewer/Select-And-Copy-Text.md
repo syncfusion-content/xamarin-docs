@@ -2,7 +2,7 @@
 layout: post
 title:  Select and copy the text
 description: select and copy the text
-platform: Xamarin.Forms
+platform: Xamarin
 control: SfPdfViewer
 documentation: ug
 ---

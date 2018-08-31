@@ -2,7 +2,7 @@
 layout: post
 title:  Working with built-in toolbar
 description: Working with built-in toolbar
-platform: Xamarin.Forms
+platform: Xamarin
 control: SfPdfViewer
 documentation: ug
 ---

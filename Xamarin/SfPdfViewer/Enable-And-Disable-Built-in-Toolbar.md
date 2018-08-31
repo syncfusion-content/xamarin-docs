@@ -2,7 +2,7 @@
 layout: post
 title:  Enable and disable built-in toolbar
 description: Enable and disable built-in toolbar
-platform: Xamarin.Forms
+platform: Xamarin
 control: SfPdfViewer
 documentation: ug
 ---

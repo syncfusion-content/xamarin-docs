@@ -2,7 +2,7 @@
 layout: post
 title:  Designing a toolbar
 description: designing a toolbar
-platform: Xamarin.Forms
+platform: Xamarin
 control: SfPdfViewer
 documentation: ug
 ---

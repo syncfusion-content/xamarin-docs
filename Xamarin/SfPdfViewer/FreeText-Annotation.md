@@ -2,7 +2,7 @@
 layout: post
 title:  Working with freetext annotations
 description: Working with freetext annotations
-platform: Xamarin.Forms
+platform: Xamarin
 control: SfPdfViewer
 documentation: ug
 ---

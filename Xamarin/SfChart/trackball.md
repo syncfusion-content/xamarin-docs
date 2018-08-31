@@ -518,7 +518,7 @@ The [`Hide`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChar
 
 {% highlight c# %}
 
-tooltip.Hide();
+trackball.Hide();
 
 {% endhighlight %}
 

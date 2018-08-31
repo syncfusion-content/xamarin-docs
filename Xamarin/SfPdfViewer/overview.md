@@ -1,5 +1,5 @@
 ---
-platform: Xamarin.Forms
+platform: Xamarin
 control: SfPdfViewer
 ---
 

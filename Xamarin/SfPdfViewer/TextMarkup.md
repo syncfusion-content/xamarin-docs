@@ -2,7 +2,7 @@
 layout: post
 title:  Working with text markup annotation
 description: Working with text markup annotation
-platform: Xamarin.Forms
+platform: Xamarin
 control: SfPdfViewer
 documentation: ug
 ---

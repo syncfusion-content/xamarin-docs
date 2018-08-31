@@ -2,7 +2,7 @@
 layout: post
 title:  Search for a text instance
 description: search for a text instance
-platform: Xamarin.Forms
+platform: Xamarin
 control: SfPdfViewer
 documentation: ug
 ---

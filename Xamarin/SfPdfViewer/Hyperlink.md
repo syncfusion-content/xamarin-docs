@@ -2,7 +2,7 @@
 layout: post
 title:  Working with Hyperlink navigation
 description: Working with Hyperlink navigation
-platform: Xamarin.Forms
+platform: Xamarin
 control: SfPdfViewer
 documentation: ug
 ---

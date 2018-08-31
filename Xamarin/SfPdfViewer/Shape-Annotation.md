@@ -2,7 +2,7 @@
 layout: post
 title:  Working with shape annotations
 description: Working with shape annotations
-platform: Xamarin.Forms
+platform: Xamarin
 control: SfPdfViewer
 documentation: ug
 ---

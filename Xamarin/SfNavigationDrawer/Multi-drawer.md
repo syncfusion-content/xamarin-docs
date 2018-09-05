@@ -10,7 +10,7 @@ documentation: ug
 
 # Multi drawer
 
-The navigation drawer allows the user to provide the multi drawer contents and each of them can be opened with their toogle methods.
+The navigation drawer allows the user to provide the multi drawer contents and each of them can be opened with their opening methods.
 
 *	Default drawer settings
 
@@ -216,15 +216,15 @@ The header view of the secondary drawer can be provided using the below codes.
 
 {% highlight c# %}
 
-Grid secondarayheaderLayout = new Grid();
-secondarayheaderLayout.BackgroundColor = Color.FromHex("#1aa1d6");
-Label secondaryheader = new Label();
-secondaryheader.Text = "Syncfusion Enterprise solution";
-secondaryheader.FontSize = 20;
-secondaryheader.TextColor = Color.White;
-secondaryheader.HorizontalTextAlignment = TextAlignment.Center;
-secondarayheaderLayout.Children.Add(secondaryheader);
-secondaryDrawer.DrawerHeaderView = secondarayheaderLayout;
+Grid secondaray = new Grid();
+secondaray.BackgroundColor = Color.FromHex("#1aa1d6");
+Label header = new Label();
+header.Text = "Syncfusion Enterprise solution";
+header.FontSize = 20;
+header.TextColor = Color.White;
+header.HorizontalTextAlignment = TextAlignment.Center;
+secondaray.Children.Add(header);
+secondaryDrawer.DrawerHeaderView = secondaray;
 
 {% endhighlight %}
 
@@ -251,15 +251,15 @@ The drawer content view of the secondary drawer can be provided using the below 
 
 {% highlight c# %}
 
-Grid secondarycontentLayout = new Grid();
-secondarycontentLayout.BackgroundColor = Color.FromHex("#1aa1d6");
+Grid Layout = new Grid();
+Layout.BackgroundColor = Color.FromHex("#1aa1d6");
 Label secondarycontent = new Label();
 secondarycontent.Text = "DrawerContent";
 secondarycontent.FontSize = 20;
 secondarycontent.TextColor = Color.White;
 secondarycontent.HorizontalTextAlignment = TextAlignment.Center;
-secondarycontentLayout.Children.Add(secondarycontent);
-secondaryDrawer.DrawerContentView = secondarycontentLayout;
+Layout.Children.Add(secondarycontent);
+secondaryDrawer.DrawerContentView = Layout;
 
 {% endhighlight %}
 
@@ -286,15 +286,15 @@ The footer view of the secondary drawer can be provided using the below codes.
 
 {% highlight c# %}
 
-Grid secondaryfooterLayout = new Grid();
-secondaryfooterLayout.BackgroundColor = Color.FromHex("#1aa1d6");
-Label secondayfooter = new Label();
-secondayfooter.Text = "Close";
-secondayfooter.FontSize = 20;
-secondayfooter.TextColor = Color.White;
-secondayfooter.HorizontalTextAlignment = TextAlignment.Center;
-secondaryfooterLayout.Children.Add(secondayfooter);
-secondaryDrawer.DrawerFooterView = secondaryfooterLayout;
+Grid Layout = new Grid();
+Layout.BackgroundColor = Color.FromHex("#1aa1d6");
+Label footer = new Label();
+footer.Text = "Close";
+footer.FontSize = 20;
+footer.TextColor = Color.White;
+footer.HorizontalTextAlignment = TextAlignment.Center;
+Layout.Children.Add(footer);
+secondaryDrawer.DrawerFooterView = Layout;
 
 {% endhighlight %}
 

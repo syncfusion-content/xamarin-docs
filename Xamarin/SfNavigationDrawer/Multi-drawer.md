@@ -216,15 +216,15 @@ The header view of the secondary drawer can be provided using the below codes.
 
 {% highlight c# %}
 
-Grid secondaray = new Grid();
-secondaray.BackgroundColor = Color.FromHex("#1aa1d6");
+Grid secondary = new Grid();
+secondary.BackgroundColor = Color.FromHex("#1aa1d6");
 Label header = new Label();
 header.Text = "Syncfusion Enterprise solution";
 header.FontSize = 20;
 header.TextColor = Color.White;
 header.HorizontalTextAlignment = TextAlignment.Center;
-secondaray.Children.Add(header);
-secondaryDrawer.DrawerHeaderView = secondaray;
+secondary.Children.Add(header);
+secondaryDrawer.DrawerHeaderView = secondary;
 
 {% endhighlight %}
 
@@ -253,12 +253,12 @@ The drawer content view of the secondary drawer can be provided using the below 
 
 Grid Layout = new Grid();
 Layout.BackgroundColor = Color.FromHex("#1aa1d6");
-Label secondarycontent = new Label();
-secondarycontent.Text = "DrawerContent";
-secondarycontent.FontSize = 20;
-secondarycontent.TextColor = Color.White;
-secondarycontent.HorizontalTextAlignment = TextAlignment.Center;
-Layout.Children.Add(secondarycontent);
+Label content = new Label();
+content.Text = "DrawerContent";
+content.FontSize = 20;
+content.TextColor = Color.White;
+content.HorizontalTextAlignment = TextAlignment.Center;
+Layout.Children.Add(content);
 secondaryDrawer.DrawerContentView = Layout;
 
 {% endhighlight %}

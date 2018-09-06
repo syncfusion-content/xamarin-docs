@@ -232,7 +232,7 @@ dataGrid.NotificationSubscriptionMode = NotificationSubscriptionMode.CollectionC
 {% endtabs %}
 
 ### Binding SfDataGrid.SelectedIndex property
-[SfDataGrid.SelectedIndex](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectedIndex.html) is a bindable property and it can be binded from the ViewModel. SfDataGrid.SelctedIndex is a int data type. It gets or sets the selected row's index in the SfDataGrid.
+[SfDataGrid.SelectedIndex](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectedIndex.html) is a bindable property and it can be binded from the ViewModel. SfDataGrid.SelectedIndex is a int data type. It gets or sets the selected row's index in the SfDataGrid.
 
 Refer the below code to bind the SfDataGrid.SelectedIndex from the ViewModel.
 

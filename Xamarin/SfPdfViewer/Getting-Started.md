@@ -43,6 +43,38 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {% endhighlight %}
 {% endtabs %}
 
+
+## Resolving issue when deploying an application in ReleaseMode in the UWP platform
+
+There is a known FrameWork issue in the UWP platform when an application using custom control is deployed in `Release Mode`, it will not be rendered.
+
+This can be resolved by initializing the SfPdfViewer related assemblies in `App.xaml.cs` in the UWP project. Refer to the following code snippet.
+
+{% tabs %}
+{% highlight c# %}
+
+protected override void OnLaunched(LaunchActivatedEventArgs e)
+{
+     …
+     rootFrame.NavigationFailed += OnNavigationFailed;
+
+     //Add the assemblies `using System.Reflection;`
+     List<Assembly> assembliesToInclude = new List<Assembly>();
+
+     //Now, add all the assemblies that your app uses
+     assembliesToInclude.Add(typeof(SfPdfDocumentViewRenderer).GetTypeInfo().Assembly);
+
+     assembliesToInclude.Add(typeof(SfRangeSliderRenderer).GetTypeInfo().Assembly);
+
+     //Replaces Xamarin.Forms.Forms.Init(e);
+     Xamarin.Forms.Forms.Init(e, assembliesToInclude);
+     …
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+
 ### Loading a PDF using MVVM binding
 
 File handling with Xamarin.Forms can be done using embedded resources or writing against the native filesystem APIs. Please find more details in the below link:

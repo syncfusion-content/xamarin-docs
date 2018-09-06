@@ -46,7 +46,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ## Resolving issue when deploying an application in ReleaseMode in the UWP platform
 
-There is a known FrameWork issue in the UWP platform when an application using custom control is deployed in `Release Mode`, it will not be rendered.
+There is a known Framework issue in the UWP platform when an application using custom control is deployed in `Release Mode`, it will not be rendered.
 
 This can be resolved by initializing the SfPdfViewer related assemblies in `App.xaml.cs` in the UWP project. Refer to the following code snippet.
 

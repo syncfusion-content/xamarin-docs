@@ -255,7 +255,7 @@ SfPopupLayout can be shown at the relative position by using the following metho
 
 ### Show Relative To View
 
-To open the SfPopupLayout relative to a view, use the `SfPopupLayout.ShowRelativeToView(View, RelativePosition)` property as in the following code sample.
+To open the SfPopupLayout relative to a view, use the `SfPopupLayout.ShowRelativeToView(View, RelativePosition,x-position,y-position)` method.
 
 {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8" ?>
@@ -295,7 +295,7 @@ namespace GettingStarted
         private void ClickToShowPopup_Clicked(object sender, EventArgs e)
         {
            // Shows SfPopupLayout at the bottom of the label.
-           popupLayout.ShowRelativeToView(label, RelativePosition.AlignBottom);
+           popupLayout.ShowRelativeToView(label, RelativePosition.AlignBottom, 0, 0);
         }
     }
 }
@@ -363,4 +363,89 @@ namespace GettingStarted
 
 You can pass both negative and positive values as parameters to the `SfPopupLayout.ShowRelativeToView(View, RelativePosition, x-position, y-position)`. The pop-up will be positioned by considering the relative position as (0, 0) the center point. For example, if you have set the `RelativePosition` as `RelativePosition.BottomRight` and `RelativeView` as a button, bottom right corner of the button will be considered as the 0, 0 point and a negative x-position value will place the pop-up to the left of that point and a positive x-position value will place the pop-up to the right of that point. The same applies for y-position also.
 
-N> To open the SfPopupLayout relative to a view without absolute position, you have to pass the x-position and y-position parameters as 0 in the `SfPopupLayout.ShowRelativeToView(View, RelativePosition,x-position,y-position)`.
+N> To open the SfPopupLayout relative to a view without absolute position, pass the x-position and y-position parameters as 0 in `SfPopupLayout.ShowRelativeToView(View, RelativePosition,x-position,y-position)`.
+
+### Show relative to view in MVVM
+
+To open the SfPopupLayout relative to a view in MVVM assign values to the `SfPopupLayout.RelativeView` and `SfPopup.RelativePosition` properties and use the `SfPopupLayout.IsOpen` property to open or close the popup using binding.
+
+{% tabs %}
+{% highlight xaml %}
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GettingStarted"
+             x:Class="GettingStarted.MainPage" 
+             Padding="0,40,0,0"
+             xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms">
+
+<ContentPage.BindingContext>
+    <local:ViewModel x:Name="viewModel" />
+</ContentPage.BindingContext>
+    
+<ContentPage.Content>
+    <sfPopup:SfPopupLayout x:Name="popupLayout" IsOpen="{Binding DisplayPopup}" RelativePosition="AlignBottom" AbsoluteX="0" AbsoluteY="0">
+        <sfPopup:SfPopupLayout.Content>
+            <StackLayout >
+                <Label x:Name="relativeView" Text="Showing Popup at relative position in MVVM" VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" HeightRequest="60" LineBreakMode="WordWrap" FontSize="Medium" BackgroundColor="Blue" TextColor="White"/>
+            </StackLayout>
+        </sfPopup:SfPopupLayout.Content>
+        <sfPopup:SfPopupLayout.RelativeView>
+            <x:Reference Name="relativeView"/>
+        </sfPopup:SfPopupLayout.RelativeView>
+    </sfPopup:SfPopupLayout>
+</ContentPage.Content>
+
+</ContentPage>
+{% endhighlight %}
+
+{% highlight c# %}
+using Syncfusion.XForms.PopupLayout;
+
+namespace GettingStarted
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            viewModel.DisplayPopup = true;
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+// ViewModel
+public class ViewModel: INotifyPropertyChanged
+{
+    private bool displayPopup;
+
+    public  bool DisplayPopup
+    {
+        get { return displayPopup; }
+        set { displayPopup = value; RaisePropertyChanged("DisplayPopup"); }
+    }
+
+    public ViewModel()
+    {
+        this.displayPopup = false;
+    }
+
+    public void RaisePropertyChanged(string propName)
+    {
+        if (this.PropertyChanged != null)
+            this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
+    }
+
+    public event PropertyChangedEventHandler PropertyChanged;
+}
+
+Executing the above codes renders the following output in Android device respectively.
+
+![](PopupLayout_images/ShowingPopupAtRelativePositionInMVVM.jpg)

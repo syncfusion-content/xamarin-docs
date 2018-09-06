@@ -761,7 +761,7 @@ The SfListView supports accordion view to display a list of items. Each item can
 {% endhighlight %}
 {% endtabs %}
 
-Accordion view can be displayed by defining two different ItemTemplate and enable/disable them in the [ItemTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTapped_EV.html) event.
+Accordion view can be displayed by defining two different ItemTemplates. The ItemTemplates can be enabled or disabled in the [ItemTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTapped_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -835,7 +835,7 @@ internal class SfListViewAccordionBehavior : Behavior<ContentPage>
 {% endhighlight %}
 {% endtabs %}
 
-Model property `IsVisible` which bound to second template that enables when tap on the item and disables when tap again on the same item.
+The `IsVisible` model property which is bound to the second template will be enabled when tapping the item and disabled when tapping again the same item.
 
 You can also download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AccordionSample986355053).
 

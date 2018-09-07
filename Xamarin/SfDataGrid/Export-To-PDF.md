@@ -1087,3 +1087,31 @@ private void PdfExport_CellExporting(object sender, DataGridCellPdfExportingEven
 {% endtabs %}
 
 ![](SfDataGrid_images/PDF/ImageLoading.png)
+
+## Exporting the selected rows of SfDataGrid
+
+SfDataGrid allows you to export the Selected rows alone, by default all the rows along with selected rows will be exported. 
+
+You can export the SfDataGrid.SelectedItems alone to Pdf by using the [DataGridExcelExportingController.ExportToPdf](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridPdfExportingController~ExportToPdf.html) method by passing the SfDataGrid and SfDataGrid.SelectedItems as an argument.
+
+Refer the below code to export the selected rows alone.
+
+{% highlight c# %}
+
+      private void ExportToPDF(object sender, EventArgs e)
+        {
+            DataGridPdfExportingController pdfExport = new DataGridPdfExportingController();
+            MemoryStream stream = new MemoryStream();
+            ObservableCollection<object> selectedItems = dataGrid.SelectedItems;
+            var doc = pdfExport.ExportToPdf(this.dataGrid, selectedItems);
+            doc.Save(stream);
+            doc.Close(true);
+            if (Device.RuntimePlatform == Device.UWP)
+                Xamarin.Forms.DependencyService.Get<ISaveWindowsPhone>().Save("DataGrid.pdf", "application/pdf", stream);
+            else
+                Xamarin.Forms.DependencyService.Get<ISave>().Save("DataGrid.pdf", "application/pdf", stream);
+        }   
+
+{% endhighlight %}
+
+![](SfDataGrid_images/PDF/SelectedItems_ExportToPdf.png)

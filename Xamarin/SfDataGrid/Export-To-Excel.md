@@ -756,3 +756,34 @@ public class SaveWindows : ISaveWindows
 }
 {% endhighlight %}
 {% endtabs %}
+
+## Exporting the selected rows of SfDataGrid
+
+SfDataGrid allows you to export the Selected rows alone, by default all the rows along with selected rows will be exported.
+
+You can export the SfDataGrid.SelectedItems alone to Excel by using the [DataGridExcelExportingController.ExportToExcel](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingController~ExportToExcel.html) method by passing the SfDataGrid and SfDataGrid.SelectedItems as an argument.
+
+Refer the below code to export the selected rows alone.
+
+{% highlight c# %}
+
+    private void ExPortToExcel(object sender, EventArgs e)
+        {
+            DataGridExcelExportingController excelExport = new DataGridExcelExportingController();
+            ObservableCollection<object> selectedItems = dataGrid.SelectedItems;
+            var excelEngine = excelExport.ExportToExcel(this.dataGrid, selectedItems);
+            var workbook = excelEngine.Excel.Workbooks[0];
+            MemoryStream stream = new MemoryStream();
+            workbook.SaveAs(stream);
+            workbook.Close();
+            excelEngine.Dispose();
+
+            if (Device.RuntimePlatform == Device.UWP)
+                Xamarin.Forms.DependencyService.Get<ISaveWindowsPhone>().Save("DataGrid.xlsx", "application/msexcel", stream);
+            else
+                Xamarin.Forms.DependencyService.Get<ISave>().Save("DataGrid.xlsx", "application/msexcel", stream);
+        }
+
+{% endhighlight %}
+
+![](SfDataGrid_images/Excel/SelectedItems_ExportToExcel.png)

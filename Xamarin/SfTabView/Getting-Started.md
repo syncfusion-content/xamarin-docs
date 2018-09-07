@@ -67,7 +67,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
  {
       …            
       global::Xamarin.Forms.Forms.Init ();   
-      SfTabViewRenderer.Init();   
+      Syncfusion.XForms.iOS.TabView.SfTabViewRenderer.Init();  
       LoadApplication (new App ());   
       …   
  }
@@ -95,7 +95,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 	List<Assembly> assembliesToInclude = new List<Assembly>();
 
 	//Now, add all the assemblies your app uses
-	assembliesToInclude.Add(typeof(SfTabViewRenderer).GetTypeInfo().Assembly);
+	assembliesToInclude.Add(typeof(Syncfusion.XForms.UWP.TabView.SfTabViewRenderer).GetTypeInfo().Assembly);
 
 	// replaces Xamarin.Forms.Forms.Init(e);        
 	Xamarin.Forms.Forms.Init(e, assembliesToInclude);

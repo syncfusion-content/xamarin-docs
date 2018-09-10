@@ -345,3 +345,38 @@ public class Custom : DataGridStyle
 }
 {% endhighlight %}
 
+## Border width customization
+SfDataGrid allows you to customize the border width of the grid cells and the header cells. 
+The default border width of the grid cell and the header cell for Forms.iOS and Forms.UWP is 0.5f and 1f for Forms.Android.
+
+Refer the below code snippet to customize the width of the grid cells and header cells.
+
+{% highlight c# %}
+
+     //Apply custom style to SfDataGrid from code
+      dataGrid.GridStyle = new CustomStyle();
+
+
+    public class CustomStyle : DataGridStyle
+    {
+        public CustomStyle()
+        {
+
+        }
+
+        // Customize border width for grid cells
+        public override float GetBorderWidth()
+        {
+            return 5;
+        }
+
+        // Customize border width for header cells
+        public override float GetHeaderBorderWidth()
+        {
+            return 5;
+        }
+
+    }
+
+{Endhighlight}
+

@@ -664,7 +664,7 @@ chart.Series.Add(series2);
 
 To render a histogram chart, create an instance of  [`HistogramSeries`]() and add to the series collection of [`SfChart`]().
 
-Histogram chart visualises the distribution of data over a continuous interval. It creates intervals and counts how many values fall into each interval. You can use the following properties to customize the appearance.
+Histogram chart visualizes the distribution of data over a continuous interval. It creates intervals and counts how many values fall into each interval. You can use the following properties to customize the appearance.
 
 * [`Color`]() – used to change the color of the series.
 * [`StrokeWidth`]() – used to change the stroke width of the series.

@@ -660,6 +660,53 @@ chart.Series.Add(series2);
 
 ![](charttypes_images/SideBySide-false.png)
 
+## Histogram Chart
+
+To render a histogram chart, create an instance of  [`HistogramSeries`]() and add to the series collection of [`SfChart`]().
+
+Histogram chart visualises the distribution of data over a continuous interval. It creates intervals and counts how many values fall into each interval. You can use the following properties to customize the appearance.
+
+* [`Color`]() – used to change the color of the series.
+* [`StrokeWidth`]() – used to change the stroke width of the series.
+* [`StrokeColor`]() – used to change the stroke color of the series.
+* [`Interval`]() – used to change the interval.
+* [`ShowNormalDistributionCurve`]() – used to hide/show the normal distribution curve. Default value of this property is true.
+* [`CurveColor`]() – used to change the color of the normal distribution curve.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart>
+...
+
+	<chart:HistogramSeries ItemsSource ="{Binding Data}" XBindingPath="XValue" 
+						YBindingPath="YValue" Interval="20"/>
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+...
+
+HistogramSeries histogramSeries = new HistogramSeries() 
+{ 
+	ItemsSource = Data, 
+	XBindingPath = "XValue", 
+	YBindingPath = "YValue",
+	Interval = 5 
+};
+chart.Series.Add(histogramSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](charttypes_images/charttypes_img42.png)
+
 ## Range Column Chart
 
 To render a range column chart, create an instance of [`RangeColumnSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RangeColumnSeries.html) and add to the [`Series`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~Series.html) collection property of [`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html). 

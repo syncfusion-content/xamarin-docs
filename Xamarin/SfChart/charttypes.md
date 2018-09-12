@@ -664,13 +664,13 @@ chart.Series.Add(series2);
 
 To render a histogram chart, create an instance of  [`HistogramSeries`]() and add to the series collection of [`SfChart`]().
 
-Histogram chart visualizes the distribution of data over a continuous interval. It creates intervals and counts how many values fall into each interval. You can use the following properties to customize the appearance.
+Histogram chart can provide a visual display of large amounts of data that are difficult to understand in a tabular or spreadsheet form.
+
+You can customize interval using [`Interval`]() property and the normal distribution curve can be collapsed using [`ShowNormalDistributionCurve`]().  You can use the following properties to customize the appearance.
 
 * [`Color`]() – used to change the color of the series.
 * [`StrokeWidth`]() – used to change the stroke width of the series.
 * [`StrokeColor`]() – used to change the stroke color of the series.
-* [`Interval`]() – used to change the interval.
-* [`ShowNormalDistributionCurve`]() – used to hide/show the normal distribution curve. Default value of this property is true.
 * [`CurveColor`]() – used to change the color of the normal distribution curve.
 
 {% tabs %} 
@@ -697,7 +697,7 @@ HistogramSeries histogramSeries = new HistogramSeries()
 	ItemsSource = Data, 
 	XBindingPath = "XValue", 
 	YBindingPath = "YValue",
-	Interval = 5 
+	Interval = 20 
 };
 chart.Series.Add(histogramSeries);
 

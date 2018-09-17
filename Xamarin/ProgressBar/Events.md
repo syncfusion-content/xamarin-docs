@@ -14,7 +14,7 @@ This event is triggered when the progress value is changed. This event contains 
 
 * [`Progress`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.ProgressValueEventArgs~Progress.html): Represents the progress value.
 
-The following code example shows how to customize the color of a progress indicator based on progress using this event. 
+The following code sample demonstrates how to customize the color of a progress indicator based on progress using this event. 
 
 {% tabs %} 
 
@@ -47,9 +47,9 @@ private void ProgressBarBase_OnValueChanged(object sender, ProgressValueEventArg
 
 This event is triggered when the progress attains the [`Maximum`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.ProgressBarBase~Maximum.html) value. This event contains the following argument.
 
-* [`Progress`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.ProgressValueEventArgs~Progress.html):  Represents the progress value.
+* [`Progress`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.ProgressValueEventArgs~Progress.html): Represents the progress value.
 
-The following code example shows how to customize the progress bar when progress reaches maximum using this event. 
+The following code sample demonstrates how to customize the progress bar when progress reaches maximum using this event. 
 
 {% tabs %} 
 

@@ -23,5 +23,4 @@ The Essential Xamarin BusyIndicator control includes over 10 built-in animations
 
 * `AnimationTypes` – Supports 10 built-in animations to set and display within your application.
 
-
-
+* `Duration` - Option available to enable the speed of the animation.

@@ -52,7 +52,17 @@ editor.ToggleCropping(float.NaN,float.NaN);
 
 editor.ToggleCropping(9,17);    
 
-{% endhighlight %}
+{% endhighlight %} 
+
+* Crop an image based on custom region. The value of the rectangle should be ranges from 0 to 100.
+
+{% highlight C# %}
+
+Rectangle rect = new Rectangle (20,20,50,50);
+
+editor.ToggleCropping(rect);    
+
+{% endhighlight %} 
 
 After the cropping area has been selected, the `Crop` method is called which in turn crops the selected region and displays the cropped image on the ImageEditor.
 

@@ -664,7 +664,7 @@ chart.Series.Add(series2);
 
 To render a histogram chart, create an instance of  [`HistogramSeries`]() and add to the series collection of [`SfChart`]().
 
-Histogram chart can provide a visual display of large amounts of data that are difficult to understand in a tabular or spreadsheet form.
+Histogram chart can provide a visual display of large amounts of data that are difficult to understand in a tabular or data grid form.
 
 You can customize interval using [`Interval`]() property and the normal distribution curve can be collapsed using [`ShowNormalDistributionCurve`]().  You can use the following properties to customize the appearance.
 

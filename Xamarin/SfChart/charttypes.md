@@ -662,16 +662,16 @@ chart.Series.Add(series2);
 
 ## Histogram Chart
 
-To render a histogram chart, create an instance of  [`HistogramSeries`]() and add to the series collection of [`SfChart`]().
+To render a histogram chart, create an instance of  [`HistogramSeries`]() and add to the series collection of [`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html).
 
 Histogram chart can provide a visual display of large amounts of data that are difficult to understand in a tabular or spreadsheet form.
 
-You can customize interval using [`Interval`]() property and the normal distribution curve can be collapsed using [`ShowNormalDistributionCurve`]().  You can use the following properties to customize the appearance.
+You can customize interval using [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.HistogramSeries~Interval.html) property and the normal distribution curve can be collapsed using [`ShowNormalDistributionCurve`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.HistogramSeries~ShowNormalDistributionCurve.html).  You can use the following properties to customize the appearance.
 
-* [`Color`]() – used to change the color of the series.
-* [`StrokeWidth`]() – used to change the stroke width of the series.
-* [`StrokeColor`]() – used to change the stroke color of the series.
-* [`CurveColor`]() – used to change the color of the normal distribution curve.
+* [`Color`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~Color.html) – used to change the color of the series.
+* [`StrokeWidth`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~StrokeWidth.html) – used to change the stroke width of the series.
+* [`StrokeColor`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ColumnSeries~StrokeColor.html) – used to change the stroke color of the series.
+* [`CurveColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.HistogramSeries~CurveColor.html) – used to change the color of the normal distribution curve.
 
 {% tabs %} 
 

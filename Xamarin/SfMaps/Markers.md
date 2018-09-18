@@ -30,7 +30,7 @@ Any number of markers can be added to the shape file layers using the [`Markers`
 
 {% highlight xml %}
 
-<maps:SfMaps x:Name="sfmap"  BackgroundColor="White">
+    <maps:SfMaps x:Name="sfmap"  BackgroundColor="White">
                 <maps:SfMaps.Layers>
                     <maps:ShapeFileLayer Uri="usa_state.shp">
                         <maps:ShapeFileLayer.Markers>
@@ -98,7 +98,7 @@ The image is used to denote the marker icon as image instead of rendering the ma
 
 {% highlight xml %}
 
-    <maps:SfMaps x:Name="sfmap"  BackgroundColor="White">
+     <maps:SfMaps x:Name="sfmap"  BackgroundColor="White">
 
         <maps:SfMaps.Layers>
 
@@ -126,7 +126,7 @@ The image is used to denote the marker icon as image instead of rendering the ma
 
 {% highlight c# %}
 
-           SfMaps map = new SfMaps();
+            SfMaps map = new SfMaps();
 
             map.BackgroundColor = Color.White;
 
@@ -158,7 +158,7 @@ The image is used to denote the marker icon as image instead of rendering the ma
 
 {% endtabs %}
 
-![](Images/Markers_img2.jpeg)
+![](Images/Markers_img2.png)
 
 ### Setting image marker icon
 
@@ -166,15 +166,17 @@ The image is used to denote the marker icon as image instead of rendering the ma
 
 {% highlight xml %}
 
-    <maps:SfMaps x:Name="sfmap"  BackgroundColor="White">
-
+     <maps:SfMaps x:Name="sfmap"  BackgroundColor="White">
+        
         <maps:SfMaps.Layers>
-
+            
             <maps:ShapeFileLayer Uri="usa_state.shp">
-
+                
                 <maps:ShapeFileLayer.Markers>
 
                     <maps:MapMarker Label = "Texas" Latitude = "31.267153" Longitude = "-97.7430608"/>
+
+                    <maps:MapMarker Label = "California" Latitude = "37" Longitude = "-120"/>
 
                 </maps:ShapeFileLayer.Markers>
 
@@ -183,11 +185,11 @@ The image is used to denote the marker icon as image instead of rendering the ma
                     <maps:MapMarkerSetting  MarkerIcon="Image" ImageSource="pin.png"/>
 
                 </maps:ShapeFileLayer.MarkerSettings>
-
+                
             </maps:ShapeFileLayer>
-
+            
         </maps:SfMaps.Layers>
-
+        
     </maps:SfMaps>
 
 {% endhighlight %}
@@ -214,6 +216,16 @@ The image is used to denote the marker icon as image instead of rendering the ma
 
             layer.Markers.Add(marker);
 
+            MapMarker marker1 = new MapMarker();
+
+            marker1.Label = "California";
+
+            marker1.Latitude = "37";
+
+            marker1.Longitude = "-120";
+
+            layer.Markers.Add(marker1);
+
             MapMarkerSetting markerSetting = new MapMarkerSetting();
 
             markerSetting.MarkerIcon = MapMarkerIcon.Image;
@@ -228,7 +240,7 @@ The image is used to denote the marker icon as image instead of rendering the ma
 
 {% endtabs %}
 
-![](Images/Markers_img3.jpeg)
+![](Images/Markers_img3.png)
 
 ### Customizing labels
 
@@ -455,7 +467,7 @@ ImageName = ImageSource.FromResource("MapsSample.pin.png");
 
 {% endtabs %}
 
-![](Images/Markers_img3.jpeg)
+![](Images/Markers_img5.jpeg)
 
 ## Events
 

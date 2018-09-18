@@ -52,7 +52,17 @@ editor.ToggleCropping(float.NaN,float.NaN);
 
 editor.ToggleCropping(9,17);    
 
-{% endhighlight %}
+{% endhighlight %} 
+
+* To position the cropping window with custom location, pass the desired rectangle in ToggleCropping method. Each value in the rectangle should be in offset value(0 to 100).
+
+{% highlight C# %}
+
+Rectangle rect = new Rectangle(20,20,50,50);
+
+editor.ToggleCropping(rect);    
+
+{% endhighlight %} 
 
 After the cropping area has been selected, the `Crop` method is called, which in turn crops the selected region and displays the cropped image on the image editor.
 

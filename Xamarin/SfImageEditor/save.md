@@ -97,6 +97,35 @@ This event occurs after the image has been saved. To get the location of the sav
 
 {% endhighlight %}
 
+## Saving Image with Custom Size and Format
+
+The `Save` method in the SfImageEditor control allows user to save an image in different format such as `png`, `jpg` and `bmp`.
+
+To choose the format while Saving the image.
+
+{% tabs %}
+
+{% highlight C# %}
+
+editor.Save(".png");
+
+{% endhighlight %}
+
+{% endtabs %}
+
+To choose the format and size while Saving the image as like below,
+
+{% tabs %}
+
+{% highlight C# %}
+
+editor.Save(".png",new Size(913,764));
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> Format of an image to be `.png`, `.jpg` or `.bmp`.
 
 ## Reset
 

@@ -30,6 +30,8 @@ TextSettings consist of the following properties,
  [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.TextSettings~FontFamily.html) - By default there are six types of font family available in toolbar such as,
                    `Arial`, `Noteworthy`, `Marker Felt`, `SignPainter`,`Bradley Hand`, `Snell Round hand`.
  
+ [`TextEffects`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.TextSettings~TextEffects.html) - You can make text as `Bold`, `Italic` or `Underline` By using TextEffects property in TextSettings.
+
  [`Bounds`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.TextSettings~Bounds.html) - This property allows you to set frame for the newly added `Text` and you can position the text wherever you want on the image. The value of the text frame should be in percentage(maximum - 100 & minimum - 0).
  
  [`Opacity`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.TextSettings~Opacity.html) - You can change the opacity of text.
@@ -38,7 +40,7 @@ TextSettings consist of the following properties,
 
 {% highlight C# %}
 
-    editor.AddText("New Text", new TextSettings(){Color = Color.Black, FontSize = 16d, FontFamily="Arial", Bounds = new Rectangle(20, 20, 35, 35), Opacity=0.5f});
+    editor.AddText("New Text", new TextSettings(){Color = Color.Black, FontSize = 16d, FontFamily="Arial", Bounds = new Rectangle(20, 20, 35, 35), Opacity=0.5f, TextEffects = TextEffects.Bold | TextEffects.Italic | TextEffects.Underline});
 
 {% endhighlight %}
 

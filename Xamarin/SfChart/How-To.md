@@ -73,17 +73,17 @@ public class ChartTooltipBehaviorExt : ChartTooltipBehavior
 
 ## Get the visible range data points
 
-CartesianSeries provides the following methods to get the visible range data points.
+[`CartesianSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CartesianSeries.html) provides the following methods to get a collection of data under a particular region.
 
-* [`GetDataPoints(Rectangle rect)`]() - Used to get the actual data points that are fall inside the given rectangle.
-* [`GetDataPoints(double startX, double endX, double startY, double endY)`]() - Used to get the actual data points from the given range.
+* [`GetDataPoints(Rectangle rect)`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CartesianSeries~GetDataPoints(Rectangle).html) - Used to get the collection of data's which are fall inside the given rectangle region.
+* [`GetDataPoints(double startX, double endX, double startY, double endY)`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CartesianSeries~GetDataPoints(Double,Double,Double,Double).html) - Used to get the collection of data's from the given ChartAxis visible range.
 
 {% highlight c# %}
 
 List<object> dataPoints = Series.GetDataPoints(rectangle);
 
-List<object> ActualDataPoints = Series.GetDataPoints(startX, endX, startY, endY);
+or
+
+List<object> dataPoints = Series.GetDataPoints(startX, endX, startY, endY);
 
 {% endhighlight  %}
-
-N> You can also get the dataPoints based on x-range if rectangle height is given as Zero and also get the dataPoints based on y-range if rectangle width is given as Zero.

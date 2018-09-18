@@ -6,9 +6,9 @@ platform: Xamarin
 control: BusyIndicator
 documentation: ug
 ---
-# Duration
+# Animation Speed
 
-The `Duration` property for the SfBusyIndicator allows the user to control the speed of the animation.
+The `Duration` property of SfBusyIndicator indicates the timeline for completing one animation cycle. Setting smaller duration value accelerates the animation speed.
 
 {% tabs %}
 
@@ -19,7 +19,7 @@ The `Duration` property for the SfBusyIndicator allows the user to control the s
 	xmlns:syncfusion="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
 	x:Class="GettingStarted.BusyIndicatorPage">
 <ContentPage.Content>
- <syncfusion:SfBusyIndicator x:Name="busyindicator" AnimationType="SlicedCircle"  ViewBoxWidth = "20" ViewBoxHeight="20" Duration="50" TextColor="Maroon" />	
+ <syncfusion:SfBusyIndicator x:Name="busyindicator" AnimationType="SlicedCircle"  ViewBoxWidth = "20" ViewBoxHeight="20" Duration="25" TextColor="Maroon" />	
 </ContentPage.Content>
 </ContentPage>
 	
@@ -41,7 +41,7 @@ namespace GettingStarted
 			busyIndicator.AnimationType = AnimationTypes.SlicedCircle;
 			busyIndicator.ViewBoxWidth = 20;
 			busyIndicator.ViewBoxHeight = 20;
-			busyIndicator.Duration = 50;
+			busyIndicator.Duration = 25;
 			busyIndicator.TextColor = Color.Maroon;
 			this.Content = busyIndicator;
 		}
@@ -52,7 +52,20 @@ namespace GettingStarted
 
 {% endtabs %}
 
-![](images/heightand width.png)  
+N> `Android`
+Minimum animation speed is [`0.1`] and Maximum animation speed is [`25`]. The default speed is [`1`].
+
+`UWP`
+Minimum animation speed is [`10`] and Maximum animation speed is [`500`]. The default speed is [`115`].
+
+
+![](hostingsfbusyindicator_images/Maximum.gif)
+
+
+
+
+![](hostingsfbusyindicator_images/Minimum.gif)
+
 
 
 

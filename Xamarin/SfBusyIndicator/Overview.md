@@ -15,12 +15,8 @@ The Essential Xamarin BusyIndicator control includes over 10 built-in animations
 
 ## Key Features
 
-* `IsBusy` – Option available to show the animation.
-
-* `Title` – Displays the customized text while showing animation.
-
-* `Sizing` – Height and Width customization support for control.
-
-* `AnimationTypes` – Supports 10 built-in animations to set and display within your application.
-
-* `Duration` - Option available to enable the speed of the animation.
+* Provides 10 built-in busy indicator animations
+* Support to show/hide the busy indicator.
+* Busy text which is displayed along with animation.
+* Simple and easy options to size the control.
+* Effortless options to adjust the animation speed.

@@ -9,15 +9,15 @@ documentation : ug
 
 ## Save
 
-You can save the image along with the current edits to the device with the help of `Save` method.
+You can save the image along with the current edits to the device using the `Save` method.
 
-The default image saved location in each platform shown below,
+The saved image will be added to device for each platform in the following locations:
 
 UWP :
-Saved image will be added in default pictures library “C:\Users\your name\Pictures\Saved Pictures” .
+The saved image will be added in default pictures library “C:\Users\your name\Pictures\Saved Pictures”.
 
 Android:
-Saved image will be added in default pictures library “Internal storage/Pictures/” .
+The saved image will be added in default pictures library “Internal storage/Pictures/”.
 
 {% tabs %}
 
@@ -29,16 +29,17 @@ Saved image will be added in default pictures library “Internal storage/Pictur
 
 {% endtabs %}
 
-## Save Events
+## Save events
 
-The SfImageEditor has events when performing save operation namely `ImageSaving` and `ImageSaved` events.
+The SfImageEditor has events when performing save operation namely `ImageSaving` and `ImageSaved`.
 
 ### ImageSaving
 
-This event occurs before saving the image. You can control the save functionality by using the `Cancel` argument.
+This event occurs before saving the image. You can control the save functionality using the `Cancel` argument.
 
-* Cancel
-It restricts saving image to default location, when set `Cancel` value to `true` 
+* Cancel: 
+
+It restricts saving image to the default location when set `Cancel` value to `true`.
 
 {% highlight C# %}
 
@@ -60,7 +61,8 @@ It restricts saving image to default location, when set `Cancel` value to `true`
 {% endhighlight %}
 
 * Stream
-You can get current image edits as stream with the help of this argument.
+
+You can get current image edits as stream using this argument.
 
 {% highlight C# %}
          
@@ -74,7 +76,7 @@ You can get current image edits as stream with the help of this argument.
 
 ### ImageSaved
 
-This event occurs after the image has been saved. To get the location of the saved image, use the Location argument as shown below.
+This event occurs after the image has been saved. To get the location of the saved image, use the location argument as shown in the following code.
 
 {% highlight C# %}
 
@@ -98,7 +100,7 @@ This event occurs after the image has been saved. To get the location of the sav
 
 ## Reset
 
-The `Reset` method resets the complete set of changes made in the image and resets the image to original loaded image.
+The `Reset` method resets the complete set of changes made in image and resets the image to original loaded image.
 
 {% tabs %}
 
@@ -110,13 +112,13 @@ The `Reset` method resets the complete set of changes made in the image and rese
 
 {% endtabs %}
 
-## Reset Events
+## Reset events
 
 The SfImageEditor has events when performing reset operation namely `BeginReset` and `EndReset`.
 
 ### BeginReset
 
-This event occurs before resetting the changes made in an image. You can control the reset functionality by using the Cancel argument.
+This event occurs before resetting the changes made in an image. You can control the reset functionality using the Cancel argument.
 
 
 {% highlight C# %}
@@ -161,7 +163,7 @@ This event occurs when reset has been completed.
 
 ## ImageLoaded Event
 
-This event will be triggered once the image is loaded. By using this event we can add any shapes, text or crop over an image while initially loading the image. 
+This event will be triggered after the image has been loaded. By using this event, you can add any shapes or text over an image or crop an image while initially loading the image. 
 
 {% highlight C# %}
 
@@ -184,7 +186,7 @@ This event will be triggered once the image is loaded. By using this event we ca
 
 ## ItemSelected Event
 
-This event will be triggered whenever you tap the image editor selected shapes (Rectangle, Circle and Arrow) and Text. You can get the settings of each selected shapes and text with the help of ItemSelected argument. Also we can change the settings which will affect the selected shape.
+This event will be triggered whenever you tap the selected shapes (rectangle, circle, and arrow) and text. You can get the settings of each selected shapes and text using the ItemSelected argument. You can also change the settings that will affect the selected shape.
 
 {% highlight C# %}
 

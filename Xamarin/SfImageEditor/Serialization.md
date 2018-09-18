@@ -7,11 +7,13 @@ control : ImageEditor
 documentation : ug
 ---
 
-# Serialization And Deserialization
- ImageEditor provides support to serialize and deserialize the shapes(Circle, Arrow, Rectangle), free hand drawing, Text and Toolbar settings. Save the current state of the Image Editor and Load it back when its needed.
+# Serialization and Deserialization
+
+The image editor control provides support to serialize and deserialize the shapes (circle, arrow, and rectangle), free hand drawing, text and toolbar settings. You can save the current state of the image editor and load it back when it is needed.
 
 ## Serialization
- SaveEdits() method used to serialize the current edits of shapes. Serialized object will be return in the form of JSON stream.
+
+The SaveEdits() method is used to serialize the current edits of shapes. The serialized object will be returned in the form of JSON stream.
 
 {% tabs %}
 
@@ -43,14 +45,13 @@ documentation : ug
 
 {% endtabs %}
 
- You can save stream into .txt format file. If you saved stream as .txt format file to deserialize the shapes then set the Build action to `Embedded resource` in project.
-  
-  Please find sample text file shown below
-  
-  [ImageEditor.txt](http://www.syncfusion.com/downloads/support/directtrac/general/txt/Chart677841499.txt)
-       
+You can save stream into .txt format file. If you save stream as .txt format file to deserialize the shapes, then set the Build action to `Embedded resource` in project.
+
+Sample text file: [ImageEditor.txt](http://www.syncfusion.com/downloads/support/directtrac/general/txt/Chart677841499.txt).
+
 ## Deserialization
-   LoadEdits() method used to deserialize the edits over an image.
+
+The LoadEdits() method is used to deserialize the edits over an image.
 
 {% tabs %}
 
@@ -88,8 +89,3 @@ documentation : ug
 {% endtabs %}
 
 ![SfImageEditor](ImageEditor_images/Serialization.png)
-
-
-
-
-

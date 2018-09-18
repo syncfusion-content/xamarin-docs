@@ -705,7 +705,7 @@ chart.Series.Add(histogramSeries);
 
 {% endtabs %}
 
-![](charttypes_images/charttypes_img42.png)
+![Histogram chart type in Xamarin.Forms](charttypes_images/charttypes_img42.png)
 
 ## Range Column Chart
 

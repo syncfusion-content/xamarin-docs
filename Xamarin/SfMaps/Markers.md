@@ -80,7 +80,155 @@ Markers can be customized using the [`MarkerSettings`](https://help.syncfusion.c
 
 ### Customizing icons
 
-The shape, size, and color of marker icons can be customized using the [`MarkerIcon`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarkerSetting~MarkerIcon.html#), [`IconSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarkerSetting~IconSize.html#), and [`IconColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarkerSetting~IconColor.html#) properties. 
+The size, and color of marker icons can be customized using the [`IconSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarkerSetting~IconSize.html#), and [`IconColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarkerSetting~IconColor.html#) properties. 
+
+### Icon types
+
+The shape of a marker icon can be customized using the [`MarkerIcon`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarkerSetting~MarkerIcon.html#) property. Maps supports the following types of marker icons:
+
+* Circle
+* Diamond
+* Image
+* Rectangle
+* Square
+
+The image is used to denote the marker icon as image instead of rendering the marker icon shape. It can be achieved by setting the MarkerIcon to Image, and assigning the image path to [`ImageSource`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarkerSetting~ImageSource.html) property.
+
+{% tabs %}
+
+{% highlight xml %}
+
+    <maps:SfMaps x:Name="sfmap"  BackgroundColor="White">
+
+        <maps:SfMaps.Layers>
+
+            <maps:ShapeFileLayer Uri="usa_state.shp">
+
+                <maps:ShapeFileLayer.Markers>
+
+                    <maps:MapMarker Label = "California" Latitude = "37" Longitude = "-120"/>
+
+                </maps:ShapeFileLayer.Markers>
+
+                <maps:ShapeFileLayer.MarkerSettings>
+
+                    <maps:MapMarkerSetting  MarkerIcon="Square"/>
+
+                </maps:ShapeFileLayer.MarkerSettings>
+
+            </maps:ShapeFileLayer>
+
+        </maps:SfMaps.Layers>
+
+    </maps:SfMaps>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+           SfMaps map = new SfMaps();
+
+            map.BackgroundColor = Color.White;
+
+            ShapeFileLayer layer = new ShapeFileLayer();
+
+            layer.Uri = "usa_state.shp";
+
+            map.Layers.Add(layer);
+
+            MapMarker marker = new MapMarker();
+
+            marker.Label = "California";
+
+            marker.Latitude = "37";
+
+            marker.Longitude = "-120";
+
+            layer.Markers.Add(marker);
+
+            MapMarkerSetting markerSetting = new MapMarkerSetting();
+
+            markerSetting.MarkerIcon = MapMarkerIcon.Square;
+
+            layer.MarkerSettings = markerSetting;
+
+            this.Content = map;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Images/Markers_img2.jpeg)
+
+### Setting image marker icon
+
+{% tabs %}
+
+{% highlight xml %}
+
+    <maps:SfMaps x:Name="sfmap"  BackgroundColor="White">
+
+        <maps:SfMaps.Layers>
+
+            <maps:ShapeFileLayer Uri="usa_state.shp">
+
+                <maps:ShapeFileLayer.Markers>
+
+                    <maps:MapMarker Label = "Texas" Latitude = "31.267153" Longitude = "-97.7430608"/>
+
+                </maps:ShapeFileLayer.Markers>
+
+                <maps:ShapeFileLayer.MarkerSettings>
+
+                    <maps:MapMarkerSetting  MarkerIcon="Image" ImageSource="pin.png"/>
+
+                </maps:ShapeFileLayer.MarkerSettings>
+
+            </maps:ShapeFileLayer>
+
+        </maps:SfMaps.Layers>
+
+    </maps:SfMaps>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfMaps map = new SfMaps();
+
+            map.BackgroundColor = Color.White;
+
+            ShapeFileLayer layer = new ShapeFileLayer();
+
+            layer.Uri = "usa_state.shp";
+
+            map.Layers.Add(layer);
+
+            MapMarker marker = new MapMarker();
+
+            marker.Label = "Texas";
+
+            marker.Latitude = "31.267153";
+
+            marker.Longitude = "-97.7430608";
+
+            layer.Markers.Add(marker);
+
+            MapMarkerSetting markerSetting = new MapMarkerSetting();
+
+            markerSetting.MarkerIcon = MapMarkerIcon.Image;
+
+            markerSetting.ImageSource = "pin.png";
+
+            layer.MarkerSettings = markerSetting;
+
+            this.Content = map;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Images/Markers_img3.jpeg)
 
 ### Customizing labels
 
@@ -92,7 +240,7 @@ The following code sample explains how to customize a marker.
 
 {% highlight xml %}
 
-<maps:SfMaps x:Name="sfmap"  BackgroundColor="White">
+    <maps:SfMaps x:Name="sfmap"  BackgroundColor="White">
                 <maps:SfMaps.Layers>
                     <maps:ShapeFileLayer Uri="usa_state.shp">
                         <maps:ShapeFileLayer.Markers>
@@ -154,7 +302,7 @@ SfMaps map = new SfMaps();
 
 {% endtabs %}
 
-![](Images/Markers_img2.jpeg)
+![](Images/Markers_img4.jpeg)
 
 ## Custom marker
 

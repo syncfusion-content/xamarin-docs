@@ -20,7 +20,7 @@ The following properties are used to define the duration of animation for the sp
 
 The [`EasingEffect`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.ProgressBarBase~EasingEffect.html) property allows you specify the transfer function that controls animation speed when they run. 
 
-The following code sample demonstrates the [`CubicInOut`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.EasingEffects.html) easing function of the circular progress bar.
+The following code sample demonstrates the [`CubicInOut`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.EasingEffects.html) easing function of the linear progress bar.
 
 {% tabs %} 
 

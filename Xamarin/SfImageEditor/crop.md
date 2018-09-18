@@ -58,7 +58,7 @@ editor.ToggleCropping(9,17);
 
 {% highlight C# %}
 
-Rectangle rect = new Rectangle (20,20,50,50);
+Rectangle rect = new Rectangle(20,20,50,50);
 
 editor.ToggleCropping(rect);    
 

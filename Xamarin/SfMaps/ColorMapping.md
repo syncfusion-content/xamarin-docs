@@ -6,11 +6,12 @@ platform: xamarin
 control: SfMaps
 documentation: ug
 ---
+
 # Color mapping
 
-The color mapping support enables the customization of shape colors based on the underlying value of shape received from the bounded data.
+The color mapping support allows you customize the shape colors based on the underlying value of shapes received from the bound data.
 
-Maps provide two types of color mapping
+The maps control provides two types of color mapping:
 
 * Equal color mapping
 * Range Color mapping
@@ -94,7 +95,7 @@ SfMaps map = new SfMaps();
 
 ## Range color mapping
 
-It is used to differentiate the bubble fill based on its under-bound value and color ranges. 
+It is used to differentiate the bubble's fill based on its under-bound value and color ranges.
 
 The [`From`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.RangeColorMapping~From.html#) and [`To`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.RangeColorMapping~To.html#) properties are used to define the color range and color for the range that can be specified using the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ColorMapping~Color.html#) property.
 
@@ -184,5 +185,3 @@ The [`From`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps
 {% endtabs %}
 
 ![Range color mapping image](Images/ColorMapping_img2.jpeg)
-
-

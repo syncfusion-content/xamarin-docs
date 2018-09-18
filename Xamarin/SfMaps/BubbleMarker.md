@@ -6,15 +6,16 @@ platform: xamarin
 control: SfMaps
 documentation: ug
 ---
-# Bubble marker
 
-Bubbles in the maps control represents the underlying data values of the map. Bubbles are scattered throughout the map shapes that contain bound values.
+# Bubble Marker
 
-## Bubble Data
+Bubbles in the maps control represent the underlying data values of the maps. Bubbles are scattered throughout the map shapes that contain bound values.
+
+## Bubble data
 
 Bubbles are included when the data binding and [`BubbleMarkerSettings`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~BubbleMarkerSettings.html# ) are set to the shape layers.
 
-Below code snippet explains the data binding that is provided for bubble.
+The following code sample explains data binding provided for bubble.
 
 {% tabs %}
 
@@ -57,10 +58,9 @@ public class ViewModel
 
 ## Adding bubbles
 
-To add bubbles to a map, the bubble marker setting should be added to the shape file layer.[`ShowBubbles`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.BubbleMarkerSetting~ShowBubbles.html#) property should be enabled for the bubble to be visible.
+To add bubbles to maps, the bubble marker setting should be added to the shape file layer. The [`ShowBubbles`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.BubbleMarkerSetting~ShowBubbles.html#) property should be enabled for making the bubbles visible.
 
-[`ValuePath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.BubbleMarkerSetting~ValuePath.html#) represents the field value that is to be fetched from the data for each bubble.
-
+The [`ValuePath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.BubbleMarkerSetting~ValuePath.html#) represents the field value to be fetched from the data for each bubble.
 
 {% tabs %}
 
@@ -88,11 +88,11 @@ layer.BubbleMarkerSettings = bubbleSetting;
 
 {% endtabs %}
 
-## Bubble marker customization
+## Customizing bubble marker
 
-### Color Customization
+### Customizing color
 
-The fill color and opacity of the bubbles can be customized using the [`Fill`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.BubbleMarkerSetting~Fill.html#) and [`Opacity`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.BubbleMarkerSetting~Opacity.html#)  properties.
+The fill color and opacity of the bubbles can be customized using the [`Fill`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.BubbleMarkerSetting~Fill.html#) and [`Opacity`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.BubbleMarkerSetting~Opacity.html#) properties.
 
 {% tabs %}
 
@@ -126,12 +126,11 @@ layer.BubbleMarkerSettings = bubbleSetting;
 
 ![Bubble marker color customization](Images/BubbleMarker_img2.jpeg)
 
+### Customizing size
 
-### Size customization
+The size of the bubbles depends on the data bound to the [`ValuePath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.BubbleMarkerSetting~ValuePath.html#). The maximum and minimum sizes of the bubbles can be customized using [`MaxSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.BubbleMarkerSetting~MaxSize.html#) and [`MinSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.BubbleMarkerSetting~MinSize.html#) properties.
 
-Size of the bubbles depends on the data that is bound to the [`ValuePath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.BubbleMarkerSetting~ValuePath.html#) but the maximum and minimum size of the bubble can be customized using [`MaxSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.BubbleMarkerSetting~MaxSize.html#) and [`MinSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.BubbleMarkerSetting~MinSize.html#) properties.
-
-I> [`ShowMapItems`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShowMapItems.html) should be enabled to display label on bubble marker.
+I> The [`ShowMapItems`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShowMapItems.html) should be enabled to display label on bubble marker.
 
 
 {% tabs %}
@@ -169,7 +168,7 @@ bubbleSetting.MaxSize = 25;
 
 {% endtabs %}
 
-Following snippet explains the complete code for adding bubbles along with its customization.
+The following code sample gives the complete code for adding bubbles along with its customization.
 
 {% tabs %}
 

@@ -6,21 +6,22 @@ platform: xamarin
 control: SfMaps
 documentation: ug
 ---
-# Shape customization
+
+# Shape Customization
 
 ## Shape settings
 
-The shape settings define the basic customization options for shapes in the map.
+The shape settings define basic customization options for shapes in a map.
 
 A shape’s fill, stroke, and stroke thickness can be customized using the following properties:
 
 [`ShapeFill`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeSetting~ShapeFill.html#): Sets the fill color for the shapes in a map. 
 
-[`ShapeStroke`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeSetting~ShapeStroke.html#): Sets the border color for the shape in a map.
+[`ShapeStroke`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeSetting~ShapeStroke.html#): Sets the border color for the shapes in a map.
 
-[`ShapeStrokeThickness`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeSetting~ShapeStrokeThickness.html#): Sets the border thickness for the shape in a map. 
+[`ShapeStrokeThickness`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeSetting~ShapeStrokeThickness.html#): Sets the border thickness for the shapes in a map.
 
-Refer to the following code snippet.
+Refer to the following code sample for customizing shapes.
 
 {% tabs %}
 
@@ -142,11 +143,11 @@ layer.ShapeSettings = shapeSetting;
 
 To customize the selected shapes alone, use the following properties:
 
-[`SelectedShapeColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeSetting~SelectedShapeColor.html#): Sets the color for selected shapes in the map.
+[`SelectedShapeColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeSetting~SelectedShapeColor.html#): Sets the color for selected shapes in a map.
 
-[`SelectedShapeStroke`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeSetting~SelectedShapeStroke.html#): Sets the border color for selected shapes in the map.
+[`SelectedShapeStroke`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeSetting~SelectedShapeStroke.html#): Sets the border color for selected shapes in a map.
 
-[`SelectedShapeStrokeThickness`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeSetting~SelectedShapeStrokeThickness.html#): Sets the border thickness for selected shapes in the map.
+[`SelectedShapeStrokeThickness`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeSetting~SelectedShapeStrokeThickness.html#): Sets the border thickness for selected shapes in a map.
 
 {% tabs %}
 
@@ -182,8 +183,7 @@ layer.ShapeSettings = shapeSetting;
 
 ## Events
 
-[`ShapeSelected`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShapeSelected_EV.html) event gets triggered when the map shapes are selected.
-Corresponding model data is passed as an argument.
+The [`ShapeSelected`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShapeSelected_EV.html) event will be triggered when the map shapes are selected. A corresponding model data is passed as an argument.
 
 {% tabs %}
 
@@ -215,7 +215,7 @@ Corresponding model data is passed as an argument.
 
 {% endtabs %}
 
-Template for showing popup message when a shape is selected is given below.
+The following code sample provides a template for showing pop-up message when a shape is selected.
 
 {% tabs %}
 

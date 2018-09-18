@@ -664,7 +664,7 @@ chart.Series.Add(series2);
 
 To render a histogram chart, create an instance of  [`HistogramSeries`]() and add to the series collection of [`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html).
 
-Histogram chart can provide a visual display of large amounts of data that are difficult to understand in a tabular or spreadsheet form.
+Histogram chart can provide a visual display of large amounts of data that are difficult to understand in a tabular or data grid form.
 
 You can customize interval using [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.HistogramSeries~Interval.html) property and the normal distribution curve can be collapsed using [`ShowNormalDistributionCurve`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.HistogramSeries~ShowNormalDistributionCurve.html).  You can use the following properties to customize the appearance.
 

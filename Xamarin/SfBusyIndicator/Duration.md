@@ -6,9 +6,9 @@ platform: Xamarin
 control: BusyIndicator
 documentation: ug
 ---
-# Animation Speed
+# Animation speed
 
-The `Duration` property of SfBusyIndicator indicates the timeline for completing one animation cycle. Setting smaller duration value accelerates the animation speed.
+The `Duration` property of SfBusyIndicator indicates timeline for completing one animation cycle. Setting smaller duration value accelerates animation speed.
 
 {% tabs %}
 
@@ -53,11 +53,10 @@ namespace GettingStarted
 {% endtabs %}
 
 N> `Android`
-Minimum animation speed is [`0.1`] and Maximum animation speed is [`25`]. The default speed is [`1`].
+The minimum duration for the animation is [`0.1 seconds`] and the maximum duration is [`25 seconds`]. The default duration is [`one second`].
 
 `UWP`
-Minimum animation speed is [`10`] and Maximum animation speed is [`500`]. The default speed is [`115`].
-
+The minimum duration for the animation is [`10 seconds`] and the maximum duration is [`500 seconds`]. The default duration is [`115 seconds`].
 
 ![](hostingsfbusyindicator_images/Maximum.gif)
 

@@ -57,6 +57,8 @@ You can rotate and resize the custom view by enabling the `RotatableElements` pr
 
 {% endtabs %}
 
+N> The default value for RotatableElements is `None`.
+
 You can rotate the custom view based on a particular angle using `Angle` property in `CustomViewSettings` as shown in the following code snippet. 
 
 {% tabs %}

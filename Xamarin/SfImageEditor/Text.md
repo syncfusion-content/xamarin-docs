@@ -95,6 +95,24 @@ with font family name.
 
 ![SfImageEditor](ImageEditor_images/FontFamily.png)
 
+## Multiline text and text alignment
+
+### Multiline text
+You can annotate multiple line text over an image with the help of text preview window.
+
+### Text alignment
+`TextAlignment` is an enum type and text can be aligned with the help of text alignment enum values such as left, right and center. 
+
+N> The default text alignment is `Left` and text alignment is not applicable for single line text.
+
+{% highlight C# %}
+
+    editor.AddText("Hello\nGood morning\nHave a nice day", new TextSettings() {TextAlignment = TextAlignment.Right });
+
+{% endhighlight %}
+
+![SfImageEditor](ImageEditor_images/multiline.png)
+
 ## Text Rotation
 
 You can rotate and resize the text by enabling the `RotatableElements` property of image editor. `ImageEditorElements` is an enum type with values Text and CustomView as shown in the following code snippet.
@@ -108,6 +126,8 @@ You can rotate and resize the text by enabling the `RotatableElements` property 
 {% endhighlight %}
 
 {% endtabs %}
+
+N> The default value for RotatableElements is `None`.
 
 You can rotate the text based on a particular angle using `Angle` property in `TextSettings` as shown in the following code snippet. 
 

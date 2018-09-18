@@ -52,12 +52,6 @@ namespace GettingStarted
 
 {% endtabs %}
 
-N> `Android`
-The minimum duration for the animation is [`0.1 seconds`] and the maximum duration is [`25 seconds`]. The default duration is [`one second`].
-
-`UWP`
-The minimum duration for the animation is [`10 seconds`] and the maximum duration is [`500 seconds`]. The default duration is [`115 seconds`].
-
 ![](hostingsfbusyindicator_images/Maximum.gif)
 
 

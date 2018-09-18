@@ -7,13 +7,13 @@ control: SfMaps
 documentation: ug
 ---
 
-# Maps Providers
+# Map Providers
 
-The maps control supports map providers, such as OpenStreetMap and BingMap that can be added to an imagery layer in maps.
+The maps control supports map providers such as OpenStreetMap and Bing Maps that can be added to an imagery layer in maps.
 
 ## OpenStreetMap
 
-The OpenStreetMap (OSM) is a world map, built by a community of mappers, and it is free to use under an open license. This allows you to view geographical data in a collaborative way from anywhere on the Earth. The OSM provides small tile images based on your requests and combines them into a single image to display the map area in the maps control. 
+The OpenStreetMap (OSM) is a world map; it was built by a community of mappers. It is free to use under an open license. This allows you view geographical data in a collaborative way from anywhere on the earth. The OSM provides small tile images based on your requests and combines them into a single image to display the map area in the maps control. 
 
 ### Adding OSM in maps
 
@@ -41,11 +41,11 @@ The maps control uses `imagery layer` to display the tile images from the OSM se
 
 ![](Images/OSM.png)
 
-N> Both the [`ShapeFileLayer`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer.html) and `ImageryLayer` have been derived commonly from MapsLayer. 
+N> Both the [`ShapeFileLayer`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer.html) and `ImageryLayer` have been derived commonly from MapsLayer.
 
-## Bing maps
+## Bing Maps
 
-The Bing maps is a world map owned by Microsoft. As OSM, Bing maps also provides map tile images based on your requests and combines them into a single image to display a map area. To use `Bing maps`, set the `LayerType` property of ImageryLayer to “Bing”. Then, set the Bing maps key (which is obtained from [`this`](https://www.microsoft.com/en-us/maps/create-a-bing-maps-key)) to BingMapKey property of ImageryLayer. 
+The Bing Maps is a world map owned by Microsoft. As OSM, Bing Maps also provides map tile images based on your requests and combines them into a single image to display the map area. To use `Bing maps`, set the `LayerType` property of ImageryLayer to “Bing”. Then, set the Bing Maps key, which is obtained from [Bing Maps Key](https://www.microsoft.com/en-us/maps/create-a-bing-maps-key).
 
 {% tabs %}
 
@@ -71,25 +71,25 @@ maps.Layers.Add(layer);
 
 ![](Images/Road.png)
 
-N> The `LayerType` property of `ImageryLayer` provides support for `OSM` and `Bing` maps. The default value of the LayerType property is OSM.
+N> The `LayerType` property of `ImageryLayer` provides support to `OSM` and `Bing Maps`. The default value of the `LayerType` property is OSM.
 
 ## BingMapStyle
 
-The ImageryLayer provides support for the following types of Bing maps:
+The ImageryLayer provides support to the following types of Bing Maps:
 
 * `Road`
 * `Aerial`
 * `AerialWithLabels`
 
-The desired style for the Bing maps can be set using the BingMapStyle property of ImageryLayer. The default value of BingMapStyle is Road.
+The desired style for the Bing Maps can be set using the `BingMapStyle` property of ImageryLayer. The default value of `BingMapStyle` is "Road".
 
 ### Road
 
-Road view displays the default map view of roads, buildings, and geography. The default value of the BingMapStyle property of imagery layer is Road.
+The Road view displays the default map view of roads, buildings, and geography. The default value of the `BingMapStyle` property of imagery layer is "Road".
 
 ### Aerial
 
-Aerial view displays the satellite images to highlight roads and major landmarks for easy identification. The aerial view can be applied to maps by setting the BingMapStyle to Aerial.
+The Aerial view displays the satellite images to highlight the roads and major landmarks for easy identification. The aerial view can be applied to maps by setting the `BingMapStyle` to "Aerial".
 
 {% tabs %}
 
@@ -120,7 +120,7 @@ Aerial view displays the satellite images to highlight roads and major landmarks
 
 ## AerialWithLabel
 
-AerialWithLabel view displays the Aerial map with labels for continent, country, ocean, etc. This view can be applied to maps by setting the BingMapStyle as AerialWithLabel.
+The AerialWithLabel view displays the Aerial map with labels for continent, country, ocean, etc. This view can be applied to maps by setting the `BingMapStyle` to "AerialWithLabel".
 
 {% tabs %}
 
@@ -151,15 +151,15 @@ AerialWithLabel view displays the Aerial map with labels for continent, country,
 
 ## Zooming and panning
 
-Maps provides interactive zooming and panning support for OSM and Bing maps.
+The maps control provides interactive zooming and panning supports to OSM and Bing Maps.
 
-Zooming helps you get a closer look of an area on map for in-depth analysis. Panning helps you move a map around to focus the targeted area. You can perform zooming and panning with the pinching gesture in a map area.
+Zooming helps you get a closer look of an area on maps for in-depth analysis. Panning helps you move a map around to focus the targeted area. You can perform zooming and panning with the pinching gesture in a map area.
 
 ![](Images/zooming.gif)
 
 ## ResetOnDoubleTap
 
-The ImageryLayer provides support to reset to the default view when you double tap the imagery layer by setting the `ResetOnDoubleTap` property to true. The default value of this property is true. This behavior can be restricted by setting the `ResetOnDoubleTap` property value to false.
+The ImageryLayer provides support to reset the maps to the default view when you double tap the imagery layer by setting the `ResetOnDoubleTap` property to true. The default value of this property is true. This behavior can be restricted by setting the `ResetOnDoubleTap` property to false.
 
 {% tabs %}
 
@@ -186,7 +186,7 @@ The ImageryLayer provides support to reset to the default view when you double t
 
 ## GeoCoordinates
 
-The `GeoCoordinates` property allows to view the desired area at the center on loading. By default, the `GeoCoordinates` value is (0,0). So, the latitude value 0 and longitude value 0 are shown at the center.
+The `GeoCoordinates` property allows you view the desired area at the center on loading. By default, the `GeoCoordinates` value is (0,0). So, the latitude value "0" and longitude value "0" are shown at the center.
 
 {% tabs %}
 
@@ -243,8 +243,8 @@ The `GeoCoordinates` property allows to view the desired area at the center on l
 
 ## Markers
 
-As [`ShapeFileLayer`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer.html), markers also can be added to imagery layer. Markers can be customized using the MarkerSettings property in imagery layer.
-The detailed explanation of marker and its customization has been provided in Markers section.
+As [`ShapeFileLayer`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer.html), markers also can be added to imagery layer. Markers can be customized using the `MarkerSettings` property in imagery layer.
+The detailed explanation of marker and its customization have been provided in Markers section.
 
 {% tabs %}
 
@@ -309,9 +309,3 @@ The detailed explanation of marker and its customization has been provided in Ma
 {% endtabs %}
 
 ![](Images/Marker.png)
-
-
-
-
-
-

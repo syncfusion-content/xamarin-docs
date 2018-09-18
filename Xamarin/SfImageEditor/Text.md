@@ -29,7 +29,7 @@ The `TextSettings` property consists of the following properties:
 * [`Bounds`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.TextSettings~Bounds.html): Allows to set frame for the newly added `Text`. You can position the text wherever you want on the image. In percentage, the value of the text frame should fall between 0 and 100.
 * [`Opacity`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.TextSettings~Opacity.html): Changes the opacity of text.
 * [`Angle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.TextSettings~Angle.html): Changes the angle of text.
-* [`TextEffects`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.TextSettings~TextEffects.html): You can make text as `Bold`, `Italic` or `Underline` By using TextEffects property in TextSettings.
+* [`TextEffects`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.TextSettings~TextEffects.html): Changes the effects of the text such as `Bold`, `Italic` and `Underline`.
 
 
 {% tabs %}

@@ -9,23 +9,23 @@ documentation: ug
 
 # Getting Started
 
-This section explains the steps required to configure the SfMaps control and provides information to its basic customization.
+This section explains the steps required to configure the maps control and customize its elements.
 
 ## Adding SfMaps reference
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add maps to your project, open the NuGet package manager in Visual Studio, and search for [syncfusion.xamarin.sfmaps](https://www.nuget.org/packages/Syncfusion.Xamarin.SfMaps), and then install it. 
+Syncfusion components for Xamarin.Forms are available in [nuget.org](https://www.nuget.org/). To add maps to your project, open the NuGet package manager in Visual Studio, search for [syncfusion.xamarin.sfmaps](https://www.nuget.org/packages/Syncfusion.Xamarin.SfMaps), and then install it.
 
-![](Images/maps.png) 
+![](Images/maps.png)
 
-To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfmaps) to know about the dependent assemblies for maps.
+To learn more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). If you prefer to manually reference the assemblies instead of using NuGet, refer to this [documentation](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfmaps) to learn about the dependent assemblies.
 
-I> After adding the reference, an additional step is required for iOS and UWP projects. You should create an instance of the `SfMapsRenderer` in iOS and UWP projects as shown in this [KB article.](https://www.syncfusion.com/kb/8603)
+I> After adding the reference, an additional step is required for iOS and UWP projects. Create an instance of the `SfMapsRenderer` in iOS and UWP projects as described in this [KB article.](https://www.syncfusion.com/kb/8603).
 
 I> For UWP alone, one more additional step is required if the project is built-in release mode with .NET Native tool chain enabled. You can refer to this [KB article](https://www.syncfusion.com/kb/8604) for more details.
 
 ## Adding namespace
 
-The following namespace needs to be added.
+Add the following namespace.
 
 {% tabs %}
 
@@ -43,9 +43,9 @@ using Syncfusion.SfMaps.XForms;
 
 {% endtabs %}
 
-## Initializing Maps   
+## Initializing maps
 
-Create an instance for maps control, and add it as content.	
+Create an instance for the maps control, and add it as content.
 
 {% tabs %}
 
@@ -69,7 +69,7 @@ this.Content = map;
 
 ## Adding layers
 
-Map is maintained through [`Layers`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.SfMaps~Layers.html). It can accommodate one or more shape file layers.
+The maps control is maintained through [`layers`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.SfMaps~Layers.html). It can accommodate one or more shape file layers.
 
 {% tabs %}
 
@@ -103,34 +103,32 @@ this.Content = map;
 
 ## Adding shape files
 
-Shape file is a set of files that are stored in a non-topological geometry with the attribute information for the spatial features and records in a data set.
+A shape file is a set of files that is stored in a non-topological geometry with the attribute information for the spatial features and records in a data set.
 
-Maps control supports reading and loading the shape files.
-Shape file can be a set of files or a single file. Generally, a shape file contains the following files:
+The maps control supports reading and loading the shape files. A shape file can be a set of files or a single file. Generally, a shape file contains the following files:
 
 * Main file (.shp)
-
 * dBase file (.dbf)
 
 ### Android
 
-*	Add the necessary shape files to the Assets folder of ProjectFileName.Droid.
-*	Right-click the added shape file, and navigate to properties.
-*	Choose the `AndroidAsset` option under BuildAction of respective shape file.
+* Add necessary shape files to the Assets folder of ProjectFileName.Droid.
+* Right-click the added shape file, and navigate to properties.
+* Choose the `AndroidAsset` option under BuildAction of respective shape file.
 
 ### iOS
 
-*	Add the necessary shape files to the Resources folder of ProjectFileName.iOS.
-*	Right-click the added shape file, and navigate to properties.
-*	Choose the `BundleResource` option under BuildAction of respective shape file.
+* Add necessary shape files to the Resources folder of ProjectFileName.iOS.
+* Right-click the added shape file, and navigate to properties.
+* Choose the `BundleResource` option under BuildAction of respective shape file.
 
 ### UWP
 
-*	Add the necessary shapes file in a folder and name it as `ShapeFiles`. Add this `ShapeFiles` folder into the `Assets` folder of ProjectFileName.UWP.
-*	Right-click the added shape file, and navigate to properties.
-*	Choose the `EmbeddedResource` option under BuildAction of respective shape file.
+* Add necessary shapes files in a folder, and name it as `ShapeFiles`. Add this `ShapeFiles` folder into the `Assets` folder of ProjectFileName.UWP.
+* Right-click the added shape file, and navigate to properties.
+* Choose the `EmbeddedResource` option under BuildAction of respective shape file.
 
-[`Uri`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~Uri.html) property in shape file layer is used to retrieve the location of the shape file that is added.
+The [`Uri`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~Uri.html) property in shape file layer is used to retrieve the location of the shape file that is added.
 
 {% tabs %}
 
@@ -158,13 +156,13 @@ this.Content = map;
  
 {% endtabs %}
 
-After loading the shapes file, the following output will be reproduced.
+The following screenshot illustrates the result of adding shape files.
 
 ![](Images/GettingStartedimg1.jpeg)
 
 ## GeoJSON support
 
-Maps control supports reading and loading the GeoJSON files. GeoJSON file contains attribute information for the spatial features and coordinates in a dataset.
+The maps control supports reading and loading the GeoJSON files. The GeoJSON file contains attribute information for the spatial features and coordinates in a dataset.
  
 {% tabs %}
 
@@ -186,8 +184,9 @@ Maps control supports reading and loading the GeoJSON files. GeoJSON file contai
 
 ## Data binding
 
-Data can be binded to the shape file layer using the [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ItemsSource.html), [`ShapeIDPath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShapeIDPath.html), [`ShapeIdTableField`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShapeIDTableField.html) properties.
- [`Populate data`](https://help.syncfusion.com/xamarin/SfMaps/PopulateData) topic gives the detailed explanation of data binding.
+Data can be bound to the shape file layer using the [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ItemsSource.html), [`ShapeIDPath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShapeIDPath.html), and [`ShapeIdTableField`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShapeIDTableField.html) properties.
+
+The [`Populate data`](https://help.syncfusion.com/xamarin/SfMaps/PopulateData) section gives the detailed explanation of data binding.
 
 {% tabs %}
 
@@ -214,13 +213,11 @@ ShapeFileLayer layer = new ShapeFileLayer();
 
 {% endtabs %}
 
+## Adding markers
 
-## Adding marker 
+Markers are used to identify the shapes. They can be added to the shape file layers as demonstrated in the following code sample. Markers can be customized using the [`MarkerSettings`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~MarkerSettings.html) property in the shape file layer.
 
-Markers are used to identify the shapes. This can be added to the shape file layers as shown in the following code sample.
-Markers can be customized using the [`MarkerSettings`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~MarkerSettings.html) property in shape file layer.
-
-Detailed explanation of marker and its customization is provided under [`Markers`](https://help.syncfusion.com/xamarin/SfMaps/Markers) topic.
+The detailed explanation of marker and its customization are provided under [`Markers`](https://help.syncfusion.com/xamarin/SfMaps/Markers) section.
 
 {% tabs %}
 
@@ -247,10 +244,9 @@ layer.Markers.Add(marker);
 
 ## Color mapping
 
-The color mapping support enables the customization of shape colors based on the underlying value of shape received from the bounded data.
-Both range and equal color mapping is supported in maps.
+The color mapping support allows you customize the shape colors based on the underlying value of shape received from the bound data. Both the range color mapping and equal color mapping are supported in maps.
 
-Detailed explanation of color mapping is provided in  [`colorMapping`](https://help.syncfusion.com/xamarin/SfMaps/ColorMapping) topic.
+The detailed explanation of color mapping is provided in [`colorMapping`](https://help.syncfusion.com/xamarin/SfMaps/ColorMapping) section.
 
 {% tabs %}
 
@@ -283,11 +279,11 @@ Detailed explanation of color mapping is provided in  [`colorMapping`](https://h
 
 {% endtabs %}
  
-## Adding legend
+## Adding legends
 
-The legends interpret what the map displays. It can be added to the shape file layer as in below code snippet. Legends will be displayed based on the data bound to the layer and color mapping plays a major role in that. 
+Legends interpret what the map displays. They can be added to the shape file layer as demonstrated in the following code sample. Legends will be displayed based on the data bound to the layer, and color mapping plays a major role in enabling legends. 
 
-Detailed explanation of legend is provided under [`Legend`](https://help.syncfusion.com/xamarin/SfMaps/Legend) topic.
+The detailed explanation of legend is provided under [`Legend`](https://help.syncfusion.com/xamarin/SfMaps/Legend) section.
 
 {% tabs %}
 
@@ -310,7 +306,7 @@ layer.LegendSettings = setting;
 
 {% endtabs %}
 
-The following code example gives you the complete code for map with marker and legend.
+The following code sample gives you the complete code for map with markers and legends.
 
 {% tabs %}
 
@@ -414,8 +410,10 @@ SfMaps map = new SfMaps();
 
 {% endtabs %}
 
-The following output is reproduced as a result of above codes.
+The following screenshot illustrates the result of the above code sample.
 
 ![](Images/GettingStartedimg2.PNG) 
 
-You can download the complete getting started sample from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MapsSample-1975206216.zip).
+You can download the complete [Getting started](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MapsSample-1975206216.zip) sample.
+
+

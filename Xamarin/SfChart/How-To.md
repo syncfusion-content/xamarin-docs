@@ -71,7 +71,7 @@ public class ChartTooltipBehaviorExt : ChartTooltipBehavior
 
 {% endhighlight  %}
 
-## Get the visible range data points
+##  Get a data point collection based on region
 
 [`CartesianSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CartesianSeries.html) provides the following methods to get a collection of data under a particular region.
 

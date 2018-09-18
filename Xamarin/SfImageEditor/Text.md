@@ -28,6 +28,7 @@ The `TextSettings` property consists of the following properties:
 * [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.TextSettings~FontFamily.html): Specifies the desired font family for text. Six types of font families are available in toolbar: `Arial`, `Noteworthy`, `Marker Felt`, `SignPainter`, `Bradley Hand`, `Snell Round hand`.
 * [`Bounds`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.TextSettings~Bounds.html): Allows to set frame for the newly added `Text`. You can position the text wherever you want on the image. In percentage, the value of the text frame should fall between 0 and 100.
 * [`Opacity`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.TextSettings~Opacity.html): Changes the opacity of text.
+* [`Angle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.TextSettings~Angle.html): Changes the angle of text.
 * [`TextEffects`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.TextSettings~TextEffects.html): You can make text as `Bold`, `Italic` or `Underline` By using TextEffects property in TextSettings.
 
 
@@ -35,7 +36,7 @@ The `TextSettings` property consists of the following properties:
 
 {% highlight C# %}
 
-    editor.AddText("New Text", new TextSettings(){Color = Color.Black, FontSize = 16d, FontFamily="Arial", Bounds = new Rectangle(20, 20, 35, 35), Opacity=0.5f, TextEffects = TextEffects.Bold | TextEffects.Italic | TextEffects.Underline});
+    editor.AddText("New Text", new TextSettings(){Color = Color.Black, FontSize = 16d, FontFamily="Arial", Bounds = new Rectangle(20, 20, 35, 35), Opacity=0.5f, Angle=45, TextEffects = TextEffects.Bold | TextEffects.Italic | TextEffects.Underline});
 
 {% endhighlight %}
 
@@ -113,3 +114,33 @@ N> The default text alignment is `Left` and text alignment is not applicable for
 {% endhighlight %}
 
 ![SfImageEditor](ImageEditor_images/multiline.png)
+
+## Text Rotation
+
+You can rotate and resize the text by enabling the `RotatableElements` property of image editor. `ImageEditorElements` is an enum type with values Text, CustomView and None as shown in the following code snippet.
+
+{% tabs %}
+
+{% highlight C# %}
+
+    editor.RotatableElements = ImageEditorElements.Text;   
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> The default value for RotatableElements is `None`.
+
+You can rotate the text based on a particular angle using `Angle` property in `TextSettings` as shown in the following code snippet. 
+
+{% tabs %}
+
+{% highlight C# %}
+
+    editor.AddText("New Text", new TextSettings(){Angle = 45});    
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![SfImageEditor](ImageEditor_images/rotation.png)

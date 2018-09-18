@@ -115,7 +115,7 @@ N> The default text alignment is `Left` and text alignment is not applicable for
 
 ## Text Rotation
 
-You can rotate and resize the text by enabling the `RotatableElements` property of image editor. `ImageEditorElements` is an enum type with values Text and CustomView as shown in the following code snippet.
+You can rotate and resize the text by enabling the `RotatableElements` property of image editor. `ImageEditorElements` is an enum type with values Text, CustomView and None as shown in the following code snippet.
 
 {% tabs %}
 

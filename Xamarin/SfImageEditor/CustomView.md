@@ -45,7 +45,7 @@ CustomViewSettings customViewSettings = new CustomViewSettings()
 
 ## CustomView Rotation
 
-You can rotate and resize the custom view by enabling the `RotatableElements` property of image editor. `ImageEditorElements` is an enum type with values Text and CustomView as shown in the following code snippet.
+You can rotate and resize the custom view by enabling the `RotatableElements` property of image editor. `ImageEditorElements` is an enum type with values Text, CustomView and None as shown in the following code snippet.
 
 {% tabs %}
 

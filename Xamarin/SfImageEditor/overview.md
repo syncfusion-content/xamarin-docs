@@ -9,20 +9,17 @@ documentation: ug
 
 # Overview
 
-Image Editor is a very handy tool that is used to edit an image by annotating with free hand drawing paths, text, and built-in shapes. It also allows you to crop and flip the image. The Image Editor control has an in-built toolbar, which helps you to perform the editing operations.
-
+The image editor control for Xamarin.Forms is a very handy tool, which is used to edit an image by annotating with free hand drawing paths, text, and built-in shapes; it also allows to crop and flip a image. This control has a built-in toolbar that helps to perform editing operations.
 
 ## Key features
 
-* Crop 
-* Rotate 
-* Flip
-* Support to add shapes such as Rectangle, Circle, Arrow, Text, Path, etc.
-* Undo and Redo operations
-* Zoom and Pan
-* Localization
-* Custom view annotation
-* Toolbar customization
-* Z-Ordering
-* Save the image to device
-* Built-in Toolbar
+* Crop, rotate, and flip operations.
+* Adds text, path, and shapes such as rectangle, circle, and arrow.
+* Undo and redo operations.
+* Zoom and pan operations.
+* Localization.
+* Custom view annotations.
+* Customizing toolbar.
+* Z-order.
+* Saving images to device.
+* Built-in toolbar.

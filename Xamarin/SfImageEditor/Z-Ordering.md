@@ -7,18 +7,18 @@ control : ImageEditor
 documentation : ug
 ---
 
-# Moving shapes Front and Back
+# Moving shapes to front and back
 
-ImageEditor allows us to change the position of shapes/Edits which are arranged over the editor. This can be achieved with the help of following methods. 
+The image editor control allows to change the position of shapes/edits that are arranged over the editor. This can be achieved using the following methods:
 
-1)BringToFront
-2)SendToBack
-3)BringForward
-4)SendBackward
+1. BringToFront
+2. SendToBack
+3. BringForward
+4. SendBackward
 
 ## BringToFront
 
-BringToFront is a method which is used to bring the selected shapes/text to the front of a group of elements over an image.
+The BringToFront method is used to bring the selected shapes/text to the front of a group of elements over an image.
 
 {% tabs %}
 
@@ -32,7 +32,7 @@ BringToFront is a method which is used to bring the selected shapes/text to the 
 
 ## SendToBack
 
-SendToBack is a method which is used to Send the selected shapes/text to the back of a group of elements over an image.
+The SendToBack method is used to send the selected shapes/text to the back of a group of elements over an image.
 
 {% tabs %}
 
@@ -46,7 +46,7 @@ SendToBack is a method which is used to Send the selected shapes/text to the bac
 
 ## BringForward
 
-BringForward is a method which is used to bring the selected shapes/text to one step front of a group of elements over an image
+The BringForward method is used to bring the selected shapes/text to one step front of a group of elements over an image.
 
 {% tabs %}
 
@@ -60,7 +60,7 @@ BringForward is a method which is used to bring the selected shapes/text to one 
 
 ## SendBackward
 
-SendBackward is a method which is used to send the selected shapes/text to one step backward of a group of elements over an image.
+The SendBackward method is used to send the selected shapes/text to one step backward of a group of elements over an image.
 
 {% tabs %}
 

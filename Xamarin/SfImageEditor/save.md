@@ -125,7 +125,7 @@ editor.Save(".png",new Size(913,764));
 
 {% endtabs %}
 
-N> Format of an image to be `.png`, `.jpg` or `.bmp`.
+N> Supported formats are `.png`, `.jpg` and `.bmp`.
 
 ## Reset
 

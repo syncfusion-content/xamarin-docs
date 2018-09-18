@@ -36,7 +36,7 @@ CustomViewSettings customViewSettings = new CustomViewSettings()
 {
     CanMaintainAspectRatio = false,
     Bounds = new Rect(0, 0, 100, 100),
-    Angle=50
+    Angle=45
 };
 
 {% endhighlight %}
@@ -65,10 +65,7 @@ You can rotate the custom view based on a particular angle using `Angle` propert
 
 {% highlight C# %}
 
-        Image customImage = new Image() { HeightRequest = 200, WidthRequest = 200  };
-        Assembly assembly = Assembly.GetAssembly(typeof(Sample));
-        customImage.Source = ImageSource.FromResource("sample_namespace.CustomImage.png", assembly);
-        imageEditor.AddCustomView(customImage, new CustomViewSettings(){Angle = 50});    
+        imageEditor.AddCustomView(customImage, new CustomViewSettings(){Angle = 45});    
 
 {% endhighlight %}
 

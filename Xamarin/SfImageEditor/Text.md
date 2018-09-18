@@ -34,7 +34,7 @@ The `TextSettings` property consists of the following properties:
 
 {% highlight C# %}
 
-    editor.AddText("New Text", new TextSettings(){Color = Color.Black, FontSize = 16d, FontFamily="Arial", Bounds = new Rectangle(20, 20, 35, 35), Opacity=0.5f, Angle=50});
+    editor.AddText("New Text", new TextSettings(){Color = Color.Black, FontSize = 16d, FontFamily="Arial", Bounds = new Rectangle(20, 20, 35, 35), Opacity=0.5f, Angle=45});
 
 {% endhighlight %}
 
@@ -135,7 +135,7 @@ You can rotate the text based on a particular angle using `Angle` property in `T
 
 {% highlight C# %}
 
-    editor.AddText("New Text", new TextSettings(){Angle = 50});    
+    editor.AddText("New Text", new TextSettings(){Angle = 45});    
 
 {% endhighlight %}
 

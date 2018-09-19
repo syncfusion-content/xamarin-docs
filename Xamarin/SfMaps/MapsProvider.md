@@ -309,3 +309,88 @@ The detailed explanation of marker and its customization have been provided in M
 {% endtabs %}
 
 ![](Images/Marker.png)
+
+## CanCacheTiles
+
+[`CanCacheTiles`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ImageryLayer~CanCacheTiles.html) property used to decide whether the tiles should be cached or not.
+
+{% tabs %}
+
+{% highlight xml %}
+
+        <maps:SfMaps>
+            <maps:SfMaps.Layers>            
+                <maps:ImageryLayer CanCacheTiles="True"  />
+            </maps:SfMaps.Layers>
+        </maps:SfMaps>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+       ImageryLayer imageryLayer = new ImageryLayer();
+
+       imageryLayer.CanCacheTiles = true;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## DeleteTilesFromCache
+
+[`DeleteTilesFromCache`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ImageryLayer~DeleteTilesFromCache.html) method used to delete the cache stored in the applications.
+
+{% tabs %}
+
+{% highlight xml %}
+
+        <maps:SfMaps>
+            <maps:SfMaps.Layers>            
+                <maps:ImageryLayer x:Name="imageryLayer" />
+            </maps:SfMaps.Layers>
+        </maps:SfMaps>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+       imageryLayer.DeleteTilesFromCache();
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+## Events
+
+[`ZoomLevelChanging`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs.html) event triggers when zoom level changed. Following arguments can be get from the ZoomLevelChanging event .
+
+* Cancel - Used to cancel the zooming.
+
+* PreviousLevel - Shows the previous level after the zooming
+
+* CurrentLevel - Shows the current level to be zoomed.
+
+{% tabs %}
+
+{% highlight xml %}
+
+        <maps:SfMaps>
+            <maps:SfMaps.Layers>            
+                <maps:ImageryLayer  ZoomLevelChanging="Layer_ZoomLevelChanging" />
+            </maps:SfMaps.Layers>
+        </maps:SfMaps>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+        private void Layer_ZoomLevelChanging(object sender, ZoomLevelChangingEventArgs e)
+        {
+            e.Cancel = true;
+        }
+
+{% endhighlight %}
+
+{% endtabs %}
+

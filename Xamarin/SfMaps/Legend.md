@@ -40,35 +40,91 @@ layer.LegendSettings = legendSetting;
 
 {% endtabs %}
 
-## Legend position
+## LegendType
 
-Based on the margin values of x and y-axes, the legends can be positioned using the [`LegendPosition`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLegendSetting~LegendPosition.html#) property of the [`MapLegendSetting`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLegendSetting.html#) class.
+Based on the layer settings,legend can be displayed. There are two LegendTypes
+
+* Layers
+* Bubbles
+
+To display legends for Shapes,[`LegendType`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLegendSetting~LegendTypeProperty.html) Layers is used. To display legend for Bubbles, [`LegendType`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLegendSetting~LegendTypeProperty.html) Bubbles is used. By default, LegendType is Layers
+
+## Legend Alignment
+
+Legends can be aligned using [`HorizontalAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLegendSetting~HorizontalAlignmentProperty.html) and [`VerticalAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLegendSetting~VerticalAlignmentProperty.html) Properties. By default legends will be aligned in center.
 
 {% tabs %}
 
 {% highlight xml %}
 
-<maps:ShapeFileLayer.LegendSettings>
+        <maps:ShapeFileLayer.LegendSettings>
 
-<maps:MapLegendSetting ShowLegend="True" LegendPosition="75,90"></maps:MapLegendSetting>
+        <maps:MapLegendSetting LegendType="Bubbles" HorizontalAlignment="Start" LegendPosition="5,10" VerticalAlignment="Center" ShowLegend="True"></maps:MapLegendSetting>
 
-</maps:ShapeFileLayer.LegendSettings>
+        </maps:ShapeFileLayer.LegendSettings>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-MapLegendSetting legendSetting = new MapLegendSetting();
+            MapLegendSetting legendSetting = new MapLegendSetting();
 
-legendSetting.ShowLegend = true;
+            legendSetting.ShowLegend = true;
 
-legendSetting.LegendPosition = new Point(75, 90);
+            legendSetting.LegendType = LegendType.Bubbles;
 
-layer.LegendSettings = legendSetting;
+            legendSetting.LegendPosition = new Point(5, 10);
+
+            legendSetting.HorizontalAlignment = HorizontalAlignment.Start;
+
+            legendSetting.VerticalAlignment = VerticalAlignment.Center;
+
+            layer.LegendSettings = legendSetting;
 
 {% endhighlight %}
 
 {% endtabs %}
+
+![](Images/LegendAlignment.jpg)
+
+## Legend position
+
+Based on the margin values of x and y-axes, the legends can be positioned using the [`LegendPosition`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLegendSetting~LegendPosition.html#) property of the [`MapLegendSetting`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLegendSetting.html#) class. 
+
+The legend items can be placed in multiple rows if size of the total legend exceeds the available size. 
+
+
+{% tabs %}
+
+{% highlight xml %}
+
+        <maps:ShapeFileLayer.LegendSettings>
+
+        <maps:MapLegendSetting LegendType="Bubbles" HorizontalAlignment="Start" LegendPosition="80,60" ShowLegend="True"></maps:MapLegendSetting>
+
+        </maps:ShapeFileLayer.LegendSettings>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            MapLegendSetting legendSetting = new MapLegendSetting();
+
+            legendSetting.ShowLegend = true;
+
+            legendSetting.LegendType = LegendType.Bubbles;
+
+            legendSetting.LegendPosition = new Point(80, 60);
+
+            legendSetting.HorizontalAlignment = HorizontalAlignment.Start;
+
+            layer.LegendSettings = legendSetting;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Images/LegendWrapping.jpg)
 
 ## Icon customization
 
@@ -102,7 +158,7 @@ legendSetting.ShowLegend = true;
 
 legendSetting.LegendPosition = new Point(75, 90);
 
-legendSetting.IconSize = new Size(20, 0);
+legendSetting.IconSize = new Size(20, 20);
 
 layer.LegendSettings = legendSetting;
 
@@ -110,42 +166,122 @@ layer.LegendSettings = legendSetting;
 
 {% endtabs %}
 
-## Legend label
-
-The [`LegendLabel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ColorMapping~LegendLabel.html) provides information about the maps. It is specified under color mapping.
+The icon shape can also be customized by [`LegendIcon`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.LegendIcon.html) property. By default, LegendIcon is circle for bubbles and rectangle for shapes.
 
 {% tabs %}
 
 {% highlight xml %}
 
-<maps:ShapeSetting.ColorMappings>
-<maps:EqualColorMapping Color="#D84444" Value="Romney" LegendLabel="Romney"/>
-<maps:EqualColorMapping Color="#316DB5" Value="Obama" LegendLabel="Obama"/>
-</maps:ShapeSetting.ColorMappings>
+<maps:ShapeFileLayer.LegendSettings>
+
+<maps:MapLegendSetting ShowLegend="True" LegendType="Bubbles" LegendIcon="Diamond">
+
+</maps:MapLegendSetting>
+
+</maps:ShapeFileLayer.LegendSettings>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-EqualColorMapping colorMapping = new EqualColorMapping();
+MapLegendSetting legendSetting = new MapLegendSetting();
 
-colorMapping.Color = Color.FromHex("#D84444");
+legendSetting.ShowLegend = true;
 
-colorMapping.LegendLabel = "Romney";
+legendSetting.LegendType = LegendType.Bubbles;
 
-colorMapping.Value = "Romney";
+legendSetting.LegendIcon = LegendIcon.Diamond;
 
-EqualColorMapping colorMapping1 = new EqualColorMapping();
-
-colorMapping1.Color = Color.FromHex("#316DB5");
-
-colorMapping1.LegendLabel = "Obama";
-
-colorMapping1.Value = "Obama";
+layer.LegendSettings = legendSetting;
 
 {% endhighlight %}
 
 {% endtabs %}
+
+![](Images/LegendIconCustomization.jpg)
+
+## ItemMargin
+
+The [`ItemMargin`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLegendSetting~ItemMarginProperty.html) property is used to set the spacing between the legend items.
+
+{% tabs %}
+
+{% highlight xml %}
+
+        <maps:ShapeFileLayer.LegendSettings>
+
+       <maps:MapLegendSetting LegendType="Bubbles" ShowLegend="True" ItemMargin="30" />
+
+        </maps:ShapeFileLayer.LegendSettings>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            MapLegendSetting legendSetting = new MapLegendSetting();
+
+            legendSetting.ShowLegend = true;
+
+            legendSetting.LegendType = LegendType.Bubbles;
+
+            legendSetting.ItemMargin = 30;
+            
+            layer.LegendSettings = legendSetting;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+![](Images/LegendItemMargin.jpg)
+
+## Legend label
+
+The [`LegendLabel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ColorMapping~LegendLabel.html) provides information about the maps. It is specified under color mapping.
+
+The following properties are used to customize the label of the legend
+
+ * [`TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLegendSetting~TextColorProperty.html) - used to change the color of the legend text.
+
+ * [`FontAttributes`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLegendSetting~FontAttributesProperty.html) - used to change the font weight of the legend label.
+
+ * [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLegendSetting~FontFamilyProperty.html) - used to change the font family of the legend label.
+
+ * [`FontSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLegendSetting~FontSizeProperty.html) - used to change the text size of the legend label.
+
+{% tabs %}
+
+{% highlight xml %}
+
+        <maps:ShapeFileLayer.LegendSettings>
+
+       <maps:MapLegendSetting LegendType="Bubbles" ShowLegend="True" FontFamily="algerian.ttf" TextColor="Maroon" />
+
+        </maps:ShapeFileLayer.LegendSettings>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            MapLegendSetting legendSetting = new MapLegendSetting();
+
+            legendSetting.ShowLegend = true;
+
+            legendSetting.LegendType = LegendType.Bubbles;
+
+            legendSetting.FontFamily ="algerian.ttf";
+
+            legendSetting.TextColor = Color.Maroon;
+            
+            layer.LegendSettings = legendSetting;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Images/LegendFontCustomization.jpg)
+
 
 The following code sample demonstrates how to add a legend to maps and customize it.
 
@@ -153,40 +289,42 @@ The following code sample demonstrates how to add a legend to maps and customize
 
 {% highlight xml %}
 
-<maps:SfMaps x:Name="sfmap"  BackgroundColor="White">
-                <maps:SfMaps.Layers>
-                    
-                    <maps:ShapeFileLayer Uri="usa_state.shp" ItemsSource="{Binding Data}"
-                                         ShapeIDPath="State" ShapeIDTableField="STATE_NAME" >
-
-                        <maps:ShapeFileLayer.LegendSettings>
-                            <maps:MapLegendSetting ShowLegend="True"  LegendPosition="75,90">
-                                <maps:MapLegendSetting.IconSize>
-                                    <Size Width="20" Height="20"/>
-                                </maps:MapLegendSetting.IconSize>
-                            </maps:MapLegendSetting>
-                        </maps:ShapeFileLayer.LegendSettings>
-
-                        <maps:ShapeFileLayer.ShapeSettings>
-                            <maps:ShapeSetting ShapeColorValuePath="Candidate" ShapeValuePath="Candidate">
-                                <maps:ShapeSetting.ColorMappings>
-                                    <maps:EqualColorMapping Color="#D84444" Value="Romney"
-                                                            LegendLabel="Romney"/>
-                                    <maps:EqualColorMapping Color="#316DB5" Value="Obama" 
-                                                            LegendLabel="Obama"/>
-                                </maps:ShapeSetting.ColorMappings>
-                            </maps:ShapeSetting>
-                        </maps:ShapeFileLayer.ShapeSettings>
-
-                    </maps:ShapeFileLayer>
-                </maps:SfMaps.Layers>
-            </maps:SfMaps>
+     <Grid>
+        <Grid.BindingContext>
+            <local:ViewModel />
+        </Grid.BindingContext>
+        <maps:SfMaps>
+            <maps:SfMaps.Layers>
+                <maps:ShapeFileLayer x:Name="layer" Uri="usa_state.shp" ShapeIDPath="Name" ShapeIDTableField="STATE_NAME" 
+                                        ShowMapItems="True"  ItemsSource="{Binding DataSource}">
+                    <maps:ShapeFileLayer.BubbleMarkerSettings>
+                        <maps:BubbleMarkerSetting MinSize="15" MaxSize="35" ValuePath="index" ColorValuePath="index" >
+                            <maps:BubbleMarkerSetting.ColorMappings>
+                                <maps:RangeColorMapping Color="#2E769F" From="0" To="15" LegendLabel="0 - 15 " />
+                                <maps:RangeColorMapping Color="#D84444" To="30" From="15" LegendLabel="15- 30" />
+                                <maps:RangeColorMapping Color="#816F28" To="45" From="30" LegendLabel="30 - 45" />
+                                <maps:RangeColorMapping Color="#7F38A0" To="60" From="45" LegendLabel="45 - 60" />
+                            </maps:BubbleMarkerSetting.ColorMappings>
+                        </maps:BubbleMarkerSetting>
+                    </maps:ShapeFileLayer.BubbleMarkerSettings>
+                    <maps:ShapeFileLayer.ShapeSettings>
+                        <maps:ShapeSetting  ShapeFill="LightBlue"/>
+                    </maps:ShapeFileLayer.ShapeSettings>
+                    <maps:ShapeFileLayer.LegendSettings>
+                        <maps:MapLegendSetting LegendType="Bubbles" ItemMargin="30" LegendIcon="Diamond" LegendPosition="5,20" HorizontalAlignment="Start" VerticalAlignment="Bottom" FontFamily="algerian.ttf" FontSize="14" TextColor="Maroon" ShowLegend="True"></maps:MapLegendSetting>
+                    </maps:ShapeFileLayer.LegendSettings>
+                </maps:ShapeFileLayer>
+            </maps:SfMaps.Layers>
+        </maps:SfMaps>
+    </Grid>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfMaps map = new SfMaps();
+ViewModel viewModel = new ViewModel();
+
+            SfMaps map = new SfMaps();
 
             map.BackgroundColor = Color.White;
 
@@ -194,56 +332,120 @@ SfMaps map = new SfMaps();
 
             layer.Uri = "usa_state.shp";
 
-            layer.ItemsSource = viewModel.Data;
+            layer.ItemsSource = viewModel.DataSource;
 
             layer.ShapeIDTableField = "STATE_NAME";
 
-            layer.ShapeIDPath = "State";
+            layer.ShapeIDPath = "Name";
 
-            map.Layers.Add(layer);
+            layer.ShowMapItems = true;               
+
+            BubbleMarkerSetting bubbleSetting = new BubbleMarkerSetting();
+
+            bubbleSetting.ValuePath = "index";
+
+            bubbleSetting.ColorValuePath = "index";
+
+            bubbleSetting.MinSize = 15;
+
+            bubbleSetting.MaxSize = 35;
+
+            RangeColorMapping colorMapping1 = new RangeColorMapping() { Color = Color.FromHex("#2E769F"), From = 0, To = 15 };
+            RangeColorMapping colorMapping2 = new RangeColorMapping() { Color = Color.FromHex("#D84444"), From = 15, To = 30 };
+            RangeColorMapping colorMapping3 = new RangeColorMapping() { Color = Color.FromHex("#816F28"), From = 30, To = 45 };
+            RangeColorMapping colorMapping4 = new RangeColorMapping() { Color = Color.FromHex("#7F38A0"), From = 45, To = 50 };
+
+            bubbleSetting.ColorMappings.Add(colorMapping1);
+            bubbleSetting.ColorMappings.Add(colorMapping2);
+            bubbleSetting.ColorMappings.Add(colorMapping3);
+            bubbleSetting.ColorMappings.Add(colorMapping4);
+
+            layer.BubbleMarkerSettings = bubbleSetting;
 
             MapLegendSetting legendSetting = new MapLegendSetting();
 
             legendSetting.ShowLegend = true;
 
-            legendSetting.LegendPosition = new Point(75, 90);
+            legendSetting.LegendPosition = new Point(5, 20);
 
-            legendSetting.IconSize = new Size(20, 20);
+            legendSetting.LegendType = LegendType.Bubbles;
+
+            legendSetting.FontFamily ="algerian.ttf";
+
+            legendSetting.TextColor = Color.Maroon;
+
+            legendSetting.ItemMargin = 30;
+
+            legendSetting.LegendIcon = LegendIcon.Diamond;
+
+            legendSetting.HorizontalAlignment = HorizontalAlignment.Start;
 
             layer.LegendSettings = legendSetting;
 
-            EqualColorMapping colorMapping = new EqualColorMapping();
-
-            colorMapping.Color = Color.FromHex("#D84444");
-
-            colorMapping.LegendLabel = "Romney";
-
-            colorMapping.Value = "Romney";
-
-            EqualColorMapping colorMapping1 = new EqualColorMapping();
-
-            colorMapping1.Color = Color.FromHex("#316DB5");
-
-            colorMapping1.LegendLabel = "Obama";
-
-            colorMapping1.Value = "Obama";
 
             ShapeSetting shapeSetting = new ShapeSetting();
 
-            shapeSetting.ShapeValuePath = "Candidate";
-
-            shapeSetting.ShapeColorValuePath = "Candidate";
-
-            shapeSetting.ColorMappings.Add(colorMapping);
-
-            shapeSetting.ColorMappings.Add(colorMapping1);
+            shapeSetting.ShapeFill = Color.LightBlue;
 
             layer.ShapeSettings = shapeSetting;
 
+            map.Layers.Add(layer);
+
             this.Content = map;
+
+
+    public class AgricultureData
+    {
+        public AgricultureData(string name, string type, int count)
+        {
+            Name = name;
+            Type = type;
+            index = count;
+        }
+
+        public string Name
+        {
+            get;
+            set;
+        }
+
+        public string Type
+        {
+            get;
+            set;
+        }
+
+        public int index
+        {
+            get;
+            set;
+        }
+    }
+
+    public class ViewModel
+    {
+        public ViewModel()
+        {
+            DataSource = new ObservableCollection<AgricultureData>();
+          
+            DataSource.Add(new AgricultureData("Alaska", "Vegetables", 0));
+            DataSource.Add(new AgricultureData("Arizona", "Rice", 36));          
+            DataSource.Add(new AgricultureData("California", "Wheat", 24));
+            DataSource.Add(new AgricultureData("Colorado", "Rice", 31));
+            DataSource.Add(new AgricultureData("North Dakota", "Grains", 4));
+            DataSource.Add(new AgricultureData("Connecticut", "Wheat", 18));          
+            DataSource.Add(new AgricultureData("District of Columbia", "Grains", 27));
+            DataSource.Add(new AgricultureData("Florida", "Wheat", 48));
+            DataSource.Add(new AgricultureData("New Mexico", "Vegetables", 41));        
+            DataSource.Add(new AgricultureData("Idaho", "Rice", 8));
+          
+        }
+        public ObservableCollection<AgricultureData> DataSource { get; set; }
+
+    }
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](Images/Legend_img1.jpeg)
+![](Images/LegendForBubble.jpg)

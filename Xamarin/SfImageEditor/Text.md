@@ -137,7 +137,7 @@ You can rotate the text based on a particular angle using `Angle` property in `T
 
 {% highlight C# %}
 
-    editor.AddText("New Text", new TextSettings(){Angle = 45});    
+    editor.AddText("Good morning", new TextSettings(){Angle = 45});    
 
 {% endhighlight %}
 

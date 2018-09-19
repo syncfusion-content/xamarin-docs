@@ -219,17 +219,17 @@ namespace GettingStarted
 
             var australia = new TreeViewNode() { Content = "Australia" };
             var _NSW = new TreeViewNode() { Content = "New South Wales" };
-            var sydney = new TreeViewNode() { Content = "Sydney" };
+            var Sydney = new TreeViewNode() { Content = "Sydney" };
             australia.ChildNodes.Add(_NSW);
-            _NSW.ChildNodes.Add(sydney);
+            _NSW.ChildNodes.Add(Sydney);
  
             var usa = new TreeViewNode() { Content = "United States of America" };
             var newYork = new TreeViewNode() { Content = "New York," };
-            var california = new TreeViewNode() { Content = "California" };
-            var sanFrancisco = new TreeViewNode() { Content = "San Francisco" };
+            var California = new TreeViewNode() { Content = "California" };
+            var SanFrancisco = new TreeViewNode() { Content = "San Francisco" };
             usa.ChildNodes.Add(newYork);
-            usa.ChildNodes.Add(california);
-            california.ChildNodes.Add(sanFrancisco);
+            usa.ChildNodes.Add(California);
+            California.ChildNodes.Add(SanFrancisco);
             treeView.Nodes.Add(australia);
             treeView.Nodes.Add(usa);
 
@@ -327,7 +327,7 @@ public class FileManagerViewModel
    private void GenerateSource()
    {
       var nodeImageInfo = new ObservableCollection<FileManager>();
-      Assembly assembly = typeof(GettingStatred).GetTypeInfo().Assembly;
+      Assembly assembly = typeof(GettingStated).GetTypeInfo().Assembly;
       var doc = new FileManager() { ItemName = "Documents", ImageIcon = ImageSource.FromResource("GettingStartedBound.Icons.treeview_folder.png", assembly) };
       var download = new FileManager() { ItemName = "Downloads", ImageIcon = ImageSource.FromResource("GettingStartedBound.Icons.treeview_folder.png", assembly) };
       var mp3 = new FileManager() { ItemName = "Music", ImageIcon = ImageSource.FromResource("GettingStartedBound.Icons.treeview_folder.png", assembly) };
@@ -342,10 +342,10 @@ public class FileManagerViewModel
 
       var games = new FileManager() { ItemName = "Game.exe", ImageIcon = ImageSource.FromResource("GettingStartedBound.Icons.treeview_exe.png", assembly) };
       var tutorials = new FileManager() { ItemName = "Tutorials.zip", ImageIcon = ImageSource.FromResource("GettingStartedBound.Icons.treeview_zip.png", assembly) };
-      var typeScript = new FileManager() { ItemName = "TypeScript.7z", ImageIcon = ImageSource.FromResource("GettingStartedBound.Icons.treeview_zip.png", assembly) };
+      var TypeScript = new FileManager() { ItemName = "TypeScript.7z", ImageIcon = ImageSource.FromResource("GettingStartedBound.Icons.treeview_zip.png", assembly) };
       var uiGuide = new FileManager() { ItemName = "UI-Guide.pdf", ImageIcon = ImageSource.FromResource("GettingStartedBound.Icons.treeview_pdf.png", assembly) };
 
-      var song = new FileManager() { ItemName = "Gouttes", ImageIcon = ImageSource.FromResource("GettingStartedBound.Icons.treeview_mp3.png", assembly) };
+      var song = new FileManager() { ItemName = "Goutiest", ImageIcon = ImageSource.FromResource("GettingStartedBound.Icons.treeview_mp3.png", assembly) };
 
       var camera = new FileManager() { ItemName = "Camera Roll", ImageIcon = ImageSource.FromResource("GettingStartedBound.Icons.treeview_folder.png", assembly) };
       var stone = new FileManager() { ItemName = "Stone.jpg", ImageIcon = ImageSource.FromResource("GettingStartedBound.Icons.treeview_png.png", assembly) };
@@ -355,7 +355,7 @@ public class FileManagerViewModel
       var img1 = new FileManager() { ItemName = "WIN_20160726_094118.JPG", ImageIcon = ImageSource.FromResource("GettingStartedBound.Icons.treeview_img1.png", assembly) };
 
       var video1 = new FileManager() { ItemName = "Naturals.mp4", ImageIcon = ImageSource.FromResource("GettingStartedBound.Icons.treeview_video.png", assembly) };
-      var video2 = new FileManager() { ItemName = "Wild.mpeg", ImageIcon = ImageSource.FromResource("GettingStartedBound.Icons.treeview_video.png", assembly) };
+      var video2 = new FileManager() { ItemName = "Wild.mpg", ImageIcon = ImageSource.FromResource("GettingStartedBound.Icons.treeview_video.png", assembly) };
 
       doc.SubFiles = new ObservableCollection<FileManager>
       {
@@ -370,7 +370,7 @@ public class FileManagerViewModel
       {
          games,
          tutorials,
-         typeScript,
+         TypeScript,
          uiGuide
       };
 

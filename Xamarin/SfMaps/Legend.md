@@ -238,7 +238,7 @@ The [`ItemMargin`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.
 
 ## Legend label
 
-The [`LegendLabel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ColorMapping~LegendLabel.html) provides information about the maps. It is specified under color mapping.
+The [`LegendLabel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ColorMapping~LegendLabel.html) provides information about the maps. It is specified under color mapping. If LegendLabel is not specified, ColorMapping values will be applied as legend label.
 
 The following properties are used to customize the label of the legend
 

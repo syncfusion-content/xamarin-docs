@@ -286,6 +286,9 @@ The following code sample gives the complete code for adding bubbles along with 
                     <maps:ShapeFileLayer.ShapeSettings>
                         <maps:ShapeSetting ShapeFill="LightBlue"/>
                     </maps:ShapeFileLayer.ShapeSettings>
+                    <maps:ShapeFileLayer.LegendSettings>
+                        <maps:MapLegendSetting LegendType="Bubbles"  ShowLegend="True"></maps:MapLegendSetting>
+                    </maps:ShapeFileLayer.LegendSettings>
                 </maps:ShapeFileLayer>
             </maps:SfMaps.Layers>
         </maps:SfMaps>
@@ -336,6 +339,14 @@ The following code sample gives the complete code for adding bubbles along with 
             shapeSetting.ShapeFill = Color.LightBlue;
 
             layer.ShapeSettings = shapeSetting;
+
+            MapLegendSetting legendSetting = new MapLegendSetting();
+
+            legendSetting.ShowLegend = true;
+
+            legendSetting.LegendType = LegendType.Bubbles;
+
+            layer.LegendSettings = legendSetting;
 
             map.Layers.Add(layer);
 

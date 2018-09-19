@@ -10,7 +10,7 @@ documentation: ug
 
 ## Events
 
-### ValueChanged Event
+### ValueChanged 
 
 We can perform operation while the changing the value of NumericTextBox's Value using ValueChanged event. ValueChanged event returns the changed value in NumericTextBox.
 
@@ -49,7 +49,7 @@ void Handle_ValueChanged(object sender, Syncfusion.SfNumericTextBox.XForms.Value
 
 {% endtabs %}
 
-### Completed Event
+### Completed 
 
 Occurs when the user finalizes the text in the NumericTextBox by pressing return key on the keyboard.
 

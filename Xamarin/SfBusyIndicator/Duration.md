@@ -19,7 +19,7 @@ The `Duration` property of SfBusyIndicator indicates timeline for completing one
 	xmlns:syncfusion="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
 	x:Class="GettingStarted.BusyIndicatorPage">
 <ContentPage.Content>
- <syncfusion:SfBusyIndicator x:Name="busyindicator" AnimationType="SlicedCircle"  ViewBoxWidth = "20" ViewBoxHeight="20" Duration="25" TextColor="Maroon" />	
+ <syncfusion:SfBusyIndicator x:Name="busyindicator" AnimationType="Battery"  ViewBoxWidth = "100" ViewBoxHeight="100" Duration="0.5" />	
 </ContentPage.Content>
 </ContentPage>
 	
@@ -38,11 +38,9 @@ namespace GettingStarted
 			InitializeComponent();
 
 			SfBusyIndicator busyIndicator = new SfBusyIndicator();
-			busyIndicator.AnimationType = AnimationTypes.SlicedCircle;
-			busyIndicator.ViewBoxWidth = 20;
-			busyIndicator.ViewBoxHeight = 20;
-			busyIndicator.Duration = 25;
-			busyIndicator.TextColor = Color.Maroon;
+			busyIndicator.ViewBoxWidth = 100;
+			busyIndicator.ViewBoxHeight = 100;
+			busyIndicator.Duration = 0.5;
 			this.Content = busyIndicator;
 		}
 	}
@@ -53,11 +51,6 @@ namespace GettingStarted
 {% endtabs %}
 
 ![](hostingsfbusyindicator_images/Maximum.gif)
-
-
-
-
-![](hostingsfbusyindicator_images/Minimum.gif)
 
 
 

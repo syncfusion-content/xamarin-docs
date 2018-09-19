@@ -263,7 +263,7 @@ The multiple layer can be added in the maps using [`Sublayer`]().
 
 [`BaseMapIndex`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.SfMaps~BaseMapIndexProperty.html) property which allows to drilldown from the main layer to another layer.
 
-In ShapeSelected event, BaseMapIndex property has been used to change the layer when asia shape selected.
+In ShapeSelected event, *BaseMapIndex* property has been used to change the layer when asia shape selected.
 
 {% tabs %}
 

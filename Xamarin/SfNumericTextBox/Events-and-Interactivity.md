@@ -51,7 +51,7 @@ void Handle_ValueChanged(object sender, Syncfusion.SfNumericTextBox.XForms.Value
 
 ### Completed 
 
-Occurs when the user finalizes the text in the NumericTextBox by pressing return key on the keyboard.
+Raised when the user finalizes the text in the NumericTextBox by pressing return key on the keyboard.
 
 {% tabs %}
 

@@ -29,19 +29,21 @@ We can perform operation while the changing the value of NumericTextBox's Value 
 
 {% highlight xaml %}
 
-	<syncfusion:SfNumericTextBox x:Name="numericTextBox" ValueChanged="Handle_ValueChanged" Value="123"  />
-	
+    <syncfusion:SfNumericTextBox x:Name="numericTextBox" ValueChanged="Handle_ValueChanged" Value="123"  />
+    
 {% endhighlight %}
 
 {% highlight c# %}
 
 SfNumericTextBox numericTextBox=new SfNumericTextBox();
 numericTextBox.Value = 123;
-numericTextBox.ValueChanged += (object sender, ValueEventArgs e) =>
-{
-	System.Diagnostics.Debug.WriteLine(e.Value.ToString());
-};
+numericTextBox.ValueChanged += Handle_ValueChanged;
 this.Content=numericTextBox;
+
+void Handle_ValueChanged(object sender, Syncfusion.SfNumericTextBox.XForms.ValueEventArgs e)
+{
+    System.Diagnostics.Debug.WriteLine(e.Value.ToString());
+}
 
 {% endhighlight %}
 
@@ -55,19 +57,20 @@ Occurs when the user finalizes the text in the NumericTextBox by pressing return
 
 {% highlight xaml %}
 
-    <syncfusion:SfNumericTextBox x:Name="numericTextBox" Completed="Handle_Completed” Value="123"/>
+    <syncfusion:SfNumericTextBox x:Name="numericTextBox" Completed="Handle_Completed”/>
     
 {% endhighlight %}
 
 {% highlight c# %}
 
 SfNumericTextBox numericTextBox=new SfNumericTextBox();
-numericTextBox.Value = 123;
-numericTextBox.Completed += (object sender, EventArgs e) =>
-{
-    System.Diagnostics.Debug.WriteLine(“Completed”);
-};
+numericTextBox.Completed += Handle_Completed;
 this.Content=numericTextBox;
+
+void Handle_Completed(object sender, System.EventArgs e)
+{
+  System.Diagnostics.Debug.WriteLine(“Completed”);         
+}
 
 {% endhighlight %}
 

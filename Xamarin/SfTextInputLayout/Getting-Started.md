@@ -404,7 +404,7 @@ inputLayout.InputView = new Entry() { Text = "John" };
 
 ## Customizing the colors
 
-Assistive elements colors can be customized by setting the following properties `FocusedColor`, `Unfocusedcolor`, `ErrorColor` and `ContainerColor`. 
+Assistive elements colors can be customized by setting the following properties `FocusedColor`, `UnfocusedColor`, `ErrorColor` and `ContainerBackgroundColor`. 
 
 {% tabs %} 
 

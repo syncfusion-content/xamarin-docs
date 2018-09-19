@@ -55,7 +55,7 @@ N> The animationDuration and easingEffect parameters will not affect the configu
 
 ## Indeterminate Easing Effects
 
-The [`IndeterminateEasingEffect`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.ProgressBarBase~IndeterminateEasingEffect.html) property allows you specify a transfer function for indeterminate state that controls how animations speed up or slow down as they're running.
+The [`IndeterminateEasingEffect`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.ProgressBarBase~IndeterminateEasingEffect.html) property allows you to specify a transfer function for indeterminate state, which controls animation speed.
 
 The following code sample demonstrates the [`BounceIn`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.IndeterminateEasingEffects.html) easing function of the linear progress bar.
 

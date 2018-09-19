@@ -299,7 +299,7 @@ In ShapeSelected event, BaseMapIndex property has been used to change the layer 
                 </maps:ShapeFileLayer>
             </maps:SfMaps.Layers>
         </maps:SfMaps>
-        <Label x:Name="label" Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Click on a asia shape to drill down"/>
+        <Label x:Name="label" Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Click on a Asia shape to drill down"/>
     </Grid>
 
 {% endhighlight %}
@@ -500,9 +500,9 @@ In ShapeSelected event, BaseMapIndex property has been used to change the layer 
 
      public class DrilldownModel
     {
-        public DrilldownModel(string contry, string con)
+        public DrilldownModel(string country, string con)
         {
-            this.Country = contry;
+            this.Country = country;
             this.Continent = con;
         }
         public string Continent

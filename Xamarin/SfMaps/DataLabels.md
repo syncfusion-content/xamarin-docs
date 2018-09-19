@@ -73,7 +73,7 @@ Data labels are used to display the values of the shapes.
 
 {% endtabs %}
 
-![DataLabel Image](Images/DataLabel1.png)
+![DataLabel Image](Images/DataLabel_img.png)
 
 ## Setting contrast color
 
@@ -181,7 +181,7 @@ Based on the shape background color, contrast color will be applied for the data
 
 {% endtabs %}
 
-![DataLabel Image](Images/DataLabel2.png)
+![DataLabel Image](Images/DataLabel_contrast_color.png)
 
 ## Customizing data labels
 
@@ -259,7 +259,7 @@ Data labels can be customized using the [`DataLabelSetting`](https://help.syncfu
 
 {% endtabs %}
 
-![DataLabel Image](Images/DataLabel3.png)
+![DataLabel Image](Images/DataLabel_customization.png)
 
 ## Setting smart label mode
 
@@ -331,7 +331,7 @@ Data labels can be customized using the [`DataLabelSetting`](https://help.syncfu
 
 {% endtabs %}
 
-![DataLabel Image](Images/DataLabel4.png)
+![DataLabel Image](Images/DataLabel_smartlabelmode_trim.png)
 
 ## Setting intersection action
 
@@ -405,7 +405,7 @@ Data labels can be customized using the [`DataLabelSetting`](https://help.syncfu
 
 {% endtabs %}
 
-![DataLabel Image](Images/DataLabel5.png)
+![DataLabel Image](Images/DataLabel_intersection_action_hide.png)
 
 
 

@@ -89,7 +89,7 @@ The fill color and opacity of the bubbles can be customized using the [`Fill`](h
 
         <maps:ShapeFileLayer.BubbleMarkerSettings>
 
-        <maps:BubbleMarkerSetting ShowBubbles="True" MinSize="15" MaxSize="35"  ValuePath="index"  Fill="Orange" Opacity="0.8" />
+        <maps:BubbleMarkerSetting ShowBubbles="True" ValuePath="index"  Fill="Orange" Opacity="0.8" />
 
         </maps:ShapeFileLayer.BubbleMarkerSettings>
 
@@ -101,11 +101,7 @@ The fill color and opacity of the bubbles can be customized using the [`Fill`](h
 
         bubbleSetting.ShowBubbles = true;
 
-        bubbleSetting.ValuePath = "index";
-
-        bubbleSetting.MinSize = 15;
-
-        bubbleSetting.MaxSize = 35;
+        bubbleSetting.ValuePath = "index";      
 
         bubbleSetting.Fill = Color.Orange;
 
@@ -121,7 +117,7 @@ The fill color and opacity of the bubbles can be customized using the [`Fill`](h
 
 Bubble Color can also be customized by [`ColorMappings`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.BubbleMarkerSetting~ColorMappingsProperty.html).
 
-Maps provide two types of color mapping
+Maps provide two types of color mapping for Bubble Marker
 
  * Equal color mapping
  * Range Color mapping
@@ -136,7 +132,7 @@ The From and To properties are used to define the color range and color for the 
 {% highlight xml %}
 
                    <maps:ShapeFileLayer.BubbleMarkerSettings>
-                        <maps:BubbleMarkerSetting MinSize="15" MaxSize="35"  ValuePath="index" ColorValuePath="index" >
+                        <maps:BubbleMarkerSetting  ValuePath="index" ColorValuePath="index" >
                             <maps:BubbleMarkerSetting.ColorMappings>
                                 <maps:RangeColorMapping Color="#2E769F" From="0" To="15" />
                                 <maps:RangeColorMapping Color="#D84444" To="30" From="15" />
@@ -155,10 +151,7 @@ The From and To properties are used to define the color range and color for the 
             bubbleSetting.ValuePath = "index";
 
             bubbleSetting.ColorValuePath = "index";
-
-            bubbleSetting.MinSize = 15;
-
-            bubbleSetting.MaxSize = 35;
+          
 
             RangeColorMapping colorMapping1 = new RangeColorMapping() { Color = Color.FromHex("#2E769F"), From = 0, To = 15 };
             RangeColorMapping colorMapping2 = new RangeColorMapping() { Color = Color.FromHex("#D84444"), From = 15, To = 30 };
@@ -187,7 +180,7 @@ It is used to differentiate the bubble fill based on its underlying value and co
 {% highlight xml %}
 
                    <maps:ShapeFileLayer.BubbleMarkerSettings>
-                        <maps:BubbleMarkerSetting MinSize="15" MaxSize="35"  ValuePath="index" ColorValuePath="Type" >
+                        <maps:BubbleMarkerSetting ValuePath="index" ColorValuePath="Type" >
                             <maps:BubbleMarkerSetting.ColorMappings>
                                 <maps:EqualColorMapping Color="#2E769F" Value="Vegetables" />
                                 <maps:EqualColorMapping Color="#D84444" Value="Rice" />
@@ -207,9 +200,6 @@ It is used to differentiate the bubble fill based on its underlying value and co
 
             bubbleSetting.ColorValuePath = "Type";
 
-            bubbleSetting.MinSize = 15;
-
-            bubbleSetting.MaxSize = 35;
           
             EqualColorMapping colorMapping1 = new EqualColorMapping() { Color = Color.FromHex("#2E769F"), Value = "Vegetables" };
             EqualColorMapping colorMapping2 = new EqualColorMapping() { Color = Color.FromHex("#D84444"), Value = "Rice" };
@@ -271,6 +261,8 @@ bubbleSetting.MaxSize = 25;
 
 {% endtabs %}
 
+![Bubble marker color customization](Images/BubbleMinMax.jpg)
+
 The following code sample gives the complete code for adding bubbles along with its customization.
 
 {% tabs %}
@@ -282,7 +274,7 @@ The following code sample gives the complete code for adding bubbles along with 
                 <maps:ShapeFileLayer x:Name="layer" Uri="usa_state.shp" ShapeIDPath="Name" ShapeIDTableField="STATE_NAME" 
                                         ShowMapItems="True"  ItemsSource="{Binding DataSource}">
                     <maps:ShapeFileLayer.BubbleMarkerSettings>
-                        <maps:BubbleMarkerSetting MinSize="15" MaxSize="35" ValuePath="index" ColorValuePath="index" >
+                        <maps:BubbleMarkerSetting ValuePath="index" ColorValuePath="index" >
                             <maps:BubbleMarkerSetting.ColorMappings>
                                 <maps:RangeColorMapping Color="#2E769F" From="0" To="15" />
                                 <maps:RangeColorMapping Color="#D84444" To="30" From="15" />
@@ -326,9 +318,6 @@ The following code sample gives the complete code for adding bubbles along with 
 
             bubbleSetting.ColorValuePath = "index";
 
-            bubbleSetting.MinSize = 15;
-
-            bubbleSetting.MaxSize = 35;
 
             RangeColorMapping colorMapping1 = new RangeColorMapping() { Color = Color.FromHex("#2E769F"), From = 0, To = 15 };
             RangeColorMapping colorMapping2 = new RangeColorMapping() { Color = Color.FromHex("#D84444"), From = 15, To = 30 };

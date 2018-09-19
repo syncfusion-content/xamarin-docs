@@ -59,7 +59,7 @@ Legends can be aligned using [`HorizontalAlignment`](https://help.syncfusion.com
 
         <maps:ShapeFileLayer.LegendSettings>
 
-        <maps:MapLegendSetting LegendType="Bubbles" HorizontalAlignment="Start" LegendPosition="5,10" VerticalAlignment="Center" ShowLegend="True"></maps:MapLegendSetting>
+        <maps:MapLegendSetting LegendType="Bubbles" HorizontalAlignment="Start" LegendPosition="5,20" VerticalAlignment="Center" ShowLegend="True"></maps:MapLegendSetting>
 
         </maps:ShapeFileLayer.LegendSettings>
 
@@ -73,7 +73,7 @@ Legends can be aligned using [`HorizontalAlignment`](https://help.syncfusion.com
 
             legendSetting.LegendType = LegendType.Bubbles;
 
-            legendSetting.LegendPosition = new Point(5, 10);
+            legendSetting.LegendPosition = new Point(5, 20);
 
             legendSetting.HorizontalAlignment = HorizontalAlignment.Start;
 
@@ -298,7 +298,7 @@ The following code sample demonstrates how to add a legend to maps and customize
                 <maps:ShapeFileLayer x:Name="layer" Uri="usa_state.shp" ShapeIDPath="Name" ShapeIDTableField="STATE_NAME" 
                                         ShowMapItems="True"  ItemsSource="{Binding DataSource}">
                     <maps:ShapeFileLayer.BubbleMarkerSettings>
-                        <maps:BubbleMarkerSetting MinSize="15" MaxSize="35" ValuePath="index" ColorValuePath="index" >
+                        <maps:BubbleMarkerSetting  ValuePath="index" ColorValuePath="index" >
                             <maps:BubbleMarkerSetting.ColorMappings>
                                 <maps:RangeColorMapping Color="#2E769F" From="0" To="15" LegendLabel="0 - 15 " />
                                 <maps:RangeColorMapping Color="#D84444" To="30" From="15" LegendLabel="15- 30" />
@@ -346,9 +346,6 @@ ViewModel viewModel = new ViewModel();
 
             bubbleSetting.ColorValuePath = "index";
 
-            bubbleSetting.MinSize = 15;
-
-            bubbleSetting.MaxSize = 35;
 
             RangeColorMapping colorMapping1 = new RangeColorMapping() { Color = Color.FromHex("#2E769F"), From = 0, To = 15 };
             RangeColorMapping colorMapping2 = new RangeColorMapping() { Color = Color.FromHex("#D84444"), From = 15, To = 30 };

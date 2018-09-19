@@ -111,13 +111,17 @@ SfLinearProgressBar linearProgressBar = new SfLinearProgressBar();
 
 linearProgressBar.Progress = 100;
 
-linearProgressBar.RangeColors.Add(new RangeColor() { Color = Color.FromHex("00bdaf"), Start = 0, End = 25 });
+RangeColorCollection rangeColors = new RangeColorCollection();
 
-linearProgressBar.RangeColors.Add(new RangeColor() { Color = Color.FromHex("2f7ecc"), Start = 25, End = 50 });
+rangeColors.Add(new RangeColor() { Color = Color.FromHex("00bdaf"), Start = 0, End = 25 });
 
-linearProgressBar.RangeColors.Add(new RangeColor() { Color = Color.FromHex("e9648e"), Start = 50, End = 75 });
+rangeColors.Add(new RangeColor() { Color = Color.FromHex("2f7ecc"), Start = 25, End = 50 });
 
-linearProgressBar.RangeColors.Add(new RangeColor() { Color = Color.FromHex("fbb78a"), Start = 75, End = 100 });
+rangeColors.Add(new RangeColor() { Color = Color.FromHex("e9648e"), Start = 50, End = 75 });
+
+rangeColors.Add(new RangeColor() { Color = Color.FromHex("fbb78a"), Start = 75, End = 100 });
+
+linearProgressBar.RangeColors = rangeColors;
 
 // Using circular progress bar.
 
@@ -127,13 +131,17 @@ circularProgressBar.Progress = 100;
 
 circularProgressBar.ProgressColor = Color.FromHex("FF90a84e");
 
-circularProgressBar.RangeColors.Add(new RangeColor() { Color = Color.FromHex("00bdaf"), Start = 0, End = 25 });
+RangeColorCollection rangeColors = new RangeColorCollection();
 
-circularProgressBar.RangeColors.Add(new RangeColor() { Color = Color.FromHex("2f7ecc"), Start = 25, End = 50 });
+rangeColors.Add(new RangeColor() { Color = Color.FromHex("00bdaf"), Start = 0, End = 25 });
 
-circularProgressBar.RangeColors.Add(new RangeColor() { Color = Color.FromHex("e9648e"), Start = 50, End = 75 });
+rangeColors.Add(new RangeColor() { Color = Color.FromHex("2f7ecc"), Start = 25, End = 50 });
 
-circularProgressBar.RangeColors.Add(new RangeColor() { Color = Color.FromHex("fbb78a"), Start = 75, End = 100 });
+rangeColors.Add(new RangeColor() { Color = Color.FromHex("e9648e"), Start = 50, End = 75 });
+
+rangeColors.Add(new RangeColor() { Color = Color.FromHex("fbb78a"), Start = 75, End = 100 });
+
+circularProgressBar.RangeColors = rangeColors;
 
 {% endhighlight %}
 
@@ -197,21 +205,17 @@ SfLinearProgressBar linearProgressBar = new SfLinearProgressBar();
 
 linearProgressBar.Progress = 100;
 
-linearProgressBar.RangeColors.Add(
+RangeColorCollection rangeColors = new RangeColorCollection();
 
-new RangeColor() { Color = Color.FromHex("88A0D9EF"), IsGradient = true, Start = 0 , End = 25 });
+rangeColors.Add(new RangeColor() { Color = Color.FromHex("88A0D9EF"), IsGradient = true, Start = 0 , End = 25 });
 
-linearProgressBar.RangeColors.Add(
+rangeColors.Add(new RangeColor() { Color = Color.FromHex("AA62C1E5"), IsGradient = true, Start = 25, End = 50 });
 
-new RangeColor() { Color = Color.FromHex("AA62C1E5"), IsGradient = true, Start = 25, End = 50 });
+rangeColors.Add(new RangeColor() { Color = Color.FromHex("DD20A7DB"), IsGradient = true, Start = 50, End = 75 });
 
-linearProgressBar.RangeColors.Add(
+rangeColors.Add(new RangeColor() { Color = Color.FromHex("FF1C96C5"), IsGradient = true, Start = 75, End = 100 });
 
-new RangeColor() { Color = Color.FromHex("DD20A7DB"), IsGradient = true, Start = 50, End = 75 });
-
-linearProgressBar.RangeColors.Add(
-
-new RangeColor() { Color = Color.FromHex("FF1C96C5"), IsGradient = true, Start = 75, End = 100 });
+linearProgressBar.RangeColors = rangeColors;
 
 // Using circular progress bar.
 
@@ -221,21 +225,17 @@ circularProgressBar.Progress = 100;
 
 circularProgressBar.ProgressColor = Color.FromHex("FF90a84e");
 
-circularProgressBar.RangeColors.Add(
+RangeColorCollection rangeColors = new RangeColorCollection();
 
-new RangeColor() { Color = Color.FromHex("88A0D9EF"), IsGradient = true, Start = 0 , End = 25 });
+rangeColors.Add(new RangeColor() { Color = Color.FromHex("88A0D9EF"), IsGradient = true, Start = 0 , End = 25 });
 
-circularProgressBar.RangeColors.Add(
+rangeColors.Add(new RangeColor() { Color = Color.FromHex("AA62C1E5"), IsGradient = true, Start = 25, End = 50 });
 
-new RangeColor() { Color = Color.FromHex("AA62C1E5"), IsGradient = true, Start = 25, End = 50 });
+rangeColors.Add(new RangeColor() { Color = Color.FromHex("DD20A7DB"), IsGradient = true, Start = 50, End = 75 });
 
-circularProgressBar.RangeColors.Add(
+rangeColors.Add(new RangeColor() { Color = Color.FromHex("FF1C96C5"), IsGradient = true, Start = 75, End = 100 });
 
-new RangeColor() { Color = Color.FromHex("DD20A7DB"), IsGradient = true, Start = 50, End = 75 });
-
-circularProgressBar.RangeColors.Add(
-
-new RangeColor() { Color = Color.FromHex("FF1C96C5"), IsGradient = true, Start = 75, End = 100 });
+circularProgressBar.RangeColors = rangeColors;
 
 {% endhighlight %}
 
@@ -245,7 +245,7 @@ new RangeColor() { Color = Color.FromHex("FF1C96C5"), IsGradient = true, Start =
 
 ## Thickness
 
-**Linear progress bar**
+### Linear progress bar
 
 In the linear progress bar, the height of the track and padding of the progress indicator can be customized using the [`TrackHeight`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.SfLinearProgressBar~TrackHeight.html) and [`Padding`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.SfLinearProgressBar~Padding.html) properties, respectively.
 
@@ -273,7 +273,7 @@ linearProgressBar.Padding = 2;
 
 ![](overview_images/thickness_linear.png)
 
-**Circular progress bar**
+### Circular progress bar
 
 The following properties are used to customize the appearance of the circular progress bar:
 

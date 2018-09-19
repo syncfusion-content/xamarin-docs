@@ -284,7 +284,7 @@ When text input isn’t accepted, an error message can display instructions on h
     HelperText="Enter your name"
     ErrorText="Should not contains special characters"
     HasError="true">
-    <Entry Text="Joh@" />
+    <Entry />
 </inputLayout:SfTextInputLayout>  
  
 
@@ -297,7 +297,7 @@ inputLayout.Hint = "Name";
 inputLayout.HelperText = "Enter your name";
 inputLayout.ErrorText = "Should not contains special characters";
 inputLayout.HasError = true; 
-inputLayout.InputView = new Entry() { Text = "Joh@" }; 
+inputLayout.InputView = new Entry(); 
 
 {% endhighlight %}
 

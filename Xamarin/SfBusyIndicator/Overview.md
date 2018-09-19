@@ -19,4 +19,4 @@ The Essential Xamarin BusyIndicator control includes over 10 built-in animations
 * Supports to show/hide busy indicator.
 * Displays busy text with animation.
 * Provides simple and easy options to size the control.
-* Adjusts the animation speed.
+* Provides option to adjust the animation speed.

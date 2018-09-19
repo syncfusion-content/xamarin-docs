@@ -49,7 +49,7 @@ this.Content=numericTextBox;
 
 ### Completed Event
 
-Occurs when the user finalizes the text in an NumericTextBox with the return key.
+Occurs when the user finalizes the text in an NumericTextBox by pressing return key on the keyboard.
 
 {% tabs %}
 

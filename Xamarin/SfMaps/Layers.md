@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Layers
-description: This section describes about the Layers in Maps
+description: This section describes about the layers in maps
 platform: xamarin
 control: SfMaps
 documentation: ug
@@ -13,29 +13,23 @@ Maps is maintained through [`Layers`](https://help.syncfusion.com/cr/cref_files/
 
 Maps consists of two layers
 
-* ImageryLayer
+* Imagery layer
 
-* ShapeFileLayer
+* Shape file layer
 
-## ImageryLayer
+## Imagery layer
 
-[`MapsProvider`](https://help.syncfusion.com/xamarin/sfmaps/mapsprovider) topic explains about the ImageryLayer.
+[`MapsProvider`](https://help.syncfusion.com/xamarin/sfmaps/mapsprovider) topic explains about the imagery layer.
 
-## ShapeFileLayer
+## Shape file layer
 
-Through ShapeFileLayer, custom shape files can be rendered and the shapes can be customized.
+Through shape file layer, custom shape files can be rendered and the shapes can be customized.
 
 ### Shape settings
 
 The shape settings define basic customization options for shapes in a map.
 
-A shape’s fill, stroke, and stroke thickness can be customized using the following properties:
-
-[`ShapeFill`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeSetting~ShapeFill.html#): Sets the fill color for the shapes in a map. 
-
-[`ShapeStroke`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeSetting~ShapeStroke.html#): Sets the border color for the shapes in a map.
-
-[`ShapeStrokeThickness`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeSetting~ShapeStrokeThickness.html#): Sets the border thickness for the shapes in a map.
+You can customize the shapes's fill, stroke, and stroke thickness by using the [`ShapeFill`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeSetting~ShapeFill.html#), [`ShapeStroke`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeSetting~ShapeStroke.html#),[`ShapeStrokeThickness`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeSetting~ShapeStrokeThickness.html#) properties.
 
 Refer to the following code sample for customizing shapes.
 
@@ -43,25 +37,53 @@ Refer to the following code sample for customizing shapes.
 
 {% highlight xml %}
 
-<maps:ShapeFileLayer.ShapeSettings>
+       <maps:SfMaps>
 
-<maps:ShapeSetting  ShapeFill="LightBlue" ShapeStroke="Black" ShapeStrokeThickness="2" >
+        <maps:SfMaps.Layers >
 
-</maps:ShapeSetting>
+        <maps:ShapeFileLayer Uri="usa_state.shp" >
 
-</maps:ShapeFileLayer.ShapeSettings>
+        <maps:ShapeFileLayer.ShapeSettings>
+
+        <maps:ShapeSetting  ShapeFill="LightBlue" ShapeStroke="Black" ShapeStrokeThickness="2" >
+
+        </maps:ShapeSetting>
+
+        </maps:ShapeFileLayer.ShapeSettings>
+
+         </maps:ShapeFileLayer>
+
+        </maps:SfMaps.Layers>
+
+        </maps:SfMaps>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-ShapeSetting shapeSetting = new ShapeSetting();            
+        SfMaps maps = new SfMaps();
 
-shapeSetting.ShapeFill = Color.LightBlue;
+        ShapeFileLayer layer = new ShapeFileLayer();
 
-shapeSetting.ShapeStroke = Color.Black;
+        layer.Uri = "usa_state.shp";
 
-shapeSetting.ShapeStrokeThickness = 2;
+        layer.ItemsSource = GetDataSource();
+
+        layer.ShapeIDTableField = "STATE_NAME";
+
+        layer.ShapeIDPath = "State";           
+    
+        ShapeSetting shapeSetting = new ShapeSetting();            
+
+        shapeSetting.ShapeFill = Color.LightBlue;
+
+        shapeSetting.ShapeStroke = Color.Black;
+
+        shapeSetting.ShapeStrokeThickness = 2;
+
+        layer.ShapeSettings = shapeSetting;
+
+        maps.Layers.Add(layer);
 
 {% endhighlight %}
 
@@ -79,31 +101,35 @@ To customize the shapes based on the bound values, use the following properties:
 
 {% highlight xml %}
 
-<maps:SfMaps.Layers >
+       <maps:SfMaps>
 
-<maps:ShapeFileLayer Uri="usa_state.shp" 
+        <maps:SfMaps.Layers >
 
-ShapeIDPath="State" ShapeIDTableField="STATE_NAME" >
+        <maps:ShapeFileLayer Uri="usa_state.shp" 
 
-<maps:ShapeFileLayer.ShapeSettings>
+        ShapeIDPath="State" ShapeIDTableField="STATE_NAME" >
 
-<maps:ShapeSetting ShapeColorValuePath="Candidate" ShapeValuePath="Candidate">
+        <maps:ShapeFileLayer.ShapeSettings>
 
-<maps:ShapeSetting.ColorMappings>
+        <maps:ShapeSetting ShapeColorValuePath="Candidate" ShapeValuePath="Candidate">
 
-<maps:EqualColorMapping Color="#D84444" Value="Romney" LegendLabel="Romney"></maps:EqualColorMapping>
+        <maps:ShapeSetting.ColorMappings>
 
-<maps:EqualColorMapping Color="#316DB5" Value="Obama" LegendLabel="Obama"></maps:EqualColorMapping>
+        <maps:EqualColorMapping Color="#D84444" Value="Romney" LegendLabel="Romney"></maps:EqualColorMapping>
 
-</maps:ShapeSetting.ColorMappings>
+        <maps:EqualColorMapping Color="#316DB5" Value="Obama" LegendLabel="Obama"></maps:EqualColorMapping>
 
-</maps:ShapeSetting>
+        </maps:ShapeSetting.ColorMappings>
 
-</maps:ShapeFileLayer.ShapeSettings>
+        </maps:ShapeSetting>
 
-</maps:ShapeFileLayer>
+        </maps:ShapeFileLayer.ShapeSettings>
 
-</maps:SfMaps.Layers>
+        </maps:ShapeFileLayer>
+
+        </maps:SfMaps.Layers>
+
+        </maps:SfMaps>
 
 {% endhighlight %}
 
@@ -201,7 +227,7 @@ layer.ShapeSettings = shapeSetting;
 
 The [`ShapeSelected`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShapeSelected_EV.html) event will be triggered when the map shapes are selected. A corresponding model data is passed as an argument. ShapeSelected event has been deprecated. 
 
-[`ShapeSelectionChanged`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShapeSelectionChanged_EV.html) event will be triggered when the map shapes selection changed with corresponding argument as model data and the selection state of the shape.
+[`ShapeSelectionChanged`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShapeSelectionChanged_EV.html) event will be triggered when the map shapes selection changed with corresponding argument as model [`Data`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeSelectedEventArgs~Data.html) and the selection state of the shape using [`IsSelected`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeSelectedEventArgs~IsSelected.html) property
 
 {% tabs %}
 
@@ -216,55 +242,26 @@ The [`ShapeSelected`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusi
         private void ShapeLayer_ShapeSelectionChanged(object sender, ShapeSelectedEventArgs e)
         {
             AgricultureData data = e.Data as AgricultureData;
-            if (data != null)
-            {
-                Toast.IsVisible = true;
-                State = countryLabel.Text = data.Name;
-                Type = populationLabel.Text = data.Type;
-
-                Device.StartTimer(new TimeSpan(0, 0, 3), () =>
-                {
-                    Toast.IsVisible = false;
-                    return false;
-                });
-            }
+            bool IsSelected = e.IsSelected;
         }
-{% endhighlight %}
-
-{% endtabs %}
-
-The following code sample provides a template for showing pop-up message when a shape is selected.
-
-{% tabs %}
-
-{% highlight xml %}
-
- <StackLayout   x:Name="Toast" IsVisible="false" Orientation="Vertical" Spacing="0"  
-                           WidthRequest="100"  HorizontalOptions="End" VerticalOptions="End" >
-                <Label x:Name="stateLabel" Text="Country" HorizontalOptions="Center" 
-                       VerticalOptions="Center" XAlign="Center" YAlign="Center" FontSize="10" 
-                       WidthRequest="100"  HeightRequest= "20"  Opacity="0.5" BackgroundColor="Green" 
-                       TextColor="White" />
-                <Label x:Name="candidateLabel" Text="Population" HorizontalOptions="Center" 
-                       VerticalOptions="Center" XAlign="Center" YAlign="Center" FontSize="8" Grid.Row="1"  
-                       HeightRequest= "20"  WidthRequest="100"  Opacity="0.5" BackgroundColor="Green" 
-                       TextColor="White"/>
-
-</StackLayout>
-
 {% endhighlight %}
 
 {% endtabs %}
 
 ![](Images/ShapeCustomization_img4.jpeg)
 
-## MultiLayer
+## Sublayer
 
-The Multilayer support allows you to load multiple shape files in a single container, enabling maps to display more information.
+The shape layers is the core layer of the map. The multiple layers can be added in the shape layers as Sublayers within the shape layers.
 
-### Adding Multiple Layers in the Map
+### Adding multiple layers in the map
 
-The multiple layer can be added in the maps using [`BaseMapIndex`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.SfMaps~BaseMapIndexProperty.html) property which allows to drilldown from the main layer to multiple layers.
+The multiple layer can be added in the maps using [`Sublayer`]().
+
+
+### What layer to be displayed in the view
+
+[`BaseMapIndex`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.SfMaps~BaseMapIndexProperty.html) property which allows to drilldown from the main layer to another layer.
 
 In ShapeSelected event, BaseMapIndex property has been used to change the layer when asia shape selected.
 
@@ -522,4 +519,4 @@ In ShapeSelected event, BaseMapIndex property has been used to change the layer 
 
 {% endtabs %}
 
-![](Images/Drilldown1.jpg)  ![](Images/Drilldown2.jpg) 
+![](Images/Drilldown1.jpg)  ![](Images/Drilldown_Asia.jpg) 

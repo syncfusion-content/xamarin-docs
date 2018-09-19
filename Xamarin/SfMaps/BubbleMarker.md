@@ -115,17 +115,17 @@ The fill color and opacity of the bubbles can be customized using the [`Fill`](h
 
 ![Bubble marker color customization](Images/BubbleFillColor.jpg)
 
-Bubble Color can also be customized by [`ColorMappings`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.BubbleMarkerSetting~ColorMappingsProperty.html).
+Bubble color can also be customized by [`ColorMappings`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.BubbleMarkerSetting~ColorMappingsProperty.html).
 
-Maps provide two types of color mapping for Bubble Marker
+Maps provide two types of color mapping for bubble marker
 
  * Equal color mapping
- * Range Color mapping
+ * Range color mapping
 
-### RangeColorMapping
+### Range color mapping
 
 It is used to differentiate the bubble fill based on its under-bound value and color ranges.
-The From and To properties are used to define the color range and color for the range that can be specified using the Color property.
+The [`From`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.RangeColorMapping~FromProperty.html) and [`To`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.RangeColorMapping~ToProperty.html) properties are used to define the color range and color for the range that can be specified using the Color property.
 
 {% tabs %}
 
@@ -171,9 +171,9 @@ The From and To properties are used to define the color range and color for the 
 
 ![Bubble marker color customization](Images/RangeColorMapping_Bubble.jpg)
 
-### EqualColorMapping
+### Equal color mapping
 
-It is used to differentiate the bubble fill based on its underlying value and color using the Value and Color properties.
+It is used to differentiate the bubble fill based on its underlying value and color using the [`Value`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.EqualColorMapping~Value.html) and [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ColorMapping~Color.html) properties.
 
 {% tabs %}
 

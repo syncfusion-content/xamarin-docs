@@ -310,21 +310,11 @@ The detailed explanation of marker and its customization have been provided in M
 
 ![](Images/Marker.png)
 
-## CanCacheTiles
+## Permission for the cache to be stored in application
 
 [`CanCacheTiles`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ImageryLayer~CanCacheTiles.html) property used to decide whether the tiles should be cached or not.
 
 {% tabs %}
-
-{% highlight xml %}
-
-        <maps:SfMaps>
-            <maps:SfMaps.Layers>            
-                <maps:ImageryLayer CanCacheTiles="True"  />
-            </maps:SfMaps.Layers>
-        </maps:SfMaps>
-
-{% endhighlight %}
 
 {% highlight c# %}
 
@@ -365,11 +355,11 @@ The detailed explanation of marker and its customization have been provided in M
 
 [`ZoomLevelChanging`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs.html) event triggers when zoom level changed. Following arguments can be get from the ZoomLevelChanging event .
 
-* Cancel - Used to cancel the zooming.
+* [`Cancel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs~Cancel.html) - Used to cancel the zooming.
 
-* PreviousLevel - Shows the previous level after the zooming
+* [`PreviousLevel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs~PreviousLevel.html) - Returns the previous level after the zooming.
 
-* CurrentLevel - Shows the current level to be zoomed.
+* [`CurrentLevel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs~CurrentLevel.html) - Returns the current level to be zoomed.
 
 {% tabs %}
 
@@ -387,7 +377,11 @@ The detailed explanation of marker and its customization have been provided in M
 
         private void Layer_ZoomLevelChanging(object sender, ZoomLevelChangingEventArgs e)
         {
-            e.Cancel = true;
+           if(e.PreviousLevel == 10) // Returns the previous zoom level
+           {
+               e.Cancel = true; // Cancels the zooming event
+               var CurrentLevel = e.CurrentLevel; // Returns the current zoomed level
+           }
         }
 
 {% endhighlight %}

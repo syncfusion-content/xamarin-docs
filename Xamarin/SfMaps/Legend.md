@@ -40,16 +40,53 @@ layer.LegendSettings = legendSetting;
 
 {% endtabs %}
 
-## LegendType
+## Legend type
 
-Based on the layer settings,legend can be displayed. There are two LegendTypes
+[`LegendType`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLegendSetting~LegendTypeProperty.html) property is used to determine the displaying of shapes and bubble legends in map.
 
 * Layers
 * Bubbles
 
-To display legends for Shapes,[`LegendType`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLegendSetting~LegendTypeProperty.html) Layers is used. To display legend for Bubbles, [`LegendType`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLegendSetting~LegendTypeProperty.html) Bubbles is used. By default, LegendType is Layers
+## Legend position
 
-## Legend Alignment
+Based on the margin values of x and y-axes, the legends can be positioned using the [`LegendPosition`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLegendSetting~LegendPosition.html#) property of the [`MapLegendSetting`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLegendSetting.html#) class. Legends will be positioned in the range of 0 to 100 (screen size ratio). By default LegendPosition is (50,10).
+
+The legend items will be placed in multiple rows if size of the total legend exceeds the available size. 
+
+
+{% tabs %}
+
+{% highlight xml %}
+
+        <maps:ShapeFileLayer.LegendSettings>
+
+        <maps:MapLegendSetting LegendType="Bubbles" HorizontalAlignment="Start" LegendPosition="80,60" ShowLegend="True"></maps:MapLegendSetting>
+
+        </maps:ShapeFileLayer.LegendSettings>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            MapLegendSetting legendSetting = new MapLegendSetting();
+
+            legendSetting.ShowLegend = true;
+
+            legendSetting.LegendType = LegendType.Bubbles;
+
+            legendSetting.LegendPosition = new Point(80, 60);
+
+            legendSetting.HorizontalAlignment = HorizontalAlignment.Start;
+
+            layer.LegendSettings = legendSetting;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Images/LegendWrapping.jpg)
+
+## Legend alignment
 
 Legends can be aligned using [`HorizontalAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLegendSetting~HorizontalAlignmentProperty.html) and [`VerticalAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLegendSetting~VerticalAlignmentProperty.html) Properties. By default legends will be aligned in center.
 
@@ -87,44 +124,7 @@ Legends can be aligned using [`HorizontalAlignment`](https://help.syncfusion.com
 
 ![](Images/LegendAlignment.jpg)
 
-## Legend position
 
-Based on the margin values of x and y-axes, the legends can be positioned using the [`LegendPosition`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLegendSetting~LegendPosition.html#) property of the [`MapLegendSetting`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLegendSetting.html#) class. 
-
-The legend items can be placed in multiple rows if size of the total legend exceeds the available size. 
-
-
-{% tabs %}
-
-{% highlight xml %}
-
-        <maps:ShapeFileLayer.LegendSettings>
-
-        <maps:MapLegendSetting LegendType="Bubbles" HorizontalAlignment="Start" LegendPosition="80,60" ShowLegend="True"></maps:MapLegendSetting>
-
-        </maps:ShapeFileLayer.LegendSettings>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-            MapLegendSetting legendSetting = new MapLegendSetting();
-
-            legendSetting.ShowLegend = true;
-
-            legendSetting.LegendType = LegendType.Bubbles;
-
-            legendSetting.LegendPosition = new Point(80, 60);
-
-            legendSetting.HorizontalAlignment = HorizontalAlignment.Start;
-
-            layer.LegendSettings = legendSetting;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![](Images/LegendWrapping.jpg)
 
 ## Icon customization
 
@@ -200,7 +200,7 @@ layer.LegendSettings = legendSetting;
 
 ![](Images/LegendIconCustomization.jpg)
 
-## ItemMargin
+## Item margin
 
 The [`ItemMargin`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLegendSetting~ItemMarginProperty.html) property is used to set the spacing between the legend items.
 

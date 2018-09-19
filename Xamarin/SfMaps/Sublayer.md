@@ -15,20 +15,6 @@ The sublayer in maps allows to load multiple shape files in a single container
 
 You can add multiple shape files in the [`ShapeFileLayer`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer.html) using [`Sublayers`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~Sublayers.html) property.
 
-### Customizing sublayer
-
-Sublayer is a type of shapefile layer, so you can add all the properties like markers, bubbles, color mapping, legends and data labels in sublayer also. Please refer the below link to add the sublayer properties.
-
-* [`Adding Markers`](https://help.syncfusion.com/xamarin/sfmaps/getting-started?cs-save-lang=1&cs-lang=xaml#adding-marker).
-
-* [`Color Mapping`](https://help.syncfusion.com/xamarin/sfmaps/getting-started?cs-save-lang=1&cs-lang=xaml#color-mapping).
-
-* [`Adding Legend`](https://help.syncfusion.com/xamarin/sfmaps/getting-started?cs-save-lang=1&cs-lang=xaml#adding-legend).
-
-* [`Adding Bubbles`](https://help.syncfusion.com/xamarin/sfmaps/bubblemarker#adding-bubbles).
-
-* [`Adding Data Labels`](https://help.syncfusion.com/xamarin/sfmaps/datalabels#adding-data-labels).
-
 {% tabs %}
 
 {% highlight xaml %}
@@ -168,3 +154,17 @@ Sublayer is a type of shapefile layer, so you can add all the properties like ma
 {% endtabs %}
 
 ![](Images/Sublayer.png)
+
+### Customizing sublayer
+
+Sublayer is a type of shapefile layer, so you can add all the properties like markers, bubbles, color mapping, legends and data labels in sublayer also. Please refer the below link to add the sublayer properties.
+
+* [`Adding Markers`](https://help.syncfusion.com/xamarin/sfmaps/getting-started?cs-save-lang=1&cs-lang=xaml#adding-marker).
+
+* [`Color Mapping`](https://help.syncfusion.com/xamarin/sfmaps/getting-started?cs-save-lang=1&cs-lang=xaml#color-mapping).
+
+* [`Adding Legend`](https://help.syncfusion.com/xamarin/sfmaps/getting-started?cs-save-lang=1&cs-lang=xaml#adding-legend).
+
+* [`Adding Bubbles`](https://help.syncfusion.com/xamarin/sfmaps/bubblemarker#adding-bubbles).
+
+* [`Adding Data Labels`](https://help.syncfusion.com/xamarin/sfmaps/datalabels#adding-data-labels).

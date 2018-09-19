@@ -10,6 +10,8 @@ documentation: ug
 
 ## Events
 
+### ValueChanged Event
+
 We can perform operation while the changing the value of NumericTextBox's Value using ValueChanged event. ValueChanged event returns the changed value in NumericTextBox.
 
 <table>
@@ -38,6 +40,32 @@ numericTextBox.Value = 123;
 numericTextBox.ValueChanged += (object sender, ValueEventArgs e) =>
 {
 	System.Diagnostics.Debug.WriteLine(e.Value.ToString());
+};
+this.Content=numericTextBox;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Completed Event
+
+Occurs when the user finalizes the text in an NumericTextBox with the return key.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <syncfusion:SfNumericTextBox x:Name="numericTextBox" Completed="Handle_Completed” Value="123"/>
+    
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfNumericTextBox numericTextBox=new SfNumericTextBox();
+numericTextBox.Value = 123;
+numericTextBox.Completed += (object sender, EventArgs e) =>
+{
+    System.Diagnostics.Debug.WriteLine(“Completed”);
 };
 this.Content=numericTextBox;
 

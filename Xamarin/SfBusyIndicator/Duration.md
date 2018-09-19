@@ -6,7 +6,7 @@ platform: Xamarin
 control: BusyIndicator
 documentation: ug
 ---
-# Animation speed
+# Animation duration
 
 The `Duration` property of SfBusyIndicator indicates timeline for completing one animation cycle. Setting smaller duration value accelerates animation speed.
 

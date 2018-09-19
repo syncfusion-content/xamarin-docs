@@ -335,3 +335,36 @@ Following code snippet and screenshot illustrates how to apply the gradient colo
 {% endtabs %}
 
 ![](appearance_images/gradientchart.png)
+
+## Plotting Area Customization
+
+[`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html) provides the [`AreaBorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~AreaBorderColor.html), [`AreaBorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~AreaBorderWidth.html), and [`AreaBackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~AreaBackgroundColor.html) properties to customize the plot area.
+
+The following code samples demonstrate the usage of these properties:
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart  
+
+AreaBackgroundColor="Cyan"  
+
+AreaBorderColor="Gray" 
+
+AreaBorderWidth="3"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+chart.AreaBackgroundColor = Color.Cyan;
+chart.AreaBorderColor = Color.Gray;
+chart.AreaBorderWidth = 3;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+

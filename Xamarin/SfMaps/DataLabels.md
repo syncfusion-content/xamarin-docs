@@ -1,25 +1,29 @@
 ---
 layout: post
-title: DataLabels
-description: This section describes about DataLabels.
+title: Data Labels
+description: This section describes about data labels.
 platform: xamarin
 control: SfMaps
 documentation: ug
 ---
 
-# DataLabels
+# Data Labels
 
 Data labels are used to display the values of the shapes.
 
 ## Adding data labels
 
- [`ShowMapItems`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShowMapItems.html) property is a Boolean property that displays or hides the data labels in shapes. You must set the [`ShapeValuePath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeSetting~ShapeValuePath.html) property to get the data labels which is bound for each shape.
+ [`ShowMapItems`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShowMapItems.html) property is a boolean property that displays or hides the data labels in shapes. You must set the [`ShapeValuePath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeSetting~ShapeValuePath.html) property to get the data labels which is bound for each shape.
 
 {% tabs %}
 
 {% highlight xml %}
 
-     <maps:SfMaps x:Name="sfmap"  BackgroundColor="White">
+    <ContentPage.BindingContext>
+        <local:USAStateViewModel/>
+    </ContentPage.BindingContext>
+
+     <maps:SfMaps x:Name="sfmap" >
         
         <maps:SfMaps.Layers>
 
@@ -41,9 +45,7 @@ Data labels are used to display the values of the shapes.
 
 {% highlight c# %}
 
-             SfMaps map = new SfMaps();
-
-            map.BackgroundColor = Color.White;
+            SfMaps map = new SfMaps();
 
             ShapeFileLayer layer = new ShapeFileLayer();
 
@@ -53,9 +55,9 @@ Data labels are used to display the values of the shapes.
 
             layer.ShapeSettings.ShapeFill = Color.LightGray;
 
-            SublayerViewModel sublayerViewModel = new SublayerViewModel();
+            USAStateViewModel usaStateViewModel = new USAStateViewModel();
 
-            layer.ItemsSource = sublayerViewModel.DataSource;
+            layer.ItemsSource = usaStateViewModel.DataSource;
 
             layer.ShapeIDPath = "Name";
 
@@ -73,95 +75,15 @@ Data labels are used to display the values of the shapes.
 
 ![DataLabel Image](Images/DataLabel1.png)
 
-## Customizing data labels
-
-Data labels can be customized using the [`DataLabelSetting`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.DataLabelSetting.html) property in shape file layer. The font attribute, color, font size and font family can be customized using [`FontAttributes`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.DataLabelSetting~FontAttributes.html), [`TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.DataLabelSetting~TextColor.html), [`FontSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.DataLabelSetting~FontSize.html) and [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.DataLabelSetting~FontFamily.html).
-
-{% tabs %}
-
-{% highlight xml %}
-
-      <maps:SfMaps x:Name="sfmap"  BackgroundColor="White">
-        
-        <maps:SfMaps.Layers>
-
-            <maps:ShapeFileLayer Uri="usa_state.shp" ShowMapItems="True" ItemsSource="{Binding DataSource}" ShapeIDPath="Name" ShapeIDTableField="STATE_NAME">
-               
-                <maps:ShapeFileLayer.ShapeSettings>
-
-                    <maps:ShapeSetting   ShapeValuePath="Type"  ShapeFill="LightGray"/>
-
-                </maps:ShapeFileLayer.ShapeSettings>
-
-                <maps:ShapeFileLayer.DataLabelSettings>
-
-                    <maps:DataLabelSetting TextColor="Blue" FontAttributes="Bold" FontFamily="cursive" FontSize="12" />
-
-                </maps:ShapeFileLayer.DataLabelSettings>
-                
-            </maps:ShapeFileLayer>
-            
-        </maps:SfMaps.Layers>
-        
-    </maps:SfMaps>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-            SfMaps map = new SfMaps();
-
-            map.BackgroundColor = Color.White;
-
-            ShapeFileLayer layer = new ShapeFileLayer();
-
-            layer.Uri = "usa_state.shp";
-
-            layer.ShowMapItems = true;
-
-            SublayerViewModel sublayerViewModel = new SublayerViewModel();
-
-            layer.ItemsSource = sublayerViewModel.DataSource;
-
-            layer.ShapeIDPath = "Name";
-
-            layer.ShapeIDTableField = "STATE_NAME";
-
-            layer.ShapeSettings.ShapeValuePath = "Type";
-
-            layer.ShapeSettings.ShapeFill = Color.LightGray;
-
-            DataLabelSetting dataLabelSetting = new DataLabelSetting();
-
-            dataLabelSetting.TextColor = Color.Blue;
-
-            dataLabelSetting.FontAttributes = FontAttributes.Bold;
-
-            dataLabelSetting.FontFamily = "cursive";
-
-            dataLabelSetting.FontSize = 12;
-
-            layer.DataLabelSettings = dataLabelSetting;
-
-            map.Layers.Add(layer);
-
-            this.Content = map;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![DataLabel Image](Images/DataLabel2.png)
-
 ## Setting contrast color
 
-Based on the Shape color, contrast color will be applied for the data labels.
+Based on the shape background color, contrast color will be applied for the data labels.
 
 {% tabs %}
 
 {% highlight xml %}
 
-     <maps:SfMaps x:Name="sfmap"  BackgroundColor="White">
+     <maps:SfMaps x:Name="sfmap">
 
         <maps:SfMaps.Layers>
 
@@ -185,7 +107,7 @@ Based on the Shape color, contrast color will be applied for the data labels.
                 
                 <maps:ShapeFileLayer.DataLabelSettings>
                     
-                    <maps:DataLabelSetting IntersectionAction="None" SmartLabelMode="Trim"/>
+                    <maps:DataLabelSetting SmartLabelMode="Trim"/>
                     
                 </maps:ShapeFileLayer.DataLabelSettings>
 
@@ -201,8 +123,6 @@ Based on the Shape color, contrast color will be applied for the data labels.
 
              SfMaps map = new SfMaps();
 
-            map.BackgroundColor = Color.White;
-
             ShapeFileLayer layer = new ShapeFileLayer();
 
             layer.Uri = "usa_state.shp";
@@ -211,9 +131,9 @@ Based on the Shape color, contrast color will be applied for the data labels.
 
             layer.ShapeSettings.ShapeFill = Color.DarkBlue;
 
-            SublayerViewModel sublayerViewModel = new SublayerViewModel();
+            USAStateViewModel usaStateViewModel = new USAStateViewModel();
 
-            layer.ItemsSource = sublayerViewModel.DataSource;
+            layer.ItemsSource = usaStateViewModel.DataSource;
 
             layer.ShapeIDPath = "Name";
 
@@ -249,8 +169,6 @@ Based on the Shape color, contrast color will be applied for the data labels.
 
             DataLabelSetting dataLabelSetting = new DataLabelSetting();
 
-            dataLabelSetting.IntersectionAction = IntersectAction.None;
-
             dataLabelSetting.SmartLabelMode = IntersectAction.Trim;
 
             layer.DataLabelSettings = dataLabelSetting;
@@ -263,32 +181,31 @@ Based on the Shape color, contrast color will be applied for the data labels.
 
 {% endtabs %}
 
-![DataLabel Image](Images/DataLabel3.png)
+![DataLabel Image](Images/DataLabel2.png)
 
+## Customizing data labels
 
-## Setting smart label mode
-
-[`SmartLabelMode`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.DataLabelSetting~SmartLabelMode.html) smartly aligns labels within shape boundaries and avoids label overlap. Labels can be customized using the Hide, Trim and None options. First, you should set the [`IntersectionAction`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.DataLabelSetting~IntersectionAction.html) property as None.
+Data labels can be customized using the [`DataLabelSetting`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.DataLabelSetting.html) property in shape file layer. The font attribute, color, font size and font family can be customized using [`FontAttributes`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.DataLabelSetting~FontAttributes.html), [`TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.DataLabelSetting~TextColor.html), [`FontSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.DataLabelSetting~FontSize.html) and [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.DataLabelSetting~FontFamily.html) properties.
 
 {% tabs %}
 
 {% highlight xml %}
 
-    <maps:SfMaps x:Name="sfmap"  BackgroundColor="White">
+      <maps:SfMaps x:Name="sfmap" >
         
         <maps:SfMaps.Layers>
 
-            <maps:ShapeFileLayer Uri="usa_state.shp" ShowMapItems="True" ItemsSource="{Binding Data}" ShapeIDPath="State" ShapeIDTableField="STATE_NAME">
+            <maps:ShapeFileLayer Uri="usa_state.shp" ShowMapItems="True" ItemsSource="{Binding DataSource}" ShapeIDPath="Name" ShapeIDTableField="STATE_NAME">
                
                 <maps:ShapeFileLayer.ShapeSettings>
 
-                    <maps:ShapeSetting   ShapeValuePath="State" ShapeFill="LightGray" />
+                    <maps:ShapeSetting   ShapeValuePath="Type"  ShapeFill="LightGray"/>
 
                 </maps:ShapeFileLayer.ShapeSettings>
 
                 <maps:ShapeFileLayer.DataLabelSettings>
 
-                    <maps:DataLabelSetting SmartLabelMode="Trim" IntersectionAction="None"/>
+                    <maps:DataLabelSetting TextColor="Blue" FontAttributes="Bold" FontFamily="cursive" FontSize="12" />
 
                 </maps:ShapeFileLayer.DataLabelSettings>
                 
@@ -304,7 +221,83 @@ Based on the Shape color, contrast color will be applied for the data labels.
 
             SfMaps map = new SfMaps();
 
-            map.BackgroundColor = Color.White;
+            ShapeFileLayer layer = new ShapeFileLayer();
+
+            layer.Uri = "usa_state.shp";
+
+            layer.ShowMapItems = true;
+
+            USAStateViewModel usaStateViewModel = new USAStateViewModel();
+
+            layer.ItemsSource = usaStateViewModel.DataSource;
+
+            layer.ShapeIDPath = "Name";
+
+            layer.ShapeIDTableField = "STATE_NAME";
+
+            layer.ShapeSettings.ShapeValuePath = "Type";
+
+            layer.ShapeSettings.ShapeFill = Color.LightGray;
+
+            DataLabelSetting dataLabelSetting = new DataLabelSetting();
+
+            dataLabelSetting.TextColor = Color.Blue;
+
+            dataLabelSetting.FontAttributes = FontAttributes.Bold;
+
+            dataLabelSetting.FontFamily = "cursive";
+
+            dataLabelSetting.FontSize = 12;
+
+            layer.DataLabelSettings = dataLabelSetting;
+
+            map.Layers.Add(layer);
+
+            this.Content = map;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![DataLabel Image](Images/DataLabel3.png)
+
+## Setting smart label mode
+
+[`SmartLabelMode`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.DataLabelSetting~SmartLabelMode.html) smartly aligns labels within shape boundaries and avoids label overlap. Labels can be customized using the Hide, Trim and None options.
+
+{% tabs %}
+
+{% highlight xml %}
+
+    <maps:SfMaps x:Name="sfmap">
+        
+        <maps:SfMaps.Layers>
+
+            <maps:ShapeFileLayer Uri="usa_state.shp" ShowMapItems="True" ItemsSource="{Binding Data}" ShapeIDPath="State" ShapeIDTableField="STATE_NAME">
+               
+                <maps:ShapeFileLayer.ShapeSettings>
+
+                    <maps:ShapeSetting   ShapeValuePath="State" ShapeFill="LightGray" />
+
+                </maps:ShapeFileLayer.ShapeSettings>
+
+                <maps:ShapeFileLayer.DataLabelSettings>
+
+                    <maps:DataLabelSetting SmartLabelMode="Trim"/>
+
+                </maps:ShapeFileLayer.DataLabelSettings>
+                
+            </maps:ShapeFileLayer>
+            
+        </maps:SfMaps.Layers>
+        
+    </maps:SfMaps>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfMaps map = new SfMaps();
 
             ShapeFileLayer layer = new ShapeFileLayer();
 
@@ -312,9 +305,9 @@ Based on the Shape color, contrast color will be applied for the data labels.
 
             layer.ShowMapItems = true;
 
-            ViewModel sublayerViewModel = new ViewModel();
+            USAStateViewModel usaStateViewModel = new USAStateViewModel();
 
-            layer.ItemsSource = sublayerViewModel.Data;
+            layer.ItemsSource = usaStateViewModel.Data;
 
             layer.ShapeIDPath = "State";
 
@@ -327,8 +320,6 @@ Based on the Shape color, contrast color will be applied for the data labels.
             DataLabelSetting dataLabelSetting = new DataLabelSetting();
 
             dataLabelSetting.SmartLabelMode = IntersectAction.Trim;
-
-            dataLabelSetting.IntersectionAction = IntersectAction.None;
 
             layer.DataLabelSettings = dataLabelSetting;
 
@@ -350,7 +341,7 @@ Based on the Shape color, contrast color will be applied for the data labels.
 
 {% highlight xml %}
 
-    <maps:SfMaps x:Name="sfmap"  BackgroundColor="White">
+    <maps:SfMaps x:Name="sfmap">
 
         <maps:SfMaps.Layers>
 
@@ -380,17 +371,15 @@ Based on the Shape color, contrast color will be applied for the data labels.
 
            SfMaps map = new SfMaps();
 
-            map.BackgroundColor = Color.White;
-
             ShapeFileLayer layer = new ShapeFileLayer();
 
             layer.Uri = "usa_state.shp";
 
             layer.ShowMapItems = true;
 
-            ViewModel sublayerViewModel = new ViewModel();
+            USAStateViewModel usaStateViewModel = new USAStateViewModel();
 
-            layer.ItemsSource = sublayerViewModel.Data;
+            layer.ItemsSource = usaStateViewModel.Data;
 
             layer.ShapeIDPath = "State";
 

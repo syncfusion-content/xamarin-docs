@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sublayer
-description: This section describes about Sublayer.
+description: This section describes about sublayer.
 platform: xamarin
 control: SfMaps
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Sublayer
  
-The Sublayer in maps allows to load multiple shape files in a single container, enabling maps to display more information. 
+The sublayer in maps allows to load multiple shape files in a single container, enabling maps to display more information. 
 
 ## Adding sublayer
 
@@ -17,7 +17,7 @@ You can add multiple shape files in the [`ShapeFileLayer`](https://help.syncfusi
 
 ### Customizing sublayer
 
-Sublayer is a type of Shapefile layer, so you can add the all the properties like markers, bubbles, color mapping and legends in Sublayer also. Please refer the below link to add the Sublayer properties.
+Sublayer is a type of shapefile layer, so you can add all the properties like markers, bubbles, color mapping and legends in sublayer also. Please refer the below link to add the sublayer properties.
 
 * [`Adding Markers`](https://help.syncfusion.com/xamarin/sfmaps/getting-started?cs-save-lang=1&cs-lang=xaml#adding-marker).
 
@@ -27,11 +27,13 @@ Sublayer is a type of Shapefile layer, so you can add the all the properties lik
 
 * [`Adding Bubbles`](https://help.syncfusion.com/xamarin/sfmaps/bubblemarker#adding-bubbles).
 
+* [`Adding Data Labels`](https://help.syncfusion.com/xamarin/sfmaps/datalabels#adding-data-labels).
+
 {% tabs %}
 
 {% highlight xaml %}
 
-     <maps:SfMaps x:Name="sfmap"  BackgroundColor="White">
+     <maps:SfMaps x:Name="sfmap">
 
         <maps:SfMaps.Layers>
 
@@ -90,8 +92,6 @@ Sublayer is a type of Shapefile layer, so you can add the all the properties lik
 {% highlight c# %}
 
             SfMaps map = new SfMaps();
-
-            map.BackgroundColor = Color.White;
 
             ShapeFileLayer layer = new ShapeFileLayer();
 

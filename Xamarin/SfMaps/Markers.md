@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Markers
-description: This section describes about Map marker.
+description: This section describes about map marker.
 platform: xamarin
 control: SfMaps
 documentation: ug
@@ -78,9 +78,9 @@ Any number of markers can be added to the shape file layers using the [`Markers`
 
 Markers can be customized using the [`MarkerSettings`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~MarkerSettings.html#) property in shape file layer.
 
-### Customizing icons
+### Customizing marker icons
 
-The size, and color of marker icons can be customized using the [`IconSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarkerSetting~IconSize.html#), and [`IconColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarkerSetting~IconColor.html#) properties. 
+The size and color of marker icons can be customized using the [`IconSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarkerSetting~IconSize.html#), and [`IconColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarkerSetting~IconColor.html#) properties. 
 
 ### Icon types
 
@@ -92,13 +92,11 @@ The shape of a marker icon can be customized using the [`MarkerIcon`](https://he
 * Rectangle
 * Square
 
-The image is used to denote the marker icon as image instead of rendering the marker icon shape. It can be achieved by setting the MarkerIcon to Image, and assigning the image path to [`ImageSource`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarkerSetting~ImageSource.html) property.
-
 {% tabs %}
 
 {% highlight xml %}
 
-     <maps:SfMaps x:Name="sfmap"  BackgroundColor="White">
+     <maps:SfMaps x:Name="sfmap">
 
         <maps:SfMaps.Layers>
 
@@ -128,8 +126,6 @@ The image is used to denote the marker icon as image instead of rendering the ma
 
             SfMaps map = new SfMaps();
 
-            map.BackgroundColor = Color.White;
-
             ShapeFileLayer layer = new ShapeFileLayer();
 
             layer.Uri = "usa_state.shp";
@@ -158,15 +154,17 @@ The image is used to denote the marker icon as image instead of rendering the ma
 
 {% endtabs %}
 
-![](Images/Markers_img2.png)
+![](Images/Marker_icon_type.png)
 
 ### Setting image marker icon
+
+You can pin the image as marker icon by setting the icon type as Image and [`ImageSource`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarkerSetting~ImageSource.html) to get the image from local path.
 
 {% tabs %}
 
 {% highlight xml %}
 
-     <maps:SfMaps x:Name="sfmap"  BackgroundColor="White">
+     <maps:SfMaps x:Name="sfmap">
         
         <maps:SfMaps.Layers>
             
@@ -197,8 +195,6 @@ The image is used to denote the marker icon as image instead of rendering the ma
 {% highlight c# %}
 
             SfMaps map = new SfMaps();
-
-            map.BackgroundColor = Color.White;
 
             ShapeFileLayer layer = new ShapeFileLayer();
 
@@ -240,7 +236,7 @@ The image is used to denote the marker icon as image instead of rendering the ma
 
 {% endtabs %}
 
-![](Images/Markers_img3.png)
+![](Images/Marker_icon_type_image.png)
 
 ### Customizing labels
 

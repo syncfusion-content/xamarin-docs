@@ -13,9 +13,9 @@ The image editor control is capable of performing the image transformations such
 
 ## Rotation
 
-You can make use of the `Rotate` method of SfImageEditor to rotate the image. For each rotation image will be rotated to 90 degree towards clockwise direction.
+You can use the `Rotate` method of the image editor to rotate a image. For each rotation, image will be rotated to 90 degrees towards clockwise direction.
 
-N> Angle cannot be specified in code to alter the rotation angle of the image
+N> Angle cannot be specified in code to alter the rotation angle of the image.
 
 {% tabs %}
 
@@ -29,7 +29,7 @@ editor.Rotate();
 
 ## Flip
 
-The Image Editor control has the capability of showing the mirror image. The `Flip` method flips the image horizontally or vertically based on the `FlipDirection` specified as argument of the Flip method.
+The image editor control is capable of showing the mirror image. The `Flip` method flips the image horizontally or vertically based on the `FlipDirection` specified as argument of the flip method.
 
 N> The default flip direction is horizontal.
 

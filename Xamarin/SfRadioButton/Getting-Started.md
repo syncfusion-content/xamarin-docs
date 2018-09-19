@@ -70,7 +70,7 @@ using Syncfusion.XForms.Buttons;
 {% endhighlight %}
 {% endtabs %}
 
-### Refer SfCheckBox control with declared suffix name for Namespace
+### Refer SfRadioButton control with declared suffix name for Namespace
 
 {% tabs %}
 {% highlight xaml %}
@@ -108,7 +108,7 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-##Setting caption
+## Setting caption
 
 The radio button caption can be defined using the `Text` property of `SfRadioButton`. This caption normally describes the meaning of the radio button and it displays next to radio button.
  

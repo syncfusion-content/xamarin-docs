@@ -326,7 +326,7 @@ The detailed explanation of marker and its customization have been provided in M
 
 {% endtabs %}
 
-## DeleteTilesFromCache
+## How to delete the tiles from Cache
 
 [`DeleteTilesFromCache`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ImageryLayer~DeleteTilesFromCache.html) method used to delete the cache stored in the applications.
 

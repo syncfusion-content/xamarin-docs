@@ -310,7 +310,7 @@ The detailed explanation of marker and its customization have been provided in M
 
 ![](Images/Marker.png)
 
-## CanCacheTiles
+## Permission for the cache to be stored in Application
 
 [`CanCacheTiles`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ImageryLayer~CanCacheTiles.html) property used to decide whether the tiles should be cached or not.
 
@@ -336,7 +336,7 @@ The detailed explanation of marker and its customization have been provided in M
 
 {% endtabs %}
 
-## DeleteTilesFromCache
+## How to delete the tiles from Cache
 
 [`DeleteTilesFromCache`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ImageryLayer~DeleteTilesFromCache.html) method used to delete the cache stored in the applications.
 

@@ -73,7 +73,7 @@ The Bing Maps is a world map owned by Microsoft. As OSM, Bing Maps also provides
 
 N> The `LayerType` property of `ImageryLayer` provides support to `OSM` and `Bing Maps`. The default value of the `LayerType` property is OSM.
 
-## BingMapStyle
+## Set different bing map style
 
 The ImageryLayer provides support to the following types of Bing Maps:
 
@@ -157,7 +157,7 @@ Zooming helps you get a closer look of an area on maps for in-depth analysis. Pa
 
 ![](Images/zooming.gif)
 
-## ResetOnDoubleTap
+## Reset zooming
 
 The ImageryLayer provides support to reset the maps to the default view when you double tap the imagery layer by setting the `ResetOnDoubleTap` property to true. The default value of this property is true. This behavior can be restricted by setting the `ResetOnDoubleTap` property to false.
 
@@ -184,7 +184,7 @@ The ImageryLayer provides support to reset the maps to the default view when you
 
 {% endtabs %}
 
-## GeoCoordinates
+## Set geo coordinates points(center position)
 
 The `GeoCoordinates` property allows you view the desired area at the center on loading. By default, the `GeoCoordinates` value is (0,0). So, the latitude value "0" and longitude value "0" are shown at the center.
 
@@ -241,7 +241,7 @@ The `GeoCoordinates` property allows you view the desired area at the center on 
 
 ![](Images/Center.png)
 
-## Markers
+## Set markers in imagery layer
 
 As [`ShapeFileLayer`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer.html), markers also can be added to imagery layer. Markers can be customized using the `MarkerSettings` property in imagery layer.
 The detailed explanation of marker and its customization have been provided in Markers section.
@@ -310,9 +310,9 @@ The detailed explanation of marker and its customization have been provided in M
 
 ![](Images/Marker.png)
 
-## Cache tiles in application memory
+## Cache tile images in application memory
 
-The [`CanCacheTiles`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ImageryLayer~CanCacheTiles.html) property used to decide whether the tiles should be cached or not.
+The [`CanCacheTiles`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ImageryLayer~CanCacheTiles.html) property used to decide whether the tile images should be cached in application memory or not.
 
 {% tabs %}
 
@@ -326,9 +326,9 @@ The [`CanCacheTiles`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusi
 
 {% endtabs %}
 
-## Delete the tiles from cache
+## Clear cached tile images from application memory
 
-The [`DeleteTilesFromCache`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ImageryLayer~DeleteTilesFromCache.html) method used to delete the cache stored in the applications.
+The [`DeleteTilesFromCache`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ImageryLayer~DeleteTilesFromCache.html) method used to clear the cached tile images from  application cache memory.
 
 {% tabs %}
 

@@ -115,9 +115,9 @@ The fill color and opacity of the bubbles can be customized using the [`Fill`](h
 
 ![Bubble marker color customization](Images/BubbleFillColor.jpg)
 
-Bubble color can also be customized by [`ColorMappings`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.BubbleMarkerSetting~ColorMappingsProperty.html).
+Bubble color can be customized using the [`ColorMappings`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.BubbleMarkerSetting~ColorMappingsProperty.html) property.
 
-Maps provide two types of color mapping for bubble marker
+Maps provide the following two types of color mapping to bubble marker:
 
  * Equal color mapping
  * Range color mapping
@@ -263,7 +263,7 @@ bubbleSetting.MaxSize = 25;
 
 ![Bubble marker color customization](Images/BubbleMinMax.jpg)
 
-The following code sample gives the complete code for adding bubbles along with its customization.
+The following code sample demonstrates how to add bubbles to maps and customize them
 
 {% tabs %}
 

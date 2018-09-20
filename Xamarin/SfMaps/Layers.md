@@ -9,9 +9,9 @@ documentation: ug
 
 # Layers
 
-Maps is maintained through [`Layers`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.SfMaps~LayersProperty.html) and it can accommodate one or more layers.
+The maps control is maintained through [`Layers`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.SfMaps~LayersProperty.html); a map can accommodate one or more layers.
 
-Maps consists of two layers
+The maps control consists the following two layers:
 
 * Imagery layer
 
@@ -19,17 +19,17 @@ Maps consists of two layers
 
 ## Imagery layer
 
-[`MapsProvider`](https://help.syncfusion.com/xamarin/sfmaps/mapsprovider) topic explains about the imagery layer.
+The [`MapsProvider`](https://help.syncfusion.com/xamarin/sfmaps/mapsprovider) section explains about the imagery layer.
 
 ## Shape file layer
 
-Through shape file layer, custom shape files can be rendered and the shapes can be customized.
+Using shape file layer, custom shape files can be rendered and the shapes can be customized.
 
 ### Shape settings
 
-The shape settings define basic customization options for shapes in a map.
+This section defines how to customize the shapes in a map.
 
-You can customize the shapes's fill, stroke, and stroke thickness by using the [`ShapeFill`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeSetting~ShapeFill.html#), [`ShapeStroke`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeSetting~ShapeStroke.html#),[`ShapeStrokeThickness`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeSetting~ShapeStrokeThickness.html#) properties.
+You can customize a shape's fill, stroke, and stroke thickness using the [`ShapeFill`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeSetting~ShapeFill.html#), [`ShapeStroke`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeSetting~ShapeStroke.html#),[`ShapeStrokeThickness`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeSetting~ShapeStrokeThickness.html#) properties.
 
 Refer to the following code sample for customizing shapes.
 
@@ -225,9 +225,9 @@ layer.ShapeSettings = shapeSetting;
 
 ### Events
 
-The [`ShapeSelected`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShapeSelected_EV.html) event will be triggered when the map shapes are selected. A corresponding model data is passed as an argument. ShapeSelected event has been deprecated. 
+The [`ShapeSelected`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShapeSelected_EV.html) event will be triggered when a map shape is selected. A corresponding model data is passed as an argument. The ShapeSelected event has been deprecated.
 
-[`ShapeSelectionChanged`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShapeSelectionChanged_EV.html) event will be triggered when the map shapes selection changed with corresponding argument as model [`Data`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeSelectedEventArgs~Data.html) and the selection state of the shape using [`IsSelected`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeSelectedEventArgs~IsSelected.html) property
+The [`ShapeSelectionChanged`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShapeSelectionChanged_EV.html) event will be triggered when changing the the map shapes selection with corresponding argument as model [`Data`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeSelectedEventArgs~Data.html).Selection state of the shape will be changed using the  [`IsSelected`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeSelectedEventArgs~IsSelected.html) property
 
 {% tabs %}
 
@@ -252,18 +252,18 @@ The [`ShapeSelected`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusi
 
 ## Sublayer
 
-The shape layers is the core layer of the map. The multiple layers can be added in the shape layers as Sublayers within the shape layers.
+The shape layers are the core layers of the maps. Multiple layers can be added to the shape layers as sublayers within the shape layers.
 
 ### Adding multiple layers in the map
 
-The multiple layer can be added in the maps using [`Sublayer`]().
+Multiple layers can be added to the maps using [`Sublayer`](https://help.syncfusion.com/xamarin/sfmaps/sublayer).
 
 
-### What layer to be displayed in the view
+### Displaying layer in the view
 
-[`BaseMapIndex`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.SfMaps~BaseMapIndexProperty.html) property which allows to drilldown from the main layer to another layer.
+The [`BaseMapIndex`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.SfMaps~BaseMapIndexProperty.html) property allows drill-down from main layer to another layer.
 
-In ShapeSelected event, *BaseMapIndex* property has been used to change the layer when asia shape selected.
+In the ShapeSelected event, the *BaseMapIndex* property has been used to change the layer when Asia shape is selected.
 
 {% tabs %}
 

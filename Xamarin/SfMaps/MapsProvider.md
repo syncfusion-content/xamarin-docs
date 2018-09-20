@@ -310,9 +310,9 @@ The detailed explanation of marker and its customization have been provided in M
 
 ![](Images/Marker.png)
 
-## Permission for the cache to be stored in application
+## Store the cache in application
 
-[`CanCacheTiles`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ImageryLayer~CanCacheTiles.html) property used to decide whether the tiles should be cached or not.
+The [`CanCacheTiles`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ImageryLayer~CanCacheTiles.html) property used to decide whether the tiles should be cached or not.
 
 {% tabs %}
 
@@ -326,9 +326,9 @@ The detailed explanation of marker and its customization have been provided in M
 
 {% endtabs %}
 
-## How to delete the tiles from Cache
+## Delete the tiles from Cache
 
-[`DeleteTilesFromCache`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ImageryLayer~DeleteTilesFromCache.html) method used to delete the cache stored in the applications.
+The [`DeleteTilesFromCache`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ImageryLayer~DeleteTilesFromCache.html) method used to delete the cache stored in the applications.
 
 {% tabs %}
 
@@ -353,13 +353,13 @@ The detailed explanation of marker and its customization have been provided in M
 
 ## Events
 
-[`ZoomLevelChanging`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs.html) event triggers when zoom level changed. Following arguments can be get from the ZoomLevelChanging event .
+The [`ZoomLevelChanging`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs.html) event triggers when zoom level changed. Following arguments can be get from the ZoomLevelChanging event .
 
-* [`Cancel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs~Cancel.html) - Used to cancel the zooming.
+* [`Cancel`] (https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs~Cancel.html) : Used to cancel the zooming.
 
-* [`PreviousLevel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs~PreviousLevel.html) - Returns the previous level after the zooming.
+* [`PreviousLevel`] (https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs~PreviousLevel.html) : Returns the previous level after the zooming.
 
-* [`CurrentLevel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs~CurrentLevel.html) - Returns the current level to be zoomed.
+* [`CurrentLevel`] (https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs~CurrentLevel.html) : Returns the current level to be zoomed.
 
 {% tabs %}
 

@@ -942,7 +942,7 @@ private void FormsSchedule_CellTapped(object sender, Syncfusion.SfSchedule.XForm
 ![](monthview_images/selectionindicatorcolor.png)
 
 >**NOTE**
-This support won't apply for current day indicator, you can use `TodayBackground` property to customize the same.
+This support won't apply for current day indicator.
 
 ### Selection customization using style
 You can customize the month cell selection by using [SelectionStyle](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~SelectionStyle.html) property of `SfSchedule`.

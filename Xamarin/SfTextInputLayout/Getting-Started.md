@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains the steps required to configure the text input layout control with floating label, icons, password toggle, and assistive labels. This section covers only the minimal features needeed to get started with the text input layout control.
+This section explains the steps required to configure the text input layout control with floating label, icons, password toggle, and assistive labels. This section covers only the minimal features needed to get started with the text input layout control.
 
 ## Adding text input layout reference
 
@@ -48,7 +48,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ### Universal Windows Platform (UWP)
 
-To deploy the text input layout in `Release` mode, initialize the core assemblies in the App.xaml.cs file in the UWP project as demonstrated in the dollowing code samples.
+To deploy the text input layout in `Release` mode, initialize the core assemblies in the App.xaml.cs file in the UWP project as demonstrated in the following code samples.
 
 {% highlight C# %} 
 

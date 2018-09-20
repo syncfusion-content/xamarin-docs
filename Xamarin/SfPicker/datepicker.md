@@ -188,20 +188,20 @@ Device.BeginInvokeOnMainThread(() =>
 {
         if (Date.Count == 3)
         {
-            bool isupdate = false;
+            bool flag = false;
             if (e.OldValue != null && e.NewValue != null && (e.OldValue as ObservableCollection<object>).Count == (e.NewValue as ObservableCollection<object>).Count)
             {
                 if (!object.Equals((e.OldValue as IList)[0], (e.NewValue as IList)[0]))
                 {
-                    isupdate = true;
+                    flag = true;
                 }
                 if (!object.Equals((e.OldValue as IList)[2], (e.NewValue as IList)[2]))
                 {
-                    isupdate = true;
+                    flag = true;
                 }
             }
 
-            if (isupdate)
+            if (flag)
             {
 
                 ObservableCollection<object> days = new ObservableCollection<object>();
@@ -216,11 +216,11 @@ Device.BeginInvokeOnMainThread(() =>
                     else
                         days.Add(j.ToString());
                 }
-                ObservableCollection<object> oldvalue = new ObservableCollection<object>();
+                ObservableCollection<object> PreviousValue = new ObservableCollection<object>();
 
                 foreach (var item in e.NewValue as IList)
                 {
-                    oldvalue.Add(item);
+                    PreviousValue.Add(item);
                 }
                 if (days.Count > 0)
                 {
@@ -228,14 +228,14 @@ Device.BeginInvokeOnMainThread(() =>
                     Date.Insert(1, days);
                 }
 
-                if ((Date[1] as IList).Contains(oldvalue[1]))
+                if ((Date[1] as IList).Contains(PreviousValue[1]))
                 {
-                    this.SelectedItem = oldvalue;
+                    this.SelectedItem = PreviousValue;
                 }
                 else
                 {
-                    oldvalue[1] = (Date[1] as IList)[(Date[1] as IList).Count - 1];
-                    this.SelectedItem = oldvalue;
+                    PreviousValue[1] = (Date[1] as IList)[(Date[1] as IList).Count - 1];
+                    this.SelectedItem = PreviousValue;
                 }
             }
         }

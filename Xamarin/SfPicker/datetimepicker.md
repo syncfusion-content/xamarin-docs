@@ -255,21 +255,21 @@ public void UpdateDays(ObservableCollection<object> Date, SelectionChangedEventA
         {
                 if (Date.Count == 5)
                 {
-                    bool isupdate = false;
+                    bool flag = false;
                     if (e.OldValue != null && e.NewValue != null && (e.OldValue is ObservableCollection<object>) && (e.OldValue as ObservableCollection<object>).Count >0)
                     {
                         if (!object.Equals((e.OldValue as IList)[1], (e.NewValue as IList)[1]))
                         {
-                            isupdate = true;
+                            flag = true;
                         }
 
                         if (!object.Equals((e.OldValue as IList)[0], (e.NewValue as IList)[0]))
                         {
-                            isupdate = true;
+                            flag = true;
                         }
                     }
 
-                    if (isupdate)
+                    if (flag)
                     {
                         ObservableCollection<object> days = new ObservableCollection<object>();
                         int month = DateTime.ParseExact(Months[(e.NewValue as IList)[1].ToString()], "MMMM", CultureInfo.InvariantCulture).Month;
@@ -284,11 +284,11 @@ public void UpdateDays(ObservableCollection<object> Date, SelectionChangedEventA
                                 days.Add(j.ToString());
                         }
 
-                        ObservableCollection<object> oldvalue = new ObservableCollection<object>();
+                        ObservableCollection<object> PreviousValue = new ObservableCollection<object>();
 
                         foreach (var item in e.NewValue as IList)
                         {
-                            oldvalue.Add(item);
+                            PreviousValue.Add(item);
                         }
 
                         if (days.Count > 0)
@@ -297,14 +297,14 @@ public void UpdateDays(ObservableCollection<object> Date, SelectionChangedEventA
                             Date.Insert(2, days);
                         }
 
-                        if ((Date[2] as IList).Contains(oldvalue[2]))
+                        if ((Date[2] as IList).Contains(PreviousValue[2]))
                         {
-                            this.SelectedItem = oldvalue;
+                            this.SelectedItem = PreviousValue;
                         }
                         else
                         {
-                            oldvalue[2] = (Date[2] as IList)[(Date[2] as IList).Count - 1];
-                            this.SelectedItem = oldvalue;
+                            PreviousValue[2] = (Date[2] as IList)[(Date[2] as IList).Count - 1];
+                            this.SelectedItem = PreviousValue;
                         }
                     }
                 }

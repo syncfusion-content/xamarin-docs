@@ -9,15 +9,15 @@ documentation: ug
 
 # Overview
 
-Essential Text input layout for Xamarin.Forms adds decorative elements like floating label, icons, and assistive labels on top of input views such as [`SfMaskedEdit`](https://www.syncfusion.com/products/xamarin/masked-input-text), [`SfNumericTextBox`](https://www.syncfusion.com/products/xamarin/numerictextbox), [`Entry`](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/entry) and [`Editor`](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/editor) controls.
+The text input layout control for Xamarin.Forms adds decorative elements such as floating labels, icons, and assistive labels on the top of input views such as [`SfMaskedEdit`](https://www.syncfusion.com/products/xamarin/masked-input-text), [`SfNumericTextBox`](https://www.syncfusion.com/products/xamarin/numerictextbox), [`Entry`](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/entry), and [`Editor`](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/editor) controls.
 
 ![](Overview_images/inputlayout_forms.png)
 
 ## Key features
-* Displays floating label when the input view is focused.
-* Displays error label.
-* Supports filled and outlined container type.
+* Displays floating labels when the input view is focused.
+* Displays error labels.
+* Supports filled and outlined container types.
 * Displays leading and trailing icons.
-* Displays help label.
+* Displays help labels.
 * Displays maximum character count.
-* Password visibility toggling.
+* Toggles password visibility.

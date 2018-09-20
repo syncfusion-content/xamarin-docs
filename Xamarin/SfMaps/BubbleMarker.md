@@ -79,7 +79,8 @@ The [`ValuePath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.S
 
 ## Customizing bubble marker
 
-### Customizing color
+
+### Customizing fill color
 
 The fill color and opacity of the bubbles can be customized using the [`Fill`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.BubbleMarkerSetting~Fill.html#) and [`Opacity`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.BubbleMarkerSetting~Opacity.html#) properties.
 
@@ -219,7 +220,7 @@ It is used to differentiate the bubble fill based on its underlying value and co
 
 ![Bubble marker color customization](Images/EqualColorMapping_Bubble.jpg)
 
-### Customizing size
+### Customizing bubble size
 
 The size of the bubbles depends on the data bound to the [`ValuePath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.BubbleMarkerSetting~ValuePath.html#). The maximum and minimum sizes of the bubbles can be customized using [`MaxSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.BubbleMarkerSetting~MaxSize.html#) and [`MinSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.BubbleMarkerSetting~MinSize.html#) properties.
 

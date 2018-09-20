@@ -232,8 +232,6 @@ The [`ItemMargin`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.
 
 {% endtabs %}
 
-{% tabs %}
-
 ![](Images/LegendItemMargin.jpg)
 
 ## Legend label
@@ -511,7 +509,7 @@ ViewModel viewModel = new ViewModel();
 
             legendSetting.LegendPosition = new Point(50, 20);
 
-            legendSetting.LegendType = LegendType.Bubbles;
+            legendSetting.LegendType = LegendType.Layers;
 
             legendSetting.FontFamily ="algerian.ttf";
 

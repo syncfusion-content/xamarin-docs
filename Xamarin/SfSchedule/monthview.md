@@ -927,12 +927,12 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
     return base.FinishedLaunching(app, options);
 }
 
-void FormsSchedule_CellTapped(object sender, Syncfusion.SfSchedule.XForms.CellTappedEventArgs e)
+private void FormsSchedule_CellTapped(object sender, Syncfusion.SfSchedule.XForms.CellTappedEventArgs e)
 {
     var fieldInfo = GetField(SelectionSamplePage.FormsSfSchedule.GetType(), "nativeObject");
     var nativeSchedule = fieldInfo.GetValue(SelectionSamplePage.FormsSfSchedule);
     var monthViewSettings = new Syncfusion.SfSchedule.iOS.MonthViewSettings();
-    // Setting Month cell selection indiactor color
+    // Setting Month cell selection indicator color
     monthViewSettings.SelectionIndicatorColor = UIColor.Red;
     (nativeSchedule as SFSchedule).MonthViewSettings = monthViewSettings;
 }

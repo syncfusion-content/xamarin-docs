@@ -9,29 +9,28 @@ documentation: ug
 
 # Getting Started
 
-This section explains you the steps required to configure the text input layout control with floating label, icons, password toggle and assistive labels. This section covers only the minimal features that you need to know to get started with text input layout control.
+This section explains the steps required to configure the text input layout control with floating label, icons, password toggle, and assistive labels. This section covers only the minimal features needeed to get started with the text input layout control.
 
-## Adding Text input layout Reference
+## Adding text input layout reference
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org). To add text input layout control to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.Core]((https://www.nuget.org/packages/Syncfusion.Xamarin.Core), and then install it.
+Syncfusion components for Xamarin.Forms are available in [nuget.org](https://www.nuget.org). To add the text input layout control to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.Core]((https://www.nuget.org/packages/Syncfusion.Xamarin.Core), and then install it.
 
 ![](Getting-Started_images/textInput_getting_img1.png)
 
-To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows).
+To learn more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows).
 
 
-N> Install the same version of the core NuGet in all the projects. Also, the text input layout control will be available in core NuGet from v16.3.0.x onwards.
+N> Install the same version of the core NuGet in all the projects. The text input layout control will be available in core NuGet from v16.3.0.x onwards.
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [`link`](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> To start with v16.2.0.x, you have to include a license key in your project if you reference Syncfusion assemblies from the trial setup or NuGet feed. Please refer to this [documentation](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your Xamarin applications and using our components.
 
-## Launching the application on each platform with text input layout
+## Launching an application on each platform with text input layout
 
-To use the text input layout inside an application, each platform application requires some additional configurations. The configurations vary from platform to platform and is discussed in the following sections:
+To use the text input layout inside an application, each platform application requires some additional configurations. The configurations vary from platform to platform and are discussed in the following sections:
 
 ### iOS
 
-To launch the text input layout in iOS, call the `SfTextInputLayoutRenderer.Init()`
-method in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework initialization and before the `LoadApplication` method is called as demonstrated in the following code sample:
+To launch the text input layout in iOS, call the `SfTextInputLayoutRenderer.Init()` method in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework has been initialized and before the `LoadApplication` method is called as demonstrated in the following code sample.
 
 
 {% highlight C# %} 
@@ -49,7 +48,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ### Universal Windows Platform (UWP)
 
-To deploy the text input layout in `Release` mode, you need to initialize the core assemblies in App.xaml.cs in UWP project as shown in the below code snippets.
+To deploy the text input layout in `Release` mode, initialize the core assemblies in the App.xaml.cs file in the UWP project as demonstrated in the dollowing code samples.
 
 {% highlight C# %} 
 
@@ -72,9 +71,9 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 Android platform does not require any additional configuration to render the text input layout control.
 
-## Initialize Text input layout
+## Initializing text input layout
 
-Import the SfTextInputLayout namespace as shown below in your respective page,
+Import the SfTextInputLayout namespace in respective page as demonstrated in the following code sample.
 
 {% tabs %} 
 
@@ -92,8 +91,7 @@ using Syncfusion.XForms.TextInputLayout;
 
 {% endtabs %}
 
-
-Add any input view controls like `Entry`, `Editor`, `SfNumericTextBox` or `SfMaskedEdit` and add hint label (floating label).
+Add any input view control such as `Entry`, `Editor`, `SfNumericTextBox`, or `SfMaskedEdit`, and add hint label (floating label).
 
 {% tabs %} 
 
@@ -116,15 +114,14 @@ inputLayout.InputView = new Entry();
 
 {% endtabs %}
 
-
-Run the project and check if you get following output to make sure you have configured your project properly to add text input layout.
+Run the project, and check if you get following output to make sure that the project has been configured properly to add the text input layout control.
 
 ![](Getting-Started_images/textInput_getting_img2.png)
 ![](Getting-Started_images/textInput_getting_img3.png)
 
-## Enable password visibility toggle.
+## Enabling password visibility toggle
 
-Password visibility toggle is used to show or hide the visibility of characters in the text view added to the control. You can enable this toggle by setting `EnablePasswordVisibilityToggle` property to true.
+The password visibility toggle is used to show or hide the visibility of characters in the text view added to the control. You can enable this toggle by setting the `EnablePasswordVisibilityToggle` property to true.
 
 {% tabs %} 
 
@@ -154,13 +151,13 @@ inputLayout.InputView = new Entry() { Text = "John" };
 
 ## Adding custom icons
 
-Any custom icons can be added in text input layout, either at the leading edge or at the trailing edge of input view. Events / commands related to the custom icons should be handled at the application level.
+Any custom icons can be added to the text input layout control at the leading edge or the trailing edge of input view. The events and commands related to the custom icons should be handled at the application level.
 
 Unicode or font icons for labels can be displayed as icons.
 
 ### Leading view
 
-Label is added as a leading icon for the input view and it can be positioned either inside or outside of the container of input view by setting `LeadingViewPosition` property, by default it will be positioned outside.
+A label can be added as a leading icon for the input view and positioned either inside or outside of the container of input view by setting the `LeadingViewPosition` property. By default, it will be positioned outside.
 
 {% tabs %} 
 
@@ -199,7 +196,7 @@ inputLayout.InputView = new Entry() { Text = "John" };
 
 ### Trailing  view
 
-Label is added as a trailing icon for the input view and it can be positioned either inside or outside of the container of input view by setting `TrailingViewPosition` property, by default it will be positioned inside.
+A label can be added as a trailing icon for the input view and positioned either inside or outside of the container of input view by setting the `TrailingViewPosition` property. By default, it will be positioned inside.
 
 % tabs %} 
 
@@ -237,11 +234,11 @@ inputLayout.InputView = new Entry() { Text = "John" };
 
 ## Adding assistive labels
 
-Assistive labels provide additional detail about text entered into input view controls.
+Assistive labels provide additional information about text entered into the input view controls.
 
 ### Helper text
 
-Helper text conveys additional guidance about the input field, such as how it will be used. It can be set by `HelperText` property.
+Helper text conveys additional guidance about the input field such as how it will be used. It can be set using the `HelperText` property.
 
 {% tabs %} 
 
@@ -266,14 +263,14 @@ inputLayout.InputView = new Entry() { Text = "John" };
 
 {% endtabs %}
 
-Helper text visibility can be disabled by setting `ShowHelperText` property as false, by default it is enabled.
+The visibility of the helper text can be disabled by setting the `ShowHelperText` property to false. By default, it is set to true.
 
 ![](Getting-Started_images/textInput_getting_img10.png)
 
 ### Error message
 
-When text input isn’t accepted, an error message can display instructions on how to fix it. Error messages are displayed below the input line, replacing helper text until fixed. It can be set by 
-`ErrorText` property, but it will be displayed only when set the `HasError` property as `true`.
+When the text input is not accepted, an error message will display instructions to fix it. Error messages will be displayed below the input line till entering the correct text. It can be set using the 
+`ErrorText` property, but it will be displayed only when the `HasError` property is set to `true`.
 
 {% tabs %} 
 
@@ -305,11 +302,11 @@ inputLayout.InputView = new Entry();
 
 ![](Getting-Started_images/textInput_getting_img11.png)
 
-N> Error validations has to be done in application level.
+N> Error validations should be done in the application level.
 
 ### Character counter
 
-Character counters should be used if there is a character limit.  Character limit can be set by `CharMaxLength` property and character counter can be enabled by setting `ShowCharCount` property as true.
+Character counter is used when you need to limit the characters. Character limit can be set using the `CharMaxLength` property. The character counter can be enabled by setting the `ShowCharCount` property to true.
 
 {% tabs %} 
 
@@ -341,11 +338,11 @@ inputLayout.InputView = new Entry(){Text="John"};
 
 ## Container type
 
-Containers improve the discoverability of input view by creating contrast between the input view and assistive elements.
+Containers improve the discoverability of input view by creating a contrast between the input view and assistive elements.
 
 ### Filled
 
-Background of the input view will be filled with container Color and its stroke (at the bottom edge) color and thickness will be changed based on its states. It can be enabled by setting `ContainerType` property as `Filled`.
+The background of the input view will be filled with container color, and its stroke (at the bottom edge) color and thickness will be changed based on its states. It can be enabled by setting the `ContainerType` property to `Filled`.
 
 {% tabs %} 
 
@@ -374,7 +371,7 @@ inputLayout.InputView = new Entry() { Text = "John" };
 
 ### Outlined
 
-When setting `ContainerType` property is set as `Outlined`, background of the container will be transparent, and the container will be covered with a rounded corner border.
+When setting the `ContainerType` property to `Outlined`, the background of the container will be transparent, and the container will be covered with a rounded-corner border.
 
 {% tabs %} 
 
@@ -402,9 +399,9 @@ inputLayout.InputView = new Entry() { Text = "John" };
 
 ![](Getting-Started_images/textInput_getting_img14.png)
 
-## Customizing the colors
+## Customizing colors
 
-Assistive elements colors can be customized by setting the following properties `FocusedColor`, `UnfocusedColor`, `ErrorColor` and `ContainerBackgroundColor`. 
+The colors of the assistive elements can be customized by setting the following properties: `FocusedColor`, `UnfocusedColor`, `ErrorColor`, and `ContainerBackgroundColor`.
 
 {% tabs %} 
 
@@ -441,3 +438,4 @@ inputLayout.InputView = new Entry() { Text = "John" };
 ![](Getting-Started_images/textInput_getting_img15.png)
 ![](Getting-Started_images/textInput_getting_img16.png)
 ![](Getting-Started_images/textInput_getting_img17.png)
+

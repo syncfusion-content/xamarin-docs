@@ -23,17 +23,17 @@ The maps control uses `imagery layer` to display the tile images from the OSM se
 
 {% highlight xml %}
 
-<maps:SfMaps.Layers>
-    <maps:ImageryLayer/>
-</maps:SfMaps.Layers>
+        <maps:SfMaps.Layers>
+            <maps:ImageryLayer/>
+        </maps:SfMaps.Layers>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-  SfMaps maps = new SfMaps();
-  ImageryLayer layer = new ImageryLayer();
-  maps.Layers.Add(layer);
+        SfMaps maps = new SfMaps();
+        ImageryLayer layer = new ImageryLayer();
+        maps.Layers.Add(layer);
 
 {% endhighlight %}
 
@@ -51,19 +51,19 @@ The Bing Maps is a world map owned by Microsoft. As OSM, Bing Maps also provides
 
 {% highlight xml %}
 
-  <maps:SfMaps.Layers>
-      <maps:ImageryLayer LayerType="Bing" BingMapKey="Your bing map key"/>
-   </maps:SfMaps.Layers>
+    <maps:SfMaps.Layers>
+        <maps:ImageryLayer LayerType="Bing" BingMapKey="Your bing map key"/>
+    </maps:SfMaps.Layers>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
- SfMaps maps = new SfMaps();
-ImageryLayer layer = new ImageryLayer();
-layer.LayerType = LayerType.Bing;
-layer.BingMapKey = "Your bing map key";
-maps.Layers.Add(layer);
+    SfMaps maps = new SfMaps();
+    ImageryLayer layer = new ImageryLayer();
+    layer.LayerType = LayerType.Bing;
+    layer.BingMapKey = "Your bing map key";
+    maps.Layers.Add(layer);
 
 {% endhighlight %}
 
@@ -95,22 +95,22 @@ The Aerial view displays the satellite images to highlight the roads and major l
 
 {% highlight xml %}
 
-<maps:SfMaps.Layers>
-    <maps:ImageryLayer LayerType="Bing" 
-                       BingMapStyle="Aerial"
-                       BingMapKey=" Your bing map key "/>
-</maps:SfMaps.Layers>
+        <maps:SfMaps.Layers>
+            <maps:ImageryLayer LayerType="Bing" 
+                            BingMapStyle="Aerial"
+                            BingMapKey=" Your bing map key "/>
+        </maps:SfMaps.Layers>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfMaps maps = new SfMaps();
-    ImageryLayer layer = new ImageryLayer();
-    layer.LayerType = LayerType.Bing;
-    layer.BingMapStyle = BingMapStyle.Aerial;
-    layer.BingMapKey = "Your bing map key ";
-    maps.Layers.Add(layer);
+        SfMaps maps = new SfMaps();
+        ImageryLayer layer = new ImageryLayer();
+        layer.LayerType = LayerType.Bing;
+        layer.BingMapStyle = BingMapStyle.Aerial;
+        layer.BingMapKey = "Your bing map key ";
+        maps.Layers.Add(layer);
 
 {% endhighlight %}
 
@@ -126,22 +126,22 @@ The AerialWithLabel view displays the Aerial map with labels for continent, coun
 
 {% highlight xml %}
 
-<maps:SfMaps.Layers>
-    <maps:ImageryLayer LayerType="Bing" 
-                       BingMapStyle="AerialWithLabels"
-                      BingMapKey=" Your bing map key "/>
-</maps:SfMaps.Layers>
+        <maps:SfMaps.Layers>
+            <maps:ImageryLayer LayerType="Bing" 
+                            BingMapStyle="AerialWithLabels"
+                            BingMapKey=" Your bing map key "/>
+        </maps:SfMaps.Layers>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfMaps maps = new SfMaps();
-    ImageryLayer layer = new ImageryLayer();
-    layer.LayerType = LayerType.Bing;
-    layer.BingMapStyle = BingMapStyle.AerialWithLabels;
-    layer.BingMapKey = "Your bing map key ";
-    maps.Layers.Add(layer);
+        SfMaps maps = new SfMaps();
+        ImageryLayer layer = new ImageryLayer();
+        layer.LayerType = LayerType.Bing;
+        layer.BingMapStyle = BingMapStyle.AerialWithLabels;
+        layer.BingMapKey = "Your bing map key ";
+        maps.Layers.Add(layer);
 
 {% endhighlight %}
 
@@ -165,20 +165,20 @@ The ImageryLayer provides support to reset the maps to the default view when you
 
 {% highlight xml %}
 
-<maps:SfMaps>
-   <maps:SfMaps.Layers>
-        <maps:ImageryLayer ResetOnDoubleTap="True"/>
-    </maps:SfMaps.Layers>
-</maps:SfMaps>
+        <maps:SfMaps>
+        <maps:SfMaps.Layers>
+                <maps:ImageryLayer ResetOnDoubleTap="True"/>
+            </maps:SfMaps.Layers>
+        </maps:SfMaps>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfMaps maps = new SfMaps();
-    ImageryLayer layer = new ImageryLayer();
-    layer.ResetOnDoubleTap = true;
-    maps.Layers.Add(layer);
+        SfMaps maps = new SfMaps();
+        ImageryLayer layer = new ImageryLayer();
+        layer.ResetOnDoubleTap = true;
+        maps.Layers.Add(layer);
 
 {% endhighlight %}
 
@@ -192,11 +192,11 @@ The `GeoCoordinates` property allows you view the desired area at the center on 
 
 {% highlight xml %}
 
-<maps:SfMaps ZoomLevel="2">
-        <maps:SfMaps.Layers>
-            <maps:ImageryLayer GeoCoordinates="69.07,-37.08"/>
-        </maps:SfMaps.Layers>
-    </maps:SfMaps>
+        <maps:SfMaps ZoomLevel="2">
+                <maps:SfMaps.Layers>
+                    <maps:ImageryLayer GeoCoordinates="69.07,-37.08"/>
+                </maps:SfMaps.Layers>
+            </maps:SfMaps>
 
 {% endhighlight %}
 
@@ -219,11 +219,11 @@ The `GeoCoordinates` property allows you view the desired area at the center on 
 
 {% highlight xml %}
 
-<maps:SfMaps ZoomLevel="2">
-    <maps:SfMaps.Layers>
-        <maps:ImageryLayer GeoCoordinates="0,0"/>
-    </maps:SfMaps.Layers>
-</maps:SfMaps>
+        <maps:SfMaps ZoomLevel="2">
+            <maps:SfMaps.Layers>
+                <maps:ImageryLayer GeoCoordinates="0,0"/>
+            </maps:SfMaps.Layers>
+        </maps:SfMaps>
 
 {% endhighlight %}
 
@@ -250,24 +250,24 @@ The detailed explanation of marker and its customization have been provided in M
 
 {% highlight xml %}
 
-<maps:ImageryLayer  >
-    <maps:ImageryLayer.MarkerSettings>
-        <maps:MapMarkerSetting IconColor="Red" 
-                               IconSize="13" MarkerIcon="Diamond"/>
-    </maps:ImageryLayer.MarkerSettings>
-                <maps:ImageryLayer.Markers>
-                    <maps:MapMarker  Label="United States" Latitude="40"
-                                     Longitude= "-101"/>
-                    <maps:MapMarker Label="Brazil" Latitude="-15.7833" 
-                                    Longitude= "-52" />
-                    <maps:MapMarker Label="Congo" Latitude="-1.6" 
-                                    Longitude= "24.4" />
-                    <maps:MapMarker Label="Kazakhstan" Latitude="49.9" 
-                                    Longitude= "72.23" />
-                    <maps:MapMarker Label="Australia" Latitude="-20.54"
-                                    Longitude= "134.10" />
-               </maps:ImageryLayer.Markers>
-        </maps:ImageryLayer>
+        <maps:ImageryLayer  >
+            <maps:ImageryLayer.MarkerSettings>
+                <maps:MapMarkerSetting IconColor="Red" 
+                                    IconSize="13" MarkerIcon="Diamond"/>
+            </maps:ImageryLayer.MarkerSettings>
+                        <maps:ImageryLayer.Markers>
+                            <maps:MapMarker  Label="United States" Latitude="40"
+                                            Longitude= "-101"/>
+                            <maps:MapMarker Label="Brazil" Latitude="-15.7833" 
+                                            Longitude= "-52" />
+                            <maps:MapMarker Label="Congo" Latitude="-1.6" 
+                                            Longitude= "24.4" />
+                            <maps:MapMarker Label="Kazakhstan" Latitude="49.9" 
+                                            Longitude= "72.23" />
+                            <maps:MapMarker Label="Australia" Latitude="-20.54"
+                                            Longitude= "134.10" />
+                    </maps:ImageryLayer.Markers>
+                </maps:ImageryLayer>
 
 {% endhighlight %}
 
@@ -310,7 +310,7 @@ The detailed explanation of marker and its customization have been provided in M
 
 ![](Images/Marker.png)
 
-## Store the cache in application
+## Cache tiles in application memory
 
 The [`CanCacheTiles`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ImageryLayer~CanCacheTiles.html) property used to decide whether the tiles should be cached or not.
 
@@ -326,7 +326,7 @@ The [`CanCacheTiles`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusi
 
 {% endtabs %}
 
-## Delete the tiles from Cache
+## Delete the tiles from cache
 
 The [`DeleteTilesFromCache`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ImageryLayer~DeleteTilesFromCache.html) method used to delete the cache stored in the applications.
 
@@ -355,11 +355,11 @@ The [`DeleteTilesFromCache`](https://help.syncfusion.com/cr/cref_files/xamarin/S
 
 The [`ZoomLevelChanging`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs.html) event triggers when zoom level changed. Following arguments can be get from the ZoomLevelChanging event .
 
-* [`Cancel`] (https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs~Cancel.html) : Used to cancel the zooming.
+* [`Cancel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs~Cancel.html) : Used to cancel the zooming.
 
-* [`PreviousLevel`] (https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs~PreviousLevel.html) : Returns the previous level after the zooming.
+* [`PreviousLevel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs~PreviousLevel.html) : Returns the previous level after the zooming.
 
-* [`CurrentLevel`] (https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs~CurrentLevel.html) : Returns the current level to be zoomed.
+* [`CurrentLevel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs~CurrentLevel.html) : Returns the current level to be zoomed.
 
 {% tabs %}
 

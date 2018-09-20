@@ -40,12 +40,14 @@ The legends can be made visible by setting the [`ShowLegend`](https://help.syncf
 
 {% endtabs %}
 
+
 ## Legend type
 
 The [`LegendType`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLegendSetting~LegendTypeProperty.html) property is used to display the shapes and bubble legends in maps.
 
 * Layers
 * Bubbles
+
 
 ## Legend position
 
@@ -85,6 +87,7 @@ The legend items will be placed in multiple rows if size of the total legend exc
 {% endtabs %}
 
 ![](Images/LegendWrapping.jpg)
+
 
 ## Legend alignment
 
@@ -134,33 +137,33 @@ The icon size of a legend can be customized using the [`IconSize`](https://help.
 
 {% highlight xml %}
 
-<maps:ShapeFileLayer.LegendSettings>
+    <maps:ShapeFileLayer.LegendSettings>
 
-<maps:MapLegendSetting ShowLegend="True" LegendPosition="75,90">
+    <maps:MapLegendSetting ShowLegend="True" LegendPosition="75,90">
 
-<maps:MapLegendSetting.IconSize>
+    <maps:MapLegendSetting.IconSize>
 
-<Size Width="20" Height="20"/>
+    <Size Width="20" Height="20"/>
 
-</maps:MapLegendSetting.IconSize>
+    </maps:MapLegendSetting.IconSize>
 
-</maps:MapLegendSetting>
+    </maps:MapLegendSetting>
 
-</maps:ShapeFileLayer.LegendSettings>
+    </maps:ShapeFileLayer.LegendSettings>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-MapLegendSetting legendSetting = new MapLegendSetting();
+    MapLegendSetting legendSetting = new MapLegendSetting();
 
-legendSetting.ShowLegend = true;
+    legendSetting.ShowLegend = true;
 
-legendSetting.LegendPosition = new Point(75, 90);
+    legendSetting.LegendPosition = new Point(75, 90);
 
-legendSetting.IconSize = new Size(20, 20);
+    legendSetting.IconSize = new Size(20, 20);
 
-layer.LegendSettings = legendSetting;
+    layer.LegendSettings = legendSetting;
 
 {% endhighlight %}
 
@@ -172,33 +175,34 @@ The icon shape can be customized using the [`LegendIcon`](https://help.syncfusio
 
 {% highlight xml %}
 
-<maps:ShapeFileLayer.LegendSettings>
+    <maps:ShapeFileLayer.LegendSettings>
 
-<maps:MapLegendSetting ShowLegend="True" LegendType="Bubbles" LegendIcon="Diamond">
+    <maps:MapLegendSetting ShowLegend="True" LegendType="Bubbles" LegendIcon="Diamond">
 
-</maps:MapLegendSetting>
+    </maps:MapLegendSetting>
 
-</maps:ShapeFileLayer.LegendSettings>
+    </maps:ShapeFileLayer.LegendSettings>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-MapLegendSetting legendSetting = new MapLegendSetting();
+    MapLegendSetting legendSetting = new MapLegendSetting();
 
-legendSetting.ShowLegend = true;
+    legendSetting.ShowLegend = true;
 
-legendSetting.LegendType = LegendType.Bubbles;
+    legendSetting.LegendType = LegendType.Bubbles;
 
-legendSetting.LegendIcon = LegendIcon.Diamond;
+    legendSetting.LegendIcon = LegendIcon.Diamond;
 
-layer.LegendSettings = legendSetting;
+    layer.LegendSettings = legendSetting;
 
 {% endhighlight %}
 
 {% endtabs %}
 
 ![](Images/LegendIconCustomization.jpg)
+
 
 ## Item margin
 
@@ -234,6 +238,7 @@ The [`ItemMargin`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.
 
 ![](Images/LegendItemMargin.jpg)
 
+
 ## Legend label
 
 The [`LegendLabel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ColorMapping~LegendLabel.html) provides information about the maps. It is specified under color mapping. If *LegendLabel* is not specified, ColorMapping values will be applied as legend label.
@@ -246,7 +251,7 @@ The following properties are used to customize the label of the legends:
 
  * [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLegendSetting~FontFamilyProperty.html) : Changes the font family of the legend label.
 
- * [`FontSize`] (https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLegendSetting~FontSizeProperty.html) : Changes the text size of the legend label.
+ * [`FontSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLegendSetting~FontSizeProperty.html) : Changes the text size of the legend label.
 {% tabs %}
 
 {% highlight xml %}
@@ -282,7 +287,9 @@ The following properties are used to customize the label of the legends:
 
 The following code sample demonstrates how to add a legend to maps and customize it.
 
-### Legends for Bubbles
+
+### Legend for Bubbles
+
 
 {% tabs %}
 
@@ -321,7 +328,7 @@ The following code sample demonstrates how to add a legend to maps and customize
 
 {% highlight c# %}
 
-ViewModel viewModel = new ViewModel();
+            ViewModel viewModel = new ViewModel();
 
             SfMaps map = new SfMaps();
 
@@ -446,7 +453,9 @@ ViewModel viewModel = new ViewModel();
 
 ![](Images/LegendForBubble.jpg)
 
-### Legends for shapes
+
+### Legend for shapes
+
 
 {% tabs %}
 

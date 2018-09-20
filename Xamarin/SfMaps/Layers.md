@@ -181,7 +181,7 @@ layer.ShapeSettings = shapeSetting;
 
 ![](Images/ShapeCustomization_img2.jpeg)
 
-### Selected shapes settings
+### Customize selected shapes
 
 To customize the selected shapes alone, use the following properties:
 

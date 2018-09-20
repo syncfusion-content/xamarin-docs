@@ -23,7 +23,7 @@ The following code sample explains data binding provided for bubble.
 
      <maps:ShapeFileLayer  Uri="usa_state.shp"  ShapeIDPath="Name"  ShapeIDTableField="STATE_NAME" 
 
-          ItemsSource="{Binding DataSource}"    />
+          ItemsSource="{Binding DataSource}" />
 
 {% endhighlight %}
 
@@ -230,32 +230,32 @@ I> The [`ShowMapItems`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfu
 
 {% highlight xml %}
 
-<maps:ShapeFileLayer.BubbleMarkerSettings>
+    <maps:ShapeFileLayer.BubbleMarkerSettings>
 
-<maps:BubbleMarkerSetting ShowBubbles="True"  ValuePath="Electors"  Fill="Orange"
-                         MaxSize="25" MinSize="20" Opacity="0.8" />
+    <maps:BubbleMarkerSetting ShowBubbles="True"  ValuePath="Electors"  Fill="Orange"
+                            MaxSize="25" MinSize="20" Opacity="0.8" />
 
-</maps:ShapeFileLayer.BubbleMarkerSettings>
+    </maps:ShapeFileLayer.BubbleMarkerSettings>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-BubbleMarkerSetting bubbleSetting = new BubbleMarkerSetting();
+        BubbleMarkerSetting bubbleSetting = new BubbleMarkerSetting();
 
-bubbleSetting.ShowBubbles = true;
+        bubbleSetting.ShowBubbles = true;
 
-bubbleSetting.ValuePath = "Electors";
+        bubbleSetting.ValuePath = "Electors";
 
-bubbleSetting.Fill = Color.Orange;
+        bubbleSetting.Fill = Color.Orange;
 
-bubbleSetting.Opacity = 0.8;
+        bubbleSetting.Opacity = 0.8;
 
-bubbleSetting.MinSize = 20;
+        bubbleSetting.MinSize = 20;
 
-bubbleSetting.MaxSize = 25;
+        bubbleSetting.MaxSize = 25;
 
- layer.BubbleMarkerSettings = bubbleSetting;
+        layer.BubbleMarkerSettings = bubbleSetting;
 
 {% endhighlight %}
 

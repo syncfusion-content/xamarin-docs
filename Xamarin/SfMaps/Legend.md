@@ -288,7 +288,7 @@ The following properties are used to customize the label of the legends:
 The following code sample demonstrates how to add a legend to maps and customize it.
 
 
-### Legend for Bubbles
+### Legend for bubbles
 
 
 {% tabs %}

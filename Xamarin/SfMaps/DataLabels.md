@@ -261,7 +261,7 @@ Data labels can be customized using the [`DataLabelSetting`](https://help.syncfu
 
 ![DataLabel Image](Images/DataLabel_customization.png)
 
-## Setting smart label mode
+## To smartly align data labels
 
 The [`SmartLabelMode`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.DataLabelSetting~SmartLabelMode.html) property aligns the labels smartly within shape boundaries and avoids labels overlapping. Labels can be customized using the `Hide`, `Trim`, and `None` options.
 
@@ -333,7 +333,7 @@ The [`SmartLabelMode`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfus
 
 ![DataLabel Image](Images/DataLabel_smartlabelmode_trim.png)
 
-## Setting intersection action
+## To avoid overlap in data labels
 
 The [`IntersectionAction`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.DataLabelSetting~IntersectionAction.html) property aligns labels that overlap. Labels can be customized using the `Hide`, `Trim`, and `None` options. First, set the [`SmartLabelMode`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.DataLabelSetting~SmartLabelMode.html) property to `None`.
 

@@ -89,3 +89,22 @@ void HandleUserHandleClickedEventHandler(object sender, UserHandleClickedEventAr
 {% endtabs %}
 ![](Userhandles_images/Userhandles_img1.jpeg)
 
+## Customizing user handle position
+User handle position can be moved or adjusted from its default position. The following code illustrates how to adjust the position using the “MoveBy” method.
+
+{% tabs %}
+{% highlight c# %}
+     //Define the user handle 
+
+            UserHandleCollection userhanldes = new UserHandleCollection();
+            UserHandle left = new UserHandle("Left", UserHandlePosition.Left, plusTemplate) { Visible = true };
+     //Customize the user handle position using moveby method
+            left.MoveBy(-10, -10);
+            userhanldes.Add(left);
+            userhanldes.Add(new UserHandle("Right", UserHandlePosition.Right, m_expandTemplate) { Visible = true });
+            userhanldes.Add(new UserHandle("Delete", UserHandlePosition.Bottom, deleteTemplate) { Visible = true });
+            diagram.UserHandles = userhanldes;
+{% endhighlight %}
+{% endtabs %}
+![Customize user handle position](Userhandles_images/Userhandles_img2.jpeg)
+

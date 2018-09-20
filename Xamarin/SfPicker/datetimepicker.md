@@ -204,11 +204,11 @@ Minute.Add(j.ToString());
 
 }
 
+Date.Add(Year);
+
 Date.Add(Month);
 
 Date.Add(Day);
-
-Date.Add(Year);
 
 Date.Add(Hour);
 
@@ -249,92 +249,67 @@ UpdateDays(Date, e);
 //Update days method is used to alter the Date collection as per selection change in Month column(if Feb is Selected day collection has value from 1 to 28)
 
 public void UpdateDays(ObservableCollection<object> Date, SelectionChangedEventArgs e)
+    {
 
-{
+        Device.BeginInvokeOnMainThread(() =>
+        {
+                if (Date.Count == 5)
+                {
+                    bool isupdate = false;
+                    if (e.OldValue != null && e.NewValue != null && (e.OldValue is ObservableCollection<object>) && (e.OldValue as ObservableCollection<object>).Count >0)
+                    {
+                        if (!object.Equals((e.OldValue as IList)[1], (e.NewValue as IList)[1]))
+                        {
+                            isupdate = true;
+                        }
 
-Device.BeginInvokeOnMainThread(() =>
+                        if (!object.Equals((e.OldValue as IList)[0], (e.NewValue as IList)[0]))
+                        {
+                            isupdate = true;
+                        }
+                    }
 
-{
+                    if (isupdate)
+                    {
+                        ObservableCollection<object> days = new ObservableCollection<object>();
+                        int month = DateTime.ParseExact(Months[(e.NewValue as IList)[1].ToString()], "MMMM", CultureInfo.InvariantCulture).Month;
+                        int year = int.Parse((e.NewValue as IList)[0].ToString());
+                        for (int j = 1; j <= DateTime.DaysInMonth(year, month); j++)
+                        {
+                            if (j < 10)
+                            {
+                                days.Add("0" + j);
+                            }
+                            else
+                                days.Add(j.ToString());
+                        }
 
-try
+                        ObservableCollection<object> oldvalue = new ObservableCollection<object>();
 
-{
+                        foreach (var item in e.NewValue as IList)
+                        {
+                            oldvalue.Add(item);
+                        }
 
-bool update = false;
+                        if (days.Count > 0)
+                        {
+                            Date.RemoveAt(2);
+                            Date.Insert(2, days);
+                        }
 
-if (e.OldValue != null && e.NewValue != null && (e.OldValue as IList).Count>0 && (e.NewValue as IList).Count>0)
-
-{
-
-if ((e.OldValue as IList)[0] != (e.NewValue as IList)[0])
-
-{
-
-update = true;
-
-}
-
-if ((e.OldValue as IList)[2] != (e.NewValue as IList)[2])
-
-{
-
-update = true;
-
-}
-
-}
-
-if (update)
-
-{
-
-ObservableCollection<object> days = new ObservableCollection<object>();
-
-int month = DateTime.ParseExact(Months[(e.NewValue as IList)[0].ToString()], "MMMM", CultureInfo.InvariantCulture).Month;
-
-int year = int.Parse((e.NewValue as IList)[2].ToString());
-
-for (int j = 1; j <= DateTime.DaysInMonth(year, month); j++)
-
-{
-
-if (j < 10)
-
-{
-
-days.Add("0" + j);
-
-}
-
-else
-
-days.Add(j.ToString());
-
-}
-
-if (days.Count > 0)
-
-{
-
-Date.RemoveAt(1);
-
-Date.Insert(1, days);
-
-}
-
-}
-
-}
-
-catch
-
-{
-
-}
-
-});
-
-}
+                        if ((Date[2] as IList).Contains(oldvalue[2]))
+                        {
+                            this.SelectedItem = oldvalue;
+                        }
+                        else
+                        {
+                            oldvalue[2] = (Date[2] as IList)[(Date[2] as IList).Count - 1];
+                            this.SelectedItem = oldvalue;
+                        }
+                    }
+                }
+        });
+    }
 
 {% endhighlight %}
 
@@ -361,11 +336,11 @@ public DateTimePicker()
 
 Headers = new ObservableCollection<string>();
 
+Headers.Add("Year");
+
 Headers.Add("Month");
 
 Headers.Add("Day");
-
-Headers.Add("Year");
 
 Headers.Add("Hour");
 
@@ -507,5 +482,5 @@ The following screenshot illustrates the output of the above codes.
 
 You can download the DateTimePicker sample for reference from the following link.
 
-Sample link: [DateTimePicker](http://www.syncfusion.com/downloads/support/directtrac/209702/ze/DateTimePicker1480242166)
+Sample link: [DateTimePicker](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DateTimePicker1071230245)
 

@@ -183,91 +183,63 @@ UpdateDays(Date, e);
 //Update days method is used to alter the Date collection as per selection change in Month column(if Feb is Selected day collection has value from 1 to 28)
 
 public void UpdateDays(ObservableCollection<object> Date, SelectionChangedEventArgs e)
-
 {
-
 Device.BeginInvokeOnMainThread(() =>
-
 {
+        if (Date.Count == 3)
+        {
+            bool isupdate = false;
+            if (e.OldValue != null && e.NewValue != null && (e.OldValue as ObservableCollection<object>).Count == (e.NewValue as ObservableCollection<object>).Count)
+            {
+                if (!object.Equals((e.OldValue as IList)[0], (e.NewValue as IList)[0]))
+                {
+                    isupdate = true;
+                }
+                if (!object.Equals((e.OldValue as IList)[2], (e.NewValue as IList)[2]))
+                {
+                    isupdate = true;
+                }
+            }
 
-try
+            if (isupdate)
+            {
 
-{
+                ObservableCollection<object> days = new ObservableCollection<object>();
+                int month = DateTime.ParseExact(Months[(e.NewValue as IList)[0].ToString()], "MMMM", CultureInfo.InvariantCulture).Month;
+                int year = int.Parse((e.NewValue as IList)[2].ToString());
+                for (int j = 1; j <= DateTime.DaysInMonth(year, month); j++)
+                {
+                    if (j < 10)
+                    {
+                        days.Add("0" + j);
+                    }
+                    else
+                        days.Add(j.ToString());
+                }
+                ObservableCollection<object> oldvalue = new ObservableCollection<object>();
 
-bool update = false;
+                foreach (var item in e.NewValue as IList)
+                {
+                    oldvalue.Add(item);
+                }
+                if (days.Count > 0)
+                {
+                    Date.RemoveAt(1);
+                    Date.Insert(1, days);
+                }
 
-if (e.OldValue != null && e.NewValue != null && (e.OldValue as IList).Count>0 && (e.NewValue as IList).Count>0)
-
-{
-
-if ((e.OldValue as IList)[0] != (e.NewValue as IList)[0])
-
-{
-
-update = true;
-
-}
-
-if ((e.OldValue as IList)[2] != (e.NewValue as IList)[2])
-
-{
-
-update = true;
-
-}
-
-}
-
-if (update)
-
-{
-
-ObservableCollection<object> days = new ObservableCollection<object>();
-
-int month = DateTime.ParseExact(Months[(e.NewValue as IList)[0].ToString()], "MMMM", CultureInfo.InvariantCulture).Month;
-
-int year = int.Parse((e.NewValue as IList)[2].ToString());
-
-for (int j = 1; j <= DateTime.DaysInMonth(year, month); j++)
-
-{
-
-if (j < 10)
-
-{
-
-days.Add("0" + j);
-
-}
-
-else
-
-days.Add(j.ToString());
-
-}
-
-if (days.Count > 0)
-
-{
-
-Date.RemoveAt(1);
-
-Date.Insert(1, days);
-
-}
-
-}
-
-}
-
-catch
-
-{
-
-}
-
+                if ((Date[1] as IList).Contains(oldvalue[1]))
+                {
+                    this.SelectedItem = oldvalue;
+                }
+                else
+                {
+                    oldvalue[1] = (Date[1] as IList)[(Date[1] as IList).Count - 1];
+                    this.SelectedItem = oldvalue;
+                }
+            }
+        }
 });
-
 }
 
 {% endhighlight %}
@@ -438,5 +410,5 @@ The following screenshot illustrates the output of above code snippets.
 
 You can download the DatePicker sample for reference from the following link.
 
-Sample link: [DatePicker](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DatePicker-1648011098.zip)
+Sample link: [DatePicker](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DatePicker2089903258.zip)
 

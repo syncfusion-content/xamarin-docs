@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains the steps required to configure the text input layout control with floating label, icons, password toggle, and assistive labels. This section covers only the minimal features needed to get started with the text input layout control.
+This section explains the steps required to configure the text input layout control with floating label, leading and trailing icons, password visibility toggling icon, and assistive labels. This section covers only the minimal features needed to get started with the text input layout control.
 
 ## Adding text input layout reference
 
@@ -121,7 +121,7 @@ Run the project, and check if you get following output to make sure that the pro
 
 ## Enabling password visibility toggle
 
-The password visibility toggle is used to show or hide the visibility of characters in the text view added to the control. You can enable this toggle by setting the `EnablePasswordVisibilityToggle` property to true.
+The password visibility toggle is used to show or hide the visibility of characters in the input view added to the control. You can enable this toggle by setting the `EnablePasswordVisibilityToggle` property to true.
 
 {% tabs %} 
 

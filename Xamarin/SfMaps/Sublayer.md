@@ -159,8 +159,8 @@ You can add multiple shape files in the [`ShapeFileLayer`](https://help.syncfusi
 
 Sublayer is a type of shapefile layer. You can add all the elements such as markers, bubbles, color mapping, and legends to sublayer. Please refer to the following links to add the sublayer properties.
 
-* [`Adding markers`](https://help.syncfusion.com/xamarin/sfmaps/getting-started?cs-save-lang=1&cs-lang=xaml#adding-marker)
+* [`Adding markers`](https://help.syncfusion.com/xamarin/sfmaps/getting-started?cs-save-lang=1&cs-lang=xaml#adding-markers)
 * [`Color mapping`](https://help.syncfusion.com/xamarin/sfmaps/getting-started?cs-save-lang=1&cs-lang=xaml#color-mapping)
-* [`Adding legend`](https://help.syncfusion.com/xamarin/sfmaps/getting-started?cs-save-lang=1&cs-lang=xaml#adding-legend)
+* [`Adding legend`](https://help.syncfusion.com/xamarin/sfmaps/getting-started?cs-save-lang=1&cs-lang=xaml#adding-legends)
 * [`Adding bubbles`](https://help.syncfusion.com/xamarin/sfmaps/bubblemarker#adding-bubbles)
 * [`Adding data labels`](https://help.syncfusion.com/xamarin/sfmaps/datalabels#adding-data-labels)

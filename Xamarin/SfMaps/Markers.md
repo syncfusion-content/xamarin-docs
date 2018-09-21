@@ -158,7 +158,7 @@ The shape of a marker icon can be customized using the [`MarkerIcon`](https://he
 
 ### Setting image marker icon
 
-You can pin an image as marker icon by setting the icon type as "Image". Set [`ImageSource`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarkerSetting~ImageSource.html) to get the image from local path.
+You can pin an image as marker icon by setting the icon type as `Image`. Set [`ImageSource`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarkerSetting~ImageSource.html) to get the image from local path.
 
 {% tabs %}
 

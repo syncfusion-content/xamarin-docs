@@ -413,6 +413,48 @@ chart.Legend.OffsetY = 90;
 
 ![](legend_images/legend_img5.png)
 
+## ItemTemplate
+
+You can customize the appearance of legend items with your own template by using [`ItemTemplate`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~ItemTemplate.html) property of [`ChartLegend`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend.html).
+
+N> The BindingContext of template is the corresponding underlying legend item that is provided in the ChartLegendItem class.
+ 
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.Legend>
+
+   ...
+                <chart:ChartLegend.ItemTemplate>
+                    
+                    <DataTemplate>
+                     
+                     ...
+                    </DataTemplate>
+                    
+                </chart:ChartLegend.ItemTemplate>
+
+            </chart:ChartLegend>
+
+        </chart:SfChart.Legend>
+		
+{% endhighlight %}
+
+{% highlight c# %}
+
+         chart.Legend = new ChartLegend();
+         DataTemplate template = new DataTemplate ( () =>
+         {
+          ...
+         });
+
+         chart.Legend.ItemTemplate = template;
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Event
 
  **LegendItemClicked**
@@ -425,7 +467,7 @@ The [`LegendItemClicked`](https://help.syncfusion.com/cr/cref_files/xamarin/Sync
 
 The [`LegendItemCreated`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~LegendItemCreated_EV.html) event is triggered when the chart legend item is created. This argument contains the following information.
 
-* [`LegendItem`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegendItemClickedEventArgs~LegendItem.html) – Used to customize the label and appearance of individual legend item.
+* [`LegendItem`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegendItemCreatedEventArgs~LegendItem.html) – Used to customize the label and appearance of individual legend item.
 
 You can customize the legend item using following properties of [`ChartLegendItem`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegendItem.html):
 

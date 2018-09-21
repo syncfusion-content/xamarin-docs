@@ -296,8 +296,8 @@ private void Diagram_BeginNodeRender(object sender, BeginNodeRenderEventArgs arg
             node.ShapeType = ShapeType.RoundedRectangle;
             node.Width = 90;
             node.Height = 50;
-            SiblingSpace siblingspacing = new SiblingSpace(100,100);                
-            node.SiblingSpace = siblingspacing;
+            SiblingSpace siblingSpacing = new SiblingSpace(100,100);                
+            node.SiblingSpace = siblingSpacing;
             node.Annotations.Add(new Annotation() { Content = ((args.Item as Node).Content as Employee).Name });
         }
 {% endhighlight %}

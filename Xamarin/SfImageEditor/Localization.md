@@ -22,11 +22,28 @@ You can localize image editor contents in the following two ways:
 
 ## Using Resx file from PCL
 
-You can localize the text from PCL by adding equivalent localized strings in the resource file. The required resx files are available under the Resources folder.
+You can localize the text from PCL by adding equivalent localized strings in the resource file. Add the required resx files with `Build Action` -> `EmbeddedResource` (File name should contains culture code) under the `Resources` folder.
 
-E.g., For Japanese, filename should be Syncfusion.SfImageEditor.XForms.ja-JP.resx.
+E.g., For Japanese, filename should be `Syncfusion.SfImageEditor.XForms.ja-JP.resx`.
 
-Now, set Build Action to EmbeddedResource. The CurrentCulture must be set in the platform projects.
+Initializes a new instance of the `ResourceManager class` that looks up resources with the specified root name in the given assembly.
+
+{% tabs %}
+
+{% highlight C# %}
+
+ImageEditorResourceManager.Manager = new ResourceManager(ResXPath, Assembly);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Here,
+
+ResXPath => Full path of the resx file
+Assembly => Application assembly (PCL)
+
+The CurrentCulture must be set in the platform projects.
 
 Convert the platform-specific format to a .NET format, and set it to Thread.CurrentThread.CurrentUICulture.
 

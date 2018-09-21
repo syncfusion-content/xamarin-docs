@@ -184,7 +184,7 @@ The ImageryLayer provides support to reset the maps to the default view when you
 
 {% endtabs %}
 
-## Set geo coordinates points(center position)
+## Set Geo coordinates points(center position)
 
 The `GeoCoordinates` property allows you view the desired area at the center on loading. By default, the `GeoCoordinates` value is (0,0). So, the latitude value "0" and longitude value "0" are shown at the center.
 

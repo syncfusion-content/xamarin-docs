@@ -1229,6 +1229,34 @@ Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.macOS.dll<br/>Syncfusion.L
 </tr>
 </table>
 
+## SfTreeView
+
+<dl>
+  <dt>NuGet</dt>
+  <dd>Syncfusion.Xamarin.SfTreeView</dd>
+</dl>
+
+**Assemblies**
+
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfTreeView.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.SfTreeView.XForms.Android.dll<br/>Syncfusion.SfTreeView.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.SfTreeView.XForms.iOS.dll<br/>Syncfusion.SfTreeView.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.SfTreeView.XForms.UWP.dll<br/>Syncfusion.SfTreeView.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+</table>
+
 ## XlsIO
 
 <dl>

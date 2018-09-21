@@ -14,7 +14,7 @@ documentation: ug
 
 The SfListView allows programmatically scrolling based on the index by using the [ScrollToRowIndex](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LayoutBase~ScrollToRowIndex.html) method for both linear and grid layouts. It also enables and disables the scrolling animation when changing the view. By default, the scrolling will be animated.
 
-You can set position of item in view while scrolling by passing ScollToPosition to `ScrollToRowIndex` method. Below are four different types of positions:
+You can set position of item in view while scrolling by passing [ScrollToPosition](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ScrollToPosition.html) to `ScrollToRowIndex` method. Below are four different types of positions:
 
 * MakeVisible: Scrolls a specific item to make visible in the view. If the item is already in view, scrolling will not occur.
 * Start: Scrolls a specific item to be positioned at the begin of the view.

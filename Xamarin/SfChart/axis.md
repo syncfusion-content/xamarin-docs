@@ -1316,6 +1316,31 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endtabs %}
 
+## VisibleMinimum
+
+The [`VisibleMinimum`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~VisibleMinimum.html) property of chart axis can be used only to get the double value that represents observable minimum value of axis range in run time. Following is the code snippet
+
+{% highlight c# %}
+
+NumericalAxis xAxis = new NumericalAxis();
+double minimumValue = xAxis.VisibleMinimum;
+chart.PrimaryAxis = xAxis;
+
+{% endhighlight %}
+
+## VisibleMaximum
+
+The [`VisibleMaximum`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~VisibleMaximum.html) property of chart axis can be used only to get the double value that represents observable maximum value of axis range in run time. Following is the code snippet
+
+{% highlight c# %}
+
+NumericalAxis xAxis = new NumericalAxis();
+double maximumValue = xAxis.VisibleMaximum;
+chart.PrimaryAxis = xAxis;
+
+{% endhighlight %}
+
+
 ## Axis Crossing
 
 Axis can be positioned anywhere in the chart area by using [`CrossesAt`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~CrossesAt.html) property. This property specifies where the horizontal axis should intersect or cross the vertical axis or vice-versa. Default value of [`CrossesAt`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~CrossesAt.html) property is null.

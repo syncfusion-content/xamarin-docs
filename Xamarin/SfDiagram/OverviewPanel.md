@@ -41,7 +41,7 @@ Prevents the diagram to be updated in overview panel if any interaction takes pl
 {% tabs %}
 {% highlight c# %}
 
-  //Define preventrefresh property 
+  //Define prevent refresh property 
 
   overview.PreventRefresh = true;
 
@@ -53,7 +53,7 @@ Method to force refresh the diagram in overview panel. When the overview panel i
 {% tabs %}
 {% highlight c# %}
 
-  //Define forerefresh method 
+  //Define force refresh method 
    overview.ForceRefresh();
 
 {% endhighlight %}
@@ -65,7 +65,7 @@ The “StartX” and “StartY” properties are used to define the start positi
 {% highlight c# %}
 
  //Customize the view port rect 
-  ViewportRect ViewportRect = new ViewportRect(overviewpanel);
+  ViewportRect ViewportRect = new ViewportRect(overview);
   ViewportRect.StrokeColor = Color.Black;
   ViewportRect.StartX = 300;
   ViewportRect.StartY = 100;

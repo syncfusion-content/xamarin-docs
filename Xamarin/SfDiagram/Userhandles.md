@@ -96,14 +96,14 @@ User handle position can be moved or adjusted from its default position. The fol
 {% highlight c# %}
      //Define the user handle 
 
-            UserHandleCollection userhanldes = new UserHandleCollection();
+            UserHandleCollection user_hanldes = new UserHandleCollection();
             UserHandle left = new UserHandle("Left", UserHandlePosition.Left, plusTemplate) { Visible = true };
-     //Customize the user handle position using moveby method
+     //Customize the user handle position using move by method
             left.MoveBy(-10, -10);
-            userhanldes.Add(left);
-            userhanldes.Add(new UserHandle("Right", UserHandlePosition.Right, m_expandTemplate) { Visible = true });
-            userhanldes.Add(new UserHandle("Delete", UserHandlePosition.Bottom, deleteTemplate) { Visible = true });
-            diagram.UserHandles = userhanldes;
+            user_hanldes.Add(left);
+            user_hanldes.Add(new UserHandle("Right", UserHandlePosition.Right, m_expandTemplate) { Visible = true });
+            user_hanldes.Add(new UserHandle("Delete", UserHandlePosition.Bottom, deleteTemplate) { Visible = true });
+            diagram.UserHandles = user_hanldes;
 {% endhighlight %}
 {% endtabs %}
 ![Customize user handle position](Userhandles_images/Userhandles_img2.jpeg)

@@ -215,7 +215,7 @@ It is easier to drag a child or parent node to some other node in the directed t
 {% endhighlight %}
 {% endtabs %}
 
-The following code illustrates how to add the child of dropped node while dragging the node using the LayoutNodeDropped event. 
+The following code illustrates how to add the child of dropped node while dragging the node using the LayoutNodeDropped event.
 {% tabs %}
 {% highlight c# %}
 // Registering an event
@@ -283,9 +283,9 @@ private void Diagram_OnLayoutNodeDropped(object sender, LayoutNodeDroppedEventAr
 		}
 {% endhighlight %}
 {% endtabs %}
-![Drag and Drop](Layout_images/Layout_img2.jpeg)
+![Drag and Drop](Layout_images/Layout_img2.gif)
 
-## Layout sibling spacing 
+## Layout sibling spacing
 It is easier to provide spacing between the sibling nodes of any branch on the directed tree layout, nodes can also be excluded from the layout. You can provide space for each node by customizing the “SiblingSpace” property of node. The following code illustrates how to add space for node using sibling spacing class instance.
 {% tabs %}
 {% highlight c# %}
@@ -302,4 +302,5 @@ private void Diagram_BeginNodeRender(object sender, BeginNodeRenderEventArgs arg
         }
 {% endhighlight %}
 {% endtabs %}
+![LayoutSpacing](Layout_images/LayoutSpacing_img3.png)
 

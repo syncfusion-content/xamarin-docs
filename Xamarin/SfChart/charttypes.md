@@ -111,7 +111,7 @@ fastLineSeries.StrokeDashArray = new double[2] { 2, 3 };
 
 ## EnableAntiAliasing: 
 
-Since [`FastLineSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FastLineSeries.html) can be loaded with large number of points, the rendering of series should be smooth. This is can be achieved by setting [`EnableAntiAliasing`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FastLineSeries~EnableAntiAliasing.html) property of [`FastLineSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FastLineSeries.html) as true.
+Since [`FastLineSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FastLineSeries.html) can be loaded with large number of points, the rendering of series should be smooth. This can be achieved by setting [`EnableAntiAliasing`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FastLineSeries~EnableAntiAliasing.html) property of [`FastLineSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FastLineSeries.html) as true.
 
 {% tabs %} 
 

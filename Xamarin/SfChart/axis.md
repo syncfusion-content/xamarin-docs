@@ -1318,28 +1318,11 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 ## VisibleMinimum
 
-The [`VisibleMinimum`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~VisibleMinimum.html) property of chart axis can be used only to get the double value that represents observable minimum value of axis range in run time. Following is the code snippet
-
-{% highlight c# %}
-
-NumericalAxis xAxis = new NumericalAxis();
-double minimumValue = xAxis.VisibleMinimum;
-chart.PrimaryAxis = xAxis;
-
-{% endhighlight %}
+The [`VisibleMinimum`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~VisibleMinimum.html) property of the chart axis can be used only to get the double value that represents the minimum observable value of the axis range in runtime.
 
 ## VisibleMaximum
 
-The [`VisibleMaximum`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~VisibleMaximum.html) property of chart axis can be used only to get the double value that represents observable maximum value of axis range in run time. Following is the code snippet
-
-{% highlight c# %}
-
-NumericalAxis xAxis = new NumericalAxis();
-double maximumValue = xAxis.VisibleMaximum;
-chart.PrimaryAxis = xAxis;
-
-{% endhighlight %}
-
+The [`VisibleMaximum`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~VisibleMaximum.html) property of the chart axis can be used only to get the double value that represents the maximum observable value of the axis range in runtime. 
 
 ## Axis Crossing
 

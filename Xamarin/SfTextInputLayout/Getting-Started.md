@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started for Essential Xamarin.Forms Text Input Layout
-description: How to create a text input layout and adds decorative elements.
+description: How to initialze a text input layout with floating label.
 platform: xamarin
 control: SfTextInputLayout
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains the steps required to configure the text input layout control with floating label, leading and trailing icons, password visibility toggling icon, and assistive labels. This section covers only the minimal features needed to get started with the text input layout control.
+This section explains the steps required to configure the text input layout control with floating label.
 
 ## Adding text input layout reference
 
@@ -22,7 +22,7 @@ To learn more about obtaining our components, refer to these links for [Mac](htt
 
 N> Install the same version of the core NuGet in all the projects. The text input layout control will be available in core NuGet from v16.3.0.x onwards.
 
-I> To start with v16.2.0.x, you have to include a license key in your project if you reference Syncfusion assemblies from the trial setup or NuGet feed. Please refer to this [documentation](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your Xamarin applications and using our components.
+I> From v16.2.0.x, you have to include a license key in your project if you reference Syncfusion assemblies from the trial setup or NuGet feed. Please refer to this [documentation](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your Xamarin applications and using our components.
 
 ## Launching an application on each platform with text input layout
 

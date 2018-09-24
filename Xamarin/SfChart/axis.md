@@ -685,7 +685,10 @@ The [`Title`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChar
 * [`BackgroundColor`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisTitle~BackgroundColor.html) – used to change the label background color.
 * [`BorderColor`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisTitle~BorderColor.html) – used to change the border color.
 * [`BorderWidth`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisTitle~BorderWidth.html) – used to change the width of the border.
-* [`Font`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisTitle~Font.html) – used to change the text size, font family and font weight.
+* [`Font`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisTitle~Font.html) – used to change the text size, font family, and font weight. (This is deprecated API. Use FontSize, FontFamily, and FontAttributes properties instead of this.)
+* [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisTitle~FontFamily.html) - used to change the font family for the axis title.
+* [`FontAttributes`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisTitle~FontAttributes.html) - used to change the font style for the axis title.
+* [`FontSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisTitle~FontSize.html) - used to change the font size for the axis title.
 * [`Margin`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisTitle~Margin.html) - used to change the margin size for labels.
 
 Following code snippet illustrates how to enable and customize the axis title.
@@ -1312,6 +1315,14 @@ chart.PrimaryAxis = new DateTimeAxis()
 {% endhighlight %}
 
 {% endtabs %}
+
+## VisibleMinimum
+
+The [`VisibleMinimum`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~VisibleMinimum.html) property of the chart axis can be used only to get the double value that represents the minimum observable value of the axis range in runtime.
+
+## VisibleMaximum
+
+The [`VisibleMaximum`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~VisibleMaximum.html) property of the chart axis can be used only to get the double value that represents the maximum observable value of the axis range in runtime. 
 
 ## Axis Crossing
 

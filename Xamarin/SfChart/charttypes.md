@@ -430,6 +430,49 @@ chart.Series.Add(splineRangeAreaSeries);
 
 ![](charttypes_images/SplineRangeArea.png)
 
+## Spline Range Area Series Type
+
+[`SplineType`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineRangeAreaSeries~SplineType.html) property allows you to change the spline range area curve in series.
+
+The following types can be used for SplineRangeAreaSeries
+*	Natural 
+*	Monotonic
+*	Cardinal
+*	Clamped
+
+By default [`SplineType`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineRangeAreaSeries~SplineType.html) value is Natural.
+
+The following code shows how to set the [`SplineType`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineRangeAreaSeries~SplineType.html) value as Cardinal.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart>
+… 
+   <chart:SplineRangeAreaSeries ItemsSource="{Binding SplineRangeAreaData}" XBindingPath="Name" High="High" Low="Low" SplineType="Cardinal"/>
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SplineRangeAreaSeries splineRangeAreaSeries = new SplineRangeAreaSeries
+            {
+                ItemsSource = SplineRangeAreaData,
+                XBindingPath = "Name",
+                High = "High",
+                Low = "Low",
+                SplineType = SplineType.Cardinal
+            };
+
+            chart.Series.Add(splineRangeAreaSeries);
+			
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Stacked Area Chart
 
 To render a stacked area chart, create an instance of [`StackingAreaSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.StackingAreaSeries.html) and add to the [`Series`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~Series.html) collection property of [`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the stacked area appearance.

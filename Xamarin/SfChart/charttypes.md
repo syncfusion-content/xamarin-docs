@@ -109,36 +109,9 @@ fastLineSeries.StrokeDashArray = new double[2] { 2, 3 };
 
 ![](charttypes_images/charttypes_img15.png)
 
-## EnableAntiAliasing: 
+## EnableAntiAliasing 
 
-Since [`FastLineSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FastLineSeries.html) can be loaded with large number of points, the rendering of series should be smooth. This can be achieved by setting [`EnableAntiAliasing`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FastLineSeries~EnableAntiAliasing.html) property of [`FastLineSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FastLineSeries.html) as true.
-
-{% tabs %} 
-
-{% highlight xaml %}
-
-<chart:SfChart>
-… 
-<chart:FastLineSeries ItemsSource ="{Binding Data}" XBindingPath="XValue" 
-						YBindingPath="YValue" EnableAntiAliasing="True"/>
-
-</chart:SfChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-FastLineSeries fastLineSeries = new FastLineSeries()
-            {
-                ItemsSource = Data,
-                XBindingPath = "XValue",
-                YBindingPath = "YValue",
-                EnableAntiAliasing=true
-            };
-
-{% endhighlight %}
-
-{% endtabs %}
+Since [`FastLineSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FastLineSeries.html) can be loaded with a large number of points, the rendering of series should be smooth. This requirement can be achieved by setting [`EnableAntiAliasing`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FastLineSeries~EnableAntiAliasing.html) property of [`FastLineSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FastLineSeries.html) as false.
 
 ## Area Chart
 
@@ -492,10 +465,10 @@ The following code shows how to set the [`SplineType`](https://help.syncfusion.c
 SplineRangeAreaSeries splineRangeAreaSeries = new SplineRangeAreaSeries
             {
                 ItemsSource = SplineRangeAreaData,
-                XBindingPath="Name",
-                High="High",
-                Low="Low",
-                SplineType=SplineType.Cardinal
+                XBindingPath = "Name",
+                High = "High",
+                Low = "Low",
+                SplineType = SplineType.Cardinal
             };
 
             chart.Series.Add(splineRangeAreaSeries);

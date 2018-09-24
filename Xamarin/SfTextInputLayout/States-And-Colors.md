@@ -133,7 +133,7 @@ inputLayout.InputView = new Entry() { Text = "John" };
 
 ## Disabled state
 
-When text input layout is disabled by setting `IsEnabled` property as `false`. Then color of the contianer and other UI elements will also be changed to disabled state and it's color can't be customized.
+When text input layout is disabled by setting `IsEnabled` property as `false`. Then color of the container and other UI elements will also be changed to disabled state and it's color can't be customized.
 
 {% tabs %} 
 

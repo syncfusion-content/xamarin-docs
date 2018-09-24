@@ -415,9 +415,9 @@ chart.Legend.OffsetY = 90;
 
 ## ItemTemplate
 
-You can customize the appearance of legend items with your own template by using [`ItemTemplate`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~ItemTemplate.html) property of [`ChartLegend`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend.html).
+You can customize the appearance of legend items with your template by using [`ItemTemplate`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~ItemTemplate.html) property of [`ChartLegend`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend.html).
 
-N> The BindingContext of template is the corresponding underlying legend item that is provided in the ChartLegendItem class.
+N> The BindingContext of the template is the corresponding underlying legend item that provided in the ChartLegendItem class.
  
 {% tabs %} 
 

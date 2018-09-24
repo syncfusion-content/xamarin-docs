@@ -106,8 +106,8 @@ It is easier to apply default rendering styles to all shapes, connectors, stenci
  * DefaultNodeStyle argument: Defines the node style properties. 
  * DefaultConnectorStyle argument: Defines the connector style properties.
  * DefaultSymbolStyle argument: Defines the symbol style properties. 
- * DefaultHeaderStyle argument: Define the header style properties. 
-The following code illustrates how to define the diagram style settings for diagram object.
+ * DefaultHeaderStyle argument: Defines the header style properties. 
+The following code shows how to define the diagram style settings for the diagram object.
 
 {% tabs %}
 {% highlight c# %}
@@ -122,7 +122,7 @@ SfDiagram diagram = new SfDiagram(diagramStyleSettings);
 {% endtabs %}
 
 ## Zooming enhancement 
-Support for customizing the zoom levels. You can set minimum zoom level value as 0.01f and maximum to ‘infinite’ for diagram. The following  code illustrates this.
+Supports customizing the zoom levels. You can set minimum zoom level value to 0.01f and maximum to ‘infinite’. 
 {% tabs %}
 {% highlight xml %}
 <!-- Define the minimum and maximum zoom factor value -->

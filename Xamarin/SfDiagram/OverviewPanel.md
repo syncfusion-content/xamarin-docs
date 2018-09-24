@@ -7,12 +7,12 @@ documentation: UG
 keywords: 
 ---
 # OverviewPanel
-The overview panel is used to display a preview (overall mini view) of the entire content of a diagram. This helps you to see overall picture of a large diagram and easily navigate to a position of the page using view port rectangle.
-When working on a large diagram, you may not know the part you are working or navigation from one part to another is difficult. To navigate, you can zoom out the entire diagram and find where you are. This solution is not suitable when some frequent navigation is required.
-The overview control solved this problem by displaying a preview (overall view) of the entire diagram, a rectangle indicated viewport of the diagram. Navigation becomes easy by dragging this rectangle.
+The overview panel is used to display the preview (overall mini view) of the entire content of a diagram. This helps you to see the overall picture of a large diagram and easily navigate to a position of the page using view port rectangle.
+When working on a large diagram, to navigate, you have to zoom out the entire diagram to find where you are. This solution is not suitable when frequent navigation is required.
+The overview control solves this problem by displaying a preview (overall view) of the entire diagram, A rectangle indicates the viewport of the diagram. Navigation is made easy by dragging this rectangle. 
 
 ## Create OverviewPanel 
-The following code illustrates how to create the overview panel in diagram.
+The following code shows how to create overview panel in a diagram.
 {% tabs %}
 {% highlight xml %}
        <sfdiagram:OverviewPanel x:Name="overview" >
@@ -36,8 +36,7 @@ diagram.OverviewPanel = overview;
 ![overview](OverviewPanel_images/OverviewPanel.gif)
 
 ### PreventRefresh
-Prevents the diagram to be updated in overview panel if any interaction takes place in the diagram layer. Prevents the diagram update for the entire actions till it turns true. It will be helpful when there is no need of frequent refreshing in the overview panel whenever diagram changes.
-
+Prevents diagram being updated in overview panel if any interaction takes place in the diagram layer. Prevents the diagram update for the entire actions till the property is set to true. This property is helpful when there is no need for frequent refreshing in the overview panel.
 {% tabs %}
 {% highlight c# %}
 
@@ -49,7 +48,7 @@ Prevents the diagram to be updated in overview panel if any interaction takes pl
 {% endtabs %}
 
 ### Force Refresh 
-Method to force refresh the diagram in overview panel. When the overview panel is prevented from updating diagram interaction by enabling PreventRefresh, force refresh is used to update the diagram in the overview panel.
+This method force refreshes the diagram in the overview panel. When the overview panel is prevented from updating diagram interaction by enabling PreventRefresh, force refresh is used to update the diagram in the overview panel. 
 {% tabs %}
 {% highlight c# %}
 
@@ -60,7 +59,7 @@ Method to force refresh the diagram in overview panel. When the overview panel i
 {% endtabs %}
 
 ## Customizing view port rect 
-The “StartX” and “StartY” properties are used to define the start position of the view port rect over the overview panel. The following code illustrates how to customize the view port rect.
+The “StartX” and “StartY” properties are used to define the start position of the view port rect over the overview panel. The following code shows how to customize the view port rect.
 {% tabs %}
 {% highlight c# %}
 

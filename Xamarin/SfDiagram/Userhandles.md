@@ -90,7 +90,7 @@ void HandleUserHandleClickedEventHandler(object sender, UserHandleClickedEventAr
 ![](Userhandles_images/Userhandles_img1.jpeg)
 
 ## Customizing user handle position
-User handle position can be moved or adjusted from its default position. The following code illustrates how to adjust the position using the “MoveBy” method.
+User handle position can be moved or adjusted from its default position. The following code shows how to adjust the position using the “MoveBy” method.
 
 {% tabs %}
 {% highlight c# %}

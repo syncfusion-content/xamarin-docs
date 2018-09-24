@@ -225,7 +225,7 @@ private void Diagram_Loaded(object sender)
 When style collection ends, the next level or branch can have styles. To be cyclic, enable repeat mode or disable it to continue with last style.
 
 ## Free form layout 
-The mind map free form layout provides an option to rearrange the nodes in layout. Mind map layout allows you to enable or disable free form using the “EnableFreeForm” property. The following code example illustrates this.
+The mind map free form layout provides an option to rearrange nodes in a layout. Mind map layout allows you to enable or disable free form using the “EnableFreeForm” property.
 {% tabs %}
 {% highlight c# %}
 

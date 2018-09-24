@@ -91,7 +91,7 @@ using Syncfusion.XForms.TextInputLayout;
 
 {% endtabs %}
 
-Add any input view control such as `Entry`, `Editor`, `SfNumericTextBox`, or `SfMaskedEdit`, and add hint label (floating label).
+Add any input view control such as [`Entry`]((https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/entry)), [`Editor`](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/editor), [`SfNumericTextBox`](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview), or [`SfMaskedEdit`](https://help.syncfusion.com/xamarin/sfmaskededit/overview), and add hint label (floating label).
 
 {% tabs %} 
 

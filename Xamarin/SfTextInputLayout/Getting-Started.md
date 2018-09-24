@@ -97,6 +97,28 @@ Add any input view control such as `Entry`, `Editor`, `SfNumericTextBox`, or `Sf
 
 {% highlight xaml %} 
 
+<inputLayout:SfTextInputLayout>
+   <Entry />
+</inputLayout:SfTextInputLayout>  
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+var inputLayout = new SfTextInputLayout();
+inputLayout.InputView = new Entry(); 
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Adding hint
+Floating label for the text input layout can be added by setting `Hint` property.
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
 <inputLayout:SfTextInputLayout
    Hint="Name">
    <Entry />
@@ -148,294 +170,3 @@ inputLayout.InputView = new Entry() { Text = "John" };
 
 ![](Getting-Started_images/textInput_getting_img4.png)
 ![](Getting-Started_images/textInput_getting_img5.png)
-
-## Adding custom icons
-
-Any custom icons can be added to the text input layout control at the leading edge or the trailing edge of input view. The events and commands related to the custom icons should be handled at the application level.
-
-Unicode or font icons for labels can be displayed as icons.
-
-### Leading view
-
-A label can be added as a leading icon for the input view and positioned either inside or outside of the container of input view by setting the `LeadingViewPosition` property. By default, it will be positioned outside.
-
-{% tabs %} 
-
-{% highlight xaml %} 
-
-<inputLayout:SfTextInputLayout
-    Hint="Name"
-    EnablePasswordVisibilityToggle="true"
-    LeadingViewPosition="Inside" >
-    <Entry Text="John" />
-    <inputLayout:SfTextInputLayout.LeadingView>
-       <Label
-           Text="A">     
-       </Label>
-    </inputLayout:SfTextInputLayout.LeadingView>
- </inputLayout:SfTextInputLayout> 
-
-
-{% endhighlight %}
-
-{% highlight C# %} 
-
-var inputLayout = new SfTextInputLayout();
-inputLayout.Hint = "Name";
-inputLayout.EnablePasswordVisibilityToggle = true;
-inputLayout.LeadingViewPosition = ViewPosition.Inside;
-inputLayout.LeadingView = new Label() { Text = "A" };
-inputLayout.InputView = new Entry() { Text = "John" }; 
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![](Getting-Started_images/textInput_getting_img6.png)
-![](Getting-Started_images/textInput_getting_img7.png)
-
-### Trailing  view
-
-A label can be added as a trailing icon for the input view and positioned either inside or outside of the container of input view by setting the `TrailingViewPosition` property. By default, it will be positioned inside.
-
-% tabs %} 
-
-{% highlight xaml %} 
-
-<inputLayout:SfTextInputLayout
-    Hint="Name"
-    EnablePasswordVisibilityToggle="true"
-    TrailingViewPosition="Outside">
-    <Entry Text="John" />
-    <inputLayout:SfTextInputLayout.TrailingView>
-      <Label
-         Text="B">     
-      </Label>
-    </inputLayout:SfTextInputLayout.TrailingView>
- </inputLayout:SfTextInputLayout> 
-
-{% endhighlight %}
-
-{% highlight C# %} 
-
-var inputLayout = new SfTextInputLayout();
-inputLayout.Hint = "Name";
-inputLayout.EnablePasswordVisibilityToggle = true;
-inputLayout.TrailingViewPosition = ViewPosition.Outside; 
-inputLayout. TrailingView = new Label() { Text = "B" };
-inputLayout.InputView = new Entry() { Text = "John" }; 
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![](Getting-Started_images/textInput_getting_img8.png)
-![](Getting-Started_images/textInput_getting_img9.png)
-
-## Adding assistive labels
-
-Assistive labels provide additional information about text entered into the input view controls.
-
-### Helper text
-
-Helper text conveys additional guidance about the input field such as how it will be used. It can be set using the `HelperText` property.
-
-{% tabs %} 
-
-{% highlight xaml %} 
-
-<inputLayout:SfTextInputLayout
-  Hint="Name"
-  HelperText="Enter your name">
-  <Entry Text="John" />
-</inputLayout:SfTextInputLayout>   
-
-{% endhighlight %}
-
-{% highlight C# %} 
-
-var inputLayout = new SfTextInputLayout();
-inputLayout.Hint = "Name";
-inputLayout.HelperText = "Enter your name";
-inputLayout.InputView = new Entry() { Text = "John" }; 
-
-{% endhighlight %}
-
-{% endtabs %}
-
-The visibility of the helper text can be disabled by setting the `ShowHelperText` property to false. By default, it is set to true.
-
-![](Getting-Started_images/textInput_getting_img10.png)
-
-### Error message
-
-When the text input is not accepted, an error message will display instructions to fix it. Error messages will be displayed below the input line till entering the correct text. It can be set using the 
-`ErrorText` property, but it will be displayed only when the `HasError` property is set to `true`.
-
-{% tabs %} 
-
-{% highlight xaml %} 
-
-<inputLayout:SfTextInputLayout
-    Hint="Name" 
-    HelperText="Enter your name"
-    ErrorText="Should not contains special characters"
-    HasError="true">
-    <Entry />
-</inputLayout:SfTextInputLayout>  
- 
-
-{% endhighlight %}
-
-{% highlight C# %} 
-
-var inputLayout = new SfTextInputLayout();
-inputLayout.Hint = "Name";
-inputLayout.HelperText = "Enter your name";
-inputLayout.ErrorText = "Should not contains special characters";
-inputLayout.HasError = true; 
-inputLayout.InputView = new Entry(); 
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![](Getting-Started_images/textInput_getting_img11.png)
-
-N> Error validations should be done in the application level.
-
-### Character counter
-
-Character counter is used when you need to limit the characters. Character limit can be set using the `CharMaxLength` property. The character counter can be enabled by setting the `ShowCharCount` property to true.
-
-{% tabs %} 
-
-{% highlight xaml %} 
-
-<inputLayout:SfTextInputLayout
-    Hint="Name" 
-    ShowCharCount="true"
-    CharMaxLength="10">
-    <Entry Text="John" />
-</inputLayout:SfTextInputLayout> 
-  
-
-{% endhighlight %}
-
-{% highlight C# %} 
-
-var inputLayout = new SfTextInputLayout();
-inputLayout.Hint = "Name";
-inputLayout.CharMaxLength = 10;
-inputLayout.ShowCharCount = true;
-inputLayout.InputView = new Entry(){Text="John"}; 
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![](Getting-Started_images/textInput_getting_img12.png)
-
-## Container type
-
-Containers improve the discoverability of input view by creating a contrast between the input view and assistive elements.
-
-### Filled
-
-The background of the input view will be filled with container color, and its stroke (at the bottom edge) color and thickness will be changed based on its states. It can be enabled by setting the `ContainerType` property to `Filled`.
-
-{% tabs %} 
-
-{% highlight xaml %} 
-
-<inputLayout:SfTextInputLayout
-    Hint="Name" 
-    ContainerType="Filled">
-    <Entry Text="John" />
-</inputLayout:SfTextInputLayout>  
-
-{% endhighlight %}
-
-{% highlight C# %} 
-
-var inputLayout = new SfTextInputLayout();
-inputLayout.Hint = "Name";
-inputLayout.ContainerType = ContainerType.Filled;
-inputLayout.InputView = new Entry() { Text = "John" }; 
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![](Getting-Started_images/textInput_getting_img13.png)
-
-### Outlined
-
-When setting the `ContainerType` property to `Outlined`, the background of the container will be transparent, and the container will be covered with a rounded-corner border.
-
-{% tabs %} 
-
-{% highlight xaml %} 
-
-<inputLayout:SfTextInputLayout
-    Hint="Name" 
-    ContainerType="Outlined">
-    <Entry Text="John" />
-</inputLayout:SfTextInputLayout>  
- 
-
-{% endhighlight %}
-
-{% highlight C# %} 
-
-var inputLayout = new SfTextInputLayout();
-inputLayout.Hint = "Name";
-inputLayout.ContainerType = ContainerType.Outlined;
-inputLayout.InputView = new Entry() { Text = "John" }; 
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![](Getting-Started_images/textInput_getting_img14.png)
-
-## Customizing colors
-
-The colors of the assistive elements can be customized by setting the following properties: `FocusedColor`, `UnfocusedColor`, `ErrorColor`, and `ContainerBackgroundColor`.
-
-{% tabs %} 
-
-{% highlight xaml %} 
-
-<inputLayout:SfTextInputLayout
-    Hint="Name" 
-    FocusedColor="Teal"
-    UnfocusedColor="Purple"
-    ErrorColor="Fuchsia"
-    ContainerBackgroundColor="FloralWhite"
-    ErrorText="Invalid text"
-    HasError="true">
-    <Entry Text="John" />
-</inputLayout:SfTextInputLayout>  
- 
-{% endhighlight %}
-
-{% highlight C# %} 
-
-inputLayout.Hint = "Name";
-inputLayout.FocusedColor = Color.Teal;
-inputLayout.UnfocusedColor = Color.Purple;
-inputLayout.ErrorColor = Color.Fuchsia;
-inputLayout.ContainerBackgroundColor = Color.FloralWhite;
-inputLayout.ErrorText = "Invalid text";
-inputLayout.HasError = true;
-inputLayout.InputView = new Entry() { Text = "John" }; 
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![](Getting-Started_images/textInput_getting_img15.png)
-![](Getting-Started_images/textInput_getting_img16.png)
-![](Getting-Started_images/textInput_getting_img17.png)
-

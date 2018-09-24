@@ -2236,6 +2236,59 @@ chart.Series.Add(doughnutSeries);
 
 ![](charttypes_images/charttypes_img27.png)
 
+### Stacked doughnut
+
+Doughnut segments can be separated as individual circles using the [`IsStackedDoughnut`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DoughnutSeries~IsStackedDoughnut.html) property. The following properties are used to customize the stacked doughnut chart:
+
+* [`CapStyle`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DoughnutSeries~CapStyle.html) - Specifies the shape of the start and end points of the circular segment. The supported values are `BothFlat`, `BothCurve`, `StartCurve`, and `EndCurve`. The default value of the this property is [`BothFlat`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DoughnutCapStyle.html).
+* [`Spacing`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DoughnutSeries~Spacing.html) - Changes the spacing between two individual segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 and 0 correspond to 100% and 0% of the available space, respectively.
+* [`MaximumValue`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DoughnutSeries~MaximumValue.html) - Represents the entire span of an individual circle. The default value of the this property is `double.NaN`.
+* [`TrackColor`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DoughnutSeries~TrackColor.html) - Changes the color of the track area.
+* [`TrackBorderColor`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DoughnutSeries~TrackBorderColor.html) - Changes the color of the track border.
+* [`TrackBorderWidth`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DoughnutSeries~TrackBorderWidth.html) - Changes the width of the track border.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart>
+...
+
+    <chart:DoughnutSeries ItemsSource ="{Binding Data}"
+    XBindingPath="Expense"
+    YBindingPath="Value"
+    IsStackedDoughnut="true"
+    CapStyle="BothCurve"
+    Spacing=”0.4”
+    MaximumValue=“100” />
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+...
+
+DoughnutSeries doughnutSeries = new DoughnutSeries() 
+{ 
+    ItemsSource = Data, 
+    XBindingPath = "Expense", 
+    YBindingPath = "Value",
+    IsStackedDoughnut = true,
+    CapStyle = DoughnutCapStyle.BothCurve,
+    Spacing = 0.4,
+    MaximumValue = 100 
+};
+chart.Series.Add(doughnutSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](charttypes_images/stacked_doughnut.png)
+
 ### Changing Doughnut inner radius
 
 You can change the doughnut chart inner radius using [`DoughnutCoefficient`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DoughnutSeries~DoughnutCoefficient.html) with respect to the plot area. It ranges from 0 to 1 and the default value is `0.4`.

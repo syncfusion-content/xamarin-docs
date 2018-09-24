@@ -97,7 +97,7 @@ Based on the background color of the shapes, contrast color will be applied to d
                         
                             <maps:RangeColorMapping To="25" From="0" Color="#FFD84F"/>
                             
-                            <maps:RangeColorMapping To="50" From="25" Color="#316DB5"/>
+                            <maps:RangeColorMapping To="50" From="26" Color="#316DB5"/>
                          
                         </maps:ShapeSetting.ColorMappings>
                         
@@ -157,7 +157,7 @@ Based on the background color of the shapes, contrast color will be applied to d
 
             RangeColorMapping rangeColorMapping1 = new RangeColorMapping();
 
-            rangeColorMapping1.From = 25;
+            rangeColorMapping1.From = 26;
 
             rangeColorMapping1.To = 50;
 
@@ -192,11 +192,11 @@ Data labels can be customized using the [`DataLabelSetting`](https://help.syncfu
 {% highlight xml %}
 
       <maps:SfMaps x:Name="sfmap" >
-        
+
         <maps:SfMaps.Layers>
 
             <maps:ShapeFileLayer Uri="usa_state.shp" ShowMapItems="True" ItemsSource="{Binding DataSource}" ShapeIDPath="Name" ShapeIDTableField="STATE_NAME">
-               
+
                 <maps:ShapeFileLayer.ShapeSettings>
 
                     <maps:ShapeSetting   ShapeValuePath="Type"  ShapeFill="LightGray"/>
@@ -205,14 +205,20 @@ Data labels can be customized using the [`DataLabelSetting`](https://help.syncfu
 
                 <maps:ShapeFileLayer.DataLabelSettings>
 
-                    <maps:DataLabelSetting TextColor="Blue" FontAttributes="Bold" FontFamily="cursive" FontSize="12" />
+                    <maps:DataLabelSetting TextColor="Blue" FontAttributes="Bold" FontSize="12">
+
+                        <maps:DataLabelSetting.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" iOS="Baskerville-Italic" Android="cursive" WinPhone="Chiller" />
+                        </maps:DataLabelSetting.FontFamily>
+
+                    </maps:DataLabelSetting>
 
                 </maps:ShapeFileLayer.DataLabelSettings>
-                
+
             </maps:ShapeFileLayer>
-            
+
         </maps:SfMaps.Layers>
-        
+
     </maps:SfMaps>
 
 {% endhighlight %}
@@ -245,7 +251,7 @@ Data labels can be customized using the [`DataLabelSetting`](https://help.syncfu
 
             dataLabelSetting.FontAttributes = FontAttributes.Bold;
 
-            dataLabelSetting.FontFamily = "cursive";
+            dataLabelSetting.FontFamily = Device.RuntimePlatform == Device.iOS ? "Chalkduster" : Device.RuntimePlatform == Device.Android ? "cursive" : "Chiller";
 
             dataLabelSetting.FontSize = 12;
 

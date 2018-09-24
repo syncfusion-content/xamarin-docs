@@ -183,13 +183,17 @@ UpdateDays(Date, e);
 //Update days method is used to alter the Date collection as per selection change in Month column(if Feb is Selected day collection has value from 1 to 28)
 
 public void UpdateDays(ObservableCollection<object> Date, SelectionChangedEventArgs e)
+
 {
+
 Device.BeginInvokeOnMainThread(() =>
+
 {
+
         if (Date.Count == 3)
         {
             bool flag = false;
-            if (e.OldValue != null && e.NewValue != null && (e.OldValue as ObservableCollection<object>).Count == (e.NewValue as ObservableCollection<object>).Count)
+            if (e.OldValue != null && e.NewValue != null && (e.OldValue as ObservableCollection<object>).Count == 3 && (e.NewValue as ObservableCollection<object>).Count== 3 )
             {
                 if (!object.Equals((e.OldValue as IList)[0], (e.NewValue as IList)[0]))
                 {
@@ -240,6 +244,7 @@ Device.BeginInvokeOnMainThread(() =>
             }
         }
 });
+
 }
 
 {% endhighlight %}
@@ -410,5 +415,5 @@ The following screenshot illustrates the output of above code snippets.
 
 You can download the DatePicker sample for reference from the following link.
 
-Sample link: [DatePicker](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DatePicker2089903258.zip)
+Sample link: [DatePicker](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DatePicker-1989319611.zip)
 

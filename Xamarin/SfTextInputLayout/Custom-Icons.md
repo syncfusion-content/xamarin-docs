@@ -13,12 +13,13 @@ Any custom icons can be added to the text input layout control at the leading ed
 
 Unicode or font icons for labels can be displayed as icons.
 
-I> [`How to create font icons using our metro studio and export as ttf? `](https://help.syncfusion.com/metro-studio/export-icon-font)
-[`How to set font family for the custom font in Label?`] (https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/fonts#using-a-custom-font)
+I> Refer the below links to know more about font icons,
+* [How to create font icons using our metro studio and export as ttf? ](https://help.syncfusion.com/metro-studio/export-icon-font)
+* [How to set font family for the custom font in Label? ] (https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/fonts#using-a-custom-font)
 
 ## Leading view
 
-A label can be added as a leading icon for the input view and positioned either inside or outside of the container of input view by setting the `LeadingViewPosition` property. By default, it will be positioned outside.
+A label can be added as a leading icon for the input view by setting [LeadingView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~LeadingView.html) property and it can be positioned either inside or outside of the container by setting the [LeadingViewPosition](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~LeadingViewPosition.html) property. By default, it will be positioned [Outside](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.ViewPosition.html).
 
 {% tabs %} 
 
@@ -55,7 +56,7 @@ inputLayout.InputView = new Entry();
 
 ## Trailing  view
 
-A label can be added as a trailing icon for the input view and positioned either inside or outside of the container of input view by setting the `TrailingViewPosition` property. By default, it will be positioned inside.
+A label can be added as a trailing icon for the input view by setting [TrailingView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~TrailingView.html) property and it can be positioned either inside or outside of the container of input view by setting the [TrailingViewPosition](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~TrailingViewPosition.html) property. By default, it will be positioned [Inside](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.ViewPosition.html).
 
 % tabs %} 
 

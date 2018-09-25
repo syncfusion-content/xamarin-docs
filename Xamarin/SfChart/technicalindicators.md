@@ -100,6 +100,8 @@ SfChart chart = new SfChart()
 
 {% endtabs %}
 
+N> The [`Volume`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataPoint~Volume.html) property can be used to get or set the volume value of financial data. 
+
 **Binding the items source of chart series**
 
 By setting [`Name`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FinancialSeriesBase~Name.html) property of [`FinancialSeriesBase`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FinancialSeriesBase.html) to the [`SeriesName`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FinancialTechnicalIndicator~SeriesName.html) property of `FinancialTechnicalIndicator` you can bind the items source of chart series to technical indicators, including x and y axis.
@@ -729,7 +731,7 @@ SfChart chart = new SfChart()
 This is mostly using indicator having [`ShortPeriod`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.MACDIndicator~ShortPeriod.html) and [`LongPeriod`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.MACDIndicator~LongPeriod.html) for defining the motion of the indicator.
 Also you can draw [`Line`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.MACDType.html), [`Histogram`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.MACDType.html) MACD or [`Both`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.MACDType.html) using the [`MACDType`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.MACDIndicator~MACDType.html) property, which defines the type of MACD to be drawn.
 
-The [`MACDLineColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.MACDIndicator~MACDLineColor.html) property is used to define the color for the MACD line  and the  [`HistogramLineColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.MACDIndicator~HistogramColor.html) property is used to define the color for the MACD histogram.
+The [`MACDLineColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.MACDIndicator~MACDLineColor.html) property is used to define the color for the MACD line  and the  [`HistogramLineColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.MACDIndicator~HistogramColor.html) property is used to define the color for the MACD histogram. The [`Trigger`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.MACDIndicator~Trigger.html) property can be used to define the trigger value for the indicator.
 You can specify the MACD indicator using the following code example.
 
 {% tabs %} 

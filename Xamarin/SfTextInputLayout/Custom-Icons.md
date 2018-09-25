@@ -13,6 +13,9 @@ Any custom icons can be added to the text input layout control at the leading ed
 
 Unicode or font icons for labels can be displayed as icons.
 
+I> [`How to create font icons using our metro studio and export as ttf? `](https://help.syncfusion.com/metro-studio/export-icon-font)
+[`How to set font family for the custom font in Label?`] (https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/fonts#using-a-custom-font)
+
 ## Leading view
 
 A label can be added as a leading icon for the input view and positioned either inside or outside of the container of input view by setting the `LeadingViewPosition` property. By default, it will be positioned outside.

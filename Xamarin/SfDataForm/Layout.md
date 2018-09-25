@@ -343,7 +343,7 @@ You can change the order of the `DataFormGroupItem` by using attributes.
 
 #### Using attributes
 
-You can set the order for the items in group by using the `Order` property along with `GroupName` property in display attribute.
+You can set the order of data form items in group by using the `Order` property along with `GroupName` property in display attribute.
 
 {% tabs %}
 {% highlight c# %}

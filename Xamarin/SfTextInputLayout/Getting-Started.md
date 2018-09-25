@@ -138,8 +138,7 @@ inputLayout.InputView = new Entry();
 
 Run the project, and check if you get following output to make sure that the project has been configured properly to add the text input layout control.
 
-![](Getting-Started_images/textInput_getting_img2.png)
-![](Getting-Started_images/textInput_getting_img3.png)
+![](Getting-Started_images/hint.gif)
 
 ## Enabling password visibility toggle
 

@@ -13,7 +13,7 @@ Any custom icons can be added to the text input layout control at the leading ed
 
 Unicode or font icons for labels can be displayed as icons.
 
-I> Refer the below links to know more about font icons,
+N> Refer the below links to know more about font icons,
 * [How to create font icons using our metro studio and export as ttf? ](https://help.syncfusion.com/metro-studio/export-icon-font)
 * [How to set font family for the custom font in Label? ] (https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/fonts#using-a-custom-font)
 

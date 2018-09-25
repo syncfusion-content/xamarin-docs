@@ -98,10 +98,10 @@ You can navigate to a desired bookmark destination using the `GotoBookmark(PdfBo
 {% highlight c# %}
 
 //Loads the PDF document in PdfLoadedDocument
-PdfLoadedDocument ldoc = new PdfLoadedDocument(documentStream);
+PdfLoadedDocument loadedDocument = new PdfLoadedDocument(documentStream);
 
 //Retrieves the bookmark collection from the loaded PDF document
-PdfBookmarkBase bookmark = ldoc.Bookmarks;
+PdfBookmarkBase bookmark = loadedDocument.Bookmarks;
 
 //Navigate to the specified bookmark destination offset
 pdfViewerControl.GoToBookmark(bookmark[0]);

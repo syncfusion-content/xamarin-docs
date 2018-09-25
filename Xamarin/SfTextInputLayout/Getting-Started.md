@@ -113,7 +113,7 @@ inputLayout.InputView = new Entry();
 {% endtabs %}
 
 ### Adding hint
-Floating label for the text input layout can be added by setting [Hint](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~Hint.html) property.
+Floating label for the text input layout can be added by setting [Hint](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~Hint.html) property. Visibility of the hint can be collapsed by setting [ShowHint](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~ShowHint.html) property as `false`, by default it is `true`.
 
 {% tabs %} 
 
@@ -135,6 +135,11 @@ inputLayout.InputView = new Entry();
 {% endhighlight %}
 
 {% endtabs %}
+
+When input view gets focused, hint label will be translated to top position and similarly it returns back to original position when unfocused without any value on it.
+
+The default translate animation for the hint can be diabled by setting [EnableHintAnimation](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~EnableHintAnimation.html) property as `false`. For translate animation in hint, alternatively you can use alpha animation by setting [EnableFloating](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~EnableFloating.html) property as `false`.
+
 
 Run the project, and check if you get following output to make sure that the project has been configured properly to add the text input layout control.
 

@@ -13,7 +13,7 @@ Containers improve the discoverability of input view by creating a contrast betw
 
 ## Filled
 
-The background of the input view will be filled with container color, and its stroke (at the bottom edge) color and thickness will be changed based on its states. It can be enabled by setting the `ContainerType` property to `Filled`.
+The background of the input view will be filled with container color, and its stroke (at the bottom edge) color and thickness will be changed based on its states. It can be enabled by setting the [ContainerType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~ContainerType.html) property to [Filled](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.ContainerType.html).
 
 {% tabs %} 
 
@@ -42,7 +42,7 @@ inputLayout.InputView = new Entry() { Text = "John" };
 
 ## Outlined
 
-When setting the `ContainerType` property to `Outlined`, the background of the container will be transparent, and the container will be covered with a rounded-corner border.
+When setting the [ContainerType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~ContainerType.html) property to [Outlined](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.ContainerType.html), the background of the container will be transparent, and the container will be covered with a rounded-corner border.
 
 {% tabs %} 
 

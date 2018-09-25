@@ -113,7 +113,7 @@ inputLayout.InputView = new Entry();
 {% endtabs %}
 
 ### Adding hint
-Floating label for the text input layout can be added by setting [Hint](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~HintProperty.html) property.
+Floating label for the text input layout can be added by setting [Hint](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~Hint.html) property.
 
 {% tabs %} 
 
@@ -142,7 +142,7 @@ Run the project, and check if you get following output to make sure that the pro
 
 ## Enabling password visibility toggle
 
-The password visibility toggle is used to show or hide the visibility of characters in the input view added to the control. You can enable this toggle by setting the [EnablePasswordVisibilityToggle](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~EnablePasswordVisibilityToggleProperty.html) property as `true`.
+The password visibility toggle is used to show or hide the visibility of characters in the input view added to the control. You can enable this toggle by setting the [EnablePasswordVisibilityToggle](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~EnablePasswordVisibilityToggle.html) property as `true`.
 
 {% tabs %} 
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Supported input views
 
-Input views can be added to the text input layout by setting [InputView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~InputViewProperty.html) property. In order to reduce the XAML syntax, this property applied with (ContentPropertyAttribute)[https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.contentpropertyattribute?view=xamarin-forms].
+Input views can be added to the text input layout by setting [InputView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~InputView.html) property. In order to reduce the XAML syntax, this property applied with (ContentPropertyAttribute)[https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.contentpropertyattribute?view=xamarin-forms].
 
 ## Entry
 

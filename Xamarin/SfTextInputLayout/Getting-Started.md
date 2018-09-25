@@ -73,7 +73,7 @@ Android platform does not require any additional configuration to render the tex
 
 ## Initializing text input layout
 
-Import the SfTextInputLayout namespace in respective page as demonstrated in the following code sample.
+Import the [SfTextInputLayout](https://help.syncfusion.com/cr/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html) control namespace in respective page as demonstrated in the following code sample.
 
 {% tabs %} 
 
@@ -91,7 +91,7 @@ using Syncfusion.XForms.TextInputLayout;
 
 {% endtabs %}
 
-Add any input view control such as [`Entry`]((https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/entry)), [`Editor`](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/editor), [`SfNumericTextBox`](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview), or [`SfMaskedEdit`](https://help.syncfusion.com/xamarin/sfmaskededit/overview), and add hint label (floating label).
+Add any input view control such as [Entry](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/entry), [Editor](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/editor), [SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview), or [SfMaskedEdit](https://help.syncfusion.com/xamarin/sfmaskededit/overview), and add hint label (floating label).
 
 {% tabs %} 
 
@@ -113,7 +113,7 @@ inputLayout.InputView = new Entry();
 {% endtabs %}
 
 ### Adding hint
-Floating label for the text input layout can be added by setting `Hint` property.
+Floating label for the text input layout can be added by setting [Hint](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~HintProperty.html) property.
 
 {% tabs %} 
 
@@ -142,7 +142,7 @@ Run the project, and check if you get following output to make sure that the pro
 
 ## Enabling password visibility toggle
 
-The password visibility toggle is used to show or hide the visibility of characters in the input view added to the control. You can enable this toggle by setting the `EnablePasswordVisibilityToggle` property to true.
+The password visibility toggle is used to show or hide the visibility of characters in the input view added to the control. You can enable this toggle by setting the [EnablePasswordVisibilityToggle](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~EnablePasswordVisibilityToggleProperty.html) property as `true`.
 
 {% tabs %} 
 

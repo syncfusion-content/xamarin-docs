@@ -29,8 +29,8 @@ You can find the Syncfusion libraries, samples and NuGet from the installed loca
 
 The "Forms" directory includes,
 
-* Individual control sample folders: It contains the samples for individual controls such as SfChart, SfDataGrid, etc. Since they represent the individual controls, these samples are light-weighted. You can check the samples for your required controls alone faster with minimum deployment time.
- 
+* The "Forms" directory contains the demo samples for each control such as Charts, DataGrid, etc. All the samples can be deployed in Android, iOS, and UWP platforms. Additionally, Charts, DataGrid, and ListView samples can be deployed in macOS platform also.
+
 * “nuget” folder: It contains the compiled assemblies of the above samples as NuGet package. It is referred in the common sample browser as explained in the next step.
 
 * It also contains showcase samples such as Patient Monitor, Server Monitor, and Invoice.

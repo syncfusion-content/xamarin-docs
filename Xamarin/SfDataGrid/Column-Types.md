@@ -1147,7 +1147,7 @@ Upon entering the edit mode at RowColumnIndex(1,1), the Picker pop up opens with
 
 ![](SfDataGrid_images/PickerColumn_PickerPopUp.png)
 
-When edit mode is exited by selecting a value(9) from the Picker pop up, the `GridCell` at RowColumn index(0,1) displays the corresponding OrderID value for the selected EmployeeID value which is 4. Note that the `GridCell` data of the PickerColumn is not changed and only the OrderID columns data is changed to 4. 
+When edit mode is exited by selecting a value(9) from the Picker pop up, the `GridCell` at RowColumn index(0,1) displays the corresponding OrderID value for the selected EmployeeID value which is 4.
 
 ![](SfDataGrid_images/PickerColumn_Customization.png)
 

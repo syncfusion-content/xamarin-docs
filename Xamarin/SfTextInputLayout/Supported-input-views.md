@@ -9,11 +9,11 @@ documentation: ug
 
 # Supported input views
 
-Input views can be added to the text input layout by setting [InputView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~InputView.html) property. In order to reduce the XAML syntax, this property applied with (ContentPropertyAttribute)[https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.contentpropertyattribute?view=xamarin-forms].
+Input views can be added to the text input layout control by setting the [InputView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~InputView.html) property. To reduce the XAML syntax, [InputView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~InputView.html) property is applied with [ContentPropertyAttribute](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.contentpropertyattribute?view=xamarin-forms).
 
 ## Entry
 
-To enter single line text input, you can add [Entry](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/entry).
+To enter a single line text input, add [Entry](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/entry).
 
 {% tabs %} 
 
@@ -43,7 +43,7 @@ inputLayout.InputView = new Entry();
 ## Editor
 
 
-To enter multi line text input, you can add [Editor](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/editor).
+To enter multi line text input, add [Editor](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/editor).
 
 
 {% tabs %} 
@@ -71,7 +71,7 @@ inputLayout.InputView = new Editor();
 
 ## Masked edit
 
-To initialize masked edit control and launch in each platform refer [getting started with masked edit](https://help.syncfusion.com/xamarin/sfmaskededit/getting-started),
+To initialize the masked edit control and launch it in each platform, refer to the [getting started with masked edit](https://help.syncfusion.com/xamarin/sfmaskededit/getting-started) documentation.
 
 {% tabs %} 
 
@@ -102,7 +102,7 @@ inputLayout.InputView = new SfMaskedEdit() { Keyboard = Keyboard.Numeric, Mask =
 
 ## Numeric text box
 
-To initialize numeric text box control and launch in each platform refer [getting started with numeric text box](https://help.syncfusion.com/xamarin/sfnumerictextbox/getting-started),
+To initialize the numeric text box control and launch it in each platform, refer to the [getting started with numeric text box](https://help.syncfusion.com/xamarin/sfnumerictextbox/getting-started) documentation.
 
 {% tabs %} 
 

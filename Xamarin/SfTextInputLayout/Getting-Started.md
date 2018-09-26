@@ -138,7 +138,7 @@ inputLayout.InputView = new Entry();
 
 When focusing the input view, the hint label will be moved to the top position; it will be returned to the original position when proceeding further (on unfocused) without entering any value.
 
-The default translate animation for the hint can be disabled by setting the [EnableHintAnimation](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~EnableHintAnimation.html) property to `false`. For translate animation in hint, alternatively you can use alpha animation by setting [EnableFloating](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~EnableFloating.html) property to `false`.
+The default translate animation for the hint can be disabled by setting the [EnableHintAnimation](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~EnableHintAnimation.html) property to `false`. Instead translate animation in hint, you can use the alpha animation by setting the [EnableFloating](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~EnableFloating.html) property to `false`.
 
 
 Run the project, and check if you get following output to make sure that the project has been configured properly to add the text input layout control.

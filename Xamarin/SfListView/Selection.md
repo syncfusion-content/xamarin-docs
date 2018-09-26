@@ -441,3 +441,7 @@ public partial class MainPage : ContentPage
 {% endtabs %}
 
 You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SelectionItemIndex1430542696).
+
+## Limitations
+
+* When a Grid loaded inside the [ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html) with BackgroundColor, the [SelectionBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionBackgroundColor.html) will not display. Because, the BackgroundColor of the `ItemTemplate` overlaps the `SelectionBackgroundColor`. In this case,you can set BackgroundColor for the ListView instead of `ItemTemplate`.

@@ -113,7 +113,7 @@ inputLayout.InputView = new Entry();
 {% endtabs %}
 
 ### Adding hint
-Floating label for the text input layout can be added by setting [Hint](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~Hint.html) property. Visibility of the hint can be collapsed by setting [ShowHint](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~ShowHint.html) property as `false`, by default it is `true`.
+Floating label for the text input layout can be added by setting the [Hint](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~Hint.html) property. Visibility of the hint can be collapsed by setting the [ShowHint](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~ShowHint.html) property to `false`. By default, this property is set to `true`.
 
 {% tabs %} 
 
@@ -136,9 +136,9 @@ inputLayout.InputView = new Entry();
 
 {% endtabs %}
 
-When input view gets focused, hint label will be translated to top position and similarly it returns back to original position when unfocused without any value on it.
+When focusing the input view, the hint label will be moved to the top position; it will be returned to the original position when proceeding further (on unfocused) without entering any value.
 
-The default translate animation for the hint can be disabled by setting [EnableHintAnimation](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~EnableHintAnimation.html) property as `false`. For translate animation in hint, alternatively you can use alpha animation by setting [EnableFloating](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~EnableFloating.html) property as `false`.
+The default translate animation for the hint can be disabled by setting the [EnableHintAnimation](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~EnableHintAnimation.html) property to `false`. For translate animation in hint, alternatively you can use alpha animation by setting [EnableFloating](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~EnableFloating.html) property to `false`.
 
 
 Run the project, and check if you get following output to make sure that the project has been configured properly to add the text input layout control.
@@ -147,7 +147,7 @@ Run the project, and check if you get following output to make sure that the pro
 
 ## Enabling password visibility toggle
 
-The password visibility toggle is used to show or hide the visibility of characters in the input view added to the control. You can enable this toggle by setting the [EnablePasswordVisibilityToggle](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~EnablePasswordVisibilityToggle.html) property as `true`.
+The password visibility toggle is used to show or hide the visibility of characters in the input view added to the control. You can enable this toggle by setting the [EnablePasswordVisibilityToggle](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~EnablePasswordVisibilityToggle.html) property to `true`.
 
 {% tabs %} 
 

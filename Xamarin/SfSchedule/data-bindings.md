@@ -456,8 +456,8 @@ scheduleAppointment.Interval = 1;
 scheduleAppointment.RecurrenceCount = 3;
 scheduleAppointment.RecurrenceRange = RecurrenceRange.Count;
 
-### How to get the occurrences date time list of recurring appointment using RRULE?
-You can get the occurrences date time list from `RRULE` using the GetRecurrenceDateTimeCollection() of `SfSchedule`.
+### How to get the occurrences date time list of recurring appointment from RRULE?
+You can get the occurrences date time list of recurring appointment from `RRULE` using the GetRecurrenceDateTimeCollection() of `SfSchedule`.
 
 {% tabs %}
 {% highlight c# %}

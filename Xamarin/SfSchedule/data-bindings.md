@@ -440,8 +440,8 @@ In Schedule "Xamarin.Forms UWP", there is no need to set IsRecursive property fo
 
 ![](PopulatingAppointments_images/RecurrenceAppointment.png)
 
-### How to get the Recurrence editor field from RRule?
-You can get the Recurrence properties of recurrence appointment from RRule of the following code.
+### How to get the Recurrence editor field from RRULE?
+You can get the Recurrence properties of recurrence appointment from `RRULE` of the following code.
 
 {% tabs %}
 {% highlight c# %}
@@ -456,8 +456,8 @@ scheduleAppointment.Interval = 1;
 scheduleAppointment.RecurrenceCount = 3;
 scheduleAppointment.RecurrenceRange = RecurrenceRange.Count;
 
-### How to get the DateTime Collection from RRule?
-You can get the date collection of recurrence appointment from RRule of the following code.
+### How to get the DateTime Collection from RRULE?
+You can get the date collection of recurrence appointment from `RRULE` of the following code.
 
 {% tabs %}
 {% highlight c# %}

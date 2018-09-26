@@ -106,7 +106,7 @@ inputLayout.InputView = new Entry() { Text = "John/" };
 
 ![](Supported-input-views/textInput_colors_img3.png)
 
-## Container Color
+## Container color
 The color of the container can be customized by setting the [ContainerBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~ContainerBackgroundColor.html) property. It is applicable only When [ContainerType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~ContainerType.html) property is set to [Filled](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.ContainerType.html).
 
 {% tabs %} 

@@ -191,6 +191,7 @@ The SfListView has been built from the ground up with an optimized view reuse st
     * The SfListView will not receive any gestures as it will be handled by the parent ScrollView.
     * Should define size to the SfListView if it loads inside ScrollView.
  * Avoid changing the cell layout based on the BindingContext. This incurs large layout and initialization costs.
+ * Implement a model class inherited with `INotifyPropertyChanged` interface to notify the property changes at runtime.
 
 ## Loading ListView inside ScrollView
 

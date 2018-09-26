@@ -156,8 +156,7 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        VisualContainer visualContainer = listView.GetVisualContainer();
-        scrollView = visualContainer.GetType().GetRuntimeProperties().First(x => x.Name == "ScrollOwner").GetValue(visualContainer) as ExtendedScrollView;
+        scrollView = listView.GetScrollView();
     }
 
     private void ChangeItemsSource_Clicked(object sender, EventArgs e)

@@ -339,11 +339,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ### Changing order of the DataFormGroupItem
 
-You can change the order of the `DataFormGroupItem` by using attributes.
-
-#### Using attributes
-
-You can set the order of data form items in group by using the `Order` property along with `GroupName` property in display attribute.
+You can change the order of the `DataFormGroupItem` by using attributes. You can set the order of data form items in group by using the `Order` property along with `GroupName` property in display attribute.
 
 {% tabs %}
 {% highlight c# %}

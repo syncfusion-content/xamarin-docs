@@ -13,7 +13,6 @@ documentation: ug
 
 You can find the Syncfusion libraries, samples and NuGet from the installed location in Mac.
 
-{Essential Studio installed location}\Syncfusion\Essential Studio\16.3.0.21\Xamarin
 
 * **"lib"** folder - e.g., /Users/labuser/Documents/Syncfusion/16.3.0.21/Xamarin/lib
 
@@ -29,9 +28,7 @@ You can find the Syncfusion libraries, samples and NuGet from the installed loca
 
 The "Forms" directory includes,
 
-* The "Forms" directory contains the demo samples for each control such as Charts, DataGrid, etc. All the samples can be deployed in Android, iOS, and UWP platforms. Additionally, Charts, DataGrid, and ListView samples can be deployed in macOS platform also.
-
-* “nuget” folder: It contains the compiled assemblies of the above samples as NuGet package. It is referred in the common sample browser as explained in the next step.
+* demo samples for each control such as Charts, DataGrid, etc. All the samples can be deployed in Android, iOS, and UWP platforms. Additionally, Charts, DataGrid, and ListView samples can be deployed in macOS platform also.
 
 * It also contains showcase samples such as Patient Monitor, Server Monitor, and Invoice.
 

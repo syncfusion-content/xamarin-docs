@@ -450,14 +450,14 @@ RecurrenceProperties recurrenceProperties = schedule.RRuleParser("FREQ=DAILY;INT
 {% endhighlight %}
 {% endtabs %}
 
-Recurrence properties retrieved from above code,
+Recurrence properties retrieved from above method,
 scheduleAppointment.RecurrenceType = RecurrenceType.Daily;
 scheduleAppointment.Interval = 1;
 scheduleAppointment.RecurrenceCount = 3;
 scheduleAppointment.RecurrenceRange = RecurrenceRange.Count;
 
-### How to get the DateTime Collection from RRULE?
-You can get the date collection from `RRULE` using the GetRecurrenceDateTimeCollection() of `SfSchedule`.
+### How to get the occurrences date time list of recurring appointment using RRULE?
+You can get the occurrences date time list from `RRULE` using the GetRecurrenceDateTimeCollection() of `SfSchedule`.
 
 {% tabs %}
 {% highlight c# %}
@@ -466,7 +466,7 @@ IEnumerable<DateTime> dateCollection = schedule.GetRecurrenceDateTimeCollection(
 {% endhighlight %}
 {% endtabs %}
 
-You can retrieve particular date from dateCollection using,
+Following occurrence dates can be retrieved from the given `RRULE`,
 var date0 = 5/7/2018;
 var date1 = 5/8/2018;
 var date2 = 5/9/2018;

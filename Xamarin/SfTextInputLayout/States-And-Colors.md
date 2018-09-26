@@ -9,7 +9,7 @@ documentation: ug
 
 # States and Colors
 
-Based on states, color will be applied to the hint label and the border. So when the input view is in focused state then focused color will be applied, similarly for other states also. Current hint color or active color can be obtained from [CurrentActiveColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~CurrentActiveColor.html) property.
+Based on the states, the colors will be applied to the hint labels and borders. So, when the input view is in focused state, the focused color will be applied; it is similar to other states also. The current hint color or active color can be obtained from the [CurrentActiveColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~CurrentActiveColor.html) property.
 
 N> Since error is not a state, the error color will not be set to [CurrentActiveColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~CurrentActiveColor.html) when [HasError](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~HasError.html) property is set to `true`.
 

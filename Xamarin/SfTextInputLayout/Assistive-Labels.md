@@ -9,7 +9,7 @@ documentation: ug
 
 # Adding assistive labels
 
-Assistive labels provide additional information about text entered into the input view controls.
+Assistive labels provide additional information about text entered in the input view controls.
 
 ## Helper text
 
@@ -112,5 +112,5 @@ inputLayout.InputView = new Entry();
 
 ![](Assistive-Labels/charcount.gif)
 
-N> When character count reaches beyond the maximum character length then error color will be applied to hint, border and counter label.
+N> When character count reaches the maximum character length, the error color will be applied to hint, border, and counter label.
 

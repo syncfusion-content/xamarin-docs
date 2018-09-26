@@ -1081,3 +1081,39 @@ schedule.AppointmentStyle = appointmentStyle;
 {% endtabs %} 
 
 ![](PopulatingAppointments_images/selection.png)
+
+### How to raise schedule events while using custom view for appointments?
+You can raise schedule events such as `CellTapped`, `CellDoubleTapped`, `CellLongPressed` by using the `InputTransparent` property of custom view.
+
+{% tabs %}
+{% highlight c# %}
+// Raise cell tapped event.
+schedule.CellTapped += Schedule_CellTapped;
+// Raise Appointment Loaded event.
+schedule.OnAppointmentLoadedEvent += Schedule_OnAppointmentLoadedEvent;
+
+...
+
+private void Schedule_OnAppointmentLoadedEvent(object sender, AppointmentLoadedEventArgs e)
+{
+var button = new Button { Text = "CustomView", BackgroundColor = Color.Blue };
+// Enable or disable the input transparent could be used to raise custom 
+// event or schedule inbuilt event.
+button.InputTransparent = true;
+button.Clicked += CustomView_Clicked;
+e.view = button;
+}
+
+private void Schedule_CellTapped(object sender, CellTappedEventArgs e)
+{
+    DisplayAlert("", "Cell Tapping Raised", "ok");
+}
+private void CustomView_Clicked(object sender, EventArgs e)
+{
+    DisplayAlert("", "Custom View Tapping Raised", "ok");
+}
+{% endhighlight %}
+{% endtabs %}
+
+>**NOTE**
+`InputTransparent` default value is false, custom view event could raise defaultly.

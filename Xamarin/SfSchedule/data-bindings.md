@@ -338,10 +338,8 @@ recurrenceProperties.RecurrenceRange = RecurrenceRange.Count;
 recurrenceProperties.Interval = 2;
 recurrenceProperties.IsDailyEveryNDays = true;
 recurrenceProperties.RecurrenceCount = 10;
-recurrenceProperties.RecurrenceRule = DependencyService.Get<IRecurrenceBuilder>().RRuleGenerator(recurrenceProperties, scheduleAppointment.StartTime, scheduleAppointment.EndTime);
+scheduleAppointment.RecurrenceRule = schedule.RRuleGenerator(recurrenceProperties, scheduleAppointment.StartTime, scheduleAppointment.EndTime);
 
-// Setting recurrence rule to schedule appointment
-scheduleAppointment.RecurrenceRule = recurrenceProperties.RecurrenceRule; 
 {% endhighlight %}
 {% endtabs %}
 
@@ -441,6 +439,37 @@ here [Recurrence_Appointment](http://www.syncfusion.com/downloads/support/direct
 In Schedule "Xamarin.Forms UWP", there is no need to set IsRecursive property for recurrence appointments. When a RecurrenceRule is set to schedule appointment, value of IsRecursive property will be set as true automatically for these appointments. So even if IsRecursive is set as false, there will be no effect on recurring appointments.
 
 ![](PopulatingAppointments_images/RecurrenceAppointment.png)
+
+### How to get the Recurrence editor field from RRule?
+You can get the Recurrence properties of recurrence appointment from RRule of the following code.
+
+{% tabs %}
+{% highlight c# %}
+DateTime dateTime = new DateTime(2018,5,7,9,0,0);
+RecurrenceProperties recurrenceProperties = schedule.RRuleParser("FREQ=DAILY;INTERVAL=1;COUNT=3", dateTime);
+{% endhighlight %}
+{% endtabs %}
+
+Recurrence properties retrieved from above code,
+scheduleAppointment.RecurrenceType = RecurrenceType.Daily;
+scheduleAppointment.Interval = 1;
+scheduleAppointment.RecurrenceCount = 3;
+scheduleAppointment.RecurrenceRange = RecurrenceRange.Count;
+
+### How to get the DateTime Collection from RRule?
+You can get the date collection of recurrence appointment from RRule of the following code.
+
+{% tabs %}
+{% highlight c# %}
+DateTime dateTime = new DateTime(2018,5,7,9,0,0);
+IEnumerable<DateTime> dateCollection = schedule.GetRecurrenceDateTimeCollection("FREQ=DAILY;INTERVAL=1;COUNT=3", dateTime);
+{% endhighlight %}
+{% endtabs %}
+
+You can retrieve particular date from dateCollection using,
+var date0 = 5/7/2018;
+var date1 = 5/8/2018;
+var date2 = 5/9/2018;
 
 ## Drag and Drop Appointments
 Appointments can be rescheduled using the drag and drop operation. To perform drag-and-drop operations within the schedule, enable the [AllowAppointmentDrag](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~AllowAppointmentDrag.html) property of `SfSchedule`.

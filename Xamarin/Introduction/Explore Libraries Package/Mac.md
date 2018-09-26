@@ -28,7 +28,7 @@ You can find the Syncfusion libraries, samples and NuGet from the installed loca
 
 The "Forms" directory includes,
 
-* demo samples for each control such as Charts, DataGrid, etc. All the samples can be deployed in Android, iOS, and UWP platforms. Additionally, Charts, DataGrid, and ListView samples can be deployed in macOS platform also.
+* Demo samples for each control such as Charts, DataGrid, etc. All the samples can be deployed in Android, iOS, and UWP platforms. Additionally, Charts, DataGrid, and ListView samples can be deployed in macOS platform also.
 
 * It also contains showcase samples such as Patient Monitor, Server Monitor, and Invoice.
 

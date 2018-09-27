@@ -289,26 +289,3 @@ To cancel resizing a column using the `SfDataGrid.ColumnResizing` event using th
                 e.Cancel = true;
         }
 {% endhighlight %}
-
-## Value changed event
-This event is triggered whenever the values has been changed in GridTextColumn, GridNumericColumn and GridSwitchColumn respectively. ValueChangedEventArgs contains the following properties:
-
-* [Column]        : Gets the Column.
-* [NewValue]      : Gets a value indicating whether the value is new value.
-* [RowColIndex]   : Gets the RowColumnIndex.
-* [RowData]       : Gets the RowData.
-
-{% highlight c# %}
-
-        dataGrid.ValueChanged += DataGrid_ValueChanged;
-
-        private void DataGrid_ValueChanged(object sender, ValueChangedEventArgs e)
-        {
-            var column = e.Column;
-            var newValue = e.NewValue;
-            var rowColIndex = e.RowColIndex;
-            var rowData = e.RowData;
-        }
-
-{% endhighlight%}
-

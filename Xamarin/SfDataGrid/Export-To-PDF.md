@@ -436,6 +436,39 @@ option.TopTableSummaryStyle = new PdfGridCellStyle()
 
 ![](SfDataGrid_images/PDF/HeaderTableSummartyStyle.png)
 
+## Exclude group summaries when exporting
+
+By default, the `GroupSummary` rows in the data grid will be exported to PDF. To export the SfDataGrid without `GroupSummary` rows, set the  [DataGridPdfExportOption.ExportGroupSummary](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridPdfExportOption~ExportGroupSummary.html) property to `false`.
+
+{% tabs %}
+{% highlight c# %}
+DataGridPdfExportOption option = new DataGridPdfExportOption();
+// Set false here to export the DataGrid without GroupSummary rows. The default value is true.
+//option.ExportGroupSummary = false;   
+{% endhighlight %}
+{% endtabs %}
+
+![](SfDataGrid_images/PDF/GroupSummaryPdf.png)
+
+### GroupSummaryStyle 
+
+`SfDataGrid` supports exporting the `GroupSummary` rows with custom style by using the [DataGridPdfExportOption.GroupSummaryStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGridConverter.iOS~Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption~GroupSummaryStyle.html) property.
+
+{% tabs %}
+{% highlight c# %}
+DataGridPdfExportOption pdfOption = new DataGridPdfExportOption();
+pdfOption.GroupSummaryStyle = new PdfGridCellStyle()
+{
+BackgroundBrush = PdfBrushes.Green,
+TextBrush = PdfBrushes.Yellow,
+TextPen = PdfPens.White,
+StringFormat = new PdfStringFormat() { Alignment = PdfTextAlignment.Right, CharacterSpacing = 3f, WordSpacing = 10f }
+};
+{% endhighlight %}
+{% endtabs %}
+
+![](SfDataGrid_images/PDF/GroupSummaryStylePdf.png)
+
 ## Customizing borders
 
 The SfDataGrid allows customizing the grid borders as follows using the `GridLineType` property:

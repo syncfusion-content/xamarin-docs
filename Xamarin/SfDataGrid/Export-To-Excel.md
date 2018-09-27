@@ -357,6 +357,38 @@ option.TopTableSummaryStyle = new ExportCellStyle()
 
 ![](SfDataGrid_images/Excel/SummaryStyle.png) 
 
+### ExportGroupSummary
+
+By default, the `GroupSummary` rows in the data grid will be exported to Excel. To export the `SfDataGrid` without group summaries, set the [DataGridExcelExportingOption.ExportGroupSummary](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption~ExportGroupSummary.html) property to `false`.
+
+{% tabs %}
+{% highlight c# %}
+DataGridExcelExportingOption option = new DataGridExcelExportingOption();
+// Set false here to export the DataGrid without GroupSummary rows. The default value is true.
+// option.ExportGroupSummary = false;
+{% endhighlight %}
+{% endtabs %}
+
+![](SfDataGrid_images/Excel/GroupSummaryExport.png)
+
+### GroupSummaryStyle 
+
+`SfDataGrid` supports exporting the `GroupSummary` rows with custom style by using the [DataGridExcelExportingOption.GroupSummaryStyle](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption~GroupSummaryStyle.html) property.
+
+{% tabs %}
+{% highlight c# %}
+DataGridExcelExportingOption option = new DataGridExcelExportingOption();
+option.GroupSummaryStyle = new ExportCellStyle()
+{
+    BackgroundColor = Xamarin.Forms.Color.Red,
+    BorderColor = Xamarin.Forms.Color.Yellow,
+    ForegroundColor = Xamarin.Forms.Color.White,
+};
+{% endhighlight %}
+{% endtabs %}
+
+![](SfDataGrid_images/Excel/GroupSummaryStyleExport.png)
+
 ### StartColumnIndex
 
 By default, the exported SfDataGrid will start from the 0th column in the Excel sheet but, you can specify the start column in the Excel sheet by using the [DataGridExcelExportingOption.StartColumnIndex](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption~StartColumnIndex.html) property.

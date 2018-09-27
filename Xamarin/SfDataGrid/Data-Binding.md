@@ -420,7 +420,7 @@ Refer the below code to bind the ItemsSource of GridPickerColumn from the ViewMo
 
 ### Binding the ItemsSource in ViewModel to the Picker loaded inside template
 
-The `ItemsSource` of a picker which is loaded inside the [GridTemplateColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridTemplateColumn.html) can also be assigned any value via binding by passing the binding conetxt as the `Source` to the `ItemsSource` property.
+The `ItemsSource` of a picker which is loaded inside the [GridTemplateColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridTemplateColumn.html) can also be assigned any value via binding by passing the binding context as the `Source` to the `ItemsSource` property.
 
 Refer the below code to bind the ItemsSource of Picker loaded inside the GridTemplateColumn from the ViewModel.
 

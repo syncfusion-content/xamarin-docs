@@ -909,7 +909,7 @@ schedule.MonthViewSettings = monthViewSettings;
 ![](monthview_images/selectiontextcolor.png)
 
 ### Selection indicator color customization
-Month cell Selection Indicator (circle notation for cell text) applicable only for iOS platform alone in Xamarin.Forms. This indicator Color can be customized using [SelectionIndicatorColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthViewSettings~SelectionIndicatorColor.html) property of `MonthViewSettings` in Xamarin.iOS. Using reflection you can achieve the same in Forms as well by setting the required color to the property after initializing the `SfScheduleRenderer` in override method of `FinishedLaunching` in `AppDelegate` of the iOS project.
+Month cell selection indicator color can be customized using [SelectionIndicatorColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthViewSettings~SelectionIndicatorColor.html) property of `MonthViewSettings` in Xamarin.iOS (Native). You can achieve the same in Forms as well by setting the required color to `SelectionIndicatorColor` property of the Xamarin.Forms (iOS) project using reflection.
 
 {% tabs %}
 {% highlight c# %}

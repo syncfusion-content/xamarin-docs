@@ -342,7 +342,7 @@ The [SfDataGrid.GridTappedCommand](https://help.syncfusion.com/cr/cref_files/xam
   // viewModel.cs
  public ViewModel()
         {
-            // assigning command action to Icommand type property
+            // assigning command action to ICommand type property
             TappedCommandAction = new Command(add);
 
             // assigning command action to your custom command type property
@@ -356,7 +356,7 @@ The [SfDataGrid.GridTappedCommand](https://help.syncfusion.com/cr/cref_files/xam
             set;
         }
 
-  // Custom command type property for binding wih DataGrid.TappedCommandAction
+  // Custom command type property for binding with DataGrid.TappedCommandAction
  public DerivedTappedCommand TappedCommandAction1
         {
             get;
@@ -417,7 +417,7 @@ The [SfDataGrid.GridDoubleTappedCommand](https://help.syncfusion.com/cr/cref_fil
   // viewModel.cs
  public ViewModel()
         {
-            // assigning command action to Icommand type property
+            // assigning command action to ICommand type property
             DoubleTappedCommandAction = new  Command(add);
 
             // assigning command action to your custom command type property
@@ -431,7 +431,7 @@ The [SfDataGrid.GridDoubleTappedCommand](https://help.syncfusion.com/cr/cref_fil
             set;
         }
 
-  // Custom command type property for binding wih DataGrid.DoubleTappedCommand
+  // Custom command type property for binding with DataGrid.DoubleTappedCommand
  public DerivedDoubleTappedCommand DoubleTappedCommandAction1
         {
             get;
@@ -492,7 +492,7 @@ The [SfDataGrid.GridLongPressedCommand](https://help.syncfusion.com/cr/cref_file
   // viewModel.cs
  public ViewModel()
         {
-            // assigning command action to Icommand type property
+            // assigning command action to ICommand type property
             LongPressedCommandAction  = new Command(add);
 
             // assigning command action to your custom command type property
@@ -505,7 +505,7 @@ The [SfDataGrid.GridLongPressedCommand](https://help.syncfusion.com/cr/cref_file
             get;
             set;
         }
-  // Custom command type property for binding wih DataGrid.GridLongPressedCommand
+  // Custom command type property for binding with DataGrid.GridLongPressedCommand
  public DerivedLongPressedCommand LongPressedCommandAction1
         {
             get;

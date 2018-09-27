@@ -1,35 +1,36 @@
 ---
 layout: post
 title: Markers
-description: This section describes about Map marker.
+description: This section describes about map marker.
 platform: xamarin
 control: SfMaps
 documentation: ug
 ---
+
 # Markers
 
-Markers provide some messages on the map.
+Markers are used to show some messages on maps.
 
-Markers are set to map by using the following two ways:
+Markers are set to the maps control using the following ways:
 
-1. Adding marker objects to map.
-2. Defining custom marker.
+* Adding marker objects
+* Defining custom markers
 
-## Adding marker
+## Adding marker objects
 
-Any number of markers can be added to the shape file layers using the [`Markers`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~Markers.html#) property. Each marker object contains the following list of properties:
+Any number of markers can be added to the shape file layers using the [`Markers`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~Markers.html#) property. Each marker object contains the following properties:
 
-[`Label`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarker~Label.html#): Text that is used to display information.
+[`Label`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarker~Label.html#): Displays some messages on maps.
 
-[`Latitude`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarker~Latitude.html#): Latitude point that specifies the y-axis position of the marker.
+[`Latitude`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarker~Latitude.html#): Specifies y-axis position of the marker.
 
-[`Longitude`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarker~Longitude.html#): Longitude point that specifies the x-axis position of the marker.
+[`Longitude`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarker~Longitude.html#): Specifies x-axis position of the marker.
 
 {% tabs %}
 
 {% highlight xml %}
 
-<maps:SfMaps x:Name="sfmap"  BackgroundColor="White">
+    <maps:SfMaps x:Name="sfmap"  BackgroundColor="White">
                 <maps:SfMaps.Layers>
                     <maps:ShapeFileLayer Uri="usa_state.shp">
                         <maps:ShapeFileLayer.Markers>
@@ -73,26 +74,181 @@ Any number of markers can be added to the shape file layers using the [`Markers`
 
 ![Marker Image](Images/Markers_img1.jpeg)
 
+## Customizing markers
 
-## Marker customization
+Markers can be customized using the [`MarkerSettings`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~MarkerSettings.html#) property in shape file layer.
 
-A map marker can be customized using the [`MarkerSettings`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~MarkerSettings.html#) property in shape file layer.
+### Customizing marker icons
 
-### Icon customization
+The size and color of marker icons can be customized using the [`IconSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarkerSetting~IconSize.html#) and [`IconColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarkerSetting~IconColor.html#) properties.
 
-Shape, size, and color of a marker icon can be customized using the [`MarkerIcon`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarkerSetting~MarkerIcon.html#) , [`IconSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarkerSetting~IconSize.html#), and [`IconColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarkerSetting~IconColor.html#) properties. 
+### Icon types
 
-### Label customization
+The shape of a marker icon can be customized using the [`MarkerIcon`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarkerSetting~MarkerIcon.html#) property. The maps control supports the following types of marker icons:
 
-A marker label’s color and size can be customized using the [`LabelColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarkerSetting~LabelColor.html#)  and [`LabelSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarkerSetting~LabelSize.html#) properties.
-
-The following code explains the marker customization.
+* Circle
+* Diamond
+* Image
+* Rectangle
+* Square
 
 {% tabs %}
 
 {% highlight xml %}
 
-<maps:SfMaps x:Name="sfmap"  BackgroundColor="White">
+     <maps:SfMaps x:Name="sfmap">
+
+        <maps:SfMaps.Layers>
+
+            <maps:ShapeFileLayer Uri="usa_state.shp">
+
+                <maps:ShapeFileLayer.Markers>
+
+                    <maps:MapMarker Label = "California" Latitude = "37" Longitude = "-120"/>
+
+                </maps:ShapeFileLayer.Markers>
+
+                <maps:ShapeFileLayer.MarkerSettings>
+
+                    <maps:MapMarkerSetting  MarkerIcon="Square"/>
+
+                </maps:ShapeFileLayer.MarkerSettings>
+
+            </maps:ShapeFileLayer>
+
+        </maps:SfMaps.Layers>
+
+    </maps:SfMaps>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfMaps map = new SfMaps();
+
+            ShapeFileLayer layer = new ShapeFileLayer();
+
+            layer.Uri = "usa_state.shp";
+
+            map.Layers.Add(layer);
+
+            MapMarker marker = new MapMarker();
+
+            marker.Label = "California";
+
+            marker.Latitude = "37";
+
+            marker.Longitude = "-120";
+
+            layer.Markers.Add(marker);
+
+            MapMarkerSetting markerSetting = new MapMarkerSetting();
+
+            markerSetting.MarkerIcon = MapMarkerIcon.Square;
+
+            layer.MarkerSettings = markerSetting;
+
+            this.Content = map;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Images/Marker_icon_type.png)
+
+### Setting image marker icon
+
+You can pin an image as marker icon by setting the icon type as `Image`. Set [`ImageSource`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarkerSetting~ImageSource.html) to get the image from local path.
+
+{% tabs %}
+
+{% highlight xml %}
+
+     <maps:SfMaps x:Name="sfmap">
+        
+        <maps:SfMaps.Layers>
+            
+            <maps:ShapeFileLayer Uri="usa_state.shp">
+                
+                <maps:ShapeFileLayer.Markers>
+
+                    <maps:MapMarker Label = "Texas" Latitude = "31.267153" Longitude = "-97.7430608"/>
+
+                    <maps:MapMarker Label = "California" Latitude = "37" Longitude = "-120"/>
+
+                </maps:ShapeFileLayer.Markers>
+
+                <maps:ShapeFileLayer.MarkerSettings>
+
+                    <maps:MapMarkerSetting  MarkerIcon="Image" ImageSource="pin.png"/>
+
+                </maps:ShapeFileLayer.MarkerSettings>
+                
+            </maps:ShapeFileLayer>
+            
+        </maps:SfMaps.Layers>
+        
+    </maps:SfMaps>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfMaps map = new SfMaps();
+
+            ShapeFileLayer layer = new ShapeFileLayer();
+
+            layer.Uri = "usa_state.shp";
+
+            map.Layers.Add(layer);
+
+            MapMarker marker = new MapMarker();
+
+            marker.Label = "Texas";
+
+            marker.Latitude = "31.267153";
+
+            marker.Longitude = "-97.7430608";
+
+            layer.Markers.Add(marker);
+
+            MapMarker marker1 = new MapMarker();
+
+            marker1.Label = "California";
+
+            marker1.Latitude = "37";
+
+            marker1.Longitude = "-120";
+
+            layer.Markers.Add(marker1);
+
+            MapMarkerSetting markerSetting = new MapMarkerSetting();
+
+            markerSetting.MarkerIcon = MapMarkerIcon.Image;
+
+            markerSetting.ImageSource = "pin.png";
+
+            layer.MarkerSettings = markerSetting;
+
+            this.Content = map;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Images/Marker_icon_type_image.png)
+
+### Customizing labels
+
+The color and size of marker labels can be customized using the [`LabelColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarkerSetting~LabelColor.html#) and [`LabelSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarkerSetting~LabelSize.html#) properties.
+
+The following code sample explains how to customize a marker.
+
+{% tabs %}
+
+{% highlight xml %}
+
+    <maps:SfMaps x:Name="sfmap"  BackgroundColor="White">
                 <maps:SfMaps.Layers>
                     <maps:ShapeFileLayer Uri="usa_state.shp">
                         <maps:ShapeFileLayer.Markers>
@@ -154,11 +310,11 @@ SfMaps map = new SfMaps();
 
 {% endtabs %}
 
-![](Images/Markers_img2.jpeg)
+![](Images/Markers_img4.jpeg)
 
 ## Custom marker
 
-Maps provide support for defining the custom marker using the [`MarkerTemplate`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~MarkerTemplate.html#) property.
+The maps control provides support for defining custom markers using the [`MarkerTemplate`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~MarkerTemplate.html#) property.
 
 {% tabs %}
 
@@ -281,7 +437,7 @@ Maps provide support for defining the custom marker using the [`MarkerTemplate`]
 
 {% endtabs %}
 
-Below snippet explains on how to define custom marker with image support. 
+The following code sample explains how to define a custom marker with image support.
 
 {% tabs %}
 
@@ -307,15 +463,13 @@ ImageName = ImageSource.FromResource("MapsSample.pin.png");
 
 {% endtabs %}
 
-![](Images/Markers_img3.jpeg)
+![](Images/Markers_img5.jpeg)
 
 ## Events
 
+The `MarkerSelected` event is fired when a marker is selected. The `CustomView` and `MapMarker` will be passed to `MarkerSelectedEventArgs`.
 
-The `MarkerSelected` event is fired when the marker is selected. The `CustomView` and `MapMarker` have been passed to MarkerSelectedEventArgs.
-
-If you set any view for the CustomView property of MarkerSelectedEventArgs, then the corresponding view will be applied to the selected marker.
-
+If you set any view for the `CustomView` property of MarkerSelectedEventArgs, then the corresponding view will be applied to the selected marker.
 
 {% tabs %}
 

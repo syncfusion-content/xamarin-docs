@@ -92,7 +92,7 @@ listView.IsStickyFooter = true;
 
 ## How to
 
-### TabView appearence using listview header
+### TabView appearance using listview header
 
 The [SfListView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView.html) allows performing tab view structure by customizing the [HeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~HeaderTemplate.html) to load any view.
 

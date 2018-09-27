@@ -211,7 +211,7 @@ The [`CustomGradientColors`](https://help.syncfusion.com/cr/cref_files/xamarin/S
 
 The [`StartPoint`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartGradientColor~StartPoint.html) and [`EndPoint`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartGradientColor~EndPoint.html)  properties of [`ChartGradientColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartGradientColor.html) is used to configure the direction of gradient color, [`GradientStops`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartGradientColor~GradientStops.html)  property is used to set the color based on the offset.
 
-The [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartGradientStop~Color.html) and [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartGradientStop~Color.html)  properties of [`ChartGradientStop`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartGradientStop.html) is used to configure the color and offset position of each color. 
+The [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartGradientStop~Color.html) and [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartGradientStop~Offset.html) properties of [`ChartGradientStop`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartGradientStop.html) is used to configure the color and offset position of each color. 
 
 Following code snippets and screenshot illustrates how to apply the gradient color to the chart series.
 
@@ -335,3 +335,36 @@ Following code snippet and screenshot illustrates how to apply the gradient colo
 {% endtabs %}
 
 ![](appearance_images/gradientchart.png)
+
+## Plotting Area Customization
+
+[`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html) provides the [`AreaBorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~AreaBorderColor.html), [`AreaBorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~AreaBorderWidth.html), and [`AreaBackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~AreaBackgroundColor.html) properties to customize the plot area.
+
+The following code samples demonstrate the usage of these properties:
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart  
+
+AreaBackgroundColor="Cyan"  
+
+AreaBorderColor="Gray" 
+
+AreaBorderWidth="3"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+chart.AreaBackgroundColor = Color.Cyan;
+chart.AreaBorderColor = Color.Gray;
+chart.AreaBorderWidth = 3;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+

@@ -1116,4 +1116,4 @@ private void CustomView_Clicked(object sender, EventArgs e)
 {% endtabs %}
 
 >**NOTE**
-`InputTransparent` default value is false, custom view event could raise defaultly.
+`InputTransparent` default value is false, custom view event could be raised as default.

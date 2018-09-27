@@ -329,15 +329,9 @@ The [SfDataGrid.GridTappedCommand](https://help.syncfusion.com/cr/cref_files/xam
         <local:ViewModel x:Name="viewModel" />
 </ContentPage.BindingContext>
 
- // Directly assign command type property
-<sfgrid:SfDataGrid x:Name="dataGrid"
+ <sfgrid:SfDataGrid x:Name="dataGrid"
                    ItemsSource="{Binding OrdersInfo}"
                    GridTappedCommand="{Binding TappedCommandAction}"/>
-
-// written a class derived from `ICommand` interface and assign to CustomClass type property
-<sfgrid:SfDataGrid x:Name="dataGrid"
-                   ItemsSource="{Binding OrdersInfo}"
-                   GridTappedCommand="{Binding TappedCommandAction1}"/>
 
 {% endhighlight %}
 {% endtabs %}
@@ -345,21 +339,25 @@ The [SfDataGrid.GridTappedCommand](https://help.syncfusion.com/cr/cref_files/xam
 {% tabs %}
 {% highlight c# %}
 
-// viewModel.cs
-
+  // viewModel.cs
  public ViewModel()
         {
+            // assigning command action to Icommand type property
             TappedCommandAction = new Command(add);
+
+            // assigning command action to your custom command type property
             TappedCommandAction1 = new DerivedTappedCommand();          
         }
 
-public ICommand TappedCommandAction
+  // ICommand type property for binding with DataGrid.TappedCommandAction
+ public ICommand TappedCommandAction
         {
             get;
             set;
         }
 
-public DerivedTappedCommand TappedCommandAction1
+  // Custom command type property for binding wih DataGrid.TappedCommandAction
+ public DerivedTappedCommand TappedCommandAction1
         {
             get;
             set;
@@ -370,6 +368,7 @@ public DerivedTappedCommand TappedCommandAction1
           //your logics here
         }
 
+  // below codes for writing custom command derived from ICommand.
  public class DerivedTappedCommand : ICommand
     {
         public event EventHandler CanExecuteChanged;
@@ -405,15 +404,9 @@ The [SfDataGrid.GridDoubleTappedCommand](https://help.syncfusion.com/cr/cref_fil
         <local:ViewModel x:Name="viewModel" />
 </ContentPage.BindingContext>
 
-// Directly assign command type property
 <sfgrid:SfDataGrid x:Name="dataGrid"
                    ItemsSource="{Binding OrdersInfo}"
                     GridDoubleTappedCommand="{Binding DoubleTappedCommandAction}" />
-
-// written a class derived from `ICommand` interface and assign to CustomClass type property
-<sfgrid:SfDataGrid x:Name="dataGrid"
-                   ItemsSource="{Binding OrdersInfo}"
-                    GridDoubleTappedCommand="{Binding DoubleTappedCommandAction1}" />
 
 {% endhighlight %}
 {% endtabs %}
@@ -421,31 +414,37 @@ The [SfDataGrid.GridDoubleTappedCommand](https://help.syncfusion.com/cr/cref_fil
 {% tabs %}
 {% highlight c# %}
 
-// viewModel.cs
-
+  // viewModel.cs
  public ViewModel()
         {
-            DoubleTappedCommandAction = new  Command(add)
+            // assigning command action to Icommand type property
+            DoubleTappedCommandAction = new  Command(add);
+
+            // assigning command action to your custom command type property
             DoubleTappedCommandAction1 = new DerivedDoubleTappedCommand();
         }
 
+  // ICommand type property for binding with DataGrid.DoubleTappedCommand
  public ICommand DoubleTappedCommandAction
         {
             get;
             set;
         }
-  public DerivedDoubleTappedCommand DoubleTappedCommandAction1
+
+  // Custom command type property for binding wih DataGrid.DoubleTappedCommand
+ public DerivedDoubleTappedCommand DoubleTappedCommandAction1
         {
             get;
             set;
         }
 
-public void add()
+ public void add()
         {
           //your logics here
         }
 
-  public class DerivedDoubleTappedCommand : ICommand
+  // below codes for writing custom command derived from ICommand.
+ public class DerivedDoubleTappedCommand : ICommand
     {
         public event EventHandler CanExecuteChanged;
      
@@ -480,16 +479,9 @@ The [SfDataGrid.GridLongPressedCommand](https://help.syncfusion.com/cr/cref_file
         <local:ViewModel x:Name="viewModel" />
 </ContentPage.BindingContext>
 
-// Directly assign command type property
 <sfgrid:SfDataGrid x:Name="dataGrid"
                    ItemsSource="{Binding OrdersInfo}"
                    GridLongPressedCommand="{Binding LongPressedCommandAction}">
-
-// written a class derived from `ICommand` interface and assign to CustomClass type property
-<sfgrid:SfDataGrid x:Name="dataGrid"
-                   ItemsSource="{Binding OrdersInfo}"
-                    GridLongPressedCommand="{Binding LongPressedCommandAction1}" />
-
 
 {% endhighlight %}
 {% endtabs %}
@@ -497,32 +489,36 @@ The [SfDataGrid.GridLongPressedCommand](https://help.syncfusion.com/cr/cref_file
 {% tabs %}
 {% highlight c# %}
 
-// viewModel.cs
-
+  // viewModel.cs
  public ViewModel()
         {
+            // assigning command action to Icommand type property
             LongPressedCommandAction  = new Command(add);
+
+            // assigning command action to your custom command type property
             LongPressedCommandAction1 = new DerivedLongPressedCommand();
         }
 
+  // ICommand type property for binding with DataGrid.GridLongPressedCommand
  public ICommand LongPressedCommandAction
         {
             get;
             set;
         }
-
-  public DerivedLongPressedCommand LongPressedCommandAction1
+  // Custom command type property for binding wih DataGrid.GridLongPressedCommand
+ public DerivedLongPressedCommand LongPressedCommandAction1
         {
             get;
             set;
         }
 
-public void add()
+ public void add()
         {
            // your logics here
         }
 
-  public class DerivedLongPressedCommand : ICommand
+  // below codes for writing custom command derived from ICommand.
+ public class DerivedLongPressedCommand : ICommand
     {
         public event EventHandler CanExecuteChanged;
      

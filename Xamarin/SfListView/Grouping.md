@@ -995,7 +995,7 @@ The following screenshot shows the output when group header appearance changed b
 
 ![](SfListView_images/SfListView-GroupHeaderAppearence.png)
 
-### GroupHeader spacing between the groups
+### Providing Indentation for GroupHeader items
 
 ListView allows you to provide space between the group header items by using the [Margin](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.view.margin?view=xamarin-forms#Xamarin_Forms_View_Margin) property of parent view in the [GroupHeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~GroupHeaderTemplate.html) property. For example, in the following code snippet, StackLayout is considered as parent view and spacing is provided by setting its margin.
 

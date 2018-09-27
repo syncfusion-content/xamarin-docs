@@ -765,7 +765,7 @@ N> For Vertical orientation, the group header size is considered as height and f
 
 ### CheckBox in group header
 
-The SfListView supports selecting each group and items in the group like a checkBox selection by customizing the [SfListView.GroupHeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~GroupHeaderTemplate.html) and the [ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms%7ESyncfusion.ListView.XForms.SfListView%7EItemTemplate.html) respectively. The checkbox state will be update by using converter.
+ListView supports selecting each group and items in the group like a checkBox selection by customizing the [SfListView.GroupHeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~GroupHeaderTemplate.html) and the [ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms%7ESyncfusion.ListView.XForms.SfListView%7EItemTemplate.html) respectively. The checkbox state will be update by using converter.
 
 {% tabs %}
 {% highlight xaml %}

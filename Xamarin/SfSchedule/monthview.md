@@ -879,8 +879,8 @@ Inline view customization - There is no support for inline view appointments cus
 ## Selection
 You can customize the default appearance of selection UI in the month cells.
 
-* [Selection text color customization](#Selection-text-color-customization)
-* [Selection indicator color customization](#Selection-indicator-color-customization)
+* [Selection text color customization](#selection-text-color-customization)
+* [Selection indicator color customization](#selection-indicator-color-customization)
 * [Selection customization using style](#selection-customization-using-style)
 * [Selection customization using custom View](#selection-customization-using-custom-view)
 * [Programmatic selection](#programmatic-selection)

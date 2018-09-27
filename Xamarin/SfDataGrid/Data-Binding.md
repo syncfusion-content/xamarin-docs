@@ -232,9 +232,9 @@ dataGrid.NotificationSubscriptionMode = NotificationSubscriptionMode.CollectionC
 {% endtabs %}
 
 ### Binding SfDataGrid.SelectedIndex property
-[SfDataGrid.SelectedIndex](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectedIndex.html) is a bindable property and it can be binded from the ViewModel. SfDataGrid.SelectedIndex is a int data type. It gets or sets the selected row's index in the SfDataGrid.
+You can bind any int value to the bindable property [SfDataGrid.SelectedIndex](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectedIndex.html) which gets or sets the lastly selected row's index in the SfDataGrid.
 
-Refer the below code to bind the SfDataGrid.SelectedIndex from the ViewModel.
+Refer the below code to bind the `SfDataGrid.SelectedIndex` from the ViewModel.
 
 {% highlight xaml%}
 
@@ -268,9 +268,9 @@ Refer the below code to bind the SfDataGrid.SelectedIndex from the ViewModel.
 
 ### Binding SfDataGrid.SelectedItem property
 
-[SfDataGrid.SelectedItem](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectedItem.html) is a bindable property and it can be binded from ViewModel. SelectedItem is an Object data type. It gets or sets the selected item in the SfDataGrid.
+You can bind any object value to the bindable property [SfDataGrid.SelectedItem](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectedItem.html) which gets or sets the selected item in the SfDataGrid.
 
-Refer the below code to bind the SfDataGrid.SelectedItem from the ViewModel.
+Refer the below code to bind the `SfDataGrid.SelectedItem` from the ViewModel.
 
 {% highlight xaml%}
 
@@ -303,9 +303,9 @@ Refer the below code to bind the SfDataGrid.SelectedItem from the ViewModel.
 {% endhighlight %}
 
 ### Binding SfDataGrid.SelectedItems property
-[SfDataGrid.SelectedItems](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectedItems.html) is a bindable property and it can be binded from ViewModel. SfDataGrid.SelectedItems is collection of object type. It gets or sets the collection of selected items collection of the SfDataGrid.
+You can bind any object type collection to the bindable property SfDataGrid[SfDataGrid.SelectedItems](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectedItems.html) which gets or sets the collection of `SelectedItems` collection in the SfDataGrid.
 
-Refer the below code to bind the SfDataGrid.SelectedItems from the ViewModel.
+Refer the below code to bind the `SfDataGrid.SelectedItems` from the ViewModel.
 
 {% highlight xaml%}
 
@@ -341,7 +341,7 @@ Refer the below code to bind the SfDataGrid.SelectedItems from the ViewModel.
 
 ### Binding GridColumn properties
 
-GridColumn properties such as HeaderCellTextSize,CellTextSize,FontAttribute,RecordFont,HeaderFont etc.., can be binded from ViewModel. 
+You can also assign value via binding to the properties of the [GridColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn.html) such as [HeaderCellTextSize](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderCellTextSize.html),[CellTextSize](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~CellTextSize.html),[FontAttribute](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~FontAttribute.html),[RecordFont](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~RecordFont.html),[HeaderFont](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderFont.html) etc. 
 
 Refer the below code to bind the GridColumn properties from the ViewModel.
 
@@ -379,7 +379,7 @@ Refer the below code to bind the GridColumn properties from the ViewModel.
 
 ### Binding GridPickerColumn ItemsSource from ViewModel
 
-The ItemsSource of GridPickerColumn can be binded from the ViewModel. To get the collection of items in the picker BindingContext needs to be set for it. 
+You can assign any object typed collection to the [GridPickerColumn.ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridPickerColumn~ItemsSource.html) to display a list of items in the `GridPickerColumn` when entering edit mode. 
 
 Refer the below code to bind the ItemsSource of GridPickerColumn from the ViewModel.
 
@@ -420,7 +420,7 @@ Refer the below code to bind the ItemsSource of GridPickerColumn from the ViewMo
 
 ### Binding the ItemsSource in ViewModel to the Picker loaded inside template
 
-The ItemsSource of a picker which is loaded inside the GridTemplateColumn can be binded from the ViewModel. You need to set the Source for the picker loaded inside the GridTemplateColumn to get the items in it.
+The `ItemsSource` of a picker which is loaded inside the [GridTemplateColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridTemplateColumn.html) can also be assigned any value via binding by passing the binding conetxt as the `Source` to the `ItemsSource` property.
 
 Refer the below code to bind the ItemsSource of Picker loaded inside the GridTemplateColumn from the ViewModel.
 
@@ -465,7 +465,7 @@ Refer the below code to bind the ItemsSource of Picker loaded inside the GridTem
 
 ### Binding the button command in template column to ViewModel
 
-The Command property of the Button loaded inside the GridTemplateColumn can be binded from the ViewModel.
+You can also assign any value to the Command property of the Button loaded inside the GridTemplateColumn via binding.
 
 Refer the below code to bind the command property of Button loaded inside the GridTemplateColumn from the ViewModel.
 

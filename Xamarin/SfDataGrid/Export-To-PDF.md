@@ -1090,11 +1090,9 @@ private void PdfExport_CellExporting(object sender, DataGridCellPdfExportingEven
 
 ## Exporting the selected rows of SfDataGrid
 
-SfDataGrid allows you to export the Selected rows alone, by default all the rows along with selected rows will be exported. 
+SfDataGrid allows you to export only the currently selected rows in the grid to the worksheet using the [DataGridExcelExportingController.ExportToExcel](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridPdfExportingController~ExportToPdf.html) method by passing the instance of the SfDataGrid and [SfDataGrid.SelectedItems](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectedItems.html) collection as an argument.
 
-You can export the SfDataGrid.SelectedItems alone to Pdf by using the [DataGridExcelExportingController.ExportToPdf](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridPdfExportingController~ExportToPdf.html) method by passing the SfDataGrid and SfDataGrid.SelectedItems as an argument.
-
-Refer the below code to export the selected rows alone.
+Refer the below code to export the selected rows alone to the PDF document.
 
 {% highlight c# %}
 

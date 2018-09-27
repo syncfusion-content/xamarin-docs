@@ -259,7 +259,7 @@ The shape layers are the core layers of the maps. Multiple layers can be added t
 Multiple layers can be added to the maps using [`Sublayer`](https://help.syncfusion.com/xamarin/sfmaps/sublayer).
 
 
-### Displaying layer in the view
+## Displaying layer in the view
 
 The [`BaseMapIndex`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.SfMaps~BaseMapIndexProperty.html) property allows drill-down from main layer to another layer.
 

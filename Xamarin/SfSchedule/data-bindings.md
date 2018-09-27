@@ -1097,8 +1097,7 @@ schedule.OnAppointmentLoadedEvent += Schedule_OnAppointmentLoadedEvent;
 private void Schedule_OnAppointmentLoadedEvent(object sender, AppointmentLoadedEventArgs e)
 {
 var button = new Button { Text = "CustomView", BackgroundColor = Color.Blue };
-// Enable or disable the input transparent could be used to raise custom 
-// event or schedule inbuilt event.
+// Set input transparent to `true` to raise schedule inbuilt event.
 button.InputTransparent = true;
 button.Clicked += CustomView_Clicked;
 e.view = button;
@@ -1108,12 +1107,8 @@ private void Schedule_CellTapped(object sender, CellTappedEventArgs e)
 {
     DisplayAlert("", "Cell Tapping Raised", "ok");
 }
-private void CustomView_Clicked(object sender, EventArgs e)
-{
-    DisplayAlert("", "Custom View Tapping Raised", "ok");
-}
 {% endhighlight %}
 {% endtabs %}
 
 >**NOTE**
-`InputTransparent` default value is false, custom view event could be raised as default.
+`InputTransparent` default value is false, custom view event will be raised by default.

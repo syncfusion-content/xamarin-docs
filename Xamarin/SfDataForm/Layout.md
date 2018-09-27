@@ -337,6 +337,79 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ![](SfDataForm_images/DataFormGroup_Events.png)
 
+### Changing order of the DataFormGroupItem
+
+You can change the order of the `DataFormGroupItem` by using attributes. You can set the order of data form items in group by using the `Order` property along with `GroupName` property in display attribute.
+
+{% tabs %}
+{% highlight c# %}
+public class ContactInfo
+{
+    private string lastName;
+    private string contactNo;
+    public ContactInfo()
+    {
+
+    }
+
+    private string firstName;
+    [Display(Order = 0, GroupName = "Name")]
+    public string FirstName
+    {
+        get { return this.firstName; }
+        set
+        {
+            this.firstName = value;
+        }
+    }
+
+    [Display(Order = 2, GroupName = "Name")]
+    public string LastName
+    {
+        get { return this.lastName; }
+        set
+        {
+            this.lastName = value;
+        }
+    }
+
+    private string middleName;
+    [Display(Order =1, GroupName = "Name")]
+    public string MiddleName
+    {
+        get { return this.middleName; }
+        set
+        {
+            this.middleName = value;
+        }
+    }
+
+    private string email;
+    [Display(Order = 1, GroupName = "Details")]
+    public string Email
+    {
+        get { return email; }
+        set
+        {
+            this.email = value;
+        }
+    }
+
+    [Display(Order = 0, GroupName = "Details")]
+    public string ContactNumber
+    {
+        get { return contactNo; }
+        set
+        {
+            this.contactNo = value;
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+![](SfDataForm_images/GroupItemOder.png)
+
 ### Changing group name for group
 
 You can change the `GroupName` for the group in the `AutoGeneratingDataFormItem` event.

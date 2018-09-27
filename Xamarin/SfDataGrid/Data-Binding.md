@@ -230,3 +230,286 @@ To set the NotificationSubscriptionMode property, follow the code example.
 dataGrid.NotificationSubscriptionMode = NotificationSubscriptionMode.CollectionChange;
 {% endhighlight %}
 {% endtabs %}
+
+### Binding SfDataGrid.SelectedIndex property
+You can bind any int value to the bindable property [SfDataGrid.SelectedIndex](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectedIndex.html) which gets or sets the lastly selected row's index in the SfDataGrid.
+
+Refer the below code to bind the `SfDataGrid.SelectedIndex` from the ViewModel.
+
+{% highlight xaml%}
+
+ <sfgrid:SfDataGrid x:Name="dataGrid"
+                    AutoGenerateColumns="False" 
+                    ItemsSource="{Binding OrderInfoCollection}"
+                    SelectionMode="Multiple"
+                    SelectedIndex="{Binding SelectedIndex}">
+ </sfgrid:SfDataGrid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+        //ViewModel.cs code
+
+        private int _selectedIndex;
+
+        public int SelectedIndex
+        {
+            get { return _selectedIndex; }
+            set { this._selectedIndex = value;RaisePropertyChanged("SelectedIndex"); }
+        }
+
+         public ViewModel()
+        {
+           this.SelectedIndex = 5;
+        }
+
+{% endhighlight %}
+
+### Binding SfDataGrid.SelectedItem property
+
+You can bind any object value to the bindable property [SfDataGrid.SelectedItem](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectedItem.html) which gets or sets the selected item in the SfDataGrid.
+
+Refer the below code to bind the `SfDataGrid.SelectedItem` from the ViewModel.
+
+{% highlight xaml%}
+
+ <sfgrid:SfDataGrid x:Name="dataGrid"
+                    AutoGenerateColumns="False" 
+                    ItemsSource="{Binding OrderInfoCollection}"
+                    SelectionMode="Multiple"
+                    SelectedItem="{Binding SelectedItem}">
+ </sfgrid:SfDataGrid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+        //ViewModel.cs code
+
+        private object _selectedItem;
+
+         public object SelectedItem
+        {
+            get { return _selectedItem; }
+            set { this._selectedItem = value; RaisePropertyChanged("SelectedItem"); }
+        }
+
+         public ViewModel()
+        {
+            this.SelectedItem = this.OrderInfoCollection[8];
+        }
+
+{% endhighlight %}
+
+### Binding SfDataGrid.SelectedItems property
+You can bind any object type collection to the bindable property SfDataGrid[SfDataGrid.SelectedItems](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectedItems.html) which gets or sets the collection of `SelectedItems` collection in the SfDataGrid.
+
+Refer the below code to bind the `SfDataGrid.SelectedItems` from the ViewModel.
+
+{% highlight xaml%}
+
+ <sfgrid:SfDataGrid x:Name="dataGrid"
+                    AutoGenerateColumns="False" 
+                    ItemsSource="{Binding OrderInfoCollection}"
+                    SelectionMode="Multiple"
+                    SelectedItems="{Binding SelectedItems}">
+ </sfgrid:SfDataGrid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+        //ViewModel.cs code
+
+        private ObservableCollection<object> _selectedItems;
+
+        public ObservableCollection<object> SelectedItems
+        {
+            get { return _selectedItems; }
+            set { this._selectedItems = value; RaisePropertyChanged("SelectedItems"); }
+        }
+
+         public ViewModel()
+        {
+          this.SelectedItems.Add(OrderInfoCollection[1]);
+          this.SelectedItems.Add(OrderInfoCollection[5]);
+          this.SelectedItems.Add(OrderInfoCollection[8]);
+        }
+
+{% endhighlight %}
+
+### Binding GridColumn properties
+
+You can also assign value via binding to the properties of the [GridColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn.html) such as [HeaderCellTextSize](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderCellTextSize.html),[CellTextSize](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~CellTextSize.html),[FontAttribute](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~FontAttribute.html),[RecordFont](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~RecordFont.html),[HeaderFont](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderFont.html) etc. 
+
+Refer the below code to bind the GridColumn properties from the ViewModel.
+
+{% highlight xaml%}
+
+ <sfgrid:SfDataGrid x:Name="dataGrid"
+                    AutoGenerateColumns="False" 
+                    ItemsSource="{Binding OrderInfoCollection}">
+    <sfgrid:SfDataGrid.Columns>
+        <sfgrid:GridTextColumn MappingName="Customer" CellTextSize="{Binding CellTextSize,Source={x:Reference viewModel}}"/>
+    </sfgrid:SfDataGrid.Columns>
+ </sfgrid:SfDataGrid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+        //ViewModel.cs code
+
+        private double _cellTextSize;
+
+        public double CellTextSize
+        {
+            get { return _cellTextSize; }
+            set { this._cellTextSize = value; RaisePropertyChanged("CellTextSize"); }
+        }
+
+         public ViewModel()
+        {
+          this.CellTextSize = 20;
+        }
+
+{% endhighlight %}
+
+
+### Binding GridPickerColumn ItemsSource from ViewModel
+
+You can assign any object typed collection to the [GridPickerColumn.ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridPickerColumn~ItemsSource.html) to display a list of items in the `GridPickerColumn` when entering edit mode. 
+
+Refer the below code to bind the ItemsSource of GridPickerColumn from the ViewModel.
+
+{% highlight xaml%}
+
+ <sfgrid:SfDataGrid x:Name="dataGrid"
+                    AutoGenerateColumns="False" 
+                    ItemsSource="{Binding OrderInfoCollection}">
+    <sfgrid:SfDataGrid.Columns>
+         <sfgrid:GridPickerColumn BindingContext="{x:Reference viewModel}"
+                                  MappingName="ShipCity" 
+                                  ItemsSource="{Binding CustomerNames}" HeaderText="PickerColumn"/>
+    </sfgrid:SfDataGrid.Columns>
+ </sfgrid:SfDataGrid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+        //ViewModel.cs code
+
+        private ObservableCollection<string> _customerNames;
+
+       public ObservableCollection<string> CustomerNames
+        {
+            get { return _customerNames; }
+            set { this._customerNames = value; RaisePropertyChanged("CustomerNames"); }
+        }
+
+         public ViewModel()
+        {
+           this.CustomerNames = customerNames.ToObservableCollection();
+        }
+
+        string[] customerNames = { "Thomas", "John", "Hanna", "Laura", "Gina" };
+
+{% endhighlight %}
+
+### Binding the ItemsSource in ViewModel to the Picker loaded inside template
+
+The `ItemsSource` of a picker which is loaded inside the [GridTemplateColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridTemplateColumn.html) can also be assigned any value via binding by passing the binding context as the `Source` to the `ItemsSource` property.
+
+Refer the below code to bind the ItemsSource of Picker loaded inside the GridTemplateColumn from the ViewModel.
+
+{% highlight xaml%}
+
+ <sfgrid:SfDataGrid x:Name="dataGrid"
+                    AutoGenerateColumns="False" 
+                    ItemsSource="{Binding OrderInfoCollection}">
+    <sfgrid:SfDataGrid.Columns>
+         <sfgrid:GridTemplateColumn   MappingName="Customer" HeaderText="Picker">
+        <sfgrid:GridTemplateColumn.CellTemplate>
+          <DataTemplate>
+              <Picker ItemsSource="{Binding SelectedModels,Source={x:Reference viewModel}}" SelectedIndex="0"/>
+          </DataTemplate>
+        </sfgrid:GridTemplateColumn.CellTemplate>
+    </sfgrid:GridTemplateColumn>
+    </sfgrid:SfDataGrid.Columns>
+ </sfgrid:SfDataGrid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+        //ViewModel.cs code
+
+        private List<String> _vehicleModel;
+
+        public List<String> SelectedModels
+        {
+            get { return _vehicleModel; }
+            set { this._vehicleModel = value;RaisePropertyChanged("SelectedCars"); }
+        }
+
+         public ViewModel()
+        {
+           this.SelectedModels = selectedModels.ToList();
+        }
+
+        string [] selectedModels = { "Select Car", "Audi", "Bentley", "Mercedes Benz", "Porsche" };
+
+{% endhighlight %}
+
+### Binding the button command in template column to ViewModel
+
+You can also assign any value to the Command property of the Button loaded inside the GridTemplateColumn via binding.
+
+Refer the below code to bind the command property of Button loaded inside the GridTemplateColumn from the ViewModel.
+
+{% highlight xaml%}
+
+ <sfgrid:SfDataGrid x:Name="dataGrid"
+                    AutoGenerateColumns="False" 
+                    ItemsSource="{Binding OrderInfoCollection}">
+    <sfgrid:SfDataGrid.Columns>    
+        <sfgrid:GridTemplateColumn MappingName="Customer">
+             <sfgrid:GridTemplateColumn.CellTemplate>
+
+                 <DataTemplate>
+                     <Button Text="Template" Command="{Binding ButtonCommand,Source={x:Reference viewModel}}"/>
+                 </DataTemplate>
+            </sfgrid:GridTemplateColumn.CellTemplate>
+        </sfgrid:GridTemplateColumn>
+    </sfgrid:SfDataGrid.Columns>
+ </sfgrid:SfDataGrid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+        //ViewModel.cs code
+
+        private Command _buttonCommand;
+
+        public Command ButtonCommand
+        {
+            get { return _buttonCommand; }
+            set { this._buttonCommand = value;RaisePropertyChanged("ButtonCommand"); }
+        }
+
+         public ViewModel()
+        {
+          this.ButtonCommand = new Command(CustomMethod);
+        }
+
+        public void CustomMethod()
+        {
+            // Customize your code here
+        }
+
+{% endhighlight %}
+
+You can download the source code of binding the SfDataGrid properties sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfGrid_Sample788022149)

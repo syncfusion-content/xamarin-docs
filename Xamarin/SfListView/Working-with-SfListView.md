@@ -982,7 +982,7 @@ When ListView is in [AutoFitMode](https://help.syncfusion.com/cr/cref_files/xama
 {% tabs %}
 {% highlight xaml %}
 <ScrollView>
-   <sync:SfListView x:Name="listView" ItemSize="10" AutoFitMode="Height" ItemsSource="{Binding BookInfo}" Loaded="listView_Loaded"/>
+   <sync:SfListView x:Name="listView" AutoFitMode="Height" ItemsSource="{Binding BookInfo}" Loaded="listView_Loaded"/>
 </ScrollView>
 {% endhighlight %}
 {% highlight C# %}

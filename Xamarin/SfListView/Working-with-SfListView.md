@@ -1020,7 +1020,7 @@ N> While loading in `AutoFitMode` make sure to define minimum value for [ItemSiz
 
 The following limitations should be noted when using the previous approaches:
 
-* As the entire list items are loaded inside the parent ScrollView element, the ItemAppearing and ItemDisappearing events will not be fired when scrolling.
+* As the entire list items are loaded inside the parent `ScrollView` element, the [ItemAppearing](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemAppearing_EV.html) and [ItemDisappearing](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemDisappearing_EV.html) events will not be fired when scrolling.
 * When performing keyboard navigation, the view cannot be scrolled automatically while navigating out of view.
 * Scrolling through the touch action will be handled in all platforms and ListView scrolling will be handled by the parent ScrollView.
 

@@ -152,6 +152,16 @@ private void DataGrid_GridLoaded(object sender, GridLoadedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
+## ValueChanged event
+
+The [SfDataGrid.ValueChanged](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ValueChanged_EV.html) event will be triggered whenever the current cell's value has been changed in the GridTextColumn, GridNumericColumn or GridSwitchColumn. This event handler contains the parameter of type [ValueChangedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.ValueChangedEventArgs.html) that contains the following properties.
+
+* [Column](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.ValueChangedEventArgs~Column.html)        : Gets the current `GridColumn` that contains the grid cell for which value is edited or changed.
+* [NewValue](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.ValueChangedEventArgs~NewValue.html)      : The newly edited value to be committed.
+* [RowColumnIndex](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.ValueChangedEventArgs~RowColumnIndex.html)   : The current `RowColumnIndex` of the grid cell undergoing the value change.
+* [RowData](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.ValueChangedEventArgs~RowData.html)       : The `RowData` of the row that contains the grid cell undergoing the value change.
+* [CellValue](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.ValueChangedEventArgs~CellValue.html)       : The initial value when current cell entered edit mode.
+
 ## Create custom context menu using grid events
 
 The SfDataGrid allows you to display any custom view, like context menu. This menu acts similar to pop-up by using the `GridLongPressed` and `GridTapped` events.

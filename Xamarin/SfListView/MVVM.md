@@ -306,7 +306,7 @@ You can download the entire sample [here](http://www.syncfusion.com/downloads/su
 
 ### Binding SelectionChanged event
 
-In ListView, the [SelectionChanged](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionChanged_EV.html) event is raised once the selection process has been completed. MVVM for the `SelectionChanged` event can be achieved by binding through the EventToCommand converter.
+In ListView, the [SelectionChanged](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionChanged_EV.html) event is raised once the selection process has been completed. MVVM for the `SelectionChanged` event can be achieved by binding through the EventToCommand converter. Click [here](https://www.syncfusion.com/kb/7523/how-to-turn-events-into-commands-with-behaviors-in-sflistview) to learn about EventToCommand converter.
 
 {% tabs %}
 {% highlight xaml %}
@@ -412,7 +412,7 @@ You can download the entire sample [here](http://www.syncfusion.com/downloads/su
 
 N> Similarly, you can bind the [ItemTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTapped_EV.html), [ItemDoubleTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemDoubleTapped_EV.html), and [ItemHolding](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemHolding_EV.html) event.
 
-### Handling item tapped action
+### Handling ItemTapped action
 
 ListView supports binding the [TapCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~TapCommand.html) property with the item taped action from ViewModel, where you can write navigation or any other action code in the execution. When defining the command, [ItemTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemTappedEventArgs.html) will be passed as command parameter which has item information in execution. 
 
@@ -463,7 +463,7 @@ public class BookInfoRepository : INotifyPropertyChanged
 
 You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MVVMTapCommand2101998894).
 
-### Handling item hold action
+### Handling ItemHolding action
 
 ListView supports binding the [HoldCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~HoldCommand.html) property with the item holding action from ViewModel, where you can write navigation or any other action code in the execution. When defining the command, [ItemHoldingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemHoldingEventArgs.html) will be passed as command parameter which has item information in execution. 
 
@@ -514,7 +514,7 @@ You can download the entire sample [here](http://www.syncfusion.com/downloads/su
 
 ### Binding button command
 
-The contents loaded in the [ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html) can be bound from the ViewModel using their commands or gestures, where you can customize the loaded content or any other action code needed in the call back. You will get the BindingContext of ListViewItem as the parameter in execution when defining the Command button. 
+The contents loaded in the [ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html) can be bound from the ViewModel using their commands or gestures, where you can customize the loaded content or any other action code needed in the call back. You will get the BindingContext of [ListViewItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ListViewItem.html) as the parameter in execution when defining the Command button. 
 
 You can also get the reference of element bound as parameter by using CommandParameter of loaded elements.
 

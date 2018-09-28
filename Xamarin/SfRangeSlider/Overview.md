@@ -9,24 +9,16 @@ documentation: ug
 
 # Overview
 
-The Essential Xamarin SfRangeSlider control allows you to select the range of value within the specified minimum and maximum limits. The range can be selected by moving the Thumb control along a track. 
+The range slider control for Xamarin.Forms allows you select a range of values within the specified minimum and maximum limits. The range can be selected by moving the thumb along track.
 
 ![](images/overview.png)
 
-## Key Features
+## Key features
 
-* `Range` – Options to set start and end value of range.
-
-* `Ticks Placement` – Support to determine the placement in which tick marks should be drawn.
-
-* `Tick Frequency` –Options to calculate number of ticks to be displayed based on frequency.
-
-* `Maximum` - Determines the maximum possible value of the range.
-
-* `Minimum` - Determines the minimum possible value of the range.
-
-
-
-
-
-
+* Provides support to select values as a range.
+ 
+* Restricts values to choose within a minimum and maximum constraints.
+ 
+* Supports to change the tick intervals in uniform pattern.
+ 
+* Provides user-friendly customization support to customize ticks and labels.

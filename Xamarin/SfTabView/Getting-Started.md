@@ -273,9 +273,10 @@ public class ContactInfo
 	public long Number { get; set; }
 }
 
-public class ContactsViewModel
+public class ContactsViewModel : INotifyPropertyChanged
 {
 	private ObservableCollection<ContactInfo> contactList;
+	public event PropertyChangedEventHandler PropertyChanged;
 
 	public ObservableCollection<ContactInfo> ContactList
 	{
@@ -304,34 +305,70 @@ Bind the items source of the `ListView`, and set the required appearance in its 
 {% highlight xaml %}
 
 
-<tabView:SfTabItem.Content>
-<Grid BackgroundColor="Red" x:Name="AllContactsGrid" >
+<ContentPage.Content>
+<syncfusion:SfTabView x:Name="tabView"  EnableSwiping="False" VisibleHeaderCount="3" Margin="0,40,0,0">
+<syncfusion:SfTabView.SelectionIndicatorSettings>
+<syncfusion:SelectionIndicatorSettings Color="Red" Position="Bottom" StrokeThickness="0"/>
+</syncfusion:SfTabView.SelectionIndicatorSettings>
+<syncfusion:SfTabItem >
+<syncfusion:SfTabItem.HeaderContent>
+<StackLayout VerticalOptions="Center">
+<Label HorizontalTextAlignment="Center" Text="ACCOUNTS"></Label>
+<BoxView BackgroundColor="Black" HorizontalOptions="Center" HeightRequest="3" WidthRequest="35">
+</BoxView>
+</StackLayout>
+</syncfusion:SfTabItem.HeaderContent>
+<syncfusion:SfTabItem.Content>
+<Grid BackgroundColor="Yellow" x:Name="FavoritesGrid" />
+</syncfusion:SfTabItem.Content>
+</syncfusion:SfTabItem>
+<syncfusion:SfTabItem >
+<syncfusion:SfTabItem.HeaderContent>
+<StackLayout VerticalOptions="Center">
+<Label HorizontalTextAlignment="Center" Text="CARDS"></Label>
+<BoxView Style="{DynamicResource Key=cards}" BackgroundColor="Black" HorizontalOptions="Center" HeightRequest="3" WidthRequest="35"></BoxView>
+</StackLayout>
+</syncfusion:SfTabItem.HeaderContent>
+<syncfusion:SfTabItem.Content>
+<Grid BackgroundColor="Blue" x:Name="ContactsGrid" />
+</syncfusion:SfTabItem.Content>
+</syncfusion:SfTabItem>
+<syncfusion:SfTabItem>
+<syncfusion:SfTabItem.HeaderContent>
+<StackLayout VerticalOptions="Center">
+<Label HorizontalTextAlignment="Center" Text="WALLETS"></Label>
+<BoxView Style="{DynamicResource Key=wallets}" BackgroundColor="Black" HorizontalOptions="Center" HeightRequest="3" WidthRequest="35"></BoxView>
+</StackLayout>
+</syncfusion:SfTabItem.HeaderContent>
+<syncfusion:SfTabItem.Content>
 <ListView x:Name="ContactListView" 
-		ItemsSource="{Binding ContactList}"
-		BackgroundColor="Beige" RowHeight="100">
+ItemsSource="{Binding ContactList}"
+BackgroundColor="Beige" RowHeight="100">
 <ListView.BindingContext>
-	<gettingStarted:ContactsViewModel />
+<local:ContactsViewModel />
 </ListView.BindingContext>
 <ListView.ItemTemplate>
-	<DataTemplate>
-		<ViewCell>
-			<StackLayout Orientation="Vertical">
-				<Label 
-					Text="{Binding Name}"
-					FontSize="24" 
-					TextColor="Blue" />
-				<Label 
-					Text="{Binding Number}" 
-					FontSize="20" 
-					TextColor="LightSlateGray" />
-			</StackLayout>
-		</ViewCell>
-	</DataTemplate>
+<DataTemplate>
+<ViewCell>
+<StackLayout Orientation="Vertical">
+<Label 
+Text="{Binding Name}"
+FontSize="24" 
+TextColor="Blue" />
+<Label 
+Text="{Binding Number}" 
+FontSize="20" 
+TextColor="LightSlateGray" />
+</StackLayout>
+</ViewCell>
+</DataTemplate>
 </ListView.ItemTemplate>
 </ListView>
 </Grid>
-</tabView:SfTabItem.Content>
-
+</syncfusion:SfTabItem.Content>
+</syncfusion:SfTabItem>
+</syncfusion:SfTabView>
+</ContentPage.Content>
 	
 {% endhighlight %}
 

@@ -26,7 +26,6 @@ ValueChanging event will be triggered when value is changed with single thumb. V
 </tr>
 </table>
 
-{% tabs %}
 
 {% highlight c# %}
 
@@ -39,7 +38,6 @@ ValueChanging event will be triggered when value is changed with single thumb. V
 
 {% endhighlight %}
 
-{% endtabs %}
 
 
 ## How to Perform an Action when the Range Get Changing?
@@ -66,7 +64,6 @@ N> `ShowRange` value must be true.
 </tr>
 </table>
 
-{% tabs %}
 
 {% highlight c# %}
 
@@ -79,10 +76,36 @@ N> `ShowRange` value must be true.
 
 {% endhighlight %}
 
-{% endtabs %}
 
+## How to get notifications when a thumb drag is started and completed?
 
+The `DragStarted` event is raised when a thumb is dragged. After the thumb releases the pointer capture, the `DragCompleted` event is raised. The `IsStartThumb` property of the `DragThumbEventArgs` returns a boolean value, which indicates the thumb used for performing drag operations.
+
+<table>
+<tr>
+<th>Members</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>IsStartThumb</td>
+<td>Indicates the thumb used for performing drag operations.</td>
+</tr>
+</table>
 
                                                 
+
+{% highlight c# %}
+
+	rangeSlider.DragStarted+=(object sender, DragThumbEventArgs e) =>
+	{
+         //perform the operation
+	};
+
+	rangeSlider.DragCompleted+=(object sender, DragThumbEventArgs e) =>
+	{
+         //perform the operation
+	};
+
+{% endhighlight %}
 
                                     

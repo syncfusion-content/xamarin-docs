@@ -1006,7 +1006,7 @@ public partial class MainPage : ContentPage
 
     private void listView_Loaded(object sender, ListViewLoadedEventArgs e)
     {
-        var totalextent = (double)visualContainer.GetType().GetRuntimeProperties().FirstOrDefault(cont => cont.Name == "TotalExtent").GetValue(visualContainer);
+        var totalextent = (double)visualContainer.GetType().GetRuntimeProperties().FirstOrDefault(x => x.Name == "TotalExtent").GetValue(visualContainer);
         listView.HeightRequest = totalextent;
         loaded = true;
     }

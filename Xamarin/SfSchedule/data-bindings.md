@@ -1128,7 +1128,6 @@ private void Schedule_OnAppointmentLoadedEvent(object sender, AppointmentLoadedE
 var button = new Button { Text = "CustomView", BackgroundColor = Color.Blue };
 // Set input transparent to `true` to raise schedule inbuilt event.
 button.InputTransparent = true;
-button.Clicked += CustomView_Clicked;
 e.view = button;
 }
 

@@ -149,7 +149,7 @@ You can download the entire source code of this demo [here](http://www.syncfusio
 
 ### Binding ItemsSource
 
-ListView support to bind the [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemsSource.html) property to populate the list view items from ViewModel.
+ListView support to bind the [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemsSource.html) property to populate the list view items from view model.
 
 {% tabs %}
 {% highlight xaml %}
@@ -173,7 +173,7 @@ listView.SetBinding(SfListView.ItemsSourceProperty, new Binding("BookInfoCollect
 
 {% tabs %}
 {% highlight c# %}
-//viewModel.cs
+//ViewModel.cs
 public class BookInfoRepository : INotifyPropertyChanged
 {
     private ObservableCollection<BookInfo> bookInfoCollection;
@@ -213,7 +213,7 @@ public class BookInfoRepository : INotifyPropertyChanged
 
 ### Binding SelectedItem
 
-ListView support to select the items through binding the [SelectedItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItem.html) property from ViewModel by implementing the `INotifyPropertyChanged` interface that gives the call back notification to UI.
+ListView support to select the items through binding the [SelectedItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItem.html) property from view model by implementing the `INotifyPropertyChanged` interface that gives the call back notification to UI.
 
 {% tabs %}
 {% highlight xaml %}
@@ -253,7 +253,7 @@ You can download the entire sample [here](http://www.syncfusion.com/downloads/su
 
 ### Binding SelectedItems
 
-ListView support to select multiple items through binding the [SelectedItems](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItems.html) property from ViewModel with ObservableCollection<object> type. Set the [SelectionMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionMode.html) property as `Multiple`.
+ListView support to select multiple items through binding the [SelectedItems](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItems.html) property from view model with ObservableCollection<object> type. Set the [SelectionMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionMode.html) property as `Multiple`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -306,7 +306,9 @@ You can download the entire sample [here](http://www.syncfusion.com/downloads/su
 
 ### Binding SelectionChanged event
 
-In ListView, the [SelectionChanged](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionChanged_EV.html) event is raised once the selection process has been completed. MVVM for the `SelectionChanged` event can be achieved by binding through the EventToCommand converter. Click [here](https://www.syncfusion.com/kb/7523/how-to-turn-events-into-commands-with-behaviors-in-sflistview) to learn about EventToCommand converter.
+In ListView, the [SelectionChanged](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionChanged_EV.html) event is raised once the selection process has been completed. MVVM for the `SelectionChanged` event can be achieved by binding through the event to command converter. 
+
+Refer [event to command](https://www.syncfusion.com/kb/7523/how-to-turn-events-into-commands-with-behaviors-in-sflistview) knowledge base to create the command for event using behavior.
 
 {% tabs %}
 {% highlight xaml %}
@@ -359,7 +361,9 @@ You can download the entire sample [here](http://www.syncfusion.com/downloads/su
 
 ### Binding SelectionChanging event
 
-In ListView, the [SelectionChanging](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionChanging_EV.html) event will be raised when selecting an item at the execution time. MVVM for the `SelectionChanging` event can be achieved by binding through the EventToCommand converter.
+In ListView, the [SelectionChanging](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionChanging_EV.html) event will be raised when selecting an item at the execution time. MVVM for the `SelectionChanging` event can be achieved by binding through the event to command converter.
+
+Refer [event to command](https://www.syncfusion.com/kb/7523/how-to-turn-events-into-commands-with-behaviors-in-sflistview) knowledge base to create the command for event using behavior.
 
 {% tabs %}
 {% highlight xaml %}
@@ -414,9 +418,9 @@ N> Similarly, you can bind the [ItemTapped](https://help.syncfusion.com/cr/cref_
 
 ### Handling ItemTapped action
 
-ListView supports binding the [TapCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~TapCommand.html) property with the item taped action from ViewModel, where you can write navigation or any other action code in the execution. When defining the command, [ItemTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemTappedEventArgs.html) will be passed as command parameter which has item information in execution. 
+ListView supports binding the [TapCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~TapCommand.html) property with the item taped action from view model, where you can write navigation or any other action code in the execution. When defining the command, [ItemTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemTappedEventArgs.html) will be passed as command parameter which has item information in execution. 
 
-You can define the command parameter for `TapCommand` using [TappedCommandParameter](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~TapCommandParameter.html), where you can get the element reference passed in ViewModel.
+You can define the command parameter for `TapCommand` using [TappedCommandParameter](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~TapCommandParameter.html), where you can get the element reference passed in view model.
 
 {% tabs %}
 {% highlight xaml %}
@@ -465,9 +469,9 @@ You can download the entire sample [here](http://www.syncfusion.com/downloads/su
 
 ### Handling ItemHolding action
 
-ListView supports binding the [HoldCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~HoldCommand.html) property with the item holding action from ViewModel, where you can write navigation or any other action code in the execution. When defining the command, [ItemHoldingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemHoldingEventArgs.html) will be passed as command parameter which has item information in execution. 
+ListView supports binding the [HoldCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~HoldCommand.html) property with the item holding action from view model, where you can write navigation or any other action code in the execution. When defining the command, [ItemHoldingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemHoldingEventArgs.html) will be passed as command parameter which has item information in execution. 
 
-You can define the command parameter for the `HoldCommand` using [HoldCommandParameter](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~HoldCommandParameter.html), where you can get the element reference passed in ViewModel.
+You can define the command parameter for the `HoldCommand` using [HoldCommandParameter](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~HoldCommandParameter.html), where you can get the element reference passed in view model.
 
 {% tabs %}
 {% highlight xaml %}
@@ -514,9 +518,9 @@ You can download the entire sample [here](http://www.syncfusion.com/downloads/su
 
 ### Binding button command
 
-The contents loaded in the [ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html) can be bound from the ViewModel using their commands or gestures, where you can customize the loaded content or any other action code needed in the call back. You will get the BindingContext of [ListViewItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ListViewItem.html) as the parameter in execution when defining the Command button. 
+The contents loaded in the [ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html) can be bound from the view model using their commands or gestures, where you can customize the loaded content or any other action code needed in the call back. You will get the BindingContext of [ListViewItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ListViewItem.html) as the parameter in execution when defining the command button. 
 
-You can also get the reference of element bound as parameter by using CommandParameter of loaded elements.
+You can also get the reference of element bound as parameter by using command parameter of loaded elements.
 
 {% tabs %}
 {% highlight xaml %}
@@ -601,9 +605,9 @@ You can download the entire sample [here](http://www.syncfusion.com/downloads/su
 
 ### Processing LoadMore
 
-ListView supports binding the [LoadMoreOption](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreOption.html), [LoadMoreCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommand.html), and [IsBusy](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsBusy.html) properties from ViewModel to load more number of items at runtime. `LoadMoreOption` enables load more manually or automatically the items when loading the items at runtime. `LoadMoreCommand` executes to load the items form ViewModel. The `IsBusy` property notifies that the items are populating from ViewModel to show or hide the load more view. 
+ListView supports binding the [LoadMoreOption](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreOption.html), [LoadMoreCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommand.html), and [IsBusy](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsBusy.html) properties from view model to load more number of items at runtime. `LoadMoreOption` enables load more manually or automatically the items when loading the items at runtime. `LoadMoreCommand` executes to load the items form view model. The `IsBusy` property notifies that the items are populating from view model to show or hide the load more view. 
 
-The `IsBusy` property in ViewModel shows the busy indicator when populating the [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemsSource.html).
+The `IsBusy` property in view model shows the busy indicator when populating the [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemsSource.html).
 
 {% tabs %}
 {% highlight xaml %}

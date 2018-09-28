@@ -975,15 +975,55 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-The following limitations should be noted when using the previous approach:
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewSample-1018057929).
 
-* The previous approach cannot be used when the AutoFitMode is set as 'Height'. ListView remeasures the total extend of the container when scrolling in AutoFitMode. Because, the size of each list item is not known until it comes into the view.
+When ListView is in [AutoFitMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AutoFitMode.html) as 'Height', the extend of the ListView will be updated only while scrolling. So you can resize the ListView in `VisualContainer` [PropertyChanged](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.VisualContainer~PropertyChanged_EV.html) method as like below.
+
+{% tabs %}
+{% highlight xaml %}
+<ScrollView>
+   <sync:SfListView x:Name="listView" ItemSize="10" AutoFitMode="Height" ItemsSource="{Binding BookInfo}" Loaded="listView_Loaded"/>
+</ScrollView>
+{% endhighlight %}
+{% highlight C# %}
+public partial class MainPage : ContentPage
+{
+    VisualContainer visualContainer;
+    bool loaded;
+
+    public MainPage()
+    {
+        InitializeComponent();
+        visualContainer = listView.GetVisualContainer();
+        visualContainer.PropertyChanged += VisualContainer_PropertyChanged;
+    }
+
+    private void VisualContainer_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+    {
+        if (e.PropertyName == "Height" && listView.HeightRequest != visualContainer.Height && loaded)
+            listView.HeightRequest = visualContainer.Height;
+    }
+
+    private void listView_Loaded(object sender, ListViewLoadedEventArgs e)
+    {
+        var totalextent = (double)visualContainer.GetType().GetRuntimeProperties().FirstOrDefault(cont => cont.Name == "TotalExtent").GetValue(visualContainer);
+        listView.HeightRequest = totalextent;
+        loaded = true;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewSample_(2)1126902862).
+
+N> While loading in `AutoFitMode` make sure to define minimum value for [ItemSize](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemSize.html) property of ListView to avoid extra space below the list. Update the size of the container after ListView loaded to render all the list items in the view.
+
+The following limitations should be noted when using the previous approaches:
+
 * As the entire list items are loaded inside the parent ScrollView element, the ItemAppearing and ItemDisappearing events will not be fired when scrolling.
 * When performing keyboard navigation, the view cannot be scrolled automatically while navigating out of view.
-* Scrolling through the touch action will be handled in UWP platform using mouse wheel or scroll bar.
-* ListView scrolling will be handled by the parent ScrollView.
+* Scrolling through the touch action will be handled in all platforms and ListView scrolling will be handled by the parent ScrollView.
 
-You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewSample-1018057929).
 
 ## Working with nested ListView
  

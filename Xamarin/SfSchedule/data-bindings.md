@@ -187,7 +187,7 @@ schedule.DataSource= Meetings ;
 {% endtabs %}
 
 ![](PopulatingAppointments_images/span.png)
-
+dr
 ## All Day Appointments
 All-Day appointment is an appointment which is scheduled for a whole day. It can be set by using `IsAllDay` property in the `ScheduleAppointment`.
 
@@ -195,7 +195,7 @@ All-Day appointment is an appointment which is scheduled for a whole day. It can
 {% highlight c# %}
 // Creating an instance for schedule appointment collection
 ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
-//Adding schedule appointment in schedule appointment collection 
+//Adding schedule appointment in schedule appointment collection drdr
 scheduleAppointmentCollection.Add(new ScheduleAppointment()
 {
 	StartTime = new DateTime(2017, 05, 08, 10, 0, 0),
@@ -451,10 +451,10 @@ RecurrenceProperties recurrenceProperties = schedule.RRuleParser("FREQ=DAILY;INT
 {% endtabs %}
 
 Recurrence properties retrieved from above method,
-scheduleAppointment.RecurrenceType = RecurrenceType.Daily;
-scheduleAppointment.Interval = 1;
-scheduleAppointment.RecurrenceCount = 3;
-scheduleAppointment.RecurrenceRange = RecurrenceRange.Count;
+recurrenceProperties.RecurrenceType = RecurrenceType.Daily;
+recurrenceProperties.Interval = 1;
+recurrenceProperties.RecurrenceCount = 3;
+recurrenceProperties.RecurrenceRange = RecurrenceRange.Count;
 
 ### How to get the occurrences date time list of recurring appointment from RRULE?
 You can get the occurrences date time list of recurring appointment from `RRULE` using the GetRecurrenceDateTimeCollection() of `SfSchedule`.

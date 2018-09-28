@@ -191,6 +191,7 @@ The SfListView has been built from the ground up with an optimized view reuse st
     * The SfListView will not receive any gestures as it will be handled by the parent ScrollView.
     * Should define size to the SfListView if it loads inside ScrollView.
  * Avoid changing the cell layout based on the BindingContext. This incurs large layout and initialization costs.
+ * Implement a model class inherited with `INotifyPropertyChanged` interface to notify the property changes at runtime.
 
 ## Loading ListView inside ScrollView
 
@@ -480,7 +481,7 @@ N> For more details about paging refer to [here](https://help.syncfusion.com/xam
                             <Image Source="{Binding Image}" />    
                             <Label Text="{Binding Name}" />
                             <Label Text="{Binding Weight}" />
-                        <Grid>
+                        </Grid>
                     </DataTemplate>
                 </syncfusion:SfListView.ItemTemplate>
             </syncfusion:SfListView>
@@ -945,3 +946,167 @@ public partial class App : PrismApplication
 For more details, refer to [https://xamgirl.com/prism-in-xamarin-forms-step-by-step-part-1](https://xamgirl.com/prism-in-xamarin-forms-step-by-step-part-1).
 
 You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewPrism116483729).
+
+## Scrolling ListView without virtualization
+
+ListView allows you to scroll by loading the entire collection of items inside the ScrollView and defining the total extend of its container to `HeightRequest` in the [Loaded](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~Loaded_EV.html) event.
+
+{% tabs %}
+{% highlight xaml %}
+<ScrollView>
+   <sync:SfListView x:Name="listView" ItemsSource="{Binding BookInfo}" Loaded="listView_Loaded"/>
+</ScrollView>
+{% endhighlight %}
+{% highlight C# %}
+public partial class MainPage : ContentPage
+{ 
+	public MainPage()
+	{
+		InitializeComponent();
+	}
+ 
+	private void listView_Loaded(object sender, ListViewLoadedEventArgs e)
+	{
+		var container = listView.GetVisualContainer();
+		var extent = (double)container.GetType().GetRuntimeProperties().FirstOrDefault(x => x.Name == "TotalExtent").GetValue(container);
+		listView.HeightRequest = extent;
+	}
+}
+{% endhighlight %}
+{% endtabs %}
+
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewSample-1018057929).
+
+When ListView is in [AutoFitMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AutoFitMode.html) as 'Height', the extend of the ListView will be updated only while scrolling. So you can resize the ListView in `VisualContainer` [PropertyChanged](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.VisualContainer~PropertyChanged_EV.html) method as like below.
+
+{% tabs %}
+{% highlight xaml %}
+<ScrollView>
+   <sync:SfListView x:Name="listView" AutoFitMode="Height" ItemsSource="{Binding BookInfo}" Loaded="listView_Loaded"/>
+</ScrollView>
+{% endhighlight %}
+{% highlight C# %}
+public partial class MainPage : ContentPage
+{
+    VisualContainer visualContainer;
+    bool loaded;
+
+    public MainPage()
+    {
+        InitializeComponent();
+        visualContainer = listView.GetVisualContainer();
+        visualContainer.PropertyChanged += VisualContainer_PropertyChanged;
+    }
+
+    private void VisualContainer_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+    {
+        if (e.PropertyName == "Height" && listView.HeightRequest != visualContainer.Height && loaded)
+            listView.HeightRequest = visualContainer.Height;
+    }
+
+    private void listView_Loaded(object sender, ListViewLoadedEventArgs e)
+    {
+        var extent = (double)visualContainer.GetType().GetRuntimeProperties().FirstOrDefault(x => x.Name == "TotalExtent").GetValue(visualContainer);
+        listView.HeightRequest = extent;
+        loaded = true;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewSample_(2)1126902862).
+
+N> While loading in `AutoFitMode` make sure that the [ItemSize](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemSize.html) property value is not specified, to avoid extra space below the list. Update the size of the container after ListView loaded to render all the list items in the view.
+
+The following limitations should be noted when using the previous approaches:
+
+* As the entire list items are loaded inside the parent `ScrollView` element, the [ItemAppearing](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemAppearing_EV.html) and [ItemDisappearing](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemDisappearing_EV.html) events will not be fired when scrolling.
+* When performing keyboard navigation, the view cannot be scrolled automatically while navigating out of view.
+* Scrolling through the touch action will be handled in all platforms and ListView scrolling will be handled by the parent ScrollView.
+
+
+## Working with nested ListView
+ 
+ListView allows you to load another ListView inside its [ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html). When the [AutoFitMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AutoFitMode.html) of the outer ListView is height, the size of the inner ListView will be allocated from the maximum screen size. Since the exact size for the inner list cannot not be obtained before loading the view. 
+ 
+To get a fixed height for the inner ListView, define a value in its `HeightRequest`. If the items inside the inner ListView are less, allocate the total extend of the inner list to its `HeightRequest`.
+ 
+Follow the steps to set the size for the outer ListView based on the extend of inner ListView:
+
+1. Define a property in the Model class and bind it to the HeightRequest of inner ListView, as the height for various inner ListView has to be identified while scrolling.
+2. Hook the container's [PropertyChanged](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.VisualContainer~PropertyChanged_EV.html) event. When the height of the container changes, set the value of `TotalExtent` to the property bound to the HeightRequest.
+3. Call the `RefreshView` method asynchronously with few seconds delay in the `Loaded` event of the outer SfListView. The height requested for each inner SfListView will be set but the outer SfListView will not get any notification regarding the size change. So, call the RefreshView method asynchronously after loading the view.
+
+{% tabs %}
+{% highlight xaml %}
+ <listView:SfListView x:Name="listView"  ItemsSource="{Binding ContactInfo}" AutoFitMode="Height" Loaded="listView_Loaded" AllowGroupExpandCollapse="True">
+    <listView:SfListView.ItemTemplate>
+        <DataTemplate>
+            <ViewCell>
+                <ViewCell.View>
+                    <Grid>
+                        <local:ExtendedListView x:Name="list1" HeightRequest="{Binding InnerListHeight}" ItemsSource="{Binding ContactDetails}" ItemSize="75">
+                            <local:ExtendedListView.ItemTemplate>
+                                <DataTemplate>
+                                    <StackLayout>
+                                        <Image Source="{Binding Image}" />
+                                        <Label Text="{Binding Name}" />
+                                        <Label Text="{Binding Number}" />
+                                    </StackLayout>
+                                </DataTemplate>
+                            </local:ExtendedListView.ItemTemplate>
+                        </local:ExtendedListView>
+                    </Grid>
+                </ViewCell.View>
+            </ViewCell>
+        </DataTemplate>
+    </listView:SfListView.ItemTemplate>
+</listView:SfListView>
+{% endhighlight %}
+{% highlight C# %}
+ public partial class NestedListView : ContentPage
+{
+    public NestedListView()
+    {
+        InitializeComponent();
+    }
+
+    private async void listView_Loaded(object sender, Syncfusion.ListView.XForms.ListViewLoadedEventArgs e)
+    {
+        await Task.Delay(2000);
+        listView.RefreshView();
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+{% highlight C# %}
+ public class ExtendedListView : SfListView
+{
+    VisualContainer container;
+    public ExtendedListView()
+    {
+        container = this.GetVisualContainer();
+        container.PropertyChanged += Container_PropertyChanged;
+    }
+    
+    private void Container_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+    {
+        Device.BeginInvokeOnMainThread(async () =>
+        {
+            var extent = (double)container.GetType().GetRuntimeProperties().FirstOrDefault(container => container.Name == "TotalExtent").GetValue(container);
+            if (e.PropertyName == "Height")
+                (this.BindingContext as ContactInfo_NestedListView).InnerListHeight = extent;
+        });
+    }
+}
+{% endhighlight %}
+
+ You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewSample-1603050223).
+ 
+## Rendering ListView when loading in different layouts
+
+The options are as follows:
+
+* Creates the measurement and layout similar to Xamarin.Forms ListView, when the ListView is loaded inside the layouts such as StackLayout, ScrollView, and Grid, in which the RowDefinition or ColumnDefinition is set to 'Auto'. In all other layouts, the ListView size will be allocated from the framework.
+* Set the value of total extend to the HeightRequest of ListView, since the ListView scrolling will be handled by the parent ScrollView, when ListView is loaded inside the StackLayout with base parent as ScrollView having multiple elements inside the StackLayout.

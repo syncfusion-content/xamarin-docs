@@ -408,7 +408,7 @@ public class ContactInfo
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/GroupItemOder.png)
+![](SfDataForm_images/GroupItemOrder.png)
 
 ### Changing group name for group
 

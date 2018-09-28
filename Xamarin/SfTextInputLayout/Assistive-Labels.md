@@ -40,7 +40,7 @@ inputLayout.InputView = new Entry();
 
 The visibility of the helper text can be disabled by setting the [ShowHelperText](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~ShowHelperText.html) property to false. By default, it is set to true.
 
-![](Assistive-Labels/helper.png)
+![](Assistive-Labels/helper.PNG)
 
 ## Error message
 
@@ -80,7 +80,7 @@ N> Error validations should be done in the application level.
 
 ## Character counter
 
-Character counter is used when you need to limit the characters. Character limit can be set using the[CharMaxLength](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~CharMaxLength.html) property. The character counter can be enabled by setting the [ShowCharCount](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~ShowCharCount.html) property to true.
+Character counter is used when you need to limit the characters. Character limit can be set using the [CharMaxLength](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~CharMaxLength.html) property. The character counter can be enabled by setting the [ShowCharCount](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~ShowCharCount.html) property to true.
 
 {% tabs %} 
 

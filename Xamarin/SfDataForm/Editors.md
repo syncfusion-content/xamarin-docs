@@ -526,7 +526,7 @@ public class Address
 
 ![](SfDataForm_images/ComplexPropertyPicker.png)
 
-You can download the entire source code of this demo for Xamarin.Forms from here [DataFormSample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfDataForm_Picker-2009667790.zip)
+You can download the entire source code of this demo for Xamarin.Forms from here [DataFormPickerEditor](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfDataForm_Picker-2009667790.zip)
 
 N> `PickerEditor` not supported in `Xamarin.Forms.UWP`.
 

@@ -1016,7 +1016,7 @@ public partial class MainPage : ContentPage
 
 You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewSample_(2)1126902862).
 
-N> While loading in `AutoFitMode` make sure to define minimum value for [ItemSize](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemSize.html) property of ListView to avoid extra space below the list. Update the size of the container after ListView loaded to render all the list items in the view.
+N> While loading in `AutoFitMode` make sure that the [ItemSize](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemSize.html) property value is not specified, to avoid extra space below the list. Update the size of the container after ListView loaded to render all the list items in the view.
 
 The following limitations should be noted when using the previous approaches:
 

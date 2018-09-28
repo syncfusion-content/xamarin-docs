@@ -195,7 +195,7 @@ All-Day appointment is an appointment which is scheduled for a whole day. It can
 {% highlight c# %}
 // Creating an instance for schedule appointment collection
 ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
-//Adding schedule appointment in schedule appointment collection drdr
+//Adding schedule appointment in schedule appointment collection 
 scheduleAppointmentCollection.Add(new ScheduleAppointment()
 {
 	StartTime = new DateTime(2017, 05, 08, 10, 0, 0),

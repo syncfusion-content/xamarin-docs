@@ -1,7 +1,7 @@
 ---
 layout : post
 title : Suggestion mode for Syncfusion AutoComplete Control in Xamarin.Forms
-description : Learn how to display suggestion mode in AutoComplete 
+description : This section describes about the different filtering modes to define filtering strategy.
 platform : Xamarin.Forms
 control : AutoComplete
 documentation : ug

@@ -281,7 +281,7 @@ public class Localize : ILocalize
 
 Implementation of the interface is not required for UWP project, since the resources automatically recognizes the selected language.
 
-## Applying the converted format 
+## Apply the converted format 
 
 After setting the root/main page of the application in your App.Xaml.cs file of the PCL project, initialize a new instance of the `ResourceManager` class and set it to the [PopupLayoutResourceManager.Manager](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayoutResourceManager~Manager.html) property to look up into the resources with specified root name in the given assembly. Using `DependencyService`, call `SetLocale()` of the implemented interface with necessary language code as parameter.
 

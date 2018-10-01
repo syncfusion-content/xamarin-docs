@@ -47,14 +47,14 @@ Please refer the below code snippet to declare the interface in the PCL project.
 public interface ILocalize
 {
     CultureInfo GetCurrentCultureInfo();
-    void SetLocale(CultureInfo ci);
+    void SetLocale(CultureInfo cultureInfo);
 }
 public class PlatformCulture
 {
     public PlatformCulture(string platformCultureString)
     {
         if (String.IsNullOrEmpty(platformCultureString))
-            throw new ArgumentException("Expected culture identifier", "platformCultureString"); // in C# 6 use nameof(platformCultureString)
+            throw new ArgumentException("Expected culture identifier", "platformCultureString"); // in C# 6 use NameOf(platformCultureString)
 
         PlatformString = platformCultureString.Replace("_", "-"); // .NET expects dash, not underscore
         var dashIndex = PlatformString.IndexOf("-", StringComparison.Ordinal);
@@ -104,10 +104,10 @@ public class Localize : ILocalize
 
 {
 
-    public void SetLocale(CultureInfo ci)
+    public void SetLocale(CultureInfo cultureInfo)
     {
-        Thread.CurrentThread.CurrentCulture = ci;
-        Thread.CurrentThread.CurrentUICulture = ci;
+        Thread.CurrentThread.CurrentCulture = cultureInfo;
+        Thread.CurrentThread.CurrentUICulture = cultureInfo;
     }
 
     public CultureInfo GetCurrentCultureInfo()
@@ -117,10 +117,10 @@ public class Localize : ILocalize
         netLanguage = AndroidToDotnetLanguage(androidLocale.ToString().Replace("_", "-"));
 
         // this gets called a lot - try/catch can be expensive so consider caching or something
-        CultureInfo ci = null;
+        CultureInfo cultureInfo = null;
         try
         {
-            ci = new CultureInfo(netLanguage);
+            cultureInfo = new CultureInfo(netLanguage);
         }
         catch
         {
@@ -129,16 +129,16 @@ public class Localize : ILocalize
             try
             {
                 var fallback = ToDotnetFallbackLanguage(new PlatformCulture(netLanguage));
-                ci = new CultureInfo(fallback);
+                cultureInfo = new CultureInfo(fallback);
             }
             catch
             {
                 // iOS language not valid .NET culture, falling back to English
-                ci = new CultureInfo("en");
+                cultureInfo = new CultureInfo("en");
             }
         }
 
-        return ci;
+        return cultureInfo;
     }
 
 
@@ -194,10 +194,10 @@ Refer the below codes to implement the interface in iOS renderer project.
 
 public class Localize : ILocalize
 {
-    public void SetLocale(CultureInfo ci)
+    public void SetLocale(CultureInfo cultureInfo)
     {
-        Thread.CurrentThread.CurrentCulture = ci;
-        Thread.CurrentThread.CurrentUICulture = ci;
+        Thread.CurrentThread.CurrentCulture = cultureInfo;
+        Thread.CurrentThread.CurrentUICulture = cultureInfo;
     }
 
     public CultureInfo GetCurrentCultureInfo()
@@ -211,10 +211,10 @@ public class Localize : ILocalize
         }
 
         // this gets called a lot - try/catch can be expensive so consider caching or something
-        CultureInfo ci = null;
+        CultureInfo cultureInfo = null;
         try
         {
-            ci = new CultureInfo(netLanguage);
+            cultureInfo = new CultureInfo(netLanguage);
         }
         catch
         {
@@ -223,16 +223,16 @@ public class Localize : ILocalize
             try
             {
                 var fallback = ToDotnetFallbackLanguage(new PlatformCulture(netLanguage));
-                ci = new CultureInfo(fallback);
+                cultureInfo = new CultureInfo(fallback);
             }
             catch
             {
                 // iOS language not valid .NET culture, falling back to English
-                ci = new CultureInfo("en");
+                cultureInfo = new CultureInfo("en");
             }
         }
 
-        return ci;
+        return cultureInfo;
     }
     private string iOSToDotnetLanguage(string iOSLanguage)
     {
@@ -281,7 +281,7 @@ public class Localize : ILocalize
 
 Implementation of the interface is not required for UWP project, since the resources automatically recognizes the selected language on UWP.
 
-## Appying the converted format 
+## Applying the converted format 
 
 After implementing the necessary interface and creating the necessary .resx files, now in your App.Xaml.cs file of the PCL project, after setting the root/main page of your application, initialize a new instance of the `ResourceManager` class and set it to the [PopupLayoutResourceManager.Manager](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayoutResourceManager~Manager.html) property to look up into resources with the specified root name in the given assembly. Now using `DependencyService` call the implemented interface's `SetLocale()` with the necessary language code as parameter. Please refer the below code snippet.
 
@@ -324,7 +324,7 @@ public MainPage()
 {
     this.InitializeComponent();
     SfPopupLayoutRenderer.Init();
-    // Applyig localization for UWP
+    // Applying localization for UWP
     CultureInfo.CurrentUICulture = new CultureInfo("fr");
     LoadApplication(new SwitchSample.App());
 }

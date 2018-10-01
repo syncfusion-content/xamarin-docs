@@ -84,6 +84,7 @@ You can download the entire source code of this demo [here](http://www.syncfusio
 
 ListView allows you to resize the items based on the change in font size of the label element at runtime by calling [RefreshListViewItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~RefreshListViewItem.html) method asynchronously when [SfListView.AutoFitMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AutoFitMode.html) is Height.
 
+{% tabs %}
 {% highlight xaml %}
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">       
  <Grid>
@@ -110,7 +111,6 @@ ListView allows you to resize the items based on the change in font size of the 
     </syncfusion:SfListView>                
 </ContentPage>
 {% endhighlight %}
-
 {% highlight c# %}
 private void Button_Clicked(object sender, EventArgs e)
 {

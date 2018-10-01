@@ -9,7 +9,7 @@ documentation: UG
 
 # Localization 
 
-Localization is the process of translating application resources into different languages for specific cultures. SfDataGrid uses the following static texts that can be localized in the application level:
+Localization is the process of translating application resources into different languages for specific cultures. SfDataGrid uses the following static text that can be localized in application level:
 
 * LOAD MORE ITEMS
 * Drop below 
@@ -28,7 +28,7 @@ In the portable project of your application, add a `.resx` file inside the resou
 
 For example, to set the culture as French, the file should be named as **Syncfusion.SfDataGrid.XForms.fr-FR.resx**.
 
-Based on the language, set the appropriate equivalent text to the static texts in the .resx file.
+Based on the language, set the appropriate equivalent text to the static text in the .resx file.
 
 N> You should create and add separate .resx files for the individual languages.
 
@@ -281,7 +281,7 @@ public class Localize : ILocalize
 
 Implementation of the interface is not required for UWP project, since the resources automatically recognizes the selected language.
 
-## Appyling the converted format 
+## Apply the converted format 
 
 After setting the root/main page of the application in your App.Xaml.cs file of the PCL project, initialize a new instance of the `ResourceManager` class and set it to the [DataGridResourceManager.Manager](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.XForms.DataGridResourceManager~Manager.html) property to look up into the resources with specified root name in the given assembly. Using `DependencyService`, call `SetLocale()` of the implemented interface with necessary language code as parameter.
 

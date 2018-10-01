@@ -1,7 +1,7 @@
 ---
 layout : post
 title : Data Binding  in Syncfusion AutoComplete control for Xamarin.Forms
-description : Learn how to perform DataBinding in AutoComplete
+description : This section decribes how to populate the strings or objects in the autocomplete for the filtering suggestion list. 
 platform : xamarin
 control : SfAutoComplete
 documentation : ug

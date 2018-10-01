@@ -1,7 +1,7 @@
 ---
 layout : post
 title : Overview of Syncfusion Segmented control for Xamarin.Forms
-description : Overview and key features of Segmented control
+description : A quick go through to learn about the Segmented control and the key features available in it.
 platform : xamarin
 control : SfSegmentedControl
 documentation : ug

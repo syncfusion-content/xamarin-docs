@@ -2,7 +2,7 @@
 
 layout: post
 title: Pointers in Syncfusion SfCircularGauge control for Xamarin.Forms
-description: Learn how to set pointers in Syncfusion SfCircularGauge control 
+description: This section explains the steps required to add and customize pointers in Syncfusion Circular Gauge control for Xamarin.Forms
 platform: xamarin
 control: SfCircularGauge
 documentation: ug

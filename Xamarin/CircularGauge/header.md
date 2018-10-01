@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Accessing Header in Syncfusion SfCircularGauge control for Xamarin.Forms
-description:  Learn how to set header in Syncfusion SfCircularGauge control
+title: Header in Syncfusion SfCircularGauge control for Xamarin.Forms
+description: This section explains the steps required to add and customize header in Syncfusion Circular Gauge control for Xamarin.Forms
 platform: xamarin
 control: SfCircularGauge
 documentation: ug

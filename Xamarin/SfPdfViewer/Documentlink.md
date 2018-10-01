@@ -2,7 +2,7 @@
 layout: post
 title:  Working with Document Link Annotation (Table of content)
 description: Working with Document Link Annotation (Table of content)
-platform: Xamarin.Forms
+platform: Xamarin
 control: SfPdfViewer
 documentation: ug
 ---

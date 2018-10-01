@@ -2,7 +2,7 @@
 layout: post
 title:  Getting Started for Essential Xamarin.Forms PDF viewer
 description: getting started
-platform: Xamarin.Forms
+platform: Xamarin
 control: SfPdfViewer
 documentation: ug
 ---
@@ -42,6 +42,38 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% endhighlight %}
 {% endtabs %}
+
+
+## Resolving issue when deploying an application in ReleaseMode in the UWP platform
+
+There is a known Framework issue in the UWP platform when an application using custom control is deployed in `Release Mode`, it will not be rendered.
+
+This can be resolved by initializing the SfPdfViewer related assemblies in `App.xaml.cs` in the UWP project. Refer to the following code snippet.
+
+{% tabs %}
+{% highlight c# %}
+
+protected override void OnLaunched(LaunchActivatedEventArgs e)
+{
+     …
+     rootFrame.NavigationFailed += OnNavigationFailed;
+
+     //Add the assemblies `using System.Reflection;`
+     List<Assembly> assembliesToInclude = new List<Assembly>();
+
+     //Now, add all the assemblies that your app uses
+     assembliesToInclude.Add(typeof(SfPdfDocumentViewRenderer).GetTypeInfo().Assembly);
+
+     assembliesToInclude.Add(typeof(SfRangeSliderRenderer).GetTypeInfo().Assembly);
+
+     //Replaces Xamarin.Forms.Forms.Init(e);
+     Xamarin.Forms.Forms.Init(e, assembliesToInclude);
+     …
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 
 ### Loading a PDF using MVVM binding
 
@@ -276,3 +308,17 @@ private void pdfViewerControl_PageChanged(object sender, Syncfusion.SfPdfViewer.
 {% endtabs %}
 
 The arguments of the PageChanged event contains details about to which page the document is navigated to.
+
+## How to get and set the zoom for SfPdfViewer?
+
+PDF viewer has the BindableProperty ZoomPercentage that is used to retrieve and set the current zoom factor.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Entry Keyboard="Numeric" FontSize="18" x:Name="zoomPercentage" HorizontalTextAlignment="Center" VerticalOptions="Center" Text="{Binding ZoomPercentage, Source={x:Reference Name=pdfViewerControl}}"/>
+
+{% endhighlight %}
+{% endtabs %}
+
+On binding the entry control to ZoomPercentage property of the PDF viewer instance, the current zoom percentage being displayed in the PDF viewer is displayed in the entry control, and the PDF viewer would be zoomed based on the value entered.

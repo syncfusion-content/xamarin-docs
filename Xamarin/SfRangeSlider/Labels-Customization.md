@@ -7,7 +7,7 @@ control: RangeSlider
 documentation: ug
 ---
 
-# Labels Customization
+# Customizing labels
 
 SfRangeSlider provides option to show or hide the label and position customization.
 
@@ -138,3 +138,92 @@ Available options for this property are:
 {% endhighlight %}
 
 {% endtabs %}
+
+## Customizing label font
+
+The range slider control provides the `FontFamily`, `FontSize`, and `FontAttribute` properties to customize the value text and custom label text.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+xmlns:Range="clr-namespace:Syncfusion.SfRangeSlider.XForms;assembly=Syncfusion.SfRangeSlider.XForms"
+xmlns:Local="clr-namespace:GettingStarted;assembly=GettingStarted"
+x:Class="GettingStarted.RangeSliderSample">
+	<ContentPage.Content>
+		<Range:SfRangeSlider FontFamily="Times New Roman" ShowCustomLabel="true" FontAttribute="Italic" FontSize="12"  Orientation="Horizontal">
+			<Range:SfRangeSlider.CustomLabels>
+				<Local:ObservableCollectionList>
+					<Range:Items Label="Min" Value="0"/>
+					<Range:Items Label="Mid" Value="50"/>
+					<Range:Items Label="Max" Value="100"/>
+				</Local:ObservableCollectionList>
+			</Range:SfRangeSlider.CustomLabels>
+		</Range:SfRangeSlider>
+	</ContentPage.Content>
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+namespace GettingStarted
+{
+	/// <summary>
+    /// Range slider sample.
+    /// </summary>
+    public partial class RangeSliderSample : ContentPage
+    {
+        public RangeSliderSample()
+        {
+            InitializeComponent();
+			SfRangeSlider rangeSlider = new SfRangeSlider(){ FontFamily="Times New Roman",ShowCustomLabel=true, FontAttribute=FontAttributes.Italic, FontSize=12,  Orientation=Orientation.Horizontal};
+			rangeSlider.CustomLabels = new ObservableCollection<Items>()
+			{
+                new Items(){Value=0,Label="Min"},
+				new Items(){Value=50,Label="Mid"},
+				new Items(){Value=100,Label="Max"}
+			};
+			this.Content = rangeSlider;
+        }
+    }
+
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+{% highlight c# %}
+
+namespace GettingStarted
+{
+	/// <summary>
+	/// Observable collection of Items list.
+	/// </summary>
+	public class ObservableCollectionList : ObservableCollection<Items>
+	{
+
+	}
+
+	/// <summary>
+    /// Range slider sample.
+    /// </summary>
+    public partial class RangeSliderSample : ContentPage
+    {
+        public RangeSliderSample()
+        {
+            InitializeComponent();
+        }
+    }
+}
+	
+
+{% endhighlight %}
+
+
+![](images/FontItalicCustom.png)
+

@@ -114,6 +114,9 @@ You can localize the custom strings (All Day, No Events) used in the schedule co
 {% tabs %}
 {% highlight c# %}
 
+// Here ScheduleSample is a sample name.
+ScheduleResourceManager.Manager = new ResourceManager("ScheduleSample.Resources.Syncfusion.SfSchedule.Forms", GetType().GetTypeInfo().Assembly);
+
 if (schedule.Locale == "fr")
 {
     if (Device.RuntimePlatform == Device.iOS || Device.RuntimePlatform == Device.Android)

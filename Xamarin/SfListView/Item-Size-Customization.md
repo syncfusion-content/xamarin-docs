@@ -44,9 +44,9 @@ You can download the entire source code of this demo [here](http://www.syncfusio
 
 ## AutoFit the items based on the content
 
-The SfListView allows dynamically adjusting size of items based on the content loaded in the [SfListView.ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html) by defining the [SfListView.AutoFitMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AutoFitMode.html) property. 
+The SfListView allows dynamically adjusting size of items based on the content loaded in the [SfListView.ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html) by defining the [SfListView.AutoFitMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AutoFitMode.html) property.
 
-In SfListView, [ForceUpdateItemSize](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ForceUpdateItemSize.html) is maintained to force update the [ListViewItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ListViewItem.html) size if it is changed at runtime when `SfListView.AutoFitMode` is `AutoFitMode.Height`. This method can be used only for iOS platform. For Android and UWP, item's size will automatically updated on runtime changes. This operation is expensive. so need to avoid repeated/unwanted usage. Here, `ItemIndex` is used as optional parameter. If needs to update particular item, then pass that item's index. If needs to update more than one item, then parameter is not needed to pass.
+You need to call the [ForceUpdateItemSize](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ForceUpdateItemSize.html) method to force the update for [ListViewItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ListViewItem.html) size if it is changed at runtime when `SfListView.AutoFitMode` is `AutoFitMode.Height`. This operation is expensive. so need to avoid repeated/unwanted usage. Here, `ItemIndex` is used as optional parameter. If needs to update particular item, then pass that item's index.
 
 {% tabs %}
 {% highlight c# %}
@@ -64,9 +64,9 @@ The control has two types of AutoFitMode as listed as follows:
 {% highlight xaml %}
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
   <syncfusion:SfListView x:Name="listView" 
-                     ItemSize="200"
-                     AutoFitMode="Height"
-                     ItemsSource="{Binding BookInfo}" />
+                    ItemSize="200"
+                    AutoFitMode="Height"
+                    ItemsSource="{Binding BookInfo}" />
 </ContentPage>
 {% endhighlight %}
 {% highlight c# %}
@@ -80,8 +80,49 @@ You can download the entire source code of this demo [here](http://www.syncfusio
 
 ![](SfListView_images/AutoFit.jpg)
 
+## Increasing or Decreasing label font size in the ListView items at runtime
+
+ListView allows you to resize the items based on the change in font size of the label element at runtime by calling [RefreshListViewItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~RefreshListViewItem.html) method asynchronously when [SfListView.AutoFitMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AutoFitMode.html) is Height.
+
+{% highlight xaml %}
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">       
+ <Grid>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="50"/>
+        <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+    <Button Text="Modify FontSize" Clicked="Button_Clicked" />
+    <syncfusion:SfListView x:Name="listView" 
+                ItemsSource="{Binding Items}"
+                BackgroundColor="#FFE8E8EC"
+                AutoFitMode="Height"
+                ItemSize="60">
+        <syncfusion:SfListView.ItemTemplate>
+            <DataTemplate>
+                <Grid x:Name="grid" RowSpacing="1">
+                    <Label LineBreakMode="NoWrap"
+                    TextColor="#474747" FontSize="{Binding BindingContext.FontSize, Source={x:Reference Name=listView}}"
+                    Text="{Binding ContactName}">
+                    </Label>
+                </Grid>
+            </DataTemplate>
+        </syncfusion:SfListView.ItemTemplate>
+    </syncfusion:SfListView>                
+</ContentPage>
+{% endhighlight %}
+
+{% highlight c# %}
+private void Button_Clicked(object sender, EventArgs e)
+{
+    ViewModel.FontSize += 25;
+    Device.BeginInvokeOnMainThread(() => { listView.RefreshListViewItem(0, 22, false); });
+}
+{% endhighlight %}
+{% endtabs %}
+
+![](SfListView_images/SfListView-FontSizeChanged.jpg)
+
 ## Limitations
 
  * Defines the size of the image when loading image in the [SfListView.ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html). Because, it does not return actual measured size when measuring before layout the item.
  * Avoid SfListView inside the SfListView if [SfListView.AutoFitMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AutoFitMode.html) is height. Because, the inner SfListView does not return actual measured size when measuring before layout the item.
- 

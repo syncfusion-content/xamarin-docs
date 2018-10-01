@@ -55,3 +55,26 @@ autoComplete.WatermarkColor = Color.FromHex("1976d2");
 {% endtabs %}
 
 ![](images/Watermark/watermark-color.png)
+
+## Focus the control
+
+The autocomplete sets the user to focus the autocomplete textbox initially after the control gets rendered using `IsFocused` property.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+<autocomplete:SfAutoComplete Watermark="Enter some text" IsFocused="true" x:Name="autoComplete" />
+</StackLayout>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+autoComplete.Watermark= "Enter some text";
+autoComplete.IsFocused = true;
+
+{% endhighlight %}
+
+{% endtabs %}

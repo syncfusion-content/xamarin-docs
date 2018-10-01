@@ -6,11 +6,11 @@ control: ProgressBar
 documentation: ug
 ---
 
-# Defining range
+# Range
 
-Range represents the entire span of the progress bar, and it can be defined using the [`Minimum`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.ProgressBarBase~Minimum.html) and [`Maximum`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.ProgressBarBase~Maximum.html) properties. The default value of range is 0 to 100.
+Range represents the entire span of the progress bar and can be defined using the [`Minimum`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.ProgressBarBase~Minimum.html) and [`Maximum`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.ProgressBarBase~Maximum.html) properties. The default value of the range is 0 to 100.
 
-The following code example explains how to customize the range as factor value to the progress bar.
+The following code sample demonstrates how to customize the range as factor value to the progress bar.
 
 {% tabs %}  
 

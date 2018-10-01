@@ -5,13 +5,14 @@ platform: xamarin
 control: ProgressBar
 documentation: ug
 ---
+
 # Appearance
 
 ## Angle
 
 The appearance of the circular progress bar can be customized to semi-circle, arc, etc. The start and end angles can be customized using the [`StartAngle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.SfCircularProgressBar~StartAngle.html) and [`EndAngle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.SfCircularProgressBar~EndAngle.html) properties. 
 
-The following code example explains how to change the appearance of the circular progress bar to semi-circle.
+The following code sample demonstrates how to change the appearance of the circular progress bar to semi-circle.
 
 {% tabs %} 
 
@@ -37,25 +38,26 @@ circularProgressBar.EndAngle = 360;
 
 ![](overview_images/angle.png)
 
-
 ## Range colors
 
-You can also visualize multiple ranges with different colors that are mapped to each range to enhance readability of progress.Currently, it is applicable only for linear progress bar.
+You can visualize the multiple ranges with different colors that are mapped to each range to enhance the readability of progress. 
 
-The colors can be mapped to the specific ranges using the [`RangeColors`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.SfLinearProgressBar~RangeColors.html) property in the linear progress bar, which holds a collection of [`RangeColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.RangeColor.html). 
+The colors can be mapped to the specific ranges using the [`RangeColors`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.ProgressBarBase~RangeColors.html) property, which holds a collection of [`RangeColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.RangeColor.html). 
 
-The following properties in [`RangeColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.RangeColor.html) are used to map the colors to range:
+The following properties in the [`RangeColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.RangeColor.html) are used to map the colors to a range:
 
 * [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.RangeColor~Color.html): Represents the color to the specified range.
 * [`Start`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.RangeColor~Start.html): Represents the start range of the color.
 * [`End`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.RangeColor~End.html): Represents the end range of the color.
 * [`IsGradient`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.RangeColor~IsGradient.html): Represents whether the gradient effect is applied to the color.
 
-The following code example shows mapping the solid color range in the linear progress bar.
+The following code sample demonstrates how to map the solid color range in the progress bar.
 
 {% tabs %} 
 
 {% highlight xaml %}
+
+<!--Using linear progress bar-->
 
 <progressBar:SfLinearProgressBar Progress="100">
 
@@ -77,21 +79,69 @@ The following code example shows mapping the solid color range in the linear pro
 
 </progressBar:SfLinearProgressBar>
 
+<!--Using circular progress bar-->
+
+<progressBar:SfCircularProgressBar Progress="100" ProgressColor="#FF90a84e">
+
+ <progressBar:SfCircularProgressBar.RangeColors>
+
+   <progressBar:RangeColorCollection>
+
+      <progressBar:RangeColor Color="#00bdaf" Start="0" End="25"/>
+
+      <progressBar:RangeColor Color="#2f7ecc" Start="25" End="50"/>
+
+      <progressBar:RangeColor Color="#e9648e" Start="50" End="75"/>
+
+      <progressBar:RangeColor Color="#fbb78a" Start="75" End="100"/>
+
+    </progressBar:RangeColorCollection>
+
+   </progressBar:SfCircularProgressBar.RangeColors>
+
+</progressBar:SfCircularProgressBar>
+
 {% endhighlight %}
 
 {% highlight c# %}
+
+// Using linear progress bar.
 
 SfLinearProgressBar linearProgressBar = new SfLinearProgressBar();
 
 linearProgressBar.Progress = 100;
 
-linearProgressBar.RangeColors.Add(new RangeColor() { Color = Color.FromHex("00bdaf"), Start = 0, End = 25 });
+RangeColorCollection rangeColors = new RangeColorCollection();
 
-linearProgressBar.RangeColors.Add(new RangeColor() { Color = Color.FromHex("2f7ecc"), Start = 25, End = 50 });
+rangeColors.Add(new RangeColor() { Color = Color.FromHex("00bdaf"), Start = 0, End = 25 });
 
-linearProgressBar.RangeColors.Add(new RangeColor() { Color = Color.FromHex("e9648e"), Start = 50, End = 75 });
+rangeColors.Add(new RangeColor() { Color = Color.FromHex("2f7ecc"), Start = 25, End = 50 });
 
-linearProgressBar.RangeColors.Add(new RangeColor() { Color = Color.FromHex("fbb78a"), Start = 75, End = 100 });
+rangeColors.Add(new RangeColor() { Color = Color.FromHex("e9648e"), Start = 50, End = 75 });
+
+rangeColors.Add(new RangeColor() { Color = Color.FromHex("fbb78a"), Start = 75, End = 100 });
+
+linearProgressBar.RangeColors = rangeColors;
+
+// Using circular progress bar.
+
+SfCircularProgressBar circularProgressBar = new SfCircularProgressBar();
+
+circularProgressBar.Progress = 100;
+
+circularProgressBar.ProgressColor = Color.FromHex("FF90a84e");
+
+RangeColorCollection rangeColors = new RangeColorCollection();
+
+rangeColors.Add(new RangeColor() { Color = Color.FromHex("00bdaf"), Start = 0, End = 25 });
+
+rangeColors.Add(new RangeColor() { Color = Color.FromHex("2f7ecc"), Start = 25, End = 50 });
+
+rangeColors.Add(new RangeColor() { Color = Color.FromHex("e9648e"), Start = 50, End = 75 });
+
+rangeColors.Add(new RangeColor() { Color = Color.FromHex("fbb78a"), Start = 75, End = 100 });
+
+circularProgressBar.RangeColors = rangeColors;
 
 {% endhighlight %}
 
@@ -99,11 +149,12 @@ linearProgressBar.RangeColors.Add(new RangeColor() { Color = Color.FromHex("fbb7
 
 ![](overview_images/rangecolors.png)
 
-The following code example shows how to apply gradient transition effect to the range colors in the linear progress bar.
+The following code sample demonstrates how to apply gradient transition effect to the range colors in the linear progress bar.
 
 {% tabs %} 
 
 {% highlight xaml %}
+
 <progressBar:SfLinearProgressBar Progress="100" >
 
    <progressBar:SfLinearProgressBar.RangeColors>
@@ -124,28 +175,67 @@ The following code example shows how to apply gradient transition effect to the 
 
 </progressBar:SfLinearProgressBar>
 
+<progressBar:SfCircularProgressBar Progress="100" ProgressColor="#FF90a84e">
+
+   <progressBar:SfCircularProgressBar.RangeColors>
+
+     <progressBar:RangeColorCollection>
+
+        <progressBar:RangeColor IsGradient="True" Color="#88A0D9EF" Start="0" End="25"/>
+
+        <progressBar:RangeColor IsGradient="True" Color="#AA62C1E5" Start="25" End="50"/>
+
+        <progressBar:RangeColor IsGradient="True" Color="#DD20A7DB" Start="50" End="75"/>
+
+        <progressBar:RangeColor IsGradient="True" Color="#FF1C96C5" Start="75" End="100"/>
+
+   </progressBar:RangeColorCollection>
+
+  </progressBar:SfCircularProgressBar.RangeColors>
+
+</progressBar:SfCircularProgressBar>
+
 {% endhighlight %}
 
 {% highlight c# %}
+
+// Using linear progress bar.
+
 SfLinearProgressBar linearProgressBar = new SfLinearProgressBar();
 
 linearProgressBar.Progress = 100;
 
-linearProgressBar.RangeColors.Add(
+RangeColorCollection rangeColors = new RangeColorCollection();
 
-new RangeColor() { Color = Color.FromHex("88A0D9EF"), IsGradient = true, Start = 0 , End = 25 });
+rangeColors.Add(new RangeColor() { Color = Color.FromHex("88A0D9EF"), IsGradient = true, Start = 0 , End = 25 });
 
-linearProgressBar.RangeColors.Add(
+rangeColors.Add(new RangeColor() { Color = Color.FromHex("AA62C1E5"), IsGradient = true, Start = 25, End = 50 });
 
-new RangeColor() { Color = Color.FromHex("AA62C1E5"), IsGradient = true, Start = 25, End = 50 });
+rangeColors.Add(new RangeColor() { Color = Color.FromHex("DD20A7DB"), IsGradient = true, Start = 50, End = 75 });
 
-linearProgressBar.RangeColors.Add(
+rangeColors.Add(new RangeColor() { Color = Color.FromHex("FF1C96C5"), IsGradient = true, Start = 75, End = 100 });
 
-new RangeColor() { Color = Color.FromHex("DD20A7DB"), IsGradient = true, Start = 50, End = 75 });
+linearProgressBar.RangeColors = rangeColors;
 
-linearProgressBar.RangeColors.Add(
+// Using circular progress bar.
 
-new RangeColor() { Color = Color.FromHex("FF1C96C5"), IsGradient = true, Start = 75, End = 100 });
+SfCircularProgressBar circularProgressBar = new SfCircularProgressBar();
+
+circularProgressBar.Progress = 100;
+
+circularProgressBar.ProgressColor = Color.FromHex("FF90a84e");
+
+RangeColorCollection rangeColors = new RangeColorCollection();
+
+rangeColors.Add(new RangeColor() { Color = Color.FromHex("88A0D9EF"), IsGradient = true, Start = 0 , End = 25 });
+
+rangeColors.Add(new RangeColor() { Color = Color.FromHex("AA62C1E5"), IsGradient = true, Start = 25, End = 50 });
+
+rangeColors.Add(new RangeColor() { Color = Color.FromHex("DD20A7DB"), IsGradient = true, Start = 50, End = 75 });
+
+rangeColors.Add(new RangeColor() { Color = Color.FromHex("FF1C96C5"), IsGradient = true, Start = 75, End = 100 });
+
+circularProgressBar.RangeColors = rangeColors;
 
 {% endhighlight %}
 
@@ -155,7 +245,7 @@ new RangeColor() { Color = Color.FromHex("FF1C96C5"), IsGradient = true, Start =
 
 ## Thickness
 
-**Linear** **progress** **bar**
+### Linear progress bar
 
 In the linear progress bar, the height of the track and padding of the progress indicator can be customized using the [`TrackHeight`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.SfLinearProgressBar~TrackHeight.html) and [`Padding`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.SfLinearProgressBar~Padding.html) properties, respectively.
 
@@ -183,8 +273,7 @@ linearProgressBar.Padding = 2;
 
 ![](overview_images/thickness_linear.png)
 
-
-**Circular** **progress** **bar**
+### Circular progress bar
 
 The following properties are used to customize the appearance of the circular progress bar:
 
@@ -193,7 +282,7 @@ The following properties are used to customize the appearance of the circular pr
 * [`TrackOuterRadius`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.SfCircularProgressBar~TrackOuterRadius.html): Defines the outer radius of the track indicator.
 * [`TrackInnerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.SfCircularProgressBar~TrackInnerRadius.html): Defines the inner radius of the track indicator.
 
-The following code example shows how to customize the appearance of circular progress bar.
+The following code sample demonstrates how to customize the appearance of circular progress bar.
 
 {% tabs %} 
 
@@ -225,10 +314,9 @@ trackOutsideProgressBar.ShowProgressValue = false;
 
 ![](overview_images/appearance.png)
 
-
 ## Corner radius
 
-The [`CornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.SfLinearProgressBar~CornerRadius.html) property is used to customize the rounded edges in the linear progress bar, as shown in the following code example.
+The [`CornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.SfLinearProgressBar~CornerRadius.html) property is used to customize the rounded edges in the linear progress bar as demonstrated in the following code sample.
 
 {% tabs %} 
 
@@ -253,7 +341,6 @@ linearProgressBar.CornerRadius = 10;
 
 ![](overview_images/cornerradius.png)
 
-
 ## Color customization
 
 The following properties are used to customize the color in the progress bar:
@@ -261,7 +348,7 @@ The following properties are used to customize the color in the progress bar:
 * [`ProgressColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.ProgressBarBase~ProgressColor.html): Represents the color of the progress indicator.
 * [`TrackColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.ProgressBarBase~TrackColor.html): Represents the color of the track indicator.
 
-The following code example shows the color customization in progress and track indicator.
+The following code sample demonstrates the color customization in progress and track indicator.
 
 {% tabs %} 
 
@@ -287,8 +374,7 @@ linearProgressBar.TrackColor = Color.FromHex("3351483a");
 
 ![](overview_images/color1.png)
 
-
-The linear progress bar provides support to customize the color for the secondary progress bar using the [`SecondaryProgressColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.SfLinearProgressBar~SecondaryProgressColor.html) property, as shown in the following code example.
+The linear progress bar provides support to customize the color for the secondary progress bar using the [`SecondaryProgressColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.SfLinearProgressBar~SecondaryProgressColor.html) property as demonstrated in the following code sample.
 
 {% tabs %} 
 
@@ -310,5 +396,4 @@ linearProgressBar.SecondaryProgressColor = Color.CornflowerBlue;
 {% endtabs %} 
 
 ![](overview_images/color2.png)
-
 

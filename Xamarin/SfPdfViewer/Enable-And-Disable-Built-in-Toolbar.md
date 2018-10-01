@@ -2,7 +2,7 @@
 layout: post
 title:  Enable and disable built-in toolbar
 description: Enable and disable built-in toolbar
-platform: Xamarin.Forms
+platform: Xamarin
 control: SfPdfViewer
 documentation: ug
 ---
@@ -23,6 +23,8 @@ pdfViewerControl.Toolbar.Enabled = false;
 {% endhighlight %}
 {% endtabs %}
 
+![](pdfviewer_images/ToolbarDisabled.png)
+
 The toolbar can be enabled by setting the same property to true.
 
 {% tabs %}
@@ -32,3 +34,5 @@ pdfViewerControl.Toolbar.Enabled = true;
 
 {% endhighlight %}
 {% endtabs %}
+
+![](pdfviewer_images/ToolbarEnabled.png)

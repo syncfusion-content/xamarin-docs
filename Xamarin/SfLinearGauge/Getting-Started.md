@@ -23,6 +23,16 @@ I> After adding the reference, an additional step is required for iOS and UWP pr
 
 I>For UWP alone, one more additional step is required if the project is built-in release mode with .NET Native tool chain is enabled. You can refer to this [KB article](https://www.syncfusion.com/kb/8272) for more details.
 
+## Reference Mono.Android.Export
+
+1. In the Solution Explorer in the Android project, right-click on References and choose Add Reference.
+
+2. In the Add Reference window, select the Assemblies tab and choose the Framework.
+
+3. In the Framework tab, ensure Mono.Android and Mono.Android.Export  is checked and click ok.
+
+![](getting-started_images/add_reference.png)
+
 **Adding namespace for the added assemblies**
 
 {% tabs %}

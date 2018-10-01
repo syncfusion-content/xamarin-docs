@@ -129,7 +129,10 @@ The following properties are used to define and customize the [`Title`](https://
 
 * [`Text`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTitle~Text.html) – used to change the text of the title.
 * [`TextColor`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTitle~TextColor.html) – used to change the color of the title text.
-* [`Font`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTitle~Font.html) – used to change the text size, font family, and font weight of the title.
+* [`Font`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTitle~Font.html) – used to change the text size, font family, and font weight of the title. (This is deprecated API. Use FontSize, FontFamily, and FontAttributes properties instead of this.)
+* [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegendLabelStyle~FontFamily.html) - used to change the font family for the legend label. 
+* [`FontAttributes`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegendLabelStyle~FontAttributes.html) - used to change the font style for the legend label. 
+* [`FontSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegendLabelStyle~FontSize.html) - used to change the font size for the legend label.
 * [`Margin`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTitle~Margin.html) – used to change the margin size of title.
 * [`TextAlignment`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTitle~TextAlignment.html) – used to change the alignment of the title text; it can be start, end, or center.
 * [`BackgroundColor`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTitle~BackgroundColor.html) – used to change the title background color.
@@ -410,6 +413,48 @@ chart.Legend.OffsetY = 90;
 
 ![](legend_images/legend_img5.png)
 
+## ItemTemplate
+
+You can customize the appearance of legend items with your template by using [`ItemTemplate`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~ItemTemplate.html) property of [`ChartLegend`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend.html).
+
+N> The BindingContext of the template is the corresponding underlying legend item that provided in the ChartLegendItem class.
+ 
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.Legend>
+
+   ...
+                <chart:ChartLegend.ItemTemplate>
+                    
+                    <DataTemplate>
+                     
+                     ...
+                    </DataTemplate>
+                    
+                </chart:ChartLegend.ItemTemplate>
+
+            </chart:ChartLegend>
+
+        </chart:SfChart.Legend>
+		
+{% endhighlight %}
+
+{% highlight c# %}
+
+         chart.Legend = new ChartLegend();
+         DataTemplate template = new DataTemplate ( () =>
+         {
+          ...
+         });
+
+         chart.Legend.ItemTemplate = template;
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Event
 
  **LegendItemClicked**
@@ -422,7 +467,7 @@ The [`LegendItemClicked`](https://help.syncfusion.com/cr/cref_files/xamarin/Sync
 
 The [`LegendItemCreated`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~LegendItemCreated_EV.html) event is triggered when the chart legend item is created. This argument contains the following information.
 
-* [`LegendItem`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegendItemClickedEventArgs~LegendItem.html) – Used to customize the label and appearance of individual legend item.
+* [`LegendItem`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegendItemCreatedEventArgs~LegendItem.html) – Used to customize the label and appearance of individual legend item.
 
 You can customize the legend item using following properties of [`ChartLegendItem`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegendItem.html):
 

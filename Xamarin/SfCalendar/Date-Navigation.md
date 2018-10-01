@@ -61,7 +61,7 @@ By default, the date can be navigated to next view using touch gesture and swipi
 
 {% highlight c# %}
 
-	DependencyService.Get<ICalendarDirection>().Forward();
+	calendar.Forward();
 
 {% endhighlight %}
 
@@ -73,7 +73,7 @@ By default, the date can be navigated to previous view using touch gesture and s
 
 {% highlight c# %}
 
-	DependencyService.Get<ICalendarDirection>().Backward();
+	calendar.Backward();
 
 {% endhighlight %}
 

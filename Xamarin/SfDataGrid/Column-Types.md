@@ -811,7 +811,7 @@ N> The row index of the row can also be retrieved by using the [GridTapped](http
 
 Currently Xamarin.Forms does not provide a view that combines both the [DatePicker](https://developer.xamarin.com/api/type/Xamarin.Forms.DatePicker/) and the [TimePicker](https://developer.xamarin.com/api/type/Xamarin.Forms.TimePicker/) as one control. However, the two controls are available individually. 
 
-The SfDataGrid supports `DatePicker` and `TimePicker` in the same column. It can be achieved by loading the `DatePicker` and `TimePicker` in [StackLayout](https://developer.xamarin.com/api/type/Xamarin.Forms.StackLayout/) in the `GridTemplateColumn`.
+The SfDataGrid supports `DatePicker` and `TimePicker` in the same column. It can be achieved by loading the `DatePicker` and `TimePicker` in [StackLayout](https://docs.microsoft.com/en-us/dotnet/api/Xamarin.Forms.StackLayout?view=xamarin-forms) in the `GridTemplateColumn`.
 
 To load `DatePicker` and `TimePicker` together, follow the code example:
 
@@ -1147,7 +1147,7 @@ Upon entering the edit mode at RowColumnIndex(1,1), the Picker pop up opens with
 
 ![](SfDataGrid_images/PickerColumn_PickerPopUp.png)
 
-When edit mode is exited by selecting a value(9) from the Picker pop up, the `GridCell` at RowColumn index(0,1) displays the corresponding OrderID value for the selected EmployeeID value which is 4. Note that the `GridCell` data of the PickerColumn is not changed and only the OrderID columns data is changed to 4. 
+When edit mode is exited by selecting a value(9) from the Picker pop up, the `GridCell` at RowColumn index(0,1) displays the corresponding OrderID value for the selected EmployeeID value which is 4.
 
 ![](SfDataGrid_images/PickerColumn_Customization.png)
 

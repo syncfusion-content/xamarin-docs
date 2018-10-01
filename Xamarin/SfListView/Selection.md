@@ -441,3 +441,8 @@ public partial class MainPage : ContentPage
 {% endtabs %}
 
 You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SelectionItemIndex1430542696).
+
+## Limitation
+
+* When a grid is loaded inside the [ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html) with background color, the [SelectionBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionBackgroundColor.html) will not display. Because, it overlaps the `SelectionBackgroundColor`. In this case, set the background color for the ListView instead of `ItemTemplate`.
+* When the ListView contains duplicated items in the collection, only the first item whose instance was created initially will be selected or deselected.

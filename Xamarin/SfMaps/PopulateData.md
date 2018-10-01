@@ -9,13 +9,13 @@ documentation: ug
 
 # Populate Data
 
-This section describes on how to populate shape data for providing Data input to the Map control and usage of ItemsSource property.
+This section explains how to populate shape data for providing data input to the maps control and usage of the `ItemsSource` property.
 
-## Data Binding
+## Data binding
 
-The Maps control supports data binding with the ItemsSource property in the shape layers.
+The maps control supports data binding using the `ItemsSource` property in the shape layers.
 
-The following properties in shape layers are used for binding data in Maps control,
+The following properties in shape layers are used for binding data in the maps control:
 
 * ItemsSource
 * ShapeIDPath
@@ -27,11 +27,11 @@ The [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion
 
 ### ShapeIDPath
 
-The [`ShapeIDPath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShapeIDPath.html) property refers the data ID in ItemsSource.
+The [`ShapeIDPath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShapeIDPath.html) property refers the data ID in `ItemsSource`.
 
 ### ShapeIDTableField
 
-The [`ShapeIDTableField`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShapeIDTableField.html) property is similar to the ShapeIdPath that refers to the column name in the data property of shape layers to identify the shape. When the values of the ShapeIdPath property in the ItemsSource property and the values of ShapeIdTableField in the data property match, the associated object from the ItemsSource is bound to the corresponding shape.
+The [`ShapeIDTableField`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShapeIDTableField.html) property is similar to the `ShapeIdPath`; it refers to the column name in the data property of shape layers to identify the shape. When the values of the `ShapeIdPath` property in the `ItemsSource` property and the values of `ShapeIdTableField` in the data property match, the associated object from the ItemsSource will be bound to the corresponding shape.
 
 {% tabs %}
 
@@ -66,7 +66,7 @@ The [`ShapeIDTableField`](https://help.syncfusion.com/cr/cref_files/xamarin/Sync
 
 {% endtabs %}
 
-Refer the following USA Election data which is used as items source.
+The following code sample demonstrates referring the United States election data as items source.
 
 {% highlight c# %}
 

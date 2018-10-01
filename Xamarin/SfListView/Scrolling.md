@@ -14,7 +14,7 @@ documentation: ug
 
 The SfListView allows programmatically scrolling based on the index by using the [ScrollToRowIndex](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LayoutBase~ScrollToRowIndex.html) method for both linear and grid layouts. It also enables and disables the scrolling animation when changing the view. By default, the scrolling will be animated.
 
-You can set position of item in view while scrolling by passing ScollToPosition to `ScrollToRowIndex` method. Below are four different types of positions:
+You can set position of item in view while scrolling by passing [ScrollToPosition](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ScrollToPosition.html) to `ScrollToRowIndex` method. Below are four different types of positions:
 
 * MakeVisible: Scrolls a specific item to make visible in the view. If the item is already in view, scrolling will not occur.
 * Start: Scrolls a specific item to be positioned at the begin of the view.
@@ -156,8 +156,7 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        VisualContainer visualContainer = listView.GetVisualContainer();
-        scrollView = visualContainer.GetType().GetRuntimeProperties().First(x => x.Name == "ScrollOwner").GetValue(visualContainer) as ExtendedScrollView;
+        scrollView = listView.GetScrollView();
     }
 
     private void ChangeItemsSource_Clicked(object sender, EventArgs e)
@@ -171,5 +170,4 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ItemsourceScrolling-865979633).
-
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ItemsourceScrolling-2031956697).

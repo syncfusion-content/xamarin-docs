@@ -9,37 +9,36 @@ documentation: UG
 
 # Localization 
 
-Localization is the process of translating the application resources into different language for the specific cultures. SfDataGrid uses the following static texts which can be localized in the application level.
+Localization is the process of translating application resources into different languages for specific cultures. SfDataGrid uses the following static texts that can be localized in the application level:
 
 * LOAD MORE ITEMS
 * Drop below 
 * Drop above
 * Cancel drop
 
-To localize the SfDataGrid please follow the below steps that has to be done in the application level.
+To localize the SfDataGrid, follow the steps in application level:
 
-* Adding a .resx file
-* Convert platform specific language format to .NET format
-* Applying the converted format
+1. Add a .resx file.
+2. Convert the platform specific language format to .NET format.
+3. Apply the converted format.
 
-## Adding a .resx file
+## Add a .resx file
 
-In the portable project of your application, add a `.resx` file inside the resources folder with **Build Action -> EmbeddedResource** Please follow the below conventions in naming the file.
+In the portable project of your application, add a `.resx` file inside the resources folder with **Build Action -> EmbeddedResource**. The file name should be `Syncfusion control's Namespace + language code` format.
 
-File name should be of the format "Syncfusion control's Namespace" + "language code"
-For example if you want to set culture as French, the file should be named as **Syncfusion.SfDataGrid.XForms.fr-FR.resx**.
+For example, to set the culture as French, the file should be named as **Syncfusion.SfDataGrid.XForms.fr-FR.resx**.
 
-In the .resx file, based on the language you have to set the appropriate texts equivalent to the static texts.
+Based on the language, set the appropriate equivalent text to the static texts in the .resx file.
 
-N> You will have to create and add separate .resx files for individual languages.
+N> You should create and add separate .resx files for the individual languages.
 
 ![](SfDataGrid_images/DataGridResx.png)
 
-## Convert platform specific language format to .NET format
+## Convert the platform specific language format to .NET format
 
-To get the localized text from the added `.resx` file, declare an interface named ILocalize in your PCL project and implement the interface in each of the platform renderers. This will query the language which is set in the device using platform specific code and then convert this platform specific format to a .NET format.
+To get the localized text from the added `.resx` file, declare an interface named ILocalize in your PCL project and implement the interface in each platform renderer. This will query the language set in the device using platform specific code and convert this platform specific format to .NET format.
 
-Please refer the below code snippet to declare the interface in the PCL project.
+Refer to the following code snippet to declare the interface in PCL project.
 
 {% tabs %}
 {% highlight c# %}
@@ -95,8 +94,8 @@ public class PlatformCulture
 {% endhighlight %}
 {% endtabs %}
 
+Refer to the following code to implement the interface in Android renderer project.
 
-Refer the below codes to implement the interface in Android renderer project.
 {% tabs %}
 {% highlight c# %}
 
@@ -188,7 +187,8 @@ public class Localize : ILocalize
 {% endhighlight %}
 {% endtabs %}
 
-Refer the below codes to implement the interface in iOS renderer project.
+Refer to the following code to implement the interface in iOS renderer project.
+
 {% tabs %}
 {% highlight c# %}
 
@@ -279,11 +279,11 @@ public class Localize : ILocalize
 {% endhighlight %}
 {% endtabs %}
 
-Implementation of the interface is not required for UWP project, since the resources automatically recognizes the selected language on UWP.
+Implementation of the interface is not required for UWP project, since the resources automatically recognizes the selected language.
 
 ## Appyling the converted format 
 
-After implementing the necessary interface and creating the necessary .resx files, now in your App.Xaml.cs file of the PCL project, after setting the root/main page of your application, initialize a new instance of the `ResourceManager` class and set it to the [DataGridResourceManager.Manager](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.XForms.DataGridResourceManager~Manager.html) property to look up into resources with the specified root name in the given assembly. Now using `DependencyService` call the implemented interface's `SetLocale()` with the necessary language code as parameter. Please refer the below code snippet.
+After setting the root/main page of the application in your App.Xaml.cs file of the PCL project, initialize a new instance of the `ResourceManager` class and set it to the [DataGridResourceManager.Manager](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.XForms.DataGridResourceManager~Manager.html) property to look up into the resources with specified root name in the given assembly. Using `DependencyService`, call `SetLocale()` of the implemented interface with necessary language code as parameter.
 
 {% tabs %}
 {% highlight c# %}
@@ -312,9 +312,9 @@ public partial class App : Application
 {% endhighlight %}
 {% endtabs %}
 
-For Android and iOS, it is mandatory to implement the above steps. For UWP, it is not mandatory to implement the above items, since the resources automatically recognizes the selected language on UWP. However, if you want to set language specific to the application irrespective of the selected language in the device, you can set it by using `CultureInfo.CurrentUICulture` in UWP platform specific project.
+For Android and iOS, it is mandatory to implement the previous steps. However, to set a specific language to the application irrespective of the selected language in the device, use `CultureInfo.CurrentUICulture` in a specific project of UWP platform.
 
-Refer the below code example to localize the text in UWP platform.
+Refer to the following code example to localize the text in UWP platform.
 
 MainPage.Xaml.cs
 {% tabs %}
@@ -332,4 +332,4 @@ public MainPage()
 {% endhighlight %}
 {% endtabs %}
 
-You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfGrid_Sample1621493322).
+You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfGrid_Sample1621493322).

@@ -28,11 +28,13 @@ In the portable project of your application, add a `.resx` file inside the resou
 
 For example, to set the culture as French, the file should be named as **Syncfusion.SfDataGrid.XForms.fr-FR.resx**.
 
+![](SfDataGrid_images/DataGridResx.png)
+
 Based on the language, set the appropriate equivalent text to the static text in the .resx file.
 
 N> You should create and add separate .resx files for the individual languages.
 
-![](SfDataGrid_images/DataGridResx.png)
+![](SfDataGrid_images/DataGrid.png)
 
 ## Convert the platform specific language format to .NET format
 
@@ -298,7 +300,7 @@ public partial class App : Application
         
         if (Device.RuntimePlatform == Device.iOS || Device.RuntimePlatform == Device.Android)
         {
-            DataGridResourceManger.Manager = new ResourceManager("GettingStarted.Resources.Syncfusion.SfDataGrid.XForms", this.GetType().GetTypeInfo().Assembly);
+            DataGridResourceManager.Manager = new ResourceManager("GettingStarted.Resources.Syncfusion.SfDataGrid.XForms", this.GetType().GetTypeInfo().Assembly);
             // the ResourceManager class constructor has two parameters.
             // 1. ResXPath => Full path of the resx file in the application. Here in the above line GettingStarted refers to the namespace of the Application
             // 2. Assembly => Application assembly (PCL)
@@ -326,10 +328,12 @@ public MainPage()
     SfDataGridRenderer.Init();
     // Applying localization for UWP
     CultureInfo.CurrentUICulture = new CultureInfo("fr");
-    LoadApplication(new SwitchSample.App());
+    LoadApplication(new GettingStarted.App());
 }
 
 {% endhighlight %}
 {% endtabs %}
+
+![](SfDataGrid_images/DataGrid_Image.png)
 
 You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfGrid_Sample1621493322).

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started | SfListView | Xamarin | Syncfusion
-description: Getting started with SfListView.
+description: Describes about quick overview for getting started with the ListView in Xamarin.Forms.
 platform: xamarin
 control: SfListView
 documentation: ug

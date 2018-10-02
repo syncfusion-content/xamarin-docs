@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Item Drag and Drop in SfListView
-description: Describes the drag and drop behavior and customization in SfListView.
+description: Describes about reorder the items in the ListView by drag and drop behavior and its customization.
 platform: xamarin
 control: SfListView
 documentation: ug

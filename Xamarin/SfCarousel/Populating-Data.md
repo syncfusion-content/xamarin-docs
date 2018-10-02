@@ -1,7 +1,7 @@
 ---
 layout : post
 title : Data Binding  in Syncfusion Carousel control in Xamarin.Forms.
-description : Learn how to set the ItemsSource in Carousel for Xamarin.Forms.
+description : This section describes how to bind the data sources to populate items in the carousel and binding data in template of the carousel items.
 platform : Xamarin
 control : Carousel
 documentation : ug

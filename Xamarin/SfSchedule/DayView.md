@@ -202,6 +202,7 @@ Working hours in `DayView` of Schedule control will be differentiated with non-w
         </schedule:DayViewSettings>
     </schedule:SfSchedule.DayViewSettings>
 </schedule:SfSchedule>
+{% endhighlight %}
 {% highlight C# %}
 schedule.ScheduleView = ScheduleView.DayView;
 //Create new instance of DayViewSettings

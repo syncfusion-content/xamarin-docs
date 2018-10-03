@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of Essential Xamarin.Forms Chart
-description: What are the key features available in chart.
+description: What are the key features available in the Essential Chart for Xamarin.Forms?
 platform: xamarin
 control: Chart
 documentation: ug

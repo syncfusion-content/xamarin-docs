@@ -38,7 +38,7 @@ inputLayout.InputView = new Entry() { Text = "John" };
 
 {% endtabs %}
 
-![](Container-Type/textInput_container_img1.png)
+![](Container-Type-images/textInput_container_img1.png)
 
 ## Outlined
 
@@ -68,5 +68,5 @@ inputLayout.InputView = new Entry() { Text = "John" };
 
 {% endtabs %}
 
-![](Container-Type/textInput_container_img2.png)
+![](Container-Type-images/textInput_container_img2.png)
 

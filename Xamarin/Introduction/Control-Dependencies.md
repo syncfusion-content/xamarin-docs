@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Control Dependencies
-description: Control Dependencies
+title: Control Dependencies of Xamarin.Forms
+description: Contains Xamarin.Forms control dependencies for each control to be referred in each platform project.
 platform: xamarin
 control: Introduction
 documentation: ug

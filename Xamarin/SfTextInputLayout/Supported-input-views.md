@@ -38,7 +38,7 @@ inputLayout.InputView = new Entry();
 
 {% endtabs %}
 
-![](Supported-input-views/textInput_input_img1.PNG)
+![](Supported-input-views-images/textInput_input_img1.PNG)
 
 ## Editor
 
@@ -67,7 +67,7 @@ inputLayout.InputView = new Editor();
 
 {% endtabs %}
 
-![](Supported-input-views/textInput_input_img2.PNG)
+![](Supported-input-views-images/textInput_input_img2.PNG)
 
 ## Masked edit
 
@@ -98,7 +98,7 @@ inputLayout.InputView = new SfMaskedEdit() { Keyboard = Keyboard.Numeric, Mask =
 
 {% endtabs %}
 
-![](Supported-input-views/textInput_input_img3.PNG)
+![](Supported-input-views-images/textInput_input_img3.PNG)
 
 ## Numeric text box
 
@@ -130,7 +130,7 @@ inputLayout.InputView = new SfNumericTextBox() { Value = 123.45, FormatString="c
 {% endtabs %}
 
 
-![](Supported-input-views/textInput_input_img4.PNG)
+![](Supported-input-views-images/textInput_input_img4.PNG)
 
 
 

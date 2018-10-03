@@ -40,7 +40,7 @@ inputLayout.InputView = new Entry();
 
 The visibility of the helper text can be disabled by setting the [ShowHelperText](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~ShowHelperText.html) property to false. By default, it is set to true.
 
-![](Assistive-Labels/helper.PNG)
+![](Assistive-Labels-images/helper.PNG)
 
 ## Error message
 
@@ -74,7 +74,7 @@ inputLayout.InputView = new Entry();
 
 {% endtabs %}
 
-![](Assistive-Labels/error.gif)
+![](Assistive-Labels-images/error.gif)
 
 N> Error validations should be done in the application level.
 
@@ -110,7 +110,7 @@ inputLayout.InputView = new Entry();
 
 {% endtabs %}
 
-![](Assistive-Labels/charcount.gif)
+![](Assistive-Labels-images/charcount.gif)
 
 N> When character count reaches the maximum character length, the error color will be applied to hint, border, and counter label.
 

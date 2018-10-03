@@ -431,7 +431,7 @@ private GroupResult GetGroup(object itemData)
 {% endhighlight %}
 {% endtabs %}
 
-Download the sample for above source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ItemDragandDrop344036487).
+Download sample for the previous source code [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ItemDragandDrop344036487).
 
 ## Drag and drop customization
 

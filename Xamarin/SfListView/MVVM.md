@@ -92,7 +92,7 @@ ListView events can be converted into commands using [Behaviors](https://develop
 </listView:SfListView>
 {% endhighlight %}
 {% highlight c# %}
-public class ContactsViewModel : INotifyPropertyChanged
+public class ContactsViewModel
 {
     public Command<ItemSelectionChangedEventArgs> selectionChangedCommand;
 

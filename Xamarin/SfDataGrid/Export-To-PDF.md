@@ -436,6 +436,39 @@ option.TopTableSummaryStyle = new PdfGridCellStyle()
 
 ![](SfDataGrid_images/PDF/HeaderTableSummartyStyle.png)
 
+## Exclude group summaries when exporting
+
+By default, the `GroupSummary` rows in the data grid will be exported to PDF. To export the SfDataGrid without `GroupSummary` rows, set the  [DataGridPdfExportOption.ExportGroupSummary](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridPdfExportOption~ExportGroupSummary.html) property to `false`.
+
+{% tabs %}
+{% highlight c# %}
+DataGridPdfExportOption option = new DataGridPdfExportOption();
+// Set false here to export the DataGrid without GroupSummary rows. The default value is true.
+//option.ExportGroupSummary = false;   
+{% endhighlight %}
+{% endtabs %}
+
+![](SfDataGrid_images/PDF/GroupSummaryPdf.png)
+
+### GroupSummaryStyle 
+
+`SfDataGrid` supports exporting the `GroupSummary` rows with custom style by using the [DataGridPdfExportOption.GroupSummaryStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGridConverter.iOS~Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption~GroupSummaryStyle.html) property.
+
+{% tabs %}
+{% highlight c# %}
+DataGridPdfExportOption pdfOption = new DataGridPdfExportOption();
+pdfOption.GroupSummaryStyle = new PdfGridCellStyle()
+{
+BackgroundBrush = PdfBrushes.Green,
+TextBrush = PdfBrushes.Yellow,
+TextPen = PdfPens.White,
+StringFormat = new PdfStringFormat() { Alignment = PdfTextAlignment.Right, CharacterSpacing = 3f, WordSpacing = 10f }
+};
+{% endhighlight %}
+{% endtabs %}
+
+![](SfDataGrid_images/PDF/GroupSummaryStylePdf.png)
+
 ## Customizing borders
 
 The SfDataGrid allows customizing the grid borders as follows using the `GridLineType` property:
@@ -848,14 +881,14 @@ The SfDataGrid provides you the following events for exporting:
 
 ### RowExporting
 
-The [DataGridRowPdfExportingEventHandler](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridRowPdfExportingEventhandler.html) delegate allows customizing the styles for record rows and group caption rows. The `RowExporting` event is triggered with [DataGridRowPdfExportingEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridRowPdfExportingEventArgs.html) that contains the following properties:
+The [DataGridRowPdfExportingEventHandler](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridRowPdfExportingEventhandler.html) delegate allows customizing the styles for the record rows, group caption rows, and summary rows. The `RowExporting` event is triggered with [DataGridRowPdfExportingEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridRowPdfExportingEventArgs.html) that contains the following properties:
 
 * [PdfGrid](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridRowPdfExportingEventArgs~PdfGrid.html): Customizes the properties of pdfGrid such as `Background`, `CellPadding`, `CellSpacing`, etc.
 * [PdfRow](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridRowPdfExportingEventArgs~PdfRow.html): Specifies the `PDFGridRow` to be exported. You can use this to customize the properties of a particular row. 
 * [Record](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridRowPdfExportingEventArgs~PdfRow.html): Gets the collection of exported underlying data objects.
 * [RowType](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridRowPdfExportingEventArgs~RowType.html): Specifies the row type by using `ExportRowType` `Enum`. You can use this property to check the row type and apply different styles based on the row type.
 
-You can use this event to customize the properties of the grid rows exported to PDF. The following code example illustrates how to change the background color of the record rows and caption summary rows while exporting.
+You can use this event to customize the properties of the grid rows exported to PDF. The following code example illustrates how to change the background color of the record rows, caption summary rows, and group summary rows when exporting.
 
 {% tabs %}
 {% highlight c# %}
@@ -872,9 +905,14 @@ void pdfExport_RowExporting (object sender, DataGridRowPdfExportingEventArgs e)
         e.PdfRow.Style.BackgroundBrush = PdfBrushes.LightGreen;
     }
 
-    if (e.RowType == ExportRowType.CaptionSummary) {
-        e.PdfRow.Style.BackgroundBrush = PdfBrushes.LightGray;
-    }
+    // You can also set the desired background colors for the CaptionSummary row and GroupSummary row as shown below
+    // if (e.RowType == ExportRowType.CaptionSummary) {
+    //    e.PdfRow.Style.BackgroundBrush = PdfBrushes.LightGray;
+    // }
+
+    // if (e.RowType == ExportRowType.GroupSummary){
+    //     e.PdfRow.Style.BackgroundBrush = PdfBrushes.Red;
+    // }
 } 
 {% endhighlight %}
 {% endtabs %}
@@ -883,7 +921,7 @@ void pdfExport_RowExporting (object sender, DataGridRowPdfExportingEventArgs e)
 
 ### CellExporting
 
-The [DataGridCellPdfExportingEventHandler](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridCellPdfExportingEventhandler.html) delegate allows customizing the styles for header cells, record cells, and group caption cells. The `CellExporting` event is triggered with [DataGridCellPdfExportingEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridCellPdfExportingEventArgs.html) that contains the following properties:
+The [DataGridCellPdfExportingEventHandler](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridCellPdfExportingEventhandler.html) delegate allows customizing the styles for the header cells, record cells, group caption cells, and group summary cells. The `CellExporting` event is triggered with [DataGridCellPdfExportingEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridCellPdfExportingEventArgs.html) that contains the following properties:
 
 * [CellType](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridCellPdfExportingEventArgs~CellType.html): Specifies the cell type by using `ExportCellType` `Enum`. You can use this property to check the cell type and apply different cell styles based on the cell type.
 * [CellValue](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridCellPdfExportingEventArgs~CellValue.html): Contains the actual value exported to the PDF. You can use this value to apply formatting in PDF using the `Range` property.
@@ -892,7 +930,7 @@ The [DataGridCellPdfExportingEventHandler](http://help.syncfusion.com/cr/cref_fi
 * [PdfGrid](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridCellPdfExportingEventArgs~Handled.html): Specifies the `PDFGridCell` to be exported. You can use this to customize the properties (Background, Foreground, Font, Alignment, etc,) of a particular cell.
 * [Record](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridCellPdfExportingEventArgs~Record.html): Gets the collection of exported underlying data objects.
 
-You can use this event to customize the properties of the grid cells that are exported to PDF. The following code example illustrates how to customize the background color, foreground color, and cell value of the header cells, record cells, and caption summary cells while exporting.
+You can use this event to customize the properties of the grid cells exported to PDF. The following code example illustrates how to customize the background color, foreground color, and cell value of the header cells, record cells, caption summary cells, and group summary cells when exporting.
 
 {% tabs %}
 {% highlight c# %}
@@ -914,11 +952,18 @@ void pdfExport_CellExporting(object sender, DataGridCellPdfExportingEventArgs e)
         e.PdfGridCell.Style.TextBrush = PdfBrushes.Red;
     }
 
-    if (e.CellType == ExportCellType.GroupCaptionCell)
-    {
-        e.PdfGridCell.Style.BackgroundBrush = PdfBrushes.Gray;
-        e.PdfGridCell.Style.TextBrush = PdfBrushes.White;
-    }
+    // You can also set the desired values for the CaptionSummary rows and GroupSummary rows as shown below
+    // if (e.CellType == ExportCellType.GroupCaptionCell)
+    // {
+    //    e.PdfGridCell.Style.BackgroundBrush = PdfBrushes.Gray;
+    //    e.PdfGridCell.Style.TextBrush = PdfBrushes.White;
+    // }
+
+    // if (e.CellType == ExportCellType.GroupSummaryCell)
+    // {
+    //    e.PdfGridCell.Style.BackgroundBrush = PdfBrushes.Blue;
+    //    e.PdfGridCell.Style.TextBrush = PdfBrushes.Orange;
+    // }
 }
 {% endhighlight %}
 {% endtabs %}

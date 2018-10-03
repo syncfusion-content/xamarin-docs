@@ -399,15 +399,18 @@ private async void ListView_ItemDragging(object sender, ItemDraggingEventArgs e)
 
     foreach (ListViewItem item in container.Children)
     {
-      if (item.BindingContext.Equals(currentGroup))
-        groupItem = item;
+		if (item.BindingContext == null)
+            continue;
 
-      if (nextGroup != null && item.BindingContext.Equals(nextGroup))
-        nextGroupItem = item;
+		if (item.BindingContext.Equals(currentGroup))
+			groupItem = item;
+
+		if (nextGroup != null && item.BindingContext.Equals(nextGroup))
+			nextGroupItem = item;
     }
 
-    if (e.Bounds.Y <= groupItem.Y + groupItem.Height || nextGroupItem != null && (e.Bounds.Y + e.Bounds.Height >= nextGroupItem.Y))
-      e.Handled = true;
+    if (groupItem == null || e.Bounds.Y <= groupItem.Y + groupItem.Height || nextGroupItem != null && (e.Bounds.Y + e.Bounds.Height >= nextGroupItem.Y))
+		e.Handled = true;
   }
 }
 
@@ -428,7 +431,7 @@ private GroupResult GetGroup(object itemData)
 {% endhighlight %}
 {% endtabs %}
 
-Download the sample for above source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ItemDragandDrop-1832006690).
+Download the sample for above source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ItemDragandDrop344036487).
 
 ## Drag and drop customization
 

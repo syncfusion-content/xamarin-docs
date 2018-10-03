@@ -79,9 +79,9 @@ public class CommandViewModel
 {% endhighlight %}
 {% endtabs %}
 
-## Event to command
+## Event to Command
 
-SfListView events can be converted into command using [Behaviors](https://developer.xamarin.com/guides/xamarin-forms/behaviors/). To achieve this you need to create a command in your ViewModel class and associate that command to that Event of SfListView using Behaviors as like below.
+ListView events can be converted into commands using [Behaviors](https://developer.xamarin.com/guides/xamarin-forms/behaviors/). To achieve this, you need to create a command in your ViewModel class and associate that command to that event of ListView using `Behaviors` as like below.
 
 {% tabs %}
 {% highlight xaml %}
@@ -99,7 +99,7 @@ public class ContactsViewModel : INotifyPropertyChanged
     public Command<ItemSelectionChangedEventArgs> SelectionChangedCommand
     {
         get { return selectionChangedCommand; }
-        protected set { selectionChangedCommand = value; }
+        set { selectionChangedCommand = value; }
     }
 
     public ContactsViewModel()

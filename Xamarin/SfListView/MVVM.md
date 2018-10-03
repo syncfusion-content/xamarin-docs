@@ -117,6 +117,8 @@ public class ContactsViewModel
 
 You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewSample-1366806168).
 
+For more information regarding the event to command behavior in Xamarin.Forms, you can refer [this](https://developer.xamarin.com/samples/xamarin-forms/Behaviors/EventToCommandBehavior/) link.
+
 ## ListView with Prism Framework
 
 The SfListView allows the user to work with prism for MVVM Framework. Steps to be followed:

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chart Title
-description: How to add and customize the chart title in Essential Xamarin.Forms. 
+description: How to add chart title and customize the appearance of the chart title in the Essential Xamarin.Forms.
 platform: xamarin
 control: Chart
 documentation: ug

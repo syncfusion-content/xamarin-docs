@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Markers and data labels in Essential Xamarin.Forms Chart
-description: Learn how to add markers and data point labels to a Chart series
+description: Learn how to add markers and data point labels, connector lines, event, formatting label content, configure the data marker label template to the Chart series.
 platform: xamarin
 control: Chart
 documentation: ug

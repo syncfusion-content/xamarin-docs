@@ -1,7 +1,7 @@
 ---
 layout : post
 title : Overview of Syncfusion AutoComplete control for Xamarin.Forms
-description : Overview and key features of autocomplete control
+description : A quick go through to learn about the AutoComplete control and the key features available in it. 
 platform : xamarin
 control : SfAutoComplete
 documentation : ug

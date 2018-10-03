@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Installation and Deployment process for Syncfusion Essential Studio Xamarin products
-description: Learn how to install and deploy the Syncfusion Xamarin component
+description: Describes about system requirements to install the Syncfusion Xamarin Components and list of supported platforms. 
 platform: xamarin
 control: Installation and Deployment
 documentation: ug
@@ -27,26 +27,23 @@ The following table lists the platforms supported by our Xamarin.Forms controls.
 
 <table>
     <tr>
-        <td>
-            <b>Platform<b/>
+        <th>Platform<br/>
+            <br/></th>        
+        <th>
+          Device Types
             <br/>
             <br/>
-        </td>
-        <td>
-          <b>Device Types<b/>
+        </th>
+          <th>
+            Controls
             <br/>
             <br/>
-        </td>
-          <td>
-            <b>Controls<b/>
+        </th>
+        <th>
+            Supported versions
             <br/>
             <br/>
-        </td>
-        <td>
-            <b>Supported versions<b/>
-            <br/>
-            <br/>
-        </td>
+        </th>
     </tr>
     <tr>
         <td rowspan="3">

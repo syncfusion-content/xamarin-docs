@@ -50,14 +50,14 @@ inputLayout.InputView = new Entry();
 
 {% endtabs %}
 
-![](Custom-Icons/textInput_icons_img1.png)
-![](Custom-Icons/textInput_icons_img2.png)
+![](Custom-Icons-images/textInput_icons_img1.png)
+![](Custom-Icons-images/textInput_icons_img2.png)
 
 ## Trailing  view
 
 A label can be added as a trailing icon for the input view by setting the [TrailingView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~TrailingView.html) property. It can be positioned either inside or outside  the container of input view by setting the [TrailingViewPosition](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~TrailingViewPosition.html) property. By default, it is positioned [Inside](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.ViewPosition.html).
 
-% tabs %} 
+{% tabs %}
 
 {% highlight xaml %} 
 
@@ -86,6 +86,6 @@ inputLayout.InputView = new Entry();
 
 {% endtabs %}
 
-![](Custom-Icons/textInput_icons_img3.png)
-![](Custom-Icons/textInput_icons_img4.png)
+![](Custom-Icons-images/textInput_icons_img3.png)
+![](Custom-Icons-images/textInput_icons_img4.png)
 

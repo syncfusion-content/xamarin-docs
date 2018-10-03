@@ -156,8 +156,7 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        VisualContainer visualContainer = listView.GetVisualContainer();
-        scrollView = visualContainer.GetType().GetRuntimeProperties().First(x => x.Name == "ScrollOwner").GetValue(visualContainer) as ExtendedScrollView;
+        scrollView = listView.GetScrollView();
     }
 
     private void ChangeItemsSource_Clicked(object sender, EventArgs e)
@@ -171,5 +170,4 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ItemsourceScrolling-865979633).
-
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ItemsourceScrolling-2031956697).

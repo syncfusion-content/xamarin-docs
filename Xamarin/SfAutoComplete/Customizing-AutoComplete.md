@@ -1,7 +1,7 @@
 ---
 layout : post
-title : MinimumPrefixCharacter for Syncfusion AutoComplete Control in Xamarin.Forms
-description : Learn how to set the MinimumPrefixCharacter in AutoComplete
+title : Customizations in AutoComplete
+description : This section describes about the visual customization of entry, suggestion box and suggestion items in the AutoComplete. 
 platform : Xamarin
 control : AutoComplete
 documentation : ug

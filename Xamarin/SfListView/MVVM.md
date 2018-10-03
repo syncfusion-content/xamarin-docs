@@ -79,6 +79,46 @@ public class CommandViewModel
 {% endhighlight %}
 {% endtabs %}
 
+## Event to command
+
+The ListView event can be converted into commands using [Behaviors](https://developer.xamarin.com/guides/xamarin-forms/behaviors/). To achieve this, create a command in the ViewModel class and associate it to the ListView event using `Behaviors`.
+
+{% tabs %}
+{% highlight xaml %}
+<listView:SfListView x:Name="listView" ItemsSource="{Binding contactsinfo}">
+    <listView:SfListView.Behaviors>
+        <local:EventToCommandBehavior EventName="SelectionChanged" Command="{Binding SelectionChangedCommand}"/>
+    </listView:SfListView.Behaviors>
+</listView:SfListView>
+{% endhighlight %}
+{% highlight c# %}
+public class ContactsViewModel
+{
+    public Command<ItemSelectionChangedEventArgs> selectionChangedCommand;
+
+    public Command<ItemSelectionChangedEventArgs> SelectionChangedCommand
+    {
+        get { return selectionChangedCommand; }
+        set { selectionChangedCommand = value; }
+    }
+
+    public ContactsViewModel()
+    {
+        SelectionChangedCommand = new Command<Syncfusion.ListView.XForms.ItemSelectionChangedEventArgs>(OnSelectionChanged);
+    }
+
+    private void OnSelectionChanged(ItemSelectionChangedEventArgs obj)
+    {
+        App.Current.MainPage.DisplayAlert("Alert", (obj.AddedItems[0] as Contacts).ContactName + " is selected", "OK");
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewSample-1366806168).
+
+For more information regarding the event to command behavior in Xamarin.Forms, you can refer [this](https://developer.xamarin.com/samples/xamarin-forms/Behaviors/EventToCommandBehavior/) link.
+
 ## ListView with Prism Framework
 
 The SfListView allows the user to work with prism for MVVM Framework. Steps to be followed:

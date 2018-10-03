@@ -50,8 +50,8 @@ inputLayout.InputView = new Entry();
 
 {% endtabs %}
 
-![](Custom-Icons/textInput_icons_img1.png)
-![](Custom-Icons/textInput_icons_img2.png)
+![](Custom-Icons-images/textInput_icons_img1.png)
+![](Custom-Icons-images/textInput_icons_img2.png)
 
 ## Trailing  view
 
@@ -86,6 +86,6 @@ inputLayout.InputView = new Entry();
 
 {% endtabs %}
 
-![](Custom-Icons/textInput_icons_img3.png)
-![](Custom-Icons/textInput_icons_img4.png)
+![](Custom-Icons-images/textInput_icons_img3.png)
+![](Custom-Icons-images/textInput_icons_img4.png)
 

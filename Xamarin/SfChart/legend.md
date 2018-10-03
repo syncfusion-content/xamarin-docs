@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chart legend
-description: How to cutomize the legend in Essential Xamarin.Forms Chart
+description: How to configure the chart legend and customize the appearance of the legend title, Icons, labels, and ItemTemplate in Essential Xamarin.Forms Chart.
 platform: xamarin
 control: Chart
 documentation: ug

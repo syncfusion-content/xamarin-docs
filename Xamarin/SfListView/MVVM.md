@@ -79,9 +79,9 @@ public class CommandViewModel
 {% endhighlight %}
 {% endtabs %}
 
-## Event to Command
+## Event to command
 
-ListView events can be converted into commands using [Behaviors](https://developer.xamarin.com/guides/xamarin-forms/behaviors/). To achieve this, you need to create a command in your ViewModel class and associate that command to that event of ListView using `Behaviors` as like below.
+The ListView event can be converted into commands using [Behaviors](https://developer.xamarin.com/guides/xamarin-forms/behaviors/). To achieve this, create a command in the ViewModel class and associate it to the ListView event using `Behaviors`.
 
 {% tabs %}
 {% highlight xaml %}

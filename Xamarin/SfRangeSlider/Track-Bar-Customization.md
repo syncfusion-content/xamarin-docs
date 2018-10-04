@@ -20,12 +20,10 @@ The thickness of track bar can be customized by setting the TrackThickness prope
              xmlns:local="clr-namespace:TrackCustomization" 
              xmlns:slider="clr-namespace:Syncfusion.SfRangeSlider.XForms;assembly=Syncfusion.SfRangeSlider.XForms"
              x:Class="TrackCustomization.MainPage">
-             <ContentPage.Content>
                <slider:SfRangeSlider Orientation="Horizontal"
                                     TrackThickness="10"
                                     RangeStart="0"
                                     RangeEnd="2"/>
-             </ContentPage.Content>
 </ContentPage>
 	
 {% endhighlight %}
@@ -57,7 +55,7 @@ namespace TrackCustomization
 
 {% endtabs %}
 
-![](Track_Customization_Images/Track_Thickness.png)
+![Installation steps](Track_Customization_Images/TrackThickness.png)
 
 ### Customizing dragged area height
 
@@ -71,12 +69,10 @@ The thickness for a selected range or selected portion of track bar can be custo
              xmlns:local="clr-namespace:TrackCustomization" 
              xmlns:slider="clr-namespace:Syncfusion.SfRangeSlider.XForms;assembly=Syncfusion.SfRangeSlider.XForms"
              x:Class="TrackCustomization.MainPage">
-    <ContentPage.Content>
       <slider:SfRangeSlider Orientation="Horizontal"
                             TrackSelectionThickness="10"
                             RangeStart="10"
                             RangeEnd="30"/>
-      </ContentPage.Content>
 </ContentPage>
 
 {% endhighlight %}
@@ -107,7 +103,7 @@ namespace TrackCustomization
 
 {% endtabs %}
 
-![](Track_Customization_Images/Track_SelectionThickness.png)
+![Installation steps](Track_Customization_Images/TrackSelectionThickness.png)
 
 ### Customizing track color
 
@@ -121,12 +117,10 @@ The color of track bar can be customized by setting the TrackColor property of S
              xmlns:local="clr-namespace:TrackCustomization" 
              xmlns:slider="clr-namespace:Syncfusion.SfRangeSlider.XForms;assembly=Syncfusion.SfRangeSlider.XForms"
              x:Class="TrackCustomization.MainPage">
-    <ContentPage.Content>
        <slider:SfRangeSlider Orientation="Horizontal"
                              TrackColor="Maroon"
                              RangeStart="10"
                              RangeEnd="40"/>
-      </ContentPage.Content>
 </ContentPage>
 	
 	
@@ -157,7 +151,7 @@ namespace TrackCustomization
 
 {% endtabs %}
 
-![](Track_Customization_Images/Track_Color.png)
+![Installation steps](Track_Customization_Images/TrackColor.png)
 
 ### Customizing dragged area color
 
@@ -171,12 +165,10 @@ The color for a selected range or selected portion of track bar can be customize
              xmlns:local="clr-namespace:TrackCustomization" 
              xmlns:slider="clr-namespace:Syncfusion.SfRangeSlider.XForms;assembly=Syncfusion.SfRangeSlider.XForms"
              x:Class="TrackCustomization.MainPage">
-    <ContentPage.Content>
       <slider:SfRangeSlider Orientation="Horizontal"
                           TrackSelectionColor="Red"
                           RangeStart="10"
                           RangeEnd="40"/>
-      </ContentPage.Content>
 </ContentPage>
 	 
 {% endhighlight %}
@@ -206,7 +198,4 @@ namespace TrackCustomization
 
 {% endtabs %}
 
-![](Track_Customization_Images/Track_SelectionColor.png)
-
-
-
+![Installation steps](Track_Customization_Images/TrackSelectionColor.png)

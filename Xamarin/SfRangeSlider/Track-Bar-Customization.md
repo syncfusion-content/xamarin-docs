@@ -13,7 +13,7 @@ documentation: ug
 The thickness of track bar can be customized by setting the TrackThickness property of SfRangeSlider. 
 
 {% tabs %}
-{% highlight xaml %}`
+{% highlight xaml %}
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"

@@ -162,6 +162,8 @@ The [SfDataGrid.ValueChanged](https://help.syncfusion.com/cr/cref_files/xamarin/
 * [RowData](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.ValueChangedEventArgs~RowData.html)       : The `RowData` of the row that contains the grid cell undergoing the value change.
 * [CellValue](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.ValueChangedEventArgs~CellValue.html)       : The initial value when current cell entered edit mode.
 
+{% tabs %}
+
 {% highlight c# %}
 
         dataGrid.ValueChanged += DataGrid_ValueChanged;
@@ -175,6 +177,8 @@ The [SfDataGrid.ValueChanged](https://help.syncfusion.com/cr/cref_files/xamarin/
         }
 
 {% endhighlight %}
+
+{% endtabs %}
 
 
 

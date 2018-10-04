@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Modal Window Popup | SfPopupLayout |Xamarin| Syncfusion
-description: Modal Window Popup with SfPopupLayout
+description: Use the Xamarin.Forms PopupLayout as Modal Window restricting user interaction with your application until closing the window.
 platform: Xamarin
 control: SfPopupLayout
 documentation: ug

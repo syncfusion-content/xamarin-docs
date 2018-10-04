@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Column Types | SfDataGrid | Xamarin | Syncfusion
-description: What are all the different types of column and it's properties and customizations in a SfDataGrid.
+description: Different types of column and it's properties and customizations in a Xamarin.Forms DataGrid. 
 platform: xamarin
 control: SfDataGrid
 documentation: UG

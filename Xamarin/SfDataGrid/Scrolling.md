@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scroll to Row Column Index | SfDataGrid | Xamarin | Syncfusion
-description: How to scroll programmatically to particular Row and Column in a SfDataGrid.
+description: Programmatic scrolling options to scroll to a particular Row and/or Column in Xamarin.Forms DataGrid. Various modes of scrolling available with options to customize the bouncing behavior of scrolling.
 platform: xamarin
 control: SfDataGrid
 documentation: ug

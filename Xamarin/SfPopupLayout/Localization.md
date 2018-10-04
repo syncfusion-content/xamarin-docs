@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization | SfPopupLayout | Xamarin | Syncfusion
-description: How to set a Localized text for SfPopupLayout static texts.
+description: Set localized text for the static texts used in Xamarin.Forms PopupLayout.
 platform: xamarin
 control: SfPopupLayout
 documentation: UG

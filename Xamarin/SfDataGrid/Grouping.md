@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grouping | SfDataGrid | Xamarin | Syncfusion
-description: How to group a column in a SfDataGrid and about the properites and customizations in grouping.
+description: Grouping one or more columns and about the properties and events that involve in grouping in Xamarin.Forms DataGrid. Expanding or collapsing groups and using custom grouping logic if conventional grouping does not meet requirements.
 platform: xamarin
 control: SfDataGrid
 documentation: UG

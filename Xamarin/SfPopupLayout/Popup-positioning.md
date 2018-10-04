@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Popup positioning | SfPopupLayout |Xamarin| Syncfusion
-description: Positioning capabilities of SfPopupLayout
+description: Position the popup at the center, absolute postion, relative to another view and relative with absolute postion using the Xamarin.Forms PopupLayout.
 platform: Xamarin
 control: SfPopupLayout
 documentation: ug

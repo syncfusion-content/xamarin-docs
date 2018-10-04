@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Row Height Customization | SfDataGrid | Xamarin | Syncfusion
-description: How to customize the height of rows in a data grid.
+description: Customize the height of rows in a Xamarin.Forms DataGrid. Auto fit grid rows based on content, reset row heights at runtime, customize header and summary rows height. 
 platform: xamarin
 control: SfDataGrid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of Syncfusion SfPullToRefresh control for Xamarin.Forms.
-description: Overview and key features of SfPullToRefresh control in Xamarin.Forms
+description: Overview, key features and use case scenarios of Xamarin.Forms PullToRefresh control.
 platform: Xamarin.Forms 
 control: SfPullToRefresh 
 documentation: ug

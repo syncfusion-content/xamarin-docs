@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Load More | SfDataGrid | Xamarin | Syncfusion
-description: How to perform load more and it's properties and customizations in a SfDataGrid.
+description: Use the load more functionality in Xamarin.Forms DataGrid to load a subset of data in the runtime. Built-in properties and other customizations available when using the load more functionality.
 platform: xamarin
 control: SfDataGrid
 documentation: UG

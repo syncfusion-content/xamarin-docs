@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Freeze Panes | SfDataGrid | Xamarin | Syncfusion
-description: How to freeze rows and columns in a SfDataGrid.
+description: Freeze rows and columns in a Xamarin.Forms DataGrid with support to customize the freeze count in the runtime. 
 platform: xamarin
 control: SfDataGrid
 documentation: UG

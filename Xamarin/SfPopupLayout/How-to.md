@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to | SfPopupLayout |Xamarin | Syncfusion
-description: Explains how to achieve various requirements with SfPopupLayout
+description: Explains achieving various requirements of user scenarios and customizations possible with the Xamarin.Forms PopupLayout.
 platform: Xamarin
 control: SfPopupLayout
 documentation: ug

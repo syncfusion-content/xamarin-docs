@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Column Sizer | SfDataGrid | Xamarin | Syncfusion
-description: What are all the different ColumnSizer and how it works in a SfDataGrid.
+description: Different column sizing options available in Xamarin.Forms DataGrid and it working.
 platform: xamarin
 control: SfDataGrid
 documentation: ug

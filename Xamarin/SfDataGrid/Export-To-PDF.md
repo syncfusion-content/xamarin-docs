@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Export To PDF | SfDataGrid | Xamarin | Syncfusion
-description: How to export a SfDataGrid to PDF and it's customizations.
+description: Export Xamarin.Forms DataGrid to PDF with various built-in customizations. Export the selected rows in the DataGrid to PDF.
 platform: xamarin
 control: SfDataGrid
 documentation: ug

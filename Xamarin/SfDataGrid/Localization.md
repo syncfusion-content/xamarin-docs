@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization | SfDataGrid | Xamarin | Syncfusion
-description: How to set a Localized text for SfDataGrid static texts.
+description: Set localized text for the static texts used in Xamarin.Forms DataGrid.
 platform: xamarin
 control: SfDataGrid
 documentation: UG

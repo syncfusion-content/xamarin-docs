@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | SfPopupLayout |Xamarin| Syncfusion
-description: Overview of SfPopupLayout
+description: Overview and key features of Xamarin.Forms PopupLayout control with its customization capabilities.
 platform: Xamarin
 control: SfPopupLayout
 documentation: ug

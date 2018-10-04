@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Summary | SfDataGrid | Xamarin | Syncfusion
-description: How to apply summaries for the elements in a SfDataGrid.
+description: Apply summary for the caption row, group row and for the entire grid and customize its format and aggregate types. Use custom summaries or overried summary renderers for customizing the summary data.
 platform: xamarin
 control: SfDataGrid
 documentation: UG

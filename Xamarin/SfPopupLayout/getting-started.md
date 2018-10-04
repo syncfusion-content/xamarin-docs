@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started | SfPopupLayout | Xamarin | Syncfusion
-description: Getting started with SfPullToRSfPopupLayoutefresh.
+description: Getting started with Xamarin.Forms Popup or Dialog and walk through to create a demo application from the scratch. 
 platform: Xamarin
 control: SfPopupLayout
 documentation: ug

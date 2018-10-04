@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Popup Layouts | SfPopupLayout |Xamarin | Syncfusion
-description: Layouts in SfPopupLayout
+description: Built-in layouts and border customization options available in Xamarin.Forms PopupLayout.
 platform: Xamarin
 control: SfPopupLayout
 documentation: ug

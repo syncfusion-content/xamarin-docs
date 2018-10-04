@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sorting | SfDataGrid | Xamarin | Syncfusion
-description: How to sort the data and about the properties and events that involve in sorting in a SfDataGrid.
+description: Sorting the data against one or more columns and about the properties and events that involve in sorting in Xamarin.Forms DataGrid. Animate sort icons and using custom sorting logic if conventional sorting does not meet requirements.
 platform: xamarin
 control: SfDataGrid
 documentation: UG

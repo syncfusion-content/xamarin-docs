@@ -300,5 +300,5 @@ secondaryDrawer.DrawerFooterView = Layout;
 
 {% endtabs %}   
 
-Note: The sample implemnting multi drawer can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/NavigationDrawerSample_2-228312513)
+Note: The sample implementing multi drawer can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/NavigationDrawerSample_2-228312513)
 

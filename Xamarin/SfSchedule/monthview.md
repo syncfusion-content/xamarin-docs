@@ -1110,7 +1110,7 @@ weekNumberStyle.FontFamily = Device.OnPlatform("Lobster=Regular", "Lobster-Regul
 {% endhighlight %}
 {% endtabs %}
 
-![](monthview_images/customfontweeknumber.png)
+![Month view week number custom font support in schedule xamarin forms](monthview_images/customfontweeknumber.png)
 
 Following steps will explain how to configure the custom fonts.
 

@@ -168,7 +168,9 @@ x:Class="GettingStarted.RangeSliderSample">
 {% endhighlight %}
 
 {% highlight c# %}
-
+using System.Collections.ObjectModel;
+using Syncfusion.XForms.SfRangeSlider;
+using Xamarin.Forms;
 namespace GettingStarted
 {
 	/// <summary>
@@ -199,6 +201,9 @@ namespace GettingStarted
 
 {% highlight c# %}
 
+using System.Collections.ObjectModel;
+using Syncfusion.XForms.SfRangeSlider;
+using Xamarin.Forms;
 namespace GettingStarted
 {
 	/// <summary>

@@ -9,7 +9,9 @@ documentation: ug
 
 # Custom Header 
 
-When the built-in view is not needed, it can be overridden by adding the custom view to the header region in tabs. 
+When the built-in view is not needed, it can be overridden by adding the custom view to the header region in tabs. The tab view header can be customized by adding different views inside header content like image,button,label etc.The following code example explains how to customize the header content in desired way.
+
+N> Selection indicator setting's properties will not be working when using custom header.
 
 {% tabs %}
 
@@ -46,6 +48,31 @@ HeaderContent = allCallsButton
 {% endhighlight %}
 
 {% endtabs %}
+
+In the below example header has been customized by adding image and label as the header content of the tab view.
+
+{% highlight xaml %}
+<syncfusion:SfTabItem.HeaderContent>
+<Grid x:Name="mainGrid" VerticalOptions="Center" HeightRequest="400" WidthRequest="500" HorizontalOptions="Center">
+<Grid.RowDefinitions>
+<RowDefinition Height="*" />
+<RowDefinition Height="*" />
+</Grid.RowDefinitions>
+<Label Text="James"
+ TextColor="Red"
+ FontSize="16" Grid.Row="0"
+ WidthRequest="80"
+ HeightRequest="50"
+ VerticalOptions="Center"
+ HorizontalOptions="Center"/>
+<Grid Grid.Row="1">
+<Image HeightRequest="250"  WidthRequest="250" Source="a0.png"/>
+</Grid>
+</Grid>
+
+{% endhighlight %}
+
+N> The tab view header can be resized to suit the windows size when the orientation gets changed.
 
 ## How to handle the events for custom view with tab view?
 

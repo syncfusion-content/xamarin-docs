@@ -32,7 +32,7 @@ schedule.DataSource=scheduleAppointmentCollection;
 {% endhighlight %}
 {% endtabs %}
 
-![](PopulatingAppointments_images/appointment.png)
+![Creating Appointment in SfSchedule Xamarin Forms](PopulatingAppointments_images/appointment.png)
 
 ## Minimum Appointment Height
 
@@ -63,7 +63,7 @@ this.Content = schedule;
 {% endhighlight %}
 {% endtabs %}
 
- ![](PopulatingAppointments_images/minheight.png)
+ ![Minimum Appointment height support in SfSchedule Xamarin Forms](PopulatingAppointments_images/minheight.png)
 
 >**NOTE**
 * `MinHeight` value will be set, when the an appointment height (duration) value lesser than MinHeight. 
@@ -186,7 +186,7 @@ schedule.DataSource= Meetings ;
 {% endhighlight %} 
 {% endtabs %}
 
-![](PopulatingAppointments_images/span.png)
+![spanning or multiday appointments in SfSchedule Xamarin Forms][(PopulatingAppointments_images/span.png)
 
 ## All Day Appointments
 All-Day appointment is an appointment which is scheduled for a whole day. It can be set by using `IsAllDay` property in the `ScheduleAppointment`.
@@ -235,7 +235,7 @@ weekViewSeetings.AllDayAppointmentLayoutColor = Color.Silver;
 {% endhighlight %} 
 {% endtabs %}
 
-![](PopulatingAppointments_images/allday.png)
+![All day appointments in SfSchedule Xamarin Forms](PopulatingAppointments_images/allday.png)
 
 ## Recurrence Appointment
 Recurring appointment on a daily, weekly, monthly, or yearly interval. Recurring appointments can be created by setting `RecurrenceRule` property in Schedule appointments.
@@ -343,7 +343,7 @@ scheduleAppointment.RecurrenceRule = schedule.RRuleGenerator(recurrencePropertie
 {% endhighlight %}
 {% endtabs %}
 
-![](PopulatingAppointments_images/recurrence.png)
+![Recurrence appointment support in SfSchedule Xamarin Forms](PopulatingAppointments_images/recurrence.png)
 
 ### Creating Custom Recurrence Appointment using Recurrence Builder
 For creating custom recurrence appointment you need to create a custom class `Meeting` with mandatory fields `From`, `To`, `EventName` and `RecurrenceRule`.
@@ -438,7 +438,7 @@ here [Recurrence_Appointment](http://www.syncfusion.com/downloads/support/direct
 >**NOTE**
 In Schedule "Xamarin.Forms UWP", there is no need to set IsRecursive property for recurrence appointments. When a RecurrenceRule is set to schedule appointment, value of IsRecursive property will be set as true automatically for these appointments. So even if IsRecursive is set as false, there will be no effect on recurring appointments.
 
-![](PopulatingAppointments_images/RecurrenceAppointment.png)
+![Custom recurrence appointments support in SfSchedule Xamarin Forms](PopulatingAppointments_images/RecurrenceAppointment.png)
 
 ### How to get the Recurrence editor field values from RRULE?
 You can get the Recurrence properties from `RRULE` using the RRuleParser() of `SfSchedule`.
@@ -484,7 +484,7 @@ schedule.AllowAppointmentDrag = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](PopulatingAppointments_images/draganddrop.gif)
+![Drag and Drop appointments in SfSchedule Xamarin Forms](PopulatingAppointments_images/draganddrop.gif)
 
 ### Handle dragging based on the appointment
 Using [AppointmentDragStarting](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~AppointmentDragStarting_EV.html) event, you can get the appointment details and handle whether the appointment can be draggable or not. This event will be triggered when the appointment is started dragging. The [AppointmentDragStartingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentDragStartingEventArgs.html) argument contains the following properties.
@@ -699,7 +699,7 @@ dragDropSettings.TimeIndicatorStyle = timeIndicatorStyle;
 {% endhighlight %}
 {% endtabs %}
 
-![](PopulatingAppointments_images/timeindicator.png)
+![Time Indicator in SfSchedule Xamarin Forms](PopulatingAppointments_images/timeindicator.png)
 
 >**Notes**
 * While dropping appointment to `AllDay` panel from time slots, appointment start and end time will change to 12.00 AM.
@@ -750,7 +750,7 @@ schedule.AppointmentStyle = appointmentStyle;
 {% endhighlight %}
 {% endtabs %} 
 
-![](PopulatingAppointments_images/style.png)
+![Appointments styling support in SfSchedule Xamarin Forms](PopulatingAppointments_images/style.png)
 
 ### Customize appearance using Event
 Schedule appointment can be customized during runtime using [OnAppointmentLoadedEvent](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~OnAppointmentLoadedEvent_EV.html). `ScheduleAppointment` style can be customized using the `appointmentStyle` property.
@@ -788,7 +788,7 @@ private void Schedule_OnAppointmentLoadedEvent(object sender, AppointmentLoadedE
 {% endhighlight %}
 {% endtabs %}
 
-![](PopulatingAppointments_images/appointmentstyle_event.png)
+![Appointments customization in SfSchedule Xamarin Forms](PopulatingAppointments_images/appointmentstyle_event.png)
 
 >**NOTE**
 FontAttributes and FontFamily are native to the platform. Custom font and the font which are not available in the specified platform will not be applied.
@@ -830,7 +830,7 @@ private void Schedule_OnAppointmentLoadedEvent(object sender, AppointmentLoadedE
 {% endhighlight %}
 {% endtabs %}
 
-![](PopulatingAppointments_images/appointmentstyle_customview.png)
+![Custom view support for appointments in SfSchedule Xamarin Forms](PopulatingAppointments_images/appointmentstyle_customview.png)
 
 ## Customize appearance using DataTemplate
 The default appearance of the Appointment can be customized by using the [AppointmentTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~AppointmentTemplate.html) property of the Schedule.
@@ -871,7 +871,7 @@ public class DayAppointmentDataTemplate : DataTemplate
 {% endhighlight %}
 {% endtabs %}
 
-![](PopulatingAppointments_images/dayappointmenttemplate.png)
+![DataTemplate support for appointments in SfSchedule Xamarin Forms](PopulatingAppointments_images/dayappointmenttemplate.png)
 
 ## Customize appearance using DataTemplateSelector
 `DataTemplateSelector` can be used to choose a `DataTemplate` at runtime based on the value of a data-bound to Schedule appointment property through `AppointmentTemplate`. It provides multiple DataTemplates to be enabled for Schedule appointments, to customize the appearance of particular Appointment.
@@ -961,7 +961,7 @@ Used button to display day appointment and Label to display all day appointment.
 {% endhighlight %}
 {% endtabs %}
 
-![](PopulatingAppointments_images/appointmenttemplate.png)
+![DataTemplateSelector support for appointments in SfSchedule Xamarin Forms](PopulatingAppointments_images/appointmenttemplate.png)
 
 ### Customize Font Appearance
 
@@ -978,7 +978,7 @@ appointmentStyle.FontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regu
 {% endhighlight %}
 {% endtabs %} 
 
-![](PopulatingAppointments_images/customfontappointment.png)
+![custom font support in SfSchedule Xamarin Forms](PopulatingAppointments_images/customfontappointment.png)
 
 Refer [this](https://help.syncfusion.com/xamarin/sfschedule/monthview#custom-font-setting-in-xamarinforms-android) to configure the custom fonts in Xamarin.Forms.
 
@@ -1109,4 +1109,4 @@ schedule.AppointmentStyle = appointmentStyle;
 {% endhighlight %}
 {% endtabs %} 
 
-![](PopulatingAppointments_images/selection.png)
+![Selection customization in SfSchedule Xamarin Forms](PopulatingAppointments_images/selection.png)

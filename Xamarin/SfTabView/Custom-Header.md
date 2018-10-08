@@ -11,7 +11,7 @@ documentation: ug
 
 When built-in view is not needed, it can be overridden by adding custom views to the header in tabs. The tab view header can be customized by adding different views such as image, button, and label inside the header content. The following code sample demonstrates how to customize the header content as needed.
 
-N> The selection indicator settings' properties will not work when using custom header.
+N> The selection indicator setting properties will not work when using custom header.
 
 {% tabs %}
 

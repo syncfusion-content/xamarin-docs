@@ -207,7 +207,7 @@ chart.SecondaryAxis = new NumericalAxis() { RangePadding = NumericalPadding.None
 
 {% endtabs %}
 
-![Apply none padding support for Xamarin.Forms numerical Chart axis](axis_images/axis_img7.png)
+![Apply none padding support for Xamarin.Forms numerical ChartAxis](axis_images/axis_img7.png)
 
 **Round**
 
@@ -285,7 +285,7 @@ chart.SecondaryAxis = new NumericalAxis() { RangePadding = NumericalPadding.Norm
 
 {% endtabs %}
 
-![Apply normal padding support for Xamarin.Forms ChartAxis](axis_images/axis_img10.png)
+![Apply normal padding support for Xamarin.Forms numerical ChartAxis](axis_images/axis_img10.png)
 
 ## Date Time Axis
 

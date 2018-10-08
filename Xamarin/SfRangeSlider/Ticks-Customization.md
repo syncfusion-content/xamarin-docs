@@ -47,7 +47,7 @@ Tick marks can be placed either below the track in horizontal orientation or rig
 
 {% endtabs %}
 
-![](images/BottomRight.png)
+![Tick has been placed at the bottom right of SfRangeSlider in Xamarin.Forms](images/BottomRight.png)
 
 ### TopLeft
 
@@ -69,7 +69,7 @@ Tick marks are placed either above the track in horizontal orientation or left o
 
 {% endtabs %}
 
-![](images/TopLeft.png)
+![Tick has been placed at the top left of SfRangeSlider in Xamarin.Forms](images/TopLeft.png)
 
 ### Inline
 
@@ -91,7 +91,7 @@ Ticks are placed along the track.
 
 {% endtabs %}
 
-![](images/Inline.png)
+![Tick has been placed on the SfRangeSlider in Xamarin.Forms](images/Inline.png)
 
 ### Outside
 
@@ -113,7 +113,7 @@ Tick marks are placed on both sides of the track either in horizontal or vertica
 
 {% endtabs %}
 
-![](images/Outside.png)
+![Tick has been placed outside of SfRangeSlider in Xamarin.Forms](images/Outside.png)
 
 ## Customizing tick color
 
@@ -158,4 +158,4 @@ namespace GettingStarted
 
 {% endtabs %}
 
-![](images/TickColor.png)
+![Tick color customization of SfRangeSlider in Xamarin.Forms](images/TickColor.png)

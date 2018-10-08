@@ -294,7 +294,7 @@ Following code snippets and screenshot illustrates how to apply the gradient col
 
 {% endtabs %}
 
-![Gradient Colors support for Xamarin.Forms Chart](appearance_images/gradientseries.png)
+![Gradient support for Xamarin.Forms Chart](appearance_images/gradientseries.png)
 
 
 Following code snippet and screenshot illustrates how to apply the gradient color to the chart area.
@@ -334,7 +334,7 @@ Following code snippet and screenshot illustrates how to apply the gradient colo
 
 {% endtabs %}
 
-![Gradient Colors support for Xamarin.Forms Chart](appearance_images/gradientchart.png)
+![Gradient support for Xamarin.Forms Chart](appearance_images/gradientchart.png)
 
 ## Plotting Area Customization
 

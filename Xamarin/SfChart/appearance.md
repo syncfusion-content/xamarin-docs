@@ -17,7 +17,7 @@ documentation: ug
 
 Currently, Chart supports only [`Metro`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorPalette.html) palette and it is the default palette for [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html). The following screenshot shows the default appearance of multiple series.
 
-![](appearance_images/appearance_img1.png)
+![Predefined palettes for Xamarin.Forms Chart](appearance_images/appearance_img1.png)
 
 **Custom Palette**
 
@@ -74,7 +74,7 @@ SfChart chart = new SfChart()
 
 {% endtabs %}
 
-![](appearance_images/appearance_img2.png)
+![Custom palette for Xamarin.Forms Chart](appearance_images/appearance_img2.png)
 
 **None Palette**
 
@@ -130,7 +130,7 @@ chart.Series.Add(columnSeries);
 
 {% endtabs %}
 
-![](appearance_images/appearance_img3.png)
+![Predefined palettes for Xamarin.Forms ChartSeries](appearance_images/appearance_img3.png)
 
 **Custom Palette**
 
@@ -199,7 +199,7 @@ SfChart chart = new SfChart()
 
 {% endtabs %}
 
-![](appearance_images/appearance_img4.png)
+![Custom palette for Xamarin.Forms ChartSeries](appearance_images/appearance_img4.png)
 
 **None Palette**
 
@@ -294,7 +294,7 @@ Following code snippets and screenshot illustrates how to apply the gradient col
 
 {% endtabs %}
 
-![](appearance_images/gradientseries.png)
+![Gradient Colors for Xamarin.Forms ChartSeries](appearance_images/gradientseries.png)
 
 
 Following code snippet and screenshot illustrates how to apply the gradient color to the chart area.
@@ -334,7 +334,7 @@ Following code snippet and screenshot illustrates how to apply the gradient colo
 
 {% endtabs %}
 
-![](appearance_images/gradientchart.png)
+![Gradient Colors for Xamarin.Forms Chart area](appearance_images/gradientchart.png)
 
 ## Plotting Area Customization
 

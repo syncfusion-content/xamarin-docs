@@ -62,7 +62,7 @@ chart.ChartAnnotations.Add(annotation);
 
 {% endtabs %}
 
-![](chartannotation_images/image1.png)
+![Annotation support for Xamarin.Forms Chart](chartannotation_images/image1.png)
 
 ## Positioning the annotation
 
@@ -116,7 +116,7 @@ chart.ChartAnnotations.Add(annotation);
 
 {% endtabs %}
 
-![](chartannotation_images/image2.png)
+![Positioning the Xamarin.Forms Chart annotation based on axis coordinates](chartannotation_images/image2.png)
 
 ### Positioning based on CoordinateUnit as pixels
 
@@ -166,7 +166,7 @@ chart.ChartAnnotations.Add(annotation);
 
 {% endtabs %}
 
-![](chartannotation_images/image3.png)
+![Positioning the Xamarin.Forms Chart annotation based on pixel coordinates](chartannotation_images/image3.png)
 
 ## Adding annotation for multiple axes
 
@@ -246,7 +246,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](chartannotation_images/image4.png)
+![Multiple axis support for Xamarin.Forms ChartAnnotation](chartannotation_images/image4.png)
 
 ## Text annotation
 
@@ -289,7 +289,7 @@ chart.ChartAnnotations.Add(annotation);
 
 {% endtabs %}
 
-![](chartannotation_images/image5.png)
+![Text annotation support for Xamarin.Forms Chart](chartannotation_images/image5.png)
 
 ### Customizing text annotation
 
@@ -366,7 +366,7 @@ chart.ChartAnnotations.Add(annotation);
 
 {% endtabs %}
 
-![](chartannotation_images/image6.png)
+![Customizing text annotation support for Xamarin.Forms Chart](chartannotation_images/image6.png)
 
 ## Shape annotation
 
@@ -432,7 +432,7 @@ chart.ChartAnnotations.Add(annotation);
 
 {% endtabs %}
 
-![](chartannotation_images/image7.png)
+![Rectangle annotation support for Xamarin.Forms Chart](chartannotation_images/image7.png)
 
 ### Ellipse annotation
 
@@ -524,7 +524,7 @@ chart.ChartAnnotations.Add(annotation);
 
 {% endtabs %}
 
-![](chartannotation_images/image9.png)
+![Line annotation support for Xamarin.Forms Chart](chartannotation_images/image9.png)
 
 **Adding arrow to line annotation**
 
@@ -571,7 +571,7 @@ chart.ChartAnnotations.Add(annotation);
 
 {% endtabs %}
 
-![](chartannotation_images/image10.png)
+![Arrow support for Xamarin.Forms Chart LineAnnotation](chartannotation_images/image10.png)
 
 ### Vertical and Horizontal line annotation
 
@@ -619,7 +619,7 @@ chart.ChartAnnotations.Add(horizontal);
 
 {% endtabs %}
 
-![](chartannotation_images/image11.png)
+![Vertical and Horizontal line annotation support for Xamarin.Forms Chart](chartannotation_images/image11.png)
 
 **Displaying axis label for vertical and horizontal line annotations**
 

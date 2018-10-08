@@ -68,7 +68,7 @@ chart.PrimaryAxis = new CategoryAxis() { LabelPlacement = LabelPlacement.Between
 
 {% endtabs %}
 
-![Labels between ticks support for Xamarin.Forms ChartAxis](axis_images/axis_img2.png)
+![Axis labels between ticks support for Xamarin.Forms Chart](axis_images/axis_img2.png)
 
 ### Displaying labels after a fixed interval
 
@@ -94,7 +94,7 @@ chart.PrimaryAxis = new CategoryAxis() { Interval = 2, LabelPlacement = LabelPla
 
 {% endtabs %}
 
-![Enable or disable the auto interval support for Xamarin.Forms ChartAxis](axis_images/axis_img3.png)
+![Enable or disable the axis auto interval support for Xamarin.Forms Chart](axis_images/axis_img3.png)
 
 ## Numeric Axis
 
@@ -146,7 +146,7 @@ chart.SecondaryAxis = new NumericalAxis() { Minimum = 10, Maximum = 50 };
 
 {% endtabs %}
 
-![Range customization support for Xamarin.Forms numerical ChartAxis](axis_images/axis_img5.png)
+![NumericalAxis range customization support for Xamarin.Forms Chart](axis_images/axis_img5.png)
 
 ### Customizing numeric interval
 
@@ -172,7 +172,7 @@ chart.SecondaryAxis = new NumericalAxis() { Interval = 10 };
 
 {% endtabs %}
 
-![Interval customization support for Xamarin.Forms numerical ChartAxis](axis_images/axis_img6.png)
+![NumericalAxis interval customization support for Xamarin.Forms Chart](axis_images/axis_img6.png)
 
 ### Apply padding to the range
 
@@ -207,7 +207,7 @@ chart.SecondaryAxis = new NumericalAxis() { RangePadding = NumericalPadding.None
 
 {% endtabs %}
 
-![Apply none padding support for Xamarin.Forms numerical ChartAxis](axis_images/axis_img7.png)
+![NumericalAxis range padding support for Xamarin.Forms Chart](axis_images/axis_img7.png)
 
 **Round**
 
@@ -233,7 +233,7 @@ chart.SecondaryAxis = new NumericalAxis() { RangePadding = NumericalPadding.Roun
 
 {% endtabs %}
 
-![Apply round padding support for Xamarin.Forms numerical ChartAxis](axis_images/axis_img8.png)
+![NumericalAxis range padding support for Xamarin.Forms Chart](axis_images/axis_img8.png)
 
 **Additional**
 
@@ -259,7 +259,7 @@ chart.SecondaryAxis = new NumericalAxis() { RangePadding = NumericalPadding.Addi
 
 {% endtabs %}
 
-![Apply additional padding support for Xamarin.Forms numerical ChartAxis](axis_images/axis_img9.png)
+![NumericalAxis range padding support for Xamarin.Forms Chart](axis_images/axis_img9.png)
 
 **Normal**
 
@@ -285,7 +285,7 @@ chart.SecondaryAxis = new NumericalAxis() { RangePadding = NumericalPadding.Norm
 
 {% endtabs %}
 
-![Apply normal padding support for Xamarin.Forms numerical ChartAxis](axis_images/axis_img10.png)
+![NumericalAxis range padding support for Xamarin.Forms Chart](axis_images/axis_img10.png)
 
 ## Date Time Axis
 
@@ -376,7 +376,7 @@ chart.PrimaryAxis = new DateTimeAxis() {
 
 {% endtabs %}
 
-![Range customization support for Xamarin.Forms datetime ChartAxis](axis_images/axis_img12.png)
+![DateTimeAxis range customization support for Xamarin.Forms Chart](axis_images/axis_img12.png)
 
 ### Date time intervals
 
@@ -425,7 +425,7 @@ chart.PrimaryAxis = new DateTimeAxis() {
 
 {% endtabs %}
 
-![Interval support for Xamarin.Forms datetime ChartAxis](axis_images/axis_img13.png)
+![DateTimeAxis interval support for Xamarin.Forms Chart](axis_images/axis_img13.png)
 
 ### Get actual interval type
 
@@ -469,7 +469,7 @@ chart.PrimaryAxis = new DateTimeAxis() { RangePadding = DateTimeRangePadding.Non
 
 {% endtabs %}
 
-![Apply none padding support for Xamarin.Forms datetime ChartAxis](axis_images/axis_img14.png)
+![DateTimeAxis range padding support for Xamarin.Forms Chart](axis_images/axis_img14.png)
 
 **Round**
 
@@ -495,7 +495,7 @@ chart.PrimaryAxis = new DateTimeAxis() { RangePadding = DateTimeRangePadding.Rou
 
 {% endtabs %}
 
-![Apply round padding support for Xamarin.Forms datetime ChartAxis](axis_images/axis_img15.png)
+![DateTimeAxis range padding support for Xamarin.Forms Chart](axis_images/axis_img15.png)
 
 **Additional**
 
@@ -521,7 +521,7 @@ chart.PrimaryAxis = new DateTimeAxis() { RangePadding = DateTimeRangePadding.Add
 
 {% endtabs %}
 
-![Apply additional padding support for Xamarin.Forms datetime ChartAxis](axis_images/axis_img16.png)
+![DateTimeAxis range padding support for Xamarin.Forms Chart](axis_images/axis_img16.png)
 
 ## Date-time category axis
 
@@ -618,7 +618,7 @@ chart.SecondaryAxis = new LogarithmicAxis() {
 
 {% endtabs %}
 
-![Range customization support for Xamarin.Forms logarithmic ChartAxis](axis_images/logaxis_img2.png)
+![LogarithmicAxis range customization support for Xamarin.Forms Chart](axis_images/logaxis_img2.png)
 
 ### Customizing the logarithmic base
 
@@ -644,7 +644,7 @@ chart.SecondaryAxis = new LogarithmicAxis() { LogarithmicBase = 2 };
 
 {% endtabs %}
 
-![Logarithmic base support for Xamarin.Forms ChartAxis](axis_images/logaxis_img3.png)
+![LogarithmicAxis base support for Xamarin.Forms Chart](axis_images/logaxis_img3.png)
 
 ## Common axis features
 
@@ -674,7 +674,7 @@ chart.SecondaryAxis.IsVisible = false;
 
 {% endtabs %}
 
-![Visibility support for Xamarin.Forms ChartAxis](axis_images/axis_img17.png)
+![Axis visibility support for Xamarin.Forms Chart](axis_images/axis_img17.png)
 
 ### Axis title
 
@@ -914,7 +914,7 @@ chart.PrimaryAxis.LabelStyle.TextColor = Color.Red;
 
 {% endtabs %}
 
-![Label customization support for Xamarin.Forms ChartAxis](axis_images/axis_img19.png)
+![Axis label customization support for Xamarin.Forms Chart](axis_images/axis_img19.png)
 
 ### Label and tick positioning
 
@@ -950,7 +950,7 @@ chart.PrimaryAxis.TickPosition = AxisElementPosition.Inside;
 
 {% endtabs %}
 
-![Labels and ticks positioning support for Xamarin.Forms ChartAxis](axis_images/axis_img20.png)
+![Axis labels and ticks positioning support for Xamarin.Forms Chart](axis_images/axis_img20.png)
 
 ### Edge labels placement
 
@@ -972,7 +972,7 @@ chart.PrimaryAxis.EdgeLabelsDrawingMode = EdgeLabelsDrawingMode.Shift;
 
 {% endtabs %}
 
-![Edge labels placement support for Xamarin.Forms ChartAxis](axis_images/axis_img21.png)
+![Axis edge labels placement support for Xamarin.Forms Chart](axis_images/axis_img21.png)
 
 ### Edge labels visibility
 
@@ -1035,7 +1035,7 @@ Chart.PrimaryAxis.Title.Text = "Month";
 
 {% endtabs %}
 
-![Label extent support for Xamarin.Forms ChartAxis](axis_images/labelExtent.png)
+![Axis label extent support for Xamarin.Forms Chart](axis_images/labelExtent.png)
 
 
 ### Grid lines customization
@@ -1073,7 +1073,7 @@ chart. SecondaryAxis = new NumericalAxis ()
 
 {% endtabs %}
 
-![Grid lines customization support for Xamarin.Forms ChartAxis](axis_images/axis_img22.png)
+![Axis grid lines customization support for Xamarin.Forms Chart](axis_images/axis_img22.png)
 
 ### Tick lines customization
 
@@ -1131,7 +1131,7 @@ chart.SecondaryAxis = numerical;
 
 {% endtabs %}
 
-![Tick lines customization support for Xamarin.Forms ChartAxis](axis_images/axis_img23.png)
+![Axis tick lines customization support for Xamarin.Forms Chart](axis_images/axis_img23.png)
 
 ### Inversing axis
 
@@ -1224,7 +1224,7 @@ Chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![PlotOffset support for Xamarin.Forms Chart axis](axis_images/PlotOffset.png)
+![PlotOffset support for axis in Xamarin.Forms Chart](axis_images/PlotOffset.png)
 
 ### Maximum number of labels per 100 pixels
 
@@ -1250,7 +1250,7 @@ Chart.SecondaryAxis.MaximumLabels = 5;
 
 {% endtabs %}
 
-![Maximum labels support for Xamarin.Forms ChartAxis](axis_images/axis_img26.png)
+![Maximum axis labels support for Xamarin.Forms Chart](axis_images/axis_img26.png)
 
 ### AutoScrollingDelta
 
@@ -1356,7 +1356,7 @@ chart.SecondaryAxis =  new NumericalAxis() { CrossesAt  = 8 };
 
 {% endtabs %}
 
-![Crosses at support for Xamarin.Forms Chart numerical axis](axis_images/axiscrossing_img1.png)
+![NumericalAxis crosses at support for Xamarin.Forms Chart](axis_images/axiscrossing_img1.png)
 
 ### Crossing in date time axis
 
@@ -1410,7 +1410,7 @@ chart.SecondaryAxis =  new NumericalAxis() { CrossesAt  = new DateTime(2003, 1, 
 
 {% endtabs %}
 
-![Crosses at support for Xamarin.Forms Chart datetime axis](axis_images/axiscrossing_img2.png)
+![DateTimeAxis crosses at support for Xamarin.Forms Chart](axis_images/axiscrossing_img2.png)
 
 ### Positioning the axis elements while crossing
 

@@ -94,7 +94,7 @@ chart.PrimaryAxis = new CategoryAxis() { Interval = 2, LabelPlacement = LabelPla
 
 {% endtabs %}
 
-![Enable or disable the axis auto interval support in Xamarin.Forms Chart](axis_images/axis_img3.png)
+![Enable or disable the axis auto-interval support in Xamarin.Forms Chart](axis_images/axis_img3.png)
 
 ## Numeric Axis
 
@@ -1157,7 +1157,7 @@ chart.SecondaryAxis.IsInversed = true;
 
 {% endtabs %}
 
-![Axis Inverse support in Xamarin.Forms Chart](axis_images/axis_img24.png)
+![Axis inverse support in Xamarin.Forms Chart](axis_images/axis_img24.png)
 
 ### Placing axes at the opposite side
 

@@ -13,7 +13,7 @@ The placeholder is to denote a card's new position in the [`KanbanColumn`](http:
 
 ### Placeholder style
 
-[`PlaceholderStyle`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.html) property is used to customize the placeholder. Following properties are used to customize its appearance.
+[`PlaceholderStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~PlaceholderStyle.html) property of [`KanbanPlaceholderStyle`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.html) is used to customize the placeholder. Following properties are used to customize its appearance.
 
 * [`BackgroundColor`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle~BackgroundColor.html)  	 - This property is used to change the background color of the placeholder.
 * [`BorderColor`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle~BorderColor.html) 	 	 - This property is used to change the border color of the placeholder.
@@ -82,5 +82,5 @@ kanban.PlaceholderStyle = style;
 
 The following output demonstrates the above code example.
 
-![](SfKanban_images/PlaceholderStyle.png)
+![PlaceholderStyle support for Xamarin.Forms Kanban](SfKanban_images/PlaceholderStyle.png)
 

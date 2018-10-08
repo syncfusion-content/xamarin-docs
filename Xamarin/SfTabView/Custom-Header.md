@@ -152,9 +152,6 @@ TextColor="LightSlateGray" />
 </syncfusion:SfTabView>
 {% endhighlight %}
 
-
-![](images/headercustom.png)
-
 ## How to handle the events for custom view with tab view
 
 When you use the button or similar control with the clicked event, it can be handled directly and set to the `SelectedIndex` property to navigate the clicked view.

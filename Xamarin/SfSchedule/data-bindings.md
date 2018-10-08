@@ -186,7 +186,7 @@ schedule.DataSource= Meetings ;
 {% endhighlight %} 
 {% endtabs %}
 
-![spanning or multiday appointments in schedule Xamarin Forms][(PopulatingAppointments_images/span.png)
+![spanning or multiday appointments in schedule Xamarin Forms](PopulatingAppointments_images/span.png)
 
 ## All Day Appointments
 All-Day appointment is an appointment which is scheduled for a whole day. It can be set by using `IsAllDay` property in the `ScheduleAppointment`.

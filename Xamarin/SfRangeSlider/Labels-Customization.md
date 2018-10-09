@@ -64,7 +64,7 @@ public RangeSliderPage ()
 
 {% endtabs %}
 
-![](images/customLabel.png)
+![SfRangeSlider rendererd in vertical orientation with custom label in Xamarin.Forms](images/customLabel.png)
 
 
 ## Value Placement
@@ -93,7 +93,7 @@ Available options for this property are:
 
 {% endtabs %}
 
-![](images/value-TopLeft.png)
+![Value label placed at the top position of SfRangeSlider in Xamarin.Forms](images/value-TopLeft.png)
 
 {% tabs %}
 
@@ -111,7 +111,7 @@ Available options for this property are:
 
 {% endtabs %}
 
-![](images/Value-BottomRight.png)
+![Value label placed at the bottom position of SfRangeSlider in Xamarin.Forms](images/Value-BottomRight.png)
 
 ## Label Placement
 
@@ -168,7 +168,9 @@ x:Class="GettingStarted.RangeSliderSample">
 {% endhighlight %}
 
 {% highlight c# %}
-
+using System.Collections.ObjectModel;
+using Syncfusion.XForms.SfRangeSlider;
+using Xamarin.Forms;
 namespace GettingStarted
 {
 	/// <summary>
@@ -199,6 +201,9 @@ namespace GettingStarted
 
 {% highlight c# %}
 
+using System.Collections.ObjectModel;
+using Syncfusion.XForms.SfRangeSlider;
+using Xamarin.Forms;
 namespace GettingStarted
 {
 	/// <summary>
@@ -225,5 +230,5 @@ namespace GettingStarted
 {% endhighlight %}
 
 
-![](images/FontItalicCustom.png)
+![Font customization in SfRangeSlider in Xamarin.Forms](images/FontItalicCustom.png)
 

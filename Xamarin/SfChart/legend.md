@@ -37,7 +37,7 @@ chart.Legend = new ChartLegend();
 
 {% endtabs %}
 
-![](legend_images/legend_img1.png)
+![Legend support in Xamarin.Forms Chart](legend_images/legend_img1.png)
 
 ## Customizing labels
 
@@ -81,7 +81,7 @@ chart.Legend.LabelStyle.Margin = 5;
 
 {% endtabs %}
 
-![](legend_images/legend_img2.png)
+![Legend labels customization support in Xamarin.Forms Chart](legend_images/legend_img2.png)
 
 ## Legend icons
 
@@ -121,7 +121,7 @@ pieSeries.LegendIcon = ChartLegendIcon.SeriesType;
 
 {% endtabs %}
 
-![](legend_images/legend_img3.png)
+![Legend icons in Xamarin.Forms Chart](legend_images/legend_img3.png)
 
 ## Legend title
 
@@ -184,7 +184,7 @@ chart.Legend.Title.BorderColor = Color.Blue;
 
 {% endtabs %}
 
-![](legend_images/legend_img4.png)
+![Title for legend in Xamarin.Forms Chart](legend_images/legend_img4.png)
 
 ## Toggle the series visibility
 
@@ -302,7 +302,7 @@ chart.Legend.ItemMargin = 20;
 
 {% endtabs %}
 
-![](legend_images/ItemMargin.png)
+![Spacing support between legend items in Xamarin.Forms Chart](legend_images/ItemMargin.png)
 
 
 ## Legend wrap
@@ -332,7 +332,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![](legend_images/legendwrap_img1.png)
+![Legend wrapping support in Xamarin.Forms Chart](legend_images/legendwrap_img1.png)
 
 ### Legend width
 
@@ -367,7 +367,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![](legend_images/legendwrap_img2.png)
+![Providing width for legend in Xamarin.Forms Chart](legend_images/legendwrap_img2.png)
 
 ## Positioning the legend
 
@@ -411,7 +411,7 @@ chart.Legend.OffsetY = 90;
 
 {% endtabs %}
 
-![](legend_images/legend_img5.png)
+![Legend positioning support in Xamarin.Forms Chart](legend_images/legend_img5.png)
 
 ## ItemTemplate
 
@@ -443,13 +443,13 @@ N> The BindingContext of the template is the corresponding underlying legend ite
 
 {% highlight c# %}
 
-         chart.Legend = new ChartLegend();
-         DataTemplate template = new DataTemplate ( () =>
-         {
-          ...
-         });
+chart.Legend = new ChartLegend();
+DataTemplate template = new DataTemplate ( () =>
+{
+   ...
+});
 
-         chart.Legend.ItemTemplate = template;
+chart.Legend.ItemTemplate = template;
 
 {% endhighlight %}
 

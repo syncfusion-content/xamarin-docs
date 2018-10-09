@@ -601,7 +601,7 @@ chart.Series.Add(stackingArea100Series3);
 
 {% endtabs %}
 
-![](charttypes_images/charttypes_img5.png)
+![StackingAreaHundred chart type in Xamarin.Forms Chart](charttypes_images/charttypes_img5.png)
 
 ## Column Chart
 
@@ -701,7 +701,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![](charttypes_images/SideBySide-false.png)
+![Overlapped placement support in Xamarin.Forms Chart](charttypes_images/SideBySide-false.png)
 
 ## Histogram Chart
 
@@ -970,7 +970,7 @@ chart.Series.Add(stackingColumn100Series3);
 
 {% endtabs %}
 
-![](charttypes_images/charttypes_img9.png)
+![StackingColumnHundred chart type in Xamarin.Forms Chart](charttypes_images/charttypes_img9.png)
 
 ## Bar Chart
 
@@ -1154,7 +1154,7 @@ chart.Series.Add(stackingBar100Series3);
 
 {% endtabs %}
 
-![](charttypes_images/charttypes_img12.png)
+![StackingBarHundred chart type in Xamarin.Forms Chart](charttypes_images/charttypes_img12.png)
 
 ## Spline Chart
 
@@ -1245,15 +1245,15 @@ chart.Series.Add(splineSeries);
 
 [`Cardinal`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineType.html) 
 
-![](charttypes_images/CardinalSplineType.png)
+![SplineType support in Xamarin.Forms Chart](charttypes_images/CardinalSplineType.png)
 
 [`Monotonic`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineType.html)
 
-![](charttypes_images/MonotonicSplineType.png)
+![SplineType support in Xamarin.Forms Chart](charttypes_images/MonotonicSplineType.png)
 
 [`Clamped`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineType.html)
 
-![](charttypes_images/ClampedSplineType.png)
+![SplineType support in Xamarin.Forms Chart](charttypes_images/ClampedSplineType.png)
 
 ## Step Line Chart
 

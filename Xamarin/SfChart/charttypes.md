@@ -1860,8 +1860,10 @@ chart.SecondaryAxis =  new NumericalAxis() { PolarAngle = ChartPolarAngle.Rotate
 {% endhighlight %}
 
 {% endtabs %}
+
 ![Radar start angle support for secondary axis in Xamarin.Forms Chart](charttypes_images/radarangle_img2.png)
- ### Radar start angle for both axis
+
+### Radar start angle for both axis
 
 {% tabs %}
 

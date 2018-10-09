@@ -2007,9 +2007,12 @@ chart.SecondaryAxis =  new NumericalAxis();
 {% endhighlight %}
 
 {% endtabs %}
- ![Polar start angle support for primary axis in Xamarin.Forms Chart](charttypes_images/polarangle_img1.png)
- ### Polar start angle for secondary axis
- {% tabs %}
+
+![Polar start angle support for primary axis in Xamarin.Forms Chart](charttypes_images/polarangle_img1.png)
+
+### Polar start angle for secondary axis
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -2036,9 +2039,12 @@ chart.SecondaryAxis =  new NumericalAxis() { PolarAngle = ChartPolarAngle.Rotate
 {% endhighlight %}
 
 {% endtabs %}
- ![Polar start angle support for secondary axis in Xamarin.Forms Chart](charttypes_images/polarangle_img2.png)
- ### Polar start angle for both axis
- {% tabs %}
+
+![Polar start angle support for secondary axis in Xamarin.Forms Chart](charttypes_images/polarangle_img2.png)
+
+### Polar start angle for both axis
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -2065,7 +2071,8 @@ chart.SecondaryAxis =  new NumericalAxis() { PolarAngle = ChartPolarAngle.Rotate
 {% endhighlight %}
 
 {% endtabs %}
- ![Polar start angle support for both axis in Xamarin.Forms Chart](charttypes_images/polarangle_img3.png)
+
+![Polar start angle support for both axis in Xamarin.Forms Chart](charttypes_images/polarangle_img3.png)
 
 ## Pie Chart
 

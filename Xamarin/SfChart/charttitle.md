@@ -51,7 +51,7 @@ sfChart.Title.TextColor = Color.Blue;
 
 {% endtabs %}
 
-![](charttitle_images/charttitle_img1.png)
+![Title for Xamarin.Forms Chart](charttitle_images/charttitle_img1.png)
 
 ## Text Alignment
 
@@ -81,4 +81,4 @@ sfChart.Title.TextColor = Color.Blue;
 
 {% endtabs %}
 
-![](charttitle_images/charttitle_img2.png)
+![Text alignment support for title in Xamarin.Forms Chart](charttitle_images/charttitle_img2.png)

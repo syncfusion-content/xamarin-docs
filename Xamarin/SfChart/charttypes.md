@@ -2541,10 +2541,6 @@ doughnutSeries.CenterView = new Label() { Text = "CenterView" };
 
 ![CenterView support for doughnut series in Xamarin.Forms Chart](charttypes_images/charttypes_img41.png)
 
-## InnerRadius
-
-The [`InnerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DoughnutSeries~InnerRadius.html) property of [`DoughnutSeries`]((http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DoughnutSeries.html) is used only to get the inner radius. Using this InnerRadius value, we can provide [`CentreView`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DoughnutSeries~CenterView.html) for the series so that the view wont cropped outside the series.
-
 ## Pyramid Chart
 
 To render a pyramid chart, create an instance of [`PyramidSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.PyramidSeries.html) and add to the [`Series`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~Series.html) collection property of [`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the pyramid segment appearance.

@@ -15,7 +15,7 @@ This section explains you the steps required to populate the Chart with data, ti
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add chart to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfChart](https://www.nuget.org/packages/Syncfusion.Xamarin.SfChart/), and then install it. 
 
-![](Getting-Started_images/addref.png)
+![Adding Xamarin.Forms Chart Reference](Getting-Started_images/addref.png)
 
 To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfchart) to know about the dependent assemblies for chart. 
 
@@ -159,7 +159,7 @@ this.Content = chart;
 
 Run the project and check if you get following output to make sure you have configured your project properly to add [`SfChart`.](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html)
 
-![](Getting-Started_images/img1.png)
+![Initializing the Xamarin.Forms Chart](Getting-Started_images/img1.png)
 
 ## Initialize view model
 
@@ -560,7 +560,7 @@ namespace ChartGettingStarted
 
 The following chart is created as a result of the above codes.
 
-![](Getting-Started_images/img2.png)
+![Tooltip support in Xamarin.Forms Chart](Getting-Started_images/img2.png)
 
 You can find the complete getting started sample from this [link.](http://files2.syncfusion.com/Xamarin.Forms/Samples/Chart_GettingStarted.zip)
 

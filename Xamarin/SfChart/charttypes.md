@@ -48,7 +48,7 @@ chart.Series.Add(lineSeries);
 
 {% endtabs %}
 
-![](charttypes_images/charttypes_img1.png)
+![Line chart type in Xamarin.Forms](charttypes_images/charttypes_img1.png)
 
 ## Fast Line Chart
 
@@ -88,7 +88,7 @@ chart.Series.Add(fastLineSeries);
 
 {% endtabs %}
 
-![](charttypes_images/charttypes_img14.png)
+![FastLine chart type in Xamarin.Forms](charttypes_images/charttypes_img14.png)
 
 ### Dashed Lines
 
@@ -107,7 +107,7 @@ fastLineSeries.StrokeDashArray = new double[2] { 2, 3 };
 
 {% endhighlight %}
 
-![](charttypes_images/charttypes_img15.png)
+![Dashed lines support for FastLineSeries in Xamarin.Forms Chart](charttypes_images/charttypes_img15.png)
 
 ## Area Chart
 
@@ -149,7 +149,7 @@ chart.Series.Add(areaSeries);
 
 {% endtabs %}
 
-![](charttypes_images/charttypes_img2.png)
+![Area chart type in Xamarin.Forms](charttypes_images/charttypes_img2.png)
 
 ## Spline Area Chart
 
@@ -191,7 +191,7 @@ chart.Series.Add(splineAreaSeries);
 
 {% endtabs %}
 
-![](charttypes_images/charttypes_img3.png)
+![SplineArea chart type in Xamarin.Forms](charttypes_images/charttypes_img3.png)
 
 ### Spline Area Series Types
 
@@ -280,7 +280,7 @@ chart.Series.Add(stepAreaSeries);
 
 {% endtabs %}
 
-![](charttypes_images/StepArea.png)
+![StepArea chart type in Xamarin.Forms](charttypes_images/StepArea.png)
 
 ## Range Area Chart
 
@@ -357,7 +357,7 @@ You can use the following properties to customize the appearance.
 * [`StrokeWidth`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~StrokeWidth.html) – used to change the stroke width of the series.
 * [`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RangeAreaSeries~StrokeColor.html) – used to change the stroke color of the series.
 
-![](charttypes_images/RangeArea.png)
+![RangeArea chart type in Xamarin.Forms](charttypes_images/RangeArea.png)
 
 ## Spline Range Area Chart
 
@@ -428,7 +428,7 @@ chart.Series.Add(splineRangeAreaSeries);
 
 {% endtabs %}
 
-![](charttypes_images/SplineRangeArea.png)
+![SplineRangeArea chart type in Xamarin.Forms](charttypes_images/SplineRangeArea.png)
 
 ## Spline Range Area Series Type
 
@@ -536,7 +536,7 @@ chart.Series.Add(stackingAreaSeries3);
 
 {% endtabs %}
 
-![](charttypes_images/charttypes_img4.png)
+![StackedArea chart type in Xamarin.Forms](charttypes_images/charttypes_img4.png)
 
 ## 100% Stacked Area Chart
 
@@ -647,7 +647,7 @@ chart.Series.Add(columnSeries);
 
 {% endtabs %}
 
-![](charttypes_images/charttypes_img6.png)
+![Column chart type in Xamarin.Forms](charttypes_images/charttypes_img6.png)
 
 ## Overlapped placement
 
@@ -832,7 +832,7 @@ Following properties are used to customize the range column segment appearance,
 * [`Spacing`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RangeColumnSeries~Spacing.html) - used to change the spacing between two segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 and 0 correspond to 100% and 0% of the available space, respectively.
 * [`Width`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RangeColumnSeries~Width.html) - used to change the width of the rectangle. The default value of the width is 0.8, and the value ranges from 0 to 1. Here, 1 and 0 correspond to 100% and 0% of the available width, respectively. 
 
-![](charttypes_images/charttypes_img7.png)
+![RangeColumn chart type in Xamarin.Forms](charttypes_images/charttypes_img7.png)
 
 ## Stacked Column Chart
 
@@ -901,7 +901,7 @@ chart.Series.Add(stackingColumnSeries3);
 
 {% endtabs %}
 
-![](charttypes_images/charttypes_img8.png)
+![StackingColumn chart type in Xamarin.Forms](charttypes_images/charttypes_img8.png)
 
 ## 100% Stacked Column Chart
 
@@ -1016,7 +1016,7 @@ chart.Series.Add(barSeries);
 
 {% endtabs %}
 
-![](charttypes_images/charttypes_img10.png)
+![Bar chart type in Xamarin.Forms](charttypes_images/charttypes_img10.png)
 
 ## Stacked Bar Chart
 
@@ -1085,7 +1085,7 @@ chart.Series.Add(stackingBarSeries3);
 
 {% endtabs %}
 
-![](charttypes_images/charttypes_img11.png)
+![StackingBar chart type in Xamarin.Forms](charttypes_images/charttypes_img11.png)
 
 ## 100% Stacked Bar Chart
 
@@ -1195,7 +1195,7 @@ chart.Series.Add(splineSeries);
 
 {% endtabs %}
 
-![](charttypes_images/charttypes_img13.png)
+![Spline chart type in Xamarin.Forms](charttypes_images/charttypes_img13.png)
 
 ### SplineSeries Types
 
@@ -1294,7 +1294,7 @@ chart.Series.Add(stepLine);
 
 {% endtabs %}
 
-![](charttypes_images/stepline.png)
+![StepLine chart type in Xamarin.Forms](charttypes_images/stepline.png)
 
 ## Bubble Chart
 
@@ -1379,7 +1379,7 @@ Following properties are used to customize the bubble segment appearance.
 * [`MinimumRadius`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.BubbleSeries~MinimumRadius.html) – used to change the minimum size of the series.
 * [`MaximumRadius`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.BubbleSeries~MaximumRadius.html) – used to change the maximum size of the series.
 
-![](charttypes_images/charttypes_img16.png)
+![Bubble chart type in Xamarin.Forms](charttypes_images/charttypes_img16.png)
 
 ## Scatter Chart	
 
@@ -1431,7 +1431,7 @@ chart.Series.Add(scatterSeries);
 
 {% endtabs %}
 
-![](charttypes_images/charttypes_img17.png)
+![Scatter chart type in Xamarin.Forms](charttypes_images/charttypes_img17.png)
 
 ## OHLC Chart
 
@@ -1512,7 +1512,7 @@ You can use the following properties to customize the [`HiLoOpenCloseSeries`](ht
 * [`Spacing`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.HiLoOpenCloseSeries~Spacing.html) - used to change the spacing between two segments.
 * [`Width`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.HiLoOpenCloseSeries~Width.html) - used to change the width of the rectangle.
 
-![](charttypes_images/charttypes_img18.png)
+![HiLoOpenClose chart type in Xamarin.Forms](charttypes_images/charttypes_img18.png)
 
 ### Bull and Bear Color	
 
@@ -1551,7 +1551,7 @@ HiLoOpenCloseSeries hiLoOpenCloseSeries = new HiLoOpenCloseSeries()
 
 {% endtabs %}
 
-![](charttypes_images/charttypes_img19.png)
+![Bull and Bear Color support for financial series in Xamarin.Forms Chart](charttypes_images/charttypes_img19.png)
 
 ## Candle Chart
 
@@ -1634,7 +1634,7 @@ You can use the following properties to customize the candle segment appearance.
 * [`StrokeWidth`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~StrokeWidth.html) – used to change the stroke width of the series.
 * [`StrokeColor`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CandleSeries~StrokeColor.html) – used to change the stroke color of the series.
 
-![](charttypes_images/charttypes_img20.png)
+![Candle chart type in Xamarin.Forms](charttypes_images/charttypes_img20.png)
 
 ### Bull and Bear Color
 
@@ -1673,7 +1673,7 @@ CandleSeries candleSeries = new CandleSeries()
 
 {% endtabs %}
 
-![](charttypes_images/charttypes_img21.png)
+![Bull and Bear Color support for financial series in Xamarin.Forms Chart](charttypes_images/charttypes_img21.png)
 
 ### EnableSolidCandles
 
@@ -1743,7 +1743,7 @@ radar.DrawType = PolarRadarSeriesDrawType.Line;
 {% endhighlight %}
 {% endtabs %}
 
-![](ChartTypes_images/Radar.png)
+![Draw type support for radar series in Xamarin.Forms Chart](ChartTypes_images/Radar.png)
 
 ### Customize the appearance
 
@@ -1773,7 +1773,7 @@ radar.StrokeWidth = 3;
 {% endhighlight %}
 {% endtabs %}
 
-![](ChartTypes_images/RadarCustomization.png)
+![Customizing the appearance of radar series in Xamarin.Forms Chart](ChartTypes_images/RadarCustomization.png)
 
 ### Closed
 
@@ -1795,7 +1795,7 @@ radar.IsClosed = false;
 {% endhighlight %}
 {% endtabs %}
 
-![](ChartTypes_images/RadarClosed.png)
+![Closed radar series in Xamarin.Forms Chart](ChartTypes_images/RadarClosed.png)
 
 ### Radar start angle for primary axis
 
@@ -1828,7 +1828,7 @@ chart.SecondaryAxis =  new NumericalAxis();
 {% endhighlight %}
 
 {% endtabs %}
- ![](charttypes_images/radarangle_img1.png)
+ ![Radar start angle support for primary axis in Xamarin.Forms Chart](charttypes_images/radarangle_img1.png)
  ### Radar start angle for secondary axis
  {% tabs %}
 
@@ -1857,7 +1857,7 @@ chart.SecondaryAxis =  new NumericalAxis() { PolarAngle = ChartPolarAngle.Rotate
 {% endhighlight %}
 
 {% endtabs %}
- ![](charttypes_images/radarangle_img2.png)
+![Radar start angle support for secondary axis in Xamarin.Forms Chart](charttypes_images/radarangle_img2.png)
  ### Radar start angle for both axis
 
 {% tabs %}
@@ -1887,7 +1887,7 @@ chart.SecondaryAxis =  new NumericalAxis() { PolarAngle = ChartPolarAngle.Rotate
 {% endhighlight %}
 
 {% endtabs %}
- ![](charttypes_images/radarangle_img3.png)
+![Radar start angle support for both axis in Xamarin.Forms Chart](charttypes_images/radarangle_img3.png)
 
 ## Polar Chart
 
@@ -1917,7 +1917,7 @@ polar.DrawType = PolarRadarSeriesDrawType.Line;
 {% endhighlight %}
 {% endtabs %}
 
-![](ChartTypes_images/Polar.png)
+![Draw type support for polar series in Xamarin.Forms Chart](ChartTypes_images/Polar.png)
 
 ### Customize the appearance
 
@@ -1947,7 +1947,7 @@ polar.StrokeWidth = 3;
 {% endhighlight %}
 {% endtabs %}
 
-![](ChartTypes_images/PolarCustomization.png)
+![Customizing the appearance of polar series in Xamarin.Forms Chart](ChartTypes_images/PolarCustomization.png)
 
 ### Closed
 
@@ -1969,7 +1969,7 @@ polar.IsClosed = false;
 {% endhighlight %}
 {% endtabs %}
 
-![](ChartTypes_images/PolarClosed.png)
+![Closed polar series in Xamarin.Forms Chart](ChartTypes_images/PolarClosed.png)
 
 ### Polar start angle for primary axis
 
@@ -2002,7 +2002,7 @@ chart.SecondaryAxis =  new NumericalAxis();
 {% endhighlight %}
 
 {% endtabs %}
- ![](charttypes_images/polarangle_img1.png)
+ ![Polar start angle support for primary axis in Xamarin.Forms Chart](charttypes_images/polarangle_img1.png)
  ### Polar start angle for secondary axis
  {% tabs %}
 
@@ -2031,7 +2031,7 @@ chart.SecondaryAxis =  new NumericalAxis() { PolarAngle = ChartPolarAngle.Rotate
 {% endhighlight %}
 
 {% endtabs %}
- ![](charttypes_images/polarangle_img2.png)
+ ![Polar start angle support for secondary axis in Xamarin.Forms Chart](charttypes_images/polarangle_img2.png)
  ### Polar start angle for both axis
  {% tabs %}
 
@@ -2060,7 +2060,7 @@ chart.SecondaryAxis =  new NumericalAxis() { PolarAngle = ChartPolarAngle.Rotate
 {% endhighlight %}
 
 {% endtabs %}
- ![](charttypes_images/polarangle_img3.png)
+ ![Polar start angle support for both axis in Xamarin.Forms Chart](charttypes_images/polarangle_img3.png)
 
 ## Pie Chart
 
@@ -2103,7 +2103,7 @@ chart.Series.Add(pieSeries);
 
 {% endtabs %}
 
-![](charttypes_images/charttypes_img22.png)
+![Pie Chart type in Xamarin.Forms](charttypes_images/charttypes_img22.png)
 
 ### Changing the pie size
 
@@ -2134,7 +2134,7 @@ PieSeries pieSeries = new PieSeries()
 
 {% endtabs %}
 
-![](charttypes_images/charttypes_img23.png)
+![Changing the pie size in Xamarin.Forms Chart](charttypes_images/charttypes_img23.png)
 
 ### Exploding a pie segment
 
@@ -2167,7 +2167,7 @@ PieSeries pieSeries = new PieSeries()
 
 Also, the segments can be exploded by touch using [`ExplodeOnTouch`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.AccumulationSeries~ExplodeOnTouch.html) property of [`PieSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.PieSeries.html). Default value of this property is false.
 
-![](charttypes_images/charttypes_img24.png)
+![Exploding a pie segment support in Xamarin.Forms Chart](charttypes_images/charttypes_img24.png)
 
 ### Exploding all the segments
 
@@ -2196,7 +2196,7 @@ PieSeries pieSeries = new PieSeries()
 
 {% endtabs %}
 
-![](charttypes_images/charttypes_img25.png)
+![Exploding all the segments of pie series in Xamarin.Forms Chart](charttypes_images/charttypes_img25.png)
 
 ### Sector of Pie
 
@@ -2229,7 +2229,7 @@ PieSeries pieSeries = new PieSeries()
 
 {% endtabs %}
 
-![](charttypes_images/charttypes_img26.png)
+![Sector support for pie series in Xamarin.Forms Chart](charttypes_images/charttypes_img26.png)
 
 ### Group small data points into “others”
 
@@ -2277,7 +2277,7 @@ chart.Series.Add(doughnutSeries);
 
 {% endtabs %}
 
-![](charttypes_images/charttypes_img27.png)
+![Doughnut Chart type in Xamarin.Forms](charttypes_images/charttypes_img27.png)
 
 ### Stacked doughnut
 
@@ -2330,7 +2330,7 @@ chart.Series.Add(doughnutSeries);
 
 {% endtabs %}
 
-![](charttypes_images/stacked_doughnut.png)
+![Stacked doughnut support for doughnut series in Xamarin.Forms Chart](charttypes_images/stacked_doughnut.png)
 
 ### Changing Doughnut inner radius
 
@@ -2361,7 +2361,7 @@ DoughnutSeries doughnutSeries = new DoughnutSeries()
 
 {% endtabs %}
 
-![](charttypes_images/charttypes_img28.png)
+![DoughnutCoefficient support for doughnut series in Xamarin.Forms Chart](charttypes_images/charttypes_img28.png)
 
 ### Changing the doughnut size
 
@@ -2392,7 +2392,7 @@ DoughnutSeries doughnutSeries = new DoughnutSeries()
 
 {% endtabs %}
 
-![](charttypes_images/charttypes_img29.png)
+![CircularCoefficient support for doughnut series in Xamarin.Forms Chart](charttypes_images/charttypes_img29.png)
 
 ### Exploding a doughnut segment
 
@@ -2423,7 +2423,7 @@ DoughnutSeries doughnutSeries = new DoughnutSeries()
 
 Also, the segments can be exploded by touch using [`ExplodeOnTouch`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.AccumulationSeries~ExplodeOnTouch.html) property of [`DoughnutSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DoughnutSeries.html). Default value of this property is false.
 
-![](charttypes_images/charttypes_img30.png)
+![Exploding a doughnut segment support in Xamarin.Forms Chart](charttypes_images/charttypes_img30.png)
 
 ### Exploding all the segments
 
@@ -2452,7 +2452,7 @@ DoughnutSeries doughnutSeries = new DoughnutSeries()
 
 {% endtabs %}
 
-![](charttypes_images/charttypes_img31.png)
+![Exploding all the segments of doughnut series in Xamarin.Forms Chart](charttypes_images/charttypes_img31.png)
 
 ### Sector of Doughnut
 
@@ -2482,7 +2482,7 @@ DoughnutSeries doughnutSeries = new DoughnutSeries()
 
 {% endtabs %}
 
-![](charttypes_images/charttypes_img32.png)
+![Sector support for doughnut series in Xamarin.Forms Chart](charttypes_images/charttypes_img32.png)
 
 ### Group small data points into “others”
 
@@ -2522,7 +2522,7 @@ doughnutSeries.CenterView = new Label() { Text = "CenterView" };
 
 {% endtabs %}
 
-![](charttypes_images/charttypes_img41.png)
+![CenterView support for doughnut series in Xamarin.Forms Chart](charttypes_images/charttypes_img41.png)
 
 ## Pyramid Chart
 
@@ -2564,7 +2564,7 @@ chart.Series.Add(pyramidSeries);
 
 {% endtabs %}
 
-![](charttypes_images/charttypes_img33.png)
+![Pyramid Chart type in Xamarin.Forms](charttypes_images/charttypes_img33.png)
 
 ### Pyramid Mode
 
@@ -2593,7 +2593,7 @@ PyramidSeries pyramidSeries = new PyramidSeries ()
 
 {% endtabs %}
 
-![](charttypes_images/charttypes_img34.png)
+![Pyramid mode support in Xamarin.Forms Chart](charttypes_images/charttypes_img34.png)
 
 ### Gap between the segments
 
@@ -2623,7 +2623,7 @@ PyramidSeries pyramidSeries = new PyramidSeries()
 
 {% endtabs %}
 
-![](charttypes_images/charttypes_img35.png)
+![Gap between the pyramid segments support in Xamarin.Forms Chart](charttypes_images/charttypes_img35.png)
 
 ### Exploding a pyramid segment
 
@@ -2655,7 +2655,7 @@ Also, the segments can be exploded by touch using [`ExplodeOnTouch`](https://hel
 
 {% endtabs %}
 
-![](charttypes_images/charttypes_img36.png)
+![Exploding a pyramid segment support in Xamarin.Forms Chart](](charttypes_images/charttypes_img36.png)
 
 ## Funnel Chart
 
@@ -2697,7 +2697,7 @@ chart.Series.Add(funnelSeries);
 
 {% endtabs %}
 
-![](charttypes_images/charttypes_img37.png)
+![Funnel Chart type in Xamarin.Forms](charttypes_images/charttypes_img37.png)
 
 ### Gap between the segments
 
@@ -2727,7 +2727,7 @@ FunnelSeries funnelSeries = new FunnelSeries()
 
 {% endtabs %}
 
-![](charttypes_images/charttypes_img38.png)
+![Gap between the funnel segments support in Xamarin.Forms Chart](charttypes_images/charttypes_img38.png)
 
 ### Exploding a funnel segment
 
@@ -2759,7 +2759,7 @@ FunnelSeries funnelSeries = new FunnelSeries()
 
 Also, the segments can be exploded by touch using [`ExplodeOnTouch`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.AccumulationSeries~ExplodeOnTouch.html) property of [`FunnelSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FunnelSeries.html). Default value of this property is false.
 
-![](charttypes_images/charttypes_img39.png)
+![Exploding a funnel segment support in Xamarin.Forms Chart](charttypes_images/charttypes_img39.png)
 
 ### Changing the minimum width of the funnel
 
@@ -2789,4 +2789,4 @@ FunnelSeries funnelSeries = new FunnelSeries()
 
 {% endtabs %}
 
-![](charttypes_images/charttypes_img40.png)
+![Minimum width support for funnel series in Xamarin.Forms Chart](charttypes_images/charttypes_img40.png)

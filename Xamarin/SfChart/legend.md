@@ -443,13 +443,13 @@ N> The BindingContext of the template is the corresponding underlying legend ite
 
 {% highlight c# %}
 
-         chart.Legend = new ChartLegend();
-         DataTemplate template = new DataTemplate ( () =>
-         {
-          ...
-         });
+chart.Legend = new ChartLegend();
+DataTemplate template = new DataTemplate ( () =>
+{
+   ...
+});
 
-         chart.Legend.ItemTemplate = template;
+chart.Legend.ItemTemplate = template;
 
 {% endhighlight %}
 

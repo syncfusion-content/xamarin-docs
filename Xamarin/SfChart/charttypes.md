@@ -601,7 +601,7 @@ chart.Series.Add(stackingArea100Series3);
 
 {% endtabs %}
 
-![StackingArea100 chart type in Xamarin.Forms Chart](charttypes_images/charttypes_img5.png)
+![StackingArea100 chart type in Xamarin.Forms](charttypes_images/charttypes_img5.png)
 
 ## Column Chart
 
@@ -1154,7 +1154,7 @@ chart.Series.Add(stackingBar100Series3);
 
 {% endtabs %}
 
-![StackingBar100 chart type in Xamarin.Forms Chart](charttypes_images/charttypes_img12.png)
+![StackingBar100 chart type in Xamarin.Forms](charttypes_images/charttypes_img12.png)
 
 ## Spline Chart
 
@@ -1551,7 +1551,7 @@ HiLoOpenCloseSeries hiLoOpenCloseSeries = new HiLoOpenCloseSeries()
 
 {% endtabs %}
 
-![Bull and Bear Color support for financial series in Xamarin.Forms Chart](charttypes_images/charttypes_img19.png)
+![Bull and bear Color support for financial series in Xamarin.Forms Chart](charttypes_images/charttypes_img19.png)
 
 ## Candle Chart
 
@@ -1673,7 +1673,7 @@ CandleSeries candleSeries = new CandleSeries()
 
 {% endtabs %}
 
-![Bull and Bear Color support for financial series in Xamarin.Forms Chart](charttypes_images/charttypes_img21.png)
+![Bull and bear Color support for financial series in Xamarin.Forms Chart](charttypes_images/charttypes_img21.png)
 
 ### EnableSolidCandles
 
@@ -1892,7 +1892,7 @@ chart.SecondaryAxis =  new NumericalAxis() { PolarAngle = ChartPolarAngle.Rotate
 {% endhighlight %}
 
 {% endtabs %}
-![Radar start angle support for both axis in Xamarin.Forms Chart](charttypes_images/radarangle_img3.png)
+![Radar start angle support for both axes in Xamarin.Forms Chart](charttypes_images/radarangle_img3.png)
 
 ## Polar Chart
 
@@ -2072,7 +2072,7 @@ chart.SecondaryAxis =  new NumericalAxis() { PolarAngle = ChartPolarAngle.Rotate
 
 {% endtabs %}
 
-![Polar start angle support for both axis in Xamarin.Forms Chart](charttypes_images/polarangle_img3.png)
+![Polar start angle support for both axes in Xamarin.Forms Chart](charttypes_images/polarangle_img3.png)
 
 ## Pie Chart
 
@@ -2115,7 +2115,7 @@ chart.Series.Add(pieSeries);
 
 {% endtabs %}
 
-![Pie Chart type in Xamarin.Forms](charttypes_images/charttypes_img22.png)
+![Pie chart type in Xamarin.Forms](charttypes_images/charttypes_img22.png)
 
 ### Changing the pie size
 
@@ -2289,7 +2289,7 @@ chart.Series.Add(doughnutSeries);
 
 {% endtabs %}
 
-![Doughnut Chart type in Xamarin.Forms](charttypes_images/charttypes_img27.png)
+![Doughnut chart type in Xamarin.Forms](charttypes_images/charttypes_img27.png)
 
 ### Stacked doughnut
 
@@ -2576,7 +2576,7 @@ chart.Series.Add(pyramidSeries);
 
 {% endtabs %}
 
-![Pyramid Chart type in Xamarin.Forms](charttypes_images/charttypes_img33.png)
+![Pyramid chart type in Xamarin.Forms](charttypes_images/charttypes_img33.png)
 
 ### Pyramid Mode
 
@@ -2709,7 +2709,7 @@ chart.Series.Add(funnelSeries);
 
 {% endtabs %}
 
-![Funnel Chart type in Xamarin.Forms](charttypes_images/charttypes_img37.png)
+![Funnel chart type in Xamarin.Forms](charttypes_images/charttypes_img37.png)
 
 ### Gap between the segments
 

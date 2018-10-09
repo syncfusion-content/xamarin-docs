@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Markers and data labels in Essential Xamarin.Forms Chart
-description: Learn how to add markers and data point labels to a Chart series
+description: Learn how to add markers and data point labels, connector lines, event, formatting label content, configure the data marker label template to the Chart series.
 platform: xamarin
 control: Chart
 documentation: ug
@@ -35,7 +35,7 @@ lineSeries.DataMarker = new ChartDataMarker();
 
 {% endtabs %}
 
-![](datamarker_images/datamarker_img1.png)
+![Data markers support in Xamarin.Forms Chart](datamarker_images/datamarker_img1.png)
 
 ## Customizing labels
 
@@ -102,7 +102,7 @@ lineSeries.DataMarker.LabelStyle.Font = Font.SystemFontOfSize(18, FontAttributes
 
 {% endtabs %}
 
-![](datamarker_images/datamarker_img2.png)
+![Customizing the labels of data markers in Xamarin.Forms Chart](datamarker_images/datamarker_img2.png)
 
 ## Formatting label content
 
@@ -135,7 +135,7 @@ pieSeries.DataMarker.LabelContent = LabelContent.Percentage;
 
 {% endtabs %}
 
-![](datamarker_images/datamarker_img3.png)
+![Formatting the label content of data markers in Xamarin.Forms Chart](datamarker_images/datamarker_img3.png)
 
 ## Label position
 
@@ -143,7 +143,7 @@ The [`LabelPosition`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusi
 
 The following screenshot illustrates the default position of data marker labels,
 
-![](datamarker_images/datamarker_img4.png)
+![Positioning the data marker labels support in Xamarin.Forms Chart](datamarker_images/datamarker_img4.png)
 
 The following code sample illustrates the center position of data marker labels,
 
@@ -171,7 +171,7 @@ series.DataMarker.LabelStyle.LabelPosition = DataMarkerLabelPosition.Center;
 
 {% endtabs %}
 
-![](datamarker_images/datamarker_img5.png)
+![Positioning the data marker labels support in Xamarin.Forms Chart](datamarker_images/datamarker_img5.png)
 
 The following code sample illustrates the Inner position of data marker labels,
 
@@ -199,7 +199,7 @@ series.DataMarker.LabelStyle.LabelPosition = DataMarkerLabelPosition.Inner;
 
 {% endtabs %}
 
-![](datamarker_images/datamarker_img6.png)
+![Positioning the data marker labels support in Xamarin.Forms Chart](datamarker_images/datamarker_img6.png)
 
 The following code sample illustrates the outer position of data marker labels, 
 
@@ -227,7 +227,7 @@ series.DataMarker.LabelStyle.LabelPosition = DataMarkerLabelPosition.Outer;
 
 {% endtabs %}
 
-![](datamarker_images/datamarker_img7.png)
+![Positioning the data marker labels support in Xamarin.Forms Chart](datamarker_images/datamarker_img7.png)
 
 ## Smart labels
 
@@ -286,7 +286,7 @@ chart.Series.Add(pieSeries);
 
 {% endtabs %}
 
-![](datamarker_images/smartlabels.png)
+![Smart labels support for data markers in Xamarin.Forms Chart](datamarker_images/smartlabels.png)
 
 ## Customizing marker shapes
 
@@ -343,7 +343,7 @@ lineSeries.DataMarker.MarkerBorderWidth = 2;
 
 {% endtabs %}
 
-![](datamarker_images/datamarker_img8.png)
+![Data markers shape customization support in Xamarin.Forms Chart](datamarker_images/datamarker_img8.png)
 
 ## Apply series color
 
@@ -425,7 +425,7 @@ lineSeries.DataMarker.ConnectorLineStyle.StrokeDashArray = new double[2] { 2, 3 
 
 {% endtabs %}
 
-![](datamarker_images/datamarker_img9.png)
+![Connector line support for data markers in Xamarin.Forms Chart](datamarker_images/datamarker_img9.png)
 
 N> For Pie and Doughnut series, you can set the [`Bezier`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ConnectorLineType.html) curve for connector line using [`ConnectorType`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CircularSeries~ConnectorLineType.html) property of Pie and Doughnut series.
 
@@ -503,7 +503,7 @@ chart.Series.Add(barSeries);
 
 {% endtabs %}
 
-![](datamarker_images/datamarker_img10.png)
+![Label template support for data markers in Xamarin.Forms Chart](datamarker_images/datamarker_img10.png)
 
 ## Event
 

@@ -90,11 +90,11 @@ chart.ChartBehaviors.Add(zoomPanBehavior);
 
 Following screenshot shows the box selection on chart area,
 
-![](zoompan_images/zoompan_img1.png)
+![Box selection support in Xamarin.Forms Chart](zoompan_images/zoompan_img1.png)
 
 Following screenshot shows the zoomed area,
 
-![](zoompan_images/zoompan_img2.png)
+![Panning support in Xamarin.Forms Chart](zoompan_images/zoompan_img2.png)
 
 ## Zoom Mode
 
@@ -124,7 +124,7 @@ zoomPanBehavior.ZoomMode = ZoomMode.X;
 
 {% endtabs %}
 
-![](zoompan_images/zoompan_img3.png)
+![Zoom mode support in Xamarin.Forms Chart](zoompan_images/zoompan_img3.png)
 
 ## Auto Interval On Zooming
 

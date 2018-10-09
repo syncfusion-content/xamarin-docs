@@ -51,7 +51,7 @@ chart.ChartBehaviors.Add(trackballBehavior);
 
 {% endtabs %}
 
-![](trackball_images/trackball_img1.png)
+![Trackball support in Xamarin.Forms Chart](trackball_images/trackball_img1.png)
 
 ## Label Display Mode
 
@@ -82,7 +82,7 @@ trackballBehavior.LabelDisplayMode = TrackballLabelDisplayMode.NearestPoint;
 
 In the following screenshot, trackball label is shown for only single data point,
 
-![](trackball_images/trackball_img2.png)
+![Label display mode support for trackball in Xamarin.Forms Chart](trackball_images/trackball_img2.png)
 
 ## Customizing appearance
 
@@ -264,7 +264,7 @@ chart.ChartBehaviors.Add(trackballBehavior);
 
 Following screenshot illustrates the customization of trackball elements.
 
-![](trackball_images/trackball_img3.png)
+![Customizing the appearance of trackball label in Xamarin.Forms Chart](trackball_images/trackball_img3.png)
 
 ## Show/hide the trackball label in axis
 
@@ -290,7 +290,7 @@ chart.PrimaryAxis.ShowTrackballInfo = true;
 
 {% endtabs %}
 
-![](trackball_images/trackball_img5.png)
+![Showing and hiding the trackball label for axis in Xamarin.Forms Chart](trackball_images/trackball_img5.png)
 
 ## Axis label alignment
 
@@ -326,7 +326,7 @@ primaryAxis.TrackballLabelStyle.AxisLabelAlignment = ChartLabelAlignment.Near;
 
 {% endtabs %}
 
-![](trackball_images/AxisLabelAlignment-Near.png)
+![Label alignment support for trackball axis label in Xamarin.Forms Chart](trackball_images/AxisLabelAlignment-Near.png)
 
 ## Show/hide the series label
 
@@ -365,7 +365,7 @@ chart.Series.Add(lineSeries);
 
 {% endtabs %}
 
-![](trackball_images/trackball_img6.png)
+![Showing and hiding the trackball label for series in Xamarin.Forms Chart](trackball_images/trackball_img6.png)
 
 ## Label Template
 
@@ -443,7 +443,7 @@ chart.ChartBehaviors.Add(new ChartTrackballBehavior());
 
 {% endtabs %}
 
-![](trackball_images/trackball_img4.png)
+![Label template support for trackball in Xamarin.Forms Chart](trackball_images/trackball_img4.png)
 
 **Customize the Axis Label with DataTemplate**
 
@@ -498,7 +498,7 @@ Chart.ChartBehaviors.Add(new ChartTrackballBehavior());
 
 {% endtabs %}
 
-![](trackball_images/axislabelTemplate.png)
+![Template support for trackball axis label in Xamarin.Forms Chart](trackball_images/axislabelTemplate.png)
 
 ## Methods
 

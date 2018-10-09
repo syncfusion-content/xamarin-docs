@@ -8,19 +8,18 @@ documentation: ug
 ---
 
 
-# Multi drawer
+# Multi Drawer
 
-The navigation drawer allows the user to provide the multi drawer contents and each of them can be opened with their opening methods.
+The navigation drawer allows users to open the drawer on multiple sides with different toggle methods. The DrawerSettings class and its properties need to be used when users need to provide multiple drawer. The multiple drawers can be implemented using the following drawer settings.
 
-*	Default drawer settings
+* Default drawer settings
+* Secondary drawer settings
 
-*	Secondary drawer settings
-
-N> Header and Footer content are optional but Drawer content is mandatory to allocate space for the drawer.
+N> The header and footer content are optional, but the drawer content is mandatory to allocate space for the drawer.
 		
 ## Default drawer settings
 
-The user can provided the default drawer contents inside default drawer settings. The below code illustrates the code for default drawer settings.
+Implement the default drawer using the default drawer settings class. The following code sample demonstrates how to set the default drawer settings's properties inside the DrawerSettings class.
 
 {% tabs %}
 
@@ -55,13 +54,16 @@ navigationDrawer.DefaultDrawerSettings = defaultDrawerSettings;
 
 {% endtabs %}
 
-### Default drawer Header view
+N> The navigation drawer works with the value given for the properties inside the DrawerSettings class when using the default drawer settings.
 
-The header view of the default drawer can be provided using the below codes. 
+### Default drawer header view
+
+The header content can be provided to the default drawer using the `DrawerHeaderView` property inside the DrawerSettings class of DefaultDrawerSettings. The following code demonstrates how to set header content for the default drawer.
 
 {% tabs %}
 
 {% highlight xaml %}
+   <navigationdrawer:SfNavigationDrawer.DefaultDrawerSettings>
     <Grid BackgroundColor="#1aa1d6">
     <Grid.RowDefinitions>
     <RowDefinition Height="120"/>
@@ -70,12 +72,14 @@ The header view of the default drawer can be provided using the below codes.
         <Label Text="Syncfusion Xamarin Products"  HorizontalTextAlignment="Center" HorizontalOptions="Center" FontSize="20" TextColor="White"/>
      </Grid>
     </navigationdrawer:DrawerSettings.DrawerHeaderView>
+    </navigationdrawer:SfNavigationDrawer.DefaultDrawerSettings>
 
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+    DrawerSettings defaultDrawerSettings = new DrawerSettings();
     Grid headerLayout = new Grid();
     headerLayout.BackgroundColor = Color.FromHex("#1aa1d6");
     Label header = new Label();
@@ -90,9 +94,9 @@ The header view of the default drawer can be provided using the below codes.
 
 {% endtabs %}      
 
-### Default drawer Content view
+### Default drawer content view
 
-The drawer content view of the default drawer can be provided using the below codes. 
+The drawer content can be provided to the default drawer using the `DrawerContentView` property inside the DrawerSettings class. The following code demonstrates how to set drawer content to the default drawer.
 
 {% tabs %}
 
@@ -109,6 +113,7 @@ The drawer content view of the default drawer can be provided using the below co
 {% endhighlight %}
 {% highlight c# %}
 
+DrawerSettings defaultDrawerSettings = new DrawerSettings();
 Grid contentLayout = new Grid();
 contentLayout.BackgroundColor = Color.FromHex("#1aa1d6");
 Label content = new Label();
@@ -123,14 +128,15 @@ defaultDrawerSettings.DrawerContentView = contentLayout;
 
 {% endtabs %}   
 
-### Default drawer Footer view
+### Default drawer footer view
 
-The footer view of the default drawer can be provided using the below codes. 
+The footer content can be provided to the default drawer using the `DrawerFooterView` property inside the DrawerSettings class of DefaultDrawerSettings. The following code demonstrates how to set footer content to the default drawer.
 
 {% tabs %}
 
 {% highlight xaml %}
     
+    <navigationdrawer:SfNavigationDrawer.DefaultDrawerSettings>   
     <navigationdrawer:DrawerSettings.DrawerFooterView>
     <Grid BackgroundColor="#1aa1d6">
     <Grid.RowDefinitions>
@@ -139,12 +145,14 @@ The footer view of the default drawer can be provided using the below codes.
         <Label Text="Close" Grid.Row="0" HorizontalTextAlignment="Center" HorizontalOptions="Center" FontSize="20" TextColor="White"/>
     </Grid>
     </navigationdrawer:DrawerSettings.DrawerFooterView>
+    </navigationdrawer:SfNavigationDrawer.DefaultDrawerSettings>
 
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+DrawerSettings defaultDrawerSettings = new DrawerSettings();
 Grid footerLayout = new Grid();
 footerLayout.BackgroundColor = Color.FromHex("#1aa1d6");
 Label footer = new Label();
@@ -160,7 +168,7 @@ defaultDrawerSettings.DrawerFooterView = footerLayout;
 
 ## Secondary drawer settings   
 
-The user can provided the secondary drawer contents inside secondary drawer settings. The below code illustrates the code for secondary drawer settings.
+Implement the secondary drawer using the secondary drawer settings class. Its properties and functionalities are same as the default drawer. The secondary drawer can be set to different positions similar to the default drawer. The following code demonstrates how to set the secondary drawer settings's properties inside the DrawerSettings class.
 
 {% tabs %}
 
@@ -195,14 +203,17 @@ navigationDrawer.SecondaryDrawerSettings = secondaryDrawer;
 
 {% endtabs %}
 
-### Secondary drawer Header view
+N> When the default drawer and the secondary drawer are set to the same position, the default drawer will open on swiping.
 
-The header view of the secondary drawer can be provided using the below codes. 
+### Secondary drawer header view
+
+The header content can be provided to the secondary drawer using the `DrawerHeaderView` property inside the DrawerSettings class of SecondaryDrawerSettings. The following code demonstrates how to set the header content to the secondary drawer.
 
 {% tabs %}
 
 {% highlight xaml %}
     
+    <navigationdrawer:SfNavigationDrawer.SecondaryDrawerSettings>
     <navigationdrawer:DrawerSettings.DrawerHeaderView>
     <Grid BackgroundColor="#1aa1d6">
     <Grid.RowDefinitions>
@@ -211,11 +222,13 @@ The header view of the secondary drawer can be provided using the below codes.
         <Label Text="Syncfusion Enterprise solution" Grid.Row="0" HorizontalTextAlignment="Center" HorizontalOptions="Center" FontSize="20" TextColor="White"/>
     </Grid>
     </navigationdrawer:DrawerSettings.DrawerHeaderView>
+    </navigationdrawer:SfNavigationDrawer.SecondaryDrawerSettings>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+DrawerSettings secondaryDrawer = new DrawerSettings();
 Grid secondary = new Grid();
 secondary.BackgroundColor = Color.FromHex("#1aa1d6");
 Label header = new Label();
@@ -230,9 +243,9 @@ secondaryDrawer.DrawerHeaderView = secondary;
 
 {% endtabs %}      
 
-### Secondary drawer Content view
+### Secondary drawer content view
 
-The drawer content view of the secondary drawer can be provided using the below codes. 
+The drawer content can be provided to the default drawer using the `DrawerContentView` property inside the DrawerSettings class of SecondaryDrawerSettings. The following code demonstrates how to set the drawer content to the secondary drawer.
 
 {% tabs %}
 
@@ -251,6 +264,7 @@ The drawer content view of the secondary drawer can be provided using the below 
 
 {% highlight c# %}
 
+DrawerSettings secondaryDrawer = new DrawerSettings();
 Grid Layout = new Grid();
 Layout.BackgroundColor = Color.FromHex("#1aa1d6");
 Label content = new Label();
@@ -265,14 +279,15 @@ secondaryDrawer.DrawerContentView = Layout;
 
 {% endtabs %}   
 
-### Secondary drawer Footer view
+### Secondary drawer footer view
 
-The footer view of the secondary drawer can be provided using the below codes. 
+The footer content can be provided to the secondary drawer using the `DrawerFooterView` property inside the DrawerSettings class of SecondaryDrawerSettings. The following code demonstrates how to set footer content to the secondary drawer.
 
 {% tabs %}
 
 {% highlight xaml %}
     
+    <navigationdrawer:SfNavigationDrawer.SecondaryDrawerSettings>
     <navigationdrawer:DrawerSettings.DrawerFooterView>
     <Grid BackgroundColor="#1aa1d6">
     <Grid.RowDefinitions>
@@ -281,11 +296,13 @@ The footer view of the secondary drawer can be provided using the below codes.
         <Label Text="Close" Grid.Row="0" HorizontalTextAlignment="Center" HorizontalOptions="Center" FontSize="20" TextColor="White"/>
     </Grid>
     </navigationdrawer:DrawerSettings.DrawerFooterView>
+    </navigationdrawer:SfNavigationDrawer.SecondaryDrawerSettings>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+DrawerSettings secondaryDrawer = new DrawerSettings();
 Grid Layout = new Grid();
 Layout.BackgroundColor = Color.FromHex("#1aa1d6");
 Label footer = new Label();
@@ -299,4 +316,22 @@ secondaryDrawer.DrawerFooterView = Layout;
 {% endhighlight %}
 
 {% endtabs %}   
+
+## Toggling method
+
+Users can toggle the secondary drawer using the `ToggleSecondaryDrawer` method. 
+
+{% highlight c# %} 
+
+navigationDrawer.ToggleSecondaryDrawer();
+
+{% endhighlight %}
+
+### Opening the drawer programmatically
+
+The `IsOpen` property in the DrawerSettings of SecondaryDrawerSettings is used to open or close the drawer programmatically.
+
+N> Users can open only one drawer at a time.
+
+Note: The sample for implementing multiple drawers can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/NavigationDrawerSample_2-228312513).
 

@@ -2,7 +2,7 @@
 
 layout: post
 title: Annotations in Syncfusion SfCircularGauge control for Xamarin.Forms
-description: Learn how to set annotations in Syncfusion SfCircularGauge control
+description: This section explains the steps required to set annotations in Syncfusion Circular Gauge control for Xamarin.Forms
 platform: xamarin
 control: SfCircularGauge
 documentation: ug

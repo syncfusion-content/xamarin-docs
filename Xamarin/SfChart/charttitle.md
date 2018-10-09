@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chart Title
-description: How to add and customize the chart title in Essential Xamarin.Forms. 
+description: How to add chart title and customize the appearance of the chart title in the Essential Xamarin.Forms.
 platform: xamarin
 control: Chart
 documentation: ug
@@ -51,7 +51,7 @@ sfChart.Title.TextColor = Color.Blue;
 
 {% endtabs %}
 
-![](charttitle_images/charttitle_img1.png)
+![Title for Xamarin.Forms Chart](charttitle_images/charttitle_img1.png)
 
 ## Text Alignment
 
@@ -81,4 +81,4 @@ sfChart.Title.TextColor = Color.Blue;
 
 {% endtabs %}
 
-![](charttitle_images/charttitle_img2.png)
+![Text alignment support for title in Xamarin.Forms Chart](charttitle_images/charttitle_img2.png)

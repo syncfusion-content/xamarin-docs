@@ -152,6 +152,68 @@ private void DataGrid_GridLoaded(object sender, GridLoadedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
+## ValueChanged event
+
+The [SfDataGrid.ValueChanged](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ValueChanged_EV.html) event will be triggered whenever the current cell's value has been changed in the GridTextColumn, GridNumericColumn or GridSwitchColumn. This event handler contains the parameter of type [ValueChangedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.ValueChangedEventArgs.html) that contains the following properties.
+
+* [Column](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.ValueChangedEventArgs~Column.html)        : Gets the current `GridColumn` that contains the grid cell for which value is edited or changed.
+* [NewValue](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.ValueChangedEventArgs~NewValue.html)      : The newly edited value to be committed.
+* [RowColumnIndex](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.ValueChangedEventArgs~RowColumnIndex.html)   : The current `RowColumnIndex` of the grid cell undergoing the value change.
+* [RowData](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.ValueChangedEventArgs~RowData.html)       : The `RowData` of the row that contains the grid cell undergoing the value change.
+* [CellValue](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.ValueChangedEventArgs~CellValue.html)       : The initial value when current cell entered edit mode.
+
+{% tabs %}
+
+{% highlight c# %}
+
+        dataGrid.ValueChanged += DataGrid_ValueChanged;
+
+        private void DataGrid_ValueChanged(object sender, ValueChangedEventArgs e)
+        {
+            var column = e.Column;
+            var newValue = e.NewValue;
+            var rowColIndex = e.RowColIndex;
+            var rowData = e.RowData;
+        }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+
+## ItemsSource changed event
+
+The [SfDataGrid.ItemsSourceChanged](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ItemsSourceChanged_EV.html) event will be triggered whenever the [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ItemsSource.html) property is changed in the grid during both the runtime changes and initial loading of the DataGrid. This event handler contains the parameter of type [GridItemsSourceChangedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridItemsSourceChangedEventArgs.html) that contains the following properties:
+
+* [OldItemSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridItemsSourceChangedEventArgs~OldItemSource.html): Gets the previous ItemsSource collection as object. Always null when the grid is initially loaded.
+* [NewItemSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridItemsSourceChangedEventArgs~NewItemSource.html): Gets the current ItemsSource collection as object.
+* [OldView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridItemsSourceChangedEventArgs~OldView.html): Gets the old [SfDataGrid.View](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~View.html) associated with the `OldItemSource`. Always null when the grid is initially loaded.
+* [NewView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridItemsSourceChangedEventArgs~NewView.html): Gets the new [SfDataGrid.View](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~View.html) associated with the `NewItemSource`.
+
+The following code example shows how to hook the `SfDataGrid.ItemsSourceChanged` event and get the `ItemsSource` collection details.
+
+{% tabs %}
+{% highlight xaml %}
+<sfgrid:SfDataGrid x:Name="dataGrid"
+                   AutoGenerateColumns="True"                  
+                   ItemsSource="{Binding OrdersInfo}" 
+                   ItemsSourceChanged="DataGrid_ItemsSourceChanged"/>
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+ private void DataGrid_ItemsSourceChanged(object sender, GridItemsSourceChangedEventArgs e)
+ {
+    var newItemSource = e.NewItemSource;
+    var oldItemSource = e.OldItemSource;
+    var newView = e.NewView;
+    var oldView = e.OldView;
+ }
+{% endhighlight %}
+{% endtabs %}
+
 ## Create custom context menu using grid events
 
 The SfDataGrid allows you to display any custom view, like context menu. This menu acts similar to pop-up by using the `GridLongPressed` and `GridTapped` events.
@@ -272,3 +334,239 @@ public partial class MainPage : ContentPage
 Refer to the following GIF for final rendering on execution of above code example:
 
 ![](SfDataGrid_images/CustomContextMenu.gif)
+
+## Commands
+
+### GridTapped command
+
+The [SfDataGrid.GridTappedCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridTappedCommand.html) will be executed when tapping the SfDataGrid. You can directly assign any [ICommand](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommand?view=netframework-4.7.2) type property to the `SfDataGrid.GridTappedCommand` or write a class derived from `ICommand` interface, and assign your CustomClass type property to the `SfDataGrid.GridTappedCommand` property. By configuring this, the data grid comes handy if you have your own logics determining whether to execute the command or not.
+
+{% tabs %}
+{% highlight xaml %}
+
+ <ContentPage.BindingContext>
+        <local:ViewModel x:Name="viewModel" />
+</ContentPage.BindingContext>
+
+ <sfgrid:SfDataGrid x:Name="dataGrid"
+                   ItemsSource="{Binding OrdersInfo}"
+                   GridTappedCommand="{Binding TappedCommandAction}"/>
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+
+  // viewModel.cs
+ public ViewModel()
+        {
+            // assigning command action to ICommand type property
+            TappedCommandAction = new Command(add);
+
+            // assigning command action to your custom command type property
+            TappedCommandAction1 = new DerivedTappedCommand();          
+        }
+
+  // ICommand type property for binding with DataGrid.TappedCommandAction
+ public ICommand TappedCommandAction
+        {
+            get;
+            set;
+        }
+
+  // Custom command type property for binding with DataGrid.TappedCommandAction
+ public DerivedTappedCommand TappedCommandAction1
+        {
+            get;
+            set;
+        }
+
+ public void add()
+        {
+          //your logics here
+        }
+
+  // below codes for writing custom command derived from ICommand.
+ public class DerivedTappedCommand : ICommand
+    {
+        public event EventHandler CanExecuteChanged;
+     
+        public DerivedTappedCommand( )
+        {         
+        }
+
+        public bool CanExecute(object parameter)
+        {
+            return true;
+        }
+
+        public void Execute(object parameter)
+        {
+            // your logics here.
+        }
+    }
+
+{% endhighlight %}
+{% endtabs %}
+
+You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/TappedCommand1824531900).
+
+### GridDoubleTapped command
+
+The [SfDataGrid.GridDoubleTappedCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridDoubleTappedCommand.html) will be executed when double tapping the SfDataGrid. You can directly assign any [ICommand](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommand?view=netframework-4.7.2) type property to the `SfDataGrid.GridTappedCommand` or write a class derived from `ICommand` interface, and assign your CustomClass type property to the `SfDataGrid.GridTappedCommand` property. By configuring this, the data gird comes handy if you have your own logics determining whether to execute the command or not.
+
+{% tabs %}
+{% highlight xaml %}
+
+<ContentPage.BindingContext>
+        <local:ViewModel x:Name="viewModel" />
+</ContentPage.BindingContext>
+
+<sfgrid:SfDataGrid x:Name="dataGrid"
+                   ItemsSource="{Binding OrdersInfo}"
+                    GridDoubleTappedCommand="{Binding DoubleTappedCommandAction}" />
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+
+  // viewModel.cs
+ public ViewModel()
+        {
+            // assigning command action to ICommand type property
+            DoubleTappedCommandAction = new  Command(add);
+
+            // assigning command action to your custom command type property
+            DoubleTappedCommandAction1 = new DerivedDoubleTappedCommand();
+        }
+
+  // ICommand type property for binding with DataGrid.DoubleTappedCommand
+ public ICommand DoubleTappedCommandAction
+        {
+            get;
+            set;
+        }
+
+  // Custom command type property for binding with DataGrid.DoubleTappedCommand
+ public DerivedDoubleTappedCommand DoubleTappedCommandAction1
+        {
+            get;
+            set;
+        }
+
+ public void add()
+        {
+          //your logics here
+        }
+
+  // below codes for writing custom command derived from ICommand.
+ public class DerivedDoubleTappedCommand : ICommand
+    {
+        public event EventHandler CanExecuteChanged;
+     
+        public DerivedDoubleTappedCommand( )
+        {         
+        }
+
+        public bool CanExecute(object parameter)
+        {
+            return true;
+        }
+
+        public void Execute(object parameter)
+        {
+            // your logics here.
+        }
+    }
+
+{% endhighlight %}
+{% endtabs %}
+
+You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DoubleTappedSample2052249746).
+
+### GridLongPressed command
+
+The [SfDataGrid.GridLongPressedCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridLongPressedCommand.html) will be executed when long pressing the SfDataGrid. You can directly assign any [ICommand](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommand?view=netframework-4.7.2) type property to the `SfDataGrid.GridTappedCommand` or write a class derived from `ICommand` interface, and assign your CustomClass type property to the `SfDataGrid.GridTappedCommand` property. By configuring this, the data gird comes handy if you have your own logics determining whether to execute the command or not.
+
+{% tabs %}
+{% highlight xaml %}
+
+<ContentPage.BindingContext>
+        <local:ViewModel x:Name="viewModel" />
+</ContentPage.BindingContext>
+
+<sfgrid:SfDataGrid x:Name="dataGrid"
+                   ItemsSource="{Binding OrdersInfo}"
+                   GridLongPressedCommand="{Binding LongPressedCommandAction}">
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+
+  // viewModel.cs
+ public ViewModel()
+        {
+            // assigning command action to ICommand type property
+            LongPressedCommandAction  = new Command(add);
+
+            // assigning command action to your custom command type property
+            LongPressedCommandAction1 = new DerivedLongPressedCommand();
+        }
+
+  // ICommand type property for binding with DataGrid.GridLongPressedCommand
+ public ICommand LongPressedCommandAction
+        {
+            get;
+            set;
+        }
+  // Custom command type property for binding with DataGrid.GridLongPressedCommand
+ public DerivedLongPressedCommand LongPressedCommandAction1
+        {
+            get;
+            set;
+        }
+
+ public void add()
+        {
+           // your logics here
+        }
+
+  // below codes for writing custom command derived from ICommand.
+ public class DerivedLongPressedCommand : ICommand
+    {
+        public event EventHandler CanExecuteChanged;
+     
+        public DerivedLongPressedCommand( )
+        {         
+        }
+
+        public bool CanExecute(object parameter)
+        {
+            return true;
+        }
+
+        public void Execute(object parameter)
+        {
+            // your logics here.
+        }
+    }
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight xaml %}
+
+<sfgrid:SfDataGrid x:Name="dataGrid"
+                   ItemsSource="{Binding OrdersInfo}"
+                   GridLongPressedCommand="{Binding LongPressedCommandAction}">
+
+{% endhighlight %}
+{% endtabs %}
+
+You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LongPressedCommand1698940749).

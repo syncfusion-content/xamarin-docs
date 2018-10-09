@@ -765,7 +765,7 @@ N> For Vertical orientation, the group header size is considered as height and f
 
 ### CheckBox in group header
 
-The SfListView supports selecting each group and items in the group like a checkBox selection by customizing the [SfListView.GroupHeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~GroupHeaderTemplate.html) and the [ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms%7ESyncfusion.ListView.XForms.SfListView%7EItemTemplate.html) respectively. The checkbox state will be update by using converter.
+ListView supports selecting each group and items in the group like a checkBox selection by customizing the [SfListView.GroupHeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~GroupHeaderTemplate.html) and the [ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms%7ESyncfusion.ListView.XForms.SfListView%7EItemTemplate.html) respectively. The checkbox state will be update by using converter.
 
 {% tabs %}
 {% highlight xaml %}
@@ -963,8 +963,7 @@ listView.DataSource.GroupDescriptors.Add(new GroupDescriptor()
 listView.GroupHeaderTemplate = new DataTemplate(() =>
  {
    var grid = new Grid();
-
-   var stack=new StackLayout();
+   var stack = new StackLayout();
    Binding binding = new Binding("IsExpand");
    binding.Converter = new BoolToColorConverter();
    stack.SetBinding(StackLayout.BackgroundColorProperty, binding);
@@ -995,6 +994,26 @@ listView.GroupHeaderTemplate = new DataTemplate(() =>
 The following screenshot shows the output when group header appearance changed by expanding. You can download entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Groupheader_appearance826922341)
 
 ![](SfListView_images/SfListView-GroupHeaderAppearence.png)
+
+### Providing Indentation for GroupHeader items
+
+ListView allows you to provide space between the group header items by using the [Margin](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.view.margin?view=xamarin-forms#Xamarin_Forms_View_Margin) property of parent view in the [GroupHeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~GroupHeaderTemplate.html) property. For example, in the following code snippet, StackLayout is considered as parent view and spacing is provided by setting its margin.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfListView x:Name="listView" ItemSize="90" AllowGroupExpandCollapse="True" 
+                     ItemSpacing="2" ItemsSource="{Binding Items}">
+<syncfusion:SfListView.GroupHeaderTemplate> 
+  <DataTemplate> 
+    <StackLayout BackgroundColor="#E4E4E4" Margin="2,0,0,0"> 
+      <Label Text="{Binding Key}" FontSize="22" /> 
+    </StackLayout> 
+  </DataTemplate> 
+</syncfusion:SfListView.GroupHeaderTemplate> 
+</syncfusion:SfListView> 
+{% endhighlight %}
+{% endtabs %}
+
 
 ## How To 
 

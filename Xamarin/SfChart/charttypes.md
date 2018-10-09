@@ -1800,7 +1800,7 @@ radar.IsClosed = false;
 ### Radar start angle for primary axis
 
 The start position of the radar series can be set by using [`PolarAngle`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~PolarAngle.html) property of axis. Default value of [`PolarAngle`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~PolarAngle.html) property is [`Rotate270`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartPolarAngle.html). [`PolarAngle`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~PolarAngle.html) property can be set for primary axis, secondary axis, or both axes
- 
+
 {% tabs %}
 
 {% highlight xaml %}
@@ -1828,9 +1828,12 @@ chart.SecondaryAxis =  new NumericalAxis();
 {% endhighlight %}
 
 {% endtabs %}
- ![Radar start angle support for primary axis in Xamarin.Forms Chart](charttypes_images/radarangle_img1.png)
- ### Radar start angle for secondary axis
- {% tabs %}
+
+![Radar start angle support for primary axis in Xamarin.Forms Chart](charttypes_images/radarangle_img1.png)
+
+### Radar start angle for secondary axis
+
+{% tabs %}
 
 {% highlight xaml %}
 

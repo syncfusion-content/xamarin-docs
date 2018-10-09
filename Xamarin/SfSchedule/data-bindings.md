@@ -417,7 +417,7 @@ recurrenceProperties.RecurrenceRange = RecurrenceRange.Count;
 recurrenceProperties.Interval = 1;
 recurrenceProperties.WeekDays = WeekDays.Monday|WeekDays.Wednesday|WeekDays.Friday;
 recurrenceProperties.RecurrenceCount = 10;
-recurrenceProperties.RecurrenceRule = DependencyService.Get<IRecurrenceBuilder>().RRuleGenerator(recurrenceProperties, meeting.From, Meeting.To);
+recurrenceProperties.RecurrenceRule = schedule.RRuleGenerator(recurrenceProperties, meeting.From, Meeting.To);
 
 // Setting recursive rule for an event
 meeting.RecurrenceRule = recurrenceProperties.RecurrenceRule;

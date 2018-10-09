@@ -601,7 +601,7 @@ chart.Series.Add(stackingArea100Series3);
 
 {% endtabs %}
 
-![StackingAreaHundred chart type in Xamarin.Forms Chart](charttypes_images/charttypes_img5.png)
+![StackingArea100 chart type in Xamarin.Forms Chart](charttypes_images/charttypes_img5.png)
 
 ## Column Chart
 
@@ -970,7 +970,7 @@ chart.Series.Add(stackingColumn100Series3);
 
 {% endtabs %}
 
-![StackingColumnHundred chart type in Xamarin.Forms Chart](charttypes_images/charttypes_img9.png)
+![StackingColumn100 chart type in Xamarin.Forms Chart](charttypes_images/charttypes_img9.png)
 
 ## Bar Chart
 
@@ -1154,7 +1154,7 @@ chart.Series.Add(stackingBar100Series3);
 
 {% endtabs %}
 
-![StackingBarHundred chart type in Xamarin.Forms Chart](charttypes_images/charttypes_img12.png)
+![StackingBar100 chart type in Xamarin.Forms Chart](charttypes_images/charttypes_img12.png)
 
 ## Spline Chart
 

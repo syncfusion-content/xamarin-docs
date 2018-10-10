@@ -32,7 +32,7 @@ listView.LayoutManager = new LinearLayout();
 {% endhighlight%}
 {% endtabs %}
 
-![](SfListView_images/SfListView-Xamarin_img1.png)
+![Listview layout image](SfListView_images/SfListView-Xamarin_img1.png)
 
 ## Grid Layout
 
@@ -61,7 +61,7 @@ listView.LayoutManager = new GridLayout() { SpanCount = 2 };
 
 You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewGridLayout-1868052434).
 
-![](SfListView_images/SfListView-GridLayout.png)
+![Grid layout image](SfListView_images/SfListView-GridLayout.png)
 
 ## Customize span count based on platform
 
@@ -102,7 +102,7 @@ listView.LayoutManager = gridLayout;
 {% endhighlight%}
 {% endtabs %}
 
-![](SfListView_images/SfListView-GridLayoutTablet.png)
+![Span count image](SfListView_images/SfListView-GridLayoutTablet.png)
 
 ## Change span count based on screen size
 

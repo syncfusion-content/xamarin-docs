@@ -68,11 +68,11 @@ N> Similarly, the UI for swiping towards left can be customized by using the [Sf
 
 N> Swipe Template is mandatory to perform swiping in the SfListView.
 
-![](SfListView_images/SfListView-Swiping--1.png)
+![Swipe image](SfListView_images/SfListView-Swiping--1.png)
 
 Download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Swipe_customizations-1458865420). 
 
-![](SfListView_images/SfListView-Swiping--2.png)
+![Custom swipe image](SfListView_images/SfListView-Swiping--2.png)
 
 ### Data Template Selector
 
@@ -160,7 +160,7 @@ listView.LeftSwipeTemplate = new DataTemplate(() =>
 {%endhighlight %}
 {% endtabs %}
 
-![](SfListView_images/SfListView-Swiping--3.png)
+![Left swipe image](SfListView_images/SfListView-Swiping--3.png)
 
 To delete the item when `Delete` image is tapped and setting favorites to item when `Favorites` image is tapped, follow the code example.
 
@@ -486,7 +486,7 @@ private void ListView_PropertyChanged(object sender, PropertyChangedEventArgs e)
 
 You can download the entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Swipe_item_Indefinetly-1576284120).
 
-![](SfListView_images/SfListView-Swiping--4.png)
+![Swipe indefinetely image](SfListView_images/SfListView-Swiping--4.png)
 
 ### Edit item data by swipe
 

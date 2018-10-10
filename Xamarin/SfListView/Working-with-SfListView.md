@@ -444,7 +444,7 @@ public partial class ContextMenu : ContentPage
     
 You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewContextMenu-991690726).
 
-![](SfListView_images/ContextMenu.jpg)
+![Context menu image](SfListView_images/ContextMenu.jpg)
 
 ## Paging
 
@@ -575,7 +575,7 @@ public class SfListViewPagingBehavior : Behavior<ContentPage>
 
 You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Paging737472841).
 
-![](SfListView_images/Paging.png)
+![Paging image](SfListView_images/Paging.png)
  
 ## Loading data from SQLite online database
 

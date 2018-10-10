@@ -48,7 +48,7 @@ listView.RefreshView();
 
 N> It is mandatory to specify the `PropertyName` of `SortDescriptor`.
 
-![](SfListView_images/SfListView-Sorting.png)
+![Simple sorting image](SfListView_images/SfListView-Sorting.png)
 
 ## Custom sorting
 
@@ -251,7 +251,7 @@ this.listView.DataSource.SortDescriptors.Add(new SortDescriptor()
 
 The following screenshot shows the output when items are sorted by year. You can download the entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SortByYear-641250936)
 
-![](SfListView_images/SfListView-Sorting1.png)
+![Sorting image](SfListView_images/SfListView-Sorting1.png)
 
 ## Sorting with grouping by month and year
 
@@ -305,5 +305,5 @@ public partial class MainPage : ContentPage
 
 The following screenshot shows the output when items are sorted by month and year.
 
-![](SfListView_images/SfListView-Sorting2.png)
+![Sorting2 image](SfListView_images/SfListView-Sorting2.png)
 

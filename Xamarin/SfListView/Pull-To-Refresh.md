@@ -90,7 +90,7 @@ private async void PullToRefresh_Refreshing(object sender, EventArgs args)
 
 Run the application to render the following output. You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListInsideSfpulltorefresh282382156).
 
-![](SfListView_images/SfListView-PullToRefresh.png)
+![Pulltorefresh image](SfListView_images/SfListView-PullToRefresh.png)
 
 ## SfListView inside the SfPullToRefresh with ScrollView 
 

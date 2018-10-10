@@ -34,7 +34,7 @@ listView.SelectionGesture = TouchGesture.Hold;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfListView_images/SfListView-Selection-1.png)
+![Selection UI image](SfListView_images/SfListView-Selection-1.png)
 
 ## Programmatic selection
 
@@ -141,7 +141,7 @@ The SfListView supports customizing the selection background color for the selec
 
 You can download the entire sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SelectedItemCustomization-473967184).
 
-![](SfListView_images/SfListView-Selection-3.png)
+![Custom itemselection image](SfListView_images/SfListView-Selection-3.png)
 
 ### Show checked circle on selected items 
 
@@ -223,7 +223,7 @@ listView.SelectedItemTemplate = new DataTemplate(() =>
 
 You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Checked_Circle_OnSelected_Items-1476673984).
 
-![](SfListView_images/SfListView-Selection-2.png)
+![Checked circle selection image](SfListView_images/SfListView-Selection-2.png)
 
 ## Selected item style
 
@@ -241,7 +241,7 @@ listView.SelectionBackgroundColor = Color.Khaki;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfListView_images/SfListView-SelectionBackground.png)
+![Background selection image](SfListView_images/SfListView-SelectionBackground.png)
 
 ### Programmatic animation
 
@@ -269,7 +269,7 @@ public class SelectionControllerExt : SelectionController
 
 You can download the sample for above source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Programatic_Animation-311129164).
 
-![](SfListView_images/SfListView-SelectionAnimation.gif)
+![Selection animation gif](SfListView_images/SfListView-SelectionAnimation.gif)
 
 ## Events
 

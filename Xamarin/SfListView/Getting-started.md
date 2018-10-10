@@ -25,7 +25,7 @@ N> Assemblies can be found in an unzipped package location in Mac.
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfListView to your project, open the NuGet package manager in Visual Studio, and search for [syncfusion.xamarin.SfListView](https://www.nuget.org/packages/Syncfusion.Xamarin.SfListView/), and then install it. 
 
-![](SfListView_images/SfListView_AddListView.png)
+![ListView image](SfListView_images/SfListView_AddListView.png)
 
 To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sflistview) to know about the dependent assemblies for SfListView. 
 
@@ -195,7 +195,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 This section explains how to create a SfListView, and configure it. The SfListView control can be configured entirely in C# code, or by using XAML markup. This is how the control will look like on iOS, Android, and Windows devices.
  
-![](SfListView_images/SfListView-Xamarin_img1.png)
+![Simple listview image](SfListView_images/SfListView-Xamarin_img1.png)
 
 In this walk through, you will create a new application with the SfListView that includes the following topics:
 
@@ -427,7 +427,7 @@ Now, run the application to render the below output:
 
 You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted1623727693).
 
-![](SfListView_images/SfListView-Xamarin_img2.png)
+![Listview getting started image](SfListView_images/SfListView-Xamarin_img2.png)
 
 ## Layouts
 

@@ -88,7 +88,7 @@ listView.IsStickyFooter = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfListView_images/SfListView-HeaderAndFooter.png)
+![Stick header footer iamge](SfListView_images/SfListView-HeaderAndFooter.png)
 
 ## How to
 
@@ -311,7 +311,7 @@ public partial class MainPage : ContentPage
 
 You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Header_FooterTabView707147165).
 
-![](SfListView_images/Informations.jpg)
+![Header footer image](SfListView_images/Informations.jpg)
 
 ### Header and footer in vertical mode when listview in horizontal mode
 
@@ -410,4 +410,4 @@ public class SfListViewExt : SfListView
 
 You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Header_Footer_Vertical941521363).
 
-![](SfListView_images/Vertical_Header_Horizontal_ListView.jpg)
+![Vertical header horizontal listview image](SfListView_images/Vertical_Header_Horizontal_ListView.jpg)

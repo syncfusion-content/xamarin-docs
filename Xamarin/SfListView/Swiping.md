@@ -70,7 +70,7 @@ N> Swipe Template is mandatory to perform swiping in the SfListView.
 
 ![](SfListView_images/SfListView-Swiping--1.png)
 
-Download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Swipe_customizations-1458865420). 
+Download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Swipe_customizations-1458865420). 
 
 ![](SfListView_images/SfListView-Swiping--2.png)
 
@@ -484,7 +484,7 @@ private void ListView_PropertyChanged(object sender, PropertyChangedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Swipe_item_Indefinetly-1576284120).
+You can download the entire source code [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Swipe_item_Indefinetly-1576284120).
 
 ![](SfListView_images/SfListView-Swiping--4.png)
 
@@ -558,4 +558,4 @@ private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-You can download entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/EditSwipe-1636292374).
+You can download entire source code [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/EditSwipe-1636292374).

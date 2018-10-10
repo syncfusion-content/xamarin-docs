@@ -136,7 +136,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/EndReachedOnScrolling-1173643672).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/EndReachedOnScrolling-1173643672).
 
 ## Maintain the scroll position while updating ItemsSource at runtime
 

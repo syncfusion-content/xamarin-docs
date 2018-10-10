@@ -69,7 +69,7 @@ private ObservableCollection<object> State { get; set; }
 
 public ObservableCollection<string> Header { get; set; }
 
-private object _selectedarea;
+private object _selectedArea;
 
 public event PropertyChangedEventHandler PropertyChanged;
 
@@ -81,9 +81,9 @@ public object SelectedArea
 
 {
 
-get { return _selectedarea; }
+get { return _selectedArea; }
 
-set { _selectedarea = value; RaisePropertyChanged("SelectedArea"); }
+set { _selectedArea = value; RaisePropertyChanged("SelectedArea"); }
 
 }
 

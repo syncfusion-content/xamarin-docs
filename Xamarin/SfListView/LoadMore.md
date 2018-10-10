@@ -160,7 +160,7 @@ private async void LoadMoreItems(object obj)
 {% endhighlight %}
 {% endtabs %}
 
-Download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Loading_Indicator-1292005291).
+Download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Loading_Indicator-1292005291).
 
 Items can be loaded either on the top or bottom of the view.
 
@@ -403,7 +403,7 @@ private bool CanLoadMoreItems(object obj)
 
 * The SfListView does not support the [SfListView.LoadMoreOption](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreOption.html) in `Manual` mode when the [SfListView.Orientation](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.Orientation.html) is `Horizontal`.
 * It does not support for `LoadMoreOption` in `Auto` when the [SfListView.LoadMorePosition](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LoadMorePosition.html) is `Top`.
-* It is mandatory to call `CanExecute` method when finite items loaded in view, which disables `LoadMore` view after all items are being loaded and it avoids repeated triggering of 'Execute' method. And it is not mandatory to call 'CanExecute' method when loading infinite items. 
+* Call the `CanExecute` method when finite items are loaded in view. It disables `LoadMore` view after all the items are being loaded and avoids repeated triggering of `Execute` method. It is not mandatory to call the `CanExecute` method when loading infinite items. 
 
 ## How to
 
@@ -452,7 +452,7 @@ public class LoadMoreViewModel:INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LoadMoreInfinitescroll-1060583579).
+You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LoadMoreInfinitescroll-1060583579).
 
 ### Load more items automatically from up direction
 
@@ -576,7 +576,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LoadMore_Up_Automatic-1467526465).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LoadMore_Up_Automatic-1467526465).
 
 ![Load more upwards automatic image](SfListView_images/SfListView-LoadMoreAutomaticallyUpDirection.png)
 
@@ -702,6 +702,6 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LoadMore_Up_Manual-1153429299).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LoadMore_Up_Manual-1153429299).
 
 ![Loadmore manually up](SfListView_images/SfListView-LoadMoreManuallyUpDirection.png)

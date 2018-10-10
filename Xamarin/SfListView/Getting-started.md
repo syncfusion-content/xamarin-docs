@@ -425,7 +425,7 @@ namespace GettingStarted
 
 Now, run the application to render the below output:
 
-You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted1623727693).
+You can also download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted1623727693).
 
 ![Listview getting started image](SfListView_images/SfListView-Xamarin_img2.png)
 

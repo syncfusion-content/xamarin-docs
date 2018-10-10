@@ -59,7 +59,7 @@ listView.LayoutManager = new GridLayout() { SpanCount = 2 };
 {% endhighlight%}
 {% endtabs %}
 
-You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewGridLayout-1868052434).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewGridLayout-1868052434).
 
 ![Grid layout image](SfListView_images/SfListView-GridLayout.png)
 
@@ -127,4 +127,4 @@ public partial class GridLayoutPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire sample code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SpanCount-1456879973).
+You can download the entire sample code [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SpanCount-1456879973).

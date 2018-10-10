@@ -145,7 +145,7 @@ listView.DataSource.GroupDescriptors.Add(new GroupDescriptor()
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot shows grouping by ignoring case sensitivity. You can download the entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Case_sensitivity-488204229).
+The following screenshot shows grouping by ignoring case sensitivity. You can download the entire source code [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Case_sensitivity-488204229).
 
 ![Case sensitivity grouping image](SfListView_images/SfListView-CaseSensitivity.png)
 
@@ -219,7 +219,7 @@ listView.GroupHeaderTemplate = new DataTemplate(() =>
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot shows grouping by sum of property value. You can download the entire sample code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Aggregate_summary1401444692).
+The following screenshot shows grouping by sum of property value. You can download the entire sample code [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Aggregate_summary1401444692).
 
 ![Aggregate group image](SfListView_images/SfListView-Aggregate.png)
 
@@ -293,7 +293,7 @@ listView.GroupHeaderTemplate = new DataTemplate(() =>
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot shows the output when displaying items count at group header. You can download entire sample code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Items_Count1480310248).
+The following screenshot shows the output when displaying items count at group header. You can download entire sample code [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Items_Count1480310248).
 
 ![Items count image](SfListView_images/SfListView-ItemsCount.png)
 
@@ -392,7 +392,7 @@ public class GroupHeaderConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot shows the output for multi-level grouping. You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Multilevel_Grouping-1811076962).
+The following screenshot shows the output for multi-level grouping. You can also download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Multilevel_Grouping-1811076962).
 
 ![Multilevel group image](SfListView_images/SfListView-Multilevel.png)
 
@@ -483,7 +483,7 @@ private void ListView_GroupExpanding(object sender, GroupExpandCollapseChangingE
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot shows the output when one group in expanded state. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/One_group_expanded-853927909).
+The following screenshot shows the output when one group in expanded state. You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/One_group_expanded-853927909).
 
 ![One group expanded image](SfListView_images/SfListView-OneGroupExpanded.png)
 
@@ -744,7 +744,7 @@ public class BoolToImageConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot shows the output when grouping with expand collapse icon in group header. You can download entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Expand_Collapse_Icon919985180).
+The following screenshot shows the output when grouping with expand collapse icon in group header. You can download entire source code [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Expand_Collapse_Icon919985180).
 
 ![Group collapsed image](SfListView_images/SfListView-CollapsedView.png)
 
@@ -916,7 +916,7 @@ private void RefreshGroupHeader(GroupResult group)
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot shows the output when checking items in group header. You download entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomSelectionCheckBox650348378).
+The following screenshot shows the output when checking items in group header. You download entire source code [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomSelectionCheckBox650348378).
 
 ![Check box group header image](SfListView_images/SfListView-CheckBoxInGroupHeader.png)
 
@@ -991,7 +991,7 @@ listView.GroupHeaderTemplate = new DataTemplate(() =>
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot shows the output when group header appearance changed by expanding. You can download entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GroupheaderAppearance737534484)
+The following screenshot shows the output when group header appearance changed by expanding. You can download entire source code [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GroupheaderAppearance737534484)
 
 ![Group header appearance image](SfListView_images/SfListView-GroupHeaderAppearence.png)
 
@@ -1103,7 +1103,7 @@ if (selectedItems.Count > 0)
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot shows the output when only one item in a group gets selected . You can download entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/OneItemInGroup1488863865).
+The following screenshot shows the output when only one item in a group gets selected. You can download entire source code [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/OneItemInGroup1488863865).
 
 ![Single selection image](SfListView_images/SfListView-SelectOneinGroup.png)
 

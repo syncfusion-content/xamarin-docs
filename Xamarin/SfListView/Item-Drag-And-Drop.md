@@ -125,7 +125,7 @@ listView.ItemTemplate = new DataTemplate(() =>
 {% endhighlight %}
 {% endtabs %}
 
-The screenshot shows the output of the reordering items by drag and drop. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DragIndicatorView525431618).
+The screenshot shows the output of the reordering items by drag and drop. You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DragIndicatorView525431618).
 
 ![Item reordering gif](SfListView_images/SfListView-ItemReordering.gif)
 
@@ -372,7 +372,7 @@ private async void ListView_ItemDragging(object sender, ItemDraggingEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-You can download the sample for above source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ItemDragAndDelete102430510).
+You can download the sample for above source code [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ItemDragAndDelete102430510).
 
 ![Item reordering1 gif](SfListView_images/SfListView-ItemReordering1.gif)
 

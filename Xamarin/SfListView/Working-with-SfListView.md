@@ -225,7 +225,7 @@ When the SfListView is loaded inside the ScrollView with sticky header and stick
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewInsideScrollview-235910398).
+You can download the entire source code [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewInsideScrollview-235910398).
 
 ## Loading ListView inside CarouselPage/Master detail page
 
@@ -442,7 +442,7 @@ public partial class ContextMenu : ContentPage
 {% endhighlight %}
 {% endtabs %}
     
-You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewContextMenu-991690726).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewContextMenu-991690726).
 
 ![Context menu image](SfListView_images/ContextMenu.jpg)
 
@@ -573,7 +573,7 @@ public class SfListViewPagingBehavior : Behavior<ContentPage>
 
 {% endhighlight %}
 
-You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Paging737472841).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Paging737472841).
 
 ![Paging image](SfListView_images/Paging.png)
  
@@ -747,7 +747,7 @@ public partial class ToDoListPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AzureSampleApp-1350807709-2017106000).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AzureSampleApp-1350807709-2017106000).
 
 ## Loading data from SQLite offline database
 
@@ -879,7 +879,7 @@ Refer to the following code which illustrates, how to bind the data from the SQL
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SQL_offline2081750820).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SQL_offline2081750820).
 
 ## ListView with Prism Framework
 

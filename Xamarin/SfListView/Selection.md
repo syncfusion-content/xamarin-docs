@@ -139,7 +139,7 @@ The SfListView supports customizing the selection background color for the selec
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SelectedItemCustomization-473967184).
+You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SelectedItemCustomization-473967184).
 
 ![Custom itemselection image](SfListView_images/SfListView-Selection-3.png)
 
@@ -221,7 +221,7 @@ listView.SelectedItemTemplate = new DataTemplate(() =>
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Checked_Circle_OnSelected_Items-1476673984).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Checked_Circle_OnSelected_Items-1476673984).
 
 ![Checked circle selection image](SfListView_images/SfListView-Selection-2.png)
 
@@ -267,7 +267,7 @@ public class SelectionControllerExt : SelectionController
 {% endhighlight %}
 {% endtabs %}
 
-You can download the sample for above source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Programatic_Animation-311129164).
+You can download the sample for above source code [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Programatic_Animation-311129164).
 
 ![Selection animation gif](SfListView_images/SfListView-SelectionAnimation.gif)
 
@@ -382,7 +382,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/disable_selection_onparticualr_item-576187978).
+You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/disable_selection_onparticualr_item-576187978).
 
 ### Automatically scroll to bring a selected item into the view
 

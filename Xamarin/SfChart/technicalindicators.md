@@ -60,7 +60,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 **Binding data**
 
-Set the [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FinancialTechnicalIndicator~ItemsSource.html) and binding paths ([`Open`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FinancialTechnicalIndicator~Open.html), [`High`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FinancialTechnicalIndicator~High.html), [`Low`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FinancialTechnicalIndicator~Low.html), [`Close`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FinancialTechnicalIndicator~Close.html) and [`XBindingPath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FinancialTechnicalIndicator~XBindingPath.html)) to fetch the values from model.
+Set the [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FinancialTechnicalIndicator~ItemsSource.html) and binding paths ([`Open`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FinancialTechnicalIndicator~Open.html), [`High`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FinancialTechnicalIndicator~High.html), [`Low`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FinancialTechnicalIndicator~Low.html), [`Close`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FinancialTechnicalIndicator~Close.html), [`XBindingPath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FinancialTechnicalIndicator~XBindingPath.html) and [`Trigger`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.MACDIndicator~Trigger.html)) to fetch the values from model.
 
 {% tabs %} 
 
@@ -99,7 +99,7 @@ SfChart chart = new SfChart()
 {% endhighlight %}
 
 {% endtabs %}
-
+ 
 **Binding the items source of chart series**
 
 By setting [`Name`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FinancialSeriesBase~Name.html) property of [`FinancialSeriesBase`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FinancialSeriesBase.html) to the [`SeriesName`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FinancialTechnicalIndicator~SeriesName.html) property of `FinancialTechnicalIndicator` you can bind the items source of chart series to technical indicators, including x and y axis.
@@ -326,7 +326,7 @@ SfChart chart = new SfChart()
 
 The following screenshot illustrates an ATR indicator.
 
-![](technicalindicators_images/averagetruerange.png)
+![Average true range indicator type in Xamarin.Forms Chart](technicalindicators_images/averagetruerange.png)
 
 ## Simple moving average indicator
 
@@ -375,7 +375,7 @@ SfChart chart = new SfChart()
 
 The following screenshot illustrates an SMA indicator.
 
-![](technicalindicators_images/simplemovingaverage.png)
+![Simple moving average indicator type in Xamarin.Forms Chart](technicalindicators_images/simplemovingaverage.png)
 
 ## Relative strength index indicator
 
@@ -428,7 +428,7 @@ SfChart chart = new SfChart()
 
 The following screenshot illustrates an RSI technical indicator.
 
-![](technicalindicators_images/relativestrengthindex.png)
+![Relative strength index indicator type in Xamarin.Forms Chart](technicalindicators_images/relativestrengthindex.png)
 
 ## Accumulation distribution indicator
 
@@ -477,7 +477,7 @@ SfChart chart = new SfChart()
 
 The following screenshot illustrates an accumulation distribution indicator.
 
-![](technicalindicators_images/accumulationdistribution.png)
+![Accumulation distribution indicator type in Xamarin.Forms Chart](technicalindicators_images/accumulationdistribution.png)
 
 
 ## Momentum indicator
@@ -528,7 +528,7 @@ SfChart chart = new SfChart()
 
 {% endtabs %}
 
-![](technicalindicators_images/momentum.png)
+![Momentum indicator type in Xamarin.Forms Chart](technicalindicators_images/momentum.png)
 
 ## Stochastic indicator
 
@@ -579,7 +579,7 @@ SfChart chart = new SfChart()
 
 {% endtabs %}
 
-![](technicalindicators_images/stochastic.png)
+![Stochastic indicator type in Xamarin.Forms Chart](technicalindicators_images/stochastic.png)
 
 ## Exponential moving average indicator
 
@@ -624,7 +624,7 @@ SfChart chart = new SfChart()
 
 {% endtabs %}
 
-![](technicalindicators_images/exponentialmovingavg.png)
+![Exponential moving average indicator type in Xamarin.Forms Chart](technicalindicators_images/exponentialmovingavg.png)
 
 ## Triangular moving average indicator
 
@@ -671,7 +671,7 @@ SfChart chart = new SfChart()
 
 {% endtabs %}
 
-![](technicalindicators_images/triangularmovingavg.png)
+![Triangular moving average indicator type in Xamarin.Forms Chart](technicalindicators_images/triangularmovingavg.png)
 
 ## Bollinger band indicator
 
@@ -722,7 +722,7 @@ SfChart chart = new SfChart()
 
 {% endtabs %}
 
-![](technicalindicators_images/bollingerband.png)
+![Bollinger band indicator type in Xamarin.Forms Chart](technicalindicators_images/bollingerband.png)
 
 ## MACD indicator
 
@@ -776,4 +776,4 @@ SfChart chart = new SfChart()
 
 {% endtabs %}
 
-![](technicalindicators_images/macd.png)
+![MACD indicator type in Xamarin.Forms Chart](technicalindicators_images/macd.png)

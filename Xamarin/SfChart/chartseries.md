@@ -84,7 +84,7 @@ chart.Series.Add(columnSeries2);
 
 {% endtabs %}
 
-![](chartseries_images/chartseries_img1.png)
+![Multiple series support in Xamarin.Forms Chart](chartseries_images/chartseries_img1.png)
 
 Following code snippet and screenshot shows how to apply the Y axis to individual series to plot different values.
 
@@ -156,7 +156,7 @@ chart.Series.Add(lineSeries);
 
 {% endtabs %}
 
-![](chartseries_images/MultipleAxes.png)
+![Multiple axis support in Xamarin.Forms Chart](chartseries_images/MultipleAxes.png)
 
 
 ## Combination Series
@@ -208,7 +208,7 @@ chart.Series.Add(lineSeries);
 
 {% endtabs %}
 
-![](chartseries_images/chartseries_img2.png)
+![Combination of series support in Xamarin.Forms Chart](chartseries_images/chartseries_img2.png)
 
 **Limitation of Combination Chart**
 
@@ -263,7 +263,7 @@ chart.Series.Add(pieSeries);
 
 {% endtabs %}
 
-![](chartseries_images/chartseries_img3.png)
+![Limitation of Xamarin.Forms Chart series combination](chartseries_images/chartseries_img3.png)
 
 
 ## Grouping Stacked Series
@@ -343,7 +343,7 @@ chart.Series.Add(stackingColumnSeries4);
 
 {% endtabs %}
 
-![](chartseries_images/chartseries_img4.png)
+![Grouping support for stacked series in Xamarin.Forms Chart](chartseries_images/chartseries_img4.png)
 
 ## Animation
 
@@ -414,7 +414,7 @@ chart.Series.Add(lineSeries);
 
 {% endtabs %}
 
-![](chartseries_images/verticalchart.png)
+![Series transpose support in Xamarin.Forms Chart](chartseries_images/verticalchart.png)
 
 ## Methods
 

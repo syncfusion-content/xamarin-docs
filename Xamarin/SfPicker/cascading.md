@@ -344,7 +344,7 @@ picker.IsOpen = true;
 
 The following screenshot illustrates the output of above code snippets.
 
-![](images/cascading_img1.jpeg)
+![cascading](images/cascading_img1.jpeg)
 
 
 You can download the sample for reference from the following link.

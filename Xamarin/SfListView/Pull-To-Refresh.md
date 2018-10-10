@@ -88,7 +88,7 @@ private async void PullToRefresh_Refreshing(object sender, EventArgs args)
 {% endhighlight %}
 {% endtabs %}
 
-Run the application to render the following output. You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfpulltorefreshUG1083489374).
+Run the application to render the following output. You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListInsideSfpulltorefresh282382156).
 
 ![](SfListView_images/SfListView-PullToRefresh.png)
 
@@ -215,7 +215,7 @@ public ListViewPullToRefresh()
 {% endhighlight %}
 {% endtabs %}
 
-You can download entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewSample1719401826).
+You can download entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SearchbarAtTop355876287).
 
 ### Pull-to-refresh with Grouping
 

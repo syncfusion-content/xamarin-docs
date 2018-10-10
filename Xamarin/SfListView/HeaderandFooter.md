@@ -309,7 +309,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Header_Footer1375601372).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Header_FooterTabView707147165).
 
 ![](SfListView_images/Informations.jpg)
 
@@ -408,6 +408,6 @@ public class SfListViewExt : SfListView
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Header_Footer_Vertical-69423607).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Header_Footer_Vertical941521363).
 
 ![](SfListView_images/Vertical_Header_Horizontal_ListView.jpg)

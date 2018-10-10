@@ -15,11 +15,11 @@ Strip lines are used to shade the different ranges in plot area in different col
 
 ## How to add strip lines?
 
-Strip line is classified into **NumericalStripLine** and **DateTimeStripLine** based on the type of input you provide to draw the strip line. Since strip lines are drawn based on the axis, you have to add strip line instance using the [`StripLines`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CategoryAxis~StripLines.html) property of the respective axis. You can also add multiple strip lines to an axis.
+Strip line is classified into **NumericalStripLine** and **DateTimeStripLine** based on the type of input you provide to draw the strip line. Since strip lines are drawn based on the axis, you have to add strip line instance using the [`StripLines`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CategoryAxis~StripLines.html) property of the respective axis. You can also add multiple [`StripLines`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeCategoryAxis~StripLines.html) to an axis.
 
 Following properties are used to configure the strip line.
 
-* [`Start`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.NumericalStripLine~Start.html) – used to change the start position of the strip line.
+* [`Start`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.NumericalStripLine~Start.html) – used to change the [`Start`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeStripLine~Start.html) position of the strip line.
 * [`Width`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartStripLine~Width.html) – used to change how long strip line should expand.
 * [`WidthType`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeStripLine~WidthType.html) - used to change the date time unit of the value specified in the width property. The values can be [`Year`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeComponent.html), [`Month`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeComponent.html), [`Day`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeComponent.html), [`Hour`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeComponent.html), [`Minute`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeComponent.html), [`Second`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeComponent.html) and [`Millisecond`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DateTimeComponent.html).
 * [`Text`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartStripLine~Text.html) – used to change the text of the strip line.
@@ -81,7 +81,7 @@ numericalAxis.StripLines.Add(stripLine1);
 
 {% endtabs %}
 
-![](striplines_images/stripline_img1.png)
+![Numerical strip lines support in Xamarin.Forms Chart](striplines_images/stripline_img1.png)
 
 **DateTime StripLine**
 
@@ -158,7 +158,7 @@ dateTimeAxis.StripLines.Add(stripLine);
 
 {% endtabs %}
 
-![](striplines_images/stripline_img2.png)
+![DateTime strip lines support in Xamarin.Forms Chart](striplines_images/stripline_img2.png)
 
 ## Strip Line Recurrence
 
@@ -230,7 +230,7 @@ numericalAxis.StripLines.Add(stripLine);
 
 {% endtabs %}
 
-![](striplines_images/stripline_img3.png)
+![Strip lines recurrence support in Xamarin.Forms Chart](striplines_images/stripline_img3.png)
 
 ## Customize Text
 
@@ -312,7 +312,7 @@ numericalAxis.StripLines.Add(stripLine);
 
 {% endtabs %}
 
-![](striplines_images/stripline_img4.png)
+![Strip lines text customization support in Xamarin.Forms Chart](striplines_images/stripline_img4.png)
 
 ## Segmented StripLine
 
@@ -398,7 +398,7 @@ chart.SecondaryAxis = numericalAxis;
 
 {% endtabs %}
 
-![](striplines_images/stripline_img5.png)
+![Segmented strip lines support in Xamarin.Forms Chart](striplines_images/stripline_img5.png)
 
 Following code snippet shows how to set the segment start and end value if the associated axis type is date time. 
 
@@ -498,4 +498,4 @@ numericalAxis.StripLines.Add(stripLine);
 
 {% endtabs %}
 
-![](striplines_images/stripline_img6.png)
+![Segmented support for DateTime strip lines in Xamarin.Forms Chart](striplines_images/stripline_img6.png)

@@ -403,7 +403,7 @@ private bool CanLoadMoreItems(object obj)
 
 * The SfListView does not support the [SfListView.LoadMoreOption](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreOption.html) in `Manual` mode when the [SfListView.Orientation](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.Orientation.html) is `Horizontal`.
 * It does not support for `LoadMoreOption` in `Auto` when the [SfListView.LoadMorePosition](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LoadMorePosition.html) is `Top`.
-* It is mandatory to call `CanExecute` method when finite items loaded in view, only then `LoadMore` text view will disable after loading all items and it also avoids repeated calling of 'Execute' method. And it is not necessary to call 'CanExecute' method when loading infinite items. 
+* It is mandatory to call `CanExecute` method when finite items loaded in view, which disables `LoadMore` view after all items are being loaded and it avoids repeated triggering of 'Execute' method. And it is not mandatory to call 'CanExecute' method when loading infinite items. 
 
 ## How to
 

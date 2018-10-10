@@ -839,7 +839,7 @@ The `IsVisible` model property which is bound to the second template will be ena
 
 You can also download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AccordionSample-47114795).
 
-![Single group expanded image](SfListView_images/SfListView-AccordionImage.png)
+![Accord](SfListView_images/SfListView-AccordImage.png)
 
 ## show busy indicator on list view
 

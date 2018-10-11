@@ -18,7 +18,7 @@ The [`Tapped`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XFo
 
 ## DoubleTapped
 
-The [`DoubleTapped`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms~Syncfusion.SfPdfViewer.XForms.SfPdfViewer~DoubleTapped_EV.html) event will be triggered when the user double taps on the document display area of the PDF Viewer control. The event argument of this event contains the following infromation:
+The [`DoubleTapped`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms~Syncfusion.SfPdfViewer.XForms.SfPdfViewer~DoubleTapped_EV.html) event will be triggered when the user double taps on the document display area of the PDF Viewer control. The event argument of this event contains the following information:
 
 * [`PageNumber`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms~Syncfusion.SfPdfViewer.XForms.TouchInteractionEventArgs~PageNumber.html)          : The page number in which the double tap event occurred.
 * [`Position`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms~Syncfusion.SfPdfViewer.XForms.TouchInteractionEventArgs~Position.html) 			: The position of the double tap event location with respect to the start of the page.

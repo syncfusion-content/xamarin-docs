@@ -177,7 +177,7 @@ private void PDFExport_Clicked(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/PDF/ImageLoading.png)
+![](SfDataGrid_images/PDF/ExportingImagesToPDF_XamarinForms.png)
 
 ### Exclude Groups while Exporting
 
@@ -1131,7 +1131,7 @@ private void PdfExport_CellExporting(object sender, DataGridCellPdfExportingEven
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/PDF/ImageLoading.png)
+![](SfDataGrid_images/PDF/ExportingImagesToPDF_XamarinForms.png)
 
 ## Exporting the selected rows of SfDataGrid
 

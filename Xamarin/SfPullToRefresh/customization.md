@@ -317,7 +317,7 @@ using Syncfusion.SfDataGrid.XForms;
 </ol>
 This is how the final output will look like on iOS, Android and Windows Phone devices when hosting a SfDatagrid control as pullable content.
 
-![](hostingsfdatagrid_images/SfDataGrid_SlideOnTop-Xamarin.forms.gif)
+![](hostingsfdatagrid_images/SfDataGrid_SlideOnTop_XamarinForms.gif)
 
 
 {% highlight Xaml %}
@@ -485,7 +485,7 @@ public class OrderInfoRepository
 
 If we run the above sample with TransitionMode as Push, the output will look like on iOS, Android and Windows Phone devices as shown below.
 
-![](hostingsfdatagrid_images/SfDataGrid_Push_Xamarin.Forms.gif)
+![](hostingsfdatagrid_images/SfDataGrid_Push_XamarinForms.gif)
 
 
 ## Host SfListView as pullable content
@@ -514,7 +514,7 @@ using Syncfusion.ListView.XForms;
 
 This is how the final output will look like on iOS, Android and Windows Phone devices when hosting a SfListView control as pullable content.
 
-![](hostingsfdatagrid_images/SfListView_SlideOnTop-Xamarin.forms.gif)
+![](hostingsfdatagrid_images/SfListView_SlideOnTop_XamarinForms.gif)
 
 {% highlight Xaml%}
 
@@ -643,4 +643,4 @@ namespace PullToRefreshSample
 
 If we run the above sample with TransitionMode as Push, the output will look like on iOS, Android and Windows Phone devices as shown below.
 
-![](hostingsfdatagrid_images/SfListView_Push_Xamarin.Forms.gif)
+![](hostingsfdatagrid_images/SfListView_Push_XamarinForms.gif)

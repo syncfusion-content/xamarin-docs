@@ -15,7 +15,7 @@ This section walks you through the steps required to add [`SfDateTimeRangeNaviga
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add range navigator to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfChart](https://www.nuget.org/packages/Syncfusion.Xamarin.SfChart/), and then install it. 
 
-![Adding reference to range navigator](gettingstarted_images/addref.png)
+![Adding Xamarin.Forms DateTime range navigator reference](gettingstarted_images/addref.png)
 
 To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfdatetimerangenavigator) to know about the dependent assemblies for range navigator. 
 
@@ -115,7 +115,7 @@ rangeNavigator.Maximum = new DateTime(2016, 01, 01);
 
 {% endtabs %}
 
-![Range navigator in Xamarin.Forms](gettingstarted_images/gettingstarted_img1.jpeg)
+![Getting started for DateTime range navigator in Xamarin.Forms](gettingstarted_images/gettingstarted_img1.jpeg)
 
 N> If you don’t specify [`Minimum`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator~Minimum.html) and [`Maximum`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator~Maximum.html) properties, minimum and maximum dates will be chosen automatically based on the provided data using [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator~ItemsSource.html) property, which is explained in the next step in this section.
 
@@ -190,7 +190,7 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 
 {% endtabs %}
 
-![Range navigator content having chart](gettingstarted_images/gettingstarted_img2.jpeg)
+![Adding chart as a content of DateTime range navigator](gettingstarted_images/gettingstarted_img2.jpeg)
 
 ## Handle range selection
 
@@ -217,4 +217,4 @@ private void rangeNavigator_RangeChanged(object sender, RangeChangedEventArgs e)
 
 You can find the complete getting started sample from this [link.](http://files2.syncfusion.com/Xamarin.Forms/Samples/RangeNavigatorGettingStarted.zip)
 
-![Range selection in range navigator](gettingstarted_images/gettingstarted_img3.jpeg)
+![Range selection in DateTime range navigator](gettingstarted_images/gettingstarted_img3.jpeg)

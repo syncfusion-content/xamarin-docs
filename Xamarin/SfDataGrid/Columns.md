@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Columns | SfDataGrid | Xamarin | Syncfusion
-description: Creating and adding columns, different ways to create columns and its customizations in Xamarin.Forms DataGrid.
+description: Creating and adding columns, different ways to create columns, features and customizations available in columns in Xamarin.Forms DataGrid.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
@@ -212,8 +212,8 @@ dataGrid.AllowResizingColumn = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/Resizing_HitTest_Forms.png)
-![](SfDataGrid_images/Resizing_Forms.png)
+![DataGrid with hit test representation when resizing a column](SfDataGrid_images/Resizing_HitTest_Forms.png)
+![DataGrid with column resizing](SfDataGrid_images/Resizing_Forms.png)
 
 The column width can be changed by tapping and dragging the resizing indicator.
 
@@ -231,10 +231,10 @@ The SfDataGrid allows two modes of resizing by setting the [SfDataGrid.ResizingM
 N> The default resizing mode is OnMoved.
 
 The following image shows resizing mode OnMoved:
-![](SfDataGrid_images/Resizing_OnMoved.png)
+![DataGrid with column resizing on the move](SfDataGrid_images/Resizing_OnMoved.png)
 
 The following image shows resizing mode OnTouchUp:
-![](SfDataGrid_images/Resizing_OnTouchUp.png)
+![DataGrid with column resizing on touch up](SfDataGrid_images/Resizing_OnTouchUp.png)
 
 ### Resizing events
 

@@ -333,7 +333,7 @@ public partial class MainPage : ContentPage
 
 Refer to the following GIF for final rendering on execution of above code example:
 
-![](SfDataGrid_images/CustomContextMenu.gif)
+![DataGrid with context menu](SfDataGrid_images/CustomContextMenu.gif)
 
 ## Commands
 

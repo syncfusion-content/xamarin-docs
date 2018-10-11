@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Column Drag and Drop | SfDataGrid | Xamarin | Syncfusion
-description: Enable and perform column drag and drop operation and its customization in Xamarin.Forms DataGrid.
+description: Enabling and performing column drag and drop operation and the available options to customize it in Xamarin.Forms DataGrid.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
@@ -22,7 +22,7 @@ dataGrid.AllowDraggingColumn = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/ColumnDragandDrop.gif)
+![DataGrid with column drag and drop](SfDataGrid_images/ColumnDragandDrop.gif)
 
 ## Column drag and drop events
 
@@ -217,4 +217,4 @@ public class CustomGridStyle : DataGridStyle
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/CustomizedIndicators_Column.jpg)
+![DataGrid with customized indicators when dragging a column](SfDataGrid_images/CustomizedIndicators_Column.jpg)

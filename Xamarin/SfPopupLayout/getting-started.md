@@ -44,7 +44,7 @@ The following NuGet package should be installed to use the SfPopupLayout control
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfPopupLayout to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfPopupLayout](https://www.nuget.org/packages/Syncfusion.Xamarin.SfPopUpLayout/), and then install it.
 
-![](GettingStarted_images/NuGetInstall.png)
+![Configure Pop-up using NuGet package](GettingStarted_images/NuGetInstall.png)
 
 To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfpopuplayout) to know about the dependent assemblies for SfPopupLayout.
 
@@ -268,7 +268,7 @@ namespace GettingStarted
 
 Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
-![](GettingStarted_images/DefaultAppearance.png)
+![Pop-up with default appearance](GettingStarted_images/DefaultAppearance.png)
 
 You can download the source code of this sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-2069677713).
 
@@ -385,7 +385,7 @@ namespace GettingStarted
 
 Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
-![](GettingStarted_images/ContentView.png)
+![Pop-up with custom content](GettingStarted_images/ContentView.png)
 
 N> Setting the content view is same for both cases i.e. displaying the pop-up when the SfPopupLayout is set as root view and vice versa.
 

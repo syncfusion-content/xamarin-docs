@@ -54,7 +54,7 @@ public MainPage()
 
 {% endtabs %}
 
-![](GettingStarted_images/ZoomAnimation.gif)
+![Pop-up with zoom animation](GettingStarted_images/ZoomAnimation.gif)
 
 ## Fade 
 
@@ -88,7 +88,7 @@ public MainPage()
 
 {% endtabs %}
 
-![](GettingStarted_images/FadeAnimation.gif)
+![Pop-up with fade animation](GettingStarted_images/FadeAnimation.gif)
 
 ## SlideOnLeft 
 
@@ -122,7 +122,7 @@ public MainPage()
 
 {% endtabs %}
 
-![](GettingStarted_images/SlideOnLeftAnimation.gif)
+![Pop-up with slide on left animation](GettingStarted_images/SlideOnLeftAnimation.gif)
 
 ## SlideOnRight
 
@@ -156,7 +156,7 @@ public MainPage()
 
 {% endtabs %}
 
-![](GettingStarted_images/SlideOnRightAnimation.gif)
+![Pop-up with slide on right animation](GettingStarted_images/SlideOnRightAnimation.gif)
 
 ## SlideOnTop 
 
@@ -191,7 +191,7 @@ public MainPage()
 {% endtabs %}
 
 
-![](GettingStarted_images/SlideOnTopAnimation.gif)
+![Pop-up with slide on top animation](GettingStarted_images/SlideOnTopAnimation.gif)
 
 ## SlideOnBottom
 
@@ -225,7 +225,7 @@ public MainPage()
 
 {% endtabs %}
 
-![](GettingStarted_images/SlideOnBottomAnimation.gif)
+![Pop-up with slide on bottom animation](GettingStarted_images/SlideOnBottomAnimation.gif)
 
 ## None
 
@@ -259,4 +259,4 @@ public MainPage()
 
 {% endtabs %}
 
-![](GettingStarted_images/AnimationMode_None.gif)
+![Pop-up with no animation](GettingStarted_images/AnimationMode_None.gif)

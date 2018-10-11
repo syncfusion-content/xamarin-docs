@@ -130,7 +130,7 @@ string[] CustomerID = new string[] {
 
 Running application renders the following output:
 
-![](SfDataGrid_images/PullToRefresh.png)
+![DataGrid with PullToRefresh functionality](SfDataGrid_images/PullToRefresh.png)
 
 ## Host the data grid inside pull-to-refresh
 
@@ -140,4 +140,4 @@ For more details and code example for hosting the SfDataGrid inside SfPullToRefr
 
 The output will look like on iOS, Android, and Windows Phone devices as follows:
 
-![](SfDataGrid_images/SfDataGrid_SlideOnTop_XForms.gif)
+![Hosting DataGrid inside PullToRefresh component](SfDataGrid_images/SfDataGrid_SlideOnTop_XForms.gif)

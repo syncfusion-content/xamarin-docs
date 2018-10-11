@@ -160,6 +160,6 @@ I> Xamarin.Forms is unique and offers a single language(C#) and runtime that wor
 </tr>
 </table>
 
-![](SfDataGrid_images/SfDataGrid-Xamarin_showcase1.png)
+![DataGrid with all column types](SfDataGrid_images/SfDataGrid-Xamarin_showcase1.png)
 
-![](SfDataGrid_images/SfDataGrid-Xamarin_showcase2.png)
+![DataGrid with template column](SfDataGrid_images/SfDataGrid-Xamarin_showcase2.png)

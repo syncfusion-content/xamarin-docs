@@ -20,4 +20,4 @@ Pop-up layout provides a layout that allows users to display an alert message wi
 * Display pop-ups at the touch interaction positions.
 * Display pop-ups at specific x and y coordinates with desired height and width or with default dimensions in the center.
 
-![](GettingStarted_images/OverView.gif)
+![Overview of Pop-up](GettingStarted_images/OverView.gif)

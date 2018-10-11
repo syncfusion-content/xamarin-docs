@@ -179,6 +179,6 @@ public class CustomLoadMoreView : LoadMoreView
 
 Running application renders the following output:
 
-![](SfDataGrid_images/LoadMore.png)
+![DataGrid with LoadMore functionality](SfDataGrid_images/LoadMore.png)
 
 You can download a readily runnable sample that illustrates enabling and using the load more functionality, [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfDataGridSample733433326).

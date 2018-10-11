@@ -380,7 +380,7 @@ To set font attribute for a column, follow the code example:
 {% endtabs %}
 
 Run the application to render the following output:
-![](SfDataGrid_images/FontAttribute_Bold_Forms.png)
+![DataGrid with bold font attribute](SfDataGrid_images/FontAttribute_Bold_Forms.png)
 
 #### TextAlignment
 
@@ -574,7 +574,7 @@ public class ViewModel
 }
 {% endhighlight %}
 
-![](SfDataGrid_images/SfDataGrid-Xamarin_showcase1.png)
+![DataGrid with image column](SfDataGrid_images/SfDataGrid-Xamarin_showcase1.png)
 
 ## GridTemplateColumn
 
@@ -703,7 +703,7 @@ public class ImageConverter:IValueConverter
 
 The following screenshot shows the different types of columns in the SfDataGrid:
 
-![](SfDataGrid_images/TemplateColumns2.png)
+![DataGrid with template column](SfDataGrid_images/TemplateColumns2.png)
 
 ## CellTemplateSelector
 
@@ -768,7 +768,7 @@ public class FreightTemplateSelector : DataTemplateSelector
 }
 {% endhighlight %}
 
-![](SfDataGrid_images/CellTemplateSelector.png)
+![DataGrid with template selector](SfDataGrid_images/CellTemplateSelector.png)
 
 ### Getting row index of a row in GridTemplateColumn
 
@@ -830,7 +830,7 @@ To load `DatePicker` and `TimePicker` together, follow the code example:
 
 The following screenshot shows that how `DatePicker` and `TimePicker` are viewed together:
 
-![](SfDataGrid_images/DateTimePicker.png)
+![DataGrid with date picker and time picker loaded inside a cell](SfDataGrid_images/DateTimePicker.png)
 
 ## GridDateTimeColumn
 
@@ -941,7 +941,7 @@ public class ViewModel
 }
 {% endhighlight %}
 
-![](SfDataGrid_images/Editing_DateTimeColumn_Forms.png)
+![DataGrid with date time column](SfDataGrid_images/Editing_DateTimeColumn_Forms.png)
 
 ## GridPickerColumn
 
@@ -950,7 +950,7 @@ The [GridPickerColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfus
  * Collection of primitive types
  * Collection of user-defined types (Custom objects)
 
-![](SfDataGrid_images/Editing_PickerColumn_Forms.png)
+![DataGrid with editing in picker column](SfDataGrid_images/Editing_PickerColumn_Forms.png)
 
 ### Collection of primitive types
 
@@ -1141,15 +1141,15 @@ The following screenshots explain the above code and show the working of the `Pi
 
 In the above code example underlying collection has two properties (OrderID,EmployeeID). A `GridPickerColumn` has been created with MappingName = OrderID, DisplayMemberPath = EmployeeID, ValueMemberPath = OrderID. EmployeeId has the values 6,7,8,9,10.... and OrderID has the values 1,2,3,4,5.... . Initially, the GridCells of the `PickerColumn` will be displayed with the values 6,7,8,9,10.... in row wise order based on the `DisplayMemberPath`.
 
-![](SfDataGrid_images/PickerColumn_DisplayMemberPath.png)
+![Picker column with display member path](SfDataGrid_images/PickerColumn_DisplayMemberPath.png)
 
 Upon entering the edit mode at RowColumnIndex(1,1), the Picker pop up opens with the picker items as 6,7,8,9,10.... again based on the `DisplayMemberPath`.
 
-![](SfDataGrid_images/PickerColumn_PickerPopUp.png)
+![Picker column editing with display member path](SfDataGrid_images/PickerColumn_PickerPopUp.png)
 
 When edit mode is exited by selecting a value(9) from the Picker pop up, the `GridCell` at RowColumn index(0,1) displays the corresponding OrderID value for the selected EmployeeID value which is 4.
 
-![](SfDataGrid_images/PickerColumn_Customization.png)
+![Value changes in DataGrid when editing a Picker column with display member path](SfDataGrid_images/PickerColumn_Customization.png)
 
 ## GridNumericColumn
 
@@ -1197,7 +1197,7 @@ The`GridNumericColumn` allows formatting the numeric data with culture-specific 
 * [MaxValue](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridEditorColumn~MaxValue.html): To set the maximum value for the numeric column, use the `GridNumericColumn.MaxValue` property.
 
 
-![](SfDataGrid_images/Editing_NumericColumn_Forms.png)
+![DataGrid with editing in numeric column](SfDataGrid_images/Editing_NumericColumn_Forms.png)
 
 ## Row header 
 
@@ -1258,4 +1258,4 @@ To bind a view model property inside `HeaderTemplate`, follow the code example:
 
 {% endhighlight %}
 
-![](SfDataGrid_images/ViewModelPropertyHeaderTemplate.png)
+![Binding property in a HeaderTemplate with a property in ViewModel](SfDataGrid_images/ViewModelPropertyHeaderTemplate.png)

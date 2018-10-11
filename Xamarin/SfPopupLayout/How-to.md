@@ -40,7 +40,7 @@ public MainPage()
 
 {% endtabs %}
 
-![](PopupLayout_images/ShowHeader_False.png)
+![Pop-up without header](PopupLayout_images/ShowHeader_False.png)
 
 ## Hide the footer in SfPopupLayout
 
@@ -74,7 +74,7 @@ public MainPage()
 
 {% endtabs %}
 
-![](PopupLayout_images/ShowFooter_False.png)
+![Pop-up without footer](PopupLayout_images/ShowFooter_False.png)
 
 ## Hide the Close icon in the SfPopupLayout 
 
@@ -108,7 +108,7 @@ public MainPage()
 
 {% endtabs %}
 
-![](PopupLayout_images/ShowClosebutton_False.png)
+![Pop-up without close button](PopupLayout_images/ShowClosebutton_False.png)
 
 ## Load the SfPopupLayout in GridTappedEvent of the SfDataGrid
 
@@ -178,7 +178,7 @@ namespace GettingStarted
 
 {% endtabs %}
 
-![](PopupLayout_images/DataGridWithPopup.png)
+![Pop-up with DataGrid](PopupLayout_images/DataGridWithPopup.png)
 
 ## Load SfPopupLayout in Prism
 
@@ -505,7 +505,7 @@ namespace ListViewWithPopup
 
 {% endtabs %}
 
-![](PopupLayout_images/PopupInListView.png)
+![ListView with Pop-up](PopupLayout_images/PopupInListView.png)
 
 ## Show ListView as a pop-up
 
@@ -554,7 +554,7 @@ namespace ListViewWithPopup
 {% endhighlight %}
 {% endtabs %}
 
-![](PopupLayout_images/ListViewInPopup.png)
+![ListView in a Pop-up](PopupLayout_images/ListViewInPopup.png)
 
 ## Display popup when interacting with a switch
 

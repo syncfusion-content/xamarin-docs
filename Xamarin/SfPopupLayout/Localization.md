@@ -28,13 +28,13 @@ In the portable project of your application, add a `.resx` file inside the resou
 
 For example, to set the culture as French, the file should be named as **Syncfusion.SfPopupLayout.XForms.fr-FR.resx**.
 
-![](PopupLayout_images/PopUpAddingResxFile.png)
+![Adding resx file for Pop-up](PopupLayout_images/PopUpAddingResxFile.png)
 
 Based on the language, set the appropriate equivalent text to the static text in the .resx file.
 
 N> You should create and add separate .resx files for the individual languages.
 
-![](PopupLayout_images/PopUpResxFile.png)
+![resx file of Pop-up](PopupLayout_images/PopUpResxFile.png)
 
 ## Convert the platform specific language format to .NET format
 
@@ -334,6 +334,6 @@ public MainPage()
 {% endhighlight %}
 {% endtabs %}
 
-![](PopupLayout_images/PopUpLocalization.png)
+![Pop-up with localized text](PopupLayout_images/PopUpLocalization.png)
 
 You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/PopUpLocalization-329547354).

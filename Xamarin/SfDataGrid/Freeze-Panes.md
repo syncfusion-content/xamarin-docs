@@ -47,4 +47,4 @@ N> RowHeader is frozen by default and works regardless of the `FrozenColumnsCoun
 
 The following GIF illustrates FrozenRows and FrozenColumns.
 
-![](SfDataGrid_images/FreezePanes.Gif)
+![DataGrid with row pinning and column pinning](SfDataGrid_images/FreezePanes.Gif)

@@ -28,13 +28,13 @@ In the portable project of your application, add a `.resx` file inside the resou
 
 For example, to set the culture as French, the file should be named as **Syncfusion.SfDataGrid.XForms.fr-FR.resx**.
 
-![](SfDataGrid_images/DataGridAddingResxFile.png)
+![Adding resx file for localization](SfDataGrid_images/DataGridAddingResxFile.png)
 
 Based on the language, set the appropriate equivalent text to the static text in the .resx file.
 
 N> You should create and add separate .resx files for the individual languages.
 
-![](SfDataGrid_images/DataGridResxFile.png)
+![resx file for DataGrid](SfDataGrid_images/DataGridResxFile.png)
 
 ## Convert the platform specific language format to .NET format
 
@@ -334,6 +334,6 @@ public MainPage()
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/DataGridLocalization.png)
+![DataGrid with localized content](SfDataGrid_images/DataGridLocalization.png)
 
 You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DataGridLocalization-65024307).

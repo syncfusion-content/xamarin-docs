@@ -93,7 +93,7 @@ public class CellStyleConverter : IValueConverter
 {% endhighlight %}
 
 
-![](SfDataGrid_images/Conditional_Style_img.png)
+![DataGrid with conditional styling](SfDataGrid_images/Conditional_Style_img.png)
 
 
 ## Styling cells using QueryCellStyle event
@@ -136,7 +136,7 @@ private void DataGrid_QueryCellStyle(object sender, QueryCellStyleEventArgs e)
 }
 {% endhighlight %}
 
-![](SfDataGrid_images/ConditionalStyle_CellStyle.png)
+![DataGrid with conditional styling using QueryCellStyle event](SfDataGrid_images/ConditionalStyle_CellStyle.png)
 
 ## How to style a particular column
 
@@ -156,7 +156,7 @@ private void DataGrid_QueryCellStyle(object sender, QueryCellStyleEventArgs e)
 
 {% endhighlight %}
 
-![](SfDataGrid_images/ConditionalStyle_CellStyle_3.png)
+![DataGrid with styling a particular column](SfDataGrid_images/ConditionalStyle_CellStyle_3.png)
 
 ## How to style a particular cell based on RowIndex and ColumnIndex
  
@@ -176,7 +176,7 @@ private void DataGrid_QueryCellStyle(object sender, QueryCellStyleEventArgs e)
 
 {% endhighlight %}
 
-![](SfDataGrid_images/ConditionalStyle_CellStyle_1.png)
+![Styling specific cells in a DataGrid based on conditions](SfDataGrid_images/ConditionalStyle_CellStyle_1.png)
 
 ## How to style a particular cell based on CellValue
 
@@ -195,7 +195,7 @@ private void DataGrid_QueryCellStyle(object sender, QueryCellStyleEventArgs e)
 }
 {% endhighlight %}
 
-![](SfDataGrid_images/ConditionalStyle_CellStyle_2.png)
+![Stlying specific cells in a DataGrid based on its value](SfDataGrid_images/ConditionalStyle_CellStyle_2.png)
 
 ## Styling cells using RowStyle event
 
@@ -224,7 +224,7 @@ private void DataGrid_QueryRowStyle(object sender, QueryRowStyleEventArgs e)
 }
 {% endhighlight %}
 
-![](SfDataGrid_images/ConditionalStyle_RowStyle.png)
+![DataGrid with styling rows based on condition](SfDataGrid_images/ConditionalStyle_RowStyle.png)
 
 ## How to style a particular row based on RowIndex
 
@@ -243,7 +243,7 @@ private void DataGrid_QueryRowStyle(object sender, QueryRowStyleEventArgs e)
 
 {% endhighlight %}
 
-![](SfDataGrid_images/ConditionalStyle_RowStyle_1.png)
+![Styling certain rows in a DataGrid based on condition](SfDataGrid_images/ConditionalStyle_RowStyle_1.png)
 
 ## How to style a particular row based on RowData
 
@@ -263,7 +263,7 @@ private void DataGrid_QueryRowStyle(object sender, QueryRowStyleEventArgs e)
 
 {% endhighlight %}
 
-![](SfDataGrid_images/ConditionalStyle_RowStyle_2.png)
+![Styling certain rows in a DataGrid based on its data](SfDataGrid_images/ConditionalStyle_RowStyle_2.png)
 
 N> By default, only the selected background color will be applied for the selected row even if row style is applied for that row. If you want to apply selection color over while selecting row style, set the [ConditionalStylingPreference](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.RowStyle~ConditionalStylingPreference.html) property to [StylePreference](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.StylePreference.html).RowStyleAndSelection.
 
@@ -282,5 +282,5 @@ private void DataGrid_QueryRowStyle(object sender, QueryRowStyleEventArgs e)
 }
 {% endhighlight %}
 
-![](SfDataGrid_images/ConditionalStyle_RowStyle_Selection.png)
+![DataGrid with selection and styling applied together](SfDataGrid_images/ConditionalStyle_RowStyle_Selection.png)
 

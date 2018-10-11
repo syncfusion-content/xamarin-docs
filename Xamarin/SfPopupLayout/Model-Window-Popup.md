@@ -106,4 +106,4 @@ namespace GettingStarted
 
 Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
-![](GettingStarted_images/ModelWindow.png)
+![Pop-up as ModelWindow](GettingStarted_images/ModelWindow.png)

@@ -91,7 +91,7 @@ dataGrid.LeftSwipeTemplate = new DataTemplate(() =>
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/Swiping_img1.jpeg)
+![DataGrid with swiping](SfDataGrid_images/Swiping_img1.jpeg)
 
 N> Similarly, desired content can be loaded using the [SfDataGrid.RightSwipeTemplate](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~RightSwipeTemplate.html# “”) when swiping towards left.
 
@@ -262,11 +262,11 @@ public partial class Swiping : SamplePage
 
 {% endhighlight %}
 
-![](SfDataGrid_images/Swiping_img2.jpeg)
+![DataGrid with multiple views in swipe template](SfDataGrid_images/Swiping_img2.jpeg)
 
 N> Similarly, you can load two views using the `SfDataGrid.RightSwipeTemplate` when swiping towards left will result in the following outcome:
 
-![](SfDataGrid_images/Swiping_img3.jpeg)
+![DataGrid with multiple views in swipe template](SfDataGrid_images/Swiping_img3.jpeg)
 
 ## Customized swipe delete functionality
 
@@ -391,7 +391,7 @@ private async void doDeleting()
 
 {% endhighlight %}
 
-![](SfDataGrid_images/Swiping_img4.jpeg)
+![DataGrid with swipe delete functionality](SfDataGrid_images/Swiping_img4.jpeg)
 
 ## Loading complex template for swiping
 
@@ -447,7 +447,7 @@ When a complex layout is loaded in the GridTemplateColumn, swiping may not occur
 
 {% endhighlight %}
 
-![](SfDataGrid_images/SwipingInTemplateColumn.png)
+![Loading complex views in swipe template in a DataGrid](SfDataGrid_images/SwipingInTemplateColumn.png)
 
 ## How to cancel the swipe programmatically
 

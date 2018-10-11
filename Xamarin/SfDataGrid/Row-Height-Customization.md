@@ -158,7 +158,7 @@ private void DataGrid_QueryRowHeight (object sender, QueryRowHeightEventArgs
 } 
 {% endhighlight %}
 
-![](SfDataGrid_images/AutoRowHeight_forms.png)
+![DataGrid with auto fitting capabilities for rows](SfDataGrid_images/AutoRowHeight_forms.png)
 
 ## Customize header row height based on header content
 
@@ -180,7 +180,7 @@ private void DataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 }
 {% endhighlight %}
 
-![](SfDataGrid_images/HeaderRowHeight.png)
+![DataGrid with customized header row height](SfDataGrid_images/HeaderRowHeight.png)
 
 ## Customize caption summary row height
 
@@ -202,7 +202,7 @@ private void DataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 }
 {% endhighlight %}
 
-![](SfDataGrid_images/CaptionSummarRowHeight.png)
+![DataGrid with customized caption row height](SfDataGrid_images/CaptionSummarRowHeight.png)
 
 ## Change TableSummaryRow height
 
@@ -224,7 +224,7 @@ private void DataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 }
 {% endhighlight %}
 
-![](SfDataGrid_images/TableSummaryRowHeight.png)
+![DataGrid with customized table summary row height](SfDataGrid_images/TableSummaryRowHeight.png)
 
 ## How to optimize performance when using QueryRowHeight event
 

@@ -26,7 +26,7 @@ The `ScrollingMode.PixelLine` allows you to scroll its contents like an excel sh
 dataGrid.ScrollingMode = ScrollingMode.PixelLine; 
 {% endhighlight %}
 
-![](SfDataGrid_images/PixelLine.gif)
+![DataGrid with pixel line scrolling mode](SfDataGrid_images/PixelLine.gif)
 
 ### Line
 
@@ -36,7 +36,7 @@ The `ScrollingMode.Line` allows you to scroll its contents based on lines i.e., 
 dataGrid.ScrollingMode = ScrollingMode.Line; 
 {% endhighlight %}
 
-![](SfDataGrid_images/Line.gif)
+![DataGrid with line scrolling mode](SfDataGrid_images/Line.gif)
 
 ### Pixel
 
@@ -46,7 +46,7 @@ The `ScrollingMode.Pixel` allows you to scroll its contents based on pixel value
 dataGrid.ScrollingMode = ScrollingMode.Pixel; 
 {% endhighlight %}
 
-![](SfDataGrid_images/Pixel.gif)
+![DataGrid with pixel scrolling mode](SfDataGrid_images/Pixel.gif)
 
 ## Programmatic scrolling
 
@@ -65,7 +65,7 @@ dataGrid.ScrollToRowColumnIndex(20, 6);
 
 {% endhighlight %}
 
-![](SfDataGrid_images/ScrollToRowColumnIndex.gif)
+![DataGrid with programmatic scrolling](SfDataGrid_images/ScrollToRowColumnIndex.gif)
 
 ### Scroll to row index
 
@@ -80,7 +80,7 @@ dataGrid.ScrollToRowIndex(20);
 
 {% endhighlight %}
 
-![](SfDataGrid_images/ScrollToRowIndex.gif)
+![DataGrid with programmatically scrolling to a row](SfDataGrid_images/ScrollToRowIndex.gif)
 
 ### Scroll to column index
 
@@ -95,7 +95,7 @@ dataGrid.ScrollToColumnIndex(7);
 
 {% endhighlight %}
 
-![](SfDataGrid_images/ScrollToColumnIndex.gif)
+![DataGrid with programmatically scrolling to a column](SfDataGrid_images/ScrollToColumnIndex.gif)
 
 ## Vertical Over Scroll Mode
 
@@ -129,7 +129,7 @@ dataGrid.VerticalOverScrollMode = VerticalOverScrollMode.Bounce;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/VerticalOverScrollMode_Bounce.gif)
+![DataGrid with bouncing effect](SfDataGrid_images/VerticalOverScrollMode_Bounce.gif)
 
 ### None
 
@@ -154,7 +154,7 @@ dataGrid.VerticalOverScrollMode = VerticalOverScrollMode.None;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/VerticalOverScrollMode_none.gif)
+![DataGrid without bouncing effect](SfDataGrid_images/VerticalOverScrollMode_none.gif)
 
 ## Scrolling customization using Slider
 
@@ -174,4 +174,4 @@ private void Slider_ValueChanged(object sender, ValueChangedEventArgs e)
 {% endhighlight %}
 
 
-![](SfDataGrid_images/Slider.gif)
+![DataGrid with programmatic scrolling using a slider](SfDataGrid_images/Slider.gif)

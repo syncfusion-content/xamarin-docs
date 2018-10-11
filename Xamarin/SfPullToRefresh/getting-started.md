@@ -48,7 +48,7 @@ The following NuGet package should be installed to use the SfPullToRefresh contr
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfPullToRefresh to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfPullToRefresh](https://www.nuget.org/packages/Syncfusion.Xamarin.SfPullToRefresh/), and then install it.
 
 Refer to the following screenshot in which the Syncfusion.Xamarin.SfPullToRefresh is highlighted.
-![](SfPullToRefresh_images/PullToRefresh_Forms_NugetInstall.png)
+![Configure PullToRefresh using NuGet package](SfPullToRefresh_images/PullToRefresh_Forms_NugetInstall.png)
 
 To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfpulltorefresh) to know about the dependent assemblies for SfPullToRefresh.
 
@@ -134,7 +134,7 @@ You can download the entire source code of this demo for Xamarin.Forms from [her
 
 Create a new BlankApp (Xamarin.Forms.Portable) application in Xamarin Studio or Visual Studio for Xamarin.Forms. This is how the final output will look like on iOS, Android and Windows Phone devices.
 
-![](overview_images/SlideOnTop.png)
+![PullToRefresh with slide on top transition mode](overview_images/SlideOnTop.png)
 
 ## Adding SfPullToRefresh in Xamarin.Forms 
 
@@ -247,4 +247,4 @@ public class WeatherData: INotifyPropertyChanged
 
 If we run the above sample with `TransitionMode` as `Push`, the output will look like on iOS, Android and Windows Phone devices as shown below.
 
-![](overview_images/Push.png)
+![PullToRefresh with push transition mode](overview_images/Push.png)

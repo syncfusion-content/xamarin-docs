@@ -80,7 +80,7 @@ namespace GettingStarted
 
 Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
-![](GettingStarted_images/AppearanceMode_OneButton.png)
+![Pop-up with one button](GettingStarted_images/AppearanceMode_OneButton.png)
 
 ## Pop-up with two buttons in the footer
 
@@ -134,7 +134,7 @@ namespace GettingStarted
 
 Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
-![](GettingStarted_images/AppearanceMode_TwoButton.png)
+![Pop-up with two button](GettingStarted_images/AppearanceMode_TwoButton.png)
 
 ## Customizing pop-up layouts
  
@@ -226,7 +226,7 @@ namespace GettingStarted
 
 Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
-![](PopupLayout_images/HeaderTemplate.png)
+![Pop-up with header template](PopupLayout_images/HeaderTemplate.png)
 
 ### Footer customization
 
@@ -313,7 +313,7 @@ namespace GettingStarted
 
 Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
-![](PopupLayout_images/FooterTemplate.png)
+![Pop-up with footer template](PopupLayout_images/FooterTemplate.png)
 
 ## Styles
 
@@ -400,7 +400,7 @@ public MainPage()
 
 Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
-![](PopupLayout_images/HeaderCustomization.png)
+![Pop-up with header customized](PopupLayout_images/HeaderCustomization.png)
 
 ### Customizing footer elements
 
@@ -483,7 +483,7 @@ public MainPage()
 
 Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
-![](PopupLayout_images/FooterCustomization.png)
+![Pop-up with footer customized](PopupLayout_images/FooterCustomization.png)
 
 ## Border customization
 
@@ -549,4 +549,4 @@ public MainPage()
 
 Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
-![](PopupLayout_images/BorderCustomization.png)
+![Pop-up with border customization](PopupLayout_images/BorderCustomization.png)

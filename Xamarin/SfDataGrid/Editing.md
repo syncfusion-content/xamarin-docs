@@ -25,7 +25,7 @@ dataGrid.AllowEditing = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/Editing_Column_Forms.png)
+![DataGrid with editing](SfDataGrid_images/Editing_Column_Forms.png)
 
 ## Column editing
 

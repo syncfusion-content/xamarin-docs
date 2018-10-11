@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Paging | SfDataGrid | Xamarin | Syncfusion
-description: How to enable paging and use its properties
+description: Enable paging and use its properties. Usage and advantages of on demand paging. Options to customize the appreance of the SfDataPager.
 platform: xamarin
 control: SfDataGrid
 documentation: ug
@@ -113,7 +113,7 @@ public partial class MainPage : ContentPage
 
 The following screenshot shows the outcome upon execution of the above code:
 
-![](SfDataGrid_images/Paging_img1.jpeg)
+![DataGrid with paging](SfDataGrid_images/Paging_img1.jpeg)
 
 N> The `SfDataPager` provides scrolling animation while tapping the [FirstPageButton](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.NavigationButtons.html) or [LastPageButton](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.NavigationButtons.html).
 
@@ -249,7 +249,7 @@ public class CustomAppearance: AppearanceManager
 
 The following picture shows the customize appearance of data pager:
 
-![](SfDataGrid_images/datapagerappearence.png)
+![DataGrid with customized pager appearance](SfDataGrid_images/datapagerappearence.png)
 
 ### Numeric button border color
 
@@ -294,5 +294,5 @@ public class CustomAppearance : AppearanceManager
 }
 {% endhighlight %}
 
-![](SfDataGrid_images/DataPagerBorderColor.png)
+![DataPager with customized border color](SfDataGrid_images/DataPagerBorderColor.png)
 

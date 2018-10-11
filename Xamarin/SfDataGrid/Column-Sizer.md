@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Column Sizer | SfDataGrid | Xamarin | Syncfusion
-description: What are all the different ColumnSizer and how it works in a SfDataGrid.
+description: Different column sizing options available in Xamarin.Forms DataGrid and its working.
 platform: xamarin
 control: SfDataGrid
 documentation: ug
@@ -36,7 +36,7 @@ The SfDataGrid applies width for all the `GridColumns` in the [SfDataGrid.Column
 
 No column sizing is applied when the [SfDataGrid.ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ColumnSizer.html) set to [None](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.ColumnSizer.html). Columns are arranged in view based on the [SfDataGrid.DefaultColumnWidth](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~DefaultColumnWidth.html) property. This is the default value of the `SfDataGrid.ColumnSizer` property.
 
-![](SfDataGrid_images/CoumnSizer_Img1.png)
+![DataGrid with default column sizing](SfDataGrid_images/CoumnSizer_Img1.png)
 
 ## ColumnSizer.LastColumnFill
 
@@ -53,7 +53,7 @@ dataGrid.ColumnSizer = ColumnSizer.LastColumnFill;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/CoumnSizer_Img2.png)
+![DataGrid with last column fill column sizing](SfDataGrid_images/CoumnSizer_Img2.png)
 
 ## ColumnSizer.Star
 
@@ -70,7 +70,7 @@ dataGrid.ColumnSizer = ColumnSizer.Star;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/CoumnSizer_Img3.png)
+![DataGrid with star column sizing](SfDataGrid_images/CoumnSizer_Img3.png)
 
 ## ColumnSizer.Auto
 
@@ -87,7 +87,7 @@ dataGrid.ColumnSizer = ColumnSizer.Auto;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/CoumnSizer_Img4.png)
+![DataGrid with auto column sizing](SfDataGrid_images/CoumnSizer_Img4.png)
 
 N> If any column explicitly specified a width using the [GridColumn.Width](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~Width.html) property, that column is not considered ColumnSizing width and skipped while applying the ColumnSizer for the grid columns.
 
@@ -170,7 +170,7 @@ public MainPage()
 {% endhighlight %}
 {% endtabs %}   
 
-![](SfDataGrid_images/FillRemainigColumn_Forms.png)
+![DataGrid with last column fill column sizing for any column](SfDataGrid_images/FillRemainigColumn_Forms.png)
 
 ### Refreshing ColumnSizer at runtime
 
@@ -204,7 +204,7 @@ private void ColumnSizerChanged(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %} 
 
-![](SfDataGrid_images/RefreshColumnSizer_Forms.gif) 
+![DataGrid with column sizing refresh at run-time](SfDataGrid_images/RefreshColumnSizer_Forms.gif) 
 
 ### Resetting column width to apply ColumnSizer   
 
@@ -255,7 +255,7 @@ private void ResetColumnsWidth()
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/Reset_ColumnWidth_Forms.png)
+![Resetting columns width in DataGrid](SfDataGrid_images/Reset_ColumnWidth_Forms.png)
 
 ## Star column sizer ratio support
 
@@ -360,4 +360,4 @@ public static class StarSizerRatioHelpers
 }  
 {% endhighlight %}   
 
-![](SfDataGrid_images/StarColumnSizerRatio_Forms.png)
+![DataGrid with star column sizing based on ratio](SfDataGrid_images/StarColumnSizerRatio_Forms.png)

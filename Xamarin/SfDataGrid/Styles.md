@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Styles | SfDataGrid | Xamarin | Syncfusion
-description: How to apply styles for the elements in a SfDataGrid.
+description: Apply styles for all the elements in Xamarin.Forms DataGrid. Customize the border, border color, sort icons and resizing indicator in the DataGrid.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
@@ -111,7 +111,7 @@ public class Dark : DataGridStyle
 
 The following picture shows the grid loaded in a different style:
 
-![](SfDataGrid_images/Style.png)
+![DataGrdi with style customized](SfDataGrid_images/Style.png)
 
 N> Xamarin.Forms.Style which has specified target type, that will not be applied to the internal components used in the SfDataGrid.
 
@@ -139,7 +139,7 @@ public class CustomGridStyle : DataGridStyle
 }
 {% endhighlight %}
 
-![](SfDataGrid_images/AlternateRowStyle.png)
+![DataGrid with alternate row style](SfDataGrid_images/AlternateRowStyle.png)
 
 ## Customizing the alternation count
 
@@ -154,7 +154,7 @@ dataGrid.AlternationCount = 3;
 
 {% endhighlight %}
 
-![](SfDataGrid_images/AlernationCount.png)
+![DataGrid with alternate row style with alternation count customized](SfDataGrid_images/AlernationCount.png)
 
 ## Border customization
 
@@ -199,7 +199,7 @@ public override GridLinesVisibility GetGridLinesVisibility()
 
 The following screenshot shows the outcome upon execution of the above code:
 
-![](SfDataGrid_images/BorderCustomization_Both.png)
+![DataGrid with both horizontal and vertical borders lines](SfDataGrid_images/BorderCustomization_Both.png)
 
 ### Horizontal
 
@@ -214,7 +214,7 @@ public override GridLinesVisibility GetGridLinesVisibility()
 
 The following screenshot shows the outcome upon execution of the above code:
 
-![](SfDataGrid_images/BorderCustomization_Horizontal.png)
+![DataGrid with horizonal border lines](SfDataGrid_images/BorderCustomization_Horizontal.png)
 
 ### Vertical
 
@@ -229,7 +229,7 @@ public override GridLinesVisibility GetGridLinesVisibility()
 
 The following screenshot shows the outcome upon execution of the above code:
 
-![](SfDataGrid_images/BorderCustomization_Vertical.png)
+![DataGrid with vertical border lines](SfDataGrid_images/BorderCustomization_Vertical.png)
 
 ### None
 
@@ -244,7 +244,7 @@ public override GridLinesVisibility GetGridLinesVisibility()
 
 The following screenshot shows the outcome upon execution of the above code:
 
-![](SfDataGrid_images/BorderCustomization_None.png)
+![DataGrid with no border lines](SfDataGrid_images/BorderCustomization_None.png)
 
 ## Header border color customization
 
@@ -295,7 +295,7 @@ public class CustomStyle : DataGridStyle
 {% endhighlight %}
 
 The following screenshot shows the final outcome upon execution of the above code:
-![](SfDataGrid_images/HeaderBorderCustomization_Both.png)
+![DataGrid with header border customization](SfDataGrid_images/HeaderBorderCustomization_Both.png)
 
 ## Customizing sort icons in the header
 
@@ -323,7 +323,7 @@ public class Custom : DataGridStyle
 {% endhighlight %}
 
 The following screenshots shows the final outcome of the above code:
-![](SfDataGrid_images/SortIconCustomization.png)
+![DataGrid with sort icon customized](SfDataGrid_images/SortIconCustomization.png)
 
 N> The BuildAction image must be set to EmbeddedResource in order to access the image as resource as shown in above code.
 

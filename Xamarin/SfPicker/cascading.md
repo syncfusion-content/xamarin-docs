@@ -69,7 +69,7 @@ private ObservableCollection<object> State { get; set; }
 
 public ObservableCollection<string> Header { get; set; }
 
-private object _selected;
+private object _selectedArea;
 
 public event PropertyChangedEventHandler PropertyChanged;
 
@@ -77,13 +77,13 @@ public event PropertyChangedEventHandler PropertyChanged;
 
 //Identify the selected area using property changed method
 
-public object Selected
+public object SelectedArea
 
 {
 
-get { return _selected; }
+get { return _selectedArea; }
 
-set { _selected = value; RaisePropertyChanged("Selected"); }
+set { _selectedArea = value; RaisePropertyChanged("SelectedArea"); }
 
 }
 
@@ -129,7 +129,7 @@ Area.Add(Country);
 
 Area.Add(State);
 
-Selected = new ObservableCollection<object>() { "UK", "London" };
+SelectedArea = new ObservableCollection<object>() { "UK", "London" };
 
 }
 
@@ -157,17 +157,12 @@ private void picker_SelectionChanged(object sender, Syncfusion.SfPicker.XForms.S
 
 {
 
-if(picker.ItemsSource!=null && CurrentItem != (e.NewValue as IList)[0].ToString())
-
-{
-
-//Updated the second column collection based on first column selected value.
-
-(picker.ItemsSource as ObservableCollection<object>).RemoveAt(1);
-
-(picker.ItemsSource as ObservableCollection<object>).Add(GetCountry((e.NewValue as IList)[0].ToString()));
-
-}
+if (picker.ItemsSource != null && e.NewValue is IList && (picker.ItemsSource as IList).Count > 1 && CurrentItem != (e.NewValue as IList)[0].ToString())
+            {
+                //Updated the second column collection based on first column selected value.
+                (picker.ItemsSource as ObservableCollection<object>).RemoveAt(1);
+                (picker.ItemsSource as ObservableCollection<object>).Add(GetCountry((e.NewValue as IList)[0].ToString()));
+            }
 
 }
 
@@ -265,7 +260,7 @@ PickerMode="Dialog"
 
 PickerWidth="280"
 
-SelectedItem="{Binding Selected}"
+SelectedItem="{Binding SelectedArea}"
 
 SelectionChanged="picker_SelectionChanged"
 
@@ -285,6 +280,42 @@ WidthRequest="300" />
 
 
 {% highlight c# %}
+
+Grid mainGrid = new Grid();
+            mainGrid.HorizontalOptions = LayoutOptions.Center;
+            mainGrid.VerticalOptions = LayoutOptions.Center;
+            StackLayout mainStack = new StackLayout();
+            mainStack.VerticalOptions = LayoutOptions.Center;
+            mainStack.HorizontalOptions = LayoutOptions.Center;
+            Button button = new Button();
+            button.HeightRequest = 40;
+            button.Text = "Open Picker";
+            button.WidthRequest = 200;
+            mainStack.Children.Add(button);
+            SfPicker picker = new SfPicker();
+            picker.HeaderText = "Select your Area";
+            picker.HeightRequest = 350;
+            picker.PickerHeight = 250;
+            picker.PickerMode = PickerMode.Dialog;
+            picker.PickerWidth = 280;
+            picker.SelectionChanged += Picker_SelectionChanged;
+            picker.ShowColumnHeader = true;
+            picker.SetBinding(Picker.SelectedItemProperty, "SelectedArea");
+            picker.SetBinding(Picker.ItemsSourceProperty, "Area");
+            picker.SetBinding(Picker.ColumnHeaderText, "Header");
+            picker.ShowFooter = true;
+            picker.WidthRequest = 300;
+            mainGrid.Children.Add(mainStack);
+            mainGrid.Children.Add(picker);
+            this.Content = mainGrid;
+
+{% endhighlight %}
+{% endtabs %}
+
+The code in the code behind is as follows.
+
+{% highlight c# %}
+
 public partial class MainPage : ContentPage
 
 {
@@ -310,14 +341,13 @@ picker.IsOpen = true;
 }
 
 {% endhighlight %}
-{% endtabs %}
 
 The following screenshot illustrates the output of above code snippets.
 
-![](images/cascading_img1.jpeg)
+![cascading](images/cascading_img1.jpeg)
 
 
 You can download the sample for reference from the following link.
 
-Sample link: [CascadingSample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CascadingPicker-212266727)
+Sample link: [CascadingSample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CascadingPicker1912069530.zip)
 

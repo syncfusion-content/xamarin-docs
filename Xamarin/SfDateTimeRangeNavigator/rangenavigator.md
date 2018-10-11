@@ -190,7 +190,7 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 
 {% endtabs %}
 
-![Adding chart as a content of DateTime range navigator](gettingstarted_images/gettingstarted_img2.jpeg)
+![Adding chart as a content of Xamarin.Forms DateTime range navigator](gettingstarted_images/gettingstarted_img2.jpeg)
 
 ## Handle range selection
 
@@ -217,4 +217,4 @@ private void rangeNavigator_RangeChanged(object sender, RangeChangedEventArgs e)
 
 You can find the complete getting started sample from this [link.](http://files2.syncfusion.com/Xamarin.Forms/Samples/RangeNavigatorGettingStarted.zip)
 
-![Range selection in DateTime range navigator](gettingstarted_images/gettingstarted_img3.jpeg)
+![Range selection in Xamarin.Forms DateTime range navigator](gettingstarted_images/gettingstarted_img3.jpeg)

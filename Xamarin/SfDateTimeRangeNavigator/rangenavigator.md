@@ -215,4 +215,6 @@ private void rangeNavigator_RangeChanged(object sender, RangeChangedEventArgs e)
 
 {% endhighlight %}
 
+You can find the complete getting started sample from this [link.](http://files2.syncfusion.com/Xamarin.Forms/Samples/RangeNavigatorGettingStarted.zip)
+
 ![](gettingstarted_images/gettingstarted_img3.jpeg)

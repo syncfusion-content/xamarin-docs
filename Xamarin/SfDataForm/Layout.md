@@ -156,7 +156,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/ImageLabel.png)
+![](SfDataForm_images/LabelCustomized.png)
 
 ## Changing order of the DataFormItem
 

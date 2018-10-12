@@ -394,3 +394,5 @@ pdfViewerControl.TextSearchSettings.CurrentInstanceColor = Color.FromRgba(255, 2
 </ContentPage>
 {% endhighlight %}
 {% endtabs %}
+
+![](pdfviewer_images/textsearch.png)

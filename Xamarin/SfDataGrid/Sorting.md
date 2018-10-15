@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sorting | SfDataGrid | Xamarin | Syncfusion
-description: How to sort the data and about the properties and events that involve in sorting in a SfDataGrid.
+description: Sorting the data against one or more columns and about the properties and events that involve in sorting in Xamarin.Forms DataGrid. Animate sort icons and using custom sorting logic if conventional sorting does not meet requirements.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
@@ -47,7 +47,7 @@ dataGrid.SortColumnDescriptions.Add (new SortColumnDescription () {
 
 The following screenshot shows the sorting functionality in the data grid:
 
-![](SfDataGrid_images/SfDataGrid-Xamarin_img4.png)
+![DataGrid with programmatic sorting](SfDataGrid_images/SfDataGrid-Xamarin_img4.png)
 
 ## Tri-State sorting
 
@@ -64,7 +64,7 @@ dataGrid.AllowTriStateSorting = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/Tristate_Sorting.gif)
+![DataGrid with tri-state sorting](SfDataGrid_images/Tristate_Sorting.gif)
 
 ## Multi-column sorting
 
@@ -81,7 +81,7 @@ dataGrid.AllowMultiSorting = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/MultiColumn_Sorting.gif)
+![DataGrid with multi-column sorting](SfDataGrid_images/MultiColumn_Sorting.gif)
 
 ## Sort column in double click
 
@@ -278,7 +278,7 @@ To animate the sorting icon, follow the code example:
     }
 {% endhighlight %}
 
-![](SfDataGrid_images/Sorting-Animation.gif)
+![DataGrid with sorting animation](SfDataGrid_images/Sorting-Animation.gif)
 
 ## How to disable sorting 
 

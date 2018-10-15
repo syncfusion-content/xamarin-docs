@@ -268,7 +268,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/Editors_DateFormat.png)
+![DateFormat](SfDataForm_images/Editors_DateFormat.png)
 
 ### Setting MaximumDate and MinimumDate in date editor
 
@@ -290,7 +290,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/Editors_DateMaximum.png)
+![Maximum date](SfDataForm_images/Editors_DateMaximum.png)
 
 ## Drop down editor
 
@@ -358,7 +358,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/Editors_DropDownItems.png)
+![DropDown items](SfDataForm_images/Editors_DropDownItems.png)
 
 N> `DropDownEditor` not supported in `Xamarin.Forms.iOS`.
 
@@ -384,7 +384,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/Editors_PickerTitle.png)
+![Picker items](SfDataForm_images/Editors_PickerTitle.png)
 
 ### Customizing ItemsSource of Picker
 
@@ -526,7 +526,7 @@ public class Address
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/ComplexPropertyPicker.png)
+![Complex property](SfDataForm_images/ComplexPropertyPicker.png)
 
 You can download the entire source code of this demo for Xamarin.Forms from here [DataFormPickerEditor](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfDataForm_Picker-2009667790.zip)
 
@@ -551,7 +551,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/SpinButtonCenter.png)
+![Spin button](SfDataForm_images/SpinButtonCenter.png)
 
 ### Changing step value in numeric up down
 
@@ -643,7 +643,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/Editors_NumericCulture.png)
+![NumericTextBox culture](SfDataForm_images/Editors_NumericCulture.png)
 
 #### SfNumericUpDown
 
@@ -662,7 +662,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/NumericUpDownCulture.png)
+![NumericUpDown culture](SfDataForm_images/NumericUpDownCulture.png)
 
 ## Password editor
 
@@ -687,4 +687,4 @@ public string Password
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/PasswordEditor.jpg)
+![Password editor](SfDataForm_images/PasswordEditor.jpg)

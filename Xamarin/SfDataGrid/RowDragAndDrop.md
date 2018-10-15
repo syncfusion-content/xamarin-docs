@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Row Drag and Drop | SfDataGrid | Xamarin | Syncfusion
-description: How to enable and perform row drag and drop operation and its customization.
+description: Enable and perform row drag and drop operation and its customization in Xamarin.Forms DataGrid.
 platform: xamarin
 control: Data Grid
 documentation: UG
@@ -22,7 +22,7 @@ dataGrid.AllowDraggingRow = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/RowDragandDrop.gif)
+![DataGrid with row drag and drop](SfDataGrid_images/RowDragandDrop.gif)
 
 ## Dragging scenarios
 
@@ -44,7 +44,7 @@ The data grid allows you to load desired content when performing row drag-and-dr
 
 The default template will be loaded if another template is not explicitly assigned for row drag-and-drop operations. 
 
-![](SfDataGrid_images/DefaultTemplate.jpg)
+![Drag and drop pop-up with default apperance](SfDataGrid_images/DefaultTemplate.jpg)
 
 ## Customizing row drag-and-drop template
 
@@ -137,7 +137,7 @@ public class RowTemplate : Grid
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/CustomizedTemplate.jpg)
+![Drag and drop pop-up with customized apperance](SfDataGrid_images/CustomizedTemplate.jpg)
 
 N> Currently, the row drag-and-drop features cannot be used if different rows sets with different heights using the [QueryRowHeight](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~QueryRowHeight_EV.html) event. 
 
@@ -394,7 +394,7 @@ public class CustomGridStyle : DataGridStyle
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/CustomizedIndicators_Row.jpg)
+![DataGrid with row drag and drop indicators customized](SfDataGrid_images/CustomizedIndicators_Row.jpg)
 
 ## Updating summaries when dragging and dropping a row between groups
 
@@ -433,4 +433,4 @@ public partial class MainPage : ContentPage
 
 The following screenshot shows the output rendered when executing the above code example.
 
-![](SfDataGrid_images/UpdatedSummary.png)
+![DataGrid with summary update after drag and drop](SfDataGrid_images/UpdatedSummary.png)

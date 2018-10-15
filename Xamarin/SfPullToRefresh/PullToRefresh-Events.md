@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SfPullToRefresh Events | SfPullToRefresh | Xamarin | Syncfusion
-description: How to use different events exposed in SfPullToRefresh.
+description: Use the built-in events available in Xamarin.Forms PullToRefresh control to control the pulling and refresh action.
 platform: Xamarin.Forms 
 control: SfPullToRefresh 
 documentation: ug

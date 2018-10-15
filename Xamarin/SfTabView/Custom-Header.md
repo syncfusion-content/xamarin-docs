@@ -9,9 +9,9 @@ documentation: ug
 
 # Custom Header 
 
-When the built-in view is not needed, it can be overridden by adding the custom view to the header region in tabs. The tab view header can be customized by adding different views inside header content like image,button,label etc.The following code example explains how to customize the header content in desired way.
+When built-in view is not needed, it can be overridden by adding custom views to the header in tabs. The tab view header can be customized by adding different views such as image, button, and label inside the header content. The following code sample demonstrates how to customize the header content as needed.
 
-N> Selection indicator setting's properties will not be working when using custom header.
+N> The selection indicator setting properties will not work when using custom header.
 
 {% tabs %}
 
@@ -49,34 +49,112 @@ HeaderContent = allCallsButton
 
 {% endtabs %}
 
-In the below example header has been customized by adding image and label as the header content of the tab view.
+The following code sample demonstrates customizing the header by adding image and label as the header content of the tab view.
 
 {% highlight xaml %}
+<syncfusion:SfTabView x:Name="tabView"  TabHeight="80" BackgroundColor="#BEBEBE"   EnableSwiping="False" VisibleHeaderCount="3" Margin="0,40,0,0">
+<syncfusion:SfTabView.SelectionIndicatorSettings>
+<syncfusion:SelectionIndicatorSettings Color="Green" Position="Fill" StrokeThickness="4"/>
+</syncfusion:SfTabView.SelectionIndicatorSettings>
+<syncfusion:SfTabItem >
 <syncfusion:SfTabItem.HeaderContent>
-<Grid x:Name="mainGrid" VerticalOptions="Center" HeightRequest="400" WidthRequest="500" HorizontalOptions="Center">
+<Grid VerticalOptions="Center" BackgroundColor="#eea782" HeightRequest="400" WidthRequest="500" x:Name="ChatsHeader" StyleId="ChatsHeader"
+HorizontalOptions="Center">
 <Grid.RowDefinitions>
-<RowDefinition Height="*" />
-<RowDefinition Height="*" />
+<RowDefinition Height="Auto" />
+<RowDefinition Height="Auto" />
 </Grid.RowDefinitions>
 <Label Text="James"
- TextColor="Red"
- FontSize="16" Grid.Row="0"
- WidthRequest="80"
- HeightRequest="50"
- VerticalOptions="Center"
- HorizontalOptions="Center"/>
+TextColor="Black"
+FontSize="23" Grid.Row="0"
+WidthRequest="80"
+HeightRequest="50"
+VerticalOptions="Center"
+HorizontalOptions="Center"/>
 <Grid Grid.Row="1">
-<Image HeightRequest="250"  WidthRequest="250" Source="a0.png"/>
+<Image HeightRequest="100"  WidthRequest="70" Source="a0.png"/>
 </Grid>
 </Grid>
-
+</syncfusion:SfTabItem.HeaderContent>
+<syncfusion:SfTabItem.Content>
+<Grid BackgroundColor="Yellow" x:Name="FavoritesGrid" />
+</syncfusion:SfTabItem.Content>
+</syncfusion:SfTabItem>
+<syncfusion:SfTabItem >
+<syncfusion:SfTabItem.HeaderContent>
+<Grid VerticalOptions="Center"  BackgroundColor="#C9EE82" HeightRequest="400" WidthRequest="500" x:Name="ChatsHeader2" StyleId="ChatsHeader"
+HorizontalOptions="Center">
+<Grid.RowDefinitions>
+<RowDefinition Height="Auto" />
+<RowDefinition Height="Auto" />
+</Grid.RowDefinitions>
+<Label Text="Jacob"
+TextColor="Black"
+FontSize="23" Grid.Row="0"
+WidthRequest="80"
+HeightRequest="50"
+VerticalOptions="Center"
+HorizontalOptions="Center"/>
+<Grid Grid.Row="1">
+<Image HeightRequest="100"  WidthRequest="70" Source="a2.png"/>
+</Grid>
+</Grid>
+</syncfusion:SfTabItem.HeaderContent><syncfusion:SfTabItem.Content>
+<Grid BackgroundColor="Blue" x:Name="ContactsGrid" />
+</syncfusion:SfTabItem.Content>
+</syncfusion:SfTabItem>
+<syncfusion:SfTabItem>
+<syncfusion:SfTabItem.HeaderContent>
+<Grid VerticalOptions="Center" BackgroundColor="#eedd82" HeightRequest="400" WidthRequest="500" x:Name="ChatsHeader3" StyleId="ChatsHeader"
+HorizontalOptions="Center">
+<Grid.RowDefinitions>
+<RowDefinition Height="Auto" />
+<RowDefinition Height="Auto" />
+</Grid.RowDefinitions>
+<Label Text="John"  
+TextColor="Black"
+FontSize="23" Grid.Row="0"
+WidthRequest="80"
+HeightRequest="50"
+VerticalOptions="Center"
+HorizontalOptions="Center"/>
+<Grid Grid.Row="1">
+<Image HeightRequest="100"  WidthRequest="70" Source="a1.png"/>
+</Grid>
+</Grid>
+</syncfusion:SfTabItem.HeaderContent>
+        <syncfusion:SfTabItem.Content>
+<ListView x:Name="ContactListView" 
+ItemsSource="{Binding ContactList}"
+BackgroundColor="#cfead9" RowHeight="100">
+<ListView.BindingContext>
+<local:ContactsViewModel />
+</ListView.BindingContext>
+<ListView.ItemTemplate>
+<DataTemplate>
+<ViewCell>
+<StackLayout Orientation="Vertical">
+<Label 
+Text="{Binding Name}"
+FontSize="24" 
+TextColor="Blue" />
+<Label 
+Text="{Binding Number}" 
+FontSize="20" 
+TextColor="LightSlateGray" />
+</StackLayout>
+</ViewCell>
+</DataTemplate>
+</ListView.ItemTemplate>
+</ListView>
+</syncfusion:SfTabItem.Content>
+</syncfusion:SfTabItem>
+</syncfusion:SfTabView>
 {% endhighlight %}
 
-N> The tab view header can be resized to suit the windows size when the orientation gets changed.
+## How to handle the events for custom view with tab view
 
-## How to handle the events for custom view with tab view?
-
-When you use the button or similar control with clicked event, it can be handled directly and set to the `SelectedIndex` property to navigate the clicked view.
+When you use the button or similar control with the clicked event, it can be handled directly and set to the `SelectedIndex` property to navigate the clicked view.
 
 {% highlight C# %}
 
@@ -88,5 +166,7 @@ tabView.SelectedIndex = 0;
 {% endhighlight %}
 
 N> If the click event is not available, it can be achieved by setting the `TapGestureRecognizer` to the custom view.
+
+
 
 

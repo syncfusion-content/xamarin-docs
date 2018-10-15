@@ -186,7 +186,7 @@ schedule.DataSource= Meetings ;
 {% endhighlight %} 
 {% endtabs %}
 
-![spanning or multiday appointments in schedule Xamarin Forms][(PopulatingAppointments_images/span.png)
+![spanning or multiday appointments in schedule Xamarin Forms](PopulatingAppointments_images/span.png)
 
 ## All Day Appointments
 All-Day appointment is an appointment which is scheduled for a whole day. It can be set by using `IsAllDay` property in the `ScheduleAppointment`.
@@ -417,7 +417,7 @@ recurrenceProperties.RecurrenceRange = RecurrenceRange.Count;
 recurrenceProperties.Interval = 1;
 recurrenceProperties.WeekDays = WeekDays.Monday|WeekDays.Wednesday|WeekDays.Friday;
 recurrenceProperties.RecurrenceCount = 10;
-recurrenceProperties.RecurrenceRule = DependencyService.Get<IRecurrenceBuilder>().RRuleGenerator(recurrenceProperties, meeting.From, Meeting.To);
+recurrenceProperties.RecurrenceRule = schedule.RRuleGenerator(recurrenceProperties, meeting.From, Meeting.To);
 
 // Setting recursive rule for an event
 meeting.RecurrenceRule = recurrenceProperties.RecurrenceRule;

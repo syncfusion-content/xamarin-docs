@@ -41,7 +41,7 @@ chart.Series.Add(column);
 
 {% endtabs %}
 
-![](tooltip_images/tooltip1.png)
+![Tooltip support in Xamarin.Forms Chart](tooltip_images/tooltip1.png)
 
 ## Customizing appearance
 
@@ -95,7 +95,7 @@ chart.ChartBehaviors.Add(tool);
 
 {% endtabs %}
 
-![](tooltip_images/tooltip2.png)
+![Customizing the appearance of tooltip in Xamarin.Forms Chart](tooltip_images/tooltip2.png)
 
 ## Tooltip Template
 
@@ -172,7 +172,7 @@ chart.Series.Add(column);
 
 {% endtabs %}
 
-![](tooltip_images/TooltipTemplate.png)
+![Tooltip template support in Xamarin.Forms Chart ](tooltip_images/TooltipTemplate.png)
 
 ## Methods
 

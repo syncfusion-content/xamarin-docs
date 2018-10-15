@@ -12,7 +12,7 @@ Drawer can be toggled using
 
 *	IsOpen property
 
-*	ToggleDrawer/ ToggleSecondaryDrawer method
+*	ToggleDrawer method
 
 *	Swipe gesture
 
@@ -43,19 +43,9 @@ navigationDrawer.IsOpen = true;
 
 Using `ToggleDrawer` method,
 
-The user can toggle the drawer for both default drawer and secondary drawer using different toggle methods. The below code is used for toggling the default drawer using `ToggleDrawer`
-
 {% highlight c# %} 
 
 navigationDrawer.ToggleDrawer();
-
-{% endhighlight %}
-
-The user can toggle the secondary drawer using the `ToggleSecondaryDrawer` method
-
-{% highlight c# %} 
-
-navigationDrawer.ToggleSecondaryDrawer();
 
 {% endhighlight %}
 

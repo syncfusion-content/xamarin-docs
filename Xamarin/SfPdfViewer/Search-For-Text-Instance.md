@@ -395,4 +395,4 @@ pdfViewerControl.TextSearchSettings.CurrentInstanceColor = Color.FromRgba(255, 2
 {% endhighlight %}
 {% endtabs %}
 
-![Installation steps](pdfviewer_images/textsearch.png)
+![Text search in PDF viewer](pdfviewer_images/textsearch.png)

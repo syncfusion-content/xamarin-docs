@@ -164,9 +164,9 @@ Download the entire source code of this demo [here](http://www.syncfusion.com/do
 
 Items can be loaded either on the top or bottom of the view.
 
-![Bottom load more gif](SfListView_images/SfListView-LoadMore.gif)
+![Xamarin.Forms listview load more on scrolling at bottom](SfListView_images/SfListView-LoadMore.gif)
 
-![Top load more gif](SfListView_images/SfListView-TopLoadMore.gif)
+![Xamarin.Forms listview load more on scrolling at top](SfListView_images/SfListView-TopLoadMore.gif)
 
 ## Load more view customization
 
@@ -578,7 +578,7 @@ public partial class MainPage : ContentPage
 
 You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LoadMore_Up_Automatic-1467526465).
 
-![Load more upwards automatic image](SfListView_images/SfListView-LoadMoreAutomaticallyUpDirection.png)
+![Loadmore automatic towards up in listview](SfListView_images/SfListView-LoadMoreAutomaticallyUpDirection.png)
 
 ### Load more items manually from up direction
 
@@ -704,4 +704,4 @@ public partial class MainPage : ContentPage
 
 You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LoadMore_Up_Manual-1153429299).
 
-![Loadmore manually up](SfListView_images/SfListView-LoadMoreManuallyUpDirection.png)
+![Loadmore manually towards up in listview](SfListView_images/SfListView-LoadMoreManuallyUpDirection.png)

@@ -40,7 +40,7 @@ private void ListView_QueryItemSize(object sender, Syncfusion.ListView.XForms.Qu
 
 You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomizeItems171985138).
 
-![QueryItemSize image](SfListView_images/QueryItemSize.jpg)
+![ItemSize customization](SfListView_images/QueryItemSize.jpg)
 
 ## AutoFit the items based on the content
 
@@ -78,7 +78,7 @@ N> If you define any size manually to the view loaded in [SfListView.ItemTemplat
 
 You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AutoFitItems-252477562).
 
-![AutoFit content image](SfListView_images/AutoFit.jpg)
+![AutoFit listview items](SfListView_images/AutoFit.jpg)
 
 ## Increasing or Decreasing label font size in the ListView items at runtime
 
@@ -120,7 +120,7 @@ private void Button_Clicked(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Customized FontSize image](SfListView_images/SfListView-FontSizeChanged.jpg)
+![Customizing label fontsize for listview item ](SfListView_images/SfListView-FontSizeChanged.jpg)
 
 ## Limitations
 

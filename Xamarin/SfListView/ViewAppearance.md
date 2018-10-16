@@ -98,7 +98,7 @@ public class MainPageCs : ContentPage
 
 You can also download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DataTemplate1985610922).
 
-![Datatemplate image](SfListView_images/DataTemplateSelector.jpg)
+![Xamarin.Forms listview with DataTemplateSelector](SfListView_images/DataTemplateSelector.jpg)
 
 ## Horizontal ListView
 
@@ -113,7 +113,7 @@ listView.Orientation = Orientation.Horizontal;
 {% endhighlight %}
 {% endtabs %}
 
-![Horizontal listview image](SfListView_images/SfListView-Orientation.png)
+![Listview items in horizontal orientation](SfListView_images/SfListView-Orientation.png)
 
 ### Navigate across views (like TabView)
 
@@ -197,7 +197,7 @@ public partial class MainPage : ContentPage
 
 You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/HorizontalListView-721870895).
 
-![Navigation view image](SfListView_images/NavigateView.jpg)
+![Xamarin.Forms listview  wih tabview](SfListView_images/NavigateView.jpg)
 
 ## Horizontal list inside vertical list
 
@@ -273,7 +273,7 @@ public partial class MainPage : ContentPage
 
 You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/HorizontalInsideVerticalList-991620132).
 
-![Vertical list image](SfListView_images/Horizontal_List_Inside_Vertical_List.jpg)
+![Vertical listview with horizontal items](SfListView_images/Horizontal_List_Inside_Vertical_List.jpg)
 
 ## Item size
 
@@ -303,7 +303,7 @@ listView.ItemSpacing = new Thickness(5, 0, 0, 0)
 {% endhighlight %}
 {% endtabs %}
 
-![Item spacing image](SfListView_images/ItemSpacing.jpg)
+![Item spacing in listview](SfListView_images/ItemSpacing.jpg)
 
 ## Alternate row styling
 
@@ -379,7 +379,7 @@ public class IndexToColorConverter : IValueConverter
 
 You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AlternateRowStyling566000668).
 
-![Alternate row style image](SfListView_images/AlternateRowStyle.jpg)
+![Alternate row style in listview](SfListView_images/AlternateRowStyle.jpg)
 
 ## Rounded corner on items
 
@@ -440,7 +440,7 @@ public partial class MainPage : ContentPage
 
 You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/RoundedCornerItems-83216015).
 
-![Round corner image](SfListView_images/RoundCorner.jpg)
+![Round cornered items in listview](SfListView_images/RoundCorner.jpg)
 
 ## Drop shadow effect on items
 
@@ -511,7 +511,7 @@ public partial class MainPage : ContentPage
 
 You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DropShadowEffect-1675448697).
 
-![Frame shadow image](SfListView_images/FrameShadow.jpg)
+![Frame shadow effect in listview](SfListView_images/FrameShadow.jpg)
 
 ## ListViewItem customization
 
@@ -839,7 +839,7 @@ The `IsVisible` model property which is bound to the second template will be ena
 
 You can also download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AccordionSample-47114795).
 
-![Accord](SfListView_images/SfListView-AccordImage.png)
+![Xamarinn.Forms listview with Accordion](SfListView_images/SfListView-AccordImage.png)
 
 ## show busy indicator on list view
 
@@ -898,7 +898,7 @@ public class ViewModel : INotifyPropertyChanged
 
 You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/BusyIndicatorOnListView1412366667).
 
-![Busy indicator image](SfListView_images/ListViewBusyIndicator.jpg)    ![listview with indicator image](SfListView_images/ListView.jpg)
+![Busy indicator loading for listview](SfListView_images/ListViewBusyIndicator.jpg)    ![Loaded listview items](SfListView_images/ListView.jpg)
 
 ## show busy indicator on list view items
 
@@ -1075,7 +1075,7 @@ public partial class MainPage : ContentPage
 
 You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/BusyIndicatorOnItems1095316072).
 
-![Listview item with busy indicator image](SfListView_images/ListViewItemBusyIndicator.jpg)    ![listview loaded image](SfListView_images/ListViewItem.jpg)
+![Busy indicator loading on listview items](SfListView_images/ListViewItemBusyIndicator.jpg)    ![Loaded listview items](SfListView_images/ListViewItem.jpg)
 
 ## Show busy indicator on list view items using toggle switch
 
@@ -1146,7 +1146,7 @@ public partial class MainPage : ContentPage
 
 You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/BusyIndicatorToggle1696157913).
 
-![Switch on image](SfListView_images/SfListView-SwitchOn.png)    ![switch off image](SfListView_images/SfListView-SwitchOff.png)
+![Xamarin.Forms listview with switch on](SfListView_images/SfListView-SwitchOn.png)    ![Xamarin.Forms listview with switch off](SfListView_images/SfListView-SwitchOff.png)
 
 ## Item animation on appearing
 
@@ -1233,4 +1233,4 @@ public class ListViewItemExt : ListViewItem
 
 Here `FadeTo` animation is applied for [ListViewItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ListViewItem.html), when comes in the view. You can also download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ExtensionofListViewItem-Appearing-1339007241).
 
-![Item appearing animation gif](SfListView_images/SfListView-ItemAppearingAnimation.gif)
+![Xamarin.Forms listview with animation](SfListView_images/SfListView-ItemAppearingAnimation.gif)

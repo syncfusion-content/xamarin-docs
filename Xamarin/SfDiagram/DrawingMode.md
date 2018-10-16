@@ -32,5 +32,5 @@ Connector mode add continuous orthogonal connectors on the diagram area. In this
 diagram.DrawingMode = DrawingMode.Connector;
 {% endhighlight %}
 {% endtabs %}
-![](DrawingMode_images/DrawingMode.gif)
+![Drawing mode in Xamarin.Forms diagram](DrawingMode_images/DrawingMode.gif)
 

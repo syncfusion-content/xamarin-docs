@@ -71,7 +71,7 @@ I> You can refer to the [KB article](https://www.syncfusion.com/kb/8617) for mor
 * **Ports-**It represents a point in the node, where the connectors can be connected. A Node can contain any number of ports.
 * **Annotation-**It is a block of the text that can be displayed over a Node or Connector. Annotation is used to textually represent an object with a string that can be edited at run time.
 
-## Creating a Simple Flow Chart
+## Creating a simple flow chart
 Create a new cross platform app (Xamarin.Forms) with portable class library in the Visual Studio and name the project as “GettingStarted” and refer to the above mentioned assemblies to the respective projects.
 An additional step is required to render the SfDiagram control in iOS project. You need to create an instance of the SfDiagramRenderer class within FinishedLaunching method of AppDelegate class in iOS project as shown as follows
 {% tabs %}
@@ -170,7 +170,7 @@ return node;
 {% endtabs %}
 The flow chart will get displayed in the SfDiagram as follows
 
-![](Getting-Started_images/Getting-Started_img2.jpeg)
+![Getting started in Xamarin.Forms diagram](Getting-Started_images/Getting-Started_img2.jpeg)
 
 This demo project can be downloaded from the following link [GettingStarted_Demo.](http://files2.syncfusion.com/Xamarin.Forms/Samples/Gettingstarted_SfDiagram.zip)
 
@@ -236,6 +236,6 @@ diagram.LayoutManager = new LayoutManager() { Layout = treeLayout };
 {% endhighlight %}
 {% endtabs %}
 The Employee data is displayed in the SfDiagram as follows
-![](Getting-Started_images/Getting-Started_img3.jpeg)
+![Simple organizational chart in Xamarin.Forms diagram](Getting-Started_images/Getting-Started_img3.jpeg)
 
 This demo project can be downloaded from the following link [OrganizationalChart_Demo.](http://files2.syncfusion.com/Xamarin.Forms/Samples/OrganizationalChart_SfDiagram.zip)

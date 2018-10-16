@@ -30,7 +30,7 @@ Now, you have to create a class, Employee with properties to store the employeeâ
 {% endhighlight %}
 {% endtabs %}
 
-## Initialize Data Source Settings
+## Initialize data source settings
 {% tabs %}
 {% highlight xml %}
 <!--Initializes the DataSourceSettings -->
@@ -50,7 +50,7 @@ Now, you have to create a class, Employee with properties to store the employeeâ
 {% endhighlight %}
 {% endtabs %}
 
-## Organization Layout
+## Organization layout
 An organizational chart is a Diagram that displays the structure of an organization and relationships. To create an organizational chart, Type should be set as LayoutType.Organization. The following code example illustrates how to create an organizational chart.
 {% tabs %}
 {% highlight xml %}
@@ -185,7 +185,7 @@ private void Diagram_BeginNodeRender(object sender, BeginNodeRenderEventArgs arg
 {% endhighlight %}
 {% endtabs %}
 
-## Expand and Collapse Node
+## Expand and collapse node
 User can able to expand and collapse the parent node using NodeClicked event of the SfDiagram. This event will fire when click node in Layout.
 {% tabs %}
 {% highlight c# %}

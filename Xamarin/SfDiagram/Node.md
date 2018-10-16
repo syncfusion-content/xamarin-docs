@@ -10,7 +10,7 @@ keywords:
 # Node
 Nodes are graphical objects used to visually represent the geometrical information, process flow, internal business procedure or any other kind of data and it represents the functions of a complete system in regards to how it interacts with external entities.
 
-## Create Node
+## Create node
 A Node can be created and added to the Diagram, either programmatically or interactively. Nodes are stacked on the Diagram area from bottom to top in the order they are added.
 The following code snippet illustrates how to create the node.
 {% tabs %}
@@ -34,9 +34,9 @@ Node n = new Node() { Width = 120, Height = 40, OffsetX = 300,OffsetY = 60, Shap
 diagram.AddNode(n);
 {% endhighlight %}
 {% endtabs %}
-![](Node_images/Node_img1.jpeg)
+![Create node in Xamarin.Forms diagram](Node_images/Node_img1.jpeg)
 
-## Create a Node with Custom path/shape
+## Create a node with custom path/shape
 Node can be created with different custom shapes and path using SfGraphics.
 The following code snippet is used to create the Node with custom shape/path.
 {% tabs %}

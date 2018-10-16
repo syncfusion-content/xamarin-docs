@@ -90,7 +90,7 @@ private async void PullToRefresh_Refreshing(object sender, EventArgs args)
 
 Run the application to render the following output. You can also download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListInsideSfpulltorefresh282382156).
 
-![Xamarin.Forms listview with pulltorefresh](SfListView_images/SfListView-PullToRefresh.png)
+![Pull to refresh data in listview](SfListView_images/SfListView-PullToRefresh.png)
 
 ## SfListView inside the SfPullToRefresh with ScrollView 
 

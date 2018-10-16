@@ -62,4 +62,4 @@ The SfListView for Xamarin.Forms renders set of data items with Xamarin.Forms vi
  * Supports to notify the scroll state changes.
 
 
-![Xamarin.Forms listview](SfListView_images/Overview.png)
+![ListView with items in group](SfListView_images/Overview.png)

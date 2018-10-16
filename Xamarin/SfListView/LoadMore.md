@@ -578,7 +578,7 @@ public partial class MainPage : ContentPage
 
 You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LoadMore_Up_Automatic-1467526465).
 
-![Loadmore automatic towards up in listview](SfListView_images/SfListView-LoadMoreAutomaticallyUpDirection.png)
+![Loadmore automatic](SfListView_images/SfListView-LoadMoreAutomaticallyUpDirection.png)
 
 ### Load more items manually from up direction
 
@@ -704,4 +704,4 @@ public partial class MainPage : ContentPage
 
 You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LoadMore_Up_Manual-1153429299).
 
-![Loadmore manually towards up in listview](SfListView_images/SfListView-LoadMoreManuallyUpDirection.png)
+![Loadmore manual](SfListView_images/SfListView-LoadMoreManuallyUpDirection.png)

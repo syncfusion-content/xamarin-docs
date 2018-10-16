@@ -160,7 +160,7 @@ listView.LeftSwipeTemplate = new DataTemplate(() =>
 {%endhighlight %}
 {% endtabs %}
 
-![Left swipe customization in listview](SfListView_images/SfListView-Swiping--3.png)
+![Customize left swipe in listview](SfListView_images/SfListView-Swiping--3.png)
 
 To delete the item when `Delete` image is tapped and setting favorites to item when `Favorites` image is tapped, follow the code example.
 

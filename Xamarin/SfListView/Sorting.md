@@ -48,7 +48,7 @@ listView.RefreshView();
 
 N> It is mandatory to specify the `PropertyName` of `SortDescriptor`.
 
-![Sorting in listview](SfListView_images/SfListView-Sorting.png)
+![Sort items in listview](SfListView_images/SfListView-Sorting.png)
 
 ## Custom sorting
 

@@ -34,7 +34,7 @@ listView.SelectionGesture = TouchGesture.Hold;
 {% endhighlight %}
 {% endtabs %}
 
-![Xamarin.Forms listview with selection](SfListView_images/SfListView-Selection-1.png)
+![Single item selection in ListView](SfListView_images/SfListView-Selection-1.png)
 
 ## Programmatic selection
 
@@ -223,7 +223,7 @@ listView.SelectedItemTemplate = new DataTemplate(() =>
 
 You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Checked_Circle_OnSelected_Items-1476673984).
 
-![Selection using circle check box in listview](SfListView_images/SfListView-Selection-2.png)
+![Multiple item selection in ListView](SfListView_images/SfListView-Selection-2.png)
 
 ## Selected item style
 

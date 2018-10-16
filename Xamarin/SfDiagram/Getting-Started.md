@@ -6,12 +6,12 @@ control: SfDiagram
 documentation: UG
 keywords: 
 ---
-# Getting Started
+# Getting started
 This section provides a quick overview for working with Diagram for Xamarin.Forms. This walkthrough demonstrates that, how to create a simple flow chart and an organization chart.
 
 ## Adding diagram reference
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add diagram to your project, open the NuGet package manager in Visual Studio, and search for [“Syncfusion.Xamarin.SfDiagram”](https://www.nuget.org/packages/Syncfusion.Xamarin.SfDiagram), and then install it.
-![](Getting-Started_images/Getting-Started_img1.jpeg)
+![Diagram reference in Xamarin.Forms diagram](Getting-Started_images/Getting-Started_img1.jpeg)
 
 To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfdiagram) to know about the dependent assemblies for diagram. 
 
@@ -170,7 +170,7 @@ return node;
 {% endtabs %}
 The flow chart will get displayed in the SfDiagram as follows
 
-![Getting started in Xamarin.Forms diagram](Getting-Started_images/Getting-Started_img2.jpeg)
+![Getting started demo in Xamarin.Forms diagram](Getting-Started_images/Getting-Started_img2.jpeg)
 
 This demo project can be downloaded from the following link [GettingStarted_Demo.](http://files2.syncfusion.com/Xamarin.Forms/Samples/Gettingstarted_SfDiagram.zip)
 
@@ -236,6 +236,6 @@ diagram.LayoutManager = new LayoutManager() { Layout = treeLayout };
 {% endhighlight %}
 {% endtabs %}
 The Employee data is displayed in the SfDiagram as follows
-![Simple organizational chart in Xamarin.Forms diagram](Getting-Started_images/Getting-Started_img3.jpeg)
+![Organizational chart demo in Xamarin.Forms diagram](Getting-Started_images/Getting-Started_img3.jpeg)
 
 This demo project can be downloaded from the following link [OrganizationalChart_Demo.](http://files2.syncfusion.com/Xamarin.Forms/Samples/OrganizationalChart_SfDiagram.zip)

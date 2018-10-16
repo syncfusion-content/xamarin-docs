@@ -6,7 +6,7 @@ control: Diagram
 documentation: ug
 keywords: 
 ---
-# DrawingMode
+# Drawing mode
 Drawing mode is used to draw continuously on the diagram area for selected mode dynamically.
 
 ## Text node

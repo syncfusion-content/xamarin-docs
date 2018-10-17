@@ -8,11 +8,11 @@ keywords:
 ---
 
 # Layouts
- SfDiagram provides support to auto-arrange the nodes in the Diagram area that is referred as **Layout.**
+SfDiagram provides support to auto-arrange the nodes in the Diagram area that is referred as **Layout.**
 We have explained the Automatic Layout with Employee class and DataSourceSettings.The followings are initial steps for all the Layout.
 
 ## Create class for data
- Now, you have to create a class, Employee with properties to store the employee’s information like Team, Role, ID, reporting person ID, etc. You also have to create a collection that stores a collection of the employees.
+Now, you have to create a class, Employee with properties to store the employee’s information like Team, Role, ID, reporting person ID, etc. You also have to create a collection that stores a collection of the employees.
 {% tabs %}
 {% highlight c# %}
 //Employee Business Object
@@ -30,7 +30,7 @@ We have explained the Automatic Layout with Employee class and DataSourceSetting
 {% endhighlight %}
 {% endtabs %}
 
-## Initialize Data Source Settings 
+## Initialize data source settings
 {% tabs %}
 {% highlight xml %}
 <!--Initializes the DataSourceSettings -->
@@ -50,8 +50,8 @@ We have explained the Automatic Layout with Employee class and DataSourceSetting
 {% endhighlight %}
 {% endtabs %}
 
-## Organization Layout
-An organizational chart is a Diagram that displays the structure of an organization and relationships. To create an organizational chart, Type should be set as LayoutType.Organization. The following code example illustrates how to create an organizational chart. 
+## Organization layout
+An organizational chart is a Diagram that displays the structure of an organization and relationships. To create an organizational chart, Type should be set as LayoutType.Organization. The following code example illustrates how to create an organizational chart.
 {% tabs %}
 {% highlight xml %}
 <ContentPage.Resources>
@@ -142,7 +142,7 @@ Organizational chart layout starts parsing from root and iterate through all its
 User can change ChartType and Orientation by using BeginNodeLayout event of the SfDiagram. This event will fire for each Node added in Layout when the layout is getting updated. Default ChartType us Alternate and default orientation is Vertical. The following code example illustrates how to register an event and how to change ChartType and orientation.
 {% tabs %}
 {% highlight c# %}
-  // Registering an event 
+// Registering an event 
  diagram.BeginNodeLayout += Diagram_BeginNodeLayout; 
 
 private void Diagram_BeginNodeLayout(object sender, BeginNodeLayoutEventArgs args)
@@ -185,7 +185,7 @@ private void Diagram_BeginNodeRender(object sender, BeginNodeRenderEventArgs arg
 {% endhighlight %}
 {% endtabs %}
 
-## Expand and Collapse Node
+## Expand and collapse node
 User can able to expand and collapse the parent node using NodeClicked event of the SfDiagram. This event will fire when click node in Layout.
 {% tabs %}
 {% highlight c# %}
@@ -205,5 +205,102 @@ void Diagram_NodeClicked(object sender, NodeClickedEventArgs args)
   }
 {% endhighlight %}
 {% endtabs %}
-![](Layout_images/Layout_img1.jpeg)
+![Expand and collpase in Xamarin.Forms diagram](Layout_images/Layout_img1.jpeg)
+
+## Drag-and-drop support for directed tree layout
+It is easier to drag a child or parent node to some other node in the directed tree layout. The following code shows how to enable draggable option in layout.
+{% tabs %}
+{% highlight c# %}
+(diagram.LayoutManager.Layout as DirectedTreeLayout).IsDraggable = true;
+{% endhighlight %}
+{% endtabs %}
+
+The following code shows how to add the child of dropped node while dragging the node using the LayoutNodeDropped event.
+{% tabs %}
+{% highlight c# %}
+// Registering an event
+  diagram.LayoutNodeDropped += Diagram_OnLayoutNodeDropped;
+//Define the LayoutNodeDropped event
+private void Diagram_OnLayoutNodeDropped(object sender, LayoutNodeDroppedEventArgs args)
+{
+			Node draggedNode = args.DraggedItem as Node;
+			Node droppedNode = args.DroppedItem as Node;
+			bool contain = true;
+			if (draggedNode != RootNode && draggedNode != droppedNode)
+			{
+				Node ParentNode = GetParent((droppedNode.Content as DiagramEmployee).ReportingPerson);
+				do
+				{
+					if (ParentNode != draggedNode)
+					{
+						contain = false;
+					}
+					else
+					{
+						contain = true;
+						break;
+					}
+					ParentNode = GetParent((ParentNode.Content as DiagramEmployee).ReportingPerson);
+				} while (ParentNode != RootNode);
+                if (!contain)
+                {
+                    List<Connector> connectors = draggedNode.InConnectors as List<Connector>;
+                    Connector con; bool hasChild = false;
+                    for (int i = 0; i < connectors.Count; i++)
+                    {
+                        con = connectors[i];
+                        con.SourceNode = droppedNode;
+                        hasChild = true;
+                    }
+                    if (hasChild)
+                    {
+                        Node PrevParentNode = GetParent((draggedNode.Content as DiagramEmployee).ReportingPerson);
+                        if (PrevParentNode != null && PrevParentNode.OutConnectors.Count == 0)
+                        {
+                            (PrevParentNode.Content as DiagramEmployee).HasChild = false;
+                            UpdateTemplate(PrevParentNode, "-");
+                        }
+                        DiagramEmployee ParentEmployee = (droppedNode.Content as DiagramEmployee);
+                        (draggedNode.Content as DiagramEmployee).ReportingPerson = ParentEmployee.Name;
+                        ParentEmployee.HasChild = true;
+                        UpdateTemplate(droppedNode, "-");
+                    }
+                    droppedNode.IsExpanded = true;
+                    diagram.LayoutManager.Layout.UpdateLayout();
+                }
+            }
+}
+		private Node GetParent(string parentId)
+		{
+			foreach (Node node in diagram.Nodes)
+			{
+				if ((node.Content as DiagramEmployee).Name == parentId)
+				{
+					return node;
+				}
+			}
+			return RootNode;
+		}
+{% endhighlight %}
+{% endtabs %}
+![Drag and Drop in Xamarin.Forms diagram](Layout_images/Layout_img2.gif)
+
+## Layout sibling spacing
+It is easier to provide spacing between sibling nodes of any branch on the directed tree layout. Nodes can also be excluded from the layout. You can provide space for each node by customizing the “SiblingSpace” property of the node. The following code illustrates how to add space to nodes using sibling spacing class instance.
+{% tabs %}
+{% highlight c# %}
+//Define the sibling spacing for node 
+private void Diagram_BeginNodeRender(object sender, BeginNodeRenderEventArgs args)
+        {
+            Node node = (args.Item as Node);
+            node.ShapeType = ShapeType.RoundedRectangle;
+            node.Width = 90;
+            node.Height = 50;
+            SiblingSpace siblingSpacing = new SiblingSpace(100,100);                
+            node.SiblingSpace = siblingSpacing;
+            node.Annotations.Add(new Annotation() { Content = ((args.Item as Node).Content as Employee).Name });
+        }
+{% endhighlight %}
+{% endtabs %}
+![LayoutSpacing in Xamarin.Forms diagram](Layout_images/LayoutSpacing_img3.png)
 

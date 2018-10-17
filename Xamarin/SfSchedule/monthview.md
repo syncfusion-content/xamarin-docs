@@ -821,6 +821,33 @@ private void Schedule_MonthInlineAppointmentTapped(object sender, MonthInlineApp
 ![Month inline appointment details using MonthInlineAppointmentTapped in schedule xamarin forms](monthview_images/inlineappointmentdetails.png)
 
 ## InlineView Appearance  
+You can customize the inline view with two ways,
+* Customize inline view with Custom UI
+* Customize inline view using style
+
+### Customize inline view with Custom UI
+You can set custom UI for the inline view by using [InlineView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~InlineViewProperty.html) property of `Schedule` 
+{% tabs %}
+{% highlight c# %}
+SfSchedule schedule = new SfSchedule();
+            Button button = new Button();
+            button.BackgroundColor = Color.Red;
+            button.Text = "No Event";
+            button.TextColor = Color.White;
+            schedule.InlineView = button;
+{% endhighlight %}
+{% endtabs %}
+{% tabs %}
+{% highlight XAML %}
+<schedule:SfSchedule x:Name="schedule" ScheduleView="MonthView"  ShowAppointmentsInline="True">
+            <schedule:SfSchedule.InlineView>
+                <Button BackgroundColor="Red" Text="No Events" TextColor="White"/>
+            </schedule:SfSchedule.InlineView>
+        </schedule:SfSchedule>
+{% endhighlight %}
+{% endtabs %}
+
+### Customize inline viw using style
 By using [OnMonthInlineLoadedEvent](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~OnMonthInlineLoadedEvent_EV.html) in `SfSchedule`, you can customize the month inline view by setting [MonthInlineViewStyle](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineViewStyle.html) properties such as [Background](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineViewStyle~BackgroundColor.html), [TextColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineViewStyle~TextColor.html), [FontSize](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineViewStyle~FontSize.html), [FontAttributes](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineViewStyle~FontAttributes.html), [FontFamily](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineViewStyle~FontFamily.html), [TimeTextColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineViewStyle~TimeTextColor.html), [TimeTextSize](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineViewStyle~TimeTextSize.html), [TimeTextFormat](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineViewStyle~TimeTextFormat.html) in the run time. In `OnMonthInlineLoadedEvent`, arguments such as [monthInlineViewStyle](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineLoadedEventArgs~monthInlineViewStyle.html), [appointments](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineLoadedEventArgs~appointments.html), [selectedDate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineLoadedEventArgs~selectedDate.html) are in the MonthInlineLoadedEventArgs.
 
 {% tabs %}
@@ -831,21 +858,37 @@ schedule.OnMonthInlineLoadedEvent += Schedule_OnMonthInlineLoadedEvent;
 
 private void Schedule_OnMonthInlineLoadedEvent(object sender, MonthInlineLoadedEventArgs args)
 {
-    MonthInlineViewStyle monthInlineViewStyle = new MonthInlineViewStyle();
-    monthInlineViewStyle.BackgroundColor = Color.Blue;
-    monthInlineViewStyle.TextColor = Color.Green;
-    monthInlineViewStyle.FontSize = 20;
-    monthInlineViewStyle.FontAttributes = FontAttributes.None;
-    monthInlineViewStyle.FontFamily = "Times New Roman";
-    monthInlineViewStyle.TimeTextColor = Color.Red;
-    monthInlineViewStyle.TimeTextSize = 15;
-    monthInlineViewStyle.TimeTextFormat = "hh a";
-    args.monthInlineViewStyle = monthInlineViewStyle;
+    var appointments = e.appointments.Cast<ScheduleAppointment>().ToList();
+            MonthInlineViewStyle monthInlineViewStyle = new MonthInlineViewStyle();
+            if (appointments != null && appointments.Count > 0)
+            {
+                monthInlineViewStyle.BackgroundColor = Color.Blue;
+                monthInlineViewStyle.TextColor = Color.Green;
+                monthInlineViewStyle.FontSize = 20;
+                monthInlineViewStyle.FontAttributes = FontAttributes.None;
+                monthInlineViewStyle.FontFamily = "Times New Roman";
+                monthInlineViewStyle.TimeTextColor = Color.Red;
+                monthInlineViewStyle.TimeTextSize = 15;
+                monthInlineViewStyle.TimeTextFormat = "hh a";
+            }
+            else
+            {
+                // Style to customize the No Events label
+                monthInlineViewStyle.BackgroundColor = Color.Red;
+                monthInlineViewStyle.FontAttributes = FontAttributes.Italic;
+                monthInlineViewStyle.FontFamily = "Times New Roman";
+                monthInlineViewStyle.TimeTextColor = Color.White;
+                monthInlineViewStyle.TimeTextSize = 20;
+            }
+
+            e.monthInlineViewStyle = monthInlineViewStyle;
 }
 {% endhighlight %}
 {% endtabs %}
 
 ![Month inline appointment details formatting and appearance in schedule xamarin forms](monthview_images/inlineviewstyle.png)
+
+Get the complete sample for this [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/InlineCustomization1767459049).
 
 >**NOTE**
 FontAttributes and FontFamily are native to the  platform. Custom font and the font which are not available in the specified platform will not be applied.

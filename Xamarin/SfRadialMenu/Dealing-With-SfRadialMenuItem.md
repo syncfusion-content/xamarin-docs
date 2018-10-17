@@ -635,7 +635,7 @@ namespace radialsample
 
 The following screenshot illustrates the result of the above code sample.
 
-![](images/BaBackgroundimage.png)
+![](images/Backgroundimage.png)
 
 You can download the sample for reference from the following link: [Sample for adding BackgroundImage](http://www.syncfusion.com/downloads/support/directtrac/general/ze/sample1550408146).
 

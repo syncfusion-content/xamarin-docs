@@ -11,7 +11,7 @@ keywords: Diagram, org chart, flowchart, shape, use case, workflow.
 
 The diagram control allows to create different types of diagrams such as flowcharts, use case diagrams, workflow process diagrams, etc.
 
-![](Overview_images/img1.png)
+![Overview in Xamarin.Forms diagram](Overview_images/img1.png)
 
 
 ## Key features

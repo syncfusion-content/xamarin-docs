@@ -615,7 +615,7 @@ namespace radial
             radialMenu.RimRadius = 210;
             radialMenu.CenterButtonRadius = 70;
             Image image = new Image();
-            image.Source = "Hema.png";
+            image.Source = "Center.png";
             radialMenu.CenterButtonView = image;
             for (int i = 0; i < 5; i++)
             {

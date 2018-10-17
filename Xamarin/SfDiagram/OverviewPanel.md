@@ -11,7 +11,7 @@ The overview panel is used to display the preview (overall mini view) of the ent
 When working on a large diagram, to navigate, you have to zoom out the entire diagram to find where you are. This solution is not suitable when frequent navigation is required.
 The overview control solves this problem by displaying a preview (overall view) of the entire diagram, A rectangle indicates the viewport of the diagram. Navigation is made easy by dragging this rectangle. 
 
-## Create OverviewPanel 
+## Create overview panel 
 The following code shows how to create overview panel in a diagram.
 {% tabs %}
 {% highlight xml %}
@@ -33,9 +33,9 @@ diagram.OverviewPanel = overview;
 {% endhighlight %}
 {% endtabs %}
 
-![overview](OverviewPanel_images/OverviewPanel.gif)
+![Overview panle in Xamarin.Forms diagram](OverviewPanel_images/OverviewPanel.gif)
 
-### PreventRefresh
+### Prevent refresh
 Prevents diagram being updated in overview panel if any interaction takes place in the diagram layer. Prevents the diagram update for the entire actions till the property is set to true. This property is helpful when there is no need for frequent refreshing in the overview panel.
 {% tabs %}
 {% highlight c# %}
@@ -47,7 +47,7 @@ Prevents diagram being updated in overview panel if any interaction takes place 
 {% endhighlight %}
 {% endtabs %}
 
-### Force Refresh 
+### Force refresh 
 This method force refreshes the diagram in the overview panel. When the overview panel is prevented from updating diagram interaction by enabling PreventRefresh, force refresh is used to update the diagram in the overview panel. 
 {% tabs %}
 {% highlight c# %}

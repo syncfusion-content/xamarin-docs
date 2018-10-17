@@ -9,7 +9,7 @@ keywords:
 # Connector
 Connectors are objects used to create link between two Points, Nodes or ports to represent the relationships between them.
 
-## Create Connector
+## Create connector
 Connector can be created by defining the start and end points.
 {% tabs %}
 {% highlight xml %}
@@ -32,7 +32,7 @@ diagram.AddConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
 
-## Connections with Nodes
+## Connections with nodes
 The SourceNode and TargetNode properties allow to define the Nodes to be connected. The following code example illustrates how to connect two Nodes.
 {% tabs %}
 {% highlight c# %}
@@ -50,12 +50,12 @@ var connector1 = new Connector()
 diagram.AddConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img1.jpeg)
+![Connection with nodes in Xamarin.Forms diagram](Connector_images/Connector_img1.jpeg)
 
-## Connections with Ports
+## Connections with ports
 The SourcePort and TargetPort properties allow to create connections between some specific points of Source/Target Nodes. The following code examples illustrates how to use Port to Port connection.
 
-## Using Port
+## Using port
 The following code example illustrates how to create Port and connect using that ports.
 {% tabs %}
 {% highlight c# %}
@@ -83,7 +83,7 @@ var connector1 = new Connector()
 diagram.AddConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img2.jpeg)
+![Using port in Xamarin.Forms diagram](Connector_images/Connector_img2.jpeg)
 
 ## Segments
 The path of the Connector is defined with a collection of segments.
@@ -111,7 +111,7 @@ var connector1 = new Connector()
 diagram.AddConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img3.jpeg)
+![Straight connector in Xamarin.Forms diagram](Connector_images/Connector_img3.jpeg)
 
 ## Orthogonal
 Orthogonal segments are used to create segments that are perpendicular to each other.
@@ -137,7 +137,7 @@ var connector1 = new Connector()
 diagram.AddConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img4.jpeg)
+![Orthogonal connector in Xamarin.Forms diagram](Connector_images/Connector_img4.jpeg)
 
 ## Curve
 Curve segments are used to create links between two points, nodes or ports with curve segments. The following code example illustrates how to create a default curve segment.
@@ -151,7 +151,7 @@ connector.SegmentType = SegmentType.CurveSegment;
 diagram.AddConnector(connector);
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img5.jpeg)
+![Curve connector in Xamarin.Forms diagram](Connector_images/Connector_img5.jpeg)
 
 ## Decorator
 Start and end points of a Connector can be decorated with some customizable shapes like arrows, circles, diamond and square. You can decorate the connection end points with the SourceDecorator and TargetDecorator properties of Connector.
@@ -179,9 +179,9 @@ var connector1 = new Connector()
 diagram.AddConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img7.jpeg)
+![Connector decorator in Xamarin.Forms diagram](Connector_images/Connector_img7.jpeg)
 
-## Remove Connector
+## Remove connector
 Connector can be removed or detached from connection in two ways.
 1. passing the connector as parameter to Remove connector method in diagram
 The following code example illustrates how to remove a connector from connection
@@ -219,7 +219,7 @@ diagram.Connectors.RemoveAt(0);
 ## Appearance
 StrokeThickness, Stroke and style of the LineConnector and Decorators can be customized with a set of defined properties.
 
-## Connector Appearance
+## Connector appearance
 The following code example illustrates how to customize the Connector appearance.
 {% tabs %}
 {% highlight xml %}
@@ -253,9 +253,9 @@ connector1.Style = new Syncfusion.SfDiagram.XForms.Style()
 diagram.AddConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img8.jpeg)
+![Connector appearance in Xamarin.Forms diagram](Connector_images/Connector_img8.jpeg)
 
-## Decorator Appearance
+## Decorator appearance
 The following code example illustrates how to customize the appearance of the decorator.
 {% tabs %}
 {% highlight xml %}
@@ -304,5 +304,5 @@ connector1.SourceDecoratorStyle = new DecoratorStyle()
 diagram.AddConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img9.jpeg)
+![Decorator appearance in Xamarin.Forms diagram](Connector_images/Connector_img9.jpeg)
 

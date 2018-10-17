@@ -15,7 +15,7 @@ xmlns:sfDiagram="clr-namespace:Syncfusion.SfDiagram.XForms;assembly=Syncfusion.S
 {% endhighlight %}
 {% endtabs %}
 
-## Add Default shapes into stencil
+## Add default shapes into stencil
 The following example illustrates how to add the Symbol into a Collection:
 {% tabs %}
 {% highlight xml %}
@@ -61,7 +61,7 @@ stencil.SymbolGroups.Add(new SymbolGroup() { SymbolSource = coll, HeaderName = "
 {% endtabs %}
 This Collection will be the SymbolSource to the Stencil. Based on the SymbolSource, the Stencil will populate the Symbols.
 
-![](Stencil_images/Stencil_img1.jpeg)
+![Default shapes into stencil in Xamarin.Forms diagram](Stencil_images/Stencil_img1.jpeg)
 
 ## Add custom shapes into stencil
 The following example illustrates how to add the custom shapes into a Collection:
@@ -152,9 +152,9 @@ The following example illustrates how to add the custom shapes into a Collection
 stencil.SymbolGroups.Add(new SymbolGroup() { SymbolSource = CustomShapeCollection , HeaderName = "Custom Shapes" });
 {% endhighlight %}
 {% endtabs %}
-![](Stencil_images/Stencil_img2.jpeg)
+![Custom shapes into stencil in Xamarin.forms diagram](Stencil_images/Stencil_img2.jpeg)
 
-## Add Category heading text
+## Add category heading text
 We can able to add category of symbol group heading in stencil. The following example illustrates how to add category heading text in stencil.
 {% tabs %}
 {% highlight xml %}
@@ -211,5 +211,5 @@ stencil.SymbolGroups.Add(new SymbolGroup() { SymbolSource = con1, HeaderName = "
 diagram.Stencil=stencil;
 {% endhighlight %}
 {% endtabs %}
-![](Stencil_images/Stencil_img3.jpeg)
+![Category heading text in Xamarin.Forms diagram](Stencil_images/Stencil_img3.jpeg)
 

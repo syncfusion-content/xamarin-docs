@@ -566,3 +566,76 @@ void Handle_ItemTapped(object sender, Syncfusion.SfRadialMenu.XForms.ItemTappedE
 {% endhighlight %}
 
 ![](images/backgroundOpen.png)
+
+
+## How to set the backgroundimage to RadialMenuItem
+
+This section explains how to add a background image for radial menu items.
+
+{% highlight c#%}
+ mainMenuItems.BackgroundImage = "John.png";
+{% endhighlight %}
+
+The following code sample demonstrates how to set image for RadialMenuItem background.
+
+{% tabs %}
+{% highlight xaml %}
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+xmlns:local="clr-namespace:App22"
+xmlns:radialMenu="clr-namespace:Syncfusion.SfRadialMenu.XForms;assembly=Syncfusion.SfRadialMenu.XForms"
+x:Class="App22.MainPage">
+    <Grid>
+        <radialMenu:SfRadialMenu x:Name="radial_Menu" RimRadius="210" CenterButtonRadius="70" CenterButtonBackgroundColor="White">
+            <radialMenu:SfRadialMenu.CenterButtonView>
+                <Image Source="ellana.png" WidthRequest="40" HeightRequest="40" />
+            </radialMenu:SfRadialMenu.CenterButtonView>
+            <radialMenu:SfRadialMenu.Items>
+                <radialMenu:SfRadialMenuItem BackgroundImage="Jack.png" ItemWidth="40" ItemHeight="40"/>
+                <radialMenu:SfRadialMenuItem BackgroundImage="John.png" ItemHeight="40" ItemWidth="40"/>
+                <radialMenu:SfRadialMenuItem BackgroundImage="Allan.png" ItemHeight="40" ItemWidth="40"/>
+                <radialMenu:SfRadialMenuItem BackgroundImage="Alex.png" ItemHeight="40" ItemWidth="40"/>
+                <radialMenu:SfRadialMenuItem BackgroundImage="Josh.png" ItemHeight="40" ItemWidth="40"/>
+            </radialMenu:SfRadialMenu.Items>
+        </radialMenu:SfRadialMenu>
+    </Grid>
+</ContentPage>
+{% endhighlight %}
+
+{% highlight c#%}
+namespace radialsample
+{
+	public partial class MainPage : ContentPage
+	{
+            public MainPage()
+	    {
+	    InitializeComponent();      
+            SfRadialMenu radialMenu = new SfRadialMenu();
+            radialMenu.RimRadius = 210;
+            radialMenu.CenterButtonRadius = 70;
+            Image img = new Image();
+            img.Source = "ellana.png";
+            radialMenu.CenterButtonView = img;
+            for (int i = 0; i < 5; i++)
+            {
+                String[] BackgroundImage = {"Jack" ,"John", "Allan","Alex" ,"Josh" };
+                SfRadialMenuItem mainMenuItems = new SfRadialMenuItem();
+                mainMenuItems.BackgroundImage = BackgroundImage[i]+".png";
+                mainMenuItems.ItemWidth = 40;
+                mainMenuItems.ItemHeight = 40;
+                radialMenu.Items.Add(mainMenuItems);
+            }
+            this.Content = radialMenu;
+         }
+      }
+    }
+{% endhighlight %}
+{% endtabs %}
+
+The following screenshot illustrates the result of the above code sample.
+
+![](images/BaBackgroundimage.png)
+
+You can download the sample for reference from the following link: [Sample for adding BackgroundImage](http://www.syncfusion.com/downloads/support/directtrac/general/ze/sample1550408146).
+

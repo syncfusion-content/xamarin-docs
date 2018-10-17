@@ -47,7 +47,7 @@ kanban.ColorModel = colorModels;
 
 {% endhighlight %}
 
-![Customization of cards in XForms Kanban](SfKanban_images/CardCustomization.png)
+![Customization of cards in Xamarin.Forms Kanban](SfKanban_images/CardCustomization.png)
 
 ## Template
 
@@ -139,4 +139,4 @@ kanban.CardTemplate = cardTemplate;
 
 {% endtabs %}
 
-![Template support for cards in XForms Kanban](SfKanban_images/CardTemplate.png)
+![Template support for cards in Xamarin.Forms Kanban](SfKanban_images/CardTemplate.png)

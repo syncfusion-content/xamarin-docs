@@ -82,7 +82,7 @@ progressColumn.Categories = new List<object>() { "In Progress", "Validated" };
 
 {% endhighlight %}
 
-![Multiple category support for a column in XForms Kanban](SfKanban_images/MultipleCategoryMapping.png)
+![Multiple category support for a column in Xamarin.Forms Kanban](SfKanban_images/MultipleCategoryMapping.png)
 
 ## Headers
 
@@ -126,7 +126,7 @@ kanban.HeaderTemplate = headerTemplate;
 
 The following output is displayed as a result of the above code example.
 
-![Headers in XForms kanban](SfKanban_images/HeaderTemplate.png)
+![Headers in Xamarin.Forms kanban](SfKanban_images/HeaderTemplate.png)
 
 ## Expand/Collapse Column
 
@@ -159,7 +159,7 @@ kanban.Columns.Add(column2);
 
 The following output is displayed as a result of the above code example.
 
-![Expand and Collapse column support in XForms Kanban](SfKanban_images/ExpandColumn.png)
+![Expand and Collapse column support in Xamarin.Forms Kanban](SfKanban_images/ExpandColumn.png)
 
 
 ## Enable/Disable Drag & Drop 
@@ -210,7 +210,7 @@ progressColumn.AllowDrop = false;
 
 The following output demonstrates the above example code.
  
-![DragAndDrop support in XForms Kanban](SfKanban_images/DragAndDrop.png)
+![DragAndDrop support in Xamarin.Forms Kanban](SfKanban_images/DragAndDrop.png)
 
 
 ## Items Count
@@ -276,6 +276,6 @@ todoColumn.ErrorbarSettings.Height = 4;
 
 {% endtabs %}
 
-![Work in progress limit for column in XForms Kanban](SfKanban_images/ErrorbarSettings.png)
+![Work in progress limit for column in Xamarin.Forms Kanban](SfKanban_images/ErrorbarSettings.png)
 
 

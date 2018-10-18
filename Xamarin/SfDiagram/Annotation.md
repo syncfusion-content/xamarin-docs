@@ -11,7 +11,7 @@ keywords:
 Annotation is a block of text that can be displayed over a Node or Connector. Annotation is used to textually represent an object with a string that can be edited at run time. 
 You can add Multiple Labels to a Node/Connector.
 
-## Create Annotation
+## Create annotation
 You can add an Annotation to a Node/Connector by defining the Annotation and adding that to the Annotations property of Node/Connector. The Content property of Annotation defines the object to be displayed. The following code illustrates how to create an Annotation.
 {% tabs %}
 {% highlight xml %}
@@ -53,7 +53,7 @@ Connector1.Annotations.Add(new Annotation() { Content = "Label" });diagram.AddCo
 
 {% endhighlight %}
 {% endtabs %}
-![](Annotation_images/Annotation_img1.jpeg)
+![Annotation in Xamarin.Forms diagram](Annotation_images/Annotation_img1.jpeg)
 
 ## Accessing an annotation form node and connector instance
 User can able to access the node or connector annotation using annotation name. The following code illustrates how to access an Annotation.
@@ -89,7 +89,7 @@ Connector1.Annotations.RemoveAt(0);
 {% endhighlight %}
 {% endtabs %}
 
-## Annotation Customization
+## Annotation customization
 User can able to customize the annotation using properties. The following code illustrates how to remove an Annotation.
 {% tabs %}
 {% highlight xml %}
@@ -145,7 +145,7 @@ diagram.AddConnector(Connector1);
 {% endhighlight %}
 {% endtabs %}
 The following output is displayed as result of the above code example.
-![](Annotation_images/Annotation_img2.jpeg)
+![Annotation customization in Xamarin.Forms diagram](Annotation_images/Annotation_img2.jpeg)
 
 ## Alignment
 Annotation can be aligned relative to the Node boundaries. It has Horizontal and Vertical Alignment settings. It is quite tricky when all four alignments are used together but gives you more control over alignment.
@@ -201,5 +201,5 @@ diagram.AddConnector(Connector1);
 {% endhighlight %}
 {% endtabs %}
 The following output is displayed as result of the above code example.
-![](Annotation_images/Annotation_img3.jpeg)
+![Annotation alignment in Xamarin.Forms diagram](Annotation_images/Annotation_img3.jpeg)
 

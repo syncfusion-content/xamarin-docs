@@ -87,7 +87,7 @@ void HandleUserHandleClickedEventHandler(object sender, UserHandleClickedEventAr
 
 {% endhighlight %}
 {% endtabs %}
-![](Userhandles_images/Userhandles_img1.jpeg)
+![Userhandle in Xamarin.Forms diagram](Userhandles_images/Userhandles_img1.jpeg)
 
 ## Customizing user handle position
 User handle position can be moved or adjusted from its default position. The following code shows how to adjust the position using the “MoveBy” method.
@@ -106,5 +106,5 @@ User handle position can be moved or adjusted from its default position. The fol
             diagram.UserHandles = userHandles;
 {% endhighlight %}
 {% endtabs %}
-![Customize user handle position](Userhandles_images/Userhandles_img2.jpeg)
+![Customize user handle position in Xamarin.Forms diagram](Userhandles_images/Userhandles_img2.jpeg)
 

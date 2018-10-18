@@ -82,11 +82,11 @@ progressColumn.Categories = new List<object>() { "In Progress", "Validated" };
 
 {% endhighlight %}
 
-![](SfKanban_images/MultipleCategoryMapping.png)
+![Multiple category support for a column in Xamarin.Forms Kanban](SfKanban_images/MultipleCategoryMapping.png)
 
 ## Headers
 
-Header shows the category, items count, min and max informations of a column. The UI of the header can be replaced entirely using [`SfKanban.HeaderTemplate`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~HeaderTemplate.html) property. The following code snippet and screenshot illustrates this.
+Header shows the category [`Title`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanColumn~Title.html), items count, min and max informations of a column. The UI of the header can be replaced entirely using [`SfKanban.HeaderTemplate`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~HeaderTemplate.html) property. The following code snippet and screenshot illustrates this.
 
 {% tabs %}
 
@@ -126,7 +126,7 @@ kanban.HeaderTemplate = headerTemplate;
 
 The following output is displayed as a result of the above code example.
 
-![](SfKanban_images/HeaderTemplate.png)
+![Headers in Xamarin.Forms kanban](SfKanban_images/HeaderTemplate.png)
 
 ## Expand/Collapse Column
 
@@ -159,7 +159,7 @@ kanban.Columns.Add(column2);
 
 The following output is displayed as a result of the above code example.
 
-![](SfKanban_images/ExpandColumn.png)
+![Expand and Collapse column support in Xamarin.Forms Kanban](SfKanban_images/ExpandColumn.png)
 
 
 ## Enable/Disable Drag & Drop 
@@ -210,7 +210,7 @@ progressColumn.AllowDrop = false;
 
 The following output demonstrates the above example code.
  
-![](SfKanban_images/DragAndDrop.png)
+![DragAndDrop support in Xamarin.Forms Kanban](SfKanban_images/DragAndDrop.png)
 
 
 ## Items Count
@@ -226,7 +226,7 @@ int count = todoColumn.ItemsCount;
 
 ## Work In-Progress Limit
 
-[`MinimumLimit`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanColumn~MinimumLimit.html) and [`MaximumLimit`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanColumn~MaximumLimit.html) properties are used to define the minimum and maximum number of items in a column. If the actual items count is exceeded or lesser than the specified limits, the error bars are used to indicate this violation. Following properties are used to customize the appearance of error bar.
+[`MinimumLimit`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanColumn~MinimumLimit.html) and [`MaximumLimit`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanColumn~MaximumLimit.html) properties are used to define the minimum and maximum number of items in a column. If the actual items count is exceeded or lesser than the specified limits, the error bars are used to indicate this violation. Following properties of [`ErrorbarSettings`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanColumn~ErrorbarSettings.html) are used to customize the appearance of error bar.
 
 * [`Color`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanErrorBarSettings~Color.html) - used to change the default color of the error bar.
 * [`MaxValidationColor`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanErrorBarSettings~MaxValidationColor.html) - used to change the maximum validation color of the error bar.
@@ -276,6 +276,6 @@ todoColumn.ErrorbarSettings.Height = 4;
 
 {% endtabs %}
 
-![](SfKanban_images/ErrorbarSettings.png)
+![Work in progress limit for column in Xamarin.Forms Kanban](SfKanban_images/ErrorbarSettings.png)
 
 

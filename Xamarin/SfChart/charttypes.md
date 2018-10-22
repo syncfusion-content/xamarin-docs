@@ -109,7 +109,7 @@ fastLineSeries.StrokeDashArray = new double[2] { 2, 3 };
 
 ![Dashed lines support for FastLineSeries in Xamarin.Forms Chart](charttypes_images/charttypes_img15.png)
 
-## EnableAntiAliasing: 
+### EnableAntiAliasing 
 
 Since [`FastLineSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FastLineSeries.html) can be loaded with a large number of points, the rendering of series should be smooth. This requirement can be achieved by setting [`EnableAntiAliasing`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FastLineSeries~EnableAntiAliasing.html) property of [`FastLineSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FastLineSeries.html) as false.
 

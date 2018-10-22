@@ -40,16 +40,16 @@ The following code example describes the above behavior.
 <kanban:SfKanban.PlaceholderStyle >
 
 <kanban:KanbanPlaceholderStyle FontSize="16"
-TextColor="Red"
+TextColor="Green"
 BackgroundColor="Fuchsia"
 BorderColor="Fuchsia"
 BorderThickness="2"
 
 SelectedFontSize="16"
-SelectedTextColor="Green"
+SelectedTextColor="Red"
 SelectedBorderColor="Yellow"
 SelectedBorderThickness="2"
-SelectedBackgroundColor="Fuchsia">
+SelectedBackgroundColor="Green">
 </kanban:KanbanPlaceholderStyle>
 
 </kanban:SfKanban.PlaceholderStyle>
@@ -61,16 +61,16 @@ SelectedBackgroundColor="Fuchsia">
 KanbanPlaceholderStyle style = new KanbanPlaceholderStyle();
 
 style.FontSize = 20;
-style.TextColor = Color.Red;
+style.TextColor = Color.Green;
 style.BackgroundColor = Color.FromRgb(239, 89, 123);
 style.BorderColor = Color.Blue;
 style.BorderThickness = 2;
 style.StrokeDashArray = new double[] { 1, 1 };
 
 style.SelectedFontSize = 20;
-style.SelectedTextColor = Color.Green;
+style.SelectedTextColor = Color.Red;
 style.SelectedBorderColor = Color.Yellow;
-style.SelectedBackgroundColor = Color.FromRgb(239, 89, 123);
+style.SelectedBackgroundColor = Color.FromRgb(0, 255, 0);
 style.SelectedBorderThickness = 2;
 style.SelectedStrokeDashArray = new double[] { 2, 1 };
 

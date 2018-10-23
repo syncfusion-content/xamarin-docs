@@ -434,7 +434,7 @@ chart.Series.Add(splineRangeAreaSeries);
 
 ![SplineRangeArea chart type in Xamarin.Forms](charttypes_images/SplineRangeArea.png)
 
-## Spline Range Area Series Type
+### Spline Range Area Series Type
 
 [`SplineType`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineRangeAreaSeries~SplineType.html) property allows you to change the spline range area curve in series.
 
@@ -2541,7 +2541,7 @@ doughnutSeries.CenterView = new Label() { Text = "CenterView" };
 
 ![CenterView support for doughnut series in Xamarin.Forms Chart](charttypes_images/charttypes_img41.png)
 
-## InnerRadius
+### InnerRadius
 
 The [`InnerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DoughnutSeries~InnerRadius.html) property of [`DoughnutSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DoughnutSeries.html) is used to get only the inner radius. Using this [`InnerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DoughnutSeries~InnerRadius.html) value, you can provide [`CentreView`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.DoughnutSeries~CenterView.html) for series to avoid the view from being cropped outside the series.
 

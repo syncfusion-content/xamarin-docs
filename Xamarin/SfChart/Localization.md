@@ -9,7 +9,6 @@ documentation: ug
 
 # Localization 
 
-
 You can set localization for [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html) in all the platforms by adding a .resx file in a .NET Standard project alone. The following steps describe how to set localization for SfChart in a project and you can download the complete sample [`here`](https://github.com/SyncfusionExamples/how-to-localize-the-labels-in-xamarin-forms-sfchart).
 
 N> Here, resources have been already created for some cultures and shared them on the [`Syncfusion GitHub`](https://github.com/syncfusion/xamarin-localized-texts) for your convenience.

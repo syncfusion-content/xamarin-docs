@@ -7,7 +7,7 @@ control: Chart
 documentation: ug
 ---
 
-# Localization 
+## Localization 
 
 You can set localization for [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html) in all the platforms by adding a .resx file in a .NET Standard project alone. The following steps describe how to set localization for SfChart in a project and you can download the complete sample [`here`](https://github.com/SyncfusionExamples/how-to-localize-the-labels-in-xamarin-forms-sfchart).
 
@@ -19,7 +19,7 @@ N> Here, resources have been already created for some cultures and shared them o
 
 3. Provide French values for each key in the respective .resx files. Here, “Close” and “High” are the keys, and “Fermer” and “Haute” are their respective French values.
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <data name="Close" xml:space="preserve">
   <value>Fermer</value>
@@ -37,3 +37,18 @@ N> Here, resources have been already created for some cultures and shared them o
 ChartResourceManager.Manager = new ResourceManager("GettingStarted.Resources.Syncfusion.SfChart.XForms", Application.Current.GetType().Assembly);
 
 {% endhighlight %} 
+
+## Localize at the application level
+
+We have seen how the application can be localized for the chosen language of the device. However, we can also localize the text at the application level regardless of the language selected on the device. The following platform-specific codes are needed to achieve this. Use the dependency services to set this from the .NET Standard project.
+
+{% highlight C# %}
+
+//For Android and iOS,
+Thread.CurrentThread.CurrentUICulture = new CultureInfo("fr-FR");
+
+//For UWP,
+CultureInfo.CurrentUICulture = new CultureInfo("fr-FR");
+
+{% endhighlight %} 
+

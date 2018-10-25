@@ -54,3 +54,4 @@ CultureInfo.CurrentUICulture = new CultureInfo("fr-FR");
 
 {% endhighlight %} 
 
+![Localization support in Xamarin.Forms DateTimeRangeNavigator](localization_images/RangeNavigatorLocalization.png)

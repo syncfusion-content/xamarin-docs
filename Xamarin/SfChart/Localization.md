@@ -54,3 +54,4 @@ CultureInfo.CurrentUICulture = new CultureInfo("fr-FR");
 
 {% endhighlight %} 
 
+![Localization support in Xamarin.Forms Chart](localization_images/ChartLocalization.png)

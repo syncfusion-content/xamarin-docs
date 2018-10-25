@@ -17,6 +17,8 @@ N> Here, the resources have been already created for some cultures and shared th
 
 2. Add resource files for the languages you wish to support, and set their Build Action to EmbeddedResource. The name of the resource file should be $name of the Syncfusion component$+$language code$+.resx. For example, if you add a resource file for the French culture, add the Syncfusion.SfChart.XForms.fr-FR.resx file to Resources folder as illustrated in the following screenshot.
 
+![Localization support in Xamarin.Forms Chart](localization_images/LocalizationResource.png)
+
 3. Provide the French values for each key in the respective .resx files. Here, “Close” and “High” are the keys, and “Fermer” and “Haute” are their respective French values.
 
 {% highlight xml %}
@@ -40,7 +42,7 @@ ChartResourceManager.Manager = new ResourceManager("GettingStarted.Resources.Syn
 
 ## Localize at application level
 
-You can also localize the text at application-level regardless of the language selected on the device. The following platform-specific codes are needed to localize the text at application-level. Use the dependency services to set this from .NET Standard project.
+You can also localize the text at application-level regardless of the language selected on the device. The following platform-specific codes are needed to localize the text at application-level. Use the [`DependencyServices`](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/dependency-service/introduction) to set this from .NET Standard project.
 
 {% highlight C# %}
 

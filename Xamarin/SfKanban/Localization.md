@@ -17,7 +17,7 @@ N> Here, the resources have been already created for some cultures and shared th
 
 2. Add resource files for the languages you wish to support, and set their Build Action to EmbeddedResource. The name of the resource file should be $name of the Syncfusion component$+$language code$+.resx. For example, if you add a resource file for the French culture, add the Syncfusion.SfKanban.XForms.fr-FR.resx file to Resources folder as illustrated in the following screenshot.
 
-
+![Localization support in Xamarin.Forms Kanban](SfKanban_images\LocalizationResource.png)
 
 Provide the French values for each key in the respective .resx files. Here, “ItemsCount” and “Max” are the keys, and “Fritems” and “frmax” are their respective French values.
 

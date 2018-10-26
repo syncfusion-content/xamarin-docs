@@ -143,7 +143,7 @@ Now populate this EmployeeViewModel data in SfComboBox control by binding with [
     <local:EmployeeViewModel/>
  </ContentPage.BindingContext>
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DataSource="{Binding EmployeeCollection}"/>
+	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DataSource="{Binding EmployeeCollection}" DisplayMemberPath-"Name" />
 </StackLayout> 
 </ContentPage>
 
@@ -151,24 +151,21 @@ Now populate this EmployeeViewModel data in SfComboBox control by binding with [
 
 {% highlight c# %}
 
-StackLayout layout = new StackLayout() 
-{ 
-	VerticalOptions = LayoutOptions.Start, 
-	HorizontalOptions = LayoutOptions.Start, 
-	Padding = new Thickness(30) 
-}; 
+StackLayout layout = new StackLayout()
+{
+	VerticalOptions = LayoutOptions.Start,
+	HorizontalOptions = LayoutOptions.Start,
+	Padding = new Thickness(30)
+};
 
-SfComboBox comboBox = new ComboBox();
+EmployeeViewModel employee = new EmployeeViewModel();
+SfComboBox comboBox = new SfComboBox();
 comboBox.HeightRequest = 40;
+comboBox.BindingContext = employee;
+comboBox.DataSource = employee.EmployeeCollection;
 comboBox.DisplayMemberPath = "Name";
-comboBox.BindingContext = new EmployeeViewModel();
 
-Binding binding = new Binding("EmployeeCollection");
-binding.Source = this;
-binding.Mode = BindingMode.TwoWay;
-comboBox.SetBinding(Label.DataSourceProperty,binding);
-
-layout.Children.Add(comboBox); 
+layout.Children.Add(comboBox);
 Content = layout;
 
 {% endhighlight %}

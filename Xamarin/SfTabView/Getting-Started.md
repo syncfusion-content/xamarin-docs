@@ -259,6 +259,27 @@ tabView.VisibleHeaderCount = 3;
 
 After set the number of tabs, you can add the required controls for your application. Here, a `ListView` has been added in the content region.
 
+## Set background color for tabview
+
+To set color for the whole tab view control, set `BackgroundColor` property of tab view control. This will change the background color for whole tab view content and tab view header with same color.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<tabView:SfTabView BackgroundColor="Red" >
+	
+{% endhighlight %}
+
+{% highlight C# %}
+
+tabView.BackgroundColor = Color.Red;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
 ## Adding ListView in tab view
 
 ## Preparing data

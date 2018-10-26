@@ -73,7 +73,7 @@ Content = layout;
 
 {% endtabs %}
 
-![](images/Populating-Data/populating-data-string.png)
+![DataStringImage](images/Populating-Data/populating-data-string.png)
 
 ## Populating business objects
 
@@ -184,7 +184,7 @@ comboBox.DisplayMemberPath = "Name";
 	
 {% endhighlight %}
 
-![](images/Populating-Data/populating-data-business-object.png)
+![BusinessObjectImage](images/Populating-Data/populating-data-business-object.png)
 
 ### Setting ItemTemplate
 
@@ -252,4 +252,4 @@ Refer to [this](https://help.syncfusion.com/xamarin/sfcombobox/customizing-combo
 
 N> Add the required image in drawable folder(Android), Resources folder(iOS) and at project location for UWP.
 
-![](images/Populating-Data/item-template.png)
+![ItemTemplateImage](images/Populating-Data/item-template.png)

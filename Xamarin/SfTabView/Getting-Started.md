@@ -108,7 +108,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 This section explains how to create a tab view and configure it. The control can be configured entirely in C# code or by using XAML markup. The following screenshot illustrates the output of tab view on iOS, Android and UWP devices.
 
-![](images/Getting-Started/xamarin_forms_tabview.png)
+![TabViewImage](images/Getting-Started/xamarin_forms_tabview.png)
 
 # Creating the project
 
@@ -259,7 +259,7 @@ tabView.VisibleHeaderCount = 3;
 
 After set the number of tabs, you can add the required controls for your application. Here, a `ListView` has been added in the content region.
 
-## Set background color for tabview
+## Set background color for tab view
 
 To set color for the whole tab view control, set `BackgroundColor` property of tab view control. This will change the background color for whole tab view content and tab view header with same color.
 

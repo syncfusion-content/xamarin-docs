@@ -235,16 +235,14 @@ StackLayout layout = new StackLayout()
 	Padding = new Thickness(30) 
 }; 
 
-SfComboBox comboBox = new ComboBox();
+EmployeeViewModel employee = new EmployeeViewModel();
+SfComboBox comboBox = new SfComboBox();
 comboBox.HeightRequest = 40;
-comboBox.BindingContext = new EmployeeViewModel();
-Binding binding = new Binding("EmployeeCollection");
-binding.Source = this;
-binding.Mode = BindingMode.TwoWay;
-comboBox.SetBinding(Label.DataSourceProperty,binding);
+comboBox.BindingContext = employee;
+comboBox.DataSource = employee.EmployeeCollection;
 comboBox.ItemTemplate = itemTemplate;
 
-layout.Children.Add(comboBox); 
+layout.Children.Add(comboBox);
 Content = layout;
 
 {% endhighlight %}

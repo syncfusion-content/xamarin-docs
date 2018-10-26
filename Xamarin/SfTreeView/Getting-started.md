@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section provides a quick overview for getting started with the SfTreeView for Xamarin.Forms. Walk through the entire process of creating an app with SfTreeView.
+This section provides a quick overview for getting started with the TreeView for Xamarin.Forms. Walk through the entire process of creating an app with TreeView.
 
 ## Assembly Deployment
 
@@ -17,33 +17,33 @@ After installing Essential Studio for Xamarin, you can find all the required ass
 
 Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Xamarin\lib
 
-Refer [control dependencies](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sftreeview) section to get the list of assemblies or NuGet package needs to be added as reference to use the SfTreeView control in any application.
+Refer [control dependencies](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sftreeview) section to get the list of assemblies or NuGet package needs to be added as reference to use the TreeView control in any application.
 
 N> Assemblies can be found in an unzipped package location in Mac.
 
 ### Adding TreeView Reference
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfTreeView to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfTreeView](https://www.nuget.org/packages/Syncfusion.Xamarin.SfTreeView/), and then install it. 
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add TreeView to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfTreeView](https://www.nuget.org/packages/Syncfusion.Xamarin.SfTreeView/), and then install it. 
 
 ![](TreeView_images/TreeView_AddTreeView.png)
 
-To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sftreeview) to know about the dependent assemblies for SfTreeView. 
+To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sftreeview) to know about the dependent assemblies for TreeView. 
 
 I> After adding the reference, an additionally need to initialize the renderer for [iOS](https://help.syncfusion.com/xamarin/treeview/getting-started#ios) and [UWP](https://help.syncfusion.com/xamarin/treeview/getting-started#universal-windows-platform-uwp) projects.  
 
 I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also must include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
-## Launching the SfTreeView on Each Platform
+## Launching the TreeView on Each Platform
 
-To use this control inside an application, each platform application must initialize the SfTreeView renderer. This initialization step varies from platform to platform, and is discussed in the following sections:
+To use this control inside an application, each platform application must initialize the TreeView renderer. This initialization step varies from platform to platform, and is discussed in the following sections:
 
 ### Android
 
-The Android launches the SfTreeView without any initialization and is enough to only initialize the Xamarin.Forms Framework to launch the application.
+The Android launches the TreeView without any initialization and is enough to only initialize the Xamarin.Forms Framework to launch the application.
 
 ### iOS
 
-To launch the SfTreeView in iOS, call the `SfTreeViewRenderer.Init()` in the `FinishedLaunching` overridden method of the AppDelegate class after the Xamarin.Forms Framework initialization, and before the LoadApplication is called as demonstrated in the following code example:
+To launch the TreeView in iOS, call the `SfTreeViewRenderer.Init()` in the `FinishedLaunching` overridden method of the AppDelegate class after the Xamarin.Forms Framework initialization, and before the LoadApplication is called as demonstrated in the following code example:
 
 {% tabs %}
 {% highlight c# %}
@@ -60,7 +60,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ### Universal Windows Platform (UWP)
 
-To launch the SfTreeView in UWP, call the `SfTreeViewRenderer.Init()` in the `MainPage` constructor before the LoadApplication is called as demonstrated in the following code example:
+To launch the TreeView in UWP, call the `SfTreeViewRenderer.Init()` in the `MainPage` constructor before the LoadApplication is called as demonstrated in the following code example:
 
 {% tabs %}
 {% highlight c# %}
@@ -78,7 +78,7 @@ public MainPage()
 
 The known Framework issue in UWP platform is the custom controls will not render when deployed the application in `Release Mode`.
 
-The above problem can be resolved by initializing the SfTreeView assemblies in `App.xaml.cs` in UWP project as in the following code snippet:
+The above problem can be resolved by initializing the TreeView assemblies in `App.xaml.cs` in UWP project as in the following code snippet:
 
 {% tabs %}
 {% highlight c# %}
@@ -106,11 +106,11 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 ## Create a tree view
 
-This section explains how to create a SfTreeView and configure it. The SfTreeView control can be configured entirely in C# code, or by using XAML markup. This is how the control will look like on iOS, Android, and Windows devices.
+This section explains how to create a TreeView and configure it. The TreeView control can be configured entirely in C# code, or by using XAML markup. This is how the control will look like on iOS, Android, and Windows devices.
 
 ![](TreeView_images/TreeView_TreeView.png)
 
-In this walk through, you will create a new application with the SfTreeView that includes the following topics:
+In this walk through, you will create a new application with the TreeView that includes the following topics:
 
 * [Creating the project](#creating-the-project)
 * [Adding tree view in Xamarin.Forms](#adding-treeview-in-xamarin.forms)     
@@ -129,7 +129,7 @@ Create a new blank (Xamarin.Forms.Portable) application in Xamarin Studio or Vis
 
  1. Add the required assembly references to the PCL, and renderer projects as discussed in the [Assembly deployment](#assembly-deployment) section.
  2. Import the SfTreeView control namespace Syncfusion.XForms.TreeView.
- 3. Set the SfTreeView control to the ContentPage.
+ 3. Set the TreeView control to the ContentPage.
 
 {% tabs %}
 {% highlight xaml %}
@@ -444,7 +444,7 @@ MainPage = new ContentPage { Content = treeView };
 
 ## Defining a template to expander and content view
 
- By defining the `ExpanderTemplate` and `ItemTemplate` of SfTreeView, a custom user interface(UI) can be achieved to display the data items for both expander and content view. It is applicable for both Unbound Mode and Bound Mode data items. 
+ By defining the `ExpanderTemplate` and `ItemTemplate` properties, a custom user interface(UI) can be achieved to display the data items for both expander and content view. It is applicable for both Unbound Mode and Bound Mode data items. 
 
  N> By default, the binding context for each treeview item will be the data model object for Bound Mode and `TreeViewNode` for Unbound Mode. However, you can change the binding context for treeview items in Bound Mode as `TreeViewNode` by defining the `ItemTemplateContextType` enumeration to `Node` which is applicable for both `ExpanderTemplate` and `ItemTemplate` properties.
 
@@ -515,9 +515,11 @@ You can also download the entire source code of this demo from [here](http://www
 
 ## Interacting with a tree view
 
-The `SfTreeView` allows you to expand and collapse the nodes either by user interaction on the nodes or by programmatically. The expanding and collapsing interactions can be handled with the help of `NodeCollapsing` and `NodeExpanding` events of the `SfTreeView`.
+The `TreeView` allows you to expand and collapse the nodes either by user interaction on the nodes or by programmatically. The expanding and collapsing interactions can be handled with the help of `NodeCollapsing` and `NodeExpanding` events of the `TreeView`.
 
- You can define how the nodes to be expanded while loading the `SfTreeView` by using `AutoExpandMode` property. Also, the `SfTreeView` allows you to set the restrictions whether expanding and collapsing of nodes can be performed only by tapping in expander view or in both expander view and content view by using `ExpandActionTarget` property. 
+ You can define how the nodes to be expanded while loading the `TreeView` by using `AutoExpandMode` property. Also, the `TreeView` allows you to set the restrictions whether expanding and collapsing of nodes can be performed only by tapping in expander view or in both expander view and content view by using `ExpandActionTarget` property.
+
+ N> `AutoExpandMode` property is only applicable for bound mode. For Unbound mode you need to set `IsExpanded` property to `true` while creating the nodes, to be in expanded state while loading the TreeView.
 
 {% tabs %}
 {% highlight xaml %}
@@ -554,11 +556,11 @@ namespace GettingStarted
 
 ## Selection
 
-The `SfTreeView` allows selecting the item by setting the `SelectionMode` property. Set the `SelectionMode` property to single, single-deselect, multiple, extended and none based on the requirements. Informations about the selected item can be tracked using the `SelectedItem`, `CurrentItem` and `SelectedItems` properties. Also, `SfTreeView` provides key board navigation support in UWP platform.
+The `TreeView` allows selecting the item by setting the `SelectionMode` property. Set the `SelectionMode` property to single, single-deselect, multiple, extended and none based on the requirements. Informations about the selected item can be tracked using the `SelectedItem`, `CurrentItem` and `SelectedItems` properties. Also, `TreeView` provides key board navigation support in UWP platform.
 
 It also allows changing the selection highlight color by using the `SelectionBackgroundColor` property. Additionally, for unbound mode, you can change the selection fore ground color of the text by using the `SelectionForegroundColor` property.
 
-The selection operations can be handled with the help of `SelectionChanging` and `SelectionChanged` events of the `SfTreeView`.
+The selection operations can be handled with the help of `SelectionChanging` and `SelectionChanged` events of the `TreeView`.
 
 {% tabs %}
 {% highlight xaml %}

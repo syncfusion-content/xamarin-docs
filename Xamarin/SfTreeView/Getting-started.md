@@ -25,7 +25,7 @@ N> Assemblies can be found in an unzipped package location in Mac.
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add TreeView to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfTreeView](https://www.nuget.org/packages/Syncfusion.Xamarin.SfTreeView/), and then install it. 
 
-![](TreeView_images/TreeView_AddTreeView.png)
+![Xamarin Forms TreeView Add](TreeView_images/TreeView_AddTreeView.png)
 
 To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sftreeview) to know about the dependent assemblies for TreeView. 
 
@@ -108,7 +108,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 This section explains how to create a TreeView and configure it. The TreeView control can be configured entirely in C# code, or by using XAML markup. This is how the control will look like on iOS, Android, and Windows devices.
 
-![](TreeView_images/TreeView_TreeView.png)
+![Xamarin Forms TreeView Create](TreeView_images/TreeView_TreeView.png)
 
 In this walk through, you will create a new application with the TreeView that includes the following topics:
 
@@ -244,7 +244,7 @@ Now, run the application to render the below output:
 
 You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartedUnbound1766363128).
 
-![](TreeView_images/TreeView_UnBound.png)
+![Xamarin Forms TreeView Unbound](TreeView_images/TreeView_UnBound.png)
 
 ## Creating Data Model for the tree view
 
@@ -511,7 +511,7 @@ Similarly, you can customize your expander view by using `ExpanderTemplate` prop
 
 You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartedBound1582736825).
 
-![](TreeView_images/TreeView_Templating.png)
+![Xamarin Forms TreeView Bound](TreeView_images/TreeView_Templating.png)
 
 ## Interacting with a tree view
 

@@ -9,10 +9,7 @@ documentation: ug
 
 # Data Population
 
-TreeView can be populated with local data source by using a property [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ItemsSource.html), which is the member of TreeView or by creating [TreeViewNode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode.html) and added to [Nodes](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~Nodes.html) of `TreeView` in hierarchical structure. 
-
-TreeView populates by binding data source model to `ItemsSource` property or by adding `TreeViewNode` in hierarchical structure to `Nodes`.
-In bound mode by setting data source to `ItemsSource` property `Nodes` are created internally. 
+TreeView can be populated with local data source by using a [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ItemsSource.html) property or by creating and adding [TreeViewNode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode.html) in hierarchical structure to [Nodes](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~Nodes.html).
 
 ## Populating Nodes by data binding - Bound Mode
 To populates [Nodes](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~Nodes.html) for TreeView in bound mode includes following steps.
@@ -21,8 +18,6 @@ To populates [Nodes](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusio
 * [Bind data model to treeview](#bind-to-hierarchical-datasource)
 
 ### Create Data Model for treeview
-
-Create a data model to bind it to the control. 
 
 Create a simple data source as shown in the following code example in a new class file, and save it as FileManager.cs file: 
 
@@ -182,7 +177,6 @@ public class FileManagerViewModel
       imageNodeInfo = nodeImageInfo;
   }
 }
-
 {% endhighlight %}
 {% endtabs %}
 

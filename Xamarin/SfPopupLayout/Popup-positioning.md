@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Popup positioning | SfPopupLayout |Xamarin| Syncfusion
-description: Positioning capabilities of SfPopupLayout
+description: Position the popup at the center, absolute postion, relative to another view and relative with absolute postion using the Xamarin.Forms PopupLayout.
 platform: Xamarin
 control: SfPopupLayout
 documentation: ug
@@ -96,7 +96,7 @@ namespace GettingStarted
 
 Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
-![](GettingStarted_images/IsOpen_Property.png)
+![Pop-up with center positioning](GettingStarted_images/IsOpen_Property.png)
 
 To open the SfPopupLayout, use the `SfPopupLayout.Show()` as in the following code sample.
 
@@ -143,7 +143,7 @@ namespace GettingStarted
 
 Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
-![](GettingStarted_images/ShowPopup.png)
+![Pop-up with default look](GettingStarted_images/ShowPopup.png)
 
 ## Absolute positioning
 
@@ -196,7 +196,7 @@ namespace GettingStarted
 
 Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
-![](GettingStarted_images/ShowAtXYPosition.png)
+![Absolute positioning of Pop-up](GettingStarted_images/ShowAtXYPosition.png)
 
 ### Show At Touch Point
 
@@ -245,7 +245,7 @@ namespace GettingStarted
 
 Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
-![](GettingStarted_images/ShowAtTouchPoint.png)
+![Showing Pop-up at touch point](GettingStarted_images/ShowAtTouchPoint.png)
 
 N> SfPopupLayout.ShowAtTouchPoint() is not applicable for `Displaying pop-up when the SfPopupLayout is not set as root view`.
 
@@ -303,7 +303,7 @@ namespace GettingStarted
 
 Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
-![](GettingStarted_images/RelativeToBottom.png)
+![Relative positioning of Pop-up](GettingStarted_images/RelativeToBottom.png)
 
 ### Absolute relative positioning
 
@@ -359,7 +359,7 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-![](GettingStarted_images/AbsoluteRelativePosition.png)
+![Absolute positioning of Pop-up](GettingStarted_images/AbsoluteRelativePosition.png)
 
 You can pass both negative and positive values as parameters to the `SfPopupLayout.ShowRelativeToView(View, RelativePosition, x-position, y-position)`. The pop-up will be positioned by considering the relative position as (0, 0) the center point. For example, if you have set the `RelativePosition` as `RelativePosition.BottomRight` and `RelativeView` as a button, bottom right corner of the button will be considered as the 0, 0 point and a negative x-position value will place the pop-up to the left of that point and a positive x-position value will place the pop-up to the right of that point. The same applies for y-position also.
 
@@ -448,4 +448,4 @@ public class ViewModel: INotifyPropertyChanged
 
 Executing the above codes renders the following output in Android device respectively.
 
-![](PopupLayout_images/ShowingPopupAtRelativePositionInMVVM.jpg)
+![Relative positioning of Pop-up in MVVM](PopupLayout_images/ShowingPopupAtRelativePositionInMVVM.jpg)

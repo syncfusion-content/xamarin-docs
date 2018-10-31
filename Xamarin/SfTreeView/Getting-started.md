@@ -482,6 +482,17 @@ The following code example will illustrate you to customize your content view by
                     </ViewCell>
                 </DataTemplate>
             </syncfusion:SfTreeView.ItemTemplate>
+            <syncfusion:SfTreeView.ExpanderTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <Grid>
+                                <Image IsVisible="{ Binding HasChildNodes }" Source="{ Binding IsExpanded,Converter={StaticResource ExpanderIconConverter}}" VerticalOptions="Center" HorizontalOptions="Center"/>
+                            </Grid>
+                        </ViewCell.View>;
+                    </ViewCell>
+                </DataTemplate>
+            </syncfusion:SfTreeView.ExpanderTemplate>
        </syncfusion:SfTreeView>
     </ContentPage.Content>
 </ContentPage>
@@ -490,19 +501,27 @@ The following code example will illustrate you to customize your content view by
 SfTreeView treeView = new SfTreeView();
 FileManagerViewModel viewModel = new FileManagerViewModel ();
 treeView.ItemsSource = viewModel.ImageNodeInfo; 
+treeView.ItemTemplateContextType = ItemTemplateContextType.Node;
 treeView.ItemTemplate = new DataTemplate(() => 
 {
     var grid = new Grid();
     var imageIcon = new Image();
-    imageIcon.SetBinding(Image.SourceProperty, new Binding("ImageIcon"));
+    imageIcon.SetBinding(Image.SourceProperty, new Binding("Content.ImageIcon"));
     var itemName = new Label { FontSize = 15 };
-    itemName.SetBinding(Label.TextProperty, new Binding("ItemName"));
+    itemName.SetBinding(Label.TextProperty, new Binding("Content.ItemName"));
 
     grid.Children.Add(imageIcon);
     grid.Children.Add(itemName, 1, 0);
 
     return grid;
 });
+treeView.ExpanderTemplate = new DataTemplate(()=>
+{
+    var grid = new Grid();
+    var expanderIcon = new Image();
+    imageIcon.SetBinding(Image.SourceProperty, new Binding("IsExpanded"));
+  
+})
 MainPage = new ContentPage { Content = treeView };
 {% endhighlight %}
 {% endtabs %}

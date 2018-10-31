@@ -211,7 +211,7 @@ The `TreeView` event can be converted into commands using [Behaviors](https://de
                        SelectionMode="Multiple"
                        SelectedItems="{Binding SelectedCountries}"
                        ChildPropertyName="States"
-                       ItemsSource="{Binding CountriesInfo}"/>
+                       ItemsSource="{Binding CountriesInfo}">
     <syncfusion:SfTreeView.Behaviors>
         <local:EventToCommandBehavior EventName="SelectionChanged" Command="{Binding SelectionChangedCommand}"/>
     </syncfusion:SfTreeView.Behaviors>
@@ -272,6 +272,6 @@ public class CountriesViewModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-You can download the example sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Selection148873057)..
+You can download the example sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/EventToCommand839299289.zip).
 
 For more information regarding the event to command behavior in Xamarin.Forms, you can refer [this](https://developer.xamarin.com/samples/xamarin-forms/Behaviors/EventToCommandBehavior/) link.

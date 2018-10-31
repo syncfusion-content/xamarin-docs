@@ -270,7 +270,7 @@ Executing the above codes renders the following output in iOS, Android and Windo
 
 ![Pop-up with default appearance](GettingStarted_images/DefaultAppearance.png)
 
-You can download the source code of this sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-2069677713).
+You can download the source code of this sample [here](https://github.com/SyncfusionExamples/SfPopupLayout_XForms_GettingStarted).
 
 ## Customize positioning
 

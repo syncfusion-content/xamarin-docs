@@ -90,12 +90,45 @@ N> `SelectionForegroundColor` is only applicable for unbound mode.
 
 ## Events
 
-TreeView exposes [SelectionChanging](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~SelectionChanging_EV.html) and [SelectionChanged](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~SelectionChanged_EV.html) events to handle selection process.
+### SelectionChanging Event
 
-`SelectionChanging` is a cancelable event and it occurs while selecting items.
-`SelectionChanged` events occurs once selection is completed for an item.
+The [SelectionChanging](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~SelectionChanging_EV.html) event is raised while selecting an item at the execution time. [ItemSelectionChangingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.ItemSelectionChangingEventArgs.html) has the following members which provides the information for `SelectionChanging` event:
 
-N> By setting Cancel property to true to cancel the `SelectionChanging` event.If event is handled Selection process for the particular gets canceled.
+[AddedItems](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.ItemSelectionChangingEventArgs~AddedItems.html): Gets collection of the underlying data objects where the selection is going to process.
+[RemovedItems](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.ItemSelectionChangingEventArgs~RemovedItems.html): Gets collection of the underlying data objects where the selection is going to remove.
+You can cancel the selection process within this event by setting the `ItemSelectionChangingEventArgs.Cancel` property to true.
+
+{% tabs %}
+{% highlight c# %}
+treeView.SelectionChanging += TreeView_SelectionChanging;  
+
+private void TreeView_SelectionChanging(object sender, ItemSelectionChangingEventArgs e)
+{
+   if (e.AddedItems.Count > 0 && e.AddedItems[0] == ViewModel.Items[0])
+       e.Cancel = true;
+}
+{% endhighlight %}
+{% endtabs %}
+
+### SelectionChanged event
+
+The [SelectionChanged](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~SelectionChanged_EV.html) event will occur once selection process has been completed for the selected item in the TreeView. [ItemSelectionChangedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.ItemSelectionChangedEventArgs.html) has the following members which provides information for `SelectionChanged` event:
+
+[AddedItems](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.ItemSelectionChangedEventArgs~AddedItems.html): Gets collection of the underlying data objects where the selection has been processed.
+[RemovedItems](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.ItemSelectionChangedEventArgs~RemovedItems.html): Gets collection of the underlying data objects where the selection has been removed.
+
+{% tabs %}
+{% highlight c# %}
+treeView.SelectionChanged += TreeView_SelectionChanged;  
+
+private void TreeView_SelectionChanged(object sender, ItemSelectionChangedEventArgs e)
+{
+   treeView.SelectedItems.Clear();
+}
+{% endhighlight %}
+{% endtabs %}
+
+N> [SelectionChanging](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~SelectionChanging_EV.html) and [SelectionChanged](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~SelectionChanged_EV.html) events will be triggered only on UI interactions.
 
 ## Key Navigation
 

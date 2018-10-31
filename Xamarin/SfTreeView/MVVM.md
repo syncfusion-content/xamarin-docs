@@ -70,7 +70,6 @@ public class CountriesViewModel
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire sample [here]().
 ![Xamarin Forms TreeView with selection](TreeView_images/TreeView_SelectedItem.png)
 
 ### Binding SelectedItems
@@ -272,5 +271,7 @@ public class CountriesViewModel : INotifyPropertyChanged
 }
 {% endhighlight %}
 {% endtabs %}
+
+You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Selection148873057)..
 
 For more information regarding the event to command behavior in Xamarin.Forms, you can refer [this](https://developer.xamarin.com/samples/xamarin-forms/Behaviors/EventToCommandBehavior/) link.

@@ -101,7 +101,7 @@ N> By setting Cancel property to true to cancel the `SelectionChanging` event.If
 
 TreeView support select items with navigation through keyboard buttons. Behavior of key navigation in UWP is explained as follows :
 
-When the SelectionMode is Single, the selected item is highlighted with [FocusBorderColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~FocusBorderColor.html) around the item while key navigation.
+When the [SelectionMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~SelectionMode.html) is `Single`, the selected item is highlighted with [FocusBorderColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~FocusBorderColor.html) around the item while key navigation.
 When the `SelectionMode` is `SingleDeSelect`, `Multiple` or `Extended`, the `FocusBorderColor` will set to the `CurrentItem` only on key navigation.
 
 ## FocusBorderColor

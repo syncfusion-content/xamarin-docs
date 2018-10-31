@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started | SfDataGrid | Xamarin | Syncfusion
-description: Getting started with SfDataGrid.
+description: Getting started with Xamarin.Forms DataGrid and walk through to create a demo application from the scratch. 
 platform: xamarin
 control: SfDataGrid
 documentation: ug
@@ -44,13 +44,13 @@ The following NuGet package should be installed to use the SfDataGrid control in
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfDataGrid to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfDataGrid](https://www.nuget.org/packages/Syncfusion.Xamarin.SfDataGrid/), and then install it.
 
-![](SfDataGrid_images/SfDataGrid_Nuget.png)
+![Configure DataGrid using NuGet package](SfDataGrid_images/SfDataGrid_Nuget.png)
 
 To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfdatagrid) to know about the dependent assemblies for SfDataGrid.
 
 To export the SfDataGrid to Excel and PDF formats, search for [Syncfusion.Xamarin.SfGridConverter](https://www.nuget.org/packages/Syncfusion.Xamarin.SfGridConverter/) in the NuGet package manager, and then install it.
 
-![](SfDataGrid_images/SfGridConverter_Nuget.png)
+![Configure DataGrid with exporting functionalities using NuGet](SfDataGrid_images/SfGridConverter_Nuget.png)
 
  If you prefer to manually refer the assemblies instead of NuGet for the using the exporting functionalities of SfDataGrid, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfgridconverter) to know about the dependent assemblies for exporting SfDataGrid.
 
@@ -128,7 +128,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 This section explains how to create a SfDataGrid and configure it. The SfDataGrid control can be configured entirely in C# code or using XAML markup. This is how the final output will look like on iOS, Android, and Windows Phone devices.
  
-![](SfDataGrid_images/SfDataGrid-Xamarin_img2.png)
+![A simple DataGrid](SfDataGrid_images/SfDataGrid-Xamarin_img2.png)
 
 You can download the entire source code of this demo for Xamarin.Forms from [here](http://files2.syncfusion.com/Xamarin.Forms/Samples/DataGrid_GettingStartedForms.zip).
 
@@ -312,7 +312,7 @@ dataGrid.ItemsSource = viewModel.OrderInfoCollection;
 
 Run the application to render the following output.
 
-![](SfDataGrid_images/SfDataGrid-Xamarin_img3.png)
+![DataGrid with default appearance](SfDataGrid_images/SfDataGrid-Xamarin_img3.png)
 
 ## Defining columns
 
@@ -379,7 +379,7 @@ dataGrid.AllowSorting = true;
 
 Run the application and touch the header cell to sort the data and the following output will be displayed.
  
-![](SfDataGrid_images/SfDataGrid-Xamarin_img4.png)
+![DataGrid with sorting applied](SfDataGrid_images/SfDataGrid-Xamarin_img4.png)
 
 Sorting can also be configured by adding the column to the [SfDataGrid.SortColumnDescriptions](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SortColumnDescriptions.html) collection as follows.
 
@@ -411,7 +411,7 @@ dataGrid.GroupColumnDescriptions.Add (new GroupColumnDescription () { Column
 
 Run the application to render the following output.
 
-![](SfDataGrid_images/SfDataGrid-Xamarin_img5.png)
+![DataGrid with grouping applied](SfDataGrid_images/SfDataGrid-Xamarin_img5.png)
 
 ## Selection
 
@@ -480,7 +480,7 @@ namespace GettingStarted
 
 Refer to the following screenshot for the outcome.
 
-![](SfDataGrid_images/GridInStackLayout.png)
+![DataGrid inside a StackLayout](SfDataGrid_images/GridInStackLayout.png)
 
 N> In case, if the orientation of the `StackLayout` is horizontal, set the HorizontalOptions instead. In some cases, set both the “VerticalOptions” and “HorizontalOptions” of the SfDataGrid based on its parent.
 
@@ -529,7 +529,7 @@ public MainPage()
 
 The following screenshot shows how the SfDataGrid is loaded with specific height and width with VerticalOptions and HorizontalOptions.
 
-![](SfDataGrid_images/Loading_with specific_height_and_width.png)
+![DataGrid with customized height and width](SfDataGrid_images/Loading_with specific_height_and_width.png)
 
 N> Set the [HorizontalOptions](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~HorizontalOptions.html) and [VerticalOptions](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~VerticalOptions.html) for the grid accordingly.
 
@@ -549,4 +549,4 @@ The above exceptions can be resolved in two ways.
  2.	By setting custom linker argument in iOS renderer project as in the following screenshot.
 
 
-![](SfDataGrid_images/GettingStarted_img1.png)
+![DataGrid with linker settings](SfDataGrid_images/GettingStarted_img1.png)

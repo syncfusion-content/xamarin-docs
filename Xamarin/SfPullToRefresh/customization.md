@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization | SfPullToRefresh | Xamarin | Syncfusion
-description: How to customize the SfPullToRefresh Control Styles.
+description: Various built-in styling and customization options available in the Xamarin.Forms PullToRefresh. Host complex controls like DataGrid, ListView as pullable content. 
 platform: xamarin
 control: SfPullToRefresh
 documentation: UG
@@ -55,7 +55,7 @@ The default transition is `SlideOnTop` that draws the RefreshContent on top of t
 
 {% endtabs %}
 
-![](overview_images/SlideOnTop.png)
+![PullToRefresh with slide on top transition mode](overview_images/SlideOnTop.png)
 
 The following code example shows how to set `TransitionMode` as `Push` to SfPullToRefresh. This transition moves the refresh content and main content simultaneously.
 
@@ -75,7 +75,7 @@ The following code example shows how to set `TransitionMode` as `Push` to SfPull
 
 {% endtabs %}
 
-![](overview_images/Push.png)
+![PullToRefresh with push transition mode](overview_images/Push.png)
 
 
 
@@ -317,7 +317,7 @@ using Syncfusion.SfDataGrid.XForms;
 </ol>
 This is how the final output will look like on iOS, Android and Windows Phone devices when hosting a SfDatagrid control as pullable content.
 
-![](hostingsfdatagrid_images/SfDataGrid_SlideOnTop-Xamarin.forms.gif)
+![PullToRefresh with DataGrid hosted with slide on top transition mode](hostingsfdatagrid_images/SfDataGrid_SlideOnTop_XamarinForms.gif)
 
 
 {% highlight Xaml %}
@@ -485,7 +485,7 @@ public class OrderInfoRepository
 
 If we run the above sample with TransitionMode as Push, the output will look like on iOS, Android and Windows Phone devices as shown below.
 
-![](hostingsfdatagrid_images/SfDataGrid_Push_Xamarin.Forms.gif)
+![PullToRefresh with DataGrid hosted with push transition mode](hostingsfdatagrid_images/SfDataGrid_Push_XamarinForms.gif)
 
 
 ## Host SfListView as pullable content
@@ -514,7 +514,7 @@ using Syncfusion.ListView.XForms;
 
 This is how the final output will look like on iOS, Android and Windows Phone devices when hosting a SfListView control as pullable content.
 
-![](hostingsfdatagrid_images/SfListView_SlideOnTop-Xamarin.forms.gif)
+![PullToRefresh with ListView hosted with slide on top transition mode](hostingsfdatagrid_images/SfListView_SlideOnTop_XamarinForms.gif)
 
 {% highlight Xaml%}
 
@@ -643,4 +643,4 @@ namespace PullToRefreshSample
 
 If we run the above sample with TransitionMode as Push, the output will look like on iOS, Android and Windows Phone devices as shown below.
 
-![](hostingsfdatagrid_images/SfListView_Push_Xamarin.Forms.gif)
+![PullToRefresh with ListView hosted with push transition mode](hostingsfdatagrid_images/SfListView_Push_XamarinForms.gif)

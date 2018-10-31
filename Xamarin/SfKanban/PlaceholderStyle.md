@@ -13,7 +13,7 @@ The placeholder is to denote a card's new position in the [`KanbanColumn`](http:
 
 ### Placeholder style
 
-[`PlaceholderStyle`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.html) property is used to customize the placeholder. Following properties are used to customize its appearance.
+[`PlaceholderStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~PlaceholderStyle.html) property is used to customize the placeholder. Following [`KanbanPlaceholderStyle`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.html) properties are used to customize its appearance.
 
 * [`BackgroundColor`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle~BackgroundColor.html)  	 - This property is used to change the background color of the placeholder.
 * [`BorderColor`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle~BorderColor.html) 	 	 - This property is used to change the border color of the placeholder.
@@ -40,16 +40,16 @@ The following code example describes the above behavior.
 <kanban:SfKanban.PlaceholderStyle >
 
 <kanban:KanbanPlaceholderStyle FontSize="16"
-TextColor="Red"
+TextColor="Green"
 BackgroundColor="Fuchsia"
 BorderColor="Fuchsia"
 BorderThickness="2"
 
 SelectedFontSize="16"
-SelectedTextColor="Green"
+SelectedTextColor="Red"
 SelectedBorderColor="Yellow"
 SelectedBorderThickness="2"
-SelectedBackgroundColor="Fuchsia">
+SelectedBackgroundColor="Green">
 </kanban:KanbanPlaceholderStyle>
 
 </kanban:SfKanban.PlaceholderStyle>
@@ -61,16 +61,16 @@ SelectedBackgroundColor="Fuchsia">
 KanbanPlaceholderStyle style = new KanbanPlaceholderStyle();
 
 style.FontSize = 20;
-style.TextColor = Color.Red;
+style.TextColor = Color.Green;
 style.BackgroundColor = Color.FromRgb(239, 89, 123);
 style.BorderColor = Color.Blue;
 style.BorderThickness = 2;
 style.StrokeDashArray = new double[] { 1, 1 };
 
 style.SelectedFontSize = 20;
-style.SelectedTextColor = Color.Green;
+style.SelectedTextColor = Color.Red;
 style.SelectedBorderColor = Color.Yellow;
-style.SelectedBackgroundColor = Color.FromRgb(239, 89, 123);
+style.SelectedBackgroundColor = Color.FromRgb(0, 255, 0);
 style.SelectedBorderThickness = 2;
 style.SelectedStrokeDashArray = new double[] { 2, 1 };
 
@@ -82,5 +82,5 @@ kanban.PlaceholderStyle = style;
 
 The following output demonstrates the above code example.
 
-![](SfKanban_images/PlaceholderStyle.png)
+![PlaceholderStyle support for Xamarin.Forms Kanban](SfKanban_images/PlaceholderStyle.png)
 

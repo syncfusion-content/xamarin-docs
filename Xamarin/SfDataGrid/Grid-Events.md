@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grid Events | SfDataGrid | Xamarin | Syncfusion
-description: How to use different events exposed in SfDataGrid.
+description: Different events and commands exposed in Xamarin.Forms DataGrid with its purpose and customization options.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
@@ -162,6 +162,25 @@ The [SfDataGrid.ValueChanged](https://help.syncfusion.com/cr/cref_files/xamarin/
 * [RowData](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.ValueChangedEventArgs~RowData.html)       : The `RowData` of the row that contains the grid cell undergoing the value change.
 * [CellValue](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.ValueChangedEventArgs~CellValue.html)       : The initial value when current cell entered edit mode.
 
+{% tabs %}
+
+{% highlight c# %}
+
+        dataGrid.ValueChanged += DataGrid_ValueChanged;
+
+        private void DataGrid_ValueChanged(object sender, ValueChangedEventArgs e)
+        {
+            var column = e.Column;
+            var newValue = e.NewValue;
+            var rowColIndex = e.RowColIndex;
+            var rowData = e.RowData;
+        }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
 
 ## ItemsSource changed event
 
@@ -314,7 +333,7 @@ public partial class MainPage : ContentPage
 
 Refer to the following GIF for final rendering on execution of above code example:
 
-![](SfDataGrid_images/CustomContextMenu.gif)
+![DataGrid with context menu](SfDataGrid_images/CustomContextMenu.gif)
 
 ## Commands
 

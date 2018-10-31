@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of Essential Xamarin.Forms Chart
-description: What are the key features available in chart.
+description: What are the key features available in the Essential Chart for Xamarin.Forms
 platform: xamarin
 control: Chart
 documentation: ug
@@ -11,8 +11,7 @@ documentation: ug
 
 Essential Chart for Xamarin.Forms provide a perfect way to visualize data with a high level of user interactivity that focuses on development, productivity and simplicity of use. Essential Chart also provides a wide variety of charting features that are used to visualize large quantities of data, flexible data binding and user customization.
 
-![](Overview_images/img1.png)
-
+![Overview of Xamarin.Forms Chart](Overview_images/img1.png)
 
 
 ## Key features

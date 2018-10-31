@@ -118,32 +118,6 @@ SfRangeSlider rangeSlider=new SfRangeSlider();
 
 {% endtabs %}
 
-##Customizing Slider Thickness
-
-SfRangeSlider provides option to change the Thickness of the Slider by setting the Value to `TrackHeight` property.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-	<range:SfRangeSlider x:Name="rangeslider" TrackHeight="4" Minimum="0" Maximum="24"/>
-	
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfRangeSlider rangeSlider=new SfRangeSlider();
-	rangeSlider.RangeEnd=20; 
-	rangeSlider.RangeStart=4;
-	rangeSlider.ShowRange=true; 
-	rangeSlider.TrackHeight="4";
-	rangeSlider.Minimum=0; 
-	rangeSlider.Maximum=24; 
-	this.Content = rangeSlider;
-{% endhighlight %}
-
-{% endtabs %}
-
 ## Restricting Values
 
 SfRangeSlider provides option to restrict slider range between minimum and maximum values. Following code explains how to set the range using `Minimum` and `Maximum` properties in the SfRangeSlider.

@@ -12,13 +12,13 @@ documentation: ug
 This section explains how to perform selection and its related operations in the TreeView.
 
 ## UI Selection
-The TreeView allows selecting items either programmatically or touch interactions by setting the [SelectionMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~SelectionMode.html) property value to other than None.The control has different selection modes to perform selection operations as listed as follows.
+The TreeView allows selecting the items either programmatically or touch interactions by setting the [SelectionMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~SelectionMode.html) property value to other than `None`. The control has different selection modes to perform selection operations as listed as follows.
 
-None: Allows disabling selection.
-Single: Allows selecting single item only. When clicking on the selected item, selection not will not be cleared. This is the default value for `TreeView.SelectionMode`.
-SingleDeselect: Allows selecting single item only. When clicking on the selected item, selection gets cleared.
-Multiple: Allows selecting more than one item. Selection is not cleared when selecting more than one items. When clicking on the selected item, selection gets cleared.
-Extended: Allows to select multiple items using the common key modifiers in UWP platform.
+* `None`: Allows disabling the selection.
+* `Single`: Allows selecting the single item only. When clicking on the selected item, selection not will not be cleared. This is the default value for `SelectionMode`.
+* `SingleDeselect`: Allows selecting the single item only. When clicking on the selected item, selection gets cleared.
+* `Multiple`: Allows selecting more than one item. Selection is not cleared when selecting more than one items. When clicking on the selected item, selection gets cleared.
+* `Extended`: Allows to select the multiple items using the common key modifiers in `UWP platform` and for other platforms, it works as `Single` selection.
 
 {% tabs %}
 {% highlight xaml %}
@@ -45,7 +45,7 @@ treeView.SelectedItem = viewModel.CountriesInfo[2];
 {% endhighlight %}
 {% endtabs %}
 
-When the selection mode is Multiple, programmatically select more than one item by adding the underlying object to the [SelectedItems](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~SelectedItems.html) property.
+When the selection mode is `Multiple`, programmatically select more than one item by adding the underlying object to the [SelectedItems](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~SelectedItems.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -86,16 +86,17 @@ The TreeView allows changing the selection background color for the selected ite
 
 The TreeView allows changing the selection background color for the selected items by using the [SelectionForegroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~SelectionForegroundColor.html) property. You can also change the selection background color at runtime.
 
-N> `SelectionForegroundColor` is only applicable for unbound mode.
+N> `SelectionForegroundColor` is applicable only for unbound mode.
 
 ## Events
 
 ### SelectionChanging Event
 
-The [SelectionChanging](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~SelectionChanging_EV.html) event is raised while selecting an item at the execution time. [ItemSelectionChangingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.ItemSelectionChangingEventArgs.html) has the following members which provides the information for `SelectionChanging` event:
+The [SelectionChanging](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~SelectionChanging_EV.html) event is raised while selecting an item at the execution time. The [ItemSelectionChangingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.ItemSelectionChangingEventArgs.html) has the following members which provides the information for `SelectionChanging` event:
 
-[AddedItems](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.ItemSelectionChangingEventArgs~AddedItems.html): Gets collection of the underlying data objects where the selection is going to process.
-[RemovedItems](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.ItemSelectionChangingEventArgs~RemovedItems.html): Gets collection of the underlying data objects where the selection is going to remove.
+* [AddedItems](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.ItemSelectionChangingEventArgs~AddedItems.html): Gets collection of the underlying data objects where the selection is going to process.
+* [RemovedItems](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.ItemSelectionChangingEventArgs~RemovedItems.html): Gets collection of the underlying data objects where the selection is going to remove.
+
 You can cancel the selection process within this event by setting the `ItemSelectionChangingEventArgs.Cancel` property to true.
 
 {% tabs %}
@@ -112,10 +113,10 @@ private void TreeView_SelectionChanging(object sender, ItemSelectionChangingEven
 
 ### SelectionChanged event
 
-The [SelectionChanged](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~SelectionChanged_EV.html) event will occur once selection process has been completed for the selected item in the TreeView. [ItemSelectionChangedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.ItemSelectionChangedEventArgs.html) has the following members which provides information for `SelectionChanged` event:
+The [SelectionChanged](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~SelectionChanged_EV.html) event will occur once selection process has been completed for the selected item in the TreeView. The [ItemSelectionChangedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.ItemSelectionChangedEventArgs.html) has the following members which provides information for `SelectionChanged` event:
 
-[AddedItems](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.ItemSelectionChangedEventArgs~AddedItems.html): Gets collection of the underlying data objects where the selection has been processed.
-[RemovedItems](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.ItemSelectionChangedEventArgs~RemovedItems.html): Gets collection of the underlying data objects where the selection has been removed.
+* [AddedItems](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.ItemSelectionChangedEventArgs~AddedItems.html): Gets collection of the underlying data objects where the selection has been processed.
+* [RemovedItems](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.ItemSelectionChangedEventArgs~RemovedItems.html): Gets collection of the underlying data objects where the selection has been removed.
 
 {% tabs %}
 {% highlight c# %}
@@ -132,17 +133,18 @@ N> [SelectionChanging](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfus
 
 ## Key Navigation
 
-TreeView support select items with navigation through keyboard buttons. Behavior of key navigation in UWP is explained as follows :
+The TreeView allows to select the items through keyboard interactions. Behavior of key navigation in UWP platform is explained as follows:
 
-When the [SelectionMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~SelectionMode.html) is `Single`, the selected item is highlighted with [FocusBorderColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~FocusBorderColor.html) around the item while key navigation.
-When the `SelectionMode` is `SingleDeSelect`, `Multiple` or `Extended`, the `FocusBorderColor` will set to the `CurrentItem` only on key navigation.
+* When the [SelectionMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~SelectionMode.html) is `Single`, the selected item is highlighted with [FocusBorderColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~FocusBorderColor.html) around the item while key navigation.
+
+* When the `SelectionMode` is `SingleDeSelect`, `Multiple` or `Extended`, the `FocusBorderColor` will set to the `CurrentItem` only on key navigation.
 
 ## FocusBorderColor
 
-[FocusBorderColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~FocusBorderColor.html) used to set the border color for the current focused item. For Android and iOS platform, the default color is Color.Transparent and for UWP platform, the default color is Color.FromRgb(213, 213, 213)
+The [FocusBorderColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~FocusBorderColor.html) property is used to set the border color for the current focused item. For Android and iOS platform, the default color is `Color.Transparent` and for UWP platform, the default color is `Color.FromRgb(213, 213, 213)`.
 
 ## FocusBorderThickness
-[FocusBorderThickness](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~FocusBorderThickness.html) used to set the border thickness for the current focused item. For Android and iOS platform, the default thickness is 0 and for UWP platform, the default thickness is 1.
+The [FocusBorderThickness](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~FocusBorderThickness.html) property is used to set the border thickness for the current focused item. For Android and iOS platform, the default thickness is `0` and for UWP platform, the default thickness is `1`.
 
 ## Limitation
 

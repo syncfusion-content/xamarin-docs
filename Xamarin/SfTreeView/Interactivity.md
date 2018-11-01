@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Interacting with TreeView for Xamarin.Forms | Syncfusion
-description: Describes about work on with TreeView after loading.
+description: Describes about the different interactions on TreeView.
 platform: xamarin
 control: SfTreeView
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Interactivity
 
- This section explains how to interact with `TreeView` and its items.
+ This section explains about how to interact with `TreeView` and its items.
 
 ## Interacting with TreeView items
 
-## Loaded event
+### Loaded event
 
 The [Loaded](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~Loaded_EV.html) event is raised when the TreeView is loading in view for the first time.
 
@@ -28,11 +28,11 @@ private void TreeView_Loaded(object sender, TreeViewLoadedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-The `Loaded` event used for the following use cases:
+The `Loaded` event is used for the following use case:
 
-* To scroll the desired item by using the [BringIntoView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~NodeCollapsed_EV.html) 
+* To scroll the desired item by using the [BringIntoView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~NodeCollapsed_EV.html).
 
-## Tapped event
+### Tapped event
 
 The [ItemTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ItemTapped_EV.html) event will be triggered whenever tapping the item.  [ItemTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.ItemTappedEventArgs.html) has the following members which provides the information for `ItemTapped` event:
 
@@ -53,7 +53,7 @@ private void TreeView_ItemTapped(object sender, Syncfusion.ListView.XForms.ItemT
 {% endhighlight %}
 {% endtabs %}
 
-## ItemDoubleTapped event
+### ItemDoubleTapped event
 
 The [ItemDoubleTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ItemDoubleTapped_EV.html) event will be triggered whenever double tapping the item. The [ItemDoubleTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.ItemDoubleTappedEventArgs.html) has the following members providing information for the `ItemDoubleTapped` event:
 
@@ -74,9 +74,9 @@ private void TreeView_ItemDoubleTapped(object sender, ItemDoubleTappedEventArgs 
 {% endhighlight %}
 {% endtabs %}
 
-## ItemHolding event
+### ItemHolding event
 
-The [ItemHolding](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ItemHolding_EV.html) event will be triggered whenever long pressing the item.
+The [ItemHolding](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ItemHolding_EV.html) event will be triggered whenever the item is long pressed.
  [ItemHoldingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.ItemHoldingEventArgs.html) has the following members which provides the information for `ItemHolding` event:
 
  * `Node`: Gets the [TreeViewNode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode.html) and data associated with the hold item as its arguments.

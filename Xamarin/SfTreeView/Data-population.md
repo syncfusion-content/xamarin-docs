@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Populating data | TreeView for Xamarin.Forms | Syncfusion
-description: Describes how to populate data in treeview.
+description: Describes about to populate the data in treeview.
 platform: xamarin
 control: SfTreeView
 documentation: ug
@@ -9,12 +9,12 @@ documentation: ug
 
 # Data Population
 
-TreeView can be populated with the data source by using a [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ItemsSource.html) property or by creating and adding the [TreeViewNode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode.html) in hierarchical structure to [Nodes](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~Nodes.html).
+TreeView can be populated either with the data source by using a [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ItemsSource.html) property or by creating and adding the [TreeViewNode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode.html) in hierarchical structure to [Nodes](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~Nodes.html) property.
 
 ## Populating Nodes by data binding - Bound Mode
 [Nodes](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~Nodes.html) can be populated in bound mode includes following steps.
 
-* [Create hierarchical data model](#create-data-model-for-the-treeview)
+* [Create hierarchical data model](#create-data-model-for-treeview)
 * [Bind data model to treeview](#bind-to-hierarchical-datasource)
 
 ### Create Data Model for treeview
@@ -180,7 +180,7 @@ public class FileManagerViewModel
 {% endhighlight %}
 {% endtabs %}
 
-### Binding Data to the TreeView
+### Bind to hierarchical datasource
 
 To create a tree view using data binding, set a hierarchical data collection to the [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ItemsSource.html) property. And set the child object name to the [ChildPropertyName](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ChildPropertyName.html) property.
 

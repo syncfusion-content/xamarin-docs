@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance
 
-The TreeView allows customizing appearance of the underlying data, and provides different functionalities to the end-use.
+The TreeView allows customizing appearance of the underlying data, and provides different functionalities to the end-user.
 
 ## Item Template
 
@@ -130,7 +130,7 @@ The TreeView allows you to customize the appearance of each item with different 
 
 ### Create a data template selector
 
-Create custom class that inherits from [DataTemplateSelector](https://docs.microsoft.com/en-us/dotnet/api/Xamarin.Forms.DataTemplateSelector?view=xamarin-forms), and override the [OnSelectTemplate](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.datatemplateselector.onselecttemplate?view=xamarin-forms#Xamarin_Forms_DataTemplateSelector_OnSelectTemplate_System_Object_Xamarin_Forms_BindableObject_) method to return the DataTemplate for that item. At runtime, the TreeView invokes the `OnSelectTemplate` method for each item and passes the data object as parameter.
+Create custom class that inherits from [DataTemplateSelector](https://docs.microsoft.com/en-us/dotnet/api/Xamarin.Forms.DataTemplateSelector?view=xamarin-forms), and override the [OnSelectTemplate](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.datatemplateselector.onselecttemplate?view=xamarin-forms#Xamarin_Forms_DataTemplateSelector_OnSelectTemplate_System_Object_Xamarin_Forms_BindableObject_) method to return the [DataTemplate](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.datatemplate?view=xamarin-forms) for that item. At runtime, the TreeView invokes the `OnSelectTemplate` method for each item and passes the data object as parameter.
 
 Create different templates and by using `DataTemplateSelector`, load those templates using `OnSelectTemplate` based on requirements.
 
@@ -195,7 +195,7 @@ Similarly, you can provide `DataTemplateSelector` for [ExpanderTemplate](https:/
 
 ## Indentation
 
-The TreeView allows customizing the indent spacing of items by setting the [Indentation](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~Indentation.html) property. The default value of this property is 40. This property can be customized at runtime.
+The TreeView allows customizing the indent spacing of items by setting the [Indentation](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~Indentation.html) property. The default value of this property is `40`. This property can be customized at runtime.
 
 {% tabs %}
 {% highlight xaml %}
@@ -209,7 +209,7 @@ treeView.Indentation = 40;
 
 ## Item Height
 
-The TreeView allows customizing the height of items by setting the [ItemHeight](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ItemHeight.html) property. The default value of this property is 40. This property can be customized at runtime.
+The TreeView allows customizing the height of items by setting the [ItemHeight](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ItemHeight.html) property. The default value of this property is `40`. This property can be customized at runtime.
 
 {% tabs %}
 {% highlight xaml %}
@@ -223,7 +223,7 @@ treeView.ItemHeight = 40;
 
 ## Expander Width
 
-The TreeView allows customizing the width of expander icon by setting the [ExpanderWidth](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ExpanderWidth.html) property. The default value of this property is 40. This property can be customized at runtime.
+The TreeView allows customizing the width of expander view by setting the [ExpanderWidth](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ExpanderWidth.html) property. The default value of this property is `40`. This property can be customized at runtime.
 
 {% tabs %}
 {% highlight xaml %}

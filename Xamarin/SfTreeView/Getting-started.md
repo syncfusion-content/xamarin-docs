@@ -186,6 +186,7 @@ You can create and manage the `TreeViewNode` objects by yourself to display the 
                             <treeviewengine:TreeViewNode.ChildNodes>
                                 <treeviewengine:TreeViewNode Content="Sydney"/>
                             </treeviewengine:TreeViewNode.ChildNodes>
+                        </treeviewengine:TreeViewNode>
                     </treeviewengine:TreeViewNode.ChildNodes>
                 </treeviewengine:TreeViewNode>
                 <treeviewengine:TreeViewNode Content="United States of America">
@@ -429,7 +430,7 @@ You can create a tree view by binding the `ItemsSource` to a hierarchical data s
        <local:FileManagerViewModel x:Name="viewModel"></local:FileManagerViewModel>
     </ContentPage.BindingContext>
     <ContentPage.Content>
-       <syncfusion:SfTreeView x:Name="treeView" ItemsSource="{Binding ImageNodeInfo}">
+       <syncfusion:SfTreeView x:Name="treeView" ChildPropertyName="SubFiles" ItemsSource="{Binding ImageNodeInfo}">
        </syncfusion:SfTreeView>
     </ContentPage.Content>
 </ContentPage>
@@ -486,10 +487,10 @@ The following code example will illustrate you to customize your content view by
                 <DataTemplate>
                     <ViewCell>
                         <ViewCell.View>
-                            <Grid>
-                                <Image IsVisible="{ Binding HasChildNodes }" Source="{ Binding IsExpanded,Converter={StaticResource ExpanderIconConverter}}" VerticalOptions="Center" HorizontalOptions="Center"/>
-                            </Grid>
-                        </ViewCell.View>;
+                            <Image IsVisible="{Binding HasChildNodes,Converter={StaticResource IconVisibleConverter}}" 
+                                   Source="{ Binding IsExpanded,Converter={StaticResource ExpanderIconConverter}}"
+                                   VerticalOptions="Center" HorizontalOptions="Center"/>
+                        </ViewCell.View>
                     </ViewCell>
                 </DataTemplate>
             </syncfusion:SfTreeView.ExpanderTemplate>
@@ -520,7 +521,6 @@ treeView.ExpanderTemplate = new DataTemplate(()=>
     var grid = new Grid();
     var expanderIcon = new Image();
     imageIcon.SetBinding(Image.SourceProperty, new Binding("IsExpanded"));
-  
 })
 MainPage = new ContentPage { Content = treeView };
 {% endhighlight %}

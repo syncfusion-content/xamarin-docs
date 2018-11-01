@@ -9,7 +9,7 @@ documentation: ug
 
 # MVVM
 
-This section how TreeView works on MVVM pattern.
+This section explains how TreeView works on MVVM pattern.
 
 ## Binding properties in MVVM pattern
 

@@ -232,7 +232,8 @@ You can create and manage the [TreeViewNode](https://help.syncfusion.com/cr/cref
                         <treeviewengine:TreeViewNode Content="New South Wales">
                             <treeviewengine:TreeViewNode.ChildNodes>
                                 <treeviewengine:TreeViewNode Content="Sydney"/>
-                            </treeviewengine:TreeViewNode.ChildNodes>
+                            </treeviewengine:TreeViewNode.ChildNodes>  
+                        </treeviewengine:TreeViewNode>
                     </treeviewengine:TreeViewNode.ChildNodes>
                 </treeviewengine:TreeViewNode>
                 <treeviewengine:TreeViewNode Content="United States of America">

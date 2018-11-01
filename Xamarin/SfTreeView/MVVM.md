@@ -142,6 +142,7 @@ You can download the entire sample [here](http://www.syncfusion.com/downloads/su
 
 The [TapCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~TapCommand.html) will be triggered whenever tapping the item and passing the [ItemTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.ItemTappedEventArgs.html) as parameter.
 
+{% tabs %}
 {% highlight c# %}
 
 treeView.TapCommand = viewModel.TappedCommand;

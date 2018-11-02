@@ -380,6 +380,8 @@ You can delete any of occurrence which is exception from recurrence pattern appo
 •	Exception dates should be Universal Time Coordinates (UTC) time zone.
 •	You can also update the RecurrenceExceptionDates collection dynamically.
 
+![Recurrence Exception dates support in schedule Xamarin Forms](PopulatingAppointments_images/exception_dates.png)
+
 #### Delete occurrence from recurrence pattern dynamically or add exception dates to recurrence pattern dynamically
 You can also delete any occurrence from the recurrence pattern appointment by adding exception date to the RecurrenceExceptionDates collection.
 
@@ -452,6 +454,8 @@ exceptionDate
 •	`RecurrenceId` should be a recurrence pattern appointment object.
 •	Exception appointment should be a normal appointment and should not be created as recurring appointment, since its occurrence is from recurrence pattern.
 •	`ExceptionOccurrenceActualDate` should be in Universal Time Coordinates (UTC) time zone.
+
+![Recurrence Exception appointment support in schedule Xamarin Forms](PopulatingAppointments_images/exception_appointment.png)
 
 #### Add exception appointment to recurrence pattern dynamically
 You can also add exception appointment dynamically for added exception date by adding exception appointment to the schedule `DataSource` which is exception from the recurrence pattern appointment by using the `RecurrenceId` property which is used to map the exception appointment with recurrence pattern appointment and `ExceptionOccurrenceActualDate` property which is used to mention the actual pattern occurrence date of exception appointment of the `ScheduleAppointment` class.
@@ -625,6 +629,8 @@ You should map this custom property (`RecurrenceExceptionDates`) of custom class
 •	Exception dates should be in Universal Time Coordinates (UTC) time zone.
 •	You can also dynamically update the custom property RecurrenceExceptionDates collection.
 
+![Recurrence Exception dates support in schedule Xamarin Forms](PopulatingAppointments_images/exception_dates.png)
+
 #### Delete occurrence from recurrence pattern dynamically or add exception dates to recurrence pattern dynamically
 You can also delete any occurrence from the recurrence pattern appointment by adding exception date to the `RecurrenceExceptionDates` custom property collection.
 
@@ -708,6 +714,8 @@ exceptionDate
 •	`RecurrenceId` should be a recurrence pattern appointment object.
 •	Exception appointment should be a normal appointment and should not be created as recurring appointment, since its occurrence from recurrence pattern.
 •	`ActualDate` should be in Universal Time Coordinates (UTC) time zone.
+
+![Recurrence Exception Appointment support in schedule Xamarin Forms](PopulatingAppointments_images/exception_appointment.png)
 
 #### Add exception appointment to recurrence pattern dynamically
 

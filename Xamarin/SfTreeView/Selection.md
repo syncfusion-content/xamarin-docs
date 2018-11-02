@@ -135,9 +135,9 @@ N> [SelectionChanging](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfus
 
 The TreeView allows to select the items through keyboard interactions. Behavior of key navigation in UWP platform is explained as follows:
 
-* When the [SelectionMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~SelectionMode.html) is `Single`, the selected item is highlighted with [FocusBorderColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~FocusBorderColor.html) around the item while key navigation.
+* When the [SelectionMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~SelectionMode.html) is `Single` or `SingleDeselect`, the selected item is highlighted with [FocusBorderColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~FocusBorderColor.html) around the item while key navigation.
 
-* When the `SelectionMode` is `SingleDeSelect`, `Multiple` or `Extended`, the `FocusBorderColor` will set to the `CurrentItem` only on key navigation.
+* When the `SelectionMode` is `Multiple` or `Extended`, the `FocusBorderColor` will set to the `CurrentItem`.
 
 ## FocusBorderColor
 

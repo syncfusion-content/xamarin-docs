@@ -149,6 +149,10 @@ Run the project, and check if you get following output to make sure that the pro
 
 The password visibility toggle is used to show or hide the visibility of characters in the input view added to the control. You can enable this toggle by setting the [EnablePasswordVisibilityToggle](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~EnablePasswordVisibilityToggle.html) property to `true`.
 
+The TextInputLayout control will be disabled when an IsPassword property of the entry field is used while [EnablePasswordVisibilityToggle](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~EnablePasswordVisibilityToggle.html) property of textinputlayout control was enabled.
+
+After Enabled the EnablePasswordVisibilityToggle property,if Eye icon at the end of a entry field is unmasked,then the password is masked.Masking will be happen inversely when user tap the eye icon.
+
 {% tabs %} 
 
 {% highlight xaml %} 

@@ -144,4 +144,4 @@ For more details and code example for hosting the SfDataGrid inside SfPullToRefr
 
 The output will look like on iOS, Android, and Windows Phone devices as follows:
 
-![Hosting DataGrid inside PullToRefresh component](SfDataGrid_images/SfDataGrid_SlideOnTop_XForms.gif)
+![Hosting DataGrid inside PullToRefresh component](SfDataGrid_images/SfDataGrid_Refresh.png)

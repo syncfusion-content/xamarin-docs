@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MVVM | TreeView for Xamarin.Forms | Syncfusion
-description: Describes how TreeView works with MVVM.
+description: Describes how to use TreeView in different cases of MVVM.
 platform: xamarin
 control: SfTreeView
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # MVVM
 
-This section how TreeView works on MVVM pattern.
+This section explains about how to work with MVVM pattern in TreeView.
 
 ## Binding properties in MVVM pattern
 
@@ -74,7 +74,7 @@ public class CountriesViewModel
 
 ### Binding SelectedItems
 
-TreeView support to select multiple items through binding the [SelectedItems](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~SelectedItems.html) property from view model with ObservableCollection<object> type. 
+TreeView support to select multiple items through binding the [SelectedItems](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~SelectedItems.html) property from view model with `ObservableCollection<object>` type. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -172,7 +172,7 @@ public class CommandViewModel
 
 ### Hold command
 
-The [HoldCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~HoldCommand.html) will be triggered whenever long pressing the item and passing the [ItemHoldingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.ItemHoldingEventArgs.html) as parameter.
+The [HoldCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~HoldCommand.html) will be triggered whenever an item is long pressed and passing the [ItemHoldingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.ItemHoldingEventArgs.html) as parameter.
  
 {% tabs %}
 {% highlight c# %}

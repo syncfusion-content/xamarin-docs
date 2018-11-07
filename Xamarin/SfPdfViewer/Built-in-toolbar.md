@@ -50,7 +50,7 @@ pdfViewerControl.Toolbar.Enabled = false;
 {% endhighlight %}
 {% endtabs %}
 
-![](pdfviewer_images/ToolbarDisabled.png)
+![Build-in-toolbar disable in PDF Viewer](pdfviewer_images/ToolbarDisabled.png)
 
 The toolbar can be enabled by setting the same property to true.
 
@@ -89,7 +89,7 @@ pdfViewerControl.Toolbar.Enabled = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](pdfviewer_images/ToolbarEnabled.png)
+![Build-in-toolbar enable in PDF Viewer](pdfviewer_images/ToolbarEnabled.png)
 
 N>**By default, the built-in toolbar of SfPdfViewer is always visible.
 

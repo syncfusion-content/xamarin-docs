@@ -412,6 +412,7 @@ You can also add all deleted occurrences to the recurrence pattern appointment b
 {% highlight c# %}
 var recurrenceAppointment = scheduleAppointmentCollection[0];
             recurrenceAppointment.RecurrenceExceptionDates.Clear();
+{% endhighlight %}
 {% endtabs %}
 
 ### Add exception appointment to recurrence pattern
@@ -443,6 +444,7 @@ You should add the created exception recurrence appointment to the schedule `Dat
                 //Actual occurrence date
                 ExceptionOccurrenceActualDate = exceptionDate
             };
+{% endhighlight %}
 {% endtabs %}
 
 >**NOTE**
@@ -472,6 +474,7 @@ var exceptionDate = new DateTime(2017, 09, 07);
             };
             //Adding exception appointment in schedule appointment collection
             scheduleAppointmentCollection.Add(exceptionAppointment);
+{% endhighlight %}
 {% endtabs %}
 >**NOTE**
 •	`RecurrenceId` should be a recurrence pattern appointment object.
@@ -486,6 +489,7 @@ You can directly remove the added exception appointment for recurrence pattern b
 var exceptionAppointment = scheduleAppointmentCollection[1];
 //Remove exception appointment from schedule appointment collection
             scheduleAppointmentCollection.Remove(exceptionAppointment);
+{% endhighlight %}
 {% endtabs %}
 
 ### Creating Custom Recurrence Appointment using Recurrence Builder

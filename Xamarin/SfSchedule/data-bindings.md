@@ -431,7 +431,6 @@ You should add the created exception recurrence appointment to the schedule `Dat
             };
 // Creating recurrence rule
             recurrenceAppointment.RecurrenceRule = "FREQ=DAILY;COUNT=20";
-
             // Add exception appointment to the current recurrence pattern
             var exceptionAppointment = new ScheduleAppointment()
             {

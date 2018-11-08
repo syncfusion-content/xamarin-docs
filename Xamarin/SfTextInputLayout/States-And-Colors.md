@@ -135,7 +135,7 @@ inputLayout.InputView = new Entry() { Text = "John" };
 
 ![](States-And-Colors-images/textInput_colors_img4.png)
 
-N> Since background of the container is transparent, the color of the container will not be set when [ContainerType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.ContainerType.html) enumeration value is set to outlined.
+N> Since the background of the container is transparent, the color of the container will not be set when [ContainerType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.ContainerType.html) enumeration value is set to outlined.
 
 ## Disabled state
 

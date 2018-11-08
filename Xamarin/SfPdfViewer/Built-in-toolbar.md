@@ -9,9 +9,9 @@ documentation: ug
 
 # Working with built-in toolbar
 
-The SfPdfViewer has a built-in toolbar, which has provisions to perform majority of the operations in the PDF viewer and that can be disabled or enabled. You  can disable the built-in toolbar and develop your own toolbar.
+The SfPdfViewer has a built-in toolbar that has provisions to perform majority of the operations in the PDF Viewer and that can be disabled or enabled. You  can disable the built-in toolbar and develop your own toolbar.
 
-## How to disable/enable built-in toolbar?
+## How to disable/enable built-in toolbar
 
 By default, the built-in toolbar will be enabled. It can be disabled by setting the Toolbar.Enabled property of PDF Viewer to false.
 
@@ -52,7 +52,7 @@ pdfViewerControl.Toolbar.Enabled = false;
 
 ![Build-in-toolbar disable in PDF Viewer](pdfviewer_images/ToolbarDisabled.png)
 
-The toolbar can be enabled by setting the same property to true.
+The toolbar can be enabled by setting the Toolbar.Enabled property to true.
 
 {% tabs %}
 {% highlight xaml %}
@@ -93,30 +93,24 @@ pdfViewerControl.Toolbar.Enabled = true;
 
 N>**By default, the built-in toolbar of SfPdfViewer is always visible.
 
-## Enabling and disabling bookmark feature
+## How to disable/enable bookmark
 
-You can enable and disable the bookmark button from the built-in toolbar using the `BookmarkNavigationEnabled` property available in PDF viewer.
-
-<table>
-
-<tr>
-<th>Property</th>
-<th>Action</th>
-</tr>
-
-<tr>
-<td>BookmarkNavigationEnabled</td>
-<td>Gets or sets the value that enable and disable the bookmark feature in PDF viewer. By default, this property is set to true.</td>
-</tr>
-
-</table>
-
-This property removes the bookmark button from the built-in toolbar and disable the bookmark feature, when it is set to false and vice versa.
+By default, the bookmark button will be enabled. It can be disabled by setting the `BookmarkNavigationEnabled` property of PDF Viewer to false.  
 
 {% tabs %}
 {% highlight xaml %}
 
-<pdfviewer:SfPdfViewer x:Name="pdfViewerControl" BookmarkNavigationEnabled="False"/>               
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace: PdfViewerGettingStarted "
+             xmlns:syncfusion ="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms"
+             x:Class=" PdfViewerGettingStarted.MainPage">
+
+    <ContentPage.Content>
+        <syncfusion:SfPdfViewer x:Name="pdfViewerControl" BookmarkNavigationEnabled="False"/>
+    </ContentPage.Content>
+
+</ContentPage>          
 
 {% endhighlight %}
 {% endtabs %}
@@ -129,4 +123,3 @@ pdfViewerControl. BookmarkNavigationEnabled = false;
 
 {% endhighlight %}
 {% endtabs %}
-

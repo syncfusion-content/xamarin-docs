@@ -486,22 +486,24 @@ You can also change any occurrence appointment which is exception from recurrenc
 You can delete any of occurrence which is exception from recurrence pattern appointment by using [RecurrenceExceptionDates](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~RecurrenceExceptionDates.html) property of `ScheduleAppointment`.The deleted occurrence date will be considered as recurrence exception dates.
 {% tabs %}
 {% highlight c# %}
- // Create the new exception date.
-            var exceptionDate = new DateTime(2017, 09, 07);
-             var recurrenceAppointment = new ScheduleAppointment()
-            {
-                StartTime = new DateTime(2017, 09, 01, 10, 0, 0),
-                EndTime = new DateTime(2017, 09, 01, 12, 0, 0),
-                Subject = "Occurs Daily",
-                Color=Color.Blue
-            };
-            // Creating recurrence rule
-            recurrenceAppointment.RecurrenceRule = "FREQ=DAILY;COUNT=20";
-            // Add RecurrenceExceptionDates to appointment.
-            recurrenceAppointment.RecurrenceExceptionDates = new ObservableCollection<DateTime>()
-            {
-               exceptionDate 
-            };
+// Create the new exception date.
+var exceptionDate = new DateTime(2017, 09, 07);
+var recurrenceAppointment = new ScheduleAppointment()
+{
+	StartTime = new DateTime(2017, 09, 01, 10, 0, 0),
+	EndTime = new DateTime(2017, 09, 01, 12, 0, 0),
+	Subject = "Occurs Daily",
+	Color=Color.Blue
+};
+
+// Creating recurrence rule
+	recurrenceAppointment.RecurrenceRule = "FREQ=DAILY;COUNT=20";
+	
+// Add RecurrenceExceptionDates to appointment.
+recurrenceAppointment.RecurrenceExceptionDates = new ObservableCollection<DateTime>()
+{
+	exceptionDate 
+};
 {% endhighlight %}
 {% endtabs %}
 
@@ -551,28 +553,30 @@ You should add the created exception recurrence appointment to the schedule `Dat
 {% tabs %}
 {% highlight c# %}
 // Create the new exception date.
-            var exceptionDate = new DateTime(2017, 09, 07);
-            var recurrenceAppointment = new ScheduleAppointment()
-            {
-                StartTime = new DateTime(2017, 09, 01, 10, 0, 0),
-                EndTime = new DateTime(2017, 09, 01, 12, 0, 0),
-                Subject = "Occurs Daily",
-                Color = Color.Blue
-            };
+var exceptionDate = new DateTime(2017, 09, 07);
+var recurrenceAppointment = new ScheduleAppointment()
+{
+	StartTime = new DateTime(2017, 09, 01, 10, 0, 0),
+	EndTime = new DateTime(2017, 09, 01, 12, 0, 0),
+	Subject = "Occurs Daily",
+	Color = Color.Blue
+};
+
 // Creating recurrence rule
-            recurrenceAppointment.RecurrenceRule = "FREQ=DAILY;COUNT=20";
-            // Add exception appointment to the current recurrence pattern
-            var exceptionAppointment = new ScheduleAppointment()
-            {
-                StartTime = new DateTime(2017, 09, 07, 12, 0, 0),
-                EndTime = new DateTime(2017, 09, 07, 14, 0, 0),
-                Subject = "Meeting",
-                Color = Color.Red,
-                // Recurrence Id should be parent appointment object
-                RecurrenceId = recurrenceAppointment, 
-                //Actual occurrence date
-                ExceptionOccurrenceActualDate = exceptionDate
-            };
+recurrenceAppointment.RecurrenceRule = "FREQ=DAILY;COUNT=20";
+
+// Add exception appointment to the current recurrence pattern
+var exceptionAppointment = new ScheduleAppointment()
+{
+	StartTime = new DateTime(2017, 09, 07, 12, 0, 0),
+	EndTime = new DateTime(2017, 09, 07, 14, 0, 0),
+	Subject = "Meeting",
+	Color = Color.Red,
+	// Recurrence Id should be parent appointment object
+	RecurrenceId = recurrenceAppointment, 
+	//Actual occurrence date
+	ExceptionOccurrenceActualDate = exceptionDate
+};
 {% endhighlight %}
 {% endtabs %}
 
@@ -590,19 +594,21 @@ You can also add exception appointment dynamically for added exception date by a
 {% highlight c# %}
 var recurrenceAppointment = scheduleAppointmentCollection[0];
 var exceptionDate = new DateTime(2017, 09, 07);
-            // Add exception appointment to the current recurrence series
-            var exceptionAppointment = new ScheduleAppointment()
-            {
-                StartTime = new DateTime(2017, 09, 07, 12, 0, 0),
-                EndTime = new DateTime(2017, 09, 07, 14, 0, 0),
-                Subject = "Meeting",
-                Color = Color.Red,
-                RecurrenceId = recurrenceAppointment, // set the parent appointment to recurrence Id
-                //Actual occurrence date
-                ExceptionOccurrenceActualDate = exceptionDate
-            };
-            //Adding exception appointment in schedule appointment collection
-            scheduleAppointmentCollection.Add(exceptionAppointment);
+
+// Add exception appointment to the current recurrence series
+var exceptionAppointment = new ScheduleAppointment()
+{
+	StartTime = new DateTime(2017, 09, 07, 12, 0, 0),
+	EndTime = new DateTime(2017, 09, 07, 14, 0, 0),
+	Subject = "Meeting",
+	Color = Color.Red,
+	RecurrenceId = recurrenceAppointment, // set the parent appointment to recurrence Id
+	//Actual occurrence date
+	ExceptionOccurrenceActualDate = exceptionDate
+};
+
+//Adding exception appointment in schedule appointment collection
+scheduleAppointmentCollection.Add(exceptionAppointment);
 {% endhighlight %}
 {% endtabs %}
 >**NOTE**
@@ -641,24 +647,26 @@ You should map this custom property (`RecurrenceExceptionDates`) of custom class
 {% tabs %}
 {% highlight c# %}
 // data mapping for custom appointments.
-            dataMapping.RecurrenceExceptionDatesMapping = "RecurrenceExceptionDates";
-            
+dataMapping.RecurrenceExceptionDatesMapping = "RecurrenceExceptionDates";
+
 // Create the new exception date.
-             var exceptionDate = new DateTime(2017, 09, 07);
-             var recurrenceAppointment = new Meeting()
-            {
-                From = new DateTime(2017, 09, 01, 10, 0, 0),
-                To = new DateTime(2017, 09, 01, 12, 0, 0),
-                EventName = "Occurs Daily",
-                EventColor = Color.Blue
-            };
+var exceptionDate = new DateTime(2017, 09, 07);
+var recurrenceAppointment = new Meeting()
+{
+	From = new DateTime(2017, 09, 01, 10, 0, 0),
+	To = new DateTime(2017, 09, 01, 12, 0, 0),
+	EventName = "Occurs Daily",
+	EventColor = Color.Blue
+};
+
 // Creating recurrence rule
-            recurrenceAppointment.RecurrenceRule = "FREQ=DAILY;COUNT=20";
-            // Add RecurrenceExceptionDates to appointment.
-            recurrenceAppointment.RecurrenceExceptionDates = new ObservableCollection<DateTime>()
-            {
-              exceptionDate
-            };
+recurrenceAppointment.RecurrenceRule = "FREQ=DAILY;COUNT=20";
+
+// Add RecurrenceExceptionDates to appointment.
+recurrenceAppointment.RecurrenceExceptionDates = new ObservableCollection<DateTime>()
+{
+  exceptionDate
+};
 {% endhighlight %}
 {% endtabs %}
 
@@ -674,7 +682,7 @@ You can also delete any occurrence from the recurrence pattern appointment by ad
 {% tabs %}
 {% highlight c# %}
 var recurrenceAppointment = eventCollection[0];
-            recurrenceAppointment.RecurrenceExceptionDates.Add(new DateTime(2017, 09, 05));
+recurrenceAppointment.RecurrenceExceptionDates.Add(new DateTime(2017, 09, 05));
 {% endhighlight %}
 {% endtabs %}
 
@@ -684,7 +692,7 @@ You can also add the deleted occurrence to the recurrence pattern appointment by
 {% tabs %}
 {% highlight c# %}
 var recurrenceAppointment = eventCollection[0];
-            recurrenceAppointment.RecurrenceExceptionDates.RemoveAt(0);
+recurrenceAppointment.RecurrenceExceptionDates.RemoveAt(0);
 {% endhighlight %}
 {% endtabs %}
 
@@ -697,7 +705,7 @@ You can also add all deleted occurrence to the recurrence pattern appointment by
 {% tabs %}
 {% highlight c# %}
 var recurrenceAppointment = eventCollection[0];
-            recurrenceAppointment.RecurrenceExceptionDates.Clear();
+recurrenceAppointment.RecurrenceExceptionDates.Clear();
 {% endhighlight %}
 {% endtabs %}
 
@@ -708,7 +716,7 @@ For adding custom exception appointment to the recurrence series, add the `Actua
 {% tabs %}
 {% highlight c# %}
 public DateTime ActualDate { get; set; }
- public object RecurrenceId { get; set; }
+public object RecurrenceId { get; set; }
 {% endhighlight %}
 {% endtabs %}
 
@@ -719,31 +727,34 @@ You should add the created exception recurrence appointment to the schedule `Dat
 {% tabs %}
 {% highlight c# %}
 // Create the new exception date.
-            var exceptionDate = new DateTime(2017, 09, 07);
-            //Adding schedule appointment in schedule appointment collection 
-            var recurrenceAppointment = new Meeting()
-            {
-                From = new DateTime(2017, 09, 01, 10, 0, 0),
-                To = new DateTime(2017, 09, 01, 12, 0, 0),
-                EventName = "Occurs Daily",
-                EventColor = Color.Blue
-            };
+var exceptionDate = new DateTime(2017, 09, 07);
+
+//Adding schedule appointment in schedule appointment collection 
+var recurrenceAppointment = new Meeting()
+{
+	From = new DateTime(2017, 09, 01, 10, 0, 0),
+	To = new DateTime(2017, 09, 01, 12, 0, 0),
+	EventName = "Occurs Daily",
+	EventColor = Color.Blue
+};
 recurrenceAppointment.RecurrenceRule = "FREQ=DAILY;COUNT=20";
+
 // Add RecurrenceExceptionDates to appointment.
-            recurrenceAppointment.RecurrenceExceptionDates = new ObservableCollection<DateTime>()
-            {
+recurrenceAppointment.RecurrenceExceptionDates = new ObservableCollection<DateTime>()
+{
 exceptionDate 
-            };
-           // Add exception appointment to the current recurrence series
-            var exceptionAppointment = new Meeting()
-            {
-                From = new DateTime(2017, 09, 07, 12, 0, 0),
-                To = new DateTime(2017, 09, 07, 14, 0, 0),
-                EventName = "Meeting",
-                EventColor = Color.Red,
-                RecurrenceID = recurrenceAppointment,
-                ActualDate = exceptionDate
-            }; 
+};
+
+// Add exception appointment to the current recurrence series
+var exceptionAppointment = new Meeting()
+{
+	From = new DateTime(2017, 09, 07, 12, 0, 0),
+	To = new DateTime(2017, 09, 07, 14, 0, 0),
+	EventName = "Meeting",
+	EventColor = Color.Red,
+	RecurrenceID = recurrenceAppointment,
+	ActualDate = exceptionDate
+}; 
 {% endhighlight %}
 {% endtabs %}
 
@@ -761,19 +772,20 @@ You can also add exception appointment dynamically for added exception date by a
 {% tabs %}
 {% highlight c# %}
 var recurrenceAppointment = eventCollection[0];
-            var exceptionDate = new DateTime(2017, 09, 07);
-            // Add exception appointment to the current recurrence series
-            var exceptionAppointment = new Meeting()
-            {
-                From = new DateTime(2017, 09, 07, 12, 0, 0),
-                To = new DateTime(2017, 09, 07, 14, 0, 0),
-                EventName = "Meeting",
-                EventColor = Color.Red,
-                RecurrenceID = recurrenceAppointment, // set the parent appointment to recurrence Id.
-                //Actual occurrence date
-                ActualDate = exceptionDate
-            };
-            eventCollection.Add(exceptionAppointment);
+var exceptionDate = new DateTime(2017, 09, 07);
+
+// Add exception appointment to the current recurrence series
+var exceptionAppointment = new Meeting()
+{
+	From = new DateTime(2017, 09, 07, 12, 0, 0),
+	To = new DateTime(2017, 09, 07, 14, 0, 0),
+	EventName = "Meeting",
+	EventColor = Color.Red,
+	RecurrenceID = recurrenceAppointment, // set the parent appointment to recurrence Id.
+	//Actual occurrence date
+	ActualDate = exceptionDate
+};
+eventCollection.Add(exceptionAppointment);
 {% endhighlight %}
 {% endtabs %}
 
@@ -789,7 +801,7 @@ You can directly remove the added exception appointment for recurrence pattern b
 {% tabs %}
 {% highlight c# %}
 var exceptionAppointment = eventCollection[1];
-            eventCollection.Remove(exceptionAppointment);
+eventCollection.Remove(exceptionAppointment);
 {% endhighlight %}
 {% endtabs %}
 
@@ -811,17 +823,17 @@ Schedule appointment can be customized by setting appointment style properties s
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfSchedule x:Name="schedule" ScheduleView="DayView" DataSource="{Binding Meetings}">
-    <syncfusion:SfSchedule.AppointmentStyle>
-         <syncfusion:AppointmentStyle
-                       BorderWidth="10"
-                       TextColor="Red"
-                       BorderCornerRadius="10"
-                       FontSize = "25"
-                       FontAttributes = "Bold"
-                       FontFamily = "Arial"
-                       BorderColor="Blue">
-    </syncfusion:AppointmentStyle>
-</syncfusion:SfSchedule.AppointmentStyle>
+		<syncfusion:SfSchedule.AppointmentStyle>
+			<syncfusion:AppointmentStyle
+				BorderWidth="10"
+				TextColor="Red"
+				BorderCornerRadius="10"
+				FontSize = "25"
+				FontAttributes = "Bold"
+				FontFamily = "Arial"
+				BorderColor="Blue">
+		</syncfusion:AppointmentStyle>
+	</syncfusion:SfSchedule.AppointmentStyle>
 </syncfusion:SfSchedule>
 {% endhighlight %}
 {% highlight c# %}

@@ -49,7 +49,7 @@ Connector connector = new Connector() { SourceNode = node1, TargetNode = node2, 
 sfDiagram.AddConnector(connector);
 {% endhighlight %}
 {% endtabs %}
-![](Port_images/Port_img1.jpeg)
+![Port in Xamarin.Forms diagram](Port_images/Port_img1.jpeg)
 
 ## Accessing a port from the node instance
 You can access the port by its index from the Ports property in a node.

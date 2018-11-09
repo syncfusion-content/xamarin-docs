@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of Syncfusion SfPullToRefresh control for Xamarin.Forms.
-description: Overview and key features of SfPullToRefresh control in Xamarin.Forms
+description: Overview, key features and use case scenarios of Xamarin.Forms PullToRefresh control.
 platform: Xamarin.Forms 
 control: SfPullToRefresh 
 documentation: ug
@@ -28,5 +28,5 @@ SfPullToRefresh is a refresh control that allows you to interact and refresh the
 * `StartRefreshing()`: Starts the programmatic refreshing.
 * `EndRefreshing()`: Ends the programmatic refreshing.
 
-![](overview_images/pulltorefresh.png)
-![](overview_images/pulltorefresh1.png)
+![PullToRefresh with slide on top transition mode](overview_images/pulltorefresh.png)
+![PullToRefresh with push transition mode](overview_images/pulltorefresh1.png)

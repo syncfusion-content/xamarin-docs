@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grouping | SfDataGrid | Xamarin | Syncfusion
-description: How to group a column in a SfDataGrid and about the properites and customizations in grouping.
+description: Grouping one or more columns and about the properties and events that involve in grouping in Xamarin.Forms DataGrid. Expanding or collapsing groups and using custom grouping logic if conventional grouping does not meet requirements.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
@@ -45,7 +45,7 @@ To apply column grouping, follow the code example:
 
 The following screenshot shows the output rendered when grouping is applied:
 
-![](SfDataGrid_images/SfDataGrid-Xamarin_img2.png)
+![DataGrid with grouping](SfDataGrid_images/SfDataGrid-Xamarin_img2.png)
 
 ## MultiGrouping
 
@@ -67,7 +67,7 @@ this.dataGrid.GroupingMode = GroupingMode.Multiple;
 {% endtabs %}
 
 The following screenshot shows the output rendered when above code is executed:
-![](SfDataGrid_images/MultiColumnGrouping_XForms.png)
+![DataGrid with multi-column grouping](SfDataGrid_images/MultiColumnGrouping_XForms.png)
 
 ## Indent column customizations
 
@@ -118,7 +118,7 @@ public class CustomStyle : DataGridStyle
 {% endtabs %}
 
 
-![](SfDataGrid_images/IndentColumnStyling.png)
+![DataGrid with indent column styling](SfDataGrid_images/IndentColumnStyling.png)
 
 
 ## Custom grouping
@@ -251,7 +251,7 @@ this.dataGrid.CollapseGroup(group);
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/GroupExpandCollapse.png)
+![DataGrid with group expanding and collapsing](SfDataGrid_images/GroupExpandCollapse.png)
 
 ## Display based grouping using GroupMode property
 
@@ -273,7 +273,7 @@ cargoWeight.Format = "#";
 {% endtabs %}
 
 Following screenshot shows the comparison between two Group modes. GroupMode.Value on the left and GroupMode.Display on the right:
-![](SfDataGrid_images/GroupMode.png)
+![DataGrid with group mode](SfDataGrid_images/GroupMode.png)
 
 ## Clearing or removing a group
 
@@ -368,7 +368,7 @@ private void ClearGroupingButton_Click(object sender, System.EventArgs e)
 
 Run the application to render the following output: 
 
-![](SfDataGrid_images/Remove_Grouping.png)
+![Remove groups in runtime in a DataGrid](SfDataGrid_images/Remove_Grouping.png)
 
 N> Clear or remove grouping on [GridTapped event](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridTapped_EV.html), [GridDoubleTapped event](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridDoubleTapped_EV.html), or [GridLongPressed event](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridLongPressed_EV.html).
 

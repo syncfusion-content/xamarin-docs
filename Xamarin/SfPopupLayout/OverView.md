@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | SfPopupLayout |Xamarin| Syncfusion
-description: Overview of SfPopupLayout
+description: Overview and key features of Xamarin.Forms PopupLayout control with its customization capabilities.
 platform: Xamarin
 control: SfPopupLayout
 documentation: ug
@@ -20,4 +20,4 @@ Pop-up layout provides a layout that allows users to display an alert message wi
 * Display pop-ups at the touch interaction positions.
 * Display pop-ups at specific x and y coordinates with desired height and width or with default dimensions in the center.
 
-![](GettingStarted_images/OverView.gif)
+![Overview of Pop-up](GettingStarted_images/OverView.gif)

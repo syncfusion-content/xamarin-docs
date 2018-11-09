@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Filtering | SfDataGrid | Xamarin | Syncfusion
-description: How to filter the records in view in a SfDataGrid.
+description: Filter the records in view in Xamarin.Forms DataGrid by simply setting a predicate to the view. 
 platform: xamarin
 control: SfDataGrid
 documentation: UG
@@ -216,7 +216,7 @@ private void OnFilterTextChanged(object sender, TextChangedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/Filtering_Img1.png)
+![DataGrid with filtered data](SfDataGrid_images/Filtering_Img1.png)
 
 Once you create a `SearchBar` and a view model, filtering can be performed by setting `SfDataGrid.View.Filter` property. Call the `SfDataGrid.View.RefreshFilter()` method after setting the filtered records to the `SfDataGrid.View.Filter` property as in the following code example:
 
@@ -235,7 +235,7 @@ private void OnFilterChanged()
 }
 {% endhighlight %}
 
-### Column based filtering
+## Filter individual columns
 
 To filter records in all the columns or in a particular column, use codes in OnColumnSelected() method. 
 
@@ -306,9 +306,9 @@ private void OnColumnsSelectionChanged(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/Filtering_Img2.png)
+![DataGrid with data filtered based on columns](SfDataGrid_images/Filtering_Img2.png)
 
-### Condition based filtering
+## Filter based on conditions
 
 In addition to column based filtering, the records can be filtered based on some conditions. For example, the records can be filtered based on the given input or the records can be filtered contrast to the input. The condition based filtering can be achieved for all the columns or any particular column.
 
@@ -645,7 +645,7 @@ private void OnFilterChanged()
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/Filtering_Img3.png)
+![DataGrid with data filtered based on conditions](SfDataGrid_images/Filtering_Img3.png)
 
 ## Clear filtering
 

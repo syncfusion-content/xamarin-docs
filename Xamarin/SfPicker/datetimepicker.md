@@ -249,6 +249,7 @@ UpdateDays(Date, e);
 //Update days method is used to alter the Date collection as per selection change in Month column(if Feb is Selected day collection has value from 1 to 28)
 
 public void UpdateDays(ObservableCollection<object> Date, SelectionChangedEventArgs e)
+
     {
 
         Device.BeginInvokeOnMainThread(() =>
@@ -482,5 +483,5 @@ The following screenshot illustrates the output of the above codes.
 
 You can download the DateTimePicker sample for reference from the following link.
 
-Sample link: [DateTimePicker](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DateTimePicker1071230245)
+Sample link: [DateTimePicker](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DateTime-1074100519)
 

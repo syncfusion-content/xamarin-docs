@@ -292,4 +292,4 @@ Now, run the application to render the below output:
 
 You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Styling239740457).
 
-![Xamarin Forms TreeView with styling](TreeView_images/TreeView_UnBound.png)
+![Xamarin Forms TreeView with styling](TreeView_images/TreeView_LevelStyle.png)

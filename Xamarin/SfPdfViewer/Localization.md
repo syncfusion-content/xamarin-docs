@@ -53,7 +53,7 @@ Based on the language, set the appropriate equivalent text to the static text in
 
 N> You should create and add separate .resx files for individual languages.
 
-![resx file of PDF viewer](pdfviewer_images/PdfViewerAddingResxFile.png)
+![resx file of PDF viewer](pdfviewer_images/PdfViewerResxFile.png)
 
 ## Convert the platform specific language format to .NET format
 

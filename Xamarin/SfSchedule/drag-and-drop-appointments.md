@@ -7,7 +7,7 @@ control: SfSchedule
 documentation: ug
 ---
 
-# Drag and Drop Appointment
+# Appointment Drag and Drop
 Appointments can be rescheduled using the drag and drop operation. To perform drag-and-drop operations within the schedule, enable the [AllowAppointmentDrag](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~AllowAppointmentDrag.html) property of `SfSchedule`.
 
 {% tabs %}

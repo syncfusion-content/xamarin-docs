@@ -622,7 +622,7 @@ var exceptionAppointment = scheduleAppointmentCollection[1];
 {% endtabs %}
 
 You can download the entire source code of this demo for Xamarin.Forms from
-here [RecurrenceExceptions](https://github.com/SyncfusionExamples/How-to-add-Recurrence-Exceptions-to-SfSchedule-recurring-appointments-in-Xamarin.Forms).
+here [RecurrenceExceptions](https://github.com/SyncfusionExamples/How-to-create-Recurrence-Exceptions-to-SfSchedule-recurring-appointments-in-Xamarin.Forms).
 
 ### Create recurrence exceptions for custom appointment
 
@@ -794,7 +794,7 @@ var exceptionAppointment = eventCollection[1];
 {% endtabs %}
 
 You can download the entire source code of this demo for Xamarin.Forms from
-here [RecurrenceExceptions](https://github.com/SyncfusionExamples/How-to-add-Recurrence-Exceptions-to-SfSchedule-for-custom-recurring-appointments-in-Xamarin.Forms).
+here [RecurrenceExceptions](https://github.com/SyncfusionExamples/How-to-create-Recurrence-Exceptions-to-SfSchedule-for-custom-recurring-appointments-in-Xamarin.Forms).
 
 ## Appearance Customization
 The default appearance of the appointment can be customized by using the [AppointmentStyle](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle.html) property and [AppointmentLoadedEvent](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentLoadedEventArgs.html). The event and property is used to customize or override the default template of the Appointments.

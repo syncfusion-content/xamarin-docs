@@ -56,6 +56,8 @@ treeView.SelectedItems.Add(viewModel.CountriesInfo[3]);
 {% endhighlight %}
 {% endtabs %}
 
+W> When you select an item programmatically when `SelectionMode` is none and when you select multiple items programmatically when `SelectionMode` is single or single deselect, exception will be thrown.
+
 ## Selected items 
 
 ### Gets selected Items
@@ -73,8 +75,6 @@ treeView.SelectedItems.Clear();
 ### CurrentItem vs SelectedItem
 
 The TreeView gets the selected item by using the [SelectedItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~SelectedItem.html) and [CurrentItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~CurrentItem.html) properties. Both `SelectedItem` and `CurrentItem` returns the same data object when selecting single item. When selecting more than one item, the `SelectedItem` property returns the first selected item, and the `CurrentItem` property returns the last selected item.
-
-W> If you select an item when `SelectionMode` is none or if you select multiple items when `SelectionMode` is single or single deselect, exception will be thrown.
 
 ## Selected item style
 

@@ -11,7 +11,7 @@ documentation: ug
 
 The TreeView allows customizing appearance of the underlying data, and provides different functionalities to the end-user.
 
-## Item Template
+## ItemTemplate
 
 A template can be used to present the data in a way that makes sense for the application by using different controls.
 
@@ -67,7 +67,7 @@ public class MainPage : ContentPage
 {% endtabs %}
 
 
-## BindingContext for Item Template
+## BindingContext for ItemTemplate
 
 By default, the binding context of tree view item will be the data model object for Bound Mode and [TreeViewNode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode.html) for Unbound Mode.
 
@@ -124,7 +124,7 @@ public class MainPage : ContentPage
 
 Similarly, you can customize the expander view by using `ExpanderTemplate` property like above example. 
 
-## Item Template Selector
+## ItemTemplate Selector
 
 The TreeView allows you to customize the appearance of each item with different templates based on specific constraints by using the [DataTemplateSelector](https://docs.microsoft.com/en-us/dotnet/api/Xamarin.Forms.DataTemplateSelector?view=xamarin-forms). You can choose a [DataTemplate](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.datatemplate?view=xamarin-forms) for each item at runtime based on the value of data-bound property using `DataTemplateSelector`.
 
@@ -207,7 +207,7 @@ treeView.Indentation = 40;
 {% endhighlight %}
 {% endtabs %}
 
-## Item Height
+## ItemHeight
 
 The TreeView allows customizing the height of items by setting the [ItemHeight](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ItemHeight.html) property. The default value of this property is `40`. This property can be customized at runtime.
 
@@ -221,7 +221,7 @@ treeView.ItemHeight = 40;
 {% endhighlight %}
 {% endtabs %}
 
-## Expander Width
+## ExpanderWidth
 
 The TreeView allows customizing the width of expander view by setting the [ExpanderWidth](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ExpanderWidth.html) property. The default value of this property is `40`. This property can be customized at runtime.
 

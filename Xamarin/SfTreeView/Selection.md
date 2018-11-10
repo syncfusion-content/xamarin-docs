@@ -56,7 +56,7 @@ treeView.SelectedItems.Add(viewModel.CountriesInfo[3]);
 {% endhighlight %}
 {% endtabs %}
 
-W> When you select an item programmatically when `SelectionMode` is none and when you select multiple items programmatically when `SelectionMode` is single or single deselect, exception will be thrown.
+W> If an item is selected programmatically when `SelectionMode` is `None` and if multiple items are programmatically selected when `SelectionMode` is `Single` or `SingleDeselect`, then exception will be thrown internally.
 
 ## Selected items 
 

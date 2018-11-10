@@ -113,12 +113,12 @@ This section explains how to create a TreeView and configure it. The TreeView co
 In this walk through, you will create a new application with the TreeView that includes the following topics:
 
 * [Creating the project](#creating-the-project)
-* [Adding tree view in Xamarin.Forms](#adding-treeview-in-xamarin.forms)     
-* [Populating Nodes without data source - Unbound Mode](#populating-nodes-without-data-source-unbound-mode) 
-* [Creating Data Model](#creating-data-model-for-the-treeview)  
-* [Bind to a hierarchical data source - Bound Mode](#bind-to-a-hierarchical-data-source-bound-mode)
+* [Adding tree view in Xamarin.Forms](#adding-the-tree-view-in-xamarin.forms)     
+* [Populating Nodes without data source - Unbound Mode](#populating-nodes-without-data-source---unbound-mode) 
+* [Creating Data Model](#creating-data-model-for-the-tree-view)  
+* [Bind to a hierarchical data source - Bound Mode](#bind-to-a-hierarchical-data-source---bound-mode)
 * [Defining a template to expander and content view](#defining-a-template-to-expander-and-content-view)
-* [Interacting with a tree view](#interacting-with-a-treeview)
+* [Interacting with a tree view](#interacting-with-a-tree-view)
 * [Selection](#selection)
 
 ## Creating the Project

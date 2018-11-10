@@ -518,8 +518,8 @@ You can also delete any occurrence from the recurrence pattern appointment by ad
 
 {% tabs %}
 {% highlight c# %}
- var recurrenceAppointment = scheduleAppointmentCollection[0];
-            recurrenceAppointment.RecurrenceExceptionDates.Add(new DateTime(2017, 09, 05));
+var recurrenceAppointment = scheduleAppointmentCollection[0];
+recurrenceAppointment.RecurrenceExceptionDates.Add(new DateTime(2017, 09, 05));
 {% endhighlight %}
 {% endtabs %}
 
@@ -529,7 +529,7 @@ You can also add the deleted occurrence to the recurrence pattern appointment by
 {% tabs %}
 {% highlight c# %}
 var recurrenceAppointment = scheduleAppointmentCollection[0];
-            recurrenceAppointment.RecurrenceExceptionDates.RemoveAt(0);
+recurrenceAppointment.RecurrenceExceptionDates.RemoveAt(0);
 {% endhighlight %}
 {% endtabs %}
 
@@ -542,7 +542,7 @@ You can also add all deleted occurrences to the recurrence pattern appointment b
 {% tabs %}
 {% highlight c# %}
 var recurrenceAppointment = scheduleAppointmentCollection[0];
-            recurrenceAppointment.RecurrenceExceptionDates.Clear();
+recurrenceAppointment.RecurrenceExceptionDates.Clear();
 {% endhighlight %}
 {% endtabs %}
 
@@ -623,7 +623,7 @@ You can directly remove the added exception appointment for recurrence pattern b
 {% highlight c# %}
 var exceptionAppointment = scheduleAppointmentCollection[1];
 //Remove exception appointment from schedule appointment collection
-            scheduleAppointmentCollection.Remove(exceptionAppointment);
+scheduleAppointmentCollection.Remove(exceptionAppointment);
 {% endhighlight %}
 {% endtabs %}
 

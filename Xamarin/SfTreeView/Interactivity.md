@@ -45,7 +45,7 @@ The [ItemTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Sf
 
 treeView.ItemTapped += TreeView_ItemTapped;
 
-private void TreeView_ItemTapped(object sender, Syncfusion.ListView.XForms.ItemTappedEventArgs e)
+private void TreeView_ItemTapped(object sender, ItemTappedEventArgs e)
 {
     DisplayAlert("Item Tapped", "TreeView item tapped", "Close");
 }

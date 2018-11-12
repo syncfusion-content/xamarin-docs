@@ -34,44 +34,6 @@ schedule.DataSource=scheduleAppointmentCollection;
 
 ![Creating Appointment in schedule Xamarin Forms](PopulatingAppointments_images/appointment.png)
 
-## Minimum Appointment Height
-
-[MinHeight](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~MinHeight.html) of an appointment is to set an arbitrary height to appointments when it has minimum duration, so that the subject can be readable.
-
-{% tabs %}
-{% highlight c# %}
-schedule.ScheduleView = ScheduleView.DayView;
-ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
-scheduleAppointmentCollection.Add(new ScheduleAppointment()
-{
-    StartTime = new DateTime(2018, 2, 13, 09, 0, 0),
-    EndTime = new DateTime(2018, 2, 13, 09, 0, 0),
-    Subject = "Client Meeting",
-    MinHeight = 30,
-    Color = Color.FromHex("#FFD80073")
-});
-scheduleAppointmentCollection.Add(new ScheduleAppointment()
-{
-    StartTime = new DateTime(2018, 2, 13, 11, 0, 0),
-    EndTime = new DateTime(2018, 2, 13, 12, 0, 0),
-    Subject = "Anniversary",
-    Color = Color.FromHex("#FFA2C139")
-});
-schedule.DataSource = scheduleAppointmentCollection;
-
-this.Content = schedule;
-{% endhighlight %}
-{% endtabs %}
-
- ![Minimum Appointment height support in schedule Xamarin Forms](PopulatingAppointments_images/minheight.png)
-
->**NOTE**
-* `MinHeight` value will be set, when the an appointment height (duration) value lesser than MinHeight. 
-* Appointment height (duration) value will be set, when the appointment height (duration) value greater than `MinHeight`.
-* TimeInterval value will be set, when Minimum Height greater than TimeInterval with lesser appointment height (duration).
-* `MinHeight` has ScheduleAppointmentMapping Support.
-* All day Appointment does not support `MinHeight`.
-
 ## Mapping
 Schedule supports full data binding to any type of IEnumerable source. Specify the [ScheduleAppointmentMapping](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping.html) attributes to map the properties in the underlying data source to the schedule appointments.
 
@@ -1246,4 +1208,42 @@ private void Schedule_CellTapped(object sender, CellTappedEventArgs e)
 
 >**NOTE**
 `InputTransparent` default value is false, custom view event will be raised by default.
+
+## Minimum Appointment Height
+
+[MinHeight](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~MinHeight.html) of an appointment is to set an arbitrary height to appointments when it has minimum duration, so that the subject can be readable.
+
+{% tabs %}
+{% highlight c# %}
+schedule.ScheduleView = ScheduleView.DayView;
+ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
+scheduleAppointmentCollection.Add(new ScheduleAppointment()
+{
+    StartTime = new DateTime(2018, 2, 13, 09, 0, 0),
+    EndTime = new DateTime(2018, 2, 13, 09, 0, 0),
+    Subject = "Client Meeting",
+    MinHeight = 30,
+    Color = Color.FromHex("#FFD80073")
+});
+scheduleAppointmentCollection.Add(new ScheduleAppointment()
+{
+    StartTime = new DateTime(2018, 2, 13, 11, 0, 0),
+    EndTime = new DateTime(2018, 2, 13, 12, 0, 0),
+    Subject = "Anniversary",
+    Color = Color.FromHex("#FFA2C139")
+});
+schedule.DataSource = scheduleAppointmentCollection;
+
+this.Content = schedule;
+{% endhighlight %}
+{% endtabs %}
+
+ ![Minimum Appointment height support in schedule Xamarin Forms](PopulatingAppointments_images/minheight.png)
+
+>**NOTE**
+* `MinHeight` value will be set, when the an appointment height (duration) value lesser than MinHeight. 
+* Appointment height (duration) value will be set, when the appointment height (duration) value greater than `MinHeight`.
+* TimeInterval value will be set, when Minimum Height greater than TimeInterval with lesser appointment height (duration).
+* `MinHeight` has ScheduleAppointmentMapping Support.
+* All day Appointment does not support `MinHeight`.
 

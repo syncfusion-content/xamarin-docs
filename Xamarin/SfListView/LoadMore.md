@@ -704,4 +704,4 @@ public partial class MainPage : ContentPage
 
 You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LoadMore_Up_Manual-1153429299).
 
-![Loadmore manual](SfListView_images/SfListView-LoadMoreManuallyUpDirection.png)
+![Loadmore manual](SfListView_images/SfListView-LoadMoreManuallyUpDirection.jpg)

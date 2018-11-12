@@ -88,7 +88,7 @@ listView.IsStickyFooter = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Xamarin.Forms listview with header and footer](SfListView_images/SfListView-HeaderAndFooter.png)
+![Xamarin.Forms listview with header and footer](SfListView_images/SfListView-HeaderAndFooter.jpg)
 
 ## How to
 

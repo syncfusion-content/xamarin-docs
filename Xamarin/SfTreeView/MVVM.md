@@ -133,7 +133,7 @@ public class CountriesViewModel
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Selection148873057)..
+You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Selection148873057).
 ![Xamarin Forms TreeView with selection](TreeView_images/TreeView_Selection.png)
 
 ## Commands

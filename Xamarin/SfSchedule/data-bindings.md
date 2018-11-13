@@ -528,6 +528,12 @@ var recurrenceAppointment = new ScheduleAppointment()
 // Creating recurrence rule
 recurrenceAppointment.RecurrenceRule = "FREQ=DAILY;COUNT=20";
 
+// Add RecurrenceExceptionDates to appointment.
+recurrenceAppointment.RecurrenceExceptionDates = new ObservableCollection<DateTime>()
+{
+	exceptionDate 
+};
+
 // Add exception appointment to the current recurrence pattern
 var exceptionAppointment = new ScheduleAppointment()
 {

@@ -16,3 +16,5 @@ The Syncfusion TreeView for Xamarin.Forms is a data-oriented control that displa
 * Binding and unbound mode - Support for binding hierarchical data or add unbound tree nodes.
 * Selection - Support for selection with different selection modes and keyboard navigation.
 * Templating - Provides complete UI customization through template and template selectors. 
+
+![Xamarin Forms TreeView Create](TreeView_images/TreeView_TreeView.png)

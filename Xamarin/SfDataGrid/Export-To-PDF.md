@@ -830,7 +830,7 @@ public class SaveWindows : ISaveWindows
 You can also save the manipulated PDF document to stream by using overloads of the Save method.
 
 {% tabs %}
-{% highlight%}
+{% highlight c# %}
 //Load an existing PDF document
 PdfLoadedDocument loadedDocument = new PdfLoadedDocument("Input.pdf");
 //To-Do some manipulation
@@ -839,7 +839,7 @@ PdfLoadedDocument loadedDocument = new PdfLoadedDocument("Input.pdf");
 MemoryStream stream = new MemoryStream();
 //Save the document stream
 loadedDocument.Save(stream) ;
-{%endhighlight%}
+{% endhighlight %}
 {% endtabs %}
 
 ## Row height and column width customization

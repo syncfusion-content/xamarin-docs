@@ -68,11 +68,11 @@ N> Similarly, the UI for swiping towards left can be customized by using the [Sf
 
 N> Swipe Template is mandatory to perform swiping in the SfListView.
 
-![](SfListView_images/SfListView-Swiping--1.png)
+![Left swiping functionalities](SfListView_images/SfListView-Swiping--1.png)
 
-Download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/3.Swiping-1289860291). 
+Download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Swipe_customizations-1458865420). 
 
-![](SfListView_images/SfListView-Swiping--2.png)
+![Right swiping functionalities](SfListView_images/SfListView-Swiping--2.png)
 
 ### Data Template Selector
 
@@ -160,7 +160,7 @@ listView.LeftSwipeTemplate = new DataTemplate(() =>
 {%endhighlight %}
 {% endtabs %}
 
-![](SfListView_images/SfListView-Swiping--3.png)
+![Customize left swipe in listview](SfListView_images/SfListView-Swiping--3.png)
 
 To delete the item when `Delete` image is tapped and setting favorites to item when `Favorites` image is tapped, follow the code example.
 
@@ -484,9 +484,9 @@ private void ListView_PropertyChanged(object sender, PropertyChangedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/4.ListViewswiping-919599411).
+You can download the entire source code [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Swipe_item_Indefinetly-1576284120).
 
-![](SfListView_images/SfListView-Swiping--4.png)
+![Indefinite swipe in listview](SfListView_images/SfListView-Swiping--4.png)
 
 ### Edit item data by swipe
 
@@ -558,4 +558,4 @@ private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-You can download entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/1.EditSwipe-1839008462).
+You can download entire source code [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/EditSwipe-1636292374).

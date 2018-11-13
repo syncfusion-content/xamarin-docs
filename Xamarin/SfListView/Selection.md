@@ -34,7 +34,7 @@ listView.SelectionGesture = TouchGesture.Hold;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfListView_images/SfListView-Selection-1.png)
+![Single item selection in ListView](SfListView_images/SfListView-Selection-1.png)
 
 ## Programmatic selection
 
@@ -139,9 +139,9 @@ The SfListView supports customizing the selection background color for the selec
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomSelection-SelectionBackground-1263708841).
+You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SelectedItemCustomization-473967184).
 
-![](SfListView_images/SfListView-Selection-3.png)
+![Custom selection in listview](SfListView_images/SfListView-Selection-3.png)
 
 ### Show checked circle on selected items 
 
@@ -221,9 +221,9 @@ listView.SelectedItemTemplate = new DataTemplate(() =>
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomSelection-New2007563607).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Checked_Circle_OnSelected_Items-1476673984).
 
-![](SfListView_images/SfListView-Selection-2.png)
+![Multiple item selection in ListView](SfListView_images/SfListView-Selection-2.png)
 
 ## Selected item style
 
@@ -241,7 +241,7 @@ listView.SelectionBackgroundColor = Color.Khaki;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfListView_images/SfListView-SelectionBackground.png)
+![Selection background color in listview](SfListView_images/SfListView-SelectionBackground.png)
 
 ### Programmatic animation
 
@@ -267,9 +267,9 @@ public class SelectionControllerExt : SelectionController
 {% endhighlight %}
 {% endtabs %}
 
-You can download the sample for above source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Programatic_Animation1251260296).
+You can download the sample for above source code [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Programatic_Animation-311129164).
 
-![](SfListView_images/SfListView-SelectionAnimation.gif)
+![Selection animation in listview](SfListView_images/SfListView-SelectionAnimation.gif)
 
 ## Events
 
@@ -382,7 +382,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfListViewSample1729548537).
+You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/disable_selection_onparticualr_item-576187978).
 
 ### Automatically scroll to bring a selected item into the view
 
@@ -414,7 +414,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfListViewSample-1451946805).
+You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Automatic_scrol_selected_Item_In_view-1395779347).
 
 ### Gets the index of selected item
 
@@ -440,7 +440,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SelectionItemIndex1430542696).
+You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Get_Index_Selected_Item-722108833).
 
 ## Limitation
 

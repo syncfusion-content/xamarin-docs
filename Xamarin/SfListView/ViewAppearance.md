@@ -113,7 +113,7 @@ listView.Orientation = Orientation.Horizontal;
 {% endhighlight %}
 {% endtabs %}
 
-![Xamarin.Forms listview items in horizontal orientation](SfListView_images/SfListView-Orientation.png)
+![Xamarin.Forms listview items in horizontal orientation](SfListView_images/SfListView-Orientation.gif)
 
 ### Navigate across views (like TabView)
 

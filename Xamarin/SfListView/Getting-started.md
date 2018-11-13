@@ -195,7 +195,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 This section explains how to create a SfListView, and configure it. The SfListView control can be configured entirely in C# code, or by using XAML markup. This is how the control will look like on iOS, Android, and Windows devices.
  
-![Xamarin.Forms listview](SfListView_images/SfListView-Xamarin_img1.png)
+![Xamarin.Forms listview](SfListView_images/SfListView-Xamarin_img1.jpg)
 
 In this walk through, you will create a new application with the SfListView that includes the following topics:
 

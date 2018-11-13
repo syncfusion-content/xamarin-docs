@@ -1316,11 +1316,11 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endtabs %}
 
-## VisibleMinimum
+### VisibleMinimum
 
 The [`VisibleMinimum`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~VisibleMinimum.html) property of the chart axis can be used only to get the double value that represents the minimum observable value of the axis range in runtime.
 
-## VisibleMaximum
+### VisibleMaximum
 
 The [`VisibleMaximum`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~VisibleMaximum.html) property of the chart axis can be used only to get the double value that represents the maximum observable value of the axis range in runtime. 
 

@@ -1120,7 +1120,7 @@ The options are as follows:
 
 By using swipe view action, add an item from one listview to the another listview.
 
-For example you can achieve it by adding an item in to the collection of the listview.
+The below example demonstrate about to adding an item in to the collection of the listview.
 
 {% tabs %}
 {% highlight c# %}

@@ -1118,17 +1118,19 @@ The options are as follows:
 
 ### Swipe and move an item to another listview on swipe item tapped action
 
-Add an item from one listview to the another by adding it into the ItemsSource collection of the another listview.
+By using swipe view action, add an item from one listview to the another listview.
+
+For example you can achieve it by adding an item in to the collection of the listview.
 
 {% tabs %}
 {% highlight c# %}
 private void FavoriteTapped(object obj)
 {
     var departureInfo = obj as DepartureInfo;
-    var pinnedInfo = UpperLVCollection.Any(o => o.Name == departureInfo.Name) ? UpperLVCollection.First(o => o.Name == departureInfo.Name) : null;
+    var pinnedInfo = FirstLVCollection.Any(o => o.Name == departureInfo.Name) ? FirstLVCollection.First(o => o.Name == departureInfo.Name) : null;
     if (pinnedInfo == null)
     {
-        UpperLVCollection.Add(new PinnedInfo() { Name = departureInfo.Name, RouteName = departureInfo.Name, Icon = departureInfo.Icon, IsFavorite = true });
+        FirstLVCollection.Add(new PinnedInfo() { Name = departureInfo.Name, RouteName = departureInfo.Name, Icon = departureInfo.Icon, IsFavorite = true });
     }
 }
 {% endhighlight %}
@@ -1136,7 +1138,7 @@ private void FavoriteTapped(object obj)
 
 ### Filter listview items based on another listview selection
 
-To filter the listview items based on the item tapped in the another listview by changing SfListView.DataSource.Filter property to the item tapped data.
+To filter the listview items based on the item selection in the another listview by changing SfListView.DataSource.Filter property.
 
 {% tabs %}
 {% highlight c# %}
@@ -1145,15 +1147,15 @@ private void ItemTapped(Syncfusion.ListView.XForms.ItemTappedEventArgs e)
     tappedPinedInfo = e.ItemData as PinnedInfo;
     if (tappedPinedInfo.IsFavorite)
     {
-        bottomLV.DataSource.Filter = FilterDepartures;
+        secondLV.DataSource.Filter = FilterDepartures;
         tappedPinedInfo.IsFavorite = false;
     }
     else
     {
-        bottomLV.DataSource.Filter = null;
+        secondLV.DataSource.Filter = null;
         tappedPinedInfo.IsFavorite = true;
     }
-    bottomLV.DataSource.RefreshFilter();
+    secondLV.DataSource.RefreshFilter();
 }
 
 private bool FilterDepartures(object obj)
@@ -1171,5 +1173,5 @@ private bool FilterDepartures(object obj)
 {% endhighlight %}
 {% endtabs %}
 
- You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewSample148192697).
+ You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewSample842305360).
  

@@ -508,6 +508,7 @@ Insert each new item in the 0th position of the underlying collection bound to t
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.ListView.XForms.Control.Helpers;
 public partial class MainPage : ContentPage
 {
   MainPageViewModel ViewModel;

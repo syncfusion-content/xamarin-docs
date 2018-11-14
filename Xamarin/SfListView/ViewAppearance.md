@@ -13,7 +13,7 @@ The SfListView allows customizing appearance of the underlying data, and provide
 
 ## Item template
 
-A template can be used to present the data in a way that makes sense for the application by using different controls. The SfListView allows customizing appearance of view by setting the [ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html) property. By default, the [SfLabel](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfLabel.html) is used to present the list of data.
+A template can be used to present the data in a way that makes sense for the application by using different controls. The SfListView allows customizing appearance of view by setting the [ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html) property.
 
 ## Data template selector
 
@@ -795,33 +795,46 @@ internal class SfListViewAccordionBehavior : Behavior<ContentPage>
     #endregion
 
     #region Private Methods
-
+    using Syncfusion.ListView.XForms.Control.Helpers;
     private void ListView_ItemTapped(object sender, Syncfusion.ListView.XForms.ItemTappedEventArgs e)
     {
-        if (tappedItem == null)
+        if (tappedItem != null && tappedItem.IsVisible)
         {
-            // Expands when tap on the item at first.
-            (e.ItemData as Contact).IsVisible = true;
-            tappedItem = e.ItemData as Contact;
+            var previousIndex = listview.DataSource.DisplayItems.IndexOf(tappedItem);
+
+            tappedItem.IsVisible = false;
+
+            if (Device.RuntimePlatform != Device.macOS)
+                Device.BeginInvokeOnMainThread(() => { listview.RefreshListViewItem(previousIndex, previousIndex, false); });
+        }
+
+        if (tappedItem == (e.ItemData as Contact))
+        {
+            if (Device.RuntimePlatform == Device.macOS)
+            {
+                var previousIndex = listview.DataSource.DisplayItems.IndexOf(tappedItem);
+                Device.BeginInvokeOnMainThread(() => { listview.RefreshListViewItem(previousIndex, previousIndex, false); });
+            }
+
+            tappedItem = null;
+            return;
+        }
+
+        tappedItem = e.ItemData as Contact;
+        tappedItem.IsVisible = true;
+
+        if (Device.RuntimePlatform == Device.macOS)
+        {
+            var visibleLines = this.listview.GetVisualContainer().ScrollRows.GetVisibleLines();
+            var firstIndex = visibleLines[visibleLines.FirstBodyVisibleIndex].LineIndex;
+            var lastIndex = visibleLines[visibleLines.LastBodyVisibleIndex].LineIndex;
+            Device.BeginInvokeOnMainThread(() => { listview.RefreshListViewItem(firstIndex, lastIndex, false); });
         }
         else
         {
-            if (AccordionViewModel.ContactsInfo.Contains(tappedItem) && tappedItem.IsVisible)
-            {
-                // Collapse when tap on the expanded item.
-                AccordionViewModel.ContactsInfo.FirstOrDefault(x => x.ContactName == tappedItem.ContactName).IsVisible = false;
-            }
-            if (e.ItemData as Contact != tappedItem)
-            {
-                // Expands when tap on the another item.
-                tappedItem = e.ItemData as Contact;
-                AccordionViewModel.ContactsInfo.FirstOrDefault(x => x.ContactName == tappedItem.ContactName).IsVisible = true;
-            }
-            else
-                tappedItem = null;
+            var currentIndex = listview.DataSource.DisplayItems.IndexOf(e.ItemData);
+            Device.BeginInvokeOnMainThread(() => { listview.RefreshListViewItem(currentIndex, currentIndex, false); });
         }
-
-        listview.ForceUpdateItemSize();
     }
 
     #endregion
@@ -837,7 +850,7 @@ internal class SfListViewAccordionBehavior : Behavior<ContentPage>
 
 The `IsVisible` model property which is bound to the second template will be enabled when tapping the item and disabled when tapping again the same item.
 
-You can also download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AccordionSample-1531426303).
+You can also download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AccordionSample2103212952).
 
 ![Xamarin.Forms listview with Accordion](SfListView_images/SfListView-AccordImage.png)
 

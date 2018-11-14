@@ -958,6 +958,7 @@ ListView allows you to scroll by loading the entire collection of items inside t
 </ScrollView>
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.ListView.XForms.Control.Helpers;
 public partial class MainPage : ContentPage
 { 
 	public MainPage()
@@ -986,6 +987,7 @@ When ListView is in [AutoFitMode](https://help.syncfusion.com/cr/cref_files/xama
 </ScrollView>
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.ListView.XForms.Control.Helpers;
 public partial class MainPage : ContentPage
 {
     VisualContainer visualContainer;
@@ -1081,7 +1083,8 @@ Follow the steps to set the size for the outer ListView based on the extend of i
 {% endtabs %}
 
 {% highlight C# %}
- public class ExtendedListView : SfListView
+using Syncfusion.ListView.XForms.Control.Helpers;
+public class ExtendedListView : SfListView
 {
     VisualContainer container;
     public ExtendedListView()
@@ -1110,3 +1113,63 @@ The options are as follows:
 
 * Creates the measurement and layout similar to Xamarin.Forms ListView, when the ListView is loaded inside the layouts such as StackLayout, ScrollView, and Grid, in which the RowDefinition or ColumnDefinition is set to 'Auto'. In all other layouts, the ListView size will be allocated from the framework.
 * Set the value of total extend to the HeightRequest of ListView, since the ListView scrolling will be handled by the parent ScrollView, when ListView is loaded inside the StackLayout with base parent as ScrollView having multiple elements inside the StackLayout.
+
+## How to
+
+### Swipe and move an item to another listview on swipe item tapped action
+
+Add an item from one listview to the another by adding it into the ItemsSource collection of the another listview.
+
+{% tabs %}
+{% highlight c# %}
+private void FavoriteTapped(object obj)
+{
+    var departureInfo = obj as DepartureInfo;
+    var pinnedInfo = UpperLVCollection.Any(o => o.Name == departureInfo.Name) ? UpperLVCollection.First(o => o.Name == departureInfo.Name) : null;
+    if (pinnedInfo == null)
+    {
+        UpperLVCollection.Add(new PinnedInfo() { Name = departureInfo.Name, RouteName = departureInfo.Name, Icon = departureInfo.Icon, IsFavorite = true });
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Filter listview items based on another listview selection
+
+To filter the listview items based on the item tapped in the another listview by changing SfListView.DataSource.Filter property to the item tapped data.
+
+{% tabs %}
+{% highlight c# %}
+private void ItemTapped(Syncfusion.ListView.XForms.ItemTappedEventArgs e)
+{
+    tappedPinedInfo = e.ItemData as PinnedInfo;
+    if (tappedPinedInfo.IsFavorite)
+    {
+        bottomLV.DataSource.Filter = FilterDepartures;
+        tappedPinedInfo.IsFavorite = false;
+    }
+    else
+    {
+        bottomLV.DataSource.Filter = null;
+        tappedPinedInfo.IsFavorite = true;
+    }
+    bottomLV.DataSource.RefreshFilter();
+}
+
+private bool FilterDepartures(object obj)
+{
+    var departureInfo = obj as DepartureInfo;
+    if (tappedPinedInfo == null)
+        return true;
+
+    if (departureInfo.Name.ToLower().Contains(tappedPinedInfo.Name.ToLower())
+            || departureInfo.RouteName.ToLower().Contains(tappedPinedInfo.RouteName.ToLower()))
+        return true;
+    else
+        return false;
+}
+{% endhighlight %}
+{% endtabs %}
+
+ You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewSample148192697).
+ 

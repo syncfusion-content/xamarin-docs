@@ -1112,15 +1112,13 @@ public class ExtendedListView : SfListView
 The options are as follows:
 
 * Creates the measurement and layout similar to Xamarin.Forms ListView, when the ListView is loaded inside the layouts such as StackLayout, ScrollView, and Grid, in which the RowDefinition or ColumnDefinition is set to 'Auto'. In all other layouts, the ListView size will be allocated from the framework.
-* Set the value of total extend to the HeightRequest of ListView, since the ListView scrolling will be handled by the parent ScrollView, when ListView is loaded inside the StackLayout with base parent as ScrollView having multiple elements inside the StackLayout.
+* Sets the value of total extend to the HeightRequest of ListView, since the scrolling will be handled by the parent ScrollView, when ListView is loaded inside the StackLayout with base parent as ScrollView having multiple elements inside the StackLayout.
 
 ## How to
 
 ### Swipe and move an item to another listview on swipe item tapped action
 
-By using swipe view action, add an item from one listview to the another listview.
-
-The below example demonstrate about to adding an item in to the collection of the listview.
+By using swipe view action, you can move an item from one listview to another listview.
 
 {% tabs %}
 {% highlight c# %}
@@ -1138,7 +1136,7 @@ private void FavoriteTapped(object obj)
 
 ### Filter listview items based on another listview selection
 
-To filter the listview items based on the item selection in the another listview by changing SfListView.DataSource.Filter property.
+To filter the listview items based on the item selection in another listview, use the SfListView.DataSource.Filter property.
 
 {% tabs %}
 {% highlight c# %}

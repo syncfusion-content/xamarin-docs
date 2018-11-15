@@ -11,7 +11,7 @@ documentation: ug
 
 The text input layout control for Xamarin.Forms adds decorative elements such as floating labels, icons, and assistive labels on the top of input views such as [SfMaskedEdit](https://www.syncfusion.com/xamarin-ui-controls/masked-input-text), [SfNumericTextBox](https://www.syncfusion.com/xamarin-ui-controls/numerictextbox), [Entry](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/entry), and [Editor](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/editor) controls.
 
-![](Overview_images/inputlayout_forms.png)
+![The customizable text input layout control for Xamarin.Forms](Overview_images/inputlayout_forms.png)
 
 ## Key features
 * Displays floating labels when the input view is focused.

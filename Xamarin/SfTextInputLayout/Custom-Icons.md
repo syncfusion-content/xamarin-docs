@@ -88,6 +88,6 @@ inputLayout.InputView = new Entry();
 
 {% endtabs %}
 
-![](Custom-Icons-images/textInput_icons_img3.png)
-![](Custom-Icons-images/textInput_icons_img4.png)
+![Custom Icon](Custom-Icons-images/textInput_icons_img3.png)
+![Custom Icon](Custom-Icons-images/textInput_icons_img4.png)
 

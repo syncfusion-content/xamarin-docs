@@ -13,7 +13,7 @@ The SfListView allows customizing appearance of the underlying data, and provide
 
 ## Item template
 
-A template can be used to present the data in a way that makes sense for the application by using different controls. The SfListView allows customizing appearance of view by setting the [ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html) property.
+A template can be used to present the data in a way that makes sense for the application by using different controls. SfListView allows customizing appearance of view by setting the [ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html) property.
 
 ## Data template selector
 
@@ -850,7 +850,7 @@ internal class SfListViewAccordionBehavior : Behavior<ContentPage>
 
 The `IsVisible` model property which is bound to the second template will be enabled when tapping the item and disabled when tapping again the same item.
 
-You can also download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AccordionSample2103212952).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AccordionSample2103212952).
 
 ![Xamarin.Forms listview with Accordion](SfListView_images/SfListView-AccordImage.png)
 

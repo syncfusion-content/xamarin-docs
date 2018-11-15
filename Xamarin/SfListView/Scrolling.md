@@ -93,7 +93,7 @@ The SfListView allows notifying when scrolling using [Changed](https://help.sync
 
 {% tabs %}
 {% highlight c# %}
-
+using Syncfusion.ListView.XForms.Control.Helpers;
 public partial class MainPage : ContentPage
 {
     VisualContainer visualContainer;
@@ -148,7 +148,7 @@ For horizontal orientation, use the `ScrollX` value of ExtendedScrollView.
 
 {% tabs %}
 {% highlight c# %}
-
+using Syncfusion.ListView.XForms.Control.Helpers;
 public partial class MainPage : ContentPage
 {
     ExtendedScrollView scrollView;

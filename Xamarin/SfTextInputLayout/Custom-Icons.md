@@ -50,8 +50,10 @@ inputLayout.InputView = new Entry();
 
 {% endtabs %}
 
-![](Custom-Icons-images/textInput_icons_img1.png)
-![](Custom-Icons-images/textInput_icons_img2.png)
+![Custom Icon](Custom-Icons-images/textInput_icons_img1.png)
+![Custom Icon](Custom-Icons-images/textInput_icons_img2.png)
+
+N> The Leading icon and Trailing icon for the input view should only have the dimension of 24 x 24 dpi as per the [material design](https://material.io/design/iconography/system-icons.html#system-icon-metrics) specifications.
 
 ## Trailing  view
 
@@ -86,6 +88,6 @@ inputLayout.InputView = new Entry();
 
 {% endtabs %}
 
-![](Custom-Icons-images/textInput_icons_img3.png)
-![](Custom-Icons-images/textInput_icons_img4.png)
+![Custom Icon](Custom-Icons-images/textInput_icons_img3.png)
+![Custom Icon](Custom-Icons-images/textInput_icons_img4.png)
 

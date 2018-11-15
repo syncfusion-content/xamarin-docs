@@ -56,6 +56,8 @@ treeView.SelectedItems.Add(viewModel.CountriesInfo[3]);
 {% endhighlight %}
 {% endtabs %}
 
+W> If an item is selected programmatically when `SelectionMode` is `None` and if multiple items are programmatically selected when `SelectionMode` is `Single` or `SingleDeselect`, then exception will be thrown internally.
+
 ## Selected items 
 
 ### Gets selected Items
@@ -74,8 +76,6 @@ treeView.SelectedItems.Clear();
 
 The TreeView gets the selected item by using the [SelectedItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~SelectedItem.html) and [CurrentItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~CurrentItem.html) properties. Both `SelectedItem` and `CurrentItem` returns the same data object when selecting single item. When selecting more than one item, the `SelectedItem` property returns the first selected item, and the `CurrentItem` property returns the last selected item.
 
-W> If you select an item when `SelectionMode` is none or if you select multiple items when `SelectionMode` is single or single deselect, exception will be thrown.
-
 ## Selected item style
 
 ### Selection background
@@ -84,7 +84,7 @@ The TreeView allows changing the selection background color for the selected ite
 
 ### Selection foreground
 
-The TreeView allows changing the selection background color for the selected items by using the [SelectionForegroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~SelectionForegroundColor.html) property. You can also change the selection background color at runtime.
+The TreeView allows changing the selection foreground color for the selected items by using the [SelectionForegroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~SelectionForegroundColor.html) property. You can also change the selection foreground color at runtime.
 
 N> `SelectionForegroundColor` is applicable only for unbound mode.
 
@@ -148,5 +148,5 @@ The [FocusBorderThickness](https://help.syncfusion.com/cr/cref_files/xamarin/Syn
 
 ## Limitation
 
-* When a grid is loaded inside the [ItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ItemTemplate.html) with background color, the [SelectionBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~SelectionBackgroundColor.html) will not display. Because, it overlaps the `SelectionBackgroundColor`. In this case, set the background color for the TreeView instead of `ItemTemplate`.
+* When a grid is loaded inside the [ItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ItemTemplate.html) with background color, the [SelectionBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~SelectionBackgroundColor.html) will not display. Because, it overlaps the `SelectionBackgroundColor`. In this case, set the background color for the TreeView instead of grid in the  `ItemTemplate`.
  * When the `TreeView` contains duplicated items in the collection, only the first item whose instance was created initially will be selected or deselected.

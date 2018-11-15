@@ -225,7 +225,7 @@ When the SfListView is loaded inside the ScrollView with sticky header and stick
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfListViewSample197024233.zip).
+You can download the entire source code [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewInsideScrollview-235910398).
 
 ## Loading ListView inside CarouselPage/Master detail page
 
@@ -442,9 +442,9 @@ public partial class ContextMenu : ContentPage
 {% endhighlight %}
 {% endtabs %}
     
-You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewContextMenu-1107225769).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewContextMenu-991690726).
 
-![](SfListView_images/ContextMenu.jpg)
+![Xamarin.Forms listview with Context menu](SfListView_images/ContextMenu.jpg)
 
 ## Paging
 
@@ -573,9 +573,9 @@ public class SfListViewPagingBehavior : Behavior<ContentPage>
 
 {% endhighlight %}
 
-You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Paging-638353541).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Paging737472841).
 
-![](SfListView_images/Paging.png)
+![Xamarin.Forms listview with paging](SfListView_images/Paging.png)
  
 ## Loading data from SQLite online database
 
@@ -747,7 +747,7 @@ public partial class ToDoListPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AzureSampleApp-1350807709).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AzureSampleApp-1350807709-2017106000).
 
 ## Loading data from SQLite offline database
 
@@ -879,7 +879,7 @@ Refer to the following code which illustrates, how to bind the data from the SQL
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfListViewSample405826458).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SQL_offline2081750820).
 
 ## ListView with Prism Framework
 
@@ -945,7 +945,7 @@ public partial class App : PrismApplication
 
 For more details, refer to [https://xamgirl.com/prism-in-xamarin-forms-step-by-step-part-1](https://xamgirl.com/prism-in-xamarin-forms-step-by-step-part-1).
 
-You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewPrism116483729).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewPrism1060147379).
 
 ## Scrolling ListView without virtualization
 
@@ -975,7 +975,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewSample-1018057929).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ScrollingwithoutVirtualization1188151350).
 
 When ListView is in [AutoFitMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AutoFitMode.html) as 'Height', the extend of the ListView will be updated only while scrolling. So you can resize the ListView in `VisualContainer` [PropertyChanged](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.VisualContainer~PropertyChanged_EV.html) method as like below.
 
@@ -1102,7 +1102,7 @@ Follow the steps to set the size for the outer ListView based on the extend of i
 }
 {% endhighlight %}
 
- You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewSample-1603050223).
+ You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/NestedListView95603140).
  
 ## Rendering ListView when loading in different layouts
 

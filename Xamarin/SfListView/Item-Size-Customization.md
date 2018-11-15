@@ -38,9 +38,9 @@ private void ListView_QueryItemSize(object sender, Syncfusion.ListView.XForms.Qu
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AutoFit-1318092121).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomizeItems171985138).
 
-![QueryItemSize image](SfListView_images/QueryItemSize.jpg)
+![Size of item in listview](SfListView_images/QueryItemSize.jpg)
 
 ## AutoFit the items based on the content
 
@@ -76,9 +76,9 @@ listView.AutoFitMode = AutoFitMode.Height;
 
 N> If you define any size manually to the view loaded in [SfListView.ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html), the SfListView will return that size as the item size for each item. 
 
-You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AutoFit-1678453243).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AutoFitItems-252477562).
 
-![AutoFit content image](SfListView_images/AutoFit.jpg)
+![AutoFit items](SfListView_images/AutoFit.jpg)
 
 ## Increasing or Decreasing label font size in the ListView items at runtime
 
@@ -120,7 +120,7 @@ private void Button_Clicked(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Customized FontSize image](SfListView_images/SfListView-FontSizeChanged.jpg)
+![Customize label font size for listview item](SfListView_images/SfListView-FontSizeChanged.jpg)
 
 ## Limitations
 

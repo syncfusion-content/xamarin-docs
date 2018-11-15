@@ -15,7 +15,7 @@ This section explains the steps required to configure the text input layout cont
 
 Syncfusion components for Xamarin.Forms are available in [nuget.org](https://www.nuget.org). To add the text input layout control to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.Core](https://www.nuget.org/packages/Syncfusion.Xamarin.Core), and then install it.
 
-![Add Packages Screenshot](Getting-Started_images/textInput_getting_img1.png)
+![Add Packages ](Getting-Started_images/textInput_getting_img1.png)
 
 To learn more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows).
 

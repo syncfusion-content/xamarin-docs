@@ -163,4 +163,4 @@ inputLayout.InputView = new Entry();
 
 {% endtabs %}
 
-![](States-And-Colors-images/textInput_colors_img5.PNG)
+![Disabled state](States-And-Colors-images/textInput_colors_img5.PNG)

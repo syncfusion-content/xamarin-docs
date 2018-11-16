@@ -122,6 +122,21 @@ private void Button_Clicked(object sender, EventArgs e)
 
 ![Customize label font size for listview item](SfListView_images/SfListView-FontSizeChanged.jpg)
 
+## Load images with autofit mode
+
+In autofit mode, we are unable to find out child view’s size changes from parent view so image size is not updated, this can be overcome by call RefreshListViewItem method in the loaded event of the listview.
+
+{% highlight c# %}
+private void ListView_Loaded(object sender, Syncfusion.ListView.XForms.ListViewLoadedEventArgs e)
+{
+    Device.BeginInvokeOnMainThread(async() =>
+    {
+        await Task.Delay(100);
+        listView.RefreshListViewItem();
+    });
+}
+{% endhighlight %}
+
 ## Limitations
 
  * Defines the size of the image when loading image in the [SfListView.ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html). Because, it does not return actual measured size when measuring before layout the item.

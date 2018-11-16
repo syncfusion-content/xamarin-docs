@@ -124,8 +124,33 @@ private void Button_Clicked(object sender, EventArgs e)
 
 ## Load images with autofit mode
 
-In autofit mode, we are unable to find out child view’s size changes from parent view so image size is not updated, this can be overcome by call RefreshListViewItem method in the loaded event of the listview.
+By default, image is not loaded with the actual size in autofit mode. This is due to measure the size before the layout so we are unable to find out child view’s size changes from parent view. It is a known issue in listview but this can be overcome by calling RefreshListViewItem method in the loaded event of the listview.
 
+{% tabs %}
+{% highlight xaml %}
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+    <ContentPage.Content>
+        <Grid>
+            <syncfusion:SfListView x:Name="listView" 
+                                   AutoFitMode="Height"
+                                   ItemsSource="{Binding ContactsInfo}"
+                                   Loaded="ListView_Loaded">
+                <syncfusion:SfListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <StackLayout>
+                                <Label Text="{Binding ContactName}" />
+                                <Label Text="{Binding ContactNumber}"  />
+                            </StackLayout>
+                            <Image Source="{Binding ContactImage}"  />
+                        </StackLayout>
+                    </DataTemplate>
+                </syncfusion:SfListView.ItemTemplate>
+            </syncfusion:SfListView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
+{% endhighlight %}
 {% highlight c# %}
 private void ListView_Loaded(object sender, Syncfusion.ListView.XForms.ListViewLoadedEventArgs e)
 {
@@ -136,6 +161,7 @@ private void ListView_Loaded(object sender, Syncfusion.ListView.XForms.ListViewL
     });
 }
 {% endhighlight %}
+{% endtabs %}
 
 ## Limitations
 

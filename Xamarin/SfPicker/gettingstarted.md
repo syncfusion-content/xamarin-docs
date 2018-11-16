@@ -397,7 +397,7 @@ picker.IsOpen = true;
 
 The following screenshot illustrates the output of above code.
 
-![](images/forms_picker.png)
+![Gettingstartedimage](images/forms_picker.png)
 
 We have attached sample for reference. You can download the sample from the following link.
 

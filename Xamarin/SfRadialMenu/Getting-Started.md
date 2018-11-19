@@ -54,7 +54,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 	List<Assembly> assembliesToInclude = new List<Assembly>();
 
 	//Now, add all the assemblies your app uses
-	assembliesToInclude.Add(typeof(SfCalendarRenderer).GetTypeInfo().Assembly);
+	assembliesToInclude.Add(typeof(SfRadialMenuRenderer).GetTypeInfo().Assembly);
 
 	// replaces Xamarin.Forms.Forms.Init(e);        
 	Xamarin.Forms.Forms.Init(e, assembliesToInclude);

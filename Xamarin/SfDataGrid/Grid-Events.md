@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grid Events | SfDataGrid | Xamarin | Syncfusion
-description: How to use different events exposed in SfDataGrid.
+description: Different events and commands exposed in Xamarin.Forms DataGrid with its purpose and customization options.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
@@ -333,7 +333,7 @@ public partial class MainPage : ContentPage
 
 Refer to the following GIF for final rendering on execution of above code example:
 
-![](SfDataGrid_images/CustomContextMenu.gif)
+![DataGrid with context menu](SfDataGrid_images/CustomContextMenu.gif)
 
 ## Commands
 

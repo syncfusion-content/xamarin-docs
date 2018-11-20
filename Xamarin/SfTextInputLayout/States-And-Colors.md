@@ -42,7 +42,7 @@ inputLayout.InputView = new Entry() { Text = "John" };
 
 {% endtabs %}
 
-![Focused color](States-And-Colors-images/textInput_colors_img1.png)
+![](States-And-Colors-images/textInput_colors_img1.png)
 
 ## Unfocused color
 When the input view is unfocused, the [UnfocusedColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~UnfocusedColor.html) property value will be applied to the hint label and border. 
@@ -73,7 +73,7 @@ inputLayout.InputView = new Entry() { Text = "John" };
 
 {% endtabs %}
 
-![Unfocused color](States-And-Colors-images/textInput_colors_img2.png)
+![](States-And-Colors-images/textInput_colors_img2.png)
 
 ## Error color
 The error color can also be customized by setting the [ErrorColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~ErrorColor.html) property.
@@ -104,7 +104,7 @@ inputLayout.InputView = new Entry() { Text = "John/" };
 
 {% endtabs %}
 
-![Error color](States-And-Colors-images/textInput_colors_img3.png)
+![](States-And-Colors-images/textInput_colors_img3.png)
 
 ## Container color
 The color of the container can be customized by setting the [ContainerBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~ContainerBackgroundColor.html) property. It is applicable only When [ContainerType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~ContainerType.html) property is set to [Filled](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.ContainerType.html).
@@ -133,9 +133,7 @@ inputLayout.InputView = new Entry() { Text = "John" };
 
 {% endtabs %}
 
-![Container color](States-And-Colors-images/textInput_colors_img4.png)
-
-N> Since the background of the container is transparent, the color of the container will not be set when [ContainerType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.ContainerType.html) enumeration value is set to outlined.
+![](States-And-Colors-images/textInput_colors_img4.png)
 
 ## Disabled state
 
@@ -163,4 +161,4 @@ inputLayout.InputView = new Entry();
 
 {% endtabs %}
 
-![Disabled state](States-And-Colors-images/textInput_colors_img5.PNG)
+![](States-And-Colors-images/textInput_colors_img5.PNG)

@@ -495,7 +495,7 @@ In SfDataForm, you could not pass directly `DateTimeOffset` DataType to a proper
 
 private DateTimeOffset displayDate;
 
-Converter(typeof(ValueConverterExt))]
+[Converter(typeof(ValueConverterExt))]
 public DateTimeOffset DisplayDate
 {
     get
@@ -531,6 +531,8 @@ public class ValueConverterExt : IPropertyValueConverter
 }
 {% endhighlight %}
 {% endtabs %}
+
+You can download the source code of this demo from here [DateTimeOffsetConverter](https://github.com/SyncfusionExamples/Convert-DateTimeOffset-into-DateTime-and-back-in-Xamarin-DataForm)
 
 ## Disable editing
 You can disable editing by setting the [IsReadOnly](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~IsReadOnly.html) property of the data form.

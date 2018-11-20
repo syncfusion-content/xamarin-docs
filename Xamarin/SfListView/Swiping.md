@@ -452,8 +452,8 @@ When ListView is loaded in MasterDetailPage with `AllowSwiping` as true, it beha
 
 When ListView [ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html) contains button with `AllowSwiping` as true, it behaves as follows:
 
-* When swiping in Android and UWP, button click event execute after the swipe completed.
-* When swiping in iOS, swipe action not happened when click and swipe a button.
+* While swiping in Android and UWP, button click event executes after swiping.
+* While swiping in iOS, swipe action does not happened when clicking and swiping a button.
 
 ## How To
 

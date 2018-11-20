@@ -124,7 +124,7 @@ private void Button_Clicked(object sender, EventArgs e)
 
 ## Load images with autofit mode
 
-By default, image is not loaded with the actual size in autofit mode. This is due to measure the size before the layout so we are unable to find out child view’s size changes from parent view. It is a known issue in listview but this can be overcome by calling RefreshListViewItem method in the loaded event of the listview.
+By default, the image is not loaded with the actual size in autofit mode, as it measures the size before the layout. So, the size of the child view changes cannot be found from the parent view. It is a known issue in listview, but this can be overcome by calling the `RefreshListViewItem` method in the loaded event of listview.
 
 {% tabs %}
 {% highlight xaml %}

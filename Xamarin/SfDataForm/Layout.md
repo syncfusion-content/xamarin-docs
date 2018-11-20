@@ -15,9 +15,15 @@ The data form supports linear and grid layouts. The DataFormLayoutManager create
 
 ## Linear layout support
 
-By default, the data form renders in linear layout only.
+By default, the data form arranges the fields one-by-one. It is applicable for both label positions: left and top.
 
-![Linear layout in Xamarin Forms](SfDataForm_images/Overview.png)
+When the label position is Left, the linear layout is shown as follows:
+
+![Linear label left position in Xamarin.Forms](SfDataForm_images/Linear_LabelLeft.png)
+
+When the label position is Top, the linear layout is shown as follows:
+
+![Linear label top position in Xamarin.Forms](SfDataForm_images/Linear_LabelTop.png)
 
 ## Grid layout support
 

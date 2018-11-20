@@ -15,7 +15,7 @@ This section explains the steps required to configure the text input layout cont
 
 Syncfusion components for Xamarin.Forms are available in [nuget.org](https://www.nuget.org). To add the text input layout control to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.Core](https://www.nuget.org/packages/Syncfusion.Xamarin.Core), and then install it.
 
-![](Getting-Started_images/textInput_getting_img1.png)
+![Add Packages ](Getting-Started_images/textInput_getting_img1.png)
 
 To learn more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows).
 
@@ -143,11 +143,15 @@ The default translate animation for the hint can be disabled by setting the [Ena
 
 Run the project, and check if you get following output to make sure that the project has been configured properly to add the text input layout control.
 
-![](Getting-Started_images/hint.gif)
+![Adding Hint ](Getting-Started_images/hint.gif)
 
 ## Enabling password visibility toggle
 
 The password visibility toggle is used to show or hide the visibility of characters in the input view added to the control. You can enable this toggle by setting the [EnablePasswordVisibilityToggle](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~EnablePasswordVisibilityToggle.html) property to `true`.
+
+The TextInputLayout control will be disabled when the [IsPassword](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry.ispassword?view=xamarin-forms) property of the entry field is used while the [EnablePasswordVisibilityToggle](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~EnablePasswordVisibilityToggle.html) property of SfTextInputLayout control is enabled.
+
+After enabled the EnablePasswordVisibilityToggle property,if eye icon at the end of the entry field is unmasked, the password is masked.Masking will happen inversely when user tap the eye icon.
 
 {% tabs %} 
 
@@ -172,5 +176,5 @@ inputLayout.InputView = new Entry() { Text = "John" };
 
 {% endtabs %}
 
-![](Getting-Started_images/textInput_getting_img4.png)
-![](Getting-Started_images/textInput_getting_img5.png)
+![Show Visibility](Getting-Started_images/textInput_getting_img4.png)
+![Hide Visibility](Getting-Started_images/textInput_getting_img5.png)

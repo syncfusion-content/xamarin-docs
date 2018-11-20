@@ -873,6 +873,7 @@ To select and deselect all the items of group by tap the checkbox in the group h
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.ListView.XForms.Control.Helpers;
 private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
 {
     var image = (sender as Image);
@@ -1148,7 +1149,7 @@ To add item at  specific index in a group, follow the code example
 
 {% tabs %}
 {% highlight c# %}
-
+using Syncfusion.ListView.XForms.Control.Helpers;
 private void AddItem_Clicked(object sender, EventArgs e)
 {
   var contact = new Contacts();

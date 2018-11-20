@@ -231,6 +231,7 @@ To cancel dropping for the dragged item, handle the [ItemDragging](https://help.
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.ListView.XForms.Control.Helpers;
 private void ListView_ItemDragging(object sender, ItemDraggingEventArgs e)
 {
   // Cancel the dropping if drop the drag item into out of view.
@@ -386,6 +387,7 @@ Skip the dragging item by bounds of dragging item, and bounds of current and nex
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.ListView.XForms.Control.Helpers;
 private async void ListView_ItemDragging(object sender, ItemDraggingEventArgs e)
 {
   if (e.Action == DragAction.Dragging)

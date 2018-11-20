@@ -122,6 +122,47 @@ private void Button_Clicked(object sender, EventArgs e)
 
 ![Customize label font size for listview item](SfListView_images/SfListView-FontSizeChanged.jpg)
 
+## Load images with autofit mode
+
+By default, the image is not loaded with the actual size in autofit mode, as it measures the size before the layout. So, the size of the child view changes cannot be found from the parent view. It is a known issue in listview, but this can be overcome by calling the `RefreshListViewItem` method in the loaded event of listview.
+
+{% tabs %}
+{% highlight xaml %}
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+    <ContentPage.Content>
+        <Grid>
+            <syncfusion:SfListView x:Name="listView" 
+                                   AutoFitMode="Height"
+                                   ItemsSource="{Binding ContactsInfo}"
+                                   Loaded="ListView_Loaded">
+                <syncfusion:SfListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <StackLayout>
+                                <Label Text="{Binding ContactName}" />
+                                <Label Text="{Binding ContactNumber}"  />
+                            </StackLayout>
+                            <Image Source="{Binding ContactImage}"  />
+                        </StackLayout>
+                    </DataTemplate>
+                </syncfusion:SfListView.ItemTemplate>
+            </syncfusion:SfListView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
+{% endhighlight %}
+{% highlight c# %}
+private void ListView_Loaded(object sender, Syncfusion.ListView.XForms.ListViewLoadedEventArgs e)
+{
+    Device.BeginInvokeOnMainThread(async() =>
+    {
+        await Task.Delay(100);
+        listView.RefreshListViewItem();
+    });
+}
+{% endhighlight %}
+{% endtabs %}
+
 ## Limitations
 
  * Defines the size of the image when loading image in the [SfListView.ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html). Because, it does not return actual measured size when measuring before layout the item.

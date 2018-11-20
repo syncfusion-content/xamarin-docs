@@ -157,3 +157,9 @@ The following table lists the platforms supported by our Xamarin.Forms controls.
         </td>
     
 </table>
+
+### Target Framework (Compile SDK Version) for Android
+
+For Android platform, the target framework or compile SDK version of the application should be equal or greater than the latest API available at the time of our release. Please find more details about setting the target framework in the following link.
+
+ [https://docs.microsoft.com/en-us/xamarin/android/app-fundamentals/android-api-levels?tabs=windows#target-framework](https://docs.microsoft.com/en-us/xamarin/android/app-fundamentals/android-api-levels?tabs=windows#target-framework)

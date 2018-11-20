@@ -35,13 +35,15 @@ dataForm.ColumnCount = 2;
 {% endhighlight %}
 {% endtabs %}
 
+N> Setting the `ColumnCount` property to SfDataForm does not arrange the data field in a group according to the column count. To set the column count for data fields in the data form group, refer to [loading different layout for data form group](https://help.syncfusion.com/xamarin/sfdataform/layout?cs-save-lang=1&cs-lang=csharp#loading-different-layout-for-group)
+
 When the label position is Left, the grid layout is shown as follows:
 
-![](SfDataForm_images/Layout_LabelLeft.png)
+![Label left position](SfDataForm_images/Layout_LabelLeft.png)
 
 When the label position is Top, the grid layout is shown as follows:
 
-![](SfDataForm_images/Layout_LabelTop.png)
+![Label top position](SfDataForm_images/Layout_LabelTop.png)
 
 ## Label visibility
 
@@ -85,7 +87,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/Layout_HideLabel.png)
+![Hide label](SfDataForm_images/Layout_HideLabel.png)
 
 ## Label position
 
@@ -111,7 +113,7 @@ dataForm.LabelPosition = LabelPosition.Top;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/Layout_LabelPosition.png)
+![Label position](SfDataForm_images/Layout_LabelPosition.png)
 
 ## Loading images for label
 
@@ -154,7 +156,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/ImageLabel.png)
+![Label customized](SfDataForm_images/LabelCustomized.png)
 
 ## Changing order of the DataFormItem
 
@@ -209,7 +211,7 @@ public class ContactsInfo
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/LabelOrder.png)
+![Label order](SfDataForm_images/LabelOrder.png)
 
 ### Using event
 
@@ -333,9 +335,9 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/DataFormGroup_Attributes.png)
+![DataFormGroup attrribute ](SfDataForm_images/DataFormGroup_Attributes.png)
 
-![](SfDataForm_images/DataFormGroup_Events.png)
+![DataFormGroup event](SfDataForm_images/DataFormGroup_Events.png)
 
 ### Changing order of the DataFormGroupItem
 
@@ -408,7 +410,7 @@ public class ContactInfo
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/GroupItemOrder.png)
+![GroupItem order](SfDataForm_images/GroupItemOrder.png)
 
 ### Changing group name for group
 
@@ -442,7 +444,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/DataFormGroupwithLayout.png)
+![DataFormGroup ColumnCount](SfDataForm_images/DataFormGroupwithLayout.png)
 
 #### Loading linear and grid layout for the group
 
@@ -524,7 +526,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 In the following image, for the `Name` group, the grid layout is loaded and for the `Details` group, linear layout is loaded:
 
-![](SfDataForm_images/DataFormGroupwithLayout.png)
+![DataFormGroup ColumnCount](SfDataForm_images/DataFormGroupwithLayout.png)
 
 #### Setting different column count
 
@@ -548,7 +550,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/DataFormGroup_Layout.png)
+![CoulmnCount different groups](SfDataForm_images/DataFormGroup_Layout.png)
 
 ### Loading group in collapsed state
 
@@ -572,7 +574,7 @@ You can set restrict the group being expanded or collapsed by setting the [Allow
 
 In this case, the group will be shown without expander.
 
-![](SfDataForm_images/AllowExpandCollapse.png)
+![Expand and collapse](SfDataForm_images/AllowExpandCollapse.png)
 
 ### Programmatically expand or collapse group
 
@@ -665,7 +667,7 @@ public class DataFormLayoutManagerExt : DataFormLayoutManager
 
 Here, the LastName padding is customized.
 
-![](SfDataForm_images/Layout_LeftPadding.png)
+![Editor left padding](SfDataForm_images/Layout_LeftPadding.png)
 
 ### Customizing label and editor
 
@@ -734,7 +736,7 @@ public class DataFormLayoutManagerExt : DataFormLayoutManager
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/Layout_LabelCustomization.jpg)
+![Label customization](SfDataForm_images/Layout_LabelCustomization.jpg)
 
 ## Label width customization
 
@@ -761,7 +763,7 @@ dataForm.EditorWidth = 2;
 
 Here, the available width is divided into proportionally for editor (2) and label (1).
 
-![](SfDataForm_images/Layout_LabelWidth.png)
+![Label width](SfDataForm_images/Layout_LabelWidth.png)
 
 N> It is applicable only when `LabelPosition` is Left.
 
@@ -792,7 +794,7 @@ public string FirstName
 
 Here, `FirstName` field’s row height is increased.
 
-![](SfDataForm_images/Layout_RowSpan.png)
+![Layout row span](SfDataForm_images/Layout_RowSpan.png)
 
 ### Column span
 
@@ -816,7 +818,7 @@ public string FirstName
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/Layout_ColumnSpan.png)
+![Layout column span](SfDataForm_images/Layout_ColumnSpan.png)
 
 ## Change DataFormItem visibility at runtime
 

@@ -19,11 +19,11 @@ By default, the data form arranges the fields one-by-one. It is applicable for b
 
 When the label position is Left, the linear layout is shown as follows:
 
-![Linear label left position in Xamarin.Forms](SfDataForm_images/Linear_LabelLeft.png)
+![Linear label left position in Xamarin.Forms](SfDataForm_images/Linear_LabelLeft.jpg)
 
 When the label position is Top, the linear layout is shown as follows:
 
-![Linear label top position in Xamarin.Forms](SfDataForm_images/Linear_LabelTop.png)
+![Linear label top position in Xamarin.Forms](SfDataForm_images/Linear_LabelTop.jpg)
 
 ## Grid layout support
 

@@ -864,8 +864,8 @@ private void Schedule_OnMonthInlineLoadedEvent(object sender, MonthInlineLoadedE
 {% endhighlight %}
 {% endtabs %}
 
-![Month inline appointment details formatting and appearance in schedule xamarin forms](monthview_images/inlineviewstyle.jpg)
-![Month inline No Events text customization](monthview_images/No_Events_Customization.jpg)
+![Month inline appointment details formatting and appearance in schedule xamarin forms](monthview_images/inlineviewstyle.png)
+![Month inline No Events text customization](monthview_images/No_Events_Customization.png)
 
 Get the complete sample for this [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/InlineCustomization1767459049).
 

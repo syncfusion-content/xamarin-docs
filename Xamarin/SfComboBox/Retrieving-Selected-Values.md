@@ -126,6 +126,63 @@ Content = layout;
 
 {% endtabs %}
 
+### How to select a value 
+
+The `SelectedItem` property is used to select a value in SfComboBox control.
+
+The following code example shows to set a value.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" SelectedItem="Ukraine">
+		<combobox:SfComboBox.DataSource>
+			<ListCollection:List x:TypeArguments="x:String">
+                <x:String> Uganda </x:String>
+                <x:String> Ukraine </x:String>
+                <x:String> United Arab Emirates </x:String>
+                <x:String> United Kingdom </x:String>
+                <x:String> United States </x:String>
+            </ListCollection:List>
+        </combobox:SfComboBox.DataSource>
+	 </combobox:SfComboBox>                                             
+</StackLayout> 
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+StackLayout layout = new StackLayout() 
+{ 
+	VerticalOptions = LayoutOptions.Start, 
+	HorizontalOptions = LayoutOptions.Start, 
+	Padding = new Thickness(30) 
+};	
+List<String> countryNames = new List<String>();
+countryNames.Add("Uganda");
+countryNames.Add("Ukraine");
+countryNames.Add("United Arab Emirates");
+countryNames.Add("United Kingdom");
+countryNames.Add("United States");
+
+SfComboBox comboBox = new SfComboBox();
+comboBox.HeightRequest = 40;
+comboBox.DataSource = countryNames;
+comboBox.IsEditableMode = true;
+comboBox.SelectedItem = "Ukraine";
+
+layout.Children.Add(comboBox); 
+Content = layout;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+N> SelectedValue property is a read only property and we cannot use selectedvalue property to selected a value in SfComboBox control.
+
 ### Retrieving a member of model object
 
 If the DataSource is bound to business object data, there is an additional step to get the SelectedValue. The model class may have one or more properties. So, it is necessary to intimate the combo box control that which property of model class should be stored in the SelectedValue property. This can be accomplished using the [`SelectedValuePath`] property.

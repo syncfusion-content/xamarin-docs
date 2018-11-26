@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Retrieving selected value in Syncfusion SfComboBox control for Xamarin.Forms
+title: Retrieving selected value in SfComboBox control
 description: Learn how to retrieve selected value from SfComboBox control
 platform: xamarin
 control: SfComboBox

@@ -181,7 +181,7 @@ Content = layout;
 {% endtabs %}
 
 
-N> SelectedValue property is a read only property and we cannot use selectedvalue property to selected a value in SfComboBox control.
+N> SelectedValue property is a read only property and it cannot be used to select a value in SfComboBox control.
 
 ### Retrieving a member of model object
 

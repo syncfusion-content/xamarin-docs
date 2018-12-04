@@ -276,7 +276,7 @@ dataForm.RegisterEditor("Text", new CustomTextEditor(dataForm));
 {% endhighlight %}
 {% endtabs %}
 
-![Editor customization in Xamarin.Forms](SfDataForm_images/EditorCustomization.png)
+![Customizing existing editor of data form item in Xamarin.Forms DataForm](SfDataForm_images/EditorCustomization.png)
 
 ## Creating new custom editor
 
@@ -326,7 +326,7 @@ dataForm.RegisterEditor("Salary", "Slider");
 {% endhighlight %}
 {% endtabs %}
 
-![Custom editor in Xamarin.Forms](SfDataForm_images/Editing_SliderEditor.png)
+![Creating custom editor for the data form item in Xamarin.Forms DataForm](SfDataForm_images/Editing_SliderEditor.png)
 
 ## Support for Email editor
 
@@ -343,7 +343,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![Email editor in Xamarin.Forms](SfDataForm_images/Editing_EmailEditor.png)
+![Loading Email editor to the data form item in Xamarin.Forms DataForm](SfDataForm_images/Editing_EmailEditor.png)
 
 ## Commit mode
 

@@ -136,7 +136,7 @@ Content = layout;
 
 {% endtabs %}
 
-![initialComboBox](images/Highlighting-matched-text/initialComboBox.png)
+![initialComboBox](images\Getting-Started/initialComboBox.png)
 
 ## Populating ComboBox with data
 
@@ -305,7 +305,7 @@ Content = layout;
 
 {% endtabs %}
 
-![noneditabl](images/Highlighting-matched-text/non-editableModeComboBox.png)
+![noneditabl](images/Getting-Started/non-editableModeComboBox.png)
 
 ### Editable combo box
 
@@ -384,7 +384,7 @@ Content = layout;
 
 {% endtabs %}
 
-![editableMode](images/Highlighting-matched-text/editableModeComboBox.png)
+![editableMode](images/Getting-Started/editableModeComboBox.png)
 
 ## Retrieving selected values
 
@@ -467,4 +467,4 @@ Content = layout;
 
 {% endtabs %}
 
-![selectionChanged](images/Highlighting-matched-text/selectionChangedComboBxo.png)
+![selectionChanged](images/images/Getting-Started/selectionChangedComboBxo.png)

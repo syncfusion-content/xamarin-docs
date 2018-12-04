@@ -136,7 +136,7 @@ Content = layout;
 
 {% endtabs %}
 
-![initialComboBox](images\Getting-Started/initialComboBox.png)
+![initialComboBox](images/Getting-Started/initialComboBox.png)
 
 ## Populating ComboBox with data
 
@@ -467,4 +467,4 @@ Content = layout;
 
 {% endtabs %}
 
-![selectionChanged](images/images/Getting-Started/selectionChangedComboBxo.png)
+![selectionChanged](images/Getting-Started/selectionChangedComboBxo.png)

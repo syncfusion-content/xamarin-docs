@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Editing | SfDataGrid | Xamarin | Syncfusion
-description: Editing the cell values in the columns of the Xamarin.Forms DataGrid using the built-in editors. Programmatically edit the data and use the events to customize the editing. 
+description: Edit the cell values in the columns of the DataGrid using the built-in editors. Programmatically edit the data and use the events to customize the editing. 
 platform: xamarin
 control: SfDataGrid
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Editing
 
-The SfDataGrid supports for editing the cell values by setting the [SfDataGrid.AllowEditing](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowEditing.html) property.
+The SfDataGrid supports for editing the cell values by setting the [SfDataGrid.AllowEditing](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowEditing.html) property, [SfDataGrid.NavigationMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~NavigationMode.html)  as `Cell` and setting the [SfDataGrid.SelectionMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectionMode.html) as any other than None. 
 
 To enable editing, follow the code example:
 
@@ -17,11 +17,15 @@ To enable editing, follow the code example:
 {% highlight xaml %}
 <syncfusion:SfDataGrid x:Name="dataGrid"
                        AllowEditing="True"
+                       SelectionMode="Multiple"    
+                       NavigationMode="Cell" 
                        AutoGenerateColumns="True"
                        ItemsSource="{Binding Orders}" />
 {% endhighlight %}
 {% highlight c# %}
 dataGrid.AllowEditing = true;
+dataGrid.SelectionMode = SelectionMode.Multiple;
+dataGrid.NavigationMode = NavigationMode.Cell;
 {% endhighlight %}
 {% endtabs %}
 

@@ -88,7 +88,7 @@ private void ExportToExcel_Clicked(object sender, EventArgs e)
 
 ![Export DataGrid to Excel format](SfDataGrid_images/Excel/DatagridtoExcel.png)
 
-N> SfDataGrid cannot export the GridTemplateColumn to PDF or Excel,  since we cannot get the loaded views and draw them with the particular range, values etc from GridTemplatecolumn.
+N> SfDataGrid cannot export the GridTemplateColumn to PDF or Excel,  since we cannot get the loaded views and draw them with the particular range, values etc from GridTemplateColumn.
 
 ## Exporting Options
 

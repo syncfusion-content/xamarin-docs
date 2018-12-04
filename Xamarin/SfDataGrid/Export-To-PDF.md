@@ -120,7 +120,7 @@ private void PDFExport_Clicked(object sender, EventArgs e)
 
 ![Export DataGrid to PDF format with all columns fit in view](SfDataGrid_images/Exporting_img4.png)
 
-N> SfDataGrid cannot export the GridTemplateColumn to PDF or Excel,  since we cannot get the loaded views and draw them with the particular range, values etc from GridTemplatecolumn.
+N> SfDataGrid cannot export the GridTemplateColumn to PDF or Excel,  since we cannot get the loaded views and draw them with the particular range, values etc from GridTemplateColumn.
 
 ## Exporting options
 

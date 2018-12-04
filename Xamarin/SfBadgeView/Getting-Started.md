@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Getting Started with Syncfusion BadgeView control for Xamarin.Forms
 description: A quick tour about Syncfusion badgeview control in Xamarin.Forms platform
@@ -14,8 +14,6 @@ This section explains the steps required to configure the badgeview control and 
 ## Adding SfBadgeView reference
 
 Syncfusion components for Xamarin.Forms are available in [nuget.org](https://www.nuget.org/). To add badgeview to your project, open the NuGet package manager in Visual Studio, search for [syncfusion.xamarin.sfbadgeview](https://www.nuget.org/packages/Syncfusion.Xamarin.SfBadgeView), and then install it.
-
-![](Images/badgeview.png)
 
 To learn more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). If you prefer to manually reference the assemblies instead of using NuGet, refer to this [documentation](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfmaps) to learn about the dependent assemblies.
 
@@ -129,28 +127,18 @@ You can add an image, button and label to the badge using [`Content`]() property
  
 {% endtabs %}
 
-![](Images/GettingStartedimg1.jpeg)
-
 ## Adding badge type
 
 You can change the colors of the badge using [`BadgeType`]() property. The badge supports the following 8 different essential colors for various situations:
 
  * Dark
-
  * Error
-
  * Info
-
  * Light
-
  * None
-
  * Primary
-
  * Secondary
-
  * Success
-
  * Warning
 
 {% tabs %}
@@ -226,21 +214,13 @@ The default position of the notification is `TopRight`. But, the position can be
 You can change the badge icon using [`BadgeIcon`]() property. Badge supports the following types of [`BadgeIcon`]():
 
 * Add
-
 * Available
-
 * Away
-
 * Busy
-
 * Delete 
-
 * Dot
-
 * None
-
 * Prohibit1
-
 * Prohibit2 
 
 {% tabs %}
@@ -374,6 +354,6 @@ namespace GettingStarted
 
 The following screenshot illustrates the result of the above code sample.
 
-![](Images/Badgeview.png) 
+![](getting-started_images/Badgeview.png) 
 
 You can download the complete [Getting started]() sample.

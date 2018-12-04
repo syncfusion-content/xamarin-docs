@@ -221,7 +221,7 @@ Content = layout;
 
 Refer [this](https://help.syncfusion.com/xamarin/sfcombobox/populating-data) link to learn more about the options available in SfComboBox to populate data.
 
-![](images/Getting-Started/populateData.png)
+![populate](images/Getting-Started/populateData.png)
 
 ## ComboBox modes
 

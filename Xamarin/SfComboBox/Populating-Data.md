@@ -143,7 +143,7 @@ Now populate this EmployeeViewModel data in SfComboBox control by binding with [
     <local:EmployeeViewModel/>
  </ContentPage.BindingContext>
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DataSource="{Binding EmployeeCollection}" DisplayMemberPath-"Name" />
+	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DataSource="{Binding EmployeeCollection}" DisplayMemberPath="Name" />
 </StackLayout> 
 </ContentPage>
 

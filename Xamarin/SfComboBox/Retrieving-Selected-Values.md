@@ -19,26 +19,25 @@ Use the below given behaviors code for selection changed event of SfComboBox
 
 {% highlight c# %}
 
+    public class CustomBehavior : Behavior<SfComboBox>
+    {
+        SfComboBox combo; 
+        protected override void OnAttachedTo(SfComboBox bindable)
+        {
+            base.OnAttachedTo(bindable);
+            combo = bindable;
+            bindable.SelectionChanged += Bindable_SelectionChanged;
+        }
 
-	public class CustomBehavior : Behavior<SfComboBox>
-	{
-    	SfComboBox combo; 
-    	protected override void OnAttachedTo(SfComboBox bindable)
-    	{
-        	base.OnAttachedTo(bindable);
-        	combo = bindable;
-        	bindable.SelectionChanged += Bindable_SelectionChanged;
-    	}
-
-    	async private void Bindable_SelectionChanged(object sender, SelectionChangedEventArgs e)
-    	{
-        	var answer = await Xamarin.Forms.Application.Current.MainPage.DisplayAlert("Selection Changed", "Selected Index: " + combo.SelectedIndex, null, "OK");
-    	}
-    	protected override void OnDetachingFrom(SfComboBox bindable)
-    	{
-        	base.OnDetachingFrom(bindable);
-    	}
- 	}
+        async private void Bindable_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var answer = await Xamarin.Forms.Application.Current.MainPage.DisplayAlert("Selection Changed", "Selected Index: " + combo.SelectedIndex, null, "OK");
+        }
+        protected override void OnDetachingFrom(SfComboBox bindable)
+        {
+            base.OnDetachingFrom(bindable);
+        }
+    }
 
 
 {% endhighlight %}
@@ -112,26 +111,25 @@ Use the below given behaviors code for selection changed event of SfComboBox
 
 {% highlight c# %}
 
+    public class CustomBehavior : Behavior<SfComboBox>
+    {
+        SfComboBox combo; 
+        protected override void OnAttachedTo(SfComboBox bindable)
+        {
+            base.OnAttachedTo(bindable);
+            combo = bindable;
+            bindable.SelectionChanged += Bindable_SelectionChanged;
+        }
 
-	public class CustomBehavior : Behavior<SfComboBox>
-	{
-    	SfComboBox combo; 
-    	protected override void OnAttachedTo(SfComboBox bindable)
-    	{
-        	base.OnAttachedTo(bindable);
-        	combo = bindable;
-        	bindable.SelectionChanged += Bindable_SelectionChanged;
-    	}
-
-    	async private void Bindable_SelectionChanged(object sender, SelectionChangedEventArgs e)
-    	{
-        	var answer = await Xamarin.Forms.Application.Current.MainPage.DisplayAlert("Selection Changed", "Selected Index: " + combo.SelectedValue.ToString(), null, "OK");
-    	}
-    	protected override void OnDetachingFrom(SfComboBox bindable)
-    	{
-        	base.OnDetachingFrom(bindable);
-    	}
-	}
+        async private void Bindable_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var answer = await Xamarin.Forms.Application.Current.MainPage.DisplayAlert("Selection Changed", "Selected Index: " + combo.SelectedValue.ToString(), null, "OK");
+        }
+        protected override void OnDetachingFrom(SfComboBox bindable)
+        {
+            base.OnDetachingFrom(bindable);
+        }
+    }
 
 
 {% endhighlight %}

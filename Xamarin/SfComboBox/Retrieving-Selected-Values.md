@@ -11,6 +11,39 @@ documentation: ug
 
 SfComboBox provides a way to get the selected values using SelectedValue and SelectedIndex properties.
 
+## Behaviors for the SelectionChanged event to return the SelectedIndex
+
+Use the below given behaviors code for selection changed event of SfComboBox
+
+{% tabs %}
+
+{% highlight c# %}
+
+    public class CustomBehavior : Behavior<SfComboBox>
+    {
+        SfComboBox combo; 
+        protected override void OnAttachedTo(SfComboBox bindable)
+        {
+            base.OnAttachedTo(bindable);
+            combo = bindable;
+            bindable.SelectionChanged += Bindable_SelectionChanged;
+        }
+
+        async private void Bindable_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var answer = await Xamarin.Forms.Application.Current.MainPage.DisplayAlert("Selection Changed", "Selected Index: " + combo.SelectedIndex, null, "OK");
+        }
+        protected override void OnDetachingFrom(SfComboBox bindable)
+        {
+            base.OnDetachingFrom(bindable);
+        }
+    }
+
+
+{% endhighlight %}
+
+{% highlight c# %}
+
 ## Retrieving the index of selected item
 
 When an item is selected from suggestion list, its index can be retrieved using the [`SelectedIndex`] property. 
@@ -24,7 +57,7 @@ The following code example shows the way to retrieve SelectedIndex and display i
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
 	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" SelectionChanged="Handle_SelectionChanged">
-		<combobox:SfComboBox.DataSource>
+		<combobox:SfComboBox.ComboBoxSource>
 			<ListCollection:List x:TypeArguments="x:String">
                 <x:String> Uganda </x:String>
                 <x:String> Ukraine </x:String>
@@ -32,7 +65,10 @@ The following code example shows the way to retrieve SelectedIndex and display i
                 <x:String> United Kingdom </x:String>
                 <x:String> United States </x:String>
             </ListCollection:List>
-        </combobox:SfComboBox.DataSource>
+        </combobox:SfComboBox.ComboBoxSource>
+		<combobox:SfComboBox.Behaviors>
+            <local:CustomBehavior/>
+        </combobox:SfComboBox.Behaviors>
 	 </combobox:SfComboBox>                                                 
 </StackLayout> 
 
@@ -57,10 +93,7 @@ SfComboBox comboBox = new SfComboBox();
 comboBox.HeightRequest = 40;
 comboBox.DataSource = countryNames;
 comboBox.IsEditableMode = true;
-comboBox.SelectionChanged += (sender, e) =>
-{
-	DisplayAlert("Selection Changed", "Selected Index: " + comboBox.SelectedIndex, "OK"); 
-};
+comboBox.Behaviors.Add(new CustomBehavior());
 
 layout.Children.Add(comboBox); 
 Content = layout; 
@@ -68,6 +101,40 @@ Content = layout;
 {% endhighlight %}
 
 {% endtabs %}
+
+
+## Behaviors for the SelectionChanged event to return the SelectedValue
+
+Use the below given behaviors code for selection changed event of SfComboBox
+
+{% tabs %}
+
+{% highlight c# %}
+
+    public class CustomBehavior : Behavior<SfComboBox>
+    {
+        SfComboBox combo; 
+        protected override void OnAttachedTo(SfComboBox bindable)
+        {
+            base.OnAttachedTo(bindable);
+            combo = bindable;
+            bindable.SelectionChanged += Bindable_SelectionChanged;
+        }
+
+        async private void Bindable_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var answer = await Xamarin.Forms.Application.Current.MainPage.DisplayAlert("Selection Changed", "Selected Index: " + combo.SelectedValue.ToString(), null, "OK");
+        }
+        protected override void OnDetachingFrom(SfComboBox bindable)
+        {
+            base.OnDetachingFrom(bindable);
+        }
+    }
+
+
+{% endhighlight %}
+
+{% highlight c# %}
 
 ## Retrieving the value of selected item
 
@@ -81,7 +148,7 @@ The following code example shows the way to retrieve SelectedValue and display i
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
 	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" SelectionChanged="Handle_SelectionChanged">
-		<combobox:SfComboBox.DataSource>
+		<combobox:SfComboBox.ComboBoxSource>
 			<ListCollection:List x:TypeArguments="x:String">
                 <x:String> Uganda </x:String>
                 <x:String> Ukraine </x:String>
@@ -89,7 +156,10 @@ The following code example shows the way to retrieve SelectedValue and display i
                 <x:String> United Kingdom </x:String>
                 <x:String> United States </x:String>
             </ListCollection:List>
-        </combobox:SfComboBox.DataSource>
+        </combobox:SfComboBox.ComboBoxSource>
+		<combobox:SfComboBox.Behaviors>
+            <local:CustomBehavior/>
+        </combobox:SfComboBox.Behaviors>
 	 </combobox:SfComboBox>                                             
 </StackLayout> 
 
@@ -114,10 +184,7 @@ SfComboBox comboBox = new SfComboBox();
 comboBox.HeightRequest = 40;
 comboBox.DataSource = countryNames;
 comboBox.IsEditableMode = true;
-comboBox.SelectionChanged += (sender, e) => 
-{
-	DisplayAlert("Selection Changed", "Selected Value: " + comboBox.SelectedValue.ToString(), "OK"); 
-};
+comboBox.Behaviors.Add(new CustomBehavior());
 
 layout.Children.Add(comboBox); 
 Content = layout;
@@ -138,7 +205,7 @@ The following code example shows to set a value.
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
 	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" SelectedItem="Ukraine">
-		<combobox:SfComboBox.DataSource>
+		<combobox:SfComboBox.ComboBoxSource>
 			<ListCollection:List x:TypeArguments="x:String">
                 <x:String> Uganda </x:String>
                 <x:String> Ukraine </x:String>
@@ -146,7 +213,7 @@ The following code example shows to set a value.
                 <x:String> United Kingdom </x:String>
                 <x:String> United States </x:String>
             </ListCollection:List>
-        </combobox:SfComboBox.DataSource>
+        </combobox:SfComboBox.ComboBoxSource>
 	 </combobox:SfComboBox>                                             
 </StackLayout> 
 
@@ -245,7 +312,11 @@ Now populate this EmployeeViewModel data in SfComboBox control by binding with [
     	<local:EmployeeViewModel/>
  	</ContentPage.BindingContext>
 	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-		<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" SelectionChanged="Handle_SelectionChanged" DataSource="{Binding EmployeeCollection}"/>
+		<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" SelectionChanged="Handle_SelectionChanged" DataSource="{Binding EmployeeCollection}">
+		<combobox:SfComboBox.Behaviors>
+            <local:CustomBehavior/>
+        </combobox:SfComboBox.Behaviors>
+		</combobox:SfComboBox>
 	</StackLayout> 
 </ContentPage>
 
@@ -264,10 +335,7 @@ Now populate this EmployeeViewModel data in SfComboBox control by binding with [
     comboBox.BindingContext = new EmployeeViewModel();
 	comboBox.DisplayMemberPath = "Name";
 	comboBox.SelectedValuePath = "ID";
-	comboBox.SelectionChanged += (sender, e) => 
-	{
-		DisplayAlert("Selection Changed", "Selected Value: " +    comboBox.SelectedValue.ToString(), "OK"); 
-	}; 
+	comboBox.Behaviors.Add(new CustomBehavior());
 
     Binding binding = new Binding("EmployeeCollection");
     binding.Source = this;

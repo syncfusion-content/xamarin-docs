@@ -15,7 +15,6 @@ SfComboBox provides a way to get the selected values using SelectedValue and Sel
 
 Use the below given behaviors code for selection changed event of SfComboBox
 
-{% tabs %}
 
 {% highlight c# %}
 
@@ -42,7 +41,6 @@ Use the below given behaviors code for selection changed event of SfComboBox
 
 {% endhighlight %}
 
-{% highlight c# %}
 
 ## Retrieving the index of selected item
 
@@ -107,7 +105,6 @@ Content = layout;
 
 Use the below given behaviors code for selection changed event of SfComboBox
 
-{% tabs %}
 
 {% highlight c# %}
 
@@ -134,7 +131,6 @@ Use the below given behaviors code for selection changed event of SfComboBox
 
 {% endhighlight %}
 
-{% highlight c# %}
 
 ## Retrieving the value of selected item
 

@@ -136,7 +136,7 @@ Content = layout;
 
 {% endtabs %}
 
-![](images/Highlighting-matched-text/initialComboBox.png)
+![initialComboBox](images/Getting-Started/initialComboBox.png)
 
 ## Populating ComboBox with data
 
@@ -148,12 +148,13 @@ Now, a list of string with resolution list is created and added to the SfComboBo
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=mscorlib"
              xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
              xmlns:local="clr-namespace:NamespaceName"            
              x:Class="NamespaceName.ClassName">
 	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
 		<combobox:SfComboBox HeightRequest="40" x:Name="comboBox">
-			<combobox:SfComboBox.DataSource>
+			<combobox:SfComboBox.ComboBoxSource>
 				<ListCollection:List x:TypeArguments="x:String">
                 	<x:String> 1920 x 1080 </x:String>
                 	<x:String> 1680 x 1050 </x:String>
@@ -173,7 +174,7 @@ Now, a list of string with resolution list is created and added to the SfComboBo
 					<x:String> 360 X 640 </x:String>
 					<x:String> 320 x 240 </x:String>
             	</ListCollection:List>
-        	</combobox:SfComboBox.DataSource>
+        	</combobox:SfComboBox.ComboBoxSource>
 	 	</combobox:SfComboBox>              
 	</StackLayout> 
 </ContentPage>
@@ -209,7 +210,7 @@ resolutionList.Add("320 x 240");
 
 SfComboBox comboBox = new SfComboBox();
 comboBox.HeightRequest = 40;
-comboBox.DataSource = resolutionList;
+comboBox.ComboBoxSource = resolutionList;
 
 layout.Children.Add(comboBox); 
 Content = layout;
@@ -220,7 +221,7 @@ Content = layout;
 
 Refer [this](https://help.syncfusion.com/xamarin/sfcombobox/populating-data) link to learn more about the options available in SfComboBox to populate data.
 
-![](images/Getting-Started/populateData.png)
+![populate](images/Getting-Started/populateData.png)
 
 ## ComboBox modes
 
@@ -238,7 +239,7 @@ Non-editable mode prevents users from typing and allows them to select items fro
 
 	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
 		<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" MaximumDropDownHeight="200" IsEditableMode="false">
-			<combobox:SfComboBox.DataSource>
+			<combobox:SfComboBox.ComboBoxSource>
 				<ListCollection:List x:TypeArguments="x:String">
                 	<x:String> 1920 x 1080 </x:String>
                 	<x:String> 1680 x 1050 </x:String>
@@ -258,7 +259,7 @@ Non-editable mode prevents users from typing and allows them to select items fro
 					<x:String> 360 X 640 </x:String>
 					<x:String> 320 x 240 </x:String>
             	</ListCollection:List>
-        	</combobox:SfComboBox.DataSource>
+        	</combobox:SfComboBox.ComboBoxSource>
 	 	</combobox:SfComboBox>              
 	</StackLayout> 
 	
@@ -295,7 +296,7 @@ SfComboBox comboBox = new SfComboBox();
 comboBox.HeightRequest = 40;
 comboBox.MaximumDropDownHeight = 200;
 comboBox.IsEditableMode = false;
-comboBox.DataSource = resolutionList;
+comboBox.ComboBoxSource = resolutionList;
 
 layout.Children.Add(comboBox); 
 Content = layout;
@@ -304,7 +305,7 @@ Content = layout;
 
 {% endtabs %}
 
-![](images/Highlighting-matched-text/non-editableModeComboBox.png)
+![noneditabl](images/Getting-Started/non-editableModeComboBox.png)
 
 ### Editable combo box
 
@@ -317,7 +318,7 @@ In editable mode, the combo box allows users to edit in the text box that shows 
 
 	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
 		<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" MaximumDropDownHeight="200" IsEditableMode="true">
-			<combobox:SfComboBox.DataSource>
+			<combobox:SfComboBox.ComboBoxSource>
 				<ListCollection:List x:TypeArguments="x:String">
                 	<x:String> 1920 x 1080 </x:String>
                 	<x:String> 1680 x 1050 </x:String>
@@ -337,7 +338,7 @@ In editable mode, the combo box allows users to edit in the text box that shows 
 					<x:String> 360 X 640 </x:String>
 					<x:String> 320 x 240 </x:String>
             	</ListCollection:List>
-        	</combobox:SfComboBox.DataSource>
+        	</combobox:SfComboBox.ComboBoxSource>
 	 	</combobox:SfComboBox>              
 	</StackLayout> 
 	
@@ -374,7 +375,7 @@ SfComboBox comboBox = new SfComboBox();
 comboBox.HeightRequest = 40;
 comboBox.MaximumDropDownHeight = 200;
 comboBox.IsEditableMode = true;
-comboBox.DataSource = resolutionList;
+comboBox.ComboBoxSource = resolutionList;
 
 layout.Children.Add(comboBox); 
 Content = layout;
@@ -383,7 +384,7 @@ Content = layout;
 
 {% endtabs %}
 
-![](images/Highlighting-matched-text/editableModeComboBox.png)
+![editableMode](images/Getting-Started/editableModeComboBox.png)
 
 ## Retrieving selected values
 
@@ -395,7 +396,7 @@ When selecting an item from the drop-down list, the selection changed event will
 
 	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
 		<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" MaximumDropDownHeight="200" IsEditableMode="true" SelectionChanged="Handle_SelectionChanged">
-			<combobox:SfComboBox.DataSource>
+			<combobox:SfComboBox.ComboBoxSource>
 				<ListCollection:List x:TypeArguments="x:String">
                 	<x:String> 1920 x 1080 </x:String>
                 	<x:String> 1680 x 1050 </x:String>
@@ -415,7 +416,7 @@ When selecting an item from the drop-down list, the selection changed event will
 					<x:String> 360 X 640 </x:String>
 					<x:String> 320 x 240 </x:String>
             	</ListCollection:List>
-        	</combobox:SfComboBox.DataSource>
+        	</combobox:SfComboBox.ComboBoxSource>
 	 	</combobox:SfComboBox>              
 	</StackLayout> 
 	
@@ -453,7 +454,7 @@ SfComboBox comboBox = new SfComboBox();
 comboBox.HeightRequest = 40;
 comboBox.MaximumDropDownHeight = 200;
 comboBox.IsEditableMode = true;
-comboBox.DataSource = resolutionList;
+comboBox.ComboBoxSource = resolutionList;
 comboBox.SelectionChanged += (object sender, Syncfusion.XForms.ComboBox.SelectionChangedEventArgs e) => 
 {
 	Xamarin.Forms.Application.Current.MainPage.DisplayAlert("Resolution", "Resolution was changed", "OK");                
@@ -466,4 +467,4 @@ Content = layout;
 
 {% endtabs %}
 
-![](images/Highlighting-matched-text/selectionChangedComboBxo.png)
+![selectionChanged](images/Getting-Started/selectionChangedComboBxo.png)

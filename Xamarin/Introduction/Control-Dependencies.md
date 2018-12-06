@@ -520,6 +520,34 @@ Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.macOS.dll<br/>Syncfusion.L
 </tr>
 </table>
 
+## SfParallaxView
+
+<dl>
+  <dt>NuGet</dt>
+  <dd>Syncfusion.Xamarin.SfParallaxView</dd>
+</dl>
+
+**Assemblies**
+
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfParallaxView.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfParallaxView.XForms.Android.dll<br/>Syncfusion.SfParallaxView.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfParallaxView.XForms.iOS.dll<br/>Syncfusion.SfParallaxView.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfParallaxView.XForms.UWP.dll<br/>Syncfusion.SfParallaxView.XForms.dll<br/></td>
+</tr>
+</table>
+
 ## SfKanban
 
 <dl>

@@ -366,6 +366,6 @@ namespace GettingStarted
 
 The following screenshot illustrates the result of the above code sample.
 
-![](getting-started_images/Badgeview.jpg) 
+![](getting-started_images/Badgeview.png) 
 
 You can download the complete `Getting started` sample.

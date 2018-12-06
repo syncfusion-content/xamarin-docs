@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Getting Started with Syncfusion BadgeView control for Xamarin.Forms
 description: A quick tour about Syncfusion badgeview control in Xamarin.Forms platform
@@ -9,17 +9,17 @@ documentation: ug
 
 # Getting Started
 
-This section explains the steps required to configure the badgeview control and customize its elements.
+This section explains the steps required to configure the badge view control and customize its elements.
 
 ## Adding SfBadgeView reference
 
-Syncfusion components for Xamarin.Forms are available in [nuget.org](https://www.nuget.org/). To add badgeview to your project, open the NuGet package manager in Visual Studio, search for [syncfusion.xamarin.sfbadgeview](https://www.nuget.org/packages/Syncfusion.Xamarin.SfBadgeView), and then install it.
+Syncfusion components for Xamarin.Forms are available in [nuget.org](https://www.nuget.org/). To add badge view to your project, open the NuGet package manager in Visual Studio, search for `syncfusion.xamarin.sfbadgeview`, and then install it.
 
-To learn more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). If you prefer to manually reference the assemblies instead of using NuGet, refer to this [documentation](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfmaps) to learn about the dependent assemblies.
+To learn more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). If you prefer to manually reference the assemblies instead of using NuGet, refer to this `documentation` to learn about the dependent assemblies.
 
-I> After adding the reference, an additional step is required for iOS and UWP projects. Create an instance of the `SfBadgeViewRenderer` in iOS and UWP projects as described in this [KB article.](https://www.syncfusion.com/kb/8603).
+I> After adding the reference, an additional step is required for iOS and UWP projects. Create an instance of the `SfBadgeViewRenderer` in iOS and UWP projects as described in this `KB article`.
 
-I> For UWP alone, one more additional step is required if the project is built-in release mode with .NET Native tool chain enabled. You can refer to this [KB article](https://www.syncfusion.com/kb/8604) for more details.
+I> For UWP alone, one more additional step is required if the project is built-in release mode with .NET Native tool chain enabled. You can refer to this `KB article` for more details.
 
 ## Adding namespace
 
@@ -43,7 +43,7 @@ using Syncfusion.XForms.BadgeView;
 
 ## Initializing badge view
 
-Create an instance for the badgeview control, and add it as content.
+Create an instance for the badge view control, and add it as content.
 
 {% tabs %}
 
@@ -65,15 +65,15 @@ Create an instance for the badgeview control, and add it as content.
 
 {% endtabs %}
 
-## Adding badgetext
+## Adding badge text
 
-You can add a text using [`BadgeText`]() property to the badge.
+You can add text to badge view using the `BadgeText` property.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-    <badge:SfBadgeView BadgeText="14">
+    <badge:SfBadgeView BadgeText="20+">
             
     </badge:SfBadgeView>
 
@@ -83,7 +83,7 @@ You can add a text using [`BadgeText`]() property to the badge.
 
     SfBadgeView sfBadgeView = new SfBadgeView();
 
-    sfBadgeView.BadgeText = "14";
+    sfBadgeView.BadgeText = "20+";
 
     this.Content = sfBadgeView;
 
@@ -93,7 +93,7 @@ You can add a text using [`BadgeText`]() property to the badge.
 
 ## Adding content
 
-You can add an image, button and label to the badge using [`Content`]() property.
+You can add an image, button, or label to the badge view using the `Content` property.
 
 {% tabs %}
 
@@ -103,7 +103,7 @@ You can add an image, button and label to the badge using [`Content`]() property
 
     <badge:SfBadgeView.Content>
 
-     <Button Text="Updates" />
+    <Image Source="BadgeWhatsApp.png" HeightRequest="200" WidthRequest="200"/>
 
     </badge:SfBadgeView.Content>
             
@@ -115,13 +115,15 @@ You can add an image, button and label to the badge using [`Content`]() property
 	
     SfBadgeView sfBadgeView = new SfBadgeView();
 
-    Button button = new Button();
+    Image image = new Image();
 
-    button.Text = "Updates";
+    image.Source = "BadgeWhatsApp.png";
 
-    sfBadgeView.Content = button;
+    image.HeightRequest = 200;
 
-    this.Content = sfBadgeView;
+    image.WidthRequest = 200;
+
+    sfBadgeView.Content = image;
 
 {% endhighlight %}
  
@@ -129,7 +131,7 @@ You can add an image, button and label to the badge using [`Content`]() property
 
 ## Adding badge type
 
-You can change the colors of the badge using [`BadgeType`]() property. The badge supports the following 8 different essential colors for various situations:
+You can change the colors of the badge view using the `BadgeType` property. The badge supports the following eight different essential colors for various situations:
 
  * Dark
  * Error
@@ -149,7 +151,7 @@ You can change the colors of the badge using [`BadgeType`]() property. The badge
 
             <badge:SfBadgeView.BadgeSettings>
 
-                <badge:BadgeSetting BadgeType="Info"/>
+                <badge:BadgeSetting BadgeType="Error"/>
 
             </badge:SfBadgeView.BadgeSettings>
             
@@ -163,7 +165,7 @@ You can change the colors of the badge using [`BadgeType`]() property. The badge
 
             BadgeSetting badgeSetting = new BadgeSetting();
 
-            badgeSetting.BadgeType = BadgeType.Info;
+            badgeSetting.BadgeType = BadgeType.Error;
 
             sfBadgeView.BadgeSettings = badgeSetting;
 
@@ -175,7 +177,7 @@ You can change the colors of the badge using [`BadgeType`]() property. The badge
 
 ## Adding badge position
 
-The default position of the notification is `TopRight`. But, the position can be changed to the `TopLeft`, `BottomLeft` and `BottomRight` using [`BadgePosition`] property.
+The default position of the notification is `TopRight`. The position can be changed to the `TopLeft`, `BottomLeft`, and `BottomRight` using the `BadgePosition` property.
 
 {% tabs %}
 
@@ -211,7 +213,7 @@ The default position of the notification is `TopRight`. But, the position can be
  
 ## Adding badge icon
 
-You can change the badge icon using [`BadgeIcon`]() property. Badge supports the following types of [`BadgeIcon`]():
+You can change the badge icon using the `BadgeIcon` property. Badge supports the following types of `BadgeIcon`:
 
 * Add
 * Available
@@ -255,7 +257,7 @@ You can change the badge icon using [`BadgeIcon`]() property. Badge supports the
 
 {% endtabs %}
 
-The following code sample gives you the complete code for badgeview with badge types and text.
+The following code sample gives you the complete code for badge view with badge types and text.
 
 {% tabs %}
 
@@ -263,7 +265,7 @@ The following code sample gives you the complete code for badgeview with badge t
 
     <?xml version="1.0" encoding="utf-8" ?>
 
-    <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 
@@ -273,28 +275,27 @@ The following code sample gives you the complete code for badgeview with badge t
 
              xmlns:badge ="clr-namespace:Syncfusion.XForms.BadgeView;assembly=Syncfusion.SfBadgeView.XForms">
 
-     <ContentPage.Content>
+    <ContentPage.Content>
 
-        <badge:SfBadgeView BadgeText="14">
-            
+        <badge:SfBadgeView BadgeText="20+" HeightRequest="200" WidthRequest="200">
+
             <badge:SfBadgeView.Content>
-                
-                <Button Text="Updates" />
-                
+
+                <Image Source="BadgeWhatsApp.png" HeightRequest="200" WidthRequest="200"/>
+
             </badge:SfBadgeView.Content>
 
             <badge:SfBadgeView.BadgeSettings>
 
-                <badge:BadgeSetting BadgeType="Info" BadgePosition="TopRight"  BadgeIcon="None"/>
+                <badge:BadgeSetting BadgeType="Error" BadgePosition="TopRight" FontSize="30" Offset="-24,20"  BadgeIcon="None"/>
 
             </badge:SfBadgeView.BadgeSettings>
-            
-         </badge:SfBadgeView>
-        
+
+        </badge:SfBadgeView>
+
     </ContentPage.Content>
 
     </ContentPage>
-
 
 {% endhighlight %}
 
@@ -316,37 +317,48 @@ using Syncfusion.XForms.BadgeView;
 
 namespace GettingStarted
 {
-	public partial class MainPage : ContentPage
-	{
-		public MainPage()
-		{
-			InitializeComponent();
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
 
             SfBadgeView sfBadgeView = new SfBadgeView();
 
-            sfBadgeView.BadgeText = "14";
+             sfBadgeView.HeightRequest = 200;
 
-            Button button = new Button();
+            sfBadgeView.WidthRequest = 200;
 
-            button.Text = "Updates";
+            sfBadgeView.BadgeText = "20+";
 
-            sfBadgeView.Content = button;
+            Image image = new Image();
+
+            image.Source = "BadgeWhatsApp.png";
+
+            image.HeightRequest = 200;
+
+            image.WidthRequest = 200;
+
+            sfBadgeView.Content = image;
 
             BadgeSetting badgeSetting = new BadgeSetting();
 
-            badgeSetting.BadgeType = BadgeType.Info;
+            badgeSetting.BadgeType = BadgeType.Error;
 
             badgeSetting.BadgePosition = BadgePosition.TopRight;
 
-            badgeSetting.BadgeIcon = BadgeIcon.p;
+            badgeSetting.Offset = new Point(-24, 20);
+
+            badgeSetting.FontSize = 30;
+
+            badgeSetting.BadgeIcon = BadgeIcon.None;
 
             sfBadgeView.BadgeSettings = badgeSetting;
 
-           this.Content = sfBadgeView;
-		}
-	}
+            this.Content = sfBadgeView;
+        }
+    }
 }
-
 
 {% endhighlight %}
 
@@ -354,6 +366,6 @@ namespace GettingStarted
 
 The following screenshot illustrates the result of the above code sample.
 
-![](getting-started_images/Badgeview.png) 
+![](getting-started_images/Badgeview.jpg) 
 
-You can download the complete [Getting started]() sample.
+You can download the complete `Getting started` sample.

@@ -88,6 +88,8 @@ private void ExportToExcel_Clicked(object sender, EventArgs e)
 
 ![Export DataGrid to Excel format](SfDataGrid_images/Excel/DatagridtoExcel.png)
 
+N> SfDataGrid cannot export the GridTemplateColumn to PDF or Excel,  since we cannot get the loaded views and draw them with the particular range, values etc from GridTemplateColumn.
+
 ## Exporting Options
 
 You can also export the data to Excel with various customizing options by passing the grid and [DataGridExcelExportingOption](http://help.syncfusion.com/cr/cref_files/xamarin/sfgridconverter/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption.html) as arguments to the `ExportToExcel` method.

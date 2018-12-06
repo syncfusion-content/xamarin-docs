@@ -1,7 +1,7 @@
 ﻿---
 layout: post
-title: Getting Started with Syncfusion BadgeView control for Xamarin.Forms
-description: A quick tour about Syncfusion badgeview control in Xamarin.Forms platform
+title: Getting Started with Syncfusion Badge View control for Xamarin.Forms
+description: A quick tour about Syncfusion badge view control in Xamarin.Forms platform
 platform: xamarin
 control: SfBadgeView
 documentation: ug
@@ -17,9 +17,57 @@ Syncfusion components for Xamarin.Forms are available in [nuget.org](https://w
 
 To learn more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). If you prefer to manually reference the assemblies instead of using NuGet, refer to this `documentation` to learn about the dependent assemblies.
 
-I> After adding the reference, an additional step is required for iOS and UWP projects. Create an instance of the `SfBadgeViewRenderer` in iOS and UWP projects as described in this `KB article`.
+## Launching the application on each platform with progress bar
 
-I> For UWP alone, one more additional step is required if the project is built-in release mode with .NET Native tool chain enabled. You can refer to this `KB article` for more details.
+To use the badge view in an application, each platform requires some additional configurations. The configurations vary from platform to platform and is discussed in the following sections:
+
+### iOS
+
+To launch the badge view in iOS, call the SfBadgeViewRenderer.Init() in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework has been initialized and before the LoadApplication is called as demonstrated in the following code sample.
+
+{% highlight C# %} 
+
+public override bool FinishedLaunching(UIApplication app, NSDictionary options) 
+{ 
+    … 
+    global::Xamarin.Forms.Forms.Init();
+
+    // Add the below line if you are using SfBadgeView.
+     Syncfusion.XForms.iOS.BadgeView.SfBadgeViewRenderer.Init();
+
+    LoadApplication(new App()); 
+    …
+}
+
+{% endhighlight %}
+
+### Universal Windows Platform (UWP)
+
+You need to initialize the badge view assemblies in App.xaml.cs in UWP project as demonstrated in the following code samples. This is required to deploy the application with badge view in `Release` mode in UWP platform.
+
+{% highlight C# %} 
+
+// In App.xaml.cs 
+protected override void OnLaunched(LaunchActivatedEventArgs e)
+{ 
+   … 
+   if (rootFrame == null) 
+   { 
+      List<Assembly> assembliesToInclude = new List<Assembly>();
+
+      // Add the below line if you are using SfBadgeView.
+       assembliesToInclude.Add(typeof(Syncfusion.XForms.UWP.BadgeView.SfBadgeViewRenderer).GetTypeInfo().Assembly);
+
+      Xamarin.Forms.Forms.Init(e, assembliesToInclude); 
+   } 
+  … 
+}
+
+{% endhighlight %}
+
+### Android
+
+The Android platform does not require any additional configuration to render the progress bar.
 
 ## Adding namespace
 

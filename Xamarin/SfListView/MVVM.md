@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working with ListView in MVVM
+title: Working with Syncfusion ListView in MVVM
 description: Describes how to use ListView in different cases of MVVM.
 platform: xamarin
 control: SfListView

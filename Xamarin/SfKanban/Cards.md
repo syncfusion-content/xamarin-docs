@@ -140,3 +140,112 @@ kanban.CardTemplate = cardTemplate;
 {% endtabs %}
 
 ![Template support for cards in Xamarin.Forms Kanban](SfKanban_images/CardTemplate.png)
+
+## Data template selector
+
+You can customizing appearance of each card with different templates based on specific constraints by using the [`DataTemplateSelector`](https://docs.microsoft.com/en-us/dotnet/api/Xamarin.Forms.DataTemplateSelector/). You can choose a DataTemplate for each item at runtime based on the value of data using DataTemplateSelector.
+
+### Create a data template selector
+
+Create a custom class that inherits from `DataTemplateSelector`, and override the `OnSelectTemplate` method to return the `DataTemplate` for that item. At runtime, the SfKanban invokes the `OnSelectTemplate` method for each item and passes the data object as parameter.
+
+{% tabs %}
+{% highlight c# %}
+
+public class KanbanTemplateSelector : DataTemplateSelector
+{
+	private readonly DataTemplate menuTemplate;
+	private readonly DataTemplate orderTemplate;
+	private readonly DataTemplate readyToServeTemplate;
+	private readonly DataTemplate deliveryTemplate;
+
+
+	public KanbanTemplateSelector()
+	{
+		menuTemplate = new DataTemplate(typeof(MenuTemplate));
+		orderTemplate = new DataTemplate(typeof(OrderTemplate));
+		readyToServeTemplate = new DataTemplate(typeof(ReadyToServeTemplate));
+		deliveryTemplate = new DataTemplate(typeof(DeliveryTemplate));
+	}
+
+	protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
+	{
+		var data = item as CustomKanbanModel;
+		if (data == null)
+			return null;
+
+		string category = data.Category?.ToString();
+
+		return category.Equals("Menu") ? menuTemplate : 
+		category.Equals("Dining") || category.Equals("Delivery") ? orderTemplate : 
+		category.Equals("Ready to Serve") ? readyToServeTemplate : deliveryTemplate;
+	}
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### Applying the data template selector
+
+Assign custom `DataTemplateSelector` to the [`CardTemplate`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~CardTemplate.html) of the SfKanban either in XAML or C#.
+
+{% tabs %}
+{% highlight xaml %}
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SimpleSample.MainPage"
+             xmlns:kanban="clr-namespace:Syncfusion.SfKanban.XForms;assembly=Syncfusion.SfKanban.XForms""
+             xmlns:local="clr-namespace:SimpleSample;assembly=SimpleSample">
+             
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <local:KanbanTemplateSelector x:Key="kanbanTemplateSelector" />
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  
+  <ContentPage.BindingContext>
+	  <local:KanbanCustomViewModel />
+  </ContentPage.BindingContext>
+			
+  <kanban:SfKanban x:Name="kanban" AutoGenerateColumns="False" HorizontalOptions="FillAndExpand"
+				VerticalOptions="FillAndExpand" ItemsSource="{Binding Cards}"
+				CardTemplate="{StaticResource kanbanTemplateSelector}" >
+
+        <kanban:SfKanban.Columns>
+
+          <kanban:KanbanColumn x:Name="column1" Title="Menu"  >
+          </kanban:KanbanColumn>
+
+          <kanban:KanbanColumn x:Name="column2" Title="Order">
+          </kanban:KanbanColumn>
+
+          <kanban:KanbanColumn x:Name="column3" Title="Ready to Serve" >
+          </kanban:KanbanColumn>
+
+          <kanban:KanbanColumn x:Name="column4" Title="Delivery" >
+          </kanban:KanbanColumn>
+
+        </kanban:SfKanban.Columns>
+  </kanban:SfKanban>
+      
+</ContentPage>
+{% endhighlight %}
+{% highlight c# %}
+public class MainPage : ContentPage
+{
+   public MainPage()
+   {
+      InitializeComponent();
+      KanbanCustomViewModel viewModel = new KanbanCustomViewModel();
+      BindingContext = viewModel;
+      SfKanban kanban = new SfKanban();
+      kanban.ItemsSource = viewModel.Cards;
+      kanban.AutoGenerateColumns = false;
+      kanban.CardTemplate = new KanbanTemplateSelector();
+      Content = kanban;
+   }
+}
+{% endhighlight %}
+{% endtabs %}
+
+

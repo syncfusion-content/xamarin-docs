@@ -173,7 +173,7 @@ public partial class App : PrismApplication
     <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
         <syncfusion:SfListView x:Name="listView" ItemSize="70" ItemSpacing="0,0,5,0"
                              AutoFitMode="Height"
-                             ItemsSource="{Binding ContactsInfo,}" IsStickyHeader="True" 
+                             ItemsSource="{Binding ContactsInfo}" IsStickyHeader="True" 
                              AllowSwiping="True" IsStickyGroupHeader="True" GroupHeaderSize="50">
         </syncfusion:SfListView>
     </StackLayout>

@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains the steps required to configure the [`SfParallaxView`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfParallaxView.html) and add basic elements to it using various APIs.
+This section explains the steps required to configure the [`SfParallaxView`](https://help.syncfusion.com/cr/cref_files/xamarin/sfparallaxview/Syncfusion.SfParallaxView.XForms~Syncfusion.SfParallax.XForms.SfParallaxView.html) and add basic elements to it using various APIs.
 
 ## Adding parallax view reference
 
@@ -21,7 +21,7 @@ To know more about obtaining Syncfusion components, refer to these links: [Mac](
 
 N> Install the same version of the parallax view in all the projects.
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> If you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 ## Launching the application in iOS
 
@@ -46,7 +46,7 @@ To launch the parallax view in iOS, call the `SfParallaxViewRenderer.Init()` met
 
 ## Initializing parallax view
 
-1. Import SfParallaxView control namespace as `xmlns:parallax="clr-namespace:Syncfusion.XForms.ParallaxView;assembly=Syncfusion.SfParallaxsView.XForms` in XAML page.
+1. Import SfParallaxView control namespace as `xmlns:parallax="clr-namespace:Syncfusion.XForms.ParallaxView;assembly=Syncfusion.SfParallaxView.XForms` in XAML page.
 
 2. Set the SfParallaxView control as content to the ContentPage.
 
@@ -103,7 +103,7 @@ To launch the parallax view in iOS, call the `SfParallaxViewRenderer.Init()` met
 
 `Content` represent background view of a parallax view.You can set any kind of view to the `Content` property. 
 
-The following code shows how to set content property of parallax view.
+The following code shows how to set content property to the parallax view.
 
 {% tabs %}
 
@@ -213,7 +213,7 @@ N> `Content` view size automatically stretches to the size of `Source` view.
 
 `Speed` value denotes the scrolling speed of `Content` which is added as a background view. Based on the speed value the background view will scroll along with the foreground view.
 
-N>  `Speed` value only applicable for `Content` view. If the speed value set to 0 then the scrolling will be disabled for backgroun view.
+N>  `Speed` value only applicable for `Content` view. If the speed value set to 0 then the scrolling will be disabled for background view.
 
 {% highlight xaml %}
 

@@ -504,19 +504,19 @@ Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.macOS.dll<br/>Syncfusion.L
 <table>
 <tr>
 <td>PCL</td>
-<td>Syncfusion.SfImageEditor.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+<td>Syncfusion.SfImageEditor.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/></td>
 </tr>
 <tr>
 <td>Android</td>
-<td>Syncfusion.SfImageEditor.XForms.Android.dll<br/>Syncfusion.SfImageEditor.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+<td>Syncfusion.SfImageEditor.XForms.Android.dll<br/>Syncfusion.SfImageEditor.XForms.dll<br/></td>
 </tr>
 <tr>
 <td>iOS</td>
-<td>Syncfusion.SfImageEditor.XForms.iOS.dll<br/>Syncfusion.SfImageEditor.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+<td>Syncfusion.SfImageEditor.XForms.iOS.dll<br/>Syncfusion.SfImageEditor.XForms.dll<br/></td>
 </tr>
 <tr>
 <td>UWP</td>
-<td>Syncfusion.SfImageEditor.UWP.dll<br/>Syncfusion.SfImageEditor.XForms.UWP.dll<br/>Syncfusion.SfImageEditor.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+<td>Syncfusion.SfImageEditor.UWP.dll<br/>Syncfusion.SfImageEditor.XForms.UWP.dll<br/>Syncfusion.SfImageEditor.XForms.dll<br/></td>
 </tr>
 </table>
 

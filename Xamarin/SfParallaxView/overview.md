@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Essential Xamarin.Forms SfParallaxView
+title: Overview of Syncfusion Essential Xamarin.Forms SfParallaxView
 description: What are the key features available in SfIParallaxView.
 platform: xamarin.forms
 control: SfParallaxView

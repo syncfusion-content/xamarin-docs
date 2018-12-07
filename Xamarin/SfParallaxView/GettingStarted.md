@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started for Essential Xamarin.Forms SfParallaxView
+title: Getting Started for Syncfusion Essential Xamarin.Forms SfParallaxView
 description: How to create a parallax view, add content and source, speed and orientation.
 platform: xamarin.forms
 control: SfParallaxView
@@ -233,10 +233,8 @@ The below code snippet shows how to set the `Source` property value
                 new Contacts() { Name = "Everybody", Author = "Backstreet Boys"},
                 new Contacts() { Name = "Rolling in the Deep", Author = "Adele" },
                 new Contacts() { Name = "Don’t Stop Believing", Author = "Journey" },
-                new Contacts() { Name = "Billie Jean", Author = "Michael Jackson" },
-                new Contacts() { Name = "Sorry", Author = "Justin Bieber" },
-                new Contacts() { Name = "Firework", Author = "Katy Perry"},
-                new Contacts() { Name = "The A Team", Author = "Ed Sheeran" },
+                new Contacts() { Name = "Billie Jean", Author = "Michael Jackson" },             
+                new Contacts() { Name = "Firework", Author = "Katy Perry"},               
                 new Contacts() { Name = "Thriller", Author = "Michael Jackson" },
                 new Contacts() { Name = "Like a Prayer", Author = "Madonna" },
                 new Contacts() { Name = "When Doves Cry", Author = "Prince" },

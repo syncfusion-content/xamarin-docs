@@ -247,4 +247,5 @@ public class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
+![DataTemplateSelector support for cards in Xamarin.Forms Kanban](SfKanban_images/CardTemplateSelector.png)
 

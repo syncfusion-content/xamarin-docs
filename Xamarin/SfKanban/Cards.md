@@ -159,7 +159,6 @@ public class KanbanTemplateSelector : DataTemplateSelector
 	private readonly DataTemplate readyToServeTemplate;
 	private readonly DataTemplate deliveryTemplate;
 
-
 	public KanbanTemplateSelector()
 	{
 		menuTemplate = new DataTemplate(typeof(MenuTemplate));

@@ -143,11 +143,11 @@ kanban.CardTemplate = cardTemplate;
 
 ## Data template selector
 
-You can customizing appearance of each card with different templates based on specific constraints by using the [`DataTemplateSelector`](https://docs.microsoft.com/en-us/dotnet/api/Xamarin.Forms.DataTemplateSelector/). You can choose a DataTemplate for each item at runtime based on the value of data using DataTemplateSelector.
+You can customize the appearance of each card with different templates based on specific constraints using [`DataTemplateSelector`](https://docs.microsoft.com/en-us/dotnet/api/Xamarin.Forms.DataTemplateSelector/). You can also choose a DataTemplate for each item at runtime based on the value of data using DataTemplateSelector.
 
 ### Create a data template selector
 
-Create a custom class that inherits from `DataTemplateSelector`, and override the `OnSelectTemplate` method to return the `DataTemplate` for that item. At runtime, the SfKanban invokes the `OnSelectTemplate` method for each item and passes the data object as parameter.
+Create a custom class by inherting `DataTemplateSelector`, and override the `OnSelectTemplate` method to return the `DataTemplate` for that item. At runtime, the SfKanban invokes the `OnSelectTemplate` method for each item and passes the data object as parameter.
 
 {% tabs %}
 {% highlight c# %}
@@ -186,7 +186,7 @@ public class KanbanTemplateSelector : DataTemplateSelector
 
 ### Applying the data template selector
 
-Assign custom `DataTemplateSelector` to the [`CardTemplate`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~CardTemplate.html) of the SfKanban either in XAML or C#.
+Assign custom `DataTemplateSelector` to the [`CardTemplate`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~CardTemplate.html) of the SfKanban in either XAML or C#.
 
 {% tabs %}
 {% highlight xaml %}

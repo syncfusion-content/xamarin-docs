@@ -54,18 +54,18 @@ To launch the parallax view in iOS, call the `SfParallaxViewRenderer.Init()` met
 
 {% highlight xaml %}
 
-        <?xml version="1.0" encoding="utf-8" ?>
+    <?xml version="1.0" encoding="utf-8" ?>
     <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
         xmlns:local="clr-namespace:ParallaxSample"
         xmlns:parallax="clr-namespace:Syncfusion.XForms.ParallaxView;assembly=Syncfusion.SfParallaxView.XForms"
         x:Class="ParallaxSample.MainPage">
 
-            <ContentPage.Content>
-                <parallax:SfParallaxView />
-            </ContentPage.Content>
+        <ContentPage.Content>
+            <parallax:SfParallaxView />
+        </ContentPage.Content>
 	
-        </ContentPage>
+    </ContentPage>
 
 
 {% endhighlight %}
@@ -83,7 +83,8 @@ To launch the parallax view in iOS, call the `SfParallaxViewRenderer.Init()` met
             }
 
         }
-    Public class MainPage : ContentPage
+        
+    public class MainPage : ContentPage
     {
         public MainPage()
         {
@@ -97,11 +98,11 @@ To launch the parallax view in iOS, call the `SfParallaxViewRenderer.Init()` met
 
 
 
-## Adding content and source value to the parallax view
+## Adding content to the parallax view
 
 ### Content
 
-`Content` represent background view of a parallax view.You can set any kind of view to the `Content` property. 
+`Content` represent background view of a parallax view. You can set any kind of view to the `Content` property such as Image, StackLayout etc. 
 
 The following code shows how to set content property to the parallax view.
 
@@ -134,7 +135,7 @@ The following code shows how to set content property to the parallax view.
     using Syncfusion.XForms.ParallaxView;
     using Xamarin.Forms;
 
-     public partial class MainPage : ContentPage
+    public partial class MainPage : ContentPage
     {
         public MainPage()
         {
@@ -143,24 +144,32 @@ The following code shows how to set content property to the parallax view.
         }
     }
 
-     public class ParallaxViewModel
-        {
-            public ImageSource Image { get; set; }
+    public class ParallaxViewModel
+    {
+        public ImageSource Image { get; set; }
 
-            public ParallaxViewModel()
-            {
-                Image = ImageSource.FromResource("ParallaxSample.ParallaxGuitar1.png", typeof(MainPage).GetTypeInfo().Assembly);
-            }
-        }    
+        public ParallaxViewModel()
+        {
+            Image = ImageSource.FromResource("ParallaxSample.ParallaxGuitar1.png", typeof(MainPage).GetTypeInfo().Assembly);
+        }
+    }    
 
 {% endhighlight %}
 {% endtabs %}
 
+## Binding source to the parallax view
+
 ### Source
 
-`Source` represents the foreground view of the parallax view. The value of source should be a scrollable content.
+`Source` represents the foreground view of the parallax view. The value of source should be a scrollable content or the view which is implmented IParallaxView interface.
 
-The below code snippet shows how to set the `Source` property value
+As of now, SfParallaxView supports the following controls directly. You can simply binds these control to the source property and there is no further changes required to integrate.
+
+    1. ScrollView
+    2. SfListView
+    3. SfRotator
+
+The below code snippet shows how to bind the SfListView to `Source` property
 
 {% tabs %}
 
@@ -206,7 +215,7 @@ The below code snippet shows how to set the `Source` property value
 
 {% highlight c# %}
 
- public partial class MainPage : ContentPage
+    public partial class MainPage : ContentPage
     {
         public MainPage()
         {
@@ -215,7 +224,7 @@ The below code snippet shows how to set the `Source` property value
         }
     }
 
-       public class ParallaxViewModel
+    public class ParallaxViewModel
     {
         public ImageSource Image { get; set; }
 
@@ -267,11 +276,11 @@ The below code snippet shows how to set the `Source` property value
 
 N> `Content` view size automatically stretches to the size of `Source` view.
 
-## Speed
+## Customizing the parallax view
+
+### Speed
 
 `Speed` value denotes the scrolling speed of `Content` which is added as a background view. Based on the speed value the background view will scroll along with the foreground view.
-
-N>  `Speed` value only applicable for `Content` view. If the speed value set to 0 then the scrolling will be disabled for background view.
 
 {% highlight xaml %}
 
@@ -283,9 +292,9 @@ N>  `Speed` value only applicable for `Content` view. If the speed value set to 
 
 {% endhighlight %}
 
-## Orientation 
+### Orientation 
 
-`Orientation` of the `Source` and `Content` view can be changed to Vertical or Horizontal using this property value.
+`Orientation` of the content scrolling can be customizable to Vertical or Horizontal using this property value.
 
 {% highlight xaml %}
 
@@ -298,11 +307,11 @@ N>  `Speed` value only applicable for `Content` view. If the speed value set to 
             </parallax:SfParallaxView.Content>
           </parallax:SfParallaxView>
      
-            <list:SfListView x:Name="listview" Orientation="Horizontal" ItemsSource="{Binding Items}" BackgroundColor="Transparent" ItemSize="100">
+        <list:SfListView x:Name="listview" Orientation="Horizontal" ItemsSource="{Binding Items}" BackgroundColor="Transparent" ItemSize="100">
                
                     . . .
 
-            </list:SfListView>
+        </list:SfListView>
         </Grid>
 
         {% endhighlight %}

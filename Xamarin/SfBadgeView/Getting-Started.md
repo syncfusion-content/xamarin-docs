@@ -67,7 +67,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 ### Android
 
-The Android platform does not require any additional configuration to render the progress bar.
+The Android platform does not require any additional configuration to render the badge view.
 
 ## Adding namespace
 

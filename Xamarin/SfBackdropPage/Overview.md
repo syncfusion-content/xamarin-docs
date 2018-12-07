@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Essential Xamarin.Forms Backdrop Page
+title: Overview of Syncfusion Backdrop Page control for Xamarin.Forms
 description: What are the key features available in backdrop page.
 platform: xamarin
 control: SfBackdropPage

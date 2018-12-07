@@ -157,7 +157,7 @@ The following code shows how to set content property to the parallax view.
 
 ### Source
 
-`Source` represents the foreground view of the parallax view. The value of source should be a scrollable content or the view which is implmented IParallaxView interface.
+`Source` represents the foreground view of the parallax view. The value of source should be a scrollable content or the view which is implemented IParallaxView interface.
 
 As of now, SfParallaxView supports the following controls directly. You can simply binds these control to the source property and there is no further changes required to integrate.
 

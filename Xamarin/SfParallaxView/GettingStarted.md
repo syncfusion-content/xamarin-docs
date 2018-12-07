@@ -119,7 +119,7 @@ The following code shows how to set content property to the parallax view.
         <Grid>            
         <parallax:SfParallaxView x:Name="parallaxview">
             <parallax:SfParallaxView.Content>
-                <Image x:Name="image" BackgroundColor="Transparent" HorizontalOptions="Fill" VerticalOptions="Fill" Aspect="AspectFill" />
+                <Image Source="{Binding Image}" BackgroundColor="Transparent" HorizontalOptions="Fill" VerticalOptions="Fill" Aspect="AspectFill" />
             </parallax:SfParallaxView.Content>
         </parallax:SfParallaxView>       
         </Grid>
@@ -134,23 +134,24 @@ The following code shows how to set content property to the parallax view.
     using Syncfusion.XForms.ParallaxView;
     using Xamarin.Forms;
 
-    public class App : Application
-        {
-            public App()
-            {
-			    MainPage = new ParallaxSample.MainPage();
-            }
-
-        }
-    Public class MainPage : ContentPage
+     public partial class MainPage : ContentPage
     {
-        public MainPage()
+        public MainPage()
         {
             InitializeComponent();
-            image.Source = ImageSource.FromResource("ParallaxSample.ParallaxGuitar1.png", typeof(MainPage).GetTypeInfo().Assembly);
+            BindingContext = new ParallaxViewModel();
         }
     }
- 
+
+     public class ParallaxViewModel
+        {
+            public ImageSource Image { get; set; }
+
+            public ParallaxViewModel()
+            {
+                Image = ImageSource.FromResource("ParallaxSample.ParallaxGuitar1.png", typeof(MainPage).GetTypeInfo().Assembly);
+            }
+        }    
 
 {% endhighlight %}
 {% endtabs %}
@@ -161,51 +162,110 @@ The following code shows how to set content property to the parallax view.
 
 The below code snippet shows how to set the `Source` property value
 
+{% tabs %}
 
 {% highlight xaml %}
 
-   <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+  <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ParallaxSample"
+             xmlns:list="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
              xmlns:parallax="clr-namespace:Syncfusion.XForms.ParallaxView;assembly=Syncfusion.SfParallaxView.XForms"
              x:Class="ParallaxSample.MainPage">
       
     <ContentPage.Content>
-        <Grid>            
-        <parallax:SfParallaxView Source="{x:Reference Name = scroll}" x:Name="parallaxview">
+        <Grid>
+          <parallax:SfParallaxView Source="{x:Reference Name = listview}" x:Name="parallaxview" >
             <parallax:SfParallaxView.Content>
-                <Image x:Name="image" BackgroundColor="Transparent" HorizontalOptions="Fill" VerticalOptions="Fill" Aspect="AspectFill" />
+                <Image BackgroundColor="Transparent" Source="{Binding Image}" HorizontalOptions="Fill" VerticalOptions="Fill" Aspect="AspectFill" />
             </parallax:SfParallaxView.Content>
-        </parallax:SfParallaxView>
-        <ScrollView x:Name="scroll">
-            <StackLayout Spacing="50" VerticalOptions="StartAndExpand">
-                <Label Text="Item1" />
-                <Label Text="Item2" />
-                <Label Text="Item3" />
-                <Label Text="Item4" />
-                <Label Text="Item5" />
-                <Label Text="Item6" />
-                <Label Text="Item7" />
-                <Label Text="Item8" />
-                <Label Text="Item9" />
-                <Label Text="Item10" />
-                <Label Text="Item11" />
-                <Label Text="Item12" />
-                <Label Text="Item13" />
-                <Label Text="Item14" />
-                <Label Text="Item15" />
-                <Label Text="Item16" />
-                <Label Text="Item17" />
-                <Label Text="Item18" />
-                <Label Text="Item19" />
-            </StackLayout>
-        </ScrollView>
+          </parallax:SfParallaxView>
+     
+            <list:SfListView x:Name="listview" ItemsSource="{Binding Items}" BackgroundColor="Transparent" ItemSize="100">
+                <list:SfListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="20,0,20,0" RowSpacing="50">                              
+                                <StackLayout BackgroundColor="Transparent" Grid.Column="1" Padding="0,0,0,0" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand" Orientation="Vertical">
+                                    <Label HorizontalOptions="Start" TextColor="White" Text="{Binding Name}" Font="25">
+                                    </Label>
+                                    <Label HorizontalOptions="Start" Text="{Binding Author}" TextColor="White">
+                                    </Label>
+                                </StackLayout>                               
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </list:SfListView.ItemTemplate>
+            </list:SfListView>
         </Grid>
     </ContentPage.Content>
 	
     </ContentPage>
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+ public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            BindingContext = new ParallaxViewModel();
+        }
+    }
+
+       public class ParallaxViewModel
+    {
+        public ImageSource Image { get; set; }
+
+        public ObservableCollection<Contacts> Items { get; set; }
+        public ParallaxViewModel()
+        {
+            Image = ImageSource.FromResource("ParallaxSample.ParallaxGuitar1.png", typeof(MainPage).GetTypeInfo().Assembly);
+            Items = new ObservableCollection<Contacts>()
+            {
+                new Contacts() { Name = "Thriller", Author = "Michael Jackson" },
+                new Contacts() { Name = "Like a Prayer", Author = "Madonna" },
+                new Contacts() { Name = "When Doves Cry", Author = "Prince" },
+                new Contacts() { Name = "I Wanna Dance", Author = "Whitney Houston" },
+                new Contacts() { Name = "It’s Gonna Be Me", Author = "N Sync"},
+                new Contacts() { Name = "Everybody", Author = "Backstreet Boys"},
+                new Contacts() { Name = "Rolling in the Deep", Author = "Adele" },
+                new Contacts() { Name = "Don’t Stop Believing", Author = "Journey" },
+                new Contacts() { Name = "Billie Jean", Author = "Michael Jackson" },
+                new Contacts() { Name = "Sorry", Author = "Justin Bieber" },
+                new Contacts() { Name = "Firework", Author = "Katy Perry"},
+                new Contacts() { Name = "The A Team", Author = "Ed Sheeran" },
+                new Contacts() { Name = "Thriller", Author = "Michael Jackson" },
+                new Contacts() { Name = "Like a Prayer", Author = "Madonna" },
+                new Contacts() { Name = "When Doves Cry", Author = "Prince" },
+                new Contacts() { Name = "I Wanna Dance", Author = "Whitney Houston" },
+                new Contacts() { Name = "It’s Gonna Be Me", Author = "N Sync" },
+                new Contacts() { Name = "Everybody", Author = "Backstreet Boys" },
+                new Contacts() { Name = "Rolling in the Deep", Author = "Adele" },
+                new Contacts() { Name = "Don’t Stop Believing", Author = "Journey"},
+            };
+        }
+    }
+
+    public class Contacts
+    {
+        public string Name
+        {
+            get;
+            set;
+        }
+        public string Author
+        {
+            get;
+            set;
+        }
+    }
+
+{% endhighlight %}
+
+{% endtabs %}
 
 N> `Content` view size automatically stretches to the size of `Source` view.
 
@@ -217,11 +277,11 @@ N>  `Speed` value only applicable for `Content` view. If the speed value set to 
 
 {% highlight xaml %}
 
-    <parallax:SfParallaxView Source="{x:Reference Name = scroll}" x:Name="parallaxview" Speed="0.5">
-                <parallax:SfParallaxView.Content>
-                    <Image x:Name="image" BackgroundColor="Transparent" HorizontalOptions="Fill" VerticalOptions="Fill" Aspect="AspectFill" />
-                </parallax:SfParallaxView.Content>
-    </parallax:SfParallaxView>
+     <parallax:SfParallaxView Source="{x:Reference Name = listview}" x:Name="parallaxview" Speed="0.5" >
+            <parallax:SfParallaxView.Content>
+                <Image BackgroundColor="Transparent" Source="{Binding Image}" HorizontalOptions="Fill" VerticalOptions="Fill" Aspect="AspectFill" />
+            </parallax:SfParallaxView.Content>
+     </parallax:SfParallaxView>
 
 {% endhighlight %}
 
@@ -231,146 +291,21 @@ N>  `Speed` value only applicable for `Content` view. If the speed value set to 
 
 {% highlight xaml %}
 
-        <Grid>            
-            <parallax:SfParallaxView Source="{x:Reference Name = scroll}" x:Name="parallaxview" Orientation="Vertical">
-                <parallax:SfParallaxView.Content>
-                    <Image x:Name="image" BackgroundColor="Transparent" HorizontalOptions="Fill" VerticalOptions="Fill" Aspect="AspectFill" />
-                </parallax:SfParallaxView.Content>
-            </parallax:SfParallaxView>
-            <ScrollView x:Name="scroll" Orientation="Vertical">
-                <StackLayout Spacing="50" VerticalOptions="StartAndExpand">
-                    <Label Text="Item1" />
-                    <Label Text="Item2" />
-                    <Label Text="Item3" />
-                    <Label Text="Item4" />
-                    <Label Text="Item5" />
-                    <Label Text="Item6" />
-                    <Label Text="Item7" />
-                    <Label Text="Item8" />
-                    <Label Text="Item9" />
-                    <Label Text="Item10" />
-                    <Label Text="Item11" />
-                    <Label Text="Item12" />
-                    <Label Text="Item13" />
-                    <Label Text="Item14" />
-                    <Label Text="Item15" />
-                    <Label Text="Item16" />
-                    <Label Text="Item17" />
-                    <Label Text="Item18" />
-                    <Label Text="Item19" />
-                </StackLayout>
-            </ScrollView>
-            </Grid>
+        <Grid>
+          <parallax:SfParallaxView Source="{x:Reference Name = listview}" x:Name="parallaxview" Orientation="Horizontal" >
+            <parallax:SfParallaxView.Content>
+               
+                . . .
+
+            </parallax:SfParallaxView.Content>
+          </parallax:SfParallaxView>
+     
+            <list:SfListView x:Name="listview" Orientation="Horizontal" ItemsSource="{Binding Items}" BackgroundColor="Transparent" ItemSize="100">
+               
+                    . . .
+
+            </list:SfListView>
+        </Grid>
 
         {% endhighlight %}
 
-
-## ParallaxView support for custom scrollable controls
-
-Parallax view support can obtain for custom scrollable controls with the help of `IParallaxView` interface. This interface implements `ScrollableContentSize` property and `Scrolling` event. 
-
-{% highlight c# %}
-
-    public class CustomScrollview : ScrollView, IParallaxView
-        {
-            public Size ScrollableContentSize { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-
-            public event EventHandler<ParallaxScrollingEventArgs> Scrolling;
-        }
-
-{% endhighlight %}
-
-### ScrollableContentSize
-
-`ScrollableContentSize` is the total size of the scrollable custom control.
-
-{% highlight c# %}
-
- public class CustomScrollview : ScrollView, IParallaxView
-    {
-        public Size ScrollableContentSize { get; set; }
-
-      public CustomScrollview()
-        {
-            this.ScrollableContentSize = this.ContentSize;
-        }
-    }
-
-{% endhighlight %}
-
-### Scrolling event
-
-`Scrolling` event will be triggered whenever the `ParallaxScrollingEventArgs` value has been set through the scrollable custom control scrolled event.
-
-The `ParallaxScrollingEventArgs` has three arguments such as `ScrollX` , `ScrollY` and `CanAnimate` 
-
-* `ScrollX`- It denotes X position of the finished control.
-
-* `ScrollY` - It denotes Y position of the finished scroll.
-
-* `CanAnimate` - It defines whether to animate the scroll or not.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-         <Grid>            
-            <parallax:SfParallaxView Source="{x:Reference Name = scroll}" x:Name="parallaxview">
-                <parallax:SfParallaxView.Content>
-                    <Image x:Name="image" BackgroundColor="Transparent" HorizontalOptions="Fill" VerticalOptions="Fill" Aspect="AspectFill" />
-                </parallax:SfParallaxView.Content>
-            </parallax:SfParallaxView>
-            <local:CustomScrollview x:Name="scroll" Orientation="Horizontal">
-                <StackLayout Spacing="50" VerticalOptions="StartAndExpand">
-                    <Label Text="Item1" />
-                    <Label Text="Item2" />
-                    <Label Text="Item3" />
-                    <Label Text="Item4" />
-                    <Label Text="Item5" />
-                    <Label Text="Item6" />
-                    <Label Text="Item7" />
-                    <Label Text="Item8" />
-                    <Label Text="Item9" />
-                    <Label Text="Item10" />
-                    <Label Text="Item11" />
-                    <Label Text="Item12" />
-                    <Label Text="Item13" />
-                    <Label Text="Item14" />
-                    <Label Text="Item15" />
-                    <Label Text="Item16" />
-                    <Label Text="Item17" />
-                    <Label Text="Item18" />
-                    <Label Text="Item19" />
-                </StackLayout>
-            </local:CustomScrollview>
-            </Grid>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-        public class CustomScrollview : ScrollView, IParallaxView
-        {
-            public Size ScrollableContentSize { get; set; }
-
-            public event EventHandler<ParallaxScrollingEventArgs> Scrolling;
-
-            protected virtual void OnScrollChanged(ParallaxScrollingEventArgs e)
-            {
-                Scrolling?.Invoke(this, e);
-            }
-
-            public CustomScrollview()
-            {
-                this.Scrolled += CustomScrollview_Scrolled;
-                this.ScrollableContentSize = this.ContentSize;
-            }
-
-            private void CustomScrollview_Scrolled(object sender, ScrolledEventArgs e)
-            {
-                OnScrollChanged(new ParallaxScrollingEventArgs(e.ScrollX, e.ScrollY, false));
-            }
-        }
-
-{% endhighlight %}
-{% endtabs %}

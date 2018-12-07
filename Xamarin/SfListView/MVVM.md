@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working with ListView in MVVM
+title: Working with Syncfusion ListView in MVVM
 description: Describes how to use ListView in different cases of MVVM.
 platform: xamarin
 control: SfListView
@@ -173,7 +173,7 @@ public partial class App : PrismApplication
     <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
         <syncfusion:SfListView x:Name="listView" ItemSize="70" ItemSpacing="0,0,5,0"
                              AutoFitMode="Height"
-                             ItemsSource="{Binding ContactsInfo,}" IsStickyHeader="True" 
+                             ItemsSource="{Binding ContactsInfo}" IsStickyHeader="True" 
                              AllowSwiping="True" IsStickyGroupHeader="True" GroupHeaderSize="50">
         </syncfusion:SfListView>
     </StackLayout>

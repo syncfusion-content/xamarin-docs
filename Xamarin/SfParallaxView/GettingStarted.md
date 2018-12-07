@@ -29,17 +29,13 @@ To launch the parallax view in iOS, call the `SfParallaxViewRenderer.Init()` met
 
 {% highlight C# %} 
 
-   public override bool FinishedLaunching(UIApplication app, NSDictionary options) 
+    public override bool FinishedLaunching(UIApplication app, NSDictionary options)
+    {
 
-   { 
-      … 
+        global::Xamarin.Forms.Forms.Init();
+        Syncfusion.XForms.iOS.ParallaxView.SfParallaxViewRenderer.Init();
+        LoadApplication(new App());
 
-      global::Xamarin.Forms.Forms.Init();
-
-      Syncfusion.XForms.iOS.ParallaxView.SfParallaxViewRenderer.Init();
-
-      LoadApplication(new App()); 
-      …
     }
 
 {% endhighlight %}

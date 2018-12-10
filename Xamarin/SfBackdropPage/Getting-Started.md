@@ -164,8 +164,6 @@ backdrop.BackLayer = backdropBackLayer;
 ### Adding front layer content
 The front layer always appears in front of the back layer. It is displayed at full width and holds primary content.
 
-Add any layout such as StackLayout, AbsoluteLayout, RelativeLayout, or Grid to the front layer of the backdrop page.
-
 {% tabs %} 
 
 {% highlight xaml %} 
@@ -193,7 +191,7 @@ backdrop.FrontLayer = backdropFrontLayer;
 
 {% endtabs %}
 
-## Reveal and conceal front layer
+## Reveal and conceal the back layer
 
 The visibility of the back layer can be disabled by setting the IsBackLayerRevealed property to false. By default, it is set to `true`.
 

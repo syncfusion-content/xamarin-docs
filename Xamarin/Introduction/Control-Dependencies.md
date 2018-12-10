@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Control Dependencies of Xamarin.Forms
+title: Control Dependencies of Syncfusion Xamarin.Forms
 description: Contains Xamarin.Forms control dependencies for each control to be referred in each platform project.
 platform: xamarin
 control: Introduction
@@ -504,19 +504,47 @@ Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.macOS.dll<br/>Syncfusion.L
 <table>
 <tr>
 <td>PCL</td>
-<td>Syncfusion.SfImageEditor.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+<td>Syncfusion.SfImageEditor.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/></td>
 </tr>
 <tr>
 <td>Android</td>
-<td>Syncfusion.SfImageEditor.XForms.Android.dll<br/>Syncfusion.SfImageEditor.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+<td>Syncfusion.SfImageEditor.XForms.Android.dll<br/>Syncfusion.SfImageEditor.XForms.dll<br/></td>
 </tr>
 <tr>
 <td>iOS</td>
-<td>Syncfusion.SfImageEditor.XForms.iOS.dll<br/>Syncfusion.SfImageEditor.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+<td>Syncfusion.SfImageEditor.XForms.iOS.dll<br/>Syncfusion.SfImageEditor.XForms.dll<br/></td>
 </tr>
 <tr>
 <td>UWP</td>
-<td>Syncfusion.SfImageEditor.UWP.dll<br/>Syncfusion.SfImageEditor.XForms.UWP.dll<br/>Syncfusion.SfImageEditor.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+<td>Syncfusion.SfImageEditor.UWP.dll<br/>Syncfusion.SfImageEditor.XForms.UWP.dll<br/>Syncfusion.SfImageEditor.XForms.dll<br/></td>
+</tr>
+</table>
+
+## SfParallaxView
+
+<dl>
+  <dt>NuGet</dt>
+  <dd>Syncfusion.Xamarin.SfParallaxView</dd>
+</dl>
+
+**Assemblies**
+
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfParallaxView.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfParallaxView.XForms.Android.dll<br/>Syncfusion.SfParallaxView.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfParallaxView.XForms.iOS.dll<br/>Syncfusion.SfParallaxView.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfParallaxView.XForms.UWP.dll<br/>Syncfusion.SfParallaxView.XForms.dll<br/></td>
 </tr>
 </table>
 

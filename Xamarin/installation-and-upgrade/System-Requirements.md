@@ -69,12 +69,24 @@ The following table lists the platforms supported by our Xamarin.Forms controls.
     </tr>
     <tr>
         <td>
-            All other controls 
+            SfListView
             <br/>
             <br/>
         </td>
          <td>
             API level 19 and later versions
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+        <td>
+            All other controls 
+            <br/>
+            <br/>
+        </td>
+         <td>
+            API level 17 and later versions
             <br/>
             <br/>
         </td>

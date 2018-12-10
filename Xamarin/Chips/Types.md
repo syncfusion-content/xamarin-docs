@@ -9,7 +9,13 @@ documentation : ug
 
 # Set type for the chip group
 
-No operations can be performed in this group. To do any action in this stage,set the `Type` property for SfChipGroup. The chips control provides four different types, and each has its own functionality. The types are 
+No operations can be performed in a chip group unless Type property is set. The chips control provides four different types, and each has its own functionality. The types are 
+
+* Action
+* Choice
+* Filter 
+* Input chips.
+
 
 * Action
 * Choice
@@ -18,19 +24,19 @@ No operations can be performed in this group. To do any action in this stage,set
 
 ## Input:
 
-Arrange the chips with its any of customer provided editors. By enabling user input, you can convert that input into chip. 
+Arrange the chips in layout and enables close button for each chip. Using the close button, a chip can be removed from children and layout as well. It additionally has support to add an optional `InputView` at the end of the layout, from that user can obtain chip text for creating a chip at runtime.
 
 ## Choice:
 
-Allows you select a single chip from a group of items. By selecting a single chip automatically, deselect the other chips. The `SelectedItem` property holds the currently selected chip.
+Allows user select a single chip from a group of items. Selecting a chip will automatically, unselect the previously selected chips. Selected chip color can be customized by `SelectedChipBackgroundColor` and `SelectedChipTextColor` properties. The `SelectedItem`property holds the instance of recently selected chip.
 
 ## Filter:
 
-Allows you select more than one chips from a group of chips. You can select more than one chip by setting the filter type to ChipGroup. To keep the track of selected chips, use the `SelectedItems` property
+Allows user to select more than one chip in a group of chips. Selected chips are indicated by selection indicator in this type. Selection indicator can be customized using `SelectionIndicatorColor` property. Use the `SelectedItems` property to get the list of selected chips.
 
 ## Action:
 
-Allows you to execute the command of ChipGroup when tapping the chip.
+Executes the `Command` of ChipGroup and raises the Clicked event when a chip is clicked.
 
 In this example, the Input chip is used to add employee at run time. To get the employee name as input, an entry is added as `InputView`: 
 

@@ -7,13 +7,13 @@ control : Chips
 documentation : ug
 ---
 
-## Populating with Business Objects
+## Populating the Business Objects
 
 To provide a compact view of complex data like business object, use the `ItemsSource` property with supports used to bind different source of objects. Please refer to this [documentation](https://help.syncfusion.com/xamarin/chips/getting-started#set-layout-for-the-control) for more details.
 
-## Populating with SfChip
+## Populating the SfChip
 
-Syncfusion Chips control in Xamarin.Forms provides support to create or customize own SfChip and assign that collection of `SfChip` into the `Items` property in ChipGroup. The following code example explains the ways to render the chipgroup control with a collection of SfChip.
+Syncfusion Chips control in Xamarin.Forms provides support to create and add SfChip as items to be set in the `Items` property of SfChipGroup. The following code example explains the way to create items as SfChip
 
 % tabs %}
 
@@ -54,15 +54,13 @@ namespace Chips
 		{
 			InitializeComponent();
 			Grid grid = new Grid();
-			var chipGroup = new SfChipGroup(){Type = SfChipType.Action};
+			var chipGroup = new SfChipGroup(){Type = SfChipsType.Action};
 			grid.Children.Add(chipGroup);
-			ChipCollection collection = new ChipCollection();
-			collection.add(new SfChip(){Text="Extra Small"});
-			collection.add(new SfChip(){Text="Small"});
-			collection.add(new SfChip(){Text="Medium"});
-			collection.add(new SfChip(){Text="Large"});
-			collection.add(new SfChip(){Text="Extra Large"});
-			chipGroup.Items = collection;
+			chipGroup.Items.Add(new SfChip(){Text="Extra Small"});
+			chipGroup.Items.Add(new SfChip(){Text="Small"});
+			chipGroup.Items.Add(new SfChip(){Text="Medium"});
+			chipGroup.Items.Add(new SfChip(){Text="Large"});
+			cchipGroup.Items.Add(new SfChip(){Text="Extra Large"});
 			this.Content = grid;
 		}
 	}
@@ -72,4 +70,4 @@ namespace Chips
 
 {% endtabs %}
 
-![](images/items/chips_items.png)
+![Collection of items to chip group](images/items/chips_items.png)

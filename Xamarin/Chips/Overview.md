@@ -11,7 +11,7 @@ documentation : ug
 
 The chips control for Xamarin.Forms presents information in an interactive and customizable layout. It also arranges multiple chips in a user-preferred layout and groups them to make selections. 
 
-![](images/overview_image/chip_overview_image.png)
+![overview of chips control](images/overview_image/chip_overview_image.png)
 
 ## Key Features
 

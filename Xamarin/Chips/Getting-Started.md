@@ -15,7 +15,7 @@ This section explains the steps required to create chips and arrange them in a l
 
 Syncfusion components  for Xamarin.Forms are available in [nuget.org](https://www.nuget.org/). To add chips to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.Buttons](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons/), and then install it.
 
-![](images/chip_packages/chip_packages.png)
+![Adding the Buttons nuget to sample](images/chip_packages/chip_packages.png)
 
 To learn more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). If you prefer to manually reference the assemblies instead of using NuGet, refer to this [documentation](https://help.syncfusion.com/xamarin/introduction/control-dependencies#chips) to know about the dependent assemblies for chips.
 
@@ -186,7 +186,7 @@ namespace Chips
 
 ## Set layout for the control
 
-The chips control creates chip for each object and arranges chips in a StackLayout with horizontal orientation. Any layout can be used to arrange the chips in the chips control.In the following example, the `FlexLayou` has been used. 
+The chips control creates chip for each object and arranges chips in a StackLayout with horizontal orientation. Any layout can be used to arrange the chips in the chips control.In the following example, the `FlexLayout` has been used. 
 
 {% tabs %}
 
@@ -295,7 +295,7 @@ namespace Chips
 			employees.Add(new Person() { Name = "John" });
 			employees.Add(new Person() { Name = "James" });
 			employees.Add(new Person() { Name = "Linda" });
-			employees.Add(new Person() { Name = "Seria" });
+			employees.Add(new Person() { Name = "Rose" });
 			employees.Add(new Person() { Name = "Mark" });
 		}
 
@@ -389,4 +389,81 @@ namespace Chips
 
 {% endtabs %}
 
-![](images/getting_started/getting_started.png)
+N> `ImageMemberPath` property specifies the image holded property's path in which filtering is done on business objects.
+
+![ChipGroup sample with display member path and itemsSource demo](images/getting_started/getting_started.png)
+
+## Set types of chip group
+
+The chips control differs its functionality based on its [Types](https://help.syncfusion.com/xamarin/chips/types). The following code example will explains the `Action` type chip group with displaying the tapped chip's name.
+
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Chips"
+    x:Class="Chips.GettingStarted">
+	<ContentPage.BindingContext>
+		<local:ViewModel x:Name="viewModel"/>
+	</ContentPage.BindingContext>
+	<ContentPage.Content>
+		<StackLayout>
+			<buttons:SfChipGroup
+				Command="{Binding ActionCommand}" 
+				ItemsSource="{Binding Employees}"
+				Type="Action">
+			</buttons:SfChipGroup>
+			 <StackLayout Orientation="Horizontal">
+				<Label Text="Name: " FontAttributes="Bold" FontSize="14" />
+				<Label Text="{Binding Result}" FontAttributes="Bold" FontSize="14" />
+            </StackLayout>
+		</StackLayout>  
+	</ContentPage.Content>
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+using Syncfusion.XForms.Buttons;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+namespace Chips
+{
+	public partial class GettingStarted: ContentPage
+	{
+		public GettingStarted()
+		{
+			InitializeComponent();
+			Grid grid = new Grid();
+			SfChipGroup chipGroup = new SfChipGroup();
+			grid.Children.Add(chipGroup);
+			FlexLayout layout = new FlexLayout()
+			{
+				Direction = FlexDirection.Row,
+				Wrap = FlexWrap.Wrap,
+				HorizontalOptions = LayoutOptions.Start,
+				VerticalOptions = LayoutOptions.Center,
+				AlignContent = FlexAlignContent.Start,
+				JustifyContent = FlexJustify.Start,
+				AlignItems = FlexAlignItems.Start,
+			};
+			chipGroup.ChipLayout = layout;
+			this.BindingContext = new ViewModel();
+			chipGroup.SetBinding(SfChipGroup.ItemsSourceProperty, "Employees");
+			chipGroup.DisplayMemberPath = "Name";
+			chipGroup.ChipPadding = new Thickness(8, 8, 0, 0);
+			this.Content = grid;
+		}
+	}
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![action typed chip group](images/overview_image/chip_overview_image.png)

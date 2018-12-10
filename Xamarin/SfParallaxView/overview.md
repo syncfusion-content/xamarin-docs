@@ -9,13 +9,13 @@ documentation: ug
 
 # Overview
 
-The ParallaxView control binds the scroll position of a foreground element (e.g., a list) to a background element and moves the background element at a different speed.
+The SfParallaxView control binds the scroll position of a foreground element (e.g. list) to a background element and moves the background element at different speeds.
 
 ![SfParallaxView](ParallaxView_Images/parallaxview.gif)
 
 ### Key features
 
-* The speed of the parallax scroll can be customized.
-* Horizontal and vertical orientation support.
-* Built-in integration with SfListView and SfRotator
-* Any control that implements the IParallaxView interface can be bound.
+* Customizes the speed of the parallax scroll.
+* Supports horizontal and vertical orientation.
+* Provides built-in integration with SfListView and SfRotator.
+* Binds any control that implements the IParallaxView interface.

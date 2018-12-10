@@ -124,13 +124,15 @@ namespace GettingStarted
 {% endtabs %}
 
 ### Adding back layer content
-The back layer filling the entire background or reveals based on content height(add hyperlink of revealing height customization). It holds actionable content that is relevant to the front layer.
+The back layer filling the entire background or reveals based on content height. It holds actionable content that is relevant to the front layer.
 The back layer contains components for navigation or filtration, such as:
 
 * Navigation
 * Steppers
 * Text fields
 * Selection controls.
+
+Add any layout such as StackLayout, AbsoluteLayout, RelativeLayout, or Grid to the back layer of the backdrop page.
 
 {% tabs %} 
 
@@ -161,6 +163,8 @@ backdrop.BackLayer = backdropBackLayer;
 
 ### Adding front layer content
 The front layer always appears in front of the back layer. It is displayed at full width and holds primary content.
+
+Add any layout such as StackLayout, AbsoluteLayout, RelativeLayout, or Grid to the front layer of the backdrop page.
 
 {% tabs %} 
 

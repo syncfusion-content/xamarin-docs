@@ -45,7 +45,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ### Universal Windows Platform (UWP)
 
-To deploy the backdrop page in `Release` mode, initialize the backdrop page assemblies in the App.xaml.cs file in the UWP project as demonstrated in the following code samples.
+To deploy the backdrop page in `Release` mode, initialize the backdrop page assemblies in the App.xaml.cs file in the UWP project as demonstrated in the following code sample.
 
 {% highlight C# %} 
 
@@ -105,9 +105,7 @@ namespace GettingStarted
 {% endtabs %}
 
 ### Adding back layer content
-The back layer holds actionable content (like navigation or filtration) that is relevant to the front layer. Back layer will be either fills the entire background or occupies based on content height.
-
-Add any layout such as StackLayout, AbsoluteLayout, RelativeLayout, or Grid to the back layer of the backdrop page.
+The back layer holds actionable content (navigation or filtration), which is relevant to the front layer. The back layer will either fill the entire background or occupy the background based on the content height.
 
 {% tabs %} 
 
@@ -137,7 +135,7 @@ backdrop.BackLayer = backdropBackLayer;
 {% endtabs %}
 
 ### Adding front layer content
-The front layer always appears in front of the back layer. It is displayed at full width and holds primary content.
+The front layer always appears in front of the back layer. It is displayed to the full width and holds primary content.
 
 {% tabs %} 
 
@@ -168,9 +166,9 @@ backdrop.FrontLayer = backdropFrontLayer;
 
 ## Reveal and conceal the back layer
 
-To reveal the back layer, interact the top of front layer with swipe/fling actions or by setting the `IsBackLayerRevealed` property to `true`. By default it is `false`. 
+To reveal the back layer, perform swipe or fling actions at the top of the front layer or set the `IsBackLayerRevealed` property to `true`. By default, it is set to `false`. 
 
-Similarly, to conceal the back layer, `IsBackLayerRevealed` property as `false` or through swipe/ fling actions.
+Similarly, to conceal the back layer, set the `IsBackLayerRevealed` property to `false` or perform swipe/ fling actions.
 
 {% tabs %} 
 

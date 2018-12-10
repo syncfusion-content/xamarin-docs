@@ -122,24 +122,11 @@ Create a new BlankApp (Xamarin.Forms.Portable) application in Xamarin Studio or 
 {% highlight xaml %}
 
 <StackLayout>     
-<Grid BackgroundColor="#FFFACD">
+<Grid>
 <Grid.RowDefinitions>
-<RowDefinition Height="190"/>
 <RowDefinition Height="70"/>
 </Grid.RowDefinitions>
-<border:SfBorder x:Name="topBorder" Grid.Row="0" WidthRequest="100"
- HeightRequest="100"
- CornerRadius="50"
- VerticalOptions="Start"
- HorizontalOptions="Center"
- BorderColor="Green"
- BorderWidth="8"
- Margin="0,60,0,0">
-<border:SfBorder.Content>
-<Image Source="image.png"/>
-</border:SfBorder.Content>
-</border:SfBorder>
-<border:SfBorder x:Name="secondBorder" Grid.Row="1" WidthRequest="80"
+<border:SfBorder x:Name="border" Grid.Row="0" WidthRequest="80"
  HeightRequest="30"
  CornerRadius="20"
  VerticalOptions="Start"
@@ -172,34 +159,18 @@ namespace BorderGettingStarted
             InitializeComponent();
             StackLayout stack = new StackLayout();
             Grid mainGrid = new Grid();
-            mainGrid.BackgroundColor = Color.FromHex("#FFFACD");
-            RowDefinition topRow = new RowDefinition();
-            topRow.Height = 190;
-            RowDefinition secondRow = new RowDefinition();
-            secondRow.Height = 70;
-            mainGrid.RowDefinitions.Add(topRow);
-            mainGrid.RowDefinitions.Add(secondRow);
-            SfBorder topBorder = new SfBorder();
-            topBorder.HeightRequest = 100;
-            topBorder.CornerRadius = 50;
-            topBorder.VerticalOptions = LayoutOptions.Center;
-            topBorder.HorizontalOptions = LayoutOptions.Center;
-            topBorder.BorderColor = Color.Green;
-            topBorder.BorderWidth = 8;
-            topBorder.Margin = new Thickness(0, 60, 0, 0);
-            Grid.SetRow(topBorder, 0);
-            Image image = new Image();
-            image.Source = "image.png";
-            topBorder.Content = image;
+            RowDefinition firstRow = new RowDefinition();
+            firstRow.Height = 70;
+            mainGrid.RowDefinitions.Add(firstRow);
             
-            SfBorder secondBorder = new SfBorder();
-            secondBorder.HeightRequest = 30;
-            secondBorder.CornerRadius = 20;
-            secondBorder.VerticalOptions = LayoutOptions.Start;
-            secondBorder.HorizontalOptions = LayoutOptions.Center;
-            secondBorder.BorderColor = Color.Red;
-            secondBorder.BorderWidth = 3;
-            Grid.SetRow(secondBorder, 1);
+            SfBorder border = new SfBorder();
+            border.HeightRequest = 30;
+            border.CornerRadius = 20;
+            border.VerticalOptions = LayoutOptions.Start;
+            border.HorizontalOptions = LayoutOptions.Center;
+            border.BorderColor = Color.Red;
+            border.BorderWidth = 3;
+            Grid.SetRow(border, 0);
             Label label = new Label();
             label.Text = "Rose";
             label.TextColor = Color.Black;
@@ -211,10 +182,8 @@ namespace BorderGettingStarted
             label.HorizontalOptions = LayoutOptions.Center;
             label.HorizontalTextAlignment = TextAlignment.Center;
             label.VerticalTextAlignment = TextAlignment.Center;
-            secondBorder.Content = label;
-
-            mainGrid.Children.Add(topBorder);
-            mainGrid.Children.Add(secondBorder);
+            border.Content = label;
+            mainGrid.Children.Add(border);
             stack.Children.Add(mainGrid);
             this.Content = stack;
         }
@@ -225,87 +194,3 @@ namespace BorderGettingStarted
 {% endtabs %}
 
 ![border](images/Xamarin_Forms_Border.png)
-
-## Customization
-
-The border control supports customizing the border color, width, corner radius, background color, and more. The border can be customized using the following properties:
-
-### Border color
-
-You can customize the color of the border using the `BorderColor` property.
-
-{% tabs %}
-{% highlight xaml %}
-
-<border:SfBorder x:Name="border" BorderColor = "Red"/>
-
-{% endhighlight %}
-{% highlight c# %}
-
-SfBorder border = new SfBorder();
-border.BorderColor = Color.Red;
-
-{% endhighlight %}
-{% endtabs %}
-
-![bordercolor](images/Xamarin_Forms_BorderColor.png)
-
-## Background color
-
-The background color of the border control can be customized using the `BackgroundColor` property.
-
-{% tabs %}
-{% highlight xaml %}
-
-<border:SfBorder x:Name="border" BackgroundColor = "Green"/>
-
-{% endhighlight %}
-{% highlight c# %}
-
-SfBorder border = new SfBorder();
-border.BackgroundColor = Color.Green;
-
-{% endhighlight %}
-{% endtabs %}
-
-![backgroundcolor](images/Xamarin_Forms_BackgroundColor.png)
-
-## Border width
-
-You can customize the thickness of the border using the `BorderWidth` property.
-
-{% tabs %}
-{% highlight xaml %}
-
-<border:SfBorder x:Name="border" BorderWidth = "12"/>
-
-{% endhighlight %}
-{% highlight c# %}
-
-SfBorder border = new SfBorder();
-border.BorderWidth = 12;
-
-{% endhighlight %}
-{% endtabs %}
-
-![borderwidth](images/Xamarin_Forms_BorderWidth.png)
-
-## Corner radius
-
-You can customize the corner radius of the border on four sides using the `CornerRadius` property with type as `Thickness`.
-
-% tabs %}
-{% highlight xaml %}
-
-<border:SfBorder x:Name="border" CornerRadius="0,10,10,0"/>
-
-{% endhighlight %}
-{% highlight c# %}
-
-SfBorder border = new SfBorder();
-border.CornerRadius =  new Thickness (0,10,10,0);
-
-{% endhighlight %}
-{% endtabs %}
-
-![cornerradius](images/Xamarin_Forms_CornerRadius.png)

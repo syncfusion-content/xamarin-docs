@@ -17,7 +17,7 @@ Syncfusion components for Xamarin.Forms are available in [nuget.org](https://w
 
 To learn more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). If you prefer to manually reference the assemblies instead of using NuGet, refer to this `documentation` to learn about the dependent assemblies.
 
-## Launching the application on each platform with progress bar
+## Launching the application on each platform with badge view
 
 To use the badge view in an application, each platform requires some additional configurations. The configurations vary from platform to platform and is discussed in the following sections:
 
@@ -67,7 +67,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 ### Android
 
-The Android platform does not require any additional configuration to render the progress bar.
+The Android platform does not require any additional configuration to render the badge view.
 
 ## Adding namespace
 

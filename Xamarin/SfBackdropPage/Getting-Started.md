@@ -70,24 +70,6 @@ Android platform does not require any additional configuration to render the bac
 
 ## Initializing backdrop page
 
-Import the SfBackdropPage namespace in respective page as demonstrated in the following code sample.
-
-{% tabs %} 
-
-{% highlight xaml %} 
-
-xmlns:backdrop="clr-namespace:Syncfusion.XForms.Backdrop;assembly=Syncfusion.SfBackdrop.XForms"
-
-{% endhighlight %}
-
-{% highlight C# %} 
-
-using Syncfusion.XForms.Backdrop;
-
-{% endhighlight %}
-
-{% endtabs %}
-
 Create a page and import the SfBackdropPage namespace along with [XAML namespaces](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/xaml/namespaces) in Xamarin.Forms.
 
 {% tabs %} 
@@ -97,7 +79,6 @@ Create a page and import the SfBackdropPage namespace along with [XAML namespace
 <?xml version="1.0" encoding="UTF-8"?>
 <backdrop:SfBackdropPage  xmlns="http://xamarin.com/schemas/2014/forms"
         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-        xmlns:local="clr-namespace:GettingStarted"
         x:Class="GettingStarted.Backdrop" 
         xmlns:backdrop="clr-namespace:Syncfusion.XForms.Backdrop;assembly=Syncfusion.SfBackdrop.XForms"
         >		

@@ -457,4 +457,4 @@ namespace Chips
 
 {% endtabs %}
 
-![action typed chip group](images/action_type/chip_action_type.png)
+![action typed chip group](images/action_type_chip/action_type_chip.png)

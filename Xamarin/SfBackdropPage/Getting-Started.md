@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Syncfusion Backdrop Page control 
+title: Getting Started with Syncfusion Backdrop Page
 description: How to initialze a backdrop page.
 platform: xamarin
 control: SfBackdropPage
@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting Started
 
-This section explains the steps required to configure the backdrop page control.
+This section explains the steps required to configure the backdrop page.
 
 ## Adding backdrop page reference
 
-Syncfusion components for Xamarin.Forms are available in [nuget.org](https://www.nuget.org). To add the backdrop page control to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfBackdrop](https://www.nuget.org/packages/Syncfusion.Xamarin.SfBackdrop), and then install it.
+Syncfusion components for Xamarin.Forms are available in [nuget.org](https://www.nuget.org). To add the backdrop page to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfBackdrop](https://www.nuget.org/packages/Syncfusion.Xamarin.SfBackdrop), and then install it.
 
 
 To learn more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows).
@@ -45,7 +45,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ### Universal Windows Platform (UWP)
 
-To deploy the backdrop page in `Release` mode, initialize the core assemblies in the App.xaml.cs file in the UWP project as demonstrated in the following code samples.
+To deploy the backdrop page in `Release` mode, initialize the backdrop page assemblies in the App.xaml.cs file in the UWP project as demonstrated in the following code samples.
 
 {% highlight C# %} 
 
@@ -66,11 +66,11 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 ### Android
 
-Android platform does not require any additional configuration to render the backdrop page control.
+Android platform does not require any additional configuration to render the backdrop page.
 
-## Initializing text input layout
+## Initializing backdrop page
 
-Import the SfBackdropPage control namespace in respective page as demonstrated in the following code sample.
+Import the SfBackdropPage namespace in respective page as demonstrated in the following code sample.
 
 {% tabs %} 
 
@@ -88,7 +88,7 @@ using Syncfusion.XForms.Backdrop;
 
 {% endtabs %}
 
-Now add the SfBackdropPage control with a required optimal name by using the included namespace.
+Now, add the SfBackdropPage with a required optimal name using the included namespace along with [XAML namespaces](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/xaml/namespaces) in Xamarin.Forms.
 
 {% tabs %} 
 
@@ -124,7 +124,13 @@ namespace GettingStarted
 {% endtabs %}
 
 ### Adding back layer content
-Add any layouts such as StackLayout, AbsoluteLayout , RelativeLayout , or Grid to the back layer of backdrop control.
+The back layer filling the entire background or reveals based on content height(add hyperlink of revealing height customization). It holds actionable content that is relevant to the front layer.
+The back layer contains components for navigation or filtration, such as:
+
+* Navigation
+* Steppers
+* Text fields
+* Selection controls.
 
 {% tabs %} 
 
@@ -154,7 +160,7 @@ backdrop.BackLayer = backdropBackLayer;
 {% endtabs %}
 
 ### Adding front layer content
-Add any layouts such as StackLayout, AbsoluteLayout , RelativeLayout , or Grid to the front layer of backdrop control.
+The front layer always appears in front of the back layer. It is displayed at full width and holds primary content.
 
 {% tabs %} 
 

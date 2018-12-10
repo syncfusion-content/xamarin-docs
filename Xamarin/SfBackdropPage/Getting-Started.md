@@ -107,8 +107,6 @@ namespace GettingStarted
 ### Adding back layer content
 The back layer holds actionable content (like navigation or filtration) that is relevant to the front layer. Back layer will be either fills the entire background or occupies based on content height.
 
-Add any layout such as StackLayout, AbsoluteLayout, RelativeLayout, or Grid to the back layer of the backdrop page.
-
 {% tabs %} 
 
 {% highlight xaml %} 

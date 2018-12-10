@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cards for Essential Xamarin.Forms Kanban
+title: Cards for Essential Xamarin.Forms Kanban | Syncfusion
 description: Kanban Cards
 platform: xamarin
 control: Kanban

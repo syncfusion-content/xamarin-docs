@@ -9,25 +9,25 @@ documentation: ug
 
 # Getting Started
 
-This section explains the steps required to configure the [`SfParallaxView`](https://help.syncfusion.com/cr/cref_files/xamarin/sfparallaxview/Syncfusion.SfParallaxView.XForms~Syncfusion.SfParallax.XForms.SfParallaxView.html) and add basic elements to it using various APIs.
+This section explains the steps required to configure the [`SfParallaxView`](https://help.syncfusion.com/cr/cref_files/xamarin/sfparallaxview/Syncfusion.SfParallaxView.XForms~Syncfusion.SfParallax.XForms.SfParallaxView.html) control and add basic elements to it using various APIs.
 
-## Adding parallax view reference
+## Adding SfParallaxView reference
 
-Syncfusion components for Xamarin.Forms are available in [nuget.org](https://www.nuget.org/). To add parallax view to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfParallaxView](https://www.nuget.org/packages/Syncfusion.Xamarin.SfParallaxView/), and then install it. 
+Syncfusion components for Xamarin.Forms are available in [nuget.org](https://www.nuget.org/). To add parallax view to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfParallaxView](https://www.nuget.org/packages/Syncfusion.Xamarin.SfParallaxView/), and then install it. 
 
 ![SfParallaxView](ParallaxView_Images/parallaxnugetref.png)
 
-To know more about obtaining Syncfusion components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). If you prefer to manually reference the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfparallaxview) to know about the dependent assemblies for parallax view. 
+To learn more about obtaining Syncfusion components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). If you prefer to manually reference the assemblies instead of NuGet, refer to this [documentation](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfparallaxview) to learn about the dependent assemblies for parallax view.
 
 N> Install the same version of the parallax view in all the projects.
 
-I> If you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> If you reference Syncfusion assemblies from the trial setup or NuGet feed, you have to include a license key in your project. Please refer to this [documentation](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your Xamarin application to use our components.
 
-## Launching the application in iOS
+## Launching an application in iOS
 
-To launch the parallax view in iOS, call the `SfParallaxViewRenderer.Init()` method in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework has been initialized and before the LoadApplication method is called as shown in the following code sample.
+To launch the parallax view in iOS, call the `SfParallaxViewRenderer.Init()` method in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework has been initialized and before the LoadApplication method is called as demonstrated in the following code sample.
 
-{% highlight C# %} 
+{% highlight C# %}
 
     public override bool FinishedLaunching(UIApplication app, NSDictionary options)
     {
@@ -42,7 +42,7 @@ To launch the parallax view in iOS, call the `SfParallaxViewRenderer.Init()` met
 
 ## Initializing parallax view
 
-1. Import SfParallaxView control namespace as `xmlns:parallax="clr-namespace:Syncfusion.XForms.ParallaxView;assembly=Syncfusion.SfParallaxView.XForms` in XAML page.
+1. Import SfParallaxView control namespace as `xmlns:parallax="clr-namespace:Syncfusion.XForms.ParallaxView;assembly=Syncfusion.SfParallaxView.XForms` in the XAML page.
 
 2. Set the SfParallaxView control as content to the ContentPage.
 
@@ -93,14 +93,13 @@ To launch the parallax view in iOS, call the `SfParallaxViewRenderer.Init()` met
 {% endtabs %}
 
 
-
 ## Adding content to the parallax view
 
 ### Content
 
-`Content` represent background view of a parallax view. You can set any kind of view to the `Content` property such as Image, StackLayout etc. 
+The `Content` represents the background view of a parallax view. You can set any kind of view to the `Content` property such as Image and StackLayout.
 
-The following code shows how to set content property to the parallax view.
+The following code sample demonstrates how to set the content property to the parallax view.
 
 {% tabs %}
 
@@ -157,15 +156,15 @@ The following code shows how to set content property to the parallax view.
 
 ### Source
 
-`Source` represents the foreground view of the parallax view. The value of source should be a scrollable content or the view which is implemented IParallaxView interface.
+The `Source` represents the foreground view of the parallax view. The value of source should be a scrollable content or a view implemented in IParallaxView interface.
 
-As of now, SfParallaxView supports the following controls directly. You can simply binds these control to the source property and there is no further changes required to integrate.
+As of now, the SfParallaxView supports the following controls directly. You can simply binds these control to the source property, and no further change is required to integrate.
 
     1. ScrollView
     2. SfListView
     3. SfRotator
 
-The below code snippet shows how to bind the SfListView to `Source` property
+The following code sample demonstrates how to bind the SfListView to the `Source` property.
 
 {% tabs %}
 
@@ -270,13 +269,13 @@ The below code snippet shows how to bind the SfListView to `Source` property
 
 {% endtabs %}
 
-N> `Content` view size automatically stretches to the size of `Source` view.
+N> The size of the `Content` view will automatically be stretched to the size of the `Source` view.
 
 ## Customizing the parallax view
 
 ### Speed
 
-`Speed` value denotes the scrolling speed of `Content` which is added as a background view. Based on the speed value the background view will scroll along with the foreground view.
+The `Speed` value denotes the scrolling speed of the `Content` added as a background view. Based on the speed value, the background view will scroll along with the foreground view.
 
 {% highlight xaml %}
 
@@ -290,7 +289,7 @@ N> `Content` view size automatically stretches to the size of `Source` view.
 
 ### Orientation 
 
-`Orientation` of the content scrolling can be customizable to Vertical or Horizontal using this property value.
+The `Orientation` of the content scrolling can be customized to vertical or horizontal using this property's value.
 
 {% highlight xaml %}
 

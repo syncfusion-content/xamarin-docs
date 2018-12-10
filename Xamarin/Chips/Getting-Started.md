@@ -389,7 +389,7 @@ namespace Chips
 
 {% endtabs %}
 
-N> `ImageMemberPath` property specifies the image holded property's path in which filtering is done on business objects.
+N> `ImageMemberPath` property specifies the image hold property's path in which filtering is done on business objects.
 
 ![ChipGroup sample with display member path and itemsSource demo](images/getting_started/getting_started.png)
 
@@ -409,7 +409,7 @@ The chips control differs its functionality based on its [Types](https://help.sy
     xmlns:local="clr-namespace:Chips"
     x:Class="Chips.GettingStarted">
 	<ContentPage.BindingContext>
-		<local:ViewModel x:Name="viewModel"/>
+		<local:ViewModel/>
 	</ContentPage.BindingContext>
 	<ContentPage.Content>
 		<StackLayout>
@@ -419,7 +419,7 @@ The chips control differs its functionality based on its [Types](https://help.sy
 				Type="Action">
 			</buttons:SfChipGroup>
 			 <StackLayout Orientation="Horizontal">
-				<Label Text="Name: " FontAttributes="Bold" FontSize="14" />
+				<Label Text="Name:" FontAttributes="Bold" FontSize="14" />
 				<Label Text="{Binding Result}" FontAttributes="Bold" FontSize="14" />
             </StackLayout>
 		</StackLayout>  
@@ -439,25 +439,16 @@ namespace Chips
 		public GettingStarted()
 		{
 			InitializeComponent();
-			Grid grid = new Grid();
-			SfChipGroup chipGroup = new SfChipGroup();
-			grid.Children.Add(chipGroup);
-			FlexLayout layout = new FlexLayout()
-			{
-				Direction = FlexDirection.Row,
-				Wrap = FlexWrap.Wrap,
-				HorizontalOptions = LayoutOptions.Start,
-				VerticalOptions = LayoutOptions.Center,
-				AlignContent = FlexAlignContent.Start,
-				JustifyContent = FlexJustify.Start,
-				AlignItems = FlexAlignItems.Start,
-			};
-			chipGroup.ChipLayout = layout;
-			this.BindingContext = new ViewModel();
-			chipGroup.SetBinding(SfChipGroup.ItemsSourceProperty, "Employees");
-			chipGroup.DisplayMemberPath = "Name";
-			chipGroup.ChipPadding = new Thickness(8, 8, 0, 0);
-			this.Content = grid;
+			StackLayout stackLayout = new StackLayout();
+            var chipGroup = new SfChipGroup();
+            chipGroup.SetBinding(SfChipGroup.CommandProperty, "ActionCommand");
+            chipGroup.Type = SfChipsType.Action;
+            stackLayout.Children.Add(chipGroup);
+            stackLayout.Children.Add(new Label() { Text = "Name:", FontAttributes = FontAttributes.Bold });
+            var resultLabel = new Label() { Text = "Name:", FontAttributes = FontAttributes.Bold };
+            resultLabel.SetBinding(Label.TextProperty, "Result");
+            stackLayout.Children.Add(resultLabel);
+            this.Content = stackLayout;
 		}
 	}
 }
@@ -466,4 +457,4 @@ namespace Chips
 
 {% endtabs %}
 
-![action typed chip group](images/overview_image/chip_overview_image.png)
+![action typed chip group](images/action_type/chip_action_type.png)

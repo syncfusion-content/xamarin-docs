@@ -60,7 +60,7 @@ namespace Chips
 			chipGroup.Items.Add(new SfChip(){Text="Small"});
 			chipGroup.Items.Add(new SfChip(){Text="Medium"});
 			chipGroup.Items.Add(new SfChip(){Text="Large"});
-			cchipGroup.Items.Add(new SfChip(){Text="Extra Large"});
+			chipGroup.Items.Add(new SfChip(){Text="Extra Large"});
 			this.Content = grid;
 		}
 	}

@@ -193,7 +193,9 @@ backdrop.FrontLayer = backdropFrontLayer;
 
 ## Reveal and conceal the back layer
 
-The visibility of the back layer can be disabled by setting the IsBackLayerRevealed property to false. By default, it is set to `true`.
+To reveal the back layer, interact the top of front layer with swipe/fling actions or by setting the 'IsBackLayerRevealed' property to 'true'. By default it is 'false'. 
+
+Similarly, for conceal the back layer, 'IsBackLayerRevealed' property as 'false' or through swipe/ fling actions.
 
 {% tabs %} 
 

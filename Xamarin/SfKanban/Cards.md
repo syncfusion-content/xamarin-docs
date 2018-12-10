@@ -143,11 +143,11 @@ kanban.CardTemplate = cardTemplate;
 
 ## Data template selector
 
-You can customize the appearance of each card with different templates based on specific constraints using [`DataTemplateSelector`](https://docs.microsoft.com/en-us/dotnet/api/Xamarin.Forms.DataTemplateSelector/). You can also choose a DataTemplate for each item at runtime based on the value of data using DataTemplateSelector.
+You can customize the appearance of each card with different templates based on specific constraints using [`DataTemplateSelector`](https://docs.microsoft.com/en-us/dotnet/api/Xamarin.Forms.DataTemplateSelector/).
 
 ### Create a data template selector
 
-Create a custom class by inherting `DataTemplateSelector`, and override the `OnSelectTemplate` method to return the `DataTemplate` for that item. At runtime, the SfKanban invokes the `OnSelectTemplate` method for each item and passes the data object as parameter.
+Create a custom class by inheriting `DataTemplateSelector`, and override the `OnSelectTemplate` method to return the `DataTemplate` for that item. At runtime, the SfKanban invokes the `OnSelectTemplate` method for each item and passes the data object as parameter.
 
 {% tabs %}
 {% highlight c# %}
@@ -206,44 +206,22 @@ Assign custom `DataTemplateSelector` to the [`CardTemplate`](http://help.syncfus
 	  <local:KanbanCustomViewModel />
   </ContentPage.BindingContext>
 			
-  <kanban:SfKanban x:Name="kanban" AutoGenerateColumns="False" HorizontalOptions="FillAndExpand"
+  <kanban:SfKanban x:Name="kanban" HorizontalOptions="FillAndExpand"
 				VerticalOptions="FillAndExpand" ItemsSource="{Binding Cards}"
 				CardTemplate="{StaticResource kanbanTemplateSelector}" >
-
-        <kanban:SfKanban.Columns>
-
-          <kanban:KanbanColumn x:Name="column1" Title="Menu"  >
-          </kanban:KanbanColumn>
-
-          <kanban:KanbanColumn x:Name="column2" Title="Order">
-          </kanban:KanbanColumn>
-
-          <kanban:KanbanColumn x:Name="column3" Title="Ready to Serve" >
-          </kanban:KanbanColumn>
-
-          <kanban:KanbanColumn x:Name="column4" Title="Delivery" >
-          </kanban:KanbanColumn>
-
-        </kanban:SfKanban.Columns>
+				
+   ...
+				
   </kanban:SfKanban>
       
 </ContentPage>
 {% endhighlight %}
 {% highlight c# %}
-public class MainPage : ContentPage
-{
-   public MainPage()
-   {
-      InitializeComponent();
-      KanbanCustomViewModel viewModel = new KanbanCustomViewModel();
-      BindingContext = viewModel;
-      SfKanban kanban = new SfKanban();
-      kanban.ItemsSource = viewModel.Cards;
-      kanban.AutoGenerateColumns = false;
-      kanban.CardTemplate = new KanbanTemplateSelector();
-      Content = kanban;
-   }
-}
+
+SfKanban kanban = new SfKanban();
+kanban.ItemsSource = viewModel.Cards;
+kanban.CardTemplate = new KanbanTemplateSelector();
+      
 {% endhighlight %}
 {% endtabs %}
 

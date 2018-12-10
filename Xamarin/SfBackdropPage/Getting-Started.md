@@ -105,13 +105,7 @@ namespace GettingStarted
 {% endtabs %}
 
 ### Adding back layer content
-The back layer filling the entire background or reveals based on content height. It holds actionable content that is relevant to the front layer.
-The back layer contains components for navigation or filtration, such as:
-
-* Navigation
-* Steppers
-* Text fields
-* Selection controls.
+The back layer holds actionable content (like navigation or filtration) that is relevant to the front layer. Back layer will be either fills the entire background or occupies based on content height.
 
 Add any layout such as StackLayout, AbsoluteLayout, RelativeLayout, or Grid to the back layer of the backdrop page.
 
@@ -174,9 +168,9 @@ backdrop.FrontLayer = backdropFrontLayer;
 
 ## Reveal and conceal the back layer
 
-To reveal the back layer, interact the top of front layer with swipe/fling actions or by setting the 'IsBackLayerRevealed' property to 'true'. By default it is 'false'. 
+To reveal the back layer, interact the top of front layer with swipe/fling actions or by setting the `IsBackLayerRevealed` property to `true`. By default it is `false`. 
 
-Similarly, for conceal the back layer, 'IsBackLayerRevealed' property as 'false' or through swipe/ fling actions.
+Similarly, to conceal the back layer, `IsBackLayerRevealed` property as `false` or through swipe/ fling actions.
 
 {% tabs %} 
 

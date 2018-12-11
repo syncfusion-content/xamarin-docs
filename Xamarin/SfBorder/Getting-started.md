@@ -101,22 +101,17 @@ Create a new BlankApp (Xamarin.Forms.Portable) application in Xamarin Studio or 
 
 <StackLayout>     
 <Grid>
-<Grid.RowDefinitions>
-<RowDefinition Height="70"/>
-</Grid.RowDefinitions>
-<border:SfBorder x:Name="border" Grid.Row="0" WidthRequest="80"
+<border:SfBorder WidthRequest="80"
  HeightRequest="30"
  CornerRadius="20"
- VerticalOptions="Start"
+ VerticalOptions="Center"
  HorizontalOptions="Center"
  BorderColor="Red"
  BorderWidth="3">
-<border:SfBorder.Content>
 <Label Text="Rose" 
  TextColor="Black" BackgroundColor="#ffb6c1"
  Font="15" WidthRequest="80" HeightRequest="30" VerticalOptions="Center"
  HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
-</border:SfBorder.Content>
 </border:SfBorder>
 </Grid>
 </StackLayout>

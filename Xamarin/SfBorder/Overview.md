@@ -11,8 +11,6 @@ documentation : ug
 
 The new Border control is a container control that allows you to apply borders, backgrounds, border widths, and corner radii.
 
-![border](images/Xamarin_Forms_Overview.png)
-
 ## Key Features
 
 * Customize the background, border width, and border color of the Border control.
@@ -20,3 +18,5 @@ The new Border control is a container control that allows you to apply borders, 
 * Implement a circular image.
 
 * Customize all the edges with different corner radii.
+
+![border](images/Xamarin_Forms_Overview.png)

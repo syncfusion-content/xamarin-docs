@@ -11,8 +11,6 @@ documentation : ug
 
 The chips control for Xamarin.Forms presents information in an interactive and customizable layout. It also arranges multiple chips in a user-preferred layout and groups them to make selections. 
 
-![overview of chips control](images/overview_image/chip_overview_image.png)
-
 ## Key Features
 
 * Supports using StackLayout, FlexLayout, Grid, AbsoluteLayout, and RelativeLayout as the a layout for adding and arranging chips.
@@ -22,3 +20,4 @@ The chips control for Xamarin.Forms presents information in an interactive and c
 * Provides command support for the a group of chips and individual chips are provided in Action chips.
 * Provides user-friendly customization support and various options to customize the corner radius, border color, border thickness, text color, background color, close button color, selection indicator color, etc.
 
+![overview of chips control](images/overview_image/chip_overview_image.png)

@@ -86,15 +86,29 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 {% endhighlight %}
 
-## Creating a project
+## Creating SfBorder control
 
-Create a new blank app (.Net standard project) application in Xamarin Studio or Visual Studio for Xamarin.Forms.
+The `SfBorder` control is configured entirely in C# code or in XAML markup. The following steps explain how to create a `SfBorder` and configure its elements.
 
-1. Add the required assembly references to the pcl and renderer projects as discussed in the [Assembly deployment](#assembly-deployment) section.
+### Adding namespace for referred assemblies
 
-2. Import the SfBorder control namespace as `xmlns:border="clr-namespace:Syncfusion.XForms.Border;assembly=Syncfusion.Core.XForms"` in XAML page.
+{% tabs %} 
 
-3. Set the SfBorder control as content to the ContentPage.
+{% highlight xaml %} 
+
+xmlns:border="clr-namespace:Syncfusion.XForms.Border;assembly=Syncfusion.Core.XForms" 
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+using Syncfusion.XForms.Border; 
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Add the SfBorder control as the content of ContentPage.
 
 {% tabs %}
 {% highlight xaml %}

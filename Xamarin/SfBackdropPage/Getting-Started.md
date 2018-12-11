@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains the steps required to configure the backdrop page.
 
-## Adding backdrop page reference
+## Add backdrop page reference
 
 Syncfusion components for Xamarin.Forms are available in [nuget.org](https://www.nuget.org). To add the backdrop page to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfBackdrop](https://www.nuget.org/packages/Syncfusion.Xamarin.SfBackdrop), and then install it.
 
@@ -21,7 +21,7 @@ To learn more about obtaining our components, refer to these links for [Mac](htt
 
 I> From v16.2.0.x, you have to include a license key in your project if you reference Syncfusion assemblies from the trial setup or NuGet feed. Please refer to this [documentation](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your Xamarin applications and using our components.
 
-## Launching an application on each platform with backdrop page
+## Launch an application on each platform with backdrop page
 
 To use the backdrop page inside an application, each platform application requires some additional configurations. The configurations vary from platform to platform and are discussed in the following sections:
 
@@ -68,7 +68,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 Android platform does not require any additional configuration to render the backdrop page.
 
-## Initializing backdrop page
+## Initialize backdrop page
 
 Create a page and import the SfBackdropPage namespace along with [XAML namespaces](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/xaml/namespaces) in Xamarin.Forms.
 
@@ -96,7 +96,7 @@ namespace BackdropGettingStarted
         public BackdropSample()
         {
      
-         }
+        }
     }
 }
 
@@ -104,7 +104,7 @@ namespace BackdropGettingStarted
 
 {% endtabs %}
 
-### Adding back layer content
+## Add back layer content
 The back layer holds actionable content (navigation or filtration), which is relevant to the front layer. The back layer will either fill the entire background or occupy the background based on the content height.
 
 {% tabs %} 
@@ -151,7 +151,7 @@ this.BackLayer = new BackdropBackLayer
 
 {% endtabs %}
 
-### Adding front layer content
+## Add front layer content
 The front layer always appears in front of the back layer. It is displayed to the full width and holds primary content.
 
 {% tabs %} 

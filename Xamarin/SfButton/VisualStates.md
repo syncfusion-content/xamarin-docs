@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Visual States Customization for Syncfusion Essential Xamarin.Forms SfButton
+title: Visual States for Syncfusion Essential Xamarin.Forms SfButton
 description: How to customize a visual states for Xamarin.Forms SfButton.
 platform: xamarin.forms
 control: sfbutton

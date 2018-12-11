@@ -16,12 +16,6 @@ No operations can be performed in a chip group unless Type property is set. The 
 * Filter 
 * Input chips.
 
-
-* Action
-* Choice
-* Filter and 
-* Input chips. 
-
 ## Input:
 
 Arrange the chips in layout and enables close button for each chip. Using the close button, a chip can be removed from children and layout as well. It additionally has support to add an optional `InputView` at the end of the layout, from that user can obtain chip text for creating a chip at runtime.

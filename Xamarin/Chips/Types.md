@@ -48,28 +48,28 @@ x:Class="Chips.GettingStarted">
 		<local:ViewModel x:Name="viewModel"/>
 	</ContentPage.BindingContext>
 	<ContentPage.Content>
-		<buttons:SfChipGroup 
-			x:Name="chipGroup" 
-			ItemsSource="{Binding Employees}"
-			ChipPadding="8,8,0,0" 
-			DisplayMemberPath="Name">
-				<buttons:SfChipGroup.ChipLayout>
-						<FlexLayout 
-						HorizontalOptions="Start" 
-						VerticalOptions="Center"
-						Direction="Row"
-						Wrap="Wrap" 
-						JustifyContent="Start" 
-						AlignContent="Start" 
-						AlignItems="Start"/>
-				</buttons:SfChipGroup.ChipLayout>
-			<buttons:SfChipGroup.InputView>
-				<Entry 
-					Margin="10,10,0,0" 
-					WidthRequest="110"
-					Completed="Entry_Completed"/>
-			</buttons:SfChipGroup.InputView>
-		</buttons:SfChipGroup>
+	<buttons:SfChipGroup 
+		x:Name="chipGroup" 
+		ItemsSource="{Binding Employees}"
+		ChipPadding="8,8,0,0" 
+		DisplayMemberPath="Name">
+		<buttons:SfChipGroup.ChipLayout>
+				<FlexLayout 
+				HorizontalOptions="Start" 
+				VerticalOptions="Center"
+				Direction="Row"
+				Wrap="Wrap" 
+				JustifyContent="Start" 
+				AlignContent="Start" 
+				AlignItems="Start"/>
+		</buttons:SfChipGroup.ChipLayout>
+		<buttons:SfChipGroup.InputView>
+			<Entry 
+				Margin="10,10,0,0" 
+				WidthRequest="110"
+				Completed="Entry_Completed"/>
+		</buttons:SfChipGroup.InputView>
+	</buttons:SfChipGroup>
 	</ContentPage.Content>
 </ContentPage>
 

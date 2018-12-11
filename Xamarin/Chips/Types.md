@@ -114,11 +114,12 @@ namespace Chips
 }
 {% endhighlight %}
 
-{% tabs %}
+{% endtabs %}
 
 The following code example demonstrates the dynamic addition of chips into a chip group with the completed event in entry.
 
 {% highlight c# %}
+
 using Xamarin.Forms;
 using Syncfusion.XForms.Buttons;
 

@@ -9,7 +9,7 @@ documentation : ug
 
 # Overview
 
-The Border control is a container control that allows you to apply borders, backgrounds, border widths, and corner radii.
+The Xamarin.Forms Border control is a container control that allows you to apply borders, backgrounds, border width, and corner radii
 
 ## Key Features
 

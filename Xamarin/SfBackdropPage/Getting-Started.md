@@ -104,6 +104,18 @@ namespace BackdropGettingStarted
 
 {% endtabs %}
 
+### Configure header
+Add backdrop page as a children of [`NavigationPage`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.navigationpage?view=xamarin-forms) in App.xaml.cs class. Also, `BarBackground`, `BarTextColor` and other properties of `NavigationPage` can be set to customize the default appearance of header.
+ 
+{% highlight C# %} 
+
+MainPage = new NavigationPage(new BackdropSample());
+
+{% endhighlight %}
+ 
+>**NOTE**
+`Title` and `ToolBarItems` properties of the `Page` can used to customize the  appearance of header.
+
 ## Add back layer content
 The back layer holds actionable content (navigation or filtration), which is relevant to the front layer. The back layer will either fill the entire background or occupy the background based on the content height.
 

@@ -26,15 +26,15 @@ Syncfusion Chips control for Xamarin.Forms provides support to create and set Sf
     xmlns:local="clr-namespace:Chips"
     x:Class="Chips.GettingStarted">
 	<ContentPage.Content>
-		   <buttons:SfChipGroup Type="Action">
-                <buttons:SfChipGroup.Items>
-                    <buttons:SfChip Text="Extra Small"/>
-                    <buttons:SfChip Text="Small"/>
-                    <buttons:SfChip Text="Medium"/>
-                    <buttons:SfChip Text="Large"/>
-                    <buttons:SfChip Text="Extra Large"/>
-                </buttons:SfChipGroup.Items>
-        </buttons:SfChipGroup>
+		<buttons:SfChipGroup Type="Action">
+			<buttons:SfChipGroup.Items>
+				<buttons:SfChip Text="Extra Small"/>
+				<buttons:SfChip Text="Small"/>
+				<buttons:SfChip Text="Medium"/>
+				<buttons:SfChip Text="Large"/>
+				<buttons:SfChip Text="Extra Large"/>
+			</buttons:SfChipGroup.Items>
+		</buttons:SfChipGroup>
 	</ContentPage.Content>
 </ContentPage>
 

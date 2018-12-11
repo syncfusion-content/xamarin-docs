@@ -35,16 +35,16 @@ To launch the `SfChip` in iOS, call the `SfChipRenderer.Init()` method in the Fi
 
 {% highlight c# %}
 
-	public override bool FinishedLaunching(UIApplication app, NSDictionary options) 
-	{ 
-		… 
-		global::Xamarin.Forms.Forms.Init();
+public override bool FinishedLaunching(UIApplication app, NSDictionary options) 
+{ 
+	… 
+	global::Xamarin.Forms.Forms.Init();
 
-		Syncfusion.XForms.iOS.Buttons.SfChipRenderer.Init();
+	Syncfusion.XForms.iOS.Buttons.SfChipRenderer.Init();
 
-		LoadApplication(new App()); 
-		…
-	}
+	LoadApplication(new App()); 
+	…
+}
 	
 {% endhighlight %}
 
@@ -54,16 +54,16 @@ To launch the `SfChipGroup` in iOS, call the `SfChipGroupRenderer.Init()` method
 
 {% highlight c# %}
 
-	public override bool FinishedLaunching(UIApplication app, NSDictionary options) 
-	{ 
-		… 
-		global::Xamarin.Forms.Forms.Init();
+public override bool FinishedLaunching(UIApplication app, NSDictionary options) 
+{ 
+	… 
+	global::Xamarin.Forms.Forms.Init();
 
-		Syncfusion.XForms.iOS.Buttons.SfChipGroupRenderer.Init();
+	Syncfusion.XForms.iOS.Buttons.SfChipGroupRenderer.Init();
 
-		LoadApplication(new App()); 
-		…
-	}
+	LoadApplication(new App()); 
+	…
+}
 	
 {% endhighlight %}
 
@@ -76,19 +76,19 @@ To deploy the `SfChip` in `Release` mode, you need to initialize the SfChip asse
 {% highlight c# %}
 
 	// In App.xaml.cs 
-	protected override void OnLaunched(LaunchActivatedEventArgs e)
+protected override void OnLaunched(LaunchActivatedEventArgs e)
+{ 
+	… 
+	if (rootFrame == null) 
 	{ 
-		… 
-		if (rootFrame == null) 
-		{ 
-			List<Assembly> assembliesToInclude = new List<Assembly>();
+		List<Assembly> assembliesToInclude = new List<Assembly>();
 
-		assembliesToInclude.Add(typeof(Syncfusion.XForms.UWP.Buttons.SfChipRenderer).GetTypeInfo().Assembly); 
+	assembliesToInclude.Add(typeof(Syncfusion.XForms.UWP.Buttons.SfChipRenderer).GetTypeInfo().Assembly); 
 
-			Xamarin.Forms.Forms.Init(e, assembliesToInclude); 
-		} 
-		… 
-	}
+		Xamarin.Forms.Forms.Init(e, assembliesToInclude); 
+	} 
+	… 
+}
 	
 {% endhighlight %}
 
@@ -99,19 +99,19 @@ To deploy the `SfChipGroup` in `Release` mode, you need to initialize the SfChip
 {% highlight c# %}
 
 	// In App.xaml.cs 
-	protected override void OnLaunched(LaunchActivatedEventArgs e)
+protected override void OnLaunched(LaunchActivatedEventArgs e)
+{ 
+	… 
+	if (rootFrame == null) 
 	{ 
-		… 
-		if (rootFrame == null) 
-		{ 
-			List<Assembly> assembliesToInclude = new List<Assembly>();
+		List<Assembly> assembliesToInclude = new List<Assembly>();
 
-		assembliesToInclude.Add(typeof(Syncfusion.XForms.UWP.Buttons.SfChipGroupRenderer).GetTypeInfo().Assembly); 
+	assembliesToInclude.Add(typeof(Syncfusion.XForms.UWP.Buttons.SfChipGroupRenderer).GetTypeInfo().Assembly); 
 
-			Xamarin.Forms.Forms.Init(e, assembliesToInclude); 
-		} 
-		… 
-	}
+		Xamarin.Forms.Forms.Init(e, assembliesToInclude); 
+	} 
+	… 
+}
 	
 {% endhighlight %}
 
@@ -193,19 +193,23 @@ The chips control creates chip for each object and arranges chips in a StackLayo
 {% highlight xaml %}
 
 <ContentPage
-xmlns="http://xamarin.com/schemas/2014/forms"
-xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
-xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-xmlns:local="clr-namespace:Chips"
-x:Class="Chips.GettingStarted">
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:local="clr-namespace:Chips"
+	x:Class="Chips.GettingStarted">
 	<ContentPage.Content>
 		<Grid>
 			<buttons:SfChipGroup>
 				<buttons:SfChipGroup.ChipLayout>
-				<FlexLayout 
-					Direction="Row" 
-					Wrap="Wrap" 
-					AlignContent="Start"/>
+					<FlexLayout 
+						HorizontalOptions="Start" 
+						VerticalOptions="Center" 
+						Direction="Row" 
+						Wrap="Wrap"
+						JustifyContent="Start"
+						AlignContent="Start" 
+						AlignItems="Start"/>
 				</buttons:SfChipGroup.ChipLayout>
 			</buttons:SfChipGroup> 
 		</Grid>
@@ -230,10 +234,14 @@ namespace Chips
 			SfChipGroup chipGroup = new SfChipGroup();
 			grid.Children.Add(chipGroup);
 			FlexLayout layout = new FlexLayout()
-			{  
+			{
 				Direction = FlexDirection.Row,
 				Wrap = FlexWrap.Wrap,
-				AlignContent =  FlexAlignContent.Start,
+				HorizontalOptions = LayoutOptions.Start,
+				VerticalOptions = LayoutOptions.Center,
+				AlignContent = FlexAlignContent.Start,
+				JustifyContent = FlexJustify.Start,
+				AlignItems = FlexAlignItems.Start,
 			};
 			chipGroup.ChipLayout = layout;
 			this.Content = grid;
@@ -320,11 +328,11 @@ Create an instance of ViewModel class,and then set it as the `BindingContext`. B
 {% highlight xaml %}
 
 <ContentPage
-    xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:Chips"
-    x:Class="Chips.GettingStarted">
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:local="clr-namespace:Chips"
+	x:Class="Chips.GettingStarted">
 	<ContentPage.BindingContext>
 		<local:ViewModel x:Name="viewModel"/>
 	</ContentPage.BindingContext>
@@ -389,13 +397,11 @@ namespace Chips
 
 {% endtabs %}
 
-N> `ImageMemberPath` property specifies the image hold property's path in which filtering is done on business objects.
-
 ![ChipGroup sample with display member path and itemsSource demo](images/getting_started/getting_started.png)
 
 ## Set types of chip group
 
-The chips control differs its functionality based on its [Types](https://help.syncfusion.com/xamarin/chips/types). The following code example will explains the `Action` type chip group with displaying the tapped chip's name.
+The chips control differs its functionality based on its [Types](https://help.syncfusion.com/xamarin/chips/types).Default type of chips control is `Input` type. Input typed chips rendered with close button. We can remove the chip from layout and its children collection. The following code example will explains the `Action` type chip group with displaying the tapped chip's text.
 
 
 {% tabs %}
@@ -403,11 +409,11 @@ The chips control differs its functionality based on its [Types](https://help.sy
 {% highlight xaml %}
 
 <ContentPage
-    xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:Chips"
-    x:Class="Chips.GettingStarted">
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:local="clr-namespace:Chips"
+	x:Class="Chips.GettingStarted">
 	<ContentPage.BindingContext>
 		<local:ViewModel/>
 	</ContentPage.BindingContext>
@@ -418,10 +424,16 @@ The chips control differs its functionality based on its [Types](https://help.sy
 				ItemsSource="{Binding Employees}"
 				Type="Action">
 			</buttons:SfChipGroup>
-			 <StackLayout Orientation="Horizontal">
-				<Label Text="Name:" FontAttributes="Bold" FontSize="14" />
-				<Label Text="{Binding Result}" FontAttributes="Bold" FontSize="14" />
-            </StackLayout>
+			<StackLayout Orientation="Horizontal">
+			<Label 
+				Text="Name:" 
+				FontAttributes="Bold" 
+				FontSize="14" />
+			<Label 
+				Text="{Binding Result}"
+				FontAttributes="Bold" 
+				FontSize="14" />
+			</StackLayout>
 		</StackLayout>  
 	</ContentPage.Content>
 </ContentPage>
@@ -440,15 +452,15 @@ namespace Chips
 		{
 			InitializeComponent();
 			StackLayout stackLayout = new StackLayout();
-            var chipGroup = new SfChipGroup();
-            chipGroup.SetBinding(SfChipGroup.CommandProperty, "ActionCommand");
-            chipGroup.Type = SfChipsType.Action;
-            stackLayout.Children.Add(chipGroup);
-            stackLayout.Children.Add(new Label() { Text = "Name:", FontAttributes = FontAttributes.Bold });
-            var resultLabel = new Label() { Text = "Name:", FontAttributes = FontAttributes.Bold };
-            resultLabel.SetBinding(Label.TextProperty, "Result");
-            stackLayout.Children.Add(resultLabel);
-            this.Content = stackLayout;
+			var chipGroup = new SfChipGroup();
+			chipGroup.SetBinding(SfChipGroup.CommandProperty, "ActionCommand");
+			chipGroup.Type = SfChipsType.Action;
+			stackLayout.Children.Add(chipGroup);
+			stackLayout.Children.Add(new Label() { Text = "Name:", FontAttributes = FontAttributes.Bold });
+			var resultLabel = new Label() { Text = "Name:", FontAttributes = FontAttributes.Bold };
+			resultLabel.SetBinding(Label.TextProperty, "Result");
+			stackLayout.Children.Add(resultLabel);
+			this.Content = stackLayout;
 		}
 	}
 }

@@ -75,7 +75,7 @@ border.BorderWidth = 12;
 
 You can customize the corner radius of the border on four sides using the `CornerRadius` property with type as `Thickness`.
 
-% tabs %}
+{% tabs %}
 {% highlight xaml %}
 
 <border:SfBorder x:Name="border" CornerRadius="0,10,10,0"/>

@@ -88,7 +88,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 ## Creating a project
 
-Create a new BlankApp (Xamarin.Forms.Portable) application in Xamarin Studio or Visual Studio for Xamarin.Forms.
+Create a new blank app (.Net standard project) application in Xamarin Studio or Visual Studio for Xamarin.Forms.
 
 1. Add the required assembly references to the pcl and renderer projects as discussed in the [Assembly deployment](#assembly-deployment) section.
 
@@ -99,22 +99,19 @@ Create a new BlankApp (Xamarin.Forms.Portable) application in Xamarin Studio or 
 {% tabs %}
 {% highlight xaml %}
 
-<StackLayout>     
 <Grid>
-<border:SfBorder WidthRequest="80"
- HeightRequest="30"
- CornerRadius="20"
- VerticalOptions="Center"
- HorizontalOptions="Center"
- BorderColor="Red"
- BorderWidth="3">
-<Label Text="Rose" 
- TextColor="Black" BackgroundColor="#ffb6c1"
- Font="15" WidthRequest="80" HeightRequest="30" VerticalOptions="Center"
- HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+<border:SfBorder 
+   BorderColor="Red"
+   BackgroundColor="#ffb6c1" 
+   HorizontalOptions="Center" 
+   VerticalOptions="Center"
+   BorderWidth="3">
+<Label 
+  Text="Rose" 
+  Margin="10" 
+  Font="15"  />
 </border:SfBorder>
 </Grid>
-</StackLayout>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -130,34 +127,23 @@ namespace BorderGettingStarted
         public MainPage()
         {
             InitializeComponent();
-            StackLayout stack = new StackLayout();
-            Grid mainGrid = new Grid();
-            RowDefinition firstRow = new RowDefinition();
-            firstRow.Height = 70;
-            mainGrid.RowDefinitions.Add(firstRow);
             
+            Grid mainGrid = new Grid();
+            
+			// Create Border control
             SfBorder border = new SfBorder();
-            border.HeightRequest = 30;
-            border.CornerRadius = 20;
-            border.VerticalOptions = LayoutOptions.Start;
+            border.VerticalOptions = LayoutOptions.Center;
             border.HorizontalOptions = LayoutOptions.Center;
             border.BorderColor = Color.Red;
-            border.BorderWidth = 3;
-            Grid.SetRow(border, 0);
+			border.BackgroundColor = Color.FromHex("#ffb6c1");
+			
+			//Create Label control
             Label label = new Label();
             label.Text = "Rose";
-            label.TextColor = Color.Black;
-            label.BackgroundColor = Color.FromHex("#ffb6c1");
             label.FontSize = 15;
-            label.WidthRequest = 80;
-            label.HeightRequest = 30;
-            label.VerticalOptions = LayoutOptions.Center;
-            label.HorizontalOptions = LayoutOptions.Center;
-            label.HorizontalTextAlignment = TextAlignment.Center;
-            label.VerticalTextAlignment = TextAlignment.Center;
+            
             border.Content = label;
             mainGrid.Children.Add(border);
-            stack.Children.Add(mainGrid);
             this.Content = stack;
         }
     }

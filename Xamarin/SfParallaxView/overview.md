@@ -16,6 +16,6 @@ The SfParallaxView control binds the scroll position of a foreground element (e.
 * Customizes the speed of the parallax scroll.
 * Supports horizontal and vertical orientation.
 * Provides built-in integration with SfListView and SfRotator.
-* Binds any control that implements the IParallaxView interface.
+* Bind any control which implements IParallaxView interface.
 
 ![SfParallaxView](ParallaxView_Images/parallaxview.gif)

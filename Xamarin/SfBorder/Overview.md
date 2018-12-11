@@ -9,7 +9,7 @@ documentation : ug
 
 # Overview
 
-The new Border control is a container control that allows you to apply borders, backgrounds, border widths, and corner radii.
+The Border control is a container control that allows you to apply borders, backgrounds, border widths, and corner radii.
 
 ## Key Features
 

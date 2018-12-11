@@ -15,7 +15,7 @@ To provide a compact view of complex data like business object, use the `ItemsSo
 
 Syncfusion Chips control in Xamarin.Forms provides support to create and add SfChip as items to be set in the `Items` property of SfChipGroup. The following code example explains the way to create items as SfChip
 
-% tabs %}
+{% tabs %}
 
 {% highlight xaml %}
 

@@ -284,7 +284,7 @@ The following code sample gives you the complete code for badge view with badge 
         <ContentPage.Content>
             <badge:SfBadgeView BadgeText="20+">
                 <badge:SfBadgeView.Content>
-                    <Image Source="BadgeWhatsApp.png"/>
+                    <Image Source="BadgeWhatsApp.png" HeightRequest="200" WidthRequest="200"/>
                 </badge:SfBadgeView.Content>
                 <badge:SfBadgeView.BadgeSettings>
                     <badge:BadgeSetting BadgeType="Error" BadgePosition="TopRight" 
@@ -321,6 +321,8 @@ namespace GettingStarted
             //Adding the image to the content of the badge view.
             Image image = new Image();
             image.Source = "BadgeWhatsApp.png";
+            image.HeightRequest = 200;
+            image.WidthRequest = 200;
             sfBadgeView.Content = image;
 
             //Adding the badge type, position, and icon of the badge view.

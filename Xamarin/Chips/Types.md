@@ -9,30 +9,30 @@ documentation : ug
 
 # Set type for the chip group
 
-No operations can be performed in a chip group unless Type property is set. The chips control provides four different types, and each has its own functionality. The types are 
+No operation can be performed in a chip group unless the Type property is set. The chips control provides four different types, and each has its own functionality. The types are,
 
 * Action
 * Choice
 * Filter 
-* Input chips.
+* Input
 
 ## Input:
 
-Arrange the chips in layout and enables close button for each chip. Using the close button, a chip can be removed from children and layout as well. It additionally has support to add an optional `InputView` at the end of the layout, from that user can obtain chip text for creating a chip at runtime.
+Arranges the chips in a layout and enables the close button for each chip. Using the close button, a chip can be removed from children and layout as well. It additionally has support to add an optional `InputView` at the end of the layout, from which users can obtain the chip text for creating a chip at run time.
 
 ## Choice:
 
-Allows user select a single chip from a group of items. Selecting a chip will automatically, unselect the previously selected chips. Selected chip color can be customized by `SelectedChipBackgroundColor` and `SelectedChipTextColor` properties. The `SelectedItem`property holds the instance of recently selected chip.
+Allows users to select a single chip from a group of items. Selecting a chip will automatically deselect the previously selected chips. The selected chip color can be customized using the `SelectedChipBackgroundColor` and `SelectedChipTextColor` properties. The `SelectedItem` property holds the instance of recently selected chip.
 
 ## Filter:
 
-Allows user to select more than one chip in a group of chips. Selected chips are indicated by selection indicator in this type. Selection indicator can be customized using `SelectionIndicatorColor` property. Use the `SelectedItems` property to get the list of selected chips.
+Allows users to select more than one chip in a group of chips. The selected chips are indicated by selection indicator in this type. The selection indicator can be customized using the `SelectionIndicatorColor` property. Use the `SelectedItems` property to get the list of selected chips.
 
 ## Action:
 
 Executes the `Command` of ChipGroup and raises the Clicked event when a chip is clicked.
 
-In this example, the Input chip is used to add employee at run time. To get the employee name as input, an entry is added as `InputView`: 
+In this example, the Input chip is used to add an employee at run time. To get the employee name as input, an entry is added as `InputView`.
 
 {% tabs %}
 

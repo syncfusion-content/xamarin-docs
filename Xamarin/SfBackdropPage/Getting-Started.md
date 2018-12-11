@@ -182,7 +182,7 @@ Similarly, to conceal the back layer, set the `IsBackLayerRevealed` property to 
 {% highlight C# %} 
 
 Var backdrop = new SfBackdropPage();
-Backdrop.IsBackLayerRevealed = false;
+backdrop.IsBackLayerRevealed = false;
 
 {% endhighlight %}
 

@@ -95,7 +95,7 @@ namespace BackdropGettingStarted
     {
         public BackdropSample()
         {
-     
+            InitializeComponent();
         }
     }
 }

@@ -214,17 +214,12 @@ Similarly, to conceal the back layer, set the `IsBackLayerRevealed` property to 
 
 {% highlight C# %} 
 
-using Syncfusion.XForms.Backdrop;
-namespace BackdropGettingStarted
+#region Constructor
+public BackdropSample()
 {
-    public class BackdropSample : SfBackdropPage
-    {
-        public BackdropSample()
-        {
-            this.IsBackLayerRevealed = true;
-        }
-    }
+    this.IsBackLayerRevealed = true;
 }
+#endregion
 
 {% endhighlight %}
 

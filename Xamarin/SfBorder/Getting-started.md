@@ -11,42 +11,20 @@ documentation: ug
 
 This section provides an overview for working with the SfBorder control for Xamarin.Forms and explains the entire process of creating a real-world application.
 
-## Assembly deployment
-
-After installing Essential Studio for Xamarin.Forms, find all the required assemblies in the installation folders: {Syncfusion Essential Studio Installed location}\Essential Studio\{{ site.releaseversion }}\Xamarin\lib.
-
-E.g.: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Xamarin\lib.
-
-N> Assemblies can be found in an unzipped package location in Mac.
-
-## NuGet configuration
-
-To install the required NuGet for the SfBorder control in an application, configure the NuGet packages of Syncfusion components.
-
-Refer to the following KB to configure the NuGet packages of the Syncfusion components:
-
-[How to configure package source and install Syncfusion NuGet packages in an existing project?](https://www.syncfusion.com/kb/7441/how-to-configure-package-source-and-install-syncfusion-nuget-packages-in-an-existing-project)
-
-The following NuGet package should be installed to use the SfBorder control in an application.
-
-<table>
-<tr>
-<th> Project </th>
-<th> Required package </th>
-</tr>
-<tr>
-<td> Xamarin.Forms </td>
-<td> Syncfusion.Xamarin.Core</td>
-</tr>
-</table>
-
 ### Adding SfBorder reference
 
-Syncfusion components for Xamarin.Forms are available in [nuget.org](https://www.nuget.org/). To add SfBorder to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.Core](https://www.nuget.org/packages/Syncfusion.Xamarin.Core/), and then install it.
+Syncfusion components for Xamarin.Forms are available in [nuget.org](https://www.nuget.org). To add the text input layout control to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.Core](https://www.nuget.org/packages/Syncfusion.Xamarin.Core), and then install it.
 
-To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). If you prefer to manually refer the assemblies instead of NuGet, refer to this [documentation](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfborder) to know about the dependent assemblies required for adding for SfBorder.
+![Xamarin Forms SfBorder Nuget reference](images/Xamarin_Forms_Border_Nuget.png)
 
-## Launching SfBorder on each platform
+To learn more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows).
+
+
+N> Install the same version of the core NuGet in all the projects. The text input layout control will be available in core NuGet from v16.3.0.x onwards.
+
+I> From v16.2.0.x, you have to include a license key in your project if you reference Syncfusion assemblies from the trial setup or NuGet feed. Please refer to this [documentation](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your Xamarin applications and using our components.
+
+## Launching an application on each platform with SfBorder.
 
 To use the SfBorder control inside an application, each platform application must initialize the SfBorder renderer. This initialization step varies from platform to platform and is discussed in the following sections:
 
@@ -110,7 +88,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 ## Creating a project
 
-Create a new BlankApp (Xamarin.Forms.Portable) application in Xamarin Studio or Visual Studio for Xamarin.Forms.
+Create a new blank app (.Net standard project) application in Xamarin Studio or Visual Studio for Xamarin.Forms.
 
 1. Add the required assembly references to the pcl and renderer projects as discussed in the [Assembly deployment](#assembly-deployment) section.
 
@@ -121,27 +99,19 @@ Create a new BlankApp (Xamarin.Forms.Portable) application in Xamarin Studio or 
 {% tabs %}
 {% highlight xaml %}
 
-<StackLayout>     
 <Grid>
-<Grid.RowDefinitions>
-<RowDefinition Height="70"/>
-</Grid.RowDefinitions>
-<border:SfBorder x:Name="border" Grid.Row="0" WidthRequest="80"
- HeightRequest="30"
- CornerRadius="20"
- VerticalOptions="Start"
- HorizontalOptions="Center"
- BorderColor="Red"
- BorderWidth="3">
-<border:SfBorder.Content>
-<Label Text="Rose" 
- TextColor="Black" BackgroundColor="#ffb6c1"
- Font="15" WidthRequest="80" HeightRequest="30" VerticalOptions="Center"
- HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
-</border:SfBorder.Content>
+<border:SfBorder 
+   BorderColor="Red"
+   BackgroundColor="#ffb6c1" 
+   HorizontalOptions="Center" 
+   VerticalOptions="Center"
+   BorderWidth="3">
+<Label 
+  Text="Rose" 
+  Margin="10" 
+  Font="15"  />
 </border:SfBorder>
 </Grid>
-</StackLayout>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -157,34 +127,23 @@ namespace BorderGettingStarted
         public MainPage()
         {
             InitializeComponent();
-            StackLayout stack = new StackLayout();
-            Grid mainGrid = new Grid();
-            RowDefinition firstRow = new RowDefinition();
-            firstRow.Height = 70;
-            mainGrid.RowDefinitions.Add(firstRow);
             
+            Grid mainGrid = new Grid();
+            
+			// Create Border control
             SfBorder border = new SfBorder();
-            border.HeightRequest = 30;
-            border.CornerRadius = 20;
-            border.VerticalOptions = LayoutOptions.Start;
+            border.VerticalOptions = LayoutOptions.Center;
             border.HorizontalOptions = LayoutOptions.Center;
             border.BorderColor = Color.Red;
-            border.BorderWidth = 3;
-            Grid.SetRow(border, 0);
+			border.BackgroundColor = Color.FromHex("#ffb6c1");
+			
+			//Create Label control
             Label label = new Label();
             label.Text = "Rose";
-            label.TextColor = Color.Black;
-            label.BackgroundColor = Color.FromHex("#ffb6c1");
             label.FontSize = 15;
-            label.WidthRequest = 80;
-            label.HeightRequest = 30;
-            label.VerticalOptions = LayoutOptions.Center;
-            label.HorizontalOptions = LayoutOptions.Center;
-            label.HorizontalTextAlignment = TextAlignment.Center;
-            label.VerticalTextAlignment = TextAlignment.Center;
+            
             border.Content = label;
             mainGrid.Children.Add(border);
-            stack.Children.Add(mainGrid);
             this.Content = stack;
         }
     }

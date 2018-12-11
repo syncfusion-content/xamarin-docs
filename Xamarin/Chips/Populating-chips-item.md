@@ -7,13 +7,13 @@ control : Chips
 documentation : ug
 ---
 
-## Populating the Business Objects
+## Populating business objects
 
-To provide a compact view of complex data like business object, use the `ItemsSource` property with supports used to bind different source of objects. Please refer to this [documentation](https://help.syncfusion.com/xamarin/chips/getting-started#set-layout-for-the-control) for more details.
+To provide a compact view of complex data like business object, use the `ItemsSource` property with supports used to bind different source of objects. Refer to this [documentation](https://help.syncfusion.com/xamarin/chips/getting-started#set-layout-for-the-control) for more details.
 
-## Populating the SfChip
+## Populating SfChip
 
-Syncfusion Chips control in Xamarin.Forms provides support to create and add SfChip as items to be set in the `Items` property of SfChipGroup. The following code example explains the way to create items as SfChip
+Syncfusion Chips control for Xamarin.Forms provides support to create and set SfChip as an item in the `Items` property of SfChipGroup. The following code sample demonstrates how to create an item as SfChip.
 
 {% tabs %}
 

@@ -158,24 +158,24 @@ The front layer always appears in front of the back layer. It is displayed to th
 
 {% highlight xaml %} 
 
-<backdrop:SfBackdropPage>
-        <backdrop:SfBackdropPage.FrontLayer>
-            <backdrop:BackdropFrontLayer>
-                <Grid />
-            </backdrop:BackdropFrontLayer>
-        </backdrop:SfBackdropPage.FrontLayer>
-</backdrop:SfBackdropPage>
- 
+<backdrop:SfBackdropPage.FrontLayer>
+        <backdrop:BackdropFrontLayer>
+            <Grid BackgroundColor="WhiteSmoke" VerticalOptions="FillAndExpand" />
+        </backdrop:BackdropFrontLayer>
+</backdrop:SfBackdropPage.FrontLayer> 
 
 {% endhighlight %}
 
 {% highlight C# %} 
 
-var backdrop = new SfBackdropPage();
-var backdropFrontLayer = new BackdropFrontLayer();
-backdropFrontLayer = new Grid();
-backdrop.FrontLayer = backdropFrontLayer;
-
+this.FrontLayer = new BackdropFrontLayer()
+            {
+                Content = new Grid
+                {
+                    BackgroundColor = Color.WhiteSmoke,
+                    VerticalOptions = LayoutOptions.FillAndExpand
+                }
+            };
 
 {% endhighlight %}
 
@@ -191,15 +191,28 @@ Similarly, to conceal the back layer, set the `IsBackLayerRevealed` property to 
 
 {% highlight xaml %} 
 
-<backdrop:SfBackdropPage IsBackLayerRevealed = “false”>
-</backdrop:SfBackdropPage>
+<backdrop:SfBackdropPage  xmlns="http://xamarin.com/schemas/2014/forms"
+                          xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                          xmlns:backdrop="clr-namespace:Syncfusion.XForms.Backdrop;assembly=Syncfusion.SfBackdrop.XForms"
+                          x:Class="BackdropGettingStarted.BackdropSample"
+                          IsBackLayerRevealed="True"
+                          >
  
 {% endhighlight %}
 
 {% highlight C# %} 
 
-Var backdrop = new SfBackdropPage();
-backdrop.IsBackLayerRevealed = false;
+using Syncfusion.XForms.Backdrop;
+namespace BackdropGettingStarted
+{
+    public class BackdropSample : SfBackdropPage
+    {
+        public BackdropSample()
+        {
+            this.IsBackLayerRevealed = true;
+        }
+    }
+}
 
 {% endhighlight %}
 

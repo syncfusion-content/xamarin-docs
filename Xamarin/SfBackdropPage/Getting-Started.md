@@ -78,10 +78,10 @@ Create a page and import the SfBackdropPage namespace along with [XAML namespace
 
 <?xml version="1.0" encoding="UTF-8"?>
 <backdrop:SfBackdropPage  xmlns="http://xamarin.com/schemas/2014/forms"
-        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-        x:Class="GettingStarted.Backdrop" 
-        xmlns:backdrop="clr-namespace:Syncfusion.XForms.Backdrop;assembly=Syncfusion.SfBackdrop.XForms"
-        >		
+                          xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                          xmlns:backdrop="clr-namespace:Syncfusion.XForms.Backdrop;assembly=Syncfusion.SfBackdrop.XForms"
+                          x:Class="BackdropGettingStarted.BackdropSample"
+                          >
 </backdrop:SfBackdropPage>
 
 {% endhighlight %}
@@ -89,13 +89,13 @@ Create a page and import the SfBackdropPage namespace along with [XAML namespace
 {% highlight C# %} 
 
 using Syncfusion.XForms.Backdrop;
-namespace GettingStarted
+namespace BackdropGettingStarted
 {
-    public partial class Backdrop : SfBackdropPage
+    public partial class BackdropSample : SfBackdropPage
     {
-        public Backdrop()
+        public BackdropSample()
         {
-            InitializeComponent();
+     
          }
     }
 }
@@ -111,23 +111,40 @@ The back layer holds actionable content (navigation or filtration), which is rel
 
 {% highlight xaml %} 
 
-<backdrop:SfBackdropPage>
-        <backdrop:SfBackdropPage.BackLayer>
-            <backdrop:BackdropBackLayer>
-                <Grid />
-            </backdrop:BackdropBackLayer>
-        </backdrop:SfBackdropPage.BackLayer>
-</backdrop:SfBackdropPage>
- 
+<backdrop:SfBackdropPage.BackLayer>
+        <backdrop:BackdropBackLayer>
+            <StackLayout>
+                <ListView>
+                    <ListView.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Appetizers</x:String>
+                            <x:String>Soups</x:String>
+                            <x:String>Desserts</x:String>
+                            <x:String>Salads</x:String>
+                        </x:Array>
+                    </ListView.ItemsSource>
+                </ListView>
+            </StackLayout>
+        </backdrop:BackdropBackLayer>
+ </backdrop:SfBackdropPage.BackLayer> 
 
 {% endhighlight %}
 
 {% highlight C# %} 
 
-var backdrop = new SfBackdropPage();
-var backdropBackLayer = new BackdropBackLayer();
-backdropBackLayer = new Grid();
-backdrop.BackLayer = backdropBackLayer;
+this.BackLayer = new BackdropBackLayer
+            {
+                Content = new StackLayout
+                {
+                    Children =
+                      {
+                          new ListView
+                          {
+                              ItemsSource = new string[] { "Appetizers", "Soups", "Desserts" ,"Salads"}
+                          }
+                      }
+                }
+            };
 
 
 {% endhighlight %}

@@ -18,13 +18,23 @@ You can customize the color of the border using the `BorderColor` property.
 {% tabs %}
 {% highlight xaml %}
 
-<border:SfBorder x:Name="border" BorderColor = "Red"/>
+<border:SfBorder x:Name="border" BorderColor = "Red"  CornerRadius="20" BorderWidth="3">
+ <Label Text="James Williamson" 
+ TextColor="Black"/>
+</border:SfBorder>
 
 {% endhighlight %}
 {% highlight c# %}
 
 SfBorder border = new SfBorder();
+border.CornerRadius = 20;
 border.BorderColor = Color.Red;
+border.BorderWidth = 3;
+Label label = new Label();
+label.Text = "James Williamson";
+label.TextColor = Color.Black;
+border.Content = label;
+this.Content = border;
 
 {% endhighlight %}
 {% endtabs %}
@@ -38,13 +48,24 @@ The background color of the border control can be customized using the `Backgrou
 {% tabs %}
 {% highlight xaml %}
 
-<border:SfBorder x:Name="border" BackgroundColor = "Green"/>
+<border:SfBorder x:Name="border" BorderColor = "Red" BackgroundColor= "Green" CornerRadius="20" BorderWidth="3">
+ <Label Text="James Williamson" 
+ TextColor="Black"/>
+</border:SfBorder>
 
 {% endhighlight %}
 {% highlight c# %}
 
 SfBorder border = new SfBorder();
+border.CornerRadius = 20;
+border.BorderColor = Color.Red;
+border.BorderWidth = 3;
+Label label = new Label();
+label.Text = "James Williamson";
+label.TextColor = Color.Black;
+border.Content = label;
 border.BackgroundColor = Color.Green;
+this.Content = border;
 
 {% endhighlight %}
 {% endtabs %}
@@ -58,13 +79,24 @@ You can customize the thickness of the border using the `BorderWidth` property.
 {% tabs %}
 {% highlight xaml %}
 
-<border:SfBorder x:Name="border" BorderWidth = "12"/>
+<border:SfBorder x:Name="border" BorderColor = "Red" CornerRadius="20" BorderWidth="12">
+ <Label Text="James Williamson" 
+ TextColor="Black"/>
+</border:SfBorder>
 
 {% endhighlight %}
 {% highlight c# %}
 
 SfBorder border = new SfBorder();
+border.CornerRadius = 20;
+border.BorderColor = Color.Red;
 border.BorderWidth = 12;
+Label label = new Label();
+label.Text = "James Williamson";
+label.TextColor = Color.Black;
+border.Content = label;
+this.Content = border;
+
 
 {% endhighlight %}
 {% endtabs %}
@@ -78,13 +110,23 @@ You can customize the corner radius of the border on four sides using the `Corne
 {% tabs %}
 {% highlight xaml %}
 
-<border:SfBorder x:Name="border" CornerRadius="0,10,10,0"/>
+<border:SfBorder x:Name="border" BorderColor = "Red" CornerRadius="0,10,10,0" BorderWidth="12">
+ <Label Text="James Williamson" 
+ TextColor="Black"/>
+</border:SfBorder>
 
 {% endhighlight %}
 {% highlight c# %}
 
 SfBorder border = new SfBorder();
 border.CornerRadius =  new Thickness (0,10,10,0);
+border.BorderColor = Color.Red;
+border.BorderWidth = 12;
+Label label = new Label();
+label.Text = "James Williamson";
+label.TextColor = Color.Black;
+border.Content = label;
+this.Content = border;
 
 {% endhighlight %}
 {% endtabs %}

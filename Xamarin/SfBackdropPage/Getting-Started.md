@@ -130,7 +130,7 @@ public App()
 {% endhighlight %}
 
 >**NOTE**
-The backdrop page header can be available only when adding the [`NavigationPage`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.navigationpage?view=xamarin-forms) as a parent of backdrop page.
+The backdrop page header can appear only when adding the [`NavigationPage`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.navigationpage?view=xamarin-forms) as a parent of backdrop page.
  
 ## Add back layer content
 The back layer holds actionable content (navigation or filtration), which is relevant to the front layer. The back layer will either fill the entire background or occupy the background based on the content height.

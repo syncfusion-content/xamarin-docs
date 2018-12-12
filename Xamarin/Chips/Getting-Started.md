@@ -9,7 +9,7 @@ documentation : ug
 
 # Getting started
 
-This section explains the steps required to create chips and arrange them in a layout for selection. This section covers only the minimal features that you needed to know to get started with the chips.
+This section explains the steps required to create chips and arrange them in a layout for performing action. This section covers only the minimal features that you needed to know to get started with the chips.
 
 ## Adding chips reference
 

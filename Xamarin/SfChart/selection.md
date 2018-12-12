@@ -73,7 +73,7 @@ N> For Accumulation series like pie, doughnut, pyramid and funnel, when you sele
 
 ## Series Selection
 
-Series selection is used in case of multiple series when you want to highlight a particular series. Series Selection can be enabled by setting [`EnableSeriesSelection`]() property to True. The [`SeriesSelectionColor`]() property is used to set the color to highlight the series.
+Series selection is used in case of multiple series when you want to highlight a particular series. Series Selection can be enabled by setting [`EnableSeriesSelection`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~EnableSeriesSelection.html) property to True. The [`SeriesSelectionColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~SeriesSelectionColor.html) property is used to set the color to highlight the series.
 
 {% tabs %} 
 
@@ -163,7 +163,7 @@ The [`SelectionChanging`](https://help.syncfusion.com/cr/cref_files/xamarin/Sync
 * [`SelectedSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionEventArgs~SelectedSeries.html#) – used to get the series of selected data point.
 * [`SelectedDataPointIndex`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionEventArgs~SelectedDataPointIndex.html#) – used to get the selected data point index.
 * [`PreviousSelectedIndex`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionEventArgs~PreviousSelectedIndex.html#) – used to get the previous selected data point index.
-* [`PreviousSelectedSeries`]() - used to get the previous selected series. 
+* [`PreviousSelectedSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionEventArgs~PreviousSelectedSeries.html) - used to get the previous selected series. 
 * [`Cancel`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionChangingEventArgs~Cancel.html#) – used to set the value indicating whether the selection should be canceled.
 
 **SelectionChanged**
@@ -173,7 +173,7 @@ The [`SelectionChanged`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncf
 * [`SelectedSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionEventArgs~SelectedSeries.html#) - Gets the series of selected data point.
 * [`SelectedDataPointIndex`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionEventArgs~SelectedDataPointIndex.html#) - Gets the selected data point index.
 * [`PreviousSelectedIndex`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionEventArgs~PreviousSelectedIndex.html#) - Gets the previous selected data point index.
-* [`PreviousSelectedSeries`]() - Gets the previous selected series.
+* [`PreviousSelectedSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionEventArgs~PreviousSelectedSeries.html) - Gets the previous selected series.
 
 ## Methods
 
@@ -184,7 +184,7 @@ The [`OnSelectionChanging`](https://help.syncfusion.com/cr/cref_files/xamarin/Sy
 * [`SelectedSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionEventArgs~SelectedSeries.html#) - Gets the series of selected data point.
 * [`SelectedDataPointIndex`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionEventArgs~SelectedDataPointIndex.html#) - Gets the selected data point index.
 * [`PreviousSelectedIndex`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionEventArgs~PreviousSelectedIndex.html#) - Gets the previous selected data point index.
-* [`PreviousSelectedSeries`]() - Gets the previous selected series.
+* [`PreviousSelectedSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionEventArgs~PreviousSelectedSeries.html) - Gets the previous selected series.
 * [`Cancel`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionChangingEventArgs~Cancel.html#) -Sets the value that indicates whether the selection should be canceled.
 
 {% highlight c# %}
@@ -209,7 +209,7 @@ The [`OnSelectionChanged`](https://help.syncfusion.com/cr/cref_files/xamarin/Syn
 * [`SelectedSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionEventArgs~SelectedSeries.html#) - Gets the series of selected data point.
 * [`SelectedDataPointIndex`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionEventArgs~SelectedDataPointIndex.html#) - Gets the selected data point index.
 * [`PreviousSelectedIndex`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionEventArgs~PreviousSelectedIndex.html#) - Gets the previous selected data point index.
-* [`PreviousSelectedSeries`]() - Gets the previous selected series.
+* [`PreviousSelectedSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionEventArgs~PreviousSelectedSeries.html) - Gets the previous selected series.
 
 {% highlight c# %}
 

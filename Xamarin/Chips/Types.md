@@ -7,7 +7,7 @@ control : Chips
 documentation : ug
 ---
 
-# Set type for the chip group
+# Set the type for chip group
 
 No operation can be performed in a chip group unless the Type property is set. The chips control provides four different types, and each has its own functionality. The types are,
 

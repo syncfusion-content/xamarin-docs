@@ -186,7 +186,7 @@ namespace Chips
 
 ## Set layout for the control
 
-The chips control creates chip for each object and arranges chips in a StackLayout with horizontal orientation. Any layout can be used to arrange the chips in the chips control.In the following example, the `FlexLayout` has been used. 
+The chips control creates chip for each object and arranges chips in a StackLayout with horizontal orientation. Any layout can be used to arrange the chips in the chips control.Any layout can be used to arrange the chips in the chips control using `ChipLayout` property.In the following example, the `FlexLayout` has been used. 
 
 {% tabs %}
 

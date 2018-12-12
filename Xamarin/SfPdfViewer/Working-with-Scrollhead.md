@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Working with ScrollHead
+title:  Working with ScrollHead | Syncfusion
 description: Working with ScrollHead
 platform: Xamarin
 control: SfPdfViewer
@@ -40,7 +40,7 @@ By setting the `EnableScrollHead` property of the PdfViewerControl instance to f
 {% tabs %}
 {% highlight c# %}
 
-//Disables the scrollhead
+//Disables the scroll head
 pdfViewerControl.EnableScrollHead = false;             
 
 {% endhighlight %}

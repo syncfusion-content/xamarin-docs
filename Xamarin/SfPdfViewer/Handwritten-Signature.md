@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Working with handwritten signatures
+title:  Working with handwritten signatures | Syncfusion
 description: Working with handwritten signatures
 platform: Xamarin
 control: SfPdfViewer

@@ -29,7 +29,7 @@ To use the chips control inside an application, each platform application requir
 
 ### iOS
 
-#### For SfChip:
+#### For SfChip
 
 To launch the `SfChip` in iOS, call the `SfChipRenderer.Init()` method in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework has been initialized and before the LoadApplication method is called as demonstrated in the following code sample:
 
@@ -48,7 +48,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 	
 {% endhighlight %}
 
-#### For SfChipGroup:
+#### For SfChipGroup
 
 To launch the `SfChipGroup` in iOS, call the `SfChipGroupRenderer.Init()` method in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework has been initialized and before the LoadApplication method is called as demonstrated in the following code sample:
 
@@ -69,7 +69,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ### Universal Windows Platform (UWP)
 
-#### For SfChip:
+#### For SfChip
 
 To deploy the `SfChip` in `Release` mode, you need to initialize the SfChip assemblies in the App.xaml.cs file in the UWP project as shown in the following code sample.
 
@@ -92,7 +92,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 	
 {% endhighlight %}
 
-#### For SfChipGroup:
+#### For SfChipGroup
 
 To deploy the `SfChipGroup` in `Release` mode, you need to initialize the SfChipGroup assemblies in the App.xaml.cs file in the UWP project as shown in the following code sample.
 
@@ -186,7 +186,7 @@ namespace Chips
 
 ## Set layout for the control
 
-The chips control creates chip for each object and arranges chips in a StackLayout with horizontal orientation. Any layout can be used to arrange the chips in the chips control.Any layout can be used to arrange the chips in the chips control using `ChipLayout` property.In the following example, the `FlexLayout` has been used. 
+The chips control creates chip for each object and arranges chips in a StackLayout with horizontal orientation. Any layout can be used to arrange the chips in the chips control.In the following example, the `FlexLayout` has been used. 
 
 {% tabs %}
 
@@ -401,8 +401,7 @@ namespace Chips
 
 ## Set types of chip group
 
-The chips control differs its functionality based on its [Types](https://help.syncfusion.com/xamarin/chips/types).Default type of chips control is `Input` type. Input typed chips rendered with close button. We can remove the chip from layout and its children collection. The following code example will explains the `Action` type chip group with displaying the tapped chip's text.
-
+The functionality of chips control differ based on its [Types] (https://help.syncfusion.com/xamarin/chips/types) property.By default type of chips control have Input type. Input chip types have close button, using it chip can be can removed dynamically from children and the layout. The following code example uses the `Action` type. In Action type, `Command` property of SfChipGroup is executed when any chip in the group is tapped. Here the Employee name of corresponding chip is set as label text when the Command is executed.
 
 {% tabs %}
 
@@ -441,26 +440,86 @@ The chips control differs its functionality based on its [Types](https://help.sy
 {% endhighlight %}
 
 {% highlight c# %}
-using Syncfusion.XForms.Buttons;
+
+using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Windows.Input;
+using Xamarin.Forms;
+
 namespace Chips
 {
-	public partial class GettingStarted: ContentPage
+	public class ViewModel :INotifyPropertyChanged
 	{
-		public GettingStarted()
+		private ICommand actionCommand;
+
+		private ObservableCollection<Person> employees;
+
+		private string result;
+
+		public ICommand ActionCommand
 		{
-			InitializeComponent();
-			StackLayout stackLayout = new StackLayout();
-			var chipGroup = new SfChipGroup();
-			chipGroup.SetBinding(SfChipGroup.CommandProperty, "ActionCommand");
-			chipGroup.Type = SfChipsType.Action;
-			stackLayout.Children.Add(chipGroup);
-			stackLayout.Children.Add(new Label() { Text = "Name:", FontAttributes = FontAttributes.Bold });
-			var resultLabel = new Label() { Text = "Name:", FontAttributes = FontAttributes.Bold };
-			resultLabel.SetBinding(Label.TextProperty, "Result");
-			stackLayout.Children.Add(resultLabel);
-			this.Content = stackLayout;
+			get
+			{
+				return actionCommand;
+			}
+			set
+			{
+				actionCommand = value;
+			}
+		}
+
+		public ObservableCollection<Person> Employees
+		{
+			get
+			{
+				return employees;
+			}
+			set
+			{
+				Employees = value;
+				OnPropertyChanged("Employees");
+			}
+		}
+
+		public string Result
+		{
+			get
+			{
+				return result;
+			}
+			set
+			{
+				result = value;
+				OnPropertyChanged("Result");
+			}
+		}
+
+		public ViewModel()
+		{
+			ActionCommand = new Command(HandleAction);
+			employees = new ObservableCollection<Person>();
+			employees.Add(new Person() { Name = "John" });
+			employees.Add(new Person() { Name = "James" });
+			employees.Add(new Person() { Name = "Linda" });
+			employees.Add(new Person() { Name = "Rose" });
+			employees.Add(new Person() { Name = "Mark" });
+		}
+
+		public event PropertyChangedEventHandler PropertyChanged;
+
+		public void OnPropertyChanged(string property)
+		{
+			if (PropertyChanged != null)
+			{
+				PropertyChanged(this, new PropertyChangedEventArgs(property));
+			}
+		}
+
+		private void HandleAction(object obj)
+		{
+			Result = (obj as Person).Name.ToString();
 		}
 	}
 }

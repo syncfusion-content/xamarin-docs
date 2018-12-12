@@ -9,9 +9,7 @@ documentation : ug
 
 # Overview
 
-The new Border control is a container control that allows you to apply borders, backgrounds, border widths, and corner radii.
-
-![border](images/Xamarin_Forms_Overview.png)
+The Xamarin.Forms Border control is a container control that allows you to apply borders, backgrounds, border width, and corner radii
 
 ## Key Features
 
@@ -20,3 +18,5 @@ The new Border control is a container control that allows you to apply borders, 
 * Implement a circular image.
 
 * Customize all the edges with different corner radii.
+
+![border](images/Xamarin_Forms_Overview.png)

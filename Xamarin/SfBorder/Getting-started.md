@@ -20,7 +20,7 @@ Syncfusion components for Xamarin.Forms are available in [nuget.org](https://w
 To learn more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows).
 
 
-N> Install the same version of the core NuGet in all the projects. The border control will be available in core NuGet from v16.3.0.x onwards.
+N> Install the same version of the core NuGet in all the projects. The border control will be available in core NuGet from v16.4.0.x onwards.
 
 I> From v16.2.0.x, you have to include a license key in your project if you reference Syncfusion assemblies from the trial setup or NuGet feed. Please refer to this [documentation](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your Xamarin applications and using our components.
 

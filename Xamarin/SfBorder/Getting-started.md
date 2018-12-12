@@ -141,21 +141,21 @@ namespace BorderGettingStarted
         public MainPage()
         {
             InitializeComponent();
-            
+
             Grid mainGrid = new Grid();
-            
-			// Create Border control
+
+            // Create Border control
             SfBorder border = new SfBorder();
             border.VerticalOptions = LayoutOptions.Center;
             border.HorizontalOptions = LayoutOptions.Center;
             border.BorderColor = Color.Red;
-			border.BackgroundColor = Color.FromHex("#ffb6c1");
-			
-			//Create Label control
+            border.BackgroundColor = Color.FromHex("#ffb6c1");
+
+            //Create Label control
             Label label = new Label();
             label.Text = "Rose";
             label.FontSize = 15;
-            
+
             border.Content = label;
             mainGrid.Children.Add(border);
             this.Content = stack;

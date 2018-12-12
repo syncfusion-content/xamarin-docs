@@ -15,6 +15,7 @@ This section explains the steps required to configure the backdrop page.
 
 Syncfusion components for Xamarin.Forms are available in [nuget.org](https://www.nuget.org). To add the backdrop page to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfBackdrop](https://www.nuget.org/packages/Syncfusion.Xamarin.SfBackdrop), and then install it.
 
+![Adding Xamarin.Forms Backdrop page reference](Getting-Started_images/NugetReference.png)
 
 To learn more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows).
 
@@ -77,11 +78,12 @@ Create a page and import the SfBackdropPage namespace along with [XAML namespace
 {% highlight xaml %} 
 
 <?xml version="1.0" encoding="UTF-8"?>
-<backdrop:SfBackdropPage  xmlns="http://xamarin.com/schemas/2014/forms"
-                          xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-                          xmlns:backdrop="clr-namespace:Syncfusion.XForms.Backdrop;assembly=Syncfusion.SfBackdrop.XForms"
-                          x:Class="BackdropGettingStarted.BackdropSample"
-                          >
+<backdrop:SfBackdropPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:backdrop="clr-namespace:Syncfusion.XForms.Backdrop;assembly=Syncfusion.SfBackdrop.XForms"
+    x:Class="BackdropGettingStarted.BackdropSamplePage"
+	Title="Menu">
 </backdrop:SfBackdropPage>
 
 {% endhighlight %}
@@ -91,11 +93,12 @@ Create a page and import the SfBackdropPage namespace along with [XAML namespace
 using Syncfusion.XForms.Backdrop;
 namespace BackdropGettingStarted
 {
-    public partial class BackdropSample : SfBackdropPage
+    public partial class BackdropSamplePage : SfBackdropPage
     {
-        public BackdropSample()
+        public BackdropSamplePage()
         {
             InitializeComponent();
+			this.Title = "Menu";
         }
     }
 }
@@ -104,18 +107,31 @@ namespace BackdropGettingStarted
 
 {% endtabs %}
 
+>**NOTE**
+[`Title`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.page.title?view=xamarin-forms) and [`ToolBarItems`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.page.toolbaritems?view=xamarin-forms) properties of the [`Page`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.page?view=xamarin-forms) can used to customize the  appearance of header.
+
 ### Configure header
 Add backdrop page as a children of [`NavigationPage`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.navigationpage?view=xamarin-forms) in App.xaml.cs class. Also, [`BarBackgroundColor`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.navigationpage.barbackgroundcolor?view=xamarin-forms), [`BarTextColor`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.navigationpage.bartextcolor?view=xamarin-forms) and other properties of [`NavigationPage`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.navigationpage?view=xamarin-forms) can be set to customize the default appearance of header.
  
 {% highlight C# %} 
 
-MainPage = new NavigationPage(new BackdropSample());
+// In App.xaml.cs 
+#region Constructor
+
+public App()
+{ 
+   … 
+  MainPage = new NavigationPage(new BackdropSamplePage());
+   … 
+}
+
+#endregion 
 
 {% endhighlight %}
- 
->**NOTE**
-[`Title`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.page.title?view=xamarin-forms) and [`ToolBarItems`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.page.toolbaritems?view=xamarin-forms) properties of the [`Page`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.page?view=xamarin-forms) can used to customize the  appearance of header.
 
+>**NOTE**
+Page header for the backdrop will appear only when adding backdrop as a children of [`NavigationPage`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.navigationpage?view=xamarin-forms).
+ 
 ## Add back layer content
 The back layer holds actionable content (navigation or filtration), which is relevant to the front layer. The back layer will either fill the entire background or occupy the background based on the content height.
 
@@ -145,18 +161,18 @@ The back layer holds actionable content (navigation or filtration), which is rel
 {% highlight C# %} 
 
 this.BackLayer = new BackdropBackLayer
+    {
+        Content = new StackLayout
+        {
+            Children =
             {
-                Content = new StackLayout
+                new ListView
                 {
-                    Children =
-                      {
-                          new ListView
-                          {
-                              ItemsSource = new string[] { "Appetizers", "Soups", "Desserts" ,"Salads"}
-                          }
-                      }
+                    ItemsSource = new string[] { "Appetizers", "Soups", "Desserts" ,"Salads"}
                 }
-            };
+            }
+        }
+    };
 
 
 {% endhighlight %}
@@ -181,13 +197,13 @@ The front layer always appears in front of the back layer. It is displayed to th
 {% highlight C# %} 
 
 this.FrontLayer = new BackdropFrontLayer()
-            {
-                Content = new Grid
-                {
-                    BackgroundColor = Color.WhiteSmoke,
-                    VerticalOptions = LayoutOptions.FillAndExpand
-                }
-            };
+    {
+        Content = new Grid
+        {
+            BackgroundColor = Color.WhiteSmoke,
+            VerticalOptions = LayoutOptions.FillAndExpand
+        }
+    };
 
 {% endhighlight %}
 
@@ -203,19 +219,20 @@ Similarly, to conceal the back layer, set the `IsBackLayerRevealed` property to 
 
 {% highlight xaml %} 
 
-<backdrop:SfBackdropPage  xmlns="http://xamarin.com/schemas/2014/forms"
-                          xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-                          xmlns:backdrop="clr-namespace:Syncfusion.XForms.Backdrop;assembly=Syncfusion.SfBackdrop.XForms"
-                          x:Class="BackdropGettingStarted.BackdropSample"
-                          IsBackLayerRevealed="True"
-                          >
+<backdrop:SfBackdropPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:backdrop="clr-namespace:Syncfusion.XForms.Backdrop;assembly=Syncfusion.SfBackdrop.XForms"
+    x:Class="BackdropGettingStarted.BackdropSamplePage"
+    IsBackLayerRevealed="True">
+</backdrop:SfBackdropPage>
  
 {% endhighlight %}
 
 {% highlight C# %} 
 
 #region Constructor
-public BackdropSample()
+public BackdropSamplePage()
 {
     this.IsBackLayerRevealed = true;
 }

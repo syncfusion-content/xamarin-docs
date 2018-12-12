@@ -46,12 +46,12 @@ The following table lists the platforms supported by our Xamarin.Forms controls.
         </th>
     </tr>
     <tr>
-        <td rowspan="3">
+        <td rowspan="2">
             Android
             <br/>
             <br/>
         </td>
-        <td rowspan="3">
+        <td rowspan="2">
         Phone, Tablet
         <br/>
         <br/>

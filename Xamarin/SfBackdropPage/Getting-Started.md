@@ -83,7 +83,8 @@ Create a page and import the SfBackdropPage namespace along with [XAML namespace
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:backdrop="clr-namespace:Syncfusion.XForms.Backdrop;assembly=Syncfusion.SfBackdrop.XForms"
     x:Class="BackdropGettingStarted.BackdropSamplePage"
-	Title="Menu"></backdrop:SfBackdropPage>
+	Title="Menu">
+</backdrop:SfBackdropPage>
 
 {% endhighlight %}
 
@@ -129,7 +130,7 @@ public App()
 {% endhighlight %}
 
 >**NOTE**
-The bakcdrop page header can be changed only when adding the [`NavigationPage`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.navigationpage?view=xamarin-forms) as a parent of backdrop page.
+The backdrop page header can be available only when adding the [`NavigationPage`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.navigationpage?view=xamarin-forms) as a parent of backdrop page.
  
 ## Add back layer content
 The back layer holds actionable content (navigation or filtration), which is relevant to the front layer. The back layer will either fill the entire background or occupy the background based on the content height.
@@ -223,7 +224,8 @@ Similarly, to conceal the back layer, set the `IsBackLayerRevealed` property to 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:backdrop="clr-namespace:Syncfusion.XForms.Backdrop;assembly=Syncfusion.SfBackdrop.XForms"
     x:Class="BackdropGettingStarted.BackdropSamplePage"
-    IsBackLayerRevealed="True"></backdrop:SfBackdropPage>
+    IsBackLayerRevealed="True">
+</backdrop:SfBackdropPage>
  
 {% endhighlight %}
 

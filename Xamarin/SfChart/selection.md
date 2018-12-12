@@ -1,13 +1,17 @@
 ---
 layout: post
-title: Xamarin.Forms Chart Data Point Selection
+title: Syncfusion.Xamarin.Forms Chart Data Point Selection
 description: How to select the data point in Essential Xamarin.Forms Chart
 platform: xamarin
 control: Chart
 documentation: ug
 ---
 
-# Data Point Selection
+# Selection
+
+[`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html) supports selection that enables you to select a segment in a series or series itself.
+
+## Data Point Selection
 
 You can select a data point by tapping on it. To enable the selection feature, set [`EnableDataPointSelection`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~EnableDataPointSelection.html#) property as `true` for [`Series`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries.html). 
 
@@ -67,6 +71,89 @@ columnSeries.SelectedDataPointColor = Color.Red;
 
 N> For Accumulation series like pie, doughnut, pyramid and funnel, when you select a data point, the corresponding legend item also will be selected.
 
+## Series Selection
+
+Series selection is used in case of multiple series when you want to highlight a particular series. Series Selection can be enabled by setting [`EnableSeriesSelection`]() property to True. The [`SeriesSelectionColor`]() property is used to set the color to highlight the series.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart x:Name="Chart"  EnableSeriesSelection="True">
+
+... 
+
+<chart:SfChart.Series>
+            <chart:ColumnSeries x:Name="series1" ItemsSource="{Binding Data}"  XBindingPath="XValue" YBindingPath="YValue" Color="#b2ebe7">
+            </chart:ColumnSeries>
+            <chart:ColumnSeries x:Name="series2" ItemsSource="{Binding Data1}" XBindingPath="XValue" YBindingPath="YValue" Color="#d3bee5">
+            </chart:ColumnSeries>
+			<chart:ColumnSeries x:Name="series2" ItemsSource="{Binding Data2}" XBindingPath="XValue" YBindingPath="YValue" Color="#c0d8f0">
+            </chart:ColumnSeries>
+</chart:SfChart.Series>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.EnableSeriesSelection = true;
+
+ColumnSeries columnSeries = new ColumnSeries() 
+{ 
+	
+	ItemsSource = Data, 
+	XBindingPath = "XValue", 
+	YBindingPath = "YValue" ,
+	Color = Color.FromRgb(178, 235, 231);
+
+};
+
+ColumnSeries columnSeries1 = new ColumnSeries() 
+{ 
+	
+	ItemsSource = Data1, 
+	XBindingPath = "XValue", 
+	YBindingPath = "YValue" ,
+	Color = Color.FromRgb(211, 190, 229);
+
+};
+
+ColumnSeries columnSeries2 = new ColumnSeries() 
+{ 
+	
+	ItemsSource = Data2, 
+	XBindingPath = "XValue", 
+	YBindingPath = "YValue" ,
+	Color = Color.FromRgb(192, 216, 240);
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Series selection support in Xamarin.Forms Chart](selection_images/seriesSelection.png)
+
+To set the series selection color, 
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart x:Name="Chart"  EnableSeriesSelection="True" SeriesSelectionColor ="Red">
+... 
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.SeriesSelectionColor = Color.Red;
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Events
 
 **SelectionChanging**
@@ -76,6 +163,7 @@ The [`SelectionChanging`](https://help.syncfusion.com/cr/cref_files/xamarin/Sync
 * [`SelectedSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionEventArgs~SelectedSeries.html#) – used to get the series of selected data point.
 * [`SelectedDataPointIndex`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionEventArgs~SelectedDataPointIndex.html#) – used to get the selected data point index.
 * [`PreviousSelectedIndex`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionEventArgs~PreviousSelectedIndex.html#) – used to get the previous selected data point index.
+* [`PreviousSelectedSeries`]() - used to get the previous selected series. 
 * [`Cancel`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionChangingEventArgs~Cancel.html#) – used to set the value indicating whether the selection should be canceled.
 
 **SelectionChanged**
@@ -85,6 +173,7 @@ The [`SelectionChanged`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncf
 * [`SelectedSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionEventArgs~SelectedSeries.html#) - Gets the series of selected data point.
 * [`SelectedDataPointIndex`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionEventArgs~SelectedDataPointIndex.html#) - Gets the selected data point index.
 * [`PreviousSelectedIndex`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionEventArgs~PreviousSelectedIndex.html#) - Gets the previous selected data point index.
+* [`PreviousSelectedSeries`]() - Gets the previous selected series.
 
 ## Methods
 
@@ -95,6 +184,7 @@ The [`OnSelectionChanging`](https://help.syncfusion.com/cr/cref_files/xamarin/Sy
 * [`SelectedSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionEventArgs~SelectedSeries.html#) - Gets the series of selected data point.
 * [`SelectedDataPointIndex`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionEventArgs~SelectedDataPointIndex.html#) - Gets the selected data point index.
 * [`PreviousSelectedIndex`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionEventArgs~PreviousSelectedIndex.html#) - Gets the previous selected data point index.
+* [`PreviousSelectedSeries`]() - Gets the previous selected series.
 * [`Cancel`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionChangingEventArgs~Cancel.html#) -Sets the value that indicates whether the selection should be canceled.
 
 {% highlight c# %}
@@ -106,6 +196,7 @@ public class ChartSelectionBehaviorExt : ChartSelectionBehavior
             var selectedSeres = args.SelectedSeries;
             var dataPointIndex = args.SelectedDataPointIndex;
             var previousSelectedIndex = args.PreviousSelectedIndex;
+			var previousSelectedSeries = args.PreviousSelectedSeries;
    }
 }
 
@@ -118,6 +209,7 @@ The [`OnSelectionChanged`](https://help.syncfusion.com/cr/cref_files/xamarin/Syn
 * [`SelectedSeries`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionEventArgs~SelectedSeries.html#) - Gets the series of selected data point.
 * [`SelectedDataPointIndex`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionEventArgs~SelectedDataPointIndex.html#) - Gets the selected data point index.
 * [`PreviousSelectedIndex`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSelectionEventArgs~PreviousSelectedIndex.html#) - Gets the previous selected data point index.
+* [`PreviousSelectedSeries`]() - Gets the previous selected series.
 
 {% highlight c# %}
 
@@ -129,6 +221,7 @@ public class ChartSelectionBehaviorExt : ChartSelectionBehavior
             var selectedSeries = args.SelectedSeries;
             var dataPointIndex = args.SelectedDataPointIndex;
             var previousSelectedIndex = args.PreviousSelectedIndex;
+			var previousSelectedSeries = args.PreviousSelectedSeries;
         }
 }
 

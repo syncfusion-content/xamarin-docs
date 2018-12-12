@@ -117,20 +117,20 @@ Add backdrop page as a children of [`NavigationPage`](https://docs.microsoft.com
 
 // In App.xaml.cs 
 #region Constructor
+
 public App()
 { 
    … 
-   
   MainPage = new NavigationPage(new BackdropSamplePage());
-   
    … 
 }
+
 #endregion 
 
 {% endhighlight %}
 
 >**NOTE**
-The backdrop page header can appear only when adding the [`NavigationPage`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.navigationpage?view=xamarin-forms) as a parent of backdrop page.
+Page header for the backdrop will appear only when adding backdrop as a children of [`NavigationPage`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.navigationpage?view=xamarin-forms).
  
 ## Add back layer content
 The back layer holds actionable content (navigation or filtration), which is relevant to the front layer. The back layer will either fill the entire background or occupy the background based on the content height.
@@ -161,18 +161,18 @@ The back layer holds actionable content (navigation or filtration), which is rel
 {% highlight C# %} 
 
 this.BackLayer = new BackdropBackLayer
+    {
+        Content = new StackLayout
+        {
+            Children =
             {
-                Content = new StackLayout
+                new ListView
                 {
-                    Children =
-                      {
-                          new ListView
-                          {
-                              ItemsSource = new string[] { "Appetizers", "Soups", "Desserts" ,"Salads"}
-                          }
-                      }
+                    ItemsSource = new string[] { "Appetizers", "Soups", "Desserts" ,"Salads"}
                 }
-            };
+            }
+        }
+    };
 
 
 {% endhighlight %}
@@ -197,13 +197,13 @@ The front layer always appears in front of the back layer. It is displayed to th
 {% highlight C# %} 
 
 this.FrontLayer = new BackdropFrontLayer()
-            {
-                Content = new Grid
-                {
-                    BackgroundColor = Color.WhiteSmoke,
-                    VerticalOptions = LayoutOptions.FillAndExpand
-                }
-            };
+    {
+        Content = new Grid
+        {
+            BackgroundColor = Color.WhiteSmoke,
+            VerticalOptions = LayoutOptions.FillAndExpand
+        }
+    };
 
 {% endhighlight %}
 

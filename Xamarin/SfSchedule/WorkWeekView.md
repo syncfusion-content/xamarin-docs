@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: Customize the Schedule WorkWeekView at SfSchedule control for Xamarin.Forms
+title: Customize WorkWeekView at Syncfusion SfSchedule for Xamarin.Forms
 description: Learn how to Customize the schedule WorkWeekView in SfSchedule control
 platform: xamarin
 control: SfSchedule
@@ -47,7 +47,7 @@ schedule.ViewHeaderStyle = viewHeaderStyle;
 {% endhighlight %}
 {% endtabs %} 
 
-![](daymodule_images/viewheaderappearance_workweek.png)
+![Schedule view header appearance work week view](daymodule_images/viewheaderappearance_workweek.png)
 
 >**NOTE**
 FontAttributes and FontFamily are native to the platform. Custom font and the font which are not available in the specified platform will not be applied.
@@ -65,7 +65,7 @@ schedule.ViewHeaderHeight = 50;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/viewheaderheight_workweek.png)
+![Schedule view header height work week view](daymodule_images/viewheaderheight_workweek.png)
 
 ### Customize Font Appearance
 
@@ -86,7 +86,7 @@ viewHeaderStyle.DateFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-R
 {% endhighlight %}
 {% endtabs %} 
 
-![](daymodule_images/customfontviewheader_workweek.png)
+![Schedule customizing view header work week view](daymodule_images/customfontviewheader_workweek.png)
 
 Refer [this](https://help.syncfusion.com/xamarin/sfschedule/monthview#custom-font-setting-in-xamarinforms-android) to configure the custom fonts in Xamarin.Forms.
 
@@ -123,7 +123,7 @@ schedule.WorkWeekViewSettings = workWeekViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/DateFormat_WorkWeek.png)
+![Schedule customizing date format work week view](daymodule_images/DateFormat_WorkWeek.png)
 
 ### ViewHeader Tapped Event
 You can handle single tap action of ViewHeader by using [ViewHeaderTapped](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ViewHeaderTapped_EV.html) event of `SfSchedule`. This event will be triggered when the ViewHeader is Tapped. This event contains [ViewHeaderTappedEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderTappedEventArgs.html) argument which holds [DateTime](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.CellTappedEventArgs~Datetime.html) details in it.
@@ -165,7 +165,7 @@ schedule.TimeInterval = 180;
 {% endhighlight %}
 {% endtabs %} 
 
-![](daymodule_images/timeinterval_workweek.png)
+![Schedule customizing time interval work week view](daymodule_images/timeinterval_workweek.png)
 
 >**NOTE**
 If you modify the `TimeInterval` value (in minutes), you need to change the time labels format by setting the `TimeFormat` value as "hh:mm". By default, TimeFormat value is `"hh a"`. You can refer [here](https://help.syncfusion.com/xamarin/sfschedule/workweekview#time-label-formatting) for changing TimeFormat value.
@@ -183,7 +183,7 @@ schedule.TimeIntervalHeight = 180;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/workweekview_height.png)
+![Schedule customizing time interval height work week view](daymodule_images/workweekview_height.png)
 
 ## Change Working hours
 
@@ -195,8 +195,8 @@ Working hours in `WorkWeekView` of Schedule control will be differentiated with 
     <schedule:SfSchedule.WorkWeekViewSettings>
         <!--setting working hours properties -->
         <schedule:WorkWeekViewSettings
-            WorkStartHour="11.5”
-            WorkEndHour="17.5”>
+            WorkStartHour="11.5"
+            WorkEndHour="17.5">
             <schedule:WorkWeekViewSettings.WorkWeekLabelSettings>
                 <schedule:WorkWeekLabelSettings TimeFormat="hh:mm" />
             </schedule:WorkWeekViewSettings.WorkWeekLabelSettings>
@@ -217,7 +217,7 @@ schedule.WorkWeekViewSettings = workWeekViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/changeworkinghours_workweek.png)
+![Schedule customizing working hours work week view](daymodule_images/changeworkinghours_workweek.png)
 
 >**NOTE**
 No need to specify the decimal point values for `WorkStartHour` and `WorkEndHour`, if you don’t want to set the minutes.
@@ -254,7 +254,7 @@ schedule.WorkWeekViewSettings = workWeekViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/changestartandendhour_workweek.png)
+![Schedule customizing start and end hour work week view](daymodule_images/changestartandendhour_workweek.png)
 
 >**NOTE**
 * `StartHour` must be greater than or equal to 0 and `EndHour` must be lesser than or equal to 24, otherwise `InvalidDataException` will be thrown.
@@ -303,7 +303,7 @@ schedule.WorkWeekViewSettings = workWeekViewSettings;
 {% endhighlight %}
 {% endtabs %} 
 
-![](daymodule_images/timeslotappearance_workweek.png)
+![Schedule customizing time slot appearance work week view](daymodule_images/timeslotappearance_workweek.png)
 
 ### Timeslot customization in Non Working hours
 
@@ -337,7 +337,7 @@ schedule.WorkWeekViewSettings = workWeekViewSettings;
 {% endhighlight %}
 {% endtabs %} 
 
-![](daymodule_images/nonworkinghours_workweek.png)
+![Schedule non working hours work week view](daymodule_images/nonworkinghours_workweek.png)
 
 >**NOTE**
 `TimeSlotBorderStrokeWidth`and ` VerticalLineStrokeWidth` properties are common to both Working hours and Non-Working hour time slot customization.
@@ -380,7 +380,7 @@ schedule.WorkWeekViewSettings = workWeekViewSettings;
 {% endhighlight %}
 {% endtabs %} 
 
-![](daymodule_images/nonaccessibleblock_workweek.png)
+![Schedule non accessible block work week view](daymodule_images/nonaccessibleblock_workweek.png)
 
 >**NOTE**
 Selection and related events will not be working in this blocks.
@@ -398,7 +398,7 @@ schedule.FirstDayOfWeek = 3;
 {% endhighlight %}
 {% endtabs %} 
 
-![](daymodule_images/firstdayofweek_workweek.png)
+![Schedule first day of week work week view](daymodule_images/firstdayofweek_workweek.png)
 
 ## Time Label Formatting
 
@@ -415,7 +415,7 @@ schedule.WorkWeekViewSettings = workweekViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/timelabelformat_workweek.png)
+![Schedule time label format work week view](daymodule_images/timelabelformat_workweek.png)
 
 ## Time Label Appearance
 
@@ -434,7 +434,7 @@ schedule.WorkWeekViewSettings = workWeekViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/timelabelappearance_workweek.png)
+![Schedule customizing time label appearence work week view](daymodule_images/timelabelappearance_workweek.png)
 
 ## Time Label Size
 
@@ -454,7 +454,7 @@ schedule.WorkWeekViewSettings = workWeekViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/TimeLabelSize_WorkWeek.png)
+![Schedule customizint time label size work week view](daymodule_images/TimeLabelSize_WorkWeek.png)
 
 ## Selection
 You can customize the default appearance of selection UI in the timeslots.
@@ -491,7 +491,7 @@ schedule.SelectionStyle = selectionStyle;
 {% endhighlight %}
 {% endtabs %} 
 
-![](daymodule_images/selectionstyle_workweek.png)
+![Schedule customizing selection style work week view](daymodule_images/selectionstyle_workweek.png)
 
 ### Selection customization using custom View
 You can replace the default selection UI with your custom view by setting [SelectionView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~SelectionView.html) property of `SfSchedule`.
@@ -518,7 +518,7 @@ schedule.SelectionView = customView;
 {% endhighlight %}
 {% endtabs %} 
 
-![](daymodule_images/selectioncustomview_workweek.png)
+![Schedule cusotmizing selection view in work week view](daymodule_images/selectioncustomview_workweek.png)
 
 ### Programmatic selection
 You can programmatically select the specific timeslot by setting corresponding date and time value to [SelectedDate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~SelectedDate.html) property of `SfSchedule`. By default, it is null.
@@ -545,5 +545,5 @@ You can download the entire source code of this demo for Xamarin.Forms from here
 * `SfSchedule` does not support multiple selection.
 * `SfSchedule` supports two-way binding of `SelectedDate` property.
 
-![](daymodule_images/selection_WorkWeek.png)
+![Schedule customizing selection work week view](daymodule_images/selection_WorkWeek.png)
 

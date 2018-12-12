@@ -11,31 +11,13 @@ documentation: ug
 
 # Overview
 
-The Badge View is a UI control element; it is used to visualize the status or notification of an application. It can also be used in conjunction with lists to represent each list’s timeline such as New, Old and Preview.
+Badges are used to notify users of new or unread messages, notifications, or the status of something.
 
 ## Key features
-
-`SfBadgeView` is a composite UI control element with the following features:
 
 * Position
 * Badge types
 * Animation
 * Badge icon
-
-**Position** 
-
-Positions the badge at the required place around the badge content.
-
-**Badge types** 
-
-Provide built-in badge type colors such as success, warning, error, light, and dark.
-
-**Animation** 
-
-Provides animation support to badges.
-
-**Badge icon** 
-
-Customizes badges using some predefined notification shapes such as Available, Busy, Away, and Dot.
 
 ![Xamarin badge view overview](overview_images/overview.png)

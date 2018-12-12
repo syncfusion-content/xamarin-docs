@@ -7,7 +7,7 @@ control : Chips
 documentation : ug
 ---
 
-# Set type for the chip group
+# Set the type for chip group
 
 No operation can be performed in a chip group unless the Type property is set. The chips control provides four different types, and each has its own functionality. The types are,
 
@@ -16,19 +16,19 @@ No operation can be performed in a chip group unless the Type property is set. T
 * Filter 
 * Input
 
-## Input:
+## Input
 
 Arranges the chips in a layout and enables the close button for each chip. Using the close button, a chip can be removed from children and layout as well. It additionally has support to add an optional `InputView` at the end of the layout, from which users can obtain the chip text for creating a chip at run time.
 
-## Choice:
+## Choice
 
 Allows users to select a single chip from a group of items. Selecting a chip will automatically deselect the previously selected chips. The selected chip color can be customized using the `SelectedChipBackgroundColor` and `SelectedChipTextColor` properties. The `SelectedItem` property holds the instance of recently selected chip.
 
-## Filter:
+## Filter
 
 Allows users to select more than one chip in a group of chips. The selected chips are indicated by selection indicator in this type. The selection indicator can be customized using the `SelectionIndicatorColor` property. Use the `SelectedItems` property to get the list of selected chips.
 
-## Action:
+## Action
 
 Executes the `Command` of ChipGroup and raises the Clicked event when a chip is clicked.
 

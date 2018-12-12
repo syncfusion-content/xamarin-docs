@@ -8,22 +8,22 @@ documentation: ug
 ---
 # Set Maximum Number of Decimal Digits
 
-The maximum number of digits to be displayed after the decimal point can be specified by using `MaximumNumberDecimalDigits` property. 
+The maximum number of digits to be displayed after the decimal point can be specified by using [`MaximumDecimalDigits `](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms~Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown~MaximumDecimalDigits.html) property. 
 
-N> The `MaximumNumberDecimalDigits` property can be provided with positive value only.
+N> The [`MaximumDecimalDigits `](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms~Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown~MaximumDecimalDigits.html) property can be provided with positive value only.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-	<numeric:SfNumericUpDown x:Name="numericUpDown" MaximumNumberDecimalDigits="2"/>
+	<numeric:SfNumericUpDown x:Name="numericUpDown" MaximumDecimalDigits ="2"/>
 	
 {% endhighlight %}
 
 
 {% highlight C# %}
 
-	numericUpDown.MaximumNumberDecimalDigits = 2;
+	numericUpDown.MaximumDecimalDigits  = 2;
 
 {% endhighlight %}
 

@@ -17,7 +17,7 @@ Syncfusion components  for Xamarin.Forms are available in [nuget.org](https://
 
 ![Adding the Buttons nuget to sample](images/chip_packages/chip_packages.png)
 
-To learn more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). If you prefer to manually reference the assemblies instead of using NuGet, refer to this [documentation](https://help.syncfusion.com/xamarin/introduction/control-dependencies#chips) to know about the dependent assemblies for chips.
+To learn more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). If you prefer to manually refer the assemblies instead of using NuGet, refer to this link to know about the dependent assemblies for chips.
 
 N> Install the same version of the chips Nuget in all the projects.
 
@@ -186,7 +186,7 @@ namespace Chips
 
 ## Set layout for the control
 
-The chips control creates chip for each object and arranges chips in a StackLayout with horizontal orientation. Any layout can be used to arrange the chips in the chips control.In the following example, the `FlexLayout` has been used. 
+Any layout can be used to arrange the chips in the chips control using `ChipLayout` property.The chips control creates chip for each object and arranges chips in a StackLayout with horizontal orientation. Any layout can be used to arrange the chips in the chips control.In the following example, the `FlexLayout` has been used. 
 
 {% tabs %}
 
@@ -400,8 +400,10 @@ namespace Chips
 ![ChipGroup sample with display member path and itemsSource demo](images/getting_started/getting_started.png)
 
 ## Set types of chip group
+The functionality of chips control differ based on its [Type](https://help.syncfusion.com/xamarin/chips/types) property.
+By default type of chips control have Input type. Input chip types have close button, using it chip can be can removed dynamically from children and the layout. 
 
-The functionality of chips control differ based on its [Types] (https://help.syncfusion.com/xamarin/chips/types) property.By default type of chips control have Input type. Input chip types have close button, using it chip can be can removed dynamically from children and the layout. The following code example uses the `Action` type. In Action type, `Command` property of SfChipGroup is executed when any chip in the group is tapped. Here the Employee name of corresponding chip is set as label text when the Command is executed.
+The following code example uses the `Action` type. In Action type, `Command` property of SfChipGroup is executed when any chip in the group is tapped. Here the Employee name of corresponding chip is set as label text when the Command is executed.
 
 {% tabs %}
 

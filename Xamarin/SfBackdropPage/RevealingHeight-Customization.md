@@ -47,6 +47,10 @@ this.FrontLayer = new BackdropFrontLayer()
 
 The backdrop page enables revealing strategy using the BackLayerRevealOption when tapping the hamburger icon at the top-right corner.
 
+### Reveal based on back layer content
+
+Revealing height depends on the content of back layer when setting the BackLayerRevealOption property as `Auto`.
+
 {% tabs %} 
 
 {% highlight xaml %} 
@@ -78,6 +82,10 @@ namespace BackdropGettingStarted
 {% endhighlight %}
 
 {% endtabs %}
+
+### Reveal to the bottom of the screen
+
+Revealing happens towards bottom of the screen when setting the BackLayerRevealOption property as Fill.
 
 {% tabs %} 
 

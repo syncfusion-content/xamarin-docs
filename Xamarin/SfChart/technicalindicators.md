@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Technical Indicators
+title: Technical Indicators in Syncfusion.Xamarin.Forms Chart
 description: How to enable and customize the technical indicator behavior in Essential Xamarin.Forms Chart
 platform: xamarin
 control: Chart
@@ -11,16 +11,16 @@ documentation: ug
 
 The different types of technical indicators available in chart are follows:
 
-* [`AverageTrueIndicator`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.AverageTrueIndicator.html)
-* [`SimpleMovingAverageIndicator`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SimpleMovingAverageIndicator.html)
-* [`RSITechnicalIndicator`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RSIIndicator.html)
-* [`AccumulationDistributionIndicator`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.AccumulationDistributionIndicator.html)
-* [`MomentumIndicator`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.MomentumIndicator.html) 
-* [`StochasticIndicator`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.StochasticIndicator.html)
+* [`AverageTrueIndicator`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.AverageTrueIndicator.html)
+* [`SimpleMovingAverageIndicator`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SimpleMovingAverageIndicator.html)
+* [`RSITechnicalIndicator`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RSIIndicator.html)
+* [`AccumulationDistributionIndicator`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.AccumulationDistributionIndicator.html)
+* [`MomentumIndicator`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.MomentumIndicator.html) 
+* [`StochasticIndicator`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.StochasticIndicator.html)
 * [`ExponentialMovingAverageIndicator`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ExponentialMovingAverageIndicator.html)
-* [`TriangularMovingAverageIndicator`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.TriangularMovingAverageIndicator.html)
-* [`BollingerBandIndicator`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.BollingerBandIndicator.html)
-* [`MACDIndicator`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.MACDIndicator.html)
+* [`TriangularMovingAverageIndicator`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.TriangularMovingAverageIndicator.html)
+* [`BollingerBandIndicator`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.BollingerBandIndicator.html)
+* [`MACDIndicator`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.MACDIndicator.html)
 
 ## Adding technical indicators to chart
 
@@ -30,7 +30,7 @@ The following section illustrates how to add technical indicators to chart.
 
 Create an instance for any technical indicator, and add it to the [`TechnicalIndicators`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~TechnicalIndicators.html) collection.
 
-Here, for an instance, the [`AccumulationDistributionIndicator`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.AccumulationDistributionIndicator.html) is added.
+Here, for an instance, the [`AccumulationDistributionIndicator`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.AccumulationDistributionIndicator.html) is added.
 
 {% tabs %} 
 
@@ -102,7 +102,7 @@ SfChart chart = new SfChart()
  
 **Binding the items source of chart series**
 
-By setting [`Name`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FinancialSeriesBase~Name.html) property of [`FinancialSeriesBase`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FinancialSeriesBase.html) to the [`SeriesName`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FinancialTechnicalIndicator~SeriesName.html) property of `FinancialTechnicalIndicator` you can bind the items source of chart series to technical indicators, including x and y axis.
+By setting [`Name`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FinancialSeriesBase~Name.html) property of [`FinancialSeriesBase`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FinancialSeriesBase.html) to the [`SeriesName`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FinancialTechnicalIndicator~SeriesName.html) property of `FinancialTechnicalIndicator` you can bind the items source of chart series to technical indicators, including x and y axis.
 
 {% tabs %} 
 
@@ -161,7 +161,7 @@ Technical indicators have the below properties as common;
 
 **Adding axis**
 
-The [`XAxis`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FinancialTechnicalIndicator~XAxis.html) and [`YAxis`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FinancialTechnicalIndicator~YAxis.html) properties of technical indicators are used to set the x and y-axes.
+The [`XAxis`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FinancialTechnicalIndicator~XAxis.html) and [`YAxis`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FinancialTechnicalIndicator~YAxis.html) properties of technical indicators are used to set the x and y-axes.
 
 You can define the axis using the following code example.
 
@@ -204,7 +204,7 @@ SfChart chart = new SfChart()
 
 **Animation**
 
-[`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html) provides animation support for technical indicators. Technical indicators will be animated whenever the ItemsSource changes. Animation can be enabled by setting the [`EnableAnimation`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FinancialTechnicalIndicator~EnableAnimation.html) property to true. You can also control the duration of the animation using the [`AnimationDuration`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FinancialTechnicalIndicator~AnimationDuration.html) property.
+[`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html) provides animation support for technical indicators. Technical indicators will be animated whenever the ItemsSource changes. Animation can be enabled by setting the [`EnableAnimation`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FinancialTechnicalIndicator~EnableAnimation.html) property to true. You can also control the duration of the animation using the [`AnimationDuration`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FinancialTechnicalIndicator~AnimationDuration.html) property.
 
 {% tabs %} 
 
@@ -282,7 +282,7 @@ SfChart chart = new SfChart()
 
 ATR indicator is a technical analysis volatility indicator. This indicator does not provide an indication of price trend; simply the degree of price volatility. The average true range is an N-day smoothed moving average (SMMA) of the true range values.
 
-You can define the [`AverageTrueIndicator`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.AverageTrueIndicator.html) using the following code example.
+You can define the [`AverageTrueIndicator`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.AverageTrueIndicator.html) using the following code example.
 
 {% tabs %} 
 
@@ -332,7 +332,7 @@ The following screenshot illustrates an ATR indicator.
 
 A SMA indicator is a simple, arithmetic moving average that is calculated by adding the closing price for number of time periods and dividing the total value by the number of time periods.
 
-The following code example demonstrates the usage of [`SimpleMovingAverageIndicator`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SimpleMovingAverageIndicator.html).
+The following code example demonstrates the usage of [`SimpleMovingAverageIndicator`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SimpleMovingAverageIndicator.html).
 
 {% tabs %} 
 
@@ -381,9 +381,9 @@ The following screenshot illustrates an SMA indicator.
 
 The RSI indicator has additional two lines other than signal line; they indicate the overbought and oversold region.
 
-The [`UpperLineColor`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RSIIndicator~UpperLineColor.html) property is used to define the color for the line that indicates overbought region, and the [`LowerLineColor`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RSIIndicator~LowerLineColor.html) property is used to define the color for the line that indicates oversold region.
+The [`UpperLineColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RSIIndicator~UpperLineColor.html) property is used to define the color for the line that indicates overbought region, and the [`LowerLineColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RSIIndicator~LowerLineColor.html) property is used to define the color for the line that indicates oversold region.
 
-To define the [`RSITechnicalIndicator`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RSIIndicator.html), use the following code example.
+To define the [`RSITechnicalIndicator`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RSIIndicator.html), use the following code example.
 
 {% tabs %} 
 
@@ -434,7 +434,7 @@ The following screenshot illustrates an RSI technical indicator.
 
 Accumulation distribution indicator is a volume-based indicator designed to measure the accumulative flow of money into and out of a security. It requires [`Volume`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.AccumulationDistributionIndicator~Volume.html) property additionally with the data source to calculate the signal line. 
 
-The following code example helps you to add [`AccumulationDistributionIndicator`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.AccumulationDistributionIndicator.html).
+The following code example helps you to add [`AccumulationDistributionIndicator`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.AccumulationDistributionIndicator.html).
 
 {% tabs %} 
 
@@ -483,7 +483,7 @@ The following screenshot illustrates an accumulation distribution indicator.
 ## Momentum indicator
 
 This indicator is having two lines, momentum line and center line. The [`SignalLineColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.MomentumIndicator~SignalLineColor.html) property and [`UpperLineColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.MomentumIndicator~UpperLineColor.html) property is used to define the color for the momentum and center line respectively.
-You can define [`MomentumIndicator`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.MomentumIndicator.html) using the following code example.
+You can define [`MomentumIndicator`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.MomentumIndicator.html) using the following code example.
 
 {% tabs %} 
 
@@ -534,7 +534,7 @@ SfChart chart = new SfChart()
 
 This indicator is used to measure the range and momentum of price movements. It contains [`KPeriod`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.StochasticIndicator~KPeriod.html) and [`DPeriod`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.StochasticIndicator~DPeriod.html) property defining the ‘K’ percentage and ‘D’ percentage respectively. No signal line in this indicator.
 The [`UpperLineColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.StochasticIndicator~UpperLineColor.html), [`LowerLineColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.StochasticIndicator~LowerLineColor.html) and [`PeriodLineColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.StochasticIndicator~PeriodLineColor.html) property are used to define the color for the Stochastic indicator lines.
-You can define [`StochasticIndicator`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.StochasticIndicator.html) using the following code example.
+You can define [`StochasticIndicator`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.StochasticIndicator.html) using the following code example.
 
 {% tabs %} 
 
@@ -583,7 +583,7 @@ SfChart chart = new SfChart()
 
 ## Exponential moving average indicator
 
-The [`ExponentialMovingAverageIndicator`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ExponentialMovingAverageIndicator.html) is similar to [`SimpleMovingAverageIndicator`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SimpleMovingAverageIndicator.html) and this can be defined using the following code examples.
+The [`ExponentialMovingAverageIndicator`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ExponentialMovingAverageIndicator.html) is similar to [`SimpleMovingAverageIndicator`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SimpleMovingAverageIndicator.html) and this can be defined using the following code examples.
 
 {% tabs %} 
 
@@ -629,7 +629,7 @@ SfChart chart = new SfChart()
 ## Triangular moving average indicator
 
 A Triangular moving average is simply a double-smoothed simple moving average of data calculated over a period of time where the middle portion of the data has more weight. 
-The [`TriangularMovingAverageIndicator`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.TriangularMovingAverageIndicator.html) can be defined as in the following code example.
+The [`TriangularMovingAverageIndicator`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.TriangularMovingAverageIndicator.html) can be defined as in the following code example.
 
 {% tabs %} 
 
@@ -678,7 +678,7 @@ SfChart chart = new SfChart()
 This indicator also having [`UpperLineColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.BollingerBandIndicator~UpperLineColor.html), [`LowerLineColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.BollingerBandIndicator~LowerLineColor.html)  and [`SignalLineColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.BollingerBandIndicator~SignalLineColor.html) property for defining the brushes for the indicator lines.
 
 Also, we can specify standard deviation values for BollingerBand indicator using [`StandardDeviation`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.BollingerBandIndicator~StandardDeviation.html) property.
-You can define the [`BollingerBandIndicator`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.BollingerBandIndicator.html) using the following code example.
+You can define the [`BollingerBandIndicator`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.BollingerBandIndicator.html) using the following code example.
 
 {% tabs %} 
 

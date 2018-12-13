@@ -433,7 +433,7 @@ N> For Pie and Doughnut series, you can set the [`Bezier`](https://help.syncfusi
 
 You can customize the appearance of the data marker label with your own template by using [`LabelTemplate`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataMarker~LabelTemplate.html) property of [`ChartDataMarker`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataMarker.html).
 
-N> The BindingContext of template is the corresponding underlying model that is provided in the items source of chart series.
+N> The BindingContext of template is the corresponding underlying model that is provided in the items source of chart series.Bindingcontext of LabelTemplate can get the underlying data model or ChartDataMarkerLabel class using LabelContent property as DataMarkerLabel.
 
 {% tabs %} 
 
@@ -523,5 +523,6 @@ The [`DataMarkerLabelCreated`](https://help.syncfusion.com/cr/cref_files/xamarin
 * [`MarkerBorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataMarkerLabel~MarkerBorderColor.html) – Gets or sets the border color of marker symbol.
 * [`MarkerColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataMarkerLabel~MarkerColor.html) – Gets or sets the marker color.
 * [`MarkerType`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataMarkerLabel~MarkerType.html) – Gets or sets the shape type of marker. The available shapes are ellipse, diamond, hexagon, cross, HorizontalLine, VerticalLine, InvertedTriangle, triangle, pentagon, plus, and square.
+* [`Data`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataMarkerLabel~Data.html) - Gets the underlying data of data marker label.
 
 N> Currently, the [`DataMarkerLabelCreated`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~DataMarkerLabelCreated_EV.html) event occurs only in `Android`, `iOS`, and `macOS` platforms. To customize individual data marker in `UWP` platform, use the [`DataTemplate`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartDataMarker~LabelTemplate.html) feature.

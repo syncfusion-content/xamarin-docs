@@ -427,7 +427,7 @@ lineSeries.DataMarker.ConnectorLineStyle.StrokeDashArray = new double[2] { 2, 3 
 
 ![Connector line support for data markers in Xamarin.Forms Chart](datamarker_images/datamarker_img9.png)
 
-N> For Pie and Doughnut series, you can set the [`Bezier`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ConnectorLineType.html) curve for connector line using [`ConnectorType`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CircularSeries~ConnectorLineType.html) property of Pie and Doughnut series.
+N> For Pie and Doughnut series, you can set the different connector line types such as [`Line`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ConnectorLineType.html), [`StraightLine`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ConnectorLineType.html) and  [`Bezier`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ConnectorLineType.html) curve using [`ConnectorType`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CircularSeries~ConnectorLineType.html) property of Pie and Doughnut series.
 
 ## Label template
 

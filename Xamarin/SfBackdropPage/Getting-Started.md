@@ -90,7 +90,7 @@ Create a page and import the SfBackdropPage namespace along with [XAML namespace
 
 {% highlight C# %} 
 
-using Syncfusion.XForms.Backdrop;
+using Syncfusion.XForms.Backdrop;	
 namespace BackdropGettingStarted
 {
     public partial class BackdropSamplePage : SfBackdropPage
@@ -197,13 +197,13 @@ The front layer always appears in front of the back layer. It is displayed to th
 {% highlight C# %} 
 
 this.FrontLayer = new BackdropFrontLayer()
+{
+	Content = new Grid
     {
-        Content = new Grid
-        {
-            BackgroundColor = Color.WhiteSmoke,
-            VerticalOptions = LayoutOptions.FillAndExpand
-        }
-    };
+		BackgroundColor = Color.WhiteSmoke,
+		VerticalOptions = LayoutOptions.FillAndExpand
+    }
+};
 
 {% endhighlight %}
 
@@ -232,10 +232,12 @@ Similarly, to conceal the back layer, set the `IsBackLayerRevealed` property to 
 {% highlight C# %} 
 
 #region Constructor
+
 public BackdropSamplePage()
 {
     this.IsBackLayerRevealed = true;
 }
+
 #endregion
 
 {% endhighlight %}

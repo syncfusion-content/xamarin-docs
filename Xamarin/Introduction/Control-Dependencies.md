@@ -39,6 +39,35 @@ This page lists the assemblies required for each control to be referred in each 
 </tr>
 </table>
 
+## SfBadgeView
+
+<dl>
+  <dt>NuGet</dt>
+  <dd>Syncfusion.Xamarin.SfBadgeView</dd>
+</dl>
+
+**Assemblies**
+
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfBadgeView.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfBadgeView.XForms.dll<br/>Syncfusion.SfBadgeView.XForms.Android.dll<br/>Syncfusion.Core.XForms.dll
+<br/>Syncfusion.Core.XForms.Android.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfBadgeView.XForms.dll<br/>Syncfusion.SfBadgeView.XForms.iOS.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.iOS.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfBadgeView.XForms.dll<br/>Syncfusion.SfBadgeView.XForms.UWP.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/></td>
+</tr>
+</table>
+
 ## SfBarcode
 
 <dl>

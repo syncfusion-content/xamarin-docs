@@ -15,6 +15,8 @@ Essential Backdrop Page supports reveal height customization which is used, when
 
 The revealing of back layer can be enabled by setting the [`IsBackLayerRevealed`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.XForms~Syncfusion.XForms.Backdrop.SfBackdropPage~IsBackLayerRevealed.html) property to true.To know more about this,refer the [link](https://help.syncfusion.com/xamarin/sfbackdroppage/getting-started?cs-save-lang=1&cs-lang=csharp#reveal-and-conceal-the-back-layer).
 
+The [`RevealedHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.XForms~Syncfusion.XForms.Backdrop.BackdropFrontLayer~RevealedHeight.html) property indicates the revealing height of the front layer.
+
 {% tabs %} 
 
 {% highlight xaml %} 
@@ -48,7 +50,7 @@ The backdrop page allows the user to indicate how the back layer gets revealed u
 
 Revealing height depends on the content of back layer when setting the [`BackLayerRevealOption`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.XForms~Syncfusion.XForms.Backdrop.SfBackdropPage~BackLayerRevealOption.html) property as `Auto`.
 
-If the content of back layer exceeds the height of the screen,It reveals the back layer based on value of [`RevealedHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.XForms~Syncfusion.XForms.Backdrop.SfBackdropPage~BackLayerRevealOption.html) property.
+If the content of back layer exceeds the height of the screen,It reveals the back layer based on value of [`RevealedHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.XForms~Syncfusion.XForms.Backdrop.BackdropFrontLayer~RevealedHeight.html) property.
 
 {% tabs %} 
 

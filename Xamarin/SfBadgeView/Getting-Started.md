@@ -19,6 +19,10 @@ Syncfusion components for Xamarin.Forms are available in [nuget.org](https://w
 
 To learn more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). If you prefer to manually reference the assemblies instead of using NuGet, refer to this `documentation` to learn about the dependent assemblies.
 
+N> Install the same version of the badge view in all the projects.
+
+I> If you reference Syncfusion assemblies from the trial setup or NuGet feed, you have to include a license key in your project. Please refer to this [documentation](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your Xamarin application to use our components.
+
 ## Launching the application on each platform with badge view
 
 To use the badge view in an application, each platform requires some additional configurations. The configurations vary from platform to platform and is discussed in the following sections:
@@ -99,15 +103,15 @@ Create an instance for the badge view control, and add it as content.
 
 {% highlight xaml %}
 
-    <badge:SfBadgeView>        
-    </badge:SfBadgeView>
+<badge:SfBadgeView>        
+</badge:SfBadgeView>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    //Initializing the badge view.
-    SfBadgeView sfBadgeView = new SfBadgeView();
+//Initializing the badge view.
+SfBadgeView sfBadgeView = new SfBadgeView();
 	
 {% endhighlight %}
 
@@ -121,17 +125,17 @@ You can add text to badge view using the [`BadgeText`](https://help.syncfusion.c
 
 {% highlight xaml %}
 
-    <badge:SfBadgeView>        
-         <badge:SfBadgeView BadgeText="20+" />          
-    </badge:SfBadgeView>
+<badge:SfBadgeView>        
+    <badge:SfBadgeView BadgeText="20+" />          
+</badge:SfBadgeView>
 
 {% endhighlight %}
 
 {% highlight c# %}
    
-    SfBadgeView sfBadgeView = new SfBadgeView();
-    //Adding text to the badge view.
-    sfBadgeView.BadgeText = "20+";
+SfBadgeView sfBadgeView = new SfBadgeView();
+//Adding text to the badge view.
+sfBadgeView.BadgeText = "20+";
 
 {% endhighlight %}
 
@@ -145,21 +149,21 @@ You can add an image, button, or label to the badge view using the [`Content`](h
 
 {% highlight xaml %}
 
-    <badge:SfBadgeView>
-        <badge:SfBadgeView.Content>
-            <Image Source="BadgeWhatsApp.png" />
-        </badge:SfBadgeView.Content>   
-    </badge:SfBadgeView>       
+<badge:SfBadgeView>
+    <badge:SfBadgeView.Content>
+        <Image Source="BadgeWhatsApp.png" />
+    </badge:SfBadgeView.Content>   
+</badge:SfBadgeView>       
 
 {% endhighlight %}
 
 {% highlight c# %}
 	
-    SfBadgeView sfBadgeView = new SfBadgeView();
-    //Adding image to the content of the badge view.
-    Image image = new Image();
-    image.Source = "BadgeWhatsApp.png";
-    sfBadgeView.Content = image;
+SfBadgeView sfBadgeView = new SfBadgeView();
+//Adding image to the content of the badge view.
+Image image = new Image();
+image.Source = "BadgeWhatsApp.png";
+sfBadgeView.Content = image;
 
 {% endhighlight %}
  
@@ -183,21 +187,21 @@ You can change the colors of the badge view using the [`BadgeType`](https://help
 
 {% highlight xaml %}
 
-    <badge:SfBadgeView>
-        <badge:SfBadgeView.BadgeSettings>
-             <badge:BadgeSetting BadgeType="Error"/>
-        </badge:SfBadgeView.BadgeSettings>                  
-    </badge:SfBadgeView>
+<badge:SfBadgeView>
+    <badge:SfBadgeView.BadgeSettings>
+        <badge:BadgeSetting BadgeType="Error"/>
+    </badge:SfBadgeView.BadgeSettings>                  
+</badge:SfBadgeView>
 
 {% endhighlight %}
 
 {% highlight c# %}
 	
-    SfBadgeView sfBadgeView = new SfBadgeView();
-    //Adding badge type to the badge view.
-    BadgeSetting badgeSetting = new BadgeSetting();
-    badgeSetting.BadgeType = BadgeType.Error;
-    sfBadgeView.BadgeSettings = badgeSetting;
+SfBadgeView sfBadgeView = new SfBadgeView();
+//Adding badge type to the badge view.
+BadgeSetting badgeSetting = new BadgeSetting();
+badgeSetting.BadgeType = BadgeType.Error;
+sfBadgeView.BadgeSettings = badgeSetting;
 
 {% endhighlight %}
 
@@ -211,21 +215,21 @@ The default position of the notification is `TopRight`. The position can be chan
 
 {% highlight xaml %}
 
-    <badge:SfBadgeView>
-        <badge:SfBadgeView.BadgeSettings>
-            <badge:BadgeSetting BadgePosition="TopRight" />
-        </badge:SfBadgeView.BadgeSettings>        
-    </badge:SfBadgeView>       
+<badge:SfBadgeView>
+    <badge:SfBadgeView.BadgeSettings>
+        <badge:BadgeSetting BadgePosition="TopRight" />
+    </badge:SfBadgeView.BadgeSettings>        
+</badge:SfBadgeView>       
 
 {% endhighlight %}
 
 {% highlight c# %}
 	   
-    SfBadgeView sfBadgeView = new SfBadgeView();
-    //Adding badge position to the badge view.
-    BadgeSetting badgeSetting = new BadgeSetting();
-    badgeSetting.BadgePosition = BadgePosition.TopRight;
-    sfBadgeView.BadgeSettings = badgeSetting;
+SfBadgeView sfBadgeView = new SfBadgeView();
+//Adding badge position to the badge view.
+BadgeSetting badgeSetting = new BadgeSetting();
+badgeSetting.BadgePosition = BadgePosition.TopRight;
+sfBadgeView.BadgeSettings = badgeSetting;
 
 {% endhighlight %}
 
@@ -249,21 +253,21 @@ You can change the badge icon using the [`BadgeIcon`](https://help.syncfusion.co
 
 {% highlight xaml %}
 
-    <badge:SfBadgeView>
-        <badge:SfBadgeView.BadgeSettings>
-            <badge:BadgeSetting BadgeIcon="None"/>
-        </badge:SfBadgeView.BadgeSettings>           
-    </badge:SfBadgeView>>
+<badge:SfBadgeView>
+    <badge:SfBadgeView.BadgeSettings>
+        <badge:BadgeSetting BadgeIcon="None"/>
+    </badge:SfBadgeView.BadgeSettings>           
+</badge:SfBadgeView>>
 
 {% endhighlight %}
 
 {% highlight c# %}
 	
-    SfBadgeView sfBadgeView = new SfBadgeView();
-    //Adding badge icon to the badge view.
-    BadgeSetting badgeSetting = new BadgeSetting();
-    badgeSetting.BadgeIcon = BadgeIcon.None;
-    sfBadgeView.BadgeSettings = badgeSetting;
+SfBadgeView sfBadgeView = new SfBadgeView();
+//Adding badge icon to the badge view.
+BadgeSetting badgeSetting = new BadgeSetting();
+badgeSetting.BadgeIcon = BadgeIcon.None;
+sfBadgeView.BadgeSettings = badgeSetting;
 
 {% endhighlight %}
 
@@ -284,7 +288,8 @@ The following code sample gives you the complete code for badge view with badge 
         <ContentPage.Content>
             <badge:SfBadgeView BadgeText="20+">
                 <badge:SfBadgeView.Content>
-                    <Image Source="BadgeWhatsApp.png" HeightRequest="200" WidthRequest="200"/>
+                    <Image Source="BadgeWhatsApp.png" HeightRequest="200" 
+                           WidthRequest="200"/>
                 </badge:SfBadgeView.Content>
                 <badge:SfBadgeView.BadgeSettings>
                     <badge:BadgeSetting BadgeType="Error" BadgePosition="TopRight" 

@@ -35,8 +35,8 @@ The [`EdgeShape`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.X
 
 this.FrontLayer = new BackdropFrontLayer()
 {
-Content = new Grid(),
-EdgeShape = EdgeShape.Curve
+    Content = new Grid(),
+    EdgeShape = EdgeShape.Curve
 };
 
 {% endhighlight %}
@@ -64,8 +64,8 @@ The [`EdgeShape`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.X
 
 this.FrontLayer = new BackdropFrontLayer()
 {
-Content = new Grid(),
-EdgeShape = EdgeShape.Flat
+    Content = new Grid(),
+    EdgeShape = EdgeShape.Flat
 };
 
 {% endhighlight %}

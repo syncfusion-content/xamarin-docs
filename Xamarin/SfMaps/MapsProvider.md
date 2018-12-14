@@ -310,6 +310,76 @@ The detailed explanation of marker and its customization have been provided in M
 
 ![](Images/Marker.png)
 
+## Custom map providers
+
+You can show the other map providers using the imagerylayer. First you have to initialise the map extension class. Override the GetUri method of imagerylayer extension class and pass the google uri link(any tile maps provider) with corresponding x, y, and zoom level. Finally, add the imagery layer extension class to layers collection of native map control by overriding the OnElementChanged method of each platform's (Xamarin.Android, Xamarin.iOS, and UWP) custom map renderer. For more information to add custom map provider go through this KB article [`link`](https://www.syncfusion.com/kb/8913/display-google-map-in-xamarin-forms-sfmaps-control).
+
+{% highlight c# %}
+
+public partial class MainPage : ContentPage
+{
+	public MainPage()
+	{
+        InitializeComponent();
+        MapExt maps = new MapExt();
+        ImageryLayer layer = new ImageryLayer();
+        maps.Layers.Add(layer);
+        this.Content = maps;
+    }
+}
+
+/// <summary>
+/// Custom maps control
+/// </summary>
+public class MapExt : SfMaps
+{
+}
+
+public class CustomMapRenderer : SfMapsRenderer
+{
+    protected override void OnElementChanged(ElementChangedEventArgs<SfMaps> e)
+    {
+        base.OnElementChanged(e);
+        if (Control != null)
+                AddLayer();
+    }
+
+    /// <summary>
+    /// To add custom imagery layer to the collection
+    /// </summary>
+    void AddLayer()
+    {
+        ImageryLayerExt layer = new ImageryLayerExt();
+        (Control as NativeMap.SfMaps).Layers.Clear();
+        (Control as NativeMap.SfMaps).Layers.Add(layer as NativeMap.ImageryLayer);
+    }
+}
+
+public class ImageryLayerExt : NativeMap.ImageryLayer
+{
+    /// <summary>
+    /// This method is used to pass the uri of desired maps tile provider
+    /// </summary>
+    /// <param name="X">XCoordinate</param>
+    /// <param name="Y">YCoordinate</param>
+    /// <param name="Scale">ZoomLevel</param>
+    /// <returns>uri path</returns>
+    protected override string GetUri(int X, int Y, int Scale)
+    {
+        var link = "http://mt1.google.com/vt/lyrs=y&x=" + X.ToString()
+        + "&y=" + Y.ToString() + "&z=" + Scale.ToString();
+        return link;
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Images/custom_map_provider.png)
+
+You can download the demo sample in this link.
+
 ## Cache tile images in application memory
 
 The [`CanCacheTiles`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ImageryLayer~CanCacheTiles.html) property used to decide whether the tile images should be cached in application memory or not.

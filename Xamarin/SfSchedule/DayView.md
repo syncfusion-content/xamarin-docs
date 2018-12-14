@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: Customize the Schedule DayView at SfSchedule control for Xamarin.Forms
+title: Customize DayView at Syncfusion SfSchedule for Xamarin.Forms
 description: Learn how to Customize the schedule DayView in SfSchedule control
 platform: xamarin
 control: SfSchedule
@@ -46,7 +46,7 @@ schedule.ViewHeaderStyle = viewHeaderStyle;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/viewheaderappearance_day.png)
+![Schedule day view header appearance](daymodule_images/viewheaderappearance_day.png)
 
 >**NOTE**
 FontAttributes and FontFamily are native to the platform. Custom font and the font which are not available in the specified platform will not be applied.
@@ -63,7 +63,7 @@ schedule.ViewHeaderHeight = 50;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/viewheaderheight_day.png)
+![Schedule day veiw header](daymodule_images/viewheaderheight_day.png)
 
 ### Customize Font Appearance
 
@@ -84,7 +84,7 @@ viewHeaderStyle.DateFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-R
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/customfontviewheader_day.png)
+![Schedule view header custom font](daymodule_images/customfontviewheader_day.png)
 
 Refer [this](https://help.syncfusion.com/xamarin/sfschedule/monthview#custom-font-setting-in-xamarinforms-android) to configure the custom fonts in Xamarin.Forms.
 
@@ -122,7 +122,7 @@ schedule.DayViewSettings = dayViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/DateFormat_Day.png)
+![Schedule viewheader custom date format](daymodule_images/DateFormat_Day.png)
 
 ### ViewHeader Tapped Event
 You can handle single tap action of ViewHeader by using [ViewHeaderTapped](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ViewHeaderTapped_EV.html) event of `SfSchedule`. This event will be triggered when the ViewHeader is Tapped. This event contains [ViewHeaderTappedEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderTappedEventArgs.html) argument which holds [DateTime](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.CellTappedEventArgs~Datetime.html) details in it.
@@ -164,7 +164,7 @@ schedule.TimeInterval = 180;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/timeinterval_day.png)
+![Schedule customize time interval day view](daymodule_images/timeinterval_day.png)
 
 >**NOTE**
 If you modify the `TimeInterval` value (in minutes), you need to change the time labels format by setting the `TimeFormat` value as "hh:mm". By default, TimeFormat value is `"hh a"`. You can refer [here](https://help.syncfusion.com/xamarin/sfschedule/dayview#time-label-formatting) for changing TimeFormat value.
@@ -182,7 +182,7 @@ schedule.TimeIntervalHeight = 180;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/dayview_height.png)
+![Schedule customize time slot height day view](daymodule_images/dayview_height.png)
 
 ## Change Working hours
 
@@ -192,12 +192,12 @@ Working hours in `DayView` of Schedule control will be differentiated with non-w
 {% highlight XAML %}
 <schedule:SfSchedule x:Name="schedule" ScheduleView="DayView">
     <schedule:SfSchedule.DayViewSettings>
-        <!--setting working hours properties -->
-        <schedule:DayViewSettings
-            StartHour="7.5"
-            EndHour="18.5">
+		<!--setting working hours properties -->
+        <schedule:DayViewSettings 
+            WorkStartHour="11.5"
+            WorkEndHour="17.5">
             <schedule:DayViewSettings.DayLabelSettings>
-                <schedule:DayLabelSettings TimeFormat="hh:mm" />
+                <schedule:DayLabelSettings TimeFormat="hh:mm"/>
             </schedule:DayViewSettings.DayLabelSettings>
         </schedule:DayViewSettings>
     </schedule:SfSchedule.DayViewSettings>
@@ -216,7 +216,7 @@ schedule.DayViewSettings = dayViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/changeworkinghours_day.png)
+![Schedule customizing working hours day view](daymodule_images/changeworkinghours_day.png)
 
 >**NOTE**
 No need to specify the decimal point values for `WorkStartHour` and `WorkEndHour`, if you don’t want to set the minutes.
@@ -253,7 +253,7 @@ schedule.DayViewSettings = dayViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/changestartendhour_day.png)
+![Schedule customizing start and end hour day view](daymodule_images/changestartendhour_day.png)
 
 >**NOTE**
 * `StartHour` must be greater than or equal to 0 and `EndHour` must be lesser than or equal to 24, otherwise `InvalidDataException` will be thrown.
@@ -299,7 +299,7 @@ dayViewSettings.TimeSlotBorderStrokeWidth = 5;
 schedule.DayViewSettings = dayViewSettings;
 {% endhighlight %}
 {% endtabs %}
-![](daymodule_images/timeslotappearance_day.png)
+![Schedule customizing time slot appearance day view](daymodule_images/timeslotappearance_day.png)
 
 ### Timeslot customization in Non Working hours
 
@@ -327,7 +327,7 @@ dayViewSettings.NonWorkingHoursTimeSlotColor = Color.FromHex("#fcf3c9");
 schedule.DayViewSettings = dayViewSettings;
 {% endhighlight %}
 {% endtabs %}
-![](daymodule_images/nonworkinghours_day.png)
+![Schedule non working hours day view](daymodule_images/nonworkinghours_day.png)
 
 >**NOTE**
 `TimeSlotBorderStrokeWidth` property common for both Working hours and Non-Working hour time slot customization.
@@ -370,7 +370,7 @@ dayViewSettings.NonAccessibleBlocks = nonAccessibleBlocksCollection;
 schedule.DayViewSettings = dayViewSettings;
 {% endhighlight %}
 
-![](daymodule_images/non-accessibleblock_day.png)
+![Schedule non accessible block day view](daymodule_images/non-accessibleblock_day.png)
 
 >**NOTE**
 Selection and related events will not be working in this blocks.
@@ -393,7 +393,7 @@ schedule.DayViewSettings = dayViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/timelabelformat_day.png)
+![Schedule customizing time label day view](daymodule_images/timelabelformat_day.png)
 
 ## Time Label Appearance
 
@@ -412,7 +412,7 @@ schedule.DayViewSettings = dayViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/timelabelappearance_day.png)
+![Schedule customizing time label appearance day view](daymodule_images/timelabelappearance_day.png)
 
 ## Time Label Size
 
@@ -432,7 +432,7 @@ schedule.DayViewSettings = dayViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/TimeLabelSize_Day.png)
+![Schedule cusotomizing time label size day view](daymodule_images/TimeLabelSize_Day.png)
 
 ## Selection
 You can customize the default appearance of selection UI in the timeslots.
@@ -469,7 +469,7 @@ schedule.SelectionStyle = selectionStyle;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/selectionstyle_day.png)
+![Schedule customizing selectin style day view](daymodule_images/selectionstyle_day.png)
 
 ### Selection customization using custom View
 You can replace the default selection UI with your custom view by setting [SelectionView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~SelectionView.html) property of `SfSchedule`.
@@ -496,7 +496,7 @@ schedule.SelectionView = customView;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/selectioncustomview_day.png)
+![Schedule customizing selection view day view](daymodule_images/selectioncustomview_day.png)
 
 ### Programmatic selection
 You can programmatically select the specific timeslot by setting corresponding date and time value to [SelectedDate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~SelectedDate.html) property of `SfSchedule`. By default, it is null.
@@ -523,5 +523,5 @@ You can download the entire source code of this demo for Xamarin.Forms from here
 * `SfSchedule` does not support multiple selection.
 * `SfSchedule` supports two-way binding of `SelectedDate` property.
 
-![](daymodule_images/selection_Day.png)
+![Schedule customizing selection day view](daymodule_images/selection_Day.png)
 

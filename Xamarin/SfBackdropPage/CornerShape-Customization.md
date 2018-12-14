@@ -13,10 +13,10 @@ Essential Backdrop Page supports corner shape customization that are illustrated
 
 ## Adjust the shape of front layer
 
-The SfBackdropPage allows to adjust the edge shape of the front layer which can be adjusted using the EdgeShape property.
+The SfBackdropPage allows to adjust the edge shape of the front layer which can be adjusted using the [`EdgeShape`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.XForms~Syncfusion.XForms.Backdrop.BackdropFrontLayer~EdgeShape.html) property.
 
 ### Display edge shape as curve
-The EdgeShape property of the SfBackdropPage allows the user to set the curve shape to the edge of the front layer.
+The [`EdgeShape`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.XForms~Syncfusion.XForms.Backdrop.BackdropFrontLayer~EdgeShape.html) property of the SfBackdropPage allows the user to set the curve shape to the edge of the front layer.
 
 {% tabs %} 
 
@@ -34,13 +34,10 @@ The EdgeShape property of the SfBackdropPage allows the user to set the curve sh
 {% highlight C# %} 
 
 this.FrontLayer = new BackdropFrontLayer()
-            {
-                Content = new Grid
-                {
-				
-                },
-				EdgeShape = EdgeShape.Curve
-            };
+{
+Content = new Grid(),
+EdgeShape = EdgeShape.Curve
+};
 
 {% endhighlight %}
 
@@ -48,7 +45,7 @@ this.FrontLayer = new BackdropFrontLayer()
 
 ### Display edge shape as flat
 
-The EdgeShape property of the SfBackdropPage allows the user to set the flat shape to the edge of the front layer.
+The [`EdgeShape`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.XForms~Syncfusion.XForms.Backdrop.BackdropFrontLayer~EdgeShape.html) property of the SfBackdropPage allows the user to set the flat shape to the edge of the front layer.
 
 {% tabs %} 
 
@@ -66,33 +63,34 @@ The EdgeShape property of the SfBackdropPage allows the user to set the flat sha
 {% highlight C# %} 
 
 this.FrontLayer = new BackdropFrontLayer()
-            {
-                Content = new Grid
-                {
-				
-                },
-				EdgeShape = EdgeShape.Flat
-            };
+{
+Content = new Grid(),
+EdgeShape = EdgeShape.Flat
+};
 
 {% endhighlight %}
 
 {% endtabs %}
 
+>**NOTE**
+Flat type of [`EdgeShape`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.XForms~Syncfusion.XForms.Backdrop.BackdropFrontLayer~EdgeShape.html) is not currently available in UWP platform.
 
 ## Set corner radius of front layer
 
 The SfBackdropPage allows to set the corner radius for the front layer. 
 
-### Customize rIght corner radius of front layer
+### Customize corner radius of front layer
 
-The right corner radius of the front layer in the SfBackdropPage can be set by using the RightCornerRadius property.
+The right and left corner radius of the front layer in the SfBackdropPage can be set by using the [RightCornerRadius](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.XForms~Syncfusion.XForms.Backdrop.BackdropFrontLayer~RightCornerRadius.html) and [LeftCornerRadius](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.XForms~Syncfusion.XForms.Backdrop.BackdropFrontLayer~LeftCornerRadius.html) property.
+
+And also, corner radius property is applicable when [`EdgeShape`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.XForms~Syncfusion.XForms.Backdrop.BackdropFrontLayer~EdgeShape.html) property set to curve or flat.
 
 {% tabs %} 
 
 {% highlight xaml %} 
 
 <backdrop:SfBackdropPage.FrontLayer>
-        <backdrop:BackdropFrontLayer RightCornerRadius="30">
+        <backdrop:BackdropFrontLayer LeftCornerRadius="0" RightCornerRadius="30" EdgeShape="Curve">
             <Grid />
         </backdrop:BackdropFrontLayer>
 </backdrop:SfBackdropPage.FrontLayer> 
@@ -103,46 +101,15 @@ The right corner radius of the front layer in the SfBackdropPage can be set by u
 {% highlight C# %} 
 
 this.FrontLayer = new BackdropFrontLayer()
-            {
-                Content = new Grid
-                {
-				
-                },
-				RightCornerRadius = 30
-            };
+{
+	Content = new Grid(),
+	LeftCornerRadius = 0,
+	RightCornerRadius = 30,
+	EdgeShape = EdgeShape.Curve
+};
 
 {% endhighlight %}
 
 {% endtabs %}
 
-### Customize left corner radius of front layer
 
-The left corner radius of the front layer in the SfBackdropPage can be set by using the LeftCornerRadius property.
-
-{% tabs %} 
-
-{% highlight xaml %} 
-
-<backdrop:SfBackdropPage.FrontLayer>
-        <backdrop:BackdropFrontLayer LeftCornerRadius="30">
-            <Grid />
-        </backdrop:BackdropFrontLayer>
-</backdrop:SfBackdropPage.FrontLayer> 
-
-
-{% endhighlight %}
-
-{% highlight C# %} 
-
-this.FrontLayer = new BackdropFrontLayer()
-            {
-                Content = new Grid
-                {
-				
-                },
-				LeftCornerRadius = 30
-            };
-
-{% endhighlight %}
-
-{% endtabs %}

@@ -13,7 +13,7 @@ Essential Backdrop Page supports reveal height customization which is used, when
 
 ## Set reveal height of front layer
 
-Height of revealing back layer can be limited by setting the RevealedHeight property.
+Height of revealing back layer can be limited by setting the [`RevealedHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.XForms~Syncfusion.XForms.Backdrop.SfBackdropPage~BackLayerRevealOption.html) property.
 
 {% tabs %} 
 
@@ -31,13 +31,10 @@ Height of revealing back layer can be limited by setting the RevealedHeight prop
 {% highlight C# %} 
 
 this.FrontLayer = new BackdropFrontLayer()
-            {
-                Content = new Grid
-                {
-				
-                },
-				RevealedHeight = 50
-            };
+{
+	Content = new Grid(),
+	RevealedHeight = 30
+};
 
 {% endhighlight %}
 
@@ -45,11 +42,11 @@ this.FrontLayer = new BackdropFrontLayer()
 
 ## Backdrop Page revealing option
 
-The backdrop page enables revealing strategy using the BackLayerRevealOption when tapping the hamburger icon at the top-right corner.
+The backdrop page enables revealing strategy using the [`BackLayerRevealOption`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.XForms~Syncfusion.XForms.Backdrop.SfBackdropPage~BackLayerRevealOption.html) when tapping the hamburger icon at the top-right corner.
 
 ### Reveal based on back layer content
 
-Revealing height depends on the content of back layer when setting the BackLayerRevealOption property as `Auto`.
+Revealing height depends on the content of back layer when setting the [`BackLayerRevealOption`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.XForms~Syncfusion.XForms.Backdrop.SfBackdropPage~BackLayerRevealOption.html) property as `Auto`.
 
 {% tabs %} 
 
@@ -83,9 +80,9 @@ namespace BackdropGettingStarted
 
 {% endtabs %}
 
-### Reveal to the bottom of the screen
+### Reveal based on inbuilt property
 
-Revealing happens towards bottom of the screen when setting the BackLayerRevealOption property as Fill.
+Revealing is done based on [`RevealedHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.XForms~Syncfusion.XForms.Backdrop.SfBackdropPage~BackLayerRevealOption.html) property when setting the [`BackLayerRevealOption`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.XForms~Syncfusion.XForms.Backdrop.SfBackdropPage~BackLayerRevealOption.html) property as Fill.
 
 {% tabs %} 
 

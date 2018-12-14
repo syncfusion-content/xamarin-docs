@@ -1247,3 +1247,22 @@ public class ListViewItemExt : ListViewItem
 Here `FadeTo` animation is applied for [ListViewItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ListViewItem.html), when comes in the view. You can also download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ExtensionofListViewItem-Appearing-1339007241).
 
 ![Xamarin.Forms listview with animation](SfListView_images/SfListView-ItemAppearingAnimation.gif)
+
+### Right to left(RTL)
+
+ListView supports to change the flow of text from right to left direction by setting the `FlowDirection` property.
+
+{% tabs %}
+{% highlight xaml %}
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+  <syncfusion:SfListView x:Name="listView"
+                 ItemsSource="{Binding Products}"
+                 FlowDirection="RightToLeft"/>
+</ContentPage>
+{% endhighlight %}
+{% highlight c# %}
+this.FlowDirection = FlowDirection.RightToLeft;
+{% endhighlight %}
+{% endtabs %}
+
+![Xamarin.Forms listview with right to left](SfListView_images/SfListView-RightToLeft.png)

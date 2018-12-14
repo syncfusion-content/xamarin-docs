@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grouping in SfListView
+title: Grouping in Syncfusion ListView
 description: Describes about the grouping and its functionalities in SfListView.
 platform: xamarin
 control: SfListView

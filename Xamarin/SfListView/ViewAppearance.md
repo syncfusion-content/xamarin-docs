@@ -1,6 +1,6 @@
 ---
 layout: post
-title: View Appearance in SfListView
+title: View Appearance in Syncfusion ListView
 description: Describes about view appearance and different functionalities in SfListView.
 platform: xamarin
 control: SfListView

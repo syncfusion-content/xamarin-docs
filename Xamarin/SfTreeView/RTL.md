@@ -35,25 +35,27 @@ Right-to-left localization can then be tested by changing the device/emulator to
 
 ### iOS
 
-The required right-to-left locale should be added as a supported language to the array items for the `CFBundleLocalizations` key in `Info.plist`. The following example shows Arabic having been added to the array for the `CFBundleLocalizations` key:
+To notify your application that it’s allowed to recognize a right-to-left layout. For iOS, add the right-to-left language in the `CFBundleLocalizations` section of your `Info.plist`, and make sure you’re targeting vesion should `iOS 9+`.
 
 {% tabs %}
 {% highlight xml %}
 
-<key>CFBundleLocalizations</key>
-<array>
-    <string>en</string>
-    <string>ar</string>
+<key>CFBundleDevelopmentRegion</key> 
+<string>en</string> 
+<key>CFBundleLocalizations</key> 
+<array> 
+    <string>en</string> 
+    <string>ar</string> 
 </array>
-
 {% endhighlight %}
 {% endtabs %}
 
-Right-to-left localization can then be tested by changing the device/emulator to use any of right-to-left language.
+Right-to-left localization can then be tested by changing the device/emulator to use any of right-to-left language in `Settings > General > Language & Region`.
 
 N> Right-to-left localization requires the use of `iOS 9` or higher, and `API 17` or higher on Android.
 
 ### Universal Windows Platform (UWP)
+
 The required language resources should be specified in the `<Resources>` node of the `Package.appxmanifest` file. The following example shows `Arabic` language having been added to the <Resources> node:
 
 {% tabs %}

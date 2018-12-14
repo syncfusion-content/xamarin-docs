@@ -155,7 +155,7 @@ this.PropertyChanged(this, new PropertyChangedEventArgs(name));
 {% endtabs %}
 
 
-![](images/MultiSelect/TokenRepresentation_Wrap.png)
+![token represents with image and text with wrap mode](images/MultiSelect/TokenRepresentation_Wrap.png)
  
 ### Token Customization
 
@@ -177,8 +177,7 @@ Customization can be done for Token. There are various ways to customize the tok
 
 * `CornerRadius` - sets the corner radius for the token.
 
-* `DeleteButtonPlacement` - DeleteButtonPlacement property in `TokenSettings` allows the user to change the delete button position in token either in `Left` or `Right`. By default, it arranges in right side.
-
+* `DeleteButtonPlacement` - Allows you change the position of delete button in token to either `Left` or `Right`. By default, it is set to the right.
 
 {% tabs %}
 
@@ -331,7 +330,7 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-![](images/MultiSelect/TokenRepresentation.png)
+![token represents the image and text with closebutton](images/MultiSelect/TokenRepresentation.png)
 
 ## Delimiter
 
@@ -359,7 +358,7 @@ autoComplete.Delimiter=",";
 
 {% endtabs %}
 
-![](images/MultiSelect/Delimiter.png)
+![delimiter supports to separate the items with delimiter text](images/MultiSelect/Delimiter.png)
 
 ### Selection indicator
 

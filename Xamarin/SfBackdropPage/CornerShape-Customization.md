@@ -15,75 +15,13 @@ Essential Backdrop Page supports corner shape customization that are illustrated
 
 The SfBackdropPage allows to adjust the edge shape of the front layer which can be adjusted using the [`EdgeShape`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.XForms~Syncfusion.XForms.Backdrop.BackdropFrontLayer~EdgeShape.html) property.
 
-### Display edge shape as curve
-The [`EdgeShape`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.XForms~Syncfusion.XForms.Backdrop.BackdropFrontLayer~EdgeShape.html) property of the SfBackdropPage allows the user to set the curve shape to the edge of the front layer.
+### Customize the corner shape of front layer
 
-{% tabs %} 
+The [`EdgeShape`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.XForms~Syncfusion.XForms.Backdrop.BackdropFrontLayer~EdgeShape.html) property of the SfBackdropPage allows the user to set the curve or flat shape to the edge of the front layer.
 
-{% highlight xaml %} 
+The SfBackdropPage allows to adjust the corner radius of the front layer. The right and left corner radius of the front layer in the SfBackdropPage can be set by using the [RightCornerRadius](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.XForms~Syncfusion.XForms.Backdrop.BackdropFrontLayer~RightCornerRadius.html) and [LeftCornerRadius](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.XForms~Syncfusion.XForms.Backdrop.BackdropFrontLayer~LeftCornerRadius.html) property.
 
-<backdrop:SfBackdropPage.FrontLayer>
-        <backdrop:BackdropFrontLayer EdgeShape="Curve">
-            <Grid />
-        </backdrop:BackdropFrontLayer>
-</backdrop:SfBackdropPage.FrontLayer> 
-
-
-{% endhighlight %}
-
-{% highlight C# %} 
-
-this.FrontLayer = new BackdropFrontLayer()
-{
-    Content = new Grid(),
-    EdgeShape = EdgeShape.Curve
-};
-
-{% endhighlight %}
-
-{% endtabs %}
-
-### Display edge shape as flat
-
-The [`EdgeShape`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.XForms~Syncfusion.XForms.Backdrop.BackdropFrontLayer~EdgeShape.html) property of the SfBackdropPage allows the user to set the flat shape to the edge of the front layer.
-
-{% tabs %} 
-
-{% highlight xaml %} 
-
-<backdrop:SfBackdropPage.FrontLayer>
-        <backdrop:BackdropFrontLayer EdgeShape="Flat">
-            <Grid />
-        </backdrop:BackdropFrontLayer>
-</backdrop:SfBackdropPage.FrontLayer> 
-
-
-{% endhighlight %}
-
-{% highlight C# %} 
-
-this.FrontLayer = new BackdropFrontLayer()
-{
-    Content = new Grid(),
-    EdgeShape = EdgeShape.Flat
-};
-
-{% endhighlight %}
-
-{% endtabs %}
-
->**NOTE**
-Flat type of [`EdgeShape`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.XForms~Syncfusion.XForms.Backdrop.BackdropFrontLayer~EdgeShape.html) property is not currently available in UWP platform.
-
-## Set corner radius of front layer
-
-The SfBackdropPage allows to set the corner radius for the front layer. 
-
-### Customize corner radius of front layer
-
-The right and left corner radius of the front layer in the SfBackdropPage can be set by using the [RightCornerRadius](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.XForms~Syncfusion.XForms.Backdrop.BackdropFrontLayer~RightCornerRadius.html) and [LeftCornerRadius](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.XForms~Syncfusion.XForms.Backdrop.BackdropFrontLayer~LeftCornerRadius.html) property.
-
-And also, corner radius property is applicable when [`EdgeShape`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.XForms~Syncfusion.XForms.Backdrop.BackdropFrontLayer~EdgeShape.html) property set to curve or flat.
+And also, corner radius property is applicable even when the [`EdgeShape`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.XForms~Syncfusion.XForms.Backdrop.BackdropFrontLayer~EdgeShape.html) property set to curve or flat.
 
 {% tabs %} 
 
@@ -111,5 +49,9 @@ this.FrontLayer = new BackdropFrontLayer()
 {% endhighlight %}
 
 {% endtabs %}
+
+>**NOTE**
+Flat type of [`EdgeShape`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.XForms~Syncfusion.XForms.Backdrop.BackdropFrontLayer~EdgeShape.html) property is not currently available in UWP platform.
+
 
 

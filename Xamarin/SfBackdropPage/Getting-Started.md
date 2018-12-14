@@ -161,18 +161,18 @@ The back layer holds actionable content (navigation or filtration), which is rel
 {% highlight C# %} 
 
 this.BackLayer = new BackdropBackLayer
+{
+    Content = new StackLayout
     {
-        Content = new StackLayout
+        Children =
         {
-            Children =
+            new ListView
             {
-                new ListView
-                {
-                    ItemsSource = new string[] { "Appetizers", "Soups", "Desserts" ,"Salads"}
-                }
+                ItemsSource = new string[] { "Appetizers", "Soups", "Desserts" ,"Salads"}
             }
         }
-    };
+    }
+};
 
 
 {% endhighlight %}

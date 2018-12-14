@@ -211,9 +211,9 @@ this.FrontLayer = new BackdropFrontLayer()
 
 ## Reveal and conceal the back layer
 
-To reveal the back layer, perform swipe or fling actions at the top of the front layer or set the `IsBackLayerRevealed` property to `true`. By default, it is set to `false`. 
+To reveal the back layer, perform swipe or fling actions at the top of the front layer or set the [`IsBackLayerRevealed`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.XForms~Syncfusion.XForms.Backdrop.SfBackdropPage~IsBackLayerRevealed.html) property to `true`. By default, it is set to `false`. 
 
-Similarly, to conceal the back layer, set the `IsBackLayerRevealed` property to `false` or perform swipe/ fling actions.
+Similarly, to conceal the back layer, set the [`IsBackLayerRevealed`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.XForms~Syncfusion.XForms.Backdrop.SfBackdropPage~IsBackLayerRevealed.html) property to `false` or perform swipe/ fling actions.
 
 {% tabs %} 
 

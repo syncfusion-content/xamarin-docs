@@ -7,7 +7,7 @@ control: Troubleshooting
 documentation: ug
 ---
 
-# System.Void Syncfusion.XForms.Android.TextInputLayout.InputLayoutBorder::OnDraw(Android.Graphics.Canvas) occurs during build the project.
+# Error processing method: System.Void Syncfusion.XForms.Android.TextInputLayout.InputLayoutBorder::OnDraw(Android.Graphics.Canvas) occurs during build the project.
 
 Sometimes this kind of error may occur while compiling the core project after update the version from 16.3.0.21 to 16.3.0.29.
 

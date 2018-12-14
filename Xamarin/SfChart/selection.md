@@ -196,7 +196,7 @@ public class ChartSelectionBehaviorExt : ChartSelectionBehavior
             var selectedSeres = args.SelectedSeries;
             var dataPointIndex = args.SelectedDataPointIndex;
             var previousSelectedIndex = args.PreviousSelectedIndex;
-	  var previousSelectedSeries = args.PreviousSelectedSeries;			
+	    var previousSelectedSeries = args.PreviousSelectedSeries;			
    }
 }
 
@@ -221,7 +221,7 @@ public class ChartSelectionBehaviorExt : ChartSelectionBehavior
             var selectedSeries = args.SelectedSeries;
             var dataPointIndex = args.SelectedDataPointIndex;
             var previousSelectedIndex = args.PreviousSelectedIndex;
-	  var previousSelectedSeries = args.PreviousSelectedSeries;	
+	    var previousSelectedSeries = args.PreviousSelectedSeries;	
         }
 }
 

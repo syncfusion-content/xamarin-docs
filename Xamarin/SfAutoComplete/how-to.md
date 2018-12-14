@@ -7,9 +7,9 @@ control : AutoComplete
 documentation : ug
 ---
 
-# How to perform an operation while selecting a item from dropdown items?
+# How to perform an operation when selecting an item from drop-down list?
 
-We can perform an operation while selecting an item among the filtered suggestions using `SelectionChanged` event. SelectionChanged event returns the following arguments
+You can perform an operation when selecting an item among the filtered suggestions using the `SelectionChanged` event. The SelectionChanged event returns the following arguments:
 
 <table>
 <tr>
@@ -18,16 +18,16 @@ We can perform an operation while selecting an item among the filtered suggestio
 </tr>
 <tr>
 <td>AddedItems</td>
-<td>It shows recently added item in AutoComplete.</td>
+<td>Shows recently added item in AutoComplete.</td>
 </tr>
 <tr>
 <td>RemovedItems</td>
-<td>It shows recently removed items in AutoComplete.</td>
+<td>Shows recently removed items in AutoComplete.</td>
 </tr>
 </tr>
 <tr>
 <td>Value</td>
-<td>It holds all added items in AutoComplete</td>
+<td>Holds all added items in AutoComplete.</td>
 </tr>
 </table>
 
@@ -153,11 +153,11 @@ namespace Events
 
 {% endhighlight %}
 
-While adding the items
+The following screenshot illustrates the result of adding the item.
 
 ![added item is shown in alert window](images/How-To/AddingItem.png)
 
-While removing the item
+The following screenshot illustrates the result of removing the item.
 
 ![removed item is shown in alert window](images/How-To/RemovingItem.png)
 

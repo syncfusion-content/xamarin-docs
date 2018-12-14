@@ -9,7 +9,7 @@ documentation: ug
 
 # System.Void Syncfusion.XForms.Android.TextInputLayout.InputLayoutBorder::OnDraw(Android.Graphics.Canvas) occurs during build the project.
 
-Sometimes this kind of error may occur while compiling the core project due to the error processing method(OnDraw(Android.Graphics.Canvas)).
+Sometimes this kind of error may occur while compiling the core project after update the version from 16.3.0.21 to 16.3.0.29.
 
 <table>
 <tr>

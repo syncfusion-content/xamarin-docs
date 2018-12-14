@@ -43,7 +43,7 @@ When setting `Target Framework Version` of the application to any lower version(
 
 You can resolve this issue by 
 
-* Setting Target Framework Version of the application to latest version (Android 8.1 or greater), but you can set the Target Android Version to any required version. To know more these settings, refer the below link,  
+* Setting `Target Framework Version` of the application to latest version (Android 8.1 or greater), but you can set the `Target Android Version` to any required version. To know more these settings, refer the below link,  
   
 https://docs.microsoft.com/en-us/xamarin/android/app-fundamentals/android-api-levels?tabs=windows  
 

@@ -38,12 +38,12 @@ public class MusicInfoRepository
         TreeViewOnDemandCommand = new Command(ExecuteOnDemandLoading, CanExecuteOnDemandLoading);
     }
 
-    private bool CanExecuteOnDemandLoading(object arg)
+    private bool CanExecuteOnDemandLoading(object sender)
     {
-        var haschildnodes = ((arg as TreeViewNode).Content as MusicInfo).HasChildNodes;
-        if (haschildnodes)
+        var hasChildNodes = ((sender as TreeViewNode).Content as MusicInfo).HasChildNodes;
+        if (hasChildNodes)
         {
-            if ((arg as TreeViewNode).ChildNodes.Count > 0)
+            if ((sender as TreeViewNode).ChildNodes.Count > 0)
                 return false;
             else
                 return true;
@@ -130,7 +130,7 @@ public class MusicInfoRepository
 {% endtabs %}
 
 `CanExecuteOnDemandLoading` method is called when each item is initialized and defines whether a load-on-demand feature is enabled for this item.
-Finally, define TreeView with the LoadOnDemandCommand,
+Finally, define TreeView with the `LoadOnDemandCommand`,
 
 {% tabs %}
 {% highlight xaml %}

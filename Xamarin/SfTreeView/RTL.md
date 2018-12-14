@@ -35,7 +35,7 @@ Right-to-left localization can then be tested by changing the device/emulator to
 
 ### iOS
 
-To notify your application that it’s allowed to recognize a right-to-left layout. For iOS, add the right-to-left language in the `CFBundleLocalizations` section of your `Info.plist`, and make sure you’re targeting vesion should `iOS 9+`.
+To notify your application that it’s allowed to recognize a right-to-left layout. For iOS, add the right-to-left language in the `CFBundleLocalizations` section of your `Info.plist`, and make sure you’re targeting version should `iOS 9+`.
 
 {% tabs %}
 {% highlight xml %}
@@ -74,7 +74,7 @@ For more information regarding platform setup for right-to-left localization you
 
 ## FlowDirection
 
-`Flowdirection` gets or sets the direction in which UI elements flow within any parent element that controls their layout, and should be set to one of the FlowDirection enumeration values:
+`FlowDirection` gets or sets the direction in which UI elements flow within any parent element that controls their layout, and should be set to one of the FlowDirection enumeration values:
 
 * `LeftToRight` - Indicates that view will be laid out left to right. This is the default when the view has no parent.
 * `RightToLeft` - Indicates that view will be laid out right to left.

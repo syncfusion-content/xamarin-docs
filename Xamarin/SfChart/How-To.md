@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customizations in SfChart
+title: Customizations in Syncfusion SfChart
 description: Customizations in SfChart
 platform: xamarin
 control: Chart

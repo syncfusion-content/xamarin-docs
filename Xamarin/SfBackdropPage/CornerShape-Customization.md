@@ -73,7 +73,7 @@ EdgeShape = EdgeShape.Flat
 {% endtabs %}
 
 >**NOTE**
-Flat type of [`EdgeShape`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.XForms~Syncfusion.XForms.Backdrop.BackdropFrontLayer~EdgeShape.html) is not currently available in UWP platform.
+Flat type of [`EdgeShape`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.XForms~Syncfusion.XForms.Backdrop.BackdropFrontLayer~EdgeShape.html) property is not currently available in UWP platform.
 
 ## Set corner radius of front layer
 

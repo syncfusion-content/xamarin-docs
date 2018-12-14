@@ -17,7 +17,7 @@ Syncfusion components for Xamarin.Forms are available in [nuget.org](https://w
 
 ![Xamarin badge view nuget](getting-started_images/cg_nuget.png)
 
-To learn more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). If you prefer to manually reference the assemblies instead of using NuGet, refer to this `documentation` to learn about the dependent assemblies.
+To learn more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). If you prefer to manually reference the assemblies instead of using NuGet, refer to this [`documentation`](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfbadgeview) to learn about the dependent assemblies.
 
 N> Install the same version of the badge view in all the projects.
 

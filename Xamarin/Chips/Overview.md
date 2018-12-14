@@ -13,8 +13,8 @@ The chips control for Xamarin.Forms presents information in an interactive and c
 
 ## Key Features
 
-* Supports using StackLayout, FlexLayout, Grid, AbsoluteLayout, and RelativeLayout as the a layout for adding and arranging chips.
-* Provides options to choose from the four different types Input, Choice, Filter and Action chips each has different behavior as a group. 
+* Supports using StackLayout, FlexLayout, Grid, AbsoluteLayout, and RelativeLayout as a layout for adding and arranging chips.
+* Provides options to choose from four different types: Input, Choice, Filter, and Action, each chip has different behavior as a group. 
 * Allows you make single and multiple selections in the Choice and Filter chips, respectively.
 * Provides a way to add a view at the end of the group using the Input type chips.
 * Has Command support for the chip group and individual chips in Action chips type.

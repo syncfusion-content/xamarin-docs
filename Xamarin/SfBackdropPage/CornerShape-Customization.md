@@ -21,7 +21,7 @@ Both the side of the corner radius can be customized separately by setting [Left
 {% highlight xaml %} 
 
 <backdrop:SfBackdropPage.FrontLayer>
-        <backdrop:BackdropFrontLayer LeftCornerRadius="0" RightCornerRadius="30" EdgeShape="Curve">
+        <backdrop:BackdropFrontLayer LeftCornerRadius="0" RightCornerRadius="30" EdgeShape="Flat">
             <Grid />
         </backdrop:BackdropFrontLayer>
 </backdrop:SfBackdropPage.FrontLayer> 
@@ -36,12 +36,14 @@ this.FrontLayer = new BackdropFrontLayer()
 	Content = new Grid(),
 	LeftCornerRadius = 0,
 	RightCornerRadius = 30,
-	EdgeShape = EdgeShape.Curve
+	EdgeShape = EdgeShape.Flat
 };
 
 {% endhighlight %}
 
 {% endtabs %}
+
+![Flat shape top right corner](CornerShape_images/EdgeShape_Flat_codsnippet.jpg)
 
 >**NOTE**
 Flat type shape is not currently available for UWP platform.

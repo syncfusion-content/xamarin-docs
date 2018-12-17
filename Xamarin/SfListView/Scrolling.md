@@ -27,7 +27,9 @@ You can also scroll to specified data in `SfListView` by using [ScrollTo](https:
 {% highlight c# %}
 
 int index = listView.DataSource.DisplayItems.IndexOf(viewModel.Customers[2]); 
+// Programatic scrolling based on the item index.
 listView.LayoutManager.ScrollToRowIndex(index, Syncfusion.ListView.XForms.ScrollToPosition.Center, true); 
+// Programatic scrolling based on the item data.
 listView.ScrollTo(ViewModel.Customers[index], Syncfusion.ListView.XForms.ScrollToPosition.Center, true);
 
 {% endhighlight %}

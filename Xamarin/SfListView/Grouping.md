@@ -589,9 +589,9 @@ listView.IsStickyGroupHeader = true;
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot shows the output when the group headers are sticky.
+The following image shows the output when the group headers are sticky.
 
-![Sticky group header in listview](SfListView_images/SfListView-StickGroupHeader.gif)
+![Sticky group header in listview](SfListView_images/Stick-Group-Header-Xamarin-Forms-ListView.gif)
 
 ## Group header customization
 

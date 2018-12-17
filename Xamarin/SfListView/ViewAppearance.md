@@ -1250,9 +1250,9 @@ Here `FadeTo` animation is applied for [ListViewItem](https://help.syncfusion.co
 
 ### Right to left(RTL)
 
-ListView supports to change the flow of text from right to left direction by setting the `FlowDirection` property. For UWP platform, it is mandatory to set the flow direction in renderer but not in pcl. It will support in Xamarin.Forms version 3.0 and above.
+ListView supports to change the flow of text from right to left direction by setting the `FlowDirection` property. It will support in Xamarin.Forms version 3.0 and above.
 
-N> Label does not support the right to left direction. To change the flow direction, set the HorizontalOptions for the label as `StartAndExpand`.
+Follow the code example for Android, iOS and macOS platform.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1267,7 +1267,24 @@ this.FlowDirection = FlowDirection.RightToLeft;
 {% endhighlight %}
 {% endtabs %}
 
-![Xamarin.Forms listview with right to left](SfListView_images/SfListView-RightToLeft.png)
+For UWP platform, set the flow direction in the `MainPage` constructor of renderer as demonstrated in the following code example:
+
+{% tabs %}
+{% highlight c# %}
+public MainPage()
+{
+    …
+    SfListViewRenderer.Init();
+    this.FlowDirection = FlowDirection.RightToLeft;
+    LoadApplication (new App ());
+    …
+}
+{% endhighlight %} 
+{% endtabs %}
+
+N> Label does not support the right to left direction. Please refer the [link](https://github.com/xamarin/Xamarin.Forms/issues/3611).
+
+![Xamarin.Forms listview with right to left](SfListView_images/Right-To-Left-Xamarin-Forms-ListView.png)
 
 ### Limitations
 

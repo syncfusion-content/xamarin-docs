@@ -13,7 +13,7 @@ keywords: button, SfCheckBox, CheckBox
 This section explains the steps required to configure the `SfCheckBox` control in a real-time scenario and provides a walk-through on some of the customization features available in `SfCheckBox` control.
 
 ## Add SfCheckBox reference
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add maskededit to your project, open the NuGet package manager in Visual Studio, and search for "[syncfusion.xamarin.buttons](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons)", and then install it. 
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add checkBox to your project, open the NuGet package manager in Visual Studio, and search for "[syncfusion.xamarin.buttons](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons)", and then install it. 
 
 ![](Images/nuget.png)
 

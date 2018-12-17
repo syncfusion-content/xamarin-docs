@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started in SfCheckBox for Xamarin.Forms platform
+title: Getting started in Syncfusion CheckBox for Xamarin.Forms platform
 description: Learn how to customize the basic features of SfCheckBox
 platform: Xamarin.Forms
 control: SfCheckBox

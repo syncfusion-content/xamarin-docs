@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started in SfRadioButton for Xamarin.Forms platform
+title: Getting started in Syncfusion Radio Button for Xamarin.Forms platform
 description: Learn how to customize the basic features of SfRadioButton
 platform: Xamarin.Forms
 control: SfRadioButton

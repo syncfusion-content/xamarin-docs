@@ -24,7 +24,7 @@ pdfViewerControl.EnableFormFilling = false;
 {% endhighlight %}
 {% endtabs %}
 
-N>**By default, the EnableFormFilling property is set to true.
+N>By default, the EnableFormFilling property is set to true.
 
 ## How to flatten and save the form fields data
 

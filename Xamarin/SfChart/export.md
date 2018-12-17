@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Exporting options in Essential Xamarin.Forms Chart 
+title:  Exporting options in Essential Syncfusion.Xamarin.Forms Chart 
 description: How to export the Chart as an image
 platform: xamarin
 control: Chart
@@ -11,7 +11,7 @@ documentation: ug
 
 ## Export as an image
 
-You can export the Chart as a JPG image using [`SaveAsImage`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~SaveAsImage.html#) method of [`SfChart`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html#).
+You can export the Chart as a JPG image using [`SaveAsImage`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~SaveAsImage.html#) method of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html#).
 
 {% tabs %} 
 

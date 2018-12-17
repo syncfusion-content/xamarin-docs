@@ -58,7 +58,8 @@ The following code example illustrates using `SfDataPager` with the data grid co
                            Grid.Row="0"           
                            PageSize="15" 
                            HeightRequest ="50"
-                           NumericButtonCount="20">
+                           NumericButtonCount="20"
+                           Source="{Binding Info}">
            
         <sfPager:SfDataPager.HeightRequest>
           <OnPlatform x:TypeArguments="x:Double"
@@ -72,7 +73,9 @@ The following code example illustrates using `SfDataPager` with the data grid co
                          Grid.Row="1"
                          AutoGenerateColumns="true"
                          ColumnSizer="Star"
-                         SelectionMode="Single">             
+                         SelectionMode="Single"
+                         ItemsSource="{Binding PagedSource, Source={x:Reference dataPager}}"  
+                         >
       </sfgrid:SfDataGrid>
     </Grid> 
   </local:SamplePage.ContentView>

@@ -15,7 +15,7 @@ This section explains the steps required to configure the `SfCheckBox` control i
 ## Add SfCheckBox reference
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add checkbox to your project, open the NuGet package manager in Visual Studio, and search for "[syncfusion.xamarin.buttons](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons)", and then install it. 
 
-![](Images/nuget.png)
+![Xamarin.Forms CheckBox NuGet](Images/nuget.png)
 
 N>Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
@@ -122,7 +122,7 @@ checkBox.Text = "CheckBox";
 {% endhighlight %}
 {% endtabs %}
 
-![](Images/Caption.png) 
+![Xamarin.Forms CheckBox caption](Images/Caption.png) 
 
 This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Forms/Samples/CheckBox_GettingStarted.zip ).
 
@@ -133,7 +133,7 @@ The three visual states of `SfCheckBox` are:
 * Unchecked
 * Indeterminate
 
-![](Images/States.png) 
+![Xamarin.Forms CheckBox states](Images/States.png) 
 
 You can change the state of the check box using the `IsChecked` property of `SfCheckBox`. In checked state, a tick mark is added to the visualization of check box.
 
@@ -199,7 +199,7 @@ checkBox.IsChecked = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](Images/Agree.png)
+![Xamarin.Forms CheckBox tri-state](Images/Agree.png)
 
 Multiple check boxes can be used as a group for multi-select scenarios in which a user chooses one or more items from the group of choices that are not mutually exclusive.
 
@@ -227,7 +227,7 @@ onion.IsChecked = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](Images/StateChange.png)
+![Xamarin.Forms CheckBox multi-selection](Images/StateChange.png)
 
 This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Forms/Samples/CheckBox_StateChanging.zip ).
 
@@ -323,6 +323,6 @@ private void CheckBox_StateChanged(object sender, StateChangedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](Images/Inter1.jpg) ![](Images/Inter2.jpg)
+![Xamarin.Forms CheckBox intermediate state](Images/Inter1.jpg) ![](Images/Inter2.jpg)
 
 This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Forms/Samples/CheckBox_IndeterminateState.zip ).

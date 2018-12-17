@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started in SfRadioButton for Xamarin.Forms platform
+title: Getting started in Syncfusion Radio Button for Xamarin.Forms platform
 description: Learn how to customize the basic features of SfRadioButton
 platform: Xamarin.Forms
 control: SfRadioButton
@@ -13,9 +13,9 @@ keywords: button, SfRadioButton, RadioButton
 This section explains the steps required to configure the `SfRadioButton` control in a real-time scenario and provides a walk-through on some of the customization features available in `SfRadioButton` control.
 
 ## Add SfRadioButton reference
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add maskededit to your project, open the NuGet package manager in Visual Studio, and search for "[syncfusion.xamarin.buttons](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons)", and then install it. 
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add radio button to your project, open the NuGet package manager in Visual Studio, and search for "[syncfusion.xamarin.buttons](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons)", and then install it. 
 
-![](Images/nuget.png) 
+![Xamarin.Forms Radio Button NuGet](Images/nuget.png) 
 
 N>Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
@@ -122,7 +122,7 @@ radioButton.Text = "RadioButton";
 {% endhighlight %}
 {% endtabs %}
 
-![](Images/Caption.png)
+![Xamarin.Forms Radio Button caption text](Images/Caption.png)
 
 This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Forms/Samples/RadioButton_GettingStarted.zip).
 
@@ -157,6 +157,6 @@ radioGroup.Children.Add(female);
 
 N>`SfRadioButtons` are mutually exclusive among them when they are defined within `SfRadioGroup`.
 
-![](Images/StateChage.png)
+![Xamarin.Forms Radio Button states](Images/StateChage.png)
 
 This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Forms/Samples/RadioButton_StateChanging.zip).

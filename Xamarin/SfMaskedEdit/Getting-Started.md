@@ -14,9 +14,9 @@ This section explains you the steps required to configure a `SfMaskedEdit` contr
 
 ## Add SfMaskedEdit reference
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add maskededit to your project, open the NuGet package manager in Visual Studio, and search for "[syncfusion.xamarin.sfmaskededit](https://www.nuget.org/packages/Syncfusion.Xamarin.SfMaskedEdit)", and then install it. 
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add masked edit to your project, open the NuGet package manager in Visual Studio, and search for "[syncfusion.xamarin.sfmaskededit](https://www.nuget.org/packages/Syncfusion.Xamarin.SfMaskedEdit)", and then install it. 
 
-![](SfMaskedEditImages/nuget.png) 
+![Xamarin.Forms masked edit nuget](SfMaskedEditImages/nuget.png) 
 
 N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
@@ -139,6 +139,6 @@ Refer to this [link](masktype.html) to know more about the Mask characters and M
 
 Run the project and check if you get the following output to make sure that you have configured your project properly to add `SfMaskedEdit`.
 
-![](SfMaskedEditImages/GettingStarted.png)
+![Xamarin.Forms masked edit](SfMaskedEditImages/GettingStarted.png)
 
 You can find the complete getting started sample from this [link](http://files2.syncfusion.com/Xamarin.Forms/Samples/MaskedEdit_GettingStarted.zip).

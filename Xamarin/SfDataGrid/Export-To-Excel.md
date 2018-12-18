@@ -372,6 +372,19 @@ option.TopTableSummaryStyle = new ExportCellStyle()
 
 ![Export DataGrid to Excel format with style applied for table summary rows at the top](SfDataGrid_images/Excel/SummaryStyle.png)
 
+## Exporting Unbound rows
+
+By default, the Unbound rows will not be exported to the excel document. However, you can export the unbound rows to excel by setting the [DataGridExcelExportingOption.ExportUnboundRows](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingOption~ExportUnboundRows.html) property as `true`.
+
+{% tabs %}
+{% highlight c# %}
+DataGridExcelExportingOption option = new DataGridExcelExportingOption();
+option.ExportUnboundRows = true;
+{% endhighlight %}
+{% endtabs %}
+
+
+
 ## Exporting unbound columns
 
 The `SfDataGrid.GridUnboundColumns` will be exported as [SfDataGrid.GridTextColumns](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridTextColumn.html) without specifying any code. You can customize the `SfDataGrid.GridUnboundColumns` as `SfDataGrid.GridTextColumns` by using the `CellExporting` and `RowExporting` events.

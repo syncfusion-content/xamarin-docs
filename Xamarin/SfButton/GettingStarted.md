@@ -25,7 +25,7 @@ After adding the assembly reference, an additional step is required for iOS and 
 
 ### Additional step for iOS
 
-To launch `SfButton` in iOS, call `SfButtonRenderer.Init()` in the `FinishedLaunching` overridden method of the `AppDelegate` class in iOS Project as demonstrated in the following code example.
+To launch [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton.html) in iOS, call `SfButtonRenderer.Init()` in the `FinishedLaunching` overridden method of the `AppDelegate` class in iOS Project as demonstrated in the following code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -41,7 +41,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ### Additional step for UWP
 
-This step is required only if the application is deployed in Release mode with .NET native tool chain enabled. It is needed for resolving the known Framework issue “Custom controls not rendering in Release mode” in UWP platform. Initializing the `SfButton` assembly at the `OnLaunched` overridden method of the `App` class in UWP project is the suggested work around. The following code example demonstrates initializing the `SfButton` assembly.
+This step is required only if the application is deployed in Release mode with .NET native tool chain enabled. It is needed for resolving the known Framework issue “Custom controls not rendering in Release mode” in UWP platform. Initializing the [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton.html) assembly at the `OnLaunched` overridden method of the `App` class in UWP project is the suggested work around. The following code example demonstrates initializing the [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton.html) assembly.
 
 {% tabs %}
 {% highlight c# %}
@@ -62,7 +62,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 ## Creating a simple SfButton
 
-The `SfButton` control is configured entirely in C# code or in XAML markup. The following steps explain how to create a `SfButton` and configure its elements.
+The [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton.html) control is configured entirely in C# code or in XAML markup. The following steps explain how to create a [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton.html) and configure its elements.
 
 ### Adding namespace for referred assemblies
 
@@ -119,7 +119,7 @@ namespace SfButton
 
 ## Setting caption
 
-The button caption can be defined using the `Text` property of `SfButton`. This caption normally describes the meaning of the button and is displayed in button.
+The button caption can be defined using the [`Text`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~Text.html) property of [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton.html). This caption normally describes the meaning of the button and is displayed in button.
 
 {% tabs %}
 {% highlight xaml %}
@@ -131,7 +131,6 @@ The button caption can be defined using the `Text` property of `SfButton`. This 
 
 SfButton button = new SfButton();
 button.Text = "Button";
-stackLayout.Children.Add(button);
 
 {% endhighlight %}
 {% endtabs %}
@@ -140,7 +139,7 @@ stackLayout.Children.Add(button);
 
 ## Toggle button
 
-The button behavior can be changed as toggle button by defining the `IsCheckable` property of `SfButton`.
+The button behavior can be changed as toggle button by defining the [`IsCheckable`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~IsCheckable.html) property of [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -153,22 +152,21 @@ The button behavior can be changed as toggle button by defining the `IsCheckable
 SfButton button = new SfButton();
 button.Text = "Button";
 button.IsCheckable = true;
-stackLayout.Children.Add(button);
 
 {% endhighlight %}
 {% endtabs %}
 
-Checked State:
+Checked state:
 
 ![SfButton with toggle pressed state](images/Toggle_Pressed_State.jpg)
 
-Unchecked State:
+Unchecked state:
 
 ![SfButton with toggle relased state](images/Toggle_Released_Button.jpg)
 
 ## Button icon
 
-The button icon can be defined using the `ImageSource` and `ShowIcon` properties of `SfButton`.
+The button icon can be defined using the [`ImageSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~ImageSource.html) and [`ShowIcon`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~ShowIcon.html) properties of [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -190,7 +188,7 @@ button.ShowIcon = true;
 
 ## Button background image
 
-The button background icon can be defined using the `BackgroundImage` property of `SfButton`.
+The button background icon can be defined using the [`BackgroundImage`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~BackgroundImage.html) property of [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -210,82 +208,3 @@ button.CornerRadius = new Thickness(20);
 {% endtabs %}
 
 ![Button with background image](images/ButtonWithBackgroundImage.jpg)
-
-## Visual states
-
-The button visual can be customized through `VisualStates`. The SfButton control have the following four visual states:
-
-* Normal
-* Pressed
-* Checked
-* Unchecked
-
-{% tabs %}
-{% highlight xaml %}
-
-<StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-    <buttons:SfButton x:Name="SfButton" WidthRequest="100" Text="Button">
-        <VisualStateManager.VisualStateGroups>
-            <VisualStateGroup x:Name="CommonStates">
-                <VisualState x:Name="Normal">
-                    <VisualState.Setters>
-                        <Setter Property="TextColor" Value="White" />
-                    </VisualState.Setters>
-                </VisualState>
-
-                <VisualState x:Name="Pressed">
-                    <VisualState.Setters>
-                        <Setter Property="TextColor" Value="Black" />
-                    </VisualState.Setters>
-                </VisualState>
-            </VisualStateGroup>
-        </VisualStateManager.VisualStateGroups>
-    </buttons:SfButton>
-</StackLayout>
-
-{% endhighlight %}
-{% highlight c# %}
-
-StackLayout stackLayout = new StackLayout
-{
-    HorizontalOptions = LayoutOptions.Center,
-    VerticalOptions = LayoutOptions.Center
-};
-SfButton button = new SfButton
-{
-    Text = "Button",
-    WidthRequest = 100
-};
-
-VisualStateGroupList visualStateGroupList = new VisualStateGroupList();
-
-VisualStateGroup commonStateGroup = new VisualStateGroup();
-VisualState normalState = new VisualState
-{
-    Name = "Normal"
-};
-normalState.Setters.Add(new Setter { Property = SfButton.TextColorProperty, Value = Color.White });
-
-VisualState pressedState = new VisualState
-{
-    Name = "Pressed"
-};
-pressedState.Setters.Add(new Setter { Property = SfButton.TextColorProperty, Value = Color.Black });
-
-commonStateGroup.States.Add(normalState);
-commonStateGroup.States.Add(pressedState);
-visualStateGroupList.Add(commonStateGroup);
-
-VisualStateManager.SetVisualStateGroups(button, visualStateGroupList);
-
-stackLayout.Children.Add(button);
-this.Content = stackLayout;
-
-{% endhighlight %}
-{% endtabs %}
-
-Visual State Pressed:
-![SfButton with visual state](images/VisualState_PressedState.png)
-
-Visual State Normal:
-![SfButton with visual state](images/VisualState_NormalState.png)

@@ -18,7 +18,7 @@ When setting `Target Framework Version` of the application to any lower version(
 <b>Error : The "LinkAssemblies" task failed unexpectedly.</b>
 <br/>
 
-<b>Error processing method: 'System.Void Syncfusion.XForms.Android.TextInputLayout.InputLayoutBorder::OnDraw(Android.Graphics.Canvas)' in assembly: 'Syncfusion.Core.XForms.Android.dll' ---> Mono.Cecil.ResolutionException: Failed to resolve System.Boolean Android.Graphics.Canvas::ClipOutRect(Android.Graphics.RectF)
+<b>Error processing method: 'System.Void Syncfusion.XForms.Android.TextInputLayout.InputLayoutBorder::OnDraw(Android.Graphics.Canvas)' in assembly: 'Syncfusion.Core.XForms.Android.dll' ---&gt; Mono.Cecil.ResolutionException: Failed to resolve System.Boolean Android.Graphics.Canvas::ClipOutRect(Android.Graphics.RectF)
    at Mono.Linker.Steps.MarkStep.HandleUnresolvedMethod(MethodReference reference)
    at Mono.Linker.Steps.MarkStep.MarkMethod(MethodReference reference)
    at Mono.Linker.Steps.MarkStep.MarkInstruction(Instruction instruction)

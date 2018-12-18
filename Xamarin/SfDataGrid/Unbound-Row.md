@@ -278,7 +278,7 @@ You can get the unbound row at the specified row index using [GetUnboundRow](htt
 
 {% tabs %}
 {% highlight c# %}
-using Syncfusion.UI.Xaml.Grid;
+using Syncfusion.SfDataGrid.XForms;
 var unboundRow = dataGrid.GetUnboundRowAtRowIndex(1);
 {% endhighlight %}
 {% endtabs %}

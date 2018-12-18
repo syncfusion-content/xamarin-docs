@@ -39,7 +39,7 @@ The maps control uses `imagery layer` to display the tile images from the OSM se
 
 {% endtabs %}
 
-![](Images/OSM.png)
+![Xamarin OSM Image](Images/OSM.png)
 
 N> Both the [`ShapeFileLayer`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer.html) and `ImageryLayer` have been derived commonly from MapsLayer.
 
@@ -69,7 +69,7 @@ The Bing Maps is a world map owned by Microsoft. As OSM, Bing Maps also provides
 
 {% endtabs %}
 
-![](Images/Road.png)
+![Xamarin Bing Road Image](Images/Road.png)
 
 N> The `LayerType` property of `ImageryLayer` provides support to `OSM` and `Bing Maps`. The default value of the `LayerType` property is OSM.
 
@@ -116,7 +116,7 @@ The Aerial view displays the satellite images to highlight the roads and major l
 
 {% endtabs %}
 
-![](Images/aerial.png)
+![Xamarin Bing Aerial Image](Images/aerial.png)
 
 ## AerialWithLabel
 
@@ -147,7 +147,7 @@ The AerialWithLabel view displays the Aerial map with labels for continent, coun
 
 {% endtabs %}
 
-![](Images/aerialWithLabel.png)
+![Xamarin Bing AerialWithLabel Image](Images/aerialWithLabel.png)
 
 ## Zooming and panning
 
@@ -239,7 +239,7 @@ The `GeoCoordinates` property allows you view the desired area at the center on 
 
 {% endtabs %}
 
-![](Images/Center.png)
+![Xamarin Geo Coordinate Image](Images/Center.png)
 
 ## Set markers in imagery layer
 
@@ -308,7 +308,7 @@ The detailed explanation of marker and its customization have been provided in M
 
 {% endtabs %}
 
-![](Images/Marker.png)
+![Xamarin OSM Marker Image](Images/Marker.png)
 
 ## Cache tile images in application memory
 
@@ -388,3 +388,41 @@ The [`ZoomLevelChanging`](https://help.syncfusion.com/cr/cref_files/xamarin/Sync
 
 {% endtabs %}
 
+## Events
+
+The [`GeoCoordinateChanged`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ImageryLayer~GeoCoordinateChanged_EV.html) event is triggered while zooming and panning the maps.
+
+The following arguments can be gotten from the `ImageryLayer_GeoCoordinateChanged` event: 
+
+* [`Center`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.GeoCoordinateChangedEventArgs~Center.html): Returns the center Geo coordinate point of the visual tiles while zooming and panning.
+* [`TopLeft`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.GeoCoordinateChangedEventArgs~TopLeft.html):  Returns the top-left Geo coordinate point of the visual tiles while zooming and panning.
+* [`TopRight`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.GeoCoordinateChangedEventArgs~TopRight.html): Returns the top-right Geo coordinate point of the visual tiles while zooming and panning.
+* [`BottomLeft`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.GeoCoordinateChangedEventArgs~BottomLeft.html): Returns the bottom-left Geo coordinate point of the visual tiles while zooming and panning.
+* [`BottomRight`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.GeoCoordinateChangedEventArgs~BottomRight.html): Returns the bottom-right Geo coordinate point of the visual tiles while zooming and panning.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<maps:SfMaps >
+    <maps:SfMaps.Layers >
+        <maps:ImageryLayer GeoCoordinateChanged="ImageryLayer_GeoCoordinateChanged"/>       
+    </maps:SfMaps.Layers>
+</maps:SfMaps>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+private void ImageryLayer_GeoCoordinateChanged(object sender, GeoCoordinateChangedEventArgs e)
+{
+    var topLeft = e.TopLeft;
+    var topRight = e.TopRight;
+    var bottomLeft = e.BottomLeft;
+    var bottomRight = e.BottomRight;
+    var center = e.Center;
+}
+
+{% endhighlight %}
+
+{% endtabs %}

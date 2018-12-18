@@ -323,7 +323,6 @@ Scale labels can be rotated automatically based on the current angle. To enable 
          </gauge:SfCircularGauge.Scales>	
      </gauge:SfCircularGauge>
               
-
 {% endhighlight %}
 
 {% highlight c# %}
@@ -341,4 +340,51 @@ Scale labels can be rotated automatically based on the current angle. To enable 
 
 ![](labels_images/auto-angle.png)
 
+## Custom labels for circular gauge
 
+Circular scale also supports custom label format using the [`CustomLabels`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~CustomLabels.html) property. 
+You can give labels in an array that you want to place in scale.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+Namespace:
+
+xmlns:sys="clr-namespace:System;assembly=mscorlib"
+...
+
+<gauge:SfCircularGauge>
+    <gauge:SfCircularGauge.Scales>
+        <gauge:Scale>       
+            <gauge:Scale.CustomLabels>
+                <x:Array Type="{x:Type x:Double}">
+                    <sys:Double>0</sys:Double>
+                    <sys:Double>23</sys:Double>
+                    <sys:Double>45</sys:Double>
+                    <sys:Double>67</sys:Double>
+                    <sys:Double>85</sys:Double>
+                    <sys:Double>100</sys:Double>
+                </x:Array>
+            </gauge:Scale.CustomLabels>
+        </gauge:Scale>
+    </gauge:SfCircularGauge.Scales> 
+</gauge:SfCircularGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCircularGauge circularGauge = new SfCircularGauge();
+ObservableCollection<Scale> scales = new ObservableCollection<Scale>();
+Scale scale = new Scale();
+scale.CustomLabels = new double[] { 0, 23, 45, 67, 85, 100 };
+scales.Add(scale);
+circularGauge.Scales = scales;
+Content = circularGauge;  
+    
+{% endhighlight %}
+
+{% endtabs %}
+
+![Xamarin Custom Labels Image](labels_images/custom-labels.png)

@@ -35,7 +35,7 @@ When setting `Target Framework Version` of the application to any lower version(
    at Xamarin.Android.Tasks.LinkAssemblies.Execute(DirectoryAssemblyResolver res)
    at Xamarin.Android.Tasks.LinkAssemblies.Execute()
    at Microsoft.Build.BackEnd.TaskExecutionHost.Microsoft.Build.BackEnd.ITaskExecutionHost.Execute()
-   at Microsoft.Build.BackEnd.TaskBuilder.<ExecuteInstantiatedTask>d__26.MoveNext()	Entersoft.Universal.Android			
+   at Microsoft.Build.BackEnd.TaskBuilder.&lt;ExecuteInstantiatedTask&gt;d__26.MoveNext()	Entersoft.Universal.Android			
 </b>
 </td>
 </tr>

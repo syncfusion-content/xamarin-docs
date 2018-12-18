@@ -1265,7 +1265,7 @@ this.FlowDirection = FlowDirection.RightToLeft;
 {% endhighlight %}
 {% endtabs %}
 
-For UWP platform, framework issue occurs in Xamarin.Forms. Instead of using above codes, set the flow direction in the `MainPage` constructor of renderer as demonstrated in the following code example:
+For UWP platform, the ScrollView is not changed when RTL is enabled and its a framework issue. To overcome this issue, set the `FlowDirection` in the constructor of `MainPage` in UWP renderer as demonstrated in the following code example:
 
 {% tabs %}
 {% highlight c# %}
@@ -1280,7 +1280,7 @@ public MainPage()
 {% endhighlight %} 
 {% endtabs %}
 
-N> When a label is loaded inside an Item Template, right to left direction support is not applied on it. Because of framework issue, logged a bug report. Please refer the [link](https://github.com/xamarin/Xamarin.Forms/issues/3611). It can be overcome by set the HorizontalOptions for the label as `StartAndExpand`.
+N> If a label is loaded in the `ItemTemplate`, right to left direction is not applied, due to the framework. It reported to the Xamarin team and find the [link](https://github.com/xamarin/Xamarin.Forms/issues/3611). To overcome this issue, set the `HorizontalOptions` as `StartAndExpand` to the Label.
 
 ![Xamarin.Forms listview with right to left](SfListView_images/Right-To-Left-Xamarin-Forms-ListView.png)
 

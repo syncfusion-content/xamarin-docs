@@ -26,7 +26,7 @@ You can perform an operation when selecting an item among the filtered suggestio
 </tr>
 <tr>
 <td>Value</td>
-<td>Holds all added items in AutoComplete.</td>
+<td>Holds all selected items in AutoComplete.</td>
 </tr>
 </table>
 

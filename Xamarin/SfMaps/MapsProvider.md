@@ -155,7 +155,7 @@ The maps control provides interactive zooming and panning supports to OSM and Bi
 
 Zooming helps you get a closer look of an area on maps for in-depth analysis. Panning helps you move a map around to focus the targeted area. You can perform zooming and panning with the pinching gesture in a map area.
 
-![](Images/zooming.gif)
+![Xamarin OSM Zooming Panning](Images/zooming.gif)
 
 ## Reset zooming
 
@@ -213,7 +213,7 @@ The `GeoCoordinates` property allows you view the desired area at the center on 
 
 {% endtabs %}
 
-![](Images/Coordinate.png)
+![Xamarin OSM Geo Coordinate](Images/Coordinate.png)
 
 {% tabs %}
 
@@ -239,7 +239,7 @@ The `GeoCoordinates` property allows you view the desired area at the center on 
 
 {% endtabs %}
 
-![Xamarin Geo Coordinate Image](Images/Center.png)
+![Xamarin Geo Coordinate Center Image](Images/Center.png)
 
 ## Set markers in imagery layer
 

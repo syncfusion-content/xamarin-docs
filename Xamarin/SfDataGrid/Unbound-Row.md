@@ -246,6 +246,8 @@ public class UnboundRowStyle : DataGridStyle
 
 ![Styling in Unbound rows](SfDataGrid_images\UnboundRowStyle.png)
 
+N> You can also apply style to the unbound row using the `SfDataGrid.QueryCellStyle` and `SfDataGrid.QueryRowStyle` event by referring this [link](https://help.syncfusion.com/xamarin/sfdatagrid/conditional-styles#styling-cells-using-querycellstyle-event).
+
 ## Changing unbound row height
 
 You can change the height of unbound row using [SfDataGrid.QueryRowHeight](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~QueryRowHeight_EV.html) event.
@@ -268,8 +270,6 @@ private void DataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-N> You can also apply style to the unbound row using the `SfDataGrid.QueryCellStyle` and `SfDataGrid.QueryRowStyle` event by referring this [link](https://help.syncfusion.com/xamarin/sfdatagrid/conditional-styles#styling-cells-using-querycellstyle-event).
-
 ![Changing unbound row height](SfDataGrid_images\UnboundRowHeight.png)
 
 ## Get unbound rows
@@ -278,7 +278,7 @@ You can get the unbound row at the specified row index using [GetUnboundRow](htt
 
 {% tabs %}
 {% highlight c# %}
-using Syncfusion.UI.Xaml.Grid;
+using Syncfusion.SfDataGrid.XForms;
 var unboundRow = dataGrid.GetUnboundRowAtRowIndex(1);
 {% endhighlight %}
 {% endtabs %}

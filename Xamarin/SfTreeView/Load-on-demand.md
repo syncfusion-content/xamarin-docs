@@ -11,11 +11,11 @@ documentation: ug
 
 Load on demand is a technique (Lazy load) that is used to reduce the bandwidth size of consuming huge data. You can load data on demand in `TreeView` by using `LoadOnDemandCommand` when you’re going to use huge data.
 
-TreeView loads root level [Nodes](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~Nodes.html)  initially, and when parent node is expanded, loads the child nodes from the data source. It reduces the time to render TreeView with huge data.
+TreeView loads root level [Nodes](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~Nodes.html)  initially, and when parent node is expanded, loads the child nodes from the data source. It reduces the time to render `TreeView` with huge data.
 
 To enable the load on demand feature, you would need to use the `LoadOnDemandCommand`  of `TreeView` as demonstrated in the example below:
 
-Create a ViewModel which contains the root items of the TreeView. You would also need to create a `Command` for handling the load on command and bind to `LoadOnDemandCommand`.
+Create a ViewModel with a `Command` for handling the load on command and bind to `LoadOnDemandCommand` of `TreeView`.
 
 {% endhighlight %}
 {% highlight c# %} 

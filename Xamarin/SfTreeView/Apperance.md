@@ -316,7 +316,7 @@ treeView.FlowDirection = FlowDirection.RightToLeft;
 {% endhighlight %}
 {% endtabs %}
 
-TreeView also supports RTL when device's flow direction is changed and it is achieved by setting the `FlowDirection` to the [Device.FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.device.flowdirection?view=xamarin-forms#Xamarin_Forms_Device_FlowDirection) value.
+TreeView also supports RTL when device's flow direction is changed, it is achieved by setting the `FlowDirection` to [Device.FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.device.flowdirection?view=xamarin-forms#Xamarin_Forms_Device_FlowDirection).
 
 {% tabs %}
 {% highlight xaml %}
@@ -357,4 +357,4 @@ N> When a label is loaded in the `ItemTemplate`, the right-to-left direction is 
 
 ### Limitations
 
-* When you custom [ItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ItemTemplate.html) is used in `TreeView` it doesn't respond for `FlowDirection` due to the framework issue. To respond for `FlowDirection` changes, hence you need to set `FlowDirection` of `TreeView` to parent View of your custom `ItemTemplate`
+* When you use custom [ItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ItemTemplate.html) in `TreeView`, it does not respond to `FlowDirection` due to framework issue. To respond to `FlowDirection` changes, you need to set `FlowDirection` of `TreeView` to parent View of your custom `ItemTemplate`

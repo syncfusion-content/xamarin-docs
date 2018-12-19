@@ -9,13 +9,13 @@ documentation: ug
 
 # Load on demand
 
-TreeView allows you to load [Nodes](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~Nodes.html) only when they are requested using Load on Demand(Lazy load). It reduces the loading performance and time of `TreeView` when you’re going to use huge data. You can load data on demand in `TreeView` by using `LoadOnDemandCommand`.
+TreeView allows you load [Nodes](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~Nodes.html) only when they are requested using Load on Demand(Lazy load). It reduces the loading performance and time of `TreeView` when you use large data. You can load data on demand in `TreeView` using `LoadOnDemandCommand`.
 
-TreeView loads root level `Nodes` initially, and when parent node is expanded,it requests to load the child nodes from the data source based on `LoadOnDemandCommand`.
+TreeView loads root level `Nodes` initially. When parent node is expanded, it requests to load the child nodes from the data source based on `LoadOnDemandCommand`.
 
-Below example demonstrates how to load data on demand in `TreeView` using `LoadOnDemandCommand`.
+The following code example demonstrates how to load data on demand in `TreeView` using `LoadOnDemandCommand`.
 
-Create a ViewModel with a `Command` for handling the load on command and bind to `LoadOnDemandCommand` of `TreeView`.
+Create a ViewModel with a `Command` for handling the load on command and bind it to `LoadOnDemandCommand` of `TreeView`.
 
 {% endhighlight %}
 {% highlight c# %} 
@@ -146,6 +146,6 @@ public class MusicInfoRepository
 {% endhighlight %}
 {% endtabs %}
 
-You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/OnDemandLoading583866000).
+You can download the entire [source code](http://www.syncfusion.com/downloads/support/directtrac/general/ze/OnDemandLoading583866000) of this demo.
 
 ![Xamarin Forms TreeView with OnDemandLoading](TreeView_images/LoadOnDemand-Xamarin-Forms-TreeView.gif)

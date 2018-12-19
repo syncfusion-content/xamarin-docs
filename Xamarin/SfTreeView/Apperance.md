@@ -351,12 +351,10 @@ public MainPage()
 {% endhighlight %} 
 {% endtabs %}
 
-![Xamarin.Forms listview with right to left](SfListView_images/Right-To-Left-Xamarin-Forms-ListView.png)
+![Xamarin Forms TreeView with right to left](TreeView_images/Right-To-Left-Xamarin-Forms-TreeView.png)
 
 N> When a label is loaded in the `ItemTemplate`, the right-to-left direction is not applied due to the framework issue. It has been reported to the Xamarin team; for more details about this, refer to this [link](https://github.com/xamarin/Xamarin.Forms/issues/3611). To overcome this issue, set the `HorizontalOptions` to `StartAndExpand` in Label.
 
 ### Limitations
 
-* When you custom [ItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ItemTemplate.html) is used in `TreeView` it doesnot respond for `FlowDirection` due to the framework issue. To respond for `FlowDirection` changes, hence you need to set `FlowDirection` of `TreeView` to parent View of your custom `ItemTemplate`
-
-![Xamarin Forms TreeView with right to left](TreeView_images/Right-To-Left-Xamarin-Forms-TreeView.png)
+* When you custom [ItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ItemTemplate.html) is used in `TreeView` it doesn't respond for `FlowDirection` due to the framework issue. To respond for `FlowDirection` changes, hence you need to set `FlowDirection` of `TreeView` to parent View of your custom `ItemTemplate`

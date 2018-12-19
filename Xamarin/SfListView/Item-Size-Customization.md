@@ -38,9 +38,9 @@ private void ListView_QueryItemSize(object sender, Syncfusion.ListView.XForms.Qu
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AutoFit-1318092121).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomizeItems171985138).
 
-![QueryItemSize image](SfListView_images/QueryItemSize.jpg)
+![Size of item in listview](SfListView_images/QueryItemSize.jpg)
 
 ## AutoFit the items based on the content
 
@@ -76,9 +76,9 @@ listView.AutoFitMode = AutoFitMode.Height;
 
 N> If you define any size manually to the view loaded in [SfListView.ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html), the SfListView will return that size as the item size for each item. 
 
-You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AutoFit-1678453243).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AutoFitItems-252477562).
 
-![AutoFit content image](SfListView_images/AutoFit.jpg)
+![AutoFit items](SfListView_images/AutoFit.jpg)
 
 ## Increasing or Decreasing label font size in the ListView items at runtime
 
@@ -120,7 +120,48 @@ private void Button_Clicked(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Customized FontSize image](SfListView_images/SfListView-FontSizeChanged.jpg)
+![Customize label font size for listview item](SfListView_images/SfListView-FontSizeChanged.jpg)
+
+## Load images with autofit mode
+
+By default, the image is not loaded with the actual size in autofit mode, as it measures the size before the layout. So, the size of the child view changes cannot be found from the parent view. It is a known issue in listview, but this can be overcome by calling the `RefreshListViewItem` method in the loaded event of listview.
+
+{% tabs %}
+{% highlight xaml %}
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+    <ContentPage.Content>
+        <Grid>
+            <syncfusion:SfListView x:Name="listView" 
+                                   AutoFitMode="Height"
+                                   ItemsSource="{Binding ContactsInfo}"
+                                   Loaded="ListView_Loaded">
+                <syncfusion:SfListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <StackLayout>
+                                <Label Text="{Binding ContactName}" />
+                                <Label Text="{Binding ContactNumber}"  />
+                            </StackLayout>
+                            <Image Source="{Binding ContactImage}"  />
+                        </StackLayout>
+                    </DataTemplate>
+                </syncfusion:SfListView.ItemTemplate>
+            </syncfusion:SfListView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
+{% endhighlight %}
+{% highlight c# %}
+private void ListView_Loaded(object sender, Syncfusion.ListView.XForms.ListViewLoadedEventArgs e)
+{
+    Device.BeginInvokeOnMainThread(async() =>
+    {
+        await Task.Delay(100);
+        listView.RefreshListViewItem();
+    });
+}
+{% endhighlight %}
+{% endtabs %}
 
 ## Limitations
 

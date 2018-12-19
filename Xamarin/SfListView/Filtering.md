@@ -82,7 +82,7 @@ private bool FilterContacts(object obj)
 
 The following screenshot shows the output rendered when the items are filtered:
 
-![](SfListView_images/SfListView-Filtering.png)
+![Items filter in listview](SfListView_images/SfListView-Filtering.png)
 
 ### Filter based on multiple criteria
 

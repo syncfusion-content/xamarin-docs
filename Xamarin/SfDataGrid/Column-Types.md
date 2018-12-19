@@ -235,6 +235,25 @@ customerID.LoadUIView = true;
 
 {% endhighlight %}
 
+### Padding
+
+SfDataGrid allows the user to set padding for the cells by using the property [GridColumn.Padding](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~Padding.html). 
+
+{% tabs %}
+{% highlight xaml %}    
+    <syncfusion:GridTextColumn MappingName="OrderID" TextAlignment="Start" Padding="10,0,0,0"/>
+{% endhighlight %}
+
+{% highlight c# %}
+
+GridTextColumn orderID = new GridTextColumn();
+orderID.MappingName = "OrderID";
+orderID.TextAlignment = TextAlignment.Start;
+orderID.Padding = new Thickness(10, 0, 0, 0);
+
+{% endhighlight %}
+{% endtabs %}
+
 ## GridTextColumn
 
 GridTextColumn inherits all the properties of GridColumn. It is used to host the textual content in the record cells. Each of the record cell displays text based on the `MappingName` that associates the column with a property in the data source.

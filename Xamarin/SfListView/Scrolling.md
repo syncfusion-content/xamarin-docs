@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Handling ListView Scrolling
+title: Handling Syncfusion ListView Scrolling
 description: Describes about how scrolling of listview can be handled and customized.
 platform: xamarin
 control: SfListView
@@ -45,6 +45,7 @@ listView.LayoutManager.ScrollToRowIndex(index, true);
 
  * When [AutoFitMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AutoFitMode.html) is `Height` or grouping is enabled, the scroll animation will be disabled by default in Android and iOS platforms. 
  * If [ScrollToRowIndex](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LayoutBase~ScrollToRowIndex.html) method is called when loading the `SfListView`, set `disableAnimation` to `true` to scroll to the appropriate row index, or else view does not scrolled in Android.
+ * If the `ScrollToRowIndex` method is applied to a particular item index while the item is in Grouping or AutoFit mode, the particular item will get displayed in view but not in the exact position when the [ScrollToPosition](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ScrollToPosition.html) property is set as `MakeVisible` or `Centre` for first time.
 
 ## Scrollbar visibility
 
@@ -93,7 +94,7 @@ The SfListView allows notifying when scrolling using [Changed](https://help.sync
 
 {% tabs %}
 {% highlight c# %}
-
+using Syncfusion.ListView.XForms.Control.Helpers;
 public partial class MainPage : ContentPage
 {
     VisualContainer visualContainer;
@@ -136,7 +137,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/EndReachedOnScrolling1293175475).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/EndReachedOnScrolling-1173643672).
 
 ## Maintain the scroll position while updating ItemsSource at runtime
 
@@ -148,7 +149,7 @@ For horizontal orientation, use the `ScrollX` value of ExtendedScrollView.
 
 {% tabs %}
 {% highlight c# %}
-
+using Syncfusion.ListView.XForms.Control.Helpers;
 public partial class MainPage : ContentPage
 {
     ExtendedScrollView scrollView;
@@ -170,4 +171,4 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ItemsourceScrolling-2031956697).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ItemsourceScrolling-919001878).

@@ -104,7 +104,7 @@ listView.DataSource.GroupDescriptors.Add(new GroupDescriptor()
 
 The following screenshot shows the output when grouping based on first character.
 
-![](SfListView_images/SfListView-FirstChar.png)
+![Group items in listview](SfListView_images/SfListView-FirstChar.png)
 
 ### Grouping based on more than one property in the data object
 
@@ -126,7 +126,7 @@ listView.DataSource.GroupDescriptors.Add(new GroupDescriptor()
 
 The following screenshot shows the output when grouping based on more than one property .
 
-![](SfListView_images/SfListView-TwopropertyGroup.png)
+![Group items with two properties in listview](SfListView_images/SfListView-TwopropertyGroup.png)
 
 ### Grouping by ignoring case sensitivity
 
@@ -145,9 +145,9 @@ listView.DataSource.GroupDescriptors.Add(new GroupDescriptor()
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot shows grouping by ignoring case sensitivity. You can download the entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Case_sensitivity1125043077).
+The following screenshot shows grouping by ignoring case sensitivity. You can download the entire source code [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Case_sensitivity-488204229).
 
-![](SfListView_images/SfListView-CaseSensitivity.png)
+![Group items based on case sensitive in listview](SfListView_images/SfListView-CaseSensitivity.png)
 
 ## Group header summary
 
@@ -219,9 +219,9 @@ listView.GroupHeaderTemplate = new DataTemplate(() =>
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot shows grouping by sum of property value. You can download the entire sample code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Aggregate_summary-1932023167).
+The following screenshot shows grouping by sum of property value. You can download the entire sample code [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Aggregate_summary1401444692).
 
-![](SfListView_images/SfListView-Aggregate.png)
+![Aggregate summary of items in group header of listview](SfListView_images/SfListView-Aggregate.png)
 
 ### Displaying items count
 
@@ -292,10 +292,10 @@ listView.GroupHeaderTemplate = new DataTemplate(() =>
 });
 {% endhighlight %}
 {% endtabs %}
+ 
+The following screenshot shows the output when displaying items count at group header. You can download entire sample code [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Items_Count1480310248).
 
-The following screenshot shows the output when displaying items count at group header. You can download entire sample code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Items_Count1523989044).
-
-![](SfListView_images/SfListView-ItemsCount.png)
+![Items count in group header of listview](SfListView_images/SfListView-ItemsCount.png)
 
 ## Multi-level grouping
 
@@ -392,9 +392,9 @@ public class GroupHeaderConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot shows the output for multi-level grouping. You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Multilevel_Grouping1401226920).
+The following screenshot shows the output for multi-level grouping. You can also download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Multilevel_Grouping-1811076962).
 
-![](SfListView_images/SfListView-Multilevel.png)
+![Xamarin.Forms listview with multilevel group](SfListView_images/SfListView-Multilevel.png)
 
 ## Group expand and collapse
 
@@ -412,7 +412,7 @@ listView.AllowGroupExpandCollapse = true;
 
 The following screenshot shows the output when the groups are collapsed.
 
-![](SfListView_images/SfListView-Grouping.png)
+![Expand and collapse group items in listview](SfListView_images/SfListView-Grouping.png)
 
 ### Programmatic expand and collapse
 
@@ -483,9 +483,9 @@ private void ListView_GroupExpanding(object sender, GroupExpandCollapseChangingE
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot shows the output when one group in expanded state. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/One_group_expanded1663737587).
+The following screenshot shows the output when one group in expanded state. You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/One_group_expanded-853927909).
 
-![](SfListView_images/SfListView-OneGroupExpanded.png)
+![Expand one group in listview](SfListView_images/SfListView-OneGroupExpanded.png)
 
 ### Events
 
@@ -589,7 +589,7 @@ listView.IsStickyGroupHeader = true;
 
 The following screenshot shows the output when the group headers are sticky.
 
-![](SfListView_images/SfListView-StickGroupHeader.png)
+![Sticky group header in listview](SfListView_images/SfListView-StickGroupHeader.png)
 
 ## Group header customization
 
@@ -641,7 +641,7 @@ listView.GroupHeaderTemplate = new DataTemplate(() =>
 
 The following screenshot shows the output when the groups header appearance customized by key.
 
-![](SfListView_images/SfListView-AppearenceCustomize.png)
+![Customize group header in listview](SfListView_images/SfListView-AppearenceCustomize.png)
 
 ### Expand and collapse icon in group header
 
@@ -744,9 +744,9 @@ public class BoolToImageConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot shows the output when grouping with expand collapse icon in group header. You can download entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Expand_Collapse_icon944838753).
+The following screenshot shows the output when grouping with expand collapse icon in group header. You can download entire source code [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Expand_Collapse_Icon919985180).
 
-![](SfListView_images/SfListView-CollapsedView.png)
+![Group header with expand and collapse icon in listview](SfListView_images/SfListView-CollapsedView.png)
 
 ### Height customization
 
@@ -873,6 +873,7 @@ To select and deselect all the items of group by tap the checkbox in the group h
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.ListView.XForms.Control.Helpers;
 private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
 {
     var image = (sender as Image);
@@ -916,9 +917,9 @@ private void RefreshGroupHeader(GroupResult group)
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot shows the output when checking items in group header. You download entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomSelection-1488987005).
+The following screenshot shows the output when checking items in group header. You download entire source code [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomSelectionCheckBox650348378).
 
-![](SfListView_images/SfListView-CheckBoxInGroupHeader.png)
+![Selection with check box in group header of listview](SfListView_images/SfListView-CheckBoxInGroupHeader.png)
 
 ### Changing group header appearance when expanding
 
@@ -991,9 +992,9 @@ listView.GroupHeaderTemplate = new DataTemplate(() =>
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot shows the output when group header appearance changed by expanding. You can download entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Groupheader_appearance826922341)
+The following screenshot shows the output when group header appearance changed by expanding. You can download entire source code [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GroupheaderAppearance737534484)
 
-![](SfListView_images/SfListView-GroupHeaderAppearence.png)
+![Group header appearance while expand listview](SfListView_images/SfListView-GroupHeaderAppearence.png)
 
 ### Providing Indentation for GroupHeader items
 
@@ -1103,9 +1104,9 @@ if (selectedItems.Count > 0)
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot shows the output when only one item in a group gets selected . You can download entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/One_item_in_group-1968064931).
+The following screenshot shows the output when only one item in a group gets selected. You can download entire source code [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/OneItemInGroup1488863865).
 
-![](SfListView_images/SfListView-SelectOneinGroup.png)
+![Expand one group in listview](SfListView_images/SfListView-SelectOneinGroup.png)
 
 ### Add an item at the specific index in a group
 
@@ -1148,7 +1149,7 @@ To add item at  specific index in a group, follow the code example
 
 {% tabs %}
 {% highlight c# %}
-
+using Syncfusion.ListView.XForms.Control.Helpers;
 private void AddItem_Clicked(object sender, EventArgs e)
 {
   var contact = new Contacts();
@@ -1180,4 +1181,4 @@ internal void InsertItemInGroup(List<object> items, object Item, int InsertAt)
 
 The following screenshot shows the output when item added at specified index. You can download entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AddItemAtIndex-1107798295).
 
-![](SfListView_images/SfListView-AddItem.png)
+![Add item at specific index in a group](SfListView_images/SfListView-AddItem.png)

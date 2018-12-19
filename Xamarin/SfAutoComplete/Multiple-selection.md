@@ -155,7 +155,7 @@ this.PropertyChanged(this, new PropertyChangedEventArgs(name));
 {% endtabs %}
 
 
-![](images/MultiSelect/TokenRepresentation_Wrap.png)
+![token represents with image and text with wrap mode](images/MultiSelect/TokenRepresentation_Wrap.png)
  
 ### Token Customization
 
@@ -177,41 +177,160 @@ Customization can be done for Token. There are various ways to customize the tok
 
 * `CornerRadius` - sets the corner radius for the token.
 
-
+* `DeleteButtonPlacement` - Allows you change the position of delete button in token to either `Left` or `Right`. By default, it is set to the right.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-    <autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" DropDownItemHeight="50" DisplayMemberPath="Name" ImageMemberPath="Image" MultiSelectMode="Token" TokensWrapMode="Wrap" DataSource="{Binding EmployeeCollection}">
-    </autocomplete:SfAutoComplete>
-</StackLayout>
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:local="clr-namespace:GettingStarted"
+    x:Class="GettingStarted.MainPage">
+    
+    <ContentPage.BindingContext>
+         <local:EmployeeViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout>
+        <autocomplete:SfAutoComplete
+            DisplayMemberPath="Name" 
+            MultiSelectMode="Token" 
+            ImageMemberPath="Image"
+            TokensWrapMode="Wrap" 
+            DataSource="{Binding EmployeeCollection}" />
+             <autocomplete:SfAutoComplete.TokenSettings>
+                 <autocomplete:TokenSettings
+                        FontSize="16"
+                        BackgroundColor="#66ccff"
+                        TextColor="White" 
+                        SelectedBackgroundColor="#ffffe0"
+                        DeleteButtonColor="#993300"
+                        FontFamily="Times New Roman"
+                        DeleteButtonPlacement="Right
+                        IsCloseButtonVisible="true"
+                        CornerRadius="15"/>
+            </autocomplete:SfAutoComplete.TokenSettings>
+        </autocomplete:SfAutoComplete>
+        </StackLayout> 
+    </ContentPage.Content>
+
+</ContentPage>         
 
 {% endhighlight %}
 
 {% highlight c# %}
-
-
-// Token Customization
-
-TokenSettings token = new TokenSettings();
-token.FontSize = 16;
-token.BackgroundColor = Color.FromHex("#66ccff");
-token.TextColor = Color.White;
-token.SelectedBackgroundColor = Color.FromHex("#ffffe0");
-token.DeleteButtonColor = Color.Brown;
-token.FontFamily= "Times New Roman";
-token.IsCloseButtonVisible = true;
-token.CornerRadius = 15;
-autoComplete.TokenSettings = token;
+namespace GettingStarted
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            this.BindingContext = new EmployeeViewModel();
+            StackLayout stackLayout = new StackLayout();
+            var autoComplete = new SfAutoComplete()
+            {
+                MultiSelectMode = MultiSelectMode.Token,
+                DisplayMemberPath = "Name",
+                ImageMemberPath = "Image",
+                TokensWrapMode = TokensWrapMode.Wrap,
+            };
+            autoComplete.SetBinding(SfAutoComplete.DataSourceProperty, "EmployeeCollection");
+            autoComplete.TokenSettings = new TokenSettings()
+            {
+                FontSize = 16,
+                BackgroundColor = Color.FromHex("#66ccff"),
+                TextColor = Color.White,
+                SelectedBackgroundColor = Color.FromHex("#ffffe0"),
+                DeleteButtonColor = Color.FromHex("#993300"),
+                FontFamily = "Times New Roman",
+                IsCloseButtonVisible = true,
+                DeleteButtonPlacement = DeleteButtonPlacement.Right,
+                CornerRadius = 15
+            };
+            stackLayout.Children.Add(autoComplete);
+            this.Content = stackLayout;
+        }
+    }
+}
  
 {% endhighlight %}
 
 {% endtabs %}
 
+{% highlight c# %}
 
-![](images/MultiSelect/TokenRepresentation.png)
+namespace GettingStarted
+{
+    public class Employee
+    {
+        private string image;
+
+        private string name;
+
+        public string Image
+        {
+            get
+            {
+                return image;
+            }
+
+            set
+            {
+                image = value;
+            }
+        }
+
+        public string Name
+        {
+            get
+            {
+                return name;
+            }
+
+            set
+            {
+                name = value;
+            }
+        }
+    }
+
+    public class EmployeeViewModel
+    {
+        private ObservableCollection<Employee> employeeCollection;
+
+        public ObservableCollection<Employee> EmployeeCollection
+        {
+            get
+            {
+                return employeeCollection;
+            }
+
+            set
+            {
+                employeeCollection = value;
+            }
+        }
+        public EmployeeViewModel()
+        {
+            employeeCollection.Add(new Employee() { Image = "John.png", Name = "John" });
+            employeeCollection.Add(new Employee() { Image = "James.png", Name = "James" });
+            employeeCollection.Add(new Employee() { Image = "Jacob.png", Name = "Jacob" });
+            employeeCollection.Add(new Employee() { Image = "Joy.png", Name = "Joy" });
+            employeeCollection.Add(new Employee() { Image = "Justin.png", Name = "Justin" });
+            employeeCollection.Add(new Employee() { Image = "Jerome.png", Name = "Jerome" });
+            employeeCollection.Add(new Employee() { Image = "Jessica.png", Name = "Jessica" });
+            employeeCollection.Add(new Employee() { Image = "Victoria.png", Name = "Victoria" });
+        }
+    }
+}
+{% endhighlight %}
+
+![token represents the image and text with closebutton](images/MultiSelect/TokenRepresentation.png)
 
 ## Delimiter
 
@@ -239,7 +358,7 @@ autoComplete.Delimiter=",";
 
 {% endtabs %}
 
-![](images/MultiSelect/Delimiter.png)
+![delimiter supports to separate the items with delimiter text](images/MultiSelect/Delimiter.png)
 
 ### Selection indicator
 

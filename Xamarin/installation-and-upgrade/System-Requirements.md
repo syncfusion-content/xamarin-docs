@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Installation and Deployment process for Syncfusion Essential Studio Xamarin products
+title: Installation and Deployment process for Syncfusion Xamarin products
 description: Describes about system requirements to install the Syncfusion Xamarin Components and list of supported platforms. 
 platform: xamarin
 control: Installation and Deployment
@@ -46,12 +46,12 @@ The following table lists the platforms supported by our Xamarin.Forms controls.
         </th>
     </tr>
     <tr>
-        <td rowspan="3">
+        <td rowspan="2">
             Android
             <br/>
             <br/>
         </td>
-        <td rowspan="3">
+        <td rowspan="2">
         Phone, Tablet
         <br/>
         <br/>
@@ -67,18 +67,6 @@ The following table lists the platforms supported by our Xamarin.Forms controls.
             <br/>
         </td>
     </tr>
-    <tr>
-        <td>
-            SfListView
-            <br/>
-            <br/>
-        </td>
-         <td>
-            API level 19 and later versions
-            <br/>
-            <br/>
-        </td>
-    </tr>
      <tr>
         <td>
             All other controls 
@@ -86,7 +74,7 @@ The following table lists the platforms supported by our Xamarin.Forms controls.
             <br/>
         </td>
          <td>
-            API level 17 and later versions
+            API level 19 and later versions
             <br/>
             <br/>
         </td>
@@ -157,3 +145,9 @@ The following table lists the platforms supported by our Xamarin.Forms controls.
         </td>
     
 </table>
+
+### Target Framework (Compile SDK Version) for Android
+
+For Android platform, the target framework or compile SDK version of the application should be equal or greater than the latest API available at the time of our release. Please find more details about setting the target framework in the following link.
+
+ [https://docs.microsoft.com/en-us/xamarin/android/app-fundamentals/android-api-levels?tabs=windows#target-framework](https://docs.microsoft.com/en-us/xamarin/android/app-fundamentals/android-api-levels?tabs=windows#target-framework)

@@ -13,7 +13,7 @@ The SfListView allows customizing appearance of the underlying data, and provide
 
 ## Item template
 
-A template can be used to present the data in a way that makes sense for the application by using different controls. The SfListView allows customizing appearance of view by setting the [ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html) property. By default, the [SfLabel](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfLabel.html) is used to present the list of data.
+A template can be used to present the data in a way that makes sense for the application by using different controls. SfListView allows customizing appearance of view by setting the [ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html) property.
 
 ## Data template selector
 
@@ -96,9 +96,9 @@ public class MainPageCs : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Listview_DataTemplateSelector659971950).
+You can also download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DataTemplate1985610922).
 
-![](SfListView_images/DataTemplateSelector.jpg)
+![Xamarin.Forms listview with item template customize](SfListView_images/DataTemplateSelector.jpg)
 
 ## Horizontal ListView
 
@@ -113,7 +113,7 @@ listView.Orientation = Orientation.Horizontal;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfListView_images/SfListView-Orientation.png)
+![Xamarin.Forms listview items in horizontal orientation](SfListView_images/SfListView-Orientation.gif)
 
 ### Navigate across views (like TabView)
 
@@ -195,9 +195,9 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewSample955275458).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/HorizontalListView-721870895).
 
-![](SfListView_images/NavigateView.jpg)
+![Xamarin.Forms listview with tabview](SfListView_images/NavigateView.jpg)
 
 ## Horizontal list inside vertical list
 
@@ -271,9 +271,9 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewSample1987721770).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/HorizontalInsideVerticalList-991620132).
 
-![](SfListView_images/Horizontal_List_Inside_Vertical_List.jpg)
+![Vertical listview with horizontal items](SfListView_images/Horizontal_List_Inside_Vertical_List.jpg)
 
 ## Item size
 
@@ -303,7 +303,7 @@ listView.ItemSpacing = new Thickness(5, 0, 0, 0)
 {% endhighlight %}
 {% endtabs %}
 
-![](SfListView_images/ItemSpacing.jpg)
+![Spacing between items in listview](SfListView_images/ItemSpacing.jpg)
 
 ## Alternate row styling
 
@@ -377,9 +377,9 @@ public class IndexToColorConverter : IValueConverter
 }
 {% endhighlight %}
 
-You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewSample-491325735).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AlternateRowStyling566000668).
 
-![](SfListView_images/AlternateRowStyle.jpg)
+![Alternate row style in listview](SfListView_images/AlternateRowStyle.jpg)
 
 ## Rounded corner on items
 
@@ -438,9 +438,9 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Sorting1306703738).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/RoundedCornerItems-83216015).
 
-![](SfListView_images/RoundCorner.jpg)
+![Rounded corners on items in listview](SfListView_images/RoundCorner.jpg)
 
 ## Drop shadow effect on items
 
@@ -509,9 +509,9 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/HasShadow864181381).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DropShadowEffect-1675448697).
 
-![](SfListView_images/FrameShadow.jpg)
+![Frame shadow effect in listview](SfListView_images/FrameShadow.jpg)
 
 ## ListViewItem customization
 
@@ -795,33 +795,46 @@ internal class SfListViewAccordionBehavior : Behavior<ContentPage>
     #endregion
 
     #region Private Methods
-
+    using Syncfusion.ListView.XForms.Control.Helpers;
     private void ListView_ItemTapped(object sender, Syncfusion.ListView.XForms.ItemTappedEventArgs e)
     {
-        if (tappedItem == null)
+        if (tappedItem != null && tappedItem.IsVisible)
         {
-            // Expands when tap on the item at first.
-            (e.ItemData as Contact).IsVisible = true;
-            tappedItem = e.ItemData as Contact;
+            var previousIndex = listview.DataSource.DisplayItems.IndexOf(tappedItem);
+
+            tappedItem.IsVisible = false;
+
+            if (Device.RuntimePlatform != Device.macOS)
+                Device.BeginInvokeOnMainThread(() => { listview.RefreshListViewItem(previousIndex, previousIndex, false); });
+        }
+
+        if (tappedItem == (e.ItemData as Contact))
+        {
+            if (Device.RuntimePlatform == Device.macOS)
+            {
+                var previousIndex = listview.DataSource.DisplayItems.IndexOf(tappedItem);
+                Device.BeginInvokeOnMainThread(() => { listview.RefreshListViewItem(previousIndex, previousIndex, false); });
+            }
+
+            tappedItem = null;
+            return;
+        }
+
+        tappedItem = e.ItemData as Contact;
+        tappedItem.IsVisible = true;
+
+        if (Device.RuntimePlatform == Device.macOS)
+        {
+            var visibleLines = this.listview.GetVisualContainer().ScrollRows.GetVisibleLines();
+            var firstIndex = visibleLines[visibleLines.FirstBodyVisibleIndex].LineIndex;
+            var lastIndex = visibleLines[visibleLines.LastBodyVisibleIndex].LineIndex;
+            Device.BeginInvokeOnMainThread(() => { listview.RefreshListViewItem(firstIndex, lastIndex, false); });
         }
         else
         {
-            if (AccordionViewModel.ContactsInfo.Contains(tappedItem) && tappedItem.IsVisible)
-            {
-                // Collapse when tap on the expanded item.
-                AccordionViewModel.ContactsInfo.FirstOrDefault(x => x.ContactName == tappedItem.ContactName).IsVisible = false;
-            }
-            if (e.ItemData as Contact != tappedItem)
-            {
-                // Expands when tap on the another item.
-                tappedItem = e.ItemData as Contact;
-                AccordionViewModel.ContactsInfo.FirstOrDefault(x => x.ContactName == tappedItem.ContactName).IsVisible = true;
-            }
-            else
-                tappedItem = null;
+            var currentIndex = listview.DataSource.DisplayItems.IndexOf(e.ItemData);
+            Device.BeginInvokeOnMainThread(() => { listview.RefreshListViewItem(currentIndex, currentIndex, false); });
         }
-
-        listview.ForceUpdateItemSize();
     }
 
     #endregion
@@ -837,9 +850,9 @@ internal class SfListViewAccordionBehavior : Behavior<ContentPage>
 
 The `IsVisible` model property which is bound to the second template will be enabled when tapping the item and disabled when tapping again the same item.
 
-You can also download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AccordionSample986355053).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AccordionSample2103212952).
 
-![](SfListView_images/SfListView-AccordionImage.png)
+![Xamarin.Forms listview with Accordion](SfListView_images/SfListView-AccordImage.png)
 
 ## show busy indicator on list view
 
@@ -896,9 +909,9 @@ public class ViewModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfListViewSample-1603252624.zip).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/BusyIndicatorOnListView1412366667).
 
-![](SfListView_images/ListViewBusyIndicator.jpg)    ![](SfListView_images/ListView.jpg)
+![Busy indicator to load listview](SfListView_images/ListViewBusyIndicator.jpg)    ![Loaded listview items](SfListView_images/ListView.jpg)
 
 ## show busy indicator on list view items
 
@@ -1073,9 +1086,9 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewSample327630756).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/BusyIndicatorOnItems1095316072).
 
-![](SfListView_images/ListViewItemBusyIndicator.jpg)    ![](SfListView_images/ListViewItem.jpg)
+![Busy indicator to load listview items](SfListView_images/ListViewItemBusyIndicator.jpg)    ![Loaded listview](SfListView_images/ListViewItem.jpg)
 
 ## Show busy indicator on list view items using toggle switch
 
@@ -1144,9 +1157,9 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SwitchSample-287720926).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/BusyIndicatorToggle1696157913).
 
-![](SfListView_images/SfListView-SwitchOn.png)    ![](SfListView_images/SfListView-SwitchOff.png)
+![Xamarin.Forms listview with switch on](SfListView_images/SfListView-SwitchOn.png)    ![Xamarin.Forms listview with switch off](SfListView_images/SfListView-SwitchOff.png)
 
 ## Item animation on appearing
 
@@ -1231,6 +1244,6 @@ public class ListViewItemExt : ListViewItem
 {% endhighlight %}
 {% endtabs %}
 
-Here `FadeTo` animation is applied for [ListViewItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ListViewItem.html), when comes in the view. You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ItemAppearing-659512864.zip).
+Here `FadeTo` animation is applied for [ListViewItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ListViewItem.html), when comes in the view. You can also download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ExtensionofListViewItem-Appearing-1339007241).
 
-![](SfListView_images/SfListView-ItemAppearingAnimation.gif)
+![Xamarin.Forms listview with animation](SfListView_images/SfListView-ItemAppearingAnimation.gif)

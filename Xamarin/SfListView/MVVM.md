@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working with ListView in MVVM
+title: Working with Syncfusion ListView in MVVM
 description: Describes how to use ListView in different cases of MVVM.
 platform: xamarin
 control: SfListView
@@ -115,7 +115,7 @@ public class ContactsViewModel
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewSample-1366806168).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/EventToCommand-343190546).
 
 For more information regarding the event to command behavior in Xamarin.Forms, you can refer [this](https://developer.xamarin.com/samples/xamarin-forms/Behaviors/EventToCommandBehavior/) link.
 
@@ -173,7 +173,7 @@ public partial class App : PrismApplication
     <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
         <syncfusion:SfListView x:Name="listView" ItemSize="70" ItemSpacing="0,0,5,0"
                              AutoFitMode="Height"
-                             ItemsSource="{Binding ContactsInfo,}" IsStickyHeader="True" 
+                             ItemsSource="{Binding ContactsInfo}" IsStickyHeader="True" 
                              AllowSwiping="True" IsStickyGroupHeader="True" GroupHeaderSize="50">
         </syncfusion:SfListView>
     </StackLayout>
@@ -183,7 +183,7 @@ public partial class App : PrismApplication
 
 For more details, refer to [https://xamgirl.com/prism-in-xamarin-forms-step-by-step-part-1](https://xamgirl.com/prism-in-xamarin-forms-step-by-step-part-1).
 
-You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewPrism116483729).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewWithprism-154406465).
 
 ## Binding properties in MVVM pattern
 
@@ -289,7 +289,7 @@ public class BookInfoRepository : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MVVMSelectedItem918891826).
+You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MVVMSelectedItem315636739).
 
 ### Binding SelectedItems
 
@@ -342,7 +342,7 @@ public class BookInfoRepository : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MVVMSelectedItems1772664608).
+You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MVVMSelectedItems739377311).
 
 ### Binding SelectionChanged event
 
@@ -397,7 +397,7 @@ public class BookInfoRepository : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MVVMSelectionChanged-1137184696).
+You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MVVMSelectionChanged598843483).
 
 ### Binding SelectionChanging event
 
@@ -452,7 +452,7 @@ public class BookInfoRepository : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MVVMSelectionChanging-778655431).
+You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MVVMSelectionChanging964295010).
 
 N> Similarly, you can bind the [ItemTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTapped_EV.html), [ItemDoubleTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemDoubleTapped_EV.html), and [ItemHolding](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemHolding_EV.html) event.
 
@@ -505,7 +505,7 @@ public class BookInfoRepository : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MVVMTapCommand2101998894).
+You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MVVMTapCommand1058162896).
 
 ### Handling ItemHolding action
 
@@ -554,7 +554,7 @@ public class BookInfoRepository : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MVVMHoldCommand469230625).
+You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MVVMHoldCommand57192241).
 
 ### Binding button command
 
@@ -641,7 +641,7 @@ public class BookInfoRepository : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MVVMButtonCommand-350477224).
+You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MVVMButtonCommand201962307).
 
 ### Processing LoadMore
 
@@ -740,4 +740,4 @@ public class ViewModel:INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MVVMLoadMore726795963).
+You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MVVMButtonCommand201962307).

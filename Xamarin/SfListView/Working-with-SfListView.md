@@ -225,7 +225,7 @@ When the SfListView is loaded inside the ScrollView with sticky header and stick
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfListViewSample197024233.zip).
+You can download the entire source code [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewInsideScrollview-235910398).
 
 ## Loading ListView inside CarouselPage/Master detail page
 
@@ -442,9 +442,9 @@ public partial class ContextMenu : ContentPage
 {% endhighlight %}
 {% endtabs %}
     
-You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewContextMenu-1107225769).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewContextMenu-991690726).
 
-![](SfListView_images/ContextMenu.jpg)
+![Xamarin.Forms listview with Context menu](SfListView_images/ContextMenu.jpg)
 
 ## Paging
 
@@ -573,9 +573,9 @@ public class SfListViewPagingBehavior : Behavior<ContentPage>
 
 {% endhighlight %}
 
-You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Paging-638353541).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Paging737472841).
 
-![](SfListView_images/Paging.png)
+![Xamarin.Forms listview with paging](SfListView_images/Paging.png)
  
 ## Loading data from SQLite online database
 
@@ -747,7 +747,7 @@ public partial class ToDoListPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AzureSampleApp-1350807709).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AzureSampleApp-1350807709-2017106000).
 
 ## Loading data from SQLite offline database
 
@@ -879,7 +879,7 @@ Refer to the following code which illustrates, how to bind the data from the SQL
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfListViewSample405826458).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SQL_offline2081750820).
 
 ## ListView with Prism Framework
 
@@ -945,7 +945,7 @@ public partial class App : PrismApplication
 
 For more details, refer to [https://xamgirl.com/prism-in-xamarin-forms-step-by-step-part-1](https://xamgirl.com/prism-in-xamarin-forms-step-by-step-part-1).
 
-You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewPrism116483729).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewPrism1060147379).
 
 ## Scrolling ListView without virtualization
 
@@ -958,6 +958,7 @@ ListView allows you to scroll by loading the entire collection of items inside t
 </ScrollView>
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.ListView.XForms.Control.Helpers;
 public partial class MainPage : ContentPage
 { 
 	public MainPage()
@@ -975,7 +976,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewSample-1018057929).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ScrollingwithoutVirtualization1188151350).
 
 When ListView is in [AutoFitMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AutoFitMode.html) as 'Height', the extend of the ListView will be updated only while scrolling. So you can resize the ListView in `VisualContainer` [PropertyChanged](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.VisualContainer~PropertyChanged_EV.html) method as like below.
 
@@ -986,6 +987,7 @@ When ListView is in [AutoFitMode](https://help.syncfusion.com/cr/cref_files/xama
 </ScrollView>
 {% endhighlight %}
 {% highlight C# %}
+using Syncfusion.ListView.XForms.Control.Helpers;
 public partial class MainPage : ContentPage
 {
     VisualContainer visualContainer;
@@ -1081,7 +1083,8 @@ Follow the steps to set the size for the outer ListView based on the extend of i
 {% endtabs %}
 
 {% highlight C# %}
- public class ExtendedListView : SfListView
+using Syncfusion.ListView.XForms.Control.Helpers;
+public class ExtendedListView : SfListView
 {
     VisualContainer container;
     public ExtendedListView()
@@ -1102,11 +1105,71 @@ Follow the steps to set the size for the outer ListView based on the extend of i
 }
 {% endhighlight %}
 
- You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewSample-1603050223).
+ You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/NestedListView95603140).
  
 ## Rendering ListView when loading in different layouts
 
 The options are as follows:
 
 * Creates the measurement and layout similar to Xamarin.Forms ListView, when the ListView is loaded inside the layouts such as StackLayout, ScrollView, and Grid, in which the RowDefinition or ColumnDefinition is set to 'Auto'. In all other layouts, the ListView size will be allocated from the framework.
-* Set the value of total extend to the HeightRequest of ListView, since the ListView scrolling will be handled by the parent ScrollView, when ListView is loaded inside the StackLayout with base parent as ScrollView having multiple elements inside the StackLayout.
+* Sets the value of total extend to the HeightRequest of ListView, since the scrolling will be handled by the parent ScrollView, when ListView is loaded inside the StackLayout with base parent as ScrollView having multiple elements inside the StackLayout.
+
+## How to
+
+### Swipe and move an item to another listview on swipe item tapped action
+
+By using swipe view action, you can move an item from one listview to another listview.
+
+{% tabs %}
+{% highlight c# %}
+private void FavoriteTapped(object obj)
+{
+    var departureInfo = obj as DepartureInfo;
+    var pinnedInfo = FirstLVCollection.Any(o => o.Name == departureInfo.Name) ? FirstLVCollection.First(o => o.Name == departureInfo.Name) : null;
+    if (pinnedInfo == null)
+    {
+        FirstLVCollection.Add(new PinnedInfo() { Name = departureInfo.Name, RouteName = departureInfo.Name, Icon = departureInfo.Icon, IsFavorite = true });
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Filter listview items based on another listview selection
+
+To filter the listview items based on the item selection in another listview, use the SfListView.DataSource.Filter property.
+
+{% tabs %}
+{% highlight c# %}
+private void ItemTapped(Syncfusion.ListView.XForms.ItemTappedEventArgs e)
+{
+    tappedPinedInfo = e.ItemData as PinnedInfo;
+    if (tappedPinedInfo.IsFavorite)
+    {
+        secondLV.DataSource.Filter = FilterDepartures;
+        tappedPinedInfo.IsFavorite = false;
+    }
+    else
+    {
+        secondLV.DataSource.Filter = null;
+        tappedPinedInfo.IsFavorite = true;
+    }
+    secondLV.DataSource.RefreshFilter();
+}
+
+private bool FilterDepartures(object obj)
+{
+    var departureInfo = obj as DepartureInfo;
+    if (tappedPinedInfo == null)
+        return true;
+
+    if (departureInfo.Name.ToLower().Contains(tappedPinedInfo.Name.ToLower())
+            || departureInfo.RouteName.ToLower().Contains(tappedPinedInfo.RouteName.ToLower()))
+        return true;
+    else
+        return false;
+}
+{% endhighlight %}
+{% endtabs %}
+
+ You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewSample842305360).
+ 

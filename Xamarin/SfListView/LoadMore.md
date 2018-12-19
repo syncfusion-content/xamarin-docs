@@ -160,13 +160,13 @@ private async void LoadMoreItems(object obj)
 {% endhighlight %}
 {% endtabs %}
 
-Download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LoadMoreUG-474426296).
+Download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Loading_Indicator-1292005291).
 
 Items can be loaded either on the top or bottom of the view.
 
-![](SfListView_images/SfListView-LoadMore.gif)
+![Xamarin.Forms listview load more on scrolling at bottom](SfListView_images/SfListView-LoadMore.gif)
 
-![](SfListView_images/SfListView-TopLoadMore.gif)
+![Xamarin.Forms listview load more on scrolling at top](SfListView_images/SfListView-TopLoadMore.gif)
 
 ## Load more view customization
 
@@ -403,6 +403,7 @@ private bool CanLoadMoreItems(object obj)
 
 * The SfListView does not support the [SfListView.LoadMoreOption](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreOption.html) in `Manual` mode when the [SfListView.Orientation](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.Orientation.html) is `Horizontal`.
 * It does not support for `LoadMoreOption` in `Auto` when the [SfListView.LoadMorePosition](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LoadMorePosition.html) is `Top`.
+* Call the `CanExecute` method when finite items are loaded in view. It disables `LoadMore` view after all the items are being loaded and avoids repeated triggering of `Execute` method. It is not mandatory to call the `CanExecute` method when loading infinite items. 
 
 ## How to
 
@@ -451,7 +452,7 @@ public class LoadMoreViewModel:INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LoadMoreInfinitescroll88670489).
+You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LoadMoreInfinitescroll-1060583579).
 
 ### Load more items automatically from up direction
 
@@ -507,6 +508,7 @@ Insert each new item in the 0th position of the underlying collection bound to t
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.ListView.XForms.Control.Helpers;
 public partial class MainPage : ContentPage
 {
   MainPageViewModel ViewModel;
@@ -575,9 +577,9 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DataTemplateSelector_Automatic-115808424).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LoadMore_Up_Automatic-1467526465).
 
-![](SfListView_images/SfListView-LoadMoreAutomaticallyUpDirection.png)
+![Loadmore automatic](SfListView_images/SfListView-LoadMoreAutomaticallyUpDirection.png)
 
 ### Load more items manually from up direction
 
@@ -701,6 +703,6 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DataTemplateSelector_Manual1650405033).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LoadMore_Up_Manual-1153429299).
 
-![](SfListView_images/SfListView-LoadMoreManuallyUpDirection.png)
+![Loadmore manual](SfListView_images/SfListView-LoadMoreManuallyUpDirection.jpg)

@@ -35,7 +35,7 @@ The CustomViewSettings is defined to set the values for `CanMaintainAspectRatio`
 CustomViewSettings customViewSettings = new CustomViewSettings()
 {
     CanMaintainAspectRatio = false,
-    Bounds = new Rect(0, 0, 100, 100),
+    Bounds = new Rectangle(0, 0, 100, 100),
     Angle=45
 };
 

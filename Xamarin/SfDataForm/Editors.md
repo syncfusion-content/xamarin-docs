@@ -268,7 +268,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/Editors_DateFormat.png)
+![DateFormat](SfDataForm_images/Editors_DateFormat.png)
 
 ### Setting MaximumDate and MinimumDate in date editor
 
@@ -290,7 +290,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/Editors_DateMaximum.png)
+![Maximum date](SfDataForm_images/Editors_DateMaximum.png)
 
 ## Drop down editor
 
@@ -358,7 +358,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/Editors_DropDownItems.png)
+![DropDown items](SfDataForm_images/Editors_DropDownItems.png)
 
 N> `DropDownEditor` not supported in `Xamarin.Forms.iOS`.
 
@@ -384,7 +384,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/Editors_PickerTitle.png)
+![Picker items](SfDataForm_images/Editors_PickerTitle.png)
 
 ### Customizing ItemsSource of Picker
 
@@ -474,6 +474,8 @@ private void Button_Click(object sender, EventArgs e)
 
 You can display the complex type property values in picker editor by using the [GetSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SourceProvider~GetSource.html) override method of SourceProvider class, which is used to get source list as complex property values for picker editor and set it to `SourceProvider` property of SfDataForm. You need to use `AutoGeneratingDataFormItem `event to set [DisplayMemberPath](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormPickerItem~DisplayMemberPath.html) and [ValueMemberPath](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormPickerItem~ValueMemberPath.html) property value DataFormPickerItem for complex type property.
 
+N> Class cannot be directly set as data type for picker editor in this complex type scenario.
+
 {% tabs %}
 {% highlight c# %}
 dataForm.SourceProvider = new SourceProviderExt();
@@ -524,7 +526,7 @@ public class Address
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/ComplexPropertyPicker.png)
+![Complex property](SfDataForm_images/ComplexPropertyPicker.png)
 
 You can download the entire source code of this demo for Xamarin.Forms from here [DataFormPickerEditor](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfDataForm_Picker-2009667790.zip)
 
@@ -549,7 +551,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/SpinButtonCenter.png)
+![Spin button](SfDataForm_images/SpinButtonCenter.png)
 
 ### Changing step value in numeric up down
 
@@ -641,7 +643,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/Editors_NumericCulture.png)
+![NumericTextBox culture](SfDataForm_images/Editors_NumericCulture.png)
 
 #### SfNumericUpDown
 
@@ -660,7 +662,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/NumericUpDownCulture.png)
+![NumericUpDown culture](SfDataForm_images/NumericUpDownCulture.png)
 
 ## Password editor
 
@@ -685,4 +687,4 @@ public string Password
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/PasswordEditor.jpg)
+![Password editor](SfDataForm_images/PasswordEditor.jpg)

@@ -54,7 +54,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 	List<Assembly> assembliesToInclude = new List<Assembly>();
 
 	//Now, add all the assemblies your app uses
-	assembliesToInclude.Add(typeof(SfCalendarRenderer).GetTypeInfo().Assembly);
+	assembliesToInclude.Add(typeof(SfRadialMenuRenderer).GetTypeInfo().Assembly);
 
 	// replaces Xamarin.Forms.Forms.Init(e);        
 	Xamarin.Forms.Forms.Init(e, assembliesToInclude);
@@ -170,7 +170,7 @@ Public class RadialMenuPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-![](images/gettingStarted1.png)
+![radialmenu](images/gettingStarted1.png)
 
 ## Create radial menu items
 
@@ -389,7 +389,7 @@ Public class RadialMenuPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-![](images/gettingStarted2.png)
+![gettingstarted](images/gettingStarted2.png)
 
 N> To use FontIcons, add respective FontFamily name in `info.plist` file under fonts provided by application category.
 

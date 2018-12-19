@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tooltip feature of SfMaps in Xamarin.Forms 
+title: Tooltip feature of Syncfusion Maps in Xamarin.Forms 
 description: This section describes the tooltip feature of maps.
 platform: xamarin
 control: SfMaps

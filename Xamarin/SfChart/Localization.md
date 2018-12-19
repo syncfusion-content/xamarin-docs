@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization of Xamarin.Forms Chart
+title: Localization of Syncfusion.Xamarin.Forms Chart
 description: Set localized text for the labels in Xamarin.Forms Chart.
 platform: xamarin
 control: Chart

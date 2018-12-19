@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization of Xamarin.Forms SfDateTimeRangeNavigator
+title: Localization of Syncfusion.Xamarin.Forms SfDateTimeRangeNavigator
 description: Set localized text for the labels in Xamarin.Forms SfDateTimeRangeNavigator.
 platform: xamarin
 control: SfDateTimeRangeNavigator

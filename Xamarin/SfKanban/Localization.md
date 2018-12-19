@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization of Kanban
+title: Localization of Syncfusion.Xamarin.Forms Kanban
 description: How to Localize the contents of Kanban control.
 platform: xamarin
 control: Kanban

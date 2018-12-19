@@ -483,7 +483,9 @@ Content = sfMaps;
 
 ## Tooltip for markers
 
-You can get the tooltip by tapping the markers in the shapes.
+You can get the tooltip by tapping the markers in the shapes and markers in the imagery layer.
+
+### Marker tooltip in shape layer
 
 {% tabs %} 
 
@@ -541,6 +543,63 @@ Content = sfMaps;
 {% endtabs %} 
 
 ![Xamarin Tooltip for Marker Image](Images/marker_tooltip.png)
+
+### Marker tooltip in imagery layer
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<maps:SfMaps BackgroundColor="White" Margin="10">
+        <maps:SfMaps.Layers >
+            <maps:ImageryLayer>
+                <maps:ImageryLayer.Markers>
+                    <maps:MapMarker Label="India" Latitude="20.593683" Longitude="78.962883" />
+                </maps:ImageryLayer.Markers>
+                <maps:ImageryLayer.MarkerSettings>
+                    <maps:MapMarkerSetting MarkerIcon="Image" ImageSource="pin.png" IconSize="15">
+                        <maps:MapMarkerSetting.TooltipSettings>
+                            <maps:TooltipSetting ShowTooltip="True" ValuePath="Label" TextColor="White" 
+                                                 Margin="10" BackgroundColor="Navy"
+                                                 StrokeColor="Black" StrokeWidth="2" />
+                        </maps:MapMarkerSetting.TooltipSettings>
+                    </maps:MapMarkerSetting>
+                </maps:ImageryLayer.MarkerSettings>
+            </maps:ImageryLayer>
+        </maps:SfMaps.Layers>
+</maps:SfMaps>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+SfMaps sfMaps = new SfMaps();
+ImageryLayer imageryLayer = new ImageryLayer();
+MapMarker mapMarker = new MapMarker();
+mapMarker.Label = "India";
+mapMarker.Latitude = "20.593683";
+mapMarker.Longitude = "78.962883";
+imageryLayer.Markers.Add(mapMarker);
+MapMarkerSetting mapMarkerSetting = new MapMarkerSetting();
+mapMarkerSetting.MarkerIcon = MapMarkerIcon.Image;
+mapMarkerSetting.ImageSource = "pin.png";
+mapMarkerSetting.IconSize = 15;
+mapMarkerSetting.TooltipSettings.ShowTooltip = true;
+mapMarkerSetting.TooltipSettings.ValuePath = "Label";
+mapMarkerSetting.TooltipSettings.TextColor = Color.White;
+mapMarkerSetting.TooltipSettings.BackgroundColor = Color.Navy;
+mapMarkerSetting.TooltipSettings.StrokeColor = Color.Black;
+mapMarkerSetting.TooltipSettings.StrokeWidth = 2;
+mapMarkerSetting.TooltipSettings.Margin = 10;
+imageryLayer.MarkerSettings = mapMarkerSetting;
+sfMaps.Layers.Add(imageryLayer);
+Content = sfMaps;
+
+{% endhighlight %}
+
+{% endtabs %} 
+
+![Xamarin Tooltip for OSM Marker Image](Images/tilelayer.png)
 
 ## Marker tooltip customization
 
@@ -609,62 +668,3 @@ Content = sfMaps;
 {% endtabs %} 
 
 ![Xamarin Tooltip Customization for Marker Image](Images/marker_tooltip_customization.png)
-
-## Tilelayer tooltip
-
-You can add tooltip for marker in imagery layer customize the tooltip in the marker.
-
-{% tabs %} 
-
-{% highlight xaml %}
-
- <maps:SfMaps BackgroundColor="White" Margin="10">
-        <maps:SfMaps.Layers >
-            <maps:ImageryLayer>
-                <maps:ImageryLayer.Markers>
-                    <maps:MapMarker Label="India" Latitude="20.593683" Longitude="78.962883" />
-                </maps:ImageryLayer.Markers>
-                <maps:ImageryLayer.MarkerSettings>
-                    <maps:MapMarkerSetting MarkerIcon="Image" ImageSource="pin.png" IconSize="15">
-                        <maps:MapMarkerSetting.TooltipSettings>
-                            <maps:TooltipSetting ShowTooltip="True" ValuePath="Label" TextColor="White" 
-                                                 Margin="10" BackgroundColor="Navy"
-                                                 StrokeColor="Black" StrokeWidth="2" />
-                        </maps:MapMarkerSetting.TooltipSettings>
-                    </maps:MapMarkerSetting>
-                </maps:ImageryLayer.MarkerSettings>
-            </maps:ImageryLayer>
-        </maps:SfMaps.Layers>
-</maps:SfMaps>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-SfMaps sfMaps = new SfMaps();
-ImageryLayer imageryLayer = new ImageryLayer();
-MapMarker mapMarker = new MapMarker();
-mapMarker.Label = "India";
-mapMarker.Latitude = "20.593683";
-mapMarker.Longitude = "78.962883";
-imageryLayer.Markers.Add(mapMarker);
-MapMarkerSetting mapMarkerSetting = new MapMarkerSetting();
-mapMarkerSetting.MarkerIcon = MapMarkerIcon.Image;
-mapMarkerSetting.ImageSource = "pin.png";
-mapMarkerSetting.IconSize = 15;
-mapMarkerSetting.TooltipSettings.ShowTooltip = true;
-mapMarkerSetting.TooltipSettings.ValuePath = "Label";
-mapMarkerSetting.TooltipSettings.TextColor = Color.White;
-mapMarkerSetting.TooltipSettings.BackgroundColor = Color.Navy;
-mapMarkerSetting.TooltipSettings.StrokeColor = Color.Black;
-mapMarkerSetting.TooltipSettings.StrokeWidth = 2;
-mapMarkerSetting.TooltipSettings.Margin = 10;
-imageryLayer.MarkerSettings = mapMarkerSetting;
-sfMaps.Layers.Add(imageryLayer);
-Content = sfMaps;
-
-{% endhighlight %}
-
-{% endtabs %} 
-
-![Xamarin Tooltip for OSM Marker Image](Tooltip_images/tilelayer.png)

@@ -40,6 +40,7 @@ public class MusicInfoRepository
         TreeViewOnDemandCommand = new Command(ExecuteOnDemandLoading, CanExecuteOnDemandLoading);
     }
 
+    //CanExecuteOnDemandLoading method is called when each item is initialized and defines whether a load-on-demand feature is enabled for this item.
     private bool CanExecuteOnDemandLoading(object sender)
     {
         var hasChildNodes = ((sender as TreeViewNode).Content as MusicInfo).HasChildNodes;
@@ -54,6 +55,7 @@ public class MusicInfoRepository
             return false;
     }
 
+    //ExecuteOnDemandLoading method is called when each item is requested for load-on-demand items.
     private void ExecuteOnDemandLoading(object obj)
     {
         var node = obj as TreeViewNode;
@@ -131,17 +133,19 @@ public class MusicInfoRepository
 {% endhighlight %}
 {% endtabs %}
 
-CanExecuteOnDemandLoading method is called when each item is initialized and defines whether a load-on-demand feature is enabled for this item.
-
 {% tabs %}
 {% highlight xaml %}
-<sfTreeView:SfTreeView x:Name="treeView"
-                       LoadOnDemandCommand="{Binding TreeViewOnDemandCommand}"
-                       ExpandActionTarget="Node"
-                       ItemsSource="{Binding Menu}" />
+<ContentPage  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:syncfusion="clr-namespace:Syncfusion.XForms.TreeView;assembly=Syncfusion.SfTreeView.XForms">
+    <ContentPage.Content>
+        <sfTreeView:SfTreeView x:Name="treeView"
+                               LoadOnDemandCommand="{Binding TreeViewOnDemandCommand}"
+                               ItemsSource="{Binding Menu}" /> 
+    </ContentPage.Content>
+</ContentPage>
 {% endhighlight %}
 {% endtabs %}
 
 You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/OnDemandLoading583866000).
 
-![Xamarin Forms TreeView with OnDemandLoading](TreeView_images/TreeView_OnDemmadn.gif)
+![Xamarin Forms TreeView with OnDemandLoading](TreeView_images/LoadOnDemand-Xamarin-Forms-TreeView.gif)

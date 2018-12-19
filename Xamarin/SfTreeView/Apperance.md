@@ -296,18 +296,37 @@ You can also download the entire source code of this demo from [here](http://www
 
 ##  Right to left(RTL)
 
- TreeView supports right-to-left localization by setting the [FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.flowdirection?view=xamarin-forms#Xamarin_Forms_VisualElement_FlowDirection) to `FlowDirection.RightToLeft` or by device's flow direction by setting the `FlowDirection` to the [Device.FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.device.flowdirection?view=xamarin-forms#Xamarin_Forms_Device_FlowDirection) value.
- For UWP platform, it is mandatory to set the flow direction in renderer but not in pcl. It will support in Xamarin.Forms version 3.0 and above.
-
-N> Views of [ItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ItemTemplate.html) does not respond for localization changes, hence you need to set `FlowDirection.RightToLeft` to parent child view.
-
-N> Label does not support the right to left direction. To change the flow direction, set the HorizontalOptions for the label as `StartAndExpand`.
+TreeView supports to change the flow of text to the right-to-left direction by setting the [FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.flowdirection?view=xamarin-forms#Xamarin_Forms_VisualElement_FlowDirection) to `RightToLeft`. TreeView supports RTL in Xamarin.Forms version 3.0 and above.
 
 {% tabs %}
 {% highlight xaml %}
 
-<sfTreeView:SfTreeView x:Name="treeView"
-                     FlowDirection="{x:Static Device.FlowDirection}"/>
+<ContentPage  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:syncfusion="clr-namespace:Syncfusion.XForms.TreeView;assembly=Syncfusion.SfTreeView.XForms">
+    <ContentPage.Content>
+       <syncfusion:SfTreeView x:Name="treeView" FlowDirection="RightToLeft"/>
+    </ContentPage.Content>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight c# %}
+
+treeView.FlowDirection = FlowDirection.RightToLeft;
+
+{% endhighlight %}
+{% endtabs %}
+
+TreeView also supports RTL when device's flow direction is changed and it is achieved by setting the `FlowDirection` to the [Device.FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.device.flowdirection?view=xamarin-forms#Xamarin_Forms_Device_FlowDirection) value.
+
+{% tabs %}
+{% highlight xaml %}
+
+<ContentPage  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:syncfusion="clr-namespace:Syncfusion.XForms.TreeView;assembly=Syncfusion.SfTreeView.XForms">
+    <ContentPage.Content>
+       <syncfusion:SfTreeView x:Name="treeView" FlowDirection="{x:Static Device.FlowDirection}"/>
+    </ContentPage.Content>
+</ContentPage>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -317,4 +336,27 @@ treeView.FlowDirection = Device.FlowDirection;
 {% endhighlight %}
 {% endtabs %}
 
-![Xamarin Forms TreeView with RTL](TreeView_images/TreeView_Rtl.png)
+In UWP platform, the ScrollView is not changed when RTL is enabled (framework issue). To overcome this issue, set the `FlowDirection` property in constructor of `MainPage` in UWP renderer as demonstrated in the following code example.
+
+{% tabs %}
+{% highlight c# %}
+public MainPage()
+{
+    …
+    SfTreeViewRenderer.Init();
+    this.FlowDirection = FlowDirection.RightToLeft;
+    LoadApplication (new App ());
+    …
+}
+{% endhighlight %} 
+{% endtabs %}
+
+![Xamarin.Forms listview with right to left](SfListView_images/Right-To-Left-Xamarin-Forms-ListView.png)
+
+N> When a label is loaded in the `ItemTemplate`, the right-to-left direction is not applied due to the framework issue. It has been reported to the Xamarin team; for more details about this, refer to this [link](https://github.com/xamarin/Xamarin.Forms/issues/3611). To overcome this issue, set the `HorizontalOptions` to `StartAndExpand` in Label.
+
+### Limitations
+
+* When you custom [ItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ItemTemplate.html) is used in `TreeView` it doesnot respond for `FlowDirection` due to the framework issue. To respond for `FlowDirection` changes, hence you need to set `FlowDirection` of `TreeView` to parent View of your custom `ItemTemplate`
+
+![Xamarin Forms TreeView with right to left](TreeView_images/Right-To-Left-Xamarin-Forms-TreeView.png)

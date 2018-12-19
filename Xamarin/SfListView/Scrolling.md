@@ -21,7 +21,7 @@ You can set position of item in view while scrolling by passing [ScrollToPositio
 * End: Scrolls a specific item to be positioned at the end of the view.
 * Center: Scrolls a specific item to be positioned at the center of the view.
 
-You can also scroll to specified data in `SfListView` by using [ScrollTo](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ScrollTo.html) method.
+You can also scroll to specified data in `SfListView` using the [ScrollTo](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ScrollTo.html) method.
 
 {% tabs %}
 {% highlight c# %}

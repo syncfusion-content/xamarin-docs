@@ -1250,7 +1250,7 @@ Here `FadeTo` animation is applied for [ListViewItem](https://help.syncfusion.co
 
 ### Right to left(RTL)
 
-ListView supports to change the flow of text from right to left direction by setting the `FlowDirection` property. It will support in Xamarin.Forms version 3.0 and above.
+ListView supports to change the flow of text to the right-to-left direction by setting the `FlowDirection` property. ListView supports RTL in Xamarin.Forms version 3.0 and above.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1265,7 +1265,7 @@ this.FlowDirection = FlowDirection.RightToLeft;
 {% endhighlight %}
 {% endtabs %}
 
-For UWP platform, the ScrollView is not changed when RTL is enabled and its a framework issue. To overcome this issue, set the `FlowDirection` in the constructor of `MainPage` in UWP renderer as demonstrated in the following code example:
+In UWP platform, the ScrollView is not changed when RTL is enabled (framework issue). To overcome this issue, set the `FlowDirection` property in constructor of `MainPage` in UWP renderer as demonstrated in the following code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -1280,10 +1280,10 @@ public MainPage()
 {% endhighlight %} 
 {% endtabs %}
 
-N> If a label is loaded in the `ItemTemplate`, right to left direction is not applied, due to the framework. It reported to the Xamarin team and find the [link](https://github.com/xamarin/Xamarin.Forms/issues/3611). To overcome this issue, set the `HorizontalOptions` as `StartAndExpand` to the Label.
+N> When a label is loaded in the `ItemTemplate`, the right-to-left direction is not applied due to the framework issue. It has been reported to the Xamarin team; for more details about this, refer to this [link](https://github.com/xamarin/Xamarin.Forms/issues/3611). To overcome this issue, set the `HorizontalOptions` to `StartAndExpand` in Label.
 
 ![Xamarin.Forms listview with right to left](SfListView_images/Right-To-Left-Xamarin-Forms-ListView.png)
 
 ### Limitations
 
-* ListView does not support right to left(RTL) direction, when the [SfListView.Orientation](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.Orientation.html) is `Horizontal`.
+* ListView does not support the right-to-left(RTL) direction when [SfListView.Orientation](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.Orientation.html) is `Horizontal`.

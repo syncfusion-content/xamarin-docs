@@ -294,7 +294,7 @@ You can also download the entire source code of this demo from [here](http://www
 
 ![Xamarin Forms TreeView with styling](TreeView_images/TreeView_LevelStyle.png)
 
-#  Right to left(RTL)
+##  Right to left(RTL)
 
  TreeView supports right-to-left localization by setting the [FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.flowdirection?view=xamarin-forms#Xamarin_Forms_VisualElement_FlowDirection) to `FlowDirection.RightToLeft` or by device's flow direction by setting the `FlowDirection` to the [Device.FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.device.flowdirection?view=xamarin-forms#Xamarin_Forms_Device_FlowDirection) value.
  For UWP platform, it is mandatory to set the flow direction in renderer but not in pcl. It will support in Xamarin.Forms version 3.0 and above.

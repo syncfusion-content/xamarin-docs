@@ -155,7 +155,7 @@ The maps control provides interactive zooming and panning supports to OSM and Bi
 
 Zooming helps you get a closer look of an area on maps for in-depth analysis. Panning helps you move a map around to focus the targeted area. You can perform zooming and panning with the pinching gesture in a map area.
 
-![Xamarin OSM Zooming Panning](Images/zooming.gif)
+![Xamarin OSM Zooming Panning](Images/zooming.jpg)
 
 ## Reset zooming
 
@@ -349,7 +349,6 @@ The [`DeleteTilesFromCache`](https://help.syncfusion.com/cr/cref_files/xamarin/S
 {% endhighlight %}
 
 {% endtabs %}
-
 
 ## Events
 

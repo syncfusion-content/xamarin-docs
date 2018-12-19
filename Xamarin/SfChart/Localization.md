@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization of Xamarin.Forms Chart
-description: How to localize the labels in Xamarin.Forms Chart.
+description: Set localized text for the labels in Xamarin.Forms Chart.
 platform: xamarin
 control: Chart
 documentation: ug

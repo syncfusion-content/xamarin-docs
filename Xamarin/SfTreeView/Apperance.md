@@ -293,3 +293,28 @@ Now, run the application to render the below output:
 You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Styling239740457).
 
 ![Xamarin Forms TreeView with styling](TreeView_images/TreeView_LevelStyle.png)
+
+#  Right to left(RTL)
+
+ TreeView supports right-to-left localization by setting the [FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.flowdirection?view=xamarin-forms#Xamarin_Forms_VisualElement_FlowDirection) to `FlowDirection.RightToLeft` or by device's flow direction by setting the `FlowDirection` to the [Device.FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.device.flowdirection?view=xamarin-forms#Xamarin_Forms_Device_FlowDirection) value.
+ For UWP platform, it is mandatory to set the flow direction in renderer but not in pcl. It will support in Xamarin.Forms version 3.0 and above.
+
+N> Views of [ItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ItemTemplate.html) does not respond for localization changes, hence you need to set `FlowDirection.RightToLeft` to parent child view.
+
+N> Label does not support the right to left direction. To change the flow direction, set the HorizontalOptions for the label as `StartAndExpand`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<sfTreeView:SfTreeView x:Name="treeView"
+                     FlowDirection="{x:Static Device.FlowDirection}"/>
+
+{% endhighlight %}
+{% highlight c# %}
+
+treeView.FlowDirection = Device.FlowDirection;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Xamarin Forms TreeView with RTL](TreeView_images/TreeView_Rtl.png)

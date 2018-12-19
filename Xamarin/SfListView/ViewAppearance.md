@@ -1250,7 +1250,7 @@ Here `FadeTo` animation is applied for [ListViewItem](https://help.syncfusion.co
 
 ### Right to left(RTL)
 
-ListView supports to change the flow of text to the right-to-left direction by setting the `FlowDirection` property. ListView supports RTL in Xamarin.Forms version 3.0 and above.
+ListView supports to change the flow of text to the right-to-left direction by setting the [FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.flowdirection?view=xamarin-forms#Xamarin_Forms_VisualElement_FlowDirection) property. ListView supports RTL in Xamarin.Forms version 3.0 and above.
 
 {% tabs %}
 {% highlight xaml %}

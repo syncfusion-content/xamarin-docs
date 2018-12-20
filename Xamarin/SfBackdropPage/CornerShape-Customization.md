@@ -11,6 +11,8 @@ documentation: ug
 
 Backdrop allows to customize the shapes on the top corners of the front layer. Curved and cut (flat) shape options are available , it can be switched by setting [`EdgeShape`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.XForms~Syncfusion.XForms.Backdrop.BackdropFrontLayer~EdgeShape.html) property of the front layer.
 
+![CornerType image](CornerShape_images/CornerType.png)
+
 >**NOTE**
 The backdrop can only be shaped on the top left and top right corners.
 

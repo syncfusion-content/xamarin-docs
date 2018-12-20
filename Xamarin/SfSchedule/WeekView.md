@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: Customize WeekView at SfSchedule control for Xamarin.Forms
+title: Customize WeekView at Syncfusion SfSchedule for Xamarin.Forms
 description: Learn how to Customize the schedule WeekView in SfSchedule control
 platform: xamarin
 control: SfSchedule

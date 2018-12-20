@@ -268,7 +268,7 @@ In the date editor, the [DatePicker](https://developer.xamarin.com/api/type/Xama
 
 ### Setting null value in date editor
 
-In data form date editor, by default DateTime data type default value will be displayed (1/01/0001). You can also set the null value by adding nullable DateTime data type for the date picker property in data form, which allows you to set the null value and display the empty value in date editor. 
+In data form date editor, by default `DateTime` data type default value will be displayed (1/01/0001). You can also set the null value by adding nullable `DateTime` data type for the date picker property in data form, which allows you to set the null value and display the empty value in date editor. 
 
 {% tabs %}
 {% highlight c# %}

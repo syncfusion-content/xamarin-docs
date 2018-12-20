@@ -40,8 +40,8 @@ ViewHeaderStyle viewHeaderStyle = new ViewHeaderStyle();
 viewHeaderStyle.BackgroundColor = Color.FromHex("#009688");
 viewHeaderStyle.DayTextColor = Color.FromHex("#FFFFFF");
 viewHeaderStyle.DateTextColor = Color.FromHex("#FFFFFF");
-viewHeaderStyle.DayTextStyle = "Arial";
-viewHeaderStyle.DateTextStyle = "Arial";
+viewHeaderStyle.DayFontFamily = "Arial";
+viewHeaderStyle.DateFontFamily = "Arial";
 schedule.ViewHeaderStyle = viewHeaderStyle;
 {% endhighlight %}
 {% endtabs %}

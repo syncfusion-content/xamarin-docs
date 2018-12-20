@@ -430,7 +430,7 @@ monthViewSettings.WeekNumberStyle = weekNumberStyle;
 ![Week number customization in schedule xamarin forms](monthview_images/weeknumberstyle.png)
 
 ## View Header Appearance  
-You can customize the View Header appearance by using [ViewHeaderStyle](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ViewHeaderStyle.html) property in SfSchedule. View Header [BackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderStyle~BackgroundColor.html), [DayTextColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderStyle~DayTextColor.html) and [DayTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderStyle~DayTextStyle.html) can be customized using `ViewHeaderStyle` properties.
+You can customize the View Header appearance by using [ViewHeaderStyle](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ViewHeaderStyle.html) property in SfSchedule. View Header [BackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderStyle~BackgroundColor.html), [DayTextColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderStyle~DayTextColor.html) and [DayFontFamily](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderStyle~DayFontFamily.html) can be customized using `ViewHeaderStyle` properties.
 
 {% tabs %}
 {% highlight xaml %}
@@ -591,25 +591,29 @@ private void Schedule_OnMonthCellLoadedEvent(object sender, MonthCellLoadedEvent
 	{
 		args.cellStyle.BackgroundColor = Color.FromHex("#f97272");
 		args.cellStyle.TextColor = Color.White;
-		args.cellStyle.TextStyle = Font.OfSize("Arial", 25);
+		args.cellStyle.FontFamily = "Arial";
+		args.cellStyle.FontSize = 25;
 	}
 	else if (args.isNextMonthDate)
 	{
 		args.cellStyle.BackgroundColor = Color.White;
 		args.cellStyle.TextColor = Color.Gray;
-		args.cellStyle.TextStyle = Font.OfSize("Arial", 10);
+		args.cellStyle.FontFamily = "Arial";
+		args.cellStyle.FontSize = 10;
 	}
 	else if (args.isPreviousMonthDate)
 	{
 		args.cellStyle.BackgroundColor = Color.White;
 		args.cellStyle.TextColor = Color.Gray;
-		args.cellStyle.TextStyle = Font.OfSize("Arial", 10);
+		args.cellStyle.FontFamily = "Arial";
+		args.cellStyle.FontSize = 10;
 	}
 	else
 	{
 		args.cellStyle.BackgroundColor = Color.FromHex("#8282ff");
 		args.cellStyle.TextColor = Color.White;
-		args.cellStyle.TextStyle = Font.OfSize("Arial", 20);
+		args.cellStyle.FontFamily = "Arial";
+		args.cellStyle.FontSize = 20;
 	}
 }
 {% endhighlight %}

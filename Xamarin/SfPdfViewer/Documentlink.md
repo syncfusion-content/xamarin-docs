@@ -24,4 +24,4 @@ Set the “EnableDocumentLinkAnnotation” property to false to disable the docu
 {% endhighlight %}
 {% endtabs %}
 
-N>**By default, the EnableDocumentLinkAnnotation property is set to true.
+N> By default, the EnableDocumentLinkAnnotation property is set to true.

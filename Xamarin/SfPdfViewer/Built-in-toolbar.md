@@ -91,7 +91,7 @@ pdfViewerControl.Toolbar.Enabled = true;
 
 ![Build-in-toolbar enable in PDF Viewer](pdfviewer_images/ToolbarEnabled.png)
 
-N>**By default, the built-in toolbar of SfPdfViewer is always visible.
+N> By default, the built-in toolbar of SfPdfViewer is always visible.
 
 ## How to disable/enable bookmark
 

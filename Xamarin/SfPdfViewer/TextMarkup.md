@@ -267,7 +267,7 @@ pdfViewerControl.AnnotationSettings.TextMarkup.Strikethrough.Color = Color.Yello
 {% endhighlight %}
 {% endtabs %}
 
-N>**Setting this property will not edit the color of annotations that are included in prior.
+N> Setting this property will not edit the color of annotations that are included in prior.
 
 ### After inclusion of the annotation
 

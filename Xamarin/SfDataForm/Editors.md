@@ -279,6 +279,8 @@ public DateTime? BirthDate { get; set; }
 {% endhighlight %}
 {% endtabs %}
 
+![Setting nullable date to data form date item in Xamarin.Forms DataForm](SfDataForm_images/DateTime_Nullable.png)
+
 ### Customizing format in date editor
 
 In the `DatePicker`, short date will be shown by default. You can change the applied format by setting the [Format](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormDateItem~Format.html) property in [DataFormDateItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormDateItem.html).

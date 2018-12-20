@@ -7,7 +7,7 @@ control: SfPdfViewer
 
 PDF Viewer for Xamarin allows the user to view PDF documents within your Xamarin.Forms application. 
 
-![](pdfviewer_images/pdfviewer.png)
+![Overview image fir SfPdfViewer in Xamarin.Forms](pdfviewer_images/pdfviewer.png)
 
 **Key features:**
 

@@ -348,4 +348,4 @@ private void saveButton_Clicked(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-N>*The CanUndo property is used to identify whether a document loaded in the PDF viewer is edited or not. When this property is set to true, means that the document in the PDF viewer is edited. 
+N> The CanUndo property is used to identify whether a document loaded in the PDF viewer is edited or not. When this property is set to true, means that the document in the PDF viewer is edited. 

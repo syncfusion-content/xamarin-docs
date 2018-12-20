@@ -29,7 +29,7 @@ The following options are provided to move the front layer:
     x:Class="BackdropGettingStarted.BackdropSamplePage"
 	BackLayerRevealOption="Auto">
 	<backdrop:SfBackdropPage.FrontLayer>
-        <backdrop:BackdropFrontLayer RevealedHeight="30">
+        <backdrop:BackdropFrontLayer>
             <Grid />
         </backdrop:BackdropFrontLayer>
     </backdrop:SfBackdropPage.FrontLayer>
@@ -50,8 +50,7 @@ namespace BackdropGettingStarted
             this.BackLayerRevealOption = RevealOption.Auto;
             this.FrontLayer = new BackdropFrontLayer()
             {
-                Content = new Grid(),
-                RevealedHeight = 30
+                Content = new Grid()
             };
         }
     }

@@ -280,7 +280,7 @@ public DateTime? BirthDate { get; set; }
 {% endhighlight %}
 {% endtabs %}
 
-![Setting nullable date to data form date item in Xamarin.Forms DataForm](SfDataForm_images/DateTime_Nullable.png)
+![Setting nullable date to data form date item in Xamarin.Forms DataForm](SfDataForm_images/DateTime_Nullable.jpg)
 
 ### Customizing format in date editor
 
@@ -301,7 +301,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![Setting DateFormat to data form date item in Xamarin.Forms DataForm](SfDataForm_images/Editors_DateFormat.jpg)
+![Setting DateFormat to data form date item in Xamarin.Forms DataForm](SfDataForm_images/Editors_DateFormat.png)
 
 ### Setting MaximumDate and MinimumDate in date editor
 

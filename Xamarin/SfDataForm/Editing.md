@@ -447,7 +447,7 @@ You can download the sample from [here](http://www.syncfusion.com/downloads/supp
 
 To show the original value in different format or as different value, use the [Converter](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.ConverterAttribute.html) attribute.
 
-### Changing original value of the editor using converter
+### Changing original value of the DataForm property value using converter.
 
 Here, the original value is multiplied by 10 and shown in editor. While committing, it is divided by 10 and stored in the data object.
 
@@ -486,9 +486,9 @@ public double? Amount
 {% endhighlight %}
 {% endtabs %}
 
-### Converting DateTimeOffset value to DateTime
+### Using date editor for DateTimeOffset DataForm property data type
 
-In SfDataForm, you could not pass directly `DateTimeOffset` DataType to a property.You can use `Converter` attribute to convert DateTimeOffset to DateTime and vice-versa.
+In SfDataForm, you cannot use Date picker editor for `DateTimeOffset` property data type. To overcome this, you need to use `Converter` attribute to convert DateTimeOffset to DateTime value and vice-versa.
 
 {% tabs %}
 {% highlight c# %}

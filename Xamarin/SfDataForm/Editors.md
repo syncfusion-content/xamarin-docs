@@ -756,17 +756,17 @@ private Numbers phone;
 public Numbers Phone
 {	
 	get { return phone; }
-    set
+	set
 	{
-        this.phone = value;
+		this.phone = value;
     }
 }
 
 public enum Numbers
 {
 	Home,
-    Work,
-    Other
+	Work,
+	Other
 }
 {% endhighlight %}
 {% endtabs %}
@@ -785,7 +785,7 @@ private string phone;
 public string Phone
 {	
 	get { return phone; }
-    set
+	set
 	{
         this.phone = value;
     }

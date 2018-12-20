@@ -17,7 +17,7 @@ Syncfusion components  for Xamarin.Forms are available in [nuget.org](https://
 
 ![Adding the Buttons nuget to sample](images/chip_packages/chip_packages.png)
 
-To learn more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). If you prefer to manually refer the assemblies instead of using NuGet, refer to this link to know about the dependent assemblies for chips.
+To learn more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). If you prefer to manually refer the assemblies instead of using NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#chips) to know about the dependent assemblies for chips.
 
 N> Install the same version of the chips Nuget in all the projects.
 

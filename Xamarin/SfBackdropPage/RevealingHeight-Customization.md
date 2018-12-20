@@ -61,4 +61,4 @@ namespace BackdropGettingStarted
 
 {% endtabs %}
 
-![Flat shape top right corner](RevealingHeight_images/Revealing_Height_customization.jpg)
+![Revealing height customization](RevealingHeight_images/Revealing_height.jpg)

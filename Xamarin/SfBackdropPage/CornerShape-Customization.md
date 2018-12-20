@@ -36,8 +36,8 @@ Both the side of the corner radius can be customized separately by setting [Left
 this.FrontLayer = new BackdropFrontLayer()
 {
 	Content = new Grid(),
-	LeftCornerRadius = 0,
-	RightCornerRadius = 30,
+	LeftCornerRadius = 30,
+	RightCornerRadius = 0,
 	EdgeShape = EdgeShape.Flat
 };
 

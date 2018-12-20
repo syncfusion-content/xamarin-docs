@@ -27,7 +27,7 @@ The following options are provided to move the front layer:
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:backdrop="clr-namespace:Syncfusion.XForms.Backdrop;assembly=Syncfusion.SfBackdrop.XForms"
     x:Class="BackdropGettingStarted.BackdropSamplePage"
-	BackLayerRevealOption="Fill">
+	BackLayerRevealOption="Auto">
 	<backdrop:SfBackdropPage.FrontLayer>
         <backdrop:BackdropFrontLayer RevealedHeight="30">
             <Grid />
@@ -47,7 +47,7 @@ namespace BackdropGettingStarted
     {
         public BackdropSamplePage()
         {
-            this.BackLayerRevealOption = RevealOption.Fill;
+            this.BackLayerRevealOption = RevealOption.Auto;
             this.FrontLayer = new BackdropFrontLayer()
             {
                 Content = new Grid(),

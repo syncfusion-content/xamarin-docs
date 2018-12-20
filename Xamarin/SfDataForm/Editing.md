@@ -488,7 +488,7 @@ public double? Amount
 
 ### Using date editor for DateTimeOffset DataForm property data type
 
-In SfDataForm, you cannot use Date editor for `DateTimeOffset` property data type. To overcome this, you need to use `Converter` attribute to convert DateTimeOffset to DateTime value and vice-versa.
+In SfDataForm, you cannot use date editor for `DateTimeOffset` property data type. To overcome this, you need to use `Converter` attribute to convert DateTimeOffset to DateTime value and vice-versa.
 
 {% tabs %}
 {% highlight c# %}

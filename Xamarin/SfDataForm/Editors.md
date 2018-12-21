@@ -756,10 +756,7 @@ private Numbers phone;
 public Numbers Phone
 {
 	get { return phone; }
-	set
-    {
-		this.phone = value;
-	}
+	set { this.phone = value; }
 }
 
 public enum Numbers
@@ -784,26 +781,23 @@ dataForm.SourceProvider = new SourceProviderExt();
 private string phone;
 public string Phone
 {
-	get { return phone; }
-	set
-    {
-		this.phone = value;
-	}
+    get { return phone; }
+    set { this.phone = value; }
 }
 
 public class SourceProviderExt : SourceProvider
 {
-	public override IList GetSource(string sourceName)
-	{
-		var list = new List<string>();
-		if (sourceName == "Phone")
-		{
-			list.Add("Home");
-			list.Add("Work");
+    public override IList GetSource(string sourceName)
+    {
+        var list = new List<string>();
+        if (sourceName == "Phone")
+        {
+            list.Add("Home");
+            list.Add("Work");
 			list.Add("Other");
-		}
-		return list;
-	}
+        }
+        return list;
+    }
 }
 
 {% endhighlight %}

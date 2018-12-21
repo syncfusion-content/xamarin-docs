@@ -1,7 +1,7 @@
 ---
 layout: post
 title: FAQ | SfPopupLayout |Xamarin | Syncfusion
-description: Explains achieving various requirements of user scenarios and customizations possible with the Xamarin.Forms PopupLayout.
+description: Explains how to achieve various requirements of user scenarios and customizations possible with the Xamarin.Forms PopupLayout.
 platform: Xamarin
 control: SfPopupLayout
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 
 ## Load the SfPopupLayout in GridTappedEvent of the SfDataGrid
 
-The SfPopupLayout allows pop-up in the grid tapped event of the SfDataGrid.
+The SfPopupLayout allows opening it in the GridTapped event of the SfDataGrid
 
 {% tabs %}
 
@@ -101,7 +101,7 @@ namespace GettingStarted
 
 {% endtabs %}
 
-![Pop-up with DataGrid](PopupLayout_images/DataGridWithPopup.jpg)
+![Popup with DataGrid](PopupLayout_images/DataGridWithPopup.jpg)
 
 Sample Link: You can download the above sample code by clicking here.
 
@@ -127,12 +127,13 @@ The SfPopupLayout allows opening it in the ItemTapped event of the SfListView.
 
     <sfPopup:SfPopupLayout x:Name="popupLayout">
         <sfPopup:SfPopupLayout.PopupView>
-            <sfPopup:PopupView WidthRequest="200" HeightRequest="120" ShowFooter="False">
+            <sfPopup:PopupView WidthRequest="220" HeightRequest="120" ShowFooter="False">
                 <sfPopup:PopupView.ContentTemplate>
                     <DataTemplate>
-                        <Label Text="ListView items are tapped"
+                        <Label Text="ListView item is tapped"
                                BackgroundColor="White"
                                TextColor="Black"
+                               HorizontalTextAlignment="Center"
                                />
                     </DataTemplate>
                 </sfPopup:PopupView.ContentTemplate>
@@ -141,6 +142,7 @@ The SfPopupLayout allows opening it in the ItemTapped event of the SfListView.
         <sfPopup:SfPopupLayout.Content>
             <sfListView:SfListView  x:Name="listView"  ItemSpacing="5" 
                           ItemsSource="{Binding Items}" 
+                          SelectionMode="None"
                           ItemTapped="ListView_ItemTapped">
                 <sfListView:SfListView.ItemTemplate>
                     <DataTemplate>
@@ -238,18 +240,20 @@ namespace PopupDemo
             });
             viewModel = new ContactsViewModel();
             listView.ItemsSource = viewModel.Items;
+            listView.SelectionMode = SelectionMode.None;
             listView.ItemTapped += ListView_ItemTapped;
             popupLayout = new SfPopupLayout();
             popupLayout.PopupView.HeightRequest = 120;
-            popupLayout.PopupView.WidthRequest = 200;
+            popupLayout.PopupView.WidthRequest = 220;
             popupLayout.PopupView.ShowFooter = false;
             popupLayout.PopupView.ContentTemplate = new DataTemplate(() =>
             {
                 return new Label()
                 {
-                    Text = "ListView items are tapped",
+                    Text = "ListView item is tapped",
                     BackgroundColor = Color.White,
-                    TextColor = Color.Black
+                    TextColor = Color.Black,
+                    HorizontalTextAlignment = TextAlignment.Center
                 };
             });
             popupLayout.Content = listView;
@@ -267,13 +271,13 @@ namespace PopupDemo
 
 {% endtabs %}
 
-![ListView with Pop-up](PopupLayout_images/PopupInListView.jpg)
+![ListView with Popup](PopupLayout_images/PopupInListView.jpg)
 
 Sample Link: You can download the above sample code by clicking here.
 
-## Show ListView as a pop-up
+## Show ListView as a popup
 
-The SfPopupLayout allows loading the SfListView as a content of the pop-up. You have to set `WidthRequest` and `HeightRequest` properties for loading SfListView in the SfPopupLayout. 
+The SfPopupLayout allows loading the SfListView as a content of the popup. You have to set `WidthRequest` and `HeightRequest` properties for loading SfListView in the SfPopupLayout. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -427,7 +431,7 @@ namespace PopupDemo
 {% endhighlight %}
 {% endtabs %}
 
-![ListView in a Pop-up](PopupLayout_images/ListViewInPopup.jpg)
+![ListView in a Popup](PopupLayout_images/ListViewInPopup.jpg)
 
 Sample Link: You can download the above sample code by clicking here.
 

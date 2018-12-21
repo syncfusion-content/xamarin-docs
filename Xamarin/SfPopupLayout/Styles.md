@@ -11,7 +11,7 @@ documentation: ug
 
 The SfPopupLayout applies style to all of its elements by using the [SfPopupLayout.PopupView.PopupStyle](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~PopupStyle.html) property.
 
-## Styling pop-up header
+## Styling popup header
 
 The SfPopupLayout allows customizing the header elements with various header customizations as follows:
 
@@ -92,9 +92,9 @@ public MainPage()
 
 Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
-![Pop-up with header customized](PopupLayout_images/HeaderCustomization.png)
+![Popup with header customized](PopupLayout_images/HeaderCustomization.png)
 
-## Styling pop-up footer
+## Styling popup footer
 
 The SfPopupLayout allows customizing the footer elements with various footer customizations as follows:
 
@@ -175,7 +175,7 @@ public MainPage()
 
 Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
-![Pop-up with footer customized](PopupLayout_images/FooterCustomization.png)
+![Popup with footer customized](PopupLayout_images/FooterCustomization.png)
 
 ## Border customization
 
@@ -241,4 +241,4 @@ public MainPage()
 
 Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
-![Pop-up with border customization](PopupLayout_images/BorderCustomization.png)
+![Popup with border customization](PopupLayout_images/BorderCustomization.png)

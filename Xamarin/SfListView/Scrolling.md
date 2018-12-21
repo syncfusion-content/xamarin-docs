@@ -50,8 +50,8 @@ listView.LayoutManager.ScrollToRowIndex(index, true);
 
  * When [AutoFitMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AutoFitMode.html) is `Height` or grouping is enabled, the scroll animation will be disabled by default in Android and iOS platforms. 
  * If [ScrollToRowIndex](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LayoutBase~ScrollToRowIndex.html) method is called when loading the `SfListView`, set `disableAnimation` to `true` to scroll to the appropriate row index, or else view does not scrolled in Android.
- * If the `ScrollToRowIndex` method is applied to a particular item index while the item is in Grouping or AutoFit mode, the particular item will get displayed in view but not in the `End` position when the [ScrollToPosition](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ScrollToPosition.html) property is set as `MakeVisible` for first time.
-
+ * If the `ScrollToRowIndex` method is applied to a particular item index while the item is in Grouping or AutoFit mode, the particular item will get displayed in view but not in the exact position when the [ScrollToPosition](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ScrollToPosition.html) property is set as `MakeVisible` or `Center` for first time.
+* In UWP platform, when you hover and scroll the inner listview, the outer listview will not be scrolled by default. To overcome this, set the `InputTransparent` to `True` for the parent element loaded in the `ItemTemplate`. If you set InputTransparent, then the inner listview scroll will not work. This is the default behavior of the listview.
 ## Scrollbar visibility
 
 The SfListView provides an option to enable or disable the `Scrollbar` visibility by using the [IsScrollBarVisible](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsScrollBarVisible.html) property. By default, the value will be `true`.  

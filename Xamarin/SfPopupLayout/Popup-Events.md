@@ -7,7 +7,7 @@ control: SfPopupLayout
 documentation: ug
 --- 
 
-# Events
+# Popup Events And Commands
 
 There are four built-in events in the SfPopupLayout control namely:
 
@@ -124,14 +124,7 @@ private void PopupLayout_Closed(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-## Footer button commands
-
-Following two commands are available in the footer:
-
-* AcceptCommand
-* DeclineCommand
-
-### Accept command
+## Accept command
 
 The [SfPopupLayout.PopupView.AcceptCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~AcceptCommand.html) will be fired when clicking the Accept button in the pop-up footer.
 
@@ -145,7 +138,7 @@ To handle the Accept button, follow the procedure:
 
 {% highlight xaml %}
 
-<sfPopup:SfPopupLayout x:Name="popUpLayout">
+<sfPopup:SfPopupLayout x:Name="popupLayout">
     <sfPopup:SfPopupLayout.PopupView>
         <sfPopup:PopupView AppearanceMode="TwoButton" />
     </sfPopup:SfPopupLayout.PopupView>
@@ -164,14 +157,6 @@ public MainPage()
     ....
 }
 
-{% endhighlight %}
-
-{% endtabs %}
-
-{% tabs %}
-
-{% highlight c# %}
-
 //Accept Button Event handler
 
 public class AcceptButtonCustomCommand : ICommand
@@ -189,11 +174,12 @@ public class AcceptButtonCustomCommand : ICommand
     }
 }
 
+
 {% endhighlight %}
 
 {% endtabs %}
 
-### Decline command
+## Decline command
 
 The [SfPopupLayout.PopupView.DeclineCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~DeclineCommand.html) will be fired when clicking the Decline button in the pop-up footer. 
 
@@ -207,7 +193,7 @@ To handle the Decline button, follow the procedure:
 
 {% highlight xaml %}
 
-<sfPopup:SfPopupLayout x:Name="popUpLayout">
+<sfPopup:SfPopupLayout x:Name="popupLayout">
     <sfPopup:SfPopupLayout.PopupView>
         <sfPopup:PopupView AppearanceMode="TwoButton" />
     </sfPopup:SfPopupLayout.PopupView>
@@ -226,14 +212,6 @@ public MainPage()
     ....
 }
 
-{% endhighlight %}
-
-{% endtabs %}
-
-{% tabs %}
-
-{% highlight c# %}
-
 //Decline Button Event handler
 
 public class DeclineButtonCustomCommand : ICommand
@@ -250,6 +228,7 @@ public class DeclineButtonCustomCommand : ICommand
        // You can write your set of codes that needs to be executed
     }
 }
+
 {% endhighlight %}
 
 {% endtabs %}

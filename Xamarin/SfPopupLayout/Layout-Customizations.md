@@ -40,13 +40,13 @@ In the following code example, set the `SfPopupLayout.PopupView.AppearanceMode` 
              x:Class="GettingStarted.MainPage" 
              Padding="0,40,0,0"
              xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms">
-<sfPopup:SfPopupLayout x:Name="popUpLayout">
+<sfPopup:SfPopupLayout x:Name="popupLayout">
    <sfPopup:SfPopupLayout.PopupView>
             <sfPopup:PopupView AppearanceMode="OneButton" />
    </sfPopup:SfPopupLayout.PopupView>
    <sfPopup:SfPopupLayout.Content>
      <StackLayout x:Name="layout">
-       <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" VerticalOptions="Start" HorizontalOptions="FillAndExpand" />
+       <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" VerticalOptions="Start" HorizontalOptions="FillAndExpand" Clicked += ClickToShowPopup_Clicked/>
      </StackLayout>
     </sfPopup:SfPopupLayout.Content>
   </sfPopup:SfPopupLayout>
@@ -63,11 +63,9 @@ namespace GettingStarted
     {
         public MainPage()
         {
-            InitializeComponent();
-           
+            InitializeComponent();           
             // Setting the AppearanceMode as OneButton
             popupLayout.PopupView.AppearanceMode = AppearanceMode.OneButton;
-            clickToShowPopup.Clicked += ClickToShowPopup_Clicked;
         }
 
         private void ClickToShowPopup_Clicked(object sender, EventArgs e)
@@ -94,13 +92,13 @@ In the following code example, set the `SfPopupLayout.PopupView.AppearanceMode` 
              x:Class="GettingStarted.MainPage" 
              Padding="0,40,0,0"
              xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms">
-<sfPopup:SfPopupLayout x:Name="popUpLayout">
+<sfPopup:SfPopupLayout x:Name="popupLayout">
     <sfPopup:SfPopupLayout.PopupView>
             <sfPopup:PopupView AppearanceMode="TwoButton" />
     </sfPopup:SfPopupLayout.PopupView>
    <sfPopup:SfPopupLayout.Content>
      <StackLayout x:Name="layout">
-       <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" VerticalOptions="Start" HorizontalOptions="FillAndExpand" />
+       <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" VerticalOptions="Start" HorizontalOptions="FillAndExpand" Clicked="ClickToShowPopup_Clicked" />
      </StackLayout>
     </sfPopup:SfPopupLayout.Content>
   </sfPopup:SfPopupLayout>
@@ -121,7 +119,108 @@ namespace GettingStarted
           
             // Setting the AppearanceMode as TwoButton
             popupLayout.PopupView.AppearanceMode = AppearanceMode.TwoButton;        
-            clickToShowPopup.Clicked += ClickToShowPopup_Clicked;
+        }
+
+        private void ClickToShowPopup_Clicked(object sender, EventArgs e)
+        {
+             popupLayout.Show();
+        }
+    }
+}
+
+{% endhighlight %}
+
+Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
+
+![Pop-up with two button](GettingStarted_images/AppearanceMode_TwoButton.png)
+
+## Pop-up without header
+
+You can display the Popup without header by using the property, [SfPopupLayout.PopupView.ShowHeader](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~ShowHeader.html), find the code example of the same below.
+
+{% highlight xaml %}
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GettingStarted"
+             x:Class="GettingStarted.MainPage" 
+             Padding="0,40,0,0"
+             xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms">
+<sfPopup:SfPopupLayout x:Name="popupLayout">
+   <sfPopup:SfPopupLayout.PopupView>
+            <sfPopup:PopupView ShowHeader="False"/>
+   </sfPopup:SfPopupLayout.PopupView>
+   <sfPopup:SfPopupLayout.Content>
+     <StackLayout x:Name="layout">
+       <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" VerticalOptions="Start" HorizontalOptions="FillAndExpand" Clicked += ClickToShowPopup_Clicked/>
+     </StackLayout>
+    </sfPopup:SfPopupLayout.Content>
+  </sfPopup:SfPopupLayout>
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+using Syncfusion.XForms.PopupLayout;
+
+namespace GettingStarted
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();                       
+            popupLayout.PopupView.ShowHeader = false;
+        }
+
+        private void ClickToShowPopup_Clicked(object sender, EventArgs e)
+        {
+             popupLayout.Show();
+        }
+    }
+}
+
+{% endhighlight %}
+
+![Pop-up without header](PopupLayout_images/ShowHeader_False.png)
+
+## Pop-up without Footer
+
+You can display the Popup without footer by using the property, [SfPopupLayout.PopupView.ShowFooter](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~ShowFooter.html), find the code example of the same below.
+
+{% highlight xaml %}
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GettingStarted"
+             x:Class="GettingStarted.MainPage" 
+             Padding="0,40,0,0"
+             xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms">
+<sfPopup:SfPopupLayout x:Name="popupLayout">
+   <sfPopup:SfPopupLayout.PopupView>
+            <sfPopup:PopupView ShowFooter="False"/>
+   </sfPopup:SfPopupLayout.PopupView>
+   <sfPopup:SfPopupLayout.Content>
+     <StackLayout x:Name="layout">
+       <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" VerticalOptions="Start" HorizontalOptions="FillAndExpand" Clicked += ClickToShowPopup_Clicked/>
+     </StackLayout>
+    </sfPopup:SfPopupLayout.Content>
+  </sfPopup:SfPopupLayout>
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+using Syncfusion.XForms.PopupLayout;
+
+namespace GettingStarted
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();                       
+            popupLayout.PopupView.ShowFooter = false;
         }
 
         private void ClickToShowPopup_Clicked(object sender, EventArgs e)
@@ -132,17 +231,59 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
+![Pop-up without footer](PopupLayout_images/ShowFooter_False.png)
 
-![Pop-up with two button](GettingStarted_images/AppearanceMode_TwoButton.png)
+## Pop-up without header and footer
 
-## Customizing pop-up layouts
- 
-You can customize the entire view of the pop-up by loading the templates or custom views for the header, body and footer.
+You can display only the content of the SfPopupLayout, by removing the header and footer by using [SfPopupLayout.PopupView.ShowHeader](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~ShowHeader.html) and [SfPopupLayout.PopupView.ShowFooter](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~ShowFooter.html), code example of the same below.
 
-### Header customization
+{% highlight xaml %}
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GettingStarted"
+             x:Class="GettingStarted.MainPage" 
+             Padding="0,40,0,0"
+             xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms">
+<sfPopup:SfPopupLayout x:Name="popupLayout">
+   <sfPopup:SfPopupLayout.PopupView>
+            <sfPopup:PopupView ShowFooter="False" ShowHeader="False"/>
+   </sfPopup:SfPopupLayout.PopupView>
+   <sfPopup:SfPopupLayout.Content>
+     <StackLayout x:Name="layout">
+       <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" VerticalOptions="Start" HorizontalOptions="FillAndExpand" Clicked += ClickToShowPopup_Clicked/>
+     </StackLayout>
+    </sfPopup:SfPopupLayout.Content>
+  </sfPopup:SfPopupLayout>
+</ContentPage>
 
-Any view can be added as the header content using the [SfPopupLayout.PopupView.HeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~HeaderTemplate.html) property to refresh it. Refer to the following code example in which a label is added as a header content.
+{% endhighlight %}
+
+{% highlight c# %}
+using Syncfusion.XForms.PopupLayout;
+
+namespace GettingStarted
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();                       
+            popupLayout.PopupView.ShowFooter = false;
+            popupLayout.PopupView.ShowHeader = false;
+        }
+
+        private void ClickToShowPopup_Clicked(object sender, EventArgs e)
+        {
+             popupLayout.Show();
+        }
+    }
+}
+{% endhighlight %}
+
+## Customizing pop-up header
+
+Any view can be added as the header content using the [SfPopupLayout.PopupView.HeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~HeaderTemplate.html) property. Refer to the following code example in which a label is added as a header content.
 
 {% tabs %}
 
@@ -155,7 +296,7 @@ Any view can be added as the header content using the [SfPopupLayout.PopupView.H
              x:Class="GettingStarted.MainPage" 
              Padding="0,40,0,0"
              xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms">
- <sfPopup:SfPopupLayout x:Name="popUpLayout">
+ <sfPopup:SfPopupLayout x:Name="popupLayout">
   <sfPopup:SfPopupLayout.PopupView>
         <sfPopup:PopupView ShowCloseButton="False">
             <sfPopup:PopupView.HeaderTemplate>
@@ -228,9 +369,9 @@ Executing the above codes renders the following output in iOS, Android and Windo
 
 ![Pop-up with header template](PopupLayout_images/HeaderTemplate.png)
 
-### Footer customization
+## Customizing pop-up footer
 
-Any view can be added as the footer content using the [SfPopupLayout.PopupView.FooterTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~ContentTemplate.html) property to refresh it. Refer to the following code example in which a label is added as a footer content.
+Any view can be added as the footer content using the [SfPopupLayout.PopupView.FooterTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~ContentTemplate.html) property. Refer to the following code example in which a label is added as a footer content.
 
 {% tabs %}
 
@@ -243,7 +384,7 @@ Any view can be added as the footer content using the [SfPopupLayout.PopupView.F
              x:Class="GettingStarted.MainPage" 
              Padding="0,40,0,0"
              xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms">
- <sfPopup:SfPopupLayout x:Name="popUpLayout">
+ <sfPopup:SfPopupLayout x:Name="popupLayout">
     <sfPopup:SfPopupLayout.PopupView>
         <sfPopup:PopupView>
             <sfPopup:PopupView.FooterTemplate>
@@ -315,238 +456,156 @@ Executing the above codes renders the following output in iOS, Android and Windo
 
 ![Pop-up with footer template](PopupLayout_images/FooterTemplate.png)
 
-## Styles
+## Customizing pop-up content
 
-The SfPopupLayout applies style to all of its elements by using the [SfPopupLayout.PopupView.PopupStyle](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~PopupStyle.html) property.
-
-### Customizing header elements
-
-The SfPopupLayout allows customizing the header elements with various header customizations as follows:
-
-<table>
-<tr>
-<th> Property </th>
-<th> Description </th>
-</tr>
-<tr>
-<td> {{'[SfPopupLayout.PopupView.PopupStyle.HeaderBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupStyle~HeaderBackgroundColor.html)'| markdownify }} </td>
-<td>  Gets or sets the background color for the header.</td>
-</tr>
-<tr>
-<td> {{'[SfPopupLayout.PopupView.PopupStyle.HeaderFontAttribute](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupStyle~HeaderFontAttribute.html)'| markdownify }} </td>
-<td>  Gets or sets the font attribute for the header title.</td>
-</tr>
-<tr>
-<td> {{'[SfPopupLayout.PopupView.PopupStyle.HeaderFontFamily](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupStyle~HeaderFontFamily.html)'| markdownify }} </td>
-<td>  Gets or sets the font style for the header title.</td>
-</tr>
-<tr>
-<td> {{'[SfPopupLayout.PopupView.PopupStyle.HeaderFontSize](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupStyle~HeaderFontSize.html)'| markdownify }} </td>
-<td> Gets or sets the font size for the header title.</td>
-</tr>
-<tr>
-<td> {{'[SfPopupLayout.PopupView.PopupStyle.HeaderTextAlignment](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupStyle~HeaderTextAlignment.html)'| markdownify }} </td>
-<td>  Gets or sets the text alignment for the header.</td>
-</tr>
-<tr>
-<td> {{'[SfPopupLayout.PopupView.PopupStyle.HeaderTextColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupStyle~HeaderTextColor.html)'| markdownify }} </td>
-<td>  Gets or sets the text color to be applied for the header title.</td>
-</tr>
-</table>
-
-Refer to the following code example for customizing the header elements.
+Any view can be added as pop-up content by using the [SfPopupLayout.PopupView.ContentTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~ContentTemplate.html) property. Refer to the following code example in which a label is added as a pop-up content.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<sfPopup:SfPopupLayout x:Name="popUpLayout">
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GettingStarted"
+             x:Class="GettingStarted.MainPage" 
+             Padding="0,40,0,0"
+             xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms">
+ <sfPopup:SfPopupLayout x:Name="popupLayout">
     <sfPopup:SfPopupLayout.PopupView>
         <sfPopup:PopupView>
-            <sfPopup:PopupView.PopupStyle>
-                <sfPopup:PopupStyle HeaderBackgroundColor="DimGray"
-                                    HeaderFontAttribute="Bold"
-                                    HeaderFontFamily="Helvetica-Bold"
-                                    HeaderFontSize="25"
-                                    HeaderTextAlignment="Center"
-                                    HeaderTextColor="White"/>
-            </sfPopup:PopupView.PopupStyle>
+            <sfPopup:PopupView.ContentTemplate>
+                <DataTemplate>
+                    <Label Text="This is SfPopupLayout" BackgroundColor="SkyBlue"
+                           HorizontalTextAlignment="Center"/>
+                </DataTemplate>
+            </sfPopup:PopupView.ContentTemplate>
         </sfPopup:PopupView>
     </sfPopup:SfPopupLayout.PopupView>
-</sfPopup:SfPopupLayout>
+   <sfPopup:SfPopupLayout.Content>
+     <StackLayout x:Name="layout">
+       <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" VerticalOptions="Start" 
+               HorizontalOptions="FillAndExpand"  Clicked="ClickToShowPopup_Clicked" />
+     </StackLayout>
+    </sfPopup:SfPopupLayout.Content>
+  </sfPopup:SfPopupLayout>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-//MainPage.cs
+using Syncfusion.XForms.PopupLayout;
 
-public MainPage()
+namespace GettingStarted
 {
-    ....
-    InitializeComponent();
-    popupLayout.PopupView.PopupStyle.HeaderBackgroundColor = Color.FromRgb(105,105,105);
-    popupLayout.PopupView.PopupStyle.HeaderFontAttribute = FontAttributes.Bold;
-    popupLayout.PopupView.PopupStyle.HeaderFontFamily = "Helvetica-Bold";
-    popupLayout.PopupView.PopupStyle.HeaderFontSize = 25;
-    popupLayout.PopupView.PopupStyle.HeaderTextAlignment = TextAlignment.Center;
-    popupLayout.PopupView.PopupStyle.HeaderTextColor = Color.White;
-    ....
+    public partial class MainPage : ContentPage
+    {
+        DataTemplate templateView;
+        Label popupContent;
+
+        public MainPage()
+        {
+            InitializeComponent();            
+            templateView = new DataTemplate(() =>
+            {
+                popupContent = new Label();
+                popupContent.Text = "This is the SfPopupLayout";
+                popupContent.BackgroundColor = Color.LightSkyBlue;
+                popupContent.HorizontalTextAlignment = TextAlignment.Center;
+                return popupContent;
+            });
+
+            // Adding ContentTemplate of the SfPopupLayout
+            popupLayout.PopupView.ContentTemplate = templateView;
+        }
+
+        private void ClickToShowPopup_Clicked(object sender, EventArgs e)
+        {
+            popupLayout.Show();
+        }
+    }
 }
 
 {% endhighlight %}
 
 {% endtabs %}
 
-Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
+![Pop-up with custom content](GettingStarted_images/ContentView.png)
 
-![Pop-up with header customized](PopupLayout_images/HeaderCustomization.png)
+To display ListView as the content of the popup, refer [here](https://help.syncfusion.com/xamarin/sfpopuplayout/how-to#show-listview-as-a-pop-up).
 
-### Customizing footer elements
+## Customizing pop-up content without header and footer
 
-The SfPopupLayout allows customizing the footer elements with various footer customizations as follows:
-
-<table>
-<tr>
-<th> Property </th>
-<th> Description </th>
-</tr>
-<tr>
-<td> {{'[SfPopupLayout.PopupView.PopupStyle.FooterBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupStyle~FooterBackgroundColor.html)'| markdownify }} </td>
-<td>  Gets or sets the background color for the footer.</td>
-</tr>
-<tr>
-<td> {{'[SfPopupLayout.PopupView.PopupStyle.AcceptButtonBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupStyle~AcceptButtonBackgroundColor.html)'| markdownify }} </td>
-<td>  Gets or sets the background color for the Accept button in the footer.</td>
-</tr>
-<tr>
-<td> {{'[SfPopupLayout.PopupView.PopupStyle.AcceptButtonTextColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupStyle~AcceptButtonTextColor.html)'| markdownify }} </td>
-<td>  Gets or sets the foreground color for the Accept button in the footer.</td>
-</tr>
-<tr>
-<td> {{'[SfPopupLayout.PopupView.PopupStyle.DeclineButtonBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupStyle~DeclineButtonBackgroundColor.html)'| markdownify }} </td>
-<td> Gets or sets the background color for the Decline button in the footer.</td>
-</tr>
-<tr>
-<td> {{'[SfPopupLayout.PopupView.PopupStyle.DeclineButtonTextColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupStyle~DeclineButtonTextColor.html)'| markdownify }} </td>
-<td>  Gets or sets the foreground color for the Decline button in the footer.</td>
-</tr>
-</table>
-
-Refer to the following code example for customizing the header elements.
+Popup enables you to display only the desired content inside it without header and footer by using the [SfPopupLayout.PopupView.ShowHeader](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~ShowHeader.html), [SfPopupLayout.PopupView.ShowFooter](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~ShowFooter.html) and [SfPopupLayout.PopupView.ContentTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~ContentTemplate.html) property. Refer the below code example for the same.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<sfPopup:SfPopupLayout x:Name="popUpLayout">
-    <sfPopup:SfPopupLayout.PopupView>
-        <sfPopup:PopupView AppearanceMode="TwoButton">
-                <sfPopup:PopupView.PopupStyle>
-                    <sfPopup:PopupStyle FooterBackgroundColor="LightGray"
-                                        AcceptButtonBackgroundColor ="DimGray"
-                                        AcceptButtonTextColor="White"
-                                        DeclineButtonBackgroundColor="DimGray"
-                                        DeclineButtonTextColor="White"
-                                        />
-                </sfPopup:PopupView.PopupStyle>
-            </sfPopup:PopupView>
-    </sfPopup:SfPopupLayout.PopupView>
-</sfPopup:SfPopupLayout>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-//MainPage.cs
-
-public MainPage()
-{
-    ....
-    InitializeComponent();
-
-    // Setting the AppearanceMode as TwoButton
-    popupLayout.PopupView.AppearanceMode = Syncfusion.XForms.PopupLayout.AppearanceMode.TwoButton;
-
-    // Footer customization
-    popupLayout.PopupView.PopupStyle.FooterBackgroundColor = Color.LightGray;
-    popupLayout.PopupView.PopupStyle.AcceptButtonBackgroundColor = Color.FromRgb(105, 105, 105);
-    popupLayout.PopupView.PopupStyle.AcceptButtonTextColor = Color.White;
-    popupLayout.PopupView.PopupStyle.DeclineButtonBackgroundColor = Color.FromRgb(105, 105, 105);
-    popupLayout.PopupView.PopupStyle.DeclineButtonTextColor = Color.White;
-    ....
-}
-
-{% endhighlight %}
-
-{% endtabs %}
-
-Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
-
-![Pop-up with footer customized](PopupLayout_images/FooterCustomization.png)
-
-## Border customization
-
-The SfPopupLayout allows customizing the border appearance with various border customizations as follows:
-
-<table>
-<tr>
-<th> Property </th>
-<th> Description </th>
-</tr>
-<tr>
-<td> {{'[SfPopupLayout.PopupView.PopupStyle.BorderColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupStyle~BorderColor.html)'| markdownify }} </td>
-<td>  Gets or sets the border color for the PopupView.</td>
-</tr>
-<tr>
-<td> {{'[SfPopupLayout.PopupView.PopupStyle.BorderThickness](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupStyle~BorderThickness.html)'| markdownify }} </td>
-<td>  Gets or sets the border thickness for the PopupView.</td>
-</tr>
-<tr>
-<td> {{'[SfPopupLayout.PopupView.PopupStyle.CornerRadius](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupStyle~CornerRadius.html)'| markdownify }} </td>
-<td>  Gets or sets the corner radius for the PopupView.</td>
-</tr>
-</table>
-
-Refer to the following code example for customizing the border elements.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<sfPopup:SfPopupLayout x:Name="popUpLayout">
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GettingStarted"
+             x:Class="GettingStarted.MainPage" 
+             Padding="0,40,0,0"
+             xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms">
+ <sfPopup:SfPopupLayout x:Name="popupLayout">
     <sfPopup:SfPopupLayout.PopupView>
         <sfPopup:PopupView>
-            <sfPopup:PopupView.PopupStyle>
-                <sfPopup:PopupStyle BorderColor="LightBlue"
-                                    BorderThickness="3"
-                                    CornerRadius="5"
-                                    />
-            </sfPopup:PopupView.PopupStyle>
+            <sfPopup:PopupView.ContentTemplate>
+                <DataTemplate>
+                    <Label Text="This is SfPopupLayout" BackgroundColor="SkyBlue"
+                           HorizontalTextAlignment="Center"/>
+                </DataTemplate>
+            </sfPopup:PopupView.ContentTemplate>
         </sfPopup:PopupView>
     </sfPopup:SfPopupLayout.PopupView>
-<sfPopup:SfPopupLayout>
+   <sfPopup:SfPopupLayout.Content>
+     <StackLayout x:Name="layout">
+       <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" VerticalOptions="Start" 
+               HorizontalOptions="FillAndExpand"  Clicked="ClickToShowPopup_Clicked" />
+     </StackLayout>
+    </sfPopup:SfPopupLayout.Content>
+  </sfPopup:SfPopupLayout>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-//MainPage.cs
+using Syncfusion.XForms.PopupLayout;
 
-public MainPage()
+namespace GettingStarted
 {
-    ....
-    InitializeComponent();
-    popupLayout.PopupView.PopupStyle.BorderColor = Color.LightBlue;
-    popupLayout.PopupView.PopupStyle.BorderThickness = 3;
-    popupLayout.PopupView.PopupStyle.CornerRadius = 5;
-    ....
+    public partial class MainPage : ContentPage
+    {
+        DataTemplate templateView;
+        Label popupContent;
+
+        public MainPage()
+        {
+            InitializeComponent();            
+            templateView = new DataTemplate(() =>
+            {
+                popupContent = new Label();
+                popupContent.Text = "This is the SfPopupLayout";
+                popupContent.BackgroundColor = Color.LightSkyBlue;
+                popupContent.HorizontalTextAlignment = TextAlignment.Center;
+                return popupContent;
+            });
+
+            // Adding ContentTemplate of the SfPopupLayout
+            popupLayout.PopupView.ContentTemplate = templateView;
+        }
+
+        private void ClickToShowPopup_Clicked(object sender, EventArgs e)
+        {
+            popupLayout.Show();
+        }
+    }
 }
 
 {% endhighlight %}
 
 {% endtabs %}
-
-Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
-
-![Pop-up with border customization](PopupLayout_images/BorderCustomization.png)

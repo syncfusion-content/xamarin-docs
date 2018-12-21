@@ -179,10 +179,12 @@ Refer to the following code example for displaying popup.
              x:Class="GettingStarted.MainPage" 
              Padding="0,40,0,0"
              xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms">
- <sfPopup:SfPopupLayout x:Name="popUpLayout">
+ <sfPopup:SfPopupLayout x:Name="popupLayout">
    <sfPopup:SfPopupLayout.Content>
      <StackLayout x:Name="mainLayout">
-       <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" VerticalOptions="Start" HorizontalOptions="FillAndExpand" />
+       <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" 
+               VerticalOptions="Start" HorizontalOptions="FillAndExpand"
+                Clicked="ClickToShowPopup_Clicked"/>
      </StackLayout>
     </sfPopup:SfPopupLayout.Content>
   </sfPopup:SfPopupLayout>
@@ -201,7 +203,6 @@ namespace GettingStarted
         public MainPage()
         {
             InitializeComponent();
-            clickToShowPopup.Clicked += ClickToShowPopup_Clicked;
         }
 
         private void ClickToShowPopup_Clicked(object sender, EventArgs e)
@@ -215,9 +216,9 @@ namespace GettingStarted
 
 {% endtabs %}
  
-### Displaying pop-up when the SfPopupLayout is not set as root view 
+### Displaying pop-up on the fly
 
-You can continue to keep your view as the content view of the main page and still display pop-up over your view by simply calling the SfPopupLayout.Show() method.
+You can continue to keep your view as the content view of the main page and still display pop-up over your view by simply calling the [SfPopupLayout.Show]((https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Show.html)) method.
 
 Refer to the following code example for displaying popup.
 
@@ -232,7 +233,9 @@ Refer to the following code example for displaying popup.
              x:Class="GettingStarted.MainPage" 
              Padding="0,40,0,0">
      <StackLayout x:Name="mainLayout">
-       <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" VerticalOptions="Start" HorizontalOptions="FillAndExpand" />
+       <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" 
+               VerticalOptions="Start" HorizontalOptions="FillAndExpand"
+               Clicked="ClickToShowPopup_Clicked" />
      </StackLayout>
 </ContentPage>
 
@@ -252,7 +255,6 @@ namespace GettingStarted
         {
             InitializeComponent();
             popupLayout = new SfPopupLayout();
-            clickToShowPopup.Clicked += ClickToShowPopup_Clicked;
         }
 
         private void ClickToShowPopup_Clicked(object sender, EventArgs e)
@@ -272,17 +274,19 @@ Executing the above codes renders the following output in iOS, Android and Windo
 
 You can download the source code of this sample [here](https://github.com/SyncfusionExamples/SfPopupLayout_XForms_GettingStarted).
 
+N> Two Popups cannot be displayed at the same time in a page.
+
 ## Customize positioning
 
 The SfPopupLayout allows showing the pop-up content at various positions.
 
 The following list of options are available to position the SfPopupLayout in the desired position:
 
-* `Center Positioning`: Use the [SfPopupLayout.IsOpen](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~IsOpen.html) property or [SfPopupLayout.Show()](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Show.html) to display the SfPopupLayout at the center.
+* `Center Positioning`: Use the [SfPopupLayout.IsOpen](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~IsOpen.html) property or [SfPopupLayout.Show](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Show.html) method to display the SfPopupLayout at the center.
 * `Absolute Positioning`: Use the [SfPopupLayout.Show(x-position, y-position)](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Show.html) to display the SfPopupLayout at the specified X and y position.
 * `OnTouch`: Use the [SfPopupLayout.ShowAtTouchPoint()](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~ShowAtTouchPoint.html) to display the SfPopupLayout at the touch point.
 * `Relative Positioning`: Use the [SfPopupLayout.ShowRelativeToView(View, RelativePosition)](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~ShowRelativeToView.html) to display the SfPopupLayout at any of the 8 positions relative to the specified view.
-* `Absolute relative positioning`: Use the `SfPopupLayout.ShowRelativeToView(View, RelativePosition,x position,y position)` to display the SfPopupLayout at an absolute x,y coordinate from the relative position of the specified view.
+* `Absolute relative positioning`: Use the [SfPopupLayout.ShowRelativeToView(View, RelativePosition,x position,y position)](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~ShowRelativeToView(View,RelativePosition,Double,Double).html) to display the SfPopupLayout at an absolute x,y coordinate from the relative position of the specified view.
 
 More information for pop-up positioning is in this [link](https://help.syncfusion.com/xamarin/sfpopuplayout/popup-positioning).
  
@@ -312,24 +316,7 @@ Any view can be added as pop-up content by using the [SfPopupLayout.PopupView.Co
              x:Class="GettingStarted.MainPage" 
              Padding="0,40,0,0"
              xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms">
- <sfPopup:SfPopupLayout x:Name="popUpLayout">
-   <sfPopup:SfPopupLayout.Content>
-     <StackLayout x:Name="layout">
-       <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" VerticalOptions="Start" HorizontalOptions="FillAndExpand" />
-     </StackLayout>
-    </sfPopup:SfPopupLayout.Content>
-  </sfPopup:SfPopupLayout>
-</ContentPage>
-
-{% endhighlight %}
-
-{% endtabs %}
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<sfPopup:SfPopupLayout x:Name="popUpLayout">
+ <sfPopup:SfPopupLayout x:Name="popupLayout">
     <sfPopup:SfPopupLayout.PopupView>
         <sfPopup:PopupView>
             <sfPopup:PopupView.ContentTemplate>
@@ -340,7 +327,14 @@ Any view can be added as pop-up content by using the [SfPopupLayout.PopupView.Co
             </sfPopup:PopupView.ContentTemplate>
         </sfPopup:PopupView>
     </sfPopup:SfPopupLayout.PopupView>
+   <sfPopup:SfPopupLayout.Content>
+     <StackLayout x:Name="layout">
+       <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" VerticalOptions="Start" 
+               HorizontalOptions="FillAndExpand"  Clicked="ClickToShowPopup_Clicked" />
+     </StackLayout>
+    </sfPopup:SfPopupLayout.Content>
   </sfPopup:SfPopupLayout>
+</ContentPage>
 
 {% endhighlight %}
 
@@ -357,8 +351,7 @@ namespace GettingStarted
 
         public MainPage()
         {
-            InitializeComponent();
-            clickToShowPopup.Clicked += ClickToShowPopup_Clicked;
+            InitializeComponent();            
             templateView = new DataTemplate(() =>
             {
                 popupContent = new Label();
@@ -396,9 +389,9 @@ Available built-in animations will be applied to the SfPopupLayout when the Popu
 * [Zoom](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AnimationMode.html): Zoom-out animation will be applied when the PopupView opens and zoom-in animation will be applied when the PopupView closes. This is the default AnimationMode.
 * [Fade](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AnimationMode.html): Fade-out animation will be applied when the PopupView opens and fade-in animation will be applied when the PopupView closes.
 * [SlideOnLeft](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AnimationMode.html): PopupView will be animated from left-to-right when it opens and from right-to-left when the PopupView closes.
-* `SlideOnRight`: PopupView will be animated from right-to-left when it opens and from left-to-right when the PopupView closes.
+* [SlideOnRight](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AnimationMode.html): PopupView will be animated from right-to-left when it opens and from left-to-right when the PopupView closes.
 * [SlideOnTop](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AnimationMode.html): PopupView will be animated from top-to-bottom when it opens and from bottom-to-top when the PopupView closes.
-* `SlideOnBottom`: PopupView will be animated from bottom-to-top when it opens and from top-to-bottom when the PopupView closes
+* [SlideOnBottom](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AnimationMode.html): PopupView will be animated from bottom-to-top when it opens and from top-to-bottom when the PopupView closes
 * [None](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AnimationMode.html): Animations will not be applied.
 
 More information for pop-up animations is in this [link](https://help.syncfusion.com/xamarin/sfpopuplayout/popup-animations).
@@ -407,7 +400,7 @@ More information for pop-up animations is in this [link](https://help.syncfusion
 
 {% highlight xaml %}
 
-<sfPopup:SfPopupLayout x:Name="popUpLayout">
+<sfPopup:SfPopupLayout x:Name="popupLayout">
     <sfPopup:SfPopupLayout.PopupView>
         <sfPopup:PopupView AnimationMode="Fade" />
     </sfPopup:SfPopupLayout.PopupView>

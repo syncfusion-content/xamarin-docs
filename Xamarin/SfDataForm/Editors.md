@@ -218,6 +218,21 @@ The String type property and property with
 Entry
 </td>
 </tr>
+<tr>
+<td>
+RadioGroup
+</td>
+<td>
+{{'[DataFormRadioGroupEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormRadioGroupEditor.html)'| markdownify }}
+</td>
+<td>
+Enum and List type property.
+[EnumDataTypeAttribute]
+</td>
+<td>
+SfRadioGroup
+</td>
+</tr>
 </table>
 
 ## Text editor
@@ -721,3 +736,71 @@ public string Password
 {% endtabs %}
 
 ![Loading password editor in Xamarin.Forms DataForm](SfDataForm_images/PasswordEditor.jpg)
+
+## RadioGroup editor
+
+In the `RadioGroup` editor, the [SfRadioGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfRadioGroup.html) control is loaded.
+
+The [items](https://help.syncfusion.com/xamarin/sfradiobutton/overview) for `SfRadioGroup` is generated for `enum` and `List` data type properties. In order to add `RadioGroup` editor in the DataForm, you need to register editor as `RadioGroup` for the required property by using the [RegisterEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~RegisterEditor(String,String).html) method.
+
+**Support for enum data type**
+
+For `enum` data type property, `SfRadioGroup` [items](https://help.syncfusion.com/xamarin/sfradiobutton/overview) will be added based on specified property enum values.
+
+{% tabs %}
+{% highlight c# %}
+
+dataForm.RegisterEditor("Phone", "RadioGroup");
+
+private Numbers phone;
+public Numbers Phone
+{
+	get { return phone; }
+	set { this.phone = value; }
+}
+
+public enum Numbers
+{
+	Home,
+	Work,
+	Other
+}
+{% endhighlight %}
+{% endtabs %}
+
+**Support for List data type**
+
+For `List` data type property, you have to set the `ItemsSource` by using the [SourceProvider](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SourceProvider.html), based on that `SfRadioGroup` [items](https://help.syncfusion.com/xamarin/sfradiobutton/overview) will be added.
+
+{% tabs %}
+{% highlight c# %}
+
+dataForm.RegisterEditor("Phone", "RadioGroup");
+dataForm.SourceProvider = new SourceProviderExt();
+
+private string phone;
+public string Phone
+{
+    get { return phone; }
+    set { this.phone = value; }
+}
+
+public class SourceProviderExt : SourceProvider
+{
+    public override IList GetSource(string sourceName)
+    {
+		var list = new List<string>();
+		if(sourceName == "Phone")
+		{
+			list.Add("Home");
+			list.Add("Work");
+			list.Add("Other");
+		}
+		return list;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Loading radio group editor in Xamarin.Forms DataForm](SfDataForm_images/RadioGroupEditor.jpg)

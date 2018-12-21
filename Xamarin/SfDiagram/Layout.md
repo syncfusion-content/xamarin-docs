@@ -207,7 +207,7 @@ void Diagram_NodeClicked(object sender, NodeClickedEventArgs args)
 {% endtabs %}
 ![Expand and collpase in Xamarin.Forms diagram](Layout_images/Layout_img1.jpeg)
 
-N> SfDiagram supports expand and collapse in Xamarin.Forms.Android and Xamarin.Forms.iOS
+N> SfDiagram supports expand and collapse in Xamarin.Forms.Android and Xamarin.Forms.iOS alone.
 
 ## Drag-and-drop support for directed tree layout
 It is easier to drag a child or parent node to some other node in the directed tree layout. The following code shows how to enable draggable option in layout.
@@ -287,7 +287,7 @@ private void Diagram_OnLayoutNodeDropped(object sender, LayoutNodeDroppedEventAr
 {% endtabs %}
 ![Drag and Drop in Xamarin.Forms diagram](Layout_images/Layout_img2.gif)
 
-N> SfDiagram supports drag and drop in Xamarin.Forms.Android and Xamarin.Forms.iOS
+N> SfDiagram supports drag and drop in Xamarin.Forms.Android and Xamarin.Forms.iOS alone.
 
 ## Layout sibling spacing
 It is easier to provide spacing between sibling nodes of any branch on the directed tree layout. Nodes can also be excluded from the layout. You can provide space for each node by customizing the “SiblingSpace” property of the node. The following code illustrates how to add space to nodes using sibling spacing class instance.
@@ -308,5 +308,5 @@ private void Diagram_BeginNodeRender(object sender, BeginNodeRenderEventArgs arg
 {% endtabs %}
 ![LayoutSpacing in Xamarin.Forms diagram](Layout_images/LayoutSpacing_img3.png)
 
-N> SfDiagram supports layout sibling spacing in Xamarin.Forms.Android and Xamarin.Forms.iOS
+N> SfDiagram supports layout sibling spacing in Xamarin.Forms.Android and Xamarin.Forms.iOS alone.
 

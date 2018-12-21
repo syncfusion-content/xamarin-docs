@@ -108,4 +108,4 @@ User handle position can be moved or adjusted from its default position. The fol
 {% endtabs %}
 ![Customize user handle position in Xamarin.Forms diagram](Userhandles_images/Userhandles_img2.jpeg)
 
-N> SfDiagram supports user handle in Xamarin.Forms.Android and Xamarin.Forms.iOS
+N> SfDiagram supports user handle in Xamarin.Forms.Android and Xamarin.Forms.iOS alone.

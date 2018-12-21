@@ -137,5 +137,5 @@ Supports customizing the zoom levels. You can set minimum zoom level value to 0.
 {% endhighlight %}
 {% endtabs %}
 
-N> SfDiagram supports Custom zooming in Xamarin.Forms.Android and Xamarin.Forms.iOS
+N> SfDiagram supports Custom zooming in Xamarin.Forms.Android and Xamarin.Forms.iOS alone.
 

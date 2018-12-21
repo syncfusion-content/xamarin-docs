@@ -39,6 +39,34 @@ This page lists the assemblies required for each control to be referred in each 
 </tr>
 </table>
 
+## SfBackdropPage
+
+<dl>
+  <dt>NuGet</dt>
+  <dd>Syncfusion.Xamarin.SfBackdrop</dd>
+</dl>
+
+**Assemblies**
+
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfBackdrop.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfBackdrop.XForms.Android.dll<br/>Syncfusion.SfBackdrop.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfBackdrop.XForms.iOS.dll<br/>Syncfusion.SfBackdrop.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfBackdrop.XForms.UWP.dll<br/>Syncfusion.SfBackdrop.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+</table>
+
 ## SfBadgeView
 
 <dl>

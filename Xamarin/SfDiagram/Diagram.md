@@ -1,5 +1,5 @@
 ---
-title: Diagram for Essential Xamarin.Forms Diagram
+title: Syncfusion SfDiagram for Essential Xamarin.Forms Diagram
 description: diagram
 platform: xamarin
 control: SfDiagram
@@ -137,5 +137,5 @@ Supports customizing the zoom levels. You can set minimum zoom level value to 0.
 {% endhighlight %}
 {% endtabs %}
 
-N> Custom zooming support not provided in Xamarin.Forms.UWP
+N> SfDiagram supports Custom zooming in Xamarin.Froms.Android and Xamarin.Froms.iOS
 

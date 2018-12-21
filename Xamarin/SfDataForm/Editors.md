@@ -353,24 +353,21 @@ By default, the `ItemsSource` for `SfSegmentedControl` is auto-generated for `en
 {% tabs %}
 {% highlight c# %}
 
-       dataForm.RegisterEditor("SaveTo", "Segment");
+dataForm.RegisterEditor("SaveTo", "Segment");
 
-        private Location saveTo;
+private Location saveTo;
 
-        [Display(Name = "Save To")]
-        public Location SaveTo
-        {
-            get { return saveTo; }
-            set
-            {
-                this.saveTo = value;
-            }
-        }
-        public enum Location
-        {
-            Sim,
-            Phone
-        }
+[Display(Name = "Save To")]
+public Location SaveTo
+{
+    get { return saveTo; }
+    set { this.saveTo = value; }
+}
+public enum Location
+{
+    Sim,
+    Phone
+}
 
 {% endhighlight %}
 {% endtabs %}

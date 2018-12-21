@@ -789,14 +789,14 @@ public class SourceProviderExt : SourceProvider
 {
     public override IList GetSource(string sourceName)
     {
-        var list = new List<string>();
-        if (sourceName == "Phone")
-        {
-		    list.Add("Home");
+		var list = new List<string>();
+		if(sourceName == "Phone")
+		{
+			list.Add("Home");
 			list.Add("Work");
 			list.Add("Other");
 		}
-        return list;
+		return list;
     }
 }
 

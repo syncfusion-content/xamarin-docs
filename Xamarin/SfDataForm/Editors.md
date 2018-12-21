@@ -741,11 +741,11 @@ public string Password
 
 In the `RadioGroup` editor, the [SfRadioGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfRadioGroup.html) control is loaded.
 
-The items for `SfRadioGroup` is generated for enum and List data type properties. In order to add `RadioGroup` editor in the DataForm, you need to register editor as `RadioGroup` for the required property by using the [RegisterEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~RegisterEditor(String,String).html) method.
+The items for `SfRadioGroup` is generated for `enum` and `List` data type properties. In order to add `RadioGroup` editor in the DataForm, you need to register editor as `RadioGroup` for the required property by using the [RegisterEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~RegisterEditor(String,String).html) method.
 
 **Support for enum data type**
 
-For enum data type property, `SfRadioGroup` items will be added based on specified property enum values.
+For `enum` data type property, `SfRadioGroup` items will be added based on specified property enum values.
 
 {% tabs %}
 {% highlight c# %}
@@ -754,18 +754,18 @@ dataForm.RegisterEditor("Phone", "RadioGroup");
 
 private Numbers phone;
 public Numbers Phone
-{	
+{
 	get { return phone; }
 	set
-	{
+    {
 		this.phone = value;
-    }
+	}
 }
 
 public enum Numbers
 {
 	Home,
-	Work,
+    Work,
 	Other
 }
 {% endhighlight %}
@@ -783,12 +783,12 @@ dataForm.SourceProvider = new SourceProviderExt();
 
 private string phone;
 public string Phone
-{	
+{
 	get { return phone; }
 	set
-	{
-        this.phone = value;
-    }
+    {
+		this.phone = value;
+	}
 }
 
 public class SourceProviderExt : SourceProvider

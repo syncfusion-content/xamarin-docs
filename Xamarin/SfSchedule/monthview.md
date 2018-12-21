@@ -592,7 +592,7 @@ private void Schedule_OnMonthCellLoadedEvent(object sender, MonthCellLoadedEvent
 		args.cellStyle.BackgroundColor = Color.FromHex("#f97272");
 		args.cellStyle.TextColor = Color.White;
 		args.cellStyle.FontFamily = "Arial";
-		args.cellStyle.FontSize = 10;
+		args.cellStyle.FontSize = 25;
 	}
 	else if (args.isNextMonthDate)
 	{
@@ -613,7 +613,7 @@ private void Schedule_OnMonthCellLoadedEvent(object sender, MonthCellLoadedEvent
 		args.cellStyle.BackgroundColor = Color.FromHex("#8282ff");
 		args.cellStyle.TextColor = Color.White;
 		args.cellStyle.FontFamily = "Arial";
-		args.cellStyle.FontSize = 10;
+		args.cellStyle.FontSize = 20;
 	}
 }
 {% endhighlight %}

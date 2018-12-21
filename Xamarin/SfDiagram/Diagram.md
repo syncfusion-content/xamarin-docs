@@ -137,3 +137,5 @@ Supports customizing the zoom levels. You can set minimum zoom level value to 0.
 {% endhighlight %}
 {% endtabs %}
 
+N> Custom zooming support not provided in Xamarin.Forms.UWP
+

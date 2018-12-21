@@ -108,3 +108,4 @@ User handle position can be moved or adjusted from its default position. The fol
 {% endtabs %}
 ![Customize user handle position in Xamarin.Forms diagram](Userhandles_images/Userhandles_img2.jpeg)
 
+N> User handle support not provided in Xamarin.Forms.UWP

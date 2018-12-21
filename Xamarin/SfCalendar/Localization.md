@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization | SfCalendar | Xamarin.Forms | Syncfusion
-description: How to Localize the contents of Calendar control.
+description: How to Localize the static text of Calendar control.
 platform: xamarin
 control: SfCalendar
 documentation: ug

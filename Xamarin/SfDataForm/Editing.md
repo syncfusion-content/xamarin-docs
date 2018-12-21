@@ -276,7 +276,7 @@ dataForm.RegisterEditor("Text", new CustomTextEditor(dataForm));
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/EditorCustomization.png)
+![Customizing existing editor of data form item in Xamarin.Forms DataForm](SfDataForm_images/EditorCustomization.png)
 
 ## Creating new custom editor
 
@@ -326,7 +326,7 @@ dataForm.RegisterEditor("Salary", "Slider");
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/Editing_SliderEditor.png)
+![Creating custom editor for the data form item in Xamarin.Forms DataForm](SfDataForm_images/Editing_SliderEditor.png)
 
 ## Support for Email editor
 
@@ -343,7 +343,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/Editing_EmailEditor.png)
+![Loading Email editor to the data form item in Xamarin.Forms DataForm](SfDataForm_images/Editing_EmailEditor.png)
 
 ## Commit mode
 
@@ -447,6 +447,8 @@ You can download the sample from [here](http://www.syncfusion.com/downloads/supp
 
 To show the original value in different format or as different value, use the [Converter](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.ConverterAttribute.html) attribute.
 
+### Changing original value of the DataForm property value using converter
+
 Here, the original value is multiplied by 10 and shown in editor. While committing, it is divided by 10 and stored in the data object.
 
 {% tabs %}
@@ -483,6 +485,54 @@ public double? Amount
 }
 {% endhighlight %}
 {% endtabs %}
+
+### Using date editor for DateTimeOffset DataForm property data type
+
+In SfDataForm, you cannot use date editor for `DateTimeOffset` property data type. To overcome this, you need to use `Converter` attribute to convert `DateTimeOffset` to `DateTime` value and vice-versa.
+
+{% tabs %}
+{% highlight c# %}
+
+private DateTimeOffset displayDate;
+
+[Converter(typeof(ValueConverterExt))]
+public DateTimeOffset DisplayDate
+{
+    get
+    {
+        return displayDate;
+    }
+    set
+    {
+        displayDate = value;
+    }
+}
+public class ValueConverterExt : IPropertyValueConverter
+{
+    public object Convert(object value)
+    {
+        DateTime baseTime = new DateTime(2008, 6, 19, 7, 0, 0);
+        DateTime targetTime;
+
+        var dateTimeOffset = (DateTimeOffset)value;
+        dateTimeOffset = new DateTimeOffset(baseTime,
+                                            TimeZoneInfo.Local.GetUtcOffset(baseTime));
+        targetTime = dateTimeOffset.DateTime;
+        return targetTime;
+    }
+    public object ConvertBack(object value)
+    {
+        var dateTime = (DateTime)value;
+        dateTime = new DateTime(2008, 6, 19, 7, 0, 0);
+        dateTime = DateTime.SpecifyKind(dateTime, DateTimeKind.Local);
+        DateTimeOffset dateTimeOffset = dateTime;
+        return dateTimeOffset;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+You can download the source code of this demo from here [DateTimeOffsetConverter](https://github.com/SyncfusionExamples/Convert-DateTimeOffset-into-DateTime-and-back-in-Xamarin-DataForm)
 
 ## Disable editing
 You can disable editing by setting the [IsReadOnly](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~IsReadOnly.html) property of the data form.

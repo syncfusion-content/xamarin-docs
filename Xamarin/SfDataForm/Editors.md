@@ -762,7 +762,7 @@ public Numbers Phone
 public enum Numbers
 {
 	Home,
-    Work,
+	Work,
 	Other
 }
 {% endhighlight %}
@@ -792,10 +792,10 @@ public class SourceProviderExt : SourceProvider
         var list = new List<string>();
         if (sourceName == "Phone")
         {
-            list.Add("Home");
-            list.Add("Work");
+		    list.Add("Home");
+			list.Add("Work");
 			list.Add("Other");
-        }
+		}
         return list;
     }
 }

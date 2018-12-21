@@ -322,7 +322,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/MoreFieldsOnLoad.png)
+![Initial rendering of data form items in Xamarin.Forms DataForm](SfDataForm_images/MoreFieldsOnLoad.png)
 
 If you want to generate the MiddleName and LastName fields at runtime, you should set `refreshLayout` flag to `true` and call the [RefreshLayout](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~RefreshLayout.html) method which triggers `AutoGeneratingDataFormItem` event again and generates the items based on `refreshLayout` flag.
 
@@ -338,7 +338,7 @@ private void Button_Click(object sender, System.EventArgs e)
 
 Here, the MiddleName and LastName fields are generated at runtime after clicking the more field button.
 
-![](SfDataForm_images/MoreFieldsAdd.png)
+![Adding data form fields at run time in Xamarin.Forms DataForm](SfDataForm_images/MoreFieldsAdd.png)
 
 The`GroupName`field is displayed initially in the data form. If you want to remove it at runtime, you should set refreshLayout flag to true and pass the argument as true in[RefreshLayout](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~RefreshLayout.html) method. It triggers `AutoGeneratingDataFormItem` event for all the fields where you can cancel `GroupName’ field item generation.
 
@@ -354,7 +354,7 @@ private void Button_Click(object sender, System.EventArgs e)
 
 Here, the GroupName field is removed at runtime.
 
-![](SfDataForm_images/MoreFieldsRemove.png)
+![Removing data form fields at run time in Xamarin.Forms DataForm](SfDataForm_images/MoreFieldsRemove.png)
 
 You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MoreFields1624183179.zip).
 
@@ -628,6 +628,6 @@ public class Data : DynamicObject, IDictionary<string, object>
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/DynamicObject.png)
+![Binding with dynamic data object in Xamarin.Forms DataForm](SfDataForm_images/DynamicObject.png)
 
 You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ComplexProperty-1726015503.zip)

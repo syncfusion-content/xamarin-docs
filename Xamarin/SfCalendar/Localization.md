@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization | SfCalendar | Xamarin.Forms | Syncfusion
-description: How to Localize the static text of Calendar control.
+description: How to localize the static text in Calendar control
 platform: xamarin
 control: SfCalendar
 documentation: ug
@@ -27,14 +27,14 @@ N> By default, SfCalendar control is available with en-US locale.
 
 ![Localization support in Xamarin.Forms SfCalendar](images/xamarin.forms-calendar-localization.png) 
 
-## Change custom texts in the control.
+## Change custom texts in the calendar control
 
 You can localize the custom strings used in the calendar control. For that you need to configure it for each platform separately.
 
 *	Localizing custom text in Android renderer.
 *	Localizing custom text in iOS renderer.
 
-### Localizing custom text in Android renderer.
+### Localizing custom text in Android renderer
 
 You can localize custom text available in the control by adding equivalent localized string in the string.xml file.
 
@@ -60,7 +60,7 @@ The procedure for creating strings.xml files is as follows:
 >**NOTE** 
 The corresponding Locale values folder updates only when the device language changes.
 
-### Localizing custom text in iOS renderer.
+### Localizing custom text in iOS renderer
 
 You can localize custom text available in the control by adding equivalent localized string in the Localizable.strings file, refer [here](https://developer.xamarin.com/guides/ios/advanced_topics/localization_and_internationalization/).
 

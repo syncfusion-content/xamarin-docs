@@ -146,6 +146,8 @@ public class MusicInfoRepository
 {% endhighlight %}
 {% endtabs %}
 
+N> Load On Demand does not support when we populate TreeView using Unbound data.
+
 You can download the entire [source code](http://www.syncfusion.com/downloads/support/directtrac/general/ze/OnDemandLoading583866000) of this demo.
 
 ![Xamarin Forms TreeView with OnDemandLoading](TreeView_images/LoadOnDemand-Xamarin-Forms-TreeView.gif)

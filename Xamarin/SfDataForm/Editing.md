@@ -220,6 +220,21 @@ The String type property and property with
 Entry
 </td>
 </tr>
+<tr>
+<td>
+RadioGroup
+</td>
+<td>
+{{'[DataFormRadioGroupEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormRadioGroupEditor.html)'| markdownify }}
+</td>
+<td>
+Enum and List type property. 
+[EnumDataTypeAttribute]
+</td>
+<td>
+SfRadioGroup
+</td>
+</tr>
 </table>
 
 ## Changing editor for type

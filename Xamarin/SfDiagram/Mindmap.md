@@ -1,5 +1,5 @@
 ---
-title: Add mindmap for diagram
+title: Add mindmap for diagram | Syncfusion
 description: Learn how to add mindmap in diagram
 platform: xamarin
 control: SfDiagram

@@ -1,5 +1,5 @@
 ---
-title: Adding userhandles for diagram
+title: Adding userhandles for diagram | Syncfusion
 description: Learn how to add userhandles in diagram
 platform: xamarin
 control: SfDiagram

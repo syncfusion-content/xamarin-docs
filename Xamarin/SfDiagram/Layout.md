@@ -1,5 +1,5 @@
 ---
-title: Adding Layout in Diagram control for Xamarin.Forms
+title: Adding Layout in Diagram control for Xamarin.Forms | Syncfusion
 description: Learn how to add layout in diagram control.
 platform: xamarin
 control: Diagram

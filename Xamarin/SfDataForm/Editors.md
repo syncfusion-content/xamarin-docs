@@ -218,11 +218,43 @@ The String type property and property with
 Entry
 </td>
 </tr>
+<tr>
+<td>
+RadioGroup
+</td>
+<td>
+{{'[DataFormRadioGroupEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormRadioGroupEditor.html)'| markdownify }}
+</td>
+<td>
+Enum and List type property.
+[EnumDataTypeAttribute]
+</td>
+<td>
+SfRadioGroup
+</td>
+</tr>
 </table>
 
 ## Text editor
 
 In the text editor, the [Entry](https://developer.xamarin.com/guides/xamarin-forms/user-interface/text/entry/) is loaded.
+
+## MultiLine Text editor
+
+In the `MultilineText` editor, the [Editor](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.editor?view=xamarin-forms) is loaded.
+
+And `MultilineText` editor height will auto expand/reduce based on the line wraps in editor , which allowing text to be readable without scrolling the editor.
+
+{% tabs %}
+{% highlight c# %}
+
+[DataType(DataType.MultilineText)]
+public String Address { get; set; }
+
+{% endhighlight %}
+{% endtabs %}
+
+![Loading multi line text editor in Xamarin.Forms DataForm](SfDataForm_images/Editors_MultiLine.jpg)
 
 ## Numeric editor
 
@@ -249,6 +281,22 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 In the date editor, the [DatePicker](https://developer.xamarin.com/api/type/Xamarin.Forms.DatePicker/) will be loaded.
 
+### Setting null value in date editor
+
+In data form date editor, by default `DateTime` data type default value will be displayed (1/01/0001). You can also set the null value by adding nullable `DateTime` data type for the date picker property in data form, which allows you to set the null value and display the empty value in date editor. 
+
+{% tabs %}
+{% highlight c# %}
+
+[DataType(DataType.Date)]
+[Display(Name ="Birth Date")]
+public DateTime? BirthDate { get; set; }
+
+{% endhighlight %}
+{% endtabs %}
+
+![Setting nullable date to data form date item in Xamarin.Forms DataForm](SfDataForm_images/DateTime_Nullable.jpg)
+
 ### Customizing format in date editor
 
 In the `DatePicker`, short date will be shown by default. You can change the applied format by setting the [Format](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormDateItem~Format.html) property in [DataFormDateItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormDateItem.html).
@@ -268,7 +316,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![DateFormat](SfDataForm_images/Editors_DateFormat.png)
+![Setting DateFormat to data form date item in Xamarin.Forms DataForm](SfDataForm_images/Editors_DateFormat.png)
 
 ### Setting MaximumDate and MinimumDate in date editor
 
@@ -290,7 +338,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![Maximum date](SfDataForm_images/Editors_DateMaximum.png)
+![Setting maximum date for data form date item in Xamarin.Forms DataForm](SfDataForm_images/Editors_DateMaximum.png)
 
 ## Drop down editor
 
@@ -358,7 +406,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![DropDown items](SfDataForm_images/Editors_DropDownItems.png)
+![Setting ItemsSource for drop down editor items in Xamarin.Forms DataForm](SfDataForm_images/Editors_DropDownItems.png)
 
 N> `DropDownEditor` not supported in `Xamarin.Forms.iOS`.
 
@@ -384,7 +432,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![Picker items](SfDataForm_images/Editors_PickerTitle.png)
+![Changing title for data form picker item in Xamarin.Forms DataForm](SfDataForm_images/Editors_PickerTitle.png)
 
 ### Customizing ItemsSource of Picker
 
@@ -526,7 +574,7 @@ public class Address
 {% endhighlight %}
 {% endtabs %}
 
-![Complex property](SfDataForm_images/ComplexPropertyPicker.png)
+![Loading complex type property values in picker in Xamarin.Forms DataForm](SfDataForm_images/ComplexPropertyPicker.png)
 
 You can download the entire source code of this demo for Xamarin.Forms from here [DataFormPickerEditor](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfDataForm_Picker-2009667790.zip)
 
@@ -551,7 +599,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![Spin button](SfDataForm_images/SpinButtonCenter.png)
+![Changing spin button alignment for data form item in Xamarin.Forms DataForm](SfDataForm_images/SpinButtonCenter.png)
 
 ### Changing step value in numeric up down
 
@@ -643,7 +691,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![NumericTextBox culture](SfDataForm_images/Editors_NumericCulture.png)
+![Setting CultureInfo to data form numeric item in Xamarin.Forms DataForm](SfDataForm_images/Editors_NumericCulture.png)
 
 #### SfNumericUpDown
 
@@ -662,7 +710,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![NumericUpDown culture](SfDataForm_images/NumericUpDownCulture.png)
+![Setting CultureInfo to data form numeric up down item in Xamarin.Forms DataForm](SfDataForm_images/NumericUpDownCulture.png)
 
 ## Password editor
 
@@ -687,4 +735,72 @@ public string Password
 {% endhighlight %}
 {% endtabs %}
 
-![Password editor](SfDataForm_images/PasswordEditor.jpg)
+![Loading password editor in Xamarin.Forms DataForm](SfDataForm_images/PasswordEditor.jpg)
+
+## RadioGroup editor
+
+In the `RadioGroup` editor, the [SfRadioGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfRadioGroup.html) control is loaded.
+
+The [items](https://help.syncfusion.com/xamarin/sfradiobutton/overview) for `SfRadioGroup` is generated for `enum` and `List` data type properties. In order to add `RadioGroup` editor in the DataForm, you need to register editor as `RadioGroup` for the required property by using the [RegisterEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~RegisterEditor(String,String).html) method.
+
+**Support for enum data type**
+
+For `enum` data type property, `SfRadioGroup` [items](https://help.syncfusion.com/xamarin/sfradiobutton/overview) will be added based on specified property enum values.
+
+{% tabs %}
+{% highlight c# %}
+
+dataForm.RegisterEditor("Phone", "RadioGroup");
+
+private Numbers phone;
+public Numbers Phone
+{
+	get { return phone; }
+	set { this.phone = value; }
+}
+
+public enum Numbers
+{
+	Home,
+	Work,
+	Other
+}
+{% endhighlight %}
+{% endtabs %}
+
+**Support for List data type**
+
+For `List` data type property, you have to set the `ItemsSource` by using the [SourceProvider](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SourceProvider.html), based on that `SfRadioGroup` [items](https://help.syncfusion.com/xamarin/sfradiobutton/overview) will be added.
+
+{% tabs %}
+{% highlight c# %}
+
+dataForm.RegisterEditor("Phone", "RadioGroup");
+dataForm.SourceProvider = new SourceProviderExt();
+
+private string phone;
+public string Phone
+{
+    get { return phone; }
+    set { this.phone = value; }
+}
+
+public class SourceProviderExt : SourceProvider
+{
+    public override IList GetSource(string sourceName)
+    {
+		var list = new List<string>();
+		if(sourceName == "Phone")
+		{
+			list.Add("Home");
+			list.Add("Work");
+			list.Add("Other");
+		}
+		return list;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Loading radio group editor in Xamarin.Forms DataForm](SfDataForm_images/RadioGroupEditor.jpg)

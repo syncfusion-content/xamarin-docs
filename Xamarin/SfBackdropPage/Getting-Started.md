@@ -90,7 +90,7 @@ Create a page and import the SfBackdropPage namespace along with [XAML namespace
 
 {% highlight C# %} 
 
-using Syncfusion.XForms.Backdrop;
+using Syncfusion.XForms.Backdrop;	
 namespace BackdropGettingStarted
 {
     public partial class BackdropSamplePage : SfBackdropPage
@@ -161,18 +161,18 @@ The back layer holds actionable content (navigation or filtration), which is rel
 {% highlight C# %} 
 
 this.BackLayer = new BackdropBackLayer
+{
+    Content = new StackLayout
     {
-        Content = new StackLayout
+        Children =
         {
-            Children =
+            new ListView
             {
-                new ListView
-                {
-                    ItemsSource = new string[] { "Appetizers", "Soups", "Desserts" ,"Salads"}
-                }
+                ItemsSource = new string[] { "Appetizers", "Soups", "Desserts" ,"Salads"}
             }
         }
-    };
+    }
+};
 
 
 {% endhighlight %}
@@ -197,13 +197,13 @@ The front layer always appears in front of the back layer. It is displayed to th
 {% highlight C# %} 
 
 this.FrontLayer = new BackdropFrontLayer()
+{
+	Content = new Grid
     {
-        Content = new Grid
-        {
-            BackgroundColor = Color.WhiteSmoke,
-            VerticalOptions = LayoutOptions.FillAndExpand
-        }
-    };
+		BackgroundColor = Color.WhiteSmoke,
+		VerticalOptions = LayoutOptions.FillAndExpand
+    }
+};
 
 {% endhighlight %}
 
@@ -211,9 +211,13 @@ this.FrontLayer = new BackdropFrontLayer()
 
 ## Reveal and conceal the back layer
 
-To reveal the back layer, perform swipe or fling actions at the top of the front layer or set the `IsBackLayerRevealed` property to `true`. By default, it is set to `false`. 
+The following options are provided in backdrop to reveal and conceal the back layer:
 
-Similarly, to conceal the back layer, set the `IsBackLayerRevealed` property to `false` or perform swipe/ fling actions.
+* **Programmatically** - Reveals back layer by setting the [`IsBackLayerRevealed`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.XForms~Syncfusion.XForms.Backdrop.SfBackdropPage~IsBackLayerRevealed.html) property to true. By default, it is set to false.
+* **Touch interaction** - Reveals back layer by clicking the tool bar icon at the top-right corner of navigation bar header. The Hamburger (or menu ) icon reveals and the Close icon conceals the back layer. When adding the backdrop as a child of MasterDetailPage, the Hamburger and Close icons will be replaced by expand (or down arrow) and collapse (or up arrow) icons, respectively.
+* **Swipe or fling action** - Reveals back layer by swipe/fling action on the front layer to the required direction. Swipe downwards to reveal, and swipe upwards to conceal the back layer.  The swipe/fling action will be handled only on the top of the front layer to the [`RevealedHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.XForms~Syncfusion.XForms.Backdrop.BackdropFrontLayer~RevealedHeight.html).
+
+![Reveal and conceal back layer](Getting-Started_images/Reveal_Conceal_Backlayer.gif)
 
 {% tabs %} 
 
@@ -232,10 +236,12 @@ Similarly, to conceal the back layer, set the `IsBackLayerRevealed` property to 
 {% highlight C# %} 
 
 #region Constructor
+
 public BackdropSamplePage()
 {
     this.IsBackLayerRevealed = true;
 }
+
 #endregion
 
 {% endhighlight %}

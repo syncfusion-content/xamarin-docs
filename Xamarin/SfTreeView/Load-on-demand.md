@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OnDemandLoading | TreeView for Xamarin.Forms | Syncfusion
+title: On-Demand Loading | TreeView for Xamarin.Forms | Syncfusion
 description: Describes about loading nodes on demand for TreeView.
 platform: xamarin
 control: SfTreeView
@@ -9,13 +9,57 @@ documentation: ug
 
 # Load on demand
 
-TreeView allows you load [Nodes](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~Nodes.html) only when they are requested using Load on Demand(Lazy load). It reduces the loading performance and time of `TreeView` when you use large data. You can load data on demand in `TreeView` using `LoadOnDemandCommand`.
+TreeView allows you load [Nodes](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~Nodes.html) only when they are requested using Load on Demand(Lazy load). It helps to load the data in on-demand when end-user expands the node where user can load the child items from services.
 
-TreeView loads root level `Nodes` initially. When parent node is expanded, it requests to load the child nodes from the data source based on `LoadOnDemandCommand`.
+## LoadOnDemandCommand
 
-The following code example demonstrates how to load data on demand in `TreeView` using `LoadOnDemandCommand`.
+TreeView loads root level `Nodes` initially. When parent node is expanded, it requests to load the child nodes from the data source based on [LoadOnDemandCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~LoadOnDemandCommand.html).
 
-Create a ViewModel with a `Command` for handling the load on command and bind it to `LoadOnDemandCommand` of `TreeView`.
+While implementing `LoadOnDemandCommand`, implement these methods to handle it:
+* [CanExecute](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommand.canexecute?view=netframework-4.7.2) - Called when each item is initialized and defines whether load-on-demand feature is enabled for an item.
+* [Execute](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommand.execute?view=netframework-4.7.2) - Called when any item is requested for load-on-demand items.
+
+N> Return true in `CanExecute` method of this command to enable expander icon and also to execute on demand loading for that node, else return false.
+
+N> Load on demand is applicable for bound mode only.
+
+## ShowExpanderAnimation
+
+`TreeViewNode` exposes a [ShowExpanderAnimation](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode~ShowExpanderAnimation.html) to enable animation for expander while progressing On-demand loading by setting `true` when an item is requested for On-demand loading and return `false` when child items are loaded for the item.
+
+## PopulateChildNodes
+
+TreeView exposes [PopulateChildNodes](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode~PopulateChildNodes.html) method to load child nodes when we populate the child items using async and await.
+
+{% endhighlight %}
+{% highlight c# %}
+//Execute method is called when each item is requested for load-on-demand items.
+private void ExecuteOnDemandLoading(object obj)
+{
+    var node = obj as TreeViewNode;
+
+    //Indicator enabled
+    node.ShowExpanderAnimation = true;
+       
+    MusicInfo musicInfo = node.Content as MusicInfo;
+    Device.BeginInvokeOnMainThread(async () =>
+    {
+        await Task.Delay(2000);
+        var items = GetSubMenu(musicInfo.ID);
+
+        // Populating nodes
+        node.PopulateChildNodes(items);
+        if (items.Count() > 0)
+            node.IsExpanded = true;
+            
+        //Indicator disabled
+        node.ShowExpanderAnimation = false;
+    });
+}
+{% endhighlight %}
+{% endtabs %}
+
+Define a ViewModel class that implements [ICommand](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommand?view=netframework-4.7.2) and handle it by `CanExecute` and  `Execute` methods to check and execute on-demand loading.
 
 {% endhighlight %}
 {% highlight c# %} 
@@ -40,7 +84,7 @@ public class MusicInfoRepository
         TreeViewOnDemandCommand = new Command(ExecuteOnDemandLoading, CanExecuteOnDemandLoading);
     }
 
-    //CanExecuteOnDemandLoading method is called when each item is initialized and defines whether a load-on-demand feature is enabled for this item.
+    // CanExecute method is called when each item is initialized and defines whether a load-on-demand feature is enabled for this item.
     private bool CanExecuteOnDemandLoading(object sender)
     {
         var hasChildNodes = ((sender as TreeViewNode).Content as MusicInfo).HasChildNodes;
@@ -55,19 +99,25 @@ public class MusicInfoRepository
             return false;
     }
 
-    //ExecuteOnDemandLoading method is called when each item is requested for load-on-demand items.
+    //Execute method is called when each item is requested for load-on-demand items.
     private void ExecuteOnDemandLoading(object obj)
     {
         var node = obj as TreeViewNode;
+
+        //Indicator enabled
         node.ShowExpanderAnimation = true;
         MusicInfo musicInfo = node.Content as MusicInfo;
         Device.BeginInvokeOnMainThread(async () =>
         {
             await Task.Delay(2000);
             var items = GetSubMenu(musicInfo.ID);
+
+            // Populating nodes
             node.PopulateChildNodes(items);
             if (items.Count() > 0)
                 node.IsExpanded = true;
+            
+            //Indicator disabled
             node.ShowExpanderAnimation = false;
         });
     }
@@ -146,8 +196,6 @@ public class MusicInfoRepository
 {% endhighlight %}
 {% endtabs %}
 
-N> Load On Demand does not support when we populate TreeView using Unbound data.
+You can download the entire [source code](https://github.com/SyncfusionExamples/How-to-load-data-on-demand-in-Xamarin.Forms-TreeView) here.
 
-You can download the entire [source code](http://www.syncfusion.com/downloads/support/directtrac/general/ze/OnDemandLoading583866000) of this demo.
-
-![Xamarin Forms TreeView with OnDemandLoading](TreeView_images/LoadOnDemand-Xamarin-Forms-TreeView.gif)
+![Xamarin Forms TreeView with Load On-Demand](TreeView_images/LoadOnDemand-Xamarin-Forms-TreeView.gif)

@@ -344,9 +344,7 @@ public class CustomMapRenderer : SfMapsRenderer
                 AddLayer();
     }
 
-    /// <summary>
-    /// To add custom imagery layer to the collection
-    /// </summary>
+   
     void AddLayer()
     {
         ImageryLayerExt layer = new ImageryLayerExt();

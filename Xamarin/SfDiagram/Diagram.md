@@ -1,5 +1,5 @@
 ---
-title: Syncfusion SfDiagram for Essential Xamarin.Forms Diagram
+title: Diagram control for Xamarin.Forms | Syncfusion
 description: diagram
 platform: xamarin
 control: SfDiagram

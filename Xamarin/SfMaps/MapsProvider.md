@@ -312,7 +312,7 @@ The detailed explanation of marker and its customization have been provided in M
 
 ## Custom map providers
 
-You can show the other map providers using the imagery layer. First you have to initializes the map extension class. Override the GetUri method of imagery layer extension class and pass the google uri link(any tile maps provider) with corresponding x, y, and zoom level. Finally, add the imagery layer extension class to layers collection of native map control by overriding the OnElementChanged method of each platform's (Xamarin.Android, Xamarin.iOS, and UWP) custom map renderer. For more information to add custom map provider go through this KB article [`link`](https://www.syncfusion.com/kb/8913/display-google-map-in-xamarin-forms-sfmaps-control).
+You can show the other map providers using imagery layer. First, initialize the map extension class, override the GetUri method of imagery layer extension class, and then pass the Google uri link (tile maps provider) with corresponding x, y, and zoom level. Finally, add the imagery layer extension class to layers collection of native map control by overriding the OnElementChanged method of each platform’s (Xamarin.Android, Xamarin.iOS, and UWP) custom map renderer. For more information to add custom map provider, refer to this [`KB article`](https://www.syncfusion.com/kb/8913/display-google-map-in-xamarin-forms-sfmaps-control).
 
 {% highlight c# %}
 
@@ -363,11 +363,9 @@ public class ImageryLayerExt : NativeMap.ImageryLayer
 
 {% endhighlight %}
 
-{% endtabs %}
-
 ![Xamarin custom map provider image](Images/custom_map_provider.jpg)
 
-You can download the demo sample in this link.
+You can download the demo sample in this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Google_Sample992378333).
 
 ## Cache tile images in application memory
 

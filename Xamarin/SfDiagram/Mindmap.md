@@ -1,5 +1,5 @@
 ---
-title: Add mindmap for Syncfusion SfDiagram
+title: Add mindmap for diagram
 description: Learn how to add mindmap in diagram
 platform: xamarin
 control: SfDiagram
@@ -235,5 +235,5 @@ The mind map free form layout provides an option to rearrange nodes in a layout.
 {% endtabs %}
 ![Freeform in Xamarin.Forms diagram](Mindmap_images/Mindmap_img4.jpeg)
 
-N> SfDiagram supports mind map layout in Xamarin.Forms.Android and Xamarin.Forms.iOS alone.
+N> Diagram supports mind map layout in Xamarin.Forms.Android and Xamarin.Forms.iOS alone.
 

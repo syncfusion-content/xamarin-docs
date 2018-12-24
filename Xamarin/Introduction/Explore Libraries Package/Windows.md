@@ -29,8 +29,6 @@ The "Forms" directory includes,
 
 * Demo samples for each control such as Charts, DataGrid, etc. All the samples can be deployed in Android, iOS, and UWP platforms. Additionally, Charts, DataGrid, and ListView samples can be deployed in macOS platform also.
 
-* It also contains showcase samples such as Patient Monitor, Server Monitor, and Invoice.
-
 ### Add reference to the project
 
 You can then add the assembly references to the respective projects such as PCL, XForms.Droid, XForms.iOS and XForms.UWP. You can find the dependencies for each control from this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies).

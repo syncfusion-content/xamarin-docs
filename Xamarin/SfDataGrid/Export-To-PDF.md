@@ -998,6 +998,17 @@ void pdfExport_CellExporting(object sender, DataGridCellPdfExportingEventArgs e)
 
 ![Customize the cells in a DataGrid while exporting using the CellExporting event](SfDataGrid_images/PDF/CellExporting.png)
 
+## Exporting Unbound rows
+
+By default the unbound rows will not be exported to pdf document. However, You can export the unbound rows to PDF by setting the [DataGridPdfExportOption.ExportUnboundRows](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridPdfExportOption~ExportUnboundRows.html) property as `true`.
+
+{% tabs %}
+{% highlight c# %}
+DataGridPdfExportOption option = new DataGridPdfExportOption();
+option.ExportUnboundRows = true;
+{% endhighlight %}
+{% endtabs %}
+
 ### Exporting unbound columns
 
 The `SfDataGrid.GridUnboundColumns` will be exported as [SfDataGrid.GridTextColumns](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridTextColumn.html) without any specific code. You can customize the `SfDataGrid.GridUnboundColumns` as `SfDataGrid.GridTextColumns` by using the `CellExporting` and `RowExporting` events.

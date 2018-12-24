@@ -328,9 +328,6 @@ public partial class MainPage : ContentPage
     }
 }
 
-/// <summary>
-/// Custom maps control
-/// </summary>
 public class MapExt : SfMaps
 {
 }
@@ -355,13 +352,7 @@ public class CustomMapRenderer : SfMapsRenderer
 
 public class ImageryLayerExt : NativeMap.ImageryLayer
 {
-    /// <summary>
-    /// This method is used to pass the uri of desired maps tile provider
-    /// </summary>
-    /// <param name="X">XCoordinate</param>
-    /// <param name="Y">YCoordinate</param>
-    /// <param name="Scale">ZoomLevel</param>
-    /// <returns>uri path</returns>
+ 
     protected override string GetUri(int X, int Y, int Scale)
     {
         var link = "http://mt1.google.com/vt/lyrs=y&x=" + X.ToString()

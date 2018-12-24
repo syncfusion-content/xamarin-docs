@@ -39,7 +39,7 @@ The maps control uses `imagery layer` to display the tile images from the OSM se
 
 {% endtabs %}
 
-![](Images/OSM.png)
+![Xamarin OSM image](Images/OSM.png)
 
 N> Both the [`ShapeFileLayer`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer.html) and `ImageryLayer` have been derived commonly from MapsLayer.
 
@@ -69,7 +69,7 @@ The Bing Maps is a world map owned by Microsoft. As OSM, Bing Maps also provides
 
 {% endtabs %}
 
-![](Images/Road.png)
+![Xamarin Bing road image](Images/Road.png)
 
 N> The `LayerType` property of `ImageryLayer` provides support to `OSM` and `Bing Maps`. The default value of the `LayerType` property is OSM.
 
@@ -116,7 +116,7 @@ The Aerial view displays the satellite images to highlight the roads and major l
 
 {% endtabs %}
 
-![](Images/aerial.png)
+![Xamarin Bing aerial image](Images/aerial.jpg)
 
 ## AerialWithLabel
 
@@ -147,7 +147,7 @@ The AerialWithLabel view displays the Aerial map with labels for continent, coun
 
 {% endtabs %}
 
-![](Images/aerialWithLabel.png)
+![Xamarin Bing aerialwithlabel image](Images/aerialWithLabel.jpg)
 
 ## Zooming and panning
 
@@ -155,7 +155,7 @@ The maps control provides interactive zooming and panning supports to OSM and Bi
 
 Zooming helps you get a closer look of an area on maps for in-depth analysis. Panning helps you move a map around to focus the targeted area. You can perform zooming and panning with the pinching gesture in a map area.
 
-![](Images/zooming.gif)
+![Xamarin Zooming image](Images/zooming.jpg)
 
 ## Reset zooming
 
@@ -213,7 +213,7 @@ The `GeoCoordinates` property allows you view the desired area at the center on 
 
 {% endtabs %}
 
-![](Images/Coordinate.png)
+![Xamarin Coordinate image](Images/Coordinate.png)
 
 {% tabs %}
 
@@ -239,7 +239,7 @@ The `GeoCoordinates` property allows you view the desired area at the center on 
 
 {% endtabs %}
 
-![](Images/Center.png)
+![Xamarin center image](Images/Center.png)
 
 ## Set markers in imagery layer
 
@@ -308,7 +308,64 @@ The detailed explanation of marker and its customization have been provided in M
 
 {% endtabs %}
 
-![](Images/Marker.png)
+![Xamarin Marker image](Images/Marker.png)
+
+## Custom map providers
+
+You can show the other map providers maps using imagery layer. First, initialize the map extension class, override the GetUri method of imagery layer extension class, and then pass the Map providers tile image Uri link like Google uri with corresponding x, y, and zoom level. Finally, add the imagery layer extension class to layers collection of native map control by overriding the OnElementChanged method of each platform’s (Xamarin.Android, Xamarin.iOS, and UWP) custom map renderer. For more information to add custom map provider, refer to this [`KB article`](https://www.syncfusion.com/kb/8913/display-google-map-in-xamarin-forms-sfmaps-control).
+
+{% highlight c# %}
+
+public partial class MainPage : ContentPage
+{
+	public MainPage()
+	{
+        InitializeComponent();
+        MapExt maps = new MapExt();
+        ImageryLayer layer = new ImageryLayer();
+        maps.Layers.Add(layer);
+        this.Content = maps;
+    }
+}
+
+public class MapExt : SfMaps
+{
+}
+
+public class CustomMapRenderer : SfMapsRenderer
+{
+    protected override void OnElementChanged(ElementChangedEventArgs<SfMaps> e)
+    {
+        base.OnElementChanged(e);
+        if (Control != null)
+                AddLayer();
+    }
+
+   
+    void AddLayer()
+    {
+        ImageryLayerExt layer = new ImageryLayerExt();
+        (Control as NativeMap.SfMaps).Layers.Clear();
+        (Control as NativeMap.SfMaps).Layers.Add(layer as NativeMap.ImageryLayer);
+    }
+}
+
+public class ImageryLayerExt : NativeMap.ImageryLayer
+{
+ 
+    protected override string GetUri(int X, int Y, int Scale)
+    {
+        var link = "http://mt1.google.com/vt/lyrs=y&x=" + X.ToString()
+        + "&y=" + Y.ToString() + "&z=" + Scale.ToString();
+        return link;
+    }
+}
+
+{% endhighlight %}
+
+![Xamarin custom map provider image](Images/custom_map_provider.jpg)
+
+You can download the demo sample in this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Google_Sample992378333).
 
 ## Cache tile images in application memory
 
@@ -387,4 +444,3 @@ The [`ZoomLevelChanging`](https://help.syncfusion.com/cr/cref_files/xamarin/Sync
 {% endhighlight %}
 
 {% endtabs %}
-

@@ -312,7 +312,7 @@ The detailed explanation of marker and its customization have been provided in M
 
 ## Custom map providers
 
-You can show the other map providers using imagery layer. First, initialize the map extension class, override the GetUri method of imagery layer extension class, and then pass the Google uri link (tile maps provider) with corresponding x, y, and zoom level. Finally, add the imagery layer extension class to layers collection of native map control by overriding the OnElementChanged method of each platform’s (Xamarin.Android, Xamarin.iOS, and UWP) custom map renderer. For more information to add custom map provider, refer to this [`KB article`](https://www.syncfusion.com/kb/8913/display-google-map-in-xamarin-forms-sfmaps-control).
+You can show the other map providers maps using imagery layer. First, initialize the map extension class, override the GetUri method of imagery layer extension class, and then pass the Map providers tile image Uri link like Google uri with corresponding x, y, and zoom level. Finally, add the imagery layer extension class to layers collection of native map control by overriding the OnElementChanged method of each platform’s (Xamarin.Android, Xamarin.iOS, and UWP) custom map renderer. For more information to add custom map provider, refer to this [`KB article`](https://www.syncfusion.com/kb/8913/display-google-map-in-xamarin-forms-sfmaps-control).
 
 {% highlight c# %}
 

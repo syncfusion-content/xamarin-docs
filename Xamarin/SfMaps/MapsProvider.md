@@ -116,7 +116,7 @@ The Aerial view displays the satellite images to highlight the roads and major l
 
 {% endtabs %}
 
-![Xamarin Bing aerial image](Images/aerial.png)
+![Xamarin Bing aerial image](Images/aerial.jpg)
 
 ## AerialWithLabel
 
@@ -147,7 +147,7 @@ The AerialWithLabel view displays the Aerial map with labels for continent, coun
 
 {% endtabs %}
 
-![Xamarin Bing aerialwithlabel image](Images/aerialWithLabel.png)
+![Xamarin Bing aerialwithlabel image](Images/aerialWithLabel.jpg)
 
 ## Zooming and panning
 
@@ -155,7 +155,7 @@ The maps control provides interactive zooming and panning supports to OSM and Bi
 
 Zooming helps you get a closer look of an area on maps for in-depth analysis. Panning helps you move a map around to focus the targeted area. You can perform zooming and panning with the pinching gesture in a map area.
 
-![](Images/zooming.gif)
+![Xamarin Zooming image](Images/zooming.jpg)
 
 ## Reset zooming
 
@@ -365,7 +365,7 @@ public class ImageryLayerExt : NativeMap.ImageryLayer
 
 {% endtabs %}
 
-![Xamarin custom map provider image](Images/custom_map_provider.png)
+![Xamarin custom map provider image](Images/custom_map_provider.jpg)
 
 You can download the demo sample in this link.
 

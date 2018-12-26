@@ -202,6 +202,86 @@ public class CommandViewModel
 {% endhighlight %}
 {% endtabs %}
 
+### Expand command
+
+The `ExpandCommand` will be triggered whenever the [TreeViewNode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode.html) is being expanded.
+
+To enable the ExpandCommand action, return the 'CanExecute' method of the `ExpandCommand` to true.
+To disable the ExpandCommand action, return the ‘CanExecute’ method of the `ExpandCommand` to false.
+
+{% tabs %}
+{% highlight c# %}
+
+treeView.ExpandCommand = viewModel.ExpandingCommand;
+
+public class CommandViewModel
+{
+    private Command<Object> expandingCommand;
+
+    public Command<object> ExpandingCommand
+    {
+        get { return expandingCommand; }
+        set { expandingCommand = value; }
+    }
+
+    public CommandViewModel()
+    {            
+        ExpandingCommand = new Command<object>(ExpandCommandAction, CanExecute);
+    }
+
+    public bool CanExecute(object obj)
+    {
+        return false;
+    }
+
+    private void ExpandCommandAction(object obj)
+    {
+            App.Current.MainPage.DisplayAlert("Alert", (obj.AddedItems[0] as Countries).Name + " is Expanded", "OK");
+    }   
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Collapse command
+
+The `CollapseCommand` will be triggered whenever the [TreeViewNode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode.html) is being collapsed.
+
+To enable the CollapseCommand, return the 'CanExecute' method of the `CollapseCommand` to true.
+To disable the CollapseCommand, return the ‘CanExecute’ method of the `CollapseCommand` to false.
+
+{% tabs %}
+{% highlight c# %}
+
+treeView.CollapseCommand = viewModel.CollapsingCommand;
+
+public class CommandViewModel
+{
+	private Command<object> collapsingCommand;
+	
+	public Command<object> CollapsingCommand
+	{
+		get { return collapsingCommand; }
+		set { collapsingCommand = value; }
+	}
+	
+	public CommandViewModel()
+	{
+		CollapsingCommand = new Command<object>(CollapseCommandAction, CanExecute);
+	}
+	
+    public bool CanExecute(object obj)
+    {
+        return true;
+    }
+
+	private void CollapseCommandAction(object obj)
+	{
+		App.Current.MainPage.DisplayAlert("Alert", (obj.AddedItems[0] as Countries).Name + " is Collapsed", "OK");
+	}
+}
+{% endhighlight %}
+{% endtabs %}
+
 ## Event to command
 
 The `TreeView` event can be converted into commands using [Behaviors](https://developer.xamarin.com/guides/xamarin-forms/behaviors/). To achieve this, create a command in the ViewModel class and associate it to the TreeView event using `Behaviors`.

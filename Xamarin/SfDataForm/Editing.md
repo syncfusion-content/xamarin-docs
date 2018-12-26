@@ -158,7 +158,7 @@ Bool
 Bool type property.
 </td>
 <td>
-CheckBox
+SfCheckBox
 </td>
 </tr>
 <tr>

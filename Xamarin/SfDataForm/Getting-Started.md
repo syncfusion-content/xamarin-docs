@@ -380,6 +380,15 @@ Generated for the Enum type property.
 [EnumDataTypeAttribute]
 </td>
 </tr>
+<tr>
+<td>
+{{'[DataFormCheckBoxItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormCheckBoxItem.html)'| markdownify }}
+</td>
+<td>
+Generated for the Bool type property.
+[BoolDataTypeAttribute]
+</td>
+</tr>
 </table>
 The following list of editors are supported:
 <table>
@@ -500,7 +509,7 @@ Bool
 Bool type property.
 </td>
 <td>
-CheckBox
+SfCheckBox
 </td>
 </tr>
 <tr>

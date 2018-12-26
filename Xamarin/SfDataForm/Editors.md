@@ -156,7 +156,7 @@ Bool
 Bool type property.
 </td>
 <td>
-CheckBox
+SfCheckBox
 </td>
 </tr>
 <tr>
@@ -433,7 +433,107 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![Loading segment editor to data form segment item in Xamarin.Forms DataForm](SfDataForm_images/SegmentEditor.jpg)
+![Loading segment editor in Xamarin.Forms DataForm](SfDataForm_images/SegmentEditor.jpg)
+
+## CheckBox editor
+
+In `CheckBox` editor, the [SfCheckBox](https://help.syncfusion.com/xamarin/sfcheckbox/overview ) control is loaded. By default, for `bool` data type property, the `CheckBox` editor will be loaded in data form.
+
+{% tabs %}
+{% highlight c# %}
+
+[Display(Name = "Is Billable")]
+public bool IsBillable { get; set; } = true;
+
+[Display(Name = "Registered Member")]
+public bool RegisteredMember { get; set; }
+
+{% endhighlight %}
+{% endtabs %}
+
+![Loading check box editor in Xamarin.Forms DataForm](SfDataForm_images/CheckBoxEditor.jpg)
+
+**Visual states of SfCheckBox**
+
+SfCheckBox maintains the following three visual states:
+  - Checked: Determines the property value as true.
+  - UnChecked: Determines the property value as false.
+  - Intermediate: Determines the property value as null
+
+{% tabs %}
+{% highlight c# %}
+
+[Display(Name = "Is Billable")]
+public bool IsBillable { get; set; } = true;
+
+[Display(Name = "Registered Member")]
+public bool RegisteredMember { get; set; } = false;
+
+[Display( Name = "Is Refundable")]
+public bool? IsRefundable { get; set; } = null;
+
+{% endhighlight %}
+{% endtabs %}
+		
+![Setting visual states for check box editor in Xamarin.Forms DataForm](SfDataForm_images/CheckBoxEditorStates.jpg)
+  
+**Customizing the SfCheckBox state color**
+
+You can change the  color of the checked/indeterminate state of SfCheckBox using the [CheckedColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormCheckBoxItem~CheckedColor.html) property and  change the  color of unchecked state  using the [UnCheckedColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormCheckBoxItem~UnCheckedColor.html) property in [DataFormCheckBoxItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormCheckBoxItem.html) in the `AutoGeneratingDataFormItem` event of data form.
+
+{% tabs %}
+{% highlight c# %}
+
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null)
+    {
+        if (e.DataFormItem.Name == "IsBillable")
+        {
+            (e.DataFormItem as DataFormCheckBoxItem).CheckedColor = Color.Green;
+        }
+        if (e.DataFormItem.Name == "RegisteredMember")
+        {
+            (e.DataFormItem as DataFormCheckBoxItem).UnCheckedColor = Color.Blue;
+        }
+    }
+}
+ 
+{% endhighlight %}
+{% endtabs %}
+
+![Setting color for check box editor in Xamarin.Forms DataForm](SfDataForm_images/CheckBoxEditorColor.jpg)
+
+**Setting SfCheckBox caption text**
+
+You can customize the appearance of display text in `SfCheckBox` using the `Text` property of the `DataFormCheckBoxItem` event.
+
+{% tabs %}
+{% highlight c# %}
+
+[DisplayOptions(ShowLabel = false)]
+public bool Agree { get; set; }
+		
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null)
+    {
+        if (e.DataFormItem.Name.Equals("Agree"))
+        {
+            (e.DataFormItem as DataFormCheckBoxItem).IsThreeState = false;
+            (e.DataFormItem as DataFormCheckBoxItem).Text = "I agree to the Terms & Conditions";
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Setting cation text for check box editor in Xamarin.Forms DataForm](SfDataForm_images/CheckBoxEditorText.jpg)
 
 ## Drop down editor
 

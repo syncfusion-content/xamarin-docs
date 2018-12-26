@@ -800,6 +800,55 @@ List<ScheduleAppointment> visibleAppointments = schedule.GetVisibleAppointments(
 •	The specified Start/End Time ranges should lie on schedule visible dates range.
 •	`GetVisibleAppointments` method always returns List<ScheduleAppointment> even if had a custom appointment collection.
 
+## Suspend and Resume the appointment update
+Schedule allows you to suspend and resume the appointment UI update while doing collection change functions. This can be achieved by using [SuspendAppointmentUpdate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~SuspendAppointmentUpdate.html) and [ResumeAppointmentUpdate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ResumeAppointmentUpdate.html) method in SfSchedule.
+
+### Suspend Appointment Update:
+You can call the `SuspendAppointmentUpdate` method before appointment collection get notification changes (Add/Remove/Reset). This can suspend UI update until you resume it.
+
+### ResumeAppointmentUpdate:
+You can call the `ResumeAppointmentUpdate` method, after appointment collection changes (Add/Remove/Reset) done and it will update the appointment UI.
+
+{% tabs %}
+{% highlight c# %}
+// Creating an instance for schedule appointment collection
+ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
+//Adding schedule appointment in schedule appointment collection 
+var scheduleAppointment = new ScheduleAppointment()
+{
+    StartTime = new DateTime(2017, 05, 08, 10, 0, 0),
+    EndTime = new DateTime(2017, 05, 08, 12, 0, 0),
+    Subject = "Project Discussion",
+    Color=Color.Red
+};
+scheduleAppointmentCollection.Add(scheduleAppointment);
+schedule.DataSource = scheduleAppointmentCollection; 
+
+//Trigger the visible dates changed event. 
+schedule.VisibleDatesChangedEvent+= Schedule_VisibleDatesChangedEvent; 
+
+private void Schedule_VisibleDatesChangedEvent(object sender, VisibleDatesChangedEventArgs e)
+{
+    // Suspends the Appointment Update.
+    schedule.SuspendAppointmentUpdate();
+    for (int i = 0; i < e.visibleDates.Count; i++)
+    {
+        var visibleDate = e.visibleDates[i].Date;
+        var scheduleAppointment = new ScheduleAppointment()
+        {
+            StartTime = visibleDate.AddHours(10),
+            EndTime = visibleDate.AddHours(12),
+            Subject = visibleDate.ToString("dd/MM/yyyy"),
+            Color = Color.Red
+        };
+    scheduleAppointmentCollection.Add(scheduleAppointment);
+    }
+    // Resumes the Appointment Update.
+    schedule.ResumeAppointmentUpdate();
+} 
+{% endhighlight %}
+{% endtabs %}
+
 ## Appearance Customization
 The default appearance of the appointment can be customized by using the [AppointmentStyle](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle.html) property and [AppointmentLoadedEvent](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentLoadedEventArgs.html). The event and property is used to customize or override the default template of the Appointments.
 

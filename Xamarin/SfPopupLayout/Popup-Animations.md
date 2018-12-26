@@ -258,5 +258,3 @@ public MainPage()
 {% endhighlight %}
 
 {% endtabs %}
-
-![Popup with no animation](GettingStarted_images/AnimationMode_None.gif)

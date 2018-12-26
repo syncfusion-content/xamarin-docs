@@ -112,6 +112,7 @@ Create an instance for the badge view control, and add it as content.
 
 //Initializing the badge view.
 SfBadgeView sfBadgeView = new SfBadgeView();
+Content = sfBadgeView;
 	
 {% endhighlight %}
 
@@ -126,7 +127,7 @@ You can add text to badge view using the [`BadgeText`](https://help.syncfusion.c
 {% highlight xaml %}
 
 <badge:SfBadgeView>        
-    <badge:SfBadgeView BadgeText="20+" />          
+    <badge:SfBadgeView BadgeText="20" />          
 </badge:SfBadgeView>
 
 {% endhighlight %}
@@ -135,11 +136,14 @@ You can add text to badge view using the [`BadgeText`](https://help.syncfusion.c
    
 SfBadgeView sfBadgeView = new SfBadgeView();
 //Adding text to the badge view.
-sfBadgeView.BadgeText = "20+";
+sfBadgeView.BadgeText = "20";
+Content = sfBadgeView;
 
 {% endhighlight %}
 
 {% endtabs %}
+
+![Xamarin badge view text](getting-started_images/badgetext.png) 
 
 ## Adding content
 
@@ -149,128 +153,29 @@ You can add an image, button, or label to the badge view using the [`Content`](h
 
 {% highlight xaml %}
 
-<badge:SfBadgeView>
-    <badge:SfBadgeView.Content>
-        <Image Source="BadgeWhatsApp.png" />
-    </badge:SfBadgeView.Content>   
-</badge:SfBadgeView>       
+ <badge:SfBadgeView HorizontalOptions="Center" VerticalOptions="Center" >
+        <badge:SfBadgeView.Content>
+            <Button Text="Primary" WidthRequest="120"  HeightRequest="60"/>
+        </badge:SfBadgeView.Content>
+</badge:SfBadgeView>   
 
 {% endhighlight %}
 
 {% highlight c# %}
 	
 SfBadgeView sfBadgeView = new SfBadgeView();
+sfBadgeView.HorizontalOptions = LayoutOptions.Center;
+sfBadgeView.VerticalOptions = LayoutOptions.Center;
 //Adding image to the content of the badge view.
-Image image = new Image();
-image.Source = "BadgeWhatsApp.png";
-sfBadgeView.Content = image;
+Button button = new Button();
+button.Text = "Primary";
+button.WidthRequest = 120;
+button.HeightRequest = 60;
+sfBadgeView.Content = button;
+Content = sfBadgeView;
 
 {% endhighlight %}
  
-{% endtabs %}
-
-## Adding badge type
-
-You can change the colors of the badge view using the [`BadgeType`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfBadgeView.XForms~Syncfusion.XForms.BadgeView.BadgeSetting~BadgeType.html) property. The badge supports the following eight different essential colors for various situations:
-
- * Dark
- * Error
- * Info
- * Light
- * None
- * Primary
- * Secondary
- * Success
- * Warning
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<badge:SfBadgeView>
-    <badge:SfBadgeView.BadgeSettings>
-        <badge:BadgeSetting BadgeType="Error"/>
-    </badge:SfBadgeView.BadgeSettings>                  
-</badge:SfBadgeView>
-
-{% endhighlight %}
-
-{% highlight c# %}
-	
-SfBadgeView sfBadgeView = new SfBadgeView();
-//Adding badge type to the badge view.
-BadgeSetting badgeSetting = new BadgeSetting();
-badgeSetting.BadgeType = BadgeType.Error;
-sfBadgeView.BadgeSettings = badgeSetting;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-## Adding badge position
-
-The default position of the notification is `TopRight`. The position can be changed to the `TopLeft`, `BottomLeft`, and `BottomRight` using the [`BadgePosition`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfBadgeView.XForms~Syncfusion.XForms.BadgeView.BadgeSetting~BadgePosition.html) property.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<badge:SfBadgeView>
-    <badge:SfBadgeView.BadgeSettings>
-        <badge:BadgeSetting BadgePosition="TopRight" />
-    </badge:SfBadgeView.BadgeSettings>        
-</badge:SfBadgeView>       
-
-{% endhighlight %}
-
-{% highlight c# %}
-	   
-SfBadgeView sfBadgeView = new SfBadgeView();
-//Adding badge position to the badge view.
-BadgeSetting badgeSetting = new BadgeSetting();
-badgeSetting.BadgePosition = BadgePosition.TopRight;
-sfBadgeView.BadgeSettings = badgeSetting;
-
-{% endhighlight %}
-
-{% endtabs %}
- 
-## Adding badge icon
-
-You can change the badge icon using the [`BadgeIcon`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfBadgeView.XForms~Syncfusion.XForms.BadgeView.BadgeSetting~BadgeIcon.html) property. Badge supports the following types of [`BadgeIcon`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfBadgeView.XForms~Syncfusion.XForms.BadgeView.BadgeSetting~BadgeIcon.html):
-
-* Add
-* Available
-* Away
-* Busy
-* Delete 
-* Dot
-* None
-* Prohibit1
-* Prohibit2 
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<badge:SfBadgeView>
-    <badge:SfBadgeView.BadgeSettings>
-        <badge:BadgeSetting BadgeIcon="None"/>
-    </badge:SfBadgeView.BadgeSettings>           
-</badge:SfBadgeView>>
-
-{% endhighlight %}
-
-{% highlight c# %}
-	
-SfBadgeView sfBadgeView = new SfBadgeView();
-//Adding badge icon to the badge view.
-BadgeSetting badgeSetting = new BadgeSetting();
-badgeSetting.BadgeIcon = BadgeIcon.None;
-sfBadgeView.BadgeSettings = badgeSetting;
-
-{% endhighlight %}
-
 {% endtabs %}
 
 The following code sample gives you the complete code for badge view with badge types and text.
@@ -279,35 +184,24 @@ The following code sample gives you the complete code for badge view with badge 
 
 {% highlight xaml %}
 
-    <?xml version="1.0" encoding="utf-8" ?>
-    <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:GettingStarted"
              x:Class="GettingStarted.MainPage"
              xmlns:badge ="clr-namespace:Syncfusion.XForms.BadgeView;assembly=Syncfusion.SfBadgeView.XForms">
-        <ContentPage.Content>
-            <badge:SfBadgeView BadgeText="20+">
-                <badge:SfBadgeView.Content>
-                    <Image Source="BadgeWhatsApp.png" HeightRequest="200" 
-                           WidthRequest="200"/>
-                </badge:SfBadgeView.Content>
-                <badge:SfBadgeView.BadgeSettings>
-                    <badge:BadgeSetting BadgeType="Error" BadgePosition="TopRight" 
-                                        FontSize="30" Offset="-24,20"  BadgeIcon="None"/>
-                 </badge:SfBadgeView.BadgeSettings>
-            </badge:SfBadgeView>
-        </ContentPage.Content>
-    </ContentPage>
+
+    <badge:SfBadgeView HorizontalOptions="Center" VerticalOptions="Center" BadgeText="20">
+        <badge:SfBadgeView.Content>
+            <Button Text="Primary" WidthRequest="120"  HeightRequest="60"/>
+        </badge:SfBadgeView.Content>
+    </badge:SfBadgeView>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 using Syncfusion.XForms.BadgeView;
 
@@ -318,30 +212,18 @@ namespace GettingStarted
         public MainPage()
         {
             InitializeComponent();
-
-            //Initializing the badge view 
             SfBadgeView sfBadgeView = new SfBadgeView();
-            sfBadgeView.BadgeText = "20+";
+            sfBadgeView.HorizontalOptions = LayoutOptions.Center;
+            sfBadgeView.VerticalOptions = LayoutOptions.Center;
+            sfBadgeView.BadgeText = "20";
 
-            //Adding the image to the content of the badge view.
-            Image image = new Image();
-            image.Source = "BadgeWhatsApp.png";
-            image.HeightRequest = 200;
-            image.WidthRequest = 200;
-            sfBadgeView.Content = image;
-
-            //Adding the badge type, position, and icon of the badge view.
-            BadgeSetting badgeSetting = new BadgeSetting();
-            badgeSetting.BadgeType = BadgeType.Error;
-            badgeSetting.BadgePosition = BadgePosition.TopRight;
-            badgeSetting.BadgeIcon = BadgeIcon.None;
-
-            //Adding offset to adjust the badge view text.
-            badgeSetting.Offset = new Point(-24, 20);
-            badgeSetting.FontSize = 30;       
-            sfBadgeView.BadgeSettings = badgeSetting;
-
-            this.Content = sfBadgeView;
+            //Adding image to the content of the badge view.
+            Button button = new Button();
+            button.Text = "Primary";
+            button.WidthRequest = 120;
+            button.HeightRequest = 60;
+            sfBadgeView.Content = button;
+            Content = sfBadgeView;
         }
     }
 }

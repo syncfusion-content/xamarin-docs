@@ -15,9 +15,20 @@ Badges are used to notify users of new or unread messages, notifications, or the
 
 ## Key features
 
-* Position
-* Badge types
-* Animation
-* Badge icon
+**Position** 
+
+Change and move the badges to any place on the content based on the user needs.
+
+**Predefned styles** 
+
+Eight predefined contextual color variants are available for badges, including primary, secondary, warning, error, and more.
+
+**Animation** 
+
+Badge supports animation for the badge text.
+
+**Predefined symbols** 
+
+The Badge View control provides predefined notification symbols such as available, busy, away, and delete.
 
 ![Xamarin badge view overview](overview_images/overview.png)

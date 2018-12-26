@@ -32,6 +32,7 @@ public MainPage()
 }
     
 {% endhighlight %}
+{% endtabs %}
 
 {% tabs %}
 {% highlight c# %}
@@ -190,7 +191,7 @@ private void ExecuteOnDemandLoading(object obj)
 {
     var node = obj as TreeViewNode;
     
-    // Skip the repeated population of nodes.
+    // Skip repeated population of nodes.
     if(node.ChildNodes.Count > 0)
         return;
 

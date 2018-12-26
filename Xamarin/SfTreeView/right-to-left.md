@@ -1,7 +1,6 @@
-  
 ---
 layout: post
-title: RTL | TreeView for Xamarin.Forms | Syncfusion
+title: Right-to-left | TreeView for Xamarin.Forms | Syncfusion
 description: Describes how treeview works on right-to-left localization.
 platform: xamarin
 control: SfTreeView

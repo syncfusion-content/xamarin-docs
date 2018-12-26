@@ -1,6 +1,6 @@
 ---
 layout: post
-title: On-Demand Loading | TreeView for Xamarin.Forms | Syncfusion
+title: Load On-demand | TreeView for Xamarin.Forms | Syncfusion
 description: Describes about loading nodes on demand for TreeView.
 platform: xamarin
 control: SfTreeView
@@ -9,27 +9,17 @@ documentation: ug
 
 # Load on demand
 
-TreeView allows you load [Nodes](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~Nodes.html) only when they are requested using Load on Demand(Lazy load). It helps to load the data in on-demand when end-user expands the node where user can load the child items from services.
+TreeView allows you to load child items only when they are requested using Load on-demand(Lazy load) It helps to load the child items from services when end-user expands the node.
 
-## LoadOnDemandCommand
+Initially populate the root [Nodes](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~Nodes.html) by assigning [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ItemsSource.html) and then when root node is expanded, child items are loaded for that node from the services based on [LoadOnDemandCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~LoadOnDemandCommand.html).
 
-TreeView loads root level `Nodes` initially. When parent node is expanded, it requests to load the child nodes from the data source based on [LoadOnDemandCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~LoadOnDemandCommand.html).
+TreeView shows the expander for a particular node based on return value of `CanExecute` method of `LoadOnDemandCommand`. If `CanExecute` returns `true`, then expander icon is enabled for that node and loads child items from services using `Execute` method of `LoadOnDemandCommand` or if `CanExecute` returns `false` expander icon disabled and load on-demand is not enabled for that item. In `Execute` method child items from service are populated for that node by using [PopulateChildNodes](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode~PopulateChildNodes.html) method. After populating child items set `IsExpanded` to `true` for that node to expand. You can also add child items to node every time it expands based on the conditions you used in `CanExecute` and `Execute` method.
 
-While implementing `LoadOnDemandCommand`, implement these methods to handle it:
-* [CanExecute](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommand.canexecute?view=netframework-4.7.2) - Called when each item is initialized and defines whether load-on-demand feature is enabled for an item.
-* [Execute](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommand.execute?view=netframework-4.7.2) - Called when any item is requested for load-on-demand items.
+When sometime needed to fetch data for child items from services, you can animate the expander icon by setting `true` to [ShowExpanderAnimation](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode~ShowExpanderAnimation.html) before fetching data. After child items are loaded disable expander animation by setting `false` to `ShowExpanderAnimation`.
 
-N> Return true in `CanExecute` method of this command to enable expander icon and also to execute on demand loading for that node, else return false.
+N> Return `true` in `CanExecute` method of `LoadOnDemandCommand` command to enable expander icon and also to execute on demand loading for that node, else return `false`.
 
-N> Load on demand is applicable for bound mode only.
-
-## ShowExpanderAnimation
-
-`TreeViewNode` exposes a [ShowExpanderAnimation](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode~ShowExpanderAnimation.html) to enable animation for expander while progressing On-demand loading by setting `true` when an item is requested for On-demand loading and return `false` when child items are loaded for the item.
-
-## PopulateChildNodes
-
-TreeView exposes [PopulateChildNodes](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode~PopulateChildNodes.html) method to load child nodes when we populate the child items using async and await.
+N> Load on-demand is applicable for bound mode only.
 
 {% endhighlight %}
 {% highlight c# %}
@@ -114,7 +104,7 @@ public class MusicInfoRepository
 
             // Populating nodes
             node.PopulateChildNodes(items);
-            if (items.Count() > 0)
+            if (items.Count() > 0)e
                 node.IsExpanded = true;
             
             //Indicator disabled

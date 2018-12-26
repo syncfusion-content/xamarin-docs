@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Working with shape annotations
+title:  Working with shape annotations | Syncfusion
 description: Working with shape annotations
 platform: Xamarin
 control: SfPdfViewer

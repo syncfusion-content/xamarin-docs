@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Working with ink annotation
+title:  Working with ink annotation | Syncfusion
 description: Working with ink annotation
 platform: Xamarin
 control: SfPdfViewer

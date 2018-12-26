@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Getting Started for Essential Xamarin.Forms PDF viewer
+title:  Getting Started for Essential Xamarin.Forms PDF viewer | Syncfusion
 description: getting started
 platform: Xamarin
 control: SfPdfViewer

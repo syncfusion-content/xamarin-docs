@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Bookmark Navigation
+title:  Bookmark Navigation | Syncfusion
 description: Bookmark Navigation
 platform: Xamarin
 control: SfPdfViewer
@@ -52,7 +52,7 @@ pdfViewerControl. BookmarkNavigationEnabled = false;
 
 The bookmark pane is expanded and collapsed by clicking the bookmark button from the built-in toolbar.
 
-![](pdfviewer_images/BookmarkButton.png)
+![Button for Bookmark](pdfviewer_images/BookmarkButton.png)
 
 ## Expand and collapse the bookmark pane programmatically
 
@@ -135,4 +135,4 @@ private void PdfViewerControl_BookmarkNavigationOccurred(object sender, Syncfusi
 {% endhighlight %}
 {% endtabs %}
 
-![](pdfviewer_images/bookmark.png)
+![SfPdfViewer](pdfviewer_images/bookmark.png)

@@ -371,6 +371,15 @@ Generated for the Enum type property.
 [EnumDataTypeAttribute]
 </td>
 </tr>
+<tr>
+<td>
+{{'[DataFormSegmentItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormSegmentItem.html)'| markdownify }}
+</td>
+<td>
+Generated for the Enum type property.
+[EnumDataTypeAttribute]
+</td>
+</tr>
 </table>
 The following list of editors are supported:
 <table>
@@ -480,7 +489,7 @@ Segment
 Enum type property.
 </td>
 <td>
-SegmentControl
+SfSegmentedControl
 </td>
 </tr>
 <tr>

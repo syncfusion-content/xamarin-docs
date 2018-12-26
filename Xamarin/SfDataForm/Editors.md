@@ -239,7 +239,7 @@ SfRadioGroup
 
 In the text editor, the [Entry](https://developer.xamarin.com/guides/xamarin-forms/user-interface/text/entry/) is loaded.
 
-## MultiLine Text editor
+## Multiline Text editor
 
 In the `MultilineText` editor, the [Editor](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.editor?view=xamarin-forms) is loaded.
 

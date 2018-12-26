@@ -135,7 +135,7 @@ SfNumericUpDown
 </tr>
 <tr>
 <td>
-SegmentControl
+Segment
 </td>
 <td>
 {{'[DataFormSegmentedEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormSegmentedEditor.html)'| markdownify }}
@@ -144,7 +144,7 @@ SegmentControl
 Enum type property.
 </td>
 <td>
-SegmentControl
+SfSegmentedControl
 </td>
 </tr>
 <tr>

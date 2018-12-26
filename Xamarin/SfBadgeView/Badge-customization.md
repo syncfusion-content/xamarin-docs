@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: Badge customization with Syncfusion Badge View control for Xamarin.Forms
+title: Customization of SfBadgeView control for Xamarin.Forms
 description: Learn how to set Syncfusion badge view customization in Xamarin.Forms platform
 platform: xamarin
 control: SfBadgeView

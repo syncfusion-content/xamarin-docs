@@ -32,7 +32,7 @@ button.CornerRadius = 3;
 {% endhighlight %}
 {% endtabs %}
 
-![SfButton with cornerradius](images/Button_CornerRadius.png)
+![SfButton with cornerradius](images/Button_cornerradius.png)
 
 ## Border width
 
@@ -55,8 +55,6 @@ button.BorderColor = Color.Red;
 {% endhighlight %}
 {% endtabs %}
 
-![SfButton with border radius](images/Button_BorderRadius.png)
-
 ## Border color
 
 The [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~BorderColor.html) property is used to customize the color of the border in SfButton.
@@ -78,7 +76,7 @@ button.BorderColor = Color.Red;
 {% endhighlight %}
 {% endtabs %}
 
-![SfButton with border color](images/Button_BorderColor.png)
+![SfButton with border](images/Button_border.png)
 
 ## Text Color
 
@@ -100,7 +98,7 @@ button.TextColor = Color.White;
 {% endhighlight %}
 {% endtabs %}
 
-![SfButton with text color](images/Button_TextColor.png)
+![SfButton with text color](images/Button_textcolor.png)
 
 ## Background Color
 
@@ -109,7 +107,7 @@ The [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Button
 {% tabs %}
 {% highlight xaml %}
 
-<button:SfButton x:Name="button" Text="Button" BackgroundColor = "Accent" >
+<button:SfButton x:Name="button" Text="Button" BackgroundColor = "DeepSkyBlue" >
 </button:SfButton>
 
 {% endhighlight %}
@@ -117,7 +115,7 @@ The [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Button
 
 SfButton button = new SfButton();
 button.Text = "Button";
-button.BackgroundColor = Color.Accent;
+button.BackgroundColor = Color.DeepSkyBlue;
 
 {% endhighlight %}
 {% endtabs %}
@@ -211,16 +209,14 @@ button.VerticalTextAlignment = TextAlignment.Center;
 {% endhighlight %}
 {% endtabs %}
 
-![SfButton with text alignment](images/Button_textalignment.png)
+## ShowIcon
 
-## ImageSource
-
-The [`ImageSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~ImageSource.html) property is used to customize the background of SfButton by add the custome image.
+you can enable the Icon image using the [`ShowIcon`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~ShowIcon.html) property to know that any image is appear to the button.
 
 {% tabs %}
 {% highlight xaml %}
 
-<button:SfButton x:Name="button" Text="Button" ImageSource="">
+<button:SfButton x:Name="button" Text="Button" ImageSource="Heart.png" ShowIcon="True">
 </button:SfButton>
 
 {% endhighlight %}
@@ -228,9 +224,146 @@ The [`ImageSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XF
 
 SfButton button = new SfButton();
 button.Text = "Button";
- button.ImageSource= "";
+button.ImageSource = "Heart.png";
+button.ShowIcon = True;
 
 {% endhighlight %}
 {% endtabs %}
 
-![SfButton with image as backgroung](images/Button_background.png)
+## ImageSource
+
+The [`ImageSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~ImageSource.html) property is used to customize the icon image of SfButton by add the custome image.
+
+N> Enable the [`ShowIcon`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~ShowIcon.html) property for enabling this [`ImageSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~ImageSource.html) property. 
+
+{% tabs %}
+{% highlight xaml %}
+
+<button:SfButton x:Name="button" Text="Button" ImageSource="Heart.png" ShowIcon="True">
+</button:SfButton>
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfButton button = new SfButton();
+button.Text = "Button";
+button.ImageSource = "Heart.png";
+button.ShowIcon = True;
+
+{% endhighlight %}
+{% endtabs %}
+
+![SfButton with image with content](images/Button_icon.png)
+
+## ImageWidth
+
+The [`ImageWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~ImageWidth.html) property is used to customize the width of icon image of button.
+
+N> Enable the [`ShowIcon`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~ShowIcon.html) property for enabling this [`ImageSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~ImageSource.html) property. 
+
+{% tabs %}
+{% highlight xaml %}
+
+<button:SfButton x:Name="button" Text="Button" ImageSource="Heart.png" ShowIcon="True" ImageWidth="50">
+</button:SfButton>
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfButton button = new SfButton();
+button.Text = "Button";
+button.ImageSource = "Heart.png";
+button.ShowIcon = true;
+button.ImageWidth = 50;
+
+{% endhighlight %}
+{% endtabs %}
+
+## ImageAllignment
+
+The [`ImageAllignment`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~ImageAlignment.html) property is used to customize the alignment of icon image of button.
+
+N> Enable the [`ShowIcon`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~ShowIcon.html) property for enabling this [`ImageSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~ImageSource.html) property. 
+
+{% tabs %}
+{% highlight xaml %}
+
+<button:SfButton x:Name="button" Text="Button" ImageSource="Heart.png" ShowIcon="True" ImageAlignment="End">
+</button:SfButton>
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfButton button = new SfButton();
+button.Text = "Button";
+button.ImageSource = "Heart.png";
+button.ShowIcon = true;
+button.ImageAlignment = Alignment.End;
+
+{% endhighlight %}
+{% endtabs %}
+
+![SfButton with image with icon image alignment](images/Button_iconalignment.png)
+
+## Command
+
+The [`Command`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~Command.html) property is used to associate a command with an instance of a SfButton.[`Command`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~Command.html) property is most often set in the MVVM pattern to bind callbacks back into the ViewModel.
+
+N> Default value is [`null`].
+
+{% tabs %}
+{% highlight xaml %}
+
+ <ContentPage.BindingContext>
+    <local:CommandDemoViewModel />
+ </ContentPage.BindingContext>
+
+<button:SfButton x:Name="button" Text="Button" BackgroundColor="{Binding Background}" Command="{Binding ButtonCommand}">
+</button:SfButton>
+
+{% endhighlight %}
+{% highlight c# %}
+
+// ViewModel
+
+public class CommandDemoViewModel : INotifyPropertyChanged
+{
+
+    private Color _background = Color.Accent;
+
+    public Color Background
+    {
+        get { return _background; }
+        set
+        {
+            _background = value;
+            NotifyPropertyChanged();
+        }
+    }
+
+    private void NotifyPropertyChanged([CallerMemberName] String propertyName = "")
+    {
+        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+    }
+
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    public CommandDemoViewModel()
+    {
+        BackgroundColor();
+        this.Background=Color.Accent;
+    }
+
+    private void BackgroundColor()
+    {
+        this.Background = this.Background == Color.DeepSkyBlue ? Color.Accent : Color.DeepSkyBlue;
+    }
+
+    public ICommand ButtonCommand => new Command(BackgroundColor);
+
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+You can find the complete customization sample here:[Customization](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Customization-1070507783)

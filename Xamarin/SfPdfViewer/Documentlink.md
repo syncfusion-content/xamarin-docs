@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Working with Document Link Annotation (Table of content)
+title:  Working with Document Link Annotation (Table of content) | Syncfusion
 description: Working with Document Link Annotation (Table of content)
 platform: Xamarin
 control: SfPdfViewer
@@ -24,4 +24,4 @@ Set the “EnableDocumentLinkAnnotation” property to false to disable the docu
 {% endhighlight %}
 {% endtabs %}
 
-N>**By default, the EnableDocumentLinkAnnotation property is set to true.
+N> By default, the EnableDocumentLinkAnnotation property is set to true.

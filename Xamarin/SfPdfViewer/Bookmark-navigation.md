@@ -52,7 +52,7 @@ pdfViewerControl. BookmarkNavigationEnabled = false;
 
 The bookmark pane is expanded and collapsed by clicking the bookmark button from the built-in toolbar.
 
-![](pdfviewer_images/BookmarkButton.png)
+![Button for Bookmark](pdfviewer_images/BookmarkButton.png)
 
 ## Expand and collapse the bookmark pane programmatically
 

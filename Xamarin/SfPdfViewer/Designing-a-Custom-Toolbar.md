@@ -84,7 +84,7 @@ The MainPage.xaml would be as mentioned below.
 
 The final output will look like the below on iOS, Android and Windows (UWP) devices
 
-![](pdfviewer_images/pdfviewer.png)
+![SfPdfViewer](pdfviewer_images/pdfviewer.png)
 
 This demo can be downloaded from the below link.
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Load on demand
 
-TreeView allows you to load child items only when they are requested using Load on-demand(Lazy load) It helps to load the child items from services when end-user expands the node. Initially populate the root [Nodes](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~Nodes.html) by assigning [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ItemsSource.html) and then when any node is expanded, child items can be loaded using [LoadOnDemandCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~LoadOnDemandCommand.html).Load on-demand is applicable for bound mode only.
+TreeView allows you to load child items only when they are requested using Load on-demand(Lazy load). It helps to load the child items from services when end-user expands the node. Initially populate the root [Nodes](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~Nodes.html) by assigning [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ItemsSource.html) and then when any node is expanded, child items can be loaded using [LoadOnDemandCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~LoadOnDemandCommand.html). Load on-demand is applicable for bound mode only.
 
 {% tabs %}
 {% highlight xaml %}
@@ -38,6 +38,7 @@ Define a ViewModel class that implements [Command](https://docs.microsoft.com/en
 public class MusicInfoRepository
 {
     private ObservableCollection<MusicInfo> menu;
+
     public ObservableCollection<MusicInfo> Menu
     {
         get { return menu; }
@@ -82,7 +83,7 @@ public class MusicInfoRepository
             await Task.Delay(2000);
             var items = GetSubMenu(musicInfo.ID);
             node.PopulateChildNodes(items);
-            if (items.Count() > 0)e
+            if (items.Count() > 0)
                 node.IsExpanded = true;
             node.ShowExpanderAnimation = false;
         });
@@ -151,10 +152,10 @@ public class MusicInfoRepository
 
 ## On-demand loading of child items
 
-You can load child items for the node in [Execute](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.command.execute?view=xamarin-forms#Xamarin_Forms_Command_Execute_System_Object_) method of `LoadOnDemandCommand`. Execute method will get called when user expands the tree node. In LoadOnDemandExecute method, you have can perform following operations,
+You can load child items for the node in [Execute](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.command.execute?view=xamarin-forms#Xamarin_Forms_Command_Execute_System_Object_) method of `LoadOnDemandCommand`. Execute method will get called when user expands the tree node. In `LoadOnDemand.Execute` method, you have can perform following operations,
 
 * Show or hide busy indicator in the place of expander by setting [TreeViewNode.ShowExpanderAnimation](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode~ShowExpanderAnimation.html) until the data fetched.
-* Once data fected, you can populate the child nodes by calling [TreeViewNode.PopulateChildNodes](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode~PopulateChildNodes.html) method by passing the child items collection. 
+* Once data fetched, you can populate the child nodes by calling [TreeViewNode.PopulateChildNodes](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode~PopulateChildNodes.html) method by passing the child items collection. 
 * When load on-demand command executes expanding operation will not be handled by `TreeView`. So, you have to set [TreeViewNode.IsExpanded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode~IsExpanded.html) property to `true` to expand the tree node after populating child nodes.
 * You can skip population of child items again and again when every time the node expands, based on [TreeViewNode.ChildNodes](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode~ChildNodes.html) count. 
 
@@ -187,9 +188,10 @@ private void ExecuteOnDemandLoading(object obj)
         node.ShowExpanderAnimation = false;
     });
 }
+
 {% endhighlight %}
 {% endtabs %}
 
-![Xamarin Forms TreeView with Load On-Demand](TreeView_images/LoadOnDemand-Xamarin-Forms-TreeView.gif)
-
 You can download the entire [source code](https://github.com/SyncfusionExamples/How-to-load-data-on-demand-in-Xamarin.Forms-TreeView) here.
+
+![Xamarin Forms TreeView with Load On-Demand](TreeView_images/LoadOnDemand-Xamarin-Forms-TreeView.gif)

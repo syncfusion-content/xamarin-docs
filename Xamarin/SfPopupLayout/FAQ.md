@@ -103,7 +103,7 @@ namespace GettingStarted
 
 ![Popup with DataGrid](PopupLayout_images/DataGridWithPopup.jpg)
 
-Sample Link: You can download the above sample code by clicking here.
+Sample Link: You can download the above sample code by clicking [here](https://github.com/SyncfusionExamples/SfPopupLayout_XForms_GettingStarted/tree/master/FAQ_UGSamples/PopupInGrid).
 
 ## Open SfPopupLayout in ItemTapped event of SfListView
 
@@ -273,7 +273,7 @@ namespace PopupDemo
 
 ![ListView with Popup](PopupLayout_images/PopupInListView.jpg)
 
-Sample Link: You can download the above sample code by clicking here.
+Sample Link: You can download the above sample code by clicking [here](https://github.com/SyncfusionExamples/SfPopupLayout_XForms_GettingStarted/tree/master/FAQ_UGSamples/PopupInListView).
 
 ## Show ListView as a popup
 
@@ -433,7 +433,7 @@ namespace PopupDemo
 
 ![ListView in a Popup](PopupLayout_images/ListViewInPopup.jpg)
 
-Sample Link: You can download the above sample code by clicking here.
+Sample Link: You can download the above sample code by clicking [here](https://github.com/SyncfusionExamples/SfPopupLayout_XForms_GettingStarted/tree/master/FAQ_UGSamples/ListViewInPopup).
 
 ## Display popup when interacting with a switch
 
@@ -711,7 +711,7 @@ namespace PopupDemo
 
 {% endtabs %}
 
-Sample Link: You can download the above sample code by clicking here.
+Sample Link: You can download the above sample code by clicking [here](https://github.com/SyncfusionExamples/SfPopupLayout_XForms_GettingStarted/tree/master/FAQ_UGSamples/PopupWithPrism).
 
 ## Change the close button icon
 
@@ -778,4 +778,4 @@ namespace PopupDemo
 
 {% endtabs %}
 
-Sample Link: You can download the above sample code by clicking here.
+Sample Link: You can download the above sample code by clicking [here](https://github.com/SyncfusionExamples/SfPopupLayout_XForms_GettingStarted/tree/master/FAQ_UGSamples/PopupCloseIcon).

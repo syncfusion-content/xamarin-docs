@@ -22,13 +22,16 @@ TreeView allows you to load child items only when they are requested using Load 
     </ContentPage.Content>
 </ContentPage>
 {% endhighlight %}
-{% endtabs %}
-
-N> `LoadOnDemandCommand` receives [TreeViewNode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode.html) as command parameter by default. 
-
-## Handling expander visibility
-
-TreeView shows the expander for a particular node based on return value of [CanExecute](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.command.canexecute?view=xamarin-forms#Xamarin_Forms_Command_CanExecute_System_Object_) method of [LoadOnDemandCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~LoadOnDemandCommand.html). If `CanExecute` returns `true`, then expander icon is displayed for that node. If `CanExecute` returns `false`, then expander icon will not displayed for that node. `CanExecute` method gets called to decide the visibility of expander icon and before executing `LoadOnDemandCommand`. 
+{% highlight c# %}
+public MainPage()
+{
+    InitializeComponent();
+    var viewModel = new MusicInfoRepository();
+    treeView.LoadOnDemandCommand = viewModel.TreeViewOnDemandCommand;
+    treeView.ItemsSource = viewModel.Menu;
+}
+    
+{% endhighlight %}
 
 {% tabs %}
 {% highlight c# %}
@@ -61,12 +64,7 @@ public class MusicInfoRepository
     {
         var hasChildNodes = ((sender as TreeViewNode).Content as MusicInfo).HasChildNodes;
         if (hasChildNodes)
-        {
-            if ((sender as TreeViewNode).ChildNodes.Count > 0)
-                return false;
-            else
-                return true;
-        }
+            return true;
         else
             return false;
     }
@@ -75,6 +73,9 @@ public class MusicInfoRepository
     private void ExecuteOnDemandLoading(object obj)
     {
         var node = obj as TreeViewNode;
+        if(node.ChildNodes.Count > 0)
+            return;
+
         node.ShowExpanderAnimation = true;
         MusicInfo musicInfo = node.Content as MusicInfo;
         Device.BeginInvokeOnMainThread(async () =>
@@ -149,6 +150,29 @@ public class MusicInfoRepository
 {% endhighlight %}
 {% endtabs %}
 
+N> `LoadOnDemandCommand` receives [TreeViewNode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode.html) as command parameter by default. 
+
+## Handling expander visibility
+
+TreeView shows the expander for a particular node based on return value of [CanExecute](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.command.canexecute?view=xamarin-forms#Xamarin_Forms_Command_CanExecute_System_Object_) method of [LoadOnDemandCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~LoadOnDemandCommand.html). If `CanExecute` returns `true`, then expander icon is displayed for that node. If `CanExecute` returns `false`, then expander icon will not displayed for that node. `CanExecute` method gets called to decide the visibility of expander icon and before executing `LoadOnDemandCommand`. 
+
+{% tabs %}
+{% highlight c# %}
+
+// CanExecute method is called when each item is initialized and to define whether load-on-demand feature is enabled for this item.
+// Write here the conditions to decide the execution of load on demand and visibility of expander icon. 
+private bool CanExecuteOnDemandLoading(object sender)
+{
+    var hasChildNodes = ((sender as TreeViewNode).Content as MusicInfo).HasChildNodes;
+    if (hasChildNodes)
+        return true;
+    else
+        return false;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 ## On-demand loading of child items
 
 You can load child items for the node in [Execute](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.command.execute?view=xamarin-forms#Xamarin_Forms_Command_Execute_System_Object_) method of `LoadOnDemandCommand`. Execute method will get called when user expands the tree node. In `LoadOnDemand.Execute` method, you have can perform following operations,
@@ -165,6 +189,10 @@ You can load child items for the node in [Execute](https://docs.microsoft.com/en
 private void ExecuteOnDemandLoading(object obj)
 {
     var node = obj as TreeViewNode;
+    
+    // Skip the repeated population of nodes.
+    if(node.ChildNodes.Count > 0)
+        return;
 
     //Animation starts for expander
     node.ShowExpanderAnimation = true;     

@@ -12,14 +12,14 @@ documentation: ug
 The button control supports customizing the border color, image width, corner radius, background color, and more. The button can be customized using the following properties.
 
 
-## Corner radius
+## CornerRadius
 
 The `CornerRadius` property is used to customize the rounded edges in the button as demonstrated in the following code sample.
 
 {% tabs %}
 {% highlight xaml %}
 
-<button:SfButton x:Name="button" Text="Button" CornerRadius="3"  >
+<button:SfButton x:Name="button" Text="Button" CornerRadius="3">
 </button:SfButton>
 
 {% endhighlight %}
@@ -34,14 +34,14 @@ button.CornerRadius = 3;
 
 ![SfButton with cornerradius](images/Button_cornerradius.png)
 
-## Border width
+## BorderWidth
 
 The [`BorderWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~BorderWidth.html) property is used to customize the thickness of border in SfButton. 
 
 {% tabs %}
 {% highlight xaml %}
 
-<button:SfButton x:Name="button" Text="Button" BorderColor = "Red" BorderWidth="4"  >
+<button:SfButton x:Name="button" Text="Button" BorderColor = "Red" BorderWidth="4">
 </button:SfButton>
 
 {% endhighlight %}
@@ -55,14 +55,14 @@ button.BorderColor = Color.Red;
 {% endhighlight %}
 {% endtabs %}
 
-## Border color
+## BorderColor
 
 The [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~BorderColor.html) property is used to customize the color of the border in SfButton.
 
 {% tabs %}
 {% highlight xaml %}
 
-<button:SfButton x:Name="button" Text="Button" BorderColor = "Red" BorderWidth="4"  >
+<button:SfButton x:Name="button" Text="Button" BorderColor = "Red" BorderWidth="4">
 </button:SfButton>
 
 {% endhighlight %}
@@ -78,14 +78,14 @@ button.BorderColor = Color.Red;
 
 ![SfButton with border](images/Button_border.png)
 
-## Text Color
+## TextColor
 
 The [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~TextColor.html) property is used to customize the color of the text in SfButton.
 
 {% tabs %}
 {% highlight xaml %}
 
-<button:SfButton x:Name="button" Text="Button" TextColor = "White" >
+<button:SfButton x:Name="button" Text="Button" TextColor = "White">
 </button:SfButton>
 
 {% endhighlight %}
@@ -100,14 +100,14 @@ button.TextColor = Color.White;
 
 ![SfButton with text color](images/Button_textcolor.png)
 
-## Background Color
+## BackgroundColor
 
 The [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~BackgroundColor.html) property is used to customize the background color of the [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton.html).
 
 {% tabs %}
 {% highlight xaml %}
 
-<button:SfButton x:Name="button" Text="Button" BackgroundColor = "DeepSkyBlue" >
+<button:SfButton x:Name="button" Text="Button" BackgroundColor = "DeepSkyBlue">
 </button:SfButton>
 
 {% endhighlight %}
@@ -129,7 +129,7 @@ The [`FontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForm
 {% tabs %}
 {% highlight xaml %}
 
-<button:SfButton x:Name="button" Text="Button" FontSize = "18" >
+<button:SfButton x:Name="button" Text="Button" FontSize = "18">
 </button:SfButton>
 
 {% endhighlight %}
@@ -151,7 +151,7 @@ The [`FontAttributes`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfus
 {% tabs %}
 {% highlight xaml %}
 
-<button:SfButton x:Name="button" Text="Button" FontAttributes = "Italic" >
+<button:SfButton x:Name="button" Text="Button" FontAttributes = "Italic">
 </button:SfButton>
 
 {% endhighlight %}
@@ -173,7 +173,7 @@ The [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.
 {% tabs %}
 {% highlight xaml %}
 
-<button:SfButton x:Name="button" Text="Button" FontFamily = "Arial" >
+<button:SfButton x:Name="button" Text="Button" FontFamily = "Arial">
 </button:SfButton>
 
 {% endhighlight %}
@@ -195,7 +195,7 @@ The [`HorizontalTextAlignment `](https://help.syncfusion.com/cr/xamarin/Syncfusi
 {% tabs %}
 {% highlight xaml %}
 
-<button:SfButton x:Name="button" Text="Button" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" >
+<button:SfButton x:Name="button" Text="Button" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
 </button:SfButton>
 
 {% endhighlight %}

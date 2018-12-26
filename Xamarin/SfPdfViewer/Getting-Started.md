@@ -337,7 +337,7 @@ m_currentHorizontalOffset = pdfViewerControl.HorizontalOffset;
 m_currentVerticalOffset = pdfViewerControl.VerticalOffset;
 
 //Scrolls the content to the specified vertical offset position in the PdfViewerControl
-pdfViewerControl.ScrollToOffset(m_currentHorizontalOffset, m_currentVerticalOffset);
+pdfViewerControl.ScrollToOffset(m_currentHorizontalOffset+10, m_currentVerticalOffset+10);
 
 {% endhighlight %}
 {% endtabs %}

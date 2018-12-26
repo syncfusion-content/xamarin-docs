@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Bookmark Navigation
+title:  Bookmark Navigation | Syncfusion
 description: Bookmark Navigation
 platform: Xamarin
 control: SfPdfViewer
@@ -135,4 +135,4 @@ private void PdfViewerControl_BookmarkNavigationOccurred(object sender, Syncfusi
 {% endhighlight %}
 {% endtabs %}
 
-![](pdfviewer_images/bookmark.png)
+![SfPdfViewer](pdfviewer_images/bookmark.png)

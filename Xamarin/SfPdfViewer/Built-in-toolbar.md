@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Working with built-in toolbar
+title:  Working with built-in toolbar | Syncfusion
 description: Working with built-in toolbar
 platform: Xamarin
 control: SfPdfViewer

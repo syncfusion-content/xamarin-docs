@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Working with freetext annotations
+title:  Working with freetext annotations | Syncfusion
 description: Working with freetext annotations
 platform: Xamarin
 control: SfPdfViewer

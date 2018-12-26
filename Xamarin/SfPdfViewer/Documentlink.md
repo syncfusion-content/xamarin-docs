@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Working with Document Link Annotation (Table of content)
+title:  Working with Document Link Annotation (Table of content) | Syncfusion
 description: Working with Document Link Annotation (Table of content)
 platform: Xamarin
 control: SfPdfViewer

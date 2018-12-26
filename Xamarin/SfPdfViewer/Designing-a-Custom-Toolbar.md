@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Designing a toolbar
+title:  Designing a toolbar | Syncfusion
 description: designing a toolbar
 platform: Xamarin
 control: SfPdfViewer

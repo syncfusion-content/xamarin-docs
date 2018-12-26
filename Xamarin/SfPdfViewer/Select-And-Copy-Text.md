@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Select and copy the text
+title:  Select and copy the text | Syncfusion
 description: select and copy the text
 platform: Xamarin
 control: SfPdfViewer

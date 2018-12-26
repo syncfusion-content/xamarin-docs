@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Working with built-in toolbar
+title:  Working with built-in toolbar | Syncfusion
 description: Working with built-in toolbar
 platform: Xamarin
 control: SfPdfViewer
@@ -91,7 +91,7 @@ pdfViewerControl.Toolbar.Enabled = true;
 
 ![Build-in-toolbar enable in PDF Viewer](pdfviewer_images/ToolbarEnabled.png)
 
-N>**By default, the built-in toolbar of SfPdfViewer is always visible.
+N>By default, the built-in toolbar of SfPdfViewer is always visible.
 
 ## How to disable/enable bookmark
 

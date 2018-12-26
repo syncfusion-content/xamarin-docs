@@ -30,8 +30,6 @@ N> `LoadOnDemandCommand` receives [TreeViewNode](https://help.syncfusion.com/cr/
 
 TreeView shows the expander for a particular node based on return value of [CanExecute](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.command.canexecute?view=xamarin-forms#Xamarin_Forms_Command_CanExecute_System_Object_) method of [LoadOnDemandCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~LoadOnDemandCommand.html). If `CanExecute` returns `true`, then expander icon is displayed for that node. If `CanExecute` returns `false`, then expander icon will not displayed for that node. `CanExecute` method gets called to decide the visibility of expander icon and before executing `LoadOnDemandCommand`. 
 
-Define a ViewModel class that implements [Command](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.command?view=xamarin-forms).
-
 {% tabs %}
 {% highlight c# %}
 

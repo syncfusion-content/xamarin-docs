@@ -30,7 +30,7 @@ Stream fdfStreamToSave = pdfViewerControl.ExportFormData(DataFormat.Fdf, "PdfFil
 {% endhighlight %}
 {% endtabs %}
 
-N>**While saving the stream returned by the `ExportFormData` method, the file name must have the same extension as the file type that was given as the first argument. e.g. In the above case the file type provided is `fdf`, so the saved file extension should be `.fdf`.
+N>While saving the stream returned by the `ExportFormData` method, the file name must have the same extension as the file type that was given as the first argument. e.g. In the above case the file type provided is `fdf`, so the saved file extension should be `.fdf`.
 
 ## Importing form data
 

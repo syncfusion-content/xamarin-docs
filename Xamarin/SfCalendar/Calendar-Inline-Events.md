@@ -147,7 +147,20 @@ InlineTemplateSelector can be used to choose a DataTemplate at runtime based on 
 
  {% endhighlight %}
 
+## Getting Inline/Agenda View Appointment details
 
+Using  InlineEvent argument in the InlineItemTappedEventArgs 
+of InlineItemTapped  event, you can get the Month Inline/Agenda Appointments details while tapping the specific appointment. You can do the required functions while tapping the Inline/Agenda appointment using this event.
+
+{% highlight c# %}
+calendar.InlineItemTapped+= Calendar_InlineItemTapped; 
+
+private void Calendar_InlineItemTapped(object sender, InlineItemTappedEventArgs e)
+    {
+        var appointment = e.InlineEvent;
+        DisplayAlert(appointment.Subject, appointment.StartTime.ToString(), "ok");
+    } 
+{% endhighlight %}
 	
 
 	

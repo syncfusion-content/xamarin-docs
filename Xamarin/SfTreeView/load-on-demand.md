@@ -33,6 +33,7 @@ TreeView shows the expander for a particular node based on return value of [CanE
 {% tabs %}
 {% highlight c# %}
 
+//ViewModel that implements [Command](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.command?view=xamarin-forms).
 public class MusicInfoRepository
 {
     private ObservableCollection<MusicInfo> menu;

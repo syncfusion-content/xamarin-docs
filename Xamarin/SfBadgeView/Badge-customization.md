@@ -153,7 +153,6 @@ You can change the colors of the badge using the [`BadgeType`](https://help.sync
  * Error
  * Info
  * Light
- * None
  * Primary
  * Secondary
  * Success
@@ -282,7 +281,7 @@ Content = sfBadgeView;
 
 ## Alignment of badge
 
-You can align the badge view using the `Center`, `Start`, and `End` properties of [`BadgeAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfBadgeView.XForms~Syncfusion.XForms.BadgeView.BadgeSetting~BadgeAlignment.html) property. Set the control size as same as the content size to enable alignment work for badge view.
+You can align the badge view using the `Center`, `Start`, and `End` properties of [`BadgeAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfBadgeView.XForms~Syncfusion.XForms.BadgeView.BadgeSetting~BadgeAlignment.html) property.
 
 {% tabs %}
 

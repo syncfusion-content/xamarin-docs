@@ -33,9 +33,6 @@ TreeView allows you to load child items only when they are requested using Load 
 public MainPage()
 {
     InitializeComponent();
-    viewModel = new MusicInfoRepository();
-    treeView.LoadOnDemandCommand = viewModel.TreeViewOnDemandCommand;
-    treeView.ItemsSource = viewModel.Menu;
 }
     
 {% endhighlight %}

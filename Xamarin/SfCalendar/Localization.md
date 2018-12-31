@@ -33,9 +33,8 @@ You can localize the custom strings (All Day, No Events) used in the calendar co
 {% tabs %}
 {% highlight c# %}
 
-  // Here LocalizingCustomtextsfromPCL is a sample name.
   calendar.Locale = new System.Globalization.CultureInfo("pt-PT");
-  CalendarResourceManager.Manager = new System.Resources.ResourceManager("LocalizingCustomtextsfromPCL.Resources.Syncfusion.SfCalendar.XForms", GetType().GetTypeInfo().Assembly);
+  CalendarResourceManager.Manager = new System.Resources.ResourceManager("Samplename.Resources.Syncfusion.SfCalendar.XForms", GetType().GetTypeInfo().Assembly);
   CultureInfo.CurrentUICulture = new CultureInfo("pt");
 
 {% endhighlight %}

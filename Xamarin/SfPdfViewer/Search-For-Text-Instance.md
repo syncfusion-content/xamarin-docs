@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Search for a text instance
+title:  Search for a text instance | Syncfusion
 description: search for a text instance
 platform: Xamarin
 control: SfPdfViewer

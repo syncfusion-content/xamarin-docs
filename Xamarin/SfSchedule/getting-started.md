@@ -99,7 +99,7 @@ This section provides a walks through to create `MeetingRoomScheduler` using our
     
 Create a new Blank App (Xamarin.Forms.Portable) application in Xamarin Studio or Visual Studio.  
     
-Add the required assembly references to the pcl and renderer projects as discussed in the [Assembly Configuration](#assembly-configuration) section.   
+Add the required assembly references to the .NET Standard and renderer projects as discussed in the [Assembly Configuration](#assembly-configuration) section.   
     
 Import SfSchedule control namespace `Syncfusion.SfSchedule.XForms`.   
     
@@ -467,5 +467,5 @@ schedule.DataSource = viewModel.Meetings;
 ![](GettingStarted_images/GettingStarted.png)
 
 You can download the entire source code of this demo for Xamarin.Forms from
-here [ScheduleGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartedSample746964196.zip)
+here [ScheduleGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted625882156.zip)
 

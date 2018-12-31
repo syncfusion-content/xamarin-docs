@@ -55,7 +55,7 @@ The label color can be changed using the [`LabelColor`](https://help.syncfusion.
 
 {% endtabs %}
 
-![](labels_images/label1.png)
+![Xamarin Label Image](labels_images/label1.png)
 
 ## Label font customization
 
@@ -107,7 +107,7 @@ The label font can be customized by using the [`LabelFontSize`](https://help.syn
 
 {% endtabs %}
 
-![](labels_images/label2.png)
+![Xamarin Label Font Customization Image](labels_images/label2.png)
 
 ## Setting position for labels
 
@@ -151,7 +151,7 @@ The labels can be positioned far away from the ticks by using the [`LabelOffset`
 
 {% endtabs %}
 
-![](labels_images/label3.png)
+![Xamarin Label Position Image](labels_images/label3.png)
 
 ### Setting postfix and prefix for labels
 
@@ -202,7 +202,7 @@ The [`LabelPostfix`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusio
 
 {% endtabs %}
 
-![](labels_images/label4.png)
+![Xamarin Label Postfix Image](labels_images/label4.png)
 
 ### Setting label prefix
 
@@ -247,7 +247,68 @@ The [`LabelPrefix`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion
 
 {% endtabs %}
 
-![](labels_images/label5.png)
+![Xamarin Label Prefix Image](labels_images/label5.png)
+
+## Custom labels
+
+Linear scale supports custom label format using the [`CustomLabels`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~CustomLabels.html) property. 
+You can give labels in an array that you want to place in scale.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+Namespace:
+
+xmlns:sys="clr-namespace:System;assembly=mscorlib"
+...
+
+<gauge:SfLinearGauge>
+    <gauge:SfLinearGauge.Scales>
+        <gauge:LinearScale ScaleBarColor="#e0e0e0" LabelColor="#424242" >
+            <gauge:LinearScale.CustomLabels>
+                <x:Array Type="{x:Type x:Double}">
+                    <sys:Double>0</sys:Double>
+                    <sys:Double>23</sys:Double>
+                    <sys:Double>45</sys:Double>
+                    <sys:Double>67</sys:Double>
+                    <sys:Double>85</sys:Double>
+                    <sys:Double>100</sys:Double>
+                </x:Array>
+            </gauge:LinearScale.CustomLabels>
+            <gauge:LinearScale.MajorTickSettings>
+                <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="15"/>
+            </gauge:LinearScale.MajorTickSettings>
+            <gauge:LinearScale.MinorTickSettings>
+                <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="7"/>
+            </gauge:LinearScale.MinorTickSettings>
+        </gauge:LinearScale>
+    </gauge:SfLinearGauge.Scales>
+</gauge:SfLinearGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfLinearGauge linearGauge = new SfLinearGauge();
+LinearScale linearScale = new LinearScale();
+linearScale.ScaleBarColor = Color.FromHex("#e0e0e0");
+linearScale.MajorTickSettings.Thickness = 1;
+linearScale.MajorTickSettings.Length = 15;
+linearScale.MajorTickSettings.Color = Color.Gray;
+linearScale.MinorTickSettings.Color = Color.Gray;
+linearScale.MinorTickSettings.Length = 7;
+linearScale.MinorTickSettings.Thickness = 1;
+linearScale.LabelColor = Color.FromHex("#424242");
+linearScale.CustomLabels = new double[] { 0, 23, 45, 67, 85, 100};
+linearGauge.Scales.Add(linearScale);
+Content = linearGauge;  
+    
+{% endhighlight %}
+
+{% endtabs %}
+
+![Xamarin Custom Labels Image](labels_images/label7.png)
 
 ## Labels visibility
 
@@ -294,5 +355,4 @@ Labels visibility can be customized using the [`ShowLabels`](https://help.syncfu
 
 {% endtabs %}
 
-![](labels_images/label6.png)
-
+![Xamarin Label Visiblity Image](labels_images/label6.png)

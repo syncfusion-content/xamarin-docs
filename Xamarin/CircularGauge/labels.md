@@ -47,7 +47,7 @@ The label color can be changed using the [`LabelColor`](https://help.syncfusion.
 
 {% endtabs %}
 
-![](labels_images/label-color-customization.png)
+![Xamarin Circular Gauge Label Color Customization](labels_images/label-color-customization.png)
 
 ## Label font customization
 
@@ -89,7 +89,7 @@ The label font can be customized by using the [`LabelFontSize`](https://help.syn
 
 {% endtabs %}
 
-![](labels_images/label-font-customization.png)
+![Xamarin Circular Gauge Label Font Customization](labels_images/label-font-customization.png)
 
 ## Setting position for labels
 
@@ -123,7 +123,7 @@ The labels can be positioned far away from the ticks by using the [`LabelOffset`
 
 {% endtabs %}
 
-![](labels_images/label-offset.png)
+![Xamarin Circular Gauge Label Position Customization](labels_images/label-offset.png)
 
 ## Setting number of decimal digits for labels
 
@@ -158,7 +158,7 @@ The [`NumberOfDecimalDigits`](https://help.syncfusion.com/cr/cref_files/xamarin/
 
 {% endtabs %}
 
-![](labels_images/number-of-decimal-digits.png)
+![Xamarin Circular Gauge Label Image](labels_images/number-of-decimal-digits.png)
 
 ## Setting postfix and prefix for labels
 
@@ -196,7 +196,7 @@ You can postfix/prefix values to the scale labels by using the [`LabelPostfix`](
 
 {% endtabs %}
 
-![](labels_images/label-postfix.png)
+![Xamarin Circular Gauge Label Postfix Image](labels_images/label-postfix.png)
 
 ### Label prefix
 
@@ -230,7 +230,7 @@ You can postfix/prefix values to the scale labels by using the [`LabelPostfix`](
 
 {% endtabs %}
 
-![](labels_images/label-prefix.png)
+![Xamarin Circular Gauge Label Postfix Image](labels_images/label-prefix.png)
 
 ## Edge label customization
 
@@ -270,7 +270,7 @@ You can customize the edge label by using the [`ShowFirstLabel`](https://help.sy
 
 {% endtabs %}
 
-![](labels_images/label-edge-customization.png)
+![Xamarin Circular Gauge Label Edge Image](labels_images/label-edge-customization.png)
 
 ## Show labels
 
@@ -304,7 +304,7 @@ The [`ShowLabels`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.
 
 {% endtabs %}
 
-![](labels_images/show-labels.png)
+![Xamarin Circular Gauge Label Image](labels_images/show-labels.png)
 
 ## Setting auto angle for label
 
@@ -323,7 +323,6 @@ Scale labels can be rotated automatically based on the current angle. To enable 
          </gauge:SfCircularGauge.Scales>	
      </gauge:SfCircularGauge>
               
-
 {% endhighlight %}
 
 {% highlight c# %}
@@ -339,6 +338,53 @@ Scale labels can be rotated automatically based on the current angle. To enable 
 
 {% endtabs %}
 
-![](labels_images/auto-angle.png)
+![Xamarin Circular Gauge Label With Auto Angle Image](labels_images/auto-angle.png)
 
+## Custom labels for circular gauge
 
+Circular scale also supports custom label format using the [`CustomLabels`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~CustomLabels.html) property. 
+You can give labels in an array that you want to place in scale.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+Namespace:
+
+xmlns:sys="clr-namespace:System;assembly=mscorlib"
+...
+
+<gauge:SfCircularGauge>
+    <gauge:SfCircularGauge.Scales>
+        <gauge:Scale>       
+            <gauge:Scale.CustomLabels>
+                <x:Array Type="{x:Type x:Double}">
+                    <sys:Double>0</sys:Double>
+                    <sys:Double>23</sys:Double>
+                    <sys:Double>45</sys:Double>
+                    <sys:Double>67</sys:Double>
+                    <sys:Double>85</sys:Double>
+                    <sys:Double>100</sys:Double>
+                </x:Array>
+            </gauge:Scale.CustomLabels>
+        </gauge:Scale>
+    </gauge:SfCircularGauge.Scales> 
+</gauge:SfCircularGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCircularGauge circularGauge = new SfCircularGauge();
+ObservableCollection<Scale> scales = new ObservableCollection<Scale>();
+Scale scale = new Scale();
+scale.CustomLabels = new double[] { 0, 23, 45, 67, 85, 100 };
+scales.Add(scale);
+circularGauge.Scales = scales;
+Content = circularGauge;  
+    
+{% endhighlight %}
+
+{% endtabs %}
+
+![Xamarin Custom Labels Image](labels_images/custom-labels.png)

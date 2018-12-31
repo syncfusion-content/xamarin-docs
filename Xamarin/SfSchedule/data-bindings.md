@@ -774,6 +774,32 @@ eventCollection.Remove(exceptionAppointment);
 You can download the entire source code of this demo for Xamarin.Forms from
 here [RecurrenceExceptions](https://github.com/SyncfusionExamples/Create-Recurrence-Exceptions-to-schedule-for-custom-recurring-appointments-in-Xamarin.Forms).
 
+## Get visible appointments
+You can get the list of visible appointments by using [GetVisibleAppointments](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~GetVisibleAppointments.html) method available in schedule. It is applicable for all schedule views.
+
+### Get visible appointments from given date time range:
+You can get the visible appointments in schedule by passing the start and end `DateTime` range to `GetVisibleAppointments` method.
+
+{% tabs %}
+{% highlight c# %}
+List<ScheduleAppointment> visibleAppointments = schedule.GetVisibleAppointments(new DateTime(2017, 05, 08, 10, 0, 0), new DateTime(2017, 05, 12, 10, 0, 0)); 
+{% endhighlight %}
+{% endtabs %}
+
+### Get visible appointments from date time:
+You can get the visible appointments in schedule by passing `DateTime` to `GetVisibleAppointments` method.
+
+{% tabs %}
+{% highlight c# %}
+List<ScheduleAppointment> visibleAppointments = schedule.GetVisibleAppointments(new DateTime(2017, 05, 08, 10, 0, 0)); 
+{% endhighlight %}
+{% endtabs %}
+
+>**NOTE**
+•	You can get the visible appointments after rendering the schedule only. 
+•	The specified start/end Time ranges should lie on schedule current visible dates range.
+•	`GetVisibleAppointments` method will always returns the `List<ScheduleAppointment>` even if it has a custom appointment collection.
+
 ## Appearance Customization
 The default appearance of the appointment can be customized by using the [AppointmentStyle](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle.html) property and [AppointmentLoadedEvent](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentLoadedEventArgs.html). The event and property is used to customize or override the default template of the Appointments.
 

@@ -204,4 +204,4 @@ Refer [this](https://help.syncfusion.com/xamarin/sfautocomplete/autocomplete-fil
 
 ![](images/Getting-Started/contains-casesensitive.png)
 
-The complete Getting Started sample is available in [this](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AutoComplete_GettingStarted1729075944) link.
+The complete Getting Started sample is available in [this](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AutoComplete_GettingStarted67906545) link.

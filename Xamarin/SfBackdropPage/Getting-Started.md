@@ -219,7 +219,7 @@ The following options are provided in backdrop to reveal and conceal the back la
 
 To know more information about reveal height customization ,refer this [link](https://help.syncfusion.com/xamarin/sfbackdroppage/revealingheight-customization).
 
-![Reveal and conceal back layer](Getting-Started_images/backdrop_navigation_page.gif)
+![Reveal and conceal back layer](Getting-Started_images/Reveal_Conceal_Backlayer.gif)
 
 {% tabs %} 
 

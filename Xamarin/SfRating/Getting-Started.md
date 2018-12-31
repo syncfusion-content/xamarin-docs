@@ -176,7 +176,7 @@ SfRating control provides option to rate the items in full, half and exact value
 
 {% endtabs %}
 
-![](images/gettingstarted.png)
+![gettingstartedimage](images/gettingstarted.png)
 
 
 

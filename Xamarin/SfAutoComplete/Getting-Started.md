@@ -202,6 +202,6 @@ autoComplete.SuggestionMode = Syncfusion.SfAutoComplete.XForms.SuggestionMode.Co
 
 Refer [this](https://help.syncfusion.com/xamarin/sfautocomplete/autocomplete-filtering-options) link to learn more about the options available in SfAutoComplete to filter suggestions.
 
-![](images/Getting-Started/contains-casesensitive.png)
+![Image-casesensitive](images/Getting-Started/contains-casesensitive.png)
 
 The complete Getting Started sample is available in [this](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AutoComplete_GettingStarted67906545) link.

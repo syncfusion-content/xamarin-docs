@@ -111,8 +111,11 @@ public class MusicInfoRepository
         TreeViewOnDemandCommand = new Command(ExecuteOnDemandLoading, CanExecuteOnDemandLoading);
     }
 
-    // CanExecute method is called when each item is initialized and to define whether load-on-demand feature is enabled for this item.
-    // Write here the conditions to decide the execution of load on demand and visibility of expander icon. 
+    /// <summary>
+    /// CanExecute method is called before expanding and initialization of node. Returns whether the node has child nodes or not.
+    /// Based on return value of expander visibility of the node is handled.  
+    /// </summary>
+    /// <param name="sender">TreeViewNode is passed as default parameter </param>
     private bool CanExecuteOnDemandLoading(object sender)
     {
         var hasChildNodes = ((sender as TreeViewNode).Content as MusicInfo).HasChildNodes;
@@ -122,22 +125,38 @@ public class MusicInfoRepository
             return false;
     }
 
-    //Execute method is called when any item is requested for load-on-demand items.
+    /// <summary>
+    /// Execute method is called when any item is requested for load-on-demand items.
+    /// </summary>
+    /// <param name="sender">TreeViewNode is passed as default parameter </param>
     private void ExecuteOnDemandLoading(object obj)
     {
         var node = obj as TreeViewNode;
-        if(node.ChildNodes.Count > 0)
+        
+        // Skip the repeated population of child items when every time the node expands.
+        if (node.ChildNodes.Count > 0)
+        {
+            node.IsExpanded = true;
             return;
+        }
 
+        //Animation starts for expander to show progressing of load on demand
         node.ShowExpanderAnimation = true;
         MusicInfo musicInfo = node.Content as MusicInfo;
         Device.BeginInvokeOnMainThread(async () =>
         {
             await Task.Delay(2000);
+            
+            //Fetching child items to add
             var items = GetSubMenu(musicInfo.ID);
+            
+            // Populating child items for the node in on-demand
             node.PopulateChildNodes(items);
             if (items.Count() > 0)
+                //Expand the node after child items are added.
                 node.IsExpanded = true;
+
+            //Animation stopped for expander to show load on demand is executed.
             node.ShowExpanderAnimation = false;
         });
     }
@@ -175,7 +194,6 @@ public class MusicInfoRepository
             menuItems.Add(new MusicInfo() { ItemName = "Bestselling Albums", HasChildNodes = false, ID = 32 });
             menuItems.Add(new MusicInfo() { ItemName = "New Releases", HasChildNodes = false, ID = 33 });
             menuItems.Add(new MusicInfo() { ItemName = "MP3 Albums", HasChildNodes = false, ID = 34 });
-
         }
         else if (iD == 4)
         {
@@ -212,8 +230,11 @@ TreeView shows the expander for a particular node based on return value of [CanE
 {% tabs %}
 {% highlight c# %}
 
-// CanExecute method is called when each item is initialized and to define whether load-on-demand feature is enabled for this item.
-// Write here the conditions to decide the execution of load on demand and visibility of expander icon. 
+/// <summary>
+/// CanExecute method is called before expanding and initialization of node. Returns whether the node has child nodes or not.
+/// Based on return value of expander visibility of the node is handled.  
+/// </summary>
+/// <param name="sender">TreeViewNode is passed as default parameter </param>
 private bool CanExecuteOnDemandLoading(object sender)
 {
     var hasChildNodes = ((sender as TreeViewNode).Content as MusicInfo).HasChildNodes;
@@ -222,7 +243,6 @@ private bool CanExecuteOnDemandLoading(object sender)
     else
         return false;
 }
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -238,37 +258,41 @@ You can load child items for the node in [Execute](https://docs.microsoft.com/en
 {% endhighlight %}
 {% highlight c# %}
 
-//Execute method is called when any item is requested for load-on-demand items.
+/// <summary>
+/// Execute method is called when any item is requested for load-on-demand items.
+/// </summary>
+/// <param name="sender">TreeViewNode is passed as default parameter </param>
 private void ExecuteOnDemandLoading(object obj)
 {
     var node = obj as TreeViewNode;
-    
+        
     // Skip the repeated population of child items when every time the node expands.
-    if(node.ChildNodes.Count > 0)
+    if (node.ChildNodes.Count > 0)
+    {
+        node.IsExpanded = true;
         return;
+    }
 
     //Animation starts for expander to show progressing of load on demand
-    node.ShowExpanderAnimation = true;     
+    node.ShowExpanderAnimation = true;
     MusicInfo musicInfo = node.Content as MusicInfo;
     Device.BeginInvokeOnMainThread(async () =>
     {
         await Task.Delay(2000);
-
+        
         //Fetching child items to add
         var items = GetSubMenu(musicInfo.ID);
-
+        
         // Populating child items for the node in on-demand
         node.PopulateChildNodes(items);
-        
         if (items.Count() > 0)
             //Expand the node after child items are added.
             node.IsExpanded = true;
-            
+
         //Animation stopped for expander to show load on demand is executed.
         node.ShowExpanderAnimation = false;
     });
 }
-
 {% endhighlight %}
 {% endtabs %}
 

@@ -29,64 +29,9 @@ TreeView allows you to load child items only when they are requested using Load 
 </ContentPage>
 {% endhighlight %}
 {% highlight c# %}
-
-public MainPage()
-{
-    InitializeComponent();
-}
-    
-{% endhighlight %}
-{% highlight c# %}
-
-// Model class
-public class MusicInfo : INotifyPropertyChanged
-{
-    public string itemName;
-    public int id;
-    public bool hasChildNodes;
-
-    public string ItemName
-    {
-        get { return itemName; }
-        set
-        {
-            itemName = value;
-            OnPropertyChanged("ItemName");
-        }
-    }
-
-    public int ID
-    {
-        get { return id; }
-        set
-        {
-            id = value;
-            OnPropertyChanged("ID");
-        }
-    }
-
-    public bool HasChildNodes
-    {
-        get { return hasChildNodes; }
-        set
-        {
-            hasChildNodes = value;
-            OnPropertyChanged("HasChildNodes");
-        }
-    }
-
-    public event PropertyChangedEventHandler PropertyChanged;
-
-    private void OnPropertyChanged(string propertyName)
-    {
-        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-    }
-}
-
-{% endhighlight %}
-{% highlight c# %}
-
-//ViewModel that implements [Command](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.command?view=xamarin-forms).
+/// <summary>
+/// ViewModel class that implements [Command](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.command?view=xamarin-forms). 
+/// </summary>
 public class MusicInfoRepository
 {
     private ObservableCollection<MusicInfo> menu;
@@ -215,6 +160,55 @@ public class MusicInfoRepository
         return menuItems;
     }
 }
+{% endhighlight %}
+{% highlight c# %}
+/// <summary>
+/// Model
+/// </summary>
+public class MusicInfo : INotifyPropertyChanged
+{
+    public string itemName;
+    public int id;
+    public bool hasChildNodes;
+
+    public string ItemName
+    {
+        get { return itemName; }
+        set
+        {
+            itemName = value;
+            OnPropertyChanged("ItemName");
+        }
+    }
+
+    public int ID
+    {
+        get { return id; }
+        set
+        {
+            id = value;
+            OnPropertyChanged("ID");
+        }
+    }
+
+    public bool HasChildNodes
+    {
+        get { return hasChildNodes; }
+        set
+        {
+            hasChildNodes = value;
+            OnPropertyChanged("HasChildNodes");
+        }
+    }
+
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    private void OnPropertyChanged(string propertyName)
+    {
+        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+    }
+}
+
 {% endhighlight %}
 {% endtabs %}
 

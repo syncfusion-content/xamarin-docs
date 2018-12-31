@@ -14,7 +14,7 @@ This section provides you an overview for working with SfSchedule for Xamarin.Fo
 ## Adding Schedule Reference
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add schedule in your project, open the NugetPackage manager in Visual Studio, and search for [Syncfusion.Xamarin.SfSchedule](https://www.nuget.org/packages/Syncfusion.Xamarin.SfSchedule/) and then install it.
 
-![](GettingStarted_images/installation_image.png)  
+![GettingStarted](GettingStarted_images/installation_image.png)  
 
 To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfschedule) to know about dependent assemblies for schedule. 
 
@@ -83,7 +83,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
     
 This section explains how to create a simple application using SfSchedule control. SfSchedule control can be configured entirely in C# code or by using XAML markup. This is how the final output will look like on iOS, Android and Windows Phone devices.  
     
-![](GettingStarted_images/GettingStarted.png)   
+![GettingStarted](GettingStarted_images/GettingStarted.png)   
 
 You can download the entire source code of this demo for Xamarin.Forms from
 here [ScheduleGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ScheduleGettingStarted285067184.zip)
@@ -99,7 +99,7 @@ This section provides a walks through to create `MeetingRoomScheduler` using our
     
 Create a new Blank App (Xamarin.Forms.Portable) application in Xamarin Studio or Visual Studio.  
     
-Add the required assembly references to the pcl and renderer projects as discussed in the [Assembly Configuration](#assembly-configuration) section.   
+Add the required assembly references to the .NET Standard and renderer projects as discussed in the [Assembly Configuration](#assembly-configuration) section.   
     
 Import SfSchedule control namespace `Syncfusion.SfSchedule.XForms`.   
     
@@ -161,7 +161,7 @@ schedule.FirstDayOfWeek = (int)DayOfWeek.Tuesday;
 {% endhighlight %}  
 {% endtabs %}   
     
-![](GettingStarted_images/FirstDayOfWeek.png)   
+![First Day of week](GettingStarted_images/FirstDayOfWeek.png)   
 
 ### Day View   
     
@@ -176,7 +176,7 @@ schedule.ScheduleView = ScheduleView.DayView;
 {% endhighlight %}   
 {% endtabs %}   
     
-![](GettingStarted_images/DayView.png)   
+![Day View](GettingStarted_images/DayView.png)   
 
 ### Week View   
  
@@ -191,7 +191,7 @@ schedule.ScheduleView = ScheduleView.WeekView;
 {% endhighlight %}   
 {% endtabs %}   
     
-![](GettingStarted_images/WeekView.png)  
+![Week View](GettingStarted_images/WeekView.png)  
 
 ### Work Week View   
  
@@ -206,7 +206,7 @@ schedule.ScheduleView = ScheduleView.WorkWeekView;
 {% endhighlight %}   
 {% endtabs %}   
     
-![](GettingStarted_images/WorkWeek.png)   
+![Work Week View](GettingStarted_images/WorkWeek.png)   
 
 >**NOTE**
 Appointments in non-working days will not be displayed.
@@ -230,7 +230,7 @@ schedule.ShowAppointmentsInline = true;
 {% endhighlight %}   
 {% endtabs %}   
     
-![](GettingStarted_images/MonthView.png)
+![Month View](GettingStarted_images/MonthView.png)
 
 ## Binding data to SfSchedule control   
   
@@ -464,8 +464,8 @@ schedule.DataSource = viewModel.Meetings;
 {% endhighlight %}
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted.png)
+![GettingStarted Schedule](GettingStarted_images/GettingStarted.png)
 
 You can download the entire source code of this demo for Xamarin.Forms from
-here [ScheduleGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartedSample746964196.zip)
+here [ScheduleGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted625882156.zip)
 

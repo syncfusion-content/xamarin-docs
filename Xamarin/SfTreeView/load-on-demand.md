@@ -41,6 +41,7 @@ public MainPage()
 {% endhighlight %}
 {% highlight c# %}
 
+// Model class
 public class MusicInfo : INotifyPropertyChanged
 {
     public string itemName;
@@ -242,7 +243,11 @@ private void ExecuteOnDemandLoading(object obj)
 {
     var node = obj as TreeViewNode;
     
+<<<<<<< HEAD
     // Skip the repeated population of child items when every time the node expands.
+=======
+    // Skip repeated population of nodes.
+>>>>>>> 566069139b688fb718a8a33929833f23a70f119c
     if(node.ChildNodes.Count > 0)
         return;
 

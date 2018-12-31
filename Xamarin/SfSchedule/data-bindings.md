@@ -787,7 +787,7 @@ List<ScheduleAppointment> visibleAppointments = schedule.GetVisibleAppointments(
 {% endtabs %}
 
 ### Get visible appointments from date time:
-You can get the visible appointments in schedule by passing `DateTime` time to `GetVisibleAppointments` method.
+You can get the visible appointments in schedule by passing `DateTime` to `GetVisibleAppointments` method.
 
 {% tabs %}
 {% highlight c# %}
@@ -797,8 +797,8 @@ List<ScheduleAppointment> visibleAppointments = schedule.GetVisibleAppointments(
 
 >**NOTE**
 •	You can get the visible appointments after rendering the schedule only. 
-•	The specified Start/End Time ranges should lie on schedule visible dates range.
-•	`GetVisibleAppointments` method always returns the List<ScheduleAppointment> even if it has a custom appointment collection.
+•	The specified start/end Time ranges should lie on schedule current visible dates range.
+•	`GetVisibleAppointments` method will always returns the `List<ScheduleAppointment>` even if it has a custom appointment collection.
 
 ## Appearance Customization
 The default appearance of the appointment can be customized by using the [AppointmentStyle](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle.html) property and [AppointmentLoadedEvent](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentLoadedEventArgs.html). The event and property is used to customize or override the default template of the Appointments.

@@ -13,8 +13,14 @@ TreeView allows you to load child items only when they are requested using Load 
 
 {% tabs %}
 {% highlight xaml %}
-<ContentPage  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-              xmlns:sfTreeView="clr-namespace:Syncfusion.XForms.TreeView;assembly=Syncfusion.SfTreeView.XForms">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TreeView"
+             xmlns:sfTreeView="clr-namespace:Syncfusion.XForms.TreeView;assembly=Syncfusion.SfTreeView.XForms"
+             x:Class="TreeView.MainPage">
+    <ContentPage.BindingContext>
+        <local:MusicInfoRepository x:Name="viewModel"/>
+    </ContentPage.BindingContext>
     <ContentPage.Content>
         <sfTreeView:SfTreeView x:Name="treeView"
                                LoadOnDemandCommand="{Binding TreeViewOnDemandCommand}"
@@ -23,17 +29,63 @@ TreeView allows you to load child items only when they are requested using Load 
 </ContentPage>
 {% endhighlight %}
 {% highlight c# %}
+
 public MainPage()
 {
     InitializeComponent();
-    var viewModel = new MusicInfoRepository();
+    viewModel = new MusicInfoRepository();
     treeView.LoadOnDemandCommand = viewModel.TreeViewOnDemandCommand;
     treeView.ItemsSource = viewModel.Menu;
 }
     
 {% endhighlight %}
+{% highlight c# %}
 
-{% tabs %}
+public class MusicInfo : INotifyPropertyChanged
+{
+    public string itemName;
+    public int id;
+    public bool hasChildNodes;
+
+    public string ItemName
+    {
+        get { return itemName; }
+        set
+        {
+            itemName = value;
+            OnPropertyChanged("ItemName");
+        }
+    }
+
+    public int ID
+    {
+        get { return id; }
+        set
+        {
+            id = value;
+            OnPropertyChanged("ID");
+        }
+    }
+
+    public bool HasChildNodes
+    {
+        get { return hasChildNodes; }
+        set
+        {
+            hasChildNodes = value;
+            OnPropertyChanged("HasChildNodes");
+        }
+    }
+
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    private void OnPropertyChanged(string propertyName)
+    {
+        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+    }
+}
+
+{% endhighlight %}
 {% highlight c# %}
 
 //ViewModel that implements [Command](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.command?view=xamarin-forms).
@@ -190,11 +242,11 @@ private void ExecuteOnDemandLoading(object obj)
 {
     var node = obj as TreeViewNode;
     
-    // Skip the repeated population of nodes.
+    // Skip the repeated population of child items when every time the node expands.
     if(node.ChildNodes.Count > 0)
         return;
 
-    //Animation starts for expander
+    //Animation starts for expander to show progressing of load on demand
     node.ShowExpanderAnimation = true;     
     MusicInfo musicInfo = node.Content as MusicInfo;
     Device.BeginInvokeOnMainThread(async () =>
@@ -204,14 +256,14 @@ private void ExecuteOnDemandLoading(object obj)
         //Fetching child items to add
         var items = GetSubMenu(musicInfo.ID);
 
-        // Populating child nodes
+        // Populating child items for the node in on-demand
         node.PopulateChildNodes(items);
         
         if (items.Count() > 0)
             //Expand the node after child items are added.
             node.IsExpanded = true;
             
-        //Animation stopped
+        //Animation stopped for expander to show load on demand is excuted.
         node.ShowExpanderAnimation = false;
     });
 }

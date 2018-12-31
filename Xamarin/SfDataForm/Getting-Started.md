@@ -7,7 +7,7 @@ control: SfDataForm
 documentation: ug
 ---
 
-# SfDataForm
+**SfDataForm**
 
 The SfDataForm control helps editing the data fields of any data object. It can be used to develop various forms such as login, reservation, data entry, etc. Key features includes the following:
 
@@ -33,7 +33,7 @@ N> Assemblies can be found in unzipped package location in Mac.
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfDataForm to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfDataForm](https://www.nuget.org/packages/Syncfusion.Xamarin.SfDataForm/), and then install it.
 
-![](SfDataForm_images/DataForm_NuGet.png)
+![Adding  data form nuget reference in Xamarin.Forms DataForm](SfDataForm_images/DataForm_NuGet.png)
 
 To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfdataform) to know about the dependent assemblies for SfDataForm.
 
@@ -310,7 +310,7 @@ dataForm.DataObject = new ContactsInfo();
 
 Now, run the application to render the `data form` to edit the data object as in the following screenshot:
 
-![](SfDataForm_images/Overview.png)
+![Setting data object to data form in Xamarin.Forms DataForm](SfDataForm_images/Overview.png)
 
 You can download the entire source code of this demo for Xamarin.Forms from here [DataFormGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DataForm_GettingStarted-881780431.zip).
 
@@ -365,6 +365,15 @@ Generated for the DataTime type property.
 <tr>
 <td>
 {{'[DataFormPickerItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormPickerItem.html)'| markdownify }}
+</td>
+<td>
+Generated for the Enum type property.
+[EnumDataTypeAttribute]
+</td>
+</tr>
+<tr>
+<td>
+{{'[DataFormSegmentItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormSegmentItem.html)'| markdownify }}
 </td>
 <td>
 Generated for the Enum type property.
@@ -480,7 +489,7 @@ Segment
 Enum type property.
 </td>
 <td>
-SegmentControl
+SfSegmentedControl
 </td>
 </tr>
 <tr>
@@ -561,7 +570,7 @@ dataForm.LabelPosition = LabelPosition.Top;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/LabelPosition.png)
+![Setting label position to data form item in Xamarin.Forms DataForm](SfDataForm_images/LabelPosition.png)
 
 ### Grid layout
 
@@ -580,7 +589,7 @@ dataForm.ColumnCount = 2;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/ColumnCount.png)
+![Setting column count to data form in Xamarin.Forms DataForm](SfDataForm_images/ColumnCount.png)
 
 ## Editing
 

@@ -142,7 +142,7 @@ Segment
 Enum type property.
 </td>
 <td>
-SegmentControl
+SfSegmentedControl
 </td>
 </tr>
 <tr>
@@ -239,7 +239,7 @@ SfRadioGroup
 
 In the text editor, the [Entry](https://developer.xamarin.com/guides/xamarin-forms/user-interface/text/entry/) is loaded.
 
-## MultiLine Text editor
+## Multiline Text editor
 
 In the `MultilineText` editor, the [Editor](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.editor?view=xamarin-forms) is loaded.
 
@@ -339,6 +339,101 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endtabs %}
 
 ![Setting maximum date for data form date item in Xamarin.Forms DataForm](SfDataForm_images/Editors_DateMaximum.png)
+
+## Segment editor
+
+In segment editor, the [SfSegmentedControl](https://help.syncfusion.com/xamarin/sfsegmentedcontrol/overview) is loaded, and DataForm `Segment` editor supports to `enum` and `List` data type properties.
+
+To add `Segment` editor in DataForm, register the editor as `Segment` for the required property using the [RegisterEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~RegisterEditor(String,String).html) method.
+
+**Support for enum data type**
+
+By default, the `ItemsSource` for `SfSegmentedControl` is auto-generated for `enum` data types, if the property has been registered for `Segment` editor.
+
+{% tabs %}
+{% highlight c# %}
+
+dataForm.RegisterEditor("SaveTo", "Segment");
+
+private Location saveTo;
+
+[Display(Name = "Save To")]
+public Location SaveTo
+{
+    get { return saveTo; }
+    set { this.saveTo = value; }
+}
+public enum Location
+{
+    Sim,
+    Phone
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+**Customizing ItemsSource of SfSegmentedControl**
+
+For `List` data types, you can set the `ItemsSource` for `SfSegmentedControl` by using the SourceProvider or using ItemsSource property of [DataFormSegmentItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm. DataFormSegmentItem.html).
+
+**Using SourceProvider**
+
+{% tabs %}
+{% highlight c# %}
+
+private string saveTo;
+[Display(Name=”Save To”)]
+public string SaveTo
+{
+    get { return saveTo; }
+	set { this. saveTo = value; }
+}
+
+public class SourceProviderExt : SourceProvider
+{
+    public override IList GetSource(string sourceName)
+    {
+		var list = new List<string>();
+		if(sourceName == "SaveTo")
+		{
+			list.Add("Sim");
+			list.Add("Phone");
+		}
+		return list;
+	}
+}
+
+dataForm.RegisterEditor("SaveTo", "Segment");
+dataForm.SourceProvider = new SourceProviderExt();
+
+{% endhighlight %}
+{% endtabs %}
+
+**Using ItemsSource property of DataFormSegmentItem**
+
+You can also set `ItemsSource` for segment editor by using the [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormSegmentItem~ItemsSource.html) property in the [DataFormSegmentItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm. DataFormSegmentItem.html).
+
+{% tabs %}
+{% highlight c# %}
+
+dataForm.RegisterEditor("SaveTo", "Segment");
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null && e.DataFormItem.Name == "SaveTo")
+    {
+		var list = new List<string>();
+		list.Add("Sim");
+		list.Add("Phone");
+		(e.DataFormItem as DataFormSegmentItem).ItemsSource = list;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Loading segment editor to data form segment item in Xamarin.Forms DataForm](SfDataForm_images/SegmentEditor.jpg)
 
 ## Drop down editor
 

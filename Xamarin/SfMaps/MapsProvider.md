@@ -407,7 +407,6 @@ The [`DeleteTilesFromCache`](https://help.syncfusion.com/cr/cref_files/xamarin/S
 
 {% endtabs %}
 
-
 ## Events
 
 The [`ZoomLevelChanging`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs.html) event triggers when zoom level changed. Following arguments can be get from the ZoomLevelChanging event .
@@ -440,6 +439,45 @@ The [`ZoomLevelChanging`](https://help.syncfusion.com/cr/cref_files/xamarin/Sync
                var CurrentLevel = e.CurrentLevel; // Returns the current zoomed level
            }
         }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Events
+
+The [`GeoCoordinateChanged`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ImageryLayer~GeoCoordinateChanged_EV.html) event is triggered while zooming and panning the maps.
+
+The following arguments can be gotten from the `ImageryLayer_GeoCoordinateChanged` event: 
+
+* [`Center`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.GeoCoordinateChangedEventArgs~Center.html): Returns the center Geo coordinate point of the visual tiles while zooming and panning.
+* [`TopLeft`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.GeoCoordinateChangedEventArgs~TopLeft.html):  Returns the top-left Geo coordinate point of the visual tiles while zooming and panning.
+* [`TopRight`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.GeoCoordinateChangedEventArgs~TopRight.html): Returns the top-right Geo coordinate point of the visual tiles while zooming and panning.
+* [`BottomLeft`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.GeoCoordinateChangedEventArgs~BottomLeft.html): Returns the bottom-left Geo coordinate point of the visual tiles while zooming and panning.
+* [`BottomRight`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.GeoCoordinateChangedEventArgs~BottomRight.html): Returns the bottom-right Geo coordinate point of the visual tiles while zooming and panning.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<maps:SfMaps >
+    <maps:SfMaps.Layers >
+        <maps:ImageryLayer GeoCoordinateChanged="ImageryLayer_GeoCoordinateChanged"/>       
+    </maps:SfMaps.Layers>
+</maps:SfMaps>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+private void ImageryLayer_GeoCoordinateChanged(object sender, GeoCoordinateChangedEventArgs e)
+{
+    var topLeft = e.TopLeft;
+    var topRight = e.TopRight;
+    var bottomLeft = e.BottomLeft;
+    var bottomRight = e.BottomRight;
+    var center = e.Center;
+}
 
 {% endhighlight %}
 

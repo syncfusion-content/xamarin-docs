@@ -92,6 +92,10 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
     assembliesToInclude.Add(typeof(SfDataFormRenderer).GetTypeInfo().Assembly);
     assembliesToInclude.Add(typeof(SfNumericTextBoxRenderer).GetTypeInfo().Assembly);
     assembliesToInclude.Add(typeof(SfNumericUpDownRenderer).GetTypeInfo().Assembly);
+	assembliesToInclude.Add(typeof(SfSegmentedControlRenderer).GetTypeInfo().Assembly);
+    assembliesToInclude.Add(typeof(SfComboBoxRenderer).GetTypeInfo().Assembly);
+    assembliesToInclude.Add(typeof(SfCheckBoxRenderer).GetTypeInfo().Assembly);
+    assembliesToInclude.Add(typeof(SfRadioButtonRenderer).GetTypeInfo().Assembly);
 
     // replaces Xamarin.Forms.Forms.Init(e);        
     Xamarin.Forms.Forms.Init(e, assembliesToInclude);

@@ -29,7 +29,7 @@ Text
 The String type property and any other type apart from the below specified cases.
 </td>
 <td>
-Entry
+[Entry](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry?view=xamarin-forms)
 </td>
 </tr>
 <tr>
@@ -44,7 +44,7 @@ The String type property with multi line text.
 [DataType(DataType.MultilineText)]
 </td>
 <td>
-Editor
+[Editor](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.editor?view=xamarin-forms)
 </td>
 </tr>
 <tr>
@@ -58,7 +58,7 @@ Numeric
 The property of Int, Double, Float, Decimal, Long types and also its nullable property.
 </td>
 <td>
-SfNumericTextBox
+[SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview)
 </td>
 </tr>
 <tr>
@@ -72,7 +72,7 @@ Percent
 The property of Int, Double, Float, Decimal, Long types and also its nullable property with [DataType(“Percent”)] attribute.
 </td>
 <td>
-SfNumericTextBox
+[SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview)
 </td>
 </tr>
 <tr>
@@ -86,7 +86,7 @@ Currency
 The property of Int, Double, Float, Decimal, Long types and also its nullable property with [DataType(DataType.Currency)] attribute.
 </td>
 <td>
-SfNumericTextBox
+[SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview)
 </td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ Date
 DateTime type property and the property with [DataType(DataType.Date)] and [DataType(DataType.DateTime)] attributes.
 </td>
 <td>
-DatePicker
+[DatePicker](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.datepicker?view=xamarin-forms)
 </td>
 </tr>
 <tr>
@@ -114,7 +114,7 @@ Time
 The property with [DataType(DataType.Time)] attribute.
 </td>
 <td>
-TimePicker
+[TimePicker](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.timepicker?view=xamarin-forms)
 </td>
 </tr>
 <tr>
@@ -128,7 +128,7 @@ NumericUpDown
 Int or Double type property.
 </td>
 <td>
-SfNumericUpDown
+[SfNumericUpDown](https://help.syncfusion.com/xamarin/sfnumericupdown/overview)
 </td>
 </tr>
 <tr>
@@ -142,7 +142,7 @@ Segment
 Enum type property.
 </td>
 <td>
-SfSegmentedControl
+[SfSegmentedControl](https://help.syncfusion.com/xamarin/sfsegmentedcontrol/overview)
 </td>
 </tr>
 <tr>
@@ -156,7 +156,7 @@ Bool
 Bool type property.
 </td>
 <td>
-SfCheckBox
+[SfCheckBox](https://help.syncfusion.com/xamarin/sfcheckbox/overview)
 </td>
 </tr>
 <tr>
@@ -170,7 +170,7 @@ Switch
 Bool type property.
 </td>
 <td>
-Switch
+[Switch](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.switch?view=xamarin-forms)
 </td>
 </tr>
 <tr>
@@ -185,7 +185,7 @@ Enum and List type property.
 [EnumDataTypeAttribute]
 </td>
 <td>
-Picker
+[Picker](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.picker?view=xamarin-forms)
 </td>
 </tr>
 <tr>
@@ -200,7 +200,7 @@ Enum and List type property.
 [EnumDataTypeAttribute]
 </td>
 <td>
-DropDownControl
+[DropDownControl](https://help.syncfusion.com/xamarin/sfcombobox/overview)
 </td>
 </tr>
 <tr>
@@ -215,7 +215,7 @@ The String type property and property with
 [DataType(DataType.Password)] attribute.
 </td>
 <td>
-Entry
+[Entry]((https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry?view=xamarin-forms))
 </td>
 </tr>
 <tr>
@@ -230,7 +230,7 @@ Enum and List type property.
 [EnumDataTypeAttribute]
 </td>
 <td>
-SfRadioGroup
+[SfRadioGroup]((https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfRadioGroup.html) control is loaded.)
 </td>
 </tr>
 </table>
@@ -451,14 +451,14 @@ public bool RegisteredMember { get; set; }
 {% endhighlight %}
 {% endtabs %}
 
-![Loading check box editor in Xamarin.Forms DataForm](SfDataForm_images/CheckBoxEditor.jpg)
+![Loading CheckBox editor in Xamarin.Forms DataForm](SfDataForm_images/CheckBoxEditor.jpg)
 
 **Visual states of SfCheckBox**
 
-SfCheckBox maintains the following three visual states:
-  - Checked: Determines the property value as true.
-  - UnChecked: Determines the property value as false.
-  - Intermediate: Determines the property value as null
+SfCheckBox support three visual states.
+  - Checked
+  - UnChecked
+  - Intermediate
 
 {% tabs %}
 {% highlight c# %}
@@ -508,7 +508,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 **Setting SfCheckBox caption text**
 
-You can customize the appearance of display text in `SfCheckBox` using the `Text` property of the `DataFormCheckBoxItem` event.
+You can customize the appearance of display text in `SfCheckBox` using the `Text` property of the `DataFormCheckBoxItem`.
 
 {% tabs %}
 {% highlight c# %}
@@ -533,7 +533,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![Setting cation text for check box editor in Xamarin.Forms DataForm](SfDataForm_images/CheckBoxEditorText.jpg)
+![Setting caption text for check box editor in Xamarin.Forms DataForm](SfDataForm_images/CheckBoxEditorText.jpg)
 
 ## Drop down editor
 

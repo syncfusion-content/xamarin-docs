@@ -405,7 +405,7 @@ Text
 The String type property and any other type apart from the following specified cases.
 </td>
 <td>
-Entry
+[Entry](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry?view=xamarin-forms)
 </td>
 </tr>
 <tr>
@@ -417,7 +417,7 @@ The String type property with multi line text.
 [DataType(DataType.Multiline)] 
 </td>
 <td>
-Editor
+[Editor](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.editor?view=xamarin-forms)
 </td>
 </tr>
 <tr>
@@ -428,7 +428,7 @@ Numeric
 Int or Double type property.
 </td>
 <td>
-SfNumericTextBox
+[SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview)
 </td>
 </tr>
 <tr>
@@ -440,7 +440,7 @@ The Int or Double type Property with percent value.
 [DataType("Percent")]].
 </td>
 <td>
-SfNumericTextBox
+[SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview)
 </td>
 </tr>
 <tr>
@@ -452,7 +452,7 @@ The Int or Double type property with currency value.
 [DataType(DataType.Currency)].
 </td>
 <td>
-SfNumericTextBox
+[SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview)
 </td>
 </tr>
 <tr>
@@ -465,7 +465,7 @@ The DateTime type property with date value.
 [DataType(DataType.DateTime)]
 </td>
 <td>
-DatePicker
+[DatePicker](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.datepicker?view=xamarin-forms)
 </td>
 </tr>
 <tr>
@@ -476,7 +476,7 @@ Time
 Property with [DataType(DataType.Time)] attribute.
 </td>
 <td>
-TimePicker
+[TimePicker](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.timepicker?view=xamarin-forms)
 </td>
 </tr>
 <tr>
@@ -487,7 +487,7 @@ NumericUpDown
 Int or Double type property.
 </td>
 <td>
-SfNumericUpDown
+[SfNumericUpDown](https://help.syncfusion.com/xamarin/sfnumericupdown/overview)
 </td>
 </tr>
 <tr>
@@ -498,7 +498,7 @@ Segment
 Enum type property.
 </td>
 <td>
-SfSegmentedControl
+[SfSegmentedControl](https://help.syncfusion.com/xamarin/sfsegmentedcontrol/overview)
 </td>
 </tr>
 <tr>
@@ -509,7 +509,7 @@ Bool
 Bool type property.
 </td>
 <td>
-SfCheckBox
+[SfCheckBox](https://help.syncfusion.com/xamarin/sfcheckbox/overview)
 </td>
 </tr>
 <tr>
@@ -520,7 +520,7 @@ Switch
 Bool type property.
 </td>
 <td>
-Switch
+[Switch](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.switch?view=xamarin-forms)
 </td>
 </tr>
 <tr>
@@ -532,7 +532,7 @@ Enum and List type property.
 [EnumDataTypeAttribute]
 </td>
 <td>
-Picker
+[Picker](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.picker?view=xamarin-forms)
 </td>
 </tr>
 <tr>
@@ -544,7 +544,7 @@ Enum and List type property.
 [EnumDataTypeAttribute]
 </td>
 <td>
-DropDownControl
+[DropDownControl](https://help.syncfusion.com/xamarin/sfcombobox/overview)
 </td>
 </tr>
 <tr>
@@ -555,7 +555,7 @@ Password
 The String type property with [DataType(DataType.Password)] attribute.
 </td>
 <td>
-Entry
+[Entry]((https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry?view=xamarin-forms))
 </td>
 </tr>
 </table>

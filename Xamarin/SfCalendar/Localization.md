@@ -34,7 +34,7 @@ You can localize the custom strings (All Day, No Events) used in the calendar co
 {% highlight c# %}
 
   calendar.Locale = new System.Globalization.CultureInfo("pt-PT");
-  CalendarResourceManager.Manager = new System.Resources.ResourceManager("Samplename.Resources.Syncfusion.SfCalendar.XForms", GetType().GetTypeInfo().Assembly);
+  CalendarResourceManager.Manager = new System.Resources.ResourceManager("Sample name.Resources.Syncfusion.SfCalendar.XForms", GetType().GetTypeInfo().Assembly);
   CultureInfo.CurrentUICulture = new CultureInfo("pt");
 
 {% endhighlight %}

@@ -158,7 +158,7 @@ Bool
 Bool type property.
 </td>
 <td>
-CheckBox
+[SfCheckBox](https://help.syncfusion.com/xamarin/sfcheckbox/overview)
 </td>
 </tr>
 <tr>

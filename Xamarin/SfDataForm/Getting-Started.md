@@ -92,6 +92,10 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
     assembliesToInclude.Add(typeof(SfDataFormRenderer).GetTypeInfo().Assembly);
     assembliesToInclude.Add(typeof(SfNumericTextBoxRenderer).GetTypeInfo().Assembly);
     assembliesToInclude.Add(typeof(SfNumericUpDownRenderer).GetTypeInfo().Assembly);
+	assembliesToInclude.Add(typeof(SfSegmentedControlRenderer).GetTypeInfo().Assembly);
+    assembliesToInclude.Add(typeof(SfComboBoxRenderer).GetTypeInfo().Assembly);
+    assembliesToInclude.Add(typeof(SfCheckBoxRenderer).GetTypeInfo().Assembly);
+    assembliesToInclude.Add(typeof(SfRadioButtonRenderer).GetTypeInfo().Assembly);
 
     // replaces Xamarin.Forms.Forms.Init(e);        
     Xamarin.Forms.Forms.Init(e, assembliesToInclude);
@@ -380,6 +384,15 @@ Generated for the Enum type property.
 [EnumDataTypeAttribute]
 </td>
 </tr>
+<tr>
+<td>
+{{'[DataFormCheckBoxItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormCheckBoxItem.html)'| markdownify }}
+</td>
+<td>
+Generated for the Bool type property.
+[BoolDataTypeAttribute]
+</td>
+</tr>
 </table>
 The following list of editors are supported:
 <table>
@@ -396,7 +409,7 @@ Text
 The String type property and any other type apart from the following specified cases.
 </td>
 <td>
-Entry
+[Entry](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry?view=xamarin-forms)
 </td>
 </tr>
 <tr>
@@ -408,7 +421,7 @@ The String type property with multi line text.
 [DataType(DataType.Multiline)] 
 </td>
 <td>
-Editor
+[Editor](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.editor?view=xamarin-forms)
 </td>
 </tr>
 <tr>
@@ -419,7 +432,7 @@ Numeric
 Int or Double type property.
 </td>
 <td>
-SfNumericTextBox
+[SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview)
 </td>
 </tr>
 <tr>
@@ -431,7 +444,7 @@ The Int or Double type Property with percent value.
 [DataType("Percent")]].
 </td>
 <td>
-SfNumericTextBox
+[SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview)
 </td>
 </tr>
 <tr>
@@ -443,7 +456,7 @@ The Int or Double type property with currency value.
 [DataType(DataType.Currency)].
 </td>
 <td>
-SfNumericTextBox
+[SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview)
 </td>
 </tr>
 <tr>
@@ -456,7 +469,7 @@ The DateTime type property with date value.
 [DataType(DataType.DateTime)]
 </td>
 <td>
-DatePicker
+[DatePicker](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.datepicker?view=xamarin-forms)
 </td>
 </tr>
 <tr>
@@ -467,7 +480,7 @@ Time
 Property with [DataType(DataType.Time)] attribute.
 </td>
 <td>
-TimePicker
+[TimePicker](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.timepicker?view=xamarin-forms)
 </td>
 </tr>
 <tr>
@@ -478,7 +491,7 @@ NumericUpDown
 Int or Double type property.
 </td>
 <td>
-SfNumericUpDown
+[SfNumericUpDown](https://help.syncfusion.com/xamarin/sfnumericupdown/overview)
 </td>
 </tr>
 <tr>
@@ -489,7 +502,7 @@ Segment
 Enum type property.
 </td>
 <td>
-SfSegmentedControl
+[SfSegmentedControl](https://help.syncfusion.com/xamarin/sfsegmentedcontrol/overview)
 </td>
 </tr>
 <tr>
@@ -500,7 +513,7 @@ Bool
 Bool type property.
 </td>
 <td>
-CheckBox
+[SfCheckBox](https://help.syncfusion.com/xamarin/sfcheckbox/overview)
 </td>
 </tr>
 <tr>
@@ -511,7 +524,7 @@ Switch
 Bool type property.
 </td>
 <td>
-Switch
+[Switch](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.switch?view=xamarin-forms)
 </td>
 </tr>
 <tr>
@@ -523,7 +536,7 @@ Enum and List type property.
 [EnumDataTypeAttribute]
 </td>
 <td>
-Picker
+[Picker](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.picker?view=xamarin-forms)
 </td>
 </tr>
 <tr>
@@ -535,7 +548,7 @@ Enum and List type property.
 [EnumDataTypeAttribute]
 </td>
 <td>
-DropDownControl
+[DropDownControl](https://help.syncfusion.com/xamarin/sfcombobox/overview)
 </td>
 </tr>
 <tr>
@@ -546,7 +559,7 @@ Password
 The String type property with [DataType(DataType.Password)] attribute.
 </td>
 <td>
-Entry
+[Entry]((https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry?view=xamarin-forms))
 </td>
 </tr>
 </table>

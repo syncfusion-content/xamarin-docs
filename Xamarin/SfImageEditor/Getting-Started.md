@@ -164,5 +164,4 @@ N> Refer to this [link](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/u
 
 ![SfImageEditor](ImageEditor_images/Gettingstarted.png)
 
-This demo can be downloaded from this [link]
-(http://www.syncfusion.com/downloads/support/directtrac/general/ze/IESample1905385738.zip)
+You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/IESample-621789615)

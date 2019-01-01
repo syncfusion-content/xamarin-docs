@@ -170,7 +170,7 @@ Add the following XAML code in the MainPage.xaml in the portable project.
 
 The sample that illustrates loading a PDF in MVVM binding can be downloaded from the link below. 
 
-<http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted643780204> 
+<http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-2072455774> 
 
 ### Loading a PDF in code-behind
 

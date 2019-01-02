@@ -217,7 +217,7 @@ Create a new blank (Xamarin.Forms.Portable) application in Xamarin Studio or Vis
 
 ## Adding the SfListView in Xamarin.Forms 
 
- 1. Add the required assembly references to the PCL, and renderer projects as discussed in the [Assembly deployment](#assembly-deployment) section.
+ 1. Add the required assembly references to the corresponding projects as discussed in the [Assembly deployment](#assembly-deployment) section.
  2. Import the SfListView control namespace Syncfusion.ListView.XForms.
  3. Set the SfListView control to the ContentPage.
 

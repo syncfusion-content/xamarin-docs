@@ -116,7 +116,7 @@ In this section, you will create Xamarin.Forms application with `SfDataForm`. Th
 
 ### Creating the project
 
-Create a new BlankApp (Xamarin.Forms.Portable) application in Xamarin Studio or Visual Studio for Xamarin.Forms.
+Create a new BlankApp (.Net Standard) application in Xamarin Studio or Visual Studio for Xamarin.Forms.
 
 ### Adding data form in Xamarin.Forms
 
@@ -316,7 +316,7 @@ Now, run the application to render the `data form` to edit the data object as in
 
 ![Setting data object to data form in Xamarin.Forms DataForm](SfDataForm_images/Overview.png)
 
-You can download the entire source code of this demo for Xamarin.Forms from here [DataFormGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DataForm_GettingStarted-881780431.zip).
+You can download the entire source code of this demo for Xamarin.Forms from here [DataFormGettingStarted](https://github.com/SyncfusionExamples/xamarin.forms-DataForm-getting-started/).
 
 ## Defining editors
 

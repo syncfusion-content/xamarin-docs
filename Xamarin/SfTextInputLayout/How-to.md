@@ -41,9 +41,6 @@ inputLayout.InputView = new Entry() { Text = "John" };
 
 {% endtabs %}
 
-![focused stroke width](PopupLayout_images/ShowHeader_False.png)
-
-
 >**NOTE**
 It is applicable for the bottom line and outline border when setting the container type as filled and outlined respectively.
 

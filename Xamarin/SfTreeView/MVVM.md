@@ -204,10 +204,7 @@ public class CommandViewModel
 
 ### Expand command
 
-The `ExpandCommand` will be triggered whenever the [TreeViewNode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode.html) is being expanded.
-
-To enable the ExpandCommand action, return the 'CanExecute' method of the `ExpandCommand` to true.
-To disable the ExpandCommand action, return the ‘CanExecute’ method of the `ExpandCommand` to false.
+The `ExpandCommand` will be triggered while expanding the node. TreeView expand the node based on the return value of `CanExecute` method implementation of ExpandCommand. If you return false, then expand action will be cancelled. `Execute` method implementation of `ExpandCommand` will get called after expanding of node.
 
 {% tabs %}
 {% highlight c# %}
@@ -226,17 +223,17 @@ public class CommandViewModel
 
     public CommandViewModel()
     {            
-        ExpandingCommand = new Command<object>(ExpandCommandAction, CanExecute);
+        ExpandingCommand = new Command<object>(ExecuteMethod, CanExecute);
     }
 
     public bool CanExecute(object obj)
     {
-        return false;
+        return true;
     }
 
-    private void ExpandCommandAction(object obj)
+    private void ExecuteMethod(object obj)
     {
-            App.Current.MainPage.DisplayAlert("Alert", (obj.AddedItems[0] as Countries).Name + " is Expanded", "OK");
+            App.Current.MainPage.DisplayAlert("Alert", "TreeView node is Expanded", "OK");
     }   
 }
 {% endhighlight %}
@@ -244,10 +241,7 @@ public class CommandViewModel
 
 ### Collapse command
 
-The `CollapseCommand` will be triggered whenever the [TreeViewNode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode.html) is being collapsed.
-
-To enable the CollapseCommand, return the 'CanExecute' method of the `CollapseCommand` to true.
-To disable the CollapseCommand, return the ‘CanExecute’ method of the `CollapseCommand` to false.
+The `CollapseCommand` will be triggered while collapsing the node. TreeView collapse the node based on the return value of `CanExecute` method implementation of CollapseCommand. If you return false, then collapse action will be cancelled. `Execute` method implementation of `CollapseCommand` will get called after collapsing of node.
 
 {% tabs %}
 {% highlight c# %}
@@ -266,7 +260,7 @@ public class CommandViewModel
 	
 	public CommandViewModel()
 	{
-		CollapsingCommand = new Command<object>(CollapseCommandAction, CanExecute);
+		CollapsingCommand = new Command<object>(ExecuteMethod, CanExecute);
 	}
 	
     public bool CanExecute(object obj)
@@ -274,9 +268,9 @@ public class CommandViewModel
         return true;
     }
 
-	private void CollapseCommandAction(object obj)
+	private void ExecuteMethod(object obj)
 	{
-		App.Current.MainPage.DisplayAlert("Alert", (obj.AddedItems[0] as Countries).Name + " is Collapsed", "OK");
+		App.Current.MainPage.DisplayAlert("Alert", "TreeView node is Collapsed", "OK");
 	}
 }
 {% endhighlight %}

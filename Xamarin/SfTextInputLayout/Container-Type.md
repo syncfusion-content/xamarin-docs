@@ -38,7 +38,7 @@ inputLayout.InputView = new Entry() { Text = "John" };
 
 {% endtabs %}
 
-![](Container-Type-images/textInput_container_img1.png)
+![Filled type](Container-Type-images/textInput_container_img1.png)
 
 ## Outlined
 
@@ -68,7 +68,7 @@ inputLayout.InputView = new Entry() { Text = "John" };
 
 {% endtabs %}
 
-![](Container-Type-images/textInput_container_img2.png)
+![Outlined type](Container-Type-images/textInput_container_img2.png)
 
 More information to customize the thickness of the stroke for text input layout is in this link.
 
@@ -100,6 +100,6 @@ inputLayout.InputView = new Entry() { Text = "John" };
 
 {% endtabs %}
 
-![](Container-Type-images/textInput_None_Type.png)
+![None type](Container-Type-images/textInput_None_Type.png)
 
 

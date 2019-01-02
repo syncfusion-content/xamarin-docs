@@ -204,7 +204,7 @@ public class CommandViewModel
 
 ### Expand command
 
-The `ExpandCommand` will be triggered while expanding the node. TreeView expand the node based on the return value of `CanExecute` method implementation of ExpandCommand. If you return false, then expand action will be cancelled. `Execute` method implementation of `ExpandCommand` will get called after expanding of node.
+The `ExpandCommand` will be triggered while expanding the node. TreeView expand the node based on the return value of `CanExecute` method implementation of ExpandCommand. If you return false, then expand action will be canceled. `Execute` method implementation of `ExpandCommand` will get called after expanding of node.
 
 {% tabs %}
 {% highlight c# %}
@@ -241,7 +241,7 @@ public class CommandViewModel
 
 ### Collapse command
 
-The `CollapseCommand` will be triggered while collapsing the node. TreeView collapse the node based on the return value of `CanExecute` method implementation of CollapseCommand. If you return false, then collapse action will be cancelled. `Execute` method implementation of `CollapseCommand` will get called after collapsing of node.
+The `CollapseCommand` will be triggered while collapsing the node. TreeView collapse the node based on the return value of `CanExecute` method implementation of CollapseCommand. If you return false, then collapse action will be canceled. `Execute` method implementation of `CollapseCommand` will get called after collapsing of node.
 
 {% tabs %}
 {% highlight c# %}

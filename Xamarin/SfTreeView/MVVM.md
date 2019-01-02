@@ -204,13 +204,31 @@ public class CommandViewModel
 
 ### Expand command
 
-The `ExpandCommand` will be triggered while expanding the node. TreeView expand the node based on the return value of `CanExecute` method implementation of ExpandCommand. If you return false, then expand action will be canceled. `Execute` method implementation of `ExpandCommand` will get called after expanding of node.
+The `ExpandCommand` will be triggered while expanding the node and passing the [TreeViewNode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode.html) as command parameter. TreeView expands the node based on the return value of `CanExecute` method implementation of ExpandCommand. If you return false, then expand action will be canceled. `Execute` method implementation of `ExpandCommand` will get called after expanding of node.
 
 {% tabs %}
+{% highlight xaml %}
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Selection"
+             xmlns:syncfusion="clr-namespace:Syncfusion.XForms.TreeView;assembly=Syncfusion.SfTreeView.XForms"
+             x:Class="Selection.MainPage">
+    <ContentPage.BindingContext>
+        <local:CountriesViewModel x:Name="viewModel"/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <syncfusion:SfTreeView x:Name="treeView"
+                               ExpandCommand="ExpandingCommand" /> 
+    </ContentPage.Content>
+</ContentPage>
+
+{% endhighlight %}
 {% highlight c# %}
 
-treeView.ExpandCommand = viewModel.ExpandingCommand;
-
+/// <summary>
+/// CommandViewModel class that implements [Command](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.command?view=xamarin-forms). 
+/// </summary>
 public class CommandViewModel
 {
     private Command<Object> expandingCommand;
@@ -223,17 +241,27 @@ public class CommandViewModel
 
     public CommandViewModel()
     {            
-        ExpandingCommand = new Command<object>(ExecuteMethod, CanExecute);
+        ExpandingCommand = new Command<object>(ExpandCommandAction, CanExecute);
     }
 
+    /// <summary>
+    /// CanExecute method is called before expanding of node.
+    /// Expand action of the command is handled based on the return value.
+    /// </summary>
+    /// <param name="obj">TreeViewNode is passed as command parameter </param>
     public bool CanExecute(object obj)
     {
+        //You can also return false to skip the execution of expand command action.
         return true;
     }
 
-    private void ExecuteMethod(object obj)
+    /// <summary>
+    /// Expand action method is called when CanExecute returns true.
+    /// </summary>
+    /// <param name="obj">TreeViewNode is passed as commmand parameter </param>
+    private void ExpandCommandAction(object obj)
     {
-            App.Current.MainPage.DisplayAlert("Alert", "TreeView node is Expanded", "OK");
+        App.Current.MainPage.DisplayAlert("Alert", "TreeView node is Expanded", "OK");
     }   
 }
 {% endhighlight %}
@@ -241,13 +269,29 @@ public class CommandViewModel
 
 ### Collapse command
 
-The `CollapseCommand` will be triggered while collapsing the node. TreeView collapse the node based on the return value of `CanExecute` method implementation of CollapseCommand. If you return false, then collapse action will be canceled. `Execute` method implementation of `CollapseCommand` will get called after collapsing of node.
+The `CollapseCommand` will be triggered while collapsing the node and passing the [TreeViewNode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode.html) as commmand parameter. TreeView collapses the node based on the return value of `CanExecute` method implementation of CollapseCommand. If you return false, then collapse action will be canceled. `Execute` method implementation of `CollapseCommand` will get called after collapsing of node.
 
 {% tabs %}
+{% highlight xaml %}
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Selection"
+             xmlns:syncfusion="clr-namespace:Syncfusion.XForms.TreeView;assembly=Syncfusion.SfTreeView.XForms"
+             x:Class="Selection.MainPage">
+    <ContentPage.BindingContext>
+        <local:CountriesViewModel x:Name="viewModel"/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <syncfusion:SfTreeView x:Name="treeView"
+                               CollapseCommand="CollapsingCommand" /> 
+    </ContentPage.Content>
+</ContentPage>
+{% endhighlight %}
 {% highlight c# %}
 
-treeView.CollapseCommand = viewModel.CollapsingCommand;
-
+/// <summary>
+/// CommandViewModel class that implements [Command](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.command?view=xamarin-forms). 
+/// </summary>
 public class CommandViewModel
 {
 	private Command<object> collapsingCommand;
@@ -260,15 +304,25 @@ public class CommandViewModel
 	
 	public CommandViewModel()
 	{
-		CollapsingCommand = new Command<object>(ExecuteMethod, CanExecute);
+		CollapsingCommand = new Command<object>(CollapseCommandAction, CanExecute);
 	}
-	
+
+	/// <summary>
+    /// CanExecute method is called before collapsing of node. 
+    /// Collapse action of the command is handled based on the return value. 
+    /// </summary>
+    /// <param name="obj">TreeViewNode is passed as command parameter </param>
     public bool CanExecute(object obj)
     {
+        //You can also return false to skip the execution of collapse command action.
         return true;
     }
 
-	private void ExecuteMethod(object obj)
+    /// <summary>
+    /// Collapse action method is called when CanExecute returns true.
+    /// </summary>
+    /// <param name="obj">TreeViewNode is passed as commmand parameter </param>
+	private void CollapseCommandAction(object obj)
 	{
 		App.Current.MainPage.DisplayAlert("Alert", "TreeView node is Collapsed", "OK");
 	}

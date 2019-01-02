@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Essential Xamarin.Forms Text Input Layout
+title: Overview of Syncfusion Text Input Layout
 description: What are the key features available in text input layout.
 platform: xamarin
 control: SfTextInputLayout

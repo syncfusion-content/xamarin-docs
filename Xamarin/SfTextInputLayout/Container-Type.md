@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Container Type
+title: Syncfusion TextInputLayout Container Type
 description: How to change the container of text input layout.
 platform: xamarin
 control: SfTextInputLayout

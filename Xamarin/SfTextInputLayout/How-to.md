@@ -44,3 +44,62 @@ inputLayout.InputView = new Entry() { Text = "John" };
 >**NOTE**
 It is applicable for the bottom line and outline border when setting the container type as filled and outlined respectively.
 
+## Customize the corner radius of the outline border 
+
+When setting the OutlineCornerRadius property as double value, the corner radius of the container will be changed.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<inputLayout:SfTextInputLayout
+    Hint="Name" 
+    ContainerType="Outlined"
+	OutlineCornerRadius="8"/>
+ 
+{% endhighlight %}
+
+{% highlight c# %}
+
+var inputLayout = new SfTextInputLayout();
+inputLayout.Hint = "Name";
+inputLayout.ContainerType = ContainerType.Outlined;
+inputLayout.OutlineCornerRadius = 8;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+>**NOTE**
+It is applicable for the outline border when setting the container type as outlined.
+
+## Customize the reserve spaces for assistive labels
+
+The reserved spaces for assistive labels can be removed by setting the ReserveSpaceForAssistiveLabels to false.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<inputLayout:SfTextInputLayout
+    Hint="Name" 
+	HelperText="Enter your name"
+    ContainerType="Outlined"
+	ReserveSpaceForAssistiveLabels="False"/>
+ 
+{% endhighlight %}
+
+{% highlight c# %}
+
+var inputLayout = new SfTextInputLayout();
+inputLayout.Hint = "Name";
+inputLayout.HelperText = "Enter your name";
+inputLayout.ContainerType = ContainerType.Outlined;
+inputLayout.ReserveSpaceForAssistiveLabels = false;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+

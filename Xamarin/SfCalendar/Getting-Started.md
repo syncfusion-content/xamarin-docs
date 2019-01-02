@@ -195,3 +195,6 @@ this.Content = calendar;
 
 
 ![](images/GS.png)
+
+You can download the entire source code of this demo for Xamarin.Forms from
+here [CalendarGettingStarted](https://github.com/SyncfusionExamples/xamarin-calendar-getting-started)

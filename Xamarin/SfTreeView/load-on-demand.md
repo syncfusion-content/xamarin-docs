@@ -246,7 +246,7 @@ You can load child items for the node in [Execute](https://docs.microsoft.com/en
 * When load on-demand command executes expanding operation will not be handled by `TreeView`. So, you have to set [TreeViewNode.IsExpanded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode~IsExpanded.html) property to `true` to expand the tree node after populating child nodes.
 * You can skip population of child items again and again when every time the node expands, based on [TreeViewNode.ChildNodes](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode~ChildNodes.html) count. 
 
-{% endhighlight %}
+{% tabs %}
 {% highlight c# %}
 
 /// <summary>

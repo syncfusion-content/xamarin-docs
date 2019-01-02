@@ -178,6 +178,7 @@ SfRating control provides option to rate the items in full, half and exact value
 
 ![gettingstartedimage](images/gettingstarted.png)
 
+The complete Getting Started sample is available in [this](http://www.syncfusion.com/downloads/support/directtrac/general/ze/RatingSample1550863228) link.
 
 
 

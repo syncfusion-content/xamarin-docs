@@ -468,3 +468,5 @@ Content = layout;
 {% endtabs %}
 
 ![selectionChanged](images/Getting-Started/selectionChangedComboBxo.png)
+
+The complete Getting Started sample is available in [this](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ComboBoxSample1098665757) link.

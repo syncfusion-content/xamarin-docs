@@ -41,12 +41,16 @@ inputLayout.InputView = new Entry() { Text = "John" };
 
 {% endtabs %}
 
+![FocusedStrokeWidth img](How-to-images/FocusedStroke.png)
+
+![UnfocusedStrokeWidth img](How-to-images/UnfocusedStroke.jpg)
+
 >**NOTE**
 It is applicable for the bottom line and outline border when setting the container type as filled and outlined respectively.
 
 ## Customize the corner radius of the outline border 
 
-When setting the OutlineCornerRadius property as double value, the corner radius of the container will be changed.
+When setting the [OutlineCornerRadius](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~OutlineCornerRadiusProperty.html) property as double value, the corner radius of the container will be changed.
 
 {% tabs %}
 
@@ -70,12 +74,14 @@ inputLayout.OutlineCornerRadius = 8;
 
 {% endtabs %}
 
+![OutlineCornerRadius img](How-to-images/OutlineCornerRadius.jpg)
+
 >**NOTE**
 It is applicable for the outline border when setting the container type as outlined.
 
 ## Customize the reserve spaces for assistive labels
 
-The reserved spaces for assistive labels can be removed by setting the ReserveSpaceForAssistiveLabels to false.
+The reserved spaces for assistive labels can be removed by setting the [ReserveSpaceForAssistiveLabels](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~ReserveSpaceForAssistiveLabelsProperty.html) to false.
 
 {% tabs %}
 

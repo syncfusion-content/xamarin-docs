@@ -316,7 +316,7 @@ Now, run the application to render the `data form` to edit the data object as in
 
 ![Setting data object to data form in Xamarin.Forms DataForm](SfDataForm_images/Overview.png)
 
-You can download the entire source code of this demo for Xamarin.Forms from here [DataFormGettingStarted](https://github.com/SyncfusionExamples/xamarin.forms-DataForm-getting-started/tree/Sample-Changes).
+You can download the entire source code of this demo for Xamarin.Forms from here [DataFormGettingStarted](https://github.com/SyncfusionExamples/xamarin.forms-DataForm-getting-started/).
 
 ## Defining editors
 

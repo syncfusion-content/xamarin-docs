@@ -96,5 +96,4 @@ TreeView exposes following events to handle expanding and collapsing of items.
 
 The expanding and collapsing interactions can be handled with the help of `NodeCollapsing` and `NodeExpanding` events and expanded and collapsed interactions can be handled with help of `NodeCollapsed` and `NodeExpanded` events.
 
-
 You can also achieve handle expand and collapse operation using `ExpandCommand` and `CollapseCommand`.

@@ -258,7 +258,7 @@ public class CommandViewModel
     /// <summary>
     /// Expand action method is called when CanExecute returns true.
     /// </summary>
-    /// <param name="obj">TreeViewNode is passed as commmand parameter </param>
+    /// <param name="obj">TreeViewNode is passed as command parameter </param>
     private void ExpandCommandAction(object obj)
     {
         App.Current.MainPage.DisplayAlert("Alert", "TreeView node is Expanded", "OK");
@@ -269,7 +269,7 @@ public class CommandViewModel
 
 ### Collapse command
 
-The `CollapseCommand` will be triggered while collapsing the node and passing the [TreeViewNode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode.html) as commmand parameter. TreeView collapses the node based on the return value of `CanExecute` method implementation of CollapseCommand. If you return false, then collapse action will be canceled. `Execute` method implementation of `CollapseCommand` will get called after collapsing of node.
+The `CollapseCommand` will be triggered while collapsing the node and passing the [TreeViewNode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode.html) as command parameter. TreeView collapses the node based on the return value of `CanExecute` method implementation of CollapseCommand. If you return false, then collapse action will be canceled. `Execute` method implementation of `CollapseCommand` will get called after collapsing of node.
 
 {% tabs %}
 {% highlight xaml %}
@@ -321,7 +321,7 @@ public class CommandViewModel
     /// <summary>
     /// Collapse action method is called when CanExecute returns true.
     /// </summary>
-    /// <param name="obj">TreeViewNode is passed as commmand parameter </param>
+    /// <param name="obj">TreeViewNode is passed as command parameter </param>
 	private void CollapseCommandAction(object obj)
 	{
 		App.Current.MainPage.DisplayAlert("Alert", "TreeView node is Collapsed", "OK");

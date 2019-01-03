@@ -378,7 +378,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![Setting time format to data form time item in Xamarin.Forms DataForm](SfDataForm_images/Editors_TimeFormat.png)
+![Setting time format to data form time item in Xamarin.Forms DataForm](SfDataForm_images/Editors_TimeFormat.jpg)
 
 ## Segment editor
 

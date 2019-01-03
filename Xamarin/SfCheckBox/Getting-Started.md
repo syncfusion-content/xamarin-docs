@@ -325,4 +325,4 @@ private void CheckBox_StateChanged(object sender, StateChangedEventArgs e)
 
 ![Xamarin.Forms CheckBox intermediate state](Images/Inter1.jpg) ![](Images/Inter2.jpg)
 
-This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Forms/Samples/CheckBox_IndeterminateState.zip ).
+This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CheckBox_GettingStarted-1768275699.zip ).

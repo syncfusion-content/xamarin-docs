@@ -251,7 +251,7 @@ public class CommandViewModel
     /// <param name="obj">TreeViewNode is passed as command parameter. </param>
     public bool CanExecute(object obj)
     {
-        //You can also return false to skip the execution of expand command action.
+        //You can also return false to cancel the expand action.
         return true;
     }
 
@@ -261,7 +261,7 @@ public class CommandViewModel
     /// <param name="obj">TreeViewNode is passed as command parameter. </param>
     private void ExpandCommandAction(object obj)
     {
-        App.Current.MainPage.DisplayAlert("Alert", "TreeView node is Expanded", "OK");
+        App.Current.MainPage.DisplayAlert("Alert", "TreeView node is expanded", "OK");
     }   
 }
 {% endhighlight %}
@@ -314,7 +314,7 @@ public class CommandViewModel
     /// <param name="obj">TreeViewNode is passed as command parameter. </param>
     public bool CanExecute(object obj)
     {
-        //You can also return false to skip the execution of collapse command action.
+        //You can also return false to cancel the collapse action.
         return true;
     }
 
@@ -324,7 +324,7 @@ public class CommandViewModel
     /// <param name="obj">TreeViewNode is passed as command parameter. </param>
 	private void CollapseCommandAction(object obj)
 	{
-		App.Current.MainPage.DisplayAlert("Alert", "TreeView node is Collapsed", "OK");
+		App.Current.MainPage.DisplayAlert("Alert", "TreeView node is collapsed", "OK");
 	}
 }
 {% endhighlight %}

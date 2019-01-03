@@ -279,7 +279,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ## Date editor
 
-In the date editor, the [DatePicker](https://developer.xamarin.com/api/type/Xamarin.Forms.DatePicker/) will be loaded.
+In the date editor, the [DatePicker](https://developer.xamarin.com/api/type/Xamarin.Forms.DatePicker/) will be loaded which allows you to select date values.
 
 ### Setting null value in date editor
 
@@ -339,6 +339,46 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endtabs %}
 
 ![Setting maximum date for data form date item in Xamarin.Forms DataForm](SfDataForm_images/Editors_DateMaximum.png)
+
+## Time editor
+
+In the time editor, the [TimePicker](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.timepicker?view=xamarin-forms) will be loaded which allows you to select time values.
+
+**Setting null value in time editor**
+
+In the `TimePicker`, by default `DateTime` data type default value will be displayed (12:00 AM). You can also set the null value by adding nullable `DateTime` data type for the time picker property in data form, which allows you to set the null value and display the empty value in time editor. 
+
+{% tabs %}
+{% highlight c# %}
+
+[DataType(DataType.Time)
+[Display(Name = "Birth Time")]
+public DateTime? BirthTime { get; set; }
+
+{% endhighlight %}
+{% endtabs %}
+
+![Setting nullable time to data form item in Xamarin.Forms DataForm](SfDataForm_images/Time_Nullable.jpg)
+
+**Customizing format in time editor**
+
+In the `TimePicker`, short time will be shown by default. You can change the applied format by setting the [Format]( https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormTimeItem~Format.html) property in [DataFormTimeItem]( https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormTimeItem.html).
+
+{% tabs %}
+{% highlight c# %}
+
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null && e.DataFormItem.Name == "BirthTime")
+        (e.DataFormItem as DataFormTimeItem).Format = "HH:mm";
+} 
+
+{% endhighlight %}
+{% endtabs %}
+
+![Setting time format to data form time item in Xamarin.Forms DataForm](SfDataForm_images/Editors_TimeFormat.png)
 
 ## Segment editor
 

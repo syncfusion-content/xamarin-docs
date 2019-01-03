@@ -192,7 +192,7 @@ This page lists the assemblies required for each control to be referred in each 
 <table>
 <tr>
 <td>PCL</td>
-<td>Syncfusion.Calculate.Portable.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+<td>Syncfusion.Calculate.Portable.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 </table>
 
@@ -472,7 +472,7 @@ Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.macOS.dll<br/>Syncfusion.L
 <table>
 <tr>
 <td>PCL</td>
-<td>Syncfusion.DataSource.Portable.dll</br>Syncfusion.Core.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+<td>Syncfusion.DataSource.Portable.dll</br>Syncfusion.Licensing.dll<br/></td>
 </tr>
 </table>
 
@@ -573,7 +573,7 @@ Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.macOS.dll<br/>Syncfusion.L
 <table>
 <tr>
 <td>PCL</td>
-<td>Syncfusion.DocIO.Portable.dll<br/>Syncfusion.Compression.Portable.dll<br/>Syncfusion.OfficeChart.Portable.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+<td>Syncfusion.DocIO.Portable.dll<br/>Syncfusion.Compression.Portable.dll<br/>Syncfusion.OfficeChart.Portable.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 </table>
 
@@ -903,7 +903,7 @@ Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.macOS.dll<br/>Syncfusion.L
 <table>
 <tr>
 <td>PCL</td>
-<td>Syncfusion.Pdf.Portable.dll<br/>Syncfusion.Compression.Portable.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+<td>Syncfusion.Pdf.Portable.dll<br/>Syncfusion.Compression.Portable.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 </table>
 
@@ -1004,7 +1004,7 @@ Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.macOS.dll<br/>Syncfusion.L
 <table>
 <tr>
 <td>PCL</td>
-<td>Syncfusion.Presentation.Portable.dll<br/>Syncfusion.Compression.Portable.dll<br/>Syncfusion.OfficeChart.Portable.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+<td>Syncfusion.Presentation.Portable.dll<br/>Syncfusion.Compression.Portable.dll<br/>Syncfusion.OfficeChart.Portable.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 </table>
 
@@ -1440,7 +1440,7 @@ Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.macOS.dll<br/>Syncfusion.L
 <table>
 <tr>
 <td>PCL</td>
-<td>Syncfusion.XlsIO.Portable.dll<br/>Syncfusion.Compression.Portable.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+<td>Syncfusion.XlsIO.Portable.dll<br/>Syncfusion.Compression.Portable.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 </table>
 

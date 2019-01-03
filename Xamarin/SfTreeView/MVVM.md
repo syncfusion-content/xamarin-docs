@@ -246,8 +246,8 @@ public class CommandViewModel
 
     /// <summary>
     /// CanExecute method is called before expanding of node.
-    /// Expand action of the command is handled based on the return value.
     /// </summary>
+    /// <returns>Handle expand action by returning true or false </returns>
     /// <param name="obj">TreeViewNode is passed as command parameter </param>
     public bool CanExecute(object obj)
     {
@@ -256,7 +256,7 @@ public class CommandViewModel
     }
 
     /// <summary>
-    /// Expand action method is called when CanExecute returns true.
+    /// Method gets called after expanding action performed.
     /// </summary>
     /// <param name="obj">TreeViewNode is passed as command parameter </param>
     private void ExpandCommandAction(object obj)
@@ -309,8 +309,8 @@ public class CommandViewModel
 
 	/// <summary>
     /// CanExecute method is called before collapsing of node. 
-    /// Collapse action of the command is handled based on the return value. 
     /// </summary>
+    /// <returns>Handle collapse action by returning true or false </returns>
     /// <param name="obj">TreeViewNode is passed as command parameter </param>
     public bool CanExecute(object obj)
     {
@@ -319,7 +319,7 @@ public class CommandViewModel
     }
 
     /// <summary>
-    /// Collapse action method is called when CanExecute returns true.
+    /// Method gets called after collapsing action performed.
     /// </summary>
     /// <param name="obj">TreeViewNode is passed as command parameter </param>
 	private void CollapseCommandAction(object obj)

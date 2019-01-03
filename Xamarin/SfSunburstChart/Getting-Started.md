@@ -800,5 +800,5 @@ The following screenshot depicts the final output.
 
 ![SfSunburstChart with data label and legend](Getting-Started_images/gettingstarted.png)
 
-You can find the complete getting started sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SunburstDemo691514630).
+You can find the complete getting started sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Sunburst_Sample-1965856985).
 

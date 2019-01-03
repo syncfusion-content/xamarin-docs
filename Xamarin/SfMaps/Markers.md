@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Markers
+title: Markers in Syncfusion Map control
 description: This section describes about map marker.
 platform: xamarin
 control: SfMaps
@@ -154,7 +154,7 @@ The shape of a marker icon can be customized using the [`MarkerIcon`](https://he
 
 {% endtabs %}
 
-![](Images/Marker_icon_type.png)
+![Marker Icon Image](Images/Marker_icon_type.png)
 
 ### Setting image marker icon
 
@@ -236,7 +236,7 @@ You can pin an image as marker icon by setting the icon type as `Image`. Set [`I
 
 {% endtabs %}
 
-![](Images/Marker_icon_type_image.png)
+![Marker Icon Types](Images/Marker_icon_type_image.png)
 
 ### Customizing labels
 
@@ -310,7 +310,7 @@ SfMaps map = new SfMaps();
 
 {% endtabs %}
 
-![](Images/Markers_img4.jpeg)
+![Marker customization](Images/Markers_img4.jpeg)
 
 ## Custom marker
 
@@ -463,7 +463,7 @@ ImageName = ImageSource.FromResource("MapsSample.pin.png");
 
 {% endtabs %}
 
-![](Images/Markers_img5.jpeg)
+![Custom Marker Image](Images/Markers_img5.jpeg)
 
 ## Events
 
@@ -520,5 +520,5 @@ private void Layer_MarkerSelected(object sender, MarkerSelectedEventArgs e)
 
 {% endtabs %}
 
-![](Images/MarkerSelected.png)
+![Marker Selected Image](Images/MarkerSelected.png)
 

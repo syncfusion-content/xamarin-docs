@@ -74,7 +74,7 @@ inputLayout.OutlineCornerRadius = 8;
 
 {% endtabs %}
 
-![OutlineCornerRadius img](How-to-images/OutlineCornerRadius.jpg)
+![OutlineCornerRadius img](How-to-images/OutlinedCornerRadius.jpg)
 
 >**NOTE**
 It is applicable for the outline border when setting the container type as outlined.

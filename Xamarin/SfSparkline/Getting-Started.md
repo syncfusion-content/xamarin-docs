@@ -124,4 +124,4 @@ lineSparkline.SetBinding(SfSparklineBase.ItemsSourceProperty, "Data");
 
 ![](Getting-Started-image/LineSparkline.png)
 
-You can find the complete getting started sample from this [link.](http://files2.syncfusion.com/Xamarin.Forms/Samples/Sparkline_GettingStarted.zip)
+You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SparkLineSample295325469)

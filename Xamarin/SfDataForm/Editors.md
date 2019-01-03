@@ -29,7 +29,7 @@ Text
 The String type property and any other type apart from the below specified cases.
 </td>
 <td>
-[Entry](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry?view=xamarin-forms)
+{{'[Entry](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -44,7 +44,7 @@ The String type property with multi line text.
 [DataType(DataType.MultilineText)]
 </td>
 <td>
-[Editor](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.editor?view=xamarin-forms)
+{{'[Editor](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.editor?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -58,7 +58,7 @@ Numeric
 The property of Int, Double, Float, Decimal, Long types and also its nullable property.
 </td>
 <td>
-[SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview)
+{{'[SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -72,7 +72,7 @@ Percent
 The property of Int, Double, Float, Decimal, Long types and also its nullable property with [DataType(“Percent”)] attribute.
 </td>
 <td>
-[SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview)
+{{'[SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -86,7 +86,7 @@ Currency
 The property of Int, Double, Float, Decimal, Long types and also its nullable property with [DataType(DataType.Currency)] attribute.
 </td>
 <td>
-[SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview)
+{{'[SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ Date
 DateTime type property and the property with [DataType(DataType.Date)] and [DataType(DataType.DateTime)] attributes.
 </td>
 <td>
-[DatePicker](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.datepicker?view=xamarin-forms)
+{{'[DatePicker](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.datepicker?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -114,7 +114,7 @@ Time
 The property with [DataType(DataType.Time)] attribute.
 </td>
 <td>
-[TimePicker](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.timepicker?view=xamarin-forms)
+{{'[TimePicker](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.timepicker?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -128,7 +128,7 @@ NumericUpDown
 Int or Double type property.
 </td>
 <td>
-[SfNumericUpDown](https://help.syncfusion.com/xamarin/sfnumericupdown/overview)
+{{'[SfNumericUpDown](https://help.syncfusion.com/xamarin/sfnumericupdown/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -142,7 +142,7 @@ Segment
 Enum type property.
 </td>
 <td>
-[SfSegmentedControl](https://help.syncfusion.com/xamarin/sfsegmentedcontrol/overview)
+{{'[SfSegmentedControl](https://help.syncfusion.com/xamarin/sfsegmentedcontrol/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -156,7 +156,7 @@ Bool
 Bool type property.
 </td>
 <td>
-[SfCheckBox](https://help.syncfusion.com/xamarin/sfcheckbox/overview)
+{{'[SfCheckBox](https://help.syncfusion.com/xamarin/sfcheckbox/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -170,7 +170,7 @@ Switch
 Bool type property.
 </td>
 <td>
-[Switch](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.switch?view=xamarin-forms)
+{{'[Switch](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.switch?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -185,7 +185,7 @@ Enum and List type property.
 [EnumDataTypeAttribute]
 </td>
 <td>
-[Picker](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.picker?view=xamarin-forms)
+{{'[Picker](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.picker?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -200,7 +200,7 @@ Enum and List type property.
 [EnumDataTypeAttribute]
 </td>
 <td>
-[DropDownControl](https://help.syncfusion.com/xamarin/sfcombobox/overview)
+{{'[DropDownControl](https://help.syncfusion.com/xamarin/sfcombobox/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -215,7 +215,7 @@ The String type property and property with
 [DataType(DataType.Password)] attribute.
 </td>
 <td>
-[Entry]((https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry?view=xamarin-forms))
+{{'[Entry](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -230,7 +230,7 @@ Enum and List type property.
 [EnumDataTypeAttribute]
 </td>
 <td>
-[SfRadioGroup]((https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfRadioGroup.html) control is loaded.)
+{{'[SfRadioGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfRadioGroup.html)'| markdownify }}
 </td>
 </tr>
 </table>
@@ -374,7 +374,7 @@ public enum Location
 
 **Customizing ItemsSource of SfSegmentedControl**
 
-For `List` data types, you can set the `ItemsSource` for `SfSegmentedControl` by using the SourceProvider or using ItemsSource property of [DataFormSegmentItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm. DataFormSegmentItem.html).
+For `List` data types, you can set the `ItemsSource` for `SfSegmentedControl` by using the SourceProvider or using ItemsSource property of [DataFormSegmentItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormSegmentItem.html).
 
 **Using SourceProvider**
 
@@ -382,7 +382,7 @@ For `List` data types, you can set the `ItemsSource` for `SfSegmentedControl` by
 {% highlight c# %}
 
 private string saveTo;
-[Display(Name=”Save To”)]
+[Display(Name ="Save To")]
 public string SaveTo
 {
     get { return saveTo; }
@@ -411,7 +411,7 @@ dataForm.SourceProvider = new SourceProviderExt();
 
 **Using ItemsSource property of DataFormSegmentItem**
 
-You can also set `ItemsSource` for segment editor by using the [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormSegmentItem~ItemsSource.html) property in the [DataFormSegmentItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm. DataFormSegmentItem.html).
+You can also set `ItemsSource` for segment editor by using the [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormSegmentItem~ItemsSource.html) property in the [DataFormSegmentItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormSegmentItem.html).
 
 {% tabs %}
 {% highlight c# %}

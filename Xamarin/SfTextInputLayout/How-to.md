@@ -87,19 +87,19 @@ The reserved spaces for assistive labels can be removed by setting the [ReserveS
 
 {% highlight xaml %}
 
-<inputLayout:SfTextInputLayout
+<inputLayout:SfTextInputLayout 
+            ContainerType="Outlined" 
             Hint="Name" 
-	        HelperText="Enter your name"
-            ContainerType="Outlined"
-	        ReserveSpaceForAssistiveLabels="False"/>
- 
+            ReserveSpaceForAssistiveLabels="False">
+            <Entry />
+</inputLayout:SfTextInputLayout>
+
 {% endhighlight %}
 
 {% highlight c# %}
 
 var inputLayout = new SfTextInputLayout();
 inputLayout.Hint = "Name";
-inputLayout.HelperText = "Enter your name";
 inputLayout.ContainerType = ContainerType.Outlined;
 inputLayout.ReserveSpaceForAssistiveLabels = false;
 
@@ -107,5 +107,6 @@ inputLayout.ReserveSpaceForAssistiveLabels = false;
 
 {% endtabs %}
 
+![Reserve space for assistive label img](How-to-images/ReserveSpaceAPI.png)
 
 

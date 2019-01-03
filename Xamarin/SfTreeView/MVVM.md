@@ -219,7 +219,7 @@ The `ExpandCommand` will be triggered while expanding the node and passing the [
     </ContentPage.BindingContext>
     <ContentPage.Content>
         <syncfusion:SfTreeView x:Name="treeView"
-                               ExpandCommand="ExpandingCommand" /> 
+                               ExpandCommand="ExpandingCommand"/> 
     </ContentPage.Content>
 </ContentPage>
 
@@ -247,8 +247,8 @@ public class CommandViewModel
     /// <summary>
     /// CanExecute method is called before expanding of node.
     /// </summary>
-    /// <returns>Handle expand action by returning true or false </returns>
-    /// <param name="obj">TreeViewNode is passed as command parameter </param>
+    /// <returns>Handle expand action by returning true or false. </returns>
+    /// <param name="obj">TreeViewNode is passed as command parameter. </param>
     public bool CanExecute(object obj)
     {
         //You can also return false to skip the execution of expand command action.
@@ -258,7 +258,7 @@ public class CommandViewModel
     /// <summary>
     /// Method gets called after expanding action performed.
     /// </summary>
-    /// <param name="obj">TreeViewNode is passed as command parameter </param>
+    /// <param name="obj">TreeViewNode is passed as command parameter. </param>
     private void ExpandCommandAction(object obj)
     {
         App.Current.MainPage.DisplayAlert("Alert", "TreeView node is Expanded", "OK");
@@ -283,7 +283,7 @@ The `CollapseCommand` will be triggered while collapsing the node and passing th
     </ContentPage.BindingContext>
     <ContentPage.Content>
         <syncfusion:SfTreeView x:Name="treeView"
-                               CollapseCommand="CollapsingCommand" /> 
+                               CollapseCommand="CollapsingCommand"/> 
     </ContentPage.Content>
 </ContentPage>
 {% endhighlight %}
@@ -310,8 +310,8 @@ public class CommandViewModel
 	/// <summary>
     /// CanExecute method is called before collapsing of node. 
     /// </summary>
-    /// <returns>Handle collapse action by returning true or false </returns>
-    /// <param name="obj">TreeViewNode is passed as command parameter </param>
+    /// <returns>Handle collapse action by returning true or false. </returns>
+    /// <param name="obj">TreeViewNode is passed as command parameter. </param>
     public bool CanExecute(object obj)
     {
         //You can also return false to skip the execution of collapse command action.
@@ -321,7 +321,7 @@ public class CommandViewModel
     /// <summary>
     /// Method gets called after collapsing action performed.
     /// </summary>
-    /// <param name="obj">TreeViewNode is passed as command parameter </param>
+    /// <param name="obj">TreeViewNode is passed as command parameter. </param>
 	private void CollapseCommandAction(object obj)
 	{
 		App.Current.MainPage.DisplayAlert("Alert", "TreeView node is Collapsed", "OK");

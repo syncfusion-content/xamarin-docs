@@ -25,6 +25,18 @@ Finally add this collection of `CalendarInlineEvents` into [DataSource](https://
 
 I> Inline event support can be toggled on / off with `ShowInlineEvents` property.
 
+## InlineViewMode
+
+You can handle the `SfCalendar` month view appointment display by using `InlineViewMode` property of calendar. By default `InlineViewMode` is set as `Inline`. using the `InlineViewMode` you can set the month view appointments display as follows.
+
+* Inline - The Appointments will display on specific date.
+
+* AgendaView - The Appointments will display bottom of the calendar.
+
+## MaximumEventIndicatorCount:
+
+You can customize the number of appointment indicators displayed in month cell using MaximumEventIndicatorCount property of SfCalendar, by default MaximumEventIndicatorCount is 5.
+
 {% tabs %}
 {% highlight xaml %} 
 <?xml version="1.0" encoding="utf-8"?>
@@ -32,7 +44,7 @@ I> Inline event support can be toggled on / off with `ShowInlineEvents` property
     <syncfusion:SfCalendar.BindingContext>
         <local:CalendarViewModel/>
     </syncfusion:SfCalendar.BindingContext>
-    <syncfusion:SfCalendar x:Name="calendar" ViewMode="MonthView" ShowInlineEvents="true" InlineViewMode="Inline" DataSource="{Binding CalendarInlineEvents}">
+    <syncfusion:SfCalendar x:Name="calendar" ViewMode="MonthView" ShowInlineEvents="true" InlineViewMode="Inline" MaximumEventIndicatorCount="1" DataSource="{Binding CalendarInlineEvents}">
     </syncfusion:SfCalendar>
 </ContentPage>
 {% endhighlight %}
@@ -48,12 +60,20 @@ namespace CalendarSample
         public CalendarEventCollection CalendarInlineEvents { get; set; } = new CalendarEventCollection();
         public CalendarViewModel()
         {
-            CalendarInlineEvent events = new CalendarInlineEvent();
-            events.StartTime = new DateTime(2017, 5, 1, 5, 0, 0);
-            events.EndTime = new DateTime(2017, 5, 1, 7, 0, 0);
-            events.Subject = "Go to Meeting";
-            events.Color = Color.Fuchsia;
-            CalendarInlineEvents.Add(events);
+            CalendarInlineEvent event1 = new CalendarInlineEvent();
+            event1.StartTime = new DateTime(2017, 5, 1, 5, 0, 0);
+            event1.EndTime = new DateTime(2017, 5, 1, 7, 0, 0);
+            event1.Subject = "Go to Meeting";
+            event1.Color = Color.Fuchsia;
+
+            CalendarInlineEvent event2 = new CalendarInlineEvent();
+            event2.StartTime = new DateTime(2017, 5, 1, 10, 0, 0);
+            event2.EndTime = new DateTime(2017, 5, 1, 12, 0, 0);
+            event2.Subject = "Planning";
+            event2.Color = Color.Green;
+
+            CalendarInlineEvents.Add(event1);
+            CalendarInlineEvents.Add(event2);
         }
     }
 }
@@ -62,7 +82,7 @@ namespace CalendarSample
 
 N> The Inline function will be available only in MonthView with Single selection mode.
 
-![SfCalendar Inline events](images/events.png)
+![SfCalendar Inline events](images/xamarin.forms-calendar-events.png)
 
 ## Customize inline/agenda view using DataTemplate
 

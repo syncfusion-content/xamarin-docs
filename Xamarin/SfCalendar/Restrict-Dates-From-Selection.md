@@ -1,6 +1,6 @@
 ---
 layout: post
-title: BlackOut Dates support in Syncfusion Calendar control for Xamarin.Forms
+title: Blackout dates | SfCalendar | Xamarin.Forms | Syncfusion
 description: Learn how to set min and max date in calendar
 platform: Xamarin
 control: Calendar
@@ -9,11 +9,11 @@ documentation: ug
 
 # Restrict Dates From Selection
 
-Dates can be restricted or a collection of dates can be blacked out in SfCalendar Control.
+Dates can be restricted or a collection of dates can be blacked out in [SfCalendar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar.html) Control.
 
 ## Range of Min / Max Dates
 
-Visible dates can be restricted between certain range of dates using `MinDate` and `MaxDate` properties available in SfCalendar control. It is applicable in all the calendar views.
+Visible dates can be restricted between certain range of dates using `MinDate` and `MaxDate` properties available in [SfCalendar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar.html) control. It is applicable in all the calendar views.
 
 The inline feature in month view will work only within the min max date range.
 
@@ -37,12 +37,11 @@ DateTime maxDate=new DateTime(2040,12,12);
 calendar.MaxDate=maxDate;
 this.Content = calendar;
 	
-
 {% endhighlight %}
 
 ## Blackout Dates
 
-In SfCalendar, BlackoutDates refers the disabled dates that restrict the user from selecting it. These dates will be marked with slanted Stripes.
+In [SfCalendar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar.html), BlackoutDates refers the disabled dates that restrict the user from selecting it. These dates will be marked with slanted Stripes.
 
 The BlackoutDays can be achieved in two ways.
 
@@ -64,4 +63,4 @@ this.Content = calendar;
 	
 {%  endhighlight %}
 	
-![](images/Blackout.png)
+![BlackoutDate support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-Blackout.png)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Feature comparison across the different platforms of Calendar control for Xamarin.Forms
+title: Feature comparison | SfCalendar | Xamarin.Forms | Syncfusion
 description: Feature comparison
 platform: Xamarin
 control: Calendar
@@ -9,10 +9,11 @@ documentation: ug
 
 # Feature Comparison across the different platforms in Xamarin.
 
-This section covers the features of SfCalendar specific to Android,iOS and UWP platforms. The following comparison table help to find available features are in different platforms.
+This section covers the features of [SfCalendar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar.html) specific to Android,iOS and UWP platforms. The following comparison table help to find available features are in different platforms.
 
 <table>
 
+<tr>
 <th style="color: #ffffff;background-color: #08838C;" align="center" >Features are in SfCalendar</th>
 <th style="color: #ffffff;background-color: #08838C;" align="center" >Android</th>
 <th style="color: #ffffff;background-color: #08838C;" align="center" >iOS</th>
@@ -347,7 +348,7 @@ This section covers the features of SfCalendar specific to Android,iOS and UWP p
 <p>Yes</p>
 </td>
 <td align="center">
-<p>No</p>
+<p>Yes</p>
 </td>
 <td align="center">
 <p>No</p>

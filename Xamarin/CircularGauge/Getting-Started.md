@@ -19,7 +19,7 @@ This section explains the steps required to configure the [`SfCircularGauge`](ht
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfCircularGauge to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfGauge](https://www.nuget.org/packages/Syncfusion.Xamarin.SfGauge), and then install it. 
 
-![](getting-started_images/cg_nuget.png)
+![Xamarin circular gauge nuget](getting-started_images/cg_nuget.png)
 
 To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfcirculargauge) to know about the dependent assemblies for circular gauge.
 
@@ -35,7 +35,7 @@ I> For UWP alone, one more additional step is required if the project is built-i
 
 3. In the Framework tab, ensure Mono.Android and Mono.Android.Export  is checked and click ok.
 
-![](getting-started_images/add_reference.png)
+![Xamarin circular gauge reference](getting-started_images/add_reference.png)
 
 ### Adding namespace for the assemblies
 
@@ -392,6 +392,6 @@ namespace CircularGauge
 
 The following circular gauge is created as a result of the above codes.
  
-![](getting-started_images/default.png)
+![Xamarin circular gauge getting started](getting-started_images/default.png)
 
 You can find the complete getting started sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Gauge-GettingStarted-768663630).

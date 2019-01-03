@@ -777,7 +777,7 @@ here [RecurrenceExceptions](https://github.com/SyncfusionExamples/Create-Recurre
 ## Get visible appointments
 You can get the list of visible appointments by using [GetVisibleAppointments](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~GetVisibleAppointments.html) method available in schedule. It is applicable for all schedule views.
 
-### Get visible appointments from given date time range:
+### Get visible appointments from given date time range
 You can get the visible appointments in schedule by passing the start and end `DateTime` range to `GetVisibleAppointments` method.
 
 {% tabs %}
@@ -786,7 +786,7 @@ List<ScheduleAppointment> visibleAppointments = schedule.GetVisibleAppointments(
 {% endhighlight %}
 {% endtabs %}
 
-### Get visible appointments from date time:
+### Get visible appointments from date time
 You can get the visible appointments in schedule by passing `DateTime` to `GetVisibleAppointments` method.
 
 {% tabs %}

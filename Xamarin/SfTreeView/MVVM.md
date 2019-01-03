@@ -306,7 +306,7 @@ public class CommandViewModel
 	{
 		CollapsingCommand = new Command<object>(CollapseCommandAction, CanExecute);
 	}
-
+    
 	/// <summary>
     /// CanExecute method is called before collapsing of node. 
     /// </summary>

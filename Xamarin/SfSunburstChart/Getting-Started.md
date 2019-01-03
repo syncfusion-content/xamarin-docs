@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started for Essential Xamarin.Forms SfSunburstChart
+title: Getting Started for Essential Syncfusion.Xamarin.Forms SfSunburstChart
 description: This section explains the steps required to populate the sunburst chart with data, data labels, legends and title.
 platform: xamarin
 control: SfSunburstChart

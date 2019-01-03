@@ -19,13 +19,13 @@ When the input view is Unfocused, the [UnfocusedStrokeWidth](https://help.syncfu
 {% highlight xaml %}
 
 <inputLayout:SfTextInputLayout
-    Hint="Name" 
-    ContainerType="Outlined"
-	FocusedStrokeWidth="4"
-	UnfocusedStrokeWidth="2">
-    <Entry Text="John" />
-</inputLayout:SfTextInputLayout>  
- 
+            Hint="Name" 
+            ContainerType="Outlined"
+	        FocusedStrokeWidth="4"
+	        UnfocusedStrokeWidth="2">
+            <Entry Text="John" />
+        </inputLayout:SfTextInputLayout> 
+		
 {% endhighlight %}
 
 {% highlight c# %}
@@ -57,10 +57,10 @@ When setting the [OutlineCornerRadius](https://help.syncfusion.com/cr/cref_files
 {% highlight xaml %}
 
 <inputLayout:SfTextInputLayout
-    Hint="Name" 
-    ContainerType="Outlined"
-	OutlineCornerRadius="8"/>
- 
+            Hint="Name" 
+            ContainerType="Outlined"
+	        OutlineCornerRadius="8"/> 
+			
 {% endhighlight %}
 
 {% highlight c# %}
@@ -88,10 +88,10 @@ The reserved spaces for assistive labels can be removed by setting the [ReserveS
 {% highlight xaml %}
 
 <inputLayout:SfTextInputLayout
-    Hint="Name" 
-	HelperText="Enter your name"
-    ContainerType="Outlined"
-	ReserveSpaceForAssistiveLabels="False"/>
+            Hint="Name" 
+	        HelperText="Enter your name"
+            ContainerType="Outlined"
+	        ReserveSpaceForAssistiveLabels="False"/>
  
 {% endhighlight %}
 

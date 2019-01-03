@@ -45,8 +45,6 @@ this.FrontLayer = new BackdropFrontLayer()
 
 {% endtabs %}
 
-![Flat shape top right corner](CornerShape_images/FrontLayer_CornerShape.jpg)
-
 >**NOTE**
 Flat type shape is not currently available for UWP platform.
 

@@ -116,7 +116,7 @@ In this section, you will create Xamarin.Forms application with `SfDataForm`. Th
 
 ### Creating the project
 
-Create a new BlankApp (Xamarin.Forms.Portable) application in Xamarin Studio or Visual Studio for Xamarin.Forms.
+Create a new BlankApp (.Net Standard) application in Xamarin Studio or Visual Studio for Xamarin.Forms.
 
 ### Adding data form in Xamarin.Forms
 
@@ -316,7 +316,7 @@ Now, run the application to render the `data form` to edit the data object as in
 
 ![Setting data object to data form in Xamarin.Forms DataForm](SfDataForm_images/Overview.png)
 
-You can download the entire source code of this demo for Xamarin.Forms from here [DataFormGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DataForm_GettingStarted-881780431.zip).
+You can download the entire source code of this demo for Xamarin.Forms from here [DataFormGettingStarted](https://github.com/SyncfusionExamples/xamarin.forms-DataForm-getting-started/).
 
 ## Defining editors
 
@@ -409,7 +409,7 @@ Text
 The String type property and any other type apart from the following specified cases.
 </td>
 <td>
-[Entry](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry?view=xamarin-forms)
+{{'[Entry](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -421,7 +421,7 @@ The String type property with multi line text.
 [DataType(DataType.Multiline)] 
 </td>
 <td>
-[Editor](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.editor?view=xamarin-forms)
+{{'[Editor](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.editor?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -432,7 +432,7 @@ Numeric
 Int or Double type property.
 </td>
 <td>
-[SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview)
+{{'[SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -444,7 +444,7 @@ The Int or Double type Property with percent value.
 [DataType("Percent")]].
 </td>
 <td>
-[SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview)
+{{'[SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -456,7 +456,7 @@ The Int or Double type property with currency value.
 [DataType(DataType.Currency)].
 </td>
 <td>
-[SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview)
+{{'[SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -469,7 +469,7 @@ The DateTime type property with date value.
 [DataType(DataType.DateTime)]
 </td>
 <td>
-[DatePicker](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.datepicker?view=xamarin-forms)
+{{'[DatePicker](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.datepicker?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -480,7 +480,7 @@ Time
 Property with [DataType(DataType.Time)] attribute.
 </td>
 <td>
-[TimePicker](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.timepicker?view=xamarin-forms)
+{{'[TimePicker](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.timepicker?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -491,7 +491,7 @@ NumericUpDown
 Int or Double type property.
 </td>
 <td>
-[SfNumericUpDown](https://help.syncfusion.com/xamarin/sfnumericupdown/overview)
+{{'[SfNumericUpDown](https://help.syncfusion.com/xamarin/sfnumericupdown/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -502,7 +502,7 @@ Segment
 Enum type property.
 </td>
 <td>
-[SfSegmentedControl](https://help.syncfusion.com/xamarin/sfsegmentedcontrol/overview)
+{{'[SfSegmentedControl](https://help.syncfusion.com/xamarin/sfsegmentedcontrol/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -513,7 +513,7 @@ Bool
 Bool type property.
 </td>
 <td>
-[SfCheckBox](https://help.syncfusion.com/xamarin/sfcheckbox/overview)
+{{'[SfCheckBox](https://help.syncfusion.com/xamarin/sfcheckbox/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -524,7 +524,7 @@ Switch
 Bool type property.
 </td>
 <td>
-[Switch](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.switch?view=xamarin-forms)
+{{'[Switch](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.switch?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -536,7 +536,7 @@ Enum and List type property.
 [EnumDataTypeAttribute]
 </td>
 <td>
-[Picker](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.picker?view=xamarin-forms)
+{{'[Picker](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.picker?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -548,7 +548,7 @@ Enum and List type property.
 [EnumDataTypeAttribute]
 </td>
 <td>
-[DropDownControl](https://help.syncfusion.com/xamarin/sfcombobox/overview)
+{{'[DropDownControl](https://help.syncfusion.com/xamarin/sfcombobox/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -559,7 +559,19 @@ Password
 The String type property with [DataType(DataType.Password)] attribute.
 </td>
 <td>
-[Entry]((https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry?view=xamarin-forms))
+{{'[Entry](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry?view=xamarin-forms)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+RadioGroup
+</td>
+<td>
+Enum and List type property.
+[EnumDataTypeAttribute]
+</td>
+<td>
+{{'[SfRadioGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfRadioGroup.html)'| markdownify }}
 </td>
 </tr>
 </table>

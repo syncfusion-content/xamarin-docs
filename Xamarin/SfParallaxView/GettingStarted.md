@@ -271,42 +271,6 @@ The following code sample demonstrates how to bind the SfListView to the `Source
 
 N> The size of the `Content` view will automatically be stretched to the size of the `Source` view.
 
-## Customize the parallax view
+![SfParallaxView](ParallaxView_Images/parallaxview.gif)
 
-### Speed
-
-The `Speed` value denotes the scrolling speed of the `Content` added as a background view. Based on the speed value, the background view will scroll along with the foreground view.
-
-{% highlight xaml %}
-
-     <parallax:SfParallaxView Source="{x:Reference Name = listview}" x:Name="parallaxview" Speed="0.5" >
-            <parallax:SfParallaxView.Content>
-                <Image BackgroundColor="Transparent" Source="{Binding Image}" HorizontalOptions="Fill" VerticalOptions="Fill" Aspect="AspectFill" />
-            </parallax:SfParallaxView.Content>
-     </parallax:SfParallaxView>
-
-{% endhighlight %}
-
-### Orientation 
-
-The `Orientation` of the content scrolling can be customized to vertical or horizontal using this property's value.
-
-{% highlight xaml %}
-
-        <Grid>
-          <parallax:SfParallaxView Source="{x:Reference Name = listview}" x:Name="parallaxview" Orientation="Horizontal" >
-            <parallax:SfParallaxView.Content>
-               
-                . . .
-
-            </parallax:SfParallaxView.Content>
-          </parallax:SfParallaxView>
-     
-        <list:SfListView x:Name="listview" Orientation="Horizontal" ItemsSource="{Binding Items}" BackgroundColor="Transparent" ItemSize="100">
-               
-                    . . .
-
-        </list:SfListView>
-        </Grid>
-
-        {% endhighlight %}
+You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ParallaxView_GettingStarted979722583.zip )

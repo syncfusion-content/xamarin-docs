@@ -30,7 +30,7 @@ TreeView allows you to load child items only when they are requested using Load 
 {% endhighlight %}
 {% highlight c# %}
 /// <summary>
-/// ViewModel class that implements [Command](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.command?view=xamarin-forms). 
+/// ViewModel class with <see cref="Command"/> for load on demand. 
 /// </summary>
 public class MusicInfoRepository
 {

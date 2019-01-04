@@ -871,7 +871,7 @@ private void Schedule_OnMonthInlineLoadedEvent(object sender, MonthInlineLoadedE
 ![Month inline appointment details formatting and appearance in schedule xamarin forms](monthview_images/inlineviewstyle.png)
 ![Month inline No Events text customization](monthview_images/No_Events_Customization.png)
 
-Get the complete sample for this [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/InlineCustomization1767459049).
+Get the complete sample for this [here](https://github.com/SyncfusionExamples/Customizing-inline-view-in-Xamarin.Forms-schedule/).
 
 >**NOTE**
 FontAttributes and FontFamily are native to the  platform. Custom font and the font which are not available in the specified platform will not be applied.

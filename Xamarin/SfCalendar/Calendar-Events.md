@@ -83,6 +83,14 @@ The default appearance of the appointment can be customized by using the [Inline
 {% endhighlight %}
 {% endtabs %} 
 
+Inline view mode
+
+![SfCalendar Inline events](images/Xamarin.Forms-Calendar-Inlinetemplate.png)
+
+Agenda view mode
+
+![SfCalendar Inline events](images/Xamarin.Forms-Calendar-Agendatemplate.png)
+
 ## Customize inline/agenda view using Template Selector
 
 Inline template selector can be used to choose a `DataTemplate` at runtime based on the value of a data-bound to inline appointment property through `InlineItemTemplate`. It lets you choose a different data template for each appointment, customizing the appearance of a particular inline appointment based on certain conditions. `DataTemplateSelector` for inline appointment as object and calendar as bindable object.
@@ -160,6 +168,14 @@ Inline template selector can be used to choose a `DataTemplate` at runtime based
 {% endhighlight %}
 {% endtabs %} 
 
+Inline view mode
+
+![SfCalendar Inline events](images/Xamarin.Forms-Calendar-Inlinetemplateselector.png)
+
+Agenda view mode
+
+![SfCalendar Inline events](images/Xamarin.Forms-Calendar-Agendatemplateselector.png)
+
 ## Getting inline/agenda view appointment details
 
 Using  [InlineEvent](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.InlineItemTappedEventArgs~InlineEvent.html) argument in the [InlineItemTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.InlineItemTappedEventArgs.html) 
@@ -176,3 +192,11 @@ private void Calendar_InlineItemTapped(object sender, InlineItemTappedEventArgs 
     } 
 {% endhighlight %}
 {% endtabs %}	
+
+Inline view mode
+
+![SfCalendar Inline events](images/Xamarin.Forms-Calendar-Inlineitemtapped.png)
+
+Agenda view mode
+
+![SfCalendar Inline events](images/Xamarin.Forms-Calendar-Agendaitemtapped.png)

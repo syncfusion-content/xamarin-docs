@@ -120,6 +120,8 @@ private void PDFExport_Clicked(object sender, EventArgs e)
 
 ![Export DataGrid to PDF format with all columns fit in view](SfDataGrid_images/Exporting_img4.png)
 
+N> SfDataGrid cannot export the GridTemplateColumn to PDF or Excel,  since we cannot get the loaded views and draw them with the particular range, values etc from GridTemplateColumn.
+
 ## Exporting options
 
 ### Exclude columns when exporting
@@ -995,6 +997,17 @@ void pdfExport_CellExporting(object sender, DataGridCellPdfExportingEventArgs e)
 {% endtabs %}
 
 ![Customize the cells in a DataGrid while exporting using the CellExporting event](SfDataGrid_images/PDF/CellExporting.png)
+
+## Exporting Unbound rows
+
+By default the unbound rows will not be exported to pdf document. However, You can export the unbound rows to PDF by setting the [DataGridPdfExportOption.ExportUnboundRows](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridPdfExportOption~ExportUnboundRows.html) property as `true`.
+
+{% tabs %}
+{% highlight c# %}
+DataGridPdfExportOption option = new DataGridPdfExportOption();
+option.ExportUnboundRows = true;
+{% endhighlight %}
+{% endtabs %}
 
 ### Exporting unbound columns
 

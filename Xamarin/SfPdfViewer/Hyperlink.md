@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Working with Hyperlink navigation
+title:  Working with Hyperlink navigation | Syncfusion
 description: Working with Hyperlink navigation
 platform: Xamarin
 control: SfPdfViewer

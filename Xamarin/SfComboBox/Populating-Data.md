@@ -23,7 +23,7 @@ Create an instance of string list and populate items as shown in the following c
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30"> 
        <combobox:SfComboBox HeightRequest="40" x:Name="comboBox"> 
-            <combobox:SfComboBox.DataSource>
+            <combobox:SfComboBox.ComboBoxSource>
 					<ListCollection:List x:TypeArguments="x:String">
                           <x:String> Great Britain </x:String>
                           <x:String> Uganda </x:String>
@@ -35,7 +35,7 @@ Create an instance of string list and populate items as shown in the following c
                           <x:String> China </x:String>
                           <x:String> Japan </x:String>
                     </ListCollection:List>
-        	</combobox:SfComboBox.DataSource>
+        	</combobox:SfComboBox.ComboBoxSource>
 	    </combobox:SfComboBox>
 </StackLayout>
 
@@ -64,7 +64,7 @@ countryNames.Add("Japan");
 
 SfComboBox comboBox = new SfComboBox();
 comboBox.HeightRequest = 40;
-comboBox.DataSource = countryNames;
+comboBox.ComboBoxSource = countryNames;
 layout.Children.Add(comboBox); 
 Content = layout;
 
@@ -143,7 +143,7 @@ Now populate this EmployeeViewModel data in SfComboBox control by binding with [
     <local:EmployeeViewModel/>
  </ContentPage.BindingContext>
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DataSource="{Binding EmployeeCollection}" DisplayMemberPath-"Name" />
+	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DataSource="{Binding EmployeeCollection}" DisplayMemberPath="Name" />
 </StackLayout> 
 </ContentPage>
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cards for Essential Xamarin.Forms Kanban
+title: Cards for Essential Xamarin.Forms Kanban | Syncfusion
 description: Kanban Cards
 platform: xamarin
 control: Kanban
@@ -140,3 +140,90 @@ kanban.CardTemplate = cardTemplate;
 {% endtabs %}
 
 ![Template support for cards in Xamarin.Forms Kanban](SfKanban_images/CardTemplate.png)
+
+## Data template selector
+
+You can customize the appearance of each card with different templates based on specific constraints using [`DataTemplateSelector`](https://docs.microsoft.com/en-us/dotnet/api/Xamarin.Forms.DataTemplateSelector/).
+
+### Create a data template selector
+
+Create a custom class by inheriting `DataTemplateSelector`, and override the `OnSelectTemplate` method to return the `DataTemplate` for that item. At runtime, the SfKanban invokes the `OnSelectTemplate` method for each item and passes the data object as parameter.
+
+{% tabs %}
+{% highlight c# %}
+
+public class KanbanTemplateSelector : DataTemplateSelector
+{
+	private readonly DataTemplate menuTemplate;
+	private readonly DataTemplate orderTemplate;
+	private readonly DataTemplate readyToServeTemplate;
+	private readonly DataTemplate deliveryTemplate;
+
+	public KanbanTemplateSelector()
+	{
+		menuTemplate = new DataTemplate(typeof(MenuTemplate));
+		orderTemplate = new DataTemplate(typeof(OrderTemplate));
+		readyToServeTemplate = new DataTemplate(typeof(ReadyToServeTemplate));
+		deliveryTemplate = new DataTemplate(typeof(DeliveryTemplate));
+	}
+
+	protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
+	{
+		var data = item as CustomKanbanModel;
+		if (data == null)
+			return null;
+
+		string category = data.Category?.ToString();
+
+		return category.Equals("Menu") ? menuTemplate : 
+		category.Equals("Dining") || category.Equals("Delivery") ? orderTemplate : 
+		category.Equals("Ready to Serve") ? readyToServeTemplate : deliveryTemplate;
+	}
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### Applying the data template selector
+
+Assign custom `DataTemplateSelector` to the [`CardTemplate`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~CardTemplate.html) of the SfKanban in either XAML or C#.
+
+{% tabs %}
+{% highlight xaml %}
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SimpleSample.MainPage"
+             xmlns:kanban="clr-namespace:Syncfusion.SfKanban.XForms;assembly=Syncfusion.SfKanban.XForms""
+             xmlns:local="clr-namespace:SimpleSample;assembly=SimpleSample">
+             
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <local:KanbanTemplateSelector x:Key="kanbanTemplateSelector" />
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  
+  <ContentPage.BindingContext>
+	  <local:KanbanCustomViewModel />
+  </ContentPage.BindingContext>
+			
+  <kanban:SfKanban x:Name="kanban" HorizontalOptions="FillAndExpand"
+				VerticalOptions="FillAndExpand" ItemsSource="{Binding Cards}"
+				CardTemplate="{StaticResource kanbanTemplateSelector}" >
+				
+   ...
+				
+  </kanban:SfKanban>
+      
+</ContentPage>
+{% endhighlight %}
+{% highlight c# %}
+
+SfKanban kanban = new SfKanban();
+kanban.ItemsSource = viewModel.Cards;
+kanban.CardTemplate = new KanbanTemplateSelector();
+      
+{% endhighlight %}
+{% endtabs %}
+
+![DataTemplateSelector support for cards in Xamarin.Forms Kanban](SfKanban_images/CardTemplateSelector.png)
+

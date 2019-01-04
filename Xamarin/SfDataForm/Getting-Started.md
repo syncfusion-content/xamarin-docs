@@ -7,7 +7,7 @@ control: SfDataForm
 documentation: ug
 ---
 
-# SfDataForm
+**SfDataForm**
 
 The SfDataForm control helps editing the data fields of any data object. It can be used to develop various forms such as login, reservation, data entry, etc. Key features includes the following:
 
@@ -33,7 +33,7 @@ N> Assemblies can be found in unzipped package location in Mac.
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfDataForm to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfDataForm](https://www.nuget.org/packages/Syncfusion.Xamarin.SfDataForm/), and then install it.
 
-![](SfDataForm_images/DataForm_NuGet.png)
+![Adding  data form nuget reference in Xamarin.Forms DataForm](SfDataForm_images/DataForm_NuGet.png)
 
 To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfdataform) to know about the dependent assemblies for SfDataForm.
 
@@ -92,6 +92,10 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
     assembliesToInclude.Add(typeof(SfDataFormRenderer).GetTypeInfo().Assembly);
     assembliesToInclude.Add(typeof(SfNumericTextBoxRenderer).GetTypeInfo().Assembly);
     assembliesToInclude.Add(typeof(SfNumericUpDownRenderer).GetTypeInfo().Assembly);
+	assembliesToInclude.Add(typeof(SfSegmentedControlRenderer).GetTypeInfo().Assembly);
+    assembliesToInclude.Add(typeof(SfComboBoxRenderer).GetTypeInfo().Assembly);
+    assembliesToInclude.Add(typeof(SfCheckBoxRenderer).GetTypeInfo().Assembly);
+    assembliesToInclude.Add(typeof(SfRadioButtonRenderer).GetTypeInfo().Assembly);
 
     // replaces Xamarin.Forms.Forms.Init(e);        
     Xamarin.Forms.Forms.Init(e, assembliesToInclude);
@@ -112,7 +116,7 @@ In this section, you will create Xamarin.Forms application with `SfDataForm`. Th
 
 ### Creating the project
 
-Create a new BlankApp (Xamarin.Forms.Portable) application in Xamarin Studio or Visual Studio for Xamarin.Forms.
+Create a new BlankApp (.Net Standard) application in Xamarin Studio or Visual Studio for Xamarin.Forms.
 
 ### Adding data form in Xamarin.Forms
 
@@ -310,9 +314,9 @@ dataForm.DataObject = new ContactsInfo();
 
 Now, run the application to render the `data form` to edit the data object as in the following screenshot:
 
-![](SfDataForm_images/Overview.png)
+![Setting data object to data form in Xamarin.Forms DataForm](SfDataForm_images/Overview.png)
 
-You can download the entire source code of this demo for Xamarin.Forms from here [DataFormGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DataForm_GettingStarted-881780431.zip).
+You can download the entire source code of this demo for Xamarin.Forms from here [DataFormGettingStarted](https://github.com/SyncfusionExamples/xamarin.forms-DataForm-getting-started/).
 
 ## Defining editors
 
@@ -371,6 +375,24 @@ Generated for the Enum type property.
 [EnumDataTypeAttribute]
 </td>
 </tr>
+<tr>
+<td>
+{{'[DataFormSegmentItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormSegmentItem.html)'| markdownify }}
+</td>
+<td>
+Generated for the Enum type property.
+[EnumDataTypeAttribute]
+</td>
+</tr>
+<tr>
+<td>
+{{'[DataFormCheckBoxItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormCheckBoxItem.html)'| markdownify }}
+</td>
+<td>
+Generated for the Bool type property.
+[BoolDataTypeAttribute]
+</td>
+</tr>
 </table>
 The following list of editors are supported:
 <table>
@@ -387,7 +409,7 @@ Text
 The String type property and any other type apart from the following specified cases.
 </td>
 <td>
-Entry
+{{'[Entry](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -399,7 +421,7 @@ The String type property with multi line text.
 [DataType(DataType.Multiline)] 
 </td>
 <td>
-Editor
+{{'[Editor](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.editor?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -410,7 +432,7 @@ Numeric
 Int or Double type property.
 </td>
 <td>
-SfNumericTextBox
+{{'[SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -422,7 +444,7 @@ The Int or Double type Property with percent value.
 [DataType("Percent")]].
 </td>
 <td>
-SfNumericTextBox
+{{'[SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -434,7 +456,7 @@ The Int or Double type property with currency value.
 [DataType(DataType.Currency)].
 </td>
 <td>
-SfNumericTextBox
+{{'[SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -447,7 +469,7 @@ The DateTime type property with date value.
 [DataType(DataType.DateTime)]
 </td>
 <td>
-DatePicker
+{{'[DatePicker](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.datepicker?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -458,7 +480,7 @@ Time
 Property with [DataType(DataType.Time)] attribute.
 </td>
 <td>
-TimePicker
+{{'[TimePicker](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.timepicker?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -469,7 +491,7 @@ NumericUpDown
 Int or Double type property.
 </td>
 <td>
-SfNumericUpDown
+{{'[SfNumericUpDown](https://help.syncfusion.com/xamarin/sfnumericupdown/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -480,7 +502,7 @@ Segment
 Enum type property.
 </td>
 <td>
-SegmentControl
+{{'[SfSegmentedControl](https://help.syncfusion.com/xamarin/sfsegmentedcontrol/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -491,7 +513,7 @@ Bool
 Bool type property.
 </td>
 <td>
-CheckBox
+{{'[SfCheckBox](https://help.syncfusion.com/xamarin/sfcheckbox/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -502,7 +524,7 @@ Switch
 Bool type property.
 </td>
 <td>
-Switch
+{{'[Switch](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.switch?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -514,7 +536,7 @@ Enum and List type property.
 [EnumDataTypeAttribute]
 </td>
 <td>
-Picker
+{{'[Picker](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.picker?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -526,7 +548,7 @@ Enum and List type property.
 [EnumDataTypeAttribute]
 </td>
 <td>
-DropDownControl
+{{'[DropDownControl](https://help.syncfusion.com/xamarin/sfcombobox/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -537,7 +559,19 @@ Password
 The String type property with [DataType(DataType.Password)] attribute.
 </td>
 <td>
-Entry
+{{'[Entry](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry?view=xamarin-forms)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+RadioGroup
+</td>
+<td>
+Enum and List type property.
+[EnumDataTypeAttribute]
+</td>
+<td>
+{{'[SfRadioGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfRadioGroup.html)'| markdownify }}
 </td>
 </tr>
 </table>
@@ -561,7 +595,7 @@ dataForm.LabelPosition = LabelPosition.Top;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/LabelPosition.png)
+![Setting label position to data form item in Xamarin.Forms DataForm](SfDataForm_images/LabelPosition.png)
 
 ### Grid layout
 
@@ -580,7 +614,7 @@ dataForm.ColumnCount = 2;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/ColumnCount.png)
+![Setting column count to data form in Xamarin.Forms DataForm](SfDataForm_images/ColumnCount.png)
 
 ## Editing
 

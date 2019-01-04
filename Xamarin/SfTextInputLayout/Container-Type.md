@@ -70,8 +70,6 @@ inputLayout.InputView = new Entry() { Text = "John" };
 
 ![Outlined type](Container-Type-images/textInput_container_img2.png)
 
-More information to customize the thickness of the stroke for text input layout is in this link.
-
 ## None
 
 When setting the [ContainerType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~ContainerType.html) property to [None](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.ContainerType.html), the container will have empty background and enough spacing.

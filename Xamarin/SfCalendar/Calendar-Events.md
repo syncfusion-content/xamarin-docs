@@ -26,16 +26,20 @@ Finally add this collection of `CalendarInlineEvents` into [DataSource](https://
 I> Inline event support can be toggled on / off with `ShowInlineEvents` property.
 
 ## Month Appointment Display
+ 
+You can handle the calendar month view appointment display by using [InlineViewMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~InlineViewMode.html) property of `SfCalendar`. By default, `InlineViewMode` is set as `Inline`. Using the `InlineViewMode`, you can set the month view appointments display as follows.
+ 
+* Inline - The appointments will display in the specific date.
+ 
+* AgendaView - The appointments will shown below the month of calendar.
 
-You can handle the [SfCalendar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar.html) month view appointment display by using [InlineViewMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~InlineViewMode.html) property of calendar. By default `InlineViewMode` is set as `Inline`. using the `InlineViewMode` you can set the month view appointments display as follows.
-
-* Inline - The Appointments will display on specific date.
-
-* AgendaView - The Appointments will display bottom of the calendar.
-
+N> If appointments not there in the selected day, Inline view and Agenda view displays the text as “No Appointments”.
+ 
 ## Month Appointment Indicator
+ 
+You can customize the number of appointment indicators displayed in month cell using [MaximumEventIndicatorCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MaximumEventIndicatorCount.html) property of ‘SfCalendar’. The default value of `MaximumEventIndicatorCount` is 5.
 
-You can customize the number of appointment indicators displayed in month cell using [MaximumEventIndicatorCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MaximumEventIndicatorCount.html) property of [SfCalendar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar.html), by default `MaximumEventIndicatorCount` is 5.
+N> If appointments count are lesser than the Appointment Indicator count value in the particular day, then according to number of appointments available, indicator will be displayed in the month cell.Maximum number of appointment indicators drawn in the month cell is 5.
 
 {% tabs %}
 {% highlight xaml %} 

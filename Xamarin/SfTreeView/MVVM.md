@@ -204,16 +204,31 @@ public class CommandViewModel
 
 ### Expand command
 
-The `ExpandCommand` will be triggered whenever the [TreeViewNode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode.html) is being expanded.
-
-To enable the ExpandCommand action, return the 'CanExecute' method of the `ExpandCommand` to true.
-To disable the ExpandCommand action, return the ‘CanExecute’ method of the `ExpandCommand` to false.
+The `ExpandCommand` will be triggered while expanding the node and passing the [TreeViewNode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode.html) as command parameter. TreeView expands the node based on the return value of `CanExecute` method implementation of ExpandCommand. If you return false, then expand action will be canceled. `Execute` method implementation of `ExpandCommand` will get called after expanding of node.
 
 {% tabs %}
+{% highlight xaml %}
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Selection"
+             xmlns:syncfusion="clr-namespace:Syncfusion.XForms.TreeView;assembly=Syncfusion.SfTreeView.XForms"
+             x:Class="Selection.MainPage">
+    <ContentPage.BindingContext>
+        <local:CountriesViewModel x:Name="viewModel"/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <syncfusion:SfTreeView x:Name="treeView"
+                               ExpandCommand="ExpandingCommand"/> 
+    </ContentPage.Content>
+</ContentPage>
+
+{% endhighlight %}
 {% highlight c# %}
 
-treeView.ExpandCommand = viewModel.ExpandingCommand;
-
+/// <summary>
+/// CommandViewModel class that implements [Command](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.command?view=xamarin-forms). 
+/// </summary>
 public class CommandViewModel
 {
     private Command<Object> expandingCommand;
@@ -229,14 +244,24 @@ public class CommandViewModel
         ExpandingCommand = new Command<object>(ExpandCommandAction, CanExecute);
     }
 
+    /// <summary>
+    /// CanExecute method is called before expanding of node.
+    /// </summary>
+    /// <returns>Handle expand action by returning true or false. </returns>
+    /// <param name="obj">TreeViewNode is passed as command parameter. </param>
     public bool CanExecute(object obj)
     {
-        return false;
+        //You can also return false to cancel the expand action.
+        return true;
     }
 
+    /// <summary>
+    /// Method gets called after expanding action performed.
+    /// </summary>
+    /// <param name="obj">TreeViewNode is passed as command parameter. </param>
     private void ExpandCommandAction(object obj)
     {
-            App.Current.MainPage.DisplayAlert("Alert", (obj.AddedItems[0] as Countries).Name + " is Expanded", "OK");
+        App.Current.MainPage.DisplayAlert("Alert", "TreeView node is expanded", "OK");
     }   
 }
 {% endhighlight %}
@@ -244,16 +269,29 @@ public class CommandViewModel
 
 ### Collapse command
 
-The `CollapseCommand` will be triggered whenever the [TreeViewNode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode.html) is being collapsed.
-
-To enable the CollapseCommand, return the 'CanExecute' method of the `CollapseCommand` to true.
-To disable the CollapseCommand, return the ‘CanExecute’ method of the `CollapseCommand` to false.
+The `CollapseCommand` will be triggered while collapsing the node and passing the [TreeViewNode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode.html) as command parameter. TreeView collapses the node based on the return value of `CanExecute` method implementation of CollapseCommand. If you return false, then collapse action will be canceled. `Execute` method implementation of `CollapseCommand` will get called after collapsing of node.
 
 {% tabs %}
+{% highlight xaml %}
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Selection"
+             xmlns:syncfusion="clr-namespace:Syncfusion.XForms.TreeView;assembly=Syncfusion.SfTreeView.XForms"
+             x:Class="Selection.MainPage">
+    <ContentPage.BindingContext>
+        <local:CountriesViewModel x:Name="viewModel"/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <syncfusion:SfTreeView x:Name="treeView"
+                               CollapseCommand="CollapsingCommand"/> 
+    </ContentPage.Content>
+</ContentPage>
+{% endhighlight %}
 {% highlight c# %}
 
-treeView.CollapseCommand = viewModel.CollapsingCommand;
-
+/// <summary>
+/// CommandViewModel class that implements [Command](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.command?view=xamarin-forms). 
+/// </summary>
 public class CommandViewModel
 {
 	private Command<object> collapsingCommand;
@@ -268,15 +306,25 @@ public class CommandViewModel
 	{
 		CollapsingCommand = new Command<object>(CollapseCommandAction, CanExecute);
 	}
-	
+    
+	/// <summary>
+    /// CanExecute method is called before collapsing of node. 
+    /// </summary>
+    /// <returns>Handle collapse action by returning true or false. </returns>
+    /// <param name="obj">TreeViewNode is passed as command parameter. </param>
     public bool CanExecute(object obj)
     {
+        //You can also return false to cancel the collapse action.
         return true;
     }
 
+    /// <summary>
+    /// Method gets called after collapsing action performed.
+    /// </summary>
+    /// <param name="obj">TreeViewNode is passed as command parameter. </param>
 	private void CollapseCommandAction(object obj)
 	{
-		App.Current.MainPage.DisplayAlert("Alert", (obj.AddedItems[0] as Countries).Name + " is Collapsed", "OK");
+		App.Current.MainPage.DisplayAlert("Alert", "TreeView node is collapsed", "OK");
 	}
 }
 {% endhighlight %}

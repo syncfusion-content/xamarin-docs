@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started for Essential Xamarin.Forms SfImageEditor
-description: This section explains the steps required to load an image to the image editor. Image editor has a built-in toolbar, which has options to edit the image with shapes, path, text, crop, and flip.
+title: Getting Started with Syncfusion ImageEditor control for Xamarin.Forms
+description: Image editor has a built-in toolbar, which has options to edit the image with shapes, path, text, crop, and flip.
 platform: xamarin.forms
 control: SfImageEditor
 documentation: ug
@@ -163,3 +163,5 @@ N> Refer to this [link](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/u
 * The following screenshot depicts loading an image to the image editor. You can edit the image using built-in toolbar.
 
 ![SfImageEditor](ImageEditor_images/Gettingstarted.png)
+
+You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/IESample-621789615)

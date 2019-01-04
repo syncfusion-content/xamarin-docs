@@ -1,0 +1,178 @@
+---
+layout: post
+title: Populating Events in Syncfusion Calendar control for Android
+description: Learn how to create appointments
+platform: Xamarin
+control: Calendar
+documentation: ug
+---
+
+# Events (Appointments)
+
+`SfCalendar` control provides support to add appointments on calendar's dates. By the way of adding collection of appointments, it will show the event with indicator on the desired dates.
+
+Calendar's events can be added to `SfCalendar` using the following ways. [CalendarEventCollection](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.CalendarEventCollection.html) holds the details about the events to be rendered in calendar. Events contains the following attributes
+
+1. StartTime
+
+2. EndTime
+
+3. Subject
+
+4. Color
+
+Finally add this collection of `CalendarInlineEvents` into [DataSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~DataSource.html) of `SfCalendar`. The following code example will help to create an appointments on calendar's date. For events to be listed for a particular day, enable the inline feature in month view cell.
+
+I> Inline event support can be toggled on / off with `ShowInlineEvents` property.
+
+{% tabs %}
+{% highlight xaml %} 
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:CalendarSample" x:Class="CalendarSample.MainPage" xmlns:syncfusion="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.SfCalendar.XForms">
+    <syncfusion:SfCalendar.BindingContext>
+        <local:CalendarViewModel/>
+    </syncfusion:SfCalendar.BindingContext>
+    <syncfusion:SfCalendar x:Name="calendar" ViewMode="MonthView" ShowInlineEvents="true" InlineViewMode="Inline" DataSource="{Binding CalendarInlineEvents}">
+    </syncfusion:SfCalendar>
+</ContentPage>
+{% endhighlight %}
+{% highlight c# %}
+using System;
+using Syncfusion.SfCalendar.XForms;
+using Xamarin.Forms;
+
+namespace CalendarSample
+{
+    public class CalendarViewModel
+    {
+        public CalendarEventCollection CalendarInlineEvents { get; set; } = new CalendarEventCollection();
+        public CalendarViewModel()
+        {
+            CalendarInlineEvent events = new CalendarInlineEvent();
+            events.StartTime = new DateTime(2017, 5, 1, 5, 0, 0);
+            events.EndTime = new DateTime(2017, 5, 1, 7, 0, 0);
+            events.Subject = "Go to Meeting";
+            events.Color = Color.Fuchsia;
+            CalendarInlineEvents.Add(events);
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %} 
+
+N> The Inline function will be available only in MonthView with Single selection mode.
+
+![SfCalendar Inline events](images/events.png)
+
+## Customize inline/agenda view using DataTemplate
+
+The default appearance of the appointment can be customized by using the [InlineItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~InlineItemTemplate.html) property of the [MonthViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings.html).
+{% tabs %}
+{% highlight xaml %}
+    <syncfusion:SfCalendar x:Name="calendar" ShowInlineEvents="true">
+        <syncfusion:SfCalendar.MonthViewSettings>
+            <syncfusion:MonthViewSettings>
+                <syncfusion:MonthViewSettings.InlineItemTemplate>
+                    <DataTemplate>
+                        <Button BackgroundColor="Purple" Text="{Binding Subject}" TextColor="White" />
+                    </DataTemplate>
+                </syncfusion:MonthViewSettings.InlineItemTemplate>
+            </syncfusion:MonthViewSettings>
+        </syncfusion:SfCalendar.MonthViewSettings>
+    </syncfusion:SfCalendar> 
+{% endhighlight %}
+{% endtabs %} 
+
+## Customize inline/agenda view using Template Selector
+
+Inline template selector can be used to choose a `DataTemplate` at runtime based on the value of a data-bound to inline appointment property through `InlineItemTemplate`. It lets you choose a different data template for each appointment, customizing the appearance of a particular inline appointment based on certain conditions. `DataTemplateSelector` for inline appointment as object and calendar as bindable object.
+
+{% tabs %}
+{% highlight xaml %}
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:AppointmentSelector x:Key="TemplateSelector" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <syncfusion:SfCalendar x:Name="calendar"  ShowInlineEvents="true">
+        <syncfusion:SfCalendar.MonthViewSettings>
+            <syncfusion:MonthViewSettings InlineItemTemplate="{StaticResource TemplateSelector}" />
+        </syncfusion:SfCalendar.MonthViewSettings>
+    </syncfusion:SfCalendar> 
+{% endhighlight %}
+{% endtabs %} 
+
+### Creating a DataTemplateSelector
+{% tabs %}
+{% highlight c# %}
+    public class AppointmentSelector : DataTemplateSelector
+    {
+        public DataTemplate AppointmentTemplate { get; set; }
+        public DataTemplate AllDayAppointmentTemplate { get; set; }
+        public AppointmentSelector()
+        {
+            AppointmentTemplate = new DataTemplate(typeof(AppointmentTemplate));
+            AllDayAppointmentTemplate = new DataTemplate(typeof(AllDayAppointmentTemplate));
+        }
+        protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
+        {
+            var calendar = (container as SfCalendar);
+            if (calendar == null)
+            {
+                return null;
+            }
+            if ((item as CalendarInlineEvent).IsAllDay)
+            {
+                return AllDayAppointmentTemplate;
+            }
+            else
+            {
+                return AppointmentTemplate;
+            }
+        }
+    } 
+{% endhighlight %}
+{% endtabs %} 
+
+{% tabs %}
+{% highlight xaml %}
+    <!--<Button as Template for inline Appointment>-->
+    <Button xmlns="http://xamarin.com/schemas/2014/forms" 
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+            x:Class="Calendar_Sample.AppointmentTemplate" 
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand" 
+            BackgroundColor="{Binding Color}" 
+            Text="{Binding Subject}" 
+            FontAttributes="Bold" 
+            TextColor="White" /> 
+            
+    <!--<Button as Template for all day Appointment>-->
+    <Button xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="Calendar_Sample.AllDayAppointmentTemplate"
+            HorizontalOptions="FillAndExpand" 
+            VerticalOptions="FillAndExpand" 
+            BackgroundColor="{Binding Color}" 
+            Text="{Binding Subject}" 
+            FontAttributes="Bold" 
+            TextColor="Black" /> 
+{% endhighlight %}
+{% endtabs %} 
+
+## Getting inline/agenda view appointment details
+
+Using  [InlineEvent](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.InlineItemTappedEventArgs~InlineEvent.html) argument in the [InlineItemTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.InlineItemTappedEventArgs.html) 
+of [InlineItemTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~InlineItemTapped_EV.html)  event, you can get the month inline/agenda appointments details while tapping the specific appointment. You can do the required functions while tapping the inline/agenda appointment using this event.
+
+{% tabs %}
+{% highlight c# %}
+calendar.InlineItemTapped+= Calendar_InlineItemTapped; 
+
+private void Calendar_InlineItemTapped(object sender, InlineItemTappedEventArgs e)
+    {
+        var appointment = e.InlineEvent;
+        DisplayAlert(appointment.Subject, appointment.StartTime.ToString(), "ok");
+    } 
+{% endhighlight %}
+{% endtabs %}	

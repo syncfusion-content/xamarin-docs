@@ -29,7 +29,7 @@ Text
 The String type property and any other type apart from the below specified cases.
 </td>
 <td>
-Entry
+{{'[Entry](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -44,7 +44,7 @@ The String type property with multi line text.
 [DataType(DataType.MultilineText)]
 </td>
 <td>
-Editor
+{{'[Editor](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.editor?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -58,7 +58,7 @@ Numeric
 The property of Int, Double, Float, Decimal, Long types and also its nullable property.
 </td>
 <td>
-SfNumericTextBox
+{{'[SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -72,7 +72,7 @@ Percent
 The property of Int, Double, Float, Decimal, Long types and also its nullable property with [DataType(“Percent”)] attribute.
 </td>
 <td>
-SfNumericTextBox
+{{'[SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -86,7 +86,7 @@ Currency
 The property of Int, Double, Float, Decimal, Long types and also its nullable property with [DataType(DataType.Currency)] attribute.
 </td>
 <td>
-SfNumericTextBox
+{{'[SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ Date
 DateTime type property and the property with [DataType(DataType.Date)] and [DataType(DataType.DateTime)] attributes.
 </td>
 <td>
-DatePicker
+{{'[DatePicker](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.datepicker?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -114,7 +114,7 @@ Time
 The property with [DataType(DataType.Time)] attribute.
 </td>
 <td>
-TimePicker
+{{'[TimePicker](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.timepicker?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -128,7 +128,7 @@ NumericUpDown
 Int or Double type property.
 </td>
 <td>
-SfNumericUpDown
+{{'[SfNumericUpDown](https://help.syncfusion.com/xamarin/sfnumericupdown/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -142,7 +142,7 @@ Segment
 Enum type property.
 </td>
 <td>
-SfSegmentedControl
+{{'[SfSegmentedControl](https://help.syncfusion.com/xamarin/sfsegmentedcontrol/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -156,7 +156,7 @@ Bool
 Bool type property.
 </td>
 <td>
-CheckBox
+{{'[SfCheckBox](https://help.syncfusion.com/xamarin/sfcheckbox/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -170,7 +170,7 @@ Switch
 Bool type property.
 </td>
 <td>
-Switch
+{{'[Switch](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.switch?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -185,7 +185,7 @@ Enum and List type property.
 [EnumDataTypeAttribute]
 </td>
 <td>
-Picker
+{{'[Picker](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.picker?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -200,7 +200,7 @@ Enum and List type property.
 [EnumDataTypeAttribute]
 </td>
 <td>
-DropDownControl
+{{'[DropDownControl](https://help.syncfusion.com/xamarin/sfcombobox/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -215,7 +215,7 @@ The String type property and property with
 [DataType(DataType.Password)] attribute.
 </td>
 <td>
-Entry
+{{'[Entry](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -230,7 +230,7 @@ Enum and List type property.
 [EnumDataTypeAttribute]
 </td>
 <td>
-SfRadioGroup
+{{'[SfRadioGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfRadioGroup.html)'| markdownify }}
 </td>
 </tr>
 </table>
@@ -374,7 +374,7 @@ public enum Location
 
 **Customizing ItemsSource of SfSegmentedControl**
 
-For `List` data types, you can set the `ItemsSource` for `SfSegmentedControl` by using the SourceProvider or using ItemsSource property of [DataFormSegmentItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm. DataFormSegmentItem.html).
+For `List` data types, you can set the `ItemsSource` for `SfSegmentedControl` by using the SourceProvider or using ItemsSource property of [DataFormSegmentItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormSegmentItem.html).
 
 **Using SourceProvider**
 
@@ -382,7 +382,7 @@ For `List` data types, you can set the `ItemsSource` for `SfSegmentedControl` by
 {% highlight c# %}
 
 private string saveTo;
-[Display(Name=”Save To”)]
+[Display(Name ="Save To")]
 public string SaveTo
 {
     get { return saveTo; }
@@ -411,7 +411,7 @@ dataForm.SourceProvider = new SourceProviderExt();
 
 **Using ItemsSource property of DataFormSegmentItem**
 
-You can also set `ItemsSource` for segment editor by using the [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormSegmentItem~ItemsSource.html) property in the [DataFormSegmentItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm. DataFormSegmentItem.html).
+You can also set `ItemsSource` for segment editor by using the [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormSegmentItem~ItemsSource.html) property in the [DataFormSegmentItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormSegmentItem.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -433,7 +433,107 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![Loading segment editor to data form segment item in Xamarin.Forms DataForm](SfDataForm_images/SegmentEditor.jpg)
+![Loading segment editor in Xamarin.Forms DataForm](SfDataForm_images/SegmentEditor.jpg)
+
+## CheckBox editor
+
+In `CheckBox` editor, the [SfCheckBox](https://help.syncfusion.com/xamarin/sfcheckbox/overview ) control is loaded. By default, for `bool` data type property, the `CheckBox` editor will be loaded in data form.
+
+{% tabs %}
+{% highlight c# %}
+
+[Display(Name = "Is Billable")]
+public bool IsBillable { get; set; } = true;
+
+[Display(Name = "Registered Member")]
+public bool RegisteredMember { get; set; }
+
+{% endhighlight %}
+{% endtabs %}
+
+![Loading CheckBox editor in Xamarin.Forms DataForm](SfDataForm_images/CheckBoxEditor.jpg)
+
+**Visual states of SfCheckBox**
+
+SfCheckBox support three visual states.
+  - Checked
+  - UnChecked
+  - Intermediate
+
+{% tabs %}
+{% highlight c# %}
+
+[Display(Name = "Is Billable")]
+public bool IsBillable { get; set; } = true;
+
+[Display(Name = "Registered Member")]
+public bool RegisteredMember { get; set; } = false;
+
+[Display( Name = "Is Refundable")]
+public bool? IsRefundable { get; set; } = null;
+
+{% endhighlight %}
+{% endtabs %}
+		
+![Setting visual states for check box editor in Xamarin.Forms DataForm](SfDataForm_images/CheckBoxEditorStates.jpg)
+  
+**Customizing the SfCheckBox state color**
+
+You can change the  color of the checked/indeterminate state of SfCheckBox using the [CheckedColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormCheckBoxItem~CheckedColor.html) property and  change the  color of unchecked state  using the [UnCheckedColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormCheckBoxItem~UnCheckedColor.html) property in [DataFormCheckBoxItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormCheckBoxItem.html) in the `AutoGeneratingDataFormItem` event of data form.
+
+{% tabs %}
+{% highlight c# %}
+
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null)
+    {
+        if (e.DataFormItem.Name == "IsBillable")
+        {
+            (e.DataFormItem as DataFormCheckBoxItem).CheckedColor = Color.Green;
+        }
+        if (e.DataFormItem.Name == "RegisteredMember")
+        {
+            (e.DataFormItem as DataFormCheckBoxItem).UnCheckedColor = Color.Blue;
+        }
+    }
+}
+ 
+{% endhighlight %}
+{% endtabs %}
+
+![Setting color for check box editor in Xamarin.Forms DataForm](SfDataForm_images/CheckBoxEditorColor.jpg)
+
+**Setting SfCheckBox caption text**
+
+You can customize the appearance of display text in `SfCheckBox` using the `Text` property of the `DataFormCheckBoxItem`.
+
+{% tabs %}
+{% highlight c# %}
+
+[DisplayOptions(ShowLabel = false)]
+public bool Agree { get; set; }
+		
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null)
+    {
+        if (e.DataFormItem.Name.Equals("Agree"))
+        {
+            (e.DataFormItem as DataFormCheckBoxItem).IsThreeState = false;
+            (e.DataFormItem as DataFormCheckBoxItem).Text = "I agree to the Terms & Conditions";
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Setting caption text for check box editor in Xamarin.Forms DataForm](SfDataForm_images/CheckBoxEditorText.jpg)
 
 ## Drop down editor
 

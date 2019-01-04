@@ -170,7 +170,7 @@ Add the following XAML code in the MainPage.xaml in the portable project.
 
 The sample that illustrates loading a PDF in MVVM binding can be downloaded from the link below. 
 
-<http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted643780204> 
+<http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-2072455774> 
 
 ### Loading a PDF in code-behind
 
@@ -322,3 +322,22 @@ PDF viewer has the BindableProperty ZoomPercentage that is used to retrieve and 
 {% endtabs %}
 
 On binding the entry control to ZoomPercentage property of the PDF viewer instance, the current zoom percentage being displayed in the PDF viewer is displayed in the entry control, and the PDF viewer would be zoomed based on the value entered.
+
+## How to get and set Horizontal and Vertical Offsets in PDF Viewer?
+
+Navigate to the specified vertical and horizontal offset values in PDF Viewer using ScrollToOffset (HorizontalOffset and VerticalOffset) methods and you can also retrieve the current horizontal and vertical offset position by using HorizontalOffset and VerticalOffset properties respectively in [SfPdfViewer](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPdfViewer.XForms~Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html) class.
+
+{% tabs %}
+{% highlight c# %}
+
+//Retrieves the current horizontal offset of the PdfViewerControl
+m_currentHorizontalOffset = pdfViewerControl.HorizontalOffset;
+
+//Retrieves the current vertical offset of the PdfViewerControl
+m_currentVerticalOffset = pdfViewerControl.VerticalOffset;
+
+//Scrolls the content to the specified vertical offset position in the PdfViewerControl
+pdfViewerControl.ScrollToOffset(m_currentHorizontalOffset+10, m_currentVerticalOffset+10);
+
+{% endhighlight %}
+{% endtabs %}

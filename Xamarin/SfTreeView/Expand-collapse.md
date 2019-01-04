@@ -95,3 +95,5 @@ TreeView exposes following events to handle expanding and collapsing of items.
 * [NodeExpanded](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~NodeExpanded_EV.html) - It occurs when a node is expanded.
 
 The expanding and collapsing interactions can be handled with the help of `NodeCollapsing` and `NodeExpanding` events and expanded and collapsed interactions can be handled with help of `NodeCollapsed` and `NodeExpanded` events.
+
+You can also achieve handle expand and collapse operation using `ExpandCommand` and `CollapseCommand`.

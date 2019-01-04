@@ -120,7 +120,7 @@ button.BackgroundColor = Color.DeepSkyBlue;
 {% endhighlight %}
 {% endtabs %}
 
-![SfButton with background color](images/Button_backgroundColor.png)
+![SfButton with background color](images/Button_backgroundcolor.png)
 
 ## FontSize
 

@@ -45,7 +45,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 There is a known Framework issue in UWP platform. The custom controls will not render when deployed the application in `Release Mode`.
 
-The above problem can be resolved by initializing the SfCalendar assemblies in `App.xaml.cs` in UWP project as like in below code snippet.
+The above problem can be resolved by initializing the `SfCalendar` assemblies in `App.xaml.cs` in UWP project as like in below code snippet.
 
 {% highlight C# %}
 

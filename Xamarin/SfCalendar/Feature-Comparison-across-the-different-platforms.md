@@ -9,7 +9,7 @@ documentation: ug
 
 # Feature Comparison across the different platforms in Xamarin.
 
-This section covers the features of [SfCalendar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar.html) specific to Android,iOS and UWP platforms. The following comparison table help to find available features are in different platforms.
+This section covers the features of `SfCalendar` specific to Android,iOS and UWP platforms. The following comparison table help to find available features are in different platforms.
 
 <table>
 

@@ -51,7 +51,7 @@ void Handle_OnCalendarTapped(object sender, Syncfusion.SfCalendar.XForms.Calenda
 
 ## How to Perform an Operation when the Selected Date Get Changed?
 
-We can perform an operation when the selected date get changed using `SelectionChanged` event which returns the dates selected and dates deselected from the [SfCalendar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar.html).
+We can perform an operation when the selected date get changed using `SelectionChanged` event which returns the dates selected and dates deselected from the `SfCalendar`.
 
 <table>
 <tr>
@@ -187,7 +187,7 @@ void Handle_InlineToggled(object sender, Syncfusion.SfCalendar.XForms.InlineTogg
 
 ## How to Customize Cell or Month View?
 
-`OnMonthCellLoaded` event allows us to customize [SfCalendar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar.html) control. It returns MonthCell args
+`OnMonthCellLoaded` event allows us to customize `SfCalendar` control. It returns MonthCell args
 
 <table>
 <tr>
@@ -230,7 +230,7 @@ void Handle_OnMonthCellLoaded(object sender, Syncfusion.SfCalendar.XForms.MonthC
 
 ## How to Perform the Operation while long pressing the dateCell?
 
-`OnDateCellHolding` event returns the long pressed date along with the [SfCalendar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar.html) it carries. Using this event user can perform operation while long pressing the date.
+`OnDateCellHolding` event returns the long pressed date along with the `SfCalendar` it carries. Using this event user can perform operation while long pressing the date.
 
 
 <table>
@@ -265,7 +265,7 @@ void Handle_OnMonthCellLoaded(object sender, Syncfusion.SfCalendar.XForms.MonthC
 
 ## How to Resize the SfCalendar Control?
 
-[SfCalendar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar.html) control can be resized using `WidthRequest` and `HeightRequest` properties in `SfCalendar`control.
+`SfCalendar` control can be resized using `WidthRequest` and `HeightRequest` properties in `SfCalendar`control.
 
 {% highlight c# %}
 
@@ -277,7 +277,7 @@ calendar.HeightRequest = 200;
 
 ## How to Customize the SfCalendar Header?
 
-`HeaderView` property of SfCalendar allows us to customize [SfCalendar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar.html) Header. It returns custom view for SfCalendarHeader
+`HeaderView` property of SfCalendar allows us to customize `SfCalendar` Header. It returns custom view for SfCalendarHeader
 
 <table>
 <tr>
@@ -306,7 +306,7 @@ calendar.HeightRequest = 200;
 
 ## How to enable or disable the YearView in SfCalendar?
 
-`ShowYearView` property of [SfCalendar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar.html) allows us to enable and disable the  YearView of `SfCalendar`. The default value of ShowYearView is true.
+`ShowYearView` property of `SfCalendar` allows us to enable and disable the  YearView of `SfCalendar`. The default value of ShowYearView is true.
 
 <table>
 <tr>
@@ -331,7 +331,7 @@ calendar.HeightRequest = 200;
 
 ## How to enable or disable the Horizontal and Vertical cell grid lines in SfCalendar?
 
-`CellGridOptions` property of MonthViewSettings allows us to enable and disable the horizontal and vertical border lines of [SfCalendar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar.html). 
+`CellGridOptions` property of MonthViewSettings allows us to enable and disable the horizontal and vertical border lines of `SfCalendar`. 
 
 <table>
 <tr>

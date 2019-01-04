@@ -9,7 +9,7 @@ documentation: ug
 
 # View of SfCalendar
 
-[SfCalendar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar.html) control provides two types of views to display dates such as month view and year view. It can be assigned to the `SfCalendar` control by using `ViewMode` property.Based on the user’s preference `SfCalendar` can be viewed in any of the available two types.
+`SfCalendar` control provides two types of views to display dates such as month view and year view. It can be assigned to the `SfCalendar` control by using `ViewMode` property.Based on the user’s preference `SfCalendar` can be viewed in any of the available two types.
 
 N> By default SfCalendar control is assigned with month view. 
 

@@ -9,11 +9,11 @@ documentation: ug
 
 # Restrict Dates From Selection
 
-Dates can be restricted or a collection of dates can be blacked out in [SfCalendar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar.html) Control.
+Dates can be restricted or a collection of dates can be blacked out in `SfCalendar` Control.
 
 ## Range of Min / Max Dates
 
-Visible dates can be restricted between certain range of dates using `MinDate` and `MaxDate` properties available in [SfCalendar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar.html) control. It is applicable in all the calendar views.
+Visible dates can be restricted between certain range of dates using `MinDate` and `MaxDate` properties available in `SfCalendar` control. It is applicable in all the calendar views.
 
 The inline feature in month view will work only within the min max date range.
 
@@ -41,7 +41,7 @@ this.Content = calendar;
 
 ## Blackout Dates
 
-In [SfCalendar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar.html), BlackoutDates refers the disabled dates that restrict the user from selecting it. These dates will be marked with slanted Stripes.
+In `SfCalendar`, BlackoutDates refers the disabled dates that restrict the user from selecting it. These dates will be marked with slanted Stripes.
 
 The BlackoutDays can be achieved in two ways.
 

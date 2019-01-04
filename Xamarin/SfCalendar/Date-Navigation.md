@@ -9,11 +9,11 @@ documentation: ug
 
 # Date Navigation
 
-[SfCalendar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar.html) control provides option to navigate through items either programmatically or by using gesture.
+`SfCalendar` control provides option to navigate through items either programmatically or by using gesture.
 
 ## Programmatic Navigation 
 
-By using the following methods, we can navigate the months or year in [SfCalendar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar.html) with programmatically without applying gesture.
+By using the following methods, we can navigate the months or year in `SfCalendar` with programmatically without applying gesture.
 
 1. Forward
 

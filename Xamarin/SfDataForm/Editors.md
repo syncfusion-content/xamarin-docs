@@ -351,7 +351,7 @@ In the `TimePicker`, by default `DateTime` data type default value will be displ
 {% tabs %}
 {% highlight c# %}
 
-[DataType(DataType.Time)
+[DataType(DataType.Time)]
 [Display(Name = "Birth Time")]
 public DateTime? BirthTime { get; set; }
 

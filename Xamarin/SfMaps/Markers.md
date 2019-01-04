@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Markers
+title: Markers in Syncfusion Map control
 description: This section describes about map marker.
 platform: xamarin
 control: SfMaps
@@ -18,7 +18,7 @@ Markers are set to the maps control using the following ways:
 
 ## Adding marker objects
 
-Any number of markers can be added to the shape file layers using the [`Markers`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~Markers.html#) property. Each marker object contains the following properties:
+Any number of markers can be added to the shape file layers using the [`Markers`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLayer~Markers.html) property. Each marker object contains the following properties:
 
 [`Label`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarker~Label.html#): Displays some messages on maps.
 
@@ -76,7 +76,7 @@ Any number of markers can be added to the shape file layers using the [`Markers`
 
 ## Customizing markers
 
-Markers can be customized using the [`MarkerSettings`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~MarkerSettings.html#) property in shape file layer.
+Markers can be customized using the [`MarkerSettings`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLayer~MarkerSettings.html) property in shape file layer.
 
 ### Customizing marker icons
 
@@ -154,7 +154,7 @@ The shape of a marker icon can be customized using the [`MarkerIcon`](https://he
 
 {% endtabs %}
 
-![](Images/Marker_icon_type.png)
+![Marker Icon Image](Images/Marker_icon_type.png)
 
 ### Setting image marker icon
 
@@ -236,7 +236,7 @@ You can pin an image as marker icon by setting the icon type as `Image`. Set [`I
 
 {% endtabs %}
 
-![](Images/Marker_icon_type_image.png)
+![Marker Icon Types](Images/Marker_icon_type_image.png)
 
 ### Customizing labels
 
@@ -310,11 +310,11 @@ SfMaps map = new SfMaps();
 
 {% endtabs %}
 
-![](Images/Markers_img4.jpeg)
+![Marker customization](Images/Markers_img4.jpeg)
 
 ## Custom marker
 
-The maps control provides support for defining custom markers using the [`MarkerTemplate`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~MarkerTemplate.html#) property.
+The maps control provides support for defining custom markers using the [`MarkerTemplate`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLayer~MarkerTemplate.html) property.
 
 {% tabs %}
 
@@ -463,7 +463,7 @@ ImageName = ImageSource.FromResource("MapsSample.pin.png");
 
 {% endtabs %}
 
-![](Images/Markers_img5.jpeg)
+![Custom Marker Image](Images/Markers_img5.jpeg)
 
 ## Events
 
@@ -520,5 +520,5 @@ private void Layer_MarkerSelected(object sender, MarkerSelectedEventArgs e)
 
 {% endtabs %}
 
-![](Images/MarkerSelected.png)
+![Marker Selected Image](Images/MarkerSelected.png)
 

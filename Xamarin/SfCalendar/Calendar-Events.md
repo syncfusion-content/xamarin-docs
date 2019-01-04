@@ -86,6 +86,9 @@ namespace CalendarSample
 
 N> The Inline function will be available only in MonthView with Single selection mode.
 
+You can download the entire source code of this demo for Xamarin.Forms from
+here [CalendarEvents](https://github.com/SyncfusionExamples/creating-events-in-xamarin.forms-sfcalendar)
+
 ![SfCalendar Inline events](images/xamarin.forms-calendar-events.png)
 
 ## Customize inline/agenda view using DataTemplate
@@ -106,6 +109,14 @@ The default appearance of the appointment can be customized by using the [Inline
     </syncfusion:SfCalendar> 
 {% endhighlight %}
 {% endtabs %} 
+
+Inline view mode
+
+![SfCalendar Inline events](images/Xamarin.Forms-Calendar-Inlinetemplate.png)
+
+Agenda view mode
+
+![SfCalendar Inline events](images/Xamarin.Forms-Calendar-Agendatemplate.png)
 
 ## Customize inline/agenda view using Template Selector
 
@@ -184,6 +195,14 @@ Inline template selector can be used to choose a `DataTemplate` at runtime based
 {% endhighlight %}
 {% endtabs %} 
 
+Inline view mode
+
+![SfCalendar Inline events](images/Xamarin.Forms-Calendar-Inlinetemplateselector.png)
+
+Agenda view mode
+
+![SfCalendar Inline events](images/Xamarin.Forms-Calendar-Agendatemplateselector.png)
+
 ## Getting inline/agenda view appointment details
 
 Using  [InlineEvent](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.InlineItemTappedEventArgs~InlineEvent.html) argument in the [InlineItemTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.InlineItemTappedEventArgs.html) 
@@ -200,3 +219,11 @@ private void Calendar_InlineItemTapped(object sender, InlineItemTappedEventArgs 
     } 
 {% endhighlight %}
 {% endtabs %}	
+
+Inline view mode
+
+![SfCalendar Inline events](images/Xamarin.Forms-Calendar-Inlineitemtapped.png)
+
+Agenda view mode
+
+![SfCalendar Inline events](images/Xamarin.Forms-Calendar-Agendaitemtapped.png)

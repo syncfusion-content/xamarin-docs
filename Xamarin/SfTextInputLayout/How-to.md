@@ -17,12 +17,12 @@ Border stroke width (for [Outlined](https://help.syncfusion.com/cr/cref_files/xa
 {% highlight xaml %}
 
 <inputLayout:SfTextInputLayout
-            Hint="Name" 
-            ContainerType="Outlined"
-	        FocusedStrokeWidth="4"
-	        UnfocusedStrokeWidth="2">
-            <Entry Text="John" />
-        </inputLayout:SfTextInputLayout> 
+        Hint="Name" 
+        ContainerType="Outlined"
+	    FocusedStrokeWidth="4"
+	    UnfocusedStrokeWidth="2">
+        <Entry Text="John" />
+</inputLayout:SfTextInputLayout> 
 		
 {% endhighlight %}
 
@@ -55,9 +55,9 @@ When setting the [OutlineCornerRadius](https://help.syncfusion.com/cr/cref_files
 {% highlight xaml %}
 
 <inputLayout:SfTextInputLayout
-            Hint="Name" 
-            ContainerType="Outlined"
-	        OutlineCornerRadius="8"/> 
+        Hint="Name" 
+        ContainerType="Outlined"
+	    OutlineCornerRadius="8"/> 
 			
 {% endhighlight %}
 

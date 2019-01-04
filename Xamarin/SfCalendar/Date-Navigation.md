@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Date Navigation | SfCalendar | Xamarin.Android | Syncfusion
+title: Date Navigation and Gestures | SfCalendar | Xamarin.Forms | Syncfusion
 description: Learn the complete navigation and gestures support
 platform: Xamarin
 control: Calendar

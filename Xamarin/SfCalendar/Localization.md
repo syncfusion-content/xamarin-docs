@@ -27,7 +27,33 @@ N> By default, SfCalendar control is available with en-US locale.
 
 ![Localization support in Xamarin.Forms SfCalendar](images/xamarin.forms-calendar-localization.png) 
 
-## Change custom texts in the calendar control
+## Localizing custom strings from PCL
+You can localize the custom strings (All Day, No Events) used in the calendar control from PCL. It can be achieved by providing the custom strings to the specific language resx file and handling the required culture with the locale. In the below code, we have set Portugal as Calendar locale as well as custom strings.
+
+{% tabs %}
+{% highlight c# %}
+
+  calendar.Locale = new System.Globalization.CultureInfo("pt-PT");
+  CalendarResourceManager.Manager = new System.Resources.ResourceManager("Sample name.Resources.Syncfusion.SfCalendar.XForms", GetType().GetTypeInfo().Assembly);
+  CultureInfo.CurrentUICulture = new CultureInfo("pt");
+
+{% endhighlight %}
+{% endtabs %}
+
+### Adding resx file
+You need to add the required resx files under the Resources folder in the PCL project and the filename should be `Syncfusion.SfCalendar.Forms.LanguageCode.resx`.
+
+Example: For Portuguese, `Syncfusion.SfCalendar.Forms.pt.resx`
+
+![Localization support in Xamarin.Forms SfCalendar](Images/xamarin.forms-calendar-localizable-strings-pcl.png)  
+Now, set the Build Action as EmbeddedResource for `Syncfusion.SfCalendar.Forms.pt.resx` file and Build Action as Compile for `Syncfusion.SfCalendar.Forms.pt.Designer.cs` file.
+
+![Localization support in Xamarin.Forms SfCalendar](Images/xamarin.forms-calendar-localization-noevents.png)
+
+You can download the entire source code of this demo for Xamarin.Forms from
+here [LocaleFromPCL](https://github.com/SyncfusionExamples/Localizing-the-custom-texts-in-Xamarin.Forms-Calendar).
+
+## Localizing the custom texts using platform renderer
 
 You can localize the custom strings used in the calendar control. For that you need to configure it for each platform separately.
 
@@ -78,32 +104,4 @@ If an application requires multiple languages you can follow the below steps:
 The corresponding `<Language>.lproj` folder updates only when the device language changes.
 
 You can download the entire source code of this demo for Xamarin.Forms from
-here [Localization](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization_Forms-1471485025.zip).
-
-## Localizing custom strings from pcl
-You can localize the custom strings (All Day, No Events) used in the calendar control from PCL. It can be achieved by providing the custom strings to the specific language resx file and handling the required culture with the locale. In the below code, we have set Portugal as Calendar locale as well as custom strings.
-
-{% tabs %}
-{% highlight c# %}
-
-  // Here CalendarLocalization is a sample name.
-  calendar.Locale = new System.Globalization.CultureInfo("pt-PT");
-  CalendarResourceManager.Manager = new System.Resources.ResourceManager("CalendarLocalization.Resources.Syncfusion.SfCalendar.XForms", GetType().GetTypeInfo().Assembly);
-  CultureInfo.CurrentUICulture = new CultureInfo("pt");
-
-{% endhighlight %}
-{% endtabs %}
-
-### Adding resx file
-You need to add the required resx files under the Resources folder in the PCL project and the filename should be `Syncfusion.SfCalendar.Forms.LanguageCode.resx`.
-
-Example: For Portuguese, `Syncfusion.SfCalendar.Forms.pt.resx`
-
-![Localization support in Xamarin.Forms SfCalendar](Images/xamarin.forms-calendar-localizable-strings-pcl.png)  
-Now, set the Build Action as EmbeddedResource for `Syncfusion.SfCalendar.Forms.pt.resx` file and Build Action as Compile for `Syncfusion.SfCalendar.Forms.pt.Designer.cs` file.
-
-![Localization support in Xamarin.Forms SfCalendar](Images/xamarin.forms-calendar-localization-noevents.png)
-
-You can download the entire source code of this demo for Xamarin.Forms from
-here [LocaleFromPCL](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CalendarLocalization1420424649.zip).
-
+here [Localization](https://github.com/SyncfusionExamples/Localizing-the-custom-texts-using-platform-renderer-in-Xamarin.Forms-Calendar).

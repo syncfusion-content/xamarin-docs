@@ -18,13 +18,11 @@ The `ShowCloseButton` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons
 {% tabs %}
 
 {% highlight xaml %}
+
 <ContentPage.Content>
-            <buttons:SfChip
-                Text="James"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                ShowCloseButton="true" >
-            </buttons:SfChip>  
+         <buttons:SfChip  Text="James" 
+                          ShowCloseButton="true" >
+         </buttons:SfChip>  
 </ContentPage.Content>
 
 {% endhighlight %}
@@ -33,8 +31,6 @@ The `ShowCloseButton` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons
 
 SfChip chip = new SfChip();
 chip.Text = "James";
-chip.HorizontalOptions = "Center";
-chip.VerticalOptions = "Center";
 chip.ShowCloseButton = "true";
 
 {% endhighlight %}
@@ -51,13 +47,11 @@ The `ShowSelectionIndicator` (https://help.syncfusion.com/cr/xamarin/Syncfusion.
 {% tabs %}
 
 {% highlight xaml %}
+
 <ContentPage.Content>
-            <buttons:SfChip
-                Text="James"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                ShowCloseButton="true"
-                ShowSelectionIndicator=”true” >
+            <buttons:SfChip  Text="James"
+                             ShowCloseButton="true"
+                             ShowSelectionIndicator=”true” >
             </buttons:SfChip>  
 </ContentPage.Content>
 
@@ -68,8 +62,6 @@ The `ShowSelectionIndicator` (https://help.syncfusion.com/cr/xamarin/Syncfusion.
 SfChip chip = new SfChip();
 chip.Text = "James";
 chip.CloseButtonColor = Color.White;
-chip.HorizontalOptions = "Center";
-chip.VerticalOptions = "Center";
 chip.ShowCloseButton = "true";
 chip.ShowSelectionIndicator = “true”;
 
@@ -87,13 +79,11 @@ The `CloseButtonColor` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Button
 {% tabs %}
 
 {% highlight xaml %}
+
 <ContentPage.Content>
-            <buttons:SfChip
-                Text="James"
-                CloseButtonColor="White"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                ShowCloseButton="true" >
+            <buttons:SfChip Text="James"
+                            CloseButtonColor="White"
+                            ShowCloseButton="true" >
             </buttons:SfChip>  
 </ContentPage.Content>
 
@@ -104,8 +94,7 @@ The `CloseButtonColor` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Button
 SfChip chip = new SfChip();
 chip.Text = "James";
 chip.CloseButtonColor = Color.White;
-chip.HorizontalOptions = "Center";
-chip.VerticalOptions = "Center";
+	
 chip.ShowCloseButton = "true";
 
 {% endhighlight %}
@@ -217,6 +206,7 @@ N> The InputView is visible only in Input type. Default value of InputView is [`
 The [`Command`] (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfChipGroup~Command.html)  property is used to associate a command with an instance of SfButton. This property is most often set with MVVM pattern to bind callbacks back into the ViewModel.
 
 {% tabs %}
+	
 {% highlight xaml %}
 
 <ContentPage
@@ -234,6 +224,7 @@ x:Class="Chips.GettingStarted">
 <ContentPage.Content>
 
 {% endhighlight %}
+
 {% highlight c# %}
 
 // ViewModel 
@@ -282,6 +273,7 @@ public class CommandDemoViewModel : INotifyPropertyChanged
 }
 
 {% endhighlight %}
+	
 {% endtabs %}
 
 N> Default value of Command is [`null`].
@@ -361,6 +353,7 @@ The `SelectedChipBackgroundColor` (https://help.syncfusion.com/cr/xamarin/Syncfu
     }
 
 {% endhighlight %}
+
 {% endtabs %}
 
  N> Default value of SelectedChipBackgroundColor is [`Color.Accent`]
@@ -372,10 +365,11 @@ The `SelectedChipTextColor` (https://help.syncfusion.com/cr/xamarin/Syncfusion.B
 {% tabs %}
 
 {% highlight xaml %}
+
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
      xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
      xmlns:local="clr-namespace:ChipCustomization"
-             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+     xmlns:buttons="clr-     namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
      x:Class="ChipCustomization.MainPage">
   
     <ContentPage.BindingContext>
@@ -440,6 +434,7 @@ The `SelectedChipTextColor` (https://help.syncfusion.com/cr/xamarin/Syncfusion.B
     }
 
 {% endhighlight %}
+
 {% endtabs %}
 
  N> Default value of SelectedChipTextColor is [`Color.White`]
@@ -448,6 +443,10 @@ The `SelectedChipTextColor` (https://help.syncfusion.com/cr/xamarin/Syncfusion.B
 
 The `ChipBackgroundColor` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfChipGroup~ChipBackgroundColor.html) to customize the background color of the SfChipGroup. 
 
+{% tabs %}
+
+{% highlight xaml %}
+
 <buttons:SfChipGroup
                 ItemsSource="{Binding ChoiceItems}"
                 SelectedChipBackgroundColor="White"
@@ -455,11 +454,20 @@ The `ChipBackgroundColor` (https://help.syncfusion.com/cr/xamarin/Syncfusion.But
                 Type="Choice">
  </buttons:SfChipGroup>
 
+{% endhighlight %}
+
+{% highlight c# %}
+
+
  N> Default value of ChipBackgroundColor is [`Color.FromHex("#E0E0E0")`]
 
   ## ChipBorderColor
 
 The `ChipBorderColor` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfChipGroup~ChipBorderColor.html) to customize the border color of the SfChipGroup. 
+
+{% tabs %}
+
+{% highlight xaml %}
 
  <buttons:SfChipGroup
                 ItemsSource="{Binding ChoiceItems}"
@@ -469,11 +477,23 @@ The `ChipBorderColor` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons
                 Type="Filter">
 </buttons:SfChipGroup>
 
+{% endhighlight %}
+
+{% highlight c# %}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
  N> Default value of ChipBorderColor is [`Color.Transparent`] 
 
 ## ChipTextColor
 
 The `ChipTextColor` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfChipGroup~ChipTextColor.html) to customize the text color of the SfChipGroup. 
+{% tabs %}
+
+{% highlight xaml %}
 
 <buttons:SfChipGroup
                 ItemsSource="{Binding ChoiceItems}"
@@ -481,17 +501,39 @@ The `ChipTextColor` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.X
                 Type="Choice">
 </buttons:SfChipGroup>
 
+{% endhighlight %}
+
+{% highlight c# %}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
  N> Default value of ChipTextColor is [`Color.FromHex("#212121")`]
 
 ## ChipTextSize
 
 The `ChipTextSize` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfChipGroup~ChipTextSize.html) to customize the text size of the SfChipGroup. 
 
+{% tabs %}
+
+{% highlight xaml %}
+
 <buttons:SfChipGroup 
                 ItemsSource="{Binding ChoiceItems}" 
                 ChipTextSize="20" 
                 Type="Filter"> 
 </buttons:SfChipGroup>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+{% endhighlight %}
+
+{% endtabs %}
+	
 
  N> Default value of ChipTextSize is [`14d`]
 
@@ -500,11 +542,24 @@ The `ChipTextSize` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XF
 
 The `ChipPadding` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfChipGroup~ChipPadding.html) to set the spacing between each chip.
 
+{% tabs %}
+
+{% highlight xaml %}
+
   <buttons:SfChipGroup
                 ItemsSource="{Binding ChoiceItems}"
                 ChipPadding="8,0,0,0" 
                 Type="Filter">
             </buttons:SfChipGroup>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+{% endhighlight %}
+
+{% endtabs %}
+	
 
  N> Default value of ChipPadding is [`Thickness(5d, 0, 0, 0)`]
 
@@ -513,6 +568,10 @@ The `ChipPadding` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XFo
 
 The `ChipBorderWidth` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfChipGroup~ChipBorderWidth.html) to customize the border width of the SfChipGroup. 
 
+{% tabs %}
+
+{% highlight xaml %}
+
 <buttons:SfChipGroup
                 ItemsSource="{Binding ChoiceItems}"
                 ChipBorderWidth="5" 
@@ -520,17 +579,39 @@ The `ChipBorderWidth` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons
                 Type="Filter">
             </buttons:SfChipGroup>
 
+{% endhighlight %}
+
+{% highlight c# %}
+
+{% endhighlight %}
+
+{% endtabs %}
+	
+
  N> Default value of ChipBorderWidth is [`0d`]
 
 ## ItemHeight
 
 The `ItemHeight` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfChipGroup~ItemHeight.html) to customize the height of the item in the SfChipGroup.
 
+{% tabs %}
+
+{% highlight xaml %}
+
 <buttons:SfChipGroup
                 ItemsSource="{Binding ChoiceItems}"
                 ItemHeight="60"
                 Type="Filter">
             </buttons:SfChipGroup>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+{% endhighlight %}
+
+{% endtabs %}
+
 
  N> Default value of ItemHeight  is [`double.NaN`]
 
@@ -568,6 +649,7 @@ You can enable the icon image using the [`ShowIcon`](https://help.syncfusion.com
     </ContentPage.Content>
 
 {% endhighlight %}
+
 {% highlight c# %}
 
 //Model class for chips
@@ -631,7 +713,7 @@ You can enable the icon image using the [`ShowIcon`](https://help.syncfusion.com
 
 The `CloseButtonColor` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfChipGroup~CloseButtonColor.html) to customize the close button color of SfChipGroup. 
 
- N> Default value of CloseButtonColor  is [`Color.Black`]
+ N> Default value of CloseButtonColor is [`Color.Black`]
 
 ## SelectionIndicatorColor
 

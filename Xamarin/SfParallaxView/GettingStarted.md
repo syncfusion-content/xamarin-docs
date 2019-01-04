@@ -273,4 +273,4 @@ N> The size of the `Content` view will automatically be stretched to the size of
 
 ![SfParallaxView](ParallaxView_Images/parallaxview.gif)
 
-You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ParallaxView_GettingStarted979722583.zip )
+You can find the complete getting started sample from this link: [Sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ParallaxView_GettingStarted979722583.zip )

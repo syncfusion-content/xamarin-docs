@@ -25,7 +25,7 @@ The `Speed` value denotes the scrolling speed of the `Content` added as a backgr
 
 ### Orientation 
 
-The `Orientation` of the content scrolling can be customized to vertical or horizontal using this property's value.
+The orientation of the content scrolling can be customized to vertical or horizontal using the value of `Orientation` property.
 
 {% highlight xaml %}
 

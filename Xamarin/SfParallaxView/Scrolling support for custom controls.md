@@ -26,7 +26,7 @@ The Parallax view supports custom scrollable controls using the `IParallaxView` 
 
 ### ScrollableContentSize
 
-`ScrollableContentSize` is the total content size of the scrollable custom control.
+The `ScrollableContentSize` is the total content size of the scrollable custom control.
 
 {% highlight c# %}
 
@@ -49,11 +49,11 @@ The `Scrolling` event occurs whenever the `ParallaxScrollingEventArgs` value is 
 
 The `ParallaxScrollingEventArgs` has the following three arguments:
 
-* `ScrollX`- Denotes X position of the finished scroll.
+* `ScrollX`: Denotes X position of the finished scroll.
 
-* `ScrollY` - Denotes Y position of the finished scroll.
+* `ScrollY`: Denotes Y position of the finished scroll.
 
-* `CanAnimate` - Defines whether to animate the scroll or not.
+* `CanAnimate`: Defines whether to animate the scroll or not.
 
 {% tabs %}
 
@@ -140,6 +140,6 @@ The `ParallaxScrollingEventArgs` has the following three arguments:
 
 {% endtabs %}
 
-By default, ParallaxView control supports `Xamarin.Forms ScrollView`. For custom controls you need to implement `IParallaxView` interface.
+By default, ParallaxView control supports `Xamarin.Forms ScrollView`. For custom controls you need to implement the `IParallaxView` interface.
 
-You can achieve this parallax scroll support to the custom controls using the native renderers to calculate the total size of the scrollable content. Refer to this [KB article](https://www.syncfusion.com/kb/10067/how-to-provide-parallax-scrolling-support-to-any-custom-control-using-sfparallaxview) for more details.
+You can achieve the parallax scroll support to the custom controls using the native renderers to calculate the total size of the scrollable content. Refer to this [KB article](https://www.syncfusion.com/kb/10067/how-to-provide-parallax-scrolling-support-to-any-custom-control-using-sfparallaxview) for more details.

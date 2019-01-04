@@ -11,40 +11,6 @@ documentation: ug
 
 [SfCalendar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar.html) control provides option to navigate through items either programmatically or by using gesture.
 
-## Animation on Transition
-
-Month navigation can be animated by using `TransitionMode` property in `SfCalendar`. The following types of Transition modes are available here,
-
-1. Scroll
-
-2. Card
-
-3. Reveal
-
-4. Float
-
-N> By default those navigations are performed along with `Scroll` animation
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<syncfusion:SfCalendar  x:Name="calendar"  TransitionMode="Float"/>
-
-{% endhighlight %}
-
-{% highlight c# %}
-	
-SfCalendar calendar = new SfCalendar();
-calendar.TransitionMode=TransitionMode.Float;
-this.Content = calendar
-	
-{% endhighlight %}
-
-{% endtabs %}
-
-N> This transitions works only for Month view.
-
 ## Programmatic Navigation 
 
 By using the following methods, we can navigate the months or year in [SfCalendar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar.html) with programmatically without applying gesture.
@@ -91,4 +57,3 @@ calendar.MoveToDate = new DateTime(2017,5,5);
 this.Content = calendar;
 	
 {% endhighlight %}
-

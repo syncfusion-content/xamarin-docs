@@ -297,6 +297,7 @@ namespace ChipCustomization
  The [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~BackgroundColor.html) property is used to customize the background color of SfButton.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -519,9 +520,9 @@ namespace ChipCustomization
 {% endtabs %}
 
  N> Default value of BorderWidth 
-    Android : 0d
-    iOS : 0d
-    UWP : 2d
+    Android : [`0d`]
+    iOS : [`0d`]
+    UWP : [`2d`]
 
 ## CornerRadius
 
@@ -601,6 +602,230 @@ namespace ChipCustomization
 {% endtabs %}
 
 N> Default value of CornerRadius is [`Thickness(0)`].
+
+## FontAttributes
+
+The [`FontAttributes`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~FontAttributes.html) property is used to customize the font style of text in SfButton.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ChipCustomization"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="ChipCustomization.MainPage">
+  
+   <ContentPage.Content>
+        <StackLayout Margin="8,8,8,8" >
+           <buttons:SfChip  Text="James" 
+                            WidthRequest="150"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            ShowCloseButton="true"
+                            ShowSelectionIndicator="true"
+                            CloseButtonColor = "White"
+                            SelectionIndicatorColor = "White"
+                            FontAttributes="Italic" >
+           </buttons:SfChip>  
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Syncfusion.XForms.Buttons;
+using Xamarin.Forms;
+
+namespace ChipCustomization
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout();
+            SfChip chip = new SfChip();
+            chip.Text = "James";
+            chip.WidthRequest = 150;
+            chip.HorizontalOptions = LayoutOptions.Center;
+            chip.VerticalOptions = LayoutOptions.Center;
+            chip.ShowSelectionIndicator = true;
+            chip.CloseButtonColor = Color.White;
+            chip.SelectionIndicatorColor = Color.White;
+            chip.FontAttributes = FontAttributes.Italic;
+            stackLayout.Children.Add(chip);
+            this.Content = stackLayout;
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## FontFamily
+
+The [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~FontFamily.html) property is used to customize the font family of text in SfButton.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ChipCustomization"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="ChipCustomization.MainPage">
+  
+   <ContentPage.Content>
+        <StackLayout Margin="8,8,8,8" >
+           <buttons:SfChip  Text="James" 
+                            WidthRequest="150"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            ShowCloseButton="true"
+                            ShowSelectionIndicator="true"
+                            CloseButtonColor = "White"
+                            SelectionIndicatorColor = "White"
+                            FontFamily="Arial"
+                            >
+           </buttons:SfChip>  
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Syncfusion.XForms.Buttons;
+using Xamarin.Forms;
+
+namespace ChipCustomization
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout();
+            SfChip chip = new SfChip();
+            chip.Text = "James";
+            chip.WidthRequest = 150;
+            chip.HorizontalOptions = LayoutOptions.Center;
+            chip.VerticalOptions = LayoutOptions.Center;
+            chip.ShowSelectionIndicator = true;
+            chip.CloseButtonColor = Color.White;
+            chip.SelectionIndicatorColor = Color.White;
+            chip.FontFamily = "Arial";
+            stackLayout.Children.Add(chip);
+            this.Content = stackLayout;
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## FontSize
+
+The [`FontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~FontSize.html) property is used to customize the size of text in SfButton.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ChipCustomization"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="ChipCustomization.MainPage">
+  
+   <ContentPage.Content>
+        <StackLayout Margin="8,8,8,8" >
+           <buttons:SfChip  Text="James" 
+                            WidthRequest="150"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            ShowCloseButton="true"
+                            ShowSelectionIndicator="true"
+                            CloseButtonColor = "White"
+                            SelectionIndicatorColor = "White"
+                            FontSize = "20"
+                            >
+           </buttons:SfChip>  
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Syncfusion.XForms.Buttons;
+using Xamarin.Forms;
+
+namespace ChipCustomization
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout();
+            SfChip chip = new SfChip();
+            chip.Text = "James";
+            chip.WidthRequest = 150;
+            chip.HorizontalOptions = LayoutOptions.Center;
+            chip.VerticalOptions = LayoutOptions.Center;
+            chip.ShowSelectionIndicator = true;
+            chip.CloseButtonColor = Color.White;
+            chip.SelectionIndicatorColor = Color.White;
+            chip.FontSize = 20;
+            stackLayout.Children.Add(chip);
+            this.Content = stackLayout;
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> Default Value of FontSize 
+   Android : [`14d`]
+   iOS : [`15d`]
+   UWP : [`15d`]
+
 
 ## Customization for SfChipGroup
 

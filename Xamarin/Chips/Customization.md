@@ -292,6 +292,316 @@ namespace ChipCustomization
 
  N> Default value of SelectionIndicatorColor is [`Color.FromHex("#6b6b6b")`]
 
+ ## BackgroundColor
+
+ The [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~BackgroundColor.html) property is used to customize the background color of SfButton.
+
+{% tabs %}
+{% highlight xaml %}
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ChipCustomization"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="ChipCustomization.MainPage">
+  
+   <ContentPage.Content>
+        <StackLayout Margin="8,8,8,8" >
+           <buttons:SfChip  Text="James" 
+                            WidthRequest="150"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            ShowCloseButton="true"
+                            ShowSelectionIndicator="true"
+                            CloseButtonColor = "White"
+                            SelectionIndicatorColor = "White"
+                            BackgroundColor="Aqua"
+                            >
+           </buttons:SfChip>  
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Syncfusion.XForms.Buttons;
+using Xamarin.Forms;
+
+namespace ChipCustomization
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout();
+            SfChip chip = new SfChip();
+            chip.Text = "James";
+            chip.WidthRequest = 150;
+            chip.HorizontalOptions = LayoutOptions.Center;
+            chip.VerticalOptions = LayoutOptions.Center;
+            chip.ShowSelectionIndicator = true;
+            chip.CloseButtonColor = Color.White;
+            chip.SelectionIndicatorColor = Color.White;
+            chip.BackgroundColor = Color.Aqua;
+            stackLayout.Children.Add(chip);
+            this.Content = stackLayout;
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+ N> Default value of BackgroundColor is [`Color.Accent`]
+
+ ## BorderColor
+
+The [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~BorderColor.html) property is used to customize the color of border in SfButton.
+
+% tabs %}
+
+{% highlight xaml %}
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ChipCustomization"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="ChipCustomization.MainPage">
+  
+   <ContentPage.Content>
+        <StackLayout Margin="8,8,8,8" >
+           <buttons:SfChip  Text="James" 
+                            WidthRequest="150"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            ShowCloseButton="true"
+                            ShowSelectionIndicator="true"
+                            CloseButtonColor = "White"
+                            SelectionIndicatorColor = "White"
+                            BorderWidth="4"
+                            BorderColor="Black"
+                            >
+           </buttons:SfChip>  
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Syncfusion.XForms.Buttons;
+using Xamarin.Forms;
+
+namespace ChipCustomization
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout();
+            SfChip chip = new SfChip();
+            chip.Text = "James";
+            chip.WidthRequest = 150;
+            chip.HorizontalOptions = LayoutOptions.Center;
+            chip.VerticalOptions = LayoutOptions.Center;
+            chip.ShowSelectionIndicator = true;
+            chip.CloseButtonColor = Color.White;
+            chip.SelectionIndicatorColor = Color.White;
+            chip.BorderWidth = 4;
+            chip.BorderColor = Color.Black;
+            stackLayout.Children.Add(chip);
+            this.Content = stackLayout;
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+ N> Default value of BorderColor is [`Color.Transparent`]
+
+ ## BorderWidth
+
+The [`BorderWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~BorderWidth.html) property is used to customize the thickness of border in SfButton. 
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ChipCustomization"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="ChipCustomization.MainPage">
+  
+   <ContentPage.Content>
+        <StackLayout Margin="8,8,8,8" >
+           <buttons:SfChip  Text="James" 
+                            WidthRequest="150"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            ShowCloseButton="true"
+                            ShowSelectionIndicator="true"
+                            CloseButtonColor = "White"
+                            SelectionIndicatorColor = "White"
+                            BorderWidth="8"
+                            BorderColor="Black"
+                            >
+           </buttons:SfChip>  
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Syncfusion.XForms.Buttons;
+using Xamarin.Forms;
+
+namespace ChipCustomization
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout();
+            SfChip chip = new SfChip();
+            chip.Text = "James";
+            chip.WidthRequest = 150;
+            chip.HorizontalOptions = LayoutOptions.Center;
+            chip.VerticalOptions = LayoutOptions.Center;
+            chip.ShowSelectionIndicator = true;
+            chip.CloseButtonColor = Color.White;
+            chip.SelectionIndicatorColor = Color.White;
+            chip.BorderWidth = 8;
+            chip.BorderColor = Color.Black;
+            stackLayout.Children.Add(chip);
+            this.Content = stackLayout;
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+ N> Default value of BorderWidth 
+    Android : 0d
+    iOS : 0d
+    UWP : 2d
+
+## CornerRadius
+
+The `CornerRadius` property is used to customize the rounded edges in SfButton as demonstrated in the following code sample.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ChipCustomization"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="ChipCustomization.MainPage">
+  
+   <ContentPage.Content>
+        <StackLayout Margin="8,8,8,8" >
+           <buttons:SfChip  Text="James" 
+                            WidthRequest="150"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            ShowCloseButton="true"
+                            ShowSelectionIndicator="true"
+                            CloseButtonColor = "White"
+                            SelectionIndicatorColor = "White"
+                            BorderWidth="4"
+                            CornerRadius = "4"
+                            BorderColor="Black"
+                            >
+           </buttons:SfChip>  
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Syncfusion.XForms.Buttons;
+using Xamarin.Forms;
+
+namespace ChipCustomization
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout();
+            SfChip chip = new SfChip();
+            chip.Text = "James";
+            chip.WidthRequest = 150;
+            chip.HorizontalOptions = LayoutOptions.Center;
+            chip.VerticalOptions = LayoutOptions.Center;
+            chip.ShowSelectionIndicator = true;
+            chip.CloseButtonColor = Color.White;
+            chip.SelectionIndicatorColor = Color.White;
+            chip.BorderWidth = 4;
+            chip.CornerRadius = 4;
+            chip.BorderColor = Color.Black;
+            stackLayout.Children.Add(chip);
+            this.Content = stackLayout;
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> Default value of CornerRadius is [`Thickness(0)`].
+
 ## Customization for SfChipGroup
 
 The chip group supports to customize the chip background color, chip border color, chip text color and more. The chip group can be customized using the following properties:

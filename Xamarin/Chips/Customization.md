@@ -19,24 +19,62 @@ The `ShowCloseButton` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons
 
 {% highlight xaml %}
 
-<ContentPage.Content>
-         <buttons:SfChip  Text="James" 
-                          ShowCloseButton="true" >
-         </buttons:SfChip>  
-</ContentPage.Content>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ChipCustomization"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="ChipCustomization.MainPage">
+  
+   <ContentPage.Content>
+        <StackLayout Margin="8,8,8,8" >
+           <buttons:SfChip  Text="James" 
+                            WidthRequest="150"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            ShowCloseButton="true" >
+           </buttons:SfChip>  
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfChip chip = new SfChip();
-chip.Text = "James";
-chip.ShowCloseButton = "true";
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Syncfusion.XForms.Buttons;
+using Xamarin.Forms;
+
+namespace ChipCustomization
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout();
+            SfChip chip = new SfChip();
+            chip.Text = "James";
+            chip.WidthRequest = 150;
+            chip.HorizontalOptions = LayoutOptions.Center;
+            chip.VerticalOptions = LayoutOptions.Center;
+            chip.ShowCloseButton = true;
+            stackLayout.Children.Add(chip);
+            this.Content = stackLayout;
+        }
+    }
+}
 
 {% endhighlight %}
 
 {% endtabs %}
-
 
  N> Default value of ShowCloseButton is [`false`]
 
@@ -48,27 +86,65 @@ The `ShowSelectionIndicator` (https://help.syncfusion.com/cr/xamarin/Syncfusion.
 
 {% highlight xaml %}
 
-<ContentPage.Content>
-            <buttons:SfChip  Text="James"
-                             ShowCloseButton="true"
-                             ShowSelectionIndicator=”true” >
-            </buttons:SfChip>  
-</ContentPage.Content>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ChipCustomization"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="ChipCustomization.MainPage">
+  
+   <ContentPage.Content>
+        <StackLayout Margin="8,8,8,8" >
+           <buttons:SfChip  Text="James" 
+                            WidthRequest="150"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            ShowCloseButton="true"
+                            ShowSelectionIndicator="true"
+                            >
+           </buttons:SfChip>  
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfChip chip = new SfChip();
-chip.Text = "James";
-chip.CloseButtonColor = Color.White;
-chip.ShowCloseButton = "true";
-chip.ShowSelectionIndicator = “true”;
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Syncfusion.XForms.Buttons;
+using Xamarin.Forms;
+
+namespace ChipCustomization
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout();
+            SfChip chip = new SfChip();
+            chip.Text = "James";
+            chip.WidthRequest = 150;
+            chip.HorizontalOptions = LayoutOptions.Center;
+            chip.VerticalOptions = LayoutOptions.Center;
+            chip.ShowCloseButton = true;
+            chip.ShowSelectionIndicator = true;
+            stackLayout.Children.Add(chip);
+            this.Content = stackLayout;
+        }
+    }
+}
 
 {% endhighlight %}
 
 {% endtabs %}
-
 
  N> Default value of ShowSelectionIndicator is [`false`]
 
@@ -80,22 +156,61 @@ The `CloseButtonColor` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Button
 
 {% highlight xaml %}
 
-<ContentPage.Content>
-            <buttons:SfChip Text="James"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ChipCustomization"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="ChipCustomization.MainPage">
+  
+   <ContentPage.Content>
+        <StackLayout Margin="8,8,8,8" >
+           <buttons:SfChip  Text="James" 
+                            WidthRequest="150"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            ShowCloseButton="true"
                             CloseButtonColor="White"
-                            ShowCloseButton="true" >
-            </buttons:SfChip>  
-</ContentPage.Content>
+                            >
+           </buttons:SfChip>  
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfChip chip = new SfChip();
-chip.Text = "James";
-chip.CloseButtonColor = Color.White;
-	
-chip.ShowCloseButton = "true";
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Syncfusion.XForms.Buttons;
+using Xamarin.Forms;
+
+namespace ChipCustomization
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout();
+            SfChip chip = new SfChip();
+            chip.Text = "James";
+            chip.WidthRequest = 150;
+            chip.HorizontalOptions = LayoutOptions.Center;
+            chip.VerticalOptions = LayoutOptions.Center;
+            chip.ShowCloseButton = true;
+            chip.CloseButtonColor = Color.White;
+            stackLayout.Children.Add(chip);
+            this.Content = stackLayout;
+        }
+    }
+}
 
 {% endhighlight %}
 
@@ -106,6 +221,74 @@ chip.ShowCloseButton = "true";
  ## SelectionIndicatorColor
 
 The `SelectionIndicatorColor` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfChip~SelectionIndicatorColor.html) to customize the selection indicator color in the SfChip. 
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ChipCustomization"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="ChipCustomization.MainPage">
+
+{% tabs %}
+
+{% highlight xaml %}
+  
+   <ContentPage.Content>
+        <StackLayout Margin="8,8,8,8" >
+           <buttons:SfChip  Text="James" 
+                            WidthRequest="150"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            ShowCloseButton="true"
+                            ShowSelectionIndicator="true"
+                            CloseButtonColor = "White"
+                            SelectionIndicatorColor = "White"
+                            >
+           </buttons:SfChip>  
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Syncfusion.XForms.Buttons;
+using Xamarin.Forms;
+
+namespace ChipCustomization
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout();
+            SfChip chip = new SfChip();
+            chip.Text = "James";
+            chip.WidthRequest = 150;
+            chip.HorizontalOptions = LayoutOptions.Center;
+            chip.VerticalOptions = LayoutOptions.Center;
+            chip.ShowCloseButton = true;
+            chip.ShowSelectionIndicator = true;
+            chip.CloseButtonColor = Color.White;
+            chip.SelectionIndicatorColor = Color.White;
+            stackLayout.Children.Add(chip);
+            this.Content = stackLayout;
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
 
  N> Default value of SelectionIndicatorColor is [`Color.FromHex("#6b6b6b")`]
 
@@ -592,7 +775,7 @@ The `ChipBorderWidth` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons
 
 ## ItemHeight
 
-The `ItemHeight` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfChipGroup~ItemHeight.html) to customize the height of the item in the SfChipGroup.
+The `ItemHeight` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfChipGroup~ItemHeight.html) to customize the heightï¿½of the item in the SfChipGroup.
 
 {% tabs %}
 

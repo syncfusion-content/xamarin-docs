@@ -373,7 +373,6 @@ namespace ChipCustomization
 
 {% endtabs %}
 
-![SfChip with BackgroundColor](images/customization_images/chip_chipbackgroundcolor_image.png)
 
  N> Default value of BackgroundColor is [`Color.Accent`]
 

@@ -1785,7 +1785,7 @@ namespace ChipCustomization
 
  N> Default value of SelectedChipTextColor is [`Color.White`]
 
- ## ChipBackgroundColor
+## ChipBackgroundColor
 
 The `ChipBackgroundColor` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfChipGroup~ChipBackgroundColor.html) to customize the background color of the SfChipGroup. 
 

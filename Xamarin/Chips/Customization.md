@@ -1006,7 +1006,7 @@ namespace ChipCustomization
 
 {% endtabs %}
 
-![SfChip with TextAlignment](images/customization_images/TextAlignment.png)
+![SfChip with TextAlignment](images/customization_images/chip_textalignment_image.png)
 
 N> Default value of HorizontalTextAlignment and VerticalTextAlignment is [`TextAlignment.Center`].
 
@@ -1511,7 +1511,7 @@ namespace Chips
 
 {% endtabs %}
 
-![SfChipGroup with InputView](images/customization_images/chipgroup_selectedchipbackgroundcolor_image.png)
+![SfChipGroup with InputView](images/customization_images/chipgroup_inputview_image.png)
 
 N> The InputView is visible only in Input type. Default value of InputView is [`null`]. 
 

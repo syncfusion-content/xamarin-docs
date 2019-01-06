@@ -1340,7 +1340,7 @@ The [`Command`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.But
 
 {% highlight c# %}
 
-// ViewModel
+// ViewModel class for Command Demo.
 
 public class CommandDemoViewModel : INotifyPropertyChanged
 {
@@ -1383,7 +1383,7 @@ public class CommandDemoViewModel : INotifyPropertyChanged
 
 {% endtabs %}
 
-N> Default value is [`null`].
+N> Default value of Command is [`null`].
 
 ## Customization for SfChipGroup
 
@@ -1491,19 +1491,22 @@ xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Butto
 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 xmlns:local="clr-namespace:Chips"
 x:Class="Chips.GettingStarted">
-<ContentPage.Content>
-   <ContentPage.BindingContext>
+
+<ContentPage.BindingContext>
       <local:CommandDemoViewModel />
-   </ContentPage.BindingContext>
+</ContentPage.BindingContext>
+<ContentPage.Content>
 <button:SfChipGroup x:Name="chipGroup" Text="ChipGroup" BackgroundColor="{Binding Background}" Command="{Bindind ChipGroupCommand}">
 </button:SfChipGroup>
 <ContentPage.Content>
+
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-// ViewModel 
+// ViewModel Class for Command Demo.
 
 using Syncfusion.XForms.Buttons;
 using System.Collections.ObjectModel;

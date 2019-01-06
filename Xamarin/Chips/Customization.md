@@ -841,7 +841,7 @@ namespace ChipCustomization
 
 {% endtabs %}
 
-![SfChip with FontSize](images/customization_images/chipfontsize_image.png)
+![SfChip with FontSize](images/customization_images/chip_fontsize_image.png)
 
 N> Default Value of FontSize 
    Android : [`14d`]

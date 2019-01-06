@@ -1754,12 +1754,26 @@ The `ChipBackgroundColor` (https://help.syncfusion.com/cr/xamarin/Syncfusion.But
 
 {% highlight xaml %}
 
-<buttons:SfChipGroup
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ChipCustomization"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="ChipCustomization.MainPage">
+ 
+ <ContentPage.BindingContext>
+        <local:ViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout Margin="10,10,10,10">
+            <buttons:SfChipGroup
                 ItemsSource="{Binding ChoiceItems}"
-                SelectedChipBackgroundColor="White"
                 ChipBackgroundColor="Aqua"
                 Type="Choice">
- </buttons:SfChipGroup>
+            </buttons:SfChipGroup>
+        </StackLayout>  
+    </ContentPage.Content>
+    
+</ContentPage>
 
 {% endhighlight %}
 
@@ -1776,13 +1790,27 @@ The `ChipBorderColor` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons
 
 {% highlight xaml %}
 
- <buttons:SfChipGroup
+ <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ChipCustomization"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="ChipCustomization.MainPage">
+ 
+ <ContentPage.BindingContext>
+        <local:ViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout Margin="10,10,10,10">
+            <buttons:SfChipGroup
                 ItemsSource="{Binding ChoiceItems}"
                 ChipBorderWidth="5" 
-                ChipBorderColor="Red"
-                ChipBackgroundColor="Fuchsia"
-                Type="Filter">
-</buttons:SfChipGroup>
+                ChipBorderColor="Black"
+                ChipBackgroundColor="Aqua">
+            </buttons:SfChipGroup>
+        </StackLayout>  
+    </ContentPage.Content>
+    
+</ContentPage>
 
 {% endhighlight %}
 
@@ -1802,11 +1830,25 @@ The `ChipTextColor` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.X
 
 {% highlight xaml %}
 
-<buttons:SfChipGroup
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ChipCustomization"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="ChipCustomization.MainPage">
+ 
+ <ContentPage.BindingContext>
+        <local:ViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout Margin="10,10,10,10">
+            <buttons:SfChipGroup
                 ItemsSource="{Binding ChoiceItems}"
-                ChipTextColor="Blue"
-                Type="Choice">
-</buttons:SfChipGroup>
+                ChipTextColor="Blue">
+            </buttons:SfChipGroup>
+        </StackLayout>  
+    </ContentPage.Content>
+    
+</ContentPage>
 
 {% endhighlight %}
 
@@ -1827,11 +1869,25 @@ The `ChipTextSize` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XF
 
 {% highlight xaml %}
 
-<buttons:SfChipGroup 
-                ItemsSource="{Binding ChoiceItems}" 
-                ChipTextSize="20" 
-                Type="Filter"> 
-</buttons:SfChipGroup>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ChipCustomization"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="ChipCustomization.MainPage">
+ 
+ <ContentPage.BindingContext>
+        <local:ViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout Margin="8,8,0,0">
+            <buttons:SfChipGroup
+                ItemsSource="{Binding ChoiceItems}"
+                ChipTextSize="10">
+            </buttons:SfChipGroup>
+        </StackLayout>  
+    </ContentPage.Content>
+    
+</ContentPage>
 
 {% endhighlight %}
 
@@ -1853,11 +1909,25 @@ The `ChipPadding` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XFo
 
 {% highlight xaml %}
 
-  <buttons:SfChipGroup
+  <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ChipCustomization"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="ChipCustomization.MainPage">
+ 
+ <ContentPage.BindingContext>
+        <local:ViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout Margin="8,8,0,0">
+            <buttons:SfChipGroup
                 ItemsSource="{Binding ChoiceItems}"
-                ChipPadding="8,0,0,0" 
-                Type="Filter">
+                ChipPadding="8,0,0,0">
             </buttons:SfChipGroup>
+        </StackLayout>  
+    </ContentPage.Content>
+    
+</ContentPage>
 
 {% endhighlight %}
 
@@ -1867,9 +1937,7 @@ The `ChipPadding` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XFo
 
 {% endtabs %}
 	
-
  N> Default value of ChipPadding is [`Thickness(5d, 0, 0, 0)`]
-
 
 ## ChipBorderWidth
 
@@ -1879,12 +1947,26 @@ The `ChipBorderWidth` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons
 
 {% highlight xaml %}
 
-<buttons:SfChipGroup
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ChipCustomization"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="ChipCustomization.MainPage">
+ 
+ <ContentPage.BindingContext>
+        <local:ViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout Margin="8,8,0,0">
+            <buttons:SfChipGroup
                 ItemsSource="{Binding ChoiceItems}"
                 ChipBorderWidth="5" 
-                ChipBorderColor="Black"
-                Type="Filter">
+                ChipBorderColor="Black">
             </buttons:SfChipGroup>
+        </StackLayout>  
+    </ContentPage.Content>
+    
+</ContentPage>
 
 {% endhighlight %}
 
@@ -1893,7 +1975,6 @@ The `ChipBorderWidth` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons
 {% endhighlight %}
 
 {% endtabs %}
-	
 
  N> Default value of ChipBorderWidth is [`0d`]
 
@@ -1905,11 +1986,25 @@ The `ItemHeight` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XFor
 
 {% highlight xaml %}
 
-<buttons:SfChipGroup
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ChipCustomization"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="ChipCustomization.MainPage">
+ 
+ <ContentPage.BindingContext>
+        <local:ViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout Margin="8,8,0,0">
+            <buttons:SfChipGroup
                 ItemsSource="{Binding ChoiceItems}"
-                ItemHeight="60"
-                Type="Filter">
+                ItemHeight="60">
             </buttons:SfChipGroup>
+        </StackLayout>  
+    </ContentPage.Content>
+    
+</ContentPage>
 
 {% endhighlight %}
 
@@ -1919,7 +2014,6 @@ The `ItemHeight` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XFor
 
 {% endtabs %}
 
-
  N> Default value of ItemHeight  is [`double.NaN`]
 
 ## ShowIcon
@@ -1927,9 +2021,16 @@ The `ItemHeight` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XFor
 You can enable the icon image using the [`ShowIcon`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfChipGroup~ShowIcon.html) property to know whether any image appears to the SfChipGroup.
 
 {% tabs %}
+
 {% highlight xaml %}
 
- <ContentPage.BindingContext>
+ <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ChipCustomization"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="ChipCustomization.MainPage">
+ 
+<ContentPage.BindingContext>
         <local:ViewModel x:Name="viewModel"/>
     </ContentPage.BindingContext>
     <ContentPage.Content>
@@ -1954,12 +2055,34 @@ You can enable the icon image using the [`ShowIcon`](https://help.syncfusion.com
             </buttons:SfChipGroup>  
         </Grid>
     </ContentPage.Content>
+    
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-//Model class for chips
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Input;
+using Syncfusion.XForms.Buttons;
+using Xamarin.Forms;
+
+namespace ChipCustomization
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+        }
+    }
     public class Person
     {
         public string Name
@@ -1974,8 +2097,6 @@ You can enable the icon image using the [`ShowIcon`](https://help.syncfusion.com
             set;
         }
     }
-
-// View Model Class for chips
     public class ViewModel : INotifyPropertyChanged
     {
         private ObservableCollection<Person> employees;
@@ -1995,11 +2116,8 @@ You can enable the icon image using the [`ShowIcon`](https://help.syncfusion.com
         public ViewModel()
         {
             employees = new ObservableCollection<Person>();
-            employees.Add(new Person() {Image="ChipUserContact.png", Name = "John" });
-            employees.Add(new Person() {Image = "ChipUserContact.png", Name = "James" });
-            employees.Add(new Person() {Image = "ChipUserContact.png", Name = "Linda" });
-            employees.Add(new Person() {Image = "ChipUserContact.png", Name = "Rose" });
-            employees.Add(new Person() { Image = "ChipUserContact.png", Name = "Mark" });
+            employees.Add(new Person() { Image = "ChipUserContact.png", Name = "John" });
+            employees.Add(new Person() { Image = "ChipUserContact.png", Name = "James" });
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -2012,13 +2130,133 @@ You can enable the icon image using the [`ShowIcon`](https://help.syncfusion.com
             }
         }
     }
+}
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ## CloseButtonColor
 
 The `CloseButtonColor` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfChipGroup~CloseButtonColor.html) to customize the close button color of SfChipGroup. 
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ChipCustomization"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="ChipCustomization.MainPage">
+ 
+<ContentPage.BindingContext>
+        <local:ViewModel x:Name="viewModel"/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout Margin="8,8,0,0">
+            <buttons:SfChipGroup 
+                ItemsSource="{Binding Employees}" 
+                ImageMemberPath="Image"
+                Type="Input"
+                ChipImageWidth="30"
+                ShowIcon="true"
+                CloseButtonColor="White"
+                ChipBackgroundColor="Aqua"
+                DisplayMemberPath="Name">
+                <buttons:SfChipGroup.ChipLayout>
+                    <FlexLayout 
+                        HorizontalOptions="Start" 
+                        VerticalOptions="Center" 
+                        Direction="Row" 
+                        Wrap="Wrap"
+                        JustifyContent="Start"
+                        AlignContent="Start" 
+                        AlignItems="Start"/>
+                </buttons:SfChipGroup.ChipLayout>
+            </buttons:SfChipGroup>  
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Input;
+using Syncfusion.XForms.Buttons;
+using Xamarin.Forms;
+
+namespace ChipCustomization
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+        }
+    }
+    public class Person
+    {
+        public string Name
+        {
+            get;
+            set;
+        }
+
+        public string Image
+        {
+            get;
+            set;
+        }
+    }
+    public class ViewModel : INotifyPropertyChanged
+    {
+        private ObservableCollection<Person> employees;
+        public ObservableCollection<Person> Employees
+        {
+            get
+            {
+                return employees;
+            }
+            set
+            {
+                Employees = value;
+                OnPropertyChanged("Employees");
+            }
+        }
+
+        public ViewModel()
+        {
+            employees = new ObservableCollection<Person>();
+            employees.Add(new Person() { Image = "ChipUserContact.png", Name = "John" });
+            employees.Add(new Person() { Image = "ChipUserContact.png", Name = "James" });
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        public void OnPropertyChanged(string property)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(property));
+            }
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
 
  N> Default value of CloseButtonColor is [`Color.Black`]
 
@@ -2026,11 +2264,240 @@ The `CloseButtonColor` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Button
 
 The `SelectionIndicatorColor` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfChipGroup~SelectionIndicatorColor.html) to customize the selection indicator color of the SfChipGroup. 
 
+{% tabs %}
+
+{% highlight xaml %}
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ChipCustomization"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="ChipCustomization.MainPage">
+ 
+<ContentPage.BindingContext>
+        <local:ViewModel x:Name="viewModel"/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout Margin="8,8,0,0">
+            <buttons:SfChipGroup 
+                ItemsSource="{Binding Employees}" 
+                Type="Filter"
+                SelectionIndicatorColor="Black"
+                ChipImageWidth="30"
+                CloseButtonColor="White"
+                ChipBackgroundColor="Aqua"
+                DisplayMemberPath="Name">
+                <buttons:SfChipGroup.ChipLayout>
+                    <FlexLayout 
+                        HorizontalOptions="Start" 
+                        VerticalOptions="Center" 
+                        Direction="Row" 
+                        Wrap="Wrap"
+                        JustifyContent="Start"
+                        AlignContent="Start" 
+                        AlignItems="Start"/>
+                </buttons:SfChipGroup.ChipLayout>
+            </buttons:SfChipGroup>  
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Input;
+using Syncfusion.XForms.Buttons;
+using Xamarin.Forms;
+
+namespace ChipCustomization
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+        }
+    }
+    public class Person
+    {
+        public string Name
+        {
+            get;
+            set;
+        }
+    }
+    public class ViewModel : INotifyPropertyChanged
+    {
+        private ObservableCollection<Person> employees;
+        public ObservableCollection<Person> Employees
+        {
+            get
+            {
+                return employees;
+            }
+            set
+            {
+                Employees = value;
+                OnPropertyChanged("Employees");
+            }
+        }
+
+        public ViewModel()
+        {
+            employees = new ObservableCollection<Person>();
+            employees.Add(new Person() { Name = "John" });
+            employees.Add(new Person() { Name = "James" });
+            employees.Add(new Person() { Name = "Jacob" });
+
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        public void OnPropertyChanged(string property)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(property));
+            }
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
  N> Default value of SelectionIndicatorColor is [`Color.White`]
 
 ## ChipImageWidth
 
 The `ChipImageWidth` to customize the width of icon image in SfChipGroup. 
 
- N> Default value of ChipImageWidth is [`26`]
+{% tabs %}
 
+{% highlight xaml %}
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ChipCustomization"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="ChipCustomization.MainPage">
+ 
+<ContentPage.BindingContext>
+        <local:ViewModel x:Name="viewModel"/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout Margin="8,8,0,0">
+            <buttons:SfChipGroup 
+                ItemsSource="{Binding Employees}" 
+                ImageMemberPath="Image"
+                Type="Choice"
+                ChipImageWidth="30"
+                ShowIcon="true"
+                ChipBackgroundColor="Aqua"
+                DisplayMemberPath="Name">
+                <buttons:SfChipGroup.ChipLayout>
+                    <FlexLayout 
+                        HorizontalOptions="Start" 
+                        VerticalOptions="Center" 
+                        Direction="Row" 
+                        Wrap="Wrap"
+                        JustifyContent="Start"
+                        AlignContent="Start" 
+                        AlignItems="Start"/>
+                </buttons:SfChipGroup.ChipLayout>
+            </buttons:SfChipGroup>  
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Input;
+using Syncfusion.XForms.Buttons;
+using Xamarin.Forms;
+
+namespace ChipCustomization
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+        }
+    }
+    public class Person
+    {
+        public string Name
+        {
+            get;
+            set;
+        }
+
+        public string Image
+        {
+            get;
+            set;
+        }
+    }
+    public class ViewModel : INotifyPropertyChanged
+    {
+        private ObservableCollection<Person> employees;
+        public ObservableCollection<Person> Employees
+        {
+            get
+            {
+                return employees;
+            }
+            set
+            {
+                Employees = value;
+                OnPropertyChanged("Employees");
+            }
+        }
+
+        public ViewModel()
+        {
+            employees = new ObservableCollection<Person>();
+            employees.Add(new Person() { Image = "ChipUserContact.png", Name = "John" });
+            employees.Add(new Person() { Image = "ChipUserContact.png", Name = "James" });
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        public void OnPropertyChanged(string property)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(property));
+            }
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+ N> Default value of ChipImageWidth is [`26`]

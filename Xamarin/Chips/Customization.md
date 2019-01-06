@@ -1495,8 +1495,12 @@ x:Class="Chips.GettingStarted">
 <ContentPage.BindingContext>
       <local:CommandDemoViewModel />
 </ContentPage.BindingContext>
+
 <ContentPage.Content>
-<button:SfChipGroup x:Name="chipGroup" Text="ChipGroup" BackgroundColor="{Binding Background}" Command="{Bindind ChipGroupCommand}">
+<button:SfChipGroup x:Name="chipGroup" 
+                    Text="ChipGroup" 
+                    BackgroundColor="{Binding Background}" 
+                    Command="{Bindind ChipGroupCommand}">
 </button:SfChipGroup>
 <ContentPage.Content>
 
@@ -1566,12 +1570,12 @@ The `SelectedChipBackgroundColor` (https://help.syncfusion.com/cr/xamarin/Syncfu
 {% highlight xaml %}
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-     xmlns:local="clr-namespace:ChipCustomization"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ChipCustomization"
              xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
-     x:Class="ChipCustomization.MainPage">
-  
-    <ContentPage.BindingContext>
+             x:Class="ChipCustomization.MainPage">
+ 
+ <ContentPage.BindingContext>
         <local:ViewModel/>
     </ContentPage.BindingContext>
     <ContentPage.Content>
@@ -1581,18 +1585,9 @@ The `SelectedChipBackgroundColor` (https://help.syncfusion.com/cr/xamarin/Syncfu
                 SelectedChipBackgroundColor="Fuchsia"
                 Type="Choice">
             </buttons:SfChipGroup>
-            <StackLayout Orientation="Horizontal">
-            <Label 
-                Text="Name:" 
-                FontAttributes="Bold" 
-                FontSize="14" />
-            <Label 
-                Text="{Binding Result}"
-                FontAttributes="Bold" 
-                FontSize="14" />
-            </StackLayout>
         </StackLayout>  
     </ContentPage.Content>
+    
 </ContentPage>
 
 {% endhighlight %}
@@ -1601,12 +1596,32 @@ The `SelectedChipBackgroundColor` (https://help.syncfusion.com/cr/xamarin/Syncfu
 
 // ViewModel
 
- public class ViewModel : INotifyPropertyChanged
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Input;
+using Syncfusion.XForms.Buttons;
+using Xamarin.Forms;
+
+namespace ChipCustomization
+{
+    public partial class MainPage : ContentPage
     {
-    
-        private List<string> choiceItems = new List<string>() { "Washer", "Television", "Air Conditioner" };
-       
-        
+        public MainPage()
+        {
+            InitializeComponent();
+        }
+    }
+    public class ViewModel : INotifyPropertyChanged
+    {
+
+        private List<string> choiceItems = new List<string>() { "John", "James", "Jacob" };
+
         public List<string> ChoiceItems
         {
             get
@@ -1630,6 +1645,7 @@ The `SelectedChipBackgroundColor` (https://help.syncfusion.com/cr/xamarin/Syncfu
             }
         }
     }
+}
 
 {% endhighlight %}
 
@@ -1646,12 +1662,12 @@ The `SelectedChipTextColor` (https://help.syncfusion.com/cr/xamarin/Syncfusion.B
 {% highlight xaml %}
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-     xmlns:local="clr-namespace:ChipCustomization"
-     xmlns:buttons="clr-     namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
-     x:Class="ChipCustomization.MainPage">
-  
-    <ContentPage.BindingContext>
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ChipCustomization"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="ChipCustomization.MainPage">
+ 
+ <ContentPage.BindingContext>
         <local:ViewModel/>
     </ContentPage.BindingContext>
     <ContentPage.Content>
@@ -1662,32 +1678,43 @@ The `SelectedChipTextColor` (https://help.syncfusion.com/cr/xamarin/Syncfusion.B
                 SelectedChipTextColor="Fuchsia"
                 Type="Choice">
             </buttons:SfChipGroup>
-            <StackLayout Orientation="Horizontal">
-            <Label 
-                Text="Name:" 
-                FontAttributes="Bold" 
-                FontSize="14" />
-            <Label 
-                Text="{Binding Result}"
-                FontAttributes="Bold" 
-                FontSize="14" />
-            </StackLayout>
         </StackLayout>  
     </ContentPage.Content>
+    
 </ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-// ViewModel
+// ViewModel class.
 
- public class ViewModel : INotifyPropertyChanged
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Input;
+using Syncfusion.XForms.Buttons;
+using Xamarin.Forms;
+
+namespace ChipCustomization
+{
+    public partial class MainPage : ContentPage
     {
-    
-        private List<string> choiceItems = new List<string>() { "Washer", "Television", "Air Conditioner" };
-       
-        
+        public MainPage()
+        {
+            InitializeComponent();
+        }
+    }
+    public class ViewModel : INotifyPropertyChanged
+    {
+
+        private List<string> choiceItems = new List<string>() { "John", "James", "Jacob" };
+
         public List<string> ChoiceItems
         {
             get
@@ -1711,6 +1738,7 @@ The `SelectedChipTextColor` (https://help.syncfusion.com/cr/xamarin/Syncfusion.B
             }
         }
     }
+}
 
 {% endhighlight %}
 

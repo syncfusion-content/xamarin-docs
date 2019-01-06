@@ -792,7 +792,7 @@ The [`FontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForm
                             ShowSelectionIndicator="true"
                             CloseButtonColor = "White"
                             SelectionIndicatorColor = "White"
-                            FontSize = "20"
+                            FontSize = "10"
                             >
            </buttons:SfChip>  
         </StackLayout>
@@ -830,7 +830,7 @@ namespace ChipCustomization
             chip.ShowSelectionIndicator = true;
             chip.CloseButtonColor = Color.White;
             chip.SelectionIndicatorColor = Color.White;
-            chip.FontSize = 20;
+            chip.FontSize = 10;
             stackLayout.Children.Add(chip);
             this.Content = stackLayout;
         }

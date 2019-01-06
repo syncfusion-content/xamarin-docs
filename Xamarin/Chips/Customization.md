@@ -826,6 +826,564 @@ N> Default Value of FontSize
    iOS : [`15d`]
    UWP : [`15d`]
 
+## TextColor
+
+The [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~TextColor.html) property is used to customize the color of text in SfButton.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ChipCustomization"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="ChipCustomization.MainPage">
+  
+   <ContentPage.Content>
+        <StackLayout Margin="8,8,8,8" >
+           <buttons:SfChip  Text="James" 
+                            WidthRequest="150"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            ShowCloseButton="true"
+                            ShowSelectionIndicator="true"
+                            CloseButtonColor = "White"
+                            SelectionIndicatorColor = "White"
+                            BackgroundColor="Aqua"
+                            TextColor="Black"
+                            >
+           </buttons:SfChip>  
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Syncfusion.XForms.Buttons;
+using Xamarin.Forms;
+
+namespace ChipCustomization
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout();
+            SfChip chip = new SfChip();
+            chip.Text = "James";
+            chip.WidthRequest = 150;
+            chip.HorizontalOptions = LayoutOptions.Center;
+            chip.VerticalOptions = LayoutOptions.Center;
+            chip.ShowSelectionIndicator = true;
+            chip.CloseButtonColor = Color.White;
+            chip.SelectionIndicatorColor = Color.White;
+            chip.BackgroundColor = Color.Aqua;
+            chip.TextColor = Color.Black;
+            stackLayout.Children.Add(chip);
+            this.Content = stackLayout;
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> Default value of TextColor is [`Color.White`].
+
+## TextAlignment
+
+The [`HorizontalTextAlignment `](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~HorizontalTextAlignment.html) and [`VerticalTextAlignment `](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~VerticalTextAlignment.html) properties are used to customize the alignment of text in SfButton.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ChipCustomization"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="ChipCustomization.MainPage">
+  
+   <ContentPage.Content>
+        <StackLayout Margin="8,8,8,8" >
+           <buttons:SfChip  Text="James" 
+                            WidthRequest="150"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            ShowCloseButton="true"
+                            ShowSelectionIndicator="true"
+                            CloseButtonColor = "White"
+                            SelectionIndicatorColor = "White"
+                            BackgroundColor="Aqua"
+                            HorizontalTextAlignment="Start"
+                            VerticalTextAlignment="Start"
+                            TextColor="Black"
+                            >
+           </buttons:SfChip>  
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Syncfusion.XForms.Buttons;
+using Xamarin.Forms;
+
+namespace ChipCustomization
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout();
+            SfChip chip = new SfChip();
+            chip.Text = "James";
+            chip.WidthRequest = 150;
+            chip.HorizontalOptions = LayoutOptions.Center;
+            chip.VerticalOptions = LayoutOptions.Center;
+            chip.ShowSelectionIndicator = true;
+            chip.CloseButtonColor = Color.White;
+            chip.SelectionIndicatorColor = Color.White;
+            chip.BackgroundColor = Color.Aqua;
+            chip.HorizontalTextAlignment = TextAlignment.Start;
+            chip.VerticalTextAlignment = TextAlignment.Start;
+            chip.TextColor = Color.Black;
+            stackLayout.Children.Add(chip);
+            this.Content = stackLayout;
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> Default value of HorizontalTextAlignment and VerticalTextAlignment is [`TextAlignment.Center`].
+
+## ShowIcon
+
+You can enable the Icon image using the [`ShowIcon`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~ShowIcon.html) property to know whether any image appears to the SfButton.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ChipCustomization"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="ChipCustomization.MainPage">
+  
+   <ContentPage.Content>
+        <StackLayout Margin="8,8,8,8" >
+           <buttons:SfChip  Text="James" 
+                            WidthRequest="150"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            ShowCloseButton="true"
+                            CloseButtonColor = "White"
+                            BackgroundColor="Aqua"
+                            TextColor="Black"
+                            ImageSource="ChipUserContact.png"
+                            ShowIcon="true"
+                            >
+           </buttons:SfChip>  
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Syncfusion.XForms.Buttons;
+using Xamarin.Forms;
+
+namespace ChipCustomization
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout();
+            SfChip chip = new SfChip();
+            chip.Text = "James";
+            chip.WidthRequest = 150;
+            chip.HorizontalOptions = LayoutOptions.Center;
+            chip.VerticalOptions = LayoutOptions.Center;
+            chip.CloseButtonColor = Color.White;
+            chip.BackgroundColor = Color.Aqua;
+            chip.TextColor = Color.Black;
+            chip.ImageSource = "ChipUserContact.png";
+            chip.ShowIcon = true;
+            stackLayout.Children.Add(chip);
+            this.Content = stackLayout;
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> Default value of ShowIcon is [`false`].
+
+## ImageSource
+
+The [`ImageSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~ImageSource.html) property is used to customize the icon image of SfButton by adding a custom image.
+
+N> Enable the [`ShowIcon`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~ShowIcon.html) property to enable the [`ImageSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~ImageSource.html) property. 
+
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ChipCustomization"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="ChipCustomization.MainPage">
+  
+   <ContentPage.Content>
+        <StackLayout Margin="8,8,8,8" >
+           <buttons:SfChip  Text="James" 
+                            WidthRequest="150"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            ShowCloseButton="true"
+                            CloseButtonColor = "White"
+                            BackgroundColor="Aqua"
+                            TextColor="Black"
+                            ImageSource="ChipUserContact.png"
+                            ShowIcon="true"
+                            >
+           </buttons:SfChip>  
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Syncfusion.XForms.Buttons;
+using Xamarin.Forms;
+
+namespace ChipCustomization
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout();
+            SfChip chip = new SfChip();
+            chip.Text = "James";
+            chip.WidthRequest = 150;
+            chip.HorizontalOptions = LayoutOptions.Center;
+            chip.VerticalOptions = LayoutOptions.Center;
+            chip.CloseButtonColor = Color.White;
+            chip.BackgroundColor = Color.Aqua;
+            chip.TextColor = Color.Black;
+            chip.ImageSource = "ChipUserContact.png";
+            chip.ShowIcon = true;
+            stackLayout.Children.Add(chip);
+            this.Content = stackLayout;
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## ImageWidth
+
+The [`ImageWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~ImageWidth.html) property is used to customize the width of icon image in SfButton.
+
+N> Enable the [`ShowIcon`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~ShowIcon.html) property to enable the [`ImageSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~ImageSource.html) property. 
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ChipCustomization"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="ChipCustomization.MainPage">
+  
+   <ContentPage.Content>
+        <StackLayout Margin="8,8,8,8" >
+           <buttons:SfChip  Text="James" 
+                            WidthRequest="150"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            ShowCloseButton="true"
+                            CloseButtonColor = "White"
+                            BackgroundColor="Aqua"
+                            TextColor="Black"
+                            ImageSource="ChipUserContact.png"
+                            ImageWidth="25"
+                            ShowIcon="true"
+                            >
+           </buttons:SfChip>  
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Syncfusion.XForms.Buttons;
+using Xamarin.Forms;
+
+namespace ChipCustomization
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout();
+            SfChip chip = new SfChip();
+            chip.Text = "James";
+            chip.WidthRequest = 150;
+            chip.HorizontalOptions = LayoutOptions.Center;
+            chip.VerticalOptions = LayoutOptions.Center;
+            chip.CloseButtonColor = Color.White;
+            chip.BackgroundColor = Color.Aqua;
+            chip.TextColor = Color.Black;
+            chip.ImageSource = "ChipUserContact.png";
+            chip.ImageWidth = 25;
+            chip.ShowIcon = true;
+            stackLayout.Children.Add(chip);
+            this.Content = stackLayout;
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> Default value of ImageWidth is [`32`].
+
+## ImageAlignment 
+
+The [`ImageAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~ImageAlignment.html) property is used to customize the alignment of icon image in SfButton.
+
+N> Enable the [`ShowIcon`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~ShowIcon.html) property to enable the [`ImageSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~ImageSource.html) property. 
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ChipCustomization"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="ChipCustomization.MainPage">
+  
+   <ContentPage.Content>
+        <StackLayout Margin="8,8,8,8" >
+           <buttons:SfChip  Text="James" 
+                            WidthRequest="150"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            BackgroundColor="Aqua"
+                            TextColor="Black"
+                            ImageSource="ChipUserContact.png"
+                            ImageAlignment="End"
+                            ImageWidth="25"
+                            ShowIcon="true"
+                            >
+           </buttons:SfChip>  
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Syncfusion.XForms.Buttons;
+using Xamarin.Forms;
+
+namespace ChipCustomization
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout();
+            SfChip chip = new SfChip();
+            chip.Text = "James";
+            chip.WidthRequest = 150;
+            chip.HorizontalOptions = LayoutOptions.Center;
+            chip.VerticalOptions = LayoutOptions.Center;
+            chip.BackgroundColor = Color.Aqua;
+            chip.TextColor = Color.Black;
+            chip.ImageSource = "ChipUserContact.png";
+            chip.ImageAlignment = Alignment.End;
+            chip.ImageWidth = 25;
+            chip.ShowIcon = true;
+            stackLayout.Children.Add(chip);
+            this.Content = stackLayout;
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> Default value of ImageAlignment is [`Alignment.Start`].
+
+## Command
+
+The [`Command`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~Command.html)  property is used to associate a command with an instance of SfButton. This property is most often set with MVVM pattern to bind callbacks back into the ViewModel.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+ <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ChipCustomization"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="ChipCustomization.MainPage">
+ 
+   <ContentPage.BindingContext>
+       <local:CommandDemoViewModel />
+   </ContentPage.BindingContext>
+
+   <ContentPage.Content>
+        <StackLayout Margin="8,8,0,0">
+            <buttons:SfChip x:Name="Chip" 
+                            Text="Chip"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            WidthRequest="150"
+                            ShowCloseButton="true"
+                            BackgroundColor="{Binding Background}"
+                            Command="{Binding ButtonCommand}">
+
+           
+           </buttons:SfChip>  
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+// ViewModel
+
+public class CommandDemoViewModel : INotifyPropertyChanged
+{
+
+    private Color _background = Color.Accent;
+
+    public Color Background
+    {
+        get { return _background; }
+        set
+        {
+            _background = value;
+            NotifyPropertyChanged();
+        }
+    }
+
+    private void NotifyPropertyChanged([CallerMemberName] String propertyName = "")
+    {
+        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+    }
+
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    public CommandDemoViewModel()
+    {
+        BackgroundColor();
+        this.Background=Color.Accent;
+    }
+
+    private void BackgroundColor()
+    {
+        this.Background = this.Background == Color.DeepSkyBlue ? Color.Accent : Color.DeepSkyBlue;
+    }
+
+    public ICommand ButtonCommand => new Command(BackgroundColor);
+
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> Default value is [`null`].
 
 ## Customization for SfChipGroup
 

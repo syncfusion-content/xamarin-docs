@@ -2555,4 +2555,6 @@ namespace ChipCustomization
 
 {% endtabs %}
 
+![SfChipGroup with ChipImageWidth](images/customization_images/chipgroup_chipimagewidth_image.png)
+
  N> Default value of ChipImageWidth is [`26`]

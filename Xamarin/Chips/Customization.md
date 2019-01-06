@@ -80,7 +80,7 @@ namespace ChipCustomization
 
  N> Default value of ShowCloseButton is [`false`]
 
- ## ShowSelectionIndicator
+## ShowSelectionIndicator
 
 The `ShowSelectionIndicator` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfChip~ShowSelectionIndicator.html) to to set the visible state of selection indicator in the SfChip.
 
@@ -152,7 +152,7 @@ namespace ChipCustomization
 
  N> Default value of ShowSelectionIndicator is [`false`]
 
- ## CloseButtonColor
+## CloseButtonColor
 
 The `CloseButtonColor` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfChip~CloseButtonColor.html) to customize the  color of the close button in the SfChip.
 
@@ -224,7 +224,7 @@ namespace ChipCustomization
 
  N> Default value of CloseButtonColor is [`Color.FromHex("#6b6b6b")`]
 
- ## SelectionIndicatorColor
+## SelectionIndicatorColor
 
 The `SelectionIndicatorColor` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfChip~SelectionIndicatorColor.html) to customize the selection indicator color in the SfChip. 
 
@@ -300,7 +300,7 @@ namespace ChipCustomization
 
  N> Default value of SelectionIndicatorColor is [`Color.FromHex("#6b6b6b")`]
 
- ## BackgroundColor
+## BackgroundColor
 
  The [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~BackgroundColor.html) property is used to customize the background color of SfButton.
 
@@ -377,7 +377,7 @@ namespace ChipCustomization
 
  N> Default value of BackgroundColor is [`Color.Accent`]
 
- ## BorderColor
+## BorderColor
 
 The [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~BorderColor.html) property is used to customize the color of border in SfButton.
 
@@ -456,7 +456,7 @@ namespace ChipCustomization
 
  N> Default value of BorderColor is [`Color.Transparent`]
 
- ## BorderWidth
+## BorderWidth
 
 The [`BorderWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~BorderWidth.html) property is used to customize the thickness of border in SfButton. 
 

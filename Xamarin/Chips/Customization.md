@@ -1515,90 +1515,6 @@ namespace Chips
 
 N> The InputView is visible only in Input type. Default value of InputView is [`null`]. 
 
- ## Command
-
-The [`Command`] (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfChipGroup~Command.html)  property is used to associate a command with an instance of SfButton. This property is most often set with MVVM pattern to bind callbacks back into the ViewModel.
-
-{% tabs %}
-	
-{% highlight xaml %}
-
-<ContentPage
-xmlns="http://xamarin.com/schemas/2014/forms"
-xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
-xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-xmlns:local="clr-namespace:Chips"
-x:Class="Chips.GettingStarted">
-
-<ContentPage.BindingContext>
-      <local:CommandDemoViewModel />
-</ContentPage.BindingContext>
-
-<ContentPage.Content>
-<button:SfChipGroup x:Name="chipGroup" 
-                    Text="ChipGroup" 
-                    BackgroundColor="{Binding Background}" 
-                    Command="{Bindind ChipGroupCommand}">
-</button:SfChipGroup>
-<ContentPage.Content>
-
-</ContentPage>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-// ViewModel Class for Command Demo.
-
-using Syncfusion.XForms.Buttons;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-namespace Chips
-{
-public class CommandDemoViewModel : INotifyPropertyChanged
-{
-
-    private Color _background = Color.Accent;
-
-    public Color Background
-    {
-        get { return _background; }
-        set
-        {
-            _background = value;
-            NotifyPropertyChanged();
-        }
-    }
-
-    private void NotifyPropertyChanged([CallerMemberName] String propertyName = "")
-    {
-        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-    }
-
-    public event PropertyChangedEventHandler PropertyChanged;
-
-    public CommandDemoViewModel()
-    {
-        BackgroundColor();
-        this.Background=Color.Accent;
-    }
-
-    private void BackgroundColor()
-    {
-        this.Background = this.Background == Color.DeepSkyBlue ? Color.Accent : Color.DeepSkyBlue;
-    }
-
-    public ICommand ButtonCommand => new Command(BackgroundColor);
-
-}
-}
-
-{% endhighlight %}
-	
-{% endtabs %}
-
-N> Default value of Command is [`null`].
-
 ## SelectedChipBackgroundColor
 
 The `SelectedChipBackgroundColor` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfChipGroup~SelectedChipBackgroundColor.html) property is used to customize the background color of the selected chip.
@@ -1619,7 +1535,8 @@ The `SelectedChipBackgroundColor` (https://help.syncfusion.com/cr/xamarin/Syncfu
     <ContentPage.Content>
         <StackLayout Margin="10,10,10,10">
             <buttons:SfChipGroup
-                ItemsSource="{Binding ChoiceItems}"
+                ItemsSource="{Binding Employees}"
+                DisplayMemberPath="Name"
                 SelectedChipBackgroundColor="Fuchsia"
                 Type="Choice">
             </buttons:SfChipGroup>
@@ -1631,8 +1548,6 @@ The `SelectedChipBackgroundColor` (https://help.syncfusion.com/cr/xamarin/Syncfu
 {% endhighlight %}
 
 {% highlight c# %}
-
-// ViewModel
 
 using System;
 using System.Collections.Generic;
@@ -1653,24 +1568,65 @@ namespace ChipCustomization
         public MainPage()
         {
             InitializeComponent();
+            StackLayout stack = new StackLayout();
+            SfChipGroup chipGroup = new SfChipGroup();
+            stack.Children.Add(chipGroup);
+            FlexLayout layout = new FlexLayout()
+            {
+                Direction = FlexDirection.Row,
+                Wrap = FlexWrap.Wrap,
+                HorizontalOptions = LayoutOptions.Start,
+                VerticalOptions = LayoutOptions.Center,
+                AlignContent = FlexAlignContent.Start,
+                JustifyContent = FlexJustify.Start,
+                AlignItems = FlexAlignItems.Start,
+            };
+           
+            chipGroup.ChipLayout = layout;
+            this.BindingContext = new ViewModel();
+            chipGroup.SetBinding(SfChipGroup.ItemsSourceProperty, "Employees");
+            chipGroup.DisplayMemberPath = "Name";
+            chipGroup.SelectedChipBackgroundColor = Color.Fuchsia;
+            chipGroup.Type = SfChipsType.Choice;
+            this.Content = stack;
         }
     }
+
+// Model Class
+
+    public class Person
+    {
+        public string Name
+        {
+            get;
+            set;
+        }
+    }
+
+  //ViewModel Class
+
     public class ViewModel : INotifyPropertyChanged
     {
-
-        private List<string> choiceItems = new List<string>() { "John", "James", "Jacob" };
-
-        public List<string> ChoiceItems
+        private ObservableCollection<Person> employees;
+        public ObservableCollection<Person> Employees
         {
             get
             {
-                return choiceItems;
+                return employees;
             }
             set
             {
-                choiceItems = value;
-                OnPropertyChanged("ChoiceItems");
+                Employees = value;
+                OnPropertyChanged("Employees");
             }
+        }
+
+        public ViewModel()
+        {
+            employees = new ObservableCollection<Person>();
+            employees.Add(new Person() { Name = "John" });
+            employees.Add(new Person() { Name = "James" });
+            employees.Add(new Person() { Name = "Jacob" });
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -1713,7 +1669,8 @@ The `SelectedChipTextColor` (https://help.syncfusion.com/cr/xamarin/Syncfusion.B
     <ContentPage.Content>
         <StackLayout Margin="10,10,10,10">
             <buttons:SfChipGroup
-                ItemsSource="{Binding ChoiceItems}"
+                ItemsSource="{Binding Employees}"
+                DisplayMemberPath="Name"
                 SelectedChipBackgroundColor="White"
                 SelectedChipTextColor="Fuchsia"
                 Type="Choice">
@@ -1726,8 +1683,6 @@ The `SelectedChipTextColor` (https://help.syncfusion.com/cr/xamarin/Syncfusion.B
 {% endhighlight %}
 
 {% highlight c# %}
-
-// ViewModel class.
 
 using System;
 using System.Collections.Generic;
@@ -1748,24 +1703,66 @@ namespace ChipCustomization
         public MainPage()
         {
             InitializeComponent();
+            StackLayout stack = new StackLayout();
+            SfChipGroup chipGroup = new SfChipGroup();
+            stack.Children.Add(chipGroup);
+            FlexLayout layout = new FlexLayout()
+            {
+                Direction = FlexDirection.Row,
+                Wrap = FlexWrap.Wrap,
+                HorizontalOptions = LayoutOptions.Start,
+                VerticalOptions = LayoutOptions.Center,
+                AlignContent = FlexAlignContent.Start,
+                JustifyContent = FlexJustify.Start,
+                AlignItems = FlexAlignItems.Start,
+            };
+           
+            chipGroup.ChipLayout = layout;
+            this.BindingContext = new ViewModel();
+            chipGroup.SetBinding(SfChipGroup.ItemsSourceProperty, "Employees");
+            chipGroup.DisplayMemberPath = "Name";
+            chipGroup.SelectedChipBackgroundColor = Color.White;
+            chipGroup.SelectedChipTextColor = Color.Fuchsia;
+            chipGroup.Type = SfChipsType.Choice;
+            this.Content = stack;
         }
     }
+
+// Model Class
+
+    public class Person
+    {
+        public string Name
+        {
+            get;
+            set;
+        }
+    }
+
+  //ViewModel Class
+
     public class ViewModel : INotifyPropertyChanged
     {
-
-        private List<string> choiceItems = new List<string>() { "John", "James", "Jacob" };
-
-        public List<string> ChoiceItems
+        private ObservableCollection<Person> employees;
+        public ObservableCollection<Person> Employees
         {
             get
             {
-                return choiceItems;
+                return employees;
             }
             set
             {
-                choiceItems = value;
-                OnPropertyChanged("ChoiceItems");
+                Employees = value;
+                OnPropertyChanged("Employees");
             }
+        }
+
+        public ViewModel()
+        {
+            employees = new ObservableCollection<Person>();
+            employees.Add(new Person() { Name = "John" });
+            employees.Add(new Person() { Name = "James" });
+            employees.Add(new Person() { Name = "Jacob" });
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -1808,7 +1805,8 @@ The `ChipBackgroundColor` (https://help.syncfusion.com/cr/xamarin/Syncfusion.But
     <ContentPage.Content>
         <StackLayout Margin="10,10,10,10">
             <buttons:SfChipGroup
-                ItemsSource="{Binding ChoiceItems}"
+                ItemsSource="{Binding Employees}"
+                DisplayMemberPath="Name"
                 ChipBackgroundColor="Aqua"
                 Type="Choice">
             </buttons:SfChipGroup>
@@ -1821,11 +1819,107 @@ The `ChipBackgroundColor` (https://help.syncfusion.com/cr/xamarin/Syncfusion.But
 
 {% highlight c# %}
 
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Input;
+using Syncfusion.XForms.Buttons;
+using Xamarin.Forms;
+
+namespace ChipCustomization
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stack = new StackLayout();
+            SfChipGroup chipGroup = new SfChipGroup();
+            stack.Children.Add(chipGroup);
+            FlexLayout layout = new FlexLayout()
+            {
+                Direction = FlexDirection.Row,
+                Wrap = FlexWrap.Wrap,
+                HorizontalOptions = LayoutOptions.Start,
+                VerticalOptions = LayoutOptions.Center,
+                AlignContent = FlexAlignContent.Start,
+                JustifyContent = FlexJustify.Start,
+                AlignItems = FlexAlignItems.Start,
+            };
+           
+            chipGroup.ChipLayout = layout;
+            this.BindingContext = new ViewModel();
+            chipGroup.SetBinding(SfChipGroup.ItemsSourceProperty, "Employees");
+            chipGroup.DisplayMemberPath = "Name";
+            chipGroup.ChipBackgroundColor = Color.Aqua;
+            chipGroup.Type = SfChipsType.Choice;
+            this.Content = stack;
+        }
+    }
+
+// Model Class
+
+    public class Person
+    {
+        public string Name
+        {
+            get;
+            set;
+        }
+    }
+
+  //ViewModel Class
+
+    public class ViewModel : INotifyPropertyChanged
+    {
+        private ObservableCollection<Person> employees;
+        public ObservableCollection<Person> Employees
+        {
+            get
+            {
+                return employees;
+            }
+            set
+            {
+                Employees = value;
+                OnPropertyChanged("Employees");
+            }
+        }
+
+        public ViewModel()
+        {
+            employees = new ObservableCollection<Person>();
+            employees.Add(new Person() { Name = "John" });
+            employees.Add(new Person() { Name = "James" });
+            employees.Add(new Person() { Name = "Jacob" });
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        public void OnPropertyChanged(string property)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(property));
+            }
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![SfChipGroup with ChipBackgroundColor](images/customization_images/chipgroup_chipbackgroundcolor_image.png)
 
  N> Default value of ChipBackgroundColor is [`Color.FromHex("#E0E0E0")`]
 
-  ## ChipBorderColor
+## ChipBorderColor
 
 The `ChipBorderColor` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfChipGroup~ChipBorderColor.html) to customize the border color of the SfChipGroup. 
 
@@ -1845,7 +1939,8 @@ The `ChipBorderColor` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons
     <ContentPage.Content>
         <StackLayout Margin="10,10,10,10">
             <buttons:SfChipGroup
-                ItemsSource="{Binding ChoiceItems}"
+                ItemsSource="{Binding Employees}"
+                DisplayMemberPath="Name"
                 ChipBorderWidth="5" 
                 ChipBorderColor="Black"
                 ChipBackgroundColor="Aqua">
@@ -1858,6 +1953,99 @@ The `ChipBorderColor` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons
 {% endhighlight %}
 
 {% highlight c# %}
+
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Input;
+using Syncfusion.XForms.Buttons;
+using Xamarin.Forms;
+
+namespace ChipCustomization
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stack = new StackLayout();
+            SfChipGroup chipGroup = new SfChipGroup();
+            stack.Children.Add(chipGroup);
+            FlexLayout layout = new FlexLayout()
+            {
+                Direction = FlexDirection.Row,
+                Wrap = FlexWrap.Wrap,
+                HorizontalOptions = LayoutOptions.Start,
+                VerticalOptions = LayoutOptions.Center,
+                AlignContent = FlexAlignContent.Start,
+                JustifyContent = FlexJustify.Start,
+                AlignItems = FlexAlignItems.Start,
+            };
+           
+            chipGroup.ChipLayout = layout;
+            this.BindingContext = new ViewModel();
+            chipGroup.SetBinding(SfChipGroup.ItemsSourceProperty, "Employees");
+            chipGroup.DisplayMemberPath = "Name";
+            chipGroup.ChipBorderWidth = 5;
+            chipGroup.ChipBorderColor = Color.Black;
+            chipGroup.ChipBackgroundColor = Color.Aqua;
+            this.Content = stack;
+        }
+    }
+
+// Model Class
+
+    public class Person
+    {
+        public string Name
+        {
+            get;
+            set;
+        }
+    }
+
+  //ViewModel Class
+
+    public class ViewModel : INotifyPropertyChanged
+    {
+        private ObservableCollection<Person> employees;
+        public ObservableCollection<Person> Employees
+        {
+            get
+            {
+                return employees;
+            }
+            set
+            {
+                Employees = value;
+                OnPropertyChanged("Employees");
+            }
+        }
+
+        public ViewModel()
+        {
+            employees = new ObservableCollection<Person>();
+            employees.Add(new Person() { Name = "John" });
+            employees.Add(new Person() { Name = "James" });
+            employees.Add(new Person() { Name = "Jacob" });
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        public void OnPropertyChanged(string property)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(property));
+            }
+        }
+    }
+}
 
 {% endhighlight %}
 
@@ -1886,9 +2074,20 @@ The `ChipTextColor` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.X
     <ContentPage.Content>
         <StackLayout Margin="10,10,10,10">
             <buttons:SfChipGroup
-                ItemsSource="{Binding ChoiceItems}"
+                ItemsSource="{Binding Employees}"
+                DisplayMemberPath="Name"
                 ChipTextColor="Blue">
             </buttons:SfChipGroup>
+            <buttons:SfChipGroup.ChipLayout>
+                    <FlexLayout 
+                        HorizontalOptions="Start" 
+                        VerticalOptions="Center" 
+                        Direction="Row" 
+                        Wrap="Wrap"
+                        JustifyContent="Start"
+                        AlignContent="Start" 
+                        AlignItems="Start"/>
+                </buttons:SfChipGroup.ChipLayout>
         </StackLayout>  
     </ContentPage.Content>
     
@@ -1897,6 +2096,97 @@ The `ChipTextColor` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.X
 {% endhighlight %}
 
 {% highlight c# %}
+
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Input;
+using Syncfusion.XForms.Buttons;
+using Xamarin.Forms;
+
+namespace ChipCustomization
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stack = new StackLayout();
+            SfChipGroup chipGroup = new SfChipGroup();
+            stack.Children.Add(chipGroup);
+            FlexLayout layout = new FlexLayout()
+            {
+                Direction = FlexDirection.Row,
+                Wrap = FlexWrap.Wrap,
+                HorizontalOptions = LayoutOptions.Start,
+                VerticalOptions = LayoutOptions.Center,
+                AlignContent = FlexAlignContent.Start,
+                JustifyContent = FlexJustify.Start,
+                AlignItems = FlexAlignItems.Start,
+            };
+           
+            chipGroup.ChipLayout = layout;
+            this.BindingContext = new ViewModel();
+            chipGroup.SetBinding(SfChipGroup.ItemsSourceProperty, "Employees");
+            chipGroup.DisplayMemberPath = "Name";
+            chipGroup.ChipTextColor = Color.Blue;
+            this.Content = stack;
+        }
+    }
+
+// Model Class
+
+    public class Person
+    {
+        public string Name
+        {
+            get;
+            set;
+        }
+    }
+
+  //ViewModel Class
+
+    public class ViewModel : INotifyPropertyChanged
+    {
+        private ObservableCollection<Person> employees;
+        public ObservableCollection<Person> Employees
+        {
+            get
+            {
+                return employees;
+            }
+            set
+            {
+                Employees = value;
+                OnPropertyChanged("Employees");
+            }
+        }
+
+        public ViewModel()
+        {
+            employees = new ObservableCollection<Person>();
+            employees.Add(new Person() { Name = "John" });
+            employees.Add(new Person() { Name = "James" });
+            employees.Add(new Person() { Name = "Jacob" });
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        public void OnPropertyChanged(string property)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(property));
+            }
+        }
+    }
+}
 
 {% endhighlight %}
 
@@ -1926,9 +2216,20 @@ The `ChipTextSize` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XF
     <ContentPage.Content>
         <StackLayout Margin="8,8,0,0">
             <buttons:SfChipGroup
-                ItemsSource="{Binding ChoiceItems}"
+                ItemsSource="{Binding Employees}"
+                DisplayMemberPath="Name"
                 ChipTextSize="10">
             </buttons:SfChipGroup>
+            <buttons:SfChipGroup.ChipLayout>
+                    <FlexLayout 
+                        HorizontalOptions="Start" 
+                        VerticalOptions="Center" 
+                        Direction="Row" 
+                        Wrap="Wrap"
+                        JustifyContent="Start"
+                        AlignContent="Start" 
+                        AlignItems="Start"/>
+                </buttons:SfChipGroup.ChipLayout>
         </StackLayout>  
     </ContentPage.Content>
     
@@ -1937,6 +2238,97 @@ The `ChipTextSize` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XF
 {% endhighlight %}
 
 {% highlight c# %}
+
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Input;
+using Syncfusion.XForms.Buttons;
+using Xamarin.Forms;
+
+namespace ChipCustomization
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stack = new StackLayout();
+            SfChipGroup chipGroup = new SfChipGroup();
+            stack.Children.Add(chipGroup);
+            FlexLayout layout = new FlexLayout()
+            {
+                Direction = FlexDirection.Row,
+                Wrap = FlexWrap.Wrap,
+                HorizontalOptions = LayoutOptions.Start,
+                VerticalOptions = LayoutOptions.Center,
+                AlignContent = FlexAlignContent.Start,
+                JustifyContent = FlexJustify.Start,
+                AlignItems = FlexAlignItems.Start,
+            };
+           
+            chipGroup.ChipLayout = layout;
+            this.BindingContext = new ViewModel();
+            chipGroup.SetBinding(SfChipGroup.ItemsSourceProperty, "Employees");
+            chipGroup.DisplayMemberPath = "Name";
+            chipGroup.ChipTextSize = 10;
+            this.Content = stack;
+        }
+    }
+
+// Model Class
+
+    public class Person
+    {
+        public string Name
+        {
+            get;
+            set;
+        }
+    }
+
+  //ViewModel Class
+
+    public class ViewModel : INotifyPropertyChanged
+    {
+        private ObservableCollection<Person> employees;
+        public ObservableCollection<Person> Employees
+        {
+            get
+            {
+                return employees;
+            }
+            set
+            {
+                Employees = value;
+                OnPropertyChanged("Employees");
+            }
+        }
+
+        public ViewModel()
+        {
+            employees = new ObservableCollection<Person>();
+            employees.Add(new Person() { Name = "John" });
+            employees.Add(new Person() { Name = "James" });
+            employees.Add(new Person() { Name = "Jacob" });
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        public void OnPropertyChanged(string property)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(property));
+            }
+        }
+    }
+}
 
 {% endhighlight %}
 
@@ -1966,9 +2358,20 @@ The `ChipPadding` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XFo
     <ContentPage.Content>
         <StackLayout Margin="8,8,0,0">
             <buttons:SfChipGroup
-                ItemsSource="{Binding ChoiceItems}"
+                ItemsSource="{Binding Employees}"
+                DisplayMemberPath="Name"
                 ChipPadding="8,0,0,0">
             </buttons:SfChipGroup>
+            <buttons:SfChipGroup.ChipLayout>
+                    <FlexLayout 
+                        HorizontalOptions="Start" 
+                        VerticalOptions="Center" 
+                        Direction="Row" 
+                        Wrap="Wrap"
+                        JustifyContent="Start"
+                        AlignContent="Start" 
+                        AlignItems="Start"/>
+                </buttons:SfChipGroup.ChipLayout>
         </StackLayout>  
     </ContentPage.Content>
     
@@ -1977,6 +2380,97 @@ The `ChipPadding` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XFo
 {% endhighlight %}
 
 {% highlight c# %}
+
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Input;
+using Syncfusion.XForms.Buttons;
+using Xamarin.Forms;
+
+namespace ChipCustomization
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stack = new StackLayout();
+            SfChipGroup chipGroup = new SfChipGroup();
+            stack.Children.Add(chipGroup);
+            FlexLayout layout = new FlexLayout()
+            {
+                Direction = FlexDirection.Row,
+                Wrap = FlexWrap.Wrap,
+                HorizontalOptions = LayoutOptions.Start,
+                VerticalOptions = LayoutOptions.Center,
+                AlignContent = FlexAlignContent.Start,
+                JustifyContent = FlexJustify.Start,
+                AlignItems = FlexAlignItems.Start,
+            };
+           
+            chipGroup.ChipLayout = layout;
+            this.BindingContext = new ViewModel();
+            chipGroup.SetBinding(SfChipGroup.ItemsSourceProperty, "Employees");
+            chipGroup.ChipPadding = new Thickness(8, 8, 0, 0);
+            chipGroup.DisplayMemberPath = "Name";
+            this.Content = stack;
+        }
+    }
+
+// Model Class
+
+    public class Person
+    {
+        public string Name
+        {
+            get;
+            set;
+        }
+    }
+
+  //ViewModel Class
+
+    public class ViewModel : INotifyPropertyChanged
+    {
+        private ObservableCollection<Person> employees;
+        public ObservableCollection<Person> Employees
+        {
+            get
+            {
+                return employees;
+            }
+            set
+            {
+                Employees = value;
+                OnPropertyChanged("Employees");
+            }
+        }
+
+        public ViewModel()
+        {
+            employees = new ObservableCollection<Person>();
+            employees.Add(new Person() { Name = "John" });
+            employees.Add(new Person() { Name = "James" });
+            employees.Add(new Person() { Name = "Jacob" });
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        public void OnPropertyChanged(string property)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(property));
+            }
+        }
+    }
+}
 
 {% endhighlight %}
 
@@ -2006,10 +2500,21 @@ The `ChipBorderWidth` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons
     <ContentPage.Content>
         <StackLayout Margin="8,8,0,0">
             <buttons:SfChipGroup
-                ItemsSource="{Binding ChoiceItems}"
+                ItemsSource="{Binding Employees}"
                 ChipBorderWidth="5" 
+                DisplayMemberPath="Name"
                 ChipBorderColor="Black">
             </buttons:SfChipGroup>
+            <buttons:SfChipGroup.ChipLayout>
+                    <FlexLayout 
+                        HorizontalOptions="Start" 
+                        VerticalOptions="Center" 
+                        Direction="Row" 
+                        Wrap="Wrap"
+                        JustifyContent="Start"
+                        AlignContent="Start" 
+                        AlignItems="Start"/>
+                </buttons:SfChipGroup.ChipLayout>
         </StackLayout>  
     </ContentPage.Content>
     
@@ -2018,6 +2523,98 @@ The `ChipBorderWidth` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons
 {% endhighlight %}
 
 {% highlight c# %}
+
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Input;
+using Syncfusion.XForms.Buttons;
+using Xamarin.Forms;
+
+namespace ChipCustomization
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stack = new StackLayout();
+            SfChipGroup chipGroup = new SfChipGroup();
+            stack.Children.Add(chipGroup);
+            FlexLayout layout = new FlexLayout()
+            {
+                Direction = FlexDirection.Row,
+                Wrap = FlexWrap.Wrap,
+                HorizontalOptions = LayoutOptions.Start,
+                VerticalOptions = LayoutOptions.Center,
+                AlignContent = FlexAlignContent.Start,
+                JustifyContent = FlexJustify.Start,
+                AlignItems = FlexAlignItems.Start,
+            };
+           
+            chipGroup.ChipLayout = layout;
+            this.BindingContext = new ViewModel();
+            chipGroup.SetBinding(SfChipGroup.ItemsSourceProperty, "Employees");
+            chipGroup.ChipBorderWidth = 5;
+            chipGroup.ChipBorderColor = Color.Black;
+            chipGroup.DisplayMemberPath = "Name";
+            this.Content = stack;
+        }
+    }
+
+// Model Class
+
+    public class Person
+    {
+        public string Name
+        {
+            get;
+            set;
+        }
+    }
+
+  //ViewModel Class
+
+    public class ViewModel : INotifyPropertyChanged
+    {
+        private ObservableCollection<Person> employees;
+        public ObservableCollection<Person> Employees
+        {
+            get
+            {
+                return employees;
+            }
+            set
+            {
+                Employees = value;
+                OnPropertyChanged("Employees");
+            }
+        }
+
+        public ViewModel()
+        {
+            employees = new ObservableCollection<Person>();
+            employees.Add(new Person() { Name = "John" });
+            employees.Add(new Person() { Name = "James" });
+            employees.Add(new Person() { Name = "Jacob" });
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        public void OnPropertyChanged(string property)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(property));
+            }
+        }
+    }
+}
 
 {% endhighlight %}
 
@@ -2047,9 +2644,20 @@ The `ItemHeight` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XFor
     <ContentPage.Content>
         <StackLayout Margin="8,8,0,0">
             <buttons:SfChipGroup
-                ItemsSource="{Binding ChoiceItems}"
-                ItemHeight="60">
+                ItemsSource="{Binding Employees}"
+                ItemHeight="60"
+                DisplayMemberPath="Name">
             </buttons:SfChipGroup>
+            <buttons:SfChipGroup.ChipLayout>
+                    <FlexLayout 
+                        HorizontalOptions="Start" 
+                        VerticalOptions="Center" 
+                        Direction="Row" 
+                        Wrap="Wrap"
+                        JustifyContent="Start"
+                        AlignContent="Start" 
+                        AlignItems="Start"/>
+                </buttons:SfChipGroup.ChipLayout>
         </StackLayout>  
     </ContentPage.Content>
     
@@ -2058,6 +2666,97 @@ The `ItemHeight` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XFor
 {% endhighlight %}
 
 {% highlight c# %}
+
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Input;
+using Syncfusion.XForms.Buttons;
+using Xamarin.Forms;
+
+namespace ChipCustomization
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stack = new StackLayout();
+            SfChipGroup chipGroup = new SfChipGroup();
+            stack.Children.Add(chipGroup);
+            FlexLayout layout = new FlexLayout()
+            {
+                Direction = FlexDirection.Row,
+                Wrap = FlexWrap.Wrap,
+                HorizontalOptions = LayoutOptions.Start,
+                VerticalOptions = LayoutOptions.Center,
+                AlignContent = FlexAlignContent.Start,
+                JustifyContent = FlexJustify.Start,
+                AlignItems = FlexAlignItems.Start,
+            };
+           
+            chipGroup.ChipLayout = layout;
+            this.BindingContext = new ViewModel();
+            chipGroup.SetBinding(SfChipGroup.ItemsSourceProperty, "Employees");
+            chipGroup.ItemHeight = 60;
+            chipGroup.DisplayMemberPath = "Name";
+            this.Content = stack;
+        }
+    }
+
+// Model Class
+
+    public class Person
+    {
+        public string Name
+        {
+            get;
+            set;
+        }
+    }
+
+  //ViewModel Class
+
+    public class ViewModel : INotifyPropertyChanged
+    {
+        private ObservableCollection<Person> employees;
+        public ObservableCollection<Person> Employees
+        {
+            get
+            {
+                return employees;
+            }
+            set
+            {
+                Employees = value;
+                OnPropertyChanged("Employees");
+            }
+        }
+
+        public ViewModel()
+        {
+            employees = new ObservableCollection<Person>();
+            employees.Add(new Person() { Name = "John" });
+            employees.Add(new Person() { Name = "James" });
+            employees.Add(new Person() { Name = "Jacob" });
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        public void OnPropertyChanged(string property)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(property));
+            }
+        }
+    }
+}
 
 {% endhighlight %}
 
@@ -2132,6 +2831,33 @@ namespace ChipCustomization
         public MainPage()
         {
             InitializeComponent();
+            StackLayout stack = new StackLayout();
+            SfChipGroup chipGroup = new SfChipGroup();
+            stack.Children.Add(chipGroup);
+            FlexLayout layout = new FlexLayout()
+            {
+                Direction = FlexDirection.Row,
+                Wrap = FlexWrap.Wrap,
+                HorizontalOptions = LayoutOptions.Start,
+                VerticalOptions = LayoutOptions.Center,
+                AlignContent = FlexAlignContent.Start,
+                JustifyContent = FlexJustify.Start,
+                AlignItems = FlexAlignItems.Start,
+            };
+           
+            chipGroup.ChipLayout = layout;
+            this.BindingContext = new ViewModel();
+            chipGroup.SetBinding(SfChipGroup.ItemsSourceProperty, "Employees");
+            chipGroup.DisplayMemberPath = "Name";
+            chipGroup.ImageMemberPath = "Image";
+            chipGroup.ChipImageWidth = 30;
+            chipGroup.SelectionIndicatorColor = Color.Black;
+            chipGroup.CloseButtonColor = Color.White;
+            chipGroup.ChipBackgroundColor = Color.Aqua;
+            chipGroup.Type = SfChipsType.Input;
+            chipGroup.ShowIcon = true;
+            chipGroup.ChipPadding = new Thickness(8, 8, 0, 0);
+            this.Content = stack;
         }
     }
     public class Person
@@ -2256,6 +2982,32 @@ namespace ChipCustomization
         public MainPage()
         {
             InitializeComponent();
+             StackLayout stack = new StackLayout();
+            SfChipGroup chipGroup = new SfChipGroup();
+            stack.Children.Add(chipGroup);
+            FlexLayout layout = new FlexLayout()
+            {
+                Direction = FlexDirection.Row,
+                Wrap = FlexWrap.Wrap,
+                HorizontalOptions = LayoutOptions.Start,
+                VerticalOptions = LayoutOptions.Center,
+                AlignContent = FlexAlignContent.Start,
+                JustifyContent = FlexJustify.Start,
+                AlignItems = FlexAlignItems.Start,
+            };
+           
+            chipGroup.ChipLayout = layout;
+            this.BindingContext = new ViewModel();
+            chipGroup.SetBinding(SfChipGroup.ItemsSourceProperty, "Employees");
+            chipGroup.DisplayMemberPath = "Name";
+            chipGroup.ImageMemberPath = "Image";
+            chipGroup.ChipImageWidth = 30;
+            chipGroup.SelectionIndicatorColor = Color.Black;
+            chipGroup.CloseButtonColor = Color.White;
+            chipGroup.ChipBackgroundColor = Color.Aqua;
+            chipGroup.Type = SfChipsType.Input;
+            chipGroup.ShowIcon = true;
+            this.Content = stack;
         }
     }
     public class Person
@@ -2336,7 +3088,6 @@ The `SelectionIndicatorColor` (https://help.syncfusion.com/cr/xamarin/Syncfusion
                 ItemsSource="{Binding Employees}" 
                 Type="Filter"
                 SelectionIndicatorColor="Black"
-                ChipImageWidth="30"
                 CloseButtonColor="White"
                 ChipBackgroundColor="Aqua"
                 DisplayMemberPath="Name">
@@ -2379,8 +3130,34 @@ namespace ChipCustomization
         public MainPage()
         {
             InitializeComponent();
+            StackLayout stack = new StackLayout();
+            SfChipGroup chipGroup = new SfChipGroup();
+            stack.Children.Add(chipGroup);
+            FlexLayout layout = new FlexLayout()
+            {
+                Direction = FlexDirection.Row,
+                Wrap = FlexWrap.Wrap,
+                HorizontalOptions = LayoutOptions.Start,
+                VerticalOptions = LayoutOptions.Center,
+                AlignContent = FlexAlignContent.Start,
+                JustifyContent = FlexJustify.Start,
+                AlignItems = FlexAlignItems.Start,
+            };
+           
+            chipGroup.ChipLayout = layout;
+            this.BindingContext = new ViewModel();
+            chipGroup.SetBinding(SfChipGroup.ItemsSourceProperty, "Employees");
+            chipGroup.DisplayMemberPath = "Name";
+            chipGroup.SelectionIndicatorColor = Color.Black;
+            chipGroup.CloseButtonColor = Color.White;
+            chipGroup.ChipBackgroundColor = Color.Aqua;
+            chipGroup.Type = SfChipsType.Filter;
+            this.Content = stack;
         }
     }
+
+// Model Class
+
     public class Person
     {
         public string Name
@@ -2389,6 +3166,9 @@ namespace ChipCustomization
             set;
         }
     }
+
+//ViewModel Class
+
     public class ViewModel : INotifyPropertyChanged
     {
         private ObservableCollection<Person> employees;
@@ -2500,8 +3280,35 @@ namespace ChipCustomization
         public MainPage()
         {
             InitializeComponent();
+            StackLayout stack = new StackLayout();
+            SfChipGroup chipGroup = new SfChipGroup();
+            stack.Children.Add(chipGroup);
+            FlexLayout layout = new FlexLayout()
+            {
+                Direction = FlexDirection.Row,
+                Wrap = FlexWrap.Wrap,
+                HorizontalOptions = LayoutOptions.Start,
+                VerticalOptions = LayoutOptions.Center,
+                AlignContent = FlexAlignContent.Start,
+                JustifyContent = FlexJustify.Start,
+                AlignItems = FlexAlignItems.Start,
+            };
+           
+            chipGroup.ChipLayout = layout;
+            this.BindingContext = new ViewModel();
+            chipGroup.SetBinding(SfChipGroup.ItemsSourceProperty, "Employees");
+            chipGroup.DisplayMemberPath = "Name";
+            chipGroup.ImageMemberPath = "Image";
+            chipGroup.ChipImageWidth = 30;
+            chipGroup.ChipBackgroundColor = Color.Aqua;
+            chipGroup.Type = SfChipsType.Choice;
+            chipGroup.ShowIcon = true;
+            this.Content = stack;
         }
     }
+
+// Model Class
+
     public class Person
     {
         public string Name
@@ -2516,6 +3323,9 @@ namespace ChipCustomization
             set;
         }
     }
+
+  //ViewModel Class
+
     public class ViewModel : INotifyPropertyChanged
     {
         private ObservableCollection<Person> employees;
